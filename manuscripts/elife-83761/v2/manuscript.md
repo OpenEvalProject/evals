@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04dese585 Evolutionary Venomics Lab, Centre for Ecological Sciences, Indian Institute of Science Bangalore Bengaluru India
+1. Evolutionary Venomics Lab, Centre for Ecological Sciences, Indian Institute of Science Bangalore Bengaluru India ([ROR:04dese585](https://ror.org/04dese585))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Here, we examined DRP sequences from the spiders of the Mygalomorphae infraorder
 
 ## Results
 
-## Novel spider toxin superfamilies
+### Novel spider toxin superfamilies
 
 Superfamilies (SF) of venom toxins in spiders have been classified based on their signal peptide and propeptide sequences (Pineda et al., 2014). This premise was first used to describe the Shiva superfamily of toxins from Atracidae spiders (Pineda et al., 2014). Recently, using a similar approach, 33 novel spider toxin superfamilies have been identified from the venom of the Australian funnel-web spider, Hadronyche infensa (Pineda et al., 2020). Since gene phylogenies have not been extensively utilised while classifying spider venom toxins, our understanding of their origin and diversification has been severely limited.
 
@@ -39,19 +39,79 @@ Moreover, analyses of Araneomorphae toxin sequences using the strategy above res
 
 The identification of novel toxin superfamilies was further supported by phylogenetic and principal component analyses. Reconstruction of evolutionary histories using Bayesian inference (BI) and maximum-likelihood (ML) approaches retrieved monophyletic groups of toxin superfamilies (Figures 2 and 3; node support: ML:>90/100; BI:>0.95; refer to figure supplement provided for complete phylogeny with branch lengths). Interestingly, the plesiotypic DRP scaffold seems to have undergone lineage-specific diversification in Mygalomorphae, where the selective diversification of the scaffold has led to the origination of novel toxin superfamilies corresponding to each Linnaean genus (Figure 2). In our Bayesian and maximum-likelihood phylogenetic tree reconstructions, these toxin scaffolds were found to form distinct clades, further supporting this claim (Figure 2—figure supplement 1; node support: ML: ML:>90/100; BI:>0.95).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig2-v2.jpg)
+
+**Figure 2.:** This figure represents the Bayesian phylogeny of Mygalomorphae spider toxin superfamilies, where branches with high (BPP >0.95) and low (BPP <0.95) node supports are shown in thick black and thin grey lines, respectively. Coloured spheres alongside tree tips represent the spider genera, while the coloured outer circle indicates the spider family in which the respective toxin superfamily has been identified (Atracidae [red], Barychelidae [orange], and Theraphosidae [blue]).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Phylogenetic relationships of Mygalomorphae spider toxin superfamilies, assessed using Bayesian (BI; panel A) and maximum likelihood (ML; panel B) inferences, are shown in this figure. Node supports were estimated using Bayesian posterior probability (BPP) for the BI tree and bootstrapping replication (BS) for the ML tree. Branches with BPP lower than 0.95 in BI tree and BS lower than 90 in the ML tree are shown in grey. Cysteine-rich non-toxin outgroup sequences are coloured red.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** This figure shows the alignment of signal peptide and propeptide sequences from novel mygalomorph spider toxin superfamilies identified in this study. The signal peptide region is highlighted in green, while the propeptide region is represented in purple colour. Conserved sites are shaded in blue.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** This figure depicts the 3D homology models of disulfide-rich peptide Mygalomorphae toxin superfamilies. Here, helices are shown in green, β-strands in blue and disulfide bonds in orange. Cysteine arrangements in scaffolds are also provided above the model. Toxin SFs that lack structural data are indicated with a ‘?’ symbol.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** A scatter plot of scaled principal components, sPC1 and sPC2, for the signal peptide sequences of novel mygalomorph toxin superfamilies identified in this study is shown here. Signal peptide sequences belonging to a superfamily are represented as a single dot.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig3-v2.jpg)
+
+**Figure 3.:** This figure represents the Bayesian phylogeny of Araneomorphae spider toxin superfamilies, where branches with high (BPP >0.95) and low (BPP <0.95) node supports are shown in thick black and thin grey lines, respectively. Coloured spheres, alongside tree tips, represent the spider genera, while the coloured outer circle indicates the spider family (Agelenidae [red], Ctenidae [green], multiple araneomorph families [purple]: Ctenidae, Gnaphosidae, Homalonychidae, Lycosidae, Oxyopidae, Pisauridae, Psechridae, Salticidae, Thomisidae, Xenoctenidae) in which the respective toxin superfamily has been identified.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Phylogenetic relationships of Araneomorphae spider toxin superfamilies, assessed using Bayesian (BI; panel A) and maximum likelihood (ML; panel B) inferences, are shown in this figure. Node supports were estimated using Bayesian posterior probability (BPP) for the BI tree and bootstrapping replication (BS) for the ML tree. Branches with BPP lower than 0.95 in BI tree and BS lower than 90 in the ML tree are shown in grey. Cysteine-rich non-toxin outgroup sequences are coloured red.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** This figure shows the alignment of signal peptide sequences from novel araneomorph toxin superfamilies identified in this study. The signal peptide region is highlighted in green, while the conserved amino acid positions are shaded in blue. It should be noted that the propeptide region boundary could not be identified for all Araneomorphae toxin superfamilies.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** 3D homology models of disulfide-rich peptide Araneomorphae toxin superfamilies are depicted in this figure. Here, helices are shown in green, β-strands in blue and disulfide bonds in orange. Cysteine arrangements in scaffolds are also provided above the model. Toxin SFs that lack structural data are indicated with a ‘?’ symbol.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Scaled principal components, sPC1 and sPC2, for signal peptide sequences of novel araneomorph toxin superfamilies identified in this study are shown here in the form of a scatter plot. Signal peptide sequences belonging to a superfamily are represented as a single dot.
+
 A similar pattern was also observed in the case of Araneomorphae, where certain toxin SFs (n=12) were found to have diversified within individual genera, corresponding to the Linnaean taxonomy (Figure 3). However, we also documented a large number of DRP toxins (n=32) that were found to have diversified in a family-specific manner, wherein, a toxin scaffold seems to have a more ancient recruitment, corresponding to the Linnean family, rather than the Linnaean genus. As a result, and in contrast to mygalomorph DRPs, araneomorph toxin superfamilies were found to be scattered across spider lineages (Figure 3; Figure 3—figure supplement 1; node support: ML:>90/100; BI:>0.95). Moreover, Principal component analysis (PCA) of toxin sequences further provided evidence for the monophyly of mygalomorph and araneomorph SFs, where each toxin superfamily formed a distinct group in PCA plots (Figure 2—figure supplement 4; Figure 3—figure supplement 4).
 
 Furthermore, sequence alignments of DRPs clearly highlighted the homology among DRP toxin superfamilies (Figure 4; Figure 4—figure supplement 1; node support: ML:>90/100; BI:>0.95). Six cysteine residues were found to be nearly universally conserved across 101 DRP toxin SFs (Figure 4B; Figure 4—figure supplement 2). Our findings enabled us to trace the origin of spider venom DRPs in Opisthothelae, the clade that encompasses Araneomorphae and Mygalomorphae (Magalhaes et al., 2020). Thus, we highlight for the first time that all DRP toxins in spiders may have had a common molecular origin, nearly 375 MYA. It should be noted, however, that functional analyses have been performed only on a handful of mygalomorph toxins, with even fewer studies focusing on araneomorph toxin superfamilies, and that it would be inaccurate to speculate on the functions of these toxins based on homology.
 
-## Molecular evolution of spider venom DRP toxins
+![Figure 4.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig4-v2.jpg)
+
+**Figure 4.:** This figure depicts the Bayesian phylogeny and alignment of representative sequences of Araneae DRP toxin superfamilies, where branches with high (BPP >0.95) and low (BPP <0.95) node supports are shown in thick black and thin grey lines, respectively. The coloured outer circle in panel A indicates the infraorder of spiders (Mygalomorphae and Araneomorphae shown in dark and light brown, respectively) in which the respective DRP superfamily was identified. In panel B, cysteine framework conserved across toxin SFs is highlighted in blue.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phylogenetic relationships of Araneae toxin superfamilies built using Bayesian (BI; panel A) and maximum likelihood (ML; panel B) inferences are shown in this figure. Node supports were estimated using Bayesian posterior probability (BPP) for the BI tree and bootstrapping replication (BS) for the ML tree. Branches with BPP lower than 0.95 in BI tree and BS lower than 90 in the ML tree are shown in grey. Cysteine-rich non-toxin outgroup sequences are coloured red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** An alignment of mature peptide sequences from mygalomorph and araneomorph spider toxin superfamilies is shown here. Conserved amino acid positions (sequence identity ≥90%) are shaded orange.
+
+### Molecular evolution of spider venom DRP toxins
 
 To evaluate the nature and strength of the selection that has shaped spider venom DRPs, we employed site-specific models that detect selection across sites. Our findings suggest that the majority of Mygalomorphae toxin superfamilies (12/19 SFs) have evolved under the influence of positive selection (ω ranging between 1.1 and 2.9; positively selected sites [PS]: 0–26), while the remaining few have experienced negative or purifying selection (ω ranging between 0.7 and 0.8; PS: 0–13; Figure 5, Figure 5—source data 1). In stark contrast, nearly all of the Araneomorph toxin superfamilies that we investigated here were found to have evolved under a strong influence of negative selection (ω ranging between 0.2 and 1.0; PS: 0–10; Figure 5, Figure 5—source data 1). We further assessed whether these changes documented across sites have a significant effect on the biochemical and structural properties of amino acids using TreeSAAP (Figure 5—source data 1). Outcomes of these analyses revealed the accumulation of replacement changes in Mygalomorphae toxin superfamilies that result in radical shifts in amino acid properties, potentially influencing their structure and function (Figure 5—source data 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig5-v2.jpg)
+
+**Figure 5.:** This figure shows the distribution of ω values (Y-axis) for araneomorph and mygalomorph spider venom toxin superfamilies (X-axis). The horizontal dotted black line represents neutral evolution (ω=1), with ω values above and below it indicating positive (ω>1) and negative (ω<1) selection, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83761/elife-83761-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** This figure highlights the distinct regimes of evolutionary selection pressures acting on defensive and offensive spider venom toxin superfamilies. Positively selected sites detected by PAML (M8) and FUBAR are highlighted in red, while sites under the effect of pervasive purifying selection (FUBAR) are shown in green. A colour code indicating strength of selection is also provided. Here, ω: ratio of non-synonymous to synonymous substitutions; (a): ω and positively selected sites (Bayes Empirical Bayes) detected by model 8 of PAML. (b): sites experiencing pervasive influence of positive selection identified by FUBAR (ω>1); and c: sites experiencing pervasive influence of negative selection identified by FUBAR (ω<1).
 
 To comparatively evaluate the nature of selection that shapes venom components deployed either for prey capture or antipredator defence, we employed maximum-likelihood and Bayesian approaches. In these analyses, we identified toxin superfamilies SF74, SF77, SF79, SF89, SF90, SF92, and SF99 as predatory toxins (i.e. toxins deployed for prey capture – refer to the discussion section for the principle considered for this classification), whereas SF13 (i.e. Ares SF) was classified as a defensive spider venom toxin superfamily (i.e. toxins deployed for antipredator defence) as described previously (Herzig et al., 2020). Assessment of molecular evolutionary regimes identified a significant influence of positive selection on venom toxins that are employed for prey capture (ω ranging between 1.2 and 2.9; PS: 0–11, Figure 5—source data 1, Figure 5—figure supplement 1), relative to those that are chiefly or exclusively used for antipredatory defence (ω=0.8; PS: 3; Figure 5—source data 1, Figure 5—figure supplement 1).
 
 ## Discussion
 
-## The deep evolutionary origin and diversification of the primordial knot
+### The deep evolutionary origin and diversification of the primordial knot
 
 Prior attempts to explore the phylogenetic and evolutionary histories of spider venom DRPs have hypothesised independent origin and lineage-specific diversification of DRP venom toxins (Rodríguez de la Vega, 2005). In contrast, recent literature, primarily focusing on Hadronyche infensa, suggests that the diverse disulfide-rich venom arsenal of this Australian funnel-web spider is a derivative of an ancestral ICK motif that underwent several rounds of duplication and diversification (Pineda et al., 2020). Often restricted to a specific spider lineage, or given the inconsistent ways of classifying spider venom toxins, previous attempts have failed to provide a broader perspective on the evolution of these peptides (Ferrat and Darbon, 2005; Chen et al., 2008). Given their very long evolutionary histories, genes encoding DRP toxins have undergone significant diversification, making it difficult to precisely trace their phylogenies. Together with the lack of structural and functional data for these toxins, all of the aforementioned factors have impeded our understanding of the origin and evolution of this predominant spider venom component.
 
@@ -59,7 +119,7 @@ To address this knowledge gap, we employed sequence comparisons, phylogenetic in
 
 It has been theorised that the plesiotypic (or ancestral) DRP scaffold comprised of eight cysteines that formed four disulfide bonds (Pineda et al., 2020; Cole and Brewer, 2021). However, the evolutionary history of DRP scaffold in spider venom has been riddled with events of duplication and diversification, which may have resulted in multiple gain and loss of structural and functional residues, including cysteines. As a result, we find that DRP toxins in extant spiders are comprised of distinct scaffolds with a range of cysteine pairs (4–12 cysteines forming 2–6 disulfide bonds). For example, an individual spider from the Haplopelma genus may contain SF90, SF91, SF99 and SF100 toxin superfamilies in its venom with 6, 8, 12, and 10 cysteines, respectively. This makes it very difficult to trace the nature and cysteine skeletal structure of the plesiotypic scaffold – something that could be answered in future with the help of comparative genomics and synteny analyses. Our extensive phylogenetic and evolutionary analyses provide insight into the common origin of DRP toxins in spiders, dating back to the common ancestor of Mygalomorphae and Araneomorphae. However, we refrain from speculating on the exact nature of this plesiotypic scaffold.
 
-## Contrasting weaponisation strategies: recruitment versus innovation
+### Contrasting weaponisation strategies: recruitment versus innovation
 
 Venom is an intrinsically ecological trait that has underpinned the evolutionary success of many animals (Suranse et al., 2022). The ability of venomous organisms to incapacitate prey and predators emanates from toxins that exhibit an array of biochemical activities and target divergent pathways. Many venomous lineages deploy a wide range of toxins from phylogenetically unrelated superfamilies. Venomous snakes, for example, have ‘recruited’ a myriad of toxins, including snake venom metalloproteinases, snake venom serine proteases, three-finger toxins, phospholipase A2s, L-amino acid oxidases, Kunitz-type serine protease inhibitors, kallikreins, lectins, DNases, and hyaluronidases (Casewell et al., 2013; Faisal et al., 2021; Dutta et al., 2017; Senji Laxme et al., 2019a; Casewell et al., 2020; Figure 6). Similarly, spider venoms typically possess many forms of enzymes (e.g. phospholipases, proteases and chitinases), polyamines, salts, and disulphide-rich toxins (King and Hardy, 2013; Figure 6). However, spider venom DRPs with diverse ion channel targeting activities, such as sodium, potassium, calcium, and chloride ion channels, predominate in the venoms of nearly all spiders, constituting three-quarters of the venom (Figure 6). Phylogenetic and evolutionary assessments in this study trace the evolutionary origin of DRPs in Opisthothelae, the suborder that includes the majority of spiders described to date. This strategy, wherein, a molecular scaffold with a single deep-rooted evolutionary origin constitutes the major content of the venom, is unique to spiders. Venoms of most other animals are, instead, composed of unrelated toxin types, derived from distinct scaffolds/gene superfamilies in varying proportions. Thus, instead of recruiting distinct toxins with diverse functions into their venoms like the majority of venomous animals, spiders seem to have diversified a single molecular template to generate a commensurate functional diversity in their venoms. These findings not only shed light on the fascinating evolutionary history of spider venoms but also highlight an unrealized potential of molecular scaffolds in underpinning the dramatic structural and functional diversification of the venom arsenal.
 
@@ -67,7 +127,7 @@ Venom is an intrinsically ecological trait that has underpinned the evolutionary
 
 **Figure 6.:** This figure depicts distinct toxin scaffold recruitment strategies in (A) spiders and (B) advanced snakes. The Araneae phylogeny highlights the domination of disulfide-rich peptide toxins in spiders [Atracidae: Atrax sp.; Theraphosidae: Poecilotheria formosa; Theridiidae: Latrodectus mactans; Ctenidae: Phoneutria nigriventer: e.g., Palagi et al., 2013; Oldrati et al., 2017; Diniz et al., 2018], whereas venoms of advanced snakes are constituted by diverse phylogenetically unrelated toxin superfamilies (Viperidae: Daboia russelii, Elapidae: Naja naja, Colubridae: Spilotes sulphureus: e.g., Senji Laxme et al., 2021a; Senji Laxme et al., 2021b; Modahl et al., 2018). Doughnut charts, portraying the major molecular scaffolds in venom are also shown disulfide-rich peptides (yellow), snake venom metalloproteinases (SVMP, red), phospholipase A2 (PLA2, green), three-finger toxins (3 FTx, blue) and other minor components (black). Structures of the major scaffolds are also shown, with helices coloured in green, β-strands in blue and disulfide bonds in orange.
 
-## Distinct recruitment and diversification of spider venom superfamilies in Mygalomorphae and Araneomorphae
+### Distinct recruitment and diversification of spider venom superfamilies in Mygalomorphae and Araneomorphae
 
 In addition to suggesting the common evolutionary origin of DRP toxins, Bayesian and maximum-likelihood phylogenies provided intriguing insights into the early diversification of DRPs in spiders. Mygalomorph DRP toxin superfamilies formed lineage-specific toxin clades (63/66) that suggested the recruitment of unique DRP scaffolds at the level of Linnaean genera (Figure 2), while the majority of unique DRP scaffolds seemed to be recruited ancestrally at the level of Linnaean families in Araneomorphae (Figure 3). Only a minor fraction (6/38) of araneomorph toxin superfamilies were recruited at the level of Linnaean genera.
 
@@ -75,7 +135,7 @@ When the nature and strength of selection on venom DRPs were assessed, a strong 
 
 Such starkly contrasting phylogenetic and evolutionary patterns are indicative of differential recruitment and diversification of DRPs in spiders. We postulate the following hypotheses that could possibly explain this unique pattern of spider venom evolution.
 
-## Scenario 1. Distinct recruitment hypothesis
+### Scenario 1. Distinct recruitment hypothesis
 
 Mygalomorphae spiders may have recruited individual toxin superfamilies or unique toxin scaffolds post the emergence of spider family members corresponding to the Linnaean taxonomy (Figure 7A). This could explain why toxin superfamilies in Mygalomorphae form lineage-specific clades that correspond to individual spider genera (Linnaean taxonomy) in our phylogenetic analyses (Figure 2). In contrast, Araneomorphae may have recruited unique toxin scaffolds prior to the divergence of family members, insinuating an ancestral recruitment event (Figure 7B). This, perhaps, explains why araneomorph toxin SFs are scattered across spider families and form Linnaean family-specific groups in phylogenetic trees (Figure 3).
 
@@ -83,15 +143,15 @@ Mygalomorphae spiders may have recruited individual toxin superfamilies or uniqu
 
 **Figure 7.:** This figure depicts various hypotheses that explain distinct toxin SF recruitment and diversification in spiders. Scenario 1 depicts genus- or family-specific recruitment of spider toxin SFs in Mygalomorphae and Araneomorphae, respectively, while scenario 2 highlights the implications of differential rates of diversification.
 
-## Scenario 2. Differential molecular diversification rate hypothesis
+### Scenario 2. Differential molecular diversification rate hypothesis
 
 The apparent Linnaean taxa-specific (genus- and family-) diversification of spider venom toxin superfamilies can also be explained by the differential rate of molecular evolution in the spider infraorders. In this schema, the recruitment of toxin SFs could have happened in the common ancestor of Mygalomorphae and Araneomorphae. However, the contrasting rates of diversification, wherein, mygalomorph toxin SFs underwent extensive diversification under positive selection, while araneomorph toxin SFs were very well conserved under negative selection, resulted in the contrasting patterns of DRP diversification that we see today (Figures 5, 7C and D).
 
-## Scenario 3. Prey-capture strategies and toxin recruitment hypothesis
+### Scenario 3. Prey-capture strategies and toxin recruitment hypothesis
 
 The use of webs for prey capture in araneomorphs versus the sit-and-wait predation strategy of mygalomorphs may have resulted in the selective diversification of toxin superfamilies. Since most araneomorph spiders heavily rely on their foraging web for prey capture, and because these spiders mostly prey on insects (Pérez-Miles and Perafán, 2017), we speculate that their venom DRPs exhibit relatively lower sequence diversity (Figure 5, Figure 5—source data 1). In complete contrast, venom DRPs in mygalomorph spiders that mostly rely on venom and not silk, being either ambush or sit-and-wait predators to capture a much diverse prey base, appear to have experienced a significantly greater influence of the diversifying selection (Beydizada et al., 2022; Figure 5, Figure 5—source data 1). However, the current literature and our investigation are limited to the most diverse lineage in Araneomorphae - the RTA clade. Since this lineage does not employ silk webs for predation, Scenario 3 is unlikely to explain the current observations. Surprisingly, however, despite being the most speciose spider lineage, and having a significantly higher genomic diversification rate in comparison to other araneomorphs (Fernández et al., 2018), the lack of toxin sequence diversity in the RTA clade is intriguing (Figure 5, Figure 5—source data 1). It should also be noted that venom toxins from the foraging web-building araneomorphs outside the RTA clade are very poorly studied (e.g. only a handful of species are investigated from a biodiscovery perspective, and not a single toxin has been sequenced at the nucleotide level to date).
 
-## Deployment dictates spider venom evolution
+### Deployment dictates spider venom evolution
 
 The current literature is replete with findings that support the strong influence of positive selection on genes encoding venom toxins in diverse animal lineages (Juárez et al., 2008; Sunagar et al., 2012; Sunagar et al., 2013; Župunski and Kordiš, 2016). Venom proteins are theorised to follow a ‘two-speed’ mode of evolution, wherein they readily diversify in animals that experience drastic shifts in ecology and/or environment - a prominent feature of evolutionarily younger lineages [e.g. cone snails and advanced snakes with evolutionary origins dating back to <35–50 MYA (Sunagar and Moran, 2015)]. This rapid expansion, or the ‘expansion phase’, is shaped by a strong influence of positive selection that underpins the transition of organisms into novel ecological niches. Post these adaptive changes, the influence of diversifying selection is replaced by the effects of purifying selection (the ‘purification phase’) that preserve potent toxins generated during the expansion phase. This, perhaps, explains the contrasting evolutionary regimes documented in evolutionarily younger and ancient lineages (Sunagar and Moran, 2015). Venom coding genes in evolutionarily ancient lineages are said to re-enter the expansion phase if they re-encounter dramatic shifts in ecology and environment. The only exceptions to this hypothesis are toxins that non-specifically interact with their molecular targets or those that are deployed for antipredatory defence (Sunagar and Moran, 2015). The latter hypothesis, however, mostly stems from the analyses of venom proteins that are deployed for predation. A dearth of sequence information for venom components majorly employed for antipredator defence has impeded our understanding of their evolutionary diversification.
 
@@ -101,30 +161,30 @@ Such contrasting modes of diversification could be attributed to the ‘two-spee
 
 ## Methods
 
-## Sequence data curation and assembly
+### Sequence data curation and assembly
 
 Nucleotide datasets consisting of Mygalomorphae DRP sequences were assembled from the National Center for Biotechnology Information’s Non-redundant and Transcriptome Shotgun Assembly databases using manual search and exhaustive BLAST iterations (Altschul et al., 1990). Sequences for Araneomorphae toxins were retrieved using a similar strategy, while additional sequences from the RTA clade were derived from Cole and Brewer, 2021. A list of sequence data analysed in this study has been provided as Figure 4—source data 1. Translated sequences were aligned in MEGA X (v 10.2.6) using MUSCLE (Edgar and Batzoglou, 2006; Kumar et al., 2018) before back-translation to nucleotides. Alignment was further refined by using structurally conserved cysteines as guides.
 
-## Toxin superfamily identification and nomenclature
+### Toxin superfamily identification and nomenclature
 
 Spider toxin superfamilies were identified based on the strong conservation observed in signal peptide and propeptide sequences as illustrated by Pineda et al., 2020; Pineda et al., 2014. Additional support for uniqueness of each superfamily was obtained by our extensive phylogenetic (both Bayesian and Maximum likelihood) and Principal Component Analyses of toxin sequences. All the novel toxin superfamilies were labelled after gods/deities of death, destruction and underworld based on a nomenclature system as described before (Pineda et al., 2014). A list of novel superfamilies identified has been included as a part of supplementary file (Supplementary file 1).
 
-## Phylogenetic analyses
+### Phylogenetic analyses
 
 Phylogenetic histories of toxin families were reconstructed for whole length toxin nucleotide sequence using Bayesian and maximum-likelihood inferences implemented in MrBayes 3.2.7 a (Altekar et al., 2004; Ronquist et al., 2012) and IQ-TREE v1.6.12 (Nguyen et al., 2015; Chernomor et al., 2016 f), respectively. All alignments utilised have been made available in Figure 2—source data 1, Figure 3—source data 1 and Figure 4—source data 1, respectively. Bayesian analyses were run for a minimum of ten million generations using twelve Markov chains across four runs, sampling every 100th tree. Twenty-ﬁve percent of the total trees sampled were discarded as burn-in. The log-likelihood score for each tree was plotted against the number of generations to assess whether the analysis has reached an asymptote. A stop value of 0.01 was used for the average standard deviation of split frequencies. Bayesian Posterior Probability (BPP) was used to evaluate node support for the branches of Bayesian trees. ML analyses were performed using IQ-TREE with an edge-proportional partition model and 100 Bootstrap replicates. The best partition scheme for each partition was determined by utilising the inbuilt ModelFinder plugin in IQ-TREE (Kalyaanamoorthy et al., 2017). Phylogenetic trees were rooted with non-venom nucleolar cysteine-rich protein sequences from Mastigoproctus giganteus, Stenochrus portoricensis, Prokoenenia wheeleri, Phrynus marginemaculatus and Cryptocellus centralis from the class Arachnida that fall outside of the suborder Opisthothelae.
 
-## Principal component analysis
+### Principal component analysis
 
 PCA of signal peptide sequences from spider toxin superfamilies was performed in R (v 4.1.2; R Development Core Team, 2021) using a previously published script (Konishi et al., 2019; https://github.com/TomokazuKonishi/direct-PCA-for-sequences; (McClellan and McCracken, 2001). Sequences were aligned using MUSCLE in MEGA X (v 10.2.6) (Edgar and Batzoglou, 2006; Kumar et al., 2018) and further digitising in R utilising boolean vectors. The scaled principal component values (sPC) were calculated using conventional PCA prior to plotting.
 
-## Assessment of molecular evolution
+### Assessment of molecular evolution
 
 The nature of selection shaping the evolution of DRP toxins was determined using a maximum-likelihood inference implemented in CodeML of the PAML package (v 4.9 j) (Yang, 2007). Superfamilies with a minimum of 15 sequence representatives were further down-selected for this analysis to avoid inaccurate estimation of omega values when analysing smaller datasets. The ratio of non-synonymous substitutions (nucleotide changes that alter the coded amino acid) to synonymous substitutions (nucleotide changes that do not alter the coded amino acid), also known as omega (ω), was estimated. A likelihood ratio test (LRT) for the nested models - M7 (null model) and M8 (alternate model) - was performed to assess the statistical significance of the findings. The Bayes Empirical Bayes (BEB) approach implemented in M8 was used to calculate the posterior probabilities for site classes (Yang et al., 2005). Amino acid sites with a posterior probability of over 95% (PP ≥95%) were inferred as positively selected. The episodic and pervasive nature of selection was determined using the Mixed Effect Model of Evolution (MEME; Murrell et al., 2012) and the Fast Unconstrained Bayesian AppRoximation (FUBAR; Murrell et al., 2013), respectively.
 
-## Evaluation of selection on amino acid properties
+### Evaluation of selection on amino acid properties
 
 The influence of positive selection on the biochemical and structural properties of amino acids was evaluated using TreeSAAP (v 3.2; Woolley et al., 2003). TreeSAAP estimates the rate of selection using a modified MM01 model (McClellan and McCracken, 2001). Statistical probabilities corresponding to a range of properties were further calculated for each amino acid. BASEML was set to run with the REV model and eight evolutionary pathway categories were defined for evolutionary pathway analyses with a sliding window size set to one. Data acquired from TreeSAAP was further visualised and processed with IMPACT_S (Maldonado et al., 2014).
 
-## Structural analyses
+### Structural analyses
 
 Structural homologues of spider toxin superfamilies were identified via blast searches against the RCSB Protein Data Bank (https://www.rcsb.org/) and subsequently modelled using the SWISS-MODEL web server via user template mode (Waterhouse et al., 2018). The resultant models were validated using MolProbity (v 4.4; https://github.com/rlabduke/MolProbity; Williams et al., 2018) and general Ramachandran plot. Regimes of evolutionary selection pressures were evaluated and mapped onto homology models using the Consurf webserver (Ashkenazy et al., 2016, http://consurf.tau.ac.il/). PyMOL v2.5.2 (Schrödinger, LLC, USA) was used to visualise and generate the images of homology models.

@@ -24,18 +24,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00dn4t376 College of Health, Medicine and Life Sciences, Centre for Genome Engineering and Maintenance, Brunel University London United Kingdom
-2. https://ror.org/013meh722 Department of Genetics, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/04n0g0b29 Department of Medicine and Life Sciences, Universitat Pompeu Fabra Barcelona Spain
-4. https://ror.org/0424g0k78 Laboratory of Experimental Therapies in Oncology, IRCCS Istituto Giannina Gaslini Genova Italy
-5. https://ror.org/042nkmz09 Program in Cancer Research, Hospital del Mar Research Institute, CIBERONC Barcelona Spain
-6. https://ror.org/00btzwk36 Josep Carreras Leukemia Research Institute Barcelona Spain
+1. College of Health, Medicine and Life Sciences, Centre for Genome Engineering and Maintenance, Brunel University London United Kingdom ([ROR:00dn4t376](https://ror.org/00dn4t376))
+2. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Medicine and Life Sciences, Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))
+4. Laboratory of Experimental Therapies in Oncology, IRCCS Istituto Giannina Gaslini Genova Italy ([ROR:0424g0k78](https://ror.org/0424g0k78))
+5. Program in Cancer Research, Hospital del Mar Research Institute, CIBERONC Barcelona Spain ([ROR:042nkmz09](https://ror.org/042nkmz09))
+6. Josep Carreras Leukemia Research Institute Barcelona Spain ([ROR:00btzwk36](https://ror.org/00btzwk36))
 7. Animal Facility, IRCCS Policlinico San Martino Genova Italy
-8. https://ror.org/013meh722 Department of Pathology, University of Cambridge Cambridge United Kingdom
-9. https://ror.org/026zzn846 Centre for Haemato-Oncology, Barts Cancer Institute, Queen Mary University of London London United Kingdom
-10. https://ror.org/043jzw605 Centre for In Vivo Modelling, Institute of Cancer Research Sutton United Kingdom
-11. https://ror.org/01fm2fv39 Sanquin Research, Landsteiner Laboratory Amsterdam Netherlands
-12. https://ror.org/00q6h8f30 Amsterdam UMC Location Vrije Universiteit Amsterdam Amsterdam Netherlands
+8. Department of Pathology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+9. Centre for Haemato-Oncology, Barts Cancer Institute, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+10. Centre for In Vivo Modelling, Institute of Cancer Research Sutton United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))
+11. Sanquin Research, Landsteiner Laboratory Amsterdam Netherlands ([ROR:01fm2fv39](https://ror.org/01fm2fv39))
+12. Amsterdam UMC Location Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:00q6h8f30](https://ror.org/00q6h8f30))
 
 † Corresponding author
 
@@ -55,19 +55,39 @@ Herein, we describe a new protocol of gastruloid formation, i.e., hemogenic gast
 
 ## Results
 
-## HaemGxs capture time-dependent emergence of endothelium and hematopoietic cells
+### HaemGxs capture time-dependent emergence of endothelium and hematopoietic cells
 
 With the aim of recapitulating embryonic hematopoiesis with spatial and temporal accuracy, we modified existing gastruloid formation protocols to (1) promote the specification of hemogenic mesoderm derivatives, and (2) extend developmental time beyond the E8.0-equivalent of early developmental gastruloids (van den Brink et al., 2014) and the E9.0 timepoint of cardiogenic gastruloids (Rossi et al., 2022). We established a 216 hr haemGx protocol (Figure 1A) using a Kdr(Flk1)-GFP mouse ES cell line (Jakobsson et al., 2010), which allows the tracking of early hemato-endothelial specification by expression of the Flk1 (i.e. Kdr) locus. The haemGx protocol includes an indispensable pulse of Activin A to induce hemato-endothelial programmes via TGF-β signalling (visible by proxy of GFP-tagged Flk1 activation), in addition to the characteristic gastruloid patterning via WNT activation by CHI99021 supplementation at 48 hr (Figure 1—figure supplement 1A and B). We promoted hemato-endothelial programs through addition of VEGF and FGF2 at 72 hr (Sroczynska et al., 2009; Figure 1A). We observed extension of a polarized Flk1-GFP-expressing branched endothelial network (Figure 1B). Flow cytometry analysis revealed the onset of VE-cadherin+ C-Kit+ cells suggestive of EHT, with a peak at 120–144 hr (Figure 1C–D). This was followed by a surge in CD41+ candidate hematopoietic cells at 144 hr (Figure 1C–D). In our experience, observation of early polarized activation of the Flk1 locus at 96 hr (Figure 1B) was predictive of CD41+ detection 2 days later, suggesting that TGF-β activation in early patterning is required for later hematopoietic development, putatively by modifying mesoderm specification. We incorporated a 24 hr pulse of sonic hedgehog (Shh) between 144–168 hr to mimic the aortic patterning that precedes cluster formation (Figure 1A; Rybtsov et al., 2014). Continued exposure to VEGF after the Shh pulse resulted in specification of CD45+ hematopoietic cells progenitors (Figure 1C–E), which were apparent after 168 hr. The proportion of CD45+ cells was enhanced by the addition of SCF, FLT3L, and TPO (Figure 1—figure supplement 1C and D), a combination of cytokines routinely used for HSC maintenance; conversely, it did not require continued addition of FGF2 after 168 hr (Figure 1—figure supplement 1E), which was omitted. CD45+ cells, some of which co-expressed C-Kit, were present in a small number of ‘cluster’-like structures adjacent to Flk1-GFP+ Kit+ endothelium (Figure 1E). The process is overall reminiscent of hematopoietic progenitor cell budding from the aortic HE, suggesting recapitulation of hemogenic tissue architecture. Time-dependent specification of C-Kit+, CD41+, and CD45+ cells in haemGx could be obtained with other mouse ES cell lines, including commonly used E14Tg2a (E14) cells (Figure 1—figure supplement 1F-H), with successful specification of comparable frequencies of CD45+ progenitors (Figure 1—figure supplement 1I), attesting to the reproducibility of the protocol across cell lines of different genetic backgrounds.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig1-v1.jpg)
+
+**Figure 1.:** (A) Timeline of mES cells assembly and culture into gastruloids over a 216 hr period with the addition of specified factors for the promotion of hemato-endothelial specification. The 24 hr pre-treatment in 2i+LIF was omitted when mES cultures showed no signs of differentiation. (B) Imaging of haemGx over time from 72 to 216 hr at 10 x magnification, showing the assembly and growth of the 3D structures and the polarization of the Flk-1-GFP marker from 96 hr; scale bar: 100 mm. (C) Flow cytometry timecourse analysis of haemGx for the presence of CD144 (VE-cadherin), C-Kit, CD41, and CD45 markers; representative plots. (D) Quantification of analysis in (C). Violin plots with median and interquartile range of up to 26 replicates; Kruskal-Wallis CD144 (p=0.0755), C-Kit (p<0.0001), CD41 (p<0.0342), CD45 (p<0.0001). Shown are significant Dunn’s multiple comparisons tests; adjusted q-value. (E) Immunostaining of whole individual haemGx at 216 hr showing the localized expression of Flk1-GFP (green), C-Kit (yellow), and CD45 (red) markers; nuclear staining is in DAPI (blue); scale bar: 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Imaging of a 120 hr-haemGx with and without the addition of Activin A in conjunction with Chiron 99021 (CHIR) to achieve polarized expression of Flk-1-GFP; scale bar: 100 mm. (B) Titration of Activin A dosage (from 25 ng/ml to 150 ng/ml) required for Flk-1-GFP expression activation (green). (C) Representative flow cytometry plots of %CD45+ cells at 216 hr without and without addition of SCF, Flt3L, and TPO (SFT) from 168 hr; representative plots. (D) Quantification of %CD45+ cells by flow cytometry analysis of haemGx cultured with or without SFT, between 192–216 hr and 168–216 hr. Mean ± SD of n=7–8 independent experiments; Tukey’s multiple testing with significant q-value <0.05. (E) Quantification of %CD45+ cells at 216 hr by flow cytometry analysis of haemGx cultured in VEGF + FGF or VEGF-only during the 168–216 hr period. Mean ± SD of n=7 independent experiments; unpaired t-test; ns, not significant. (F) Flow cytometry monitoring of C-Kit, CD41, and CD45 markers in haemGx established from E14 and Flk-1-GFP mES lines; n=3–4 replicate experiments (n=1, CD45+ 120 hr). Mixed effects model with Sidak’s multiple comparison test; significant adjusted P-value <0.05. (G) Representative flow cytometry plots of CD41+ and C-Kit+ cells in E14 and Flk-1-GFP mES cell-initiated haemGx. (H) Representative flow cytometry plots of CD45+ cells in E14 and Flk-1-GFP mES cell-initiated haemGx. (I) Quantification of %CD45+ cells in Flk-1-GFP, Sox17-GFP, and TBra-GFP mES cell-initiated haemGx; n=5, mean ± SD. Welch’s t-test Sox17-GFP vs. Flk1-GFP, p=0.5254; Tbra-GFP vs. Flk1-GFP, p=0.3782.
+
 Overall, our extended haemGx model could capture time-dependent specification of CD41+ and CD45+ hematopoietic cells, with recapitulation of the cluster-like spatial arrangement of CD45+ cell emergence from HE, thus showing initial promise as a tool for the exploration of normal and perturbed developmental hematopoiesis.
 
-## HaemGx specify cells with phenotypic and functional hematopoietic progenitor characteristics
+### HaemGx specify cells with phenotypic and functional hematopoietic progenitor characteristics
 
 We confirmed the induction of endothelial patterning from the Flk1-GFP population by immunofluorescence staining showing the branched vascular-like network of Flk1 co-expressing CD31 (Figure 2A). Endothelial identity of Flk1-GFP+ populations was also detectable by flow cytometry through the presence of endothelial markers CD31 and CD34 (Figure 2—figure supplement 1A and B). Given the co-expression of CD31 and CD34 with hematopoietic progenitors emerging from HE, we inspected CD41+ and CD45+ cells for the presence of these markers. Indeed, we found that subsets of CD41+ and CD45+ hematopoietic cells co-express CD31 and CD34 (Figure 2B, Figure 2—figure supplement 1C and D), with increased relative representation of hemato-endothelial markers within CD41+ cells at 144 hr and CD45+ at 216 hr (Figure 2C), consistent with two successive waves of hemogenic emergence from HE. CD45+ cells from 216 hr haemGx also co-expressed C-Kit, Flk1-GFP, and VE-cadherin, a phenotype enriched in emergent hematopoietic stem and progenitor cells (HSPC) in the AGM (Figure 2—figure supplement 1E and F). The phenotype is detected in 1.8% of CD45+ cells on average (Figure 2—figure supplement 1G), corresponding to an estimated 8 cells per haemGx. In agreement, analysis of the haemGx progenitor content at 216 hr using multipotential CFC assays (Figure 2D–E) revealed the presence of >50 CFC/haemGx, of which an average of seven have mixed-lineage granulocytic-monocytic-erythroid (GEM) potential, numerically matching the estimated number of HSPC. Other progenitors were predominantly granulo-monocytic (GM) and erythroid (E) progenitors (Figure 2D–E). Analysis of the cellularity of dissociated haemGx at the 216 hr timepoint using Giemsa-Wright stained cytospins revealed differentiated cells of G, M, E, and megakaryocytic lineages (Figure 2—figure supplement 2A), putatively reflecting the progeny of EMP-like cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunostaining of whole individual haemGx at 144 hr showing the establishment of a vascular network by co-expression of CD31 and Flk1-GFP; nuclear staining is in DAPI (blue); scale bar: 100 µm. (B) Flow cytometry analysis of haemGx cells at 144 hr and 216 rhr stained for CD41, CD45, CD31, and CD34. (C) Quantification of flow cytometry analysis in (B) of CD41+ and CD45+ fractions co-expressing CD34 and CD31. Mixed effect analysis with a Ŝidàk test for multiple comparisons. (D) Colony-forming cell (CFC) assay of 216 hr-haemGx in multipotential methylcellulose-based medium. GEM: granulocyte-erythroid-monocyte; GM: granulocyte-monocyte; M: monocyte; E: erythroid. Please note that the medium does not include TPO and does not assess the presence of megakaryocytic progenitors. CFC frequency in 3 haemGx, n=3, mean ± SD. (E) Representative photographs of colonies quantified in C; scale bar = 2 mm. (F) Real-time quantitative (qPCR) analysis of expression of hemato-endothelial genes by timepoint. Relative gene expression fold change calculated by normalization to Ppia. Bars represent mean of three replicates and show individual data points; p-values by ANOVA across datapoints; post-hoc statistical significance between specific variables by Tukey’s test and shown by brackets.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative flow cytometry plots of CD31 and CD34 staining of haemGx at 144 hr and 216 hr gated on Flk-1-GFP+. (B) Quantification of Flk-1-GFP+ haemGx populations at 144 hr and 216 hr expressing CD34 and CD31. Crossbar shows mean of four replicate experiments with individual data points shown; Welch’s t-test; p-value significant <0.05. (C–E) Unstained controls (C–D) and fluorescence minus one (FMO) controls (E) relative to flow cytometry detection of multi-colour of surface markers in Figure 2. (F) Representative flow cytometry plot of haemGx of CD45+CD41lo fractions co-expressing C-Kit and Cd144 (Ve-Cadherin).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative image of cytospins of dissociated haemGx at 216 hr stained with Giemsa-Wright’s stain. Annotated are cells in the monocytic (dashed open arrow), granulocytic (solid open arrow), megakaryocytic (solid arrow), and erythroid (asterisk) lineages; arrowheads indicate cells with a non-specific blast-like morphology. 40 x magnification, scale bar = 100 µm. (B) Representative flow cytometry plots of CD41 and CD45 expressing populations in haemGx treated with 0.5 μM EZH2 inhibitor GSK126 or with 0.05% DMSO (control) at 144 hr and 216 hr. (C) Quantification of flow cytometry analysis in (B) showing the proportion of CD41+ and CD45+CD41lo populations in GSK126-treated haemGx. Welch’s t-test; p-value significant <0.05.
+
 We observed temporal progression of expression of key markers by real-time quantitative PCR (qPCR), configuring a sustained hemato-endothelial program from 120 hr through 216 hr (Dll4 and Mecom), and the generation of hematopoietic populations based on the time-dependent patterns of Myb, Runx1, Hlf, and Hoxa9 (Figure 2F). We note that Myb peaks at 144 hr, coincident with the emergence of CD41+ cells, which we postulate to have YS-like EMP characteristics. On the other hand, Runx1 has a bimodal pattern peaking at 144 hr, and later at 216 hr, suggesting the presence of two distinct hematopoietic waves. The later timepoint of 216 hr has significantly higher expression of both Hoxa9 and Hlf raising the possibility that the second wave indeed corresponds to the specification of AGM-like HSPC. In order to further test the capture of YS-like and AGM-like hematopoietic waves, given the lack of markers that specifically associate with AGM hematopoiesis, we took advantage of the distinct regulatory requirements of polycomb-associated EZH2, which is necessary for EMP differentiation in the YS, but not for AGM-derived hematopoiesis or primitive erythroid progenitors (Neo et al., 2018; Neo et al., 2021). Upon EZH2 inhibition via treatment with GSK216 from 120 hr onwards, we observed a reduction of CD41+ cells selectively at 144 hr, with no change in CD45+ cells at the later timepoint of 216 hr (Figure 2—figure supplement 2B and C). This suggests that the cells present at the later timepoint may not be the progeny of the former, thus supporting recapitulation of two independent hematopoietic waves, the latter putatively AGM. Additionally, the vulnerability of 144 hr CD41+ to EZH2 inhibition suggests that they include YS-like EMP and do not predominantly reflect EZH2-independent primitive YS hematopoiesis.
 
-## HaemGx progenitors capture time-dependent signatures of YS-like and AGM-like hematopoiesis
+### HaemGx progenitors capture time-dependent signatures of YS-like and AGM-like hematopoiesis
 
 To better characterize the extent and progression of developmental hematopoiesis in haemGx, we performed single-cell RNA-sequencing (scRNA-seq) time-course analysis of haemGx cell specification. We sorted cells from two independent haemGx cultures at 120, 144, 168, 192, and 216 hr, and profiled a total of 846 cells using the Smart-Seq2 protocol (Picelli et al., 2014; Figure 3—figure supplement 1A). We analyzed unfractionated live single haemGx cells at 120–192 hr and enriched the dataset with sorted CD41+ cells at their peak time of 144 hr, and sorted CD45+ cells at 192 and 216 hr. At timepoints of significant enrichment in CD41+ (144 hr) and CD45+ cells (192 hr) (Figure 1D), we also sorted C-Kit+ cells. Library preparation and sequencing generated an average of 120,000 reads/cell, which were mapped to an average of 4000 genes/cell, with minimal signs of cell stress/death as measured by mitochondrial DNA fraction (Figure 3—figure supplement 1B). Read and gene counts were similar between biological replicates, cell types, and at different timepoints (Figure 3—figure supplement 1C). The exception was 120 hr unfractionated haemGx cells, which despite similar sequencing depth (average read counts), were mapped to twice the number of genes (Figure 3—figure supplement 1C), possibly reflecting multi-gene program priming at the onset of hemogenic specification. We selected highly varying genes (HVG) before principal component analysis (PCA) dimensionality reduction and retained the most relevant dimensions. In the PCA reduced space, we constructed a KNN graph and used uniform manifold approximation and projection (UMAP) to visualize the data on two dimensions, looking for cell communities using Leiden clustering (Figure 3—figure supplement 1D). We identified 12 cell clusters of which 2 (clusters 0 and 5) almost exactly mapped to C-Kit+ cells (also positive for Sca-1), 2 (clusters 1 and 8) contained CD45+ sorted cells, and cluster 4 uniquely captured the CD41+ cells observed at 144 hr (Figure 3—figure supplement 1D). Although some unfractionated cells overlapped with the hemogenic cell clusters (Figure 3—figure supplement 1D, middle panel), most occupied different transcriptional spaces, reflecting the relative frequency of hematopoietic cells and suggesting the presence of potential hemogenic niches.
 
@@ -75,13 +95,37 @@ To explore tissue and lineage affiliation of the different clusters, we performe
 
 To specifically explore the extent to which haemGx capture putative YS and AGM-like hematopoiesis, we re-clustered cells sorted on hemato-endothelial markers CD41, C-Kit, and CD45 at the 144 hr, 192 hr, and 216 hr timepoints (Figure 3A). We mapped the expression pattern of endothelial (Pecam and Cd34), HE (Mecom and Cd44) and hematopoietic (Runx1, Mllt3, Hoxa9, and Hlf) markers across the time-dependent clusters (Figure 3B). We observed a coincidence of Pecam, Cd34, and Mecom expression with clusters 0 and 3, which capture C-Kit+ cells at 144 and 192 hr, respectively. Some positive cells were also seen within CD41+ and CD45+-enriched clusters 2, and 1 and 4, respectively, supporting the presence of phenotypic progenitors, as suggested by flow cytometry analysis (see Figure 2). CD41+ and CD45+-sorted clusters, on the other hand, show expression of Runx1, confirming their hematopoietic affiliation. Cd44, which is upregulated at the endothelial-to-hematopoietic transition (EHT) and in association with the AGM region (Oatley et al., 2020; Fadlullah et al., 2022), is detected predominantly in C-Kit+-enriched cluster 3 and CD45+-sorted clusters 1 and 4, corresponding to the later timepoints of 192 and 216 hr. This supports the notion that the later timepoints may capture AGM-like EHT, which is also suggested by significant increases in expression of VE-cadherin (Cdh5), Sox17, as well as Cd34, Cd44, and Procr (Fadlullah et al., 2022; Frankish et al., 2019; Oatley et al., 2020) in 192 hr, endothelial-enriched, C-Kit+ cells (Figure 3C–D). Important in this context, these cells express arterial endothelial markers, including Flt1, Efnb2, and Dll4 steadily at both timepoints (Figure 3C, Figure 3—figure supplement 2B). Hoxa9 expression also associates with arterial specification and definitive AGM-like hematopoiesis: albeit at low frequency, it is detected exclusively in C-Kit and CD45-sorted cells in the 192 and 216 hr-timepoints of haemGx differentiation (Figure 3B and E). These cells also express Mllt3 and, rarely, Hlf, compatible with incipient specification of an AGM-like definitive blood program (Figure 3B and E). Mllt3 is additionally expressed in CD41+-sorted cells of cluster 2, in line with its role in early erythroid and megakaryocytic lineage identity (Pina et al., 2008); Myb is also more frequently expressed in this population (Figure 3E). In contrast, Ikzf1, which regulates lymphoid specification (Huang et al., 2019), gradually increases its expression, and indeed frequency, in 216 hr-CD45+ sorted cells. A handover from erythroid/megakaryocytic to myelo-lymphoid lineage affiliation is apparent between 144 hr and 216 hr haemGx blood cells (Figure 3—figure supplement 2C). Of note, a small number of erythroid-affiliated cells at 216 hr express adult globins, suggesting a definitive origin (Figure 3—figure supplement 2C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig3-v1.jpg)
+
+**Figure 3.:** (A) UMAP clustering of subsets of sequenced cells expressing CD41, C-Kit, and CD45 at 144 hr, 192 hr, and 216 h, annotated by timepoint (left panel), sorting condition (middle panel), and Leiden clustering (right panel). (B) UMAP panels highlighting the expression of specific hemato-endothelial markers in the transcriptional spaces defined in (A). Colour scale indicates expression levels in counts. (C) Heatmaps of differentiation of an arterial endothelial programme in haemGx from scRNA-seq data of sorted on expression of C-Kit at 144 hr and 192 hr. Colour scale indicates expression in counts. (D) Violin plots quantifying the expression of hemato-endothelial markers in C-Kit+fraction from clusters in (A) comparing 144 hr and 192 hr timepoints. Wilcoxon test; significant p-value <0.05. (E) Expression of definitive hematopoietic genes in C-Kit+, CD41+ and CD45+ cells at 144 hr and 192/216 hr timepoints; expression levels as normalized counts per million reads. Mann-Whitney or Kruskal-Wallis with Dunn’s multiple comparisons; significant p or q-value <0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Summary of plating strategy for scRNA-seq analysis of gastruloids at 120 hr, 144 hr, 168 h, 192 hr, and 216 hrwithout selection of surface markers (‘all’) or sorted as C-Kit/Sca1+ (green shading), CD41+ (blue), or CD45+ (orange) cells; P=plate. (B) ScRNA-seq quality control measures quantification of mapped reads, individual genes, and mapping of reads onto mitochondrial (mt)DNA. (C) Mapped read and gene counts for individual Smart-seq2 libraries (plate, P), biological replicate (repl) populations of single cells, and read and map distributions across unsorted and cell surface phenotype-sorted cells. (D) UMAP projection of all sequenced cells coloured by annotated clusters (left), by sorting markers C-Kit/ScaI, CD41, and CD45, or unfractionated cells (‘whole’ corresponding to ‘all’ in panel A) (center), and by haemGx culture time (right). (E) Cell type enrichment analysis of cluster classifier genes, using the PanglaoDB repository (Franzén et al., 2019); classifier genes are obtained by differential expression in comparison to all other clusters. Represented are clusters 1, 3, and 9, which are characteristic of timepoints 168–216 hr, and capture stromal cells putatively relevant for hemogenic support, including autonomic neurons (cluster 9). The statistical power of representation of individual cell types is expressed as the EnrichR combined score with a p-value threshold of <0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Heatmap representation of the expression of endothelial and hematopoietic marker genes in individual haemGx CD41+ and CD45+ cells sorted at 192 and 216 hr. Cells and genes ordered by unsupervised hierarchical clustering. (B) Violin plots quantifying the expression of arterial markers in C-Kit + fraction from clusters in Figure 3A comparing 144 hr and 192 h timepoints. Wilcoxon test; significant p-value <0.05. (C) Summary representation of the proportion of hGx cells expressing endothelial (endo), erythroid/myeloid (Ery + My), myeloid/lymphoid (My + Ly), and HSPC gene signatures. Endo: Kdr; Ery + My: Epor ± Gata1±Klf1±Hbb ± Hba ±Hbg + Spi1±Mpo ± Anpep ±Csf1/2/3 r; My + Ly: Spi1±Csf1/2 a/3r+Ikzf1±Ighm/d±Igk; HSPC: Ptprc + Myb.
+
 Altogether, scRNA-seq analysis support the suggestion from phenotypic and in vitro functional data, that the haemGx model captures two waves of hematopoietic specification from HE-like cells and may configure pre-definitive and definitive embryonic blood formation.
 
-## Late-stage haemGx cells transcriptionally resemble mouse AGM progenitors and have short-term engraftment potential
+### Late-stage haemGx cells transcriptionally resemble mouse AGM progenitors and have short-term engraftment potential
 
 To investigate the putative YS-like pre-definitve and AGM-like definitive nature of haemGx-generated hematopoietic progenitors, we conducted projections of haemGx scRNAseq data onto bona fide embryonic populations. We considered three distinct scRNA-seq datasets, which (1) capture arterial and haemogenic specification in the para-splanchnopleura (pSP) and AGM region between E8.0 and E11 (Hou et al., 2020; Figure 4—figure supplement 1A); (2) uniquely capture YS, AGM and FL progenitors and the AGM EHT (Zhu et al., 2020; Figure 4—figure supplement 1B); and (3) interrogate the mouse AGM at the point of HSC emergence from the dorsal aorta HE (Thambyrajah et al., 2024; Figure 4—figure supplement 1C). We extracted highly varying genes from each of the 3 datasets to construct dimensionality reduction maps of the data (Figure 4—figure supplement 1A-C), and conducted k-Nearest Neighbor (KNN) analysis to classify and regress our haemGx scRNA-seq data onto those maps considering three neighbors (Figure 4A). HaemGx cells with a correlation metric >0.7 were projected onto the respective embryonic datasets (Supplementary file 3). Projections onto Hou et al., 2020 positioned clusters 0 and 3, corresponding to endothelium, including arterial endothelium and HE-like cells, between days E8.5 and E10, putatively spanning YS-like and AGM-like blood formation. A subset of CD45+-sorted cells, as well as a small numbers of CD41+ cells from cluster 2 projected onto E10 HE and intra-aortic cluster (IAC) cells, suggesting the presence of definitive HSPC or their precursors in haemGx (Figure 4A, Supplementary file 3). We sought to further check the transcriptional affiliation of haemGx with intra-embryonic, definitive hematopoiesis, by considering the dataset by Zhu et al., 2020, which uniquely captures different hematopoietic locations in the same study (Figure 4A). We matched the identity of a large proportion of CD41+-sorted cells to YS EMP, with some of the same cluster 2 cells mapping to erythroid progenitors, and some later CD45+-sorted cells resembling myeloid progenitors (Figure 4A, Supplementary file 3). On the other hand, a subset of CD45+-sorted cells mapped to IAC and lymphoid-myeloid primed progenitors (LMPP) in the FL (Figure 4A, Supplementary file 3), compatible with the presence of AGM-like definitive HSPC in haemGx. Interestingly, some CD41+-sorted cells also map to IAC, and indeed to HE, suggesting that this earlier population may contain HSPC precursors, in addition to YS-like progenitors. IAC and HE-like cells were also found within C-Kit+ cells, mostly from the 192 hr timepoint, while the majority of C-Kit+ cells captured different endothelial identities, as expected from their transcriptional profiles. Projection onto Thambyrajah et al., 2024 (Figure 4A, Supplementary file 3), conflates YS-like and AGM-like progenitors onto the candidate HSC-enriched embryo AGM cluster 2, highlighting the similarity between transcriptional programs at different sites of embryonic blood emergence. CD45+ cells are more distally-projected onto the same cluster, as shown for E11.5 cells in the Thambyrajah et al., 2024 study, some of which correspond to the candidate FL-LMPP in Zhu et al., 2020 (Supplementary file 3). HaemGx cell similarities to Thambyrajah et al., 2024 HSC-enriched cluster 2 also include HE-like and IAC-like cells (as per Zhu et al., 2020 projections), mostly E9.5-like as per Hou et al., 2020, overall suggesting putative early specification of the AGM region within haemGx.
 
-## Late-stage haemGx cells can engraft hematopoietic tissues upon maturation
+![Figure 4.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig4-v1.jpg)
+
+**Figure 4.:** (A) Projection of clustered haemGx cells (CD41, C-Kit, and CD45 at 144 hr, 192 hr, and 216 hr; Figure 3A) onto mouse single-cell RNA-seq datasets capturing: arterial and haemogenic specification in the para-splanchnopleura (pSP) and AGM region between E8.0 and E11 (Hou et al., 2020); YS, AGM, and FL progenitors and the AGM EHT (Zhu et al., 2020); HSC emergence from the dorsal aorta HE (Thambyrajah et al., 2024). Gastruloid cell projection identified as per their cluster of origin (Figure 3A). (B) Schematic representation of the experimental workflow for execution and analysis of haemGx implantation in the adrenal gland of immunodeficient mice. (C) PCR detection of haemGx genomic (g) DNA in the bone marrow (BM) and spleen (Spl) of immunodeficient mice 4 weeks after unilateral adrenal implantation of 3 gastruloids/gland. Analysis of five replicates of 100 ng gDNA/recipient tissue; control animal was injected unilaterally with PBS in an adrenal gland in parallel with experimental implantation. Reaction positive control used 100 ng of gDNA from Rosa26-BFP::Flkj1-GFP mES cells (mES) used to generate haemGxs. NTC: no template control. (D) Flow cytometry plots of engraftment detection by BFP expression in bone marrow (BM) of recipient mice 4 weeks following implantation of 216 hr haemGx. (E) Flow cytometry plots of lineage affiliation of BFP+ engraftment in bone marrow (BM) of recipient mice 8 weeks following implantation of 216 hr haemGx.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) UMAPs of mouse single-cell RNA-seq datasets annotated as in respective publications: (A) arterial and haemogenic specification in the para-splanchnopleura (pSP) and AGM region between E8.0 and E11 (Hou et al., 2020); (B) YS, AGM, and FL progenitors and the AGM EHT (Zhu et al., 2020); (C) HSC emergence from the dorsal aorta HE (Thambyrajah et al., 2024).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Map of the Rosa26-BFP construct used to target Flk1-GFP mES cells employed in implant assays. Primers used for gDNA PCR analysis are indicated. (B) PCR detection limit of the BFP amplicon using the primers in (A), in a serial dilution of Rosa26-BFP::Flk1-GFP mES gDNA into human leukemia cell line K562 gDNA; total 100 ng DNA per lane. (C) Uncropped image of agarose gel electrophoresis of BFP detection shown in Figure 4C. (D) Representative flow cytometry plot of the spleen of immunodeficient mouse recipients, showing myelo-lymphoid (CD45+Ter119-) and erythroid (Ter119+CD45+/-) cell fractions at 4 weeks post-implantation. (E) PCR analysis of Rosa26-BFP::Flk1-GFP gDNA in the cell fractions in (D) of implanted animal #15 at 4 weeks post-implantation. PCR run in triplicate material from each sample; positive and NTC controls as per Figure 4C. (F–G) Representative flow cytometry interrogation of BFP detection within lineage compartments in the bone marrow (BM) of control and implanted recipient animal #2 (F) and animal #1 (G) at 8 weeks after hGx implantation. (H) Histology of implanted and control adrenal glands; paraffin sections stained with hematoxylin & eosin (H&E). Inserts in implanted animal highlight neural (orange) and hematopoietic and renal tubular epithelium (green); inserts in control animal highlight normal cortical (blue) and medullar (red) adrenal architecture, absent in implanted adrenal glands.
+
+### Late-stage haemGx cells can engraft hematopoietic tissues upon maturation
 
 The presence of putative AGM-like hematopoietic cells within haemGx led us to investigate whether haemGx-derived cells had the ability to engraft the hematopoietic system of immunodeficient animals. In early experiments, we had transplanted dissociated haemGx cells obtained at 192 and 216 hr into irradiated immunocompetent C57Bl/6 recipients, sub-lethally irradiated immunodeficient NSG mice, or non-conditioned NSGW41 hosts, but failed to detect signs of engraftment of peripheral blood, spleen (Spl) or bone marrow (BM) at 12 days (including absence of spleen colony formation), at 4–6 weeks (short-term engraftment), or beyond 8–10 weeks (long-term engraftment) by either flow cytometry detection of CD45.2 or by genomic DNA (gDNA) PCR analysis of the Flk1-GFP locus.
 
@@ -89,9 +133,21 @@ Failure to engraft was perhaps not surprising given that transcriptional program
 
 Overall, implantation in the adrenal niche and/or preservation of the 3D architecture enabled low-level in vivo hematopoietic activity, although the mechanism remains unclear. In some recipients, hematopoietic engraftment was accompanied by in situ growth and multi-tissue differentiation of the implanted haemGx (Figure 4—figure supplement 2H). However, adrenal enlargement was not observed in all animals with hematopoietic engraftment (e.g. 4 weeks’ #11 had a normally sized adrenal, as did all animals analysed at 8 weeks), making it unlikely that hematopoietic activity results from teratoma formation by residual pluripotent cells. Late-stage haemGx (216 hr) may thus contain hematopoietic progenitors with some short-term engraftment potential but incomplete functional maturation, which are present at low frequency. Engraftment is erythro-myeloid at 4 weeks and lympho-myeloid at 8 weeks, reflecting different classes of progenitors, putatively of YS-like and AGM-like affiliation.
 
-## HaemGx resolve the early hemogenic ontogeny targeted by infant AML gene MNX1
+### HaemGx resolve the early hemogenic ontogeny targeted by infant AML gene MNX1
 
 The ability of haemGx to reconstitute putative YS and AGM-like HE and hemopoietic progenitors positions it as an attractive model to probe cellular origins of developmental leukemia. In particular, forms of AML unique to the first 2 years of life – infant (inf)AML – have been shown to transform fetal liver (FL) but not adult hematopoietic cells (Waraky et al., 2024; Mercher et al., 2009; Chen et al., 2011; Ragusa et al., 2023), compatible with targeting of a transient embryonic cell. In the case of t(7;12) AML (herein MNX1-r) (Ragusa et al., 2023), in which the translocation results in transformation-driving ectopic expression of MNX1 (Waraky et al., 2024), analysis of patient transcriptional signatures (Ragusa et al., 2022) for over-representation of cell atlas-defined affiliations, indicates enrichment in cardiomyogenic, endothelial, HSC/progenitor, and mast cells (Figure 5A). These signature enrichments are compatible with an early hemogenic cell derivative, capturable in the haemGx model. Other cell type-enrichments reflect MNX1 functions in pancreatic and neuronal development (Ragusa et al., 2022; Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cell type enrichment analysis in MNX1-r AML transcriptomes, compared to normal pediatric bone marrow (BM) or other pediatric AML from the TARGET database. GSEA used representative cell type gene sets from the 2021 DB database; bubble plot shows NES scores (colour gradient) and statistical significance (–log10(FDR), bubble size). (B) Schematic representation of generation of MNX1-overexpressing and empty vector (EV) mES cells by lentiviral transduction, with subsequent assembly into haemGxs. (C) Imaging of haemGxs with MNX1 overexpression and EV controls at 10 x magnification, showing appropriate assembly and polarization of the Flk1-GFP marker. Scale bar: 300 mm. (D) Size of haemGx at each timepoint, determined by the distance between the furthest extreme points in µm. Mean ± SD of three replicate experiments; two-tailed t-test, p<0.05 (*), 0.001 (**), 0.0001 (***), and 0.00001 (****). (E–G) Flow cytometry timecourse analysis of (E) C-Kit+, (F) CD41+, and (G) CD45+ cell abundance in MNX1 and EV haemGxs (120–216 hr). Mean ± standard deviation of 3–7 independent experiments; two-way ANOVA and Sidak’s multiple comparison test significant at p<0.05 for C-Kit+ cells only (construct contribution to variance p=0.0191; 144 hr comparison *p=0.0190). (H) Volcano plots of differentially expressed genes (DEGs) by bulk RNA-seq between MNX1 and EV haemGxs at 144 hr and 216 hr. Intersection of statistically significant DEGs between 144 hr and 216 hr (shown in Venn diagram on top right) identified unique DEGs for each condition (labelled in red for 144 hr and blue for 216 hr). (J) Gene Ontology (GO) term enrichment for differentially upregulated genes between MNX1 and EV haemGx at 144 h (red) and 216 h (blue), computed in EnrichR using the GO Biological Process repository. (I) Transcription factor (TF) binding site enrichment on differentially upregulated genes between MNX1 and EV haemGx at 144 h (red) and 216 hr (blue) using the ENCODE and ChEA Consensus TFs from ChIP database on EnrichR.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell type enrichment analysis in MNX1-r AML transcriptomes, compared to normal pediatric bone marrow (BM) or other pediatric AML from the TARGET database. Gene set enrichment analysis (GSEA) used representative cell type gene sets from the 2021 DB database; bubble plot shows NES scores (colour gradient) and statistical significance (–log10(FDR), bubble size). (B) Quantitative (q) RT-PCR analysis of MNX1 overexpression in 216 hr-haemGx. Gene expression fold change calculated by normalization to HPRT1. Mean ± SD of three replicates; 2-tailed t-test, p<0.001 (**). (C) Cell counts of disassembled haemGx at 216 hr. Mean ± SD of three replicate experiments; two-tailed t-tesp, p<0.001 (**). (D) Proportion of EV and MNX1 haemGx exhibiting spontaneous unifocal contractility at 192 hr, observed in commercial N2B27 medium (see Experimental Procedures); mean ± SD of three replicate experiments; two-tailed t-test, p<0.001 (**). (E–F) Flow cytometry analysis of specification of (E) hemato-endothelial – C-Kit+ and VE-Cadherin+ – and (F) hematopoietic progenitor – CD41+ and CD45+ – cells over a 120–216 hr timecourse of EV and MNX1 haemGx cultures; representative plots.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Expression of human MNX1 and murine Mnx1 genes in FPKM units from RNA-seq of MNX1 and EV haemGx. (B) UMAP of time-resolved global clustering of scRNA-seq of haemGx showing the enriched clusters in GX-MNX1 at 144 hr (orange boxes) and 216 hr (blue boxes), and MNX1-r AML (black boxes) or MLL-AML (green boxes) determined by gene set enrichment analysis (GSEA). (C) Bubble plot of GSEA NES values and statistical significance by –log10(FDR) of enrichments in specific time clusters and corresponding global clusters in GX-MNX1 at 144 hr and 216 hr compared to respective GX-EV, and MNX1-r or MLL AML samples compared to other pediatric AML.
 
 We overexpressed MNX1 (MNX1-OE) in Flk1-GFP mouse ES cells by lentiviral transduction (Figure 5B) and analyzed progression of haemGx generation (Figure 5C). We used human MNX1 cDNA to distinguish from the endogenous gene, but the degree of homology is nevertheless high (84%), supporting functional equivalence. We confirmed that MNX1 overexpression in haemGx is maintained to endpoint (Figure 5—figure supplement 1B). MNX1-OE haemGx activated polarized Flk1-GFP expression and elongated with similar kinetics to empty-vector (EV) control (Figure 5C), albeit with formation of larger haemGx (Figure 5D) denoting increased cellularity (Figure 5—figure supplement 1C). From 192 hr onwards, MNX1-OE haemGx had a higher frequency of spontaneously contractile structures (Figure 5—figure supplement 1D), compatible with the cardiogenic cell association of patients’ transcriptomes (Figure 5A).
 
@@ -101,11 +157,27 @@ To better understand the consequences of MNX1-OE on hemogenic development, we pe
 
 We attempted to further deconvolve the cellular heterogeneity underlying bulk RNA-seq DEGs by interrogating the cluster signatures obtained from the single-cell analysis of haemGx development (Figure 5—figure supplement 2B and C; refer to Figure 3—figure supplement 1D). In support of an association with hemato-endothelial specification, MNX1-OE transcriptomes showed enrichment of haemGx HE cluster 5 and 0 signatures; the YS-EMP-like cluster 4 was also enriched (Figure 5—figure supplement 2B). MNX1-OE DEGs at both timepoints also enriched for the relatively less differentiated cluster 10, which predominantly captures unfractionated haemGx cells at 120 hr, supporting an early ontogenic affiliation. Significantly, clusters 5 and 0 HE signatures were also enriched in MNX1-r infAML patient signatures (Ragusa et al., 2022; Figure 5—figure supplement 2B and C), putatively aligning MNX1-OE effects with HE and the hemogenic transition. In contrast, MNX1-OE DEGs specific to 216 hr showed enrichment in myeloid progenitor/MLP-enriched cluster 8 which captures 192/216 hr haemGx cells, but diverges from MNX1-r infAML signatures (Figure 5—figure supplement 2B and C), instead approximating the distinct myelo-monocytic and/or mixed-lineage affiliation of KMT2A-rearranged AML, which is also common in older pediatric and adult patients.
 
-## Serial replating of MNX1-OE haemGx cells identifies a candidate C-Kit+ leukemia-propagating cell more susceptible to transformation in the YS period
+### Serial replating of MNX1-OE haemGx cells identifies a candidate C-Kit+ leukemia-propagating cell more susceptible to transformation in the YS period
 
 We further investigated the potential of MNX1-OE haemGx to reflect MNX1-r AML biology by performing serial replating of CFC assays, a classical in vitro assay of leukemia transformation. We compared 144 hr and 216 hr haemGx to match functional and transcriptome data, and plated unfractionated haemGx, given the transient nature of C-Kit+ enrichment. Both 144 hr (Figure 6A–B) and 216 hr (Figure 6C–D) MNX1-OE haemGx replated for at least five platings were significantly different to control (EV) (Figure 6B and D). EV-haemGx replating could not be sustained beyond plate 3 in most experiments started from 216 h (Figure 6C); 144 hr EV-haemGx exhibited some low-level replating until plate 5 (Figure 6A), but the colonies were formed by a few scattered cells clearly distinct from the well-demarcated colonies obtained from MNX1-OE haemGx. We analyzed early-stage (plate 1) and late-stage (plate 5) colonies by flow cytometry to identify the nature of the replating cells. Cells selected through replating were C-Kit+ (Figure 6E), matching the cell phenotype transiently enriched at 144 hr. MNX1-OE C-Kit+ cells co-expressed CD31 (Figure 6—figure supplement 1A and B), underpinning the endothelial signatures of MNX1-r leukemia. Early replating of MNX1-OE haemGx also enriched for erythroid-affiliated Ter119+ cells, particularly when initiated from the 144 hr timepoint (Figure 6—figure supplement 1C), but this was not sustained through replating. Myelo-monocytic-affiliated markers, including CD11b or CD45, were not present (Figure 6E, Figure 6—figure supplement 1C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative photographs of serial replating of colony-forming cell assays initiated from EV or MNX1 cells obtained at 144 h of the haemGx protocol. (B) Quantification of colony-replating efficiency of EV and MNX1 144h-haemGx (GX) cells. Mean + SD of n>3 replicates; Kruskal-Wallis with Dunn’s multiple comparison testing at significant q<0.05. (C) Representative photographs of serial replating of colony-forming cell assays initiated from EV or MNX1 cells obtained at 216 h of the haemGx protocol. (D) Quantification of colony-replating efficiency of EV and MNX1 216h-haemGx cells. Mean + SD of n=5–8 replicates; Kruskal-Wallis with Dunn’s multiple comparison testing at significant q<0.05. (E) Flow cytometry analysis of hemogenic progenitor C-Kit+ cells and myeloid-affiliated CD11b+ cells at first round of plating of 144 hr and 216 hr-haemGx initiated from EV and MNX1 cells; representative plots.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative flow cytometry plot of CD31 and C-Kit staining of CFC plating of GX-MNX1 (left) and quantification of sustained expression of CD31+CKit+ cells through replatings. (B) Representative flow cytometry plots of serially re-plating MNX1 cells from 144 h and 216h-gastruloids (plate 5 cells) stained with Ter119 and CD45.
+
 We performed RNA-seq analysis of MNX1-OE haemGx CFC cells obtained through re-plating and integrated the data with the 144 hr and 216 hr haemGx timepoints to identify genes enriched through the process of transformation. HsMNX1 reads were increased in MNX1-OE CFC samples, supporting selective expansion of transduced cells (Figure 7A). We performed hierarchical clustering of all DEGs in pairwise comparisons (Figure 7B), and used Gene Set Enrichment Analysis (GSEA) of MNX1-r patient signatures up-regulated in comparison to other AML in the infant (0–2) age group, to interrogate the different clusters. Cluster k14 had significant enrichment of MNX1-r signatures against all other AML subtypes (Figure 7C), with considerable overlap between leading-edge (i.e. significantly-enriched) genes (Figure 7—figure supplement 1A). Importantly, k14 captures the subgroup of DEGs up-regulated upon CFC replating which are also up-regulated in MNX1-OE haemGx at 144 hr (Figure 7B), matching the time-dependent enrichment of the putative MNX1-OE propagating population. Interrogation of cell-type-specific signatures within the k14 MNX1-r leading-edge genes against the single-cell PanglaoDB atlas captured similarities to hemogenic and non-hemogenic cell types, including interneuron, and other neural signatures (Figure 7D), which reflect MNX1 biological functions (Harrison et al., 1999; Thaler et al., 1999; Ragusa et al., 2022). The most highly significant signatures capture early developmental hemogenic components, such as ‘endothelial cells’ and ‘erythroid cell precursors,’ reflecting the 144 hr, putative YS affiliation of MNX1-OE haemGx. The ‘mast cells’ affiliation of MNX1-r AML signatures within the haemGx k14 cluster is also likely to reflect a YS EMP-like affiliation (Chia et al., 2023), and is accordingly aligned with MNX1-OE haemGx isolated at 144 hr (Figure 7—figure supplement 1B). Giemsa-Wright-stained cytospins of serially replated CFC assays initiated with 144 hr MNX1-OE cells showed a shift from blast-like at plate 3 to precursor cell morphology with some differentiated mast cells at plate 5 (Figure 7E, Figure 7—figure supplement 1C). We also observed mast cells in 216 hr-initiated colonies (Figure 7E), but these were differentiated at an earlier plate, suggesting that MNX1-OE-responsive C-Kit+ progenitors experience maturation between 144 hr and 216 hr.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig7-v1.jpg)
+
+**Figure 7.:** (A) Quantification of human MNX1 transcripts in FPKM units from RNA-seq of GX-EV, GX-MNX1, and CFC at 144 hr and 216 hr. Bars represent mean of replicates. (B) Heatmap comparing the expression of all differentially expressed genes (DEGs) between all conditions (GX-MNX1 144 hr vs GX-EV 144 hr; GX-MNX1 216 hr vs GX-EV 216 hr; CFC MNX1 144 hr vs GX MNX1 144 hr; CFC MNX1 216 hr vs GX MNX1 216 hr) as Z score. Hierarchical clustering by Ward D method on Euclidean distances identifies 14 clusters (k). (C) Gene set enrichment analysis (GSEA) plots for gene set extracted from k14 from (B) against MNX1-r patients RNA-seq counts vs MLL, core-binding factors (CBF), or other pediatric AML. (D) Cell type analysis of the intersect of leading-edge genes LEGs (n=476) from Figure 7—figure supplement 1A.in MNX1-r patients (k14 LEGs) (B) using the Panglao DB 2021 database. (E) Representative Giemsa-Wright stained dissociated CFC replating (fourth plating) MNX1 haemGx cells from 144 hr and 216 hr. Solid black arrows, mast cell precursors; dashed black arrows, mast cells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/102324/elife-102324-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Venn diagram showing the intersection of leading-edge genes enriched in MNX1-r patient vs MLL, core-binding factors (CBF), or other pediatric AML from gene set enrichment analysis (GSEA) analysis using the K14 signature. (B) Cell type enrichment analysis in MNX1-r acute myeloid leukemia (AML) transcriptomes, compared to normal pediatric bone marrow (BM) or other pediatric AML from the TARGET database, with comparison with transcriptomes of haemGx and colony-forming assays (CFCs) from MNX1 vs EV conditions at 144 hr and 216 hr. GSEA used representative cell type gene sets from the Panglao DB 2021 database; bubble plot shows NES scores (colour gradient) and statistical significance (–log10(FDR), bubble size). (C) Representative Giemsa-Wright stained dissociated CFC replating MNX1 haemGx cells from 144 hr; purple arrows, undifferentiated blasts; solid black arrow, mast cell precursors; dashed black arrow, mast cells. (D) Transcriptional re-analysis of Waraky et al., 2024 in vivo model of MNX1-OE leukemia from transplanted fetal liver (FL) cells. Heatmap comparing the expression levels of all DEG between all conditions, i.e., FL control (FL Ctrl) vs FL with MNX1-OE (FL MNX1) in liquid culture, and bone marrow (BM) from mice transplanted with FL Ctrl (BM TX Ctrl) vs leukemic animals transplanted with FL MNX1 cells (BM TX MNX1). Hierarchical clustering by Ward D method on Euclidean distances identifies 12 clusters (k). Clusters k1, k2, k5, k6, and k9 are specifically up-regulated in BM TX MNX1 and putatively represent MNX1-OE leukemia programs. Analysis matches Figure 7B for MNX1-OE haemGx. (E) GSEA plots of significant results (by p-value <0.05) for gene set extracted from k1, k2, k5, k6, and k9, individually or combined, from (D) against MNX1-r patients RNA-seq counts vs MLL, core-binding factors (CBF), or other pediatric AML. FDR values are indicated for each enrichment point. Analysis matches Figure 7C for MNX1-OE haemGx. (F) Cell type enrichment analysis in MNX1-r AML transcriptomes, compared to normal pediatric bone marrow (BM) or other pediatric AML from the TARGET database. GSEA used representative cell type gene sets from the Panglao DB 2021 database; bubble plot shows NES scores (colour gradient) and statistical significance (–log10(FDR), bubble size). Analysis matches Figure 6E for MNX1-OE haemGx.
 
 Taken together, the data positioned the initiating cellular targets of MNX1-r AML at the YS endothelial-to-EMP transition. More broadly, the analysis supports the potential of haemGx to dissect the ontogeny of specific subtypes of hematological cancers initiated in utero.
 
@@ -133,45 +205,377 @@ Over the last decade, the effort to achieve robust hematopoietic production from
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>NEB 5-alpha Competent E. coli</td>
+      <td>New England Biolabs (NEB)</td>
+      <td>Cat. #C2987H</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse c-Kit (CD117) clone 2B8 – APC-Cy7 — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #105825</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD41 clone mwreg30 – PE-Dazzle594 — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #133935</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 clone 30F11 – APC — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #103111</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD144 (VE-cadherin) clone BV13 – APC — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #138011</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD43 clone S11 – PE — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #143205</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ter119 – PC7 — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #116223</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD31 – biotin — Monoclonal, Rat</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. #553371</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD34 – APC — Monoclonal, Armenian Hamster</td>
+      <td>BioLegend</td>
+      <td>Cat. #128611</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b anti-mouse/human clone M1/70 – biotin — Monoclonal, Rat</td>
+      <td>BioLegend</td>
+      <td>Cat. #101203</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-Mouse CD45.2 clone 104 – PE — Monoclonal, Mouse</td>
+      <td>BD Biosciences</td>
+      <td>Cat. #560695</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat Anti-Mouse CD31 clone MEC13.3 – biotin — Monoclonal, Rat</td>
+      <td>BD Biosciences</td>
+      <td>Cat. #553371</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse c-Kit/CD117 — Polyclonal, Goat</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat. #AF1356SP</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine LIF</td>
+      <td>Peprotech</td>
+      <td>Cat. #250–02</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Stemmacs pd0325901</td>
+      <td>Miltenyi biotec</td>
+      <td>Cat. #130-106-5411</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Chiron (chir99021)</td>
+      <td>Biogems</td>
+      <td>Cat. #2520691</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Activin A Plus</td>
+      <td>Qkine</td>
+      <td>Cat. #qk005</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Vegf 165</td>
+      <td>Peprotech</td>
+      <td>Cat. #450–32</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Fgf-basic</td>
+      <td>Peprotech</td>
+      <td>Cat. #450–33</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Sonic Hedgehog (Shh)</td>
+      <td>Peprotech</td>
+      <td>Cat. #315–22</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Tpo</td>
+      <td>Peprotech</td>
+      <td>Cat. #315–14</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Flt3-ligand</td>
+      <td>Peprotech</td>
+      <td>Cat. #250–31 l</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Murine Scf</td>
+      <td>Peprotech</td>
+      <td>Cat. #250–03</td>
+      <td>Medium supplement</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N2B27 medium (NDiff 227)</td>
+      <td>Takara bio</td>
+      <td>Cat. #y40002</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM/F-12</td>
+      <td>Gibco</td>
+      <td>Cat. #11320033</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurobasal medium</td>
+      <td>Gibco</td>
+      <td>Cat. #21103049</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N-2 supplement</td>
+      <td>Gibco</td>
+      <td>Cat. #17502048</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>B-27 supplement</td>
+      <td>Gibco</td>
+      <td>Cat. #17504044</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse methylcellulose complete media</td>
+      <td>R&amp;D systems</td>
+      <td>Cat. #hsc007</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Kdr(Flk1)-GFP mouse embryonic stem cell line</td>
+      <td>Alfonso Martinez Arias Lab; Jakobsson et al., 2010</td>
+      <td></td>
+      <td>Maintained in ESLIF medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Sox17-GFP mouse embryonic stem cell line</td>
+      <td>Alfonso Martinez Arias Lab; Niakan et al., 2010</td>
+      <td></td>
+      <td>Maintained in ESLIF medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>T/Bra::GFP mouse embryonic stem cell line</td>
+      <td>Alfonso Martinez Arias Lab; Fehling et al., 2003</td>
+      <td></td>
+      <td>Maintained in ESLIF medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>E14Tg2a mouse embryonic stem cell line</td>
+      <td>MMRRC, University of California Davis, US; Hooper et al., 1987</td>
+      <td></td>
+      <td>Maintained in ESLIF medium</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Kdr(Flk1)-GFP::Rosa26-BFP mouse embryonic stem cell line</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Materials and Methods (Cell culture), Figure 4—figure supplement 2A</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Maintained in DMEM-F12, 10% FBS, 1% P/S</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MNX1 forward</td>
+      <td>Gulino et al., 2021</td>
+      <td>qPCR primers</td>
+      <td>5-GTTCAAGCTCAACAAGTACC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MNX1 reverse</td>
+      <td>Gulino et al., 2021</td>
+      <td>qPCR primers</td>
+      <td>GGTTCTGGAACCAAATCTTC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppia forward</td>
+      <td>Moris et al., 2018</td>
+      <td>qPCR primers</td>
+      <td>TTACCCATCAAACCATTCCTTCTG-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ppia reverse</td>
+      <td>Moris et al., 2018</td>
+      <td>qPCR primers</td>
+      <td>AACCCAAAGAACTTCAGTGAGAGC-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BFP forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5-GCACCGTGGACAACCATCACTT-3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BFP reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5-CAGTTTGCTAGGGAGGTCGC-3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pwpt-lssmorange-PQR</td>
+      <td>Ghevaert Lab, WT-MRC Cambridge Stem Cell Institute, UKDalby et al., 2018</td>
+      <td>Vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pwpt-LssmOrange-PQR-MNX1</td>
+      <td>Cloned by Biomatik Corporation (Kitchener, Canada)</td>
+      <td>Vector</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pcdna3-Rosa26-Rosa26-BFP</td>
+      <td>This paper</td>
+      <td>Vector</td>
+      <td>Construct described in Figure 4—figure supplement 2A; Materials and methods (Lentiviral vector packaging and transduction)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CELLSTAR cell-repellent cell culture plate, 96 well, U-bottom</td>
+      <td>Greiner (Bio-One)</td>
+      <td>Cat. #650970</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Kdr(Flk1)-GFP (Jakobsson et al., 2010), Kdr(Flk1)-GFP::Rosa26-BFP, Sox17-GFP (Niakan et al., 2010), T/Bra::GFP (Fehling et al., 2003), and E14Tg2A (Hooper et al., 1987) mouse embryonic stem cells (mES) lines were cultured in ES + LIF medium in gelatinized flasks (0.1% gelatin) with daily medium change, as previously described (Turner et al., 2017). The ES + LIF medium contained 500 ml Glasgow MEM BHK-21 (Gibco), 50 ml of fetal bovine serum (FBS, Embryonic Stem Cells tested, Biosera, Nuaillé, France), 5 ml GlutaMAX supplement (Gibco), 5 ml MEM Non-Essential Amino Acids (Gibco), 5 ml Sodium pyruvate solution (100 mM, Gibco), and 1 ml 2-Mercaptoethanol (50 mM, Gibco). Murine LIF (Peprotech) was added at 1000 U/ml. HEK293T cells were grown in Dulbecco’s modified Eagle medium (Gibco) supplemented with 10% FBS (Gibco) and 1% penicillin/streptomycin (Gibco). All cultures were kept at 37 °C and 5% CO2. Cell lines tested negative for Mycoplasma contamination by PCR. The presence of the relevant constructs in cell lines was tested throughout the manuscript.
 
-## Hemogenic gastruloids assembly, culture, and dissociation
+### Hemogenic gastruloids assembly, culture, and dissociation
 
 mES were maintained in ES + LIF medium and transferred to 2i+LIF (containing Chiron and MEK inhibitor PD03) for 24 hr prior to the assembly into gastruloids. 250 untransduced mES cells (or 400 for GX-MNX1 and GX-EV) were seeded in each well of a U-bottom, cell-repellent 96-well plate (Greiner Bio-One, Stonehouse, UK) in 40 μl of N2B27 medium [Takara Bio or home-made as Cold Spring Harbour Protocols ‘N2B27 Medium’ (2017)]. The plate was centrifuged at 750 rpm for 2 min to promote deposition and aggregation of the cells and was then incubated at 37 °C, 5% CO2 for 48 hr. After 48 hr, 150 μl of N2B27 medium supplemented with 100 ng/ml Activin A (QKine, Cambridge, UK) and 3 μM chiron (Peprotech) was added to each well. At 72 hr, 150 μl of medium were removed, without disrupting the gastruloids in the wells. 100 μl of N2B27 with 5 ng/ml of Vegf and Fgf2 each (Peprotech) were added to each well. From 72 hr to 144 hr, each day 100 μl of medium were removed and replaced with N2B27+Vegf + Fgf2. At 144 h, the medium was further supplemented with Shh at 20 ng/ml. From 168 hr to 216 hr, the medium was N2B27+5 ng/ml Vegf, plus 20 ng/ml mTpo, 100 ng/ml mFlt3l, and 100 ng/ml mScf (Peprotech). To dissociate cells from the gastruloid structures, medium was removed and individual gastruloids were collected using a pipette and precipitated at the bottom of a microcentrifuge tube. The remaining medium was aspirated and the bulk of gastruloids was washed in PBS. 50 μl of TrypLE express was added to pelleted gastruloids to be incubated at 37 °C for 2 min to dissociate cells.
 
-## Animals and implantation
+### Animals and implantation
 
 Female athymic nude-Foxn1nu (nu/nu) mice (Envigo, Bresso, Italy) were housed under pathogen-free conditions. In accordance with the ‘3Rs policy,’ experiments were reviewed and approved by the Animal Welfare Body (OPBA) of IRCCS Ospedale Policlinico San Martino and by the Italian Ministry of Health (n. 883/2020-PR).
 
 Intact haemGx (3 per mouse in 10 μL of PBS) were inoculated in the adrenal gland of five-week-old mice. Briefly, mice were anesthetized with a mixture of xylazine (ROMPUN, Bayer) and ketamine (LOBOTOR, Acme S.r.l.) and injected with haemGx, after laparotomy, in the capsule of the left adrenal gland, as previously described (Brignole et al., 2023; Pastorino et al., 2003). All mice survived surgery. Control mice (CTR) received vehicle only. Mice body weight and general physical conditions were recorded daily. One month after haemGx inoculation, mice were sacrificed and spleen and bone marrow (BM) from femurs collected. BM cells and spleens, mechanically reduced to cell suspension, were stored at –80 °C until use. Adrenal glands were paraffin-embedded for subsequent IHC studies.
 
-## Methylcellulose colony-forming assays (CFC)
+### Methylcellulose colony-forming assays (CFC)
 
 Disassembled gastruloids cells were plated on Mouse Methylcellulose Complete Media (R&D Systems). Cells were first suspended in Iscove’s Modified Dulbecco’s Medium (IMDM, Gibco) with 20% FBS (Gibco) before addition to the methylcellulose medium. Cells were plated in duplicate 35 mm dishes with 2×105 cells/plate. Plates were incubated at 37 °C and 5% CO2 for 10 days, when colonies were scored. For serial replating experiments, cells in methylcellulose were collected and washed in phosphate buffer saline (PBS) to achieve single-cell suspensions and replated as described above. Dissociated gastruloid cells from CFC were collected as cell suspensions in PBS and centrifuged onto slides (Shandon Cytospin 2 Cytocentrifuge) at 350 rpm for 5–7 min, with a PBS-only pre-spin at 1000 rpm, 2 min. Slides were stained in Giemsa-Wright stain for 30 s followed by addition of phosphate buffer, pH 6.5 for 5 min.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Immunostaining of whole gastruloids was performed as described before (Baillie-Johnson et al., 2015). Briefly, gastruloids were fixed in 4% paraformaldehyde (PFA) dissolved in PBS for 4 hr at 4 °C on orbital shaking and permeabilized in PBSFT (10% FBS and 0.2% Triton X-100), followed by 1 hr blocking in PBSFT at 4 °C on orbital shaking. Antibody dilutions were made in PBSFT at 1:200 for primary and 1:500 for secondary antibodies. Antibody incubations were performed overnight at 4 °C on orbital shaking, and subjected to optical clearing overnight in ScaleS4 clearing solution. Individual gastruloids were then mounted on glass coverslips by pipetting as droplets in ScaleS4 and DAPI nuclear stain.
 
-## Histology and H&E staining
+### Histology and H&E staining
 
 Samples were fixed with 10% formalin at room temperature for 48 hr followed by an ethanol series of ethanol and paraffin; ethanol 70% (90 min), ethanol 80% (120 min), ethanol 95% (180 min), three times ethanol 100% of 120, 120, and 180 min, 50% ethanol/paraffin (3×120 min) and three times paraffin (60, 90, and 120 min) before embedding in histological cassettes. Blocks were sectioned with a HistoCore BIOCUT Microtome (Leica) at 10 mm and slides were stained with Haematoxylin/Eosin.
 
-## Imaging
+### Imaging
 
 Images of cultured gastruloids and CFC plates were captured using the Cytation 5 Cell Imaging Multi-Mode Reader (Biotek) plate reader using bright field and FITC channels. ImageJ (Schneider et al., 2012) was used for gastruloid size quantification. Confocal microscopy was performed on LSM700 on a Zeiss Axiovert 200 M with Zeiss EC Plan-Neofluar 10 x/0.30 M27 and Zeiss LD Plan-Neofluar 20 x/0.4 M27 objective lens. Tissue sections were imaged with a THUNDER Imager 3D microscope system (Leica).
 
-## Lentiviral vector packaging and transduction
+### Lentiviral vector packaging and transduction
 
 The lentiviral overexpression vector pWPT-LSSmOrange-PQR was used to clone the MNX1 gene cDNA. The viral packaging vectors pCMV and pMD2.G, described in Pina et al., 2008, were used to assemble lentiviral particles using HEK293T cells via transfection using TurboFect Reagent (Invitrogen). Transduction of mES cells was performed overnight by addition of lentivirus to culture medium and washed the following day (Moris et al., 2018). Transduced cells were sorted for positivity to LSSmOrange.
 
-## Flow cytometry
+### Flow cytometry
 
 Surface cell marker analysis was performed by staining using the antibodies listed in key resources table. Disassembled gastruloids cells were resuspended in PBS, 2% FBS, and 0.5 mM EDTA and stained at a dilution of 1:100 for primary antibodies for 20 min at 4 °C. When indicated, streptavidin was added at a dilution of 1:200. Analysis was performed on ACEA Novocyte (Agilent) or Attune NxT (Thermo) analyzers, using the respective software packages. Cell sorting was performed using a CS&T calibrated BDFACS Aria III system (488 nm 40 mW, 633 nm 20 mW, 405 nm 30 mW, and 561 nm 50 mW), set with the 100 μm nozzle at 20 PSI and a 4-way purity mask or, in the case of haemGx adrenal implants, a Beckman Coulter CytoFlex SRT (488 nm 50 mW, 633 nm 100 mW, 405 nm 90 mW, and 561 nm 30 mW), set with 100 μm nozzle at 15 PSI, also using 4-way purity. Single-cell deposition in 96-well plates was performed using single-cell sorting mode. Intact cells were gated on FSC-A vs SSC-A plot, followed by doublet exclusion on FSC-A vs FSC-H and SSC-A vs SSC-H, prior to gating on fluorescent parameters for the markers described in the results.
 
-## Single-cell RNA sequencing of time-resolved hemogenic gastruloids
+### Single-cell RNA sequencing of time-resolved hemogenic gastruloids
 
 Gastruloids were collected at different timepoints of the protocol, disassembled, and FACS deposited into 96-well plates, either as unsorted (global) or sorted by CD45, CD41, and C-Kit/ScaI markers (sorted). RNA from the cells were extracted from single cells using Smart-seq2 technology at 500 Kb and depth of 151 bases. Sequencing reads were quality-checked using FastQC (v0.11.9). We trimmed the samples using trimGalore! (0.6.6) with a cutoff of 30, clipping 15 base pairs and retaining reads of more than 100 bases. Alignment was performed on STAR (2.7.8 a) and Mus musculus annotations from GENCODE vM26. Aligned BAM files were annotated using featureCounts (v2.0.1) and count matrices were computed in Python by directly accessing the BAM files with gtfparse packages and collapsing lanes.
 
@@ -179,30 +583,30 @@ For quality control, based on the histogram of counts and multimodality distribu
 
 Dimensionality reduction was performed on feature selection of the gene space using the function scanpy.highly_varying_genes with default parameters. Selection of principal components in principal component analysis (PCA) was performed by heuristic elbow method. Nearest neighbor analysis was constructed by KNN graphs using a correlation metric and 10 nearest neighbors. Data was projected for low-dimensional visualization using the UMAP algorithm with default parameters as implemented in scanpy.tl.umap. We used the Leiden algorithm as implemented in scanpy.tl.leiden to partition the data into clusters. In order to assess the election of the resolution parameter, we used Newman-Girvan modularity as a metric of clustering quality. Differentially expressed genes were computed comparing each cluster against the rest using the Wilcoxon test with Benjamini-Hochberg correction.
 
-## Annotation and projection to additional datasets
+### Annotation and projection to additional datasets
 
 Raw count matrices were downloaded and processed following the same pipeline as described above for scRNA-seq of gastruloids to generate UMAP and clustering. We implemented the scmap algorithm to compare our scRNA sequencing of gastruloids with the available datasets. We reduced the dimensionality of the space by selecting highly varying genes from the annotated dataset. Then, we constructed a KNN classifier with correlation metric and computed the nearest neighbors of the target data. If neighbors with correlation metrics below 0.7 default standards, the projected cells were not projected onto any cell from the annotated dataset. To visualize the cells over the UMAP plots of the other datasets, we constructed a KNN regressor with three neighbors and a correlation metric. Confusion matrices were used to visualize the overlap between gastruloid clusters and the embryo dataset assigned clusters using scmap.
 
-## Bulk RNA sequencing
+### Bulk RNA sequencing
 
 Total RNA was extracted from disassembled gastruloid cells at 216 hr. Sequencing was performed on NovaSeq PE150 platform, at 20 M paired-end reads per sample. Tophat2 with Bowtie2 were used to map paired-end reads to the reference Mus musculus genome build GRCm39. GENCODE Release M30 (Frankish et al., 2019) was used as the reference mouse genome annotation. Aligned reads were filtered by quality using samtools (Li et al., 2009) with a minimum threshold set at 30 (q30). Transcript assembly and quantification was achieved using htseq (Putri et al., 2022). Differential expression between sample and control was performed by collapsing technical replicates for each condition using DESeq2 (Love et al., 2014) in R environment (Deseq2 library v 1.32.0). The differential expression was expressed in the form of log2 fold change and filtered by false discovery rate (FDR) of 0.05.
 
-## Gene list enrichment analyses
+### Gene list enrichment analyses
 
 Gene ontology (GO) analysis was performed in ExpressAnalyst (available at https://www.expressanalyst.ca) using the PANTHER or GO Biological Process (BP) repository. GO terms and pathways were filtered by false discovery rate (FDR) with a cut-off of ≤0.1 for meaningful association. EnrichR (Xie et al., 2021; Kuleshov et al., 2016; Chen et al., 2013) was used for cell type analysis using the Panglao DB (Franzén et al., 2019) databases using a FDR threshold of ≤0.1 or p-value ≤0.01, where specified, as well as transcription factor (TF) binding site enrichment using the ENCODE and ChEA Consensus TFs from ChIP database.
 
-## Gene set enrichment analysis (GSEA)
+### Gene set enrichment analysis (GSEA)
 
 Custom gene signatures were used as gene sets for GSEA analysis (Subramanian et al., 2005) on the GSEA software v4.2.3 on RNA sequencing expression values in counts units. GSEA was ran in 10,000 permutations on gene set using the weighted Signal2Noise metric. Enrichment metrics are shown as normalized enrichment score (NES) and filtered by FDR ≤0.05. Leading-edge genes (LEGs) are genes with a ‘Yes’ values for core enrichment. For AML patient analysis, clinical phenotype and expression data (in counts units) were extracted from the GDC TARGET-AML cohorts in the Therapeutically Applicable Research to Generate Effective Treatments project (TARGET, https://ocg.cancer.gov/programs/target), downloaded from the University of California Santa Cruz (UCSC) Xena public repository (last accessed 31st August 2022). Patient samples were selected according to the reported karyotype to include t(7;12), inv(16), MLL, normal karyotype, and t(8;21). GSEA was performed comparing RNA sequencing counts of t(7;12) samples against pooled AML subtypes (inv(16), MLL, normal karyotype, and t(8;21)) as ‘other AML’.
 
-## Real-time polymerase chain reaction (qPCR)
+### Real-time polymerase chain reaction (qPCR)
 
 Extracted RNA was reverse-transcribed into complementary DNA (cDNA) using High-Capacity RNA-to-cDNA Kit (Applied Biosystems). QPCR was performed using FastGene 2 x IC Green Universal qPCR Mix (Nippon Genetics, Duren, Germany) using primers for human MNX1 (forward 5-GTTCAAGCTCAACAAGTACC-3; reverse 5-GGTTCTGGAACCAAATCTTC-3) (Gulino et al., 2021) and Ppia for endogenous control (forward 5-TTACCCATCAAACCATTCCTTCTG-3; reverse 5-AACCCAAAGAACTTCAGTGAGAGC-3) (Moris et al., 2018), or Taqman gene expression assays (Mm00501741_m1 Myb; Mm00439364_m1 Hoxa9; Mm00723157_m1 Hlf; Mm01213404_m1 Runx1; Mm00444619_m1 Dll4; Mm00491303_m1 Mecom; Mm02342430_g1 Ppia) using Taqman Gene Expression Mastermix (Applied Biosystems). Differential gene expression was calculated using the delta delta Ct (ΔΔCt) method.
 
-## Polymerase chain reaction (PCR)
+### Polymerase chain reaction (PCR)
 
 Genomic DNA was extracted using Monarch Genomic DNA Purification Kit (New England Biolabs, Hitchin, UK) using manufacturer’s instructions. PCR on genomic DNA was performed using Phire PCR Master Mix (Thermo Scientific) to amplify the BFP locus using forward primer 5’-GCACCGTGGACAACCATCACTT-3’ and reverse primer 5’-CAGTTTGCTAGGGAGGTCGC-3'.
 
-## Statistical analysis
+### Statistical analysis
 
 Experiments were performed at least in triplicates, unless specified otherwise. Data are plotted to include standard deviation (+/-SD) between replicates. Statistical significance was set at a threshold of p-value <0.05. Statistical analysis was performed in R environment (version 4.1.3) or using GraphPad Prism 8.0 software and is detailed in respective figure legends.

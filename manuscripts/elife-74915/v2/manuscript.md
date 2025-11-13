@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03qryx823 Department of Physiology, Biophysics and Systems Biology, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel
-2. https://ror.org/029hzjx43 Rappaport Family Institute for Research in the Medical Sciences Haifa Israel
+1. Department of Physiology, Biophysics and Systems Biology, Rappaport Faculty of Medicine, Technion – Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+2. Rappaport Family Institute for Research in the Medical Sciences Haifa Israel ([ROR:029hzjx43](https://ror.org/029hzjx43))
 
 † Corresponding author
 
@@ -30,9 +30,45 @@ In this work, we provide the first complete detailed characterization of the mur
 
 ## Results
 
-## The ovarian immune milieu is altered with age
+### The ovarian immune milieu is altered with age
 
 To characterize the ovarian immune milieu, we have isolated immune cells (CD45+ cells) from the ovaries of young (11–15 weeks), adult (20–37 weeks), and old (40–47 weeks) virgin mice, and utilized flow cytometry and single-cell RNA sequencing (scRNA-seq) to characterize the ovarian immune cells and how they are affected by female age (Figure 1A). First, we performed scRNA-seq on isolated immune cells from the ovaries of 13 weeks old mice (n=2; 3307 cells). To cluster the cells and identify their type, we used a combination of both literature-based annotation and automatic annotation methods (Seurat R package and SingleR algorithm, “Methods” and Figure 1—figure supplement 1). In addition, we performed a batch correction analysis to validate the clusters that emerged from the tSNE analysis (Figure 1—figure supplement 2). The combination of these methods allowed us to identify within the ovaries the following cell types: Mφs, DCs, NTs, B cells, NK cells, NKT cells, ILC1, ILC2, ILC3, and several clusters of T lymphocytes: CD8+ (CD8 T), CD4+ (CD4 T), and CD4- CD8- double-negative T cells (DNT cells) (Figure 1B and C and Figure 1—figure supplement 3). Most of the cells were innate immune cells, mostly ILC1, Mφs, NTs, and NK cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of the experimental pipeline (created with BioRender.com). Ovaries of female mice at different ages were extracted. Then, cells were gated for CD45 expression and further analyzed using single-cell RNA sequencing or flow cytometry. (B) tSNE plot of joint data from both samples (young and old), divided into clusters. (C) Violin plot of normalized expression for cluster-specific markers. Each row represents the normalized expression of a single marker across all immune clusters. Normalized expression values are between 0–1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** tSNE plot of both young and old samples annotated using the SignleR algorithm. A correlation between each cell’s transcriptomic signature is calculated with reference cell types signatures from ImmGen. Annotation is decided based on the reference cell type which correlated the most to the cell.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Clustering projection according to Seurat’s clustering system using tSNE as dimension reduction method. (B) Data projected on tSNE according to age.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Each row represents the markers expression of different cell type, and each column represents different marker. The size of each dot represents the fraction of cells in each type that expresses each marker. The color of each dot represents the average expression of each marker in every cell type.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** After gating on PE-CD45+ cells (see Figure 1A) we used two set of panels in order to validate the presence of the immune cell populations found in our 10x experiments. Each row shows a representative experiment of one of the panels. The top panel was used in order to characterize Macrophages, Neutrophils, and Dendritic cells. The bottom panel was to characterize Group-1 Innate lymphoid cells (G1-ILCs), NKT, CD8 T, CD4 T, and DNT cells.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Young female mice’s (n=3, 12 weeks old) immune cells were collected from the ovaries and spleen and were analyzed using flow cytometry for their group 1 innate lymphoid cells (CD45+ NK1.1+ CD3-) distribution. Each color represents measurement from a different mouse.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Violin plot of the expression levels of several literature-based markers for cDC1 and cDC2 reveal that cluster 3 (Figure 1C) corresponds to an expression pattern of cDC2, while cluster 4 corresponds to an expression pattern of cDC1. Each row represents the normalized expression of a single marker across dendritic cells clusters and the rest of the immune cells. Normalized expression values are between 0–1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Old female mouse’s (55 weeks) immune cells were collected from the ovaries, spleen and peritoneum and were analyzed using flow cytometry for their T-lymphocytes distribution. While most cells in the spleen and peritoneum were CD4+ and CD8+ T cells as anticipated, almost all T cells in the ovaries were CD4- CD8-.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** CD3+ CD4- CD8- cells from both spleen and ovaries, of young (14.5 weeks, n=2) and old (42.5–44.3 weeks, n=2) mice, were analyzed for their TCRγδ expression using flow cytometry. Ovarian CD3+ CD4- CD8- cells were predominantly TCRγδ-, regardless of age (2.78% at young, 2.48% at old mice). Splenic CD3+ CD4- CD8- cells were used as positive control and were 47.7% TCRγδ+ at young age and 23.09% at old age. Error bars denote standard deviation.
 
 To validate the presence of the immune populations that emerged from our scRNA-seq experiments, we used flow cytometry (the gating strategy is shown in Figure 1—figure supplement 4). First, we measured the fractions of group 1 of innate lymphoid cells (G1-ILC), CD45+ NK1.1+ CD3- cells (i.e. NK and ILC1) in the mouse ovaries and spleen (Figure 1—figure supplement 5). The average fraction of G1-ILC in the spleen was 11.81% and in the ovary was 42.71%. These results are consistent with the high G1-ILC fraction resulting from the ovary scRNA-seq analysis (35.4% ILC1 and 9.8% NK), and previous results, which demonstrated that G1-ILC proportion in mice spleen is relatively low (Boulenouar et al., 2017). In addition, further characterization of the DCs clusters (3 and 4) revealed that their transcriptomic signature corresponds to conventional dendritic cells type 2 (cDC2) and type 1 (cDC1), respectively (Figure 1—figure supplement 6). Among other cell types that were found, DNT cells are unique, somewhat less well-defined cell population.
 
@@ -40,9 +76,33 @@ To confirm the presence of CD4- CD8- T cells in the ovaries, we conducted a flow
 
 Next, we examined the changes in the ovarian immune milieu at older ages. Using cells isolated from old, near estropause mouse (43 weeks; the rodent equivalent of the human menopause; 5468 cells), we characterized the old ovarian immune system (using the same annotation methods) and compared it to its younger counterpart (Figure 2A and B). The results demonstrated a shift at older age towards a lymphocytes-rich environment that was accompanied by decreased fractions of several immune populations such as ILC1 cells, Mφs, NTs, and NK cells (Figure 2B, Figure 2—figure supplements 1–2). To both validate the scRNA-seq results and to check whether this effect is cycle-stage dependent, we conducted several flow cytometry experiments.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-v2.jpg)
+
+**Figure 2.:** (A) 3-D tSNE plot (left) and an overlay (right) of all ovarian CD45+ cells found in scRNA-seq, divided by age group. (B) The effect of female age on the fractions of each cell type, with a confidence interval of 95% at the top of each bar. The green and yellow rectangles mark the macrophages and CD3+ populations, respectively. (C) Violin plot of the changes in fraction distributions of macrophages and CD3+ lymphocytes as a function of age as measured by flow cytometry (Kolmogorov-Smirnov test, ** p-value <10–2, *** p-value <10–3). (D) Change in the fraction of different CD3+ population comparing old (for CD4 and CD8 T cells – 42.6–49.6 weeks, n=4; for DNT and NKT cells – 49.6 weeks, n=2) and young (for CD4 and CD8 T cells – 10.1–14.5 weeks, n=5; for DNT and NKT cells – 10.1 weeks, n=3) mice as measured using flow cytometry. Error bars denote standard deviation. (E) Comparison between transcriptome and protein level of immune populations within the ovaries at different female ages. Each spider plot shows the distribution of different immune cell types measured using scRNA-seq (left panel) and flow cytometry (right).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Using the MILO algorithm (which divides the population for neighborhoods of cells, see Methods for further details) we identified significant changes in several cell types. Each dot represents a neighborhood. Blue dots are neighborhoods which increase significantly at old age, and red dots are neighborhoods which decrease significantly at old age (p-value <0.05). The most prominent increase is of DNT (CD4- CD8- T) and NKT cells, while ILC1, macrophages, neutrophils and NK cells decrease at old age.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Flow cytometry measurements were used to analyze the fraction of Neutrophils, Dendritic cells (young, n=6; old, n=3) and group-1 ILCs (G1-ILCs; young, n=3; old, n=2). Neutrophils were characterized as CD45+ CD11b+ Ly6G+ cells; Dendritic cells were characterized as CD45+ CD11c+ cells; G1-ILCs were characterized as CD45+ NK1.1+ cells; * p-value <0.05; student’s t-test. Error bars denote standard deviation.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Violin plot of macrophages and CD3+ lymphocytes fractions out of total CD45+ as shown in Figure 2C, separated by cell type.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Fraction of splenic CD45+ CD3+ cells from young (34.09%, 10–14.5 weeks old, n=3) and old (25.59%, 42.5–49.6 weeks old, n=3) mice, as measured using flow cytometry. (B) Fraction differences of various CD3+ cells populations between old and young mice. Error bars denote standard deviation.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Violin plot of macrophages and CD3+ lymphocytes fractions out of total CD45+ as shown in Figure 2C with an additional annotation of the cycle stage. Lines represent the mean fraction of each population in each stage of the estrus cycle (P – Proestrus; E – Estrus; M – Metestrus; D - Diestrus). NYoung_P = 1, NYoung_E = 1, NYoung_D = 2, NAdult_P = 2, NAdult_E = 4, NAdult_m = 4, NAdult_D = 5, NOld_P = 2, NOld_E = 2, NOld_M = 3, NOld_D = 5.
+
 To measure the effect of female age on the fractions of T-lymphocytes (CD3+) and Mφs (CD11b+ F4/80+) from total ovarian CD45+ cells, mice were divided into three groups of age: young (11–15 weeks, n=4), adult (20–37 weeks, n=15) and old (40–47 weeks, n=12). The results show a significant increase with age of CD3+ cells’ fraction (young vs. adult and adult vs. old, Kolmogorov-Smirnov test, p-value <10–2), while the fraction of Mφs was significantly decreased (young vs. adult and young vs. old, Kolmogorov-Smirnov test, p-value <10–3 and p-value <10–2, respectively) at older ages. Moreover, flow cytometry experiments validated that, as with the scRNA-seq results, most of the change in CD3+ lymphocytes’ fraction is due to a substantial increase in DNT cells at old age (Figure 2C, D and E and Figure 2—figure supplement 3). Furthermore, analysis of splenic CD3+ lymphocytes show that in contrast to the ovaries, the fraction of these cells decreases at old age, while the fraction of DNT cells doesn’t change (Figure 2—figure supplement 4). These age-dependent results are cycle-stage independent (Figure 2—figure supplement 5). Taking the results both from the scRNA-seq and the flow cytometry (Figure 2E), there is a consistent shift towards adaptive immunity (an increase in the CD3+ lymphocytes fraction), while most innate immune cells’ fraction (Mφs, NKs, ILC1, and NTs) decreases.
 
-## The female aging effect on the ovarian immune cells’ transcriptome
+### The female aging effect on the ovarian immune cells’ transcriptome
 
 After identifying the ovarian immune milieu and the changes it undergoes at older age, we characterized the changes in gene expression within each immune cluster (Supplementary file 1). Figure 3A depicts the differentially expressed genes patterns across all clusters. Several clusters, such as DNT cells, ILC1, NKT cells, and CD4 T cells exhibited an extremely skewed pattern, in which most of their differentially expressed genes (DEGs) were downregulated, compared to upregulated DEGs. This may imply that these cell types are more susceptible to female aging. After defining DEGs for each cell type, we explored changes in biological processes via GO enrichment analysis (Figure 3B, ‘Methods’). Most cell types showed an enriched set of processes that were downregulated with female age. Using the REVIGO platform (‘Methods’), we eliminated redundant GO terms and counted the appearances of each GO term across all cell types (Supplementary file 2). Terms that were found in more than one cell type were classified as ‘global’, and cell type-unique terms as ‘specific’. For further analysis, we took all the global terms and used the REVIGO platform to cluster them according to their semantics distance (Figure 3B). The results show a global decrease in several clusters of processes. The clusters with the processes that were mostly shared among cell types included decreased biosynthesis and metabolism-related processes. Another distinct cluster includes a general loss of regulation over various processes. The third well-defined cluster includes a decrease in the cellular response to different stimuli.
 
@@ -52,9 +112,17 @@ After identifying the ovarian immune milieu and the changes it undergoes at olde
 
 Among the cell-type-specific downregulated processes, Mφs exhibit attenuation in immune and inflammatory responses, along with decreased tissue remodeling and wound healing processes. DCs show a decrease in cell activation and regulation of immune response. Several immune cell types showed a limited set of enriched upregulated processes, in which the most prominent ones were exhibited by Mφs and DNT cells and included T cell activation and differentiation processes (Supplementary file 3).
 
-## Aging affects cytokines and chemokines connectome of ovarian immune cells
+### Aging affects cytokines and chemokines connectome of ovarian immune cells
 
 To get a better notion of the effect of aging on the different immune cell types, we estimated the effect of aging on the chemokine and cytokines interactions between the immune cells (Figure 4). For both chemokines and cytokines, we used the KEGG database to extract the network of ligands and receptors and their interactions (‘Methods’). Within each network, we focused on significantly changed connections, which we defined as edges that both of their nodes (i.e. both the ligand and receptor) have been significantly decreased or increased in their expression at old age. Significant nodes can be in the same cell type, or each one in different cell type, and in at least one cell type. We found that almost all significant nodes and edges in both networks were downregulated (Figure 4C and D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig4-v2.jpg)
+
+**Figure 4.:** (A) A heat map of a significant (p-value <0.05; FDR ≤0.1) twofold decrease (red) or increase (green) in the expression levels of chemokines, cytokines, and their receptors in different immune cell types. (B) Cumulative probability distribution (CDF) of the fold change (FC) of chemokines (upper panel) and cytokines (lower panel) (red line). The gray lines are the CDFs of FC for random groups of genes at the same size as the chemokines/cytokines genes. The blue line is the CDF of the FC of all the genes. There is a significant decrease in the expression of chemokines and cytokines with age (Kolmogorov-Smirnov test p-value <0.01). (C) Downregulation of the chemokines network due to age. Upper panel - Edges within the chemokine network in which both the ligand and the receptor were significantly downregulated in at least one cell type are colored in red. Edges that only the ligand/receptor, or none of them, were significantly downregulated are colored in grey. The sub-graph that contains the affected interactions is magnified at the right-hand side of the figure. Bottom panel - Chord diagram that illustrate the decrease in chemokine ligand-receptor interactions between the different cell types. The color of each chord denotes the color of the cell type that underwent a reduction in ligand expression. In the upper semi-circles, the colors indicate the cell type that showed a decrease in receptor expression. In the lower semi-circle, the outer and inner colors denote the cell types in which ligands and target receptors were downregulated, respectively. (D) Downregulation in the cytokines network due to age. Same color-coding as in (C) for the cytokines interaction network.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cell2Cell algorithm ('Methods') was applied on the chemokines network and found that the main receptor-ligand connections responsible for age differences involve mainly CCR5 and several of its ligands. (B) The fraction of ovarian CCR5+ Dendritic cells (CD11c+) cells was measured using flow cytometry in young (n=4, mean = 52%, SD = 17.54) and old (n=2, mean = 20.4%, SD = 1.97) female mice. CCR5 expression is significantly decreased at old age (* p-value <0.05; student’s t-test).
 
 The most prominent affected edges in the chemokines network involved Ccr5 expressed by DCs and ILC1 cells, Ccr2 expressed by ILC2 cells, and their ligands Ccl2, Ccl3, Ccl4, Ccl5, Ccl7, Ccl8, and Ccl12 (Figure 4C). Both of these receptors have been shown to take part in chemoattraction of immune cells in the context of various inflammatory processes (D’Ambrosio et al., 2003; Mencarelli et al., 2016; Proudfoot, 2002). For further validation, we applied the cell2cell algorithm (Armingol et al., 2022), which also pointed out Ccr5 as the main chemokine receptor modulated by age (Figure 4—figure supplement 1A). Thus, we measured experimentally the fraction of cells that express CCR5 using flow cytometry experiments, and show it is indeed decreases significantly (Figure 4—figure supplement 1B). Moreover, Cxcl2, an inflammatory chemokine that mediates neutrophils trafficking (Lentini et al., 2020; Li et al., 2016), was significantly decreased in almost all immune cell types (Figure 4A). CCRL2 is an atypical chemokine receptor that was found to be upregulated in activated immune cells after induction of inflammatory signals (Del Prete et al., 2013). Ccrl2 was downregulated in several cell types such as ILC1 and NKT, although it is mainly expressed by myeloid cells such as NTs, DCs, and Mφs (Del Prete et al., 2013).
 
@@ -64,11 +132,19 @@ To account for possible global downregulation, as emerges from Figure 3A, that m
 
 Another evident downregulated edges in the cytokine network were in the TGFβ superfamily (Gdf11 and Inhba along with their receptors Acvr2a and Tgfbr1). Activin A, a dimer composed of two Inhibin-βA subunits (the translation product of Inhba), is produced among others by the gonads and promotes LH secretion from the pituitary. It plays an important role in expanding the primordial follicle pool and contributes to the early stages of follicular growth by increasing FSH receptor expression on granulosa cells (Namwanje and Brown, 2016). In addition, Activin A was found to activate resting macrophages – yet there are contradictory findings as to rather its effect is pro or anti-inflammatory (Morianos et al., 2019). Decreased expression of both Inhba and Acvr2a by ovarian macrophages at older age might suggest a specific role of macrophages in supporting follicular growth (via Activin secretion) during the estrous cycle, which decays as age progresses. Moreover, these results may present a mechanism in which macrophages are participating in inducing an inflammatory environment as part of the ovulation process as a response to Activin.
 
-## Aging affects recognition of senescent cells by ovarian immune cells
+### Aging affects recognition of senescent cells by ovarian immune cells
 
 Inducing cell senescence, which is an irreversible state of growth arrest, is a mechanism the body uses to handle cell stress which can accumulate during aging (Campisi and d’Adda di Fagagna, 2007) and may result in chronic diseases and tissue dysfunction (Muñoz-Espín and Serrano, 2014; Ovadya and Krizhanovsky, 2014). One of the main molecular features of senescent cells is the senescence-associated secretory phenotype (SASP), in which the senescent cells create an inflammatory environment by secreting inflammatory cytokines, chemokines, growth factors, extracellular remodeling factors, and more (Prata et al., 2018; Song et al., 2020). Immune cells respond to these factors, detect specific markers expression or their absence on the senescent cells’ membrane and clear them either by phagocytosis (by Mφs, for example) or by killing (by NTs or NK cells for example) (Song et al., 2020). Ovarian senescence was already studied in the past (Velarde and Menon, 2016); however, the specific mechanism of senescent cells clearance within the ovaries is still unclear.
 
 We compiled a list of SASP receptors based on the literature containing 24 receptors (Supplementary file 5) and examined how their expression in different cell types depends on the female age. We found that the fraction of cells that express Ccr2, Csf2ra, and Csf1r, which are all receptors for known SASP proteins (Rhinn et al., 2019; Song et al., 2020), was significantly higher in old Mφs. In addition, the fraction of old Mφs that express cell surface markers that were previously reported to take part in the recognition of senescent cells, such as membrane IgM’s (Ighm) and C-type lectin receptors (Clec4a2-3) (Burton and Stolzing, 2018) was also elevated. Moreover, old NTs and Mφs showed upregulated expression of Ifngr1 (Figure 4A), a part of the IFNγ receptor, while the cytokine itself is overexpressed by senescent cells (Lujambio et al., 2013; Pan et al., 2021). In addition, both NTs and Mφs, as well as NK cells showed a higher expression fraction of this receptor. In total, we found six SASP receptors that were significantly overexpressed by old Mφs. The probability that six genes would be significantly modulated (p<0.01) out of a list of 24 random genes is low (FDR = 10–12, Figure 5). Moreover, across all cell types, only old Mφs and NTs presented a significant elevated fractions of cells expressing SASP receptors (Figure 5B). As a complementary analysis, we checked the expression levels of all SASP receptors. Results show that SASP receptors expression in ovarian Mφs is not altered at old age (Figure 5—figure supplement 1). NTs also exhibited elevated fractions of Ccr1, a receptor for several SASP chemokines (Coppé et al., 2010), while old NKT cells had higher levels of Cd74, a receptor for MIF, another SASP member (Coppé et al., 2010; Kim et al., 2018). CXCR6 is another novel mediator of senescence control which was recently discovered as part of senescence surveillance in the liver by CD4 T and NKT cells (Mossanen et al., 2019). Cxcr6 expression was also increased in old Mφs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cumulative probability distribution (CDF) of the difference of a fraction of old and young macrophages that express 24 SASP genes (red line). The gray lines are the fraction difference CDFs of groups of 24 random genes (10,000 samples). The blue line is the CDF of the fraction difference of all the macrophage genes. There is a significant increase with age in the fraction of cells that express members of the SASP genes (Kolmogorov-Smirnov test p-value <0.01). (B) The false discovery rate (FDR) for significant change (p-value <0.01) in the fraction of different cell types that express SASP genes. Macrophages and neutrophils exhibit FDR which is much smaller than 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74915/elife-74915-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The red line is the CDF of the fold change between old and young macrophages’ expression in 24 SASP genes. The gray lines are the fold change CDFs of groups of 24 random genes (10,000 samples). The blue line is the CDF of the fold change of all the macrophage genes. There is no significant change with age.
 
 ## Discussion
 
@@ -84,37 +160,37 @@ There is a plethora of studies that suggest inflammaging - an age-related increa
 
 ## Methods
 
-## Mice
+### Mice
 
 All experiments involving mice conform to the relevant regulatory standards (Technion IACUC and national animal welfare laws, guidelines, and policies). Hsd:ICR female mice were purchased from Envigo RMS (Israel) and were housed in a 12 hr light / 12 hr dark cycle. Assessment of estrous cycle stage for the mice begun 3 days prior each experiment via vaginal smears (McLean et al., 2012). Briefly, mice’s vaginal canals were washed using 20 μL saline (PBS, 0.09% NaCl). The saline was then collected and mounted on a slide and observed under an inverted microscope (Olympus) equipped with X20 objective. The estrous cycle-stage was assessed according to epithelial cells morphology and the presence or absence of leukocytes. Mice that exhibited regular progress of their cycle for three consecutive days were eligible for further experiments.
 
-## Ovaries extraction and handling
+### Ovaries extraction and handling
 
 Mice were anesthetized for 2 min using isoflurane and then euthanized by cervical dislocation. Each mouse’s ovaries were extracted and washed in RPMI-1640 media (Sigma-Aldrich) containing 10% FBS and transferred to 1.5 mL microcentrifuge tubes containing the same media. Next, the ovaries were cut using scissors and incubated for 30 min with ~7800 IU/mL (Lot dependent) of collagenase type IV (Sigma-Aldrich) at 37°C. After which, 2.5μ g/mL of DNase I (Sigma-Aldrich) was added, and tubes were incubated for additional 30 min. For proper tube content mixing, gentle tapping was performed every 5 min during incubation. Tissue homogenate was filtered through a 40 μm strainer (Greiner Bio-One) and washed with 0.5 mL RPMI media five times. Total cell count was then calculated using LUNA automated cell counter (Logos Biosystems). Cells were further processed for sorting (for single-cell RNA sequencing) or staining (for flow cytometry experiments).
 
-## Cell sorting
+### Cell sorting
 
 Cell samples went through a series of centrifugations (400g, 5 min, at 4°C) and were stained with PE anti-CD45 (30-F11, BioLegend) in staining buffer (see flow cytometry section) for 30 min at 4°C. CD45-positive cells were sorted and collected using FACSAria III Cell Sorter (BD Biosciences). Collected samples were centrifuged and brought to a final volume of ~50 μL, counted using LUNA automated cell counter (Logos Biosystems), and further processed for single-cell sample preparation.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Samples were prepared as outlined by the 10x Genomics Single Cell 3′ v2 Reagent Kit user guide. Briefly, the samples were washed twice in PBS (Sigma-Aldrich) +0.04% BSA (Sigma-Aldrich) and re-suspended in PBS + 0.04% BSA. Sample viability was assessed with Trypan Blue (Biological Industries) using LUNA automated cell counter (Logos Biosystems) and validated using a hemocytometer. Following counting, the appropriate volume for each sample was calculated for a target capture of 10,000 and 7700 cells (old and young samples, respectively) and loaded onto the 10x Genomics single-cell-A chip. After droplet generation, samples were transferred onto a 96-well plate, and reverse transcription was performed using a Veriti 96-well thermal cycler (Thermo Fisher). After the reverse transcription, cDNA was recovered using Recovery Agent provided by 10x Genomics followed by a Silane DynaBead clean-up (Thermo Fisher) as outlined in the user guide. Purified cDNA was amplified before being cleaned up using SPRIselect beads (Beckman Coulter). Samples were quantified with Qubit Fluorometer (Invitrogen) and run on Agilent TapeStation for quality control. cDNA libraries were prepared as outlined by the Single Cell 3′ Reagent Kits v2 user guide with appropriate modifications to the PCR cycles based on the calculated cDNA concentration (as recommended by 10x Genomics). Post library construction quantification and QC were performed as mentioned above for the post cDNA amplification step. Sequencing was performed with NextSeq500 system (Illumina), with ~50,000 reads per cell and 75 cycles for each read.
 
 Seurat R package (Butler et al., 2018) was used to read the 10x output data from Cell Ranger v3.0.1 according to the suggested protocol. Yield was 3693 and 5644 cells for young and old samples, respectively. Quality control tests were conducted to eliminate duplicates, and dead or low-quality cells – cells with less than 200 features, more than 2500 features, or more than 10% features of mitochondrial genes were excluded from further analysis. In total, we ended up with 3307 and 5468 cells for young and old samples (data available at Figure 1—source data 1 and Figure 2—source data 1).
 
-## Cell type annotations
+### Cell type annotations
 
 The Seurat R package (version 4.1.0), along with the SingleR package (version 1.8.1) (Aran et al., 2019) were used to analyze single-cell RNA sequencing data. After using Seurat’s normalization tool (‘LogNormalize’, 10,000 scale) and clusters identification using Seurat’s graph-based clustering method, t-distributed stochastic neighbor embedding (tSNE) was used as a dimension reduction and visualization tool, with PCA as the latent space (15 PC dimensions). The log-normalized data was scaled prior to dimensionality reduction (using ‘scale.data’). Next, the SingleR algorithm was used to achieve the automatic annotation for each cell. Briefly, the algorithm compares each cell’s transcriptome to known transcriptomic ‘signatures’ from reference genomes taken from The Immunological Genome Project (ImmGen) (Heng et al., 2008). The algorithm calculates the correlation between the cell to different cell types, and based on the highest correlation suggests an annotation for the cell.
 
-In addition, a set of literature-based gene markers was chosen to identify the different immune cell types. For each gene marker, a normalized score was calculated in every cell using the raw count matrix. Eg,i denotes the expression level of the gene g within the ith cell; Mg and mg denote the maximal and minimal expression of the gene g across all cells in the sample, respectively. Nc denotes the number of cells within cluster c, and Ng,c denotes the number of cells within cluster c that express the gene g. The normalized expression score, Sg,i,c, for the gene g in the ith cell within the cluster c is the multiplication of the gene relative expression and the relative fraction of cells within the cluster that express this gene, Sg,i,c=(Eg,i−mgMg−mg)⋅(Ng,cNc). Figure 1c illustrates the distribution of the normalization score for a particular gene g over all the cells in cluster c. Normalized scores are between 0 and 1.
+In addition, a set of literature-based gene markers was chosen to identify the different immune cell types. For each gene marker, a normalized score was calculated in every cell using the raw count matrix. Eg,i denotes the expression level of the gene g within the ith cell; Mg and mg denote the maximal and minimal expression of the gene g across all cells in the sample, respectively. Nc denotes the number of cells within cluster c, and Ng,c denotes the number of cells within cluster c that express the gene g. The normalized expression score, Sg,i,c, for the gene g in the ith cell within the cluster c is the multiplication of the gene relative expression and the relative fraction of cells within the cluster that express this gene, $S_{g,i,c}=(\frac{E_{g,i}−m_{g}}{M_{g}−m_{g}})⋅(\frac{N_{g,c}}{N_{c}})$. Figure 1c illustrates the distribution of the normalization score for a particular gene g over all the cells in cluster c. Normalized scores are between 0 and 1.
 
 The identity of each cluster was determined by taking into account the majority type as given by the SingleR and the type according to the literature markers. For example, according to the literature markers, cluster 10 is CD8+ enriched, and cluster 11 is CD4+ enriched. While SingleR cell type ID is consistent with this classification, several cells in cluster 10 were classified as CD4+ cells, while other cells in cluster 11 were classified as CD8+ cells. Therefore, the final assignment of these cells is different than the SingleR ID.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Ovarian cell suspensions were stained for flow cytometry analysis as the commercial protocol suggested (BD Biosciences). Briefly, cells were plated in 96-well U-shaped plates and went through a series of centrifugations (400g for 5 min, at 4°C) for media and debris cleaning. Next, samples were stained as the commercial protocol suggested using the following antibodies (purchased from BioLegend) diluted in staining buffer (PBS containing 0.09% sodium azide (Sigma-Aldrich)): PE anti-CD45 (30-F11), BV421 anti-CD11b (M1/70), APC/Cy7 anti-F4/80 (BM8), APC anti-F4/80 (BM8), BV711 anti-CD11c (N418), Alexa Fluor 700 anti-Ly6G (1A8), APC anti-CD3 (17A2), Pacific Blue anti-CD3 (145–2 C11), APC/Cy7 anti-NK1.1 (PK136), PE/Cy7 anti-TCRβ (H57-597), Alexa Fluor 700 anti-CD8a (53–6.7), FITC anti-CD4 (GK1.5), PE/Cy7 anti-TCRγδ (GL3) and APC anti-CCR5 (HM-CCR5). Staining was performed at 4°C for 30 min. Flow cytometry analyses were made using the S100EXi (Stratedigm) flow cytometer. Viability test of CD45+ cells was conducted using Zombie-NIR (BioLegend).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were calculated using MATLAB R2019b (MathWorks).
 
@@ -126,10 +202,10 @@ For analyzing significant changes in the fraction of each cell type, we used the
 
 The FDR of having six genes that have significantly modulated fraction change (p-value <0.01) out of a list of 24 random genes, for each cell type, was calculated analytically. The FDR in this case, where all hypotheses are considered null, is equal to the family-wise error rate (FWER), which can be calculated analytically using multinomial distribution (Korthauer et al., 2019).
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 Significant downregulated or upregulated genes for each cell type were taken for GO enrichment analysis of biological processes using the g:Profiler platform (Raudvere et al., 2019) (database versions: Ensembl 108, Ensembl Genomes 55, and Wormbase ParaSite 17, published on 2/23/2023). Next, all significant processes were further analyzed using the REVIGO platform for eliminating redundant GO terms (Supek et al., 2011). Then, cell-type specific and global (for at least two cell types) processes were found and analyzed once more using the REVIGO platform in order to cluster them according to their semantics distance.
 
-## Cytokines and chemokines networks
+### Cytokines and chemokines networks
 
 The Kyoto Encyclopedia of Genes and Genomes (KEGG) was used to construct the chemokines and cytokines ligand-receptor networks. These were built based on the Cytokine-cytokine receptor interaction - Mus musculus (mouse) map (pathway map mmu04060) (Kanehisa, 2000).

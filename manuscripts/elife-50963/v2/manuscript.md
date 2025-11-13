@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.50963.001 The actin cytoskeleton drives many essential biological processes, from cell morphogenesis to motility. Assembly of functional actin networks requires control over the speed at which actin filaments grow. How this can be achieved at the high and variable levels of soluble actin subunits found in cells is unclear. Here we reconstitute assembly of mammalian, non-muscle actin filaments from physiological concentrations of profilin-actin. We discover that under these conditions, filament growth is limited by profilin dissociating from the filament end and the speed of elongation becomes insensitive to the concentration of soluble subunits. Profilin release can be directly promoted by formin actin polymerases even at saturating profilin-actin concentrations. We demonstrate that mammalian cells indeed operate at the limit to actin filament growth imposed by profilin and formins. Our results reveal how synergy between profilin and formins generates robust filament growth rates that are resilient to changes in the soluble subunit concentration.
+The actin cytoskeleton drives many essential biological processes, from cell morphogenesis to motility. Assembly of functional actin networks requires control over the speed at which actin filaments grow. How this can be achieved at the high and variable levels of soluble actin subunits found in cells is unclear. Here we reconstitute assembly of mammalian, non-muscle actin filaments from physiological concentrations of profilin-actin. We discover that under these conditions, filament growth is limited by profilin dissociating from the filament end and the speed of elongation becomes insensitive to the concentration of soluble subunits. Profilin release can be directly promoted by formin actin polymerases even at saturating profilin-actin concentrations. We demonstrate that mammalian cells indeed operate at the limit to actin filament growth imposed by profilin and formins. Our results reveal how synergy between profilin and formins generates robust filament growth rates that are resilient to changes in the soluble subunit concentration.
 
 ## Introduction
 
@@ -31,11 +31,23 @@ Eukaryotic cells move, change their shape and organize their interior through dy
 
 The concentration of profilin-actin is thought to pace not only spontaneous, but also catalyze actin growth by actin polymerases such as formins (Paul and Pollard, 2009). These modular proteins bind the filament barbed end via their FH2 domain and recruit many profilin-actin complexes through flexible FH1 domains (Figure 1A). Polymerase activity is thought to arise from formins ability to increase the binding frequency of profilin-actin to growing filament ends (Courtemanche, 2018; Paul and Pollard, 2009; Vavylonis et al., 2006). Whether, however, filament growth in vivo is controlled at the level of binding is unknown. Consequently, we do not fully understand how formins function as actin polymerases in cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme of barbed end elongation from profilin-actin alone (top) or with formins (bottom). (B) Structural model of profilin at filament barbed ends (Materials and methods). The incoming profilin-actin complex is transparent. Actin is shown as green surface while profilin as magenta ribbons. Inset highlights the clash between the incoming actin monomer and profilin. (C) Profilin-actin measurements in HT1080 cells. Left to right: single cell volume histogram, western blots of actin, profilin1 (left: cell titration, right: standard curve of recombinant proteins), values are mean (N = 3) and SD, Materials and methods. (D) Table of total concentrations of actin and profilin-1/2 in various mammalian cell types (Figure 1—figure supplement 1). (E) Scheme of a linearly substrate-dependent actin elongation rate. Top axis: Profilin-actin amounts for various cell types as indicated. (F) Scheme (left) and TIRFM images (right) of elongating filaments at indicated profilin-actin concentrations visualized with top- Alexa488-labeled monomers (20% labeled), middle - 10 nM Alexa488-lifeact, bottom – 10 nM Cy5-UTRN261.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Profilin-actin concentration determination in mammalian cells. Left to right: name of cell type and origin, histograms of the single cell volume from fluorescence eXclusion measurements, quantitative western blot analysis of cellular actin, profilin1 and profilin-2 amount (left: titration of cell number, right: standard curve of recombinant proteins), calculated mean protein concentration [μM] per cell with experimental error (SD, N = 3 independent experiments, see Materials and methods). (B) Purification of mammalian cytoplasmic actin from two sources. Top: Schematic workflow of cytoplasmic actin purification. Left: native purification of β,γ–actin by gelsolin affinity chromatography. Right: Isolation of β–actin from recombinant expression of β–actin–linker-thymosin β4−10xhis and purification via IMAC followed by chymotrypsin cleavage (▲). For both strategies, finally released monomers were polymerized and separated from contaminants. Both purification protocols result in very pure and high yields of protein (see last pellet fraction). (C) Barbed end polymerization rate of cytoplasmic native mammalian (β,γ)–actin as a function of the actin monomer concentration. The mean values ± SD were fitted with a linear function. (D) Binding of profilin1 and 2 to ATP-bound cytoplasmic actin monomers measured by fluorescence anisotropy competition assays. Fluorescence anisotropy of Atto488-WAVE1WCA [4 nM] as a function of increasing profilin1 and 2 concentration in the presence of a constant amount of ATP-bound actin monomers [150 nM]. Lines fit to an exact analytical competition model (Wang, 1995). Each data point represents the mean value from three independent experiments. Error indicators are SD. (E) Binding of thymosin-β4 to ATP-bound cytoplasmic actin measured by fluorescence change assays. Fluorescence measurement of 1.5-IAEDANS labeled actin monomers [150 nM] as a function of increasing thymosin-β4 concentration in the presence of a constant amount of actin monomers [150 nM]. Lines fit to an quadratic binding model (see Materials and methods). Each data point represents the mean value from three independent experiments. Error indicators are SD. (F) Isolation of stoichiometric profilin-actin complexes from free profilin by size exclusion chromatography.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Determination of protein-levels in different cell types by quantitative western blot analysis. For each cell type (HT1080, B16F10, BMDC, neutrophils, HT1080/B16F10 overexpressing profilin1 and β-actin) the amount of total profilin1/2 and actin was detected by monoclonal antibodies and calculated with in vitro protein controls in multiple experiments (see Materials and methods). The amount of profilin2 control is equal to the amount of profilin1 unless otherwise indicated. Right: Calculated profilin1/2 and actin concentrations per cell for individual experiments, errors indicate the SD. Last: Western blots from wt HT1080 cells and HT1080 overexpressing profilin1 and β-actin from a polyclonal integrated construct (+one to +4) after sorting them by their mScarletI fluorescence intensity (see also Figure 6—figure supplement 2B). For each sample, 250.000 cells were applied.
+
 The model of linear concentration-dependent scaling of actin growth creates a conundrum because of two reasons: i) Filament growth from profilin-actin complexes cannot occur in a single binding step, but requires additional reactions whose rate should not depend on the free subunit concentration (Figure 1A). Binding of profilin-actin to the actin filament barbed end occludes the binding site for new subunits and profilin needs to be released for elongation to continue (Figure 1B) (Courtemanche and Pollard, 2013; Pernier et al., 2016; Pollard and Cooper, 1984). How rapidly profilin release occurs and whether it affects filament growth is presently unclear (Blanchoin and Pollard, 2002; Gutsche-Perelroizen et al., 1999; Romero et al., 2004). ii) Generally, soluble actin concentrations vary significantly across species, cell types (Koestler et al., 2009; Pollard et al., 2000; Raz-Ben Aroush et al., 2017) and likely even within a single cell (Skruber et al., 2018). If elongation rates scale linearly with profilin-actin concentrations, then actin filaments must grow at widely different speeds in vivo. Actin polymerases like formins should dramatically amplify such variations. This poses a conceptual challenge to the construction of functional actin networks whose architecture should directly depend on the filament elongation speed. We presently do not understand whether or how cells control the rate of filament growth when facing variable and fluctuating profilin-actin levels. Here we uncover a mechanism that establishes intrinsically robust, but tunable growth rates that are buffered against changes in the free subunit concentration.
 
 ## Results
 
-## Actin filament growth at physiological profilin-actin concentrations
+### Actin filament growth at physiological profilin-actin concentrations
 
 To reconstitute actin assembly at cell-like conditions, we first determined the concentration of actin and the two most abundant profilin isoforms (−1 and –2) (Mouneimne et al., 2012) in mammalian cells through volume measurements (Cadart et al., 2017) and western blots (Figure 1C–D, Figure 1—figure supplement 1A, Figure 1—figure supplement 2, Materials and methods). We studied mesenchymal (HT1080), epithelial (B16F10) or immune cells (T-cells, dendritic cells and neutrophils), the latter because of their rapid motility. Consistent with earlier estimates (Pollard et al., 2000; Witke et al., 2001) profilin and actin were highly expressed (Figure 1D, Figure 1—figure supplement 1A). Profilin-1 was the dominant isoform, whereas profilin-2 was not present at substantial levels in most cells (Figure 1—figure supplement 1A). Profilin levels were especially high in immune cells, in line with their overall fast motility (Lämmermann and Sixt, 2009; Vargas et al., 2017) and their ability to very rapidly assemble actin-rich pseudopods especially in low-adhesive environments (Lämmermann et al., 2008; Renkawitz et al., 2009). Actin always exceeded the profilin concentration as expected, since actin forms filaments and binds monomer-binding proteins other than profilin. Because profilin binds mammalian cytoplasmic actin much more tightly than other abundant monomer-binding proteins like thymosin-β4 (see below), the actin pool is likely sufficiently large for profilin to be nearly completely bound to monomers in vivo (Kaiser et al., 1999). We thus estimated the profilin-actin concentration around 50–200 μM, depending on mammalian cell type (Figure 1D–E, see Materials and methods section for details concerning the estimation of soluble profilin-actin levels).
 
@@ -43,29 +55,97 @@ To study actin elongation at these conditions, we first adapted methods (Hatano 
 
 We then studied binding of the most abundant monomer-binding proteins, profilin-1/–2 and thymosin-β4, to ATP-bound mammalian cytoplasmic actin (Figure 1—figure supplement 1D–E). In general agreement with studies using non-muscle actin (Bieling et al., 2018; Kinosian et al., 2002; Vinson et al., 1998), thymosin-β4 bound weakly (KD ~1.2 μM), whereas profilin bound exceptionally strongly (KD ~18 nM) to ATP-bound actin monomers at near-physiological ionic strength (0.133 M, see Materials and methods). This allowed us to isolate heterodimeric complexes of profilin and ATP-bound actin by size-exclusion chromatography (Figure 1—figure supplement 1F) and to concentrate them (>500 μM) without triggering nucleation. We then turned to total internal-reflection fluorescence microscopy (TIRFM) assays to analyze elongation of surface-tethered actin filaments (Figure 1F, Figure 2A). Strong background prevented us from using fluorescent actin at high concentrations (Figure 1F upper). Trace amounts (10 nM) of fluorescent filament-binding probes (UTRN261 or LifeAct), however, yielded sufficient contrast without altering assembly kinetics (Figure 1F middle and lower, [Bieling et al., 2018]). To further minimize nucleation, we additionally added low amounts of either free profilin (<2 μM) or thymosin-β4 (<15 μM) at high profilin-actin concentrations (Materials and methods). As expected, this did not impact filament elongation (Figure 2—figure supplement 1A–B). These advances allowed us to, for the first time, study mammalian cytoplasmic actin growth over the entire physiological range of profilin-actin concentrations.
 
-## Profilin dissociation kinetically limits filament elongation
+![Figure 2.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme of TIRFM elongation assays of surface-attached filaments from profilin-actin on functionalized coverslips. (B) TIRFM time-lapse images (top) and kymographs (bottom) of filament elongation (green arrow follows a single barbed end) at indicated profilin-actin concentrations. (C) Barbed end growth velocities from TIRFM assays using different profilin1:actin complexes as indicated. Points are mean values [N ≥ 40 for each condition, error = SD]. Lines are hyperbolic fits. Inset: Regime of low concentrations fitted by a linear model (magenta, Figure 2—figure supplement 1C–D). (D) Scheme of microfluidic experiments of seed-attached filaments under flow. (E) Kymographs of filaments at indicated profilin-actin concentrations in microfluidic experiments. (F) Barbed end growth velocities of filaments grown in microfluidic channels in TIRFM assays (green) compared to surface tethered filaments as quantified in ((C), black dashed line). Points are mean values [N ≥ 40 for each condition, error = SD].
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Calculations of profilin-actin complex and free profilin and actin concentrations [μM] (see inset) as a function of the total profilin-actin concentration (see Materials and methods). (B) Calculations of profilin-actin complex and free profilin or thymosin-β4 concentrations [μM] by the addition of additional trace amounts of 2 μM profilin (between 10 and 100 μM total profilin-actin) or 15 μM thymosin-β4 (>100 μM total profilin-actin) (see Materials and methods) to suppress residual spontaneous nucleation. Note that no more than 5 μM free profilin or 11 μM free thymosin-β4 accumulate in the assay. These low amounts do not significantly affect barbed end growth rates. (C) Barbed end growth velocities measured from TIRF-M single filament assays using profilin1: β, γ–actin as a substrate. In addition 2 μM free profilin1 (magenta) or 15 μM thymosin-β4 (blue) at individual and overlapping profilin-actin concentrations indicated in the graph were added to the reaction. Each point represents the calculated mean of the actin filament elongation rate at a distinct substrate concentration [N ≥ 30 for each condition, error bars = SD]. Continuous line represents a hyperbolic fit yielding the indicated maximum filament growth rate at saturation. (D) Barbed end growth velocities measured from TIRF-M single filament assays using profilin2: β, γ–actin as a substrate (violet). Data from profilin1: β, γ–actin are shown as a dashed black line. Each point represents the calculated mean of the actin filament elongation rate at a distinct substrate concentration [N ≥ 40 for each condition, error bars = SD]. Continuous lines are hyperbolic fits yielding the indicated maximum filament growth rates at saturation. (E) Controls experiments showing that the maximal filament growth velocity does not depend on the filament binding probe, the profilin purification method, ionic strength or surface attachment. Left: Bar diagram of the growth velocities for fluorescent filament probes (upper 1st - lifeact488, others - Cy5UTRN261), affinity purified profilin (upper 2nd – IMAC purified, others – native purification), different salt concentrations (50 and 100 mM KCl), different surface tethering (HMM, biotin-phalloidin low- 20 nM and intermediate- 200 nM) at 100 μM profilin-actin. Right: Kymographs of the growth of representative individual filaments at 100 μM profilin-actin. (F) TIRF-M time-lapse images of filaments either surface tethered along their length (st) or only via a stabilized seed at their pointed end in microfluidic devices (mf). The green arrow follows a single growing barbed end. Experiments were done at 150 μM profilin-actin.
+
+### Profilin dissociation kinetically limits filament elongation
 
 As previously (Blanchoin and Pollard, 2002; Jégou et al., 2013), we observed a linear increase of the actin filament growth velocity at low profilin-actin concentrations (<10 μM, Figure 2B–C, Figure 2—figure supplement 1C–D). Strikingly, however, elongation rates deviated strongly from linearity at moderate (>20 μM) and nearly saturated at high (≥100 μM) concentrations to plateau at ~500 monomers s−1 (Figure 2B–C, Video 1). Data could be well fitted with Michaelis Menten kinetics assuming a binding reaction followed by a rate-limiting step. Importantly, the maximal elongation rate did not depend on surface tethering, the filament-binding probe or the specific cytoplasmic isoform of profilin or actin (Figure 2—figure supplement 1C–E). We ruled out accumulation of free profilin as a reason for saturation, because filament growth was constant over time under all conditions (Figure 2—figure supplement 1A–B). We observed saturation also in microfluidic assays with a constant influx of fresh profilin-actin for filaments that were only attached via short seeds (Figure 2D–F, Figure 2—figure supplement 1). This demonstrates that filament elongation at physiological conditions is not controlled by the diffusion-limited association of profilin-actin to barbed ends, but is kinetically limited by a reaction that proceeds with a rate of ~500 s−1.
 
+![Video 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-video1.mp4.jpg)
+
+**Video 1.:** Filaments were visualized with 10 nM Cy5-UTRN261 in TIRF-M. Polymerization from increasing profilin1-actin concentrations from left to right: 2.5 μM, 40 μM, 125 μM, 175 μM.
+
 Structural models suggest that incorporation of profilin-actin transiently caps barbed ends, because profilin sterically hinders the binding of the next monomer (Figure 1B, [Courtemanche and Pollard, 2013]). Profilin release is therefore required for continual elongation (Figure 3A). Profilin binds much more weakly to filament barbed ends than to monomeric actin (Courtemanche and Pollard, 2013; Pernier et al., 2016). We confirmed that profilin dissociation from actin monomers (koff = 0.77 s−1, Figure 3—figure supplement 1B–D) is much slower than the maximal elongation rates we observe (~500 s−1). This means that structural changes in the terminal actin protomer are required to trigger profilin release. We deduced that either of these subsequent reactions could become rate-limiting (Figure 3A). Profilin dissociation specifically, should be affected by interactions between actin and profilin. To test this hypothesis, we introduced mutations in profilin-1 at the actin binding interface to either decrease (E82A, R88K) or increase (K125E+E129K) affinity (Figure 3B–C,F, Figure 3—figure supplement 1A, Materials and methods). Single point mutants (E82A and R88K) caused a moderate reduction (~1.5 and~4– fold, respectively), while mutation of two residues (K125E+E129K) showed an increase (~5–fold) in monomer binding affinity (Figure 3C). Importantly, these changes were caused by altered monomer dissociation, but not association rate constants (Figure 3F, Figure 3—figure supplement 1B–D). More drastic changes were incompatible with elongation assays due to either accumulation of free actin (severely weakening mutants) or the complete inhibition of growth (ultra-tight binding mutants, Figure 3—figure supplement 1E–F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig3-v2.jpg)
+
+**Figure 3.:** (A) Scheme of barbed end elongation from profilin-actin alone indicating the potential limiting kinetic steps. (B) Structural models (Materials and methods) of the actin interface of stabilizing and destabilizing profilin mutants. Ribbon diagrams highlight the mutation positions. Insets show changes in amino acid environments upon mutation. (C) Binding of profilin to ATP-bound actin monomers measured by fluorescence anisotropy competition assays. Fluorescence anisotropy of Atto488-WAVE1WCA (4 nM) at increasing profilin1 (wt or mutants as indicated) concentrations in the presence of actin monomers (150 nM for wt and weakly binding profilin and 40 nM for tightly binding profilin). Lines fit to an analytical competition model (Materials and methods). Points represents means (N ≥ 3) ± SD. (D) TIRFM time-lapse images (top) and kymographs (bottom) of filament elongation (green arrow follows a single barbed end) from mutant profilin1:actin complexes (125 μM total) as indicated. (E) Barbed end growth velocities measured from TIRFM assays using mutant profilin1:actin complexes as indicated. Points are mean values [N ≥ 40 for each concentration, error = SD]. Lines are hyperbolic fits. (F) Summary table of equilibrium dissociation constants (KD) and dissociation rate constants (koff, Figure 3—figure supplement 1) of the interaction of profilin1 (wt or mutants as indicated) and actin monomers and the resulting maximal filament elongation velocities as measured by TIRFM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Amino acid logos around K125/E129 or S71, for the top 50 profilin designs obtained from the G- or F-actin complexes. The plot represents the frequency with which each amino acid was found in the designs, with the size of the characters being proportional to their abundance. A frequency of 100% results in ~4.32 bits. For both cases, the wild-type profilin sequence is shown at the top, with the mutated amino acids are highlighted in blue. The sequence logos were built with WebLogo (Crooks et al., 2004). (B) Time traces of tryptophan fluorescence quenching upon formation of the profilin1-actin complex for either wt or mutant profilin-1 as indicated. Experiments were done at 0.5 µM actin monomers and various excess profilin-1 concentrations as indicated. The observed reaction rates (kobs) (plotted in Figure 3—figure supplement 1C) were derived from fits to a mono-exponential decay function (fit, red line) (see Materials and methods). (C) Linear fit of the observed reaction rates kobs as a function of the total profilin-1 concentration (see Figure 3—figure supplement 1B). The association rate constant (kon) is calculated from the slope of a linear fit to the data. (D) Summary table of equilibrium dissociation constants (KD), association rate constants (kon) and dissociation rate constants (koff) of the interaction of profilin1 (wt or mutants as indicated) and actin monomers. Dissociation rate constants were calculated from the equilibrium dissociation constants and the measured association rate constants (see Figure 3—figure supplement 1B–C, see Materials and methods). (E) Binding of profilin1 (wt and S71M) to cytoplasmic actin measured by fluorescence anisotropy competition assays. Fluorescence anisotropy of Atto488-WAVE1WCA [4 nM] as a function of increasing profilin1 (wt, S71M as indicated) concentration in the presence of a constant amount of actin monomers [150 nM]. Lines are fits to an exact analytical competition model (see Materials and methods). Each data point represents the mean value from three independent experiments. Error indicators are SD. (F) Barbed end growth velocities measured from TIRF-M single filament assays using profilin1 (S71M):actin complexes. Points represent the calculated mean of the actin filament elongation rate at a given profilin-actin concentration [N ≥ 40 for each condition, error bars = SD]. Continuous lines are hyperbolic fits yielding the indicated maximum filament growth rates at saturation (see Materials and methods). Inset: Kymographs of representative individual filaments at 150 μM profilin-actin.
 
 We then tested the effect of these profilin mutations on filament growth. Strikingly, the maximal elongation rate scaled with the monomer dissociation rate of profilin. Weakly-binding profilins increased, whereas tight-binding profilin reduced the maximal filament growth rate (Figure 3D–F, Video 2). To better understand the effects of these profilin mutations on the elongation reaction, we developed an analytical model of actin polymerization in the presence and absence of profilin (see Appendix Section). Fitting this model to the data revealed that our profilin mutations altered both the binding rate of profilin-actin to the barbed end as well as the rate of release of profilin following polymerization. The latter determines the rate of filament elongation at saturation. We draw two conclusions from these observations: i) The profilin mutations impact the dissociation of profilin from both soluble actin monomers and terminal actin subunits similarly. ii) The strength of the profilin-actin interaction modulates the rate-limiting step of elongation. This strongly suggests that profilin dissociation from the barbed end imposes a kinetic limit to actin filament elongation.
 
+![Video 2.](https://cdn.elifesciences.org/articles/50963/elife-50963-video2.mp4.jpg)
+
+**Video 2.:** Filaments were visualized with 10 nM Cy5-UTRN261 in TIRF-M. Polymerization was performed from the following profilin1 mutant-actin complexes, left to right: profilin1-K125E + E129K, -wt, -E82A, -R88K.
+
 Some previous studies have linked profilin release from barbed ends to the rapid hydrolysis of ATP within actin (Pernier et al., 2016; Romero et al., 2004). We therefore generated ATPase-deficient (AD) actin, by mutations of three residues within the catalytic core of actin (Q137A+D154A+H161A, Figure 4A). These combined mutations did not abolish nucleotide binding, affect polymerization or reduce the affinity for profilin (Figure 4B–E, Figure 4—figure supplement 1A). Endpoint (Figure 4B) and time-resolved ATPase assays (Figure 4C) showed that this triple mutant was indeed unable to hydrolyze its associated ATP nucleotide with appreciable rates even after polymerization from profilin-actin and therefore formed filaments that were exclusively and homogenously ATP bound. Importantly, we found that ATPase-deficient actin was able to elongate actin filaments with nearly the same rates as wildtype actin at saturating profilin-actin concentrations (Figure 4D–E). This clearly demonstrates that profilin release from the barbed end does not require cleavage of the β-γ phosphodiester bond of ATP in actin. More generally, the lack of assembly-related defects for ATPase deficient actin is consistent with the notion that ATP hydrolysis serves an essential function unrelated to filament assembly (De La Cruz et al., 2000; Pollard et al., 2000).
 
-## Formin actin polymerases promote profilin release through their FH2 domain
+![Figure 4.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig4-v2.jpg)
+
+**Figure 4.:** (A) Nucleotide-binding site of filamentous actin. Left: the overall structure of filamentous actin. Right: Inset of the active site (PDBID 6FHL), including the three amino acids involved in nucleotide hydrolysis which were mutated to alanine for the generation of ATPase deficient actin, and the products of the reaction ADP and Pi. (B) End-point assays examining nucleotide content via HPLC after 1.5 hr of seeded polymerization from profilin-actin (either wt or ATPase deficient). As a non-polymerized control, profilin-actin was stabilized via LatrunculinB before the experiment. (C) ATPase activity of wt and ATPase deficient actin in seeded polymerization assays. The cleavage of γ-32P is monitored over time after mixing profilin1: actin complexes containing radioactive ATP with filaments in a 1:1 ratio (12 μM total)). (D) TIRF-M time-lapse images of filament barbed end elongation (green arrow follows a single barbed end) from either wt- or ATPase deficient actin-containing profilin1-actin complexes (100 μM total). (E) Barbed end growth velocities of profilin1–actin (100 μM total, wt (black) or ATPase deficient (cyan)) from TIRFM assays. Points are mean values [N ≥ 40 for each concentration, error = SD]. Lines are hyperbolic fits. Inset: Kymographs of filament growth.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Binding of profilin1 to cytoplasmic actin, either wt (black dashed) or AD (cyan) measured by fluorescence anisotropy competition assays. Fluorescence anisotropy of Atto488-WAVE1WCA [4 nM] as a function of increasing profilin1 concentration in the presence of a constant amount of actin monomers [150 nM]. Lines fit to an exact analytical competition model (see Materials and methods). Each data point represents the mean value from three independent experiments. Error indicators are SD.
+
+### Formin actin polymerases promote profilin release through their FH2 domain
 
 Actin elongation in cells can be facilitated by actin polymerases such as formins. These proteins are thought to increase the rate of binding between profilin-actin complexes and the barbed end they processively associate with (Paul and Pollard, 2009). Because such a mechanism can only accelerate growth when binding is limiting, we asked how formins affect actin assembly at saturating profilin-actin concentrations. We focused on Diaphanous-type formins because of their established polymerase function. We introduced constitutively active mDia1, containing profilin-actin-interacting FH1 and barbed end-binding FH2 domains, to TIRFM assays (Figure 5A). We used formin concentrations sufficient to saturate filament barbed ends, as evident from their accelerated growth rate compared to control experiments (Materials and methods). We verified that the measured velocities match the speed of formins observed at the single-molecule level (Video 3). mDia1 strongly accelerated barbed-end growth at limiting profilin-actin concentrations (≤10 μM), as expected (Jégou et al., 2013; Kovar et al., 2006). Importantly, mDia1-mediated elongation still exhibited saturation at elevated profilin-actin levels, but converged to a much higher (4x-fold) maximal rate than observed for free ends (Figure 5B–C, Figure 5—figure supplement 1A). This demonstrates that formins can accelerate the rate-limiting reaction in filament elongation at saturating profilin-actin concentrations.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig5-v2.jpg)
+
+**Figure 5.:** (A) Scheme of TIRFM assays with formin catalyzing the elongation of a filament from profilin-actin on functionalized coverslips. (B) Top: TIRFM time-lapse images of formin-mediated actin elongation (green arrows follow a single barbed end) at 75 μM profilin-actin in the absence or in the presence of 15 nM formin constructs as indicated. Bottom: Kymographs of individual growing filaments as in the top panel. (C) Velocities of formin-catalyzed barbed end growth from TIRFM assays as in (B). Points are mean values [N ≥ 40 for each concentration, error = SD]. Lines are hyperbolic fits. (D) Scheme of the generation of mDia chimeras. (Materials and methods). (E) Barbed end growth velocities of mDia chimeras (continuous lines) compared to wt mDia formins ((B), dashed lines) from TIRFM assays. Points are mean values [N ≥ 40 for each condition, error = SD]. Lines are hyperbolic fits. Right: Kymographs of growing filaments (±formins as indicated) at 50 μM profilin-actin. (F) Comparison of mDia1(15 nM)-mediated filament growth from 100 μM profilin-actin (either both wt proteins, tight binding profilin-1 (K125E-E129K) or ATPase-deficient actin (AD) as indicated). Left: Growth velocities. Points are mean values [N ≥ 35 for each condition, error = SD]. Right: TIRFM time-lapse images (green arrows follow a single barbed end).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fits showing the relative (x-fold) enhancement of the filament growth velocity obtained derived from hyperbolic fits to the raw data (Figure 5C) by either mDia1, mDia2 or DAAM1 as indicated. Growth velocities were normalized by the speed of actin growth in the absence of formins. (B) Growth velocities obtained from hyperbolic fits to the raw data (Figure 5C) in the presence of mDia1, mDia2 or DAAM1 as indicated, normalized by their characteristic maximal growth rate. This re-normalization shows that all formins lower the concentration of profilin-actin required for half-maximal elongation speeds and thus slightly broaden the region of concentration invariance. (C) mDia1-catalyzed barbed end growth velocities of profilin1–actin (either both proteins wt (dashed), or AD actin (light green) or tight binding profilin-1(K125E+E129K) (cyan)) from TIRF-M assays. Note that the tight binding profilin-mutant reduces the maximal elongation rate whereas ATPase-deficient actin does not. Points represent the calculated mean of the actin filament elongation rate at a given profilin-actin concentration [N ≥ 35 for each condition, error bars = SD]. Lines are hyperbolic fits. Right: Kymographs of the growth of representative individual filaments at 100 μM profilin-actin. (D) Model of the FH2 domain of mDia1 (blue) bound to the barbed end of an actin filament bound to profilin (see Materials and methods). The actin subunits (green) and profilin (magenta) are shown as surfaces. The knob region of the FH2 domain contacts the profilin molecule bound at the terminal protomer of the filament.
+
+![Video 3.](https://cdn.elifesciences.org/articles/50963/elife-50963-video3.mp4.jpg)
+
+**Video 3.:** Filaments were acquired in TIRF-M (filaments with 10 nM Cy5-UTRN261 - green; 0.7 nM TMR-mDia1 FH-FH2 – magenta). mDia1-mediated actin filament barbed end polymerization was performed at different profilin1-actin concentrations, left to right: 1 μM, 10 μM, 20 μM. For guidance, an example of a visible labeled mDia1 molecule processively moving with a filament barbed end is highlighted with an error.
+
 To test whether this ability is shared among formins, we studied other diaphanous- (mDia2) and non-diaphanous (DAAM1) formins. Indeed, both mDia2 and DAAM1 accelerated filament elongation not only at limiting, but also saturating profilin-actin concentrations albeit less strongly than mDia1 (Figure 5B–C, Video 4). The relative rate enhancement of all formins decreased only slightly with substrate concentrations (Figure 5—figure supplement 1A). Formins thus slightly broaden the regime over which actin growth is insensitive to the profilin-actin concentration (Figure 5—figure supplement 1B).
+
+![Video 4.](https://cdn.elifesciences.org/articles/50963/elife-50963-video4.mp4.jpg)
+
+**Video 4.:** Filaments were visualized with 10 nM Cy5-UTRN261 in TIRF-M. All filament barbed ends were saturated with 15 nM formin FH1-FH2. Polymerization was performed in presence of different formins, left to right: wt (no formin), + DAAM1, +mDia2, +mDia1.
 
 Interestingly, even closely related formins such as mDia1 and 2 differ in their ability to accelerate the rate-limiting reaction of filament elongation. To understand the origin of this difference, we created chimeras of mDia1 and 2 by swapping their FH1 and FH2 domains (Figure 5D). Both chimeras accelerated filament growth, but generated distinct maximal rates at saturating profilin-actin concentration (Figure 5E). Interestingly, mDia2FH1-mDia1FH2 exhibited similar maximal rates as mDia1, whereas mDia1FH1-mDia2FH2 was comparable to mDia2 (Figure 5E). This demonstrates that the barbed-end associated FH2 domain is responsible for setting the maximal rate of filament elongation.
 
 Finally, to test which constraints limit formin-mediated growth, we elongated mDia1-associated actin filaments using profilin-actin complexes containing either ATPase-deficient actin or tight-binding profilin. ATPase-deficient actin grew with rates indistinguishable from wildtype actin, whereas tight profilin binding inhibited mDia1-mediated growth (Figure 5F, Figure 5—figure supplement 1C). This demonstrates that formin-mediated filament elongation at saturation is limited by profilin release from the barbed end and not nucleotide hydrolysis. These results uncover two distinct formin polymerase activities. Formins not only promote binding of profilin-actin complexes, but also directly accelerate profilin release from the barbed end via their FH2 domain. These activities are matched to provide a constant rate enhancement over a wide range of profilin-actin concentrations (Figure 5—figure supplement 1A). Their combination allows formins to act as pacemakers, which elongate filaments with distinct rates that are buffered against changes in the profilin-actin concentration.
 
-## Formin-mediated actin elongation is resilient to changes in profilin-actin levels
+### Formin-mediated actin elongation is resilient to changes in profilin-actin levels
 
 To critically test how our results relate to cellular actin growth, we sought to study actin filament elongation in vivo. Growth of individual actin filaments cannot be visualized in mammalian cells. Formin proteins, however, can be visualized as single molecules in vivo (Higashida et al., 2004). We thus established single-molecule TIRFM imaging of constitutively active, mNeonGreen-tagged formins within the cortex of either mammalian mesenchymal (HT1080) or T-lymphocyte (EL4) cells (Figure 6A–C). We chose these cell types because of their > 2 fold difference in profilin-actin levels (Figure 1D). Because strong overexpression of active formins affects the soluble actin pool (Dimchev et al., 2017), we only analyzed cells with extremely low formin levels (Materials and methods). Single formin particles were visible as spots that translocated over μm distances with nearly constant velocity (Figure 6B–C, Video 5). Control experiments showed that formin particles corresponded to single molecules (Figure 6—figure supplement 1) whose movement was actin polymerization- and not myosin-driven (Video 6). Remarkably, we observed that mDia1 and mDia2 moved with distinct speeds that were not only similar between the two cell types (Figure 6D), but also strikingly close to their characteristic maximal in vitro velocity (1450 and 820 monomers/s for mDia1 and 2, respectively Figure 5).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig6-v2.jpg)
+
+**Figure 6.:** (A) Scheme of TIRFM imaging of single formins in the actin cortex of cells. (B) Maximum intensity projection of a TIRFM time-lapse shows growth trajectories of single mNeonGreen-mDia1 molecules in the cortex of a HT1080 cell. Inset: Close-up of a single trajectory as in (C). (C) TIRFM time-lapse images (left) and intensity projection (right) of an individual mNeonGreen-mDia1 molecule. (D) Measurements of mDia1/2 elongation velocities in vivo. Left to right: Scheme of HT1080 (top) and EL4 (lower) cells, kymographs of single mNeonGreen- mDia1 (left) or mDia2 (right) molecules followed by velocity distributions. Lines are Gaussian fits. Means and SD are indicated. [Ncells ≥ 10, nmolecules/cell ≥30, ntotal ≥650 per condition]. (E) Workflow to generate profilin1 and β-actin overexpressing HT1080 cells. Polycistronic constructs for β-actin, mScarletI and profilin1 were integrated into the genome. Cells were sorted into four sub-populations dependent on mScarletI fluorescence intensity (Figure 6—figure supplement 2B, Materials and methods). (F) Top: Western blot of HT1080 cells (wt or overexpressing sub-populations). No translational read-through is visible (1xRP: actin-mScarletI, 2xRP: actin-mScarletI-profilin1 at expected Mw). Bottom: Relative profilin1 and actin levels (fold over wt) for indicated sub-populations. (G) mDia1/2 velocities in profilin-actin overexpressing HT1080 cells. Left to right: Scheme, kymographs of single mNeonGreen-mDia1 (left) or mDia2 (right) molecules, velocity distributions. Lines are Gaussian fits (Red continuous (PA-OE) and dashed (wt) cells as in (D)). Means and SD are indicated. [Ncells ≥ 10, nmolecules/cell ≥30, ntotal ≥650 per condition]. (H) Mean mDia velocities in HT1080 cells plotted against the relative profilin-actin concentration. Error = SD. Dashed lines are linear fits through the origin.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left: Still images from TIRF imaging of surface-immobilized mNeongreen-mDia2 FH1-2 molecules from serial dilutions of HT1080 cell lysate at indicated dilution factors. Intensity distributions below show that the single particle intensity is independent of the dilution factor. Right: Still image from TIRF imaging of mNeongreen-mDia2 FH1-2 molecules in living cells. [For each dilution ≥1000 particles were analyzed, for particles from living cells ≥ 200 particles were analyzed]. (B) Bleaching analysis of surface immobilized mNeongreen-mDia2 FH1-2 as in (A). Spots bleach in 1–2 steps. [N = 70 particles].
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50963/elife-50963-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Profilin-actin concentration determination in mammalian HT1080 cells overexpressing profilin1 and β-actin. Left to right: name of cell type and origin, histograms of the single cell volume from fluorescence eXclusion measurements, quantitative western blot analysis of cellular actin, profilin1 amount (left: titration of cell number, right: standard curve of recombinant proteins), calculated mean protein concentration [μM] per cell with experimental error (SD, N = 3 independent experiments, see Materials and methods). (B) Histogram from FACS analysis showing the ScarletI intensity distribution from a polyclonal population of HT1080 cells overexpressing profilin1, mScarletI and β-actin. This population was sorted into subpopulations as indicated (+one to +4). (C) Mean velocities of either mDia1 (top) and mDia2 (bottom) in different mammalian cell types (wt HT080, EL4 and HT1080 overexpressing profilin-actin) plotted as a function of the quantified profilin-actin concentration. Error indicators are SD. Dashed lines are the formin speeds determined in vitro (see Figure 5C), dotted lines are linear fits through the origin to the in vivo data. Continuous lines fit to the in vivo data by a hyperbolic model with only one free parameter (vmax, the maximal growth velocity). K0.5 (the profilin-actin concentration at half-maximal elongation speed) was fixed to the value determined in vitro (see Materials and methods). (D) Determination of soluble and filamentous actin and profilin fractions in HT1080 wt and profilin and actin overexpressing cells. Cellular profilin1 and actin amounts after actin arrest and fractionation were detected from different dilutions by quantitative western blot analysis (see Materials and methods). Calculated fractions [%] and protein amounts per cell are summarized in the table.
+
+![Video 5.](https://cdn.elifesciences.org/articles/50963/elife-50963-video5.mp4.jpg)
+
+**Video 5.:** mNeonGreen–mDia1/2 FH1-FH2 single molecules were visualized in TIRF-M. To indicate the cell shape, HT1080 cells were masked. Top: mDia1 (left) and mDia2 (right) molecules in wt HT1080 cells. Bottom: mDia1 and mDia2 molecules in HT1080 cells overexpressing profilin and actin.
+
+![Video 6.](https://cdn.elifesciences.org/articles/50963/elife-50963-video6.mp4.jpg)
+
+**Video 6.:** To indicate the cell shape, HT1080 cells were masked. mNeonGreen-mDia2 FH1-FH2 single molecules were visualized in TIRF-M. mDia2 molecules were monitored without and after 10 min of drug treatment. The following drugs were applied to the cells, left to right: no drug treatment, 500 nM latrunculinB (latB), 8 μM JASP, 10 μM y27632.
 
 To test for cell-type-specific regulation as a reason for this invariance, we perturbed profilin-actin levels in a single cell type. Given their low profilin-actin concentration (Figure 1D), we overexpressed profilin-actin in HT1080 cells. To prevent side-effects anticipated for the overexpression of profilin alone, we co-overexpressed profilin and actin. To this end, we integrated β-actin with profilin1 and Scarlet-I (as a fluorescent reporter), separated by ribosomal skip sites into a single transgene (Figure 6E, Materials and methods). We sorted a heterogeneous pool of stably expressing cells into sub-populations depending on reporter fluorescence (Figure 6—figure supplement 2B). Quantification showed that balanced overexpression of profilin and actin levels (2–3-fold) could be achieved in the strongest overexpressing subpopulation (Figure 6F, Figure 6—figure supplement 2A). Cell fractionation following pharmacological actin arrest (Peng et al., 2011) confirmed that profilin remained exclusively in a soluble form, even in this subpopulation (Figure 6—figure supplement 2C). Importantly, the soluble actin concentration increased by a very similar amount as the soluble profilin concentration in these overexpressing cells, demonstrating that an approximately 2–3-fold increase in the soluble profilin-actin concentration can be assumed (Figure 6—figure supplement 2, see Materials and methods).
 
@@ -89,79 +169,299 @@ Competition for soluble actin has been proposed (Suarez and Kovar, 2016) to expl
 
 ## Materials and methods
 
-## Structural models of barbed end complexes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 Star pRARE</td>
+      <td>EMBL Protein Expression Facility</td>
+      <td></td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 Rosetta</td>
+      <td>Novagen</td>
+      <td>Cat# 70954</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (S. frugiperda)</td>
+      <td>SF9</td>
+      <td>A. Musacchio, MPI Dortmund</td>
+      <td>RRID:CVCL_0549</td>
+      <td>Cell line for virus generation</td>
+    </tr>
+    <tr>
+      <td>Cell line (T. ni)</td>
+      <td>TnaO38</td>
+      <td>A. Musacchio, MPI Dortmund</td>
+      <td>RRID:CVCL_Z252</td>
+      <td>Cell line for protein expression from baculovirus system</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HT1080</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-121, RRID:CVCL_0317</td>
+      <td>Profilin and actin quantifications by WB, formin single molecule transfection</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>B16F10</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-6475, RRID:CVCL_0159</td>
+      <td>Profilin and actin quantifications by WB, formin single molecule transfection</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>BMDC</td>
+      <td>Lab of M. Piel, Institut Curie, Paris</td>
+      <td></td>
+      <td>Profilin and actin quantifications by WB</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>neutrophils</td>
+      <td>Lab of M. Piel, Institut Curie, Paris</td>
+      <td></td>
+      <td>Profilin and actin quantifications by WB</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>EL4, T-lymphocytes</td>
+      <td>Lab of M. Taylor, MPI Berlin</td>
+      <td></td>
+      <td>Profilin and actin quantifications by WB</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pΔCMV-mNeongreen-mDia1FH1-2</td>
+      <td>This paper</td>
+      <td>Uniprot: O08808</td>
+      <td>transfected construct, can be obtained in the lab of P. Bieling, MPI Dortmund</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pΔCMV-mNeongreen-mDia2FH1-2</td>
+      <td>This paper</td>
+      <td>Uniprot: Q9Z207</td>
+      <td>transfected construct, can be obtained in the lab of P. Bieling, MPI Dortmund</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pPBCAG-β-actin-P2A-mScarletI-T2A-profilin1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>transfected construct, can be obtained in the lab of P. Bieling, MPI Dortmund</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin (mouse monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat# MA5-11869, RRID:AB_11004139</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-profilin1 (mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 061M4892</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-profilin2 (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-100955, RRID:AB_2163221</td>
+      <td>WB (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (14C10) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2118, RRID:AB_561053</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse (donkey polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 925–32212, RRID:AB_2716622</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit (donkey polyclonal)</td>
+      <td>Licor</td>
+      <td>Cat# 926–68073, RRID:AB_10954442</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFL-h.s. β-actin_wt-linker-T4b (plasmid)</td>
+      <td>This paper</td>
+      <td>Uniprot: P60709</td>
+      <td>β-actin insect cell expression, can be obtained in the lab of P. Bieling, MPI Dortmund</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFL-h.s. β-actin_Q137A_D154A_H161A-linker-T4b (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>β-actin insect cell expression, can be obtained in the lab of P. Bieling, MPI Dortmund</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: 189730</td>
+      <td>For filament attachment</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin B</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: L5288</td>
+      <td>For actin arrest</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632 dihydrochloride</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: Y0503</td>
+      <td>For actin arrest</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>jasplakinolide</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: J4580</td>
+      <td>For actin arrest</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>phalloidin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. #: P2141</td>
+      <td>For actin arrest</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,5-IAEDANS</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: I14</td>
+      <td>For actin labeling</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link Maleimide-PEG2-Biotin</td>
+      <td>Thermo Fisher</td>
+      <td>Cat. #: A39261</td>
+      <td>For actin labeling</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>γ–32P–ATP (3000 Ci/mmol)</td>
+      <td>PerkinElmer</td>
+      <td>Cat. #: NEG002A</td>
+      <td>For ATPase assay</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HO-PEG-NH2 and Biotin-CONH-PEG-O-C3-H6-CONHS</td>
+      <td>Rapp Polymere</td>
+      <td># 103000–20 and # 133000-25-35</td>
+      <td>For glass surface functionalization</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structural models of barbed end complexes
 
 Using MODELLER (Webb and Sali, 2016) we built models of the binding of profilin, formin or profilin-formin to the barbed end of the actin filament. For the profilin models we superimposed the actin monomer in the profilin/β-actin crystal structure (PDBID 2BTF) (Schutt et al., 1993) to either the ultimate or penultimate subunit of a filament barbed end. As a filament template we used our recent structure of α-actin in complex with beryllium fluoride (PDBID 5OOF) (Merino et al., 2018).
 
 To model the FH2 domain of mDia1 (aa 750–1163) bound to a profilin-occupied barbed end we superimposed subdomains 1 (aa 1–33; 70–137; 348–375) and 3 (aa 138–180; 274–347) of an actin subunit from the Bni1p-actin crystal structure (PDBID 1Y64) (Otomo et al., 2005) with the terminal monomers in F-actin-BeFx. This brings the FH2 domain of the formin to the right position in the actin filament. Given that the Bni1p structure has a non-physiological helical arrangement of the formin, we erased the loop between its Knob and Lasso regions (aa 804–831 in mDia1) and built it de novo to recover the known dimeric arrangement of the FH2 domains. To further improve the quality of the models we also included two crystal structures of the FH2 domains of mDia1 (PDBID 1V9D and 3O4X) (Nezami et al., 2010; Shimada et al., 2004).
 
-## Protein design
+### Protein design
 
 We used the RossetaScripts framework (Fleishman et al., 2011) within Rosetta (Leaver-Fay et al., 2011) to find possible mutations to increase the affinity of profilin for actin. For the design we tested a model built on the crystal structure of profilin-β-actin (Schutt et al., 1993) as well as our F-actin-profilin models (see previous section). The design strategy was modified from the protocol provided by the Baker lab in Berger et al. (2016) (see Computational methods: design with ROSETTA in their manuscript). We tried mutating all profilin residues at the interface with actin, but did not allow mutations into Cys, Pro, Trp, or Gly. We generated a total of 1920 possible profilin sequences for each actin conformation, and kept the top 50 (lowest energies) for further analysis. From there, we selected single mutations likely to increase the affinity of profilin for actin and tested them experimentally.
 
-## Protein purification and labeling
+### Protein purification and labeling
 
-## 10xhis-Gelsolin G4-6
+#### 10xhis-Gelsolin G4-6
 
 Mouse Gelsolin G4-6 was cloned with an N-terminal 10xhis tag into a pCOLD vector. Protein was expressed in E. coli BL21 Rosetta cells for 16 hr at 16°C. After cell lysis (20 mM Tris-Cl pH 8.0, 300 mM KCl, 5 mM CaCl2, 0.2 mM ATP, 0.5 mM β-mercaptoethanol, 1 mM PMSF, DNAseI) the lysate was hard spun and purified by IMAC over a 40 ml Ni2+ superflow column. Protein was gradient eluted (20 mM Tris-Cl pH 8.0, 300 mM KCl, 5 mM CaCl2, 0.2 mM ATP, 500 mM Imidazole) over 10 column volumes followed by gelfiltration over Superdex 200 26/600 into storage buffer (5 mM Tris-Cl pH 8.0, 50 mM KCl, 5 mM CaCl2, 0.1 mM ATP, 0.5 mM TCEP, 20% glycerol). The protein was snap frozen in liquid nitrogen and placed in −80°C for long-term storage.
 
-## Native bovine (β, γ)-actin
+#### Native bovine (β, γ)-actin
 
 Bovine thymus was manually severed into small fragments and mixed in a precooled blender together with ice cold Holo-Extraction buffer (10 mM Tris-Cl pH 8.0, 7.5 mM CaCl2, 1 mM ATP, 5 mM β-mercaptoethanol, 0.03 mg/ml benzamidine, 1 mM PMSF, 0.04 mg/ml trypsin inhibitor, 0.02 mg/ml leupeptin, 0.01 mg/ml pepstatin, 0.01 mg/ml apoprotein). After homogenizing, additional 2.5 mM β-mercaptoethanol was added to the lysate and the pH was checked and readjusted to pH 8.0 if necessary. After initial centrifugation the lysate was filtered through a nylon membrane [100 μm] and hard spun in an ultracentrifuge. The volume of the cleared supernatant was measured out and the salt and the imidazole concentrations were adjusted (KCl to 50 mM, imidazole to 20 mM). The supernatant was incubated with the gelsolin G4-6 fragment to promote the formation of actin:gelsolin G4-6 complexes. To this end, 4 mg of 10xhis-gelsolinG4-6 were added for each g of thymus to the lysate and dialyzed into IMAC wash buffer overnight (10 mM Tris-Cl pH 8.0, 50 mM KCl, 20 mM imidazole, 5 mM CaCl2, 0.15 mM ATP, 5 mM β-mercaptoethanol). The lysate containing the actin:gelsolin G4-6 complex was then circulated over a Ni2+ superflow column. Actin monomers were eluted with Elution Buffer (10 mM Tris-Cl pH 8.0, 50 mM KCl, 20 mM imidazole, 5 mM EGTA, 0.15 mM ATP, 5 mM β-mercaptoethanol) into a collection tray containing MgCl2 (2 mM final concentration). Actin containing fractions were identified by gelation, pooled and further polymerized for 4 hr at RT after adjusting to 1xKMEI and 0.5 mM ATP. After ultracentrifugation, the actin filament pellet was resuspended in F buffer (1xKMEI, 1xBufferA) and stored in continuous dialysis at 4°C. F buffer containing fresh ATP and TCEP was continuously exchanged every 4 weeks.
 
 For fluorescence measurements actin monomers were labeled with 1.5-IAEDANS at Cys374 as outlined in Hudson and Weber (1973); Miki et al. (1987) using a modified protocol. Briefly, the actin filament solution was transferred to RT, mixed with 10x molar excess of 1.5-IAEDANS and incubated for 1 hr at RT. The reaction was quenched by the addition of 1 mM DTT for 10 min. After ultracentrifugation at 500.000xg for 30 min, the actin pellet was resuspended in an appropriate amount of BufferA and dialyzed in the same buffer at 4°C for 2 days. Actin monomers were separated from residual filaments by centrifugation at 300.000xg followed by determination of monomer concentration and degree of labeling at 280 nm/336 nm.
 
-## Recombinant human β-actin
+#### Recombinant human β-actin
 
 Human β-actin was cloned with a C-terminal linker sequence (ASRGGSGGSSGGSA) followed by the human β-thymosin sequence followed by a 10xhis tag (Noguchi et al., 2007) in a pFL vector. PCR-based site directed mutagenesis was performed to generate human, ATPase deficient β-actin (Q137A+D154A+H161A). Proteins were expressed in insect TnaO38 cells for 3 days at 27°C. The cells were resuspended with a 5x pellet volume of lysis buffer (10 mM Tris-Cl pH 8.0, 50 mM KCl, 7.5 mM CaCl2, 1 mM ATP, 5 mM imidazole, 5 mM β-mercaptoethanol, 0.03 mg/ml benzamidine, 1 mM PMSF, 1x complete protease inhibitor cocktail). After cell lysis by a microfluidizer the lysate was hard spun, filtered through a 0.45 μm syringe filter and passed through a Ni2+-sepharose excel column. After washing the column with 10 mM Tris-Cl pH 8.0, 50 mM KCl, 5 mM CaCl2, 0.15 mM ATP, 5 mM imidazole, 5 mM β-mercaptoethanol, the protein was eluted over a 6 CV linear gradient to Elution Buffer (10 mM Tris-Cl pH 8.0, 50 mM KCl, 0.15 mM ATP, 300 mM imidazole, 5 mM β-mercaptoethanol) followed by dialysis into BufferA overnight. Next, the protein was cleaved with TLCK-treated chymotrypsin in a molar ratio of 250:1 (actin over chymotrypsin) at 25°C. After 10 min the reaction was quenched with 0.2 mM PMSF at 4°C. The protein was again passed over the Ni2+-sepharose excel column and the flow through was polymerized for 3 hr at 25°C by the addition of 1xKMEI, 2 mM MgCl2 and 0.5 mM ATP. After hard spin, the actin filament pellet was resuspended into F buffer (1xKMEI, 1xBufferA) and stored in dialysis at 4°C.
 
-## Profilin 1 and 2
+#### Profilin 1 and 2
 
 Human profilin isoforms 1 and 2 were expressed either as untagged proteins or with an N-terminal SUMO3-10xhis tag in E. coli BL21 Rosetta cells at 30°C for 4.5 hr. Profilin1 mutants that were generated via site directed mutagenesis (E82A, R88K, K125E E129K and S71M) were expressed with an N-terminal SUMO3-10xhis in E. coli BL21 Rosetta cells at 30°C for 4.5 hr. For the N-terminal SUMO3-10xhis tagged version, the cells were lysed (20 mM Tris-Cl pH 8.0, 300 mM NaCl, 10 mM imidazole, 0.5 mM β-mercaptoethanol, 15 μg/ml benzamidine, 1 mM PMSF and DNaseI) and the hard spun lysate was circulated over a 5 ml HiTrap Chelating column followed by overnight SenP2 cleavage of the N-terminal SUMO-his tag on the column, generating the natural profilin N-terminus. After cleavage the flow through was gelfiltered over a Superdex 200 16/600 column into storage buffer (20 mM Tris-Cl pH 7.5, 50 mM NaCl, 0.5 mM TCEP). The non-tagged profilin isoforms were purified as described in Bieling et al. (2018) by ammonium sulfate precipitation, followed by ion-exchange (DEAE) and hydroxylapatite (HA) chromatography steps, followed by size exclusion chromatography (Superdex 200 16/600) into storage buffer (20 mM Tris-Cl pH 7.5, 50 mM NaCl, 0.5 mM TCEP). Proteins were snap frozen in liquid nitrogen with the addition of 20% glycerol in the storage buffer and were stored at −80°C.
 
-## Profilin - Actin complex
+#### Profilin - Actin complex
 
 Filamentous mammalian actin was depolymerized through dialysis into BufferA (2 mM Tris, 0.2 mM ATP, 0.1 mM CaCl2, 0.1 μg/ml NaN3, 0.5 mM TCEP) and gelfiltered over a Superdex 200 16/600. After gelfiltration a 1.5x molar excess of profilin was added to the actin monomers and incubated at 4°C overnight to form profilin-actin complexes. Profilin-actin was then separated from excess free profilin by gelfiltration over a Superdex 200 10/300 GL into BufferA. The complex was concentrated to working concentrations between 200 and 400 μM and stored at 4°C up to two weeks without inducing nucleation.
 
-## Formins
+#### Formins
 
 M. musculus mDia1 FH1-2 (aa 548–1154), mDia2 FH1-2 (aa 515–1013), FH1mdia1FH2mdia2 (aa 548-751/453-1013), FH1mdia2FH2mdia1 (aa 515-612/645-1154), H. sapiens DAAM1 FH1-2 (aa 490–1029), were expressed with an N-terminal 10xhis-SNAP-tag. All constructs were expressed in E. coli BL21 Star pRARE cells for 16 hr at 18°C. The cells were lysed in Lysis Buffer (50 mM NaPO4 pH 8.0 (pH 7.5 for mDia chimera constructs), 400 mM NaCl, 0.75 mM β-mercaptoethanol, 15 μg/ml benzamidine, 1xcomplete protease inhibitors, 1 mM PMSF, DNaseI,) and the protein was purified by IMAC using a 5 ml HiTrap column. The protein was eluted using Elution Buffer (50 mM NaPO4 pH 7.5, 400 mM NaCl, 400 mM imidazole, 0.5 mM β-mercaptoethanol) in a gradient and the 10xhis-tag was directly cleaved using TEV protease overnight. After cleavage proteins were desalted into low salt Mono S buffer (10 mM Hepes pH 7.0 (pH 7.5 for mDia chimera constructs), 90 mM NaCl, 0.5 mM TCEP) over a HiPrep 26/10 desalting column followed loading onto a MonoS column. Protein was eluted by a linear 25 column volume gradient to high salt MonoS buffer (10 mM Hepes pH 7.5, 1 M NaCl, 0.5 mM TCEP) followed by gelfiltration over a Superdex 200 16/600 into storage buffer (20 mM Hepes pH 7.5, 200 mM NaCl, 0.5 mM TCEP, 20% glycerol).
 
 Following the purification the proteins were either snap frozen and stored in –80°C or directly used for SNAP-labeling. A 3x molar excess of SNAP Cell TMR-star was mixed with the protein and incubated for 6 hr at 16°C followed by an overnight incubation on ice. Post labeling the protein was gelfiltered over a Superose 6 10/300 GL column into storage buffer. The degree of labeling (50–70%) was determined by absorbance at 280 nm and 554 nm.
 
-## Myosin and biotinylated heavy - mero – myosin (HMM)
+#### Myosin and biotinylated heavy - mero – myosin (HMM)
 
 Skeletal muscle myosin was prepared from chicken according to Pollard (1982). Briefly, 300 g muscle tissue were mixed with 4x volumes of extraction buffer (0.15 mM KH2PO4 pH 6.5, 0.3 M KCl, 5 mM MgCl2, 0.1 mM ATP, 20 mM EDTA) while blending. The pH was adjusted to 6.6 afterwards. After centrifugation, the supernatant was diluted with 10x volumes of cold water and the precipitate was separated from solution by centrifugation at 9.000xg for 30 min. The pellet was resuspended in buffer 8 (3 ml buffer per g of pellet, 60 mM KH2PO4 pH 6.5, 1 M KCl, 25 mM EDTA) and dialyzed against buffer 9 (25 mM KH2PO4 pH 6.5, 0.6 M KCl, 10 mM EDTA, 1 mM DTT) over night. Following dialysis, an equal volume of cold water was added to the myosin solution and stirred for 30 min. After centrifugation for 30 min at 15.000xg, the supernatant was diluted with 7 volumes of cold water and again spun for 30 min at 9.000xg. The pellet fraction was then resuspended into buffer 10 (20 mM Tris-Cl pH 7.0, 0.6 M KCl, 10 mM DTT) and treated with α-chymotrypsin (25 μg/ml final) at 25°C for 15 min. The reaction was quenched by the addition of 0.3 mM PMSF. After protease treatment, the myosin was dialyzed into buffer 11 (10 mM NaPi pH 7.2, 35 mM NaCl, 10 mM DTT). On the next day, the HMM was separated by ultra-centrifugation for 1 hr at 300.000xg. The supernatant was desalted into buffer 11 without DTT and incubated with 15x molar excess of EZ-Link maleimide-PEG11-biotin for 2 hr on ice. The reaction was stopped by the addition of 1 mM DTT. The protein was desalted into buffer 11 containing 20% glycerol, SNAP-frozen and stored at –80°C.
 
-## Biochemical assays
+### Biochemical assays
 
-## Buffers
+#### Buffers
 
 All biochemical experiments were carried out in a common final assay buffer of the following composition if not stated otherwise: 20 mM Hepes pH 7.0, 100 mM KCl, 1.5 mM MgCl2, 1 mM EGTA, 20 mM β-mercaptoethanol, 0.1 mg/ml β-casein, 1 mM ATP. This buffer has a molar ionic strength of 0.133 M, which is close to the physiological ionic strength found in literature (between 0.1 and 0.2 M).
 
-## Endpoint hydrolysis measurements via HPLC
+### Endpoint hydrolysis measurements via HPLC
 
 All HPLC measurements were initiated by loading actin monomers and profilin-actin with Mg-ATP. After a 1 hr incubation of monomers and profilin-actin (40 μM) with 1 mM MgCl2 and 1 mM ATP, proteins were desalted into 2 mM Tris-Cl pH 8.0 using a Zeba Spin Desalting column. Actin seeds were then polymerized from the desalted actin monomers by adjusting to 1xKMI (50 mM KCl pH 7.0, 1.5 mM MgCl2, 10 mM imidazole) for 1 hr at 23°C. To start the reaction, profilin–actin (40 μM) was mixed with seeds (5 μM) in presence of 1xKMI. After 1.5 hr incubation at 23°C, the samples were boiled for 5 min followed by a hard spin. The supernatant was carefully aspired and analyzed by HPLC. As a negative control, profilin-actin were stabilized with 5 mM latrunculin B and the seeds were incubated with 5 mM phalloidin before mixing, otherwise the samples were treated as mentioned above.
 
 All nucleotide retention times were measured using an UltiMate 3000 HPLC Dionex – System. The samples were injected onto a C18-column equilibrated with 16% acetonitrile, 50 mM KPi pH 6.6, 10 mM TBABr. The nucleotide signal intensity was recorded at 254 nm.
 
-## Radioactive ATPase assays
+### Radioactive ATPase assays
 
 100 μM Mg-ATP-actin was dialyzed into BufferA for 7 days. After gelfiltration over a Superdex200 16/60 the actin monomer fraction was split into two fractions. With the addition of 1.5x-molar excess profilin1 to one of the monomer fractions, profilin-actin complexes were formed and isolated over a Superdex200 10/300 GL. Both actin monomer and profilin-actin fractions were desalted into ATP free BufferA (2 mM Tris-Cl pH 8.0) over a Zeba Desalting column. 1 ml of 10 μM actin monomers was incubated with 2xKMEI to polymerize actin for 1 hr at RT. In the meantime, 1 ml of 10 μM profilin-actin was incubated with 0.2 mM EGTA, 0.132 mM MgCl2 and 0.06 mM γ–32P–ATP (3000 Ci/mmol, PerkinElmer #NEG002A) for 30 min on ice. After incubation, γ– 32P–ATP labeled profilin-actin complexes were desalted over a Zeba Desalting column into 2 mM Tris–Cl pH 8.0, 0.2 mM EGTA, 0.132 mM MgCl2. Immediately before introducing the pre-polymerized actin seeds into the experiments, seeds were sheared through a 27 G needle. The ATPase assay reaction was started by rapidly mixing 6 μM of actin seeds with 6 μM of γ–32P–ATP labeled profilin-actin. 100 μl samples were taken at different time points over a time course of 48 min and immediately quenched with an equal volume of silicotungstic–sulfuric acid (4.3% aqueous silicotungstic acid in 2.8 N sulfuric acid). Samples were recovered in 1 ml of a 1:1 isobutanol/xylene solution and immediately rigorously mixed with additional 100 μl of 10% ammonium molybdate for 20 s. After 4 min centrifugation at 200xg the upper phase containing the phosphate molybdate complex was extracted. The complex was diluted in LSC cocktail (Hidex) and the number of counts was detected using a liquid scintillation counter (Triathler multilabel tester, Hidex).
 
-## Fluorescence anisotropy experiments
+### Fluorescence anisotropy experiments
 
 The measurements were performed in 96 well CORNING plates with a TECAN SPARK plate reader. A constant concentration of 150 nM (for wt and weakly binding profilin) or 40 nM (for tightly binding profilin) actin monomers were stabilized with 25 μM latrunculin B and mixed with 4 nM Atto488-WAVE1(WCA) (Bieling et al., 2018). Profilin was titrated to the Atto488-WAVE1(WCA):actin complex to final concentrations of 0–20 μM and equilibrated for 5 min at RT before the measurement. The assay was performed in 1xTIRF buffer (20 mM Hepes pH 7.0, 100 mM KCl, 1.5 mM MgCl2, 1 mM EGTA, 20 mM β-mercaptoethanol, 0.1 mg/ml β-casein, 1 mM ATP). For the determination of anisotropy values, Atto488-WAVE1(WCA) was excited at 485/20 nm and the emission was detected at 535/25 nm.
 
-## IAEDANS fluorescence quenching measurements
+### IAEDANS fluorescence quenching measurements
 
 Fluorescence measurements were performed in 96 well CORNING plates with a TECAN SPARK plate reader. A constant concentration of 150 nM 1.5-IAEDANS labeled actin monomers were pre-mixed with 25 μM latrunculin B in 1xTIRF assay buffer and thymosin-β4 was titrated over a range of 0–200 μM. The 1.5-IAEDANS actin was excited at 336 nm and the emission and thus the fluorescence change of the 1.5-IAEDANS actin bound to thymosin-β4 was detected at 490 nm.
 
-## Tryptophan fluorescence quenching by stopped flow
+### Tryptophan fluorescence quenching by stopped flow
 
 To determine the association rate constant for profilin binding to actin monomers, increasing profilin concentrations were mixed in a 1:1 vol with a fixed concentration of 0.5 μM actin monomers at 25°C. The assay was performed in 20 mM Hepes pH 7.0, 100 mM KCl, 1.5 mM MgCl2, 1 mM EGTA, 20 mM β-mercaptoethanol, 1 mM ATP, 1.5 μM latrunculin B. Tryptophan fluorescence intensity was recorded by a SX20 double mixing stopped flow device (Photophysics) using excitation and emission wavelengths of 280 and 320 nm, respectively. The time courses of tryptophan fluorescence was recorded and fitted with a single exponential function to yield the observed pseudo-first order reaction rate (kobs) as a function of profilin concentration.
 
-## Single filament experiments on functionalized glass coverslips using TIRF-Microscopy
+### Single filament experiments on functionalized glass coverslips using TIRF-Microscopy
 
 Flow chambers were prepared from microscopy counter slides passivated with PLL-PEG and coverslips (22 × 22 mm, 1.5 hr, Marienfeld-Superior) that were functionalized according to Bieling et al. (2016). Briefly, coverslips were cleaned with 3 M NaOH and Piranha solution followed by silanization and PEG-biotin/hydroxy functionalization. For the single filament assays the flow cell surfaces were blocked for 5 min with a Pluronic block solution (0.1 mg/ml κ-Casein, 1% Pluronic F-127, 1 mM TCEP, 1xKMEI), followed by 2 washes with 40 μl of wash buffer (0.5 mM ATP, 1 mM TCEP, 1xKMEI, 0.1 mg/ml β-Casein). The channel was incubated with 75 nM streptavidin for 3 min, followed by washing and incubation of 90 nM biotin-phalloidin for 3 min. Pre-polymerized actin seeds were immobilized in the channel for another 2 min for cases when spontaneous nucleation was not rapid enough (e.g. low profilin-actin concentrations, absence of formins).
 
@@ -169,29 +469,29 @@ Visualization by TIRF-M was performed following a modified protocol as outlined 
 
 Filaments that appeared to either stop growing due to surface defects or that showed very large movements out of the TIRF field were not analyzed. All single filament polymerization experiments were performed using profilin-actin as a substrate unless otherwise indicated in the figure legends.
 
-## Microfluidic single filament experiments by TIRF microscopy
+### Microfluidic single filament experiments by TIRF microscopy
 
 Experiments were essentially conducted as described in the previous section with the following modifications: Microfludic PDMS chambers were mounted on PEG – biotinylated glass cover slips via plasma treatment as described in Duellberg et al. (2016). The chambers were designed with 2 or 3 inlets and one observation channel. After pluronic block (0.1 mg/ml κ-Casein, 1% Pluronic F-127, 1 mM TCEP, 1xKMEI) for 5 min, biotinylated Alexa647-phalloidin stabilized actin seeds were bound to the surface via streptavidin. To start actin filament polymerization, profilin-actin was diluted in TIRF buffer and directly transferred from a syringe pump into the reaction chamber to visualize filament elongation immediately under the TIRF-microscope. The flow speed was set to 14–16 μl/min.
 
-## TIRF-Microscopy data acquisition
+### TIRF-Microscopy data acquisition
 
 All in vitro experiments were performed at RT using a custom built TIRF microscope (OLYMPUS IX81). Image acquisition was done by a EM CCD Andor iXon 888 camera controlled by Micromanager 1.4 software (Edelstein et al., 2014). Fiji ImageJ was used for image and data analysis. Dual color imaging was performed through a 60x OLYMPUS APO N TIRF objective using TOPTICA IBeam smart 640 s and 488 s/or OBIS 561 nm LS lasers and a Quad-Notch filter (400-410/488/561/631-640). Shutters, optical filters, dichroic mirrors and the Andor camera were controlled by Micromanager 1.4 software (Edelstein et al., 2014). Images were acquired between intervals of 0.14–10 s using exposure times of 30–200 ms to avoid bleaching.
 
 All in vivo single molecule experiments were performed at 23°C unless otherwise specified using a customized Nikon TIRF Ti2 microscope and Nikon perfect focus system. Image acquisition was achieved by dual camera EM CCD Andor iXon system (Cairn) controlled by NIS – Elements software. Dual color imaging was performed through an Apo TIRF 60x oil DIC N2 objective using a custom multilaser launch system (AcalBFi LC) at 488 nm and 560 nm. Images were acquired at intervals of 0.075–0.15 s.
 
-## Cell culture
+### Cell culture
 
 HT1080 cells were cultured in DMEM and supplemented with 2 mM glutamine, 1% NEAA and 10% FBS. B16F10 cells were cultured in DMEM and supplemented with 4 mM glutamine, 1% NEAA and 10% FBS. Mouse EL4 cells were cultured in RPMI-1640 with 10% FBS. The cells were cultivated at 37°C with 5% CO2 in a humidified incubator. BMDCs were cultured according to Vargas et al. (2016). Mouse neutrophil cells were extracted from mouse blood. The identity has been authenticated by STR profiling. All cell lines were tested negative for mycoplasma contamination.
 
-## Quantitative western blot analysis
+### Quantitative western blot analysis
 
 Quantitative western blots were performed using 12% SDS gels. To determine actin and profilin amounts per cell, purified actin and profilin references of known concentration were titrated into 1xPBS on the same gel as the cell lysate samples. The number of cells was counted by a Vi-CELL Viability Analyzer from Beckmann Coulter. Cells were lysed in 5 mM Tris–Cl pH 7.5, 150 mM NaCl, 1 mM EDTA, 1% Triton X-100 and 10 min of sonication. All protein samples were prepared in 1x Laemmli sample loading buffer (Cold Spring Harbor Protocols, 2007). Precision Plus Protein Standard All Blue (Biorad) was used as a molecular weight marker. SDS Gel electrophoresis was performed in Tris-Glycine buffer and proteins were transferred onto a PVDF membrane (Merck Chemicals). After protein transfer membranes were blocked with Odyssey TBS blocking solution (LI-COR Biosciences) for 1 hr at RT and probed with one of the following antibodies: monoclonal mouse anti – actin (1:1000, #MA5-11869 ThermoFisher)/profilin1 (1:20000, #061M4892 Sigma)/profilin2 (1:20000, #sc-100955 Santa Cruz) and monoclonal rabbit anti - GAPDH(14C10) (1:5000, #2118) as primary antibodies. As secondary antibody infrared labeled - donkey anti-mouse and donkey anti-rabbit were used (1:10000, #925–32212, #926–68073 LI-iCOR). All antibodies were incubated for 1 hr at RT and the membrane was washed with TBS-T (TBS + 0.05% Tween20) in between. The antibody signal was visualized by fluorescence detection on a LI-COR Odyssey CLx imaging system.
 
-## Cell volume measurements fluorescence eXclusion
+### Cell volume measurements fluorescence eXclusion
 
 Cell volumes were determined for different cell lines and primary cells as outlined in the text. Measurements were performed as described in Cadart et al. (2017) for all cell types in suspension or attached to a glass surface using fibronectin.
 
-## Single molecule visualization of formins in cells
+### Single molecule visualization of formins in cells
 
 Constitutively active fragments of mDia1 FH1-2 (aa 548–1154) and mDia2 FH1-2 (aa 515–1013) were cloned with an N-terminal mNeonGreen sequence in a pΔCMV vector.
 
@@ -203,76 +503,136 @@ For either cell type after 18 hr after transfection (HT1080) or initial passage 
 
 Control experiments were performed incubating the cells with either 500 nM latrunculin B, 10 μM Y-27632 or 8 μM JASP (Peng et al., 2011). Imaging was performed either immediately before or 10 min after drug treatment.
 
-## Overexpression of profilin1 and β - actin in HT1080 cells
+### Overexpression of profilin1 and β - actin in HT1080 cells
 
 Polyclonal HT1080 cell lines were generated using the PiggyBac system according to System Bioscience protocols. For profilin-actin overexpression, the following sequences were cloned in a pBP-CAG vector: human β-actin–P2A–mScaletI–T2A–human profilin1 via Gibson assembly.
 
 After transfection of a construct containing the sequence: actin-P2A-mScarletI-T2A-profilin1, transgenetic cells were selected using puromycin (1 μg/ml) followed by cell sorting through a flow cytometer (BD FACSAria). The distinct sub-populations of the cells were sorted according to their fluorescence intensity and then grown separately. Quantitative western blot analysis was performed to measure the profilin1 and β-actin amounts in these distinct cell populations. We did not detect any actin-containing proteins of larger molecular weight that could potentially result from ribosomal read-through (Figure 6F), presumably because of actin’s stringent folding requirements.
 
-## Quantification and statistical data analysis
+### Quantification and statistical data analysis
 
 All analyzed data were plotted and fitted in Origin9.0G. All microscopy experiments were analyzed in ImageJ either manually via kymograph analysis or automated by using the TrackMate plugin (Tinevez et al., 2017) unless otherwise described.
 
-## Profilin binding affinity for actin monomers by fluorescence anisotropy competition experiments
+#### Profilin binding affinity for actin monomers by fluorescence anisotropy competition experiments
 
 To determine the equilibrium dissociation constant of profilin (wt or mutant proteins) and actin monomers from competition with another protein (the WCA domain of WAVE1) that binds to actin monomer with known affinity, the mean anisotropy values were plotted against the increasing total profilin concentration [nM]. Mean values were calculated from at least three measurements in three individual experiments per condition, error bars demonstrate the SD. The anisotropy data were fitted by an competitive binding model as described in Wang (1995) that analytically solves for the concentrations of the bound and free species from the known total concentrations of all proteins and the equilibrium dissociation constants for each of the two competing ligands:
 
-(anisotropy as a function of the concentration of the profilin-actin complex):(1)r=  rf+(rb-rf)[PA]
+(anisotropy as a function of the concentration of the profilin-actin complex):
+
+$$
+r=r_{f}+(r_{b}-r_{f})[PA]
+$$
 
 The concentration of the profilin-actin complex can be determined from:
 
-(concentration of the profilin:actin complex):(2)PA=P0(2a2-3b cos⁡θ3-a)3KP+(2a2-3b cos⁡θ3-a)and
+(concentration of the profilin:actin complex):
 
-(concentration of the WAVE1-WCA:actin complex):(3)WA=W0(2a2-3b cos⁡θ3-a)3KW+(2a2-3b cos⁡θ3-a)with(4) θ=cos-1⁡ -2a3+9a-27c2  (a2-3b)3and(5)a= KP+KW+[P]0+[W]0-[A]0and(6)b=KPW0-A0+KWP0-A0+KPKWand(7)c=-KPKW[A]0with [A]0 being the total actin concentration, [P]0 the total concentration of profilin, [W]0 the total concentration of Atto488-WAVE1(WCA,) KP the equilibrium dissociation constant for the interaction between profilin and actin and KW the equilibrium dissociation constant for the interaction between Atto488-WAVE1(WCA,) and actin.
+$$
+PA=\frac{P_{0}(2\sqrt{a^{2}-3b}cos⁡\frac{\theta}{3}-a)}{3K_{P}+(2\sqrt{a^{2}-3b}cos⁡\frac{\theta}{3}-a)}
+$$
 
-## Thymosin-β4 binding affinity for actin monomers by fluorescence measurements
+and
 
-To determine the equilibrium dissociation constant of thymosin-β4, the mean decrease in fluorescence intensity [au] was plotted against the increasing total thymosin-β4 concentration. Mean values were calculated from at least three measurements in three individual experiments per condition, error bars demonstrate the SD. These data were fitted to a quadratic binding model as described in Zalevsky et al. (2001):(8)I= If+(Ib-If)(KD+A+[T])-(KD+A+[T])2-4[A][T]2[T]
+(concentration of the WAVE1-WCA:actin complex):
+
+$$
+WA=\frac{W_{0}(2\sqrt{a^{2}-3b}cos⁡\frac{\theta}{3}-a)}{3K_{W}+(2\sqrt{a^{2}-3b}cos⁡\frac{\theta}{3}-a)}
+$$
+
+with
+
+$$
+\theta=cos^{-1}⁡\frac{-2a^{3}+9a-27c}{2\sqrt{(a^{2}-3b)^{3}}}
+$$
+
+and
+
+$$
+a=K_{P}+K_{W}+[P]_{0}+[W]_{0}-[A]_{0}
+$$
+
+and
+
+$$
+b=K_{P}W_{0}-A_{0}+K_{W}P_{0}-A_{0}+K_{P}K_{W}
+$$
+
+and
+
+$$
+c=-K_{P}K_{W}[A]_{0}
+$$
+
+with [A]0 being the total actin concentration, [P]0 the total concentration of profilin, [W]0 the total concentration of Atto488-WAVE1(WCA,) KP the equilibrium dissociation constant for the interaction between profilin and actin and KW the equilibrium dissociation constant for the interaction between Atto488-WAVE1(WCA,) and actin.
+
+#### Thymosin-β4 binding affinity for actin monomers by fluorescence measurements
+
+To determine the equilibrium dissociation constant of thymosin-β4, the mean decrease in fluorescence intensity [au] was plotted against the increasing total thymosin-β4 concentration. Mean values were calculated from at least three measurements in three individual experiments per condition, error bars demonstrate the SD. These data were fitted to a quadratic binding model as described in Zalevsky et al. (2001):
+
+$$
+I=I_{f}+(I_{b}-I_{f})\frac{(K_{D}+A+[T])-\sqrt{(K_{D}+A+[T])^{2}-4[A][T]}}{2[T]}
+$$
 
 With [A] being the total concentration of IEDANS-labeled actin, [T] the total concentration of thymosin-β4, If and Ib the fluorescent intensities in the free and bound state, respectively and KD being the equilibrium dissociation constant.
 
-## Calculations of free species
+#### Calculations of free species
 
 To calculate the free actin, profilin, thymosin-β4 (if added) and profilin-actin complex concentrations from the total concentration of actin, profilin and (if added) thymosin-β4 in our TIRF-M single filament assays (see Figure 2—figure supplement 1B), we used an exact two species competition model as described in Wang (1995) and above (see Profilin binding affinity for actin monomers by fluorescence anisotropy competition experiments).
 
-## Stopped flow measurements
+#### Stopped flow measurements
 
-For the determination of the association rate constant for profilin binding to actin monomers by tryptophan fluorescence quenching, the decrease in tryptophan fluorescence [au] was plotted against the total profilin concentration [μM]. The data were fitted with the following mono-exponential decay function to determine kobs:(9)It= (If-Ib)*e-kobsx+Ib
+For the determination of the association rate constant for profilin binding to actin monomers by tryptophan fluorescence quenching, the decrease in tryptophan fluorescence [au] was plotted against the total profilin concentration [μM]. The data were fitted with the following mono-exponential decay function to determine kobs:
+
+$$
+It=(I_{f}-I_{b})*e^{-k_{obs}x}+I_{b}
+$$
 
 With I(t) the measured fluorescent intensity over time, If and Ib the tryptophan fluorescence in the free and bound state respectively and kobs being the observed reaction rate.
 
-The association rate constants (kon) were determined from linear regression fits of the kobs values as function of the total profilin concentration. The dissociation rate constants (koff) were calculated from equilibrium dissociation constants (KD) and association rate constants (kon) using the following equation:(10)koff= KD*kon
+The association rate constants (kon) were determined from linear regression fits of the kobs values as function of the total profilin concentration. The dissociation rate constants (koff) were calculated from equilibrium dissociation constants (KD) and association rate constants (kon) using the following equation:
+
+$$
+k_{off}=K_{D}*k_{on}
+$$
 
 Errors for the dissociation rate constants were calculated using error propagation.
 
-## Quantitative western blot analysis of total profilin and actin concentrations
+#### Quantitative western blot analysis of total profilin and actin concentrations
 
-Actin and profilin protein amounts per cell were quantified by western blot analysis using fluorescently-labeled secondary antibodies using a Odyssey Imaging System (LI-COR Biotechnology). The fluorescence signal intensity of the protein bands was analyzed from membrane scans using ImageJ. First, the detected intensity area was selected with the rectangular tool, for each protein intensity band (cellular protein and reference protein) an equal sized area was selected. Next, all lanes were plotted in an intensity plot profile reflecting the pixels across the selected area using the command plot lanes. The background signal intensity was subtracted from the protein intensity profile by drawing a straight baseline through the intensity curve representing the background intensity to the left and right of the curve. Then, the signal intensity (represented as the area under the intensity profile) was measured by selecting the tracing tool and clicking anywhere under the curve to integrate the intensity signal of the area of the plot profile. The measured intensities of the reference protein samples were plotted against the loaded protein mass [ng] and fitted with a linear function. The mass of the protein of interest was then calculated based on the slope of the reference protein. Finally, the protein concentration of actin/profilin was calculated as follows:(11)protein concentration=protein massmolecular weight*0.5*cell volume
+Actin and profilin protein amounts per cell were quantified by western blot analysis using fluorescently-labeled secondary antibodies using a Odyssey Imaging System (LI-COR Biotechnology). The fluorescence signal intensity of the protein bands was analyzed from membrane scans using ImageJ. First, the detected intensity area was selected with the rectangular tool, for each protein intensity band (cellular protein and reference protein) an equal sized area was selected. Next, all lanes were plotted in an intensity plot profile reflecting the pixels across the selected area using the command plot lanes. The background signal intensity was subtracted from the protein intensity profile by drawing a straight baseline through the intensity curve representing the background intensity to the left and right of the curve. Then, the signal intensity (represented as the area under the intensity profile) was measured by selecting the tracing tool and clicking anywhere under the curve to integrate the intensity signal of the area of the plot profile. The measured intensities of the reference protein samples were plotted against the loaded protein mass [ng] and fitted with a linear function. The mass of the protein of interest was then calculated based on the slope of the reference protein. Finally, the protein concentration of actin/profilin was calculated as follows:
+
+$$
+proteinconcentration=\frac{proteinmass}{molecularweight*0.5*cellvolume}
+$$
 
 We assumed only half of the total cellular volume because actin and profilin are excluded from the endomembrane system (ER, Golgi, Mitochondria etc.) that occupies roughly 50% of the cell as measured by tomography methods. This means that in the most extreme case (all of the cell volume can be explored by profilin/actin), we are overestimating protein concentration by maximally 2-fold.
 
 Because of the high affinity between ATP-bound monomers and profilin, we assumed that the cellular profilin-actin concentration must be close to the total profilin concentration. This is realistic as long as: i) the concentration of soluble ATP-bound actin is in excess over profilin so that profilin can be saturated with monomers, ii) the interaction between actin monomers and profilin is sufficiently rapid to approach thermodynamic equilibrium and iii) no other tight monomer binding proteins exist at high enough concentrations to effectively compete with profilin for actin monomer binding. While not all of these assumptions might strictly hold in the cellular environment, we believe that they still constitute reasonable approximations.
 
-## Quantification of soluble profilin and actin concentrations
+#### Quantification of soluble profilin and actin concentrations
 
 HT1080 wt and profilin/actin overexpressing cells were subjected to rapid pharmacological actin arrest as established in Peng et al. (2011). Briefly, cells were treated with cell media containing 20 μM Y-27632 for 15 min at 37°C followed by the addition of 10 μM jasplakinolide and 15 μM latrunculin B (final concentration). Cells were treated independently with either jasplakinolide or latrunculin B only as controls.
 
 After additional 20 min incubation, the cell medium was removed and the cells were lysed in lysis buffer (50 mM Tris pH 7.5, 150 mM NaCl, 1% Triton x-100, 1 mM MgCl2, 1 mM ATP, 1x protein inhibitor cocktail) for 5 min at 37°C. The cell lysate was initially centrifuged at 350xg for 5 min and the supernatant was separated into soluble and non-soluble/filamentous fractions by ultracentrifugation at 100.000xg and 15°C for 40 min. Next, the supernatant and pellet fractions were subjected to SDS-PAGE and further analyzed by western blot. Based on detected antibody signal intensity, fractions [% of total] of proteins in either the pellet or supernatant for both profilin and actin were quantified. Absolute soluble and filamentous protein concentrations were calculated from these fractional values and the total protein concentrations that were measured independently (see previous section). Errors are determined by error propagation.
 
-## Cell volume measurements by fluorescence eXclusion
+#### Cell volume measurements by fluorescence eXclusion
 
 Data analysis was performed using custom written codes for MATLAB 2017b software written by QuantaCell. First, the raw GFP images were normalized following a manual cell tracking as it has been described earlier from Cadart et al. (2017). For each cell type we analyzed ≥300 single cells. The cell volume distribution was plotted as a histogram and a lognormal distribution curve was fitted to the histogram. The mean volume [μm3] and the error (SD) for each cell type was calculated.
 
-## Barbed end elongation velocity from single filaments by TIRF-microscopy
+#### Barbed end elongation velocity from single filaments by TIRF-microscopy
 
-Images were analyzed by manual filament tracking using the segmented line tool from ImageJ and further analyzed by the kymograph plugin. The slopes were measured to determine the polymerization rate of individual actin filaments. The pixel size/length was converted into microns/s. One actin monomer contributes to 2.7 nm of the actin filament length. For each experimental condition, the filament polymerization velocity was measured from ≥40 filaments from three independent experiments per condition and are reported as mean values with error bars representing SD. The elongation speed as a function of the total profilin-actin concentration were fitted by a hyperbolic model:(12)v[PA]=vmax[PA]K0.5+[PA]
+Images were analyzed by manual filament tracking using the segmented line tool from ImageJ and further analyzed by the kymograph plugin. The slopes were measured to determine the polymerization rate of individual actin filaments. The pixel size/length was converted into microns/s. One actin monomer contributes to 2.7 nm of the actin filament length. For each experimental condition, the filament polymerization velocity was measured from ≥40 filaments from three independent experiments per condition and are reported as mean values with error bars representing SD. The elongation speed as a function of the total profilin-actin concentration were fitted by a hyperbolic model:
+
+$$
+v[PA]=\frac{v_{max}[PA]}{K_{0.5}+[PA]}
+$$
 
 With [PA] being the total profilin-actin concentration, vmax the maximal filament polymerization velocity at saturated profilin-actin concentrations and K0.5 the profilin-actin concentration at half-maximal elongation speed.
 
-## Velocity of single formin molecules in vivo
+#### Velocity of single formin molecules in vivo
 
 Data analysis was performed by manual filament tracking with the segmented line tool from ImageJ. Further, slopes from kymographs were measured to determine the moving rate of individual formins. The pixel size/length was converted into microns/s. One actin monomer contributes to 2.7 nm of the actin filament length. For each experimental condition ≥10 cells and ≥35 single molecules per cell were analyzed. Total number of molecules analyzed per condition was ≥650. All mean speed values were plotted as a histogram and fitted with a Gaussian function.
 
-## Control experiments for single formin molecule in vivo imaging
+#### Control experiments for single formin molecule in vivo imaging
 
 HT1080 cells were seeded into 6-well LabTek dishes and transfected with a mNeongreen-tagged mDia2FH1-2 construct (see previous sections). 12–16 hr post-transfection, single formin molecules were either imaged in living cells or after cell lysis in 50 mM Tris pH 7.5, 150 mM NaCl, 1% Triton x-100 (~40.000 cells in 200 μl lysis buffer). Serial dilutions of cell lysate were added to a clean glass slide. All samples were imaged under the same imaging conditions (laser power, exposure time etc.) Intensity distributions and bleaching traces were analyzed using the TrackMate plugin from ImageJ.

@@ -30,17 +30,33 @@ Lineage transformation between lung cancer subtypes is a poorly understood pheno
 
 Lung cancer, the leading cause of cancer-related mortality worldwide, is divided into two main histological classes, small cell lung cancer (SCLC) and non-small cell lung cancer (NSCLC). SCLC is notable due to its highly aggressive and lethal clinical course, defined by rapid tumor growth, early dissemination, and metastasis (Gazdar et al., 2017). SCLC is a neuroendocrine (NE) tumor (Travis et al., 2015), and recent studies have demonstrated that it is a molecularly heterogeneous disease comprising discrete tumor subtypes defined by expression of different transcriptional regulators, namely achaete-scute homolog 1 (ASCL1) and neurogenic differentiation factor 1 (NEUROD1), which together account for approximately 80% of SCLC cases (Borromeo et al., 2016; Rudin et al., 2019). ASCL1 and NEUROD1, along with insulinoma-associated protein 1 (INSM1) and POU class 3 homeobox 2 (BRN2), are recognized as important master regulators for NE differentiation in SCLC (Rudin et al., 2019; Fujino et al., 2015; Ishii et al., 2013). Besides NE differentiation, SCLC is further distinguished from other major NSCLC subtypes such as lung adenocarcinoma (LUAD) and squamous cell carcinoma by its unique cellular morphology (Rudin et al., 2019) and genetic hallmarks including frequent inactivation of tumor suppressors TP53 and RB1 (Peifer et al., 2012; George et al., 2015). SCLC is also characterized by the absence of EGFR expression (Gamou et al., 1987) and low activity of the downstream mitogen-activated protein kinase (MAPK) pathway (Byers et al., 2012). Furthermore, activating alterations in EGFR and KRAS, which are highly prevalent in LUAD (Cancer Genome Atlas Research Network, 2014), are rarely identified in SCLC (Peifer et al., 2012; George et al., 2015) (Summarized in Figure 1a). Despite developing in the same organ and having exposure to the same etiological agent in most instances, no biological rationale aside from cell of origin has been provided to explain these divergent molecular characteristics. Therefore, elucidating the factors that underlie the selection of specific genetic drivers in different lineage contexts may yield insights toward the development and progression of these lung cancer types.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig1-v3.jpg)
+
+**Figure 1.:** (a) Overview of representative somatic alterations, protein expression profiles, MAPK pathway activity, and neuroendocrine differentiation in small cell lung cancer (SCLC), lung adenocarcinoma (LUAD), and transformed SCLC from EGFR-mutated LUAD. (b) Induction of EGFRL858R or KRASG12V as assessed by western blot and of GFP assessed by fluorescence phase contrast images in SCLC cell lines, H2107, H82, and H524 cells, upon treatment with 100 ng/mL doxycycline (dox) for 3 and 7 days. GAPDH was used as a loading control. (c) Photomicrographs showing the growing morphology in suspending aggregates of GFP-overexpressing H82 cells (left) and in mixed adherent and suspended states of EGFRL858R- (middle) or KRASG12V- (right) overexpressing H82 cells upon treatment with 100 ng/mL dox for 7 days. Yellow and white arrowheads indicate suspending aggregates and adherent cells, respectively. Scale bars, 400 μm. (d) Crystal violet assay of adherent cells with or without induction of GFP, EGFRL858R, or KRASG12V in H2107 (on day 7), H82 (on day 7), and H524 (on day 5) cells. Medium containing suspended cells was removed, and adherent cells were washed with PBS and then fixed and stained with crystal violet. (e) Quantification of cell attachment after GFP, EGFRL858R, or KRASG12V induction in H2107 (on day 7), H82 (on day 7), and H524 (on day 5) cells. After incubation, medium containing suspended cells was removed and adherent cells were washed with PBS. Adherent cells were then cultured in fresh media and viability was assessed using an alamarBlue cell viability agent. Values relative to a no dox control for each cell line are graphed as mean (three biological replicates) ± SEM. The Student’s t test, ****p<0.0001; **p<0.01; and *p<0.05. (f) Representative immunoblot showing the effects of induction of GFP, EGFRL858R, or KRASG12V on neuroendocrine markers as well as phosphorylation status of ERK and AKT upon treatment with 100 ng/mL dox for 3 and 7 days in H2107, H82, and H524 cells. GAPDH was used as a loading control. Numbers below blots show the amounts of respective band relative to the corresponding non-dox-treated control values after normalization to ERK1/2 (for pERK1/2) or GAPDH (for INSM1, BRN2, ASCL1, NEUROD1, CD56, SYP, and MYC) in each condition for each cell line. (g) Gene set enrichment analysis (GSEA) neuroendocrine differentiation scores of H2107-KRASG12V and H82-KRASG12V cells pre- and post-dox treatment (day 7). (h) Enrichment plots of the 50-gene lung-cancer-specific neuroendocrine expression signature gene sets in H2107-KRASG12V and H82-KRASG12V cells post-dox treatment for 7 days compared with GFP-overexpressing controls. Immunoblots are representative of at least two biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Western blot of phospho-EGFR, EGFR, and neuroendocrine markers in human lung cancer cell lines (N = 20). Lysates from the large cell carcinoma with neuroendocrine differentiation cell line, H1155, were used as a positive control for NE marker expression except for ASCL1. Lysates from the small cell lung cancer cell line, H2107, were used as a positive control for ASCL1. GAPDH was used as a loading control. (b) Frequencies of KRAS and EGFR mutations and copy number alterations among patients with lung adenocarcinoma, lung squamous cell carcinoma, and small cell lung cancer analyzed using data collected from cBioPortal.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Photomicrographs of adherent H2107 cells after transduction of EGFRL858R or KRASG12V upon treatment with 100 ng/mL doxycycline (dox) for 7 days. White arrowheads indicate cell aggregates which sunk on the bottom of culture dishes and are becoming an adherent state. Diffusely distributed adherent cells after KRASG12V transduction are also shown (right). Scale bars, 400 μm. (b) Cell viability of H2107, H82, and H524 cells with or without GFP, EGFRL858R, or KRASG12V transduction. Values relative to day 0 (top) and relative to a no dox control at the same time point (bottom) are plotted. Bars represent mean (three biological replicates) ± SEM. One-way ANOVA with Holm’s adjustment, ***p<0.001; **p<0.01; and *p<0.05. (c) Cell numbers with or without GFP, EGFRL858R, or KRASG12V transduction on day 8 (H2107), day 5 (H82), and day 7 (H524) after seeding. Values relative to a no dox control for each condition are graphed as mean (three biological replicates) ± SEM. The Student’s t test, ****p<0.0001; ***p<0.001; **p<0.01; and *p<0.05. (d) Soft agar assay in H2107, H82, and H524 cells transduced with GFP or KRASG12V. Cell viabilities in colony formation relative to a no dox control for each condition are shown. Bars represent mean (three biological replicates) ± SEM. Statistical significance was evaluated using an unpaired two-tailed t test. (e) Western blot of cleaved PARP after transduction of GFP, EGFRL858R, or KRASG12V for 3 and 7 days in small cell lung cancer cell lines. GAPDH was used as a loading control. Numbers below the cleaved PARP blots indicate the amounts of cleaved PARP relative to the corresponding non-dox-treated control values after normalization to GAPDH in each condition for each cell line. (f) GSEA analysis showing enrichment of a MYC target gene set that is downregulated in H82-KRASG12V cells vs. H82-GFP cells treated with 100 ng/mL dox for 7 days. (g) Western blot of YAP1 in SCLC cell lines with or without induction of KRASG12V for 7 days. G12V mutant-specific RAS expression was confirmed. Lysates from H460 were used as a positive control for YAP1. GAPDH was used as a loading control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Western blot of G12V mutant RAS in single cell-derived clones of KRASG12V-transduced H82 and H524 cells (top). β-Actin was used as a loading control. Photomicrographs (middle and bottom) show the growing morphology of single cell-derived clones of KRASG12V-transduced H82 and H524 cells. Yellow and white arrowheads indicate suspending aggregates and adherent cells, respectively. Scale bars, 400 μm. (b) Western blot of G12V mutant RAS, ERK, and neuroendocrine factors in KRASG12V-transceduced H2107, H82, and H524 cells. Cells were treated with 100 ng/mL doxycycline (dox) for 3 and 28 days, and lysates from adherent, suspended, or mixed population of cells at each time point were applied for the analysis separately. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values (set to lane one in each cell line panel) after normalization to ERK1/2 (for pERK1/2) or GAPDH (for INSM1, BRN2, ASCL1, NEUROD1, and SYP).
+
 In contrast to SCLC, for which no major treatment breakthroughs have been made in the last two decades, LUAD treatment has greatly benefitted from targeted therapies for driver oncogenes, highlighted by the success of those inhibiting EGFR-mutant tumors (Maemondo et al., 2010; Soria et al., 2018). However, resistance to molecular targeted therapy is inevitable and long-term cures remain elusive. Histological transformation from LUAD to SCLC (Memorial Sloan-Kettering Cancer Center Lung Cancer OncoGenome Group et al., 2006) occurs in 5–15% of cases with acquired resistance to EGFR tyrosine kinase inhibitors (TKIs) (Sequist et al., 2011; Westover et al., 2018), typically after a long duration (median ≥13 months) of TKI treatment (Ferrer et al., 2019; Offin et al., 2019). This lineage transition may become a more prominent and important resistance mechanism in the future with the approval of the third-generation EGFR-TKI osimertinib (Leonetti et al., 2019) as a first-line therapy, as this drug has better on-target inhibition and overcomes the most common resistance mechanism to earlier generation EGFR-TKIs, the T790M mutation (Mok et al., 2017), and provides longer progression-free survival (Soria et al., 2018). EGFR-mutant LUADs undergoing TKI treatment are known to be at unique risk of histological transformation to SCLC (Ferrer et al., 2019) particularly when p53 and RB are concurrently inactivated (Offin et al., 2019; Niederst et al., 2015; Lee et al., 2017). Surprisingly, EGFR-mutant tumors lose EGFR protein expression (Niederst et al., 2015) after small cell transformation, mimicking de novo SCLC, despite retaining the initial activating mutation in EGFR (Ferrer et al., 2019; Niederst et al., 2015). Furthermore, TKI-resistant EGFR-mutant LUADs that have undergone SCLC transformation typically lack the acquisition of other genetic alterations associated with TKI resistance that are known to reactivate MAPK signaling (Roper et al., 2020). However, the biological mechanisms regulating the SCLC transformation process remain unknown, because no in vitro or in vivo model systems have been established to date that enable the comprehensive study of this phenomenon.
 
 Based on the above observations, and that SCLC-transformed LUAD resembles de novo SCLC in terms of molecular features, we hypothesized that there is a unique interplay between MAPK signaling and suppression of NE differentiation in lung cancer. Further, we anticipated that understanding this interplay would reveal the factors that underpin the selection of specific genetic alterations in the development of the different lung cancer subtypes and acquisition of drug resistance. Therefore, we aimed to investigate the consequences of LUAD oncogene expression and activation of MAPK pathway signaling in SCLC cells in order to potentially provide mechanistic insight into the programs driving small cell lineage transformation in the context of EGFR-TKI resistance.
 
 ## Results
 
-## Mutually exclusive association between MAPK activation and NE marker expression in lung cancer
+### Mutually exclusive association between MAPK activation and NE marker expression in lung cancer
 
 Previous studies have demonstrated that SCLC and LUAD differ in their expression and activation of MAPK signaling components, and that SCLC-transformed LUAD loses EGFR expression. To first assess the relationship between EGFR status and NE marker expression in lung cancer, we performed western blot analysis across a diverse panel of lung cancer cell lines. Lysates from eight EGFR-mutant, four KRAS-mutant, and two EGFR/KRAS wild-type LUAD, as well as two large cell carcinoma and four SCLC cell lines were assessed (Figure 1—figure supplement 1a). All the SCLC cell lines completely lacked EGFR protein expression and a large cell carcinoma with NE differentiation cell line, H1155, weakly expressed EGFR, whereas all other cell lines universally expressed high levels of EGFR. Inversely, expression of four NE transcription factors (TFs) – INSM1, BRN2, ASCL1, and NEUROD1 – as well as NE markers CD56 and synaptophysin (SYP) were largely specific to SCLC cell lines. Thus, there was a clear inverse association between NE differentiation and EGFR expression in lung cancer. We also observed a mutually exclusive expression pattern between ASCL1 and NEUROD1 in the five NE cell lines, whereas INSM1 and BRN2 were broadly expressed in these cell lines (Figure 1—figure supplement 1a). We next explored mutation and copy number alteration status of KRAS and EGFR using publicly available whole-genome sequencing, whole-exome sequencing, and The Cancer Genome Atlas (TCGA) data sets. As reported (Peifer et al., 2012; George et al., 2015), the prevalence of genomic alterations in these two oncogenes in SCLC was low. In particular, genomic alterations in the KRAS gene were never identified in SCLC (Figure 1—figure supplement 1b).
 
-## Expression of mutant KRAS or EGFR in SCLC induces trans-differentiation into a NSCLC-like state with suppressed NE differentiation
+### Expression of mutant KRAS or EGFR in SCLC induces trans-differentiation into a NSCLC-like state with suppressed NE differentiation
 
 To determine whether the inverse association between MAPK activity and NE differentiation is due to differences in cell of origin for the specific cancer types or instead attributed to the direct signaling pathways regulated by the mutated oncogenes, we conditionally expressed either EGFRL858R or KRASG12V, which are the most prevalent drivers in LUAD (Cancer Genome Atlas Research Network, 2014), as well as a GFP control in three SCLC cell lines; H2107 (ASCL1-high; SCLC-A Rudin et al., 2019), H82 (NEUROD1-high; SCLC-N Rudin et al., 2019), and H524 (SCLC-N). Western blots confirmed successful induction of these oncoproteins under the tight control of an inducible TetO promoter using doxycycline (Figure 1b). Consistent with the results shown in previous reports (Falco et al., 1990; Calbo et al., 2011) in which HRAS or RASV12 were retrovirally transduced in SCLC cell lines, the SCLC-N cell lines both demonstrated a phenotypic transition from a suspended to adherent state after KRASG12V induction, with the most striking change occurring in H82 cells (Figure 1c–e). However, in contrast to a previous study where the cell lines representing the classic subtype of SCLC, which are currently classified as SCLC-A (Rudin et al., 2019), showed no discernible phenotypic changes in response to HRAS expression (Mabry et al., 1988), we found that H2107 SCLC-A cells also demonstrated this phenotypic transition (Figure 1d and e). While EGFRL858R transduction also induced a shift to an adherent state in H2107 and H82 cells, this growth pattern was more modest than that observed with KRASG12V (Figure 1d and e). Furthermore, the phenotypic effect of EGFRL858R expression was temporally delayed compared to KRASG12V with cells forming suspension clusters first, then subsequently migrating to become adherent, whereas KRASG12V induced direct formation of adherent cells that were diffusely distributed (Figure 1d and Figure 1—figure supplement 2a). The impact of oncogene induction on cell viability was also assessed, and we observed variable effects across the three cell lines (Figure 1—figure supplement 2b and c). Concordant with the positive effect of KRASG12V on cell viability in H82 cells, forced expression of KRASG12V increased anchorage-independent growth in soft agar (Figure 1—figure supplement 2d). There was a clear increase in cleaved PARP after doxycycline treatment in H2107 cells (both EGFRL858R and KRASG12V) as well as in H524 cells (EGFRL858R), suggesting that cell death, at least partially, accounts for the decreased cellular viability in these cells (Figure 1—figure supplement 2e).
 
@@ -50,29 +66,53 @@ Recent evidence has demonstrated that MYC can dynamically drive a shift of maste
 
 We noted that mutant EGFR or KRAS-induced SCLC cell lines showed a mixed phenotype comprising both suspended and adherent cells after doxycycline treatment. Thus, we asked whether this heterogeneity in growth pattern was derived from the polyclonal nature of transduced cells. To address this, we established single cell-derived clones and found that clonal cells also showed a mixture of adherent and suspended cells after KRASG12V induction (Figure 1—figure supplement 3a). We also profiled the expression status of the NE factors in adherent, suspended, or mixed populations, separately, in the subacute (doxycycline day 3) and chronic (doxycycline day 28) phases after KRASG12V induction using polyclonal cells (Figure 1—figure supplement 3b). Despite relatively similar induced levels of KRASG12V as well as phospho-ERK1/2 in the subacute phase, adherent cells lost NE factors to a greater degree than suspended cells. In terms of the growth state, isolated adherent cells gave rise to both adherent and suspended cells after serial passages under doxycycline treatment; however, the proportion of adherent cells became lower with each passage, with a dramatic reduction observed after 2 weeks. Nonetheless, NE markers were still suppressed in the remaining adherent cell population. Importantly, isolated suspended cells did not give rise to adherent cells after serial passages and KRASG12V expression was highly attenuated in this subset of cells, even in H82 cells in which forced expression of mutant-KRAS exhibited an advantageous effect on cell proliferation. This suggests negative selection of KRASG12V-positive cells or epigenetic silencing of transduced KRASG12V in the long-term (28 day) culture driven by the incompatibility of KRAS activation in SCLC biology. Together, these data suggest that constitutive activation of MAPK pathway by mutant KRAS and EGFR affects the growth phenotype and suppresses NE differentiation program in SCLC in a heterogenous manner.
 
-## ERK activation inhibits expression of NETFs in SCLC
+### ERK activation inhibits expression of NETFs in SCLC
 
 ERK is the central pathway node of MAPK signaling and acts to phosphorylate hundreds of downstream targets and control many fundamental cellular processes (Yoon and Seger, 2006). Thus, we hypothesized that ERK may be the main mediator of the multiple effects observed in SCLC cells after mutant EGFR or KRAS induction. This was suggested by the differential effects of mutant EGFR versus mutant KRAS transduction in SCLC cells, where the latter induced more prominent changes and was associated with increased levels of phospho-ERK1/2 (Figure 1f). We tested this by treating TetO-KRASG12V-transduced SCLC cells with an ERK1/2 inhibitor, SCH772984, and found that this compound rescued the suppression of NETFs after doxycycline induction (Figure 2a). To confirm that this rescue was not attributed to off-target effects of SCH772984, we also performed genetic knockdown of either ERK1 (MAPK3), ERK2 (MAPK1), or both. As shown in Figure 2b, expression of NE factors was restored by transfection of siRNAs targeting ERK2 but not ERK1, indicating that ERK2 is a dominant node mediating this process. ERK1 knockdown likely augmented ERK2 activity by disruption of negative feedback signaling as previously described (Unni et al., 2018), and therefore did not restore the repressed NE factors when inhibited alone.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-v3.jpg)
+
+**Figure 2.:** (a) Western blot showing the ERK inhibitor (SCH772984 [1 μM])-mediated restoration of neuroendocrine transcription factors that are repressed by KRASG12V induction in small cell lung cancer cell lines H2107, H82, and H524. Cells were treated with indicated agents for 72 hr. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-doxycycline (dox)-treated and non-SCH772984-treated (DMSO-treated) control values (set to one in each cell line panel) after normalization to GAPDH. (b) Western blot demonstrating the effects of KRASG12V induction and treatment with siRNA pools targeting ERK1, ERK2, or both on expression of neuroendocrine transcription factors in the small cell lung cancer cell lines. Cells were treated with 100 ng/mL dox and indicated siRNAs for 72 hr. Scrambled siRNA (siScr) was used as a negative control. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and non-siRNA-treated control values (set to one in each cell line panel) after normalization to GAPDH. (c) Western blot showing the effects of AKT inhibition using MK-2206 (10 μM) on expression of neuroendocrine factors that are suppressed by KRASG12V in the small cell lung cancer cell lines. Cells were treated with indicated agents for 72 hr. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and non-MK-2206-treated (DMSO-treated) control values (set to one in each cell line panel) after normalization to GAPDH. Immunoblots are representative of at least two biological replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Crystal violet staining of adherent cells with or without KRASG12V induction in H2107, H82, and H524 cells. Cells were treated with 1 μM SCH772984 and/or 10 μM MK-2206 for 72 hr. After incubation, medium containing cells in suspension was aspirated, and adherent cells were washed with PBS, fixed, and stained with crystal violet. (b) Quantification of viability of adherent cells after KRASG12V induction with or without 1 μM SCH772984 and/or 10 μM MK-2206 for 72 hr in H2107, H82, and H524 cells. After incubation, medium containing non-adherent cells were aspirated and media containing dox and/or the indicated drugs was replaced. Cell viability of adherent cells was evaluated using an alamarBlue cell viability agent. Values relative to a dox-treated and non-drug-treated (DMSO-treated) control for each cell line are graphed as mean (three biological replicates) ± SEM. One-way ANOVA with Holm’s adjustment, ****p<0.0001; ***p<0.001; and **p<0.01. (c) Viability of whole population of cells (both suspended and adherent cells) after KRASG12V induction with or without 1 μM SCH772984 and/or 10 μM MK-2206 for 72 hr in H2107, H82, and H524 cells. Cell viability was evaluated using an alamarBlue cell viability agent. Values relative to a dox-treated and non-drug-treated (DMSO-treated) control for each cell line are graphed as mean (three biological replicates) ± SEM. One-way ANOVA with Holm’s adjustment, ****p<0.0001; ***p<0.001; **p<0.01; and *p<0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Crystal violet staining of adherent cells with or without KRASG12V induction in H2107, H82, and H524 cells. Cells were treated with 5 μM SB-747651A and/or 10 μM MK-2206 for 72 hr. After incubation, media containing non-adherent cells was removed, and adherent cells were washed with PBS, fixed, and stained with crystal violet. (b) Quantification of viability of adherent cells after KRASG12V induction with or without 5 μM SB-747651A and/or 10 μM MK-2206 for 72 hr in H2107, H82, and H524 cells. After incubation, media containing non-adherent cells were removed and replaced with fresh media containing dox and/or the indicated drugs. Cell viability of adherent cells was evaluated using an alamarBlue cell viability agent. Values relative to a dox-treated and non-drug-treated (DMSO-treated) control for each cell line are graphed as mean (three biological replicates) ± SEM. One-way ANOVA with Holm’s adjustment, ****p<0.0001; ***p<0.001; **p<0.01; and *p<0.05. (c) Viability of whole population of cells (both suspended and adherent cells) after KRASG12V induction with or without 5 μM SB-747651A and/or 10 μM MK-2206 for 72 hr in H2107, H82, and H524 cells. Cell viability was evaluated using an alamarBlue cell viability agent. Values relative to a dox-treated and non-drug-treated (DMSO-treated) control for each cell line are graphed as mean (three biological replicates) ± SEM. One-way ANOVA with Holm’s adjustment, ****p<0.0001; ***p<0.001; **p<0.01; and *p<0.05.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Cells were treated with 100 ng/mL doxycycline (dox) as well as 5 μM SB-747651A or 0.1% DMSO for 72 hr. Lysates were subjected to Proteome Profiler Human Phospho-Kinase Array. Red squares indicate phosphoproteins whose expression levels were changed by treatment with SB-747651A.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Gene expression profiling in H2107 and H82 cells following KRASG12V transduction on day 1 and day 7. The numbers of genes upregulated (>1.5 fold) or downregulated (<0.67 fold) at each time point in comparison with corresponding GFP overexpression controls are indicated. HES1 is highlighted in red. (b) Numbers of genes upregulated (>1.5 fold) or downregulated (<0.67 fold) by EGFRL858R overexpression for 1 day and 7 days in comparison with GFP control in H2107 and H82 cells. (c) Western blot of NOTCH pathway proteins and HES1 after transduction of GFP, EGFRL858R, or KRASG12V for 3 and 7 days in small cell lung cancer cell lines. GAPDH was used as a loading control. FL, full-length; NTM, NOTCH transmembrane subunit. (d) Western blot showing effects of ERK inhibition using 1 μM SCH772984 on NOTCH pathway proteins and HES1 with or without KRASG12V transduction for 72 hr. GAPDH was used as a loading control. (e) Western blot of NOTCH pathway proteins, HES1, and neuroendocrine factors with or without KRASG12V transduction and inhibition of NOTCH signaling using 1 μM RO4929097 for 72 hr. GAPDH was used as a loading control. Numbers below the HES1 blots indicate the amounts of HES1 relative to the corresponding doxycycline (dox)-treated and non-RO4929097-treated (DMSO-treated) values (set to three in each cell line panel) after normalization to GAPDH. For other targets, numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and non-RO4929097-treated (DMSO-treated) control values (set to one in each cell line panel) after normalization to GAPDH. (f) Western blot showing effects of CRISPR/Cas9-mediated HES1 knockout on expression of neuroendocrine transcription factors that are suppressed by induction of KRASG12V for 72 hr. Two independent HES1-knockout polyclonal KRASG12V-inducible cells were used. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values after normalization to GAPDH in each condition for each cell line.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (a) Top 10 candidate transcription factors identified by Enrichr analysis for the regulation of genes upregulated or downregulated in KRASG12V-H2107 and -H82 cells in comparison with GFP control cells after 7 days treatment with 100 ng/mL doxycycline (dox). (b) Upregulated and downregulated genes by KRASG12V overexpression for 1 day and 7 days in comparison with a GFP overexpression control in H2107 and H82 cells. The numbers of genes upregulated (>1.5 fold) or downregulated (<0.67 fold) are indicated. REST and SOX9 are highlighted in red. (c) H2107-KRASG12V cells treated with 100 ng/mL dox and with an siRNA pool targeting REST or scrambled siRNA (Scr) for 72 hr were harvested and subjected to reverse transcription and quantitative real-time PCR analysis for REST (left). Beta-actin (ACTB) was used as a loading control. Expression levels of REST mRNA relative to a non-dox-treated and non-siRNA-treated control are shown. Bars represent mean (three biological replicates) ± SEM. Western blot (right) shows expression of neuroendocrine factors in H2107-KRASG12V cells treated with scrambled siRNA or siREST as well as 100 ng/mL dox for 72 hr. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and non-siRNA-treated control values (set to 1) after normalization to GAPDH. (d) Western blot of SOX2 and SOX9 after transduction of GFP, EGFRL858R, or KRASG12V for 3 and 7 days in H2107, H82, and H524 cells. GAPDH was used as a loading control. Numbers below blots indicate the amounts of each band relative to the corresponding non-dox-treated control values after normalization to GAPDH in each condition for each cell line. (e) Western blot of SOX9 with or without KRASG12V transduction and inhibition of ERK using 1 μM SCH772984 for 72 hr. GAPDH was used as a loading control. (f) Western blot showing effects of CRISPR/Cas9-mediated SOX9 knockout on expression of neuroendocrine transcription factors that are suppressed by induction of KRASG12V for 72 hr. Two independent SOX9-knockout polyclonal H2107- and H524-KRASG12V cells were used. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values after normalization to GAPDH in each condition for each cell line.
+
 In addition to MAPK, the phosphoinositide 3-kinase (PI3K)/AKT pathway is another major signaling arm-activated downstream of EGFR and RAS. Indeed, phospho-AKT levels were increased after oncogenic EGFR or KRAS induction in our model (Figure 1f). To test whether this pathway was also involved in suppression of NE factors in SCLC cells after oncogene induction, we treated KRASG12V-induced cells with an AKT-inhibitor, MK-2206. Despite near complete suppression of phosphorylated AKT with MK-2206, decreased NETF expression was still observed upon doxycycline treatment, suggesting that the PI3K/AKT pathway was not responsible for the NE dedifferentiation effects observed (Figure 2c).
 
-## ERK in combination with AKT activation drives phenotypic growth state change in SCLC after Oncogene induction
+### ERK in combination with AKT activation drives phenotypic growth state change in SCLC after Oncogene induction
 
 To assess mediators of the attached growth phenotype, we quantified cellular state and viability of KRASG12V-induced SCLC cells with or without SCH772984, MK-2206, or combination of these drugs. To minimize the bias from potential toxicities of KRASG12V induction combined with drug treatments, we used an acute incubation time of 72 hr. In H82 and H524 cells, the combined inhibition of ERK and AKT reversed the suspended-to-adherent phenotypic transition which was not seen with either ERK or AKT inhibition alone (Figure 2—figure supplement 1a and b). To exclude the possibility that applied drugs might have a lethal impact on cells, resulting in less adhesion in a non-specific manner, we also assessed the viability of the whole cell population after the combination drug treatment and observed no obvious adverse effects (Figure 2—figure supplement 1c). In contrast to H82 and H524, KRASG12V-induced cell attachment was significantly enhanced by ERK inhibition in H2107 cells, which was not completely rescued by additional AKT inhibition (Figure 2—figure supplement 1a and b).
 
 Lastly, we aimed to determine potential downstream effectors of ERK that are responsible for mediating the cellular phenotypic state change in conjunction with AKT after mutant KRAS induction in SCLC. We assessed mitogen- and stress-activated protein kinase (MSK)/ribosomal S6 kinase (RSK) for this purpose as they are direct downstream effectors of ERK1/2 and inhibited these alone or in combination with AKT after doxycycline induction. Interestingly, cell attachment was not reversed by the combined MSK/RSK and AKT inhibition but was instead enhanced in the context of MSK/RSK suppression, particularly in H2107 cells (Figure 2—figure supplement 2a–c). We conducted phospho-kinase profiling with or without MSK/RSK inhibition using H82- and H2107-KRASG12V cells under doxycycline treatment and this revealed that phospho-AKT as well as phospho-ERK1/2 levels were increased after MSK/RSK inhibition, particularly in H2107-KRASG12V cells (Figure 2—figure supplement 3). This feedback activation explains why MSK/RSK inhibition did not rescue the phenotypic change after KRASG12V induction and suggests that other ERK effectors mediate these effects in conjunction with AKT. Together, these results suggest that the activation of both ERK and AKT is required for the transition of the growth phenotype in SCLC, while ERK2 is a central hub of the oncogene-induced suppression of NE regulators.
 
-## NOTCH signaling is activated by ERK upon KRAS induction in SCLC but is not responsible for repression of NE factors
+### NOTCH signaling is activated by ERK upon KRAS induction in SCLC but is not responsible for repression of NE factors
 
 To examine the mechanisms of ERK-mediated suppression of NETFs in SCLC, we identified differentially expressed genes between EGFRL858R vs GFP and KRASG12V vs GFP cells at each time point for both H82 and H2107 with and without doxycycline (Supplementary file 1). As summarized in Figure 2—figure supplement 4a, the overlap between the two cell lines following KRASG12V induction included 65 and 381 upregulated (>1.5 fold) and 3 and 70 downregulated (<0.67 fold) genes on day 1 and day 7, respectively. Mirroring the differential activation of ERK and NE suppression by the oncogenes, there were fewer genes differentially expressed in the cell lines upon EGFRL858R induction (Figure 2—figure supplement 4b), and therefore, we focused on the KRASG12V model system to identify candidates. Among the commonly upregulated genes in the two cell lines after 7 days of KRASG12V induction, hairy and enhancer of split 1 (HES1) was one of the top differentially expressed genes in H2107 cells. HES1 was of interest as a candidate gene suppressing NE differentiation in our model as it functions as a critical transcriptional repressor of neuronal differentiation under control of NOTCH signaling (Iso et al., 2003). Furthermore, decreased HES1 expression was recently shown to be associated with NE differentiation upon osimertinib resistance in EGFR-mutant LUAD patient samples (Roper et al., 2020). Immunoblots validated the strong induction of HES1 protein in H2107 and H524 cells by mutant EGFR and KRAS, while the activated form of NOTCH1, cleaved NOTCH1, was paradoxically decreased (Figure 2—figure supplement 4c). Further, HES1 was weakly induced without the presence of cleaved NOTCH1 in H82 cells, which harbor a NOTCH1 missense mutation (V776M), while induction of HES1 was completely suppressed by pharmacological ERK inhibition (Figure 2—figure supplement 4d). We then tested whether blockade of NOTCH signaling by a γ-secretase inhibitor, RO4929097, prevents HES1 induction by KRASG12V and found no effect in H82 and H524 cells, although it was partially attenuated in H2107 cells (Figure 2—figure supplement 4e). Likewise, suppressed NETFs were not rescued by this treatment. We next carried out HES1 knockout in KRASG12V-inducible cells, but elimination of HES1 did not restore NE factors suppressed by activated ERK (Figure 2—figure supplement 4f). These data suggest that oncogene-mediated ERK activation in SCLC induces HES1 independently from NOTCH signaling; however, induced HES1 does not underlie the ERK-mediated suppression of NETFs.
 
-## SOX9 and REST transcription programs are mediated by mutant KRAS induction in SCLC cells
+### SOX9 and REST transcription programs are mediated by mutant KRAS induction in SCLC cells
 
 As HES1 upregulation was not responsible for the suppression of NE differentiation, we next assessed whether the differentially expressed genes in SCLC after mutant KRAS induction were enriched for specific transcriptional programs that could indicate a potential mediator of this effect. We identified enrichment for targets regulated by RE1-silencing TF (REST) and SRY-related high-mobility group box 2 (SOX2) in both H82 and H2107 cells after mutant KRAS induction (Figure 2—figure supplement 5a). REST is a transcriptional repressor of neuronal genes and is a direct target of NOTCH1 (Lim et al., 2017), making it a logical candidate for repressing NE factors under control of activated ERK in our system. In fact, in addition to its downstream targets, microarray data also showed upregulation of REST itself by KRASG12V in H2107 and H82 cells (Figure 2—figure supplement 5b), which was validated by RT-qPCR (Figure 2—figure supplement 5c). As opposed to a previous study (Lim et al., 2017), however, introduction of REST siRNAs – while effective at knocking down REST levels – did not contribute to restoration of ERK-mediated suppression of NE factors (Figure 2—figure supplement 5c).
 
 The SOX family TFs are potent drivers of direct somatic cell reprogramming into multiple lineages (Julian et al., 2017). We reasoned that SOX9 but not SOX2 might be a candidate TF to explain the lineage transition in our model, because SOX2 was expressed in only H2107 cells both before and after doxycycline treatment (Figure 2—figure supplement 5d), while SOX9 expression has been reported to negatively associate with SOX2 expression (Lin et al., 2016). In addition, distal lung cells including alveolar epithelial type 2 cells are identified by SOX9 expression (Laughney et al., 2020), and SOX9 was shown to associate with POU class 2 homeobox 3 (POU2F3)-driven subtype of SCLC (Huang et al., 2018), which represents a subtype of SCLC lacking typical NE markers (Rudin et al., 2019). Furthermore, a recent study demonstrated that SOX9 expression is enriched in ASCL1-low human SCLC cell lines and that SOX9 target genes are enriched in ASCL1-low human SCLC tumors (Olsen, 2020). Despite SOX9 transcript being upregulated by KRASG12V only in H2107 cells in the microarray data, we found that SOX9 protein was upregulated by mutant KRAS in all the three cell lines (Figure 2—figure supplement 5d), and this was prevented by ERK inhibition (Figure 2—figure supplement 5e). However, CRISPR/Cas9-mediated SOX9 knockout demonstrated no effects on expression levels of NE factors after KRASG12V induction (Figure 2—figure supplement 5f). Together, these data suggest that while ERK signaling induces expression of HES1, REST and SOX9, these TFs are not responsible for the lineage transformation observed after LUAD oncogene induction in SCLC.
 
-## ERK activation in SCLC induces global chromatin modifications
+### ERK activation in SCLC induces global chromatin modifications
 
 We next investigated whether ERK causes chromatin remodeling in SCLC that could explain the mechanisms by which NETFs are suppressed by constitutive activation of ERK. Indeed, global levels of histone marks – which can be used to classify enhancers – were revealed to be altered after EGFRL858R or KRASG12V induction in SCLC cells (Figure 3). Specifically, these oncoproteins dramatically increased the active enhancer marks histone 3 lysine 9 acetylation (H3K9ac), H3K14ac, and H3K27ac in H82 and H524 cells, whereas they decreased histone 3 lysine 4 tri-methylation (H3K4me3) in H2107 cells. These data suggest that hyperactivated ERK-mediated suppression of NE factors in SCLC might be dependent on altered chromatin structures, which vary depending on the subtype of SCLC defined based on the corresponding master regulator, ASCL1 or NEUROD1.
 
@@ -80,31 +120,75 @@ We next investigated whether ERK causes chromatin remodeling in SCLC that could 
 
 **Figure 3.:** Western blot showing the effects of transduction of GFP, EGFRL858R, or KRASG12V on histone marks upon treatment with 100 ng/mL doxycycline (dox) for 3 and 7 days in H2107, H82, and H524 cells. H3 was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values after normalization to H3 in each condition for each cell line. Immunoblots are representative of at least two biological replicates.
 
-## ERK activation suppresses NETFs through reorganization of active chromatin
+### ERK activation suppresses NETFs through reorganization of active chromatin
 
 Prominently increased H3K27ac after mutant oncogene induction in SCLC was of interest as over 90% of H3K27ac in cells is dependent on two histone acetyltransferases (HATs) – cAMP-response-element-binding protein (CREB)-binding protein (CBP)/CREBBP and its homologous p300/EP300 (Jin et al., 2011) – which are recurrently inactivated by mutations in SCLC (Peifer et al., 2012; George et al., 2015; Rudin et al., 2012). In addition, a clonal evolution study showed an EP300 rearrangement in an EGFR-mutant tumor before transforming to SCLC through EGFR-TKI treatment (Lee et al., 2017). CREBBP mutations were also shown to be enriched in EGFR-mutant LUAD tumors that subsequently underwent TKI-induced SCLC transformation (Offin et al., 2019). Reciprocally, ERK1 and ERK2 are known to directly phosphorylate and activate CBP (Ait-Si-Ali et al., 1999) and p300 (Liu et al., 2016), respectively. ERK also indirectly activates HAT activity of CBP/p300 through phosphorylation of MSK1/2, which results in phosphorylation of histone 3 serine 28 (Soloaga et al., 2003) and recruitment and activation of CBP/p300 (Josefowicz et al., 2016; Figure 4a). Together, this suggests that SCLC tumors evolve in a manner that selects for decreased H3K27ac levels to maintain their NE phenotype, and that activation of CBP and p300 by ERK may lead to lineage transformation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig4-v3.jpg)
+
+**Figure 4.:** (a) Known model of receptor tyrosine kinase/RAS/ERK pathway-mediated promotion of H3K27ac. Illustration was created with BioRendrer.com. (b) Western blot showing the effects of MSK/RSK inhibition using 5 μM SB-747651A on expression of neuroendocrine factors as well as on ERK/RSK/CREB pathway activity and AKT phosphorylation with or without KRASG12V transduction for 72 hr. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-doxycycline (dox)-treated and non-SB-747651A-treated (DMSO-treated) control values (set to one in each cell line panel) after normalization to GAPDH. (c) Western blot of neuroendocrine markers and histone 3 lysine acetylation marks in H82-KRASG12V cells. The cells were treated with SB-747651A (5 μM), a CBP/p300 inhibitior A-485 (400 nM), or both, as well as 100 ng/mL dox for 72 hr. H3 and GAPDH were used as loading controls. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and non-drug-treated (DMSO-treated) control values (set to lane 1) after normalization to H3 (for H3K27ac, H3K9ac, and H3K14ac) or GAPDH (for INSM1, BRN2, NEUROD1, CD56, and SYP). (d) Western blot of neuroendocrine markers after inhibition of histone deacetylases using trichostatin A (TSA) at different concentrations with or without KRASG12V transduction for 72 hr. H3 and GAPDH were used as loading controls. Immunoblots are representative of at least two biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Western blot showing the effects of MSK/RSK and/or CBP/p300 inhibition on expression of neuroendocrine transcription factors that are repressed by KRASG12V transduction in H2107, H82, and H524 cells. Cells were treated with 5 μM SB-747651A and/or fivefold dilutions of A-485 starting at 16 nM as well as 100 ng/mL doxycycline (dox) for 72 hr. H3 and GAPDH were used as loading controls. Numbers below blots are the amounts of each band relative to the corresponding control values after normalization to H3 for H3K27ac and to GAPDH for the others. The controls were set as non-dox-treated and non-drug-treated (DMSO-treated) values (set to one in each cell line panel) except for ETV5 for which the controls were set as dox-treated and non-drug-treated (DMSO-treated) values (set to two in each cell line panel). (b) Western blot showing the effect of MSK/RSK and/or p300 inhibition on expression of neuroendocrine transcription factors that are repressed by KRASG12V transduction in H82 cells. Cells were treated with 100 ng/mL dox, 5 μM SB-747651A, and/or 10 μM C646 for 72 hr. H3 and GAPDH were used as loading controls. Numbers below blots are the amounts of each band relative to the corresponding non-dox-treated and non-drug-treated (DMSO-treated) control values (set to lane 1) after normalization to H3 (for H3K27ac, H3K9ac, and H3K14ac) or GAPDH (for INSM1, BRN2, NEUROD1, and SYP). (c) Western blot showing the effects of HES1 knockout with MSK/RSK or CBP/p300 inhibition (using 5 μM SB-747651A or 16 nM A-485, respectively) on expression of neuroendocrine transcription factors repressed by KRASG12V transduction in H524 cells. H3 and GAPDH were used as loading controls. Numbers below blots are the amounts of each band relative to the corresponding non-dox-treated and non-drug-treated (DMSO-treated) control values after normalization to H3 (for H3K27ac) or GAPDH (for INSM1, BRN2, NEUROD1, CD56, and SYP) in each cell population.
+
 To clarify the dependency on MSK1/2 in the regulation of NE factors by ERK, we treated KRASG12V-inducible cells with or without doxycycline and a compound (SB-747651A) that inhibits MSK as well as RSK (Naqvi et al., 2012). As shown in Figure 4b, phosphorylation of CREB, a downstream target of MSK1/2, was well inhibited by this compound and phospho-AKT levels were again upregulated in H2107 and H524 cells as shown in Figure 2—figure supplement 3. MSK inhibition modestly prevented the suppression of BRN2 and NEUROD1, but INSM1 was not rescued in H82 and H524 cells. Furthermore, no effects were observed in H2107 cells by this treatment. We next inhibited CBP/p300 in KRASG12V-inducible cells using A-485, a potent and selective inhibitor of the catalytic function of CBP/p300 (Lasko et al., 2017), and revealed that at an optimized concentration (400 nM), A-485 restored INSM1, BRN2, and NEUROD1 expression and reduced H3K27ac to a basal level in H82 cells after mutant KRAS induction (Figure 4c and Figure 4—figure supplement 1a). Treatment with A-485 did not affect the levels of two other histone three lysine acetylation marks, H3K9ac and H3K14ac, and inhibition of MSK/RSK did not consistently show additive rescue effects for NE markers (Figure 4c). We also treated H82-KRASG12V cells with a p300-HAT-specific inhibitor C646 (Ogiwara et al., 2016) and found that this drug more modestly restored INSM1 and NEUROD1, particularly when MSK is co-inhibited (Figure 4—figure supplement 1b). Inversely, the expression of NE factors was eliminated in SCLC by inhibition of histone deacetylases (HDACs) using trichostatin A, even in the absence of KRASG12V induction, suggesting that H3K27ac levels must be restricted to maintain SCLC lineage (Figure 4d). Although A-485 treatment did not rescue the ERK-mediated suppression of NE factors in H2107 and H524 cells even when combined with MSK inhibition (Figure 4—figure supplement 1a) or with HES1 knockout (Figure 4—figure supplement 1c), these results collectively suggest that constitutively activated ERK suppresses NETFs partly through MSK but mostly via reconfiguration of chromatin structure by CBP/p300 in a subset of SCLC.
 
-## Chromatin accessibility analysis demonstrates enrichment for binding sites of ETS family TFs
+### Chromatin accessibility analysis demonstrates enrichment for binding sites of ETS family TFs
 
 The sequencing-based assay for transposase-accessible chromatin (ATAC-seq) (Buenrostro et al., 2013) was employed to tease out mechanisms used by ERK and CBP/p300 to reconfigure lung cancer epigenomes. ATAC-seq was performed on H2107, H524, and H82 cells (three biological replicates per condition) with and without treatment with doxycycline to induce KRASG12V and SCH772984 (ERK inhibitor) for 72 hr, as well as on H82 cells treated with doxycycline in the presence of SB-747651A (MSK/RSK inhibitor), A-485 (CBP/p300 inhibitor), or both. Quality metrics showed good enrichment of accessible chromatin in our ATAC libraries (Figure 5—figure supplement 1a) and strong concordance between replicates (Pearson R (Travis et al., 2015) >0.90; Figure 5—figure supplement 1b). Overall, induction of KRASG12V expression with doxycycline caused an overall increase in chromatin accessibility (H82: 88 peaks of chromatin accessibility gained; 36 lost; H2107: 38 gained, one lost; H524 638 gained,703 lost). On the contrary, addition of the ERK inhibitor SCH772984 led to a reduction in the number of peaks of accessible chromatin (H82: 131 lost, 58 gained; H2107: 36 lost, one gained; H524: 503 lost, 345 gained; Figure 5a and b). The locales of altered accessibility were primarily located in intergenic and intronic regions, in keeping with shifts primarily occurring in regulatory regions, including putative enhancers (Figure 5—figure supplement 1c and d). Motif analysis showed that doxycycline treatment led to increased accessibility around ETV1 and ETV4 DNA binding motifs, as well as motifs associated with AP-1 family members, and reduced accessibility at NEUROD1 and ASCL1 motifs (Figure 5c). A reversal of this pattern was observed upon treatment with SCH772984 (Figure 5d). Motif analyses in individual cell lines showed the same changes in accessibility around these TFs with doxycycline treatment with or without SCH772984 (Figure 5—figure supplement 2a,b and f–i). Importantly, the ranked motif order plot with combined inhibition of MSK/RSK and CBP/p300 (Figure 5—figure supplement 2e) mimicked that with ERK inhibition (Figure 5—figure supplement 2b) in H82 cells. Permutation testing showed that peaks gained upon doxycycline induction, with or without SCH779284, were associated with areas of chromatin decorated with H3K27ac (p=0.002, hypergeometric test; Figure 5e and f), a histone post-translational modification associated with open chromatin, in control normal human lung. Motif accessibility profiles within differentially accessible regions showed that doxycycline induction led to markedly increased accessibility at the ETV1 and ETV4 binding motifs in H524 and H82 cells (Figure 5g). In contrast, chromatin accessibility was reduced at putative binding motifs for neuroendocrine lineage TFs, including ASCL1 and NEUROD1 in H524 and H2107 (Figure 5h). No significant changes in overall occupancy were observed at these motifs in H82 cells (Figure 5—figure supplement 2j). The overall occupancy profiles of cells treated with SCH772984 most closely resembled those of the untreated cells, in keeping with rescue of the neuroendocrine phenotype.
 
-## ERK activates ETS factors and promotes suppression of NE factors
+![Figure 5.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig5-v3.jpg)
+
+**Figure 5.:** (a) Distribution of differentially accessible regions in H524-KRASG12V cells upon treatment with doxycycline (dox), and (b) treatment with dox + SCH772984 (an ERK inhibitor [inh]). (c) Ranked list of motif enrichment and depletion over differentially accessible regions in H82-KRASG12V, H524-KRASG12V, and H2107-KRASG12V cells upon dox induction. (d) Ranked list of motif enrichment and depletion over differentially accessible regions in H82-KRASG12V, H524-KRASG12V, and H2107-KRASG12V cells upon dox induction with or without SCH772984 treatment. (e) Permutation testing of co-occupancy of H3K27ac with peaks gained and lost in H524-KRASG12V cells upon dox treatment (p value: hypergeometric test). (f) Permutation testing of co-occupancy of H3K27ac with peaks gained and lost in dox-treated H524-KRASG12V cells upon SCH772984 treatment (p value: hypergeometric test). (g and h) Occupancy profiles of selected motifs of the (g) ETS family, and (h) selected proneural motifs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Fold enrichment of representative ATAC-seq libraries at the GAPDH promoter by qPCR (in triplicate). (b) PCA plot showing clustering of ATAC-seq library samples with high concordance between replicates. (c, d) Representative plots of genomic distribution of differentially accessible regions.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (a-e) Ranked motif order plots for H82-KRASG12V for doxycycline (dox) vs control, dox vs dox +SCH772984, dox vs dox +A-485, dox vs dox +SB-747651A, and dox vs dox +A-485 + SB-747651A, respectively. (f) and (g) Ranked motif order plots for H2107-KRASG12V for dox vs control and dox vs dox +SCH772984. (h) and (i) Ranked motif order plots for H524-KRASG12V dox vs control and dox vs dox +SCH772984. (j) Supplemental motif profiles for all three lines (H2107-KRASG12V, H524-KRASG12V, and H82-KRASG12V) profiled for ETS family and neuroendocrine lineage motifs.
+
+### ERK activates ETS factors and promotes suppression of NE factors
 
 ATAC-seq demonstrated global chromatin rewiring at ETS transcriptional targets upon KRASG12V induction in SCLC cells. Furthermore, ETS TFs – including the PEA3 family of ETS TFs, ETV1, ETV4, and ETV5 – were upregulated at the mRNA level by activation of MAPK (Supplementary file 1 and Figure 6a), suggesting that an ETS TFs-mediated program may play a role in suppressing NE differentiation. Indeed, microarray data of SCLC and LUAD cell lines indicated the clear inverse relationship of expression of PEA3 family ETS TFs with that of NETFs (Figure 6b). At the protein level, we found that mutant KRAS upregulates ETV4 in H82 and H524 cells and ETV5 in all the three SCLC lines, which was completely reversed by ERK inhibition with SCH772984 (Figure 6c). As ETS TFs bind to a common motif (Hollenhorst et al., 2011), we anticipated that overexpression of any one of these proteins in SCLC cells may phenocopy the effects of ERK activation and potentially lead to downregulation of NE factors. To test this, we conditionally expressed ETV1 in the three SCLC cell lines, which led to suppression of specific NETFs – notably ASCL1 in H2107, INSM1 and NEUROD1 in H82, and BRN2 in H524 (Figure 6d). Conditional expression of ETV5 also significantly downregulated INSM1 and NEUROD1 in H82, and NEUROD1 in H524 (Figure 6e). Furthermore, ETV1- or ETV5-overexpressing cells unexpectedly transformed to an adherent phenotype, with this morphological change most strongly observed in H82 cells, similar to what is observed with KRASG12V induction (Figure 6—figure supplement 1). Next, we conducted knockdown of ETV4, ETV5, or both using siRNAs in mutant KRAS-inducible H82 cells and found that ETV4 knockdown modestly restored suppressed INSM1 while ETV5 knockdown restored NEUROD1 (Figure 6f). Importantly, dual knockdown of ETV4 and ETV5 jointly increased INSM1 and CD56 expression, suggesting the functional redundancy of different ETS factors, such that knockdown of a single or two factors is unable to completely mitigate the effects of ERK activation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-v3.jpg)
+
+**Figure 6.:** (a) Upregulated genes by KRASG12V overexpression for 1 day and 7 days in comparison with a GFP overexpression control in H2107 and H82 cells. The numbers of genes upregulated (>1.5 fold) are indicated. ETV1, ETV4, and ETV5 are shown in red. (b) Heat map of the PEA3 family ETS transcription factors (ETV1, ETV4, and ETV5) and neuroendocrine transcription factors (ASCL1, NEUROD1, INSM1, and POU3F2 [BRN2]) in small cell lung cancer and lung adenocarcinoma cell lines. Red and blue denote high and low expression, respectively. (c) Western blot showing the effects of ERK inhibition using 1 μM SCH772984 on the expression of ETV1, ETV4, and ETV5 with or without KRASG12V transduction for 72 hr. Lysates from HA-tagged ETV1-overexpressing H524 cells were used as a positive control for ETV1. GAPDH was used as a loading control. (d) Effects of HA-tagged ETV1 induction as assessed by western blot in H2107, H82, and H524 cells, upon treatment with 100 ng/mL doxycycline (dox) for 3 and 7 days. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values (set to two in each panel) after normalization to GAPDH. (e) Effects of HA-tagged ETV5 induction as assessed by western blot in H82 and H524 cells, upon treatment with 100 ng/mL dox for 3 and 7 days. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values (set to one in each cell line panel) after normalization to GAPDH. (f) Western blot showing the effects of KRASG12V induction and treatment with siRNA pools targeting ETV4, ETV5, or both on expression of neuroendocrine transcription factors in H82 cells. Cells were treated with 100 ng/mL dox and indicated siRNAs for 72 hr. Scrambled siRNA (siScr) was used as a negative control. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated and siScr-treated control values (set to 1) after normalization to GAPDH. (g) Western blot showing the effects of MSK/RSK and/or CBP/p300 inhibition on KRASG12V-mediated expression of ETV4 and ETV5 in H82 cells. Cells were treated with 5 μM SB-747651A (a MSK-RSK inhibitor) and/or 400 nM A-485 (a CBP/p300 inhibitor) as well as 100 ng/mL dox for 72 hr. GAPDH was used as a loading control. Numbers below the ETV5 blots indicate the amounts of ETV5 relative to the dox-treated and non-drug-treated (DMSO-treated) control values (set to lane 5) after normalization to GAPDH. Immunoblots are representative of at least two biological replicates.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** Yellow and white arrowheads indicate floating aggregates and adherent cells, respectively. Scale bars, 400 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Western blot assessment of the effects of KRASG12V transduction and 1 μM SCH772984 treatment on CIC expression and subcellular localization using fractionated cell lysates after 72 hr of drug treatment. MYC and GAPDH were used as loading controls for the nuclear and cytoplasmic fractions, respectively. (b) Western blot analysis of the effects of CIC knockdown using an siRNA pool against CIC on neuroendocrine markers with or without KRASG12V transduction for 72 hr. Scrambled siRNA (siScr) was used as a negative control. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-doxycycline (dox)-treated and non-siRNA-treated control values (set to one in each cell line panel) after normalization to GAPDH. (c) Western blot showing the effects of transient overexpression of CIC isoforms for 72 hr with 100 ng/mL dox in H82-KRASG12V cells. Effects of CIC-L, CIC-S, or V41G mutant CIC-S overexpression on neuroendocrine factor expression was assessed. CIC-SV41G is known to lack the ability to interact with ATXN1L that forms a complex with CIC and enhances CIC function as a transcriptional co-repressor. GAPDH was used as a loading control. Numbers below blots show the amounts of each band relative to the corresponding non-dox-treated control values after normalization to GAPDH in each condition based on constructs used.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (a) Western blot showing the effects of MSK/RSK and/or ERG inhibition on expression of neuroendocrine transcription factors that are repressed by KRASG12V transduction in H2107, H82, and H524 cells. Cells were treated with 5 μM SB-747651A and/or different concentrations of ERGi-USU starting at 0.2 μM as well as 100 ng/mL doxycycline (dox) for 72 hr. GAPDH was used as a loading control. Numbers below blots are the amounts of each band relative to the corresponding control values after normalization to GAPDH. The controls were set as non-dox-treated and non-drug-treated (DMSO-treated) values (set to one in each cell line panel) except for ERG and ETV5 for which the controls were set as dox-treated and non-drug-treated (DMSO-treated) values (set to two in each cell line panel). (b) Western blot showing the effects of combined inhibition of MSK/RSK, CBP/p300, and/or ERG on expression of neuroendocrine transcription factors as well as MYC that are repressed by KRASG12V transduction in H82 cells. Cells were treated with 100 ng/mL dox, 5 μM SB-747651A, 400 nM A-485, and/or C646 (0.3 or 0.6 μM) for 72 hr. H3 and GAPDH were used as loading controls. Numbers below blots are the amounts of each band relative to the corresponding control values after normalization to H3 (for H3K27ac) or GAPDH (for ERG, ETV5, INSM1, BRN2, NEUROD1, CD56, SYP, and MYC). The controls were set as non-dox-treated and non-drug-treated (DMSO-treated) values (set to 1) except for ERG and ETV5 for which the controls were set as dox-treated and non-drug-treated (DMSO-treated) values (set to 2).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** (a) Western blot of RB in RB1-proficient parental PC9 and H1975 cells as well as RB1-knockout polyclonal and clonal cells. GAPDH was used as a loading control. (b) Western blot showing effects of 100 nM osimertinib treatment for up to 5 days on protein expression of neuroendocrine transcription factors and SOX2 in RB1-proficient and -deficient PC9 and H1975 cells. Lysates from the small cell lung cancer cell line, H2107 or H82, were used as a positive control for neuroendocrine markers. Lysates from H2107 were used as a positive control for SOX2. GAPDH was used as a loading control. (c) Mean relative proliferation of parental PC9 and H1975 cells with or without RB1 knockout treated with osimertinib. Cells were treated with osimertinib or DMSO for 72 hr. Bars represent mean (three biological replicates) ± SD. The IC50 values for each clone are as follows: PC9-sgControl, 7.0 nM; PC9-sgRB1 #1, 5.9 nM; PC9-sgRB1 #15, 4.8 nM; H1975-sgControl, 19 nM; H1975-sgRB1 #9, 145 nM; and H1975-sgRB1 #22, 57 nM. IC50 analysis of dose-response curves were compared by the extra sum-of-squares F test. (d) Mean relative proliferation of PC9 and H1975 cells with acquired resistance to osimertinib are plotted. Osimertinib-resistant RB1-proficient cells as well as RB1-knockout clonal cells were treated with osimertinib for 72 hr. Control cells were treated with DMSO as a vehicle control. Osimertinib-resistant cells were generated by either a stepwise dose-escalation or initial high-dose method. Bars represent mean (three biological replicates) ± SD. (e) Profiling of acquired genetic alterations through osimertinib treatment in PC9 and H1975 cells with or without RB1 knockout assessed by MSK-IMPACT. Abbreviations: stepwise, stepwise dose-escalation method; initial, initial high-dose method. (f) Western blot for profiling expression of EGFR, ERK, RAS, and neuroendocrine factors in parental and osimertinib-resistant PC9 and H1975 cells with or without RB1 knockout. Parental and resistant cells were harvested under treatment with 0.1% DMSO or osimertinib (2 μM for H1975 [stepwise dose-escalation method] and 1 μM for the others), respectively. Lysates from the small cell lung cancer cell line, H2107 or H82, were used as a positive control for neuroendocrine markers. GAPDH was used as a loading control. (g) Western blot for profiling expression of CIC as well as its downstream targets ETV1, ETV4, and ETV5 in parental and osimertinib-resistant H1975 cells. Parental cells were treated with 100 nM osimertinib or DMSO for 3 days. Osimertinib-resistant cells were cultured with 2 μM (stepwise dose-escalation method) or 1 μM (initial high-dose method) osimertinib. GAPDH was used as a loading control.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/66524/elife-66524-fig6-figsupp5-v3.jpg)
+
+**Figure 6—figure supplement 5.:** (a) Representative morphologic images of H1975 cells with or without RB1 knockout cultured in SCCM with DMSO or indicated drugs for 72 hr. In comparison with control cells cultured in RPMI 1640 (left), cells show suspending aggregates in SCCM (middle). By contrast, cells remain adherent and a neuronal-like phenotype is induced in SCCM with inhibition of ERK and MSK/RSK (right). Scale bars, 400 μm. (b) Western blot assessment of the effects of pharmacological inhibition of EGFR (with osimertinib), ERK (with SCH772984), MSK/RSK (with SB-747651A), and/or CBP/p300 (with A-485), on expression of AKT and neuroendocrine factors in H1975-sgRB1 #9 cells cultured in RPMI 1640 or SCCM for 72 hr. H3 and GAPDH were used as loading controls. Numbers below blots show the amounts of each band relative to the corresponding non-drug-treated (DMSO-treated) RPMI 1640 control values (set to 1) after normalization to GAPDH (for pEGFR and EGFR) or AKT (for pAKT). (c) Western blot assessment of the effects of pharmacological inhibition of ERK (with SCH772984), MSK/RSK (with SB-747651A), and/or CBP/p300, on expression of neuroendocrine factors in H1975-sgRB1 #9 cells cultured in RPMI 1640 or SCCM for 7 days. A-485 was used to inhibit the histone acetyltransferase activity of both CBP and p300, while C646 was used to inhibit the histone acetyltransferase activity of p300. H3 and GAPDH were used as loading controls.
 
 CIC/Capicua is a transcriptional repressor of ETV1, ETV4, and ETV5 and a key mediator of MAPK signaling (Wang et al., 2017). When the MAPK pathway is activated, ERK and RSK phosphorylate CIC (Dissanayake et al., 2011), which is then exported from the nucleus to the cytoplasm and degraded (Grimm et al., 2012). We therefore assessed whether CIC is required to maintain the suppression of ETS factors in SCLC and whether its inactivation downstream of ERK modulates NE marker suppression. We confirmed that nuclear CIC was expressed in SCLC cells and downregulated after KRASG12V induction, which was restored by ERK inhibition (Figure 6—figure supplement 2a). siRNA knockdown of CIC led to downregulation of INSM1, NEUROD1, and to a lesser extent BRN2 in H82 cells and potentiated the effects of mutant KRAS induction on NE factor suppression in H82 and H524 cells (Figure 6—figure supplement 2b). However, CIC knockdown was not sufficient to induce ETV1, ETV4, and ETV5. Likewise, overexpression of CIC did not inhibit suppression of NE factors after KRASG12V induction (Figure 6—figure supplement 2c), as exogenous CIC was putatively inactivated following immediate phosphorylation by activated ERK. These results suggest that ERK-mediated upregulation of the PEA3 family of ETS TFs does not occur via CIC inhibition in SCLC cells. However, as we demonstrated that the PEA3 family of ETS TFs are – at least in part – a mediator of ERK-induced suppression of NETFs, we next asked if CBP/p300 activation by ERK regulates PEA3 TFs in a CIC-independent manner. Indeed, we found that A-485 treatment downregulates ERK-induced ETV4 and ETV5 in H82-KRAS cells but not in H2107- and H524-KRAS cells, providing a potential biological explanation why CBP/p300 inhibition rescues ERK-mediated suppression of NE differentiation only in H82 cells (Figure 6g and Figure 4—figure supplement 1a).
 
 Lastly, it has been reported that oncogenic fusion proteins produced by chromosomal translocations are the major mechanism of genetic activation of ETS family proteins in cancer. In prostate cancer, the ETS family members ERG as well as ETV1 are commonly rearranged (Tomlins et al., 2005) and ectopic ERG expression by TMPRSS2-ERG fusion blocks NE differentiation (Mounir et al., 2015). Based on these findings, we treated KRASG12V-inducible SCLC cells with an ERG inhibitor, ERGi-USU (Mohamed et al., 2018), with or without MSK/RSK inhibition (Figure 6—figure supplement 3a). ERG was not basally expressed in the three SCLC cell lines but was induced by KRASG12V in H82 and H524 cells. Inhibition of ERG in H82 cells after KRASG12V activation provided modest restoration of INSM1, BRN2, and NEUROD1 at the optimal concentration of 0.6 μM, which synergized with MSK/RSK co-inhibition. Interestingly, treatment of H82-KRASG12V cells with different combinations of inhibitors targeting MSK/RSK, CBP/p300, or ERG revealed that suppression of MYC by KRASG12V was well rescued by combined MSK/RSK and ERG inhibition that did not rescue suppressed expression of key NETFs, suggesting that oncogene-mediated ERK activation in SCLC modulates essential TFs through multiple regulatory mechanisms (Figure 6—figure supplement 3b). It should be noted that ERGi-USU treatment also inhibited ETV5 expression in a dose-dependent manner in H2107 and H82 cells (Figure 6—figure supplement 3a), showing that this compound may work broadly on ETS factors and not exclusively through ERG. Together, these results suggest that ERK-induced ETS factor expression suppresses NE lineage factors in SCLC and that induction of the PEA3 family of ETS TFs is mediated by the HAT activity of CBP/p300 in H82 cells but not in H2107 and H524 cells.
 
-## CIC inactivation in EGFR-mutant LUAD upon osimertinib resistance suppresses SCLC transformation in p53/RB-inactivated cells
+### CIC inactivation in EGFR-mutant LUAD upon osimertinib resistance suppresses SCLC transformation in p53/RB-inactivated cells
 
 Using the information obtained from expression of mutant EGFR and KRAS in SCLC, we aimed to assess the potential clinical importance of these mechanisms in driving the transformation of LUAD to SCLC during EGFR-TKI resistance. Dual p53/RB inactivation is ubiquitous in SCLC (Peifer et al., 2012; George et al., 2015), and EGFR-mutant LUADs with p53/RB loss are more likely to undergo SCLC transformation after TKI treatment (Offin et al., 2019; Niederst et al., 2015; Lee et al., 2017). Furthermore, p53/RB inactivation in androgen receptor (AR)-dependent prostate luminal epithelial tumors increases SOX2 expression and causes lineage shift into basal-like or NE tumors that are AR-independent (Mu et al., 2017). Therefore, we tested whether this scenario is also applicable in EGFR-dependent LUAD cells. We selected two TP53/EGFR double-mutant and RB1 wild-type cell lines, PC9 and H1975, and performed RB1 knockout through CRISPR/Cas9, establishing TP53/RB1/EGFR triple-mutant clones (Figure 6—figure supplement 4a). We then treated these clones, along with RB1-proficient control cells, with osimertinib to assess the influence of EGFR/MAPK inactivation on NE differentiation in the p53/RB-deficient background. Unlike the prostate cancer scenario, deregulation of SOX2 was not observed following osimertinib treatment, irrespective of the RB1 status (Figure 6—figure supplement 4b). In addition, NE factors were not induced in the triple-mutant clones, suggesting that the LUAD lineage is more strictly maintained than the lineage of AR-dependent prostate cancer in the context of dual p53/RB inactivation, confirming a previous study (Niederst et al., 2015).
 
 We then attempted to force SCLC transformation from these triple-mutant LUAD cells by long-term exposure to osimertinib. Although RB1 knockout shifted the initial IC50 values to the drug with statistical significance in H1975 cells (Figure 6—figure supplement 4c), the effects were modest. We derived resistant cells through two methods – dose escalation or with an initial high-dose – and confirmed insensitivity to osimertinib in comparison to equally passaged control cells (Figure 6—figure supplement 4d). As resistant cells remained adherent, we asked if EGFR-independent reactivation of ERK inhibited NE trans-differentiation in these cells and assessed acquired genetic alterations using MSK-IMPACT targeted genomic profiling (Figure 6—figure supplement 4e). This revealed mutations and amplifications that reactivate MAPK pathway in resistant clones compared to their parental counterparts, including ARAF, NRAS, and ERBB4 mutations as well as amplifications of MAPK3 and NRAS in three of 12 resistant clones. Correspondingly, pERK was still detectable in the majority of resistant clones in the presence of osimertinib (Figure 6—figure supplement 4f), unlike parental cell lines with acute treatment (Figure 6—figure supplement 4b). Western blot analysis also confirmed no induced expression of the main NE factors in resistant cells (Figure 6—figure supplement 4f). Importantly, CIC mutations that bypass the requirement for upstream MAPK pathway reactivation were recurrently identified in H1975 resistant clones (Figure 6—figure supplement 4e), which was validated by western blot (Figure 6—figure supplement 4g). Among the PEA3 family of ETS TFs, ETV5 was most prominently upregulated in osimertinib-resistant clones harboring acquired CIC alterations (Figure 6—figure supplement 4g). These data collectively suggest that recurrently observed resistance mechanisms that reactivate the ERK/CIC/ETS axis might suppress the NE differentiation program during chronic inhibition of drivers even in the context of p53/RB loss.
 
-## Inhibition of ERK and MSK/RSK in stem cell culture media induces neuronal-like differentiation and suppression of EGFR in EGFR-mutant lung adenocarcinoma
+### Inhibition of ERK and MSK/RSK in stem cell culture media induces neuronal-like differentiation and suppression of EGFR in EGFR-mutant lung adenocarcinoma
 
 Based on our findings that ERK, MSK/RSK, and CBP/p300 play critical roles in the regulation of NETFs in SCLC cell lines, we treated EGFR/TP53/RB1 triple-mutant H1975 cells with inhibitors for EGFR, ERK, MSK/RSK, and/or CBP/p300 to inhibit effectors that suppress NE differentiation with the anticipation that it would eventually cause histological transformation into SCLC. To this end, we cultured cells using stem cell culture media (SCCM) as well as RPMI 1640, as a previous study used SCCM in conjunction with genetic manipulations to reprogram normal human lung epithelial cells to neuroendocrine lineage (Park et al., 2018). When cultured in SCCM, H1975 cells grew in suspension as floating clusters (Figure 6—figure supplement 5a). Interestingly, inhibition of ERK and MSK/RSK in SCCM inhibited the phenotypic change into floating suspension. Furthermore, cells developed a neuronal-like appearance showing bipolar or multipolar cells with axonal processes after combined inhibition of ERK and MSK/RSK regardless of RB1 status (Figure 6—figure supplement 5a), which was coupled with suppression of EGFR (Figure 6—figure supplement 5b). Immunoblotting showed that phospho-AKT was highly upregulated after combined inhibition of ERK and MSK/RSK (Figure 6—figure supplement 5b), highlighting the potential importance of AKT signaling in cell morphology and growing phenotype. However, the triple-mutant cells, including the neuronal-like cells, showed no induction of NETFs over 3 (Figure 6—figure supplement 5b) or 7 (Figure 6—figure supplement 5c) days of culture with different combinations of inhibitors, both in normal media and SCCM.
 
@@ -128,88 +212,861 @@ In summary, we provide the first reported biological rationale for why alteratio
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H2107</td>
+      <td>ATCC</td>
+      <td>CRL-5983_FL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H82</td>
+      <td>ATCC</td>
+      <td>HTB-175</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H524</td>
+      <td>ATCC</td>
+      <td>CRL-5831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H526</td>
+      <td>ATCC</td>
+      <td>CRL-5811</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PC-9</td>
+      <td>Adi Gazdar</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>NCI-H1650</td>
+      <td>ATCC</td>
+      <td>CRL-5883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1975</td>
+      <td>ATCC</td>
+      <td>CRL-5908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HCC827</td>
+      <td>ATCC</td>
+      <td>CRL-2868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC2279</td>
+      <td>ATCC</td>
+      <td>CRL-2870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC2935</td>
+      <td>ATCC</td>
+      <td>CRL-2869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC4006</td>
+      <td>ATCC</td>
+      <td>CRL-2871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HCC4011</td>
+      <td>Adi Gazdar</td>
+      <td>RRID:CVCL_S700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>NCI-H23</td>
+      <td>ATCC</td>
+      <td>CRL-5800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1792</td>
+      <td>ATCC</td>
+      <td>CRL-5895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H358</td>
+      <td>ATCC</td>
+      <td>CRL-5807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1395</td>
+      <td>ATCC</td>
+      <td>CRL-5868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H2347</td>
+      <td>ATCC</td>
+      <td>CRL-5942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>NCI-H460</td>
+      <td>ATCC</td>
+      <td>HTB-177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>NCI-H1155</td>
+      <td>ATCC</td>
+      <td>CRL-5818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>lentiCRISPRv2</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_52961</td>
+      <td>Lentiviral construct to transfect and express hSpCas9 and sgRNA.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>pcDNA4/TO</td>
+      <td>Wong et al., 2019 PMID:30093628</td>
+      <td></td>
+      <td>Tetracycline-regulated mammalian expression vector</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to MAPK3 (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-003592–00</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to MAPK1 (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-003555–00</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to REST (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-006466–00</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to CIC (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-015185–01</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to ETV4 (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-004207–00</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>siRNA to ETV5 (SMARTpool)</td>
+      <td>Horizon Discovery</td>
+      <td>L-008894–00</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-EGFR (Tyr1068) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 2234</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGFR (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 2232</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Brn2/POU3F2 (D2C1L) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 12137</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-INSM1 (A-8) (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-271408</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MASH1 (24B72D11.1) (Mouse monoclonal)</td>
+      <td>BD Pharmingen Inc</td>
+      <td>Cat. #: 556604</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuroD1 (D35G2) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4373</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NCAM1 (CD56) (123C3) (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3576</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Synaptophysin (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4329</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-p44/42 MAPK (Thr202/Tyr204) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9101</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p44/42 MAPK (137F5) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4695</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Akt (Ser473) (D9E) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4060</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Akt (pan) (C67E7) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4691</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ras (G12V mutant specific) (D2H12) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 14412</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ras (D2C1) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 8955</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Myc (D84C12) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 5605</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cleaved PARP (Asp214) (D64E10) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 5625</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-YAP (D8H1X) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 14074</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-p90RSK (Ser380) (D3H11) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 11989</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RSK1/RSK2/RSK3 (D7A2H) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 14813</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-CREB (Ser133) (1B6) (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9196</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CREB (48H2) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9197</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Notch1 (D1E11) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3608</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-cleaved Notch1 (Val1744) (D3B8) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4147</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Notch2 (D76A6) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 5732</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HES1 (D6P2U) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 11988</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sox2 (D6D9) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3579</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sox9 (D8G8H) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 82630</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K4me3 (C42D8) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9751</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K9me3 (D4W1U) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 13969</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K9ac (C5B11) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9649</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K14ac (D4B9) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 7627</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K27ac (D5E4) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 8173</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3S10ph (Ser10) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9701</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3S28ph (Ser28) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9713</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Histone H3 (D1H2) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 4499</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CIC (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PA1-46018</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA-Tag (C29F4) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 3724</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ETV1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: PA5-41484</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Pea3 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab189826</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ERM/Etv5 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab102010</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ERG (A7L1G) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 97249</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rb (4H1) (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 9309</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-Actin (D6A8) (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #: 12620</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (0411) (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-47724</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_44012</td>
+      <td>Tet-inducible lentiviral vector for ORF expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-GFP (plasmid)</td>
+      <td>Unni et al., 2015 PMID:26047463</td>
+      <td></td>
+      <td>GFP version of pInducer20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-EGFRL858R (plasmid)</td>
+      <td>Unni et al., 2015 PMID:26047463</td>
+      <td></td>
+      <td>EGFRL858R version of pInducer20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-KRASG12V (plasmid)</td>
+      <td>Unni et al., 2015 PMID:26047463</td>
+      <td></td>
+      <td>KRASG12V version of pInducer20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-ETV1 (plasmid)</td>
+      <td>This paper – Materials and methods Section</td>
+      <td>Lockwood Lab</td>
+      <td>ETV1 version of pInducer20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pInducer20-ETV5 (plasmid)</td>
+      <td>This paper – Materials and methods Section</td>
+      <td>Lockwood Lab</td>
+      <td>ETV5 version of pInducer20</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO/FLAG-CIC-L</td>
+      <td>Wong et al., 2019 PMID:30093628</td>
+      <td></td>
+      <td>Tetracycline-regulated CIC-L expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO/FLAG-CIC-S</td>
+      <td>Wong et al., 2019 PMID:30093628</td>
+      <td></td>
+      <td>Tetracycline-regulated CIC-S expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4/TO/FLAG-CIC-SV41G</td>
+      <td>Wong et al., 2019 PMID:30093628</td>
+      <td></td>
+      <td>Tetracycline-regulated CIC-SV41G expression vector</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgHES1-1</td>
+      <td>This paper</td>
+      <td>sgRNA sequence</td>
+      <td>GTGCTGGGGAAGTACCGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgHES1-2</td>
+      <td>This paper</td>
+      <td>sgRNA sequence</td>
+      <td>GGTATTAACGCCCTCGCACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgSOX9-1</td>
+      <td>This paper</td>
+      <td>sgRNA sequence</td>
+      <td>CAAAGGCTACGACTGGACGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgSOX9-2</td>
+      <td>This paper</td>
+      <td>sgRNA sequence</td>
+      <td>AGGTGCTCAAAGGCTACGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sgRB1-1</td>
+      <td>PMID:26314710 Nicolay et al., 2015</td>
+      <td>sgRNA sequence</td>
+      <td>GCTCTGGGTCCTCCTCAGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: non-targeting control</td>
+      <td>Horizon Discovery</td>
+      <td>D-001810–10</td>
+      <td>transfected construct (human)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteome Profiler Human Phospho-Kinase Array Kit</td>
+      <td>R and D Systems</td>
+      <td>Cat. #: ARY003B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick-RNA Miniprep Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat. #: R1054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNeasy Blood and Tissue Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #: 69506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity RNA-to-cDNA Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 4387406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR Clonase II enzyme mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Gene Expression Assay Mix for REST</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: Hs05028212_s1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan Gene Expression Assay Mix for ACTB</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: Hs99999903_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NE-PER Nuclear and Cytoplasmic Extraction Reagents</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: 78833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma Aldrich</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SCH772984</td>
+      <td>Selleck Chemicals</td>
+      <td>S7101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-2206 2HCl</td>
+      <td>Selleck Chemicals</td>
+      <td>S1078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RO4929097</td>
+      <td>Selleck Chemicals</td>
+      <td>S1575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-747651A dihydrochloride</td>
+      <td>Tocris Bioscience</td>
+      <td>4630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A-485</td>
+      <td>Tocris Bioscience</td>
+      <td>6387</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trichostatin A</td>
+      <td>Selleck Chemicals</td>
+      <td>S1045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C646</td>
+      <td>Selleck Chemicals</td>
+      <td>S7152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ERGi-USU</td>
+      <td>Tocris Bioscience</td>
+      <td>6632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osimertinib</td>
+      <td>Selleck Chemicals</td>
+      <td>S7297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R software</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>Version 3.6.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEA software</td>
+      <td>PMID:16199517</td>
+      <td>Version 4.0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 8.2.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 Cells were cultured at 37°C with 5% CO2 in humidified atmosphere. All cell lines except for H2107 (NCI-H2107) and 293T were cultured in RPMI 1640 medium (Thermo Fisher Scientific, Waltham, MA, USA) supplemented with 10% fetal bovine serum (Thermo Fisher Scientific). H2107 cells were cultured in DMEM medium (Thermo Fisher Scientific) supplemented with 5% fetal bovine serum and 1% Glutamax (Thermo Fisher Scientific). 293 T cells were cultured in DMEM medium supplemented with 10% FBS. H1975 cells were cultured in stem cell culture media (Advanced DMEM/F12 [Thermo Fisher Scientific], 1% Glutamax, B-27 supplement [Thermo Fisher Scientific], 10 ng/mL recombinant human HB-EGF [PeproTech, Cranbury, NJ, USA], and 10 ng/mL recombinant human FGF-basic [PeproTech]) (Park et al., 2018) when indicated. H2107, H82 (NCI-H82), H524 (NCI-H524), H526 (NCI-H526), PC9 (PC-9), H1650 (NCI-H1650), H1975 (NCI-H1975), HCC827, HCC2279, HCC2935, HCC4006, HCC4011, H23 (NCI-H23), H1792, (NCI-H1792) A549, H358 (NCI-H358), H1395 (NCI-H1395), H2347 (NCI-H2347), H460 (NCI-H460), H1155 (NCI-H1155), and 293 T cells were obtained from American Type Tissue Culture (ATCC) or were a kind gift from Dr. Adi Gazdar (UTSW). Mycoplasma contamination check was carried out using a LookOut Mycoplasma PCR Detection Kit (Sigma-Aldrich, St. Louis, MO, USA). Cells were validated by STR profiling.
 
-## Chemicals
+### Chemicals
 
 Where indicated, the following chemicals were added to the media as indicated in the text: doxycycline hyclate (Sigma-Aldrich), SCH772984 (Selleck Chemicals, Houston, TX, USA), MK-2206 (Selleck Chemicals), RO4929097 (Selleck Chemicals), SB-747651A (Tocris Bioscience, Bristol, UK), A-485 (Tocris Bioscience), trichostatin A (Selleck Chemicals), C646 (Selleck Chemicals), ERGi-USU (Tocris Bioscience), and osimertinib (Selleck Chemicals).
 
-## Microscopy
+### Microscopy
 
 Fluorescence microscopy was performed using a digital inverted microscope AMF4300 (Thermo Fisher Scientific).
 
-## Exploring mutation and copy number alteration data of KRAS and EGFR using cBioPortal
+### Exploring mutation and copy number alteration data of KRAS and EGFR using cBioPortal
 
 We collected the data of mutations and copy number alterations (amplification and deep deletion) of the KRAS and EGFR genes from 1314 lung cancer patients and 1316 samples using the cBio Cancer Genomics Portal (cBioPortal) database from the five studies as follows: TCGA, Firehose Legacy for adenocarcinoma (N = 586); TCGA, Firehose Legacy for squamouns cell carcinoma (N = 511); the Clinical Lung Cancer Genome Project (CLCGP) for SCLC (Peifer et al., 2012) (N = 29); Johns Hopkins University (JHU) Nat Genet 2012 for SCLC (Rudin et al., 2012) (N = 80); and U Cologne (UCOLOGNE) Nature 2015 for SCLC (George et al., 2015) (N = 110).
 
-## Plasmids and generation of stable or transient cell lines
+### Plasmids and generation of stable or transient cell lines
 
 Plasmids used for expressing mutant KRAS (KRASG12V), mutant EGFR (EGFRL858R), or GFP were identical to those described in our previous works (Unni et al., 2018; Unni et al., 2015). In brief, DNAs encoding mutant KRAS, mutant EGFR, or GFP were cloned into pInducer20 that carries a tetracycline response element for doxycycline-dependent gene control and the tetracycline transactivator, rtTA, driven from the constitutive UbC promoter. Human ETV1 (Addgene, Cambridge, MA, USA; plasmid #82209) and ETV5 (Horizon Discovery, Cambridge, UK; clone 100008315) were transferred to pInducer20 using Gateway LR Clonase II enzyme mix (Thermo Fisher Scientific). Lentivirus was generated using the pInducer20-KRASG12V, -EGFRL858R, -GFP, -ETV1, or-ETV5 as well as psPAX2 (Addgene; plasmid #12260) and pMD2.G (Addgene; plasmid #12259) in 293 T cells. After transduction, stable polyclonal cells were selected with geneticin (Thermo Fisher Scientific) and single-cell-derived clonal cells were also established. Where indicated, doxycycline was added at the time of cell seeding at 100 ng/mL and cells were cultured for 72 hr and harvested unless otherwise stated. For 7-day time course experiments, medium was changed and doxycycline was refreshed on day 4. For other time course experiments, medium was changed and drugs were refreshed every 24 hr.
 
 For transient overexpression of CIC-L, CIC-S, or CIC-SV41G, three cell lines (H2107-KRASG12V, H82-KRASG12V, and H524-KRASG12V) were transfected with the corresponding constructs or with an empty pcDNA4/TO vector which had been kindly gifted from Dr. Wong (Wong et al., 2019) using Lipofectamine 2000 Reagent (Thermo Fisher Scientific). After 24 hr of transfection, medium was changed and doxycycline was added at 100 ng/mL. Cells were further cultured for 72 hr and harvested.
 
-## CRISPR/Cas9 modification
+### CRISPR/Cas9 modification
 
 The sgRNA sequences targeting HES1 (sgHES1-1, 5’-GTGCTGGGGAAGTACCGAGC-3’; sgHES1-2, 5’-GGTATTAACGCCCTCGCACG-3’), SOX9 (sgSOX9-1, 5’-CAAAGGCTACGACTGGACGC-3’; sgSOX9-2, 5’-AGGTGCTCAAAGGCTACGAC-3’), or RB1 (5’-GCTCTGGGTCCTCCTCAGGA-3’) were cloned into the lentiCRISPRv2 (Addgene #52961) plasmid. 293 T cells were transfected with recombinant lentiCRISPRv2 together with psPAX2 and pMD2.G using Lipofectamine 2000 (Thermo Fisher Scientific). Undigested lentiCRISPRv2 plasmid lacking sgRNA sequence was used for pseudovirus production as a control. H2107-KRASG12V, H82-KRASG12V, and H524-KRASG12V cells were infected with virus to knockout HES1 or SOX9. PC9 and H1975 cells were infected with virus to knockout RB1. After maximally eliminating uninfected cells by selection with puromycin (Sigma-Aldrich), polyclonal cells were collected. Single cell-derived clonal cells were also established after HES1 or RB1 knockout.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were lysed in RIPA Lysis and Extraction Buffer (G-Biosiences, St. Louis, MO, USA) containing Halt protease and phosphatase inhibitor cocktail (Thermo Fisher Scientific). For experiments of SCLC cell lines (H2107, H82, and H524) after mutant KRAS or mutant EGFR induction, both suspended and adherent cells were lysed and mixed together. Thus, lysates were representative of the entire population of cells. The only exception was lysates collected from adherent and non-adherent populations separately as well as from both populations together to assess the heterogeneity of SCLC cells (Figure 1—figure supplement 3b). For experiments of acute and subacute treatment with osimertinib for up to 5 days, cells were serum starved for 24 hr and treated with osimertinib or 0.1% DMSO. Medium was changed and osimertinib was refreshed every 24 hr. Protein concentration was determined using a Pierce BCA protein assay kit (Thermo Fisher Scientific). 20 μg of lysates were denatured in NuPAGE LDS Sample Buffer (Thermo Fisher Scientific) and loaded on 4–12% Bis-Tris (Thermo Fisher Scientific) or 3–8% Tris-Acetate (Thermo Fisher Scientific) gradient gels. After electrophoretic separation, the proteins were transferred onto PVDF membranes (MilliporeSigma, Billerica, MA, USA). The protein of interest was detected using an appropriate antibody specific for phospho-EGFR (Tyr1068) (2234; Cell Signaling Technology [CST], Danvers, MA, USA), EGFR (2232; CST), BRN2 (12137; CST), INSM1 (sc-271408; Santa Cruz Biotechnology, Dallas, TX), MASH1 (556604; BD Pharmingen Inc; San Diego, CA, USA), NEUROD1 (4373; CST), CD56 (3576; CST), SYP (4329; CST), phospho-ERK1/2 (Thr202/Tyr204; 9101; CST), ERK1/2 (4695; CST), phospho-AKT (Ser473; 4060; CST), AKT (4691; CST), RAS G12V mutant specific (14412; CST), RAS (8955; CST), MYC (5605; CST), cleaved PARP (5625; CST), YAP1 (14074; CST), phospho-RSK (Ser380; 11989; CST), RSK1/RSK2/RSK3 (14813; CST), phospho-CREB (Ser133; 9196; CST), CREB (9197; CST), NOTCH1 (3608; CST), cleaved NOTCH1 (4147; CST), NOTCH2 (5732; CST), HES1 (11988; CST), SOX2 (3579; CST), SOX9 (82630; CST), H3K4me3 (9751; CST), H3K9me3 (13969; CST), H3K9ac (9649; CST), H3K14ac (7627; CST), H3K27ac (8173; CST), H3S10ph (9701; CST), H3S28ph (9713; CST), Histone H3 (4499; CST), CIC (PA1-46018; Thermo Fisher Scientific), HA-Tag (3724; CST), ETV1 (PA5-41484; Thermo Fisher Scientific), ETV4 (ab189826; Abcam), ETV5 (ab102010; Abcam), ERG (97249; CST), RB (9309; CST), β-Actin (12620; CST), or GAPDH (sc-47724; Santa Cruz Biotechnology) with ECL (Thermo Fisher Scientific).
 
-## Cell proliferation assay
+### Cell proliferation assay
 
 To determine the viability of cells over a 5-, 7-, or 8-day time course for H82, H524, or H2107 derivatives, respectively, cells with doxycycline-inducible constructs were seeded in triplicate in 6-well plates with (100 ng/mL) or without doxycycline at 8.0 × 104 (H2107 derivatives), 1.5 × 104 (H82 derivatives), and 4.0 × 104 (H524 derivatives) cells/well. Medium was not changed during the experiments. At indicated time points, an alamarBlue cell viability agent (Thermo Fisher Scientific) was added and intensities were measured for each well using a Cytation 3 Multi Modal Reader with Gen5 software (BioTek Instruments, Inc, Winooski, VT, USA). Along with cell viability, cell numbers were also counted at indicated time points in triplicate.
 
-## Soft agar colony formation assay
+### Soft agar colony formation assay
 
 Soft agar colony formation assay was performed using a CytoSelect 96-Well Cell Transformation Assay Kit (Cell BioLabs, Inc, San Diego, CA) following the manufacturer’s protocol. In brief, 0.6% CytoSelect agar was added to the bottom of a 96-well plate prior to seeding each well with 10,000 cells suspended in 0.3% CytoSelect agar. After the agar had solidified, cells were then treated with either with media control or media supplemented with 100 ng/mL doxycycline. Cells were cultured for 5 days prior to solubilizing the agar, lysing the cells, and subsequent quantification by CyQuant GR Dye (fluorescence: 485/520 nm).
 
-## Assessment of phenotypic change from a suspended to adherent state
+### Assessment of phenotypic change from a suspended to adherent state
 
 To determine the ability of phenotypic change in the growing pattern from a suspended to adherent state, cells with doxycycline-inducible constructs were seeded in triplicate in 6-well plates with (100 ng/mL) or without doxycycline at 1.7 × 106 (H2107 derivatives), 4.0 × 104 (H82 derivatives), and 1.0 × 106 (H524 derivatives) cells/well. After incubation of cells for 7 days (H2107 and H82 derivatives) or 5 days (H524 derivatives) without medium change, medium containing suspended cells was removed and adherent cells were washed with PBS and then medium was replaced. Viability of adherent cells was assessed using an alamarBlue cell viability agent. Adherent cells were also fixed and stained with crystal violet.
 
 To assess the impact of SCH772984 (1 μM) and/or MK-2206 (10 μM), or SB-747651A (5 μM) and/or MK-2206 (10 μM) on the phenotypic change from a suspended to adherent state, doxycycline-inducible KRASG12V cells were seeded in triplicate in six-well plates with (100 ng/mL) or without doxycycline and with or without indicated drugs at 2.0 × 106 cells/well. After incubation for 72 hr, medium containing cells in suspension was aspirated and then medium containing indicated doxycycline and/or drugs was replaced. Cell viability of adherent cells was evaluated using an alamarBlue cell viability agent. Adherent cells were also fixed and stained with crystal violet.
 
-## Gene expression profiling and gene set enrichment analysis
+### Gene expression profiling and gene set enrichment analysis
 
 Total RNA was extracted in triplicate using a Quick-RNA Miniprep Kit (Zymo Research, Irvine, CA, USA) according to the manufacturer’s protocol from mutant KRAS-, mutant EGFR-, or GFP-transduced stable H2107 and H82 cells on doxycycline treatment day 1 and day seven as well as from non-doxycycline-treated control cells. Sample quality was assessed using an Agilent Bioanalyzer (Agilent, Santa Clara, CA) and subsequent sample preparation, array hybridization, and data acquisition was performed by the Centre for Applied Genomics Microarray Facility (Toronto, Ontario). The GeneChip Human Gene 2.0 ST Assay (Thermo Fisher Scientific) was used according to the manufacturer’s protocols. Raw data were normalized by robust multiarray analysis via the RMA package (Irizarry et al., 2003) and subsequently analyzed to detect genes differentially expressed between EGFRL858R- vs GFP-expressing cells and KRASG12V- vs GFP-expressing cells at each time point for each cell line using a generalized linear regression model and applying an empirical Bayesian fit through the limma package (Ritchie et al., 2015) in R (R Foundation for Statistical Computing, Vienna, Austria, version 3.6.1). Differentially expressed genes in EGFRL858R or KRASG12V vs GFP at each time point with Benjamini–Hochberg corrected P values < 0.05 were considered significant. Significantly upregulated or downregulated genes in KRASG12V-induced cells over GFP controls were analyzed by Enrichr (Chen et al., 2013; Kuleshov et al., 2016) separately to identify enriched ENCODE and ChEA consensus TFs from the ChIP-X database. Gene Set Enrichment Analysis (GSEA) was performed using GSEA software version 4.0.3 with default parameters using the gene set obtained from hallmark gene sets (Subramanian et al., 2005). Gene expression data has been deposited in the Gene Expression Omnibus (GEO, accession number GSE160482). Additional microarray data for a panel of LUAD and SCLC cell lines was downloaded from GEO (GSE4824) and plotted using Morpheus (https://software.broadinstitute.org/morpheus) as previous described (Lockwood et al., 2008).
 
-## Phospho-kinase array analysis
+### Phospho-kinase array analysis
 
 The Proteome Profiler Human Phospho-Kinase Array Kit (R and D Systems, Minneapolis, MN, USA) was purchased and phosphorylation profiles of kinases were analyzed according to the manufacturer’s protocol.
 
-## Reverse transcription and quantitative real-time PCR analysis
+### Reverse transcription and quantitative real-time PCR analysis
 
 Total RNA was isolated from cell lines as described above and was reverse transcribed to cDNA using a High-Capacity RNA-to-cDNA Kit (Thermo Fisher Scientific). Real-time quantitative PCR reactions were performed using TaqMan Gene Expression Assay Mix and TaqMan Universal PCR Master Mix (Thermo Fisher Scientific) with the 7500 Fast Real Time PCR System (Thermo Fisher Scientific). The TaqMan Gene Expression Assay Mix for REST (Hs05028212_s1) was obtained from Thermo Fisher Scientific. The ΔΔCt method was used for relative expression quantification using the average cycle thresholds. The relative expression of REST represents an average of triplicates that are normalized to the transcription levels of beta-actin (Hs99999903_m1; Thermo Fisher Scientific).
 
-## RNA interference
+### RNA interference
 
 Approximately 1.5 × 106 cells were transfected with ON-TARGETplus siRNA pools (Horizon Discovery) using DharmaFECT one transfection reagent (Horizon Discovery) at a final concentration of 50 nM against the following targets: MAPK3 (L-003592–00), MAPK1 (L-003555–00), REST (L-006466–00), CIC (L-015185–01), ETV4 (L-004207–00), and ETV5 (L-008894–00) as well as a non-targeting control (D-001810–10). Cells were cultured for 72 hr after transfection and used for further analyses. Where indicated, doxycycline was added at 100 ng/mL at the time of transfection.
 
-## Dose-response analysis
+### Dose-response analysis
 
 Cells of PC9 and H1975 derivatives were seeded in 96-well plates at a density of 1.5 × 103 cells per well. After 24 hr, osimertinib was added at different concentrations. Cells were allowed to grow for 72 hr after osimertinib addition and cell viability was assessed using alamarBlue cell viability agent.
 
-## Generation of osimertinib-resistant cells
+### Generation of osimertinib-resistant cells
 
 To generate resistant cell lines to osimertinib, we exposed RB1-proficient or -deficient PC9 and H1975 cells to the drug by either stepwise dose-escalation (starting at 10 nM or 30 nM and ending with 1 μM or 2 μM for PC9 and H1975, respectively) or initial high-dose (1 μM) method. Osimertinib was refreshed every 3 or 4 days. To capture possible SCLC-transformed cells which were anticipated to be likely in suspension, we passaged both adherent and suspended cells together during making cells resistant to osimertinib. Resistant cells were maintained as polyclonal populations under constant exposure to the drugs.
 
-## Analysis of acquired genomic alterations by MSK-IMPACT
+### Analysis of acquired genomic alterations by MSK-IMPACT
 
 Cell lines were profiled by the MSK-IMPACT (Integrated Mutation Profiling of Actionable Cancer Targets) platform which is a hybridization capture-based next generation sequencing (NGS) assay for targeted deep sequencing of exons and selected introns of 468 cancer-associated genes and gene fusions (Cheng et al., 2015). The assay detects mutations and copy-number alterations. Genomic DNA was extracted from osimertinib-resistant cells as well as matched parental cells using a DNeasy Blood and Tissue Kit (Qiagen, Hilden, Germany). We reviewed all candidate alterations identified in resistant cells as well as parental cells and considered those identified only in resistant cells as candidate acquired resistance genomic alterations to osimertinib.
 
-## Subcellular fractionation
+### Subcellular fractionation
 
 H2107, H82, and H524 cell lines were subjected to subcellular fractionation using NE-PER Nuclear and Cytoplasmic Extraction Reagents (Thermo Fisher Scientific) according to the manufacturer’s instruction. Fractionation efficiency was confirmed by western blot analysis using MYC as nuclear and GAPDH as cytoplasmic protein controls, respectively.
 
-## ATAC-seq analysis
+### ATAC-seq analysis
 
 H2107-KRASG12V and H524-KRASG12V cells were treated with doxycycline ±SCH772984 (1 μM) for 72 hr. H82-KRASG12V cells were treated with the following chemicals: doxycycline; doxycycline +SCH772984 (1 μM); doxycycline +SB-747651A (5 μM); doxycycline +A-485 (400 nM); or doxycycline +SB-747651A (5 μM)+A-485 (400 nM). After 72 hr treatment, these cells as well as corresponding non-treated control cells were collected and frozen. ATAC-seq was performed using the Omni-ATAC protocol (Corces et al., 2017) with slight modifications as below. In brief, cells were resuspended in nuclear lysis buffer (10 mM Tris-HCl pH 7.4; 10 mM NaCl; 3 mM MgCl2; 0.1% NP-40 0.1% Tween-20, 0.01% Digitonin) on ice, then spun down in a cold centrifuge at 600 x g for 10 min, resuspended in RSB Tween and nuclei were quantified using Trypan Blue (Invitrogen) on a Countess II Counter (Invitrogen). An aliquot of 50,000 nuclei per sample was transferred to a fresh tube, spun down, resuspended in transposition solution and transposed for 30 min at room temperature as described previously (Corces et al., 2017). Libraries were prepared using standard Illumina Nextera indices. Library cleanup and dual-sided size selection was performed using SPRIselect beads (Beckman Coulter) with 0.4X and 1.2X ratios. Sequencing was performed on a NextSeq 500 (Illumina) with 150 cycles on a high-output cartridge in paired-end mode at the Center for Genomics and Health Informatics (CHGI) at the Cumming School of Medicine (University of Calgary). On average, 73,950,218 reads were generated for each library (range: 50,913,762–94,506,244 reads). Data has been deposited in GEO (GSE160204).
 
 Sequencing data were aligned using bwa (0.7.17) to the hg38 assembly of the human genome (Li and Durbin, 2009). Extraneous chromosomes and low-quality reads were removed using SAMtools (v 1.10) (Li et al., 2009) and PCR duplicates were removed using Picard tools (Broad Institute). Peaks were called using MACS2 (Zhang et al., 2008) using the following parameters: -g hs -q 0.05 --shift −100 --extsize 200 --nomodel -B --keep-dup all, followed by pileup construction and fold-change graph generation using macs2 bdgcmp. A union peaklist across all samples was generated using BEDTools (Quinlan and Hall, 2010), and absolute signal at each peak was extracted from each sample. These counts tables were analyzed using DESeq2 (Love et al., 2014) in R to identify differentially accessible regions, with the following cut-offs: absolute log fold change greater than 1.5, p<0.01, and minimum peak signal of 20,000. Motif analysis of differentially accessible regions was performed using the findMotifsGenome function of HOMER (v4.11) (Heinz et al., 2010). Motif profiles were generated using HOMER. Motif enrichment rankings were computed using a method described previously (Park et al., 2018). In brief, for each condition, motif enrichment lists in regions of lost and increased accessibility were arranged by fold change and p value, assigning each a separate rank for regions of lost and increased accessibility. Motif ranks in regions of lost and increased accessibility were averaged over all samples. Final score was obtained by subtracting the rank order of each motif in the increased accessibility regions from rank order in the regions of lost accessibility, and motifs were arranged in descending order by score. Permutation analysis was conducted using regioneR (Gel et al., 2016), with 500 permutations, using publicly available H3K27ac data for human lung from the Roadmap Epigenomics consortium (Bernstein et al., 2010) (GEO ID: GSM906395).
 
-## Statistical analysis
+### Statistical analysis
 
 Differences in continuous variables were analyzed by the Student’s t tests or one-way ANOVA followed by the Holm’s multiple comparisons post-test. IC50 values in dose-response analyses were compared by the extra sum-of-squares F test. The statistical analyses were performed using R software, version 3.6.1 and GraphPad Prism, version 8.2.1 (GraphPad Software, San Diego, CA, USA). All statistical tests were two-sided. p Values < 0.05 were considered statistically significant. Data are presented as mean ± SEM or mean ± SD of a minimum of three independent experiments.

@@ -43,7 +43,7 @@
 
 ## Abstract
 
-Cryptococcal meningitis has high mortality. Flucytosine is a key treatment but is expensive and rarely available. The anticancer agent tamoxifen has synergistic anti-cryptococcal activity with amphotericin in vitro. It is off-patent, cheap, and widely available. We performed a trial to determine its therapeutic potential. Open label randomized controlled trial. Participants received standard care – amphotericin combined with fluconazole for the first 2 weeks – or standard care plus tamoxifen 300 mg/day. The primary end point was Early Fungicidal Activity (EFA) – the rate of yeast clearance from cerebrospinal fluid (CSF). Trial registration https://clinicaltrials.gov/ct2/show/NCT03112031 . Fifty patients were enrolled (median age 34 years, 35 male). Tamoxifen had no effect on EFA (−0.48log10 colony-forming units/mL/CSF control arm versus −0.49 tamoxifen arm, difference −0.005log10CFU/ml/day, 95% CI: −0.16, 0.15, p=0.95). Tamoxifen caused QTc prolongation. High-dose tamoxifen does not increase the clearance rate of Cryptococcus from CSF. Novel, affordable therapies are needed. The trial was funded through the Wellcome Trust Asia Programme Vietnam Core Grant 106680 and a Wellcome Trust Intermediate Fellowship to JND grant number WT097147MA.
+Background:Cryptococcal meningitis has high mortality. Flucytosine is a key treatment but is expensive and rarely available. The anticancer agent tamoxifen has synergistic anti-cryptococcal activity with amphotericin in vitro. It is off-patent, cheap, and widely available. We performed a trial to determine its therapeutic potential.Methods:Open label randomized controlled trial. Participants received standard care – amphotericin combined with fluconazole for the first 2 weeks – or standard care plus tamoxifen 300 mg/day. The primary end point was Early Fungicidal Activity (EFA) – the rate of yeast clearance from cerebrospinal fluid (CSF). Trial registration https://clinicaltrials.gov/ct2/show/NCT03112031.Results:Fifty patients were enrolled (median age 34 years, 35 male). Tamoxifen had no effect on EFA (−0.48log10 colony-forming units/mL/CSF control arm versus −0.49 tamoxifen arm, difference −0.005log10CFU/ml/day, 95% CI: −0.16, 0.15, p=0.95). Tamoxifen caused QTc prolongation.Conclusions:High-dose tamoxifen does not increase the clearance rate of Cryptococcus from CSF. Novel, affordable therapies are needed.Funding:The trial was funded through the Wellcome Trust Asia Programme Vietnam Core Grant 106680 and a Wellcome Trust Intermediate Fellowship to JND grant number WT097147MA.
 
 ## Introduction
 
@@ -61,35 +61,35 @@ In Vietnam induction treatment for cryptococcal meningitis consists of amphoteri
 
 ## Materials and methods
 
-## Study design and participants
+### Study design and participants
 
 The study design is described in detail in the published protocol (Ngan et al., 2019). In brief, we enrolled 50 patients in two hospitals in Ho Chi Minh City – the Hospital for Tropical Diseases and Cho Ray Hospital. Eligible adult patients (≥18 years of age) had a clinical syndrome consistent with cryptococcal meningitis and one or more of: (1) positive cerebrospinal fluid (CSF) India ink; (2) C. neoformans cultured from CSF or blood; (3) positive cryptococcal antigen Lateral Flow Antigen Test (LFA) in CSF. All patients were tested for HIV infection in accordance with standard of care. We excluded patients who were pregnant, had a history of thromboembolic disease, had received more than 4 days of anti-cryptococcal antifungal therapy, had any other indication for tamoxifen, had renal failure, or a rate-corrected (Framingham formula) QT interval >500ms. Written informed consent was obtained from all patients or their representatives.
 
-## Interventions
+### Interventions
 
 Patients were randomized to receive either standard of care induction antifungal therapy or standard of care plus tamoxifen. Standard of care antifungal therapy consisted of intravenous amphotericin B deoxycholate 1 mg/kg/day (Amphotret, Bharat Serums and Vaccines, India) combined with oral fluconazole 800 mg/day (Zolmed, Glomed Pharmaceuticals, Vietnam) for the first 14 days following randomization. Tamoxifen (Nolvadex, AstraZeneca UK Ltd) 300 mg/day was given orally. Amphotericin was infused over 4 hr after prehydration with normal saline and potassium supplementation (Khoo et al., 1994). Fluconazole and tamoxifen were administered simultaneously. All medication was directly observed while the patient was in hospital; all participants were in-patients for at least the first 14 days of the study.
 
 Following induction therapy all patients received fluconazole 800 mg once daily for 8 weeks. HIV-infected patients received daily pneumocystis prophylaxis with trimethoprim– sulfamethoxazole. Antiretroviral therapy was instituted 5–6 weeks after diagnosis via the national treatment programme.
 
-## Randomization
+### Randomization
 
 Randomization was in a ratio of 1:1, in blocks of 4 or 6, stratified by HIV serostatus (rapid test) and treating centre. The computer generated randomization list was password protected and stored on a secure server to which only the study pharmacist had access. Enrolment logs specific to each centre were used to assign patients to the next available sequential number and corresponding sealed treatment pack.
 
-## Outcome measures
+### Outcome measures
 
 The primary outcome was Early Fungicidal Activity (EFA), defined as the rate of decline in culturable yeast from CSF over the first 2 weeks following randomization.
 
 Secondary outcomes included survival until 10 weeks after randomization, disability at 10 weeks, frequency of grade 3, 4 or serious adverse events, immune reconstitution inflammatory syndrome (IRIS), QTc prolongation, visual deficit at 10 weeks, and time to new neurological events. Adverse events were defined according to the Common Terminology Criteria for Adverse Events (CTCAE) and categorized according to the Medical Dictionary for Regulary Activities system organ class. We categorized prolonged QTc intervals using this classification as normal (<450 ms for males, <460 ms for females), mildly prolonged (grade 1 or 2, ≥450 ms for males or ≥460 for females but ≤500 ms) and grade 3 or 4 (>500ms). Disability at 10 weeks was categorised as good, intermediate, poor, or death, as described previously (Day et al., 2013; Beardsley et al., 2016).
 
-## Monitoring and laboratory investigations
+### Monitoring and laboratory investigations
 
 Lumbar puncture was performed on study entry, days 3, 7, and 14 following randomization, and more frequently if indicated. Fungal burden was determined as previously described (Day et al., 2013). Twelve-lead electrocardiograms were recorded twice daily (10 s at 50 mm/sec), immediately before and 2 hr after administration of tamoxifen during the first 14 days, and on days 21 and 28. The QT interval was manually determined by measuring the interval in three limb and three chest leads, to calculate the median. The median QT interval was corrected (QTc) for rate using the Framingham formula[20]. Calmodulin inhibitors such as tamoxifen have previously been suggested to inhibit CD4 cell apoptosis in HIV-infected patients (Pan et al., 1998). CD4 counts were measured at baseline and at study week 10. The full laboratory investigation schedule is detailed in the published protocol (Ngan et al., 2019). Outpatient assessments with medication review were performed weekly until 4 weeks and at the completion of 6 and 10 weeks; more frequent review occurred if clinically indicated. Adherence following hospital discharge was assessed using pill counts. Cryptococcus isolates were typed using URA5-RFLP and underwent (microbroth) antifungal susceptibility testing as per CLSI guidelines (CLSI, 2002; Franzot et al., 1997). Previously tested clinical isolates were included as controls.
 
-## Sample size
+### Sample size
 
 Sample size considerations were based on two separate simulation experiments using data from our previously published trials in cryptococcal meningitis (Day et al., 2013; Beardsley et al., 2016). The estimated power was based upon 10,000 repetitions of each experiment. The full methodology is available within the published protocol (Ngan et al., 2019). Based on these simulations, enrolling 25 subjects per treatment group provided 80% and 90% power to detect a difference in EFA of −0.11 or −0.13 log10 colony-forming units/ml/day, respectively. This size of effect has previously been associated with survival benefit (Day et al., 2013; Beardsley et al., 2016).
 
-## Statistical analysis
+### Statistical analysis
 
 For the primary outcome, all recorded longitudinal quantitative fungal count measurements up to day 17 following randomization (allowing for some delays in the day 14 sampling) were included in the analysis. EFA, defined as the decline in fungal count (slope), was modeled based on a joint model consisting of a survival model and a linear mixed effects model with longitudinal log10 CSF quantitative culture fungal counts as the outcome. In the linear mixed effect model, we modeled the treatment groups and the time since enrolment and their interaction as fixed covariates. We used random patient-specific intercepts and slopes. The model was implemented in a Bayesian framework using Rstan. It allows appropriate handling of detection limits with longitudinal measurements and also allows adjustment for informative dropout due to early death within the first 17 days following randomization (Stan Development Team, 2019; R Development Core Team, 2018).
 
@@ -97,27 +97,537 @@ For the secondary outcomes, overall survival was visualized using Kaplan-Meier c
 
 ## Results
 
-## Trial recruitment
+### Trial recruitment
 
 The study recruited between October 2017 and May 2018. We screened 70 patients, enrolling 50 (40 HIV infected; 10 HIV uninfected) with 24 assigned to the intervention arm and 26 assigned to the control arm. Reasons for exclusion are shown in the study flow diagram (see Figure 1). One patient who was assigned to the intervention arm did not receive tamoxifen because of severe transaminitis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68929/elife-68929-fig1-v2.jpg)
 
-## Baseline characteristics
+### Baseline characteristics
 
 The baseline characteristics of the patients were broadly balanced between treatment groups. There were slightly more patients with normal Glasgow coma scores in the control group than in the intervention group (24 of 26 versus 19 of 24, see Table 1).
 
-## Primary outcome
+**Table 1.**
+ Clinical and investigation characteristics of patients at study entry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic</th>
+      <th>Total</th>
+      <th>Tamoxifen</th>
+      <th>Total</th>
+      <th>Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>N</td>
+      <td>N (%) or IQR*</td>
+      <td>N</td>
+      <td>N (%) or IQR*</td>
+    </tr>
+    <tr>
+      <td>Male sex</td>
+      <td>24</td>
+      <td>17 (71)</td>
+      <td>26</td>
+      <td>18 (69)</td>
+    </tr>
+    <tr>
+      <td>Median age in years</td>
+      <td>24</td>
+      <td>35 (31, 39)</td>
+      <td>26</td>
+      <td>32 (25, 35)</td>
+    </tr>
+    <tr>
+      <td>History of intravenous drug use</td>
+      <td>24</td>
+      <td>3 (13)</td>
+      <td>26</td>
+      <td>3/26 (12)</td>
+    </tr>
+    <tr>
+      <td>HIV infection</td>
+      <td>24</td>
+      <td>19 (83)</td>
+      <td>26</td>
+      <td>21/26 (81)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Current antiretroviral-therapy use</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>24</td>
+      <td>18 (75)</td>
+      <td>26</td>
+      <td>22 (84)</td>
+    </tr>
+    <tr>
+      <td>≤3 months duration</td>
+      <td>24</td>
+      <td>4 (17)</td>
+      <td>26</td>
+      <td>2 (8)</td>
+    </tr>
+    <tr>
+      <td>&gt;3 months duration</td>
+      <td>24</td>
+      <td>2 (8)</td>
+      <td>26</td>
+      <td>2 (8)</td>
+    </tr>
+    <tr>
+      <td>Median duration of illness — days</td>
+      <td>24</td>
+      <td>14 (10, 25)</td>
+      <td>26</td>
+      <td>12 (7, 28)</td>
+    </tr>
+    <tr>
+      <td>Symptoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Headache</td>
+      <td>24</td>
+      <td>24 (100)</td>
+      <td>26</td>
+      <td>26 (100)</td>
+    </tr>
+    <tr>
+      <td>Fever</td>
+      <td>24</td>
+      <td>22 (92)</td>
+      <td>26</td>
+      <td>23 (88)</td>
+    </tr>
+    <tr>
+      <td>Neck stiffness</td>
+      <td>22</td>
+      <td>20 (91)</td>
+      <td>26</td>
+      <td>21 (81)</td>
+    </tr>
+    <tr>
+      <td>Seizures</td>
+      <td>24</td>
+      <td>2 (8)</td>
+      <td>26</td>
+      <td>3 (12)</td>
+    </tr>
+    <tr>
+      <td>Abnormal visual acuity</td>
+      <td>22</td>
+      <td>6 (27)</td>
+      <td>26</td>
+      <td>4 (15)</td>
+    </tr>
+    <tr>
+      <td>Papilledema</td>
+      <td>21</td>
+      <td>2 (10)</td>
+      <td>25</td>
+      <td>1 (4)</td>
+    </tr>
+    <tr>
+      <td>Glasgow Coma Scale score</td>
+      <td>24</td>
+      <td></td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td></td>
+      <td>19 (79)</td>
+      <td></td>
+      <td>24 (92)</td>
+    </tr>
+    <tr>
+      <td>11–14</td>
+      <td></td>
+      <td>5 (21)</td>
+      <td></td>
+      <td>2 (8)</td>
+    </tr>
+    <tr>
+      <td>&lt;11</td>
+      <td></td>
+      <td>0 (0)</td>
+      <td></td>
+      <td>0 (0)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cranial nerve palsy</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>24</td>
+      <td>19 (79)</td>
+      <td>26</td>
+      <td>23 (88)</td>
+    </tr>
+    <tr>
+      <td>Cranial nerve VI</td>
+      <td>24</td>
+      <td>4 (17)</td>
+      <td>26</td>
+      <td>1 (4)</td>
+    </tr>
+    <tr>
+      <td>Other cranial nerve</td>
+      <td>24</td>
+      <td>1 (4)</td>
+      <td>26</td>
+      <td>3 (11)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Investigations</td>
+    </tr>
+    <tr>
+      <td>Median CSF opening pressure — cm of CSF</td>
+      <td>19</td>
+      <td>26.5 (18, 37)</td>
+      <td>23</td>
+      <td>24.5 (16, 47)</td>
+    </tr>
+    <tr>
+      <td>Median CSF white-cell count in HIV infected patients — cells/mm3</td>
+      <td>18</td>
+      <td>38.5 (7, 52)</td>
+      <td>20</td>
+      <td>27 (10, 55)</td>
+    </tr>
+    <tr>
+      <td>Median CSF white-cell count in HIV uninfected patients — cells/mm3</td>
+      <td>5</td>
+      <td>122 (64, 187)</td>
+      <td>5</td>
+      <td>94 (45, 117)</td>
+    </tr>
+    <tr>
+      <td>Median CSF glucose — mmol/l</td>
+      <td>24</td>
+      <td>2.47 (1.70, 3.14)</td>
+      <td>25</td>
+      <td>2.31 (1.44, 2.76)</td>
+    </tr>
+    <tr>
+      <td>Median blood glucose — mmol/l</td>
+      <td>24</td>
+      <td>5.86 (4.92, 6.84)</td>
+      <td>26</td>
+      <td>6.21 (5.11, 7.81)</td>
+    </tr>
+    <tr>
+      <td>Median CSF: blood glucose ratio</td>
+      <td>24</td>
+      <td>0.40 (0.24, 0.53)</td>
+      <td>25</td>
+      <td>0.37 (0.16, 0.45)</td>
+    </tr>
+    <tr>
+      <td>Median CSF fungal count — log10 CFU/ml</td>
+      <td>24</td>
+      <td>4.60 (3.90, 5.17)</td>
+      <td>26</td>
+      <td>5.16 (3.17, 5.87)</td>
+    </tr>
+    <tr>
+      <td>Median CD4 count in HIV infected patients — cells/mm3</td>
+      <td>17</td>
+      <td>20 (8, 49)</td>
+      <td>21</td>
+      <td>17 (9, 45)</td>
+    </tr>
+    <tr>
+      <td>Median CD4 count in HIV uninfected patients — cells/mm3</td>
+      <td>5</td>
+      <td>376 (348, 382)</td>
+      <td>5</td>
+      <td>504 (305, 968)</td>
+    </tr>
+    <tr>
+      <td>Median creatinine — mg/dl</td>
+      <td>24</td>
+      <td>0.82 (0.66, 1.05)</td>
+      <td>26</td>
+      <td>0.78 (0.66, 0.98)</td>
+    </tr>
+    <tr>
+      <td>QTc interval — ms</td>
+      <td>24</td>
+      <td>395.03 (377.55, 410.45)</td>
+      <td>26</td>
+      <td>401.20 (374.76, 420.06)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Median, interquartile range (IQR) for continuous data and N (%) for categorical data._
+
+### Primary outcome
 
 There was no detectable difference in the early fungicidal activity (EFA) of the two treatment regimens (see Figure 2A). In the intention-to-treat analysis, the rates of fungal decline per day were −0.48 and −0.49 log10colony-forming units (CFU)/ml/day in the control and tamoxifen groups respectively (difference −0.005 log10 CFU/ml/day, 95% CI: −0.16, 0.15); p-value = 0.95, (see Table 2). There was no detectable difference in EFA in the per-protocol population analysis, or by HIV infection status (see Table 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68929/elife-68929-fig2-v2.jpg)
 
-**Figure 2.:** A) the rate of sterilzation of cerebrospinal fluid, and (B) survival until 10 weeks after randomisation.(A) Decline in fungal count in CSF as measured in colony-forming units (CFU) per milliliter over the first 2 weeks of treatment by treatment arm. Data from individual patients are shown in grey lines. Bold blue lines show estimated mean with 95% credible intervals (shaded band) of CSF fungal counts based on the joint model described in the statistical analysis. The rate of decline was −0.49 log10CFU/ml/day in patients receiving tamoxifen versus −0.48 log10CFU/ml/day in control patients. The horizontal dashed lines represent the value of detection limit (4.5 CFU/ml). The fitted line crosses the horizontal dashed lines of the detection limit value after day 8 because 25% and 75% of patients had fungal counts under the detection limit at days 8 and 15, respectively. (B) Kaplan-Meier survival cures for each study arm over the 10-week study period. Seven death events occurred in the control arm versus 8 in the tamoxifen intervention arm by 10 weeks (estimated risk 27% versus 34%, absolute risk difference = 6.5%) (95% Confidence Interval −19.2 to 32.1%, p = 0.62).
+**Figure 2.:** (A) Decline in fungal count in CSF as measured in colony-forming units (CFU) per milliliter over the first 2 weeks of treatment by treatment arm. Data from individual patients are shown in grey lines. Bold blue lines show estimated mean with 95% credible intervals (shaded band) of CSF fungal counts based on the joint model described in the statistical analysis. The rate of decline was −0.49 log10CFU/ml/day in patients receiving tamoxifen versus −0.48 log10CFU/ml/day in control patients. The horizontal dashed lines represent the value of detection limit (4.5 CFU/ml). The fitted line crosses the horizontal dashed lines of the detection limit value after day 8 because 25% and 75% of patients had fungal counts under the detection limit at days 8 and 15, respectively. (B) Kaplan-Meier survival cures for each study arm over the 10-week study period. Seven death events occurred in the control arm versus 8 in the tamoxifen intervention arm by 10 weeks (estimated risk 27% versus 34%, absolute risk difference = 6.5%) (95% Confidence Interval −19.2 to 32.1%, p = 0.62).
 
-## Secondary endpoints
+**Table 2.**
+ Primary outcome: Early Fungicidal Activity over the first 2 weeks following randomization (log10 colony-forming units (CFU)/ml/day).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Treatment Arm</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr>
+      <th>Analysis populations</th>
+      <th>Total</th>
+      <th>Tamoxifen</th>
+      <th>Total</th>
+      <th>Standard of Care</th>
+      <th>Difference in change</th>
+      <th>p-value†</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>Change/day (95% CI*)</th>
+      <th>N</th>
+      <th>Change/day (95% CI*)</th>
+      <th>(95% CI*)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intention-to-treat</td>
+      <td>24</td>
+      <td>−0.49 (−0.62,–0.37)</td>
+      <td>26</td>
+      <td>−0.48 (−0.61,–0.37)</td>
+      <td>−0.005 (−0.16, 0.15)</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Per-protocol</td>
+      <td>23</td>
+      <td>−0.48 (−0.61,–0.36)</td>
+      <td>25</td>
+      <td>−0.48 (−0.61,–0.37)</td>
+      <td>0.004 (−0.17, 0.17)</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>HIV-infected patients</td>
+      <td>19</td>
+      <td>−0.49 (−0.65,–0.37)</td>
+      <td>21</td>
+      <td>−0.42 (−0.55,–0.31)</td>
+      <td>−0.072 (−0.25, 0.10)</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>HIV-uninfected patients</td>
+      <td>5</td>
+      <td>−0.42 (−0.74,–0.21)</td>
+      <td>5</td>
+      <td>−0.57 (−0.93,–0.33)</td>
+      <td>0.16 (−0.18, 0.55)</td>
+      <td>0.37</td>
+    </tr>
+  </tbody>
+</table>
+
+_*95% CI corresponds to Bayesian 95% credible intervals.†p-value refers to crude ‘Wald-type’ tests of the mean estimate divided by its standard deviation of the Monte Carlo Markov chain sampling of coefficients derived from the joint model._
+
+### Secondary endpoints
 
 The secondary outcomes in terms of mortality, disabilities, and change in CD4 count are summarized in Table 3. Death occured in 8 of 24 patients in the tamoxifen group and 7 of 26 in the control group (Kaplan-Meier mortality estimates 34% and 27% respectively, risk difference 6.5%; 95% confidence interval [CI], −19.2 to 32.1%; P=0.62 Figure 2B). Fewer patients in the tamoxifen arm were classified as having a good outcome at 10 weeks compared with the control arm (9% versus 36%). We found no difference in change in CD4 counts in HIV patients by study arm over the 10-week period of follow-up (see Table 3).
+
+**Table 3.**
+ Secondary outcomes: death, disability, and change in CD4 count.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Death by 10 weeks</th>
+      <th>Tamoxifen N/total (%)</th>
+      <th>Control N/total (%)</th>
+      <th>Risk difference % (95% CI)</th>
+      <th>p- value*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Intention-to-treat population</td>
+      <td>8/24 (34)</td>
+      <td>7/26 (27)</td>
+      <td>6.47 (−19.15, 32.09)</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td colspan="2">Per-protocol population</td>
+      <td>7/23 (31)</td>
+      <td>6/25 (24)</td>
+      <td>6.50 (−18.90, 31.89)</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td colspan="2">HIV infected patients</td>
+      <td>7/19 (37)</td>
+      <td>6/21 (29)</td>
+      <td>8.39 (−20.99, 37.77)</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td colspan="2">HIV uninfected patients</td>
+      <td>1/5 (20)</td>
+      <td>1/5 (20)</td>
+      <td>0.00 (−49.58, 49.58)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td colspan="2">Disability at 10 weeks</td>
+      <td colspan="3"></td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td colspan="2">Good</td>
+      <td>2/23 (9)</td>
+      <td>9/25 (36)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Intermediate</td>
+      <td>7/23 (30)</td>
+      <td>6/25 (24)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Severe disability</td>
+      <td>6/23 (26)</td>
+      <td>3/25 (12)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Death</td>
+      <td>8/23 (35)</td>
+      <td>7/25 (28)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Disability at 10 weeks in HIV infected patients</td>
+      <td colspan="3"></td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td colspan="2">Good</td>
+      <td>2/18 (11)</td>
+      <td>8/20 (40)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Intermediate</td>
+      <td>5/18 (28)</td>
+      <td>6/20 (30)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Severe disability</td>
+      <td>4/18 (22)</td>
+      <td>0/20 (0)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Death</td>
+      <td>7/18 (39)</td>
+      <td>6/20 (30)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Disability at 10 weeks in HIV uninfected patients</td>
+      <td colspan="3"></td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td colspan="2">Good</td>
+      <td>0/5 (0)</td>
+      <td>1/5 (20)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Intermediate</td>
+      <td>2/5 (40)</td>
+      <td>0/5 (0)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Severe disability</td>
+      <td>2/5 (40)</td>
+      <td>3/5 (60)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Death</td>
+      <td>1/5 (20)</td>
+      <td>1/5 (20)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Change in CD4 count over 10 weeks (cells/uL)</td>
+      <td>Median Change (IQR) (N)</td>
+      <td>Median Change (IQR) (N)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV-infected patients</td>
+      <td></td>
+      <td>50.0 (5.00, 142.5) (10)</td>
+      <td>40.0 (7.0, 76.0) (13)</td>
+      <td></td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>HIV-uninfected patients</td>
+      <td></td>
+      <td>393.5 (211.3, 613.8) (4)</td>
+      <td>−257.5 (−413.7,–171.0) (4)</td>
+      <td></td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-Values not corrected for multiple testing._
 
 The number of patients having grade 3 or 4 adverse events were similar between treatment arms (see Table 4), with the exception of QTc prolongation events. Eight patients had grade 3 or 4 QTc prolongation events in the tamoxifen arm, compared with one in the control arm (p=0.02). The trend and difference in QTc intervals over the first 2 weeks of treatment are shown in Figure 3. Tamoxifen resulted in QTc prolongation over the 2-week treatment period (p<0.001).
 
@@ -125,9 +635,150 @@ The number of patients having grade 3 or 4 adverse events were similar between t
 
 **Figure 3.:** Faint lines display change in individual patient QTcs; bold lines display the estimated mean and shaded bands the 95% Confidence Intervals; blue = control arm, red = tamoxifen arm. The maximum median difference in the QTc intervals between study arms immediately prior to drug administration was 37.07 ms (95% CI: 21.09, 53.04) and occurred on day 9 of the study. The largest difference in median QTc 2 hr post-drug administration was 33.44 ms (95% CI: 18.67, 48.21) and occurred on day 8 of the study. Additional details regarding change in QTc are provided in the Supplementary Appendix.
 
+**Table 4.**
+ Grade 3 or 4 adverse events by 10 weeks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Event</th>
+      <th colspan="2">Tamoxifen (N = 24)</th>
+      <th>Control (N = 26)</th>
+      <th>p-value*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Number of patients with Grade 3 or 4 adverse events (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any adverse event</td>
+      <td>24 (100)</td>
+      <td colspan="2">26 (100)</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>New neurological events</td>
+      <td>9 (38)</td>
+      <td colspan="2">7 (27)</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>New AIDS-defining illness (HIV patients only)</td>
+      <td>3 (16)</td>
+      <td colspan="2">5 (24)</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>New cardiac events</td>
+      <td>9 (38)</td>
+      <td colspan="2">4 (15)</td>
+      <td>0.145</td>
+    </tr>
+    <tr>
+      <td>Supraventricular tachycardia</td>
+      <td>1 (4)</td>
+      <td colspan="2">0 (0)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Ventricular extrasystoles</td>
+      <td>3 (13)</td>
+      <td colspan="2">0 (0)</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Right Bundle Branch Block</td>
+      <td>0 (0)</td>
+      <td colspan="2">1 (4)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>QTc prolongation</td>
+      <td>8 (33)</td>
+      <td colspan="2">1 (4)</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Myocardial infarction</td>
+      <td>0 (0)</td>
+      <td colspan="2">1 (4)</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Cardiac arrest</td>
+      <td>1 (4)</td>
+      <td colspan="2">0 (0)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Other cardiac adverse events</td>
+      <td>1 (4)</td>
+      <td colspan="2">1 (4)</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td colspan="4">Laboratory abnormalities</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anemia</td>
+      <td>18 (75)</td>
+      <td colspan="2">18 (69)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Leukopenia</td>
+      <td>2 (8)</td>
+      <td colspan="2">2 (8)</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Thrombocytopenia</td>
+      <td>2 (8)</td>
+      <td colspan="2">4 (15)</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Elevated aminotransferase</td>
+      <td>2 (8)</td>
+      <td colspan="2">4 (15)</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Raised Creatinine</td>
+      <td>3 (13)</td>
+      <td colspan="2">6 (23)</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>Hyperkalemia</td>
+      <td>2 (8)</td>
+      <td colspan="2">6 (23)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Hypokalemia</td>
+      <td>17 (71)</td>
+      <td colspan="2">20 (77)</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Hyponatremia</td>
+      <td>18 (75)</td>
+      <td colspan="2">23 (88)</td>
+      <td>0.39</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-Values were not corrected for multiple testing._
+
 Three patients in the tamoxifen arm had grade 3 or 4 ventricular extra-systole events compared with none in the control arm (p=0.21). A 33-year-old male patient who had received tamoxifen suffered a cardiorespiratory arrest following a convulsion on day 21 of the study. He had no history of pre-existing cardiac disease. His ECG on admission had been normal with a QTc of 409 ms, and when performed routinely on the morning of day 21 showed mild sinus bradycardia (57 beats/minute) and a QTc interval of 477 ms. The arrest was not associated with ventricular arrhythmia although he had had grade 3 prolongation of QTc during the first 14 days of the study, which had resolved following tamoxifen interruption.
 
-## Microbiology and susceptiblity testing
+### Microbiology and susceptiblity testing
 
 All HIV infected patients, and seven HIV uninfected patients, had meningitis due to Cryptococcus neoformans molecular group VNI. Three HIV uninfected patients had disease due to Cryptococcus gattii (VGI). All isolates underwent susceptibility testing. The MIC90 of amphotericin B and fluconazole were 2 mg/L and 4 mg/L, respectively. The MIC90 of tamoxifen was 8 mg/L. We estimated the presence of drug interactions by calculating the fractional inhibitory concentration index (FICI) for each isolate. This was ≤0.5 (suggestive of a possible synergistic interaction) for tamoxifen combined with amphotericin in six isolates (12%), and for tamoxifen combined with fluconazole in two isolates (4%).
 
@@ -147,11 +798,11 @@ Other drugs suggested as repurposing candidates for cryptococcal meningitis incl
 
 In the mean time, improving access to flucytosine remains a key goal. Progress has been made through efforst to increase generic manufacture through the the Unitaid- Clinton Health Access Initiative for Advanced HIV Disease Initiative’s partnership with the Global Fund and the President's Emergency Plan for AIDS Relief. This has resulted in price reductions allowing 2-week treatment courses to be procured for around $100 in some locations.
 
-## Conclusion
+### Conclusion
 
 Despite apparent in vitro anti-cryptococcal effect including synergy when combined with amphotericin, tamoxifen does not increase the rate of clearance of yeast from cerebrospinal fluid in HIV infected and uninfected patients with cryptococcal meningitis; it is unlikely to result in clinical benefit. Small scale phase two trials such as the one presented here should precede the evaluation of potentially repurposable drugs in clinical endpoint studies. However, the failure of both tamoxifen and sertraline in recent studies underlines the importance of developing novel, specifically anti-cryptococcal drugs. This will require the support of government and charitable bodies to ensure treatments remain affordable.
 
-## Data access
+### Data access
 
 The original de-identified clinical data underlying the study are available by emailing the OUCRU Data Access Committee at DAC@oucru.org or ekestelyn@oucru.org (Head of the Clinical Trials Unit and Data Access Committee Chair). The review procedures (the data sharing policy and the data request form) are available on the OUCRU website at http://www.oucru.org/data-sharing/.
 

@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Urology, University of California, San Francisco San Francisco United States
-2. https://ror.org/038321296 Gladstone Institutes San Francisco United States
-3. https://ror.org/04wncat98 The Wistar Institute Philadelphia United States
+1. Department of Urology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Gladstone Institutes San Francisco United States ([ROR:038321296](https://ror.org/038321296))
+3. The Wistar Institute Philadelphia United States ([ROR:04wncat98](https://ror.org/04wncat98))
 
 † Corresponding author
 
@@ -34,9 +34,17 @@ In this study, we developed a new approach taking advantage of the high-paramete
 
 ## Results
 
-## Development and validation of CyTOF-Lec
+### Development and validation of CyTOF-Lec
 
 To establish a methodology that could simultaneously characterize protein and glycan features at the single-cell level, we developed a panel of lanthanide metal-conjugated antibodies and lectins compatible with CyTOF, which we refer to as CyTOF-Lec (Supplementary file 1 A). As tonsils provide an abundant source of both T and B cells, we used these cells for our initial validation of the panel. First, we confirmed that the staining patterns of the lanthanide-conjugated antibodies were consistent with the known differential expression of their target antigens on tonsillar T vs. B cells (Figure 1—figure supplement 1), and with results previously reported using CyTOF without lectin staining (Ma et al., 2020). To ensure that the lectin staining did not displace or alter the antibodies bound to their protein targets, we developed a protocol whereby surface antibody staining was completed prior to lectin staining (see Materials and methods). We confirmed that all five lectins (AOL, MAL-1, WGA, UEA-1, ABA, see Supplementary file 1) conjugated to lanthanides stained both T and B cells (Figure 1—figure supplement 1). Furthermore, we confirmed that antibody binding to CD3, CD4, and CD8 was the same whether or not the specimens were subsequently stained with lectins (Figure 1A). To establish the specificity of lectin binding, we assessed the effect of sialidase, which degrades cell-surface sialic acid. As expected, binding by WGA and MAL-1, which detect different forms of sialic acid (Supplementary file 1), was decreased after sialidase treatment of the cells (Figure 1B). By contrast, binding by AOL and UEA-1, which detect different forms of fucose, and ABA, which detects T antigen (Supplementary file 1), were all increased (Figure 1C–D). This was expected as removal of sialic acid should enable better detection of these other glycan structures, and is consistent with prior reports (Giron et al., 2020b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig1-v1.jpg)
+
+**Figure 1.:** (A) Antibody staining for protein markers is not altered by lectins. Shown are histograms of tonsil cells expressing CD3, CD8, or CD4, as detected by CyTOF after antibody staining followed or not by staining with metal-conjugated lectins (AOL: Aspergillus oryzae; MAL-1: Maackia amurensis I; WGA: wheat germ agglutinin; UEA-1: Ulex europaeus I; and ABA: Agaricus bisporus agglutinin). Protein expression (y-axis) is represented as the percentage of the maximal expression level detected for each staining. (B–D) Sialidase treatment elicits expected changes in lectin binding. Tonsil cells were treated with sialidase (20 μg/ml) for 1 hr at 37°C, and then stained with the CyTOF-Lec panel. Shown are histograms depicting the extent of interaction with sialic acid-binding (B), fucose-binding, (C) or T antigen-binding (D) lectins. Removal of sialic acid by sialidase decreases binding by sialic acid-binding lectins, while increasing binding by the fucose- and T antigen-binding lectins, as expected.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression levels of each protein antigen and glycan (the latter identified by their lectin) on tonsillar T and B cells, as assessed by CyTOF. As demonstrated schematically in the upper left, the top population of each plot corresponds to T cells (CD3+) while the bottom population corresponds to B cells (CD3-). Each antibody in the panel was validated by standard two-dimensional plots showing expression of CD3 (y-axis) vs. each indicated antibody or lectin (x-axis). The observed expression patterns of the protein antigens are consistent with known expression patterns on T cells and B cells. Results are gated on live, singlet cells. The bottom row depicts relative lectin staining viewed as a t-SNE heatmap, with the B cells, CD8+ naïve T cells (CD8+ Tn), CD8+ memory T cells (CD8+ Tm), CD4+ naïve T cells (CD4+ Tn), and CD4+ memory T cells (CD4+ Tm) annotated. (B) The intracellular protein antigens NFAT1, Birc5, CTLA-4, RORγt, and Tbet were further assessed for differential expression among CD4+ Tm vs. CD4+ Tn populations by monitoring for expression levels on CD45RO+ (marker of memory) vs. CD45RA+ (marker of naïve) cells. These antigens were all preferentially expressed in the memory compartment, consistent with their known expression patterns.
 
 To determine whether the conjugated lectins could detect differences in cell-surface glycans between subsets of immune cells, we compared binding by each of the five lectins to B cells, memory CD8+ T cells (CD8+ Tm cells), naïve CD8+ T cells (CD8+ Tn cells), memory CD4+ T cells (CD4+ Tm cells), and naïve CD4+ T cells (CD4+ Tn cells). We assessed the expression of glycans on these subsets not only among tonsillar cells, but also among PBMCs and endometrial T cells for comparison. For all three sites, the fucose-specific lectins AOL and UEA1 bound more to CD4+ Tm and CD8+ Tm cells than to their respective naïve counterparts, although the difference only reached significance for AOL binding in tonsils (Figure 2A). These results are consistent with the known role of core surface fucosylation for T cell activation, which is more prominent within the memory compartment (Fujii et al., 2016; Liang et al., 2018). The sialic acid-binding lectins WGA and MAL1 also consistently bound to memory T cells more than to their naïve counterparts, although this only reached statistical significance for MAL1 binding of endometrial CD8+ T cells (Figure 2B). Binding by ABA did not show a consistent pattern between memory vs. naïve T cells (Figure 2C). Binding by all five lectins was low on B cells, particularly as compared to memory CD8+ T cells (Figure 2A–C).
 
@@ -46,25 +54,53 @@ To determine whether the conjugated lectins could detect differences in cell-sur
 
 These results establish CyTOF-Lec as a panel that can quantitate glycan and protein expression at the single-cell level, and detect differential glycan expression between different subsets of immune cells.
 
-## HIV alters expression of fucose and sialic acid in a tissue site-dependent manner
+### HIV alters expression of fucose and sialic acid in a tissue site-dependent manner
 
 We next applied CyTOF-Lec to determine the extent to which glycans are remodeled on the surface of HIV-infected cells. Fresh endometrial biopsies (n=6 donors) and whole tonsils from tonsillectomies (n=4 donors) from HIV seronegative individuals were processed into single-cell suspensions, and then immediately exposed to the HIV-F4.HSA, a replication-competent and Nef-sufficient virus that harbors the CCR5-tropic 109FPB4 transmitted/founder (T/F) Env (Cavrois et al., 2017). In addition, PBMCs were isolated from whole blood of HIV seronegative individuals (n=4 donors) and exposed to HIV-F4.HSA. To limit potential confounding effects of ex vivo-induced T cell activation, infection was carried on unstimulated cells. Infection was allowed to proceed for 3 days, after which the cells, as well as cells from paired uninfected control cultures, were harvested for CyTOF-Lec analysis. CD4+ T cells were identified as intact, live singlet CD3+ CD8- cells, while infected cells were identified as intact, live singlet CD3+ CD8- CD4Low cells (Figure 3—figure supplement 1), to account for the downregulation of cell-surface CD4 by HIV (Doms and Trono, 2000; Garcia and Miller, 1991; Lama, 2003; Piguet et al., 1999). Consistent with our prior studies (Ma et al., 2020), endometrial T cells were the most susceptible to HIV-F4.HSA infection (Figure 3—figure supplement 2A). HIV-infected cells from all three sites were remodeled, as established qualitatively by assessing their locations on a t-SNE (Figure 3—figure supplement 2B) as well as quantitatively using SLIDE (Sen et al., 2014; Figure 3—figure supplement 2C). The remodeling of the infected cells is consistent with prior studies (Cavrois et al., 2017; Ma et al., 2020; Xie et al., 2021), and confirms that CyTOF-Lec is a valid panel for the analysis of remodeling.
 
 To identify specific glycans that were remodeled, we implemented PP-SLIDE to identify the predicted precursor (PRE) cells (Cavrois et al., 2017; Ma et al., 2020; Neidleman et al., 2020b; Xie et al., 2021). PRE cells harbor the predicted original (pre-remodeling) features of T cells infected by HIV and are identified using k-nearest neighbor approaches by matching, in the high-parameter CyTOF space, the T cells in the uninfected culture most similar in phenotype to every HIV-infected cell (Figure 3—figure supplement 3A). As expected (Ma et al., 2020), the PRE cells from all three sites were preferentially memory CD4+ T cells (Figure 3—figure supplement 3B, C). Having identified the PRE cells, we then determined which glycans, if any, were remodeled by HIV infection. This was accomplished by assessing for lectins that differentially bound the PRE as compared to the infected cells. Glycans were quantitated by reporting the median signal intensity (MSI) of their corresponding lectins among each population of cells from each donor. Interestingly, we found that both fucose and sialic acid were upregulated during HIV infection. Infected cells from all three sites potently upregulated total fucose as assessed by AOL binding (Figure 3A, Figure 3—figure supplement 4A), although this upregulation did not reach statistical significance (after correcting for multiple comparisons) for the endometrium. Binding by UEA1, however, was not significantly different between infected and PRE cells, and tended to be downregulated in the endometrium and tonsils, and upregulated in PBMCs (Figure 3A). As UEA1 binds α1–2 branched fucose (Supplementary file 1), these results suggest that fucosylation is globally upregulated upon infection of tissue CD4+ T cells with HIV, although not the type of fucosylation that creates α1–2 branched structure. In contrast to the fucose-binding lectins, both sialic acid-binding lectins were increased on infected compared to PRE cells (Figure 3B, Figure 3—figure supplement 4B), and this was observed for all three sites although results did not reach statistical significance for the endometrium. These results are consistent with an upregulation of both total sialic acid (recognized by WGA, which also binds to N-acetylglucosamine [GlcNAc]) (Schwarz et al., 1999) and α2–3 linked sialic acid (recognized by MAL-1) by HIV during infection. In contrast to fucose and sialic acid, we did not observe any marked upregulation of T antigen on infected cells (Figure 3C).
 
-## HIV preferentially infects memory CD4+ T cells with higher fucose and sialic acid levels
+![Figure 3.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-v1.jpg)
+
+**Figure 3.:** (A) HIV preferentially infects fucose-expressing cells and further upregulates fucose expression in a tissue site-dependent manner. Box plots showing binding by fucose-binding proteins on uninfected (UI), predicted precursor (PRE), and infected (INF) CD4+ T cells from the endometrium, tonsils, and PBMCs. All populations were pre-gated on live, singlet CD4+ Tm cells. AOL binds total/core fucose, while UEA1 binds α1–2 branched fucose. (B) HIV preferentially infects sialic acid-expressing cells and further upregulates sialic acid in a tissue site-dependent manner. Box plots showing binding by sialic acid-binding lectins. Results are presented as in panel A. WGA binds total sialylated glycans and MAL1 binds α2–3 sialylated glycans. (C) Box plots showing binding by T antigen-binding lectin ABA. Results are presented as in panel A. *p<0.05, **p<0.01 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Productively infected cells were defined as those that were CD3+ CD8- CD4LowHSA+. The plots on the far right show specimens from a representative uninfected (top) and infected (bottom) sample.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Cells from each of the indicated specimens from a representative donor were mock-treated or inoculated with the CCR5-tropic HIV-1 reporter virus F4.HSA, and monitored 3 days later for levels of productive infection. Results are gated on live, singlet CD3+ CD8- cells. Numbers correspond to the percentage of infected cells in each sample. (B) t-SNE plots of uninfected and infected cells from all donors combined. The observation that infected cells (red) reside in unique regions of the t-SNEs suggest viral-induced remodeling in all specimen types. Data are representative of a total of four to six donors per specimen type. (C) Quantification of viral-induced remodeling by SLIDE reveals viral-induced remodeling in all specimen types. The dashed line corresponds to the SLIDE score in the absence of remodeling (see Materials and methods).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic showing how predicted precursor (PRE) cells are identified. Blood or tissue cells, represented as different colored ovals, were mock-treated (top left) or infected with the CCR5-tropic HIV reporter virus F4.HSA (bottom left) for 3 days. HIV-infected cells (identified as those with a black border) were identified as cells expressing HSA that had downregulated CD4 (Figure 3—figure supplement 1). The HIV-infected cells are distinct from cells in the uninfected (UI) culture as they have been remodeled. However, by implementing PRE as determined by single-cell linkage using distance estimation (PP-SLIDE), we identify, in CyTOF high-dimensional space, the phenotypically most similar CD4+ T cells in the uninfected culture (purple and blue cells in schematic) for every HIV-infected cell (red and pink cells in schematic). The ‘PRE‘ cells thus identified display the predicted phenotypes of the original cells targeted for HIV infection, prior to HIV-induced remodeling. (B) t-SNE plots of uninfected and PRE cells demonstrate that CD4+ Tm is the dominant population of T cells targeted for infection in all of the three specimen types. CD4+ Tm, CD4+ Tn, CD8+ Tm, and CD8+ Tn cells were identified by manual gating and colored as indicated. Shown is one representative donor from each site . (C) Quantification of preferential infection of CD4+ Tm cells among all donors reveals enrichment of CD4+ Tm cells among PRE cells. ***p<0.001, ****p<0.0001 as assessed using the Student’s paired t test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) HIV infection upregulates fucose expression. Shown are histograms (left) and t-SNE plots (right) depicting as heatmaps AOL binding on uninfected predicted precursor (PRE) and infected (INF) singlet CD4+ Tm cells from the three indicated compartments. (B) HIV infection upregulates sialic acid expression. Shown are histograms (top) and t-SNE plots (bottom) depicting as heatmaps WGA and MAL-1 binding on PRE and INF singlet CD4+ Tm cells from the three indicated compartments. (C) Among PBMCs, HIV preferentially infects CD4+ Tm cells with high levels of fucose and sialic acid. Shown are histograms (left) and t-SNE plots (right) depicting as heatmaps AOL, UEA-1, WGA, and MAL-1 binding on uninfected (UI) and PRE singlet CD4+ Tm cells.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) HIV infection upregulates fucose expression in bystander cells. Box plots showing binding by fucose-binding proteins on uninfected (UI), bystander (Bys), and infected (INF) CD4+ Tm cells from the endometrium, tonsils, and PBMCs. Bystander CD4+ T cells were defined as CD4+ Tm cells in the infected cultures that did not express the HIV reporter gene HSA. All populations were pre-gated on live, singlet CD4+ Tm cells. AOL binds total/core fucose, while UEA1 binds α1–2 branched fucose. (B) HIV infection upregulates sialic acid in bystander cells. Box plots showing binding by sialic acid-binding lectins. Results are presented as in panel A. WGA binds total sialylated glycans and MAL1 α2–3 sialylated glycans. (C) Box plots showing binding by T antigen-binding lectin ABA. Results are presented as in panel A. *p<0.05 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Box plots showing staining by fucose-binding proteins on uninfected (UI) and bystander (Bys) B and T cells from the endometrium, tonsils, and PBMCs. Bystander CD4+ Tm cells were defined as those that did not express the HIV reporter HSA. AOL binds to total/core fucose, and UEA1 binds to α1–2 branched fucose. (B) Box plots showing staining by sialic acid-binding lectins WGA and MAL1. Results are presented as in panel A. WGA binds to total sialylated glycans and MAL-1 binds to α2–3 sialylated glycans. (C) Box plots showing staining by the T antigen-binding lectin ABA. Results are presented as in panel A. Elevation of fucose, sialic acid, and T antigen on Bys relative to UI cells were most apparent in tonsils. *p<0.05, **p<0.01 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR). CD8+ Tm: memory CD8+ T cells; CD8+ Tn: naive CD8+ T cells; CD4+ Tm: memory CD4+ T cells; CD4+ Tn: naive CD4+ T cells.
+
+### HIV preferentially infects memory CD4+ T cells with higher fucose and sialic acid levels
 
 In addition to revealing antigens that have been remodeled by infection, the PP-SLIDE approach can also identify antigens that are differentially expressed on cells before infection. In particular, antigens more abundant on PRE than uninfected cells correspond to antigens preferentially expressed on HIV-susceptible cells, while those less abundant on PRE cells correspond to those preferentially expressed on HIV-resistant cells. We used as our uninfected population CD4+ Tm cells, excluding CD4+ Tn, CD8+ Tm, and CD8+ Tn cells because these latter three populations harbored negligible numbers of HIV-susceptible cells (Figure 3—figure supplement 3B). This exclusion was important because otherwise antigens differentially expressed between uninfected and PRE cells could just reflect phenotypic differences between these major subsets. Significant differences in lectin binding between PRE and uninfected (CD4+ Tm) cells were only observed in PBMCs, with AOL, UEA1, WGA, and MAL-1 all binding at significantly higher levels on PRE cells (Figure 3, Figure 3—figure supplement 4C). Tonsillar PRE cells also bound these lectins more than their uninfected counterparts did, but these results did not reach statistical significance. Endometrial PRE cells did not show significant differences in lectin binding relative to their uninfected counterparts.
 
 These results together with the remodeling analysis suggest that in blood and tonsils (but not endometrium), HIV preferentially infects memory CD4+ T cells with higher levels of fucose and sialic acid, and then further upregulates these cell-surface glycans through viral remodeling.
 
-## HIV infection alters the surface glycome of bystander immune cells in tonsils
+### HIV infection alters the surface glycome of bystander immune cells in tonsils
 
 Remodeling of cells can occur in a cell-intrinsic manner as a result of direct infection, but may also result from bystander effects. For example, the inflammatory environment elicited by HIV replication may elicit phenotypic changes in bystander (uninfected) cells in the infected culture. We therefore assessed whether HIV infection elicits any glycosylation alterations in bystander cells. To identify bystander memory CD4+ T cells, we gated the infected culture on CD4+ Tm cells that were HSA-negative. Increased binding by all five lectins was observed among bystander tonsillar CD4+ Tm cells relative to their counterparts from uninfected cultures (Figure 3—figure supplement 5), suggesting that in at least some tissue sites, remodeling of glycans on bystander CD4+ T cells occurs. Interestingly, however, relative to the bystander CD4+ Tm cells, the infected cells still exhibited higher levels of total fucose and sialic acid (as assessed by AOL and WGA binding, respectively), suggesting possible additional cell-intrinsic glycan remodeling by replicating virus (Figure 3—figure supplement 5).
 
 To examine whether HIV alters glycan expression in other bystander cellular subsets, we compared glycan levels on multiple subsets of B and T cells from the uninfected vs. infected cultures (Figure 3—figure supplement 6). Only tonsils exhibited significant differences between uninfected vs. bystander cells, and these differences were observed among all subsets. For example, sialic acid levels (as assessed by both WGA and MAL-1 binding) were significantly higher in all the analyzed subsets of bystander B, CD8+, and CD4+ T cells, relative to their counterparts from uninfected cultures. Fucose expression was also uniformly higher among bystander cells, although the difference among CD8+ Tm cells did not reach statistical significance. Differences in levels of T antigen were also observed among B cells, CD8+ Tm cells, and CD4+ Tm cells (Figure 3—figure supplement 6). These glycan changes may be elicited by HIV infection-induced inflammatory cytokines (Breen et al., 1990; Contreras et al., 2003; Sugawara et al., 2019), which can alter cell-surface glycosylation patterns (Dewald et al., 2016; Giron et al., 2020a).
 
-## HIV preferentially infects memory CD4+ T cells from tonsils and PBMCs co-expressing high levels of fucose and sialic acid
+### HIV preferentially infects memory CD4+ T cells from tonsils and PBMCs co-expressing high levels of fucose and sialic acid
 
 The data presented thus far suggest that although there are differences between blood vs. the tissue sites examined, fucose and sialic acid are upregulated on HIV productively infected cells, and CD4+ T cells expressing high levels of fucose or sialic are preferentially targeted for infection. We next conducted manual gating to assess whether the HIV-susceptible cells express high levels of both fucose or sialic acid, or whether they belong to distinct subsets of fucose+ vs. sialic acid+ cells. We focused on the AOL and WGA datasets, as they cover total fucose and different forms of sialic acid, respectively. We first examined, within the HIV-infected cultures, the infection rates among CD4+ Tm cells expressing high vs. low levels of AOL or WGA. In both blood and both tissue compartments, AOLHigh and WGAHigh cells exhibited significantly higher HIV infection rates than did AOLLow and WGALow cells, respectively (Figure 4A). To assess the extent to which this high level of infection was due to preferential infection of the AOLHigh and WGAHigh CD4+ Tm cells, we next compared, among the uninfected CD4+ Tm cells and PRE cells, the percentages of cells that were AOLHigh, WGAHigh, or AOLHigh WGAHigh. Consistent with the MSI data, the percentages of cells expressing high levels of AOL or WGA were higher among PRE cells in both tonsils and PBMCs (Figure 4B), suggesting preferential infection of fucose- and sialic acid-expressing cells by HIV at these sites. Interestingly, AOLHigh WGAHigh cells were also significantly over-represented among PRE cells at these sites (Figure 4B), suggesting that the HIV-susceptible Tm cells co-express fucose and sialic acid. Indeed, visualization of the PRE cells by t-SNE revealed cells binding high levels of both AOL and WGA among the tonsillar and blood compartments (Figure 4C). Although PRE cells from the endometrium did not preferentially express fucose or sialic acid (Figure 4B), PRE cells co-expressing AOL and WGA could be detected from this site (Figure 4C), suggesting the endometrium, like the other two sites, harbors HIV-susceptible cells co-expressing fucose and sialic acid. To better understand why the HIV-susceptible endometrial CD4+ Tm cells, unlike their tonsillar and blood counterparts, did not preferentially express high levels sialic acid or fucose, we compared the levels of WGA and AOL binding on uninfected CD4+ Tm cells from the three sites. This analysis revealed WGA, but not AOL, to be expressed at the highest levels on the endometrial cells (Figure 4D). These results suggest that the reason WGAHigh cells are not preferentially targeted for infection in the endometrium may be that endometrial CD4+ Tm cells all express high levels of sialic acid. Fucose levels, however, are higher in PBMCs than endometrium, suggesting that the fact that AOLHigh endometrial CD4+ Tm cells aren’t preferentially targeted for infection cannot be explained by exceptionally high levels of fucose expression. All together, these results suggest that among blood and tonsillar memory CD4+ T cells, those with the highest levels of fucose and sialic acid are preferentially targeted for infection by HIV; this phenomenon was however not observed among endometrial cells.
 
@@ -74,9 +110,29 @@ The data presented thus far suggest that although there are differences between 
 
 We then implemented a more global method of subset identification, using FlowSOM (Van Gassen et al., 2015). We combined the uninfected CD4+ Tm and PRE cells from all the donors, and identified 20 clusters for each of the three sites (Figure 5A). Endometrial T cells, which had the most PRE cells, were represented among most of the 20 endometrial cell clusters. To determine the extent of enrichment of each cluster among PRE cells, we calculated the ratio of the size of each cluster in the PRE vs. total uninfected CD4+ Tm cells. Enriched clusters identified in this manner (corresponding to those preferentially harboring HIV-susceptible cells, see Materials and methods) were detected among all three sites, with eight clusters from the endometrium, nine from tonsils, and six from PBMCs (Figure 5B). Interestingly, the fold-enrichment was highest among the tonsils (reaching almost 20-fold in one donor), suggesting that of all three sites, this one exhibits the most preferential selection of subsets for infection. Compared to the other two sites, the tonsils also harbored more enriched clusters with significantly elevated levels of fucose, sialic acid, and T antigens relative to their expression levels on uninfected CD4+ Tm cells (Figure 5—figure supplement 1). To assess whether the enriched clusters co-express fucose and sialic acid, we assessed by t-SNE heatmaps the levels of AOL and WGA binding on concatenated files of all the enriched clusters from each site. This analysis revealed regions of the t-SNEs co-expressing high levels of fucose and sialic acid (Figure 5C), confirming the manual gating data that HIV-susceptible cells co-express these two classes of glycans.
 
-## Total sialylated glycan is a valid marker of highly susceptible CD4+ Tm cells expressing HIV entry receptors and activation markers, and may play a direct role in susceptibility
+![Figure 5.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig5-v1.jpg)
+
+**Figure 5.:** (A) t-SNE plots based on FlowSOM analysis of uninfected CD4+ Tm and PRE cells from endometrium, tonsil, and PBMC specimens, showing 20 color-labeled clusters of cells. (B) Enrichment of clusters among PRE cells. PRE enrichment-folds were determined by dividing the sizes of each cluster in PRE cells by that in the corresponding uninfected CD4+ Tm cells. Enriched clusters (those with an enrichment fold above 1) correspond to cells preferentially selected for infection. Note that the highest enrichment-folds were observed in tonsils, suggesting the most preferential selection of subsets for infection in this specimen type. Each color corresponds to a different donor. Labels on the x-axis refer to the cluster name. (C) Clusters enriched among PRE cells express high levels of fucose and sialic acid, as depicted by t-SNE. For each specimen set, the left-hand t-SNE plot depicts clusters enriched among PRE (red) against total cells (gray), while the t-SNE plots on the right depict by heatmaps the expression levels of fucose (as assessed by AOL binding) and sialic acid (as assessed by WGA binding) among the enriched clusters. Note that the enriched clusters from all three sites include cells expressing high levels of both fucose and sialic acid (highlighted by arrows).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** An enrichment ratio was determined for each cluster by dividing the frequencies of the cells of that cluster among the PRE cells by their frequency among the uninfected CD4+ Tm cells. Clusters with an enrichment ratio above 1 correspond to those preferentially selected for infection. Relative binding by proteins specific for fucose (panel A), sialic acid (panel B), or T antigen (panel C) were assessed by reporting median signal intensity (MSI) of the bound lectins. Enriched clusters included those with high levels of the examined glycans. Total CD4+ Tm cells are shown for comparison. *p<0.05, **p<0.01, ***p<0.001 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR), and correspond to statistically significant differences between each cluster and total CD4+ Tm cells.
+
+### Total sialylated glycan is a valid marker of highly susceptible CD4+ Tm cells expressing HIV entry receptors and activation markers, and may play a direct role in susceptibility
 
 The results presented thus far suggest that CD4+ Tm cells from endometrium, tonsils, and blood are preferentially susceptible to HIV infection compared to their naïve counterparts, but only in tonsils and blood can high levels of fucose and sialic acid further distinguish HIV-susceptible CD4+ Tm cells from non-susceptible CD4+ Tm cells. To experimentally validate these findings, we conducted sorting experiments. As endometrial and tonsillar T cells do not maintain good viability after sorting, we limited these studies to blood specimens. CD4+ Tm cells from blood expressing low (WGALow), medium (WGAMedium), or high (WGAHigh) levels of sialic acid were isolated through sorting (Figure 6A). These sorted populations (along with total CD4+ Tm cells as a comparison control) were then exposed to HIV-F4.HSA for 3 days and then assessed by FACS for infection rates. Infection rates directly correlated with the expression levels of sialic acid, with the WGALow cells being the least susceptible and the WGAHigh the most (Figure 6B and C). These results provide experimental confirmation that in PBMCs, differentially susceptible CD4+ Tm cells can be isolated based solely on sialic acid expression levels.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig6-v1.jpg)
+
+**Figure 6.:** (A) Histograms showing the expression of total sialylated glycans on three populations (WGALow [red], WGAMedium [yellow], and WGAHigh [blue]) of sorted uninfected CD4+ Tm cells (CD3+ CD4+ CD45RA-), as assessed by WGA binding. One of three representative donors is shown. (B–C) The sorted uninfected CD4+ Tm cells in panel A, along with total CD4+ Tm cells, were exposed to F4.HSA and assessed by flow cytometry for infection rates 3 days later. Results are gated on live, singlet CD3+ CD8- cells. Shown are representative FACS plots from one donor (B) and compiled results from three donors (C). For each donor, experimental duplicates were performed for each condition. Each datapoint shown corresponds to one donor. *p<0.05 as assessed using a one-way ANOVA and adjusted for multiple testing using the Bonferroni. (D) WGAHigh Tm cells bind more AOL than WGALow Tm cells do. Shown are the histogram plots from one representative PBMC donor (left) and box plots from all four PBMC donors (right). (E) WGAHigh Tm cells express more CD4 and CCR5 than WGALow Tm cells do. Shown are the histogram plots from one representative PBMC donor (left) and box plots from all four PBMC donors (right). (F) WGAHigh Tm cells express higher levels of activation markers than WGALow Tm cells do. Shown are the histogram plots from one representative PBMC donor (top) and box plots from all four PBMC donors (bottom). (G) WGAHigh Tm cells express higher levels of the pro-survival factors CD127, BIRC5, and Ox40 than WGALow Tm cells do. Shown are the histogram plots from one representative PBMC donor (left) and box plots from all four PBMC donors (right). (H) The CD127, CCR7, and CD62L receptors are expressed at lower levels in WGAHigh relative to WGALow Tm cells. Shown are the histogram plots from one representative PBMC donor (left) and box plots from all four PBMC donors (right). For panels D–G, *p<0.05 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR). (I) Transient treatment with sialidase decreases cell-surface levels of sialidase on CD4+ T cells. PBMCs were treated for 1 hr with sialidase prior to assessment of cell-surface WGA binding. Shown are overlaid histograms demonstrating a decrease in cell-surface sialic acid levels (as reflected by WGA binding) in the sialidase-treated cells from two independent donors. Results are gated on live, singlet CD3+ CD8- CD4+ cells. Numbers correspond to percent of cells within the indicated gate. (J–K) PBMCs treated for 1 hr with the indicated concentrations of sialidase were exposed to F4.HSA and assessed by flow cytometry for infection rates 3 days later. Results are gated on live, singlet CD3+ CD8- cells. Shown are representative FACS plots from two donors (J) and the results of experimental triplicates from each of these donors (K). **p<0.01 and ****p<0.0001 as assessed using a one-way ANOVA and adjusted for multiple testing using the Bonferroni.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Histograms showing the expression of activation markers on CD4+ Tm cells from resting (blue) and PHA-stimulated PBMCs (red). One of four representative donors is shown. (B) Stimulated CD4+ Tm cells express more sialic acid than resting CD4+ Tm cells do. Shown are the four PBMC donors. (C) HLADRHigh, CD69High, CD38High, CD38High, CD25High, CD28High, and ICOSHigh CD4+ Tm cells bind more WGA than CD4+ Tm cells expressing low levels of these activation markers. Shown are the four PBMC donors. For panels B–C, *p<0.05, **p<0.01 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR). (C) Treatment with the sialic acid synthase inhibitor P-3FZX-Neu5Ac does not decrease cell-surface levels of sialidase on CD4 + T cells. PBMCs were treated for 24 hr with the indicated concentrations of P-3FZX-Neu5Ac prior to assessment of cell-surface WGA binding. Shown are overlaid histograms demonstrating no decrease in cell-surface sialic acid levels (as reflected by WGA binding) in the inhibitor-treated cells. Results are gated on live, singlet CD3+ CD8- CD4+ cells. Numbers correspond to percent of cells within the indicated gate.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78870/elife-78870-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Shown are histogram and box plots depicting antibody and lectin staining of the WGALow (red) and WGAHigh (blue) Tm cells. Shown are antigens not already depicted in Figure 6. Data from one of four representative PBMC donors is shown in histogram plots. Data from four independent PBMC donors is shown in box plots. *p<0.05 as assessed using the Student’s paired t test and adjusted for multiple testing using the Benjamini-Hochberg for false discovery rate (FDR).
 
 To better understand the mechanism behind the differential susceptibility of cells expressing high vs. low levels of sialic acid, we returned to our CyTOF datasets and manually gated on CD4+ Tm cells expressing high vs. low levels of total sialic acid as assessed by WGA binding, to assess what was differentially expressed among these two populations. The WGAHigh cells preferentially expressed fucose (as assessed by AOL binding) (Figure 6D), consistent with earlier observations of co-expression of fucose and sialic acid on HIV-susceptible CD4+ T cells. Relative to their WGALow counterparts, the WGAHigh cells also preferentially expressed higher levels of CD4 and the HIV co-receptor CCR5 (Figure 6E), potentially explaining the increased susceptibility of these cells to infection. As activated T cells are known to be preferentially susceptible to infection (Stevenson et al., 1990), we also compared expression levels of activation markers on the WGALow and WGAHigh cells, and found that six markers of T cell activation (HLADR, CD69, CD38, CD25, CD28, and ICOS) were all elevated on the latter population (Figure 6F). To further validate the notion that the high susceptibility of WGAHigh CD4+ Tm cells is closely associated with the activation status of these cells, we phenotyped CD4+ Tm cells from resting vs. PHA-stimulated PBMCs. As expected, the stimulated CD4+ Tm cells expressed higher levels of multiple activation markers (Figure 6—figure supplement 1a). Importantly, the stimulated CD4+ Tm cells also bound higher levels of WGA, consistent with upregulation of sialic acid upon T cell activation (Figure 6—figure supplement 1). Furthermore, activated cells, as defined as those expressing high levels HLADR, CD69, CD38, CD25, CD28, or ICOS, all expressed higher levels of sialic acid as compared to cells with low levels of these activation markers (Figure 6—figure supplement 1). These data together strongly support the notion that high sialic expression identifies the most activated subsets of CD4+ Tm cells.
 
@@ -108,27 +164,429 @@ Further development of CyTOF-Lec in conjunction with next-generation sequencing 
 
 ## Materials and methods
 
-## Tissue processing and cell isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Stbl3</td>
+      <td>Fisher</td>
+      <td>C737303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>293T cells</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Endometrial tissue</td>
+      <td>Women’s Health Clinic of Naval Medical Center Portsmouth (NMCP)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Tonsil</td>
+      <td>Cooperative Human Tissue Network (CHTN)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Blood</td>
+      <td>Vitalant Research Institute and Stanford Blood Bank</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AOL</td>
+      <td>TCI Chemicals</td>
+      <td>Cat# L0169</td>
+      <td>CyTOF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD49d (9F10)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3141004B</td>
+      <td>CyTOF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD195/CCR5 (NP-6G4)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3144007A</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD8 (RPA-T8)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3146001B</td>
+      <td>CyTOF (1:33)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD7 (CD7-6B7)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3147006B</td>
+      <td>CyTOF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD278/ICOS (C398.4A)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3148019B</td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD24 (M1/69)(Rat, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3150009B</td>
+      <td>CyTOF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MAL-1</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#L-1310–5</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WGA</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# L-1020–25</td>
+      <td>CyTOF (1:15)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD62L (DREG-56)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3153004B</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human TIGIT (MBSA43)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3154016B</td>
+      <td>CyTOF (1:15)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD196 (CCR6)(Mouse, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 559560</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UEA-1</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#L-1060–5</td>
+      <td>CyTOF (1:33)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD134/OX40 (ACT35)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3158012B</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD197/CCR7 (G043H7)- (Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3159003A</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD28 (CD28.2)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3160003B</td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD45RO(Mouse, Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 304239</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD69 (FN50)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3162001B</td>
+      <td>CyTOF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD294/CRTH2 (BM16)(Rat, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3163003B</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD279 (PD-1)(Mouse, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 562138</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD127/IL-7Ra (A019D5)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3165008B</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CXCR5 (CD185)(Rat, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 552032</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD27 (L128)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3167006B</td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD30(Mouse, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555827</td>
+      <td>CyTOF (1:33)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD45RA (HI100)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# HI100</td>
+      <td>CyTOF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD3 (UCHT1)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3170001B</td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ABA</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#L-1420–2</td>
+      <td>CyTOF (1:33)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD38 (HIT2)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3172007B</td>
+      <td>CyTOF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α4β7</td>
+      <td>Gift from E Butcher</td>
+      <td></td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD4 (SK3)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3174004B</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD184/CXCR4 (12G5)(Mouse, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3175001B</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human CD25(Mouse, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555430</td>
+      <td>CyTOF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse Cutaneous Lymphocyte Antigen (CLA) Antibody(Rat, Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 321302</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HLA-DR Monoclonal Antibody (TU36), Qdot 655(Mouse, Monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# Q22158</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ROR gamma (t)(Rat, Monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#14-6988-82</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human NFAT1 (Rat, Monoclonal)</td>
+      <td>Fluidigm</td>
+      <td>Cat# 3143023A</td>
+      <td>CyTOF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human Survivin Antibody(Mouse, Monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat# MAB886</td>
+      <td>CyTOF (1:15)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>T-bet Monoclonal Antibody(Mouse, Monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 14-5825-82</td>
+      <td>CyTOF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD152 (CTLA-4) Monoclonal Antibody(Mouse, Monoclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 14-1529-82</td>
+      <td>CyTOF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lenti-X p24Gag Rapid Titer Kit</td>
+      <td>Takara</td>
+      <td>Cat# 632200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep CD4 enrichment kit</td>
+      <td>Stem Cell Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD45RA MicroBeads, human</td>
+      <td>Miltenyi Biotec</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Zombie Aqua Fixable Viability Kit</td>
+      <td>Biolegend</td>
+      <td>Cat# 423102</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC/Cyanine7 anti-human CD3 Antibody(Mouse, Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 344818</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cyanine7 anti-human CD4 Antibody(Rat, Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 357410</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-human CD8 Antibody(Mouse, Monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 344722</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Rat Anti-Mouse CD24(Rat, Monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 561777</td>
+      <td>FACS(1:100)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CyTOF software (6.7.1014)</td>
+      <td>Fluidigm</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo software (10.7.2)</td>
+      <td>FlowJo LLC, BD Biosciences</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytobank (9.1, 2022)</td>
+      <td>Cytobank, Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue processing and cell isolation
 
 Endometrial tissues were obtained from the Women’s Health Clinic of Naval Medical Center Portsmouth (NMCP) in Virginia (CIP # NMCP.2016.0068) under standard operating procedures (Fassbender et al., 2014). The biopsies were transported to San Francisco in MCDB-105 (Sigma-Aldrich M6395) containing 10% heat-inactivated fetal bovine serum (FBS) and 1% penicillin/streptomycin (P/S). The collection of endometrial T cells was performed similar to recently described methods (Ma et al., 2020). Briefly, endometrial tissue was washed once with SCM media, which consisted of 75% phenol red-free Dulbecco’s Modified Eagle’s Medium (DMEM, Life Technologies), 25% MCDB-105, 10% FBS, 1% L-glutamine with P/S (Gemini), 1 mM sodium pyruvate (Sigma-Aldrich), and 5 mg/ml insulin (Sigma-Aldrich). The tissues were then digested at 37°C for 2 hr under rotation in SCM media mixed at a 1:1 dilution with Digestion Media, which consisted of HBSS containing Ca2+ and Mg2+ supplemented with 3.4 mg/ml collagenase type 1 (Worthington Biochemical Corporation LS004196) and 100 U/ml hyaluronidase (Sigma-Aldrich H3631). Cells were then filtered through a Falcon 40 μm cell strainer. The filtrate was then centrifuged, washed once with R10 media (RPMI 1640 containing 10% FBS and 1% P/S), and the cells were cultured in 96-well U-bottom polystyrene plates at a concentration of 106cells/well in 200 μl R10 media.
 
-## Processing of human lymphoid aggregate cultures
+### Processing of human lymphoid aggregate cultures
 
 Human tonsils obtained from the Cooperative Human Tissue Network (CHTN) were processed similarly to methods recently described (Ma et al., 2020). Briefly, tonsils were rinsed in tonsil media (RPMI supplemented with 15% FBS, 100 μg/ml gentamicin, 200 μg/ml ampicillin, 1 mM sodium pyruvate, 1% non-essential amino acids [Mediatech], 1% Glutamax [Thermo Fisher], and 1% Fungizone [Invitrogen]), dissected into small pieces, and then pressed through a 40 μm cell strainer using a syringe plunger. The cells were then filtered through a second 40 μm cell strainer, centrifuged, and resuspended with 200 μl tonsil media per 106 cells. For sialidase treatment, 106 tonsil cells were resuspended in 1 ml of tonsil media, and then treated with 20 μg of the sialidase for 1 hr at 37°C. The cells were washed once with PBS and processed for CyTOF analysis as described further below.
 
-## PBMC isolation
+### PBMC isolation
 
 PBMCs were isolated from reduction chambers obtained from Vitalant Research Institute and Stanford Blood Bank using Ficoll-Hypaque density gradients, and then cultured in R10. For sorting experiments, CD4+ T cells were purified by negative selection using the EasySep CD4 enrichment kit (Stem Cell Technologies), and further enriched for memory cells by depletion of naïve T cells using CD45RA beads (Miltenyi Biotec), prior to lectin staining and sorting as described further below. Where indicated, PBMCs were first stimulated for 3 days with 5 µg/ml PHA in the presence of 10 IU/ml IL-2 prior to CyTOF-Lec analysis.
 
-## Virus preparation and infection assays
+### Virus preparation and infection assays
 
 Viral stocks of the previously described HIV-1 reporter virus F4.HSA (Cavrois et al., 2017) were prepared similarly to recently described methods (Ma et al., 2020). Briefly, 293T cells (purchased directly from ATCC and therefore assumed to be authenticated, tested negative for mycoplasma contamination) were seeded in T175 flasks and transfected using polyethylenimine (Polysciences) with F4.HSA proviral DNA (70 μg/flask) (Longo et al., 2013). Two days after transfection, supernatants from 293T cultures were harvested, filtered through a 0.22 μm filter, and concentrated by ultracentrifugation at 20,000 rpm (Beckman Coulter Optima XE-90) for 2 hr at 4°C. p24Gag concentrations were quantitated using the Lenti-X p24Gag Rapid Titer Kit (Clontech). For infection, 10–20 ng/ml p24Gag of F4.HSA was incubated with 106 cells in 200 μl R10 media in 96-well U-bottom polystyrene plates. After 2 hr, cells were fed with fresh R10 media and cultured for another 3 days. Where indicated, PBMCs were first treated with the sialic acid inhibitor P-3FAX-Neu5Ac (Tocris) for 24 hr, or sialidase for 1 hr, prior to infection with F4.HSA.
 
-## Flow cytometry
+### Flow cytometry
 
 For sorting experiments, purified memory CD4+ cells (see above) were washed once with FACS buffer in 96-well V-bottom polystyrene plates, and then stained at room temperature for 15 min with a 1:200 dilution of the LIVE/DEAD Zombie Aqua Fixable Viability Kit (Biolegend) reagent to exclude dead cells. The cells were washed and stained for 30 min at 4°C with 5 μg/ml FITC-WGA (Vector Laboratories). After the wash, the purified memory CD4 + T cells were resuspended at a concentration of 106 cells/ml, and sorted on an Aria II flow cytometer (BD Biosciences) into WGALow, WGAMedium, and WGAHigh populations. Total CD4+ Tm cells were also sorted as a control. The purity of the sorted cells was confirmed by analysis on Aria II immediately after sorting. All sorted populations were infected with F4.HSA for 3 days. For FACS analysis of the samples, 0.1–1 million cells of each sample were transferred into 96-well V-bottom polystyrene plates, washed once with FACS buffer (PBS containing 2% FBS and 2 mM EDTA), and stained for 30 min on ice with an antibody cocktail consisting of APC/Cy7-CD3 (SK7, Biolegend), PE/Cy7-CD4 (A161A1, Biolegend), APC-CD8 (SK1, Biolegend), FITC-CD24 (HSA, M1/69, BD Biosciences), and the LIVE/DEAD Zombie Aqua Fixable Viability Kit (Biolegend). The cells were then washed twice, fixed with 1% PFA (Electron Microscopy Sciences) in PBS, and analyzed by flow cytometry on an LSRFortessa (BD Biosciences).
 
-## CyTOF data generation
+### CyTOF data generation
 
 A 39-parameter CyTOF panel was designed for this study, which included antibodies against markers of T cell differentiation states, activation markers, transcription factors, and homing receptors, and an antibody against HSA to identify productively infected cells. The panel also included numerous lectins enabling the characterization of glycan features (Supplementary file 1). X8 antibody-labeling kits (Fluidigm) were used to label antibodies that required in-house conjugation. The conjugated antibodies were quantitated for protein content by Nanodrop (Thermo Fisher). Prior to storage at 4°C, specimens were diluted 1:1 using a PBS-based Antibody Stabilizer (Boca Scientific) supplemented with 0.05% sodium azide.
 
@@ -136,7 +594,7 @@ Preparation of samples for CyTOF staining was conducted as previously described 
 
 To stain multiple specimens in the same reaction, cells were barcoded using the Cell-ID 20-Plex Pd Barcoding Kit according to the manufacturer’s instructions (Fluidigm). Briefly, 1–3 million cisplatin-treated cells were thawed and transferred into Nunc 96 DeepWell polystyrene plates (Thermo Fisher). After two washes with Barcode Perm buffer (Fluidigm), the cells were incubated with selected barcodes for 30 min. Cells were then washed with 0.8 ml Maxpar Cell Staining buffer (Fluidigm) followed by 0.8 ml CyFACS. Barcoded samples were combined and pelleted, and then blocked on ice for 15 min with sera from mouse (Thermo Fisher), rat (Thermo Fisher), and human (AB serum, Sigma-Aldrich). Cells were then washed twice with CyFACS, and stained on ice for 45 min with a cocktail of CyTOF surface-staining antibodies (Supplementary file 1) in a final volume of 100 μl/well. Cells were then washed three times with CyFACS buffer, and stained on ice for 45 min with the cocktail of lanthanide-conjugated lectins (Supplementary file 1) in a final volume of 100 μl/well. Cells were then washed three times with CyFACS buffer and fixed overnight at 4°C with 2% PFA in metal contaminant-free PBS. The next day, cells were incubated at 4°C for 30 min with fix/perm buffer (eBioscience), and then washed twice with Permeabilization Buffer (eBioscience). After another round of Fc blocking on ice for 15 min with sera from mouse (Thermo Fisher) and rat (Thermo Fisher), cells were washed twice with Permeabilization Buffer (eBioscience), and stained on ice for 45 min with a cocktail of CyTOF intracellular-staining antibodies (Supplementary file 1) in a final volume of 100 μl/well. Cells were then washed with CyFACS and incubated for 20 min at room temperature with 250 nM Cell-ID DNA Intercalator-Ir (Fluidigm) in PBS containing 2% PFA. After two more washes with CyFACS, cells were washed once with Maxpar Cell Staining Buffer (Fluidigm), once with Maxpar PBS (Fluidigm), and once with Maxpar Cell Acquisition Solution (Fluidigm). Immediately prior to sample loading, cells were resuspended to a concentration of 7 × 105/ml in EQ calibration beads (Fluidigm) diluted 1:9 in Maxpar Cell Acquisition Solution. Cells were acquired on a Helios-upgraded CyTOF2 instrument (Fluidigm) at a rate of 250–350 events/s, at the UCSF Flow Core Facility.
 
-## CyTOF data analysis
+### CyTOF data analysis
 
 Data were normalized to EQ calibration beads and then exported as FCS files. The data were then de-barcoded with CyTOF software (Fluidigm) and imported into FlowJo (BD) for gating. This study’s raw datasets, pre-gated on live, singlet events, are available for download via the following link in the Dryad public repository: https://doi.org/10.7272/Q6FT8J92.
 
@@ -148,7 +606,7 @@ Enrichment ratio (Cluster X) = Number of Cluster X cells relative to PRE cells/N
 
 Clusters with ratios > 1 were designated as enriched and those with ratios >0 and <1 as non-enriched, while clusters with undetectable PRE cells were not shown.
 
-## Statistical analysis
+### Statistical analysis
 
 Expression levels were reported as MSI for each parameter (protein or glycan) within each cell population analyzed. Student’s two-sided paired t-tests were used to test for differences in MSI among phenotypic subsets (B cell, CD8+ Tm, CD8+ Tn, CD4+ Tm, and CD4+ Tn cells): among uninfected and bystander cells; or among uninfected cells, PRE cells, and infected cells. p-Values were adjusted for multiple testing using false discovery rate (FDR) via the Benjamini-Hochberg or Holm method as indicated in figure legends. FDR adjusted p-values that were <0.05 were considered as significant.
 

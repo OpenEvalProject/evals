@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00fbnyb24 Department of Cell and Developmental Biology, Biocentre, University of Würzburg Wuerzburg Germany
+1. Department of Cell and Developmental Biology, Biocentre, University of Würzburg Wuerzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
 
 † Corresponding author
 
 ## Abstract
 
-CRISPR/Cas9 gene editing has revolutionised loss-of-function experiments in Leishmania , the causative agent of leishmaniasis. As Leishmania lack a functional non-homologous DNA end joining pathway however, obtaining null mutants typically requires additional donor DNA, selection of drug resistance-associated edits or time-consuming isolation of clones. Genome-wide loss-of-function screens across different conditions and across multiple Leishmania species are therefore unfeasible at present. Here, we report a CRISPR/Cas9 cytosine base editor (CBE) toolbox that overcomes these limitations. We employed CBEs in Leishmania to introduce STOP codons by converting cytosine into thymine and created http://www.leishbaseedit.net/ for CBE primer design in kinetoplastids. Through reporter assays and by targeting single- and multi-copy genes in L. mexicana , L. major , L. donovani , and L. infantum , we demonstrate how this tool can efficiently generate functional null mutants by expressing just one single-guide RNA, reaching up to 100% editing rate in non-clonal populations. We then generated a Leishmania -optimised CBE and successfully targeted an essential gene in a plasmid library delivered loss-of-function screen in L. mexicana . Since our method does not require DNA double-strand breaks, homologous recombination, donor DNA, or isolation of clones, we believe that this enables for the first time functional genetic screens in Leishmania via delivery of plasmid libraries.
+CRISPR/Cas9 gene editing has revolutionised loss-of-function experiments in Leishmania, the causative agent of leishmaniasis. As Leishmania lack a functional non-homologous DNA end joining pathway however, obtaining null mutants typically requires additional donor DNA, selection of drug resistance-associated edits or time-consuming isolation of clones. Genome-wide loss-of-function screens across different conditions and across multiple Leishmania species are therefore unfeasible at present. Here, we report a CRISPR/Cas9 cytosine base editor (CBE) toolbox that overcomes these limitations. We employed CBEs in Leishmania to introduce STOP codons by converting cytosine into thymine and created http://www.leishbaseedit.net/ for CBE primer design in kinetoplastids. Through reporter assays and by targeting single- and multi-copy genes in L. mexicana, L. major, L. donovani, and L. infantum, we demonstrate how this tool can efficiently generate functional null mutants by expressing just one single-guide RNA, reaching up to 100% editing rate in non-clonal populations. We then generated a Leishmania-optimised CBE and successfully targeted an essential gene in a plasmid library delivered loss-of-function screen in L. mexicana. Since our method does not require DNA double-strand breaks, homologous recombination, donor DNA, or isolation of clones, we believe that this enables for the first time functional genetic screens in Leishmania via delivery of plasmid libraries.
 
 ## Introduction
 
@@ -31,31 +31,79 @@ Our aim was to overcome these limitations by bypassing the DSB repair machinery 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig1-v1.jpg)
 
-**Figure 1.:** Leishmania and other kinetoplastids.(A) Schematic of hyBE4max CBE, consisting of D10A nCas9 with an HNH endonuclease domain (grey), a deaminase domain (APOBEC-1 [Apolipoprotein B mRNA editing enzyme catalytic polypeptide 1], pink), two uracil glycosylase inhibitor (UGI) monomers (purple), and a RAD51 ssDBD (orange). The editing window is located on the PAM sequence containing strand (yellow) at positions 4–12 (purple). Codons for arginine, tryptophan, or glutamine, can be edited into STOP codons, as shown in the text boxes. While one arginine and two glutamine codons are edited on the coding strand (light blue) into one STOP codon each, the one tryptophan codon on the template strand (dark blue) can be edited into three STOP codons. Suitable single-guide RNAs (sgRNAs) that would convert these four codons into STOP codons were designed for 64 kinetoplastid species. (B) The number of guides per protein-coding gene that yield a STOP codon within the first 50% of the CDS. (C) The percentage of protein-coding genes that could be targeted by at least two guides.
+**Figure 1.:** (A) Schematic of hyBE4max CBE, consisting of D10A nCas9 with an HNH endonuclease domain (grey), a deaminase domain (APOBEC-1 [Apolipoprotein B mRNA editing enzyme catalytic polypeptide 1], pink), two uracil glycosylase inhibitor (UGI) monomers (purple), and a RAD51 ssDBD (orange). The editing window is located on the PAM sequence containing strand (yellow) at positions 4–12 (purple). Codons for arginine, tryptophan, or glutamine, can be edited into STOP codons, as shown in the text boxes. While one arginine and two glutamine codons are edited on the coding strand (light blue) into one STOP codon each, the one tryptophan codon on the template strand (dark blue) can be edited into three STOP codons. Suitable single-guide RNAs (sgRNAs) that would convert these four codons into STOP codons were designed for 64 kinetoplastid species. (B) The number of guides per protein-coding gene that yield a STOP codon within the first 50% of the CDS. (C) The percentage of protein-coding genes that could be targeted by at least two guides.
 
 We successfully established the hyBE4max CBE in four Leishmania species and have created the online resource http://www.leishbaseedit.net/ to facilitate CBE primer design across 64 different kinetoplastid species. We show that our tool can be used to convert arginine, tryptophan, or glutamine codons into STOP codons with up to 100% editing efficiency in transfected cells that have been selected for CBE and sgRNA expression constructs. We demonstrate that single- and multi-copy genes can be depleted in L. mexicana, L. major, L. donovani, and L. infantum (the causative agents of cutaneous and visceral leishmaniasis) without requiring donor DNA and by expression of just one CBE-bound sgRNA. We then optimised the hyBE4max editor further by replacing the Rad51 ssDBD with a L. major-derived version, giving rise to hyBE4max-LmajDBD. Finally, we successfully use the hyBE4max and hyBE4max-LmajDBD CBE versions to perform a small-scale plasmid library delivered screen in L. mexicana and demonstrate that the viability phenotype of an essential gene can be identified in a pooled format with our CBE method. To our knowledge, this is the first time a plasmid library transfection loss-of-function screen has been reported in Leishmania, enabling large-scale screens under various conditions in multiple Leishmania species in the future.
 
 ## Results
 
-## Feasibility of cytosine base editing in kinetoplastids
+### Feasibility of cytosine base editing in kinetoplastids
 
 To establish cytosine base editing in Leishmania, we decided to test the hyBE4max (Zhang et al., 2020) CBE version noted in the introduction. The insertion of the Rad51 ssDBD into a CBE not only increases the editing efficiency, but also extends the editing window, in-which cytidine to thymidine editing is efficient (without RAD51 domain the editing window ranges from position 4–7, with RAD51 domain from 4–12) (Zhang et al., 2020). This increases the number of possible C to T conversion targets and therefore the potential for genome-wide loss-of-function screening in Leishmania through the insertion of STOP codons. To test how many genes could be targeted on a genome-wide level, we first designed sgRNAs that would allow the introduction of STOP codons by C to T conversion within the 4–12 editing window. There is a total of four codons that can be converted into all three STOP codons (amber, ochre, and opal) by this approach (Kuscu et al., 2017). While one arginine and two glutamine codons are edited on the coding strand into one STOP codon each, there is one tryptophan codon on the template strand that can be edited into three STOP codons (Figure 1A). We then filtered suitable sgRNAs that would introduce a STOP codon within the first 50% of the CDS, assuming that this would be sufficient to yield functional null mutants for most genes. We could on average design at least 2 sgRNAs per gene for 87.2% of all protein-coding genes in the genomes of 64 kinetoplastids (available through TritrypDB release 59 [Aslett et al., 2010]), including 32 Leishmania species (Figure 1B, C). For genes with more than two sgRNAs available, we generated a scoring matrix that ranked guides by their exact edit window (e.g. C to T conversion is more efficient at positions 4–8 than 8–12 [Zhang et al., 2020]) and based on how many STOP codons each guide would introduce. The primer design for all 64 genomes was then uploaded to our new primer design resource http://www.leishbaseedit.net/.
 
-## Establishing cytosine base editing in Leishmania
+### Establishing cytosine base editing in Leishmania
 
 Since this showed that CBE-mediated genome-wide loss-of-function screens in kinetoplastids would be feasible, we started to develop a strategy to express the hyBE4max CBE in Leishmania. First, we cloned the editor (Zhang et al., 2020) into pLdCH (Zhang et al., 2017), enabling episomal expression of the sgRNA and hyBE4max CBE via a ribosomal RNA (rRNA) promoter derived from L. donovani (Figure 2A). Then, we established a reporter assay to test the editor. A L. major clone was isolated, expressing a tdTomato (Shaner et al., 2004) reporter from the 18S rRNA locus (Figure 2B, C). In the following, two CBE sgRNAs were designed to induce a C to T conversion that results in a neutral substitution (‘control’ sgRNA; codon change but no amino acid change), while four other targeting guides were designed to yield a STOP codon through C to T conversion (‘target’ sgRNA). Three of these six guides were designed to target the coding strand, while the other three would target the template strand. Guide sequences were cloned into pLdCH-hyBE4max (Figure 2A) and then transfectants analysed 11, 21, and 33 days post transfection, while being under constant drug selection to maintain the episome. Strikingly, we observed strong knockdown effects of the tdTomato reporter across all four guides, designed to introduce a STOP codon (‘Target 1’ and ‘Target 2’ on template and coding strand in Figure 2D). For guide 1, targeting the template strand, 98.0% of transfected cells had no fluorescent signal as early as 11 days post transfection (‘Target 1’ on template strand in Figure 2D). In contrast, guides designed to only introduce neutral substitutions with no amino acid change (‘Control’ on template and coding strand in Figure 2D), did not alter the fluorescent signal of the reporter even 33 days post transfection. We also measured the doubling time of transfected cells. While the tdTomato reporter cell line showed an increase in doubling time compared to the wildtype cell line (from 5.6 to 7.5 h), additional transfection of the pLdCH-hyBE4max plasmid did not lead to a further increase in doubling time (Figure 2E), indicating no effect of the editor or guide expression on growth in L. major parasites.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of pLdCH-hyBE4max plasmid, containing (from left to right) a L. donovani-derived ribosomal RNA (rRNA) promoter, single-guide RNA (sgRNA) expression cassette, hepatitis delta virus (HDV) ribozyme containing transsplice sequence (TSS), SV40 NLS, APOBEC-1 domain (ssDNA-specific cytidine deaminase), RAD51 ssDBD surrounded by two glycine–serine linkers (GSL), nCas9 (D10A) protein, two uracil glycosylase inhibitor (UGI) monomers tethered via GSL, nucleoplasmin NLS, L. donovani-derived A2 intergenic sequence, and hygromycin resistance marker. (B) Schematic of a pPLOT expression construct as described in Beneke et al., 2017, fused to two homology flanks for integration into the 18S rRNA locus on chromosome 27 (TriTrypDB [Aslett et al., 2010] release 59 coordinates: LmjF.27:989,898–991,525, LmjF.27:1,001,798–1,003,425; LmjF.27:1,013,829–1,015,456; LmjF.27:1,028,462–1,030,089; LmjF.27:1,041,477–1,043,104; LmjF.27:1,052,607–1,054,234; LmxM.27:982,640–984,268; LinJ.27:1,068,199–1,069,826; LinJ.27:1,078,759–1,080,386; LinJ.27:1,093,368–1,094,995; Ld27_v01s1:1,021,892–1,020,265). (C) FACS (fluorescence-activated cell sorting) plot showing tdTomato-expressing and wildtype L. major parasites. (D) FACS plot of tdTomato-expressing L. major parasites, transfected with pLdCH-hyBE4max-tdTomato targeting plasmids (see description main text). Cells were analysed 11, 21, and 33 days post transfection. Percentages in (C) and (D) represent the remaining proportion of tdTomato-expressing cells. (E) Doubling times for analysed parasites in (C) and (D). Error bars show standard deviations of triplicates. PAR: tdTomato-expressing cells; WT: wildtype cells. Asterisks indicate Student’s t-test: *p > 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** LPG2 locus was amplified and Sanger sequenced. Sanger sequencing reads were then aligned to LPG2 reference sequences of each species. Shown are sequence identities (A) and an alignment across all four species (B), highlighting a species-dependent section of the LPG2 open reading frame (ORF).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) FACS plot showing tdTomato-expressing and wildtype Leishmania parasites (left panel, untransfected), as well as tdTomato-expressing Leishmania parasites, transfected with pLdCH-hyBE4max-tdTomato targeting plasmids (see description main text). Cells are analysed 16 days post transfection. Percentage represents remaining proportion of tdTomato-expressing cells. (B) Doubling times for analysed parasites in (A). Error bars show standard deviations of triplicates. PAR: tdTomato-expressing cells; WT: wildtype cells. T1(−): TdTomato-expressing cells transfected with pLdCH-hyBE4max-tdTomato targeting plasmid (Target 1 on template strand). Asterisks indicate Student’s t-test: *p > 0.05, **p > 0.005. (C) Left panel: Ponceau stain. Right panel: Cas9 detecting western blot, indicating the size of hyBE4max. MW: molecular weight in kDa. Protein samples from cell lines as indicated in (B).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The rRNA promoter derived from pLdCH (Zhang et al., 2017), which is used in pLdCH-hyBE4max, was aligned against the rRNA promoter from L. donovani, L. infantum, L. mexicana, and L. major. The first transcribed nucleotide (transcription start) is indicated as +1.
+
 To validate the observed changes of the tdTomato reporter, we then Sanger sequenced the reporter sequence before and after the editing (Figure 3A). Sanger sequencing reads were analysed by using ICE (inference of CRISPR edits; Sythego), allowing to quantify the discordance (editing rate) between the normalised edited and non-edited read for the entire sequenced region (from 2.7% to 25% of the tdTomato CDS) (Figure 3B). For all six guides, editing was only observed within the guide target sequence and not elsewhere in sequenced regions (Figure 3A, B). While selected C to T conversions within the editing window (positions 4–12) were up to 100% effective (100% editing rate) for three of the six guide target sequences, not all possible C to T conversion targets were effectively edited. For example, three C to T conversions were 100% effective for ‘Target 1’ on the template strand at positions 6–8, yielding a STOP codon at the intended position. However, the fourth conversion target of that guide at position 12 was not edited (Figure 3A), confirming previously observed differences in editing efficiencies across the editing window (efficiency higher at positions 4–8 than 8–12 [Zhang et al., 2020]). Strikingly, both control guides, which did not show any changes in the reporter expression (Figure 2D) as they were designed to only change the DNA sequence but not the amino acid sequence, showed also high editing rates (100% for Ctrl(+), 79.2% and 45.9% for Ctr(−)), confirming that the hyBE4max CBE was highly specific even though expressed for 33 days (Figure 3A, B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig3-v1.jpg)
+
+**Figure 3.:** (A) Alignment of reference sequences (Reference) with Sanger sequencing trace plots before transfection of pLdCH-hyBE4max-tdTomato targeting plasmids (D0) and 33 days after transfection (D33). Six guide loci are shown as described in the main text. Blue shading: 20nt guide target sequence. Red dotted lines: 4–12 editing window. Red marked nucleotides: expected cytosine to thymine conversion. Red boxed nucleotides: edited nucleotides. (B) Discordance between D0 and D33 trace plots from (A) was measured and plotted as editing rate versus Sanger sequencing coordinates. Each data point represents one C to T conversion. The position and orientation of each guide are indicated above, with the first guide sequence starting after 2.7% of the CDS and the last guide sequence ending after 25% of the CDS.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of pTB007-hyBE4max construct, containing (from left to right) a Cas9 and T7 RNAP expression cassette as described in Beneke et al., 2017. Cas9 has been exchanged with hyBE4max elements described in Figure 2A. The construct is integrated into the β-tubulin locus (LmjF.33:339,096–341,104). (B) Episomal sgRNA expression cassette (pPLOT-T7GuideExpress), containing a puromycin resistance marker cassette, a T7 RNAP promoter, 20nt guide target sequence, sgRNA Cas9 scaffold sequence, and hepatitis delta virus (HDV) ribozyme sequence. (C) FACS plot showing tdTomato and pTB007-hyBE4max-expressing L. major cells (left), as well as wildtype parasites (right). (D) FACS plot of tdTomato and pTB007-hyBE4max-expressing L. major parasites, transfected with pPLOT-T7GuideExpress-tdTomato targeting plasmids (see description main text). Cells are analysed 28 days post transfection. Percentage in (C) and (D) represents remaining proportion of tdTomato-expressing cells. (E) Discordance between trace plots before transfection and 28 days after transfection was measured using ICE (Synthego) and plotted as editing rate over Sanger sequencing coordinates. Each data point represents one C to T conversion. The position and orientation of each guide are indicated above, with the first guide sequence starting after 2.7% of the CDS and the last guide sequence ending after 25% of the CDS. (F) Doubling times for analysed parasites in (C) and (D). Error bars show standard deviations of triplicates. UT: cells not transfected with T7GuideExpress-tdTomato targeting plasmids; WT: wildtype cells. Asterisks indicate Student’s t-test: *p > 0.05, **p > 0.005.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Schematic of pTB007-AncBE4max construct, containing (from left to right) a Cas9 and T7 RNAP expression cassette as described in Beneke et al., 2017. Cas9 has been exchanged with AncBE4max elements, containing a SV40 NLS, APOBEC-1 variant domain (Anc689), nCas9 (D10A) protein, two uracil glycosylase inhibitor (UGI) monomers tethered via GSL and nucleoplasmin NLS. The construct is integrated into the β-tubulin locus (LmjF.33:339,096–341,104). (B) Episomal sgRNA expression cassette as described in Figure 3—figure supplement 1B. (C) FACS plot showing tdTomato and pTB007-AncBE4max-expressing L. major cells (left), as well as wildtype parasites (right). (D) FACS plot of tdTomato and pTB007-AncBE4max-expressing L. major parasites, transfected with pPLOT-T7GuideExpress-tdTomato targeting plasmids. The transfection of the control guide targeting the coding strand failed. Cells are analysed 28 days post transfection. Percentage in (C) and (D) represents remaining proportion of tdTomato-expressing cells. (E) Editing rate plotted as described in Figure 3—figure supplement 1E. (F) Sanger sequencing trace plots for guide sequence locus of Target 1 (−) targeted with pLdCH-hyBE4max, pTB007-hyBE4max, and pTB007-AncBE4max. Red dotted lines: 20nt guide target sequence. Orange dotted lines: hyBE4max 4–12 editing window. Yellow dotted lines: AncBE4max 4–7 editing window. Red boxes: edited nucleotides. Grey boxes: not edited nucleotides.
 
 Since editing rates did not reach 100% for all guides after 33 days, we thought that stable expression of the hyBE4max CBE would increase editing rates and inserted hyBE4max into the β-tubulin locus using the pTB007 plasmid as a vehicle (Beneke et al., 2017; Figure 3—figure supplement 1A). This also allowed to express sgRNAs under the control of the T7 RNAP promoter either via transcription from short DNA templates or from epsiomes (Figure 3—figure supplement 1B). While the latter strategy increased editing during our tdTomato reporter assay, with all six guides reaching nearly 100% editing rate (Figure 3—figure supplement 1C–E) and controls showing no effect on the reporter expression (Figure 3—figure supplement 1D), doubling times significantly increased once episomal-expressed sgRNAs were transfected into the cell line expressing constitutively hyBE4max and T7 RNAP (Figure 3—figure supplement 1F). We also tested another CBE version (namely AncBE4max [Koblan et al., 2018]) that, unlike hyBE4max (Zhang et al., 2020), does not have the Rad51 ssDBD (Figure 3—figure supplement 2A). While we observed also high editing rates of 100% for nearly all sgRNAs when targeting tdTomato (Figure 3—figure supplement 2B–E), we saw strong editing outside of the guide targeting window (Figure 3—figure supplement 2F), depleting the tdTomato reporter signal even in control cells, where only neutral substitutions were intended with no amino acid change (Figure 3—figure supplement 2D). Meanwhile, editing outside the guide target sequence was not observed when using the hyBE4max CBE (Figure 3—figure supplement 2F).
 
 We concluded from these initial results that episomal expression of the sgRNA and hyBE4max CBE is a suitable approach for mutant generation. While stable expression systems did not affect growth before expressing the sgRNA and may be attractive too after further optimisation, an episomal expression system seemed to be much more flexible, allowing to transfect wildtype parasites without further modifications. To test the flexibility of our system, we therefore next performed our reporter assay in L. donovani, L. mexicana, and L. infantum, and repeated it in L. major. First, we confirmed the identity of each Leishmania species by sequencing the LPG2 locus (Figure 2—figure supplement 1A, B; Akhoundi et al., 2017) and generated tdTomato-expressing clones (Figure 2B). We then transfected all four species with pLdCH-hyBE4max plasmids, targeting the tdTomato reporter as in experiments above, and measured the reporter signal 16 days post transfection. First, we assessed whether we could reproduce results in L. major. For all four repeated guide transfections (‘Control (−)’, ‘Target 1 (+)’, ‘Target 1 (−)’, and ‘Target 2 (−)’) similar results were obtained (Figure 2D and Figure 2—figure supplement 2A) with again almost 100% elimination of the tdTomato reporter signal in cells transfected with guide 1 targeting the template strand (‘Target 1 (−)’ in Figure 2—figure supplement 2A). While we also achieved full depletion of the tdTomato reporter for selected guides in the other three species, the reporter was strongest depleted in L. donovani, followed by L. mexicana, L. infantum, and L. major (Figure 2—figure supplement 2A). It is possible that this result was caused by a potentially different number of integrated tdTomato expression constructs, as we did not assess the exact tdTomato reporter copy number in each species. However, given that the pLdCH-hyBE4max expression cassette is driven by an L. donovani rRNA promoter, which is diverse compared to other Leishmania rRNA promoters (Martínez-Calvillo et al., 2001; Yan et al., 1999; Figure 2—figure supplement 3), a species-dependent result is anticipated. A pattern was also observed when assessing the doubling time of all four transfected species. Expression of the CBE and sgRNA did not affect L. major and L. mexicana growth but it increased significantly doubling times in L. donovani and L. infantum, suggesting that high CBE and sgRNA expression levels may be toxic for these parasites (Figure 2—figure supplement 2B). Conversely, this was not reflected when assessing the expression levels of hyBE4max in all four species. While protein degradation made an exact quantification of hyBE4max difficult, western blots indicated that the highest expression of hyBE4mas was seen in L. major, followed by L. infantum, L. mexicana, and L. donovani (Figure 2—figure supplement 2C).
 
-## CBE targeting of single- and multi-copy genes in Leishmania
+### CBE targeting of single- and multi-copy genes in Leishmania
 
 Despite the slight toxicity observed in L. donovani and L. infantum, we concluded that our system was efficiently and specifically converting C to T within the target window, thereby introducing STOP codons in all four Leishmania species. This prompted us to generate proof of principle mutants in wildtype cells next. To test our CBE system we decided to target the single-copy genes PF16 (encoding a central pair protein of the axoneme and essential for flagellar motility [Beneke et al., 2017; Martel et al., 2017]), IFT88 (encoding a subunit of the IFT-B complex and essential for flagellar assembly [Beneke et al., 2019]), and the miltefosine transporter (MFT, encoding a P-type ATPase that is linked to miltefosine resistance in Leishmania [Seifert et al., 2007]), as well as the multi-copy gene PFR2 (encoding a key component of the paraflagellar rod and required for normal flagellar motility [Beneke et al., 2019; Maga et al., 1999]). All four genes were targeted with four guides each, which were cloned into pLdCH-hyBE4max plasmids (Figure 2A). While we designed PF16 and IFT88 guides to be universal for multiple Leishmania species, guides for MFT and PFR2 were species specific for L. donovani and L. mexicana, respectively. In addition, guides targeting PFR2 were designed to be universal for all three PFR2 copies (A, B, and C). We then individually transfected plasmids targeting PF16 into L. donovani, L. mexicana, L. infantum, and L. major, while plasmids targeting IFT88 were only transfected into L. infantum and L. major. Meanwhile, plasmids targeting MFT were only transfected into L. donovani and plasmids targeting PFR2 only into L. mexicana.
 
 Following transfection, each cell line was subjected to motility analysis and the velocity of tracked cells was determined (Wheeler, 2017; Figure 4 and Supplementary file 1). We measured a significant decrease in motility for three (PF16-1, PF16-2, and PF16-3) of the four guides targeting PF16 in L. donovani at 14 days post transfection. In L. mexicana and L. infantum only one guide (PF16-3) yielded a measurable decrease in swimming speed, while in L. major no significant effect could be determined. For guides targeting PFR2, MFT, and IFT88, no significant decrease in swimming speed was detected in L. mexicana, L. donovani, and L. major, respectively (Figure 4A and Supplementary file 1). However, out of the four IFT88 targeting guides, one (IFT88-1) reduced the swimming speed in the transfected L. infantum population (Figure 4A and Supplementary file 1) and also yielded the expected flagellar assembly phenotype (Figure 4—figure supplement 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig4-v1.jpg)
+
+**Figure 4.:** L. donovani, L. mexicana, L. infantum, and L. major wildtype parasites were transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting PF16, MFT, PFR2, and IFT88 with four guides each (see main text description). Selected non-clonal populations were subjected to motility analysis and the frequency of the velocity of tracked cells was plotted (A) 14 days, (B) 28 days, and (C, D) 42 days post transfection. Cells were selected with 40 µg/ml hygromycin B until 28 days post transfection and then with both, (C) 40 and (D) 400 µg/ml. Each population was analysed using a Cramér-von Mises Test to detect any shift in the population distribution towards lower speed. Highlighted curves are marked with an asterisks when that shift was significant (for L. donovani, L. mexicana, and L. infantum: *p > 0.05, for L. major: *p > 0.01). For populations with a significant shift and for wildtype and NT controls, the overall percentage of tracked cells that have a velocity of less than 1 µm/s is highlighted. NT: non-targeting control, a wildtype transfected parasite, harbouring a pLdCH-hyBE4max-tdTomato-targeting-guide (Target 1 (−)) plasmid. Mean speed was measured in duplicates 14 days post transfection and in triplicates 28 and 42 days post transfection. Error bars show standard deviation between these replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Motility tracks were generate from motility analysis in Figure 4, showing 100–200 tracks from cells analysed at 28 days post transfection. WT: wildtype. NT: non-targeting control, a wildtype transfected parasite, harbouring a pLdCH-hyBE4max-tdTomato-targeting-guide (Target 1 (−)) plasmid.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Motility tracks were generate from motility analysis in Figure 4, showing 100–200 tracks from cells analysed at 42 days post transfection. Cells were selected with 40 µg/ml hygromycin B until 28 days post transfection and then with both, 40 and 400 µg/ml. WT: wildtype. NT: non-targeting control, a wildtype transfected parasite, harbouring a pLdCH-hyBE4max-tdTomato-targeting-guide (Target 1 (−)) plasmid.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** L. infantum parasites were transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting IFT88 (see main text description). Non-clonal transfected populations were imaged in DIC (differential interference contrast; grey) and A4 (for Hoechst DNA stain; red) channel, showing (A) L. infantum wildtype and (B) pLdCH-hyBE4max-IFT88-1 transfected parasites 14 days post transfection. Yellow arrows highlight parasites that do not possess a visible external flagellum.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Western blot with protein samples from cell lines indicated in Figure 4C, D. Left panel: Ponceau stain. Right panel: Cas9 detecting western blot, indicating the size of hyBE4max. MW: molecular weight in kDa.
 
 We then cultured the cells for another 14 days, keeping them under constant drug selection to maintain the guide carrying pLdCH-hyBE4max episome. As expected, we saw for most cell lines a further increase in proportion of cells that showed a decrease in swimming speed when PF16 was targeted. For L. donovani three of the four PF16 targeting guides (PF16-1, PF16-2, and PF16-3) still yielded significantly decreased motility, while for MFT no significant effect was observed (Figure 4B, Figure 4—figure supplement 1A, and Supplementary file 1). This confirmed that observed motility phenotypes were specific to the targeted gene. In L. mexicana two of the four PF16 targeting guides (PF16-2 and PF16-3) and one of the PFR2 targeting guides (PFR2-1) showed now a significant effect (Figure 4B, Figure 4—figure supplement 1A, and Supplementary file 1). In L. infantum, the percentage of cells showing decreased mutant speed was now lower for the IFT88 targeting guide (IFT88-1), which is expected as the deletion of IFT88 in L. mexicana has been shown to reduce the doubling time (Beneke et al., 2019). L. infantum parasites with a deleterious IFT88 mutation are therefore most likely outcompeted from the mutant population (Figure 4B, Figure 4—figure supplement 1A, and Supplementary file 1).
 
@@ -63,19 +111,39 @@ Since we still did not observe a measureable effect on any of the transfected L.
 
 To verify that observed phenotypes were induced by C to T editing, we then Sanger sequenced the guide targeting loci of PF16, IFT88, and PFR2 in respective targeted Leishmania species (from time point 28 days post transfection) (Figure 5 and Supplementary file 2). Observed motility phenotypes correlated well with editing rates. For example, guide PF16-3, yielding the strongest decrease in motility across all species, showed high editing rates in all four species with up to 100% C to T conversion. Guide PF16-2, which only showed a motility phenotype in L. mexicana and L. donovani, also only showed editing in those two species and guide PF16-1, which only showed a decrease in mutant speed in L. donovani, also just showed editing in L. donovani (Figures 4B and 5A). Surprisingly, we saw high editing rates for three of the four IFT88 targeting guides in L. infantum and L. major but only guide IFT88-1 resulted in a measurable motility and flagellar assembly phenotype in L. infantum (Figures 4B and 5B and Figure 4—figure supplement 3). Analysing the Sanger sequencing trace plots further, we noticed that only guide IFT88-1 induced a mutation that resulted in a STOP codon, while non-STOP codon mutations became dominant for the other two guides (Supplementary file 2), presumably due to the known IFT88 growth phenotype (Beneke et al., 2019). For guides targeting PFR2 in L. mexicana, only guide PFR2-1 was efficient, which was also the only guide resulting in decreased motility (Figures 4B and 5C). To confirm that indeed, the knockdown of PFR2 was successful, we analysed the expression of the targeted protein by western blot, confirming a strong knockdown only for guide PFR2-1 (~97% knockdown compared to wildtype) (Figure 5—figure supplement 1). It is important to highlight that this strong knockdown was achieved in non-clonal populations that had been selected to express the hyBE4max and only one sgRNA. There was no requirement for additional donor DNA or isolation of clones. This is despite the fact that PFR2 is a three-copy gene in a tandem array.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig5-v1.jpg)
+
+**Figure 5.:** L. donovani, L. infantum, L. mexicana, and L. major wildtype parasites were transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting (A) PF16, (B) IFT88, and (C) PFR2 with four guides each (see main text description). Discordance from Sanger sequencing traces before transfection (wildtype) and 28 days after transfection (Targets 1, 2, 3, and 4) was measured and plotted as described in Figure 3B. The position and orientation of each guide are indicated above.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Western blot with protein samples from L. mexicana promastigote parasites transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting PFR2 with four guides each. A wildtype and NT control is provided as well (NT: non-targeting control, a wildtype transfected parasite, harbouring a pLdCH-hyBE4max-tdTomato-targeting-guide (Target 1 (−)) plasmid). Left panel: Ponceau stain. Right panel: PFR2 detecting western blot (using L8C4 antibody), indicating the size of PFR2. MW: molecular weight in kDa. Percentage above western blot indicates difference in band intensity, normalised to total visible protein in Ponceau stain.
+
 Since guides targeting MFT in L. donovani did not result in decreased swimming speed (as expected), we wanted next to assess whether they would instead confer resistance to miltefosine, an orally given antileishmanial drug. To determine the suitability of our method for drug screening applications, such as positive drug resistance screens, we also wanted to test whether miltefosine-resistant parasites could be enriched in the mutant population by treating them with a low dose of miltefosine prior to assessing their actual resistance to the drug itself. To test this, wildtype parasites and parasites expressing MFT targeting guides were treated for 48 hr with 20 µM miltefosine (pre-treated parasites) from 16 days post transfection onwards. Then cells were washed and cultured for another 72 hr. In the following, pre-treated and non-pre-treated parasites were incubated with different doses of miltefosine for 48 hr and subsequently cell viability was measured by using an MTT assay (Figure 6A and Supplementary file 3). Pre-treated with miltefosine or not, wildtype cells were only resistant to small doses of miltefosine (5 and 20 µM). In comparison, parasites transfected with pLdCH-hyBE4max plasmids that allowed to express MFT targeting guides became significantly resistant to high doses of miltefosine (50 and 80 µM) (guide MFT-1 and MFT-3 significantly different in Figure 6C). As expected, when pre-treated with miltefosine the proportion of viable parasites at high miltefosine concentrations then rose further and three out of four guides were able to confer resistance (guide MFT-1, MFT-2, and MFT-3 significantly different in Figure 6B). In addition, viability rates correlated well with high editing rates for all these three guides. For example, guide MFT-3, which conferred the highest level of resistance to miltefosine (Figure 6B, C), resulted also in the highest editing rate of all MFT targeting guides (up to 81.9% for non-pre-treated cells and 86.5% for pre-treated cells) (Figure 6D, E). Further analysis of trace plots also highlighted that the introduced mutations resulted in the intended premature STOP codon (Supplementary file 2). This demonstrates that our method can potentially be used for positive and antileishmanial drug-resistant screening.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig6-v1.jpg)
 
-**Figure 6.:** L.donovani miltefosine transporter (MFT).(A) L. donovani wildtype parasites were transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting MFT with four guides each. Sixteeen days post transfection, transfected and non-transfected parasites were treated for 48 hr with 20 µM miltefosine, then washed and cultured for another 72 hr (pre-treated parasites). (B) Pre-treated and (C) non-pre-treated parasites were subjected to different doses of miltefosine (5, 20, 50, 80, and 400 µM) and relative growth between ‘no drug controls’ and each different dose was measured using an MTT cell viability assay. Asterisks indicate one-way analysis of variance (ANOVA) test with post hoc Tukey honestly significant difference (HSD), comparing each mutant and wildtype: *p > 0.05, **p > 0.01 (blue: MFT-1; green: MFT-2; red: MFT-3; yellow: MFT-4). Error bars show standard deviations of triplicates. Discordance from Sanger sequencing traces before transfection (wildtype) and 21 days after transfection (MFT-1, 2, 3, and 4), from either (D) pre-treated and (E) non-pre-treated populations, was measured and plotted as described in Figure 3B. The position and orientation of each guide are indicated above.
+**Figure 6.:** (A) L. donovani wildtype parasites were transfected with pLdCH-hyBE4max-sgRNA expression plasmids, targeting MFT with four guides each. Sixteeen days post transfection, transfected and non-transfected parasites were treated for 48 hr with 20 µM miltefosine, then washed and cultured for another 72 hr (pre-treated parasites). (B) Pre-treated and (C) non-pre-treated parasites were subjected to different doses of miltefosine (5, 20, 50, 80, and 400 µM) and relative growth between ‘no drug controls’ and each different dose was measured using an MTT cell viability assay. Asterisks indicate one-way analysis of variance (ANOVA) test with post hoc Tukey honestly significant difference (HSD), comparing each mutant and wildtype: *p > 0.05, **p > 0.01 (blue: MFT-1; green: MFT-2; red: MFT-3; yellow: MFT-4). Error bars show standard deviations of triplicates. Discordance from Sanger sequencing traces before transfection (wildtype) and 21 days after transfection (MFT-1, 2, 3, and 4), from either (D) pre-treated and (E) non-pre-treated populations, was measured and plotted as described in Figure 3B. The position and orientation of each guide are indicated above.
 
 Finally, we also analysed trace plots along the entire Sanger sequencing range to verify the editing window. Out of all 26 guides used in this study, including tdTomato targeting guides from above, 24 guides resulted in editing exclusively within the expected hyBE4max 4–12 editing window (Zhang et al., 2020). One guide showed editing activity within 3nt range of the 4–12 editing window (tdTomato guide Target 2 (+); Figure 3A) and one guide resulted in editing within 6nt range of the guide sequence (PF16-1 in L. donovani; Supplementary file 2). However, editing rates of these two guides were relatively low (23% and 25–27%, respectively), while editing within the 4–12 editing window reached up to 100%.
 
-## A Leishmania-optimised CBE for targeting essential genes in pooled transfection screens
+### A Leishmania-optimised CBE for targeting essential genes in pooled transfection screens
 
 While these proof of principle mutants demonstrate that CBEs can be used to efficiently introduce STOP codons in Leishmania genes, allowing to generate functional null mutant populations by using just one sgRNA, we wanted to further improve our method by modifying the Rad51 ssDBD. Comparing the Rad51 ssDBD from Leishmania with the human version, the Leishmania version contains an N-terminal extension that is bound to the conserved Rad51 ssDBD part through a glutamine-rich repeat (Figure 7—figure supplement 1A). Glutamine-rich repeats, known to be enriched in transcription factors, can increase DNA–protein binding by forming hydrogen bonds via their amide site chains (Perutz et al., 1994). Since L. major had the longest glutamine-rich repeat among our tested Leishmania species, we decided to replace the Rad51 ssDBD in pLdCH-hyBE4max with an L. major-derived Rad51 ssDBD, giving rise to pLdCH-hyBE4max-LmajDBD (Figure 7—figure supplement 1B). We then chose L. mexicana to test our Leishmania-optimised CBE as in experiments above editing rates in L. mexicana were higher than in L. major while not affecting parasite growth. First, we repeated our tdTomato reporter assay and saw an increase in the knockdown effect for the Leishmania-optimised CBE version for two of the four targeting guides at 16 days post transfection (1.6-fold increase for guide Target 2 on the coding strand and 5.3-fold increase for guide Target 2 on the template strand). For all other guides, including control guides that were designed not to yield a STOP codon, no major difference between both CBE versions could be detected (Figure 7—figure supplement 1C).
 
 Encouraged by the slightly improved editing rate, we then decided to test whether our method could also be used to target essential genes. Our earlier results indicated that the individual targeting of IFT88, a gene required for normal proliferation (Beneke et al., 2019), results in outcompeting of the introduced STOP codon mutation over time (Figure 4). This outcompeting process should in-turn result in reduced growth of the overall mutant population. Therefore, our assumption was that the viability phenotype of an essential gene could especially be detected in a pooled screening format. To test this, we pooled all annealed guide oligos from experiments above, targeting IFT88, PF16, MFT, PFR2, and tdTomato, and generated an oligo pool (Figure 7A). In addition, we added four guides to this oligo pool that target the Cdc2-related kinase 3 (CRK3), an essential kinase that has been used as a proof of principle mutant for essential genes in previous studies (Yagoubat et al., 2020b; Duncan et al., 2016). The prediction was that CRK3 guides would be strongly depleted from the pool over time. In addition, we wanted to use this experiment as an opportunity to compare again our Leishmania-optimised CBE (pLdCH-hyBE4max-LmajDBD) with the non-optimised version (pLdCH-hyBE4max). We therefore cloned the oligo pool, consisting of these 26 guides, into both plasmids (Figure 7A). We then transfected this library in triplicates into L. mexicana wildtype parasites, so that the four guides targeting MFT, originally designed for L. donovani, and the six guides targeting tdTomato, having no target in wildtype cells, would serve as non-targeting controls. Meanwhile, IFT88, PF16, PFR2, and CRK3 would be targeted by four guides each.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic of hyBE4max loss-of-function screen in Leishmania. Oligo pairs were annealed and phosphorylated, then pooled and cloned into pLdCH-hyBE4max and pLdCH-hyBE4max-LmajDBD plasmids. Plasmid libraries, in triplicate, were transfected into L. mexicana wildtype parasites. To determine the guide coverage (transfectants per guide), aliquots of replicates were subjected to 96-well plate cloning immediately after transfection. DNA was subsequently isolated 12 and 21 days after library transfection. Plasmid libraries and isolated DNA (all marked with red asterisks) were amplified and guide abundances in each sample and replicate were determined by Illumina sequencing. (B) Illumina sequencing data of both library screens (top panel: pLdCH-hyBE4max-LmajDBD; bottom panel: pLdCH-hyBE4max) was analysed by z-scoring the ratio between each plasmid, day 12 and 21 replicate sample. Z-scores were plotted against the total of raw reads from either: (1) plasmid and day 12 sample (left panel), or (2) plasmid and day 21 sample (right panel). To identify data points that were significant different, a 0.8 confidence ellipse was calculated (black line). Error bars show standard deviation between triplicates. Identities of data points, each representing a different guide sequence, are indicated in the legend below (see main text for further explanation).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Protein alignment of the Rad51 ssDBD between the hyBE4max-derived version (Zhang et al., 2020) and versions derived from Homo sapiens, T. brucei, T. congolense, L. major, L. infantum, L. donovani, and L. mexicana. Highlighted is the ssDBD domain (yellow), linker domain (blue), and trypanosomatid-specific glutamine repeat (green). The Rad51 ssDBD with the longest glutamine repeat (L. major version, amino acid sequence highlighted in red) was taken to replace the human version in hyBE4max, giving rise to (B) pLdCH-hyBE4max-LmajDBD with other elements remaining identical as described in Figure 2A. (C) FACS plot showing tdTomato-expressing and wildtype L. mexicana parasites (left panel, untransfected), as well as tdTomato-expressing L. mexicana parasites, transfected with either pLdCH-hyBE4max-tdTomato or pLdCH-hyBE4max-LmajDBD-tdTomato targeting plasmids. Cells are analysed 16 days post transfection. Percentage represents remaining proportion of tdTomato-expressing cells.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/85605/elife-85605-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Following serial dilutions immediately after library transfection, the number of hygromycin B-resistant transfectants obtained per transfected cell and the representation of each guide within the library (transfectants per guide) was calculated by counting the number of clones 14 days post transfection in triplicates (red: average; grey: replicates). (B) DNA from isolated clones was extracted and the guide cassette within the pLdCH-hyBE4max and pLdCH-hyBE4max-LmajDBD plasmid was amplified. Sanger sequencing traces of amplicons show whether one or multiple guide plasmids were present in each clone.
 
 Immediately after library transfection, we also assessed the representation of each guide within the library by subjecting an aliquot of each library and replicate to serial dilutions. This showed an average representation of ~15 transfectants/guide (Figure 7—figure supplement 2A), which is three times as high as typically used in pooled RNAi libraries in T. brucei (Morris et al., 2002). Selected clones from these serial dilutions were then also Sanger sequenced to determine whether parasites would harbour one or multiple sgRNAs. This showed that most transfectants had just been transfected with a single episome. However, three out of eight sequenced clones maintained two different plasmids and by that expressed two sgRNAs (Figure 7—figure supplement 2B). This meant that for most transfectants only the effect of one guide per transfectant is measured. However, there must have been also transfectants in the pool with simultaneously induced mutations on multiple genes. Since we could not find clones that harboured more than two different guide sequences and since these seemed to be randomly mixed, we concluded that effects of multi-gene targeting in one transfectant should be minimal within the mutant pool.
 
@@ -83,7 +151,7 @@ Hence, we proceeded with the viability screen and analysed by Illumina sequencin
 
 ## Discussion
 
-## Advantages and disadvantages of cytosine base editing in Leishmania
+### Advantages and disadvantages of cytosine base editing in Leishmania
 
 Here, we report our new LeishBASEedit CBE toolbox, allowing to knockdown single- and multi-copy genes in Leishmania populations by expressing hyBE4max and just one sgRNA. Our method to convert selected codons into STOP codons by using a base editor bypasses the requirement of DSBs, HR, donor DNA, or isolation of clones in order to obtain functional null mutants. Since our technique resembles a gene silencing approach, it is applicable for targeting essential genes in pooled transfections. Most importantly, this enables genetic screening in wildtype parasites (no engineered cell lines required) through a pooled plasmid library transfection format. While most of these points also apply for RNAi approaches, their application remains restricted to Leishmania species of the Viannia subgenus (Lye et al., 2010; Ullu et al., 2004). In addition, the RNAi efficacy in Leishmania Viannia species varies widely and has been shown to be gene-, species-, and even strain-specific, as well as to depend on the length of the dsRNA hairpin (de Paiva et al., 2015; Lye et al., 2022; Brettmann et al., 2016; Kohl et al., 2018).
 
@@ -91,7 +159,7 @@ On the contrary, the base editing efficacy was here also shown to be time depend
 
 To facilitate large-scale base editing CRISPR screens, ssDNA oligo pools can be obtained commercially and used to generate sgRNA libraries. The generation of CRISPR libraries is straight forward and scalable, with some libraries containing as many as ~215,000 sgRNAs (Horlbeck et al., 2016). Guides are designed to be gene specific and have therefore a much greater specificity than RNAi plasmid libraries that are typically comprised of randomly sheared genomic DNA, such as those previously used for T. brucei (Alsford et al., 2011; Morris et al., 2002). Cloning strategies to generate sgRNA plasmid libraries typically involve first the amplification of ssDNA oligo libraries and then golden gate assembly (using Type IIS restrictions enzymes) of amplicons into a target vector. Since the vector we here use for base editing is compatible with this cloning strategy, we believe that our base editing method could be scaled up to facilitate genome-wide screens in future studies. The ability of just sharing targeted or potentially even genome-wide plasmid libraries and applying these to different research questions in various Leishmania species in many different laboratories around the globe represents a major improvement to previous methods and overcomes challenges associated with bar-seq screens, such as the LeishGEM project (as outlined in our introduction).
 
-## Possible improvements to base editing in Leishmania
+### Possible improvements to base editing in Leishmania
 
 What remains to be improved however, is the long culture time needed for some guides in order to reach high C to T conversion rates because prolonged guide targeting may cause unwanted side effects, such as off-target mutations (Grünewald et al., 2019; Zhou et al., 2019). We did not assess possible off-target mutations on a genome-wide scale in this study and this remains to be thoroughly evaluated in the future. However, apart from one guide (PF16-1 in L. donovani; Supplementary file 2), which resulted in editing within 6nt range of the guide sequence, we did not detect any editing outside of the 20nt guide sequence even 33 days post transfection when analysing the entire Sanger sequencing range of all our targeted genes (Figures 3A, B, 5A–C,, 6D, E and Supplementary file 2).
 
@@ -101,23 +169,215 @@ To reduce editing time, it may be also preferable to target the template strand 
 
 Lastly, modifying the CBE version through codon optimisation, addition of species-specific NLS or exchange of deaminase and UGI domains, could further increase the editing rate in Leishmania. We show that our Leishmania-optimised hyBE4max CBE version increases the editing efficiency (Figure 7B and Figure 7—figure supplement 1C). However, it remains to be explored whether also fidelity and editing window size is affected by this modification, as for example hyBE4max adaptations in rise are known to have expanded the editing windows (Wei et al., 2022). While especially our improved CBE version allowed to efficiently induce a knockdown of CRK3, guides targeting IFT88 were not significantly depleted in our small-scale library screen (Figure 7B). Although IFT88 is not an essential gene, we would have also expected a decrease in guide abundance over time as IFT88 has been shown to be required for normal promastigote proliferation (Beneke et al., 2019). It is important to note that we prioritised universal sgRNAs over the highest scoring guides to target IFT88 in multiple species in this study. Testing these four IFT88 guides individually, we only found one to be effective in L. infantum, while in L. major no measurable effect, even 42 days post transfection, was observed (Figure 4A–D). Meanwhile, we did not individually test these four IFT88 targeting guides in L. mexicana. It is therefore possible that by picking higher scoring guides, a depletion of IFT88 guides from the pool could have been achieved. It is also worth highlighting again that through base editing produced knockdowns are technically truncations with remaining N-terminal protein parts that could be functional. In addition, the exact timing of isolating DNA from pools might influence when a decrease of parasites with a deleterious mutation is detectable. As pointed out above, this may differ between guides, species, and genes. Thus, to detect the whole range of mutant phenotypes, such as IFT88, a tighter collection window of isolating DNA from pools may be needed. Nevertheless, we demonstrate through targeting of CRK3 that cells with an introduced premature STOP codon in an essential gene can be significantly depleted from a library with our approach (Figure 7B).
 
-## Conclusion
+### Conclusion
 
 To date, a functional dissection of the vast majority of Leishmania genes remains to be performed and a lack of suitable tools limits the ability of the field to pursue large-scale loss-of-function screens. There is an urgent need to develop a high-throughput technology that allows: (1) to identify genes that are essential in any given environment, (2) to study multi-copy genes, and (3) to generate loss-of-function libraries through transfection of pooled plasmids rather than by pooling individually generated mutants. Here, we report a CRISPR/Cas9 CBE toolbox for Leishmania that fulfils these criteria. LeishBASEedit allows to efficiently transform codons into STOP codons, thereby enabling the functional disruption of single- and multi-copy genes without requiring DSBs, HR, donor DNA, or isolation of clones. We demonstrate that this tool can be used for drug resistance screening, to target essential genes and to pursue loss-of-function screens in a pooled plasmid library transfection format. We therefore believe that this method will enable large-scale loss-of-function screens in Leishmania in many laboratories around the globe, simply by just sharing plasmid libraries. This will potentially even allow for genome-wide screens under different conditions in various clinical isolates and across multiple Leishmania species without limitations due to extreme cases of gene copy numbers and/or aneuploidy or lack of RNAi components.
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Leishmania mexicana)</td>
+      <td>L. mexicana wildtype</td>
+      <td>Eva Gluenz laboratory</td>
+      <td>WHO strain MNYC/BZ/62/M379</td>
+      <td>Used TriTrypDB (release 59, Aslett et al., 2010) reference annotation: L. mexicana MHOMGT2001U1103</td>
+    </tr>
+    <tr>
+      <td>Cell line(Leishmania major)</td>
+      <td>L. major wildtype</td>
+      <td>Eva Gluenz laboratory</td>
+      <td>Strain Friedlin</td>
+      <td>Used TriTrypDB (release 59, Aslett et al., 2010) reference annotation: L. major Friedlin</td>
+    </tr>
+    <tr>
+      <td>Cell line(Leishmania donovani)</td>
+      <td>L. donovani wildtype</td>
+      <td>Joachim Clos laboratory, Decuypere et al., 2005</td>
+      <td>Strain BPK190</td>
+      <td>Used TriTrypDB (release 59, Aslett et al., 2010) reference annotation: L. donovani BPK282A1</td>
+    </tr>
+    <tr>
+      <td>Cell line(Leishmania infantum)</td>
+      <td>L. infantum wildtype</td>
+      <td>Joachim Clos laboratory, Sulahian et al., 1997</td>
+      <td>Strain MHOM/FR/91/LEM2259</td>
+      <td>Used TriTrypDB (release 59, Aslett et al., 2010) reference annotation: L. infantum JPCM5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hyBE4max</td>
+      <td>Addgene, Zhang et al., 2020</td>
+      <td>#157942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AncBE4max</td>
+      <td>Addgene, Koblan et al., 2018</td>
+      <td>#112100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTB007</td>
+      <td>Beneke et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPLOT Puro</td>
+      <td>Beneke et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLdCH</td>
+      <td>Addgene, Zhang et al., 2017</td>
+      <td>#84291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTB007-hyBE4max</td>
+      <td>This study</td>
+      <td></td>
+      <td>See description under ‘Construction of CBE and sgRNA expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTB007-AncBE4max</td>
+      <td>This study</td>
+      <td></td>
+      <td>See description under ‘Construction of CBE and sgRNA expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLdCH-hyBE4max</td>
+      <td>This study</td>
+      <td></td>
+      <td>See description under ‘Construction of CBE and sgRNA expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLdCH-hyBE4max-LmajDBD</td>
+      <td>This study</td>
+      <td></td>
+      <td>See description under ‘Construction of CBE and sgRNA expression plasmids’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guide-it Cas9 (rabbit polyclonal)</td>
+      <td>Takara</td>
+      <td>#632607</td>
+      <td>Dilution for western blot 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PFR2(mouse monoclonal)</td>
+      <td>Kohl et al., 1999</td>
+      <td>L8C4</td>
+      <td>Dilution for western blot 1:10</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Miltefosine</td>
+      <td>Sigma</td>
+      <td>M5571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Thiazolyl Blue Tetrazolium Bromide (MTT)</td>
+      <td>Sigma</td>
+      <td>M2128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ICE</td>
+      <td>Synthego</td>
+      <td>https://ice.synthego.com/#/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>TriTrypDB (release 59)</td>
+      <td>Aslett et al., 2010</td>
+      <td>https://tritrypdb.org/tritrypdb/app</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LeishBASEedit</td>
+      <td>This study</td>
+      <td>http://www.leishbaseedit.net/</td>
+      <td>See description under ‘Automated CBE guide design using LeishBASEedit’</td>
+    </tr>
+    <tr>
+      <td>Gene (L. donovani BPK282A1, L. infantum JPCM5, L. major Friedlin, L. mexicana MHOMGT2001U1103)</td>
+      <td>PF16</td>
+      <td>TriTrypDB (release 59), Aslett et al., 2010</td>
+      <td>LdBPK_201450.1, LmjF.20.1400, LmxM.20.1400, LINF_200019300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (L. donovani BPK282A1, L. infantum JPCM5, L. major Friedlin, L. mexicana MHOMGT2001U1103)</td>
+      <td>IFT88</td>
+      <td>TriTrypDB (release 59), Aslett et al., 2010</td>
+      <td>LINF_270017700, LdBPK_271010.1, LmjF.27.1130, LmxM.27.1130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (L. donovani BPK282A1)</td>
+      <td>MFT</td>
+      <td>TriTrypDB (release 59), Aslett et al., 2010</td>
+      <td>LdBPK_131590.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (L. mexicana MHOMGT2001U1103)</td>
+      <td>PFR2A, B, and C</td>
+      <td>TriTrypDB (release 59), Aslett et al., 2010</td>
+      <td>LmxM.16.1430.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (L. mexicana MHOMGT2001U1103)</td>
+      <td>CRK3</td>
+      <td>TriTrypDB (release 59), Aslett et al., 2010</td>
+      <td>LmxM.36.0550.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Promastigote-form L. mexicana (WHO strain MNYC/BZ/62/M379), L. major Friedlin, L. donovani (strain BPK190, Decuypere et al., 2005), and L. infantum (strain MHOM/FR/91/LEM2259, Sulahian et al., 1997) were grown at 28°C in M199 medium (Life Technologies) supplemented with 2.2 g/l NaHCO3, 0.0025% haemin, 0.1 mM adenine hemisulfate, 1.2 μg/ml 6-biopterin, 40 mM 4-(2-hydroxyethyl)piperazine-1-ethanesulfonic acid pH 7.4, and 20% FCS (fetal calf serum). Media were supplemented with the relevant selection drugs: 40 or 400 μg/ml Hygromycin B, 40  μg/ml Puromycin Dihydrochloride, and 40 μg/ml G-418 Disulfate. The identity of each Leishmania species was confirmed by sequencing the LPG2 locus (Akhoundi et al., 2017; Figure 2—figure supplement 1) and cell lines were tested negative for mycoplasma contamination at Eurofins Genomics. Doubling times were determined by sub-culturing parasites repeatedly (over 5 days) to 106 cells/ml and measuring cell densities 24 hr later using a Coulter Counter Z2 particle counter (Beckman Coulter).
 
-## Automated CBE guide design using LeishBASEedit
+### Automated CBE guide design using LeishBASEedit
 
 For design of sgRNA primers, coding sequences (CDS) and genome reference sequences were obtained from TriTrypDB (release 59) (Aslett et al., 2010) and processed using an in-house script (Source Code File 1, LeishBASEedit v1). First CRISPR-CBEI (Yu et al., 2020) was used to find all suitable sgRNAs that would transform arginine, tryptophan, or glutamine codons into STOP codons by cytosine to thymine conversion. Then, sgRNAs were filtered to select guides that would introduce a STOP codon within the first 50% of the CDS and were scored via a scoring matrix as follows: (1) one scoring point per additionally introduced STOP codon, (2) one scoring point if C to T edit is within 4–8 editing window, (3) one scoring point if C to T edit is within 4–10 editing window (guides with 4–8 editing window will have now 2 points in total), (4) one scoring point if C to T edit is within first 20% of CDS, and (5) one scoring point if C to T edit is within first 40% of CDS (guides within first 20% of CDS will have now 2 points in total) (the scoring matrix can be found as a table on http://www.leishbaseedit.net/). If the sgRNA score was equal, the guide closer to the START codon was ranked higher. In addition, sgRNAs targeting the template strand (−) were ranked higher than sgRNAs targeting the coding strand (+) (as further explained in the discussion). Finally, we also assessed the specificity of each sgRNA by counting the number of perfect alignments between guide target sequence (23 nt, including the protospacer adjacent motif NGG) and reference genome. We then transformed all sgRNA target sequences to generate primers for cloning into pLdCH-hyBE4max and pLdCH-hyBE4max-LmajDBD plasmids, and uploaded CBE sgRNA design data for 64 different kinetoplastids to our new primer design resource http://www.leishbaseedit.net/.
 
 For all sgRNAs used in this study (Supplementary file 5), we used the following reference annotations from TriTrypDB (release 59, Aslett et al., 2010): (1) for L. donovani (strain BPK190), we used the L. donovani BPK282A1 annotation, (2) for L. infantum (strain MHOM/FR/91/LEM2259), we used the L. infantum JPCM5 annotation, (3) for L. major Friedlin, we used the L. major Friedlin annotation, and (4) for L. mexicana (WHO strain MNYC/BZ/62/M379), we used the L. mexicana MHOMGT2001U1103 annotation.
 
-## Construction of CBE and sgRNA expression plasmids
+### Construction of CBE and sgRNA expression plasmids
 
 To generate pTB007-hyBE4max (Figure 3—figure supplement 1A) and pTB007-AncBE4max (Figure 3—figure supplement 2A) plasmids, hyBE4max (Addgene #157942, Zhang et al., 2020) and AncBE4max (Addgene #112100, Koblan et al., 2018) were amplified using primer 1006F and 1007R and cloned into SpeI and FseI sites of pTB007 (Beneke et al., 2017). Plasmid pLdCH-hyBE4max (Figure 2A) was generated by amplifying hyBE4max (Addgene #157942, Zhang et al., 2020) using primer 1008F and 1007R and cloning it into AgeI and FseI sites of pLdCH (Addgene #84291, Zhang et al., 2017). To construct pLdCH-hyBE4max-LmajDBD (Figure 7—figure supplement 1B), a fusion PCR construct was produced and cloned into pLdCH-hyBE4max, thereby replacing the human-derived Rad51 ssDBD. Briefly, three fragments were individually amplified: (1) C-terminal end of APOBEC-1 from the pLdCH-hyBE4max plasmid (primer 1084F_1stRXN and 1085Rfusion), (2) Rad51 ssDBD from L. major Friedlin genomic DNA (primer 1086F and 1087R), and (3) nCas9 from the pLdCH-hyBE4max plasmid (primer 1088Ffusion and 1014R). Then all three fragments were fused in a fusion PCR reaction using 1084F and 1007R as nested primers. Finally, the resulting fusion PCR construct was cloned into AvrII and FseI sites of pLdCH-hyBE4max.
 
@@ -129,11 +389,11 @@ Constructed plasmids (pTB007-hyBE4max, pTB007-AncBE4max, pLdCH-hyBE4max, and pLd
 
 All used primer sequences (Supplementary file 5) and plasmid maps (Supplementary file 7) can be found in the supplementary. Primers were all ordered as standard desalted oligos at 25 nmol scale (Sigma).
 
-## Transfections
+### Transfections
 
 Parasites were transfected as described previously (Beneke et al., 2017; Beneke and Gluenz, 2019) in 1× Tb-BSF buffer (Schumann Burkard et al., 2011). Briefly, 5–10 µg of tdTomato expression construct (see description for ‘tdTomato reporter assays’ below) or plasmid DNA (circular for pLdCH-hyBE4max, pLdCH-hyBE4max-LmajDBD, and pPLOT-T7GuideExpress plasmids; PacI linearised for pTB007-hyBE4max and pTB007-AncBE4max) were diluted into 50 µl ultra-pure water and heat sterilised for 5 min at 95°C. Then, 50 µl sterilised DNA was mixed with 5 × 106 cells submerged in 200 µl of 1.25× Tb-BSF buffer (final transfection volume 250 µl with 1× Tb-BSF buffer) and transfected using one pulse with program X-001 on an Amaxa Nucleofector IIb (Lonza). Cells were recovered in M199 culture medium as specified above and 6–16 hr post transfection the required selection drug was added. A detailed protocol for transfecting CBE plasmids into Leishmania parasites can be found in the supplementary (Supplementary file 8) or on http://www.leishbaseedit.net/.
 
-## TdTomato reporter assays
+### TdTomato reporter assays
 
 To set up tdTomato reporter assays, we first generated a pPLOT-Neo-tdTomato plasmid. The plasmid pTSARib-tdTomato (Capewell et al., 2016) was digested with HindIII and BamHI to isolate the tdTomato-coding sequence, which was then cloned into HindIII and BamHI sites of pPLOT-Neo (Beneke et al., 2017). Then a tdTomato expression construct was generated, consisting of: (1) a neomycin drug resistance expression cassette, (2) a tdTomato expression cassette, and (3) two surrounding homology flanks allowing for integration into the 18S rRNA locus. The construct was produced by fusion PCR as previously described (Dean et al., 2015). First, two fragments were individually amplified: (1) upstream and (2) downstream homology flanks from L. major Friedlin genomic DNA using primer 1000F/1001R and primer 1002F/1003R, respectively. Then both fragments were used to amplify the tdTomato expression construct from the pPLOT-Neo-tdTomato plasmid, using primer 1004F and 1005R as nested primers. Finally, PCR reactions were purified and transfected as described above. Following transfection into L. mexicana, L. major, L. donovani, and L. infantum, clones were isolated as previously described (Beneke et al., 2017) and screened using a FACSCalibur cell analyzer (BD) to select a clone with high tdTomato expression. Subsequently, the chosen L. major tdTomato-expressing clone was again transfected with PacI linearised pTB007-hyBE4max and pTB007-AncBE4max plasmid DNA. Clones were again isolated, expression of tdTomato confirmed and the fastest growing clone picked for the tdTomato reporter assay. We did not assess how many copies of the tdTomato expression cassette were integrated in selected tdTomato clones.
 
@@ -141,37 +401,37 @@ Chosen tdTomato clones were then transfected with pLdCH-hyBE4max and pLdCH-hyBE4
 
 To prepare parasites for FACS analysis, 400–800 µl of a dense culture was pelleted at 800 × g for 5 min, washed once in phosphate-buffered saline (PBS, pH 7.4) and then resuspended in 200 µl PBS.
 
-## Motility analysis and light microscopy
+### Motility analysis and light microscopy
 
 Motility analysis was performed as previously described in Beneke et al., 2019 using the method from Wheeler, 2017. Mean speed was measured in duplicates 14 days post transfection and in triplicates 28 and 42 days post transfection. 5 μl of cell culture (cell density ~6 × 106 cells/ml) was placed on a glass slide in a 250-μm deep chamber covered with a 1.0-cover slip and imaged using darkfield illumination with a ×10 numerical aperture (NA) 0.3 objective and an Allied-Vision Pike F-505B camera on a Zeiss Axiophot microscope at the ambient temperature of 25–28°C. Tracks were processed using a Fiji (Schindelin et al., 2012) macro from Wheeler, 2017 and further processed by creating histograms of velocity per tracked cell with the following bin categories: 0.01, 0.1, 0.3, 0.7, 1.0, 1.5, 3.0, 6.0, 8.0, 10.0, 12.0, 16.0, and 30.0 µm/s. Histogram data of replicates were then averaged and tested using the Cramér–von Mises criterion, allowing to identify which non-clonal mutant populations significantly developed a positively (right) skewed distribution due to the base editing (Supplementary file 1).
 
 For light microscopy, Leishmania parasites were prepared as described previously (Wheeler et al., 2015) and imaged live using an inverted fluorescence microscope (DMI6000B, Leica) with a ×63 NA 1.30 glycerine immersion objective and a Leica DFC365 FX monochrome digital camera at the ambient temperature of 25–28°C.
 
-## Western blots
+### Western blots
 
 Cas9 and PFR2 protein was detected on western blots using the Guide-it Cas9 (Takara, 632607) and L8C4 (Kohl et al., 1999) (a gift from K. Gull, University of Oxford) antibodies, respectively. Briefly, Leishmania promastigotes were washed in ice-cold PBS twice containing 1× Halt Protease Inhibitor Cocktail (Thermo Fisher) and then heated in 1× Laemmli buffer for 10 min at 60°C. 2.5 × 106 cell equivalents of Leishmania promastigotes were loaded and subjected to electrophoresis on 6% (for Cas9) or 10% (for PFR2) sodium dodecyl sulfate (SDS)–polyacrylamide gels. Samples were transferred to nitrocellulose membranes (GE Healthcare) and incubated in blocking buffer (PBS with 0.05% [wt/vol] Tween 20 [PBST] with 5% milk for Cas9 and 1% milk for L8C4) for 1 hr. Then, membranes were incubated with primary antibodies (diluted in blocking buffer [Cas9 1:1000, L8C4 1:10]) for 1 hr, washed in PBST three times and incubated with secondary antibodies (IRDye LI-COR, 926-32211 for Cas9, 925-32210 for L8C4, both diluted 1:10,000 in PBST) for 1 hr. Membranes were washed again in PBST three times and imaged using a LI-COR Odyssey CLx.
 
-## Miltefosine drug resistance and MTT viability assays
+### Miltefosine drug resistance and MTT viability assays
 
 Transfected and non-transfected L. donovani parasites were treated for 48 hr with 20 µM miltefosine (pre-treated parasites) from 16 days post transfection onwards. Then cells were washed in PBS twice and cultured for another 72 hr. In the following, pre-treated and non-pre-treated parasites were aliquoted into a 96-well plate to measure cell viability in triplicates when incubated with different doses of miltefosine (Figure 6A). For each 96-well plate well, 5 × 104 parasites were resuspended in 85 µl cell culture medium and mixed with 5 µl of sterile ultra-pure water or miltefosine solution (Sigma M5571, dissolved in ultra-pure water at 10 mM) to a final concentration of either 5, 20, 50, 80, and 400 µM. Cells were cultured for 48 hr and then 10 µl of Thiazolyl Blue Tetrazolium Bromide solution (MTT; Sigma M2128, dissolved in PBS at 5 mg/ml and 0.2 µm sterile filtered) was added to measure cell viability and cells were incubated at 28°C in the dark for 3 hr. Subsequently, 100 µl of 10% SDS solution (dissolved in 0.01 M HCl) was added and plates were incubated at 37°C in the dark overnight (not longer than 18 hr) (Tada et al., 1986). Finally, the absorbance was read at 570 nm using a Tecan Infinite M200 Plate Reader (Tecan Life Sciences).
 
 For analysis, absorbance reads from the media control were subtracted from the absorbance read of each data point and then the ratio between wells with no added miltefosine and each different miltefosine concentration was calculated. The significance was calculated by using a one-way analysis of variance test with post hoc Tukey honestly significant difference (Supplementary file 3).
 
-## DNA isolation, Sanger sequencing, and measurement of editing rates
+### DNA isolation, Sanger sequencing, and measurement of editing rates
 
 Following transfection, DNA was isolated as previously described (Rotureau et al., 2005). Briefly, 400–800 µl of a dense culture was pelleted, resuspended in 100 µl lysis buffer (10 mM Tris–HCl at pH 8.0, 5 mM EDTA (ethylenediaminetetraacetic acid), 0.5% SDS, 200 mM NaCl, and 100 μg/ml proteinase K) and incubated for 30 min at 65°C. Then, 250 µl of 100% EtOH was added and samples were centrifuged at 17,000 × g for 30 min (at 4°C). Supernatant was aspirated and DNA resuspended in 50 µl of ultra-pure water. To amplify amplicons for Sanger sequencing, 1 µl of DNA was added to a 50 µl PCR reaction. Amplicons were generated using two guide target locus spanning primers and were either directly purified or first ran on a 2% agarose gel and then purified following band excision from the gel. Depending on the location of the guide, the forward or reverse primer was then used for Sanger sequencing at Eurofins Genomics. Primers for amplification and Sanger sequencing are listed in Supplementary file 5. To measure the editing rate, sequencing reads were analysed and normalised using ICE (Synthego), allowing to compare the ‘before-editing’ read (control sample) with the ‘after-editing’ read (edited sample) by overlapping normalised peak heights at aligned positions. The resulting discordance between both reads was then mapped to guide positions and plotted as editing rate.
 
-## Generation of sgRNA CBE plasmid libraries
+### Generation of sgRNA CBE plasmid libraries
 
 To generate plasmid libraries, we cloned a pool of sgRNA sequences into pLdCH-hyBE4max and pLdCH-hyBE4max-LmajDBD CBE plasmids. First, plasmid DNA was linearised and dephosphorylated by incubating the following mixture at 37°C overnight: 5 µg CBE plasmid, 2 µl BpiI (BbsI) (Thermo Fisher, ER1011), 2 µl FastAP (Thermo Fisher, EF0651), and 3 µl 10× Tango Buffer (Thermo Fisher) (30 µl total volume with ultra-pure water). Then, sgRNA oligo pairs (Supplementary file 5) were all individually annealed and phosphorylated. 1 µl oligo 1 (100 µM), 1 µl oligo 2 (100 µM), 1 µl T4 DNA Ligation Buffer (Thermo Fisher), 0.5 µl T4-Polynukleotid-Kinase (Thermo Fisher, EK0031), and 6.5 µl ultra-pure water were mixed, then phosphorylated at 37°C for 30 and 5 min at 95°C, and finally annealed by ramping down from 95 to 25°C at 5°C/min. All 26 individually annealed and phosphorylated primer pairs were then equally mixed (10 µl of each oligo pair) and the resulting pool was diluted 1 in 200 by mixing 5 µl of the oligo pool with 995 µl of ultra-pure water. Then the ligation of the library was set up by mixing 200 ng of PCR purified linearised and dephosphorylated plasmid DNA, 4 µl diluted oligo pool, 4 µl T4 DNA Ligation Buffer (Thermo Fisher) and 2 µl T4 DNA Ligase (Thermo Fisher, EL0014) (40 µl total volume with ultra-pure water). Ligations were incubated at 37°C for 2 hr, then mixed with 200 µl TOP10 competent cells, incubated for 30 min on ice, heat shocked at 42°C for 45 s and finally plated on two 10 cm LB agar plates (100 µl each plate), containing 50 µg/ml ampicillin. A negative ligation control without addition of the diluted oligo pool was processed alongside. Following overnight incubation at 37°C, transformation efficiency for all libraries was assessed to ensure at least 30× guide coverage (at least 820 colonies, assuming a 95.8% cloning efficiency as stated above). Typically, 30–200× guide coverage is used for generation of sgRNA libraries (Sanjana et al., 2014). Then all colonies were scrapped from the plate, collected in a 70-ml LB culture (containing 100 µg/ml ampicillin), incubated again overnight and processed the next day using a Macherey-Nagel NucleoBond PC Midi 100 kit (740573), yielding purified plasmid library DNA.
 
-## Plasmid library delivered loss-of-function screen
+### Plasmid library delivered loss-of-function screen
 
 To set up a plasmid library delivered loss-of-function screen, L. mexicana promastigotes were transfected as described above but using 1.3 × 107 cells per transfection and 100,000 plasmid molecules per cell (15.6 µg DNA of the pLdCH-hyBE4max plasmid library and 15.8 µg DNA of the pLdCH-hyBE4max-LmajDBD plasmid library). Following the transfection, cells were resuspended in 8.5 ml of culture medium. Immediately after resuspending cells, 750, 75, and 7.5 µl of the suspension were further diluted in culture medium (to 4 ml total volume) and each dilution was plated on 32 wells of a 96-well plate (100 µl per well). Then, 6 hr post transfection, hygromycin B was diluted in culture medium and added to plates and each transfected population (final volume: plates 200 µl, flasks 10 ml [final concentration 40 μg/ml]). Each library was transfected in triplicates and each of those replicates was diluted to assess the transfection efficiency.
 
 Following transfection, populations were sub-cultured every 2–4 days from 7 days post transfection onwards. At least 13,000 cells per passage were transferred each time, ensuring a representation of 500 transfectants per guide on average throughout the screen. Plates were assessed 14 days post transfection by counting the number of isolated clones, allowing to calculate the number of transfectants per 106, 105, and 104 cells, respectively, for each dilution.
 
-## Next generation sequencing and screen analysis
+### Next generation sequencing and screen analysis
 
 DNA was isolated as described above from at least 5 × 106 cells at 12 and 21 days post transfection. Then, 1 µg DNA from both time points and 10 ng DNA from plasmid libraries was amplified using Phusion High–Fidelity DNA Polymerase (Thermo Fisher, F530S, GC Buffer protocol) and standard desalted p5 and p7 primers (Sigma, Supplementary file 5), containing inline barcodes for multiplexing and partial adapters for Illumina sequencing. Inline barcodes had a hamming distance of at least 4nt. To avoid over-amplification, sample days 12 and 21 were both amplified using 28 PCR cycles, while plasmid samples were amplified using only 18 PCR cycles (ideal number of PCR cycles was assessed by testing 16, 18, 20, and 23 PCR cycles for plasmid samples and 25, 28, 30, and 32 PCR cycles for sample days 12 and 21). Amplicons were pooled (6 amplicons per pool), each pool purified (Macherey-Nagel NucleoSpin Gel and PCR Clean-up Kit) and send to GENEWIZ Germany GmbH for Illumina sequencing (Amplicon-EZ Sequencing Service, 250 bp paired-end sequencing).
 

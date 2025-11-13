@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Department of Clinical Sciences, Faculty of Veterinary Medicine, Utrecht University Utrecht Netherlands
-2. https://ror.org/04pp8hn57 Regenerative Medicine Utrecht, Utrecht University Utrecht Netherlands
-3. https://ror.org/0575yy874 Department of Orthopedics, University Medical Centre Utrecht Utrecht Netherlands
-4. https://ror.org/02c2kyt77 Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands
-5. https://ror.org/00892tw58 Department of Mathematical Sciences, University of Adelaide Adelaide Australia
-6. https://ror.org/04pp8hn57 Division of Pathology, Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University Utrecht Netherlands
+1. Department of Clinical Sciences, Faculty of Veterinary Medicine, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Regenerative Medicine Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+3. Department of Orthopedics, University Medical Centre Utrecht Utrecht Netherlands ([ROR:0575yy874](https://ror.org/0575yy874))
+4. Department of Biomedical Engineering, Eindhoven University of Technology Eindhoven Netherlands ([ROR:02c2kyt77](https://ror.org/02c2kyt77))
+5. Department of Mathematical Sciences, University of Adelaide Adelaide Australia ([ROR:00892tw58](https://ror.org/00892tw58))
+6. Division of Pathology, Department of Biomolecular Health Sciences, Faculty of Veterinary Medicine, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 
 † Corresponding author
 
@@ -44,13 +44,13 @@ The aim of this study was, therefore, to investigate if and how the structure of
 
 ## Results
 
-## Histological and polarized light microscopy analysis of cartilage
+### Histological and polarized light microscopy analysis of cartilage
 
 Articular cartilage thickness varied widely between species, ranging from 209 μm in the rat to 7660 μm in the sperm whale (Physeter macrocephalus). Total cartilage thickness correlated with body mass (BM) with a negative allometric relationship (R2=0.91, a=0.28, Figure 1A). This relationship was maintained when assessing separately the terrestrial (R2=0.80, a=0.26, green, Figure 1B) and aquatic mammals (R2=0.96, a=0.26, blue, Figure 1B). The relative thickness of the superficial, middle and deep layers of the cartilage (expressed as percentage of total thickness) in terrestrial and aquatic mammals was compared. The analysis showed significant differences in relative layer thickness, with the deep layer being relatively thicker in terrestrial than in aquatic mammals, and the middle layer being relatively thicker in aquatic than in terrestrial mammals. No significant differences were found in superficial layer relative thickness (Figure 1C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig1-v2.jpg)
 
-**Figure 1.:** (A) Total articular cartilage thickness correlates with body mass with a negative allometric relationship (R2=0.91, a=0.28). (B) Total cartilage thickness in correlation with body mass for terrestrial and aquatic mammals separately. In green are terrestrial mammals (R2=0.80, a=0.26), in blue are aquatic mammals (R2=0.96, a=0.26). (C) Average of relative layer thickness (%) was calculated for each cartilage layer in terrestrial (green) and aquatic (blue) mammals. Comparison shows a significant difference between the two groups in both the deep and middle layers (p<0.01).Figure 1—source data 1.
+**Figure 1.:** (A) Total articular cartilage thickness correlates with body mass with a negative allometric relationship (R2=0.91, a=0.28). (B) Total cartilage thickness in correlation with body mass for terrestrial and aquatic mammals separately. In green are terrestrial mammals (R2=0.80, a=0.26), in blue are aquatic mammals (R2=0.96, a=0.26). (C) Average of relative layer thickness (%) was calculated for each cartilage layer in terrestrial (green) and aquatic (blue) mammals. Comparison shows a significant difference between the two groups in both the deep and middle layers (p<0.01).
 
 Polarized Light Microscopy (PLM) enabled the visualization of the different collagen fiber orientations (Figure 2A–C), revealing that in terrestrial mammals, the fibers are predominantly oriented perpendicularly to the surface in the deep layer and parallel to the surface in the superficial layer, whereas for the aquatic mammals this arcade orientation of fibers could not be distinguished (Figure 2D–E). However, some alignment in the superficial layer was also observed (Figure 2B), albeit not to the same extend as in the samples of terrestrial mammals.
 
@@ -58,13 +58,33 @@ Polarized Light Microscopy (PLM) enabled the visualization of the different coll
 
 **Figure 2.:** The collagen fibers orientation of aquatic mammals (sperm whale, A; harbor porpoise; B) appeared less organized than fiber orientation in terrestrial mammals (giraffe; C). (C) Cartilage structure in terrestrial mammals featured a clear distinction between deep, middle and superficial layer (respectively in yellow, black and red/yellow from bone to surface). (D) Polar graphical representation of collagen fiber distribution for deep, middle and superficial layer in terrestrial (violet) and aquatic (cerulean) mammals. O° are fibers parallel to the surface, 90° are fibers perpendicular to the surface. (E) Average peak area was calculated for each cartilage layer in both terrestrial (violet) and aquatic (cerulean) mammals, showing significant differences between the two groups in all layers (p<0.05).
 
-## Biomechanical analysis
+### Biomechanical analysis
 
 Characterization of biomechanical behavior showed a marked difference in the stress relaxation curve of aquatic and terrestrial cartilage samples (Figure 3A). Analysis of time dependent mechanical properties showed that peak modulus was significantly higher in terrestrial mammals than in aquatic mammals (Figure 3C, p<0.05), while at equilibrium, cartilage appeared to be only slightly stiffer in terrestrial mammals (Figure 3D). Initial stress relaxation appeared slower for aquatic mammals and steeper for terrestrial mammals (Figure 3A, Figure 3—figure supplement 1). No significant differences were observed in the phase of slow relaxation (Figure 3—figure supplement 1). In addition, comparison of the relationship of peak and equilibrium modulus and body mass showed, with this sample size, no significant differences (Figure 3E and F).
 
-## Histological and micro-computed tomography analysis of the interface
+![Figure 3.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative stress relaxation curve of some of the tested cartilage samples (Rothschilds giraffe, porpoise and sperm whale). (B) Schematics of loading methodology: unconfined compression geometry (congruent loading) used on cartilage samples immersed in a PBS bath. Comparison of time dependent mechanical properties: (C) peak and (D) equilibrium modulus for terrestrial (green) and aquatic mammals (blue). * Indicates a significant difference. Relationship of (E) peak and (F) equilibrium moduli average for each species with body mass for terrestrial (green) and aquatic mammals (blue).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Initial stress relaxation appeared slower for aquatic mammals and steeper for terrestrial mammals. (B) No significant differences were observed in the phase of slow relaxation.
+
+### Histological and micro-computed tomography analysis of the interface
 
 Imaging through histology and micro-CT showed that in aquatic mammals (Figure 4A and B) the interface between the hyaline articular cartilage and the subchondral bone was lacking a layer of calcified cartilage and a dense subchondral plate, as is typically observed at the cartilage-bone interface in terrestrial mammals (Figure 4C; data of additional species provided in Figure 4—figure supplement 1, and additional images cartilage bone interface of the sperm whale provided in Figure 4—figure supplement 2). In fact, the cartilage-bone transition in aquatic mammals is a direct transition from hyaline cartilage to trabecular bone, without intermediate forms of both articular cartilage and subchondral bone, as is the case in terrestrial animals (Figure 4D and E). Bone volume over total volume (BV/TV) in the subchondral area (immediately underneath the cartilage-bone interface) averaged at 80.4 ± 16.8% for aquatic mammals, which was significantly lower than in terrestrial mammals (98.5 ± 0.8%, p<0.01, Figure 4F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig4-v2.jpg)
+
+**Figure 4.:** Safranin-O staining of histological sections of the tissue of a sperm whale (A), harbor porpoise (B) and Rothschild’s giraffe (C). Aquatic mammals (A,B) showed an abrupt transition from hyaline cartilage to subchondral trabecular bone. Terrestrial mammals (C) displayed the characteristic calcified cartilage layer with tidemark (in magnification bubble) in between and a dense subchondral plate before the subchondral trabecular bone. (D) 3D rendered micro-CT scan of giraffe bone core, showing on top a dense surface area that interfaces with the (calcified) cartilage (not shown in scan) and a gradually more porous structure as the subchondral tissue transitions to trabecular bone. (E) 3D rendered micro-CT scan of a whale bone core, showing a porous surface on top where it interfaces with cartilage, and a porous structure underneath with seemingly no transition from more dense subchondral bone to trabecular bone. (F) Bone volume/total volume (BV/TV) in the subchondral area (immediately underneath the cartilage) for aquatic mammals (blue) was significantly lower than in terrestrial mammals (green) (p<0.01).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** 3D rendered micro-CT scans (A, C, E, G) and histological sections stained with safranin-O (B, D, F, H) of the osteochondral tissues derived of terrestrial (rat: A, B; white rhinoceros: E, F) and aquatic (harbor porpoise: C, D; harbor seal: G, H) mammals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Safranin-O staining of histological sections of tissue of the three sperm whales (A, B, C) included in this study, highlighting the lack of the calcified cartilage layer at the cartilage-bone interface.
 
 The trabecular bone below the subchondral plate under the central loading area of the humeri was denser, with thicker trabeculae in terrestrial mammals (34.5 ± 11.1% for terrestrial and 29.4 ± 10.3% for aquatic mammals) (Figure 5A, B, C, D, E and F). Trabecular thickness averaged at 211.7±141.1 μm in terrestrial mammals and at 120.0±27.9 μm in aquatic mammals. Trabecular BV/TV increased with size in terrestrial mammals (R2=0.44, Figure 5G, green) and decreased with size in aquatic mammals (R2=0.88, Figure 5G, blue). Thickness of the bone trabeculae (Tb.Th) increased with size in terrestrial mammals (Figure 5H, R2=0.65, a=0.12), but was independent of size in aquatic mammals.
 
@@ -96,9 +116,182 @@ The number of individuals and species from which samples could be obtained was b
 
 ## Methods
 
-## Collection of materials and tissues
+### Collection of materials and tissues
 
 To investigate the morphology of cartilage tissue and of the interface between cartilage and bone, histological analysis was performed on osteochondral samples taken from fresh humeral heads (Figure 6) of a variety of terrestrial and aquatic mammals (Table 1). Osteochondral tissue samples were harvested postmortem from the weight bearing central area of the humeral head of adult animals sent for necropsy to the division of Pathology, Faculty of Veterinary Medicine, Utrecht University, in the Netherlands. For aquatic large species, samples were harvested on site directly from animals that were found dead on the coasts of the Netherlands.
+
+**Table 1.**
+ List of species included in the study.In total tissue samples from 85 animals (34 for histological analysis, 29 for micro-CT and 20 for biomechanical analysis) were harvested for a total of 15 different species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Species</th>
+      <th>Average body mass (kg)</th>
+      <th>Thickness</th>
+      <th>Histology (n)</th>
+      <th>Micro-CT (n)</th>
+      <th>Bio-mechanics (n)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Rat (Rattus sp)</td>
+      <td>0.26</td>
+      <td>0.21</td>
+      <td>4</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>European Badger (Meles meles)</td>
+      <td>13.2</td>
+      <td>0.84</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Tufted deer (Elaphodus cephalophus)</td>
+      <td>23</td>
+      <td>1.30</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Indian crested porcupine (Hystrix indica)</td>
+      <td>24.5</td>
+      <td>0.5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Cheetah (Acinonyx jubatus)</td>
+      <td>25.5</td>
+      <td>0.48</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Harbor porpoise (Phocoena phocoena)</td>
+      <td>54.5</td>
+      <td>1.11</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Harbor seal (Phoca vitulina)</td>
+      <td>67.5</td>
+      <td>1.77</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Shetland pony (Equus ferus caballus)</td>
+      <td>175</td>
+      <td>1.17</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Striped dolphin (Stenella coeruleoalba)</td>
+      <td>180</td>
+      <td>1.37</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Onager (Equus hemionus)</td>
+      <td>203</td>
+      <td>0.89</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>8b</td>
+      <td>Horse (Equus ferus caballus)</td>
+      <td>550</td>
+      <td>1.38</td>
+      <td>2</td>
+      <td>2</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Rothschild’s giraffe (Giraffa camelopardalis)</td>
+      <td>1070</td>
+      <td>1.85</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>White rhinoceros (Ceratotherium simum)</td>
+      <td>1475</td>
+      <td>2.16</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Common minke whale (Balaenoptera acutorostrata)</td>
+      <td>5100</td>
+      <td>5.05</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Sperm whale (Physeter macrocephalus)</td>
+      <td>47.300</td>
+      <td>6.51</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Fin whale (Balaenoptera physalus)</td>
+      <td>48.000</td>
+      <td>7.53</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Total</td>
+      <td></td>
+      <td></td>
+      <td>34</td>
+      <td>29</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80936/elife-80936-fig6-v2.jpg)
 
@@ -108,11 +301,85 @@ Animal species, age and body mass were recorded (or estimated in the case of wha
 
 In total 84 tissue samples (34 for histology and polarized light microscopy, 30 for micro-CT and 20 for biomechanical testing) were harvested from the humeral heads of mammals belonging to 15 different species, 9 terrestrial and 6 aquatic (Table 2); samples for histology were fixed in formalin 4%, while samples for micro-CT analysis were stored in 70% ethanol; samples for biomechanical testing were frozen immediately after harvest in Tissue-tek (Sakura Finitek, USA) until use.
 
-## Histological preparation and analysis
+**Table 2.**
+ Overview of cartilage samples on which biomechanical tests were conducted, with average diameter and thickness per species.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Number of animals</th>
+      <th>Number of samples</th>
+      <th>Cartilage diameter (mm)</th>
+      <th>Cartilage thickness (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>European Badger (Meles meles)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>6.4</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Cheetah (Acinonyx jubatus)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>6.5</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Rothschild’s giraffe (Giraffa camelopardalis)</td>
+      <td>2</td>
+      <td>3</td>
+      <td>6.9</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Harbor Porpoise (Phocoena phocoena)</td>
+      <td>9</td>
+      <td>9</td>
+      <td>6.6</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Harbor Seal (Phoca vitulina)</td>
+      <td>2</td>
+      <td>2</td>
+      <td>7.4</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Striped dolphin (Stenella coeruleoalba)</td>
+      <td>1</td>
+      <td>3</td>
+      <td>7.6</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Sperm whale (Physeter macrocephalus)</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6.3</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Fin whale (Balaenoptera physalus)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>6.4</td>
+      <td>8.9</td>
+    </tr>
+  </tbody>
+</table>
+
+### Histological preparation and analysis
 
 Samples were fixed using 4% formalin, decalcified with Formical-2000 (EDTA/formic acid; Decal Chemical Corporation, Tallman, NY), dehydrated, cleared in xylene, embedded in paraffin and cut with a microtome to yield 5 μm sections. Sections were stained with fast green and Safranin-O for measurements of cartilage thickness (distance from the surface to the interface with the subchondral bone). Average thickness of cartilage tissue for each sample was determined by averaging 3 measurements per image taken from different locations of the section. Digital images were analyzed using ImageJ software (Schindelin et al., 2012).
 
-## Polarized light microscopy
+### Polarized light microscopy
 
 To evaluate the orientation of the cartilaginous collagen network, Polarized Light Microscopy (PLM) was chosen for its capacity to visualize the orientation of anisotropic materials (Changoor et al., 2011; Yarker et al., 1983; Speer and Dahners, 1979). Histological sections were stained with picrosirius red to stain the collagen fibers of the cartilage extracellular matrix (Junqueira et al., 1979). All microscopic images were acquired through an Olympus DP73 digital camera using Cell^F software (Matrix Optics, Malaysia). A combination of U-ANT and U-POT filters mounted on a light microscope (Olympus BX51, Olympus) was used for the PLM measurements. The two cross polarizers were used so that highly ordered collagen fibers that were perpendicular or tangential to the articular surface appeared bright or red, while fibers with other orientations (non-birefringent) appeared darkest. Collagen fiber orientation visualized via PLM was used for the classification of the superficial, middle and deep layer of cartilage (Changoor et al., 2011; Rieppo et al., 2008). The area with the minimum birefringence value was identified as the border between the superficial and the middle zones, whereas the deep zone was considered to begin when the orientation angle values reached a plateau (typically close to 90 degrees with respect to cartilage surface) (Julkunen et al., 2007; Arokoski et al., 1996). Micrographs acquired via PLM were converted to 8-bit images and the angle of orientation of the collagen structures was calculated within each of the three zones via automated image analysis and Fourier spectrum analysis, using the Directionality plug-in from the FIJI software (Schindelin et al., 2012). Data were plotted as histograms of frequency for each representative angle, and as radial plots (0° represent fibers parallel to the articulating surface) (Figure 7). For each of the histograms, the peaks centered at 0° and ±90° and were integrated to calculate their area using the OriginPro 8 software package (OriginLab, USA). Finally, cartilage relative layer thicknesses (%) was calculated based on the data obtained with PLM.
 
@@ -120,18 +387,22 @@ To evaluate the orientation of the cartilaginous collagen network, Polarized Lig
 
 **Figure 7.:** (A) The histological sections stained with picrosirius red were imaged, then a region of interest was selected (ROI, white frame), and the cartilage tissue was divided into deep, middle and superficial layer. (B–D) The selected region was analyzed with Image J to determine the frequency of fibers for angle increments of 2°, obtaining a detailed histogram for each region.
 
-## Biomechanical testing and data analysis
+### Biomechanical testing and data analysis
 
 The mechanical properties of the native cartilage of the osteochondral plugs of the different species were assessed by uniaxial unconfined compression using a universal testing machine (Zwick Z010, Germany) equipped with a 20 N load cell. Stress relaxation tests were performed by first applying a pre-load of 0.01 N to test samples and then strained to 15% at a rate of 10 µm/s, followed by a relaxation period of 900 s. Tests were conducted on cylindrical osteochondral plugs (Table 2). Prior to testing, samples were fixed to the bottom of a custom-made polycarbonate container using a cyanoacrylate-based adhesive and all tests were performed in PBS to approximate physiological conditions.
 
-Peak and equilibrium stresses were calculated from each engineered stress-strain relaxation curve at peak or equilibrium, respectively. Here, stress is defined as the force divided by the specimen’s unloaded cross-sectional area, and strain as the ratio between the original sample thickness and the displacement of compression platen. To quantify the relaxation response, a piecewise exponential function was fitted to the obtained stress-time curves, following the method by Castilho et al., 2019. Briefly, the fitted curves consist of three segments corresponding to an initial loading phase, and a fast and a slow relaxation phase. The formulae for the exponential curves for the fast and slow relaxation phases used are as follows,(1)σ(t)={A1e−t/τ1+B1,t<100.A2e−t/τ2+B2,t≥100
+Peak and equilibrium stresses were calculated from each engineered stress-strain relaxation curve at peak or equilibrium, respectively. Here, stress is defined as the force divided by the specimen’s unloaded cross-sectional area, and strain as the ratio between the original sample thickness and the displacement of compression platen. To quantify the relaxation response, a piecewise exponential function was fitted to the obtained stress-time curves, following the method by Castilho et al., 2019. Briefly, the fitted curves consist of three segments corresponding to an initial loading phase, and a fast and a slow relaxation phase. The formulae for the exponential curves for the fast and slow relaxation phases used are as follows,
+
+$$
+\sigma(t)={A_{1}e^{−t/\tau_{1}}+B_{1},t<100.A_{2}e^{−t/\tau_{2}}+B_{2},t\geq100
+$$
 
 where the coefficients A and B are statistical parameters quantifying the shape of the relaxation curves and τ is a time constant that determines the rate of stress relaxation. The fitting procedure used minimizes the root mean square error between these curves and the measured stress, subject to the constraints that the fitted curves match the peak and equilibrium stress and that the two curves match at t=100 s.
 
-## Micro-Computed Tomography
+### Micro-Computed Tomography
 
 For the detailed analysis of the microstructural features of the subchondral and trabecular bone, Micro-Computed Tomography (micro-CT) was selected for the accurate measurement of micron-sized structures that constitute the bony tissue (Fajardo and Müller, 2001; Holdsworth and Thornton, 2002). Micro-CT images of the osteochondral cores were obtained with a micro-CT scanner (Quantum FX, Perkin Elmer, USA, voxel size = 20 μm3). The automatically reconstructed micro-CT images were subsequently converted to series of 2D TIFF images and were binarized using local thresholding (Bernsen technique). BoneJ software (Doube et al., 2010) was used to determine the trabecular thickness (Tb.Th) and the bone volume fraction (Tb BV/TV) of the bone immediately underneath the cartilage (subchondral bone; determined as previously described Mancini et al., 2019), and at the center of the bone of the osteochondral cores (trabecular bone).
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons between multiple groups were performed using a one-way ANOVA combined with post-hoc t-tests with Bonferroni correction. A one-way ANOVA with Tukey’s post hoc test was used for comparison in biomechanical analysis. A regression analysis using a power curve fit was performed for correlations between body mass and the parameters of cartilage thickness, peak modulus, trabecular thickness, and trabecular BV/TV. When applied, normality and homogeneity were checked with Shapiro-Wilks and Levene’s tests. The level of statistical significance was set at p<0.05. Statistical analysis was performed using GraphPad Prism 8 (GraphPad Software, Dotmatics, USA).

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.46924.001 Alzheimer’s disease (AD) pathology is characterized by plaques of amyloid beta (Aβ) and neurofibrillary tangles of tau. Aβ aggregation is thought to occur at early stages of the disease, and ultimately gives way to the formation of tau tangles which track with cognitive decline in humans. Here, we report the crystal structure of an Aβ core segment determined by MicroED and in it, note characteristics of both fibrillar and oligomeric structure. Using this structure, we designed peptide-based inhibitors that reduce Aβ aggregation and toxicity of already-aggregated species. Unexpectedly, we also found that these inhibitors reduce the efficiency of Aβ-mediated tau aggregation, and moreover reduce aggregation and self-seeding of tau fibrils. The ability of these inhibitors to interfere with both Aβ and tau seeds suggests these fibrils share a common epitope, and supports the hypothesis that cross-seeding is one mechanism by which amyloid is linked to tau aggregation and could promote cognitive decline.
+Alzheimer’s disease (AD) pathology is characterized by plaques of amyloid beta (Aβ) and neurofibrillary tangles of tau. Aβ aggregation is thought to occur at early stages of the disease, and ultimately gives way to the formation of tau tangles which track with cognitive decline in humans. Here, we report the crystal structure of an Aβ core segment determined by MicroED and in it, note characteristics of both fibrillar and oligomeric structure. Using this structure, we designed peptide-based inhibitors that reduce Aβ aggregation and toxicity of already-aggregated species. Unexpectedly, we also found that these inhibitors reduce the efficiency of Aβ-mediated tau aggregation, and moreover reduce aggregation and self-seeding of tau fibrils. The ability of these inhibitors to interfere with both Aβ and tau seeds suggests these fibrils share a common epitope, and supports the hypothesis that cross-seeding is one mechanism by which amyloid is linked to tau aggregation and could promote cognitive decline.
 
 ## Introduction
 
@@ -44,9 +44,178 @@ On this basis, we hypothesized that an inhibitor capable of targeting the amyloi
 
 ## Results
 
-## Atomic structure of Aβ16-26 D23N determined using MicroED
+### Atomic structure of Aβ16-26 D23N determined using MicroED
 
 With crystals only a few hundred nanometers thick, we used micro-electron diffraction (MicroED) to determine the structure of Aβ residues 16–26 containing the hereditary mutation D23N, (Figure 1A), KLVFFAENVGS. The structure revealed pairs of anti-parallel β-sheets each composed of ~4000 strands, stacked into a fibril that spans the entire length of the crystal. Neighboring sheets are oriented face to back (Figure 1B, Table 1) defining a Class seven steric zipper motif.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig1-v2.jpg)
+
+**Figure 1.:** (A) Electron micrograph of 3D crystals used for data collection, scale bar is 1 µm. (B) The crystal structure reveals tightly mated pairs of anti-parallel β-sheets with opposing sheets in gray and cyan. The side-chains interdigitate to form a dry interface. Two neighboring sheets are viewed perpendicular to the β-sheets. (C) View of 6 layers perpendicular to the fibril axis (black line). The β-sheets stack out of register along the fibril axis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** View down the ‘a’ axis of the unit cell, outlined in red.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** 32 backbone atoms differ from each other by 0.57 Å RMSD. RMSD values were calculated using LSQ in Coot.
+
+**Table 1.**
+ Statistics of MicroED data collection and atomic refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>KLVFFAENVGS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Excitation Voltage (kV)</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Electron Source</td>
+      <td>field emission gun</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.0251</td>
+    </tr>
+    <tr>
+      <td>Total dose per crystal (e-/ Å2)</td>
+      <td>2.7</td>
+    </tr>
+    <tr>
+      <td>Frame rate (frame/s)</td>
+      <td>0.3–0.5</td>
+    </tr>
+    <tr>
+      <td>Rotation rate (°/s)</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>#crystals used</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Total angular rotation collected (°)</td>
+      <td>941</td>
+    </tr>
+    <tr>
+      <td>Merging Statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>11.67, 51.91, 12.76</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 114.18, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>11.64–1.4 (1.44–1.40)*</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>24.0% (65.2%)</td>
+    </tr>
+    <tr>
+      <td>No. Reflections</td>
+      <td>47,598 (1966)</td>
+    </tr>
+    <tr>
+      <td>Unique Reflections</td>
+      <td>2355 (163)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>86.2% (78.0%)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>21 (12)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>9.06 (2.88)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>99.5% (69.7%)</td>
+    </tr>
+    <tr>
+      <td>Refinement Statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>2354</td>
+    </tr>
+    <tr>
+      <td>Reflections in test set</td>
+      <td>236</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>23.7%</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>28.3%</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Avg. B factor (Å2)</td>
+      <td>9.46</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor (Å2)</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td>Ramachandran (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>100%</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Highest resolution shell shown in parenthesis._
 
 In addition, the three C-terminal residues adopt an extended, non-β conformation which stabilizes the packing between steric zippers (Figure 1—figure supplement 1). The sheet–sheet interface is strengthened by interdigitating side chains, Lys 16, Val18, Phe20, Glu22 from the face of one strand, and Leu17, Phe19, and the N-terminus from the back of the other. The zipper has an extensive interface with a high shape complementarity of 0.76 and a total buried solvent accessible surface area of 258 Å2.
 
@@ -54,31 +223,75 @@ This structure is partly identical to that of a shorter peptide segment, Aβ16�
 
 The antiparallel architecture and lack of registration of Aβ16–26 suggest this crystalline ‘fibrillar’-like assembly has some characteristics of an amyloid oligomer. Structural studies of amyloid oligomers most frequently reveal anti-parallel β sheet architecture (Tay et al., 2013; Laganowsky et al., 2012; Sarkar et al., 2014), whereas fibril structures have revealed parallel β sheets (Lührs et al., 2005; Colvin et al., 2016; Wälti et al., 2016; Krotee et al., 2018), with the exception of some short segments of Aβ (Colletier et al., 2011) and in Aβ1-40 containing the early onset hereditary mutation D23N which leads to in-register anti-parallel fiber deposition in plaques (Qiang et al., 2012; Tycko et al., 2009). The out-of-register stacking of anti-parallel β strands has been proposed to be the defining trait of toxic oligomers (Laganowsky et al., 2012; Liu et al., 2012). The segment Aβ16–22 has been proposed to be able to form such oligomers in silica (Sun et al., 2018). The structures of Aβ16–21, Aβ16–26, and the full length fibrils may offer clues to designing inhibitors that impede both fibrillar and oligomeric assemblies.
 
-## Efficacy of inhibitors of Aβ aggregation designed against Aβ 16–26 D23N
+### Efficacy of inhibitors of Aβ aggregation designed against Aβ 16–26 D23N
 
 As the zipper motif observed in the atomic structure of Aβ16-26 D23N may be relevant to a variety of amyloid beta assemblies, we sought to use it to develop structure-based peptide inhibitors of Aβ1-42. Our laboratory has developed a Rosetta-based design strategy using steric zipper structures to design capping peptide inhibitors for a number of amyloid proteins implicated in disease (Sievers et al., 2011; Seidler et al., 2018; Saelices et al., 2015; Soragni et al., 2016; Krotee et al., 2018). We chose to truncate our structure to residues 16–22 for the search model, omitting the residues not in the β strand. We threaded amino acids onto a capping β strand and minimized energies of sidechains. From our first round of design, we chose six distinct inhibitor candidates; those that were identified as good candidates but containing strong amino acid similarities to other top inhibitors were discarded. Our initial pool of inhibitors contained four L-form peptides, 2 each of 6 and 8 amino acids length, termed L1-L4, and two D-peptides six amino acids long, termed D1 and D2.
 
 We assessed the efficacy of the inhibitors at a 10 molar excess by testing if they prevented Aβ1-42 toxicity on Neuro-2a (N2a) cells, a mouse neuroblastoma cell line, (Olmsted et al., 1970). We measured cytotoxicity using 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction (Mosmann, 1983; Liu et al., 1997). Our toxicity assay revealed one inhibitor, D1 with the sequence (D)-LYIWVQ, that was able to eliminate the toxic effect of Aβ1-42 (Figure 2A, Supplementary file 1); none of the inhibitors were toxic to N2a cells alone (Figure 2—figure supplement 1A). In our molecular model of the inhibitor, smaller hydrophobic residues of D1 mimic interactions with the fibril interface on one side of the peptide, which promotes recognition, (Figure 2B), while the other side of the peptide positions large aromatic residues between Aβ residues, blocking possible further interactions (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig2-v2.jpg)
+
+**Figure 2.:** (A) Identification of Aβ1–42 inhibitor. 10 μM Aβ1–42 was incubated alone or with 100 μM of each candidate peptide inhibitor for 12 hr at 37°C and then diluted 1:10 with pre-plated N2a cells. Cytotoxicity was quantified using MTT dye reduction Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column) (B, C) Segment KLVFFAEN, derived from the Aβ 16–26 D23N crystal structure, was used as the design target. Model of peptide inhibitor D1(magenta) bound to the design target, KLVFFAEN (gray). Smaller hydrophobic residues of D1 mimic interactions with the fibril interface on one side of the peptide (B), whereas the other side of the peptide positions large aromatic residues between Aβ residues, breaking possible further interactions (C). (D) Overview of peptide inhibitors in D and L amino acid conformations, as indicated, used in this study and their sequences. Peptide LC is the L-form cognate peptide of D-form peptide D1 and is the negative control for peptide inhibitor D1 and its derivatives D1b and D1d. IC50 values were determined using four parameter nonlinear fit for half maximal inhibition. N.D., not determined. (E) Peptide inhibitors D1, D1b, and D1d reduce the cytotoxicity of Aβ1–42 in a dose dependent manner, whereas control peptide LC does not. 10 μM Aβ1–42 was incubated alone or with various concentrations of each peptide inhibitor for 12 hr at 37°C and then diluted 1:10 with pre-plated N2a cells. Cytotoxicity was quantified using MTT dye reduction. Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3–6; ns = not significant; **, p<0.002; ****, p<0.0001 using an ordinary one-way ANOVA Dunnett’s relative to leftmost column).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Peptide inhibitors are not toxic. 100 μM of each peptide inhibitor was incubated for 12 hr at 37°C and then diluted 1:10 with pre-plated N2a cells. Cytotoxicity was quantified using MTT dye reduction. Bars represent mean with individual technical replicates, error bars display one standard deviation. (C) Second generation peptide inhibitors reduce the cytotoxicity of Aβ1–42. 10 μM Aβ1–42 was incubated alone or with 10 μM and 100 μM of each peptide inhibitor for 12 hr at 37°C and then diluted 1:10 with pre-plated N2a cells. Cytotoxicity was quantified using MTT dye reduction. Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column).
+
 We focused on these key features of the inhibitor sequence for our second round of design and aimed to improve efficacy. We lengthened our peptides to extend over more of our available structure towards the carboxy-terminus and made conservative residue changes to the face containing smaller hydrophobic residues. We selected and tested six new designs. Of the six, four were eight amino acids long such that the inhibitor would extend over more of our crystal structure, which we called D1a-D1d. The additional two, termed D1e and D1f, were six amino acids long featuring slight sequence perturbations from D1 (Supplementary file 1). We identified two of the eight amino acid long inhibitors, D1b and D1d, that were also effective at reducing AB1-42 toxicity at both a tenfold excess and at an equimolar ratio (Figure 2—figure supplement 1B,C). We then tested these two inhibitors, as well as D1, across a range of concentrations with final concentrations ranging from 100 nM to 10 μM (Figure 2D,E). We found that all inhibitors elicited a dose dependent response, with all having an estimated IC50 of less than 1 μM. The six residue long inhibitors, D1e and D1g, also had a similar effect on toxicity reduction as D1, however they did not perform as well as D1 in additional characterization and were not explored further (Figure 3—figure supplement 1B). The cognate negative peptide control, LC, the L-form peptide of inhibitor D1, did not reduce toxicity (Figure 2E).
 
-## Reduction of toxicity by designed inhibitors is explained by a reduction of Aβ1-42 aggregation
+### Reduction of toxicity by designed inhibitors is explained by a reduction of Aβ1-42 aggregation
 
 We next sought to understand the mechanism by which our peptide inhibitors reduce the toxic effect of Aβ1-42. We therefore assayed fibril formation to discern if this reduction of toxicity could be explained by reduced aggregation. We incubated Aβ1-42 with our inhibitors at 10:1, 1:1, and 1:10 molar ratios and monitored fibril formation by thioflavin-T (ThT) fluorescence at 37°C under quiescent conditions. We observe that all of our inhibitors reduce fibril formation in a dose dependent manner, while the negative control peptide, LC, does not (Figure 3A, Figure 3—figure supplement 1A). The longer inhibitors, D1b and D1d, appear effective at an equimolar ratio. However, when assayed at higher concentrations, the inhibitors appear to self-assemble, but remain effective at reducing Aβ1-42 toxicity (Figure 3—figure supplement 1C, Figure 2E). After 72 hr, samples were taken for negative-stain TEM analysis, which confirmed the reduced abundance of Aβ1–42 fibrils. D1b and D1d were more effective at reducing fibril formation than D1, although all three inhibitors showed near equal efficiency in reducing toxicity. Fibrils were observed in the equimolar ratio sample of Aβ1-42 with D1, whereas the comparable samples with D1b and D1d did not contain fibrils. Inhibitors that were not efficient at preventing toxicity, such as D1a and D1c, were also less effective at blocking fiber formation (Figure 2—figure supplement 1C, Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig3-v2.jpg)
+
+**Figure 3.:** (A) Peptide inhibitors D1, D1b, and D1d reduce fibril formation of Aβ1–42, while negative control peptide LC does not. 10 μM of Aβ1–42 was incubated alone or at a 1:10, 1:1, or 10:1 molar ratio to each inhibitor under quiescent conditions at 37°C. Fibril formation was monitored using ThT fluorescence. Curves show the average of three technical replicates with one standard deviation below. (B) Negative-stain TEM analysis confirms the results of the ThT assays in Figure 3A. Samples were prepared as above and incubated for 72 hr before TEM analysis. Images of Aβ1–42 to D1 (1:10), D1b (1:1) and D1d (1:1) were captured at 3200x; scale bars are 2 µm. All other images were captured at 24,000x; scale bars are 500 nm. (C) Peptide inhibitors reduce the formation of Aβ1–42 assemblies recognized by conformational monoclonal antibodies, while negative control peptides do not. 10 μM Aβ1–42 was incubated alone (left-most column) or with 10-fold molar excess of each peptide-based inhibitor. Aliquots of the reaction were tested for antibody-binding at 6 hr, 24 hr, and 72 hr. Membranes were spliced as indicated for clarity.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** 10 μM of Aβ1–42 was incubated alone or at a 1:10, 1:1, or 10:1 molar ratio to each inhibitor under quiescent conditions at 37°C in polypropylene plates. Fibril formation was monitored using ThT fluorescence. Curves show the average of three technical replicates with one standard deviation below. (B) Peptide inhibitors D1a, D1c, D1e, and D1f are less effective ate reducing fibril formation of Aβ1–42, 10 μM of Aβ1–42 was incubated alone or at a 1:10, 1:1, or 10:1 molar ratio to each inhibitor under quiescent conditions at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show the average of three technical replicates with one standard deviation below. Inhibitors D1a and D1c are not shown at (1:10) ratio due to high ThT signal from peptide self-association. (C) Peptide inhibitors D1b and D1d self-associate at high concentrations. Peptide inhibitors were incubated at 10 μM and 100 μM under quiescent conditions at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show the average of three technical replicates with one standard deviation displayed below.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Peptide inhibitors reduce the formation of oligomeric Aβ1–42 recognized by polyclonal A11 antibody, while negative control peptide does not. 10 μM Aβ1–42 was incubated alone (left-most column) or with 10-fold molar excess of each peptide-based inhibitor. Aliquots of the reaction were tested for antibody-binding at 6 hr, 24 hr, and 72 hr. 6E10 anti-amyloid beta (Tanzi, 2012; Hardy and Selkoe, 2002; Manczak and Reddy, 2014; Seward et al., 2013; Brier et al., 2016; Schwarz et al., 2016) was used as a loading control. Blots were quantified using ImageJ. (B) Unspliced dot blots from Figure 4C. Column key displayed at lower right is representative of all displayed blots in B.
+
 Since oligomers, and not fibrils, are considered to be the more toxic species of Aβ (Lesné et al., 2006; Lambert et al., 1998; Benilova et al., 2012; Jin et al., 2011), we then investigated if our inhibitors affect the formation of oligomers or other cytotoxic Aβ1-42 species. We used conformational antibodies to probe samples of Aβ1-42 incubated with a 10-molar excess of inhibitor overnight at 37°C. Binding by oligomer specific conformational antibody A11 and A11-O9, a monoclonal variant of A11, was reduced by all of our inhibitors (Figure 3C, Figure 3—figure supplement 1C, Figure 3—figure supplement 2). While we have not determined the exact oligomeric assemblies the inhibitors are reducing, our antibody binding data coupled with the results of our toxicity assays suggest that the formation of a toxic oligomeric assembly is decreased. Additionally, the inhibitors reduced the abundance of Aβ conformations recognized by antibodies mOC24, mOC64, mOC104, and mOC116. These antibodies bind fibrillar plaques from patient derived AD tissue and/or 3xTg-AD mouse tissue (Hatami et al., 2014). Overall, these results indicate that our inhibitors may reduce oligomers, as well as disease relevant fibrillar conformations.
 
-## Inhibitors bind and reduce toxicity of Aβ aggregates
+### Inhibitors bind and reduce toxicity of Aβ aggregates
 
 As AD is only diagnosable long after Aβ aggregation has initiated, we wondered if these inhibitors would not only prevent amyloid aggregates from forming, but also if they can reduce the toxic effect of already formed aggregates. First, we incubated 10 μM Aβ at 37°C for 12 hr to form oligomers (Figure 4—figure supplement 1A), and then added inhibitors at various concentrations just prior to addition to N2a cells and assayed toxicity by MTT dye reduction. We found that adding the inhibitor to monomeric Aβ1-42 prior to incubation had a marked difference from adding inhibitor to pre-formed Aβ1-42 oligomers. When co-incubated with monomeric Aβ, the shorter D1 inhibitor was as effective as D1b and D1d at reducing toxicity; however, when added to pre-formed Aβ assemblies, only the longer inhibitors D1b and D1d were effective at reducing toxicity (Figure 4A). Both of the longer inhibitors could fully ameliorate toxicity of aggregates at 10 μM, but D1d is more potent, with effective reduction of toxicity to 1 μM. D1b differs from D1d only at amino acid positions 6 and 7. We suspect the difference in efficacy is conferred from residue 6, because both inhibitors contain positively charged residues at position 7, but at position 6 D1b contains a Gln while D1d has a much bulkier Trp. Our results indicate that while peptide inhibitors can both prevent aggregation initiation and block toxicity of aggregated assemblies, the latter appears to be more sensitive to slight perturbations in inhibitor composition.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig4-v2.jpg)
+
+**Figure 4.:** (A) The toxicity of already formed Aβ1–42 aggregates is lessened by peptide inhibitors. 10 μM Aβ1–42 was incubated alone for 12 hr at 37°C. Indicated molar ratio of inhibitor was added to the incubated Aβ1–42 and then diluted 1:10 with pre-plated N2a cells. Cytotoxicity was quantified using MTT dye reduction. Bars represent mean with individual technical replicates (n = 3–6; ns = not significant; ***, p<0.0005; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column). (B, C) Inhibitors bind to Aβ1–42 fibrils. (B) Peptide inhibitors do not disaggregate Aβ. 10 μM Aβ1–42 was incubated alone for 72 hr at 37 °C. Peptide inhibitors were added at 10-fold molar excess and incubated at RT for 24 hr before TEM analysis. Images were captured at 24,000x; scale bars are 500 nm. (C) Binding isotherm of inhibitor D1d to fibrillar Aβ1–42. The maximal response (RUmax) was derived by fitting sensorgrams obtained over a range of D1d concentrations to the binding model with a Kd of 52 ± 6 μM, displayed as a red line. These RUmax values are plotted (mean ± SD, n = 3) as a function of concentration and fitted to a one-to-one binding model, displayed as a black line.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Conformation testing of Aβ preparations. 10 μM Aβ1–42 was incubated for 12 hr at 37°C in oligomer preparation, or 48 hr at 37°C with shaking for fibril conditions Fibrils were spun down at 50,000 rpm for 30 min. Samples were spotted on nitrocellulose membranes and probed with A11, OC and 6E10 antibodies. (B) Peptide inhibitors D1, D1b, and D1d reduce fibril elongation of Aβ1–42, while negative control peptide LC does not. 10 μM of Aβ1–42 was incubated alone until approximately half maximal ThT (19 A.U.) was observed under quiescent conditions at 37°C in polypropylene plates. Inhibitors were added at a 1:10, 1:1, or 10:1 molar ratio to Aβ1–42 reactions at 8.5 hr as indicated by red bar. Fibril formation was monitored using ThT fluorescence. Curves show the average of three technical replicates with one standard deviation below.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The data of flow cell 1 (blank control) was subtracted from the data of flow cell 2.
 
 We next performed TEM to determine if our inhibitors could disaggregate fibers, or if the fibers are being capped, as our inhibitor design would predict. We aggregated 10 μM Aβ1-42 for 72 hr at 37°C under shaking conditions, then added inhibitors at 100 μM and incubated overnight. As the fibers are still present, we presume that our inhibitors are indeed capping or coating the fibers at toxicity inducing interfaces, thus preventing further seeding or toxic effects (Figure 4B). To investigate the capping ability of our inhibitors, we added the inhibitors to Aβ1-42 during the exponential phase of fibril growth (Figure 4—figure supplement 1B). We found that even at the lowest concentration of inhibitor, 10 μM Aβ: 1 μM inhibitor, we see minimal increase of signal for inhibitors D1b and D1d. Additionally, we observed a slight lowering of ThT signal samples with a 1:1 inhibitor addition, possibly due to inhibitors displacing ThT molecules bound to the fibrils. As the inhibitors do prevent monomer aggregation as well (Figure 3A), we are cautious to overinterpret the result of this experiment, as the inhibitor could feasibly be sequestering free monomer or small assemblies from adding to the fibrils.
 
 We performed SPR to verify that our inhibitors bind to fibers. We find that the most potent inhibitor of aggregated assemblies, D1d, binds to Aβ1-42 fibrils with an apparent Kd of 52 μM (Figure 4C, Figure 4—figure supplement 2). We used a one-inhibitor-to-one-protein substrate model to fit the data; however, the true Kd may be lower due to the complication of D1d self-interaction and polymorphic Aβ fibrils. Thus, we have shown that inhibitors D1b and D1d not only prevent aggregation of monomeric Aβ, but also bind aggregated states.
 
-## Inhibitors reduce seeding of tau by aggregated Aβ1-42
+### Inhibitors reduce seeding of tau by aggregated Aβ1-42
 
 Having demonstrated that our inhibitors block a toxic interface on Aβ, we next questioned if this interface could also be involved in cross seeding tau. First, we sought to validate the direct seeding mechanism that has been reported by others (Guo et al., 2006; Miller et al., 2011; Vasconcelos et al., 2016). We tested seeding of the microtubule binding domain of tau, K18+ (244-380) in a ThT assay at 37°C under shaking conditions and found that fibrils of Aβ1-42 and Aβ16-26 D23N seeded aggregation, though not as efficiently as fibrils of K18 (Figure 5A, Figure 5—figure supplement 1A). This seeding effect was also observed on full length tau in the presence of heparin (Figure 5—figure supplement 1B). Conversely, K18 was unable to seed Aβ (Figure 5—figure supplement 1C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig5-v2.jpg)
+
+**Figure 5.:** (A) 50 μM tau-K18+ was seeded with 10% monomer equivalent of pre-formed fibrils of Aβ1–42, Aβ16-26 D23N or tau-K18 under shaking conditions at 700 RPM at 37°C in PBS. Fibril formation was monitored using ThT fluorescence. Error bars below show the standard deviation of the average of three technical replicates. (B) The number of intracellular aggregates present in tau-K18CY biosensor cells normalized to cell confluence seeded by the addition of 250 nM tau40 or 250 nM Aβ1–42 fibrils. Error bars show the standard deviation of the mean of technical replicates (n = 3; ****, p=0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column, and **, p=0.0028 in unpaired t test of Aβ vs. vehicle) (C) Representative images of seeded cells from B at 10x magnification, scale bar 100 μm. (D and E). Concentration dependent inhibition of Aβ1–42 induced seeding of tau aggregation in tau-K18CY biosensor cells. (D) Average seeding by Aβ as a function of indicated inhibitor concentration. Error bars show the standard deviation of the mean of technical replicates (n = 3; ns = not significant; *, p<0.02; **, p<0.005; ***, p<0.001; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column), and the dotted line shows the mean number of aggregates from untreated Aβ1–42 fibrils. (E) Representative images of tau-K18CY biosensor cells showing the concentration-dependent effect of D1b on seeding. Cells are shown at 10X magnification, scale bar 100 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Extended ThT data of Tau seeding experiment. K18+ and Aβ1–42 seeds have some baseline ThT signal (B) 20 μM tau40 was seeded with 10% monomer equivalent of pre-formed fibrils of Aβ1–42 or tau-K18 under shaking conditions at 700 RPM at 37°C in buffer containing 0.5 mg/ml heparin. Fibril formation was monitored using ThT fluorescence. Aβ1–42 or tau-K18 seeds showed reduced lag times (9.4 and 10.2 hr, respectively) than unseeded tau40 (14.0 hr). Error bars show the standard deviation of the average of three technical replicates. T1/2 lag times were calculated using a four-parameter non-linear fit. (C) 10 μM Aβ1–42 was seeded with 10% monomer equivalent of pre-formed seed of Aβ1–42 or K18, under quiescent conditions at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show average of three technical replicates. Left panel was performed in polystyrene plates, right panel was performed in polypropylene plates. (D) Tau-K18+ versus amyloid fibrils of other proteins, and non-fibrillar Aβ efficiency of seeding the HEK293 biosensor that stably expresses K18 yellow fluorescent protein (YFP) fusion. The cells were seeded with 250 nM final concentration of protein. Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; ****, p<0.0001 using an ordinary one-way ANOVA- Tukey’s relative to leftmost column or against all columns excluding leftmost, as indicated). Amyloid fibrils were confirmed by endpoint ThT or Electron Microscopy. Non-fibrillar Aβ was used fresh (monomeric) or incubated for 12 hr 37°C (oligomer).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Aβ interface mutant constructs form fibrils. 25 μM of each Aβ constructs was incubated under quiescent conditions at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show the average of three technical replicates. (B) Average seeding by Aβ mutant constructs and effect of indicated inhibitor concentration. Error bars show the standard deviation of the mean of technical replicates (n = 3; ns = not significant; *, p<0.04 using an ordinary one-way ANOVA- Dunnett’s relative to Aβ 17/19 seeds).
 
 Next, we tested seeding in a well-established HEK293 biosensor cell line, tau-K18 (P301S) EYFP, which stably expresses the microtubule binding domain of tau P301S mutant. This cell line, referred to hereafter as tau-K18 biosensor cells, has been used to demonstrate prion like seeding from transfected tau fibrils to cells and has been used as a model system to test tau inhibitors (Seidler et al., 2018; Kfoury et al., 2012). We transfected biosensor cells with tau40 or Aβ fibrils (Figure 4—figure supplement 1A) to a final concentration of 250 nM. We found that Aβ was able to produce intracellular aggregates significantly greater than the vehicle alone, but only at around 2.5% efficiency of tau40. It is not altogether surprising that Aβ has such a low efficiency of cross-seeding; this mirrors a previous result in a similar system (Vasconcelos et al., 2016). It is possible that tau fibrils contain multiple polymorphs and interfaces capable of homotypic seeding, whereas Aβ may have a more limited number of tau seeding-competent conformations. Additionally, in vitro Aβ aggregation may create disproportionate ratios of assemblies compared to those present in AD. Regardless, it remains that some Aβ species is tau-seeding competent. The finding that Aβ is indeed able to seed aggregation in tau-K18 expressing cell lines suggests that the cross-interacting region of tau is located on this microtubule binding domain. We found other amyloid protein fibrils and non-fibrillar Aβ are not seeding-competent in this system (Figure 5—figure supplement 1D), indicating the biosensor cell assay can faithfully differentiate between fibrils of amyloid proteins, which differ in their underlying structures and sequences.
 
@@ -86,9 +299,29 @@ If our inhibitors block the interface responsible for seeding, we would expect A
 
 We next sought to verify that the region of Aβ used to design inhibitors is important in seeding tau, and could be targeted by inhibitor D1b. We created two mutants of Aβ1-42, with residues on either size of our steric zipper interface disrupted: Aβ1-42 L17R/F19R and Aβ1-42 K16A/V18A/E22A. We chose not to mutate residue Phe20, as it has been observed on both buried and solvent accessible interface in full length structures (Lührs et al., 2005; Colvin et al., 2016; Gremer et al., 2017). We formed fibrils of each mutant construct and wild type, then incubated these fibrils with the indicated concentration of D1b, and used this to seed tau-K18 biosensor cells, as described previously (Figure 5—figure supplement 2). We found that the fibrils of Aβ1-42 L17R/F19R were able to seed similarly to WT Aβ1-42, while no seeding was detected from Aβ1-42 K16A/V18A/E22A. Seeding by Aβ1-42 L17R/F19R was inhibited by D1b, suggesting that residues K16, V18 and E22 create the seeding interface which is targeted by inhibitor D1b.
 
-## Inhibitors reduce tau aggregation and seeding
+### Inhibitors reduce tau aggregation and seeding
 
 Our data support previous studies that suggest the tau binding surface on Aβ is localized to the segment whose structure we determined and targeted for design of inhibitors against Aβ aggregation and Aβ-mediated seeding of tau (Guo et al., 2006; Miller et al., 2011). We hypothesized that the tau fibril could contain a similar self-complementary surface and would also be susceptible to treatment with our inhibitors. We first asked if the Aβ inhibitors, D1, D1b, and D1d could prevent monomeric tau from aggregating. We performed a ThT assay on 10 μM tau40, at 37°C with shaking and 0.5 mg/mL heparin and found that all inhibitors function in a dose dependent manner similar to our results with Aβ monomer, while the control inhibitor LC does not reduce tau aggregation (Figure 6A, Figure 6—figure supplement 1A). The peptide inhibitors are not able to block aggregation of the amyloid forming proteins hIAPP or alpha synuclein, indicating that these inhibitors are specific for Abeta and tau, and are not general amyloid inhibitors (Figure 6—figure supplement 1B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig6-v2.jpg)
+
+**Figure 6.:** (A) Peptide inhibitors D1, D1b, and D1d reduce fibril formation of tau40. 10 μM tau40 monomer was incubated at a 1:10, 1:1, or 10:1 molar ratio to each inhibitor with 0.5 mg/ml heparin under shaking conditions at 700 RPM at 37°C. Fibril formation was monitored using ThT fluorescence. Plots show the average of three technical replicates with one standard deviation below. (B), (C). The effects of the inhibitors on seeding by tau40 fibrils in tau-K18CY biosensor cells. The cells were seeded with 250 nM tau40 fiber (final concentration); in samples with inhibitor, tau40 fibers were incubated with indicated final concentrations of peptide inhibitor for one hour prior to addition to cells. (B) Average number of aggregates at the indicated inhibitor concentrations, Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; *, p<0.03; **, p<0.023; ***, p<0.0008; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column). dotted line represents number of aggregates from untreated tau40 fibrils. IC50 value was calculated from the dose–response plot of inhibitor D1b. (C). Representative images of effect of D1b on seeding. Cells are shown at 10X magnification, scale bar 100 μm. (D) Seeding from tau interface mutation fibrils in tau-K18CY biosensor cells is reduced by D1b. Experiment was performed as above. Average number of aggregates at the indicated inhibitor concentrations, Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Control peptide inhibitor LC does not reduce fibril formation of tau40. 10 μM of tau40 was incubated at a 1:10 molar ratio to LC with 0.5 mg/ml heparin under shaking conditions at 700 RPM at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show the average of three technical replicates with one standard deviation below. (B, C) Designed inhibitors are not general amyloid inhibitors. (B) 50 μM of α-synuclein was incubated at a 1:5 molar ratio to peptide inhibitors under shaking conditions at 700 RPM at 37°C. Lines show the average of three technical replicates. (C) 10 μM hIAPP was incubated at a 1:5 molar ratio to peptide inhibitors under quiescent conditions at 37°C. Lines show the average of three technical replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Tau 40 interface mutant constructs form fibrils. (A) 10 μM of each tau40 constructs was incubated with 0.5 mg/ml heparin under shaking conditions at 700 RPM at 37°C. Fibril formation was monitored using ThT fluorescence. Lines show the average of three technical replicates. (B) Negative-stain TEM analysis confirms the results of the ThT assays in (A). Scale bars are 0.5 µm. (C, D, E) Extended data of seeding by tau interface mutation fibrils in tau-K18CY biosensor cells. The cells were seeded with 250 nM tau40 fiber (final concentration); in samples with inhibitor, tau40 fibers were incubated with indicated final concentrations of peptide inhibitor for one hour prior to addition to cells. Average number of aggregates at the indicated inhibitor concentrations, Bars represent mean with individual technical replicates, error bars display one standard deviation (n = 3; ns = not significant; *, p<0.05; ***, p<0.0005; ****, p<0.0001 0001 using an ordinary one-way ANOVA- Dunnett’s in (C, E) relative to leftmost column (C) or dotted line (E). Panel D was calculated using ANOVA-Tukey’s, relative to leftmost column and between Null mutant and vehicle columns). (C) Interface mutations less affected by D1b. (D) Construct containing all interface mutations is seeding incompetent. (E) Seeding interface mutants are not reduced by control inhibitor LC. Extended ANOVA data included as a supplementary file.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A, B) Aβ 16–26 D23N overlay with tau 274–283 in parallel and antiparallel orientations. (A) 32 backbone atoms differ from each other by 0.53 Å RMSD. RMSD values were calculated using LSQ in Coot. (B) The Cα atoms differ from each other by 0.56 Å RMSD. Backbone and side chain rotamers were optimized with Foldit over 2000 iterations to minimize energy to −603 REU. (C) Aβ 16–22 overlay with tau 304–310 in parallel, backbone atoms differ from each other by 0.54 Å RMSD. RMSD values were calculated using LSQ in Coot.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Residues 16–21 of Aβ (5OQV) were superimposed on 304–309 of Tau (6HRF). Tau was then manually moved perpendicular to the fibril axis to make a complementary surface with 5OQV. Backbone and side chain rotamers were optimized with Foldit to minimize energy to −1517REU.
 
 Because we had observed differences in inhibitor efficacy on monomer versus aggregated species of Aβ, we next tested if the inhibitor was effective against the seeding ability of tau40 fibrils. We formed tau40 fibrils, treated them with indicated inhibitor concentration and transfected into tau-K18 biosensor cells to measure seeding inhibition. We found that similar to our Aβ-mediated tau biosensor seeding experiment, D1b was the best inhibitor, with an IC50 of 4.5 μM. D1 was slightly effective, while D1d showed seeding reduction only when increased to 75 μM (Figure 6B,C). It could be that D1b plays a dual role to inhibit both Aβ and tau, and this combined effect could explain the drastically reduced seeding from Aβ fibrils in our prior experiment (Figure 5D).
 
@@ -96,7 +329,7 @@ Next, we sought to determine potential binding sites on tau for D1b. We postulat
 
 To test if specific interfaces are inhibited by D1b, fibrils were formed from all of the different mutants, and then each was incubated with the indicated concentration of D1b and used to seed wild type tau-K18 biosensor cells, as described previously with wild type tau fibrils (Figure 6—figure supplement 3A,B). We found that D1b was most effective at inhibiting seeding by fibrils of mutants that left intact: interface A of VQIINK which is thought to involve aggregation at site I277 of tau, the solvent accessible interface of VQIVYK as well as 3R tau (Figure 6D). D1b also showed moderate inhibition of several other tau mutants, but required high concentrations to inhibit seeding (Figure 6—figure supplement 2C). As a control, we tested seeding by a mutant of tau40 that combined all of the different mutations, and found this mutant did not induce any seeding in tau-K18 biosensor cells (Figure 6—figure supplement 1E), despite forming fibrils when incubated with heparin, indicating that at least one of the known interfaces is needed for seeding. Control inhibitor LC has little to no effect on seeding from any construct (Figure 6—figure supplement 1F). Taken together, these data show that both the VQIINK and VQIVYK aggregation segments of tau are inhibited by D1b, and suggest that each may share common structural features with the Aβ core that could allow for cross-seeding of tau by Aβ.
 
-## Designed inhibitor D1b targets disease relevant conformations
+### Designed inhibitor D1b targets disease relevant conformations
 
 Amyloid polymorphs may differ depending on whether they were aggregated in vitro or extracted from human brain tissue (Falcon et al., 2018). We sought to determine if our inhibitors are capable of blocking pathological forms of either tau, or Aβ. As suggested previously in our conformational antibody assay and structural alignment (Figure 3C), we hypothesized that our inhibitors would block disease-relevant amyloid polymorphs. Since we also found that our inhibitors blocked both homotypic and heterotypic tau seeding by aggregated tau and Aβ, we tested our inhibitor series on crude lysate from AD donor patient brain tissue.
 
@@ -106,7 +339,7 @@ We found that treating the brain-derived lysates with D1b significantly reduced 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46924/elife-46924-fig7-v2.jpg)
 
-**Figure 7.:** Brain lysate was prepared in TBS buffer from three brain regions of one AD patient, and from a one sample of a PSP patient lacking Aβ plaques. Brain lysate from a non-disease patient (neg cntl) and a tau immunodepleted sample from PSP tissue are in right panel. Cells were seeded with a 1/400 dilution of brain tissue lysate; for samples with inhibitor, lysates were incubated with inhibitor overnight prior to addition to cells. A concentration of 10 µM peptide was used for all of the experiments shown. (A) The average number of aggregates seeded by lysate from each respective brain region, with or without addition of inhibitors. Bars represent mean with individual technical replicates (n = 3; ns = not significant; *, p<0.05; ***, p<0.0005; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column). (B) Representative images of seeded biosensor cells from A shown at 10X magnification, scale bar 100 μm. Extended ANOVA data included as a supplementary file.10.7554/eLife.46924.028Figure 7—source data 1.
+**Figure 7.:** Brain lysate was prepared in TBS buffer from three brain regions of one AD patient, and from a one sample of a PSP patient lacking Aβ plaques. Brain lysate from a non-disease patient (neg cntl) and a tau immunodepleted sample from PSP tissue are in right panel. Cells were seeded with a 1/400 dilution of brain tissue lysate; for samples with inhibitor, lysates were incubated with inhibitor overnight prior to addition to cells. A concentration of 10 µM peptide was used for all of the experiments shown. (A) The average number of aggregates seeded by lysate from each respective brain region, with or without addition of inhibitors. Bars represent mean with individual technical replicates (n = 3; ns = not significant; *, p<0.05; ***, p<0.0005; ****, p<0.0001 using an ordinary one-way ANOVA- Dunnett’s relative to leftmost column). (B) Representative images of seeded biosensor cells from A shown at 10X magnification, scale bar 100 μm. Extended ANOVA data included as a supplementary file.
 
 ## Discussion
 
@@ -128,21 +361,220 @@ In summary, our results suggest that a direct interaction between the Aβ core a
 
 ## Materials and methods
 
-## Recombinant Amyloid Beta Peptide purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293 -K18 (P301S)-EYFP</td>
+      <td>Diamond Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Neuro-2a cell line</td>
+      <td>ATCC</td>
+      <td>Cat # CCL-131 RRID:CVCL_0470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG H and L (FITC) secondary antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab7064, RRID:AB_955234</td>
+      <td>WB 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG H and L (FITC) secondary antibody</td>
+      <td>Abcam</td>
+      <td>RRID:AB_955259</td>
+      <td>WB 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>A11 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB9234 RRID:AB_11214948</td>
+      <td>WB 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>OC (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB2286 RRID:AB_1977024</td>
+      <td>WB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6E10 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 803003, RRID:AB_2564652</td>
+      <td>WB 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>A11-09 mOC 64 mOC 24 mOC 116 mOC 104(rabbit monoclonal)</td>
+      <td>Glabe Laboratory, Abcam</td>
+      <td></td>
+      <td>WB 1:100</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Amyloid Beta 1–42 (pET15b-MBP-AB)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>(D)-LYIWVQ</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>&gt;95% purity</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>(D)-LYIWIWRT</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>&gt;95% purity</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>(D)-LYIWIQKT</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>&gt;95% purity</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>(L)-LYIWVQ</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>&gt;95% purity</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Tau40 (1–441, pET22b)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant K18(244-372) K18+ (244-380) (PNG2)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>KLVFFAENVGS</td>
+      <td>Genscript</td>
+      <td></td>
+      <td>&gt;98% purity</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye</td>
+      <td>Sigma</td>
+      <td>Cat# M5655</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ThioflavinT</td>
+      <td>Sigma</td>
+      <td>CAS ID: 2390-54-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>http://xds.mpimf-heidelberg.mpg.de/</td>
+      <td>RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>http://www.ccp4.ac.uk/</td>
+      <td>RRID:SCR_007255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID: 20124702</td>
+      <td>http://www.phenixonline.org/; RRID: SCR_014224</td>
+      <td>Model building and refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID: 20383002</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/; RRID: SCR_014222</td>
+      <td>Model building</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rosetta</td>
+      <td>https://www.rosettacommons.org/home</td>
+      <td>RRID:SCR_015701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Foldit</td>
+      <td>http://fold.it/</td>
+      <td>RRID:SCR_003788</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Recombinant Amyloid Beta Peptide purification
 
 Aβ, and interface mutants, were purified as described in Krotee et al. (2018). After purification, the protein was lyophilized. Dried peptide powders were stored in desiccant jars at −20°C.
 
-## Peptide Preparation
+### Peptide Preparation
 
 Candidate inhibitors were custom made and purchased from Genscript (Piscataway, NJ). Lyophilized candidate inhibitors were dissolved at 10 mM in 100% DMSO. 10 mM stocks were diluted as necessary. All stocks were stored frozen at −20°C.
 
 Amyloid Beta was prepared by dissolving lyophilized peptide in 100% DMSO or 100 mM NH4OH. Next, the sample was spin-filtered and the concentration was assessed by BCA assay (Thermo Scientific, Grand Island, NY). The DMSO or NH4OH peptide stocks were diluted 100-fold in filter-sterilized Dulbecco’s PBS (Cat. # 14200–075, Life Technologies, Carlsbad, CA).
 
-## Crystallization
+### Crystallization
 
 16-Ac-KLVFFAENVGS-NH3-26 (Aβ 16–26 D23N) was dissolved at 4.5 mg/ml in 20% DMSO. Micro crystals were grown in batch in 0.2M magnesium formate, 0.1M Tris base pH 8.0, and 15% isopropanol at room temperature under quiescent conditions. Crystals grew within 4 days to a maximum of 2 weeks.
 
-## MicroED data collection
+### MicroED data collection
 
 The procedures for MicroED data collection and processing largely follow published procedures (Shi et al., 2016; Hattne et al., 2015). Briefly, a 2–3 μl drop of crystals in suspension was deposited onto a Quantifoil holey-carbon EM grid then blotted and vitrified by plunging into liquid ethane using a Vitrobot Mark IV (FEI, Hillsboro, OR). Blotting times and forces were optimized to keep a desired concentration of crystals on the grid and to avoid damaging the crystals. Frozen grids were then either immediately transferred to liquid nitrogen for storage or placed into a Gatan 626 cryo-holder for imaging. Images and diffraction patterns were collected from crystals using FEI Tecnai 20 TEM with field emission gun (FEG) operating at 200 kV and fitted with a bottom mount TVIPS TemCam-F416 CMOS-based camera. Diffraction patterns were recorded by operating the detector in a video mode using electronic rolling shutter with 2 × 2 pixel binning (Nannenga et al., 2014). Exposure times for these images were either 2 or 3 s per frame. During each exposure, crystals were continuously unidirectionally rotated within the electron beam at a fixed rate of 0.3 degrees per second, corresponding to a fixed angular wedge of 0.6 or 0.9 degrees per frame.
 
@@ -152,76 +584,80 @@ Measured diffraction images were converted from TIFF format into SMV crystallogr
 
 We used XDS to index the diffraction images and XSCALE (Kabsch, 2010) for merging and scaling together datasets originating from thirteen different crystals.
 
-## Structure determination
+### Structure determination
 
 We determined the structure of Aβ 16–26 D23N using molecular replacement. KLVFFA (pdb 2Y2A) led us to our atomic model. The solution was obtained using Phaser (McCoy, 2007). Subsequent rounds of model building and refinement were carried out using COOT and Phenix, respectively (Emsley and Cowtan, 2004; McCoy et al., 2005). Electron scattering factors were used for refinement. Some reflections extended to 1.40 Å resolution. Calculations of the area buried and Sc were performed with AREAIMOL (Collaborative Computational Project, 1994; Lee and Richards, 1971) and Sc (Connolly, 1983; Lawrence and Colman, 1993; Richards, 1977), respectively.
 
-## Computational structure-based design
+### Computational structure-based design
 
 Computational designs were carried out using the RosettaDesign software as described previously (Sievers et al., 2011). The atomic structure of the 16-KLVFFAENVGS-26 Aβ segment was used as a starting template for computational design. An extended L-peptide (or D-peptide, six to eight residues) was first placed at the end of the starting template of atomic structure. The design procedure then built side-chain rotamers of all residues onto the nine-residue peptide backbone placed at growing end of fibril. The optimal set of rotamers was identified as those that minimize an energy function containing a Lennard-Jones potential, an orientation-dependent hydrogen bond potential, a solvation term, amino acid-dependent reference energies, and a statistical torsional potential that depends on the backbone and side-chain dihedral angles. Area buried and shape complementarity calculations were performed with areaimol and Sc, respectively, from the CCP4 suite of crystallographic programs (Collaborative Computational Project, 1994). The solubility of each peptide was evaluated by hydropathy index (Kyte and Doolittle, 1982). The designed peptides were selected based on calculated binding energy of top or bottom binding mode, shape complementarity and peptide solubility. Each structural model of selected peptides went through human inspection using Pymol, where those peptides with sequence redundancy and fewer binding interactions were omitted. Finally, select peptides were synthesized and tested experimentally.
 
-## Sample preparation for electron microscopy
+### Sample preparation for electron microscopy
 
 Aβ1–42 was dissolved and diluted as previously described. Inhibitor stocks were prepared in 100% DMSO and were added such that the sample contained 10 μM monomeric Aβ1–42 the indicated ratio of inhibitor with final concentration of 1% DMSO. Samples were incubated for 72 hr at 37°C under quiescent conditions. Aβ1–42 fibrils were formed as described, and then treated with indicated ration of inhibitor for 24 hr at 37°C under quiescent conditions. Fibril abundance was checked using electron microscopy.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Samples were spotted onto non-holey grids and left for 160 to 180 s. Remaining liquid was wicked off and then left to dry before analyzing. Samples for negative-stain TEM were treated with 2% uranyl acetate after sample was wicked off the grid. After 1 min, the uranyl acetate was wicked off. The grids were analyzed using a T12 Electron Microscope (FEI, Hillsboro, OR). Images were collected at 3200x or 24,000x magnification and recorded using a Gatan 2k × 2 k CCD camera.
 
-## Thioflavin-T (ThT) kinetic assays
+### Thioflavin-T (ThT) kinetic assays
 
 Thioflavin-T (ThT) assays were performed in black polystyrene 96-well plates (Nunc, Rochester, NY) or black polypropylene 96 well plates (Greiner Bio-One, Austria), as indicated, and sealed with UV optical tape. The total reaction volume was 150 μL per well. Aβ1–42 was prepared as described. Inhibitors were added at indicted concentrations, with a final concentration of 1% DMSO. ThT fluorescence was recorded with excitation and emission of 444 nm and 482 nm, respectively, using a Varioskan Flash (Thermo Fisher Scientific, Grand Island, NY). Experiments were performed at 37°C without shaking in triplicate and readings were recorded every 5 min. Seeding assay included 10% monomer equivalent of preformed fibrils, aggregated in LoBind polypropylene tubes, and sonicated for 10 min prior to addition. Inhibitor interruption assays were prepared as above in polypropylene plates. At approximal T1/2, readings were paused and inhibitors were added as indicated, and plates were resealed with new UV optical tape.
 
 ThT assays with tau40 were prepared as above with the following exceptions. 0.5 mg/mL heparin (Sigma cat. no. H3393) was added to the reaction mixture and experiments were performed at 37°C with double orbital shaking at 700 rpm. ThT assays with K18+ were prepared as above with the following exceptions. Experiments were performed at 37°C with double orbital shaking at 700 rpm, in polypropylene plates. Seeding assays included 10% monomer equivalent of preformed fibrils, sonicated for 10 min prior to addition.
 
-## Cell culture
+### Cell culture
 
 Neuro2a (N2a) cells (ATCC cat# CCL-131) were cultured in MEM media (Cat. # 11095–080, Life Technologies) plus 10% fetal bovine serum and 1% pen-strep (Life Technologies). Cells were cultured at 37°C in 5% CO2 incubator. Cells were authenticated by COX I gene analysis (Laragen), and mycoplasma negative by MycoAlert PLUS Detection Kit (Lonza, cat# LT07-701).
 
-## 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction assay for cell viability
+### 3-(4,5-dimethylthiazol-2-yl)−2,5-diphenyltetrazolium bromide (MTT) dye reduction assay for cell viability
 
 N2a cells were plated at 5,000 cells per well in 90 μL of culture media, in clear 96-well plates (Cat. # 3596, Costar, Tewksbury, MA). Cells were allowed to adhere to the plate for 20–24 hr. Aβ1–42 samples were incubated at 10 μM with or without inhibitors at varying ratios for 12 hr at 37°C and then applied to N2a cells. 10 μL of sample was added to cells. By doing this, samples were diluted 1/10 from in vitro stocks. Experiments were done in triplicate.
 
 After a 24-hr incubation, 20 μL of Thiazolyl Blue Tetrazolium Bromide MTT dye (Sigma, St. Louis, MO) was added to each well and incubated for 3.5 hr at 37°C under sterile conditions. The MTT dye stock is 5 mg/mL in Dulbecco’s PBS. Next, the plate was removed from the incubator and the MTT assay was stopped by carefully aspirating off the culture media and adding 100 μL of 100% DMSO to each well. Absorbance was measured at 570 nm using a SpectraMax M5. A background reading was recorded at 700 nm and subsequently subtracted from the 570 nm value. Cells treated with vehicle alone (PBS+0.1% DMSO) were designated at 100% viable and cells treated with 100% DMSO designated as 0% viable, and cell viability of all other treatments was calculated accordingly. We employed one-way ANOVA as our statistical test for significance. Extended ANOVA data included as a supplementary file. IC50 values were estimated using a four-parameter non-linear fit dose-response curve in Graphpad Prism.
 
-## Dot Blot Assay
+### Dot Blot Assay
 
 Aβ1–42 samples were incubated at 10 μM with or without inhibitors for 6, 24, and 72 hr at 37°C, and spotted onto a nitrocellulose membrane (Cat. # 162–0146, BioRad, Hercules, CA). 20 μL was loaded for each condition; 2 μL was spotted at a time and allowed to dry between application. The membranes were blotted as previously described (Krotee et al., 2017), with the exception of the primary antibodies used. The antibodies used in the assay were previously generated and characterized (Hatami et al., 2014). Blots were quantified with ImageJ.
 
-## Surface Plasmon Resonance (SPR)
+### Surface Plasmon Resonance (SPR)
 
-SPR experiments were performed using BiacoreT200 instrument (GE Healthcare). Aβ42 fibrils/tau K18 fibrils were immobilized on a CM5 sensor chip. The fibrils of Aβ42 were prepared by placing a sample of 50 µM Aβ42 in PBS pH 7.4 in two wells of a Nunc 96-well optical bottom plate (Thermo Scientific), 150 µl/well and incubating the plate in a microplate reader (FLUOstar Omega, BMG Labtech) at 37°C with double orbital shaking at 600 rpm overnight. Sample from the two wells were pooled together and Aβ42 fibrils were isolated from the incubation mixture by centrifuging it at 13,000 xG, 4°C for 45 min. The supernatant was removed and the pellet was re-dissolved in an equal volume of PBS as that of supernatant. The isolated fibrils were sonicated using a probe sonicator for 1–2 min at 18% amplitude with 2 s on, 5 s off pulses. The sonicated fibrils were filtered through a 0.22 µ filter to remove large aggregates. The sonicated and filtered fibrils were diluted to 60 µg/ml in 10 mM NaAc, pH 3 and then, immobilized immediately on a CM5 sensor chip using standard amine coupling chemistry. Briefly, the carboxyl groups on the sensor surface were activated by injecting 100 µl of 0.2 M EDC and 0.05 M NHS mixture over flow cells 1–2. The fibrils were then injected at a flow rate of 5 µl/min over flow cell 2 of the activated sensor surface for 900 s. The remaining activated groups in both the flow cells were blocked by injecting 120 µl of 1 M ethanolamine-HCl pH 8. 5.. For the binding assay each peptide inhibitor was dissolved in 100% DMSO at a concentration of 1 mM and diluted in PBS pH 7.4+1.2% DMSO to concentrations ranging from 5 µM to 260 µM. Each peptide was injected at a flow rate of 30 µl/min over both flow cells (1 and 2) at increasing concentrations (in running buffer, PBS, pH 7.4+1.2% DMSO) at 25°C. For each sample the contact time and dissociation time were 120 s and 160 s, respectively. 3 M NaCl was used as regeneration buffer. The data were processed and analyzed using Biacore T200 evaluation software 3.1. The data of flow cell 1 (blank control) was subtracted from the data of flow cell 2 (with immobilized fibrils/monomers). The equilibrium dissociation constant (Kd) was calculated by fitting the plot of steady-state peptide binding levels (Req) against peptide concentration (C) with 1:1 binding model (Equation 1).(1)Req=CRmaxKd+C+RI
+SPR experiments were performed using BiacoreT200 instrument (GE Healthcare). Aβ42 fibrils/tau K18 fibrils were immobilized on a CM5 sensor chip. The fibrils of Aβ42 were prepared by placing a sample of 50 µM Aβ42 in PBS pH 7.4 in two wells of a Nunc 96-well optical bottom plate (Thermo Scientific), 150 µl/well and incubating the plate in a microplate reader (FLUOstar Omega, BMG Labtech) at 37°C with double orbital shaking at 600 rpm overnight. Sample from the two wells were pooled together and Aβ42 fibrils were isolated from the incubation mixture by centrifuging it at 13,000 xG, 4°C for 45 min. The supernatant was removed and the pellet was re-dissolved in an equal volume of PBS as that of supernatant. The isolated fibrils were sonicated using a probe sonicator for 1–2 min at 18% amplitude with 2 s on, 5 s off pulses. The sonicated fibrils were filtered through a 0.22 µ filter to remove large aggregates. The sonicated and filtered fibrils were diluted to 60 µg/ml in 10 mM NaAc, pH 3 and then, immobilized immediately on a CM5 sensor chip using standard amine coupling chemistry. Briefly, the carboxyl groups on the sensor surface were activated by injecting 100 µl of 0.2 M EDC and 0.05 M NHS mixture over flow cells 1–2. The fibrils were then injected at a flow rate of 5 µl/min over flow cell 2 of the activated sensor surface for 900 s. The remaining activated groups in both the flow cells were blocked by injecting 120 µl of 1 M ethanolamine-HCl pH 8. 5.. For the binding assay each peptide inhibitor was dissolved in 100% DMSO at a concentration of 1 mM and diluted in PBS pH 7.4+1.2% DMSO to concentrations ranging from 5 µM to 260 µM. Each peptide was injected at a flow rate of 30 µl/min over both flow cells (1 and 2) at increasing concentrations (in running buffer, PBS, pH 7.4+1.2% DMSO) at 25°C. For each sample the contact time and dissociation time were 120 s and 160 s, respectively. 3 M NaCl was used as regeneration buffer. The data were processed and analyzed using Biacore T200 evaluation software 3.1. The data of flow cell 1 (blank control) was subtracted from the data of flow cell 2 (with immobilized fibrils/monomers). The equilibrium dissociation constant (Kd) was calculated by fitting the plot of steady-state peptide binding levels (Req) against peptide concentration (C) with 1:1 binding model (Equation 1).
+
+$$
+Req=\frac{CR_{max}}{Kd+C}+RI
+$$
 
 Rmax = Analyte binding capacity of the surface
 
 RI = Bulk refractive index contribution in the sample
 
-## Recombinant Tau purification
+### Recombinant Tau purification
 
 K18, K18+, Human Tau40 (residues 1–441) WT, 3R and mutants: interface A (Q276W, L282R, I308P), interface B (Q276W, I277M, I308P), interface C (I277M, L282R, I308P)interface 1 (Q276W, I277M, L282R, Q307W, V309W), interface 2 (Q276W, I277M, L282R, I308W), were expressed in pET28b with a C-terminal His-tag (tau40) or or PNG2 (K18, K18+) in BL21-Gold E. coli cells grown in TB to an OD600 = 0.8. Cells were induced with 0.5 mM IPTG for 3 hr at 37°C and lysed by sonication in 50 mM Tris (pH 8.0) with 500 mM NaCl, 20 mM imidazole, 1 mM beta-mercaptoethanol, and HALT protease inhibitor. Cells were lysed by sonication, clarified by centrifugation at 15,000 rpm for 15 min, and passed over a 5 ml HisTrap affinity column. The column was washed with lysis buffer and eluted over a gradient of imidazole from 20 to 300 mM. Fractions containing purified Tau40 were dialyzed into 50 mM MES buffer (pH 6.0) with 50 mM NaCl and 1 mM beta-mercaptoethanol and purified by cation exchange. Peak fractions were polished on a HiLoad 16/600 Superdex 200 pg in 1X PBS (pH 7.4), and concentrated to ~20–60 mg/ml by ultrafiltration using a 10 kDa cutoff.
 
-## Fibril incubation with inhibitors for tau biosensor cell-seeding assays
+### Fibril incubation with inhibitors for tau biosensor cell-seeding assays
 
 Aβ fibrils were prepared at 200 μM at 37°C for 72 hr before diluting to 50 μM in PBS buffer (pH 7.4) for seeding experiments. Tau40 WT and interface mutation fibrils were prepared by shaking 50 μM tau40 in PBS buffer (pH 7.4) with 0.5 mg/ml heparin (Sigma cat. no. H3393) and 1 mM dithiothreitol (DTT) for 3–6 days. Fibrillization was confirmed with an endpoint ThT reading, and fibrils were then diluted 20-fold to 1.25 μM in OptiMEM (Life Technologies, cat. no. 31985070). Inhibitors dissolved in DMSO were added to 20 μl of diluted fibrils at a concentration 20-fold greater than the final desired concentration. Fibrils were incubated for ~16 hr with the inhibitor, and subsequently were sonicated in a Cup Horn water bath for 3 min before seeding the cells. The resulting ‘pre-capped fibrils’ were mixed with one volume of Lipofectamine 2000 (Life Technologies, cat. no. 11668027) prepared by diluting 1 μl of Lipofectamine in 19 μl of OptiMEM. After 20 min, 10 μl of fibrils were added to 90 μl of the tau-K18CY biosensor cells to achieve the final indicated ligand concentration. Cells were verified by STR profiling and confirmed mycoplasma negative (Laragen). Quantification of seeding was determined by imaging the entire well of a 96-well plate seeded in triplicate and imaged using a Celigo Image Cytometer (Nexcelom) in the YFP channel. Aggregates were counted using ImageJ (Eliceiri et al., 2012) by subtracting the background fluorescence from unseeded cells and then counting the number of peaks with fluorescence above background using the built-in Particle Analyzer. We employed one-way ANOVA as our statistical test for significance. Extended ANOVA data included as a supplementary file. Dose-response curves were constructed for inhibitor peptides exhibiting concentration dependence by fitting to a nonlinear regression model in Graphpad Prism. High resolution images were acquired using a ZEISS Axio Observer D1 fluorescence microscope.
 
-## Preparation of Brain lysate
+### Preparation of Brain lysate
 
 Human brain tissue was obtained from the Neuropathology Laboratory at UCLA Medical Center. AD and PSP cases were confirmed by the Neuropathology Laboratory by immunostaining autopsied brain tissue sections, and the PSP donor was confirmed to be free of amyloid immunoreactivity. Tissue sections from the indicated brain regions were manually homogenized using a disposable ultra-tissue grinder (Thermo Fisher) in TBS (pH 7.4) supplemented with 1X HALT protease inhibitor. Homogenized tissue was aliquoted to several PCR tubes and prepared for seeding in biosensor cells by sonication as described by Kaufman et al. (2017), except tissue sections were sonicated twice as long, for a total of 2 hr, in an ice cooled circulating water bath with individual sample tubes stirring to ensure each tube received the same sonication energy. Subsequently, seeding was measured by transfection into biosensor cells and quantified as described above. We employed one-way ANOVA as our statistical test for significance. Extended ANOVA data included as a supplementary file.
 
-## Immunodepletion of Brain lysate
+### Immunodepletion of Brain lysate
 
 Lysate was prepared as above. 2 µg (0.2 μL at 11 μg/uL) Tau antibody (Dako A0024) was conjugated to 0.75 mg ProteinG Dynabeads (25 μL of 30 mg/mL). Antibody was mixed with beads and nutated for 10 min, washed with 200 μL Citrate-phosphate wash buffer pH 5.0, and then resuspended in a minimal volume of wash buffer. 200 μL of brain lysate diluted 1/20 in OptiMEM was added to antibody-bead suspension and Nutated for 30 min. Supernatant was removed and used for transfection into biosensor cells, as previously described.
 
-## Aggregation Inhibition Assay with α-synuclein
+### Aggregation Inhibition Assay with α-synuclein
 
 α-synuclein was expressed and purified as described previously in Rodriguez, et al. with the following exceptions to the expression protocol. An overnight starter culture was grown in 15 mL instead of 100 mL, 7 mL of which was used to inoculate 1 L. After induction, cells were allowed to grow for 3–4 hr at 34°C (instead of 4–6 hr at 30°C). Cells were then harvested by centrifuging at 5000 x g.
 
 ThT assays with α-synuclein were performed in black 96-well plates (Nunc, Rochester, NY) sealed with UV optical tape. The total reaction volume was 180 μL per well. ThT fluorescence was recorded with excitation and emission of 444 nm and 482 nm, respectively, using a Varioskan Flash (Thermo Fisher Scientific, Grand Island, NY). Experiments were performed at 37°C, shaking at 600 rpm with a teflon bead, in triplicate and readings were recorded every 15 min. Alpha synuclein at 105 μM in PBS was diluted to a final concentration of 50 μM in 25 μM Thioflavin-T and PBS. Inhibitors were added at the specified concentration by diluting 10 mM stocks in 100% DMSO 1 to 40 in the same manner. Thus, inhibitors were tested at 5:1 molar excess of α-synuclein.
 
-## Aggregation Inhibition Assay with IAPP
+### Aggregation Inhibition Assay with IAPP
 
 Human IAPP1-37NH2 (hIAPP) was purchased for Innopep (San Diego, CA). Peptides were prepared by dissolving lyophilized peptide in 100% 1,1,1,3,3,3-Hexafluoro-2-propanol (HFIP) at 250 μM for 2 hr. Next, the sample was spin-filtered and then HFIP was removed with a CentriVap Concentrator (Labconco, Kansas City, MO). After removal of the HFIP, the peptide was dissolved at 1 mM or 10 mM in 100% DMSO (IAPP alone) or 100% DMSO solutions containing 1 mM or 10 mM inhibitor. The DMSO peptide stocks were diluted 100-fold in filter-sterilized Dulbecco’s PBS (Cat. # 14200–075, Life Technologies, Carlsbad, CA). Thioflavin-T (ThT) assays with hIAPP were performed in black 96-well plates (Nunc, Rochester, NY) sealed with UV optical tape. hIAPP1-37NH2 and mIAPP1-37NH2 were prepared as described. The total reaction volume was 150 μL per well. ThT fluorescence was recorded with excitation and emission of 444 nm and 482 nm, respectively, using a Varioskan Flash (Thermo Fisher Scientific, Grand Island, NY). Experiments were performed at 25°C without shaking in triplicate and readings were recorded every 5 min.
 
-## Atomic structure overlay
+### Atomic structure overlay
 
 A structural superposition of Aβ 16–26 and tau (5V5B, 6HRE) was performed using LSQ from coot (Emsley and Cowtan, 2004). We calculated root mean square deviation (RMSD) of main chains for parallel orientations fitting 6–8 residues. Anti-parallel LSQ computation of Aβ 16–22 and tau 275–281 (5V5B) of Cα atoms was calculated, and side chain rotamers optimized with Foldit (Kleffner et al., 2017) over 2000 iterations to minimize energy to −603 REU. For side seeding model, residues 16–21 of Aβ (5OQV) were superimposed on 304–309 of Tau (6HRF). Tau was then manually moved perpendicular to the fibril axis to make a complementary surface with 5OQV. Backbone and side chain rotamers were optimized with Foldit to minimize energy to −1517REU.

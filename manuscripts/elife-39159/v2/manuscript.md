@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.39159.001 Mitogen-activated protein kinases (MAPK) such as p38 and the c-Jun N-terminal kinases (JNKs) are activated during the cellular response to stress signals. Their activity is regulated by the MAPK-phosphatase 1 (DUSP1), a key component of the anti-inflammatory response. Stress kinases are well-described elements of the response to otic injury and the otoprotective potential of JNK inhibitors is being tested in clinical trials. By contrast, there are no studies exploring the role of DUSP1 in hearing and hearing loss. Here we show that Dusp1 expression is age-regulated in the mouse cochlea. Dusp1 gene knock-out caused premature progressive hearing loss, as confirmed by auditory evoked responses in Dusp1 –/ – mice. Hearing loss correlated with cell death in hair cells, degeneration of spiral neurons and increased macrophage infiltration. Dusp1 –/ – mouse cochleae showed imbalanced redox status and dysregulated expression of cytokines. These data suggest that DUSP1 is essential for cochlear homeostasis in the response to stress during ageing.
+Mitogen-activated protein kinases (MAPK) such as p38 and the c-Jun N-terminal kinases (JNKs) are activated during the cellular response to stress signals. Their activity is regulated by the MAPK-phosphatase 1 (DUSP1), a key component of the anti-inflammatory response. Stress kinases are well-described elements of the response to otic injury and the otoprotective potential of JNK inhibitors is being tested in clinical trials. By contrast, there are no studies exploring the role of DUSP1 in hearing and hearing loss. Here we show that Dusp1 expression is age-regulated in the mouse cochlea. Dusp1 gene knock-out caused premature progressive hearing loss, as confirmed by auditory evoked responses in Dusp1–/– mice. Hearing loss correlated with cell death in hair cells, degeneration of spiral neurons and increased macrophage infiltration. Dusp1–/– mouse cochleae showed imbalanced redox status and dysregulated expression of cytokines. These data suggest that DUSP1 is essential for cochlear homeostasis in the response to stress during ageing.
 
 ## Introduction
 
@@ -49,23 +49,51 @@ Here, we describe the auditory phenotype of the Dusp1 null mouse. Our results s
 
 ## Results
 
-## Dusp1 is expressed and age-regulated in the mouse inner ear
+### Dusp1 is expressed and age-regulated in the mouse inner ear
 
 The expression of Dusp1 was analyzed in cochlear samples from embryonic day (E) 15.5 to one-year-old mice (Figure 1A). Dusp1 transcripts were expressed at all the ages studied, with expression levels increasing by 2-fold at the age of cochlear maturation (2 months) and 4-fold at the oldest age studied (12 months) with respect to those at the earliest embryonic age studied. The expression of Dusp1, as well as that of other members of the inducible nuclear MAP kinase phosphatases family, Dusp2, Dusp4 and Dusp5, was then studied in cochlear samples of 2-month-old wildtype and Dusp1 null mice. As expected, Dusp1 was not expressed in the null mouse, whereas Dusp2 expression was significantly increased in these mice when compared to wildtype mice (Figure 1B). These differences were maintained at the ages of 4–5 and 8–9 months, and at 8–9 months, Dusp5 expression was also significantly reduced in Dusp1 null mice compared to wildtype mice (Figure 1—figure supplement 1A). Furthermore, we confirmed both the absence of DUSP1 and its induction by stress stimuli in Mouse embryonic fibroblast (MEF) cells. E13.5 MEFs were prepared from wildtype and null mice and exposed to UVC light for 30 min. As expected, MEFs prepared from wildtype mice but not those from null mice showed a rapid induction of DUSP1 levels following stress (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cochlear gene expression of Dusp1 in MF1 × 129 Sv mice from embryonic (E) to adult stages (measured in days (d) and months (m)). Expression levels were measured by RT-qPCR and calculated as 2–ΔΔCt (RQ), using Hprt1 as the reference gene and normalized to data from 1–2 month-old mice. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. Statistically significant differences were analyzed by Student’s t-test, ***p<0.001. (B) Cochlear gene expression of inducible nuclear MKPs in the cochlea of 2-month-old Dusp1+/+ (light yellow) and Dusp1–/– mice (dark yellow). Expression levels were calculated as 2–ΔΔCt (RQ), using Rplp0 as the reference gene and normalized to 2-month-old wildtype Dusp1 expression. Data are presented as mean ± SEM of triplicates from pool samples of three mice per condition. Statistically significant differences were analyzed by the Student’s t-test (**p<0.01 and ***p<0.001). (C) MEFs cells from Dusp1+/+ or Dusp1–/–mice were treated or not with 20 J/cm2 UVC light and harvested 30 min after stimuation. 20 μg of whole cell extracs (WCE) were resolved in SDS-PAGE and DUSP1 expression was detected using a specific antibody. Tubulin was used as a loading control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A-C) Cochlear expression of MKPs genes from the first (A), second (B) and third (C) classes in Dusp1+/+ (lighter color bars) and Dusp1–/– mice (darker color bars) of 2, 4–5 and 8–9 months of age. (D) Cochlear expression of MAP kinase genes in Dusp1+/+ and Dusp1–/– mice at 2, 4–5 and 8–9 months of age. Expression levels were calculated as 2–ΔΔCt (RQ), using Rplp0 as the reference gene and normalized to the 2-month-old wildtype mice group. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. Statistically significant differences were analyzed by Student’s t-test between genotypes (*p<0.05, **p<0.01, ***p<0.001).
+
 On the other hand, no further differences between genotypes were found in the expression of other MKPs (Figure 1—figure supplement 1A–C), nor in the age-evolution of the expression profiles of MAPKs 11 to 14 (Figure 1—figure supplement 1D).
 
-## Expression of Dusp1 is necessary for maintenance of hearing
+### Expression of Dusp1 is necessary for maintenance of hearing
 
 Hearing was assessed in 1- to 12-month-old mice by evaluating the auditory brainstem response (ABR) in longitudinal experiments (Supplementary file 1). Null mice showed elevated ABR thresholds from the age of 2 months when compared to wildtype littermates, although 2-month thresholds were in the range of normal-hearing, showing the typical five waves in response to click sounds (Figure 2A). However, the evolution of null mice hearing thresholds worsened with age in response to click and, particularly, to high frequencies presented in tone pure bursts (Figure 2B). Thus, we observed premature hearing loss that progressed rapidly from moderate (4–5 months) to profound (8–9 months onward) and affected hearing of initially high and later low frequencies. At the age of 12 months, null mice showed cophosis and therefore no further tests were carried out beyond this age. By contrast, wildtype mice showed cophosis at later ages, between 16–19 months (n = 3, data not shown). Hearing was also assessed in 2-, 5- and 8-month-old Dusp1 heterozygous mice, no differences in ABR thresholds were found when comparing with wildtype mice (data not shown).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative ABR recordings showing the typical I–V waves obtained in response to click stimuli from Dusp1+/+ and Dusp1–/– mice of 2, 4–5, 8–9 and 12 months of age, showing the hearing thresholds (colored bold lines). (B) Evolution of ABR thresholds (mean ± SEM) in response to click and tone burst stimuli in Dusp1+/+ (lighter color lines) and Dusp1–/– (darker color lines) mice of 2 (Dusp1+/+, n = 26; Dusp1–/–, n = 25), 4–5 (Dusp1+/+, n = 25; Dusp1–/–, n = 24), 8–9 (Dusp1+/+, n = 24; Dusp1–/–, n = 22) and 12 months of age (Dusp1+/+, n = 7; Dusp1–/–, n = 3). (C) Input–output function of wave I latency, the mean latency (± SEM) of ABR peak one is plotted against sound intensity (dB SPL) for mice of 4–5 (Dusp1+/+, n = 25; Dusp1–/–, n = 24) and of 8–9 months of age (Dusp1+/+, n = 22; Dusp1–/–, n = 21). (D) Interpeak latency (mean ± SEM) between peaks I–II, II–IV and I–IV obtained at 80 dB SPL click stimulation in mice of 4–5 (Dusp1+/+, n = 25; Dusp1-–/–, n = 24) and 8–9 months of age (Dusp1+/+, n = 21; Dusp1–/–, n = 21). Statistically significant differences were analyzed by Student’s t-test comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Input–output function of wave I latency, the mean latency (± SEM) of ABR peak one is plotted against sound intensity (dB SPL) for mice of 2 months of age (Dusp1+/+, n = 23; Dusp1–/–, n = 24). (B) Interpeak latency (mean ± SEM) between peaks I–II, II–IV and I–IV obtained at 80 dB SPL click stimulation in mice of 2 months of age (Dusp1+/+, n = 23; Dusp1–/–, n = 24). (C) Input–output function of wave I and IV amplitude, the mean amplitude (± SEM) of ABR peaks I and IV is plotted against sound intensity (dB SPL) for mice of 2 (Dusp1+/+, n = 22; Dusp1–/–, n = 24) and 4–5 months of age (Dusp1+/+, n = 25; Dusp1–/–, n = 24). Statistically significant differences were analyzed by Student’s t-test comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
 
 The speed of transmission of the auditory signal was studied by analyzing the latency of appearance of the successive ABR waves elicited by the click stimulus, which was presented at a range of low to high intensities. Null mice showed a significant delay on wave I latency from the age of 2 months (Figure 2—figure supplement 1), which was maintained in 4–5- and 8–9-month-old mice (Figure 2C). Latencies of waves II and III, but not of IV, also showed significant delays in null mice at the latest ages studied (data not shown). However, null mice showed a significant decrease in the values of I–IV and II–IV interpeak latencies from the age of 4–5 months onwards when compared to wildtype mice of matched ages (Figure 2D). No differences were found between genotypes in interpeak latencies in young (2-month-old) mice. Still, even young null mice showed delay on wave I appearance and decreased amplitudes of wave I and IV, which continued for wave IV at 4–5 months of age (Figure 2—figure supplement 1).
 
 These data taken together indicate that Dusp1 null mice show a premature and progressive sensorineural hearing loss.
 
-## Progressive hearing loss of Dusp1–/– mice correlates with cochlear cellular alterations
+### Progressive hearing loss of Dusp1–/– mice correlates with cochlear cellular alterations
 
 Study of the gross anatomy of the middle ear ossicles and inner ear of 2-month-old mice showed no evident morphological alterations between genotypes (Figure 3—figure supplement 1). The subsequent morphological evaluation of cochlear sections of mice of both genotypes indicated that 2-month-old mice showed no evident differences, and a normal cytoarchitecture in the basal and middle turns of the cochlea was observed (Figure 3—figure supplement 2). Three months later, young adult wildtype mice maintained unaltered cochlear morphology (Figure 3A,a–d), whereas Dusp1 null mice already showed loss of hair and supporting cells in the organ of Corti, loss of neural cells of the basal spiral ganglion (Figure 3A,e–h) and loss of of spiral ligament fibrocytes (data not shown). Cochlear cell loss showed a base to apex gradient that progressed with age in concordance with the aforementioned worsening of thresholds from high to low frequencies (Figure 2). Therefore, 8-month-old null mice showed loss of cells at the organ of Corti in the middle turn of the cochlea, whereas damage to ganglion cells was evident in the basal turn and extended to the middle turn (Figure 3A,m–p). By contrast, 8-month-old wildtype mice still conserved a well-preserved cytoarchitecture (Figure 3A,i–l). No differences were observed in the apical turn of the cochlea in 8-month-old mice of different genotypes (data not shown).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative microphotographs of hematoxylin-eosin-stained paraffin cochlear mid-modiolar sections of Dusp1+/+ and Dusp1–/– mice, showing the spiral ganglion and the organ of Corti from the middle and basal turns of the cochlea at 4–5 (n = 5 per genotype) and 8–9 months of age (n = 5 per genotype). Insets present representative microphotographs of myelin protein p0 immunohistochemistry from the middle and basal turns of the cochlea at 4–5 (n = 3 per genotype) and 8–9 months of age (n = 3 per genotype). Asterisks and arrowheads indicate the absence of neural and hair cells, respectively. Scale bars: 25 µm. IHC, inner hair cell; OHC, outer hair cell. (B) Cochlear gene expression of Mpz, NeuN, Sox2 and Prestin in Dusp1+/+ (lighter color bars) and Dusp1–/– mice (darker color bars) at 2, 4–5 and 8–9 months of age. Expression levels were measured by RT-qPCR and calculated as 2–ΔΔCt (RQ), using Rplp0 as reference the gene and normalized to the 2-month-old wildtype mice group. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. Statistically significant differences were analyzed by Student’s t-tests comparing genotypes (**p<0.01 and ***p<0.001). (C) TUNEL apoptosis detection. Representative confocal maximal projection microphotographs show the spiral ganglion of the middle and basal turns of 4–5 month-old Dusp1+/+ (light green bars, n = 4) and Dusp1–/– (dark light bars, n = 3) mice. Arrowheads indicate positive TUNEL cells. Quantification of positive TUNEL cells is shown as the percentage of total DAPI-positive cells in a region of interest (ROI) in the spiral ganglion. Values are presented as mean ± SEM. Statistically significant differences were analyzed by Student’s t-tests comparing genotypes (*p<0.05). Scale bar: 25 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Representative images taken after soft tissue cleaning of 2-month-old Dusp1+/+ (n = 4) and Dusp1–/– mice (n = 4). Lateral (A), medial (B), rostral (C) and caudal (D) views. Co, cochlea; Lsc, lateral semicircular canal; Ow, oval window; Pscl, posterior semicircular canal; Rw, round window; Ssc, superior semicircular canal . (E–F) Representative images of the middle ear ossicles of Dusp1+/+ (n = 4) (E) and Dusp1–/– (n = 4) (F) mice. Malleus (left), incus (center) and stapes (right) at 2 months of age. Scale bars: (A–D), 1 mm,;(E–F), 500 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Representative microphotographs of hematoxylin-eosin-stained paraffin cochlear mid-modiolar sections of Dusp1+/+ and Dusp1–/– mice showing the spiral ganglion, the organ of Corti and the lateral wall from the middle and basal turns of the cochlea at 2 months of age (n = 3 per genotype). Scale bars: 25 µm. IHC, inner hair cell; OHC, outer hair cell.
 
 Cellular loss was further confirmed by testing the gene expression of molecular markers of specific cochlear cell populations. Thus, Mpz, is expressed in the spiral ganglion and cochlear nerve as the major component of the peripheral nervous system myelin sheath (Wang et al., 2013). The RNA-binding RbFox3/NeuN-coding nuclear factor is expressed in post-mitotic neurons and is involved in the development and maintenance of neuronal functions (Lin et al., 2016; Pan et al., 2017). The transcription factor Sox2 is required for inner ear development and is expressed by Schwan cells and supporting cells in the adult cochlea (Hume et al., 2007; Steevens et al., 2017). Finally, the gene Prestin encodes the homonymous motor protein that is specifically expressed in outer hair cells (Zheng et al., 2000).
 
@@ -75,31 +103,51 @@ A more detailed examination of the organ of Corti of 5-month-old null mice revea
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig4-v2.jpg)
 
-**Figure 4.:** Dusp1–/– mice.(A) Representative confocal maximal projection images of the organ of Corti of the middle and basal turns of 5-month-old Dusp1 (n = 4) and +/+Dusp1–/– (n = 4) mice immunolabeled for hair cells MyoVIIA (green), neurofilament (red) and phalloidin (purple). Asterisks and arrowheads indicate the absence or presence, respectively, of hair cells and fibers. Scale bar: 10 µm. IHC, inner hair cell; OHC, outer hair cell; SB, spiral bundle; TC, tunnel of Corti. (B) Quantification in the middle (35–45% distance from apex) and basal cochlear turns (60–70% distance from apex) of 5-month-old Dusp1 (light green bars) and +/+Dusp1–/– (dark green bars) mice of the number of outer (base, n = 3 per genotype; middle, n = 4 per genotype) and inner hair cells (base, n = 4 per genotype; middle n = 4, per genotype). Values are presented as mean ± SEM. (C) DPOAE thresholds (mean ± SEM) of Dusp1 (light color lines) and +/+Dusp –/– (dark color lines) mice of 4–5 months of age (8 kHz: Dusp1, n = 5, +/+Dusp1–/–, n = 8; 10 kHz: Dusp1 n = 4, +/+Dusp1–/–, n = 8; 14 kHz: Dusp1n = 4, +/+ Dusp1–/– n = 7) and 8–9 months of age (8 kHz: Dusp1n = 5, +/+Dusp1–/–, n = 5; 10 kHz: Dusp1n = 4, +/+ Dusp1n = 5; 14 kHz: –/– Dusp1n = 4, +/+ Dusp1 n = 4). (–/–D) DPOAE amplitude I/O function (mean ± SEM) evoked by stimulus (f2 = 10.9 kHz or f2 = 15.2 kHz) of Dusp1 (lighter color lines) and +/+Dusp1– (darker color lines) for mice of 4–5 and 8–9 months of age (at least three mice per genotype). Statistically significant differences were analyzed by Student’s t-tests comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).–/
+**Figure 4.:** (A) Representative confocal maximal projection images of the organ of Corti of the middle and basal turns of 5-month-old Dusp1+/+ (n = 4) and Dusp1–/– (n = 4) mice immunolabeled for hair cells MyoVIIA (green), neurofilament (red) and phalloidin (purple). Asterisks and arrowheads indicate the absence or presence, respectively, of hair cells and fibers. Scale bar: 10 µm. IHC, inner hair cell; OHC, outer hair cell; SB, spiral bundle; TC, tunnel of Corti. (B) Quantification in the middle (35–45% distance from apex) and basal cochlear turns (60–70% distance from apex) of 5-month-old Dusp1+/+ (light green bars) and Dusp1–/– (dark green bars) mice of the number of outer (base, n = 3 per genotype; middle, n = 4 per genotype) and inner hair cells (base, n = 4 per genotype; middle n = 4, per genotype). Values are presented as mean ± SEM. (C) DPOAE thresholds (mean ± SEM) of Dusp1+/+ (light color lines) and Dusp –/– (dark color lines) mice of 4–5 months of age (8 kHz: Dusp1+/+, n = 5, Dusp1–/–, n = 8; 10 kHz: Dusp1+/+ n = 4, Dusp1–/–, n = 8; 14 kHz: Dusp1+/+ n = 4, Dusp1–/– n = 7) and 8–9 months of age (8 kHz: Dusp1+/+n = 5, Dusp1–/–, n = 5; 10 kHz: Dusp1+/+ n = 4, Dusp1–/– n = 5; 14 kHz: Dusp1+/+ n = 4, Dusp1–/– n = 4). (D) DPOAE amplitude I/O function (mean ± SEM) evoked by stimulus (f2 = 10.9 kHz or f2 = 15.2 kHz) of Dusp1+/+ (lighter color lines) and Dusp1–/– (darker color lines) for mice of 4–5 and 8–9 months of age (at least three mice per genotype). Statistically significant differences were analyzed by Student’s t-tests comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
 
-## Dusp1 deficit leads to an early redox imbalance in the cochlea
+### Dusp1 deficit leads to an early redox imbalance in the cochlea
 
 To further understand the molecular mechanisms underlying the pathological hearing loss phenotype caused by the deficiency in Dusp1, we studied oxidative stress and inflammation as two of the main hallmarks of ageing (López-Otín et al., 2013) that are closely related with the activity of DUSP1. The oxidative status was evaluated first by measuring the expression levels of genes involved in redox regulation (Figure 5A). At the molecular level, by the age of just 2 months, differences were observed between genotypes in a subset of the genes studied. Transcripts of enzymes involved in glutathione homeostasis(Gpx1 [1.8-fold] and Gsr [1.5-fold]) and in glutathione synthesis(Gclm [1.5-fold]) showed a significant increase in null mice. However, no induction of the expression of these genes was found at the other ages studied (Figure 5A, first and second rows). Mitochondrial Ucp1 showed decreased (1.7-fold) and NADPH oxidase components increased (Nox3 [3-fold] and Cyba [1.4-fold]) expression levels in 2-month-old null mice compared with wildtype mice of the same age. Cyba transcripts equalized at the age of 5 months between genotypes, but cochlear Ucp1 and Nox3 dysregulation was observed at all the ages studied in null mice. No differences between genotypes were observed in Nox4 expression levels (Figure 5A, third row). Finally, analysis of the apoptosis-related genes Apaf1 and Kim1 showed no expression differences between genotypes for Apaf1 but a 2.2-fold increase in the expression of Kim1 in null mice when compared to wildtype mice at 2 and 5 months (Figure 5A, fourth row). Accordingly, 5-month-old null mice showed decreased cochlear levels of the mitochondrial antioxidant manganese superoxide dismutase (MnSOD, 1.5-fold). As well as increased levels of P22phox (1.4-fold), of the beta isoform of apoptosis regulator BCL-2-associated X (BAXβ, 1.7-fold) and of phosphorylated p38 (1.4-fold) with respect to wildtype mice (Figure 5B). No significant differences were observed in the activation levels of JNK or ERK.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig5-v2.jpg)
+
+**Figure 5.:** (A) Cochlear expression of redox regulation and apoptosis genes in Dusp1+/+ (lighter color bars) and Dusp1–/– mice (darker color bars) of 2, 4–5 and 8–9 months of age. Expression levels were measured by RT-qPCR and calculated as 2–ΔΔCt (RQ), using Rplp0 as the reference gene and normalized to data from the 2-month-old wildtype mice group. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. (B) Cochlear protein relative levels were measured by western blotting. Representative blots and quantification of levels are shown for γ-H2AX, P22phox, MnSOD, BAXβ, P-p38, P-JNK and P-ERK1/2 cochlear protein extracts from 5-month-old Dusp1+/+ (light green bars) and Dusp1–/– mice (dark green bars). Expression levels were calculated as a ratio using PI3K as housekeeping protein and normalized to the wildtype mice group. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. Statistically significant differences were analyzed by Student’s t-tests comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative microphotographs of 3-NT levels detected by immunohistochemistry in the spiral ganglion of 2-month-old Dusp1+/+ and Dusp1–/–(n = 3 per genotype). (B) Quantification of the 3-NT signal was measured in the spiral ganglion of the middle and basal cochlear turns of 2-month-old Dusp1+/+ (light bars) and Dusp1–/– mice (dark bars) (n = 3 per genotype). Values are presented as mean ± SEM. Data points are also represented to show individual variability.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Dusp1+/+ (white) and Dusp1–/– (gray) MEF cells were treated with H2O2 (200 µM) for 30 min. The results for non-treated control cells are also shown for comparison (NT). After harvesting the cells, the emission of dihydroethidium (DHE) was analyzed by flow cytometry. (B) Detection of DNA damage in MEFs cells. DNA damage was determined by immunocytochemistry with a γ-H2A.X antibody and the staining of nuclei with DAPI. Quantification of γ-H2A.X foci per cell is described in 'Materials and methods'. In each case, more than 200 cells were analyzed. Statistically significant differences were analyzed by two-way ANOVA (*p<0.05 and **p<0.01).
 
 These data suggested that DUSP1 deficiency generates redox imbalance in young mice, which can progressively trigger inflammation and apoptotic cell death. Reinforcing this hypothesis, we observed stronger 3-nitrotyrosine (3-NT) immunoreactivity, a consequence of the nitration of tissue proteins by free radicals, in neural cells of the spiral ganglion in 2-month-old null mice (Figure 5—figure supplement 1).
 
 To confirm that the absence of DUSP1 increases the levels of reactive oxygen species (ROS), we next studied the response of MEF cells derived from Dusp1+/+ and Dusp1–/– mice to the oxidant stimulus H2O2. Our data showed that H2O2 strongly increased ROS levels in Dusp1–/– compared to Dusp1+/+ cells (Figure 5—figure supplement 2A). These results reinforced the theory that the absence of DUSP1 modulates oxidative stress in MEF cells. To further assess the possibility that DUSP1 deficiency leads to DNA damage and, eventually, to cell death, we next quantified γ-H2AX-associated foci in MEF cells from both genotypes. The results showed that cells derived from Dusp1–/– mice showed more foci per cell than Dusp1+/+ cells, indicating DNA damage in basal conditions (Figure 5—figure supplement 2B).
 
-## Dusp1 deficit triggers an exacerbated inflammatory response
+### Dusp1 deficit triggers an exacerbated inflammatory response
 
 Subsequently, we studied the cochlear expression of genes that encode proinflammatory and anti-inflammatory mediators (Figure 6A). We found a significant increase in the expression of the anti-inflammatory interleukin 10 gene (Il10, 2-fold) together with a decrease in the expression of Foxp3 (1.4-fold) in 2-month-old null mice. Interestingly, progression of hearing loss is correlated to inflammatory dysregulation, with pro-inflammatory cytokines being strongly upregulated in null mice from the age of 5 months. Thus Il1b, Tnfa and Tgfb1 expression levels were increased by 1.7, 1.6 and 1.6-fold, respectively, in the null mouse. By contrast, Il6 showed no expression differences and increased with ageing similarly in both genotypes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig6-v2.jpg)
+
+**Figure 6.:** (A) Cochlear expression of inflammatory response genes in Dusp1+/+ (lighter color bars) and Dusp1–/– mice (darker color bars) of 2, 4–5 and 8–9 months of age. Expression levels were calculated as 2–ΔΔCt (RQ), using Rplp0 as the reference gene and normalized to the 2-month-old wildtype mice group. Il10 data were normalized to the matched-age wildtype mice groups. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. (B) Representative microphotographs of cochlear mid-modiolar cryosections immunolabeled for IBA1, showing a detail of the spiral ligament of the apical, middle and basal turns of 5-month-old Dusp1+/+ (n = 3) and Dusp1–/– mice of 5 (n = 3) and 8 months of age (n = 3). The Type IV fibrocytes region is outlined. Arrowheads point to macrophage cells. Scale: 50 µm. (C) IBA1 total fluorescence intensity was measured in the spiral ligament in each cochlear turn of 5-month-old Dusp1+/+ (light green bars; base, n = 4; middle, n = 5; apical, n = 4) and Dusp1–/– mice of 5 months (dark green bars, base, n = 4; middle, n = 6; apical, n = 5) and 8 months of age (dark blue bars, base, n = 4; middle, n = 3; apical, n = 3). Values are presented as mean ± SEM. Statistically significant differences were detected by Student’s t-test comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MEFs cells from Dusp1+/+ or Dusp1–/– were treated or not with TNFα (10 ng/ml) and harvested 30 min, 1 hr, 2 hr and 4 hr after application of a stimulus. 20 μg of WCE were resolved in SDS-PAGE, and DUSP1, P-p38, p38 and Cleaved Caspase 3 fragment levels were measured using specific antibodies. β-actin and PI3K were used as a loading controls. (B) Quantification of protein levels are shown for Dusp1+/+ (white bars) and Dusp1–/– MEFs (grey bars) (n = 1).
 
 Infiltration by IBA1+ macrophages is part of the inflammatory and phagocytic cochlear response to damage. Five- and 8-month-old null mice showed more macrophage infiltration than did wildtype mice (Figure 6B, compare the first two columns), with IBA1+ cells in the spiral ligament in a gradient from base to apex (Figure 6B, quantification in Figure6C), and a progression with age (Figure 6B, compare central and right columns).
 
 To further study the contribution of DUSP1 in inflammation, MEFs prepared from wildtype and null mice were treated with TNFα (10 ng/ml) for different periods of time (Figure 6—figure supplement 1). The results showed that TNFα induced p38 in both genotypes, but that the molecular apoptotic marker Caspase 3 is cleaved (activated) only in Dusp1–/– mice 4 hr after treatment (Figure 6—figure supplement 1).
 
-## DUSP1 deficit increases and MAPK14 deficit reduces noise-induced hearing loss
+### DUSP1 deficit increases and MAPK14 deficit reduces noise-induced hearing loss
 
 Exposure to noise accelerates the loss of hearing that is associated with ageing. ARHL and noise-induced hearing loss (NIHL) are associated with increased ROS production, inflammation and OHC apoptosis (Kurabi et al., 2017; Wong and Ryan, 2015). To test whether DUSP1 deficit influenced the extent of noise-induced insult, 2-month-old Dusp1 null and wildtype mice were exposed to noise. Three days later, the Dusp1 null mice were severely damaged, especially in frequencies over 8 kHz, when compared with wildtype mice (Figure 7A). Differences between genotypes at 16 kHz and 20 kHz were maintained 14 days after noise exposure. Dusp1+/– heterozygotes showed a response similar to that of wildtype mice (data not shown). To confirm that noise induces DUSP1 in wildtype mice, cochlear samples were taken 45 and 90 min after noise exposure, and DUSP1 levels were measured by western blotting. Indeed, noise transitorily induced DUSP1 (for around 45 min after the noise). P-p38 was also tested in parallel but, as described, it was not increased at these early post-noise timepoints (Figure 7B). Thus, to further confirm that the level of phosphorylation of stress kinases is essential for the progression of noise insult, tamoxifen (TAM)-treated Mapk14 conditional knockin (KI/KI and +/KI) and wildtype (+/+) mice were also exposed to noise. No differences in hearing thresholds were detected among these genotypes following TAM treatment (Figure 7C, left panel, baseline). Mice with a total or partial deficiency in Mapk14 showed ABR threshold shifts that were smaller than those shown by wildtype mice from the first time tested, suggesting that Mapk14 activation plays a central role in the progression of noise-induced injury.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/39159/elife-39159-fig7-v2.jpg)
 
-**Figure 7.:** Dusp1 and Mkp14 null mice.(A) ABR thresholds (mean ± SEM) in response to click and tone burst stimuli before noise exposure (baseline) and 3 and 14 days post-noise (VSS, 107 dB, 30 min) exposure in Dusp1 and +/+Dusp1 mice (n = 4 per genotype). (–/–B) Representative blots and quantification of levels are shown for DUSP1 and P-p38 cochlear protein extracts from Dusp1 and +/+Dusp1 mice and wildtype mice, 45 and 90 min after noise exposure. Expression levels were calculated as a ratio using PI3K as the loading control. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. (–/–C) Evolution of ABR thresholds (mean ± SEM) in response to click and tone burst stimuli before (baseline) and 3 and 14 days post-noise exposure in Mkp14+/+ and Mpk14KI/KI mice (n = 7 per genotype). Statistically significant differences were analyzed by Kruskal–Wallis tests comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
+**Figure 7.:** (A) ABR thresholds (mean ± SEM) in response to click and tone burst stimuli before noise exposure (baseline) and 3 and 14 days post-noise (VSS, 107 dB, 30 min) exposure in Dusp1+/+ and Dusp1–/– mice (n = 4 per genotype). (B) Representative blots and quantification of levels are shown for DUSP1 and P-p38 cochlear protein extracts from Dusp1+/+ and Dusp1–/– mice and wildtype mice, 45 and 90 min after noise exposure. Expression levels were calculated as a ratio using PI3K as the loading control. Values are presented as mean ± SEM of triplicates from pool samples of three mice per condition. (C) Evolution of ABR thresholds (mean ± SEM) in response to click and tone burst stimuli before (baseline) and 3 and 14 days post-noise exposure in Mkp14+/+ and Mpk14KI/KI mice (n = 7 per genotype). Statistically significant differences were analyzed by Kruskal–Wallis tests comparing genotypes (*p<0.05, **p<0.01, ***p<0.001).
 
 ## Discussion
 
@@ -129,7 +177,220 @@ Taken together, our results show that Dusp1 deficiency accelerates the onset and
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Dusp1-/-</td>
+      <td>Dorfman et al., 1996</td>
+      <td>RRID:MGI:4940296</td>
+      <td>R Perona lab (Institute of Biomedical Research 'Alberto Sols', Madrid, Spain)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mapk14+/KI; Mapk14KI/KI</td>
+      <td>Ventura et al., 2007</td>
+      <td>RRID:MGI:3716853</td>
+      <td>AR Nebreda lab (Institute for Research in Biomedicine, Barcelona, Spain)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Dusp1–/– MEF</td>
+      <td>Dorfman et al., 1996</td>
+      <td>RRID:MGI:4940296</td>
+      <td>Primary culture of mouse embryonic fibroblasts, maintained in I Sánchez-Pérez's lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myelin P0 (chicken polyclonal)</td>
+      <td>Neuromics</td>
+      <td>Neuromics Cat# CH23009; RRID:AB_2737144</td>
+      <td>IHC (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nitrotyrosine (rabbit polyclonal)</td>
+      <td>Merck-Millipore</td>
+      <td>Millipore Cat# AB5411; RRID:AB_177459</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IBA1 (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab5076; RRID:AB_2224402</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyoVIIA (rabbit polyclonal)</td>
+      <td>Proteus</td>
+      <td>Proteus Biosciences Cat# 25–6790; RRID:AB_2314838</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-neurofilament (mouse monoclonal)</td>
+      <td>Merck-Millipore</td>
+      <td>Millipore Cat# CBL212; RRID:AB_93408</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# A22287; RRID:AB_2620155</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-p38 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 9211, RRID:AB_331641</td>
+      <td>WB (1:1000; 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-JNK (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 4668; RRID:AB_823588</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-ERK (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 9101, RRID:AB_331646</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MKP1 (C-19) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-370; RRID:AB_631385</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γ-H2AX Ser139 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 2577; RRID:AB_2118010</td>
+      <td>IHC (1:200); WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P22phox (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-20781; RRID:AB_2090309</td>
+      <td>WB (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MnSOD (rabbit polyclonal)</td>
+      <td>Merck-Millipore</td>
+      <td>Millipore Cat# 06–984; RRID:AB_310325</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAX (NT) (rabbit polyclonal)</td>
+      <td>Merck-Millipore</td>
+      <td>Millipore Cat# ABC11; RRID:AB_10561771</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PI3K (rabbit polyclonal)</td>
+      <td>Not commercially available</td>
+      <td></td>
+      <td>WB (1:10,000) From AM Valverde's lab (Institute of Biomedical Research 'Alberto Sols', Madrid, Spain)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p38 (C-20) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-535; RRID:AB_632138</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caspasa3 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cell Signaling Technology Cat# 9662; RRID:AB_331439</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# A5441; RRID:AB_4767441</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# T9026; RRID:AB_47759</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dead-End Fluorometric TUNEL System</td>
+      <td>Promega</td>
+      <td>Promega Cat# G3250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TNFα</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# T6674</td>
+      <td>(10 ng/ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioSigRP TM</td>
+      <td>Tucker Davis Technologies (TDT)</td>
+      <td>RRID:SCR_014590</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Fiji (https://fiji.sc/)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Profiler</td>
+      <td>Cell Profiler (https://cellprofiler.org/)</td>
+      <td>RRID:SCR_007358</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 129S2/SvPas:C57BL/6 wildtype (Dusp1+/+), heterozygous (Dusp1+/–) and null (Dusp1–/–) mice were generated and genotyped as reported (Dorfman et al., 1996). Dusp1–/– mice are fertile and do not show higher mortality rates than wildtypes. General phenotype data for Dusp1 knockout mice can be found in the Mouse Genome Database (MGD), Mouse Genome Informatics (MGI: 4940244; http://www.informatics.jax.org). Hearing was studied monthly in several cohorts and then data-grouped afterwards into groups of 2, 4–5, 8–9, 12 and 16–19 months. Certain cohorts were used to obtain specific time points for further analysis. Neither male and female wildtype mice nor male and female null mice showed sex-associated differences in auditory phenotype. When indicated, some experiments were performed in wildtype mice with a mixed genetic background of 129/SvEvTac (Taconic) and HsdOla:MF1 (Harlan Laboratories) (129Sv:MF1).
 
@@ -137,23 +398,23 @@ The Mapk14 knockout mouse is embryo lethal, therefore the conditional knockin mo
 
 Animal experimentation was conducted in accordance with European Community 2010/63/EU and Spanish RD 53/2013 guidelines.
 
-## Cell culture
+### Cell culture
 
 Mouse embryonic fibroblasts (MEFs) were prepared from embryos of the different genotypes at day 13.5 of gestation as previously described (Palmero and Serrano, 2001). After disaggregation of embryos and brief expansion, MEFs from individual embryos were stored in liquid nitrogen until use. Plating of MEFs after thawing was considered passage 1. Cells were maintained in Dulbecco's Modified Eagle Medium (DMEM) containing 10% fetal bovine serum and a cocktail of antibiotics and anti-mycotics in a CO2 incubator at 37°C. MEFs prepared from wildtype and null mice were treated with TNFα (10 ng/ml) (T6674, Sigma-Aldrich) at the times indicated.
 
-## Hearing evaluation
+### Hearing evaluation
 
 Mice were anesthetized with a mixture of ketamine (100 mg/kg; Imalgene 1000, Merial, Lyon, France) and xylazine (10 mg/kg; Rompun 2%, Bayer, Leverkusen, Germany). Auditory brainstem responses (ABR) were measured using a Tucker Davis Technologies workstation (Tucker Davis Technologies, Alachua, FL, USA). Electrical responses were measured in response to broadband click and 8, 16, 20, 28 and 40 kHz pure tone stimuli, with an intensity range 90–20 dB SPL in 5–10 dB steps, as previously reported (Cediel et al., 2006). Peak and interpeak latencies were analyzed at 80 dB SPL above hearing threshold after click stimulation. Recording of distortion product otoacoustic emissions (DPOAEs) was performed after stimulation with f1 and f2 primary tones, with a ratio f2/f1 = 1.2, using a TDT equipment, as described (Martínez-Vega et al., 2015b). Primary tones for 8, 10 and 14 kHz frequencies were tested. Analyses of waves, thresholds and latencies were performed with BioSigRP TM software (Tucker Davis Technologies). ABR registries were taken in different cohorts from the age of 1 month.
 
-## Noise exposure
+### Noise exposure
 
 To evaluate the susceptibility to noise, 2-month-old mice from the three genotypes (Dusp1 mutants, Mapk14 mutants and wildtype) were exposed to violet swept sine noise at 107 dB SPL for 30 min. The effect of noise exposure on hearing was evaluated by ABR before (baseline) and 3, 14 and 28 days after exposure.
 
-## Middle and inner ear dissections and morphological evaluation
+### Middle and inner ear dissections and morphological evaluation
 
 Two-month-old mice of each genotype were administered a lethal dose of pentobarbital (Dolethal, Vétoquinol, Madrid, Spain). The inner ear and the ossicles — the malleus, incus, and stapes — of the middle ear were dissected as reported (Sakamoto et al., 2017). Microphotographs of these structures were taken using a digital camera connected to a Leica MZ8 stereo microscope (Leica, Wetzlar, Germany).
 
-## Cochlear morphology and immunohistochemistry
+### Cochlear morphology and immunohistochemistry
 
 For histological analysis, mice were injected with a pentobarbital overdose and perfused with PBS/paraformaldehyde as previously described (Camarero et al., 2001; Sanchez-Calderon et al., 2010). Cochleae were then dissected, postfixed and decalcified before being embedded in paraffin or Tissue-Tek OCT (Sakura Finetek, Torrance, CA, USA). Paraffin cochlear sections (7 μm) were either stained with hematoxylin/eosin or used for immunohistochemical investigations with anti-myelin P0 (chicken, 1:150, CH23009, Neuromics, Edina, MN, USA) and anti-nitrotyrosine (rabbit, 1:100, AB5411, Merck-Millipore, Burlington, MA, USA) (Martínez-Vega et al., 2015a). Representative images were taken with a Zeiss microscope connected to a DP70 digital camera (Olympus, Tokyo, Japan).
 
@@ -161,19 +422,19 @@ For immunofluorescence assays, frozen OCT cochlear sections (10 μm) were treate
 
 MEFs cells were fixed in 4% formaldehyde for 20 min, washed with PBS and permeabilized with Triton 0.5% for 10 min, before blocking with BSA 5% for 1 hr. Samples were incubated overnight with the primary antibody γ-H2AX Ser139 (rabbit, 1:200, Merck-Millipore) at 4°C, followed by a 1 hr incubation with the adequate secondary antibody (1:500, Alexa Fluor 488, Invitrogen) at room temperature. DNA was stained with DAPI. Fluorescence microscopy was performed using a NIKON Eclipse 90i, and the software programs Nikon NIS-Elements and Image J were used for image analysis. γ-H2AX foci were quantified with Cell Profiler software and analyzed with IBM SPSS v.22, which was used to perform two-way ANOVA tests.
 
-## TUNEL assay
+### TUNEL assay
 
 Apoptosis was evaluated by TdT-mediated dUTP nick-end labeling (TUNEL) using the Dead-End Fluorometric TUNEL System (Promega, Madison, WI, USA), essentially as described by the manufacturer. Deparaffinized sections were postfixed using 4% PFA (pH 7.4) before and after treatment with proteinase K. Sections were incubated with the TdT enzyme for 1 hr and mounted with Vectashield mounting medium with DAPI before visualizing in a Nikon 90i microscope. TUNEL-positive cells were counted in the spiral ganglia in four serial paraffin sections per animal (prepared from at least three 4–5-month-old mice of each genotype) using Fiji software. Representative fluorescent stack images of the middle and basal cochlear turns were taken using a confocal microscope (LSM710 Zeiss, Oberkochen, Germany) with a glycerol-immersion objective (63x).
 
-## Organ of Corti dissection, cochleogram and hair cell quantification
+### Organ of Corti dissection, cochleogram and hair cell quantification
 
 The organ of Corti of decalcified cochleae was dissected into half-turns. The pieces were permeabilized with 1% Triton X-100 (Merck Millipore, Billerica, MA, USA), blocked with 5% normal goat serum (Sigma-Aldrich) and incubated overnight at 4°C with anti-MyoVIIA (rabbit, 1:250, PT-25–6790, Proteus, Ramona, CA, USA) or anti-neurofilament (mouse, 1:100, CBL212, Merck-Millipore). Alexa Fluor secondary antibodies or Alexa Fluor 647 Phalloidin (1:1000, A22287, Thermo Fisher Scientific, Waltham, MA, USA) were incubated at 1:200 for 2 hr at RT. The half-turns were then incubated with DAPI (1:1000, Thermo Fisher Scientific) and mounted with Prolong (Thermo Fisher Scientific), and low magnification fluorescent images were taken with Nikon 90i microscope. The cochleogram was plotted using a custom Fiji plugin as reported previously (plugin freely available at http://www.masseyeandear.org/research/otolaryngology/investigators/laboratories/eaton-peabody-laboratories/epl-histology-resources/). The numbers of inner (IHC) and outer (OHC) hair cells were counted using Fiji software in 200 μm sections in the apical, middle and basal regions, which are defined as grouped percentages of distance from apex (apical <21%, middle 21–47%, basal >47%). Segments were prepared from four mice of each genotype. Representative fluorescent stack images were taken at specified cochlear regions using a confocal microscope (LSM710 Zeiss, Oberkochen, Germany) with a glycerol-immersion objective (63x) and image spacing in the z plane of 0.7 μm.
 
-## RT-qPCR
+### RT-qPCR
 
 Cochlear RNAs were extracted using an RNeasy kit (QIAGEN, Hilden, Germany) and the quality and quantity of these RNAs were determined using an Agilent Bioanalyzer 2100 (Agilent Technologies Santa Clara, CA, USA). RNA pools were made from at least three different animals from each age group and genotype. cDNA was then generated by reverse transcription (High Capacity cDNA Reverse Transcription Kit; Applied Biosystems, Foster City, CA, USA) and gene expression was analyzed in triplicate by qPCR on Applied Biosystems 7900 HT using TaqMan Gene Expression Assays (Applied Biosystems) for Gpx1, Gpx4, Gsr, Gss, Gclc, Gclm, Cbs, Nox3, Nox4, Ucp1, Catalase, Cyba, Kim1, Apaf1, Il1b, Il6, Tnfa, Tgfb1, Il10, Foxp3, Mpz, RbFox3, Sox2 and Prestin (Supplementary file 2). In addition, cDNAs were amplified in triplicate using gene-specific primers (Supplementary file 3) and Power SYBR Green PCR Master Mix (Applied Biosystems) to evaluate the expression of MAP kinase phosphatases. Rplp0 or Hprt1 were used as endogenous housekeeping control genes and the estimated gene expression was calculated as 2–ΔΔCt, as reported previously (Sanchez-Calderon et al., 2010).
 
-## Western blotting
+### Western blotting
 
 Cochlear proteins from 4-month-old mice (a pool of three cochleae of each genotype) were extracted using the extraction buffer of a Ready Protein Extraction Kit (Bio-Rad, Hercules, CA, USA) fsupplemented with 0.01% protease and 0.01% phosphatase inhibitors (Sigma-Aldrich).
 
@@ -181,14 +442,14 @@ Equal volumes of cochlear proteins were resolved using denaturing SDS-PAGE, foll
 
 Total protein extracts (WCE) were obtained from MEFs using the previously described lysis buffer (Sánchez-Perez et al., 1998). Twenty micrograms of WCE per sample were loaded onto 10% SDS-PAGE polyacrylamide gels, and then transferred onto nitrocellulose membranes, or onto PVDF (Bio-Rad) membranes using Bio-Rad Trans Blot TURBO apparatus, followed by immunodetection using appropriate antibodies. Antibodies against the following proteins were: rabbit anti-MKP1 (C-19) (1;1000, sc-370, Santa Cruz, Biotechnology), rabbit anti P-p38 (1:2000, #9211, Cell Signaling), rabbit anti-p38 (C-20) (1:1000, sc-535, Santa Cruz, Biotechnology), rabbit anti-caspase3 (1:1000, #9662, Cell Signaling), mouse anti-β-actin (A5441, Sigma Aldrich) and mouse anti-β-tubulin as the loading control (T9026, Sigma Aldrich).
 
-## ROS levels
+### ROS levels
 
 Cellular ROS levels were quantified by staining adherent cells with DHE followed by cell lifting with trypsin-EDTA and flow cytometric analysis. To quantify ROS by flow cytometry, adherent cells were stained with DHE for 45 min in PBS at 37°C in the dark. DHE is oxidizedto ethidium by superoxide in live cells (Du et al., 2009). Cells were lifted with trypsin-EDTA and washed, before fluorescence data were acquired within 60 min using the BD FACS Scan with a 488 nm laser and 585 nm DHE bandpass filters.
 
-## Quantification of DNA damage
+### Quantification of DNA damage
 
 Cells were fixed in formaldehyde for 20 min, washed with PBS and permeabilized with Triton 0.5% for 10 min, before blocking with BSA 5% for 1 hr. Samples were incubated overnight with the primary antibody γ-H2AX Ser139 (Millipore) at 4°C, followed by a 1 hr incubation with the adequate secondary antibody at room temperature. DNA was stained with DAPI. Fluorescence microscopy was performed using a NIKON Eclipse 90i, and for the image analysis, the software program Nikon NIS-Elements and Image J were used. Secondary antibodies, conjugated with Alexa Fluor 488 (1:500), were purchased from Invitrogen. γ-H2AX foci were quantified with Cell Profiler software and analyzed using IBM SPSS 22 to perform two-way ANOVA tests.
 
-## Statistical analysis
+### Statistical analysis
 
 Unless otherwise specified, data were analyzed by Student T-test after a Levene’s or Fisher test of equality of variances with SPSS v23.0 software. Sample size was estimated to obtain a 90% statistical power with a 0.05 significance level, using data from previous experiments and calculating the Cohen's d value. Data are expressed as mean ± SEM. The results were considered significant at p<0.05.

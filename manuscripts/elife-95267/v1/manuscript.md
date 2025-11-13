@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Department of Diabetes and Metabolic Diseases, Graduate School of Medicine, The University of Tokyo Tokyo Japan
-2. https://ror.org/05sj3n476 Department of Cardiovascular Medicine, The University of Tokyo Graduate, School of Medicine Tokyo Japan
-3. https://ror.org/057zh3y96 Department of Frontier Cardiovascular Science, The University of Tokyo, Graduate School of Medicine Tokyo Japan
+1. Department of Diabetes and Metabolic Diseases, Graduate School of Medicine, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+2. Department of Cardiovascular Medicine, The University of Tokyo Graduate, School of Medicine Tokyo Japan ([ROR:05sj3n476](https://ror.org/05sj3n476))
+3. Department of Frontier Cardiovascular Science, The University of Tokyo, Graduate School of Medicine Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
 
 † Corresponding author
 
@@ -35,29 +35,61 @@ In this study, we aimed to demonstrate the effects of NIC treatment on the funct
 
 ## Results
 
-## NIC treatment enhances the frequency of ISC in the intestine
+### NIC treatment enhances the frequency of ISC in the intestine
 
 Histological analyses of the small intestine in C57BL/6 mice treated with 200 μg/ml NIC (which emulates active smoking) revealed that NIC exposure decreased villus length without affecting crypt size (Figure 1—figure supplement 1A), which was consistent with NIC-induced decrease in the number of differentiated cells, including absorptive enterocytes (Figure 1—figure supplement 1B) or chromogranin A+enteroendocrine cells (Figure 1—figure supplement 1C), in the gut.
 
 We investigated the effect of NIC on the population of proliferative cells in the crypts using Ki67 labeling to mark proliferative stem and progenitor cells in the crypts. NIC exposure increased abundance of Ki67-positive cells in the small and large intestine (Figure 1A and B). Consistently, the number of proliferative olfactomedin-4 (Olfm4)-positive ISCs significantly increased in the small intestine of NIC-treated mice (Figure 1C). Moreover, the number of LgR5 +colonic stem cells (CSCs) was increased in NIC-treated Lgr5-EGFP-IRES-CreERT2 mice expressing EGFP under the control of the LgR5 promoter (Figure 1D). Paneth cells support the proliferation of ISCs. However, we did not observe any changes in the number of Paneth cells in NIC-treated mice (Figure 1E). These results indicate that the self-renewal of ISCs in NIC-treated mice increased with a reciprocal decrease in the number of differentiated cells.
 
-## NIC treatment enhances the formation of intestinal organoids from ISCs
+![Figure 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig1-v1.jpg)
+
+**Figure 1.:** (A and B) Image of Ki67‐positive cells (Red: Ki67, Blue: DAPI) and their quantification at the crypt base of proximal jejunum (A) or colon (B) of NIC-treated and untreated mice (A:3–4 mice per group, B: 3 mice per group). (C) Olfm4 staining image (Red: Olfm4, Blue: DAPI) and the quantification of Olfm4‐positive cells at the crypt base of proximal jejunum with or without NIC treatment (3–4 mice per group). (D) GFP staining image (Green: GFP, Blue: DAPI) and the quantification of LgR5-GFP‐positive cells at the crypt base of the colon in NIC or control-treated Lgr5-EGFP-IRES-CreERT2 mice (3 mice per group). (E) Lysozyme staining image (Red: Lysozyme, Blue: DAPI) and the quantification of Lysozyme‐positive Paneth cells with or without NIC treatment (3–4 mice per group). Original magnifications: 400× (A–E). Scale bar: 50 µm (A–E). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Images of the H&E-stained crypt and villus and quantification of their length after or without NIC treatment (3–4 mice per group). (B) The quantification of the number of enterocytes per villus in NIC-treated and untreated samples (3 mice per group). (C) Chromogranin A staining image (Green: Chromogranin A, Blue: DAPI) and the quantification of Chromogranin A‐positive cells per villus-crypt unit in NIC-treated and untreated samples (3 mice per group). Original magnifications: ×100 (A), ×200 (C). Scale bar: 100 µm (A and C). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 1.
+
+### NIC treatment enhances the formation of intestinal organoids from ISCs
 
 Our ISC proliferation analysis using intestinal crypts of wild-type mice revealed that a range of nicotine concentrations (100 nM, 1 µM, and 10 µM) promoted the organoid formation from crypts from the small intestine (Figure 2A), which was consistent with the in vivo data (Figure 1A and C). However, the same dose of cotinine, a minor tobacco alkaloid, and a major metabolite of NIC (Tan et al., 2021) did not exhibit similar effects (Figure 2A). Furthermore, the addition of 1 µM NIC promoted the organoid formation from colonic crypts (Figure 2B). Next, to address how ISCs and Paneth cells interact functionally, we isolated Lgr5-positive ISCs and Paneth cells from control or NIC-treated Lgr5-EGFP-IRES-CreERT2 mice as described previously (Igarashi and Guarente, 2016). ISCs and Paneth cells were co-cultured in the culture media containing glycogen synthase kinase 3β (GSK3β) inhibitor CHIR99021, which induces β-catenin and thus stimulates organoid formation (Igarashi and Guarente, 2016; Yin et al., 2014). Lgr5-positive ISCs isolated from NIC mice formed more organoid colonies than those isolated from control mice when cultured with or without Paneth cells (Figure 2C). Consistently, the addition of 1 µM NIC to control ISCs stimulated the organoid colony formation (Figure 2D). However, Paneth cells exhibited no significant difference in function (organoid formation) between control and NIC-treated groups, with or without CHIR99021 (Figure 2; Figure 2—figure supplement 1). Therefore, this ex vivo assay for ISC function and ISC–Paneth cell interaction demonstrated that NIC directly stimulates ISC proliferation without affecting the supportive function of Paneth cell for ISC.
 
-## The α7 subunits of nAChR control the effects of NIC on ISC proliferation
+![Figure 2.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig2-v1.jpg)
+
+**Figure 2.:** (A) Crypts from the proximal small intestine were cultured with 10 μM, 1 μM, and 100 nM NIC or cotinine to allow ISCs to form organoid colonies; the control set contained no NIC or cotinine. Representative images of the organoids and the quantification of organoids number at day 5 (3 wells/ group) (yellow arrow marks organoids and red arrow indicates aborted crypts). (B) Colonic crypts were cultured with or without 1 μM NIC to allow CSCs to form organoid colonies. Representative images of the organoids and the quantification of organoids number at day 5 are shown (3 wells/ group) (yellow arrow marks organoids and red arrow indicates aborted crypts). (C) ISCs and Paneth cells were isolated from the small intestine of Lgr5‐ EGFP‐IRES‐CreERT2 mice treated with or without NIC; 2×103 cells each were co‐cultured in the medium containing 10 μM CHIR99021. Representative images of the organoids and the frequency of organoids at day 5 (3 wells/ group). (D) ISCs isolated from the small intestine of Lgr5‐EGFP‐IRES‐CreERT2 mice were cultured in the absence of Paneth cells using the medium containing 10 μM CHIR99021, with or without 1 μM NIC. Representative images of the organoids and the frequency of organoids number at day 5 (3 wells/ group). C: control, N: NIC. Original magnification: 40×. Scale bar: 100 µm. Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 3—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** ISCs and Paneth cells were isolated from the small intestine of Lgr5‐EGFP‐IRES‐CreERT2 mice (NIC-treated and untreated); 2×103 cells were co-cultured using medium without 10 μM CHIR99021. Representative images of the formed organoids and quantification of the organoid number on day 3 are shown (three wells per group). Values represent the mean ± SEM. Significant differences were denoted by p-values (Student’s t-test). See also Figure 2.
+
+### The α7 subunits of nAChR control the effects of NIC on ISC proliferation
 
 We investigated the pathway underlying the NIC-regulated proliferation of ISCs. NIC interacts with nicotinic acetylcholine receptors (nAchRs), which are heterodimers of nine types of α subunits (α2–α10) and three types of β subunits (β2– β4)(Dani, 2015). We validated the significance of nAChR signal transduction using ISCs, isolated wild-type mice cultured in the presence of NIC, and the nonselective nAChR antagonist Mecamylamine, which indicated that Mecamylamine treatment completely abolishes the NIC-mediated formation of ISC-derived organoids (Figure 3A). We further explored the nAChR subtypes. Considering that NIC has a high affinity for the nAChR comprised of α4 and β2 subunits (McGranahan et al., 2011), we cultured ISCs in the presence of NIC and Adiphenine, a non-competitive inhibitor of nAChR (α1, α3β4, α4β2, and α4β4). However, Adiphenine exhibited no effect on the NIC-induced organoid formation from ISCs, indicating that the effect of NIC was not mediated by these nAChRs (Figure 3B). As some cancer stem cells are known to express α7-nAChR (Egleton et al., 2008; Hirata et al., 2010), we further analyzed the role of α7-nAChR. The existence of α7-nAChR in ISCs was detected by immunoblotting and RT-PCR, respectively (Figure 3C and D). The higher expression of α7 and α9 subunits in both ISCs and Paneth cells were observed compared with other nAChR subunits. However, there were no significant difference in expression of α7 or α9 subunit between ISCs and Paneth cells (Figure 3C). To investigate the distribution of nAChRs subunits in human intestine, we analyzed scRNA-seq datasets of the human intestinal epithelium (Elmentaite et al., 2021). In consistent with mouse data (Figure 3C), the expression of human α7 subunit (CHRNA7) is higher than that of other subunits in both ISCs and Paneth cells (Figure 3—figure supplement 1), although the predominance of the expression in ISCs or Paneth cells was not clear (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig3-v1.jpg)
+
+**Figure 3.:** (A) Isolated ISCs were cultured in a medium with or without 1 μM NIC and 10 μM Mecamylamine (3 wells/group). (B) Isolated ISCs were cultured in a medium with or without 1 μM NIC and 3 μM Adiphenine hydrochloride (3 wells/group). (C) In ISCs and Paneth cells isolated from control and NIC mice, mRNA levels of nAchR subunits were analyzed using quantitative real-time PCR (n=5 per group; C: control, N: NIC). ∗p < 0.05 (vs C STEM) (Student’s t-test). (D) ISC or Paneth cell lysates prepared from control and NIC mice were immunoblotted with antibodies against α7-nAchR and β-actin. (E) Isolated ISCs were cultured in a medium supplemented with or without 10 μM PNU 282987 (3 wells/group). (F) Isolated ISCs were cultured in a medium with or without 1 μM NIC and 1 μM α-Bungarotoxin (3 wells/group). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Violin plots for nAchR subunits in ISCs and Panth cells by the analysis of human gut single-cell datasets (Elmentaite et al., 2021). (B) The number of positive cells for each nAchR in ISCs and Panth cells are shown. See also Figure 3.
+
 Interestingly, NIC treatment significantly upregulated α7-nAChR in ISCs rather than Paneth cells (Figure 3C and D). Importantly NIC treatment did not induce other nAChR subunits in ISCs (Figure 3C). Moreover, addition of the α7-selective nAChR agonist PNU282987 increased organoid colony formation from ISCs (Figure 3E), which was consistent with the effects of NIC. Furthermore, α-Bungarotoxin, an α7-selective nAChR antagonist, completely inhibited the NIC-induced increase in organoid formation (Figure 3F). These outcomes indicate the effect of nicotine is mediated via the α7 subunits of nAChR.
 
-## NIC induces a Hippo-YAP/TAZ and Notch signaling in ISCs
+### NIC induces a Hippo-YAP/TAZ and Notch signaling in ISCs
 
 As NIC can activate protein kinase C (PKC) or cAMP-dependent protein kinase A (PKA) via α7-nAChR activation (Hirata et al., 2010; Dajas-Bailador et al., 2002), we cultured isolated ISCs in the presence of NIC combined with Gö 6983, a pan-PKC inhibitor, or H89 dihydrochloride, a selective PKA inhibitor. H89 dihydrochloride did not suppress NIC-induced organoid formation, however, Gö 6983 completely abolished this effect of NIC (Figure 4A and B). Additionally, we cultured ISCs with NIC and Sotrastaurin, another pan-PKC inhibitor inactive to PKCζ, the loss of which is reported to increase ISC activity both in vivo and in vitro (Llado et al., 2015). The observed results with Gö 6983 was reproduced by Sotrastaurin treatment (Figure 4—figure supplement 1A), demonstrating other PKCs than PKCζ mediates the effect of NIC. Consistently, the PKC activator Ingenol-3-angelate stimulated the formation of organoid colonies from ISCs (Figure 5E and F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig4-v1.jpg)
+
+**Figure 4.:** (A and B) Isolated ISCs cultured using a medium supplemented with or without 1 μM NIC combined with either (A) 1 μM H89 dihydrochloride (PKA inhibitor) or (B) 10 nM Gö 6983 (PKC inhibitor; 3 wells/group). (C) Crypt lysates isolated from control and NIC-treated mice were immunoblotted using antibodies against YAP, TAZ, and β-actin. (D) In ISCs or Paneth cells (n=5 per group) isolated from control or NIC mice, mRNA levels of genes associated with Hippo-YAP/TAZ and Notch signaling were determined through quantitative real-time PCR. ∗p < 0.05 (vs C STEM) (Student’s t-test). (E) Crypt lysates obtained from control and NIC-treated mice were immunoblotted using antibodies against Notch1, Jagged1, Jagged2, Hes5, and β-actin. Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Isolated ISCs cultured using a medium supplemented with or without 1 μM NIC combined with 5 nM Sotrastaurin (PKC inhibitor) (3 wells/group). (B) Immunoblotting analyses of p38, p-p38, p-S6, or S6 in ISCs isolated from mice treated with vehicle or NIC. (C) Isolated ISCs were cultured in a medium with or without 1 μM NIC and 1 μM AKT inhibitor VIII (3 wells/group). (D) Isolated ISCs were cultured in a medium with or without 1 μM Nicotine and 5 μM SB 203580 (3 wells/group). (E) Isolated ISCs were cultured in a medium with or without 1 μM NIC and 1 μM Rapamycin (3 wells/group). Significant differences are denoted by p values (Student’s t-test). See also Figure 4.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig5-v1.jpg)
 
-**Figure 5.:** (A) Isolated ISCs were cultured using a medium with or without 1 μM Nicotine and 5 nM K-975 (3 wells/group). (B) Isolated ISCs were cultured using a medium with or without 1 μM Nicotine and 1 μM MK-0752 (3 wells/group). (C) Isolated ISCs were cultured using a medium with or without 10 μM PNU282987 and 5 nM K-975 (3 wells/group). (D) Isolated ISCs were cultured using a medium with or without 10 μM PNU282987 and 1 μM MK-0752 (3 wells/group). (E) Isolated ISCs were cultured in a medium with or without 1 nM Ingenol-3-angelate and 5 nM K-975 (3 wells/group). (F) Isolated ISCs were cultured in a medium with or without 1 nM Ingenol-3-angelate and 1 μM MK-0752 (3 wells/group). (G) Schematic model of NIC-associated signaling pathway in ISCs. The model traces a signaling cascade via α7-nAchR, PKC, Hippo-YAP/TAZ and Notch signaling in ISCs. Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test).Figure 5—source data 1.
+**Figure 5.:** (A) Isolated ISCs were cultured using a medium with or without 1 μM Nicotine and 5 nM K-975 (3 wells/group). (B) Isolated ISCs were cultured using a medium with or without 1 μM Nicotine and 1 μM MK-0752 (3 wells/group). (C) Isolated ISCs were cultured using a medium with or without 10 μM PNU282987 and 5 nM K-975 (3 wells/group). (D) Isolated ISCs were cultured using a medium with or without 10 μM PNU282987 and 1 μM MK-0752 (3 wells/group). (E) Isolated ISCs were cultured in a medium with or without 1 nM Ingenol-3-angelate and 5 nM K-975 (3 wells/group). (F) Isolated ISCs were cultured in a medium with or without 1 nM Ingenol-3-angelate and 1 μM MK-0752 (3 wells/group). (G) Schematic model of NIC-associated signaling pathway in ISCs. The model traces a signaling cascade via α7-nAchR, PKC, Hippo-YAP/TAZ and Notch signaling in ISCs. Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test).
 
 Next, to investigate the possible downstream signaling of α7-nAChR and PKC associated with NIC-induced renewal of ISCs, we explored PI3K/AKT signaling (Hers et al., 2011), p38 /mitogen-activated protein kinase (MAPK) signaling (Rodríguez-Colman et al., 2017), and mTORC1 signaling (Igarashi and Guarente, 2016; Igarashi et al., 2019), each of which plays a crucial role in the expansion of ISCs. Results indicate that NIC does not induce these cascades and these were not required for the effects of NIC on ISCs (Figure 4—figure supplement 1B–E).
 
@@ -65,23 +97,31 @@ YAP/TAZ, the downstream effectors of the Hippo signaling pathway, and Notch rece
 
 Collectively, these results suggest that NIC induces a Hippo-YAP/TAZ and Notch signal pathway in ISCs via activation of α7-nAchR and PKC.
 
-## Inactivation of Hippo-YAP/TAZ and Notch signaling suppresses the NIC-induced colony formation
+### Inactivation of Hippo-YAP/TAZ and Notch signaling suppresses the NIC-induced colony formation
 
 To further explore the role of the Hippo-YAP/TAZ and Notch signaling in NIC-induced ISC expansion, ISCs were cultured with NIC in the presence of either K-975, a specific inhibitor of transcriptional enhanced associate domain (TEAD), which binds to its transcriptional co-activators YAP or TAZ and forms a transcription complex (Kaneda et al., 2020), or γ-secretase inhibitor MK-0752 that inhibits the cleavage of Notch into its active signaling effector, Notch intracellular domain (NICD) (Krop et al., 2012). Treatment with K-975 and MK-0752 completely abolished the NIC-induced increased organoid formation (Figure 5A and B). Furthermore, K-975 or MK-0752 prevented the increase in the organoid formation in ISCs treated with PNU 298987 or Ingenol-3-angelate (Figure 5C–F), suggesting that YAP/Notch signaling acts downstream of α7-nAchR or PKC leading to the response of ISC to NIC (Figure 5G).
 
-## DBZ treatment suppresses the expansion of ISCs by NIC in vivo
+### DBZ treatment suppresses the expansion of ISCs by NIC in vivo
 
 To validate the significance of Notch signaling in the ISC expansion, NIC-treated mice were subjected to daily IP injection of γ-secretase inhibitor dibenzazepine (DBZ) (1 mg/kg body weight) for 2 weeks (Figure 6A). We confirmed that DBZ treatment significantly downregulated Hes5 protein expression in the crypts of NIC-treated mice (Figure 4B). Notably, DBZ suppressed the expression of YAP and TAZ in NIC-treated mice (Figure 6B). In the intestine, YAP/TAZ regulates Notch signaling (Zhou et al., 2011) and Notch activation can activate YAP/TAZ (Totaro et al., 2018). Consistent with previous reports, our results demonstrate that Notch inhibitor suppresses YAP/TAZ and Notch activities, indicating a positive feedback loop between Hippo-YAP/TAZ and Notch signaling in ISCs of NIC mice (Figure 5G).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic representation of the treatment showing daily injection of DBZ (1 mg/kg body weight) for 2 weeks. (B) Immunoblotting analysis of crypt lysate isolated from DBZ- and vehicle-treated mice in control and NIC-treatment groups using Hes5, YAP, TAZ, and β-actin antibodies. (C and D) Immunostained Ki67-positive and (C) (Red, Ki67; Blue, DAPI) Olfm4-positive cells (D) (Red, Olfm4; blue, DAPI) and their quantification in the proximal jejunum of DBZ- or vehicle-treated mice (NIC-treated and untreated) (n=3 per group). Original magnifications: ×400 (C and D). Scale bar: 50 µm (C and D). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A and B) Immuno-stained Ki67-positive cells (A) (Red, Ki67; Blue, DAPI) and LgR5-GFP-positive cells (B) (Red, Olfm4; blue, DAPI) and quantification of their abundance in the colon of DBZ or vehicle-treated Lgr5-EGFP-IRES-CreERT2 mice (NIC-treated and untreated; n=3 per group). Original magnifications: ×400. Scale bar: 50 µm. Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test). See also Figure 6.
+
 Ki67 labeling and immunostaining for the ISC marker Olfm4 elucidated the effect of DBZ treatment on the frequency of ISCs in control and NIC-treated mice. DBZ treatment did not alter the population of ISCs in the control mice but significantly suppressed the expansion of Ki67 +and Olfm4 + cells in NIC-treated mice (Figure 6C and D). Moreover, DBZ suppressed the expansion of Ki67 + cells and CSCs in the colon of NIC-treated mice (Figure 6—figure supplement 1). These outcomes demonstrate that the Hippo-YAP/TAZ and Notch signaling pathways are crucial for ISC expansion in NIC-treated mice analyzed in vivo.
 
-## DBZ inhibits intestinal tumor growth by NIC
+### DBZ inhibits intestinal tumor growth by NIC
 
 As ISCs are the potential origin of tumors (Barker et al., 2009), we hypothesized that NIC-induced ISC expansion can promote tumor formation in a tumor-initiating background, such as Apc loss. We crossed stem cell-specific Lgr5-EGFP-IRES-creERT2 knock-in mice with Apcflox/flox mice (Lgr5CreERT2 Apcfl/fl mice); in the resulting mice, the transformation of Lgr5–GFP positive stem cells efficiently drives adenoma formation throughout the intestine after Apc loss induced by Cre activation using tamoxifen (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95267/elife-95267-fig7-v1.jpg)
 
-**Figure 7.:** (A) Schematic representation of Apc (flox/flox; Lgr5-EGFP-IRES-CreERT2Lgr5)tumor initiation. Mice were treated with control or NIC more than 8 weeks before a single Tamoxifen injection (30 mg/kg body weight), continued for 4 weeks before tissue collection. (CreERT2 Apcfl/flB) Macroscopic quantification of the number and area of polyps in the entire intestine of control or NIC-treated Lgr5 mice. (CreERT2 Apcfl/flC) Representative images (Red: β-catenin, Blue: DAPI) and the quantification of the number of β-catenin positive adenomatous lesions in the entire intestine of control or NIC-treated Lgr5 mice. (CreERT2 Apcfl/flD) Schematic presentation of Lgr5 tumor initiation. Control or NIC-treated CreERT2 Apcfl/flLgr5 mice were subjected to a single Tamoxifen injection (30 mg/kg body weight), followed by daily DBZ or vehicle injections continued for 4 weeks before tissue collection. (CreERT2 Apcfl/flE) Macroscopic quantification of the number of polyps in the entire intestine of DBZ or vehicle-treated Lgr5 mice (NIC-treated and untreated). (CreERT2 Apcfl/flF) Representative images (Red: β-catenin, Blue: DAPI) and the quantification of the number of β-catenin positive adenomatous lesions in the entire intestine of DBZ or vehicle-treated Lgr5 mice (NIC-treated and untreated). Original magnifications: ×200 (C, and F). Scale bar: 50 µm (C, and F). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test).CreERT2 Apcfl/flFigure 7—source data 1.
+**Figure 7.:** (A) Schematic representation of Apcflox/flox; Lgr5-EGFP-IRES-CreERT2 (Lgr5CreERT2 Apcfl/fl)tumor initiation. Mice were treated with control or NIC more than 8 weeks before a single Tamoxifen injection (30 mg/kg body weight), continued for 4 weeks before tissue collection. (B) Macroscopic quantification of the number and area of polyps in the entire intestine of control or NIC-treated Lgr5CreERT2 Apcfl/fl mice. (C) Representative images (Red: β-catenin, Blue: DAPI) and the quantification of the number of β-catenin positive adenomatous lesions in the entire intestine of control or NIC-treated Lgr5CreERT2 Apcfl/fl mice. (D) Schematic presentation of Lgr5CreERT2 Apcfl/fl tumor initiation. Control or NIC-treated Lgr5CreERT2 Apcfl/fl mice were subjected to a single Tamoxifen injection (30 mg/kg body weight), followed by daily DBZ or vehicle injections continued for 4 weeks before tissue collection. (E) Macroscopic quantification of the number of polyps in the entire intestine of DBZ or vehicle-treated Lgr5CreERT2 Apcfl/fl mice (NIC-treated and untreated). (F) Representative images (Red: β-catenin, Blue: DAPI) and the quantification of the number of β-catenin positive adenomatous lesions in the entire intestine of DBZ or vehicle-treated Lgr5CreERT2 Apcfl/fl mice (NIC-treated and untreated). Original magnifications: ×200 (C, and F). Scale bar: 50 µm (C, and F). Values represent the mean ± SEM. Significant differences are denoted by p values (Student’s t-test).
 
 To test whether NIC promotes tumor formation via ISC expansion, tumor formation was induced in NIC-treated Lgr5CreERT2 Apcfl/f (NIC- Lgr5CreERT2 Apcfl/fl) mice, and entire intestines, isolated from them, were examined for polyps (Figure 7A). A marked increase in the abundance of polyps was detected throughout the intestine of NIC-treated Lgr5CreERT2 Apcfl/fl mice; moreover, these polyps were significantly larger than that in the control mice (Figure 7B). Consistently, the area of β-catenin-positive adenomatous lesions throughout the entire intestine significantly increased in NIC- Lgr5CreERT2 Apcfl/fl mice (Figure 7C). These results indicated that NIC increased the overall polyp burden in the intestines of Lgr5CreERT2 Apcfl/fl mice by increasing their size and number.
 
@@ -105,70 +145,543 @@ In conclusion, we demonstrated that NIC enhances the ISC population via α7-nACh
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Lgr5-EGFP-IRES-CreERT2 mice</td>
+      <td>Jackson Laboratory</td>
+      <td>#008875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Apc CKO mice</td>
+      <td>National Cancer Institute</td>
+      <td>#01XAA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa26-CAG-lsl-tdTomato mice</td>
+      <td>Jackson Laboratory</td>
+      <td>#007909</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-Ki67</td>
+      <td>Cell Signaling Technology</td>
+      <td>#12202</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-Olfm4</td>
+      <td>Cell Signaling Technology</td>
+      <td>#39141</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-GFP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>#sc-9996</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-Lysozyme</td>
+      <td>Thermo Fisher Schientific</td>
+      <td>#PA5-16668</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-chromogranin A</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>#sc-393941</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-β-catenin</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9562</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-mouse IgG H&amp;L (Alexa Fluor 488)</td>
+      <td>Abcam</td>
+      <td>#ab150113</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-β-actin</td>
+      <td>Santa Cruz</td>
+      <td>#sc-47778</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-YAP</td>
+      <td>Santa Cruz</td>
+      <td>#sc-101199</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-TAZ</td>
+      <td>Santa Cruz</td>
+      <td>#sc-293183</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-α7-AchR</td>
+      <td>Santa Cruz</td>
+      <td>#sc-58607</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Notch1</td>
+      <td>Santa Cruz</td>
+      <td>#sc-376403</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Jagged1</td>
+      <td>Santa Cruz</td>
+      <td>#sc-390177</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Jagged2</td>
+      <td>Santa Cruz</td>
+      <td>#sc-515725</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Hes5</td>
+      <td>Santa Cruz</td>
+      <td>#sc-293445</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-p38</td>
+      <td>Santa Cruz</td>
+      <td>#sc-81621</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-phospho-p38</td>
+      <td>Santa Cruz</td>
+      <td>#sc-166182</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-S6</td>
+      <td>Cell Signaling</td>
+      <td>#2217</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-phospho-S6 Ser235/236</td>
+      <td>Cell Signaling</td>
+      <td>#4858</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Mouse IgG, HRP-Linked Whole Ab Sheep</td>
+      <td>Cytiva</td>
+      <td>NA931</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rabbit IgG, HRP-Linked Whole Ab Donkey</td>
+      <td>Cytiva</td>
+      <td>NA934</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat monoclonal APC-conjugated anti-mouse CD24 Antibody</td>
+      <td>Biolegend</td>
+      <td>#101814</td>
+      <td>FCY (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TSA Plus Cyanine 3 System</td>
+      <td>Akoya Biosciences</td>
+      <td>#NEL744001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mecamylamine</td>
+      <td>Cayman Chemical</td>
+      <td>#14602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adiphenine hydrochloride</td>
+      <td>MedChemExpress</td>
+      <td>#HY-B0379A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PNU282987</td>
+      <td>MedChemExpress and Cayman Chemical</td>
+      <td>#17424#HY-12560A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α-Bungarotoxin</td>
+      <td>R&amp;D</td>
+      <td>#2133/1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H-89 dihydrochloride</td>
+      <td>MedChemExpress</td>
+      <td>#HY-15979A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gö 6983</td>
+      <td>Cayman Chemical</td>
+      <td>#13311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sotrastaurin</td>
+      <td>MedChemExpress</td>
+      <td>#HY-10343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K-975</td>
+      <td>MedChemExpress</td>
+      <td>#HY-138565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MK-0752</td>
+      <td>MedChemExpress</td>
+      <td>#HY-10974</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ingenol-3-angelate</td>
+      <td>Cayman Chemical</td>
+      <td>#16207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AKT Inhibitor VIII</td>
+      <td>MedChemExpress</td>
+      <td>#HY-10355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB203580</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>#F0864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LKT Laboratories, Inc</td>
+      <td>#R0161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase Type IV</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>#CLS4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valproic acid sodium salt</td>
+      <td>FUJIFILM Wako Pure Chemical Corporation</td>
+      <td>#2815/100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[-]-Cotinine</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C-016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nicotine hemisulfate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>#N1019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DBZ (Dibenzazepine)</td>
+      <td>Cayman Chemical</td>
+      <td>#14627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Cayman Chemical</td>
+      <td>#13258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mounting medium With DAPI Aqueous Fluoroshield</td>
+      <td>Abcam</td>
+      <td>#ab104139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Can Get Signal Immunoreaction Enhancer Solution</td>
+      <td>TOYOBO</td>
+      <td>NKB-101</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Lgr5-EGFP-IRES-CreERT2 mice were purchased from Jackson Laboratory (Bar Harbor, ME). Apcflox mice were obtained from the National Cancer Institute. Lgr5-EGFP-IRES-CreERT2 mice were crossed with Apcflox/flox mice (Lgr5CreERT2 Apcfl/fl). Lgr5CreERT2 Apcfl/fl:tdTomato mice were generated by crossing Lgr5CreERT2 Apcfl/fl mice with Rosa26-CAG-lsl-tdTomato mice from Jackson Laboratories. All lines were maintained in the C57BL/6 background.
 
 Mice were housed in a controlled environment maintaining 12 hr:12 hr light:dark cycle at 25 ± 1 °C. This study was performed following the guidelines of the Animal Care Committee of the University of Tokyo. All of the animals were handled according to the protocol approved by the Committee on the Ethics of Animal Experiments of the University of Tokyo (Permit Number: A2023M043-04).
 
-## Nicotine treatment
+### Nicotine treatment
 
 Mice were administered with 200 μg/ml NIC (Nicotine hemisulfate salt, Sigma-Aldrich, Saint Louis, MO) through drinking water for more than 8 weeks. Water bottles were replaced every alternate day.
 
-## Tamoxifen treatment
+### Tamoxifen treatment
 
 Recombination by Lgr5CreERT2 in Lgr5CreERT2 Apcfl/fl:tdTomato mice was induced with a single dose of tamoxifen (30 mg kg−1 body weight) suspended in corn oil, administered through the intraperitoneal injection. Lgr5CreERT2-induced mice were analyzed 4 weeks after induction.
 
-## DBZ treatment
+### DBZ treatment
 
 The mice were intraperitoneally injected with DBZ (1 mg/kg body weight; Cayman Chemical, Ann Arbor, MI) or DMSO (in PBS) for 2 or 4 weeks.
 
-## Crypt isolation and culture
+### Crypt isolation and culture
 
 Crypts were isolated as described previously (Igarashi and Guarente, 2016; Igarashi et al., 2019). For this purpose, the proximal half of the small intestine was isolated, opened longitudinally, and washed with cold PBS. After washing the intestine with cold PBS, it was cut into small (5 mm long) pieces with scissors and washed using cold PBS. Subsequently, the pieces were gently incubated in PBS supplemented with 5 mM EDTA for 40 min at 4 °C and resuspended in ice-cold PBS without EDTA followed by vigorous shaking performed manually for crypt isolation. Isolated crypts were filtered using a 70 µm mesh (Corning), collected in crypt culture medium, quantified, and embedded in Matrigel (Corning, Inc Corning, NY). In a 48-well plate, 300 isolated crypts were plated per well and cultured using crypt culture medium, Dulbecco’s Modified Eagle Medium:Nutrient Mixture F-12 (DMEM/F12) (Thermo Fisher Scientific) supplemented with 1×N2 (Thermo Fisher Scientific), 1×B27 (Thermo Fisher Scientific), 1 mM N-acetyl-L-cysteine (Sigma-Aldrich), 50 ng/mL EGF (PeproTech, Inc, Cranbury, NJ), 100 ng/mL Noggin (PeproTech, Inc), and R-spondin1 conditioned media (R&D Systems, Minneapolis, MN). The medium was changed in 2 days. Nicotine hemisulphate salt or cotinine ([-]-Cotinine, Sigma-Aldrich) was added to the crypt culture medium as required for the specific analyses. The number of alive organoids was counted under microscope 5 days after plating.
 
-## Flow cytometry
+### Flow cytometry
 
 ISC and Paneth cells were isolated from dissociated intestinal crypts using flow cytometry as described previously (Igarashi and Guarente, 2016; Igarashi et al., 2019). The crypts were centrifuged for 5 min at 300×g at 4 °C and the pellets were gently resuspended in 800 μl TrypLE Express (Thermo Fisher Scientific) supplemented with 200 μl PBS followed by incubation in a water bath at 32 °C for 1.5 min; after incubation, the samples were placed on ice. Next, 12 mL of cold minimum essential medium (MEM; FUJIFILM Wako Pure Chemical Corporation, Osaka, Japan) was added, and the samples were gently triturated twice. After centrifugation for 5 min at 200×g at 4 °C, the pellets were resuspended and incubated for 15 min on ice in 0.5 ml MEM containing CD24-APC antibody (1:500, 101814, Biolegend, San Diego, CA). After centrifugation for 5 min at 200×g at 4 °C, the pellets were resuspended in MEM containing 1.5 µM propidium iodide (PI) (Fujifilm Wako Pure Chemical Corporation). The samples were filtered through a 40 µm mesh (Corning) and immediately sorted using a BD FACS Aria III Cell Sorter (BD Life Sciences, San Jose, CA). ISCs were isolated as Lgr5-EGFPhiCD24lowPI- and Paneth cells were isolated as CD24hiSideScatterhiLgr5-EGFP−PI−.
 
-## Co-culture of isolated ISCs and Paneth cells
+### Co-culture of isolated ISCs and Paneth cells
 
 Isolated ISCs and Paneth cells were suspended separately in the medium containing 1×N2, 1×B27, and 10 μM Y-27632 (FUJIFILM Wako Pure Chemical Corporation). ISCs (2000 cells) and Paneth cells (2000 cells) were then seeded into 30 μl Matrigel containing 1 μM Jagged-1 (AnaSpec, San Jose, CA) and 10 μM Y-27632. The matrigel drops with ISCs and Paneth cells were allowed to solidify on a 48-well plate for 15 minutes in a 37 °C incubator. The culture medium containing 1×N2, 1×B27, 1 mM N-Acetyl-L-cysteine, 50 ng/ml EGF, 200 ng/ml Noggin, R-spondin1 conditioned media (R&D Systems, Minneapolis, MN), and CHIR99021 (FUJIFILM Wako Pure Chemical Corporation) was then added onto the drops of matrigel followed by incubation at 37 °C incubator. Isolated ISCs and Paneth Cells were co-cultured without CHIR99021 (Figure 2—figure supplement 1A).
 
 Other supplements, including Nicotine hemisulfate salt, Mecamylamine (Cayman Chemical), Adiphenine hydrochloride (MedChemExpress), PNU282987(MedChemExpress and Cayman Chemical), α-Bungarotoxin (R&D), H-89 dihydrochloride (MedChemExpress), Gö 6983 (Cayman Chemical), Sotrastaurin (MedChemExpress), K-975 (MedChemExpress), MK-0752 (MedChemExpress), Ingenol-3-angelate (Cayman Chemical), AKT Inhibitor VIII (MedChemExpress), SB203580 (Tokyo Chemical Industry CO., LTD, Tokyo, Japan), and Rapamycin (LKT Laboratories, Inc, St. Paul, MN), was added to the culture medium as needed in different experiments. The absolute values of the organoids are plotted on the y-axis in Figure 2 and S2. The ratio to the control is presented on the y-axis in Figures 3—5. The number of colonies with lumens was quantitated on days 3 (Figure 2—figure supplement 1A) and 5 (Figures 2—5) of the culture.
 
-## Colonic crypt isolation and culture
+### Colonic crypt isolation and culture
 
 Colonic crypts were isolated from the large intestine as described previously with a few modifications23. For this purpose, a 5–7 cm part of the proximal large intestine was isolated, opened longitudinally, and washed with cold PBS. After washing with cold PBS, the intestine was cut into small (5 mm long) pieces with scissors, placed in cold 5 mM EDTA-PBS, and gently rocked for 15 min at 4 °C. After removal of EDTA-PBS, pieces of the intestine were incubated in DMEM/F12 containing 500 U/ml Collagenase Type IV (Worthington Biochemical Corporation, Lakewood, NJ) for 30 min at 37 °C using a water bath. Subsequently, pieces of the intestine were pipetted up and down in cold PBS until most of the crypts were released. The crypt fraction was obtained by passing the suspension through a 70 μm cell strainer followed by centrifuging at 250 × g for 5 min. Isolated crypts were collected in a crypt culture medium, counted, and embedded in Matrigel. A total of 1000 crypts were plated per well of a 48-well plate and cultured using a colonic crypt culture medium (DMEM/F12 supplemented by 1xN2, 1xB27, 1 mM N-Acetyl-L-cysteine, 50 ng/ml EGF, 100 ng/ml Noggin, 500 ng/ml R-spondin, 2 mM Valproic acid (FUJIFILM Wako Pure Chemical Corporation), and 10 μM CHIR99021). The medium was replaced in 2 days.
 
 Nicotine hemisulfate salt was added to the crypt culture medium as needed for experiments. The number of alive spherical organoids formed from the crypts was measured under microscope 5 days after plating them.
 
-## Investigation of intestinal polyps
+### Investigation of intestinal polyps
 
 The entire intestine of Lgr5CreERT2 Apcfl/fl:tdTomato mice, in which adenomatous polyps were labeled with tdTomato using tamoxifen injection, was promptly excised and cut with the mucosal side up, washed with ice-cold PBS, pinned open on a dissection tray, and fixed using 10% neutral buffered formalin (FUJIFILM Wako Pure Chemical Corporation). The fixed intestine was then photographed, polyps were counted, their diameters were measured using a caliper, and the surface of the polyps was estimated. For the histopathological assay, the entire intestine was fixed on a dry board and gently rolled to form a Swiss roll, which was further used in the immunohistological test.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Pieces of the proximal jejunum (1–4 cm from the pylorus), proximal colon (1–2 cm from the cecum), and the entire rolled intestine were fixed overnight using 10% neutral-buffered formalin, embedded in paraffin, and sections were prepared. The sections were deparaffinized and subjected to heat-induced antigen retrieval using 10 mM sodium citrate buffer (pH 6.0) in a microwave. Slides were then incubated overnight with the following primary antibodies at 4 °C: rabbit anti-Ki67 (1/200; 12202; Cell Signaling Technology, Danvers, MA), rabbit anti-Olfm4 (1/400; 39141, Cell Signaling Technology), mouse anti-GFP (1/50; sc-9996, Santa Cruz Biotechnology, Dallas, TX), rabbit anti-Lysozyme (1/50; PA5-16668; Thermo Fisher Schientific), mouse anti-chromogranin A (ChgA; 1/50; sc-393941, Santa Cruz Biotechnology), and rabbit anti-β-catenin (1/200; 9562; Cell Signaling). For samples incubated with mouse primary antibodies, Alexa Fluor-conjugated secondary antibody (1/200; ab150113; Abcam, Cambridge, UK) were used, whereas, a TSA Plus Cyanine 3 System (Akoya Biosciences, Marlborough, MA,) was used for rabbit primary antibody treated sets following instructions provided by the manufacturer. Finally, the slides were mounted using Mounting medium With DAPI-Aqueous, Fluoroshield (Abcam, Cambridge, MA). Images were recorded using an all-in-one fluorescence Microscope APEXVIEW APX100 (Olympus,Tokyo, Japan).
 
-## Quantification
+### Quantification
 
 The lengths of the crypt (from the bottom of the crypt to the crypt-villus junction) and villus (from the crypt-villus junction to the tip of the villus) were measured using ImageJ software. The quantification was repeated for >30 crypt/villus units per mouse. Immuno-stained cells were quantified using randomly selected 50 intact, well-oriented crypts per mouse.
 
-## Immunoblotting
+### Immunoblotting
 
 The following antibodies, obtained from different sources, were used for immunoblotting: mouse anti-β-actin (sc-47778; Santa Cruz), mouse anti-YAP (Santa Cruz sc-101199), mouse anti-TAZ (Santa Cruz sc-293183), mouse anti-α7-AchR (Santa Cruz sc-58607), mouse anti-Notch1 (Santa Cruz sc-376403), mouse anti-Jagged1 (Santa Cruz sc-390177), mouse anti-Jagged2 (Santa Cruz sc-515725), mouse anti-Hes5 (Santa Cruz sc-293445), mouse anti-p38 (Santa Cruz sc-81621), mouse anti-phospho-p38 (Santa Cruz sc-166182), rabbit anti-S6 (Cell Signaling 2217), and rabbit anti-phospho-S6 Ser235/236 (Cell Signaling 4858). Crypts or sorted cells were lysed using RIPA buffer supplemented with protease and phosphatase inhibitors (Santa Cruz Biotechnology). Subsequently, the protein extracts were denatured by adding SDS loading buffer, boiled, and resolved using SDS-PAGE; immunoblotting was performed using primary antibodies listed above. Mouse IgG (NA931; Cytiva, Tokyo, Japan) and rabbit IgG (NA934; Cytiva) antibodies were used as HRP-conjugated secondary antibodies. The band signals were enhanced using Can Get Signal Immunoreaction Enhancer Solution (TOYOBO CO., LTD., OSAKA, Japan) following the instructions provided by the manufacturer. The band density of all blots was quantified by Image J software.
 
-## RNA analysis by real-time qPCR
+### RNA analysis by real-time qPCR
 
 RNA was extracted from crypts or sorted cells using the RNeasy Plus Mini Kit (QIAGEN, Hilden, Germany). Reverse transcription was performed using ReverTra Ace qPCR RT Master Mix (TOYOBO CO., LTD.). qRT-PCR was performed on a QuantStudio 5 Real-Time PCR System (Applied Biosystems, Waltham, MA) using KAPA SYBR FAST qPCR Master Mix (Kapa Biosystems, Inc, Wilmington, MA). Sequences of the primers used for the Real-Time qPCR are listed below. 18 S rRNA was considered an endogenous reference gene.
 
-## The list of primers used for real-time qPCR
+### The list of primers used for real-time qPCR
 
-## Single-cell gene expression analysis
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Forward primer</th>
+      <th>Reverse Primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>α1</td>
+      <td>TATAACAACGCAGACGGCGA</td>
+      <td>CACAGAGACCGTCATAGGTCC</td>
+    </tr>
+    <tr>
+      <td>α2</td>
+      <td>GTGCCCAACACTTCCGATG</td>
+      <td>TGTAGTCATTCCATTCCTGCTTT</td>
+    </tr>
+    <tr>
+      <td>α3</td>
+      <td>CCAGTTTGAGGTGTCTATGTC</td>
+      <td>TCGGCGTTGTTGTAAAGC</td>
+    </tr>
+    <tr>
+      <td>α4</td>
+      <td>CTCAGATGTGGTCCTTGTC</td>
+      <td>GAGTTCAGATGGGATGCG</td>
+    </tr>
+    <tr>
+      <td>α5</td>
+      <td>CATCGTTTTGTTTGATAATGC</td>
+      <td>TGCGTCCAAGTGACAGTG</td>
+    </tr>
+    <tr>
+      <td>α6</td>
+      <td>TGTCTCCGATCCCGTCAC</td>
+      <td>TTGTTATACAGAACGATGTCAGG</td>
+    </tr>
+    <tr>
+      <td>α7</td>
+      <td>GGTCATTTGCCCACTCTG</td>
+      <td>GACAGCCTATCGGGTGAG</td>
+    </tr>
+    <tr>
+      <td>α9</td>
+      <td>ACAAGGCCACCAACTCCA</td>
+      <td>ACCAACCCACTCCTCCTCTT</td>
+    </tr>
+    <tr>
+      <td>α10</td>
+      <td>TCTGACCTCACAACCCACAA</td>
+      <td>TCCTGTCTCAGCCTCCATGT</td>
+    </tr>
+    <tr>
+      <td>β1</td>
+      <td>AAGCCGAAGGCCAACTGATTA</td>
+      <td>TCCTGCCTCTCCTCTCCTTC</td>
+    </tr>
+    <tr>
+      <td>β2</td>
+      <td>CCGGCAAGAAGCCGGGACCT</td>
+      <td>CTCGCTGACACAAGGGCTGCG</td>
+    </tr>
+    <tr>
+      <td>β3</td>
+      <td>AAGAAGCAGACTCCTACC</td>
+      <td>AACAACCTGACTGATGAAG</td>
+    </tr>
+    <tr>
+      <td>β4</td>
+      <td>CTACAGGAAGCATTAGAGG</td>
+      <td>CAGAATACACACAATCACG</td>
+    </tr>
+    <tr>
+      <td>Hes1</td>
+      <td>ACACCGGACAAACCAAAGAC</td>
+      <td>AATGCCGGGAGCTATCTTTC</td>
+    </tr>
+    <tr>
+      <td>Hes5</td>
+      <td>GCAGCATAGAGCAGCTGAAG</td>
+      <td>AGGCTTTGCTGTGTTTCAGG</td>
+    </tr>
+    <tr>
+      <td>HeyL</td>
+      <td>GTCTTGCAGATGACCGTGGA</td>
+      <td>CTCGGGCATCAAAGAACCCT</td>
+    </tr>
+    <tr>
+      <td>Hey1</td>
+      <td>CACCTGAAAATGCTGCACAC</td>
+      <td>ATGCTCAGATAACGGGCAAC</td>
+    </tr>
+    <tr>
+      <td>Hes1</td>
+      <td>ACACCGGACAAACCAAAGAC</td>
+      <td>AATGCCGGGAGCTATCTTTC</td>
+    </tr>
+    <tr>
+      <td>Jagged1</td>
+      <td>CCTCGGGTCAGTTTGAGCTG</td>
+      <td>CCTTGAGGCACACTTTGAAGTA</td>
+    </tr>
+    <tr>
+      <td>Jagged2</td>
+      <td>ACGAGGAGGATGAAGAGCTGA</td>
+      <td>GGGGTCTTTGGTGAACTTGTG</td>
+    </tr>
+    <tr>
+      <td>YAP</td>
+      <td>CGCTCTTCAATGCCGTCATG</td>
+      <td>AGTCATGGCTTGCTCCCATC</td>
+    </tr>
+    <tr>
+      <td>TAZ</td>
+      <td>TCTGTCATGAACCCCAAGCC</td>
+      <td>GGTGGTTCTGTGGACTCAGG</td>
+    </tr>
+    <tr>
+      <td>18 S</td>
+      <td>GTAACCCGTTGAACCCCATT</td>
+      <td>CCATCCAATCGGTAGTAGCG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Single-cell gene expression analysis
 
 We used single-cell RNA-seq data from the paper 'Cells of the human intestinal tract mapped across space and time' published in Nature (Elmentaite et al., 2021) for our analysis. This mapped count data was used as the input for data processing with the Seurat R package (version 5.0.3; Hao et al., 2024). We used the ‘FindVariableFeatures’ function to identify highly variable features for downstream analysis. This data was used for dimensionality reduction and cluster detection. We performed linear regression using the ‘ScaleData’ function and a linear dimensionality reduction using the ‘RunPCA’ function. Twenty principal components were used for downstream graph-based, supervised clustering into distinct populations using the ‘FindClusters’ function and uniform manifold approximation, and projection (UMAP) dimensionality reduction was performed to project the cell population onto two dimensions using the ‘RunUMAP’ function. We used this UMAP data to compare CHRNA7 with other receptor subunits and to verify differences in their distribution.
 
-## Statistical analysis
+### Statistical analysis
 
 All experiment as indicated were performed by at least three independent experiments or technical replicates. Quantitative results are presented as mean ± standard error of the mean. Two groups were compared using unpaired two-tailed Student’s t-test, assuming data normality. p was set at p<0.05 significant.

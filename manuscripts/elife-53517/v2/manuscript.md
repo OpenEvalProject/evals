@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Plant trait diversity is known to influence population yield, but the scale at which this happens remains unknown: divergent individuals might change yields of immediate neighbors (neighbor scale) or of plants across a population (population scale). We use Nicotiana attenuata plants silenced in mitogen-activated protein kinase 4 (irMPK4) – with low water-use efficiency (WUE) – to study the scale at which water-use traits alter intraspecific population yields. In the field and glasshouse, we observed overyielding in populations with low percentages of irMPK4 plants, unrelated to water-use phenotypes. Paired-plant experiments excluded the occurrence of overyielding effects at the neighbor scale. Experimentally altering field arbuscular mycorrhizal fungal associations by silencing the Sym-pathway gene NaCCaMK did not affect reproductive overyielding, implicating an effect independent of belowground AMF interactions. Additionally, micro-grafting experiments revealed dependence on shoot-expressed MPK4 for N. attenuata to vary its yield per neighbor presence. We find that variation in a single gene, MPK4 , is responsible for population overyielding through a mechanism, independent of irMPK4’s WUE phenotype, at the aboveground, population scale.
+Plant trait diversity is known to influence population yield, but the scale at which this happens remains unknown: divergent individuals might change yields of immediate neighbors (neighbor scale) or of plants across a population (population scale). We use Nicotiana attenuata plants silenced in mitogen-activated protein kinase 4 (irMPK4) – with low water-use efficiency (WUE) – to study the scale at which water-use traits alter intraspecific population yields. In the field and glasshouse, we observed overyielding in populations with low percentages of irMPK4 plants, unrelated to water-use phenotypes. Paired-plant experiments excluded the occurrence of overyielding effects at the neighbor scale. Experimentally altering field arbuscular mycorrhizal fungal associations by silencing the Sym-pathway gene NaCCaMK did not affect reproductive overyielding, implicating an effect independent of belowground AMF interactions. Additionally, micro-grafting experiments revealed dependence on shoot-expressed MPK4 for N. attenuata to vary its yield per neighbor presence. We find that variation in a single gene, MPK4, is responsible for population overyielding through a mechanism, independent of irMPK4’s WUE phenotype, at the aboveground, population scale.
 
 ## Introduction
 
@@ -42,63 +42,489 @@ We investigated the spatial scales at which variation in abundance of low WUE N.
 
 ## Results
 
-## irMPK4 x irCCaMK crosses are silenced in MPK4 and abrogated in AMF associations
+### irMPK4 x irCCaMK crosses are silenced in MPK4 and abrogated in AMF associations
 
 N. attenuata plants silenced in the expression of MPK4 (irMPK4) have a low water-use efficiency (WUE) phenotype in comparison to empty-vector (EV) control plants in the glasshouse (Figure 2A). The loss of stomatal control increases transpiration rates to levels that surpass the increases in assimilation rates, consequently decreasing WUE, calculated as the ratio of assimilation:transpiration rates (Hettenhausen et al., 2012).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig2-v2.jpg)
+
+**Figure 2.:** (A) A schematic summary of the findings of Hettenhausen et al. (2012): irMPK4 Nicotiana attenuata plants, silenced in mitogen-activated protein kinase 4, have disrupted stomatal control resulting in increased rates of leaf transpiration (E) which surpass the smaller increases in rates of leaf carbon assimilation (A) and therefore decrease water-use efficiency (WUE) in comparison to empty-vector (EV) plants. irMPK4 stalks and rosettes are smaller than those of EV. (B) A schematic demonstrating a method established by Groten et al. (2015) to control arbuscular mycorrhizal association in the field: irCCaMK N. attenuata plants, silenced in calcium and calmodulin-dependent protein kinase, are crossed with EV and irMPK4 to create EV x irCCaMK (EVxCC) and irMPK4 x irCCaMK (MPxCC) lines hemizygous for each of the transgenes and are not able to associate with arbuscular mycorrhizal fungi (AMF). (C) Mitogen-activated protein kinase 4 (MPK4) transcript abundances, calculated relative to a housekeeping gene, in hemizygous MPxCC and EVxCC plants (left panel, mean + CI, n = 9 for EV, 13 for irMPK4) compare with those of homozygous irMPK4 and EV plants (Figure 2—figure supplement 1). EVxCC and MPxCC roots inoculated with an arbuscular mycorrhizal fungus, Rhizophagus irregularis (AMF+), did not show significant increases in comparison to un-inoculated counterparts (AMF-) in root length colonization (RLC; center panel, mean + CI, n = 7 for EVxCC, n = 8 for MPxCC), in contrast to the strong colonization of EV plants (n = 8) and control hemizygous irMPK4 crosses: irMPK4xEV (MPxEV, n = 7–8). Vesicles and hyphae are visible in trypan blue-stained AMF+ EV roots, but not in AMF+ EVxCC and MPxCC roots.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Transcript accumulation data is also used to compare to the MPK4 silencing efficiency in hemizygous EV and irMPK4 crosses (Figure 2C).
+
 Populations of plants growing in the field are commonly interconnected by arbuscular mycorrhizal fungal (AMF) networks that are known to influence access to water and nutrients in the plant rhizosphere (Egerton-Warburton et al., 2007; Reynolds et al., 2003; Yang et al., 2013), as well as within-population plant neighbor responses (Ferlian et al., 2018; Gorzelak et al., 2015; Song et al., 2019). As silencing the expression of NaCCaMK disconnects plants from AMF networks (Groten et al., 2015), we crossed isogenetic, homozygous irCCaMK plants with homozygous EV and irMPK4 lines to generate hemizygous EV x irCCaMK (EVxCC) and irMPK4 x irCCaMK (MPxCC) lines (Figure 2B), which were used for field experiments. The hemizygous crosses retained the levels of MPK4 silencing of the homozygous irMPK4 lines: MPxCC showed an 87% reduction of MPK4 transcript accumulation relative to EVxCC in the field (Figure 2C), whereas irMPK4 had 83% silencing efficiency relative to EV in the glasshouse (Figure 2—figure supplement 1). To evaluate the abrogation of AMF associations under controlled conditions, we grew the EVxCC and MPxCC crosses in the glasshouse with and without live AMF inoculum (Rhizophagus irregularis) and compared their AMF colonization characteristics to that of EV and a hemizygous irMPK4xEV (MPxEV) control cross. While EV and MPxEV were highly colonized in comparison to non-inoculated controls (Figure 2C, LM, emmeans(EV, AMF-(n = 8) to AMF+(n = 8)), t = −8.894, p = <0.0001; emmeans(MPxEV, AMF-(n = 7) to AMF+(n = 8)), t = −6.253, p = <0.0001), both EVxCC (emmeans(EVxCC, AMF-(n = 7) to AMF+(n = 7)), t = −2.105, p=0.4251) and MPxCC (emmeans(MPxCC, AMF-(n = 8) to AMF+(n = 8)), t = −1.417, p=0.8453) did not differ from un-inoculated controls in root length colonization (RLC). Trypan blue-staining of roots showed the establishment of vesicles and hyphae in EV, but not in EVxCC and MPxCC plants (Figure 2C). From these results, we conclude that the hemizygous crosses retain their MPK4 silencing and do not associate with AMF.
 
-## Populations with low percentages of MPK4-deficient plants show overyielding in both the field and glasshouse
+### Populations with low percentages of MPK4-deficient plants show overyielding in both the field and glasshouse
 
 In order to evaluate if the percentage of MPK4-deficient plants influences population yield under field conditions, growth and yield of EVxCC and MPxCC individuals in populations with varying percentages of MPxCCs (0, 25, 75, 100%; Figure 3A; Figure 3—figure supplement 1) were measured and analyzed using de Wit replacement diagrams (Figure 3B–G; Figure 3—figure supplement 2; de Wit, 1960; Harper, 1977 ). Increases in yield, referred to as overyielding, were observed in the relative yield totals (RYTs) of 25% MPxCC populations in stalk height (Figure 3C), shoot and root biomass (Figure 3D–E), and unripe and ripe seed capsule values (Figure 3F–G). This overyielding was due only to increases in EVxCC plants: in 25% irMPK4 populations, cumulative EVxCC plant trait values exceeded their predicted values based on their performance in monoculture. MPxCC plant trait values did not differ from their monoculture values in any population type. However, the increase in the cumulative EVxCC trait values in the replacement diagram was not reflected in significant differences between means of EVxCC individuals in 25% MPxCC populations versus in other population types (Figure 3—figure supplement 2), emphasizing the role of incremental benefits observable at the population-scale rather than in the performance characteristics of each individual in the population.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-v2.jpg)
+
+**Figure 3.:** (A) Field populations of four plants around a central water dripper were planted with varying percentages of EV and irMPK4 (MP) plants crossed with irCCaMK (CC) to abolish interaction with arbuscular mycorrhizal networks: four EVxCC (0%, n = 12), three EVxCC and one MPxCC (25%, n = 20), one EVxCC and three MPxCC (75%, n = 20), or four MPxCC (100%, n = 20) plants (for additional details of the experimental set-up see Figure 3—figure supplement 1). (B – G) Replacement diagrams show relative (B) rosette diameters (n = 11–35); (C) stalk heights (n = 6–29); (D) shoot biomasses (n = 10–31); (E) root biomasses (n = 8–31); (F) unripe seed capsules (n = 4–14); and (G) ripe seed capsules (n = 3–17) of EVxCC (E, red) and MPxCC (M, blue) plants in 0–100% irMPK4 field populations. Relative growth and yield for each genotype was calculated as: (trait mean in mixture * # of plants in mixture)/(trait mean in monoculture * 4). Means and error structures are shown in Figure 3—figure supplement 2. Relative yield totals of the populations (RYT, black) are calculated as E + M. Dotted lines indicate predicted yields from plants in monocultures. (H) Glasshouse populations of 12 plants were planted with varying percentages of irMPK4 plants: 12 EV (0%), 10 EV and 2 irMPK4 (17%), 6 EV and 6 irMPK4 (50%), 2 EV and 10 irMPK4 (83%), or 12 irMPK4 (100%). Each population was watered in proportion to its daily water consumption to ensure equal water availability across all populations (for additional details of the experimental set-up see Figure 3—figure supplement 5B and Water treatments in Materials and methods). (I – M) Replacement diagrams show relative (I) rosette diameters (n = 11–35); (J) stalk heights (n = 21–41); (K) shoot biomasses (n = 21–41); (L) water contents (n = 22–41); and M) total reproductive yield measured as counts of fitness correlates (n = 19–44) from EV (E, red) and irMPK4 (M, blue) plants in 0–100% irMPK4 glasshouse populations. Relative growth and yield for each genotype was calculated as: (trait mean in mixture * # of plants in mixture)/(trait mean in monoculture * 12). Means and error structures are shown in Figure 3—figure supplement 6. RYTs (black) are calculated as E + M. Dotted lines indicate predicted yields from monocultures.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Significant differences are presented within genotypes (*: p<0.05).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp4-v2.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Each 7.5L pot was (B) weighed daily to determine how much water was lost during the day before as well as provide consumption-based watering based on daily water loss (picture by EM).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Significant differences are presented within genotypes.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp7-v2.jpg)
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Leaf turgor was recorded over the 48 hr period from 00:00 December 4th to 00:00 December 7th on (A) EV and (B) irMPK4 individuals in all glasshouse population types. Note: relative turgor pressure values (y-axis) are not comparable among recordings due to the different clamping pressure at the initialization of recording (see Leaf turgor and potential effects of controlled watering on diurnal rhythms in Materials and methods). (C) Two additional replicates of irMPK4 plants in 100% populations demonstrate that within treatment group variance in peak-trough values exceeds among treatment group variance.
 
 Plants with low WUE are thought to increase the flow of water-soluble nutrients to the immediate area around their roots as a consequence of excessive transpiration rates (del Amor and Marcelis, 2005; Zea-Cabrera et al., 2006). Therefore, we collected soil cores at 5, 15 and 30 cm below the center of each population type and quantified total carbon (Ctotal), nitrogen (N), inorganic carbon (Cinorg), organic carbon (Corg), copper (Cu), iron (Fe), potassium (K), phosphorus (P) and zinc (Zn) concentration (Figure 3—figure supplement 3). At each depth, there were no significant differences among populations for any nutrient except for Cinorg which was slightly increased at 5 cm depth in the 0% populations (EVxCC monoculture), at 15 cm in 75% MPxCC populations, and at 30 cm in 100% MPxCC populations (Figure 3—figure supplement 3C). We observed no increases in any inorganic nutrient at any soil depth in the 25% MPxCC populations (Figure 3—figure supplement 3). Furthermore, the percentage of MPxCC plants in populations did not significantly predict soil moisture at any sampling depth (Figure 3—figure supplement 4A). From these results, we conclude that increasing the percentage of MPxCC plants in populations under field conditions leads to a non-additive trend in population yield, unrelated to soil moisture and inorganic nutrient availability, with overyielding occurring in 25% irMPK4 populations.
 
 To further evaluate whether the water-use phenotype of irMPK4 plants contributed to differences in water and nutrient availability for populations in ways that were undetectable in the field, we created populations in the glasshouse with increasing percentages of irMPK4 (0, 17, 50, 83% and 100%; Figure 3H; Figure 3—figure supplement 5A) in which we experimentally controlled for water availability among populations (Figure 3—figure supplement 5B; see Water treatments in Materials and methods). Replacement diagrams were again used to analyze cumulative growth and yield of EV and irMPK4 plants in varying population types (Figure 3I–M; individual means in Figure 3—figure supplement 6). The analysis revealed overyielding in shoot biomass and total fitness correlates (reproductive yield) of low-irMPK4 populations (17%; Figure 3K,M), consistent with the field results. Due to the controlled watering schema of the glasshouse experiment, we conclude that this overyielding effect is independent of population water availability.
 
-## Overyielding in low-irMPK4 populations does not occur at the neighbor scale
+### Overyielding in low-irMPK4 populations does not occur at the neighbor scale
 
 To test if overyielding in low-irMPK4 field and glasshouse populations (Figure 3) resulted from neighbor interactions of EV and irMPK4 plants, we investigated the growth and yield of EV and irMPK4 in monoculture and mixed pairs (Figure 4A), again under conditions of equal water availability (Figure 4B). Replacement diagrams revealed no evidence of overyielding in any of the measured growth and yield parameters for the mixed pairs (Figure 4G–J). We conclude that for EV plants having one irMPK4 neighbor was not sufficient to produce the overyielding response we observed in low-irMPK4 populations.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig4-v2.jpg)
 
-**Figure 4.:** (A) EV and irMPK4 were planted either as singles or in mono- or mixed-culture pairs. EV monoculture pairs have 0%, mixed-cultures have 50%, and irMPK4 monocultures have 100% irMPK4 plants. (B) All pots were watered based on daily individual consumption to ensure equal water availability (see Water treatments in Materials and methods): mean g of water per pot for each potting type (red, solid: EV Single; red, dashed: 0% irMPK4; blue, solid: irMPK4 Single; blue, dashed: 100% irMPK4; black, dotted: 50% irMPK4) immediately following a watering event (graphical peaks) and immediately preceding the next watering event (graphical troughs) are displayed. Withholding water for 2 days caused all pots to reach a state of no available water in the pot (yellow shading). (C – F) EV (red) and irMPK4 (blue) individual means in each pot type (Single: solid line; 0%/100%: dashed line; 50%: dotted line) for (C) rosette diameter (mean cm ±95% CI, n = 11–24; 3–53 days post potting, dpp), (D) shoot biomass (mean + CI, n = 10–22; 71dpp), (E) water content (mean + CI, n = 8–22; 71dpp), and (F) total reproductive yield measured as counts of fitness correlates (buds, flowers, unripe and ripe seed capsules; mean + CI, n = 9–22; 71dpp). Significant differences are presented within genotypes. Inset of (C): Significant differences in EV and irMPK4 rosette diameters among planting types are indicated for the last three time points of the main panel, within each genotype. To evaluate growth effects of the equal water availability (yellow shading), growth values before and after water was withheld are highlighted in the inset. (G – I) Replacement diagrams show (G) rosette diameters (n = 11–24; 53 dpp); (H) shoot biomasses (n = 10–22); (I) water contents (n = 8–22); and (J) total reproductive yield measured as counts of fitness correlates (n = 9–22) from EV (E, red) and irMPK4 (M, blue) plants in 0–100% irMPK4 glasshouse pairs, calculated as (trait mean in mixture*# of plants)/(trait mean in monoculture*2). Relative yield totals (RYT, black) are calculated as E + M. Means and error structures can be found in panels (C – F). Dotted lines indicate no deviations from yields in monocultures.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) EV and irMPK4 were planted either as singles or in mono- or mixed-culture pairs. EV monoculture pairs have 0%, mixed-cultures have 50%, and irMPK4 monocultures have 100% irMPK4 plants. (B) All pots were watered based on daily individual consumption to ensure equal water availability (see Water treatments in Materials and methods): mean g of water per pot for each potting type (red, solid: EV Single; red, dashed: 0% irMPK4; blue, solid: irMPK4 Single; blue, dashed: 100% irMPK4; black, dotted: 50% irMPK4) immediately following a watering event (graphical peaks) and immediately preceding the next watering event (graphical troughs) are displayed. Withholding water for 2 days caused all pots to reach a state of no available water in the pot (yellow shading). (C – F) EV (red) and irMPK4 (blue) individual means in each pot type (Single: solid line; 0%/100%: dashed line; 50%: dotted line) for (C) rosette diameter (mean cm ±95% CI, n = 11–24; 3–53 days post potting, dpp), (D) shoot biomass (mean + CI, n = 10–22; 71dpp), (E) water content (mean + CI, n = 8–22; 71dpp), and (F) total reproductive yield measured as counts of fitness correlates (buds, flowers, unripe and ripe seed capsules; mean + CI, n = 9–22; 71dpp). Significant differences are presented within genotypes. Inset of (C): Significant differences in EV and irMPK4 rosette diameters among planting types are indicated for the last three time points of the main panel, within each genotype. To evaluate growth effects of the equal water availability (yellow shading), growth values before and after water was withheld are highlighted in the inset. (G – I) Replacement diagrams show (G) rosette diameters (n = 11–24; 53 dpp); (H) shoot biomasses (n = 10–22); (I) water contents (n = 8–22); and (J) total reproductive yield measured as counts of fitness correlates (n = 9–22) from EV (E, red) and irMPK4 (M, blue) plants in 0–100% irMPK4 glasshouse pairs, calculated as (trait mean in mixture*# of plants)/(trait mean in monoculture*2). Relative yield totals (RYT, black) are calculated as E + M. Means and error structures can be found in panels (C – F). Dotted lines indicate no deviations from yields in monocultures.
 
 Varying local configurations of irMPK4 neighbors could also cause neighbor-scale overyielding in EV plants, a property we would not observe in our paired plant experiment. Therefore, in the glasshouse population experiment (Figure 3H), we analyzed growth and fitness measurements of centrally located EV individuals with four direct neighbors. In 0% irMPK4 populations, all four neighbors were EV plants, in 17% irMPK4 populations, two were EV and two were irMPK4 plants, and in 50% and 83% irMPK4 populations, all four were irMPK4 plants. We observed that only in 50% irMPK4 populations, EV plants with four irMPK4 neighbors produced significantly higher growth and yield in comparison to EV plants grown in 0% irMPK4 populations (Figure 3—figure supplement 6; Supplementary file 1). However, 50% irMPK4 populations did not show overyielding (Figure 3I–M), likely because irMPK4 plants simultaneously had significantly smaller rosettes, water contents, and yields compared with 100% irMPK4 monocultures (Figure 3—figure supplement 6; Supplementary file 1). Importantly, EV plants grown in 50% and 83% irMPK4 populations, with the same irMPK4 direct neighbor configuration, did not show consistent changes in growth and yield compared to monocultures. These results are consistent with the inference that overyielding does not occur at the neighbor scale.
 
-## MPK4 is necessary for N. attenuata to change their growth and yield when planted with a neighbor
+### MPK4 is necessary for N. attenuata to change their growth and yield when planted with a neighbor
 
 While an immediate neighbor response is not mediating the population overyielding response, we observed strong changes mainly in EV plants across our different population experiments. To test whether EV and irMPK4 plants respond differently to the presence of a neighbor, we included EV and irMPK4 planted as singles in our paired-pot experiment (Figure 4A). We compared the growth and yield to single plants with individuals in mono- and mixed-culture pairs. Water contents of EV and irMPK4 plants did not differ, whether planted alone or in pairs (Figure 4E; Table 1), indicating equal water availability in the two potting types. EV plants with an EV or irMPK4 neighbor had smaller rosettes, shoot biomass, and reproductive yield than when planted alone (Figure 4C–D and F; Table 1). However, this reduction was independent of the neighbor’s genotype. In contrast, irMPK4 plants showed no differences in their rosette growth, shoot biomass, or yield when planted in pairs as compared to being grown alone (Figure 4C–F). From these results, we conclude that MPK4 is required for N. attenuata’s growth and yield responses to a neighbor.
 
-## EV and irMPK4 photosynthetic phenotypes do not explain overyielding in the glasshouse
+**Table 1.**
+ emmeans contrasts of EV individuals in varying potting types for Figure 4C–F.*
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Contrast</th>
+      <th>Trait</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LM</td>
+      <td>EV Single(n = 9) – EV Mono(n = 22)</td>
+      <td>Water Content</td>
+      <td>2.378</td>
+      <td>0.0614</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Single(n = 9) –EV Mix(n = 11)</td>
+      <td>Water Content</td>
+      <td>1.751</td>
+      <td>0.2047</td>
+    </tr>
+    <tr>
+      <td>LM</td>
+      <td>EV Single(n = 12) – EV Mono(n = 24)</td>
+      <td>Rosette Diameter</td>
+      <td>5.131</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Single(n = 12) – EV Mix(n = 12)</td>
+      <td>Rosette Diameter</td>
+      <td>4.979</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td>GLS</td>
+      <td>EV Single(n = 11) –EV Mono(n = 22)</td>
+      <td>Shoot Biomass</td>
+      <td>4.196</td>
+      <td>0.0004†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Single(n = 11) –EV Mix(n = 10)</td>
+      <td>Shoot Biomass</td>
+      <td>4.531</td>
+      <td>0.0002†</td>
+    </tr>
+    <tr>
+      <td>LM</td>
+      <td>EV Single(n = 11) –EV Mono(n = 21)</td>
+      <td>Total Fitness Correlates</td>
+      <td>3.848</td>
+      <td>0.0017‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Single(n = 11) –EV Mix(n = 11)</td>
+      <td>Total Fitness Correlates</td>
+      <td>3.323</td>
+      <td>0.0066‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*extracted from linear (LM) or generalized least squares (GLS) models with significant ANOVA results.†p value < 0.001; ‡p value < 0.01._
+
+### EV and irMPK4 photosynthetic phenotypes do not explain overyielding in the glasshouse
 
 To determine if the WUE phenotypes of EV and irMPK4 plants in glasshouse and field populations change with the percentage of MPK4-deficient plants, potentially causing overyielding in low-irMPK4 populations (Figure 3), we measured leaf photosynthetic parameters (assimilation rate, transpiration rate, stomatal conductance) and calculated the WUE of all individuals in both glasshouse and field experiments.
 
 In the glasshouse paired experiment, all measured leaf photosynthetic parameters of EV and irMPK4 plants in single pots were as previously reported (Figure 2A), with irMPK4 plants having significantly higher assimilation rates, transpiration rates, and stomatal conductance than EV plants, and significantly lower WUE (Figure 5A; Table 2). When planted in pairs, EV and irMPK4 plants’ assimilation rates, transpiration rates, and stomatal conductance were not significantly different in monoculture (red and blue shadings, respectively) versus in mixed culture (purple shading). EV plants had significantly lower WUE in mixed versus monoculture (Figure 5A; Table 2), whereas irMPK4 plants showed no significant change in WUE across the planting types.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig5-v2.jpg)
+
+**Figure 5.:** (A) Assimilation rate, transpiration rate, stomatal conductance and water-use efficiency (WUE; mean ±CI, n = 3–8) of EV (red) and irMPK4 (blue) individuals from each planting type in the paired glasshouse experiment (see Figure 4) at 48 days post potting (dpp). To facilitate comparison of data to the population glasshouse experiment, EV in 0% irMPK4 populations (red shading), irMPK4 plants in 100% irMPK4 populations (blue shading) and both genotypes in 50% irMPK4 populations (purple shading) are highlighted. Significant differences are presented across genotypes. (B) Assimilation rate, transpiration rate, stomatal conductance and WUE (mean ±CI, n = 11–32) of EV (red) and irMPK4 (blue) individuals from each planting type in the population glasshouse experiment (Figure 3H) at 32 dpp. Measurements were taken between 12:00-14:00; additional pre-dawn measurements (4:00-6:00) are included in Figure 5—figure supplement 1. For comparison to the paired glasshouse experiment, EV and irMPK4 in 0% (red), 50% (purple) and 100% (blue) irMPK4 populations are highlighted. Significant differences are presented across genotypes. (C) Assimilation rate, transpiration rate, stomatal conductance and WUE (mean ±CI, n = 3) of EV (red, circle) and irMPK4xEV (blue, circle) individuals with the ability to associate with arbuscular mycorrhizal fungi (AMF, solid line), or EVxCC (red, triangle) and irMPK4xCC (blue, triangle) individuals without the ability to associate with AMF from the field population experiment. Measurements were performed at 34 dpp on irrigated plants (‘Wet’, see Water treatments in Materials and methods). Significant differences are presented both across genotypes, within AMF treatments (text below panels), or within the genotype and planting type, between AMF treatments (*: p<0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Fv/Fm, the maximum yield of the photosynthetic systems, (B) assimilation rates, (C) transpiration rates, (D) stomatal conductances, and (E) water-use efficiencies (WUEs; mean ±CI, n = 11–32) were measured 32 days post-planting (dpp). Significant differences are presented across genotypes and planting types.
+
+**Table 2.**
+ emmeans contrasts of EV to irMPK4 individuals planted as singles for Figure 5A*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Contrast</th>
+      <th>Trait</th>
+      <th>t-value</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LME</td>
+      <td>EV Single(n = 4) – irMPK4 Single(n = 3)</td>
+      <td>Assimilation</td>
+      <td>−3.947</td>
+      <td>0.0134‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Mono(n = 7) – EV Mix(n = 4)</td>
+      <td>Assimilation</td>
+      <td>−0.123</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>rMPK4 Mono(n = 8) – irMPK4 Mix(n = 4)</td>
+      <td>Assimilation</td>
+      <td>0.396</td>
+      <td>0.9985</td>
+    </tr>
+    <tr>
+      <td>LME</td>
+      <td>EV Single(n = 4) – irMPK4 Single(n = 4)</td>
+      <td>Transpiration</td>
+      <td>−8.089</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Mono(n = 8) – EV Mix(n = 4)</td>
+      <td>Transpiration</td>
+      <td>−3.171</td>
+      <td>0.0527</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>irMPK4 Mono(n = 8) – irMPK4 Mix(n = 4)</td>
+      <td>Transpiration</td>
+      <td>−2.776</td>
+      <td>0.1104</td>
+    </tr>
+    <tr>
+      <td>LME</td>
+      <td>EV Single(n = 3) – irMPK4 Single(n = 4)</td>
+      <td>SC</td>
+      <td>−8.089</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Mono(n = 8) – EV Mix(n = 4)</td>
+      <td>SC</td>
+      <td>−3.171</td>
+      <td>0.0527</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>irMPK4 Mono(n = 8) – irMPK4 Mix(n = 4)</td>
+      <td>SC</td>
+      <td>−2.776</td>
+      <td>0.1104</td>
+    </tr>
+    <tr>
+      <td>LME</td>
+      <td>EV Single(n = 4) – irMPK4 Single(n = 4)</td>
+      <td>WUE</td>
+      <td>6.394</td>
+      <td>0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EV Mono(n = 8) – EV Mix(n = 4)</td>
+      <td>WUE</td>
+      <td>3.723</td>
+      <td>0.0205‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>irMPK4 Mono(n = 8) – irMPK4 Mix(n = 4)</td>
+      <td>WUE</td>
+      <td>3.203</td>
+      <td>0.0544</td>
+    </tr>
+  </tbody>
+</table>
+
+_*extracted from linear-mixed effect (LME) models with significant ANCOVA results SC = Stomatal Conductance; WUE = Water Use Efficiency.†p value < 0.001; ‡p value < 0.05._
+
 In the glasshouse population experiment, irMPK4 plants in 100% (blue shading) versus 50% (purple shading) irMPK4 populations showed no significant differences in any photosynthetic parameter (Figure 5B), which was consistent with the glasshouse paired experiment. EV plants in 0% (red shading) versus 50% (purple shading) irMPK4 populations were not significantly different from each other in any parameter except for significantly higher transpiration rates of EV plants in 50% irMPK4 populations compared with those in 0% irMPK4 populations (Figure 5B; LMER, EV: emmeans 0%(n = 32)-50%(n = 16), t = −3.744, p=0.0082). While the results of statistical comparisons of EV responses (0% versus 50% irMPK4) differ between the pair (Figure 5A) and population (Figure 5B) experiments, the effects on the means for the two experiments remained consistent: with EV transpiration rates increasing (Pairs0% to 50%: +0.49; Populations0% to 50%: +1.22) and WUE decreasing (Pairs0% to 50%: −3.56; Populations0% to 50%: −13.78).
 
 In the glasshouse, EV plants in low-irMPK4 populations did not have significantly different photosynthetic parameter values compared with other population types (Figure 5B). In addition, photosynthetic parameters were measured at a pre-dawn (AM; Figure 5—figure supplement 1), which included dark-adapted chlorophyll fluorescence measurements (Fv/Fm) reflecting the maximum yield of the photosynthetic system (Signarbieux and Feller, 2011). The AM photosynthetic parameter values of EV plants in low-irMPK4 (17%) populations also did not significantly differ from EV plants in any other population type (Figure 5—figure supplement 1).
 
-## In the field, EV and irMPK4 photosynthetic parameters are similar, regardless of AMF associations
+### In the field, EV and irMPK4 photosynthetic parameters are similar, regardless of AMF associations
 
 In the field experiment, EVxCC and MPxCC plants that lacked the ability to associate with arbuscular mycorrhizal networks (AMF-), did not differ in any photosynthetic parameters, whether these were compared between genotypes or across population types (Figure 5C). To test if the ability to interact with an AMF network changes patterns of photosynthetic performance, we additionally analyzed photosynthetic parameters of EV and irMPK4xEV (MPxEV) plants that could interact with AMF networks (AMF+). Similar to the irCCaMK crosses (-AMF), EV and irMPK4 plants capable of associating with AMF did not differ across population types and the two genotypes (Figure 5C). We further tested whether the AMF association could change photosynthetic parameters within a planting type. Only irMPK4 plants in 75% irMPK4 populations had marginally higher assimilation rates, and EV plants in 75% irMPK4 populations had a higher WUE (Figure 5C, GLS, irMPK4 in 75% irMPK4: emmeans AMF-(n = 3) - AMF+(n = 3), t = −2.511, p=0.0363; GLS, EV in 75% irMPK4: emmeans AMF-(n = 3) - AMF+(n = 3), t = −8.148, p=0.0144). From these field and the previous glasshouse results, we conclude that the WUE phenotype is not likely to have accounted for the greater growth and yield of plants in low-irMPK4 populations.
 
-## Shoot MPK4 expression is required for N. attenuata to alter its reproductive yield when planted with a neighbor
+### Shoot MPK4 expression is required for N. attenuata to alter its reproductive yield when planted with a neighbor
 
 We tested the effect of tissue-specific MPK4 expression on plant yield responses to a neighbor. To separate the role of irMPK4 expression in shoots from those in roots, we created chimeric plants by micro-grafting EV shoots to irMPK4 roots (heterografts), EV shoots to EV roots (EV homografts) and irMPK4 shoots to irMPK4 roots (irMPK4 homografts; Figure 6A). Because the RNAi silencing signals travel from shoots-to-roots but not vice versa in N. attenuata, micrografting of RNAi lines such as irMPK4 does not permit the investigation of shoot-only MPK4 knockdowns (Fragoso et al., 2011). Hetero- and homo-irMPK4 grafts retained similar levels of MPK4 silencing in roots or roots and shoots, respectively (Figure 2—figure supplement 1). We grew the grafts under conditions of equal water availability, with or without an ungrafted EV neighbor. Photosynthetic parameter profiling of these grafted plants revealed that the heterografts were similar to EV homografts in assimilation, transpiration, stomatal conductance, and WUE (Figure 6B), while the irMPK4 homografts showed significantly higher transpiration rates, and stomatal conductance and lower WUE (Figure 6B; Table 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig6-v2.jpg)
+
+**Figure 6.:** (A) EV shoots were micro-grafted onto irMPK4 roots, producing plants deficient in MPK4 in the root but not in the shoot (EV/irMPK4, Figure 2—figure supplement 1). These were compared to EV/EV and irMPK4/irMPK4 homografts as controls. All three graft types were grown both as singles and in pairs with an ungrafted EV neighbor, under conditions of equal water availability in a glass house experiment (Figure 6—figure supplement 1A). (B) Assimilation rates, transpiration rates, stomatal conductance and water-use efficiency (WUE; mean ±CI, n = 3–7) of single and paired plants of each grafting type (EV/EV: red; EV/irMPK4: purple; irMPK4/irMPK4: blue) were measured at 37 dpp. Significant differences are presented across all graft and potting types. (C) Shoot biomass (mean + CI, n = 4–6) of EV/EV (red), EV/irMPK4 (purple) and irMPK4/irMPK4 (blue) individuals in each potting type (Single and Paired) was recorded at 50 dpp. Significant differences within genotypes are indicated (***: p<0.001). (D) Total root biomass in each pot (mean + CI, n = 4–6) was recorded for each potting type at 50 dpp. Dashed lines indicate the total pot root biomass predicted from the summed root biomasses of the respective genotype + EV/EV when planted as single plants in pots. (E) Counts (#) of fitness correlates (mean + CI, n = 5–7) of EV/EV (red), EV/irMPK4 (purple) and irMPK4/irMPK4 (blue) individuals in each pot type were recorded at 50 dpp. Statistical analyses were only performed for the total fitness correlates, although each bar is dissected into its contributing parts: flowers (white), unripe seed capsules (color), and ripe seed capsules (black). Significant differences within genotypes are indicated (*: p<0.05; **: p<0.01).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The amount of water (g) given to each pot on each day of watering is indicated above the watering event (green). Orange shading highlights key experimental events (developmental changes and sampling times). Two analyses on whether (B) increasing the amount of water given to a pot during a watering event changes the water loss per day of the pot (y-axis) from experimental day 17 (given 200 g water) to 20 (given 170–260 g water, x-axis) or whether (C) decreasing water given to a pot during a watering event changes the water loss per day of the pot (y-axis) from experimental day 20 (given 170–260 g water) to 29 (given 200 g water, x-axis), are presented. Each analysis is accompanied with respective p-values from an ANOVA conducted on the variables: loss between days, loss between potting type (single: dark colors; paired: faded colors), or loss by genotype of the grafted plant in the pot (red: EV/EV; purple: EV/irMPK4; blue: irMPK4/irMPK4).
+
+**Table 3.**
+ Statistical emmeans contrasts within planting treatments for Figure 6B*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Model</th>
+      <th>Contrast</th>
+      <th>T value</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Assimilation</td>
+      <td>LM</td>
+      <td>S: irMPK4/irMPK4(n = 6) to EV/EV(n = 5)</td>
+      <td>−5.718</td>
+      <td>0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S: irMPK4/irMPK4(n = 6) to EV/irMPK4(n = 7)</td>
+      <td>−4.537</td>
+      <td>0.0014‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 5) to EV/EV(n = 3)</td>
+      <td>−3.666</td>
+      <td>0.0127§</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 5) to EV/irMPK4(n = 6)</td>
+      <td>−4.837</td>
+      <td>0.0007†</td>
+    </tr>
+    <tr>
+      <td>Transpiration</td>
+      <td>LM</td>
+      <td>S: irMPK4/irMPK4(n = 5) to EV/EV(n = 5)</td>
+      <td>−10.979</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S: irMPK4/irMPK4(n = 5) to EV/irMPK4(n = 6)</td>
+      <td>−11.163</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 4) to EV/EV(n = 4)</td>
+      <td>−6.506</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 4) to EV/irMPK4(n = 6)</td>
+      <td>−9.008</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td>Stomatal</td>
+      <td>LM</td>
+      <td>S: irMPK4/irMPK4(n = 4) to EV/EV(n = 5)</td>
+      <td>−9.429</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td>conductance</td>
+      <td></td>
+      <td>S: irMPK4/irMPK4(n = 4) to EV/irMPK4(n = 7)</td>
+      <td>−9.971</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 6) to EV/EV(n = 3)</td>
+      <td>−7.209</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 6) to EV/irMPK4(n = 7)–9.079 &lt; 0.0001***</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WUE</td>
+      <td>LM</td>
+      <td>S: irMPK4/irMPK4(n = 6) to EV/EV(n = 4)</td>
+      <td>3.696</td>
+      <td>0.0109‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>S: irMPK4/irMPK4(n = 6) to EV/irMPK4(n = 7)</td>
+      <td>4.000</td>
+      <td>0.0051‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 6) to EV/EV(n = 5)</td>
+      <td>3.240</td>
+      <td>0.0329§</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>P: irMPK4/irMPK4(n = 6) to EV/irMPK4(n = 6)</td>
+      <td>4.376</td>
+      <td>0.0019‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*extracted from linear (LM) or generalized least squares (GLS) models with significant ANOVA results S: Singles; P: Paired.†p value < 0.001; ‡p value < 0.01; §p value < 0.05._
 
 All graft types had shoot biomasses that were significantly reduced when plants were grown in pairs versus planted alone (Figure 6C; Table 4). The total root biomass per pot represented the roots of one plant for single pots, and two plants together for the paired pots. We compared the observed paired-pot root biomasses to a linear prediction of the paired-pot root biomass based on the addition of single-pot root biomasses of the respective graft types in the pair. Root biomasses of EV homograft pairs were equal to two times the root biomass of an EV homograft in a single pot. In contrast, the paired heterografts and irMPK4 homografts had smaller root biomasses than were predicted from individually grown plants (Figure 6D).
 
 While both the EV homografts and heterografts displayed significant reductions in reproductive yield in response to an EV neighbor, irMPK4 homografts did not show a significant difference in reproductive yield between single and paired pl ants (Figure 6E; Table 4). From these results, we conclude that silencing MPK4 in the roots changes the neighbor-related root biomass production of N. attenuata, but MPK4 in the shoots is required to alter reproductive yield in response to neighbors.
 
-## Association with an AMF network abolishes biomass, but not reproductive overyielding in field populations with low percentages of MPK4-deficient plants
+**Table 4.**
+ Statistical emmeans contrasts within planting treatments for Figure 6C,E*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Model</th>
+      <th>Contrast</th>
+      <th>T value</th>
+      <th>P value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shoot Biomass</td>
+      <td>LM</td>
+      <td>EV/EV: S(n = 5) - P(n = 5)</td>
+      <td>−7.823</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>EV/irMPK4: S(n = 4) - P(n = 6)</td>
+      <td>−6.232</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>irMPK4/irMPK4: S(n = 6) - P(n = 6)</td>
+      <td>−4.442</td>
+      <td>&lt;0.0001†</td>
+    </tr>
+    <tr>
+      <td>TFC</td>
+      <td>LM</td>
+      <td>EV/EV: S(n = 9) - P(n = 11)</td>
+      <td>−2.637</td>
+      <td>0.0106‡</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>EV/irMPK4: S(n = 13) - P(n = 12)</td>
+      <td>−3.620</td>
+      <td>0.0006†</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>irMPK4/irMPK4: S(n = 13) - P(n = 10)</td>
+      <td>−0.024</td>
+      <td>0.9813</td>
+    </tr>
+  </tbody>
+</table>
+
+_*extracted from linear (LM) or generalized least squares (GLS) models with significant ANOVA results TFC: Total Fitness Correlates; S: Singles; P: Paired.†p value < 0.001; ‡p value < 0.05._
+
+### Association with an AMF network abolishes biomass, but not reproductive overyielding in field populations with low percentages of MPK4-deficient plants
 
 In order to evaluate if altering belowground interactions affects overyielding in 25% irMPK4 field populations, we compared the growth and yield of EV and MPxEV crosses, having the ability to interact with an AMF network, in field populations with varying percentages of MPxEV (0, 25, 75, 100%) with responses observed in populations with abrogated AMF interactions (Figure 3). Overyielding was observed in unripe and ripe seed capsule counts in 25% MPxEV populations (Figure 7D–E), but not in the shoot and root biomasses RYTs for these same populations (Figure 7B–C). The overyielding in capsules, similar to the response in populations without AMF network associations, occurred as a result of increases in the number of capsules in EV plants, relative to the predicted yield based on their productions in monoculture.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53517/elife-53517-fig7-v2.jpg)
 
-**Figure 7.:** MPK4-deficient plants.(A – E) EV and irMPK4 individuals crossed with EV instead of irCCaMK (EVxEV: EV; irMPK4xEV: MPxEV) can associate with arbuscular mycorrhizal fungi. Field populations were varied in percentages of EV and MPxEV plants (Figure 3A, Figure 3—figure supplement 1). Replacement diagrams show (A) rosette diameters (n = 12–28); (B) shoot biomasses (n = 6–12 excl. M in 75% = 2); (C) root biomasses (n = 7–12 excl. M in 75% = 2); (D) unripe seed capsules (n = 6–14 excl. M in 75% = 2); (E) ripe seed capsules (n = 6–16) of EV (E, red) and MPxEV (M, blue) plants in 0–100% irMPK4 field populations. Relative growth and yield for each genotype is calculated as (trait mean in mixture*# of plants)/(trait mean in monoculture*4). Relative yield totals (RYT, black) are calculated as E + M. Dotted lines indicate no deviations from yields in monocultures. (F – G) Allometric trajectories of (F) EV x irCCaMK (EVxCC, black) plants compared to EV (red) plants in 0%, 25% and 75% irMPK4 populations, as well as (G) irMPK4 x irCCaMK (MPxCC, black) plants compared to irMPK4xEV (MPxEV, blue) plants in 100% and 25% irMPK4 populations. Asterisks indicate significant differences within population types (lstrends, pairwise comparisons of slopes of fitted lines: ***p<0.001, **p<0.01, *p<0.05).Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A – E) EV and irMPK4 individuals crossed with EV instead of irCCaMK (EVxEV: EV; irMPK4xEV: MPxEV) can associate with arbuscular mycorrhizal fungi. Field populations were varied in percentages of EV and MPxEV plants (Figure 3A, Figure 3—figure supplement 1). Replacement diagrams show (A) rosette diameters (n = 12–28); (B) shoot biomasses (n = 6–12 excl. M in 75% = 2); (C) root biomasses (n = 7–12 excl. M in 75% = 2); (D) unripe seed capsules (n = 6–14 excl. M in 75% = 2); (E) ripe seed capsules (n = 6–16) of EV (E, red) and MPxEV (M, blue) plants in 0–100% irMPK4 field populations. Relative growth and yield for each genotype is calculated as (trait mean in mixture*# of plants)/(trait mean in monoculture*4). Relative yield totals (RYT, black) are calculated as E + M. Dotted lines indicate no deviations from yields in monocultures. (F – G) Allometric trajectories of (F) EV x irCCaMK (EVxCC, black) plants compared to EV (red) plants in 0%, 25% and 75% irMPK4 populations, as well as (G) irMPK4 x irCCaMK (MPxCC, black) plants compared to irMPK4xEV (MPxEV, blue) plants in 100% and 25% irMPK4 populations. Asterisks indicate significant differences within population types (lstrends, pairwise comparisons of slopes of fitted lines: ***p<0.001, **p<0.01, *p<0.05).
 
 To compare the biomass-to-reproductive-yield associations across populations with and without AMF association, we analyzed the data as allometric trajectories (Weiner, 2004; Wu et al., 2003). The presence of the AMF network significantly changed the allometric trajectories of EV individuals in 0% irMPK4 populations: EV plants had a significantly larger allocation to seed capsules per unit biomass than did EVxCC plants (Figure 7F, slopes: EVxCC(n = 10)=0.73, EV(n = 7)=3.3), and their trajectories started at a higher biomass threshold. In addition to the slope of the allometric trajectory, which indicates plasticity in resource allocation, the R2 value, which indicates the extent to which a plant’s trajectory is close to its reproductive potential (Weiner, 2004), also increased from EVxCC to EV plants in 0% irMPK4 populations (Figure 7F; R2: EVxCC(n = 10)=0.51, EV(n = 7)=0.82). However, the allometric allocations of EV and EVxCC plants did not differ in 25% and 75% irMPK4 populations. MPxEV and MPxCC allometric trends did not differ in the 25% and 100% irMPK4 population type (Figure 7G). The 75% populations were excluded due to a lack of replication at the end of the field season.
 
@@ -136,39 +562,95 @@ The results of our study are consistent with the well-established phenomenon tha
 
 ## Materials and methods
 
-## Plant material and constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>A-04-266-3</td>
+      <td>Bubner et al., 2006 DOI:10.1007/s00299-005-0111-4</td>
+      <td></td>
+      <td>Empty vector control</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>A-7–163</td>
+      <td>Hettenhausen et al., 2012 DOI:10.1086/342519</td>
+      <td></td>
+      <td>Stably silenced in MPK4 via RNAi</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (N. attenuata)</td>
+      <td>A-09-1212-1-4</td>
+      <td>Groten et al., 2015 DOI:10.1111/pce.12561</td>
+      <td></td>
+      <td>Stably silenced in CCaMK via RNAi</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>R version 3.4.2</td>
+      <td>R Development Core Team, 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>RStudio version 1.0.153</td>
+      <td>Rstudio Team, 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and constructs
 
 Characterization of the empty-vector (EV) Nicotiana attenuata control line (pSOL3NC, line number A-04-266-3) is described in Bubner et al. (2006). The irMPK4 line (pRESC5MPK4, line number A-7–163), silenced in the production of MITOGEN-ACTIVATED PROTEIN KINASE 4 (MPK4) through RNAi targeting MPK4 transcripts, is characterized in Hettenhausen et al. (2012); Hettenhausen et al. (2013). The irCCaMK line (pSOL8CCAMK, line number A-09-1212-1-4), silenced in the production of CALCIUM AND CALMODULIN-DEPENDENT PROTEIN KINASE (CCaMK) through RNAi targeting CCaMK transcripts, is characterized in Groten et al. (2015).
 
 EVxirCCaMK (pSOL3NCxpSOL8CCAMK, ‘EVxCC’) and irMPK4xirCCaMK (pRESC5MPK4xpSOL8CCAMK, ‘MPxCC’) crosses were generated by growing homozygous EV (second generation, T2), irMPK4 (T2) and irCCaMK (third generation, T3) in the glasshouse and hand pollinating the styles of EV and irMPK4 emasculated flowers with pollen from the anthers of irCCaMK flowers. Control crosses EVxEV (pSOL3NCxpSOL3NC, ‘EVxEV’) and irMPK4xEV (pRESC5MPK4xpSOL3NC, ‘MPxEV’) with the same paternal genotypes were created by pollination with pollen from EV. Hand-pollinated flowers were tagged with string and resulting seed capsules were collected. The ripe seeds from these crosses provided the seed source for the field population experiment (Figure 3). A characterization experiment in the glasshouse revealed that EVxEV and EVxCC, as well as MPxEV and MPxCC, were not significantly different in water loss rates per day (Figure 3—figure supplement 7A, Supplementary file 1), shoot and root biomass (Figure 3—figure supplement 7B–C). For all other experiments in the glasshouse, T3 generation EV and irMPK4 homozygous lines were used.
 
-## Plant growth conditions
+### Plant growth conditions
 
 Importation and release of transgenic crosses in the field station (Lytle Ranch, UT) was carried out under Animal and Plant Health Inspection Service (APHIS) import permit numbers 07-341-101n (EV) and 10-349-101m (EVxirCCaMK, irMPK4xirCCaMK, irMPK4xEV), and release 16-013-102r.
 
 Glasshouse and field germination and growth were described previously (McGale et al., 2018), with modifications only in planting design. Field plants were planted in four-plant populations in a square design (Figure 3; Figure 3—figure supplement 1), with 10 cm between each adjacent neighbor. Plants of the glasshouse population experiment were potted in 12-plant populations (Figure 3; Figure 3—figure supplement 5), with 5 cm between each adjacent neighbor. Glasshouse plants in both of the paired experiments (grafted and ungrafted) were also planted 5 cm from their neighbor plants. The planting substrate consisted of a bottom layer of large clay aggregate (Lecaton, 8–16 mm diameter, approximately 10% of pot volume), a central layer of small clay aggregate (Lecaton, 2–4 mm diameter, approximately 80% of pot volume) and a top layer of fine sand (approximately 10% of pot volume). This substrate provides optimal drainage in the pots for the purposes of water control, and conditions similar to the sandy, clay soil of the natural habitat of N. attenuata.
 
-## Plant growth and yield measurements
+### Plant growth and yield measurements
 
 For the field experiment (Figure 3A–G), rosette diameter measurements were extracted from photos taken between 19:00 and 20:00, in which each individual plant was pictured next to a standard metal square (5 × 5 cm) for scale. Plant stalk height measurements were recorded as the height from the base of the stalk at the ground level to the highest point of the topmost inflorescence. Plant shoot and root dry biomass were measured by placing respective biological matter in a paper bag inside of a plastic box with ventilation holes of 1 cm diameter drilled through the lid and left to dry for 15 days in the sun, before being removed from the bag and weighed. Unripe seed capsules were counted simultaneously for all plants, immediately before harvesting for shoot and root biomass. Due to APHIS regulations, ripening seed capsules were counted and subsequently removed to prevent opening and releasing seeds into the field; the total ripe capsules collected is presented (Figure 3G).
 
 For all glasshouse experiments (Figures 3H–M, 4 and 6), rosette diameter was measured directly on the plant. Plant stalk height was measured as in the field. Shoot biomass consisted of all aboveground matter (severed below the rosette), placed inside a bag for drying at 80°C for 2 hr, after which the plant matter was removed from the bag and weighed. The shoot biomass was also weighed for fresh mass, and the water content of the plant at harvest was reported as the difference between the fresh and dry shoot biomasses. All fitness correlates were counted at harvest, including flowers (counted as flowers when the corolla became visible by pushing through the sepals), unripe and ripe seed capsules, and the total of all of these together was reported (Figure 3M).
 
-## Soil moisture and element content
+### Soil moisture and element content
 
 Soil cores were taken from the field by driving a split tube core borer (53 mm, Eijkelkamp, Giesbeek, Netherlands) 30 cm into the ground, and carefully removing it with the core intact. 5 cm pieces of field soil were cut from the core from 0 to 5, 10 to 15, and 25 to 30 cm below ground. Each of these 5-cm-thick sections were weighed, left to dry in the sun in UV-excluding boxes similar to those used for the drying of shoot biomass (see Plant growth and yield measurements), and weighed again when dry (determined to be when the mass fluctuated <0.1 g between days). Soil moisture was calculated for each sample (% soil moisture = (fresh soil mass - dry soil mass/fresh soil mass) * 100), taken from 21 to 30 dpp in the different population types (Figure 3—figure supplement 4, n = 1 per population).
 
 Soil cores were obtained using the same method at 54 dpp with replication (n = 2–9) to determine the soil content of total, inorganic and organic carbon (Ctotal, Cinorg, Corg, respectively), nitrogen (N), copper (Cu), iron (Fe), potassium (K), phosphorus (P), and zinc (Zn) in each type of population at the end of the season (Figure 3—figure supplement 3). Samples were dried at 80°C for 6 hr in a drying oven, sieved and milled for Ctotal determination (elemental analyzer; High TOC, Elementar, Hanau, Germany), Cinorg (loss-on-ignition from elemental analyzer), Corg (Ctotal - Cinorg), and N (elemental analyzer) at the Max Planck for Biogeochemistry in Jena, Germany. Cu/Fe/K/P/Zn concentration were determined by microwave digestion and atomic absorption spectroscopy (Karpiuk et al., 2016).
 
-## Water treatments
+### Water treatments
 
 Field populations were watered every week for 1 hr at dusk (20:00 to 21:00) from a central water dripper (2 L/h drip rate) present in each population. After 34 dpp, one section of the plot was no longer watered until the final harvest (Dry), while a small subsection was watered two more times (Wet) in order to obtain gas exchange measurements on sections with varying water treatments at 48 dpp. Soil moistures at 21–30 dpp in these two parts of the plot (see Soil moisture and element content) were analyzed by regression to test if results from both of these parts could be summarized together in Figure 3 (Figure 3—figure supplement 4). Watering treatment and the interaction with depth or day did not significantly predict soil moisture (Figure 3—figure supplement 4B, Wet subsection: ‘Part2’; day: ‘variable’; model fit: R2 = 0.406, F(7, 147)=16.04, p-value=1.474e-15). Therefore shoot and root biomass, as well as unripe and ripe seed capsule data collected from full populations in both sections were reported together as one mean (Figure 3).
 
-In the glasshouse, all populations and pairs (grafted and ungrafted) underwent the following regimented watering to control for water availability: after potting, pot were given establishment watering (soil moisture maintained around 20%), allowing root development to the bottom of the pot for a transition from top watering to bottom watering. After 3 weeks, pots with population types began to show detectable differences in water loss and consumption-based watering began at ecologically relevant soil moistures (Valim et al., 2019). This reflected the known decrease in soil moisture throughout the life cycle of N. attenuata in the field (Zavala and Baldwin, 2004). For the population and pair experiment, ecologically relevant soil moisture was achieved by daily watering of individual pots to a 2-day water supply, calculated as:WM=2∗mean(WL−1,WL−2)+DPWM=potmass(g)towhichthepotneededtobewateredWL−1=waterloss(g)fromtheprevioustothecurrentdayWL−2=waterloss(g)fromtwodaystoonedaypriorDP=drypotmass(gofpotwithdrysubstrate,beforeplanting)
+In the glasshouse, all populations and pairs (grafted and ungrafted) underwent the following regimented watering to control for water availability: after potting, pot were given establishment watering (soil moisture maintained around 20%), allowing root development to the bottom of the pot for a transition from top watering to bottom watering. After 3 weeks, pots with population types began to show detectable differences in water loss and consumption-based watering began at ecologically relevant soil moistures (Valim et al., 2019). This reflected the known decrease in soil moisture throughout the life cycle of N. attenuata in the field (Zavala and Baldwin, 2004). For the population and pair experiment, ecologically relevant soil moisture was achieved by daily watering of individual pots to a 2-day water supply, calculated as:
+
+$$
+WM=2^{∗}mean(WL_{−1},WL_{−2})+DPWM=potmass(g)towhichthepotneededtobewateredWL_{−1}=waterloss(g)fromtheprevioustothecurrentdayWL_{−2}=waterloss(g)fromtwodaystoonedaypriorDP=drypotmass(gofpotwithdrysubstrate,beforeplanting)
+$$
 
 The 2-day water supply is illustrated for our glasshouse paired experiment (Figure 4B). To allow larger growth and thus accentuate growth differences in plants in the grafted pair experiment (Figure 6), the water supply was raised to 5 days (WM = 5*mean(WL-1, WL-2) + DP), bringing soil moisture percentages up to 20–30%. The higher soil moisture did not affect the differences in photosynthetic parameters of EV and irMPK4 homografts compared to those reported for the homozygous EV and irMPK4 plants in the paired experiment (Figures 5A and 6B). There was no significant correlation between the amount of water added in our watering regimes and the amount of water lost (demonstrated two times during watering regime of the grafted experiment, Figure 6—figure supplement 1B–C).
 
-## Leaf turgor and potential effects of controlled watering on diurnal rhythms
+### Leaf turgor and potential effects of controlled watering on diurnal rhythms
 
 Yara ZIM-probes were placed on 2–3 replicates of EV or irMPK4 plants in all glasshouse population types (Figure 3H). The probes consist of two magnets clipped onto both sides of a leaf, of which the lower magnet includes a pressure sensor. All probes are initialized at a clamping pressure between 10 and 30 kPa on a turgescent leaf. The probes allow continuous measurement of leaf turgor pressure throughout an experiment, and we present 48 hr of continuous monitoring from 00:00 December 4th to 00:00 December 7th (Figure 3—figure supplement 8).
 
@@ -176,7 +658,7 @@ Absolute pressure values could not be compared quantitatively; in contrast to pr
 
 Additionally, we observed if our genotypes experience differential diurnal dry-downs or unexpected drought events that may not be captured by our daily pot weighing and watering for our controlled water treatment. This may be reflected in ‘noisier’ curves (increased oscillations within the peaks or troughs of the diurnal leaf turgor changes) or inverted leaf turgor pressure curves around noon (Martínez-Gimeno et al., 2017), however, we did not observe any of these qualities across our measured plants. We therefore inferred that our controlled watering treatment was not causing unknown diurnal drying differences among individuals in our glasshouse population types and proceeded with applying it to all glasshouse experiments (Figure 3H–M, Figure 4, Figure 5A–B, Figure 6).
 
-## Gas exchange measurements and water-use efficiency calculations
+### Gas exchange measurements and water-use efficiency calculations
 
 Gas exchange measurements including photosynthesis and transpiration rates, and stomatal conductance (via calculation), were performed using a LI-COR 6400XT infrared gas analyzer (Lincoln, NE), both in the field and the glasshouse between 12:00 and 14:00 (Figure 5).
 
@@ -184,15 +666,15 @@ The LI-6400XT was combined with a Leaf Chamber Fluorometer in the glasshouse to 
 
 Water-use efficiency (WUE) was calculated as the ratio of photosynthetic rate (µmol CO2/m2s) to transpiration rate (mmol H2O/m2s), thus resulting in units of carbon dioxide molecules used per 1000 water molecules (Figures 5A,B,C and 6B; Figure 5—figure supplement 1E).
 
-## Micro-grafting
+### Micro-grafting
 
 Seven-day-old seedlings were micro-grafted as described previously (Fragoso et al., 2011), with EV scions grafted to both EV (EV/EV) and irMPK4 (EV/irMPK4) rootstocks, and irMPK4 scions grafted only to irMPK4 (irMPK4/irMPK4) rootstocks (Figure 6). The average grafting success was 90% (p>0.05 between genotypes, ANOVA, Tukey HSD post hoc).
 
-## Transcript abundance
+### Transcript abundance
 
 RNA was extracted with TRIzol reagent (Invitrogen) according to the manufacturer’s instructions. cDNA was synthesized from 500 ng of total RNA using RevertAid H Minus reverse transcriptase (Fermentas) and oligo (dT) primer (Fermentas). qPCR was performed in a Mx3005P PCR cycler (Stratagene) using 5X Takyon for Probe Assay (No ROX) Kit (Eurogentec), TaqMan primer pairs and double fluorescent dye-labeled probe. N. attenuata Sulfite Reductase (ECI) was used as a standard housekeeping gene, and its primer sequences and probe, as well as the MPK4 primer sequences and probes, are as published previously (Wu et al., 2007). MPK4 transcript levels were quantified relative to the housekeeping gene as described in Wu et al (Figure 2C and Figure 2—figure supplement 1; Wu et al., 2007).
 
-## Statistical analysis
+### Statistical analysis
 
 All data were analyzed using R version 3.4.2 (R Development Core Team, 2017) and RStudio version 1.0.153 (Rstudio Team, 2016). Replication for experiments is indicated in the figure captions. The replacement diagrams in Figures 3, 4 and 7 do not display statistical significance, but facilitate the visualization of cumulative population overyielding (de Wit, 1960). Statistical means of the data used to produce these diagrams are presented in Figure 3—figure supplements 2 and 6.
 

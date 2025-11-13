@@ -10,17 +10,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0015ws592 Department of Integrated Structural Biology, IGBMC, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France
-2. https://ror.org/0015ws592 Université de Strasbourg, IGBMC UMR 7104-UMR-S 1258 Illkirch France
-3. https://ror.org/02feahw73 CNRS, UMR 7104 Illkirch France
-4. https://ror.org/02vjkv261 Inserm, UMR-S 1258 Illkirch France
-5. https://ror.org/04vfs2w97 Université de Lorraine and CNRS, UMR 7019 LPCT Nancy France
+1. Department of Integrated Structural Biology, IGBMC, Institut de Génétique et de Biologie Moléculaire et Cellulaire (IGBMC) Illkirch France ([ROR:0015ws592](https://ror.org/0015ws592))
+2. Université de Strasbourg, IGBMC UMR 7104-UMR-S 1258 Illkirch France ([ROR:0015ws592](https://ror.org/0015ws592))
+3. CNRS, UMR 7104 Illkirch France ([ROR:02feahw73](https://ror.org/02feahw73))
+4. Inserm, UMR-S 1258 Illkirch France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+5. Université de Lorraine and CNRS, UMR 7019 LPCT Nancy France ([ROR:04vfs2w97](https://ror.org/04vfs2w97))
 
 † Corresponding author
 
 ## Abstract
 
-Sirtuin 6 (SIRT6) is an NAD + -dependent histone H3 deacetylase that is prominently found associated with chromatin, attenuates transcriptionally active promoters and regulates DNA repair, metabolic homeostasis and lifespan. Unlike other sirtuins, it has low affinity to free histone tails but demonstrates strong binding to nucleosomes. It is poorly understood how SIRT6 docking on nucleosomes stimulates its histone deacetylation activity. Here, we present the structure of human SIRT6 bound to a nucleosome determined by cryogenic electron microscopy. The zinc finger domain of SIRT6 associates tightly with the acidic patch of the nucleosome through multiple arginine anchors. The Rossmann fold domain binds to the terminus of the looser DNA half of the nucleosome, detaching two turns of the DNA from the histone octamer and placing the NAD + binding pocket close to the DNA exit site. This domain shows flexibility with respect to the fixed zinc finger and moves with, but also relative to, the unwrapped DNA terminus. We apply molecular dynamics simulations of the histone tails in the nucleosome to show that in this mode of interaction, the active site of SIRT6 is perfectly poised to catalyze deacetylation of the H3 histone tail and that the partial unwrapping of the DNA allows even lysines close to the H3 core to reach the enzyme.
+Sirtuin 6 (SIRT6) is an NAD+-dependent histone H3 deacetylase that is prominently found associated with chromatin, attenuates transcriptionally active promoters and regulates DNA repair, metabolic homeostasis and lifespan. Unlike other sirtuins, it has low affinity to free histone tails but demonstrates strong binding to nucleosomes. It is poorly understood how SIRT6 docking on nucleosomes stimulates its histone deacetylation activity. Here, we present the structure of human SIRT6 bound to a nucleosome determined by cryogenic electron microscopy. The zinc finger domain of SIRT6 associates tightly with the acidic patch of the nucleosome through multiple arginine anchors. The Rossmann fold domain binds to the terminus of the looser DNA half of the nucleosome, detaching two turns of the DNA from the histone octamer and placing the NAD+ binding pocket close to the DNA exit site. This domain shows flexibility with respect to the fixed zinc finger and moves with, but also relative to, the unwrapped DNA terminus. We apply molecular dynamics simulations of the histone tails in the nucleosome to show that in this mode of interaction, the active site of SIRT6 is perfectly poised to catalyze deacetylation of the H3 histone tail and that the partial unwrapping of the DNA allows even lysines close to the H3 core to reach the enzyme.
 
 ## Introduction
 
@@ -42,13 +42,49 @@ Here, we present the structure of human SIRT6 bound to the nucleosome. We identi
 
 ## Results
 
-## Overall structure
+### Overall structure
 
 To investigate how nucleosomes stimulate the activity of SIRT6 we prepared nucleosome with the Widom-601 positioning sequence (Lowary and Widom, 1998) and reconstituted its complex with full-length recombinant human SIRT6 that was overexpressed in and purified from E. coli. The complex was stabilized via mild crosslinking before its deposition on cryo-EM grids.
 
 We obtained a single particle cryogenic electron microscopy structure showing the nucleosome at 2.9 Å overall resolution and a protein density bound to its disc-like surface (Figure 1a and Figure 1—figure supplements 2 and 3). SIRT6 could be fitted into this density with its zinc finger domain (resolved at 3.0 Å resolution), associated with the acidic patch of the nucleosome and its Rossmann fold domain (4.0–6.0 Å resolution) interacting with the DNA terminus at superhelix locations (SHL) 6 and 7 (Figure 1b and Figure 1—figure supplement 4). The active site of SIRT6 is thus positioned just above where the H3 tail enters the nucleosome disc between the two DNA gyres. The high-resolution at the nucleosome allows discerning purines from pyrimidines. We could therefore distinguish between the two pseudosymmetric orientations of the Widom-601 DNA (Figure 1—figure supplement 5a). We find that SIRT6 is bound predominantly at the ‘right’ TA-poor arm of the Widom-601 sequence where DNA interactions with the histone octamer are looser (Ngo et al., 2015). We detect however a small population with a second SIRT6 bound at the ‘left’ TA-rich tight arm (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-v1.jpg)
+
+**Figure 1.:** (a) Front (top) and side (bottom) views of a composite cryo-EM reconstruction of human SIRT6-nucleosome. Maps from focused refinements of SIRT6 (magenta – Rossmann fold and Zn-finger domains labelled) and the nucleosome (H2A – yellow; H2B – orange; H3 – blue; H4 – green; DNA – light and dim grey). (b) Corresponding views of the atomic model of the complex.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The structures of human sirtuins are depicted – the Rossmann fold domain in blue, Zinc-finger in tan and the helix bundle between the two in green.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Complete data processing scheme. Maps colored in rainbow represent the local resolution of the reconstructions. Hollow blue volume represents the mask used for focused classification and refinement. FSC curves are depicted as a function of resolution in angstrom. CryoSPARC v.3 and v.4 were used to generate the 3.6 Å overall resolution map of SIRT6-nucleosome complex. RELION 3 was used for classifications of flexible regions, corresponding to the Rossmann fold domain of SIRT6. (b) Original micrograph of SIRT6-nucleosome complex. (c) Two-dimensional class averages showing high-resolution structural features.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Complete data processing scheme. Maps colored in rainbow represent the local resolution of the reconstructions. FSC curves are depicted as a function of resolution in angstrom. CryoSPARC v.3 and v.4 and Relion 3 were used for 3D classification and to generate the 2.9 Å overall resolution map of SIRT6-nucleosome complex.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Close-up view of the SIRT6 Zn-finger interacting with the nucleosomal acidic patch. (b) View showing map details around the nucleosome dyad. (c) SIRT6 Rossmann fold domain interaction with the DNA. (d) Density used to trace H2A tail.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Cryo-EM densities of the nucleotide base pairs at the dyad (yellow) and positions ± 4 (green) showing the orientation of the DNA in the SIRT6-nucleosome complex. Besides the dyad, the positions ± 4 are also asymmetric in the nucleosome with the Widom-601 DNA. (b) The binding of SIRT6 to the nucleosome alters the path of the terminus DNA by 37°. Nucleosomal DNA is compared with (dim grey) and without (white) bound SIRT6. (c) The same views as in panel b with the cryo-EM maps. (d) Nucleosome without SIRT6 has no deviation of the DNA termini. PDB 3LZ0 was fitted to the nucleosome structure.
+
 Conformational heterogeneity analyses in cryoDRGN (Zhong et al., 2021) reveal two principle large movements within the structure (Figure 2a and d and Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig2-v1.jpg)
+
+**Figure 2.:** (a) UMAP projection of the latent embeddings of a subset of SIRT6-nucleosome particles representing the concerted movement of the Rossmann fold and the DNA terminus. (b) Structural representation of the two endpoints of the latent embeddings shown in panel a. (c) Overlay of the DNA ends and the SIRT6 Rossmann fold of two endpoints shown in panel b. Arrows show their displacements between the two endpoints. (d) UMAP projection of the latent embeddings of another subset of SIRT6-nucleosome particles representing the movement of the Rossmann fold with respect to the nucleosomal DNA. (e) Structural representation of the two endpoints of the latent embeddings shown in panel b. (f) Overlay of the DNA ends and the SIRT6 Rossmann fold of two endpoints shown in panel e. Arrow show the displacement of the Rossmann fold between the two endpoints.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Particle images from CryoSPARC refinement were Fourier cropped to a size of 128x128 pixels. They were subjected to CryoDRGN analysis (run1). Ten representative volumes of the first Principal component is depicted. Particles from classes with similar DNA end positions were pooled and refined in CryoSPARC. Particles from this new refinement were re-analysed with CryoDRGN (run2). Ten representative volumes of the first Principal component is depicted.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Projection of per residue flexibility contribution calculated from molecular dynamics simulations of the nucleosome without SIRT6. The balls at the DNA residues are colored according to the residue’s relative contribution to the DNA overall flexibility. The three replicates are shown on the top and the projected average on the bottom. (b) The same analysis is shown for the SIRT6 bound nucleosome. Rendered with VMD1.9.3.
 
 First, we find that where the SIRT6 Rossmann fold binds, DNA is pulled away and detached from the histone octamer (Figure 2b). Particles greatly vary in the extent of this shift that therefore probably represents a continuous movement of the DNA (compare Figure 2b1 with 2b2). The Rossmann fold moves with and is attached to the DNA whereas the zinc finger domain remains fixed at the acidic patch of the nucleosome (Figure 2c). In the full extent of the DNA movement, two turns from SHL 6 and 7 are detached from the histone octamer. This alters the path of the terminus DNA by 37° and breaks DNA interactions with histones H2A, H2B, and H3 (Figure 1—figure supplement 5b). Such a large change in DNA trajectory is reminiscent of the chromatin remodelling ATPases or pioneer transcription factors binding to nucleosome but was not observed in other histone modifiers (Dodonova et al., 2020; Farnung et al., 2017). Importantly, the DNA terminus without bound SIRT6 or free nucleosomes in our dataset did not show any deviation from the canonical conformations (Figure 1—figure supplement 5c). In addition, our MD simulations indicate higher flexibility of the DNA termini when SIRT6 is bound to the nucleosome (Figure 2—figure supplement 2). All together these findings strongly suggest that the DNA movement we observed is coupled to SIRT6 interactions.
 
@@ -56,9 +92,25 @@ Second, in particles where the SIRT6-bound DNA remains in its canonical position
 
 These conformational changes are made possible by a flexible hinge region between the two domains of SIRT6, which is unique to this member of the sirtuins family.
 
-## Zinc finger domain binds the acidic patch
+### Zinc finger domain binds the acidic patch
 
 An important feature of the nucleosome surface is a cluster of acidic residues (E56, E61, E64, D90, E91, E92 of H2A and E102, E110 of H2B) that forms a negatively charged ‘acidic patch’ and takes the shape of a narrow groove. It serves as a docking site for many nucleosome-binding proteins. Four side chains of the SIRT6 zinc-finger domain extend into different sections of the acidic patch groove and interact with the negatively charged residues. R175 packs against H2B L103 and serves as a classical ‘arginine anchor motif’ (McGinty and Tan, 2016), binding to the acidic triad of E61, D90 and E92 from H2A. SIRT6 presents two other arginines, R172, to contact E56 and Q24 of H2A as well as Q44 and E110 of H2B and R178 to contact H2A E91 and E102 from H2B. Finally, K170 interacts with E64 and N68 from H2A (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig3-v1.jpg)
+
+**Figure 3.:** (a) Close-up view on zinc-finger interactions with the acidic patch. Color code as in Figure 1. (b) Protein sequence alignment of human sirtuins. Red boxes and asterisks depict the residues of SIRT6 interacting with the acidic patch of the nucleosome. (c) Protein sequence alignment of SIRT6 from different species highlighting the same amino acids as in panel b. Organisms: mm Mus musculus, rn Rattus norvegicus, bt Bos taurus, hs Homo sapiens and cc Castor canadensis. (d) Depiction of the three arginines of SIRT6 (magenta) interacting with the DNA (grey). (e) H2A c-terminal tail (yellow) interacts with SIRT6(magenta). (f) SIRT6 binding to H2A or H2AZ containing nucleosomes. Bars show the fraction of residual nucleosomes that did not shift with bound SIRT6 in an electron-mobility shift assay (Figure 3—figure supplement 3). Bars represent mean ± SD of three biological replicates (shown as dots). ** indicates a statistically significant difference between the fraction of residual H2A and H2A.Z containing nucleosomes (p=0.0016 in paired t-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Electrophoretic mobility shift assay to test binding of Widom-601 nucleosome to wt and mutant SIRT6. Lower and upper shifted bands visible in SIRT6 wt lane likely correspond to one or two SIRT6 molecules bound to one nucleosome. (b–c) Deacetylation activity of SIRT6 and its mutants. W601_ac denotes SAGA-acetylated Widom-601 nucleosome. (b) Western blot analysis of H3K9Ac deactylation by wt, 3 A, or 4 A SIRT6. (c) Western blot analysis of H3K27Ac deacetylation by SIRT6.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Top view of the SIRT6 bound nucleosome. Two distinct densities were observed between SIRT6 and the DNA. (b) Side view of the SIRT6 bound nucleosome. The third helix of SIRT6 (α3), which is part of the cofactor binding loop is not present in the structure.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87989/elife-87989-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Z containing nucleosomes and canonical (H2A containing) ones. Used for creating Figure 3f.
 
 Substituting these four positively charged residues to alanines (SIRT6-4A) significantly weakened the interaction of SIRT6 with the nucleosomes as shown by electrophoretic gel-shift assay (Figure 3—figure supplement 1a). To test also the activity of SIRT6-4A, we first acetylated the H3 tails of the nucleosomes with purified SAGA complex. The mutant protein showed strongly diminished activity in deacetylating H3K9Ac, further corroborating the role of the four basic residues R175, R172, R178, and K170, in binding to the nucleosome (Figure 3—figure supplement 1b).
 
@@ -66,7 +118,7 @@ All four SIRT6-positive residues are located in a loop that makes a sharp turn, 
 
 It is important to note that the four positive residues of SIRT6 that bind the nucleosome acidic patch are conserved among vertebrates but in contrast are not present in other human sirtuins (Figure 3b and c). This probably reflects the fact that SIRT6 is the only sirtuin predominantly associated with chromatin.
 
-## Rossmann fold domain binds nucleosome DNA exit site
+### Rossmann fold domain binds nucleosome DNA exit site
 
 Due to its flexibility with respect to the fixed zinc finger domain, the resolution of the Rossmann fold domain is not sufficiently high to distinguish most individual side chains. However, secondary structure elements, mostly helices, are clearly visible and guided the precise fitting of the crystal structure of this domain.
 
@@ -76,7 +128,7 @@ Unlike other sirtuins, SIRT6 binds NAD+ in the absence of an acetylated substrat
 
 In addition, we find that the N-terminal part of the Rossmann fold domain associates with the C-terminal tail of histone H2A at residue K119 (Figure 3e). This observation suggests that monoubiquitination of H2A at this position, a major histone modification in mammalian cells, could interfere with the binding of SIRT6 or regulate its activity. Furthermore, we used electrophoretic mobility shift assay to follow the binding of SIRT6 to nucleosomes harboring the histone variant H2A.Z which deviates considerably from the canonical H2A in its C-terminal tail but not in other residues that contact SIRT6. Surprisingly, we find that binding of SIRT6 to nucleosomes is mildly (but statistically significant) stronger when H2A.Z is incorporated instead of H2A (Figure 3f and Figure 3—figure supplement 3). This finding could be related to SIRT6’s role in repressing gene expression because H2A.Z is enriched in nucleosomes that flank the transcription start site.
 
-## SIRT6 is poised to deacetylate the H3 tail
+### SIRT6 is poised to deacetylate the H3 tail
 
 The classical model of the nucleosome posits an elongated and disordered histone H3 N-terminal tail that freely roams and extends away from the core. However, recent NMR studies and molecular dynamics predictions show that the tail actually collapses onto the nucleosome core, driven by robust interactions with DNA (Ikebe et al., 2016; Stützer et al., 2016). The tail adopts multiple structurally heterogeneous, but energetically similar, states. It dynamically transitions between these conformations that all interact with the last superhelix location of nucleosomal DNA (Morrison et al., 2018). We used a published set of 15 predicted H3-tail conformations resulting from end-states of molecular dynamics simulations of the whole nucleosome (Morrison et al., 2018), to analyze whether the position of SIRT6 on the nucleosome serves the enzyme’s role in trapping residues of histone H3 tail. The nucleosome from each molecular dynamics simulation was superposed on our model of SIRT6 bound to a nucleosome with the DNA terminus at the canonical position. To represent the full range of movement of the Rossmann fold domain relative to the DNA, we used two endpoints of this movement namely fully bound to DNA and partially dissociated from it (Figure 4a and b, respectively). We then examined the position of the SIRT6 active site with respect to the predicted paths of the histone H3 tail.
 
@@ -108,57 +160,221 @@ Because the position of the SIRT6 active site seems to be well suited for modify
 
 ## Materials and methods
 
-## Human SIRT6 purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21-RIL</td>
+      <td>N/A</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SIRT6 (plasmid)</td>
+      <td>AddGene</td>
+      <td>#28271</td>
+      <td>SIRT6 (PDB: 3PKJ) in pET28a-LIC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mutant SIRT6 (DNA fragment)</td>
+      <td>SynBio</td>
+      <td></td>
+      <td>K170A, R172A, R175A, R178A, R220A, R231A and R248A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Widom601 DNA (plasmid)</td>
+      <td>Dyer et al., 2004</td>
+      <td></td>
+      <td>Gift from Dr. K. Mohideen-Abdul.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>X. laevis H2A, H2B, H3, H4 histones (plasmids)</td>
+      <td>Luger et al., 1999; Dyer et al., 2004</td>
+      <td></td>
+      <td>Gift from Dr. K. Mohideen-Abdul.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human H2A.Z.1 (plasmid)</td>
+      <td>AddGene</td>
+      <td>#42629</td>
+      <td>H2A.Z.1 in pET28a</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27ac(rabbit monoclonal)</td>
+      <td>CellSignaling</td>
+      <td>#8173 S</td>
+      <td>Diluted: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K9ac(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab4441</td>
+      <td>Diluted: 1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3(mouse monoclonal)</td>
+      <td>CellSignaling</td>
+      <td>#14269 S</td>
+      <td>Diluted: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td></td>
+      <td>v4.1</td>
+      <td>Automated data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EPU</td>
+      <td>Thermo Fisher</td>
+      <td>v3.4</td>
+      <td>Automated data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Warp</td>
+      <td>Warp</td>
+      <td>v1.0.9</td>
+      <td>Micrograph preprocessing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>cryoSPARC</td>
+      <td>v4</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>RELION</td>
+      <td>v3.1</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>crYOLO</td>
+      <td>crYOLO</td>
+      <td>v1.9.6</td>
+      <td>Particle picking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoDRGN</td>
+      <td>cryoDRGN</td>
+      <td>v1.1</td>
+      <td>Image analysis – structural flexibility analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepEMhancer</td>
+      <td>DeepEMhancer</td>
+      <td>v0.8</td>
+      <td>Map sharpening</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera/ChimeraX</td>
+      <td>UCSF ChimeraX</td>
+      <td>v1.16/1.6</td>
+      <td>Rigid body fitting, visualisation and figures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Isolde</td>
+      <td>Isolde</td>
+      <td>v1.6</td>
+      <td>Flexible fitting, model refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PHENIX</td>
+      <td>v1.21</td>
+      <td>Model refinement</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMBER20 suit</td>
+      <td>AMBER20</td>
+      <td></td>
+      <td>MD simulations</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human SIRT6 purification
 
 Plasmid (AddGene #28271) was transformed into E. coli strain BL21-RIL. Cells in 1 L TB (with 50 µg/mL Kanamycin and 25 µg/mL Chloramphenicol) grew at 37 °C degrees till OD600 reached 0.8 when they were rapidly cooled on ice to 18 °C. Over-expression was induced by the addition 0.5 mM IPTG and cells continued to grow at 18 °C over-night. All subsequent steps were performed at 0–4 °C and solutions were always supplemented with a protease inhibitor cocktail (PMSF, Pepstatin, E-64). Cells were harvested by centrifugation at 8250 g for 20 min, suspended in buffer A200 (20 mM HepesKOH pH 7.5, 5% glycerol v/v, 2 mM beta-mercaptoethanol and 200 mM NaCl) and treated with lysosyme (1 mg/mL) for 30 min on ice. Salt concentration was increased to 0.5 M and cells were then lysed by sonication (6*10 s). Debris was pelleted by centrifugation 45,000 × g*20 min. The supernatant was incubated with 0.5 mL of Ni beads (1 mL slurry, Roche), equilibrated in buffer A500, for 1 hr. The solution was poured into a gravity column (CliniScience). Beads were then washed with 10 mL of buffer A500 with 5 mM imidazole before elution by 2 mL of buffer B300 (20 mM HepesKOH pH 7.2, 5% glycerol v/v, 2 mM beta-mercaptoethanol and 300 mM NaCl) with 150 mM imidazole. The eluted protein was diluted with two volumes of buffer D (20 mM HepesKOH pH 7.0, 5% glycerol v/v, 2 mM beta-mercaptoethanol), loaded on a 1 mL Heparin column and eluted with 0.1 M–1 M salt gradient in buffer D. Fraction were analyzed by SDS-PAGE and those containing SIRT6 were pooled and dialyzed against buffer E (20 mM HepesKOH pH 7.5, 2% glycerol v/v, 0.5 mM TCEP and 150 mM NaCl). Human SIRT6 was then concentrated to 7.8 mg/mL, flash-frozen in liquid N2, and kept in aliquotes at –80 °C.
 
-## Cloning of SIRT6 mutants
+### Cloning of SIRT6 mutants
 
 The region of AddGene plasmid #28271 between SacI and HindIII sites was synthetized by SynBio company with changes in DNA sequence leading to K170A, R172A, R175A, R178A, R220A, R231A, and R248A mutations in amino acid sequence. A NheI restriction site was also introduced between the first four and last three mutations without changes in amino acid sequence in order to facilitate cloning. A plasmid expressing SIRT6-7A that incorporates all seven mutations was created via ligation of the synthetic DNA fragment into the original expression plasmid between the SacI and HindIII sites. Fragments of the original expression plasmid corresponding to the regions between HindIII and NheI or NheI and SacI were amplified with PCR and were cloned separately through corresponding restriction sites into the plasmid expressing SIRT6-7A to yield plasmids expressing SIRT6 with the first four mutations (SIRT6-4A) or the last three mutations (SIRT6-3A), respectively.
 
-## Octamer reconstitution and nucleosome DNA
+### Octamer reconstitution and nucleosome DNA
 
 Octamers were reconstituted from individual Xenopus leavis (canonical) or human (H2A.Z) histones expressed as inclusion bodies according to the standard protocol (Dyer et al., 2004; Luger et al., 1999). Widom-601 145 bp DNA was produced using a plasmid harboring 16 copies of this sequence as described by Dyer et al., 2004.
 
-## Nucleosome core particle reconstitution
+### Nucleosome core particle reconstitution
 
 Nucleosomes with 145 bp Widom-601 positioning sequence were prepared according to NEB Dilution Assembly Protocol (E5350) (https://international.neb.com/protocols/2012/06/02/dilution-assembly-protocol-e5350) with some modifications as follows: 2.75 µM 145 bp Widom-601 DNA was mixed with 2.75 µM canonical or H2A.Z histone octamers in a solution containing 2 M NaCl, 1 mM EDTA, 5 mM beta-mercaptoethanol. The solution was incubated for 30 min at RT and then underwent serial dilutions down to 1.48 M, 1 M, 0.6 M, 0.25 M NaCl with buffer LowSalt (10 mM HepesKOH pH 8.0, 2.5 mM beta-mercaptoethanol). After each dilution the solution was kept at RT for 30 min. In order to reduce the final NaCl concentration, nucleosomes were concentrated in 0.5 mL 100 KDa cutoff Amicon up to 100 µL, then diluted five times with buffer LowSalt. This step was repeated one more time. Finally, nucleosomes were concentrated to 3–4 µM and analyzed in a 5% native 0.2 x TBE polyacrylamide gel to ascertain the quality of the sample and absence of free DNA.
 
-## Nucleosome acetylation
+### Nucleosome acetylation
 
 Canonical Widom-601 nucleosomes (final concentration 1.8 µM) were mixed with the holo-SAGA complex (final 18 nM) purified from Pichia pastoris cells according to Papai et al., 2020 in 20 mM HepesKOH pH 7.5, 10% glycerol v/v, 50 mM NaCl, 2 mM MgCl2, 5 mM beta-mercaptoethanol, 0.005% Tween-20, and 0.05 mM Acetyl-CoA. Reaction was incubated on ice for 16 hr. On the next day SAGA was removed via incubation of the mixture with Streptavidin Sepharose beads. In order to reduce the remaining Acetyl-CoA concentration, nucleosomes were concentrated in 0.5 mL 100 KDa cutoff Amicon up to 100 µL, then diluted five times with buffer 10 mM HepesKOH pH 8.0, 2.5 mM beta-mercaptoethanol. This step was repeated four more times. Finally, the nucleosomes were concentrated to 3.5 µM.
 
-## Binding and gel-shift assays
+### Binding and gel-shift assays
 
 For nucleosome-binding assays, 100 nM of recombinant nucleosomes (harboring either H2A or H2A.Z histone) were incubated in binding buffer (10 mM HepesKOH pH 7.5, 50 mM NaCl, 0.5 mM TCEP, 6% glycerol v/v) with SIRT6 at 1:2 molar ratio. The reactions were performed on ice for 1 hr in LoBind tubes (Eppendorf) to minimize protein loss. The reactions were then resolved in a 5% 0.2 x TBE gel. The gel was stained with Ethidium Bromide. Bands were quantified with ImageJ.
 
-## Deacetylation assay
+### Deacetylation assay
 
 Non-acetylated or SAGA-acetylated canonical Widom-601 nucleosomes were mixed with SIRT6 (wt, SIRT6-4A or SIRT6-3A) at 100 nM and 40 nM, respectively, in 50 mM HepesKOH pH 7.5, 1 mM DTT, 0.2 mg/mL BSA, 1 mM NAD+. Reactions were set on ice and then incubated at 37 °C for 1 or 2 hr. Reactions were quenched by boiling with 5 x Laemmli buffer. The proteins were separated on 15% SDS-PAAG and acetylation was analyzed by Western blot using the following antibodies: for H3K27Ac CellSignaling #8173 S diluted 1:1000; for H3K9Ac Abcam Ab4441 1:2500; for H3 CellSignaling #14269 S 1:1000.
 
-## Grid preparation
+### Grid preparation
 
 SIRT6 was first diluted in buffer (20 mM HepesKOH pH 7.5, 150 mM NaCl, 0.5 mM TCEP, 2% Trehalose). Nucleosome and SIRT6 were then mixed at a 1:2 molar ratio. Final conditions included 1.7 µM Nucleosome and 3.4 µM SIRT6 in buffer (20 mM HepesKOH pH 7.5, 18 mM NaCl, 0.5 mM TCEP). After 1 hr on ice cross-linking agent glutaraldehyde and the detergent dodecyl-maltoside were added at a final concentration of 0.05% v/v and 0.0125% w/v, respectively. The sample was incubated with the cross-linker for an additional 30–60 min. Two nm carbon foil was floated on 3.5/1 300 mesh Quantifoil grids. Three µL of sample was deposited onto such grids, blotted 5 s with blot force 5 after 60 s incubation in a Vitrobot IV (Thermo Fisher) at 6 °C using 100% humidity and flash-frozen in liquid ethane.
 
-## cryo-EM data acquisition
+### cryo-EM data acquisition
 
 Two different datasets were collected. For the first dataset, images were acquired on a Cs-corrected Titan Krios G1 (Thermo Fisher) microscope operating at 300 kV in nanoprobe mode using serialEM for automated data collection. Movie frames were recorded on a Gatan K3 direct electron detector after a Quantum LS 967 energy filter using a 20 e-V slit width in zero-loss mode. Images were acquired hardware-binned at a nominal magnification of 81,000, which yielded a pixel size of 0.862 Å. Forty movie frames were recorded at a dose of 1.12 and 1.30 e− per Å2 per frame. The second image dataset was acquired on a Titan Krios G4 microscope operating at 300 kV in nanoprobe mode using EPU for automated data collection. Movie frames were recorded on a Flacon 4i direct electron detector after a Selectris X energy filter using a 10 e-V slit width in zero-loss mode. Images were acquired at nominal magnification of 270,000, which yielded a pixel size of 0.458 Å.
 
-## Image analysis
+### Image analysis
 
 For the first dataset movie frames were aligned, dose-weighted in Warp (Tegunov and Cramer, 2019) together with CTF estimation and particle picking. For the second dataset frame alignment, dose-weighting and CTF estimation was done in cryoSPARC (Punjani et al., 2017), picking was done with crYOLO (Wagner et al., 2019). These datasets were analyzed in cryoSPARC and RELION 3.1 (Zivanov et al., 2018) according to standard protocols. Briefly, images were subjected to reference-free 2D classification in cryoSPARC to remove images with contaminations. Ab-initio reconstruction was performed on the selected images followed by heterogenous and homogenous refinements in cryoSPARC. Structural variability and flexibility were explored with Relion 3.1 using 3D classification without alignment with different T values and cryoDRGN (Zhong et al., 2021) according to standard protocols. Sharpening of the maps was done with DeepEmhancer (Sanchez-Garcia et al., 2021).
 
-## Model building and refinement
+### Model building and refinement
 
 A composite map was created from the part corresponding to the SIRT6 Rossmann-fold from the structure of the first dataset and the SIRT6 Zn-finger plus nucleosome from the structure of the second dataset. Crystal structure of Widom-601 sequence containing nucleosome (PDB: 3LZ0) and human SIRT6 (PDB: 5X16) were rigid-body fitted into this composite cryo-EM structure in Chimera (Pettersen et al., 2004). Flexible-fittings were performed with Isolde (Croll, 2018) in ChimeraX (Goddard et al., 2018) into the cryoDRGN structures. All models were refined in real-space with PHENIX (Liebschner et al., 2019) and Isolde.
 
-## Depiction of SIRT6 – nucleosome structures
+### Depiction of SIRT6 – nucleosome structures
 
 The following maps are depicted in the figures:
 
 Figure 1: EMD-16845; Figure 2: b1-cryoDRGN run1 PC1 volume 0, b2-volume 9; e1-cryoDRGN run2 PC1 volume 0, e2-volume 9; Figure 3: a,d-EMD-16845, e-EMD-18497; Figure 4: a- cryoDRGN run2 PC1 volume 0, b-volume 9; Figure 1—figure supplement 4: a,b-EMD-16842, c-EMD-16843, d-EMD-18497; Figure 1—figure supplement 5: a-EMD-16842, c- cryoDRGN run1 PC1 volume 0 and nucleosome void of SIRT6 (Figure 1—figure supplement 2), d- nucleosome void of SIRT6; Figure 3—figure supplement 2: EMD-18497.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 All molecular dynamics (MD) simulations were performed with the AMBER20 suit of programs, using the ff14SB (Maier et al., 2015) force field with bsc1 DNA corrections (Ivani et al., 2016) and CUFIX ions corrections (Yoo and Aksimentiev, 2018) that improve the description of disordered region conformations. Parameters for the zinc finger were taken from Macchiagodena et al., 2020.
 

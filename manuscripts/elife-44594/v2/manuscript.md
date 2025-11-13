@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.44594.001 Many bacterial pathogens can cause septicemia and spread from the bloodstream into internal organs. During leptospirosis, individuals are infected by contact with Leptospira -containing animal urine-contaminated water. The spirochetes invade internal organs after septicemia to cause disease aggravation, but the mechanism of leptospiral excretion and spreading remains unknown. Here, we demonstrated that Leptospira interrogans entered human/mouse endothelial and epithelial cells and fibroblasts by caveolae/integrin-β1-PI3K/FAK-mediated microfilament-dependent endocytosis to form Leptospira (Lep)-vesicles that did not fuse with lysosomes. Lep-vesicles recruited Rab5/Rab11 and Sec/Exo-SNARE proteins in endocytic recycling and vesicular transport systems for intracellular transport and release by SNARE-complex/FAK-mediated microfilament/microtubule-dependent exocytosis. Both intracellular leptospires and infected cells maintained their viability. Leptospiral propagation was only observed in mouse fibroblasts. Our study revealed that L. interrogans utilizes endocytic recycling and vesicular transport systems for transcytosis across endothelial or epithelial barrier in blood vessels or renal tubules, which contributes to spreading in vivo and transmission of leptospirosis.
+Many bacterial pathogens can cause septicemia and spread from the bloodstream into internal organs. During leptospirosis, individuals are infected by contact with Leptospira-containing animal urine-contaminated water. The spirochetes invade internal organs after septicemia to cause disease aggravation, but the mechanism of leptospiral excretion and spreading remains unknown. Here, we demonstrated that Leptospira interrogans entered human/mouse endothelial and epithelial cells and fibroblasts by caveolae/integrin-β1-PI3K/FAK-mediated microfilament-dependent endocytosis to form Leptospira (Lep)-vesicles that did not fuse with lysosomes. Lep-vesicles recruited Rab5/Rab11 and Sec/Exo-SNARE proteins in endocytic recycling and vesicular transport systems for intracellular transport and release by SNARE-complex/FAK-mediated microfilament/microtubule-dependent exocytosis. Both intracellular leptospires and infected cells maintained their viability. Leptospiral propagation was only observed in mouse fibroblasts. Our study revealed that L. interrogans utilizes endocytic recycling and vesicular transport systems for transcytosis across endothelial or epithelial barrier in blood vessels or renal tubules, which contributes to spreading in vivo and transmission of leptospirosis.
 
 ## Introduction
 
@@ -43,49 +43,113 @@ Among pathogenic Leptospira species, L. interrogans is the most common causative
 
 ## Results
 
-## Endocytosis of L. interrogans in different cell types
+### Endocytosis of L. interrogans in different cell types
 
 L. interrogans strain Lai was internalized by human or mouse vascular endothelial cells (HUVEC or EOMA), renal tubular epithelial cells (HK-2 or TCMK-1) and human fibroblasts (BJ), with maximum intracellular leptospiral numbers at 4 hr post-infection, but the leptospires in mouse fibroblasts (NIH/3T3) continued to increase for longer (Figure 1A and B). The intracellular leptospires were located in membrane-bound vesicles (Lep-vesicles) (Figure 1C). Filipin, a caveolae-mediated endocytosis inhibitor, but not MDC or EIPA, a clathrin- or macropinocytosis-mediated endocytosis inhibitors, blocked leptospiral internalization. Moreover, the RGDS, a non-functional ITG ligand, and Cyto-D, a MF assembly inhibitor, but not COL, a MT assembly inhibitor, blocked leptospiral internalization. When the key component caveolin-1 (CAV1) of caveolae or β1-subfamily ITG (ITGB1) but not ITGB2 or ITGB3 of cells was depleted by siRNA interference, the number of Lep-vesicles was significantly decreased (Figure 1D,E and Figure 1—figure supplement 1A). In addition, the PI3K inhibitor LY294002 or FAK inhibitor 14/Y15 also blocked the formation of Lep-vesicles. However, the Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-depleted cells did not affect leptospiral uptake (Figure 1—figure supplement 1B and Figure 1—figure supplement 2). These data suggested that L. interrogans enters human and mouse vascular endothelial and renal tubular epithelial cells or fibroblasts by caveolae/ITGB1-PI3K- or caveolae/ITGB1-FAK-mediated MF-dependent endocytosis to form Lep-vesicles.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig1-v2.jpg)
+
+**Figure 1.:** (A) Leptospires in the cells infected with L. interrogans strain Lai for the indicated times, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red spots around the nucleus indicate the intracellular leptospires. (B) Statistical summary of red fluorescence intensity reflecting the leptospires in the infected cells for the indicated times. Statistical data from experiments such as shown in (A). Bars show the means ± SD of three independent experiments. The red fluorescence intensity values from the cells without infection (before infection) were set as 1.0. (C) Lep-vesicles in the cells infected with L. interrogans strain Lai for 4 hr, examined by transmission electron microscopy (scale bars = 0.5 μm). The arrows indicate the intracellular leptospires in the membrane-bound vesicles. (D) Decrease of leptospires in the different inhibitor- or siRNA-treated cells infected with L. interrogans strain Lai for 4 hr, examined by confocal microscopy (scale bars = 5 μm). The legends are the same as shown in (A). (E) Statistical summary of red fluorescence intensity reflecting the leptospires in the different inhibitor- or siRNA-treated cells infected with L. interrogans strain Lai for 4 hr. Statistical data from experiments such as shown in (D). The other legends are the same as shown in (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Depletion of CAV1, ITGB1, ITGB2 or ITGB3 in the siRNA-interfered cells, determined by Western Blot assay. (B) Depletion of Rab11, Sec15, Sec3, VAMP2 or SYN1 in the siRNA-interfered cells, determined by Western Blot assay.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The leptospires in the Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-delepted cells infected with L. interrogans strain Lai for 4 hr, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red spots around the nucleus indicate the intracellular leptospires.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig2-v2.jpg)
 
 **Figure 2.:** (A) No co-localization of Lep-vesicles with lysosomes in the cells during infection with L. interrogans strain Lai, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red or green spots indicate the Lep-vesicles or lysosomal marker LAMP1 molecules. No Lep-vesicle-LAMP1 co-localization (yellow) was found. (B) No significant expression increase of endocytic/excytotic and lysosomal proteins in the cells during infection with L. interrogans strain Lai, detected by Western Blot assay. C: the uninfected control cells.
 
-## Lep-vesicles do not fuse with lysosomes nor induce expression of target proteins during infection
+### Lep-vesicles do not fuse with lysosomes nor induce expression of target proteins during infection
 
 Lep-vesicles did not co-localize with the lysosomal marker LAMP1 in any of the cell types during a 24 hr infection with L. interrogans strain Lai (Figure 2A). In addition, the expression of Rab5, Rab11, Sec15, Sec-3, VAMP2, SYN1 and LAMP1 did not show a significant increase in the infected cells compared with uninfected control cells (Figure 2B). These data suggested that the endocytic vesicles of L. interrogans in the infected endothelial and epithelial cells and fibroblasts do not fuse with lysosomes during infection, and the leptospiral infection has no influence on the expression of endocytosis/excytosis-associated and lysosomal proteins.
 
-## Early and recycling endosome formation of Lep-vesicles by recruitment of Rab5 and Rab11/TfR proteins
+### Early and recycling endosome formation of Lep-vesicles by recruitment of Rab5 and Rab11/TfR proteins
 
 The Lep-vesicles in the cells rapidly co-localized with the early endosome marker Rab5, with maximum co-localization percentages of 86.7–95.3% at 1 or 2 hr during infection with L. interrogans strain Lai (Figure 3A–B and Figure 3—figure supplement 1A). The Lep-vesicles were then co-localized with the recycling endosome markers Rab11 and transferrin receptor (TfR), with maximal co-localization percentages of 75.2–90.3% at 4 hr post-infection (Figure 3D–E and Figure 3—figure supplement 1B). The yellow or white fluorescence intensity (FI) reflecting the Lep-vesicle-early endosomes or Lep-vesicle-recycling endosomes in the infected HUVEC, EOMA, BJ, HK-2 or TCMK-1 cells showed a slight decrease during the late stages of infection, while the FI in the infected mouse fibroblasts (NIH/3T3) continued to increase (Figure 3C and F). These data suggested that Lep-vesicles can recruit Rab5 and Rab11 to form Lep-vesicle-early endosomes and Lep-vesicle-recycling endosomes.
 
-## Recycling endosome-exocyst complex formation of Lep-vesicles by recruitment of Sec/Exo proteins
+![Figure 3.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig3-v2.jpg)
+
+**Figure 3.:** (A) Co-localization of Lep-vesicles with Rab5 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red or green spots indicate the Lep-vesicles or early endosome marker Rab5. The yellow spots indicate the Lep-vesicle-Rab5 co-localization. The Lep-vesicle-Rab5 co-localization in the EOMA, HK-2 and BJ cells during infection was shown in the Figure 3—figure supplement 1A . (B) Statistical summary of Lep-vesicle-Rab5 co-localization percentages for the indicated times. Statistical data from experiments such as shown in (A). Bars show the means ± SD of three independent experiments. Two hundred cells in each experiment were analyzed to calculate the percentages. (C) Statistical summary of yellow fluorescence intensity reflecting the Lep-vesicle-Rab5 co-localization for the indicated times. The legends are the same as shown in (B) but for detection of the yellow fluorescence intensity (FI). The yellow FI values from the uninfected cells (before infection) were set as 1.0. (D) Co-localization of Lep-vesicles with Rab11 and TfR in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, blue or green spots indicate the Lep-vesicles, recycling endosome marker Rab11 or TfR. The white spots indicate the Lep-vesicle-Rab11/TfR co-localization. The Lep-vesicle-Rab11/TfR co-localization in the EOMA, HK-2 and BJ cells during infection was shown in the Figure 3—figure supplement 1B . (E) Statistical summary of Lep-vesicle-Rab11/TfR co-localization percentages for the indicated times. Statistical data from experiments such as shown in (D). The other legends are the same as shown in (B) but for determination of Lep-vesicle-Rab11/TfR co-localization percentages. (F) Statistical summary of white fluorescence intensity reflecting the Lep-vesicle-Rab11/TfR co-localization for the indicated times. Statistical data from experiments such as shown in (D). The other legends are the same as shown in (C) but for detection of white FI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Co-localization of Lep-vesicles with Rab5 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red or green spots indicate the Lep-vesicles or early endosome marker Rab5. The yellow spots indicate the Lep-vesicle-Rab5 co-localization. (B) Co-localization of Lep-vesicles with Rab11 and TfR in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, blue or green spots indicate the Lep-vesicles, recycling endosome marker Rab11 or TfR. The legends are the same as shown in (A) but for detection of Lep-vesicle-Rab11/TfR co-localization.
+
+### Recycling endosome-exocyst complex formation of Lep-vesicles by recruitment of Sec/Exo proteins
 
 Sec15 can bind to Rab11 to initiate the cascade binding of seven other Sec/Exo proteins to form recycling endosome-exocyst complex, which guides transport of vesicles towards cytomembrane by binding to Sec3 and Exo70 (Guichard et al., 2010; Zhang et al., 2004). The Lep-vesicle-recycling endosomes in the cells co-localized with Sec15 or Sec3, with maximum co-localization percentages of 73.7–84.2% or 69.2–81.9% at 8–12 hr during infection with L. interrogans strain Lai (Figure 4A,B,D,E and Figure 4—figure supplement 1A-B ). The white FI reflecting Lep-vesicle-recycling endosome-exocyst complexes in the infected HUVEC, EOMA, BJ, HK-2 or TCMK-1 cells showed a slight decrease at 24 hr post-infection, but the IF in the infected mouse fibroblasts (NIH/3T3) continued to increase (Figure 4C and F). Anthrax toxin, composed of edema factor (EF), lethal factor (LF) and protective antigen (PA), has been confirmed as inhibitors of Rab11-Rab15 binding, in which EF plus PA (EF +PA) inhibit Rab11 while LF plus PA (LF +PA) inhibit Sec15 (Guichard et al., 2017). When the cells were treated with LF +PA or EF +PA, the Lep-vesicle-recycling endosome-exocyst complexes were absent during infection (Figure 4G and Figure 4—figure supplement 1C ), while the treatment of anthrax toxins did not affect leptospiral uptake into the cells compared with untreated cells (Figure 4H and Figure 4—figure supplement 1D ). These data suggested that Lep-vesicle-recycling endosomes can recruit Sec/Exo proteins to form Lep-vesicle-recycling endosome-exocyst complexes.
 
-## Recycling endosome-exocyst-SNARE complex formation of Lep-vesicles by recruitment of VAMP2/SYN1
+![Figure 4.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig4-v2.jpg)
+
+**Figure 4.:** (A) Co-localization of Lep-vesicle-Rab11 with Sec15 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, blue or green spots indicate the Lep-vesicles, recycling endosome marker Rab11 or exocyst complex marker Sec15. The white spots indicate the Lep-vesicle-Rab11-Sec15 co-localization. The Lep-vesicle-Rab11-Sec15 co-localization in the EOMA, HK-2 and BJ cells during infection was shown in the Figure 4—figure supplement 1A . (B) Statistical summary of Lep-vesicle-Rab11-Sec15 co-localization percentages for the indicated times. Statistical data from experiments such as shown in (A). Bars show the means ± SD of three independent experiments. Two hundred cells in each experiment were analyzed to calculate the percentages. (C) Statistical summary of white fluorescence intensity reflecting the Lep-vesicle-Rab11-Sec15 co-localization for the indicated times. The legends are the same as shown in (B) but for detection of the white fluorescence intensity (FI). The white FI values from the uninfected cells (before infection) were set as 1.0. (D) Co-localization of Lep-vesicle-Rab11 with Sec3 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, blue or green spots indicate the Lep-vesicles, recycling endosome marker Rab11 or exocyst complex marker Sec3. The white spots indicate the Lep-vesicle-Rab11-Sec3 co-localization. The Lep-vesicle-Rab11-Sec3 co-localization in the EOMA, HK-2 and BJ cells during infection was shown in Figure 4—figure supplement 1B . (E) Statistical summary of Lep-vesicle-Rab11-Sec3 co-localization percentages for the indicated times. Statistical data from experiments such as shown in (D). The legends are the same as shown in (B) but for determination of Lep-vesicle-Rab11-Sec3 co-localization percentages. (F) Statistical summary of white fluorescence intensity reflecting the Lep-vesicle-Rab11-Sec3 co-localization for the indicated times. Statistical data from experiments such as shown in (D). The other legends are the same as shown in (C). (G) Absence of Lep-vesicle-recycling endosome-exocyst complexes in the anthrax toxin-treated cells infected with L. interrogans strain Lai for 8 hr, determined by confocal microscopy (scale bars = 5 μm). No white spots indicating the co-localization of Lep-vesicles with recycling endosome marker Rab11 and exocyst complex marker Sec15 were found. The Lep-vesicle-recycling endosome-exocyst complexes in the anthrax toxin-treated EOMA, HK-2 and BJ cells at 8 hr post-infection were shown in the Figure 4—figure supplement 1C . (H) Statistical summary of red fluorescence intensity reflecting the leptospires in the anthrax toxin-treated cells for the indicated times, examined by confocal microscopy. Bars show the means ± SD of three independent experiments. The red fluorescence intensity values from the uninfected cells (before infection) were set as 1.0.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Co-localization of Lep-vesicle-Rab11 with Sec15 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, blue or green spots indicate the Lep-vesicles, recycling endosome marker Rab11 or exocyst complex marker Sec15. The white spots indicate the Lep-vesicle-Rab11-Sec15 co-localization. (B) Co-localization of Lep-vesicle-Rab11 with Sec3 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The legends are the same as shown in (A) but for detection of Lep-vesicle-Rab11-Sec3 co-localization. (C) Absence of Lep-vesicle-recycling endosome-exocyst complexes in the anthrax toxin-treated cells infected with L. interrogans strain Lai for 8 hr, determined by confocal microscopy (scale bars = 5 μm). No white spots indicating the co-localization of Lep-vesicles with recycling endosome marker Rab11 and exocyst complex marker Sec15 were found. (D) Leptospires in the anthrax toxin-treated cells infected with L. interrogans strain Lai for the indicated times, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red spots around the nucleus indicate the intracellular leptospires.
+
+### Recycling endosome-exocyst-SNARE complex formation of Lep-vesicles by recruitment of VAMP2/SYN1
 
 VAMP2 can bind to recycling endosome-exocyst complexes and link SYN1 by SNAP25 to form recycling endosome-exocyst-SNARE complexes for exocytosis (Baker and Hughson, 2016; He and Guo, 2009). The Lep-vesicle-recycling endosome-exocyst complexes in the cells co-localized with VAMP2 or SYN1 with maximum co-localization of 71.8–87.1% or 68.1–87.9% at 12 hr during infection with L. interrogans strain Lai (Figure 5A,B,D,E and Figure 5—figure supplement 1A-B ). However, the white FI reflecting Lep-vesicle-recycling endosome-exocyst-SNARE complexes in the infected HUVEC, EOMA, BJ, HK-2 or TCMK-1 cells showed a slight decrease at 24 hr post-infection, but the FI in the infected mouse fibroblasts (NIH/3T3) continued to increase (Figure 5C and F). Interestingly, the Lep-vesicle-recycling endosome-exocyst-SNARE complexes in the cells were located on the inside of cytomembrane to form ring-like shapes during the late stages of infection (Figure 5D and Figure 5—figure supplement 1B ). When the cells were transfected with the gene for the light chain of botulismotoxin D (BoNT/D-LC) or C (BoNT/C-LC), the VAMP2 or SYN1 cleaver (Rossetto et al., 2014), the Lep-vesicle-recycling endosome-exocyst-SNARE complexes were absent (Figure 5G and Figure 5—figure supplement 1C , while the transfection of botulismotoxins did not affect the leptospiral uptake of the cells compared with untreated cells (Figure 5H and Figure 5—figure supplement 1D ). In addition, the BoNT/D-LC or BoNT/C-LC transfection did not affect the SYN1 expression in the VAMP2-cleaved cells or VAMP2 expression in the SYN1-cleaved cells (Figure 5—figure supplement 2 ). These data suggested that Lep-vesicle-RE-EC can acquire SNARE proteins to form Lep-vesicle-recycling endosome-exocyst-SNARE complexes.
 
-## Exocytosis and propagation of intracellular L. interrogans
+![Figure 5.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig5-v2.jpg)
+
+**Figure 5.:** (A) Co-localization of Lep-vesicle-Sec15 with VAMP2 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, green or blue spots indicate the Lep-vesicles, exocyst complex marker Sec15 or SNARE complex marker VAMP2. The white spots indicate the Lep-vesicle-Sec15-VAMP2 co-localization. The Lep-vesicle-Sec15-VAMP2 co-localization in the EOMA, HK-2 and BJ cells during infection was shown in the Figure 5—figure supplement 1A. (B) Statistical summary of Lep-vesicle-Sec15-VAMP2 co-localization percentages for the indicated times. Statistical data from experiments such as shown in (A). Bars show the means ± SD of three independent experiments. Two hundred cells in each experiment were analyzed to calculate the percentages. (C) Statistical summary of white fluorescence intensity values reflecting the Lep-vesicle-Sec15-VAMP2 co-localization for the indicated times. The legends are the same as shown in (B) but for detection of the white fluorescence intensity (FI). The white FI values from the uninfected cells (before infection) were set as 1.0. (D) Co-localization of Lep-vesicle-Sec15 with SYN1 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, green or blue spots indicate the Lep-vesicles-RE, EC marker Sec15 or SNARE-C marker SYN1. The white spots indicate the Lep-vesicle-Sec15-SYN1 co-localization. The Lep-vesicle-Sec15-SNY1 co-localization in the EOMA, HK-2 and BJ cells during infection was shown in the Figure 5—figure supplement 1B. (E) Statistical summary of Lep-vesicle-Sec15-SYN1 co-localization percentages for the indicated times. Statistical data from experiments such as shown in (D). The legends are the same as shown in (B) but for determination of Lep-vesicle-Sec15-SYN1 co-localization percentages. (F) Statistical summary of white fluorescence intensity reflecting the Lep-vesicle-Sec15-SYN1 co-localization for the indicated times. Statistical data from experiments such as shown in (D). The other legends are the same as shown in (C). (G) Absence of Lep-vesicle-exocyst-SNARE complexes in the botulismotoxin-treated cells infected with L. interrogans strain Lai for 12 hr, determined by confocal microscopy (scale bars = 5 μm). No white spots indicating the co-localization of Lep-vesicles with exocyst complex marker Sec15 and SNARE complex markers VAMP2/SYN1 were found. The Lep-vesicle-exocyst-SNARE complexes in the botulismotoxin-treated EOMA, HK-2 and BJ cells at 12 hr post-infection were shown in the Figure 5—figure supplement 1C. (H) Statistical summary of red fluorescence intensity reflecting the leptospires in the botulismotoxin-transfected cells for the indicated times, examined by confocal microscopy. Bars show the means ± SD of three independent experiments. The red fluorescence intensity values from the uninfected cells (before infection) were set as 1.0.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Co-localization of Lep-vesicle-Sec15 with VAMP2 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The red, green or blue spots indicate the Lep-vesicles, exocyst complex marker Sec15 or SNARE complex marker VAMP2. The white spots indicate the Lep-vesicle-Sec15-VAMP2 co-localization. (B) Co-localization of Lep-vesicle-Sec15 with SYN1 in the cells infected with L. interrogans strain Lai for the indicated times, determined by confocal microscopy (scale bars = 5 μm). The legends are the same as shown in (A) but for detection of Lep-vesicle-Seca5-SYN1 co-localization. (C) Absence of Lep-vesicle-exocyst-SNARE complexes in the botulismotoxin-treated cells infected with L. interrogans strain Lai for 12 hr, determined by confocal microscopy (scale bars = 5 μm). No white spots indicating the co-localization of Lep-vesicles with exocyst complex marker Sec15 and SNARE complex markers VAMP2/SYN1 were found. (D) Leptospires in the botulismotoxin-treated or untreated cells infected with L. interrogans strain Lai for the indicated times, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red spots around the nucleus indicate the intracellular leptospires.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The expressed BoNT/D-LC or BoNT/C-LC in the pcDNA3.1BoNT/C-LC- or pcDNA3.1BoNT/D-LC-transfected cells, determined by Western Blot assay. (B) Absence of VAMP2 or SYN1 in the BoNT/D-LC- or BoNT/C-LC-expressed cells, determined by Western Blot assay. (C) Expression of VAMP2 in the BoNT/C-LC-transfected cells and SYN1 in the BoNT/D-LC-transfected cells, determined by Western Blot assay. (D) Fluorescence staining of VAMP2 in the BoNT/C-LC-transfected cells and SYN1 in the BoNT/D-LC-transfected cells, determined by confocal microscopy (scale bars = 5 μm).
+
+### Exocytosis and propagation of intracellular L. interrogans
 
 After a 4 hr infection with L. interrogans strain Lai and removal of extracellular leptospires during a 24 hr subsequent incubation (re-incubation), the intracellular leptospires were released from all the infected cells, while the leptospiral release were prevented by Rab11, Sec15, Sec3, VAMP2 or SYN1 depletion, LF + PA, EF + PA, BoNT/C-LC or BoNT/D-LC treatment, or MF, MT or FAK but not PI3K inhibition (Figure 6A). In particular, the released leptospires from mouse NIH/3T3 fibroblasts were significantly higher than those from the other five cell types during re-incubation (Figure 6A and B) and the leptospiral levels in the mouse fibroblasts were also persistently elevated while those in the other five cell types gradually decreased (Figure 6C–D and Figure 6—figure supplement 1A ). Rab11, Sec15, Sec3, VAMP2 or SYN1 depletion, anthrax toxin treatment and botulismotoxin transfection resulted in the accumulation of leptospires in the cells (Figure 6E–F and Figure 6—figure supplement 1B ). These data suggested that L. interrogans is released from human or mouse vascular endothelial and epithelial cells and fibroblasts by endocytic recycling and vesicular transport systems-mediated FAK-MF/MT-dependent exocytosis and that the spirochete can propagate in mouse fibroblasts.
 
-## Viability of released L. interrogans and infected cells
+![Figure 6.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig6-v2.jpg)
+
+**Figure 6.:** (A) Endocytic recycling and vesicular transport systems-mediated exocytosis of L. interrogans strain Lai from the infected cells after a 24 hr extracellular leptospire-free re-incubation, examined by dark field microscopic Petroff-Hausser enumeration. Bars show the means ± SD of three independent experiments. (B) Release of L. interrogans strain Lai from the infected cells for the indicated times during extracellular leptospire-free re-incubation, examined by dark field microscopic Petroff-Hausser enumeration. Bars show the means ± SD of three independent experiments. (C) Number of L. interrogans strain Lai in the infected cells for the indicated times during extracellular leptospire-free re-incubation, examined by dark field microscopic Petroff-Hausser enumeration. The legend is the same as shown in (B). (D) Statistical summary of fluorescence intensity reflecting the number of L. interrogans strain Lai in the infected cells for the indicated times during extracellular leptospire-free re-incubation, examined by confocal microscopy. Bars show the means ± SD of three independent experiments. The fluorescence intensity values reflecting the leptospires in the cells after a 4 hr infection with the spirochete (without re-incubation) were set as 1.0. (E) Number of L. interrogans strain Lai in the siRNA- or toxin-treated infected cells after a 24 hr extracellular leptospire-free re-incubation, examined by dark field microscopic Petroff-Hausser enumeration. The legend is the same as shown in (B). (F) Statistical summary of fluorescence intensity reflecting the number of L. interrogans strain Lai in the siRNA- or toxin-treated infected cells after a 24 hr extracellular leptospire-free re-incubation, examined by confocal microscopy. The legends are the same as shown in (D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Leptospires in the cells after a 4 hr infection with L. interrogans strain Lai for the indicated times during extracellular leptospire-free re-incubation, examined by confocal microscopy (scale bars = 5 μm). The blue plaques indicate the nucleus. The red spots around the nucleus indicate the intracellular leptospires. (B) Leptospires in the siRNA- or toxin-treated cells after a 4 hr infection with L. interrogans strain Lai for a 24 hr extracellular leptospire-free re-incubation, examined by confocal microscopy (scale bars = 5 μm). The legends are the same as shown in (A).
+
+### Viability of released L. interrogans and infected cells
 
 The viability of leptospires released from the cells infected with L. interrogans strain Lai was similar to those from culture, with 93.1–96.2% of the spirochete being alive (Figure 7A–B and Figure 7—figure supplement 1A ). The growth ability of released leptospires showed no significant difference compared to those from culture (Figure 7C). In addition, all the infected cells also remained fully viable (Figure 7D–E and Figure 7—figure supplement 1B ). These data suggested that both the L. interrogans and infected cells during infection maintain their viability.
 
-## Transcytosis of L. interrogans through cell monolayers
+![Figure 7.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig7-v2.jpg)
+
+**Figure 7.:** (A) Viability of L. interrogans strain Lai released from the infected cells for the indicated times, examined by confocal microscopy (scale bars = 10 μm). The green leptospires are living and the red leptospires are dead. Almost no dead leptospires could be found. Viability of the spirochete released from the infected EOMA, HK-2 and BJ cells was shown in the Figure 7—figure supplement 1A . (B) Percentages of living L. interrogans strain Lai released from the infected cells for the indicated times, examined by spectrofluorometry. Bars show the means ± SD of three independent experiments. (C) Growth ability of L. interrogans strain Lai released from the infected cells in EMJH medium for a 7-d incubation at 28°C for the indicated times, determined by dark field microscopic Petroff-Hausser enumeration. Bars show the means ± SD of three independent experiments. The leptospiral inoculated dose was 107. (D) Viability of the cells during infection with L. interrogans strain Lai for the indicated times, determined by MTT. Bars show the means ± SD of three independent experiments. (E) No apoptotic/necrotic cells during infection with L. interrogans strain Lai for the indicated times, determined by flow cytometry. The annexin-V+/PI- cells are early-apoptotic and the annexin-V+/PI+ cells are post-apoptotic/necrotic. Camptothecin, a cellular apoptotic inducer, is used as the positive control. Almost no apoptotic/necrotic infected cells were found. Viability of the EOMA, HK-2 and BJ cells during infection with the spirochete by flow cytometry was shown in the Figure 7—figure supplement 1B .
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Viability of L. interrogans strain Lai released from the infected cells for the indicated times, examined by confocal microscopy (scale bars = 10 μm). The green leptospires are living and the red leptospires are dead. Almost no dead leptospires were found. (B) No apoptotic or necrotic cells during infection with L. interrogans strain Lai for the indicated times, determined by flow cytometry. The annexin-V+/PI- cells are early-apoptotic and the annexin-V+/PI+ cells are post-apoptotic/necrotic. Almost no apoptotic or necrotic cells were found. Camptothecin, a cellular apoptotic inducer, is used as the positive control.
+
+### Transcytosis of L. interrogans through cell monolayers
 
 L. interrogans strain Lai was able to rapidly migrate through different cell monolayers, with maximal transcytosis of 47.1–53.3% (upper to lower compartments) and 43.1–48.7% (lower to upper compartments) (Figure 8A and B). The trans-endothelial or epithelial electrical resistance (TEER) values of the cell monolayers during infection remained higher than 200 Ω/cm2 (206–223 Ω/cm2) and the percentages of FITC-dextran passing through the cell monolayers during infection maintained 13.6–16.8% (Figure 8C and D), indicating that the cell monolayers remained intact (Kassegne et al., 2014; Lander et al., 2014; Rezaee et al., 2013). These data suggested that L. interrogans is able to migrate through human or mouse blood vessels and renal tubules without causing damage to host cells.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig8-v2.jpg)
 
-**Figure 8.:** L. interrogans through different cell monolayers.(A) Transcytosis of L. interrogans strain Lai through different cell monolayers for the indicated times, examined by confocal microscopy. The green lines indicate the cytomembrane and cellular spaces. The red spots indicate the leptospires passing through cell monolayers. (B) Transcytosis percentages of L. interrogans strain Lai through different cell monolayers for the indicated times, determined by dark field microscopic Petroff-Hausser enumeration. The time points show the means ± SD of three independent experiments. (C) The TEER change of cell monolayers during infection with L. interrogans strain Lai, examined using a cell electric resistance indicator. The time points show the means ± SD of three independent experiments. The TEER values > 200 Ω /cm2 indicate the integrity of cell monolayers and undamage of cells. (D) The permeability percentage of FITC-dextran passing through cell monolayers during infection with L. interrogans strain Lai, detected by spectrofluorometry. The time points show the means ± SD of three independent experiments. The permeability percentages < 15–20% indicate the integrity of cell monolayers and undamage of cells.  10.7554/eLife.44594.021Figure 8—source data 1.Figure 8B–D.
+**Figure 8.:** (A) Transcytosis of L. interrogans strain Lai through different cell monolayers for the indicated times, examined by confocal microscopy. The green lines indicate the cytomembrane and cellular spaces. The red spots indicate the leptospires passing through cell monolayers. (B) Transcytosis percentages of L. interrogans strain Lai through different cell monolayers for the indicated times, determined by dark field microscopic Petroff-Hausser enumeration. The time points show the means ± SD of three independent experiments. (C) The TEER change of cell monolayers during infection with L. interrogans strain Lai, examined using a cell electric resistance indicator. The time points show the means ± SD of three independent experiments. The TEER values > 200 Ω /cm2 indicate the integrity of cell monolayers and undamage of cells. (D) The permeability percentage of FITC-dextran passing through cell monolayers during infection with L. interrogans strain Lai, detected by spectrofluorometry. The time points show the means ± SD of three independent experiments. The permeability percentages < 15–20% indicate the integrity of cell monolayers and undamage of cells.
 
-## Transcytosis of L. interrogans through cell monolayers mediated by endocytic recycling and vesicular transport systems
+### Transcytosis of L. interrogans through cell monolayers mediated by endocytic recycling and vesicular transport systems
 
 The transcytosis of L. interrogans strain Lai decreased significantly through the Rab11-, Sec15-, Sec-3, VAMP2- or SYN1-depleted cell monolayers, or filipin- or RGDS- but not MDC- or EIPA-treated cell monolayers (Figure 9A and B). LF + PA and BoNT/D-LC also blocked leptospiral transcytosis (Figure 9C). The TEER values of the cell monolayers were still higher than 200 Ω/cm2 under all these conditions (Figure 9—figure supplement 1A–C). However, when the cell monolayers were treated with LY294002, 14/Y15, Cyto-D, COL, EF + PA or BoNT/C-LC, the TEER values decreased to levels below 200 Ω/cm2 (Figure 9—figure supplement 1D) and therefore transwell assays of the cell monolayers treated with these inhibitors and toxins were not performed. These data suggested that the endocytic recycling and vesicular transport systems mediate the transcytosis of L. interrogans through human or mouse small blood vessel endothelial and renal tubular epithelial monolayers.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig9-v2.jpg)
+
+**Figure 9.:** (A) Decreased transcytosis of L. interrogans strain Lai through the filipin- or RGDS-inhibited cell monolayers, examined by transwell test and dark field microscopic Petroff-Hausser enumeration. The time points show the means ± SD of three independent experiments. (B) Decreased transcytosis of L. interrogans strain Lai through the Rab11-, Sec15-, Sec-3, VAMP2- or SYN1-depleted cell monolayers, examined by transwell test and dark field microscopic Petroff-Hausser enumeration. The legends are the same as shown in (A). (C) Decreased transcytosis of L. interrogans strain Lai through the LF + PA or BoNT/D-LC-treated cell monolayers, examined by transwell test and dark field microscopic Petroff-Hausser enumeration. The legends are the same as shown in (A).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/44594/elife-44594-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Higher TEER of the MDC-, filipin-, EIPA- or RGDS-treated cell monolayers during incubation or infection with L. interrogans for the indicated times, detected using a cell electric resistance indicator. (B) Higher TEER of the Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-depleted cell monolayers during incubation or infection with L. interrogans for the indicated times, detected using a cell electric resistance indicator. (C) Higher TEER of the LF + PA or BoNT/D-LC-treated cell monolayers during incubation or infection with L. interrogans for the indicated times, detected using a cell electric resistance indicator. (D) Lower TEER of the LY294002-, 14/Y15-, Cyto-D, COL-, EF + PA or BoNT/C-LC-pretreated cell monolayers, detected using a cell electric resistance indicator.
 
 ## Discussion
 
@@ -107,86 +171,558 @@ Taken together, our findings revealed that L. interrogans enters human or mouse 
 
 ## Materials and methods
 
-## Leptospiral strain and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Clostridium botulinum)</td>
+      <td>The DNA segments encoding BoNT/C-LC (1–449 residues)</td>
+      <td></td>
+      <td>GenBank accession No.: X53751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clostridium botulinum)</td>
+      <td>The DNA segments encoding BoNT/D-LC (1–445 residues)</td>
+      <td></td>
+      <td>GenBank accession No.: AB012112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Leptospira interrogans)</td>
+      <td>serogroup Icterohaemorrhagiae serovar Lai strain Lai</td>
+      <td>National Institute for Control of Pharmaceutical and Biological Products, China</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HUVEC</td>
+      <td>ATCC</td>
+      <td>CRL-1730</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HK-2</td>
+      <td>Cell Bank, Chinese Academy of Sciences</td>
+      <td>SCSP-511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>BJ</td>
+      <td>ATCC</td>
+      <td>CRL-2522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>EOMA</td>
+      <td>ATCC</td>
+      <td>CRL-2586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>TCMK-1</td>
+      <td>ATCC</td>
+      <td>CCL-139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH/3T3</td>
+      <td>Cell Bank, Chinese Academy of Sciences</td>
+      <td>SCSP-515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-strain Lai-IgG</td>
+      <td>This study</td>
+      <td></td>
+      <td>Immuno fluorescence (IF; 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor594-conjugated donkey anti-rat-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab150156</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Rab5-IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#2143</td>
+      <td>IF(1:100); Western Blot (WB; 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Rab11-IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#5589</td>
+      <td>IF(1:100); WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-VAMP2-IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#13508</td>
+      <td>IF(1:200); WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-LAMP1-IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#3243</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Sec15-IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-34365</td>
+      <td>IF(1:100); WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Sec3-IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-244104</td>
+      <td>IF(1:100); WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-SYN1-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab41453</td>
+      <td>IF(1:500); WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-rabbit-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab6721</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated donkey anti-goat-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab97110</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-LAMP1-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab62562</td>
+      <td>IF(1:100); WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor488-conjugated donkey anti-rabbit-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab150073</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-transferrin receptor (TfR)-IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-7087</td>
+      <td>IF(1:100); WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor488-conjugated donkey anti-goat-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab150129</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor405-conjugated donkey anti-rabbit-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab175651</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti- Na/K-ATPase-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab76020</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CAV1-IgG</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#3267</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-ITGB1-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab179471</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ITGB2-IgG</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#sc-8420</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-ITGB3-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab119992</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-BoNT/C-LC-IgG</td>
+      <td>MyBioSource</td>
+      <td>Cat#MBS1497273</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep anti-BoNT/D-LC-IgG</td>
+      <td>R&amp;D</td>
+      <td>Cat#AF6037</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-mouse-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab205719</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated donkey anti-sheep-IgG</td>
+      <td>Abcam</td>
+      <td>Cat#ab97125</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD Bacterial Viability Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#L7012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Proliferation Kit</td>
+      <td>Sigma</td>
+      <td>Cat#11465007001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Dead/Apoptosis Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat#V13241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Edema factor of anthrax toxin</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat#178A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lethal factor of anthrax toxin</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat#169A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protective antigen of anthrax toxin</td>
+      <td>List Biological Laboratories</td>
+      <td>Cat#171E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM medium</td>
+      <td>GiBco</td>
+      <td>Cat#11965–092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RPMI-1640 medium</td>
+      <td>GiBco</td>
+      <td>Cat#11875–093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal calf serum</td>
+      <td>GiBco</td>
+      <td>Cat#10099141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human CAV1 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS141466</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse CAV1 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS273501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human ITGB1 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS105559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse ITGB1 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS205553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human ITGB2 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS105562</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse ITGB2 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS205556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human ITGB3 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS105565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse ITGB3 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS205563</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Sec15 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS123022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Sec15 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS200786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Sec3 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS124985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Sec3 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS229985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human VAMP2 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#HSS144163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse VAMP2 siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MSS278658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Rab11 siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat#D-004726–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Rab11 siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat#D-040863–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human SYN1 siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat#D-012677–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse SYN1 siRNA</td>
+      <td>Dharmacon</td>
+      <td>Cat#D-050438–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Negative control siRNA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#12935100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#13778500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#L3000008</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Leptospiral strain and culture
 
 L. interrogans serogroup Icterohaemorrhagiae serovar Lai strain Lai was provided by the National Institute for Control of Pharmaceutical and Biological Products, China. The strain was cultivated at 28°C in Ellinghausen–McCullough–Johnson–Harris (EMJH) medium (Hu et al., 2017).
 
-## Cell lines and culture
+### Cell lines and culture
 
 The human umbilical vein endothelial cell line (HUVEC), renal tubular epithelial cell line (HK-2) and fibroblast cell line (BJ) as well as mouse blood vessel endothelioma cell line (EOMA), renal tubular epithelial cell line (TCMK-1) and fibroblast cell line (NIH/3T3) were originally provided and authenticated by Cell Bank, Chinese Academy of Sciences and American Type Culture Collection (ATCC). All the cells were maintained in DMEM or RPMI-1640 medium supplemented with 10% fetal calf serum (FCS) (GiBco, USA), 100 U/mL penicillin and 100 µg/mL streptomycin (Sigma, USA), in an atmosphere containing 5% CO2 at 37°C. All the cells were tested negative for mycoplasma contamination.
 
-## Animals
+### Animals
 
 SD rats (200 to 250 g per animal) were provided by the Laboratory Animal Center of Zhejiang University (Certificate No.: SCXK [zhe] 2007–0030). All animals were handled in strict accordance with good animal practice as defined by the National Regulations for the Administration of Experimental Animals of China (1988–002) and the National Guidelines for Experimental Animal Welfare of China (2006–398).
 
-## Preparation of rat anti-L. interrogans strain Lai-IgG
+### Preparation of rat anti-L. interrogans strain Lai-IgG
 
 Freshly cultured L. interrogans strain Lai was precipitated by a 12,000 × g centrifugation at 4°C for 30 min. After washing twice with phosphate buffered saline (PBS) and centrifugation again, the harvested leptospires were suspended in PBS for counting under a dark-field microscope with a Petroff-Hausser chamber (Fisher Scientific, USA) and then killed in 100°C water-bath for 10 min (Kassegne et al., 2014). SD rats were immunized intravenously on days 1, 14, 21 and 28 with 108 dead L. interrogans strain Lai per animal. Fifteen days after the last immunization, the sera were collected to separate the IgGs with ammonium sulfate precipitation plus a DEAE-52 column (Sigma) using 10 mM phosphate buffer (pH 7.4) for elution. The titer of each of the IgGs binding to the spirochete was detected by microscopic agglutination test (Zhang et al., 2012a).
 
-## Generation and identification of target protein-depleted cells
+### Generation and identification of target protein-depleted cells
 
 The caveolin-1 (CAV1)-, β1 integrin (ITGB1)-, β2 integrin (ITGB2)-, β3 integrin (ITGB3)-, Rab11-, Sec15-, Sec3-, vesicle-associated membrane protein 2 (VAMP2)- and syntaxin-1 (SYN1)-delepted HUVEC, EOMA, HK-2, TCMK-1, BJ or NIH/3T3 cells were generated by siRNA interference as previously described (Hu et al., 2017). Briefly, each of the cells (105 per well) were seeded in 12-well culture plates for a pre-incubation. When the cells were 60% confluent, 50 nM human or mouse CAV1 siRNAs (HSS141466 or MSS273501), ITGB1 siRNAs (HSS105559 or MSS205553), ITGB2 siRNAs (HSS105562 or MSS205556), ITGB3 siRNAs (HSS105565 or MSS205563), Sec15 siRNAs (HSS123022 or MSS200786), Sec3 siRNAs (HSS124985 or MSS229985), VAMP2 siRNAs (HSS144163 or MSS278658) (Thermo Fisher Scientific, USA), Rab11 siRNAs (D-004726–01 or D-040863–01) or SYN1 siRNAs (D-012677–01 or D-050438–01) (Dharmacon, siGENOME, USA) were transfected into the cells using a Lipofectamine RNAiMAX Kit (Thermo Fisher Scientific) and then the cells were incubated in 10% FCS DMEM or RPMI-1640 medium for 24 hr to recover cellular viability before use according to the manufacturer’s protocol. Using rabbit anti-CAV1-, Rab11-, VAMP2- (Cell Signaling Technology, USA), SYN1-, ITGB1-, ITGB3-IgG (Abcam, USA) or mouse anti-ITGB2-IgG (Santa Crus, USA) and goat anti-Sec15- or Sec3-IgG (Santa Crus) as the primary antibody and HRP-conjugated goat anti-rabbit, goat anti-mouse or donkey anti-goat-IgG (Abcam) as the secondary antibody, several Western Blot assays were performed to detect the depletion of CAV1, ITGB1, ITGB2, ITGB3, Rab11, Sec15, Sec3, VAMP2 or SYN1 in the siRNA-treated cells as previously described (Hu et al., 2013). In the assays, the negative control siRNA (Catalog No.: 12935100, Thermo Fisher Scientific)-treated cell for examination of siRNA transfection efficacy, siRNA-untreated cells, and β-actin were used as the controls.
 
-## Detection of leptospiral internalization into host cells
+### Detection of leptospiral internalization into host cells
 
 Each of the cells (105) was seeded in culture plates for incubation overnight in antibiotic-free 2.5% FCS DMEM or RPMI-1640 medium to form cell monolayers. Freshly cultured L. interrogans strain Lai was precipitated by 12,000 × g centrifugation for 30 min (4°C). After washing with PBS and centrifugation, the precipitated leptospires were counted under a dark-field microscope with a Petroff-Hausser chamber (Fisher Scientific, USA). The cell monolayers were infected with the spirochete at a multiplicity of infection of 100 (MOI100) for 1, 2, 4, 8, 12 or 24 hr at 37°C (Hu et al., 2013; Jin et al., 2009). After trypsinization and washing with PBS and centrifugation at 500 × g for 10 min (4°C) to remove the suspended extracellular leptospires, the precipitated cells were fixed with 4% paraformaldehyde-PBS for 30 min and then permeabilized with 0.1% Triton X-100-PBS for 30 min to allow antibody penetration into cells. Using rat anti-strain Lai-IgG as the primary antibody, AlexaFluor594-conjugated donkey anti-rat-IgG (Abcam, USA) as the second antibody and DAPI (Sigma) as nucleus dye, the intracellular leptospires were detected using a laser confocal microscope (Zeiss, Germany) (590/617 or 355/460 nm excitation/emission wavelengths for AlexaFluor594 or DAPI detection) and the red fluorescence intensity (FI) reflecting the intracellular leptospires in 200 infected cells were measured for analysis. Besides, the leptospiral vesicles (Lep-vesicles) in the cells infected with the spirochete for 4 hr were observed using a transmission electron microscope (Philips, Holland). Uninfected control cells were used in all assays.
 
-## Leptospiral endocytosis inhibition tests
+### Leptospiral endocytosis inhibition tests
 
 The cell monolayers were treated with 200 μM clathrin-dependent endocytosis inhibitor MDC, 10 μM caveolae-dependent endocytosis inhibitor filipin, 80 μM macropinocytosis inhibitor EIPA, 1 mM non-functional ITG ligand RGDS, 25 μM PI3K inhibitor LY294002, 5 μM FAK inhibitor 14/Y15, 5 μM microfilament assembly inhibitor cytochalasin-D (Cyto-D) or 25 μM microtubule assembly inhibitor colchicines (COL) (Sigma) for 1 hr at 37°C (Choi et al., 2015; Droppelmann et al., 2009; Gimenez et al., 2015). The cells were infected with L. interrogans strain Lai at MOI100 for 4 hr. The subsequent steps and confocal microscopic detection of Lep-vesicles were the same as above. In addition, the Lep-vesicles in the CAV1-, ITGB1-, ITGB2-, ITGB3-, Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-delepted cells by siRNA interference were also detected as above. In the tests, the inhibitor- or siRNA-untreated and the negative control siRNA-treated (Catalog No.: 12935100, Thermo Fisher Scientific) cells but infected with the spirochete were used as the controls.
 
-## Detection of target protein expression during infection
+### Detection of target protein expression during infection
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 2, 4, 8, 12 or 24 hr as above. After trypsinization, washing with PBS and centrifugation at 500 × g for 10 min (4°C), the precipitated cells were lysed with 0.05% NaTDC-PBS and then centrifuged at 3,000 × g for 15 min (4°C) to remove cell debris. The supernatants were used to detect protein concentrations using a BCA Protein Assay Kit (Thermo Fisher Scientific, USA). Using rabbit anti-Rab5, Rab11, VAMP2 or LAMP1-IgG (Cell Signaling, USA), goat anti-Sec15 or Sec-3-IgG (Santa Crus, USA) and rabbit anti-SYN1-IgG (Abcam) as the primary antibody, HRP-conjugated donkey anti-rabbit or goat-IgG (Abcam) as the secondary antibody, Western Blot assays were applied to detect the expression of the proteins during infection. In the assays, the cells without infection and β-actin were used as the controls.
 
-## Detection of Lep-vesicles-lysosome co-localization
+### Detection of Lep-vesicles-lysosome co-localization
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 1, 2, 4, 8, 12 or 24 hr as above. Using rat anti-strain Lai-IgG or rabbit anti-LAMP1-IgG as the primary antibody, AlexaFluor594-conjugated donkey anti-rat-IgG or AlexaFluor488-conjugated donkey anti-rabbit-IgG (Abcam) as the second antibody and DAPI (Sigma) as nucleus dye, the Lep-vesicle-lysosome co-localization were detected by confocal microscopy (495/519 nm excitation/emission wavelengths for AlexaFluor488 detection) and the yellow FI reflecting the co-localization was measured as above. Uninfected cells were used as controls.
 
-## Detection of Lep-vesicle-Rab5 or Rab11/TfR co-localization
+### Detection of Lep-vesicle-Rab5 or Rab11/TfR co-localization
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 1, 2, 4, 8, 12 or 24 hr as above. Using rat anti-strain Lai-IgG, rabbit anti-Rab5 or Rab11-IgG (Cell Signaling) or goat anti-transferrin receptor (TfR)-IgG (Santa Crus) as the primary antibody, AlexaFluor594-conjugated donkey anti-rat-IgG, AlexaFluor488-conjugated donkey anti-rabbit or goat-IgG or AlexaFluor405-conjugated donkey anti-rabbit-IgG (Abcam) as the second antibody, Lep-vesicle-Rab5 or Lep-vesicle-Rab11/TfR co-localization were detected by confocal microscopy (402/421 nm excitation/emission wavelengths for AlexaFluor405 detection) and the yellow or white FI reflecting the co-localization was measured as above. Moreover, the percentages of Lep-vesicle-Rab5 and Lep-vesicle-Rab11/TfR were calculated as previously described (Chou et al., 2013; Lionnet et al., 2011). Uninfected cells were used as controls.
 
-## Detection of Lep-vesicle-Rab11-Sec15/Sec3 co-localization
+### Detection of Lep-vesicle-Rab11-Sec15/Sec3 co-localization
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 1, 2, 4, 8, 12 or 24 hr as above. Using rat anti-strain Lai-IgG, rabbit anti-Rab11-IgG (Cell Signaling) or goat anti-Sec15 or Sec-3-IgG (Santa Crus) as the primary antibody as well as AlexaFluor594-conjugated donkey anti-rat-IgG, AlexaFluor405-conjugated donkey anti-rabbit-IgG or AlexaFluor488-conjugated donkey anti-goat-IgG (Abcam) as the second antibody, Lep-vesicle-Rab11-Sec15/Sec3 co-localization (Lep-vesicle-recycling endosome-exocyst complexes) was detected by confocal microscopy and the co-localization percentages and white FI reflecting the co-localization were determined as above. Uninfected cells were used as controls.
 
-## Lep-vesicle-recycling endosome-exocyst complex inhibition tests
+### Lep-vesicle-recycling endosome-exocyst complex inhibition tests
 
 The cell monolayers were treated with 35 nM edema factor or lethal factor plus 70 nM protective antigen (EF + PA or LF + PA) of anthrax toxin (List Biological Laboratories, USA), the inhibitor (EF + PA) of Rab11 and inhibitor (LF + PA) of Sec15 to block Rab11-Sec15 binding, for 24 hr at 37°C (Guichard et al., 2010), and then infected with L. interrogans strain Lai at MOI100 for 8 hr. The subsequent steps and detection of Lep-vesicle-Rab11-Sec15/Sec3 co-localization were the same as above. On the other hand, the leptospires in the anthrax toxin-treated cells infected with the spirochete for 2, 4 or 8 hr were detected by confocal microscopy as above. In these tests, untreated infected cells were used as controls.
 
-## Detection of Lep-vesicle-Sec15-VAMP2/SYN1 co-localization
+### Detection of Lep-vesicle-Sec15-VAMP2/SYN1 co-localization
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 1, 2, 4, 8, 12 or 24 hr as above. Using rat anti-strain Lai-IgG, goat anti-Sec15-IgG (Santa Crus), rabbit anti-VAMP2 (Cell Signaling) or SYN1-IgG (Abcam) as the primary antibody as well as AlexaFluor594-conjugated donkey anti-rat-IgG, AlexaFluor488-conjugated donkey anti-goat-IgG or AlexaFluor405-conjugated donkey anti-rabbit-IgG (Abcam) as the second antibody, the Lep-vesicle-Sec15-VAMP2 or SYN1 co-localization (Lep-vesicle-recycling endosome-exocyst-SNARE complexes) were detected by confocal microscopy and the co-localization percentages and white FI reflecting the co-localization were determined as above. Uninfected cells were used as controls.
 
-## Generation and identification of botulismotoxin gene-transfected cells
+### Generation and identification of botulismotoxin gene-transfected cells
 
 The light chain of botulismotoxin D or C (BoNT/D-LC or BoNT/C-LC) can act as VAMP2 or SYN1 cleaver (Rossetto et al., 2014). The DNA segments encoding BoNT/C-LC (1–449 residues, GenBank accession No.: X53751) and BoNT/D-LC (1–445 residues, GenBank accession No.: AB012112) with an optimized codon for eukaryotic expression were synthesized and then cloned into pUC19 to form pUCBoNT/C-LC or pUCBoNT/D-LC by Invitrogen Co. (USA), at Shanghai in China. The pUCBoNT/C-LC, pUCBoNT/D-LC and pcDNA3.1 plasmid were digested with both Hind III and BamH I endonucleases (TaKaRa, China). The recovered BoNT/C-LC or BoNT/D-LC segment was linked with the linearized pcDNA3.1 using T4 DNA ligase (TaKaRa) to form recombinant pcDNA3.1BoNT/C-LC or pcDNA3.1BoNT/D-LC for sequencing by Invitrogen Co. The pcDNA3.1BoNT/C-LC or pcDNA3.1BoNT/D-LC with the expected sequences was transfected into HUVEC, EOMA, HK-2, TCMK-1, BJ or NIH/3T3 cells using a Lipofectamine 3000 Transfection Reagent Kit (Invitrogen) and then the cells were incubated in 10% FCS DMEM or RPMI-1640 medium for 24 hr to recover cellular viability before use according to the manufacturer’s protocol. Using rabbit anti-BoNT/C-LC-IgG (MyBioSource, USA) or sheep anti-BoNT/D-LC-IgG (R&D, USA) as the primary antibody and HRP-conjugated goat anti-rabbit or donkey anti-sheep-IgG (Abcam) as the secondary antibody, Western Blot assay was used to detect the expression of BoNT/D-LC or BoNT/C-LC in the transfected cells as described previously (Hu et al., 2013). Subsequently, the cleavage of VAMP2 or SYN1 in the transfected cells were also detected using Western Blot assay as described above. In the assays, the cells without botulismotoxin gene transfection, wild-type of pcDNA3.1 plasmid and β-actin were used as the controls. On the other hand, Western Blot assay and confocal microscopic examination were performed to detect the expression and fluorescence staining of VAMP2 in the BoNT/C-LC-trabnsfected cells and SYN1 in the BoNT/D-LC-transfected cells as described above.
 
-## Lep-vesicle-recycling endosome-exocyst-SNARE complex inhibition tests
+### Lep-vesicle-recycling endosome-exocyst-SNARE complex inhibition tests
 
 The BoNT/D-LC- or BoNT/C-LC-transfected cell monolayers were infected with L. interrogans strain Lai at MOI100 for 12 hr. The subsequent steps and detection of Lep-vesicle-Sec15-VAMP2/SYN1 co-localization by confocal microscopy were the same as above. On the other hand, the leptospires in the botulismotoxin-treated cells infected with the spirochete for 2, 4, 8 or 12 hr were detected by confocal microscopy as above. In the tests, the botulismotoxin-untreated and the negative control siRNA-treated (Catalog No.: 12935100, Thermo Fisher Scientific) cells but infected with the spirochete were used as the controls.
 
-## Quantification of the exocytosed and intracellular leptospires
+### Quantification of the exocytosed and intracellular leptospires
 
 The cell monolayers were infected with L. interrogans strain Lai at an MOI100 for 4 hr to allow the leptospiral entry into cells. After trypsinization, the cells were washed with PBS and centrifuged at 500 × g for 10 min (4°C) for three times to remove the suspended extracellular leptospires. The precipitated cells were re-incubated for 4, 8, 12, 16 or 24 hr. After trypsinization, washing and centrifugation as above, the precipitated cells were collected. The supernatants were centrifuged at 12,000 × g at 4°C for 30 min to precipitate the leptospires released from the infected cells for enumeration as above. The leptospires released from Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-depleted cells by siRNA interference, LF + PA-, EF + PA-, BoNT/C-LC- or BoNT/D-LC-treated cells and LY294002-, 14/Y15-, Cyto-D- or COL-inhibited cells were also examined as above. On the other hand, the leptospires stayed in the precipitated siRNA- or toxin-treated cells at 24 hr of re-incubation were detected by confocal microscopy as above. In addition, the cells were lysed with 0.05% NaTDC-PBS and then centrifuged to precipitate the intracellular leptospires for enumeration. Cells without re-incubation or any inhibitor treatment, negative control siRNA (Thermo Fisher Scientific)- or wild-type pcDNA3.1 plasmid-transfected cells were used as the controls.
 
-## Detection of viability of released leptospires and infected cells
+### Detection of viability of released leptospires and infected cells
 
 The viability of leptospires released from the extracellular leptospire-removed cells after a 4 hr infection with L. interrogans strain Lai were detected by confocal microscopy and spectrofluorometry (485/630 or 485/530 nm excitation/emission wavelengths for SYTO nine or PI detection) using a LIVE/DEAD Bacterial Viability Kit (Invitrogen, USA) as previously described (Dong et al., 2017). After enumeration as above, the released leptospires (107) were inoculated into 2 ml EMJH medium for a 7-d incubation at 28°C for re-enumeration. On the other hand, the cell monolayers were infected with the spirochete at an MOI100 for 1, 2, 4, 8, 12 or 24 hr as above and then the viability of infected cells was evaluated by MTT test using a Cell Proliferation Kit (Sigma) and flow cytometry using a Cell Dead/Apoptosis Kit (Invitrogen). Leptospires from EMJH medium and uninfected cells were used as the controls. Moreover, the cells treated with 10 μM camptothecin (Sigma) at 37°C for 4 hr, a cellular apoptotic inducer, were used as the positive control in the flow cytometric examination according to the manufacturer’s instruction of the Cell Dead/Apoptosis Kit.
 
-## Observation of leptospiral transcytosis through cell monolayers
+### Observation of leptospiral transcytosis through cell monolayers
 
 Each of the cells (106) was seeded in upper compartments in transwell plates (filter pore size = 3.0 μm, Corning, USA) for a 24 hr incubation to form tight cell monolayers. The transendothelial or epithelial electrical resistance (TEER) of cell monolayers were detected using a cell resistance indicator (Milicell-ERS, Millipore, USA) and the TEER value higher than 200 Ω/cm2 generally indicates the cell monolayer integrity and cell undamaged (Kassegne et al., 2014). In addition, 1 mg/ml FITC-dextran, a cell monolayer integrity indicator in transwell test, was added into each of the upper compartments and the FITC-dextran from each of the lower compartments were detected by spectrofluorometry (480/520 nm excitation/emission wavelengths). The FITC-dextran permeability percentage lower than 15–20% indicates the cell monolayer integrity of vascular endothelial and epithelial cells (Lander et al., 2014; Rezaee et al., 2013). The cell monolayers were infected with L. interrogans strain Lai at MOI100 for 1, 2, 4, 8, 12 or 24 hr, followed by fixation and permeabilization as above. Using rat anti-strain Lai-IgG, rabbit anti-human or mouse Na/K-ATPase-IgG as the primary antibody and AlexaFluor594-conjugated donkey anti-rat-IgG or AlexaFluor488-conjugated donkey anti-rabbit-IgG (Abcam) as the second antibody to stain the leptospires and cytomembrane, respectively, the leptospiral transcytosis through the cell monolayers were observed by confocal microscopy as above.
 
-## Transwell assay
+### Transwell assay
 
 Each of the cells (106) was seeded in upper compartments in transwell plates for a pre-incubation to form tight cell monolayers (TEER value >200 Ω /cm2). The L. interrogans strain Lai (108) was added in upper or lower compartments and then incubated at 37°C for 1, 2, 4, 8, 12 or 24 hr. The number of the spirochete through upper to lower or lower to upper compartments were enumerated as above and then the transcytosis percentages were calculated as previously described (Kassegne et al., 2014). In the assay, the transcytosis of the spirochete through cell-free transwell plates was used as the control.
 
-## Determination of leptospiral migration through cell monolayers mediated by endocytic recycling and vesicular transport systems
+### Determination of leptospiral migration through cell monolayers mediated by endocytic recycling and vesicular transport systems
 
 The MDC-, filipin-, EIPA-, RGDS-, LY294002-, 14/Y15-, Cyto-D, COL-, LF + PA-, EF + PA-, BoNT/C-LC- or BoNT/D-LC-treated and Rab11-, Sec15-, Sec3-, VAMP2- or SYN1-depleted cells were seeded in upper compartments in transwell plates and then the TEER values of cell monolayers were detected as above. The cell monolayers (TEER value >200 Ω/cm2) were used to detect the transcytosis of L. interrogans strain Lai through the cell monolayers as above. In the assay, the inhibitor- or toxin-untreated and target protein-undepleted cells but infected with the spirochete were used as the controls.
 
-## Statistical analysis
+### Statistical analysis
 
 Data from a minimum of at least three independent experiments were averaged and presented as mean ± standard deviation (SD). One-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons test were used to determine significant differences.

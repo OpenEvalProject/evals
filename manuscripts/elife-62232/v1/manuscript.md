@@ -59,9 +59,15 @@ Here, we provide evidence that a common molecular mechanism, the dysregulation o
 
 ## Results
 
-## In aging animals, maintaining c-Jun levels in Schwann cells reverses age-related defects in nerve regeneration
+### In aging animals, maintaining c-Jun levels in Schwann cells reverses age-related defects in nerve regeneration
 
 Age-dependent failure of nerve regeneration is accompanied by subdued elevation of c-Jun, a major regulator of the repair cell phenotype (Painter et al., 2014). To test whether this reduction in c-Jun controls the reduced capacity of these cells to support axon growth, we first compared c-Jun upregulation in young and older WT mice (Figure 1A). Four days after transection, c-Jun protein levels in the distal nerve stump in aged mice (8–10 months) were found to be ~50% lower than in young (6–8 weeks) mice.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative western blots of c-Jun in young and aging WT nerves and aging c-Jun OE/+ nerves 3 days post-injury. The graph shows densitometric quantitation of the western blots. c-Jun upregulation is impaired in WT aged nerves but restored in aged c-Jun OE/+ nerves. Data are normalized to young WT 3 days post-cut; *p<0.05, **p<0.005, ns, non-significant. Young UI WT n = 6, n = 5 for all other experimental groups. (B) RTqPCR analysis of 3-day cut nerves. Data normalized to young WT 3 days post-cut.; **p<0.005, ns, non-significant, n = 4. (C) Representative images showing immunofluorescence of c-Jun in double labeling with Schwann cell nuclear marker Sox10 in sections of the distal nerve stump in young and aging WT and aging c-Jun OE/+ mice 3 days post-cut. In the graph, the results are quantitated by cell counting. In aging WT Schwann cells, c-Jun is reduced, but elevated to youthful levels in aging c-Jun OE/+ Schwann cells; **p<0.001, ns, non-significant. n = 3 for each experimental group. (D) Representative images showing Fluorogold-labeled sensory neurons in L4 DRGs of young WT and aging WT and c-Jun OE/+ mice 1-week post back-filling following a 4-day crush injury. The graph shows quantitation by cell counting. There is an age-related decrease in back-filled neurons in WT samples (p=0.0309), while the high number of regenerating neurons in young WT mice is maintained in aging c-Jun OE/+ DRGs (p=0.0211). Unpaired Student's t-test. Young WT n = 6, aging WT n = 5, aging c-Jun OE/+ n = 6. (E) Representative images of Fluorogold-labeled motor neurons in young WT and aging WT and c-Jun OE/+ mice 1-week post back-filling following a 4-day crush injury. The graph shows quantitation of the results. Counts of labeled motor neurons mirrors those of sensory neurons since in WT mice, but not in c-Jun OE/+ mice, the number of back-labeled motor neurons decreases with age; ***p<0.001, **p<0.005, n = 6 for all experimental groups. (F) Counts of calcitonin gene-related peptide (CGRP)+ regenerating axons 3 mm from crush injury of the sciatic nerve of young and aged WT mice, and of aging c-Jun OE/+ mice; ****p<0.0001, ***p<0.001. Young WT n = 5, aging WT and c-Jun OE/+ n = 6. All numerical data are analyzed by one-way ANOVA with Tukey’s multiple comparison test and represented as means ± SEM. All scale bars: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig1-figsupp1-v1.jpg)
 
 To determine the functional significance of this, we studied MpzCre+;R26c-Junstopff/+ mice (referred to as c-Jun OE/+ mice), which we generated previously (Fazal et al., 2017). In these mice, c-Jun levels are enhanced in Schwann cells only. In western blots of uninjured adult sciatic nerves of c-Jun OE/+ mice, c-Jun is elevated about seven fold compared to WT. While there is a modest reduction in myelin thickness, nerve architecture and Schwann cell morphology are normal (Fazal et al., 2017). We found that in c-Jun OE/+ mice, the age-dependent decline in c-Jun protein levels after sciatic nerve cut was prevented, and that c-Jun levels in the distal stump of young WT and aging c-Jun OE/+ mice were similar by western blots 4 days after cut (Figure 1A). At the mRNA level, a non-significant trend towards lower c-Jun expression was seen in 3-day cut nerves of aged WT nerves, while there was a significant elevation of c-Jun mRNA in cut c-Jun OE/+ nerves as expected (Figure 1B). c-Jun levels seen in western blots were confirmed in immunofluorescence experiments on 3-day cut nerves, using Sox10 antibodies to selectively identify Schwann cell nuclei, and c-Jun antibodies (Figure 1C). In WT mice, older nerves contained fewer c-Jun-positive Schwann cell nuclei and the labeling of the c-Jun-positive nuclei was weaker, compared to young nerves. In aged c-Jun OE/+ nerves nuclear c-Jun was restored to levels similar to those in young WT nerves.
 
@@ -71,9 +77,15 @@ In confirmation, counts of CGRP+ fibers in the sciatic nerve were performed 3 da
 
 These experiments confirm that the failure of repair cell function in older animals is accompanied by failure to fully upregulate c-Jun in Schwann cells after injury (Painter et al., 2014). Importantly, restoration of c-Jun elevation selectively in Schwann cells to that seen in young animals is sufficient to restore nerve regeneration to youthful levels.
 
-## A mouse model of distal stump deterioration
+### A mouse model of distal stump deterioration
 
 We established a model of chronic denervation in mice, since previous studies have been carried out in rats. Sciatic nerves were cut followed by deflection of the proximal stump to leave the distal stump un-innervated for 1 week (short-term denervation) or 10 weeks (chronic denervation). mRNA levels for genes associated with denervated Schwann cells (S100b, Ngfr, Gdnf, and sonic hedgehog (Shh)) declined substantially between 1 and 10 weeks of denervation (Figure 2A). Western blots of p75NTR (Ngfr) in the distal stump showed a rise to a maximum 1 week after injury and a decline thereafter to <50% of peak levels at 10 weeks (Figure 2B) in line with that seen in rat (You et al., 1997).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig2-v1.jpg)
+
+**Figure 2.:** (A) Analysis of RNA sequencing data showing decrease in gene expression during chronic denervation. (B) Representative western blot showing p75NTR expression in uninjured (UI) nerves and distal nerve stumps following 3 days, and 1, 3, 6, 8 and 10 weeks of denervation. The graph shows quantitation of the results. P75NTR peaks 1 week after injury and gradually declines during prolonged denervation. Data normalized to 1 week after injury. One-way ANOVA with Dunnett's multiple comparison test; **p<0.005, ***p<0.001. n = 4. (C) Counts of back-filled Fluorogold-labeled regenerating motor neurons following immediate repair or chronic 10-week denervation show a decrease in motor neuron regeneration into chronically denervated stumps. Unpaired Student’s t-test; **p=0.0020. n = 6 for each time point. (D) Counts of neurofilament+ axons mirrors the decline in regeneration observed with chronic denervation shown in C. Counts were performed on transverse sections taken 3 mm from the repair site1 week after repair. Unpaired Student’s t-test; ****p<0.0001. Immediate repair n = 5, chronic denervation n = 4. (E) Counts of back-filled Fluorogold-labeled motor neurons showing similar numbers of regenerating neurons following immediate repair or repair after 1 week of denervation. Unpaired Student’s t-test; p=0.9. n = 3. All numerical data represented as means ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig2-figsupp1-v1.jpg)
 
 Regeneration through freshly cut and long-term denervated nerve stumps were compared by back-filling of spinal cord motor neurons. For this, acutely cut (immediate repair) or 10-week denervated tibial distal stumps were sutured to freshly cut peroneal nerves (Figure 2—figure supplement 1) Two weeks later, Fluorogold retrograde tracer was applied to the tibial stumps 4 mm distal to the suturing site. One week after the application of tracer, the number of retrogradely labeled motor neurons in the spinal cord was counted. Only about half as many spinal cord motor neurons projected into the 10-week denervated stumps compared to the acutely transected stumps (Figure 2C).
 
@@ -83,7 +95,7 @@ Counting back-filled neurons following immediate repair or repair 1 week after t
 
 These experiments established a baseline for studying the effects of prolonged denervation on the capacity of mouse repair Schwann cells to support neuronal regeneration.
 
-## c-Jun is downregulated in chronically denervated Schwann cells
+### c-Jun is downregulated in chronically denervated Schwann cells
 
 We determined whether decline in Schwann cell c-Jun expression was involved in regeneration failure caused by chronic denervation, as seen during aging. Measuring c-Jun protein levels in distal stumps showed strong elevation 3 days and 1 week after sciatic nerve cut followed by a decline to ~40% of 1 week levels at 10 weeks (Figure 3A). We verified that the c-Jun shown in these western blots represented c-Jun in Schwann cells, using mice with conditional c-Jun inactivation selectively in Schwann cells (Arthur-Farraj et al., 2012; Figure 3B). Further, 1- and 10-week denervated stumps were compared using double immunofluorescent labeling with c-Jun antibodies and Sox10 antibodies to selectively identify Schwann cell nuclei. Ten-week denervated stumps showed many more c-Jun negative, Sox10-positive nuclei, and the c-Jun labeling, where present, was also weaker (Figure 3C).
 
@@ -93,7 +105,7 @@ We determined whether decline in Schwann cell c-Jun expression was involved in r
 
 The decline in c-Jun and p75NTR expression after long-term denervation in vivo was mimicked in purified Schwann cells in vitro. By western blots, cells that had been maintained ~6 weeks in vitro (nine passages), contained less c-Jun and p75NTR protein compared to cells maintained ~10 days in vitro (two passages) (Figure 3D). The levels of c-Jun mRNA also declined in long-term cultures (Figure 3E). The reduction in c-Jun in Schwann cell nuclei was confirmed using double immunofluorescent labeling with c-Jun and Sox 10 antibodies to identify Schwann cells (Figure 3F). These in vitro experiments suggest that the decline in c-Jun and p75NTR during chronic denervation is not driven by endoneurial signals.
 
-## c-Jun downregulation during chronic denervation is prevented in c-Jun OE/+ mice
+### c-Jun downregulation during chronic denervation is prevented in c-Jun OE/+ mice
 
 The decline in c-Jun levels at the same time as repair cells lose capacity to support regeneration raises the questions of whether the functional deterioration of these cells is partly a consequence of c-Jun reduction, and whether repair cells, and regeneration through chronically denervated nerves, would be maintained if c-Jun reduction was prevented.
 
@@ -105,7 +117,7 @@ We addressed this using the c-Jun OE/+ mice examined earlier in experiments on a
 
 These experiments indicate that in 1- to 3-week cut nerves, the maximum capacity of Schwann cells to express c-Jun protein is already reached in the WT, both genotypes showing a similar 80–100 fold elevation after injury. During chronic denervation, these high expression levels fall substantially in WT nerves, but not in c-Jun OE/+ nerves. The c-Jun OE/+ mice can therefore be used to test whether the regeneration failure induced by chronic denervation is due to the failure to maintain high c-Jun protein levels.
 
-## Maintaining c-Jun levels during chronic denervation prevents regeneration failure
+### Maintaining c-Jun levels during chronic denervation prevents regeneration failure
 
 Regeneration thorough chronically denervated distal stumps of WT and c-Jun OE/+ mice was compared using neuron back-filling. Acutely cut common peroneal nerves were sutured to acutely cut or 10-week denervated tibial nerves and allowed to regenerate for 2 weeks prior to application of Fluorogold retrograde tracer. In WT mice, the number of DRG neurons projecting through 10-week cut nerves was only about half that projecting through acutely cut nerves. In 10-week cut c-Jun OE/+ nerves, however, this drop was not seen (Figure 5A). Similar results were obtained for spinal cord motor neurons (Figure 5B). Thus, both DRG and motor neurons regenerated as well through 10-week denervated c-Jun OE/+ nerves as they did through acutely cut WT nerves, suggesting that c-Jun OE/+ Schwann cells maintain their capacity to support regenerating neurons despite chronic denervation. In confirmation, regeneration into 10-week denervated distal stumps of the tibial nerve was examined with neurofilament staining, 1 week after the stumps were sutured to freshly cut peroneal nerves. Nearly three times more fibers were found in 10-week denervated c-Jun OE/+ nerves compared to 10-week denervated WT nerves (Figure 5C). The number of fibers found in WT nerves after immediate repair is shown in Figure 2D.
 
@@ -117,7 +129,7 @@ We verified that the back-filling paradigm worked as expected in c-Jun OE/+ mice
 
 Together, these experiments indicate that under the conditions prevailing in the distal stump of cut nerves, Schwann cells are unable to maintain high c-Jun levels in the long term. The resulting gradual reduction in c-Jun leads to deterioration of repair cell function, causing regeneration failure, a failure that can be corrected by restoring c-Jun levels.
 
-## Improved regeneration in c-Jun OE+/-mice is unlikely to relate to altered cell numbers
+### Improved regeneration in c-Jun OE+/-mice is unlikely to relate to altered cell numbers
 
 To test whether the differential regeneration rates could be due to altered cell numbers, Schwann cell, macrophage and fibroblast nuclei were counted in tibial nerves by electron microscopy.
 
@@ -125,13 +137,13 @@ In experiments comparing young and aging animals, cells in the distal stump were
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig6-v1.jpg)
 
-**Figure 6.:** (A) Schwann cell numbers in young and aged WT and c-Jun OE/+ nerves. (B) Macrophage density and (C) number in young and aged WT and c-Jun OE/+ nerves. (D) Fibroblast density and (E) number in young and aged WT and c-Jun OE/+ nerves: *p<0.05. (F) Whole transverse profiles of the tibial nerve were measured for the nerve area of young and aged WT and c-Jun OE/+ nerves; **p<0.005. For counts in A-F, n = 4 for each condition. (G) Schwann cell numbers in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, **p<0.005, ****p<0.0001. (H) Macrophage density and (I) number in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; **p<0.005, ***p<0.001. (J) Fibroblast density and (K) number in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, **p<0.005. (L) Whole transverse profiles of the tibial nerve were measured for the nerve area of 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, ****p<0.0001. For counts in G-L, 2-week WT and c-Jun OE/+ n = 7, 10-week WT and c-Jun OE/+ n = 5. All number data represented as means ± SEM analyzed by two-way ANOVA with Tukey’s multiple comparison test.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Schwann cell numbers in young and aged WT and c-Jun OE/+ nerves. (B) Macrophage density and (C) number in young and aged WT and c-Jun OE/+ nerves. (D) Fibroblast density and (E) number in young and aged WT and c-Jun OE/+ nerves: *p<0.05. (F) Whole transverse profiles of the tibial nerve were measured for the nerve area of young and aged WT and c-Jun OE/+ nerves; **p<0.005. For counts in A-F, n = 4 for each condition. (G) Schwann cell numbers in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, **p<0.005, ****p<0.0001. (H) Macrophage density and (I) number in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; **p<0.005, ***p<0.001. (J) Fibroblast density and (K) number in 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, **p<0.005. (L) Whole transverse profiles of the tibial nerve were measured for the nerve area of 2- and 10-week cut nerves of WT and c-Jun OE/+ mice; *p<0.05, ****p<0.0001. For counts in G-L, 2-week WT and c-Jun OE/+ n = 7, 10-week WT and c-Jun OE/+ n = 5. All number data represented as means ± SEM analyzed by two-way ANOVA with Tukey’s multiple comparison test.
 
 In the experiments on chronic denervation, cells were counted in the distal stumps 2 and 10 weeks after cut without regeneration 5 mm from the injury site. There were ~250 Schwann cell nuclei in 2-week stumps, representing a ~2.5-fold increase from uninjured nerves (Fazal et al., 2017; Figure 6G). In the WT, Schwann cell numbers declined by ~30% during chronic denervation. This drop was prevented in c-Jun OE/+ nerves (Figure 6G). The density of macrophages was similar irrespective of genotype or length of denervation (Figure 6H), with numbers declining, irrespective of genotype, during chronic denervation (Figure 6I). Two weeks after injury, fibroblast density in WT and c-Jun OE/+ mice was similar. Fibroblast density was elevated in 10-week stumps of WT, but not c-Jun OE/+, mice (Figure 6J). Fibroblast numbers remained unchanged between genotypes following denervation (Figure 6K). Chronically denervated stumps of both genotypes had reduced nerve area, although this difference was less evident in c-Jun OE/+ nerves (Figure 6L).
 
 These counts indicate that altered cell numbers are not a significant reason for improved regeneration in aged c-Jun OE/+ nerves. In chronically denervated nerves, the normal loss of Schwann cells in WT nerves is prevented in c-Jun OE/+ nerves. Even in 10-week WT stumps, however, cell numbers remain well above those in uninjured nerves (see Discussion).
 
-## Shh signaling supports c-Jun expression
+### Shh signaling supports c-Jun expression
 
 Seeking mechanisms that promote c-Jun expression in denervated Schwann cells, we considered signaling by Shh, a gene that is not expressed in developing Schwann cells or in intact nerves, but strongly upregulated in repair Schwann cells after injury (Lu et al., 2000; Zhou et al., 2000; Arthur-Farraj et al., 2012; Hsin-Pin et al., 2015). First, we analyzed Shh cKO mice, in which Shh is selectively inactivated in Schwann cells and in which nerve ultrastructure appears normal as expected (J Svaren unpublished). We found that in the mutants, c-Jun protein and phosphorylated c-Jun were decreased in the distal stump of 7-day transected sciatic nerve (Figure 7A,B). Levels of p75NTR protein, which is positively regulated by c-Jun in Schwann cells (Arthur-Farraj et al., 2012), were also reduced 7 days after injury in the mutants (Figure 7C). Substantiating these observations, two Shh signaling agonists, SAG and purmorphamine, upregulated c-Jun protein in purified Schwann cell cultures (Figure 7D,E). This was confirmed using c-Jun/Sox10 double immunolabeling (Figure 7F). SAG also increased the expression of two c-Jun target genes that promote nerve regeneration Bdnf and Gdnf (Figure 8A,B). Further, SAG promoted another effect of c-Jun, that of enhancing the elongated bi- or tri-polar shape in vitro that reflects the elongation and branching of repair cells in vivo (Arthur-Farraj et al., 2012; Gomez-Sanchez et al., 2017; Figure 8C).
 
@@ -147,13 +159,21 @@ After injury, Shh-dependent enhancement of c-Jun is likely to be mediated by Shh
 
 Together these observations show that Shh promotes Schwann cell c-Jun expression in vitro and in vivo, and support the idea that injury triggers an autocrine Shh signaling loop to elevate c-Jun in repair cells.
 
-## Analysis of gene expression in distal nerve stumps of WT and c-Jun OE/+ mice
+### Analysis of gene expression in distal nerve stumps of WT and c-Jun OE/+ mice
 
 Young and aging mice.
 
 RNA sequence analysis was performed on uninjured and 3-day cut sciatic nerves of young (6–8 weeks) and aged (11–12 months) WT mice, and aged c-Jun OE/+ mice. Global gene expression was analyzed comparing (i) uninjured nerves, (ii) 3-day cut nerves, and (iii) the injury response (3-day cut vs uninjured) in young and aged mice (Figure 9—figure supplement 1A).
 
 In uninjured WT nerves, out of 15,995 genes present, 1477 genes were differentially expressed between young and aged mice. Of these, 1154 were upregulated and 323 downregulated in aging mice compared to young ones (FC >2; and FDR 0.05) (Supplementary file 1 A; Supplementary file 2 A). We tested whether the 173 genes we previously identified as c-Jun-regulated injury genes (Arthur-Farraj et al., 2012) were implicated in these age-dependent differences. In the present data set, 138 of the 173 genes were present (Supplementary file 3). They showed a strong enrichment among the 1477 genes differentially expressed between young and aging mice (Figure 9A).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig9-v1.jpg)
+
+**Figure 9.:** data from young and aged nerves. (A) Over-representation analysis showing enrichment of c-Jun-regulated genes in various WT injury paradigms. p=3.2×10−8 for UI young vs aged; p=1×10 x −7 for 3-day cut young vs aged; p=2.3×10−13 for the injury response. p-Values computed by one-sided Fisher’s exact test. (B) GO terms downregulated and (C) upregulated in uninjured nerves of aged WT mice (absolute fold change >2 and FDR < 0.05). (D) GO terms downregulated and (E) upregulated in the injury response of aged WT mice (absolute fold change >2 and FDR < 0.05). (F) When aged c-Jun OE/+ and WT nerves are compared, genes associated with protein processing (FDR = 0.00318) and maturation (FDR = 0.0153) are significantly enriched in aged c-Jun OE/+ nerves compared to aged WT. (G) Venn diagram showing numbers of differentially expressed genes between young and aged 3-day cut WT nerves and aged 3-day cut OE/+ nerves, compared to their uninjured counterparts. (H) Mean expression of four c-Jun-regulated genes with significantly different expression between young and aged WT nerves but not between young WT and aged c-Jun OE/+ nerves(absolute fold change >2 and FDR < 0.05).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Principal component analysis (PCA) shows that the key source of variance in our aging analysis is injury status with samples clustering together after injury (red) regardless of age or genotype. (B) Gene set enrichment analysis (GSEA) of uninjured young and aged WT nerves showed enrichment in the downregulation of c-Jun-regulated genes in aged nerves. Normalized enrichment score (NES) = −1.85, q-value = 0.0. (C) GSEA analysis comparing injured old and young nerves showed a similar enrichment of c-Jun genes in the downregulation of these genes, suggesting a failure of c-Jun regulation in aged nerves. NES = −1.61, q-value = 0.0. (D) GSEA of young and aged nerves compared to their uninjured controls and then to each other to examine the differential expression between the two in response to injury. Analysis shows that c-Jun gene upregulation was highly enriched by injury. NES = 2.01, q-value = 0.0.
 
 In 3-day cut WT nerves, of 17,334 genes present, 398 genes were differentially expressed between young and aging mice. Of these, 268 were upregulated and 130 downregulated in aging nerves (Supplementary file 1 B; Supplementary file 2 B). This gene set contains candidate genes responsible for the difference in regeneration support provided by young and aged Schwann cells (Painter et al., 2014) and present experiments. In agreement with Painter et al., 2014, trophic factors such as GDNF, BDNF, NGF, erythropoietin, and FGF were not among the differentially expressed genes. This suggests that expression of trophic factors often implicated in regeneration may not explain different regeneration between young and aged mice. The 138 c-Jun-regulated injury genes (Supplementary file 3; Arthur-Farraj et al., 2012) were highly enriched among the age-regulated genes (Figure 9A).
 
@@ -174,6 +194,14 @@ Chronic denervation.
 Gene expression was examined in uninjured nerves and in 1 and 10-week cut sciatic nerves of WT and c-Jun OE/+ mice (Figure 10—figure supplement 1A). Expression of 1581 genes changed significantly during chronic denervation (Supplementary file 4; Supplementary file 2 E). In 10-week cut nerves, 601 of these genes were downregulated, including genes associated with repair cells such as Gdnf, Shh, and Ngfr, while 980 genes were upregulated. The 138 c-Jun-regulated genes showed a highly significant 5.8-fold enrichment (p=2.2×10−16) among the 1581 genes regulated during chronic denervation. GSEA enrichment analysis showed that c-Jun genes were some of the most downregulated genes during chronic denervation. (Figure 10—figure supplement 1B).
 
 GO analysis showed that the major genes downregulated during chronic denervation in WT nerves involved the cell cycle, DNA replication, and repair. Glial cell differentiation genes and MAPK pathways, potential activators of c-Jun, were also suppressed (Figure 10A). Chronic denervation involved a prominent upregulation of neuro-glia signaling genes (chiefly related to GABA and adrenergic signaling), but also regulators of differentiation, Notch and cAMP signaling (Figure 10B). To test the effects of maintaining c-Jun protein levels during the 10-week chronic denervation, we identified genes differentially expressed between 10-week cut WT and c-Jun OE/+ nerves (Figure 10C). This showed strong upregulation, in c-Jun OE/+ mice, of pathways involved in PNS and Schwann cell development and differentiation.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig10-v1.jpg)
+
+**Figure 10.:** (A) GO terms downregulated and (B) upregulated in WT nerves during chronic denervation. (C) When chronically denervated c-Jun OE/+ and WT nerves were compared, GO terms associated with Schwann cell differentiation (FDR = 0.00397) and PNS development (FDR = 0.0173) were enriched in c-Jun OE/+ nerves. (D) Venn diagram showing numbers of differentially expressed genes between WT nerves following acute (1 week) and chronic (10-week) denervation and c-Jun OE/+ nerves following chronic denervation, compared to their uninjured counterparts. (E) Mean expression of five c-Jun-regulated genes with significantly different expression between acute and chronic WT nerves, but not between acute WT and chronic c-Jun OE/+ nerves (absolute fold change >2 and FDR < 0.05).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/62232/elife-62232-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** (A) PCA showing the key sources of variance in our chronic injury analysis are not only injury dependent but also time post-injury dependent, with samples clustering based on length of denervation regardless of genotype. (B) GSEA of WT chronically denervated nerves showed that c-Jun genes were some of the most downregulated genes during chronic denervation NES = −2.5, q-value = 0.0.
 
 To further determine genes that may contribute to the restoration of regeneration in aged c-Jun OE/+ mice, the injury response in the three situations analyzed in the regeneration experiments, WT 1 week, WT 10 weeks, and c-Jun OE/+ 10 weeks, was compared (Figure 10D). A point of interest are the 227 genes that showed an injury response in WT 1-week nerves and in c-Jun OE/+ 10-week nerves, both of which show fast regeneration, but no injury response in WT 10-week nerves, where regeneration is slow (Supplementary file 2 F).
 
@@ -199,33 +227,372 @@ It has become clear that the injury-induced reprogramming of Schwann cells to ce
 
 ## Materials and methods
 
-## Transgenic mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mpz &lt; Cre/+&gt;; Rosa26c-Junstopf &lt; f/+&gt;, C57BL/6J background, Mus musculus both sexes used</td>
+      <td>c-Jun OE/+ mouse</td>
+      <td>Fazal et al., 2017</td>
+      <td></td>
+      <td>RRID:MGI:</td>
+    </tr>
+    <tr>
+      <td>Mpz &lt; Cre/+&gt;; Jun &lt; f/+&gt;, C57BL/6J background, Mus musculus both sexes used</td>
+      <td>c-Jun cKO mouse</td>
+      <td>Arthur-Farraj et al., 2012</td>
+      <td>Juntm4Wag</td>
+      <td>RRID:MGI:2445420</td>
+    </tr>
+    <tr>
+      <td>Mpz &lt; Cre/+&gt;; Shh &lt; f/+&gt;, C57BL/6J background, Mus musculus both sexes used</td>
+      <td>Shh cKO mouse</td>
+      <td>Jackson Laboratory</td>
+      <td>B6;129-Shhtm2Amc/J</td>
+      <td>RRID:IMSR_JAX:004293</td>
+    </tr>
+    <tr>
+      <td>Mpz &lt; Cre/+&gt;, C57BL/6J background, Mus musculus both sexes used</td>
+      <td>Mpz-Cre mouse</td>
+      <td>Jackson Laboratory</td>
+      <td>B6N.FVB-Tg(Mpz-cre)26Mes/J;</td>
+      <td>RRID:IMSR_JAX:017927</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- c-Jun (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #9165; RRID:AB_2130165</td>
+      <td>WB (1:1000) IF (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- P-c-Jun (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#9261; RRID:AB_2130162</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- p75NTR (Ngfr) (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#AB1554; RRID:AB_90760</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- GAPDH (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G9545; RRID:AB_796208</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Canelxin (rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat#ADI-SPA-860-D; RRID:AB_2038898</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- sox10 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat#AF2864; RRID:AB_442208</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- CGRP (rabbit monoclonal)</td>
+      <td>Peninsula Laboratories</td>
+      <td>Cat#T-4032; RRID:AB_518147</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Neurofilament (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab4680; RRID:AB_304560</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Rabbit IgG, HRP-linked (Goat polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#7074; RRID:AB_2099233</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 anti-Rabbit IgG (H+L) (Donkey polyclonal)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat#711-165-152; RRID:AB_2307443</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Goat Alexa 488 Conjugated (Donkey polyclonal)</td>
+      <td>Molecular Probes - Thermo Fisher</td>
+      <td>Cat#A11057; RRID:AB_2534104</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa 488 Conjugated (Donkey polyclonal)</td>
+      <td>Molecular Probes - Thermo Fisher</td>
+      <td>Cat#A11008; RRID:AB_143165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Chicken Alexa 488 Conjugated (Goat polyclonal)</td>
+      <td>Molecular Probes - Thermo Fisher</td>
+      <td>Cat#A-11039; RRID:AB_2534096</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bdnf_F</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>TCATACTTCGGTTGCATGAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bdnf_R</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>AGACCTCTCGAACCTGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Jun_F (Cells)</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>AATGGGCACATCACCACTACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Jun_R (Cells)</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>TGCTCGTCGGTCACGTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Jun_F (Tissue)</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>CCTTCTACGACGATGCCCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>c-Jun_R (Tissue)</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>GATTCGGGCCACTTGGAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gdnf_F</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>GATTCGGGCCACTTGGAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gdnf_R</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>GACAGCCACGACATCCCATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Calnexin_F</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>CAACAGGGGAGGTTTATTTTGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Calnexin_R</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>TCCCACTTTCCATCATATTTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>TGTAGACCATGTAGTTGAGGTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mpz_F</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>GCTGGCCCAAATGTTGCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mpz_R</td>
+      <td>Benito et al., 2017</td>
+      <td>PCR primers</td>
+      <td>CCACCACCTCTCCATTGCAC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kapa mRNA HyperPrep Kit</td>
+      <td>Roche</td>
+      <td>Cat#KK8581, 08098123702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Extraction Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Purmorphamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#540220</td>
+      <td>Concentration: various, see figures</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Smoothened Agonist (SAG)</td>
+      <td>Merck-Sigma-Aldrich-Calbiochem</td>
+      <td>Cat#566660</td>
+      <td>Concentration: various, see figures</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyclopamine</td>
+      <td>Merck-Sigma-Aldrich-Calbiochem</td>
+      <td>Cat#CAS 4449-51-8</td>
+      <td>Concentration: various, see figures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools version 1.2</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard tools version 1.140</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+      <td>RRID:SCR_006525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featureCounts</td>
+      <td>Liao et al., 2014</td>
+      <td>RRID:SCR_012919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>Robinson et al., 2010</td>
+      <td>RRID:SCR_012802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gen ser enrichment analysis (GSEA)</td>
+      <td>Subramanian et al., 2005</td>
+      <td>RRID:SCR_003199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gen ontology (GO) analysis – PANTHER classification system</td>
+      <td>Mi et al., 2013</td>
+      <td>RRID:SCR_004869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9.0.0</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio Rad ChemiDoc MP Imaging System</td>
+      <td>Bio Rad</td>
+      <td>RRID:SCR_019037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorogold</td>
+      <td>Fluorochrome</td>
+      <td>Fluoro-gold 20 mg</td>
+      <td>Made up to 4%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#D1306</td>
+      <td>IF (1:40,000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transgenic mice
 
 Animal experiments conformed to UK Home Office guidelines under the supervision of University College London (UCL) Biological Services under Protocol No. PPL/70/7900. Mice were generated to overexpress c-Jun selectively in Schwann cells as described (Fazal et al., 2017). Briefly, female R26c-Junstopf mice carrying a lox-P flanked STOP cassette in front of a CAG promoter-driven c-Jun cDNA in the ROSA26 locus, were crossed with male MpzCre+/− mice (Feltri et al., 1999). This generated MpzCre+;R26c-Junstopff/+ mice, referred to here as c-Jun OE/+ mice. MpzCre−/Cre− littermates were used as controls. Shh-floxed mice, referred to as Shh cKO mice, carrying loxP sites flanking exon 2 of the Shh gene were obtained from the Jackson Laboratory (Jax, stock# 004293), and bred to MpzCre mice (Feltri et al., 1999). Experiments used mice of either sex on the C57BL/6 background.
 
-## Genotyping
+### Genotyping
 
 DNA was extracted from ear notches or tail tips using the Hot Sodium Hydroxide and Tris method (HotSHot; Truett et al., 2000). Tissue was incubated in HotSHot buffer (25 mM NaOH and 0.2 mM disodium EDTA, pH 12) at 95°C for 1 hr. The reaction was neutralized with neutralizing buffer (40 mM Tris-HCl, pH 5). DNA was then added to the PCR mastermix with primers for the Mpz-Cre transgene: 5′-GCTGGCCCAAATGTTGCTGG-3′ and 5′CCACCACCTCTCCATTGCAC-3′ (480 bp band).
 
-## Surgery
+### Surgery
 
 For short-term time points (<1 week) and crushes, the sciatic nerve was exposed and cut or crushed (at three rotation angles) at the sciatic notch. For western blot, immunofluorescence and mRNA investigations into chronic denervation (>1 week) the sciatic nerve was cut and the proximal stump was reflected back and sutured into muscle to prevent regeneration. The nerve distal to the injury was excised for analysis at various time points. Contralateral uninjured sciatic nerves served as controls. To examine the effects of chronic denervation on regeneration, the nerve branches of the sciatic nerve were individually separated (Figure 2—figure supplement 1). The tibial nerve was cut and both proximal and distal stumps were reflected and sutured into muscle. Either immediately or following 10 weeks of chronic denervation, the distal tibial nerve stump was cut from the muscle and sutured to the freshly transected common peroneal nerve.
 
-## Retrograde labeling with Fluorogold
+### Retrograde labeling with Fluorogold
 
 To examine regeneration following nerve crush or repair, the nerve was cut distal to the original injury site and exposed to 4% Fluorogold for 1 hr (Catapano et al., 2016; Figure 1—figure supplement 1). The spinal cord and L4 DRG were removed following perfusion 1 week post-labeling. Labeled cells in all the spinal cord sections (50 μm) were counted and the Abercrombie correction was applied to compensate for double counting (Abercrombie, 1946). To avoid double counting, cells in every fifth DRG section (20 μm) were counted.
 
-## Schwann cell cultures
+### Schwann cell cultures
 
 Rat Schwann cells were cultured as described (Brockes et al., 1979). Briefly, sciatic nerves and brachial plexuses were digested enzymatically with collagenase and trypsin and cultured on laminin- and PLL-coated plates in DMEM, 2% FBS, 10 ng/ml NRG-1, 2 μM forskolin and penicillin/streptomycin. Under experimental conditions, cultures were maintained in defined medium (DMEM and Ham's F12 (1:1), transferrin (100 pg/ml), progesterone (60 ng/ml), putrescine (16 pg/ml), insulin (5 μg/ml), thyroxine (0.4 μg/ml), selenium (160 ng/ml), triiodothyronine (10.1 ng/ml), dexamethasone (38 ng/ml), glucose (7.9 mg/ml), bovine serum albumin (0.3 mg/ml), penicillin (100 IU/ml), streptomycin (100 IU/ml), and glutamine (2 mM) with 0.5% serum Jessen et al., 1994; Meier et al., 1999).
 
-## Antibodies
+### Antibodies
 
 Immunofluorescence antibodies: c-Jun (Cell Signaling Technology, rabbit 1:800), Sox10 (R and D Systems, goat 1:100), CGRP (Peninsula, rabbit 1:1000), neurofilament (Abcam, rabbit 1:1000), donkey anti-goat IgG (H+L) Alexa Fluor 488 conjugate (Invitrogen, 1:1000), and Cy3 donkey anti-rabbit IgG (H+L) (Jackson Immunoresearch, 1:500).
 
 Antibodies used for western blotting: c-Jun (Cell Signaling Technology, rabbit 1:1000), p75 NTR (Millipore, rabbit 1:1000), serine 63 phosphorylated c-Jun (Cell Signaling Technology, rabbit 1:1000), GAPDH (Sigma-Aldrich, rabbit 1:5000), calnexin (Enzo Life Sciences, rabbit 1:1000), and anti-rabbit IgG, HRP-linked (Cell Signaling Technology, 1:2000).
 
-## Immunofluorescence
+### Immunofluorescence
 
 For immunofluorescence experiments on cultured cells, 5000 Schwann cells were plated in a 35 μl drop on a PLL laminin-coated coverslip. Cells were topped up with defined medium after 24 hr. At the experimental end point, cells were washed 2x with 1x PBS. Cells were fixed with 4% paraformaldehyde ( PFA) for 10 min. Cells were then washed for 5 min in 1x PBS. Fresh PBS was added to the wells and the lid was parafilm sealed. Dishes were stored at 4°C until use.
 
@@ -235,7 +602,7 @@ For immunofluorescence, all samples were washed 3x in 1x PBS and blocked in 5% d
 
 Images were taken on a Nikon Labophot two fluorescence microscope. Cell counts were performed in ImageJ or directly from the microscope. Comparable images have been equally adjusted for brightness/contrast. In some cases (Figures 1, 3 and 4), images of whole nerve profiles have been generated by stitching together multiple images.
 
-## Western blotting
+### Western blotting
 
 Nerves were dissected and snap frozen in liquid nitrogen. For protein extraction, nerves were placed in 2 ml graduated skirted tubes with nine 10B lysing beads with 75 ml lysis buffer (1M Tris-HCl pH 8, 5M NaCl, 20% Triton X-100, 5 mM EDTA) and homogenized using a Fastprep fp120 homogeniser. Samples were run twice at speed 6 for 45 s. Lysates were then centrifuged at 13,000 rpm for 2 min at 4°C to pellet the debris. The supernatant was transferred to a new 1.5 ml Eppendorf tube and centrifuged at 13,000 rpm for 2 min at 4°C. The supernatant was transferred to a new 1.5 ml Eppendorf tube and the protein extract was stored at −80°C.
 
@@ -243,28 +610,85 @@ For protein studies on cultured cells, 1 × 106 purified Schwann cells were plat
 
 Protein was diluted in the appropriate lysis buffer and 5x Laemmli buffer at a working concentration of 1x. Samples were heated to 95°C for 5 min to denature the protein. 10 µg protein was loaded per well on 8% acrylamide gels with prestained standard molecular weight markers (PageRuler prestained protein ladder; Thermo Fisher Scientific) and run at 60 mV for 3 hr using the mini Protean II gel electrophoresis apparatus (Bio-Rad Laboratories). Protein was transferred to a nitrocellulose membrane (Hybond ECL; Amersham Biosciences) using a semi-dry transfer system (Bio-Rad Laboratories) at 25 mV for 45 min. Membranes were briefly stained with Ponceau S (Sigma Aldrich) to determine that the transfer has been successful and that equal levels of protein had been loaded in the gel. Membranes were briefly washed in ddH2O to remove excess Ponceau and blocked in 5% milk/TBS-T for 1 hr with shaking at room temperature. Membranes were then incubated with appropriate antibodies in heat sealable polyethylene bags and were incubated overnight at 4°C on a rotatory wheel. Membranes were washed 3x for 10 min in 1x TBS-T then incubated with the appropriate secondary antibody in heat sealable polyethylene bags, rotating for 1 hr at room temperature. Membranes were washed 3x for 10 min in 1x TBS-T before developing. For development of GAPDH, membranes were incubated with ECL (Amersham) for 1 min and developed on a Bio-Rad Chemidoc machine. For the development of all other antibodies, membranes were incubated with ECL prime (Amersham) for 5 min then developed. Membranes were automatically exposed to prevent saturation. Blots were analyzed and densitometric quantification was performed using Bio-Rad Imagelab. Protein levels were determined by normalizing the protein of interest against the house keeping protein (GAPDH or calnexin). All blots were then normalized to one sample (e.g. 1 week after injury, control cells) to account for any difference between each blot. Each experiment was performed at least three times with fresh samples. Representative images are shown.
 
-## Electron microscopy
+### Electron microscopy
 
 Nerves were fixed in 2.5% glutaraldehyde/2% paraformaldehyde in 0.1 M cacodylate buffer, pH 7.4, overnight at 4°C. Post-fixation in 1% OsO4 was performed before nerves were embedded in Agar 100 epoxy resin. Transverse ultrathin sections from adult (P60) or aged (P300) tibial nerves or from injured distal stumps of adult sciatic nerves at various times after injury were taken 5 mm from the sciatic notch and mounted on film (no grid bars). Images were examined using a Jeol 1010 electron microscope with a Gatan camera and software. Images were examined and photographed at 8000 × or 15,000x. The nerve area was measured from photographs taken at 200 × magnification. Schwann cells and macrophages and fibroblasts were identified by standard ultrastructural criteria (e.g. Reichert et al., 1994). Schwann cell, macrophage, and fibroblast nuclei were counted in every field, or every second, third, or fourth field, depending on the size of the nerve, and multiplied by the number of fields to generate totals.
 
-## qPCR
+### qPCR
 
 RNA from rat Schwann cell cultures or mouse nerve tissue was extracted using an RNeasy Micro Extraction Kit (Qiagen). RNA quality and concentration was determined after extraction using a nanodrop 2000 machine (Thermo). One μg of RNA was converted to cDNA using SuperScriptTM II Reverse Transcriptase (Invitrogen) as per the manufacturer’s instructions. Samples were run with PrecisionPLUS qPCR Mastermix with SYBR Green (Primerdesign) with primers as described in Benito et al., 2017. Ct values were normalized to housekeeping gene expression (GAPDH and calnexin).
 
-PrimerSequence 5´- 3´Bdnf FwdTCATACTTCGGTTGCATGAAGGBdnf RevAGACCTCTCGAACCTGCCCc-Jun Fwd (Cells)AATGGGCACATCACCACTACACc-Jun Rev (Cells)TGCTCGTCGGTCACGTTCTc-Jun Fwd (Tissue)CCTTCTACGACGATGCCCTCc-Jun Rev (Tissue)GGTTCAAGGTCATGCTCTGTTTGdnf FwdGATTCGGGCCACTTGGAGTTGdnf RevGACAGCCACGACATCCCATACalnexin FwdCAACAGGGGAGGTTTATTTTGCTCalnexin RevTCCCACTTTCCATCATATTTGGCGAPDH FwdAGGTCGGTGTGAACGGATTTGGAPDH RevTGTAGACCATGTAGTTGAGGTCA
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence 5´- 3´</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bdnf Fwd</td>
+      <td>TCATACTTCGGTTGCATGAAGG</td>
+    </tr>
+    <tr>
+      <td>Bdnf Rev</td>
+      <td>AGACCTCTCGAACCTGCCC</td>
+    </tr>
+    <tr>
+      <td>c-Jun Fwd (Cells)</td>
+      <td>AATGGGCACATCACCACTACAC</td>
+    </tr>
+    <tr>
+      <td>c-Jun Rev (Cells)</td>
+      <td>TGCTCGTCGGTCACGTTCT</td>
+    </tr>
+    <tr>
+      <td>c-Jun Fwd (Tissue)</td>
+      <td>CCTTCTACGACGATGCCCTC</td>
+    </tr>
+    <tr>
+      <td>c-Jun Rev (Tissue)</td>
+      <td>GGTTCAAGGTCATGCTCTGTTT</td>
+    </tr>
+    <tr>
+      <td>Gdnf Fwd</td>
+      <td>GATTCGGGCCACTTGGAGTT</td>
+    </tr>
+    <tr>
+      <td>Gdnf Rev</td>
+      <td>GACAGCCACGACATCCCATA</td>
+    </tr>
+    <tr>
+      <td>Calnexin Fwd</td>
+      <td>CAACAGGGGAGGTTTATTTTGCT</td>
+    </tr>
+    <tr>
+      <td>Calnexin Rev</td>
+      <td>TCCCACTTTCCATCATATTTGGC</td>
+    </tr>
+    <tr>
+      <td>GAPDH Fwd</td>
+      <td>AGGTCGGTGTGAACGGATTTG</td>
+    </tr>
+    <tr>
+      <td>GAPDH Rev</td>
+      <td>TGTAGACCATGTAGTTGAGGTCA</td>
+    </tr>
+  </tbody>
+</table>
 
-## Statistical analysis
+### Statistical analysis
 
 Results are expressed as mean ± SEM. Statistical significance was estimated by Student's t test, one-way ANOVA or two-way ANOVA with appropriate post hoc tests. A p value < 0.05 was considered as statistically significant. Statistical analysis was performed using GraphPad software.
 
-## Library preparation
+### Library preparation
 
 RNA was extracted using a RNeasy lipid tissue kit with an in column DNase step (Qiagen). Chronically denervated and uninjured nerves were pooled, two per n. Acutely denervated nerves were not pooled using one nerve per n. The library was prepared using the Kapa mRNA Hyper Prep kit (Roche) with 100 ng RNA and 15 cycles of PCR enrichment. The assay is (first) stranded (dUTP method).
 
-## Sequencing
+### Sequencing
 
 Sequencing was performed in a pooled NextSeq 500 run using a 43 bp paired end protocol (plus a 6 bp index read). Sequencing reads (in fastq format) were aligned to the hg38 reference sequence using STAR v2.5.3 (Dobin et al., 2013). Samtools version 1.2 and Picard tools version 1.140 were used to process alignments (Li et al., 2009), Aligned reads were filtered for mapq _ 4 that is uniquely mapping reads, and putative PCR duplicates were removed. featureCounts was used to perform read summarization (Liao et al., 2014).
 
-## Data analysis
+### Data analysis
 
 Expression analysis was carried out using R version 3.5.1. Differential gene expression was analyzed using edgeR (Robinson et al., 2010). Genes with both an absolute log2 fold change >2.0 and FDR < 0.05 were identified as being significantly differentially expressed. Principal component analysis (PCA) showed that injury status was the dominant source of variation in both data sets (Figure 9—figure supplement 1A; Figure 10—figure supplement 1A). Enrichment of c-Jun-regulated genes was investigated using Fisher one-sided exact tests and GSEA ( Subramanian et al., 2005). GO analysis was used to examine gene enrichment of all significantly differentiated genes using the PANTHER classification system (Mi et al., 2013).

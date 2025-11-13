@@ -43,7 +43,7 @@
 
 ## Abstract
 
-10.7554/eLife.45100.001 Age-related macular degeneration (AMD) is a progressive disease of the retinal pigment epithelium (RPE) and the retina leading to loss of central vision. Polymorphisms in genes involved in lipid metabolism, including the ATP-binding cassette transporter A1 ( ABCA1 ), have been associated with AMD risk. However, the significance of retinal lipid handling for AMD pathogenesis remains elusive. Here, we study the contribution of lipid efflux in the RPE by generating a mouse model lacking ABCA1 and its partner ABCG1 specifically in this layer. Mutant mice show lipid accumulation in the RPE, reduced RPE and retinal function, retinal inflammation and RPE/photoreceptor degeneration. Data from human cell lines indicate that the ABCA1 AMD risk-conferring allele decreases ABCA1 expression, identifying the potential molecular cause that underlies the genetic risk for AMD. Our results highlight the essential homeostatic role for lipid efflux in the RPE and suggest a pathogenic contribution of reduced ABCA1 function to AMD.
+Age-related macular degeneration (AMD) is a progressive disease of the retinal pigment epithelium (RPE) and the retina leading to loss of central vision. Polymorphisms in genes involved in lipid metabolism, including the ATP-binding cassette transporter A1 (ABCA1), have been associated with AMD risk. However, the significance of retinal lipid handling for AMD pathogenesis remains elusive. Here, we study the contribution of lipid efflux in the RPE by generating a mouse model lacking ABCA1 and its partner ABCG1 specifically in this layer. Mutant mice show lipid accumulation in the RPE, reduced RPE and retinal function, retinal inflammation and RPE/photoreceptor degeneration. Data from human cell lines indicate that the ABCA1 AMD risk-conferring allele decreases ABCA1 expression, identifying the potential molecular cause that underlies the genetic risk for AMD. Our results highlight the essential homeostatic role for lipid efflux in the RPE and suggest a pathogenic contribution of reduced ABCA1 function to AMD.
 
 ## Introduction
 
@@ -59,73 +59,198 @@ Ubiquitous expression of ABCA1 and ABCG1 has been reported in the mouse, monkey 
 
 ## Results
 
-## Generation of RPE-specific Abca1;Abcg1 double KO mice (RPEΔAbca1;Abcg1)
+### Generation of RPE-specific Abca1;Abcg1 double KO mice (RPEΔAbca1;Abcg1)
 
 Expression of ABCA1 and ABCG1 throughout the retinal layers, including the RPE, was confirmed by immunofluorescence (IF) in wild type mouse retinal sections (Figure 1A) (Ananth et al., 2014). As previously described for RPE cells in vitro (Storti et al., 2017), no co-localization with ezrin (EZR), a marker of the apical microvilli of the RPE, was observed. In order to study the function of ABCA1/ABCG1 in the RPE, we used BEST1Cre mice to delete floxed sequences from Abca1flox/flox;Abcg1flox/flox mice and generate RPE-specific Abca1;Abcg1 double KOs (called RPEΔAbca1;Abcg1, see ‘Materials and methods’, Table 1 and Figure 1—figure supplement 1). BEST1Cre mice express Cre recombinase under control of the human bestrophin 1 (BEST1, also known as vitelliform macular dystrophy 2, VMD2) promoter, resulting in post-natal CRE activity specifically in the RPE (Iacovelli et al., 2011). Although both strains were used before to successfully generate a number of mouse models (Westerterp et al., 2012; Yao et al., 2015; Westerterp et al., 2016; Sundermeier et al., 2017; Ban et al., 2018a; Ban et al., 2018b; Eblimit et al., 2018; Roman et al., 2018), we nonetheless validated the specificity of Cre expression in RPEΔAbca1;Abcg1 mice. High mRNA levels for Cre were detected in the eyecup (RPE/choroid) with only a minimal amount of transcripts found in the neural retina, probably due to contamination during eye dissection (Figure 1B). To confirm presence of CRE protein in the RPE, we performed IF staining on retinal sections. Although some un-specific staining was observed in the inner retina, CRE-positive nuclei were detected only in the RPE layer of RPEΔAbca1;Abcg1 but not of control (Ctr, Cre-negative) mice (Figure 1C). Finally, we checked for successful CRE-mediated excision of floxed fragments by amplifying Abca1 and Abcg1 specific sequences from genomic DNA extracted from retina and eyecups (including RPE) of RPEΔAbca1;Abcg1 and Ctr mice. As expected, deletion of Abca1 and Abcg1 was observed in eyecups, but not neural retinas, of Cre-positive mice (Figure 1D). Even though end-point PCR reactions may not be used to quantify products, the highly variable signal intensities of the amplified Abca1 and Abcg1 excised fragments suggested mouse-to-mouse variability in Cre expression (Figure 1B and data not shown) and/or in deletion efficiency (Figure 1D). Of note, the BEST1Cre mouse is known to have patchy and variable Cre expression in the RPE (Iacovelli et al., 2011; Sundermeier et al., 2017), which could partially explain decreased rather than abolished expression of Abca1 and Abcg1 mRNA in eyecups of RPEΔAbca1;Abcg1 mice (Figure 1—figure supplement 2).
 
-## Lack of Abca1 and Abcg1 in the RPE leads to morphological alterations and intracellular lipid accumulation
+![Figure 1.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig1-v2.jpg)
+
+**Figure 1.:** (A) IF staining for ABCA1 (yellow), ABCG1 (violet) and the RPE apical marker EZR (white) in retinas of 2-months-old wt mice. Lower panels show magnification of the RPE layer. Nuclei were counterstained with DAPI (blue). Ch: choroid; RPE: retinal pigment epithelium; ONL: outer nuclear layer; INL: inner nuclear layer; GCL: ganglion cell layer. (B) Cre mRNA levels were measured by semi-quantitative real-time PCR in neural retinas and eyecups (RPE/choroid) from 2-months-old RPEΔAbca1;Abcg1 mice. Shown are data from individual samples and means ± standard deviations (SD, N = 4). Statistics: Student’s t-test; ***: p<0.001. (C) IF staining for CRE (red) in retinal sections from 2-months-old Ctr and RPEΔAbca1;Abcg1 mice: white arrowheads indicate CRE-positive nuclei in the RPE of mutant mice. Nuclei were counterstained with DAPI (blue). Note the non-specific signal in the inner retina. Representative pictures of N = 6 mice. (D) Detection of CRE-mediated excision fragments in Abca1 and Abcg1 (Abca1/Abcg1 exc) by conventional PCR on genomic DNA from eyecups and neural retinas of Ctr and RPEΔAbca1;Abcg1 mice (N = 3). For this picture, animals showing heterozygous deletion of Abca1/Abcg1 in ear biopsies (see ‘Materials and methods’) were excluded in order to detect excision truly due to CRE expression in the eye. PCR for the floxed sequences (Abca1/Abcg1 flox) was performed as positive control. Shown are PCR products run on a 2% agarose gel and visualized with ethidium bromide. Note the lack of the excised fragment in the neural retina. M: DNA size marker, indicated fragment sizes are shown in base pairs (bp).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PCRs for Cre transgene, Abca1 floxed (flox) and excised (exc) alleles, and Abcg1 floxed and excised alleles were performed on genomic DNA extracted from eyecups and neural retinas of 2-months-old Ctr and RPEΔAbca1;Abcg1 mice. Shown are PCR products run on a 2% agarose gel and visualized with ethidium bromide. Same results as for the neural retinas were obtained using ear biopsies (not shown), suggesting occasional presence of heterozygous systemic excision of Abca1 and Abcg1 floxed sequences. Definition of the genotypes is shown below the gel images (N = 3 per group). See Table 1 for definition of strain names based on the genotype. (B) Abca1 and Abcg1 mRNA levels were measured by semi-quantitative real-time PCR in neural retinas of 2-months-old flox/flox and flox/- mice. Shown are data from individual samples and means ± range of the fold change on flox/flox genotype average (N = 2–5). (C) Retinal morphology of 6-months-old Abca1floxflox;Abcg1flox/flox and Abca1flox/-;Abcg1flox/- mice. Lower panels show higher magnification images of the RPE. Shown are representative images of N = 3 animals per group. Abbreviations as in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Abca1 (A), Abcg1 (B), Cre (C) and Mct3 (D) mRNA levels were measured by semi-quantitative real-time PCR in eyecups of 2-months-old Ctr and RPEΔAbca1;Abcg1 mice. Shown are data from individual samples and means ± SD (N = 3–4). n.d.: not detected.
+
+**Table 1.**
+ Mice genotypes and nomenclature.flox/-: detection of floxed and excised (KO) allele in ear biopsy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Abca1flox/flox;Abcg1flox/flox</td>
+      <td rowspan="4">Cre-negative controls: Ctr</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/-;Abcg1flox/flox</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/flox;Abcg1flox/-</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/-;Abcg1flox/-</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/flox;Abcg1flox/flox;BEST1Cre</td>
+      <td rowspan="4">RPE-specific double KOs: RPEΔAbca1;Abcg1</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/-;Abcg1flox/flox;BEST1Cre</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/flox;Abcg1flox/-;BEST1Cre</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/-;Abcg1flox/-;BEST1Cre</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/flox;Abcg1+/+;BEST1Cre</td>
+      <td rowspan="2">RPE-specific Abca1 single KOs: RPEΔAbca1</td>
+    </tr>
+    <tr>
+      <td>Abca1flox/-;Abcg1+/+;BEST1Cre</td>
+    </tr>
+    <tr>
+      <td>Abca1+/+;Abcg1flox/flox;BEST1Cre</td>
+      <td rowspan="2">RPE-specific Abcg1 single KOs: RPEΔAbcg1</td>
+    </tr>
+    <tr>
+      <td>Abca1+/+;Abcg1flox/-;BEST1Cre</td>
+    </tr>
+    <tr>
+      <td>Abca1+/+;Abcg1+/+;BEST1Cre</td>
+      <td>Cre-positive controls: BEST1Cre</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lack of Abca1 and Abcg1 in the RPE leads to morphological alterations and intracellular lipid accumulation
 
 Already at 2 months of age, the fundus of RPEΔAbca1;Abcg1 but not of Ctr mice showed a dotted pattern, possibly reflecting alterations in the pigmentation of RPE cells (Figure 2A). Light and electron microscopy on retinal sections revealed an irregular apical RPE border and accumulation of intracellular material resembling lipid droplets (LDs) in RPEΔAbca1;Abcg1 but not Ctr mice (Figure 2B and C). Staining with OilRedO (ORO) in retinal sections (Figure 2D) and LipidTOX in RPE flat mounts (Figure 2E) revealed strong lipid accumulation in CRE-positive RPE cells of RPEΔAbca1;Abcg1 mice. CRE-negative RPE cells and other retinal layers were ORO-negative and served as internal controls demonstrating the specificity of lipid accumulation in RPE cells lacking Abca1 and/or Abcg1. Both ORO and LipidTOX stain neutral lipids, which constitute the hydrophobic core of LDs (Olofsson et al., 2009). Moreover, actin staining of RPE flat mounts showed morphological irregularities of CRE-positive cells in RPEΔAbca1;Abcg1 mice when compared to the regular, mainly hexagonal shape of Ctr cells (Figure 2F). These morphological irregularities progressively worsened and were more pronounced at 4–6 months of age (Figure 3). In particular, double staining for the tight junction protein zona occludens 1 (ZO-1) and the Wnt signaling mediator β-catenin (β-cat) in mutant cells revealed re-localization of β-cat from the plasma membrane to the cytosol, a feature of disorganized RPE (Yang et al., 2018). Pigment epithelial cells in 4 months old RPEΔAbca1;Abcg1 mice were significantly larger and irregularly shaped (Figure 3A, quantification in 3B and 3C). At 6 months, we observed areas of dysmorphic RPE with accumulation of intracellular material and areas of RPE atrophy with infiltration of inflammatory cells (see below) in mutant but not control mice (Figure 3D and E). Photoreceptor loss correlated with RPE atrophy (see below). Variability of the phenotype within the same retina was probably due to patchy Cre expression (Figures 1 and 2). Reduced expression levels of Cre and the RPE marker monocarboxylic acid transporter 3 (Mct3) further indicated atrophic RPE at 6 months of age (Figure 3F and G). Loss of RPE cells in aged RPEΔAbca1;Abcg1 mice was most likely a consequence of the lack of ABCA1 and/or ABCG1 activity in RPE rather than of CRE expression per se, since Cre mRNA levels declined in eyecups of old RPEΔAbca1;Abcg1 (Figure 3F) but not old BEST1Cre mice (Figure 3—figure supplement 1). Similarly, morphological abnormalities of RPE cells in RPEΔAbca1;Abcg1 mice were not due to potential CRE toxicity (Thanos et al., 2012; He et al., 2014) as BEST1Cre mice only showed minor morphological alterations in the RPE and few bright spots in the fundus, but no lipid accumulation or functional changes (Figure 3—figure supplement 2). Thus, lack of Abca1 and/or Abcg1 resulted in lipid accumulation in the RPE and led to several morphological abnormalities that aggravated with time and eventually resulted in RPE cell death.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig2-v2.jpg)
 
-**Figure 2.:** Δ mice.Abca1;Abcg1(A) Fundus imaging of 2-months-old Ctr and RPEΔ mice showing altered pigmentation pattern in mutant mice. Corresponding retinal morphology analyzed by light (Abca1;Abcg1B) and electron (C) microscopy revealed alterations of the RPE in RPEΔ mice. Yellow lines in (Abca1;Abcg1B) indicate RPE borders. Yellow arrowheads in (C) indicate lipid droplets. OS: outer segments; N: nucleus. (D) Retinal sections were stained with ORO (red, dye for neutral lipids); nuclei were counterstained with hematoxylin (blue). RPE flat mounts were stained with LipidTOX (red, dye for neutral lipids) and anti-CRE (green) (E) or anti-CRE (red) and phalloidin (green, staining actin filaments) (F). Nuclei were counterstained with Hoechst. White arrowheads indicate CRE-positive cells showing lipid accumulation in mutant mice. Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
+**Figure 2.:** (A) Fundus imaging of 2-months-old Ctr and RPEΔAbca1;Abcg1 mice showing altered pigmentation pattern in mutant mice. Corresponding retinal morphology analyzed by light (B) and electron (C) microscopy revealed alterations of the RPE in RPEΔAbca1;Abcg1 mice. Yellow lines in (B) indicate RPE borders. Yellow arrowheads in (C) indicate lipid droplets. OS: outer segments; N: nucleus. (D) Retinal sections were stained with ORO (red, dye for neutral lipids); nuclei were counterstained with hematoxylin (blue). RPE flat mounts were stained with LipidTOX (red, dye for neutral lipids) and anti-CRE (green) (E) or anti-CRE (red) and phalloidin (green, staining actin filaments) (F). Nuclei were counterstained with Hoechst. White arrowheads indicate CRE-positive cells showing lipid accumulation in mutant mice. Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig3-v2.jpg)
+
+**Figure 3.:** (A) RPE flat mounts from 4-months-old Ctr and RPEΔAbca1;Abcg1 mice were stained for ZO-1 (red) and β-cat (green). White arrowheads indicate loss of co-localization between ZO-1 and β-cat in mutant RPE. Nuclei were counterstained with Hoechst. Shown are representative images of N = 3 animals per group. Quantification of cell area (B) and cell shape (C) was performed using ImageJ on images from ZO-1 stained flat mounts. Corresponding measurements of single analyzed cell can be found in Figure 3—source data 1. Statistics: Mann-Whitney test; **: p<0.01, ****: p<0.0001. Light microscopy was used to visualize outer retinas of control and RPEΔAbca1;Abcg1 mice: shown are panoramas (D) and RPE at higher magnification (E). Representative images of N ≥ 3 animals per group. Cre (F) and Mct3 (G) mRNA levels were measured by semi-quantitative real-time PCR in eyecups from Ctr and RPEΔAbca1;Abcg1 mice at the indicated ages. Shown are data from individual samples and means ± SD (N = 3–4). Statistics: one-way ANOVA vs ‘2 months’ of the respective genotype; *: p<0.05, ***: p<0.001. n.d.: not detected. Abbreviations as in Figure 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cre mRNA levels were measured by semi-quantitative real-time PCR in eyecups of 2- and 6-months-old RPEΔAbca1;Abcg1 and BEST1Cre mice. Shown are data from individual samples and means ± SD of the fold change on the corresponding "2 months" average (N = 3–4). Statistics: Student’s t-test vs ‘2 months’ of the respective genotype; **: p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Retinal morphology was analyzed by light microscopy in 2- and 6-months-old BEST1Cre animals. Yellow arrowhead indicates an example of occasionally observed minor alterations in the RPE. Retinal sections of BEST1Cre mice at indicated ages were stained for lipids (B) and CRE (C). Nuclei were counterstained with hematoxylin (B) or DAPI (C). (D) Occasional bright spots were observed in the fundus of BEST1Cre mice (indicated by white arrowheads). Representative images of N ≥ 3 animals per group. (E) ERG recordings of BEST1Cre and age-matched wild type animals. Shown are means ± SD (N = 3–9) of scotopic b-wave amplitudes. Abbreviations as in Figure 1.
 
 To exclude developmental effects as a cause for the phenotype, we tested lipid accumulation in the RPE after inactivation of Abca1 and Abcg1 in adult mice. For this purpose, we injected an adeno-associated virus (AAV) expressing Cre and green fluorescent protein (GFP) under the control of the BEST1 promoter (Figure 4A) into the sub-retinal space of adult Abca1flox/flox;Abcg1flox/flox mice. Although expression levels of GFP were variable and difficult to detect in some individual cells, LDs were specifically observed in GFP-positive (transduced) cells by LipidTOX staining 10 weeks after AAV injection (Figure 4B). In addition, RPE cells in the transduced area appeared larger and less regular than in the non-transduced area, similar to the morphological alterations detected in RPEΔAbca1;Abcg1 mice (Figure 2F). Lipid accumulation in GFP-positive RPE of Abca1flox/flox;Abcg1flox/flox mice was further confirmed in retinal sections, which showed ORO-positive lipid staining specifically in the RPE of transduced areas, as well as co-localization of GFP and CRE signals (Figure 4C–F). Contralateral eyes were injected with phosphate buffer saline (PBS, vehicle control) to check for any injection-related effects and showed, as expected, no lipid accumulation (not shown). Taken together, these data indicated altered morphology and intracellular lipid accumulation in adult RPE cells lacking Abca1 and/or Abcg1. This phenotype is in agreement with the known function of ABCA1/ABCG1 as mediators of lipid efflux in the RPE.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig4-v2.jpg)
 
-**Figure 4.:** Abca1 and Abcg1 in adult RPE.(A) Schematic representation of the vector packaged into AAV4 capsid in order to express Cre and GFP specifically in the RPE of Abca1 mice. Length of the construct in base pairs is shown below the map. ITR: inverted terminal repeat; SV40 SD/SA: simian virus 40 splice donor/splice acceptor site; P2A: porcine teschovirus 2A; bGH polyA: bovine growth hormone polyadenylation tail. 10 weeks after sub-retinal injections, co-localization of AAV-mediated flox/flox;Abcg1flox/floxCre/GFP expression and lipid accumulation was analyzed by IF in RPE flat mounts (B) and retinal sections (C–F). (B) RPE flat mounts were stained with LipidTOX (red); shown are representative images of a non-transduced and a transduced area. Dorsal-ventral retinal sections were stained with ORO: retina panorama is shown in (C) and magnified images of a non-transduced and a transduced area (corresponding to yellow and red rectangles in the panorama) are shown in (D). Yellow arrowhead indicates LDs in the transduced RPE. Nuclei were counterstained with hematoxylin (blue). Consecutive retinal sections were analyzed for AAV transduction by IF: retinal panorama is shown in (E) and magnified pictures of a non-transduced and a transduced area (corresponding to yellow and red rectangles in the panorama) are shown in (F), together with CRE staining. White arrowheads indicate CRE-positive nuclei in the transduced RPE. Nuclei were counterstained with DAPI (blue). Black (C) and white (E) arrows indicate the injection site. Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
+**Figure 4.:** (A) Schematic representation of the vector packaged into AAV4 capsid in order to express Cre and GFP specifically in the RPE of Abca1flox/flox;Abcg1flox/flox mice. Length of the construct in base pairs is shown below the map. ITR: inverted terminal repeat; SV40 SD/SA: simian virus 40 splice donor/splice acceptor site; P2A: porcine teschovirus 2A; bGH polyA: bovine growth hormone polyadenylation tail. 10 weeks after sub-retinal injections, co-localization of AAV-mediated Cre/GFP expression and lipid accumulation was analyzed by IF in RPE flat mounts (B) and retinal sections (C–F). (B) RPE flat mounts were stained with LipidTOX (red); shown are representative images of a non-transduced and a transduced area. Dorsal-ventral retinal sections were stained with ORO: retina panorama is shown in (C) and magnified images of a non-transduced and a transduced area (corresponding to yellow and red rectangles in the panorama) are shown in (D). Yellow arrowhead indicates LDs in the transduced RPE. Nuclei were counterstained with hematoxylin (blue). Consecutive retinal sections were analyzed for AAV transduction by IF: retinal panorama is shown in (E) and magnified pictures of a non-transduced and a transduced area (corresponding to yellow and red rectangles in the panorama) are shown in (F), together with CRE staining. White arrowheads indicate CRE-positive nuclei in the transduced RPE. Nuclei were counterstained with DAPI (blue). Black (C) and white (E) arrows indicate the injection site. Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
 
-## Lipid droplets in the RPE of RPEΔAbca1;Abcg1 mice are composed mainly of cholesteryl esters
+### Lipid droplets in the RPE of RPEΔAbca1;Abcg1 mice are composed mainly of cholesteryl esters
 
 We next characterized the lipid composition of eyecups from 2-months-old RPEΔAbca1;Abcg1 and Ctr mice. We performed the same analysis on the corresponding neural retinas in order to evaluate possible effects of impaired lipid transport in the RPE on lipid homeostasis of other retinal cells. Additionally, plasma samples from the same mice were included to check for presence of any systemic changes on circulating lipid levels that could contribute to the eye phenotype. We used mass spectrometry-based approaches to measure a broad number of lipid classes and species. The analysis revealed significantly increased concentration of CEs in eyecups of RPEΔAbca1;Abcg1 mice. In contrast UC, PLs, sphingolipids (SLs) including sphingomyelins (SMs) and ceramides (Cer), and glycerolipids (GLs) including diacylglycerols (DAGs) and triglycerides (TGs) remained unchanged (Figure 5A). All of the individual CE species analyzed were more abundant in the mutant mice compared to control littermates. Some CE species were dramatically increased up to 100 fold (Figure 5B), including CEs containing fatty acid chains typically found in the retina such as palmitic (16:0), oleic (18:1) and docosahexaenoic (22:6) acid, which is the most abundant fatty acid of photoreceptor OS (Fliesler and Anderson, 1983; Martin et al., 2005; Bretillon et al., 2008). No major difference in the lipid composition was detected in the neural retinas of the two strains (Figure 5C), apart from a modest but significant increase in CE levels. However, the small extent of the increase and the low concentration (2.7 ± 1.1 pmol/µg protein in the neural retina, 1239.9 ± 955.1 pmol/µg protein in the eyecup, Supplementary file 1A) suggested a contamination from the RPE during tissue dissection rather than a real increase in the neural retina. Systemic lipid levels measured in the plasma showed no differences between RPEΔAbca1;Abcg1 and Ctr mice in any of the considered classes (Figure 5D), supporting a local effect of the lack of Abca1 and Abcg1 in the RPE. The high variability observed in plasma lipid levels might be explained by the fact that the mice had access to food ad libitum, thus, in our experiment, lipid intake was uncontrolled. Analysis of lipid composition therefore revealed prominent accumulation of CEs in the RPE of RPEΔAbca1;Abcg1 mice without major alterations of the neural retina or plasma lipidomes. Absolute concentrations for all of the analyzed lipid classes can be found in Supplementary file 1A. Finally, we also detected a significant increase in the relative abundance of the visual cycle intermediates retinyl esters (REs) in eyecups of mutant mice (Figure 5E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig5-v2.jpg)
 
-**Figure 5.:** Δ mice.Abca1;Abcg1Lipid composition of eyecups (A), neural retinas (C) and plasma (D) from 2-months-old Ctr and mutant mice was measured by mass spectrometry-based methods. The following lipid classes were analyzed: cholesterol (un-esterified cholesterol, UC, and cholesteryl esters, CEs), phospholipids (PLs: sum of phosphatidylcholine, phosphatidylethanolamine, phosphatidylserine, phosphatidylinositol and phosphatidylglycerol), sphingolipids (SLs: ceramides, Cer, and sphingomyelins, SMs) and glycerolipids (GLs: diacylglycerols, DAGs, and triglycerides, TGs). (B) Cholesteryl esters species containing the indicated fatty acids were quantified in eyecups from the same animals. (E) Relative quantification of retinyl esters was performed in eyecups from 2-months-old Ctr and RPEΔ mice. Shown are box plots of folds on respective Ctr average, whiskers correspond to min and max values (N = 4–10). Lipid concentration values corresponding to fold changes in (Abca1;Abcg1A), (C) and (D) as well as single PL classes can be found in Supplementary file 1A. Please note that UC, CEs and REs were determined in RPE-enriched eyecups whereas PLs, SLs and GLs were determined in whole eyecups. Also, tissues from both eyes of the same animals were used for analysis of UC, CEs and REs, whereas tissues from single eyes were used for PLs, SLs and GLs (see ‘Materials and methods’). Statistics: Student’s t-test vs ‘Ctr’; *: p<0.05, **: p<0.01, ***: p<0.001.
+**Figure 5.:** Lipid composition of eyecups (A), neural retinas (C) and plasma (D) from 2-months-old Ctr and mutant mice was measured by mass spectrometry-based methods. The following lipid classes were analyzed: cholesterol (un-esterified cholesterol, UC, and cholesteryl esters, CEs), phospholipids (PLs: sum of phosphatidylcholine, phosphatidylethanolamine, phosphatidylserine, phosphatidylinositol and phosphatidylglycerol), sphingolipids (SLs: ceramides, Cer, and sphingomyelins, SMs) and glycerolipids (GLs: diacylglycerols, DAGs, and triglycerides, TGs). (B) Cholesteryl esters species containing the indicated fatty acids were quantified in eyecups from the same animals. (E) Relative quantification of retinyl esters was performed in eyecups from 2-months-old Ctr and RPEΔAbca1;Abcg1 mice. Shown are box plots of folds on respective Ctr average, whiskers correspond to min and max values (N = 4–10). Lipid concentration values corresponding to fold changes in (A), (C) and (D) as well as single PL classes can be found in Supplementary file 1A. Please note that UC, CEs and REs were determined in RPE-enriched eyecups whereas PLs, SLs and GLs were determined in whole eyecups. Also, tissues from both eyes of the same animals were used for analysis of UC, CEs and REs, whereas tissues from single eyes were used for PLs, SLs and GLs (see ‘Materials and methods’). Statistics: Student’s t-test vs ‘Ctr’; *: p<0.05, **: p<0.01, ***: p<0.001.
 
-## Functional consequence of lipid accumulation in the RPE
+### Functional consequence of lipid accumulation in the RPE
 
 Since RPEΔAbca1;Abcg1 mice revealed alterations in RPE morphology and lipid composition, we tested whether lack of Abca1 and Abcg1 affected function of the epithelium. For this purpose, we investigated rhodopsin (RHO) regeneration kinetics after bleaching, a major task of the RPE in the classical visual cycle (Strauss, 2005). 2-months-old RPEΔAbca1;Abcg1 and Ctr mice had similar dark levels of RHO, which were bleached with comparable efficiencies (Supplementary file 1B). However, RPEΔAbca1;Abcg1 mice regenerated RHO slower within the first 30 min after bleaching. After this initial phase, the amount of regenerated RHO was no longer different between the mice (Figure 6 and Supplementary file 1B). This suggests an early delay in the visual cycle, probably due to difficulties with handling the incoming all-trans retinol.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig6-v2.jpg)
 
-**Figure 6.:** Δ mice.Abca1;Abcg1Dark-adapted 2-months-old Ctr and RPEΔ mice were exposed to 5’000 lux for 10 min and the RHO content was measured in each retina. Dark controls were kept in darkness for the entire procedure. RHO levels were measured in dark controls, immediately after bleach (0 min) and after 30, 60 and 120 min of recovery in darkness. (Abca1;Abcg1A) ‘Total’ amount of regenerated RHO after 120 min was calculated by subtracting the corresponding averaged RHO amount at ‘0 min’ from the RHO levels at ‘120 min’. (B) Amount of regenerated RHO during the indicated time intervals after bleaching were calculated by subtracting the corresponding averaged RHO amount at the early time point from the RHO levels measured at the later time point. Shown are data from individual samples and means ± SD (N = 4–8 eyes, corresponding to 2–4 mice). Statistics: Student’s t-test vs ‘Ctr’; *: p<0.05. Averages and SD of RHO content measurements can be found in Supplementary file 1B; single measurements per eye can be found in Figure 6—source data 1.10.7554/eLife.45100.014Figure 6—source data 1.∆ and control mice.Abca1;Abcg1
+**Figure 6.:** Dark-adapted 2-months-old Ctr and RPEΔAbca1;Abcg1 mice were exposed to 5’000 lux for 10 min and the RHO content was measured in each retina. Dark controls were kept in darkness for the entire procedure. RHO levels were measured in dark controls, immediately after bleach (0 min) and after 30, 60 and 120 min of recovery in darkness. (A) ‘Total’ amount of regenerated RHO after 120 min was calculated by subtracting the corresponding averaged RHO amount at ‘0 min’ from the RHO levels at ‘120 min’. (B) Amount of regenerated RHO during the indicated time intervals after bleaching were calculated by subtracting the corresponding averaged RHO amount at the early time point from the RHO levels measured at the later time point. Shown are data from individual samples and means ± SD (N = 4–8 eyes, corresponding to 2–4 mice). Statistics: Student’s t-test vs ‘Ctr’; *: p<0.05. Averages and SD of RHO content measurements can be found in Supplementary file 1B; single measurements per eye can be found in Figure 6—source data 1.
 
-## Lack of Abca1 and Abcg1 in the RPE results in age-dependent retinal degeneration
+### Lack of Abca1 and Abcg1 in the RPE results in age-dependent retinal degeneration
 
 Loss of ABCA1 and ABCG1 from mouse RPE resulted in early lipid accumulation, morphological alterations and atrophy of this cellular layer. To understand the consequences of such diseased RPE for the neural retina, we imaged the mutant mice at different ages (2, 4 and 6 months) by fundus photography and optical coherence tomography (OCT). The pigmentation changes observed in RPEΔAbca1;Abcg1 mice at two months of age (Figure 2A) worsened at older ages (Figure 7A). OCT scans revealed sub-retinal hyper-reflective foci in mutant mice starting at 4 months of age (Figure 7A). These foci were accompanied by irregular RPE/outer nuclear layer (ONL) borders and retinal thinning, suggesting ongoing degeneration. Analysis of the respective retinal morphologies (Figure 7B) confirmed degenerative processes in the RPE/photoreceptor layers in ageing RPEΔAbca1;Abcg1 mice. Retinal degeneration was further supported by a significant reduction of the ONL thickness in mutant vs control mice at 6 months of age (Figure 7C). The high variability in ONL measurements was likely owed to the patchy expression of the Cre transgene resulting in areas with intact RPE/ONL and areas with RPE cell death and consequent photoreceptor degeneration within the same retinal section. In some regions, both RPE and ONL were completely lost (see also Figure 3D). The inner retina was instead not affected by ABCA1/ABCG1 knockout in the RPE, as revealed by the determination of the INL thickness and staining for ganglion cells in 6-months-old animals (Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig7-v2.jpg)
+
+**Figure 7.:** (A) Fundus images (upper panels) and OCT scans (lower panels, corresponding to red lines in fundus) of Ctr and RPEΔAbca1;Abcg1 mice at the indicated age. White arrowheads indicate sub-retinal hyper-reflective foci. Retinal morphology of the same animals was analyzed by light microscopy (B). Representative pictures of N ≥ 3 animals per group. ONL thickness was quantified from nasal-temporal panorama images at 2 and 6 months of age and presented as spidergrams (C): significant ONL thinning was detected in 6-months-old RPEΔAbca1;Abcg1 mice. Shown are means ± SD (N ≥ 3). Statistics: two-way ANOVA with Sidak’s multiple comparison test; *: p<0.05, **: p<0.01, ****: p<0.0001. Abbreviations as in Figure 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) INL thickness was quantified from nasal-temporal panorama images at 6 months of age and presented as spidergram. Shown are means ± SD (N ≥ 3). Statistics: two-way ANOVA with Sidak’s multiple comparison test. (B) Retinal sections from 6-months-old Ctr (upper panel) and RPEΔAbca1;Abcg1 (lower panel) mice were stained for POU4F1 (red); nuclei were counterstained with DAPI. Note that the used secondary antibody was an anti-mouse and stained retinal blood vessels as well. Representative images of N = 3 animals per group. GCL: ganglion cell layer.
 
 Progressing photoreceptor degeneration was also reflected by the retinal function measured by electroretinography (ERG). Scotopic and photopic wave amplitudes gradually decreased in ageing RPEΔAbca1;Abcg1 mice starting already at 4 months of age (Figure 8). In conclusion, lack of Abca1 and Abcg1 in the RPE had a strong impact on neural retinal morphology and function, with progressive photoreceptor degeneration.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig8-v2.jpg)
 
-**Figure 8.:** Δ mice.Abca1;Abcg1Scotopic and photopic ERGs were recorded with increasing light intensities from dark-adapted Ctr and RPEΔ mice at the indicated ages. Shown are mean ± SD (N = 3–6) of scotopic a- (Abca1;Abcg1A) and b-wave (B) amplitudes as well as photopic b-wave (C) amplitudes. Average scotopic and photopic traces of 6-months-old animals are shown in (D) and (E), respectively. Statistics: two-way ANOVA with Sidak’s multiple comparison test; *: p<0.05, +: p<0.01, #: p<0.001, §: p<0.0001.
+**Figure 8.:** Scotopic and photopic ERGs were recorded with increasing light intensities from dark-adapted Ctr and RPEΔAbca1;Abcg1 mice at the indicated ages. Shown are mean ± SD (N = 3–6) of scotopic a- (A) and b-wave (B) amplitudes as well as photopic b-wave (C) amplitudes. Average scotopic and photopic traces of 6-months-old animals are shown in (D) and (E), respectively. Statistics: two-way ANOVA with Sidak’s multiple comparison test; *: p<0.05, +: p<0.01, #: p<0.001, §: p<0.0001.
 
-## Inflammatory response in RPEΔAbca1;Abcg1 mice
+### Inflammatory response in RPEΔAbca1;Abcg1 mice
 
 Retinal sections analyzed by light microscopy suggested the presence of immune cells in aged mutant mice (Figure 3D and E) and infiltration of inflammatory cells in the retina is one of the key events in AMD pathogenesis (Kauppinen et al., 2016). We thus stained RPE flat mounts and retinal sections of RPEΔAbca1;Abcg1 mice for macrophages/activated microglia markers. At 4 months of age, up to about 100 ionized calcium-binding adapter molecule 1 (IBA-1)-positive cells were detected in flat mounts of all mutant RPE at the sites of morphological alterations, but not in non-affected areas (not shown) or Ctr mice. Confocal microscopy showed that IBA-1-positive signals were located within the RPE layer as well as on its basal side (Figure 9A, lower cross-sections). Whether they represent cells infiltrating the RPE from the choroidal (basal) side or leaving the retina through the RPE from the apical side was not determined. IBA-1 positive inflammatory cells were also detected in the outer retinal layers including the sub-retinal space of 6 months old RPE∆Abca1;Abcg1 but not control mice (Figure 9B). At this later time point, such cells were not only present in regions of strong photoreceptor and RPE atrophy (not shown, but see Figure 3D,E and Figure 7B for retinal morphologies showing large, presumably inflammatory cells in the sub-retinal space) but also in retinal regions that were mildly affected (Figure 9B). It is conceivable that damaged RPE cells facilitated the movement of IBA-1 positive cells across the RPE layer. Pigmentation of these cells could be due to phagocytosis of melanin granules-rich debris of RPE cells. Increased expression of interleukin 1β (Il1b), caspase 1 (Casp1) and glial fibrillary acidic protein (Gfap) in neural retinas of RPEΔAbca1;Abcg1 mice confirmed a time-dependent inflammatory/stress response upon deletion of Abca1 and Abcg1 in the RPE (Figure 9C–E).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig9-v2.jpg)
 
-**Figure 9.:** Δ mice.Abca1;Abcg1(A) RPE flat mounts from 4-months-old Ctr and RPEΔ mice were stained with phalloidin (green, staining actin filaments) and anti-IBA-1 (red). Shown are representative top-view images and cross-sections (A = apical side, B = basal side). White arrowheads indicate IBA-1-positive cells located inside or at the choroidal (basal) side of the mutant RPE. Nuclei were counterstained with Hoechst. (Abca1;Abcg1B) Retinal sections from 6-months-old mice were stained for IBA-1 (red): increased signal intensity and presence of sub-retinal macrophages/microglia was detected in RPEΔ mice (higher magnification images of the outer retina are shown in right panels). Nuclei were counterstained with DAPI. Representative images of N = 3 animals per group. Abca1;Abcg1Il1b (C), Casp1 (D) and Gfap (E) mRNA levels were measured by semi-quantitative real-time PCR in neural retinas from Ctr and RPEΔ mice. Shown are data from individual samples and means ± SD (N = 3–4). Statistics: one-way ANOVA vs ‘2 months’ of the respective genotype; *: p<0.05, ****: p<0.0001. Abbreviations as in Abca1;Abcg1Figure 1.
+**Figure 9.:** (A) RPE flat mounts from 4-months-old Ctr and RPEΔAbca1;Abcg1 mice were stained with phalloidin (green, staining actin filaments) and anti-IBA-1 (red). Shown are representative top-view images and cross-sections (A = apical side, B = basal side). White arrowheads indicate IBA-1-positive cells located inside or at the choroidal (basal) side of the mutant RPE. Nuclei were counterstained with Hoechst. (B) Retinal sections from 6-months-old mice were stained for IBA-1 (red): increased signal intensity and presence of sub-retinal macrophages/microglia was detected in RPEΔAbca1;Abcg1 mice (higher magnification images of the outer retina are shown in right panels). Nuclei were counterstained with DAPI. Representative images of N = 3 animals per group. Il1b (C), Casp1 (D) and Gfap (E) mRNA levels were measured by semi-quantitative real-time PCR in neural retinas from Ctr and RPEΔAbca1;Abcg1 mice. Shown are data from individual samples and means ± SD (N = 3–4). Statistics: one-way ANOVA vs ‘2 months’ of the respective genotype; *: p<0.05, ****: p<0.0001. Abbreviations as in Figure 1.
 
-## Single Abca1, but not Abcg1, KO is sufficient to cause early lipid accumulation in the RPE
+### Single Abca1, but not Abcg1, KO is sufficient to cause early lipid accumulation in the RPE
 
 We initially generated double Abca1;Abcg1 KO mice in order to completely block the active cholesterol efflux pathway in the RPE. To investigate the individual contribution of each gene to the phenotype, we generated RPE-specific Abca1 (RPEΔAbca1) and Abcg1 (RPEΔAbcg1) single mutant mice (Table 1). Analysis at 2 months of age showed that the RPE morphology of single RPEΔAbca1 mice was similar to the double RPEΔAbca1;Abcg1 mutants (Figure 10A). On the other hand, single RPEΔAbcg1 mice were undistinguishable from the Ctr animals (Figure 10A). Furthermore, ORO staining confirmed accumulation of neutral lipids in RPEΔAbca1 but not in RPEΔAbcg1 mice (Figure 10B), even though CRE was similarly expressed in the RPE layer of all mutant mice (Figure 10C). Thus Abca1 was the main driver of early morphological alterations and lipid accumulation in the RPE.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig10-v2.jpg)
 
-**Figure 10.:** Abca1, but not Abcg1, KO mice.2-months-old Ctr, double KO and single KO retinal sections were analyzed by light microscopy (A), ORO staining (B) and CRE IF (C). Single Abca1 mutant mice (RPEΔ) showed an RPE phenotype comparable to double mutants (RPEAbca1Δ), while single Abca1;Abcg1Abcg1 KO mice (RPE) were undistinguishable from controls. Yellow lines in (ΔAbcg1A) indicate RPE borders. Nuclei were counterstained with hematoxylin (B) or DAPI (C). Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
+**Figure 10.:** 2-months-old Ctr, double KO and single KO retinal sections were analyzed by light microscopy (A), ORO staining (B) and CRE IF (C). Single Abca1 mutant mice (RPEΔAbca1) showed an RPE phenotype comparable to double mutants (RPEΔAbca1;Abcg1), while single Abcg1 KO mice (RPEΔAbcg1) were undistinguishable from controls. Yellow lines in (A) indicate RPE borders. Nuclei were counterstained with hematoxylin (B) or DAPI (C). Representative pictures of N ≥ 3 animals per group. Abbreviations as in Figure 1.
 
-## Decreased ABCA1 expression in human-derived cells carrying the AMD risk-conferring allele of ABCA1
+### Decreased ABCA1 expression in human-derived cells carrying the AMD risk-conferring allele of ABCA1
 
 Two SNPs in intron 2 of the human ABCA1 gene (rs1883025 and rs2740488), which are in high linkage disequilibrium (r2 = 0.941), have been associated with AMD (Chen et al., 2010; Fauser et al., 2011; Peter et al., 2011; Yu et al., 2011; Fritsche et al., 2016). The major ‘C’ allele of rs1883025 and ‘A’ allele of rs2740488 have been described to confer increased risk for AMD, while the minor ‘T’ allele of rs1883025 and ‘C’ allele of 2740488 were associated with a decreased risk of AMD. However, the effect of these SNPs on ABCA1 expression and/or function remains unknown. To study the potential effect of the AMD-associated SNPs on ABCA1 expression, we generated lymphoblastoid cell lines (LCLs) from healthy individuals carrying homozygous decreased (N = 3) and increased risk (N = 3) genotypes for the SNPs (Table 2). ABCA1 expression in LCLs was induced by LXR agonist stimulation and mRNA and protein levels were compared between LCLs carrying the different alleles. LCLs derived from subjects homozygous for the AMD increased risk allele of ABCA1 showed significantly decreased ABCA1 mRNA expression compared to reduced risk carriers (Figure 11A). A trend towards decreased ABCA1 expression was observed also at the protein level in carriers of the AMD increased risk genotype (Figure 11B and C). Even though the difference did not reach significance (p=0.14), probably due to the low sample numbers and intrinsic variability, these data provide the first indication of a potential correlation between AMD risk-associated genotypes and decreased ABCA1 expression, which may impair cholesterol efflux from RPE cells in patients. This finding might be significant for a potential therapy aiming at ABCA1 gene augmentation (see discussion).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/45100/elife-45100-fig11-v2.jpg)
 
-**Figure 11.:** ABCA1 expression in human LCLs.LCLs derived from healthy individuals carrying the AMD decreased or increased risk ABCA1 genotypes were stimulated with an LXR agonist (1 μM) or DMSO vehicle control for 24 hr. (A) ABCA1 mRNA levels were measured by semi-quantitative real-time PCR. Shown are data from individual samples and means ± SD (N = 3, three technical replicates per cell line). Statistics: two-way ANOVA with Sidak’s multiple comparison test; *: p<0.05. ABCA1 protein levels were measured in LXR-stimulated cells by WB and normalized on ACTB levels. Shown are a representative WB (B) and the means ± SD of the band intensity quantification (N = 3, five technical replicates per cell line) (C). Statistics: Student’s t-test vs ‘decreased risk’.
+**Figure 11.:** LCLs derived from healthy individuals carrying the AMD decreased or increased risk ABCA1 genotypes were stimulated with an LXR agonist (1 μM) or DMSO vehicle control for 24 hr. (A) ABCA1 mRNA levels were measured by semi-quantitative real-time PCR. Shown are data from individual samples and means ± SD (N = 3, three technical replicates per cell line). Statistics: two-way ANOVA with Sidak’s multiple comparison test; *: p<0.05. ABCA1 protein levels were measured in LXR-stimulated cells by WB and normalized on ACTB levels. Shown are a representative WB (B) and the means ± SD of the band intensity quantification (N = 3, five technical replicates per cell line) (C). Statistics: Student’s t-test vs ‘decreased risk’.
+
+**Table 2.**
+ LCLs and genotypes of the AMD-associated SNPs in human ABCA1 intron 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>LCL</th>
+      <th>SNP</th>
+      <th>Genotype</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Decreased risk (n = 3)</td>
+      <td>rs1883025</td>
+      <td>TT</td>
+    </tr>
+    <tr>
+      <td>rs2740488</td>
+      <td>CC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Increased risk (n = 3)</td>
+      <td>rs1883025</td>
+      <td>CC</td>
+    </tr>
+    <tr>
+      <td>rs2740488</td>
+      <td>AA</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -147,21 +272,346 @@ In conclusion, this study supports an essential role of the ABCA1/ABCG1 lipid ef
 
 ## Materials and methods
 
-## Mice and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Abca1</td>
+      <td></td>
+      <td>NCBI gene ID: 11303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Abcg1</td>
+      <td></td>
+      <td>NCBI gene ID: 11307</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J (wt)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID: IMSR_JAX:000664; The Jackson Laboratory: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>BEST1Cre</td>
+      <td>Iacovelli et al., 2011</td>
+      <td>RRID:IMSR_JAX:017557</td>
+      <td>Name at the Jackson Laboratory: C57BL/6-Tg (BEST1-cre)1Jdun/J</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Abca1flox/flox; Abcg1flox/flox</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:021067</td>
+      <td>Name at the Jackson Laboratory: B6.Cg-Abca1 tm1Jp Abcg1tm1Tall/J</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ABCA1 (rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>RRID:AB_10000630; Novus Biologicals: NB400-105</td>
+      <td>(1:250 for IF, 1:200 for WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ABCG1 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_867471; Abcam: ab52617</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EZR (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_783303; Santa Cruz: sc-58758</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CRE (rabbit polyclonal)</td>
+      <td>Merck</td>
+      <td>RRID:AB_10806983; Merck: 69050–3</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-IBA1 (rabbit polyclonal)</td>
+      <td>Wako Fujifilm</td>
+      <td>RRID:AB_839504; Wako Fujifilm: 019–19741</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO1 (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2533456; Thermo Fisher Scientific: 40–2200</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-βcatenin (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_397554; BD Biosciences: 610153</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-POU4F1 (mouse monoclonal)</td>
+      <td>Merck</td>
+      <td>RRID:AB_94166; Merck: MAB1585</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTR-BEST1-Cre-P2A-GFP (AAV vector plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Constructed from AAV plasmid materials at the University of Florida, laboratory of S. Boye</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Random Primers</td>
+      <td>Promega</td>
+      <td>Promega: C1181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Phalloidin-Alexa488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:AB_2315147; Thermo Fisher Scientific: A12379</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LipidTOX Red Neutral Lipid Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: H34476</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protease Inhibitos Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: P2417</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp Syber Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fishe rScientific: A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA isolation kit</td>
+      <td>Macherey-Nagel</td>
+      <td>Macherey-Nagel: 740949.250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OilRedO (ORO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: O9755-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oxalic Acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 75688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LXR agonist</td>
+      <td>Roche, Panday et al., 2006</td>
+      <td>Roche: T0901317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SPLASH</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 330707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d7-sphinganine (SPH d18:0)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860658</td>
+      <td>D-erythro-sphinganine-d7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d7-sphingosine (SPH d18:1)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860657</td>
+      <td>D-erythro-sphingosine-d7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydroceramide (Cer d18:0/12:0)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860635</td>
+      <td>N-lauroyl-D-erythro -sphinganine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ceramide (Cer d18:1/12:0)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860512</td>
+      <td>N-lauroyl-D-erythro- sphingosine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucosylceramide (GluCer d18:1/8:0)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860540</td>
+      <td>D-glucosyl-ß−1,1'-N -octanoyl-D-erythro -sphingosine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sphingomyelin (SM d18:1/12:0)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860583</td>
+      <td>N-lauroyl-D-erythro -sphingosylphosphorylcholine</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>d7-sphingosine-1- phosphate (S1P d18:1)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Avanti Polar Lipids: 860659</td>
+      <td>D-erythro-sphingosine -d7-1-phosphate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methanol</td>
+      <td>Honeywell</td>
+      <td>Honeywell: 34860 Riedel-de Haen</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTBE</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 20256</td>
+      <td>tert-Butyl methyl ether</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 650498</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 534851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 59300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Tissue Cell Geometry macro</td>
+      <td>Institute for Research in Biomedicine, Barcelona, Spain</td>
+      <td></td>
+      <td>http://adm.irbbarcelona.org/image-j-fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relative Quantification Software</td>
+      <td>Thermo Fisher Cloud</td>
+      <td></td>
+      <td>https://www.thermofisher.com/uk/en/home/digital-science/thermo-fisher-connect/all-analysis-modules.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism, version 7</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tracefinder Clinical 4.1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>transcend TLX I eluting pump</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Q-Exactive</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mini-PROTEAN Precast Gels, 4–15% polyacrylamide</td>
+      <td>BioRad</td>
+      <td>BioRad: 4561086DC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C30 Accucore LC column</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: 7826–152130</td>
+      <td>150 mm * 2.1 mm * 2.6 µm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and genotyping
 
 All animal experiments adhered to the ARVO Statement for the Use of Animals in Ophthalmic and Vision Research and the regulations of the Veterinary Authorities of Kanton Zurich, Switzerland (study approval reference numbers: ZH141/2016 and ZH216/2015). Mice were maintained as breeding colonies at the Laboratory Animal Services Center (LASC) of the University of Zurich in a 14 hr: 10 hr light-dark cycle with lights on at six am and lights off at eight pm. Mice had access to food and water ad libitum. Average light intensity at cage levels was 60–150 lux, depending on the position in the rack. C57BL/6J (Bl6) were used as wild type controls. BEST1Cre mice were described earlier (Iacovelli et al., 2011). Abca1;Abcg1 double floxed mice (Abca1flox/flox;Abcg1flox/flox) were purchased from The Jackson Laboratory (Bar Harbor, ME, USA). Founder mice were on a Bl6 background and were genotyped for absence of known spontaneous mutations leading to retinal degeneration (rd1, rd8, rd10, Cpfl1 and Gpr179). Mice were crossed in order to generate double- and single-floxed Cre-positive mice and Cre-negative littermate controls. All breeding pairs were heterozygous for BEST1Cre. Primers listed in Supplementary file 1C were used to genotype the mice by conventional PCR using genomic DNA extracted from ear biopsies or eye tissues. Although ocular expression of the BEST1Cre transgene is restricted to post-natal RPE (Iacovelli et al., 2011 and Figure 1C), BEST1Cre can be expressed in other cell types, such as melanocytes (Sundermeier et al., 2017) and Sertoli cells of the testis (Masuda and Esumi, 2010; Milenkovic et al., 2015). Probably due to ectopic expression of the transgene in germ-line cells, we occasionally observed systemic or mosaic heterozygous KO animals for Abca1 and/or Abcg1 (Figure 1—figure supplement 1A). We controlled for presence of the excised allele in ear biopsies to avoid generation of full KO animals and defined our mice as shown in Table 1.
 
 Since a heterozygous flox/- genotype resulted in a 50% reduction of the Abca1 and Abcg1 transcripts in non Cre-expressing tissues (Figure 1—figure supplement 1B), we excluded the possibility that systemic lack of one functional Abca1 and/or Abcg1 allele had an impact on the observed phenotype. To this aim, eyes of Cre-negative heterozygous animals (Abca1flox/-;Abcg1flox/flox, Abca1flox/flox;Abcg1flox/-, or Abca1flox/-;Abcg1flox/-) were analyzed up to 6 months of age. No difference to Abca1flox/flox;Abcg1flox/flox controls were found (retinal morphology in Figure 1—figure supplement 1C and ERG data not shown). All BEST1Cre-negative mice were therefore used as control animals.
 
-## AAV generation and injection
+### AAV generation and injection
 
 A Cre-expression cassette was fused to GFP via a porcine teschovirus 2A (P2A) sequence and cloned downstream of the RPE-specific human BEST1 promoter into the pTR vector. pTR-BEST1-Cre-P2A-GFP was packaged into AAV4 capsid at the Viral Vector Facility of the Neuroscience Center Zurich (ZNZ), University of Zurich, Switzerland. 7.3 × 109 viral genomes/eye (1 µL volume) were injected into the sub-retinal space of Abca1flox/flox;Abcg1flox/flox mice as previously described (Barben et al., 2018a). Mice were injected at 4–15 weeks of age and sacrificed 10 weeks post-injection. Eyes were marked nasally by cauterization and fixed for subsequent IF/lipid staining as described below.
 
-## Morphology, light microscopy and transmission electron microscopy
+### Morphology, light microscopy and transmission electron microscopy
 
 Eyes were marked dorsally by cauterization and prepared as described (Barben et al., 2018a). 500 nm nasal-temporal sections were analyzed by light microscopy (Zeiss Axioplan, Feldbach, Switzerland) and Adobe Photoshop CS6 (Adobe Systems Inc, San Jose, CA, USA) was used to photomerge high magnification images of the outer and inner retina as well as to create retina panoramas. Images at higher magnification were always acquired from the central region close to the optic nerve head. The ruler tool of Adobe Photoshop CS6 was used to measure ONL and INL thickness at the indicated distance from optic nerve head in retinal panoramas. For transmission electron microscopy, ultrathin sections (50 nm) were cut, stained with uranyl acetate and lead citrate and analyzed using a Philips CM100 transmission electron microscope (Philips, Amsterdam, The Netherlands).
 
-## IF on retinal sections, ORO staining and RPE flat mounts
+### IF on retinal sections, ORO staining and RPE flat mounts
 
 Eyes were marked dorsally by cauterization and retinal 12 μm nasal-temporal cryosections were prepared as described (Barben et al., 2018b). For AAV-injected animals, eyes were marked nasally and dorsal-ventral sections were cut. Sections were blocked in blocking solution (3% normal goat serum, 0.3% Triton X-100 in 0.1 M phosphate buffer (PB)) for 1 hr at room temperature (RT), followed by overnight incubation at 4°C with the following primary antibodies: rabbit anti-ABCA1 (1:250, NB400-105, Novus Biologicals, Littleton, CO, USA), rabbit anti-ABCG1 (1:100, ab52617, Abcam, Cambridge, UK), mouse anti-EZR (1:500, sc-58758, Santa Cruz Biotechnology, Dallas, TX, USA), rabbit anti-CRE (1:300, 69050–3, Merck, Darmstadt, Germany), rabbit anti-IBA-1 (1:500, 019–19741, Wako Fujifilm, Neuss, Germany) or mouse anti-POU4F1 (1:100, MAB1585, Merck). After three washing steps in PB salt (0.1 M PB with the addition of 0.8% NaCl and 0.02% KCl), samples were incubated at RT for 2 hr with appropriate secondary antibodies conjugated to Cy2, Cy3 or AlexaFluor555 fluorophores (Jackson ImmunoResearch, Suffolk, UK and Thermo Fisher Scientific, Reinach, Switzerland). Nuclei were counterstained with 4’,6-Diamidine-2’-phenylindole di-hydrochloride (DAPI, Thermo Fisher Scientific), sections were mounted with Mowiol and imaged using a fluorescent microscope (Zeiss Axioplan). Sections stained with secondary antibody only were used as negative controls.
 
@@ -169,15 +619,15 @@ For neutral lipid ORO staining, cryosections were washed with distilled H2O and 
 
 RPE flat mounts were prepared as described (Oczos et al., 2014). After washing, samples were incubated for 1 hr at RT in blocking solution (see above), followed by overnight incubation at 4°C with primary antibodies: rabbit anti-CRE (see above), rabbit anti-ZO-1 (1:100, 40–2200, Thermo Fisher Scientific), mouse anti-β-cat (1:300, 610153, BD Biosciences, Allschwil, Switzerland) or rabbit anti-IBA-1 (see above). After three washing steps in PB salt, samples were incubated at RT for 2 hr with appropriate secondary antibodies as described above or phalloidin-AlexaFluor488 to stain F-actin (1:100, A12379, Thermo Fisher Scientific). Nuclei were counterstained with Hoechst (2 μg/ml, Sigma-Aldrich) and lipids with LipidTOX (1:200, H34476, Thermo Fisher Scientific) for 30 min at RT. Samples were mounted on glass slides with Mowiol and imaged using a fluorescent microscope (Zeiss Axioplan) or an SP8 inverted confocal microscope (Leica Microsystems). Three ZO-1-stained images per RPE flat mount quadrant (dorsal, ventral, nasal and temporal of the optic nerve head) were used for quantification with the Tissue Cell Geometry macro in ImageJ (developed by the Institute for Research in Biomedicine, Barcelona, Spain, http://adm.irbbarcelona.org/image-j-fiji). At least N = 998 RPE cells per group (N = 3–4 mice) were examined. The ratio between the major and minor axis of the fitted ellipse was used as a readout of cell shape.
 
-## Plasma and eye tissue collection for lipid analysis
+### Plasma and eye tissue collection for lipid analysis
 
 After a lethal dose of anesthesia, blood was collected by cardiac puncture using a 1 ml syringe and 26G needle into Microtainer K2-EDTA-coated tubes (BD Biosciences). Tubes were inverted 20 times, plasma was separated by centrifugation at 2’500 g for 10 min at RT and snap-frozen in liquid nitrogen (N2). Neural retinas were isolated through a slit in the cornea and snap-frozen in liquid N2; corresponding eyecups (containing RPE) were isolated and dissected from contaminating cornea, optic nerve or adipose tissue left overs. For analysis of UC, CEs and REs, tissues from both eyes of the same animal were pooled; whereas for analysis of PLs, SLs and GLs, tissues from single eyes were analyzed. For analysis of UC, CEs and REs, eyecup samples were enriched for RPE cells by incubating the tissues in 100 μl of PBS for 20 min at RT followed by flicking of the tubes 50 times to release pigmented cells into the PBS, similar to a procedure previously used for protein isolation (Wei et al., 2016). Remaining posterior eyecups were removed and samples snap-frozen in liquid N2. These samples were labelled as ‘RPE-enriched eyecup’ (Figure 5). For analysis of PLs, SLs and GLs, complete eyecups were snap-frozen in liquid N2. These samples were labelled as ‘whole eyecup’ (Figure 5). After thawing, 100 μl of PBS were added to each tissue. All samples were then homogenized by sonication, 20 μl of 0.6% Triton in PBS were added to each tube (final concentration: 0.1% Triton) and samples were incubated on a rotating wheel for 1 hr at 4°C. Samples were centrifuged at 1’000 g for 3 min at RT and supernatant used for protein quantification using the bicinchoninic acid assay (BCA, Thermo Fisher Scientific) followed by lipid extraction.
 
-## Lipid extraction
+### Lipid extraction
 
 Lipid extraction was performed as described previously (Pellegrino et al., 2014) with some modifications. For UC, CEs and REs, 1 ml of a methanol:MTBE:chloroform (MMC) mixture 4:3:3 (v/v/v) was added to 20 µl plasma or 50 µg protein of tissue homogenate. The MMC mix was fortified with 100 pmoles of d7-cholesterol and d7-CE 16:0 (Avanti Lipids, Alabaster, AL, USA). Samples were briefly vortexed and mixed on a shaker at 37°C (1’400 rpm, 20 min). Protein precipitation was obtained after centrifugation for 5 min, 16’000 g, 25°C. The single-phase supernatant was collected, dried under N2 and stored at −20°C until analysis. Dried lipids were dissolved in 100 µl methanol. For PLs, SLs and GLs, 1 ml of MMC mixture 1.33:1:1 was added to 20 µl of plasma or tissue homogenate. The MMC was fortified with the SPLASH mix of internal standards and 100 pmoles/ml of the following internal standards (all from Avanti Lipids): d7-sphinganine (SPH d18:0), d7-sphingosine (SPH d18:1), dihydroceramide (Cer d18:0/12:0), ceramide (Cer d18:1/12:0), glucosylceramide (GluCer d18:1/8:0), sphingomyelin (SM d18:1/12:0) and 50 pmoles/ml d7-sphingosine-1-phosphate (S1P d18:1). Samples were briefly vortexed and mixed on a shaker at 25°C (950 rpm, 30 min). Protein precipitation was obtained after centrifugation for 10 min, 16’000 g, 25°C. The single-phase supernatant was collected, dried under N2 and stored at −20°C until analysis. Dried lipids were dissolved in 100 µL methanol:isoproanol (1:1, v/v).
 
-## Lipid analysis
+### Lipid analysis
 
 Liquid chromatography was done according to (Narváez-Rivas and Zhang, 2016) with some modifications. Lipids were separated using a C30 Accucore LC column (150 mm * 2.1 mm * 2.6 µm) and a transcend TLX eluting pump (Thermo Fisher Scientific). UC, CEs and REs were separated with the following mobile phases: A) acetonitrile:water (2:8 v/v) with 10 mM ammonium acetate and 0.1% formic acid, B) isopropanol:acetonitrile (9:1 v/v) with 10 mM ammonium acetate and 0.1% formic acid and C) methanol at a flow rate of 0.3 ml/min. The following gradient was applied: 0.0–1.5 min (isocratic 70% A, 20% B and 10% C), 1.5–18.5 min (ramp 20–100% B), 18.5–25.5 min (isocratic 100% B) and 25.5–30.5 min (isocratic 70% A, 20% B and 10% C). PLs, SLs and GLs were separated with the following mobile phases: A) acetonitrile:water (6:4 v/v) with10 mM ammonium acetate and 0.1% formic acid and B) as above at a flow rate of 0.26 ml/min. The following gradient was applied: 0.0–0.5 min (isocratic 30% B), 0.5–2 min (ramp 30–43% B), 10–12.0 min (ramp 43–55% B), 12.0–18.0 min (ramp 65–85% B), 18.0–20.0 min (ramp 85–100% B), 20–35 min (isocratic 100% B), 35–35.5 min (ramp 100–30% B) and 35.5–40 min (isocratic 30% B).
 
@@ -185,30 +635,30 @@ The liquid chromatography was coupled to a hybrid quadrupole-orbitrap mass spect
 
 Identification criteria for UC, CEs and REs were 1) resolution with an accuracy of 5 ppm from the predicted mass at a resolving power of 140’000 at 200 m/z, 2) matching retention time on synthetic available standards and 3) the specific fragmentation patterns ([M-H2O]+ and 369.3 for cholesterol esters and 269.2 for retinyl esters). Identification criteria for PLs, SLs and GLs were 1) resolution with an accuracy of 5 ppm from the predicted mass at a resolving power of 70’000 at 200 m/z, 2) isotopic pattern fitting to expected isotopic distribution, 3) comparison of the expected retention time to an in-house database and 4) fragmentation pattern matching to an in-house experimentally validated lipid fragmentation database. Quantification was done using single point calibration or by comparing the area under the peak of each species to the area under the peak of the internal standard. Quality controls using a mixture of all samples were used in four concentration (1x, 0.5x, 0.25x and 0.125x). Triplicates on the quality controls were measured, and the CV% for each of the lipids reported was below 20%. Mass spectrometric data analysis was performed in Treacefinder software 4.1 (Thermo Fisher Scientific) for peak picking, annotation and matching to the in-house fragmentation database.
 
-## Fundus imaging/OCT and ERG
+### Fundus imaging/OCT and ERG
 
 Pupils were dilated using Cyclogyl 1% (Alcon Pharmaceuticals, Fribourg, Switzerland) and Neosynephrine 5% (Ursapharm Schweiz GmbH, Roggwil, Switzerland) 20 min prior to anesthesia. Mice were anesthetized by subcutaneous injection of ketamine (85 mg/kg, Parke-Davis, Berlin, Germany) and Xylazine (4 mg/kg, Bayer AG, Leverkusen, Germany) and a drop of 2% Methocel (OmniVision AG, Neuhausen, Switzerland) was applied to keep the eyes moist. Mice were placed on a heated pad and fundus images and OCT scans were acquired using the Micron IV system (Phoenix Research Labs, Pleasanton, CA, USA).
 
 ERG recordings were performed as described (Kast et al., 2016). Briefly, mice were dark-adapted overnight, pupils dilated and animals anesthetized as described above. A drop of Mydriaticum Dispersa (OmniVision AG) was applied to induce mydriasis and to keep the tissue moist. A reference electrode was inserted subcutaneously between the eyes, a ground electrode was inserted subcutaneously at tail base and recording gold electrodes were placed onto mouse corneas. Mice were placed on a heated pad in front of a Ganzfeld chamber. Responses to 14 different light intensities ranging from −50 db (0.000025 cd*s/m2) to 15 db (79 cd*s/m2) for scotopic and eight different light intensities ranging from −10 db (25 cd*s/m2) to 25 db (790 cd*s/m2) for photopic conditions were recorded using an LKC UTAS Bigshot recording unit (LKC Technologies Inc, Gaithersburg, MD, USA). Mice were light-adapted for 5 min before photopic recordings. Ten recordings were averaged per light intensity; responses from the left and right eye of the same animal were averaged for subsequent analysis.
 
-## Measurement of rhodopsin regeneration kinetics
+### Measurement of rhodopsin regeneration kinetics
 
 All mice used for this experiment were homozygous for the Rpe65450Met variant. RHO regeneration was measured as previously described (Wenzel et al., 2005; Samardzija et al., 2008). Briefly, mice were dark-adapted overnight. After pupil dilation, mice were exposed to 5’000 lux of white light for 10 min, a light intensity and exposure duration that does not induce retinal damage in these mice. Mice were returned to darkness for the indicated time points (30, 60 or 120 min) or euthanized immediately. After euthanasia, retinas were isolated in darkness through a slit in the cornea and snap-frozen in N2. RHO content was measured as described (Wenzel et al., 2005).
 
-## Human subject recruitment, LCL generation and culture
+### Human subject recruitment, LCL generation and culture
 
 The study was approved by the local ethical committee at the Radboud University Medical Center and was performed in accordance with the tenets of the Declaration of Helsinki. Individuals were selected from the European Genetic Database (EUGENDA, https://www.eugenda.org/), a large multicenter database for clinical and molecular analysis of AMD, and provided written informed consent before participation. Disease status was determined based on classification of color fundus photographs and, if available, spectral domain OCT and fluorescein angiography by certified graders as previously described (Ristau et al., 2014). LCLs were generated for six control subjects, defined as individuals having only pigmentary changes, less than 10 small drusen or without macular abnormalities. Human B-lymphocytes were immortalized by transformation with the Epstein-Barr virus according to established procedures (Wall et al., 1995). LCLs were generated for three control individuals who were homozygous for ABCA1 genotypes conferring decreased risk for AMD (rs1883025 TT and rs2740488 CC) and for three control individuals who were homozygous for ABCA1 genotypes conferring increased risk for AMD (rs1883025 CC and rs2740488 AA), as shown in Table 2. DNA samples were genotyped with a custom-modified Illumina HumanCoreExome array (Illumina, Eindhoven, Netherlands) at the Center for Inherited Disease Research (CIDR, Baltimore, MD, USA) and quality control and genotype imputation using the 1000 Genomes Project reference panel (Abecasis et al., 2012) were performed by the International AMD Genomic Consortium as previously described (Fritsche et al., 2016). ABCA1 rs1883025 genotypes were additionally confirmed by sequencing of a PCR fragment flanking the SNP on genomic DNA extracted from 1 × 106 cells. Sequencing results matched the human ABCA1 locus, proving the human origin of the cell lines (data not shown). LCLs were also checked for absence of mycoplasma contamination via PCR using primers specific for the mycoplasma genome in the medium of confluent cultures (data not shown).
 
 LCLs were cultured in a humid incubator at 37°C and 5% CO2 in RPMI 1640 medium (Sigma-Aldrich) supplemented with 15% heat-inactivated fetal bovine serum (Gibco, Thermo Fisher Scientific), 20 mM HEPES buffer (Sigma-Aldrich) and 10’000 U/mL penicillin-streptomycin (Gibco). Cells were seeded at a concentration of 0.5−1 × 106 cells/ml and split every 3–4 days. For experiments, 2−3 × 106 cells per condition were seeded in 6-well plates and stimulated with 1 µM LXR agonist (T0901317; prepared at Roche as previously reported (Panday et al., 2006)) or DMSO vehicle control for 24 hr. LCLs were then washed with PBS and harvested for RNA or protein analysis (see below).
 
-## Gene expression analysis
+### Gene expression analysis
 
 RNA was extracted from neural retina and eyecups (containing RPE and choroid) using an RNA isolation kit (Macherey-Nagel, Oensingen, Switzerland) with on column DNaseI treatment and used for cDNA synthesis with oligo-dT as previously described (Samardzija et al., 2006; Storti et al., 2017). For human LCL samples, RNA was isolated as above but 0.5 μg random primers (Promega, Dübendorf, Switzerland) were used instead of oligo-dT for cDNA synthesis. Transcript levels in 10 ng of cDNA were measured by semi-quantitative real-time PCR using an ABI QuantStudio3 machine (Thermo Fisher Scientific) with the PowerUp Sybr Green master mix (Thermo Fisher Scientific) and primer pairs specific for the genes of interest (Supplementary file 1D). Primers were designed to span large introns and avoid known SNPs. Beta-actin (Actb) was used to normalize mouse gene expression with the comparative threshold cycle method (ΔΔCt) of the Relative Quantification software of the Thermo Fisher Cloud. For LCL samples, ACTB and RPL28 levels were used for double normalization with the same method. Note that in order to measure possible decrease in Abca1 and Abcg1 transcripts in KO mice, primers were designed to amplify part of the excised region (exons 45 and 46 for Abca1 and exon 3 for Abcg1).
 
-## Protein isolation from LCLs and Western Blotting (WB)
+### Protein isolation from LCLs and Western Blotting (WB)
 
 Cells were collected, washed twice with ice-cold PBS and lysed in 50 μl of RIPA buffer supplemented with protease inhibitor cocktail (P2417, Sigma-Aldrich) for 15 min on ice. After centrifugation at 16’000 g for 15 min at 4°C, supernatant was collected and protein concentration measured by BCA. 50 μg of proteins were loaded on 4–15% polyacrylamide gradient gels (Bio-Rad, Cressier, Switzerland) for SDS-PAGE followed by semi-dry transfer to a nitrocellulose membrane. Membranes were blocked in 5% non-fat blocking milk (Bio-Rad) for 1 hr at room temperature prior to incubation overnight at 4°C with primary antibodies: rabbit anti-ABCA1 (1:200, NB400-105, Novus Biologicals) and mouse anti-ACTB (1:10’000, A5441, Sigma-Aldrich). After washing, membranes were incubated with appropriate horseradish peroxidase (HRP)-conjugated secondary antibodies for 1–2 hr at RT. Signals were developed using enhanced chemiluminescence (ECL) substrate (PerkinElmer, Schwerzenbach, Switzerland) and visualized using X-ray films. Intensity of bands was quantified using ImageJ and normalized to ACTB levels.
 
-## Statistical analysis
+### Statistical analysis
 
 The number of biological replicates is defined in figure legends as ‘N’ and refers to the number of individual animals or cell lines analyzed in this study. The number of technical replicates may be indicated in the corresponding figure legend as well, when appropriate. All statistical analysis, as indicated in figure legends, were performed using GraphPad Prism 7 (San Diego, CA, USA).

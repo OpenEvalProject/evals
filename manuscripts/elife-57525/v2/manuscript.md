@@ -28,7 +28,7 @@
 
 ## Abstract
 
-The UPF3B-dependent branch of the nonsense-mediated RNA decay (NMD) pathway is critical for human cognition. Here, we examined the role of UPF3B in the olfactory system. Single-cell RNA-sequencing (scRNA-seq) analysis demonstrated considerable heterogeneity of olfactory sensory neuron (OSN) cell populations in wild-type (WT) mice, and revealed that UPF3B loss influences specific subsets of these cell populations. UPF3B also regulates the expression of a large cadre of antimicrobial genes in OSNs, and promotes the selection of specific olfactory receptor ( Olfr ) genes for expression in mature OSNs (mOSNs). RNA-seq and Ribotag analyses identified classes of mRNAs expressed and translated at different levels in WT and Upf3b -null mOSNs. Integrating multiple computational approaches, UPF3B-dependent NMD target transcripts that are candidates to mediate the functions of NMD in mOSNs were identified in vivo. Together, our data provides a valuable resource for the olfactory field and insights into the roles of NMD in vivo.
+The UPF3B-dependent branch of the nonsense-mediated RNA decay (NMD) pathway is critical for human cognition. Here, we examined the role of UPF3B in the olfactory system. Single-cell RNA-sequencing (scRNA-seq) analysis demonstrated considerable heterogeneity of olfactory sensory neuron (OSN) cell populations in wild-type (WT) mice, and revealed that UPF3B loss influences specific subsets of these cell populations. UPF3B also regulates the expression of a large cadre of antimicrobial genes in OSNs, and promotes the selection of specific olfactory receptor (Olfr) genes for expression in mature OSNs (mOSNs). RNA-seq and Ribotag analyses identified classes of mRNAs expressed and translated at different levels in WT and Upf3b-null mOSNs. Integrating multiple computational approaches, UPF3B-dependent NMD target transcripts that are candidates to mediate the functions of NMD in mOSNs were identified in vivo. Together, our data provides a valuable resource for the olfactory field and insights into the roles of NMD in vivo.
 
 ## Introduction
 
@@ -48,23 +48,424 @@ In this study, we ascertain whether the NMD factor, UPF3B, has roles in the olfa
 
 ## Results
 
-## UPF3B-regulated genes in mOSNs
+### UPF3B-regulated genes in mOSNs
 
 To assess whether NMD-deficient Upf3b-null mice have an olfactory defect, we measured their weight during their growth phase. This follows from the fact that newborn mice are blind and therefore depend on the olfactory system to initiate milk suckling for survival (Logan et al., 2012). We quantified the weight of Upf3b-null and littermate WT mice and found that Upf3b-null mice have a statistically significant postnatal weight deficit (p<0.05; Figure 1A). The weight deficit occurs soon after birth, becomes progressively worse during postnatal development, and is corrected after reaching adulthood. This specific pattern of weight loss is characteristic of mice harboring a partial olfactory defect (Riera et al., 2017). In contrast, newborn mice that completely lack sense of smell are incapable of sensing their source of milk and die soon after birth (Hongo et al., 2000). As further evidence that Upf3b-null mice have an olfactory defect, we found that HBC, iOSN and mOSN marker genes (Krt5, Gap43, and Gnal, respectively) exhibited significantly decreased expression in Upf3b-null as compared to WT OE (Figure 1B). We followed up by testing Upf3b-null mice for evidence for specific olfactory deficits and observed trends but did not observe statistically significant effects (Figure 1—figure supplement 1A), providing further evidence of a partial olfactory defect.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig1-v2.jpg)
+
+**Figure 1.:** (A) The weight of Upf3b-null vs. WT (wild type) mice at the indicated time points. Upf3b-null mice gain weight slowly during postnatal development but then reach the weight of WT mice at the last time point (9 weeks), a pattern indicative of a partial olfactory defect. *, p<0.05. (B) qPCR analysis of olfactory marker genes in Upf3b-null and WT OE (n = 6). **, p<0.01; ****, p<0.0001. (C) Heatmap of genes differentially expressed in mOSNs from Upf3b-null (KO) vs. WT mice (four biological replicates from each are shown). Row names labeled as green are Olfr genes. Right, the most statistically significant GO terms associated with upregulated genes (top) and downregulated genes (bottom) after Upf3b loss. (D) A list of most statistically enriched GO terms associated with the 52 high-confidence UPF3B-dependent NMD target mRNAs we identified in mOSNs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Behavior analysis of Upf3b-null and control (wild type) mice in response to exposure to animal urine or food. (n = 10). (B) FACS plots of dissociated cells from Upf3b-null and control OEs used to purify Omp-eYPF+ cells for RNA-seq analysis. The y-axis measures YFP expression. For each sample, three male mice (8– to 9-weeks old) were pooled together for sorting. (n = 4).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Principal component analysis of RNAseq datasets from Upf3b-null (KO) and control (WT) mOSNs. (B) qPCR validation of genes shown by RNA-seq analysis to be upregulated (Adcy6, Fosl2, Gdpd3, and Ptch1) or downregulated (Cw22, Fut10, Olfr827, Olfr855, and Olfr1208) in Upf3b-null mOSNs relative to control mOSNs. The genes were chosen on the basis of having known functions, including in neural development. (n = 3). *p<0.05. (C) Immunofluorescence analysis of OE sections from Upf3b-null and wild-type (WT) samples stained with FUT10 and OMP antibodies. FUT10 was chosen on the basis of having known roles in neural development. Nuclei were labeled with DAPI. (n = 3). (D) Heatmap showing the expression of canonical OSN precursor/OSN markers in the indicated Upf3b-null (KO) and control (WT) mOSN-enriched samples, based on RNA-seq analysis. RNA expression levels are represented on a log10 scale of TPM values plus one (0, not expressed; 4, highly expressed). (E) Heatmap showing the expression of all annotated Olfr genes (in ascending order) in the indicated mOSN-enriched samples. RNA expression levels are represented on a log10 scale of TPM values plus one (0, not expressed; 3, highly expressed).
 
 Given that mOSNs are the functional units of the OE, we next focused our attention on these cells. We identified UPF3B-regulated genes in mOSNs by performing RNA-seq analysis on FACS-purified mOSNs (YFP+ cells) from R26-eYFP; Omp-Cre mice (Figure 1—figure supplement 1B). Four samples were analyzed from each genotype (Figure 1—figure supplement 2A and Supplementary file 1). The expression of OSN precursor/OSN canonical markers are shown in Figure 1—figure supplement 2D. RNA-seq analysis identified 235 differentially expressed genes between Upf3b-null and WT mOSNs (q < 0.05) (Figure 1C and Supplementary file 2). We validated our RNA-seq analysis by qPCR analysis and immunofluorescence (Figure 1—figure supplement 2B,C).
 
 Among the 127 upregulated genes were several involved in neurogenesis, including Lrp2, Hk2, Notch2, Gdf11, Fos, Ptch1, and Spry2. Gene ontology (GO) analysis revealed enrichment for ‘organ/system development,’ ‘cell-cell adhesion,’ ‘leukocyte activation,’ and ‘cell differentiation/proliferation’ functions (Figure 1C). In contrast, the 108 downregulated genes were most enriched for GO functions associated with olfaction: ‘sensory perception,’ ‘G-proteins,’ ‘detection of chemical stimulus,’ and ‘signal transduction.’ Indeed, we found that the majority (78 out of 108) of these significantly downregulated genes are Olfr genes (marked in green in Figure 1C; the expression of all Olfr genes in Upf3b-null and control mOSNs is shown in Figure 1—figure supplement 2E and Supplementary file 1). We follow-up on this surprising finding below. Other genes downregulated in Upf3b-null mOSNs include those involved in CNS synaptic transmission (Slc17a6), chromatin remodeling (Chd1), and sensory neuronal plasticity (Cwc22) (Supplementary file 2).
 
-## Identification of NMD target mRNAs in mOSNs
+### Identification of NMD target mRNAs in mOSNs
 
 NMD is thought to influence biological systems by virtue of its ability to promote the decay of specific subsets of mRNAs (Lykke-Andersen and Jensen, 2015). As described in the introduction, there is dearth of knowledge regarding the identity of such NMD target RNAs, particularly in cells in their normal in vivo context. Our RNA-seq analysis of purified mOSNs from Upf3b-null and WT mice provided an opportunity to identify in vivo direct NMD targets. Because NMD is a negative regulatory pathway (it degrades its targets), the 127 RNAs upregulated in Upf3b-null mOSNs are candidates to be direct NMD targets. Among them, we found that 73 had at least one of the well-established molecular features known to elicit NMD, including an exon-exon junction >50 nt downstream of the main ORF (dEJ) (Table 1; see the Introduction for an explanation of NMD-inducing features [NIFs]). Thus, these 73 mRNAs are strong candidates to be UPF3B-dependent NMD target mRNAs in mOSNs.
+
+**Table 1.**
+ UPF3B-dependent NMD target mRNAs in mOSNs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>log2FC (KO/WT)</th>
+      <th>Padj</th>
+      <th>dEJ</th>
+      <th>uORF</th>
+      <th>3'UTR length</th>
+      <th>Symbol</th>
+      <th>log2FC (KO/WT)</th>
+      <th>Padj</th>
+      <th>dEJ</th>
+      <th>uORF</th>
+      <th>3'UTR length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prelid3a</td>
+      <td>1.099967</td>
+      <td>0.003745</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>1572</td>
+      <td>Fmo2</td>
+      <td>2.02039</td>
+      <td>0.014815</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2411</td>
+    </tr>
+    <tr>
+      <td>1700025G04Rik</td>
+      <td>0.662926</td>
+      <td>0.012989</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>8870</td>
+      <td>Gab2</td>
+      <td>0.98414</td>
+      <td>0.003018</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>3927</td>
+    </tr>
+    <tr>
+      <td>6030419C18Rik</td>
+      <td>0.73232</td>
+      <td>0.036112</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>55</td>
+      <td>Gdf11</td>
+      <td>1.429234</td>
+      <td>0.005353</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2811</td>
+    </tr>
+    <tr>
+      <td>9330159F19Rik</td>
+      <td>0.542375</td>
+      <td>0.017617</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>3408</td>
+      <td>Gldn</td>
+      <td>2.115908</td>
+      <td>0.045841</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2970</td>
+    </tr>
+    <tr>
+      <td>Adcy6</td>
+      <td>2.587005</td>
+      <td>0.002078</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>2356</td>
+      <td>Hk2</td>
+      <td>2.296045</td>
+      <td>0.033161</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2285</td>
+    </tr>
+    <tr>
+      <td>Cdh24</td>
+      <td>1.560901</td>
+      <td>0.001303</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>121</td>
+      <td>Lbh</td>
+      <td>1.417311</td>
+      <td>0.024315</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2498</td>
+    </tr>
+    <tr>
+      <td>Fam84b</td>
+      <td>0.719841</td>
+      <td>0.001704</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>3969</td>
+      <td>Luc7l</td>
+      <td>0.492061</td>
+      <td>8.19E-05</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>3738</td>
+    </tr>
+    <tr>
+      <td>Inpp5f</td>
+      <td>1.178064</td>
+      <td>0.043839</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>949</td>
+      <td>Map3k9</td>
+      <td>0.79841</td>
+      <td>0.021555</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1029</td>
+    </tr>
+    <tr>
+      <td>Lrp2</td>
+      <td>2.504276</td>
+      <td>0.008534</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>1305</td>
+      <td>Msrb3</td>
+      <td>1.668851</td>
+      <td>0.033388</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2972</td>
+    </tr>
+    <tr>
+      <td>Mafg</td>
+      <td>0.577538</td>
+      <td>0.046713</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>4167</td>
+      <td>Neurl3</td>
+      <td>1.966306</td>
+      <td>0.00546</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1763</td>
+    </tr>
+    <tr>
+      <td>Plxnc1</td>
+      <td>2.322167</td>
+      <td>0.048567</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>2320</td>
+      <td>Notch2</td>
+      <td>1.68375</td>
+      <td>0.047733</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2917</td>
+    </tr>
+    <tr>
+      <td>Prdm4</td>
+      <td>0.420203</td>
+      <td>0.027945</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>1160</td>
+      <td>Plekha5</td>
+      <td>0.608634</td>
+      <td>0.004216</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>3461</td>
+    </tr>
+    <tr>
+      <td>Ptch1</td>
+      <td>0.768864</td>
+      <td>0.01088</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>3205</td>
+      <td>Rab43</td>
+      <td>1.033148</td>
+      <td>0.0151</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>3737</td>
+    </tr>
+    <tr>
+      <td>Ptger2</td>
+      <td>3.032221</td>
+      <td>0.035664</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>1825</td>
+      <td>Rac2</td>
+      <td>3.029035</td>
+      <td>0.038392</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2319</td>
+    </tr>
+    <tr>
+      <td>Sash3</td>
+      <td>2.352656</td>
+      <td>0.033245</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>1309</td>
+      <td>Raver2</td>
+      <td>1.921185</td>
+      <td>0.027779</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1892</td>
+    </tr>
+    <tr>
+      <td>Serpinb11</td>
+      <td>1.991555</td>
+      <td>0.002719</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>468</td>
+      <td>Rflnb</td>
+      <td>0.755198</td>
+      <td>0.017617</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2716</td>
+    </tr>
+    <tr>
+      <td>Snx33</td>
+      <td>1.512032</td>
+      <td>0.012417</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>1258</td>
+      <td>Sik1</td>
+      <td>2.027635</td>
+      <td>1.48E-06</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2035</td>
+    </tr>
+    <tr>
+      <td>Zfp36</td>
+      <td>1.802697</td>
+      <td>0.025165</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>774</td>
+      <td>Slc38a6</td>
+      <td>1.21151</td>
+      <td>0.025847</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1512</td>
+    </tr>
+    <tr>
+      <td>Agap2</td>
+      <td>1.264604</td>
+      <td>0.00099</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1357</td>
+      <td>Slc5a1</td>
+      <td>2.563582</td>
+      <td>0.00527</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1868</td>
+    </tr>
+    <tr>
+      <td>Aox2</td>
+      <td>1.36834</td>
+      <td>0.018035</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1640</td>
+      <td>Swap70</td>
+      <td>1.863436</td>
+      <td>0.009993</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2169</td>
+    </tr>
+    <tr>
+      <td>Atp10d</td>
+      <td>3.315656</td>
+      <td>0.017617</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2384</td>
+      <td>Tgm2</td>
+      <td>2.395934</td>
+      <td>0.042993</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1399</td>
+    </tr>
+    <tr>
+      <td>Bhlhe40</td>
+      <td>1.435423</td>
+      <td>0.000192</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1593</td>
+      <td>Themis2</td>
+      <td>3.496025</td>
+      <td>0.015464</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1053</td>
+    </tr>
+    <tr>
+      <td>Btg2</td>
+      <td>1.281148</td>
+      <td>0.000173</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2199</td>
+      <td>Tmprss2</td>
+      <td>2.167673</td>
+      <td>0.005867</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1456</td>
+    </tr>
+    <tr>
+      <td>Cybrd1</td>
+      <td>2.372842</td>
+      <td>0.002733</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>4269</td>
+      <td>Tob2</td>
+      <td>0.667082</td>
+      <td>0.001453</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2459</td>
+    </tr>
+    <tr>
+      <td>Cyth4</td>
+      <td>2.162221</td>
+      <td>0.045105</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1455</td>
+      <td>Ywhag</td>
+      <td>0.644673</td>
+      <td>0.017707</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2586</td>
+    </tr>
+    <tr>
+      <td>Ermn</td>
+      <td>1.686519</td>
+      <td>0.005793</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>2641</td>
+      <td>Zcchc6</td>
+      <td>0.512078</td>
+      <td>0.003018</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>1346</td>
+    </tr>
+  </tbody>
+</table>
 
 Given that NMD degrades its target RNAs, this predicts that its targets should be stabilized after inactivation of UPF3B. Thus, we measured the stability of the 127 mRNAs upregulated in Upf3b-null mOSNs using a method that infers RNA stability based on pre-mRNA and steady-state mRNA levels (Alkallas et al., 2017). This method revealed that 82 of 127 upregulated genes encode mRNAs stabilized in Upf3b-null mOSNs as compared to WT mOSNs (Supplementary file 2). Of these 82 stabilized and upregulated mRNAs, 52 have at least 1 of the 3 well-established NIFs (Table 1), and thus we classified these 52 mRNAs as high-confidence mOSN NMD targets. The statistically enriched GO biological functions of the proteins encoded by these 52 mRNAs are listed in Figure 1D.
 
 To determine whether these high-confidence NMD target mRNAs correspond to known NMD targets, we assembled a list of likely mouse NMD substrates defined by previous studies (Supplementary file 3). To qualify to be in this list, the RNA must have at least one known NMD-inducing feature (NIF) (Palacios, 2013) and experimental evidence from at least one assay that it is an NMD substrate (e.g. high UPF1 occupancy or upregulation and/or stabilization in response to NMD-factor depletion). We found that 11 of these previously defined likely mouse NMD target mRNAs overlapped with the 52 high-confidence targets identified in our study: Atp10d, Lbh, Slc38a6, Tgm2, Notch2, Ywhag, Luc7l, Ptch1, 1700025G04Rik, Ptger2, and Msrb3. Of note, it is not surprising that only a proportion of the upregulated mRNAs we identified in NMD-deficient mOSNs are previously known NMD targets, as NMD target mRNAs can be tissue-, cell type-, and NMD factor-specific (Huang et al., 2011). The list of previously defined candidate NMD targets that we compared with were defined in non-neuronal tissues and cell lines made deficient in NMD by knocking down or eliminating factors other than UPF3B (Supplementary file 3).
 
-## The mOSN transcriptome and translome
+### The mOSN transcriptome and translome
 
 We next determined the translation rate of mRNAs in mOSNs, both as a resource for the field and to address the relationship of NMD with translation in vivo. We assayed the translation rate of mRNAs in mOSNs using RiboTag mice, which express an epitope-tagged ribosomal protein, RPL22HA, which is incorporated into actively translating ribosomes specifically in cells expressing CRE (Sanz et al., 2009). Immunoprecipitation (IP) of the cell lysates of interest with an HA antibody purifies the ribosome-associated mRNAs (Figure 2A, left) with an efficiency associated with polysome density (Hornstein et al., 2016). To examine ribosome density specifically in WT mOSNs, we isolated RiboTag-labeled mRNA from the OE of RiboTag; Omp-Cre mice and performed RNA-seq analysis. As a validation of cell-type specificity, we found that IP of OE lysates with the HA antisera enriched for the mOSN marker, Omp, whereas these lysates were depleted of the HBC and GBC markers, Krt5 and Lgr5, respectively (Figure 2A, right). We then elucidated inferred translation efficiency (TE) for all expressed mRNAs in mOSNs – the ‘mOSN translome’ – by calculating the ratio of the IP signal from the RiboTag mice OE lysates over mOSN steady-state mRNA level, the latter determined as described above (Supplementary file 2).
 
@@ -76,7 +477,7 @@ Given that 3’UTR length has been shown to influence translation rates in cultu
 
 To assess the potential functional relevance of translation, we binned WT mOSN mRNAs into three groups: high (top 30%), medium (middle 40%), and low (bottom 30%) (Supplementary file 2). We also binned WT mOSN mRNAs into three groups based on their steady-state level (Supplementary file 2), allowing us to place mOSN mRNAs into the nine categories shown in Figure 2D. GO analysis revealed that category #1—which is mRNAs expressed at high level that are also highly translated—encode proteins that tend to function in ‘metabolism,’ ‘intercellular transport,’ and ‘catabolism’ (Figure 2E). Categories #2 and #3—which are also highly translated mRNAs but less well expressed at the RNA level than category #1—encode proteins with strikingly different functions: ‘development,’ ‘cell migration,’ and ‘morphogenesis’ (Figure 2E). Category #6—which is lowly expressed and modestly translated mRNAs—encode proteins involved in ‘signal transduction,’ ‘differentiation,’ and ‘development,’ including ‘nervous system development’ (Figure 2E). The categories with most Olfr genes—#4 and #5—are also only moderately translated (Figure 2E). Upf3b-null mOSNs had similar numbers of mRNAs in the nine categories as WT mOSNs (compare Figure 2J with Figure 2D), indicative of UPF3B not altering the mOSN transcriptome and translome globally. Rather, UPF3B influences specific mRNAs, as described above for the mOSN transcriptome, and below for the mOSN translome.
 
-## The relationship between NMD and translation in vivo
+### The relationship between NMD and translation in vivo
 
 NMD is a translation-dependent pathway, based on protein-synthesis inhibitor and transfection experiments in immortalized cell lines (Belgrader et al., 1993; Carter et al., 1995; Karousis and Mühlemann, 2019). Our mOSN transcriptome and translome data from Upf3b-null and WT mice provided an opportunity to address the relationship of NMD with translation in vivo. Given that higher translation rates allow for a higher frequency of stop codon recognition, it follows that higher translation rates might drive stronger NMD. This predicts that more highly translated mOSN mRNAs will have a higher NMD response than lowly translated mOSN mRNAs. To test this, we binned mRNAs statistically upregulated in Upf3b-null mOSNs into three groups stratified by TE. The most highly translated group was statistically more upregulated (i.e., had stronger NMD) than the least translated group (Figure 2F, left). As a negative control, we examined downregulated mRNAs (as these would not be direct NMD targets) and found no statistical difference between degree of downregulation and TE (Figure 2F, right).
 
@@ -84,7 +485,7 @@ To further examine whether high translation rate is associated with strong NMD m
 
 Our mOSN translome data also allowed us to assess the reciprocal question: does Upf3b influence translation in vivo? When we plotted the TE of mRNAs when expressed in Upf3b-null mOSNs vs. when expressed in WT mOSNs, we found that the vast majority of mRNAs were similarly translated in both genetic backgrounds, as measured by RiboTag analysis (Figure 2H, Supplementary file 2). Only 16 mOSN mRNAs migrated off the diagonal and thus had a significant change in TE as a result of Upf3b loss (Figure 2H,I).
 
-## Identification of OE cell clusters
+### Identification of OE cell clusters
 
 To determine whether UPF3B influences the cellular composition of the OE, we performed scRNA-seq analysis on dissociated OE cells from 4 Upf3b-null and 4 WT mice. After filtering out poor quality cells, 25,165 cells remained for subsequent analysis. Biological replicates exhibited similar cell distributions (Figure 3A). Using a nonlinear dimensionality-reduction technique—uniform manifold approximation and projection (UMAP)—we identified cell clusters corresponding to 16 known cell types in the OE (Figure 3B). Some of the gene markers used to define these cell clusters are shown in Figure 3C. Genes exhibiting enriched expression in each of the 16 cell types are listed in Supplementary file 4.
 
@@ -104,7 +505,7 @@ GBCs also segregated into four sub-clusters (Figure 3D), which is consistent wit
 
 Most WT mOSNs segregated into three different cell clusters (Figure 3D), each of which preferentially express different genes (Figure 4E). GO and KEGG signaling pathway analyses indicated that these three mOSN sub-clusters are enriched for different functions and signaling pathways, respectively (Figure 4F; Supplementary file 4).
 
-## OSN molecular pathways
+### OSN molecular pathways
 
 Monocle pseudotime analysis of the OSN precursor/OSN cell clusters indicated that they follow a HBC→GBC→iOSN→mOSN trajectory (Figure 5A), consistent with previous studies (Fletcher et al., 2017; Schwob et al., 2017; Tepe et al., 2018). To define candidate molecular events occurring during OSN development, we identified genes whose expression is statistically enriched along this pseudotime trajectory (Supplementary file 4). This analysis identified 4 distinct patterns of gene expression dynamics that we named groups 1 to 4 (Figure 5B). Group-1 genes are dominated by genes expressed transiently in HBCs, including the previously defined HBC-marker genes Trp63, Krt5, and Krt14. Group-1 genes are statistically enriched for ‘signal transduction’ and various ‘development’ categories (Figure 5B). Group-2 genes contain GBC genes; indeed the GBC markers Ascl1, Neurod1, and Lgr5 are enriched in group 2. ‘Cell cycle process’ is statistically enriched (Figure 5B), consistent with the fact that GBCs undergo self-renewal and proliferative expansion. Group-3 genes are mainly expressed in iOSNs, include the well-established iOSN marker genes Lhx2, Ncam1, and Gap43. ‘Neuron development’ is enriched in group 3 (Figure 5B), consistent with the fact that iOSNs are undergoing the final stages of development prior to becoming mature neurons. Group-4 genes are mainly expressed in mOSNs; enriched GO categories include ‘mitochondrion organization,’ ‘metabolism,’ and ‘cellular respiration’.
 
@@ -116,13 +517,25 @@ KEGG signaling pathway analysis revealed that genes involved in different signal
 
 We also screened for transcription factors preferentially expressed at different stages of OSN development. We identified 209, 178, 169, and 135 transcription factor genes exhibiting enriched expression in groups 1, 2, 3 and 4, respectively (Supplementary file 4). The top 3 transcription factors in each group and their DNA-binding specificity are shown in Figure 5E.
 
-## UPF3B impacts HBCs and mOSNs
+### UPF3B impacts HBCs and mOSNs
 
 The array of UPF3B-dependent NMD targets we identified in mOSNs (Figure 2) raised the possibility that UPF3B has roles in mOSNs and possibly OSN precursors. To assess this, we first determined whether loss of UPF3B impacts the frequency of HBCs, GBCs, iOSNs, and mOSNs. scRNA-seq analysis revealed that there was a significant reduction in the frequency of HBCs in Upf3b-null mice relative to WT mice, when compared to either all OSN precursors/OSNs or all OE cells (p<0.05; Figure 6A). As validation, IHC staining with the HBC marker, TRP63, showed that the density of TRP63+ cells was significantly less in Upf3b-null OE than WT OE (Figure 6—figure supplement 1A). This effect appeared to be specific, as we observed no significant difference in the relative proportion of GBCs, iOSNs, and mOSNs between Upf3b-null and WT mice (Figure 6—figure supplement 1B). However, we cannot rule out that the variability among the four samples for each genotype might have obscured a subtle change in the fraction of GBCs, iOSNs, or mOSNs in Upf3b-null mice. This variability might either be the result of biological differences between individual mice or differences in dissection and/or cell dissociation. However, as further evidence that the overall frequency of mOSNs was not affected in Upf3b-null mice, the mOSN marker, OMP, was similarly expressed (at both the RNA and protein levels) in OE from Upf3b-null and WT mice, as assessed in OE preparations obtained from different mice (but of the same genotypes) than those used for scRNA-seq analysis (Figure 1B and Figure 6—figure supplement 1C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig6-v2.jpg)
+
+**Figure 6.:** (A) The fraction of HBCs per all OSN precursors/OSNs (HBCs, GBCs, iOSNs and mOSNs) (left) or all OE cells (right), in Upf3b-null (KO) and WT mice, as determined by scRNA-seq analysis. *, p<0.05. (B) The percentage of cells from the indicated cell sub-clusters in Upf3b-null (KO) and WT mice, as determined by scRNAseq analysis. (C) Cell number in each cell sub-cluster, as defined in Figure 3D. (D) Most statistically enriched GO terms in the mOSN-2 and −4 sub-clusters. (E) Heatmap depicting the expression pattern of anti-microbial genes in the indicated cell subsets. (F) Left: Western blot analysis of endogenous CAMP protein level in the OE from Upf3b-null (KO) and WT mice. Right: quantification of CAMP level normalized against GAPDH (n = 3). *, p<0.05. (G) IF analysis of adult mouse OE sections co-stained with antisera against CAMP (red) and OMP (green). Nuclei were stained with DAPI (blue). (H, I) The percentage of mOSNs (H) and iOSNs (I) in our scRNAseq datasets that express Olfr genes. Left, all known Olfr genes. Right, the 78 Olfr genes significantly downregulated in Upf3b-null mice, based on RNAseq analysis (Figure 1C). *, p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left, IF analysis of adult mouse OE sections co-stained with antisera against TRP63 (red) and OMP (green). White arrows label TRP63+ HBCs. (n = 3). Right, quantification of TRP63+ cells per 1 mM. For each group, 15 different OSN field lengths (75 μm long) from three individual mice were examined to calculate the number of TRP63+ cells per mM. (B) The fraction of different cell subsets per OSN precursors and OSNs (HBCs, GBCs, iOSNs and mOSNs) cells (top) or all OE cells (bottom), in indivdiual Upf3b-null (KO) and control (WT) mice, as determined by scRNA-seq analysis. (C) Left, western blot analysis of OMP protein expression in independent OE samples from Upf3b-null and control (wild type) mice. GAPDH is the normalization control. Right, quantification of OMP expression normalized to GAPH levels (n = 4).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57525/elife-57525-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Scatter plots showing Pearson correlation analysis of the transcriptomes from the indicated mOSN cell sub-clusters. (B) Left, IF analysis of adult mouse OE sections co-stained with antisera against CAMP/CRAMP (red) and OMP (green). Nuclei were stained with DAPI (blue). (n = 3). Right, quantification of OMP+ cells per mm2. For each group, 6 different mSONs views (2500 μm2) from 3 individual mice were quantified to calculate cell number per mm2. (C) The chromosomal distribution of the 78 Upf3b-regulated Olfr genes.
+
 Our identification of HBC, GBC, iOSN, and mOSN sub-clusters (Figure 3D) gave us an opportunity to elucidate whether UPF3B has a role in this unexpected heterogeneity. Despite no significant effect on the mOSN stage as a whole (Figure 6—figure supplement 1B), we observed a striking increase in the frequency of 1 of the 4 mOSN sub-clusters—mOSN-4—in Upf3b-null mice (Figure 6B,C). This sub-cluster represented <1% of all OSNs in most WT mice and increased by an average of 25-fold in Upf3b-null mice (p<0.05). Conversely, Upf3b-null mice had an almost complete loss of another mOSN sub-cluster—mOSN-2—a sub-cluster that was populated by many cells in most WT mice (Figure 6B,C). While this reduction failed to reach statistical significance because of variability between samples (p=0.24), it is supported by the independent tSNE plots we generated for Upf3b-null vs. WT OSNs (Figure 3D). Together these results raise the possibility that a ‘mOSN subset switch’ occurs in Upf3b-null mice. Pearson correlation analysis showed that mOSN-2 and −4 sub-clusters are less related to each other in expression profile than they are to the other two mOSN sub-clusters (Figure 6—figure supplement 2A). Indeed, these two mOSN sub-clusters have remarkably distinct molecular characteristics (Figure 6D and Supplementary file 4). Thus, the simultaneous loss and acquisition of these mOSN subsets in Upf3b-null mice has the potential to alter olfaction.
 
-## UPF3B shapes the OLFR repertoire and suppresses immune gene activation
+### UPF3B shapes the OLFR repertoire and suppresses immune gene activation
 
 To define genes that are candidates to act downstream of NMD in different OSN cell populations, we used our scRNA-seq datasets to identify genes differentially expressed in the Upf3b-null vs. WT cell clusters (Supplementary file 4). This revealed that a major category of Upf3b-regulated genes in OSNs are immune genes, including a large fraction of genes encoding antimicrobial proteins (Supplementary file 5). This was intriguing, as it raised the possibility that OSNs not only normally function in olfaction but also in defense against microbes, a reasonable possibility given that the OE is direct contact with the outside environment. The expression of anti-microbial genes was not confined to the mature neurons in the OE (i.e. mOSNs), as we found that most of these immune-defense genes were also expressed and upregulated in Upf3b-null mice at the HBC, GBC, and iOSNs stages (Figure 6E). More than half (48 out of 88) of these upregulated mRNAs encoding immune-related proteins harbor at least one NIF (Supplementary file 5). This suggests that many of these mRNAs encoding immune system factors are directly targeted for decay by the NMD pathway. This has interesting potential physiological consequences, as described in the Discussion.
 
@@ -164,25 +577,308 @@ In conclusion, our study provides an invaluable set of resources for the olfacto
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Upf3b</td>
+      <td>GenBank</td>
+      <td>Gene ID: 68134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:MGI:3028467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Upf3b-null mice</td>
+      <td>PMID:21925383</td>
+      <td>RRID:MGI:6110148</td>
+      <td>Miles Wilkinson lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>R26-eYFP mice</td>
+      <td>PMID:11299042</td>
+      <td></td>
+      <td>Obtained from Dr. Maike Sander (UCSD)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Omp-Cre mice</td>
+      <td>PMID:22057188</td>
+      <td></td>
+      <td>Obtained from Dr. Haiqing Zhao (Johns Hopkins University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>RiboTag mice</td>
+      <td>PMID:19666516</td>
+      <td></td>
+      <td>Obtained from Dr. Paul Ameiux (University of Washington)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-OMP (EPR19190)</td>
+      <td>Abcam</td>
+      <td>Cat# ab183947 RRID:AB_2858281</td>
+      <td>IF (1:400), WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-OMP</td>
+      <td>FUJIFILM Wako Chemicals</td>
+      <td>Cat# 544–10001-WAKO RRID:AB_2315007</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CAMP</td>
+      <td>Generated by Richard L. Gallo laboratory</td>
+      <td>PMID:11442754</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FUT10</td>
+      <td>Proteintech</td>
+      <td>Cat#: 18660–1-AP RRID:AB_10641997</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H+L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11055 RRID:AB_2534102</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-31572 RRID:AB_162543</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fosl2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGCAGAAGGAGAGATGAG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Fosl2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAGCTTCTCTGTCAGCTC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptger2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCTCCTTGCCTTTCACAATC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Ptger2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTAAGTATGGCAAAGACCCAAG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Adcy6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TTCCTGACCGTGCCTTCTC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Adcy6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACCCCGGTTGTCTTTGC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptch1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACCTCCTAGGTAAGCCTCC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Ptch1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACCCACAATCAACTCCTCC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cwc22_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGAAGACAGATACACAGAGCAAG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Cwc22_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCTCTCTCTCTCTCTGCGTTT (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fut10_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGGGCCTTCCTATTCTACG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Fut10_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTGAATGTGGCCGTATGGTTG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gdpd3_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGATCCGACACTTGCAGGAC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Gdpd3_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTGTGGGGTAATCGGTCAT (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Olfr827_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGGATGGTTCTTCTGGGAA (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Olfr827_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACCGTGGAGTAGGAGAGGTC (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpl19_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGAAGGTCAAAGGGAATGTG (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Rpl19_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTTCGTGCTTCCTTGGTCTT (from IDT)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3' Library and Gel Bead Kit</td>
+      <td>10X Genomics</td>
+      <td>Cat# 120237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis Kit</td>
+      <td>BioRad</td>
+      <td>Cat# 170–8891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanceD Universal SYBR Green Supermix</td>
+      <td>BioRad</td>
+      <td>Cat# 172–5274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger Version 2.1.1</td>
+      <td>10x genomics</td>
+      <td>Cell Ranger Version 2.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (v3.1.5)</td>
+      <td>Designed by Rahul Satija laboratory</td>
+      <td>PMID:31178118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle (v2.16.0)</td>
+      <td>Designed by Cole Trapnell laboratory</td>
+      <td>PMID:28114287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIH ImageJ (v1.8.0)</td>
+      <td>NIH</td>
+      <td>Version 1.8.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 This study was carried out in strict accordance with the Guidelines of the Institutional Animal Care and Use Committee (IACUC) at the University of California, San Diego. The protocol was approved by the IACUC at the University of California, San Diego (permit number: S09160). All studies were conducted on adult male mice housed under a 12 hr light:12 hr dark cycle and provided with food and water ad libitum. Of note, we only performed analyses on male mice. Since Upf3b is X-linked gene, we analyzed Upf3b+/y (WT) and Upf3-/y (KO) mice. All mouse strains used for analysis were backcrossed to C57BL/6J for at least eight passages.
 
-## Behavioral and weight analyses
+### Behavioral and weight analyses
 
 To assess the effect of UPF3B loss on mouse weight, 19male pups (nine Upf3b-null and ten WT mice) from Upf3b+/- × WT breeders (6 litters) were assessed, performed as described previously (Tan et al., 2016). For pre-weaning pups, to reduce stress, forceps and gloves were changed frequently between cages.
 
 For the coyote/bobcat urine experiment, 10 male mice (10- to 16 weeks of age) from each genotype were analyzed. Each mouse was placed into a cage for 10 min to acclimatize, a strip of filter paper soaked with coyote urine (Snow Joe) or bobcat urine (Predator Pee) was placed into the cage for 5 min, and the amount of time the mouse was in the vicinity of the filter paper was determined by video recording. Each mouse was tested separately in the absence of humans or other mice in the room.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 For each mOSN sample analyzed, 3 C57BL/6J male mice (8- to 9-weeks old) were pooled. Four replicate samples were analyzed per genotype (Upf3b+/y; Omp-Cre; R26-eYFP and Upf3b-/y; Omp-Cre; R26-eYFP). Cell sorting experiments were performed on two separate days, with two samples sorted per day. The OE was dissected as described (Gong, 2012) and dissociated using the Papain Dissociation System (Worthington) at 37°C for 15 min, followed by extensive trituration. Cells were filtered using a 40‐μm strainer (Falcon). After spinning at 200 g for 5 min, cells were resuspended in Hanks’ balanced salt solution (HBSS) containing 3% FBS (Gibco) but without Ca2+ and Mg2+. The cell suspension was mixed with propidium iodide (final concentration of 1 μg/ml) and the OMP-eYFP+ cells were sorted by flow-cytometry. RNA was isolated from the OMP-eYFP+ cells using TriZOL (Life Technologies), followed by a secondary purification step using a RNeasy column (Qiagen). Total RNA was assessed for quality using an Agilent Bioanalyzer, and samples determined to have an RNA Integrity Number (RIN) of at least 8 or greater were used to generate RNA libraries using Illumina's TruSeq RNA Sample Prep Kit, following the manufacturer's specifications, with the RNA fragmentation time adjusted to 5 min. RNA-seq was performed at the Institute of Genomic Medicine at UCSD. RNA libraries were multiplexed and sequenced with 100 base pair (bp) pair end reads on an Illumina HiSeq4000. The average number of reads per sample ranged from approximately 15 to 22 million reads. Reads were filtered for quality and aligned with STAR (2.5.2b) against Mus musculus release-90, Ensembl genome (GRCm38). The exon counts were aggregated for each gene to build a read count table using SubRead function featureCounts (Liao et al., 2014). Using the exon start/end positions, we extracted the exon sequences from the mm10 mouse genome, and ligated them together in silico for each transcript. For each entry, the entire transcript sequence was subtracted from the known CDS sequence (obtained as above) to identify 3’UTR length. DEGs were defined using DESeq2 (Love et al., 2014) using a threshold q-val of <0.05. The R package program ‘pheatmap’ was used for clustering and to generate heatmap plots. GO analysis was done using database for annotation, visualization and integrated discovery (DAVID), version v6.8. To infer relative RNA stability, we used the REMBRANDTS program (Alkallas et al., 2017) following the tutorial (https://github.com/csglab/REMBRANDTS).
 
-## RiboTag analysis
+### RiboTag analysis
 
 For each mOSN sample analyzed, three C57BL/6J male mice (8 to 9-weeks old) were pooled. Three replicate samples were analyzed per genotype (Upf3b+/y; Omp-Cre; RiboTag and Upf3b-/y; Omp-Cre; RiboTag). The OEs was dissected as described (Gong, 2012), homogenized, washed with HBSS, centrifuged at 16,000 g at 4°C for 10 min, the supernatant was transferred into a new tube and incubated with HA antisera (#16B12; BioLegend, CA) at 4°C for 2.5 hr. Ribosome-bound RNAs were captured on anti-HA agarose beads (Pierce) for 1 hr at 4°C on a tube rotator. RNA libraries were multiplexed and sequenced with 50 bp single-end reads on an Illumina HiSeq4000. RNA sequencing, alignment, and downstream analyses were done as described above for RNA-seq analysis. TE was determined by dividing RiboTag reads by RNA-seq reads. Log2-transformed transcripts per million (TPM) values were used to segregate mRNAs into different categories.
 
-## scRNA-seq analysis
+### scRNA-seq analysis
 
 Four C57BL/6J male mice (7 to 8-weeks old) per genotype (Upf3b+/y and Upf3b-/y) were used to obtain OE for scRNA-seq analysis. After dissecting the OE as described (Gong, 2012), the cells were dissociated following the 10X Genomics Chromium sample preparation protocol. Briefly, tissue was cut into 1 mm3 pieces and digested in HBSS without Ca2+ and Mg2+ and supplemented with 44 U/ml Dispase (Invitrogen), 1000 U/ml Collagenase type II (Invitrogen) and 10 mg/ml DNaseI (Sigma), for 20 min at 37°C with gentle agitation. The digested tissue was centrifuged at 300 rcf for 5 min and washed in HBSS without Ca2+ and Mg2+. Dissociated cells were resuspended in 3% FBS in PBS. Dead cells were removed using the ClioCell Dead Cell Removal kit (Amsbio) following the manufacturer's instructions. Single cells were resuspended in 0.04% BSA in PBS (w/v) and loaded on the 10x Chromium chip. Cell capturing, and library preparation was carried as per kit instructions (Chromium Single Cell Kit [v2 chemistry]). The resultant libraries were size selected, pooled, and sequenced using 2 × 100 paired-end sequencing protocol on an Illumina HiSeq 4000 instrument. The libraries initially underwent shallow sequencing to access quality and to adjust subsequent sequencing depth based on the capture rate and unique molecular indices (UMI) detected. All sequencing analyses were performed at the Institute of Genomic Medicine at UCSD.
 
@@ -192,14 +888,14 @@ To identify cell clusters, we employed the UMAP algorithm (Becht et al., 2019).
 
 Single-cell pseudotime trajectories were constructed with the Monocle two package (v2.10.1) (Qiu et al., 2017) according to the provided documentation (http://cole-trapnell-lab.github.io/monocle-release/). UMI counts were modeled as a negative binomial distribution. The ordering genes were identified as having high dispersion across cells (mean_expression >= 0.01; dispersion_empirical >= 1). The discriminative dimensionality reduction with trees (DDRTree) method was used to reduce data to two dimensions. Differentially expressed genes were identified and used for dynamic trajectory analysis (NO discovery rate [FDR]<0.01) to order cells in pseudotime. The plot_pseudotime_heatmap function was used to generate heatmaps.
 
-## NIF analysis
+### NIF analysis
 
 To define NIFs, Refseq-defined transcripts were first converted into Ensemble transcript IDs and their sequences were obtained using the UCSC Table Browser. NIFs were identified in these transcripts using an algorithm written in Python 2.7, Zenith.py, created by the Wilkinson laboratory. Only transcripts with a detectable 5’UTR and 3’UTR were considered. A transcript was defined as harboring a dEJ if it contained at least one exon-exon junction ≥50 nt downstream of the stop codon terminating the main ORF. A transcript was defined as harboring an uORF if the following criteria were met: (i) the ORF is in the 5’ UTR, (ii) the start codon and surrounding nts are in a context known to initiate translation (a purine at the −3 position or a guanine at the +4 position, relative to the A in the AUG initiation codon [+1]) (Kozak, 1986), (iii) the ORF is ≥30 nt long, and (iv) the ORF does not overlap with the main ORF (to reduce the probability that translation could be re-initiated, thereby allowing the transcript to escape NMD).
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Adult mice were anesthetized and perfused with 4% paraformaldehyde (PFA; Sigma). OE was dissected and fixed in 4% PFA at 4°C for 24 hr, then transferred to 70% ethanol. After embedding in paraffin, 5 µM sections were prepared, deparaffinized 2 times in xylene, followed by serial dilutions of ethanol. Unmasking was performed with IHC-TekTM epitope retrieval solution using a steamer (IHCWORLD) for 40 min. Blocking was performed by incubating with 5% serum (from the species that the secondary antibody was raised in) for 1 hr at room temperature. The sections were then incubated overnight with the primary antibody (goat polyclonal OMP, rabbit anti-CAMP [Gallo et al., 1997]) at 4°C and incubated with secondary antibody (Donkey anti-Goat IgG [H+L] conjugated with Alexa Fluor 488 or Donkey anti-Rabbit IgG [H+L] conjugated with Alexa Fluor 555) for 1 hr at room temperature. The nuclei were counterstained with DAPI, and a coverslip was placed over the sections with mounting medium.
 
-## Western blot analysis
+### Western blot analysis
 
 OEs were incubated in radioimmunoprecipitation assay (RIPA) buffer (Bio-Rad) supplemented with protease inhibitor cocktail (Sigma) on ice for 30 min, followed by centrifugation at 16,000 g for 15 min at 4°C. The lysates were then transferred to new tubes, and protein level was quantified using the DC Protein Assay kit (Bio‐Rad). Twenty micrograms of the protein samples were separated on an 15% polyacrylamide gel, and Western blot analysis was performed as previously described (Ramaiah et al., 2019). Quantification of the blots was performed using NIH ImageJ (1.8.0).

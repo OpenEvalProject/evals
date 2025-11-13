@@ -8,9 +8,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05f950310 Laboratory of Biological Psychology, Department of Brain & Cognition, KU Leuven Leuven Belgium
-2. https://ror.org/05f950310 Leuven Brain Institute, KU Leuven Leuven Belgium
-3. https://ror.org/05f950310 Laboratory for Brain-Gut Axis Studies (LaBGAS), Translational Research in GastroIntestinal Disorders (TARGID), Department of chronic diseases and metabolism, KU Leuven Leuven Belgium
+1. Laboratory of Biological Psychology, Department of Brain & Cognition, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+2. Leuven Brain Institute, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Laboratory for Brain-Gut Axis Studies (LaBGAS), Translational Research in GastroIntestinal Disorders (TARGID), Department of chronic diseases and metabolism, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -42,13 +42,13 @@ Here, we applied the EVA-task in the MRI scanner to investigate brain responses 
 
 ## Results
 
-## Self-reported relief and omission SCR track omissions of threat in a PE-like manner
+### Self-reported relief and omission SCR track omissions of threat in a PE-like manner
 
 The verbal instructions were effective at raising the expectation of receiving the electrical stimulation in line with the provided probability and intensity levels. Anticipatory SCR, which we used as a proxy of fearful expectation, increased as a function of the probability and intensity instructions (see Appendix 4). Accordingly, post-experimental questions revealed that by the end of the experiment participants recollected having received more stimulations after higher probability instructions, and were willing to exert more effort to prevent stronger hypothetical stimulations (see Appendix 5).
 
 Replicating our previous findings (Willems and Vervliet, 2021), self-reported relief-pleasantness and omission SCR tracked the PE signal during threat omission (see Figure 1B/C). Overall, unexpected (non-0%) omissions of threat elicited higher levels of relief-pleasantness and omission SCR than fully expected omissions (0%), evidenced by a main effect of Probability in the 4 (Probability: 0%, 25%, 50%, 75%) x 4 (Run: 1, 2, 3, 4) LMM (For relief pleasantness (N=31): F(3,1417)=188.34, p<0.001, ωp2 = 0.28; and for omission SCR (N=26): F(3,1190)=72.90, p<0.001, ωp2 = 0.15, with responses to all non-0% probability levels being significantly higher than responses to 0%, p’s<0.001, Bonferroni-Holm corrected). Furthermore, relief-pleasantness and omission SCR to unexpected omissions (non-0% omissions) increased as a function of instructed Probability and Intensity, in line with the first two PE axioms, evidenced by main effects of Probability (for relief-pleasantness (N=31): F(2,1031)=30.64, p<0.001, ωp2 = 0.05, all corrected pairwise comparisons, p’s<.005; for omission SCR (N=26): F(2,862) = 5.15, p<0.01, ωp2 = 0.01, with corrected 75% to 25% comparison, p<0.01), and Intensity (for relief-pleasantness (N=31): F(2, 1031)=623.79, p<0.001, ωp2 = 0.55, all corrected pairwise comparisons, p’s<0.001; for omission SCR (N=26): F(2,862.01)=107.47, p<0.001, ωp2 = 0.20, all corrected pairwise comparisons, p’s<0.001) in a 3 (Probability: 25%, 50%, 75%) x 3 (Intensity: weak, moderate, strong) x 4 (Run: 1, 2, 3, 4) LMM. Relief-pleasantness also showed a significant Probability x Intensity interaction (F(4,1031)=3.76, p<0.005, ωp2 = 0.01), indicating that the effect of probability was most pronounced for omissions of moderate stimulation (all p’s<0.05). Note that while there was a general drop in reported relief pleasantness and omission SCR over time, the effects of Probability and Intensity remained present until the last run (see Appendix 5). This further confirms that probability and intensity instructions were effective until the end of the task.
 
-## Unexpected omissions of threat trigger activations in the VTA/SN and ventral putamen, but deactivations in the vmPFC
+### Unexpected omissions of threat trigger activations in the VTA/SN and ventral putamen, but deactivations in the vmPFC
 
 In line with our hypothesis and similar to relief and omission SCR, unexpected (non-0%) omissions of threat elicited on average stronger fMRI activations than fully expected (0%) omissions in the VTA/SN (t(30) = 4.48, p<0.001, d=0.81) and left ventral putamen (t(30) = 3.50, p<0.005, d=0.63) ROIs (see Figure 2A/B). Surprisingly, NAc showed no significant change in activation (t(30) = –0.59, p=0.56) (Figure 2D), and vmPFC showed a significant deactivation (t(30) = –4.71, p<0.001, d=–0.85; Figure 2C). This apparent deactivation could indicate that omission-related responses were lower for unexpected omissions compared to expected omissions. However, it could also have resulted from lingering safety-related vmPFC activations to the 0%-instructions (corresponding to certainty that no stimulation will follow). Such safety-related vmPFC activations are indeed commonly observed during the presentation of CS- in Pavlovian fear conditioning (Fullana et al., 2016). To exclude this alternative hypothesis, we examined the non0%>0% contrast during the instruction window. We found no significant difference in vmPFC activation between 0% and non-0% trials, either as ROI average (t(30) = –1.69, punc = 0.1) or voxel-wise, SVC within the vmPFC mask (see Appendix 4 for full description of the anticipatory fMRI activations). This follow-up analysis suggests that the deactivation to unexpected omissions only emerged after the instruction window, and could therefore not be explained by safety-related activation that were obtained during 0% trials.
 
@@ -56,7 +56,7 @@ In line with our hypothesis and similar to relief and omission SCR, unexpected (
 
 **Figure 2.:** Unexpected omissions of stimulation (non0%>0%) triggered significant fMRI responses in (A) the VTA/SN, and (B) left ventral putamen, but deactivations in (C) the vmPFC and no change in activation in (D) the NAc. Only for the VTA/SN did the activations increase with increasing Probability and Intensity of omitted stimulation (N = 31; Probability: F = 2.94, p = .055; Intensity: F = 6.14, p < .005). vmPFC responses decreased with increasing intensity of the omitted stimulation (N = 31; F = 9.29, p < .001). Fully predicted stimulations (100%) elicited stronger activations than fully predicted omission (0%) in (E) the VTA/SN, no difference in activation for (F) the left Putamen and (G) the NAc, and stronger deactivations for fully predicted stimulation versus omission in (H) the vmPFC. In all figures, the unexpected omission maps were overlayed with the a priori ROI masks (in teal) and were displayed at threshold p<0.001 (unc) for visualization purposes. The crosshairs represent the peak activation within each a priori ROI. The extracted beta-estimates in figures A-D represent the ROI averages from each non-0%>0% contrast (i.e. 25%>0%; 50%>0%; and 75%>0% for the weak, moderate, and strong intensity levels). Any positive beta therefore indicates a stronger activation in the given region compared to a fully predicted omission. Any negative beta indicates a weaker activation. The dots and error bars represent the mean and standard error of the mean.
 
-## Omission-related VTA/SN, but not striatal or vmPFC activations increased in a PE-like manner
+### Omission-related VTA/SN, but not striatal or vmPFC activations increased in a PE-like manner
 
 We next assessed if the omission-related (de)activations could represent reward-like PE-signals by testing the PE axioms for each ROI separately. For axiom 1 and 2, we contrasted omissions following all intensity x probability combination with 0%-omissions and extracted ROI-specific beta averages. These beta-estimates were then entered into linear mixed models that included instructed intensity and probability as regressors of interest, and averaged US-unpleasantness as regressor of no-interest, in addition to a subject-specific intercept. Axiom 3 was tested via a one-sample (two-sided) t-test over the 100%-stimulation versus 0%-omission contrast.
 
@@ -70,7 +70,7 @@ Finally, omission-related vmPFC deactivations were stronger for omissions of mor
 
 A potential explanation for the absent probability effects in the putamen and vmPFC might be that the effects were obscured by including participants who did not believe the probability instructions. Indeed, the provided instructions did not map exactly onto the actually experienced probabilities, but were all followed by stimulation in 25% on the trials (except for the 0% trials and the 100% trials). We therefore reran our analyses on a subset of participants who showed probability-related increases in their anticipatory SCR during the countdown clock (N=21, larger SCR to 75% compared to 25% instructions, see Appendix 4), which we used as a post-hoc index of actual probability-related expectancy. This subgroup analysis revealed no additional effect of Probability for the ventral putamen or the vmPFC, but it rendered the effect of Intensity for the ventral Putamen significant (F(2,160) = 3.10 p<0.05, ωp2 = 0.03). In addition, it increased the effect of probability for the VTA/SN activation (ωp2 = 0.02 to 0.05). Likewise, a post-hoc trial-by-trial analysis of the omission-related fMRI activations confirmed that the Probability effect for the VTA/SN activations was stable over the course of the experiment (no Probability x Run interaction) and remained present when accounting for the Gambler’s fallacy (i.e. the possibility that participants start to expect a stimulation more when more time has passed since the last stimulation was experienced; see Appendix 5). Overall, these post-hoc analyses further confirm the PE-profile of omission-related VTA/SN responses.
 
-## Anterior insula and dmPFC/aMCC clusters show increased activation for unexpected omissions of threat in a PE-like fashion
+### Anterior insula and dmPFC/aMCC clusters show increased activation for unexpected omissions of threat in a PE-like fashion
 
 We then explored neural threat omission processing within a wider secondary mask that combined our primary ROIs with additional regions that have previously been associated to reward, pain and PE processing (such as the wider striatum, including the caudate nucleus, and putamen; midbrain nuclei, including the periaqueductal gray [PAG], and red nucleus; medial temporal structures, including the amygdala and hippocampus; midline thalamus, habenula and cortical regions, including the anterior insula [aINS], orbitofrontal [OFC], dorsomedial prefrontal [dmPFC], and anterior cingulate [ACC] cortices). Significant omission-processing clusters (contrast non0%>0% omissions) were extracted from the mask using a cluster-level threshold (p<0.05, FWE-corrected), following a primary voxel-threshold (p<.001) and included the bilateral anterior insula, bilateral putamen, and a medial cortical cluster encompassing parts of the (dmPFC and the anterior medical cingulate cortex aMCC; Figure 3A–D). The left putamen cluster bordered and minimally overlapped with our predefined ventral putamen ROI (4 out of 82 voxels) which was based on the peak PE activity in previous studies (Raczka et al., 2011; Thiele et al., 2021). Exploratory analyses within a wider whole-brain grey-matter mask identified several other omission-processing clusters (see Appendix 3). Probability and Intensity related activity modulations of these clusters can likewise be found in Appendix 3.
 
@@ -84,7 +84,7 @@ Positive reward PE-like responses were found in the bilateral aINS and dmPFC/aMC
 
 Finally, in addition to the vmPFC deactivations (which fell entirely within our vmPFC mask), we found trend-level deactivations for unexpected omission in the right amygdala (p=0.053). These deactivations were stronger for omissions of more intense (F(2,240) = 3.26, p<0.05, ωp2 = 0.02), but not more probable threat (F(2,240) = 0.43, p=0.65). Furthermore, fully predicted stimulations triggered larger deactivation than fully predicted omissions (t=–2.77, p=0.07, BF = 0.21).
 
-## Omission-related activations are related to self-reported relief-pleasantness
+### Omission-related activations are related to self-reported relief-pleasantness
 
 We then examined whether omission-related fMRI activations were related to self-reported relief-pleasantness on a trial-by-trial basis. In a pre-registered analysis, we entered z-scored relief-pleasantness ratings as a parametric modulator to the omission regressor in a separate GLM that did not distinguish between the different probability x intensity levels. We found that the VTA/SN (t(30) = 3.26, p<0.01, d=0.59) and ventral putamen ROI (at trend level, t(30) = 2.22, p=0.068, d=0.40) were positively modulated by relief-pleasantness ratings, whereas the vmPFC ROI was negatively modulated by relief-pleasantness ratings (V=46, p<0.001, r=0.71) (Figure 4A–D). The positive and negative modulations indicate that stronger omission-related activations in the VTA/SN and ventral putamen, and stronger deactivations in the vmPFC were associated with more pleasant relief-reports. Likewise, the bilateral aINS (t>6.70, p<0.001, d>1.20), dmPFC/aMCC (t(30) = 6.13, p<0.001, d=1.10), and right putamen (t(30) = 4.90, p<0.001, d=0.88), and at trend level left putamen (t(30) = 2.37, p=0.097, d=0.43) clusters we identified from the secondary mask were positively modulated, and right amygdala was negatively modulated by relief-pleasantness (V=59, p<0.001, r=0.67) (Figure 4E–H). Omission-related NAc activation was unrelated to self-reported relief-pleasantness (V=214, p=0.52).
 
@@ -92,7 +92,7 @@ We then examined whether omission-related fMRI activations were related to self-
 
 **Figure 4.:** Omission-related activations were modulated by trial-by-trial levels of relief-pleasantness in (A) the VTA/SN, (B) left ventral Putamen, and (D) vmPFC, but not in (C) the NAc. Omission-related activations in the secondary ROIs were modulated by trial-by-trial levels of relief-pleasantness in (A) the right putamen, (B) bilateral aINS, (C) dmPFC/aMCC, and the (D) right amygdala. In all figures, the relief modulation maps are displayed at threshold p<0.001 (unc) for visualization purposes.
 
-## A neural signature for relief-pleasantness
+### A neural signature for relief-pleasantness
 
 The (mass univariate) parametric modulation analysis showed that omission-related fMRI activity in our primary and secondary ROIs correlated with the pleasantness of the relief. However, given that each voxel/ROI is treated independently in this analysis, it remains unclear how the activations were embedded in a wider network of activation across the brain, and which regions contributed most to the prediction of relief. To overcome these limitations, we trained a (multivariate) LASSO-PCR model (Least Absolute Shrinkage and Selection Operator-Regularized Principle Component Regression) in order to identify whether a spatially distributed pattern of brain responses can predict the perceived pleasantness of the relief (or “neural signature” of relief) (Wager et al., 2013). Because we used the whole-brain pattern (and not only our a priori ROIs), this analysis is completely data driven and can thus identify which clusters contribute most to the relief prediction. We trained the model using fivefold cross-validation with trial-by-trial whole-brain omission-related activation-maps as predictors, and trial-by-trial relief-pleasantness ratings as outcome.
 
@@ -101,6 +101,422 @@ Predicted and reported relief correlated significantly (r=0.28, p<0.001) (Figure
 ![Figure 5.](https://cdn.elifesciences.org/articles/91400/elife-91400-fig5-v1.jpg)
 
 **Figure 5.:** (A) Relief predictive signature map consisting of all voxels within a grey matter mask. All weights were used for prediction. (B) Thresholded signature map (p<0.001), consisting of clusters that contribute significantly to the relief prediction (all clusters < 65 voxels). (C) Predicted and reported relief-pleasantness correlated significantly, r=0.28, p<0.001. Each line/color represents data of a single participant (N=31). (D) Correlations between reported and predicted relief in all lesion models (in each model one of the ROIs was removed from the grey matter mask). The stable correlation across models confirmed that none of our ROIs contributed significantly to the relief-predictive signature model.
+
+**Table 1.**
+ Main clusters contributing to the relief signature identified via bootstrapping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Positive weight clusters</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L/R</td>
+      <td colspan="2">Region</td>
+      <td>K</td>
+      <td colspan="3">MNI Coordinates (xyz)</td>
+      <td>Z (peak)</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Cerebellum Crus 2</td>
+      <td>17</td>
+      <td>6</td>
+      <td>–85</td>
+      <td>–30</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Cerebellum Crus 1</td>
+      <td>18</td>
+      <td>–41</td>
+      <td>–75</td>
+      <td>–28</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Inferior orbitofrontal gyrus</td>
+      <td>10</td>
+      <td>–21</td>
+      <td>14</td>
+      <td>–23</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Inferior temporal gyrus</td>
+      <td>10</td>
+      <td>56</td>
+      <td>–23</td>
+      <td>–15</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle orbitofrontal gyrus</td>
+      <td>15</td>
+      <td>–25</td>
+      <td>54</td>
+      <td>–15</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle orbitofrontal gyrus</td>
+      <td>13</td>
+      <td>38</td>
+      <td>58</td>
+      <td>–10</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Caudate gyrus</td>
+      <td>12</td>
+      <td>4</td>
+      <td>14</td>
+      <td>-1</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Superior temporal gyrus</td>
+      <td>11</td>
+      <td>–55</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Rolandic operculum</td>
+      <td>19</td>
+      <td>58</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Superior occipital gyrus</td>
+      <td>13</td>
+      <td>20</td>
+      <td>–103</td>
+      <td>7</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle occipital gyrus</td>
+      <td>14</td>
+      <td>–23</td>
+      <td>–97</td>
+      <td>7</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Calcarine gyrus</td>
+      <td>18</td>
+      <td>12</td>
+      <td>–79</td>
+      <td>10</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle occipital gyrus</td>
+      <td>12</td>
+      <td>–31</td>
+      <td>–95</td>
+      <td>14</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle temporal gyrus</td>
+      <td>19</td>
+      <td>54</td>
+      <td>–47</td>
+      <td>14</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Cuneus</td>
+      <td>12</td>
+      <td>4</td>
+      <td>–79</td>
+      <td>25</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Supramarginal gyrus</td>
+      <td>12</td>
+      <td>52</td>
+      <td>–37</td>
+      <td>29</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Superior occipital gyrus</td>
+      <td>17</td>
+      <td>–25</td>
+      <td>–71</td>
+      <td>38</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Precentral gyrus</td>
+      <td>15</td>
+      <td>50</td>
+      <td>6</td>
+      <td>43</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Superior occipital gyrus</td>
+      <td>14</td>
+      <td>–13</td>
+      <td>–79</td>
+      <td>43</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Mid cingulate gyrus</td>
+      <td>27</td>
+      <td>-9</td>
+      <td>–23</td>
+      <td>45</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Mid cingulate gyrus</td>
+      <td>12</td>
+      <td>2</td>
+      <td>–13</td>
+      <td>45</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td colspan="2">Negative weight clusters</td>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Cerebellum Crus 1</td>
+      <td>12</td>
+      <td>30</td>
+      <td>–69</td>
+      <td>–28</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Cerebellum Crus 1</td>
+      <td>11</td>
+      <td>–17</td>
+      <td>–89</td>
+      <td>–19</td>
+      <td>–0.007</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Cerebellum Crus 1</td>
+      <td>41</td>
+      <td>30</td>
+      <td>–85</td>
+      <td>–19</td>
+      <td>–0.014</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Fusiform gyrus</td>
+      <td>10</td>
+      <td>28</td>
+      <td>–49</td>
+      <td>-8</td>
+      <td>–0.006</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Superior temporal gyrus</td>
+      <td>10</td>
+      <td>52</td>
+      <td>-2</td>
+      <td>-6</td>
+      <td>–0.004</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Inferior occipital gyrus</td>
+      <td>11</td>
+      <td>28</td>
+      <td>–89</td>
+      <td>-4</td>
+      <td>–0.006</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Superior temporal gyrus</td>
+      <td>10</td>
+      <td>66</td>
+      <td>–17</td>
+      <td>-4</td>
+      <td>–0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Superior temporal gyrus</td>
+      <td>16</td>
+      <td>–63</td>
+      <td>-5</td>
+      <td>-1</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Caudate</td>
+      <td>10</td>
+      <td>–17</td>
+      <td>18</td>
+      <td>1</td>
+      <td>–0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle temporal gyrus</td>
+      <td>14</td>
+      <td>–57</td>
+      <td>–65</td>
+      <td>-1</td>
+      <td>–0.004</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle occipital gyrus</td>
+      <td>12</td>
+      <td>34</td>
+      <td>–93</td>
+      <td>5</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle occipital gyrus</td>
+      <td>11</td>
+      <td>–39</td>
+      <td>–89</td>
+      <td>3</td>
+      <td>–0.004</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle temporal gyrus</td>
+      <td>40</td>
+      <td>58</td>
+      <td>–57</td>
+      <td>10</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Calcarine gyrus</td>
+      <td>18</td>
+      <td>–11</td>
+      <td>–81</td>
+      <td>12</td>
+      <td>–0.007</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Cuneus</td>
+      <td>20</td>
+      <td>-3</td>
+      <td>–89</td>
+      <td>21</td>
+      <td>–0.006</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Angular gyrus</td>
+      <td>16</td>
+      <td>–45</td>
+      <td>–59</td>
+      <td>29</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Middle frontal gyrus</td>
+      <td>12</td>
+      <td>–33</td>
+      <td>46</td>
+      <td>34</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Postcentral gyrus</td>
+      <td>64</td>
+      <td>46</td>
+      <td>–31</td>
+      <td>49</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle frontal gyrus</td>
+      <td>19</td>
+      <td>26</td>
+      <td>32</td>
+      <td>45</td>
+      <td>–0.004</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td colspan="2">Postcentral gyrus</td>
+      <td>10</td>
+      <td>–49</td>
+      <td>–17</td>
+      <td>45</td>
+      <td>–0.005</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td colspan="2">Middle frontal gyrus</td>
+      <td>12</td>
+      <td>26</td>
+      <td>10</td>
+      <td>47</td>
+      <td>–0.004</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Contributing clusters are defined based on voxels-wise FDR-correction with q<0.05, k>10; L/R indicates if the cluster (or peak of the cluster) is part of the left or right hemisphere; Region name is identified using the AAL atlas; K is the number of voxels in the cluster; coordinates are the MNI coordinates of cluster peak; Z is the weight of the cluster peak._
 
 ## Discussion
 
@@ -124,23 +540,23 @@ In conclusion, by violating instructions about the probability and intensity of 
 
 ## Methods
 
-## Participants
+### Participants
 
 To ensure sufficient statistical power for our fMRI analyses, we decided to recruit n=30 healthy volunteers, a commonly used sample size for fMRI research. Notably, power calculations confirmed that this sample size exceeded the required sample size for replicating the relief and SCR effects we observed in the behavioral validation study (Willems and Vervliet, 2021). Specifically, effect sizes for the main effects of Probability (within the Probability x Block RM-ANOVA) and Intensity (within Probability x Intensity x Block RM-ANOVA) in this validation study were ƞp²=0.62, ε=0.52 and ƞp²=0.81, ε=0.62 for relief-pleasantness ratings, and ƞp²=0.72 and ƞp²=0.48, ε=0.67 for omission-induced SCR, respectively. Our calculations (G*power software, selecting F tests, ANOVA: repeated measures, within factors, for 4 levels of probability and 3 levels of intensity) revealed that for relief-pleasantness, a sample size of n=9, and for omission SCR a sample size of n=14 was sufficient to replicate the probability and intensity effects we observed in the subjective and physiological data with a power of 0.95 and an alpha of 0.05.
 
 In the end, 31 healthy volunteers between the ages of 18 and 25 (mean = 20.65, 19 females) and with a body-mass index (BMI) of 18.5–25 kg/m² were recruited to participate in our study. All were right-handed and non-smoking, and declared to be free of any serious medical disorder (including neurological, cardiovascular or respiratory disorders, hypertension, migraine, head trauma with loss of consciousness, chronic (duration of >3 months) or acute pain) or psychiatric disorder (including clinical depression, anxiety, psychotic disorders, mood disorders, eating disorders, somatoform disorders, substance-related disorders or any other psychiatric disorder). Furthermore, participants were excluded when they had to regularly take medication (e.g. treatment in the last 6 months with antidepressants, antipsychotics, sedative hypnotics, psychostimulants, glucocorticoids, appetite suppressants, estrogens, opiates such as pain medication and coughing syrup with codeine, or dopaminergic medications); when they regularly consumed alcohol (>10 units/week), caffeine (>1000 ml coffee daily or equivalent), or energy drinks (>1 drink/day); when their medical doctor requested them to stay away from stressful situations; when they had used cannabis or any other drug of abuse in the last year; or when there was any other contraindication for an MRI scan (e.g. cochlear implant, cardiac pacemaker, neural stimulator, metallic body inclusion or any other metal (implanted) in the body which may interfere with MRI scanning; claustrophobia or severe back problems that may interfere with complying to scanning procedures). Female participants were furthermore required to take hormonal contraceptives or to be tested in the follicular phase of their menstrual cycle (and not to be pregnant or lactating). An overview of the demographics and questionnaire scores of the included participants is provided in Supplementary file 1 – Demographics of included participants, and Supplementary file 2 – Descriptives of questionnaire scores. Upon their enrollment, participants were furthermore asked to refrain from consuming any alcohol and/or caffeine and exerting any recreational physical exercise in the 24 hr before the scan session. The study was approved by the Ethical committee UZ/KU Leuven (S63852). All participants provided written informed consent and received either partial course credits or a monetary compensation for their participation.
 
-## Stimuli
+### Stimuli
 
-## Expectancy Violation Assessment (EVA) task
+#### Expectancy Violation Assessment (EVA) task
 
 The task was an fMRI adaptation of the previously validated EVA task (Willems and Vervliet, 2021) and was programmed in affect5 software (Spruyt et al., 2009). In this task, probability (0%, 25%, 50%, 75%, 100%) and intensity (weak, moderate, strong) information of an upcoming electrical stimulation to the wrist was presented on each trial in the upper left and right corner of the screen respectively. A countdown clock, visualized as a receding bar, indicated the exact moment of stimulation or omission. Responses to the omissions/stimulations were measured.
 
-## Electrical stimulation
+#### Electrical stimulation
 
 The electrical stimulation consisted of a single 2ms electro-cutaneous pulse, generated by a Digitimer DS8R Bipolar Constant Current Stimulator (Digitimer Ltd, Welwyn Garden City, UK), and delivered via two MR-compatible EL509 electrodes (Biopac Systems, Goleta, CA, USA). Electrodes were filled with Isotonic recording gel (Gel 101; Biopac Systems, Goleta, CA, USA), and were attached to the right wrist. To match the instructions, a total of three intensities were individually selected at the start of the scanning session. The weak stimulus was calibrated to be ‘mildly uncomfortable’, the moderate stimulus to be ‘very uncomfortable, but not painful’, and the strong stimulus to be ‘significantly painful, but tolerable’. Selected Weak (M=9.35, SD = 4.65), moderate (M=16.26 mA, SD = 8.13), and strong (M=34.26, SD = 19.53) differed significantly (Friedman test: χ2(2)=62, p<0.001, W=1, all Bonferroni-Holm corrected pairwise comparisons, p<0.001).
 
-## Experimental procedure
+### Experimental procedure
 
 Participants were invited to the lab for an intake session, during which exclusion criteria were extensively checked, experimental procedures were explained, and informed consent was obtained. All included participants then filled out the questionnaire battery (see Supplementary file 2 – Descriptives of questionnaire scores) and were familiarized with the task and rating scales.
 
@@ -150,56 +566,56 @@ In total, the EVA task comprised 72 trials (48 omission trials), divided equally
 
 All trials started with the Probability and Intensity instructions for 1 s, followed by the addition of the countdown bar to the middle of the screen, counting down for 3–7 s (see Figure 1A). Then, the screen cleared and the electrical stimulation was either delivered or omitted. Following a delay of 4–8 s (during which skin conductance and BOLD responses to the omission were measured), the rating scale appeared (probing shock-unpleasantness on shock trials and relief-pleasantness on omission trials). The scale remained on the screen for 8 s or until the participant responded, followed by an intertrial interval between 4 and 7 s during which only a fixation cross was shown. Note that all phases in the trial were jittered (duration countdown clock, duration outcome window, duration intertrial interval). After the last run, participants were asked some control questions regarding the intensity and probability instructions. Specifically, they were asked how much effort they would exert to prevent future weak/moderate/strong stimulation (from 0 ‘no effort’ to 100 ‘a lot of effort’); and to estimate how many stimulations they thought they received following each probability instruction.
 
-## Subjective ratings
+### Subjective ratings
 
 Relief-pleasantness and shock-unpleasantness were probed on omission-and shock-trials using Visual Analogue Scales (VAS) ranging from 0 (neutral) to 100 (very pleasant/unpleasant).
 
-## Skin conductance responses (SCR)
+### Skin conductance responses (SCR)
 
 Fluctuations in skin conductance were measured between two disposable, EL509 electrodes filled with Isotonic recording gel (Gel 101; Biopac Systems, Goleta, CA, USA) that were attached to the hypothenar palm of the left hand. Data were recorded continuously at a 1000 Hz sampling rate via a Biopac MP160 System (Biopac Systems, Goleta, CA, USA), and Acqknowledge software (version 5.0). Raw data were low-passed filtered at 5 Hz (Butterworth, zerophased) and downsampled to 100 Hz in Matlab (version R2020b), after which they were entered into a continuous decomposition analysis (CDA) with two optimization runs (Ledalab, version 3.4.9 Benedek and Kaernbach, 2010). Skin conductance responses (SCRs) were scored as the time integral of the deconvoluted phasic activity (integrated SCR) within response windows of 1–4 s after the onset (anticipatory SCR) and the offset (omission/stimulation SCR) of the countdown clock. Above-threshold responses (>0.01 µS) were square root transformed to reduce the skewness of the distribution. N=3 participants had incomplete datasets because of a missing run (N=2) or delayed recording (N=1), and data of N=5 were completely excluded for SCR analyses as a result of data loss due to technical difficulties (N=1) or because they were identified as anticipation non-responder (i.e. participant with smaller average SCR to the clock on 100% than on 0% trials; N=4). This resulted in a total sample of N=26 for all SCR analyses. For all other analyses, the full data set (N=31) was used (see Supplementary file 1 – Demographics of included participants).
 
-## Statistical analyses of ratings and SCR
+### Statistical analyses of ratings and SCR
 
 Rating and SCR data were analyzed in R 4.2.1 (R Core Team, 2022; https://www.R-project.org) via linear mixed models that were fit using the lme4 package (v1.1.29 Bates et al., 2015). All models included within-subject factors of Intensity and/or Probability and their interaction as fixed effect and a subject-specific intercept as random effect. The Intensity factor always contained 3 levels (weak, moderate, strong). The Probability factor depended on the outcome variable. For models of relief and omission SCR that looked at Probability as well as Intensity, Probability had 3 levels (25%, 50%, 75%); but for models of relief and omission SCR that only assessed Probability, Probability had 4 levels (0%, 25%, 50%, 75%). To account for potential changes in the effects of Probability (and Intensity) over time, models included Run (4 levels: 1, 2, 3, 4) and their interaction with Probability (and Intensity) as regressor of no-interest. In addition, we controlled for individual differences in the perceived unpleasantness of the stimulation, by calculating the average of the reported stimulation unpleasantness across the entire task, and entering the resulting (mean-centered) scores as a between-subjects covariate. Inclusion of both regressors of no-interest indeed increased model fit (lower AIC). Model assumptions were checked and influential outliers were identified. Influential outliers were defined as data points above q0.75+1.5 * IQR or below q0.25–1.5*IQR, with IQR the inter quartile range and q0.25 and q0.75 corresponding to the first and third quartile, respectively; and with a cook’s distance of greater than 4/number of data points (calculated via influence.ME package in R, v0.9–9 Nieuwenhuis et al., 2012). To reduce the influence of these data points, they were rescored to twice the standard deviation from the mean of all data points (corresponding approximately to either 0.05 and 0.95 percentile). If results did not change, we report the model including the original data points. If results changed, we report the model with adjusted data points.
 
 Main and interaction effects were evaluated using F-tests and p-values that were computed via type III analysis of Variance using Kenward-Rogers degrees of freedom method of the lmerTest package (v3.1.3 Kuznetsova et al., 2017), and omega squared were reported as an unbiased estimate of effect size (calculated via effectsize package, v0.7.0 Ben shachar et al., 2020). All significant effects were followed up with Bonferroni-Holm corrected pairwise comparisons of the estimated marginal means in order to assess the direction of the effect (emmeans package, v1.7.5, Length, 2022). Results related to the regressors of no-interest, the anticipatory SCR, the post-experimental questions, and the stimulation responses are reported in the Appendix 4 and 5 for completeness.
 
-## fMRI analyses
+### fMRI analyses
 
-## MRI acquisition
+#### MRI acquisition
 
 MRI data were acquired on a 3 Tesla Philips Achieva scanner, using a 32-channel head coil, at the Department of Radiology of the University Hospitals Leuven. The four functional runs (226 volumes each) were recorded using an T2*-weighted echo planar imaging sequence (60 axial slices; FOV = 224 x 224 mm; in-plane resolution = 2 × 2 mm; interslice gap = 0.2 mm; TR = 2000ms; TE = 30ms; MB = 2; flip angle = 90°). In addition, a high-resolution T1-weighted anatomical image was acquired for each subject for co-registration and normalization of the EPI data using a MP-RAGE sequence (182 axial slices; FOV = 256 x 240 mm; in-plane resolution = 1 x 1 mm; TR = shortest, TE = 4.6ms, flip angle = 8°); and a short reverse phase functional run (10 volumes) was acquired using the exact same imaging parameters as the functional runs, but with opposite phase encoding direction. This reverse phase run was used to estimate the B0-nonuniformity map (or fieldmap) to correct for susceptibility distortion. Functional data of one run were missing for N=4 participants as a result of technical difficulties during scanning. Whenever available, rating and SCR data was still included in the analyses.
 
-## fMRI Preprocessing
+#### fMRI Preprocessing
 
 Prior to preprocessing, image quality was visually checked via quality reports of the anatomical and functional images generated through MRIQC (Esteban et al., 2017). MRI data were then preprocessed using a standard preprocessing pipeline in fMRIPrep 20.2.3 (Esteban et al., 2019). A detailed overview of the preprocessing steps in fMRPrep can be found in Appendix 2. In line with our preregistration, spikes were identified and defined as volumes having a framewise displacement (FD) exceeding a threshold of 0.9 mm or DVARS exceeding a threshold of 2. No functional run had more than 15% spikes, and hence none of the runs had to be excluded from our analyses based on our preregistered criterium. Afterwards, the functional data were spatially smoothed with a 4 mm FWHM isotropic Gausian kernel within the ‘Statistical parametric Mapping’ software (SPM12; https://www.fil.ion.ucl.ac.uk/spm/).
 
-## Subject level analysis
+#### Subject level analysis
 
 Three subject-level general linear models (GLM) were specified. In all models, we concatenated the functional runs and added run-specific intercepts to account for changes over time. The first model investigated the effects of instructed Probability and Intensity on neural omission processing and therefore included separate stick regressors (duration = 0) for omissions of each Probability x Intensity combination (10 regressors), and stimulations (2 regressors: one for non-100% stimulations, one for 100% stimulations), in addition to boxcar regressors (duration = total duration of event) for the instruction (1 regressor) and rating (1 regressor) windows. The second model assessed how omission fMRI data was related to trial-by-trial relief-pleasantness ratings, by only including a single stick regressor for all omissions (1 regressor) and shocks (1 regressor), and boxcar regressors for instructions (1 regressor) and ratings (1 regressor). Z-scored relief-pleasantness ratings were added as parametric modulator for the omission regressor. A final model estimated single-trial omission responses (48 stick regressors), in addition to a single stick regressor for stimulation and boxcar regressors for instructions (1 regressor) and ratings (1 regressor) and was used for the LASSO-PCR analyses. Regressors in all models were convolved with a canonical hemodynamic response function and a high pass filter of 180 s was applied to remove low-frequency drift. Additional non-task related noise was modeled by including nuisance regressors of no-interest for global CSF signal, 24 head motion regressors (consisting of 6 translation and rotation motion parameters and their derivatives, z-scored; and their quadratic terms), and dummy spike regressors.
 
-## Group level univariate analysis
+### Group level univariate analysis
 
-## Omission processing
+#### Omission processing
 
 To test whether our regions of interest (ROI) were activated by the unexpected omission of threat, we contrasted all non-0% omissions (unexpected omissions) with 0% omissions (expected omissions) at subject-level. Mean activity of each ROI was extracted from the resulting contrast map through marsbar (v0.45 Brett et al., 2025), and was entered into group-level (two-sided) one-sample t-tests (per ROI) that were Bonferroni-Holm corrected for the total number of ROIs (4 in the main analyses, 10 in the secondary analyses) in R.
 
 We then evaluated whether the observed activity qualified as a ‘Prediction Error’ by applying an axiomatic testing approach. Specifically, we tested for each ROI if the omission-related activity increased with increasing expected Intensity (axiom 1) and Probability (axiom 2) of threat, and whether completely predicted outcomes (0% omission and 100% stimulations) elicited equivalent activation (axiom 3). For axioms 1 and 2, we extracted mean activity of each ROI from separate omission contrasts that contrasted each omission type (i.e. all possible Probability x Intensity combinations) separately with 0% omissions. These were then entered into a LMM in R including Probability (3 levels: 25%, 50%, 75%) and Intensity (3 levels: weak, moderate, strong) as within-subject factors, and a between-subject covariate of average stimulation unpleasantness (mean-centered) as fixed effects, in addition to a subject-specific intercept. Note that we did not include Run as regressor of no-interest, as Run effects were already accounted for by adding run-specific intercepts to the first level models. Main and interaction effects within each model were followed up with Bonferroni-Holm corrected pairwise comparisons of the estimated marginal means in order to assess the direction of the effect. Finally, to fulfill all necessary and sufficient requirements of a prediction error signal, we contrasted completely predicted omissions (0%) with completely predicted stimulations (100%), as these should trigger equivalent activation in PE-encoding regions. Given that we would expect equivalent activation, Bayes Factors were computed using the BayesFactor package in R (v0.9.12–4.4, Morey & Rouder, 2022) to compare the evidence in favor of alternative and null hypotheses. Larger Bayes Factors indicated more evidence in favor of the null hypotheses.
 
-## Parametric modulation of relief
+#### Parametric modulation of relief
 
 We then tested if the omission-related activity was correlated to self-reported relief-pleasantness on a trial-by-trial basis. To this end, we extracted the mean activity from the modulation contrast for each ROI, and entered these averages in separate one-sample (two-sided) t-test in R, again correcting for the number of ROIs (4 for main analysis, 10 for secondary analyses). In a subsequent exploratory analysis, we entered z-scored omission SCR-responses as parametric modulator to the omission regressor. Results related to this analysis are reported in Appendix 6.
 
-## Neural signature of relief
+#### Neural signature of relief
 
 A LASSO-PCR model (Least Absolute Shrinkage and Selection Operator-Regularized Principal Component Regression) as implemented in CANlab neuroimaging analysis tools (see https://canlab.github.io/) was trained using trial-by-trial whole-brain omission-related activation-maps as predictors, and trial-by-trial relief-pleasantness ratings as outcome (for other applications of this approach, see e.g. Wager et al., 2013; Wager et al., 2011; Speer et al., 2023; Zhou et al., 2021). The added value of this machine-learning technique is that relief is predicted across a set of voxels instead of being predicted for each voxel separately (as in standard univariate regression). Specifically, while each voxel in the activation maps is considered a predictor of relief, the LASSO-PCR technique uses a combination of Principle Component Analyses (PCA) and LASSO-regression to (1) group predictive information across individual voxels into larger components (PCA), and (2) maximize the predictive weight of the most informative components by shrinking the regression weight of the least informative components to zero (LASSO regression). Here, we embedded the LASSO-PCR technique within a fivefold cross-validation loop that iteratively trained a LASSO-PCR model in each loop on a different training and validation dataset, which we then averaged across loops to obtain the final model. Model performance was then assessed by calculating the Pearson correlation between reported and model predicted relief. Important features to the signature pattern were identified using bootstrap tests (5000 samples). Furthermore, the contribution of our ROIs to the model’s performance was assessed using virtual lesion analysis that consisted of repeating the model training, but excluding voxels within the ROIs and assessing model performance. Note that we also estimated a neural signature of omission SCR, by applying a LASSO-PCR model to predict omission-related SCR responses. Results related to these analyses are reported in Appendix 6.
 
-## Regions of interest (ROI)
+#### Regions of interest (ROI)
 
 Our main ROI consisted of key regions of the reward and (relief) valuation pathways such as the Ventral Tegmental Area (VTA) /Substantia Nigra (SN), Nucleus Accumbens (NAC), ventral Putamen, and ventromedial prefrontal cortex (vmPFC). The VTA/SN mask was obtained from Esser and colleagues (Esser et al., 2021), but was originally defined by Bunzeck and Düzel, 2006. The ventral Putamen ROI was defined as a 6 mm sphere centered around the peak voxel (MNI coordinates: –32,8–6) in the left ventral putamen identified by Raczka et al., 2011, as in Thiele et al., 2021. However, we overlayed this sphere with a Putamen mask obtained from a high-resolution anatomical atlas for subcortical nuclei defined by Pauli et al., 2018 to assure the mask was restricted to voxels of the putamen and did not extend to the adjacent anterior Insula. Likewise, a bilateral NAc mask was obtained from the Pauli et al., 2018 atlas. The vmPFC mask was obtained by selecting specific parcels from the atlas vmPFC cortex of AFNI (area 14, 32, 24, bilateral). Since we consider the pleasantness of relief from omission of a threat a type of reward, the selection of parcels was made on the base of an activation likelihood estimation (ALE) meta-analysis of 87 studies (1452 subjects) comparing the brain responses to monetary, erotic and food reward outcomes (Sescousse et al., 2013).
 
 In addition to our main ROIs, we specified a wider secondary mask that extended our main ROIs with additional regions that have previously been associated to reward, pain and PE processing (such as the wider striatum, including the nucleus caudatus, and putamen; midbrain nuclei, including the periaqueductal gray [PAG], habenula, and red nucleus; limbic structures, including the amygdala and hippocampus; midline thalamus and cortical regions, including the anterior insula [aINS], medial orbitofrontal [OFC], dorsomedial prefrontal [dmPFC] and anterior cingulate [ACC] cortices). Masks for these regions were obtained from CANlab combined atlas (2018) (see https://canlab.github.io/), and Pauli atlas (Pauli et al., 2018). Whole brain voxel-wise analyses were restricted to the grey matter mask sparse (from CANlab tools), extended with midbrain voxels (including VTA/SN, RN, habenula). All masks were registered to functional space before analyses and are freely available online at OSF (https://osf.io/ywpks/).
 
-## Code availability
+### Code availability
 
 Analyses code and anatomical masks are freely available at OSF (https://osf.io/ywpks/).

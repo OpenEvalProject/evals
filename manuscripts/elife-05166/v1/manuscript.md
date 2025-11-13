@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.05166.001 To improve understanding of the factors influencing tuberculosis transmission and the role of pathogen variation, we sequenced all available specimens from patients diagnosed over 15 years in a whole district in Malawi. Mycobacterium tuberculosis lineages were assigned and transmission networks constructed, allowing ≤10 single nucleotide polymorphisms (SNPs) difference. We defined disease as due to recent infection if the network-determined source was within 5 years, and assessed transmissibility from forward transmissions resulting in disease. High-quality sequences were available for 1687 disease episodes (72% of all culture-positive episodes): 66% of patients linked to at least one other patient. The between-patient mutation rate was 0.26 SNPs/year (95% CI 0.21–0.31). We showed striking differences by lineage in the proportion of disease due to recent transmission and in transmissibility (highest for lineage-2 and lowest for lineage-1) that were not confounded by immigration, HIV status or drug resistance. Transmissions resulting in disease decreased markedly over time. DOI: http://dx.doi.org/10.7554/eLife.05166.001
+To improve understanding of the factors influencing tuberculosis transmission and the role of pathogen variation, we sequenced all available specimens from patients diagnosed over 15 years in a whole district in Malawi. Mycobacterium tuberculosis lineages were assigned and transmission networks constructed, allowing ≤10 single nucleotide polymorphisms (SNPs) difference. We defined disease as due to recent infection if the network-determined source was within 5 years, and assessed transmissibility from forward transmissions resulting in disease. High-quality sequences were available for 1687 disease episodes (72% of all culture-positive episodes): 66% of patients linked to at least one other patient. The between-patient mutation rate was 0.26 SNPs/year (95% CI 0.21–0.31). We showed striking differences by lineage in the proportion of disease due to recent transmission and in transmissibility (highest for lineage-2 and lowest for lineage-1) that were not confounded by immigration, HIV status or drug resistance. Transmissions resulting in disease decreased markedly over time.
 
 ## Introduction
 
@@ -45,47 +45,353 @@ As part of the Karonga Prevention Study in Malawi, we assess transmission using 
 
 Between September 1995 and September 2010, there were 2332 person-episodes of culture-confirmed tuberculosis in Karonga District. Whole genome sequences that passed quality control were available for 1687 (72%). The distribution of patients with and without sequences available was very similar by age, sex, and HIV status. The proportion with sequences available was the highest in 2002–2006 (82%) and was higher in those with smear-negative pulmonary disease (78%) than in those with smear-positive disease (71%) and extra-pulmonary disease (67%).
 
-The phylogenetic tree is shown in
+The phylogenetic tree is shown in Figure 1. Most M. tuberculosis strains (68%) were lineage-4, with 16% lineage-1, 4% lineage-2, and 12% lineage-3 (Table 1). Lineage-4 strains were more common in the earlier years. Lineage-1 strains were more common in HIV-positive and older patients and less common in recurrent tuberculosis. Lineage-2 strains were more common in younger patients and were all drug sensitive. Lineage-3 strains were associated with recurrent tuberculosis and with isoniazid resistance. There was no association between lineage and having been born or recently resident outside the district. The associations of lineage with HIV status and recurrent tuberculosis persisted after adjusting for age, sex, and year. The association between lineage and recurrent tuberculosis was also present when restricted to those with drug-sensitive strains, and the association between lineage and isoniazid resistance was also present when restricted to those with first episode tuberculosis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig1-v1.jpg)
 
-**Figure 1.:** Lineages form monophyletic groups within the phylogeny, as expected. Lineage 1 (Indo Oceanic) is represented in dark blue, Lineage 2 (Beijing/East Asian) in light blue, Lineage 3 (East African Indian) in green, and Lineage 4 (Europe American) in red.DOI: http://dx.doi.org/10.7554/eLife.05166.003
+**Figure 1.:** Lineages form monophyletic groups within the phylogeny, as expected. Lineage 1 (Indo Oceanic) is represented in dark blue, Lineage 2 (Beijing/East Asian) in light blue, Lineage 3 (East African Indian) in green, and Lineage 4 (Europe American) in red.
 
-## SNP-based linkage thresholds
+**Table 1.**
+ Characteristics of patients included in the analysis and distribution of lineages
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="4">Lineage</th>
+      <th rowspan="2">Overall</th>
+      <th rowspan="2">p*</th>
+    </tr>
+    <tr>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall</td>
+      <td>269 (16.0)</td>
+      <td>74 (4.4)</td>
+      <td>205 (12.2)</td>
+      <td>1139 (67.5)</td>
+      <td>1687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">Age</td>
+    </tr>
+    <tr>
+      <td>&lt;20</td>
+      <td>9 (12.3)</td>
+      <td>7 (9.6)</td>
+      <td>9 (12.3)</td>
+      <td>48 (65.7)</td>
+      <td>73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20–29</td>
+      <td>46 (10.3)</td>
+      <td>26 (5.8)</td>
+      <td>48 (10.7)</td>
+      <td>327 (73.2)</td>
+      <td>447</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>109 (18.4)</td>
+      <td>17 (2.9)</td>
+      <td>81 (13.7)</td>
+      <td>386 (65.1)</td>
+      <td>593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>61 (19.8)</td>
+      <td>18 (5.8)</td>
+      <td>39 (12.7)</td>
+      <td>190 (61.7)</td>
+      <td>308</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50+</td>
+      <td>44 (16.5)</td>
+      <td>6 (2.3)</td>
+      <td>28 (10.5)</td>
+      <td>188 (70.7)</td>
+      <td>266</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">Sex</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>130 (14.6)</td>
+      <td>47 (5.3)</td>
+      <td>94 (10.6)</td>
+      <td>617 (69.5)</td>
+      <td>888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>139 (17.4)</td>
+      <td>27 (3.4)</td>
+      <td>111 (13.9)</td>
+      <td>522 (65.3)</td>
+      <td>799</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td colspan="7">Year</td>
+    </tr>
+    <tr>
+      <td>1995–1998</td>
+      <td>55 (15.5)</td>
+      <td>8 (2.3)</td>
+      <td>29 (8.2)</td>
+      <td>263 (74.1)</td>
+      <td>355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1999–2001</td>
+      <td>43 (11.5)</td>
+      <td>23 (6.1)</td>
+      <td>43 (11.5)</td>
+      <td>266 (70.9)</td>
+      <td>375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2002–2004</td>
+      <td>80 (19.4)</td>
+      <td>22 (5.3)</td>
+      <td>54 (13.1)</td>
+      <td>257 (62.2)</td>
+      <td>413</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2005–2007</td>
+      <td>54 (17.4)</td>
+      <td>11 (3.5)</td>
+      <td>44 (14.2)</td>
+      <td>202 (65.0)</td>
+      <td>311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2008–2010</td>
+      <td>37 (15.9)</td>
+      <td>10 (4.3)</td>
+      <td>35 (15.0)</td>
+      <td>151 (64.8)</td>
+      <td>233</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td colspan="7">TB type</td>
+    </tr>
+    <tr>
+      <td>Smear+</td>
+      <td>212 (17.3)</td>
+      <td>52 (4.3)</td>
+      <td>156 (12.8)</td>
+      <td>804 (65.7)</td>
+      <td>1224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smear−</td>
+      <td>46 (12.1)</td>
+      <td>19 (5.0)</td>
+      <td>38 (10.0)</td>
+      <td>276 (72.8)</td>
+      <td>379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Extrapulmonary</td>
+      <td>11 (13.1)</td>
+      <td>3 (3.6)</td>
+      <td>11 (13.1)</td>
+      <td>59 (70.2)</td>
+      <td>84</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td colspan="7">HIV status</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>47 (10.8)</td>
+      <td>23 (5.3)</td>
+      <td>57 (13.0)</td>
+      <td>310 (70.9)</td>
+      <td>437</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Positive</td>
+      <td>148 (19.3)</td>
+      <td>28 (3.6)</td>
+      <td>107 (13.9)</td>
+      <td>486 (63.2)</td>
+      <td>769</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">Previous TB</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>251 (16.7)</td>
+      <td>66 (4.4)</td>
+      <td>171 (11.4)</td>
+      <td>1019 (67.6)</td>
+      <td>1507</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>18 (10.0)</td>
+      <td>8 (4.4)</td>
+      <td>34 (18.9)</td>
+      <td>120 (66.7)</td>
+      <td>180</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td colspan="7">Isoniazid resistance</td>
+    </tr>
+    <tr>
+      <td>Resistant</td>
+      <td>20 (17.2)</td>
+      <td>0 (0.0)</td>
+      <td>21 (18.1)</td>
+      <td>75 (64.7)</td>
+      <td>116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sensitive</td>
+      <td>244 (15.9)</td>
+      <td>74 (4.8)</td>
+      <td>181 (11.8)</td>
+      <td>1033 (67.4)</td>
+      <td>1532</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td colspan="7">Residence</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>198 (16.4)</td>
+      <td>53 (4.4)</td>
+      <td>148 (12.3)</td>
+      <td>806 (66.9)</td>
+      <td>1205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>48 (16.6)</td>
+      <td>13 (4.5)</td>
+      <td>32 (11.1)</td>
+      <td>196 (67.8)</td>
+      <td>289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>11 (11.5)</td>
+      <td>7 (7.3)</td>
+      <td>17 (17.7)</td>
+      <td>61 (63.5)</td>
+      <td>96</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td colspan="7">Birth place</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>174 (17.0)</td>
+      <td>46 (4.5)</td>
+      <td>135 (13.2)</td>
+      <td>667 (65.3)</td>
+      <td>1022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Malawi</td>
+      <td>55 (16.3)</td>
+      <td>14 (4.1)</td>
+      <td>31 (9.2)</td>
+      <td>238 (70.4)</td>
+      <td>338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>34 (11.7)</td>
+      <td>14 (4.8)</td>
+      <td>37 (12.7)</td>
+      <td>206 (70.8)</td>
+      <td>291</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*From Χ2 comparison between lineages._
+
+### SNP-based linkage thresholds
+
+Figure 2 shows the SNP distances between all possible pairs of samples in the data set (including more than one per individual in some cases). Peaks corresponding to large numbers of SNPs represent comparisons between lineages. On the basis of the distribution, we chose cut-offs at 5 and 10 SNPs for distinguishing links. Similar figures were drawn for the mutation rate (Figure 2—figure supplement 1). We have previously shown that patients with relapse had up to 8 SNPs difference (Guerra-Assuncao et al., 2014), and these cut-offs are similar to those used in other studies (Bryant et al., 2013; Walker et al., 2013).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig2-v1.jpg)
 
-**Figure 2.:** The y axis shows the relative frequency within each subgroup: same RFLP pattern (red), different RFLP patterns (blue); same individual, same RFLP (green). (A) shows the full data set, and (B) is part of the same figure drawn at a larger scale (each bar corresponds to 1 SNP) to show the smaller distances more clearly.DOI: http://dx.doi.org/10.7554/eLife.05166.005
+**Figure 2.:** The y axis shows the relative frequency within each subgroup: same RFLP pattern (red), different RFLP patterns (blue); same individual, same RFLP (green). (A) shows the full data set, and (B) is part of the same figure drawn at a larger scale (each bar corresponds to 1 SNP) to show the smaller distances more clearly.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** The y axis shows the relative frequency within each subgroup: same RFLP pattern (red), different RFLP patterns (blue); same individual, same RFLP (green). (A) shows the full data set, and (B) is part of the same figure drawn at a larger scale (each bar corresponds to 0.001 SNP/day) to show the smaller distances more clearly.DOI: http://dx.doi.org/10.7554/eLife.05166.006
+**Figure 2—figure supplement 1.:** The y axis shows the relative frequency within each subgroup: same RFLP pattern (red), different RFLP patterns (blue); same individual, same RFLP (green). (A) shows the full data set, and (B) is part of the same figure drawn at a larger scale (each bar corresponds to 0.001 SNP/day) to show the smaller distances more clearly.
 
-## Transmission network
+### Transmission network
 
-To construct the transmission network, we included links of up to 10 SNPs difference. We included one sample per person-episode of disease and excluded extra-pulmonary cases as they cannot transmit. Example clusters are shown in
+To construct the transmission network, we included links of up to 10 SNPs difference. We included one sample per person-episode of disease and excluded extra-pulmonary cases as they cannot transmit. Example clusters are shown in Figure 3, and the full transmission network in Figure 3—figure supplement 1. Overall, after excluding relapses (recurrences with ≤10 SNPs difference from the initial episode), 66% of patients were in clusters with at least one other patient. Clusters ranged in size from 2 to 36 (Figure 4A), with 23% of patients in clusters of 10 or more. The size of the clusters varied by lineage (Figure 4B): compared to lineage-4 (the commonest lineage), lineage-2 and lineage-3 strains were more likely to be clustered and in larger clusters and lineage-1 strains were less likely to be clustered and were in smaller clusters. The median cluster size and interquartile range (IQR) for lineages 1–4 were 3 (1, 6), 13 (7, 24), 7 (2, 22), and 3 (1, 8), respectively. The p-values for differences between lineages were similar if non-clustered strains were excluded.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig3-v1.jpg)
 
-**Figure 3.:** All clusters are shown in Figure 3—figure supplement 1. Each polygon represents a patient, with larger polygons representing two or more patients with identical sequences. The patient details are written inside the polygon: F = female, M = male. The number is the year of the start of the disease episode. The shapes describe drug resistance of the strain: squares = drug sensitive, circles = drug resistant. The colour of the polygon refers to HIV status of the patient: red = positive, blue = negative, grey = unknown (or multiple patients). The colour of the edge refers to the lineage: Lineage 1 (Indo Oceanic) dark blue (B), Lineage 2 (Beijing/East Asian) light blue (C), Lineage 3 (East African Indian) green (A), and Lineage 4 (Europe American) red (D). The numbers on the arrows between the polygons are the number of SNPs between them.DOI: http://dx.doi.org/10.7554/eLife.05166.007
+**Figure 3.:** All clusters are shown in Figure 3—figure supplement 1. Each polygon represents a patient, with larger polygons representing two or more patients with identical sequences. The patient details are written inside the polygon: F = female, M = male. The number is the year of the start of the disease episode. The shapes describe drug resistance of the strain: squares = drug sensitive, circles = drug resistant. The colour of the polygon refers to HIV status of the patient: red = positive, blue = negative, grey = unknown (or multiple patients). The colour of the edge refers to the lineage: Lineage 1 (Indo Oceanic) dark blue (B), Lineage 2 (Beijing/East Asian) light blue (C), Lineage 3 (East African Indian) green (A), and Lineage 4 (Europe American) red (D). The numbers on the arrows between the polygons are the number of SNPs between them.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Each polygon represents a patient, with larger polygons representing two or more patients with identical sequences. The patient details are written inside the polygon: F = female, M = male. The number is the year of the start of the disease episode. The shapes describe drug resistance of the strain: squares = drug sensitive, circles = drug resistant, octagons = unknown. The colour of the polygon refers to HIV status of the patient: red = positive, blue = negative, grey = unknown. The colour of the edge refers to the lineage: Lineage 1 (Indo Oceanic) dark blue, Lineage 2 (Beijing/East Asian) light blue, Lineage 3 (East African Indian) green, and Lineage 4 (Europe American) red. The numbers on the arrows between the polygons are the number of SNPs between them.DOI: http://dx.doi.org/10.7554/eLife.05166.008
+**Figure 3—figure supplement 1.:** Each polygon represents a patient, with larger polygons representing two or more patients with identical sequences. The patient details are written inside the polygon: F = female, M = male. The number is the year of the start of the disease episode. The shapes describe drug resistance of the strain: squares = drug sensitive, circles = drug resistant, octagons = unknown. The colour of the polygon refers to HIV status of the patient: red = positive, blue = negative, grey = unknown. The colour of the edge refers to the lineage: Lineage 1 (Indo Oceanic) dark blue, Lineage 2 (Beijing/East Asian) light blue, Lineage 3 (East African Indian) green, and Lineage 4 (Europe American) red. The numbers on the arrows between the polygons are the number of SNPs between them.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig4-v1.jpg)
 
-**Figure 4.:** (A) Number of clusters of different sizes and percentage of patients in clusters of different sizes. Cluster size 1 refers to unclustered patients. (B) Cluster size by lineage. The p values are for the comparison of each lineage with lineage-4 (Wilcoxon rank sum test). (C) Relationship between number of SNPs between individuals and the time interval between disease onset in each individual of the pair. (Random noise has been introduced to allow multiple similar results to be visualized.) Linear regression gives r2 = 10%, p < 0.001, slope 0.26 SNPs per year (95% CI 0.21–0.31). (D) Number of SNPs between individuals in clusters, by lineage. The p values are for the comparison of each lineage with lineage-4 (Wilcoxon rank sum test).DOI: http://dx.doi.org/10.7554/eLife.05166.009
+**Figure 4.:** (A) Number of clusters of different sizes and percentage of patients in clusters of different sizes. Cluster size 1 refers to unclustered patients. (B) Cluster size by lineage. The p values are for the comparison of each lineage with lineage-4 (Wilcoxon rank sum test). (C) Relationship between number of SNPs between individuals and the time interval between disease onset in each individual of the pair. (Random noise has been introduced to allow multiple similar results to be visualized.) Linear regression gives r2 = 10%, p < 0.001, slope 0.26 SNPs per year (95% CI 0.21–0.31). (D) Number of SNPs between individuals in clusters, by lineage. The p values are for the comparison of each lineage with lineage-4 (Wilcoxon rank sum test).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** For each individual, we selected the first and last specimens if there were more than two. (Random noise has been introduced to allow multiple similar results to be visualized.) The slope is given in SNPs/year.DOI: http://dx.doi.org/10.7554/eLife.05166.010
+**Figure 4—figure supplement 1.:** For each individual, we selected the first and last specimens if there were more than two. (Random noise has been introduced to allow multiple similar results to be visualized.) The slope is given in SNPs/year.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/05166/elife-05166-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** (Random noise has been introduced to allow multiple similar results to be visualized.) The slopes are given in SNPs/year.DOI: http://dx.doi.org/10.7554/eLife.05166.011
+**Figure 4—figure supplement 2.:** (Random noise has been introduced to allow multiple similar results to be visualized.) The slopes are given in SNPs/year.
 
-## Mutation rates
+### Mutation rates
 
 Overall, of 824 links with 0–10 SNPs identified in the networks, 255 (31%) had 0 SNPs different, 182 (22%) had 1 SNP, 127 (15%) had 2 SNPs, 77 (9%) had 3 SNPs, 52 (6%) had 4 SNPs, 32 (4%) had 5 SNPs, and 99 (12%) had 6–10 SNPs different. The number of SNPs correlated with the time between disease onset in the pairs of individuals linked in the network (Figure 4C): linear regression r2 = 10%, p < 0.001. The regression coefficient suggests a mutation rate of 0.26 SNPs/year (95% CI 0.21–0.31). The regression results were the same if sputum collection dates were used instead of disease onset dates.
 
@@ -97,15 +403,707 @@ We investigated the number of SNPs in the likely transmissions by smear status, 
 
 For further analysis of transmission, we excluded 77 uncertain links (i.e., with 6–10 SNPs and mutation rate ≥0.003 SNPS/day, Figure 2—figure supplement 1).
 
-## Recent infection
+### Recent infection
 
-A case of tuberculosis was defined as being due to recent infection if a source case was identified in the network within the previous 5 years, and not being due to recent infection if no source was identified or if the closest source (in terms of number of SNPs) was more than 5 years earlier. Overall, 38% of patients had evidence of recent infection (Table 2). This was the highest for lineage-2 (65%) and the lowest for lineage-1 (31%). Linkage with a recent source case was less common in older age groups, in those who had been living outside the district, and in more recent years, with the proportion linked decreasing from 45% in 1999–2001 to 30% in 2008–2010. These trends persisted after adjusting for each other (Table 2). There was no association of linkage with sex, HIV status, sputum smear status, or isoniazid resistance and adjusting for these did not affect the results. The effect of village of birth was lost after adjusting for recent residence.10.7554/eLife.05166.012Table 2.Characteristics associated with disease due to recent infectionDOI: http://dx.doi.org/10.7554/eLife.05166.012CharacteristicLinked/TotalAssociation with links (unadjusted)p (lrtest)Adjusted for age, sex, year, lineageAdjusted for other variables included in model*p (lrtest)n/N%OR (95% CI)OR (95% CI)OR (95% CI)Overall409/107438.1Lineage 156/18330.60.76 (0.53–1.1)0.81 (0.57–1.2)0.81 (0.57–1.2) 234/5265.43.2 (1.8–5.9)3.0 (1.6–5.4)3.2 (1.7–5.8) 358/12945.01.4 (0.96–2.1)1.5 (1.0–2.2)1.5 (1.0–2.2) 4261/71036.81<0.00111<0.001Age <2019/3665.82.9 (1.4–6.0)2.5 (1.2–5.4)2.6 (1.2–5.6) 20–29113/27645.81.8 (1.2–2.7)1.6 (1.1–2.5)1.8 (1.2–2.8) 30–39152/40439.61.5 (1.0–2.3)1.5 (0.99–2.2)1.6 (1.0–2.3) 40–4981/20144.21.7 (1.1–2.7)1.0 (1.0–2.6)1.7 (1.1–2.6) 50+44/15733.510.007†110.03†Sex Female229/57539.81 Male180/49936.10.85 (0.67–1.1)0.050.93 (0.72–1.2)0.94 (0.72–1.2)0.4Year 1999–2001141/31145.3111<0.001† 2002–2004117/32236.30.69 (0.50–0.95)0.73 (0.52–1.0)0.69 (0.50–0.97) 2005–200792/24437.70.73 (0.52–1.0)0.78 (0.55–1.1)0.70 (0.49–1.0) 2008–201059/19730.00.52 (0.35–0.75)0.001†0.53 (0.36–0.77)0.48 (0.32–0.70)TB type Smear-positive pulmonary312/82138.011 Smear-negative pulmonary97/25338.31.0 (0.76–1.4)0.90.95 (0.71–1.3)HIV status HIV−102/28336.01 HIV+ no ART173/43639.71.2 (0.85–1.6)1.1 (0.75–1.5) HIV+ on ART27/7735.10.96 (0.56–1.6)0.51.0 (0.56–1.8)INH resistance No375/97938.311 Yes28/6443.81.3 (0.75–2.1)0.41.4 (0.81–2.3) UnknownRecent residence Karonga328/81640.2110.005 Other Malawi56/17631.80.69 (0.49–0.98)0.58 (0.41–0.84)0.58 (0.40–0.84) Other country16/5429.60.63 (0.34–1.1)0.040.48 (0.26–0.91)0.48 (0.26–0.91)Birth place Karonga267/65940.511 Other Malawi81/22735.70.81 (0.60–1.1)0.79 (0.57–1.1) Other country59/18032.80.72 (0.51–1.0)0.10.67 (0.47–0.97)In this analysis individuals are defined as linked (‘backwards links’) using the cut-offs described in the text and if the closest link was with a patient within the previous 5 years. Extrapulmonary, recurrent cases, and cases before 1999 were excluded. Odds ratios (OR) calculated using logistic regression.*In this model a dummy variable was used for the 32 individuals with missing data on recent residence.†Test for trend.
+A case of tuberculosis was defined as being due to recent infection if a source case was identified in the network within the previous 5 years, and not being due to recent infection if no source was identified or if the closest source (in terms of number of SNPs) was more than 5 years earlier. Overall, 38% of patients had evidence of recent infection (Table 2). This was the highest for lineage-2 (65%) and the lowest for lineage-1 (31%). Linkage with a recent source case was less common in older age groups, in those who had been living outside the district, and in more recent years, with the proportion linked decreasing from 45% in 1999–2001 to 30% in 2008–2010. These trends persisted after adjusting for each other (Table 2). There was no association of linkage with sex, HIV status, sputum smear status, or isoniazid resistance and adjusting for these did not affect the results. The effect of village of birth was lost after adjusting for recent residence.
 
-## Transmissibility
+**Table 2.**
+ Characteristics associated with disease due to recent infection
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristic</th>
+      <th colspan="2">Linked/Total</th>
+      <th>Association with links (unadjusted)</th>
+      <th rowspan="2">p (lrtest)</th>
+      <th>Adjusted for age, sex, year, lineage</th>
+      <th>Adjusted for other variables included in model*</th>
+      <th rowspan="2">p (lrtest)</th>
+    </tr>
+    <tr>
+      <th>n/N</th>
+      <th>%</th>
+      <th>OR (95% CI)</th>
+      <th>OR (95% CI)</th>
+      <th>OR (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall</td>
+      <td>409/1074</td>
+      <td>38.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Lineage</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>56/183</td>
+      <td>30.6</td>
+      <td>0.76 (0.53–1.1)</td>
+      <td></td>
+      <td>0.81 (0.57–1.2)</td>
+      <td>0.81 (0.57–1.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>34/52</td>
+      <td>65.4</td>
+      <td>3.2 (1.8–5.9)</td>
+      <td></td>
+      <td>3.0 (1.6–5.4)</td>
+      <td>3.2 (1.7–5.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>58/129</td>
+      <td>45.0</td>
+      <td>1.4 (0.96–2.1)</td>
+      <td></td>
+      <td>1.5 (1.0–2.2)</td>
+      <td>1.5 (1.0–2.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>261/710</td>
+      <td>36.8</td>
+      <td>1</td>
+      <td>&lt;0.001</td>
+      <td>1</td>
+      <td>1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="8">Age</td>
+    </tr>
+    <tr>
+      <td>&lt;20</td>
+      <td>19/36</td>
+      <td>65.8</td>
+      <td>2.9 (1.4–6.0)</td>
+      <td></td>
+      <td>2.5 (1.2–5.4)</td>
+      <td>2.6 (1.2–5.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20–29</td>
+      <td>113/276</td>
+      <td>45.8</td>
+      <td>1.8 (1.2–2.7)</td>
+      <td></td>
+      <td>1.6 (1.1–2.5)</td>
+      <td>1.8 (1.2–2.8)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>152/404</td>
+      <td>39.6</td>
+      <td>1.5 (1.0–2.3)</td>
+      <td></td>
+      <td>1.5 (0.99–2.2)</td>
+      <td>1.6 (1.0–2.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>81/201</td>
+      <td>44.2</td>
+      <td>1.7 (1.1–2.7)</td>
+      <td></td>
+      <td>1.0 (1.0–2.6)</td>
+      <td>1.7 (1.1–2.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50+</td>
+      <td>44/157</td>
+      <td>33.5</td>
+      <td>1</td>
+      <td>0.007†</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.03†</td>
+    </tr>
+    <tr>
+      <td colspan="8">Sex</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>229/575</td>
+      <td>39.8</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>180/499</td>
+      <td>36.1</td>
+      <td>0.85 (0.67–1.1)</td>
+      <td>0.05</td>
+      <td>0.93 (0.72–1.2)</td>
+      <td>0.94 (0.72–1.2)</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td colspan="8">Year</td>
+    </tr>
+    <tr>
+      <td>1999–2001</td>
+      <td>141/311</td>
+      <td>45.3</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td>1</td>
+      <td>&lt;0.001†</td>
+    </tr>
+    <tr>
+      <td>2002–2004</td>
+      <td>117/322</td>
+      <td>36.3</td>
+      <td>0.69 (0.50–0.95)</td>
+      <td></td>
+      <td>0.73 (0.52–1.0)</td>
+      <td>0.69 (0.50–0.97)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2005–2007</td>
+      <td>92/244</td>
+      <td>37.7</td>
+      <td>0.73 (0.52–1.0)</td>
+      <td></td>
+      <td>0.78 (0.55–1.1)</td>
+      <td>0.70 (0.49–1.0)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2008–2010</td>
+      <td>59/197</td>
+      <td>30.0</td>
+      <td>0.52 (0.35–0.75)</td>
+      <td>0.001†</td>
+      <td>0.53 (0.36–0.77)</td>
+      <td>0.48 (0.32–0.70)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">TB type</td>
+    </tr>
+    <tr>
+      <td>Smear-positive pulmonary</td>
+      <td>312/821</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smear-negative pulmonary</td>
+      <td>97/253</td>
+      <td>38.3</td>
+      <td>1.0 (0.76–1.4)</td>
+      <td>0.9</td>
+      <td>0.95 (0.71–1.3)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">HIV status</td>
+    </tr>
+    <tr>
+      <td>HIV−</td>
+      <td>102/283</td>
+      <td>36.0</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV+ no ART</td>
+      <td>173/436</td>
+      <td>39.7</td>
+      <td>1.2 (0.85–1.6)</td>
+      <td></td>
+      <td>1.1 (0.75–1.5)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV+ on ART</td>
+      <td>27/77</td>
+      <td>35.1</td>
+      <td>0.96 (0.56–1.6)</td>
+      <td>0.5</td>
+      <td>1.0 (0.56–1.8)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">INH resistance</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>375/979</td>
+      <td>38.3</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>28/64</td>
+      <td>43.8</td>
+      <td>1.3 (0.75–2.1)</td>
+      <td>0.4</td>
+      <td>1.4 (0.81–2.3)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Recent residence</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>328/816</td>
+      <td>40.2</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Other Malawi</td>
+      <td>56/176</td>
+      <td>31.8</td>
+      <td>0.69 (0.49–0.98)</td>
+      <td></td>
+      <td>0.58 (0.41–0.84)</td>
+      <td>0.58 (0.40–0.84)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>16/54</td>
+      <td>29.6</td>
+      <td>0.63 (0.34–1.1)</td>
+      <td>0.04</td>
+      <td>0.48 (0.26–0.91)</td>
+      <td>0.48 (0.26–0.91)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Birth place</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>267/659</td>
+      <td>40.5</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other Malawi</td>
+      <td>81/227</td>
+      <td>35.7</td>
+      <td>0.81 (0.60–1.1)</td>
+      <td></td>
+      <td>0.79 (0.57–1.1)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>59/180</td>
+      <td>32.8</td>
+      <td>0.72 (0.51–1.0)</td>
+      <td>0.1</td>
+      <td>0.67 (0.47–0.97)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_In this analysis individuals are defined as linked (‘backwards links’) using the cut-offs described in the text and if the closest link was with a patient within the previous 5 years. Extrapulmonary, recurrent cases, and cases before 1999 were excluded. Odds ratios (OR) calculated using logistic regression.*In this model a dummy variable was used for the 32 individuals with missing data on recent residence.†Test for trend._
+
+### Transmissibility
 
 From the network, 32% of individuals were linked as likely sources of infection to at least one other individual. Individuals were sources for up to 12 others, with 293 (22%) linked to one, 76 (6%) linked to two, 22 (2%) linked to three, 14 (1%) linked to four, and 26 (2%) linked to five or more.
 
-Table 3 shows the association of characteristics of the index episode with the likelihood of transmission, using ordered logistic regression. There were more transmissions from those with positive smears, and with tuberculosis in the earlier years. Lineage-2 and lineage-3 strains were more likely to transmit than lineage-4, and these differences were more marked after adjustment for year, age, sex, and smear status. Place of birth and recent residence were weakly associated with onward transmission, and further adjusting for these or the other factors in the table did not affect the results.10.7554/eLife.05166.013Table 3.Characteristics associated with transmissibilityDOI: http://dx.doi.org/10.7554/eLife.05166.013CharacteristicAny Linked/TotalAssociation with linkspAdjusted for age, sex, year, lineage, smear statusp (lrtest)n/N%OR (95% CI)OR (95% CI)Overall431/134632.0Lineage 159/21727.20.87 (0.63–1.2)0.94 (0.66–1.3) 227/6144.31.7 (1.0–2.7)1.9 (1.1–3.2) 365/15442.21.6 (1.2–2.3)1.9 (1.4–2.7) 4280/91430.610.0061<0.001Age <2020/5040.02.3 (1.2–4.4)1.9 (0.98–3.7) 20–29134/34938.42.3 (1.5–3.3)2.2 (1.5–3.3) 30–39159/49032.51.7 (1.2–2.5)2.0 (1.3–2.9) 40–4971/23829.81.6 (1.0–2.4)1.7 (1.1–2.7) 50+47/21921.51<0.00110.002Sex Female239/71833.311 Male192/62830.60.87 (0.69–1.1)0.20.93 (0.73–1.2)0.5Year 1995–1998159/31450.611 1999–2001119/34534.50.49 (0.36–0.66)0.42 (0.31–0.58) 2002–200495/38924.40.30 (0.22–0.41)0.27 (0.19–0.37) 2005–200758/29819.50.22 (0.16–0.32)<0.0010.20 (0.14–0.29)<0.001TB type Smear pos pulm338/100333.711 Smear neg pulm93/34327.10.72 (0.55–0.94)0.010.73 (0.55–0.96)<0.001HIV status HIV−91/31828.611 HIV+ no ART170/54031.51.1 (0.83–1.5)1.1 (0.81–1.6) HIV+ on ART11/4822.90.70 (0.35–1.4)0.31.4 (0.62–3.1)0.6Previous TB No391/120032.611 Yes40/14627.40.77 (0.53–1.1)0.20.85 (0.58–1.3)0.4INH resistance No402/123732.511 Yes29/10029.00.86 (0.55–1.3)0.50.86 (0.54–1.4)0.5Recent residence Karonga284/94230.211 Other Malawi80/23434.21.2 (0.89–1.6)1.0 (0.74–1.4) Other country20/7427.00.88(0.52–1.5)0.40.57 (0.33–0.98)0.09Birth place Karonga276/81134.011 Other Malawi80/27229.40.83 (0.62–1.1)0.82 (0.60–1.1) Other country64/23427.40.77 (0.56–1.1)0.20.71 (0.51–0.99)0.08The numbers of likely transmissions (‘forward links’) were compared by individual characteristics using ordered logistic regression. Extrapulmonary cases and cases occurring after 2007 were excluded.
+Table 3 shows the association of characteristics of the index episode with the likelihood of transmission, using ordered logistic regression. There were more transmissions from those with positive smears, and with tuberculosis in the earlier years. Lineage-2 and lineage-3 strains were more likely to transmit than lineage-4, and these differences were more marked after adjustment for year, age, sex, and smear status. Place of birth and recent residence were weakly associated with onward transmission, and further adjusting for these or the other factors in the table did not affect the results.
+
+**Table 3.**
+ Characteristics associated with transmissibility
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Characteristic</th>
+      <th colspan="2">Any Linked/Total</th>
+      <th>Association with links</th>
+      <th rowspan="2">p</th>
+      <th>Adjusted for age, sex, year, lineage, smear status</th>
+      <th rowspan="2">p (lrtest)</th>
+    </tr>
+    <tr>
+      <th>n/N</th>
+      <th>%</th>
+      <th>OR (95% CI)</th>
+      <th>OR (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall</td>
+      <td>431/1346</td>
+      <td>32.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">Lineage</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>59/217</td>
+      <td>27.2</td>
+      <td>0.87 (0.63–1.2)</td>
+      <td></td>
+      <td>0.94 (0.66–1.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>27/61</td>
+      <td>44.3</td>
+      <td>1.7 (1.0–2.7)</td>
+      <td></td>
+      <td>1.9 (1.1–3.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>65/154</td>
+      <td>42.2</td>
+      <td>1.6 (1.2–2.3)</td>
+      <td></td>
+      <td>1.9 (1.4–2.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>280/914</td>
+      <td>30.6</td>
+      <td>1</td>
+      <td>0.006</td>
+      <td>1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">Age</td>
+    </tr>
+    <tr>
+      <td>&lt;20</td>
+      <td>20/50</td>
+      <td>40.0</td>
+      <td>2.3 (1.2–4.4)</td>
+      <td></td>
+      <td>1.9 (0.98–3.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>20–29</td>
+      <td>134/349</td>
+      <td>38.4</td>
+      <td>2.3 (1.5–3.3)</td>
+      <td></td>
+      <td>2.2 (1.5–3.3)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30–39</td>
+      <td>159/490</td>
+      <td>32.5</td>
+      <td>1.7 (1.2–2.5)</td>
+      <td></td>
+      <td>2.0 (1.3–2.9)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>40–49</td>
+      <td>71/238</td>
+      <td>29.8</td>
+      <td>1.6 (1.0–2.4)</td>
+      <td></td>
+      <td>1.7 (1.1–2.7)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50+</td>
+      <td>47/219</td>
+      <td>21.5</td>
+      <td>1</td>
+      <td>&lt;0.001</td>
+      <td>1</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td colspan="7">Sex</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>239/718</td>
+      <td>33.3</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>192/628</td>
+      <td>30.6</td>
+      <td>0.87 (0.69–1.1)</td>
+      <td>0.2</td>
+      <td>0.93 (0.73–1.2)</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td colspan="7">Year</td>
+    </tr>
+    <tr>
+      <td>1995–1998</td>
+      <td>159/314</td>
+      <td>50.6</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1999–2001</td>
+      <td>119/345</td>
+      <td>34.5</td>
+      <td>0.49 (0.36–0.66)</td>
+      <td></td>
+      <td>0.42 (0.31–0.58)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2002–2004</td>
+      <td>95/389</td>
+      <td>24.4</td>
+      <td>0.30 (0.22–0.41)</td>
+      <td></td>
+      <td>0.27 (0.19–0.37)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2005–2007</td>
+      <td>58/298</td>
+      <td>19.5</td>
+      <td>0.22 (0.16–0.32)</td>
+      <td>&lt;0.001</td>
+      <td>0.20 (0.14–0.29)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">TB type</td>
+    </tr>
+    <tr>
+      <td>Smear pos pulm</td>
+      <td>338/1003</td>
+      <td>33.7</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Smear neg pulm</td>
+      <td>93/343</td>
+      <td>27.1</td>
+      <td>0.72 (0.55–0.94)</td>
+      <td>0.01</td>
+      <td>0.73 (0.55–0.96)</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">HIV status</td>
+    </tr>
+    <tr>
+      <td>HIV−</td>
+      <td>91/318</td>
+      <td>28.6</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV+ no ART</td>
+      <td>170/540</td>
+      <td>31.5</td>
+      <td>1.1 (0.83–1.5)</td>
+      <td></td>
+      <td>1.1 (0.81–1.6)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV+ on ART</td>
+      <td>11/48</td>
+      <td>22.9</td>
+      <td>0.70 (0.35–1.4)</td>
+      <td>0.3</td>
+      <td>1.4 (0.62–3.1)</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td colspan="7">Previous TB</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>391/1200</td>
+      <td>32.6</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>40/146</td>
+      <td>27.4</td>
+      <td>0.77 (0.53–1.1)</td>
+      <td>0.2</td>
+      <td>0.85 (0.58–1.3)</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td colspan="7">INH resistance</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>402/1237</td>
+      <td>32.5</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>29/100</td>
+      <td>29.0</td>
+      <td>0.86 (0.55–1.3)</td>
+      <td>0.5</td>
+      <td>0.86 (0.54–1.4)</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td colspan="7">Recent residence</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>284/942</td>
+      <td>30.2</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other Malawi</td>
+      <td>80/234</td>
+      <td>34.2</td>
+      <td>1.2 (0.89–1.6)</td>
+      <td></td>
+      <td>1.0 (0.74–1.4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>20/74</td>
+      <td>27.0</td>
+      <td>0.88(0.52–1.5)</td>
+      <td>0.4</td>
+      <td>0.57 (0.33–0.98)</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td colspan="7">Birth place</td>
+    </tr>
+    <tr>
+      <td>Karonga</td>
+      <td>276/811</td>
+      <td>34.0</td>
+      <td>1</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other Malawi</td>
+      <td>80/272</td>
+      <td>29.4</td>
+      <td>0.83 (0.62–1.1)</td>
+      <td></td>
+      <td>0.82 (0.60–1.1)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other country</td>
+      <td>64/234</td>
+      <td>27.4</td>
+      <td>0.77 (0.56–1.1)</td>
+      <td>0.2</td>
+      <td>0.71 (0.51–0.99)</td>
+      <td>0.08</td>
+    </tr>
+  </tbody>
+</table>
+
+_The numbers of likely transmissions (‘forward links’) were compared by individual characteristics using ordered logistic regression. Extrapulmonary cases and cases occurring after 2007 were excluded._
 
 Comparing those with any transmissions vs those with none in a logistic regression model gave very similar results (not shown). Restricting the links to those within 3 years of the index episode, there was still a strong trend with year: the odds ratios from the ordered logistic regression analysis, adjusted for lineage, age, sex, and smear status, for the year groups 1999–2001, 2002–2004 and 2005–2007, compared to 1995–1998, were 0.47 (95% CI 0.33–0.66), 0.35 (0.25–0.50), and 0.37 (0.25–0.54), respectively.
 
@@ -131,17 +1129,17 @@ This large, long-term study provides strong evidence for differences in transmis
 
 ## Materials and methods
 
-## Patients
+### Patients
 
 In Karonga District, northern Malawi (population approximately 300,000), project staff at the hospital and peripheral health centres identify individuals with suspected tuberculosis (Crampin et al., 2009), and sputum and other specimens are taken. All diagnosed tuberculosis patients are interviewed, and HIV-tested, after counselling and if consent is given. The incidence of new smear-positive tuberculosis in adults in the district has fallen from 124/100000/year to 87/100000/year over the period of this study, with about 6% isoniazid resistance and <1% multidrug resistance (Mboma et al., 2013). Adult HIV prevalence in the area is around 10%.
 
 Approval for the study was given by the ethics committee of the London School of Hygiene & Tropical Medicine (#5067) and the Malawian National Health Sciences Research Committee (#424). Informed consent was obtained from all participants.
 
-## Cultures and sequencing
+### Cultures and sequencing
 
 Culture is performed in the project laboratories in Malawi, with species identification and drug susceptibility testing in the UK Mycobacterium Reference Laboratory (Mboma et al., 2013). RFLP was performed on cultures from all patients from late 1995–2008 (Glynn et al., 2005b). We processed all available stored DNA samples or cultures from 1995 to 2010 for whole genome sequencing at the Sanger Institute, using Illumina HiSeq 2000, paired-end reads of length 100 base-pairs.
 
-## Read quality filtering
+### Read quality filtering
 
 We used trimmomatic software (http://www.usadellab.org/cms/?page=trimmomatic) to remove low-quality reads and low-quality 3′ ends of reads, keeping only reads ≥50 base-pairs long, with nucleotides >Q27 (equivalent to a risk of error of <0.2% per read per base-pair).
 
@@ -153,7 +1151,7 @@ In the final analysis, 94% of the M. tuberculosis genome was analysed for varian
 
 We calculated SNP distances between sequences using the ape library in the R statistical package (http://cran.r-project.org/). We computed a maximum-likelihood phylogenetic tree including all samples, using RAxML, using the GTRCAT model.
 
-## Transmission mapping
+### Transmission mapping
 
 For the transmission network, we used the SeqTrack package in R (Jombart et al., 2011), using one sample per person-episode of disease, excluding episodes of extrapulmonary tuberculosis (as these cannot transmit). This builds a minimum-spanning tree, minimizing the genomic distance between links and keeping the disease onset dates coherent. Based on our data, we allowed up to 10 SNPs difference for inclusion in the networks. The suitability of the cut-off was assessed by examination of the SNP differences within and between patients. We have previously shown in 92 patients in this data set with repeat samples from the same or different episodes of disease that, using the same pipeline, there is a clear bimodal distribution, with pairs of samples either having up to 8 SNPs between them or more than 100 SNPs (Guerra-Assuncao et al., 2014). Furthermore, among 187 pairs of individuals with epidemiological links, 62 had ≤10 SNPs, 9 had 10–99 SNPs, and 116 had ≥100 SNPs.
 
@@ -163,16 +1161,16 @@ We compared the size of the clusters by lineage. Among the likely transmissions 
 
 For the analyses of risk factors for disease due to recently acquired infection and for transmissibility, we classified links with 6–10 SNPs different as uncertain unless the mutation rate was <0.003 SNPs/day, to allow for larger changes over long time periods. Those patients with uncertain links were excluded from the risk factor analyses.
 
-## Disease due to recently acquired infection
+### Disease due to recently acquired infection
 
 The SeqTrack network shows the most likely source of infection for each case. For groups of cases with zero SNPs between them the one closest in date was chosen. A case was defined as due to recently acquired infection if the most likely source was within 5 years, and not due to recent infection if there was no source identified or if the source was earlier than this (even if there were other closely related strains within 5 years).
 
 In this analysis of ‘backwards’ links, we used the first 3 years of data only for identifying previous links. We examined risk factors for disease due to recent infection among individuals with their first episode of tuberculosis, using logistic regression. The multivariable analysis included lineage, age, sex, and year a priori, and other factors if they were associated with recent infection after adjustment for these, or if they confounded other variables.
 
-## Transmissibility
+### Transmissibility
 
 The SeqTrack network links can also be used to examine forward transmission that results in disease. In this analysis, we used the last 3 years of data only to identify transmissions that had taken place, to allow time for transmissions causing new cases. We used ordered logistic regression to assess risk factors for transmission and the number of transmissions. In the multivariable analysis, we adjusted for lineage, age, sex, year, and sputum smear status of the index case a priori, and assessed confounding by other factors. We repeated the analysis using logistic regression, comparing any transmissions vs none. Since those in later years had less time for transmission to be detected, we examined the effect of calendar period using transmission within 3 years of the index case.
 
-## Repositories for data and software
+### Repositories for data and software
 
 Software sources for in-house programs will be made available on sourceforge.net (http://sourceforge.net/projects/patogenico/). Raw data can be obtained from the European Nucleotide Archive at EMBL-EBI (project accessions: ERP000436 and ERP001072).

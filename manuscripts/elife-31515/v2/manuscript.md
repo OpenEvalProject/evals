@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.31515.001 Development of specialized cells and structures in the heart is regulated by spatially -restricted molecular pathways. Disruptions in these pathways can cause severe congenital cardiac malformations or functional defects. To better understand these pathways and how they regulate cardiac development we used tomo-seq, combining high-throughput RNA-sequencing with tissue-sectioning, to establish a genome-wide expression dataset with high spatial resolution for the developing zebrafish heart. Analysis of the dataset revealed over 1100 genes differentially expressed in sub-compartments. Pacemaker cells in the sinoatrial region induce heart contractions, but little is known about the mechanisms underlying their development. Using our transcriptome map, we identified spatially restricted Wnt/β-catenin signaling activity in pacemaker cells, which was controlled by Islet-1 activity. Moreover, Wnt/β-catenin signaling controls heart rate by regulating pacemaker cellular response to parasympathetic stimuli. Thus, this high-resolution transcriptome map incorporating all cell types in the embryonic heart can expose spatially restricted molecular pathways critical for specific cardiac functions.
+Development of specialized cells and structures in the heart is regulated by spatially -restricted molecular pathways. Disruptions in these pathways can cause severe congenital cardiac malformations or functional defects. To better understand these pathways and how they regulate cardiac development we used tomo-seq, combining high-throughput RNA-sequencing with tissue-sectioning, to establish a genome-wide expression dataset with high spatial resolution for the developing zebrafish heart. Analysis of the dataset revealed over 1100 genes differentially expressed in sub-compartments. Pacemaker cells in the sinoatrial region induce heart contractions, but little is known about the mechanisms underlying their development. Using our transcriptome map, we identified spatially restricted Wnt/β-catenin signaling activity in pacemaker cells, which was controlled by Islet-1 activity. Moreover, Wnt/β-catenin signaling controls heart rate by regulating pacemaker cellular response to parasympathetic stimuli. Thus, this high-resolution transcriptome map incorporating all cell types in the embryonic heart can expose spatially restricted molecular pathways critical for specific cardiac functions.
 
 ## Introduction
 
@@ -31,9 +31,17 @@ Here, we used one of these techniques, tomo-seq, to obtain the first genome-wide
 
 ## Results
 
-## A genome-wide transcriptome dataset with high spatial resolution of the developing zebrafish heart
+### A genome-wide transcriptome dataset with high spatial resolution of the developing zebrafish heart
 
 At 2 days post-fertilization (2 dpf), the zebrafish heart has developed into a looped structure with a recognizable atrium and ventricle that is able to sustain blood circulation in the larvae. At this stage, functional Isl+ pacemaker cells are located in the sinoatrial region (Arrenberg et al., 2010; Tessadori et al., 2012). To obtain a transcriptome map of the developing heart at that stage with spatial resolution, we applied the tomo-seq method on dissected hearts from 2-day-old zebrafish embryos (Figure 1A). We generated independent datasets from three wild-type hearts. We chose the most robust dataset (heart#1; for details see Materials and methods section) for further analysis and validation. In short, the isolated cryo-preserved hearts were sectioned into forty 10 µm sections along the anterior-posterior axis. Total RNA was isolated from each section, barcoded and processed for mRNA-sequencing (Hashimshony et al., 2016). We obtained a gene expression dataset with expression information for ~13,000 genes (Figure 1—figure supplement 1 and Figure 1—source data 1). To assess global transcriptome patterns in the dataset, we implemented Pearson’s correlation analysis, a pairwise measurement of linear correlation per section across the total transcriptome. Several blocks of continuous sections with high positive correlation of overall gene expression were observed (Figure 1B). This indicates that specific molecular profiles based on explicit gene expression patterns subdivide the embryonic heart at this stage. In order to identify such gene clusters and elucidate underlying gene expression patterns, we performed a hierarchical clustering analysis. Robustly expressed genes (z-score >1.2, in three or more consecutive sections) were clustered according to their expression peak within the dataset. The cluster plot confirmed the presence of four large gene clusters with region-specific expression, which likely corresponded to the outflow tract, ventricle, AV canal and atrium based on the genes present within these clusters (Figure 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hearts were isolated from 2-day-old embryos and 10 μm sections were made along the anterior-posterior axis, from outflow to inflow pole. Each section was collected in an individual tube followed by RNA isolation and cDNA transcription using section specific barcodes. After that, samples were pooled for linear amplification and sequence library preparation. (B) Pairwise correlation between individual sections across all genes detected at more than 20 reads in at least two sections. + 1 equals total positive correlation, 0 no correlation, −1 total negative correlation. Blocks of correlating sections can be observed. (C) Hierarchical cluster analysis of gene expression per section. Distinct gene expression clusters correspond to different regions of the heart shown in boxed areas: 1. arterial pole/OFT; 2. Ventricle; 3. AV canal; 4. Atrium. RNA sequencing reads per gene were normalized against the total read count per section as well as the total spike-in control RNA read counts. Genes expressed in min three sections z-value >1.25. See also Figure 1—figure supplement 1 and Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Total raw RNA-seq reads of the 2 dpf heart sample. Plotted are the total reads per 10 μm section. Sections #2 - #41 contained the tissue sample. (B) Total spike-in reads plotted per section. Spike-in expression per section was used for data normalization. (C) Basic statistics of RNA-seq results.
 
 To validate the presence of the above mentioned four cardiac sub-compartments and to identify the SA region where pacemaker cells reside in the tomo-seq data, we analyzed the expression of well-known cardiac genes. The total number of reads for a gene of interest was plotted against the consecutive section numbers and compared to its localized expression detected by whole mount in situ hybridization. Expression of myosin light chain 7 (myl7) defining the boundaries of the myocardial tissue (Figure 2A), indicated that all sections with exception of the first ten, were derived from myocardial tissue. The first 10 sections most likely contained the non-myocardial arterial pole. Natriuretic peptide a (nppa) expression is restricted to the working myocardium of the ventricle and atrium and was absent from the non-working myocardium of the outflow tract, AV canal and SA region (Figure 2B). Together with the ventricle-specific expression of ventricle myosin heavy chain (vmhc) (Figure 2C) and atrial-specific myosin heavy chain 6 (myh6) (Figure 2D) we concluded that the ventricle and the atrium were well separated in the tomo-seq data. To address whether genes that are expressed in the endocardial cushions, which give rise to the cardiac valves located in the outflow tract and in the AV canal, are present in the tomo-seq data, we analyzed the expression of hyaluronan synthase 2 (has2) (Figure 2E). Indeed, has2 was detected in the sections assigned to the outflow tract and the AV canal. The non-working myocardium of the AV canal can be distinguished by the expression of bone morphogenetic protein 4 (bmp4) and T-box protein 2b (tbx2b). Both genes showed a peak expression around section 25, indicating the position of the AV myocardium (Figure 2F and G). Importantly, bmp4 is also expressed in the SA region (Figure 2F). In the tomo-seq data, a clear expression peak was detected around section 34 (Figure 2F), indicating the position of the SA region in the tomo-seq data. We superimposed the expression data of the known marker genes to identify the position of the cardiac sub-compartments in the tomo-seq data (Figure 3). We directly compared the superimposed expression data with the previously identified gene clusters and concluded that positions of cardiac sub-compartments correlated well with the identified gene clusters. The SA region was only identified by the marker gene expression and not by the gene cluster analysis, most likely due to its small size in combination with the threshold settings of the gene cluster analysis.
 
@@ -47,9 +55,17 @@ To validate the presence of the above mentioned four cardiac sub-compartments an
 
 In conclusion, we have generated a genome-wide transcriptome dataset with high spatial resolution. Furthermore, the dataset reveals sub-compartments in the heart with distinct expression profiles.
 
-## Identification of differentially expressed genes
+### Identification of differentially expressed genes
 
 To identify molecular pathways that may be regulating development of the cardiac sub-compartments, we analyzed the sub-compartment-specific transcriptomes in more detail. The boundaries of the sub-compartments were set based on the gene cluster analysis and the mRNA-seq reads for known marker genes (Figure 3). All genes were ranked according to the specificity of their expression level in the region of interest when compared with the rest of the dataset. With this approach, we identified a total of 1143 genes for which their expression was upregulated in one of the selected cardiac sub-compartments (ventricle, atrium, AV canal and sinoatrial region) (log2 FC >2 and p<0.05) (Figure 4A–C and Figure 4—source data 1). This list of differentially expressed genes contained several genes for which the sub-compartment expression has been well described, such as myh6 (atrium), vmhc and vmhcl (ventricle), spp1 (AV valves), and isl1, bmp4 and shox2 (sinoatrial region). Besides these few known sub-compartment-specific marker genes, we identified many additional differentially expressed genes (99 genes for the atrium, 196 genes for the ventricle, 346 genes for the AV canal and 502 genes for the sinoatrial region). To validate the significance of the identified sub-compartment-specific gene-expression profiles in the tomo-seq data, we performed in situ hybridization for selected genes. Using this approach, the sub-compartment-specific gene expression profiles deduced from the tomo-seq data correlated well with the expression patterns obtained by in situ hybridizations (Figure 4D–F and Figure 4—figure supplement 1A–B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Volcano plots highlighting genes differentially expressed in the (A) atrium (n = 99) and ventricle (n = 196), (B) AV canal (n = 346) and (C) sinoatrial region (n = 502). Grey and red dots represent individual genes. Green lines indicate threshold of log2 fold change >2. Blue lines indicate threshold of p-value<0,05. (D–F) Expression traces and in situ hybridization analysis for representative example genes (gene names underlined in volcano plots) significantly upregulated in (D) atrium (smtnl1) and ventricle (mb), (E) AV canal (anxa5b and pdgfaa) and in the sinoatrial region (shox2 and fzd9b). Smoothening (LOESS) was applied to graphs D and E, span α = 0.2. Gray dashed line outlines the heart. White dashed line outlines the eyes. Anterior up. Scale bars represent 50 μm. See also Figure 4—figure supplement 1 and Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Additional gene expression plot and ISH analysis for representative example genes significantly upregulated in the ventricle (hspb11, rcan1a, csrp3) and atrium (apcdd1l, lmod2a). Gray dashed line: location of the heart. White dashed line outlines the eyes. Anterior to the top. (C–E) GO term enrichment for genes significantly enriched in the ventricle (C), atrium (D) and pacemaker domain (E). Smoothening (LOESS) was applied to graphs A and B, span α = 0.2. p-value<0.05. Scale bars represent 50 μm.
 
 We identified 99 genes with upregulated expression in the atrium and 196 genes with upregulated expression in the ventricle (Figure 4A). Gene ontology analysis revealed enrichment in oxygen transport and tricarboxylic acid cycle genes in the ventricle, suggesting that already in the 2-day-old ventricle metabolism is converting to aerobic oxidative phosphorylation to fulfill higher energy demands (Figure 4—figure supplement 1C). Furthermore, several genes related to cardiac myopathies were found amongst the ventricle specific genes (e.g. csrp3, rcan1a (Figure 4—figure supplement 1A), tnnc2, myo1c and actn1), indicating the value of the dataset for identifying potential disease-causing genes.
 
@@ -59,15 +75,39 @@ The sinoatrial region contains the pacemaker and proepicardial cells. The majori
 
 In conclusion, the tomo-seq dataset reveals cardiac sub-compartment-specific transcriptomes and has the potential to identify novel pathways that regulate the development or function of specific domains and structures within the heart.
 
-## Wnt/β-catenin signaling activity in pacemaker cells
+### Wnt/β-catenin signaling activity in pacemaker cells
 
 Since there is very little known about the regulation of pacemaker development, we focused our attention on the transcriptome of the sinoatrial region. As mentioned above, several genes that encode for Wnt signaling pathway components were enriched in the sinoatrial region. Wnt ligands bind to Frizzled (Fzd) receptors to activate intracellular β-catenin signaling, which plays multiple roles during cardiac development (reviewed in [Gessert and Kühl, 2010]). Depending on the developmental stage, Wnt/β-catenin signaling has either positive or negative effects on cardiomyocyte differentiation (Tzahor, 2007; Gessert and Kühl, 2010; Ueno et al., 2007). In addition, Wnt/β-catenin signaling in the atrioventricular (AV) canal induces the formation of endocardial cushions, giving rise to the AV valves, and the electrophysiological properties of the AV canal myocardium by slowing down electrical conductivity (Hurlstone et al., 2003; Verhoeven et al., 2011; Gillers et al., 2015). Even though Wnt/β-catenin signaling has been studied extensively in the heart, a role in pacemaker development has not been reported.
 
 Expression of the Wnt receptor fzd9b was detected in sections 33–39 and whole mount in situ hybridization confirmed its expression in the sinoatrial region (Figure 4F). In addition, expression of the Wnt inhibitor apcdd1l was observed in the atrium, but its expression was absent from sections 33 to 39, defining the sinoatrial region (Figure 4—figure supplement 1B). From these results, we hypothesized that Wnt signaling is locally activated in the sinoatrial region. To test this further, we analyzed a Wnt-reporter line containing a transgene with 7 repeats of a TCF-binding site upstream of mCherry (Moro et al., 2012). To identify the Isl1+ pacemaker cells, we made use of a transgenic tg(Isl1:GFF;UAS:GFP) line, further referred to as Isl1:GFP. Corroborating the hypothesis that Wnt/β-catenin signaling is activated in the sinoatrial junction, we observed cells that co-expressed both the TCF:mCherry reporter as well as the Isl1:GFP reporter in the sinoatrial region (Figure 5A–D’). In addition, TCF-mCherry-positive cells were also located in the AV canal, a cardiac sub-domain in which Wnt-signaling plays a known role (Gillers et al., 2015; Hurlstone et al., 2003; Verhoeven et al., 2011) (Figure 5C). Thus, Wnt-signaling is activated in the Isl1+ cardiac pacemaker cells. In both zebrafish and mouse embryos lacking functional Isl1, a progressive failure of pacemaker function leads to severe bradycardia and arrhythmia (de Pater et al., 2009; Tessadori et al., 2012; Liang et al., 2015). Isl1-GFP+ cells were still present in the sinoatrial region of isl1 mutants (Figure 5A–B’ and E–F’), suggesting that pacemaker cell specification still occurs in the absence of Isl1, but that these cells fail to differentiate into functional pacemaker cells. To determine whether Wnt-signaling requires Isl1, we also crossed the TCF-Cherry reporter into the isl1 mutants. Interestingly, Wnt/β-catenin activity was lost specifically in the Isl1-GFP+ cells of the isl1 mutant embryos, while it was still detectable in the AV canal (Figure 5C,C’, G and G’). These results reveal that in developing pacemaker cells active Wnt/β-catenin signaling depends on Isl1 activity.
 
-## Myocardial loss of Wnt/β-catenin signaling affects autonomic control of heart rate
+![Figure 5.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig5-v2.jpg)
+
+**Figure 5.:** 3D reconstructions of confocal scans from whole mount embryos containing the tg(7xTCFXla.Siam:nlsmCherry) (reporting Wnt/β-catenin activity in red) and the tg(Isl1:GFF;UAS:GFP) (reporting isl1 expression and marking pacemaker cells in green) and stained for tropomyosin (myocardium in white). Anterior is up and posterior is down. Wild-type sibling (A-D’) and isl1K88X mutant (E-H’) embryos at 3 dpf. The blue dashed line boxes in A-D and E-H indicate the sinoatrial region shown enlarged in A’-D’ and E’-H’, respectively. In wild-type hearts, Isl+ pacemaker cells (blue arrowheads) co-expressed TCF-mCherry. In isl1-/- mutants, no TCF-mCherry expression was observed in the Isl1+ pacemaker cells (blue arrowheads). TCF-mCherry expression was also detected in the AV canal of wild type (D) and isl1-/- mutants (H) (arrows). Scale bars represent 50 μm. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) RNA expression plots of Wnt-signaling components expressed in the pacemaker domain (dark red). Superimposed expression profiles of ventricular marker gene vmhc (light blue) and atrial marker gene myh6 (light green) outline the position of the two chambers. Smoothening (LOESS) was applied to vmhc and myh6 graphs, span α = 0.3. SA, sinoatrial region.
+
+### Myocardial loss of Wnt/β-catenin signaling affects autonomic control of heart rate
 
 To assess the role of canonical Wnt signaling in pacemaker cells, we used a previously reported TetON system, in which Wnt/β-catenin signaling can be inhibited by the inducible and tissue-specific overexpression of its endogenous inhibitor Axin1 (Knopf et al., 2010). Overexpression of Axin1 stabilizes the β-catenin destruction complex, resulting in the inhibition of canonical Wnt signaling (Nakamura et al., 1998). Since cardiac specification and differentiation is regulated by Wnt/ β-catenin signaling at various stages during development (Ueno et al., 2007), it was important to block Wnt/β-catenin in a tissue-specific and temporally controlled manner. In the TetON system, Axin1 overexpression can be driven by the myocardial myl7 gene promoter to restrict expression to the myocardium (Knopf et al., 2010). Since pacemaker cells also express the myl7 gene, we reasoned that the TetON system could be used to inhibit Wnt signaling in the myocardium including the pacemaker cells without affecting embryo development in general. As a functional read-out for pacemaker function, we analyzed heart rates of control and Axin1 overexpressing embryos by high-speed video imaging and image analysis at 3 dpf (Figure 6A). Surprisingly and in contrast to the decreased heart rates observed in isl1-/- mutants (Tessadori et al., 2012; de Pater et al., 2009), inhibiting Wnt/β-catenin signaling by induction of Axin1 expression in the myocardium significantly increased cardiac contraction rates at 3 dpf (Figure 6B,C). Despite the 10–15% increase in heart rate, the beating pattern was still regular (see Figure 6—video 1 and Figure 6—video 2, and Figure 6—figure supplement 1). To determine at which point in development active Wnt signaling is required to regulate heart rate, we induced Axin1 expression at different time points and measured the effect on heart rate at 3 dpf. Only Axin1 overexpression specifically between 36 hpf and 52 hpf, when the TCF:mCherry reported active Wnt signaling in the pacemaker cells, significantly increased heart rate (Figure 6D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental timeline. Embryos with the ubiquitous tg(TETRE:Mmu.Axin1-YFP)tud1 and cardiomyocyte-specific tg(myl7:TETAM2-2A-mCherry)ulm8 transgenes were incubated with doxycycline (25 μg/mL) plus dexamethasone (100 μM) to induce cardiomyocyte specific Axin1-YFP expression. Axin1-YFP was induced at different time points and the heart rate was measured at 3 dpf by high-speed video imaging and image analysis. (B) Atrial and corresponding ventricular kymographs from a representative mCherry-/YFP- sibling control and an embryo with Axin1-YFP overexpression (Axin1+). Note the shorter period per full heartbeat (indicated by white dotted lines) in the Axin1 expressing embryo. Movies are available as Figure 6—videos 1 and 2, respectively. (C) Result of heart rate analysis (ventricle and atrium) on sibling and Axin1+ embryos, showing a significant increase in heart rate in Axin1+ embryos. (D) Relative changes in heart rate measured at 3 dpf after induction of Axin1 expression at various time points. ∆heart rate was calculated by using the heart rates measured in the Axin1+ group and the control group using the following formula: (Axin1-YFP+ - mCherry-/YFP-) / (mCherry-/YFP-) x 100%. Induction of Axin1-YFP expression between 32 hpf and 56 hpf resulted in increased heart rates at 3 dpf. See also Figure 6—videos 1 and 2. n(control/Axin1+) 9/6 (12som); 20/15 (24hpf); 10/7 (28hpf); 18/16 (32hpf); 10/8 (36hpf); 30/21 (48hpf); 37/28 (52hpf); 27/23 (56hpf); 30/29 (72hpf). Column bar graph plotting mean with SEM. Atrial (green) and ventricular (blue) analysis (E–F) Heart rates at 3 dpf of control (mCherry-/YFP-) or Axin1-YFP+ embryos at baseline or after treatment with the parasympathetic agonist carbachol or the sympathetic agonist isoproterenol. Atrial (E) and ventricular (F) measurements. (left n = 27 (control), 26 (Axin+); right n = 20 (control), 14 (Axin+)) (G) Proposed model for Isl1/Wnt function in cardiac pacemaker cells. Isl1 is a central factor in pacemaker cell development. Isl1 expression is restricted to pacemaker cells in which it is required to establish the rhythmic cycle of membrane depolarizations and heart contractions and the activation of Wnt/β-catenin signaling. Wnt/β-catenin signaling is required to establish M2 cholinergic receptor signaling, which allows parasympathetic signals (e.g. acetylcholine) to adjust the rate of rhythmic membrane depolarizations and heart contractions. βAR, β-Adrenergic Receptor. Statistical significance (unpaired (D) and paired (E–F) t-test) *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. See also Figure 6—source data 1, Figure 6—figure supplement 1, Figure 6—figure supplement 2, Figure 6—figure supplement 3, Figure 6—video 1 and Figure 6—video 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Heart rate variability (HRV) in control and Axin1 overexpression embryos (n = 5 for each condition). Standard deviation of NN intervals (SDNN) between heart beats was measured on atrial and ventricular kymographs over a period of 10 s. Wild-type siblings in gray, Axin1+ embryos in orange. HRV in Axin1+ embryos is decreased. Statistical significance (unpaired t-test) *p<0.05; **p<0.01. See also Figure 6—figure supplement 1—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Confocal scans from whole mount embryos containing the tg(myl7-DsRed) (marking all cardiomyocytes) and the tg(Isl1:GFF;UAS:GFP) (reporting isl1 expression and marking pacemaker cells in green) and stained for acetylated tubulin (marking acetylated microtubules found in neurons and axons). Anterior is up and posterior is down. 3D reconstruction (A–D) and cross-sections (E–M). The skin immediately ventral to the heart is covered in axons. The Isl1-GFP-positive pacemaker cells (arrowhead) at the sinoatrial junction are not in direct contact with the acTubulin+ axons.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/31515/elife-31515-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–B) In situ hybridization for the muscarinic 2a cholinergic receptor (chrm2a) in wild-type embryos at 55 hpf (A) and 72hpf (B). (C) ISH for chrm2a at 72 hpf in Axin1-YFP+ embryo (Wnt inhibition started at 52 hpf). Arrowheads indicate expression at the venous pole. Gray dashed line: location of the heart; white dashed line: location of the eyes. Anterior up. Scale bars represent 50 μm.
 
 The autonomic nervous system controls heart rate by influencing the activity of the ion channels on the surface membrane through G-protein coupled β-adrenergic and cholinergic receptors (Gordan et al., 2015). These receptors are expressed in the Isl1+ pacemaker cells (Stoyek et al., 2016) and can be stimulated by isoproterenol and carbachol respectively. We have previously observed similarly high heart rates in zebrafish embryos treated with isoproterenol (Lodder et al., 2016), suggesting that the observed increase in heart rate could be related to impaired autonomic control. To address this, we first induced Axin1 overexpression, followed by incubation of the embryos with either carbachol, a parasympathetic agonist, or isoproterenol, a sympathetic agonist (Hsieh and Liao, 2002; Dlugos and Rabin, 2010). While control embryos showed a significant reduction in heart rate after addition of carbachol, the reduction in heart rate was abolished in Axin1 overexpressing embryos (Figure 6E–F). Despite their already high heart rate, the Axin1-overexpressing embryos still responded to isoproterenol by increasing their heart rate further (Figure 6E–F). This resulted in extreme heart rates of up to 266 bpm in some of the embryos with ectopic Axin1 expression and incubated with isoproterenol. Together, these results indicate that Wnt/β-catenin signaling in the heart regulates the parasympathetic, but not the sympathetic control of heart rate. At the examined embryonic stage, the heart still lacks any direct innervation by the nervous system (Figure 6—figure supplement 2). However, muscarinic cholinergic receptor 2a (chrm2a) encoding for the muscarinic M2 receptor responsible for parasympathetic regulation of the heart rate is expressed in the sinoatrial region of the adult zebrafish heart (Stoyek et al., 2016) as well as the embryonic heart (Steele et al., 2009; Thisse et al., 2004). At 2 and 3 dpf, chrm2a was expressed in the sinoatrial region of the heart (Figure 6—figure supplement 3A,B). Overexpression of Axin1 resulted in a slight reduction in the expression of chrm2a (Figure 6—figure supplement 3C), indicating that Wnt/β-catenin can work at the level of the M2 receptor.
 
@@ -85,23 +125,250 @@ In summary, the spatially resolved transcriptome map of the embryonic heart pro
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>mb</td>
+      <td>NA</td>
+      <td>ZDB-GENE-040426–1430</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>smtnl1</td>
+      <td>NA</td>
+      <td>ZDB-GENE-050306–23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>anxa5b</td>
+      <td>NA</td>
+      <td>ZDB-GENE-030131–9076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>pdgfaa</td>
+      <td>NA</td>
+      <td>ZDB-GENE-030918–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>fzd9b</td>
+      <td>NA</td>
+      <td>ZDB-GENE-000906–4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. rerio)</td>
+      <td>shox2</td>
+      <td>NA</td>
+      <td>ZDB-GENE-040426–1457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Tupfel long fin (TL)</td>
+      <td>ZIRC,Eugene, OR</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(UAS:GFP)</td>
+      <td>Kawakami lab Asakawa 2008</td>
+      <td>ZDB-FISH-150901–15231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(Isl1:GFF;UAS:GFP)hu10018tg</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Material and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(7xTCFXla.Siam:nlsmCherry)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>The tg(7xTCF-nlsmCherry) wnt-signaling reporter line was established in a TL wildtype background using the pDEST-7xTCF-nlsmCHERRY-polyA construct (Moro et al., 2012) received from the Smith lab (IMB, Brisbane, Australia).</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>isl1 mutant line. isl1sa29</td>
+      <td>ZIRC, Eugene, OR</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(myl7:EGFP): twu26tg</td>
+      <td>ZIRC, Eugene, OR</td>
+      <td>ZDB-FISH-150901–23018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(TETRE:Mmu.Axin1-YFP)tud1: tud1Tg</td>
+      <td>ZIRC, Eugene, OR, Gilbert Weidinger, Knopf 2012</td>
+      <td>ZDB-FISH-150901–26117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(myl7:TETAM2-2A-mCherry)ulm8: ulm8Tg</td>
+      <td>ZIRC, Eugene, OR, Gilbert Weidinger, Knopf 2013</td>
+      <td>ZDB-ALT-151214–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken Antibodies, IgY Fraction)</td>
+      <td>Aves Labs, Tigard, OR</td>
+      <td>Cat# GFP-1010; RRID: AB_2307313</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Living Colors DsRed Polyclonal Antibody</td>
+      <td>Clontech,Mountain View, CA</td>
+      <td>Cat# 632496; RRID: AB_10013483</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-Acetylated Tubulin antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T7451; RRID: AB_609894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-Tropomyosin (Sarcomeric) antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T9283; RRID: AB_261817</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BAC clone CH211-219F7</td>
+      <td>BACPAC Resources Center (BPRC), Oakland, CA</td>
+      <td>ZDB-BAC-050218–781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST-7xTCF-nlsmCHERRY-polyA</td>
+      <td>Moro et al. (2012) provided by Kelly Smith</td>
+      <td>ZDB-TGCONSTRCT-110113–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq small RNA sample prep Kit</td>
+      <td>Illumina, San Diego, CA</td>
+      <td>RS-200–0012 or −0024,–0036, −0048</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MessageAmpII Kit</td>
+      <td>Ambion, Foster City, CA</td>
+      <td>AM1751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891; CAS:24390-14-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Sigma-Aldrich</td>
+      <td>D1756 CAS:50-02-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoprenaline hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>I5627; CAS:51-30-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbamoylcholine chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4382; CAS:51-83-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td></td>
+      <td>https://www.rstudio.com/ RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris data visualization software</td>
+      <td>Bitplane, Zürich, Switzerland</td>
+      <td>http://www.bitplane.com/imaris/imaris RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HoKaWo Image acquisition module</td>
+      <td>Hamamatsu, Shizuoka, Japan</td>
+      <td>https://www.hamamatsu.com/eu/en/product/alpha/I/5006/U9304/index.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Resource website with the complete 2dpf heart dataset</td>
+      <td>This paper</td>
+      <td>http://zebrafish.genomes.nl/tomoseq/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for reagents may be directed to, and will be fulfilled by the Lead Contact, Dr. Jeroen Bakkers, j.bakkers@hubrecht.eu.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Zebrafish
+#### Zebrafish
 
 Fish used in this study were kept in standard conditions as previously described (Westerfield, 1995). Tupfel long fin (TL) wildtype, isl1K88X (isl1sa29/sa29) (de Pater et al., 2009) mutant and tg(myl7:EGFP)twu26 (Huang et al., 2003) transgenic zebrafish lines were available from ZIRC, Eugene, OR. The TetON lines, ubiquitously expressed tg(TETRE:Mmu.Axin1-YFP)tud1 and cardiomyocyte-specific tg(myl7:TETAM2-2A-mCherry)ulm8 were received from the Weidinger lab (Ulm University, Germany) and crossed to obtain double transgenic embryos for wnt knockdown experiments. The Islet-1 reporter line tg(Isl1:GFF;UAS:GFP)hu10018tg is an independent allele of a previously published line (Tessadori et al., 2012). Details on the generation of the transgenic line in tg(UAS:GFP) embryos (Asakawa et al., 2008) are given below. The tg(7xTCF-nlsmCherry) wnt-signaling reporter line was established in a TL wild-type background using the pDEST-7xTCF-nlsmCHERRY-polyA construct (Moro et al., 2012) received from the Smith lab (IMB, Brisbane, Australia). All studies involving vertebrate animals were performed with institutional approval in compliance with institutional ethical guidelines.
 
-## Method details
+### Method details
 
-## Tomo-sequencing
+#### Tomo-sequencing
 
 TL wildtype hearts were manually dissected from live 2-day-old zebrafish embryos. The heart tube was quickly transferred to Jung tissue freezing medium (Leica), carefully straightened and frozen on dry ice. The heart samples were cryo-sectioned in anterior to posterior direction with a thickness of 10 μm per section. Total RNA was isolated using Trizol (Ambion, Foster City, CA). An ERCC RNA spike-in mix (Ambion, Foster City, CA) was added for normalization. The sections were processed individually, barcoded and processed for RNA sequencing as previously described in detail (Kruse et al., 2016; Junker et al., 2014). Illumina sequencing libraries were generated and sequenced using the NextSeq platform.
 
-## Data analysis
+#### Data analysis
 
 Independent tomo-seq datasets were established for three wild-type hearts. Based on statistical parameters (total read count, mappability of raw reads, tissue orientation and spatial separation of the two main chambers) and expression peaks for known cardiac genes, the most robust heart sample (heart #1) was chosen for further detailed analysis. All three datasets can be accessed via the tomo-seq website (http://zebrafish.genomes.nl/tomoseq/Burkhard2017/).
 
@@ -111,45 +378,45 @@ Bioinformatical analyses were performed with R software (R Core Team, 2013) usin
 
 For Pearson’s correlation analysis, all genes expressed at >4 reads in >1 section were selected prior to total-read-normalization. Based on the log2-fold-change (zlfc) of the Z score of all genes, correlation was calculated across the transcriptome for each pairwise combination of sections. Hierarchical clustering analysis on the entire dataset (after Z score transformation) was performed on all genes with a peak in >3 consecutive sections (Z score >1.2). Comparative analysis of regional gene expression profiles was done using the EdgeR package (Robinson et al., 2010). Regions of interest were determined by expression of known cardiac marker genes. Genes significantly upregulated in ROI (log2 fold change >2; p-value<0.05) were retrieved from the dataset and used for GO term enrichment analysis using the DAVID functional annotation tool (Huang et al., 2009b; Huang et al., 2009a).
 
-## In-situ hybridization
+#### In-situ hybridization
 
 For in-situ hybridization (ISH) TL wild-type embryos were fixed in 4% PFA-PBS overnight and dehydrated in methanol. ISH on 2-3 dpf embryos was carried out as previously described (Westerfield, 1995).
 
-## Generation of the Islet-1 transgenic line
+#### Generation of the Islet-1 transgenic line
 
 The tg(Isl1:GFFhu10018tg) line was generated essentially as described previously (Tessadori et al., 2012; Bussmann and Schulte-Merker, 2011). An iTOL2_amp cassette for pTarBAC was inserted in the vector sequence of bacterial artificial chromosome (BAC) CH211-219F7, containing the full isl1 locus. An expression cassette containing the GalFF gene (Asakawa et al., 2008) and kanamycin resistance gene was integrated at the ATG site of the 1 st exon of the isl1 gene. Primers used were (in lower case sequence homologous to BAC): isl1_Gal4FF_F 5’-gggccttctgtccggttttaaaagtggacctaacac cgccttactttcttaccATGAAGCTACTGT-CTTCTATCGAAC-3’ and isl1_KanR_R 5’-aaataaacaataaagcttaacttacttttcggtggatcccccatgtctccTCAGAAGAACTCGTC
 
 AAGAAGGCG-3’. Red/ET recombination was done following the manufacturer’s protocol (Gene Bridges) with minor modifications. BAC-DNA isolation was carried out using a Midiprep kit (Life Technologies). 300 ng/µl of BAC-DNA was injected in tg(UAS:GFPnkuasgfp1aTg) embryos (Asakawa et al., 2008) in combination with 25 ng Tol2 mRNA. To establish the stable transgenic line, healthy embryos displaying robust isl1-specific fluorescence were selected and grown to adulthood.
 
-## Immunohistochemistry and image processing
+#### Immunohistochemistry and image processing
 
 3 dpf TL wild-type embryos were fixed in 2% PFA-PBS overnight. Immunohistochemistry was carried out as previously described (de Pater et al., 2009). The primary antibodies used were chicken αGFP (Aves Labs, Tigard, OR, RRID: AB_2307313, 1:500), rabbit αDsRed (Clontech, Mountain View, CA, AB_10013483, 1:200), mouse Anti-Acetylated Tubulin (Sigma-Aldrich (St. Louis, MO), AB_609894) and mouse αTropomyosin (Sigma, AB_261817, 1:200). All immunohistochemistry images are 3D reconstructions of confocal scans. Image processing was done using the Imaris data visualization software (Bitplane, Zürich, Switzerland). For image clarity, non-cardiac expression of the TCF-mCherry reporter line was removed (Figure 5).
 
-## Drug treatments in zebrafish embryos
+#### Drug treatments in zebrafish embryos
 
 Doxycycline (Sigma, D9891) was dissolved in 50% EtOH, kept as a 50 mg/ml stock solution and stored at −20°C in the dark. Dexamethasone (Sigma, D1756) was dissolved in 100% EtOH, kept as a 10 mg/ml stock solution and stored at −20°C in the dark. For induction of the TetON system, we used a final concentration of 25 μg/ml of doxycycline and 100 μM dexamethasone diluted in E3 medium. Embryos were treated in 6 cm dishes with a maximum of 30 embryos and kept at 28°C in the dark during the drug incubation. Efficient induction was confirmed by cardiomyocyte-specific YFP expression immediately prior to the heart rate analysis.
 
 Carbamoylcholine chloride (Carbachol, Sigma, C4382) was dissolved in mQ water at a stock concentration of 50 mM. Isoprenaline hydrochloride (Isoproterenol, Sigma, I5627) was dissolved in mQ water at a stock concentration of 50 mM. Stock solutions were kept at −20°C for up to 1 week. A final concentration of 500 μM Carbachol or 100 μM Isoproterenol was used in 12 ml E3 medium.
 
-## High-speed imaging and analysis
+#### High-speed imaging and analysis
 
 Embryos were mounted in 0.25% agarose (Life Technologies BV) prepared in E3 medium with 16 mg/ml tricaine. Recording of embryonic hearts were performed with a high-speed CCD camera and HoKaWo Image acquisition module (Hamamatsu Photonics) at 150fps on a brightfield microscope (Leica). The temperature was kept at 28.5°C throughout the heart rate measurements using a controlled temperature chamber. Each heart was imaged for 10 s, capturing 30–40 consecutive cardiac cycles. For the carbachol/isoproterenol experiments, embryos were imaged before drug addition and after 30 min drug incubation to calculate relative change in heart rate. Image analysis was carried out with ImageJ (http://rsbweb.nih.gov/ij/). Statistical analysis was carried out using GraphPad Prism7 (GraphPad software).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Bioinformatical analyses
+#### Bioinformatical analyses
 
 Sequencing reads obtained from the paired-end Illumina sequencing were mapped to the zebrafish genome (Ensembl genome assembly Zv9) as described previously (Junker et al., 2014). All sequencing data analysis including normalization, single gene expression analysis, identification of expression patterns and clustering was performed in R (http://www.R-project.org/) using custom-written code (Source code) as well as publicly available packages (EdgeR).
 
 The heart rate analyses were performed in ImageJ by manual measurement of each cardiac cycle. Box-whisker plots, outlier removal and statistical analysis was done in GraphPad Prism7 (GraphPad software). Further statistical details of experiments can be found in the figure legends.
 
-## Data and software availability
+### Data and software availability
 
-## Software
+#### Software
 
 All software used in this study was obtained from publicly or commercially available resources.
 
-## Data resources
+#### Data resources
 
 The processed tomo-seq dataset used is publicly available via the website: http://zebrafish.genomes.nl/tomoseq/Burkhard2017/
 

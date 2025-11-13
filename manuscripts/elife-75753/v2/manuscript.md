@@ -18,11 +18,11 @@
 
 ### Affiliations
 
-1. https://ror.org/017zhmm22 Xi'an Jiaotong University Health Science Center Xi'an China
-2. https://ror.org/01yc7t268 Division of Bone and Mineral Diseases, Washington University School of Medicine St. Louis United States
-3. https://ror.org/017zhmm22 Department of Spine Surgery, Honghui Hospital, Xi'an Jiaotong University Xi'an China
-4. https://ror.org/01yc7t268 Department of Orthopaedic Surgery, Washington University School of Medicine St. Louis United States
-5. https://ror.org/049mpkx27 Shriners Hospital for Children St. Louis United States
+1. Xi'an Jiaotong University Health Science Center Xi'an China ([ROR:017zhmm22](https://ror.org/017zhmm22))
+2. Division of Bone and Mineral Diseases, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Department of Spine Surgery, Honghui Hospital, Xi'an Jiaotong University Xi'an China ([ROR:017zhmm22](https://ror.org/017zhmm22))
+4. Department of Orthopaedic Surgery, Washington University School of Medicine St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+5. Shriners Hospital for Children St. Louis United States ([ROR:049mpkx27](https://ror.org/049mpkx27))
 
 † Corresponding author
 
@@ -42,27 +42,27 @@ GSDMD is a member of the GSDM family proteins, which are encoded by Gsdma1-3, Gs
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Gsdmd knockout mice were kindly provided by Dr VM Dixit (Genentech, South San Francisco, CA). Il1r1-/- and Gsdme-/- mice were purchased from The Jackson Laboratory (Sacramento, CA). All mice were on the C57BL6J background, and genotyping was performed by PCR. All procedures were approved by the Institutional Animal Care and Use Committee (IACUC) of Washington University School of Medicine in St Louis. All experiments were performed in accordance with the relevant guidelines and regulations described in the IACUC-approved protocol 19-0971.
 
-## Tibia fracture model
+### Tibia fracture model
 
 Open mid-shaft tibia fractures were created unilaterally in 12-week-old mice. Briefly, a 6-mm-long incision was made in the skin on the anterior side alongside the tibia. A sterile 26 G needle was inserted into the tibia marrow cavity from the proximal end, temporarily withdrawn to allow transection of the tibia with a scalpel at mid-shaft, and then reinserted and secured. The incision was closed with 5–0 nylon sutures. Mice were sacrificed at different time-points as indicated below.
 
-## Histological analyses of fracture calluses
+### Histological analyses of fracture calluses
 
 Fractured tibias were collected on days 7, 10, 14, 21, and 28 after fracture for histological analyses. Excess muscle and soft tissue were excised. Tibias were fixed in 10% neutral buffered formalin for 24 hr and decalcified for 10–14 days in 14% ethylenediaminetetraacetic acid solution (pH 7.2). Tissue was processed and embedded in paraffin, and sectioned longitudinally at a thickness of 5 µm. Alcian blue/hematoxylin/orange-g (ABH/OG) and tartrate-resistant acid phosphatase (TRAP) staining were performed to analyze the callus composition and osteoclast formation in the fracture region. Images were acquired using ZEISS microscopy (Carl Zeiss Industrial Metrology, Maple Grove, MN). Cartilage area, bone area, mesenchyme area, and osteoclast parameters were quantified on ABH/OG, TRAP-stained sections using NIH ImageJ software 1.52a (Wayne Rasband) and Bioquant (Ying et al., 2020).
 
-## Micro-computed tomography analysis
+### Micro-computed tomography analysis
 
 After careful dissection and removal of the intramedullary pins in fractured tibias, fracture calluses were examined using micro-computed tomography (micro-CT) system (μCT 40 scanner, Scanco Medical AG, Zurich) scanner at 10 μm, 55 kVp, 145 μA, 300 ms integration time. Six hundred slices (6.3 mm) centered on the callus midpoint were used for micro-CT analyses. A contour was drawn around the margin of the entire callus and a lower threshold of 180 per mille was then applied to segment mineralized tissue (all bone inside the callus). A higher threshold of 340 per mille was applied to segment the original cortical bone inside the callus volume. Quantification for the volumes of the bone calluses was performed using the Scanco analysis software. 3D images were generated using a constant threshold of 180 per mille for the diaphyseal callus region of the fractured tibia.
 
-## Biomechanical torsion testing
+### Biomechanical torsion testing
 
 Tibias were collected 28 days after fracture and moistened with PBS and stored at –20°C until they were thawed for biomechanical testing. Briefly, the ends of the samples were potted with methacrylate (MMA) bone cement (Lang Dental Manufacturing, Wheeling, IL) in 1.2-cm-long cylinders (6 mm diameter). The fracture site was kept in the center of the two potted ends with roughly 4.2 mm of the bone exposed. After MMA solidification, potted bones were set up on a custom torsion machine. One end of the potted specimen was held in place while the opposing end was rotated at 1 degree per second until fracture. Torque values were plotted against the rotational deformation, and the maximum torque, torsional rigidity, and work to fracture were calculated.
 
-## Cell cultures
+### Cell cultures
 
 Murine primary BM-derived macrophages (BMDMs) were obtained by culturing mouse BM cells from femurs and tibias in culture media containing a 1:10 dilution of supernatant from the fibroblastic cell line CMG 14-12 as a source of macrophage colony-stimulating factor, a mitogenic factor for BMDMs, for 4–5 days in a 15 cm dish as previously described (Xiao et al., 2020; Takeshita et al., 2000). After expansion, BMDMs were plated at a density of 1 × 106 cells/well in six-well plate for experiments.
 
@@ -70,41 +70,53 @@ Murine primary neutrophils were isolated by collecting BM cells and subsequently
 
 For inflammasome studies, cells were primed with 100 ng/ml LPS (Sigma Aldrich, L4391) for 3 hr, then with 15 μM nigericin (Sigma Aldrich) for 1 hr, 5 mM ATP for 1 hr, or 50 mg/ml bone particles for 2 hr.
 
-## Western blot
+### Western blot
 
 Cell extracts were prepared by lysing cells with RIPA buffer (50 mM Tris, 150 mM NaCl, 1 mM EDTA, 0.5% NaDOAc, 0.1% SDS, and 1.0% NP-40) plus complete protease inhibitor cocktail (Roche, CA). For tissue extracts, BM and BM-free bones were lysed with RIPA buffer containing protease inhibitors. Protein concentrations were determined by the Bio-Rad Laboratories method, and equal amounts of proteins were subjected to SDS-PAGE gels (12%) as previously described (Wang et al., 2018). Proteins were transferred onto nitrocellulose membranes and incubated with antibodies against GSDMD (1:1000, ab219800, Abcam), GSDME (1:1000, ab215191, Abcam), β-actin (1:5000, sc-47778, Santa Cruz Biotechnology, Dallas, TX) overnight at 4°C followed by incubation for 1 hr with secondary goat anti–mouse IRDye 800 (Thermo Fisher Scientific, Waltham, MA) or goat anti-rabbit Alexa Fluor 680 (Thermo Fisher Scientific, Waltham, MA), respectively. The results were visualized using the Odyssey infrared imaging system (LI-COR Biosciences, Lincoln, NE).
 
-## LDH assay
+### LDH assay
 
 Cell death was assessed by the release of LDH in conditioned medium using LDH Cytotoxicity Detection Kit (TaKaRa, San Jose, CA).
 
-## IL-1β and IL-18 ELISA
+### IL-1β and IL-18 ELISA
 
 IL-1β, IL18 levels in conditioned media were measured by ELISA (eBioscience, Albany, NY).
 
-## ATP assay
+### ATP assay
 
 ATP levels in conditioned media were measured by RealTime-Glo Extracellular ATP Assay kit (Promega, Madison, WI).
 
-## Flow cytometry
+### Flow cytometry
 
 BM cells were flushed from tibias with PBS. Single cell suspensions were labeled with antibodies for 30 min at 4°C. Flow cytometry analysis was performed on FACS Canto II. Cell cytometric data was analyzed using FlowJo10.7.1. Full gating strategy was shown in Figure 5—figure supplements 1 and 2.
 
-## RNA isolation and RT-qPCR
+### RNA isolation and RT-qPCR
 
 RNA was extracted from bone or BM cells using RNeasy Plus Mini Kit (Qiagen). Four millimeters of fracture calluses free of BM were homogenized for mRNA extraction. cDNA were prepared using High-Capacity cDNA Reverse Transcription Kits (Applied Biosystems, Waltham, MA). Gene expression was analyzed by qPCR using SYBR Green (Applied Biosystems, Waltham, MA) according to the manufacturer’s instruction.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using the Student’s t test, one-way ANOVA with Tukey’s multiple comparisons test as well as two-way ANOVA with Tukey’s multiple comparisons test in GraphPad Prism 8.0 software.
 
 ## Results
 
-## GSDMD and GSDME were expressed in bone microenvironment
+### GSDMD and GSDME were expressed in bone microenvironment
 
 The crucial role that gasdermins (GSDMs) play in inflammation, a response that can be induced by injury, prompted us to analyze their expression in unfractured and fractured mouse tibias. Gsdmd and Gsdme were the only GSDM family members that were readily detected in BM and BM-free tibias from wild-type (WT) mice (Figure 1A–D and Figure 1—figure supplement 1A, B; Figure 1—figure supplement 2A, B). Expression levels of Gsdmd in BM and BM-free tibias (Figure 1A–C and Figure 1—figure supplement 2A) were consistently higher in fractured compared with unfractured bones. The injury did not affect Gsdme mRNA levels (Figure 1A) but it increased GSDME protein levels in BM-free tibias (Figure 1—figure supplement 2B). Both GSDMs appeared constitutively cleaved in BM (Figure 1C–D) but not BM-free tibias (Figure 1—figure supplement 2A, B). Since Gsdmd was predominantly expressed in bones, we determined the impact of its loss on the expression of its family members. Gsdmd deficiency increased baseline Gsdme mRNA levels in BM-free tibias but not BM, a response that was unaffected by the injury and did not impact GSDME protein levels (Figure 1A–D and Figure 1—figure supplement 2A, B). The expression of the other family members was unaltered by Gsdmd deficiency or the injury, with exception of Gsdmc, which was reduced in fractured BM-free tibias (Figure 1—figure supplement 1A, B). Thus, GSDMD and GSDME are present in the bone microenvironment in homeostatic and injury states.
 
-## Lack of GSDMD or GSDME delayed fracture healing
+![Figure 1.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig1-v2.jpg)
+
+**Figure 1.:** (A, C–D) BM and (B) BM-free tibias from 12-week-old male WT and Gsdmd-/- mice (n = 4–5 mice). Samples were isolated from unfractured or fractured tibias (3 days after injury). (A–B) qPCR and (C–D) Western blot analyses. qPCR data were normalized to unfractured WT. (E) Bone callus volume was quantified using Scanco software (n = 5). (F) Representative 3D reconstructions of bones using µCT. Data were mean ± SD and are representative of at least three independent experiments. Data from male and female mice were pooled because there was no sex difference. **p < 0.01; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. Scale bar, 1 mm. BM, bone marrow; µCT, micro-computed tomography; WT, wild-type.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** RNAs were isolated from (A) bone marrow (BM)-free bones or (B) BM and were from 12-week-old male wild-type (WT) or Gsdmd-/- mice (n = 4–5). Samples were isolated from unfractured or fractured tibias (3 days after injury). qPCR (A–B) analysis. Data were normalized to unfractured WT, and were mean ± SD. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Proteins were isolated from bone marrow (BM)-free tibias from 12-week-old male wild-type (WT) or Gsdmd-/- mice. Tibias were unfractured or fractured (3 days after injury). GSDMD (A) and GSDME (B) were analyzed by immunoblotting. cGSDMD, cleaved GSDMD; cGSDME, cleaved GSDME; WT, wild-type.
+
+### Lack of GSDMD or GSDME delayed fracture healing
 
 When stabilized with an intramedullary inserted pin, fractured murine long bones heal through mechanisms that involve the formation of callus structures (Marsell and Einhorn, 2011). To determine the role of GSDMD and GSDME in fracture healing, we assessed callus formation in WT, Gsdmd-/-, Gsdme-/-, and Gsdmd-/-;Gsdme-/- mice. The volume of bone callus was higher on day 14 compared with day 10 post-injury in WT mice (Figure 1E). It increased indistinguishably in Gsdmd-/- and Gsdme-/- mice on day 14 compared to day 10, but was significantly lower in mutants compared with WT mice (Figure 1E–F). Notably, callus volume was comparable between single and compound mutants (Figure 1E–F), suggesting that both GSDMs share the same signaling pathway in fracture healing. Collectively, these findings indicate that GSDMD and GSDME play an important role in bone repair following fracture injury.
 
@@ -112,33 +124,55 @@ To gain insights onto the mechanisms of fracture healing, we focused on GSDMD as
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig2-v2.jpg)
 
-**Figure 2.:** Tibias of 12-week-old male and female WT or Gsdmd mice were subjected to fracture and analyzed at the indicated times. (-/-A) Bone callus volume was quantified using Scanco software (n = 6). (B) Representative 3D reconstructions of bones using µCT. (C–E) Quantification of tissue area by ImageJ software (n = 5). (F) Representative ABH staining. Quantification of Oc.S/BS (G) and N.Oc/BS (H) using Bioquant software (n = 5). (I) Representative images of TRAP staining. Data were mean ± SD. Data from male and female mice were pooled because there was no sex difference. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. Scale bar, 1 mm (B), 500 µm (F) ,or 200 µm (I). µCT, micro-computed tomography; WT, wild-type.Figure 2—source data 1.Gsdmd-/- mice.
+**Figure 2.:** Tibias of 12-week-old male and female WT or Gsdmd-/- mice were subjected to fracture and analyzed at the indicated times. (A) Bone callus volume was quantified using Scanco software (n = 6). (B) Representative 3D reconstructions of bones using µCT. (C–E) Quantification of tissue area by ImageJ software (n = 5). (F) Representative ABH staining. Quantification of Oc.S/BS (G) and N.Oc/BS (H) using Bioquant software (n = 5). (I) Representative images of TRAP staining. Data were mean ± SD. Data from male and female mice were pooled because there was no sex difference. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. Scale bar, 1 mm (B), 500 µm (F) ,or 200 µm (I). µCT, micro-computed tomography; WT, wild-type.
 
 To determine the impact of GSDMD deficiency on the functional result of bone regeneration, unfractured and 28 days’ post-fracture bones were subjected to biomechanical testing. Injured WT tibias exhibited decreased strength and stiffness compared with unfractured counterparts (Figure 3A–C), indicating that the healing response has not fully recovered bone function at this time-point. Biomechanical properties of unfractured Gsdmd-/- tibias were slightly higher though not statistically significant in Gsdmd-/- compared with WT unfractured bones (Figure 3A–C), findings that were consistent with the higher bone mass phenotype of Gsdmd-/- mice relative to their littermates (Xiao et al., 2020). Notably, fractured bones from Gsdmd-/- mice exhibited lower biomechanical parameters compared with WT controls. Thus, the functional competence of the repaired bone structure is compromised in GSDMD-deficient mice.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig3-v2.jpg)
 
-**Figure 3.:** Unfractured or fractured tibias (28 days after injury) from 12-week-old male WT or Gsdmd mice were subjected to a torsion test (n = 6). (-/-A) Bone strength. (B) Bone stiffness. (C) Bone toughness. Data were mean ± SD. *p < 0.05; **p < 0.01; ****p < 0.0001; one-way ANOVA with Tukey’s multiple comparisons test; ns, non significant; WT, wild-type.Figure 3—source data 1.Gsdmd-/- mice.
+**Figure 3.:** Unfractured or fractured tibias (28 days after injury) from 12-week-old male WT or Gsdmd-/- mice were subjected to a torsion test (n = 6). (A) Bone strength. (B) Bone stiffness. (C) Bone toughness. Data were mean ± SD. *p < 0.05; **p < 0.01; ****p < 0.0001; one-way ANOVA with Tukey’s multiple comparisons test; ns, non significant; WT, wild-type.
 
-## Expression and secretion of IL-1β and IL-18 were attenuated in the absence of GSDMD
+### Expression and secretion of IL-1β and IL-18 were attenuated in the absence of GSDMD
 
 Inflammation characterized by elevated levels of cytokines including those of the IL-1 family underlines the early phase of wound healing (Claes et al., 2012). Since IL-1β and IL-18 are secreted through GSDMD-assembled plasma membrane pores (Broz and Dixit, 2016; Shi et al., 2015; Evavold et al., 2018), we analyzed the levels of these inflammatory cytokines in the BM supernatants from unfractured and fractured bones (1 day after injury). Baseline secretion levels of IL-1β or IL-18 were comparable between WT and Gsdmd mutants (Figure 4A–B). Fracture increased IL-1β and IL-18 levels in BM supernatants in both groups, but they were significantly attenuated in mutant samples compared with WT controls (Figure 4A–B). Thus, fracture-induced IL-1β and IL-18 levels in BM are attenuated upon loss of GSDMD.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) BM supernatants and (C) BM-free bones were from 12-week-old male WT or Gsdmd-/- mice (n = 4–5). Samples were isolated from unfractured or fractured tibias (1 day after injury). (A–B) ELISA and (C–D) qPCR analyses. qPCR data were normalized to unfractured WT. Data were mean ± SD. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. BM, bone marrow; WT, wild-type.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** RNAs were isolated from (A) BM-free bones or (B) BM were from 12-week-old male WT or Gsdmd-/- mice (n = 4). Tibias were unfractured or fractured (3 days after injury). RNAs were analyzed by qPCR. Data were normalized to unfractured WT, and were mean ± SD. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. BM, bone marrow; WT, wild-type.
+
 To understand transcriptional regulation of IL-1β and IL-18 in this fracture model, we determined mRNA levels of these cytokines in the BM and BM-free bone compartments. Baseline levels of Il1b and Il18 mRNA were undistinguishable between WT and Gsdmd-/- samples in both compartments (Figure 4C–D). Following fracture, the expression of Il1b and Il18 mRNA was induced in WT but not Gsdmd-/- mice (Figure 4C–D), suggesting a feedback mechanism whereby these cytokines secreted though GSDMD pores amplified their own expression. Since NLRP3 and absent in melanoma 2 (AIM2) inflammasomes, which sense plasma stimuli such as membrane perturbations and DNA, respectively, are implicated in the maturation of IL-1β, IL-18, and GSDMD (Xiao et al., 2018; Xiao et al., 2020; Zhu et al., 2021), we also analyzed the expression of these sensors. Levels of Nlrp3 and Aim2 to some extent (Figure 4C–D) as well as those of Asc and caspase-1 (Figure 4—figure supplement 1A, B) were comparable between WT and Gsdmd-/- samples in homeostatic conditions. Fracture increased the expression of Nlrp3 and Aim2 in WT and mutants only in BM-free bone samples (Figure 4C–D) whereas it induced caspase-1 expression in WT cells both compartments. Never was the expression of Nlrc4 and caspase-11 mRNA modulated by the fracture injury nor loss of GSDMD (Figure 4—figure supplement 1A, B). Thus, the expression of Il1b or Il18 and certain inflammasome components (e.g., Nlrp3, Aim2, Asc, and caspase-1) is transcriptionally regulated in the fracture injury model.
 
-## Lack of GSDMD attenuated the secretion of IL-1β and IL-18 induced by danger signals
+### Lack of GSDMD attenuated the secretion of IL-1β and IL-18 induced by danger signals
 
 The high levels IL-1β and IL-18 in BM of fractured bones provided a strong rationale for assessing the presence of neutrophils, monocytes, and macrophages, which harbor high levels of inflammasomes and rapidly accumulate during the first hours after injury (Liu et al., 2021; Xiao et al., 2018; Xiao et al., 2020). Flow cytometry analysis revealed that the abundance of these cells in BM of uninjured bones was unaffected by loss of GSDMD (Figure 5A–C and Figure 5—figure supplement 2). Fracture increased the percentage of neutrophils and monocytes but not macrophages (Figure 5A–C). GSDMD deficiency was associated with a slight decrease and increase in the percentage of neutrophils and monocytes, respectively (Figure 5A–C). Thus, neutrophil and monocyte but not macrophage populations are expanded in fractured bones. GSDMD deficiency appears to slightly attenuate and increase the percentage of neutrophils and monocytes, respectively.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig5-v2.jpg)
+
+**Figure 5.:** Cells were isolated from the tibias from 12-week-old female WT or Gsdmd-/- mice. (A–C) Cell counts (n = 4–5). BM was harvested from unfractured or fractured tibias (2 days after fracture). (D) ATP levels. BM supernatants were harvested from unfractured or fractured tibias (24 hr after fracture). (E–G) Immunoblotting analysis of GSDMD cleavage or (F–H) IL-1β ELISA run in triplicates. Bone marrow-derived macrophages (BMDMs) were expanded in vitro whereas neutrophils were immediately after purification. Cells were primed with 100 ng/ml LPS for 3 hr, then with 15 μM nigericin for 1 hr, 5 mM ATP for 1 hr, or 50 mg/ml bone particles for 2 hr. Data are mean ± SD and were representative of at least three independent experiments. *p < 0.05; **p < 0.01; ***p < 0.001; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. BPs, bone particles; cGSDMD, cleaved GSDMD; WT, wild-type.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Gating strategy. (B) Purity of isolated neutrophil fractions.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Bone marrow cells were isolated from 12-week-old male WT or Gsdmd-/- mice. Bone marrow-derived macrophages (BMDMs) (A) were expanded in vitro whereas neutrophils (B) were used immediately after purification. Cells were primed with 100 ng/ml LPS for 3 hr, then with 15 μM nigericin for 1 hr, 5 mM ATP for 1 hr, or 50 mg/ml bone particles for 2 hr. LDH was measured in conditioned medium. Data are mean ± SD of triplicates and were representative of at least three independent experiments. *p < 0.05; ****p < 0.0001, two-way ANOVA with Tukey’s multiple comparisons test. BPs, bone particles; LDH, lactate dehydrogenase; WT, wild-type.
+
 Inflammasome assembly signals include those generated by ATP, which is released by dead cells (Yang et al., 2021; Zhang and Wei, 2021b). Therefore, we measured the levels of this danger signal in BM. ATP levels were comparable between WT and Gsdmd-/- samples at baseline but were induced by fourfold after fracture in both groups (Figure 5D). Next, we studied cytokine release by WT and Gsdmd-/- cells not only in response to ATP but also bone particles, which are undoubtedly released following bone fracture. Bone particles were as potent as the NLRP3 inflammasome activators, nigericin and ATP, in inducing GSDMD cleavage by LPS-primed macrophages (Figure 5E). Accordingly, these danger signals induced IL-1β release (Figure 5F) and pyroptosis as assessed by the release of lactate dehydrogenase (LDH; Figure 5—figure supplement 3A), responses that were attenuated in GSDMD-deficient macrophages. Both nigericin and ATP robustly stimulated GSDMD cleavage and IL-1β release by LPS-primed neutrophils through mechanisms that partially involved GSDMD, but they did not promote neutrophil pyroptosis (Figure 5—figure supplement 3B). Bone particles had no effect on GSDMD maturation and IL-1β and LDH release by neutrophils (Figure 5G–H and Figure 5—figure supplement 3B). Thus, fracture injury creates a microenvironment that induces cytokine secretion through mechanisms involving GSDMD.
 
-## Loss of IL-1 signaling delayed fracture healing
+### Loss of IL-1 signaling delayed fracture healing
 
 The inability of Gsdmd-/- mice to mount efficient healing responses correlated with low levels of IL-1β and IL-18 in BM, suggesting that inadequate secretion of these cytokines may account for the delayed fracture repair. While the actions of IL-18 in bone are not well defined, overwhelming evidence positions IL-1β as a key regulator of skeletal pathophysiology (Mbalaviele et al., 2017; Novack and Mbalaviele, 2016). Therefore, we used IL-1 receptor knockout (Il1r1-/-) mice to test the hypothesis that IL-1 signaling was required for bone healing following fracture. Bone callus volume was larger on day 14 compared with day 10 in WT and Il1r1-/- tibias, but it was smaller at both time-points in mutants compared to WT controls (Figure 6A–B). Histological analysis confirmed that the mesenchyme, cartilage, and bone areas were all smaller in Il1r1-/- compared with WT mice (Figure 6C–F). Like in Gsdmd-/- tissues, cartilage remnants were prominent within the callus of Il1r1-/- specimens at day 14 (Figure 6F), and the number and surface of osteoclasts were significantly higher at all times in mutant compared to WT mice at day 14, while cartilage and bone areas remained smaller in mutants at day 10 (Figure 6G–I). Although Gsdmd expression was not analyzed in Il1r1-/- mice, these mutants exhibited delayed fracture healing like Gsdmd-/- mice, suggesting that functional GSDMD-IL-1 axis is important for adequate bone healing after fracture.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/75753/elife-75753-fig6-v2.jpg)
 
-**Figure 6.:** Tibias of 12-week-old male WT or Il1r1 mice were subjected to fracture and analyzed at the indicated times. (-/-A) Bone callus volume was quantified using Scanco software (n = 5). (B) Representative 3D reconstructions of bones using micro-computed tomography (µCT). (C–E) Quantification of tissue area by ImageJ software (n = 5). (F) Representative ABH staining. (G) Quantification of Oc.S/BS and (H) Oc.S/BS using Bioquant software (n = 5). (I) Representative images of TRAP staining. Data were mean ± SD. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with (A, C–E) Tukey’s multiple comparisons test or (G–H) unpaired t-test. Scale bar, 1 mm (B), 500 µm, (F) or 200 µm (I). Il1r1, IL-1 receptor 1; WT, wild-type.Figure 6—source data 1.Il1r mice.-/-
+**Figure 6.:** Tibias of 12-week-old male WT or Il1r1-/- mice were subjected to fracture and analyzed at the indicated times. (A) Bone callus volume was quantified using Scanco software (n = 5). (B) Representative 3D reconstructions of bones using micro-computed tomography (µCT). (C–E) Quantification of tissue area by ImageJ software (n = 5). (F) Representative ABH staining. (G) Quantification of Oc.S/BS and (H) Oc.S/BS using Bioquant software (n = 5). (I) Representative images of TRAP staining. Data were mean ± SD. *p < 0.05; ***p < 0.001; ****p < 0.0001, two-way ANOVA with (A, C–E) Tukey’s multiple comparisons test or (G–H) unpaired t-test. Scale bar, 1 mm (B), 500 µm, (F) or 200 µm (I). Il1r1, IL-1 receptor 1; WT, wild-type.
 
 ## Discussion
 

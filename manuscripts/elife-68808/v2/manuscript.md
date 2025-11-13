@@ -96,7 +96,7 @@
 
 ## Abstract
 
-The BNT162b2 mRNA COVID-19 vaccine (Pfizer-BioNTech) is being utilised internationally for mass COVID-19 vaccination. Evidence of single-dose protection against symptomatic disease has encouraged some countries to opt for delayed booster doses of BNT162b2, but the effect of this strategy on rates of asymptomatic SARS-CoV-2 infection remains unknown. We previously demonstrated frequent pauci- and asymptomatic SARS-CoV-2 infection amongst healthcare workers (HCWs) during the UK’s first wave of the COVID-19 pandemic, using a comprehensive PCR-based HCW screening programme (Rivett et al., 2020; Jones et al., 2020). Here, we evaluate the effect of first-dose BNT162b2 vaccination on test positivity rates and find a fourfold reduction in asymptomatic infection amongst HCWs ≥12 days post-vaccination. These data provide real-world evidence of short-term protection against asymptomatic SARS-CoV-2 infection following a single dose of BNT162b2 vaccine, suggesting that mass first-dose vaccination will reduce SARS-CoV-2 transmission , as well as the burden of COVID-19 disease .
+The BNT162b2 mRNA COVID-19 vaccine (Pfizer-BioNTech) is being utilised internationally for mass COVID-19 vaccination. Evidence of single-dose protection against symptomatic disease has encouraged some countries to opt for delayed booster doses of BNT162b2, but the effect of this strategy on rates of asymptomatic SARS-CoV-2 infection remains unknown. We previously demonstrated frequent pauci- and asymptomatic SARS-CoV-2 infection amongst healthcare workers (HCWs) during the UK’s first wave of the COVID-19 pandemic, using a comprehensive PCR-based HCW screening programme (Rivett et al., 2020; Jones et al., 2020). Here, we evaluate the effect of first-dose BNT162b2 vaccination on test positivity rates and find a fourfold reduction in asymptomatic infection amongst HCWs ≥12 days post-vaccination. These data provide real-world evidence of short-term protection against asymptomatic SARS-CoV-2 infection following a single dose of BNT162b2 vaccine, suggesting that mass first-dose vaccination will reduce SARS-CoV-2 transmission, as well as the burden of COVID-19 disease.
 
 ## Introduction
 
@@ -114,7 +114,108 @@ Twenty-six of 3252 (0.8%, Wilson’s interval 0.6–1.2%) tests from unvaccina
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68808/elife-68808-fig1-v2.jpg)
 
-**Figure 1.:** RT-PCR targeting the SARS-CoV-2 ORF1ab genes was conducted at the Cambridge COVID-19 Testing Centre (part of the UK Lighthouse Labs Network). For proportions of positive screening tests, p-values for pair-wise comparisons of unvaccinated HCWs with HCWs <12 days or ≥12 days post-vaccination are shown (Fisher’s exact test; both weeks). For Ct values, medians ± interquartile ranges are shown.  Figure 1—source data 1.
+**Figure 1.:** RT-PCR targeting the SARS-CoV-2 ORF1ab genes was conducted at the Cambridge COVID-19 Testing Centre (part of the UK Lighthouse Labs Network). For proportions of positive screening tests, p-values for pair-wise comparisons of unvaccinated HCWs with HCWs <12 days or ≥12 days post-vaccination are shown (Fisher’s exact test; both weeks). For Ct values, medians ± interquartile ranges are shown.
+
+**Table 1.**
+ Weekly numbers and proportions of positive SARS-CoV-2 test results spanning 6 weeks around the main study period (indicated in grey).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Unvaccinated</th>
+      <th colspan="3">&lt;12 Days since vaccination</th>
+      <th colspan="3">≥12 Days since vaccination</th>
+    </tr>
+    <tr>
+      <th>Week start</th>
+      <th>Total tests</th>
+      <th>Positive tests</th>
+      <th>%</th>
+      <th>Total tests</th>
+      <th>Positive tests</th>
+      <th>%</th>
+      <th>Total tests</th>
+      <th>Positive tests</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>28 December 2020</td>
+      <td>2097</td>
+      <td>16</td>
+      <td>0.8%</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>4 January 2021</td>
+      <td>4762</td>
+      <td>43</td>
+      <td>0.9%</td>
+      <td>93</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>22</td>
+      <td>0</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>11 January 2021</td>
+      <td>3273</td>
+      <td>27</td>
+      <td>0.8%</td>
+      <td>978</td>
+      <td>6</td>
+      <td>0.6%</td>
+      <td>30</td>
+      <td>0</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>18 January 2021</td>
+      <td>2183</td>
+      <td>17</td>
+      <td>0.8%</td>
+      <td>1716</td>
+      <td>8</td>
+      <td>0.5%</td>
+      <td>483</td>
+      <td>1</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>25 January 2021</td>
+      <td>1069</td>
+      <td>9</td>
+      <td>0.8%</td>
+      <td>1819</td>
+      <td>5</td>
+      <td>0.3%</td>
+      <td>1506</td>
+      <td>3</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>1 February 2021</td>
+      <td>699</td>
+      <td>1</td>
+      <td>0.1%</td>
+      <td>758</td>
+      <td>1</td>
+      <td>0.1%</td>
+      <td>2825</td>
+      <td>1</td>
+      <td>0.0%</td>
+    </tr>
+  </tbody>
+</table>
 
 A marked reduction in infections was also seen when analyses were repeated with (1) inclusion of HCWs testing positive through both the symptomatic and asymptomatic arms of the programme (56/3370 [1.7%, Wilson’s interval 1.3–2.2%] unvaccinated vs 8/2018 [0.4%, Wilson’s interval 0.2–0.8%] ≥12 days post-vaccination, 4.2-fold reduction, p<0.0001) and (2) inclusion of PCR tests that were positive at the limit of detection (Ct > 36, 42/3268 [1.3%, Wilson’s interval 1.0–1.7%] vs 15/2000 [0.7%, Wilson’s interval 0.5–1.2%], 1.7-fold reduction, p=0.07). In addition, the median Ct value of positive tests showed a non-significant trend towards increase between unvaccinated HCWs and HCWs ≥12 days post-vaccination (23.3 [IQR 13.5–33.0] to 30.3 [IQR 25.5–35.1], Figure 1), raising the possibility that vaccinated individuals who do go on to develop infection may have lower viral loads.
 
@@ -124,14 +225,14 @@ Taken together, our findings provide real-world evidence of short-term protectio
 
 ## Materials and methods
 
-## HCW screening programme
+### HCW screening programme
 
 We previously described protocols for staff screening, sample collection, and results reporting in detail (Rivett et al., 2020; Jones et al., 2020). In general, these methods remained unchanged throughout this study period. Two parallel streams of entry into the testing programme included (1) HCW symptomatic and HCW symptomatic household contact screening arms and (2) an HCW asymptomatic screening arm. Since our prior description of the screening programme, weekly asymptomatic testing is now offered to all CUHNFT staff. Testing was performed (1) at temporary on-site ‘Pods’ and (2) via self-swabbing kits collected by HCWs. Individuals performed a self-swab of the oropharynx and anterior nasal cavity. Samples were subjected to RNA extraction and amplification using real-time RT-PCR, with all sample processing and analysis undertaken at the Cambridge COVID-19 Testing Centre (Lighthouse Laboratory).
 
-## Vaccination
+### Vaccination
 
 HCW vaccination began at CUHNFT on 8 December 2020, with appointments made by invitation only for all high-risk HCWs working on-site. This was followed by self-booked appointments for HCWs working in designated COVID-19 clinical areas, from 8 January 2021 onwards. From 18 January 2021, vaccination was offered to all HCWs, with appointments made via a booking website and latterly using the hospital’s electronic patient record system ‘MyChart’. All vials of Pfizer-BioNTech COVID-19 Vaccine (BNT162b2) were stored at −74°C, before being transferred to storage at 2–8°C. From the moment the vials were removed from the freezer, they were given a 120 hr expiration date, of which 3 hr were dedicated to thawing the vaccines. All vaccine doses were administered intramuscularly by trained vaccinators, in accordance with the manufacturer’s instructions. Vaccination was undertaken exclusively at an on-site vaccination centre, with mandatory mask-wearing and social distancing in place. HCWs remained at the on-site vaccination centre for a minimum observation period of 15 min after vaccination.
 
-## Data extraction and analysis
+### Data extraction and analysis
 
 Swab result, vaccination details, and serology data for HCWs were extracted directly from the hospital-laboratory interface software, Epic (Verona, WI). Data were collated using Microsoft Excel and the figure produced with GraphPad Prism (GraphPad Software, La Jolla, CA). Fisher’s exact test was used for the comparison of positive rates between groups, defined in the main text. Additionally, 95% confidence intervals were calculated using Wilson’s method.

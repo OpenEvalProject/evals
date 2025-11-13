@@ -29,7 +29,7 @@
 
 ## Abstract
 
-Drosophila blood cells, called hemocytes, are classified into plasmatocytes, crystal cells, and lamellocytes based on the expression of a few marker genes and cell morphologies, which are inadequate to classify the complete hemocyte repertoire. Here, we used single-cell RNA sequencing (scRNA-seq) to map hemocytes across different inflammatory conditions in larvae. We resolved plasmatocytes into different states based on the expression of genes involved in cell cycle, antimicrobial response, and metabolism together with the identification of intermediate states. Further, we discovered rare subsets within crystal cells and lamellocytes that express fibroblast growth factor (FGF) ligand branchless and receptor breathless , respectively. We demonstrate that these FGF components are required for mediating effective immune responses against parasitoid wasp eggs, highlighting a novel role for FGF signaling in inter-hemocyte crosstalk. Our scRNA-seq analysis reveals the diversity of hemocytes and provides a rich resource of gene expression profiles for a systems-level understanding of their functions.
+Drosophila blood cells, called hemocytes, are classified into plasmatocytes, crystal cells, and lamellocytes based on the expression of a few marker genes and cell morphologies, which are inadequate to classify the complete hemocyte repertoire. Here, we used single-cell RNA sequencing (scRNA-seq) to map hemocytes across different inflammatory conditions in larvae. We resolved plasmatocytes into different states based on the expression of genes involved in cell cycle, antimicrobial response, and metabolism together with the identification of intermediate states. Further, we discovered rare subsets within crystal cells and lamellocytes that express fibroblast growth factor (FGF) ligand branchless and receptor breathless, respectively. We demonstrate that these FGF components are required for mediating effective immune responses against parasitoid wasp eggs, highlighting a novel role for FGF signaling in inter-hemocyte crosstalk. Our scRNA-seq analysis reveals the diversity of hemocytes and provides a rich resource of gene expression profiles for a systems-level understanding of their functions.
 
 ## Introduction
 
@@ -43,13 +43,25 @@ Here, we performed scRNA-seq of Drosophila hemocytes in unwounded, wounded, and 
 
 ## Results
 
-## scRNA-seq of Drosophila hemocytes
+### scRNA-seq of Drosophila hemocytes
 
 Hemocyte differentiation can be induced in Drosophila larvae by mechanical wounding or oviposition by wasps such as Leptopilina boulardi (Márkus et al., 2005; Rizki and Rizki, 1992). Hence, to characterize hemocyte populations and their heterogeneity, we first performed the two immune responsive conditions: wounded and wasp 24 hr post-infested (wasp inf. 24 hr), together with unwounded control conditions (Figure 1A). Further, to mobilize the sessile hemocytes into circulation, we briefly vortexed the larvae prior to bleeding (Petraki et al., 2015). Subsequently, single hemocytes were encapsulated using microfluidics-based scRNA-seq technologies including inDrops (Klein et al., 2015), 10X Chromium (Zheng et al., 2017) or Drop-seq (Macosko et al., 2015). A total of 19,458 cells were profiled, with 3–4 replicates per condition, and obtained a median of 1010 genes and 2883 unique molecular identifiers (UMIs) per cell across all conditions (Supplementary file 1; Figure 1—figure supplement 1A,B). In order to achieve a comprehensive map of all the hemocytes profiled by the three scRNA-seq platforms, we merged all data sets. We observed notable ‘batch effects’ where cell types were being clustered according to condition, replicate, or technology (Figure 1—figure supplement 1C,D,E). Thus, we applied the Harmony batch correcting method (Korsunsky et al., 2019), which is integrated into the Seurat R package (Stuart et al., 2019). Harmony successfully integrated all three data sets, including their replicates (Figure 1B; Figure 1—figure supplement 1D’, E’), and identified a total of 17 clusters (Figure 1C). Based on known marker genes, we confidently assigned certain clusters as plasmatocytes (marked by NimC1), crystal cells (marked by lozenge [lz]), or lamellocytes (marked by atilla) (Figure 1C; Figure 1—figure supplement 1H). Of the 17 clusters, one small cluster, representing ~0.2% of the total profiled cells, did not express any of the pan-hemocyte markers such as Hemese (He) and serpent (srp) (Figure 1—figure supplement 1H; Evans et al., 2014). Hence, we labeled this cluster as non-hemocyte (non-hemo).
 
-## Diversity of hemocyte populations and their transcriptional dynamics
+![Figure 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig1-v2.jpg)
 
-## Plasmatocyte clusters
+**Figure 1.:** (A) Schematic of the microfluidics-based scRNA-seq workflow. (B) t-Distributed Stochastic Neighbor Embedding (t-SNE) plot of Harmony-based batch correction and integration of unwounded (red), wounded (blue), and wasp inf. 24 hr (green) data sets. (C) Clustering of batch corrected cells from all three conditions reveals a total of 17 clusters. (D) Dot plot representing the top three genes enriched per cluster based on average expression (avg_logFC). Color gradient of the dot represents the expression level, while the size represents percentage of cells expressing any gene per cluster.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Number of genes (nGene [A]) and number of unique molecular identifiers (nUMI [B]) detected per cell in unwounded controls (n = 4), wounded (n = 4), wasp infested (wasp inf., 24 hr, n = 3 and wasp inf. 48 hr, n = 3) conditions. (C) t-Distributed Stochastic Neighbor Embedding (t-SNE) plot of all the three conditions prior to Harmony-based batch correction and integration of unwounded controls (red), Wounded (blue), and Wasp inf. 24 hr (green) data sets revealed condition specific clusters. Each dot representing one cell is depicted in the t-SNE plot. (D, D’) t-SNE plots representing all the replicates across all conditions prior to (D) and after (D’) batch correction. (E, E’) t-SNE plots representing all the technologies prior to (E) and after (E’) batch correction. (F) t-SNE plot showing all 20 clusters prior to merging clusters 1, 14, and 19 (in yellow) with cluster 0 (see Merging of clusters in Materials and methods section for details). (G) Quantitative real time PCR (qRT-PCR) determines the expression patterns of plasmatocyte marker genes in hemocytes of sessile and circulating compartments in unwounded larvae. (H) t-SNE plots representing marker genes that are known to be expressed in hemocytes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparing pseudobulk scRNA-seq data of unwounded samples with published bulk RNA-seq data of control hemocytes from Hml-GAL4 >UAS EGFP larvae (Neves et al., 2016), reveals a strong correlation between the two data sets. Known marker genes are highlighted in red and some of the top genes per cluster are represented in the plot. (B) Comparing pseudobulk scRNA-seq data of crystal cells with published bulk RNA-seq data of wildtype Lz+crystal cells from lz-GAL4 >UAS EGFP larvae (Miller et al., 2017), reveals a strong correlation between the two data sets. Known marker genes of crystal cells are highlighted in red and the novel crystal cell enriched gene E(spl)m3-HLH is depicted in the plot. (C) Snapshot of the searchable Drosophila blood scRNA-seq web portal (https://www.flyrnai.org/scRNA/blood/). At the search page, users can search the expression of one gene or the accumulative expression up to 5 genes displayed on the map of choice (t-SNE or UMAP) as well as the sample of choice (unwounded, wounded, wasp infested or all samples together). Users can also view the expression pattern across all the clusters by various plots such as bar graph and violin plot. Users can draw the dot plot for any genes of interest at ‘Dot Plot Genes’ page and compare the expression of any 2 genes at ‘Search Two Genes’ page. The portal allows users to query the markers of any cell cluster of choice as well as getting cluster-based statistics (number of cells’ expression and sum of expression value) at ‘Batch Query’ page.
+
+### Diversity of hemocyte populations and their transcriptional dynamics
+
+#### Plasmatocyte clusters
 
 Despite the fact that plasmatocytes constitute over 90–95% of the total hemocyte pool, subclasses within this major cell type have not been described. The majority of the clusters we identified (12/17) express Hml or NimC1 but not crystal cell or lamellocyte markers and thus we annotated them as plasmatocyte (PM) clusters: PM1-12 (Figure 1C; Figure 1—figure supplement 1H).
 
@@ -57,11 +69,11 @@ PM1 represents the largest cluster and is enriched in rRNA genes such as 18SrRNA
 
 In addition to these major clusters, our scRNA-seq also identified several minor clusters: PM8-12. PM8 is enriched in genes encoding peroxidase enzymes such as Prx2540-1, Prx2540-2, and CG12896, which is an uncharacterized gene highly similar to peroxiredoxin 6 (PRDX6) in humans. Although the function of these genes is not known in the context of hemocytes and immunity, peroxisomes have been reported to be necessary for phagocytosis by macrophages in both mice and Drosophila (Di Cara et al., 2017). PM9 and PM10 are enriched in the protooncogenes Abl, Sno oncogene (Snoo), and the transcriptional regulator Ultrabithorax (Ubx). PM11 and PM12 represent the smallest clusters within plasmatocytes and are defined by the expression of the uncharacterized genes CG15550 and CG6023, together with a methuselah-type receptor gene, methuselah-like 7 (mthl7) in PM11, and Cys, CG8860, and COX8 in PM12 (Figure 1D; Supplementary file 2). In order to distinguish plasmatocytes in sessile or circulating compartments, we used quantitative real time PCR (qRT-PCR) of some of the marker genes per cluster in sessile and circulating hemocytes in steady state unwounded larvae. Of all genes that we tested, only Ubx and mthl7, representing PM9-11, were relatively more enriched in sessile hemocytes compared to circulating hemocytes (Figure 1—figure supplement 1G), suggesting that most clusters may reside in both sessile and circulating compartments.
 
-## Crystal cell clusters
+#### Crystal cell clusters
 
 The next most abundant immune responsive cells are the crystal cells, which are the main source of two enzymes important for melanization, prophenoloxidase 1 and 2 (PPO1 and PPO2). These enzymes are critical for survival upon wounding in larvae and adults (Binggeli et al., 2014; Dudzic et al., 2019; Theopold et al., 2014). Based on the expression of PPO1 and PPO2 together with the gene encoding the Runt related transcription factor lozenge (lz), two clusters were assigned to crystal cells (CC): CC1 and CC2 (Figure 1C–D; Figure 1—figure supplement 1H). CC1 expresses low levels of PPO1 but high levels of Notch, pebbled (peb), and the enhancer of split complex gene E(spl)m3-HLH (Figure 1D). Although Notch and peb have been shown to be associated with crystal cell development (Terriente-Felix et al., 2013), expression of the Notch target gene E(spl)m3-HLH (Couturier et al., 2019) has not been reported. On the other hand, CC2 shows higher expression levels of PPO1 and PPO2 genes. Hence, we consider CC2 to represent mature crystal cells, while CC1 may represent an immature or a transient intermediate state.
 
-## Lamellocyte clusters
+#### Lamellocyte clusters
 
 Lamellocytes represent the rarest cell type, the numbers of which dramatically increase during wounding and wasp infestation (Márkus et al., 2005; Rizki and Rizki, 1992). Based on the expression of the lamellocyte marker gene atilla (Evans et al., 2014; Kurucz et al., 2007), we assigned two clusters to lamellocytes (LM): LM1 and LM2 (Figure 1C–D; Figure 1—figure supplement 1J). LM1 is the larger cluster of the two and is enriched in atilla besides a long non-coding RNA, lncRNA:CR44316 (Figure 1D). LM2 represents a smaller cluster expressing atilla, betaTub60D, and alphaTub85E. The expression level of atilla is higher in LM2 compared to LM1 (Figure 1D), suggesting that LM2 represents mature lamellocytes, whereas LM1 may represent the lamellocyte intermediate state. Moreover, the strong expression pattern of tubulins and other cytoskeletal proteins may be important for the maintenance of structural integrity of lamellocytes and their dynamic roles in encapsulation (Rizki and Rizki, 1994).
 
@@ -69,39 +81,91 @@ Altogether, our scRNA-seq analysis recovered all major cell types within the hem
 
 To validate our scRNA-seq data, we compared all the genes expressed in hemocytes of unwounded condition to publicly available bulk RNA-seq data sets of all larval hemocytes and crystal cells (Miller et al., 2017; Neves et al., 2016). To achieve this, we first converted our scRNA-seq data of all hemocytes and crystal cell clusters into pseudobulk RNA-seq and then compared with the published bulk RNA-seq data sets (Miller et al., 2017; Neves et al., 2016). We identified a strong correlation with spearman correlation of ~0.79 for both hemocyte and crystal cell comparisons, which reflects a high quality of our scRNA-seq data sets (Figure 1—figure supplement 2A–B). This resource can be mined using a user-friendly searchable web-tool (www.flyrnai.org/scRNA/blood/) where genes can be queried, visualized, and compared across conditions (Figure 1—figure supplement 2C).
 
-## Changes in hemocyte composition and identification of a novel Mtk-like AMP
+### Changes in hemocyte composition and identification of a novel Mtk-like AMP
 
 In addition to identifying genes enriched in each cluster and their changes across conditions, it is possible to estimate cell fraction changes from scRNA-seq data sets. To achieve this, we first segregated the three conditions (Figure 2A–C), then calculated cell fraction changes. Whereas PM1-5, 8, and 11 are well represented in all three conditions, PM9 is negligibly detected in the wasp inf. 24 hr condition, and PM10 and 12 were majorly detected in the wounded condition. The PMAMP clusters, PM6 and 7, emerged mainly upon wounding or wasp infestation compared to unwounded controls (Figure 2A–D). Strikingly, the proportion of cecropin-enriched PM6 cluster (~5.5%) is similar to the previously observed fraction of hemocytes (~5–10%) expressing cecropin genes upon infection (Samakovlis et al., 1990). With regard to the crystal cell clusters, both CC1 and CC2 were underrepresented in wasp inf. 24 hr, consistent with previous observations that crystal cell numbers dramatically decrease following oviposition by wasps (Kacsoh and Schlenke, 2012; Figure 2A–D). Of the lamellocyte clusters, LM1 was detected in all three conditions, however, LM2 emerged only upon wounding or wasp infestation. In summary, LM2 and PMAMP are the major clusters that are represented mostly upon wounding or wasp infestation.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig2-v2.jpg)
+
+**Figure 2.:** (A-C) t-SNE plots of (A) Unwounded, (B) Wounded, and (C) Wasp inf. 24 hr conditions. (D) Cell fraction changes in clusters based on treatment conditions. (E) Heat map profile of the top expressed genes in cluster PM7 identifies CG43236/Mtk-like (Mtkl). Genes were ranked based on expression levels in each condition in the heat map. (F) Phylogenetic tree map constructed with the peptide sequences of all known AMPs together with Mtkl. (G) Global alignment of Mtkl and Mtk peptide sequences using Jalview protein alignment software (Waterhouse et al., 2009).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) Heat maps of differentially expressed gene signatures pertaining to PM3 (A), PM5 (B), and PM6 (C). (D, D’) Screen shots of the Antimicrobial10 domains within the peptide sequences of Mtk (D) and Mtkl (D’) using the motif search tool https://www.genome.jp/tools/motif/. E)qRT-PCR-based relative expression of the AMP genes (CecC, Drs, Mtk, and Mtkl) in hemolymph derived from unwounded and wounded larvae. (F-G) qRT-PCR based relative expression of Mtkl in whole larvae from unwounded and wounded conditions (F) and in fat bodies of unwounded, wounded, and wasp infested larvae (G). Error bars in E-G are represented as ± SEM (standard error of mean). Statistics were done in Prism using unpaired t-tests (E-F) and one-way ANOVA (G). P values are represented by * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001).
 
 Despite some PM clusters being represented in all three conditions, their gene expression patterns are specific to wounding or wasp inf. 24 hr. For instance, Mmp1 showed increased expression only upon wounding or wasp inf. 24 hr in PM3 compared to unwounded controls (Figure 2—figure supplement 1A). Likewise, the increased expression of GST genes such as GstE6 is specific to wounded or wasp inf. 24 hr (Figure 2—figure supplement 1B). With regards to the PM6 cluster of immune-activated state, CecA2 showed an increased expression specifically in wasp inf. 24 hr compared to wounded conditions (Figure 2—figure supplement 1C). Further, differentially expressed gene (DEG) analysis of PM7 revealed that most of the AMP genes were more enriched during wounding or wasp inf. 24 hr than in unwounded controls (Figure 2E). Of note, the AMP gene signature was unique to either wounded or wasp inf. 24 hr conditions. For example, whereas Mtk, Drs, DptB, and AttD were specific to wounded condition, CecA1, CecB, Dro, and AttA were unique to wasp inf. 24 hr (Figure 2E). These data indicate that clusters represented in all three conditions may nevertheless differ from each other in a condition-specific manner with respect to their differential gene signatures (Supplementary file 3).
 
 A survey of all top enriched genes in PM7 revealed the identification of an uncharacterized gene, CG43236, which is relatively more enriched in wounded compared to unwounded or wasp infested conditions (Figure 2E). CG43236 encodes a small peptide of 50 amino acids (aa) and its phylogenetic alignment with all known AMPs revealed that it clustered with Mtk, an antibacterial and antifungal AMP (Levashina et al., 1995; Levashina et al., 1998; Figure 2F,G). Both Mtk and CG43236 possess an Antimicrobial10 domain that is unique to the Metchnikowin family (Figure 2G; Figure 2—figure supplement 1D–D’), leading us to name CG43236 as Mtk-like (Mtkl). To validate its expression within hemocytes and whole larvae, we performed qRT-PCR in unwounded control and wounded conditions. Consistent with our scRNA-seq data (Figure 2E), Mtkl is well expressed and more enriched in hemocytes upon wounding in larvae. However, the induction of Mtkl was modest, compared to the robust induction of CecC, Drs, and Mtk (Figure 2—figure supplement 1E), suggesting that Mtkl may be strongly regulated by other modes of immune challenges such as sepsis or fungal infection. However, its expression is induced upon wounding in whole larvae and in fat bodies of wasp infested larvae (Figure 2—figure supplement 1F–G). Interestingly, a study has shown through comparative transcriptomics that the expression of Mtkl is upregulated in adult whole flies that were subjected to various types of bacterial infections (Troha et al., 2018). Furthermore, CG43236/Mtkl has been described as a putative AMP (Troha et al., 2018). Altogether, the DEG analysis of PM7 identified a novel Mtk-like putative AMP.
 
-## Pseudotemporal ordering of cells delineates hemocyte lineages
+### Pseudotemporal ordering of cells delineates hemocyte lineages
 
 Plasmatocytes of the embryonic lineage reside in larval hematopoietic pockets and, over the course of third larval instar, increasingly enter the hemolymph to circulate in the open circulatory system (Makhijani et al., 2011). The generation of these plasmatocytes, initially by differentiation from embryonic progenitors, and later in the larva through self-renewal of differentiated plasmatocytes, is well established (Makhijani et al., 2011). In contrast, the development of terminally differentiated crystal cells and lamellocytes from the embryonic lineage has remained speculative, but includes models of transdifferentiation from plasmatocytes (Anderl et al., 2016; Leitão and Sucena, 2015; Márkus et al., 2009). In our wounding experiments, although the lymph gland responds to the inflammatory stimulus, we did not detect any rupture or histolysis of lymph gland (Figure 3—figure supplement 1A–E), suggesting that this tissue may not be the major source of terminally differentiated cells such as lamellocytes in circulation. Hence, it is important to address the immediate sources of mature cell types in circulation. scRNA-seq data can be used to construct pseudotemporal relationships between individual cell transcriptomes and impute cell lineages derived from precursor cells (Trapnell, 2015; Trapnell et al., 2014). We took advantage of our observation that PM2 expresses cell cycle genes to construct lineage trees emerging from this cell-cycle state. To avoid using batch corrected cells, we chose 10X genomics-derived unwounded and wounded data set, which represents all the mature cell types including lamellocytes that emerge only upon wounding (Figure 3—figure supplement 1F; Supplementary file 1). We used Monocle3 (Cao et al., 2019) and assigned PM2 as the start point of the pseudotime intervals (Figure 3A–B; Figure 3—figure supplement 1G–H). Monocle3 data shows that three major lineages emerge from the start point (Figure 3C–E). Lineage1 terminates in crystal cell (CC) fate, and includes the two CC clusters, CC1 and CC2. As expected, CC1 precedes CC2, strongly supporting that CC1 represents an intermediate state (CCint) (Figure 3B). Consistently, the expression of PPO1 steadily increases from CC1 and reaches its peak level upon becoming mature crystal cells (Figure 3—figure supplement 2A). Lineage2 on the other hand terminates in a fate that include PM1 and other minor PM clusters (PM8-12) (Figure 3B,D). Lastly, Lineage3 leads towards the clusters of the immune-activated state together with mature lamellocytes (Figure 3B,E). As expected, LM1 precedes LM2, supporting our initial observation that LM1 corresponds to the intermediate state of lamellocytes (LMint). This is further demonstrated by the expression of atilla, which steadily increases with low levels in LM1 and higher levels in LM2 (Figure 3—figure supplement 2B). Lineage3 also terminates with cells of the immune-activated states, PM7 and PM5 (Figure 3B), which express Drs (in PM7) and GstE6 (in PM5) (Figure 3—figure supplement 2C–D). Interestingly, PM5 is the only state that is enriched for the term xenobiotics biodegradation, suggesting a role for PM5 in this process (Figure 3—figure supplement 2F).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig3-v2.jpg)
+
+**Figure 3.:** (A) Monocle3 was used to track cells over pseudotime on the 10X-derived unwounded and wounded data sets. (B) Visualization of clusters (from Figure 1C) onto the pseudotime map. (C-E) Three major lineage routes were obtained from the start site: Lineage 1 (C), Lineage 2 (D), and Lineage 3 (E). (F) Monocle-based gene expression signature between Lineages 1 and 3 with the ‘pre-branch’ in the middle. (G) Schematic showing potential lineage flow from the oligopotent state of plasmatocytes (PM2) to mature cell types with their intermediates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A-B) Confocal imaging reveals that the lymph glands are intact and unruptured in wounded larvae (B) compared to unwounded controls (A). Scale bar = 50 μm. (C-E) Total number of cells, represented by the nuclear stain DAPI, remain unchanged (C), while the number of crystal cells decrease (D), and all the lymph glands showed positive staining for lamellocytes (E) in wounded larvae compared to unwounded controls. (D) Monocle three was used to track cells over pseudotime on the 10X genomics-derived unwounded and wounded data sets. The UMAP represents the two conditions. (E) UMAP plot represents the cells with high combined average expression of the cell cycle and cell cycle associated genes polo, stg, and scra. (F) UMAP plot shows that the cells with high combined average expression of polo, stg, and scra belong to the PM2 cluster.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A-D) Gene expression of blood cell marker genes, such as PPO1 (A), atilla (B), Drs (C), and GstE6 (D) along the pseudotime intervals, reveals that these genes are enriched over pseudotime. (E) Ridge plots of all the clusters over pseudotime intervals reveal that most plasmatocyte subpopulations including all minor PM clusters (PM8, 9, 10, and 12) possibly are transient intermediate states. (F) Heat map depicts the gene set enrichment pertaining to various metabolic pathways enriched in each cluster (from Figure 1C). (G-H) Confocal imaging of hemocytes derived from third instar larvae with Hml-GAL4-mediated expression of UAS-empty control (G) or poloRNAi (H). Hml+ cells, crystal cells, lamellocytes, and nuclei are represented by EGFP (green), mCherry (PPO1 in magenta), Atilla (gray [far red]), and DAPI (cyan), respectively. Scale bar = 25 μm. (I) Percentage of lamellocytes normalized to Hml+ plasmatocytes per field of view in three independent biological replicates (n = 3). Error bars are represented as ± SEM (standard error of mean). Statistics were done in Prism using unpaired t-test. P values are represented by * (p=0.032).
 
 Next, to gain deeper insights into the gene expression signatures along the pseudotime intervals, we analyzed the differentially expressed genes (DEG) between the source and Lineage1 or Lineage3. DEG analysis over pseudotime revealed four major clusters depending on the expression of marker genes at the beginning (pre-branch) and end of the pseudotime interval along Lineage1 and 3 (Figure 3F). Interestingly, the pre-branch is enriched with PM marker genes such as eater and Hml, suggesting that precursor cells are indeed the self-renewing plasmatocytes. Moreover, the expression of the cell cycle genes gradually decreases as the lineages progress towards 1 or 3 (Figure 3F), consistent with a relationship between cell cycle arrest and terminal differentiation observed in vertebrates and flies (Buttitta and Edgar, 2007; Guo et al., 2016; Morse et al., 1997; Ruijtenberg and van den Heuvel, 2016; Soufi and Dalton, 2016). To assess whether blocking the cell cycle promotes terminal differentiation, we expressed RNAi against one of the top enriched cell cycle genes, polo, in Hml+ plasmatocytes (Hml-GAL4 >poloRNAi). RNAi-mediated knockdown of polo resulted in a significant increase in the production of lamellocytes compared to controls (Figure 3—figure supplement 2G–I), suggesting that cell cycle arrest may be required for terminal differentiation of cell types. Finally, to visualize cells accumulating along the pseudotime intervals, we analyzed the cell densities using ridge plots, which revealed that PM8-12 accumulated predominantly between the start and end of pseudotime intervals, indicating that they are all transient plasmatocyte intermediates (PMint) (Figure 3—figure supplement 2E).
 
 Altogether, based on Monocle3, we propose that PM2 has oligopotent potential and can give rise to terminally differentiated cell types and possibly other activated states within plasmatocytes. Further, our analysis confirms the existence of crystal cell and lamellocyte intermediate states that precede their fully differentiated mature cell types (Figure 3G).
 
-## Crystal cell sub-clustering distinguishes crystal cell intermediates from mature crystal cells
+### Crystal cell sub-clustering distinguishes crystal cell intermediates from mature crystal cells
 
 Because crystal cells split into two distinct clusters (CC1 and CC2) (Figure 1C), we sub-clustered these cells independently of the other clusters. We used Harmony to correct for batch effects arising from the technological platforms and conditions (Figure 4—figure supplement 1A–C). Subsequent cell clustering revealed two distinct clusters: one with low PPO1 expression (PPO1low) and one with very high PPO1 expression (PPO1high) (Figure 4A,C). While the percentage of PPO1lowcrystal cells increased, the mature PPO1highcrystal cell population shows a decreased trend upon wounding or wasp infestation (Figure 4B, Figure 4—figure supplement 1D–F). Furthermore, the expression level of PPO1 was similar between unwounded controls and wounded condition in both clusters. Interestingly, PPO1 expression was negligibly detected in PPO1lowcrystal cells and slightly lower in PPO1highcrystal cells in wasp infested larvae (Figure 4D). To determine whether the two crystal cell clusters coexist as distinct populations or whether PPO1low is a CCint state along the course of crystal cell maturation, we used lz-GAL4, UAS-GFP; BcF6-mCherry larvae to label Lz+ and PPO1+crystal cells with GFP and mCherry, respectively. We examined the dorso-posterior end, where clusters of hemocytes that include crystal cells reside along the dorsal vessel of third instar larvae (Figure 4E; Leitão and Sucena, 2015). In line with the scRNA-seq data, in vivo imaging analysis revealed distinct populations of crystal cells within the sessile hub, with crystal cells displaying differential intensities of GFP and mCherry (Figure 4F–F’’). Furthermore, intensity measurements of GFP and mCherry revealed a significant positive correlation (Figure 4G), which is consistent with previous studies demonstrating that Lz, together with Srp, can activate the expression of PPO1 (Waltzer et al., 2003). Of note, the correlation plot did not reveal two separate populations of crystal cells, but rather heterogenous cell populations, existing in a potential continuum (Figure 4G). This further supports the Monocle3 prediction that PPO1low may represent the CCint state, whereas PPO1high corresponds to mature crystal cells (Figure 3B; Figure 3—figure supplement 2A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig4-v2.jpg)
+
+**Figure 4.:** (A) t-SNE plot of crystal cell sub-clustering depicting two crystal cell sub-clusters, PPO1low and PPO1high. (B) Percentage of PPO1low and PPO1highcrystal cells across the three conditions. (C) Violin plot indicating the average expression level of PPO1 in the two crystal cell clusters. (D) Average expression level of PPO1 across the three conditions. (E) Confocal image of the posterior-dorsal side of a representative lz-GAL4; UAS-GFP, BcF6-mCherry third instar larva. BcF6-mCherry is a reporter for PPO1+crystal cells. Scale bar = 500 μm. (F-F’’) Confocal images of GFP+ (F), BcF6-mCherry+ (F’), and merged GFP+ mCherry+ crystal cells (F’’). xz and yz images in F’’ represent the depth of the stacks. Representative PPO1low and PPO1highcrystal cells are shown by open and solid arrow heads, respectively, in F’. Scale bar = 25 μm. (G) Mean intensities of GFP (Lz) and mCherry (PPO1). The correlation plot represents data from unwounded lz-GAL4; UAS-GFP, BcF6-mCherry larvae (n = 23; total crystal cells analyzed = 1397). The Pearson’s correlation coefficient (r) and the p value (two-tailed) were calculated using Prism 8. (H-I) Heat maps of marker gene expression in PPO1low and PPO1high clusters (H) and differentially expressed gene (DEG) analysis of the marker genes across conditions in PPO1low cluster (I).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A-B) t-SNE plots represent Harmony-based batch correction per technology (A) and condition (B). (C) Representation of CC1 and CC2 cluster colors (from Figure 1C) onto the crystal cell sub-clusters. (D-F) t-SNE plots of unwounded (D), wounded (E), and wasp inf. 24 hr (F) segregated from the main t-SNE plot pertaining to Figure 4A. (G) Heat map depicting the differentially expressed genes corresponding to the top enriched genes in the PPO1high cluster. Genes were ranked based on expression (logFC) across the different conditions. (H-H’’) Expression validation of E(spl)m3-HLH in vivo. Confocal images of crystal cells at the posterior-dorsal region of E(spl)m3-HLH-GAL4; mCD8-GFP, BcF6-mCherry third instar larvae at steady state reveal that a subset of crystal cells express E(spl)m3-HLH. xz and yz panels in G’’ represent the depth of the confocal Z stacks. Scale bar = 25 μm. (H’’’) Percentage of E(spl)m3-HLH+ cells positive for PPO1 and percentage of crystal cells positive for E(spl)m3-HLH (n=7). Error bars are represented as ± SEM.
+
 As noted above, PPO1highcrystal cells express many of the mature crystal cell marker genes, including PPO2 (Figure 4H). This cluster also highly expresses a number of uncharacterized genes such as CG10602 and CG10467, which potentially encode enzymes with epoxide hydrolase and aldose 1-epimerase activities, respectively (Figure 4H). The human ortholog of CG10602, LTA4H (leukotriene A4 hydrolase), encodes an enzyme involved in the biosynthesis of a proinflammatory mediator, leukotriene B4 (Crooks and Stockley, 1998). Moreover, mutations in lta4h render zebrafish hypersusceptible to mycobacterial infections (Tobin et al., 2010). These observations suggest that CG10602 may play an important role for mature crystal cells in combating bacterial infections, in addition to their role in melanization. On the contrary, PPO1lowcrystal cells are enriched in spatzle (spz), a cytokine that activates the Toll pathway (Lemaitre et al., 1996; Figure 4H). Besides spz, PPO1lowcrystal cells express cell cycle/chromatin associated genes such as the Decondensation factor 31 (Df31) and HmgD (Figure 4H), suggesting that PPO1low may be in a cycling or proliferative state. Furthermore, although many of the genes, including spz, Df31, and HmgD, were more enriched upon wasp inf. 24 hr in PPO1low (Figure 4I; Supplementary file 4), the PPO1high cluster did not display notable changes in gene expression (Figure 4—figure supplement 1G). Of note, we confirmed the expression of a novel crystal cell enriched marker gene E(spl)m3-HLH, which is expressed in ~13% of crystal cells in both PPO1low and PPO1high populations (Figure 4—figure supplement 1H–H’’’). In summary, crystal cell sub-clustering identifies a crystal cell intermediate state and highlights the possibility that crystal cells exist in a continuum, along the course of crystal cell maturation, as suggested by Monocle3 and in vivo imaging data.
 
-## Lamellocyte sub-clustering identifies lamellocyte intermediates and subtypes
+### Lamellocyte sub-clustering identifies lamellocyte intermediates and subtypes
 
 Previous studies have speculated the presence of lamellocyte intermediates (Anderl et al., 2016; Honti et al., 2010; Rizki, 1957; Stofanko et al., 2010). Monocle3 predicted that LM1 might correspond to a lamellocyte intermediate state (Figure 3B,E). To further test this prediction, we sub-clustered all the Atilla+ lamellocytes derived from all conditions. To increase the diversity of lamellocytes, we performed scRNA-seq at one additional time point of wasp infestation: wasp inf. 48 hr. Clustering analysis revealed that more than 50% of all cells are atilla+ lamellocytes (Figure 5—figure supplement 1A–C). To sub-cluster the lamellocytes, we considered the Atilla+ clusters 0 and 1 from wasp inf. 48 hr (Figure 5—figure supplement 1A–B) together with Atilla+ lamellocytes from unwounded, wounded, and wasp inf. 24 hr data sets (Figure 1C–D). We used Harmony to correct for batch effects (Figure 5—figure supplement 1D–E) and subsequent clustering of all the lamellocytes revealed 5 distinct clusters (Figure 5A), that we named LM1-4 and CC based on the expression of top enriched genes (Figure 5E). Cell fraction calculations revealed a higher fraction of LM1 upon wounding or wasp infestation compared to unwounded controls. However, the lamellocyte sub-clusters LM2-4 emerged mostly in wounding or wasp infestation (Figure 5B; Figure 5—figure supplement 1F–I). The last cluster was annotated as CC based on extremely low or no expression of atilla and enrichment of crystal cell marker genes including PPO1 (Figure 5C,E). We speculate that LM1 may represent a LMint state based on the low level of atilla together with enrichment of plasmatocyte marker genes such as Pxn and Hml, which are usually not expressed upon lamellocyte maturation (Figure 2I; Figure 5E; Stofanko et al., 2010). However, the expression of atilla is negligible in unwounded control and wounded conditions, while Hml is higher compared to wasp inf. conditions in LM1 (Figure 5D; Figure 5—figure supplement 1J).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig5-v2.jpg)
+
+**Figure 5.:** (A) t-SNE plot depicting the lamellocyte sub-clusters. (B) Changes in lamellocyte fractions across the three conditions. (C) Expression of the lamellocyte marker gene atilla was used to annotate the lamellocyte clusters. (D) Split violin plot shows the differential expression of atilla in different conditions. (E) Dot plot representing the top 5 marker genes per lamellocyte cluster. (F) Heat map depicts the DEG analysis of top genes in LM2 across all conditions. (G-H’’’) Expression validation of Drip in hemocytes derived from Drip-GAL4 >mCD8 GFP; BcF6-mCherry unwounded (n = 3 with 16 larvae per n) (G-G’’’) or wounded (n = 3 with 16 larvae per n) (H-H’’’) larvae. Nuclei are stained with DAPI (Cyan). Scale bar = 20 μm. (I) Percentage of GFP+ Atilla+ lamellocytes normalized to total Atilla+ lamellocytes per field of view. Data is represented by three independent biological replicates (n = 3). The error bars are represented as ± SEM (standard error of mean). The P value (unpaired t-test) is represented by **** (p<0.0001).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) t-SNE plot representing the clustering analysis of wasp inf. 48 hr data set reveals 4 distinct clusters. (B) t-SNE plot demonstrating the expression of atilla in the wasp inf. 48 hr data set. (C) Dot plot shows top enriched genes in each lamellocyte sub-cluster. (D, E) t-SNE plots represent Harmony-based batch correction per technology (D) and condition (E). (F-I) t-SNE plots of unwounded (F), wounded (G), wasp inf. 24 hr (H), and wasp inf. 48 hr (I) segregated from the main t-SNE plot pertaining to Figure 5A. (J-L) Heat maps of differentially expressed gene signatures pertaining to the top enriched genes of LM1 (J), LM3 (K), and LM4 (L).
 
 Based on the high level of expression of atilla, we conclude that LM2, LM3, and LM4 are subtypes of mature lamellocytes (Figure 5C). Whereas LM3 and LM4 expressed relatively low levels of Trehalase (Treh) and its transporter Tret1-1, LM2 displayed high levels of these genes (Figure 5E). In addition to Treh and Tret1-1, almost all LM2 cells express two uncharacterized genes that potentially encode sugar transporters, CG4607 and CG1208 (Figure 5E,F). These genes emerged as the top-expressed genes in wasp inf. 48 hr when compared to the unwounded control, wounded, or wasp inf. 24 hr conditions (Figure 5F; Supplementary file 5). Of note, CG4607 and CG1208 belong to the SLC2 family of hexose sugar transporters and are orthologous to SLC2A6/GLUT6 or SLC2A8/GLUT8 in humans. Importantly, it has recently been demonstrated that GLUT6 acts as a lysosomal transporter, which is regulated by inflammatory stimuli (Maedera et al., 2019) and is strongly upregulated in macrophages activated by LPS (Caruana et al., 2019). Similarly, in Drosophila, immune activation is energy demanding and glucose may be used as a major source of energy for the production of mature lamellocytes (Bajgar et al., 2015). These observations suggest that lamellocytes may require specialized sugar transporters for their maturation to elicit an effective immune response against parasitoid wasp eggs.
 
 In addition to the expression of the sugar transporters, most lamellocyte sub-clusters are enriched in a water transporter, Drip (AQP4 in humans), which has recently been shown to play a role in T-cell proliferation and activation in mice (Nicosia et al., 2019; Figure 5F; Figure 5—figure supplement 1J–L). To confirm Drip expression in vivo, third instar Drip-GAL4, UAS-mCD8-GFP; BcF6-mCherry larvae were wounded and then monitored for the expression of Drip. As expected, Drip+ GFP cells were not detected during steady state in unwounded control larvae (Figure 5G–G’’’ and I). However, Drip+ GFP cells, significantly increased upon wounding, and strikingly, the expression of Drip was detected in ~90% of Atilla+ lamellocytes (Figure 5H–H’’’ and I). Finally, the smaller clusters of lamellocytes, LM3 and LM4, were also enriched in genes similar to those expressed in LM2, albeit at a lower level (Figure 5E), suggesting that LM3-4 are subtypes of mature lamellocytes. In contrast to LM3, LM4 expresses additional marker genes that include GstD3 suggesting that this subtype of lamellocytes may also be involved in the detoxification of xenobiotics (Figure 5E; Figure 5—figure supplement 1L). Our DEG analysis also reveal distinct transcriptional changes in all lamellocyte sub-clusters of wasp inf. 48 hr compared to wounded or wasp inf. 24 hr conditions (Figure 5F, Figure 5—figure supplement 1J–L; Supplementary file 5). These differences are likely due to the origins of lamellocytes that are derived from either circulating hemocytes or lymph glands, which are ruptured in wasp inf. 48 hr time point unlike the intact lymph glands in wounded and wasp inf. 24 hr larvae (Figure 3—figure supplement 1A–C; Cho et al., 2020). In summary, LM sub-clustering identifies the LMint state together with novel marker genes specific to different subsets of mature lamellocytes across different conditions.
 
-## scRNA-seq uncovers a novel role for the FGF pathway in immune response
+### scRNA-seq uncovers a novel role for the FGF pathway in immune response
 
 To identify signaling pathways enriched in each cluster, we performed pathway enrichment analysis on the scRNA-seq data across all conditions (Figure 6A). As expected, the PM6 and PM7 clusters are enriched in Imd and to lesser extent Toll signaling pathways (Lemaitre and Hoffmann, 2007). CC1 and CC2 are highly enriched in Notch signaling components (Figure 6A; Supplementary file 6), which is consistent with previous studies that showed the importance of Notch in crystal cell development (Duvic et al., 2002; Leitão and Sucena, 2015). Further, PM3 is highly enriched in particular for components of the TNF/Eiger, Imd, and Toll pathways. In addition to these known pathways, we also identified the fibroblast growth factor (FGF) signaling pathway to be highly enriched in the lamellocytes (Figure 6A; Supplementary file 6). Although the fly FGFR, Heartless (Htl) and its ligands, Thisbe (Ths) and Pyramus (Pyr) have been shown to be required for progenitor differentiation in the lymph gland (Dragojlovic-Munther and Martinez-Agosto, 2013), the role of FGF signaling has not been addressed in circulating hemocytes of the embryonic lineage. Interestingly, the second FGFR gene, breathless (btl), is one of the components that is enriched albeit at low levels in LM2 (Figure 6B,B’). In addition, a small subpopulation of crystal cells expresses branchless (bnl), which encodes the only ligand for Btl (Figure 6B,B’).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig6-v2.jpg)
+
+**Figure 6.:** (A) Pathway enrichment of the top marker genes across all the clusters from Figure 1C. (B) Expression of bnl (red) and btl (green) in crystal cell and lamellocyte clusters, respectively. (B’) Expression heat map key. (C, C’) Validation of bnl expression in hemocytes of wounded bnl-LexA; LexAOp-myr-GFP, BcF6-mCherry larvae. Expression of GFP was detected only in crystal cells and not lamellocytes (white arrows). GFP and BcF6-mCherry represent the expression of bnl and PPO1, respectively. Scale bar = 20 μm. (D, D’) Validation of bnl expression in hemocytes of wasp infested bnl-LexA; LexAOp-mCherry larvae. Bnl (mCherry+), Bnl+PPO2 (red+green merged), Myospheroid (Mys, which is specific for lamellocytes) (white arrows), DAPI (cyan). Scale bar = 20 μm. (E-E’’’) Validation of btl expression in lamellocytes in vivo. The melanized region of btl-GAL4; UAS-GFPN-lacZ, msn-mCherry larvae was imaged using confocal microscopy. Expression of GFP was detected in LM nuclei (white arrows in E’’’). GFP and msn-mCherry represent the expression of btl and msn, respectively. msn is a marker for lamellocytes. Scale bar = 20 μm. (F) Representative images of wasp inf. 48 hr lz-GAL4>+ (control) and lz-GAL4 >bnlRNAi larvae. (G) Representative images of wasp inf. 48 hr srp-GAL4>+ and srp-GAL4 >btlRNAi larvae. (H) Melanization frequencies of wasp inf. 48 hr larvae upon bnl and btl knockdown using Hml-, lz-, HLT-, and srp-GAL4 drivers. (I, J) Confocal images of hemocytes from wasp inf. 48 hr larvae in lz-GAL4>+ controls (I) compared to their lz-GAL4 >bnlRNAi (J). Scale bar = 50 μm. (K, L) Confocal images of hemocytes from wasp inf. 48 hr larvae in srp-GAL4>+ controls (K) compared to their srp-GAL4 >btlRNAi (L). Scale bar = 20 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Average bnl expression counts derived from the crystal cell sub-clustering data revealed that bnl is more enriched in PPO1highcrystal cells. Each colored dot represents one cell. Error bars are represented as ± SEM. (B) Average btl expression counts derived from the lamellocyte sub-clustering data revealed that btl is more enriched in LM2 and LM3 sub-clusters. Each colored dot represents one cell. Error bars are represented as ± SEM. (C) Expression validation of bnl and btl in pseudobulk scRNA- and bulk RNA-seq of lymph glands from unwounded normal larvae. D) Dot plot representing the expression enrichment of bnl in crystal cell (CC) and btl in lamellocyte (LM) clusters of lymph gland scRNA-seq of unwounded control larvae. Clusters GST-rich, PM, PH, and PSC are glutathione S transferase-rich, plasmatocytes, prohemocytes, and posterior signaling center, respectively. (E-E’’’) Validation of btl expression in lamellocytes upon wasp infestation. btl-GAL4; UAS-GFPN-lacZ, msn-mCherry larvae were wasp infested and the hemocytes were bled for subsequent staining of the nuclei using DAPI. Scale bar = 20 μm. (F-I) Bar graphs representing average number of total cells (F), Hml+ cells (G), PPO2+crystal cells (H), and lamellocytes (I) per larva with or without RNAi against bnl using the Hml-GAL4 driver. Comparisons were made between the genotypes in uninfested control and wasp inf. 48 hr conditions. n = 26–37 biological replicates per condition and genotype. (J-M) Bar graphs representing average number of total cells (J), Lz+crystal cells (K), Pxn+ cells (L), and lamellocytes (M) per larva with or without RNAi against bnl using the Lz-GAL4 driver. Comparisons were made between the genotypes in uninfested control and wasp inf. 48 hr conditions. n = 21–31 biological replicates per condition and genotype. Error bars are represented as ± SEM. Statistics were done in Prism 8 using one-way ANOVA. P values are represented by * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Validation of bnlRNAi knockdown efficiency by qRT-PCR. UAS-bnlRNAi flies were crossed to Ubiquitin (Ubi)-GAL4 and the resulting RNA from Ubi >control and Ubi >bnlRNAi larvae was subjected to qRT-PCR, which determined the knockdown efficiency to be ~45%. (B-C) Representative confocal images reveal normal crystal cell morphology upon knockdown of bnl in crystal cells in normal conditions. Scale bar = 20 μm. (D-F) Knockdown of bnl in hemocytes (Hml-GAL4 >bnlRNAi) results in a significantly decreased size of the melanotic mass 48 hr post wasp infestation. Scale bar in E-F = 50 μm. (G-I) Confocal microscopy of melanized wasp eggs reveals that knockdown of bnl in plasmatocytes (Hml-GAL4 >bnlRNAi) affects the recruitment of Hml+ cells towards the melanized wasp egg. Arrows indicate intact crystal cells, labelled with PPO2, around wasp eggs in Hml-GAL4 >bnlRNAi larvae. Lamellocytes, marked by Atilla, are seen in both control and Hml-GAL4 >bnlRNAi larvae. Scale bar in G-H = 50 μm. Error bars are represented as ± SEM. Statistics were done in Prism 8 using unpaired t-test. P values are represented by * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/54818/elife-54818-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Validation of btlRNAi knockdown efficiency by qRT-PCR. UAS-btlRNAi flies (BL#60013 and #43544) were crossed to Ubiquitin (Ubi)-GAL4 and the resulting RNA from Ubi >control and Ubi >btlRNAi larvae was subjected to qRT-PCR, which determined the knockdown efficiency to be ~30–35% in the two different RNAi lines. (B) Bright field image of wasp infested HLT-GAL4> and HLT-GAL4 >btlRNAi (#60013) larvae. (C) Bright field image of wasp infested srp-GAL4 >btlRNAi (#60013) and srp-GAL4> larvae. (D-F) Bar graphs representing average number of total cells (D), Lz+crystal cells (E), Pxn+ cells (F) per larva with or without RNAi against btl using the srp-GAL4 driver in uninfested control condition. n = 24–30 biological replicates per condition and genotype. (G-I) Bar graphs representing average number of total cells (G), Hnt+crystal cells (H), Pxn+ cells (F), and lamellocytes (I) per larva with or without RNAi against btl using the srp-GAL4 driver in 48 hr post wasp infested condition. n = 24–30 biological replicates per condition and genotype. Error bars are represented as ± SEM. Statistics were done in Prism 8 using one-way ANOVA. P values are represented by * (p<0.05), ** (p<0.01), *** (p<0.001), **** (p<0.0001).
 
 To confirm the expression of bnl in hemocytes upon wounding, we used bnl-LexA; LexAOp-GFP, BcF6-mCherry larvae and found that bnl expression was restricted either to crystal cells or plasmatocytes but not lamellocytes (Figure 6C,C’). In addition, based on bnl expression counts from scRNA-seq, bnl may be enriched in PPO1high compared to PPO1lowcrystal cells (Figure 6—figure supplement 1A). Similar to wounding, we also determined that bnl is expressed in subsets of crystal cells and plasmatocytes but not in lamellocytes 48 hr post infestation (PI) of bnl-LexA; LexAOp-mCherry larvae (Figure 6D,D’). The fraction of Bnl+crystal cells (as determined by mCherry+ Hindsight/Hnt+ cells [Hnt/Peb marks crystal cells]) was very low (~15.1% ± 17.97 standard deviation [SD]; n = 20) when compared to the total number of crystal cells. Next, we examined the expression of btl in hemocytes using btl-GAL4; UAS-GFPN-lacZ, msn-mCherry, where msn-mCherry marks lamellocytes following wasp infestation (Tokusumi et al., 2009). Confocal imaging at the vicinity of melanized wasp eggs in larvae revealed that a fraction of Btl+ lamellocytes were detected near the melanized region, presumably encapsulating the wasp eggs (Figure 6E–E’’’). Similar to the low fraction of Bnl+ crystal cells, the fraction of Btl+ lamellocytes (as determined by GFP+ msn+ cells) is ~35% (±12.61 SD, n = 5) compared to the total lamellocytes per field of view (Figure 6—figure supplement 1E–E’’’). In summary, these results confirm that both bnl and btl are expressed in rare subsets of crystal cells and lamellocytes, respectively. Besides their expression in circulation, we find that both bnl and btl are also expressed in lymph gland scRNA- and bulk RNA-seq data sets (Figure 6—figure supplement 1C; Cho et al., 2020). Importantly, bnl and btl are enriched in crystal cell and lamellocyte clusters, respectively, of the lymph gland scRNA-seq data (Cho et al., 2020; Figure 6—figure supplement 1D).
 
@@ -117,23 +181,23 @@ Previous studies have identified three major Drosophila blood cell types essenti
 
 **Figure 7.:** (A) Proposed model depicting inter-hemocyte crosstalk between Bnl+crystal cells and Btl+ lamellocytes. Based on our in vivo data, we propose that crystal cells expressing Bnl are important for the differentiation or maturation and possible migration or recruitment of lamellocytes towards parasitoid wasp eggs. (B) FGF signaling pathway map depicting the enrichment of genes that encode core components of the FGF signaling pathway. Triangle, rectangle, circles, diamonds, polygons represent ligand, receptor, signaling proteins, transcription factors, and their downstream target genes, respectively. Color gradient within nodes represents the number of cells a particular gene is enriched. Blue line (edge color) represents protein-protein interactions (from PPI network) and red line represents transcription factor-target gene networks. Genes that are more enriched in lamellocytes are in black border and those that are in blue border represent less enriched genes. Note that some genes with white border may be enriched in other clusters and are not marker genes of LM2.
 
-## Towards a fly blood cell atlas – defining cell types and states
+### Towards a fly blood cell atlas – defining cell types and states
 
 Blood cell types are dynamic in nature and several transient intermediate states exist in a continuum during the course of their maturation in several species. Our scRNA-seq analysis provides a framework to distinguish cell types from their various states including oligopotent, transient intermediate and activated states.
 
-## Oligopotent state
+#### Oligopotent state
 
 Our scRNA-seq analysis identified PM2 as the oligopotent state of plasmatocytes based on the enrichment of several cell cycle genes including polo and stg. This signature suggests that PM2 corresponds to self-renewing plasmatocytes located in the circulatory and sessile compartments of the Drosophila hematopoietic system where plasmatocytes are the only dividing cells identified (Lanot et al., 2001; Leitão and Sucena, 2015; Makhijani et al., 2011; Rizki, 1957). Further, previous studies suggested that lamellocytes derived from embryonic-lineage hemocytes are readily detectable in circulation prior to their release from the lymph gland (Márkus et al., 2009), and that terminally differentiated crystal cells can also derive from preexisting plasmatocytes in the sessile hub (Leitão and Sucena, 2015). Hence, we propose that PM2 corresponds to the oligopotent state that not only drives expansion of plasmatocytes, but importantly can also give rise to crystal cells and lamellocytes. Our Monocle3 analysis indicates that cell cycle genes decrease over pseudotime and there is ample evidence in support of the notion that cell cycle arrest may be required for terminal differentiation of various cell types in flies and vertebrates (Buttitta and Edgar, 2007; Guo et al., 2016; Ruijtenberg and van den Heuvel, 2016; Soufi and Dalton, 2016). Our in vivo data also indicates that cell cycle arrest can lead to the generation of terminally differentiated lamellocytes. Interestingly, recent evidence in hemocytes suggests that perturbing cell cycle by knocking down jumu, which is upstream of polo, can also lead to the generation of lamellocytes by activating Toll (Ahmad et al., 2012; Hao and Jin, 2017; Hao et al., 2018). In contrast, forced expression of certain oncogenes such as activated Ras and Hopscotch/JAK in hemocytes can also lead to overproduction of plasmatocytes and lamellocytes (Arefin et al., 2017; Asha et al., 2003; Luo et al., 1995). It is, however, speculated that the proliferation and differentiation of hemocytes in these contexts may be linked to cell cycle (Asha et al., 2003). Thus, it is important to address this paradoxical role of cell cycle in the maintenance of oligopotency and transdifferentiation of plasmatocytes. Studies using lineage tracing methods such as G-TRACE (Evans et al., 2009) or CRISPR-based in vivo cellular barcoding techniques (Kebschull and Zador, 2018; Spanjaard et al., 2018) may help further characterize the contribution of proliferating oligopotent plasmatocytes to blood cell lineages (Figure 3G).
 
-## Immune-activated states
+#### Immune-activated states
 
 PM5 from our scRNA-seq data is enriched in several genes that encode glutathione S-transferase family of metabolic enzymes, which are known to catalyze the conjugation of reduced glutathione (GSH) to xenobiotics for their ultimate degradation (Supplementary file 2). It has been demonstrated that a subset of hemocytes accumulate high GSH levels in Drosophila (Tirouvanziam et al., 2004), in support of our data. Further, we classified the two AMP clusters PM6-7 (PMAMP) as part of the immune-activated states of plasmatocytes. A recent study has demonstrated that AMPs are highly specific and act in synergy against various pathogens (Hanson et al., 2019). Our scRNA-seq analysis reveals the remarkable difference in the expression of a set of AMPs in the two clusters. Future studies with PMAMP-specific perturbation of various AMPs identified within plasmatocytes should clarify their contribution in killing specific pathogens. Moreover, the role of Mtkl against pathogens needs further characterization. Our pseudotime analysis showed that PMAMP ends in the same lineage as lamellocytes suggesting a common mode of activation for these cell types and states. Interestingly, induction in hemocytes of Toll, which is upstream of Drs, can lead to the production of lamellocytes (Hao et al., 2018; Schmid et al., 2014; Zettervall et al., 2004), suggesting that LMint cells may act as the common branch point between immune-activated states and lamellocytes.
 
-## Transient intermediate states
+#### Transient intermediate states
 
 In addition to the oligopotent and immune-activated states, plasmatocytes showed several subpopulations, which most likely are transient intermediate states. Although it remains to be seen whether they exist throughout the larval development, it is possible that these transient states exist along the continuum of cell maturation process. On the other hand, the transcriptomic composition of CC1 and LM1 clusters suggested the presence of intermediates for crystal cells and lamellocytes, respectively. Further analysis by Monocle3, which placed these clusters prior to their terminally differentiated cell types, confirmed our hypothesis that CC1 and LM1 correspond to CCint and LMint states, respectively. In the context of the CC lineage within the lymph gland, ultrastructural studies have revealed the presence of immature crystal cells, called procrystal cells, alongside mature crystal cells (Shrestha and Gateff, 1982). We furthered this observation by demonstrating in vivo that crystal cells exist in a continuum (PPO1low to PPO1high), validating our Monocle3 and scRNA-seq data. Moreover, clear gene signatures between the CCint and LMint states and their mature counterparts revealed that these intermediates most likely emerge from preexisting Hml+ plasmatocytes. With regards to the LM lineage, several groups have speculated that intermediates, called podocytes, or also lamelloblasts, may exist based on cell morphology and size (Anderl et al., 2016; Brantley et al., 2018; Rizki, 1957; Rizki, 1962). Our scRNA-seq and Monocle3-based data clearly demarcate mature lamellocytes from LMint at the transcriptomic level. In addition, our sub-clustering analysis revealed that LMint possessed a PM signature demonstrating that these intermediates are presumably derived from PM2.
 
-## A novel role for the FGF signaling pathway in hemocyte crosstalk
+### A novel role for the FGF signaling pathway in hemocyte crosstalk
 
 In addition to the known hemocyte – tissue crosstalk (Shia et al., 2009), Drosophila hemocytes must act in a coordinated fashion to combat harmful pathogens and foreign entities such as wasp eggs (Banerjee et al., 2019; Lemaitre and Hoffmann, 2007). However, the signaling pathways that mediate the interactions among hemocytes and wound sites or wasp eggs have been unclear. Our scRNA-seq uncovered a novel role for the FGF signaling pathway in controlling hemocyte differentiation and subsequent effects on the melanization of wasp eggs. The FGF ligand bnl and its receptor btl were among the genes identified in rare subsets of crystal cells and lamellocytes, respectively, highlighting the power of scRNA-seq in capturing and detecting these small populations of cells. Based on our in vivo data, we propose that Bnl+crystal cells interact with Btl+ lamellocytes to coordinate lamellocyte differentiation and possible migration towards parasitoid wasp eggs (Figure 7A). Furthermore, because lamellocytes are also enriched in additional core components of the FGF signaling pathway (Figure 7B), future studies involving a comprehensive analysis of this pathway will advance our understanding of blood cell communication, differentiation, and migration in the context of immune response.
 
@@ -141,7 +205,472 @@ In summary, our scRNA-seq data provides a resource for a comprehensive systems-l
 
 ## Materials and methods
 
-## Fly stocks and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th colspan="2">Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">CG43236</td>
+      <td colspan="2">NA</td>
+      <td>FLYB: FBgn0262881</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">E(spl)m3-HLH</td>
+      <td colspan="2">NA</td>
+      <td>FLYB: FBgn0002609</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Drip</td>
+      <td colspan="2">NA</td>
+      <td>FLYB: FBgn0015872</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">bnl</td>
+      <td colspan="2">NA</td>
+      <td>FLYB: FBgn0014135</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">btl</td>
+      <td colspan="2">NA</td>
+      <td>FLYB: FBgn0285896</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td colspan="2">Oregon R</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 5</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (L. boulardi)</td>
+      <td colspan="2">Leptopilina boulardi</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>PMID:17967061</td>
+      <td colspan="2">Strain G486</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">HmlΔ-GAL4; UAS-2XEGFP</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 30140; FLYB: FBst0030140</td>
+      <td colspan="2">FLYB genotype: w1118; P{Hml-GAL4.Δ}2, P{UAS-2xEGFP}AH2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">Hml-GAL4-Lineage Trace (HLT)-GAL4</td>
+      <td colspan="2">Dr. Utpal Banerjee</td>
+      <td>PMID:22134547</td>
+      <td colspan="2">Hml-Gal4 UAS-FLP, ubi-FRT-STOP-FRT-Gal4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">lz-GAL4; UAS-GFP</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 6314; FLYB: FBst0006314</td>
+      <td colspan="2">FLYB genotype: y1 w* P{UAS-mCD8::GFP.L}Ptp4ELL4 P{GawB}lzgal4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">E(spl)m3-HLH-GAL4</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 46517; FLYB: FBst0046517</td>
+      <td colspan="2">FLYB genotype: w1118; P{GMR10E12-GAL4}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">Drip-GAL4</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 66782; FLYB: FBst0066782</td>
+      <td colspan="2">FLYB genotype: y1 w*; Mi{Trojan-GAL4.0}DripMI00887-TG4.0/SM6a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">btl-GAL4</td>
+      <td colspan="2">Perrimon Lab stock</td>
+      <td>NA</td>
+      <td colspan="2">Genotype: yw; UAS-GFPN-lacZ(2-1)/CyO; btl-Gal4(3-1)/TM3 Sb Ser</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">bnl-LexA</td>
+      <td colspan="2">Dr. Sougata Roy</td>
+      <td>PMID:28502613</td>
+      <td colspan="2">bnl-LexA/TM6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">Ubi-GAL4</td>
+      <td colspan="2">Dr. Utpal Banerjee</td>
+      <td>PMID:24267893</td>
+      <td colspan="2">Ubiquitin-GAL4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">BcF6-mCherry</td>
+      <td colspan="2">Dr. Robert Schulz</td>
+      <td>PMID:27913635</td>
+      <td colspan="2">BcF6-mCherry (III)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">msn-mCherry</td>
+      <td colspan="2">Dr. Robert Schulz</td>
+      <td>PMID:27913635</td>
+      <td colspan="2">MSNF9mo-mCherry (III)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">srp-GAL4</td>
+      <td colspan="2">Dr. Lucas Waltzer</td>
+      <td>PMID:14657024</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">LexAOp-myr-GFP</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC:32210; FLYB: FBst0032210</td>
+      <td colspan="2">FLYB genotype: P{13XLexAop2-IVS-myr::GFP}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">LexAOp-mCherry</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC:52271; FLYB: FBst0052271</td>
+      <td colspan="2">FLYB genotype: y1 w*; wgSp-1/CyO, P{Wee-P.ph0}BaccWee-P20; P{13XLexAop2-6XmCherry-HA}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-mCD8- GFP</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 5137; FLYB: FBst0005137</td>
+      <td colspan="2">FLYB genotype: y1 w*; P{UAS-mCD8::GFP.L}LL5, P{UAS-mCD8::GFP.L}2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-poloRNAi</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 33042; FLYB: FBst0033042</td>
+      <td colspan="2">FLYB genotype: y1 sc* v1 sev21; P{TRiP.HMS00530}attP2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-btlRNAi-1</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 43544; FLYB: FBst0043544</td>
+      <td colspan="2">FLYB genotype: y1 sc* v1 sev21; P{TRiP.HMS02656}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-btlRNAi-2</td>
+      <td colspan="2">BloomingtonDrosophilaStock Center</td>
+      <td>BDSC: 60013; FLYB: FBst0060013</td>
+      <td colspan="2">FLYB genotype: y1 v1; P{TRiP.HMS05005}attP40</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-empty</td>
+      <td colspan="2">Dr. Hugo Bellen</td>
+      <td>PMID:27640307</td>
+      <td colspan="2">UAS-empty (III)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (D. melanogaster)</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Biological sample (D. melanogaster)</td>
+      <td colspan="2">larval hemolymph (blood)</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">Hemocytes from hemolymph of third instar (96 and 120 hr AEL) larvae</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">L1abc (mouse monoclonal)</td>
+      <td colspan="2">Prof. Istvan Andó</td>
+      <td>PMID:18297797</td>
+      <td colspan="2">1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-PPO2 (mouse monoclonal)</td>
+      <td colspan="2">Prof. Istvan Andó</td>
+      <td>PMID:18297797</td>
+      <td colspan="2">1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-Hindsight (mouse monoclonal)</td>
+      <td colspan="2">Developmental Studies Hybridoma Bank</td>
+      <td>Cat# 1G9</td>
+      <td colspan="2">1:10 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">anti-Mys (mouse monoclonal)</td>
+      <td colspan="2">Developmental Studies Hybridoma Bank</td>
+      <td>Cat# CF-6G11</td>
+      <td colspan="2">1:10 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">CecC (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD41779</td>
+      <td colspan="2">For: GCATTGGACAATCGGAAGCC Rev: TTGCGCAATTCCCAGTCCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Drs (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD40133</td>
+      <td colspan="2">For: CTGGGACAACGAGACCTGTC Rev: ATCCTTCGCACCAGCACTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Mtk (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD41985</td>
+      <td colspan="2">For: GCTACATCAGTGCTGGCAGA Rev: TTAGGATTGAAGGGCGACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">CG43236 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD41670</td>
+      <td colspan="2">For: GCAAGAGTTTGGATGCCACC Rev: GCCTCATATCGAAAGGATTGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">stg (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PB60117</td>
+      <td colspan="2">For: GAAAACAACTGCAGCATGGAT Rev: CGACAGCTCCTCCTGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">polo (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP7029</td>
+      <td colspan="2">For: CCCGAGGATAAGAGCACGGA Rev: GTCGTCGGTTTCCACATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">MMP1 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP18419</td>
+      <td colspan="2">For: CCAGTTCGGCTATCTACCCG Rev: CTCGATGGCACTCACCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Ance (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP22471</td>
+      <td colspan="2">For: GTGATACCACCAAGTTCCAATGG Rev: GGCATAGTCGTCTTCAGGTAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">GstE6 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP10905</td>
+      <td colspan="2">For: TACGGTTTGGACCCCAGTC Rev: ATATTCCGGTGAAAGTTGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Arc1 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP10071</td>
+      <td colspan="2">For: ATGGCCCAGCTTACACAGATG Rev: GGAGAAGTTGCCTTTGCCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Prx2540-1 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD40349</td>
+      <td colspan="2">For: ATGATCCTGCCCACTGTCAC Rev: CAGTGGTGCGGACGTAGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Ubx (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP12922</td>
+      <td colspan="2">For: ATGAACTCGTACTTTGAACAGGC Rev: CCAGCGAGAGAGGGAATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Cpx (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD40622</td>
+      <td colspan="2">For: CGCGAGAAGATGAGGCAAGA Rev: CATCAGGGGATTGGGCTCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">mthl7 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP15001</td>
+      <td colspan="2">For: AGTTTGGGGACGGTTCGATTA Rev: TGAGACCATCATCGCATTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Cys (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP22082</td>
+      <td colspan="2">For: GGATGCCACTCTCGCACAG Rev: GGTGTTAAGACTTCCAGCTACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">bnl (primer)</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">For: AACCCAAATCCAATCCCAAT Rev: GATGCTGTTGCTGTTGCTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">btl (primer)</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">For: GAGTCGATCCCTGAAGTTGC Rev: GCAGTTGCCCCACTGTTAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">RpL32/rp49 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PD41810</td>
+      <td colspan="2">For: AGCATACAGGCCCAAGATCG Rev: TGTTGTCGATACCCTTGGGC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium Single Cell 3’ Library and Gel Bead Kit v2</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-120267</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium i7 Multiplex Kit</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-120262</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium Single Cell A Chip Kit</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-1000009</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Seurat</td>
+      <td colspan="2">Stuart et al., 2019</td>
+      <td>PMID:31178118</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Harmony</td>
+      <td colspan="2">Korsunsky et al., 2019</td>
+      <td>PMID:31740819</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Monocle 3</td>
+      <td colspan="2">Cao et al., 2019</td>
+      <td>PMID:30787437</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Jalview</td>
+      <td colspan="2">Waterhouse et al., 2009</td>
+      <td>PMID:19151095</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>oftware, algorithm</td>
+      <td colspan="2">Biorender</td>
+      <td colspan="2">https://biorender.com/</td>
+      <td>NA</td>
+      <td colspan="2">Biorender was utilized to make the schematic diagrams used in this study.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">DAPI (nuclear stain)</td>
+      <td colspan="2">Vector Laboratories</td>
+      <td>Cat# H-1200</td>
+      <td colspan="2">Ready to use</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">Phalloidin</td>
+      <td colspan="2">ThermoFischer</td>
+      <td>Cat# A34055</td>
+      <td colspan="2">1:100 dilution</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">Optiprep</td>
+      <td colspan="2">AxisShield</td>
+      <td>AXS-1114542</td>
+      <td colspan="2">Working concentration: 1.09 g/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">SyBr Green</td>
+      <td colspan="2">Bio-Rad iQ SYBR Green Supermix</td>
+      <td>Cat# 1708880</td>
+      <td colspan="2">Working concentration: 1X</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and reagents
 
 Drosophila melanogaster larvae of the genetic backgrounds w;Hml-GAL4Δ, UAS-2X EGFP (Hml > EGFP) or Oregon R (OreR) were used for the preparation of single hemocytes. Third instar Hml > EGFP larvae and second instar OreR larvae were used for wounding and wasp infestations, respectively. To visualize the crystal cell hubs, yw; lz-GAL4; UAS-mCD8::GFP (lz >GFP) (BL# 6314) flies were crossed to w;;BcF6-mCherry flies and the resultant female larvae positive for both reporters were used for confocal microscopy. The following stocks were obtained from the Bloomington Drosophila Stock Center (BDSC), GAL4 lines: Drip-GAL4 (BL# 66782), E(spl)m3-HLH-GAL4 (BL# 46517); RNAi lines: bnl-RNAi (BL# 34572), btl-RNAi (BL# 43544; 60013), polo-RNAi (BL# 33042); and Reporter line: LexAOp-myr-GFP (BL# 32210). The srp-GAL4 was obtained from a previous study (Waltzer et al., 2003). The bnl-LexA line was a kind gift from Dr. Sougata Roy (Du et al., 2017). The yw;UAS-GFPN-lacZ;btl-GAL4 (which expresses a nuclear GFP/lacZ fusion protein under the control of btl-GAL4) and w;Hml-GAL4Δ, UAS-2X EGFP lines are Perrimon Lab stocks. BcF6-mCherry and msn-mCherry fly stocks were obtained from Dr. Robert Schulz (Tokusumi et al., 2017).
 
@@ -149,27 +678,27 @@ The lz-GAL4; UAS-mCD8::GFP, BcF6-mCherry line was obtained by crossing lz-GAL4; 
 
 All flies and larvae were maintained on standard fly food at 25°C.
 
-## Antibodies
+### Antibodies
 
 Antibodies against Atilla [anti-mouse L1abc (1:100 dilution)] and PPO2 (1:1000 dilution) were generous gifts from István Ando (Kurucz et al., 2007). Phalloidin (ThermoFischer A34055) was used at a concentration of 1:100. Hindsight (Hnt; 1:10 dilution) and Myospheroid (Mys; 1:10 dilution) antibodies were obtained from DSHB.
 
-## Wounding and wasp infestation
+### Wounding and wasp infestation
 
-## Wounding
+#### Wounding
 
 Precisely timed 24 hr (hours) after egg lay (AEL) larvae of the hml >EGFP genotype were collected and grown on normal fly food until they reached 96 hr AEL for wounding procedure. At 96 hr AEL, larvae were either left unwounded or wounded with a clean tungsten needle (Fine Science Tools, cat# 10130–05). Ten larvae at a time were wounded at their posterior dorsal side and returned back to fly food with a total of at least 80 wounded larvae per vial. 24 hr later, the unwounded control and wounded larvae were retrieved from fly food and washed in distilled water twice.
 
-## Wasp infestation
+#### Wasp infestation
 
 OreR larvae were infested at 72 hr AEL with the wasps of the species Leptopilina boulardi, strain G486. Wasps were removed after 12 hr of co-culture and egg deposition was confirmed by direct observation of wasp eggs in the hemolymph during dissection. 100 larvae were dissected at 96 and 120 hr AEL, corresponding to 24 and 48 hr post infestation (wasp inf. 24 hr and 48 hr), respectively, in Schneider's medium (Gibco, cat# 21720024).
 
-## Preparation of single hemocytes in suspension
+### Preparation of single hemocytes in suspension
 
 To get most of the sessile hemocytes into circulation, washed larvae were transferred to 2 ml Eppendorf tubes containing ~0.5 ml of glass beads (Sigma #9268, size: 425–600 μm) in PBS and larvae were vortexed for 2 min as previously described with minor modifications (Petraki et al., 2015). One set each of unwounded and wounded larvae were vortexed in separate tubes at a time. After the brief vortex, larvae were retrieved, washed and transferred to 200 μl of ice-cold PBS in each well of a clean 9-well glass dish per condition. ~100 larvae were bled by gently nicking open the posterior side of each larva using a pair of clean tweezers. Larvae were allowed to bleed for at least a minute and the hemolymph in PBS was filtered through 100 μm cell strainer and the filtered hemolymph was overlaid onto 2 ml of 1.09 g/ml Optiprep gradient solution (Axis-Shield cat# AXS-1114542) and spun at 2000 rpm for 30 min at 4°C to eliminate dead cells and debris. After centrifugation,~150 μl of the hemolymph was transferred to clean low bind Eppendorf tubes and counted using a hemocytometer. High quality single hemocytes were subjected to encapsulation either by inDrops or 10X Genomics v2 platform.
 
 Hemocytes from wasp infested larvae were isolated with some modifications, where the optiprep step was avoided to obtain higher number of cells. Briefly, after vortexing, the larvae were bled in ice cold Schneider’s medium, filtered through 100 μm cell strainer, and transferred to a clean Eppendorf tube. Next, the cells were spun at 4°C for 5 min at 6000 rpm. The supernatant was discarded, and the cells were re-suspended in ice cold PBS to achieve a concentration of 300 cells/μl and subjected to Drop-seq based encapsulation.
 
-## Single hemocyte encapsulation and sequencing
+### Single hemocyte encapsulation and sequencing
 
 Single hemocytes from unwounded control (n = 4) and wounded larvae (n = 4), respectively, were encapsulated either by inDrops or 10X genomics v2 platforms, with n = 2 per platform.
 
@@ -183,92 +712,92 @@ With regards to 10X genomics, cells were encapsulated according to the manufactu
 
 Drop-seq was used to encapsulate the wasp inf. 24 hr samples (n = 3). The protocol for Drop-seq based encapsulation was followed as previously described (Macosko et al., 2015).
 
-## Data processing
+### Data processing
 
-## Count matrix generation inDrops:
+#### Count matrix generation inDrops:
 
 The software version used to generate counts from the FASTQ files were managed with bcbio-nextgen 1.0.6a0-d2b5b522 (https://github.com/bcbio/bcbio-nextgen) using bioconda (Grüning et al., 2018) (https://bioconda.github.io/). First, cellular barcodes and UMIs were identified for all reads. Second, reads with one or more mismatches of a known barcode were discarded. Third, remaining reads were quasi-aligned to the FlyBase FB2018_02 Dmel Release 6.21 reference transcriptome using RapMap 0.5.0 (Srivastava et al., 2016) (https://github.com/COMBINE-lab/RapMap). EGFP and GAL4 sequences were included in the transcriptome as spike-in genes (https://github.com/hbc/A-single-cell-survey-of-Drosophila-blood; Steinbaugh et al., 2020; copy archived at https://github.com/elifesciences-publications/A-single-cell-survey-of-Drosophila-blood) Reads per cell were counted using the umis 0.6.0 package for estimating UMI counts in transcript tag counting data (Svensson et al., 2017) (https://github.com/vals/umis), discarding duplicated UMIs, weighting multi-mapped reads by the number of transcripts they aligned to, and collapsing counts to genes by adding all counts for each transcript of a gene. Finally, cellular barcodes with fewer than 1000 reads assigned were discarded from the analysis (see ‘minimum_barcode_depth’ in bcbio documentation for details).
 
-## 10x genomics
+#### 10x genomics
 
 BCL files were analyzed with the Cell Ranger pipeline (v2.1.1). The demultiplexed FASTQ data were aligned to FlyBase FB2018_02 Dmel Release 6.21 reference to generate the single cell count matrix.
 
-## Drop-seq
+#### Drop-seq
 
 Paired-end reads were processed and mapped to the reference genome BDGP 6.02 (Ensembl September 2014) following the Drop-seq Core Computational Protocol version 1.2 (January 2016) and corresponding Drop-seq tools version 1.13 (https://github.com/broadinstitute/Drop-seq) (December 2017) provided by McCarroll Lab (http://mccarrolllab.org/dropseq/). The Picard suite (https://github.com/broadinstitute/picard) was used to generate the unaligned bam files which were processed using the Drop-seq_alignment.sh script. The steps include detection of barcode and UMI sequences, filtration and trimming of low-quality bases and adaptors or poly-A tails, and alignment of reads using STAR (2.5.3a).
 
-## Quality control (QC) analysis and filtering inDrops:
+#### Quality control (QC) analysis and filtering inDrops:
 
 Gene-level counts were imported to R using the bcbioSingleCell 0.1.15 package (https://github.com/hbc/bcbioSingleCell). This package extends the Bioconductor SingleCellExperiment container class, which is optimized for scRNA-seq (Huber et al., 2015). SingleCellExperiment: S4 Classes for Single Cell Data. R package version 1.6.0.] (https://bioconductor.org/packages/SingleCellExperiment). QC analysis was performed using this package, and the `filterCells()` function was used to filter out low quality cells by keeping cellular barcodes with the following metrics: (1)>=100 UMIs per cell; (2)>=100 genes per cell; (3)>=0.85 novelty score, calculated as log10(genes detected)/log10(UMI counts per cell). Additionally, genes with very low expression across the data set were filtered by applying a cutoff of >= 10 cells per gene. One sample, blood3_TCGCATAA, was filtered at a higher threshold of 650 genes per cell, which was required to subset the input cellular barcodes into the expected biological range based on the inDrops encapsulation step.
 
-## 10x genomics
+#### 10x genomics
 
 QC was performed by keeping cells with the following metrics: (1)>=500 UMIs per cell; (2)>=200 genes per cell; (3)<=30 percentage of mitochondria genes.
 
-## DropSeq
+#### DropSeq
 
 Cumulative distribution of reads from the aligned bam files were obtained using BAMTagHistogram from the Drop-seq tools package. The number of cells were inferred from the sharp decrease in the slope. The inferred cell number was determined as a minimal threshold number of aligned reads per cell for cell selection.
 
 In our QC pipeline, we did not regress out cell cycle genes during clustering for two reasons: 1. Cell cycle genes did not contribute to the variation for downstream clustering, and 2. We expected cycling plasmatocytes to be an important aspect in our analysis. Hence, cell cycle parameters were retained throughout clustering process.
 
-## Data integration
+#### Data integration
 
 For combined analysis of all samples, the quality filtered datasets were merged using the common genes into a single Seurat (version 3.1) object (Stuart et al., 2019) and integrated using Harmony (Korsunsky et al., 2019). The gene symbols from inDrops, 10X, and Drop-seq were converted to the same version by using FlyBase online ID Converter tool (FB2019_03) (Thurmond et al., 2019). Genes expressed in at least two out of three conditions were retained when combining datasets from different technologies, to minimize loss of genes, as Harmony uses common genes across all conditions. We ran PCA using the expression matrix of the top 2000 most variable genes. The total number of principal components (PCs) to compute and store were 20. Theta values were set c(2, 10) for condition and technology. A resolution of 0.4 was chosen as clustering parameter. The t-SNE was then performed using default parameters to visualize data in the two-dimensional space.
 
-## Merging of clusters
+#### Merging of clusters
 
 At 0.4 resolution, 20 clusters were obtained and three clusters (1, 14, and 19) shared similar gene expression with that of cluster 0. Hence, we merged clusters 1, 14, and 19 into 0 (see Figure 1—figure supplement 1F).
 
-## Sub-clustering
+#### Sub-clustering
 
 Crystal cell sub-clustering and lamellocyte sub-clustering follow the same procedure but with different parameters. For Crystal cell sub-clustering we used theta = c(2, 5) for condition and technology and clustering resolution of 0.1. For lamellocyte sub-clustering we used theta = c(3, 8) for condition and technology and clustering resolution of 0.1.
 
-## Gene Expression Visualization by dot plots
+#### Gene Expression Visualization by dot plots
 
 Dot plots were generated using Seurat DotPlot function. Heatmaps were generated using Seurat DoHeatmap function and split by condition.
 
-## Pseudotemporal ordering of cells using Monocle3
+### Pseudotemporal ordering of cells using Monocle3
 
 Cells from the unwounded and wounded data sets (10X platform; n = 2 per condition) were analyzed by Monocle3 (https://github.com/cole-trapnell-lab/monocle3; Cao et al., 2019). The input data set was pre-processed by using num_dim equal 65. Then the data was applied by align_cds function to remove the batch effect. The cell trajectory was calculated by using learn_graph function and ncenter equal 1000. Three lineages were selected by using choose_graph_segments function. The gene expression along pseudotime data were extracted from the result of plot_genes_in_pseudotime function. Then the data was used to plot genes along pseudotime in three lineages using ggplot2 v3.2.1 R package and the heatmap was generated using pheatmap v1.0.12 R package. The Ridgeline plot was generated using ggridges v0.5.1 R package.
 
-## Assignment of the start point
+#### Assignment of the start point
 
 To be unbiased, we calculated the average expression of three cell cycle associated genes enriched in PM2: polo, stg, and scra. We then assigned the start point, which coincidentally also overlapped with the high expression of Hml around the same start point.
 
-## Data files and analysis code
+### Data files and analysis code
 
 The original FASTQ files, UMI-disambiguated counts in MatrixMarket Exchange format (MTX files) [see https://math.nist.gov/MatrixMarket/info.html for details], and inDrops v3 sample barcodes used are available on the NCBI Gene Expression Omnibus (GEO) with the accession number GSE146596. The code used to perform clustering and marker analysis is available on GitHub at https://github.com/hbc/A-single-cell-survey-of-Drosophila-blood.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 We performed gene set enrichment analysis on marker genes with positive fold change for each cluster using a program written in-house. Gene sets for major functional groups were collected from the GLAD database (Hu et al., 2015), and gene sets for metabolic pathways were from the KEGG database (Kanehisa et al., 2017) and Reactome database (McKay and Weiser, 2015). P-value enrichment was calculated based on the hypergeometric distribution. The strength of enrichment was calculated as negative of log10(p-value), which is used to plot the heatmap.
 
 With regard to the FGFR pathway analysis in Figure 7B, all the interactions were based on protein-protein interaction data retrieved from molecular interaction search tool (MIST) release 5 (Hu et al., 2018). The expression pattern in CC2 and LM2 was analyzed. The receptor-ligand pair (Btl-Bnl) where the receptor expressing in at least 5 cells of LM2 cluster while ligand expressing in at least 5 cells of CC2 cluster was selected. The core components of the FGFR signaling pathway were retrieved from GLAD (Hu et al., 2015) while the annotation of transcription factor (TF) - target genes was obtained from manual curation of a related publication (database not published). The protein-protein interaction data among the pathway components were obtained from MIST and the network was built using Cytoscape v3.2.0 (Franz et al., 2016). Node color reflects the number of cells in LM2 cluster (the gene nodes with <5 cells in LM2 were removed from network). Node shapes reflect the ligands, receptors, TFs or their target genes.
 
-## Immunostaining and confocal microscopy
+### Immunostaining and confocal microscopy
 
-## Whole larval imaging
+#### Whole larval imaging
 
 Third instar lz-GAL4 >GFP; BcF6-mCherry larvae were heat killed in glycerol on a glass slide and directly mounted onto coverslip-bottom imaging dishes (ibidi, cat# 81158). The posterior hemocyte hubs were imaged with Z stacks of 2 μm distance each encompassing the entire area of the hub in a lateral direction using a Zeiss LSM 710 confocal microscope. Finally, all the stacks per larva were merged by summing the intensities on Fiji software for subsequent intensity measurements of GFP and mCherry.
 
 Wasp infested w;UAS-GFPN-lacZ;btl-GAL4 larvae were imaged using Nikon C2 Si-plus confocal microscope.
 
-## Staining hemocytes from unwounded or wounded larvae
+#### Staining hemocytes from unwounded or wounded larvae
 
 ~13 larvae per condition or genotype were vortexed and bled into 300 μl of Schneider’s insect media and then the cells were transferred to one well (per condition) of the Lab-Tek II chambered coverglass (VWR, cat# 62407-056). Hemocytes were allowed to settle down for 30 min, then were fixed in 4% paraformaldehyde (PFA) for 20 min. Next, the cells were washed three times with 1X PBS and permeabilized with 0.1% PBST (PBS with 0.1% Triton-X) for 10 min. Subsequently, the cells were blocked with 5% BSA in PBST (blocking buffer) for 20 min and subsequently incubated with primary antibodies L1abc (1:100 dilution) overnight at 4°C. The next day, cells were washed three times in PBST and incubated with corresponding secondary antibodies (1:500 dilution) for 1 hr at room temperature. Finally, the cells were washed (3X) and mounting media with DAPI was directly added onto the cells in the wells and imaged using Nikon Spinning disk microscope.
 
-## Staining hemocytes from wasp infested larvae
+#### Staining hemocytes from wasp infested larvae
 
 Larvae were vortexed with glass beads for one minute before bleeding to detach sessile hemocytes. Next, the larvae were bled on a slide glass (Immuno-Cell Int. cat# 2018A29) and hemocytes allowed to settle onto the slide at 4°C for 40 min. Hemocytes were washed 3 times in 0.4% Triton X-100 in 1x PBS for 10 min and blocked in 1% BSA/0.4% TritonX in 1xPBS for 30 min. Primary antibody was added, and samples incubated overnight at 4°C. Hemocytes were washed 3 times in 0.4% Triton X in 1xPBS and then incubated with a secondary antibody with 1% BSA/0.4% Triton X in 1xPBS for 3 hr at room temperature. After washing 3 times with 0.4% Triton X in 1xPBS, samples were kept in Vectashield (Vector Laboratory) with DAPI and imaged by a Nikon C2 Si-plus confocal microscope.
 
-## Cell counting
+#### Cell counting
 
 Hemocytes were mounted and imaged by Nikon C2 Si-plus or Zeiss Axiocam 503. Captured image of hemocytes were quantified and analyzed by ImageJ (plugin: 3D object counter) or Imaris (Bitplane). Hemocytes bled from individual whole larvae were counted for this study.
 
-## Quantitative real time polymerase chain reaction (qRT-PCR)
+### Quantitative real time polymerase chain reaction (qRT-PCR)
 
 Hemolymph with hemocytes was derived 24 hr after wounding along with their unwounded control Hml >EGFP larvae. 50 ~ 80 larvae per biological replicate were bled in 80 μl of Schneider’s insect media and the resulting hemolymph (~100 μl) was transferred to RNase free Eppendorf tubes and frozen on dry ice. In parallel, whole larvae (four larvae per biological replicate) were directly transferred to the Eppendorf tubes and frozen on dry ice. For RNA isolation from hemocytes, 1 ml of TRIzol (ThermoFischer cat# 15596–026) was added to each sample and incubated for 5 min before adding 0.2 ml of chloroform for subsequent phase separation. The tubes were spun for 15 min at 12 k rpm at 4°C. The aqueous phase was carefully retrieved and transferred to a fresh tube and equal volumes of absolute ethanol was added. For better precipitation of RNA, 1 μl of glycogen (Roche, cat# 10901393001) was added to the tubes and incubated at −20°C overnight. Later, the tubes were spun down at 12 K rpm for 15 min at 4°C and the resultant pellet was washed in 70% ethanol, air dried, and subjected to DNase treatment using the manufacturer’s instructions of Turbo DNA free (cat# AM1907). The DNA free RNA was further purified using Zymo Direct-zol RNA MicroPrep kit (cat# R2050). The resultant pure RNA was reverse transcribed using Bio-Rad iScript Select cDNA synthesis kit (cat# 1708896) and SyBr green (cat# 1708880) based qRT-PCR was performed to determine the expression levels of AMP genes. For total RNA isolation from whole larvae, the above protocol was followed except no overnight precipitation method was used and that the larvae were homogenized using RNase-free pestles. qRT-PCR primers were designed using FlyPrimerBank (Hu et al., 2013).
 
-## Statistics
+### Statistics
 
 All statistics with regard to the intensity measurements, cell counts, and qRT-PCR, were performed on Prism eight software. The error bars represent ± standard error of mean (SEM) or standard deviation (SD) as mentioned in the results section or figure legends. Significance between two conditions or genotypes was calculated by unpaired t test, while those involving multiple genotypes and conditions were calculated by one-way ANOVA on Prism 8. The p values shown in the figures are represented by * (p<0.05), ** (p<0.01), *** (p<0.001), and **** (p<0.0001).

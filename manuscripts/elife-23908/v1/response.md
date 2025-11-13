@@ -45,11 +45,9 @@ When the ATP supply and demand are unchanged, there exists a negative correlatio
 
 5) Figure 4 is confusing, since the manipulations of flashes through antioxidants may exert other effects to alter the detection/measurement of ATP using the fluorescent indicator. The authors need to rule out that the negative correlation was not a result of indirect effect or off-target effect.
 
-We tested the indirect or side- effect of SS31 and mitoTEMPO on ATP measurement using the in vitroluciferin luminescence assay. As shown in Author response image 1, neither SS31 nor mitoTEMPO exhibited any significant effect on ATP measurement.10.7554/eLife.23908.021Author response image 1.Effect of SS31 or mitoTEMPO on ATP measurement.10 nM and 50 nM ATP standards were used in the luciferin luminescence assay with or without adding SS31 (100 μM) or mitoTEMPO (1 μM). n = 4 independent experiments.DOI: http://dx.doi.org/10.7554/eLife.23908.021
+We tested the indirect or side- effect of SS31 and mitoTEMPO on ATP measurement using the in vitroluciferin luminescence assay. As shown in Author response image 1, neither SS31 nor mitoTEMPO exhibited any significant effect on ATP measurement.10.7554/eLife.23908.021Author response image 1.Effect of SS31 or mitoTEMPO on ATP measurement.10 nM and 50 nM ATP standards were used in the luciferin luminescence assay with or without adding SS31 (100 μM) or mitoTEMPO (1 μM). n = 4 independent experiments.
 
 10 nM and 50 nM ATP standards were used in the luciferin luminescence assay with or without adding SS31 (100 μM) or mitoTEMPO (1 μM). n = 4 independent experiments.
-
-DOI: http://dx.doi.org/10.7554/eLife.23908.021
 
 6) Figure 5 is the key data to support this study's conclusion. The idea that BCl-XL coupled but not UCP coupled proton leak triggers flashes (and suppressed ATP) is interesting. However, the authors need to show with direct measurements that manipulating UCP or BCl-XL changes the pH in the microdomain in the matrix near the inner membrane of mitochondria in cardiomyocytes. They also need to explain why and how the leaked protons between these two mechanisms could have a different effect in triggering flashes.
 
@@ -61,11 +59,9 @@ We have measured the mitochondrial membrane potential by interventions used in t
 
 8) What happens to the frequency of mito flashes after application of the ATP synthase inhibitor oligomycin?
 
-Author response image 2 shows that the mitoflashes stimulated by 10 mM pyruvate are sensitive to the inhibition of the ATP synthase with oligomycin, in general agreement with what has been seen at 5.6 mM glucose condition (Wang et al., 2008).10.7554/eLife.23908.022Author response image 2.Inhibition of mitoflashes by oligomycin.The adult cardiomyocytes were stimulated by 10 mM pyruvate. 5 μM oligomycin were applied to treat the cells for 30 min before mitoflash detection. n = 12-22 cells for either group. ** p <0.01 versuscontrol.DOI: http://dx.doi.org/10.7554/eLife.23908.022
+Author response image 2 shows that the mitoflashes stimulated by 10 mM pyruvate are sensitive to the inhibition of the ATP synthase with oligomycin, in general agreement with what has been seen at 5.6 mM glucose condition (Wang et al., 2008).10.7554/eLife.23908.022Author response image 2.Inhibition of mitoflashes by oligomycin.The adult cardiomyocytes were stimulated by 10 mM pyruvate. 5 μM oligomycin were applied to treat the cells for 30 min before mitoflash detection. n = 12-22 cells for either group. ** p <0.01 versuscontrol.
 
 The adult cardiomyocytes were stimulated by 10 mM pyruvate. 5 μM oligomycin were applied to treat the cells for 30 min before mitoflash detection. n = 12-22 cells for either group. ** p <0.01 versuscontrol.
-
-DOI: http://dx.doi.org/10.7554/eLife.23908.022
 
 9) The authors argue that calcium does not regulate the appearance of mito flashes. What effect does inhibition of MCU have on mito flashes? Why does pyruvate which feeds the TCA cycle (a calcium dependent process) increase mito flashes while a calcium chelator also increases mito flashes by 48% (subsection “Mitoflash Response to Altered Energy Expenditure”, last paragraph; Figure 3D)?
 

@@ -6,10 +6,10 @@
 
 ### Affiliations
 
-1. https://ror.org/046rm7j60 Department of Psychology, University of California, Los Angeles Los Angeles United States
-2. https://ror.org/046rm7j60 Brain Research Institute, University of California, Los Angeles Los Angeles United States
-3. https://ror.org/046rm7j60 Integrative Center for Learning and Memory, University of California, Los Angeles Los Angeles United States
-4. https://ror.org/046rm7j60 Integrative Center for Addictive Disorders, University of California, Los Angeles Los Angeles United States
+1. Department of Psychology, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+2. Brain Research Institute, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+3. Integrative Center for Learning and Memory, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+4. Integrative Center for Addictive Disorders, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
 
 † Corresponding author
 
@@ -23,17 +23,128 @@ To make good decisions we use the time machine that is our brain to cast ourselv
 
 In recent years, our understanding of the neuronal circuits of appetitive associative learning and decision making has grown dramatically. There has been considerable work on the bidirectional connections between the basolateral amygdala and orbitofrontal cortex. I review recent discoveries made about the function of this circuit using sophisticated behavioral approaches to diagnose the content of appetitive memory in combination with modern circuit dissection tools. Table 1 summarizes key findings. I focus on work in experimental rodents in which these tools have been most commonly applied, but provide some functional comparison to primates, including humans. I finish with emergent conclusions, hypotheses, and future directions.
 
+**Table 1.**
+ Key findings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Outcome-specific learning</th>
+      <th colspan="4">Outcome-specific decision making</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Sensitivity to devaluation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hub</td>
+      <td>Stimulus-Outcome</td>
+      <td>Action-outcome</td>
+      <td>Incentive value</td>
+      <td>Pavlovian-to-instrumental transfer</td>
+      <td>Pavlovian responses</td>
+      <td>Instrumental choice</td>
+      <td>Incentive value</td>
+    </tr>
+    <tr>
+      <td>BLA</td>
+      <td>Necessary Sias et al., 2021</td>
+      <td>Necessary Corbit et al., 2013</td>
+      <td>Necessary Malvaez et al., 2019; Parkes and Balleine, 2013; Wassum et al., 2009; Wassum et al., 2011</td>
+      <td>Necessary Sias et al., 2021; Ostlund and Balleine, 2008; Corbit and Balleine, 2005; Hatfield et al., 1996; Blundell et al., 2001; Malvaez et al., 2015, Lichtenberg et al., 2021</td>
+      <td>Necessary Sias et al., 2021; Hatfield et al., 1996; Johnson et al., 2009, Lichtenberg et al., 2021; Murray and Izquierdo, 2007; Málková et al., 1997; West et al., 2012</td>
+      <td>Necessary Parkes and Balleine, 2013; Johnson et al., 2009; Murray and Izquierdo, 2007; Balleine et al., 2003; Coutureau et al., 2009</td>
+      <td>Necessary Malvaez et al., 2019</td>
+    </tr>
+    <tr>
+      <td>lOFC</td>
+      <td>Necessary Sias et al., 2021</td>
+      <td>X38</td>
+      <td>Necessary &amp; Sufficient Malvaez et al., 2019; Baltz et al., 2018</td>
+      <td>Necessary Ostlund and Balleine, 2007</td>
+      <td>Necessary Ostlund and Balleine, 2007</td>
+      <td>X40</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>mOFC</td>
+      <td>?</td>
+      <td>Necessary Bradfield et al., 2015; Bradfield et al., 2018</td>
+      <td>?</td>
+      <td>Necessary Bradfield et al., 2015; Bradfield et al., 2018</td>
+      <td>?</td>
+      <td>Necessary &amp; Sufficient Bradfield et al., 2015; Bradfield et al., 2018; Gourley et al., 2016</td>
+      <td>Necessary &amp; Sufficient Malvaez et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Pathway</td>
+      <td colspan="7"></td>
+    </tr>
+    <tr>
+      <td>lOFCàBLA</td>
+      <td>Necessary Sias et al., 2021</td>
+      <td>?</td>
+      <td>Necessary &amp; Sufficient Malvaez et al., 2019</td>
+      <td>X20</td>
+      <td>?</td>
+      <td>?</td>
+      <td>X22</td>
+    </tr>
+    <tr>
+      <td>mOFCàBLA</td>
+      <td>?</td>
+      <td>?</td>
+      <td>X22</td>
+      <td>Necessary Lichtenberg et al., 2021</td>
+      <td>Necessary Lichtenberg et al., 2021</td>
+      <td>X31</td>
+      <td>Necessary &amp; Sufficient Malvaez et al., 2019</td>
+    </tr>
+    <tr>
+      <td>BLAàlOFC</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>Necessary Sias et al., 2021</td>
+      <td>Necessary Sias et al., 2021</td>
+      <td>X20</td>
+      <td>?</td>
+    </tr>
+    <tr>
+      <td>BLAàmOFC</td>
+      <td>?</td>
+      <td>?</td>
+      <td>?</td>
+      <td>X31</td>
+      <td>Necessary Lichtenberg et al., 2021</td>
+      <td>X31</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+_Pavlovian-to-instrumental transfer refers to outcome-selective Pavlovian-to-instrumental transfer; X, not necessary; ?, no evidence known to the author currently in the literature._
+
 ## Anatomy
 
-## Basolateral amygdala
+### Basolateral amygdala
 
 The amygdala is a highly conserved, temporal lobe, limbic system structure with basolateral, central, and medial subcomponents Duvarci and Pare, 2014; Ehrlich et al., 2009; Janak and Tye, 2015; Sah et al., 2003; LeDoux, 2007. I focus on the basolateral amygdala (BLA) which consists of lateral, basal, and basomedial nuclei and contains glutamatergic principle neurons, inhibitory interneurons, and potentially GABAergic projection neurons Birnie et al., 2022. GABAergic intercalated cells flank the BLA Ehrlich et al., 2009; Marowsky et al., 2005. The BLA is heavily innervated by glutamatergic projections from sensory thalamus and cortex McDonald and Jackson, 1987; Ledoux et al., 1987; Linke et al., 2000; McDonald, 1998. It also receives midbrain monoaminergic input Sadikot and Parent, 1990; Lutas et al., 2019; Brinley-Reed and McDonald, 1999; Fallon and Ciofi, 1992. The BLA sends unidirectional projections to the central amygdala, ventral and dorsal striatum, and the bed nucleus of the stria terminalis Kelley et al., 1982; Kita and Kitai, 1990; McDonald, 1991b; McDonald, 1991a. The glutamatergic projections between the BLA and cortex are reciprocal, positioning the BLA to both influence and be influenced by cortical activity. Thus, the BLA is a site of anatomical convergence well positioned to influence the activity of the broader learning and decision-making circuit.
 
-## Orbitofrontal cortex
+### Orbitofrontal cortex
 
 The orbitofrontal cortex (OFC) is a prefrontal cortical region in the ventral frontal lobe Izquierdo, 2017; Hoover and Vertes, 2011; Heilbronner et al., 2016. OFC structure differs between rodents and primates, in particular, granular cortex (dense granular cells in layer IV), which rodents lack Preuss, 1995. But rodent OFC has anatomical and functional homology with portions of primate OFC (Heilbronner et al., 2016; Price, 2007; Rudebeck and Izquierdo, 2022). The OFC is divided into lateral (lOFC) and medial (mOFC) subdivisions. The lOFC, as opposed to mOFC, receives inputs from sensory-processing regions Carmichael and Price, 1995; Ongür and Price, 2000. There is also evidence of distinct connectivity based on the anterior-posterior axis Barreiros et al., 2021. The OFC has many cortico-cortico connections Carmichael and Price, 1995; Ongür and Price, 2000. It also receives input from the hippocampus and midbrain Ongür and Price, 2000; Barreiros et al., 2021. The OFC is reciprocally connected with mediodorsal thalamus, hypothalamus, and amygdala Lichtenberg et al., 2021; Ongür and Price, 2000; Barreiros et al., 2021. Among the OFC outputs are critical projections to the striatum, with anatomical segregation between OFC subregions Heilbronner et al., 2016. Thus, lOFC and mOFC are well positioned to detect associations between external and internal information and to support learning and decision making within a broad network.
 
-## Orbitofrontal cortex-basolateral amygdala circuit
+### Orbitofrontal cortex-basolateral amygdala circuit
 
 Owing to their well-documented, dense, excitatory, bidirectional connections reported in both rodents and primates Malvaez et al., 2019; Lichtenberg et al., 2021; Kita and Kitai, 1990; Hoover and Vertes, 2011; Heilbronner et al., 2016; Barreiros et al., 2021; Reppucci and Petrovich, 2016; Lichtenberg et al., 2017; Morecraft et al., 1992, the BLA and OFC are long-standing collaborators. Both lOFC and mOFC send dense intermingled projections across the anterior-posterior extent of the BLA Malvaez et al., 2019. The BLA also projects back to both lOFC and mOFC, with lOFC-projectors being slightly more prominent in anterior BLA Lichtenberg et al., 2021. The BLA pathways to mOFC and lOFC are largely distinct, with very few BLA neurons collateralizing to both lOFC and mOFC Lichtenberg et al., 2021. Thus, the BLA and OFC are well positioned to engage in bidirectional communication.
 
@@ -61,11 +172,11 @@ The BLA also encodes information relevant for learning and using state-dependent
 
 Both reward learning and expectation signals have also been detected in human amygdala Elliott et al., 2004; Hampton et al., 2007; Yacubian et al., 2006, with some evidence that these occur in BLA in particular Prévost et al., 2011. BLA activity in humans also relates to the ability to use an internal model of environmental structure to guide decision making Prévost et al., 2013, including the ability to use cues to generate the outcome-specific reward expectations that influence PIT Prévost et al., 2012. Thus, BLA function in learning and using outcome-specific reward memories is conserved in humans.
 
-## Orbitofrontal cortex → basolateral amygdala pathway
+### Orbitofrontal cortex → basolateral amygdala pathway
 
 The OFC is a likely candidate for supporting the BLA’s function in forming state-dependent, outcome-specific reward memories and using them to guide decision making. It has been implicated in both learning and using information about rewarding events to inform flexible decision making Wilson et al., 2014; Schuck et al., 2016; Bradfield and Hart, 2020; Shields and Gremel, 2020; Sharpe et al., 2019; Wikenheiser and Schoenbaum, 2016; Rudebeck and Rich, 2018; Gardner and Schoenbaum, 2020. Like the BLA, OFC lesion or inactivation does not disrupt general Pavlovian conditional approach responses but does render this behavior insensitive to devaluation of the predicted outcome Ostlund and Balleine, 2007; Pickens et al., 2003; Gallagher et al., 1999; Pickens et al., 2005. The OFC is also required to use cues to both bias choice in the PIT test Ostlund and Balleine, 2007 and to make inferences about available reward Jones et al., 2012. Thus, much like the BLA, the OFC is critical for using cues to represent future possible rewards and inform predictions and inferences about how advantageous a particular course of action might be. Such findings have contributed to the notion that the OFC is a critical element in the brain’s cognitive map Wilson et al., 2014; Schuck et al., 2016; Bradfield and Hart, 2020; Shields and Gremel, 2020; Sharpe et al., 2019; Wikenheiser and Schoenbaum, 2016; Rudebeck and Rich, 2018, an internal model of the associative relationships (e.g. stimulus-outcome) within an environment required for mentally simulating future potential outcomes to inform decisions. The OFC may achieve this function via its interactions with the BLA. Indeed, as described above, the BLA also mediates the formation and use of the state-dependent reward memories that contribute to cognitive maps. Both lOFC and mOFC participate in appetitive behavior, though have unique functions Izquierdo, 2017; Bradfield and Hart, 2020; Wallis, 2011. Accordingly, recent evidence indicates unique functions of lOFC→BLA and mOFC→BLA projections.
 
-## Lateral orbitofrontal cortex → basolateral amygdala pathway
+### Lateral orbitofrontal cortex → basolateral amygdala pathway
 
 The lOFC→BLA pathway helps to link specific rewarding events to predictive states. Optical inhibition of lOFC→BLA projections during stimulus-outcome pairing attenuates the encoding of specific stimulus-outcome memories as evidenced by the inability of subjects to later use those memories to allow cues to bias choice behavior during a PIT test Sias et al., 2021. Similarly, inhibition of lOFC→BLA projections attenuates encoding of the positive incentive value of a particular food reward Malvaez et al., 2019. Thus, lOFC→BLA pathway activity mediates encoding of state-dependent, outcome-specific reward memories. lOFC→BLA activity is also sufficient to drive subjects to assign a high value to a particular reward Malvaez et al., 2019. Pairing optical stimulation of lOFC→BLA projections with non-contingent experience of a food reward causes animals to subsequently seek out that specific food, but not other foods, more vigorously. Thus, lOFC→BLA pathway activity is capable, at least in part, of elevating the incentive value of a specific reward, information that later informs reward-seeking decisions. Together these data indicate that lOFC via its direct projections to the BLA mediates the ability to link rewarding events to the external and internal states with which they are associated and, thus, regulates the formation of an internal model, aka cognitive map, that enables the predictions and inferences needed for flexible, advantageous decision making.
 
@@ -77,7 +188,7 @@ This conclusion seemingly contradicts evidence that optical inhibition of lOFC�
 
 The lOFC→BLA pathway also supports performance in more dynamic learning and decision scenarios. For example, lOFC→BLA lesion influences performance during reversal learning, in which subjects must learn, integrate, and use information about reward availability and option value Groman et al., 2019a. The above evidence from tasks that parse learning and retrieval processes suggests that lOFC→BLA projections may primarily support reward learning in such dynamic scenarios.
 
-## Medial orbitofrontal cortex → basolateral amygdala pathway
+### Medial orbitofrontal cortex → basolateral amygdala pathway
 
 In contrast to the lOFC→BLA pathway, mOFC→BLA projections do regulate the influence of reward memories over decision making. mOFC→BLA projection activity is critical for using environmental cues to know which specific reward is predicted and the current value of that option. Chemogenetic inactivation of this pathway disrupts the ability to use reward cues to guide choice during an outcome-specific PIT test and prevents subjects from adapting cue responses following selective devaluation of the predicted reward Lichtenberg et al., 2021. mOFC→BLA projections are also necessary for using the previously encoded incentive value of an expected reward to ensure its adaptive pursuit Malvaez et al., 2019. Stimulation of this pathway can even facilitate the ability to use a subthreshold reward value memory to incentivize seeking of a specific reward Malvaez et al., 2019. Thus, mOFC→BLA projections mediate the use of the current state, defined both by external cues and internal physiological signals, to inform decision making. In each above experiment, the tests were non-reinforced, forcing subjects to use their memories of the predicted rewards to guide decisions. When such memories are not required or have not been encoded, mOFC→BLA projection activity is dispensable Malvaez et al., 2019. mOFC→BLA projections, therefore, mediate the use of state-dependent, outcome-specific reward memories to guide decisions.
 
@@ -89,7 +200,7 @@ Although critical for using state-dependent reward memories to guide decision ma
 
 Projections back to the OFC are likely candidates for the BLA output pathways responsible for using state-dependent, outcome-specific appetitive memories to guide decision making. Indeed, the OFC-BLA circuit is bidirectional and the OFC has been implicated using knowledge of the associative relationships within an environment to inform the predictions and inferences necessary for flexible decision making Wilson et al., 2014; Schuck et al., 2016; Bradfield and Hart, 2020; Shields and Gremel, 2020; Sharpe et al., 2019; Wikenheiser and Schoenbaum, 2016; Rudebeck and Rich, 2018; Gardner and Schoenbaum, 2020. Pathway-specific BLA→OFC manipulations indicate these functions are facilitated, in part, via input from the BLA and are distinct between the BLA→lOFC and BLA→mOFC pathways.
 
-## Basolateral amygdala → lateral orbitofrontal cortex pathway
+### Basolateral amygdala → lateral orbitofrontal cortex pathway
 
 BLA→lOFC projections mediate the ability to use state-dependent, outcome-specific stimulus-outcome memories to guide reward-seeking decisions. Chemogenetic inactivation of this pathway disrupts the ability to use reward cues to guide choice behavior during a PIT test and to adapt cue responses following devaluation of a predicted reward Lichtenberg et al., 2017. lOFC→BLA projections are particularly important when predicted outcomes are not readily observable and memories of environmental relationships must be used to guide decisions Lichtenberg et al., 2017. Thus, BLA→lOFC projections are critical for using stimulus-outcome memories to inform decision making, including the identity and current desirability of the predicted reward. Whether BLA→lOFC function in value is secondary to representing reward identity (if you do not know which reward is predicted, then you cannot represent its value) is a critical open question.
 
@@ -97,7 +208,7 @@ BLA→lOFC projection function in using stimulus-outcome memories to enable cues
 
 The lOFC and BLA are well positioned to collaborate in a bidirectional circuit to form (lOFC→BLA) and subsequently use (BLA→lOFC) outcome-specific reward memories. This was recently tested using a pathway-specific, serial, circuit disconnection, achieved by multiplexing unilateral optogenetic inhibition of lOFC→BLA projections during stimulus-outcome learning with unilateral, contralateral chemogenetic inhibition of BLA→lOFC projections during the use of those memories at a PIT test. This indicated that the outcome-specific associative information that requires lOFC→BLA projections to be encoded also requires activation of BLA→lOFC projections to be used for decision making. Thus, lOFC→BLA→lOFC is a functional learning and decision circuit. lOFC→BLA projections regulate the encoding of state-dependent, outcome-specific reward memories and BLA→lOFC projections mediate the subsequent use of these memories for adaptive decision making.
 
-## Basolateral amygdala → medial orbitofrontal cortex pathway
+### Basolateral amygdala → medial orbitofrontal cortex pathway
 
 The BLA→mOFC pathway also mediates BLA function in using reward memories to influence decisions, but differently than the BLA→lOFC pathway. Unlike BLA→lOFC, chemogenetic inactivation of BLA→mOFC projections does not disrupt the expression of outcome-specific PIT Lichtenberg et al., 2021. The BLA→mOFC pathway is, therefore, not required to retrieve outcome-specific stimulus-outcome memories or use them to influence decision making. BLA→mOFC inactivation does, however, prevent subjects from adapting cue responses following devaluation of the predicted reward Lichtenberg et al., 2021. Thus, the BLA→mOFC pathway is critical for using cues to represent the value, but not identity, of future rewards. This value information is critical for inferring how advantageous it would be to respond to the cue.
 
@@ -131,15 +242,15 @@ Each pathway in the OFC-BLA circuit makes a unique contribution to its overall f
 
 Recent work on the OFC-BLA circuit has opened many questions critical for understanding the function of this circuit and the neuronal substrates of appetitive associative memory and decision making more broadly.
 
-## Neuronal encoding
+### Neuronal encoding
 
 Perhaps the most obvious question is the precise information content conveyed by each component of the OFC-BLA circuit and how it is used to shape neuronal encoding and representations in the receiving structure. Bulk activity recordings of each pathway will provide a useful entry point. Such investigations would benefit from multisite recordings to assess information flow across the circuit. A full understanding of OFC-BLA circuit function will, however, require cellular resolution investigation of each pathway’s activity during reward learning and decision making. These will, ideally, include pathway-specific manipulations to ask how each pathway contributes to the neuronal encoding downstream. These studies will have strong footing in the deep existing literature on the neuronal activity patterns of OFC and BLA Wassum and Izquierdo, 2015; Sharpe et al., 2019; Wikenheiser and Schoenbaum, 2016; Gardner and Schoenbaum, 2020; Wallis, 2011; O’Neill et al., 2018; Bissonette and Roesch, 2016; Salzman et al., 2007; Morrison and Salzman, 2010; Knudsen and Wallis, 2022; Enel et al., 2021; Sosa et al., 2021; Rich et al., 2018; Murray and Rudebeck, 2018; Averbeck and Costa, 2017; Sharpe and Schoenbaum, 2016. Several exciting hypotheses have emerged from these hub recordings and the pathway-specific functional investigations described above. Broadly, individual and/or ensembles of neurons in the OFC-BLA circuit are likely to be activated predictive states and to convey multifaceted information about predicted rewards, including their sensory-specific features and value, that is important for decision making. lOFC→BLA neurons might be activated by rewarding events during learning and encode information important for linking the sensory-specific and value features of those rewards to predictive states. mOFC→BLA neurons may carry information about reward-predictive states that relates to choices made in those states. BLA→lOFC projection neurons may show selective responses to unique reward-predictive cues and encode identifying features of the predicted reward and/or be required for such encoding in lOFC. BLA→mOFC projection neurons are also likely to be activated by reward-predictive cues and to either encode themselves or to facilitate encoding in mOFC of expected reward value.
 
-## Mechanism
+### Mechanism
 
 Of course, there are many levels at which mechanism can, and should, be explored. One possibility is that BLA cells that project to the lOFC and mOFC undergo synaptic, morphological, and/or molecular changes during learning to enable their function in state-dependent reward memory. Indeed, the ionotropic glutamate receptors known to regulate BLA synaptic plasticity Bauer et al., 2002; Müller et al., 2009 are required for encoding and using reward memories to guide decision making. An enticing hypothesis is that these neuroplastic changes are, at least in part, driven by lOFC→BLA input, and that mOFC→BLA inputs access activity in these neurons to mediate the ability to use predictive states to guide decision making. lOFC and mOFC axons are intermingled in the BLA Malvaez et al., 2019, but whether they make synaptic contact with the same cells or networks of cells is unknown. More broadly, information on direct and multisynaptic connections between each pathway is needed to better understand the extent and mechanisms of their interactions. The role of OFC and BLA interneurons will be important in this regard. It will also be important to explore the role of memory system consolidation in the neuroplastic changes that enable OFC-BLA circuit function. Although OFC-BLA projections are known to be excitatory, glutamatergic neurons Malvaez et al., 2019; Kita and Kitai, 1990; Hoover and Vertes, 2011; Heilbronner et al., 2016; Barreiros et al., 2021; Reppucci and Petrovich, 2016; Morecraft et al., 1992, little else is known about them. Whether the pathways between the OFC and BLA include molecularly-unique subpopulations and whether such potential populations are functionally distinct are ripe questions for future mechanistic investigation.
 
-## Refining function
+### Refining function
 
 The tasks that have defined OFC-BLA circuit function all involved decisions in novel situations. For example, the PIT test is the first time subjects choose between the two actions and, moreover, those actions are unreinforced. Faced with these novel circumstances, subjects must use their knowledge of stimulus-outcome relationships to infer what to do. The incentive learning test requires subjects to pursue a reward for the first time while hungry. Following outcome-specific devaluation, the external environment is unchanged, but the internal state is new, the predicted reward is devalued. The OFC-BLA circuit is critical for the learning and memory processes that support decisions in these novel situations. Is this circuitry also involved in even more novel situations that require one to construct the value of a predicted reward on-the-fly using its attributes? Studies in humans suggest so. lOFC can represent an expected outcome’s constituent features Suzuki et al., 2017. The outcome’s value can be decoded from this information and is integrated to compute value in more medial cortical regions, including mOFC Suzuki et al., 2017. Is this circuitry involved in more well-practiced decision scenarios? Recent theories suggest perhaps not Gardner and Schoenbaum, 2020. OFC is needed for the learning that supports decision making, but not always for decision making itself Constantinople et al., 2019; Miller et al., 2020; Keiflin et al., 2013; Gardner et al., 2020. For example, neither lOFC nor mOFC are required for well-practiced, but still model-based, decisions Gardner et al., 2020. The extent to which novelty, inference, and on-the-fly decision making are critical features of OFC-BLA circuit function is a ripe question for future investigation.
 
@@ -149,7 +260,7 @@ Many BLA-OFC pathway investigations capitalized on experimental control to parse
 
 Here I focused on state-outcome associative structures. These are important, but simple, components of the internal model of associative relationships that exist in the world. Environments often contain more complex and sequential structures. Particular actions are often needed to transition between states in these structures. For example, there are many intervening steps between seeing the pizza restaurant logo in a food-delivery app and actually eating the pizza. You select the pizza and place it in your cart, then check out, receive a notification that your order was placed, then picked up, then delivered, at which point you gather your meal, open the packaging, and then, finally, enjoy the pizza. Whether and how the OFC-BLA circuit participates in the encoding and use of complex sequential associations and the actions required to transition between states are important open questions. Evidence of hub function across species suggests the OFC-BLA circuit is likely involved. Human OFC activity can reflect multistage Pavlovian stimulus-stimulus contingencies Pauli et al., 2019 and encode a cognitive map of a complex state space Schuck et al., 2016. Non-human primate amygdala neurons can reflect plans in a multistage task Hernádi et al., 2015. In rodents, OFC dopamine tone correlates with model-based behavior in a multistage decision task Miller et al., 2020; Groman et al., 2019b and OFC inactivation disrupts model-based planning in such a task Miller et al., 2017. Even putatively single-step associative structures involving food reward (e.g. tone-pellet), such as those in which the OFC-BLA circuit was implicated above, actually include multiple state transitions. The tone signals the food, which can be more immediately signaled by tone offset and/or the subtle click of the pellet dispenser, food-port entry is required to transition from the state predicting the pellet to actually consuming it, the taste of the pellet itself predicts subsequent satiation. Thus, an important question for future investigation is the extent to which the OFC-BLA circuit contributes to encoding and using multistage associative models that are characteristic of model-based reinforcement learning and planning. In such investigations it will be important to evaluate whether OFC-BLA circuitry encodes each step in a multistage association and/or links initial predictive states to rewarding outcomes further away in the state space. Both navigational (e.g. maze) and multistage operant tasks will benefit these investigations Behrens et al., 2018. Of course, OFC-BLA circuit activity may not perfectly map onto existing model-based reinforcement learning structures, but such structures will provide a crucial theoretical framework.
 
-## Generalizing function
+### Generalizing function
 
 Another important question is whether OFC-BLA circuit function in encoding state-dependent, outcome-specific memories and using such memories to guide decision making applies to the aversive domain. It does seem plausible, if not likely. Like the BLA, both lOFC and mOFC contribute to aversive behavior Orsini et al., 2015; Plassmann et al., 2010; Zimmermann et al., 2018; Ma et al., 2020; Verharen et al., 2019; Turner et al., 2021; Jean-Richard-Dit-Bressel and McNally, 2016; Ishikawa et al., 2020; Shih and Chang, 2021; Metereau and Dreher, 2015; O’Doherty et al., 2001; Fullana et al., 2016. lOFC activity influences sensitivity to punishment. In some cases, it is important for guiding choices away from punishment Jean-Richard-Dit-Bressel and McNally, 2016. In others, it is important for pursuing reward despite risk of punishment Orsini et al., 2015; Ishikawa et al., 2020. mOFC is critical for sensitivity to punishment Ma et al., 2020; Verharen et al., 2019, especially when it is infrequent requiring subjects to rely on their memory of the aversive outcome Ma et al., 2020. Both lOFC and mOFC are also needed to use contexts to know when aversive events are and are not expected Shih and Chang, 2021. Thus, OFC is involved in making choices based on both potential appetitive and aversive outcomes. Whether the OFC-BLA circuit mediates state-dependent, outcome-specific aversive memories and their influence over decision making is, thus, a ripe question. To answer this question, it will be important to assess outcome-specific aversive memories. This has been procedurally difficult. Classic outcome revaluation tasks from Rescorla, 1973; Rescorla, 1974 and aversive PIT Lewis et al., 2013; Campese, 2021 will be a good start. These investigations will also benefit from consideration of the procedural differences between aversive and appetitive learning. For example, aversive learning typically involves far fewer training trials and days than appetitive learning. Aversive shocks can be immediately delivered, whereas appetitive outcomes typically have to be collected from a delivery port. There may also be inherent differences in the nature of the outcomes. Foods produce a taste and later satiation. Aversive events produce an immediate aversive experience that can have longer-lasting emotional consequences. Such differences are likely to contribute to the neuronal circuitry involved.
 
@@ -157,7 +268,7 @@ The BLA and OFC have also been implicated in learning about different types of r
 
 Of course, it will also be important to uncover how the OFC-BLA circuit works with broader cortical-thalamic-basal ganglia systems to support learning and decision making. For example, it will be interesting to know whether the BLA supports other prefrontal cortex regions in their contributions to decision making in a manner similar to its support of OFC. Likewise, it will be important to know what other subcortical regions support the OFC in learning and decision making. BLA and OFC interactions at the level of the striatum, a major interface for action execution, is also an important avenue for investigation. In understanding the broader circuit, it will help to know whether the architecture exposed here relates to other bidirectional corticolimbic circuits. For example, are there other corticolimbic systems with separate learning v. retrieval input channels or top-down learning signals that drive bottom up retrieval?
 
-## Implications for learning and decision models
+### Implications for learning and decision models
 
 These neurobiological investigations have implications for our understanding of the psychological processes that control learning and decision making.
 
@@ -165,10 +276,10 @@ A reward’s identity can be neurobiologically dissociable from its value. When 
 
 External and internal states may share some associative coding structure. The states that access information about reward identity and value can be both external (i.e. environmental cues) and internal (e.g. physiological, homeostatic signals). The encoding and use of both forms of memory have partially overlapping neuronal substrates: lOFC→BLA and mOFC→BLA pathways. There are neurobiological similarities in how we learn that a logo predicts a specific food and that a particular food will be tasty when we are hungry. Thus, there may be associative coding structures that support both state types. External and internal state information could converge in the BLA-OFC circuit or could be coded in different streams, perhaps defined by different cell types, within the circuit. Regardless, external and internal states are poised to interact in the OFC-BLA circuit. Indeed, the BLA receives and integrates information about external cues and internal homeostatic states Livneh et al., 2017.
 
-## Implications for maladaptive learning and decision making
+### Implications for maladaptive learning and decision making
 
 Deficits in the ability to learn and/or use information about expected rewarding outcomes can lead to ill-informed decisions and this is characteristic of the cognitive symptoms that can underlie several psychiatric illnesses, including substance use disorder Hogarth et al., 2013; Dayan, 2009; Voon et al., 2015; Schoenbaum et al., 2016; Everitt and Robbins, 2016; Volkow et al., 2013, depression Seymour and Dolan, 2008; Heller et al., 2018; Chen et al., 2015; Huys et al., 2015, anxiety Alvares et al., 2014, and schizophrenia Morris et al., 2015; Culbreth et al., 2016. These conditions have also been associated with altered activity in BLA and OFC as well as OFC-BLA connectivity Ressler and Mayberg, 2007; Price and Drevets, 2010; Sladky et al., 2015; Liu et al., 2014; Passamonti et al., 2012; Goldstein and Volkow, 2011; Tanabe et al., 2009; Linke et al., 2012; Hahn et al., 2011; Xie et al., 2021. Thus, OFC-BLA circuit dysfunction might underlie some of the learning and decision-making symptoms of substance use disorder and other mental illnesses. The above data exposed vulnerabilities in the circuit whereby disrupted activity might cause maladaptive decision making. For example, one may be able to know which rewards are available but unable to understand their current value (e.g., BLA→mOFC dysfunction). This could lead to continued drug pursuit despite negative consequences or, conversely, lack of motivation for actions that earn valuable outcomes, despite knowledge of those outcomes (e.g. consuming healthy food or going to work). Or one might have learned about a predicted reward but be unable to use that memory to inform choices in the moment (mOFC→BLA dysfunction). For example, one may have learned about the negative consequences of a drug, or positive effects of eating healthy foods, but be unable to use that information when presented with drug or food cues, leading to poor decisions. Further understanding of the function of the OFC-BLA circuit in both adaptive and maladaptive decision making is likely to aid our understanding and treatment of substance use disorder and other mental illnesses.
 
-## Conclusion
+### Conclusion
 
 The OFC-BLA circuit helps us to encode detailed, outcome-specific memories of rewarding events and to access those memories under the right circumstances to enable the predictions and inferences that support adaptive decision making. There is much to be learned about the precise function of each pathway, information flow through the circuit, and the extent to which the circuit function generalizes to other types of outcomes. More mechanistic insight is clearly needed. Yet, the recent investigations make clear that the OFC-BLA circuit is a critical contributor to learning and memory processes that underlie the considerations we use to make daily decisions and that are disrupted in myriad psychiatric diseases.

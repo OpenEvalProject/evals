@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.46454.001 Meiotic drive is the preferential transmission of a particular allele during sexual reproduction. The phenomenon is observed as spore killing in multiple fungi. In natural populations of Podospora anserina , seven spore killer types ( Psk s) have been identified through classical genetic analyses. Here we show that the Spok gene family underlies the Psk s. The combination of Spok genes at different chromosomal locations defines the spore killer types and creates a killing hierarchy within a population. We identify two novel Spok homologs located within a large (74–167 kbp) region (the Spok block) that resides in different chromosomal locations in different strains. We confirm that the SPOK protein performs both killing and resistance functions and show that these activities are dependent on distinct domains, a predicted nuclease and kinase domain. Genomic and phylogenetic analyses across ascomycetes suggest that the Spok genes disperse through cross-species transfer, and evolve by duplication and diversification within lineages.
+Meiotic drive is the preferential transmission of a particular allele during sexual reproduction. The phenomenon is observed as spore killing in multiple fungi. In natural populations of Podospora anserina, seven spore killer types (Psks) have been identified through classical genetic analyses. Here we show that the Spok gene family underlies the Psks. The combination of Spok genes at different chromosomal locations defines the spore killer types and creates a killing hierarchy within a population. We identify two novel Spok homologs located within a large (74–167 kbp) region (the Spok block) that resides in different chromosomal locations in different strains. We confirm that the SPOK protein performs both killing and resistance functions and show that these activities are dependent on distinct domains, a predicted nuclease and kinase domain. Genomic and phylogenetic analyses across ascomycetes suggest that the Spok genes disperse through cross-species transfer, and evolve by duplication and diversification within lineages.
 
 ## Introduction
 
@@ -40,23 +40,564 @@ The primary goal of this study was to determine the identity of the genes that a
 
 ## Results
 
-## Genome assemblies
+### Genome assemblies
 
 To investigate the genetic basis of spore killing in P. anserina, we generated high-quality whole-genome assemblies using a combination of long-read (PacBio and MinION Oxford Nanopore) and short-read (Illumina HiSeq) technologies. Table 1 lists the strains used for investigation. In all cases, we sequenced single haploid monokaryons (marked with + or - following the strain name, to designate their mating type; see 'Materials and methods' and Appendix 1). We selected strains from a natural population in Wageningen (Wa), the Netherlands, and a few strains from France, representing six of the seven previously described Psk spore killer types (Psk-1, Psk-2, Psk-3, Psk-4, Psk-5 and Psk-7; van der Gaag et al., 2000) along with a strain of a novel killing type (Wa100), to which we assign the type Psk-8, and strain Wa63. The reference strain of P. anserina, S, was not given a Psk designation previously, as it was not known to induce spore-killing. However, Grognet et al. (2014) demonstrated that it can indeed induce spore-killing, so here we assign it to Psk-S along with Wa63. In addition, we acquired and sequenced strains from the closely related Podospora species P. pauciseta (CBS237.71) and P. comata (strain T). A strain annotated as T was acquired from two different laboratories, one from the Wageningen collection (referred hereafter as TD) and one from Goethe University Frankfurt (here as TG). Our results revealed that these strains do not represent the same isolate, as previously thought (Hamann and Osiewacz, 2004), but are distinct. TG is a Psk-5 strain of P. anserina and was sequenced with Nanopore and Illumina. TD matches the P. comata epitype reported by Silar et al. (2019) and was sequenced with Illumina alone.
+
+**Table 1.**
+ List of all strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Site of origin</th>
+      <th>Spore killer*</th>
+      <th>Sequenced</th>
+      <th>Technology</th>
+      <th>Mycelium</th>
+      <th>Spok genes†</th>
+      <th>Spok block location‡</th>
+      <th>Flanking genes§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Natural isolates¶</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa21–</td>
+      <td>Wageningen</td>
+      <td>Psk-2 (Psk-3)</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3</td>
+      <td>5R: 3325285</td>
+      <td>Pa_5_7950 – Pa_5_7960</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa28–</td>
+      <td>Wageningen</td>
+      <td>Psk-2</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3</td>
+      <td>5R: 3325285</td>
+      <td>Pa_5_7950 – Pa_5_7960</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa46+</td>
+      <td>Wageningen</td>
+      <td>Naïve (Psk-4)</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>SpokΨ1</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa53–</td>
+      <td>Wageningen</td>
+      <td>Psk-1</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa58–</td>
+      <td>Wageningen</td>
+      <td>Psk-7</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>5L: 896822</td>
+      <td>Pa_5_490 – Pa_5_470</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa63+</td>
+      <td>Wageningen</td>
+      <td>Psk-S</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa63–</td>
+      <td>Wageningen</td>
+      <td>Psk-S</td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td>Monokaryon</td>
+      <td>Spok2</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Wa87+</td>
+      <td>Wageningen</td>
+      <td>Psk-1</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4, SpokΨ1</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y+</td>
+      <td>France</td>
+      <td>Psk-5</td>
+      <td>DNA</td>
+      <td>MinION</td>
+      <td>Monokaryon</td>
+      <td>Spok3, Spok4</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wa100+</td>
+      <td>Wageningen</td>
+      <td>Psk-8</td>
+      <td>DNA</td>
+      <td>PacBio</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok4, SpokΨ1</td>
+      <td>5L: 896822</td>
+      <td>Pa_5_490 – Pa_5_470</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TG+</td>
+      <td>France</td>
+      <td>Psk-5 (sk-1)</td>
+      <td>DNA</td>
+      <td>MinION</td>
+      <td>Monokaryon</td>
+      <td>Spok3, Spok3, Spok4</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>DNA</td>
+      <td>HiSeq X</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CBS237.71–</td>
+      <td>Israel</td>
+      <td>Psk-P1</td>
+      <td>DNA</td>
+      <td>MinION</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3</td>
+      <td>4R: 1674812</td>
+      <td>Pa_4_3420 – Pa_4_3410</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>DNA</td>
+      <td>HiSeq X</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TD+</td>
+      <td>?</td>
+      <td>Psk-C1</td>
+      <td>DNA</td>
+      <td>HiSeq X</td>
+      <td>Monokaryon</td>
+      <td>Spok1</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S+</td>
+      <td>France</td>
+      <td>Psk-S</td>
+      <td>DNA</td>
+      <td>HiSeq X</td>
+      <td>Monokaryon</td>
+      <td>Spok2</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S–</td>
+      <td>France</td>
+      <td>Psk-S</td>
+      <td>DNA</td>
+      <td>HiSeq X</td>
+      <td>Monokaryon</td>
+      <td>Spok2</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Wa47</td>
+      <td>Wageningen</td>
+      <td>naïve (Psk-6)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Not sequenced</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td>France</td>
+      <td>Psk-7</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Not sequenced</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>France</td>
+      <td>Psk-S</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Not sequenced</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Us5</td>
+      <td>Germany</td>
+      <td>Psk-S</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Not sequenced</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Backcrosses to S††</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Psk1xS5- (Wa53)</td>
+      <td></td>
+      <td>Psk-1</td>
+      <td>DNA</td>
+      <td>HiSeq 2500</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td>Psk2xS5+ (Wa28)</td>
+      <td></td>
+      <td>Psk-2</td>
+      <td>DNA</td>
+      <td>HiSeq 2500</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3</td>
+      <td>5R: 3325285</td>
+      <td>Pa_5_7950 – Pa_5_7960</td>
+    </tr>
+    <tr>
+      <td>Psk5xS5+ (Y)</td>
+      <td></td>
+      <td>Psk-1 (Psk-5)</td>
+      <td>DNA</td>
+      <td>HiSeq 2500</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>3L: 358693</td>
+      <td>Pa_3_945 – Pa_3_950</td>
+    </tr>
+    <tr>
+      <td>Psk7xS5+ (Wa58)</td>
+      <td></td>
+      <td>Psk-7</td>
+      <td>DNA</td>
+      <td>HiSeq 2500</td>
+      <td>Monokaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>5L: 896822</td>
+      <td>Pa_5_490 – Pa_5_470</td>
+    </tr>
+    <tr>
+      <td>Psk1xS14-vsS</td>
+      <td></td>
+      <td>Psk-1</td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td>Selfing dikaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>Like parental</td>
+      <td>Like parental</td>
+    </tr>
+    <tr>
+      <td>Psk2xS14-vsS</td>
+      <td></td>
+      <td>Psk-2</td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td>Selfing dikaryon</td>
+      <td>Spok2, Spok3</td>
+      <td>Like parental</td>
+      <td>Like parental</td>
+    </tr>
+    <tr>
+      <td>Psk5xS14-vsS</td>
+      <td></td>
+      <td>Psk-1</td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td>Selfing dikaryon</td>
+      <td>Spok2, Spok3, Spok4</td>
+      <td>Like parental</td>
+      <td>Like parental</td>
+    </tr>
+    <tr>
+      <td>Psk7xS14-vsS</td>
+      <td></td>
+      <td>Psk-7</td>
+      <td>RNA</td>
+      <td>HiSeq 2500</td>
+      <td>Selfing dikaryon</td>
+      <td>Spok2, Spok3,+ Spok4</td>
+      <td>Like parental</td>
+      <td>Like parental</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The spore killer type of each strain is given as reported by van der Gaag et al. (2000) when our phenotyping agrees, and in parenthesis when it does not. The S14 strains were phenotyped by us.†The S14 Spoks were inferred from RNAseq mapping.‡The chromosome number and the arm (R for right, and L for left) describing the position of the Spok block are given, along with the coordinates in the Podan2 chromosome.§ As the exact insertion point is always intergenic, we also provide the flanking genes. The gene nomenclature follows Espagne et al. (2008), where Pa stands for Podospora anserina, the number between underscores is the chromosome and the last number is the gene code.Note that strain s and strain S are different natural isolates.††Parentheses denote parental spore killer strains.‘Like parental’ denotes that the location of the Spok block in the S14 backcrosses was not inferred from sequencing data, however it should correspond to the location in the S5 backcrosses.'–', Not applicable._
 
 The final assemblies (long-read technologies polished with Illumina HiSeq data) recovered the expected seven chromosomes in their entirety for five strains, and in up to 13 scaffolds for the rest (Supplementary file 1). BUSCO analyses of these assemblies reported 97–98% of 3725 Sordariomyceta-conserved genes (Supplementary file 1), which is concordant with the same analysis done in the reference assemblies of the P. anserina strain S+ (hereafter referred to as Podan2; Espagne et al., 2008) and of P. comata (PODCO; Silar et al., 2019). Notice that as the assemblies of each strain were produced from one haploid (monokaryotic) isolate, we will refer to specific genome assemblies with their strain name followed by their corresponding mating type; for example, the assembled genome of monokaryon Wa63+ (derived from the strain Wa63) is called PaWa63p (Supplementary file 1).
 
 In addition, all genomes sequenced with Illumina were assembled de novo using SPAdes. The resulting assemblies consisted of between 222 and 418 scaffolds that were larger than 500 bp, with a mean N50 of 227 kbp (Supplementary file 2). The alignment coverage of Podan2 (Espagne et al., 2008) was above 98% for all of the SPAdes assemblies of P. anserina. When the filtered Illumina reads were mapped to Podan2, all samples had a sequencing depth greater than 75x (Supplementary file 2). Taken together, our genome assemblies, resulting from both long- and short-read data, are very comprehensive.
 
-## The Podospora species are closely related and highly syntenic
+### The Podospora species are closely related and highly syntenic
 
 A NeighborNet split network of 1000 single-copy orthologs (including introns) showed that the P. anserina samples are remarkably similar to each other and distinct from those of both P. comata and P. pauciseta (Figure 1A). Nevertheless, the three taxa are very closely related: the average genic identity within P. anserina is 99.97%, whereas the genic distance between P. anserina and P. pauciseta is 99.10%, between P. anserina and P. comata is 98.87%, and between P. pauciseta and P. comata is 98.79%. Accordingly, the whole-genome alignments recovered strongly conserved synteny at the chromosomal level when small (<13 kb) translocations (presumably due to transposable elements (TEs)) are excluded (Figure 1B; Figure 1—figure supplement 1). Only three larger translocations were detected, of which two might be mis-assemblies in the reference genome of P. comata (PODCO; see 'Materials and methods').
 
-## Identification and description of Spok genes
+![Figure 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig1-v1.jpg)
+
+**Figure 1.:** (A) An unrooted NeighborNet split network based on 1000 orthologous genes of the strains representing the three Podospora species shows that the species are distinct from each other but still closely related. A close-up of the cluster of P. anserina strains reveals a reticulated relationship and very low genetic diversity (average genic distance of 99.97%). (B) A Circos plot of NUCmer alignments (larger than 13 kb) between the reference genome of P. comata, the new genome of P. pauciseta, and a representative strain of P. anserina. Chromosomes 5, 6, and 7 of P. pauciseta are not fully assembled, in particular around regions matching the location of the centromere in the P. anserina linkage map (not shown). Regardless, the alignment of the assembled region shows highly conserved large-scale synteny between the taxa, with the exception of three large translocation events marked with numbers. Numbers 1 and 2 are potential mis-assemblies in the P. comata reference genome, whereas the translocation number 3 between P. pauciseta and P. anserina corresponds to the Spok block. See Figure 1—figure supplement 1 for an equivalent Circos plot of inversions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The asterisk in chromosome 4 of P. comata corresponds to translocation number 2 in Figure 1 and might be a misassembly. Line thickness is proportional to alignment length.
+
+### Identification and description of Spok genes
 
 By searching our assemblies for the Spok2 sequence (presented by Grognet et al., 2014) using BLAST, we confirm the presence of this Spok gene on the left arm of chromosome 5 in the majority of strains, in agreement with Grognet et al. (2014). Furthermore, on the basis of sequence similarity with Spok2, we identified two novel homologs that we refer to as Spok3 and Spok4. These newly identified Spoks are found at different genomic locations depending on the strain. Both Spok3 and Spok4 can be located on the left arm of chromosome 3 or on the left arm of chromosome 5, and Spok3 can be found at an additional location on the right arm of chromosome 5. In addition, the BLAST searches recovered a pseudogenized Spok gene (SpokΨ1) in the subtelomeric region of the right arm of chromosome 5. The Spok gene content of the strains investigated in this study is reported in Table 1.
 
 A schematic representation of the Spok homologs is shown in Figure 2A. We considered the Spok2 sequence of S+, and the Spok3 and Spok4 sequences of Wa87+ as reference alleles for each homolog. Overall they show a high degree of conservation, including the 3' and 5' UTRs. A nucleotide alignment of the Spok genes’ coding sequence revealed 130 variable sites out of 2334 total sites (Figure 2—figure supplement 1). A relatively large proportion (67%, 87/130) of those variable sites result in amino acid changes and 74% are unique to one of the Spok homologs. Table 2 displays pairwise comparisons of the amino-acid sequence of the SPOK proteins, revealing a high rate of non-synonymous substitutions, and a relatively high similarity between Spok1 and Spok4. There are six indels among all the Spok genes, including one at the 5' end of the ORF that represents a variable-length repeat region, and one at the 3' end of the ORF that is shared by Spok3 and Spok4. The 3' end indel induces a frameshift and changes the position of the stop codon (Figure 2A). SpokΨ1 has a missing 5' end, multiple stop codons, and a discoglosse (Tc1/mariner-like) DNA transposon (Espagne et al., 2008) inserted in the coding region. Of particular interest, SpokΨ1 has no deletions relative to the other Spok homologs, suggesting that the indels in the functional Spok homologs represent derived deletions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the main features of the Spok genes. All homologs share an intron within the 5' UTR. At the start of the coding region (CDS) there is a repeat region, in which the number of repeats varies among the homologs. The central portion of the CDS has a number of indels, which appear to be independent deletions in each of Spok2, Spok3, and Spok4. There is a frameshift mutation at the 3' end of the CDS that shifts the stop codon of Spok3 and Spok4 into what is the 3' UTR of Spok1 and Spok2. The pseudogenized Spok gene (SpokΨ1) contains none of the aforementioned central indels and appears to share the stop codon of Spok1 and Spok2. However, there are numerous mutations that result in stop codons within the CDS as well as a full DNA transposon (discoglosse) insertion. No homologous sequence of the 5' end of SpokΨ1 is present. (B) A NeighborNet split network of all active Spok genes from all strains sequenced in this study. The four homologs cluster together well, but there are a number of reticulations, which presumably are the result of gene conversion events. (C) Maximum likelihood trees based on three separate regions of the Spok genes: the 5' UTR, the CDS, and the 3' UTR (starting from the stop codon of Spok3 and Spok4). The trees are rooted arbitrarily using Spok2. Branches are drawn proportional to the scale bar (substitutions per site), with bootstrap support values higher than 70 shown above.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The alignment includes the UTRs and intron. Start and stop codons are marked above the alignment track and the regions of putative gene conversion are encased in red boxes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In order to ensure the expression of the killer elements, we extracted RNA from an isolated self-killing heterozygote spore, produced by mating the monokaryotic Psk S14 backcrosses to a monokaryon S of opposite mating type (top of (A)). RNAseq of monokaryotic (self-sterile) spores was also obtained (bottom of (A)). The RNAseq data of one self-killing culture (Psk7xS14 vs S) mapped to Wa58– (Psk-7) illustrates the expression of both Spok4 (B) and Spok3 (C). The expression of Spok2 (D) and Spok1 (E) in vegetative cells can be appreciated in the RNAseq data of Wa63– and TD+, respectively. In all cases, the predicted single exon of each Spok gene is shown below the reads, which in turn reveals an intron in the 5'UTR. Read colors follow the defaults in the genome browser IGV, with gray reads having typical expected insert size, and blue and red reads having slightly too small or too large insert sizes, respectively. The distributions above the reads correspond to the depth of coverage. Some sites appear to be polymorphic (blue and red bars in the depth distributions) due to low frequency mismapping of reads from other Spok homologs.
+
+**Table 2.**
+ Pairwise statistics between SPOK homologs.The dN/dS ratios, averaged across the coding region, are shown below the diagonal; pairwise amino acid changes are shown above.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SPOK4</th>
+      <th>SPOK3</th>
+      <th>SPOK2</th>
+      <th>SPOK1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SPOK4</td>
+      <td>x</td>
+      <td>41</td>
+      <td>53</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>SPOK3</td>
+      <td>0.8404081</td>
+      <td>x</td>
+      <td>54</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>SPOK2</td>
+      <td>0.9731409</td>
+      <td>0.9771488</td>
+      <td>x</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>SPOK1</td>
+      <td>0.6593501</td>
+      <td>0.7833958</td>
+      <td>0.7851462</td>
+      <td>x</td>
+    </tr>
+  </tbody>
+</table>
 
 There is little allelic variation within the Spok homologs in the Wageningen population and the variants of the four homologs cluster phylogenetically (Figure 2B and C). The Spok2 gene in the Wageningen strains are identical to the two alleles described in Grognet et al. (2014), with the exception of Spok2 from Wa58– which has a single SNP that results in a D358N substitution. The Spok2 allele of the French strain A, which shows resistance without killing (as reported by Grognet et al., 2014), was not found in any of the genomes investigated in this study. Spok3 has five allelic variants, and the allelic variation of Spok4 is reminiscent of Spok2, with only Wa100+ and Wa58– having a single synonymous SNP (Figure 2C). Lastly, the three copies of SpokΨ1 are all unique.
 
@@ -66,33 +607,73 @@ In the few strains with no copy of Spok2, analysis of the region suggests that t
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig3-v1.jpg)
 
-**Figure 3.:** Spok2 locus in selected strains.The plot displays pairwise comparisons of Spok2 haplotypes with blue segments connecting syntenic regions of homology and red segments showing inversions. The haplotypes are defined by the flanking genes P_5_20 and P_0_1630 located on chromosome 5 of the three sampled species. Every strain has a haplotype of different size, mainly owing to differences in their transposable element (TE) content. Within P. anserina, the TE variation across all sequenced strains occurs downstream of Spok2, as exemplified by strains Wa63 and S. The strains Wa46, Y and TG all lack Spok2 and share break points. See main text for a hypothesis of events (numbered). Notice that P_5_20 stands for the genes Pa_5_20 and PODCO_500020 in the reference annotation of P. anserina and P. comata, respectively, while P_0_1630 stands for Pa_0_1630 and PODCO_001630. As a note, P. pauciseta has a duplication of three genes in tandem from chromosome 1 (Pa_1_1080–60) between the flanking genes. Hit_Pa_X_XXX genes stand for significant BLAST hits to genes of Podan2. TE nomenclature follows Espagne et al. (2008).10.7554/eLife.46454.013Figure 3—source data 1.Spok2.
+**Figure 3.:** The plot displays pairwise comparisons of Spok2 haplotypes with blue segments connecting syntenic regions of homology and red segments showing inversions. The haplotypes are defined by the flanking genes P_5_20 and P_0_1630 located on chromosome 5 of the three sampled species. Every strain has a haplotype of different size, mainly owing to differences in their transposable element (TE) content. Within P. anserina, the TE variation across all sequenced strains occurs downstream of Spok2, as exemplified by strains Wa63 and S. The strains Wa46, Y and TG all lack Spok2 and share break points. See main text for a hypothesis of events (numbered). Notice that P_5_20 stands for the genes Pa_5_20 and PODCO_500020 in the reference annotation of P. anserina and P. comata, respectively, while P_0_1630 stands for Pa_0_1630 and PODCO_001630. As a note, P. pauciseta has a duplication of three genes in tandem from chromosome 1 (Pa_1_1080–60) between the flanking genes. Hit_Pa_X_XXX genes stand for significant BLAST hits to genes of Podan2. TE nomenclature follows Espagne et al. (2008).
 
 The Spok1 gene was previously identified from the P. comata strain TD (Grognet et al., 2014). No other strains investigated in this study were found to possess Spok1, indicating that this gene is probably not present in P. anserina. Remarkably, BLAST searches of the Spok2 gene (including the UTR sequences) revealed the presence of a small piece (~156-bp long) of a presumably degraded Spok gene in the TD de novo assembly and on chromosome 4 of PODCO. This piece overlaps with the last amino acids of the CDS 3' end and is flanked by an arthroleptis (solo LTR) retrotransposon on one side and by unknown sequence on the other. Owing to the small size of this piece, it not clear whether it belongs to a novel Spok gene, but the location (between genes PODCO_401390 and PODCO_401400) differs from those of the other known homologs. The sequencing reveals that the genome of the P. pauciseta strain CBS237.71 contains both Spok3 and Spok4 (Table 1; Figure 2B), but they are at a genomic location that differs from those in any of the P. anserina strains.
 
-## Spok3 and Spok4 function as meiotic drive genes
+### Spok3 and Spok4 function as meiotic drive genes
 
 We constructed knock-in and knock-out strains to confirm that the newly discovered Spok homologs, Spok3 and Spok4, can induce spore killing on their own (Supplementary file 3), as previously shown for Spok2 by Grognet et al. (2014). First, the Spok2 gene was deleted from the strain s to create a ΔSpok2 strain for use with the knock-ins. A cross between s and the ΔSpok2 strain resulted in about 40% two-spored asci, as previously reported by Grognet et al. (2014) (80/197, 40.6%) (Figure 4—figure supplement 2B). The Spok3 and Spok4 genes were inserted separately at the centromere-linked PaPKS1 locus (a gene controlling the pigmentation of spores [Coppin and Silar, 2007]). As PaPKS1 is tightly linked to the centromere, we expected that if the genes are capable of meiotic drive, then crosses to the ΔSpok2 strain should yield nearly 100% two-spored asci with white (unpigmented) spores. Accordingly, both Spok3::PaPKS1 ΔSpok2 x ΔSpok2 and Spok4::PaPKS1 ΔSpok2 x ΔSpok2 crosses yielded almost 100% two-spored asci with two white spores (118/119, 99.1%; Figure 4—figure supplement 2C) and (343/346, 99.1%; Figure 4—figure supplement 2D), respectively. These results show that Spok3 and Spok4 function as spore killers when introduced as a single copy at the PaPKS1 locus .
 
-## The P. anserina Spok homologs are functionally independent
+### The P. anserina Spok homologs are functionally independent
 
 To determine whether there are any interactive effects between Spok2, Spok3, and Spok4, we made use of the knock-in strains to assay pairwise interactions among them. First, to determine the interaction between Spok3 and Spok4, we crossed a strain bearing Spok4 at PaPKS1 with a strain bearing Spok3. Because crosses that are homoallelic for the PaPKS1 deletion have poor fertility, we constructed a strain in which Spok3 is inserted as a single copy at the PaPKS1 locus but just downstream of the coding region (Spok3::PaPKS1d) in order to yield strains with normal pigmentation and normal fertility in crosses to PaPKS1-deletion strains. In control crosses, the Spok3::PaPKS1d strain showed killing when crossed with a strain lacking Spok3 but no killing when crossed with Spok3::PaPKS1 (Figure 4—figure supplement 2E and F). The cross between Spok3::PaPKS1d and Spok4::PaPKS1 yielded asci that had four aborted spores, indicating mutual killing of Spok3 and Spok4 (Figure 4—figure supplement 2G). To determine the killing relation between Spok2 and Spok3, a cross was conducted between Spok3::PaPKS1 and strain s (of the Psk-S type). This cross yielded mostly two-spored asci with two unpigmented spores (163/165 asci: 98.8%) (Figure 4—figure supplement 2H), indicating that Spok3 kills in the presence of Spok2. Similarly, to determine the killing relation between Spok2 and Spok4, a cross was conducted between Spok4::PaPKS1 and s, which resulted in 99:5% killing (216/217 asci) (Figure 4—figure supplement 2I). Although these two crosses indicate that Spok2 does not confer resistance to Spok3 and Spok4 (Spok3 and Spok4 both kill Spok2), they do not allow us to determine whether Spok3 or Spok4 confer resistance to Spok2. To address this point, Spok2 killing was analyzed in a cross that was homoallelic for Spok3 (Spok3::PaPKS1 x Spok3::PaPKS1d ΔSpok2), which yielded 46% two-spored asci (143/310), confirming that Spok2 killing occurs in the presence of Spok3 (Figure 4—figure supplement 2J). Finally, to determine whether Spok4 is resistant to Spok2, we made a Spok4::PaPKS1 x Spok4::PaPKS1 ΔSpok2 cross, which resulted in 11/24 two-spored asci (Figure 4—figure supplement 2K). Although this genetic background is ill-suited for determining killing frequency (because of the aforementioned effect of the homozygous PaPKS1 deletion on fertility), the presence of two-spore asci suggests that Spok4 does not confer resistance to Spok2 killing. Overall, these results indicate that Spok2, Spok3, and Spok4 do not interact.
 
-## The Spoks are the Spore-Killer genes of the psks
+### The Spoks are the Spore-Killer genes of the psks
 
 To evaluate whether the newly discovered Spok homologs represent the genes that underlie the Psk spore-killer types, we sequenced backcrossed laboratory strains using Illumina Hiseq technology. A strain of each of Psk-1, Psk-2, Psk-5 and Psk-7 was previously backcrossed five times to the reference strain S (van der Gaag et al., 2000). The backcrossed strains are referred to here as Psk1xS5, Psk2xS5, Psk5xS5, and Psk7xS5 (Table 1). The backcrossed strains should maintain the killing percentage and mutual interactions of the dominant Psk parent. Given previous studies, we do not expect S (Psk-S) to be dominant over the other Psks (van der Gaag et al., 2000). Notably, crossing results reveal that Psk5xS5 has neither a Psk-5 nor a Psk-S phenotype, but a Psk-1 phenotype (Figure 4—source data 2). This is only possible if multiple killing loci are involved, which is concordant with the observation of multiple Spok genes in these strains.
 
 Our Illumina data recovered a total of 41,482 filtered biallelic SNPs from the four S5 backcrosses and the parental strains. All backcrossed strains show a few continuous tracts of SNPs from the dominant killer parent (Figure 4—figure supplement 3). For example, Psk1xS5– has a long tract in chromosome 1 that represents the mat– mating type, which is to be expected because the published reference of S (Podan2), for which the SNPs are called, is of the opposite mating type (mat+). Importantly, the location of Spok3 and/or Spok4 of each parental strain has a corresponding introgressed SNP tract in the corresponding S5 backcross, while all backcrossed strains possess the Spok2 gene from strain S (Figure 4—figure supplement 3). The Psk-5 parental strain of Psk5xS5 (strain Y) does not possess Spok2, whereas Psk5xS5 does. Hence, the change in the killing phenotype of the backcrossed strain can be attributed to the presence of Spok2 (see below). Taken together, these data suggest that the total Spok gene content is responsible for the killer phenotype of Psk-1, Psk-2, Psk-5, and Psk-7 (Figure 4). In addition, we determined (on the basis of experimental crosses) that the newly described Psk-8 type can also be described by Spok gene content and position (Figure 4—source data 2 and 3). Specifically, Psk-8 has the same Spok block position as Psk-7, but does not possess Spok3 (Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-v1.jpg)
+
+**Figure 4.:** (A) The boxes represent hierarchical levels that increase in killing dominance from bottom to top, which correlate with the number of Spok genes that a strain possesses. Strains with three Spok genes induce the spore-killing of strains with only two Spok genes and show mutual resistance to each other. Strains with two Spok genes show mutual killing among themselves due to the different Spok genes and kill strains with only Spok2. Strains with one Spok kill strains with no Spok genes (naïve strains). The chromosome diagrams depict the presence of the Spok genes and their location in the genome for the sequenced strains. (B) A zoomed-in look at Chromosome 5 of a Psk-7 strain, demonstrating that Spok3 and Spok4 are present in the Spok block and that Spok2 is present at the standard location. (C) The closely related species P. comata and P. pauciseta also possess Spok genes, but at different locations. The Spok genes in P. pauciseta are present in a smaller Spok block, whereas Spok1 is found on its own and exclusively in P. comata.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Light-red arrows with double heads indicate mutual killing, whereas dark-red arrows imply dominance. Blue lines indicate mutual resistance. Killing percentages between different Psks are indicated next to the interactions. (A) Simplified killing hierarchy of the P. anserina spore-killer types described in van der Gaag et al. (2000). Killer capacity goes from maximum at the top to null at the bottom. For example, according to van der Gaag et al. (2000), Psk-7 is mutually resistant with Psk-1 (23% killing due to independent segregation), and it is dominant over Psk-5 and all the other killer types. Notice that in the original work, the sensitive strains where in fact carriers of the Spok2 gene, which is nearly cryptic because of its high frequency in the population. The killer types Psk-6 and Psk-3 are ignored (see main text). (B) Dominance relationships between the known active Spok genes, regardless of chromosomal location. (C) Updated killing hierarchy between the Psk types, with killing percentages based on our own crosses. The chromosomal diagrams make the connection between the content and distribution of the Spok genes and the Psk type.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** For each cross, the Spok-genotype of the parents is given above the image of the rosettes. The s x s control cross yields four-spored asci (A) and the s x ΔSpok2 cross about 40% two-spored asci (B). The Spok3::PaPKS1 ΔSpok2 x ΔSpok2 and Spok4::PaPKS1 ΔSpok2 x ΔSpok2 crosses yield two-spored asci with two white spores (C, D). The Spok3::PaPKS1d ΔSpok2 x ΔSpok2 shows two-spored asci with two black spores and the Spok3::PaPKS1 ΔSpok2 x Spok3::PaPKS1d ΔSpok2 cross shows four-spored asci with two white and two black spores, as expected if the integration of Spok3 downstream of the PaPKS1 locus was successful (E, F). The Spok4::PaPKS1 ΔSpok2 x Spok3::PaPKS1d ΔSpok2 cross is barren with close to 100% empty asci (G). Crosses of Spok3::PaPKS1 x s and Spok4::PaPKS1 x s both result in two-spored asci with two white spores (H, I). The Spok3::PaPKS1 x Spok3::PaPKS1 ΔSpok2 yields both four-spored asci with two black and two white spores and two-spored asci with black spores, as expected if Spok2 is inducing spore killing in this cross (J). The Spok4::PaPKS1 ΔSpok2 x Spok4::PaPKS1 cross is of poor quality because of the homozygous deletion of PaPKS1 but shows the presence of some two-spored asci (marked with *), suggesting that Spok2 killing occurs. The Spok3i::PaPKS1 x s (L) is identical to the Spok3::PaPKS1 x s (H), suggesting no role for the intron in the spore-killing action. The Spok3 K204A was inserted at the PaPKS1 locus and the resulting strain was crossed either with a ΔSpok2 strain (M) or a Spok3::PaPKS1d (N). In both cases, four-spored asci with two white and two black spores are produced, indicating that the mutant allele has lost its spore-killing function but retains resistance to Spok3 killing.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Chromosomes were divided in 20-Kbp bins and colored on the basis of the count of SNPs called against the reference (Podan2). Bins that are identical to the reference (no SNPs) are not colored. Below each chromosomal panel, a cartoon in gray shows the length of the chromosome and the position of fixed genomic features that are present in all strains, including the centromere, the mating type (MAT) and Spok2. The centromere positions were approximated on the basis of the genetic map of P. anserina (Silar, 2013) and a large drop in GC content (not shown). When present, the positions of Spok3 and Spok4 were marked on the basis of the insertion point of the Spok block in the long-read assemblies. Known het genes are marked and alleles of het-s and het-c are indicated in different colors. The allele nomenclature of het-c follows Bastiaans et al. (2014).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) When two parents (P1 and P2) are crossed, no killing is observed if they are of the same Psk (or both naïve). If killing is observed, the interaction can be determined by selecting a spore from a two-spored ascus to generate an F1 progeny for crossing tests. By observing whether spore killing occurs in the test crosses, the interaction between P1 and P2 can be described as either mutual killing, mutual resistance, or dominance. (B) Selfing of F1 progeny from a two-spored ascus can also result in killing. If the killing loci are present at the same locus, all four spores should die. If the loci are unlinked, then the progeny may be one of four possible genotypes. K1 and K2 represent the killing loci of P1 and P2, respectively. S1 and S2 represent the ‘sensitive’ locus of P1 and P2, respectively. The killing loci can also segregate independently from the mat loci (+ in red and – in blue).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The Y-axis shows the frequency of each parental allele in the pooled samples, Wa87 (red) and Y (teal). In the two-spored sample, the region encompassing Spok2 on Chromosome 5 is only represented by Wa87 alleles. This is the only region in the two-spored pool with a complete skew and linkage to the centromere, as expected for a spore killing locus. Other skews from 50:50 ratios may be due to het genes, which can result in the death of nuclei when incompatible alleles are present in the same mycelium. Known het genes are marked. Skews specific to the four-spore asci might be the result of sibling competition effects during germination, which are imposed by the experimental design in the four-spore asci (having two genotypes) but not in the two-spore asci (only one genotype).
+
 Our results from the crosses also identified inconsistencies with previous studies (see also Appendix 2). Originally, Psk-4 was defined as a spore-killer (van der Gaag et al., 2000. However, the Psk-4 strain Wa46 has no intact Spok genes (Table 1). The spore killing observed when this strain was crossed to S in previous publications (or to Wa63 here) is a result of Spok2-induced killing. Hence, we recommend discontinuing the use of Psk-4 and that the term ‘naïve’ strain is used instead. Moreover, our crossing data show that our representative strain of Psk-3 (Wa21) (van der Gaag et al., 2000) is of Psk-2 killer type because it does not exhibit spore killing when crossed to Wa28 (Psk-2), because it has the expected spore-killing percentage when crossed to a Psk-S strain, and because its Spok content and location are representative of a Psk-2 strain. Finally, our representative strain of Psk-6 (Wa47) behaves as naïve (Psk-4), and does not exhibit the spore-killing reported by van der Gaag et al. (2000) in test crosses with Wa46 (Figure 4—source data 2).
 
 As each isolate of the entire Wageningen collection was previously assessed to determine its Psk type (van der Gaag et al., 2000), we can estimate the frequency of each Spok gene in the Wageningen population. Isolates of Psk-1, Psk-2, Psk-4, Psk-5, and Psk-7, as well as those previously considered as ‘sensitive’ (now Psk-S), account for 92 of the 99 strains collected from Wageningen. The seven remaining strains were identified as either Psk-3 or Psk-6. Following the rationale outlined in the previous paragraph, we assume that strains annotated as Psk-4 possess no functional Spok genes and omit all the Psk-3 strains (except Wa21) and the Psk-6 strains (except Wa47) from the analysis. We estimate that Spok2 is in 98%, Spok3 in 17%, and Spok4 in 11% of the Wageningen strains. A subsample of 11 strains from the 1937 French collection (including strains Y, Z and TG) have also been assessed for their Psk type , as have eight strains from a collection from Usingen (Us), Germany (Hamann and Osiewacz, 2004; van der Gaag et al., 2000). Hence, we infer that Spok2 is present in all of the Us strains and in 73% of the analyzed French strains. Spok3 and Spok4 is in 36% of the French strains, whereas Spok3 is in one Us strain and Spok4 is absent from the Us strains.
 
-## Spok3 and Spok4 are found in a large region associated with the Psk phenotypes: the Spok block
+### Spok3 and Spok4 are found in a large region associated with the Psk phenotypes: the Spok block
 
 Although the Spok genes are often assembled into small fragmented contigs when obtained by using Illumina data alone, in the PacBio and MinION assemblies, Spok3 and Spok4 are fully recovered within an inserted block of novel sequence (74–167 kbp depending on the strain), hereafter referred to as the Spok block (Figure 4). When present, the Spok block was found once per genome and always contained at least one Spok gene. Whole-genome alignments revealed that the Spok block has clear boundaries, and is localized at different chromosomal positions on chromosome 3 or on either arm of chromosome 5 in different strains of P. anserina (Table 1). Importantly, these positions correspond to a single SNP tract identified in the S5 backcrosses. In P. pauciseta (CBS237.71), the Spok block is found on chromosome 4. This is evident in Figure 1B as the only large-scale translocation between P. anserina and P. pauciseta (number 3). The Spok blocks of the different strains share segments and overall structure (Figure 5 and Figure 5—figure supplement 2), which suggests that they have a shared ancestry. However, complex rearrangements are found when aligning the block between the genomes. Within the Spok block, a given strain can harbor either or both of Spok3 and Spok4, and the regions containing the Spok genes appear to represent a duplication event (Figure 5). Strain TG+ shows an additional duplication that has resulted in a second copy of Spok3 (Figure 5—figure supplement 2). When present, SpokΨ1 is surrounded by numerous TEs, and the region does not appear to be homologous to the Spok block (Figure 5—figure supplements 1 and 3).
 
-## All Psk interactions can be explained by the presence, absence, or location of Spok2, Spok3, and Spok4
+![Figure 5.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig5-v1.jpg)
+
+**Figure 5.:** Gray bars represent the block sequences, blue vertical lines connect collinear regions between blocks, while red lines indicate inverted regions. The yellow lines show the region that is duplicated within the block surrounding Spok3 (green) and Spok4 (red).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Plotted on top of the chromosomal coordinates (light gray), the GC% distribution (window sizes of 4 kb and steps of 2 kb) can be seen. As a result of the process known as repeat-induced point mutation, TEs typically have very low GC% content in Podospora (Graïa et al., 2001; Hamann et al., 2000). Hence, alignment lines of non-syntenic regions that co-locate with sharp decreases of GC% can be interpreted as TEs. Overall, the largest difference between strains is the presence or absence of the Spok block (dark blue box). On the other hand, the Spok2 and SpokΨ1 genes are notoriously associated with clusters of TEs. Colors follow Figure 5 of the main text.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Colors are the same as those in Figure 5, except that the purple block highlights a large duplicate region that is unique to the TG strain.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Red lines indicate collinear regions, whereas blue lines indicate inverted regions. The alignment was produced with NUCmer using the options –b 2000 c 20 p –maxmatch. Excluding the Spok homologs, there is little similarity between the two regions.
+
+### All Psk interactions can be explained by the presence, absence, or location of Spok2, Spok3, and Spok4
 
 To determine whether other components of the Spok block influence the interactions of the Spok genes and/or the Psks, we conducted crosses between selected strains and evaluated spore killing (Figure 4—source data 1, 2 and 3). Specifically, dikaryotic F1 progeny that are homoallelic for the killing locus were selected, backcrossed to both parental strains, and also allowed to self-fertilize (Figure 4—figure supplement 4). On the basis of the results of these crosses, killing interactions were classified into one of the following categories.
 
@@ -102,21 +683,33 @@ The backcrossing method described above was not conducted for representative str
 
 Of note, crosses between Psk-1 and Psk-5 strains have a lower killing percentage than would be expected on the basis of the FDS of Spok2 (~25% instead of ~40%). We confirmed that Spok2 is completely associated with two-spored asci in these crosses using a pooled sequencing approach (Figure 4—figure supplement 5), an observation that is in line with the backcrossing results. However, we noted a high prevalence of three-spored asci (which were excluded from the analyses). We also observed three-spored asci in crosses between Psk-S and naïve strains. Despite low germination rates, we have been able to isolate a spore from a three-spored ascus in a cross between Psk-S and a naïve strain that has no copy of Spok2 (Appendix 2). Therefore, the three-spored asci are probably due to incomplete penetrance of the killing factor and support the conclusion that the spore killing observed in these crosses is caused by the same gene, Spok2. This result is consistent with findings presented in the study by van der Gaag (2005) that provided independent evidence for incomplete penetrance of spore-killing between S and Wa46 (Psk-S and naïve). The lower killing percentage is probably the result of asci with FDS of Spok2, which contain three or four spores instead of two.
 
-## Spok interactions among the Podospora species
+### Spok interactions among the Podospora species
 
 In contrast to the absence of epistatic interactions among the Spok genes of P. anserina, Spok1 of P. comata and Spok2 were shown previously to interact epistatically (Grognet et al., 2014). To determine whether Spok1 is also dominant to Spok3 and Spok4, crosses were conducted between strain TD and strains of P. anserina. Although TD shows low fertility with P. anserina (Boucher et al., 2017), we were successful in mating TD to a number of P. anserina strains of different Psk spore-killer types (Figure 4—source data 2 and 3). Often, only a few perithecia were produced with limited numbers of asci available to count, but despite this obstacle, the crosses clearly demonstrate that TD is dominant over Psk-S and Psk-2 strains, and is mutually resistant to a Psk-5 strain. These results imply that Spok1 provides resistance to all of the Spok homologs in P. anserina and is capable of killing in the presence of Spok2 and Spok3, but not Spok4. The mutual resistance with the Psk-5 strain also demonstrates that Spok4 provides resistance against Spok1. Additional crosses were also conducted with the P. pauciseta strain CBS237.71, which were consistent for the Spok3 and Spok4 interactions (Figure 4—source data 2 and 3). As both TD and CBS237.71 have unique spore-killing phenotypes, we assign them the types Psk-C1 and Psk-P1, respectively.
 
-## An intron in the 5′ UTR is not required for spore killing
+### An intron in the 5′ UTR is not required for spore killing
 
 To investigate whether the Spok genes are expressed during spore-killing, we conducted an additional nine backcrosses of the S5 strains to S, in order to generate S14 backcrossed strains (see 'Materials and methods'). We produced RNAseq data for self-killing S14 cultures and mapped the reads to the final assemblies of the dominant killer parental strains (Figure 2—figure supplement 2A). The expression of the Spok genes is evident in this data and supports the presence of an intron in the 5' UTR of the Spok homologs (Figure 2 and Figure 2—figure supplement 2B–E). Given its conservation across the Spok homologs and as the wtf spore-killer system in S. pombe was described as involving two alternate transcripts of the same gene (Nuckolls et al., 2017; Hu et al., 2017), the role of the intron in Spok3 spore-killing activity was investigated. The intron was deleted in a plasmid bearing the Spok3::PaPKS1 deletion cassette by site-directed mutagenesis, and the modified plasmid was used to transform the ΔKu70 ΔSpok2 strain. Three transformants bearing the Spok3 lacking the intron sequence (Spok3 Δi) were crossed to a ΔSpok2 strain. As in the control cross with wildtype (wt) Spok3, in which close to 100% killing was found, we observed that 109/109 of the asci contained two unpigmented spores (Figure 4—figure supplement 2L). Thus, Spok3 Δi displays wildtype killing activity. We conclude from this experiment that the unspliced form of Spok3 is not required for normal killing activity, and neither does the killing and resistance function rely on an alternatively spliced form of this intron.
 
-## Functional annotation of SPOK3 predicts three ordered domains
+### Functional annotation of SPOK3 predicts three ordered domains
 
 In order to gain insights into the molecular function of the SPOK proteins, domain identification was performed with HHPred and a HMM profile based on an alignment of 282 Spok3 homologs from various Ascomycota species. The SPOK3 protein was predicted to be composed of three folded domains (located at amino-acid positions ~ 40 to 170, 210 to 400, and 490 to 700 in the protein) separated by two unstructured domains (~170 to 210 and 400 to 490) as shown in Figure 6. No functional identification was recovered for domain 1, but a coiled-coil motif was found in the N-terminal 40 amino acids and predicted to form a parallel dimer, which corresponds to the variable length repeat of the nucleotide sequences (Figure 2A). Domain 2 showed homology to a class of phosphodiesterases of the PD-(D/E)XK superfamily (~214 to 325) with the catalytic residues forming the PD-(D/E)XK motif spanning positions 219 to 240 in the SPOK3 sequence (Steczkiewicz et al., 2012). The best hit in HHPred was to the HsdR subunit of a type-I restriction enzyme from Vibrio vulnificus (Uyen et al., 2009). The sequences align in the catalytic core region in the PD-(D/E)XK motif and also around a QxxxY motif (294 to 298 in SPOK3) that was found to be important for nucleic-acid binding and nuclease activity (Sisáková et al., 2008) (Figure 6—figure supplement 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig6-v1.jpg)
+
+**Figure 6.:** (A) (Top) A predicted domain diagram of the SPOK protein displays the N-terminal coiled-coil region (in magenta), the N-terminal domain of unknown function (in lilac), the two unstructured regions (in pink), the PD-(D/E)XK nuclease domain (in green), the cysteine cluster region (in orange) and the kinase domain (in red) with coordinates based on the alignment of all SPOK homologs. The positions of key residues and conserved motifs are indicated with the same color code. The mutations labels that are marked in bold correspond to the SPOK3 coordinates, except for the mutations on the SPOK2 of strain A. (Bottom) A plot of the pairwise nucleotide distances between all alleles of a given Spok indicates which regions of the protein are conserved or divergent, and where the polymorphisms within a single Spok gene are located. The predicted unstructured regions generally show greater divergence. (B) HMM profile derived from an alignment of 282 SPOK3 homologs from Ascomycota showing conserved residues. The domains identified in (A) are shown with the same color code, and key motifs and residues are underlined. The profile was generated with Web logo v3. (C) Comparison of the HHM profiles in the catalytic loop and DFG-motif region in eukaryotic protein kinases and Kdo kinase (an ELK) with the same region in Spok homologs. The sequence below corresponds to the SPOK3 sequence.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The N-terminus after the stop codon in Spok2 and Spok1 is not aligned because of a frame-shift mutation (see the nucleotide alignment). Domains and conserved motifs from Figure 6 are indicated in matching colors. The point mutations that have been investigated in this study are marked with yellow triangles. The C-terminus truncation of SPOK3 is marked with a blue dashed line, whereas the two putative nuclear localization signals (NLS) are shaded in blue at the top of the alignment. Note that the Spok3(1–490) construct also has a putative NLS.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) The alignment of SPOK3 domain 2 and the nuclease domain of the HsdR restriction enzyme from Vibrio vulnificus generated by HHPred. The figure gives the secondary structure prediction for the query and target, labeled ss (pred), as well as a consensus sequence for the query and target, labeled cons. as the actual secondary structure of the target in dssp code. The catalytic core residues of the PD-(D/E)XK are underlined as well as the QXXXY motif, which is important for nuclease activity. In addition, the positions that are mutated in the SPOK2 in strain A are shown: the star marks the position of a point-mutated residue, and the arrow points to the position of the two-amino-acid insertion in that strain. (B) A structural model of domain 2 of SPOK3 based on a contact map generated with RaptorX. Positions of the catalytic core residues are shown using the same color code as in (A). The positions that are mutated in strain A are shown with the same color code as in (A). A short alignment of the wt SPOK2 and the mutated SPOK2 sequence as found in strain A is shown. (C) The structure of the HsdR nuclease domain (pdb 3H1T) in which the homologous positions have been highlighted according to the alignment given in (A). Note the close spatial proximity of the catalytic lysine and the site of the two-amino-acid insertion in strain A in both cases.
+
 Domain 3 was identified as a hypothetical kinase domain (~539 to 700) as predicted previously by Grognet et al. (2014). In addition, a motif with a cluster of three highly conserved cysteine residues together with histidine residues (C-x3-C-x13-C-x5-H-x7-H) that is reminiscent of the zinc-finger motifs was identified upstream of the kinase motif (Figure 6). As previously reported for Spok2, D667 was identified as the catalytic base residue in the catalytic loop (subdomain VIb) of the kinase domain. Kinases often use other proteins as substrates, but they may also target small molecules (Smith and King, 1995). Inspection of the VIb and VII functional regions, which are informative as regards to kinase substrate specificity, suggests that the Spok-kinase domain might be more closely related to eukaryotic-like kinases (ELKs) than to eukaryotic protein kinases (ePKs), raising the possibility that this kinase domain is not necessarily a protein kinase domain and could phosphorylate other substrates (Steczkiewicz et al., 2012; Kannan et al., 2007).
 
-## The killing and resistance functions can be attributed to separate domains
+### The killing and resistance functions can be attributed to separate domains
 
 The ability of the Spok genes to perform both killer and resistance functions with a single protein is unique among meiotic drive systems (Bravo Núñez et al., 2018b). To investigate the role that the domains 1–3 may play in these two functions, we constructed a number of point mutations and truncation variants of Spok3 and assayed their ability to kill or provide resistance in vegetative cells. We were able to determine that domain 2 is important for killing activity whereas domain 3 is important for resistance activity.
 
@@ -128,13 +721,13 @@ We also analyzed the role of the conserved cysteine cluster just upstream of the
 
 Next we analyzed the role of the predicted nuclease domain (domain 2) in spore-killing activity. We generated a plasmid with a point mutant that affects the predicted catalytic core lysine residue (K240A). Introduction of this point mutation in the Spok3(1--490) allele abolished its killing activity in transformation assays (Figure 6—source data 1), suggesting that the predicted nuclease domain is required for killing activity. The Spok3 K240A mutant was then inserted at the PaPKS1 locus and the resulting knock-in strain was crossed with a ΔSpok2 strain (in order to assay killing) and to a Spok3::PaPKS1d strain (to assay resistance) (Figure 4—figure supplement 2M and N). In the cross to ΔSpok2, no killing was observed: the majority of the asci were four-spored with two white and two black spores (308/379, 81.2%), indicating that the K240A mutation abolishes the spore-killing activity of Spok3. In the Spok3 K240D::PaPKS1 x Spok3::PaPKS1d cross, no killing was observed: the majority of the asci were four-spored with two white and two black spores (268/308, 87%). These crosses indicate that the Spok3 K240A allele has no killing ability but has retained resistance. Grognet et al. (2014) reported that strain A bears a mutant allele of Spok2 that has affected killing ability but retains resistance. The mutations in that allele fall within a conserved region of the predicted nuclease domain (Figure 6) and map on predicted structural models in close vicinity to the catalytic lysine residue (K240 in SPOK3) and the other catalytic residues (Figure 6—figure supplement 2). Hence, the properties of the Spok2 allele of strain A provide independent evidence that the nuclease domain of SPOK proteins is involved in killing activity but dispensable for resistance.
 
-## Phylogenetic distribution of Spok genes
+### Phylogenetic distribution of Spok genes
 
 A BLAST search for closely related homologs of the Spok genes across fungi revealed an uneven distribution of related proteins among taxa. Among the available genomes from the Sordariales, we did not find any protein-coding sequences in addition to our newly described Spok genes of Podospora. By contrast, we found protein-coding sequences with high similarity across other orders of the Sordariomycetes, namely the Xylariales, Glomerellales and Hypocreales, as well as in one species of the Eurotiomycetes, Polytolypa hystricis (Poh; Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig7-v1.jpg)
 
-**Figure 7.:** Podospora SPOKs and closely related homologs do not follow the species tree.(Left) A maximum likelihood phylogeny of the fungal isolates that harbor Spok homologs that are closely related to those of Podospora recovered the groupings that are expected on the basis of fungal taxonomic classification (colored boxes and tip labels). The tree was produced using the aligned protein sequence of 288 single-copy orthologs. (Right) A maximum likelihood phylogeny of the SPOK proteins themselves with colors matching the taxonomy in the tree to the left. Two main clades can be distinguished (I and II), and their presence is mapped to each genome in the species phylogeny. Putative pseudogenes are marked with a Ψ symbol. The Fs_82228 protein (in dark purple text) has been demonstrated to exhibit some spore-killing characteristics in a P. anserina strain. Rooting of the species tree was based on the split between Classes, whereas the SPOK phylogeny was rooted on the basis of the broader alignment generated for the protein-domain predictions. Bootstrap support values higher than 70 are shown above branches, which are proportional to the scale bar (substitutions per site). SPOK tip labels follow the convention of fungal isolate code (bold) and locus name (see Figure 7—source data 1 for full species names and genomes).10.7554/eLife.46454.032Figure 7—source data 1.Figure 7.
+**Figure 7.:** (Left) A maximum likelihood phylogeny of the fungal isolates that harbor Spok homologs that are closely related to those of Podospora recovered the groupings that are expected on the basis of fungal taxonomic classification (colored boxes and tip labels). The tree was produced using the aligned protein sequence of 288 single-copy orthologs. (Right) A maximum likelihood phylogeny of the SPOK proteins themselves with colors matching the taxonomy in the tree to the left. Two main clades can be distinguished (I and II), and their presence is mapped to each genome in the species phylogeny. Putative pseudogenes are marked with a Ψ symbol. The Fs_82228 protein (in dark purple text) has been demonstrated to exhibit some spore-killing characteristics in a P. anserina strain. Rooting of the species tree was based on the split between Classes, whereas the SPOK phylogeny was rooted on the basis of the broader alignment generated for the protein-domain predictions. Bootstrap support values higher than 70 are shown above branches, which are proportional to the scale bar (substitutions per site). SPOK tip labels follow the convention of fungal isolate code (bold) and locus name (see Figure 7—source data 1 for full species names and genomes).
 
 We used maximum likelihood analyses to construct phylogenies of the SPOK sequences and of an orthologous gene set of the strains for which we retrieved hits in the BLAST search (Figure 7). These phylogenies reveal two notable patterns. First, the SPOK phylogeny shows a high degree of incongruence with the species phylogeny. Moreover, the SPOK phylogeny can be robustly divided into two clades: Clade I and II. Clade I contains the Fs_82228 sequence from Fusarium solani (old name Nectria haematococca). This sequence was previously introduced into P. anserina, and the genetically modified strain produced empty asci when mated to a naïve strain, suggesting that it has a killing action (Grognet et al., 2014). Clade II contains the Podospora Spok homologs. The sequences from the two clades are disparately distributed in the species phylogeny. The second notable pattern is the distribution of the SPOK sequences within the genomes. The sequences in Clade I are present in single copies in each strain, except for Fusarium oxysporum f. sp. pisi (Fop), suggesting that they are all orthologs. By contrast, many of the sequences in Clade II are present in multiple copies in each genome. It is particularly interesting to note how many Spok homologs from Clade II are present across strains of F. oxysporum (Fo) and the number of copies that are found in each genome. Several of the duplicate Spok homologs are present on the lineage-specific chromosomes of Fusarium that are often associated with pathogenicity (Armitage et al., 2018). Beauveria bassiana (Bb) also shows a high degree of variability in homolog content among the four strains that have homologs, indicating that the homologs are polymorphic in this species. The insect pathogen Metarhizium rileyi (Mr) shows an interesting pattern in that it possesses four divergent homologs, which is in stark contrast to many of the other species(including Podospora) that have multiple, though nearly identical, copies. The Clade II Spok homologs also appear to diversify within each strain or species in much the same way as the Spok genes do in Podospora, with variable lengths of the coil-coil repeat region and frameshift mutations near the 3′ end that relocate the stop codon. A few of the sequences may also represent pseudogenes, as evidenced by premature stop codons and/or frameshifts, although these features might also be the result of unidentified introns (Figure 7).
 
@@ -142,13 +735,13 @@ We used maximum likelihood analyses to construct phylogenies of the SPOK sequenc
 
 The identification of Spok3 and Spok4 has allowed us to explain the genomic basis for five of the seven Psk spore-killer types found in natural populations of P. anserina. Through our integrative approach of genomics, molecular biology and phenotyping, we have been able to demonstrate that the multiple drive elements that have been genetically identified in P. anserina are not based on different underlying molecular mechanisms and/or specific gene interactions, but rather involve combinations of closely related driver genes that belong to the same Spok gene family. The Spok genes thus appear to be responsible for all of the identified drive elements in Podospora, with the exception of the het-s spore-killing system.
 
-## The Spok block
+### The Spok block
 
 The presence of the complex Spok block presents a unique feature among the known meiotic drive systems. Often, meiotic drive elements occupy regions of suppressed recombination that span large tracts of chromosomes (Turner and Perkins, 1979; Hammer et al., 1989; Sandler et al., 1959) and co-occur with complex rearrangements (Harvey et al., 2014; Silver, 1993; Dyer et al., 2007; Svedberg et al., 2018). In these well-studied cases, the elements of the drive mechanisms are encoded by separate genes within the region, and the rearrangements and suppression of recombination are expected to have evolved to ensure that the drive machinery (e.g., the toxin and antitoxin genes) is inherited as one unit (Lyttle, 1991; Bravo Núñez et al., 2018b). In Podospora, a single Spok gene is fully capable of driving, and thus no region of suppressed recombination is required. Nevertheless, Spok3 and Spok4 are found in a large region that is not syntenic with the null allele. Hence, had the Spok genes not been previously identified from more placid genomic regions, the entire Spok block may have been misidentified as a driving haplotype with multiple interacting components. Considering that single-gene meiotic drivers might be more common than anticipated, it becomes necessary to question whether other drive systems that are located within complex regions, and for which the genetics are not well known, may also represent single gene drivers.
 
 At this stage, our data strongly suggest that the Spok block is moving in the genomes as a unit, but nevertheless, the mechanism of movement remains unknown. It may be hypothesized that movement of the block is achieved via an interaction with TEs at different genomic locations and non-allelic homologous recombination. This hypothesis is supported by the observation that the Spok genes outside of the Spok block, including SpokΨ1, are not located at the same position in different species, and that they are often surrounded by similar TEs. Such movement may be under selection as matings between strains that have the same Spok genes but in different locations will result in spore-killing. Furthermore, because of the idiosyncrasies of meiosis in Podospora, the position of the block may be under selection because the killing frequency is dependent on the frequency of crossing over with the centromere. Alternatively, the TEs may simply accumulate around the Spok genes because of a reduced efficacy of purifying selection at regions linked to the driver genes; their presence per se might increase the chance of rearrangements. As such, the role that TEs play in generating complex regions that are associated with meiotic drive should be investigated further in order to determine their importance in the evolution of drive.
 
-## Molecular function of the Spok genes
+### Molecular function of the Spok genes
 
 Spore-killing systems display analogies to toxin-antitoxin (TA) systems in bacteria and it is interesting to note that many toxin families rely on nuclease activity (Harms et al., 2018). The contrast between the Spok system and TA systems, however, resides in the fact that Spok toxin and antitoxin activities appear to be supported by the same protein molecule. The predicted kinase activity seems able to counter the toxic activity of the predicted nuclease domain both in cis and in trans. Mechanistic spore-killing models have to explain: (i) how the Spok gene can affect spores that do not carry it, at a distance, with SPOK proteins being intracellular proteins (Grognet et al., 2014); and (ii) how asymmetry is brought about in this system if killing and resistance activities are carried by the same protein molecule. It is premature to devise a mechanistic model for the molecular basis of Spok gene drive, yet it might be possible to conjecture about the substrates of the proposed kinase (and nuclease) activities of SPOK proteins.
 
@@ -156,11 +749,11 @@ A first way to explain how Spok genes might act at distance and affect spores no
 
 Studies of similar protein domains suggest that the coil-coiled domain is likely to be involved in protein–protein interactions (van Maldegem et al., 2015). The fact that Spok1 and Spok4 have the same length repeat in this domain could imply that the protein–protein interactions of this domain are important for resistance, as Spok1 and Spok4 are mutually resistant. This model would agree somewhat with the results of reporter constructs from Grognet et al. (2014), which showed an N-terminal mCherry tag on Spok2-produced empty asci. It is possible that the functional divergence observed between the SPOK proteins is due to mutations in this portion of the protein. In this model, domain 1 might be responsible for the target specificity of the nuclease (and kinase) activity. The killing action itself is expected to be universal among the Spoks and is supported by the fact that this entire domain of Spok3 from TG is identical to Spok4, yet appears to retain Spok3 functionality. The identification of the role of the predicted nuclease domain in killing and of the predicted kinase domain in resistance provides a first mechanistic insight into the dual role of Spok genes. However, further dissection of the molecular action of these proteins is required so that we can fully understand the molecular basis of Spok drive.
 
-## Absence of resistance
+### Absence of resistance
 
 One of the main factors that stands out in the Podospora system, as compared to the other well-studied spore killers, is the lack of resistant strains. Only one strain of P. anserina (the French strain A) has ever been described as resistant (Grognet et al., 2014). The point mutations of Spok3 that were induced in the laboratory imply that the creation of a resistant strain is a simple task, as only a single nucleotide change was required. Likewise, the resistant strain A Spok2 is different from the reference allele by only two novel insertions. Consequently, the lack of resistance does not appear to be the result of a mechanistic constraint. Potentially, the current Spok gene distribution could be a relatively young phenomenon and resistance could evolve over time. Another possibility is that resistance itself is somehow costly to the organism and selected against. In addition, it is puzzling that none of the Spoks in P. anserina show cross resistance. Intuitively, it would seem advantageous for novel Spok homologs to evolve new killing functions while maintaining resistance to the other Spok homologs. Again, the lack of cross-resistance does not solely appear to be the result of functional constraints, as Spok1, which is highly similar to Spok4, is resistant to all other Spok homologs. It is possible that it is more advantageous to combine multiple independent spore killers than to have a single broadly resistant gene. This option is supported by two observations presented in this study: the occurrence of the killing hierarchy and the association of Spok3 and Spok4. The fact that Spok3 and Spok4 are present in the Spok block means that they are in tight linkage with each other. It may be the case that the linkage was selected for because it provided strains with the ability to drive against strains with just Spok3 or just Spok4. However, this association could also be simply the result of a duplication without invoking selection. Whether the killing hierarchy that we observe in P. anserina is due to a complex battle among the Spok homologs or a result of the existence of the Spok block will require further experimentation and mathematical modeling to resolve.
 
-## Evolutionary dynamics of the Spok genes
+### Evolutionary dynamics of the Spok genes
 
 Some interesting aspects of meiotic drive in Podospora identified herein bear numerous features that parallel the wtf genes that are responsible for drive in Schizosaccharomyces pombe. There is no sequence similarity or conserved domains between the Spok and wtf genes, and Podospora and Schizosaccharomyces are only distantly related (~500 million years diverged) (Wang et al., 2009; Prieto and Wedin, 2013). Yet these systems display similar evolutionary dynamics within their respective species. Both of these systems are built of multiple members of gene families, which appear to duplicate, rapidly diverge to the point where they no longer show cross reactions (potentially with the aid of gene conversion), and then pseudogenize and become nonfunctional (Nuckolls et al., 2017; Bravo Núñez et al., 2018a; Hu et al., 2017). Both systems also have close associations with TEs (Bowen et al., 2003). Hu et al. (2017) invoke LTR-mediated non-allelic homologous recombination as a possible mechanism for wtf gene deletion in a lab strain of S. pombe. We provide evidence for the deletion of Spok2, but it does not fit with expectation that this deletion is LTR-mediated. Nevertheless, as TEs are still accumulating in the region, other TE-related processes may have been involved in the deletion.
 
@@ -174,55 +767,55 @@ Alternatively, the diversification of the Spok genes may have been influenced b
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46454/elife-46454-fig8-v1.jpg)
 
-**Figure 8.:** Spok diversification.See main text for a description of the models. The models assume that an ancestral Spok homolog was present in the ancestor of both P. anserina and P. comata. The Spok diversification is traced by the inner lines. Spok2 is not included because its genomic location and sequence provide little clue as to its evolutionary history with respect to the other Spok homologs. Brown boxes represent divergence among the lineages, eventually forming P. comata and P. anserina. P. pauciseta is excluded for simplicity as in all cases it would need to obtain Spok3, Spok4 and the Spok block prior to diverging from P. anserina, and then have no divergence since the species split, or the Spok block would have to be transferred between the species.
+**Figure 8.:** See main text for a description of the models. The models assume that an ancestral Spok homolog was present in the ancestor of both P. anserina and P. comata. The Spok diversification is traced by the inner lines. Spok2 is not included because its genomic location and sequence provide little clue as to its evolutionary history with respect to the other Spok homologs. Brown boxes represent divergence among the lineages, eventually forming P. comata and P. anserina. P. pauciseta is excluded for simplicity as in all cases it would need to obtain Spok3, Spok4 and the Spok block prior to diverging from P. anserina, and then have no divergence since the species split, or the Spok block would have to be transferred between the species.
 
-## Evolutionary history of the Spok gene family
+### Evolutionary history of the Spok gene family
 
 Grognet et al. (2014) demonstrated that proteins that are related to the SPOKs are distributed across a diverse group of Ascomycota, but the majority of them are very diverged. Here, we have identified a group of more closely related homologs (clade II) from genome sequences that have been released since the Grognet et al. (2014) study, allowing us to analyze the evolutionary history at a finer resolution. The phylogenetic distribution of the clade II Spok homologs supports the general hypothesis that the Spok genes are transferred horizontally among evolutionarily disparate groups, as suggested by Grognet et al. (2014). For example, the eurotiomycete Polytolypa hystricis possesses a homolog that is closely related to the Podospora Spok genes. However, the phylogeny presented here shows that a subset of the clade II homologs agree with the relationships among closely related species (Maharachchikumbura et al., 2015), suggesting an alternative hypothesis whereby the Spok genes are ancestral to the Sordariomycetes but lost frequently. Such a scenario would imply that there are long-term consequences of possessing spore-killer genes, even if they are fixed in the population. These two hypotheses are not mutually exclusive, and with our data, we are not able to disentangle their relative importance for the observed pattern.
 
 The diversification pattern may also give insight into the possibility that SPOK homologs function as drivers in lineages other than Podospora. The phylogeny presented here suggests that the clade I homologs do not represent meiotic drive genes because only one presumably orthologous copy is typically found. By contrast, the numerous closely related Spok homologs of clade II may be driving. For example, in F. oxysporum f. sp. cepae four nearly identical copies are found, resembling the distribution of the Spok genes in Podospora. However, no sexual cycle has been observed in F. oxysporum. Given that we demonstrate vegetative killing with Spok3, it is possible that the Fusarium Spok genes operate in vegetative tissue to ensure the maintenance of the pathogenic-associated chromosomes. Alternatively, as F. oxysporum strains have been found with both mating type alleles (O'Donnell et al., 2004), there may be a cryptic sexual cycle in which the Spok homologs are active.
 
-## Conclusions
+### Conclusions
 
 With this study, we have provided a robust connection between the phenotype and genotype of spore-killing in P. anserina. We showed that meiotic drive in Podospora spp. is governed by genes of the Spok family, a single locus drive system that confers both killing and resistance within a single protein, which synergize to create hierarchical dynamics by the combination of homologs at different genomic locations. We define Psk-1, Psk-2, Psk-5, Psk-7, Psk-8, and Psk-S in terms of Spok gene content and describe the interactions among them. The Spok genes are prone to duplication, diversification and movement in the genome. Furthermore, our results indicate that they probably evolved via cross-species transfer, highlighting the potential risks of the release of synthetic gene drivers for biological control invading non-target species. Moreover, we present evidence that homologs of the Spok genes might have similar dynamics across other groups of fungi, including pathogenic strains of Fusarium. Taken together, the Spok system provides insight into how the genome can harbor numerous independent elements that enact their own agendas and affect the evolution of multiple taxa.
 
 ## Materials and methods
 
-## Fungal material
+### Fungal material
 
 The fungal strains used in this study are listed in Table 1 and were obtained from the collection maintained at the Laboratory of Genetics at Wageningen University (van der Gaag et al., 2000) and the University of Bordeaux. Strains with the ‘Wa’ identifier were collected from the area around Wageningen between 1991 and 2000 (van der Gaag et al., 1998; van der Gaag et al., 2000; Hermanns et al., 1995). Strains S, Y, and Z were collected in France in 1937 (Rizet, 1952; Belcour et al., 1997). Strain S is commonly used as a wildtype reference, and an annotated genome (Espagne et al., 2008) is publicly available at the Joint Genome Institute MycoCosm website (https://genome.jgi.doe.gov/programs/fungi/index.jsf) as ‘Podan2’. A strain labeled T (referred to herein as TG) was kindly provided by Andrea Hamann and Heinz Osiewacz from the Goethe University Frankfurt and originates from the laboratory of Denise Marcou. However, as the genome sequence of TG did not match that reported by Silar et al. (2019), but instead is a strain of P. anserina, we included in our dataset another strain labeled T from the Wageningen Collection that was originally provided by the laboratory of Léon Belcour. We referred to this strain as TD, and sequenced it using only Illumina HiSeq (see Appendix 2 for further discussion). It remains unclear where exactly TD and TG were collected, given the labeling confusion.
 
 Representative strains of the Psk spore-killer types from the Wageningen collection were phenotyped to confirm the interactions described by van der Gaag et al. (2000). Strains Wa87 and Wa53 were selected as representative of the Psk-1 type, Wa28 for Psk-2, Wa21 for Psk-3, Wa46 for Psk-4, Y for Psk-5, Wa47 for Psk-6, and Wa58 for Psk-7. Strains S and Wa63 were used as reference strains and are annotated as Psk-S. Strain Wa58 mated poorly in general, so strain Z was also used as a mating tester for the Psk-7 spore-killer type. For all crossing experiments and genome sequencing, we isolated self-sterile monokaryons (i.e., haploid strains containing only one nuclear type) from spontaneously produced five-spored asci (Rizet and Engelmann, 1949), identified their mating type (mat+ or mat–) by crossing them to tester strains, and annotated them with + or – signs accordingly.
 
-## Culture and crossing conditions
+### Culture and crossing conditions
 
 All crosses were performed on Petri dishes with Henks Perfect barrage medium (HPM). This media is a modified recipe of PASM2 agar (van Diepeningen et al., 2008), to which 5 g/L of dried horse dung is added prior to autoclaving. Strains were first grown on solid minimal medium, PASM0.2. For each cross, a small area of mycelium of each of two monokaryons was excised from the plates and transferred to HPM. Perithecia (fruiting bodies) form at the interface between sexually compatible mat+ and mat– monokaryons. Mature perithecia with fully developed ascospores were harvested after 8–11 days and the percentage of two-spored asci was evaluated to determine the killing percentage (Box 1—figure 1). All cultures were incubated at 27°C under 70% humidity for a 12:12 light:dark cycle. Barrage formation, whereby confrontations between mycelia of two different strains will produce a visible line of dead cells if they are vegetatively incompatible, was also evaluated on HPM. For details, see van der Gaag et al. (2003).
 
-## Experimental design for crosses
+### Experimental design for crosses
 
 To determine the epistatic interactions between the different Psks, crosses were set up according to the following design (Figure 4—figure supplement 4A). Monokaryons of two parental strains (P1 and P2) were confronted on Petri dishes with solid HPM media and perithecia were dissected upon maturation, which takes place after 9–12 days. If only four-spored asci were observed, P1 and P2 are the same Psk, otherwise they represent different Psks. A spore was selected from a two-spored ascus to generate an F1 strain for further crosses: selfing or backcrossing to the parental strains. As most F1 strains from two-spored asci will be homokaryotic for a driver, they will result in four-spored asci when selfed, except in the case of mutual killing (Figure 4—figure supplement 4B). Mutual killing can also result in completely empty asci if the drivers are at the same locus. By crossing the F1 strains to both + and – strains of P1 and P2, we can distinguish between mutual killing, mutual resistance, and dominance. If none of the crosses yield two-spored asci, there is mutual resistance (Figure 4—figure supplement 4). In a dominance interaction, for example when P1 is dominant to P2, the F1 strain will produce four-spored asci with both mating types (+/–) of P1, but will have two-spored asci with both mating types of P2. If two-spored asci were observed in crosses to both P1 and P2, or if there are two-spored asci when the F1 is selfed, then there is mutual killing.
 
-## DNA and RNA extraction and sequencing
+### DNA and RNA extraction and sequencing
 
-## Culturing, extracting and sequencing genomic DNA using Illumina HiSeq
+#### Culturing, extracting and sequencing genomic DNA using Illumina HiSeq
 
 Monokaryotic strains of P. anserina were grown on plates of PASM0.2 covered with cellophane. The fungal material was harvested by scraping mycelium from the surface of the cellophane and placing 80–100 mg of mycelium in 1.5 ml Eppendorf tubes, which were then stored at −20°C. Whole-genome DNA was extracted using the Fungal/Bacterial Microprep kit (Zymo; www.zymo.com) and sequenced using the SNP and SEQ Technology platform (SciLifeLab, Uppsala, Sweden), where paired-end libraries were prepared and sequenced with the Illumina HiSeq 2500 platform (125-bp-long reads) or HiSeq X (150-bp-long reads) (Table 1).
 
-## Culturing, extracting and sequencing genomic DNA using PacBio RSII
+#### Culturing, extracting and sequencing genomic DNA using PacBio RSII
 
 In order to generate high-molecular-weight DNA that is suitable for sequencing using PacBio, eight strains were grown on PASM0.2 for 5–7 days (Table 1). The agar with mycelium was cut into small pieces and used as inoculum for flasks containing 200 ml 3% malt extract solution, which were then incubated on a shaker for 10–14 days at 27°C. The mycelia were filtered from the flasks, cut into small pieces and ~1 g was allotted into 2 ml tubes with screw-on caps, after which the tubes were stored at −20°C. High-molecular-weight DNA was then extracted following the procedure described in Sun et al. (2017). In brief, the mycelium was freeze-dried and then macerated, and DNA was extracted using Genomic Tip G-500 columns (Qiagen) and cleaned using the PowerClean DNA Clean-Up kit (MoBio Labs). The cleaned DNA was sequenced at the Uppsala Genome Center (SciLifeLab, Uppsala, Sweden) using the PacBio RSII platform (Pacific Biosciences). For each sample, 10 kb libraries were prepared and sequenced using four SMRT cells and the C4 chemistry with P6 polymerase.
 
-## Culturing, extracting and sequencing genomic DNA using MinION Oxford Nanopore
+#### Culturing, extracting and sequencing genomic DNA using MinION Oxford Nanopore
 
 DNA extraction was performed as for the PacBio sequencing, except that the mycelia were dissected to remove the original agar inocula and the DNA was purified using magnetic beads (SpeedBeads, GE) then sequenced without further size-selection. Monokaryotic samples TG+ and CBS237.71– were sequenced first in a barcoded run on a R9.5.1 flowcell using the Oxford Nanopore Technologies (ONT) rapid barcoding kit (1.5 µl RBK004 enzyme to 8.5 µl DNA per reaction). Owing to low tagmentation efficiency, we did additional sequencing for TG+ using the ligation sequencing kit (LSK108, R9.4.1 flowcell). 500 ng DNA (25 µl) was mixed with 1.5 µl NEB Ultra-II EP enzyme and 3.5 µl NEB Ultra-II EP buffer and incubated for 10 min at 20°C and 10 min at 65°C, before addition of 20 µl AMX adaptor, 1 µl ligation enhancer, and 40 µl NEB Ultra-II ligase. After ligation, the standard ONT washing and library loading protocol was followed and the sample was sequenced on a R9.4.1 flowcell. After sufficient sequencing depth had been achieved for sample TG+, the flowcell was washed and the remaining barcoded samples were loaded to improve coverage for sample CBS237.71–. The sample Y+ yielded less DNA (150 ng in 15 µl) and hence half the normal volume of adaptor was used (10 µl) and ligated using 20 µl Blunt/TA ligase for 15 min. Otherwise, the standard protocol was followed, with sequencing done in a R9.4.1 flowcell. Basecalling and barcode split was done using Guppy 1.6 and Porechop (ONT) for all samples.
 
-## RNA sequencing
+#### RNA sequencing
 
 We generated transcriptomic data from dikaryotic strains that undergo spore-killing during selfing. The S14 backcrosses (see below) were mated to the strain S in order to obtain killer heteroallelic spores (from four-spore asci) that were dissected from ripe fruiting bodies (see Figure 2—figure supplement 2). The spores were germinated in plates of PASM2 with 5 g/L ammonium acetate added. Two days after germination, the culture was stored in PASM0.2 media at 4°C to arrest growth. From that stock, we inoculated HPM plates with either a polycarbonate track etched 76 mm 0.1 µm membrane disk (Poretics, GVS Life Sciences, USA) (Psk1xS5 and Psk7xS5) or a cellophane layer (Psk2xS5 and Psk5xS5) on top. The mycelia were grown for ~11 days and harvested for RNA extraction when the first spores were shot into the plate lid, ensuring several stages of fruiting body development. Note that P. anserina starts to degrade cellophane after ~6 days, and therefore the polycarbonate membrane allows for longer growing periods. Spore-killing was independently confirmed on HPM plates inoculated without a membrane. In addition, in order to improve gene annotation, we grew the strains Wa63– and TD+ on a cellophane layer on HPM for 11 and 7 days, respectively, to capture transcripts occurring during the monokaryotic phase.
 
 The harvested mycelia were immediately frozen in liquid nitrogen and stored at −80°C until RNA extraction. Next, 150 mg of frozen tissue was ground under liquid nitrogen and total RNA was extracted using an RNeasy Plant Mini Kit (Qiagen, Hilden, Germany). The quality of RNA was checked on the Agilent 2100 Bioanalyzer (Agilent Technologies, USA). All RNA samples were treated with DNaseI (Thermo Scientific). Sequencing libraries were prepared using an NEBNext Ultra Directional RNA Library Prep Kit for Illumina (New England Biolabs). The mRNA was selected by purifying polyA+ transcripts (NEBNext Poly(A) mRNA Magnetic Isolation Module, New England Biolabs). Finally, paired-end libraries were sequenced with Illumina HiSeq 2500 at the SNP and SEQ Technology platform.
 
-## Genomic analyses
+### Genomic analyses
 
 For both DNA and RNA Illumina HiSeq reads, adapters were identified with cutadapt v. 1.13 (Martin, 2011) and then trimmed using Trimmomatic 0.36 (Bolger et al., 2014) with the options ILLUMINACLIP:adapters.fasta:1:30:9 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:30. Only filtered reads with both forward and reverse were kept for downstream analyses. For short-read mapping, we used BWA v. 0.7.17 (Li and Durbin, 2010) with PCR duplicate marking of Picard v. 2.18.11 (http://broadinstitute.github.io/picard/), followed by local indel re-aligning implemented in the Genome Analysis Toolkit (GATK) v. 3.7 (Van der Auwera et al., 2013). Mean depth of coverage was calculated with QualiMap v.2.2 (Okonechnikov et al., 2016).
 
@@ -234,7 +827,7 @@ Alignments of the assembled genomes were performed with the NUCmer program of th
 
 In order to evaluate synteny across species, we aligned the chromosomal scaffolds of Wa58– (P. anserina, Psk-7), CBS237.71- (P. pauciseta), and the reference genome of P. comata (PODCO, Silar et al., 2019) using NUCmer with –b 2000 in an all-vs-all fashion. Given that the largest TE reported for P. anserina is around 12 kb (Espagne et al., 2008), we filtered out alignments smaller than 13 kb and plotted the remaining alignments using Circos (Krzywinski et al., 2009). We further excluded alignments of missing data (Ns) tracks in chromosome 6 and 7 from PODCO. See https://github.com/johannessonlab/SpokPaper (Ament-Velásquez, 2019; copy archived at https://github.com/elifesciences-publications/SpokPaper) for a Snakemake pipeline and Circos configuration files. Notice that the Circos plot includes intrachromosomal alignments; for example, the rDNA operon in chromosome 3 is especially noticeable for Wa58–. To evaluate the large-scale translocations in P. comata (Figure 1B and Figure 1—figure supplement 1), we mapped the short-reads of TD+ to PODCO and Podan2, inferring mis-assemblies on the basis of the concordance of paired-end reads. Translocation 1 is clearly a misassembly. The translocation 2 in chromosome 4 however is complex because the corresponding boundaries in Podan2 start at a cluster of TEs at the 5′ end, and finish at the centromere on the 3′ end. Indeed, Silar et al. (2019) could not verify this translocation using PCR. Accordingly, the mapping of the paired-end reads does not support the translocation to the end of chromosome 4 in PODCO.
 
-## Genome annotation
+### Genome annotation
 
 For annotation, we opted for gene prediction trained specifically on P. anserina genome features. We used the ab initio gene prediction programs GeneMark-ES v. 4.32 (Lomsadze et al., 2005; Ter-Hovhannisyan et al., 2008) and SNAP release 2013-06-16 (Korf, 2004). All of the training process was performed on the sample Wa28–, for which all chromosomes were assembled (see 'Results'). The program GeneMark-ES was self-trained with the script gmes_petap.pl and the options –fungal –max_intron 3000 min_gene_prediction 120. SNAP was trained as instructed in the tutorial of the MAKER pipeline v. 2.31.8 (Holt and Yandell, 2011; Campbell et al., 2014, and in the SNAP README file). First, we use the Podan2 transcripts and protein models as sole evidence to infer genes with MAKER (option est2genome = 1) and then we had a first round of SNAP training. The resulting HMM file was used to re-run MAKER (est2genome = 0) and to re-train SNAP, obtaining the final HMM training files.
 
@@ -242,7 +835,7 @@ A library of repetitive elements was constructed by collecting the reference P. 
 
 We used the blastn program to localize possible copies of Spok genes in all genome assemblies. The Spok2 (Pa_5_10) gene from Grognet et al. (2014) was selected as the query. We named the new Spok genes (Spok3 and Spok4) arbitrarily on the basis of sequence similarity, as reflected in the phylogenetic analyses (see below). Note that the existence of Spok3 had previously been hypothesized by Grognet et al. (2014), but no DNA sequence was provided. Moreover, the strain Y, in which they identified Spok3, contains both Spok3 and Spok4.
 
-## Introgressions of the spore-killing loci
+### Introgressions of the spore-killing loci
 
 Backcrossed strains of the various spore-killer phenotypes were generated through five recurrent backcrosses to the reference strain S (S5) by van der Gaag et al. (2000) . In the original study, the strains selected as spore-killer parents were Wa53+ for Psk-1, Wa28– for Psk-2, Y+ for Psk-5, and Wa58– for Psk-7. The S5 strains are annotated as Wa170 (Psk-1), Wa130 (Psk-2), Wa200 (Psk-5), and Wa180 (Psk-7) in the Wageningen collection, but for the sake of clarity, we refer to them as Psk1xS5, Psk2xS5, Psk5xS5, and Psk7xS5.
 
@@ -252,17 +845,17 @@ Inspection of the introgressed tracks revealed that the variants of the backcros
 
 As reported by van der Gaag et al. (2000), the S5 strains were generated by selecting ascospores from two-spored asci of crosses between S and the spore killer parent. This procedure ensures that the offspring will be homozygous for alleles of the spore-killer parent from the spore-killing locus to the centromere (Box 1—figure 1 and Figure 4—figure supplement 3). To eliminate as much background as possible from the spore killer parents in the backcrossed strains, nine additional backcrosses were conducted where ascospores were selected from four-spored and two-spored asci in alternating generations. Ascospores from the final generation were selected from two-spored asci to ensure that the strains would be homozygous at the spore-killing locus. These strains are the result of 14 backcrosses to S (S14) and are annotated as Psk1xS14, Psk2xS14, Psk5xS14, and Psk7xS14. The S5 and S14 strains were phenotyped by crossing the strains to their parents as well as other reference spore-killer strains to confirm that the killing phenotypes remained unchanged after the backcrosses.
 
-## Knock-out of Spok2
+### Knock-out of Spok2
 
 To knock-out Spok2, a 459-bp and a 495-bp fragment flanking the Spok2 ORF downstream and upstream were obtained by PCR. These fragments were then cloned flanking the hph gene in the SKhph plasmid as blunt end fragments in a EcoRV site and a SmaI site. The deletion cassette was then amplified by PCR and used to transform a ΔKu70 strain (El-Khoury et al., 2008). Five transformants were screened for integration of the hph marker at Spok2 by PCR and crossed to s. To purify the ΔSpok2 nuclei, a heterokaryotic binucleated ΔSpok2 spore was recovered from a two-spored ascus and used to fertilize the initial ΔSpok2 transformant (which may or may not be heterokaryotic). Uninucleated hygR-resistant spores were then recovered from this cross.
 
-## Construction of a disruption cassette to insert Spok3 or Spok4 into the PaPKS1 locus
+### Construction of a disruption cassette to insert Spok3 or Spok4 into the PaPKS1 locus
 
 To replace the ORF of the centromere-linked Pa_2_510 (PaPKS1) gene by one of the Spok3 or Spok4 genes (see 'Results'), a disruption cassette was constructed as follows. A DNA fragment corresponding to the 700-bp upstream region of the PaPKS1 ORF was amplified with oligonucleotides UpPks1_F and UpPks1_R. This fragment was then cloned into a SKpBluescript vector (Stratagene) containing the nourseothricin-resistance gene Nat in the EcoRV site (vector named P1) using the SacII/NotI restriction enzymes (upstream from the Nat gene) to produce the P1UpstreamPKS1 vector. Then, the 770 bp downstream of the PaPKS1 ORF was amplified with oligonucleotides DownPks1_F and DownPks1_R. This second fragment was cloned into the P1UpstreamPKS1 vector using the HindIII/SalI restriction enzymes (downstream from the Nat gene) to produce the P1UpstreamDownstreamPKS1 vector. Finally, Spok3 was amplified from the Wa28 strain with oligonucleotides UpSpok3 and 4_F and DownSpok3, and Spok4 was amplified from the Wa87 strain with oligonucleotides UpSpok3 and 4_F and DownSpok4. These genes were then cloned into the P1UpstreamDownstreamPKS1 vector using the NotI/XbaI restriction enzymes (between PaPKS1 upstream region and Nat gene) to produce the P1UpstreamDownstreamPKS1_Spok3 or the P1UpstreamDownstreamPKS1_Spok4 vector, so that the Spok3or Spok4 and Nat genes are flanked by the upstream and downstream regions of PaPKS1 ORF, allowing PaPKS1 ORF replacement by homologous recombination. The Spok3 and Spok4 amplified Spok genes contain the ORFs flanked by the 983-bp upstream the start codon and the 460-bp downstream the stop codon for Spok3, and by the 984-bp upstream the start codon and the 393-bp downstream the stop codon for Spok4, allowing the expression of the Spok genes using their native promoter and terminator regions. The disruption cassettes were then amplified from the final vectors using the most distal oligonucleotides 3′insidePsk1_F and 3′insidePsk1_R and named PKS1::Spok3_nat-1 and PKS1::Spok4_nat-1. See Supplementary file 4 for primer sequences. Point mutations in the Spok3 gene were obtained by site-directed mutagenesis using the Q5 high-fidelity polymerase (New England Biolabs) and verified by Sanger sequencing.
 
 The P. anserina ΔSpok2 (ΔPa_5_10) strain was obtained after disruption of the gene Pa_5_10 and replacement of its ORF with the hygromycin-resistance gene hph in a ΔKu70 strain. This strain was used as recipient strain for the disruption cassettes. We used 5 µl of the cassettes for transfection and Nourseothricin-resistant transformants were selected. As expected, most of the transformants were unpigmented and corresponded to the insertion of Spok3 or Spok4 by replacement of PaPKS1. Gene replacement was verified by PCR.
 
-## Protein-annotation methods
+### Protein-annotation methods
 
 Prediction of unstructured regions was performed in SPOK3 with PrDOS with a 2% false-positive setting (Ishida and Kinoshita, 2007). Coiled-coil prediction was performed with LOGICOIL (Vincent et al., 2013), CCHMM_PROF (Bartoli et al., 2009) and Multicoil2 (Wolf et al., 1997). Domain prediction was performed using Gremlin (Balakrishnan et al., 2011) and RaptorX contact predict (Ma et al., 2015). Conserved residues were identified using Weblogo 3 (Crooks et al., 2004) with a Gremlin-generated alignment as input. Domain identification was done with HHPred (Zimmermann et al., 2018).
 
@@ -276,7 +869,7 @@ In order to create a phylogeny of proteins that are closely related to the pro
 
 For comparison, we performed a phylogenomic analysis of all of the strains that had at least one BLAST hit for the Podospora Spok homologs, as defined above. Briefly, we recovered all the protein sequences for each genome from GenBank and ran OrthoFinder to recover orthogroups. We obtained 288 single-copy orthogroups that were then processed with PREQUAL v.1.02 (Whelan et al., 2018) and aligned with MAFFT. Columns with more than 50% missing data were removed with TrimAl (–gt 0.5) and all alignments were concatenated. The supermatrix was analyzed with IQTree as above but with 100 standard bootstraps.
 
-## Pool-sequencing of Psk-1 vs Psk-5 progeny
+### Pool-sequencing of Psk-1 vs Psk-5 progeny
 
 In order to confirm that Spok2 is responsible of the killing relationship between Psk-5 and Psk-1, we conducted a cross between the strains Wa87 and Y. When perithecia started shooting spores, we replaced the lid of the cross plate with a water-agar plate upside-down, and let it sit for around an hour. As the P. anserina spores from a single ascus typically land together, it is possible to distinguish spores that came from an ascus with no killing (groups of four spores) from those that survived killing (groups of two spores). To improve germination rates, we scooped spore groups of the same ascus type and deposited them together in a single plate of germination medium. After colonies became visible, they were transferred into a PASM2 plate with a cellophane layer where they grew until DNA extraction, which was followed by pool-sequencing with Illumina HiSeq X. In total, 21 two-spore groups, and 63 four-spore groups were recovered.
 

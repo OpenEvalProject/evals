@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.49910.001 Inflammatory bowel disease (IBD) affects 1.5–3.0 million people in the United States. IBD is genetically determined and many common risk alleles have been identified. Yet, a large proportion of genetic predisposition remains unexplained. In this study, we report the identification of an ultr arare missense variant (NM_006998.3:c.230G > A;p.Arg77His) in the SCGN gene causing Mendelian early-onset ulcerative colitis. SCGN encodes a calcium sensor that is exclusively expressed in neuroendocrine lineages, including enteroendocrine cells and gut neurons. SCGN interacts with the SNARE complex, which is required for vesicle fusion with the plasma membrane. We show that the SCGN mutation identified impacted the localization of the SNARE complex partner, SNAP25, leading to impaired hormone release. Finally, we show that mouse models of Scgn deficiency recapitulate impaired hormone release and susceptibility to DSS-induced colitis. Altogether, these studies demonstrate that functional deficiency in SCGN can result in intestinal inflammation and implicates the neuroendocrine cellular compartment in IBD.
+Inflammatory bowel disease (IBD) affects 1.5–3.0 million people in the United States. IBD is genetically determined and many common risk alleles have been identified. Yet, a large proportion of genetic predisposition remains unexplained. In this study, we report the identification of an ultr arare missense variant (NM_006998.3:c.230G > A;p.Arg77His) in the SCGN gene causing Mendelian early-onset ulcerative colitis. SCGN encodes a calcium sensor that is exclusively expressed in neuroendocrine lineages, including enteroendocrine cells and gut neurons. SCGN interacts with the SNARE complex, which is required for vesicle fusion with the plasma membrane. We show that the SCGN mutation identified impacted the localization of the SNARE complex partner, SNAP25, leading to impaired hormone release. Finally, we show that mouse models of Scgn deficiency recapitulate impaired hormone release and susceptibility to DSS-induced colitis. Altogether, these studies demonstrate that functional deficiency in SCGN can result in intestinal inflammation and implicates the neuroendocrine cellular compartment in IBD.
 
 ## Introduction
 
@@ -54,11 +54,119 @@ In this study, we identified a homozygous recessive mutation in the SCGN gene ca
 
 ## Results
 
-## A very rare variant in SCGN causes inherited early-onset ulcerative colitis
+### A very rare variant in SCGN causes inherited early-onset ulcerative colitis
 
 We identified a consanguineous Hispanic family with three of five children affected by an aggressive form of early onset ulcerative colitis (Figure 1a). All three probands were diagnosed by standard clinical, endoscopic, and histologic criteria (Levine et al., 2014). Two siblings (P1 and P2) were diagnosed at age eight while the third (P3) was diagnosed at age 6. Siblings P1 and P2 had a severe disease phenotype characterized by pancolonic involvement, anti-TNF treatment failure, ultimately requiring procto-colectomy 9 years and 9 months after diagnosis, respectively (Figure 1b and Figure 1—figure supplement 1). Sibling P3 had a milder phenotype with exclusive rectal involvement, controlled on oral mesalamine up until last point of follow up.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig1-v2.jpg)
+
+**Figure 1.:** (a) Pedigree of index family. Probands (P1, P2, and P3) and their siblings (S1 and S2) are indicated. SCGN genotypes are noted (+ = WT allele, - = R77H allele) (b) Representative endoscopic images of the rectum from affected individuals. (c) Multispecies alignment of SCGN protein sequences is shown; the residue affected in the rare coding variant found in affected patients (R77) is indicated. (d) Frequencies of allele variants of SCGN found in ExAC are plotted along the SCGN protein sequence, with the location of the six EF-hands also indicated. R77 is noted by an arrow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Critical clinical events are noted. Full line represents active follow-up and dashed line represents no active follow-up. Red bars along each proband’s timeline represent periods of time of reported colitic symptoms (bloody diarrhea and abdominal pain). Time of diagnosis, infliximab therapy initiation and time of colectomy are also noted.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The average heterozygosity across 100 kb genomic windows are shown for both affected siblings. This analysis identified single contiguous regions of homozygosity on 6 p and 12q in both probands.
+
 The consanguineous nature of the family pedigree suggested an autosomal recessive trait, where each of the affected individuals inherited a recessive allele from one of their parents. Multiple genomic approaches were used to identify candidate recessive gene variants. Genome-wide microarray genotyping of all siblings was utilized to identify segments of loss-of-heterozygosity (LOH) and copy number variants (Supplementary file 1). Next, we sorted these finding along the genome to identify segments of shared changes in the three probands (P1, P2, P3) that were not shared by their unaffected siblings (S1, S2). Through this analysis, we identified large segments of LOH on chromosomes 6 and 12 that were shared between all three affected probands and not present in the unaffected siblings (Table 1). Whole genome sequencing of two of the probands confirmed these areas of LOH and indicated that they have more continuity than suggested by the SNP array analysis (Figure 1—figure supplement 2). Next, we performed whole-exome sequencing (WES) of all five siblings, and we filtered for rare homozygous nonsynonymous variants present among all the three probands and not their unaffected siblings. WES analysis identified a single rare (MAF <1%) homozygous missense variant in the SCGN gene (rs376721140; NM_006998.3:c.230G > A; p.Arg77His) that was shared by the three probands and not their unaffected siblings. This variant mapped to one of the segments of shared LOH on chromosome 6. To ensure additional candidate variants were not missed in areas of low WES coverage within the proband-shared LOH regions, we performed whole-genome sequencing (WGS) of two of the affected probands (P1 and P2). WGS confirmed that the SCGN variant is the only rare homozygous nonsynonymous candidate variant in the segments of shared LOH among these probands. Finally, familial segregation of the SCGN p.R77H mutation was confirmed by Sanger sequencing, showing that both parents were heterozygote carriers, and the unaffected siblings were either a heterozygote carrier or had reference alleles, as per WES results (Figure 1a).
+
+**Table 1.**
+ Areas of shared loss-of-heterozygosity (LOH) among affected probands as defined by SNP array.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Start</th>
+      <th>End</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chr 12</td>
+      <td>71,016,157</td>
+      <td>72,070,710</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>72,320,251</td>
+      <td>73,669,855</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>73,671,276</td>
+      <td>75,891,939</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>77,249,400</td>
+      <td>79,204,389</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>79,302,419</td>
+      <td>82,139,004</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>82,147,487</td>
+      <td>83,157,896</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>83,541,966</td>
+      <td>88,441,286</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>88,594,159</td>
+      <td>89,910,070</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>89,915,484</td>
+      <td>91,765,486</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>91,766,720</td>
+      <td>93,152,115</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>93,251,750</td>
+      <td>95,410,845</td>
+    </tr>
+    <tr>
+      <td>Chr 6</td>
+      <td>16,893,011</td>
+      <td>18,222,277</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>18,262,607</td>
+      <td>19,682,599</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>19,686,123</td>
+      <td>19,803,768</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>19,804,188</td>
+      <td>21,778,105</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>23,584,375</td>
+      <td>26,148,311</td>
+    </tr>
+  </tbody>
+</table>
 
 The allelic frequency for the variant found in affected individuals in this family is very rare (all ExAC = 0.014%; Hispanics only = 0.017%). As Hispanics are generally underrepresented among public genomic databases, we genotyped 2,000 Hispanic individuals (mostly of Mexican origin) from the Dallas Heart study (Victor et al., 2004). The mutation frequency among Hispanics in the Dallas Heart Study was 0.025%. Furthermore, in agreement with the rarity of this allele, no homozygous individual were identified within the Dallas Heart Study nor reported in public genomic databases (ExAC; Lek et al., 2016), 1000 Genomes Project (1000 Genomes Project Consortium et al., 2015), dbSNP (National Center for Biotechnology Information, 2019) or IBD exomes browser (Inflammatory Bowel Disease Exomes Browser, 2016).
 
@@ -66,35 +174,85 @@ Further screening of different databases (ExAC, ClinVar) indicates that there ar
 
 Secretagogin, the protein encoded by the SCGN gene, is a calcium sensing protein predicted to have 6 EF–hand domains (Wagner et al., 2000). The identified variant (p.R77H) maps to a highly conserved Arginine in the predicted second EF hand of the protein, which is substituted for Histidine (Figure 1c). While this change may be a conservative amino acid substitution, the rarity of this particular allele suggested that it may have functional consequences. To further understand the potential functional importance of the amino acid in question, we considered the mutational burden of the affected site. We collected allele frequencies for all coding variants in SCGN noted in ExAC, and mapped them along the length of the encoded protein and its EF hands (Figure 1d). We observed only a few residues with significant allelic heterogeneity, typically outside the EF hands. Arginine 77 exhibited limited coding variation, consistent with a potentially important functional role for this residue.
 
-## SCGN is expressed in EECs and intestinal neurons
+### SCGN is expressed in EECs and intestinal neurons
 
 To gain insight into any possible mechanism connecting SCGN to IBD pathogenesis, we first sought to characterize the expression pattern of SCGN in the intestine. We performed immunohistochemistry of rectal biopsies from healthy individuals and observed strong expression among scattered triangularly-shaped epithelial cells, morphologically compatible with EECs (Figure 2a). When colonic tissues from the probands (P1, P2 and P3) were stained, the pattern and morphology of these cells was not affected (Figure 2b and Figure 2—figure supplement 1). We next examined in more detail the pattern of SCGN protein expression in the intestine of normal mice. We observed that SCGN was confined to rare cells that co-stained in some instances for Chromogranin A (CGA), a marker of certain EEC populations (Figure 2c), with the degree of costaining being greater in the mouse colon, and minimal in the mouse small bowel (Figure 2d). Similar findings were made in human colonic tissues, where in a subpopulation of cells, SCGN co-localized with other EEC markers such as Chromogranin B (CGB), Serotonin (5-HT) and glucagon (GCG) (Figure 2—figure supplement 2). These findings suggested that SCGN marks a unique sub-population of EECs, in agreement with recent single-cell expression profiling of the murine small intestinal epithelium, which identified Scgn as a marker of a specific small intestinal EEC population (Haber et al., 2017). In addition, distinct clusters of SCGN positive cells in the submucosal and muscle layers of the murine intestine also co-stained for the neuronal markers TUJ1, SNAP25 and synaptophysin (SYP), consistent with SCGN expression in subpopulations of gut neurons (Figure 2e, Figure 2—figure supplement 3). In contrast with the partial overlap seen in intestinal tissues between SCGN and EEC or neuronal markers, SCGN protein expression was uniform in murine pancreatic islets where it colocalized with CGA (Figure 2f).
 
-## SCGNR77H is functionally impaired
+![Figure 2.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig2-v2.jpg)
+
+**Figure 2.:** (a) Immunohistochemistry (IHC) staining for SCGN in rectal biopsies obtained from a healthy individual. 40x magnification. (b) IHC staining for SCGN in rectal biopsies obtained from P2, one of the probands in the index family. 40x magnification. (c) SCGN and chromogranin A (CGA) immunofluorescence staining of murine colonic epithelium (scale bar 200 µm – inset 20 µm). (d) Morphometric quantification of SCGN and CGA staining patterns in epithelial cells of three sites of the murine gut. Cell population percentages are shown. SB: Small bowel (e) SCGN and synaptophysin (SYP) immunofluorescence staining in subepithelial cells of the murine large intestine (scale bar 200 µm – inset 20 µm). (f) SCGN and CGA immunofluorescence staining in murine pancreatic islets (scale bar 200 µm - inset 100 µm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Arrows indicate cells that are exclusively positive for SCGN. 5-HT, 5-hydroxytryptophan (serotonin); CGB, chromogranin B; GCG, glucagon precursor peptide.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** TUJ1, neuron-specific class III β-tubulin; SNAP25, synaptosomal nerve-associated protein 25.
+
+### SCGNR77H is functionally impaired
 
 EECs secrete peptide hormones upon nutrient stimulation in a process akin to neurotransmitter release. Both nutrient stimulation and neurotransmitter release activities require components of the SNARE complex (Li et al., 2014b; Wheeler et al., 2017), which mediates membrane fusion events. Previous studies have identified that SCGN interacts with the SNARE complex components SNAP23 and SNAP25, suggesting that this factor regulates neurotransmitter and hormone release in cells that express SCGN (Bauer et al., 2011; Rogstam et al., 2007). To assess SCGN function in exocytic release, we developed a cellular model of stimulated hormone release using the SCGN-expressing murine enteroendocrine cell line STC-1, which secretes GLP-1 in response to nutrient stimuli (Hirasawa et al., 2005; McCarthy et al., 2015; McLaughlin et al., 1998). Using CRISPR/Cas9 technology to target the first exon of murine Scgn, we generated two independent Scgn knockout (KO) clones that displayed loss of protein expression (Figure 3—figure supplement 1). Next, we measured GLP-1 release in response to docosahexaenoic acid (DHA) exposure, a fatty acid known to stimulate GLP-1 secretion in these cells (Hirasawa et al., 2005). Lack of SCGN expression led to a significant decline in GLP-1 secretion when compared to parental cell lines, indicating that SCGN is required for optimal DHA-stimulated GLP-1 secretion from cultured EECs (Figure 3a). SCGN expression in KO cell lines was restored using lentiviral vectors encoding human SCGN, including the wild-type (WT) or the p.R77H variant (Figure 3—figure supplement 1). DHA stimulated GLP-1 secretion was significantly impaired in cells expressing SCGNR77H compared to the isogenic wild-type control cells (Figure 3b), suggesting that the disease-associated variant is a hypomorphic allele that leads to altered secretion dynamics in EECs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig3-v2.jpg)
+
+**Figure 3.:** (a) Basal and DHA fatty acid induced GLP-1 release from parental and Scgn deleted (KO) clones. GLP-1 values are normalized to total protein content. (b) Basal and DHA stimulated GLP-1 secretion from rescue clones expressing human SCGNWT or SCGNR77H. (c) Immunofluorescence images showing subcellular localization of SNAP25 and SCGN in parental STC-1 cells and the indicated SCGN KO and rescue cell lines. Scale bar 15 µm. (d) For the experiment depicted in (c), SNAP25 staining intensity ratio between the membranous compartment and the total cellular signal was plotted in the indicated cell lines. Dots indicate individual cells, horizontal bars correspond to the mean within each group. (e) Midbrain size of zebrafish after scgn targeting with morpholinos or rescue with human SCGNWT or SCGNR77H. Dots indicate individual embryos, horizontal bars correspond to the mean within each group. The zebrafish experiments were performed in triplicate. *p<0.05, **p<0.01, ****p<0.0001 unpaired student t test in (a), (b) and (d). ****p<0.0001 multiple comparison ANOVA in (e). Error bars in (a) and (b) represent the S.E.M.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Protein knockout (KO) was confirmed by immunoblotting. Expression of SCGNWT or SCGNR77H in rescue clones is also shown.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Re-expressed SCGN was HA tagged.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** In-situ hybridization of HuC (elavl3) was performed in embryos at 48 hr post fertilization to highlight the developing brain. Control: control MO injection; MO: scgn MO injection; MO+WT: SCGN MO and human SCGN WT mRNA co-injection; MO+R77H: SCGN MO and human SCGN R77H mRNA co-injection. All injections are performed at one-cell stage of the development.
 
 To understand the mechanisms that result in dysfunction of hormone secretion, we investigated whether SCGNR77H had impaired binding to SNAP25, its partner in the SNARE complex. Immunoprecipitation of SCGN from STC-1 cells expressing either WT or the R77H variants led to comparable co-precipitation of endogenous SNAP25 from these cells (Figure 3—figure supplement 2). Next, we examined whether SCGNR77H might display dysfunctional regulation of SNAP25 subcellular localization. SNAP25 localization in STC-1 cells expressing WT or SCGNR77H proteins was examined by immunofluorescence staining. In parental STC-1 cells, both SCGN and SNAP25 displayed vesicular and plasma membrane localization (Figure 3c, left column). This is in agreement with the observation that membrane association of SNARE proteins is required for their biological activity in secretory processes (Gonelle-Gispert et al., 2000). Interestingly, the membranous localization of SNAP25 was lost in Scgn KO cells (Figure 3c, EV lane), and this was restored upon re-expression of SCGNWT (Figure 3c), indicating that normal cellular localization of SNAP25 is dependent on the expression of its partner SCGN. In contrast, SCGNR77H failed to restore SNAP25 plasma membrane localization (Figure 3c, right column), and these distribution changes were highly significant after image quantification (Figure 3d). Consistent with its role in directing membrane localization of SNAP25, SCGNR77H itself also failed to localize to the plasma membrane. In aggregate, these observations indicate that SCGNR77H displays abnormal subcellular localization which also impact its partner, SNAP25, ultimately resulting in altered SNARE function and vesicular secretion.
 
 To determine whether SCGN p.R77H also behaved as a loss of function allele in vivo, we investigated the function of SCGN in zebrafish, whose ortholog is 73% identical to the human protein. The most notable phenotype of SCGN loss in this animal model is abnormal midbrain development resulting in significant reduction in the size of this organ (Deciphering Developmental Disorders Study, 2015). SCGN suppression using a translation blocking morpholino (MO) targeting the ATG start codon led to the expected developmental phenotype of reduced midbrain size (Figure 3e, Figure 3—figure supplement 3), visualized using in situ hybridization for HuC (elavl3), an early pan-neuronal marker (Kim et al., 1996). Importantly, this phenotype was rescued when human SCGNWT mRNA was co-injected, whereas co-injection of mRNA encoding the R77H mutant failed to rescue the phenotype. Taken together, these findings are consistent with SCGNR77H being devoid of normal activity in cellular and in vivo developmental models.
 
-## Scgn-deficient mice are prone to colitis
+### Scgn-deficient mice are prone to colitis
 
 Given the identification of SCGN p.R77H in a pedigree with early onset ulcerative colitis, we next wished to address the role of this gene in colitis development. To that end, we engineered a Scgn knockout (Scgn-/-) mouse model by targeting the third exon of murine Scgn using CRISPR/Cas9 technology. Multiple pronuclear injections of Cas9 mRNA and custom synthetic gRNA led to numerous independent C57BL/6J Scgn targeted founder mice harboring different indels within the third exon of Scgn. Two independent founder lineages were selected (Secret1 and Secret2), each with Scgn deletions that could be easily detected by PCR-based genotyping (Figure 4—figure supplement 1a,b). Founders were backcrossed to wild-type C57BL/6J mice for at least three generations to dilute any possible off-target effects. Homozygous Secret1 and Secret2 mice expressed a truncated transcript skipping exon 3 of the gene (Figure 4—figure supplement 1c,d). Immunofluorescence staining and imaging of pancreatic islets using an antibody to an epitope not affected by the observed exon skipping demonstrated loss of SCGN protein expression in these two mouse lines (Figure 4—figure supplement 1e).
 
 Through heterozygote mating, littermate wild-type (WT) and Scgn deficient mice were generated and cohoused in a specific-pathogen-free (SPF) environment. At baseline, Scgn deficient mice (Secret1 and Secret2) did not develop any overt phenotype, including no obvious architectural abnormality in the colonic epithelium as seen in HE or alcian blue staining (Figure 4a), and no colitis was noted clinically or histologically even in mice as old as 330 days. Gene expression analyses indicated that key markers of specialized epithelial populations remained intact in these mice (Figure 4b). Furthermore, bacterial diversity and microbiota composition were not significantly different between WT and homozygous Secret1 mice (Figure 4c–e).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig4-v2.jpg)
+
+**Figure 4.:** (a) Representative colon histologic images from Secret1 and WT animals under untreated conditions. HE is shown on the left, alcian blue staining on the right. Scale bar 100 µm. (b) Baseline expression of prototypical intestinal epithelial cell lineage-specific markers from small bowel in Secret1 and WT mice was determined by qRT-PCR (n = 3 in each group). (c) Microbiome alpha diversity as measured by observed OTU mean counts of fecal 16 s rRNA sequencing. (d) Beta diversity by unweighted UNIFRAC principal coordinate analysis (PCoA) of fecal 16 s rRNA sequencing. (e) Class level taxonomic composition for stool 16 s sequencing. WT n = 16 Secret1 n = 20. S.E.M. was used for error bars in (b).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Diagram of CRISPR/Cas9 targeted exon 3 of Scgn. 20 nucleotide guide RNA sequence (blue), PAM (red). Reference sequence (top) and sequences from founder animals (middle and bottom) with varying length deletions are depicted. (b) Genotyping of mice carrying CRISPR/Cas9 induced deletions. (c) RT-PCR for Scgn using RNA extracted from colonocytes from WT and Secret1 animals. (d) Sequence alignment of WT and Secret1 Sanger sequencing results of RT-PCR product. (e) Fluorescent immunostaining of SCGN and CGA in pancreatic islets of Scgn sufficient (Scgn+/+) and Scgn deficient (Secret1 and Secret2) mouse lines. Scale bar 50 µm.
+
 Next, we examined the susceptibility of Scgn-deficient mice to DSS-induced colitis, a widely used model of acute colitis in mice. Importantly, most genetic defects thought to lead to increased IBD susceptibility in humans also display colitis sensitivity in this model (Perše and Cerar, 2012). Upon administration of DSS, homozygous Secret1 male mice experienced worse weight loss (Figure 5a), elevated disease activity index (Figure 5b), greater mortality (Figure 5c), and increased tissue damage by histopathology (Figure 5d,e). Greater weight loss was also recapitulated when performing these experiments without gender selection (Figure 5—figure supplement 1a) and was also seen in the Secret2 line (Figure 5—figure supplement 1b). In agreement with the more severe colitis in Scgn knockout mice, loss of Scgn led to increased expression of pro-inflammatory genes in colonic tissues in Secret1 (Figure 5f) and Secret2 (Figure 5—figure supplement 1c) homozygous mice. In aggregate, the data indicate that loss of Scgn in mice results in increased susceptibility to colitis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig5-v2.jpg)
+
+**Figure 5.:** (a–c) Body weight, disease activity index (DAI), and survival of male WT (n = 13) and Secret1 (n = 13) mice treated for 6 days with 2% DSS in their drinking water. (d) Histologic score of male and female WT (n = 11) and Secret1 (n = 13) animals treated for 6 days with 2% DSS. (e) Representative microphotographs (20x) of colonic epithelium of DSS-treated mice. (f) Inflammatory gene expression measured by qRT-PCR from ceca of DSS-treated mice. Data in (a), (b) and (c) are representative of 2 experiments. *p<0.05. **p<0.01, two tailed unpaired t test in (a), (b) and (f). *p<0.05. one tailed unpaired t test in (d). S.E.M. was used for error bars in (a), (b), (d), (f). Log rank test was used in (c).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Body weight of male and female Secret1 (n = 27) and WT (n = 21) mice treated with 2% DSS for 6 days. This is the aggregate data of 2 separate experiments. (b) Body weight of male Secret2 and WT mice during 6 day treatment with 1% DSS. (c) Inflammatory gene expression from ceca of experimental mice as measured by qRT-PCR. WT n = 9 Secret2 n = 12. **p<0.01 two tailed unpaired t test in (b) *p<0.05 one tailed unpaired t test in (c). Error bars in (a), (b), (c). S.E.M.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Lamina propria leukocytes were extracted from colon and small intestine (SI) of WT and Secret1 mice and stained for flow cytometry. The flow cytometry images show pooled analysis of (a) CD45+CD4+ cells T cells, (b) CD45+CD19+ B cells, (c) CD45+NK1.1+ NKT cells, (d) CD45+CD4+CD25+ Tregs, (e) CD45+Lin–NKp46–IL23R+ ILC3, (f) CD45+CD11b+Ly6G+ neutrophils, (g) CD45+CD11b+ macrophages, and (h) CD45+CD11b+CD11c+ dendritic cells. (i) Representative images showing gross appearance of the spleen and MLN from WT and Secret1 mice (n = 5 mice in each group).
 
 We examined whether loss of Scgn led to appreciable colonic lamina propria leukocyte abnormalities at baseline that could account for the susceptibility of this model to colitis. Flow cytometric analysis of colonic and small bowel lamina propria leukocyte populations from WT and Secret1 animals showed no differences in populations of cell types examined (Figure 5—figure supplement 2).
 
-## Colonic EECs do not modulate DSS sensitivity
+### Colonic EECs do not modulate DSS sensitivity
 
 Next, we sought to determine if disrupted colonic EEC function or dysfunction of the neuronal compartment was responsible for the effects of SCGN deficiency on intestinal inflammation. To that end, we used a genetic strategy to ablate colonic EECs through deletion of Neurog3, a transcription factor required for lineage differentiation (Mellitzer et al., 2010). Neurog3 deletion in the colonic epithelium was accomplished using a colonocyte-specific transgene (Hinoi et al., 2007), CDX2-Cre (Figure 6a). The resulting mice lost all CGA positive cells in the colonic epithelium, while showing no changes in the small intestine (Figure 6b). Gene expression of EEC-specific genes such as Neurog3 and Gcg was lost from colonocytes, while goblet cell markers were unaffected (Figure 6c). Importantly, ablation of EECs in the colon led to loss of Scgn expression in this compartment as would be expected (Figure 6c). Moreover, RNA sequencing analysis from colonocyte isolates also indicated that colonic Neurog3 deficiency was associated with loss of predicted or known EEC transcripts, including Scgn (Figure 6d). Functionally, colons from these animals exhibited drastic loss of hormone secretion at baseline, as measured by ex-vivo colonic GLP-1 and GLP-2 secretion in organ cultures. Furthermore, DHA stimulation led to GLP-1 and GLP-2 release from EEC sufficient (Neurog3f/f) colon explants, but not from colons of EEC ablated (Neurog3ΔCol) littermates. In addition, GLP-1 and GLP-2 release in response to DHA was completely blunted in colon explants from Secret1 homozygous animals, consistent with the role of SCGN in this response (Figure 6e). Importantly, EEC deficient mice did not have increased susceptibility to DSS-induced colitis (Figure 6f,g) suggesting that colonic EECs do not mediate the immunomodulatory effects of SCGN and raising the possibility that SCGN-expressing enteric neurons may modulate intestinal immune homeostasis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49910/elife-49910-fig6-v2.jpg)
 
-**Figure 6.:** (a) Diagram depicting the mating strategy used to generate colonic EEC (Neurog3ΔCol) deficient mice. (b) CGA immunofluorescent staining of colon and small bowel from wild-type (Neurog3f/f) and colonic EEC deficient (Neurog3ΔCol) mice (c) qRT-PCR of epithelial lineage makers from colonic epithelium from Neurog3f/f and Neurog3ΔCol mice (n = 3 in each group). (d) Heat map presentation of top differentially expressed genes from RNA-seq of colonic epithelia of Neurog3f/f and Neurog3ΔCol mice. (e) Ex-vivo basal and DHA-stimulated GLP-1 and GLP-2 secretion from colonic explants of Secret1 and EEC deficient mice. (GLP-1: Neurog3f/f n = 7, Neurog3ΔCol n = 6, WT n = 6, Secret1 n = 6) (GLP2: Neurog3f/f n = 5, Neurog3ΔCol n = 5, WT n = 6, Secret1 n = 4). Bars represent the mean and error bars the S.E.M. (f–g) Body weight and DAI of conventionally raised Neurog3f/f and Neurog3ΔCol mice treated for 6 days with 3% DSS (n = 15 in each group). Scale bar in (b) 50 µm. *p<0.05, **p<0.01, ***p<0.001 ****p<0.0001 two tailed unpaired t test in (c) and (e). S.E.M. was used for error bars in (c), (e), (f) and (g).10.7554/eLife.49910.038Figure 6—source data 1.Figure 6C.10.7554/eLife.49910.039Figure 6—source data 2.Figure 6D.10.7554/eLife.49910.040Figure 6—source data 3.Figure 6E.10.7554/eLife.49910.041Figure 6—source data 4.Figure 6F.10.7554/eLife.49910.042Figure 6—source data 5.Figure 6G.
+**Figure 6.:** (a) Diagram depicting the mating strategy used to generate colonic EEC (Neurog3ΔCol) deficient mice. (b) CGA immunofluorescent staining of colon and small bowel from wild-type (Neurog3f/f) and colonic EEC deficient (Neurog3ΔCol) mice (c) qRT-PCR of epithelial lineage makers from colonic epithelium from Neurog3f/f and Neurog3ΔCol mice (n = 3 in each group). (d) Heat map presentation of top differentially expressed genes from RNA-seq of colonic epithelia of Neurog3f/f and Neurog3ΔCol mice. (e) Ex-vivo basal and DHA-stimulated GLP-1 and GLP-2 secretion from colonic explants of Secret1 and EEC deficient mice. (GLP-1: Neurog3f/f n = 7, Neurog3ΔCol n = 6, WT n = 6, Secret1 n = 6) (GLP2: Neurog3f/f n = 5, Neurog3ΔCol n = 5, WT n = 6, Secret1 n = 4). Bars represent the mean and error bars the S.E.M. (f–g) Body weight and DAI of conventionally raised Neurog3f/f and Neurog3ΔCol mice treated for 6 days with 3% DSS (n = 15 in each group). Scale bar in (b) 50 µm. *p<0.05, **p<0.01, ***p<0.001 ****p<0.0001 two tailed unpaired t test in (c) and (e). S.E.M. was used for error bars in (c), (e), (f) and (g).
 
 ## Discussion
 
@@ -106,86 +264,86 @@ Unlike STXBP2, SCGN protein is absent from the immune system, pointing specifica
 
 ## Materials and methods
 
-## DNA extraction, SNP arrays and linkage analysis
+### DNA extraction, SNP arrays and linkage analysis
 
 DNA was extracted from 5 mL of whole blood collected in EDTA coated tubes using an automated QIAGEN AUTOPURE LS – large sample nucleic acid purification instrument. DNA concentration and quality was assessed on a nanodrop instrument. DNA was aliquoted and stored at −20°C until use. DNA samples from probands and their unaffected siblings were genotyped for common variants along the genome using the Infinium HumanCoreExome Beadchip SNP array (Illumina), which includes 264,909 tag SNP markers (244,593 in exons). Genotyping was performed by the McDermott Center for Human Genetics according to the manufacturer’s standard procedures. Areas of loss of heterozygosity that were shared by probands and not their unaffected siblings were identified as potential regions harboring a recessive allele responsible for disease linkage.
 
-## Whole exome and whole genome sequencing
+### Whole exome and whole genome sequencing
 
 Three micrograms of genomic DNA isolated from peripheral blood were used for whole-exome sequencing. The exome was captured using the Agilent SureSelectXT Human All Exon V4 Kit and sequenced on the Illumina HiSeq 2500 generating 100 bp paired-end reads. Variant calls were filtered to only include exonic, non-synonymous changes with minor allele frequencies < 1% in ExAC, 1000 genomes and TOPMED. We filtered further to include variants that were exclusively shared by all probands in a homozygous manner and present at most in a heterozygote manner in unaffected siblings. The analysis was conducted both at the genome-wide level and subsequently, the variants were reanalyzed focusing on areas of LOH identified by genome-wide SNP arrays as noted above. Because of gaps in WES capture affecting the areas of LOH, DNA samples from two probands were subsequently subjected to whole genome sequencing (Complete Genomics) and repeat analysis for rare variants (MAF <1%) in the segments of LOH that were shared between the two probands was performed. Furthermore, using WGS data, we remapped LOH segments. Heterozygous and homozygous variants were identified and assigned into 100 kb windows throughout the 6 p and 12q chromosome arms. Average heterozygosity was calculated for each window and plotted along the chromosome arm.
 
-## Allelic discrimination assay
+### Allelic discrimination assay
 
 Samples from 2000 Hispanic individuals enrolled in the Dallas Heart study were used for direct genotyping for rs376721140 using TaqMan probes flanking the area of interest. The assays were performed by the McDermott Center for Human Genetics using an Applied Biosystems 7900HT real time PCR instrument.
 
-## Plasmids
+### Plasmids
 
 A plasmid containing a full-length copy of human SCGN cDNA was purchased from Open Biosystems (MHS6278-202826064). Forward and reverse primers containing sites for BamHI and NotI restriction enzymes respectively, were used to PCR amplify the coding sequence for SCGN. The product was digested with BamHI and NotI and ligated into the multicloning site of the pEBB vector. The inserted sequence (SCGN) was validated by Sanger sequencing. SCGN R77H was generated using a site-directed mutagenesis kit (Agilent), and the mutation was confirmed by Sanger sequencing. The coding sequences for SCGN (WT or R77H) were subcloned into the FG9 lentiviral expression system containing a N-terminus 2xHA tag, as described before (Li et al., 2012).
 
-## Immunoblotting and immunoprecipitation studies
+### Immunoblotting and immunoprecipitation studies
 
 Cellular lysate preparation, protein electrophoresis, immunoblotting and immunoprecipitation was performed as previously described (Burstein et al., 2004). The antibodies used in our studies include SNAP25 (Abcam ab5666), SCGN (Santa Cruz biotechnology sc-374355), P84 (Genetex GTX70220), Actin (Sigma A5441), and anti-HA affinity matrix (Roche 11815016001).
 
-## Cell culture and cell line generation
+### Cell culture and cell line generation
 
 STC-1 cells were obtained from ATCC (Cat No. CRL-3254) and grown in culture using DMEM supplemented with 10% FBS. Identity testing was not performed as these cells were directly obtained from the vendor. Cells were tested and found to be Mycoplasma-free at time of experiments. To target the Scgn locus (exon 1), lentiviral CRISPR constructs (Lenti CRISPR system) were generated, as previously reported (Shalem et al., 2014). STC-1 cells were transduced with lentiviral particles and subjected to puromycin selection. Single clone isolation was carried out by limiting dilution, and clones were screened for loss of SCGN protein expression by western blot. Two independent clones were subsequently used for studies. SCGN protein expression was restored into these clones using lentiviral particles designed to express HA tagged WT or p.R77H human SCGN. Lentiviruses were generated using the FG9 system, with hygromycin resistance as a selection marker. Protein re-expression was confirmed by western blot.
 
-## Cellular immunofluorescence staining and analysis
+### Cellular immunofluorescence staining and analysis
 
 Immunofluorescence staining of STC-1 cells was carried out as previously described (Phillips-Krawczak et al., 2015). Briefly, cells were grown onto circular cover slips in 6-well plates. Once cells reached 70% confluency, cover slips were retrieved and cells were fixed with ice-cold fixing solution (4% paraformaldehyde in PBS) for 30 min. Cells were then permeabilized for 3 min using 0.15% Surfact-Amps (ThermoFisher) in PBS. The coverslips were then blocked for 30 min with blocking buffer (PBS and 3% goat serum – vector labs) and afterwards incubated overnight in primary antibody diluted in blocking buffer. Primary antibodies used for immunostaining included the following: Secretagogin (Santa Cruz biotechnology, sc-374355), SNAP25 (Abcam ab5666). After three washing steps in PBS, cells were incubated in secondary antibodies and respective fluorophores: goat anti-mouse alexa fluor 488 (Invitrogen) and goat anti-rabbit alexa fluor 555 (invitrogen). Images were obtained using a Nikon A1R confocal laser microscope system. The membranous and total cellular area plus fluorescence intensity of individual cells was measured using the ImageJ software. Approximately 40 cells per cell-type were analyzed. A membranous to total cellular fluorescence intensity ratio was calculated.
 
-## In-vitro GLP-1 release assay
+### In-vitro GLP-1 release assay
 
 All cells were counted and seeded on 6-well plates at equal density. Once cells were confluent they were placed in serum free media for a 2 hr period and washed twice with HEPES buffer (140 mM NaCl, 4.5 mM KCL, 20 mM HEPES, 1.2 mM CaCl2, 1.2 mM MgCl2, 20 mM Dextrose) before adding 400 µL of DHA-containing media. To prepare DHA-containing media, stock DHA (nu-chek U-84-A) solutions were prepared in 100% ethanol at a concentration of 10 mg/mL and frozen at −20°C until used. DHA-containing media at a concentration of 100 µM was prepared on the day of experiment by addition to a HEPES buffer, which was sonicated for 5 min prior to addition to cells. Cell supernatants were collected after 15 min and GLP-1 concentrations were determined using an ELISA kit (Millipore, EZGLPHS-35K). To account for possible differences in cellular density, ELISA results were normalized to total protein content (measured by Bradford assay) after cellular lysis of the corresponding wells.
 
-## Zebrafish models
+### Zebrafish models
 
 All zebrafish were kept in a standard aquatic facility, and raised at 28.5°C. Knockdown of scgn was achieved by injecting 5 ng of morpholino (GENE TOOLS) into 1 cell stage blastocysts, together with a tp53 MO to avoid the non-specific effects from injection (Robu et al., 2007). Morpholino efficiency was confirmed by RT-PCR and western blot analysis. For rescue experiments scgn MO was coinjected with mRNAs encoding either human SCGN wild-type or R77H into blastocysts of one-cell stage. Protein re-expression was confirmed by western blot (data not shown). In situ hybridization was carried out as previously described (Luo et al., 2016). Images were acquired using an OLYMPUS (SZX16) microscope. The midbrain was measured from a lateral view.
 
-## Mouse strains
+### Mouse strains
 
 Mice were kept in a specific pathogen free (SPF) barrier facility, in a standard 12 hour day cycle and fed standard irradiated chow. Scgn deficient animals were generated at the UT Southwestern transgenic core by multiple zygote injection of custom synthetic sgRNA (Dharmacon) and Cas9 mRNA (Sigma). Mice were generated on a C57BL/6 background and resulting progeny was characterized for potential targeting of the Scgn allele by PCR amplification of a 214 bp region flanking the site of sgRNA cleavage. The amplified product was subjected to Sanger sequencing. Two founder mice with Scgn mutations resulting in significant deletions at this site, referred to here as Secret1 and Secret2 (Figure 4—figure supplement 1a), were selected for future studies. Genotyping of these mice was performed by amplification of this region and gel electrophoresis to detect the genomic deletions (Figure 4—figure supplement 1b).
 
 Colonic EEC deficient animals were generated by mating the CDX2 Cre driver line (Jax 009350) against Neurog3 floxed mice, a kind gift from Andrew Leiter with authorization from Gérard Gradwohl.
 
-## DSS experiments
+### DSS experiments
 
 Acute colitis was induced by providing a 6 day course of DSS (Alfa aesar J63606-22) in drinking water at a concentration of 1%, 2% or 3% (g/dL, weight per volume). DSS solution was replaced every three days. On 10 day long DSS experiments, drinking water was replaced with autoclaved water as indicated on experimental figures. Mice of different genotypes were cohoused at the time of DSS experiments. Weight was recorded on a daily basis. Disease activity index (DAI) was calculated on day seven in a blinded fashion by adding individual scores from stool consistency, presence of blood in stool and weight change, as previously described (Supplementary file 3) (Cooper et al., 1993).
 
-## Tissue staining
+### Tissue staining
 
 Tissue analysis from patient samples involved archived intestinal biopsy tissue blocks from control and affected individuals. Tissues from experimental animals were freshly isolated after euthanasia and fixed overnight in freshly prepared 4% PFA, to be later embedded in paraffin. For all staining, 4 µm sections were utilized. Hematoxylin and eosin (HE) staining was performed by standard methods. For immunostaining, patient slides were stained using the Dako Omnis automated system, whereas slides obtained from experimental animals were manually stained. Briefly, the sections were first deparaffinized and rehydrated by serial xylene and decreasing alcohol concentration immersion. Antigen retrieval was performed by heat-induced epitope retrieval and citrate solution. Slides were incubated in blocking buffer for 45 min (PBS and 3% goat serum – vector labs), and then incubated overnight at 4°C in primary antibodies diluted in blocking buffer. Primary antibodies used for tissue immunostaining included the following: Secretagogin (Santa Cruz biotechnology sc-374355), chromogranin A (Abcam ab15160), chromogranin B (Abcam ab12242), 5-HT (Immunostar 20080), SNAP25 (Abcam ac5666), GCG (Santa Cruz biotechnology sc-514592), Tuj1 (Biolegend 801213) and synaptophysin (Abcam ab32127). Slides were washed in PBS three times (5 min each), and then incubated for 30 min in secondary antibodies in blocking buffer. Secondary antibodies used included goat anti-mouse alexa fluor 488 (Invitrogen) and goat anti-rabbit alexa fluor 555 (invitrogen). Slides were then washed in PBS on two occasions and then incubated for 10 min in PBS and Hoechst at 1:10,000 dilution. Slides were washed in PBS on three additional occasions prior to mounting using gold antifade reagent (Invitrogen).
 
-## Tissue histological analysis
+### Tissue histological analysis
 
 For DSS colitis histological severity scoring, HE slides were reviewed by a GI pathologist in a blinded fashion. Tissues were scored using a modified scoring system (Supplementary file 2) generated from combining the total score calculated from Neurath’s DSS score (Wirtz et al., 2017) and multiplying it by involvement score as suggested by Cooper (Cooper et al., 1993). Morphometric analysis of SCGN and CGA intestinal expression in the mouse was performed by staining tissues from four adult wild-type animals. Images (at least 13 per mouse and per region) were obtained using an epifluorescence microscope (Zeiss AxioObserver epifluorescence microscope). Images were scored for SCGN and CGA positivity by two independent observers and an average calculated from both quantifications.
 
-## Tissue mRNA expression
+### Tissue mRNA expression
 
 For DSS experiments, cecal tissue was collected at the end of the experiments and immediately stored in RNA later solution (QIAGEN), following the manufacturer’s instructions. RNA stabilized tissue was later thawed and 20 mg of tissue was disrupted using a glass tissue douncer and homogenized using QIAshredder columns prior to RNA extraction using RNeasy spin columns (QIAGEN). For preparation of small bowel and colonic epithelial isolates, the entire small bowel or colon were carefully excised and intestinal contents rinsed with KRB buffer (10 mM D-glucose, 0.5 mM MgCl2, 4.6 mM KCl, 120 mM NaCl, 0.7 mM Na2HPO4, 1.5 mM NaH2PO4, 15 mM NaHCO3). The intestinal segments were then filled with 1 mL KRB buffer containing 10 mM EDTA and 1 mM DTT and tied off on either end. These segments were placed in a sealed 50 mL conical tube containing 30 mL of KRB buffer and placed in a rocking deck incubator at 220 RPM for 40 min at 37°C. The luminal contents were collected into 1.5 mL microfuge tubes and washed three times with KRB buffer prior to storing in RNAlater solution at −80°C. RNA was then extracted following instructions by the manufacturer.
 
 We performed reverse transcription using 3–5 µg of RNA and the superscript III system (Invitrogen). We carried out quantitative real time PCR using SYBR green mix. Primers used for Il6, Il1b, Il33, Tnf, Lyz, Neurog3, Muc2, Retnlb, Tff3, Spdef and Scgn are provided in Supplementary file 4. Relative transcript levels were calculated using the ΔΔCt method.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA Seq was performed as previously reported (Starokadomskyy et al., 2016). Briefly, RNA was extracted from epithelial preparations with RNeasy columns (QIAGEN) as per instructions from the manufacturer. RNA integrity was determined using a bioanalyzer. Library preparation was performed at the UTSW microarray core using the TruSeq RNA sample preparation kit. Sequencing was performed on an Illumina platform HiSeq2500 sequencer. Sequencing data were analyzed using a custom workflow designed by the UTSW high performance computing cluster (BioHPC). Briefly, after adapter trimming, sequences were aligned to reference genome, GRCm38, using Hisat2. Duplicate reads were marked and removed using SAMBAMBA. Features were then counted using featurecounts. Differential expression analysis was performed using edgeR with cutoffs of 2 and 0.05 for FC and FDR respectively.
 
-## Colonic GLP-1 and GLP-2 release assay
+### Colonic GLP-1 and GLP-2 release assay
 
 Adult animals (WT or Secret1) were euthanized and the colon was immediately excised. Intestinal contents rinsed with ice-cold incubation buffer (138 mM NaCl, 5.6 mM KCl, 2.6 mM CaCl2, 1.2 mM MgCl2, 4.2 mM NaHCO3, 1.2 mM NaH2PO4, 10 mM HEPES), as previously described (Lebrun et al., 2017). The colon was opened along the mesenteric axis, and rolled open. Colons from individual mice were placed in a 6-well plate containing 3000 µL of dextrose-free and DHA-free incubation buffer. They were incubated for 10 min at room temperature and then at 37°C, 5% CO2 for an additional 10 min. A total of 200 µL of incubation buffer was collected for baseline GLP-1 secretion analysis. The colon was then gently tapped dry and re-placed in a new well with 3 mL of incubation buffer with 10 mM dextrose and 100 µM DHA (this solution was prepared fresh and sonicated for 3 min prior to use). At 60 min, 200 µL of buffer was collected for analysis. PMSF was added at a concentration of 100 µM (as DPP IV inhibitor) to each timed collection. A GLP-1 (Millipore EZGLPHS-35K) or GLP-2 (Crystal Chem 81514) ELISA kit was used for quantitative GLP-1 analysis according to manufacturer’s instructions.
 
-## Microbiota analysis by 16S sequencing
+### Microbiota analysis by 16S sequencing
 
 Morning fecal pellets were collected from co-housed WT and Secret1 adult animals aged 10–12 weeks. Fecal pellets were immediately frozen in liquid nitrogen and stored until use. DNA was extracted using QIAGEN power fecal kit according to manufacturer’s instructions. DNA purity and concentration were measured on a nanodrop device. Paired-end 16 s sequencing was carried out by a commercial vendor (SeqMatic) using an Illumina MiSeq platform. Sequencing data were then subjected to standard QIIME2 pipeline workflow (Bokulich et al., 2018; Caporaso et al., 2010), consisting of pre-processing quality preparation (trimming, demultiplexing, DADA2 quality filtering), phylogenetic profiling, alpha and beta diversity analysis, sequence alignment, taxonomic assignment and distribution analysis; and differential abundance testing using ANCOM.
 
-## Flow cytometry
+### Flow cytometry
 
 Lamina propria (LP) cells were isolated as described before (Kathania et al., 2016). In brief, colons were flushed to wash off fecal content and opened longitudinally. Colons were then cut into 0.5 cm pieces, transferred to flasks and shaken for 25 min at 37°C in HBSS containing 5 mM EDTA and 10 mM HEPES supplemented with 10% FBS. Cell suspensions were passed through a cell strainer. The remaining colonic tissue was washed with cold PBS, minced, transferred to conical flasks, and shaken for 25 min at 37°C in DMEM containing 0.25 mg/ml VII collagenase, 0.125 U/ml LiberaseTM, 10 mM HEPES pH 8, 0.1 M CaCl2, 0.05% DNase1, and 10% FBS. Cell suspensions were collected and passed through a strainer before staining and analysis. Cells were washed and then incubated with Fc block (553142, BD Bioscience). Subsequently, cells were stained with combinations of antibodies. Antibodies used were Lin-V450 (51–9006958, BD Biosciences), CD45.2-APC (17-0454-81, eBioscience), NK-p46- FITC (11-3351-82, eBioscience) IL-23R-PE (FAB16861P- R and D), CD4-FITC (100406, Biolegend), CD11c-PE-Cy7 (558079, BD Biosciences), Ly6G-eFlour-450 (48-5931-82, eBioscience), CD19-V450 (560375, BD Biosciences), NK1.1 FITC (553164, BD Biosciences), CD11b-FITC (553310, BD Biosciences) and CD25-PE (12-0251-81, eBioscience). Viability staining was done by 7-AAD (420404, Biolegend). Data were acquired with a FACSCanto II (BD) and analyzed with FlowJo software (Tree Star).
 
-## Statistical analysis
+### Statistical analysis
 
 The unpaired Student’s t test was utilized to parametric variables between two groups. The log rank test was calculated for statistical analysis of survival rates. Statistical analysis of 16S sequencing was performed as described above. For zebrafish experiments statistical analyses were performed using one-way ANOVA, Tukey's multiple comparisons test incorporated in Prism 7 (GraphPad Software).
 
-## Study approval
+### Study approval
 
 All human studies were carried out in accordance with UT Southwestern Medical Center institutional review board guidelines under an approved protocol (STU 112010–130). All subjects agreed to participation and written informed consent was obtained from all participants or legal guardians. Assent was obtained from individuals older than 10 years of age at time of enrollment. Murine studies were approved by the UT Southwestern Institutional Animal Care and Use Committee under study number APN 102011. All zebrafish (Danio rerio) experiments were performed according to standard procedures, and were performed in accordance with the guidelines of the animal ethical committee of Sichuan University.

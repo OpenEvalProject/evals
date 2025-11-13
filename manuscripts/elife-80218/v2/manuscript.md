@@ -24,19 +24,19 @@
 
 ### Affiliations
 
-1. https://ror.org/04dese585 Department of Microbiology and Cell Biology, Indian Institute of Science Bangalore Bangalore India
-2. https://ror.org/04dese585 Centre for Infectious Disease Research, Indian Institute of Science Bangalore Karnataka India
-3. https://ror.org/03gf8rp76 National Centre for Biological Sciences Bangalore India
-4. https://ror.org/02bv3zr67 The Institute of Mathematical Sciences, A CI of Homi Bhabha National Institute Chennai India
-5. https://ror.org/04dese585 Molecular Biophysics Unit, Indian Institute of Science Bangalore Bangalore India
-6. https://ror.org/007wpch15 Institute for Stem Cell Science and Regenerative Medicine Bangalore India
-7. https://ror.org/04dese585 Department of Biochemistry, Indian Institute of Science Bangalore Bangalore India
+1. Department of Microbiology and Cell Biology, Indian Institute of Science Bangalore Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
+2. Centre for Infectious Disease Research, Indian Institute of Science Bangalore Karnataka India ([ROR:04dese585](https://ror.org/04dese585))
+3. National Centre for Biological Sciences Bangalore India ([ROR:03gf8rp76](https://ror.org/03gf8rp76))
+4. The Institute of Mathematical Sciences, A CI of Homi Bhabha National Institute Chennai India ([ROR:02bv3zr67](https://ror.org/02bv3zr67))
+5. Molecular Biophysics Unit, Indian Institute of Science Bangalore Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
+6. Institute for Stem Cell Science and Regenerative Medicine Bangalore India ([ROR:007wpch15](https://ror.org/007wpch15))
+7. Department of Biochemistry, Indian Institute of Science Bangalore Bangalore India ([ROR:04dese585](https://ror.org/04dese585))
 
 † Corresponding author
 
 ## Abstract
 
-Mycobacterium tuberculosis ( Mtb ) is evolutionarily equipped to resist exogenous reactive oxygen species (ROS) but shows vulnerability to an increase in endogenous ROS (eROS). Since eROS is an unavoidable consequence of aerobic metabolism, understanding how Mtb manages eROS levels is essential yet needs to be characterized. By combining the Mrx1-roGFP2 redox biosensor with transposon mutagenesis, we identified 368 genes (redoxosome) responsible for maintaining homeostatic levels of eROS in Mtb . Integrating redoxosome with a global network of transcriptional regulators revealed a hypothetical protein (Rv0158) as a critical node managing eROS in Mtb . Disruption of rv0158 ( rv0158 KO) impaired growth, redox balance, respiration, and metabolism of Mtb on glucose but not on fatty acids. Importantly, rv0158 KO exhibited enhanced growth on propionate, and the Rv0158 protein directly binds to methylmalonyl-CoA, a key intermediate in propionate catabolism. Metabolite profiling, ChIP-Seq, and gene-expression analyses indicate that Rv0158 manages metabolic neutralization of propionate toxicity by regulating the methylcitrate cycle. Disruption of rv0158 enhanced the sensitivity of Mtb to oxidative stress, nitric oxide, and anti-TB drugs. Lastly, rv0158 KO showed poor survival in macrophages and persistence defect in mice. Our results suggest that Rv0158 is a metabolic integrator for carbon metabolism and redox balance in Mtb .
+Mycobacterium tuberculosis (Mtb) is evolutionarily equipped to resist exogenous reactive oxygen species (ROS) but shows vulnerability to an increase in endogenous ROS (eROS). Since eROS is an unavoidable consequence of aerobic metabolism, understanding how Mtb manages eROS levels is essential yet needs to be characterized. By combining the Mrx1-roGFP2 redox biosensor with transposon mutagenesis, we identified 368 genes (redoxosome) responsible for maintaining homeostatic levels of eROS in Mtb. Integrating redoxosome with a global network of transcriptional regulators revealed a hypothetical protein (Rv0158) as a critical node managing eROS in Mtb. Disruption of rv0158 (rv0158 KO) impaired growth, redox balance, respiration, and metabolism of Mtb on glucose but not on fatty acids. Importantly, rv0158 KO exhibited enhanced growth on propionate, and the Rv0158 protein directly binds to methylmalonyl-CoA, a key intermediate in propionate catabolism. Metabolite profiling, ChIP-Seq, and gene-expression analyses indicate that Rv0158 manages metabolic neutralization of propionate toxicity by regulating the methylcitrate cycle. Disruption of rv0158 enhanced the sensitivity of Mtb to oxidative stress, nitric oxide, and anti-TB drugs. Lastly, rv0158 KO showed poor survival in macrophages and persistence defect in mice. Our results suggest that Rv0158 is a metabolic integrator for carbon metabolism and redox balance in Mtb.
 
 ## Introduction
 
@@ -44,55 +44,198 @@ Mycobacterium tuberculosis (Mtb) is the etiological agent of tuberculosis (TB), 
 
 The primary niche of Mtb is inside phagocytic cells, where the bacteria are exposed to superoxide (O2.-), nitric oxide (NO), their reaction product peroxynitrite (ONOO.), and hypochlorite stress (Ehrt and Schnappinger, 2009; Philips and Ernst, 2012). In response to host-induced redox stress, Mtb deploys antioxidant enzymes catalase-peroxidase (KatG), superoxide dismutase (Fe-SodA), thioredoxin reductase (TrxB2), alkyl hydroperoxide reductase (AhpC), and redox buffers- thioredoxin (trxC), and ergothioneine (Table 1). In addition to this, Mtb maintains a reduced cytosol by producing mycothiol (MSH; a low-molecular-weight sugar thiol) in millimolar amounts (Kumar et al., 2011). Interestingly, the cytoplasmic MSH-mediated redox buffering is intricately linked to the radical detoxification system by a membrane-associated oxidoreductase complex (MRC; SodA, DoxX, and SseA) in Mtb (Nambi et al., 2015). Disruption of any MRC-component impedes mycothiol recycling, increases oxidative damages, and enhances susceptibility to thiol stress (Nambi et al., 2015). Furthermore, Mtb expresses virulence factors that modulate host immune signalling and ROS- generating machinery to reduce the concentrations of ROS encountered by the bacteria inside the host (Chai et al., 2020; Köster et al., 2017). Additionally, the thick cell envelope consisting of cyclopropanated mycolic acids, phthiocerol dimycocerosates (PDIM), lipoarabinomannan, and phenolic glycolipid I (oxygen radical scavengers) confers an excellent anatomical barrier to and detoxification of exogenous oxidants (Hatfull and Jacobs, 2014; Tyagi et al., 2015). Also, sulfur metabolism pathways (Hatzios and Bertozzi, 2011; Kunota et al., 2021), RHOCS (a redox homeostatic system; PknG, ribosomal protein L13, and RenU) (Wolff et al., 2015), DNA repair, and redox sensors (two-component systems such as DosR/S/T, WhiB family of transcriptional factors Hatfull and Jacobs, 2014; Kumar et al., 2011, and SigH-AosR/RshA Khan et al., 2021) allow Mtb to adapt and survive in response to exogenous redox stressors. While Mtb has evolutionarily adapted to counteract the host-generated exogenous redox stress, the pathogen is markedly sensitive to cell-permeable molecules that artificially elevate ROS and RNI inside the bacteria (Singh et al., 2008; Tyagi et al., 2015). For example, Mtb retains viability under high millimolar (mM) concentrations of exogenous ROS and RNI (Voskuil et al., 2011). However, it displays exceptional sensitivity to low micromolar (μM) concentrations of endogenous superoxide (2, 3-Dihydro-1,4, naphthoquinone) (Tyagi et al., 2015) and NO (PA-824) donors (Singh et al., 2008). In this context, PA-824 or Pretomanid, which releases NO inside Mtb, is lethal against both replicating and non-replicating Mtb (Singh et al., 2008) and has been approved to treat Multi-drug resistant (MDR) tuberculosis as BPaLM regimen (World Health Organization, 2022). Taken together, these data indicate that disrupting intracellular redox homeostasis by enhancing eROS levels can be a promising strategy for identifying novel targets to kill Mtb.
 
+**Table 1.**
+ List of redox-related proteins in Mtb which are either membrane bound or secreted out into periplasm/ extracellular space.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Protein/small MW thiols</th>
+      <th>Rv ID</th>
+      <th></th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>KatG</td>
+      <td>Rv1908c</td>
+      <td rowspan="3">Antioxidant enzyme</td>
+      <td>Braunstein et al., 2003; Tucci et al., 2020</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SodA</td>
+      <td>Rv3846</td>
+      <td>Braunstein et al., 2003, Vargas-Romero et al., 2016, Tucci et al., 2020</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>AhpC</td>
+      <td>Rv2428</td>
+      <td>Nieto R et al., 2016, Tucci et al., 2020</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Tpx</td>
+      <td>Rv1932</td>
+      <td>Probable thiol peroxidase</td>
+      <td>Tucci et al., 2020</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>TrxB2</td>
+      <td>Rv3913</td>
+      <td>Thioredoxin reductase</td>
+      <td>Wong et al., 2018</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>TrxC</td>
+      <td>Rv3914</td>
+      <td>Thioredoxin</td>
+      <td>Wong et al., 2018, Tucci et al., 2020</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td></td>
+      <td>Rv0526</td>
+      <td>Possible thioredoxin</td>
+      <td>Ke et al., 2018</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>ThiX</td>
+      <td>Rv0816</td>
+      <td>Probable thioredoxin</td>
+      <td>Ke et al., 2018</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Ergothioneine</td>
+      <td></td>
+      <td></td>
+      <td>Sao Emani et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
+
 Genetic determinants of redox homeostasis can coordinate the response to anti-TB drugs inside macrophages (Mishra et al., 2019; Mishra et al., 2017). Using a genetic biosensor (Mrx1-roGFP2) of MSH redox potential (EMSH), we found that heterogeneity in EMSH of Mtb drives multidrug tolerance inside macrophages (Bhaskar et al., 2014; Mishra et al., 2019). Interestingly, several central metabolic enzymes (e.g., isocitrate lyase; Icl) and redox regulators are required to maintain EMSH, ergothioneine biogenesis, NAD+/NADH poise, and to counter the lethal action of antibiotics in Mtb (Chawla et al., 2012; Mishra et al., 2017; Nandakumar et al., 2014; Saini et al., 2016; Singh et al., 2009). Indeed, the link between metabolism and antibiotic-mediated killing is further substantiated by studies showing that sensitivity to anti-TB drugs (bedaquiline, Q203, moxifloxacin, and clofazimine) is influenced by mycobacterial respiration and carbon catabolism (Lamprecht et al., 2016; Mackenzie et al., 2020; Shee et al., 2022). It appears that Mtb repurposes pathways involved in metabolism and redox homeostasis to mitigate immune and antibiotic pressures. These findings underscore the need for a comprehensive understanding of redox homeostasis in Mtb.
 
 In this work, we repurposed transposon mutagenesis- deep sequencing (TnSeq) by combining it with the Mrx1-roGFP2 redox biosensor to discover novel pathways controlling basal EMSH of Mtb: –280±5 mV (Figure 1A). We built a Himar1-based saturated Tn mutant library (Sassetti et al., 2003; Sassetti et al., 2001; Sassetti and Rubin, 2003) in Mtb expressing Mrx1-roGFP2 (Mtb-roGFP2) and exploited FACS to reliably separate mutants displaying a shift from basal to oxidative EMSH during aerobic growth. We then developed a next-generation sequencing (NGS) and analysis pipeline for constructing a system-level network of genetic factors essential for maintaining redox homeostasis under aerobic growth in Mtb. We established the effectiveness of our strategy by discovering the role of an unknown transcriptional regulator encoded by rv0158 in integrating the metabolism of carbon source with redox balance and bioenergetics in Mtb.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig1-v2.jpg)
+
+**Figure 1.:** (A) A saturated transposon mutant library in Mtb -roGFP2 was generated using a genetically engineered, temperature-sensitive mycobacteriophage pHAE180. Transposon mutants of Mtb were selected on 7H11 agar containing hygromycin and kanamycin. Genomic DNA was isolated and TraDIS (TnSeq) protocol was utilized to identify the transposon insertion site within the Mtb genome in the library of Mtb-transposon mutants. Mtb and Mtb Tn- Library expressing Mrx1-roGFP2 were grown in 7H9 supplemented with OADC and analyzed by flow-cytometry by exciting with 405 and 488 nm lasers at a constant emission (510 nm). The program BD FACS-Suite software was used to analyze the population distribution of bacteria, and a unique colour represented each population. EMSH-basal, EMSH-reduced, and EMSH-oxidized subpopulations are shown in red, blue, and yellow, respectively. FACS Dot plot of (B) untreated Mtb expressing Mrx1-roGFP2 grown in vitro is shown in red. (C) Mtb cells treated with an oxidant- 10 mM cumene hydroperoxide (CHP) (shown in yellow). (D) Tn-Library (Tn Lib). The subpopulation indicated in blue is the EMSH-reduced population as determined by Mtb cells treated with 20 mM dithiothreitol. (E) The EMSH-oxidized subpopulation (≈ 4%; EMSH OXD) was isolated by sorting, regrown on 7H11 agar, and resorted for three cycles to obtain EMSH-oxidized Tn mutants. 10,000 events per sample were analyzed. (F) The calculated EMSH of WT Mtb, input Tn Lib, and flow-sorted EMSH-oxidized Tn mutants. The data are means ± SEM of two independent experiments (n=6). (p>0.05: ns, p<0.0001: ****, one-way ANOVA with Tukey’s multiple comparisons test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Oxidative stress increases the ratio of oxidized (MSSM) to reduced mycothiol (MSH) via mycothiol-dependent peroxiredoxin (Prx) or peroxidase (Mpx). Oxidation of Mrx1-roGFP2 increases fluorescence intensity for excitation at 405 nm and decreases it for excitation at 488 nm at fixed emission at 510 nm. This ratiometric fluorescence change results in an oxidative shift in EMSH. This reaction is reversible, and once ROS levels deplete, EMSH normalizes predominantly via reduction of MSSM to MSH by NADPH- utilizing Mycothione Reductase (Mtr). (b– e) FACS strategy. FACS dot plot of Mtb without Mrx1-roGFP2 as unstained control. P1 population is all events acquired. P2 are singlets and gated on FSC-A/ FSC-H dot plot. Voltage is set such that unstained cells have median fluorescence Intensity of ≈100 at excitation 405 nm (BV 510) and 488 nm (FITC). P3 are GFP- positive cells. Dot plots of (f) untreated wild-type Mtb expressing Mrx1-roGFP2 (red population) (g) 10 mM cumene hydroperoxide (CHP) treated Mtb. ≈95% population is oxidized, as shown within the yellow gate (EMSH-oxidized). (h) 20 mM dithiothreitol treated Mtb. ≈95% population is reduced, as shown within the blue gate (EMSH-reduced). (i) Input Tn Lib showing 2–5% of EMSH-oxidized and EMSH-reduced transposon mutants. Immediately after sorting, the collected redox-altered cells were reanalyzed to determine sorting- efficiency. Dot plots of (j) post-sorted EMSH-oxidized (EMSH- OXD) cells. Cells were enriched from <5% to>90%. (k) Post-sorted EMSH-reduced (EMSH- RED) Mtb cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** FACS Dot plots of (a) untreated wild-type Mtb expressing Mrx1-roGFP2 (red population) (b) 10 mM cumene hydroperoxide (CHP) treated Mtb. ≈95% population is oxidized, as shown within the fuchsia-colored gate (EMSH-oxidized). (c) 20 mM dithiothreitol treated Mtb. (d) Input Tn Lib. The sorted oxidized mutants were plated on 7H11 agar supplemented with OADC. After 4–5 weeks, colonies were pooled, grown under identical conditions, and re-sorted. (e–g) Dot plots of 3 cycles of sorting to demonstrate enrichment of EMSH-oxidized Tn mutants and quantified in (h). Error bars represent standard deviation from the mean (n=3).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Mtb H37Rv cultures and Tn mutant pools were grown to mid-log phase (OD600 nm = 0.4–0.6) An equal number of cells(109) were taken, and (a) ROS were quantified using CellROX Deep Red dye by flow cytometry. Treatment with10 mM cumene hydroperoxide (CHP) for 15 minutes was used as a positive control. (b) Supplementation with a combination of antioxidants- catalase (17.5 U/ml)+thiourea (1 mM)+bipyridyl (250 μM) dissipates eROS generated in EMSH OXD Tn mutant population. Data represent the median fluorescence intensity of the dye. Error bars represent standard deviation from the mean. Data represent at least two independent experiments performed in at least duplicate (n=4). p was determined by one way ANOVA with Tukey’s multiple comparisons test (**** p≤0.0001, ns indicates not significant).
+
 ## Results
 
-## Himar1-based transposon mutagenesis in Mtb-roGFP2
+### Himar1-based transposon mutagenesis in Mtb-roGFP2
 
 A library of transposon mutants (Tn-Library) comprising >105 independent insertion events was generated in Mtb-roGFP2 (Figure 1A). The pool was allowed to grow to mid-log-phase (OD600 nm = 0.6–0.8), and genomic DNA was isolated for deep sequencing of transposon insertion (TnSeq) by Illumina technology. Using Transposon-directed insertion-site sequencing (TraDIS; Barquist et al., 2016), we identified the location of Tn insertion sites in the Tn-Library and detected insertion at ≈ 66% (49623 out of 74604) of TA sites (Supplementary file 1). Next, we quantified the frequency of Tn insertions at each open-reading frame (ORF) of Mtb (Supplementary file 1). Eighty-five percent of coding-DNA sequences incorporated at least 10 Tn insertion events in our Tn-Library. Consistent with previous studies, we observed a lack of Tn insertion in the TA sites of essential ORFs (≈11%) in the Mtb genome (DeJesus et al., 2017). Therefore, we conclude that the density of Tn insertion reached near saturation in the Tn-Library.
 
-## Flow-cytometry-based selection of Mtb-Tn mutants with altered basal EMSH
+### Flow-cytometry-based selection of Mtb-Tn mutants with altered basal EMSH
 
 We defined basal EMSH as the EMSH of mid-log phase Mtb grown in 7H9+ADS under standard aerobic culture conditions (180 RPM, 37 °C) (Figure 1B and F, Figure 1—figure supplement 1b–f). Mtb exhibited a basal EMSH of -278.2±4.7 mV (Figure 1F). We aimed to identify genes that, when mutated by transposon insertion, increase eROS and induce a shift in the basal EMSH of Mtb towards oxidative. The Tn-mutants displaying oxidative-EMSH were detected by quantifying the Mrx1-roGFP2 fluorescence ratio (excitation: 405 nm /488 nm; emission: 510 nm) of the library using flow-cytometry (Bhaskar et al., 2014). To sort out EMSH-oxidized Tn-mutants, we utilized Fluorescence-activated Cell Sorting (FACS). To set the gates for sorting EMSH-oxidized Tn-mutants by flow-cytometry, we treated wild-type (WT) Mtb H37Rv expressing Mrx1-roGFP2 with an oxidant, cumene hydroperoxide (CHP). Treatment with 10 mM CHP for 5 min maximally increased the 405/488 ratio (Bhaskar et al., 2014; Shee et al., 2022), indicating 100% oxidation of biosensor in WT Mtb (EMSH-oxidized; –240 mV; Figure 1C, Figure 1—figure supplement 1g). Next, we subjected the Tn-mutant library (without CHP treatment) to FACS and selected the fraction of mutants displaying an increase in the biosensor ratio (Figure 1D). The biosensor ratio of this untreated Tn-mutant fraction overlapped with the ratiometric increase induced in WT Mtb by CHP, confirming the reliability of the sorting strategy (Figure 1D). Therefore, our strategy allowed the gating and isolation of Tn-mutants that were basally oxidized without exposure to oxidants such as CHP.
 
 Using this approach, we consistently identified ≈ 4% of Tn-Library displaying oxidative-EMSH under aerobic culture conditions without exposure to exogenous oxidants (Figure 1D, Figure 1—figure supplement 1i). This mutant fraction was purified using FACS (Figure 1—figure supplement 1j). To enhance selectivity, sorted mutants from the first round were recultured on 7H11 agar plates, colonies were pooled, and re-sorted by flow-cytometry. This cycle was repeated thrice, improving the sensitivity and reliability of our selection by gradually enriching the minor fraction of EMSH-oxidized Tn-mutants with each passage to >90% (Figure 1E, Figure 1—figure supplement 2). As expected, the enriched fraction of Tn-mutants showed a higher 405/488 ratio (0.7–0.9), which corresponded to an oxidative EMSH of –249±6.2 mV (Figure 1F). Consistent with this, measurement using the ROS-sensitive dye CellROX Deep Red showed that EMSH-oxidized Tn-mutants accumulated ≈10-fold higher eROS than WT Mtb and the input pool of the Tn-Library (Figure 1—figure supplement 3a). In addition to this, co-treatment of EMSH-oxidized Tn mutants with antioxidant molecules (Shee et al., 2022; combination of catalase (17.5 U/mL)+thiourea (1 mM)+bipyridyl (250 μM)) significantly decreased eROS levels (Figure 1—figure supplement 3b). Thus, by combining Tn mutagenesis with a redox biosensor, we reliably isolated redox-altered mutants of Mtb at a genomic scale.
 
-## The EMSH-oxidized Tn-mutant pool exhibited hallmarks of oxidative damage
+### The EMSH-oxidized Tn-mutant pool exhibited hallmarks of oxidative damage
 
 The oxidative EMSH and increased eROS of Tn-mutants imply that this mutant pool experiences oxidative stress despite favorable aerobic growth conditions. Moreover, while each mutant is likely to get oxidized to a different extent, we expect that there will be an overall increase in the hallmarks of oxidative stress in the EMSH-oxidized Tn-mutants fraction. To examine this, we assessed various oxidative stress markers, such as DNA damage, lipid peroxidation, and expression of antioxidant genes in EMSH-oxidized Tn-mutants. The 8-hydroxy deoxyguanosine (an oxidative product of deoxyguanosine David et al., 2007; 8-OH dG) levels and lipid peroxidative products were ≈two-fold higher in EMSH-oxidized Tn-mutants as compared to the Tn-Library and WT Mtb, indicating increased DNA and lipid damage (Figure 2A and B). As a positive control, we treated WT Mtb with CHP and found a similar increase in DNA and lipid damage (Figure 2A and B). Another signature of oxidative stress inside bacteria is the upregulation of oxidative stress-responsive genes. We found that antioxidant enzymes, such as ahpC, ahpD, trxB1, DNA repair protein alkA, a regulator of iron-sulfur cluster biogenesis sufR, and redox-stress responsive sigma factor sigH were ≈two- to eight-fold upregulated in EMSH-oxidized Tn-mutants (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig2-v2.jpg)
 
-**Figure 2.:** Eoxidized Tn mutants displayed signature of oxidative damage under MSH-in vitro growth conditions.Bacterial cultures were grown to log phase (OD600 nm ≈ 0.6) (A) 8-hydroxy 2-deoxy guanosine, a major product of oxidative DNA damage was quantified using DNA/RNA Oxidative Damage ELISA Kit (Cayman chemicals). (B) Cellular lipid-hydroperoxides generation was measured by FOX2 assay. WT Mtb treated with 500 μM of cumene hydroperoxide (CHP) for 2 hr is used as a positive control. The data are means ± SEM of two independent experiments (n=4). (p>0.05: ns, p<0.01: **, p<0.001: ***, p<0.0001: ****, one-way ANOVA with Tukey’s multiple comparisons test). (C) Realtime-quantitative PCR analysis showing increased basal expression of oxidative stress response genes. 16 S expression was used as a control. The dotted line indicates a 1.5-fold- change (cut-off value). (D) Mtb, Tn-Library (Tn Lib), and Eoxidized Tn-mutants (MSH-EOXD Tn) were treated with a non-bactericidal concentration of CHP (12.5 μM), and the ratiometric sensor response was measured over time. Data representative of two independent experiments done in duplicate. Statistical comparisons are with respect to the WT MSH-Mtb. (p<0.0001: ****, unpaired two-tailed Student’s t-test). (E) Log-phase cultures were exposed to oxidants with indicated concentration for 8 hr and plated. CFU was enumerated after 6 weeks. The data (C and E) are means ± SEM of two independent experiments. (p>0.05: ns, p<0.01: **, p<0.0001: ****, two-way ANOVA with Sidak’s multiple comparisons test).Figure 2—source data 1.Figure 2A–E.
+**Figure 2.:** Bacterial cultures were grown to log phase (OD600 nm ≈ 0.6) (A) 8-hydroxy 2-deoxy guanosine, a major product of oxidative DNA damage was quantified using DNA/RNA Oxidative Damage ELISA Kit (Cayman chemicals). (B) Cellular lipid-hydroperoxides generation was measured by FOX2 assay. WT Mtb treated with 500 μM of cumene hydroperoxide (CHP) for 2 hr is used as a positive control. The data are means ± SEM of two independent experiments (n=4). (p>0.05: ns, p<0.01: **, p<0.001: ***, p<0.0001: ****, one-way ANOVA with Tukey’s multiple comparisons test). (C) Realtime-quantitative PCR analysis showing increased basal expression of oxidative stress response genes. 16 S expression was used as a control. The dotted line indicates a 1.5-fold- change (cut-off value). (D) Mtb, Tn-Library (Tn Lib), and EMSH-oxidized Tn-mutants (EMSH-OXD Tn) were treated with a non-bactericidal concentration of CHP (12.5 μM), and the ratiometric sensor response was measured over time. Data representative of two independent experiments done in duplicate. Statistical comparisons are with respect to the WT Mtb. (p<0.0001: ****, unpaired two-tailed Student’s t-test). (E) Log-phase cultures were exposed to oxidants with indicated concentration for 8 hr and plated. CFU was enumerated after 6 weeks. The data (C and E) are means ± SEM of two independent experiments. (p>0.05: ns, p<0.01: **, p<0.0001: ****, two-way ANOVA with Sidak’s multiple comparisons test).
 
 We next assessed the dynamic response of EMSH-oxidized Tn-mutants to an exogenous oxidant. We exposed WT Mtb expressing Mrx1-roGFP2, the Tn-Library, and EMSH-oxidized Tn-mutants to a non-bactericidal concentration of CHP (12.5 µM; Anand et al., 2021). Exposure to CHP resulted in a rapid, but transient (90 min) increase in the 405/488 ratio (from 0.4 to 0.6) in WT Mtb and the Tn-Library, suggesting efficient mobilization of antioxidant machinery (Figure 2D). In contrast, EMSH-oxidized Tn-mutants showed a significantly greater and long-lasting increase in the 405/488 ratio (from 0.65 to 0.9; Figure 2D). The slower recovery in biosensor ratio indicated that EMSH-oxidized Tn-mutants have an impaired ability to orchestrate an efficient and dynamic antioxidant response. The breakdown of intracellular redox homeostasis enhances susceptibility toward exogenous stress (Brynildsen et al., 2013). Consistent with this, the EMSH-oxidized Tn-mutant pool was nearly 10-fold more susceptible to diverse oxidants, including CHP, diamide (a thiol-specific oxidant), hydrogen peroxide (H2O2), and menadione (an O2.- generator; 1X MIC = 12.5 µg/mL) after 8 hr of treatment (Figure 2E). Altogether, data indicate that EMSH-oxidized Tn-mutants collectively display features of oxidative stress.
 
-## TraDIS analysis revealed genetic determinants of redox homeostasis under aerobic growth conditions in Mtb
+### TraDIS analysis revealed genetic determinants of redox homeostasis under aerobic growth conditions in Mtb
 
 To map the site of transposon insertions in redox-altered EMSH-oxidized Tn-mutants, the TraDIS protocol (Barquist et al., 2016) was re-employed. Further, we used a differential gene representation analysis pipeline – DESeq2 (differential gene expression analysis based on the negative binomial distribution; Love et al., 2014) and edgeR (Empirical Analysis of Digital Gene Expression Data in R) (Robinson et al., 2010) to identify 368 genes containing significantly greater Tn insertions in EMSH-oxidized Tn-mutants relative to the input Tn-Library (log2 fold change >1, FDR or p. adj. <0.05; Figure 3—figure supplement 1, Supplementary file 2). We called this set of genetic factors ‘Mtb redoxosome’. Several genes known to be associated with redox homeostasis were part of the ‘Mtb redoxosome’ (Figure 3A), validating our experimental approach for genome-scale identification of redox pathways. For example, genes involved in NAD metabolism (pntAa, pntAb, pntB, sthA, pncB1), redox-sensor (whiB6), cysteine metabolism (cysK2, cysM, cds1 Kunota et al., 2021), thiol buffering (mshB, ino1, thiX, egtB, doxX), antioxidant enzymes (mymT, rv2633c, rv3177), Fe homeostasis (mbtL, dppA), sufR, redox-regulated chaperone (rv0991c Becker et al., 2020), and respiration (rv0247c, rv0248c, rv0249c, sdhA, sdhB, ctaC, ctaD, fixB), were overrepresented in the EMSH-oxidized Tn-mutant pool (Figure 3A). Additionally, we noted that several genes contributing to housekeeping functions such as cofactor biogenesis (moaD2, moaX, moeA2, ribA1, lipA, panB, cobB), oxidized DNA and lipid repair (ephF, mutY), membrane integrity, RNA processing, and amino acid metabolism were also part of Mtb redoxosome (Figure 3A, Supplementary file 3). Overall, we noted that ≈1/3rd of genes in the redoxosome have been previously, directly or indirectly associated with redox processes in Mtb (see details; Supplementary file 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heat map showing genetic factors regulating EMSH of Mtb based on TraDIS analysis. These factors are functionally classified based on the MycoBrowser database and literature studies. The color gradient of the box indicates the log2 fold enrichment of respective genes in the EMSH-oxidized Tn pool compared to the Tn Lib. The color code for the fold change is at the bottom of the second column. Genes are grouped according to function. (The gradient of cyan to red colour indicates increasing log2 fold change values). * rv3177 is 10.02 log2 fold-change enriched. (B) The EMSH of Mtb mutants harboring transposon in the genes identified as part of Mtb redoxosome. The mutants were grown to log phase (OD 600 nm ≈ 0.6) under standard aerobic growth conditions, and EMSH was measured. The light grey area represents basal EMSH. The data are means ± SEM of two independent experiments (n=4). (p>0.05: ns, p<0.05: *, p<0.01: **, p<0.001: ***, p<0.0001: ****, one-way ANOVA with Dunnett’s multiple comparisons test). (C) Hierarchical visualization of the redox-homeostasis network of 107 genes (14 TFs, 93 target genes) and 143 edges. Here, the TFs are shown as triangles, and the target genes are shown as circles. The size of the TFs (triangles) is proportional to their betweenness centrality. The figure was generated using Cytoscape 3.6. The TF Rv0158 in the middle layer has the highest betweenness centrality and, thus, a bottleneck in the redox-homeostasis network.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Genomic DNA was extracted from input pool Tn-Library (Tn Lib) and FACS sorted EMSH- oxidized Tn, as shown in Figure 1A, Figure 1—figure supplement 1. TraDIS (TnSeq) protocol followed by Burrow-Wheeler Aligner (BWA) analysis was utilized to identify the site of mutation (Insertion by Transposon) in the library of Mtb-transposon mutants. Genes with a frequency of transposon insertion overrepresented in EMSH- oxidized Tn over input pool by twofold (p.adj. or FDR at a cut-off <0.05) was defined as Mtb redoxosome (or Regulators of Redox Balance (RRBs)). (b) Genes with no or few transposon insertions in either library are essential. Additionally, genes with no function in maintaining redox balance will not be enriched in EMSH- oxidized Tn, as shown by a low frequency of transposon insertion in this pool (non- RRBs). (c) Volcano plot of differentially represented genes between the EMSH-oxidized Tn and Tn-Library (Tn Lib). Significantly over or under-represented genes in EMSH-oxidized Tn relative to Tn Lib are beyond the cut-off of at least two fold-change as indicated by blue line and determined by DESeq2 and edgeR.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) ROS were quantified by flow cytometry using CellROX Deep Red dye. Cumene hydroperoxide (CHP; 10 mM) served as a positive control. (b) TUNEL Assay for measuring DNA double-stranded breaks using flow cytometry. Data represent the median fluorescence intensity. Data representative of two independent experiments done in duplicate (n=4). Statistical comparisons are with respect to the WT Mtb CDC 1551. (p>0.05: ns, p<0.01: **, p<0.001: ***, p<0.0001: ****, unpaired two-tailed Student’s t-test with Welch’s correction).
+
 While experimentally ascribing redox function to 368 genes of the redoxosome requires independent investigation, we begin validating our data by randomly selecting 10 genes that are part of the redoxosome and analysed EMSH of Mtb strains harboring disruption in these genes. These 10 mutants were generated by transposon mutagenesis in the Mtb CDC1551 strain (collected from BEI resources). Both Mtb CDC1551 and Mtb H37Rv displayed identical basal EMSH (−280 to –285 mV; Figure 3B). As expected, the EMSH of Mtb mutants displayed an oxidative shift of +10 mV to +30 mV and exhibited higher eROS and DNA damage as compared to WT Mtb (Figure 3B, Figure 3—figure supplement 2). Therefore, we propose that the set of 368 genes represents a valuable resource to understand the contribution of Mtb factors in maintaining redox balance in Mtb.
 
-## Network analysis identified rv0158 as an important regulator of redox balance in Mtb
+### Network analysis identified rv0158 as an important regulator of redox balance in Mtb
 
 To the best of our knowledge, the identity of regulator(s) that helps Mtb in maintaining redox balance during aerobic growth is not known. Although, similar studies have been performed on non-pathogenic E. coli (Brynildsen et al., 2013; Lopatkin et al., 2021) and S. cerevisiae (Ayer et al., 2012; Radzinski et al., 2018). We, therefore, adopted a system-scale approach to analyze the redoxosome and to discover a network of regulators responsible for maintaining basal EMSH in aerobically growing Mtb. To this end, we generated a redox-homeostasis network by integrating 368 redoxosome genes with the Mtb transcriptional regulatory network (TRN) (Minch et al., 2015; Figure 3C). A similar approach has been used to identify transcriptional regulators coordinating drug tolerance (Peterson et al., 2016), adaptation to hypoxia or nutrient starvation (Balázsi et al., 2008) and to host-stress (Peterson et al., 2019) in Mtb. In our redox-homeostasis regulatory network of 107 nodes and 143 edges, a node represents a TF (transcription factor) or a target gene, and a directed edge indicates the transcriptional activity of a target gene by a TF. Further, the largest component of 102 genes and 139 edges in the redox-homeostasis network can be organized into three hierarchical levels with 6 TFs in the top, 6 TFs in the middle, and 90 target genes in the bottom (Figure 3C).
 
 Among the 6 TFs in the top layer are known regulators- dosR responsive to O2/NO/CO/H2S (Kumar et al., 2011; Park et al., 2003; Sevalkar et al., 2022), cmtR (Pb2+/Cd2+-Sensing; H2O2-dependent ESX3 regulator Cavet et al., 2003; Chauhan et al., 2009; Li et al., 2020), sigC (Cu acquisition Grosse-Siestrup et al., 2021), and recently elucidated rv0047c (Nucleoid-associated protein that act as DnaA- antagonist to regulate Mtb replication Liu et al., 2019; Liu et al., 2016). In terms of the number of target genes or out-degree, rv0047c has the highest degree, followed by dosR in the redox-homeostasis network (Figure 3C). We also measured betweenness centrality, which measures the fraction of paths in the network that pass-through a given node. A high betweenness centrality indicates that the node is influential in maintaining the network’s connectivity. We found that the TFs in the top layer including dosR and rv0047c have negligible betweenness centrality compared to those in the middle layer. In particular, we noted that rv0158 has the highest betweenness centrality in the complete network and the highest out-degree among TFs in the middle layer (Figure 3C). These features indicate that rv0158 is both a bottleneck and a hub in the redox-homeostasis network. Furthermore, rv0158 is a part of 2 out of the 3 feed-forward loops (FFLs Mangan and Alon, 2003) in the redox-homeostasis network. In sum, rv0158 owing to its position in the middle of the hierarchy, along with the highest betweenness centrality, could function to regulate redox signalling in Mtb.
 
-## RNA-Sequencing indicates that rv0158 regulates lipid metabolism and oxidative stress response in Mtb
+### RNA-Sequencing indicates that rv0158 regulates lipid metabolism and oxidative stress response in Mtb
 
 Based on our in silico analysis, we aimed to understand the mechanism of how rv0158 regulates redox homeostasis in Mtb. We first deleted the rv0158 gene in Mtb by an allelic-exchange strategy and confirmed the knockout (KO) by qRT-PCR (Figure 4—figure supplement 1). Similar to findings with the Tn-mutant pool, EMSH of rv0158 KO displayed oxidative shift (–266.3±5 mV; Figure 4A), accumulated eROS (Figure 4B), and superoxide radical (Figure 4C), exhibited increased DNA double-strand breaks (Figure 4D), and lipid hydroperoxides compared to WT Mtb and rv0158 Comp (Figure 4E). The mutant also showed a ≈ two-fold increase in NAD+/NADH ratio relative to WT Mtb and rv0158 Comp (Figure 4F and G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig4-v2.jpg)
+
+**Figure 4.:** Bacterial cultures were grown to log phase (OD 600 nm ≈ 0.6) (A) The EMSH of WT Mtb (WT Mtb), rv0158 KO, and rv0158 Comp. The light grey area represents basal EMSH. The data are means ± SEM of two independent experiments (n=4). (p>0.05: ns, p<0.001: ***, one-way ANOVA with Dunnett’s multiple comparisons test). (B, C) eROS and superoxide levels were quantified using FACS by measuring the fluorescence of cell-permeant CellROX Deep Red dye with absorption/emission maxima of ~644/665 nm and Dihydroethidium (Ex/Em: 488 nm/ 560 nm) dye, respectively. Median Fluorescence Intensity (MFI) is plotted. A total of 10,000 events per sample were analyzed. (D) Double-stranded DNA breaks were quantified by TUNEL Assay using Flow-cytometry. Fold change in MFI is plotted. The data are means ± SEM of two independent experiments (n=4). (p<0.05: *, unpaired two-tailed Student’s t-test with Welch’s correction). (E) Cellular lipid-hydroperoxides levels were measured by FOX2 assay, and absorbance at 560 nm is normalized to that of WT Mtb H37Rv. (F) NAD+/NADH ratio (G) pyridine nucleotide levels as estimated by an enzymatic assay using alcohol dehydrogenase and ethanol as enzyme and substrate, respectively. The concentration was normalized to the cell mass. The data are means ± SEM of two independent experiments (n≥4). (For panel other than E, statistical measurement: p>0.05: ns, p<0.05: *, p<0.01: **, p<0.0001: ****, one-way ANOVA with Tukey’s multiple comparisons test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Schematic illustrating wild-type Mtb rv0158 loci and double crossover recombination event. After the allelic exchange, entire rv0158 ORF in the Mtb genome was replaced by right and left flanking regions of rv0158 along with the loxP-hyg-gfp-loxP cassette. This knock out strain was unmarked by expressing Cre recombinase to remove the hyg-gfp cassette. Color-coded arrows (pink and dark blue) depict primer pairs used to generate upstream and downstream allelic-exchange fragments. Complement strain was generated by introducing the gene under native promoter (cloned in pCV125 plasmid) into unmarked rv0158 KO strain. (b) RNA was isolated from mid-log phase culture of the wild-type Mtb, putative rv0158 KO and complemented clones. rv0158 and 16 S expression were examined by qRT-PCR using gene-specific oligonucleotides, and Rn (Rn is the fluorescence of the reporter dye (SYBR green) normalized by the fluorescence of a passive reference dye; Applied Biosystems ROX Dye) versus PCR cycle number is plotted. Data represent at least two independent experiments performed in at least duplicate.
+
 We next performed whole-genome RNA sequencing (RNA-Seq) to identify rv0158-dependent gene expression in Mtb. Bacterial strains were grown to log phase (OD600 nm = 0.6), RNA was harvested and subjected to RNA-seq. We identified 232 genes that were differentially expressed (DE genes; fold change >1.5; FDR <0.05) in the absence of rv0158 (Figure 5A, Supplementary file 4). We validated the RNA-seq data by examining the expression of 18 randomly selected genes by qRT-PCR under identical experimental conditions (Figure 5—figure supplement 1). Consistent with elevated eROS and DNA damage in rv0158 KO, genes involved in the antioxidant response, such as thioredoxin (trxC), catalase-peroxidase (katG), chaperones (groEL1, groEL2, groES, and hsp), epoxide hydrolase (ephA), and DNA-repair genes (ung, dnaE2) were upregulated (Figure 5B). Supporting these observations, the rv0158 transcriptome showed strong overlap with the transcriptomes of oxidative stress (H2O2; odds ratio = 3.4, p=2*10–7) and nitrosative stress (NO; odds ratio = 3, p=2*10–6). In contrast, transcriptional changes associated with acidic pH, known to induce reductive EMSH in Mtb (Mehta et al., 2016) and hypoxia did not significantly overlap with the rv0158 transcriptome (Figure 5—figure supplement 2). Collectively, the data are consistent with our hypothesis that rv0158 maintains redox balance and eROS levels.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig5-v2.jpg)
+
+**Figure 5.:** (A) Volcano plot of differentially expressed genes (absolute fold change >1.5; FDR <0.05) between the WT Mtb and rv0158 KO grown in vitro. (B) Heat-map comparing expression profile in WT and rv0158 KO. The colour code for the fold change is at the bottom of the third column (red: upregulated genes; cyan: down-regulated genes). Genes are grouped according to function. (C) Functional categorization of rv0158-dependent genes in Mtb. The % of genes in each functional category (according to the MycoBrowser database) was determined for the complete Mtb genome and for rv0158 transcriptome with different cut-offs (FC ≥1.5: absolute fold change ≥1.5, FDR <0.05, differentially expressed genes = 232 and FC ≥2: absolute fold change ≥2; FDR <0.05, differentially expressed genes = 77).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** RNA was isolated from log-phase bacterial cultures, identical to the protocol with that of RNA Sequencing. 18 genes were randomly selected (10 genes upregulated and 8 genes downregulated in RNA Sequencing), and an SYBR green-based qRT-PCR protocol measured their RNA levels. Error bars represent the standard deviation from the mean. Data representative of two independent experiments. Statistical comparisons are between rv0158 KO and complemented strain. (p>0.05: ns, p<0.05: *, p<0.01: **, p<0.001: ***, p<0.0001: ****, unpaired two-tailed Student’s t-test).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Each column represents the overlap between the rv0158 transcriptome and the particular stress condition (Acidic pH Rohde et al., 2007, H2O2 stress Voskuil et al., 2011, NO stress Voskuil et al., 2011, and hypoxia Rustad et al., 2008). The p-value of the overlap is indicated inside the column for each pair. The colour represents the odds ratio for the overlap. For overlap analysis of differentially expressed genes in rv0158 transcriptome with other stress-induced conditions (log2 fold change >1 or <-1; p<0.01 are considered differentially expressed genes in the indicated stress conditions), GeneOverlap (v1.22.0) package from R (v3.6.3) was used . It uses Fisher’s exact test to find statistical significance by calculating the p-value and the odds ratio for the overlap (p-value <0.01 and an odds ratio of >1 were taken as the significance thresholds; NS indicates not significant). H2O2 and NO stress showed a strong association (odds ratio >3) with the rv0158 transcriptome.
 
 Functional classification of DE genes based on the MycoBrowser database (Kapopoulou et al., 2011) confirmed a ≈three fold overrepresentation of genes belonging to ‘Lipid Metabolism’ (37 genes) in the mutant (Figure 5C, Supplementary file 4). Genes involved in β-oxidation of fatty acids catabolism (fadA, fadB, echA7, fadE12, fadE13, fadE20, fadD7, accA2, accD2, fadE23, fadE24, fadD9, fadD22), propionate metabolism (prpC, prpD, icl1) (Eoh and Rhee, 2014) were significantly induced, while mycolic acid biosynthesis and modification (fabD, fabG4, htdX, desA1, desA2, desA3) were downregulated in the KO strain (Figure 5B, Supplementary file 4). Agreeing to transcriptional changes, radiolabelling of mycolic acids with 14C acetate showed a ≈ 40% reduction in mycolic acid methyl esters (MAMEs; α, methoxy, and keto) and a simultaneous accumulation of fatty acid methyl esters (FAMES; precursors of mycolic acids) in rv0158 KO as compared to WT Mtb and rv0158 Comp (Figure 6A-C). A decrease in mycolic acid content increases Mtb’s outer membrane permeability (Gao et al., 2003; Liu et al., 1996). Consistent with this, we observed a higher intracellular accumulation of 14C-isoniazid (Figure 6—figure supplement 1) and ethidium bromide (EtBr) in rv0158 KO than WT Mtb and rv0158 Comp (Figure 6D). Altogether, loss of rv0158 induces widespread transcriptional changes, significantly influencing membrane integrity and fatty acid metabolism in Mtb.
 
-## rv0158 regulates growth, mycothiol-redox potential (EMSH), and bioenergetics in response to carbon (C)-source
+![Figure 6.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig6-v2.jpg)
+
+**Figure 6.:** WT Mtb, rv0158 KO, and rv0158 Comp were cultured in 7H9+ADS to log phase (OD 600 nm ≈ 0.8), and total lipids were labeled using [1, 2-14C] -sodium-acetate for 24 hr. TLC-autoradiograph analysis of mycolic acids (MAMEs) and fatty acids (FAMEs)- fraction from total lipids was done by loading equal counts (50000 CPM). (A) Normal-phase TLC of MAMEs from bacterial strains was developed using hexane/ethyl acetate (19:1, v/v) solvent system. See Source Data: Figure 6—source data 1 used to generate this figure. ImageJ software (1.53e version) was used to edit the images. (B) Reverse-phase TLCs using acetonitrile/dioxane solvent (1:1, v/v) showing the fatty acid (FAMEs) distribution. See Source Data: Figure 7—source data 1 used to generate this figure. ImageJ software (1.53e version) was used to edit the images. (C) Densitometric analysis by ImageJ software (1.53e version) to quantify changes in MAMEs and FAMES relative to WT levels. The data are means ± SEM of two independent experiments (n≥4). Statistical comparisons are with respect to the WT Mtb. (p<0.01: **, p<0.0001: ****, two-way ANOVA with Sidak’s multiple comparisons test). (D) Ethidium bromide accumulation within Mtb strains grown on glucose as a function of time. Results are representative of three independent experiments performed in quadruplicate.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Log-phase Mtb cultures (OD600 nm ≈ 0.6) were incubated with [14C]-Isoniazid (ViTrax Inc) at a concentration of 0.5 μCi/mL. After 1 hr of treatment, the intracellular level of isoniazid was determined by bacterial lysis using bead-beating followed by measuring radioactivity. Fold change in count per minute (CPM) relative to wild-type Mtb is plotted. Error bars represent the standard deviation from the mean. Data represent at least three independent experiments performed in at least duplicate (p<0.05: *, unpaired two-tailed Student’s t-test).
+
+### rv0158 regulates growth, mycothiol-redox potential (EMSH), and bioenergetics in response to carbon (C)-source
 
 Our data suggest that genes associated with fatty acid catabolism were induced in rv0158 KO. To examine the role of rv0158 in utilizing fatty acids as nutrients by Mtb, we measured the growth of WT Mtb, rv0158 KO, and rv0158 Comp in 7H9 medium supplemented with either 0.3% glucose or host-relevant fatty acids (0.3% sodium acetate or 0.02% cholesterol or 200 μM palmitate) as a sole carbon (C) source (Figure 7A–D, Figure 7—figure supplement 1). Both absorbance (OD 600 nm) and CFU estimation showed a slow growth phenotype with an extended lag phase on glucose (Figure 7A, Figure 7—figure supplement 1). The defective growth phenotype of rv0158 KO was absent if glucose was replaced by acetate/cholesterol/palmitate (Figure 7B–D). The methylcitrate cycle (MCC) genes (prpC, prpD, icl1), which alleviate propionate toxicity (Eoh and Rhee, 2014), were significantly upregulated in rv0158 KO. Therefore, we tested the phenotype of rv0158 KO on propionate. We indeed observed a gradual increase in the growth of rv0158 KO on 0.3% sodium propionate, a concentration bacteriostatic to both WT Mtb and rv0158 Comp (Figure 7E).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig7-v2.jpg)
+
+**Figure 7.:** (A– E) Log-phase cultures of Mtb strains (WT Mtb, rv0158 KO, and rv0158 Comp) were synchronized to OD600=0.1 and grown in 7H9 broth (no glycerol) containing (A) 0.3% D-glucose, (B) 0.3% sodium acetate, (C) 0.02% cholesterol (D) 200 μM palmitate, and (E) 0.3% sodium propionate. Culture turbidity (OD600 nm) was measured at the indicated time points for determining growth kinetics. Results are representative of two independent experiments. (F) C source-dependent changes in the redox state of Mtb is mediated by rv0158. Mtb strains (WT Mtb, rv0158 KO, and rv0158 Comp) were synchronized to OD600 nm = 0.1 and grown in 7H9 broth (no glycerol) containing 0.3% D-glucose or 0.3% sodium acetate or 0.3% sodium propionate or 0.02% cholesterol to log-phase (OD600 nm = 0.5–0.6) and Mrx1-roGFP2 response was measured. The data are means ± SEM of two independent experiments (n=4). p was determined by two-way ANOVA with Tukey’s multiple comparisons test (**** p<0.001, ns indicates not significant: Comparison is performed between KO or Comp strain and WT Mtb; ####: p<0.001: ##: p<0.01, the comparison is performed between WT Mtb grown in different C sources).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Log-phase cultures of Mtb strains (Wild-type Mtb (WT Mtb), rv0158 KO, and rv0158 Comp) were synchronized to OD600=0.1 and grown in 7H9+ADS. Growth kinetics as determined by enumerating CFU on indicated time-points. Error bars represent the standard deviation from the mean. Data represent at least two independent experiments performed in duplicate (n=4).
 
 Next, we examined the influence of C source on EMSH. The rv0158 KO was significantly more oxidized (EMSH = –266.3 ± 5) as compared to WT Mtb (EMSH = –279.4 ± 3.5) and rv0158 Comp (EMSH = –277.4 ± 2) on glucose (Figure 7F). We further observed that WT Mtb cells growing on acetate or propionate or cholesterol uniformly exhibit a reductive shift in EMSH (−285 to –305 mv) compared to glucose (–279 mV), agreeing with fatty acids being a more reduced C substrate than glucose (Borah et al., 2021; Singh et al., 2009). Interestingly, oxidative-EMSH of rv0158 KO showed a reductive shift and recovered to WT Mtb levels (−285 to –305 mv) on acetate/propionate/cholesterol (Figure 7F).
 
@@ -100,33 +243,176 @@ Variable growth on fatty acids versus carbohydrates directly influences the bioe
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig8-v2.jpg)
 
-**Figure 8.:** rv0158 KO than glucose.ECAR and OCR were measured using the Agilent Seahorse XFp analyzer. ECAR (mpH/min) is an indicator of H+ production or extracellular acidification due to glycolytic flux and TCA, and OCR (pmol/min) indicates the rate of oxygen consumption, suggesting the rate of electron flux through the Electron Transport Chain during oxidative phosphorylation. %OCR and %ECAR are displayed as a percentage of third baseline OCR and ECAR values, respectively. Log-phase bacterial cultures were starved overnight, 2*106 cells were seeded on each well, and (A– C) %OCR or (D- F) %ECAR profiles of WT Mtb: red, rv0158 KO: yellow and rv0158 Comp: blue were plotted over time. At the indicated times, either 0.3% (final concentration) glucose or 0.3% sodium acetate, or 0.3% sodium propionate (dashed line) was added as the only carbon source, followed by uncoupler- 10 mM CCCP. Results are representative of two independent experiments. The data are means ± SEM. (p-value was calculated with the third data point across groups after the addition of a C source. Another statistical significance was calculated between the first data point obtained across groups after the addition of CCCP; p<0.05: *, p<0.0001: ****, one-way ANOVA with Dunnett’s multiple comparisons test).Figure 8—source data 1.Mtb, rv0158 KO, and rv0158 Comp.
+**Figure 8.:** ECAR and OCR were measured using the Agilent Seahorse XFp analyzer. ECAR (mpH/min) is an indicator of H+ production or extracellular acidification due to glycolytic flux and TCA, and OCR (pmol/min) indicates the rate of oxygen consumption, suggesting the rate of electron flux through the Electron Transport Chain during oxidative phosphorylation. %OCR and %ECAR are displayed as a percentage of third baseline OCR and ECAR values, respectively. Log-phase bacterial cultures were starved overnight, 2*106 cells were seeded on each well, and (A– C) %OCR or (D- F) %ECAR profiles of WT Mtb: red, rv0158 KO: yellow and rv0158 Comp: blue were plotted over time. At the indicated times, either 0.3% (final concentration) glucose or 0.3% sodium acetate, or 0.3% sodium propionate (dashed line) was added as the only carbon source, followed by uncoupler- 10 mM CCCP. Results are representative of two independent experiments. The data are means ± SEM. (p-value was calculated with the third data point across groups after the addition of a C source. Another statistical significance was calculated between the first data point obtained across groups after the addition of CCCP; p<0.05: *, p<0.0001: ****, one-way ANOVA with Dunnett’s multiple comparisons test).
 
-## Metabolic profiling of rv0158 KO defines propionate adaptability
+### Metabolic profiling of rv0158 KO defines propionate adaptability
 
 To elucidate metabolic changes associated with the better adaptability of rv0158 KO to propionate as a C source, we performed liquid chromatography-mass spectrometry (LC-MS) metabolomics following exposure of WT Mtb and rv0158 KO to 0.3% glucose or 0.3% propionate. The consumption of propionate requires overlapping reactions encompassing the TCA cycle, methyl citrate cycle (MCC), and glyoxylate cycle (Eoh and Rhee, 2014). Therefore, we focussed on the steady-state metabolite levels of the intermediates associated with these pathways. The metabolites were extracted, derivatized with O-benzylhydroxylamine (OBHA), and detected based on the LC-MS profile of the TCA cycle and glyoxylate cycle metabolite standards, using methods described earlier (Tan et al., 2014; Walvekar et al., 2018). In particular, since some TCA cycle metabolites such as oxaloacetate are unstable in aqueous environments, the OBHA derivatization after extraction allows their reliable detection and quantitation (Figure 9—figure supplements 1–2) (also see Walvekar et al., 2018 for details). We observed a ≈100-fold accumulation of 2-methyl(iso)citrate (2 M(I)C) in WT Mtb and rv0158 KO under propionate but not glucose (Figure 9), confirming the activation of propionate breakdown by MCC. Furthermore, downstream metabolites of propionate catabolism such as pyruvate, succinate, fumarate, malate, oxaloacetate, and glyoxylate were significantly accumulated (two- to six fold) in propionate-grown WT Mtb as compared to glucose (Figure 9). In contrast, these metabolites were either not accumulated (e.g. succinate, malate, and oxaloacetate) or marginally accumulated (e.g. fumarate and glyoxylate) in propionate-grown rv0158 KO (Figure 9), presumably due to efficient catabolism of propionate via MCC in the mutant relative to WT Mtb. Similarly, propionate-grown WT Mtb displayed an increased pool of pyruvate and lactate, but these metabolites were relatively lesser in the rv0158 KO (Figure 9). Since the levels of pyruvate and lactate depend on glyoxylate shunt, MCC, and gluconeogenesis (Serafini et al., 2019), these findings agree with the better metabolic ability of rv0158 KO to consume propionate. Lastly, although propionate had similar metabolic consequences for both WT Mtb and rv0158 Comp, the decrease in the pool sizes of metabolic intermediates in rv0158 KO was more evident compared with rv0158 Comp (Figure 9). Altogether, data suggest that rv0158 KO mitigates propionate toxicity by efficient metabolization via MCC and TCA cycle.
 
+![Figure 9.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig9-v2.jpg)
+
+**Figure 9.:** Log-phase cultures of Mtb strains (Wild-type Mtb (WT Mtb), rv0158 KO, and rv0158 Comp) were synchronized to OD600=0.1 and grown in 7H9 broth (no glycerol) containing either 0.3% glucose (G) or 0.3% propionate (P) as sole C source. Quantitative LC-MS/MS analysis of metabolic intermediates of Methylcitrate cycle (magenta arrows), glyoxylate shunt (Cyan), and TCA cycle. Data are represented as fold change in metabolite levels under propionate conditions relative to that of growing on glucose as C source. (Abbreviations: PrpC- Methylcitrate synthase PrpC, PrpD/ Acn- Methylcitrate dehydratase PrpD/ Methylaconitase, Icl- Isocitrate lyase, Sdh- Succinate dehydrogenase, FumC- Fumarase C, Mdh- Malate dehydrogenase, Icd- Isocitrate dehydrogenase). The data are means ± SEM of two independent experiments. (Statistical significance was calculated by one-way ANOVA with Tukey’s multiple comparisons test).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The TCA cycle and glyoxylate cycle metabolite standards were derivatized with OBHA and analysed by LC-MS/MS.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Oxaloacetate was derivatized with OBHA and analysed by LC-MS/MS. Oxaloacetate is unstable in aqueous solutions, hence was stabilized by OBHA derivatization to prevent degradation.
+
 To support our metabolomics data, we performed qRT-PCR of MCC genes (icl1, prpR, prpC, prpD) in WT Mtb, rv0158 KO, and rv0158 Comp growing on glucose or propionate by qRT-PCR. Consistent with the RNA-seq data, we observed increased expression of MCC genes in rv0158 KO compared to WT Mtb on glucose (Figure 10A). In line with the metabolomics data, propionate exposure further increased MCC gene expression in rv0158 KO compared to WT Mtb (Figure 10B). In addition to the MCC pathway, Mtb mitigates propionate toxicity via the biosynthesis of PDIM (phthiocerol dimycocerosates) (Lee et al., 2013; Figure 10C). We measured the gene- expression of the PDIM biosynthesis cluster in rv0158 KO. Expression of PDIM genes was largely unchanged in rv0158 KO on glucose compared to WT Mtb (Figure 10D). However, similar to MCC genes, the PDIM cluster was induced ≈10-fold in rv0158 KO compared to WT Mtb on propionate (Figure 10E). The expression profile was restored to WT Mtb levels in rv0158 Comp (Figure 10A–B and D–E). Overall, the metabolic and expression data suggest that Rv0158 deficiency accelerates propionyl-CoA utilization and reduces the pool of toxic metabolites such as glyoxylate, thereby positively influencing the growth and bioenergetics of rv0158 KO utilizing propionate as a sole carbon source.
 
-## Rv0158 binds methylmalonyl-CoA and associates with the genomic regions involved in propionate metabolism
+![Figure 10.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig10-v2.jpg)
+
+**Figure 10.:** Mtb strains (WT Mtb, rv0158 KO, and rv0158 Comp) were synchronized to OD600 nm = 0.1 and grown in 7H9 broth (no glycerol) containing 0.3% D-glucose or 0.3% sodium propionate to log-phase (OD600 nm = 0.5–0.6) and RNA was isolated to perform qRT-PCR. (A, B) C source-dependent change in the RNA levels of genes involved in the methylcitrate cycle and fadB2 of Mtb is mediated by Rv0158, as determined by qRT-PCR. (C) Fates of propionyl coA derived from the catabolism of cholesterol or fatty acids. (Abbreviations: PDIM- Phthiocerol dimycocerosates, SL- sulfolipids, PAT/DAT- polyacyltrehaloses/ diacyltrehaloses, PrpC- Methylcitrate synthase PrpC, PrpD/ Acn- Methylcitrate dehydratase PrpD/ Methylaconitase, Icl- Isocitrate lyase, AccA/ AccD-acetyl-/propionyl-CoA carboxylase alpha chain/ acetyl-/propionyl-CoA carboxylase (beta subunit)). (D, E) C source-dependent change in the RNA levels of genes involved in the biosynthesis of methyl-branched fatty acids of Mtb, is mediated by Rv0158, as determined by qRT-PCR. The data are means ± SEM of two independent experiments. (p>0.05: ns, p<0.05: *, p<0.001: ***, two-way ANOVA with Sidak’s multiple comparisons test).
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** (a) The sequence alignment between Rv0158 and Rv3557c (KstR2) amino acid sequence was done using ESPript 3.0 (Robert and Gouet, 2014). The characteristic Helix-Turn-Helix (HTH) amino acid sequence in KstR2 protein is indicated in red. (b– d) The hexahistidine-tagged Rv0158 protein was expressed in E. coli BL21 (DE3) and purified from the soluble fraction by immobilized-metal affinity chromatography (see Materials and methods). (b) For gel filtration of protein sample Rv0158 (Ni-NTA eluted), Buffer - 20 mM Tris, pH 7.5, 100 mM NaCl was used in Superdex 75 column using GE AKTA prime plus FPLC system. Gel filtration profile of Rv0158 (red) overlaid with standard (blue) showing Rv0158 (Peak 2) elutes as a homodimer (approximate molecular weight of 54 KDa). SDS PAGE of Rv0158 protein elution fractions further suggests that Rv0158 is a homodimer in solution as a band at approximate monomer molecular weight (27 KDa) is detected upon staining the gel. See Source image: Figure 10—figure supplement 1—source data 1 used to generate this figure. (c) Circular Dichroism (CD) scan spectra of Rv0158 was recorded at 25 °C over the wavelength range from 260 nm to 190 nm. (d) CD melting curve was recorded at 209 nm over the temperature range from 10 °C to 90 °C. (e) In silico analysis of Rv0158 structure using homology modeling. Using the crystal structure of ketosteroid transcriptional regulator KstR2 of Mtb (PDB ID: 4W97), Rv0158 was modelled in homodimer form using homology modeling tool MODELLER version 9.19. The characteristic Helix-Turn-Helix (HTH) structural motif in N-terminal DNA binding region is shown in red. LBD is C-terminal ligand binding domain. This figure is related to the data displayed on Table 2.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** Mtb strains (WT Mtb, rv0158 KO, and rv0158 Comp) were synchronized to OD600 nm = 0.1 and grown in 7H9 broth (no glycerol) containing 0.3% D-glucose (G) or 0.3% sodium propionate (P) to log-phase (OD600 nm = 0.5–0.6) and RNA was isolated to perform qRT-PCR. C source-dependent change in the RNA levels of genes involved in (a) Methylcitrate cycle and fadB2 (b) genes involved in biosynthesis of methyl branched fatty acids of Mtb, is mediated by Rv0158, as determined by qRT-PCR. The data are means ± SEM of two independent experiments. (p>0.05: ns, p<0.05: *, p<0.001: ***, p<0.0001: ****, two-way ANOVA with Sidak’s multiple comparisons test).
+
+### Rv0158 binds methylmalonyl-CoA and associates with the genomic regions involved in propionate metabolism
 
 To understand the regulatory function of Rv0158, we biochemically characterized the protein. Based on the nucleotide sequence, the rv0158 gene has been classified into the TetR family of transcriptional regulators (TFTRs) (Balhana et al., 2015). In silico investigation of Rv0158 protein revealed significant similarity to the CoA-thioester (3aα-H-4α(3-propanoate)–7aβ-methylhexahydro-1,5-indanedione- coA (HIP-CoA)) responsive, TetR-family transcription factor KstR2 (Rv3557c; blastp: identity = 25.52%; Query cover = 88%; E value = 2*10–13) (Figure 10—figure supplement 1; Ho et al., 2016). Histidine-tagged Rv0158 elutes as a dimer, and circular dichroism shows that Rv0158 is mainly α-helical with characteristic minima at 209 nm and 222 nm (Figure 10—figure supplement 1b–e). Since rv0158 KO showed differential expression of genes involved in fatty acid metabolism, we employed microscale thermophoresis (MST) to identify ligands for Rv0158. We tested various metabolites generated during the catabolism of long-chain fatty acids, propionate, and cholesterol (Table 2). We found that Rv0158 does not bind with CoA, acetyl-CoA, and propionyl-CoA (Table 2). However, Rv0158 showed binding with malonyl-CoA, decanoyl -CoA, C12/C16/C18-CoA, with the highest affinity for methylmalonyl-CoA (affinity constant [Kd] of 0.9±0.3 µM) (Table 2).
+
+**Table 2.**
+ Binding affinities of small molecule lipid metabolites with Rv0158 protein, as determined by microscale thermophoresis (MST).Table 2—source data 1.Raw data files and Microscale Thermophoresis profiles indicating binding of different small molecules with His- tagged Rv0158 protein.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SL. No</th>
+      <th>Name of molecule</th>
+      <th>Kd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.</td>
+      <td>CoA</td>
+      <td>n.b.</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>Acetyl-CoA</td>
+      <td>n.b.</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>Propionyl-CoA</td>
+      <td>n.b.</td>
+    </tr>
+    <tr>
+      <td>4.</td>
+      <td>Malonyl-CoA</td>
+      <td>2.4±1 µM</td>
+    </tr>
+    <tr>
+      <td>5.</td>
+      <td>Methylmalonyl-CoA</td>
+      <td>0.9±0.3 µM</td>
+    </tr>
+    <tr>
+      <td>6.</td>
+      <td>Decanoyl-CoA</td>
+      <td>6.4±1.2 µM</td>
+    </tr>
+    <tr>
+      <td>7.</td>
+      <td>C12-CoA</td>
+      <td>1.1±0.6 µM</td>
+    </tr>
+    <tr>
+      <td>8.</td>
+      <td>C16-CoA</td>
+      <td>1.8±0.5 µM</td>
+    </tr>
+    <tr>
+      <td>9.</td>
+      <td>C18-CoA</td>
+      <td>2.8±0.8 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.b.- No Binding._
 
 Since methylmalonyl-CoA is a crucial intermediary metabolite regulating propionate flux into MCC, methylmalonyl pathway, and methyl branched lipids (Savvi et al., 2008), we proposed that its physical association with Rv0158 likely facilitates regulation of genes associated with propionate metabolism in Mtb. To examine this, we performed ChIP-Sequencing (ChIP-Seq) using an anhydrotetracycline (ATc)-inducible flag-tagged Rv0158 (pexCF-rv0158; Minch et al., 2015). We harvested chromatin samples for ChIP-Seq using anti-FLAG antibody conjugated to magnetic beads and sequenced the crosslinked DNA by Illumina Genome Analyzer. As a negative control, we sequenced the input chromatin before immunoprecipitation using the anti-FLAG antibody. When glucose was used as a sole C-source, Rv0158 binds to the promoter regions (–500 bp to +30 bp) of 70 Mtb genes (Figure 11, Supplementary file 5; Fold change over input control >1.5; q value <0.0001). Further classification of these genes indicates that Rv0158 binds to several genes involved in methyl-branched lipid biosynthesis (pks2, fadD23, rv2958c, rv2959c, rv2961), lipid transporter (rv0987-rv0988, mmpL1-mmpS1, mmpL4-mmpS4), biotin synthesis (bioF2), and surface-associated proteins (esp operon, lpqG, esxQ, rv1501-rv1507A).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig11-v2.jpg)
 
-**Figure 11.:** 0.3 OD cultures of rv0158 KO-pexCF-rv0158 Mtb, either growing in 0.3% glucose or 0.3% propionate were induced with 12.5 ng/mL of anhydrotetracycline for 24 hr, and DNA- protein binding interactions were determined as mentioned in Material and Methods. (A) A snapshot from integrative genomics viewer (IGV) showing histogram of log-scaled normalised reads (RPGC normalisation) with Mtb H37Rv genome (Accession no.- NC_000962.3) as reference. Horizontal axis shows genomic positions on the reference genome with the bottommost horizontal panel representing genes with positions obtained from the.gff file. Each horizontal panel represents histogram of mapped reads (bin size of 100 base pairs) in pull down sample which is followed by the input sample (without the pull down) and is followed by the representation of peak regions predicted by the macs2. (B and C) Line plot representing the distribution of fold change of average normalised reads (CPM) with respect to the genomic position of (B) rv0467/rv0468 peak and (C) rv1129c/rv1130 peak on the X-axis. The purple and green lines represent the propionate and glucose sample conditions. The normalised data (CPM) from both the replicates were averaged and a ratio of averaged normalised data of the pull-down to that of the input samples was calculated for the plot. The q values associated with the peaks are 9.9 *10–64 for rv0467/rv0468 peak and 3.4* 10–108 for rv1129c/rv1130 peak, respectively. (D) Consensus sequence of Rv0158 binding motif as obtained from MEME-ChIP (e value = 2.6*10–109).Figure 11—source data 1.Mtb H37Rv) as reference genome.Horizontal axis shows genomic positions on the reference genome with the bottommost horizontal panel representing genes with positions obtained from the.gff file. Each horizontal panel represents histogram of mapped reads (bin size of 100 base pairs) in pull down sample which is followed by the input sample (without the pull down) and is followed by the representation of peak regions predicted by the macs2.
+**Figure 11.:** 0.3 OD cultures of rv0158 KO-pexCF-rv0158 Mtb, either growing in 0.3% glucose or 0.3% propionate were induced with 12.5 ng/mL of anhydrotetracycline for 24 hr, and DNA- protein binding interactions were determined as mentioned in Material and Methods. (A) A snapshot from integrative genomics viewer (IGV) showing histogram of log-scaled normalised reads (RPGC normalisation) with Mtb H37Rv genome (Accession no.- NC_000962.3) as reference. Horizontal axis shows genomic positions on the reference genome with the bottommost horizontal panel representing genes with positions obtained from the.gff file. Each horizontal panel represents histogram of mapped reads (bin size of 100 base pairs) in pull down sample which is followed by the input sample (without the pull down) and is followed by the representation of peak regions predicted by the macs2. (B and C) Line plot representing the distribution of fold change of average normalised reads (CPM) with respect to the genomic position of (B) rv0467/rv0468 peak and (C) rv1129c/rv1130 peak on the X-axis. The purple and green lines represent the propionate and glucose sample conditions. The normalised data (CPM) from both the replicates were averaged and a ratio of averaged normalised data of the pull-down to that of the input samples was calculated for the plot. The q values associated with the peaks are 9.9 *10–64 for rv0467/rv0468 peak and 3.4* 10–108 for rv1129c/rv1130 peak, respectively. (D) Consensus sequence of Rv0158 binding motif as obtained from MEME-ChIP (e value = 2.6*10–109).
 
 Under propionate condition, Rv0158 binds to 32 genes (Fold change over input control >1.5; q value <0.0001). Out of 32 genes, 24 genes overlap with glucose condition. The promoter regions of the remaining eight genes Rv0158 exclusively bound in propionate- grown Mtb were part of the glyoxylate cycle and MCC (icl1, prpR, and prp operon) and fadB2 (Figure 11B and C, Supplementary file 5). As shown earlier, expression of MCC genes was specifically induced in WT Mtb growing on propionate (Figure 10—figure supplement 2). In contrast to WT Mtb, MCC genes were uniformly induced in rv0158 KO independent of the C source (Figure 10A and B). However, propionate resulted in a far greater induction of MCC genes in rv0158 KO than glucose (Figure 10A and B, Figure 10—figure supplement 2). Rv0158 did not bind to any PDIM genes, indicating that their higher expression in rv0158 KO relative to WT Mtb, specifically on propionate, was an indirect effect. These findings indicate that Rv0158 can bind to methylmalonyl-CoA to adjust the expression of pathways involved in propionate metabolism. However, the direct or indirect nature of this regulation needs future experimentation.
 
 Based on all the sequences enriched in the ChIP analysis under glucose and propionate conditions, the conserved binding motif for Rv0158 was found to be YGGCGGBGMCGGCGG (where Y represents pyrimidines (C/T), B represents G/T/C, and M represents A/C, enrichment e value = 2.6*10–109; Figure 11D). Interestingly, the enriched motif was present close to the binding motifs of other transcription factors involved in regulating MCC (e.g. PrpR, GlnR, PhoP, and RamB; Supplementary file 6), suggesting overlapping or competing mechanisms to regulate propionate metabolism in Mtb.
 
-## rv0158 KO is susceptible to exogenous oxidative stress and anti-TB drugs in vitro, inside macrophages, and in vivo
+### rv0158 KO is susceptible to exogenous oxidative stress and anti-TB drugs in vitro, inside macrophages, and in vivo
 
 Altered eROS and carbon metabolism influence the lethality caused by exogenous oxidants and antibiotics in E. coli (Brynildsen et al., 2013). On this basis, we investigated the sensitivity of rv0158 KO to redox stressors and anti-TB drugs. We found that rv0158 KO showed greater killing by 10–100-fold to H2O2, CHP, menadione, and ≈ four fold to the nitric-oxide donor DETA-NO than WT Mtb and rv0158 Comp (Figure 12A). Interestingly, the sensitivity of rv0158 KO towards H2O2 stress was alleviated when glucose was substituted with fatty acids (0.03% acetate or 0.3% propionate or 0.02% cholesterol) as C source (Figure 12—figure supplement 1). This is in line with the restoration of MSH redox state (relative to WT Mtb) in the knockout strain when growing with fatty acids as C source (Figure 7F).
 
+![Figure 12.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig12-v2.jpg)
+
+**Figure 12.:** (A) Log-phase Mtb cultures were exposed to diverse oxidants (H2O2=5 mM; CHP = 100 μM; menadione = 0.5 mM; DETA-NO=1 mM) for 8 hours and plated. CFU was determined after 5–6 weeks. (B) Viability of bacterial strains was plotted after treatment with isoniazid (INH; 1 X MIC = 0.06 μg/ mL), moxifloxacin (MOXI; 1 X MIC = 0.125 μg/ mL), and bedaquiline (BDQ; 1 X MIC = 0.6 μg/ mL) for 5 days. Bar-graph represents survival (CFUs) of WT Mtb, rv0158 KO, and complemented strain. (ND- bacterial colonies not detected at the dilutions plated). (C, D) rv0158 KO Mtb is attenuated inside activated macrophages. IFN-γ- and LPS-treated (activated) RAW 264.7 macrophages were infected with Mrx1-roGFP2 expressing WT Mtb, rv0158 KO, and rv0158 Comp at an MOI of 10. At 48 hr post-infection, (C) 10,000 infected macrophages were analyzed by flow-cytometry, intramycobacterial EMSH was measured, and the percentage of bacilli in each redox subpopulation EMSH-oxidized (yellow), EMSH-basal (red), and EMSH-reduced (blue) was determined and plotted as a stacked bar graph as described in Materials and methods. Statistical comparison was performed between EMSH-oxidized fractions of Mtb strains. (D) Intramacrophage survival was monitored by enumerating CFU at 24-, 48-, and 96- hr post-infection. The data are means ± SEM of two independent experiments (n=4). p was determined by two-way ANOVA with Tukey’s multiple comparisons test (p>0.05: ns, p<0.05: *, p<0.0001: ****). (E– G) rv0158 is required for Mtb survival and persistence in mice. (E) Experimental design. C57BL/6 J mice were given a low-dose aerosol challenge (≈100 bacilli) with WT Mtb, rv0158 KO, and rv0158 Comp and assessed for survival in (F) lungs and (G) spleen at 4- and 8 weeks post-infection. Data shown are mean ± SEM from 4 mice per group. (p>0.05: ns, p<0.05: *, unpaired two-tailed Student’s t-test with Welch’s correction).
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig12-figsupp1-v2.jpg)
+
+**Figure 12—figure supplement 1.:** Log-phase cultures of Mtb strains (Wild-type Mtb (WT Mtb), rv0158 KO, and rv0158 Comp) were synchronized to OD600=0.1 and grown for 24 hr in 7H9 broth (no glycerol) containing (a) 0.3% sodium acetate and (b) 0.3% sodium propionate and (c) 0.02% cholesterol. Mtb cultures were then exposed to H2O2=5 mM and 10 mM for 24 hr and plated. CFU was determined after 5–6 weeks. Results are representative of two independent experiments performed in duplicate. The data are means ± SEM of two independent experiments (n=4). ND indicates colonies not detected at the dilutions plated. p was determined by two-way ANOVA with Dunnett’s multiple comparisons test (p>0.05, ns indicates not significant, p<0.01: **).
+
+![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/80218/elife-80218-fig12-figsupp2-v2.jpg)
+
+**Figure 12—figure supplement 2.:** (a) Mean fluorescence intensity values of reduced resazurin (resorufin) generated by untreated Mtb strains after 5 days of incubation in 96-well plate. Results are representative of two independent experiments performed in duplicate. The data are means ± SEM of two independent experiments (n=4). p was determined by two-way ANOVA with Tukey’s multiple comparisons test (p>0.05, ns indicates not significant). (b–d) % inhibition of growth or metabolism induced by anti-TB drugs as determined by REMA. Results are representative of two independent experiments performed in duplicate. The data are means ± SEM of two independent experiments.
+
 Given that the mutant showed increased permeability and higher accumulation of isoniazid, we examined if the disruption of Rv0158 affected the intrinsic resistance of Mtb to antibiotics. We measured MIC of rv0158 KO against first-line (isoniazid and rifampicin) and second-line anti-TB drugs (moxifloxacin and bedaquiline) by monitoring the resazurin reduction to resorufin using resazurin microtiter assay (REMA). In the absence of antibiotics, we did not see any difference in the extent of resazurin reduction to resorufin among the untreated Mtb strains (Figure 12—figure supplement 2a). The minimal inhibitory concentrations (MICs) of anti-TB drugs in the case of rv0158 KO showed a modest decrease by two fold as compared to WT Mtb and rv0158 Comp (Table 3, Figure 12—figure supplement 2b–d). We further examined if the mutant is more susceptible to killing by anti-TB drugs. Treatment with 1 X MIC of isoniazid (MIC = 0.06 μg/mL), moxifloxacin (MIC = 0.125 μg/mL), and bedaquiline (MIC = 0.03 μg/mL) for 5 days decreased the survival of rv0158 KO by >10-fold relative to WT Mtb (Figure 12B).
+
+**Table 3.**
+ Rv0158 contributes to the intrinsic resistance of Mtb to anti-TB drugs.Resazurin Microtiter assay to determine the minimum inhibitory concentration (MIC values) of first-line (Isoniazid and Rifampicin) and second-line (Bedaquiline and Moxifloxacin) anti-TB drugs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Strain</th>
+      <th colspan="4">MIC90/Day5 in µg/mL</th>
+    </tr>
+    <tr>
+      <th>Moxifloxacin</th>
+      <th>Bedaquiline</th>
+      <th>Isoniazid*</th>
+      <th>Rifampicin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT Mtb</td>
+      <td>0.12</td>
+      <td>0.03–0.06</td>
+      <td>0.06</td>
+      <td>0.0156</td>
+    </tr>
+    <tr>
+      <td>rv0158 KO</td>
+      <td>0.06</td>
+      <td>0.0156</td>
+      <td>0.03</td>
+      <td>0.0078</td>
+    </tr>
+    <tr>
+      <td>rv0158 Comp</td>
+      <td>0.12</td>
+      <td>0.03</td>
+      <td>0.06</td>
+      <td>0.0313</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MIC determined visually by observing the change of colour from blue to pink._
 
 Since rv0158 KO is sensitive to oxidative and nitrosative stress, we examined if Rv0158 is required to maintain intramycobacterial EMSH and survival in immune-activated macrophages. Immune-activation of macrophages elevates phagosomal oxidative and nitrosative stress to induce redox stress in Mtb (Bhaskar et al., 2014). We infected lipopolysaccharide (LPS), and IFN-γ activated RAW 264.7 macrophages with Mtb strains expressing Mrx1-roGFP2 at an MOI of 10, and monitored EMSH and survival of internalized bacteria by FACS and CFU analysis, respectively. We have previously shown that Mtb cells inside naïve macrophages diversify into EMSH-oxidized, EMSH-reduced, and EMSH-basal fractions (Bhaskar et al., 2014), where immune-activation of macrophages increases the fraction of EMSH-oxidized Mtb cells (Bhaskar et al., 2014). Interestingly, we detected a greater proportion of rv0158 KO cells in an EMSH-oxidized state at 48 hr post-infection (p.i.) than WT Mtb and rv0158 Comp (Figure 12C). The increased oxidative shift in the EMSH of rv0158 KO correlated with bacteriostasis at 2 days p.i. and ≈50% killing at 4 days p.i. (Figure 12D). Therefore, our results suggest a critical role of rv0158 in maintaining redox balance under the stressful environment of activated macrophages.
 
@@ -152,7 +438,115 @@ Although our data suggest that Rv0158 likely senses methylmalonyl-CoA and regula
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mycobacterium smegmatis)</td>
+      <td>Mycobacterium smegmatis mc2155 (Msm)</td>
+      <td>Dr. Kanury V.S. Rao (International Centre for Genetic Engineering and Biotechnology, New Delhi, India).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis)</td>
+      <td>Mycobacterium tuberculosis H37Rv (Mtb)</td>
+      <td>Dr. Kanury V.S. Rao(International Centre for Genetic Engineering and Biotechnology, New Delhi, India).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMV762-Mrx1-roGFP2(plasmid)</td>
+      <td>This paper; Bhaskar et al., 2014</td>
+      <td></td>
+      <td>This plasmid can be obtained by sending a request to Dr. Amit Singh.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mycobacteriophage)</td>
+      <td>pHAE180 mycobacterio- phage</td>
+      <td>Dr. Vinay Nandicoori (National Institute of Immunology, New Delhi, India)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis)</td>
+      <td>Mtb H37Rv mshA KO</td>
+      <td>Prof. William R. Jacobs Jr(Albert Einstein College of Medicine, New York, USA).</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis)</td>
+      <td>Mtb CDC 1551</td>
+      <td>BEI resources</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mycobacterium tuberculosis)</td>
+      <td>Mtb CDC1551 transposon mutants</td>
+      <td>BEI resources</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA/RNA oxidative damage ELISA kit</td>
+      <td>Cayman Chemical</td>
+      <td>cat. no.- 589320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellROX Deep Red</td>
+      <td>Invitrogen</td>
+      <td>cat. no. C10422</td>
+      <td>Final con-centration- 5 μM. See materials and methods (ROS quantification by CellROX Deep Red dye)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>[1, 2–14 C] sodium acetate</td>
+      <td>https://britatom.gov.in/</td>
+      <td>product code- LCC34</td>
+      <td>Final con-centration- 50 µCi. See materials and methods (Quantification of fatty acids and mycolic acids in Mtb strains)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software (https://www.graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wave Desktop</td>
+      <td>Agilent Technologies</td>
+      <td>RRID:SCR_014526</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 Mycobacterium smegmatis mc2155 (Msm) and Mycobacterium tuberculosis H37Rv (Mtb) were kind gifts from Dr. Kanury V.S. Rao (International Centre for Genetic Engineering and Biotechnology, New Delhi, India). Strain Mtb-Mrx1 roGFP2 was generated by transforming Mtb H37Rv with an E. coli-mycobacterial shuttle vector, pMV762 (Bhaskar et al., 2014). Plasmid pMV762 contains the Mrx1-roGFP2 biosensor construct under the control of the Mtb hsp60 promoter and a hygromycin-resistance gene as a selection marker. pHAE180 mycobacteriophage was a kind gift from Dr. Vinay Nandicoori (National Institute of Immunology, New Delhi, India). Mtb H37Rv mshA KO was a kind gift from Prof. William R. Jacobs Jr (Albert Einstein College of Medicine, New York, USA). Wild-type Mtb CDC 1551 and the Mtb CDC1551 transposon mutants were collected from BEI resources (Supplementary file 7; https://www.beiresources.org/). Plasmid pexCF-rv0158 was a kind gift from Prof. David Sherman (Seattle Biomedical Research Institute, Washington, USA).
 
@@ -160,105 +554,105 @@ All strains were grown in 7H9 broth (BD DIFCO, cat. no.- 271310) supplemented wi
 
 Protocol for carbon-utilization experiments was followed as described in previous studies (Jain et al., 2007; Muñoz-Elías et al., 2006). Briefly, Mtb strains were precultured to OD 600 nm of ≈1.0, washed with 1 X PBS, and resuspended in fresh medium media containing 0.47% 7H9, 0.5% albumin, 0.085% NaCl, and 0.05% tyloxapol (MP Biomedical, cat. no.-157162) supplemented with 0.3% (w/v) D-glucose (Thermo Fisher scientific, cat. no.- Q24415) or 0.3% (w/v) sodium acetate (SRL, cat. no.- 12709–3), 0.3% (w/v) or sodium propionate (Sigma Aldrich, cat. no.- P1880) or 0.02% (w/v) cholesterol (Sigma Aldrich, cat. no.- C3045) or 200 μM sodium palmitate (Sigma Aldrich, cat. no.- P9767-10G), followed by incubation at 180 RPM in a rotary shaker incubator.
 
-## Whole-genome transposon mutagenesis
+### Whole-genome transposon mutagenesis
 
 Mtb H37Rv-Mrx1 roGFP2 strain was grown till OD600 nm ~1. The cells were washed twice with wash medium (7H9 broth +5% glycerol) and resuspended in mycobacteriophage buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 10 mM MgSO4, and 2 mM CaCl2). These phage-competent cells were infected with phAE180 (1010–1011 PFU/mL) at MOI of 1:10 for 3 hours at 37 °C followed by the selection of phage-transduced Mtb cells on 7H11+OADC plates containing hygromycin and kanamycin and incubated at 37 °C for 4–5 weeks.>105 colonies were scrapped, pooled together, and stored at –80 °C as frozen glycerol stocks.
 
-## Transposon-directed Insertion site Sequencing (TRADIS) and analysis
+### Transposon-directed Insertion site Sequencing (TRADIS) and analysis
 
 Genomic DNA for TraDIS (TnSeq) protocol was isolated as previously described (Majumdar et al., 2017). The quality of isolated genomic DNA was checked by agarose gel electrophoresis. Phage DNA contamination in isolated genomic DNA was checked by PCR using primers to amplify the scaffold region of TM4 phage: TM4-ScaF: 5’ATGGCAGAACAAACTGAG3’ and TM4-ScaR: 5’GAATTGGTGTTGCCGTT G3’. TraDIS (TnSeq) protocol was utilized to identify the site of mutation (insertion by transposon) in the library of Mtb-transposon mutants (Barquist et al., 2016). Briefly, genomic DNA was sheared to produce ≈ 550 double-stranded DNA fragments using Covaris S220 and confirmed by Agilent Bioanalyzer (2100 High sensitivity). Using TruSeq Nano DNA LT Library Preparation Kit – Set A (12 Set A index tubes, 24 samples)-FC-121–4001 and MiSeq Reagent Kit v2 (50 cycle)-MS-102–2001, we performed Tn sequencing by Illumina Miseq sequencing platform as described by the manufacturer and in reference (Barquist et al., 2016). PCR-enrichment of DNA fragments containing transposon-chromosome junctions was done with a 3’ transposon sequence-specific primer 5’AATGATACGGCGACCACCGAGATCTACACTCTGGGGTACGCGTAATACGACTCACTATAGGGTCTAGAGA3’ and an Illumina indexed-adapter specific primer. The following sequencing primer was used: 5’TAATACGACTCACTATAGGGTCTAGAGACCGGGGACTTATCAGC3’. Raw reads (single end; read length = 50 bp; read quality ≥ Q20) were obtained for two biological replicates, each for the Tn-Library and EMSH-oxidized Tn mutant pool of Mtb as.fastq files. The reference genome sequence (.fna) and annotation (.gff) files for the same strain were downloaded from the NCBI ftp website (https://ftp.ncbi.nlm.nih.gov/). The reads were mapped to the Mtb H37Rv genome (accession number: NC_018143.2) using Burrows-Wheeler Aligner (BWA; Li and Durbin, 2009). The raw read quality was checked using the FastQC software (version v0.11.5). BWA (version 0.7.12-r1039) was used to index the reference genome and align the reads. SAMTOOLS (version 1.2) was used to filter out the multiply mapped reads. BEDTOOLS (version 2.25.0) was used to calculate the reads count per gene using the annotation file (.bed). The format of the annotation file (.gff) was changed to.bed using an in-house python script. The normalization and transposon enrichment analysis for the two conditions was carried out using the edgeR (Robinson et al., 2010) and DESeq2 (Love et al., 2014) pipeline. The p-value of differential gene representation analysis was obtained through DESeq2 and edgeR after correction for multiple hypothesis testing using false discovery rate (p.adj. or FDR at a cut-off <0.05). The genes (total number) that showed differential insertions (log2 fold change ≥ 1 and FDR or p.adj. <0.05) in either of the pipelines were considered enriched for insertions in EMSH- oxidized Tn mutant pool relative to the input Tn Lib. The union of over-represented genes derived from DESeq2 and edgeR is considered ‘Mtb redoxosome’. The TraDIS data has been submitted to NCBI’s BioProject (Submission ID: SUB11081305; BioProject ID: PRJNA807454).
 
-## Fluorescence-activated cell sorting (FACS) analysis of bacterial population
+### Fluorescence-activated cell sorting (FACS) analysis of bacterial population
 
 Bacteria were grown to OD600 nm = 0.6–0.8 in OADC-supplemented 7H9 media at 37 °C, 180 rpm. Prior to experiments, cells were harvested and resuspended in 7H9 media containing ADS. Flow-cytometry using a BD FACS Aria flow cytometer equipped with the 405 nm and 488 nm lasers was performed to determine the ratio of Mrx1-roGFP2 fluorescence within Mtb cells at 510 nm emission. Ratiometric changes (Ex: 405/488 nm) upon 10 mM cumene hydroperoxide (maximum biosensor oxidation) and 20 mM dithiothreitol (maximum biosensor reduction) treatment to WT Mtb were utilized to gate ambiently EMSH-oxidized or EMSH-reduced Mtb transposon mutants. 10,000 events per sample were analyzed. For enriching this population, cells were sorted using BD FACS Aria with a four-way purity sort setting. The oxidized EMSH of sorted cells was confirmed by post-sort analysis and plated on 7H11 supplemented with OADC and allowed to grow at 37 °C for 4–5 weeks. The intracellular EMSH measurements were done as described previously (Bhaskar et al., 2014).
 
-## Quantification of 8-OH deoxyguanosine (DNA damage marker)
+### Quantification of 8-OH deoxyguanosine (DNA damage marker)
 
 Bacterial cultures were grown to the mid-log phase (OD600 nm = 0.6). Genomic DNA was isolated from each sample. 8-OH deoxyguanosine species were quantified using ELISA according to the manufacturer’s instructions (Cayman chemical-DNA/RNA oxidative damage ELISA kit, cat. no.- 589320).
 
-## Lipid peroxidation assay
+### Lipid peroxidation assay
 
 Bacterial cultures were grown to the mid-log phase (OD600 nm = 0.6). Lipid hydroperoxides were quantified from cell pellets using FOX2 reagent (Griffiths et al., 2000; Nambi et al., 2015). Briefly, the pellet was resuspended in 1:2 chloroform/methanol and mixed by vortexing. Next, chloroform and water were added to it at 1:1. The samples were then centrifuged to separate phases. The organic phase was collected and washed twice with water. A total of 200 µl of the organic phase was incubated with 1 mL of FOX2 reagent in the dark for 1 hr at 22 °C. Lipid hydroperoxides were measured spectrophotometrically at 560 nm and normalized with cell mass or OD600 nm.
 
-## Determination of bacterial survival
+### Determination of bacterial survival
 
 Bacterial cultures were grown to the mid-log phase (OD600 nm = 0.6). Bacterial clumps were removed by centrifugation at 200 g for 5 minutes. The single-cell suspension was then set at 0.1 OD600 nm. Oxidants (Hydrogen peroxide Merck, cat. no.- 1.93408.0521), cumene hydroperoxide (Sigma Aldrich, cat. no.- 247502), diamide (Sigma Aldrich, cat. no.- D3648), menadione (Sigma Aldrich, cat. no.- M5625) and Diethylenetriamine/nitric oxide adduct (DETA-NO; Sigma Aldrich, cat. no.- D185) at indicated concentration were added to the culture, and CFU was determined after 8 or 24 hr of treatment. In vitro growth kinetics of bacterial strains were determined by removing 200 μL aliquots at various intervals, serially diluted, and plated on 7H11 agar for CFU enumeration. The killing of bacterial strains in the presence of anti-TB drugs (Isoniazid (Sigma Aldrich, cat. no.- 13377), Rifampicin (Sigma Aldrich, cat. no.- R3501), moxifloxacin (Sigma Aldrich, cat. no.- PHR1542) and bedaquiline (Cayman chemical, cat. no.- 20247)) was quantified by treating bacteria with antibiotics as described in Resazurin Microtiter Assay (REMA) protocol (Padiadpu et al., 2016). At day 5 post-treatment with drugs, aliquots were taken from bacteria-containing wells, serially diluted, and plated on drug-free agar for CFU enumeration. Plates were incubated for 4–5 weeks at 37 °C, and CFU was counted.
 
-## Determination of minimal inhibitory concentration (MIC)
+### Determination of minimal inhibitory concentration (MIC)
 
 MIC was determined by a resazurin microtiter assay (REMA) using 96-well flat-bottom plates (Padiadpu et al., 2016). Mtb strains were cultured in 7H9+ADS medium and grown to exponential phase (OD600 nm = 0.4 to 0.8). Approximately 1×105 bacteria per well were added in a total volume of 200 µL of 7H9+ADS medium. Wells lacking Mtb served as a control. Additional controls consisted of wells containing cells (growth control). After 5 days of incubation at 37 °C in the presence of anti-TB drugs, 30 µL of 0.02% resazurin (Sigma-Aldrich, cat. no.- R7017) was added, and plates were incubated for an additional 24 hr. Fluorescence intensity was measured using a SpectraMax M3 plate reader (Molecular Devices) in the bottom-reading mode with excitation at 530 nm and emission at 590 nm. Percent inhibition was calculated from the relative fluorescence units compared with an untreated control culture; MIC was taken as the lowest drug concentration that resulted in at least a 90% reduction in fluorescence compared to untreated growth control.
 
-## In vitro oxidative burst assay
+### In vitro oxidative burst assay
 
 Bacteria were grown in OADC-supplemented 7H9 media at 37 °C, 180 rpm. Prior to experiments, cells were harvested and resuspended in 7H9 supplemented with ADS. These cells were treated with 12.5 µM cumene hydroperoxide, and the Mrx1-roGFP2 biosensor ratio was measured by flow-cytometry to investigate the redox response of cells as a function of time. 10,000 events per sample were analyzed.
 
-## Isolation of RNA and quantitative RT-PCR analysis
+### Isolation of RNA and quantitative RT-PCR analysis
 
 Bacterial strains were grown to the mid-log phase (OD600 nm ≈ 0.6). 25 mL GTC buffer (5 M guanidium thiocyanate (VWR Life sciences, cat. no. -VWRC0380), 0.5% sarcosyl, 0.5% Tween-80, 1% β mercaptoethanol (freshly added)) was added to 10 mL of bacterial culture, mixed, and cells were immediately harvested. Total RNA was extracted as described previously using MP Biomedicals FastRNA Pro Blue Kit (MP Biomedical, cat. no.- 116025050) and QIAGEN Rneasy Kit (cat. no.- 74136; Chawla et al., 2012). DNA contamination was removed from the isolated RNA using a TURBO DNA-free Kit (Invitrogen, cat. no. -AM1907), and 600 ng of RNA was used for cDNA synthesis using the iScript cDNA Synthesis Kit (BioRad, cat. no.- 170–8891). Quantitative RT-PCR is done with CFX96 RTPCR System (BioRad) using gene-specific primers (Supplementary file 8) and iQ SYBR Green Supermix (Bio-Rad, cat. no.- 1708886). Expression of genes was normalized with Ct value for 16 s rRNA (internal housekeeping control).
 
-## Generation of redox-homeostasis network
+### Generation of redox-homeostasis network
 
 We used the Mtb Transcription Regulatory Network (TRN) consisting of 156 Transcription factors (TFs), 3679 target genes, and 15,980 protein-DNA interactions based on Chromatin Immunoprecipitation followed by Next-generation Sequencing (ChIP-Seq) data (Minch et al., 2015) to generate a ‘redox-homeostasis network’ of 107 genes (including 14 TFs) with 143 interactions (Figure 3C). This redox-homeostasis network comprises of the subset of 143 edges in the Mtb TRN wherein both the TF and the target gene of an interaction are part of the redoxosome of 368 genes which are overrepresented in the EMSH- oxidized Tn mutant pool. The redox-homeostasis network has three connected components with a dominant largest component comprising of 102 genes (including 12 TFs) and 139 edges (Figure 3C). Moreover, the TFs and target genes in the largest component of the redox-homeostasis network were organized into three hierarchical levels as follows. The top layer comprises of 6 TFs that are not regulated by any other TF in the network (i.e. have in-degree 0 after omitting self-loops), the middle layer comprises of 6 TFs that are regulated by at least one other TF in the network, and the bottom layer comprises of the remaining 90 target genes. Thereafter, we computed the betweenness centrality, out-degree, and degree of collaboration (Bhardwaj et al., 2010) for the TFs in the redox-homeostasis network. In the ‘redox-homeostasis network’ shown in Figure 3C, we differentiated the genes based on their functional category obtained from the MycoBrowser database (Kapopoulou et al., 2011).
 
-## Generation of a knockout strain of rv0158 in Mtb H37Rv and genetically complemented strains
+### Generation of a knockout strain of rv0158 in Mtb H37Rv and genetically complemented strains
 
 Knockout strains were generated by the Allelic-exchange strategy (Chawla et al., 2018). Approximately 1 kb up and down flanking DNA sequences of the genomic locus of rv0158-ORF were amplified and cloned upstream and downstream, respectively, of the loxP-hyg-gfp-loxP (hyg: hygromycin resistance gene, gfp: Green fluorescent protein-expressing gene) cassette in the mycobacterial suicidal vector pML523 (a kind gift from Dr. Michael Niederweis, University of Alabama, Birmingham). The complete construct of ‘flanking sequences along with the hyg-gfp DNA sequence’ was cloned into the pRSF-duet vector (Clontech). UV-treated pRSF-rv0158 was electroporated into WT Mtb H37Rv for allelic exchange as described previously (Chawla et al., 2018). In a double crossover recombination event, the entire ORF of interest in the Mtb genome was replaced by up and down fragments flanking the rv0158 gene along with the loxP-hyg-gfp-loxP cassette. Colonies were screened for knock-out strains (only Hyg-resistant) by antibiotic selection and quantitative RT-PCR (qRT-PCR). The knockout strains were unmarked using the pCre-Zeo-SacB plasmid (a kind gift from Dr. Amit K. Pandey, Translational Health Science and Technology Institute, Haryana, India). For generating complemented strains, rv0158 ORF and upstream 400 bp promoter sequence were cloned into pCV125 (Alland et al., 2000), an integrative E. coli -Mycobacterial shuttle vector. This construct was then electroporated into the unmarked knockout strain; colonies were selected on 7H11+kanamycin plates, and the complemented strain was validated with qRT-PCR.
 
-## ROS quantification by CellROX Deep Red dye
+### ROS quantification by CellROX Deep Red dye
 
 Bacterial strains were grown to the mid-log phase (OD600 nm ≈ 0.6). Cells were harvested by centrifugation (4200 g for 5 min) and resuspended in 100 µL of growth medium. As per the manufacturer’s instructions, CellROX Deep Red (Invitrogen, cat. no.- C10422) was added to a final concentration of 5 µM, and cells were agitated on a rocker (Biobee Tech) for 30 min at 37 °C. After incubation, cells were washed to remove residual dye by centrifugation (4200 g for 5 min). Cells were resuspended in 300 µL phosphate-buffered saline (pH 7.4) and then fixed by adding 4% paraformaldehyde (PFA) for 1 h at room temperature. Fluorescence of 10,000 events per sample was measured at a fixed emission (670 nm) after excitation with a red laser (640 nm) using a BD FACSVerse Flow cytometer (BD Biosciences). 10,000 events per sample were analyzed.
 
-## Quantification of DNA strand breaks by TUNEL assay
+### Quantification of DNA strand breaks by TUNEL assay
 
 DNA damage was measured by using In Situ Cell Death Detection Kit, TMR red (Roche Molecular Biochemicals, Indianapolis, IN, Cat. No.- 12156792910), which is based on TUNEL (TdT-mediated dUTP-X nick end labeling) assay (Shee et al., 2022). An equal number of cells (based on OD600) were taken, washed once by centrifugation, and fixed in 2% paraformaldehyde (PFA). PFA was removed by washing cells, followed by resuspension in 2% sodium dodecyl sulfate (SDS) and a second wash by centrifugation. DNA double-strand breaks were labeled in 100 μl of TUNEL reaction mix for 3–4 hr. Cells incubated with label solution only (no terminal transferase) were used as negative controls. Fluorescence was measured at a fixed emission (585 nm) after excitation with green-yellow laser (561 nm) using a BD FACSAria Flow cytometer (BD Biosciences, San Jose, CA). A total of 10,000 events were acquired per sample.
 
-## Preparation of RNA for RNA sequencing by Illumina HiSeq sequencing platform
+### Preparation of RNA for RNA sequencing by Illumina HiSeq sequencing platform
 
 Bacterial strains were grown to the mid-log phase (OD600 nm ≈ 0.6). Total RNA was extracted as described above. Ribosomal RNA (16 s and 23 s rRNA) was depleted from RNA samples using MICROBExpress Bacterial mRNA Enrichment Kit (Life Technologies, cat. no.- AM1905). RNA was quantified using Qubit 2.0 Fluorometer (Invitrogen). rRNA depleted RNA (≈ 15 ng per sample) was fragmented and then used to prepare the library using NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (New England Biolabs, cat. no.-E7765S) and NEBNext Multiplex oligos for Illumina (New England Biolabs, cat. no.-E7335S), according to the manufacturer’s protocol. The fragment-size distribution, uniformity, and quality were examined using a high-sensitivity DNA Chip in Agilent Bioanalyzer (2100 High sensitivity). Two nM of cDNA libraries were pooled together and sequenced using the HiSeq2500 platform (Illumina).
 
-## Analysis for differential gene expression with RNA Sequencing data
+### Analysis for differential gene expression with RNA Sequencing data
 
 Raw reads (single end; read length = 50 bp; read quality ≥ Q20) were obtained for two biological replicates as.fastq files. The reference genome sequence (.fna) and annotation (.gff) files for the same strain- Mtb H37Rv were downloaded from the NCBI ftp website. The reads were mapped to the Mtb H37Rv genome (accession number: NC_000962.3) using Burrows-Wheeler Aligner (BWA) (Li and Durbin, 2009). The raw read quality was checked using the FastQC software (version v0.11.5). BWA (version 0.7.12-r1039) was used to index the reference genome and align the reads. SAMTOOLS (version 1.2) filtered out the multiply mapped reads. BEDTOOLS (version 2.25.0) was used to calculate the reads count per gene using the annotation file (.bed). The format of the annotation file (.gff) was changed to.bed using an in-house python script. The normalization and differential analysis for the two conditions were carried out using the edgeR pipeline. The p-value of differential expression analysis was obtained through edgeR after correction for multiple hypothesis testing using a false discovery rate (FDR <0.05). Genes with absolute fold change ≥1.5 or≤–1.5 and FDR <0.05 were considered differentially expressed in comparative groups. Raw data has been submitted to NCBI’s Gene Expression Omnibus (GEO, accession number- GSE196844).
 
-## Measurement of cellular bioenergetics by Seahorse XF-flux analyzer
+### Measurement of cellular bioenergetics by Seahorse XF-flux analyzer
 
 To measure oxygen consumption rate (OCR) and extracellular acidification rate (ECAR), log-phase Mtb cultures were briefly (one day) incubated in 7H9 medium containing the non-metabolizable detergent tyloxapol and lacking ADS or a C-source. These cultures were then passed 10 times through a 26-gauge syringe needle followed by centrifugation at 100 g for 1–2 min to remove clumps of bacterial cells. The resulting single-cell suspensions of bacteria at 2×106 cells/well were placed in the bottom of wells of a Cell-Tak (Corning, cat. no.- 354240)-coated XF culture plate (Agilent/Seahorse Biosciences). To confirm that an equal number of cells were seeded on the plate, Mtb strains were plated on 7H11 agar, and CFU was enumerated after 4 weeks. Measurements were performed using a Seahorse XFp analyzer (Agilent/Seahorse Biosciences) with cells in an unbuffered 7H9 growth medium (pH 7.45 lacking monopotassium phosphate and disodium phosphate). OCR and ECAR measurements were recorded for ∼21 min (3 initial baseline readings) before the addition of either glucose (0.3% w/v final concentration) or sodium acetate (0.3% w/v) or sodium propionate (0.3% w/v) as a C-source, which was delivered automatically through the drug ports of the sensor cartridge (Wave Software, Agilent Technologies). Carbonyl cyanide 3-chlorophenylhydrazone (CCCP; Sigma-Aldrich, cat. no.- C2759) at 10 μM final concentration was similarly added through drug ports as indicated in figures. Changes in OCR (% OCR) and ECAR (% ECAR) readings triggered by C-source or CCCP were calculated as a percentage of the third baseline reading for OCR and ECAR taken before C-source injection.
 
-## Quantification of fatty acids and mycolic acids in Mtb strains
+### Quantification of fatty acids and mycolic acids in Mtb strains
 
 Metabolic radiolabeling of mycolic acids and fatty acids of Mtb was performed as previously described (Singh et al., 2009; Wilson et al., 2013). Briefly, Mtb was cultured to OD600 nm = 0.8 in 50 mL of 7H9 medium, followed by the addition of 50 µCi of [1, 2-14C] sodium acetate (specific activity = 56 mCi/mmole; product code- LCC34, https://britatom.gov.in/) and incubating for another 24 hr. Bacteria were harvested after washing with 1 X PBS and sterilized by autoclaving. To the cell pellets, 2 mL of tetra-n-butylammonium hydroxide (TBAH; Spectrochem Pvt. Ltd., cat. no.-0120224) was added and incubated overnight at 100 °C (silicone oil bath) to hydrolyze all lipids. Fatty acids were esterified by adding 4 mL dichloromethane (SDFCL, cat. no.- 20340), 300 μL iodomethane (SDFCL, cat. no.- 38585), and 2 mL Milli-Q water and mixing at room temperature on a rocker for 1 h. After centrifugation at 4200 g for 10 min, the lower organic phase was washed twice with Milli-Q water, dried in fumehood overnight, and resuspended in 3 mL of diethyl ether (SDFCL, cat. no.- 20094). This was sonicated in a water-bath sonicator for 30 min for uniform resuspension of lipids. FAMES/MAMES were harvested after centrifugation and transfer of supernatant into a fresh glass vial, dried, and lipids were resuspended in 200 μL dichloromethane. Equal counts (50,000 CPM) were loaded on a silica gel 60 F254 thin-layer chromatography (TLC) plate (Sigma Aldrich, cat. no.- 1055540007) and resolved using hexane/ethyl acetate (19:1, v/v). To determine the distribution of FAMEs, the same sample was analyzed on a C18 reverse-phase TLC (Sigma Aldrich, cat. no.- 1055590001) and developed with acetonitrile/dioxane (1:1, v/v). The TLCs were visualized using a phosphorimager (GE Typhoon phosphorimager).
 
-## 14C-Inh accumulation assay
+### 14C-Inh accumulation assay
 
 Log-phase Mtb cultures (OD600 nm ≈ 0.6) were washed twice with ice-cold PBS and resuspended in PBS. An equal number of cells (109) for each strain were treated with [14C]-Isoniazid (ViTrax Inc) at a concentration of 0.5 μCi/mL. After 1 hr of treatment, bacteria were pelleted and extensively washed to remove residual [14C]-isoniazid. The intracellular level of isoniazid was determined by bacterial lysis using bead-beating. Lysates were added to 1,4-Bis(5-phenyl-2-oxazolyl)benzene solution in toluene (or POPOP luminophore, Sigma), and radioactivity was measured by a liquid scintillation counter (LKB WALLAC 1209 RACKBETA liquid scintillation counter).
 
-## Ethidium bromide accumulation assay
+### Ethidium bromide accumulation assay
 
 Cell-membrane permeability of the Mtb cells was determined as previously described (Dong et al., 2021), with minor modifications. Briefly, log-phase bacterial cultures were washed twice with PBS and resuspended in PBST (PBS + Tween 80). An equal number of cells (108) for each strain were added into the 96-well plate. Ethidium bromide (1 µg/ mL, Sigma Aldrich, cat. no.- 1.11608) was added to the cells, and fluorescence intensity was measured for 1 hr using a SpectraMax M3 plate reader (Molecular Devices) in the bottom-reading mode with excitation at 530 nm and emission at 590 nm.
 
-## Quantification of cellular NAD+ and NADH
+### Quantification of cellular NAD+ and NADH
 
 Mtb H37Rv strains were grown to log phase (OD600 nm = 0.6), and pyridine nucleotides (NAD+ and NADH) levels were determined by a redox-cycling assay (Singh et al., 2009; Vilchèze et al., 2013). Briefly, 10 mL of each culture was harvested, washed once with 1 X PBS, and treated with 0.2 M HCl (1 mL, NAD+ extraction) or 0.2 M NaOH (1 mL, NADH extraction). The samples were heated at 55 °C for 20 min, followed by cooling at 0 °C for 5 min. Samples were then neutralized with 0.1 M NaOH (1 mL, NAD+ extraction) or 0.1 M HCl (1 mL, NADH extraction). After centrifugation, the supernatant containing pyridine nucleotides was passed through a 0.2 µm filter. The redox cycling assay was performed using a reagent mixture consisting of equal volumes of 1 M bicine buffer (pH8.0) (bicine: Sigma Aldrich, cat. no.- B3876), absolute ethanol as substrate, 40 mM EDTA (pH8.0), 4.2 mM MTT (3- [4,5-dimethyl thiazol-2-yl]–2,5-diphenyl tetrazolium bromide; thiazolyl blue), and twice the volume for 16.6 mM PES (phenazine ethosulfate; Sigma Aldrich, cat. no.- P4544-1G), previously incubated at 30 °C. Of the reagent mixture, 100 μL was incubated with 90 μL of cell extract followed by the addition of 10 μL alcohol dehydrogenase in 0.1 M bicine buffer, ≈ 6 U for NAD(H) estimation (Sigma Aldrich, cat. no.- A3263-30KU). The absorbance at 565 nm was recorded every minute for 10 min at 30 °C. Using 0.01–0.1 mM standard solutions of NADH (NADH-Sigma Aldrich, cat. no.- N8129) and NAD+ (NAD- Sigma Aldrich, cat. no.- N1636), a standard curve (absorbance versus time plot) was generated whose slope (∆Absorbance/ min) of the linear region was correlated to the concentration of coenzyme (mM) by a linear fit equation. This equation was used to determine the concentration(mM) of NAD/H in the samples. NADH and NAD+ concentrations were normalized to OD 600 nm.
 
-## Homology modelling of Rv0158 protein
+### Homology modelling of Rv0158 protein
 
 Rv0158 protein sequence was taken from the Mycobrowser repository (https://mycobrowser.epfl.ch/). To find similar protein sequences and structures, the BLAST program (blastp) of Basic Local Alignment Search Tool (BLAST) (https://blast.ncbi.nlm.nih.gov/Blast.cgi) was performed using the query sequence of Rv0158 protein against the protein data bank (PDB). Based on the BLAST result, we selected the top hit: KstR2 protein crystal structure (PDB ID: 4W97) of TetR-family, form Mtb (Crowe et al., 2015). This protein structure (PDB ID: 4W97) was further used as a reference structure to model the Rv0158 protein using the homology modeling tool MODELLER version 9.19 (https://salilab.org/modeller/).
 
-## Expression and purification of His-tag Mtb Rv0158 protein in E. coli
+### Expression and purification of His-tag Mtb Rv0158 protein in E. coli
 
 The nucleotide sequence of rv0158 ORF was PCR-amplified from Mtb H37Rv genome and cloned into pet28a plasmid. The recombinant plasmid was transformed into E. coli BL21 (DE3) cells. At OD600 nm of ∼0.6, 0.5 mM isopropyl-β-D thiogalactopyranoside (IPTG; VWR Chemicals, cat. no.- 0487–10 g) were added to induce expression of His-tagged Rv0158 for 24 hr at 18 °C. The culture medium containing the bacteria was centrifuged at 3000 g for 10 min, and the cell pellet was suspended in lysis buffer 25 mM Tris-Cl pH 8.0, 500 mM NaCl, 5% glycerol, 5 mM βmercaptoethanol, 5 mM imidazole, and 2 mM phenylmethylsulfonyl fluoride (PMSF; Sigma Aldrich, cat. no.- P9625-14). The cells were sonicated for 30 min on ice, followed by centrifugation at 3000 g for 45 min. His-tagged Rv0158 protein in the supernatant was purified on a Ni-NTA (Qiagen, cat. no.- 30210) resin chromatography column and eluted with elution buffer 25 mM Tris-Cl pH 8.0, 500 mM NaCl, 5% glycerol, 5 mM βmercaptoethanol, 250 mM imidazole and 2 mM phenylmethylsulfonyl fluoride (PMSF), followed by dialysis to remove imidazole. The protein purity was evaluated by SDS-PAGE and quantified by BCA assay (Thermo Scientific, cat. no. 23225, Rockford, IL).
 
-## Circular Dichroism spectroscopy and gel filtration chromatography of Mtb H37Rv Rv0158 protein
+### Circular Dichroism spectroscopy and gel filtration chromatography of Mtb H37Rv Rv0158 protein
 
 For the CD spectroscopy study, the concentration of the protein sample (Rv0158) was set at 20 μM in 20 mM Tris (pH 7.5), 100 mM NaCl Buffer. Scans and melting curve experiments of the Rv0158 protein sample were performed on a JASCO J-715 spectropolarimeter. CD spectra of Rv0158 were recorded at 25 °C over the wavelength range from 260 nm to 190 nm. Prior to sample spectra, baseline spectra were obtained using 20 mM Tris (pH 7.5), 100 mM NaCl. CD melting curve was recorded at 209 nm over the temperature ranges from 10 °C to 90 °C.
 
 For gel filtration chromatography of protein sample of His-tagged Rv0158 (Ni-NTA eluted), Buffer-20 mM Tris, pH 7.5, 100 mM NaCl was used in Superdex 75 column using GE AKTA prime plus FPLC system. To find protein Rv0158 in the fractions, we performed SDS PAGE to check for bands of the expected size.
 
-## Microscale Thermophoresis to detect binding interactions between small molecules and Protein
+### Microscale Thermophoresis to detect binding interactions between small molecules and Protein
 
 10 μM of Rv0158 protein (in 50 mM Tris pH 7.5, 100 mM NaCl) was labelled using RED-NHS MonolithTM Protein Labeling Kit (NanoTemper Technologies, cat. no.- MO-L011) according to manufacturer’s instructions. Each of the small molecule ligands (coA (Sigma Aldrich, cat. no.- C4282), acetyl-CoA (Sigma Aldrich, cat. no.- A2056), propionyl-CoA (Sigma Aldrich, cat. no.- P5397), malonyl-CoA (Sigma Aldrich, cat. no.- M4263), methylmalonyl- CoA (Sigma Aldrich, cat. no.- M1762), C10-CoA (Sigma Aldrich, cat. no.- D5269), C12-CoA (Sigma Aldrich, cat. no.- L2659), C16-CoA (Sigma Aldrich, cat. no.- P9716), C18-CoA (Sigma Aldrich, cat. no.- S0802)) were titrated against the labeled protein in 1:1 dilution series starting with the highest ligand concentration of of 75 μM. A total of 16 twofold serial dilutions of the target ligand were prepared. The labeled protein was added such that the final concentration of the protein is 5 nM. Experiments were carried out using MonolithTM NT.115 MST Standard Capillaries (NanoTemper Technologies, cat. no.- MO-K022) and measured using a Monolith NT.115 instrument with MO.Control software. Curves were fitted with a single-site binding model using PALMIST 1.5.6 software (Scheuermann et al., 2016) and figures were generated using GUSSI software v1.1.0 (Brautigam, 2015).
 
-## Chromatin Immunoprecipitation- Sequencing and Analysis
+### Chromatin Immunoprecipitation- Sequencing and Analysis
 
 rv0158 KO Mtb was transformed with ATc-inducible expression vector (pexCF-rv0158) and transformants were grown in the presence of 50 μg/mL− hygromycin B to maintain the plasmid. Log phase culture at an OD600 of 0.35 was washed twice with 1X PBS, and induced for 24 hr using a low ATc concentration 12.5 ng/mL in presence of either 0.3% (w/v) D-glucose or 0.3% (w/v) sodium propionate as sole C source. Samples for ChIP-Seq were prepared as described previously (Chawla et al., 2018; Minch et al., 2015). Briefly, DNA–protein interactions were established by cross-linking 50 ml of the culture of Mtb strains with 1% formaldehyde while agitating cultures at 37 °C/ 180 RPM for 30 min. Crosslinking was quenched by the addition of glycine to a final concentration of 250 mM. Cells were pelleted, washed in 1 X PBS + 1 X protease inhibitor cocktail (Sigma Aldrich, cat. no.- 11873580001), and resuspended in IP Buffer (20 mM K-HEPES pH 7.9, 50 mM KCl, 0.5 mM dithiothreitol, 10% glycerol and 1 X protease inhibitor cocktail). Cells were lysed and the supernatant was subjected to Covaris S2 ultrasonicator at settings: Duty factor = 10%, Peak power = 174 W, cycles per burst = 200, for 20 min (4 times 5 min with 1 min gap) to shear chromatin to a uniform size centred around 200 bp. Following shearing, the sample was adjusted to buffer IPP150 (10 mM Tris-HCl—pH 8.0, 150 mM NaCl and 0.1% NP40) and shearing of DNA to an average size of 100–400 bp was confirmed by running a de-crosslinked aliquot on Agilent Bioanalyzer. Immunoprecipitation of FLAG-tagged proteins was initiated by incubating samples overnight rotating at 4 °C with Anti-FLAG M2 Magnetic Beads (Sigma Aldrich cat. no.- M8823), following manufacturer’s instructions. Samples without undergoing immunoprecipitation served as Input control for each condition. Beads were washed twice with IP buffer and once with Tris-EDTA buffer pH 7.5. Elution was performed in 50 mM Tris–HCl pH 7.5, 10 mM EDTA, 1% SDS for 40 min at 65 °C. All Samples were finally treated with RNAse A (1 mg/ ml) for 1 hr at 37 °C, and cross-links were reversed by incubation for 2 hr at 50 °C and for 9 hr at 65 °C in elution buffer with Protease K (10 mg/ ml). Input and Immunoprecipitated DNA were subsequently purified using QIAquick PCR purification Kit and the concentration of the DNA was measured using the Qubit HS DNA kit. NEBNExt UltraTM II DNA library Prep with sample purification beads (NEB, cat. no.- E7103L) was used for the library preparation. Samples were sequenced on the Illumina HiSeq 2500 Sequencing System.
 
@@ -266,38 +660,38 @@ The single-end reads with raw read quality of Phred score ≥ 20 were mapped usi
 
 For visualisation of the peaks, the sorted bam files were converted to bigwig format with the following parameters; --binsize 100 --effectiveGenomeSize 4411532 --normalizeUsing RPGC (reads per genomic content), which were further uploaded on integrative genomics viewer (IGV) software. To prepare for the line plots for the pull-down regions, bedtools coverage (version 2.30.0) was used to make coverage using a bed file made from the sorted bam file (bamtobed option) and a custom bed file of chromosome positions with 100 base pairs intervals. From the coverage file, normalised values corresponding to every bin were obtained by dividing the total number of mapped reads for every sample (CPM normalisation). Averages of both the replicates for every sample (both pull-down and input) were calculated which were further used to calculate the Fold change using the formula: (Average CPM of Pull-down samples)/(Average CPM of Input samples). Raw data has been submitted to NCBI’s Gene Expression Omnibus (GEO, accession number- GSE242285).
 
-## Identification of consensus motifs of Rv0158 protein
+### Identification of consensus motifs of Rv0158 protein
 
 To identify consensus motifs of Rv0158, we extracted 500 nucleotide length sequences corresponding to the peaks obtained from macs2 output. The peak summit was centred in this sequence with 250 base pairs on either side. These sequences were used as input for the MEME-ChIP program Machanick and Bailey, 2011 of the MEME suite (Bailey et al., 2015). Different markov order for the background model was used in the classic mode of MEME-ChIP with maximum number of motifs as 30 and default motif length range from 6 to 15. The motif with lowest enrichment e-value was considered as the best consensus motif. The consensus motif was consistently the topper in all models used.
 
 To identify the positions of the best enriched motif and known motifs (PhoP, PrpR, RamB, GlnR) we used FIMO Grant et al., 2011 from the MEME suite (Bailey et al., 2015) with the regulatory region (–500 to +30) of the genes (the genes with significant peaks) as input. The output files were processed using in-house python and shell-based scripts to obtain the distance between the enriched motifs and known motifs.
 
-## Metabolite extraction from Mtb strains and LC-MS/MS-based analysis
+### Metabolite extraction from Mtb strains and LC-MS/MS-based analysis
 
 Metabolite isolation and Targeted analysis of Methylcitrate and TCA cycle metabolites were done as described previously (Bandyopadhyay et al., 2022; Tan et al., 2014; Tripathi et al., 2022; Walvekar et al., 2018). Briefly, Mtb strains were precultured to OD 600 nm of ≈1.0, washed with 1 X PBS, and resuspended in 7H9 supplemented with either 0.3% (w/v) D-glucose or 0.3% (w/v) sodium propionate, followed by incubation at 180 RPM in a rotary shaker incubator. Log phase cells (OD = 0.8–1.2) were quenched for 5 min in 4 volumes of 60% methanol (maintained at –45 °C in dry ice–methanol bath) and then centrifuged at 4800 g (–10 °C). The pellet was re-suspended in 700 μL of 60% methanol (maintained at –45 °C in dry ice–methanol bath) and then centrifuged at 4800 g (–10 °C). The pellet was re-suspended in 1 mL of 75% ethanol and incubated at 80 °C for 3 min with intermittent vortexing at 1.5 min intervals, immediately followed by incubation on ice for 5 min and centrifugation at 17,000 g for 15 min. The supernatant was then lyophilized on a vacuum concentrator for 3–4 h and then stored at –80 °C till further analysis.
 
 For measurement of the TCA cycle and glyoxylate cycle intermediates, metabolites were derivatized with O-benzylhydroxylamine (OBHA) as mentioned previously (Tan et al., 2014; Walvekar et al., 2018). Oxaloacetate is unstable in aqueous solutions, hence was stabilized by OBHA derivatization to prevent degradation. The metabolites were separated using Synergi 4 µm Fusion-RP 80 Å LC column (150x4.6 612 mm, Phenomenex) on Shimadzu Nexera UHPLC system. Solvents used for the separation of TCA intermediates are the following: 0.1% formic acid in water (solvent A) and 0.1% formic acid in methanol (solvent B). The metabolites were detected using ABSciex QTRAP 5500 mass spectrometer. The detailed parameters used are described in Walvekar et al., 2018. The data was acquired using Analyst 1.6.2 software (Sciex) and analyzed using MultiQuant version 3.0.1 (Sciex).
 
-## Maintenance, culturing, and infection of the macrophage cell line- RAW 264.7 with Mtb
+### Maintenance, culturing, and infection of the macrophage cell line- RAW 264.7 with Mtb
 
 The murine macrophage cell line- RAW 264.7 were acquired from ATCC (Manassas, VA) and tested negative for mycoplasma contamination by DE-MycoX Mycoplasma PCR Detection Kit (CELLclone cat. no.- GX-E-250). RAW 264.7 was grown in DMEM medium (Cell Clone) supplemented with 10% heat-inactivated (55 °C) fetal bovine serum (MP Biomedical, cat. no.- 092916754) in an incubator containing 5% CO2 at 37 °C. A total of 3×105 cells/well was seeded into a 24-well cell-culture plate. RAW macrophages were activated with IFN-γ (100 U/mL) (Peprotech; cat. No. 315–05) and E. coli lipopolysaccharide (50 ng/mL; Sigma Aldrich, cat. no.- L2630) for 16 hr. The resulting activated macrophages were infected with Mtb expressing Mrx1-roGFP2 at a multiplicity of infection (MOI) of 10 and incubated for 4 hr at 37 °C in 5% CO2. After infection, extracellular bacteria were removed by washing three times with phosphate-buffered saline (PBS; 137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, and 1.4 mM KH2PO4, pH 7.4). For CFU determination, infected cells were lysed in 7H9 medium containing 0.06% sodium dodecyl sulfate (SDS); dilutions were prepared using 7H9 medium, and aliquots were plated on 7H11+OADC agar plates. Plates were incubated at 37 °C for 3–4 weeks before counting colonies.
 
 For intra-mycobacterial EMSH determination, infected macrophages were treated with 10 mM N-ethylmaleimide (NEM; Sigma-Aldrich, cat. no.-E3876) for 5 min at room temperature, followed by fixation with 4% paraformaldehyde (PFA; Himedia, cat. no.- GRM3660) for 1 hr at room temperature. Infected macrophages were analyzed using a FACS Verse Flow cytometer (BD Biosciences). Intramycobacterial EMSH was determined using the Nernst Equation as described previously (Bhaskar et al., 2014). 10,000 events per sample were analyzed.
 
-## Animal handling, maintenance, and aerosol infection in C57BL/6J mice
+### Animal handling, maintenance, and aerosol infection in C57BL/6J mice
 
 All animal studies were executed as per guidelines prescribed by the Committee for the Purpose of Control and Supervision of Experiments on Animals, Government of India, with approval from the Institutional Animal Ethical Committee and Biosafety Level-3 Committee. 6- to 8-week-old female pathogen-free C57BL/6 J mice were infected via a low-dose aerosol exposure to the Mtb strains using a Madison chamber aerosol generation instrument. At one day post-infection, three mice were sacrificed to verify the implantation of ∼100 CFU of bacteria per mouse. Feed and water were given ad libitum. 4 mice/ group were sacrificed at 4 weeks and 8 weeks post-infection, and the lungs and spleen were harvested for measurement of bacterial burden. CFUs were determined by plating appropriate serial dilutions on 7H11 (supplemented with OADC) agar plates and counting visible colonies after 3–4 weeks of incubation at 37 °C.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism version 8.4.3 software. The mean and standard error of mean values was plotted as indicated in figure legends. A p-value of less than 0.05 was considered significant. Statistical Significance was determined by unpaired two-tailed student’s t-test; one-way ANOVA was performed where a comparison of multiple groups was made.
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to the Lead Contact: Dr. Amit Singh (asingh@iisc.ac.in).
 
-## Materials availability
+#### Materials availability
 
 This study did not generate new unique reagents. Constructs and other reagents generated in this study will be made available from the lead contact for academic/non-commercial research purposes on request without restriction under a Material Transfer Agreement.

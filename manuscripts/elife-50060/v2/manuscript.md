@@ -34,103 +34,289 @@ We sought to explain the variation in the age distribution of these cases by sub
 
 ## Materials and methods
 
-## Study cohort
+### Study cohort
 
 Cases of PCR-confirmed, medically attended influenza were identified from annual community cohorts based on residency in MESA. MESA is a contiguous geographic area surrounding Marshfield, Wisconsin, where nearly all 61,000 residents receive outpatient and inpatient care from the Marshfield Clinic Health System (Kieke et al., 2015). For each influenza season from 2007 to 2008 through 2017–2018, we identified MESA residents >6 months of age who received routine care from the Marshfield Clinic. These individuals were eligible for recruitment into that season’s VE study if they sought care for acute respiratory infection. Trained research coordinators recruited patients during clinical encounters in primary care departments, including urgent care, pediatrics, combined internal medicine and pediatrics, internal medicine, and family practice. Patients were enrolled on weekdays, evenings, and weekends when clinical services were provided. Research staff used an electronic appointment system to screen the chief complaints for respiratory or febrile illness. Patients were then approached in-person to assess eligibility based on specific respiratory symptoms and duration of illness. The proportion of patients with medically attended acute respiratory infection (MAARI) who were screened for enrollment varied by season and was largely determined by the volume of patients each day and staffing capacity. Only symptoms and illness duration were used to determine eligibility among those patients who were in the predefined cohort. Patients were also assessed for the presence of medical conditions that put them at high risk for complications from influenza infection, as defined by the Advisory Committee on Immunization Practice (Smith et al., 2006). These conditions included cardiovascular disease, diabetes, pulmonary disease, cancer, kidney disease, liver disease, blood disorders, immunosuppressive disorders, metabolic disorders, and neurological/musculoskeletal disorders. We considered subjects vaccinated if they received that season’s influenza vaccine ≥14 days before enrollment. For the 2009–2010 season, we only considered receipt of the 2009 monovalent vaccine. The Marshfield Clinic generally does not capture MAARI in nursing facilities with dedicated medical staff, causing undersampling of the oldest age groups. We adjusted for this (Appendix 1: ‘Age-specific rates of approachment, enrollment, and nursing home residence’).
 
 Each season, recruitment began when influenza activity was detected in the community and usually continued for 12–15 weeks. Symptom eligibility criteria varied by season but included fever/feverishness or cough during most seasons. We retroactively standardized symptom eligibility criteria to only require cough as a symptom. Individuals with illness duration >7 days or presenting in an inpatient (hospital) setting were excluded. After obtaining informed consent, a mid-turbinate swab was obtained for influenza detection. RT-PCR was performed using CDC primers and probes to identify influenza cases, including type and subtype.
 
-## Calculating differences in the age distribution between seasons
+### Calculating differences in the age distribution between seasons
 
 We defined the age distribution of each season as the number of cases of the dominant (more common) subtype in each of nine age groups (0–4 year-olds, 5–9 year-olds, 10–14 year-olds, 15–19 year-olds, 20–29 year-olds, 30–39 year-olds, 40–49 year-olds, 50–64 year-olds, and ≥65 years old). We excluded the subdominant subtype in each season due to concerns that short-term interference between the subtypes (Laurie et al., 2015; Goldstein et al., 2011) would affect the age distribution of the rarer subtype. The G-test of independence was used to measure differences in seasons’ age distributions.
 
-## Calculating relative risk
+### Calculating relative risk
 
-To evaluate relative infection risk in different age groups, we measured their relative risk of infection in the first versus second half of each season. This risk is a combination of the chance of infection, conditional on infection (susceptibility), and the rate of contact with infected people. Attack rates should be higher in populations that experience more risk, and therefore these populations should be infected earlier in the epidemic (Worby et al., 2015). To calculate relative risk we used an approach similar to Worby et al., 2015. We defined the midpoint of each season as the week in which the cumulative number of cases of the dominant subtype among all people exceeded half the total for that season. Weeks before and after this point were assigned to the first and second half of the season, respectively. We assigned each case to one of the five age groups used by Worby et al., 2015 (0-4 year-olds, 5–17 year-olds, 18–49 year-olds, 50–64 year olds, and ≥65 years old). For each age group g, we defined relative risk as(1)Cfirst,t,gCsecond,t,g,where Cfirst,t,g and Csecond,t,g are the fraction of cases of the dominant subtype during influenza season t that occurred during the first or second half of the season, respectively. A relative risk >1 indicates that cases in an age group were more likely to occur during the first half of the season.
+To evaluate relative infection risk in different age groups, we measured their relative risk of infection in the first versus second half of each season. This risk is a combination of the chance of infection, conditional on infection (susceptibility), and the rate of contact with infected people. Attack rates should be higher in populations that experience more risk, and therefore these populations should be infected earlier in the epidemic (Worby et al., 2015). To calculate relative risk we used an approach similar to Worby et al., 2015. We defined the midpoint of each season as the week in which the cumulative number of cases of the dominant subtype among all people exceeded half the total for that season. Weeks before and after this point were assigned to the first and second half of the season, respectively. We assigned each case to one of the five age groups used by Worby et al., 2015 (0-4 year-olds, 5–17 year-olds, 18–49 year-olds, 50–64 year olds, and ≥65 years old). For each age group $g$, we defined relative risk as
 
-## Calculating imprinting probabilities
+$$
+\frac{C_{first,t,g}}{C_{second,t,g}},
+$$
+
+where $C_{first,t,g}$ and $C_{second,t,g}$ are the fraction of cases of the dominant subtype during influenza season $t$ that occurred during the first or second half of the season, respectively. A relative risk >1 indicates that cases in an age group were more likely to occur during the first half of the season.
+
+### Calculating imprinting probabilities
 
 We hypothesized that the subtype of a person’s first influenza A infection affects their future susceptibility to that subtype. Testing this hypothesis requires knowing the probability that a person’s primary influenza A infection was with a particular subtype. To calculate these probabilities, we emulated the approach of Gostic et al., 2016, which assumes these probabilities are determined by a person’s year of birth and subsequent exposure to each subtype.
 
-First, we calculated the probability that an individual born in year y received their first influenza A exposure in influenza season t. Assuming a constant per-season rate of infection i0, the probability of infection in one season (i.e., the attack rate) is given by(2)Pr(infection in single season)=1−e−i0.
+First, we calculated the probability that an individual born in year $y$ received their first influenza A exposure in influenza season $t$. Assuming a constant per-season rate of infection $i_{0}$, the probability of infection in one season (i.e., the attack rate) is given by
 
-By assuming that the average probability that a naive individual is infected in a single season is 0.28 (Bodewes et al., 2011; Gostic et al., 2016), we calculated the expected per-season infection rate (i0) as(3)0.28=1−e−i0,i0=−ln(0.72).
+$$
+Pr(infection in single season)=1−e^{−i_{0}}.
+$$
 
-However, because the intensity of epidemics varies between seasons (It, Appendix 1: ‘Seasonal intensity’) and the fraction of the epidemic experienced by a person depends on their birth year (γy,t, Appendix 1: ‘Fraction of season experienced’), we considered the time-varying per-season infection rate,(4)iy,t=i0⁢It⁢γy,t.
+By assuming that the average probability that a naive individual is infected in a single season is 0.28 (Bodewes et al., 2011; Gostic et al., 2016), we calculated the expected per-season infection rate ($i_{0}$) as
 
-Therefore, the probability that a naive individual born in year y is infected in season t is(5)ay,t=1-e-iy,t.
+$$
+0.28=1−e^{−i_{0}},i_{0}=−ln(0.72).
+$$
 
-We used ay,t to calculate the fraction of a birth cohort y that received their first influenza A infection in season t. Let Uy,t be the fraction of people born in year y who were unexposed at the beginning of season t (Appendix 1: ‘Calculating the fraction unexposed’). The probability that a person born in year y has their first infection in season t is(6)Pr(first exposure in season t)=Pr(infected|unexposed)Pr(unexposed)=ay,tUy,t
+However, because the intensity of epidemics varies between seasons ($I_{t}$, Appendix 1: ‘Seasonal intensity’) and the fraction of the epidemic experienced by a person depends on their birth year ($\gamma_{y,t}$, Appendix 1: ‘Fraction of season experienced’), we considered the time-varying per-season infection rate,
 
-We calculated ms,t,y, the probability that a person born in year y had their first influenza A infection with subtype s in season t, by multiplying ay,t⁢Uy,t by the frequency of subtype s in season t, ls,t (Figure 3—figure supplement 1),(7)ms,t,y=ls,t⁢ay,t⁢Uy,t.
+$$
+i_{y,t}=i_{0}⁢I_{t}⁢\gamma_{y,t}.
+$$
 
-## Modeling approach
+Therefore, the probability that a naive individual born in year $y$ is infected in season $t$ is
 
-We aimed to predict ps,t,y,v, the fraction of cases of subtype s in season t among people born in year y with vaccination status v. Our models assume that this is proportional to a combination of the following factors:
+$$
+a_{y,t}=1-e^{-i_{y,t}}.
+$$
+
+We used $a_{y,t}$ to calculate the fraction of a birth cohort $y$ that received their first influenza A infection in season $t$. Let $U_{y,t}$ be the fraction of people born in year $y$ who were unexposed at the beginning of season $t$ (Appendix 1: ‘Calculating the fraction unexposed’). The probability that a person born in year $y$ has their first infection in season $t$ is
+
+$$
+Pr(first exposure in season t)=Pr(infected|unexposed)Pr(unexposed)=a_{y,t}U_{y,t}
+$$
+
+We calculated $m_{s,t,y}$, the probability that a person born in year $y$ had their first influenza A infection with subtype $s$ in season $t$, by multiplying $a_{y,t}⁢U_{y,t}$ by the frequency of subtype $s$ in season $t$, $l_{s,t}$ (Figure 3—figure supplement 1),
+
+$$
+m_{s,t,y}=l_{s,t}⁢a_{y,t}⁢U_{y,t}.
+$$
+
+### Modeling approach
+
+We aimed to predict $p_{s,t,y,v}$, the fraction of cases of subtype $s$ in season $t$ among people born in year $y$ with vaccination status $v$. Our models assume that this is proportional to a combination of the following factors:
 
 We defined models as specific combinations of the above factors. We tested a set of 10 models by pairing each of the possible implementations of HA imprinting with each implementation of VE (Figure 1). Demography, age-specific effects, and N2 imprinting were included in all these models. To test whether more complex models truly improved model fit, we also tested a simple model with constant VE and no effect of imprinting. We evaluated these 11 models by maximum likelihood and compared their performance using the corrected Akaike information criterion (cAIC, ‘Model likelihood’) and leave-one-out cross-validation.
 
-## Mathematical expressions for model components
+![Figure 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-v2.jpg)
 
-## Demography
+**Figure 1.:** Ten different models result from considering different combinations of HA imprinting and VE. We also tested one additional model excluding the effects of N2 and HA imprinting (Materials and methods: ‘Modeling approach’).
 
-We expect that the fraction of cases in each birth cohort should be proportional to the underlying demographic birth year distribution of the population. To calculate the demographic birth year distribution, we used MESA-specific data on the age distribution for each season (Kieke et al., 2015). Because people ≥90 years old were grouped into a single age class, we estimated the number of people in each age ≥90 years old by assuming a geometric decline in population with age. We converted the age distribution for each season into a distribution by birth year by assigning people of a specific age into the two possible birth years of that age (Appendix 1: ‘Birth year distribution of the study population’). Therefore,(8)ps,t,y,v∝Dt,y,where Dt,y is the fraction of the population in season t who were born in year y .
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp1-v2.jpg)
 
-## Age-specific factors
+**Figure 1—figure supplement 1.:** Flowchart of sample collection (A) and final study population stratified by season, age, test status, and vaccination status (B). ‘Test-positive’ is defined as testing positive for the dominant circulating influenza A subtype in that season.
 
-We modeled intrinsically age-specific differences in medically attended influenza A infection risk and healthcare-seeking behavior by using parameters that represent the relative risk of medically attended influenza A infection in each age group. These parameters combine the effects of underlying age-specific differences in influenza A medically attended infection risk as well as age-specific differences in healthcare-seeking behavior. We considered the same age groups as before (0–4 year-olds, 5–9 year-olds, 10–14 year-olds, 15–19 year-olds, 20–29 year-olds, 30–39 year-olds, 40–49 year-olds, 50–64 year-olds, and ≥65 years old). We chose 20–29 year-olds as our reference age group. All age groups g aside from 20 to 29 year-olds had an associated parameter (Ag) that scaled their risk of medically attended influenza A infection relative to 20–29 year-olds. These parameters can take on any positive value.
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp2-v2.jpg)
 
-Since our models describe the distribution of cases by birth year and not by age, we mapped the age-group-specific parameters (Ag) to birth cohorts in each season t (At,y). We considered that each birth cohort has two possible ages in each season (a⁢1 and a⁢2). Let G⁢(a) be a function that specifies the age group g of a given age a. Then At,y, the age-specific relative risk in season t of medically attended influenza A infection for a person born in year y, is(9)At,y=fa⁢1,t,y⁢AG⁢(a⁢1)+fa⁢2,t,y⁢AG⁢(a⁢2),where fa⁢1,t,y and fa⁢2,t,y are the fractions of birth cohort y who are age a⁢1 or a⁢2 in influenza season t (Appendix 1: ‘Fraction of birth cohort with specific age’), and AG⁢(a⁢1) and AG⁢(a⁢2) are the age-group-specific parameters for a⁢1 and a⁢2.
+**Figure 1—figure supplement 2.:** Each panel shows the population distribution of all individuals in the study area who met the age criteria for study enrollment. People under 6 months old at the start of the sampling period in a season were not eligible to participate.
 
-Our models also included age-specific approachment rates (xapproach,t,y′), enrollment rates (xenroll,t,y,v′), and nursing home enrollment (kt,y) as covariates, all of which bias the age distribution of medically attended influenza infections (Appendix 1: ‘Age-specific rates of approachment, enrollment, and nursing home residence’). The combination of estimated age-specific effects and age-specific covariates was modeled as(10)ps,t,y,v∝At,y⁢xapproach,t,y′⁢xenroll,t,y,v′⁢(1-kt,y).
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp3-v2.jpg)
 
-## HA subtype imprinting
+**Figure 1—figure supplement 3.:** We estimated monovalent vaccination coverage in 2009–2010 by measuring vaccination coverage among enrolled people and fitting a smoothing spline to the data (solid line).
 
-We considered that imprinting to HA reduces a birth cohort’s risk of future infection from the same HA subtype. Therefore,(11)ps,t,y,v∝1-hs⁢ms,t,y,where hs is the strength of HA imprinting for subtype s and ms,t,y is the imprinting probability in season t of birth cohort y to subtype s (‘Calculating imprinting probabilities’).
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp4-v2.jpg)
 
-## HA group imprinting
+**Figure 1—figure supplement 4.:** High-risk medical status (Materials and methods, ‘Study cohort’) varies with age and vaccination status but stays relatively consistent across seasons. Each plot shows the fraction of enrolled people who had a high-risk medical condition for each season stratified by age, vaccination status, and test status. High-risk medical condition data was not collected for the 2009 pandemic season.
 
-We considered that imprinting to HA reduces a birth cohort’s risk of future infection with viruses from the same HA group. Therefore,(12)pH1N1,t,y,v∝1-g1⁢(mH1N1,t,y+mH2N2,t,y),(13)pH3N2,t,y,v∝1-g2⁢mH3N2,t,y,where g1 is the strength of HA imprinting for group one viruses; g2 is the strength of HA imprinting for group two viruses; and mH1N1,t,y, mH2N2,t,y, and mH3N2,t,y are the imprinting probabilities in season t of birth cohort y to H1N1, H2N2, and H3N2.
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp5-v2.jpg)
 
-## N2 imprinting
+**Figure 1—figure supplement 5.:** Vaccinated individuals seek healthcare for MAARI at a higher rate than predicted by vaccination coverage. We measured the fraction of vaccinated people among all who presented with MAARI and tested negative for influenza ($R=\frac{Vaccinated test-negative controls}{Unvaccinated test-negative controls+Vaccinated test-negative controls}$; Materials and methods: ‘Vaccination’). This is plotted against vaccination coverage by season for different age groups. The dashed grey line shows where $R$ and vaccination coverage are equal. Vaccination coverage for the 2009–2010 season uses monovalent vaccination coverage estimated directly from all individuals with MAARI. We do not show the 2009 pandemic season because the monovalent vaccine was not distributed until the second wave of the pandemic.
 
-We considered that imprinting to N2 reduces a birth cohort’s risk of H3N2 infection. Therefore,(14)pH3N2,t,y,v∝1-nm⁢(mH3N2,t,y+mH2N2,t,y),where nm is the strength of N2 imprinting, and mH3N2,t,y and mH2N2,t,y are the imprinting probabilities of birth cohort y in season t to H3N2 and H2N2.
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp6-v2.jpg)
 
-## Vaccination
+**Figure 1—figure supplement 6.:** Each bar shows the fraction of individuals who were vaccinated in that season who also received at least one influenza vaccination in the previous two seasons.
 
-We assumed that vaccination decreases the risk of medically attended infection. However, vaccinated individuals may seek healthcare for symptomatic influenza at a different rate than unvaccinated individuals. Moreover, because vaccines are routinely recommended for individuals with underlying health conditions, pre-existing susceptibility to MAARI among vaccinated individuals may also differ from unvaccinated individuals. Let Rt,g represent the fraction of vaccinated individuals in age group g in season t that present with MAARI. We use test-negative controls to estimate this as(15)Rt,g=vt,g-ut,g-+vt,g-,where vt,g- and ut,g- are the number of vaccinated or unvaccinated individuals born in year g presenting with MAARI and testing negative for influenza in season t. We converted Rt,g to Rt,y (i.e., to a covariate indexed by birth cohort) using the same method described in ‘Age-specific factors.’ We tested five different VE schemes: subtype-specific VE that remained constant across seasons and cohorts (two parameters), subtype-specific VE that varied between the age groups described above (18 parameters), VE that varied between seasons (12 parameters), VE for each possible imprinting subtype (six parameters), and birth-cohort-specific VE (18 parameters). These VE parameters (V) reduced the probability of medically attended influenza A infection among vaccinated individuals in a birth cohort, i.e,(16)ps,t,y,vac.∝Rt,y⁢(1-V)(17)ps,t,y,unvac.∝(1-Rt,y),where V depends on the specific implementation of VE used.
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig1-figsupp7-v2.jpg)
 
-Constant VE only varies with the infecting subtype, thus(18)V=vs.
+**Figure 1—figure supplement 7.:** Most vaccinated study participants received the inactivated influenza vaccine. The fraction of vaccinated people who received the standard-dose inactivated influenza vaccine (IIV-SD), the high-dose inactivated influenza vaccine (IIV-HD), or the live attenuated influenza vaccine (LAIV) is shown for all participants (A), children < 18 years old (B), and adults ≥65 years old (C).
 
-Season-specific VE varies with subtype and season, thus(19)V=vs,t.
+### Mathematical expressions for model components
 
-For age-specific VE, we used the same age classes described above for ‘Age-specific factors’ but did not consider a reference age class, so that each age group had an associated VE for each subtype. We used these age-specific VE parameters to calculate the VE against subtype s in birth cohort y during season t using the same procedure described in ‘Age-specific factors’ (Equation 9). Therefore,(20)V=fa⁢1,t,y⁢vG⁢(a⁢1),s+fa⁢2,t,y⁢vG⁢(a⁢2),s,where vG⁢(a⁢1),s and vG⁢(a⁢2),s are age-specific VE parameters for a⁢1 and a⁢2.
+#### Demography
 
-For imprinting-specific VE, we used the imprinting probabilities for each birth cohort described in ‘Calculating imprinting probabilities’ to scale V such that(21)V=1-∏z∈{H1N1, H2N2, H3N2}(1-vs,z⁢mz,t,y),where vs,z is the VE among people imprinted to subtype z against infection by dominant subtype s, and mz,t,y is the imprinting probability for subtype z in season t for birth cohort y.
+We expect that the fraction of cases in each birth cohort should be proportional to the underlying demographic birth year distribution of the population. To calculate the demographic birth year distribution, we used MESA-specific data on the age distribution for each season (Kieke et al., 2015). Because people ≥90 years old were grouped into a single age class, we estimated the number of people in each age ≥90 years old by assuming a geometric decline in population with age. We converted the age distribution for each season into a distribution by birth year by assigning people of a specific age into the two possible birth years of that age (Appendix 1: ‘Birth year distribution of the study population’). Therefore,
 
-For birth-cohort-specific VE, we defined nine birth cohorts corresponding to the nine age groups we used for the 2017–2018 season: 1918–1952, 1953–1967, 1968–1977, 1978–1987, 1988–1997, 1998–2002, 2003–2007, 2008–2012, and 2013–2017. Let Q⁢(y) be the birth cohort of people born in year y. Then(22)V=vQ⁢(y),s,where vQ⁢(y),s is the VE among people in cohort Q⁢(y) against infection by dominant subtype s.
+$$
+p_{s,t,y,v}∝D_{t,y},
+$$
 
-## Model likelihood
+where $D_{t,y}$ is the fraction of the population in season $t$ who were born in year $y$ .
 
-Recall that our aim is to predict ps,t,y,v, the fraction of all PCR-confirmed influenza cases of dominant subtype s in influenza season t among people born in year y with vaccination status v. These fractions can also be interpreted as multinomial parameters that describe the probability that in season t, a medically attended influenza infection of subtype s occurs among people born in year y with vaccination status v. Each model M assumes that ps,t,y,v is proportional to a collection of model components j described above (demography, age, imprinting, and vaccination). Thus,(23)pM,s,t,y,v∝∏jϕM,j⁢ηj,s,t,y,v,where pM,s,t,y,v is a multinomial probability under model M, ϕM,j indicates whether model M contains component j, and ηj,s,t,y,v is the mathematical expression for model component j given s, t, y, and v (e.g., for HA subtype imprinting, ηj,s,t,y,v=1-hs⁢ms,t,y).
+#### Age-specific factors
 
-To obtain proper multinomial probabilities, we calculated a normalizing constant for each season t such that all probabilities in that season sum to 1. For convenience, let pM,s,t,y,v′=∏jϕM,j⁢ηj,s,t,y,v be the unnormalized multinomial probability for model M. Then for a specific season t, the normalized multinomial probability is(24)pM,s,t,y,v=pM,s,t,y,v′∑y′=1918ymax,tpM,s,t,y′,unvac.′+∑y′=1918ymax,tpM,s,t,y′,vac.′.where ymax,t is the maximum birth year possible for a specific season t.
+We modeled intrinsically age-specific differences in medically attended influenza A infection risk and healthcare-seeking behavior by using parameters that represent the relative risk of medically attended influenza A infection in each age group. These parameters combine the effects of underlying age-specific differences in influenza A medically attended infection risk as well as age-specific differences in healthcare-seeking behavior. We considered the same age groups as before (0–4 year-olds, 5–9 year-olds, 10–14 year-olds, 15–19 year-olds, 20–29 year-olds, 30–39 year-olds, 40–49 year-olds, 50–64 year-olds, and ≥65 years old). We chose 20–29 year-olds as our reference age group. All age groups $g$ aside from 20 to 29 year-olds had an associated parameter ($A_{g}$) that scaled their risk of medically attended influenza A infection relative to 20–29 year-olds. These parameters can take on any positive value.
 
-To calculate the likelihood of a given model, we used the multinomial probabilities and the observed birth year distribution of cases. Let ns,t,y,v be the number of PCR-confirmed cases of dominant subtype s in influenza season t among people born in year y with vaccination status v. The total number of PCR-confirmed cases of dominant subtype s in season t is(25)Ns,t=∑y=1918ymax,tns,t,y,unvac.+∑y=1918ymax,tns,t,y,vac.
+Since our models describe the distribution of cases by birth year and not by age, we mapped the age-group-specific parameters ($A_{g}$) to birth cohorts in each season $t$ ($A_{t,y}$). We considered that each birth cohort has two possible ages in each season ($a⁢1$ and $a⁢2$). Let $G⁢(a)$ be a function that specifies the age group $g$ of a given age $a$. Then $A_{t,y}$, the age-specific relative risk in season $t$ of medically attended influenza A infection for a person born in year $y$, is
+
+$$
+A_{t,y}=f_{a⁢1,t,y}⁢A_{G⁢(a⁢1)}+f_{a⁢2,t,y}⁢A_{G⁢(a⁢2)},
+$$
+
+where $f_{a⁢1,t,y}$ and $f_{a⁢2,t,y}$ are the fractions of birth cohort $y$ who are age $a⁢1$ or $a⁢2$ in influenza season $t$ (Appendix 1: ‘Fraction of birth cohort with specific age’), and $A_{G⁢(a⁢1)}$ and $A_{G⁢(a⁢2)}$ are the age-group-specific parameters for $a⁢1$ and $a⁢2$.
+
+Our models also included age-specific approachment rates ($x_{approach,t,y}^{′}$), enrollment rates ($x_{enroll,t,y,v}^{′}$), and nursing home enrollment ($k_{t,y}$) as covariates, all of which bias the age distribution of medically attended influenza infections (Appendix 1: ‘Age-specific rates of approachment, enrollment, and nursing home residence’). The combination of estimated age-specific effects and age-specific covariates was modeled as
+
+$$
+p_{s,t,y,v}∝A_{t,y}⁢x_{approach,t,y}^{′}⁢x_{enroll,t,y,v}^{′}⁢(1-k_{t,y}).
+$$
+
+#### HA subtype imprinting
+
+We considered that imprinting to HA reduces a birth cohort’s risk of future infection from the same HA subtype. Therefore,
+
+$$
+p_{s,t,y,v}∝1-h_{s}⁢m_{s,t,y},
+$$
+
+where $h_{s}$ is the strength of HA imprinting for subtype $s$ and $m_{s,t,y}$ is the imprinting probability in season $t$ of birth cohort $y$ to subtype $s$ (‘Calculating imprinting probabilities’).
+
+#### HA group imprinting
+
+We considered that imprinting to HA reduces a birth cohort’s risk of future infection with viruses from the same HA group. Therefore,
+
+$$
+p_{H1N1,t,y,v}∝1-g_{1}⁢(m_{H1N1,t,y}+m_{H2N2,t,y}),
+$$
+
+
+
+$$
+p_{H3N2,t,y,v}∝1-g_{2}⁢m_{H3N2,t,y},
+$$
+
+where $g_{1}$ is the strength of HA imprinting for group one viruses; $g_{2}$ is the strength of HA imprinting for group two viruses; and $m_{H1N1,t,y}$, $m_{H2N2,t,y}$, and $m_{H3N2,t,y}$ are the imprinting probabilities in season $t$ of birth cohort $y$ to H1N1, H2N2, and H3N2.
+
+#### N2 imprinting
+
+We considered that imprinting to N2 reduces a birth cohort’s risk of H3N2 infection. Therefore,
+
+$$
+p_{H3N2,t,y,v}∝1-n_{m}⁢(m_{H3N2,t,y}+m_{H2N2,t,y}),
+$$
+
+where $n_{m}$ is the strength of N2 imprinting, and $m_{H3N2,t,y}$ and $m_{H2N2,t,y}$ are the imprinting probabilities of birth cohort $y$ in season $t$ to H3N2 and H2N2.
+
+#### Vaccination
+
+We assumed that vaccination decreases the risk of medically attended infection. However, vaccinated individuals may seek healthcare for symptomatic influenza at a different rate than unvaccinated individuals. Moreover, because vaccines are routinely recommended for individuals with underlying health conditions, pre-existing susceptibility to MAARI among vaccinated individuals may also differ from unvaccinated individuals. Let $R_{t,g}$ represent the fraction of vaccinated individuals in age group $g$ in season $t$ that present with MAARI. We use test-negative controls to estimate this as
+
+$$
+R_{t,g}=\frac{v_{t,g}^{-}}{u_{t,g}^{-}+v_{t,g}^{-}},
+$$
+
+where $v_{t,g}^{-}$ and $u_{t,g}^{-}$ are the number of vaccinated or unvaccinated individuals born in year $g$ presenting with MAARI and testing negative for influenza in season $t$. We converted $R_{t,g}$ to $R_{t,y}$ (i.e., to a covariate indexed by birth cohort) using the same method described in ‘Age-specific factors.’ We tested five different VE schemes: subtype-specific VE that remained constant across seasons and cohorts (two parameters), subtype-specific VE that varied between the age groups described above (18 parameters), VE that varied between seasons (12 parameters), VE for each possible imprinting subtype (six parameters), and birth-cohort-specific VE (18 parameters). These VE parameters ($V$) reduced the probability of medically attended influenza A infection among vaccinated individuals in a birth cohort, i.e,
+
+$$
+p_{s,t,y,vac.}∝R_{t,y}⁢(1-V)
+$$
+
+
+
+$$
+p_{s,t,y,unvac.}∝(1-R_{t,y}),
+$$
+
+where $V$ depends on the specific implementation of VE used.
+
+Constant VE only varies with the infecting subtype, thus
+
+$$
+V=v_{s}.
+$$
+
+Season-specific VE varies with subtype and season, thus
+
+$$
+V=v_{s,t}.
+$$
+
+For age-specific VE, we used the same age classes described above for ‘Age-specific factors’ but did not consider a reference age class, so that each age group had an associated VE for each subtype. We used these age-specific VE parameters to calculate the VE against subtype $s$ in birth cohort $y$ during season $t$ using the same procedure described in ‘Age-specific factors’ (Equation 9). Therefore,
+
+$$
+V=f_{a⁢1,t,y}⁢v_{G⁢(a⁢1),s}+f_{a⁢2,t,y}⁢v_{G⁢(a⁢2),s},
+$$
+
+where $v_{G⁢(a⁢1),s}$ and $v_{G⁢(a⁢2),s}$ are age-specific VE parameters for $a⁢1$ and $a⁢2$.
+
+For imprinting-specific VE, we used the imprinting probabilities for each birth cohort described in ‘Calculating imprinting probabilities’ to scale V such that
+
+$$
+V=1-\prodz\in{H1N1, H2N2, H3N2}(1-v_{s,z}⁢m_{z,t,y}),
+$$
+
+where $v_{s,z}$ is the VE among people imprinted to subtype $z$ against infection by dominant subtype $s$, and $m_{z,t,y}$ is the imprinting probability for subtype $z$ in season $t$ for birth cohort $y$.
+
+For birth-cohort-specific VE, we defined nine birth cohorts corresponding to the nine age groups we used for the 2017–2018 season: 1918–1952, 1953–1967, 1968–1977, 1978–1987, 1988–1997, 1998–2002, 2003–2007, 2008–2012, and 2013–2017. Let $Q⁢(y)$ be the birth cohort of people born in year $y$. Then
+
+$$
+V=v_{Q⁢(y),s},
+$$
+
+where $v_{Q⁢(y),s}$ is the VE among people in cohort $Q⁢(y)$ against infection by dominant subtype $s$.
+
+### Model likelihood
+
+Recall that our aim is to predict $p_{s,t,y,v}$, the fraction of all PCR-confirmed influenza cases of dominant subtype $s$ in influenza season $t$ among people born in year $y$ with vaccination status $v$. These fractions can also be interpreted as multinomial parameters that describe the probability that in season $t$, a medically attended influenza infection of subtype $s$ occurs among people born in year $y$ with vaccination status $v$. Each model $M$ assumes that $p_{s,t,y,v}$ is proportional to a collection of model components $j$ described above (demography, age, imprinting, and vaccination). Thus,
+
+$$
+p_{M,s,t,y,v}∝\prodjϕ_{M,j}⁢η_{j,s,t,y,v},
+$$
+
+where $p_{M,s,t,y,v}$ is a multinomial probability under model $M$, $ϕ_{M,j}$ indicates whether model $M$ contains component $j$, and $η_{j,s,t,y,v}$ is the mathematical expression for model component $j$ given $s$, $t$, $y$, and $v$ (e.g., for HA subtype imprinting, $η_{j,s,t,y,v}=1-h_{s}⁢m_{s,t,y}$).
+
+To obtain proper multinomial probabilities, we calculated a normalizing constant for each season $t$ such that all probabilities in that season sum to 1. For convenience, let $p_{M,s,t,y,v}^{′}=\prod_{j}ϕ_{M,j}⁢η_{j,s,t,y,v}$ be the unnormalized multinomial probability for model $M$. Then for a specific season $t$, the normalized multinomial probability is
+
+$$
+p_{M,s,t,y,v}=\frac{p_{M,s,t,y,v}^{′}}{\sum_{y^{′}=1918}^{y_{max,t}}p_{M,s,t,y^{′},unvac.}^{′}+\sum_{y^{′}=1918}^{y_{max,t}}p_{M,s,t,y^{′},vac.}^{′}}.
+$$
+
+where $y_{max,t}$ is the maximum birth year possible for a specific season $t$.
+
+To calculate the likelihood of a given model, we used the multinomial probabilities and the observed birth year distribution of cases. Let $n_{s,t,y,v}$ be the number of PCR-confirmed cases of dominant subtype $s$ in influenza season $t$ among people born in year $y$ with vaccination status $v$. The total number of PCR-confirmed cases of dominant subtype $s$ in season $t$ is
+
+$$
+N_{s,t}=\sumy=1918y_{max,t}n_{s,t,y,unvac.}+\sumy=1918y_{max,t}n_{s,t,y,vac}.
+$$
 
 For models fitted to a restricted set of ages, we limited the cases for each season to the birth cohorts that were guaranteed to meet the age requirements in that season.
 
-Then, the likelihood of model M in season t is given by the multinomial likelihood,(26)ℒM,t=Ns,t!⁢pM,s,t,1918,unvac.ns,t,1918,unvac.⁢pM,s,t,1918,vac.ns,t,1918,vac.⁢⋯⁢pM,s,t,ymax,t,unvac.ns,t,ymax,t,unvac.⁢pM,s,t,ymax,t,vac.ns,t,ymax,t,vac.ns,t,1918,unvac.!⁢ns,t,1918,vac.!⁢⋯⁢ns,t,ymax,t,unvac.!⁢ns,t,ymax,t,vac.!,
+Then, the likelihood of model $M$ in season $t$ is given by the multinomial likelihood,
 
-Finally, the full model likelihood for model M over all observed seasons is(27)ℒM=∏t=2007-20082017-2018ℒM,t.
+$$
+ℒ_{M,t}=\frac{N_{s,t}!⁢p_{M,s,t,1918,unvac.}^{n_{s,t,1918,unvac.}}⁢p_{M,s,t,1918,vac.}^{n_{s,t,1918,vac.}}⁢⋯⁢p_{M,s,t,y_{max,t},unvac.}^{n_{s,t,y_{max,t},unvac.}}⁢p_{M,s,t,y_{max,t},vac.}^{n_{s,t,y_{max,t},vac.}}}{n_{s,t,1918,unvac.}!⁢n_{s,t,1918,vac.}!⁢⋯⁢n_{s,t,y_{max,t},unvac.}!⁢n_{s,t,y_{max,t},vac.}!},
+$$
+
+Finally, the full model likelihood for model $M$ over all observed seasons is
+
+$$
+ℒ_{M}=\prodt=2007-20082017-2018ℒ_{M,t}.
+$$
 
 We fitted the model to case data using the L-BFGS-B algorithm implemented in the R package optimx. We estimated 95% confidence intervals for parameters of the best-fitting model by evaluating likelihood profiles at 14 evenly spaced points and interpolating the entire profile using a smoothing spline.
 
 ## Results
 
-## The age distribution of cases varies between seasons and subtypes
+### The age distribution of cases varies between seasons and subtypes
 
 The age distribution of cases varies between subtypes. The relative burden of cases is consistently higher in people ≥65 years old during H3N2-dominated seasons compared to H1N1-dominated seasons (Figure 2). The age distribution tends to vary more between subtypes than within either over time (Figure 2—figure supplement 1, off-diagonal quadrants). This is consistent with recent work showing that the ratios of H3N2 to H1N1 cases differ between age groups (Gagnon et al., 2018b).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-v2.jpg)
+
+**Figure 2.:** (A) The age distributions of cases from the 2007–2008 through the 2017–2018 influenza seasons in MESA. Dark lines with open circles indicate the average fraction of cases in each age group. Lighter-colored lines show the age distribution for individual seasons. (B) The age distribution of cases in H1N1-dominated seasons. (C) The age distribution of cases in H3N2-dominated seasons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Seasons differ in their age distributions. The color intensity of each cell shows the observed G-test statistic, which measures how much the age distributions of two seasons differ from the null expectation that they are drawn from the same distribution (Materials and methods: ‘Calculating differences in the age distribution between seasons'.). The text in each cell shows the Bonferroni-corrected p-value for each G-test. The dominant subtype of each season is indicated by the label color.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A). Each point shows the rank of an age group’s relative risk of infection during the first half compared to the second half of an epidemic period (x-axis) and the rank of the fraction of cases belonging to that age group in the same epidemic period (y-axis) (Appendix 1: ‘Correlation of relative risk and fraction of cases’). Points are colored by the dominant subtype of the season and x-axis values are offset to facilitate visualization. Points with the same x and y values overlap and are indicated by darker shading. (B). To account for potential undersampling of cases at the beginning and end of specific seasons, we simulated 1000 replicate epidemics (Appendix 1 : ‘Sensitivity to sampling effort’) and calculated the same correlation as in panel A. The range is indicated by a vertical line and the median by a square.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each panel shows the relative risk of infection in the first versus the second half of an epidemic for different age groups in each season (Materials and methods: ‘Calculating relative risk’). Relative risk greater than 1 (indicated by the grey dashed line) means that an age group was more likely to be infected at during the first rather than second half of an epidemic. Age groups with no cases in the latter half of a season are indicated by asterisks and no bar. The dominant subtype of each subtype is indicated by the bar color. 95% binomial confidence intervals are indicated by grey vertical lines. Bars with asterisks over them indicate that the 95% confidence interval includes the scenario where all cases occur in the first half of the season.
 
 The age distribution also varies within subtypes over time (Figure 2—figure supplement 1, diagonal quadrants). The seven H3N2-dominated seasons display three types of age distributions (Figure 2—figure supplement 1, clusters of lighter-colored cells in the upper left-hand quadrant), and two correspond to major antigenic clusters (2007–2008, Fonville et al., 2016; 2010–2012, Ann et al., 2012). These differences sometimes coincide with significant shifts in the age distribution between seasons. For instance, the highest fraction of H3N2 cases occurs in 20–29 year olds in the 2007–2008 season, but this age group has the lowest fraction of cases in the next H3N2-dominated season (2010–2011, Figure 2C). In H1N1, the shift from seasonal to pandemic strains is associated with large changes in the age distribution (Figure 2—figure supplement 1, lower right-hand quadrant).
 
@@ -140,19 +326,63 @@ Just as the age distribution of cases varies over time, the age groups with high
 
 Taken together, these findings suggest that the risk of influenza infection is not a simple function of age alone. Other factors, such as past influenza infections and vaccination, might explain the changing age distributions of cases in time.
 
-## Imprinting probabilities of age groups change over time
+### Imprinting probabilities of age groups change over time
 
 We hypothesized that variation in the age distribution of cases could be explained by the aging of birth cohorts with similar early exposure histories. This would cause the early exposure history of an age group, and thus potentially its susceptibility, to change in time. To calculate the probability that people in a particular age group had their first influenza A infection with a particular subtype, we adapted the approach from Gostic et al., 2016. Briefly, we calculated the probability that an individual born in a specific year had a primary infection with H1N1, H2N2, or H3N2 using data on relative epidemic sizes and the frequencies of circulating subtypes (Figure 3—figure supplement 1; Materials and methods: ‘Calculating imprinting probabilities’).
 
 As expected, age groups’ early exposures are not static and change over time (Figure 3). Older people nonetheless tend to be imprinted to H1N1 or H2N2, whereas younger people have higher probabilities of imprinting to H3N2. The effects of the 2009 H1N1 pandemic are evident in the three youngest age groups as a transient increase (from 2009 to approximately 2013) in their H1N1 imprinting probability. These imprinting probabilities are relatively well-constrained even after for accounting for uncertainty in epidemic size (Figure 3—figure supplement 2; Appendix 1: ‘Sensitivity to uncertainty in ILI and the frequency of influenza A’).
 
-## Age-specific differences in medically attended influenza A infection risk affect epidemic patterns
+![Figure 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-v2.jpg)
+
+**Figure 3.:** Each panel shows the imprinting probabilities of an age group from the 2007–2008 season through the 2017–2018 season. The color of each bar corresponds to the imprinting subtype or naive individuals, who have not yet been infected.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The intensity (top panel) and subtype frequencies (bottom panel) of influenza A seasons in the United States. Intensity is measured as the product of influenza-like illness (ILI) and the fraction of respiratory specimens testing positive for influenza A in national surveillance data (Appendix 1: ‘Seasonal intensity’). This is normalized to the average intensity value between 1977 and 2017–2018. Seasons before 1977 where United States ILI surveillance data are unavailable are assumed to have an intensity score of 1 (i.e., the average score over all other seasons). Subtype frequencies were obtained from national surveillance data before the 2007–2008 season and directly from the MESA studies afterwards.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Uncertainty in ILI and the frequency of A have a small impact on imprinting probabilities. We simulated 10000 datasets to represent the range of possible epidemic sizes for seasons where we did not have data on either ILI or the frequency of influenza A (Appendix 1: ‘Sensitivity to uncertainty in ILI and the frequency of influenza A’). The vertical dashed line shows the point at which data on ILI and the frequency of influenza A are available while the vertical dotted line shows the point at which data on only the frequency of A is available. The median imprinting probabilities for those simulations is shown as a solid line with the maximum and minimum imprinting probabilities shown by the bounds of the shaded area.
+
+### Age-specific differences in medically attended influenza A infection risk affect epidemic patterns
 
 We fitted models to estimate the underlying effects of age, early infections, and vaccination on the age distributions of cases. As expected, the cases reveal age-specific differences in the risk of medically attended influenza A infection (Figure 4; Figure 4—figure supplement 1; Appendix 2—table 1). This risk is roughly threefold higher among children <4 years old compared to adults 20–29 years old, after adjusting for other effects (Figure 4). The decline in risk through middle age is generally consistent with attack rates estimated from serology (Monto et al., 1985; Bodewes et al., 2011; Wu et al., 2010; Huang et al., 2019) and clinical infections (Wu et al., 2017). We recently observed smaller differences in the attack rates of school-aged children and their parents when estimating infections serologically (Ranjeva et al., 2019). We hypothesize that the attack rates estimated from clinical infections might show larger differences by age due to age-related changes in infection severity and healthcare-seeking behavior. Indeed, rates of healthcare-seeking behavior have been shown to decline with age before rising in adults ≥65 years old (Biggerstaff et al., 2014; Brooks-Pollock et al., 2011; Van Cauteren et al., 2012), consistent with our results. Finally, the increased risk of medically attended influenza A infection among people ≥65 years old compared to other adults may be related to the increasing prevalence of high-risk medical conditions with age (Figure 1—figure supplement 4).
 
-## Initial infection confers long-lasting, subtype-specific protection against future infection
+![Figure 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig4-v2.jpg)
+
+**Figure 4.:** Open circles represent the maximum likelihood estimates of parameters describing age-specific differences in the relative risk of medically attended influenza A infection. Lines show the 95% confidence interval.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The best-fitting model includes age-specific risk of medically attended influenza A infection, HA subtype imprinting, and age-specific VE. The 11 main models are shown as rows with colored squares indicating whether that model included parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e., the CI includes 0). Models are sorted by their cAIC relative to the best-fitting model.
+
+### Initial infection confers long-lasting, subtype-specific protection against future infection
 
 Our best-fitting model supports subtype-specific imprinting for H1N1 and H3N2 (Figure 5, top row; Appendix 2—table 1). This model also provides the best predictive power compared to other models in a leave-one-out cross-validation analysis (Figure 5—figure supplement 1; Figure 5—figure supplement 2; Appendix 1: ‘Evaluation of predictive power’). The risk of future medically attended infection by H1N1 is reduced by 66% (95% CI 53–77%) in people imprinted to H1N1, whereas the risk of future medically attended infection by H3N2 is reduced by 33% (95% CI 17–46%) in people imprinted to H3N2. We found no evidence of a protective effect from imprinting to N2 (0%, 95% CI 0–7%). These estimates of imprinting protection are insensitive to:
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-v2.jpg)
+
+**Figure 5.:** Imprinting is more protective against H1N1 infection than H3N2 infection. Open circles represent the maximum likelihood estimates of imprinting parameters from the model including HA subtype imprinting and age-specific VE fitted to the indicated age group (y-axis). Black lines show 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The model which best-predicts excluded seasons includes HA subtype imprinting and age-specific VE. Models are shown as rows with colored squares indicating whether that model included parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e., the CI includes 0). Models are sorted by their MSE in predicting excluded seasons (Appendix 1: ‘Evaluation of predictive power’).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Each panel shows the number of observed and predicted cases by birth year among unvaccinated (A) and vaccinated (B) study participants. Predictions and 95% prediction intervals were generated by fitting the model including age-specific risk of medically attended influenza A infection, HA subtype imprinting, and age-specific VE fitted to all seasons except the season in the panel (Appendix 1: ‘Evaluation of predictive power’).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Each panel shows the number of cases per sampling day (green circles). We extrapolated cases at the start and end of the season (orange dashed line) if the observed number of cases per day exceeded 1 (black line) at the start and end of that season (Appendix 1: ‘Sensitivity to sampling effort’).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** We fitted the model including HA subtype imprinting and age-specific VE to simulated cases in seasons where the enrollment period does not fully overlap the epidemic period and recorded the maximum likelihood estimates for H1N1 and H3N2 imprinting protection (Appendix 1: ‘Sensitivity to sampling effort’). The distributions of these values are shown as violin plots and the medians are shown as squares. Estimates of imprinting protection from the best-fitting model without simulated data with a 95% confidence interval are shown as circles with error bars.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** We tested whether excess cases in each birth cohort were negatively correlated with excess cases in the same birth cohort in the next season of the same subtype (Appendix 1: ‘Calculating excess cases’). We find a weak positive correlation for cases of H1N1 (Spearman’s $ρ$=0.12, 95% CI 0.02–0.22) and H3N2 (Spearman’s $ρ$=0.05, 95% CI −0.03–0.14).
 
 In theory, the estimated protective effects of imprinting could be influenced by cross-protection rather than the impact of first infection per se. Because first infections are also recent infections in children, we reasoned that the observed imprinting effects might arise from confounding with recent infections in these ages. Based on an estimated 7 year half-life of homologous protection after H1N1pdm infection in children (Ranjeva et al., 2019) and the fact that most children experience primary influenza A infection by 5 years of age (Bodewes et al., 2011), we reasoned that excluding children <15 years old would diminish the impact of protection from recent infection on our results. When we excluded the youngest age groups, our estimates of H1N1 imprinting protection decreased while H3N2 imprinting protection increased (Figure 5, second row). However, initial infection by H1N1 was still more protective than initial infection by H3N2, both imprinting effects remained positive, and there was no significant change in the values of other estimated parameters (Appendix 2—table 1 and Appendix 2—table 2).
 
@@ -162,7 +392,7 @@ Since older adults have the highest probability of primary infection with H1N1, 
 
 When we exclude both the youngest and oldest age groups, initial infections by H1N1 and H3N2 have similar protective effects (Figure 5, bottom row). This shows that the combined effects of cross-protection in both the youngest and oldest individuals contribute to the signal of imprinting protection we observe, but they are not its sole drivers.
 
-## VE varies by birth cohort in older children and adults
+### VE varies by birth cohort in older children and adults
 
 The best-fitting model includes age-specific VE (Figure 4—figure supplement 1; Appendix 2—table 2). While serological responses to influenza vaccination are weakest in the young (Englund et al., 2005; Neuzil et al., 2006) and old (Lee et al., 2018; DiazGranados et al., 2014), it is unclear what age-related factors would drive variation in VE in other age groups. We hypothesized that VE in these ages varies with early exposure history, which correlates with birth year, rather than age.
 
@@ -170,7 +400,19 @@ To test this hypothesis, we fitted a model with birth-cohort-specific VE to the 
 
 VE differs between birth cohorts that have similar imprinting by subtype (Figure 6; Appendix 2—table 5). For example, the 1968–1977 and 1988–1997 cohorts have similar probabilities of primary exposure to H1N1 and H3N2, but they differ substantially in their VE to both subtypes (Figure 6). The 1988–1997 and 1998–2002 cohorts also have similar probabilities of primary exposure to each subtype and have similar H1N1 VEs, but have significantly different H3N2 VEs (Figure 6). Antigenic differences within each subtype might explain this variation.
 
-## Discrepancies partly explained by antigenic evolution
+![Figure 6.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-v2.jpg)
+
+**Figure 6.:** Birth-cohort-specific VE differs significantly between subtypes and birth cohorts. The location of each pie chart represents the H3N2 (x-axis) and H1N1 (y-axis) VE estimates for a birth cohort (indicated by text) obtained from our model fitted to people ≥15 years old. Pie charts are colored by the probability of first infection by each subtype (i.e, imprinting probability). 95% confidence intervals of the VE estimates are indicated by light grey solid lines. The dashed grey line shows the diagonal where the VE estimate for H1N1 is equal to the VE estimate for H3N2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** A model including age-specific risk of medically attended influenza A infection, HA subtype imprinting, and birth-cohort-specific VE best fits cases of people ≥15 years old. The 11 main models are shown as rows with colored squares indicating whether that model uses parameters indicated by the columns. Orange squares indicate covariates that were not estimated. Light green squares mean that a given estimated parameter was supported. Dark green squares mean that the model did not support the inclusion of the parameters indicated by the column (i.e, the CI includes 0). Models are sorted by their cAIC relative to the best-fitting model.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50060/elife-50060-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The birth-cohort-specific VE model predicts observed cases better than the age-specific VE model for people ≥15 years old. Bars show the excess cases in vaccinated individuals relative to the birth-cohort-specific VE model (dark colors) and the age-specific VE model (light colors) for age groups ≥15 years old. Colors indicate the dominant subtype of a given season. 95% prediction intervals are shown as grey error bars.
+
+### Discrepancies partly explained by antigenic evolution
 
 The best-fitting model accurately reproduces the age distributions of vaccinated and unvaccinated cases of each subtype, aggregated across seasons (Figure 7A). The only exception is that it underestimates aggregate H1N1 cases in unvaccinated 5–9 year-olds. By examining the differences between predicted and observed cases for each season, we see that this is largely driven by infection during the 2009 H1N1 pandemic (Figure 7B). Such a large antigenic change may have negated any protection from previous infection in 5–9 year-olds and made them particularly susceptible to pandemic infection.
 
@@ -198,6 +440,6 @@ Incorporating differences in susceptibility based on early exposures might impro
 
 While the rate of antigenic evolution affects the rate at which different populations become susceptible to infection, we propose that the heterogeneity in susceptibility observed here may also drive antigenic evolution. Heterogeneity in susceptibility implies that influenza viruses face different selective pressures in groups with different exposure histories (Cobey and Koelle, 2008; Nakajima et al., 2000). Recent research consistent with this hypothesis has shown that sera isolated from different individuals can select for distinct escape mutants (Lee et al., 2019). More careful study of how immune memory to influenza evolves from infection and vaccination might improve understanding of influenza’s evolution.
 
-## Code and data availability
+### Code and data availability
 
 The code and data used to perform the analyses for this project are available at https://github.com/cobeylab/FluAImprinting (Arevalo et al., 2019; copy archived at https://github.com/elifesciences-publications/FluAImprinting).

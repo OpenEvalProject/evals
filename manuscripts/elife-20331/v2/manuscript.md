@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.20331.001 While 20–30% of colorectal cancers (CRCs) may arise from precursors with serrated glands, only 8–10% of CRCs manifest serrated morphology at diagnosis. Markers for distinguishing CRCs arising from ‘serrated’ versus ‘conventional adenoma’ precursors are lacking. We studied 36 human serrated CRCs and found CDX2 loss or BRAF mutations in ~60% of cases and often together (p = 0.04). CDX2 Null /BRAF V600E expression in adult mouse intestinal epithelium led to serrated morphology tumors (including carcinomas) and BRAF V600E potently interacted with CDX2 silencing to alter gene expression. Like human serrated lesions, CDX2 Null /BRAF V600E -mutant epithelium expressed gastric markers. Organoids from CDX2 Null /BRAF V600E –mutant colon epithelium showed serrated features, and partially recapitulated the gene expression pattern in mouse colon tissues. We present a novel mouse tumor model based on signature defects seen in many human serrated CRCs – CDX2 loss and BRAF V600E . The mouse intestinal tumors show significant phenotypic similarities to human serrated CRCs and inform about serrated CRC pathogenesis. DOI: http://dx.doi.org/10.7554/eLife.20331.001
+While 20–30% of colorectal cancers (CRCs) may arise from precursors with serrated glands, only 8–10% of CRCs manifest serrated morphology at diagnosis. Markers for distinguishing CRCs arising from ‘serrated’ versus ‘conventional adenoma’ precursors are lacking. We studied 36 human serrated CRCs and found CDX2 loss or BRAF mutations in ~60% of cases and often together (p=0.04). CDX2Null/BRAFV600E expression in adult mouse intestinal epithelium led to serrated morphology tumors (including carcinomas) and BRAFV600E potently interacted with CDX2 silencing to alter gene expression. Like human serrated lesions, CDX2Null/BRAFV600E-mutant epithelium expressed gastric markers. Organoids from CDX2Null/BRAFV600E–mutant colon epithelium showed serrated features, and partially recapitulated the gene expression pattern in mouse colon tissues. We present a novel mouse tumor model based on signature defects seen in many human serrated CRCs – CDX2 loss and BRAFV600E. The mouse intestinal tumors show significant phenotypic similarities to human serrated CRCs and inform about serrated CRC pathogenesis.
 
 ## Introduction
 
@@ -51,101 +51,690 @@ Although up to 20–30% of CRCs have been estimated to arise from benign serrate
 
 ## Results
 
-## Loss of CDX2 expression and BRAF mutation are common and co-existing defects in human serrated morphology CRCs
+### Loss of CDX2 expression and BRAF mutation are common and co-existing defects in human serrated morphology CRCs
 
-We selected 36 CRCs meeting defined histopathological criteria for the diagnosis of serrated adenocarcinoma (
+We selected 36 CRCs meeting defined histopathological criteria for the diagnosis of serrated adenocarcinoma (Jass and Smith, 1992; Mäkinen et al., 2001; Tuppurainen et al., 2005), with representative images of serrated morphology CRCs studied shown in Figure 1—figure supplement 1. We carried out analyses of selected molecular alterations in the 36 CRCs, focusing on the following: (i) DNA sequence-based determination of KRAS codons 12, 13, and 61 and BRAFT1799A(encoding BRAFV600E) missense mutations; (ii) DNA-based analyses of MSI-H and CIMP-H status; (iii) immunohistochemical (IHC) studies of β-catenin, p53, MLH1, p16INK4A, and CDX2 to inform about the expression and functional status of selected TSG pathways and proteins; and (iv) IHC studies of annexin A10 (ANXA10) and MUC5AC to inform about aberrant gastric epithelial marker expression. We found loss or marked reduction of CDX2 expression in 21 (58%) tumors (Figure 1). Representative staining patterns for CDX2 and other selected proteins and pathways under study are shown in Figure 1—figure supplement 2. Frequent alterations in the 36 CRCs included strong nuclear staining for p53 protein in neoplastic cells in 21 (58%) of cases, consistent with expression of a missense mutant p53 protein, and BRAFT1799A missense mutation encoding BRAFV600E protein in 20 (56%) cases (Figure 1). Other changes seen included strong nuclear β-catenin staining, reflecting potential Wnt pathway mutations, in 19 (53%) cases; p16INK4a expression loss in 18 (50%) cases; the CIMP-H phenotype in 12 (33%) cases, with 8 of these 12 cases having lost p16INK4A expression; the MSI-H phenotype in 5 (14%) cases; MLH1 expression loss in 4 (11%) cases, all of which were MSI-H cases; and KRAS codon 12 or 13 mutation in 7 (19%) cases, all of which lacked BRAFT1799A mutations (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig1-v2.jpg)
 
-**Figure 1.:** Each square represents the results for IHCs and molecular phenotypic features in individual serrated adenocarcinoma cases.DOI: http://dx.doi.org/10.7554/eLife.20331.00210.7554/eLife.20331.003Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20331.003
+**Figure 1.:** Each square represents the results for IHCs and molecular phenotypic features in individual serrated adenocarcinoma cases.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** All of these cases have (i) well to moderately differentiated glands in which the epithelium has a serrated appearance, (ii) eosinophilic cytoplasm, (iii) vesicular nuclei with basal location at least. Serrated CRCs with mucinous and trabecular patterns showed such components occupying more than 50% of the tumor region and retained serrated cytology. Some cases showed dirty necrosis, but only rarely, and may also possess small areas of mucinous differentiation. Scale bars, 100 μm for low magnification; 50 μm for high magnification.DOI: http://dx.doi.org/10.7554/eLife.20331.004
+**Figure 1—figure supplement 1.:** All of these cases have (i) well to moderately differentiated glands in which the epithelium has a serrated appearance, (ii) eosinophilic cytoplasm, (iii) vesicular nuclei with basal location at least. Serrated CRCs with mucinous and trabecular patterns showed such components occupying more than 50% of the tumor region and retained serrated cytology. Some cases showed dirty necrosis, but only rarely, and may also possess small areas of mucinous differentiation. Scale bars, 100 μm for low magnification; 50 μm for high magnification.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** The CDX2-negative SAC case showed membranous staining of β-catenin at invasive front, robust Annexin A10 and MUC5AC expression, but was negative for p16 expression. Conversely, the CDX2-positive SAC case showed nuclear staining of β-catenin at the invasive front, no Annexin A10 or MUC5AC expression, but was positive for p16 expression. Scale bars, 100 μm.DOI: http://dx.doi.org/10.7554/eLife.20331.005
+**Figure 1—figure supplement 2.:** The CDX2-negative SAC case showed membranous staining of β-catenin at invasive front, robust Annexin A10 and MUC5AC expression, but was negative for p16 expression. Conversely, the CDX2-positive SAC case showed nuclear staining of β-catenin at the invasive front, no Annexin A10 or MUC5AC expression, but was positive for p16 expression. Scale bars, 100 μm.
 
-Because CDX2 loss/reduction was seen in 21 of the 36 (58%) CRCs and BRAF mutations were seen in 20 (56%) of cases, we sought to determine how CDX2 loss/reduction and BRAF mutations might be associated with specific clinical, pathological, or molecular features. We did not observe any statistically significant correlations between CDX2 loss/reduction or BRAFT1799A mutation and patient age, tumor location, or selected tumor histological features, other than the absence of ‘dirty necrosis’ was associated with BRAF mutations (p=0.03) (Figure 1—source data 1). However, we did find that CDX2 loss/reduction and BRAF mutations were seen concurrently in 15 (42%) cases (p=0.04) (Table 1 and Figure 1). Besides BRAF mutations, other features more commonly seen in CDX2-negative tumors were CIMP-H status (p=0.04); membranous staining for β-catenin throughout the tumor, including the invasive front, likely reflecting wild type status for Wnt pathway genes (e.g, APC and CTNNB1, encoding β-catenin) (p=0.05); and retention of p16INK4A expression (p=0.04) (Table 1 and Figure 1). BRAF mutations in these cases were associated with membranous staining for β-catenin (p=0.003), CIMP-H status (p=0.004), and ANXA10 expression (p<0.0001) (Table 1 and Figure 1). Interestingly, all 7 KRAS-mutant CRCs were CDX2-positive and lacked ANXA10 or MUC5AC expression, except for MUC5AC expression in one KRAS-mutant case (Figure 1).10.7554/eLife.20331.006Table 1.Immunohistochemistry and molecular features of 36 human serrated morphology CRCs.DOI: http://dx.doi.org/10.7554/eLife.20331.006CDX2 (+)CDX2 (-)*p valueBRAF mutBRAF wt*p valueImmunohistochemistry MUC5AC(+)2150.00081160.335MUC5AC(-)136910MUC6(+)060.031610.104MUC6(-)15151415MUC2(+)9170.26013130.456MUC2(-)6473MLH1 retained14180.62616160.113MLH1 loss1340MSH2 retained15212016MSH2 loss0000β-catenin membranous4130.0491430.003β-catenin nucleus118613p53 mut8130.7361560.052p53 wt78510p16 retained1170.0417110.092p16 loss414135Annexin A10 (+)6180.0102041.4 × 10−6 Annexin A10 (-)93012Molecular features MSI140.376410.355MSS14171615CIMP phenotype (+)2100.0401110.004CIMP phenotype (-)1311915Total15212016*p values are from Fisher’s exact test.
+Because CDX2 loss/reduction was seen in 21 of the 36 (58%) CRCs and BRAF mutations were seen in 20 (56%) of cases, we sought to determine how CDX2 loss/reduction and BRAF mutations might be associated with specific clinical, pathological, or molecular features. We did not observe any statistically significant correlations between CDX2 loss/reduction or BRAFT1799A mutation and patient age, tumor location, or selected tumor histological features, other than the absence of ‘dirty necrosis’ was associated with BRAF mutations (p=0.03) (Figure 1—source data 1). However, we did find that CDX2 loss/reduction and BRAF mutations were seen concurrently in 15 (42%) cases (p=0.04) (Table 1 and Figure 1). Besides BRAF mutations, other features more commonly seen in CDX2-negative tumors were CIMP-H status (p=0.04); membranous staining for β-catenin throughout the tumor, including the invasive front, likely reflecting wild type status for Wnt pathway genes (e.g, APC and CTNNB1, encoding β-catenin) (p=0.05); and retention of p16INK4A expression (p=0.04) (Table 1 and Figure 1). BRAF mutations in these cases were associated with membranous staining for β-catenin (p=0.003), CIMP-H status (p=0.004), and ANXA10 expression (p<0.0001) (Table 1 and Figure 1). Interestingly, all 7 KRAS-mutant CRCs were CDX2-positive and lacked ANXA10 or MUC5AC expression, except for MUC5AC expression in one KRAS-mutant case (Figure 1).
 
-## Combined Cdx2 inactivation and BRAFV600E expression in mouse intestinal epithelium promotes serrated benign and invasive tumors
+**Table 1.**
+ Immunohistochemistry and molecular features of 36 human serrated morphology CRCs.
 
-Because the human serrated morphology CRCs frequently showed marked reduction or loss of CDX2 expression and
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CDX2 (+)</th>
+      <th>CDX2 (-)</th>
+      <th>*p value</th>
+      <th>BRAF mut</th>
+      <th>BRAF wt</th>
+      <th>*p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Immunohistochemistry</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MUC5AC(+)</td>
+      <td>2</td>
+      <td>15</td>
+      <td>0.0008</td>
+      <td>11</td>
+      <td>6</td>
+      <td>0.335</td>
+    </tr>
+    <tr>
+      <td>MUC5AC(-)</td>
+      <td>13</td>
+      <td>6</td>
+      <td></td>
+      <td>9</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MUC6(+)</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0.031</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <td>MUC6(-)</td>
+      <td>15</td>
+      <td>15</td>
+      <td></td>
+      <td>14</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MUC2(+)</td>
+      <td>9</td>
+      <td>17</td>
+      <td>0.260</td>
+      <td>13</td>
+      <td>13</td>
+      <td>0.456</td>
+    </tr>
+    <tr>
+      <td>MUC2(-)</td>
+      <td>6</td>
+      <td>4</td>
+      <td></td>
+      <td>7</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MLH1 retained</td>
+      <td>14</td>
+      <td>18</td>
+      <td>0.626</td>
+      <td>16</td>
+      <td>16</td>
+      <td>0.113</td>
+    </tr>
+    <tr>
+      <td>MLH1 loss</td>
+      <td>1</td>
+      <td>3</td>
+      <td></td>
+      <td>4</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MSH2 retained</td>
+      <td>15</td>
+      <td>21</td>
+      <td></td>
+      <td>20</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MSH2 loss</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>β-catenin membranous</td>
+      <td>4</td>
+      <td>13</td>
+      <td>0.049</td>
+      <td>14</td>
+      <td>3</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>β-catenin nucleus</td>
+      <td>11</td>
+      <td>8</td>
+      <td></td>
+      <td>6</td>
+      <td>13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p53 mut</td>
+      <td>8</td>
+      <td>13</td>
+      <td>0.736</td>
+      <td>15</td>
+      <td>6</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>p53 wt</td>
+      <td>7</td>
+      <td>8</td>
+      <td></td>
+      <td>5</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>p16 retained</td>
+      <td>11</td>
+      <td>7</td>
+      <td>0.041</td>
+      <td>7</td>
+      <td>11</td>
+      <td>0.092</td>
+    </tr>
+    <tr>
+      <td>p16 loss</td>
+      <td>4</td>
+      <td>14</td>
+      <td></td>
+      <td>13</td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Annexin A10 (+)</td>
+      <td>6</td>
+      <td>18</td>
+      <td>0.010</td>
+      <td>20</td>
+      <td>4</td>
+      <td>1.4 × 10−6</td>
+    </tr>
+    <tr>
+      <td>Annexin A10 (-)</td>
+      <td>9</td>
+      <td>3</td>
+      <td></td>
+      <td>0</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molecular features</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MSI</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0.376</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0.355</td>
+    </tr>
+    <tr>
+      <td>MSS</td>
+      <td>14</td>
+      <td>17</td>
+      <td></td>
+      <td>16</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CIMP phenotype (+)</td>
+      <td>2</td>
+      <td>10</td>
+      <td>0.040</td>
+      <td>11</td>
+      <td>1</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>CIMP phenotype (-)</td>
+      <td>13</td>
+      <td>11</td>
+      <td></td>
+      <td>9</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>15</td>
+      <td>21</td>
+      <td></td>
+      <td>20</td>
+      <td>16</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*p values are from Fisher’s exact test._
+
+### Combined Cdx2 inactivation and BRAFV600E expression in mouse intestinal epithelium promotes serrated benign and invasive tumors
+
+Because the human serrated morphology CRCs frequently showed marked reduction or loss of CDX2 expression and BRAFT1799A mutations, we sought to address consequences of conditionally inactivating Cdx2 or expressing the BRAFV600E oncoprotein kinase in mouse adult intestinal epithelium, as well as concurrent alterations of both Cdx2 and BRAFV600E. We previously described CDX2P-CreERT2 transgenic mice, expressing a tamoxifen (TAM)-regulated Cre protein (CreERT2) under control of human CDX2 regulatory sequences (Feng et al., 2013). The transgene allows for TAM-inducible targeting of loxP-containing alleles in adult mouse terminal ileum, cecum, colon, and rectal epithelium. The median survival of CDX2P-CreERT2 Cdx2fl/fl mice treated with TAM to activate Cre function and inactivate both Cdx2fl alleles (Blij et al., 2012) in colon epithelium was greater than 480 days (Figure 2A). We also used the CDX2P-CreERT2 transgene to activate a conditionally oncogenic Braf allele (BrafCA), which expresses normal BRAF until subjected to Cre-mediated recombination, resulting in expression of a mouse-human hybrid V600E oncogenic protein under the control of Braf endogenous regulatory elements (Dankort et al., 2007). Regardless of the species of origin, we refer to this mutationally activated form of BRAF as BRAFV600E and the BrafCA allele after Cre-mediated recombination as BrafV600E for the sake of clarity. The median survival of CDX2P-CreERT2 BrafCA mice was greater than 480 days after TAM treatment (Figure 2A). In marked contrast, the median survival of CDX2P-CreERT2 Cdx2fl/fl BrafCA mice was 103 days after TAM treatment to concurrently target the Cdx2fl/fl and BrafCA alleles (Figure 2A). The median survival of mice with simultaneous targeting of one Apcfl allele together with Cdx2fl and BrafCA alleles was 158 days, indicating that inactivation of one Apc allele did not enhance tumor aggressiveness compared to the phenotype seen in CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig2-v2.jpg)
 
-**Figure 2.:** CDX2P-CreER Cdx2T2 mice.fl/fl BrafCA(A) Kaplan-Meier curves of CDX2P-CreER (T2 Cdx2fl/fl BrafCACdx2, n = 7), -/- BrafV600ECDX2P-CreER (T2 Apcfl/+Cdx2fl/fl BrafCAApc, n = 5), +/- Cdx2-/- BrafV600ECDX2P-CreER Cdx2T2 (fl/flCdx2, n = 6), and -/-CDX2P-CreER (T2 BrafCABraf, n = 5) mice, after two daily doses of TAM (150 mg/kg). p<0.002 when comparing V600ECdx2 to -/- or BrafV600ECdx2 or -/- BrafV600EApc by log-rank test; p=0.158 when comparing +/- Cdx2-/- BrafV600ECdx2 to -/- BrafV600EApc by log-rank test. (+/- Cdx2-/- BrafV600EB) Macroscopic image of the tumors at the proximal colon-cecum-ileum junction of CDX2P-CreER Cdx2T2 mice. Left: protuberant tumor (T1) located at the proximal colon-cecum-ileum junction; Right: polypoid lesions (T2) that occupied at the entire terminal ileum to cecum region. # indicates the proximal colon; fl/fl BrafCAindicates the ileum. Scale bar, 10 mm (C) Histological features of the proximal colon-cecum-ileum junction tumor of CDX2P-CreERCdx2T2 mice. Two major components were found in the tumor: serrated region (upper right) and mucin-rich region (lower left). Scale bars, 200 μm for low magnification image (left); 50 μm for high magnification images (right). (fl/fl BrafCAD) Serrated region showing invasion into submucosa. Dashed-line highlights muscular mucosa. Scale bar, 100 μm. See also Figure 2—source data 1 for panel A.DOI: http://dx.doi.org/10.7554/eLife.20331.00710.7554/eLife.20331.008Figure 2—source data 1.Figure 2A.DOI: http://dx.doi.org/10.7554/eLife.20331.00810.7554/eLife.20331.009Figure 2—source data 2.CDX2-CreER mice post TAM Injection.T2 Cdx2fl/fl BrafCADOI: http://dx.doi.org/10.7554/eLife.20331.009
+**Figure 2.:** (A) Kaplan-Meier curves of CDX2P-CreERT2 Cdx2fl/fl BrafCA (Cdx2-/- BrafV600E, n = 7), CDX2P-CreERT2 Apcfl/+Cdx2fl/fl BrafCA (Apc+/- Cdx2-/- BrafV600E, n = 5), CDX2P-CreERT2 Cdx2fl/fl (Cdx2-/-, n = 6), and CDX2P-CreERT2 BrafCA (BrafV600E, n = 5) mice, after two daily doses of TAM (150 mg/kg). p<0.002 when comparing Cdx2-/- or BrafV600E to Cdx2-/- BrafV600E or Apc+/- Cdx2-/- BrafV600E by log-rank test; p=0.158 when comparing Cdx2-/- BrafV600E to Apc+/- Cdx2-/- BrafV600E by log-rank test. (B) Macroscopic image of the tumors at the proximal colon-cecum-ileum junction of CDX2P-CreERT2 Cdx2fl/fl BrafCA mice. Left: protuberant tumor (T1) located at the proximal colon-cecum-ileum junction; Right: polypoid lesions (T2) that occupied at the entire terminal ileum to cecum region. # indicates the proximal colon; indicates the ileum. Scale bar, 10 mm (C) Histological features of the proximal colon-cecum-ileum junction tumor of CDX2P-CreERT2Cdx2fl/fl BrafCA mice. Two major components were found in the tumor: serrated region (upper right) and mucin-rich region (lower left). Scale bars, 200 μm for low magnification image (left); 50 μm for high magnification images (right). (D) Serrated region showing invasion into submucosa. Dashed-line highlights muscular mucosa. Scale bar, 100 μm. See also Figure 2—source data 1 for panel A.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Cdx2 inactivation and Braf mutation in mouse intestinal epithelium promotes the formation of tumors with serrated morphology.V600EH and E staining of proximal colon tissues from a wild-type mouse (A), a CDX2P-CreER mouse (T2 BrafCAB) and a CDX2P-CreERmouse (T2 Cdx2fl/fl C) after TAM injection. Scale bars, 100 μm. (D) Genotyping of Braf and Cdx2 in serrated-region and mucin-rich region in the tumor of CDX2-CreER mutant mice using DNA samples obtained by Laser capture microdissection. Only serrated-region had T2 Cdx2fl/fl BrafCABrafmutation and both regions had V600E Cdx2 loss. (E) Representative H and E (left panels) and immunohistochemical staining for β-catenin (right panels) in a CDX2P-CreER mouse 143 days after two daily doses of TAM (upper panels) or a T2Cdx2fl/fl BrafCACDX2P-CreER mouse 114 days after two daily doses of TAM (lower panels). Scale bars, 100 μm.T2 Apcfl/+Cdx2fl/fl BrafCADOI: http://dx.doi.org/10.7554/eLife.20331.010
+**Figure 2—figure supplement 1.:** H and E staining of proximal colon tissues from a wild-type mouse (A), a CDX2P-CreERT2 BrafCA mouse (B) and a CDX2P-CreERT2 Cdx2fl/fl mouse (C) after TAM injection. Scale bars, 100 μm. (D) Genotyping of Braf and Cdx2 in serrated-region and mucin-rich region in the tumor of CDX2-CreERT2 Cdx2fl/fl BrafCA mutant mice using DNA samples obtained by Laser capture microdissection. Only serrated-region had BrafV600E mutation and both regions had Cdx2 loss. (E) Representative H and E (left panels) and immunohistochemical staining for β-catenin (right panels) in a CDX2P-CreERT2Cdx2fl/fl BrafCA mouse 143 days after two daily doses of TAM (upper panels) or a CDX2P-CreERT2 Apcfl/+Cdx2fl/fl BrafCA mouse 114 days after two daily doses of TAM (lower panels). Scale bars, 100 μm.
 
 In CDX2P-CreERT2 BrafCA mice treated with TAM, we observed marked hyperplasia in more than 90% of crypts in the terminal ileum, cecum, and proximal colon (Figure 2—figure supplement 1B). The intestinal epithelium in CDX2P-CreERT2 Cdxfl/fl mice treated with TAM showed marked hyperplastic changes and irregular bifurcation of the crypts, but no dysplastic features (Figure 2—figure supplement 1C). When the TAM-treated CDX2P-CreERT2 Cdx2fl/fl BrafCA mice were moribund, all of the mice had at least one large protuberant tumor (>10 mm) or multiple polypoid lesions at the proximal colon-ileal-cecal junction and each mouse had 2–6 independent tumor lesions with size >2 mm (Figure 2B and Figure 2—source data 2). All the tumors arising in CDX2P-CreERT2 Cdx2fl/fl BrafCA mice showed both serrated and mucin-rich histological components (Figure 2C). The serrated components had a distinct serrated architecture with irregular bifurcation of the glands, and the cells in these glands have eosinophilic and abundant cytoplasm, and vesicular nuclei with prominent nucleoli (Figure 2C). These characteristics closely resemble features of human serrated morphology CRCs. In the mucin-rich components, the glands were tubular or cystic, and lined by bland cuboidal and columnar cells containing abundant mucin (Figure 2C). Using DNA samples isolated from the serrated or mucin-rich regions by laser-capture microdissection, we found the mucin-rich components had only inactivated both Cdx2fl alleles, whereas the serrated histology epithelium had both Cdx2fl alleles and the BrafCA allele targeted (Figure 2—figure supplement 1D). In the seven TAM-treated CDX2P-CreERT2 Cdx2fl/fl BrafCA mice studied, from 17–50% of the tumor lesions showed evidence that the serrated glands had invaded into the submucosa, indicative of carcinoma (Figure 2D and Figure 2—source data 2). Stochastic inactivation of the remaining wild type Apc allele in the setting of Apc hemizygous state in intestinal epithelium could potentially be seen as progression event in tumors initiated by other genetic drivers, such as in the setting of Cdx2 biallelic inactivation and BRAFV600E activation. We found that combined TAM-mediated targeting of an Apcflallele together with the Cdx2fl and BrafCA alleles in CDX2P-CreERT2 Cdx2fl/fl BrafCA Apcfl/+ mice did not alter the histology of the tumor lesions compared to those arising in CDX2P-CreERT2 Cdx2fl/fl BrafCAmice with intact Apc alleles (Figure 2—figure supplement 1E). Furthermore, we saw no apparent selection for loss of the remaining wild type Apc allele in tumors arising in CDX2P-CreERT2 Cdx2fl/fl BrafCAApcfl/+ mice, as no β-catenin nuclear or cytoplasmic staining was seen in the CDX2P-CreERT2 Cdx2fl/fl BrafCA Apcfl/+ mouse tumor tissues studied (Figure 2—figure supplement 1E). Our findings indicate concurrent Cdx2 silencing combined with BRAFV600E expression in mouse intestinal epithelium leads to premature death of the mice, due to the development of intestinal tumors, including carcinomas, and the tumors recapitulate histological features of human serrated morphology CRCs.
 
-## Molecular analyses of Cdx2−/− and BRAFV600E–expressing mouse serrated tumors
+### Molecular analyses of Cdx2−/− and BRAFV600E–expressing mouse serrated tumors
 
-Akin to the situation in human serrated morphology CRCs with CDX2 loss and
+Akin to the situation in human serrated morphology CRCs with CDX2 loss and BRAFT1799A mutations (Figure 1), ANXA10 expression was seen in the serrated components of the tumors arising in the TAM-treated CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 3A). ANXA10 expression was not seen in any of the mucin-rich tumor components, where only Cdx2 inactivation was present and BRAFV600E expression was absent (Figure 3A). The BRAF protein functions as an upstream activator of mitogen-activated protein kinase (MAPK) signaling, and similar to ANXA10 expression, phospho-ERK expression, indicating MAPK activation, was detected only in the serrated components of tumors (Figure 3A). Similar to the infrequent nuclear or cytoplasmic β-catenin staining and strong MUC5AC expression seen in most CDX2-defective and BRAFV600E-mutant human serrated CRCs (Figure 1), we found membranous β-catenin staining, strong MUC5AC expression, and bromo-deoxyuridine (BrdU) incorporation (indicating DNA synthesis) in the serrated components of the tumors in the CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 3B). No evidence for p53 nuclear protein accumulation was seen in the serrated and/or invasive components (Figure 3B). Consistent with a previous study showing that EGFR activation was found in majority of CRC cell lines harboring BRAFV600E mutation (Prahallad et al., 2012), the tumors arising in the TAM-treated CDX2P-CreERT2 Cdx2fl/fl BrafCAmice showed significant higher levels of phospho-EGFR expression, compared to very low level of phospho-EGFR in Cdx2−/−-mutant, BrafV600E-mutant, or normal control mouse cecal epithelium (Figure 4). All tumors from 5 CDX2P-CreERT2 Cdx2fl/fl BrafCAmice were MSS, and we did not detect significant methylation at the p16Ink4a promoter in the tumors (Figure 3—figure supplement 1). Overall, the findings suggest concurrent CDX2 and BRAFV600E defects are key instigating lesions in development of the serrated mouse tumors.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig3-v2.jpg)
 
-**Figure 3.:** CDX2P-CreERmice.T2 Cdx2fl/fl BrafCA (A) Annexin A10 (left) and phospho-ERK (right) expression in serrated region (upper) and mucin-rich region (lower). Scale bars, 100 μm. (B) H and E (upper left) and IHC staining for CDX2 (upper middle), β-catenin (upper right), BrdU (lower left), p53 (lower middle) and MUC5AC (lower right) at the invasive region of the tumor. Scale bars, 50 μm.DOI: http://dx.doi.org/10.7554/eLife.20331.011
+**Figure 3.:** (A) Annexin A10 (left) and phospho-ERK (right) expression in serrated region (upper) and mucin-rich region (lower). Scale bars, 100 μm. (B) H and E (upper left) and IHC staining for CDX2 (upper middle), β-catenin (upper right), BrdU (lower left), p53 (lower middle) and MUC5AC (lower right) at the invasive region of the tumor. Scale bars, 50 μm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** CDX2P-CreER mice were MSS, and did not show significant methylation at the T2 Cdx2fl/fl BrafCAp16 promoter.Ink4a(A) Microsatellite analysis of a tumor from a CDX2P-CreER mouse and normal colon tissue was done using five microsatellite repeat markers previously shown to be informative in tumors from DNA mismatch repair–deficient mice. Tumors were scored as MSI if 2 of 5 markers showed instability. (T2 Cdx2fl/fl BrafCAB) Promoter region and coding region (boxed) for p16 gene were shown in the upper diagram. The 16 CpG dinucleotides are indicated. Genomic DNA from five tumors (T1 to T5) in Ink4aCDX2P-CreER mice and five normal colon tissues (N1 to N5) were treated with sodium bisulfite. Subsequent PCRs were then performed at the T2 Cdx2fl/fl BrafCAp16 promoter. Amplified DNA fragments were cloned using the TA Cloning Kit. At least 10 clones were then randomly selected and sequenced for each samples. Solid circles are methylated CpG sites with empty circles showing no methylation.Ink4aDOI: http://dx.doi.org/10.7554/eLife.20331.012
+**Figure 3—figure supplement 1.:** (A) Microsatellite analysis of a tumor from a CDX2P-CreERT2 Cdx2fl/fl BrafCA mouse and normal colon tissue was done using five microsatellite repeat markers previously shown to be informative in tumors from DNA mismatch repair–deficient mice. Tumors were scored as MSI if 2 of 5 markers showed instability. (B) Promoter region and coding region (boxed) for p16Ink4a gene were shown in the upper diagram. The 16 CpG dinucleotides are indicated. Genomic DNA from five tumors (T1 to T5) in CDX2P-CreERT2 Cdx2fl/fl BrafCA mice and five normal colon tissues (N1 to N5) were treated with sodium bisulfite. Subsequent PCRs were then performed at the p16Ink4a promoter. Amplified DNA fragments were cloned using the TA Cloning Kit. At least 10 clones were then randomly selected and sequenced for each samples. Solid circles are methylated CpG sites with empty circles showing no methylation.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** RNAs were collected from wild-type (Control), CDX2P-CreER Cdx2T2 (fl/flCdx2), KOCDX2P-CreER (T2 BrafCABraf), VECDX2P-CreER (T2 Cdx2fl/fl BrafCACdx2), and KOBrafVECDX2P-CreER(T2 Apcfl/flApc) mice after TAM injection. (KOA) Expression of intestinal stem cell markers: Olfm4, Lgr5, Msi1, Cd133, Lrig, Hopx, Nkd1 and Bmi1. (B) Expression of Wnt target genes: Cd44, Axin2, Mmp7, EphB2, cMyc and Sox9. (C) Expression of differentiation markers: Muc2, Muc5ac, Anxa10 and Pdx1. Gene expression was assessed by qRT-PCR, with normalization to β-actin expression. RNAs were collected from three mice per group. We fit a one-way ANOVA model with terms for the means of five groups to log-transformed gene expression data, and test differences in means for pairs of groups as well as Braf by Cdx2 interactions by testing if the average difference (of log-transformed data) between Cdx2KO BrafVE samples and BrafVE samples was larger or smaller than the difference between Cdx2KO and control samples, and called the anti-logarithm of this difference-of-differences the ratio of ratios. See also Figure 3—figure supplement 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20331.01310.7554/eLife.20331.014Figure 3—figure supplement 2—source data 1.Figure 3—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.20331.014
+**Figure 3—figure supplement 2.:** RNAs were collected from wild-type (Control), CDX2P-CreERT2 Cdx2fl/fl (Cdx2KO), CDX2P-CreERT2 BrafCA (BrafVE), CDX2P-CreERT2 Cdx2fl/fl BrafCA (Cdx2KOBrafVE), and CDX2P-CreERT2 Apcfl/fl(ApcKO) mice after TAM injection. (A) Expression of intestinal stem cell markers: Olfm4, Lgr5, Msi1, Cd133, Lrig, Hopx, Nkd1 and Bmi1. (B) Expression of Wnt target genes: Cd44, Axin2, Mmp7, EphB2, cMyc and Sox9. (C) Expression of differentiation markers: Muc2, Muc5ac, Anxa10 and Pdx1. Gene expression was assessed by qRT-PCR, with normalization to β-actin expression. RNAs were collected from three mice per group. We fit a one-way ANOVA model with terms for the means of five groups to log-transformed gene expression data, and test differences in means for pairs of groups as well as Braf by Cdx2 interactions by testing if the average difference (of log-transformed data) between Cdx2KO BrafVE samples and BrafVE samples was larger or smaller than the difference between Cdx2KO and control samples, and called the anti-logarithm of this difference-of-differences the ratio of ratios. See also Figure 3—figure supplement 2—source data 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig4-v2.jpg)
 
-**Figure 4.:** CDX2-CreER mice.T2 Cdx2fl/fl BrafCATwo representative tumors from CDX2-CreER mice (T2 Cdx2fl/fl BrafCAT1 and T2) and cecum tissues from the TAM-treated Cre-negative control mouse (Normal cecum), the CDX2P-CreER Cdx2T2Cdx2fl/fl ( mouse, or the -/-)CDX2P-CreER (T2 BrafCABraf) mouse were subjected to immunohistochemical (IHC) staining for active EGFR (phospho-EGFR Tyr845). Representative Imagines with low (top panels) and high (bottom panels) magnifications were shown. Scale bars, 100 μm for low magnification image (top); 20 μm for high magnification images (bottom).V600EDOI: http://dx.doi.org/10.7554/eLife.20331.015
+**Figure 4.:** Two representative tumors from CDX2-CreERT2 Cdx2fl/fl BrafCA mice (T1 and T2) and cecum tissues from the TAM-treated Cre-negative control mouse (Normal cecum), the CDX2P-CreERT2 Cdx2fl/fl (Cdx2-/-) mouse, or the CDX2P-CreERT2 BrafCA (BrafV600E) mouse were subjected to immunohistochemical (IHC) staining for active EGFR (phospho-EGFR Tyr845). Representative Imagines with low (top panels) and high (bottom panels) magnifications were shown. Scale bars, 100 μm for low magnification image (top); 20 μm for high magnification images (bottom).
 
 The canonical or β-catenin-dependent Wnt signaling pathway has a key role in regulating tissue stem cells near the small intestine and colon crypt base, in large part via regulation of various β-catenin/T cell factor (TCF) transcription pathway genes (Koo and Clevers, 2014). In most human adenomas and CRCs, Wnt pathway defects, most commonly APC inactivating mutations, lead to dysregulated β-catenin/T cell factor (TCF) transcription with resultant activation of genes normally restricted to intestinal stem cells in many neoplastic cells in the lesions (Fearon, 2011; Koo and Clevers, 2014). We studied Cdx2-mutant, BrafV600E-mutant, and Cdx2 BrafV600E double-mutant, as well as Apc-mutant mouse colon epithelium, for expression of transcripts for various intestinal stem cell markers and Wnt pathway genes, such as: Olfm4, Lgr5, Msi1, Cd133, Lrig1, Nkd1, Hopx, Bmi1, Cd44, Axin2, Mmp7, Ephb2, cMyc and Sox9. Compared to control colon tissues, only Olfm4, Mmp7 and Sox9 expression were markedly increased in tumor tissues from the CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 3—figure supplement 2A and B). Expression of Olfm4, Mmp7 and Sox9 transcripts was also markedly upregulated in proximal colon tissues from the CDX2P-CreERT2 Cdx2fl/fl mice. Expression of all of these presumptive stem cell and Wnt pathway genes, was markedly increased in Apc-mutant mouse colon tissues (Figure 3—figure supplement 2A and B). Consistent with our immunohistochemical studies, Muc5ac, Anxa10 and Pdx1 gene expression was increased in the Cdx2−/− BrafV600E serrated mouse tumors (Figure 3—figure supplement 2C).
 
-## Cooperative interaction of CDX2 silencing and BRAFV600E expression in gene regulation
+### Cooperative interaction of CDX2 silencing and BRAFV600E expression in gene regulation
 
-To address the basis for the major collaborative effects of
+To address the basis for the major collaborative effects of Cdx2 inactivation and BrafV600E activation in tumorigenesis, we undertook global gene expression analyses of normal colon epithelium, Cdx2−/−-mutant, BrafV600E-mutant, Cdx2−/−BrafV600E-mutant, and Apc-mutant colon epithelium. The principal components analysis showed the Cdx2−/− BrafV600E mutant epithelium clearly had distinct global patterns of gene expression from that of normal colon epithelium or mutant colon epithelium of the single mutant genotypes (Figure 5A). The gene expression patterns in Cdx2−/−BrafV600E-mutant epithelium indicated that combined Cdx2 inactivation and BrafV600E activation had very strong cooperative interactions in altering the expression of a large number of genes, with many genes dramatically activated in expression and a smaller collection of genes dramatically down-regulated (Figure 5B). Interestingly, notwithstanding the data above showing that the ANXA10 protein was strongly expressed in human serrated morphology CRC and mouse Cdx2−/− BrafV600E serrated tumor epithelium, it was still a surprise that Anxa10 was the top activated gene in the Cdx2−/− BrafV600E-mutant epithelium (Figure 5B). Cdx2 loss or BrafV600E expression alone had only modest effect on Anxa10 expression relative to levels in control epithelium, whereas concurrent Cdx2 and BrafV600E defects led to a roughly 100-fold activation of Anxa10 (Figure 5B). Interestingly, the Pla2g2a gene, which encodes a secretory phospholipase A2 protein and which is also known as Mom-1 (modifier of multiple intestinal neoplasia 1) for its defined role as a potent genetic modifier of the ApcMin intestinal neoplasia phenotype (Cormier et al., 1997), was a non-induced gene in Cdx2−/− BrafV600E -mutant epithelium compared to its induction in Cdx2−/− mutant, BrafV600E-mutant, or Apc-mutant epithelium (Figure 5B). The top pathways for activated gene expression patterns in the Cdx2−/− BrafV600E-mutant epithelium were epithelial-mesenchymal transition, KRAS signaling, and hypoxia, and the top pathways for down-regulated gene expression were cholesterol homeostasis, adipogenesis, and xenobiotic metabolism (Table 2).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig5-v2.jpg)
 
-**Figure 5.:** Cdx2 inactivation and BRAFV600E expression in gene regulation in mouse colon.Global gene expression analyses were performed with RNAs from normal colon epithelium (NC), Cdx2-/--mutant, Braf-mutant, V600ECdx2-mutant, and -/-BrafV600EApc-mutant colon epithelium. (-/-A) The principal components analysis showed the Cdx2 mutant epithelium clearly had distinct global patterns of gene expression from that of normal colon epithelium or mutant colon epithelium of the single mutant genotypes. See also -/- BrafV600EFigure 5–source data 1. (B) Heat map showing the strong cooperative interactions of Cdx2 inactivation and Braf activation in altering the expression of many genes. Genes were sorted by their expression based on the degree of interaction between V600ECdx2 inactivation and Braf activation. Genes shown are those that gave p<0.01 for the interaction of V600ECdx2 inactivation and Braf activation (the difference of the Cdx2V600E-/- BrafV600E vs. BrafV600E difference and the Cdx2-/- vs. control difference, in log-space) and that also had the anti-logarithm of the difference of differences at least 10 (or smaller than 1/10) in mouse data. Genes below the dashed line show negative interaction between Cdx2 inactivation and Braf activation. The heat map also showed the comparison of gene expression between the mouse data and human TCGA CRC data. The 18 CRC samples from human TCGA data that had low CDX2 and V600E mutations were compared to the 104 CRC samples with high CDX2 that were not BRAF mutant, and genes were selected with p-values of <0.01 (two-sample T-test) and fold-changes of >1.3 between the two groups. The genes selected by both human and mouse data sets are marked as red. See also V600EFigure 5–source data 2,3.DOI: http://dx.doi.org/10.7554/eLife.20331.01610.7554/eLife.20331.017Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20331.01710.7554/eLife.20331.018Figure 5—source data 2.-/- BrafV600E tumors to gene signatures from human CRCs with low CDX2expression and BRAFV600E mutation (TCGA data) and human serrated carcinomas.DOI: http://dx.doi.org/10.7554/eLife.20331.01810.7554/eLife.20331.019Figure 5—source data 3.-/- BrafV600E tumors to gene signatures from human CRCswith low CDX2 expression and BRAFV600E mutation (TCGA data) and human serrated carcinomas.DOI: http://dx.doi.org/10.7554/eLife.20331.019
+**Figure 5.:** Global gene expression analyses were performed with RNAs from normal colon epithelium (NC), Cdx2-/--mutant, BrafV600E-mutant, Cdx2-/-BrafV600E-mutant, and Apc-/--mutant colon epithelium. (A) The principal components analysis showed the Cdx2-/- BrafV600E mutant epithelium clearly had distinct global patterns of gene expression from that of normal colon epithelium or mutant colon epithelium of the single mutant genotypes. See also Figure 5–source data 1. (B) Heat map showing the strong cooperative interactions of Cdx2 inactivation and BrafV600E activation in altering the expression of many genes. Genes were sorted by their expression based on the degree of interaction between Cdx2 inactivation and BrafV600E activation. Genes shown are those that gave p<0.01 for the interaction of Cdx2 inactivation and BrafV600E activation (the difference of the Cdx2-/- BrafV600E vs. BrafV600E difference and the Cdx2-/- vs. control difference, in log-space) and that also had the anti-logarithm of the difference of differences at least 10 (or smaller than 1/10) in mouse data. Genes below the dashed line show negative interaction between Cdx2 inactivation and BrafV600E activation. The heat map also showed the comparison of gene expression between the mouse data and human TCGA CRC data. The 18 CRC samples from human TCGA data that had low CDX2 and V600E mutations were compared to the 104 CRC samples with high CDX2 that were not BRAF mutant, and genes were selected with p-values of <0.01 (two-sample T-test) and fold-changes of >1.3 between the two groups. The genes selected by both human and mouse data sets are marked as red. See also Figure 5–source data 2,3.
+
+**Table 2.**
+ Top 10 gene sets for lists of genes up- and down-regulated in tumors with Cdx2−/− and BrafV600E mutations.Table 2—source data 1.Results of enrichment testing the Molecular Signatures Database (MSigDB) v5.1 for the hallmark collection of 50 gene sets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Up or down genes</th>
+      <th>Gene set title</th>
+      <th>Number of genes on list</th>
+      <th>Number of those genes we selected</th>
+      <th>P-value (Fisher Exact)</th>
+      <th>Observed/expected</th>
+      <th>Rank of gene set</th>
+      <th>Estimated FDR (Q-value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION</td>
+      <td>186</td>
+      <td>69</td>
+      <td>1.0E-28</td>
+      <td>4.57</td>
+      <td>1</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_KRAS_SIGNALING_UP</td>
+      <td>192</td>
+      <td>41</td>
+      <td>7.3E-09</td>
+      <td>2.63</td>
+      <td>2</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_HYPOXIA</td>
+      <td>189</td>
+      <td>36</td>
+      <td>1.1E-06</td>
+      <td>2.35</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_COAGULATION</td>
+      <td>126</td>
+      <td>27</td>
+      <td>2.4E-06</td>
+      <td>2.64</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_TNFA_SIGNALING_VIA_NFKB</td>
+      <td>189</td>
+      <td>35</td>
+      <td>3.2E-06</td>
+      <td>2.28</td>
+      <td>5</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_UV_RESPONSE_DN</td>
+      <td>141</td>
+      <td>28</td>
+      <td>7.6E-06</td>
+      <td>2.45</td>
+      <td>6</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_ANGIOGENESIS</td>
+      <td>36</td>
+      <td>12</td>
+      <td>1.5E-05</td>
+      <td>4.11</td>
+      <td>7</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_INFLAMMATORY_RESPONSE</td>
+      <td>189</td>
+      <td>32</td>
+      <td>5.3E-05</td>
+      <td>2.09</td>
+      <td>8</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_IL2_STAT5_SIGNALING</td>
+      <td>193</td>
+      <td>30</td>
+      <td>4.2E-04</td>
+      <td>1.92</td>
+      <td>9</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Up</td>
+      <td>HALLMARK_APICAL_JUNCTION</td>
+      <td>191</td>
+      <td>29</td>
+      <td>7.6E-04</td>
+      <td>1.87</td>
+      <td>10</td>
+      <td>0.001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_CHOLESTEROL_HOMEOSTASIS</td>
+      <td>72</td>
+      <td>17</td>
+      <td>2.7E-09</td>
+      <td>5.86</td>
+      <td>1</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_ADIPOGENESIS</td>
+      <td>191</td>
+      <td>22</td>
+      <td>9.3E-06</td>
+      <td>2.86</td>
+      <td>2</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_XENOBIOTIC_METABOLISM</td>
+      <td>194</td>
+      <td>22</td>
+      <td>1.2E-05</td>
+      <td>2.81</td>
+      <td>3</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_ESTROGEN_RESPONSE_LATE</td>
+      <td>189</td>
+      <td>21</td>
+      <td>2.6E-05</td>
+      <td>2.76</td>
+      <td>4</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_MTORC1_SIGNALING</td>
+      <td>193</td>
+      <td>21</td>
+      <td>3.5E-05</td>
+      <td>2.70</td>
+      <td>5</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_BILE_ACID_METABOLISM</td>
+      <td>109</td>
+      <td>14</td>
+      <td>1.2E-04</td>
+      <td>3.19</td>
+      <td>6</td>
+      <td>0.000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_FATTY_ACID_METABOLISM</td>
+      <td>149</td>
+      <td>16</td>
+      <td>3.4E-04</td>
+      <td>2.67</td>
+      <td>7</td>
+      <td>0.004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_PEROXISOME</td>
+      <td>101</td>
+      <td>12</td>
+      <td>7.4E-04</td>
+      <td>2.95</td>
+      <td>8</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_GLYCOLYSIS</td>
+      <td>193</td>
+      <td>18</td>
+      <td>8.2E-04</td>
+      <td>2.31</td>
+      <td>9</td>
+      <td>0.004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Down</td>
+      <td>HALLMARK_ESTROGEN_RESPONSE_EARLY</td>
+      <td>190</td>
+      <td>17</td>
+      <td>1.8E-03</td>
+      <td>2.22</td>
+      <td>10</td>
+      <td>0.005</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Results of enrichment testing the Molecular Signatures Database (MSigDB) v5.1 for the Hallmark collection of 50 gene sets. We selected genes with significant Cdx2 by Braf interactions, asking that p<0.01 and that the fold-change between Cdx2+Braf and Braf was at least 1.3 times larger (or smaller) than the fold-change between Cdx2 and control, which selected 1453 up distict mouse genes and 767 down mouse genes (out of 22326 distinct mouse genes). We mapped to human genes choosing only 1-to-1 best homologs using NCBI's Homologene version 68, which left 1277 up and 634 down distict human genes, out of a total of 15735 genes. We tested our up and down genes separately for over-representation in 50 Hallmark gene sets using one-sided Fisher Exact tests. Shown are the 10 gene sets in the collection that gave the smallest p-values. The last column gives the estimated false discovery rates (Q-values) based on 100 data sets in which the human gene identifiers were randomly permuted._
 
 To address the cooperative effects of CDX2 and BRAF function in regulating gene expression in human CRCs, we first compared our mouse gene signature to 212 human CRC samples available in TCGA project data (https://gdac.broadinstitute.org/) and that also have mutation data. Among these samples, we compared the 18 samples that had low CDX2 and BRAF V600E mutations to the 104 samples with high CDX2 that were not BRAF mutant, and selected the genes with p-values of <0.01 (two-sample T-test) and fold-changes of >1.3 between the two groups. Then, we computed the intersection of this selection to the similar selection we had performed in our mouse data to ask for significant Cdx2 by Braf interactions. We observed strong association between our mouse data and human CRC data with significant enrichment of genes found ‘up’ in both data-sets as well as ‘down’ in both data-sets, and few disagreements between both data-sets (p=4.5×10−49, Mantel-Haenszel Chi-Square test of association) (Figure 5 and Figure 5—source data 2). In addition, we also compared our mouse gene signature to expression data for 8 serrated and 29 conventional CRCs obtained from GEO series GSE4045 (called here Finnish data) (Laiho et al., 2007). Again, the genes that showed strong cooperative interaction between Cdx2 loss and BrafV600E expression in the mouse colon tumors (either up or down) were found to be significantly enriched in human serrated CRCs vs. conventional CRCs (p=1.4×10−11) (Figure 5—source data 2). Our findings suggested that the gene signature found in our Cdx2-/-/BrafV600E mouse model is highly instructive to identify the serrated subset of human CRCs.
 
-## PDX1 expression in colon tumors in mouse and human
+### PDX1 expression in colon tumors in mouse and human
 
-The regulation of PDX1 homeobox transcription factor expression by CDX2 and BRAF in mouse colon tissues was of interest to us, given the role of homeobox proteins in cell-fate specification. Thus, we pursued in-depth immunohistochemical studies of PDX1 expression in selected mouse and human tissue specimens. In the normal mouse gastro-intestinal tissues studied, only gastric antrum epithelium and duodenum epithelium showed positive staining for PDX1, with no staining in epithelium from terminal ileum, cecum, colon and rectum (
+The regulation of PDX1 homeobox transcription factor expression by CDX2 and BRAF in mouse colon tissues was of interest to us, given the role of homeobox proteins in cell-fate specification. Thus, we pursued in-depth immunohistochemical studies of PDX1 expression in selected mouse and human tissue specimens. In the normal mouse gastro-intestinal tissues studied, only gastric antrum epithelium and duodenum epithelium showed positive staining for PDX1, with no staining in epithelium from terminal ileum, cecum, colon and rectum (Figure 6—figure supplement 1). In contrast, strong PDX1 staining was seen in colon epithelium from CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 6A). Strong and diffuse PDX1 staining was also seen in colon epithelium of CDX2P-CreERT2 Cdx2fl/fl mice (Figure 6—figure supplement 1). Activation of PDX1 expression was seen in colon epithelium of CDX2P-CreERT2 Cdx2fl/fl mice as early as 7 days after TAM injection to target the Cdx2 alleles (Figure 6—figure supplement 1). While strong PDX1 expression was seen in the majority of neoplastic cells in the tumors arising in the CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (Figure 6A), PDX1 expression was largely restricted to apical region epithelial cells in colon epithelium of CDX2P-CreERT2 Cdx2fl/fl mice (Figure 6—figure supplement 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig6-v2.jpg)
 
-**Figure 6.:** CDX2-CreER mice and human serrated benign tumor tissues.T2 Cdx2fl/fl BrafCA(A) H and E staining (left) and PDX1 immunohistochemical (IHC) staining in the tumor of CDX2-CreER mice. (T2 Cdx2fl/fl BrafCAB) H and E staining (left) and PDX1 immunohistochemical (IHC) staining in a representative human serrated adenocarcinoma case. Scale bars for panels A and B, 200 μm for low magnification image (top); 50 μm for high magnification images (bottom). (C) Expression pattern of CDX2 and PDX1 in human serrated benign tumors. (Upper panel) CDX2 expression was retained in Goblet cell rich HPP but significantly decreased in all of the other serrated tumors. (Lower panel) Robust aberrant PDX1 expression was seen in all of the serrated tumors, but was absent in normal colon. Scale bars, 50 μm.DOI: http://dx.doi.org/10.7554/eLife.20331.02210.7554/eLife.20331.023Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20331.023
+**Figure 6.:** (A) H and E staining (left) and PDX1 immunohistochemical (IHC) staining in the tumor of CDX2-CreERT2 Cdx2fl/fl BrafCA mice. (B) H and E staining (left) and PDX1 immunohistochemical (IHC) staining in a representative human serrated adenocarcinoma case. Scale bars for panels A and B, 200 μm for low magnification image (top); 50 μm for high magnification images (bottom). (C) Expression pattern of CDX2 and PDX1 in human serrated benign tumors. (Upper panel) CDX2 expression was retained in Goblet cell rich HPP but significantly decreased in all of the other serrated tumors. (Lower panel) Robust aberrant PDX1 expression was seen in all of the serrated tumors, but was absent in normal colon. Scale bars, 50 μm.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) In a wild type mouse, only normal tissues from the antrum region of the stomach and the duodenum have strong PDX1 expression. (B) Robust PDX1 expression was seen in the cells at the apical side of the colon of CDX2P-CreER mice both seven and twenty-one days post TAM injection. Scale bars, 100 μm.T2 Cdx2fl/flDOI: http://dx.doi.org/10.7554/eLife.20331.024
+**Figure 6—figure supplement 1.:** (A) In a wild type mouse, only normal tissues from the antrum region of the stomach and the duodenum have strong PDX1 expression. (B) Robust PDX1 expression was seen in the cells at the apical side of the colon of CDX2P-CreERT2 Cdx2fl/fl mice both seven and twenty-one days post TAM injection. Scale bars, 100 μm.
 
 We then assessed the 36 serrated morphology human CRC cases, finding that 30 (83.3%) had strong PDX1 expression, including all 26 of the cases with CDX2 loss/reduction and/or BRAFT1799A mutations (Figure 1 and Figure 6B). To assess whether reduction or loss of CDX2 expression and ectopic PDX1 expression were also features of benign serrated colorectal lesions, we studied CDX2 and PDX1 expression in four goblet cell-rich histology HPPs, ten microvesicular histology HPPs, six SSAs/SSPs, and four TSAs. While CDX2 expression was retained in all goblet cell-rich histology HPPs, all 20 of the other benign serrated lesions studied had greatly reduced or absent CDX2 expression (Figure 6C). Moreover, induction of PDX1 expression was seen in all benign serrated lesion types (Figure 6C) and in all 24 benign lesions studied.
 
 Because of the robust expression of PDX1 in all 24 of the serrated benign lesions studied and in 83.3% of the serrated morphology CRCs studied, we sought to assess the expression of PDX1 as well as CDX2 and ANXA10 expression in a large collection of CRCs not selected for any specific morphologic features. We found PDX1 was expressed in 132 (33%) of the 395 CRCs studied (Figure 6—source data 1), a percentage which is curiously not far from the upper estimate that 30% of CRCs may arise through a serrated pathway. Strong staining for CDX2 was seen in 287 (73%) of the 395 CRCs, with reduced but detectable CDX2 staining in 73 (18%) of the 395 cases and loss of CDX2 expression in 35 (9%) of the 395 cases (Figure 6—source data 1). ANXA10 expression, which was seen in 24 (67%) of the 36 human serrated CRCs, was only expressed in 26 (7%) of the 395 CRCs. These findings on ANXA10 expression, based on our data showing that only about 2/3 of serrated morphology CRCs express ANXA10, are not inconsistent with the published literature indicating that about 8–10% of all CRCs have serrated morphology. Because the 395 CRCs were represented as very limited tumor regions in the tissue microarray format, we could not reliably assess relationships of PDX1, CDX2 and ANXA10 staining in these CRCs relative to serrated morphology features.
 
-## Serrated glandular morphology and gene expression in organoids derived from CDX2Null/BRAFV600E-mutant colon epithelium
+### Serrated glandular morphology and gene expression in organoids derived from CDX2Null/BRAFV600E-mutant colon epithelium
 
-To further assess how concurrent
+To further assess how concurrent Cdx2 inactivation and BRAFV600E expression alters colon epithelial cell phenotypes, we studied organoids derived from normal and mutant mouse colon epithelium. Normal mouse colon epithelium-derived organoids formed uniform glandular structures in the presence of media supplemented with Wnt3a, R-spondin, noggin, epidermal growth factor (EGF), and hepatocyte growth factor (HGF) (Figure 7). The cells in the normal epithelium-derived organoids lacked dysplasia and resembled normal columnar colon epithelial cells. Apc-mutant (Apc−/−) mouse colon epithelium formed organoids in the absence of Wnt3a and R-spondin supplementation, as expected for cells with bi-allelic Apc mutations and constitutive activation of β-catenin/TCF transcription. The Apc−/− epithelium-derived organoids were larger than normal epithelium-derived organoids, and the cells showed dysplasia, with larger and more irregularly shaped nuclei containing open chromatin and a loss of the normal basal polarity of the nuclei (Figure 7). Organoids derived from Cdx2Null mouse colon epithelium were grown in the presence of the full growth factor supplementation, and the organoids showed minimal if any alterations in morphology relative to organoids derived from normal colon epithelium (Figure 7). Organoids derived from CDX2Null/BRAFV600E-mutant epithelium could be grown without EGF supplementation of the media, due presumably to constitutive BRAF→MEK1/2→ERK1/2 MAP kinase signaling driven by the BRAFV600E oncoprotein kinase. Initially, roughly 25% of the organoids derived from the CDX2Null/BRAFV600E-mutant epithelium showed serrated glandular structures, with invaginations of epithelial cells into the organoid lumen, and epithelial cells with eosinophilic or clear and abundant cytoplasm, vesicular nuclei with distinct nucleoli, and loss of basal polarity of the cells, closely resembling mouse and human epithelium with serrated morphology (Figure 7). CDX2 expression was seen in all organoids where Cdx2 gene function remained intact (Figure 7). Strong and homogeneous PDX1 expression was found only in the CDX2Null/BRAFV600E-mutant epithelium. After three-four in vitro passages of the CDX2Null/BRAFV600E-mutant organoids, we observed a significant decrease in the percentage of organoids displaying serrated morphology, suggesting that serrated morphologic appearance as a phenotypic trait may not be stable in some neoplastic cell populations over time. To further explore the usefulness of the CDX2Null/BRAFV600E-mutant organoids as a model system, we studied the gene expression by q-RT PCR for the top 15 genes showing positive interaction of CDX2 silencing and BRAFV600E expression in mouse colon tissues and five more ‘up’ genes that are shared by our mouse data-set and one of the two human CRC data sets – the TCGA data-set or the Finish data-set (Figure 5—source data 3, marked as red). Interestingly, only 4 out of the 20 genes up-regulated in the in vivo setting (i.e., Npy, Gkn2, Ivl and Tmprss11e) showed significant cooperative interaction between CDX2 silencing and BRAFV600E expression in the organoid model system (Figure 8A and C). Lower expression of Anxa10 was found in the CDX2Null/BRAFV600E-mutant organoids compared to the normal control or BrafVE organoids (Figure 8A and C). The expression of Npy, Gkn2, Ivl and Tmprss11e as well as Anxa10 in CDX2Null/BRAFV600E-mutant organoids was markedly inhibited by MEK1/2-inhibitor (AZD6244) treatment. The effectiveness of AZD6244 treatment was verified by its inhibitory effect on expression of MAPK target genes, Dusp6 and Fos, in all the organoids treated (Figure 8B and C) and was also confirmed by its ability to significantly reduce the level of phospho-ERK (Figure 8—figure supplement 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig7-v2.jpg)
 
-**Figure 7.:** Cdx2and -/- Braf-mutant colon epithelium showed serrated glandular morphology and PDX1 expression.V600EOrganoids were generated from proximal colon of wild-type, CDX2P-CreER, T2 Apcfl/flCDX2P-CreER Cdx2T2, fl/flCDX2P-CreER, and T2 BrafCACDX2P-CreER mice after TAM injection. Representative organoids from each mouse were shown for H and E (upper panels), and immunohistochemical staining for CDX2 (middle panels) and PDX1 (lower panels). Scale bars, 200 μm for low magnification; 50 μm for high magnification (for H and E).T2 Cdx2fl/fl BrafCADOI: http://dx.doi.org/10.7554/eLife.20331.025
+**Figure 7.:** Organoids were generated from proximal colon of wild-type, CDX2P-CreERT2 Apcfl/fl, CDX2P-CreERT2 Cdx2fl/fl, CDX2P-CreERT2 BrafCA, and CDX2P-CreERT2 Cdx2fl/fl BrafCA mice after TAM injection. Representative organoids from each mouse were shown for H and E (upper panels), and immunohistochemical staining for CDX2 (middle panels) and PDX1 (lower panels). Scale bars, 200 μm for low magnification; 50 μm for high magnification (for H and E).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig8-v2.jpg)
 
-**Figure 8.:** Cdx2and -/- Braf-mutant colon epithelium.V600EOrganoids were generated from epithelium at proximal colon-cecum junction of wild-type (Control), CDX2P-CreER Cdx2T2 (fl/flCdx2), KOCDX2P-CreER (T2 BrafCABraf), and VECDX2P-CreER (T2 Cdx2fl/fl BrafCACdx2) mice after 7 days following two daily doses of TAM (150 mg/kg) injection. The organoids were plated in Matrigel for 3 days, and then were treated with DMSO (−) or 6 μM of MEK1/2 inhibitor, AZD6244 (+), daily for two consecutive days before harvest for RNA extraction. Gene expression was assessed by qRT-PCR, with normalization to KOBrafVEβ-actin expression. Independent RNA samples were prepared from triplicate treatments for each treatment group. (A) Expression of Anxa10, and the genes showing cooperative interactions of CDX2 silencing and BRAFV600E expression in both mouse tissues and organoid system. (B) Expression of the MAPK target genes, Dusp6 and Fos, to show the effectiveness of AZD6244 treatment. (C) We fit a one-way ANOVA model with terms for the means of four groups of genotypes (for both DMSO and AZD6244 treatments) to log-transformed gene expression data, and test differences in means for pairs of groups as well as Braf by Cdx2 interactions by testing if the average difference (of log-transformed data) between Cdx2KO BrafVE samples and BrafVE samples was larger or smaller than the difference between Cdx2KO and control samples, and called the anti-logarithm of this difference-of-differences the ratio of ratios. In addition, we also tested the effects of AZD6244 on gene expression within each genotype groups. See also Figure 8—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20331.02610.7554/eLife.20331.027Figure 8—source data 1.Figure 8.DOI: http://dx.doi.org/10.7554/eLife.20331.027
+**Figure 8.:** Organoids were generated from epithelium at proximal colon-cecum junction of wild-type (Control), CDX2P-CreERT2 Cdx2fl/fl (Cdx2KO), CDX2P-CreERT2 BrafCA (BrafVE), and CDX2P-CreERT2 Cdx2fl/fl BrafCA (Cdx2KOBrafVE) mice after 7 days following two daily doses of TAM (150 mg/kg) injection. The organoids were plated in Matrigel for 3 days, and then were treated with DMSO (−) or 6 μM of MEK1/2 inhibitor, AZD6244 (+), daily for two consecutive days before harvest for RNA extraction. Gene expression was assessed by qRT-PCR, with normalization to β-actin expression. Independent RNA samples were prepared from triplicate treatments for each treatment group. (A) Expression of Anxa10, and the genes showing cooperative interactions of CDX2 silencing and BRAFV600E expression in both mouse tissues and organoid system. (B) Expression of the MAPK target genes, Dusp6 and Fos, to show the effectiveness of AZD6244 treatment. (C) We fit a one-way ANOVA model with terms for the means of four groups of genotypes (for both DMSO and AZD6244 treatments) to log-transformed gene expression data, and test differences in means for pairs of groups as well as Braf by Cdx2 interactions by testing if the average difference (of log-transformed data) between Cdx2KO BrafVE samples and BrafVE samples was larger or smaller than the difference between Cdx2KO and control samples, and called the anti-logarithm of this difference-of-differences the ratio of ratios. In addition, we also tested the effects of AZD6244 on gene expression within each genotype groups. See also Figure 8—source data 1.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/20331/elife-20331-fig8-figsupp1-v2.jpg)
 
-**Figure 8—figure supplement 1.:** Organoids were generated from proximal colon-cecum junction of wild-type, CDX2P-CreER Cdx2T2, fl/flCDX2P-CreER, and T2 BrafCACDX2P-CreER mice after 7 days following TAM injection. The organoids were plated in Matrigel for 3 days, and then were treated with vehicle (DMSO) or MEK inhibitor (AZD6244) at 6 μM daily for two consecutive days before harvest for immunohistochemical (IHC) staining for phosphor-ERK. Representative Images with low (upper panels) and high (lower panels) magnifications were shown. Scale bars, 100 μm for low magnification images (upper panels); 20 μm for high magnification images (lower panels).T2 Cdx2fl/fl BrafCADOI: http://dx.doi.org/10.7554/eLife.20331.028
+**Figure 8—figure supplement 1.:** Organoids were generated from proximal colon-cecum junction of wild-type, CDX2P-CreERT2 Cdx2fl/fl, CDX2P-CreERT2 BrafCA, and CDX2P-CreERT2 Cdx2fl/fl BrafCA mice after 7 days following TAM injection. The organoids were plated in Matrigel for 3 days, and then were treated with vehicle (DMSO) or MEK inhibitor (AZD6244) at 6 μM daily for two consecutive days before harvest for immunohistochemical (IHC) staining for phosphor-ERK. Representative Images with low (upper panels) and high (lower panels) magnifications were shown. Scale bars, 100 μm for low magnification images (upper panels); 20 μm for high magnification images (lower panels).
 
 ## Discussion
 
@@ -161,46 +750,46 @@ Among a number of poorly understood issues in the serrated precursor-CRC field i
 
 ## Materials and methods
 
-## Human serrated tumor tissues and histological interpretation
+### Human serrated tumor tissues and histological interpretation
 
 The diagnosis of serrated morphology CRC was based on established histopathological criteria (Mäkinen, 2007; Tuppurainen et al., 2005; Bateman, 2014). Serrated morphology CRC was characterized by evident epithelial serrations composed only of epithelium or epithelium and basement membrane material, clear or eosinophilic and often abundant cytoplasm, vesicular nuclei, absence of or less than 10% necrosis of the total surface area, mucin production, and the presence of serrations and eosinophilic cell globules and rod-like structures floating freely in the mucus. The diagnostic sub-classification of the 36 serrated CRCs studied here was based on previously proposed criteria from Snover and Torlakovic et al (Snover, 2011; Torlakovic et al., 2003). Serrated CRCs of each of the three known histological sub-groups, arising in Japanese patients, were included, with the vast majority of cases representing the serrated subtype (n = 30) and only a minority reflecting the mucinous (n = 4) or trabecular (n = 2) subtypes of serrated CRC. The 36 serrated morphology CRCs were studied in accordance with the Ethical Guidelines for Human Genome/Gene Research enacted by the Japanese Government. Hematoxylin- and eosin-stained tissue sections of the human serrated morphology CRCs were evaluated by three board-certified surgical pathologists with expertise in gastrointestinal cancer diagnosis (N.S., K.S., W.Y.). We also studied tissue sections of four Goblet cell rich HPP, 10 Microvesicular HPP, 6 SSA/P, and 4 TSA cases obtained from the University of Michigan tissue procurement service through an Institutional Review Board-approved protocol.
 
-## Analysis of BRAF and KRAS mutations
+### Analysis of BRAF and KRAS mutations
 
 DNA was extracted from formalin-fixed, paraffin-embedded serrated CRC specimens. Areas in which tumor cells were most dense were delineated by light microscopic analysis of tissue slides. The corresponding areas were marked on 10 serial, unstained tissue slides; the marked areas were then manually scraped from the glass slides. DNA was extracted using QIAamp DNA FFPE Tissue Kit (QIAGEN, Valencia, CA). BRAF codon 600 flanking sequences were amplified by PCR. PCR amplifications were performed with GoTaq Green Master Mix (Promega, Madison, WI) following the standard 3-temperature PCR protocol, with denaturing at 94°C, annealing at 55°C, and extension at 72°C. The PCR products were extracted using QIAquick Gel Extraction Kit (QIAGEN) and submitted for direct Sanger sequencing. The obtained sequences were analyzed and aligned with BRAF reference sequence, NM_004333.4. Cases apparently negative for BRAFT1799A were evaluated for alternative mutations in KRAS codons 12, 13, and 61 by PCR amplification and direct Sanger sequencing of PCR amplification products. Primer sequences were: KRAS codon 12/13, 5’- gcctgctgaaaatgactgaat −3’ and 5’- ggtcctgcaccagtaatatgc −3’; KRAS codon 61, 5’- ccagactgtgtttctcccttc −3’ and 5’-aaagaaagccctccccagt-3’; BRAF codon 600, 5’- ccacaaaatggatccagaca −3’ and 5’- cctaaactcttcataatgcttgctc −3’.
 
-## Mice
+### Mice
 
 BrafCA (aka Braftm1Mmcm) mice carry a conditional allele of Braf that encodes normal BRAF prior to Cre-mediated recombination, after which it encodes a mouse-human hybrid V600E oncogenic protein, were previously described (Dankort et al., 2007). Regardless of species of origin, we refer to this mutationally activated form of BRAF as BRAFV600E and the BrafCA allele after Cre-mediated recombination as BrafV600E for the sake of clarity. CDX2P-CreERT2 transgenic mice (Feng et al., 2013) were intercrossed with mice homozygous for a Cdx2 targeted allele (Cdx2fl/fl) (Blij et al., 2012) and/or the BrafCA mice. Cre-mediated conversion of the BrafCA allele to encode BRAFV600E and the deletion of Cdx2 were assessed by PCR as previously described (Blij et al., 2012; Dankort et al., 2007; Feng et al., 2013). Apcfl mice have been previously described (Shibata et al., 1997). Littermates differing in specific genotypes were used for the survival work and all tissue and molecular work. Animal husbandry and experimental procedures were carried out under approval from the University of Michigan’s Institutional Animal Care and Use Committee (PRO00005075) and according to Michigan state and US federal regulations. All the mice were housed in specific-pathogen free (SPF) conditions. After weaning, rodent 5001 chow and automatically supplied water were provided ad libitum to mice.
 
-## Tamoxifen (TAM) treatment
+### Tamoxifen (TAM) treatment
 
 Adult mice (2–3 months of age) carrying the CDX2P-CreERT2 transgene were injected intraperitoneally with TAM (Sigma-Aldrich, St. Louis, MO) dissolved in corn oil (Sigma-Aldrich). For two daily TAM doses, we used 150 mg/kg weight per dose. Animals were euthanized and analyzed at various time points after the final injection given.
 
-## Establishment of colonic organoids
+### Establishment of colonic organoids
 
 Organoids were derived from proximal colon of the following mice: (1) wild-type mice (6-week age); (2) CDX2P-CreERT2 Apcfl/fi mice (24 days after TAM injection); (3) CDX2P-CreERT2 Cdx2fl/fl mice (three weeks after TAM injection); (4) CDX2P-CreERT2 BrafCA mice (3 months after TAM injection); (5) CDX2P-CreERT2 Cdx2fl/fl BrafCA mice (4 months after TAM injection). Mice were first treated with TAM to induce gene targeting and/or tumor formation, and then colonic organoids were generated and propagated using previously described ‘TMDU protocol’ (Yui et al., 2012) with minor modifications. The proximal colon and tumor lesions in the proximal colon were removed, minced into small pieces, and suspended in 12.5 ml of DMEM (Life Technologies Corporation, Grand Island, NY) supplemented with 100 U/ml penicillin (Life Technologies Corporation), 100 μg/ml streptomycin (Life Technologies Corporation), 50 μg/ml gentamicin (Life Technologies Corporation) and 1% FBS (complete DMEM), to which 15 mM EDTA were added. The mixture was shaken for 1 hr at 4°C. The released crypts were washed extensively, pelleted, and resuspended in 200 μl of the Matrigel (Corning, Bedford, MA) and placed in 3 wells of 24-well plates. After polymerization, 500 μl of ‘TMDU’ medium, which has advanced DMEM/F12 (Life Technologies Corporation) containing 2 mM L-Glutamine (Life Technologies Corporation), 10% Wnt3A (Barker et al., 2010), 10% R-spondin2 (Bell et al., 2008) conditioned-media and 100 ng/ml Noggin (Peprotech, Rocky Hill, NJ), 20 ng/ml mouse EGF (Life Technologies Corporation), 50 ng/ml mouse HGF (R and D Systems, Minneapolis, MN), and 10 μM Y-27632 (R and D Systems), was added to each well for organoids from wild-type mice and CDX2P-CreERT2 Cdx2fl/fl mice. We used TMDU medium minus mEGF for the organoids from CDX2P-CreERT2 BrafV600Eand CDX2P-CreERT2 Cdx2fl/fl BrafV600E mice, and used TMDU medium with Wnt3a and R-spondin2 conditional media replaced by advanced DMEM/F12 for organoids from CDX2P-CreERT2 Apcfl/fl mice. The medium was changed every 2–3 days. The organoids were split at 1:3 ratios every 7–8 days. For gene expression study, organoids were generated from epithelium at proximal colon-cecum junction of wild-type (Control), CDX2P-CreERT2 Cdx2fl/fl (Cdx2KO), CDX2P-CreERT2 BrafCA (BrafVE), and CDX2P-CreERT2 Cdx2fl/fl BrafCA (Cdx2KOBrafVE) mice after 7 days following two daily doses of TAM (150 mg/kg) injection. The organoids were plated in Matrigel for 3 days, and then were treated with DMSO or 6 μM of MEK1/2 inhibitor, AZD6244 (Cayman Chemical Company, Ann Arbor, MI), daily for two consecutive days before harvest for RNA extraction.
 
-## Immunohistochemistry (IHC)
+### Immunohistochemistry (IHC)
 
 Mouse tissues were prepared for paraffin embedding, as described previously (Feng et al., 2013). For assessment of cell proliferation, mice were pulsed with 5-bromo-2-deoxyuridine (BrdU; Sigma-Aldrich) for 1 hr before the mice were euthanized. Sections of paraffin-embedded human or mouse tissues were subjected to immunohistochemical (IHC) analysis as described (Feng et al., 2011). Primary antibodies used for IHC analysis with sections of paraffin-embedded mouse and human tissues are listed in Supplementary file 1. For BrdU staining, tissue sections were treated with 2N HCl at 37°C for 30 min after performing antigen retrieval with citrate buffer (pH 6.0, BioGenex, Fremont, CA). All IHC analyses on human serrated CRC tissues and the mouse tissues were evaluated by three board-certified surgical pathologists with expertise in gastrointestinal cancer diagnosis (N.S., K.S., W.Y.). All of the IHC staining was classified according to the percentage of stained cells. With the exception of CDX2 staining in human CRC specimens, expression of all markers in the human and mouse tissue samples were considered to be negative if <10% of neoplastic cells were observed to be stained, and positive when >10% of neoplastic cells were stained.
 
-## MSI and CpG island methylation analyses of human serrated CRCs
+### MSI and CpG island methylation analyses of human serrated CRCs
 
 We selected five markers for investigation of MSI status in the human serrated CRCs: BAT-25, BAT-26, NR-21, NR-22, NR-24. One primer in each pair was labeled with one of the fluorescent markers FAM, HEX or NED. The five mononucleotide repeat tracts were co-amplified in one multiplex PCR containing 1 mol/L of each primer, 200 mol/L dNTP, 1.5 mmol MgCl2 and 0.75 U Taq DNA polymerase. The pentaplex PCR was performed under the following conditions: denaturation at 94°C for 5 min, 35 cycles of denaturation at 94°C for 30 s, annealing at 55°C for 30 s, and extension at 72°C for 30 s. This was followed by an extension step at 72°C for 7 min (Suraweera et al., 2002). The PCR products were analyzed by ABI 3730XL Genetic Analyzers (Applied Biosystems, Foster City, CA) and Gene Marker-HD software (Softgenetics, State College, PA) was used to calculate the size of each fluorescent PCR product. For the CpG island methylation analysis, sodium bisulfite treatment of genomic DNA and subsequent real-time PCR (MethyLight) were validated and done as previously described (Weisenberger et al., 2005). We quantified DNA methylation at five CIMP-specific promoters: CACNA1G, IGF2, NEUROG1, RUNX3 and SOCS1. CIMP-high was defined as the presence of more than 3 of 5 methylated promoters, CIMP-low as the presence of 0 to 2 of 5 methylated promoters, according to the previously established criteria (Weisenberger et al., 2006).
 
-## MSI analysis study and bisulfite sequencing on p16 promoter in mouse tissues
+### MSI analysis study and bisulfite sequencing on p16 promoter in mouse tissues
 
 Microsatellite analysis of mouse tumors was done as described using five microsatellite repeat markers previously shown to be informative in tumors from DNA mismatch repair–deficient mice (Woerner et al., 2015; Kabbarah et al., 2003; Bacher et al., 2005). Tumors were scored as MSI if 2 of 5 markers showed instability. Sodium bisulfite treatment on genomic DNA and subsequent PCR were validated and done as previously described (Song et al., 2014). Amplified DNA fragments were cloned using the TA Cloning Kit into the pCRII plasmid (Invitrogen, Carlsbad, CA). At least 10 clones were then randomly selected and sequenced for each sample.
 
-## Gene expression
+### Gene expression
 
 We tamoxifen treated 8–12 week old mice as the following: (1) Cdx2fl/fl mice; (2) CDX2P-CreERT2 Apcfl/fi mice; (3) CDX2P-CreERT2 Cdx2fl/fl mice; (4) CDX2P-CreERT2 BrafCA mice; (5) CDX2P-CreERT2 Cdx2fl/fl BrafCA mice. Three mice per group were used. Total RNA was extracted and purified from tumors or normal tissues at the colon-cecum junction. We used Affymetrix Mouse Gene 2.1 ST arrays (Affymetrix, Santa Clara, CA), which hold 41345 probe-sets, but we largely analyzed just those 25216 probe-sets that were mapped to Entrez gene IDs. Raw data was processed with the Robust Multi-array Average algorithm (RMA). Data is log2-transformed transcript abundance estimates. We fit a one-way ANOVA model to the five groups of samples. We supply a supplementary excel workbook that holds the same data as the series matrix file, but also holds the probe-set annotation at the time we analyzed the data, and some simple statistical calculations, which selects subsets of the probe-sets as differentially expressed between pairs of groups, as well as significant Cdx2-/- by BRAFV600E interactions. It also gives the homologous human gene IDs we used for enrichment testing, which were 1-to-1 best homologs according to build 68 of NCBI's Homologene. The mouse gene expression data reported here are available from GEO (accession number GSE84650), and include the statistical analysis.
 
-## Quantitative reverse transcription (RT)-PCR (qRT-PCR)
+### Quantitative reverse transcription (RT)-PCR (qRT-PCR)
 
 cDNA was synthesized using a high capacity cDNA reverse transcription kit (Applied Biosystems). qRT-PCR was performed with an ABI Prism 7300 Sequence Analyzer using a SYBR green fluorescence protocol (Applied Biosystems). Primer sequences will be provided upon request.
 
-## Statistical analysis
+### Statistical analysis
 
 One-way ANOVA model on log-transformed expression data was used to determine p values in qRT-PCR. Kaplan-Meier survival curves were compared by log-rank test. Fisher’s exact test (for 2 × 2 table) and Mantel-Haenszel Chi-Square test of association (for 3 × 2 table) were used to determine significance in human CRC cases. All tests are two-sided except for one-sided Fisher Exact Tests used in Table 2. P-values are not corrected for multiple testing except in Table 2, where false discovery rates are explicitly computed. Sample sizes were chosen based on experience with previous similar experiments, except in the case of the human colon tumor samples where availability was the main constraint.

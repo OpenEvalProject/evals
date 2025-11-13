@@ -33,24 +33,24 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Wellcome Centre for Integrative Neuroimaging, FMRIB, Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom
-2. https://ror.org/052gg0110 Division of Clinical Neurology, Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom
-3. https://ror.org/03czfpz43 Psychology Department, Emory University Atlanta United States
-4. https://ror.org/019950a73 Centre for Zoo and Wild Animal Health, Copenhagen Zoo Frederiksberg Denmark
-5. https://ror.org/024mw5h28 Department of Radiology, University of Chicago Chicago United States
-6. https://ror.org/01x2d9f70 Department of Complex Trait Genetics, Centre for Neurogenomics and Cognitive Research, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands
-7. https://ror.org/05grdyy37 Department of Child Psychiatry, Amsterdam Neuroscience, Amsterdam UMC, Vrije Universiteit Amsterdam Amsterdam Netherlands
-8. https://ror.org/052gg0110 Medical Research Council Oxford Institute for Radiation Oncology, University of Oxford Oxford United Kingdom
-9. https://ror.org/03rp50x72 School of Anatomical Sciences, Faculty of Health Sciences, University of the Witwatersrand Johannesburg South Africa
-10. https://ror.org/052gg0110 Wellcome Centre for Integrative Neuroimaging, Department of Experimental Psychology, University of Oxford Oxford United Kingdom
-11. https://ror.org/03m0zs870 Stem Cell and Brain Research Institute, Université Lyon 1, INSERM Bron France
-12. https://ror.org/016xsfp80 Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands
+1. Wellcome Centre for Integrative Neuroimaging, FMRIB, Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Division of Clinical Neurology, Nuffield Department of Clinical Neurosciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Psychology Department, Emory University Atlanta United States ([ROR:03czfpz43](https://ror.org/03czfpz43))
+4. Centre for Zoo and Wild Animal Health, Copenhagen Zoo Frederiksberg Denmark ([ROR:019950a73](https://ror.org/019950a73))
+5. Department of Radiology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+6. Department of Complex Trait Genetics, Centre for Neurogenomics and Cognitive Research, Amsterdam Neuroscience, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:01x2d9f70](https://ror.org/01x2d9f70))
+7. Department of Child Psychiatry, Amsterdam Neuroscience, Amsterdam UMC, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:05grdyy37](https://ror.org/05grdyy37))
+8. Medical Research Council Oxford Institute for Radiation Oncology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+9. School of Anatomical Sciences, Faculty of Health Sciences, University of the Witwatersrand Johannesburg South Africa ([ROR:03rp50x72](https://ror.org/03rp50x72))
+10. Wellcome Centre for Integrative Neuroimaging, Department of Experimental Psychology, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+11. Stem Cell and Brain Research Institute, Université Lyon 1, INSERM Bron France ([ROR:03m0zs870](https://ror.org/03m0zs870))
+12. Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen Nijmegen Netherlands ([ROR:016xsfp80](https://ror.org/016xsfp80))
 
 † Corresponding author
 
 ## Abstract
 
-Post-mortem magnetic resonance imaging (MRI) provides the opportunity to acquire high-resolution datasets to investigate neuroanatomy and validate the origins of image contrast through microscopy comparisons. We introduce the Digital Brain Bank ( open.win.ox.ac.uk/DigitalBrainBank ), a data release platform providing open access to curated, multimodal post-mortem neuroimaging datasets. Datasets span three themes —Digital Neuroanatomist : datasets for detailed neuroanatomical investigations; Digital Brain Zoo : datasets for comparative neuroanatomy; and Digital Pathologist : datasets for neuropathology investigations. The first Digital Brain Bank data release includes 21 distinctive whole-brain diffusion MRI datasets for structural connectivity investigations, alongside microscopy and complementary MRI modalities. This includes one of the highest-resolution whole-brain human diffusion MRI datasets ever acquired, whole-brain diffusion MRI in fourteen nonhuman primate species, and one of the largest post-mortem whole-brain cohort imaging studies in neurodegeneration. The Digital Brain Bank is the culmination of our lab’s investment into post-mortem MRI methodology and MRI-microscopy analysis techniques. This manuscript provides a detailed overview of our work with post-mortem imaging to date, including the development of diffusion MRI methods to image large post-mortem samples, including whole, human brains. Taken together, the Digital Brain Bank provides cross-scale, cross-species datasets facilitating the incorporation of post-mortem data into neuroimaging studies.
+Post-mortem magnetic resonance imaging (MRI) provides the opportunity to acquire high-resolution datasets to investigate neuroanatomy and validate the origins of image contrast through microscopy comparisons. We introduce the Digital Brain Bank (open.win.ox.ac.uk/DigitalBrainBank), a data release platform providing open access to curated, multimodal post-mortem neuroimaging datasets. Datasets span three themes—Digital Neuroanatomist: datasets for detailed neuroanatomical investigations; Digital Brain Zoo: datasets for comparative neuroanatomy; and Digital Pathologist: datasets for neuropathology investigations. The first Digital Brain Bank data release includes 21 distinctive whole-brain diffusion MRI datasets for structural connectivity investigations, alongside microscopy and complementary MRI modalities. This includes one of the highest-resolution whole-brain human diffusion MRI datasets ever acquired, whole-brain diffusion MRI in fourteen nonhuman primate species, and one of the largest post-mortem whole-brain cohort imaging studies in neurodegeneration. The Digital Brain Bank is the culmination of our lab’s investment into post-mortem MRI methodology and MRI-microscopy analysis techniques. This manuscript provides a detailed overview of our work with post-mortem imaging to date, including the development of diffusion MRI methods to image large post-mortem samples, including whole, human brains. Taken together, the Digital Brain Bank provides cross-scale, cross-species datasets facilitating the incorporation of post-mortem data into neuroimaging studies.
 
 ## Introduction
 
@@ -70,7 +70,82 @@ The Digital Brain Bank is accessible at open.win.ox.ac.uk/DigitalBrainBank. Data
 
 Here, we provide an overview of each theme, with examples from available datasets in the first release to the Digital Brain Bank. A brief description of all the datasets provided with the first release, alongside relevant publications, is provided in Table 1.
 
-## Digital Anatomist
+**Table 1.**
+ Description of all datasets provided in the first release to the Digital Brain Bank.All Structural MRI datasets in the first release were acquired using a balanced SSFP (bSSFP) or T2-weighted sequence, which yields strong gray-white matter contrast in formalin-fixed post-mortem tissue. Diffusion MRI datasets were acquired using a combination of diffusion-weighted steady-state free precession (DW-SSFP) and diffusion-weighted spin-echo (DW-SE) sequences. Full details of the motivation behind the choice of sequences and available contrasts are described in the Discussion. †T2* and magnetic susceptibility maps are currently available in 9 out of 12 ALS brains and all control brains. The remaining datasets were either lost during scanner export, or are of insufficient data quality for public release.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Name</th>
+      <th>Contents: MRI</th>
+      <th>Resolution (MRI)</th>
+      <th>Contents: Microscopy</th>
+      <th>Relevant publications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digital Anatomist</td>
+      <td>Human High-Resolution Diffusion MRI-PLI</td>
+      <td>Whole-brain diffusion MRI, structural MRI, quantitative T1 and T2 maps:– Control human brain: 1×</td>
+      <td>Diffusion MRI: (500 μm, 1 and 2 mm iso.)Structural MRI: 312.5×312.5×500 μm3T1 map: (0.75×0.75×1.6 mm3)T2 map: (0.75×0.75×1.6 mm3)</td>
+      <td>Polarised light imaging (4 μm in-plane) in the anterior commissure, corpus callosum, pons, thalamus, and visual cortex (same brain)</td>
+      <td>Dataset described in this publication (Methodology in Appendix 1), Diffusion MRI processing described in Tendler et al., 2020b, T2 mapping described in Tendler et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Digital Anatomist</td>
+      <td>Human Callosum MRI-PLI-Histology</td>
+      <td>Corpus callosum diffusion MRI:– Excised control human corpus callosum samples: 3×</td>
+      <td>Diffusion MRI: (400 μm iso.)</td>
+      <td>Polarised light imaging (4 μm in-plane), bright-field microscopy images of immunohistochemistry stains (0.25 μm in-plane) for PLP (myelin) and GFAP (astrocyte) (same human corpus callosum samples)</td>
+      <td>Mollink et al., 2017</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Whole-brain diffusion MRI and structural MRI (available in brains marked with a *):Bushbaby (Galago senegalensis): 1×Capuchin monkey (Sepajus apella): 1×Chimpanzee* (Pan troglodytes): 2×Colobus monkey (Colobus guereza): 1×Cotton-Top tamarin (Saguinus oedipus): 1×Golden Lion tamarin (Leontopithecus rosalia): 1×Hamadryas baboon* (Papio hamadryas): 1×Macaque monkey (Macaca mulatta): 3×Mangabey (Lophocebus albigena): 1×Night monkey, (Aotus lemurinus): 1×Ring-tailed lemur (Lemur catta): 3×Saki monkey (Pithecia pithecia): 1×Western Lowland gorilla* (Gorilla gorilla): 1×Woolly monkey (Lagothrix lagotricha): 1×</td>
+      <td>Diffusion MRI:300 μm iso.: Bushbaby, Cotton-Top tamarin &amp; Golden Lion Tamarin400 μm iso: Night monkey500 μm iso: Ring-tailed lemur and Saki monkey600 μm iso: Capuchin monkey, Chimpanzee, Colobus monkey, Hamadryas baboon, Macaque monkey, Mangabey, Western Lowland Gorilla and Woolly MonkeyStructural MRI200 μm iso: Western Lowland Gorilla220 μm iso: Hamadryas Baboon0.22×0.22×0.19 mm3: 1× Chimpanzee0.375×0.375×0.40 mm3: 1× Chimpanzee</td>
+      <td>None</td>
+      <td>1× Western Lowland gorilla and 1× Chimpanzee described in Roumazeilles et al., 2020, 3× Macaque monkey and 3× Ring-Tailed Lemur described in Roumazeilles et al., 2021. Hamadryas baboon, Cotton-Top tamarin and Golden Lion tamarin datasets described in this publication (Methodology in Appendix 1). All other datasets described in Bryant et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Marsupials</td>
+      <td>Whole-brain diffusion MRI and structural MRI:Tasmanian devil (Sarcophilus harrisii): 2×Thylacine (Thylacinus cynocephalus): 2×</td>
+      <td>Diffusion MRI:1 mm iso: 1× Tasmanian devil1.5 mm iso: 1× Tasmanian devil1.1 mm iso: 1× Thylacine1.0×1.1×0.8 mm3: 1× ThylacineStructural MRI330 μm iso: 1× Tasmanian devil and 1× Thylacine330×330×300 μm3: 1× Tasmanian devil500 μm iso: 1× Thylacine</td>
+      <td>None</td>
+      <td>Berns and Ashwell, 2017</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Cetaceans</td>
+      <td>Whole-brain diffusion MRI and structural MRICommon dolphin (Delphinus delphis): 1×Pantropical dolphin (Stenella attenuata): 1×</td>
+      <td>Diffusion MRI: (1.3 mm iso.)Structural MRI: (640×640×500 μm3)</td>
+      <td>None</td>
+      <td>Berns et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Carnivora</td>
+      <td>Whole-brain diffusion MRI and structural MRI:– European wolf (Canis lupus): 1×</td>
+      <td>Diffusion MRI: (600 μm iso.)Structural MRI: (220 μm iso.)</td>
+      <td>None</td>
+      <td>Dataset described in this publication (Methodology in Appendix 1)</td>
+    </tr>
+    <tr>
+      <td>Digital Pathologist</td>
+      <td>Human ALS MRI-Histology</td>
+      <td>Whole-brain diffusion MRI, structural MRI, quantitative T1, T2, and T2* maps, magnetic susceptibility maps (selected brains†):Amyotrophic lateral sclerosis (ALS) human brains: 12×Control human brains: 3×</td>
+      <td>Diffusion MRI: (850 μm iso.)Structural MRI: (230–250 μm in-plane; 270–500 μm slice)T1 map: (0.65–1 mm in-plane; 0.90–1.6 mm slice)T2 map: (0.65–1 mm in-plane; 0.90–1.6 mm slice)T2*/magnetic susceptibility maps: (0.5 mm in-plane; 1.1–1.3 mm slice)</td>
+      <td>Bright-field microscopy immunohistochemistry stains (0.50 μm in-plane, exception pTDP43 – 0.25 μm in-plane): pTDP-43, IBA1 (pan microglia), CD68 (activated microglia/macrophages), PLP (myelin), SMI-312 (axonal phosphorylated neurofilaments), and ferritin (iron storage, subset of regions)Regions: Anterior cingulate cortex, corpus callosum, hippocampus, primary motor cortex, and visual cortex (same brains).Selected multimodal histology available in two brains (1× ALS and 1× Control), and multiregional PLP (available in 10 out of 12 ALS brains and all control brains, 5–8 regions per brain) in first data release – remaining histology being actively curated.</td>
+      <td>Pallebage-Gamarallage et al., 2018, Magnetic susceptibility and T2* mapping protocol described in Wang et al., 2020, Diffusion MRI processing described in Tendler et al., 2020b, T2 mapping described in Tendler et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+### Digital Anatomist
 
 Datasets within the Digital Anatomist provide a new direction for answering fundamental questions in neuroanatomy, through ultra-high resolution MRI data and complementary microscopy within the same sample in humans and model nonhuman species.
 
@@ -84,7 +159,7 @@ In addition to providing a new insight into human neuroanatomy, these data can b
 
 A further aim of the Digital Anatomist is to perform quantitative validations across modalities, relating MRI to microscopic measures. These kinds of analyses can only be achieved with accurately coregistered data, enabling pixel-wise comparisons across modalities acquired at drastically different spatial resolutions. This potential is most clearly seen in the Human Callosum MRI-PLI-Histology dataset, which provides diffusion MRI (400 μm isotropic), alongside complementary PLI (4 μm in-plane), and histology (myelin and astrocytes) (0.25 μm in-plane) in three excised human corpus callosum samples (Mollink et al., 2017). These data offer multiple pathways of investigation, including the identification of the origins of image contrast; validation of microstructural models of tissue (Mollink et al., 2017); and developing unique models explicitly linking MRI with microscopy (Howard et al., 2019b).
 
-## Digital Brain Zoo
+### Digital Brain Zoo
 
 The Digital Brain Zoo provides curated datasets to investigate neuroanatomy in nonhuman species and compare anatomy across species.
 
@@ -98,7 +173,7 @@ The Digital Brain Zoo provides access to post-mortem imaging datasets in nonhuma
 
 **Figure 2.:** (a) The first release of the Digital Brain Zoo provides whole-brain MRI datasets spanning multiple species and taxonomic ranks. Notably, we provide whole-brain diffusion MRI datasets from 14 nonhuman primate species, with samples selected for their high quality and to ensure sampling of all major branches of the primate evolutionary tree (Prosimian, New World monkey, Old World monkey, and Great Ape). (b) compares the relative volume of four tracts derived from nine nonhuman primate post-mortem datasets provided in the Digital Brain Zoo (Bryant et al., 2021), where increased distance from the centre corresponds to an increased volume.
 
-## Digital Pathologist
+### Digital Pathologist
 
 Datasets within the Digital Pathologist provide a new direction for examining neuropathology and MRI-pathology correlates in humans and established laboratory models.
 
@@ -112,7 +187,7 @@ Such data are provided in the Human ALS MRI-Histology dataset (Figure 3a), which
 
 Different MRI modalities have known sensitivities to different components of the cellular environment. Combined with multimodal histology, these data provide the opportunity to relate neuropathologically induced changes in tissue microstructure to MRI image contrast. While these aims could be partially achieved by dissecting and scanning subregions of the brain, our approach of scanning whole post-mortem brains enables us to investigate neuropathological spread across the entire brain (Jucker and Walker, 2013). This facilitates investigations across long-range fiber-tracts associated with pathology (Figure 3b), or microstructural changes in multiple brain regions (Figure 3c). Notably, these analyses are being facilitated by accurate cross-modality image coregistrations (Huszar et al., 2019), enabling us to perform pixel-wise evaluations and integrate structural analyses to identify how pathology influences MR image contrast (Figure 3d) in a subset of brain regions associated with different proposed stages of ALS disease progression (Jucker and Walker, 2013). MRI data for the Human ALS MRI-Histology dataset for all 12 ALS and 3 control brains are immediately available to access, alongside a subset of histology data. Remaining histology data and MRI-histology coregistrations are being actively curated for future release to the Digital Brain Bank.
 
-## Tview
+### Tview
 
 The Digital Brain Bank website enables users to browse a subset of data easily. A key feature of many datasets is that they contain both MRI and microscopy data. Few available viewers, whether downloadable or online, support both MRI and microscopy file formats, creating a barrier of entry for potential users. Moreover, 2D microscopy datasets are extremely high resolution: single images can exceed 10,000,000,000 pixels, running to gigabytes in size.
 
@@ -120,7 +195,7 @@ We aim to provide online viewing of microscopy and MRI data using standard inter
 
 The benefits of Tview are most readily realized with datasets incorporating MRI and microscopy images, enabling visualization of distinct contrasts over multiple spatial scales. However, many datasets provided in the first release to the Digital Brain Bank do not contain any microscopy data. For these datasets, a detailed static image is currently used for visualization on the Digital Brain Bank website.
 
-## Requirements for data access and referencing datasets
+### Requirements for data access and referencing datasets
 
 The Digital Brain Bank has been designed to minimize the burden on the user to access datasets, within ethical constraints. For many datasets, we have developed conditions of use terms via a material transfer agreement (MTA), which users agree to prior to access. The MTAs are primarily designed to ensure that datasets are used for research/educational purposes, to prevent misuse, and to satisfy funding requirements.
 
@@ -134,7 +209,7 @@ The Digital Brain Bank represents one of the most substantial resources of its k
 
 The Digital Brain Bank is a comprehensive resource focusing on post-mortem MRI spanning multiple investigative themes in neuroanatomy, neuropathology, and comparative neuroanatomy. Given this broad coverage, we anticipate that datasets provided by the Digital Brain Bank will complement existing open-science initiatives in both human and nonhuman neuroimaging. There are several existing resources providing outputs derived from post-mortem data focusing on other domains, including the Allen Brain Map (transcriptomics) (https://portal.brain-map.org/), the BigBrain Project (histology) (https://bigbrainproject.org/), and databases compiling datasets from multiple sources such as EBRAINS (https://ebrains.eu/). Primarily, we foresee the greatest overlap and integration between the Digital Brain Bank and existing databases for in vivo and post-mortem MRI. For example, the high-resolution diffusion MRI datasets provided by the Digital Anatomist complement the aims of existing studies such as the Human Connectome Project (Van Essen et al., 2013), providing the opportunity to validate in vivo findings with higher spatial resolution. The Digital Brain Zoo’s current focus on nonhuman primates complements several existing in vivo and post-mortem MRI databases, including PRIME-DE (Milham et al., 2018) and the JMC Primates Brain Imaging Repository (Sakai et al., 2018). The multiple taxonomic ranks covered by the Digital Brain Zoo draws direct parallels with resources such as the Brain Catalogue (Toro et al., 2014), which provides nonhuman post-mortem MRI datasets for structural investigations; and the mammalian MRI database (Assaf et al., 2020), containing diffusion and T2-/T1-weighted scans of 123 different species (datasets available on request as described in Assaf et al., 2020). For the Digital Pathologist, we anticipate the strongest integration of our datasets with existing in vivo cohort studies in human or animal models of neuropathology. For the Human ALS MRI-Histology dataset, this includes multimodal MRI and biofluid biomarker sampling platforms such as the Oxford Study for Biomarkers in Motor Neurone Disease (Menke et al., 2014; Menke et al., 2015; Menke et al., 2016; Menke et al., 2018) and the Canadian ALS Neuroimaging Consortium (Kalra et al., 2020). All of these comparisons are supported further by the microscopy data available in select Digital Brain Bank datasets, providing the opportunity to link MRI contrast to microscopy-derived features across multiple domains.
 
-## Post-mortem MRI
+### Post-mortem MRI
 
 Post-mortem MRI facilitates the noninvasive investigation of brain anatomy, tissue composition, and structural connectivity through the acquisition of high-resolution datasets and subsequent microscopy comparisons. Despite this potential, post-mortem MRI remains a relatively niche approach, in part due to technical challenges and the need for multidisciplinary expertise. In order to provide post-mortem MRI as an experimental technique to neuroscientists in Oxford, we have had to develop a broad range of underpinning technologies, including: (i) pulse sequences that provide high-quality data under the harsh imaging conditions of post-mortem tissue (McNab et al., 2009; Miller et al., 2011); (ii) analyses that account for the signal formation mechanisms of these sequences (Tendler et al., 2020a; Tendler et al., 2020b) or properties unique to post-mortem tissue (Tendler et al., 2021); (iii) experimental approaches that enable the use of ultra-high field MRI to increase SNR for high-resolution imaging (Foxley et al., 2014; Tendler et al., 2020b); (iv) development of custom sample holders to maximize SNR and minimize imaging artifacts (Appendix 3—figure 1 and Appendix 3—figure 2); (v) tools for aligning small 2D microscopy images into 3D whole-brain MRI (Huszar et al., 2019); (vi) strategies for co-analyzing MRI and microscopy data (Howard et al., 2019b; Mollink et al., 2017); and (vii) techniques for between-species comparisons (Eichert et al., 2020; Mars et al., 2018).
 
@@ -142,7 +217,66 @@ The investment of multidisciplinary expertise and effort required to create thes
 
 Here, we provide an overview of how we overcame challenges associated with imaging these samples, notably those associated with imaging large post-mortem brains. Datasets were acquired over many years from multiple imaging sites, resulting in evolving experimental setup, acquisition, and processing methods between datasets. To avoid an exhaustive list of different imaging approaches, below we describe the methodology undertaken for acquisitions performed at the University of Oxford, where the majority of datasets in the first release were acquired. Details of the acquisition location and scanner used for all datasets are provided in Table 2.
 
-## Choice of MRI scanner
+**Table 2.**
+ Acquisition site and MRI scanner associated with all projects in the first release to the Digital Brain Bank.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Dataset(s)</th>
+      <th>Acquisition location</th>
+      <th>MRI scanner</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Digital Anatomist</td>
+      <td>Human High-Resolution Diffusion MRI-PLI</td>
+      <td>University of Oxford</td>
+      <td>Siemens 7T Magnetom32-channel receive/1-channel transmit head coil (Nova Medical)</td>
+    </tr>
+    <tr>
+      <td>Digital Anatomist</td>
+      <td>Human Callosum MRI-PLI-Histology</td>
+      <td>University of Oxford</td>
+      <td>9.4T 160 mm horizontal bore VNMRS preclinical MRI system100 mm bore gradient insert (Varian Inc)26 mm ID quadrature birdcage coil (Rapid Biomedical GmbH)</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>NonHuman Primates</td>
+      <td>University of Oxford</td>
+      <td>Baboon, Chimpanzee, GorillaSiemens 7T Magnetom28-channel receive/1 channel transmit knee coil (QED)All other brains7T magnet with Agilent Direct-Drive console72 mm ID quadrature birdcage RF coil (Rapid Biomedical GmbH)</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Marsupials</td>
+      <td>Emory University</td>
+      <td>Siemens 3T Trio32-channel receive/1-channel transmit head coil</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Cetaceans</td>
+      <td>Emory University</td>
+      <td>2× Tasmanian devil and 1× ThylacineSiemens 3T Trio32-channel receive/1-channel transmit head coil1× ThylacineBruker 9.4T BioSpec preclinical MR system</td>
+    </tr>
+    <tr>
+      <td>Digital Brain Zoo</td>
+      <td>Carnivora</td>
+      <td>University of Oxford</td>
+      <td>Siemens 7T Magnetom28-channel receive/1 channel transmit knee coil (QED)</td>
+    </tr>
+    <tr>
+      <td>Digital Pathologist</td>
+      <td>Human ALS MRI-Histology</td>
+      <td>University of Oxford</td>
+      <td>Siemens 7T Magnetom32-channel receive/1-channel transmit head coil (Nova Medical)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Choice of MRI scanner
 
 Specialized RF coils and imaging gradients facilitate the acquisition of high-resolution, high-SNR post-mortem MRI datasets. Preclinical systems often deliver in this space, notably with powerful gradient sets, and where possible should be adopted for post-mortem imaging. Specifically, post-mortem tissue that has undergone chemical preservation with aldehyde solutions (e.g., formalin) is characterized by short relaxation time constants (T1, T2, and T2*) (Birkl et al., 2016; Birkl et al., 2018; Dawe et al., 2009; Kamman et al., 1985; Nagara et al., 1987; Pfefferbaum et al., 2004; Shepherd et al., 2009; Thelwall et al., 2006), and low diffusivity (D’Arceuil et al., 2007; Shepherd et al., 2009; Sun et al., 2003; Sun et al., 2005; Thelwall et al., 2006) when compared to in vivo tissue. Powerful gradient sets provide rapid signal sampling and strong diffusion weighing, which boosts SNR versus conventional gradients (Dyrby et al., 2011; Roebroeck et al., 2019) in this environment.
 
@@ -150,11 +284,11 @@ Broadly speaking, post-mortem MRI data provided in the first release to the Digi
 
 Whole brains of larger species do not physically fit into these preclinical systems (maximum sample diameter 7–8 cm) and can only be accommodated in human scanners. These systems often have comparatively low gradient strengths, reducing the available SNR. At the University of Oxford, these brains were scanned on a Siemens 7T Magnetom human scanner. Here, we addressed the imaging environment of fixed, post-mortem tissue and comparatively low gradient-strengths by investing in alternative MR sequences to increase SNR. Further details of this are provided below.
 
-## Sample preparation
+### Sample preparation
 
 All brains and tissue samples in the first release of the Digital Brain Bank were chemically fixed using aldehyde solutions (e.g., formalin) to prevent decomposition (D’Arceuil and de Crespigny, 2007) and minimize deformation during the course of scanning. All fixed nonhuman brains and excised tissue blocks scanned at the University of Oxford were prepared by soaking the samples in phosphate-buffered saline (PBS) prior to scanning, which increases image SNR by raising T2-values closer to those found in vivo (Shepherd et al., 2009). This was not performed in whole human brains, as brain size necessitates a soaking time of multiple weeks for the buffer fluid to penetrate throughout tissue (Dawe et al., 2009; Tendler et al., 2021; Yong-Hing et al., 2005) which was incompatible with our experimental design. We note that soaking tissue for an insufficient time can lead to artificial ‘boundaries’ in resulting images, where PBS has not penetrated into deep tissue (Miller et al., 2011).
 
-## Scanning medium and sample holder
+### Scanning medium and sample holder
 
 Susceptibility artifacts (arising due to air-tissue or air-medium interfaces) can be exacerbated in post-mortem imaging without an appropriate scanning medium. All samples scanned at the University of Oxford were imaged in a proton-free susceptibility-matched fluid (Fomblin LC08, Solvay Solexis; or Fluorinert FC-3283, 3M). The choice of a proton-free fluid means that there is no signal outside of the brain, bringing the additional advantage of minimizing the required field-of-view for any acquisitions, and addressing scaling issues arising from a bright background signal.
 
@@ -162,13 +296,13 @@ For whole human brain imaging, we built a two-stage custom holder (Appendix 3—
 
 Large nonhuman brains scanned at the University of Oxford (Gorilla, Chimpanzee, Wolf, and Baboon) were placed inside a 28-channel receive/1-channel transmit knee coil (QED) to boost SNR (smaller distance between sample and the imaging coil). These brains were placed inside a cylindrical brain holder (Appendix 3—figure 2), with a cylindrical cavity that is compatible with the shape of the knee coil, and is a shape that minimizes B0 field inhomogeneities. Small nonhuman brains/excised tissue blocks scanned on preclinical systems were placed in simpler containers, for example, syringes filled with fluorinert.
 
-## Structural MRI
+### Structural MRI
 
 Structural MRI enables the delineation of fine tissue structures and cortical surface reconstruction through high contrast, high-resolution imaging datasets. However, the convergence of T1 relaxation times for gray and white matter in formalin-fixed post-mortem tissue leads poor contrast with conventional T1-weighted structural protocols (Miller et al., 2011). All structural MRIs available in the first data release were acquired using either a balanced SSFP (bSSFP) or T2-weighted sequence, which demonstrate excellent gray/white matter contrast in fixed post-mortem tissue. Notably, bSSFP signal forming mechanisms lead to an extremely high SNR-efficiency (even when considering the reduced T1 and T2 of post-mortem tissue), affording the acquisition of ultra-high resolution (<500 μm) imaging volumes to delineate fine tissue structures in large post-mortem samples.
 
 Contrast in bSSFP and T2-weighted structural MRI datasets is reversed in comparison to conventional in vivo T1-weighted acquisitions (i.e., gray matter appears bright, and white matter appears dark). For these datasets, image contrast is predominantly driven by gray and white matter, facilitating the delineation of fine tissue structures and surface reconstructions (Roumazeilles et al., 2020). An example bSSFP dataset is displayed in Appendix 4—figure 1. Integration with conventional structural MRI processing pipelines often needs to account for the reversal of image contrast.
 
-## Diffusion MRI
+### Diffusion MRI
 
 Post-mortem diffusion MRI is particularly challenging due to the MR-relevant properties of fixed tissue, with reductions in measured relaxation time constants T1, T2, and T2* (Birkl et al., 2016; Birkl et al., 2018; Dawe et al., 2009; Kamman et al., 1985; Nagara et al., 1987; Pfefferbaum et al., 2004; Shepherd et al., 2009; Thelwall et al., 2006), and diffusivity (D’Arceuil et al., 2007; Shepherd et al., 2009; Sun et al., 2003; Sun et al., 2005; Thelwall et al., 2006) routinely reported in literature.
 
@@ -184,27 +318,27 @@ There are some differences between derived diffusivity estimates from DW-SSFP an
 
 More generally, differences in the number of diffusion directions, choice of b-value (for DW-SE and DW-SSFP transformed datasets), imaging resolution, and SNR exist across datasets, a result of available scanning hardware, scanning time, experimental design, and sample properties (e.g., type of fixative used and size of the brain). These limitations can lead to differences in resulting diffusivity estimates and should be considered when performing comparisons across different datasets in the Digital Brain Bank. Full details of the acquisitions are provided in the original publications, alongside information on the Digital Brain Bank website and dataset files.
 
-## Other sequences
+### Other sequences
 
 Quantitative T1 and T2 maps are provided with the post-mortem whole-brain human datasets, acquired using conventional turbo inversion-recovery (TIR) and turbo spin-echo (TSE) sequences. Notably, T1-convergence of gray and white matter in fixed post-mortem tissue leads to low contrast on T1 maps, as described in the Structural MRI section above. T1 maps were fitted assuming mono-exponential signal recovery. T2 maps were processed using an extended phase graph (EPG) fitting scheme (Weigel, 2015), which accounts for B1-inhomogeneity at 7T (details of acquisition and processing are described in Tendler et al., 2021).
 
 Whole human brain quantitative T2* and quantitative susceptibility maps are available in a subset of brains provided with the Human ALS MRI-Histology dataset. These data were acquired using a multiecho gradient-echo sequence and processed following the procedure in Wang et al., 2020.
 
-## Cross-scale comparisons
+### Cross-scale comparisons
 
 Post-mortem imaging experiments combining MRI and microscopy are routinely used to validate the origins of image contrast. However, these comparisons are often restricted to simple summary statistics (e.g., ROI averages), rather than utilizing all the available data through pixel-wise comparisons and structural analyses (Mollink et al., 2017). These more detailed approaches are facilitated by accurate cross-modality coregistrations, a considerable challenge given differences in image contrast and tissue deformations arising from microscopy processing (Huszar et al., 2019; Iglesias et al., 2018; Ohnishi et al., 2016). These challenges are further exacerbated when considering small tissue sections excised from large post-mortem samples, where the corresponding microscopy sampling region must be identified in a 3D imaging volume. To address this, our group has developed TIRL, a novel MR-microscopy coregistration toolbox (Huszar et al., 2019). Further details are provided in the Materials and methods.
 
-## Future directions: dataset visualization
+### Future directions: dataset visualization
 
 To improve visualization of MRI-only datasets on the Digital Brain Bank website, we are currently integrating NiiVue (Rorden et al., 2021), a web-based 3D volumetric viewer for navigating MRI datasets. NiiVue additionally supports binary overlays, which will be used to visualize the location of tissue sampling in the brain. Further details are available at https://github.com/niivue/niivue, (copy archived at swh:1:rev:e67273337430a378a41d6753d91364e9e89b4d33, Hanayik, 2022).
 
-## Future directions: available datasets
+### Future directions: available datasets
 
 Several datasets are under active preparation for future release to the Digital Brain Bank, notably extending the Digital Anatomist and Digital Pathologist categories beyond human tissue for neuroanatomical and neuropathological investigations. These datasets include — Digital Anatomist: (1) Forget-Me-Not developing Human Connectome Project (dHCP) study (Wu et al., 2021), providing diffusion MRI datasets acquired in unfixed, post-mortem neonatal brains; (2) BigMac dataset (Howard et al., 2019a) providing in vivo MRI, post-mortem MRI, PLI, and immunohistochemistry in a single, whole macaque brain. Digital Brain Zoo: further primate species are currently in preparation, as are extensions into orders Carnivora and Rodentia. Digital Pathologist: a cohort study combining multimodal MRI and histology to investigate mouse models of ALS (Martins-Bach et al., 2020; Martins-Bach et al., 2021).
 
 ## Materials and methods
 
-## Web development and Tview
+### Web development and Tview
 
 The Digital Brain Bank is a web application made up of individual service components, created using a combination of open-source software. Services include the dataset downloader, the website, and Tview. The web application is hosted on our own server hardware, and the various services of the application are orchestrated using container management system Docker (docker.com).
 
@@ -214,21 +348,21 @@ Tview provides real-time zooming/panning of high-resolution microscopy and MRI o
 
 Continued use of the Digital Brain Bank requires a simple process for collaborators to upload post-mortem datasets, and an application administration layer is under active development to facilitate this process. Code for the Digital Brain Bank web application is available at https://git.fmrib.ox.ac.uk/thanayik/dbb.
 
-## Datasets
+### Datasets
 
 The Digital Brain Bank is not designed as a stand-alone resource—when possible, datasets are associated with available publications which extensively describe the methodology used. This approach facilitates the referencing of available datasets, and similarly ensures that sufficient detail is provided on how data were acquired and processed. A list of the associated publications with the first release of datasets is provided in Table 1. However, as part of the first release of the Digital Brain Bank, we provide a human dataset that has not yet been described in literature, the Human High-Resolution Diffusion MRI-PLI dataset. We additionally provide four new species datasets for the Digital Brain Zoo, the Hamadryas baboon, Golden Lion Tamarin, Cotton-Top tamarin, and European wolf. A full description of the acquisition and data processing for these data are provided in Appendix 1.
 
-## Tensor Image Registration Library
+### Tensor Image Registration Library
 
 The Digital Brain Bank makes use of the TIRL to perform cross-modality MRI-microscopy coregistrations (Huszar et al., 2019). TIRL can be automated for coregistering 3D MR volumes to 2D microscopy images, typically given a set of sequential block-face photographs taken during the tissue dissection process. These coregistrations are available for all released histology in the Human ALS MRI-Histology (Digital Pathologist) dataset (Figure 3d). Remaining coregistrations are being actively curated and will be provided in a future release to the Digital Brain Bank.
 
 The decision to present MRI-microscopy coregistrations in the 2D histology space (Figure 3d) was chosen to facilitate visualization. During manual histology sampling, the cutting process introduces non-linear deformities. Furthermore, the cutting angle is not constrained to be parallel to the MRI voxel plane. In general, the excised tissue used for histology will pass through multiple MRI voxel planes nonlinearly, limiting visualization in the 3D MRI space. Importantly, TIRL has been specifically designed to deal with the deformations induced during cutting. Our TIRL pipeline has a specific stage for estimating these deformations from photographs and MRI, and a later stage that refines those deformations for the specific histology slice. Further information is provided in Huszar et al., 2019.
 
-## Conditions for data uploading
+### Conditions for data uploading
 
 All datasets hosted on the Digital Brain Bank are associated with projects performed at the University of Oxford, in collaboration with members of the University of Oxford, or from close collaborators. In addition, limited Derived Outputs from users of Digital Brain Bank datasets will also be considered for data upload, subject to quality control on an individual basis. Information regarding the primary contributors to the dataset are explicitly stated on the Digital Brain Bank website. All projects must have been granted ethical approval from the relevant brain banks and departmental ethics boards. Datasets will be shared on the Digital Brain Bank website on the condition that data providers do not require co-authorship for any subsequent outputs based on the use of the datasets alone.
 
-## Types of data provided
+### Types of data provided
 
 The Digital Brain Bank uses the following definitions:
 
@@ -242,7 +376,7 @@ For multimodal (MRI and microscopy) datasets in the first release (Human High-Re
 
 Metadata specific to the analysis of post-mortem tissue (e.g., fixative type, post-mortem interval, etc.) or relevant to distinguishing individual datasets in a cohort study (e.g., control brain or brain with a neurological disease) is provided when available.
 
-## Data storage database
+### Data storage database
 
 As is the nature of a data resource associated with both completed and ongoing projects, some datasets will be updated over time. These future releases will typically be associated with new images being made available or improvements to existing processing pipelines. Until more streamlined data access methods are in place, we will contact users directly to inform them of any updates made to a given dataset. This approach is aligned with the current framework for data access, with users required to contact the Request Data Contact on the Digital Brain Bank website to request access.
 

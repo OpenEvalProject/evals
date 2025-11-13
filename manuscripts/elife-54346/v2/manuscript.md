@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Transcriptional quiescence, an evolutionarily conserved trait, distinguishes the embryonic primordial germ cells (PGCs) from their somatic neighbors. In Drosophila melanogaster , PGCs from embryos maternally compromised for germ cell-less ( gcl ) misexpress somatic genes, possibly resulting in PGC loss. Recent studies documented a requirement for Gcl during proteolytic degradation of the terminal patterning determinant, Torso receptor. Here we demonstrate that the somatic determinant of female fate, Sex-lethal ( Sxl ), is a biologically relevant transcriptional target of Gcl. Underscoring the significance of transcriptional silencing mediated by Gcl, ectopic expression of a degradation-resistant form of Torso ( torso ) can activate Deg Sxl transcription in PGCs, whereas simultaneous loss of torso-like ( tsl ) reinstates the quiescent status of gcl PGCs. Intriguingly, like gcl mutants, embryos derived from mothers expressing torso in the germline display aberrant spreading of pole plasm RNAs, suggesting that mutual antagonism between Gcl and Torso ensures the controlled release of germ-plasm underlying the germline/soma distinction. Deg
+Transcriptional quiescence, an evolutionarily conserved trait, distinguishes the embryonic primordial germ cells (PGCs) from their somatic neighbors. In Drosophila melanogaster, PGCs from embryos maternally compromised for germ cell-less (gcl) misexpress somatic genes, possibly resulting in PGC loss. Recent studies documented a requirement for Gcl during proteolytic degradation of the terminal patterning determinant, Torso receptor. Here we demonstrate that the somatic determinant of female fate, Sex-lethal (Sxl), is a biologically relevant transcriptional target of Gcl. Underscoring the significance of transcriptional silencing mediated by Gcl, ectopic expression of a degradation-resistant form of Torso (torsoDeg) can activate Sxl transcription in PGCs, whereas simultaneous loss of torso-like (tsl) reinstates the quiescent status of gcl PGCs. Intriguingly, like gcl mutants, embryos derived from mothers expressing torsoDeg in the germline display aberrant spreading of pole plasm RNAs, suggesting that mutual antagonism between Gcl and Torso ensures the controlled release of germ-plasm underlying the germline/soma distinction.
 
 ## Introduction
 
@@ -41,43 +41,84 @@ In the studies reported here, we have revisited these conflicting claims by exam
 
 ## Results
 
-## Gcl represses the expression of XCEs in nascent PGCs
+### Gcl represses the expression of XCEs in nascent PGCs
 
 To reexamine the role of gcl in transcriptional quiescence reported by Leatherman et al., 2002, we first used single molecule fluorescent in situ hybridization (smFISH) to assess whether sis-b is properly turned off in gcl mutants. As shown in Figure 1a, nuclear sis-b transcripts are not detected in WT PBs or PGCs (n = 16 embryos). In contrast, in 67% of gcl embryos, we observed sis-b transcripts in PB and PGC nuclei (Figure 1b, n = 21 embryos, p=2.1e-05). sis-b transcripts are present most frequently in gcl PBs; however, we can also detect transcripts after PGC cellularization. Leatherman et al. reported that a second XCE, sis-a, is not properly turned off in gcl PBs and PGCs. To determine if gcl is required to repress other XCEs besides sis-a and sis-b, we probed for runt expression in gcl mutants. We found that like sis-b, runt is also expressed in a subset of gcl PB nuclei and PGCs (29% of gcl embryos, n = 11, p=0.009653), while it is never observed in WT PBs or PGCs. Curiously, in experiments where we examined sis-b and runt transcription simultaneously, we observed some PB/PGC nuclei that expressed both XCEs, and some that only expressed one or the other. In this regard, it is important to keep in mind that transcription during early embryogenesis is stochastic, as only a subset of nuclei express the same gene at any given time (Fukaya et al., 2016; Muerdter and Stark, 2016; Zoller et al., 2018). Consequently, we used embryo counts in place of individual pole cell counts to compare between different samples, which likely underrepresents the frequency of the observed ectopic transcription events in PBs/PGCs. Nonetheless, as WT PBs or PGCs never display sis-b transcripts, our data show that Gcl is required to repress the transcription of XCEs in PBs and PGCs.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig1-v2.jpg)
 
-**Figure 1.:** sis-b and Sxl are transcribed in gcl PBs and PGCs.smFISH was performed using probes specific for sis-b or Sxl on 0–3 hr old embryos to assess the status of transcription in gcl PBs. Wild-type (WT) embryos of similar age were used as control. Posterior poles of representative pre-syncytial blastoderm embryos are shown with sis-b (a/b) or Sxl (c/d) RNA visualized in red and Hoescht DNA dye in blue. While 0% of control embryos display sis-b (a/a’, n = 16) or Sxl (c/c’, n = 18) transcription in PBs, transcription of both sis-b (b/b’) and Sxl (d/d’) is detected in gcl mutant PBs. We observed sis-b transcription in 67% (n = 21, p=2.10e-05) and Sxl transcription in 42% (n = 31, p=0.001593) of gcl embryos. Scale bar represents 10 µm.
+**Figure 1.:** smFISH was performed using probes specific for sis-b or Sxl on 0–3 hr old embryos to assess the status of transcription in gcl PBs. Wild-type (WT) embryos of similar age were used as control. Posterior poles of representative pre-syncytial blastoderm embryos are shown with sis-b (a/b) or Sxl (c/d) RNA visualized in red and Hoescht DNA dye in blue. While 0% of control embryos display sis-b (a/a’, n = 16) or Sxl (c/c’, n = 18) transcription in PBs, transcription of both sis-b (b/b’) and Sxl (d/d’) is detected in gcl mutant PBs. We observed sis-b transcription in 67% (n = 21, p=2.10e-05) and Sxl transcription in 42% (n = 31, p=0.001593) of gcl embryos. Scale bar represents 10 µm.
 
-## Sxl RNA is detected in gcl PBs and PGCs
+### Sxl RNA is detected in gcl PBs and PGCs
 
 We next used smFISH to determine if the transcriptional target of the XCEs, the Sxl-Pe promoter, is active in gcl PBs and/or PGCs. In the soma, we found that the pattern of Sxl-Pe activity was indistinguishable between WT and gcl embryos, as Sxl-Pe transcripts are not detected prior to nuclear migration, nor are they observed in NC 10 somatic nuclei. In approximately half of the embryos, Sxl-Pe transcripts are observed in somatic nuclei from NC 11 until NC 14. Moreover, in these embryos, two nuclear dots of hybridization are detected in most nuclei, indicating that they are female (Erickson and Quintero, 2007; Keyes et al., 1992). In the remaining gcl and WT NC 11–14 embryos, Sxl-Pe transcripts are not observed in somatic nuclei, indicating that these embryos are male.
 
 While the pattern of Sxl-Pe activity in the soma of gcl embryos is the same as WT, this is not true in the germline. As shown in Figure 1d, Sxl-Pe transcripts can be detected in PBs and PGCs in 42% of gcl embryos (n = 31 embryos, p=0.001593), while transcripts are not observed in WT PBs or PGCs (Figure 1c, n = 18 embryos). It is notable that the Sxl-Pe promoter remains active after the PBs cellularize, and nascent Sxl-Pe transcripts can be detected in PGC nuclei of gcl embryos, while they are never observed in the WT PGCs. In gcl embryos, Sxl-Pe transcripts are found not only in female PGCs, as evidenced by Sxl-Pe expression in somatic nuclei, but also in male gcl PGCs, which lack somatic Sxl-Pe. In the NC 11–14 embryos examined, the frequency of female gcl embryos expressing Sxl-Pe transcripts in their PGCs is somewhat higher than that of male gcl embryos (Table 1). Two factors could contribute to this bias. First, Sxl-Pe promoter activity is turned on by XCEs (Sis-A, Sis-B, Runt) in a dose-dependent manner, and these XCEs are also gcl targets. Second, there are two copies of the Sxl gene in females, which could increase the probability that it will be active in gcl mutants.
 
+**Table 1.**
+ PGC transcription in gcl embryos shows a slight, but not significant, sex bias.Significance for sex ratios of embryos showing transcription in PBs and PGCs was determined using Fisher’s exact test; p-values are displayed in the right column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">No PGC transcription</th>
+      <th colspan="2">PGC transcription</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Male</td>
+      <td>Female</td>
+      <td>Male</td>
+      <td>Female</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>14</td>
+      <td>18</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>gcl</td>
+      <td>12</td>
+      <td>15</td>
+      <td>5</td>
+      <td>14</td>
+      <td>0.235205</td>
+    </tr>
+  </tbody>
+</table>
+
 To determine if the Sxl-Pe mRNAs detected in gcl PBs and PGCs are properly processed, exported, and translated, we probed WT and gcl embryos with Sxl antibodies. As Sxl-Pe is not activated in WT female embryos until NC 11, Sxl protein is only readily detectable in somatic nuclei during NC 13/14. It is normally absent in the somatic nuclei of male embryos and in the PGCs of both sexes. While the pattern of Sxl protein accumulation in the soma of gcl embryos is the same as WT, this is not true in PGCs. Sxl protein can be detected in the PGCs of gcl embryos (Figure 2A–D; WT control: n = 40; 2/40 Sxl positive PGC nuclei as opposed to gcl: n = 36; 16/36 Sxl positive, p=7.621e-05). These data indicate that the Sxl-Pe promoter is normally repressed by Gcl in PBs and newly formed PGCs. While the failure to turn off the ongoing transcription of sis-b, sis-a (and possibly runt) likely contributes to the activation of Sxl-Pe in gcl PBs and PGCs, the fact that activation of the promoter is earlier than normal and is subsequently observed in both female and male PGCs suggests that XCE activity may not be the only contributing factor.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig2-v2.jpg)
 
-**Figure 2.:** Sxl in somatic nuclei.0–4 hr old paraformaldehyde-fixed embryos from mothers of indicated genotype were stained with anti-Sxl antibody to assess whether Sxl expression is upregulated in gcl PGCs (A–D). Posterior of the embryos are oriented to the right in all images. Panels A and B: early syncytial blastoderm stage embryos. Sxl protein is absent in the pole cells from the control (wild-type [WT]) embryo (A) whereas some of the gcl mutant pole cells show presence of Sxl (B). Panels C and D: Syncytial blastoderm stage female embryos from mothers of the indicated genotype were stained using anti-Sxl antibody. Similar to pole buds, only gcl mutant pole cells show Sxl protein (D) as opposed to the control (C). Panels E–﻿F’: To determine whether Gcl is sufficient to repress Sxl expression on its own, embryos derived from females carrying gcl-bcd 3’UTR transgene (F) were stained using anti-Sxl antibodies. WT embryos were used as a control (E). The gcl-bcd 3’UTR transgene consists of genomic sequences of the gcl coding region fused to the 3’UTR of the anterior determinant bcd, resulting in ectopic localization of gcl mRNA to the anterior pole. Anterior poles are oriented to the left in each image. Images on the right in the panels E’ and F’ show just the anterior pole from the same embryos. While Sxl-specific signal is strong and uniform in the control embryo, selective reduction in Sxl in the anterior is readily seen in the gcl-bcd 3’UTR embryo (marked with an asterisk).
+**Figure 2.:** 0–4 hr old paraformaldehyde-fixed embryos from mothers of indicated genotype were stained with anti-Sxl antibody to assess whether Sxl expression is upregulated in gcl PGCs (A–D). Posterior of the embryos are oriented to the right in all images. Panels A and B: early syncytial blastoderm stage embryos. Sxl protein is absent in the pole cells from the control (wild-type [WT]) embryo (A) whereas some of the gcl mutant pole cells show presence of Sxl (B). Panels C and D: Syncytial blastoderm stage female embryos from mothers of the indicated genotype were stained using anti-Sxl antibody. Similar to pole buds, only gcl mutant pole cells show Sxl protein (D) as opposed to the control (C). Panels E–﻿F’: To determine whether Gcl is sufficient to repress Sxl expression on its own, embryos derived from females carrying gcl-bcd 3’UTR transgene (F) were stained using anti-Sxl antibodies. WT embryos were used as a control (E). The gcl-bcd 3’UTR transgene consists of genomic sequences of the gcl coding region fused to the 3’UTR of the anterior determinant bcd, resulting in ectopic localization of gcl mRNA to the anterior pole. Anterior poles are oriented to the left in each image. Images on the right in the panels E’ and F’ show just the anterior pole from the same embryos. While Sxl-specific signal is strong and uniform in the control embryo, selective reduction in Sxl in the anterior is readily seen in the gcl-bcd 3’UTR embryo (marked with an asterisk).
 
-## Ectopic expression of gcl represses Sxl
+### Ectopic expression of gcl represses Sxl
 
 The experiments described above indicate that gcl is required to keep Sxl off in PBs and PGCs. We wondered whether gcl is sufficient to downregulate Sxl expression independent of other maternally derived components of the pole plasm, like nos, that are known to be required to keep the Sxl gene off. To address this question, we took advantage of a transgene in which the gcl mRNA protein coding sequence is fused to the bicoid (bcd) 3’UTR (Jongens et al., 1994; Leatherman et al., 2002). Using this transgene, Leatherman et al., 2002 found that expression of Gcl at the anterior of the embryo induced a local reduction in the expression of sis-b, sis-a, as well as terminal patterning genes such as tailless and huckebein. Nuclear accumulation of Sxl protein is uniform across the WT control female embryo, including the anterior (n = 12), while male embryos are completely devoid of Sxl (n = 15). We found that Sxl protein accumulation was diminished in nuclei at the anterior of gcl-bcd-3’UTR female embryos. While reduction in Sxl was observed in all female embryos, it was readily discernible in 9/13 embryos; p=2.23e-04. By contrast, Sxl was absent in gcl-bcd-3’UTR male embryos as in the case of control (n = 15) (Figure 2E and F). This localized disruption of Sxl expression is coincident with the anterior expression of Gcl protein in the gcl-bcd-3’UTR embryos, indicating that Gcl alone is sufficient to repress Sxl.
 
-## Premature expression of Sxl in the PGCs leads to germ cell loss and defective germ cell migration
+### Premature expression of Sxl in the PGCs leads to germ cell loss and defective germ cell migration
 
 Since our findings indicate that Sxl is inappropriately expressed in gcl PBs and newly formed PGCs, an important question is whether precocious expression of Sxl has detrimental effects on PGC development. To test this possibility, we ectopically expressed Sxl in early embryos. We mated maternal-tubulin-GAL4 (referred to as mat-GAL4) virgin females with males carrying a UAS-Sxl transgene. The maternally deposited GAL4 was able to drive the zygotic expression of Sxl protein in early female and male embryos independent of its normal regulation. We compared the total number of PGCs in late syncytial and early cellular blastoderm (stage 4/5) mat-GAL4/UAS-Sxl with mat-GAL4 embryos. In WT, there are typically about 25 PGCs in stage 4/5 embryos. This number is reduced nearly twofold in mat-GAL4/UAS-Sxl embryos (Figure 3). A reduction of PGCs was also observed when we mated virgins carrying the germ cell-specific nosGAL4-VP16 promoter to UAS-Sxl males to drive expression in the germline (6.5 PGCs per gonad in nosGAL4/UAS-Sxl embryos, n = 15, compared to 10 PGCs per gonad in nosGAL4/+ control, n = 12 embryos). Further, overexpression of Sxl in the germline impaired PGC migration. Figure 4 shows PGC migration defects in nosGAL4-VP16/UAS-Sxl embryos (3/21 UAS Sxl/+ control embryos showed >5 mispositioned PGCs as opposed to 9/17 nosGAL4-VP16/UAS-Sxl embryos; p=0.04). Taken together, these findings demonstrate that precocious expression of Sxl protein has deleterious effects on PGC development and behavior during early embryogenesis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig3-v2.jpg)
 
-**Figure 3.:** Sxl results in reduction in total number of primordial germ cells (PGCs).Embryos of indicated genotypes were stained for pole cell marker Vasa (panels a and b; imaged in red) to discern the effects of precocious Sxl activity on the early PGCs. UAS-Sxl transgene males were mated with females carrying maternal-tubulin-GAL4 driver (panel b) to assess if precocious Sxl expression adversely influences early PGCs. mat-GAL4 (panel a) and gcl (not shown) embryos served as positive and negative controls, respectively. (c) Quantitation of PGC counts in different genetic backgrounds. The number of pole cells in embryos from mothers of indicated genotypes were counted and compared. Bars represent the mean ± S.D. (n = 23 for gcl, n = 14 for mat-GAL4/UAS-Sxl, n = 12 for mat-GAL4). ****p<0.0001 for gcl and mat-GAL4/UAS-Sxl compared to wild type (WT). Note that *p>0.01 for gcl compared to mat-GAL4/UAS-Sxl (not indicated in the graph).Figure 3—source data 1.
+**Figure 3.:** Embryos of indicated genotypes were stained for pole cell marker Vasa (panels a and b; imaged in red) to discern the effects of precocious Sxl activity on the early PGCs. UAS-Sxl transgene males were mated with females carrying maternal-tubulin-GAL4 driver (panel b) to assess if precocious Sxl expression adversely influences early PGCs. mat-GAL4 (panel a) and gcl (not shown) embryos served as positive and negative controls, respectively. (c) Quantitation of PGC counts in different genetic backgrounds. The number of pole cells in embryos from mothers of indicated genotypes were counted and compared. Bars represent the mean ± S.D. (n = 23 for gcl, n = 14 for mat-GAL4/UAS-Sxl, n = 12 for mat-GAL4). ****p<0.0001 for gcl and mat-GAL4/UAS-Sxl compared to wild type (WT). Note that *p>0.01 for gcl compared to mat-GAL4/UAS-Sxl (not indicated in the graph).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig4-v2.jpg)
 
 **Figure 4.:** Embryos from mothers of the indicated genotypes were stained for the germ cell marker Vasa. UAS-Sxl transgene males were mated with virgin females carrying the germline-specific driver nos-GAL4-VP16 to assess if precocious Sxl expression can influence PGC migration and survival (panels C–F). Embryos at stage 12 (A, C, E) and stage 13 (B, D, F) are shown as germ cell behavior defects become apparent from stage 12 onwards. UAS-Sxl/+ embryos served as control (A and B). Readily detectable germ cell migration defects were seen in the experimental embryos as opposed to the control. 3/21 UAS Sxl/+ control embryos showed >5 mispositioned PGCs as opposed to 9/17 nosGAL4-VP16/UAS-Sxl embryos; p=0.04 (significance determined using Welch’s two sample t-test).
 
-## Simultaneous removal of gcl and Sxl ameliorates the gcl phenotype
+### Simultaneous removal of gcl and Sxl ameliorates the gcl phenotype
 
 The finding that premature ectopic expression of Sxl protein has adverse effects on PGC development supports the idea that one critical function of gcl is repressing Sxl-Pe. If this is correct, then compromising Sxl activity in the early embryo should mitigate the PGC defects seen in gcl embryos. For this purpose, we generated gcl embryos that also carry a small deficiency, Sxl7BO, which deletes the Sxl gene. In this experiment, we mated Sxl7BO/Bin; gcl/gcl mothers to Sxl7BO/Y fathers, and 0–12 hr old progeny were probed with Sxl and Vasa antibodies. While all of the progeny from this cross lack maternally derived Gcl protein, only half of the progeny lack the Sxl gene. For female embryos, one half would be Sxl7BO/Bin, while the other half would be Sxl7BO/ Sxl7BO. The former (Sxl7BO/Bin) have a functional Sxl gene, and, since they are females, they will express Sxl protein in the soma, which can be detected with Sxl antibody. The latter (Sxl7BO/ Sxl7BO) do not have a functional Sxl gene and would not express Sxl protein even though they are female. There are also two classes of male embryos. One half would be Bin/Y, while the other half would be Sxl7BO/Y. The former (Bin/Y) has a functional Sxl gene, but since they are males (with a single X chromosome), Bin/Y embryos would not express Sxl protein. The latter, Sxl7BO/Y lacks a functional Sxl gene and would also not express Sxl protein.
 
@@ -87,15 +128,15 @@ If removal of Sxl ameliorates the gcl defects in PGC formation, then we should o
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig5-v2.jpg)
 
-**Figure 5.:** gcl and Sxl mitigates the gcl phenotype.(A-B) 0–12 hr old embryos (from the cross 7BO/Y;gcl/gcl x7BO/Bin;gcl/gcl) were stained using anti-Sxl antibody and for the germline marker Vasa. 7BO is a small deficiency chromosome that specifically deletes the Sxl gene. Embryos that stained positive for Sxl were disregarded (n = 14) since only embryos lacking Sxl and gcl are relevant in this experiment. Male embryos of genotype Bin/Y; gcl/gcl (A) are compared with embryos believed to be of genotype 7BO/7BO; gcl/gcl or 7BO/Y; gcl/gcl(B). The number of pole cells in embryos from mothers of indicated genotypes were counted and plotted (C). Bars represent the mean ± SD (n = 23 for 7BO/7BO; gcl/gcl, n = 19 for 7BO/Y; gcl/gcl, n = 26 for Bin/Y; gcl/gcl). ****p<0.0001 for 7BO/7BO; gcl/gcl and 7BO/Y; gcl/gcl compared to Bin/Y; gcl/gcl. p=0.03 for 7BO/7BO; gcl/gcl compared to 7BO/Y; gcl/gcl. Significance was determined using Welch’s two sample t-test.Figure 5—source data 1.
+**Figure 5.:** (A-B) 0–12 hr old embryos (from the cross 7BO/Y;gcl/gcl x7BO/Bin;gcl/gcl) were stained using anti-Sxl antibody and for the germline marker Vasa. 7BO is a small deficiency chromosome that specifically deletes the Sxl gene. Embryos that stained positive for Sxl were disregarded (n = 14) since only embryos lacking Sxl and gcl are relevant in this experiment. Male embryos of genotype Bin/Y; gcl/gcl (A) are compared with embryos believed to be of genotype 7BO/7BO; gcl/gcl or 7BO/Y; gcl/gcl(B). The number of pole cells in embryos from mothers of indicated genotypes were counted and plotted (C). Bars represent the mean ± SD (n = 23 for 7BO/7BO; gcl/gcl, n = 19 for 7BO/Y; gcl/gcl, n = 26 for Bin/Y; gcl/gcl). ****p<0.0001 for 7BO/7BO; gcl/gcl and 7BO/Y; gcl/gcl compared to Bin/Y; gcl/gcl. p=0.03 for 7BO/7BO; gcl/gcl compared to 7BO/Y; gcl/gcl. Significance was determined using Welch’s two sample t-test.
 
-## RNAi knockdown of Sxl also ameliorates the PGC formation defects in gcl embryos
+### RNAi knockdown of Sxl also ameliorates the PGC formation defects in gcl embryos
 
 To confirm that ectopic activation of Sxl-Pe in gcl mutants has deleterious effects on PGCs, we also used RNAi to knockdown expression of Sxl protein. gcl mothers carrying a mat-GAL4 driver were mated to males carrying UAS-Sxl-RNAi transgene, and the embryos derived from this cross were stained with anti-Vasa antibodies to visualize PGCs. Figure 6 shows that RNAi knockdown of Sxl (SxlRNAi) partially suppresses the effects of the gcl mutation on PGCs. While all the embryos in this experiment were of identical genotype, they fell into two classes: one in which the number of PGCs in syncytial/early cellular blastoderm embryos is nearly WT and another that had few PGCs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig6-v2.jpg)
 
-**Figure 6.:** Sxl partially suppresses germ cell loss of gcl embryos.gcl;mat-GAL4 virgin females were mated with males carrying UAS-Sxl RNAi. Embryos derived from this cross were stained with anti-Vasa antibody to visualize PGCs (A). Scale bar represents 20 µm. Total number of PGCs were counted for each embryo from different genotypes, and a Mann–Whitney U-test was employed to analyze significant differences between wild type (WT), gcl, and gcl;Sxl (RNAiB). In 66% of gcl;Sxl embryos, few or no pole cells are observed, comparable to RNAigcl. However, in 34% of gcl;Sxl embryos, germ cell count is substantially elevated, indicating partial rescue of the RNAigcl phenotype.Figure 6—source data 1.
+**Figure 6.:** gcl;mat-GAL4 virgin females were mated with males carrying UAS-Sxl RNAi. Embryos derived from this cross were stained with anti-Vasa antibody to visualize PGCs (A). Scale bar represents 20 µm. Total number of PGCs were counted for each embryo from different genotypes, and a Mann–Whitney U-test was employed to analyze significant differences between wild type (WT), gcl, and gcl;SxlRNAi (B). In 66% of gcl;SxlRNAi embryos, few or no pole cells are observed, comparable to gcl. However, in 34% of gcl;SxlRNAi embryos, germ cell count is substantially elevated, indicating partial rescue of the gcl phenotype.
 
 A plausible explanation for this bimodal distribution is that the efficiency of rescue reflects sex-specific differences in the dose of X-linked sex-determination genes. Females have two copies of not only Sxl but also the XCEs responsible for activating Sxl-Pe, whereas males have only a single copy of these genes. Consistent with gene dose being relevant, there is a modest female-specific bias in the frequency in which we detect Sxl-Pe transcripts in gcl PBs/PGCs (Table 1). To test this directly, we determined the sex of the gcl and control embryos using smFISH with sis-b and Sxl probes. At the syncytial blastoderm stage somatic nuclei in female embryos have two dots of hybridization for both sis-b and Sxl. By contrast, male embryos have one dot of hybridization for sis-b and no signal for Sxl (Figure 7). When we stained embryos derived from the experimental cross, we observed that all embryos showing an increase in PGC formation were females (Sxl+ and two dots of sis-b signal) (Table 2, n = 59, p=0.002456).
 
@@ -103,67 +144,128 @@ A plausible explanation for this bimodal distribution is that the efficiency of 
 
 **Figure 7.:** 0–3 hr old wild-type (WT) embryos were probed for Sxl (green) and sis-b (red) transcription using smFISH, and these embryos were co-stained with Hoescht to visualize DNA. (A) Embryos with two X-chromosomes (females) show two transcription puncta for both sis-b and Sxl, corresponding to expression from each X. (B) XY embryos (males) transcribe sis-b from the only X chromosome and fail to activate expression of Sxl. (A and B) show merge; (A’ and B’) show smFISH signals. A representative section of somatic nuclei is shown in each panel. Scale bar represents 10 µm.
 
-## Ectopic transcription is attenuated in gcl;tsl PGCs
+**Table 2.**
+ Rescue of PGC numbers in gcl;SxlRNAi embryos only occurs in female embryos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Male</th>
+      <th>Female</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No rescue</td>
+      <td>20</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Rescue</td>
+      <td>0</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ectopic transcription is attenuated in gcl;tsl PGCs
 
 In their studies showing that Gcl targets the terminal pathway receptor Torso for proteolysis, Pae et al., 2017 found that mutations in the torso-like (tsl) ligand modifier or RNAi knockdown of torso also suppressed the PGC defects in gcl embryos. We confirmed that simultaneous removal of maternal tsl and gcl resulted in a substantial rescue of the PGC formation defects in gcl embryos (Pae et al., 2017). Figure 8 and Table 3 show that gcl;tsl embryos display a significant increase in the number of PGCs as compared to gcl embryos, and that the rescue is highly penetrant (p<2e-16, Figure 8D). (Note also that the rescue is more substantial than that observed in the Sxl experiments.)
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig8-v2.jpg)
 
-**Figure 8.:** gcl;tsl embryos.smFISH using Sxl probes was performed to assess the status of transcription in PBs of wild-type (WT) (A), gcl (B), and gcl;tsl (C) 0–3 hr old embryos. Posterior poles of representative blastoderm embryos are shown with Sxl RNA visualized in green and Hoescht DNA dye in blue. While 0% of control embryos display Sxl transcription in PBs, transcription of Sxl is detected in 67% buds of gcl embryos (indicated with a carrot in the representative embryo). In gcl;tsl embryos, however, 0% display any ectopic transcription (Table 3). n = 28, 23, and 24 for WT, gcl, and gcl;tsl embryos, respectively; by Fisher’s exact test, p=1e-06 and 1 for WT compared to gcl and gcl;tsl, respectively, and p=2e-06 for gcl compared to gcl;tsl. Scale bar represents 10 µm. (D) Pole cell counts from WT, gcl, and gcl;tsl embryos were counted using anti-Vasa staining (n = 17, 25, and 18, respectively). ***p<0.001 for the compared genotypes shown. Significance was determined using a one-Way ANOVA (p=0) with pairwise t-test comparisons (p=0 for WT vs. gcl, p=0.14 for WT vs. gcl;tsl, p=0 for gcl vs. gcl;tsl). These data suggest that rescue of the gcl PGC numbers is highly penetrant in gcl;tsl embryos.Figure 8—source data 1.
+**Figure 8.:** smFISH using Sxl probes was performed to assess the status of transcription in PBs of wild-type (WT) (A), gcl (B), and gcl;tsl (C) 0–3 hr old embryos. Posterior poles of representative blastoderm embryos are shown with Sxl RNA visualized in green and Hoescht DNA dye in blue. While 0% of control embryos display Sxl transcription in PBs, transcription of Sxl is detected in 67% buds of gcl embryos (indicated with a carrot in the representative embryo). In gcl;tsl embryos, however, 0% display any ectopic transcription (Table 3). n = 28, 23, and 24 for WT, gcl, and gcl;tsl embryos, respectively; by Fisher’s exact test, p=1e-06 and 1 for WT compared to gcl and gcl;tsl, respectively, and p=2e-06 for gcl compared to gcl;tsl. Scale bar represents 10 µm. (D) Pole cell counts from WT, gcl, and gcl;tsl embryos were counted using anti-Vasa staining (n = 17, 25, and 18, respectively). ***p<0.001 for the compared genotypes shown. Significance was determined using a one-Way ANOVA (p=0) with pairwise t-test comparisons (p=0 for WT vs. gcl, p=0.14 for WT vs. gcl;tsl, p=0 for gcl vs. gcl;tsl). These data suggest that rescue of the gcl PGC numbers is highly penetrant in gcl;tsl embryos.
+
+**Table 3.**
+ Transcription status in PBs and PGCs of wild-type (WT), gcl, and gcl;tsl embryos (assessed using smFISH for sis-b and Sxl).Significance for proportions of embryos showing transcription in PBs and PGCs was determined using Fisher’s exact test; p-values are displayed in the right column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>No transcription</th>
+      <th>Transcription</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>28</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gcl</td>
+      <td>9</td>
+      <td>14</td>
+      <td>1.00e-06</td>
+    </tr>
+    <tr>
+      <td>gcl;tsl</td>
+      <td>24</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 Leatherman et al., 2002 found that gcl was required for turning off somatic gene transcription in PBs/PGCs, and they suggested that one of the critical functions of gcl in PGC formation is the silencing of transcription. In addition to confirming that gcl is required to turn off transcription in PBs/PGCs, we also identified an important target for gcl mediated repression, the Sxl establishment promoter, Sxl-Pe. Taken together with the fact that removal of tsl gives nearly complete rescue of the PGC formation defects in gcl, these observations would imply that gcl must target Torso for degradation (at least in part) in order to block the terminal pathway from promoting the transcriptional activity of somatic genes (including activation of Sxl-Pe). If this prediction is correct, then the misexpression of Sxl-Pe and other genes should not be observed in embryos from gcl;tsl mothers where the PGC formation defects are rescued. To test this prediction, we performed smFISH on gcl;tsl embryos using Sxl and sis-b probes along with gcl and WT embryos as positive and negative controls, respectively. Table 3 shows that removal of tsl restores transcriptional quiescence in the PBs/PGCs of gcl;tsl embryos (Figure 8 and Table 3, p=1e-06 and 1 for WT compared to gcl and gcl;tsl, respectively, by Fisher’s exact test). Taken together, these data confirm that inactivation of the terminal signaling pathway by Gcl is critical for silencing transcription in PBs and PGCs and that this silencing function plays an important role in PGC formation.
 
-## A degradation-resistant form of Torso also activates transcription in PGCs
+### A degradation-resistant form of Torso also activates transcription in PGCs
 
 Our finding that the survival of gcl;tsl PGCs is accompanied by the reestablishment of transcriptional silencing provides strong support for the idea that gcl targets Torso for degradation to block terminal signaling dependent transcription. A prediction of this model is that transcription of gcl targets should be ectopically activated in PBs/PGCs when Gcl-dependent proteolysis of Torso is blocked. To test this prediction, we took advantage of a mutant transgene version of torso, torsoDeg, generated by Pae et al., 2017, that lacks the Gcl interaction domain and is thus resistant to Gcl-dependent proteolysis. Embryos from females carrying both mat-GAL4 and UAS-torsoDeg were probed for sis-b and Sxl-Pe promoter activity. Figure 9 shows that both sis-b and Sxl-Pe transcripts are inappropriately expressed in the PBs and PGCs of torsoDeg embryos, with frequencies less than those observed in gcl embryos but significantly more than control embryos (27% of torsoDeg embryos express sis-b (n = 16, p=0.043382) and 28% of torsoDeg embryos express Sxl (n = 25, p=0.030307)). Thus, ectopic upregulation of Sxl and sis-b transcription observed in gcl pole cells is recapitulated in torsoDeg embryos.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig9-v2.jpg)
 
-**Figure 9.:** torso embryos.DegsmFISH using probes specific for sis-b or Sxl in 0–3 hr old embryos was performed to assess the status of transcription in torso PBs. Posterior poles of representative pre-syncytial blastoderm embryos are shown with Degsis-b (a/b) or Sxl (c/d) RNA visualized in red and Hoescht DNA dye in blue. While 0% of control embryos display sis-b (a/a’, n = 16) or Sxl (c/c’, n = 18) transcription in PBs, transcription of both sis-b (b/b’) and Sxl (d/d’) is detected in buds of torso embryos. Note that transcription in wild-type (WT) embryos is only in somatic nuclei (Dega). We observed sis-b transcription in 27% (n = 15, p=0.043382) and Sxl transcription in 28% (n = 25, p=0.030307) of torso embryos. Scale bar represents 10 µm.Deg
+**Figure 9.:** smFISH using probes specific for sis-b or Sxl in 0–3 hr old embryos was performed to assess the status of transcription in torsoDeg PBs. Posterior poles of representative pre-syncytial blastoderm embryos are shown with sis-b (a/b) or Sxl (c/d) RNA visualized in red and Hoescht DNA dye in blue. While 0% of control embryos display sis-b (a/a’, n = 16) or Sxl (c/c’, n = 18) transcription in PBs, transcription of both sis-b (b/b’) and Sxl (d/d’) is detected in buds of torsoDeg embryos. Note that transcription in wild-type (WT) embryos is only in somatic nuclei (a). We observed sis-b transcription in 27% (n = 15, p=0.043382) and Sxl transcription in 28% (n = 25, p=0.030307) of torsoDeg embryos. Scale bar represents 10 µm.
 
 Taken together with the data reported by Leatherman et al., 2002, our results indicate that ectopic expression of Gcl at the anterior of the embryo downregulates transcription of multiple genes. If the relevant target for gcl in gcl-bcd-3’UTR embryos at the anterior is the Torso receptor, then we would predict that torsoDeg should impact transcription not only in the germline, but also in the soma. Since the X-chromosome counting system, which regulates Sxl-Pe activity, is (at least partially) overridden in torsoDeg PBs and PGCs, it seemed possible that it might also be overridden in the soma. To test this possibility, we examined Sxl-Pe expression in the soma of torsoDeg embryos. In WT females, Sxl-Pe transcripts can be detected in virtually all somatic nuclei, and two dots of hybridization are typically observed (Figure 7). In males, Sxl-Pe is off and their somatic nuclei are completely devoid of the signal. While female torsoDeg embryos resemble WT, we observed scattered nuclei in which Sxl-Pe is active in 43% of torsoDeg male embryos (Figure 10C, n = 14, p=0.023871). This finding is also consistent with earlier studies in which we found that a constitutively active form of the Torso receptor, RL3, turns on Sxl-Pe in males (Deshpande, 2004).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig10-v2.jpg)
 
-**Figure 10.:** Sxl is expressed in the male soma in torso and MEK GOF embryos.Deg0–3 hr old embryos were probed for somatic Sxl transcription using smFISH. While 0% of control male embryos display Sxl expression in the soma (A and A', n = 10), all control females display uniform somatic Sxl expression (B and B', n = 17). However, we observed sporadic somatic Sxl activation in 43% (n = 14, p=0.023871) of torso (DegC and C') and 46% (n = 13, p=0.019079) of MEK (E203KD and D') male embryos. A representative section of somatic nuclei is shown in each panel (blue) with Sxl transcripts in red. Scale bar represents 10 µm.
+**Figure 10.:** 0–3 hr old embryos were probed for somatic Sxl transcription using smFISH. While 0% of control male embryos display Sxl expression in the soma (A and A', n = 10), all control females display uniform somatic Sxl expression (B and B', n = 17). However, we observed sporadic somatic Sxl activation in 43% (n = 14, p=0.023871) of torsoDeg (C and C') and 46% (n = 13, p=0.019079) of MEKE203K (D and D') male embryos. A representative section of somatic nuclei is shown in each panel (blue) with Sxl transcripts in red. Scale bar represents 10 µm.
 
-## Does Gcl target a non-canonical Torso-dependent signaling pathway?
+### Does Gcl target a non-canonical Torso-dependent signaling pathway?
 
 In the canonical terminal pathway, binding of the Tsl ligand to Torso activates a MAP kinase cascade that ultimately results in the phosphorylation and subsequent degradation of the transcriptional repressor Capicua by the ERK kinase (de las Heras and Casanova, 2006; Grimm et al., 2012). Degradation of Capicua, in turn, results in the transcription of terminal patterning genes, such as tailless. Surprisingly, however, Pae et al., 2017 found that unlike RNAi knockdowns of the torso receptor, RNAi knockdown of two terminal pathway kinases, dsor1 (MEK) and rolled (MAPK) that function downstream of Torso, failed to rescue the PGC defects of gcl embryos. From this finding, the authors concluded that Gcl-mediated degradation of the Torso receptor must disrupt the operation of a novel non-canonical Torso signaling pathway. To test the possibility that this non-canonical pathway might have a transcriptional output like the canonical transduction pathway, we used mat-GAL4 to drive the expression of two activated versions of the MAPK/ERK kinase (MEKE203K and MEKF53S Goyal et al., 2017) in mothers and then assayed Sxl-Pe transcription in PBs and PGCs of their progeny. We found that maternal deposition of MEKE203K or MEKF53S could not activate Sxl-Pe transcription in PBs or PGCs (not shown, see Discussion). Nevertheless, we found that, as was observed for torsoDeg, Sxl-Pe expression is activated in male somatic nuclei by the GOF MEK proteins (Figure 10D, 46% of MEKE203K males showed patchy somatic Sxl expression, n = 13, p=0.019079). Taken together with our previous findings (Deshpande, 2004), this result would argue that the canonical Torso signaling pathway is capable of impacting Sxl-Pe promoter activity. In this context, it is also interesting to note that a key transcriptional target of the terminal signaling pathway, tailless, is not activated in gcl PBs or PGCs. This is also true for embryos expressing TorsoDeg or either of the GOF MEK variants (not shown). Since tailless transcription is ectopically activated in pgc mutant PGCs, it would appear that the canonical terminal signaling pathway is not able to overcome the repressive effects of the Pgc protein in the case of tailless, even in a gcl background.
 
-## torsoDeg disrupts the sequestration of germline determinants
+### torsoDeg disrupts the sequestration of germline determinants
 
 One of the more striking phenotypes in gcl mutants is a failure to properly sequester protein and mRNA components of the pole plasm. In WT embryos, nuclei entering the posterior pole trigger the release of the pole plasm from the posterior cortex of the embryo by a centrosome/microtubule-dependent mechanism (Lerit and Gavis, 2011; Raff and Glover, 1989). Once released, the pole plasm constituents are distributed within the growing bud by a microtubule-dependent mechanism. However, spreading is restricted to the growing bud and the pole plasm components are ultimately incorporated into newly formed PGCs when the buds cellularize. In gcl embryos, nuclear entry also triggers the release of the pole plasm from the cortex; however, the pole plasm proteins and mRNAs are not retained in the newly formed PBs after they are released, but instead spread to the cytoplasmic territories of neighboring somatic nuclei along the cortex and also into the interior of the embryo (Lerit et al., 2017). The difference between WT and gcl in the localization of pole plasm constituents is shown for Vasa protein (Figure 11) and gcl (Figure 12), pgc (Figure 13), and nos (Figure 14) mRNAs. As shown in maximum intensity projections and the accompanying distribution graphs, Vasa and the three pole plasm mRNAs are sequestered in the PGCs of WT embryos. In contrast, in gcl embryos, Vasa protein, and pgc and nos mRNAs spread into the territories occupied by nearby somatic nuclei. As evident from the profiles of pole plasm distribution for individual embryos, the extent of spreading varies somewhat from embryo to embryo; however, retention of pole plasm constituents in PGCs is clearly disrupted in gcl embryos. In single sections, we also observe pole plasm constituents spreading into the interior of the embryo as well as along the posterior lateral cortex. We also detected no gcl mRNA in the gcl mutant, as expected (Figure 12).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig11-v2.jpg)
 
-**Figure 11.:** gcl and torso embryos.Deg0–3 hr old paraformaldehyde-fixed embryos collected from wild-type (WT), gcl, or torso mothers were stained with anti-Vasa antibody to assess whether pole plasm is properly localized in Deggcl and torso embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using Vasa) away from posterior cap in Deggcl and torso embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 12, 13, and 13 for WT, Deggcl, and torso, respectively.Deg
+**Figure 11.:** 0–3 hr old paraformaldehyde-fixed embryos collected from wild-type (WT), gcl, or torsoDeg mothers were stained with anti-Vasa antibody to assess whether pole plasm is properly localized in gcl and torsoDeg embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using Vasa) away from posterior cap in gcl and torsoDeg embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 12, 13, and 13 for WT, gcl, and torsoDeg, respectively.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig12-v2.jpg)
 
-**Figure 12.:** gcl RNA is mislocalized from the posterior in torso embryos.DegsmFISH using probes specific for gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torso embryos. Deggcl embryos lack gcl RNA, as previously reported (Jongens et al., 1992). On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using gcl) away from posterior cap in torso embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 11, 10, and 16 for wild type (WT), Deggcl, and torso, respectively.Deg
+**Figure 12.:** smFISH using probes specific for gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torsoDeg embryos. gcl embryos lack gcl RNA, as previously reported (Jongens et al., 1992). On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using gcl) away from posterior cap in torsoDeg embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 11, 10, and 16 for wild type (WT), gcl, and torsoDeg, respectively.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig13-v2.jpg)
 
-**Figure 13.:** pgc RNA is mislocalized from the posterior in gcl and torso embryos.DegsmFISH using probes specific for pgc was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torso embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using Degpgc) away from posterior cap in gcl and torso embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 10, 14, and 14 for wild type (WT), Deggcl, and torso, respectively.Deg
+**Figure 13.:** smFISH using probes specific for pgc was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torsoDeg embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using pgc) away from posterior cap in gcl and torsoDeg embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 10, 14, and 14 for wild type (WT), gcl, and torsoDeg, respectively.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig14-v2.jpg)
 
-**Figure 14.:** nos RNA is mislocalized from the posterior in gcl and torso embryos.DegsmFISH using probes specific for nos was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torso embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below plot profiles show mislocalization of pole plasm (visualized using Degnos) away from posterior cap in gcl and torso embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 4, 6, and 6 for wild type (WT), Deggcl, and torso, respectively.Deg
+**Figure 14.:** smFISH using probes specific for nos was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in gcl and torsoDeg embryos. On top, images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below plot profiles show mislocalization of pole plasm (visualized using nos) away from posterior cap in gcl and torsoDeg embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 4, 6, and 6 for wild type (WT), gcl, and torsoDeg, respectively.
 
 Interestingly, as was the case for transcriptional activation, the effects of torsoDeg on the sequestration of the pole plasm constituents are quite similar to those observed in gcl embryos. In early torsoDeg embryos, pole plasm constituents appear to be localized correctly to the posterior pole (Figure 15). However, after the nuclei migrate to the surface of the embryo, the localization of pole plasm components is disrupted. Vasa protein (Figure 11) and pgc (Figure 13) and nos (Figure 14) mRNAs spread into the territories of somatic nuclei located along the posterior lateral cortex of torsoDeg embryos. In addition, gcl mRNA (Figure 12) is not properly restricted in torsoDeg embryos, and like pgc and nos mRNAs, it is distributed along the lateral cortex. This finding is of special interest as it suggests the existence of an antagonistic relationship between torso and gcl. While gcl negatively regulates the Torso receptor by promoting its degradation, Torso activity likely controls the sequestration of pole plasm—including gcl mRNA—to the PBs and PGCs. Such a mechanism would avoid inappropriate exposure of the neighboring somatic nuclei to gcl RNA (and possibly protein), ultimately ensuring proper germline/soma distinction.
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig15-v2.jpg)
 
-**Figure 15.:** gcl and torso embryos.DegsmFISH using probes specific for pgc or gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in young gcl and torso embryos. Images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show proper anchoring and localization of pole plasm (visualized using Degpgc or gcl) at the posterior cap in gcl and torso embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. For the Degpgc smFISH experiment, n = 9, 7, and 7 for wild type (WT), gcl, and torso, respectively. For the Deggcl smFISH experiment, n = 14, 9, and 8 for WT, gcl, and torso, respectively.Deg
+**Figure 15.:** smFISH using probes specific for pgc or gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in young gcl and torsoDeg embryos. Images are representative maximum intensity projections of the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show proper anchoring and localization of pole plasm (visualized using pgc or gcl) at the posterior cap in gcl and torsoDeg embryos (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. For the pgc smFISH experiment, n = 9, 7, and 7 for wild type (WT), gcl, and torsoDeg, respectively. For the gcl smFISH experiment, n = 14, 9, and 8 for WT, gcl, and torsoDeg, respectively.
 
-## Sequestration of germline determinants is disrupted by activated MEK
+### Sequestration of germline determinants is disrupted by activated MEK
 
 Although we found that ectopically expressed GOF MEK proteins are unable to recapitulate the effects of torsoDeg on transcriptional activity in PBs and PGCs, it was unclear whether this negative result means that a non-canonical Torso-dependent signaling pathway is responsible for activating transcription in gcl PBs and PGCs. To explore this question further, we tested whether ectopic expression of GOF MEK can induce defects in the sequestration of pole plasm components. As shown in Figure 16, MEKE203K or MEKF53S protein induces the inappropriate dispersal of gcl and pgc mRNAs into the surrounding soma in a pattern very similar to that observed in torsoDeg and gcl embryos. Thus, this gcl phenotype would appear to depend upon the canonical terminal signal transduction cascade.
 
 ![Figure 16.](https://cdn.elifesciences.org/articles/54346/elife-54346-fig16-v2.jpg)
 
-**Figure 16.:** smFISH using probes specific for pgc or gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in embryos collected from mothers expressing MEKE203K or MEKF53S driven by mat-GAL4. On top, images are representative maximum intensity projections of pgc RNA localization at the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using either pgc or gcl) away from posterior cap in embryos expressing one of two MEK gain of function transgenes (E203K and F53S) (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 15, 19, and 9 for wild type (WT), MEK, and E203KMEK, respectively.F53S
+**Figure 16.:** smFISH using probes specific for pgc or gcl was performed in 0–3 hr old embryos to assess whether pole plasm is properly localized in embryos collected from mothers expressing MEKE203K or MEKF53S driven by mat-GAL4. On top, images are representative maximum intensity projections of pgc RNA localization at the posterior pole of each indicated genotype. Scale bar represents 10 µm. Below, plot profiles show mislocalization of pole plasm (visualized using either pgc or gcl) away from posterior cap in embryos expressing one of two MEK gain of function transgenes (E203K and F53S) (see Materials and methods for details of quantification). Each plot shows a representative experiment, with each line depicting pole plasm distribution of an individual embryo. n = 15, 19, and 9 for wild type (WT), MEKE203K, and MEKF53S, respectively.
 
 ## Discussion
 
@@ -181,21 +283,199 @@ There are also reasons to think that the canonical Torso signal transduction cas
 
 ## Materials and methods
 
-## Fly stocks and genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>gcl</td>
+      <td>Jongens et al., 1994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>gcl-bcd-3’UTR</td>
+      <td>Jongens et al., 1994</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Maternal-tubulin-GAL4 (67.15)</td>
+      <td>Eric Wieschaus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nosGAL4-VP16</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 7303; RRID:BDSC_7303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-Sxl (DB106)</td>
+      <td>Helen Salz</td>
+      <td></td>
+      <td>Maintained in the lab of H. Salz</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Sxl7BO</td>
+      <td>Tom Cline</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Sxl RNAi (VALIUM20)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 34393; RRID:BDSC_34393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tsl4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 3289; RRID:BDSC_3289</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-torsoDeg</td>
+      <td>Pae et al., 2017</td>
+      <td></td>
+      <td>Maintained in the lab of R. Lehmann</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MEKE203K</td>
+      <td>Goyal et al., 2017</td>
+      <td></td>
+      <td>Maintained in the lab of S. Shvartsman</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MEKF53S</td>
+      <td>Goyal et al., 2017</td>
+      <td></td>
+      <td>Maintained in the lab of S. Shvartsman</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-egfp RNAi (VALIUM20)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 41552; RRID:BDSC_41552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (rat polyclonal)</td>
+      <td>Paul Lasko</td>
+      <td>RRID:AB_2568498</td>
+      <td>Used 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: 46F11; RRID:AB_10571464</td>
+      <td>Used 1:15</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sxl (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: M18; RRID:AB_528464</td>
+      <td>Used 1:10</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pgc</td>
+      <td>Eagle et al., 2018</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gcl</td>
+      <td>Eagle et al., 2018</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>nos</td>
+      <td>Eagle et al., 2018</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sxl</td>
+      <td>Thomas Gregor</td>
+      <td>smFISH probe set</td>
+      <td>Intronic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sis-b</td>
+      <td>Thomas Gregor</td>
+      <td>smFISH probe set</td>
+      <td>Intronic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>run</td>
+      <td>Thomas Gregor</td>
+      <td>smFISH probe set</td>
+      <td>Intronic probes</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tll</td>
+      <td>Biosearch Technologies; this paper</td>
+      <td>smFISH probe set</td>
+      <td>Exonic probes; sequences available in Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoescht</td>
+      <td>Invitrogen</td>
+      <td>Fisher Scientific: H3570</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and genetics
 
 The following fly stocks were used for the analysis reported in this manuscript. white1 (w1) was used as the WT stock. gcl, a null allele, and gcl-bcd-3’UTR stocks were generous gifts from Jongens et al., 1994; Jongens et al., 1992. tsl4 (BDSC #3289), a loss-of-function mutation, was obtained from Eric Wieschaus. egfp RNAi (BDSC #41552), UAS-Sxl (Helen Salz - DB106), and MEK gain-of-function transgenic stocks MEKE203K and MEKF53S (gift of Stas Shvartsman, Goyal et al., 2017) were driven by maternal-tubulin-GAL4 (67.15) driver stock, which carries four copies of maternal-tubulin-GAL4 (gift from Eric Wieschaus). The nosGAL4-VP16 driver (BDSC #7303) was also used. UAS-torsoDeg flies were kindly provided by Ruth Lehmann (Pae et al., 2017). The Sxl deficiency line, Sxl7BO, was a gift from Tom Cline.
 
-## Immunostaining
+### Immunostaining
 
 Embryos were formaldehyde-fixed, and a standard immunohistochemical protocol was used for DAB staining as described previously (Deshpande et al., 1999). Fluorescent immunostaining employed fluorescently labeled (Alexa) secondary antibodies. The primary antibodies used were mouse anti-Vasa (1:10, DSHB, Iowa City, IA), rat anti-Vasa (1:1000, gift of Paul Lasko), mouse anti-Sex lethal (1:10, DSHB M18, Iowa City, IA), and rabbit anti-Centrosomin (1:500, gift from Thomas Kaufmann). Secondary antibodies used were Alexa Fluor goat anti-rat 488 or 546 (1:500, ThermoFisher Scientific, Waltham, MA) and Alexa Fluor goat anti-rabbit 647 (1:500, ThermoFisher Scientific, Waltham, MA), DAPI (10 ng/mL, ThermoFisher Scientific, Waltham, MA), and Hoescht (3 µg/mL, Invitrogen, Carlsbad, CA). Stained embryos were mounted using Aqua Poly/mount (Polysciences, Warrington, PA) on slides. At least three independent biological replicates were used for each experiment.
 
 Single molecule fluorescent in situ hybridization smFISH was performed as described by Little and Gregor using formaldehyde-fixed embryos (Little et al., 2015; Little and Gregor, 2018). All probe sets were designed using the Stellaris probe designer (20-nucleotide oligonucleotides with 2-nucleotide spacing). pgc, gcl, and nanos smFISH probes (coupled with either atto565 or atto647 dye, Sigma, St. Louis, MO) were a gift from Liz Gavis (Eagle et al., 2018), and Sxl, sis-b, and runt intronic probes (coupled with either atto565 or atto633 dye, Sigma, St. Louis, MO) were a gift from Thomas Gregor. tll probes (coupled with Quasar 570) were produced by Biosearch Technologies (Middlesex, UK). All samples were mounted using Aqua Poly/mount (Polysciences, Warrington, PA) on slides. At least three independent biological replicates were used for each experiment.
 
-## Statistical analysis
+### Statistical analysis
 
 For smFISH experiments, total number of embryos expressing sis-b, runt, or Sxl in PBs/PGCs were counted, and pairwise comparisons of the proportion of embryos positive for transcription in PBs/PGCs or proportion of male embryos expressing Sxl in the soma were performed using Fisher’s exact test. Sex bias in gcl and gcl;SxlRNAi embryos was analyzed by comparing proportions also using Fisher’s exact test. To calculate significant differences in number of embryos displaying Sxl expression in pole cells or reduced at the anterior from ectopic gcl expression (based on DAB-visualization), we used Welch’s two sample t-test. Using NC13/14 embryos, PGCs were counted from the first Vasa-positive cell to the last through an entire z-volume captured at 1-micron intervals. Rescue in gcl;tsl embryos was analyzed either using Fisher’s exact test for proportions of embryos showing PGC transcription or a one-way ANOVA with pairwise t-test comparisons for pole cell counts. Data were plotted and statistical analyses were performed using Microsoft Excel, R Project, or GraphPad Prism software. For the Sxl RNAi rescue experiment, data were analyzed by Student’s two-tailed t-test or a nonparametric Mann–Whitney U-test and are displayed as mean ± SD. Data shown are representative results from at least two independent biological replicates.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 A Nikon-Microphot-SA microscope was used to capture images of DAB-stained embryos (40×). Images for the Sxl RNAi rescue experiment were acquired using a 100×, 1.49 NA Apo TIRF oil immersion objective on a Nikon Ti-E system fitted with a Yokagawa CSU-X1 spinning disk head, Hamamatsu Orca Flash 4.0 v2 digital CMOS camera, and Nikon LU-N4 solid state laser launch. Imaging for all other smFISH and fluorescent immunostaining experiments was performed on a Nikon A1 inverted laser-scanning confocal microscope.
 

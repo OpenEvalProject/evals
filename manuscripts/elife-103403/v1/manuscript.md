@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04tnbqb63 Signalling and Transcription Laboratory, Francis Crick Institute London United Kingdom
-2. https://ror.org/04tnbqb63 Structural Biology STP, Francis Crick Institute London United Kingdom
-3. https://ror.org/04tnbqb63 Chemical Biology STP, Francis Crick Institute London United Kingdom
+1. Signalling and Transcription Laboratory, Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+2. Structural Biology STP, Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+3. Chemical Biology STP, Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
 
 † Corresponding author
 
@@ -26,55 +26,266 @@ Phosphoprotein phosphatase 1 (PP1) is a member of the PPP superfamily of protein
 
 The Phactr family of actin-regulated PP1 cofactors are the only PIPs known to directly impose substrate sequence specificity at the dephosphorylation site itself (Fedoryshchak et al., 2020). Like many PIPs, they interact with PP1 using the previously defined ‘RVxF’, ‘, and ‘R’ motifs (for overview, see Choy et al., 2014). Structural alignment showed that the Phactrs belong to a small subset of RVxF-ΦΦ-R PIPs whose shared trajectory across the PP1 surface continues to the edge of the hydrophobic groove, making an additional PP1 contact through an additional motif that we termed the ‘W’ SLIM (Ragusa et al., 2010; Choy et al., 2014; Chen et al., 2015; Fedoryshchak et al., 2020; Yan et al., 2021; Figure 1A, Figure 1—figure supplement 1). These ‘RVxF-ΦΦ-R-W string’ PIPs include Neurabin/Spinophilin (PPP1R9A/B), which play important roles in PP1-dependent regulation of neuronal plasticity (Allen et al., 1997; Burnett et al., 1998, reviewed by Sarrouilhe et al., 2006; Foley et al., 2021), PNUTS (PPP1R10), which regulates PolII and chromatin dynamics (Lee et al., 2010; Cortazar et al., 2019), and PPP1R15A/B, which mediate translational regulation through control of eIF2α dephosphorylation (Novoa et al., 2001; Chen et al., 2015; Yan et al., 2021; Figure 1A). In the Phactr1-PP1 holoenzyme, Phactr1 sequences C-terminal to the RVxF-ΦΦ-R-W string interact with the PP1 hydrophobic groove to form a composite hydrophobic pocket, topped by a basic rim. This imposes strong sequence selectivity on substrates, favouring hydrophobic residues at positions +4/+5 relative to the phosphorylated residue, within an acidic context (consensus pS/T-x(2-3)-Φ-L, the ‘LLD motif’). Strikingly, this specificity is maintained in a PP1-Phactr1 fusion protein comprising PP1(1–304) linked to Phactr1 sequences from residue 526, just C-terminal to its RVxF motif (Fedoryshchak et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig1-v1.jpg)
+
+**Figure 1.:** (A) Structures of fusion proteins. N-terminally Flag-tagged PP1α(7–304) is linked to sequences from each of the four families of RVxF-ΦΦ-R-W PIPs, shown as an open box. Each fusion contains sequences immediately C-terminal to the PP1 interaction motif (coloured lines), including known protein interaction domains previously implicated in potential substrate interactions (coloured blocks). For PIP sequences in each fusion, see Figure 1—figure supplement 1A and Methods. Middle, sequences of the RVxF-ΦΦ-R-W string in each PIP, with motifs coloured. Each fusion contains the sequences C-terminal to the dashed line, representing the position of PP1-SGSGS linker insertion. Bottom, structures of PP1/PIP complexes. Crystal structures of different PIP/PP1 complexes superimposed, aligned on PP1. Grey: PP1 (PDB: 4MOV), with PIP sequences as follows; green, Phactr1 (PDB: 6ZEE); magenta, Neurabin (PDB: 3HVQ); orange, R15A (PDB: 7NZM); blue, PNUTS (PDB: 4MOY). Dashed line, GSGSG linker. (B) Activity of PP1-Phactr1 expressed in Flp-In T-REx 293 cells. PP1-Phactr1 expression was induced by tetracycline as indicated. Phosphorylation of Phactr1/PP1 substrates IRSp53 S455 and Afadin S1275 is shown below. (C) Analysis of Phactr1/PP1 substrate Afadin pS1275 phosphorylation in Flp-In T-REx 293 cells expressing PP1 and PP1-fusion proteins.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PIP sequences in each fusion. Sequences of the PP1-binding and C-terminal sequences in each RVxF-ΦΦ-R-W PIP fusion are shown. Blue line indicates fusion point. Known interaction domains are overlined. (B) IRSp53 WT or L460A mutant was transfected into 293 Flp-In T-REx cells expressing the different fusion proteins, and fusion expression induced by tetracycline. Immunoblotting for total and S455-phosphorylated IRSp53 is shown. Flag tag indicates the expression of the fusion phosphatases. For each of the four PP1-Phactr fusions, the IRSp53 L460A peptide is significantly less reactive than the IRSp53WT peptide (p<0.05 for each fusion). Since the specificity of the four PP1-Phactr fusions is the same, combination of data for all four fusions is shown at the right. Bars are plotted as averages of 3 or 4 replicates. Statistical significance by Student’s t-test: *, p<0.05; ***, p<0.001; ****, p<0.0001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Crystal structure of the PP1/Phactr1 complex (PDB 6ZEE). PP1 in white surface representation, with the hydrophobic substrate groove residues C127, A128, S129, I130, I133, Y134, V195, L205, W206, V223 coloured in grey and PP1 active site presumptive Mn2+ ions in purple spheres. Phactr1 is in green surface representation. (B) Crystal structure of the PP1/Spinophilin complex (PDB 3EGG). PP1 is shown as in A, and Spinophilin shown in light pink surface representation. (C) Crystal structure of the PP1/Neurabin complex (PDB 3HVQ). PP1 is shown as in A, and Neurabin shown in red surface representation. (D) Crystal structure of the PP1/PNUTS complex (PDB 4MOY). PP1 is shown as in A, and PNUTS shown in blue surface representation. (E) Crystal structure of the PP1/R15A/Actin/DNAse1 complex (PDB 7NZM). PP1 is shown as in A, and R15A shown in wheat surface representation, and actin as yellow ribbons. (F) Crystal structure of the PP1/R15B complex (PDB 4V0X). PP1 is shown as in A, and R15B shown in orange surface representation. (G) Superposition of all the PIP/PP1 complex structures shown in A–F. A close-up for the PP1 hydrophobic groove is shown, with PP1 as in A and each PIP shown as ribbon representation, coloured as in panels A–F, with the W motif residues shown in sticks. (H) Same as (F) in a different orientation to highlight the alternative orientations of the W PP1/R15A/Actin/DNAse1 and PP1/R15B complexes.
+
 Neurabin and Spinophilin remodel the PP1 hydrophobic groove differently from Phactr1, generating a structurally distinct surface on the holoenzyme, and it is likely that the other RVxF-ΦΦ-R-W PIPs do so as well (Ragusa et al., 2010; Fedoryshchak et al., 2020) (see Figure 1A, Figure 1—figure supplement 2). Whether and how these diverse surfaces might play a role in the substrate specificity of these PIP/PP1 holoenzymes has remained unclear, largely because little is known about their substrates. Here, we investigate determinants of substrate specificity in the other RVxF-ΦΦ-R-W PIPs, focussing on Neurabin/Spinophilin, which also contain a PDZ domain previously suggested to be involved in substrate recruitment (Burnett et al., 1998; Kelker et al., 2007). We use the PP1-PIP fusion approach to show that the four Phactr1 holoenzymes have indistinguishable substrate specificities and to identify novel candidate substrates for the other RVxF-ΦΦ-R-W PIP/PP1 complexes. We use 4E-BP1, a new Neurabin/PP1 substrate, to show that unlike the Phactr1/PP1 holoenzyme, substrate specificity of Neurabin/PP1 is largely determined by interaction with the Neurabin PDZ domain rather than the primary sequences of the dephosphorylation site itself.
 
 ## Results
 
-## PP1-PIP fusion proteins
+### PP1-PIP fusion proteins
 
 The PP1 C-terminal sequences closely approach the Phactr1 RVxF-ΦΦ-R-W string in the vicinity of the ΦΦ motif, which allowed the construction of a single chain PP1α -PIP fusion derivative comprising PP1α(7–304) linked to Phactr1 sequences from a point just C-terminal to its RVxF motif (Figure 1A, Figure 1—figure supplements 1A and 2A). The remodelled hydrophobic groove of this fusion is structurally identical to that of the Phactr/PP1 holoenzyme, and it retains similar activity and specificity (Fedoryshchak et al., 2020). Guided by the structures of the other RVxF-ΦΦ-R-W PIPs, we generated analogous fusions of N-terminally Flag-tagged PP1 with fragments of Neurabin and Spinophilin (Figure 1—figure supplement 2B and C) (PPP1R9A/B, Ragusa et al., 2010), PNUTS (Figure 1—figure supplement 2C), PPP1R10 (Choy et al., 2014), and PPP1R15A and PPP1R15B (Figure 1—figure supplement 2E and F; Chen et al., 2015; Yan et al., 2021), comprising the PP1-interacting sequences and any known protein interaction domains immediately C-terminal to them. We also constructed fusions with each of the four Phactr proteins to explore any variation in their sequence specificities (Figure 1A; Figure 1—figure supplements 1A and 2A).
 
 Each fusion protein was stably expressed in 293 Flp-In T-REx cells using a tetracycline-inducible vector (Ward et al., 2011). Tetracycline titration of PP1-Phactr1 cells induced increasing expression of the fusion protein, leading to corresponding dephosphorylation of its substrates IRSp53 pS455 and Afadin pS1275 (Fedoryshchak et al., 2020; Figure 1B). Afadin pS1275 was dephosphorylated by all four PP1-Phactr fusions, but not by the other PP1-PIP fusions (Figure 1C). Similar results were observed with exogenously expressed wildtype IRSp53. In this setting, alanine substitution of IRSp53 L460, which contacts the novel Phactr1/PP1 hydrophobic pocket and impairs dephosphorylation by the intact Phactr1/PP1 holoenzyme (Fedoryshchak et al., 2020), also impaired dephosphorylation by all the PP1-Phactr fusions, indicating that they recognise phosphorylated IRSp53 in a similar way (Figure 1—figure supplement 1B).
 
-## Proteomic analysis of PP1-fusion specificity
+### Proteomic analysis of PP1-fusion specificity
 
 To investigate the substrate specificities of the fusion proteins, we performed tandem mass tag (TMT) phosphoproteomics. Fractionated peptides were measured in both MS2 and MS3 modes for maximal identification and quantification (Figure 2A). Phosphorylation site abundances within triplicate samples from the same cell line were comparable between replicates (Figure 2B). First, we identified phosphorylation sites significantly depleted by expression of PP1α(7–304) alone compared with vector only, using Perseus software and a t-test with a 1% permutation-based false discovery rate cut-off (Tyanova et al., 2016). In agreement with previous results (Hoermann et al., 2020), PP1 exhibited little sequence specificity, other than a preference for positively charged residues in positions −3, –1, and +3 to the dephosphorylation site (Figure 2—figure supplement 1A and B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig2-v1.jpg)
+
+**Figure 2.:** (A) Tandem mass tag (TMT) phosphoproteomics workflow. (B) Average sample-to-sample correlations between triplicates from cells expressing the different fusion proteins, PP1α(7–304)-SGSGS alone, or empty vector. For the same fusion-expressing cell lines, the average of Pearson coefficients of correlation within a triplicate are shown. (C) Specific phosphosite depletion in cells expressing PP1-Phactr1 as opposed to PP1 alone. Abundances of specific phosphosites in PP1 and PP1-Phactr1 samples were determined, log-transformed, and expressed as Z-scores. For each phosphosite, depletion in cells expressing PP1-Phactr1 as opposed to PP1 alone was quantified as the difference between the PP1 and PP1-Phactr1 Z-scores, and plotted versus -log10p. Dashed line, 5% false discovery rate cut-off. Purple, phosphosites conforming to the Phactr1/PP1 substrate motif S/T-x2,3-Φ-L. Red, Phactr1/PP1 substrates identified previously (Fedoryshchak et al., 2020). (D) Enrichment of hits conforming to the Phactr1 substrate motif S/T-x2,3-Φ-L and of hits identified in the previous study in all Phactr samples calculated using Fisher’s exact test. (E) Venn diagram showing overlap between hits identified as potential Phactr1-4 substrates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Phosphorylation sites depleted in PP1-expressing samples compared with control empty-vector samples. Dashed line, 1% false discovery rate cut-off. (B) Frequency plots for residues identified as PP1 hits in (A) and for all phosphorylation sites in the analysis. Enrichment is broadly consistent with published findings (Hoermann et al., 2020). (C) The top Phactr1/PP1 substrate sites previously identified in mouse NIH3T3 cells (Fedoryshchak et al., 2020) are listed and compared with the candidate substrates for the four PP1-Phactr fusions identified here in human 293 Flp-In T-REx cells. Phosphorylation sites that could not be identified or that were not detectable in 293 Flp-In T-REx cells are indicated. ‘+’ and ‘no‘ indicate phosphorylation sites identified in 293 Flp-In T-REx cells that were either sensitive (+) or insensitive (no) to PP1-Phactr fusion expression. (D–F) Specific phosphorylation site depletion in cells expressing PP1-Phactr2 (C), PP1-Phactr3 (D), or PP1-Phactr4 (E) fusion proteins as opposed to PP1 alone. Abundances of specific phosphorylation sites in PP1 and the different PP1-Phactr fusion samples were determined, log-transformed, and expressed as Z-scores. For each phosphorylation site, depletion in cells expressing each fusion as opposed to PP1 alone was quantified as the difference between the PP1 and PP1-Phactr fusion Z-scores, and plotted versus -log10p. Dashed line, 5% false discovery rate cut-off. Purple, phosphorylation sites conforming to the Phactr1/PP1 substrate motif S/T-x2,3-Φ-L. Red, top Phactr1/PP1 hits identified previously (Fedoryshchak et al., 2020).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Identification of PP1-R15A substrates. Abundances of specific phosphorylation sites in PP1-R15A samples were determined, log-transformed, and expressed as Z-scores. For each phosphorylation site, the average abundance in the remaining datasets, excluding PP1-R15B, was quantified in the same way. Depletion of phosphorylation sites in cells expressing PP1-R15A was quantified as the difference between the PP1-R15A and the dataset average Z-scores, and plotted versus -log10p. Dashed line, 5% false discovery threshold. (B) Identification of PP1-R15B substrates. Depletion of each phosphorylation site in cells expressing PP1-R15B, relative to its average abundance in the other datasets, excluding PP1-R15A, was quantified and plotted as in (A). Significantly depleted phosphorylation sites are highlighted in red. (C) Identification of PP1-PNUTS substrates. Depletion of each phosphorylation site in cells expressing PP1-PNUTS, relative to its average abundance in all the other datasets, was quantified and plotted as in (D). Significantly depleted phosphorylation sites are highlighted in red. PNUTS phosphorylation sites exhibiting increased abundance, presumably reflecting PP1-PNUTS fusion expression, are highlighted in blue.
 
 We then compared the specificities of the four PP1-Phactr fusion proteins. Expression of PP1-Phactr1 revealed numerous phosphorylation sites that were specifically depleted compared with cells expressing PP1α alone (Figure 2C). This population contained many of the Phactr1/PP1 holoenzyme substrates previously identified in neurons or NIH3T3 fibroblasts, including IRSp53 pS455 and Afadin pS1275 (Figure 2C; Fedoryshchak et al., 2020). Of the 28 top Phactr1/PP1 hits previously identified in NIH3T3 cells, 18 were detectable in the 293 system, of which 13 also registered as PP1-Phactr1 hits (Figure 2—figure supplement 1C). The putative PP1-Phactr1 substrates were also substantially enriched in the Phactr1/PP1 consensus dephosphorylation motif S/T-x2,3-Φ-L (Figure 2D). The profiles of PP1-Phactr2, PP1-Phactr3, and PP1-Phactr4 cells were substantially similar to that of PP1-Phactr1 (Figure 2—figure supplement 1D–F), exhibiting good overall correlations both between total phosphorylation site profiles (Figure 2B), and significant enrichment for both the S/T-x2,3-Φ-L motif and specific Phactr1/PP1 substrates (Figure 2D; Figure 2—figure supplement 1C); over 60% of the depleted phosphorylation sites were in common between all four fusions (Figure 2E). These data show that the PP1-Phactr fusions recapitulate the specificity of the Phactr1/PP1 holoenzyme.
 
 We next used the proteomics approach to investigate protein dephosphorylation by the PP1-R15A/B and PP1-PNUTS fusion proteins, comparing each fusion to all the others (other than its paralog) or PP1α alone (Figure 2B). PPP1R15A has a well-validated substrate, eIF2α pS51 (Novoa et al., 2001), whose effective dephosphorylation requires additional recruitment of G-actin to the PPP1R15A/PP1 complex (Chen et al., 2015; Yan et al., 2021). The eIF2α pS51 phosphorylation site was not detected in the dataset, however, and no other phosphorylation sites were detectably depleted, apart from PPP6R1 S531, in cells expressing PPP1R15B (Figure 2—figure supplement 2A and B). Expression of the PP1-PNUTS fusion, which includes sequences that recruit WDR82 (Lee et al., 2010), led to specific depletion of phosphorylation sites from CXXC1/CFP1 and SET1B, which along with WDR82 are components of the COMPASS histone lysine N-methyl transferase complexes (Cenik and Shilatifard, 2021; Figure 2—figure supplement 2C). These proteins bear no obvious sequence similarity in the vicinity of the dephosphorylation site (Figure 2—figure supplement 2D). These findings will be explored in future work.
 
-## New candidate substrates for Neurabin and Spinophilin
+### New candidate substrates for Neurabin and Spinophilin
 
 Having validated the PP1-PIP fusion approach, we focussed on Neurabin and Spinophilin, two PIPs implicated in neuronal plasticity (Sarrouilhe et al., 2006; Foley et al., 2021), which contain a PDZ domain implicated in recruitment of potential substrates (Burnett et al., 1998; Yan et al., 1999; Sarrouilhe et al., 2006; Kelker et al., 2007). The PDZ domain is separated from the RVxF-ΦΦ-R-W string by a 5-turn α-helix, which remodels the PP1 hydrophobic groove in a manner distinct from Phactr1 (Figure 1A, Figure 1—figure supplement 2G; Ragusa et al., 2010; Fedoryshchak et al., 2020).
 
 Expression of the PP1-Neurabin or PP1-Spinophilin fusions led to specific depletion of closely related sets of phosphorylation sites (Figure 3A and B). These included multiple sites from the translational inhibitor proteins 4E-BP1 and 4E-BP2. Levels of total 4E-BP1 and 4E-BP2 proteins were not affected (Figure 3—figure supplement 1A). Phosphorylation sites from two other proteins, DTL and CAMSAP3, were also significantly depleted upon expression of both PP1-Spinophilin and PP1-Neurabin fusions, while a further 7 were specific to one fusion or the other (see Discussion). However, apart from a preference for proline at position +1, inspection of these sequences did not reveal any obvious sequence similarities in the vicinity of the dephosphorylation site (Figure 3C). Substrates identified in the PP1-Phactr and PP1-PNUTS screens showed no detectable depletion, and vice versa, indicating that the substrates identified were specific for each fusion. Consistent with the phosphoproteomics data, immunoblotting analysis with phosphorylation-specific antibodies demonstrated that induction of PP1-Neurabin resulted in decreased phosphorylation of T70, S65/S101, and possibly T37/T46, while total 4E-BP1 resolved from a heterogeneous distribution to a largely monodisperse species (Figure 3D, Figure 3—figure supplement 1B and C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig3-v1.jpg)
+
+**Figure 3.:** (A) Identification of PP1-Neurabin substrates. Abundances of specific phosphorylation sites in PP1-Neurabin samples were determined, log-transformed, and expressed as Z-scores. For each phosphosite, the abundance in the remaining datasets, excluding PP1-Spinophilin, was quantified in the same way. Depletion of phosphosites in cells expressing PP1-Neurabin was quantified as the difference between the PP1-Neurabin and the dataset average Z-scores, and plotted versus -log10p. Dashed line, 5% false discovery threshold; significantly depleted phosphosites are highlighted in red. (B) Identification of PP1-Spinophilin substrates. Depletion of each phosphorylation site in cells expressing PP1-Spinophilin, relative to its average abundance in the other datasets, excluding PP1-Neurabin, was quantified and plotted as in (A). (C) Sequences of significantly depleted phosphorylation sites identified in (A and B). (D) Immunoblot analysis of 4E-BP1 phosphorylation sites in 293 Flp-In T-REx cells upon induced expression of PP1-Neurabin or empty vector. Note that the low level of PP1-Neurabin expression in uninduced cells (see Figure 3—figure supplement 1C) alters the relative abundance of the different phosphorylated forms compared with 293 Flp-In T-REx cells expressing vector alone. (E) Protein synthesis quantification assay. 293 Flp-In T-REx cells expressing vector alone, PP1-Neurabin, or PP1, were induced with tetracycline (50 nM) and/or treated with rapamycin (50 nM) for 16 hr as indicated before treatment with O-propargyl puromycin to label nascent polypeptides, which were conjugated to Alexa Fluor-488 azide and quantified by flow cytometry. Fluorescence intensities were normalised to untreated cells.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) 4E-BP1 and 4E-BP2 levels are unaffected by PP1-Neurabin expression. Protein abundances in PP1-Neurabin cells before and after induction of PP1-Neurabin expression were determined, log-transformed, and normalised to median. Change in relative abundance upon induction was scored as the difference between the induced and uninduced samples, and plotted versus -log10p. Dashed line, 5% false discovery threshold. Neurabin and the 4E-BPs are highlighted in red. (B) Specificity analysis of the commercial anti-phospho-S65 antibody. (C) Basal expression of PP1-Neurabin in uninduced 293 Flp-In T-REx cells. Data are contrast-enhanced blots from Figure 3D. (D) mTORC1 pathway schematic (see Hoeffer and Klann, 2010; Liu and Sabatini, 2020).
+
 The 4E-BPs are critical components of the mTORC1 growth control pathway which couples translation to nutrient availability and extracellular signals (reviewed by Hoeffer and Klann, 2010; Liu and Sabatini, 2020) (see Discussion). Phosphorylation of 4E-BPs potentiates translation by inhibiting their ability to sequester EIF4E (reviewed by Martineau et al., 2013; Romagnoli et al., 2021). Accordingly, expression of PP1-Neurabin, but not PP1 alone, suppressed translation in 293 cells (Figure 3E). These data establish the Neurabin/PP1 and Spinophilin/PP1 holoenzymes as potential negative regulators of the mTORC1 pathway (Figure 3—figure supplement 1D; see Discussion).
 
-## The PP1-Neurabin PDZ domain is required for 4E-BP1 dephosphorylation
+### The PP1-Neurabin PDZ domain is required for 4E-BP1 dephosphorylation
 
 To demonstrate a direct enzyme-substrate relationship between 4E-BP1 and PP1-Neurabin, we expressed mCherry-tagged 4E-BP1 in 293 cells, recovered it on RFP-trap affinity beads, and incubated it with increasing amounts of recombinant PP1-Neurabin. Analysis with the phospho-specific antibodies confirmed that pT37/46, pS65/101, and pT70 are all direct targets for dephosphorylation by PP1-Neurabin, with pT70 being somewhat preferred (Figure 4A and B). The 4E-BP C-terminal sequences are similar to those of p70 S6K, which was previously shown to interact with the Neurabin PDZ domain through a C-terminal PDZ-binding motif (PBM) (Burnett et al., 1998; Figure 4C). We therefore considered the possibility that 4E-BP1 dephosphorylation at multiple sites by PP1-Neurabin reflects its recruitment through PDZ interaction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig4-v1.jpg)
+
+**Figure 4.:** (A) mCherry-tagged wildtype 4E-BP1 or 4E-BP1(118+A) were expressed and purified from 293 cells, incubated with increasing amounts of recombinant PP1-Neurabin. Phosphorylation of the indicated sites was analysed by immunoblotting. (B) Quantification of (A). (C) Left, sequence alignment of potential Neurabin/Spinophilin PDZ domain ligands. Grey shading, hydrophobic residues; pink, acidic residues; cyan, basic residues; orange, hydrophilic residues. Underlining shows sequences N-terminally linked to 6-carboxyfluorescein (FAM) for use in fluorescence polarisation (FP) assay. Right, binding affinities for the Neurabin and Spinophilin PDZ domains as determined in the FP assay. (D) FP assay. FAM-labelled peptides (see C) were titrated with increasing concentrations of recombinant Neurabin PDZ domain and affinity estimated from change in fluorescence anisotropy. For Spinophilin data, see Figure 4—figure supplement 1B.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Immunoblotting analysis of wildtype mCherry-4E-BP1 or mutants either lacking the six C-terminal residues (ΔCter) or containing an additional C-terminal alanine (118+A) upon expression in 293 cells with or without PP1-Neurabin expression as indicated. (B) Left, sequence alignment of potential Neurabin/Spinophilin PDZ domain ligands. Grey shading, hydrophobic residues; pink, acidic residues; cyan, basic residues; orange, hydrophilic residues. Underlining shows sequences N-terminally linked to 6-carboxyfluorescein (FAM) for use in fluorescence polarisation (FP) assay. FAM-labelled peptides were titrated with increasing concentrations of recombinant Spinophilin PDZ domain and affinity estimated from change in fluorescence anisotropy (for summary, see Figure 4C). (C) Immunoblotting analysis of S6K phosphorylation in 293 Flp-In T-REx cells upon expression of PP1-Neurabin or empty vector.
 
 Simple deletion of the 4E-BP1 C-terminal residues substantially blocked phosphorylation of transfected mCherry-4E-BP1 (Figure 4—figure supplement 1A), reflecting the loss of the C-terminal TOR signalling (TOS) motif required for mTORC1 kinase recruitment and 4E-BP1 phosphorylation (Schalm and Blenis, 2002; Yang et al., 2017). Noting that the TOS motif does not include the C-terminal carboxylate, an essential part of the classical PBM (Harris and Lim, 2001; Tonikian et al., 2008; Subbaiah et al., 2011), we generated mCherry-4E-BP1(118+A): this contains an additional C-terminal alanine, which leaves the TOS motif intact but inactivates the PBM. Indeed, although mCherry-4E-BP1(118+A) was efficiently phosphorylated upon expression in 293 cells (Figure 4—figure supplement 1A), its dephosphorylation in vitro required PP1-Neurabin concentrations some 20–50 times greater than the wildtype protein (Figure 4A and B). These results suggest that the 4E-BP1 C-terminal sequences constitute a PBM and point to a role for the Neurabin and Spinophilin PDZ domains in substrate recognition.
 
 We next used a fluorescence polarisation (FP) assay to compare the PDZ-binding affinity of the 4E-BP C-terminal sequences with those of p70 S6K and other proteins reported to be Neurabin/Spinophilin PDZ ligands (Figure 4C; Burnett et al., 1998; Penzes et al., 2001; Kelker et al., 2007; Ragusa et al., 2010). The 4E-BP1 PBM, which is identical amongst all three 4E-BP isoforms, bound the PDZ domains with comparable affinities in the micromolar range, and binding was abolished by substitution of the C-terminal hydrophobic residues (Figure 4C and D; Figure 4—figure supplement 1B). These binding affinities were 10- to 30-fold greater than those of p70 S6K and the RhoGEF Kalirin-7, which were of order 100 µM, and >100-fold greater than various glutamate receptor C-terminal peptides (Figure 4C and D; Figure 4—figure supplement 1B). p70 S6K also functions in the mTORC1 pathway (for reviews, see Liu and Sabatini, 2020; Artemenko et al., 2022). Although most of its phosphorylation sites were not detected by phosphoproteomics, immunoblotting experiments demonstrated that PP1-Neurabin expression decreased the levels of the activating T389 phosphorylation (Figure 4—figure supplement 1C).
 
-## PDZ domain interaction determines PP1-Neurabin specificity
+### PDZ domain interaction determines PP1-Neurabin specificity
 
 We next compared how interactions with the PP1-Neurabin PDZ and the remodelled PP1 hydrophobic groove contribute to substrate specificity. To do this, we compared the ability of PP1-Neurabin and PP1-Phactr1 to dephosphorylate synthetic peptides derived from their substrates 4E-BP1 and IRSp53. In these peptides, 14mer sequences spanning 4E-BP1 and IRSp53 dephosphorylation sites are joined via a GSG linker to wildtype or mutant 4E-BP1 PBM sequences (Figure 5A). As a representative PP1-Neurabin substrate, we used 4E-BP1 residues 64–78, including the phosphorylated T70 site, linked to intact or mutant 4E-BP1 PBM (substrates 4E-BP1PBM and 4E-BP1MUT). For comparison, we used Phactr1 substrate peptides comprising IRSp53 residues 449–463, spanning the phosphorylated S455 site, also linked to the intact or mutant 4E-BP1 PBM (substrates IRSp53PBM and IRSp53MUT; Figure 5A, Figure 5—figure supplement 1A). These substrates, or their mutated derivatives, were then dephosphorylated using PP1-Neurabin, PP1-Phactr1, or PP1 alone. Results are summarised in Figure 5, Figure 5—figure supplement 1; the assay data and statistical analysis provided in Supplementary file 3.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig5-v1.jpg)
+
+**Figure 5.:** (A) Top, synthetic substrate peptides contain either the 4E-BP1 T70 or IRSp53 S455 phosphorylation sites, joined by a GSG linker to the Neurabin PDZ-binding C-terminal sequences. PBM, PDZ-binding motif (FEMDI); MUT, mutated PBM (FEsgs). Below, sequences of the different peptides analysed; highlights indicate the dephosphorylation site (yellow), the +4/+6 region (orange), and the PDZ-binding sequence (cyan), with alanine and other substitutions indicated in red. Peptides were treated with recombinant PP1-Neurabin, PP1-Phactr1, or PP1 in the presence of the phosphate sensor, and KM and catalytic efficiencies determined. KM are shown at the right; for catalytic efficiency quantification, see Figure 5—figure supplement 1A. For raw and processed data, see Supplementary file 3. (B–E) Panels show relative catalytic efficiencies as determined from data displayed in Figure 5—figure supplement 1B–E. Each panel shows different subsets of the data to highlight comparison between different enzymes and/or substrates. For raw and processed data, see Supplementary file 3. (B) Comparison of Neurabin-PP1 and Phactr1-PP1 substrates 4E-BP1 and IRSp53 to assess the role of the Neurabin PDZ domain in substrate recognition. (C) Role of the +4/+6 region in 4E-BP1 substrate recognition. (D) Role of the +5 residue in IRSp53 substrate recognition. (E) Role of 4E-BP1+1/+2 residues.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Catalytic efficiencies for the various peptide dephosphorylation reactions by PP1-Neurabin, PP1-Phactr1, and PP1 are shown. For raw and processed data, see Supplementary file 3. (B–E) Dephosphorylation reaction rates plotted against substrate concentration for different sets of phosphopeptides with PP1-Neurabin, PP1-Phactr1, or PP1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Phosphate groups are indicated by red lollipops, the Phactr1 consensus in orange, and the Neurabin PBM motif in cyan.
+
 PP1-Neurabin dephosphorylated 4E-BP1PBM with a catalytic efficiency some 100-fold greater than PP1 alone, while peptide 4E-BP1MUT, which cannot bind the Neurabin PDZ domain, was 30-fold less reactive (Figure 5B, Figure 5—figure supplement 1A). In contrast, PP1-Phactr1 dephosphorylated 4E-BP1PBM and 4E-BP1MUT at rates similar to those achieved by PP1 alone (Figure 5B, Figure 5—figure supplement 1A). The Neurabin sequences, specifically the PDZ domain, thus play a critical role in specific 4E-BP1 pT70 substrate recognition. PP1-Neurabin also dephosphorylated IRSp53PBM, which contains the 4E-BP1 PBM, with somewhat higher catalytic efficiency to that seen with 4E-BP1PBM itself (Figure 5B, Figure 5—figure supplement 1A and B). This was entirely dependent on PDZ domain interaction, IRSp53MUT being ~100-fold less reactive (Figure 5B, Figure 5—figure supplement 1A and B). In contrast, PP1-Phactr1 dephosphorylated both IRSp53PBM and IRSp53MUT peptides with a similar catalytic efficiency, some 100-fold greater than that seen with PP1 alone (Figure 5B, Figure 5—figure supplement 1A and B). These results demonstrate the critical role played by the PDZ domain substrate specificity and underscore the role played by PIPs in potentiating the catalytic efficiency of PIP/PP1 complexes.
 
-## Substrate interactions with the remodelled PP1 hydrophobic groove do not affect PP1-Neurabin specificity
+### Substrate interactions with the remodelled PP1 hydrophobic groove do not affect PP1-Neurabin specificity
 
 We next assessed the potential role of the remodelled hydrophobic groove in substrate recognition. Positions +3 to +6 relative to the dephosphorylation site are critical for recognition of the remodelled hydrophobic groove by Phactr1/PP1 (Fedoryshchak et al., 2020), so we assessed the effect of mutations at these positions on catalytic activity. PP1-Neurabin dephosphorylated 4E-BP1PBM containing alanine substitutions, or IRSp53 sequences, at positions +3/4 or +5/6 with slightly increased catalytic efficiency (Figure 5C, Figure 5—figure supplement 1A and C). These mutations had strikingly different effects on 4E-BP1PBM dephosphorylation by PP1-Phactr1, however. While the alanine substitutions at positions +3/4 or +5/6 had little effect, conversion of +4 to +6 to the IRSp53 sequence LLD increased catalytic efficiency some 20-fold (Figure 5C, Figure 5—figure supplement 1A and C). Similar results were seen with the IRSp53 substrate peptides: alanine substitution in the groove-interacting region had no effect on catalytic efficiency with PP1-Neurabin, but significantly impaired it with PP1-Phactr1 (Figure 5D, Figure 5—figure supplement 1A and D). Strikingly, alanine substitutions at +1 and+2 in 4E-BP1PBM significantly increased catalytic efficiency by both PP1-Neurabin and PP1-Phactr1, perhaps reflecting changes at the catalytic site itself (Figure 5E, Figure 5—figure supplement 1A and E; see Discussion).
 
 Taken together with the results in the preceding section, these data support a model in which PP1-Neurabin substrate specificity is driven predominantly by the ability of substrates to interact with the Neurabin PDZ domain rather than the remodelled PP1 hydrophobic groove (Figure 5—figure supplement 2). In contrast, the specificity of PP1-Phactr1, like that of the PP1/Phactr1 holoenzyme, is critically dependent on interaction with the remodelled PP1 hydrophobic groove (Fedoryshchak et al., 2020; Figure 5—figure supplement 2; see Discussion).
 
-## Structural analysis of PP1/Neurabin-4E-BP1 interaction
+### Structural analysis of PP1/Neurabin-4E-BP1 interaction
 
 We next sought to visualise PP1-Neurabin/4E-BP1 interactions directly at the structural level. To do this, we used the ‘chimera’ strategy previously used to examine Phactr1/PP1/substrate interactions, in which Phactr1 substrate sequences were fused C-terminally to PP1(7–304), and co-crystallised with the Phactr1 PP1-interacting C-terminal domain. This revealed a putative enzyme-product complex, with substrate sequences binding in a remodelled PP1 hydrophobic groove and serine and a presumed phosphate docked at the active site (Fedoryshchak et al., 2020). Accordingly, we constructed an analogous PP1-4E-BP1 substrate fusion, comprising PP1(7–304)/(SG)5/4E-BP1(65–83)/G/4E-BP1(112–118) (Figure 6A), co-expressed it with Neurabin residues 423–593, and determined the crystal structure of the purified complex at 2.36 Å resolution (Figure 6B, Figure 6—figure supplement 1; Table 1; Ragusa et al., 2010).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the PP1-4E-BP1 chimera and of Neurabin PP1-interacting and PDZ domain sequences. (B) Crystal structure of the PP1-4E-BP1/Neurabin complex. PP1 in white surface representation, Neurabin in lilac surface representation, 4E-BP1 in blue stick representation, with unresolved sequences indicated by dashed line. PP1 active site presumptive Mn2+ ions in purple. (C) Comparison of PP1-4E-BP1/Neurabin complex structure with the previously published Neurabin/PP1 holophosphatase structure (9PDB 3HVQ) (Ragusa et al., 2010). PP1 in white surface representation, Neurabin in ribbon representation (lilac, PP1-4E-BP1/Neurabin; red, Neurabin/PP1). 4E-BP1 in blue stick representation, unresolved sequences not shown. Structures are superimposed on PP1 residues 7–298 (rmsd = 0.21 Å, 277 alpha carbons). (D) Close-up view of interactions between 4E-BP1 C-terminal sequences (blue sticks) with the Neurabin PDZ domain (lilac cartoons). (E) AlphaFold3 model of the phosphorylated PP1-4E-BP1 chimera/Neurabin(423–593) interaction. A close-up view of predicted interaction of pT70 with the PP1 catalytic site is shown. For PAE and pLDDT plots, see Figure 6—figure supplement 2A. PP1 and Neurabin are shown respectively in white and lilac surface representation, with PP1 active site Mn2+ ions in purple. 4E-BP1 sequences are in stick representation, colour-coded according to the AlphaFold3 pLDDT score (inset). See also Figure 6—figure supplement 2C. (F) AlphaFold3 modelling of the Neurabin(423–593)/PP1-5x phospho-4E-BP1 interaction. PP1 and Neurabin are shown respectively in white and lilac surface representation, with PP1 active site Mn2+ ions in purple. 4E-BP1 sequences are in ribbon and stick representation, colour-coded according to the AlphaFold3 pLDDT score (inset), with the 4E-BP1 phosphorylations at T37, T46, S65, T70, and S101 shown in spheres. For PAE and pLDDT plots, see Figure 6—figure supplement 2F.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Crystal structure of the PP1-4E-BP1/Neurabin complex. PP1 in white surface representation, with active site presumptive Mn2+ ions in purple, Neurabin in lilac cartoon representation, and 4E-BP1 in blue stick representation. PP1 2Fo-Fc electronic density contoured at 1 sigma level is displayed around Neurabin. (B) Comparison of the PBM-liganded Neurabin PDZ domain (pink ribbons) with the previously published structure of the unliganded Neurabin PDZ domain (red ribbons) (PDB 3HVQ, Ragusa et al., 2010). The 4E-BP1 PBM is shown in blue stick representation.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/103403/elife-103403-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) AlphaFold3 models of the phosphorylated (A) and unphosphorylated (B) PP1-4E-BP1 chimera/Neurabin(423–593) interaction. Left, PAE plots; right, pLDDT plots, with confidence boundaries indicated by dashed lines (>90%, very high [side chains]; 70–90%, high [main chain]; 50–70%, low). (C, D) AlphaFold3 models of the phosphorylated (C) and unphosphorylated (D) PP1-4E-BP1 chimera/Neurabin(423–593) interaction. PP1 and Neurabin are shown respectively in white and lilac surface representation with PP1 active site Mn2+ ions in purple. 4E-BP1 sequences are in stick representation, colour-coded according to the AlphaFold3 pLDDT score (inset), with pT70 and T70 in space-fill; linker residues are in black. Below are shown close-up views of predicted interactions with the PP1 catalytic site. For PAE and pLDDT plots, see (A, B). (E) Comparison of crystal structure and AlphaFold3 model of 4E-BP1/PDZ interactions in phosphorylated and unphosphorylated PP1-4E-BP1 chimera/Neurabin(423–593) interaction. Predicted structures are oriented by superposition of the PDZ domain, shown in lilac ribbon representation. 4E-BP1 sequences are in stick representation, colour-coded according to the AlphaFold3 pLDDT score as in panels C and D. Note that AlphaFold3 does not predict any interaction between the Neurabin PDZ domain and the 4E-BP1(118+A) PBM mutant characterised in Figure 4. (F) AlphaFold3 modelling of the Neurabin(423–593)/PP1-5x phospho-4E-BP1 interaction. Left, PAE plots; right, pLDDT plots, with confidence boundaries indicated by dashed lines (>90%, very high [side chains]; 70–90%, high [main chain]; 50–70%, low).
+
+**Table 1.**
+ Crystallographic data and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PDB 9GSU</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resolution range</td>
+      <td>52.48–2.36(2.42–2.36)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C2221</td>
+    </tr>
+    <tr>
+      <td>Unit cell a, b, c</td>
+      <td>104.95 130.64 156.13</td>
+    </tr>
+    <tr>
+      <td>α, β, γ</td>
+      <td>90 90 90</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>1 207 183 (85 193)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>44 376 (3 023)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>27.2 (28.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.91 (91.66)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>5.29 (0.20)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>49.25</td>
+    </tr>
+    <tr>
+      <td>R-merge</td>
+      <td>0.31 (12.11)</td>
+    </tr>
+    <tr>
+      <td>R-meas</td>
+      <td>0.32 (12.33)</td>
+    </tr>
+    <tr>
+      <td>R-pim</td>
+      <td>0.06 (2.30)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.99 (0.28)</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>44 019 (2 889)</td>
+    </tr>
+    <tr>
+      <td>Reflections used for R-free</td>
+      <td>1 996 (131)</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.24 (0.36)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.28 (0.32)</td>
+    </tr>
+    <tr>
+      <td>Number of non-hydrogen atoms</td>
+      <td>6 180</td>
+    </tr>
+    <tr>
+      <td>macromolecules</td>
+      <td>6 156</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>787</td>
+    </tr>
+    <tr>
+      <td>RMS (bonds)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>RMS (angles)</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favoured (%)</td>
+      <td>95.74</td>
+    </tr>
+    <tr>
+      <td>Ramachandran allowed (%)</td>
+      <td>4.26</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <td>Average B-factor</td>
+      <td>57.04</td>
+    </tr>
+    <tr>
+      <td>Macromolecules</td>
+      <td>57.05</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>68.46</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>50.83</td>
+    </tr>
+  </tbody>
+</table>
 
 In the complex, the PP1 catalytic core and Neurabin PDZ sequences were well resolved, along with the 4E-BP1 PBM, which was docked with the Neurabin PDZ domain (Figure 6B). The individual domains were largely identical to those determined previously for unliganded Neurabin/PP1 (Ragusa et al., 2010) (PP1(1–304), RMSD 0.22 Å over 269 Cα, PDZ(501–592) RMSD 0.39 Å over 65 Cα). However, the PDZ domain in our Neurabin/PP1-4E-BP1 substrate complex structure is oriented at 22° to that in the unliganded Neurabin/PP1 complex, reflecting a slight bend in the C-terminal section of the 5-turn α-helix that connects it to the RVxF-ΦΦ-R-W string (Figure 6C). The 4E-BP1 PBM, 113(QFEMDI)118, uses a beta-strand addition mechanism to make extensive contacts with the Neurabin PDZ domain, similar to those seen in other PDZ-ligand complexes, that widen the PBM-binding groove (Figure 6D, Figure 6—figure supplement 1B): 4E-BP1 F114, M116, and I118 side chains make hydrophobic contacts, while their main chain carbonyl and amide groups, and the C-terminal carboxylate, form an extensive hydrogen bonding network with Neurabin main chain residues L514, G515, I516, I518, and G520 (Figure 6D).
 
@@ -104,7 +315,7 @@ Our findings establish Neurabin/PP1 and Spinophilin/PP1 holoenzymes as new candi
 
 ## Methods
 
-## Plasmids
+### Plasmids
 
 NEBuilder HiFi DNA Assembly Cloning Kit and NEB Q5 Site-Directed Mutagenesis Kit were used according to the manufacturer’s protocols for plasmid assembly and mutagenesis. All primers are listed in Supplementary file 1.
 
@@ -114,7 +325,7 @@ For T-REx cell lines, pOG44 (Thermo) and pcDNA5/FRT/TO plasmids (Thermo) were us
 
 pcDNA3.1 IRSp53 and pcDNA3.1 IRSp53 L460A were as described (Fedoryshchak et al., 2020). To obtain pEF mCherry-4E-BP1, the 4E-BP1 sequences were amplified from 293 cells and inserted into the pEF-mCherry plasmid. Site-directed mutagenesis was used to derive mutants ΔPDZ, 118+A, S65A, S101A, S65A/S101A. pGEX-Neurabin(PDZ) and pGEX-Spinophilin(PDZ) plasmids were obtained by cloning Neurabin and Spinophilin PDZ domains into the pGEX 6P2 vector (GE Healthcare). The PP1-4E-BP1 chimera was generated by insertion of 4E-BP1 sequences into pET28-PP1.
 
-## Cell lines and transfections
+### Cell lines and transfections
 
 Commercially available 293 Flp-In T-REx cells and pOG44+pcDNA5/FRT/TO stably transfected derivatives were used throughout. Cells were maintained in a humidified incubator at 37°C and 5% CO2 and cultured in DMEM (Gibco) supplemented with 10% FCS (Gibco) and penicillin-streptomycin (Sigma). Prior to stable transfection, 293 Flp-In T-REx cells were maintained with 100 mg/ml Zeocin (Invivogen). Stably transfected 293 Flp-In T-REx derivative cell lines were cultured in a medium supplemented with 5 mg/ml Blasticidin (Invivogen) and 100 mg/ml Hygromycin B (Invivogen). The 293 Flp-In T-REx cell line was obtained through the Francis Crick Institute Cell Services repository. The cell line was authenticated and regularly tested for mycoplasma contamination (negative).
 
@@ -124,11 +335,11 @@ pEF IRSp53 and pEF-mCherry-4E-BP1 plasmids were transfected with Lipofectamine 2
 
 Unless otherwise indicated, 1000 nM of tetracycline was used to express the PP1 fusion proteins in stably transfected 293 Flp-In T-REx cells, and the experiments were performed 16 hr post-induction.
 
-## Immunoblotting
+### Immunoblotting
 
 SDS-PAGE analysis of cell lysates and immunoblotting was performed using standard techniques; the signal was visualised and quantified using Odyssey CLx instrument (LI-COR) and the Image Studio (LI-COR) Odyssey Analysis Software. Primary antibodies used were Flag (1:2000, clone M2, Sigma F7425, mouse), IRSp53 (1:1000, Abcam ab15697), IRSp53 pS455 (1:500, previously described in Fedoryshchak et al., 2020), Afadin (1:200, Santa Cruz sc-74433), Afadin pS1275 (1:500, previously described in Fedoryshchak et al., 2020), GAPDH (1:2000, clone 0411, Santa Cruz sc-47724), 4E-BP1 (1:1000, Cell Signaling 9452), 4E-BP1 pT37/46 (1:1000, Cell Signaling 9459), 4E-BP1 pS65 (1:1000, Cell Signaling 9451), 4E-BP1 pT70 (1:1000, Cell Signaling 9455), mCherry (1:1000, clone 16D7, Thermo M11240, rat), S6K (1:1000, Cell Signaling 9202), S6K pS371 (1:1000, Cell Signaling 9208), S6K pT389 (1:1000, Cell Signaling 9205), S6K pT421/pS424 (1:1000, Cell Signaling 9204). Secondary antibodies labelled with IRDye 800CW and IRDye 680LT were from LI-COR.
 
-## Proteomics
+### Proteomics
 
 Total and phospho-proteomics experiment was performed according to a detailed protocol previously published (Jones et al., 2020). Cells expressing PP1-PIP fusion proteins, PP1 only, or vector alone were induced with tetracycline for 16 hr. Cells were lysed in buffer containing 8 M urea, 50 mM HEPES pH 8.5, 10 mM glycerol 2-phosphate, 50 mM NaF, 5 mM sodium pyrophosphate, 1 mM EDTA, 1 mM sodium vanadate, 1 mM dithiothreitol, 1:50 protease inhibitor cocktail (Roche), 1:100 phosphatase inhibitor cocktail, 400 nM okadaic acid. Cysteines were reduced and alkylated by iodoacetamide followed by trypsin/rLysC protease digestion. Peptide samples were labelled with 10-plex (UK288606) and additionally 131C (VC294053) TMT reagents from Thermo and pooled. Part of the sample was injected and saved for the total proteome analysis. The rest of the sample was used for two-step phosphopeptide enrichment on TiO2 beads (Thermo) and FeNTA beads (Thermo). Phosphopeptides were fractionated. Total proteome and enriched phosphopeptide fractions were separated on a 50 cm, 75 μm I.D. Pepmap column over a 2 hr gradient and eluted directly into the Orbitrap Fusion Lumos, operated with Xcalibur software, with measurement in MS2 and MS3 modes. The instrument was set up in data-dependent acquisition mode, with the top 10 most abundant peptides selected for MS/MS by HCD fragmentation.
 
@@ -138,11 +349,98 @@ Phosphorylation site tables were imported into Perseus (v1.6.14.0) for analysis.
 
 Mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD055166.
 
-## Peptides
+### Peptides
 
 Peptides were synthesised by the Francis Crick Institute Chemical Biology Science Technology Platform using standard Fmoc-SPPS techniques.
 
-## Protein expression and purification
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence (FAM, 6-carboxyfluorescein; eahx, aminohexanoic acid linker; OH, carboxyl at C-terminus)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4EBP</td>
+      <td>FAM-eahx-QFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>4EBP-mut</td>
+      <td>FAM-eahx-QFESGS-OH</td>
+    </tr>
+    <tr>
+      <td>S6K</td>
+      <td>FAM-eahx-EHLRMNL-OH</td>
+    </tr>
+    <tr>
+      <td>Kalirin-7</td>
+      <td>FAM-eahx-DPFSTYV-OH</td>
+    </tr>
+    <tr>
+      <td>GluR1</td>
+      <td>FAM-eahx-LGATGL-OH</td>
+    </tr>
+    <tr>
+      <td>GluR2</td>
+      <td>FAM-eahx-IESVKI-OH</td>
+    </tr>
+    <tr>
+      <td>GluN1-1</td>
+      <td>FAM-eahx-SVSTVV-OH</td>
+    </tr>
+    <tr>
+      <td>GluN2A</td>
+      <td>FAM-eahx-SIESDV-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP1PBM</td>
+      <td>Ac-NSPVTK(pT)PPRDLPTIGSGSQFESGS-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP1LLD-PBM</td>
+      <td>Ac-NSPVTK(pT)PPRLLDTIGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>IRSp53PBM</td>
+      <td>Ac-QQGKSS(pS)TGNLLDKDGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>IRSp53MUT</td>
+      <td>Ac-QQGKSS(pS)TGNLLDKDGSGSQFESGS-OH</td>
+    </tr>
+    <tr>
+      <td>IRSp535A-PBM</td>
+      <td>Ac-QQGKSS(pS)TGNLADKDGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>IRSp535A-MUT</td>
+      <td>Ac-QQGKSS(pS)TGNLADKDGSGSQFESGS-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP112A-PBM</td>
+      <td>Ac-NSPVTK(pT)AARDLPTIGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP134A-PBM</td>
+      <td>Ac-NSPVTK(pT)PPAALPTIGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP156A-PBM</td>
+      <td>Ac-NSPVTK(pT)PPRDAATIGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP11A-PBM</td>
+      <td>Ac-NSPVTK(pT)APRDLPTIGSGSQFEMDI-OH</td>
+    </tr>
+    <tr>
+      <td>4E-BP12A-PBM</td>
+      <td>Ac-NSPVTK(pT)PARDLPTIGSGSQFEMDI-OH</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 PP1-fusion proteins were produced as 6xHis-tagged fusion proteins in (DE3) Escherichia coli cells (Invitrogen) with pGRO7 co-expression as described (Choy et al., 2014). Overnight pre-cultures (400 ml) were grown in LB medium supplemented with 1 mM MnCl2 and used to inoculate a 100 l fermenter. After growth to OD600 of ~0.5, 2 g/l of arabinose was added to induce GroEL/GroES expression. At OD600 ~1, the temperature was lowered to 17°C and protein expression induced with 0.1 mM IPTG for ~18 hr. Cells were harvested, re-suspended in fresh LB medium/1 mM MnCl2/200 μg/ml chloramphenicol, and agitated for 2 hr at 17°C. Harvested cells were resuspended in lysis buffer (50 mM Tris-HCl, pH 8.5, 5 mM imidazole, 700 mM NaCl, 1 mM MnCl2, 0.1% vol/vol TX-100, 0.5 mM TCEP, 0.5 mM AEBSF, 15 μg/ml benzamidine, and complete EDTA-free protease inhibitor tablets), lysed by French Press, clarified, and stored at –80°C.
 
@@ -150,31 +448,39 @@ Clarified lysates were loaded onto a 5 ml HisTrap crude column on an AktaPure FP
 
 His-tagged Neurabin and Spinophilin PDZ domains were produced in BL21 (DE3) E. coli cells (Invitrogen). Overnight pre-cultures were grown in LB medium, 15 ml was used to inoculate 1 l of TB media in 2 l baffled flasks. When OD600=1, the temperature was lowered to 20°C, and protein expression induced by addition of 0.1 mM IPTG for ~18 hr. Harvested cells were resuspended in lysis buffer (50 mM Tris-HCl, pH 8.5, 5 mM imidazole, 700 mM NaCl, 0.1% vol/vol TX-100, 0.5 mM TCEP, 0.5 mM AEBSF, 15 μg/ml benzamidine, and complete EDTA-free protease inhibitor tablets), lysed by French press, clarified, and stored at –80°C. PDZ domains were purified using the same protocol as PP1-fusion proteins without addition of 1 mM MnCl2 in the buffers.
 
-## Crystallisation and structure determination
+### Crystallisation and structure determination
 
 PP1-4E-BP1/Neurabin was concentrated to 10 mg/ml and crystallised at 20°C using sitting-drop vapour diffusion. Sitting drops of 1 μl consisted of a 1:1 (vol:vol) mixture of protein and well solution (20% PEG 6000, 0.2 M MgCl2, 0.1 M MES pH 6.0). Crystals appeared within 5 days and reached maximum size after 7 days. Crystals were cryoprotected in well solution supplemented with 15% glycerol+15% ethylene glycol and flash-frozen in liquid nitrogen. 100 K at beamlines I04 (mx25587-44) of the Diamond Light Source Synchrotron (Oxford, UK). Data collection and refinement statistics are summarised in Table 1. Datasets were indexed, scaled, and merged with xia2 (Winter et al., 2013). Molecular replacement used the atomic coordinates of human PP1 from PDB 4M0V (Choy et al., 2014) in PHASER (McCoy et al., 2007). Refinement used Phenix (Adams et al., 2010). Model building used COOT (Emsley et al., 2010) with validation by PROCHECK (Vaguine et al., 1999). Two copies of the complex were modelled in the asymmetric unit, but the entire PDZ domain of one copy was poorly defined in the density and therefore not modelled. The same issue was previously observed for the unliganded Spinophilin/PP1 structure (Ragusa et al., 2010). For structure analysis, we used the second copy of the complex showing well-resolved density for PP1-4E-BP1 chimera and Neurabin. AlphaFold3 predictions (Abramson et al., 2024) were performed using the AlphaFold3 server. Output structure prediction and parameter files are presented in Figure 6—source data 1.
 
-## Fluorescence polarisation
+### Fluorescence polarisation
 
-FAM-labelled peptides were dissolved in a buffer 25 mM Tris-HCl pH 8, 250 mM NaCl, 0.5 mM TCEP. Peptide concentration was measured using Thermo Scientific NanoDrop One by FAM fluorescence at 495 nm. FP assays (10 µl final volume) were performed in 384-well plates. 2 µl of 500 nM peptide solutions were added to each well (100 nM final concentration). 8 µl of Neurabin PDZ or Spinophilin PDZ was added as a serial dilution, starting at 1000 µM (800 µM final concentration). Anisotropies were read out on BMG Labtech CLARIOstar Plus microplate reader. Binding constants were estimated in GraphPad Prism 8 by fitting readouts with the following equation:A=Af+(Ab−Af)∗(Kd+L+C−(Kd+L+C)0.52∗L)\begin{document}$$\displaystyle A=A_{f}+\left (A_{b}- A_{f}\right)\ast \left (K_{d}+L+C- \frac{\left (K_{d}+L+C\right)^{0.5}}{2\ast L}\right)$$\end{document}
+FAM-labelled peptides were dissolved in a buffer 25 mM Tris-HCl pH 8, 250 mM NaCl, 0.5 mM TCEP. Peptide concentration was measured using Thermo Scientific NanoDrop One by FAM fluorescence at 495 nm. FP assays (10 µl final volume) were performed in 384-well plates. 2 µl of 500 nM peptide solutions were added to each well (100 nM final concentration). 8 µl of Neurabin PDZ or Spinophilin PDZ was added as a serial dilution, starting at 1000 µM (800 µM final concentration). Anisotropies were read out on BMG Labtech CLARIOstar Plus microplate reader. Binding constants were estimated in GraphPad Prism 8 by fitting readouts with the following equation:
+
+$$
+A=A_{f}+(A_{b}−A_{f})∗(K_{d}+L+C−\frac{(K_{d}+L+C)^{0.5}}{2∗L})
+$$
 
 (A, anisotropy measured; Af, anisotropy of free peptide; Ab, anisotropy of bound peptide; L, labelled peptide concentration; C, protein concentration (X axis); Kd, binding constant).
 
-## Phosphatase activity assays
+### Phosphatase activity assays
 
 Phosphopeptides were dissolved in 25 mM Tris-HCl pH 8, 250 mM NaCl buffer. Peptide concentration was measured using DeNovix DS-11 based on absorbance values at 215 nm. Assays (10 µl final volume) were performed in 384-well plates. The activity of the PP1 fusion preparation was established on the day of each experiment, using 50 µM pIRSp53PBM peptide as standard, with PP1-Phactr1 and PP1-Neurabin at various dilutions.
 
 Peptides (4 µl) were serially diluted twofold from 1 mM in complex buffer (1 mM MnCl2, 25 mM Tris-HCl pH 8, 250 mM NaCl, 0.5 mM TCEP). 2 µl of 5x Phosphate Sensor (Thermo) was added to the wells. 2 µl of PP1-fusion protein was added to the wells, and fluorescence measurements were started immediately and taken every 3 min or 5 min using BMG Labtech CLARIOstar Plus microplate reader. Data was collected for 15 min at room temperature. Phosphate standards were measured to convert fluorescence readouts into phosphate concentration using a standard curve. Difference in fluorescence between the last and first data point was used as a readout.
 
-A concentration of PP1-Phactr1 and PP1-Neurabin was chosen such that readouts were in the linear range of the phosphate sensor detection. To measure KM and catalytic efficiency, an assay with varying dilutions of phosphopeptides was set up. 4 µl of a corresponding peptide dilution was added to wells, followed by 2 µl of 5x Phosphate Sensor. 2 µl of PP1-fusion protein was added to the wells, and fluorescence measurements were started immediately and taken every 3 min (alternatively, every 5 min). Data was collected for 15 min at room temperature. Phosphate standards were measured to convert fluorescence readouts into phosphate concentration using a standard curve. Difference in fluorescence between the last and first data point was used as a readout. Rate constants were estimated in GraphPad Prism 8 by fitting readouts to the rearranged Michaelis-Menten equation:Pt∗E=[kcatkM]∗C(CkM+1)\begin{document}$$\displaystyle \rm \frac{P}{t\ast E}=\left[\frac{k_{cat} }{k_{M} } \right] \ast \frac{C}{(\frac{C}{k_{M} }+ 1 )} $$\end{document}
+A concentration of PP1-Phactr1 and PP1-Neurabin was chosen such that readouts were in the linear range of the phosphate sensor detection. To measure KM and catalytic efficiency, an assay with varying dilutions of phosphopeptides was set up. 4 µl of a corresponding peptide dilution was added to wells, followed by 2 µl of 5x Phosphate Sensor. 2 µl of PP1-fusion protein was added to the wells, and fluorescence measurements were started immediately and taken every 3 min (alternatively, every 5 min). Data was collected for 15 min at room temperature. Phosphate standards were measured to convert fluorescence readouts into phosphate concentration using a standard curve. Difference in fluorescence between the last and first data point was used as a readout. Rate constants were estimated in GraphPad Prism 8 by fitting readouts to the rearranged Michaelis-Menten equation:
+
+$$
+\frac{P}{t∗E}=[\frac{k_{cat}}{k_{M}}]∗\frac{C}{(\frac{C}{k_{M}}+1)}
+$$
 
 (P, phosphate released per time t; E, PP1-fusion concentration; [kcat/KM], catalytic efficiency; C, initial phosphopeptide concentration; KM, Michaelis constant). Significance comparisons between activities with different peptides, or between different enzymes for the same substrate peptide, were calculated using a two-tailed two-sample equal variance Student’s t-test. The assay data are presented in Supplementary file 3.
 
-## 4E-BP1 dephosphorylation immunoblot assay
+### 4E-BP1 dephosphorylation immunoblot assay
 
 293 Flp-In T-REx cells were transfected with mCherry-4E-BP1 (WT or 118+A mutant). Cells were lysed on the following day in the Tris-Triton buffer (see above). mCherry-tagged constructs were enriched from the lysates using RFP-trap magnetic agarose beads (ChromoTek, rtma-20) using the manufacturer’s protocol. Enriched fractions were eluted from the beads with 100 µl 200 mM glycine pH 2.5, neutralised with 20 µl 1M Tris pH 10.4, and 400 µl of 25 mM Tris-HCl pH 8, 250 mM NaCl buffer added resulting in pure phosphorylated solution of mCherry-4E-BP1 (WT or 118+A mutant). 8 µl of recombinantly expressed PP1‑Neurabin (dilutions to provide 0-1000 nM final concentration) were added to 40 µl aliquots of mCherry-4E-BP1 (WT or 118+A mutant), and incubated for 15 min at room temperature before addition of 18 µl 4x LDS sample buffer with DTT. The samples were warmed to 70°C for 10 min before analysis by immunoblotting.
 
-## Protein synthesis assay
+### Protein synthesis assay
 
 293 Flp-In T-REx cells were cultured in a six-well plate. PP1, PP1-Neurabin, or vector construct expression were induced 16 hr before the experiment with 1 µM tetracycline. Rapamycin was used at 50 nM for 16 hr. O-propargyl puromycin (OPP; 5 µM) was added to the culture for 30 min. Then, cells were washed once with PBS and resuspended using trypsin. Cells were collected by centrifugation at 300×g for 5 min, then washed once with PBS and 4% PFA was added for 15 min. Cells were collected and resuspended in 0.5% Triton X-100 in PBS for 15 min. Cells were collected and resuspended in 2% BSA in PBS twice. Click-reaction mixture was prepared as follows: 1540 µl of water, 200 µl of 10× PBS, 40 µl CuSO4 (20 mM) and BTTAA (100 mM) mixture, 20 µl of 5 mM Alexa Fluor-488 azide, 200 µl 100 mM sodium ascorbate.
 

@@ -41,7 +41,7 @@ Before we lay out the first issue, we will first break down the trial structure 
 
 ## Results
 
-## Issue 1: different go stimulus durations across trials
+### Issue 1: different go stimulus durations across trials
 
 This brings us to our first and most fundamental issue: the go stimulus is presented for a much longer duration on go trials than on stop trials. Mean go stimulus duration on go trials was 569 ms (standard deviation [SD] = 105 ms), and mean go stimulus duration on stop trials was 228 ms (SD = 118 ms), so on average, subjects had 341 ms longer on go trials to apprehend the go stimulus (see Figure 2 for full distributions).
 
@@ -53,7 +53,7 @@ In both simple (e.g., Froeberg, 1907) and choice (e.g., Kaswan and Young, 1965) 
 
 In the ABCD stopping experiment, go stimuli are presented for much shorter durations on stop trials than on go trials, so the work described in the preceding paragraph suggests that the go process will be faster on go trials than on stop trials. However, in order to extract SSRT, one must make the assumption that the go process is the same on go and stop trials (i.e., context independence). Therefore, we expect that context independence is violated in the ABCD dataset, which would contaminate major dependent variables in the stop-signal task including SSRT estimates. Additionally, because go stimuli on stop trials are presented for a duration equal to SSD, the degree to which violations of context independence occur are likely to differ across SSDs. When SSD is short (e.g., 50 ms), context independence should be more severely violated because the difference in go stimulus duration between stop (e.g., 50 ms) and go (up to 1000 ms) trials is so large.
 
-## Evidence for Issue 1 in ABCD data
+#### Evidence for Issue 1 in ABCD data
 
 The primary way to evaluate context independence is to compare reaction times on go trials to reaction times on stop-failure trials (but note that the prediction of the race model concerning faster stop-failure than go responses is conditioned on both context independence and stochastic independence, Colonius and Diederich, 2018). If the former is longer than the latter, then context independence is taken to hold (Bissett et al., 2021; Logan and Cowan, 1984; Verbruggen et al., 2019). On average across all subjects, stop-failure RT (M = 456 ms, SD = 109 ms) was shorter than overt responses on go trials (M = 543 ms, SD = 95 ms, 95% confidence interval of the difference [85.9, 88.8]). However, for 524 of the 8,464 subjects (6.2% of all subjects), mean stop-failure RT was longer than mean RT on overt responses in go trials, suggesting that a subset of subjects violated context independence. Though note that the comparison of stop-failure and go RT is a conservative measurement that will only show violations of context independence if they are severe (Bissett et al., 2021). Additionally, it will only reveal slowing of the go process on stop trials, even though context independence could be violated by the go process being faster on stop than go trials (e.g., see our guessing model below).
 
@@ -63,7 +63,7 @@ In order to further evaluate whether the go process is impaired on stop trials a
 
 **Figure 3.:** Note: 95% confidence intervals are presented as gray confidence bands. Individual-subject datapoints are presented in blue with lower alpha.
 
-## Potential mechanisms underlying Issue 1
+#### Potential mechanisms underlying Issue 1
 
 New computational models need to be developed to capture the Design Issue 1 violations in the ABCD data. Issue 1 embeds violations in the essential fabric of their task design, and existing models do not provide guidance on how to excise these violations or limit their contamination of the ABCD data. To our knowledge, all existing models for stopping assume that the parameters that generate the distribution of go processes take the same value on go and stop trials (e.g., Boucher et al., 2007; Logan et al., 2014; Logan et al., 2015; Matzke et al., 2017). Therefore, there is no existing model that can capture the ABCD stopping data and no valid way to compute SSRT from these data because the go process is different on go and stop trials (see Figure 3). This is most clear on 0 ms SSD trials, in which the go stimulus is not presented at all (see Issue 2), so subjects must be guessing and therefore the go process must be fundamentally different than when it is stimulus driven. Additionally, existing simulations that suggest SSRT estimates are robust to violations of independence (Band et al., 2003) do not evaluate the type of contamination introduced by Issue 1, namely a different set of processes generating the go process on go and stop trials. Instead, they show that SSRT is relatively robust to correlations between go RT and SSRT or correlations between SSD and SSRT, which are unrelated to Design Issue 1.
 
@@ -81,15 +81,93 @@ However, as Garavan et al., 2020 point out, ‘Examining individual differences 
 
 To examine individual differences, we created 8,207 simulated subjects that shared features from the 8,207 real ABCD subjects. We simulated go RTs based on real ABCD subjects’ performance and implemented three ways to determine SSDs in the simulation (ABCD weighted, fixed SSDs, and simulated tracking SSDs). Given the observed violations of context independence, we do not have trustworthy estimates of individual-subject SSRTs. In order to assign an SSRT value to each simulated subject, we sampled randomly from an SSRT distribution with a mean that equaled the observed ABCD grand mean but assumed four different amounts of between-subject variability (ranging from SD = 0–85 ms). This range of between-subject variability was informed by evaluating the 20 simple stopping conditions from a recent large-scale stopping study which had a mean between-subject SD of SSRT = 43 ms with a range of 28 ms–85 ms (Bissett et al., 2021). For each simulated subject, we computed SSRT (assuming context independence) separately based upon data generated from our four generating models (slowed go processing, guessing, confusion, and independent race). We then computed rank correlations of SSRT estimates for these 8,207 simulated subjects between the independent race model and each of our three proposed models, for our three SSD determination methods (ABCD weighted, fixed, and tracking SSD) and four values of between-subject variance in assumed SSRT (85 ms, 25 ms, 5 ms, and 0 ms) (see Table 1 for Results and Materials and methods for additional simulation details).
 
+**Table 1.**
+ Rank correlations of SSRTs from the three alternative generating models (rows) with the independent race model across the three SSD determination methods (ABCDw = ABCD weighted, fixed, and tracking) and four SSRT standard deviation (SD) scales (85 ms, 25 ms, 5 ms, and 0ms).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">SD = 85ms (mean:0.93)</th>
+      <th colspan="3">SD = 25ms (mean:0.78)</th>
+      <th colspan="3">SD = 5ms (mean:0.63)</th>
+      <th colspan="3">SD = 0ms (mean:0.54)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>ABCDw</th>
+      <th>Fixed</th>
+      <th>Tracking</th>
+      <th>ABCDw</th>
+      <th>Fixed</th>
+      <th>Tracking</th>
+      <th>ABCDw</th>
+      <th>Fixed</th>
+      <th>Tracking</th>
+      <th>ABCDw</th>
+      <th>Fixed</th>
+      <th>Tracking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.848</td>
+      <td>0.973</td>
+      <td>0.995</td>
+      <td>0.73</td>
+      <td>0.89</td>
+      <td>0.965</td>
+      <td>0.82</td>
+      <td>0.893</td>
+      <td>0.554</td>
+      <td>0.847</td>
+      <td>0.903</td>
+      <td>0.021</td>
+      <td>Confusion</td>
+    </tr>
+    <tr>
+      <td>0.932</td>
+      <td>0.976</td>
+      <td>0.949</td>
+      <td>0.661</td>
+      <td>0.896</td>
+      <td>0.677</td>
+      <td>0.178</td>
+      <td>0.887</td>
+      <td>0.27</td>
+      <td>0.093</td>
+      <td>0.895</td>
+      <td>0.183</td>
+      <td>Slowed Go Processing</td>
+    </tr>
+    <tr>
+      <td>0.883</td>
+      <td>0.907</td>
+      <td>0.951</td>
+      <td>0.713</td>
+      <td>0.765</td>
+      <td>0.754</td>
+      <td>0.813</td>
+      <td>0.88</td>
+      <td>0.342</td>
+      <td>0.848</td>
+      <td>0.913</td>
+      <td>0.176</td>
+      <td>Guessing</td>
+    </tr>
+  </tbody>
+</table>
+
 Rank correlations quantify the degree that SSRT is degraded as a measure of individual differences if we assume the independent race model when a different generating model (like our three proposed models) more appropriately characterizes the underlying data generating mechanism in the ABCD stopping task. If we assume high between-subject variability in SSRT (SD = 85 ms), then the rank correlations are largely preserved across generating models and SSD approaches (r range = 0.85–0.99, mean = 0.93). However, as between-subject variability in SSRT reduces (SD = 25 ms), the rank correlations decrease (r range = 0.66–0.97, mean = 0.78). At very low between-subject variability, (SD = 5 ms) the rank correlations can become very low (r range = 0.18–0.89, mean = 0.63). At the limit, if we assume no between-subject variability in SSRT and therefore between-subject variance is driven entirely by differences in SSD, go RT, and the different generating models, rank correlations continue to reduce but remain well above 0 on average (r range = 0.02–0.91, mean = 0.54). This suggests that differences in SSD distribution or go RT across subjects can inflate estimates of SSRT rank correlations in our simulations, and therefore SSRT individual differences may be more contaminated than the above rank correlations suggest. Taken together, these results show that design Issue 1 can degrade individual differences, with the degree of misestimation increasing as between-subject variability in SSRT decreases.
 
 To reiterate, these are only preliminary model proposals and require more rigorous scrutiny. However, no existing models for stopping can capture the context dependence that is embedded in the fabric of the ABCD data by Design Issue 1. These preliminary simulations suggest that mean SSRT estimates are contaminated and individual differences may be contaminated by the Design Issue 1 violations of context independence, particularly if the true between-subject variability in SSRT is small.
 
-## Prospective suggestions for Issue 1
+#### Prospective suggestions for Issue 1
 
 In order to address Issue 1, we would recommend that the ABCD study organizers present the go stimulus for a fixed period of time on every trial, perhaps 1000 ms. When a stop signal occurs, it should not replace but it should be presented in addition to the go stimulus. If the study designers would like to keep all stimuli in the center of the screen, they could superimpose the stop stimulus around the arrow (e.g., a circle). However, as suggested by a reviewer, to avoid perceptual interactions the stop circle should be >1 degree of visual angle from the go arrow. Therefore, the go stimulus would be identical in form, size, and duration for all go and stop trials. This should eliminate any possibility that different go durations drive different go processes, violating context independence and contaminating dependent variables.
 
-## Retrospective suggestions for Issue 1
+#### Retrospective suggestions for Issue 1
 
 The main reason that we have suggested that Issue 1 is the most fundamental is if one assumes that shorter go stimuli on stop trials yield slower, impaired go processes when compared with the longer go stimuli on go trials, which we believe is reasonable assumption given over 100 years of RT research (Bloch, 1885; Froeberg, 1907; Kahneman and Norman, 1964; Kaswan and Young, 1965; Pieron, 1914), then context independence is violated and major dependent variables in the stop-signal task are contaminated. Additionally, the violations of context independence, as measured by a decrease in choice accuracy on stop-failure trials, appear to go beyond existing evidence of violations in stopping data (Bissett et al., 2021). These violations may also influence common neuroimaging task contrasts like stop success versus go and stop failure versus go, as this introduces additional differences between trial types, including go stimulus duration and go stimulus reaction time, that will contaminate the ability of the contrast to isolate processes of interest like response inhibition. Given the above empirical evidence and simulations, and as suggested by our reviewers, unless the ABCD community shows that this design issue does not distort conclusions based upon SSRT estimates (or any other stop-signal measure), researchers should not use the ABCD dataset to estimate SSRTs and should use the neuroimaging data with caution.
 
@@ -97,57 +175,57 @@ We also suggest two practical suggestions to attempt to avoid some of the most e
 
 In order to resolve Issue 1, the different go durations that encourage context dependence must be eliminated (see prospective suggestions), or new models for stopping must be developed to accommodate context dependence, the latter of which we consider to be of utmost importance to advancing the stop-signal literature. We attempt to make preliminary progress in this direction with the models that we instantiate in the above simulations and in companion work that suggests preliminary theoretical frameworks that can account for context dependence (Bissett et al., 2021). However, these are very preliminary proofs of concept and much more work is necessary to fully flesh out a viable model for stopping that can accommodate context dependence. Additionally, we believe that Design Issue 1 introduced idiosyncratic violations (i.e., reduced choice error rates) that will require idiosyncratic computational solutions.
 
-## Issue 2: go stimulus sometimes not presented
+### Issue 2: go stimulus sometimes not presented
 
 Issue 2 can be seen as a special case of Issue 1. When the stop signal occurs, it replaces the go stimulus, and SSD can reduce to 0 ms. When the SSD is 0 ms, a go stimulus does not occur on the stop trial. This is an issue because extant models of stopping assume a race between two processes (Logan and Cowan, 1984), and there is not a go stimulus to initiate a go process or to drive one of the two choice responses. The absence of a go stimulus may make successfully stopping trivial (as the go process never started) or may confuse subjects given these trials have a fundamentally different structure (i.e., one stimulus instead of two).
 
-## Evidence for Issue 2 in ABCD data
+#### Evidence for Issue 2 in ABCD data
 
 Nine percent of all stop trials had an SSD of 0 ms (see Figure 6). In a typical stop-signal experiment, a 0 ms SSD trial means that the go and stop stimuli onset at the same time and are presented concurrently for a period of time. This tends to produce a very high stop success rate at a 0 ms SSD. In these data, we found that the stop success rate at the 0 ms SSD was 60.1%. This surprisingly low value may have resulted from subjects being confused as to how to approach these trials (see the confusion model above). It also may have been driven by subjects who stopped inhibiting their responses. Additionally, see Issue 3 for a contribution explanation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig6-v2.jpg)
 
-## Prospective suggestions for Issue 2
+#### Prospective suggestions for Issue 2
 
 The suggestion from Issue 1 will also naturally resolve Issue 2. When SSD is 0 ms, the arrow go stimulus would be presented at the same time as a secondary stop signal presented around it.
 
-## Retrospective suggestions for Issue 2
+#### Retrospective suggestions for Issue 2
 
 Given there is not a go stimulus to drive a choice toward a specific go response on 0 ms SSD trials, we recommend that these 0 ms SSD trials be removed from any behavioral or neuroimaging analyses. The complete lack of a go stimulus is at least as fundamental as 1, but this only occurs on 9% of all stop trials, so this issue can be addressed by removing these trials.
 
-## Issue 3: faulty SSD
+### Issue 3: faulty SSD
 
 The ABCD study uses the common 1-up/1-down tracking algorithm (Levitt, 1971) to determine SSD, which involves increasing SSD by 50 ms whenever a subject successfully stops and decreasing SSD by 50 ms whenever a subject fails to stop. However, if SSD is 50 ms and a subject makes a response that is faster than 50 ms (e.g., 25 ms), then this triggers a glitch in the experiment code in which all subsequent stop trials have a response erroneously recorded at that same timestamp (e.g., 25 ms). Therefore, all subsequent stop trials are treated as stop failures (because this one initial response is recorded for all subsequent stop trials), and SSD remains stuck at the minimum of 0 ms for the remainder of that subject’s stopping dataset.
 
-## Evidence for Issue 3 in ABCD data
+#### Evidence for Issue 3 in ABCD data
 
 The triggering condition for this coding error is very specific and occurs somewhat rarely. In the entire sample, only 2.7% of subjects had this specific problem. However, this issue interacts with Issue 2 and partially explains the low stop accuracy at 0 ms SSD. Once these trials are excluded, the stop accuracy at 0 ms increases from 60.5% to 62%.
 
-## Prospective suggestions for Issue 3
+#### Prospective suggestions for Issue 3
 
 This appears to be a coding error, so we would recommend that the error be resolved by ensuring that any response on a given trial does not propagate forward incorrectly as also being a response with the same duration in subsequent trials.
 
-## Retrospective suggestions for Issue 3
+#### Retrospective suggestions for Issue 3
 
 Given the rarity of this problem, in addition to the severity of its manifestation (i.e., it ensures that every subsequent stop trial is recorded as a stop-failure with a 0 ms SSD, irrespective of actual behavior), we recommend removing the 2.7% of subjects who trigger this issue.
 
-## Issue 4: different stop signal duration for different SSDs
+### Issue 4: different stop signal duration for different SSDs
 
 The independent race model (Logan et al., 2014; Logan and Cowan, 1984) not only assumes go context independence, but also stop context independence, which means that the stop process is the same across SSDs. However, in an issue that mirrors Issue 1, the stop signal is presented for different durations at different SSDs. If SSD is ≤ 700 ms, then the stop signal is presented for 300 ms. If SSD is >700 ms, then the stop signal is presented for 1000-SSD, with a maximum SSD of 900 (and therefore a minimum stop duration of 100 ms).
 
-## Evidence for Issue 4 in ABCD data
+#### Evidence for Issue 4 in ABCD data
 
 SSDs > 700 ms are rare in these data (see Figure 6, 1.1%). This rarity makes it difficult to compute SSRT exclusively at these longer delays to evaluate whether the stop process may be changed as a result of the stop signal being presented for a shorter duration at the longest SSDs.
 
-## Prospective suggestions for Issue 4
+#### Prospective suggestions for Issue 4
 
 We recommend a fixed stop-signal duration across all SSDs, perhaps 300 ms.
 
-## Retrospective suggestions for Issue 4
+#### Retrospective suggestions for Issue 4
 
 Given that SSDs that are >700 ms are so rare (1.1%), we suggest removing them from any analyses. This will eliminate their contamination on any averages without resulting in significant data loss.
 
-## Issue 5: non-uniform conditional trial probabilities
+### Issue 5: non-uniform conditional trial probabilities
 
 In stop-signal tasks, the default way to determine trial sequences is to randomly or quasi-randomly (e.g., random without replacement from a fixed pool of trials to ensure the same number of stop trials in each block) select which subset of trials will include a stop signal. However, in fMRI task-based experiments, it is common to select trial sequences in order to optimize power of finding an effect or a difference between contrasting conditions (Durnez et al., 2017; Kao et al., 2009; Liu et al., 2001). Increasing detection power can be achieved by adjusting the conditional probabilities such that trials are more likely to follow the same trial type than change to a new trial type (i.e., the design becomes more block-like). However, this push for greater power needs to be weighed against known expectancy effects in the stop-signal task (Bissett and Logan, 2012b), which can change the processes involved in a task when subjects can predict what is coming. Indeed, some modern software (Durnez et al., 2017) allows the researcher to explicitly trade off the competing goals of power and avoiding trial-by-trial contingencies.
 
@@ -155,7 +233,7 @@ The ABCD stopping study has a highly non-uniform distribution of transition prob
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig7-v2.jpg)
 
-## Evidence for Issue 5 in ABCD data
+#### Evidence for Issue 5 in ABCD data
 
 In order to investigate whether subjects are learning this trial contingency and using it to change behavior, we broke the stop trials in the task into quantiles over time (i.e., first 15 stop trials, second 15, third 15, and fourth 15) and computed post-stop-signal RT changes in each. If subjects are learning this contingency and changing their behavior in response to it, we should see post-stop-signal slowing (slower RT on the trial immediately following a stop signal compared to RT on the trial immediately preceding a stop signal) reduce over the experiment, perhaps giving way to post-stop-signal speeding (faster RT on the trial immediately following a stop signal compared to RT on the trial immediately preceding a stop signal) toward the end of the experiment. This is not what we found (see Figure 8) as post-stop-signal slowing was around 20 ms for each quartile except the second, in which it was 40 ms. Therefore, we did not see our expected reduction of post-stop-signal slowing over time or post-stop-signal slowing in the early quartiles giving way to post-stop-signal speeding in the later quartiles. It appears that in this baseline session, subjects did not learn this contingency or did not change their behavior in response to it.
 
@@ -163,63 +241,63 @@ In order to investigate whether subjects are learning this trial contingency and
 
 **Figure 8.:** Note: Error bars are 95% confidence intervals.
 
-## Prospective suggestions for Issue 5
+#### Prospective suggestions for Issue 5
 
 In order to eliminate the possibility of subjects learning this contingency and changing their behavior, we suggest that the ABCD study make the conditional probabilities fully uniform or at least much more uniform, most importantly allowing for the possibility of immediate repeats. Though learning effects were not apparent in the baseline session, subjects may learn this contingency and implement more severe behavioral changes in subsequent sessions as they have greater exposure to this contingency. Additionally, as subjects mature, they may develop the ability to learn this contingency and use it to change their behavior.
 
-## Retrospective suggestions for Issue 5
+#### Retrospective suggestions for Issue 5
 
 The two trials after a stop signal never or virtually never include a stop signal, so they could have involved fundamentally different processes from normal go trials. In essence, if this contingency is learned, the trial after a stop trial becomes a ‘certain-go’ trial, which has been shown to have different behavioral performance and neural responses (Chikazoe et al., 2009). However, we did not find evidence that subjects learned and adjusted their behavior based upon this contingency in this baseline session. Additionally, removing the two go trials after a stop signal would involve huge data loss (1/3 of all trials), so this does not seem warranted. Therefore, we do not think that Issue 5 will affect data users, at least in the baseline session.
 
-## Issue 6: trial accuracy incorrectly coded
+### Issue 6: trial accuracy incorrectly coded
 
 In the stop-signal task, there are two types of trials, go and stop, and each can be correct or an error. On a go trial, subjects can be correct by making the appropriate choice response or make an error by either making the incorrect choice response or by omitting their response. On stop trials, subjects can be correct by omitting their response or be incorrect by making a choice response. In three of four of these trial outcomes, there are errors in how the ABCD data categorizes trials. Additionally, stop-failure trials can be correct or incorrect with respect to the go stimulus, and this should be coded properly.
 
-## Evidence for Issue 6 in ABCD data
+#### Evidence for Issue 6 in ABCD data
 
 All 247,786 trials that are categorized as incorrect stops have one or more overt responses, so these all appear to be categorized correctly in the output. 25,854 of the 376,479 trials (6.9%) classified as incorrect go trials appear to actually have the correct go response. The majority of these (25,343, 6.7%) can be attributed to a known issue, where response buttons were flipped, resulting in responses being recorded as incorrect, when they were in fact correct. We were unable to ascertain why the remaining 511 trials (0.01%) trials were miscategorized. 61,215 of the 2,162,718 trials (2.8%) classified as correct go trials are incorrect go trials. 4,208 (0.002%) of these can be attributed to the response button flip mentioned above. The other 57,007 (2.6%) instances appear to result from overwriting the first response with any subsequent response that is recorded later in the trial, which we understand to be inappropriate for speeded tasks generally and perhaps especially for a stop-signal task in which one wants to measure the speed of the first go process that completes, not a subsequent go process. Finally, 1,081 of the 260,053 trials (0.4%) classified as correct stops are incorrect stops, as they include one or more overt responses. This final class of errors results in SSD increasing by 50 ms when it should instead decrease by 50 ms. 154 of these 1,081 appear to result from a response occurring at the exact millisecond that one of the constituent stimuli occur in the trial. We were unable to ascertain why the other 927 of the 1,081 were recorded as correct stops, given there was one or more recorded responses on these stop trials.
 
-## Prospective suggestions for Issue 6
+#### Prospective suggestions for Issue 6
 
 Issue 6 appears to result from errors in the experimental code. Therefore, Issue 6 should be fixable by adjusting the experimental code. For example, in their code, there are three constituent periods within a stop-signal trial (the SSD, the 100–300 ms in which the stop-signal is on the screen, and the fixation period after the stop signal), and if the recorded RT = 0 ms in all three periods (either because there was no response or if it occurred at the exact millisecond that the stimulus was presented), then trials are categorized as a correct stop. However, on 154 ‘correct stop’ trials, there is a response at the exact millisecond that one of these stimuli is presented. It is still recorded as a response in the output, so instead of categorizing trials and increasing SSD by ensuring RT = 0 ms outputs in each period, the trials should be categorized as a correct stop if no response is recorded in any of these three periods.
 
-## Retrospective suggestions for Issue 6
+#### Retrospective suggestions for Issue 6
 
 For data users, Issue 6 can largely be resolved by recategorizing each trial type (which we did for all analyses within this work), according to the rules specified in the paragraph where we introduced Issue 6, before analyzing the data. However, as we briefly mentioned above, one effect of this error cannot be undone because 1,081 ‘correct stop’ trials have overt responses, so they should have been categorized as incorrect stop trials and therefore SSD should have reduced by 50 ms instead of being increased by 50 ms. However, given how infrequent these are (0.4% of all correct stops), this is unlikely to have a significant effect on the SSD tracking algorithm, and therefore we judge this issue to be more minor. These 1,081 should be recategorized as incorrect stops before analysis.
 
-## Issue 7: SSD values start too short
+### Issue 7: SSD values start too short
 
 The 1-up/1-down SSD tracking algorithm (Levitt, 1971) is an efficient way to sample the intermediate part of the inhibition function, which is the most informative for constraining SSRT estimates (Band et al., 2003; Verbruggen et al., 2019). In order to sample the intermediate part of the inhibition function for the maximal number trials, the SSD should begin at a value such that go RT = SSD + SSRT. For example, if the expected mean RT in the sample is 500 ms and the expected SSRT is 250 ms, then the SSD should start at 250 ms. Otherwise, the initial stop trials will have a high stop success rate, which is less informative for constraining estimates of SSRT and could drive strategy shifts in the experiment (e.g., subjects might de-emphasize the stop process at the beginning of the experiment if they recognize that any stop signals will occur with such a short SSD that even a slower stop process could beat the go process).
 
-## Evidence for Issue 7 in ABCD data
+#### Evidence for Issue 7 in ABCD data
 
 In the ABCD dataset, SSD starts at 50 ms. We plot the stop accuracy and SSD (see Figure 9) across each of the 60 stop trials for all subjects. This shows that stop accuracy tends to be high (and SSD low) in the first ~10 stop trials but then stabilizes around 0.5, as desired, for the remaining ~50 stop trials. The one salient exception is trial 31, which is the first trial of their second block or session (some subjects do both blocks back-to-back and others do one block in one scanning session and the second block in a subsequent scanning session), which has a very low stop accuracy.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/60185/elife-60185-fig9-v2.jpg)
 
-**Figure 9.:** a) and stop-signal delay (SSD, b) across subjects for each of the 60 stop trials.Note: 95% confidence intervals are presented as gray confidence bands.
+**Figure 9.:** Note: 95% confidence intervals are presented as gray confidence bands.
 
-## Prospective suggestions for Issue 7
+#### Prospective suggestions for Issue 7
 
 In order to create a more efficient design that eliminates this initial part of each section when many subjects have high stop success rates that are less informative for SSRT estimates, we recommend starting each session with a more canonical 250 ms SSD. This is similar to the mean SSD (230 ms) and final SSD (265 ms) across subjects, so should sample the intermediate part of the inhibition function from the start for the most possible subjects.
 
-## Retrospective suggestions for Issue 7
+#### Retrospective suggestions for Issue 7
 
 It is unclear whether subjects are recognizing these very short SSDs in the beginning of each session and adjusting their performance or strategies in response to them. For example, as suggested above, subjects could de-emphasize the stop process at the beginning of each session. Therefore, we would recommend a cautious approach of ensuring that any conclusions do not qualitatively change when initial trials (perhaps the first seven stop trials with stop success rates > 0.6) are removed from analyses. An even more cautious approach would be to remove trials up to trial 15, as this is the approximate point that the stop-signal accuracy asymptotes.
 
-## Issue 8: low stop trial probability
+### Issue 8: low stop trial probability
 
 Stop-signal probability is commonly 0.25, 0.33, or a similar value in stop-signal studies (Verbruggen et al., 2019). Increasing stop-signal probability increases power for SSRT calculation, stop-based imaging contrasts, and other analyses (e.g., the inhibition function Logan and Cowan, 1984). Values greater than ⅓ are somewhat rare, perhaps because there is a belief that high stop-signal probabilities may fundamentally change the stop process (but see Bissett and Logan, 2011; Logan and Burkell, 1986).
 
-## Evidence for Issue 8 in ABCD data
+#### Evidence for Issue 8 in ABCD data
 
 This ABCD study uses a 0.167 stop probability, which is unusually low.
 
-## Prospective suggestions for Issue 8
+#### Prospective suggestions for Issue 8
 
 We suggest increasing the stop probability to 0.25, which would put this data acquisition more in line with the literature and would provide 50% more stop trials to increase analytical power without increasing the length of the data acquisition. We do not know of any research that suggests any benefits of any kind when reducing stop probability to as low as 0.167.
 
-## Retrospective suggestions for Issue 8
+#### Retrospective suggestions for Issue 8
 
 We do not know of any published evidence that suggests that low stop trial probability may contaminate the data. Therefore, we do not believe that Issue 8 will affect data users, except that the low stop trial probability means that there are fewer stop signals to constrain and provide accurate estimates of stopping performance.
 
@@ -235,15 +313,25 @@ Only a subset of the entire ABCD data have been acquired. We have offered prospe
 
 In order to complete our analyses, we used the following packages with the following Research Resource Identifiers: Pandas RRID:SCR_018214, NumPy RRID:SCR_008633, Seaborn RRID:SCR_018132, MatPlotLib RRID:SCR_008624, SciPy RRID:SCR_008058, SymPy RRID:SCR_018417, Jupyter Notebook RRID:SCR_018315, scikit-learn RRID:SCR_002577. Some basic methods are included in the Results section. Analysis and simulation code can be found at http://doi.org/10.5281/zenodo.4458428 and http://doi.org/10.5281/zenodo.4458767. Additionally, we lay out the methodology for our modeling and simulations below.
 
-## Modeling and simulations
+### Modeling and simulations
 
 We proposed three frameworks that may explain the context dependence in the ABCD data. The Independent Race Model (Logan et al., 2014; Logan and Cowan, 1984) was used as a baseline model for comparison, and it was modified to produce three alternative models which instantiated context dependence: (1) slowed go processing: the go drift rate is reduced by shorter go stimulus presentations at short SSDs, (2) guessing: a propensity to guess at shorter go stimulus presentations at short SSDs, and (3) confusion: both the go and stop drift rates are modulated by shorter go stimulus presentations at short SSDs. A maximum RT threshold of 3000 ms was used to match the response window of the ABCD task.
 
-We modeled slowed drift rates at shorter SSDs with the following formula at SSDs 0–550 ms:μSSD=max(log(SSD550)4+1,0)where µ is the drift rate. This formula was hand-tuned to have the following characteristics. It results in a 0 drift rate for SSDs of 0 ms (as there is no exogenous go stimulus) and requires at least 10 ms of go stimulus presentation to reach a positive value (though SSDs in ABCD are all a factor of 50 ms). For SSDs greater than 10 ms, the go drift rate rapidly approaches a normal rate with longer go stimulus presentations. This function was applied to modulate the go drift rate in the slowed go processing model and both go and stop drift rates in the confusion model.
+We modeled slowed drift rates at shorter SSDs with the following formula at SSDs 0–550 ms:
+
+$$
+\mu_{SSD}=max(\frac{log(\frac{SSD}{550})}{4}+1,0)
+$$
+
+where µ is the drift rate. This formula was hand-tuned to have the following characteristics. It results in a 0 drift rate for SSDs of 0 ms (as there is no exogenous go stimulus) and requires at least 10 ms of go stimulus presentation to reach a positive value (though SSDs in ABCD are all a factor of 50 ms). For SSDs greater than 10 ms, the go drift rate rapidly approaches a normal rate with longer go stimulus presentations. This function was applied to modulate the go drift rate in the slowed go processing model and both go and stop drift rates in the confusion model.
 
 To model guessing, a multistep process was applied. First, recognizing that stop-failure RTs for trials with an SSD of 0 ms must be the result of guesses given that participants did not receive any go stimulus presentation on which to base their decisions (and evidenced by the fact that choice accuracy at that SSD was at chance levels), an ex-Gaussian distribution was fit to those RTs to generate a guessing distribution, and a sampling function was built. We resampled whenever a sample was negative.
 
-Following this, a probability of guessing for trials at each SSD was computed. To do so, the following simplifying assumptions were made: stop-failure RTs at SSDs greater than 0 ms are the result of mixing the go RT distribution with the guessing distribution outlined in the preceding paragraph, no-stop-signal trials do not include guesses, and the choice accuracy of stop-failure trials for a given SSD is the result of this mixing. Therefore, the probability of guessing at a given SSD was found by solving the following formula:ACCSSD=Pguess|SSD∗ACCSSD=0+1(1−Pguess|SSD)∗ACCgo
+Following this, a probability of guessing for trials at each SSD was computed. To do so, the following simplifying assumptions were made: stop-failure RTs at SSDs greater than 0 ms are the result of mixing the go RT distribution with the guessing distribution outlined in the preceding paragraph, no-stop-signal trials do not include guesses, and the choice accuracy of stop-failure trials for a given SSD is the result of this mixing. Therefore, the probability of guessing at a given SSD was found by solving the following formula:
+
+$$
+ACC_{SSD}=P_{guess|SSD}∗ACC_{SSD=0}+1(1−P_{guess|SSD})∗ACC_{go}
+$$
 
 At each SSD, P proportion of simulated trials were sampled from the guess distribution, and 1-P proportion of simulated trials were taken from the no-stop-signal RT distribution.
 
@@ -251,13 +339,23 @@ This simulation paradigm was created to investigate the effects of the ABCD stop
 
 The following simulations occurred across four levels of between-subject SSRT variance (85 ms, 25 ms, 5 ms, and 0 ms). These values were compared to the 20 simple stopping datasets in a recent large-scale stopping study (Bissett et al., 2021) by computing an SSRT with replacement for each subject in the 20 conditions and finding the standard deviation of SSRTs across subjects within each condition. Negative SSD trials were excluded as they are not present in the ABCD task, and conditions using the Mechanical Turk data were subset to the same subjects who passed the qualitative checks applied in Bissett et al., 2021. The 20 conditions had a mean between-subject SD of SSRT = 43 ms with a range of 28 ms–85 ms.
 
-As discussed in the main text, we do not have a trustworthy estimate of individual-subject SSRT, and therefore, we do not have a trustworthy estimate of between-subject variability in SSRT. We chose these values to capture a range that varied from values that largely preserved SSRT as an individual difference metric (SD = 85 ms) down to the limit of no variability such that any preservation of individual differences is driven by differences in go RT and SSD. We simulated 8,207 theoretical individuals. For each simulated individual, a theoretical go RT and SSRT were independently sampled from the normal distributions described above, with resampling until both values were greater than 60 ms (i.e., at least 10 ms greater than the models’ nondecision time of 50 ms). These were paired with a unique subject’s SSD distribution and converted into drift rates (𝜇) using the following formula:μ=threshold/({ssrtorrt}−nondecisiontime)where the threshold was set to 100 and the nondecision time to 50 ms.
+As discussed in the main text, we do not have a trustworthy estimate of individual-subject SSRT, and therefore, we do not have a trustworthy estimate of between-subject variability in SSRT. We chose these values to capture a range that varied from values that largely preserved SSRT as an individual difference metric (SD = 85 ms) down to the limit of no variability such that any preservation of individual differences is driven by differences in go RT and SSD. We simulated 8,207 theoretical individuals. For each simulated individual, a theoretical go RT and SSRT were independently sampled from the normal distributions described above, with resampling until both values were greater than 60 ms (i.e., at least 10 ms greater than the models’ nondecision time of 50 ms). These were paired with a unique subject’s SSD distribution and converted into drift rates (𝜇) using the following formula:
+
+$$
+\mu=threshold/({ssrtorrt}−nondecisiontime)
+$$
+
+where the threshold was set to 100 and the nondecision time to 50 ms.
 
 Each theoretical subject’s drift rates were then inserted as parameters to the four competing models, and two sets of simulations occurred. First, a fixed-SSD approach was applied, with 2,500 trials being simulated for each SSD in the range of 0 ms–500 ms, with 50 ms steps, inclusive. Second, a traditional one up one down tracking algorithm (Levitt, 1971) was applied, with 25,000 stop trials being simulated. In the staircase approach, the initial SSD was 50 ms to match the initial SSD in the ABCD dataset, but the maximum SSD was 500 ms, which is different from the max of 900 ms in the ABCD dataset. In both cases, 5,000 go trials were simulated.
 
 Using the fixed-SSD simulations, SSRT was computed at each SSD between 0 and 500 for each subject and each generating model, using the integration with replacement method, following the recommendations of Verbruggen et al., 2019. In addition, SSRT was recomputed at each SSD while using each alternative model to generate different underlying distributions for the go process on stop trials (this must be done at the SSD level because the alternative models predict different underlying distributions at different SSDs). For the two models with slowed drift rates, 5,000 go RTs were generated for each SSD. For the guessing model, the original go RTs were augmented with a number of sampled guess RTs such that the proportion of guesses to non-guesses matched that found in the second formula. For example, if the proportion of guesses at a given SSD was found to be 75%, then 15,000 guess RTs would be sampled to combine with the original 5,000 go RTs, creating an RT distribution of which 75% were guesses. These methods allowed us to compare SSRT estimates across different generating models while always making the assumption of context independence.
 
-First, SSRT was computed on the whole of each simulated individual’s fixed-SSD data. Second, for each simulated subjects, we sampled an SSD distribution from a real ABCD subject without replacement, and we estimated a simulated mean SSRT by calculating a weighted sum of SSRTs across SSDs:SSRT=∑SSD=0SSDmaxPSSD∗SSRTSSD
+First, SSRT was computed on the whole of each simulated individual’s fixed-SSD data. Second, for each simulated subjects, we sampled an SSD distribution from a real ABCD subject without replacement, and we estimated a simulated mean SSRT by calculating a weighted sum of SSRTs across SSDs:
+
+$$
+SSRT=\sumSSD=0SSD_{max}P_{SSD}∗SSRT_{SSD}
+$$
 
 Third, an SSRT was computed on the individual’s tracking-based simulation data. Rank correlations between alternative models and the standard independent race model using the same SSRT method were compared to describe the minimum and mean rank correlations within the text.
 

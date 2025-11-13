@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.03256.001 Natural sounds can be characterised by their spectral content and temporal modulation, but how the brain is organized to analyse these two critical sound dimensions remains uncertain. Using functional magnetic resonance imaging, we demonstrate a topographical representation of amplitude modulation rate in the auditory cortex of awake macaques. The representation of this temporal dimension is organized in approximately concentric bands of equal rates across the superior temporal plane in both hemispheres, progressing from high rates in the posterior core to low rates in the anterior core and lateral belt cortex. In A1 the resulting gradient of modulation rate runs approximately perpendicular to the axis of the tonotopic gradient, suggesting an orthogonal organisation of spectral and temporal sound dimensions. In auditory belt areas this relationship is more complex. The data suggest a continuous representation of modulation rate across several physiological areas, in contradistinction to a separate representation of frequency within each area. DOI: http://dx.doi.org/10.7554/eLife.03256.001
+Natural sounds can be characterised by their spectral content and temporal modulation, but how the brain is organized to analyse these two critical sound dimensions remains uncertain. Using functional magnetic resonance imaging, we demonstrate a topographical representation of amplitude modulation rate in the auditory cortex of awake macaques. The representation of this temporal dimension is organized in approximately concentric bands of equal rates across the superior temporal plane in both hemispheres, progressing from high rates in the posterior core to low rates in the anterior core and lateral belt cortex. In A1 the resulting gradient of modulation rate runs approximately perpendicular to the axis of the tonotopic gradient, suggesting an orthogonal organisation of spectral and temporal sound dimensions. In auditory belt areas this relationship is more complex. The data suggest a continuous representation of modulation rate across several physiological areas, in contradistinction to a separate representation of frequency within each area.
 
 ## Introduction
 
@@ -33,33 +33,347 @@ The data reveal a topographic organisation of amplitude modulation rate in the m
 
 ## Results
 
-## Amplitude modulation rate maps
+### Amplitude modulation rate maps
 
-In a first experiment we recorded the BOLD response to amplitude-modulated broad-band noise at six different rates (0.5, 2, 8, 32, 128, 512 Hz, see also [
+In a first experiment we recorded the BOLD response to amplitude-modulated broad-band noise at six different rates (0.5, 2, 8, 32, 128, 512 Hz, see also [Baumann et al., 2011]) across the auditory cortex of three monkeys. We generated two different maps to reveal the spatial organisation of modulation rate by projecting the data of the acquired volumes onto the cortical surface derived from the anatomical scans. In a first map (contrast map) we contrasted the response strength of the lower rate bands vs the higher rate bands to reveal the gradual change of preference for higher to lower modulation rates across the auditory cortex (Figure 1, top panels). The data corresponding to the two highest rates (512 Hz, 128 Hz) and lowest rates (2 Hz, 0.5 Hz) were combined before contrasting, while the intermediate rates were ignored (see also Baumann et al., 2011). In a second map (best-rate map), for each position in the auditory cortex, we represented the rate band that showed the strongest response. For the best-rate maps, all six individual rates were mapped (Figure 1, bottom panels). The contrast maps reveal a topography for different amplitude modulation rates with preferences for high rates consistently clustered in the postero-medial auditory cortex with the maxima at the medial border of the primary field A1 in both hemispheres of all tested animals. Preferences for low rates were located lateral, anterior and to some degree posterior to the high-rate clusters. In the areas with the maximal preference for low or high rates, the contrast between low and high rates was statistically significant (p < 0.05) in all animals and hemispheres, corrected for multiple comparisons with family-wise error (FWE) correction over the recorded volume. The best-modulation-rate maps for the six tested rates (Figure 1, bottom) confirmed the systematic organisation of the response pattern with a topographic representation of rate arranged in approximately concentric frequency bands starting with high rates in the postero-medial auditory cortex (at least a few voxels showed a best modulation rate of 128 Hz postero-medially in 5 of 6 hemispheres) and progressing anterior, lateral and in some cases posterior to lower rates (see also the schemata in Figure 4). The highest rate (512 Hz) was hardly represented in the best-rate maps.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03256/elife-03256-fig1-v2.jpg)
 
-**Figure 1.:** Top panels: map showing contrast of low vs high rates (rate contrast map) projected on rendered surfaces of the superior temporal planes in three animals (M1-3). Green arrows indicate mean gradient direction of the contrast in auditory field A1 (gradient directions derived from 2D regression; see also Table 1). Green circles indicate the position of the centre of mass of A1. Bottom panels: map of preferred response to different rates (Best-rate map). A; anterior, P; posterior, L; left, R; right.DOI: http://dx.doi.org/10.7554/eLife.03256.003
+**Figure 1.:** Top panels: map showing contrast of low vs high rates (rate contrast map) projected on rendered surfaces of the superior temporal planes in three animals (M1-3). Green arrows indicate mean gradient direction of the contrast in auditory field A1 (gradient directions derived from 2D regression; see also Table 1). Green circles indicate the position of the centre of mass of A1. Bottom panels: map of preferred response to different rates (Best-rate map). A; anterior, P; posterior, L; left, R; right.
 
-## Frequency maps
+### Frequency maps
 
-In a second experiment, we recorded the BOLD response to bandpass noise in three different frequency bands (0.5–1 kHz, 2–4 kHz, 8–16 kHz) in the same animals used in the first experiment. Based on these data, we generated contrast maps (
+In a second experiment, we recorded the BOLD response to bandpass noise in three different frequency bands (0.5–1 kHz, 2–4 kHz, 8–16 kHz) in the same animals used in the first experiment. Based on these data, we generated contrast maps (Figure 2, top panels) and best frequency maps (Figure 2, bottom panels) for each animal similar to experiment 1. These maps confirm the well-established tonotopic pattern with multiple reversals of the frequency gradient that serve as a basis for the delineation of auditory fields in the primate auditory cortex (Morel et al., 1993; Kosaki et al., 1997; Petkov et al., 2006; Bendor and Wang, 2008; Baumann et al., 2010). In a further experiment, we confirmed these findings using a ‘phase-encoded’ design (Sereno et al., 1995; Joly et al., 2014) in animal M1 and M2 (Figure 3). Based on these frequency maps, we identified auditory fields according to Hackett (2011), using procedures described in Petkov et al. (2006) and Baumann et al. (2010), adapted by the use of T1/T2 weighted MRI data to inform on the location of the core/belt border (Joly et al., 2014).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03256/elife-03256-fig2-v2.jpg)
 
-**Figure 2.:** Top panels: map of contrast of low vs high frequency band (frequency-contrast map) projected on rendered surfaces of the superior temporal planes in three animals (M1-3). Green arrows indicate mean gradient direction of the contrast in auditory field A1. Green circles indicate the position of the centre of mass of A1. Bottom panels: map of preferred response to different frequency bands (Best-frequency map). A; anterior, P; posterior, L; left, R; right.DOI: http://dx.doi.org/10.7554/eLife.03256.004
+**Figure 2.:** Top panels: map of contrast of low vs high frequency band (frequency-contrast map) projected on rendered surfaces of the superior temporal planes in three animals (M1-3). Green arrows indicate mean gradient direction of the contrast in auditory field A1. Green circles indicate the position of the centre of mass of A1. Bottom panels: map of preferred response to different frequency bands (Best-frequency map). A; anterior, P; posterior, L; left, R; right.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03256/elife-03256-fig3-v2.jpg)
 
-**Figure 3.:** Top panels: map of preferred response to nine different frequencies between 0.5–8 KHz projected on rendered surfaces of the superior temporal planes in two animals (M1, M2). Approximate border between A1 and R is marked by grey bars. A; anterior, P; posterior, L; left, R; right.DOI: http://dx.doi.org/10.7554/eLife.03256.005
+**Figure 3.:** Top panels: map of preferred response to nine different frequencies between 0.5–8 KHz projected on rendered surfaces of the superior temporal planes in two animals (M1, M2). Approximate border between A1 and R is marked by grey bars. A; anterior, P; posterior, L; left, R; right.
 
-Here, we describe organisational features of these maps (summarised in
+Here, we describe organisational features of these maps (summarised in Figure 4, right) which are well in line with previous studies (reviewed in Baumann et al., 2013). The anterior-posterior low to high gradient that defines the auditory core field A1 is particularly clear in the contrast maps (Figure 2, top panels). In line with previous studies in macaques, this gradient has generally a lateral-to-medial component in addition to the main anterior-posterior direction (Morel et al., 1993; Kosaki et al., 1997; Baumann et al., 2010). Similar to the situation in humans, the low frequency area that defines the border between fields A1 and R is typically wider on the lateral side compared to the medial side. The anterior high frequency area, which forms the border between the auditory fields R and RT, is typically located on the medial side of the superior temporal plane, in the depth of the circular sulcus (see also Figure 4, Baumann et al., 2013). The resulting anterio-medial direction of the main frequency gradient in R forms, in combination with gradient direction in A1, an inward inflection in the gradient axis across A1 and R, which has previously been reported in Morel et al. (1993) and Kosaki et al. (1997) in macaques, Bendor and Wang (2008) in marmosets and described in (Jones, 2003; Hackett, 2011; Baumann et al., 2013). This directional change of the frequency gradient axis across the core fields, which is also obvious from the different mean angles of the gradients in A1 and R (Table 1), is of particular relevance for the relationship of temporal and spectral gradients in these fields (see Figure 4 and ‘Discussion’).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03256/elife-03256-fig4-v2.jpg)
 
-**Figure 4.:** Model of modulation rate organisation in context of functional-field borders and frequency reversals (left side). Schematic organisation of tonotopy with indication of main gradients for tonotopy and modulation rate in selected functional fields (right side).DOI: http://dx.doi.org/10.7554/eLife.03256.006
+**Figure 4.:** Model of modulation rate organisation in context of functional-field borders and frequency reversals (left side). Schematic organisation of tonotopy with indication of main gradients for tonotopy and modulation rate in selected functional fields (right side).
 
-## Relative orientation of modulation rate and frequency gradients in auditory core
+**Table 1.**
+ Directions and relative orientations of amplitude modulation rate and frequency gradients in selected auditory fields
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Hemis-phere</th>
+      <th>Field</th>
+      <th>Rel. angle (α) (degrees)</th>
+      <th>Frequency (degrees)</th>
+      <th>R2</th>
+      <th>p-value</th>
+      <th>Rate (degrees)</th>
+      <th>R2</th>
+      <th>p-value</th>
+      <th>N (vertices)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">M1</td>
+      <td>L</td>
+      <td rowspan="6">A1</td>
+      <td>137</td>
+      <td>162</td>
+      <td>0.796</td>
+      <td>&lt;1E-16</td>
+      <td>25</td>
+      <td>0.636</td>
+      <td>&lt;1E-16</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>73</td>
+      <td>155</td>
+      <td>0.546</td>
+      <td>&lt;1E-16</td>
+      <td>82</td>
+      <td>0.696</td>
+      <td>&lt;1E-16</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M2</td>
+      <td>L</td>
+      <td>120</td>
+      <td>175</td>
+      <td>0.927</td>
+      <td>&lt;1E-16</td>
+      <td>56</td>
+      <td>0.884</td>
+      <td>&lt;1E-16</td>
+      <td>154</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>133</td>
+      <td>160</td>
+      <td>0.803</td>
+      <td>&lt;1E-16</td>
+      <td>66</td>
+      <td>0.750</td>
+      <td>&lt;1E-16</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M3</td>
+      <td>L</td>
+      <td>121</td>
+      <td>164</td>
+      <td>0.824</td>
+      <td>&lt;1E-16</td>
+      <td>43</td>
+      <td>0.699</td>
+      <td>&lt;1E-16</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>128</td>
+      <td>175</td>
+      <td>0.722</td>
+      <td>&lt;1E-16</td>
+      <td>47</td>
+      <td>0.675</td>
+      <td>&lt;1E-16</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td></td>
+      <td></td>
+      <td>118.7</td>
+      <td>165.2</td>
+      <td>0.77</td>
+      <td></td>
+      <td>53.2</td>
+      <td>0.72</td>
+      <td></td>
+      <td>114.2</td>
+    </tr>
+    <tr>
+      <td>Std dev</td>
+      <td></td>
+      <td></td>
+      <td>23.3</td>
+      <td>8.2</td>
+      <td>0.13</td>
+      <td></td>
+      <td>19.7</td>
+      <td>0.09</td>
+      <td></td>
+      <td>32.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M1</td>
+      <td>L</td>
+      <td rowspan="6">R</td>
+      <td>81</td>
+      <td>38</td>
+      <td>0.106</td>
+      <td>1.40E-02</td>
+      <td>120</td>
+      <td>0.782</td>
+      <td>&lt;1E-16</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>140</td>
+      <td>23</td>
+      <td>0.391</td>
+      <td>2.89E-11</td>
+      <td>117</td>
+      <td>0.600</td>
+      <td>&lt;1E-16</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M2</td>
+      <td>L</td>
+      <td>51</td>
+      <td>29</td>
+      <td>0.697</td>
+      <td>&lt;1E-16</td>
+      <td>80</td>
+      <td>0.420</td>
+      <td>2.00E-09</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>103</td>
+      <td>44</td>
+      <td>0.441</td>
+      <td>2.50E-10</td>
+      <td>147</td>
+      <td>0.660</td>
+      <td>&lt;1E-16</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M3</td>
+      <td>L</td>
+      <td>180</td>
+      <td>81</td>
+      <td>0.476</td>
+      <td>1.40E-10</td>
+      <td>100</td>
+      <td>0.255</td>
+      <td>4.20E-06</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>148</td>
+      <td>9</td>
+      <td>0.611</td>
+      <td>4.20E-15</td>
+      <td>157</td>
+      <td>0.691</td>
+      <td>&lt;1E-16</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td></td>
+      <td></td>
+      <td>117.2</td>
+      <td>37.3</td>
+      <td>0.45</td>
+      <td></td>
+      <td>120.2</td>
+      <td>0.57</td>
+      <td></td>
+      <td>91.7</td>
+    </tr>
+    <tr>
+      <td>Std dev</td>
+      <td></td>
+      <td></td>
+      <td>47.6</td>
+      <td>24.6</td>
+      <td>0.20</td>
+      <td></td>
+      <td>28.7</td>
+      <td>0.20</td>
+      <td></td>
+      <td>12.1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M1</td>
+      <td>L</td>
+      <td rowspan="6">CL</td>
+      <td>161</td>
+      <td>13</td>
+      <td>0.577</td>
+      <td>2.80E-04</td>
+      <td>148</td>
+      <td>0.587</td>
+      <td>1.70E-06</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>113</td>
+      <td>109</td>
+      <td>0.516</td>
+      <td>3.30E-07</td>
+      <td>138</td>
+      <td>0.264</td>
+      <td>1.90E-03</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M2</td>
+      <td>L</td>
+      <td>163</td>
+      <td>42</td>
+      <td>0.563</td>
+      <td>3.30E-07</td>
+      <td>155</td>
+      <td>0.582</td>
+      <td>2.00E-12</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>102</td>
+      <td>14</td>
+      <td>0.552</td>
+      <td>5.70E-10</td>
+      <td>116</td>
+      <td>0.559</td>
+      <td>&lt;1E-16</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td rowspan="2">M3</td>
+      <td>L</td>
+      <td>168</td>
+      <td>27</td>
+      <td>0.795</td>
+      <td>3.30E-16</td>
+      <td>165</td>
+      <td>0.751</td>
+      <td>2.60E-14</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>158</td>
+      <td>2</td>
+      <td>0.706</td>
+      <td>4.20E-11</td>
+      <td>156</td>
+      <td>0.768</td>
+      <td>4.20E-13</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>Average</td>
+      <td></td>
+      <td></td>
+      <td>144.2</td>
+      <td>34.5</td>
+      <td>0.62</td>
+      <td></td>
+      <td>146.3</td>
+      <td>0.59</td>
+      <td></td>
+      <td>44.2</td>
+    </tr>
+    <tr>
+      <td>Std dev</td>
+      <td></td>
+      <td></td>
+      <td>28.8</td>
+      <td>39.0</td>
+      <td>0.11</td>
+      <td></td>
+      <td>17.4</td>
+      <td>0.18</td>
+      <td></td>
+      <td>8.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Main gradient directions (relative to anterior-posterior axis) and the resulting relative angle (α) between the orientations of the amplitude modulation rate (Rate) and spectral frequency (Frequency) gradients in auditory fields A1, R and CL are listed for two hemispheres (L, R) in three animals (M1-3). Additionally, R2 values, p-values and number of data points (n) from the respective 2D regression analysis are included._
+
+### Relative orientation of modulation rate and frequency gradients in auditory core
 
 The systematic, topographic representation of amplitude modulation rate we demonstrate extends over multiple fields to form a wider concentric organisation across the entire auditory cortex in both hemispheres. If this organization is overlaid with the spectral pattern derived from experiment 2, we notice that in the auditory core areas (A1, R) the gradients for modulation rate and frequency lie approximately orthogonal to one another (illustrated in schemata of Figure 4). This arrangement is most obvious in A1 in individual animals, but the relationship generally holds for R and the adjacent lateral belt fields as well. This occurs as a consequence of the change in the direction of the tonotopic axis between A1 and R such that the tonotopic gradient follows approximately the iso- amplitude-modulation rate lines. In other words, the tonotopic axis runs anteriorly and medially in area R whilst the rate gradient runs anteriorly and laterally to preserve the orthogonal relationship. In this arrangement, the frequency reversals form spokes in the concentric organisation of the amplitude modulation rate (Figures 1, 2, 4 left). However, rostral of R and caudal of A1 the orthogonality of spectral and temporal features breaks down and the gradients become more collinear and less obvious (Figures 1, 2, 4 right).
 
@@ -73,7 +387,7 @@ Here we demonstrate for the first time a systematic and topographic representati
 
 The topographical representation of stimulus attributes is a common organising principle in the brain. Apart from sound frequency, we also find it in the multiple retinotopic representations in the visual system and the somatotopic representations in the somato-sensory system. Orthogonal representations of two topographic gradients have been previously demonstrated for other stimulus dimensions in the auditory system (Suga and O'Neill, 1979) and the visual system (e.g., Tootell et al., 1982; Sereno et al., 1995), and are predicted on theoretical considerations (Swindale, 2004; Watkins et al., 2009). In the current case the partial orthogonal representation might facilitate the simultaneous analysis of different dimensions of sound.
 
-## Comparison of the results to previous studies in primates
+### Comparison of the results to previous studies in primates
 
 Previous studies that investigated the representation of amplitude-modulation rate (Bieser and Muller-Preuss, 1996; Giraud et al., 2000; Bendor and Wang, 2008; Schonwiesner and Zatorre, 2009; Overath et al., 2012), have not reported a topographical organisation of this temporal dimension in the auditory cortex. We can only speculate why such an organisation has not been reported in these previous studies. Electrophysiology studies in other primate species have highlighted a tendency for differential responses across different auditory fields with more primary areas preferring faster rates or showing shorter latencies and areas higher up the hierarchy preferring lower rates or showing longer latencies (Bieser and Muller-Preuss, 1996; Bendor and Wang, 2008). These results have been interpreted in terms of a posterior-to-anterior high-to-low rate gradient (Bendor and Wang, 2008) or a core-to-belt high-to-low rate gradient (Camalier et al., 2012). Given our results, both schemes have some merit, but they do not capture the full complexity of the organisation for temporal rates in concentric bands. Furthermore, the maps for amplitude-modulation rate reported in this study (Figure 1) indicate that in addition to differential responses between fields a clear gradient can be observed within the fields, particularly in the auditory core.
 
@@ -81,91 +395,91 @@ While earlier human fMRI studies (Giraud et al., 2000; Schonwiesner and Zatorre,
 
 The study by Herdener et al. (2013) focused on human homologues of the auditory core areas (hA1, hR) in the vicinity of the Heschl's gyrus. The reported results in these areas are consistent with ours in that they suggest orthogonal relationships of frequency and amplitude modulation rates with similar gradient directions found to those in our study. Finally, a further recent study in humans tested the representation of temporal and spectral features (Santoro et al., 2014). The chosen approach differed from our and previous studies in that a computational analysis was applied to test different models of stimulus feature representation. Thus, the emphasis was not on mapping individual rates and frequencies or identifying stimulus gradients. Furthermore, combined spectro-temporal modulations where used as stimuli in addition to pure temporal and spectral modulations. Nevertheless, the study identified an area in postero-medial auditory cortex, just posterior of the medial Heschl's gyrus, with a preference for fast temporal rates. Regions anterior and lateral of this area showed a preference for low temporal rates (summarised in Figure 7 of Santoro et al., 2014). Based on anatomical relationships in the auditory cortex between human and non-human primates as suggested in Baumann et al. (2013), such a pattern for temporal rate preference is consistent with the concentric pattern of rate representation observed here.
 
-## How does the BOLD response reflect sound modulation responses of single neurons?
+### How does the BOLD response reflect sound modulation responses of single neurons?
 
 In electrophysiology, neuronal responses to modulation rate are usually divided into two different coding principles: rate coding and temporal coding (e.g., Lu et al., 2001; Liang et al., 2002; Yin et al., 2011), reviewed in Joris et al. (2004). The rate code is a measure of the average number of spikes fired over a defined period of time to the different modulation rates, and the temporal code is a measure of how well the neuron's firing synchronises with the amplitude envelope of the stimulus at different modulation rates. The average response of neurons in the cortex shows slightly different best rates for the two measures and some neurons are properly tuned to only one of the two measures (Joris et al., 2004). Different neurons in the auditory cortex of non-human primates have been reported with tuning to modulation rates between 2–120 Hz, measured by temporal response and between 1–250 Hz measured by rate response (Bieser and Muller-Preuss, 1996; Liang et al., 2002), see also (Joris et al., 2004). However, neurons responding with a synchronised temporal response are rarely tuned to rates above 64 Hz and are preferentially located in primary areas. Neurons demonstrating rate tuning make up the majority of neurons that respond to modulated sounds in-non primary auditory areas and are frequently tuned to rates at 64 Hz and above.
 
 It is not entirely clear which of the two response types are represented by the BOLD response reported in this study. While an increased average firing rate of a local sample of neurons to a certain modulation rate would certainly lead to an increased BOLD response, an increased synchronisation within the same sample of neurons would probably have a similar effect. This is supported by a simulation study which suggested that both types of firing patterns would influence the BOLD response in similar way (Chawla et al., 1999). In our study, the range of amplitude-modulation rates represented in the BOLD response and the pattern of areas that respond to specific rates is better matched by response properties reported for single neurons responding with a rate code in non-human primates (Bieser and Muller-Preuss, 1996; Liang et al., 2002; Bendor and Wang, 2008). Nevertheless, it is also possible that the measured BOLD signal is a response to a combination of rate- and temporal-coding neurons.
 
-## Comparison of preferred amplitude modulation rates in humans and monkeys
+### Comparison of preferred amplitude modulation rates in humans and monkeys
 
 The responses to different amplitude-modulation rates reported in this study are in line with results from previous electrophysiological studies in other non-human primates (Bieser and Muller-Preuss, 1996; Liang et al., 2002) in the range of the preferred rates (2–128 Hz) as well as the preferred rates for the different fields. The current study showed the highest preference in A1 for a rate of 32 Hz and to a lesser extent to 8 Hz while similar electrophysiology studies in monkeys additionally highlighted 16 Hz, a rate not used in this study. Human studies (Giraud et al., 2000; Harms and Melcher, 2002; Overath et al., 2012) showed slightly lower preferred rates between 2–8 Hz for primary areas while rates above 64 Hz where hardly represented. These species-specific values are consistent with psychophysical comparisons between humans and macaques in an amplitude modulation discrimination task showing average peak sensitivities at lower rates in humans (10–60 Hz) than in macaques (30–120 Hz) (O'Connor et al., 2010) or even a low-pass function in humans (Viemeister, 1979).
 
-## Relevance of amplitude-modulation rate for other temporal response features
+### Relevance of amplitude-modulation rate for other temporal response features
 
 We demonstrated a topographic map for a specific temporal feature of sound, the rate of amplitude modulation. Temporal variation of sound can also be characterised by other means such as frequency modulation. Furthermore, differences in response latencies in areas at a similar hierarchy level were used as an indicator of the temporal resolution of the local circuits (Langner et al., 1987, 2002). Various studies show however that different temporal response measures to different temporal stimulus features are highly correlated. Liang et al. (2002), for example, shows a high correlation of single neuron responses in the auditory cortex of non-human primates to amplitude-modulation rate and frequency-modulation rate. Studies in the inferior colliculus showed good correlation of the representation of amplitude-modulation rate and the response latency of neurons in the inferior colliculus (Langner et al., 1987, 2002). Furthermore, studies that recorded response latencies across different auditory fields, showed a tendency for longer latencies in rostral fields (Bendor and Wang, 2008; Camalier et al., 2012) and belt fields (Camalier et al., 2012), consistent with the preference for slower modulation rates we found in these areas. This suggests that preferred amplitude-modulation rate is representative of the processing, or integration, time windows which characterise the time scale over which temporal features are integrated in a particular area or circuit.
 
-## Conclusions
+### Conclusions
 
 Here, we demonstrate a systematic, topographical representation of modulation rate in the auditory cortex of a non-human primate, organised, in parts, orthogonally to the established gradient for frequency. The systematic concentric organisation of amplitude-modulation rate that we demonstrate here, could provide an anatomical basis for the analysis of different modulation rates in separate modulation filterbanks (Dau et al., 1997a, 1997b). The superposition of maps of modulation rate and frequency also occurs in the inferior colliculus (Baumann et al., 2011) where some higher modulation rates are represented than in the cortex, whilst in the cortex the modulation rates mapped decrease with greater distance from A1. The mapping of distinct dimensions of sound, amplitude-modulation rate and frequency, as distinct vectors in an anatomical space, is analogous to the mapping of polar angle and eccentricity that occurs at all processing levels of the visual system. Representation in the auditory cortex differs, however, in that a complete mapping of modulation rate does not occur within each cortical area, in contrast to the multiple and complete representations of spectral frequency that these areas contain.
 
 ## Materials and methods
 
-## Experiment 1, 2
+### Experiment 1, 2
 
-## Animals
+#### Animals
 
 The data were obtained from three male macaque monkeys (Macaca mulatta) weighting 9–16 kg. Animals were implanted with a headholder under general anaesthesia and sterile conditions as described in detail previously (Thiele et al., 2006). Before scanning, the animals were habituated to the scanner environment. A custom-made primate chair was used to position the animal in the vertical bore of the scanner and head movements were minimised with a head holder. Details of the positioning procedures are given in (Baumann et al., 2010). All experiments were carried out in accordance with the UK, Animals (Scientific Procedures) Act (1986), European Communities Council Directive 1986 (86/609/EEC) and the US National Institutes of Health Guidelines for the Care and Use of Animals for Experimental Procedures, and were performed with great care to ensure the well-being of the animals.
 
-## Sound stimuli and presentation (see also Baumann et al., 2011)
+#### Sound stimuli and presentation (see also Baumann et al., 2011)
 
 Sound stimuli were created in MATLAB 7.1 (MathWorks, Natick, USA) with a sample rate of 44.1 kHz and 16 bit resolution. Stimuli for characterising the BOLD response to spectral frequencies were based on a random-phase noise carrier with three different pass-bands, 0.5–1 kHz, 2–4 kHz and 8–16 kHz resulting in three different stimuli that encompassed different spectral ranges. The carriers were amplitude modulated with a sinusoidal envelope of 90% depth at 10 Hz to achieve a robust response in the auditory system. The stimuli for characterising the temporal rates in the amplitude modulation experiment were also based on random-phase noise carrier but had a flat broad-band spectrum from 25 Hz to 16 kHz. This carrier was amplitude modulated at six different rates, 0.5 Hz, 2 Hz, 8 Hz, 32 Hz, 128 Hz and 512 Hz resulting in six different stimuli that covered a broad range of temporal rates identical to the data previously reported from the inferior colliculus (Baumann et al., 2011). The duration of all the stimuli was 6 s which included at least three cycles of the modulation in the case of the lowest temporal frequency. This duration is also sufficient for the BOLD response in the auditory cortex of macaques to reach a plateau (Baumann et al., 2010). The on- and off-set of the stimulus were smoothed by a linear ramp of 50 ms.
 
 We presented the stimuli in the scanner at an RMS sound pressure level of 75 dB using custom adapted electrostatic headphones based on a Nordic NeuroLab system (NordicNeuroLab, Bergen, Norway). These headphones feature a flat frequency transfer function up to 16 kHz and are free from harmonic-distortion at the applied sound pressure level. Sound pressure levels were verified using an MR-compatible condenser microphone B&K Type 4189 (Bruel & Kjaer, Naerum, Denmark) connected by an extension cable to the sound level meter Type 2260 from the same company.
 
-## MRI hardware and imaging
+#### MRI hardware and imaging
 
 Data were recorded in an actively shielded, vertical 4.7 T MRI scanner (Bruker Biospec 47/60 VAS) equipped with a Bruker GA-38S gradient system with an inner-bore diameter of 38 cm (Bruker BioSpin GmbH, Ettlingen, Germany). The applied RF transmitter-receiver coil (Bruker) was of a volume bird-cage design that covered the entire head of the animals. Functional and structural data were acquired from 2 mm thick slices that were aligned to the superior temporal plane and covered the temporal lobe. The slices were selected with the help of an additional structural brain scan in sagittal orientation.
 
-## Functional scan parameters
+#### Functional scan parameters
 
 Single-shot gradient-recalled echo-planar imaging sequences were optimised for each subject sharing an in-plane resolution of 1 × 1 mm2 and a volume acquisition time (TA) of 1 s. Typical acquisition parameters were: TE: 21 ms, flip angle (FA): 90°, spectral bandwidth: 200 kHz, field of view (FOV): 9.6 × 9.6 cm2, 16 slices of 2 mm thickness, with an acquisition matrix of 96 × 96. Each volume acquisition was separated by a 9 s gap to avoid recording the BOLD response to the gradient noise of the previous scan (‘sparse design’). In combination with the TA of 1 s this results in a repetition time (TR) of 10 s. The stimuli were presented during the last 6 s of the silent gap. The detailed timing was based on a previous BOLD response time course characterisation in the auditory system of macaques (Baumann et al., 2010). Before every other volume acquisition stimuli were omitted to obtain data for a silent baseline. For the frequency experiment a total 720 vol were acquired per session. This resulted in 120 vol per stimulus per session (half of the volumes served for the baseline) or 360 vol per stimulus in total for the three sessions. For the amplitude modulation experiment 540 vol per session were acquired resulting in 45 vol per stimulus per session and 315 vol per stimulus for the combined seven sessions.
 
-## Structural scan parameters
+#### Structural scan parameters
 
 Structural images (T1-weighted) used the same geometry as the functional scans to simplify coregistration. The imaging parameters of the MDEFT (Modified Driven Equilibrium Fourier Transform) sequence were: TE: 6 ms, TR: 2240 ms, FA: 30°, FOV 9.6 × 9.6 cm2 using an encoding matrix of 256 × 256 to result in an in-plane resolution of 0.375 × 0.375 mm2 per voxel. Structural scans were acquired after each functional session.
 
-## Data analysis
+#### Data analysis
 
 For preprocessing and general linear model analysis we employed the SPM5 software package (www.fil.ion.ucl.ac.uk/spm/) implemented in Matlab 7.1. The data acquired from each animal were analysed separately. Image volumes from each session were realigned to the first volume and the sessions of each experiment were subsequently realigned to each other before smoothing the data with a kernel of 2 mm full-width half-maximum. The time-series were high pass filtered with a cut-off of 300 s to account for slow signal drifts and the data was adjusted for global signal fluctuations (global scaling). In a general linear model analysis for the combined sessions of each experiment, the voxel-wise response estimate coefficients (beta-values) and t-values for the contrast of the different stimuli vs the silent baseline were calculated. Further analysis and data display was performed using custom designed Matlab scripts (Source code 1). The data were masked retaining only voxels that showed significant values for the combined stimuli vs baseline contrast for each of the two experiments (p < 0.001; uncorrected for multiple comparisons).
 
-## Frequency/rate contrast maps
+#### Frequency/rate contrast maps
 
 The frequency contrast maps were calculated voxel by voxel by subtracting the response estimate coefficients (beta-values) of the low frequency condition (0.5–1 kHz) from the high frequency condition (8–16 kHz). The rate contrast maps were calculated similarly, however the means of the lowest two rates (0.5, 2 Hz) and the highest two rates (128, 512 Hz) were taken before subtracting the response estimate coefficients; see also (Baumann et al., 2011). The resulting maps represent the degree of preference for high or low frequencies/rates.
 
-## Best frequency/rate response maps (BF/R-map)
+#### Best frequency/rate response maps (BF/R-map)
 
 The best frequency/rate response maps were calculated by identifying voxel by voxel for each experiment and animal which of the three frequency conditions or six temporal rate conditions showed the highest t-values. The resulting maps represent the preferred frequency or rate for each voxel.
 
-## Projection of data on anatomical surface
+#### Projection of data on anatomical surface
 
 Structural images were segmented using ITKsnap (http://www.itksnap.org). The binary image was used to generate a 3D triangulated mesh of the superior temporal plane using BrainVisa suite (http://brainvisa.info). The data from of the Contrast- and Best-Frequency/rate Maps where then projected on the rendered surface using BrainVisa and taking, for each point on the surface, the data in a sphere of 1.6 mm into account.
 
-## Analysis of gradients
+#### Analysis of gradients
 
 For further analysis the data from the contrast maps on the surface was imported into Matlab as vertex mesh. Auditory fields according to (Hackett, 2011) were identified based on the gradient reversals of the tonotopic maps; see (Baumann et al., 2010) and (Petkov et al., 2006) for details, and auditory core/belt borders suggested by myelinisation maps that were estimated from a T1/T2 contrast procedure as described in Joly et al. (2014). For each auditory field the mean gradients of modulation rate and frequency preference were calculated in separate, two dimensional regression analyses as previously described in Baumann et al. (2011). The input of the regression analysis was the spatial x and y coordinates and the values from the contrast maps, effectively resulting in gradients of a flat projection of the contrast values for the different auditory fields.
 
-## Experiment 3
+### Experiment 3
 
-## Subjects
+#### Subjects
 
 The two male rhesus monkeys that participated in this experiment were identical to subjects M1 and M2 in experiment 1 and 2. Before the scanning sessions, the monkeys were trained to perform a visual fixation task with the head of the animal rigidly positioned with a head holder attached to a cranial implant. The visual fixation task was used to equalise as much as possible attention across runs and minimize body movement and stress during scanning and presentation of the auditory stimuli.
 
-## Stimuli
+#### Stimuli
 
 Sound stimuli were generated at the beginning of each functional run. The stimuli were computed with a sampling rate of 44.1 kHz using an in-house Python program—PrimatePy. PrimatePy mainly relies on Psychopy, a psychophysics package (www.psychopy.org/). Stimuli were pure tone bursts and were presented in either low-to-high or high-to-low progression of frequencies. Frequencies were 500, 707, 1000, 1414, 2000, 2828, 4000, 5657, and 8000 Hz (half-octave steps). Tone bursts were either 50 ms or 200 ms in duration (inter-stimulus interval 50 ms) and were alternated in pseudo-randomized order during the 2 s block, resulting in a rhythmic pattern of tone onsets. Pure-tone bursts of one frequency were presented for a 2 s block before stepping to the next frequency until all 9 frequencies had been presented. This 18 s progression was followed by a 12 s silent pause, and this 30 s cycle was presented 15 times. A run lasted for 8 min and the two run types with either low-to-high or high-to-low progression, were alternated. Stimuli were delivered through MR-compatible insert earphones (sensimetrics, Model S14, www.sens.com). Scan noise was attenuated by the earphones and by dense foam padding around the ears.
 
-## Behavioural task
+#### Behavioural task
 
 The animal performed the visual fixation task during the acquisition of a full time series (8 min). Each time series was followed by a break of about 1 min. The eye position was monitored at 60 Hz with a tracking (camera-based with Infra-Red illumination) of the pupil using iView software (SMI, www.smivision.com, Teltow, Germany). The task was as follow: a fixation target (a small red square) appeared on the centre of the screen, when the eye trace entered within a fixation window (about 2–3 visual degree centred onto the target) a timer started and the fixation target turned green. A continuous visual fixation (no saccades) of a randomly defined duration of 2–2.5 s was immediately followed by the delivery of a juice reward using a gravity-fed dispenser. The reward was controlled by PrimatePy via a data acquisition USB device LabJack (U3-LV, http://labjack.com/).
 
-## Magnetic resonance imaging
+#### Magnetic resonance imaging
 
 Functional MRI measurements by blood oxygen level-dependent (BOLD) contrast consisted of single-shot gradient-echo echo-planar imaging sequences with the following parameters: TR = 1400 ms, TE = 21 ms, 90° flip angle, matrix 92 × 92, FOV 110 mm × 110 mm, in-plane resolution 1.2 × 1.2 mm2, slice thickness = 1.2 mm. Functional times series consisted of a continuous acquisition of 343 vol with 20 axial slices acquired with parallel imaging with twofold GRAPPA acceleration using 8-channel array receive coil. The RF transmission was done with the Bruker birdcage volume coil in transmit mode. From the scanner, a TTL pulse signal was triggered at the start of every volume and sent out to PrimatePy via the LabJack for synchronization purposes. In total, a number of 15 runs were acquired (M1:8, M2:7) which represents 15 × 343 = 5145 vol.
 
 Anatomical MR images consisted of two sequences, T1-weighted (T1w) and T2 weighted (T2w) images. The T1w images consisted of a 2D magnetization-prepared rapid gradient-echo (MPRAGE) sequence with a 130° preparation pulse, TR = 2100 ms, TE = 7 ms, TI = 800 ms, 27° flip angle. The T2w images consisted of a 2D Rapid Acquisition with Relaxation Enhancement (RARE) sequence with TR = 6500 ms, TE = 14 ms, RARE factor 8. The geometry was the same for both T1w and T2w images: matrix 166 × 166, FOV 100 mm × 100 mm, slices thickness 0.6 mm, and 54 axial slices. Because of time constraints, those anatomical scans were acquired during separate scanning sessions but with the same visual fixation task to minimise body motion and stress and to control the animal's behaviour.
 
-## Data analyses
+#### Data analyses
 
 MR images were first converted from Bruker file format into 3D (anatomical data) or 4D (x, y, z, t functional data) minc file format (.mnc) using a Perl script pvconv.pl (http://pvconv.sourceforge.net/) and next from minc to nifti format using the minc tools.
 

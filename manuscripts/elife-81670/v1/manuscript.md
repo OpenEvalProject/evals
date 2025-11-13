@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Department of Systems Biology at the University of Massachusetts Chan Medical School Worcester United States
+1. Department of Systems Biology at the University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 
 † Corresponding author
 

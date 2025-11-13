@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/057zh3y96 Atmosphere and Ocean Research Institute, The University of Tokyo Kashiwa Japan
-2. https://ror.org/057zh3y96 Information and Technology Center, The University of Tokyo Kashiwa Japan
-3. https://ror.org/04chrp450 Graduate School of Environmental Studies, Nagoya University Furo Japan
-4. https://ror.org/00s8hq550 Centre d’Etudes Biologiques de Chize (CEBC), UMR 7372 CNRS, Université de La Rochelle Villiers-en-Bois France
-5. https://ror.org/059yhyy33 Aeronautical Technology Directorate, Japan Aerospace Exploration Agency (JAXA) Chofu Japan
+1. Atmosphere and Ocean Research Institute, The University of Tokyo Kashiwa Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+2. Information and Technology Center, The University of Tokyo Kashiwa Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+3. Graduate School of Environmental Studies, Nagoya University Furo Japan ([ROR:04chrp450](https://ror.org/04chrp450))
+4. Centre d’Etudes Biologiques de Chize (CEBC), UMR 7372 CNRS, Université de La Rochelle Villiers-en-Bois France ([ROR:00s8hq550](https://ror.org/00s8hq550))
+5. Aeronautical Technology Directorate, Japan Aerospace Exploration Agency (JAXA) Chofu Japan ([ROR:059yhyy33](https://ror.org/059yhyy33))
 
 † Corresponding author
 
@@ -39,13 +39,13 @@ Wandering albatrosses were investigated because their habitat includes the Suban
 
 ## Results
 
-## Trip data
+### Trip data
 
 We obtained 1477 hr from 44 wandering albatrosses in 2019 (N = 21, 623 hr) and 2020 (N = 23, 854 hr). Two types of recorders with different battery sizes were used. The mean recording time of the trip data and the standard deviation (SD) was 9.5 ± 1.3 hr for the small battery recorders and 59.7 ± 9.6 hr for the large battery recorders. The albatross sex ratio was balanced between years and recorder type (Supplementary file 1).
 
 The absolute value of the GPS horizontal velocity revealed 703 take-offs from 1477 hr of trips. A total of 453 out of 703 take-offs were followed by more than 5 min of flight. For each flight, the wind speed and direction were estimated using the flight path (Yonehara et al., 2016). A total of 299 take-offs occurred after more than 15 min of floating time. Wave heights were estimated for each of the 299 take-offs using the floating motions (Uesaka et al., 2022). For 185 take-offs, we estimated the wind and wave conditions in combination.
 
-## Environmental conditions at the take-off moment
+### Environmental conditions at the take-off moment
 
 Of the 453 estimated wind parameters, 26 were unreliable based on the Akaike information criterion (AIC) comparison and were not included in the analysis. The remaining 427 results revealed wind speeds of 6–8 m/s were most frequently experienced by taking-off wandering albatrosses (Figure 2A). Mean ± SD of the estimated wind speed was 6.5 ± 2.7 m/s, and the maximum and minimum wind speeds were 15.4 and 0.7 m/s, respectively. Winds blowing from west to east were frequently observed (Figure 2B). This result is consistent with the prevalence of westerlies around the wandering albatross breeding colony (Nicholls et al., 1997; Weimerskirch et al., 2015).
 
@@ -55,13 +55,25 @@ Of the 453 estimated wind parameters, 26 were unreliable based on the Akaike inf
 
 Ocean waves were estimated using all 299 take-offs after more than 15 min of floating time to calculate the significant wave height. The most frequently experienced wave heights ranged from 2.5 to 3.0 m at the take-off moment (Figure 2C) and the mean ± SD was 3.0 ± 0.8 m. The minimum and maximum wave heights were 1.6 and 6.4 m, respectively. Like wind direction, the wave direction (coming from) had a west bias due to the westerlies (Figure 2D).
 
-## Take-off properties
+### Take-off properties
 
 To quantify the take-off effort, we calculated four parameters: running duration, running speed, flapping number, and flapping frequency from the acceleration records obtained at the moment of take-off. Mean ± SD running duration of wandering albatross was 5.1 ± 1.5 s with a range from 1.1 to 11.7 s (Figure 3A). The mean value for males was slightly lower than that for females (Figure 3—figure supplement 1A), however, the difference was not significant (M: 5.0 ± 1.5 s, F: 5.2 ± 1.5 s, p = 0.10, Mann–Whitney U-test). The albatross running speed mean value ± SD was 6.5 ± 1.6 m/s (Figure 3B). Male birds had slightly higher speeds than females (M: 6.7 ± 1.5 m/s, F: 6.3 ± 1.6, p < 0.01, Figure 3—figure supplement 1B). Running duration and speed significantly correlated (Pearson’s r = 0.57, p < 0.01, Figure 3—figure supplement 2). The linear regression slope (with a fixed intercept of zero) was 1.23 m/s2. The slope can be interpreted as the running wandering albatross acceleration.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87016/elife-87016-fig3-v1.jpg)
+
+**Figure 3.:** Graphs A, B, and C are composed of 703 samples and graph D is composed of 669 samples.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87016/elife-87016-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Sample numbers of each sex are 378 for male and 325 for female (361 and 301 for D).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87016/elife-87016-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Solid line shows the linear regression line determined from the linear mixed model (LMM). The slope value with a fixed slope of zero was 1.23.
+
 The flapping number, that is, the number of wing flaps after the running phase, was estimated using the dorsoventral acceleration. The mean flapping number was 4.3 times with a range from zero to over 20 times (Figure 3C). Take-offs without flapping after the running phase were frequently observed (33.3%). Conversely, continuous flapping above 20 times were also occasionally observed, which corresponds to a lengthy flapping duration (8 s <) after take-off, considering the flapping frequency of wandering albatross (2.5–3.0 Hz). There was no significant difference in flapping number between the sexes (p = 0.22, Mann–Whitney U-test, Figure 3—figure supplement 1C). The mean ± SD flapping frequency was 2.55 ± 0.29 Hz, and most ranged from 2 to 3 Hz (Figure 3D). However, some flapping frequency results were outside the detection range (1.8–4 Hz) and not included in our analysis. Therefore, the sample size of the flapping frequency used in our analysis was 669. There was no significant difference in flapping frequency between the sexes (p = 0.18, Mann–Whitney U-test, Figure 3—figure supplement 1D).
 
-## Environmental effects on take-off parameters
+### Environmental effects on take-off parameters
 
 The take-off directions were compared with the wind direction estimated from the flight path after take-off. Wandering albatrosses tended to take-off with headwinds (p < 0.01, v-test) (Figure 4). However, the cruising direction (moving direction from the take-off point to the bird location after 5 min) did not correlate with headwind direction. The mean ± SD air speed of wandering albatrosses at the end of the running phase (lift-off moment from the sea surface) calculated using the running speed, wind speed, and relative take-off direction was 12.2 ± 3.1 m/s.
 
@@ -75,9 +87,203 @@ The relationships between each take-off parameter (running duration, running spe
 
 **Figure 5.:** Effort for the take-off (running duration, running speed, flapping number, and flapping frequency) significantly decreased as wave height and wind speed increased (p < 0.01) except the relationship between flapping frequency and wave height (p = 0.026). Solid line shows the linear regression line determined from the LMM and the number at the right top corner on each graph shows the sample sizes.
 
-## Independent effect of wind and waves on take-off
+**Table 1.**
+ Result of Akaike information criterion (AIC) and p values from LMM estimating the environmental effect on take-off behaviors.The best models are shown in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Response variables</th>
+      <th>N</th>
+      <th>Explanatory variables</th>
+      <th>AIC</th>
+      <th>p value (Chi square)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running duration</td>
+      <td>427</td>
+      <td>Null</td>
+      <td>1505.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>1464.4</td>
+      <td>6.1 × 10−11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running duration</td>
+      <td>299</td>
+      <td>Null</td>
+      <td>1052.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>1042.0</td>
+      <td>4.0 × 10−4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running speed</td>
+      <td>427</td>
+      <td>Null</td>
+      <td>1584.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>1480.0</td>
+      <td>2.2 × 10−16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running speed</td>
+      <td>299</td>
+      <td>Null</td>
+      <td>1092.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>1077.8</td>
+      <td>3.4 × 10−5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping number</td>
+      <td>427</td>
+      <td>Null</td>
+      <td>2867.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>2834.4</td>
+      <td>4.0 × 10−9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping number</td>
+      <td>299</td>
+      <td>Null</td>
+      <td>1798.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>1773.5</td>
+      <td>2.0 × 10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping frequency</td>
+      <td>407</td>
+      <td>Null</td>
+      <td>138.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>115.6</td>
+      <td>6.4 × 10−7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping frequency</td>
+      <td>283</td>
+      <td>Null</td>
+      <td>70.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>67.2</td>
+      <td>0.026</td>
+    </tr>
+  </tbody>
+</table>
+
+### Independent effect of wind and waves on take-off
 
 Although some ocean wave components are generated by ocean winds, the correlation between the wind speed and wave height is not consistent. Some of the albatross take-offs involved information on both wind speed and wave height. Therefore, we evaluated the respective effects of wind and waves on wandering albatross take-offs. The correlation between wind speed and wave height was not strong (r = 0.27, p < 0.01). Some take-offs were performed in weak winds but high wave conditions or the opposite conditions (Figure 6A). Take-off conditions were divided into four environmental categories using the peak value, which were 6.0 m/s (wind speed) and 2.8 m (wave height). The categories comprised: 48 samples (weak wind low wave: WL), 33 samples (weak wind high wave: WH), 27 samples (strong wind low wave: SL), and 77 samples (strong wind high wave: SH). The running duration varied significantly between the four categories (p < 0.01, Kruskal–Wallis test). The mean running duration in the WL conditions was 6.0, which was the longest of the four categories (Figure 6B). Relatively long running (of over 6 s) mainly occurred in WL conditions, and the running duration decreased with the wind speed or wave height (Figure 6—figure supplement 1). Similar results were obtained for both running speed and flapping number. Take-offs involving over 30 flaps mainly occurred in WL conditions. Flapping frequency did not significantly vary between the four categories (p = 0.06).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87016/elife-87016-fig6-v1.jpg)
+
+**Figure 6.:** (A) Correlation between wind speed and wave height was weak (r = 0.27, n = 185). Bar charts and solid lines written above and right of the scatter plot are normed histograms of wind speed, wave height, and curve fitted lines. Based on the peak value of fitted lines scatter plots were divided into four categories, WL: weak wind low wave (open square, n = 48), WH: weak wind high wave (filled square, n = 33), SL: strong wind low wave (open circle, n = 27), and SH: strong wind high wave (filled circle, n = 77). (B) Take-off effort comparison among four categories (a: running duration, b: running speed, c: flapping number, and d: flapping frequency). Cross mark indicates the mean value.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87016/elife-87016-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Running duration, (B) running speed, (C) flapping number, and (D) flapping frequency are shown in the gray scale corresponding to the wind speed (x-axis) and wave height (y-axis). Darker color indicates the more effort demanded for the take-off, which tends to appear in left bottom area of the graphs (weaker wind speed and lower wave height condition) for running duration, running speed, and flapping number.
 
 The variance inflation factor (VIF) of wind speed and wave height was 6.86, which did not exceed the general threshold of 10 (Dormann et al., 2013). Among the LMM results, models including wind speed, wave height, and the interaction used the smallest AIC for all take-off parameters (Table 2). However, the difference between the lowest and the second lowest AIC was below two for running speed, flapping number, and flapping frequency. The running duration simulation using the estimated coefficient shows that even under weak wind conditions (2 m/s), running duration decreases from 8 to 4 s as the wave height increases. Conversely, low values were maintained under strong wind conditions (8 m/s) regardless of the wave height (Figure 7). Similarly, the running speed decreased from 9 to 6 m/s as the wave height increased, regardless of the wind strength. The flapping number followed the same trend. Conversely, the flapping frequency did not decrease as the wave height increased.
 
@@ -85,11 +291,172 @@ The variance inflation factor (VIF) of wind speed and wave height was 6.86, whic
 
 **Figure 7.:** (A) Running duration, (B) running speed, (C) flapping number, and (D) flapping frequency in response to the wave height change under weak wind (dashed line, 2 m/s) and strong wind (solid line, 8 m/s) conditions estimated from the LMM. Gray area represents 99% CI.
 
+**Table 2.**
+ Results of Akaike information criterion (AIC) from LMM considering both wind speed and wave height as candidates affecting take-off behaviors.The best models are shown in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Response variables</th>
+      <th>N</th>
+      <th>Explanatory variables</th>
+      <th>AIC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running duration</td>
+      <td>185</td>
+      <td>Null</td>
+      <td>655.81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>650.06</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>639.45</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height</td>
+      <td>637.81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height + Interaction</td>
+      <td>631.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Running speed</td>
+      <td>185</td>
+      <td>Null</td>
+      <td>699.62</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>690.57</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>657.69</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height</td>
+      <td>655.76</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height + Interaction</td>
+      <td>655.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping number</td>
+      <td>185</td>
+      <td>Null</td>
+      <td>1129.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>1117.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>1109.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height</td>
+      <td>1102.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height + Interaction</td>
+      <td>1101.7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flapping frequency</td>
+      <td>175</td>
+      <td>Null</td>
+      <td>70.43</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wave height</td>
+      <td>70.96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed</td>
+      <td>52.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height</td>
+      <td>54.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Wind speed + Wave height + Interaction</td>
+      <td>50.72</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 Although observational networks in the ocean are under development and mathematical weather modeling accuracy is increasing, they remain unable to accurately estimate the surrounding environment of marine animals at small scales. Here, we demonstrated that environmental variables estimated using individual animal recorders provide valuable new insight into locomotor behavior when spatiotemporal scale and accuracy of mathematical weather models and observational networks are too broad for the research. In this study, we provided details on how seabird take-offs are affected by wind and waves.
 
-## Seabird take-offs using accelerometers
+### Seabird take-offs using accelerometers
 
 We quantified the running behavior of seabirds at the moment of take-off, which is the most energy-consuming behavior for soaring seabirds (Weimerskirch et al., 2000; Shaffer et al., 2001a; Sakamoto et al., 2013). Previous studies have ascribed this large energy expenditure to the vigorous flapping required for take-off (Shaffer et al., 2001a; Sato et al., 2009; Clay et al., 2020). Indeed, the continuous flapping behavior, which is rare in cruising flight, was recorded even after the running phase of take-off in this study. However, we suggest that the running behavior should also entail a large cost in take-off because albatrosses have to reach a fast initial speed to lift off the sea surface by rapidly moving their hindlimbs for up to ~10 s in unfavorable conditions (as demonstrated in this study).
 
@@ -99,13 +466,13 @@ The flapping characteristics of wandering albatross during the running phase wer
 
 In-depth studies on seabird take-offs are just beginning with the aid of miniaturized animal-borne recorders with the main aim of understanding how seabirds flap their wings. However, in land birds (e.g., finches and doves) take-off requires a large contribution by hindlimbs (Provini et al., 2012) and the role of the hindlimb in take-off kinematics is as important as that of the wing (Provini and Abourachid, 2018). Therefore, it is highly likely that seabird take-offs also require a substantial contribution by the hindlimbs, and thus, further seabird hindlimb research is required. Our study provides the basic characteristics of wandering albatross running behavior, including running duration and speed.
 
-## Take-off effort with environmental conditions
+### Take-off effort with environmental conditions
 
 Our results demonstrate that wandering albatrosses can take-off in a variety of environmental conditions (wind speed: 0.7–15.4 m/s, wave height: 1.6–6.4 m). A previous study on wandering albatrosses identified the transition state from resting to flying tended to increase as the wind speed increased (Clay et al., 2020). Our results found some take-offs were performed under weak wind (2–4 m/s) conditions, suggesting wind speed is not the only parameter influencing flight decisions of wandering albatross, and that wave height should be included in future studies.
 
 The results showed that the running and flapping behavior tended to decrease as the wind or wave conditions increased. Running duration decreased as either the wind speed or the wave height increased and peaked when both the wind and wave conditions were weak. The same trends existed in running speed and flapping number. Although optimum statistical models for each take-off parameter were determined using the AIC value, some models provided similar results to this model. For instance, the AIC difference in running speed between the best model and the second lowest AIC model was only 0.27. However, both models included wind speed and wave height as the explanatory variables, similar to the other take-off parameters, except flapping frequency. The purpose of constructing a linear model was to clarify whether the effects of wind and waves are independent. As long as both wind speed and wave height were included as explanatory variables in the model, they reduced the running and flapping behavior requirement. Therefore, we can conclude that both strong winds and high waves aid wandering albatross take-offs. The flapping frequency after the running phase was the only parameter that did not correlate with wave height (as identified using the LMM). However, we assume the flapping frequency during the running phase is more important. Future research needs to investigate the effects of wave height as wandering albatrosses need to climb up or run down the wave slope. Therefore, the flapping frequency during the running phase should be highly influenced by wave height.
 
-## Contribution of strong wind and high waves to seabird take-off
+### Contribution of strong wind and high waves to seabird take-off
 
 The reduced running behavior and flapping times under strong wind conditions are simply described by the lift force mechanism which has been predicted by previous studies (Kogure et al., 2016; Clay et al., 2020). Seabirds need to gain lift force before take-off, and the magnitude of force is proportional to the square of the relative speed of the wings to the surrounding air (air speed) (Vogel, 1983). It has been anecdotally suggested that seabirds take-off into the wind (i.e., headwind), because stronger winds can produce a sufficiently large lift even before the ground speed of the seabird reaches the value required for flight. As a partial demonstration of this theory, a study on the European shag (G. aristotelis) Kogure et al., 2016 found the take-off direction was significantly biased toward headwinds. Regarding soaring seabirds, only one study (Clay et al., 2020) on wandering albatrosses has confirmed a bias in take-off direction with wind direction. However, the authors acknowledge the limits in the mathematical weather model and GPS sampling resolutions and recognize the unreliability of small-scale responses to in situ variation in the atmosphere. Our study reveals wandering albatrosses significantly tend to take-off into the wind, using robust fine scale data estimated from the flight records of wandering albatross. Moreover, there was no correlation between cruising and headwind direction, indicating that wandering albatrosses face the wind on take-off regardless of their destination. Our data are reliable as the empirical value provided is actually experienced by the albatross. Furthermore, by quantitatively evaluating the flapping and running effort, we demonstrate the theory of effortless take-offs by soaring seabirds in stronger wind conditions.
 
@@ -119,27 +486,31 @@ In conclusion, we revealed how the take-off effort of wandering albatross change
 
 ## Materials and methods
 
-## Field experiment
+### Field experiment
 
 The recorders, Ninja-scan (Little Leonardo, Tokyo, Japan), record triaxial acceleration at a very high time resolution (100 Hz). Ninja-scan also records 3D GPS positions (5 Hz), Doppler velocity (5 Hz), temperature (6 Hz), pressure (6 Hz), geomagnetism (6 Hz), and angular velocity (100 Hz). There are two types of Ninja-scans with different battery masses (Naruoka et al., 2021). Small Ninja-scans weighed 28 g, which is 0.3–0.4% of wandering albatross body mass, and are expected to record for 7 hr. Large Ninja-scans weighed 91 g, which corresponds to 0.8–1.3% of wandering albatross body mass, and are expected to record for 65 h.
 
 Ninja-scans were attached to breeding wandering albatrosses at Possession Island, Crozet archipelago (46°25 S, 51°44 E) in the South Indian Ocean in 2019 and 2020. In 2019, 12 small Ninja-scans were attached (in tandem) to 6 individuals. On each bird, one recorder had a delay timer so that the two recording periods did not overlap. Additionally, 15 birds had individual Ninja-scans attached, of which 8 were small Ninja-scans and 7 were large Ninja-scans. In 2020, 10 small Ninja-scans were attached in tandem to 5 individuals. Additionally, 19 birds had individual Ninja-scans attached, of which 7 were small Ninja-scans and 12 were large Ninja-scans. In summary, 21 and 24 wandering albatrosses were tagged in 2019 and 2020, respectively. All experiments were performed from late January to early March of each year, which corresponds to the incubation period of wandering albatrosses. Recorders were attached to the back of each bird with waterproof tape (Tesa, Hamburg, Germany) and glue (Loctite; Henkel, Dusseldorf, Germany). All recorders were retrieved within 35 days. One small Ninja-scan which had been attached in isolation in 2020 did not work correctly. The effects of the attached recorders on wandering albatrosses were previously assessed (Phillips et al., 2003; Barbraud and Weimerskirch, 2012) and revealed that small recorders (less than 3% of their body mass) do not negatively impact breeding or foraging behaviors. The experiment was conducted as part of Program 109 of the Institut Polaire Paul Emile Victor with permission from the Préfet des Terrs Australes et Antarctiques Françaises, France (permit numbers: 2018-117 and 2019-106).
 
-## Take-off identification
+### Take-off identification
 
 First, data recorded on the colony island were eliminated based on the GPS position. Then, take-off was determined using the absolute value of the GPS horizontal velocity. When wandering albatrosses float on the sea surface (i.e., before take-off), a relatively low speed which is generally below 2.5 m/s, is recorded, while the flying speed exceeds 5 m/s (Weimerskirch et al., 2002). Take-off was defined as the moment when the horizontal speed exceeds 4 m/s and rises to a higher speed. The soaring (flying) speed occasionally meets this criteria. Therefore, the horizontal speed was smoothed using the moving average (20 points: 0.4 s). If the horizontal speed crossed the 4 m/s line several times within a short period, they were classed as take-offs for very short flights and were not used in our investigation. Therefore, we selected only take-offs that included over 30 s of floating followed by over 30 s of flying.
 
-## Wind estimation
+### Wind estimation
 
-Yonehara et al., 2016 proposed estimating the wind speed and direction of seabird flight paths using the sinusoidal curve relationship between flight speed and flight direction. When seabirds fly in the air, their flight speed against the ground (ground speed) is mainly affected by the wind speed, which is maximized in tail winds and minimized in headwinds. The maximum speed is the sum of the flight speed against air (air speed) and wind speed, whereas the minimum speed is the difference between the air speed and wind speed. The relationship between the flight speed (ground speed) and flight direction recorded by the GPS are fitted using a sinusoidal curve (Shimatani et al., 2012). We followed the methodology in Yonehara et al., 2016 to collate the flight speed V and flight direction θ data for 5 min after take-off and the curve was fitted using the following equation:V=Va+Vw cos⁡θ+ϕw
+Yonehara et al., 2016 proposed estimating the wind speed and direction of seabird flight paths using the sinusoidal curve relationship between flight speed and flight direction. When seabirds fly in the air, their flight speed against the ground (ground speed) is mainly affected by the wind speed, which is maximized in tail winds and minimized in headwinds. The maximum speed is the sum of the flight speed against air (air speed) and wind speed, whereas the minimum speed is the difference between the air speed and wind speed. The relationship between the flight speed (ground speed) and flight direction recorded by the GPS are fitted using a sinusoidal curve (Shimatani et al., 2012). We followed the methodology in Yonehara et al., 2016 to collate the flight speed $V$ and flight direction $\theta$ data for 5 min after take-off and the curve was fitted using the following equation:
 
-where Va is the air speed, Vw is the wind speed, and ϕw is the wind direction. Ten seconds immediately after the take-off moment was not included in the estimation. Following Yonehara et al., 2016, the AIC of the sinusoidal fitting was compared to the linear fitting with a fixed slope of zero. When the AIC difference between the linear and sinusoidal fitting was below 2, the estimated results were considered unreliable and discarded. Wind speeds and directions were not calculated when take-offs were not followed by over 5 min of flight. The sinusoidal fitting was performed using Igor Pro version 8.04 (Wavemetrics, Portland, OR, USA).
+$$
+V=V_{a}+V_{w} cos⁡\theta+ϕ_{w}
+$$
 
-## Wave estimation
+where $V_{a}$ is the air speed, $V_{w}$ is the wind speed, and $ϕ_{w}$ is the wind direction. Ten seconds immediately after the take-off moment was not included in the estimation. Following Yonehara et al., 2016, the AIC of the sinusoidal fitting was compared to the linear fitting with a fixed slope of zero. When the AIC difference between the linear and sinusoidal fitting was below 2, the estimated results were considered unreliable and discarded. Wind speeds and directions were not calculated when take-offs were not followed by over 5 min of flight. The sinusoidal fitting was performed using Igor Pro version 8.04 (Wavemetrics, Portland, OR, USA).
+
+### Wave estimation
 
 The ocean wave properties experienced by seabirds before take-off were estimated by analyzing the floating motion at the sea surface (Uesaka et al., 2022). The wave height was estimated from the vertical GPS displacement records before take-off. The estimate requires sufficiently long records of vertical displacement. Therefore, the wave height was not calculated for take-offs that did not follow a surface floating time of over 15 min. The sampling period of 15 min ensured the reliability of the wave statistics (Whitford et al., 2001) and provided a large volume of estimated wave data. The estimate did not include the 10 s before the detected take-off moment. We followed the methodology of Uesaka et al., 2022. The vertical GPS displacement records were high-pass filtered using a cut-off frequency of 0.07 Hz to eliminate the GPS-derived error (Olynik et al., 2002). We separated the time series record of the vertical displacement into individual waves by applying the zero-up-crossing method. The mean wave height of the highest third of all individual waves was calculated to provide the significant wave height, which is the most widely used statistical wave parameter (Whitford et al., 2001).
 
-## Sea surface running by seabirds
+### Sea surface running by seabirds
 
 Many procellariiformes require a running phase before take-off from the sea surface (Sato et al., 2009). However, studies using accelerometers have not focused on the acceleration signal of this behavior. Surface running involves asymmetrical leg movements. Therefore, the lateral acceleration obtained from the recorder (attached to the back of the seabirds) provided signals derived from the running motion (Figure 8). We confirmed that running signals appear in the lateral acceleration records at the moment of take-off by streaked shearwaters (Calonectris leucomelas), which are phylogenetically similar to wandering albatrosses (see Supplementary Information Text and Figure S1).
 
@@ -149,14 +520,18 @@ Many procellariiformes require a running phase before take-off from the sea surf
 
 To explore the running duration of wandering albatross, we constructed an algorithm to detect the running phase from the lateral acceleration around take-off. The lateral acceleration signal is composed of a dominant component (0.25–0.4 s) and a high-frequency fluctuation component (<0.2 s period). Although the dominant component is the lateral movement derived from surface running, the flapping period of wandering albatross appears around this period (0.3–0.4 s). The flapping behavior is laterally symmetrical and does not appear in the lateral acceleration records. However, this is not always the case, when (occasionally) recorders are attached to the back of the seabird in a slightly tilted position. To avoid confusion between running and flapping behavior, a high-frequency fluctuation component in the lateral acceleration signal was used to detect the running phase. A band-pass filter was designed to extract the high-frequency fluctuation component from the acceleration records, and then the variance per unit time (0.6 s) was calculated at each point. Running phase was defined as when the acceleration variance exceeded the threshold value (2% of the peak value). This algorithm reasonably detects the running phase regardless of the running duration. If there is a signal gap in the middle of the running phase, the algorithm regards the gap as the end of the running phase, underestimating the running duration. However, these cases are rare, and we assume it does not affect our evaluation of the running characteristics of wandering albatross. The horizontal speed at the end of the running phase and take-off direction were calculated using the GPS velocity. The take-off direction was defined as the vectoral average direction during the running phase. We also calculated the cruising direction which was defined as the moving direction 5 min after take-off. All procedures were performed using Igor Pro version 8.04 (Wavemetrics, Portland, OR, USA).
 
-## Flapping behavior after the running phase
+### Flapping behavior after the running phase
 
 Dorsoventral acceleration records include signals derived from seabird wing flapping behavior (Figure 8). The flapping signals during the running phase fluctuate, which is assumed to be caused by the leg-derived dorsoventral motion. This caused the flapping data to be unclear in identifying the flapping number and frequency. Therefore, we only focused on the wing flapping signals after the running phase. A band-pass filter extracted the clearest flapping signals (1.8–4.0 Hz). The number of continuous flapping signals after the running phase was counted. The flapping period of the wandering albatross is approximately 0.3–0.4 s, therefore we defined the end point when the flapping interval exceeded 0.5 s. The flapping frequency after the running phase was calculated using the spectral peak value of the continuous wavelet-transformed dorsoventral acceleration. All procedures were performed using Igor Pro version 8.04 (Wavemetrics, Portland, OR, USA).
 
-## Comparison of the take-off parameters with environmental conditions
+### Comparison of the take-off parameters with environmental conditions
 
-The wind directional bias of the take-off direction was tested using the v-test (modified Rayleigh test). The air speed Va at the end of the running phase was estimated using the following equation based on the parameters obtained from this study:Va= Vr+Vwcos⁡(θt− ϕw)
+The wind directional bias of the take-off direction was tested using the v-test (modified Rayleigh test). The air speed $V_{a}$ at the end of the running phase was estimated using the following equation based on the parameters obtained from this study:
 
-where Vr is the running speed at the end of the running phase, Vw is the wind speed, θt is the take-off direction, and ϕw is the wind direction. The effects of wind speed and wave height on each take-off parameter (running duration, running speed, flapping number, and flapping frequency) were evaluated using LMM with individuals treated as random effects. To identify significance levels, the models were compared to null models based on the AIC value.
+$$
+V_{a}= V_{r}+V_{w}cos⁡(\theta_{t}− ϕ_{w})
+$$
+
+where $V_{r}$ is the running speed at the end of the running phase, $V_{w}$ is the wind speed, $\theta_{t}$ is the take-off direction, and $ϕ_{w}$ is the wind direction. The effects of wind speed and wave height on each take-off parameter (running duration, running speed, flapping number, and flapping frequency) were evaluated using LMM with individuals treated as random effects. To identify significance levels, the models were compared to null models based on the AIC value.
 
 To evaluate the combined effect of wind and waves, we categorized take-off conditions into four categories, ‘WL conditions’, ‘WH conditions’, ‘SL conditions’, and ‘SH conditions’. Threshold values were decided based on the peak in the curve of the fitted probability density distribution (wind speed: 6.0 m/s, wave height 2.8 m). Weibull distribution and log normal distribution were used as the fitting function for wind speed and wave height, respectively (Ferreira and Guedes Soares, 2000; Carta et al., 2009). The values of each take-off parameter were compared between the four categories by Kruskal–Wallis test. Furthermore, the independent effects of wind and waves on take-off parameters were evaluated using LMM, including wind speed, wave height, and their interaction as explanatory parameters with individuals as random effects. VIF was also calculated before the LMM analysis to assess whether the multicollinearity effect could be dismissed. The v-test was performed using Igor Pro version 8.04 (Wavemetrics, Portland, OR, USA). Statistical test and LMM calculations were performed using the Python 3.0 and PypeR package.

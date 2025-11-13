@@ -34,7 +34,7 @@
 
 ## Abstract
 
-Chromatin, which consists of DNA and associated proteins, contains genetic information and is a mechanical component of the nucleus. Heterochromatic histone methylation controls nucleus and chromosome stiffness, but the contribution of heterochromatin protein HP1α (CBX5) is unknown. We used a novel HP1α auxin-inducible degron human cell line to rapidly degrade HP1α. Degradation did not alter transcription, local chromatin compaction, or histone methylation, but did decrease chromatin stiffness. Single-nucleus micromanipulation reveals that HP1α is essential to chromatin-based mechanics and maintains nuclear morphology, separate from histone methylation. Further experiments with dimerization-deficient HP1α I165E indicate that chromatin crosslinking via HP1α dimerization is critical, while polymer simulations demonstrate the importance of chromatin-chromatin crosslinkers in mechanics. In mitotic chromosomes, HP1α similarly bolsters stiffness while aiding in mitotic alignment and faithful segregation. HP1α is therefore a critical chromatin-crosslinking protein that provides mechanical strength to chromosomes and the nucleus throughout the cell cycle and supports cellular functions.
+Chromatin, which consists of DNA and associated proteins, contains genetic information and is a mechanical component of the nucleus. Heterochromatic histone methylation controls nucleus and chromosome stiffness, but the contribution of heterochromatin protein HP1α (CBX5) is unknown. We used a novel HP1α auxin-inducible degron human cell line to rapidly degrade HP1α. Degradation did not alter transcription, local chromatin compaction, or histone methylation, but did decrease chromatin stiffness. Single-nucleus micromanipulation reveals that HP1α is essential to chromatin-based mechanics and maintains nuclear morphology, separate from histone methylation. Further experiments with dimerization-deficient HP1αI165E indicate that chromatin crosslinking via HP1α dimerization is critical, while polymer simulations demonstrate the importance of chromatin-chromatin crosslinkers in mechanics. In mitotic chromosomes, HP1α similarly bolsters stiffness while aiding in mitotic alignment and faithful segregation. HP1α is therefore a critical chromatin-crosslinking protein that provides mechanical strength to chromosomes and the nucleus throughout the cell cycle and supports cellular functions.
 
 ## Introduction
 
@@ -54,21 +54,45 @@ Here, we determine the mechanical role of heterochromatin protein HP1α and its 
 
 ## Results
 
-## Rapid degradation of HP1α using an auxin-inducible degron
+### Rapid degradation of HP1α using an auxin-inducible degron
 
 We generated a novel endogenous HP1α auxin-inducible degron for rapid and reversible depletion of HP1α protein in the cell. This was accomplished using CRISPR (Doudna and Charpentier, 2014) to tag both endogenous copies of the CBX5 gene in U2OS cells with an auxin-inducible degron (AID, [Nishimura et al., 2009]) and reporter Superfolder Green Fluorescent Protein (sfGFP) at the C terminus (HP1α-AID-sfGFP). Immunostaining demonstrated that modification of the endogenous loci did not alter the HP1α protein localization pattern (Figure 1A), while PCR, western blotting, and flow cytometry showed that all endogenous CBX5 alleles were tagged and only modified protein was expressed (Figure 1C and D, Materials and methods). Modification of the endogenous HP1α allele did not alter transcription or H3K9me2,3 levels (see Source data 3, 76 upregulated and 56 downregulated transcripts, which represents a change in 0.8% of genes across >16,600; compare methylation levels in parental and tagged cells see Figure 2—figure supplement 1D). HP1α degradation was observed by fluorescence microscopy or flow cytometry of HP1α-AID-sfGFP cells and by western blot after 4 hr of treatment with 1 mM auxin (Indole-3-acetic acid, Figure 1B-D). These conditions consistently resulted in >90% degradation of HP1α. The degradation was reversible as protein levels recovered over 2 days after removal of auxin (Figure 1B-D). Thus, we report the novel generation of an endogenously tagged HP1α cell line, which has a fluorescent reporter and is capable of rapid, reversible degradation in hours.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig1-v2.jpg)
+
+**Figure 1.:** (A) Example images of HP1α-AID-sfGFP relative to wild-type cells stained for HP1α via immunofluorescence along with Hoechst DNA stain and phase contrast images. Scale bar = 20 μm. (B) Example images of HP1α-AID-sfGFP before, after 4 hr of auxin treatment, and 2 days post auxin removal. Hoechst DNA stain aids labeling of nuclei. (C) Western blot and (D) Flow cytometer graph of GFP intensity of control (ctrl/untreated), auxin-treated for 4 hr, 2 days after removal of auxin, and wild-type (WT) showing short-term loss and recovery of HP1α-AID-sfGFP. (E) Graph of RNA-seq data showing that few genes change transcript levels as determined by q-value <0.05 (calculated via -Log10P) and absolute change of Log2 fold >1 (marked in orange), with expression of only 40 out of of 16,663 genes changing significantly comparing control/untreated versus 4 hr auxin-treated.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Example images and line scans of HP1α-AID-sfGFP and histone 2B (H2B-miRFP) before and after addition of (A) + auxin or (B) - auxin control. Scale bar = 10 μm. Graphs of average (C) chromatin compaction, (D) HP1α-AID-sfGFP intensity, and (E) H2B intensity for control (- auxin, black line) and HP1α degradation (+auxin, gray line). N = 3 trials, n = 20, 20, 20 nuclei per trial, total n = 60 nuclei.
+
 Previous studies have shown that disruption of HP1α binding and localization through RNAi knockdown of its binding partners results in chromatin decompaction and loss of transcriptional silencing (Frescas et al., 2008; Hahn et al., 2013; Shumaker et al., 2006). Because tethering of HP1α to specific sites is sufficient to induce chromatin compaction and transcriptional silencing (Li et al., 2003; Verschure et al., 2005), we sought to determine whether rapid depletion of HP1α by auxin treatment would significantly alter global transcription or chromatin organization. RNA-Seq data was acquired, mapped (STAR), and quantified (RSEM), and the differential gene expression analysis was performed using DESeq2 for greater than 16,500 genes (see Materials and methods). Transcription analysis of HP1α-AID-sfGFP control and 4 hr auxin-treated cells revealed that only three genes were downregulated and only 37 genes were upregulated (q-value <0.05 and fold-change >2, Figure 1E, Source data 1). Lack of transcriptional changes upon rapid degradation of HP1α was further supported by comparing control and 16 hr of auxin treatment, which yielded 15 downregulated and four upregulated genes (see Source data 2). These data are similar to previous reports that in mammalian systems, HP1 proteins are not required for maintenance of silencing (Maksakova et al., 2011). Furthermore, satellite derepression and other transcriptional changes previously reported after redistribution of HP1α may be unique to each organism and be indirect or dependent on secondary chromatin rearrangements. In addition, DAPI and Hoechst staining patterns showed similar dense regions of nuclear stain typical of heterochromatin in both treated and untreated cells (Figure 1 and Figure 1—figure supplement 1). Furthermore, histone density and distribution do not significantly change on a single-cell basis (Figure 1—figure supplement 1). These results indicate that no global change in transcription or global and local changes in histone density occurred after rapid HP1α degradation.
 
-## HP1α is a major mechanical component of the interphase nucleus that contributes to nuclear shape maintenance
+### HP1α is a major mechanical component of the interphase nucleus that contributes to nuclear shape maintenance
 
 We hypothesized that HP1α could aid nuclear mechanics due to its association with heterochromatin. To test this hypothesis, we perform single-nucleus micromanipulation force measurements on untreated and auxin-induced HP1α-degraded nuclei. Micromanipulation is an extensional force measurement technique capable of separating chromatin- and lamin-based nuclear mechanics (Stephens et al., 2017). First, a single nucleus is isolated from a living cell following treatment with latrunculin A to depolymerize actin and local lysis applied via micropipette spray (Figure 2A). The isolated nucleus is then loaded between two micropipettes. One micropipette is moved to extend the nucleus, while the other micropipette’s deflection, multiplied by the premeasured bending constant, measures force (Figure 2A). The force-extension relation is nonlinear, but can be decomposed into two linear slopes, which provide nuclear spring constants (nN/μm) for the short-extension regime (<3 µm), quantifying chromatin-based stiffness, and the long-extension regime (>3 µm), quantifying lamin-based strain stiffening (Stephens et al., 2019b; Stephens et al., 2018; Stephens et al., 2017; example Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig2-v2.jpg)
+
+**Figure 2.:** (A) Example images of a single isolated nucleus via transmitted light and HP1α-AID-sfGFP fluorescence and single nucleus micromanipulation force-extension measurement experiment. The pull pipette extends the nucleus while the bending of a premeasured force pipette provides the force measurement. Scale bar = 10 μm. (B) Example traces of micromanipulation force-extension for control (black) and auxin-induced degradation of HP1α (orange) provide a measure of nuclear spring constant from the slope (dotted lines). Initial slope provides chromatin-based nuclear spring constant while the second slope provides the lamin-based strain stiffening nuclear spring constant. (C and D) Graphs of average and single chromatin-based nuclear spring constant for (C) parental cell line control and 4–6 hr auxin treated and (D) HP1α-AID-sfGFP with and without auxin and/or methylstat treatment. n = 11–18 nuclei each. (E) Example images of cells treated with and without auxin and/or methylstat. (F) Quantified relative fluorescence of HP1α-AID-sfGFP and heterochromatin marker H3K9me2,3. (G) Quantified abnormal nuclear morphology determined as solidity value less than 0.96, statistics via chi-squared analysis. Another way to quantify abnormal nuclear morphology is via average nuclear curvature reported in Figure 2—figure supplement 2. Three biological experiments (shown as black dots) each consisting of n = 109, 102, 105 control; n = 137, 115, 165 auxin, n = 31, 34, 32 methylstat, and n = 102, 92, 78 auxin methylstat. Average measurements were similar for control, methystat, and auxin with methylstat 0.971 ± 0.0001 but different for auxin 0.969 ± 0.0015, p=0.005. p values reported as *<0.05, **<0.01, ***<0.001, no asterisk denotes no significance, p>0.05. Error bars represent standard error.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Strain-stiffening nuclear spring constant measured as the long extension force-extension slope minus the short extension (chromatin-based) force-extension slope. n > 9 for each condition. This data was taken simultaneously with force data presented in Figure 2. (B) Graph of the average relative fluorescence for lamin A/C and lamin B1 levels upon auxin and/or methylstat treatment. For lamin A/C and H2B N = 3 experiments where total n is HP1α-AID-sfGFP untreated (-/-) n = 91, auxin (+/-) n = 81, methylstat (-/+) n = 87, and auxin with methylstat n = 90. For lamin B1 this data was acquired along with those presented in Figure 2, E and F where the n values are reported. p Values reported as *<0.05, **<0.01, ***<0.001. (C) Example images. (D) Normalized to parental control, immunofluorescence signal of H3K9me2,3 for parental and HP1α-AID-sfGFP modified cell lines without or with treatment of auxin for 16 hr and/or methylstat for 48 hr. Three experimental biological replicates parental -/- n = 216, 128, 229;±n = 307, 324, 215; -/+ n = 188, 115, 155; +/+n = 184, 258, 284; HP1α-AID-sfGFP -/- n = 108, 101, 104;±n = 136, 114, 164; -/+ n = 30, 33, 31; +/+n = 102, 91, 77. (E) Normalized immunofluorescence for H3K9me2,3 and H3K9ac in HP1α-AID-sfGFP - or +auxin for 4 days (96 hr) for six experimental replicates - auxin (218, 246, 263, 186, 238, 265) and +auxin (188, 184, 174, 208, 199, 187). p Values reported as *<0.05, **<0.01, ***<0.001, no asterisk denotes no significance p>0.05, calculated by student’s t-test. Error bars represent standard error.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Graphs of average nuclear curvature for single cells over time for U2OS HP1α-AID-sfGFP expressing H2B-miRFP (A) without auxin and (B) with auxin added. Percentage of nuclei that drastically (>0.05 μm−1 curvature change) and stably (more than three time points) changed shape are denoted in the bottom-right corner. Histograms of (C) untreated (ctrl) and (D) auxin-treated (aux) nuclear curvature at time 1, 5, 12 hr. The dotted line denotes abnormally shaped nuclei (curvature >0.175 μm−1), and the numbers in the upper right are percentages of abnormal nuclei. (E) Average population nuclear curvature over time with (gray) and without (black) the addition of auxin at time zero. Error bars represent standard error, n = 42 nuclei each condition. (F) Example images of single nucleus treated with auxin over time shows loss of normal elliptical morphology during interphase. p Values reported as *<0.05, **<0.01, ***<0.001, calculated by student’s t-test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative images from time-lapse imaging of NLS-RFP HP1α-AID-sfGFP in cells treated with auxin for 4 hr reveal that loss of nuclear shape also results in nuclear rupture and loss of nuclear compartmentalization. Bottom right denotes minutes after the first image. (B–D) HP1α-AID-sfGFP cells -/+auxin for 16 hr were imaged for DNA damage marker ϒH2AX. (B) Representative images show nucleus with Hoechst DNA stain, HP1α-AID-sfGFP, and ϒH2AX. (C) Graph of average ϒH2AX foci and (D) histogram of ϒH2AX foci of per nucleus for -/+auxin 16 hr. Four replicate experiments were performed for control (110, 189, 112, 155) and auxin-treated for 16 hr (145, 89, 94, 97). p Values reported as *<0.05, **<0.01, ***<0.001, calculated by student’s t-test. Error bars represent standard error. Scale bar represents 10 μm.
 
 Micromanipulation force measurements reveal that degradation of HP1α affects nuclear mechanics. Parental unmodified U2OS cells, control or auxin-treated, show no change in the chromatin-based nuclear spring constant (0.35 vs. 0.34 ± 0.06 nN/μm, p=0.73, Figure 2C), and nuclear mechanics of cells with tagged HP1α (vs. 0.40 ± 0.03 nN/μm, p=0.42, Figure 2D) are not significantly different from parental control. This suggests that auxin treatment alone does not alter nuclear mechanics, and the addition of the AID-sfGFP tag to HP1α does not alter normal nuclear mechanical response. HP1α-AID-sfGFP cells were imaged before nucleus isolation to verify presence or absence of HP1α via sfGFP reporter. Auxin-induced HP1α degradation resulted in a 45% decrease in short-extension chromatin-based nuclear stiffness (0.40 vs 0.22 ± 0.03 nN/μm, p<0.001, Figure 2D). However, long-extension strain stiffening remained relatively unchanged (example, Figure 2B; Figure 2—figure supplement 1A, p=0.99) in agreement with the observation of no decrease in lamin A/C or B1 levels (Figure 2—figure supplement 1, B C). This data indicates that HP1α contributes to chromatin mechanics of the cell nucleus.
 
 Previous work has shown that nuclear softening due to perturbations of chromatin and its mechanics, particularly the loss of heterochromatin, can induce abnormal nuclear morphology (Stephens et al., 2019b; Stephens et al., 2018). Consistent with these prior findings, we quantified nuclear shape by shape solidity (ratio of area to convex area) and found that HP1α-degraded cells displayed a statistically significant decrease in average solidity (0.971 control vs. 0.969 auxin, p=0.005). Strikingly, we observe a large increase in the fraction of nuclei that have low levels of solidity, which we refer to as abnormal nuclei. Abnormal nuclei increase from 10 ± 1% in untreated cells to 22 ± 5% upon HP1α loss, as quantified by nuclei below a specified solidity threshold (solidity <0.96, Figure 2G). Another way to quantify shape is average nuclear curvature, which increases when the nucleus deviates from its normal elliptical shape (see Materials and methods). Tracking average nuclear curvature of single nuclei over time post auxin treatment reveals a significant increase in nuclear curvature during interphase (0% control vs 36% HP1α-degraded single nuclei persistently exhibit curvature increased by >0.05 μm−1, Figure 2—figure supplement 2), coincident with HP1α loss and decreased nuclear stiffness (4 hr auxin, Figure 2). Loss of nuclear mechanics and shape has been shown to cause dysfunction via nuclear ruptures and increased DNA damage (Stephens et al., 2019b; Stephens et al., 2018; Xia et al., 2018). We found similar results upon degradation of HP1α, as we observed dispersal of NLS-RFP into the cytoplasm during loss of nuclear compartmentalization by ruptures and a doubling of DNA damage as measured by ϒH2AX foci (Figure 2—figure supplement 3). These results agree with siRNA knockdown of HP1α in U2OS cells, which have demonstrated accumulation of DNA damage foci in a previous report (Lee et al., 2013). These data establish that HP1α degradation results in nuclear softening, abnormal nuclear morphology, and nuclear dysfunction.
 
-## HP1α and histone methylation contribute independently to nuclear mechanics and morphology
+### HP1α and histone methylation contribute independently to nuclear mechanics and morphology
 
 It is unclear exactly how the different components of heterochromatin work together to define its structure and function and how dependent they are on one another. For example, studies using genetic knockouts (Bosch-Presegué et al., 2017) and long-term depletion RNAi studies of heterochromatic components (Frescas et al., 2008; Hahn et al., 2013; Shumaker et al., 2006) have reported that HP1α not only binds to methylated histones, but also aids in histone methylation establishment and maintenance (Jacobs and Khorasanizadeh, 2002; Nielsen et al., 2002; Schotta et al., 2002). HP1α could simply alter levels of H3K9-methylated histones to affect nuclear mechanics and morphology. Levels of the constitutive heterochromatin mark H3K9me2,3 did not change significantly after 16 hr or 96 hr of HP1α depletion (Figure 2, E and F; Figure 2—figure supplement 2, D E with H3K9ac). Thus, while rapid reduction of HP1α levels affects nuclear mechanics and morphology, it does not cause significant changes in histone methylation.
 
@@ -78,7 +102,7 @@ We reasoned that elevating levels of methylated histone in HP1α-degraded nuclei
 
 Experiments are consistent with the second scenario, where increasing histone methylation levels in HP1α-degraded cells resulted in rescued nuclear mechanics and shape. Micromanipulation force measurements reveal a larger nuclear spring constant for HP1α-degraded nuclei with increased histone methylation as compared to HP1α-degraded with normal levels of methylation, returning to a spring constant similar to wild-type levels (auxin 0.22 vs. auxin+methylstat 0.33 ± 0.03 nN/μm, p<0.001, Figure 2D). Alternatively, compared to normal levels of HP1α with increased histone methylation, loss of HP1α and increased histone methylation resulted in a decreased nuclear spring constant (auxin+methylstat 0.33 vs. methylstat 0.56 ± 0.03 nN/μm, p<0.001, Figure 2D). Strain stiffening in the lamin-dependent regime remained similar across all treatments (Figure 2—figure supplement 1). Consistent with the mechanical measurements, methylstat treatment rescues abnormal morphology associated with HP1α degradation from 22% abnormal to 13% (Figure 2G). Altogether, these results suggest that HP1α and methylated histone levels both contribute to chromatin-based nuclear mechanics and morphology. Moreover, the approximately additive nature of the changes in nuclear stiffness, along with the lack of interdependence between levels HP1α and histone methylation, suggest that these mechanisms contribute to mechanics independently.
 
-## Maintenance of nuclear morphology depends on HP1α dimerization
+### Maintenance of nuclear morphology depends on HP1α dimerization
 
 HP1α forms a homodimer that can bridge strands of chromatin by binding two H3K9me2,3 marks on different nucleosomes through its chromodomain (Jacobs and Khorasanizadeh, 2002; Machida et al., 2018; Nielsen et al., 2002) or two strands of DNA through a positively charged KRK patch in the hinge (Larson et al., 2017). We reasoned that the role of HP1α in determining nuclear shape and mechanics, independent of histone methylation levels, might be due to its ability to physically crosslink chromatin strands. This linking ability would be dependent on HP1α dimerization, which can be disrupted with a point mutant, HP1αI165E (Brasher et al., 2000; Lechner et al., 2005; Lechner et al., 2000; Thiru et al., 2004). To determine if dimerization is key to its mechanical and morphological contributions in vivo, we asked whether a non-dimerizing mutant (HP1αI165E) could rescue nuclear morphology when the endogenous protein was degraded.
 
@@ -90,7 +114,7 @@ We first measured nuclear curvature in parental U2OS, and control and auxin-trea
 
 **Figure 3.:** (A) Example images of HP1α-AID-sfGFP cells control (-Aux) and auxin treated (+Aux) with and without exogenous HP1α wild-type (WT) or dimer mutant (I165E) rescue constructs tagged with mCherry. Scale bar = 10 μm. (B) Graph of average nuclear curvature measurements with individual trials as black dots. (C) Graph of percentage of abnormally shaped nuclei, determined as greater than 0.15 μm−1 curvature, which is the average untreated nucleus plus the standard deviation. Eight experimental biological replicates were measured for each condition (denoted as black dots) consisting of -auxin, n = 37, 45, 45, 57, 58, 57, 55, 54; +auxin, n = 60, 44, 41, 60, 60, 60, 60, 60; +auxin and WT exogenous rescue, n = 27, 30, 36, 60, 60, 60, 60, 19; +auxin and I165E exogenous rescue, n = 38, 40, 50, 59, 56, 58, 58, 51. p values reported as no asterisk >0.05, *<0.05, **<0.01, ***<0.001, calculated by one-way ANOVA. Error bars represent standard error.
 
-## Simulations of nuclear mechanics modulating chromatin crosslinking recapitulate experimental degradation of HP1α
+### Simulations of nuclear mechanics modulating chromatin crosslinking recapitulate experimental degradation of HP1α
 
 To assess the role of HP1α in chromatin-based nuclear mechanical response, we performed Brownian dynamics simulations using a previously developed shell-polymer model (Banigan, 2021; Banigan et al., 2017; Stephens et al., 2017). In these simulations, chromatin is modeled as a crosslinked polymer that is physically linked to a peripheral polymeric lamin shell that encapsulates the polymer chromatin (see Materials and methods). In this model, each chromatin bead is 0.57 µm in diameter and represents a few Mbp of the genome. This coarse-grained model can capture the effects of alterations to histone modifications through the polymer spring constant and perturbations to lamin A/C through the lamin spring constant (light red data points in Figure 4, A and C; Stephens et al., 2017). In particular, varying the polymer spring constant models alterations to chromatin compaction via histone modifications; the short-extension nuclear force response is suppressed as the polymer spring constant is decreased (Stephens et al., 2017).
 
@@ -104,15 +128,23 @@ We first investigated whether depletion of chromatin-lamina linkages in the simu
 
 We therefore investigated the effects of varying the levels of chromatin-chromatin crosslinkers in the simulation model. We varied crosslinking frequency from zero up to about one in three subunits crosslinked, above which the chromatin polymer is a percolated network and therefore solid-like. We found that the level of crosslinking markedly alters the force-strain relation (Figure 4C); increasing crosslinking stiffens the nucleus. However, in contrast to chromatin-lamina linkages, crosslinks govern stiffness of only the short-extension force response (Figure 4D). This is a signature of their specific effect in resisting deformations of the chromatin interior. These qualitative trends agree with the measurements from micromanipulation experiments (Figure 2, B and D). The simulation data also includes points that are in reasonable quantitative agreement with the experiments. These results are consistent with a model in which the HP1αI165E mutant abolishes crosslinking and thus decreases the short-extension nuclear spring constant (Figure 2, B and D), which may generate abnormal nuclear morphology. Altogether, the simulations support the conclusion that HP1α contributes to nuclear mechanical response by acting as a chromatin-chromatin crosslinking element.
 
-## HP1α degradation does not release heterochromatin from the nuclear periphery
+### HP1α degradation does not release heterochromatin from the nuclear periphery
 
 To test our prediction from simulations that HP1α does not act mechanically as a chromatin-lamina linker, we experimentally assayed its location and peripheral heterochromatin tethering capabilities. Specifically, we investigated whether HP1α acts similarly to two known chromatin-lamina tethers, LBR and PRR14, which show enrichment at the periphery and maintain localization of peripheral H3K9-marked heterochromatin (Dunlevy et al., 2020; Giannios et al., 2017; Nikolakaki et al., 2017; Poleshko et al., 2013; Solovei et al., 2013). We measured peripheral enrichment ratios (average intensity at the periphery over the interior) of DNA (Hoechst), HP1α, and H3K9me2,3, using lamin B1 as a marker for the periphery. In untreated cells, both DNA and HP1α have enrichment ratios of about 1 (0.99 ± 0.01 vs. HP1α 0.86 ± 0.01, p=0.78, Figure 4, E and F), demonstrating a lack of peripheral enrichment, while H3K9me2,3 was somewhat enriched (1.48 ± 0.04, p<0.0001 vs. 0.99 DNA). Upon degradation of HP1α, peripheral enrichment of DNA and H3K9me2,3 do not change (0.99 vs 0.94, p=0.99 and 1.48 vs 1.34, respectively, p=0.49), whereas depletion of previously reported chromatin-lamina tethers result in a 50% or greater decrease in peripheral localization of H3K9me2,3 (Poleshko et al., 2013), which supports our conclusion that HP1α does not mechanically function as a chromatin-lamina linkage in this cell type.
 
-## HP1α provides mechanical strength to mitotic chromosomes and enhances mitotic fidelity
+### HP1α provides mechanical strength to mitotic chromosomes and enhances mitotic fidelity
 
 Given HP1α’s mechanical role in chromatin-based nuclear mechanics, we hypothesized that HP1α could also contribute to mitotic chromosome mechanics. As in interphase nuclear mechanical response, heterochromatin has recently been shown to govern mitotic chromosome mechanics (Biggs et al., 2019). It has previously been reported that most HP1α is removed from chromosomes during prophase by phosphorylation of H3S10, which is known to disrupt HP1α-H3K9me2,3 binding (Fischle et al., 2005; Hirota et al., 2005). However, some HP1α binding is maintained throughout mitosis (Serrano et al., 2009), suggesting a possible role for HP1α in mitotic chromosome mechanics.
 
 We used fluorescence imaging and micropipette micromanipulation methods (Biggs et al., 2019; Sun et al., 2018) to assay the presence of HP1α-AID-sfGFP in prometaphase cells (identified by their round shape) and mitotic chromosomes without or with auxin treatment for 4 hr to degrade HP1α (Figure 5B). Prometaphase cells show both chromosome-bound and diffuse, cytoplasmic HP1α-AID-sfGFP signals. Both cytoplasmic and chromosomal HP1α-AID-sfGFP signals nearly completely disappear upon auxin-induced degradation (Figure 5B). To further verify the presence of HP1α on mitotic chromosomes, we isolated mitotic chromosome bundles from cells via gentle lysis and capture. Fluorescence imaging of these isolated bundles without the high background fluorescence of the cytoplasm allowed us to observe that HP1α is clearly present on mitotic chromosomes (Figure 5A). In addition to concentrated foci, HP1α-AID-sfGFP is also present on chromosome arms (Figure 5C and Figure 5—figure supplement 1, A B). Confocal imaging of live cells revealed that concentrated foci are located at the pericentromeric region (Figure 5—figure supplement 1C), in agreement with previously published reports (Akram et al., 2018; Fischle et al., 2005; Hirota et al., 2005; Serrano et al., 2009). By additional fluorescence imaging, we observed that HP1α-AID-sfGFP is lost upon auxin-induced degradation (Figure 5B C). Thus, we confirmed that endogenous HP1α-AID-sfGFP is associated with mitotic chromosome arms and pericentromeres, and it is degraded after 4 hr of auxin treatment.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig5-v2.jpg)
+
+**Figure 5.:** (A) Example image of the steps to isolating a mitotic chromosome from a live cell using micropipettes. (B) Representative live mitotic cells and isolated mitotic chromosome bundles imaged via phase contrast and HP1α-AID-sfGFP fluorescence intensity across treatments. Values calculated by measuring the cell’s or chromosome bundle’s fluorescence minus the background fluorescence, normalized to the average intensity of the untreated cellular HP1α fluorescent intensity. p Values reported as ***<0.001, calculated by student’s t-test. (C) Example images of the endogenous HP1α-AID-sfGFP fluorescence of an isolated mitotic bundle outside of the lysed cell. Yellow box denotes the area where the graphed line scan was drawn. The line scan reveals HP1α on chromosome arms. (D) Example images of a force-extension experiment. The right pipette pulls away from the left pipette, which stretches the chromosome and causes the left pipette to deflect. The left ‘force’ pipette has a premeasured bending constant (in pN/um) to calculate force. Left graph, example traces of force-extension experiments for the different conditions. (E) Graph of average doubling force (100% strain) in picoNewtons for each condition, which is determined by slope of the force extension traces and the initial chromosomes length. For B-E, n = 20 for control and auxin treated, n = 16 for methylstat, and n = 14 auxin methylstat treated, p values calculated by student’s t-test. (F) Example images of abnormal mitotic segregation via anaphase bridge or nondisjunction. Graphs of percentage of mitotic cells displaying abnormal metaphase misalignment (black bars) and anaphase/telophase missegregation (white bars) via presence of anaphase bridges or nondisjunction/aneuploidy in control untreated cells (-) or auxin-treated (+) cells for 4 or 16 hr. Metaphase misalignment three to four biological replicate experiments (black dots) consisting of n = 16, 15, 20, 37 -aux, n = 33, 33, 24 +aux 4 hr, n = 22, 48, 58, 54 +aux 16 hr. Anaphase and telophase missegregation 3–4 experiments (black dots) consisting of n = 29, 23, 30, 30 -aux, n = 32, 29, 18 +aux 4 hr, n = 20, 35, 36, 45 +aux 16 hr. p values reported as *<0.05, **<0.01, ***<0.001, ****<0.0001, calculated by Student’s t-test. (G) HP1α-AID-sfGFP cells - auxin or +auxin for 24 hr were tracked through mitosis to determine if abnormal mitosis results in abnormally shaped daughter nuclei measured via nuclear curvature (parental 34 nuclei from 17 mitoses; -auxin 46 nuclei from 23 mitoses; +auxin 51 nuclei from 26 mitoses, p value from one-way ANOVA). Percentage of abnormal mitosis presented in Figure 5—figure supplement 1D. Error bars represent standard error. Scale bar in A-C = 10 μm and F = 20 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63972/elife-63972-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HP1a-AID-sfGFP total fluorescence counts compared between mitotic cells and isolated mitotic chromosome bundles, which we imaged at 10-times the exposure time and same power, for untreated, auxin 4 hr, methylstat 2 days, and auxin +methylstat. (B) Example images of whole chromosomes decorated with HP1α-AID-sfGFP in isolated chromosome bundles. (C) In vivo confocal imaging of HP1α-AID-sfGFP relative to SiR-Hoechst labeling reveals pericentromeric foci concentration. (D) Tracking of the parental cell line, HP1α-AID-sfGFP 24 hr - auxin and +auxin-treated cells through mitosis for normal or abnormal behavior denoted by chromosome bridges (also reported in Figure 5G). This data is analyzed from the same data as presented in main Figure 5G, which shows nuclear curvature daughter nuclei.
 
 The mechanical role of HP1α in mitotic chromosomes was investigated by micromanipulation force measurements. The isolated bundle of chromosomes was held by one micropipette while two additional micropipettes were used to capture and isolate a single chromosome (Figure 5D). The single mitotic chromosome is then extended with the stiff pull pipette, while deflection of the other, much less stiff force pipette provides a force measurement, in the same manner as our experiments on interphase nuclei (Figure 5D). For each isolated chromosome, we calculated a force versus extension plot (Figure 5D). Because each of the 23 human chromosomes is a unique length, we calculate a length-independent measurement by extrapolating the force-extension slope to determine the ‘doubling force’—the force at which the chromosome length would be doubled (i.e. force at 100% strain, Figure 5E). Since the pipettes hold opposite ends of the chromosome, tension is distributed across the whole chromosome (Figure 5D example images). Therefore, the resistive force measured includes contributions from chromatin, and thus HP1α, in both the chromosome arms and the pericentromeric region. We find that depletion of HP1α reduced mitotic chromosome doubling force by approximately 40%, from 262 ± 50 pN in control cells (spring constant 27 pN/μm) to 148 ± 12 pN in auxin-treated cells (16 pN/μm) (p=0.03, Figure 5E), indicating that HP1α significantly contributes to mitotic chromosome mechanics.
 
@@ -128,7 +160,7 @@ Abnormal mitosis has also been reported to disrupt nuclear morphology in the dau
 
 Constitutive heterochromatin comprises an essential nuclear compartment known to perform genome-stabilizing functions through its biochemical and mechanical properties. HP1α is an essential protein component of heterochromatin that orchestrates its structural and functional roles (Kumar and Kono, 2020). To directly characterize these roles, we developed a new tool for rapid and reversible depletion of endogenous HP1α protein through auxin-inducible degradation (Nishimura et al., 2009). Interestingly, rapid degradation of HP1α over 4 hr does not significantly alter large-scale transcriptional profile or chromatin organization (Figure 1). Nonetheless, rapid degradation of HP1α has significant effects on interphase and mitotic chromosome mechanics and morphology (Figures 2–4). Furthermore, HP1α’s role is dependent on its ability to dimerize (Figure 3). Together with polymer simulations of interphase nuclear mechanics (Figure 4), these results indicate that HP1α acts as a dynamic chromatin-chromatin crosslinker to provide mechanical strength to the nucleus, and that this function may persist through mitosis.
 
-## HP1α is not essential for transcription repression or heterochromatin maintenance on short time scales
+### HP1α is not essential for transcription repression or heterochromatin maintenance on short time scales
 
 Our data are the first to separate the direct and indirect roles of HP1α in heterochromatin and its major functions in maintaining heterochromatin and regulating transcription. Early studies of HP1α established its association with compacted regions (beta chromatin) (Bannister et al., 2001), transcriptional silencing in yeast (Fischer et al., 2009; Sadaie et al., 2008), and silencing in Drosophila and mammalian cells at specific sites (Li et al., 2003; Verschure et al., 2005). Recent studies have shown a capacity for HP1α to suppress transcription in HEK293 cells when overexpressed (Lee et al., 2019) and in MEF cells while recruited to a specific array (Erdel et al., 2020). In contrast, our studies assay global transcription after rapid loss of endogenous HP1α in human cells. We find that rapid HP1α degradation does not result in significant changes in gene transcription and local compaction (Figure 1 and Figure 1—figure supplement 1), suggesting that its presence is dispensable for maintenance of these heterochromatic features over timescales < 24 hr.
 
@@ -136,13 +168,13 @@ Chromatin compaction and transcriptional repression also depend on methylation, 
 
 Altogether, these results are consistent with the existence of a heterochromatin compaction state that is insensitive to the presence or absence of HP1α (Erdel et al., 2020). Instead, the functional impact of HP1α may appear in other processes, such as DNA replication (Schwaiger et al., 2010), chromosome segregation (Abe et al., 2016), epigenetic imprinting and inheritance (Hathaway et al., 2012; Holla et al., 2020; Nakayama et al., 2000), or post-mitotic reformation of the nucleus (Liu and Pellman, 2020). Nonetheless, as we discuss below, despite its limited impact on global transcription and chromatin organization, HP1α serves an important function as a mechanical stabilizer of the genome and nucleus.
 
-## HP1α governs nuclear stiffness with a distinct and separate mechanical contribution from histone methylation
+### HP1α governs nuclear stiffness with a distinct and separate mechanical contribution from histone methylation
 
 While rapid depletion of HP1α did not alter heterochromatin-specific properties and functions such as histone methylation levels or transcriptional repression over short time scales, it did significantly contribute to nuclear mechanics. Degradation of HP1α resulted in a drastic decrease in the short-extension rigidity of the nucleus, reducing the spring constant by 45% (Figure 2B,D). Lamin A levels and large-deformation nuclear stiffness, however, were unaffected by HP1α degradation (Figure 2B and Figure 2—figure supplement 1A). These results are consistent with prior experiments showing that chromatin dominates the mechanical response to small deformations, while lamins underlie strain stiffening to large deformations (Stephens et al., 2017). Similarly, HP1α has been shown to provide mechanical resistance for a single DNA fiber (Keenen et al., 2021). Furthermore, consistent with HP1α’s newfound role in chromatin-based mechanics, we find that HP1α degradation results in the loss of nuclear shape stability (Figure 2E,G), similar to the effects of other chromatin perturbations that soften the cell nucleus (Furusawa et al., 2015; Stephens et al., 2019a; Stephens et al., 2019b; Stephens et al., 2018; Wang et al., 2018). Thus, while rapid depletion of HP1α has little apparent effect on genome organization (Figure 1), HP1α is critical to maintaining the mechanical integrity of chromatin.
 
 It is known that the mechanical contribution of chromatin to the short-extension force response of the nucleus depends on histone modification state (Heo et al., 2016; Hobson and Stephens, 2020b; Krause et al., 2019; Liu et al., 2018; Nava et al., 2020; Stephens et al., 2019b; Stephens et al., 2018; Stephens et al., 2017). We considered the possibility that histone methylation contributes to mechanics through its impact on HP1α binding to chromatin (Bannister et al., 2001; Erdel et al., 2020; Lachner et al., 2001; Nakayama et al., 2001). However, our experiments show that histone methylation has a distinct contribution to chromatin-based nuclear mechanical response that is largely separate from HP1α (Figure 2D,F,G). In particular, nuclear rigidity (and corresponding shape stability) lost by HP1α degradation can be recovered by hypermethylation of histones via methylstat treatment. Furthermore, HP1α has an additive effect with methylation on nuclear mechanical response: chromatin-based nuclear stiffness decreases after HP1α degradation with or without treatment with methylstat. Together, these results suggest that HP1α and histone methylation modulate separable mechanical responses within the cell nucleus. The methylation-based mechanical response may be due to direct interactions between histone marks (Bilokapic et al., 2018; Zhiteneva et al., 2017) or effects of other histone mark readers.
 
-## HP1α contributes to nuclear mechanical response by acting as a chromatin crosslinker
+### HP1α contributes to nuclear mechanical response by acting as a chromatin crosslinker
 
 What is the separate mechanical role of HP1α in heterochromatin? HP1α is a homodimer capable of physically bridging chromatin fibers by binding methylated histones or DNA (Canzio et al., 2011; Cheutin et al., 2003; Machida et al., 2018). We found evidence that this capability supports a distinct mechanical function. HP1α’s dimerization is essential to its role in maintaining nuclear shape stability (Figure 3), which has been shown here (Figure 2) and previously (Stephens et al., 2019a; Stephens et al., 2018) to depend on chromatin-based nuclear stiffness. Thus, we conclude that HP1α’s ability to dimerize and crosslink chromatin is essential to HP1α’s contributions to chromatin-based nuclear stiffness (Figure 6).
 
@@ -156,87 +188,202 @@ More broadly, the finding that HP1α acts as a chromatin crosslinker is consiste
 
 Crosslinking and gelation are intimately coupled to phase separation (Harmon et al., 2017). Therefore, HP1α may contribute to nuclear mechanics through a phase transition mechanism. In a phase transition model, HP1α dimers crosslinking certain regions of the chromatin polymer would lead to polymer-polymer or sol-gel transitions (Khanna et al., 2019; Tanaka, 2002) that contribute to the elastic modulus of the whole network (Colby and Rubinstein, 2003; Semenov and Rubinstein, 2002; Shivers et al., 2020). Furthermore, HP1α binding to methylated histones is known to alter the structure of the nucleosome core, which could promote nucleosome-nucleosome interactions, and induce polymer-polymer phase separation of the chromatin fiber (Sanulli et al., 2019). Additionally, purified HP1α protein in vitro exhibits liquid-liquid phase separation by itself, with naked DNA, and with nucleosome arrays (Larson et al., 2017; Shakya et al., 2020), and HP1 condensates bound to dsDNA in vitro can lend mechanical strength (Keenen et al., 2021). The material properties of these in vitro condensates varies depending on the chromatin content (Larson et al., 2017; Shakya et al., 2020). More generally, phase separation in an elastic network such as chromatin can be regulated by the local mechanical properties of the material (Shin et al., 2018; Style et al., 2018). Together, these observations suggest a complex physical picture that is dictated by both HP1α’s self-interaction and chromatin binding capabilities, in addition to length, concentration, and phase behavior of the chromatin itself (Gibson et al., 2019; Maeshima et al., 2021; Strickfaden et al., 2020). The material state and categorization of the phase transition of HP1α-rich heterochromatin in vivo have been debated (Erdel et al., 2020; Larson et al., 2017; Strom et al., 2017; Williams et al., 2020), and the underlying chromatin may be ‘solid-like’ (Strickfaden et al., 2020), so further work is necessary to completely understand the interplay of these components in determining phase behavior and mechanics of the interphase nucleus.
 
-## HP1α is a mechanical element of mitotic chromosomes and is essential for proper mitosis
+### HP1α is a mechanical element of mitotic chromosomes and is essential for proper mitosis
 
 Mechanical components of interphase chromatin may remain attached to mitotic chromosomes in order to maintain the mechanical strength of chromosomes during mitosis. Recent work has shown that heterochromatin-based histone modifications/methylation also control the mechanical strength of chromosomes, while euchromatin-based histone acetylation does not (Biggs et al., 2019). That paper hypothesized that increased histone methylation could be aided by ‘histone reader’ heterochromatin-associated proteins, specifically HP1α. Our data reveal that, similar to HP1α in interphase nuclei, HP1α during mitosis is a significant mechanical component of the mitotic chromosome (Figure 5). HP1α degradation leads to more extensible mitotic chromosomes, but the stiffness can be recovered by hypermethylation via methylstat treatment. The fact that HP1α still provides mechanical stiffness in mitotic chromosomes, a chromatin-only system without lamins, further supports that HP1α mechanically functions as a chromatin crosslinker. Previous work has proposed that mitotic chromosomes are dense polymer gels based on their elastic response, which relies on the continuity of the DNA backbone (Poirier and Marko, 2002), topology (Kawamura et al., 2010), and the chromatin cross-bridging condensin protein complex (Sun et al., 2018). Our experiments implicating HP1α as a crosslinking element (in interphase) and measuring the mechanical contributions of HP1α in mitotic chromosomes further support this picture. Methylation could serve as an additional compaction agent by providing further crosslinking, stiffening the chromatin fiber itself, or generating poor solvent conditions that further compact mitotic chromosomes (Batty and Gerlich, 2019; Gibcus et al., 2018; Maeshima et al., 2018). Together, these components generate the rigidity necessary for robust mitotic chromosomes.
 
 Loss of HP1α results in dysfunction, marked by improper chromosome alignment and segregation. Previous reports had noted that loss of HP1α and HP1γ, specifically at the centromere, causes increased incidence of chromatin bridges (Lee et al., 2013) and mitotic alignment errors (Yi et al., 2018), genetic deletion of HP1α increases merotelic and syntelic attachments (Bosch-Presegué et al., 2017), and mitosis is dependent on HP1α phosphorylation (Chakraborty et al., 2014). Our findings with rapid degradation of HP1α reveal a threefold increase in both misalignment and missegregation, which were mostly observed as anaphase bridges, which could be due, in part, to aberrant DNA damage repair (Chiolo et al., 2011; Peng and Karpen, 2007). Our results are in agreement with HP1α interacting with LRIF1 at the centromere, which when perturbed results in similar misalignment and missegregation (Akram et al., 2018). However, further work is required to determine if chromosome misalignment is due to a biochemical pathway or mechanical pathway where whole-chromosome mechanics controlled by HP1α influences proper segregation.
 
-## Conclusion
+### Conclusion
 
 We have established that HP1α has consistent mechanical and functional implications for chromosomes throughout the cell cycle. While rapid degradation of HP1α has little effect on the global transcriptional profile, loss of HP1α strongly impairs interphase and mitotic chromosome mechanics. This leads to deleterious and potentially catastrophic effects, such as abnormal nuclear morphology and chromosome segregation defects. When present, HP1α is a crosslinking element, and it mechanically stabilizes interphase and mitotic chromosomes, suppressing abnormal nuclear deformations and mitotic defects. It remains unclear whether HP1α’s phase separation capability is important to this biophysical function. More broadly, our experiments demonstrate that mechanical softening of the nucleus due to loss of HP1α’s chromatin crosslinking ability, rather than transcriptional changes, could underlie defects in fundamental nuclear functions such as nuclear compartmentalization, DNA damage prevention and response, and migration, all of which have been shown to depend on nuclear mechanics (Gerlitz, 2020; Stephens, 2020; Xie et al., 2020). These mechanical changes could also have broad implications for human diseases, such as breast cancer, where increased invasiveness (migration ability) has been correlated with decreased HP1α levels (Vad-Nielsen and Nielsen, 2015) and inhibition of HP1α dimerization (Norwood et al., 2006). Overall, we have revealed a direct structural role for HP1α in whole-nucleus and mitotic chromosome mechanics that furthers our understanding of chromatin-based nuclear stiffness and has important cellular functional consequences.
 
 ## Materials and methods
 
-## Cell lines, cloning, and characterization of HP1α-AID-sfGFP degron clone
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>CBX5</td>
+      <td>GenBank</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U20S</td>
+      <td>ATCC</td>
+      <td>ATCC HTB-96</td>
+      <td>RRID:CVCL_0042</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>3' HP1α-AID- sfGFP 2A PuroR</td>
+      <td>Addgene</td>
+      <td>127906</td>
+      <td>RRID:Addgene_127906</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>Guide RNA/Cas9 plasmid pX330 human 3' HP1α gRNA</td>
+      <td>Addgene</td>
+      <td>127906</td>
+      <td>RRID:Addgene_127906</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Guide RNA sequence, 5’- acagcaaagagctaaaggag −3'</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HP1α-mCherry</td>
+      <td>This paper, in pHR vector</td>
+      <td></td>
+      <td>HP1α PCR from Addgene_17652</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>HP1αI165E- mCherry</td>
+      <td>This paper, in pHR vector</td>
+      <td></td>
+      <td>Point mutant made with quickchange</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HP1 alpha (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab109028</td>
+      <td>(1:250) RRID:AB_10858495</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-H3K9me2/3 (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>5327</td>
+      <td>(1:100) RRID:AB_10695295</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lamin B1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab16048</td>
+      <td>(1:500) RRID:AB_443298</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lamin A/C (mouse monoclonal)</td>
+      <td>Active Motif</td>
+      <td>39287</td>
+      <td>(1:1000) RRID:AB_2793218</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Auxin (NaIAA)</td>
+      <td>Sigma</td>
+      <td>I5148</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylstat</td>
+      <td>Sigma</td>
+      <td>SML0343-5MG</td>
+      <td>1 μM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kappa, nuclear curvature</td>
+      <td>FIJI Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines, cloning, and characterization of HP1α-AID-sfGFP degron clone
 
 U2OS (ATCC HTB-96) were validated by STR. These cells were cultured in DMEM/FBS and co-transfected with two plasmids, human 3' HP1α-AID- sfGFP 2A PuroR (Addgene 127906) and a guide RNA/Cas9 plasmid pX330 human 3' HP1α gRNA (Addgene 127907) with Lipofectamine 2000 according to manufacturer’s instructions. The guide RNA sequence, 5’- acagcaaagagctaaaggag −3', flanked the stop site of the CBX5 gene and was destroyed upon successful in-frame insertion of the AID-GFP 2A PuroR cassette. Modified cells were selected with 10 µg/ml puromycin and single-cell sorted into 96-well plates with a BD FACS Aria III gated with FACSDiva software to sort only the top 10% brightest GFP-expressing cells. Expression of HP1α-AID-sfGFP was monitored by fluorescence microscopy as clones were expanded and subjected to quality control (QC; quality control, consisting of immunoblotting, PCR and live cell microscopy, see supplementary materials). A homozygous clone that passed all QC (U2OS HP1α 4) was co-transfected with the transposon vector pEF1a-OsTIR-IRES-NEO-pA-T2BH (Addgene 127910) and SB100X in pCAG globin pA (Addgene 127909). Forty-eight hr post-transfection, cells were selected with 400 µg/ml G418 for 10 days (media with fresh G418 replaced every 2–3 days) and then allowed to recover in DMEM/FBS for 1 week. GFP positive cells were again single cell sorted, expanded and subjected to QC. Degradation of HP1α-AID-sfGFP by OsTIR1 was evaluated by flow cytometry, immunoblotting and live cell microscopy after treatment with 1 mM auxin (NaIAA, Sigma #I5148) for 4–16 hr. A clone (U2OS HP1α 4–61) that by all QC measures demonstrated no detectable HP1α-AID-sfGFP after auxin treatment was chosen and expanded.
 
-## Validation by PCR
+### Validation by PCR
 
 Genomic DNA was extracted using the PureLink Genomic DNA Mini Kit (catalog number K182001) and PCR was performed with oligos that flanked the insertion site, yielding 2 PCR products for heterozygous HP1α clones or a single larger PCR product for HP1α clones homozygous for the AID-GFP-Puro insertion.
 
-## Cell line validation microscopy
+### Cell line validation microscopy
 
 Live cells were plated into four chambered glass bottomed dishes (Greiner Bio One, #627975) and mounted in a temperature and CO2 controlled chamber (Okolab) for viewing using a Nikon Eclipse Ti inverted microscope with a 100X, 1.45NA phase objective and Spectra X (Lumencor) LED excitation at DAPI (395/25) and GFP (470/24) wavelengths (used at 5% power). Cells grown on glass coverslips, fixed in 4% paraformaldehyde (Polysciences, #18814) and mounted in Prolong Diamond to preserve GFP signal were also prepared. Images were captured using an Orca Flash 4 sCMOS camera and analyzed, cropped and contrast adjusted for display using either Elements or Imaris software. Cells were tested for mycoplasma via imaging using hoechst weekly.
 
-## Immunoblotting and immunostaining
+### Immunoblotting and immunostaining
 
 Cell pellets from each clone were resuspended and incubated in RIPA buffer (Thermo Scientific # 89901) containing 2x Protease inhibitor (Thermo Scientific # A32955) for 1 hr on ice, and then incubated for 10 min at RT with 25U benzonase nuclease (Millipore Sigma 70746-10KUN)/50 µL sample. After BCA protein quantification (Pierce), samples were subjected to reducing SDS-PAGE and LI-COR Western blot analysis. Anti-HP1 alpha primary antibody (Abcam #ab109028) was used at 1:250 and IRDye 680CW secondary (LiCOR #925–6807) was diluted 1:15000. Blots were scanned on an Odyssey CLx. Immunostaining was carried out as previously described (Politz et al., 2002) using Abcam #ab109028 primary antibody at 1:250, and secondary antibody (Jackson labs 711-165-152) at 1:200, and coverslips were mounted in Prolong Gold. Images were captured as described above.
 
-## RNA-seq
+### RNA-seq
 
 RNA was isolated using the Qiagen RNeasy kit according to manufacturer’s instructions. Cells were homogenized with a QIAshredder (Qiagen #79654) with β-mercaptoethanol in the RTL buffer. DNA was digested with RNase-Free DNase (Qiagen #79254) and purified with RNeasy MinElute Cleanup Kit (Qiagen #74204). Purified RNA was quantitated with a Nanodrop spectrophotometer and quality was confirmed on a bioanalyzer with a TapeStation R6K assay. A sequencing library from RNA with a RIN >9.5 was prepared using the TruSeq stranded mRNA Library Prep and sequencing was performed using an Illumina HiSeq 2500 workstation. There were over 16,000 genes with one transcript per million reads for control compared to auxin 4 hr as well as control compared to auxin 16 hr, The RNA-Seq reads were mapped with STAR and then quantified by RSEM, and the differential gene expression analysis was performed using DESeq2.
 
-## HP1α rescue constructs
+### HP1α rescue constructs
 
 Full length HP1α was amplified by PCR (Addgene 17652), and cloned using InFusion kit into a pHR lentiviral vector under an SFFV promoter and tagged C-terminally with mCherry and sspB. A mutation was introduced to disrupt dimerization at amino acid 165 in the chromoshadow domain, changing the codon ATA (coding for Isoleucine, I) to GAG (coding for Glutamic acid, E) to result in HP1αI165E. This mutation has been previously characterized to disrupt homodimerization of HP1α (Brasher et al., 2000).
 
-## Lentiviral expression of HP1α rescue constructs
+### Lentiviral expression of HP1α rescue constructs
 
 LentiX cells were transfected with transfer plasmids pCMV-dR8.91 and pMD2.G, as well as expression construct of interest in a 9:8:1 mass ratio into HEK293T cells using FuGENE HD Transfection Reagent (Promega) per manufacturer’s protocol. After 48 hr, media containing viral particles was collected and filtered using 0.45 micron filter (Pall Life Sciences), and either used immediately or stored at −80°C. HP1α-AID-sfGFP cells were plated at 15–20% confluency on glass-bottom 96-well plates (Cellvis) and infected with 10–50 µL of virus-containing media. After 24 hr, viral media was removed and replaced with fresh DMEM, and cells were fixed or imaged at 3–7 days post-infection.
 
-## Immunostain, microscopy, and morphological analysis of nuclear shape in fixed cells
+### Immunostain, microscopy, and morphological analysis of nuclear shape in fixed cells
 
 HP1α-AID-sfGFP cells expressing mCherry-tagged HP1αWT or HP1αI165E were treated with control media (no auxin) or 1 mM auxin (NaIAA, Sigma #I5148) for 16 hr before being fixed in 4% paraformaldehyde for 10 min, washed three times in PBS, permeabilized with 1% triton X-100 in PBS for 1 hr at room temperature with rocking, blocked with 5% FBS in 0.25% PBST for 1 hr at room temperature with rocking, and incubated with anti-Lamin A/C antibody 1:1000 (Active Motif, 39287) in block overnight. Samples were washed again three times with PBS and incubated with Goat anti-mouse IgG secondary antibody conjugated to Alexa fluor 647 (Thermo Fisher, A-21236) for >2 hr, washed again and incubated with Hoechst 1:2000 in PBS for 30 min. Images of fixed and stained cells were obtained with a spinning-disk confocal microscope (Yokogawa CSU-X1) with 100X oil immersion Apo TIRF objective (NA 1.49) and Andor DU-897 EMCCD camera on a Nikon Eclipse Ti body. Live samples were maintained at 37°C and 5% CO2 by a 96-well plate incubation chamber (Okolab). 405, 488, 561, and 647 lasers were used for imaging Hoechst, sfGFP, mCherry or Alexa 568, and Alexa 647, respectively. Laser power and digital gain were consistent for imaging all samples across an experiment, allowing for quantitative comparison of fluorescent intensities. Morphological analysis was performed in FIJI using a plugin that measures curvature; Kappa (Schindelin et al., 2012), which was created originally by Kevan Lu and is now maintained by Hadrien Mary. Briefly, one z-slice of the Lamin A/C immunostain channel at the center of the height of the nucleus was loaded into the Kappa plugin, traced, and a closed curve was fit to the signal. Curvature along the nuclear envelope trace was calculated as the inverse radius of curvature with the plugin and an average value of curvature per nucleus was recorded.
 
-## Peripheral association of chromatin
+### Peripheral association of chromatin
 
 HP1α-AID-sfGFP cells were treated with control media or 1 mM Auxin for 16 hr, then immunostained with α-H3K9me2/3 (Cell Signaling, mouse mAb #5327) and α-Lamin B1 (Abcam ab16048), as described above, and fixed-cell images obtained as above. Lamin B1 stain was used in FIJI to define a nuclear periphery mask, and enrichment was calculated as average intensity within the periphery mask divided by average intensity of the nuclear interior.
 
-## Microscopy and morphological analysis of nuclear shape in living cells
+### Microscopy and morphological analysis of nuclear shape in living cells
 
 Control media (no auxin) or 1 mM auxin (NaIAA, Sigma #I5148) was added to HP1α-AID-sfGFP cells expressing an miRFP-tagged histone H2B plated in 96-well glass bottom plates (Cellvis). Twenty-five X-Y points were chosen in each of the control and experimental wells, and a z-stack ranging eight microns was collected at each point every 30 min for 12 hr (with auxin added to experimental wells at time 0 hr). Morphological analysis was again performed with the FIJI plugin Kappa, this time using the histone signal to delineate the edge of the nucleus.
 
-## Nuclear rupture and DNA damage analysis
+### Nuclear rupture and DNA damage analysis
 
 HP1α-AID-sfGFP U2OS cells were grown in cell culture dishes containing glass coverslip bottoms (In Vitro Scientific). Cells were treated 1 or 2 days prior to imaging with Cell Light Nucleus-RFP (NLS-RFP Fisher Scientific). Cells were untreated or treated with auxin 4–6 hr prior to imaging. Cells were imaged with a 40 × 0.75 NA air objective on an environmental incubation (37°C and 5% CO2) at 2 min intervals for 3 hr. Nuclear ruptures by observing RFP spilling out of the nucleus and into the cytoplasm as outlined in Robijns et al., 2016. DNA damage foci were counted using the Immunostaining procedure above with ɣH2AX conjugated Alexa 657 antibody (CST 9720, 1: 300) and Elements Bright Spot detection to determine the number of foci.
 
-## Cell protocol for single nucleus and mitotic chromosome isolation
+### Cell protocol for single nucleus and mitotic chromosome isolation
 
 Micromanipulation experiments used U2OS parent or HP1α-AID-sfGFP cells maintained in DMEM (Corning) with 10% fetal bovine serum (FBS) (HyClone) and 1% 100x penicillin streptomycin (Corning). The cells were plated and allowed to recover 1–3 days before nucleus or chromosome isolation. 1 mM auxin (NaIAA, Sigma #I5148) was added 4–6 hr before nucleus and chromosome isolation in ‘+auxin’ and ‘+auxin+methylstat’ experiments, and 1 μM methylstat was added 30–38 hr before ‘+methylstat’ and ‘+auxin+methylstat’ experiments. All experiments were performed without synchronization.
 
-## Single nucleus and mitotic chromosome isolation
+### Single nucleus and mitotic chromosome isolation
 
 Single nucleus (Stephens et al., 2017) and chromosome isolation (Biggs et al., 2019) experiments were performed on an inverted microscope (IX-70; Olympus) with a 60 × 1.42 NA oil immersion objective with a ×1.5 magnification pullout. Nuclei and Chromosomes were isolated at room temperature and atmospheric CO2 levels in DMEM 10% FBS 1% pen strep media in 3 hr or less to ensure minimal damage to the cells and chromosomes. Before isolation all cells were imaged for the absence or presence of HP1α with or without auxin treatment, respectively. For nucleus isolation, cells were treated with 1 µg/mL latrunculin A (Enzo Life Sciences) for 45 min before isolation to depolymerize the actin cytoskeleton. Interphase cells were lysed with 0.05% Triton-X 100 in PBS. After lysis, micromanipulation pipettes filled with PBS were used to capture and position the single isolated nucleus. Isolation aimed for G1 nuclei determined by their size (10–15 µm along the major axis). For chromosomes, prometaphase mitotic cells were identified by eye and lysed with 0.05% Triton-X 100 in PBS. After lysis, the bundle of interconnected chromosomes fell out of the cell and stabilized with a PBS filled pipette by light aspiration. While the bundle was stabilized, one end of a loose chromosome was aspirated into an easily bendable (Kavg = 40 pN/µm) ‘force’ pipette, moved away from the bundle, where the other end of the chromosome was grabbed by a stiff pipette. The bundle was heavily aspirated into the stabilizing pipette and then removed, leaving an isolated chromosome to be manipulated.
 
-## Nucleus mechanics measurements
+### Nucleus mechanics measurements
 
 The isolated nucleus is suspended between a stiff pull pipette and a pre-calibrated force pipette for defined size (2.8–3.3 µm diameter) and bending constant (1.5–2.0 nN/µm). The pull pipette provides either 3 µm extension (short regime only) or 6 µm extension of the nucleus (long regime) at a rate of 0.05 µm/s. Bending of the force pipette relative to extension of the nucleus provides a measure of force. Data is transferred to Excel where the slope of the force-extension provides a nuclear spring constant for chromatin (short extension 0–3 µm extension) and a lamin-based strain-stiffening nuclear spring constant (long regime slope minus short regime slope).
 
-## Mitotic chromosome mechanics measurements
+### Mitotic chromosome mechanics measurements
 
 Once a mitotic chromosome was isolated, the stiff pipette was moved 6.0 µm at a rate of 0.20 µm/s with step sizes of 0.04 µm/step using a Labview program, while the force pipette (Fp) and stiff pipette (Sp) were visually tracked. A linear regression of the deflection vs stretch (Fp/(Sp-Fp)) slope was calculated, multiplied by the force pipette spring constant (calibrated after the experiment) to give the spring constant of the chromosome, and multiplied by the initial length of the chromosome, to give the doubling force of the chromosome in a custom Python script, which is publicly available on GitHub (https://github.com/ebanigan/doubling_force) (Shams and Biggs, 2021).
 
-## Mitotic chromosome fluorescence
+### Mitotic chromosome fluorescence
 
 Cells were imaged on an inverted microscope (IX-70; Olympus) with a 60 × 1.42 NA oil immersion objective with a ×1.5 magnification pullout. in the GFP channel once a mitotic cell was identified and the final isolated chromosome was imaged in the GFP channel for each experiment to determine if they contained HP1α. Periodically, the chromosome bundle was also imaged in the GFP channel.
 
-## Nuclear morphology solidity measurements
+### Nuclear morphology solidity measurements
 
 Nuclei were selected via intensity threshold in Hoechst channel and made into an object or ROI and reported for shape solidity, which is a ratio of area over convex area of the nucleus. The threshold of 0.96 solidity was used to determine normal versus abnormally shaped nuclei.
 
-## Brownian dynamics simulations
+### Brownian dynamics simulations
 
 Brownian dynamics simulations of a polymeric shell linked to an interior crosslinked polymer were performed as described previously (Banigan et al., 2017; Stephens et al., 2017). Simulation source code is publicly available on GitHub (https://github.com/ebanigan/shell-polymer) (Banigan, 2021). A total of 1000 shell subunits with diameter as = 0.71 μm are randomly placed on a sphere of radius Ri = 10 μm, which is shrunk to R0 = 5 μm during the simulation initialization (Banigan et al., 2017). Each shell subunit is connected by springs to 4 ≤ z ≤ 8 nearest neighbor shell subunits (<z > ≈4.5). A linear polymeric chain of 552 subunits with diameter ap = 0.57 μm, connected by springs, is initialized in a random globular conformation within the shell. The polymer is randomly crosslinked with NC crosslinks, where NC = 55 (20% of all polymer subunits are crosslinked) unless noted. NL polymer subunits near the surface of the sphere are linked by springs to the nearest shell subunit; NL = 40 (i.e. 7.2% of all polymer subunits or 22% of all peripheral subunits, defined by contact with the shell subunits in the initial configuration, are linked to the shell) unless noted. Tensile force is exerted across the nucleus by exerting force F along the x-axis on a single shell subunit at each of the two poles.
 

@@ -20,19 +20,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00dvg7y05 Division of Gastroenterology, Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School Boston United States
-2. https://ror.org/00dvg7y05 Division of Infectious Diseases, Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School Boston United States
+1. Division of Gastroenterology, Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+2. Division of Infectious Diseases, Department of Pediatrics, Boston Children’s Hospital and Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 3. Department of Microbiology, Harvard Medical School Boston United States
-4. https://ror.org/00dvg7y05 Research Computing, Department of Information Technology, Boston Children’s Hospital Boston United States
-5. https://ror.org/04drvxt59 Department of Pathology, Beth Israel Deaconess Medical Center Boston United States
-6. https://ror.org/01esghr10 Institute of Human Nutrition, Columbia University Irving Medical Center New York United States
-7. https://ror.org/04drvxt59 Department of Surgery, Beth Israel Deaconess Medical Center Boston United States
+4. Research Computing, Department of Information Technology, Boston Children’s Hospital Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
+5. Department of Pathology, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+6. Institute of Human Nutrition, Columbia University Irving Medical Center New York United States ([ROR:01esghr10](https://ror.org/01esghr10))
+7. Department of Surgery, Beth Israel Deaconess Medical Center Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
 
 † Corresponding author
 
 ## Abstract
 
-Glial cells of the enteric nervous system (ENS) interact closely with the intestinal epithelium and secrete signals that influence epithelial cell proliferation and barrier formation in vitro. Whether these interactions are important in vivo, however, is unclear because previous studies reached conflicting conclusions (Prochera and Rao, 2023). To better define the roles of enteric glia in steady state regulation of the intestinal epithelium, we characterized the glia in closest proximity to epithelial cells and found that the majority express the gene Proteolipid protein 1 ( PLP1 ) in both mice and humans. To test their functions using an unbiased approach, we genetically depleted PLP1 + cells in mice and transcriptionally profiled the small and large intestines. Surprisingly, glial loss had minimal effects on transcriptional programs and the few identified changes varied along the gastrointestinal tract. In the ileum, where enteric glia had been considered most essential for epithelial integrity, glial depletion did not drastically alter epithelial gene expression but caused a modest enrichment in signatures of Paneth cells, a secretory cell type important for innate immunity. In the absence of PLP1 + glia, Paneth cell number was intact, but a subset appeared abnormal with irregular and heterogenous cytoplasmic granules, suggesting a secretory deficit. Consistent with this possibility, ileal explants from glial-depleted mice secreted less functional lysozyme than controls with corresponding effects on fecal microbial composition. Collectively, these data suggest that enteric glia do not exert broad effects on the intestinal epithelium but have an essential role in regulating Paneth cell function and gut microbial ecology.
+Glial cells of the enteric nervous system (ENS) interact closely with the intestinal epithelium and secrete signals that influence epithelial cell proliferation and barrier formation in vitro. Whether these interactions are important in vivo, however, is unclear because previous studies reached conflicting conclusions (Prochera and Rao, 2023). To better define the roles of enteric glia in steady state regulation of the intestinal epithelium, we characterized the glia in closest proximity to epithelial cells and found that the majority express the gene Proteolipid protein 1 (PLP1) in both mice and humans. To test their functions using an unbiased approach, we genetically depleted PLP1+ cells in mice and transcriptionally profiled the small and large intestines. Surprisingly, glial loss had minimal effects on transcriptional programs and the few identified changes varied along the gastrointestinal tract. In the ileum, where enteric glia had been considered most essential for epithelial integrity, glial depletion did not drastically alter epithelial gene expression but caused a modest enrichment in signatures of Paneth cells, a secretory cell type important for innate immunity. In the absence of PLP1+ glia, Paneth cell number was intact, but a subset appeared abnormal with irregular and heterogenous cytoplasmic granules, suggesting a secretory deficit. Consistent with this possibility, ileal explants from glial-depleted mice secreted less functional lysozyme than controls with corresponding effects on fecal microbial composition. Collectively, these data suggest that enteric glia do not exert broad effects on the intestinal epithelium but have an essential role in regulating Paneth cell function and gut microbial ecology.
 
 ## Introduction
 
@@ -44,25 +44,57 @@ To better delineate the functional significance of enteric glial-epithelial inte
 
 ## Results
 
-## Plp1 expression broadly marks glia in the gut mucosa
+### Plp1 expression broadly marks glia in the gut mucosa
 
 Enteric glia, like Schwann cells in the periphery, are neural crest-derived and have been identified within tissues by molecular markers including Sox10, Gfap, Plp1, and S100b. Although most glia within enteric ganglia are labeled by these markers, heterogeneity in their expression has been reported (Jessen and Mirsky, 1983; Boesmans et al., 2015), particularly in glia located outside the myenteric plexus (Rao et al., 2015). To determine which marker is most broadly expressed by mucosal glia and would thus be most useful for genetic interrogation of glial-epithelial interactions, we analyzed publicly available single-cell RNA sequencing (scRNAseq) datasets of human and mouse intestinal mucosa.
 
 In human small and large intestines, expression of SOX10 and PLP1 was restricted to cluster of cells with a glial signature (Figure 1A, Figure 1—figure supplement 1A, B). S100B was highly expressed by cells in this cluster but also detected in non-glial cells including macrophages and monocytes; GFAP was overall undetectable (Figure 1A, Figure 1—figure supplement 1A, B). To validate these findings, we examined expression of the corresponding proteins by immunohistochemistry (IHC) in the human small intestine and found SOX10-, PLP1-, and S100B-immunoreactive cells in three compartments along the radial axis: the mucosa, enteric ganglia in the submucosal and myenteric plexuses, as well as intramuscular glia in the muscularis externa (Figure 1—figure supplement 2A, B, D). GFAP-immunoreactive cells were readily found within enteric ganglia but were rare in the mucosa (Figure 1—figure supplement 2C). These observations are consistent with a recent study that examined SOX10, GFAP, and S100B by IHC in the human colon and found little to no GFAP, but robust SOX10 and S100B expression across all three compartments (Baidoo et al., 2023). In the small intestine of patients with Crohn’s disease, a type of inflammatory bowel disease (IBD), SOX10, PLP1, and S100B transcripts were highly enriched in mucosal glia while GFAP was enriched in various non-glial cells including fibroblasts and immune cells (Figure 1B). In sum, SOX10, PLP1, and S100B are broadly expressed by human enteric glia across the radial axis of the gut, including mucosal glia, in both healthy and inflamed states, with SOX10 and PLP1 exhibiting the most cell type specificity.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig1-v1.jpg)
+
+**Figure 1.:** (A) t-SNE plot of 94,451 cells isolated from terminal ileal mucosal biopsies from 13 children with non-inflammatory, functional gastrointestinal disorders (Zheng et al., 2023), colored by annotated cell identity. PLP1 and SOX10 expression exhibit relative specificity to glia; the cells express high levels of these transcripts. S100B is expressed by glia as well as non-glial cells such as macrophages and monocytes. GFAP is undetectable in this dataset. (B) Heatmap of gene expression from 82,417 cells obtained by scRNAseq of mucosal biopsies from inflamed and non-inflamed segments of terminal ileum obtained from 11 adults with Crohn’s disease (Martin et al., 2019). In contrast to PLP1, SOX10, and S100B, which are most highly expressed in glia (arrow), GFAP expression is highest in non-glial cells. (C) Whole-mount immunostaining of ileum from an adult Plp1-eGFP mouse for GFAP imaged at the level of the villus- (top panels) and crypt-associated mucosa (bottom panels). Most glia in the villi express both Plp1 and GFAP while virtually all glia in the mucosa surrounding epithelial crypts are Plp1+ and not immunoreactive for GFAP. (D) Quantification of the percentages of GFAP+, PLP1+, GFAP+ PLP1+ cells in the mucosa. Each data point represents an individual mouse, with triangles representing males and circles representing females (n=4). Scale bars = 100 μm (large panels) and 20 μm (magnified images). Error bars represent SEM. **** p<0.0001 by one-way ANOVA with Tukey multiple comparisons test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) UMAP plots of 91,103 cells isolated from non-malignant colon tissues from 29 adult colorectal cancer patients (Lee et al., 2020). PLP1 marks most of the cells in the putative glial cluster while no GFAP is detected. S100B is robustly expressed by glia but also detectable in non-glial cells. SOX10 is highly specific to the putative glial cluster but is not as universally detected within this cluster as PLP1 and S100B. (B) t-SNE plot of 31,872 stromal cells isolated from 12 healthy individuals (8,480 cells) and 18 Ulcerative Colitis patients (10,245 cells from inflamed regions and 13,147 cells from non-inflamed regions) (Smillie et al., 2019). SOX10, PLP1, and S100B expression is restricted to the putative glial cluster while GFAP is undetectable in this dataset. Insets show expression of the indicated genes in the putative enteric glia cluster. (C) UMAP plots of Drop-seq data from 6,603 mouse colonic mesenchymal/lamina propria cells (Roulis et al., 2020). Plp1 is widely expressed in the putative glial cluster (330 cells) while Sox10, S100b, and Gfap exhibit narrower expression.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A–D) Representative DAB IHC images of SOX10 (A), PLP1 (B), GFAP (C), and S100B (D) staining in non-diseased small intestinal tissue from adult females shown in three compartments: mucosa (left panels; selected crypts outlined in white for clarity), submucosal ganglia and the surrounding connective tissue and muscle (middle panels), and the myenteric plexus with surrounding circular and longitudinal muscle (right panels). SOX10, PLP1, and S100B were detected in all three compartments. GFAP immunoreactivity was detected in submucosal ganglia (middle panel) and myenteric ganglia (right panel), but not the mucosa. Images are representative of observations made in five of five subjects for SOX10 and S100B, three of four subjects for PLP1, and three of three subjects for GFAP. Arrows indicate representative immunoreactive cells. Scale bars = 100 μm (left and right panels) and 50 μm (middle panels).
+
 In mice, we previously showed that PLP1 is widely expressed by enteric glia across the radial axis of the small and large intestines where its expression largely overlaps with S100B; a more limited subset expresses GFAP (Rao et al., 2015). Consistent with these observations, analysis of scRNAseq data from the mouse colonic mucosa showed that Plp1 is broadly expressed across the single putative cluster of mucosal glia; Gfap, S100b, and Sox10 are also detectable in this cluster to variable extents (Figure 1—figure supplement 1C). Given recent observations that a subset of Gfaphigh/Plp1low mucosal glia might be particularly important for epithelial regulation in the mouse small intestine (Baghdadi et al., 2022), we closely compared Plp1 and Gfap expression in the mouse ileum. We performed whole-mount IHC for GFAP in Plp1-eGFP reporter mice to ensure the detection of colocalization despite any potential differences in subcellular distribution. Previous work from our lab and others has validated that eGFP expression in this reporter strain faithfully mirrors endogenous PLP1 expression within the enteric and central nervous systems (Rao et al., 2015; Mallon et al., 2002). In adult Plp1-eGFP mice, we found that mucosal glia diverged sharply in terms of marker expression based on their location along the crypt-villus axis. While the majority of villus Plp1+ cells co-expressed GFAP, virtually none of the crypt-associated Plp1+ cells did so (Figure 1C and D). With rare exceptions in some villi, GFAP-immunoreactive cells that did not express Plp1 were largely undetectable. Together, these observations indicate that Plp1 expression broadly marks enteric glia in mouse and human tissues and is among the most sensitive and specific markers for glia in the gut mucosa.
 
-## Genetic depletion of enteric glia causes muted and region-specific changes in the intestinal transcriptome
+### Genetic depletion of enteric glia causes muted and region-specific changes in the intestinal transcriptome
 
 To determine what aspects of intestinal homeostasis enteric glia are essential for in vivo, we took an unbiased approach. We examined changes in gene expression that occur upon glial loss in three different intestinal regions: proximal small intestine (duodenum), distal small intestine (ileum), and the large intestine (colon). We depleted the cells by administration of tamoxifen to young adult Plp1CreER Rosa26DTA/+ mice, which we previously showed exhibit loss of the majority of S100B- and SOX10-expressing enteric glia, including 90% of mucosal glia (Rao et al., 2017). In this model, glia are lost within 5 days of tamoxifen induction (5dpt) and remain stably depleted through 14dpt; notably female, but not male, mice have intestinal dysmotility (Rao et al., 2017). To facilitate detection of direct effects of glia rather than indirect effects related to dysmotility, we isolated intestinal segments from male Plp1CreER Rosa26DTA/+ mice and Cre-negative Rosa26DTA/+ littermate controls at 11dpt and performed bulk RNA-sequencing (Figure 2A). Surprisingly, there were minimal changes observed in the transcriptome in all three regions of the intestine though the mice exhibited robust depletion of S100B+ glia by IHC. In the duodenum and ileum, differential gene expression analysis by DESeq2 revealed no genes that reached the standard threshold for statistical significance of padj <0.05 (Figure 2B, Figure 2—figure supplement 1). In the colon, only five genes were differentially expressed, most of which were upregulated in glial-ablated mice (Figure 2B, Figure 2—figure supplement 1). These results suggest that acute depletion of enteric glia in male mice has limited effects on the intestinal transcriptome.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of the experimental timeline for bulk RNA-sequencing of intestinal tissue segments from male Plp1CreER Rosa26DTA/+ mice (annotated as Cre+) and Rosa26DTA/+ littermate controls (annotated as Cre-). Tissues were collected 11 days after administration of tamoxifen (11dpt; n=4 per genotype). In this model, the majority of enteric glial cells (EGC) are eliminated by 5dpt, as seen on the representative IHC image of S100B staining in Cre+ and Cre- small intestinal mucosa. Glial depletion is stable through at least 14dpt (Rao et al., 2017). Panel A created with BioRender.com. (B) Volcano plots showing differentially expressed genes in duodenum, ileum, and colon of Cre- and Cre+ mice. Genes that reached statistical significance cutoff of padj <0.05 are labeled. Red and blue colors denote up- and down-regulated genes in Cre+ mice compared to Cre- mice with p-value <0.05, respectively. Differential analysis was conducted using DESeq2. (C) DiVenn analysis illustrates genes that were up- (red) or down-regulated (blue) in the duodenum, ileum, and colon of Cre+ mice compared to Cre- controls at 11dpt with p<0.05 threshold for significance. Nodes linking tissues constitute genes that were differentially expressed in Cre+ mice compared to Cre- controls in both of those tissues. Yellow color marks genes with discordant direction of change between the different tissue regions. Numbers indicate the number of genes at each node or tissue segment that were identified as differentially expressed. Overall, this analysis illustrates that most differentially expressed genes in Cre+ mice were region-specific with little overlap between duodenum, ileum, and colon.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Top 10 most down- (A, blue) and upregulated (B, red) genes in the duodenum, ileum, and colon of Cre+ mice compared to Cre- controls, ordered by p-value. Differential gene expression analysis was performed using DESeq2.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Violin plots of Lyz1 expression in small intestine epithelial cells show enrichment of expression in Paneth cells (data from scRNAseq of mouse small intestine; Haber et al., 2017). EC – enterocyte, EEC – enteroendocrine cell, EP – enterocyte progenitor, GC – Goblet cell, PC – Paneth cell, SC – Stem cell, TA – Transient Amplifying cell, TC – Tuft cell. (B) Quantitative RT-PCR analysis of Lyz1 expression in proximal colons of male Cre- and Cre + mice. Each data point represents one mouse (n=7 for Cre-, n=4 for Cre+). Error bars represent SEM. ***p<0.001 by unpaired parametric t-test. (C) Reactome analysis of differentially expressed genes (significance threshold p<0.05) in colons of Cre+ mice compared to Cre- mice. (D) Representative IHC images of LYZ1 and DEFA5 staining in the distal ileums of Cre- mice (positive control) compared to the proximal colons of Cre+ and Cre- mice (n=3 per genotype; >100 crypts/mouse assessed). No ectopic LYZ1+ or DEFA5+ cells were detected in the large intestines of glial-depleted mice. Scale bar = 50 μm.
 
 Enteric glia represent a relatively small proportion of cells in the intestine. Reasoning that transcriptional changes resulting from the biological effects of enteric glial loss might be muted in magnitude but consistent along the length of the intestine, we identified genes differentially expressed in Cre- (controls) compared to Cre+ (glial-ablated) mice using a more lenient significance threshold of p<0.05 and then performed DiVenn analysis (Sun et al., 2019) to identify changes that were shared across the duodenum, ileum, and colon. Most genes that were differentially expressed were highly specific to one region of the intestine (Figure 2C). While 331, 516, and 916 genes were changed uniquely in duodenum, ileum, and colon, respectively, only 16–29 genes were shared between pairs of tissues (Figure 2C). Remarkably, only two genes were differentially expressed between Cre- and Cre+ mice in all three tissue regions (Igkv4-91 and Ighv1-58), suggesting that enteric glia exert region-specific effects along the longitudinal axis of the intestine.
 
 Focusing on the colon, which showed the most evidence of altered gene expression upon glial loss, we examined the expression of Lyz1, the top gene upregulated in Cre+ mice (Figure 2B, Figure 2—figure supplement 1B). LYZ1 is an antimicrobial peptide (AMP) that is highly and relatively specifically expressed by Paneth cells in the small intestine (Figure 2—figure supplement 1A; Peeters and Vantrappen, 1975). Quantitative RT-PCR (qPCR) of colonic tissue isolated from independent cohorts of Plp1CreER Rosa26DTA/+ mice confirmed upregulation of Lyz1 in the colons of Cre+ mice (Figure 2—figure supplement 2B). Reactome pathway analysis of differentially enriched genes in the colon also highlighted pathways characteristic of Paneth cells including defensins and other AMPs (Figure 2—figure supplement 2C). Paneth cells are not typically present in the healthy mouse colon and their ectopic appearance is considered a marker of inflammation (Hertzog, 1937; Paterson and Watson, 1961; Tanaka et al., 2001; Singh et al., 2020). To determine if glial depletion provoked the formation of ectopic Paneth cells, we performed IHC for LYZ1 and DEFA5, a second and independent marker of Paneth cells (Jones and Bevins, 1992; Salzman et al., 2003). Although both markers robustly labeled Paneth cells in the small intestine, no LYZ1- or DEFA5-immunoreactive epithelial cells were detected in the colons of either Cre- or Cre+ mice (Figure 2—figure supplement 2D). These data suggest that acute glial depletion causes transcriptional dysregulation in the colon linked to Paneth cell biology without evidence of ectopic Paneth cells or corresponding changes in proteins.
 
-## Glial depletion selectively alters Paneth cells in the small intestine
+### Glial depletion selectively alters Paneth cells in the small intestine
 
 Previous studies have indicated that glia might be most important for epithelial homeostasis in the ileum (Bush et al., 1998; Cornet et al., 2001). Although epithelial cells are well-represented in whole gut transcriptomes, there are many other abundant cell types such as immune cells that are also present. To investigate glial effects on epithelial cells more specifically, we mechanically isolated the ileal epithelium from glial-ablated and control mice at 11dpt and examined gene expression by RNA-Seq. DESeq2 and DiVenn analysis detected minimal overlap in the transcriptional changes observed in the whole ileum compared to the ileal epithelium, supporting the utility of focused epithelial analysis (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig3-v1.jpg)
+
+**Figure 3.:** (A) DiVenn analysis illustrates genes that were consistently up- (red) or down-regulated (blue) in the ileal epithelia and full-thickness ileal segments of Cre+ mice compared to Cre- controls at 11dpt with p<0.05 threshold for significance. Yellow color marks genes with discordant direction of change between the ileal epithelia and full-thickness ileal segments. (B) Gene set enrichment analysis (GSEA) of gene expression data from Cre+ vs. Cre- ileal epithelium using single-cell gene signatures for epithelial cell types (schematic representation of component cell types on the left) derived from Haber et al., 2017, Supplementary file 1. The Paneth cell signature was most significantly enriched in the ileal epithelium of glia-depleted mice. Red color denotes the significant enrichment consistent across two independent GSEA. Thresholds for DE analysis: p-value <0.05. *** p<0.001, FDR <0.001, ** p<0.001, FDR <0.01, * p<0.05, FDR <0.05, ns – non-significant. Panel B created with BioRender.com. (C, D) Quantification of epithelial subtypes in the small intestines of Cre- and Cre+ mice with representative IHC images and flow cytometry plots below each graph showing the marker and approach used for cell identification. Each data point represents an individual mouse, with triangles representing males and circles representing females (Paneth cells: n=4 for Cre-, n=5 for Cre+; Lgr5+ SCs: n=4 for Cre- and Cre+; Goblet Cells: n=8 for Cre-, n=10 for Cre+; EECs: n=4 for Cre- and Cre+, M cells: n=8 for Cre- and Cre+). Error bars represent SEM. ns - not significant by unpaired parametric t-test. Scale bar = 100 μm. E-Cadherin (E-CAD) labels cell borders, LYZ1 marks Paneth cells, Lgr5 transcript expression marks intestinal stem cells (SCs), Alcian blue marks goblet cells, Chromogranin A (CHGA) marks enteroendocrine cells, and NKM216-2-4 identifies microfold (M) cells by flow cytometry. Cell nuclei are labeled with DAPI (blue) in the IHC panels.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Volcano plots showing differentially expressed genes in ileal epithelia of Cre- and Cre+ mice. Red and blue colors denote up- and down-regulated genes in Cre+ mice compared to Cre- mice with p-value <0.05, respectively. No genes reached statistical significance cutoff of padj <0.05. Differential analysis was conducted using DESeq2. (B, C) Top 10 down- (B) and upregulated (C) genes in the ileal epithelia of Cre+ mice compared to Cre- controls, ordered by p-value. Differential analysis was conducted using DESeq2. (D) Related to Main Figure 3B. Normalized enrichment scores from GSEA performed using cell-type-specific signatures derived from scRNAseq study of the ileal epithelium (Haber et al., 2017, Supplementary file 1). Red color denotes the significant enrichment consistent across two independent GSEAs. (E) GSEA gene expression data from Cre+ vs. Cre- ileal epithelium using cell signatures curated from transcriptional profiling of individual cell types purified by genetic reporter expression (see Supplementary file 2 for gene lists). The Paneth cell signature was most significantly enriched in the ileal epithelium of glia-depleted mice. Thresholds for DE analysis: p-value <0.05. *** p<0.001, FDR <0.001. (F) Related to (E), normalized enrichment scores from GSEA.
 
 Most intestinal epithelial cells turn over every 3–5 days (Darwich et al., 2014) and thus the majority of cells represented in the epithelial transcriptome of Cre+ mice would not have experienced glial interactions. Nevertheless, epithelial gene expression was similar in control and glial-ablated mice, mirroring the findings from whole tissue. No genes reached the padj <0.05 threshold of significance for differential expression (Figure 3—figure supplement 1A–C).
 
@@ -70,15 +102,35 @@ The intestinal epithelium is composed of a diverse array of cells including abso
 
 The observed enrichment of Paneth or other secretory cell signatures could be a result of altered differentiation and/or survival. Immunostaining for molecular markers of Paneth, Lgr5+, goblet, enteroendocrine, and microfold (M) cells, however, revealed no difference in their densities in Cre+ mice compared to Cre- littermates (Figure 3C–D). In glial-ablated mice, all these cell types also appeared grossly normal, except for Paneth cells (Figure 4A). Paneth cells are highly secretory cells located at the crypt base that are responsible for production and release of the bulk of small intestinal AMPs, such as LYZ1 and α-defensins, which are crucial for homeostatic regulation of the microbiome and innate immunity (Peeters and Vantrappen, 1975; Jones and Bevins, 1992; Salzman et al., 2003; Wilson et al., 1999; Salzman et al., 2010; Clevers and Bevins, 2013). Labeling Paneth cell granules with the fucose-specific lectin UEA-1, revealed that many Paneth cells in Cre+ mice had heterogenous secretory granules, some of which appeared giant, fused, or dysmorphic (Figure 4A). On ultrastructural analysis by transmission electron microscopy, Paneth cells in Cre- mice had typical morphology with a pyramidal shape, extensive rough endoplasmic reticulum, and relatively homogenous, electron-dense granules with haloes, which were oriented toward the apical surface of the cell (Figure 4B). In Cre+ mice, Paneth cells had normal rough endoplasmic reticulum, but many exhibited a globular morphology and contained more heterogeneous granules (Figure 4B). In contrast, neighboring intestinal stem cells in the crypt base, as well as other secretory cell types such as enteroendocrine cells and goblet cells appeared no different in Cre- and Cre+ mice (Figure 4—figure supplement 1). In sum, glial depletion did not provoke major shifts in small intestinal epithelial gene expression or cell composition but caused upregulation of Paneth cell genes associated with specific morphological changes that were highly specific to this cell type.
 
-## Glial depletion impairs Paneth cell secretory activity
+![Figure 4.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative images of UEA-I staining of Paneth cell granules in the small intestine of Cre- and Cre+ mice (observed in at least three mice per genotype). Scale bar = 10 μm. (B) Representative transmission electron microscopy images of Paneth cells (n=2 mice per genotype from independent cohorts). Paneth cells in Cre+ mice are globular, exhibit loss of polarity, and have heterogeneous granules (arrows indicate errant granules). L, Lumen of the intestinal crypts; LP, lamina propria; PG, Paneth granule. Scale bar = 3 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A-C) Transmission electron microscopy of enteroendocrine cells (A; EC), crypt base intestinal stem cells (B; ISc), and goblet cells (C; GC) reveal no changes in the morphology of these cells in 9dpt Cre+ mice compared to Cre- littermate controls studied in parallel. Representative images are from n=2 mice per genotype from independent cohorts. IEC, Intestinal Epithelial Cell; LP, Lamina propria; L, Lumen; PC, Paneth cell. Scale bar = (A, B) 2 μm, (C) 5 μm.
+
+### Glial depletion impairs Paneth cell secretory activity
 
 Paneth cells secrete their granules both constitutively and in response to various stimuli, such as pathogen-associated molecular patterns (Ayabe et al., 2000) and cholinergic agonists (Satoh et al., 1989). At the level of individual cells, disruption of this secretory activity can manifest as accumulation and/or fusion of their secretory granules (Satoh, 1988; Ahonen, 1973). The abnormal granule appearance in Cre+ mice suggested that glial depletion might compromise Paneth cell secretion. Consistent with this possibility, the ‘extracellular’ and ‘secretory’ cellular compartments were most enriched in pathway analysis of Paneth cell genes that were changed in glial-depleted mice (Figure 5A). Paneth cell secretion has often been measured in preparations of mechanically isolated epithelial crypts or enteroids (Ayabe et al., 2000; Yokoi et al., 2019). These preparations, however, are denervated and lack key neighboring cells including glia. To enable measurement of Paneth cell secretion in a more native environment, we developed an explant-based activity assay to measure luminal lysozyme secretion (Figure 5B). Supporting this assay’s specificity for Paneth cell-derived lysozyme, pre-treatment of mice with dithizone, a zinc chelator known to selectively deplete Paneth cell granules (Sawada et al., 1991; Lueschow et al., 2018), reduced detectable lysozyme activity (Figure 5C). Utilizing this assay, we found that small intestinal explants from Cre+ mice secreted less active lysozyme than those from Cre- controls (Figure 5C), indicating that glial loss disrupts Paneth cell secretion.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig5-v1.jpg)
+
+**Figure 5.:** (A) Pathway analysis using GO term for cellular compartment shows significant enrichment of Paneth cell genes in glial-depleted mice. (B) Schematic of explant assay used to analyze Paneth cell secretion. Small intestinal explants were acutely isolated, ligated at both ends, and incubated in oxygenated media at 37 °C for 30 min. Luminal contents were then extracted and analyzed for lysozyme activity by fluorometric assay. Panel B created with BioRender.com. (C) Luminal lysozyme activity in ileal explants from Cre+ and Cre- mice. Lysozyme activity was lower in ileal explants from Cre+ mice compared to Cre- littermate controls (p=0.0188), mirroring the effects of Paneth cell disruption by dithizone (DTZ) in wildtype mice (p=0.0571). Each data point represents one mouse (n=4 per treatment, n=9 mice per genotype). Open triangles in DTZ group represent subset of explants incubated with 10 µM carbachol to stimulate secretion. Error bars represent SEM. ns – non-significant, p values shown are from Mann-Whitney U test. (D-G) Microbiome analysis by 16S rDNA sequencing of fecal pellets from Cre- and Cre+ mice at 0dpt (baseline, pre-induction) and 11dpt. Graphs depict ⍺-diversity (D) and β-diversity (E) where each data point represent one mouse, with triangles indicating males and circles indicating females (n=10 for Cre- and Cre+). Error bars represent SEM. p-values reflect unpaired parametric t-. test. Analysis of phylum- (F) and species- (G) specific differences at 11dpt using LEfSe (p<0.1, LDA >1, FDR-adjusted significance values provided). Any phyla or species detected as differentially abundant at baseline are demarcated in grey. (H) Working model of glial regulation of Paneth cell function. In the normal intestine, Paneth cells are loaded with secretory granules containing LYZ1 that are released into the gut lumen in response to acetylcholine (ACh) and other signals to regulate microbial composition. Upon glial depletion, Paneth cell secretion is disrupted leading to dysmorphic granules, diminished LYZ1 secretion, and altered fecal microbial composition. This occurs without a change in Paneth cell number, loss of muscarinic acetylcholine receptor expression, or denervation of the cholinergic fibers that normally surround epithelial crypts. Panel H created with BioRender.com.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap of neurotransmitter receptor gene expression following GSEA of publicly available RNAseq data from mouse Paneth cells isolated by cell sorting (Yu et al., 2018). Neurotransmitter receptors gene set was derived from Qiagen Ingenuity Pathway Analysis. A subset of genes encoding receptors for acetylcholine, specifically Chrm3, Chrnb4, and Chrm1, exhibit the strongest expression in Paneth cells. (B) Representative images of immunohistochemistry for mAChR3 (n=2) and mAChR1 (n=1) in the human small intestine show high expression of mAChR3 (encoded by CHRM3) in Paneth cells (Protein Atlas, http://www.proteinatlas.org/). (C) Representative images of cross-sections of ileum from explants isolated from Cre- and Cre+ mice, incubated with the cholinergic agonist carbachol (10 µM) or vehicle for 30 min, and stained with UEA-I (red) to label Paneth cell granules (n=3 mice per condition). Paneth cells in both groups of mice showed loss of UEA-I+ granules upon cholinergic stimulation. Scale bar = 20 μm. (D) Lysozyme activity in luminal contents of ileal explants from Cre- and Cre+ mice following incubation with carbachol (10 µM) for 30 min. No difference between explants from Cre- and Cre+ mice was detected. Each data point represents one mouse (n=7–10 mice per genotype). Error bars represent SEM. ns – no significant difference in means by Mann-Whitney U test. (E) Representative IHC images of intestinal epithelial crypts from ileal segments of Cre- and Cre+ mice immunostained for ECAD (magenta) to label epithelial cell borders and TUBB3 (green) to label nerve fibers. Individual crypts are outlined by a dashed line. Quantification of crypt-proximal TUBB3+ neuronal fibers reveals no difference between Cre- and Cre+ mice (n = 4 mice per genotype). Error bars represent SEM. ns - no significant difference in means by unpaired parametric t-test. Scale bar = 10 μm. (F) Representative IHC images for VAChT (red) and TUBB3 (magenta) in the ileum of an adult ChAT-GFP mouse. The majority of TUBB3 immunoreactivity around epithelial crypts colocalizes with GFP (green), indicating that cholinergic fibers (green) comprise most of the crypt-innervating fibers. Scale bar = 50 μm. (G) Representative IHC images for VAChT (red) labeling cholinergic fibers in the ileum of an adult PLP1-eGFP mouse in which Plp1-expressing enteric glia are labeled with GFP (green). GFP+ glia are tightly associated with crypt-innervating cholinergic fibers. Scale bar = 10 μm. (H) Representative IHC images for TUBB3 (green) and VAChT (red) in the ileums of Cre- and Cre+ mice. Individual crypts are magnified in the right panels and outlined by dashed lines. Crypt innervation by fibers labeled with either marker was no different between control and glial-ablated mice. Scale bar = 50 μm (left panels) and 10 μm (right panels). Images in F-H are representative of observations made in three mice per genotype.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97144/elife-97144-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative images of 16S rRNA bacterial fluorescent in situ hybridization (green) with IHC for MUC2 (blue) and beta-catenin (magenta) in Cre+ and Cre- mice to visualize bacteria, mucus, and epithelial cell borders, respectively. The distance of the closest bacterial signal to the center of >50 open crypts/mouse was measured and average values per mouse are shown in the graph. Each data point represents one mouse, with triangles indicating males and circles indicating females (n=6 for Cre- and n=5 for Cre+). Error bars represent SEM. ns – non-significant by unpaired t-test. Scale bar = 100 μm (large panels) and 10 μm (insets). (B) Schematic of experimental design for microbiome analysis. Fecal pellets from Cre- and Cre+ mice pre- (0dpt) and post-(11dpt) induction were analyzed with 16 S rDNA sequencing. Panel B created with BioRender.com. (C) Four-way analysis of species identified as differentially abundant between Cre- and Cre+ mice at 11dpt but not 0dpt (related to Main Figure 5G). Each data point represents one mouse, with triangles indicating males and circles indicating females (n=10 for Cre- and Cre+). Whiskers represent min. and max. values. *p<0.05; **p<0.01; ns – non-significant by Dunn’s multiple comparison test, following Kruskal-Wallis test. Exact p values are included for Uncultured prevotella spp.
 
 Cholinergic signaling regulates Paneth cell function (Satoh et al., 1989; Satoh, 1988; Satoh et al., 1992; Satoh et al., 1995; Dolan et al., 2022) and genetic depletion of G proteins that act downstream of muscarinic acetylcholine receptors (AChR) alters granule morphology (Watanabe et al., 2016). Muscarinic acetylcholine receptor 3 (mAChR3) is the major neurotransmitter receptor expressed by Paneth cells (Figure 5—figure supplement 1A, B; Dolan et al., 2022). Its expression level in the epithelium was unchanged by glial loss (log2FC = 0.104762356, p-value = 0.6474, padj = 0.9999). In line with this observation, Paneth cells in Cre+ mice remained capable of degranulation in response to the cholinergic agonist, carbachol, and secreted similar levels of lysozyme upon carbachol stimulation (Figure 5—figure supplement 1C, D). Thus, Paneth cells in mice lacking enteric glia exhibit morphological and functional evidence of diminished secretory function at baseline but remain competent to respond to at least some stimuli.
 
 Baseline Paneth cell secretion in Cre+ mice could be diminished if glia are necessary for tonic Paneth cell stimulation. In the skin, another critical barrier tissue, glia are essential for the maintenance of nerve terminals, and glial depletion causes rapid and dramatic denervation (Li and Ginty, 2014; Rinwa et al., 2021). To determine if enteric glial depletion similarly causes intestinal epithelial denervation that might result in decreased Paneth cell stimulation, we characterized crypt-associated neuronal fibers in Cre+ and Cre- mice. Overall, the density of crypt innervation was no different in the two groups of mice (Figure 5—figure supplement 1E). Many types of intrinsic and extrinsic neurons innervate the intestinal epithelium. We found that most nerve fibers surrounding crypts are from cholinergic neurons and these fibers tightly associate with enteric glia (Figure 5—figure supplement 1F, G). Given that muscarinic acetylcholine receptors are among the few neurotransmitter receptors expressed by Paneth cells (Figure 5—figure supplement 1A, B; Dolan et al., 2022), cholinergic neurons are likely the ones most relevant to Paneth cell function. To test whether these neurons are altered by glial depletion, we assessed vesicular acetylcholine transporter (VAChT) immunoreactivity in Cre- and Cre+ mice. We observed no difference in the presentation of cholinergic nerve terminals that surround epithelial crypts (Figure 5—figure supplement 1H). These observations establish that glia are not required to maintain epithelial innervation in the intestine and that Paneth cell defects in glial-depleted mice do not result from loss of cholinergic innervation.
 
-## Glial depletion alters gut microbiome composition
+### Glial depletion alters gut microbiome composition
 
 Paneth-cell-derived antimicrobial peptides are essential for preventing microbial colonization of intestinal crypts in the small intestine (Meyer-Hoffert et al., 2008; Vaishnava et al., 2011) and modulating the overall structure of the gut microbiome (Salzman et al., 2010; Yu et al., 2020). Bacterial 16S rRNA fluorescent in situ hybridization (FISH) revealed no difference in the average distance between bacteria and intestinal crypts in Cre- and Cre+ mice (Figure 5—figure supplement 2A) indicating that glial depletion does not provoke microbial invasion into crypts. To determine if enteric glial loss alters gut microbiome composition, we performed 16S ribosomal DNA sequencing of fecal pellets from Cre- and Cre+ mice at baseline (0dpt) and after glial loss (11dpt; Figure 5—figure supplement 2B). Both ⍺- and β-diversity were altered by glial depletion at 11dpt in male and female mice (Figure 5D and E). β-diversity analysis, in particular, revealed clustering of samples by genotype at 11dpt (p=0.003), which explained a significant proportion of the inter-sample variance (R2=0.25679, Figure 5E).
 
@@ -88,7 +140,7 @@ Paneth cell secretions can influence the abundance of specific members of the gu
 
 Enteric glia secrete factors that influence intestinal epithelial cell properties in vitro, but it has remained unclear what, if any, essential roles these cells play in regulating epithelial functions in vivo. Here, we identify PLP1+ cells as the glia that most closely interact with the gut epithelium and show that genetic depletion of these glia in mice does not have major effects on the intestinal transcriptome or the cellular composition of the epithelium. Enteric glial loss, however, does cause dysregulation of Paneth cell gene expression that is associated with morphological disruption of Paneth cells, diminished lysozyme secretion, and altered gut microbial composition. Together, these observations support a working model in which glia are necessary for Paneth cell secretion of proteins that modulate the composition of the gut microbiome, but unlike in the skin, are not required for maintaining epithelial innervation (Figure 5H).
 
-## Disruption of mucosal glia provokes muted and region-specific transcriptional changes in the intestine
+### Disruption of mucosal glia provokes muted and region-specific transcriptional changes in the intestine
 
 Comparing expression of the four molecular markers used most commonly to label enteric glia, we found that SOX10 and PLP1 were the most cell-type-specific for glia in the mucosa, with little to no non-glial expression in healthy or inflamed states in both mouse and human tissues. In contrast, S100B was detectable in a subset of immune cells, while GFAP was variably expressed in the mouse mucosa and largely undetectable in human mucosal glia at the transcript and protein levels. Having identified PLP1 as the molecular marker most widely expressed by enteric glia adjacent to the epithelial layer, we utilized its promoter to probe their functional significance in adult mice using an unbiased approach. Transcriptional profiling of three different intestinal regions, quantification of cell type composition, and assessment of the histological and ultrastructural presentation of various epithelial subtypes all indicated that genetic depletion of enteric glia does not result in broad changes to the intestinal epithelium.
 
@@ -98,7 +150,7 @@ The GI tract exhibits functional, cellular, and molecular specializations along 
 
 A limitation of our study and all the others to date is the lack of enteric glial-specific molecular markers and genetic promoters. All available tools to label and manipulate enteric glia also target glia in the rest of the nervous system, making it challenging to isolate their functional significance in vivo and shortening experimental timeframes. Future studies utilizing viral or intersectional genetic approaches to target enteric glia more selectively may enable a better understanding of the consequences of long-term glial disruption.
 
-## Enteric glia as putative regulators of Paneth cells
+### Enteric glia as putative regulators of Paneth cells
 
 Genetic depletion of enteric glia in adult mice provoked selective transcriptional, morphological, and ultrastructural disruption of Paneth cells, a highly secretory cell type in the small intestinal epithelium that is important for regulation of microbial ecology and innate host defense. Although the close physical association between enteric glia and small intestinal crypts in which Paneth cells reside is well known (Neunlist et al., 2007; Bush et al., 1998; Van Landeghem et al., 2011), to our knowledge this is the first study linking enteric glia and Paneth cell biology. Loss of PLP1+ enteric glia did not affect Paneth cell number but caused many of them to lose their typical morphologies and altered the appearance of their secretory granules. These morphological changes were associated with reduced luminal secretion of lysozyme, one of the most abundant AMPs produced by Paneth cells.
 
@@ -114,11 +166,434 @@ Overall, our results uncover a functional interaction between enteric glia and P
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus Muscularis)</td>
+      <td>Plp1-eGFP, FVB/NJ, male and female</td>
+      <td>JAX</td>
+      <td>Cat: 033357RRID:IMSR_JAX:033357</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. Muscularis)</td>
+      <td>PLP1CreER, FVB/NJ, male and female</td>
+      <td>JAX</td>
+      <td>Cat: 005975RRID:IMSR_JAX:005975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. Muscularis)</td>
+      <td>Rosa26DTA/DTA, C57/BL6, male and female</td>
+      <td>JAX</td>
+      <td>Cat: 009669RRID:IMSR_JAX:009669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. Muscularis)</td>
+      <td>ChAT-eGFP, C57/BL6, male and female</td>
+      <td>JAX</td>
+      <td>Cat: 007902RRID:IMSR_JAX:007902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat: 28908</td>
+      <td>Used at 4% diluted in 1 x phosphate buffered saline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>UEA-I</td>
+      <td>Vector Labs</td>
+      <td>Cat: DL-1067–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>Cat: H-1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VECTASTAIN Elite ABC-HRP Kit PK</td>
+      <td>Vector Labs</td>
+      <td>Cat: PK-6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPACT DAB Substrate Kit, Peroxidase</td>
+      <td>Vector Labs</td>
+      <td>Cat: SK-4105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti CHGA</td>
+      <td>Abcam</td>
+      <td>Cat: ab-15160RRID:AB_301704</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti b-Catenin</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat: AF1329-SPRRID:AB_354736</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti DEFA5</td>
+      <td>Gift from Andre Ouellette</td>
+      <td>N/A</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti E-cadherin</td>
+      <td>Life Tech</td>
+      <td>Cat: 13–1900RRID:AB_2533005</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti GFAP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: G9269RRID:AB_477035</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti LYZ1</td>
+      <td>DAKO</td>
+      <td>Cat: A0099RRID:AB_2341230</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti MUC2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat: sc-15334RRID:AB_2146667</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti PLP1/DM20</td>
+      <td>Gift from Wendy Macklin</td>
+      <td>N/A</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti S100β</td>
+      <td>DAKO</td>
+      <td>Cat: Z0311RRID:AB_10013383</td>
+      <td>undiluted or 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti TUBB3</td>
+      <td>Biolegend</td>
+      <td>Cat: 801201RRID:AB_2313773</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti VACHT</td>
+      <td>Synaptic systems</td>
+      <td>Cat: 139 103RRID:AB_887864</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal CD16/32 (FcR-blocking)</td>
+      <td>Biolegend</td>
+      <td>Cat: 101301, clone 93RRID:AB_312800</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal NKM 16-2-4</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat: 130-102-150RRID:AB_2660295</td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal CD326 (Ep-CAM)</td>
+      <td>Biolegend</td>
+      <td>Cat: 118213, clone G8.8RRID:AB_1134105</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Thermofisher</td>
+      <td>Cat: 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Kit</td>
+      <td>Qiagen</td>
+      <td>Cat: 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Vector Laboratories</td>
+      <td>Cat: H-1200–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R studio</td>
+      <td>R studio</td>
+      <td>RRID:SCR_000432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deseq2</td>
+      <td>Deseq2</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiVenn 2.0</td>
+      <td>DiVenn 2.0, Sun et al., 2019</td>
+      <td>PMID:31130993</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>STAR</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>featurecounts</td>
+      <td>featurecounts</td>
+      <td>RRID:SCR_012919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GSEApy</td>
+      <td>GSEApy</td>
+      <td>RRID:SCR_025803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>BioRad</td>
+      <td>Cat: 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Select Master Mix</td>
+      <td>Thermofisher</td>
+      <td>Cat: 4472908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Epcam_F</td>
+      <td>PMID:25479966</td>
+      <td></td>
+      <td>PCR primer; TCGCAGGTCTTCATCTTCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Epcam_R</td>
+      <td>PMID:25479966</td>
+      <td></td>
+      <td>PCR primer; GGCTGAGATAAAGGAGATGGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lyz1_F</td>
+      <td>PMID:28336548</td>
+      <td></td>
+      <td>PCR primer; ATGGCTACCGTGGTGTCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lyz1_R</td>
+      <td>PMID:28336548</td>
+      <td></td>
+      <td>PCR primer; CGGTCTCCACGGTTGTAGTT</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImageJ</td>
+      <td>FIJI</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RNAscope V2 Assay</td>
+      <td>ACDBio</td>
+      <td>Cat: 323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Lgr5-C1</td>
+      <td>ACDBio</td>
+      <td>Cat: 312171</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Opal dye 570</td>
+      <td>Akoya Sciences</td>
+      <td>Cat: FP1488001KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ribonucleoside vanadyl complexes (RVC)</td>
+      <td>New England BioLabs</td>
+      <td>Cat: S1402S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>glutaraldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat: 111-30-8</td>
+      <td>Used at 2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>formaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat: 15700</td>
+      <td>Used at 2.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cacodylate buffer</td>
+      <td>Millipore Sigma</td>
+      <td>Cat: 97068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>uranyl acetate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat: 541-09-3</td>
+      <td>Used at 2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>lead citrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: 6107-83-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Li2CO3</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: 255823</td>
+      <td>Used at 135 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphenylterazine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat: D5130</td>
+      <td>Used at 100 mg/kg</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbachol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: L06674.03</td>
+      <td>Used at 10 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lysozyme Activity Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat: ab211113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ZymoBIOMICS – 96 DNA Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat: D4309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA Clean and Concentrator TM – 5 Kit</td>
+      <td>Zymo Research</td>
+      <td>Cat: D4014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Library Quant Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat: E7630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EUB338</td>
+      <td>Millipore Sigma 16 s bacterial RNA probe</td>
+      <td></td>
+      <td>GCTGCCTCCCGTAGGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nonsense control</td>
+      <td>Millipore Sigma 16 s bacterial RNA control probe</td>
+      <td></td>
+      <td>CGACGGAGGGCATCCTCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice were group-housed in a specific pathogen-free facility with a 12 hr dark cycle and handled per protocols approved by the Institutional Animal Care and Use Committees of Boston Children’s Hospital, adherent to the NIH Guide for the Care and Use of Laboratory Animals. Drinking water and laboratory chow were provided ad libitum. Male and female littermate mice were used for most experiments except where noted (males indicated as triangles and females as circles unless stated otherwise). PLP1CreER mice (JAX 005975) and Plp1-eGFP mice (JAX 033357) were maintained on the FVB/NJ background while Rosa26DTA/DTA mice (JAX 009669) and ChAT-eGFP mice (JAX 007902) were maintained on C57BL/6 background. For generation of all experimental cohorts of glial-depleted mice, PLP1CreER hemizygous mice were bred with Rosa26DTA/DTA mice to generate PLP1CreER Rosa26DTA/+ mice and Rosa26DTA/+ littermate controls. These mice were administered 8 mg of tamoxifen in corn oil once by orogastric gavage at 5–6 weeks of age, as previously described (Rao et al., 2017). All analysis was carried out 11 days after tamoxifen administration (11dpt) unless indicated otherwise.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For frozen sections, tissues were first fixed in 4% paraformaldehyde (PFA)/phosphate buffered saline (PBS) for 1.5 hours (hr), equilibrated in 30% sucrose/PBS and embedded, as previously described (Rao et al., 2017). For IHC, 10–14 µm sections of intestine were incubated in blocking solution (0.1% Triton  + 5% heat-inactivated goat [HINGS] or donkey serum in PBS), incubated overnight at 4 °C in primary antibody/blocking solution, washed, and incubated for 1.5 hr at room temperature (RT) in secondary antibody or UEA-I (Vector Labs, #DL-1067–1)+DAPI. The slides were mounted in Vectashield (Vector Labs, #H-1200).
 
@@ -126,46 +601,213 @@ For IHC of small intestinal whole mounts, 2–3 cm segments of small and large i
 
 For DAB immunochemistry, de-identified archived formalin-fixed paraffin-embedded female adult human small intestine tissue samples were used under the approved Beth Israel Deaconess Medical Center IRB protocol 2020P001104. The samples were sectioned and subjected to dewaxing with incubation at 58 °C for 15–20 min followed by washes in 100% xylene (2x5 min). The slides were rehydrated in 100% ethanol bath (3x5 min) followed by 70% ethanol incubation for 10 min. Following a wash with PBS, the slides were subjected to antigen retrieval by incubation in boiling citrate buffer solution for 20 min. Subsequently, a blocking solution was applied (2.5% HINGS +2.5% BSA in 0.1% PBS-TritonX100) for 2 hr at RT. For PLP1 and GFAP staining, prior to staining, the sections were incubated with hydrogen peroxide blocking solution (Abcam, #ab64218) for 10 min at RT. Primary antibodies in the blocking solution were applied for overnight incubation at 4 °C. VECTASTAIN Elite ABC-HRP Kit PK-(Vector Labs, #PK-6100) and ImmPACT DAB Substrate Kit, Peroxidase (Vector Labs, #SK-4105) were used according to the manufacturer’s instructions. Briefly, the slides were washed, incubated with biotinylated goat anti-rabbit IgG secondary antibody (1:500 in the blocking solution) for 2 hr at RT, washed, and subjected to VECTASTAIN ABC solution (prepared 30 min in advance) for 45 min at RT. Subsequently, they were washed and incubated with the DAB solution (1:30 dilution of DAB reagent in ImmPACT DAB diluent) until a visible change to brown color was observed (20 s-2min). The slides were washed and mounted in glycerol for subsequent imaging.
 
-## RNA sequencing
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Supplier</th>
+      <th>Catalog number</th>
+      <th>RRID</th>
+      <th>Dilution</th>
+      <th>Fluorophore</th>
+      <th>Application</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CHGA</td>
+      <td>Abcam</td>
+      <td>ab-15160</td>
+      <td>RRID:AB_301704</td>
+      <td>1:1000</td>
+      <td rowspan="11">N/A</td>
+      <td rowspan="11">IHC</td>
+    </tr>
+    <tr>
+      <td>b-Catenin</td>
+      <td>R&amp;D Systems</td>
+      <td>AF1329-SP</td>
+      <td>RRID:AB_354736</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>DEFA5</td>
+      <td>Gift from A. Ouellette</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>E-cadherin</td>
+      <td>Life Tech</td>
+      <td>13–1900</td>
+      <td>RRID:AB_2533005</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>GFAP</td>
+      <td>Sigma-Aldrich</td>
+      <td>G9269</td>
+      <td>RRID:AB_477035</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>LYZ1</td>
+      <td>DAKO</td>
+      <td>A0099</td>
+      <td>RRID:AB_2341230</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>MUC2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-15334</td>
+      <td>RRID:AB_2146667</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>PLP1/DM20</td>
+      <td>Gift from Wendy Macklin, Ph.D.</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>S100β</td>
+      <td>DAKO</td>
+      <td>Z0311</td>
+      <td>RRID:AB_10013383</td>
+      <td>undiluted or 1:500</td>
+    </tr>
+    <tr>
+      <td>TUBB3</td>
+      <td>Biolegend</td>
+      <td>801201</td>
+      <td>RRID:AB_2313773</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>VACHT</td>
+      <td>Synaptic systems</td>
+      <td>139 103</td>
+      <td>RRID:AB_887864</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>CD16/32 (FcR-blocking)</td>
+      <td>Biolegend</td>
+      <td>101301, clone 93</td>
+      <td>RRID:AB_312800</td>
+      <td>1:50</td>
+      <td>N/A</td>
+      <td rowspan="3">Flow cytometry</td>
+    </tr>
+    <tr>
+      <td>NKM 16-2-4</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-102-150</td>
+      <td>RRID:AB_2660295</td>
+      <td>1:10</td>
+      <td>PE</td>
+    </tr>
+    <tr>
+      <td>CD326 (Ep-CAM)</td>
+      <td>Biolegend</td>
+      <td>118213, clone G8.8</td>
+      <td>RRID:AB_1134105</td>
+      <td>1:50</td>
+      <td>APC</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA sequencing
 
 All samples were collected between 9AM and 12PM. Mice were euthanized, and the GI tract was dissected into sterile, ice-cold PBS. The luminal content was flushed out of the tissue, fat and mesentery were trimmed, and then 1 cm fragments of duodenum, proximal ileum, and proximal colon were cut, immersed in TRIzol reagent (Thermofisher #15596026), homogenized, frozen on dry ice, and stored at –80 °C until RNA extraction. For the mechanical separation of ileal epithelium, 6 cm of the most distal small intestine (ileum) was used. The tissue was cut longitudinally and cleaned in ice-cold 1xPBS such that any remaining fecal/luminal content was removed. The opened ileal tissue was placed in 10 ml of 5 mM EDTA in sterile PBS, gently mixed, and incubated on ice in a horizontal position for 10 min while ensuring its complete submersion in the EDTA solution. Halfway through, the tube was gently tilted twice to mix. Subsequently, the EDTA solution was decanted, and the tissue was washed with 10 ml of sterile HBSS twice. To mechanically separate the epithelial fraction, the tissues were extended epithelium-side-up on a glass slide and the epithelial layers (villi first, followed by crypts) were separated using a bent 20 G needle. The epithelial content was immediately transferred to the TRIzol reagent, homogenized, frozen on dry ice, and stored at –80 °C until RNA extraction. RNA was extracted using phenol/chloroform extraction methods followed by a cleanup with the RNeasy Kit (QIAGEN #74004). RNA samples were analyzed for purity and concentration and submitted to Novogene Corporation Inc (Sacramento, CA, United States) for quality control, library construction, and sequencing. Sequencing was performed on Novaseq 6000 platform (20 M/PE150).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 We used trimmomatic (Bolger et al., 2014) to trim the low-quality next generation sequencing (NGS) reads (-threads 20 ILLUMINACLIP:TruSeq3-PE.fa:2:30:10 LEADING:3 TRAILING:3 SLIDINGWINDOW: 4:15 MINLEN:36). Subsequently, only the high-quality trimmed reads were aligned to the mouse reference genome using STAR (Dobin et al., 2013). The reads counts were calculated by featureCounts software (Liao et al., 2014). Differentially expressed genes (DEGs) were identified by using the DESeq2 R package (adjusted p-value ≤ 0.05; Love et al., 2014). For analysis of shared gene expression, DiVenn analysis was carried out as previously described (Sun et al., 2019). GSEA analysis was performed using GSEApy (Fang et al., 2023).
 
-## Quantitative PCR
+### Quantitative PCR
 
 For validation of RNAseq results, two separate cohorts of mice were used. The tissues were dissected and processed as described above. RNA was extracted using phenol/chloroform extraction methods followed by a cleanup with the RNeasy Kit (QIAGEN #74004). The RNA was converted to cDNA using iScript cDNA Synthesis Kit (Bio-Rad #1708890) and the qPCR was run with SYBR Select Master Mix (Thermo Fisher # 4472908). The following primers were used.
 
-## Imaging and cell quantification
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+      <th>Annealing temp.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Epcam</td>
+      <td>TCGCAGGTCTTCATCTTCCC</td>
+      <td>GGCTGAGATAAAGGAGATGGGT</td>
+      <td>60 °C</td>
+    </tr>
+    <tr>
+      <td>Lyz1</td>
+      <td>ATGGCTACCGTGGTGTCAAG</td>
+      <td>CGGTCTCCACGGTTGTAGTT</td>
+      <td>58 °C</td>
+    </tr>
+  </tbody>
+</table>
+
+### Imaging and cell quantification
 
 Image acquisition was carried out by investigators blinded to genotype. Animals of both sexes were analyzed. Data was analyzed using Microsoft Excel and the GraphPad Prism program (GraphPad Software, Inc). For quantification of Alcian Blue+ goblet cells, images were obtained from Cre+ (n=8) and Cre- (n=10) animals. The number of Alcian Blue+ cells per villus-crypt unit was counted and averaged per mouse. For LYZ1+ Paneth cells, images of at least 50 crypts in the ileum were obtained for each Cre+ (n=4) and Cre- (n=5) animals. The number of LYZ1+ cells per crypt was counted and averaged per mouse. For Chromogranin A+ EECs, images of at least 42 villi and 100 crypts in the ileum were obtained, for each Cre+ (n=3 per group) and Cre- (n=4 per group) animal. The number of CHGA+ cells per villus-crypt unit was counted and averaged per mouse. For Lgr5+ cells, 6–9 z-stack images (20X) were obtained for each Cre+ (n=4) and Cre- (n=4) animal. For quantification of mean fluorescence intensity (MFI), z-stacks were subjected to maximum intensity projection, and ROI’s were drawn from the villus base to crypt base that defined crypt regions. MFI of the ROI was calculated and averaged per mouse. For quantification of crypt innervation, 15 random z-stack images of individual crypts were obtained for each Cre+ (n=4) and Cre- (n=4) animal. Z-stack images were subjected to maximum intensity projection, binarization, thresholding, and smoothening. Subsequently, the signal was converted to masks, and the percentage area of TUBB3 signal coverage of the image field was calculated and averaged per mouse. A Zeiss LSM 880 confocal microscope was used to acquire images for all fluorescent IHC except for CHGA+ EECs, for which a Leica DM6000B epifluorescent microscope was used.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry of M cells from Peyer’s Patches (PPs) was adapted from Gicheva et al., 2016 Briefly, the entire length of jejunum and ileum were dissected from Cre- and Cre+ mice. Then, 6 Peyer’s patches were harvested per mouse, placed in 1.5 mL microcentrifuge tubes with ice-cold 1xPBS, and vortexed vigorously to remove debris. After three PBS washes, the PPs were placed in 10 ml of PBS with 5 mM EDTA and 1 mM DTT for 30 min at 37 °C. The samples were additionally triturated to aid the dissociation. Following digestion, the cell suspension was filtered through a 40 µm strainer, centrifuged at 475 × g for 5 min, and incubated with FcR-blocking antibody on ice for 10 min. The cells were then stained to label M-cells (NKM 16-2-4) and epithelial cells (EpCAM) in FACS buffer (2% FBS +1 mM EDTA) for 30 min at 4 °C. Subsequently, the cells were washed in FACS buffer and stained with DAPI (0.3 µg/mL). The proportion of PE+ APC+ DAPI- cells out of APC+ DAPI- cells was determined on BD LSRFortessa.
 
-## RNAscope
+### RNAscope
 
 Intestinal tissue was dissected into ice-cold 1 x PBS + 4 mM ribonucleoside vanadyl complexes (RVC) to inhibit RNAse activity and flushed to remove fecal content. Segments of ~2 cm were fixed in RNAse-free 4%PFA/PBS for 24 hr and incubated overnight in 30% sucrose. The tissue was embedded in pre-chilled OCT and frozen on dry ice. The tissues were stored at –80 °C. For staining, 8 µm slices were sectioned and air dried at –20 °C. RNAscope V2 (ACDBio #323100) was used for in situ hybridization. Briefly, the slides were washed in 1xPBS, incubated for 30 min at 60 °C, and post-fixed with pre-chilled 4%PFA for 15 min at 4 °C. Subsequently, the slides were dehydrated in increasing concentrations of RNase-free EtOH (50%, 70%, and twice 100% for 5 min each), treated with hydrogen peroxide (RNAscope Hydrogen Peroxide Reagent) for 10 min at RT, and washed in DEPC-treated water. For antigen retrieval, the slides were immersed in boiling hot RNAscope Target Retrieval Reagent, and incubated at 99 °C for 5 min. Following a wash in RT DEPC-treated water, they were incubated in 100% EtOH for 3 min, dried at RT, and subjected to protease treatment (RNAscope Protease III Reagent) for 30 min at 40 °C. After two washes with 1 x PBS, probe hybridization and signal amplification were carried out according to RNAscope Multiplex Fluorescent V2 Assay using Lgr5-C1 probe and Opal dye 570 (Akoya Sciences). Slides were mounted with Vectashield and DAPI.
 
-## Electron microscopy
+### Electron microscopy
 
 Tissues were excised, washed in PBS, cut along the mesenteric plane, pinned flat, and then fixed in 2% glutaraldehyde (Electron Microscopy Sciences, Hatfield PA) and 2.5% formaldehyde (Electron Microscopy Sciences) in 0.1 M cacodylate buffer pH 7.4 containing 0.1 mM EGTA for 10 min at RT with gentle flushing. The tissue was then cut into small pieces, and fixed for an additional 1 hr in the same fixative at RT. Tissues were washed with 0.1 M cacodylate buffer, and then loaded into a planchette (Technotrade International, Manchester, NH) with PBS containing 20% BSA and 5% FBS, and subjected to high-pressure freezing using a Wohlwend High Pressure Freezer (Technotrade International). Rapid freeze substitution, as described (McDonald, 2014), was done using 1% osmium tetroxide, 0.5% uranyl acetate, 95% acetone and 5% dH2O. After freeze substitution, the tissue was infiltrated with graded acetone into LX112 resin (Ted Pella, Inc Redding, CA). Ultrathin sections were cut with a Leica Ultracut E ultramicrotome (Leica Microsystems, Wetzlar Germany), placed on formvar and carbon coated grids, and then stained with 2% uranyl acetate (Electron Microscopy Sciences) and lead citrate (Sigma-Aldrich). Grids from each treatment were imaged using a JEOL 1400 electron microscope (JEOL USA, Peabody, MA) equipped with an Orius SC1000 digital CCD camera (Gatan, Pleasanton, CA).
 
-## Paneth cell secretion assay
+### Paneth cell secretion assay
 
 All Paneth cell secretion assays were carried out from 9AM to 12PM with four mice per assay except for when DTZ was administered. For DTZ experiments, the mice were administered vehicle (135 mM Li2CO3 solution; Sigma, #255823) or 100 mg/kg DTZ (Sigma, # D5130) diluted in vehicle six hours before the start of the explant experiment. Mice were euthanized and 10 cm of distal small intestine was dissected into sterile, ice-cold PBS. The luminal content was flushed out of the tissue, and fat and mesentery were trimmed. A 6.5–7 cm fragment of the most distal small intestine was isolated and the remaining PBS was removed from the tissue. One end of the tissue was firmly tied and 150 µl of sterile, ice-cold PBS was pipetted into the intestinal tube. The open end of the intestine was firmly tied to create a closed cylinder filled with PBS. The length of the tissue, from one tied end to the other, was measured. The process was repeated for all samples which were kept in sterile, ice-cold PBS. The explants were subsequently placed in oxygenated Krebs at 37 °C and incubated continuously bubbled with Carbogen for the duration of the experiment (30 min). For experiments involving carbachol, the compound was added at a concentration of 10 µM at the beginning of incubation. Following incubation, one at a time, the tissues were opened, and the luminal contents were extracted. The volume of recovered solution was measured and diluted in sterile PBS as necessary to get to a final volume of 25 µL/cm of intestine. The samples were sterile-filtered with pre-wetted 0.22 µm syringe filters. Lysozyme activity was measured using the Lysozyme Activity Assay Kit (Abcam #ab211113) according to the manufacturer’s instructions.
 
-## 16S ribosomal DNA (rDNA) gene phylotyping
+### 16S ribosomal DNA (rDNA) gene phylotyping
 
 Male and female PLP1CreER Rosa26DTA/+ and Rosa26DTA/+ littermate mice were group-housed segregated by sex and genotype from the time of weaning. Two to four spontaneously expelled fecal pellets were collected from each mouse at 9-10AM at two timepoints: 0dpt (prior to tamoxifen administration) and 11dpt. Fecal samples were immediately frozen and stored at –80 °C. Genomic DNA for 16 S rDNA amplicon next generational sequencing was isolated using the ZymoBIOMICS – 96 DNA Kit (Zymo Research, D4309). The 16S amplicon library was prepared in a 96-well format using dual-index barcodes (Rao et al., 2021). Libraries were cleaned with the DNA Clean and Concentrator TM – 5 Kit (Zymo Research, D4014) and then quantified by qPCR (NEBNext Library Quant Kit, NEB, E7630). 20 pM of DNA were loaded onto an Illumina MiSeq (v3, 600 cycle) and sequenced. To generate the Operational Taxonomic Unit (OTU) table for analyses of gut microbiome composition and diversity, Illumina raw reads were de-multiplexed, paired end joined, adapter trimmed, quality filtered, dereplicated, and denoised. Sequences were mapped against the publicly available 16 S rDNA databases SILVA and UNITE and clustered into OTUs ≥ 97% nucleotide sequence identity. OTU-based microbial community diversity was estimated by calculating Shannon’s alpha diversity index and Bray-Curtis beta diversity index. Differential abundance analyses were performed with LEfSe with significantly different features having an alpha value less than or equal to 0.1 and a logarithmic LDA score greater than or equal to 1. Stratifying the data by sex within-sample revealed no major sex-specific differences in microbiome diversity or enriched/depleted biomarkers in the core genotype-dependent observations.
 
-## 16S bacterial rRNA FISH
+### 16S bacterial rRNA FISH
 
 16 S rRNA FISH was carried out as described previously with some modifications (McGuckin and Thornton, 2012). Briefly, distal small intestine was dissected from Cre- and Cre+ mice directly into methanol-Carnoy’s fixative [60% (v/v) dry methanol, 30% (v/v) chloroform, 10% (v/v) glacial acetic acid]. Care was taken to limit exposure to aqueous solutions. The samples were kept in the fixative solution for 72 hr followed by washes with 100% methanol (2x30 min), 100% ethanol (3x30 minutes), xylene (2x20–30 min), paraffin (2x20–30 min). The samples were embedded in paraffin, sectioned, and stained as previously described (Johansson and Hansson, 2012). Briefly, the sections were dewaxed by incubating at 60 °C for 10 min, followed by two xylene baths (1x10 min at 60 °C, 1x10 min at RT). The sections were incubated in 99.5% ethanol for 5 min, air dried, and stained with EUB338 or a control probe in a hybridization solution at 50 °C overnight. Subsequently, the sections were washed and subjected to immunohistochemistry protocol as described below.
 
-## Experimental design and statistical analysis
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fluorophore</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EUB338</td>
+      <td>Cy3</td>
+      <td>GCTGCCTCCCGTAGGAGT</td>
+    </tr>
+    <tr>
+      <td>Nonsense control</td>
+      <td>Cy3</td>
+      <td>CGACGGAGGGCATCCTCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design and statistical analysis
 
 Both R 4.2.0 and Prism were used for statistical analyses and graphical visualization. All experiments were performed blinded to experimental conditions during data collection and analysis. Data points represent biological replicates, with each replicate obtained from a different animal. Unless stated otherwise, data were collected from a single experiment. Sample sizes were determined based on previous studies from our group or established based on preliminary observations. For pairwise comparisons, an unpaired parametric t-test or Mann-Whitney U test was used after testing for equal variance between the groups unless stated otherwise. If variance was significantly different, unpaired parametric t-test with Welsh Correction was applied. For comparisons between more than two groups, one-way ANOVA with Tukey multiple comparisons test was used.

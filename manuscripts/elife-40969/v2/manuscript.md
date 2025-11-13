@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.40969.001 The eukaryotic epigenetic machinery can be modified by bacteria to reprogram the response of eukaryotes during their interaction with microorganisms. We discovered that the bacterium Streptomyces rapamycinicus triggered increased chromatin acetylation and thus activation of the silent secondary metabolism ors gene cluster in the fungus Aspergillus nidulans . Using this model, we aim understanding mechanisms of microbial communication based on bacteria-triggered chromatin modification. Using genome-wide ChIP-seq analysis of acetylated histone H3, we uncovered the unique chromatin landscape in A. nidulans upon co-cultivation with S. rapamycinicus and relate changes in the acetylation to that in the fungal transcriptome. Differentially acetylated histones were detected in genes involved in secondary metabolism, in amino acid and nitrogen metabolism, in signaling, and encoding transcription factors. Further molecular analyses identified the Myb-like transcription factor BasR as the regulatory node for transduction of the bacterial signal in the fungus and show its function is conserved in other Aspergillus species.
+The eukaryotic epigenetic machinery can be modified by bacteria to reprogram the response of eukaryotes during their interaction with microorganisms. We discovered that the bacterium Streptomyces rapamycinicus triggered increased chromatin acetylation and thus activation of the silent secondary metabolism ors gene cluster in the fungus Aspergillus nidulans. Using this model, we aim understanding mechanisms of microbial communication based on bacteria-triggered chromatin modification. Using genome-wide ChIP-seq analysis of acetylated histone H3, we uncovered the unique chromatin landscape in A. nidulans upon co-cultivation with S. rapamycinicus and relate changes in the acetylation to that in the fungal transcriptome. Differentially acetylated histones were detected in genes involved in secondary metabolism, in amino acid and nitrogen metabolism, in signaling, and encoding transcription factors. Further molecular analyses identified the Myb-like transcription factor BasR as the regulatory node for transduction of the bacterial signal in the fungus and show its function is conserved in other Aspergillus species.
 
 ## Introduction
 
@@ -50,7 +50,7 @@ Using this model, we aim to gain an understanding of the molecular mechanisms o
 
 ## Results
 
-## Genome-wide profiles of H3K9 and H3K14 acetylation in A. nidulans change upon co-cultivation with S. rapamycinicus
+### Genome-wide profiles of H3K9 and H3K14 acetylation in A. nidulans change upon co-cultivation with S. rapamycinicus
 
 A. nidulans with and without S. rapamycinicus was analyzed by genome-wide ChIP-seq for enrichment of acetylated (ac) histone H3 at lysines K9 and K14 (Figure 1; Appendix 1 – Details of ChIP analysis). To account for reads originating from S. rapamycinicus we fused the genomes of A. nidulans (eight chromosomes) and S. rapamycinicus. The resulting fused genome also served as reference for mapping of chromatin marks (see Appendix 1 – Details of the ChIP analysis).
 
@@ -60,27 +60,71 @@ A. nidulans with and without S. rapamycinicus was analyzed by genome-wide ChIP-s
 
 H3K14ac and H3K9ac showed a higher degree of variability across the genome than on H3, implying that the regulatory dynamics of histone acetylation are more specific than those that would be achieved by H3 localization alone. Some areas, such as a region in the first half of chromosome four, were particularly enriched in these acetylation marks, potentially indicating distinctive acetylation islands, which are short loci with continuous enrichment of histone modifications. Such islands have been identified previously in the intergenic and transcribed regions of the human genome, and some of these have been shown to colocalize with known regulatory elements (Roh et al., 2005). An island that is particularly enriched for H3K9ac was found around the ors gene cluster (Figure 1c and 2), thus supporting our previous data (Nützmann et al., 2011). The coverage profiles of H3, H3K14ac and H3K9ac consistently change in co-culture compared to monoculture, as seen in Figure 1. In particular, the promoter region of the genes orsD and orsA showed reduced nucleosome occupancy (see Figure 1c). This could be due to a redistribution of nucleosomes that ultimately changes the distribution of histone marks. Such nucleosome rearrangements might represent the prevailing driver of H3K14ac change which is associated with a reduction in overall acetylation level. This might explain the local H3K14ac decrease at the translation start sites (TSSs) shown in Figures 1 and 2. In comparison to the changes to H3K14ac, the changes to H3K9 acetylation levels are stronger, leading to an increase in H3K9 acetylation despite nucleosome rearrangements. This finding is supported by the observation that unmodified H3 was depleted throughout the ors cluster, especially at the orsA and orsD TSSs.
 
-## Co-cultivation of A. nidulans with S. rapamycinicus had a major impact on SM gene clusters, nitrogen assimilation, signaling and mitochondrial activity
+![Figure 2.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig2-v2.jpg)
+
+**Figure 2.:** Data were generated for the area 500 bp down- and 1000 bp upstream of the TSSs. Depicted bars are calculated from three data points.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Here, genes involved in calcium signaling are shown for H3, H3K14ac and H3K9ac libraries. Counts were obtained by counting reads mapping to the promoter area for each gene, within regions stretching from 500 bp down- to 1000 bp upstream of each gene's transcription start site (TSS). Depicted bars are calculated from three data points.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The blue lines resemble the linear regression line based on the differentially expressed genes with an adjusted p-value of <0.1; the confidence interval shown in gray. (a) Log-fold changes (LFCs) for H3K14ac plotted against LFCs for H3K9ac. Dots depicted in dark gray and green mark differentially expressed genes and ors cluster genes, respectively. (b) Pairwise comparison of LFCs of H3, H3K14ac and H3K9ac data with microarray data obtained during co-cultivation of A. nidulans with S. rapamycinicus.
+
+### Co-cultivation of A. nidulans with S. rapamycinicus had a major impact on SM gene clusters, nitrogen assimilation, signaling and mitochondrial activity
 
 We employed two strategies to measure changes in histone modification levels. The first analysis was based on the finding that histone acetylation can mostly be found on histones within a gene, in particular on nucleosomes +1 and +2 (Jiang and Pugh, 2009) (Appendix 1—figure 1). Therefore, for each library, we counted mapped reads that overlapped genes. This formed the basis for a quantitative comparison between monocultures and co-cultures using standard read-counting methods for sequencing data (see 'Materials and methods'). Throughout this study, we refer to this method as differential chromatin state (DCS) analysis. The second analysis was based on a first round of peak-calling and subsequent quantification of the peaks. Comparison of the generated data sets showed 84 ± 1.7% similarity. The data obtained from the gene-based DCS method (Supplementary file 1) were used for both further analyses and comparisons of the culture conditions using a false discovery rate (FDR) cut-off of 0.01. This does not include further filtering on the log-fold changes (LFCs) to capture the possible biological relevance of the detected changes. Quality and the absence of possible biases introduced by the co-culture or other sources were further investigated by MA plots. They showed a symmetrical and even distribution around LFC = 0, meeting the requirements for the statistical tests described in the 'Materials and methods' (Appendix 1—figure 2). DCS analysis of H3, as a proxy for nucleosome occupancy, was found to be lower (FDR < 0.01) in 37 genes and higher in two genes during co-cultivation. Using the same cut-off, H3K14ac levels during bacterial-fungal co-cultivation were found to be lower for 154 genes and higher for 104 genes. Differential acetylation of chromatin was found for H3K9ac, with 297 genes with significantly lower and 593 with significantly higher acetylation (Supplementary file 1).
 
 The analysis of microarray data obtained under identical conditions showed a positive correlation of higher gene expression with H3K9 acetylation (r = 0.2 for all genes and r = 0.5 for a subset of genes showing differential acetylation; Appendix 1—figures 3 and 4). Data for selected genes are summarized in Supplementary file 2, which shows the LFCs of H3K9ac ChIP-seq data with their corresponding microarray data. In total, higher acetylation during co-cultivation was seen in histones belonging to six SM gene clusters, the ors, aspercryptin (atn), cichorine (cic), sterigmatocystin (stc), anthrone (mdp) and 2,4-dihydroxy-3-methyl-6-(2-oxopropyl)benzaldehyde (dba) gene clusters, with the emericellamide (eas) and microperfuranone clusters being the only ones with reduced acetylation and expression (Supplementary file 2, section V). With a few exceptions, the genes covered by histone H3 that had increased acetylation are involved in calcium signaling and asexual development (Supplementary file 2, sections III and IV; Figure 2—figure supplement 1). A major group of genes with reduced acetylation in mixed cultivation compared to the monoculture of A. nidulans is linked to the fungal nitrogen metabolism (Supplementary file 2, section I) including genes for the utilization of primary and secondary nitrogen sources, such as genes of the nitrate assimilation gene cluster and the glutamine dehydrogenase gene (Figure 3a and – Figure 3—figure supplement 1). These data were confirmed by quantifying the expression of identified genes by qRT-PCR (Figure 3b).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig3-v2.jpg)
+
+**Figure 3.:** (a) Normalized ChIP-seq read counts were used to quantify the chromatin state (H3, H3K14ac, H3K9ac) of nitrogen metabolism genes. Counts were obtained by counting reads mapping to the promoter area of each gene, which is defined as the sequence 500 bp down- and 1000 bp upstream from the TSSs. Depicted bars are calculated from three data points. (b) Transcription analysis of randomly selected genes of primary and secondary nitrogen metabolism by qRT-PCR during co-cultivation. Relative mRNA levels were measured after 3 hr and normalized to the β-actin gene expression. The transcription of orsA was used as a positive control. (c) Respiratory activity comparing A. nidulans grown in co-culture with S. rapamycinicus and A. nidulans in monoculture. Respiratory activity was determined using a resazurin assay. Data were normalized to medium. The black line shows the time points that are significantly different between A. nidulans and A. nidulans grown in co-culture with S. rapamycinicus. ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Functional categorization of differentially higher (a) and lower (b) acetylated genes, possessing a p-value <0.05, with FungiFun2 (Priebe et al., 2015). Overrepresented categories having a p-value <0.01.
+
 Genes assigned to mitochondrial function showed decreased acetylation of H3K9, which implied reduced mitochondrial function. This assumption was confirmed by measuring the respiratory activity of fungal cells. In monoculture, the fungus showed a high metabolic activity, which was significantly reduced during co-cultivation (Figure 3c).
 
-## Bacteria induce elements of the fungal cross-pathway control
+### Bacteria induce elements of the fungal cross-pathway control
 
 To identify transcription factors that are involved in transducing the bacterial signal to the fungal expression machinery, and because a transcription factor gene is missing in the ors gene cluster, we searched the 890 differentially H3K9 acetylated genes for those annotated as putatively involved in transcriptional regulation. In total, 22 putative transcription factor-encoding genes fulfilled this requirement (Supplementary file 2, section VII). Most of them (18 genes) showed significantly higher acetylation in co-culture, whereas only four genes had lower acetylation. Among the genes with increased acetylation in co-culture were cpcA, coding for the central transcriptional activator of the cross-pathway control CpcA, as well as the bZIP transcription factor gene jlbA (jun-like bZIP). Both of these genes have been shown to be highly expressed during amino-acid starvation in A. nidulans (Hoffmann et al., 2001; Strittmatter et al., 2001). In addition, a putative ortholog (AN7174) of the S. cerevisiae bas1 gene showed an increase in acetylation. In yeast, Bas1p (together with the homeodomain protein Bas2p) is involved in the regulation of amino-acid biosynthesis (Springer et al., 1996; Valerius et al., 2003). Consistently, a number of genes related to amino-acid metabolism showed increased acetylation of H3K9 during the co-cultivation of A. nidulans with S. rapamycinicus (Supplementary file 2, section II). qRT-PCR analysis was carried out to correlate the ChIP-seq data with the expression levels of cpcA, jlbA and AN7174 , and this demonstrated upregulation of cpcA and AN7174 during co-cultivation (Figure 4a). In S. cerevisiae, it was shown that Gcn4 (CpcA in A. nidulans) and Bas1p share a similar DNA-binding motif and that both activate the transcription of the histidine biosynthesis gene HIS7 independently of each other (Springer et al., 1996). Consistent with a possible involvement of these transcription factors in cross-pathway control (CPC) is the observation that the addition of the histidine analogue 3-aminotriazole (3-AT), which is known to induce the CPC via amino-acid starvation, led to the production of orsellinic acid in the fungal monoculture (Figure 4b) and to an increased expression of orsA, cpcA and AN7174 (Figure 4c).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig4-v2.jpg)
 
-**Figure 4.:** ors gene cluster activation.(a) Transcription of basR, cpcA and jlbA determined by qRT-PCR after 3 hr of co-cultivation. Relative mRNA levels were compared to β-actin gene expression. (b) High-performance liquid chromatography (HPLC)-based detection of orsellinic acid (1) and lecanoric acid (2) in supernatants of A. nidulans cultures treated with 3-AT. (c) Relative transcript levels of orsA, cpcA and basR 6 hr after 3-AT addition to the A. nidulans monoculture and the gcnE deletion mutant. *p<0.05.
+**Figure 4.:** (a) Transcription of basR, cpcA and jlbA determined by qRT-PCR after 3 hr of co-cultivation. Relative mRNA levels were compared to β-actin gene expression. (b) High-performance liquid chromatography (HPLC)-based detection of orsellinic acid (1) and lecanoric acid (2) in supernatants of A. nidulans cultures treated with 3-AT. (c) Relative transcript levels of orsA, cpcA and basR 6 hr after 3-AT addition to the A. nidulans monoculture and the gcnE deletion mutant. *p<0.05.
 
 To analyze a possible involvement of these genes in the bacteria-induced activation of the ors gene cluster, the genes cpcA (data not shown) and AN7174 (Figure 5—figure supplement 1a) were deleted. Deletion of cpcA in A. nidulans showed no effect on the induction of the ors gene cluster in response to S. rapamycinicus (data not shown), whereas deletion of AN7174 resulted in a significantly reduced expression of orsA and orsD, and in complete loss of orsellinic acid production (Figure 5). Therefore, AN7174 was named basR and analyzed in detail.
 
-## The transcription factor BasR is a central regulatory node in bacteria-triggered regulation of the SM gene cluster
+![Figure 5.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig5-v2.jpg)
+
+**Figure 5.:** (a) Relative transcript levels of ors cluster genes orsA, orsD and basR after 6 hr of cultivation in ΔbasR mutant strain and tetOn-basR overexpression strain incubated with and without doxycycline. Transcript levels were measured by qRT-PCR normalized to β-actin transcript levels. (b) HPLC-based detection of orsellinic and lecanoric acid in the wild-type strain, basR deletion mutant and basR overexpression strain. n.d.: not detectable; ***p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Genomic organization of basR and Southern blot analysis of basR deletion. The basR gene was replaced by the argB gene. Transformant strains were checked with a probe (*) directed against the flanking region of the construct. Genomic DNA was digested with ClaI. wt, wild-type strain as a control. (b) Generation of the inducible basR overexpression strain by complementation of the basR-deletion strain. The tetOn-basR gene cassette was integrated at the ΔbasR genomic locus using the pabA1 gene as selectable marker replacing the argB marker. Genomic DNA was cut with BamHI. Transformant strains were checked with a probe (*) directed against the flanking region of the construct.
+
+### The transcription factor BasR is a central regulatory node in bacteria-triggered regulation of the SM gene cluster
 
 Further analysis of the A. nidulans genome revealed a second gene (AN8377) encoding a putative ortholog of the S. cerevisiae bas1 gene (Figure 6 and Figure 6—figure supplement 1). Both genes (basR and AN8377) code for Myb-like transcription factors whose function in filamentous fungi is completely unknown. We compared the H3K9 acetylation and gene expression of both genes upon co-cultivation. The basR gene showed increased H3K9 acetylation (LFC = 0.6) and drastically increased transcription (LFC = 5.85) during co-cultivation compared to AN8377 (H3K9ac LFC = −0.03; microarray LFC = 0.14). Deletion of AN8377 (Figure 6—figure supplement 2a) did not affect the induction of fungal orsellinic acid production upon co-cultivation (Figure 6—figure supplement 2b), excluding a role forAN8377 in this process.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig6-v2.jpg)
+
+**Figure 6.:** (a) Phylogenetic analysis of BasR (AN7174; green) showing its position among other fungi. The percentage of trees in which the associated taxa clustered together is shown next to the branches. The names of the selected sequences are given according to their UniProt accession numbers. A comprehensive phylogenetic tree is depicted in Figure 6—figure supplement 1. (b) Alignment of the orsellinic acid gene clusters in the fungal species containing a basR homologue (A. nidulans, A. sydowii and A. versicolor), where orsA encodes the polyketide synthase, whereas orsB-orsE code for tailoring enzymes. (c) Liquid chromatography–mass spectrometry (LC-MS)-based detection of orsellinic and lecanoric acid in monoculture of the A. sydowii basR overexpression strain following induction with doxycycline and during co-cultivation of A. sydowii and S. rapamycinicus. LC-MS profiles of the extracted ion chromatogram (EIC) are shown for m/z 167 [M – H]–, which corresponds to orsellinate. Orsellinic (1) and lecanoric acid (2) were detected via their fragment ion orsellinate.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The tree reports distances between BasR-similar amino-acid sequences identified by BlastP analysis using the entire sequences. The percentage of trees in which the associated taxa clustered together is shown next to the branches. The BasR proteins from A. nidulans, A. calidoustus, A. sydowii, A. versicolor, A. rambellii and A. ochraceoroseus form a separate clade (highlighted in green text), while the yeast Bas1p-related sequences are more distantly related to BasR (in red). The second similar Myb-like transcription factor from A. nidulans (AN8377) forms a clade with orthologs from A. calidoustus and A. versicolor (in blue), which seems to be more related to Bas1p than to BasR. The names of the selected sequences are given according to their UniProt accession numbers.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Chromosomal organization of the A. nidulans AN8377 gene before and after deletion. The gene AN8377 was replaced by an argB cassette in A. nidulans wildtype strain A1153. Genomic DNA was digested with DraIII. A PCR fragment covering the downstream sequence of AN8377 was used as a probe (*). wt, wildtype strain used as a control. (b) LC-MS-based detection of orsellinic acid (1) and lecanoric acid (2) in the co-cultivation of the AN8377 deletion mutant with S. rapamycinicus.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The tetOn–basR construct was integrated ectopically into the wildtype genome, using the hph cassette as a selectable marker. For Southern blot analysis, transformant strains were checked with a probe (*) directed against a region flanking the tetOn cassette and the basR gene. The genomic DNA was digested with BamHI.
 
 In S. cerevisiae, Bas1p needs the interaction with Bas2p for the transcriptional activation of several genes that are required for histidine and purine biosynthesis (Springer et al., 1996). The C-terminal activation and regulatory (BIRD) domain of Bas1, which was described as mediating this Bas1p–Bas2p interaction (Pinson et al., 2000), is missing in BasR. It is thus not surprising that we did not find an ortholog for the S. cerevisiae bas2 gene in the A. nidulans genome. Although the addition of 3-AT to monocultures of A. nidulans led to the production of orsellinic acid and derivatives thereof, the effect of 3-AT was abolished in the basR deletion mutant strain (Figure 4b).
 
@@ -90,11 +134,11 @@ To further substantiate the influence of basR on the ors gene cluster, we genera
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig7-v2.jpg)
 
-**Figure 7.:** A. nidulans is required for S. rapamycinicus-triggered regulation of SMs.(a) Transcript levels of the ors, dba, cichorine, eas and microperfuranone gene clusters in A. nidulans co-cultivated with S. rapamycinicus and in the basR overexpression mutant treated with doxycycline to induce basR gene expression. Transcripts per million (TPM) values were divided by values for A. nidulans monoculture and the untreated basR-overexpression strain to obtain fold changes. (b) Visualization of ions m/z 646.3 and m/z 662.3 ± 1 Da, potentially corresponding to [M + Na]+ and [M + K]+ of emericellamide E/F (C32H57N5O7; accurate mass 623.4258), by MALDI-MS imaging. Images were corrected by median normalization and weak denoising. n.d.: not detectable.
+**Figure 7.:** (a) Transcript levels of the ors, dba, cichorine, eas and microperfuranone gene clusters in A. nidulans co-cultivated with S. rapamycinicus and in the basR overexpression mutant treated with doxycycline to induce basR gene expression. Transcripts per million (TPM) values were divided by values for A. nidulans monoculture and the untreated basR-overexpression strain to obtain fold changes. (b) Visualization of ions m/z 646.3 and m/z 662.3 ± 1 Da, potentially corresponding to [M + Na]+ and [M + K]+ of emericellamide E/F (C32H57N5O7; accurate mass 623.4258), by MALDI-MS imaging. Images were corrected by median normalization and weak denoising. n.d.: not detectable.
 
 Interestingly the microperfuranone gene cluster, which is acetylated at lower levels and transcribed in response to the bacterium, is transcriptionally upregulated in the basR-overexpression strain, suggesting a transcriptional regulation that is independent of the signal(s) induced by S. rapamycinicus.
 
-## The presence of BasR in fungal species makes it possible to forcast the inducibility of ors-like gene clusters by S. rapamycinicus
+### The presence of BasR in fungal species makes it possible to forcast the inducibility of ors-like gene clusters by S. rapamycinicus
 
 To address the question of whether basR homologs exist in other fungi and whether such potential homologs have similar functions, we analyzed fungal genomes using BlastP. Surprisingly, obvious basR homologs are only present in a few other Aspergillus spp. including Aspergillus sydowii and Aspergillus versicolor, and are apparently lacking in many others (Figure 6 and Figure 6—figure supplement 1). Interestingly, in addition to three additional genes in both fungi, a gene cluster similar to the ors gene cluster of A. nidulans was also identified (Figure 6b). We overexpressed basR in A. sydowii using the tetOn-system to analyze its function (Figure 6—figure supplement 3). LC-MS analyses revealed the appearance of novel masses that were assigned to orsellinic acid derivatives (Figure 6c).
 
@@ -102,7 +146,7 @@ Finally, we addressed the question of whether the presence of the basR gene and
 
 ## Discussion
 
-## S. rapamycinicus induces a unique chromatin landscape in A. nidulans
+### S. rapamycinicus induces a unique chromatin landscape in A. nidulans
 
 We were able to use genome-wide ChIP-seq analysis of acetylated histone H3 (H3K9ac, H3K14ac) and the quantification of H3 to uncover the chromatin landscape in the fungus A. nidulans upon co-cultivation with S. rapamycinicus. In an attempt to characterize the general distribution of nucleosomes and acetylation marks over the genome, we compared the intensity of chromatin states with gene density. A lower gene density was typically found in heterochromatic regions such as the centromeres and telomeres, creating a repressing environment (Allshire and Ekwall, 2015). We found reduced H3 occupancy in heterochromatic regions, indicating either replacement of H3 by the centromere-specific H3 CENP-A or reduced nucleosome occupancy (Smith et al., 2011; Allshire and Ekwall, 2015).
 
@@ -110,21 +154,21 @@ We observed distinct peaks for H3K9ac in A. nidulans grown in co-culture with S.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/40969/elife-40969-fig8-v2.jpg)
 
-**Figure 8.:** S. rapamycinicus – A. nidulans interaction.Co-cultivation leads to activation of the basR gene. The lysine acetyltransferase GcnE specifically acetylates (ac) lysine (K)9 of histone H3 at the ors gene cluster and presumably at the basR gene promoter. As a consequence, basR is expressed. The transcription factor BasR activates (+) and represses (–) the expression of the ors, cic, microperfuranone (mic) and eas gene clusters directly or indirectly. The involvement of AdaB and GcnE of the Saga/Ada complex has been experimentally proven (Nützmann et al., 2011).
+**Figure 8.:** Co-cultivation leads to activation of the basR gene. The lysine acetyltransferase GcnE specifically acetylates (ac) lysine (K)9 of histone H3 at the ors gene cluster and presumably at the basR gene promoter. As a consequence, basR is expressed. The transcription factor BasR activates (+) and represses (–) the expression of the ors, cic, microperfuranone (mic) and eas gene clusters directly or indirectly. The involvement of AdaB and GcnE of the Saga/Ada complex has been experimentally proven (Nützmann et al., 2011).
 
 We also assessed the distribution of H3K9ac and H3K14ac, as well as that of the C-terminus of H3 (H3Cterm), at the TSSs and translation termination sites (TTSs) (Appendix 1 – Chromatin profiles at translation start sites and translation termination sites). For H3K9, an enrichment of acetylation ~500 bp downstream of the TSSs as well as immediately upstream of the TSSs was observed. This was expected as similar results were obtained with an antibody targeting the acetylated N-terminus of histone H3 in A. nidulans (Gacek-Matthews et al., 2016) and in other fungi such as S. cerevisiae and Cryptococcus neoformans (Haynes et al., 2011; Mews et al., 2014). Increased acetylation coincides with reduced levels of H3 around the TSSs, which are most probably due to a depletion of nucleosomes at the promoter. The profile plots for H3K14 acetylation are similar, although not as highly enriched around the TSSs as those for H3K9 (Appendix 1—figure 5 a). As expected, a comparison of LFCs for both modifications showed high similarity, suggesting that the modifcations are established interdependently (Gacek and Strauss, 2012; Waters et al., 2015). At the 3’ end of the ORF, H3 density drastically increased accompanied by reduced levels of H3K9ac and H3K14ac (Appendix 1—figure 5). Likewise, reduced acetylation at the TTSs was observed in A. nidulans (Gacek-Matthews et al., 2016) and S. cerevisiae (Mews et al., 2014). It is interesting to notice that the increase in nucleosome density directly correlated with a decrease in the gene expression rate (Appendix 1—figure 6e). Previous studies suggested a direct correlation between the presence of nucleosomes and the stalling of RNA polymerase II (Grosso et al., 2012).
 
-## Increased gene expression directly correlates with histone H3K9 acetylation
+### Increased gene expression directly correlates with histone H3K9 acetylation
 
 Acetylation is generally regarded as an activating chromatin mark that promotes the transcription of eukaryotic genes (Bannister and Kouzarides, 2011). Our study suggests a more differentiated picture. When we compared data from this study with microarray data (Nützmann et al., 2011) (Appendix 1—figures 3 and 4), the acetylation of H3K9 directly correlated with gene expression levels. A similar finding was reported for other fungi (Wiemann et al., 2013). By contrast, this was not observed for the acetylation of H3K14. This could partly result from the low number of targets for this modification. By contrast, gene promoters showed a distinct increase of H3K14ac at the TSSs in dependence on the average transcription level (Appendix 1—figure 6c). The low correlation between active gene transcription and acetylation at H3K14 confirmed earlier results (Reyes-Dominguez et al., 2008; Nützmann et al., 2011). Previously, we showed that a mimicry of a hypo-acetylated lysine 14 on histone H3 drastically altered the phenotype and the expression of SM gene clusters (Nützmann et al., 2013). This effect was overcome, however, when later time points of cultivation were considered. Taken together, the primary location at the TSSs and the major defect in SM production at earlier stages indicate a role for H3K14ac in transcriptional initiation. Hyper-acetylation at H3K14 could be also relevant for marking active genes and providing a docking site for regulatory proteins.
 
-## S. rapamycinicus silences fungal nitrogen metabolism
+### S. rapamycinicus silences fungal nitrogen metabolism
 
 A substantial number of genes that are involved in primary and secondary nitrogen metabolism were strongly depleted for H3K9ac upon co-cultivation with S. rapamycinicus. This correlated with reduced expression of the respective genes. Thus, upon contact with the bacterium, A. nidulans showed reduced nitrogen uptake and reduced degradation of various nitrogen sources, leading to nitrogen starvation.
 
 Under nitrogen starvation or low availability of primary nitrogen sources, such as glutamine and ammonium, the intracellular level of glutamine drops (Tudzynski, 2014). This was in fact observed for the intracellular concentration of amino acids in A. nidulans when the fungus was co-cultured with the bacterium (Appendix—figure 7). Thus, in presence of S. rapamycinicus but not of non-inducing streptomycetes such as S. lividans the fungus is in a physiological state of nitrogen starvation (Figure 8). Nitrogen limitation has been shown before to represent a trigger for the activation of a number of SM gene clusters including the ors gene cluster (Scherlach et al., 2011; Studt et al., 2012). Nitrogen starvation also activates the expression of the anthrone (mdp) gene cluster (Scherlach et al., 2011), which we also observed in our data. However, induction of orsellinic acid production by nitrogen starvation took about 60 hr, whereas co-cultivation with S. rapamycinicus had already triggered expression of the cluster genes after 3 hr. Therefore, it is unlikely that the bacteria-triggered activation of the cluster is exclusively achieved by restricting nitrogen availability for the fungus. Furthermore, shortage of nitrogen leads to de-repression of genes that are involved in the usage of secondary nitrogen sources, which was not supported by our data. In S. cerevisiae, it has been reported that a shift from growth under nutrient sufficiency to nitrogen starvation induced the degradation of mitochondria (Eiyama et al., 2013). Similarly, decreased acetylation and transcription of genes with mitochondrial function were also detected upon contact of A. nidulans with the bacterium. This was further supported by a lower mitochondrial respiratory activity in the fungal cells during co-cultivation (Figure 3c).
 
-## BasR is a central regulatory node for integrating bacterial signals leading to regulation of SM gene clusters
+### BasR is a central regulatory node for integrating bacterial signals leading to regulation of SM gene clusters
 
 Another consequence of nitrogen starvation is the reduced availability of amino acids in the cell. Consequently, as shown here, the amino-acid biosynthetic pathways represented a major group of de-regulated genes at both the acetylation and expression levels. Amino-acid biosyntheses in fungi are regulated by the CPC system upon starvation for distinct amino acids (Tudzynski, 2014; Krappmann and Braus, 2005). Since deletion of cpcA in A. nidulans did not affect the induction of the ors gene cluster, whereas the artificial inducer of the CPC system 3-AT does (Sachs, 1996), it is conceivable that CPC somehow plays a role. 3-AT is a structural analogue of histidine that triggers histidine starvation in the fungal cell and thereby the CPC (Sachs, 1996). In S. cerevisiae, other regulators such as the heterodimeric transcription factor complex Bas1p/Bas2p, which is even bound by Gcn5p, have also been shown to induce the CPC (Valerius et al., 2003; Daignan-Fornier and Fink, 1992). We identified two putative orthologous genes in the genome of A. nidulans, but further analysis revealed that only basR (AN7174) was involved in ors gene cluster activation during the fungal-bacterial co-cultivation (Figure 8). Despite the fact that AN8377 seems to resemble S. cerevisiae bas1 more closely (Figure 7 and Figure 6—figure supplement 1), it is not needed for the ors gene cluster activation.
 
@@ -136,23 +180,208 @@ Genome-wide ChIP-seq analysis also indicated that the interaction of S. rapamyci
 
 ## Materials and methods
 
-## Microorganisms, media and cultivation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>FGSC A1153</td>
+      <td>Nayak et al., 2006</td>
+      <td></td>
+      <td>yA1, pabaA1; argB2; pyroA4,  nkuA::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>A1153∆gcnE</td>
+      <td>Nützmann et al. (2011)</td>
+      <td></td>
+      <td>yA1, pabaA1;  gcnE::argB2; pyroA4, nkuA::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>A1153∆basR</td>
+      <td>This study</td>
+      <td></td>
+      <td>yA1, pabaA1; basR::argB2; pyroA4, nkuA::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>A1153tetOn-basR</td>
+      <td>This study</td>
+      <td></td>
+      <td>yA1, pabaA1; argB2::pabaA1-tetOn-basR; pyroA4, nkuA::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>A1153∆AN8377</td>
+      <td>This study</td>
+      <td></td>
+      <td>yA1, pabaA1;AN8377::argB2;pyroA4, nkuA::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>A1153gcnE-3xflag</td>
+      <td>Nützmann et al., 2011</td>
+      <td></td>
+      <td>yA1, pabaA1;  gcnE::gcnEp-gcnE-3x-flag-pabaA1; pyroA4, nku::bar</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus sydowii)</td>
+      <td>CBS 593.65</td>
+      <td>Westerdijk Fungal Bio Diversity Institute, The Netherlands</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus sydowii)</td>
+      <td>A. sydowii tetOn-basR</td>
+      <td>This study</td>
+      <td></td>
+      <td>Ectopic integration of pUC18 tetON-A. sydowii basR-hph</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Streptomyces rapamycinicus)</td>
+      <td>ATCC 29253</td>
+      <td>Kumar and Goodfellow, 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Streptomyces lividans)</td>
+      <td>TK24</td>
+      <td>Cruz-Morales et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ANTIFLAG M2</td>
+      <td>Sigma-Aldrich, Taufkirchen, Germany</td>
+      <td>F3165-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-histone H3</td>
+      <td>Abcam, Cambridge, UK</td>
+      <td>ab1791</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal histone H3K9ac</td>
+      <td>Active Motif, La Hulpe, Belgium</td>
+      <td>39137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-acetyl-histone H3 (Lys14)</td>
+      <td>Merck Millipore, Darmstadt, Germany</td>
+      <td>07 – 353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Universal RNA Purification Kit</td>
+      <td>Roboklon, Berlin, Germany</td>
+      <td>E3598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxigenin-11-dUTP</td>
+      <td>Jena BioScience, Jena, Germany</td>
+      <td>NU-803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 5</td>
+      <td>GraphPad Software Inc., La Jolla, USA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor package regioneR</td>
+      <td>Gel et al. (2016)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bioconductor package edgeR</td>
+      <td>Robinson and Oshlack (2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS, version 2.0.1</td>
+      <td>Zhang et al. (2008)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MUSCLE</td>
+      <td>Edgar (2004)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Thorvaldsdóttir et al. (2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA6</td>
+      <td>Tamura et al. (2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Shimadzu Class-VP software (version 6.14 SP1)</td>
+      <td>Shimadzu, Duisburg, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Microorganisms, media and cultivation
 
 A. nidulans strains were cultivated in Aspergillus minimal medium (AMM) at 37°C, 200 rpm (Brakhage and Van den Brulle, 1995). When required, supplements were added as follows: arginine (871 µg/ml), p-aminobenzoic acid (3 µg/ml) and pyridoxine HCl (5 µg/ml). Pre-cultures were inoculated with 4 × 108 spores per ml. 10 µg/ml doxycycline was used to induce the tetOn-inducible system. A. nidulans gcnE-3xflag strain was used for ChIP-seq analysis. For the measurement of orsellinic acid, mycelia of overnight cultures (~16 hr) in AMM were transferred to fresh medium and inoculated with S. rapamycinicus, as previously described (Schroeckh et al., 2009). RNA extraction for expression analysis during co-cultivation was performed after 3 hr of cultivation; for analysis of the basR-overexpression mutant after 6 hr of monoculture, samples for HPLC analysis were taken after 24 hr. A. sydowii was cultivated at 28°C, 200 rpm in malt medium (Scherlach et al., 2010). For the induction of the ors cluster in A. sydowii, 48-hr-old precultures were transferred to fresh AMM and inoculated with S. rapamycinicus or doxycycline. 10 µg/ml doxycycline was added twice over the course of 48 hr. Samples were taken for LC-MS analysis after 96 hr for A. sydowii co-cultivation and after 48 hr for the A. sydowii basR-overexpression mutant. For MALDI-MS Imaging analysis, conductive ITO slides (Bruker Daltonics, Bremen, Germany) were coated with 3 ml 0.5% (w/v) AMM agar and incubated at room temperature for 30 min (Aiyar et al., 2017; Araújo et al., 2017). Identical conditions were ensured by supplementation of all slides with arginine regardless of the fungal genotype. S. rapamycinicus was applied by filling 5 ml of a preculture in a tube and by point inoculation of 15 µl of the settled mycelium on the agar. For A. nidulans, 500 conidia of wild type and mutants were point inoculated onto the agar. For co-cultivation experiments, both microorganisms were inoculated 1 cm apart from each other. The slides were incubated at 37°C in a Petri dish for 4 days. The slides were dried by incubation in a hybridization oven at 37°C for 48 hr.
 
-## Quantitative RT-PCR (qRT-PCR)
+### Quantitative RT-PCR (qRT-PCR)
 
 Total RNA was purified with the Universal RNA Purification Kit (Roboklon, Berlin, Germany). Reverse transcription of 5 µg RNA was performed with RevertAid Reverse Transcriptase (Thermo Fisher Scientific, Darmstadt, Germany) for 3 hr at 46°C. qRT-PCR was performed as described before (Schroeckh et al., 2009). The A. nidulans β-actin gene (AN6542) served as an internal standard for calculation of expression levels as previously described (Schroeckh et al., 2009). Primers for the amplification of probes are listed in Supplementary file 4.
 
-## Preparation of chromosomal DNA and Southern blot analysis
+### Preparation of chromosomal DNA and Southern blot analysis
 
 A. nidulans genomic DNA was isolated as previously described (Schroeckh et al., 2009). Southern blotting was performed using a digoxigenin-11-dUTP-labeled (Jena Bioscience, Jena, Germany) probe (Schroeckh et al., 2009).
 
-## ChIP coupled to quantitative RT-PCR (qRT-PCR)
+### ChIP coupled to quantitative RT-PCR (qRT-PCR)
 
 Cultures were grown as described in the cultivation section. After 3 hr, the isolated DNA was cross-linked to proteins as described before (Boedi et al., 2012). Powdered mycelium was dissolved in 1 ml of sonication buffer (Boedi et al., 2012) and 330 µL aliquots were then subjected to sonication for 30 min with cycles of 2 min maximum intensity followed by a 1 min pause. Sheared chromatin was separated from cell wall debris and incubated with 40 µL of a protein A slurry for 30 min at 4°C on a rotary shaker. A purified 1:10 dilution of the supernatant was then incubated overnight at 4°C with 3 µL of antibody directed against the desired target. Antibodies were precipitated with 40 µL of Dynabeads (Invitrogen, Carlsbad, USA) and were immediately incubated with the sample for 40 min at 4°C on a rotary shaker. Samples were washed three times with low salt buffer followed by washing once with high-salt buffer (Boedi et al., 2012). Washed beads were dissolved in 125 µl TES buffer and reverse cross-linked with 2 µL of 0.5 M EDTA, 4 µL of 1 M Tris-HCl pH 6.5 and 2 µL of 1 mg/ml proteinase K for 1 hr at 45°C. Subsequent DNA purification was conducted with a PCR purification kit and samples were eluted in 100 µL of 1:10 diluted elution buffer. The DNA concentration of genes of interest was quantified using qRT-PCR as described above. The antibodies used are the following: mouse monoclonal ANTIFLAG M2 (Sigma-Aldrich, F3165-5MG, Taufkirchen, Germany), rabbit polyclonal anti-histone H3 (Abcam ab1791, Cambridge, UK), rabbit polyclonal histone H3K9ac (39137, Active Motif, La Hulpe, Belgium)) and rabbit polyclonal anti-acetyl-histone H3 (Lys14) (07–353, Merck Millipore, Darmstadt, Germany).
 
-## Extraction of fungal compounds, HPLC and LC-MS analyses
+### Extraction of fungal compounds, HPLC and LC-MS analyses
 
 Culture broth containing fungal mycelium with and without bacteria was homogenized utilizing an ULTRA-TURRAX (IKA-Werke, Staufen, Germany). Homogenized cultures were extracted twice with 100 ml ethyl acetate, dried with sodium sulfate and concentrated under reduced pressure. For HPLC analysis, the dried extracts were dissolved in 1 – 1.5 ml of methanol. Analytical HPLC was performed using a Shimadzu LC-10Avp series HPLC system composed of an autosampler, high pressure pumps, column oven and PDA. HPLC conditions: C18 column (Eurospher 100 – 5 250 × 4.6 mm) and gradient elution (MeCN/0.1% (v/v) TFA (H2O) 0.5/99.5 in 30 min to MeCN/0.1% (v/v) TFA 100/0, MeCN 100% (v/v) for 10 min), flow rate 1 ml min−1; injection volume: 50 µL.
 
@@ -160,46 +389,46 @@ The samples of A. sydowii were loaded onto an ultrahigh-performance liquid chrom
 
 Identification of metabolites was achieved by comparison with an authentic reference. Samples were quantified via integration of the peak area using Shimadzu Class-VP software (version 6.14 SP1).
 
-## MALDI-MS imaging analysis and data processing
+### MALDI-MS imaging analysis and data processing
 
 Sample preparation and matrix coating were performed as previously described (Aiyar et al., 2017). Samples were analyzed (Aiyar et al., 2017) in an UltrafleXtreme MALDI TOF/TOF (Bruker Daltonics, Bremen, Germany), in reflector positive mode with the following modifications: 100 – 3000 Da range, 30% laser intensity (laser type 4) and raster width 200 µm. The experiments were repeated three times (2nd and 3rd replicates with 250 µm raster width). Calibration of the acquisition method, spectra procession, visualization, analysis and illustration were performed as described before (Aiyar et al., 2017). Chemical images were obtained using Median normalization and weak denoising.
 
-## Resazurin assay
+### Resazurin assay
 
 Respiratory activity was measured by reduction of resazurin to the fluorescent dye resorufin. 104 conidia of A. nidulans in 100 µL AMM were pipetted into each well of a black 96-well plate. The plate was incubated for 16 hr at 37°C. The pre-grown fungal mycelium was further cultivated in monoculture or with 10 µL of an S. rapamycinicus culture. Cultures were further supplemented with 100 µL of AMM containing resazurin in a final concentration of 0.02 mg/ml. Fluorescence was measured (absorption wavelength 560 nm, emission wavelength 590 nm) every 30 min for 24 hr at 37°C in a Tecan fluorometer (Infinite M200 PRO, Männedorf, Switzerland). For all conditions, measurements were carried out in triplicates for each of the two biological replicates. The significance of values was calculated using a two-way ANOVA Test with GraphPad Prism 5 (GraphPad Software Inc., La Jolla, USA).
 
-## ChIP-seq pre-processing
+### ChIP-seq pre-processing
 
 The A. nidulans FGSC A4 genome and annotation (version s10-m03-r28) were obtained from the Aspergillus Genome Database (AspGD) (Cerqueira et al., 2014). The S. rapamycinicus NRRL 5491 genome was obtained from NCBI (GI 521353217). Both genomes were concatenated to a fused genome which served as the reference genome for subsequent mapping. Raw ChIP-seq reads were obtained using FastQC v0.11.4. Trimming and filtering were achieved by applying Trim Galore utilizing Illumina universal adapter and phred +33 encoding. Reads were not de-duplicated because the duplication rate was <15% for most libraries. Bowtie2 (version 2.2.4) using default parameters was employed to map reads to the fused genome. Quantification of reads was carried out using the Bioconductor 'GenomicAlignments’ package forming the basis for three subsequent approaches. First, a genome-wide equi-spaced binning across the genome with different resolutions (50 k and 2 k bp bins) counting reads overlapping each bin was applied. Library normalization on bin counts was performed by only considering reads mapping to the A. nidulans genome. Second, reads overlapping genes were counted, using the AspGD (Cerqueira et al., 2014) annotation. They formed the basis for the subsequent DCS analysis (see below). Third, average profile plots to assess relative histone distributions around TSS and TTS were generated using the bioconductor package regioneR (Gel et al., 2016).
 
-## DCS analysis
+### DCS analysis
 
 To identify genes exhibiting differences in their chromatin state, we employed the bioconductor package edgeR (Robinson and Oshlack, 2010) originally developed for RNA-seq differential expression analysis. The ChIP-seq data follow the same pattern, that is, negative binomial distribution of reads. Library normalization was achieved with the trimmed mean of M values method (Robinson and Oshlack, 2010) based only on A. nidulans gene counts for calculating the effective library sizes, not taking into account reads mapping to S. rapamycinicus which would otherwise artificially influence the effective library size. Comparisons were made between libraries for all ChIP targets separately obtained from monocultures of A. nidulans and co-cultures with S. rapamycinicus. These targets were H3, H3K9ac and H3K14ac. Results including normalized read counts (RPKM), statistics and LFCs are reported in Supplementary file 1. Normalized counts and LFCs were also further used for comparisons with the corresponding microarray-based gene expression and the calculated LFCs.
 
-## MACS analysis
+### MACS analysis
 
 Candidate peaks were identified using two methods: a differential binding analysis (EdgeR) and a peak-calling approach (MACS, version 2.0.1) (Zhang et al., 2008). The peak caller performed several pairwise comparisons between samples with the same antibody and between different conditions in order to retrieve the peaks with significant change of ChIP signal indicating differential binding for that particular comparison. The program kept the track of different replicates, the signal was reported per million reads and produced a BED format track of the enriched regions, other parameters were used with default values. The BED files were subsequently converted to Big Wig format for visualization through the tool Integrative Genomics Viewer (Thorvaldsdóttir et al., 2013).
 
-## Generation of A. nidulans deletion strains
+### Generation of A. nidulans deletion strains
 
 The transformation cassettes for the basR and AN8377 deletion strains were constructed as previously described (Szewczyk et al., 2007). Approximately ~1000 bp sequences homologous to the regions upstream and downstream of basR and AN8377 were amplified and fused to the argB deletion cassette (Schroeckh et al., 2009). Transformation of A. nidulans was carried out as described before (Ballance and Turner, 1985).
 
-## Generation of inducible A. nidulans and A. sydowii basR-overexpressing strains
+### Generation of inducible A. nidulans and A. sydowii basR-overexpressing strains
 
 For overexpression of basR, the tetracycline-controlled transcriptional activation system (tetOn) was used (Helmschrott et al., 2013). The basR gene sequences together with their ~ 1000 bp flanking regions were amplified from A. nidulans and A. sydowii genomic DNA. The tetOn-system was amplified from plasmid pSK562. All DNA fragments were assembled using NEBuilder HiFi DNA Assembly Master Mix (New England Biolabs, Frankfurt, Germany). The A. nidulans pabaA1 gene was used as a selectable marker to complement the p-aminobenzoic acid auxotrophy of the A. nidulans ΔbasR mutant. For A. sydowii, the Aspergillus oryzae hph cassette was used as the selectable marker. 200 µg/ml hygromycin (Invivogen, Toulouse, France) was used for selection of transformant strains.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 The amino-acid sequences for the two Myb-like transcription factors from A. nidulans (AN7174 (basR) and AN8377) and Bas1 from S. cerevisiae were used for a Blast search in the UniProtKB database. For each sequence, the first 50 hits were retrieved. All hits were grouped together, and redundant and partial sequences removed. The obtained 54 hits were first aligned using MUSCLE (Edgar, 2004). The phylogenetic tree was obtained using the Maximum Likelihood method contained in the MEGA6 software facilities (Tamura et al., 2013).
 
-## Measurement of amino acids
+### Measurement of amino acids
 
 Amino acids were extracted from 10 mg samples with 1 ml of methanol and the resulting extract was diluted in a ratio of 1:10 (v:v) in water containing the 13C, 15N labeled amino-acid mix (Isotec, Miamisburg, Ohio, USA). Amino acids in the diluted extracts were directly analyzed by LC-MS/MS as described, but with the modification that an API5000 mass spectrometer (Applied Biosystems, Foster City, California, USA) was used (Docimo et al., 2012).
 
-## cDNA library construction and sequencing
+### cDNA library construction and sequencing
 
 Total RNA was isolated as described for qRT-PCR analysis, from three replicates of A. nidulans cultivated with and without S. rapamycinicus and from the inducible A. nidulans basR-overexpression strain with and without the addition of doxycycline. Samples were taken after six hours of co-cultivation or addition of doxycycline to induce the basR overexpression. Total RNA from the three replicates was pooled and 9 µg of RNA were processed for the library preparation. Library construction, Illumina next-generation sequencing, and the mapping and normalizing of the transcript reads were performed by StarSEQ GmbH (Mainz, Germany). Transcript levels were normalized by counting the number of transcripts per million (TPM) (Wagner et al., 2012).
 
-## Availability of data and materials
+### Availability of data and materials
 
 ChIP-seq data were deposited in the ArrayExpress database at EMBL-EBI (www.ebi.ac.uk/arrayexpress) under accession number E-MTAB-5819. The code for data processing and analysis can be obtained from https://github.com/seb-mueller/ChIP-Seq_Anidulans (Müller, 2018; copy archived at https://github.com/elifesciences-publications/ChIP-Seq_Anidulans).

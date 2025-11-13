@@ -19,10 +19,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02en5vm52 Sorbonne Université, CNRS, INSERM, Neurosciences Paris Seine – Institut de Biologie Paris Seine Paris France
-2. https://ror.org/01a8ajp46 Université Clermont Auvergne, Inserm, U1107 Neuro-Dol, Pharmacologie Fondamentale et Clinique de la Douleur Clermont-Ferrand France
+1. Sorbonne Université, CNRS, INSERM, Neurosciences Paris Seine – Institut de Biologie Paris Seine Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+2. Université Clermont Auvergne, Inserm, U1107 Neuro-Dol, Pharmacologie Fondamentale et Clinique de la Douleur Clermont-Ferrand France ([ROR:01a8ajp46](https://ror.org/01a8ajp46))
 3. ANALGESIA Institute, Faculty of Medicine Clermont-Ferrand France
-4. https://ror.org/043wmc583 Institut de Génomique Fonctionnelle, Université de Montpellier, CNRS, INSERM Montpellier France
+4. Institut de Génomique Fonctionnelle, Université de Montpellier, CNRS, INSERM Montpellier France ([ROR:043wmc583](https://ror.org/043wmc583))
 
 † Corresponding author
 
@@ -40,25 +40,41 @@ We show that (1) Cav3.2 channels are specifically expressed in GABAergic parvalb
 
 ## Results
 
-## Cav3.2 channels are expressed in PV-positive neurons of the APT
+### Cav3.2 channels are expressed in PV-positive neurons of the APT
 
 To examine Cav3.2 expression in APT neurons, we used the Cav3.2-eGFPflox (KI) mouse line, in which an ecliptic GFP tag is expressed in the extracellular loop of the Cav3.2 channel (François et al., 2015). Anti-GFP labeling revealed the expression of the Cav3.2-GFP fusion protein in a scattered subpopulation of neurons from naïve KI animals (Figure 1A, B). Co-labeling of GFP- and NeuN-positive cells (Figure 1—figure supplement 1) showed that 20.0 ± 3.9% of the APT cells express the Cav3.2-GFP channel. Since a previous study performed by Bokor et al., 2005 in rats suggests that APT fast-bursting neurons strongly expressed PV, the overlap between Cav3.2-GFP+ and PV-positive (PV+) populations was estimated using GFP and PV co-labelings (Figure 1—figure supplement 1). We thus determined that 87.1 ± 10.0% of Cav3.2-GFP+ cells coexpress PV. Conversely 91.8 ± 5.6% of PV+ cells coexpress Cav3.2-GFP confirming the overlap between the Cav3.2-GFP+ and PV+ cell populations (Figure 1C).
 
-## Burst firing of PV+ neurons is increased in SNI animals
+![Figure 1.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig1-v2.jpg)
+
+**Figure 1.:** Left panels: Cav3.2-GFP immunostaining on a parasagittal (A) and a coronal (B) section of KI mice brains. Right panels: corresponding Mouse Brain Atlas slides from Paxinos and Franklin (parasagittal: 1.08 mm lateral from Bregma; coronal: 2.8 mm posterior from Bregma). APT: anterior pretectum; Cx: cortex; Hpc: hippocampus; nRT: nucleus reticularis thalami; PAG: periaqueductal grey; SC: superior colliculi; SNc: substantia nigra pars compacta; ZI: zona incerta. (C) Confocal microscopy images of a coronal KI mouse brain section of the APT with GFP (green) and PV (red) co-labeling. Scale bar: 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Confocal microscopy images of the co-labelings performed in the APT to estimate the proportion of GFP neurons (A: GFP in green, NeuN in red) and PV neurons (B: PV in green, NeuN in red) and the overlap between these populations (C: GFP in green, PV in red). Scale bar: 30 µm. (D) Diagram representing the percentage of neurons expressing GFP and PV in the APT.
+
+### Burst firing of PV+ neurons is increased in SNI animals
 
 Based on this overlap, we next investigated the firing activity of this subpopulation in anesthetized animals, using PV-Cre:Ai32 mice that selectively express channelrhodopsin-2 (ChR-2) in PV+ neurons. One to two tetrodes were lowered to the APT in the contralateral side of the sham or SNI surgeries to record multiunit spiking activity alongside with EEG signal (Figure 2A, B). Spike-sorting algorithms were further used to isolate one to three single-unit spiking activities per tetrode (Figure 2C). In sham mice using Photo-assisted Identification of Neuronal Population (PINP; Lima et al., 2009), PV+ single units were identified by the reliable short latency (5.3 ± 2.4 ms) evoked response consisting of one or more spikes elicited by each 470-nm blue-light pulse (Figure 2D). As shown in Figure 2E, 77% (n = 21) of the units had a peak around 2–5 ms in their autocorrelogram, indicating their ability to elicit bursts, and are thus referred to as ‘bursting cells’. Their mean firing rate was 8.4 ± 2.8 Hz and bursts, consisting of 2–3 action potentials (mean: 2.9 ± 0.6) occurring at 252 ± 18.7 Hz, represented 13.7 ± 6.8% of the total number of spikes. The six remaining units showed a flat distribution of interspike intervals (ISIs) with a mean firing rate of 4.4 ± 1.7 Hz, and are thus referred to as ‘regular cells’ (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig2-v2.jpg)
+
+**Figure 2.:** (A) Example image of a DiI track left by a recording electrode inserted into the APT. Red: DiI. (B) Raw signals from the four wires of a tetrode. Bottom trace shows the simultaneous EEG recording. (C) Left panel: example of a tetrode recording where two units were isolated. All detected action potentials are plotted as their waveform’s amplitude from channel 1 versus the amplitude of their waveform’s valley from channel 1 (in arbitrary units, A.U.). Using this feature space arrangement, two single-unit clusters were isolated (in red and yellow). Right panel: superimposed color-coded action potential waveforms captured by each recording site of the tetrode are shown for the two identified single units (the polarity of the signals is inverted). (D) Example of peristimulus time histograms illustrating spiking response to optogenetic stimulation (10 ms long, represented in blue) over 100 trials of a unit categorized into the PV+ category. (E) Autocorrelogram of recorded single unit for one example cell. 1 ms bins were used. Red dotted lines represent 99% confidence intervals. (F) Scatter dot plots of mean firing rate (left panel), proportion of spikes within a burst (middle panel), and mean spike frequency within a burst (right panel) for fast-bursting APT cells recorded in sham (n = 21 cells, 5 animals) and SNI (n = 18 cells, 4 animals) mice. p values for statistical comparisons were obtained using Wilcoxon sum rank test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example of peristimulus time histograms illustrating spiking response to optogenetic stimulation (10 ms long, represented in blue) over 100 trials of a unit categorized into the PV+ category. (B) Autocorrelogram of recorded single unit for one example cells. 1 ms bins were used. Red dotted lines represent 99% confidence intervals.
 
 The spiking properties of PV+ neurons were next compared between sham and SNI animals. Although the proportion of bursting cells was similar in the two conditions (77% vs. 75%, respectively), we observed a significant increase upon SNI, in the mean firing rate (Figure 2F; left panel; 11.4 ± 3.2 Hz; Wilcoxon sum rank test; p = 0.0036), in the proportion of spikes belonging to a burst (Figure 2F; middle panel; 20.9 ± 7.8%; Wilcoxon sum rank test; p = 0039), and in the mean spike frequency within a burst (Figure 2F; right panel; 270.6 ± 20.6 Hz; Wilcoxon sum rank test; p = 0.01). No difference was observed in the mean firing rates of regular cells for which the mean spike frequency in SNI animals was 6.7 ± 3.9 Hz (Wilcoxon sum rank test; p = 0.35).
 
 We therefore concluded that most of the PV+ and Cav3.2+ neurons of the APT are bursting neurons and that their bursting activities are enhanced in the neuropathic pain state.
 
-## Contribution of Cav3.2 channels to PV+ APT neuron excitability
+### Contribution of Cav3.2 channels to PV+ APT neuron excitability
 
 In order to estimate how Cav3.2 channels contribute to the firing activity observed in vivo, we characterized the excitability of the PV+ neurons using whole-cell patch-clamp recordings combined with biocytin labeling in slices obtained from PV-Cre:AI14 mice that express TdTomato in PV+ neurons. In response to a pulse of depolarizing current all APT fluorescent neurons behaved as fast-spiking neurons with a high discharge rate (mean maximal firing rate upon depolarizing current of increasing amplitude: 214 ± 112 Hz, n = 60, Figure 3A). In response to the injection of a hyperpolarizing current step (peak hyperpolarization ranging from −95 to −105 mV), common features were a large amplitude sag (17 ± 6 mV, n = 62), indicating the presence of an Ih current, and a rebound depolarization that underlie a burst of high-frequency action potentials in 57 out of 62 recorded neurons (mean number of spikes 7 ± 4, n = 57).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig3-v2.jpg)
 
-**Figure 3.:** (A) Left image: recorded neuron filled with biocytin (green). Neurons in red are nonrecorded PV+ neurons. Middle traces: depolarizing current injection evokes characteristic fast-spiking activity. Hyperpolarizing current injection evoked a pronounced sag and a rebound high-firing burst upon repolarization. Inset: enlargement of the bursting activity. Right graph: number of spikes evoked by 1 s long depolarizing current injection of increasing amplitudes. (B) Typical example of activities and scRT-PCR products observed in a PV+ neuron. Note the expression of the Cav3.2 channel in the GAD65- and 67-positive neuron.Figure 3—source data 1.Figure 3—source data 2.Figure 3B.Figure 3—source data 3.
+**Figure 3.:** (A) Left image: recorded neuron filled with biocytin (green). Neurons in red are nonrecorded PV+ neurons. Middle traces: depolarizing current injection evokes characteristic fast-spiking activity. Hyperpolarizing current injection evoked a pronounced sag and a rebound high-firing burst upon repolarization. Inset: enlargement of the bursting activity. Right graph: number of spikes evoked by 1 s long depolarizing current injection of increasing amplitudes. (B) Typical example of activities and scRT-PCR products observed in a PV+ neuron. Note the expression of the Cav3.2 channel in the GAD65- and 67-positive neuron.
 
 Transcriptomic characterization of PV+ neurons was further performed by combining patch-clamp recordings and multiplex single-cell reverse transcriptase PCR (scRT-PCR; Figure 3B). All neurons expressed PV transcript and among them, 73.9% expressed GAD65 and/or GAD67 mRNA (n = 17/23), the remaining ones (n = 6/23) expressed Vglut2 mRNA. Importantly the Cav3.2 transcript was present in 13 out of the 17 GABAergic neurons but never detected in glutamatergic neurons. mRNA of the two other Cav3 isoforms was also detected, albeit less frequently (Cav3.1: n = 10/13; Cav3.3: n = 3/13) in GABAergic neurons coexpressing Cav3.2 and in glutamatergic neurons (Cav3.1: n = 5/6; Cav3.3: n = 1/6). These results strongly suggest that PV+ neurons expressing the Cav3.2 channels are fast-spiking GABAergic neurons.
 
@@ -66,13 +82,21 @@ We then investigated whether the Cav3.2 isoform contributed to the rebound depol
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig4-v2.jpg)
 
-**Figure 4.:** (A) Effect of 100 µM Ni2+ applications on the number of spikes (left graph, n = 8) and the minimal interspike intervals (ISIs; right graph, n = 6) of the rebound bursts. Typical examples of these pharmacological effects are shown on the right. (B) Effect of 1 µM TTAP2 applications on the number of spikes (left graph, n = 11) and the minimal ISIs (right graph, n = 7) of the rebound bursts. Typical examples of these pharmacological effects are shown on the right. (C) Effect of 100 µM Ni2+ (left graph, n = 10) and 1 µM TTAP2 (right graph, n = 12) applications on the amplitude of the rebound depolarization observed in the presence of 0.5 µM TTX. A typical example is presented in superimposed traces presented on the right. (D) The two left graphs compare the maximal number of spikes of the rebound bursts evoked in neurons of sham-operated and SNI mice in control condition (n = 12 and 15, respectively) and after application of 100 µM Ni2+ (n = 8 and 9, respectively). The effects of Ni2+ application on each neuron are presented in the two right graphs (n = 8 and 9 for sham and SNI, respectively). A, B, C, D right graphs: Wilcoxon signed rank test; D left graphs: Wilcoxon sum rank test. ***p < 0.001 ; **p: 0.001 < p < 0.01 ; *0.01 < p < 0.05.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.
+**Figure 4.:** (A) Effect of 100 µM Ni2+ applications on the number of spikes (left graph, n = 8) and the minimal interspike intervals (ISIs; right graph, n = 6) of the rebound bursts. Typical examples of these pharmacological effects are shown on the right. (B) Effect of 1 µM TTAP2 applications on the number of spikes (left graph, n = 11) and the minimal ISIs (right graph, n = 7) of the rebound bursts. Typical examples of these pharmacological effects are shown on the right. (C) Effect of 100 µM Ni2+ (left graph, n = 10) and 1 µM TTAP2 (right graph, n = 12) applications on the amplitude of the rebound depolarization observed in the presence of 0.5 µM TTX. A typical example is presented in superimposed traces presented on the right. (D) The two left graphs compare the maximal number of spikes of the rebound bursts evoked in neurons of sham-operated and SNI mice in control condition (n = 12 and 15, respectively) and after application of 100 µM Ni2+ (n = 8 and 9, respectively). The effects of Ni2+ application on each neuron are presented in the two right graphs (n = 8 and 9 for sham and SNI, respectively). A, B, C, D right graphs: Wilcoxon signed rank test; D left graphs: Wilcoxon sum rank test. ***p < 0.001 ; **p: 0.001 < p < 0.01 ; *0.01 < p < 0.05.
 
 Since in vivo recordings showed an increased in bursting activities of PV+ neurons in SNI mice compared to sham control mice, we further compared the rebound bursts in slices from sham-operated and SNI mice. As shown in Figure 4D, the distribution of the maximal number of spikes of rebound bursts evoked in PV+ neurons is shifted toward larger values in SNI compared to sham-operated mice (mean maximal number of spikes: 9.1 ± 2.3, n = 15, 6.3 ± 1.8, n = 12, for SNI and sham, respectively; Wilcoxon sum rank test p = 0.0012). Importantly, this difference in distribution is suppressed when Cav3.2 channels are blocked with 100 µM Ni2+, strongly suggesting that these channels participate in the increased rebound burst activities observed in SNI mice.
 
-## Impact of Cav3.2 channel deletion in APT on mechanical and cold sensitivity
+### Impact of Cav3.2 channel deletion in APT on mechanical and cold sensitivity
 
 The Cav3.2-eGFPflox mouse line not only allows the visualization of Cav3.2 channels but also their deletion (Figure 5—figure supplement 1). Considering the in vitro results suggesting that Cav3.2 channels may contribute to the increased burst activities observed in PV+ neurons of SNI mice recorded in vivo, we investigated whether local deletion of these channels in APT could alleviate the neuropathic phenotype. Mechanical and cold allodynia, the cardinal somatosensory phenotypes typical of the SNI model were thus compared between mice that were bilaterally injected in the APT with either an AAV-Cre-mCherry virus (APT-KO mice; n = 6 males and 6 females) or an AAV-mCherry (control KI mice; n = 7 males and 9 females; Figure 5A) and then 2 weeks later subjected to the SNI surgery to induce the neuropathy. Mechanical sensitivity was assessed by measuring paw withdrawal threshold (PWT) on the operated hindpaw using Von Frey filaments (Chaplan et al., 1994). Prior to SNI procedure, two baseline measurements were performed, before and 2 weeks after viral injections. No significant differences were found in the PWT between these two measurements within each group or between KI and APT-KO mice, indicating that neither the viral injection by itself, nor the local deletion of Cav3.2 impacts acute mechanical sensitivity. Baseline measurements were therefore averaged within each group (Figure 5B). A statistically significant decrease in PWT was observed in KI mice following SNI from day 14 postsurgery, confirming the development of a mechanical allodynia. Importantly, this decrease was strongly attenuated in APT-KO compared to KI mice (Figure 5B and Figure 5—figure supplement 1B). This difference between APT-KO mice and their KI littermates was not due to motor or coordination deficits (Figure 5—figure supplement 1C, D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig5-v2.jpg)
+
+**Figure 5.:** (A) Confocal microscopy images of GFP (green) and mCherry (red) co-labeling in the APT of KI-Cav3.2-GFP (Control) mice and KO-Cav3.2-APT (KO) bilaterally injected in the APT with AAV8-hSyn-mCherry and AAV8-hSyn-mCherry-CRE virus, respectively, and further tested for mechanical and cold sensitivity. Scale bar: 100 µm. Neuropathic behaviors were tested in male (dashed lines) and female (solid lines) mice with preventive (B, D) and therapeutic (C, E) KO of Cav3.2 in the APT (orange, ■), and in control KI mice (green, ●). (B, C) Mechanical sensitivity was assessed by measuring paw withdrawal thresholds (PWTs) in response to Von Frey filaments stimulations using the up-and-down method. (D, E) Cold sensitivity was assessed by measuring the paw withdrawal latency in response to immersion in 18°C water. For preventive KO (B, D) mice were tested prior to the SNI (BL) and once a week during the 6 subsequent weeks (days 14–48). For therapeutic KO (C, E) mechanical and cold sensitivity were assessed before (BL) and 14 days after SNI (SNI), and tested during several weeks following the subsequent viral injections (days 14–56 after viral injection). (B–E) Wilcoxon sum rank test for female KO versus KI and male KO versus KI comparison at each time point. ++++ : p < 0.0001, +++ or ▲▲▲: 0.0001 < p < 0.001, ++ or ▲▲: 0.001 < p < 0.01, + or ▲: 0.01 < p < 0.05 (males: +; females: ▲).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79018/elife-79018-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Confocal microscopy images of GFP labeling (green) and mCherry expression (red) in the APT of a KI mouse unilaterally injected with AAV8-hSyn-Cre-mCherry virus (up panel: injected hemisphere; down panel: noninjected hemisphere). Scale bar: 100 µm. Note the drastic reduction in the number of GFP+ neurons observed 2 weeks post viral injection in the injected hemisphere. (B–D) Motor coordination and spontaneous locomotion assessed in control KI mice (green, ●) and mice with preventive APT-Cav3.2 KO (orange, ■) subjected to spared nerve injury (SNI). (B) Control of the development of mechanical allodynia in male (dashed lines) and female (solid lines) mice. Note that as for the cohorts presented in Figure 5, preventive Cav3.2 KO reduced allodynia. Wilcoxon sum rank test for female KO versus KI and male KO versus KI comparison at each time point. +++ or ▲▲▲: 0.0001 < p < 0.001, ▲▲: 0.001 < p < 0.01, +: 0.01 < p < 0.05 (males: +; females: ▲). (C) Latency to fall from an accelerating rotarod wheel (0–16 rpm over 3 min) was measured in males (dashed bars) and females (solid bars), before (BL) and after (day 21) SNI surgery. No statistical differences were detected between groups and before and after SNI surgery within a group using Wilcoxon sum rank test and Wilcoxon signed rank test, respectively. (D) The number of quarter turns was detected in a circular corridor over 120 min, measured in males (dashed bars) and females (solid bars), 21 days after SNI surgery. No significant differences were detected between groups using the Wilcoxon sum rank test.
 
 Cold sensitivity was also assessed using the paw immersion test (Figure 5D). While KI mice showed a decrease in withdraw latency after SNI when the operated paw was immersed in a water bath at 18°, indicating the development of a cold allodynia, this phenotype was abolished in the preventive APT-KO mice. Altogether, these results clearly indicate that APT-Cav3.2 channels contribute to the initiation of mechanical and cold allodynia characterizing the SNI model in both male and female mice.
 
@@ -100,21 +124,21 @@ In conclusion, our data point to Cav3.2 channels as a prime target for developin
 
 ## Materials and methods
 
-## Lead contact and materials availability
+### Lead contact and materials availability
 
 For each figure, data are included in the figure – source data files.
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Régis C Lambert (regis.lambert@sorbonne-universite.fr).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Animals
+#### Animals
 
 Cav3.2eGFP-flox (Cacna1htm1.1(epH)Ebou/J) knock in (KI) mouse line was obtained from Dr. E. Bourinet (François et al., 2015). Briefly, these mice express the ecliptic GFP (eGFP) in an extracellular loop of the Cav3.2 T channel. LoxP sites were inserted allowing the deletion of the Cav3.2-eGFP coding sequence by cre-recombinase (cre). Mouse lines of PV cre (B6.129P2-Pvalbtm1(cre)Arbr/J, stock #017320) mice expressing cre under the PV promoter, Ai14 (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, stock #007914) mice expressing tdTomato reporter, and Ai32 (B6.Cg-Gt(ROSA)26Sortm32(CAG-COPC4*H134E/EYPF)Hze/J, stock #024109) mice expressing channelrhodopsin-2 (ChR2)-eYFP were purchased from Jackson lab. PV-Cre:Ai14 and PV-Cre:Ai32 mice were obtained by crossing female PV-Cre with male Ai14 or Ai32 mice, respectively. Animals were housed in groups of 2–5 per cage, with a 12/12 hr light/dark cycle in a pathogen-free facility maintained at 22–24°C, and access to food and water ad libitum. All procedures complied with the ethical guidelines of the Federation for Laboratory Animal Science Associations (FELASA) and with the approval of the French National Consultative Ethics Committee for health and life sciences (authorization number: 17958).
 
-## Method details
+### Method details
 
-## Immunocytochemistry and imaging
+#### Immunocytochemistry and imaging
 
 Mice (P28–P217) were anesthetized with 2% isoflurane, injected with a lethal dose of pentobarbital (150 mg/kg) and transcardiacally perfused with a 4°C solution of Artificial Cerebro-Spinal Fluid (ACSF), oxygenated with a mixture 95% O2/5% CO2, containing (in mM): 125 NaCl, 2.5 KCl, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, 26 NaHCO3, 25 glucose. The brains were then rapidly extracted from the skull and incubated in a solution of paraformaldehyde diluted to 4% in phosphate buffer solution (PBS: phosphate buffer saline) for postfixation overnight at 4°C. 40-μm-thick coronal slices were cut using a vibratome (Leica VT1000S) in PBS.
 
@@ -122,67 +146,67 @@ All immunohistochemical staining were performed at room temperature. The slices 
 
 Whole slice images were acquired by epifluorescence microscopy under a macroscope (Axio Zoom, V16 Zeiss). Mosaics were made at ×200 magnification and processed with the ZEN software (Zeiss). The images used to study the coexpressions were acquired with confocal microscopy (Leica TCS SP5) at ×20 and ×63 objectives.
 
-## SNI model
+#### SNI model
 
 SNI or sham surgeries were performed as previously described (Decosterd and Woolf, 2000) under ketamine–xylasine anesthesia (100 and 10 mg/kg, respectively) on male and female KI mice (10–15 weeks old). The left thigh to be operated on was slightly elevated and an incision of about 1 cm is made between the hip and the knee. The muscles enclosing the sciatic nerve compartment were moved apart with a round-ended bent scissor. The common peroneal and tibial branches of the sciatic nerve were exposed and tightly ligated with 6-0 silk suture. A fragment of nerve was transected distally to the ligation. The sural branch was left intact. The muscles were then put back in apposition and the skin was sutured using 4-0 Vicryl (Ethicon). Mice were then kept in a 37°C warming chamber until recovery from anesthesia, before being returned to their homecages. In sham surgery, the sciatic nerve branches were exposed, but not injured.
 
-## Surgery and preparation for in vivo electrophysiological recordings
+#### Surgery and preparation for in vivo electrophysiological recordings
 
 Mice (males; 8–12 weeks; sham mice n = 5; SNI mice n = 4) were anesthetized with isoflurane vaporized in a mixture of oxygen and air (4% for induction, 1.5–2% during surgery). Body temperature was maintained at 37°C via a servo-controlled heating blanket and a rectal thermometer (Harvard Apparatus, Holliston, MA). Bupivacaine (subcutaneous) was administered in the regions to be incised 15 min prior to the first incision. Mice were placed in a stereotaxic apparatus and a craniotomy was made directly above the anterior pretectal nucleus (−2.7 to −3.0 mm A/P, 1–1.2 mm M/L). To minimize damage during electrode penetration, the dura was resected and the exposed surface was coated with a layer of silicon oil. After electrodes placement, isoflurane was decreased to 0.8–1%. If the animals presented any sign of discomfort, the percentage of isoflurane was increased. Electrodes were lowered to the anterior pretectal nucleus based on readings from the micromanipulator (depths: 2600–2900 µm).
 
-## In vivo electrophysiological recordings
+#### In vivo electrophysiological recordings
 
 Animals underwent the procedure 2–3 weeks after SNI or sham surgeries. Recordings of units were obtained using quartz-insulated platinum/tungsten (90%/10%) tetrodes (~1–2 MOhm, Thomas Recording). Before insertion, the rear of the tetrodes was painted with fluorescent 1,1′-dioctadecyl- 3,3,3′,3′-tetramethyl indocarbocyanine perchlorate (DiI, 10% in ethanol, Invitrogen). As this dye is a lipophilic neuronal tracer, it allowed assessment of the recording depth. One to three tetrodes were guided independently at 1-µm resolution through a five-channel concentric microdrive head (Head05-cube-305-305-b, Thomas Recording GmbH) with 305 µm interelectrode spacing.
 
 Raw signals were filtered (600–6000 Hz; Neuralynx recording systems), amplified (5000×), digitized at 33,657 Hz, and stored with stimulus markers (Cheetah 5 software; Neuralynx). Waveforms crossing set thresholds (300–500 μV) were captured via the A/D card and analyzed offline. At the end of the experiment, mice were injected with a lethal dose of euthasol, and the brains were removed and placed in a 4% paraformaldehyde solution for 48 hr. The brains were then transferred and stored in PBS (0.1 M). Sections (280 μm thick) containing the anterior pretectal nucleus were cut with a vibratome (Leica VT1000S). Sections were then mounted in Fluoromount medium.
 
-## Slice preparation
+#### Slice preparation
 
 Investigation of PV+ neuron firing properties were performed on slices obtained from 13 male and 11 female PV-Cre:AI14 mice (P23–P123, median: P35). Comparison of PV+ neuron-bursting properties between SNI and sham-operated mice were performed on slices prepared 22–41 days after surgery (Sham: six mice, four males, two females, P87–P103; SNI: seven mice, five males, two females, P91–P110). Mice were anesthetized with isoflurane before decapitation. The brain was carefully removed and placed for a few minutes into a 4–8°C bicarbonate-buffered saline (BBS) solution containing (in mM): 125 NaCl, 2.5 KCl, 2 CaCl2, 1 MgCl2, 1.25 NaH2PO4, 26 NaHCO3, and 25 glucose (osmolarity: 305 mOsm; pH 7.3 after equilibration with 95% O2 and 5% CO2). Coronal slices (250 µm) were then cut using a vibratome (Campden Instruments 700 SMZ2). The slicing procedure was performed in an ice-cold solution containing (in mM): 130 potassium gluconate, 15 KCl, 2 ethylene glycol-bis(ß-aminoethyl ether)-N,N,N',N'-tetraacetic acid (EGTA), 20 4-(2-hydroxyethyl)piperazine-1-ethanesulfonic acid (HEPES), 25 glucose, 1 CaCl2, and 6 MgCl2 (304 mOsm, pH 7.4 after equilibration). Slices were then transferred for few minutes to a solution containing (in mM): 225 D-mannitol, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 1 CaCl2, and 6 MgCl2 (310 mOsm, 4–8°C, oxygenated with 95% O2/5% CO2), and finally stored for the rest of the experiment at 32°C in oxygenated BBS. For all recordings, slices were continuously perfused with oxygenated BBS at 32°C.
 
-## In vitro whole-cell patch-clamp recording
+#### In vitro whole-cell patch-clamp recording
 
 Brain slices were screened for fluorescent neurons using a filter set that allowed us to detect dt-tomato fluorescence. Neurons were visualized and patched with borosilicate pipettes (resistance 3–5 MOhm). The intracellular solution contained (in mM): 140 potassium gluconate, 3 MgCl2, 10 HEPES, 0.2 EGTA, and 4 disodium ATP (pH 7.3; 300 mOsm). For some experiments, biocytin (2 mg/ml) was added to the intracellular solution. Patch-clamp electrodes were connected to a AxoPatch 200B (Axon Instrument) amplifier. Protocols and acquisitions were controlled by the Clampex software (Molecular Devices). The membrane potentials were filtered by a 4-pole Bessel filter set at a corner frequency of 2 kHz and digitized online at a sampling rate of 20 kHz. The access resistance was 10–20 MOhm and was monitored throughout the experiment. Data were discarded if the access resistance changed by more than 15% during the experiment. Current clamp recordings were performed in the continuous presence of 10 µM CNQX and 1 µM SR95531 to suppress spontaneous synaptic activities. Only one neuron per slice was recorded in experiments requiring the application of T-channel antagonists.
 
 At the end of the recordings, slices containing biocytin-filled neurons were fixed overnight by immersion in paraformaldehyde (4% in PBS 1 M) and then washed with 1 M PBS. After incubating the slices with Triton (0.2% in PBS 1 M) for 1 hr, biocytin-filled neurons were revealed using Streptavidin Alexa Fluor 488 (1:1000; 3 hr in dark; Invitrogen). Slices were then washed in PBS (1 hr) before being mounted on cover slides.
 
-## Cytoplasm harvesting and scRT-PCR
+#### Cytoplasm harvesting and scRT-PCR
 
 For scRT-PCR, recordings were performed on slices obtained from four male and two female PV-Cre:AI14 mice (P15–P21). At the end of the whole-cell recording, lasting less than 15 min, the cytoplasmic content was aspirated in the recording pipette. The pipette’s content was expelled into a test tube and reverse transcription was performed in a final volume of 10 µl, as described previously (Lambolez et al., 1992). The scRT-PCR protocol was designed to probe simultaneously the expression of Cav3 isotypes, GAD65/67, VGluT2, and PV. Two-step amplification was performed essentially as described (Cauli et al., 1997; Devienne et al., 2018). Briefly, cDNAs present in the 10 µl reverse transcription reaction were first amplified simultaneously using all external primer pairs listed in the Key Ressources Table. Taq polymerase and 20 pmol of each primer were added to the buffer supplied by the manufacturer (final volume, 100 µl), and 20 cycles (94°C, 30 s; 60°C, 30 s; 72°C, 35 s) of PCR were run. Second rounds of PCR were performed using 1 µl of the first PCR product as a template. In this second round, each cDNA was amplified individually using its specific nested primer pair (Key Ressources Table) by performing 35 PCR cycles (as described above). 10 µl of each individual PCR product were run on a 2% agarose gel stained with ethidium bromide using ФX174 digested by HaeIII as a molecular weight marker.
 
-## Virus stereotaxic injections
+#### Virus stereotaxic injections
 
 Male and female KI (6–8 weeks) were anesthetized with a ketamine–xylazine mixture (100 and 10 mg/kg, respectively) and placed on a heating pad. A vitamin B12 eye drop (Twelve TVM) was applied to the eyes and a subcutaneous injection of sterile saline solution (NaCl 0.9%) was performed to prevent dry eyes and dehydration, respectively. The surgical area was cleaned with ethanol and sanitized with an iodine solution (Vetedine). Lidocaine was administered subcutaneously at the incision site. Mice were placed on a stereotaxic apparatus and a craniotomy was performed over the area of interest. Saline solution was regularly applied to the skull.
 
 Injection pipette was lowered to the APT coordinates (Bregma: −2.70 to −2.80 mm; Mediolateral: ±1.10 to 1.15 mm; Depth: −2.65 to −2.70 mm from the dura) and either, 1 μl of AAV8-hSyn-mCherry-Cre (4.9 × 1012 ppm) or 1 μl of AAV8-hSyn-mCherry (4.6 × 1012 ppm) were injected bilaterally with a graduated injection wheel (Narishige, 100 μl/rev) at a rate of 0.1–0.2 μl/min. Five to ten minutes after injection, the pipette was slowly raised. The wound edges were then put back in place and the skin sutured with Vicryl 4-0 thread (Ethicon) or surgical glue (Vetbond 3M). Mice were kept on a heating pad until recovery from anesthesia before being returned to their home cages.
 
-## Behavioral tests
+#### Behavioral tests
 
 Two series of behavioral tests were conducted separately in two different laboratories by different experimenters in blinded condition. Results are presented independently in Figure 5 and Figure 5—figure supplement 1. Mechanical and cold sensitivity was tested in preventively injected KI and KO mice, as well as in therapeutically injected KI and KO SNI mice in Clermont-Ferrand. Mechanical sensitivity in preventively injected KI and KO mice was also assessed in Paris, along with locomotor tests. Both series of experiments yielded similar results, despite notable differences in the PWTs measured, which can be explained by the differences of experimental conditions.
 
-## Mechanical sensitivity
+#### Mechanical sensitivity
 
 Mechanical sensitivity was assessed using Von Frey method. Mice were habituated to the testing environment before baseline testing. On the day of behavior testing, mice were placed in compartments on an elevated grid to allow access to the paw. Different filaments, ranging from 0.02 to 1.4 g, were applied perpendicularly to the plantar surface of the operated paw. 50% PWT was determined using an adaptation of the up and down method (Chaplan et al., 1994).
 
-## Cold sensitivity
+#### Cold sensitivity
 
 Cold sensitivity was assessed by immersing the operated paw in a 18°C water bath until withdrawal or shaking was observed. In order to avoid stressing mice that are manually tethered in a piece of tissue, they were habituated to the test for 3 days before the baseline test in room temperature water. The first two latencies measured with a difference of less than 2 s were averaged to obtain the pain withdrawal latency.
 
-## Motor behaviors
+#### Motor behaviors
 
 Motor coordination assessments were performed using the rotarod test. Mice were placed on the rotarod device (Bioseb) during 3 min with an accelerating ramp of 4–6 rounds per min. The latency to fall was automatically measured. The test was performed three times for each day of measurement, with two baseline measurements and one measurement at the end of the neuropathic tests. Spontaneous locomotion was also estimated at the end of the neuropathic tests using the circular corridor test. Mice were placed in the cyclotron (IMetronic) in the dark. Four detectors located around the corridor allowed the measurement of the number of quarter turns performed by the animals during 2 hr.
 
 In each mouse, immunolabeling of GFP was systematically performed at the end of the behavioral tests. Observation of mCherry and GFP expression allowed to control the localization/extend of the virus infection and the efficiency of Cav3.2 deletion in KO mice.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 No statistical methods were used to predetermine sample sizes, which are comparable to many studies using similar techniques and animal models.
 
-## Imaging data analysis
+#### Imaging data analysis
 
 Confocal images acquired for the evaluation of coexpression of Cav3.2-GFP, PV, and NeuN were processed using the Fiji/ImageJ software, with the Cell Counter plug-in for manual cell counts. Quantification of the co-labeling of GFP and NeuN were performed on three mice (two males, one female) by analyzing 11–18 images in 5–8 brain slices per mouse. Quantification of the co-labeling of GFP and PV were performed on three mice (two males, one female) by analyzing 10–12 images in 5–8 brain slices per mouse. Data are expressed as mean ± standard deviation.
 
-## Electrophysiological data analysis
+#### Electrophysiological data analysis
 
 For in vivo data analysis, potential single units were first identified using automated clustering software utilizing peak and trough feature sets (KlustaKwik). These clusters were then examined manually for waveform shape (SpikeSort3D, Neuralynx). Upon examination of the interspike intervals, multiunit clusters were discarded.
 
@@ -192,7 +216,7 @@ For in vivo and in vitro experiments, each neuron was considered as an independe
 
 Quantification and statistical analysis of in vivo and in vitro data were performed with the Igor Pro v6 and Matlab 2019b softwares, respectively. Between conditions comparison was based on Wilcoxon rank-sum test (Mann–Whitney U-test) and Wilcoxon signed rank test for unpaired and paired datasets, respectively. Differences were considered significant if the p value was lower than 0.05. All data were presented as the means ± standard deviation.
 
-## Behavioral data analysis
+#### Behavioral data analysis
 
 Behavioral data analysis and statistics were performed in R (version 4.1.0), using the RStudio software. Data normality was checked using the Shapiro–Wilks test and no normal distribution was found throughout the datasets.
 

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.46080.001 Choosing between two items involves deliberation and comparison of the features of each item and its value. Such decisions take more time when choosing between options of similar value, possibly because these decisions require more evidence, but the mechanisms involved are not clear. We propose that the hippocampus supports deliberation about value, given its well-known role in prospection and relational cognition. We assessed the role of the hippocampus in deliberation in two experiments. First, using fMRI in healthy participants, we found that BOLD activity in the hippocampus increased as a function of deliberation time. Second, we found that patients with hippocampal damage exhibited more stochastic choices and longer reaction times than controls, possibly due to their failure to construct value-based or internal evidence during deliberation. Both sets of results were stronger in value-based decisions compared to perceptual decisions.
+Choosing between two items involves deliberation and comparison of the features of each item and its value. Such decisions take more time when choosing between options of similar value, possibly because these decisions require more evidence, but the mechanisms involved are not clear. We propose that the hippocampus supports deliberation about value, given its well-known role in prospection and relational cognition. We assessed the role of the hippocampus in deliberation in two experiments. First, using fMRI in healthy participants, we found that BOLD activity in the hippocampus increased as a function of deliberation time. Second, we found that patients with hippocampal damage exhibited more stochastic choices and longer reaction times than controls, possibly due to their failure to construct value-based or internal evidence during deliberation. Both sets of results were stronger in value-based decisions compared to perceptual decisions.
 
 ## Introduction
 
@@ -38,45 +38,238 @@ We conducted two experiments to address this question. First, we conducted an fM
 
 In both experiments, participants performed a value-based decision task in which they made a series of choices between two familiar food items (Figure 1). The subjective value of each individual item was determined for each participant using an auction procedure in advance (see Materials and methods), so that we could systematically vary the difference in value between the two items (i.e. ∆Value) during the decision task (see also Grueschow et al., 2015; Krajbich et al., 2010; Milosavljevic et al., 2010; Polanía et al., 2015). The same participants also took part in a control condition in which they made perceptual decisions about the dominant color of a dynamic random dot display (Figure 1 and Figure 1—video 1). The perceptual comparison task solicits the same choice and reaction time behavior but is based on external sensory input.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig1-v2.jpg)
+
+**Figure 1.:** In Experiment 1, healthy participants were scanned with fMRI during three different tasks: a value-based decision task (top), a perceptual decision task (middle), and a memory recognition task (bottom). In the value-based decision task, participants were presented with 150 pairs of foods that differed on ∆Value (based on a pre-task auction procedure for rating the items; see Materials and methods). Participants were told to choose the item that they preferred and that their choice on a randomly selected trial would be honored at the end of the experiment. In the perceptual decision task, participants were presented with 210 trials of a cloud of flickering blue and yellow dots that varied in the proportion of blue versus yellow (color coherence). Participants were told to determine whether the display was more blue or more yellow. In the recognition memory localizer task, participants underwent a standard recognition task using incidental encoding of everyday objects: first, they rated 100 objects (outside of the scanner); 48 hr later they were presented with a surprise memory test in the scanner, in which ‘old’ objects were intermixed with 100 ‘new’ objects, one at a time, and participants were asked to indicate whether each object was ‘old’ or ‘new’. In Experiment 2, amnesic patients with MTL damage and healthy controls performed variants of the value-based and perceptual decision tasks (see Materials and methods).
+
 In Experiment 1, we found that decision time in the value-based decision task was longer when the choice options were closer in value, as expected (Krajbich et al., 2010; Milosavljevic et al., 2010; Polanía et al., 2015). We also found that reaction times correlated with hippocampal BOLD activity, and this effect was localized to regions of the hippocampus that showed activity related to memory retrieval, independently identified in the same participants. In Experiment 2, we found that amnesic patients were somewhat more stochastic and much slower when making value-based decisions. Importantly, despite parallel behavioral findings in value-based decisions and perceptual decisions in the healthy controls, both the hippocampal BOLD effects and the impairments in patients were selective to the value-based decision task. Together, these findings establish a critical role for the hippocampus in value-based decisions about familiar choice options.
 
 ## Results
 
 We conducted two experiments to test the mechanisms underlying deliberation in value-based decisions. In the first experiment, we scanned healthy young participants with functional MRI while they performed value-based and perceptual decision tasks. In the second experiment, we tested behavior in amnesic patients with damage to the hippocampus and surrounding MTL as well as age-, education-, and verbal IQ-matched healthy control participants on slightly modified versions of these two decision tasks (see Materials and methods).
 
-## Experiment 1: functional MRI
+### Experiment 1: functional MRI
 
-## Behavior in both decision tasks conforms to sequential sampling models
+#### Behavior in both decision tasks conforms to sequential sampling models
 
 On the perceptual decision task, healthy young participants (n = 30) made more accurate decisions when the color was more biased toward blue or yellow (Figure 2A, top) and reaction times (RT) were longer for decisions between options that were more difficult to discriminate (i.e. color coherence near zero, Figure 2A, bottom). Similarly, on the value-based decision task, participants made decisions more consistent with their subjective valuation when ∆Value was larger (Figure 2B, top). RTs were longer for decisions between options for which the magnitude of ∆Value (|∆Value|) was smaller (Figure 2B, bottom). For both the perceptual and the value-based tasks, choices and RT were well described by drift diffusion models (Figure 2, solid lines). This observation is consistent with prior work (Krajbich et al., 2015; Ratcliff and McKoon, 2008; Shadlen and Kiani, 2013) and with the proposal that both types of decisions arise through a process of sequential sampling that stops when the accumulation of evidence satisfies a threshold or bound. The choice functions and range of RT were comparable in the two tasks, as were the goodness of fits (for model parameter estimates, see Figure 2—source data 1; for individual participant fits, see Figure 2—figure supplement 1). Some of the differences between the fits, apparent by eye, are attributed to the different scales of evidence strength in the two tasks (see Figure 2—figure supplement 2). We considered simpler parameterizations of the model, but the full model presented here produced a better fit compared to a model with no power law (BIC = 19.45), and a better fit compared to a model with no power law and flat bounds (BIC = 168.45).
 
-## Timing of value-based decisions is related to brain correlates of memory
+![Figure 2.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig2-v2.jpg)
+
+**Figure 2.:** Behavioral results from 30 young healthy participants for (A) perceptual and (B) value-based decisions. (A) Proportion of blue choices (top) and mean RT (bottom) plotted as a function of signed color coherence (the logarithm of the odds that a dot is plotted as blue). (B) Proportion of right item preference (top) and mean RT (bottom) plotted as a function of value difference (the subjective value of the item on the right side of the screen minus the subjective value of the item on the left) binned into eleven levels. Gray symbols are means (error bars are s.e.m.); solid black lines are fits to drift diffusion models. See Figure 2—figure supplement 1 for fits to data from individual participants. See Figure 2—figure supplement 3 for parameter recovery analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Light lines are running means. Dots are means and error bars are standard errors of the mean. Solid lines are model fits.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The ΔValue was transformed by scaling plus a constant such that logistic fits of the choice functions on the perceptual (black) and value tasks (red) were matched. The data and fits to drift diffusion, shown here, are identical to those in Figure 2 except for the transformation of ∆Value.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The eight-parameter drift-diffusion model fit to the data in Figure 2 (main text) may settle on local minima. For this reason, we report the best of 100 fits using initial parameter vectors spanning ranges displayed on the axes shown here. The 8 parameters of the best fits are represented by the red dots in the four graphs in the left and right columns (Perceptual and Value based fits, as indicated. Red dot values are provided in Figure 2—source data 1 for ALL participants). These are 2D projections of the 8D fits. Here, we repeat the procedure another 10 times by performing 1000 fits to simulated data with random starting vectors using uniformly distributed elements around the reported best fits. Axes represent the range of the uniform distributions from which initial starting values were sampled. For each set of 100 fits to the simulated data, we took the best fit, thereby mimicking the procedure used to obtain fits to the actual data (see Materials and methods). Gray lines represent the ten starting points (end of lines further from the red dot) and the corresponding best fit parameter values (end of lines nearer the red dot). The exercise recovers the fit parameters (red dots), with the following exceptions. There is a systematic offset of the standard deviation of the non-decision time $\sigma_{tnd}$ and/or the tnd in the recovered simulated data, which probably reflects a difference in the simulated data set. The failure to recover the terms governing the dynamics of bound collapse (B2 and Bdel; Value-based only) is a sign of over-fitting.
+
+#### Timing of value-based decisions is related to brain correlates of memory
 
 We first conducted a whole-brain analysis to identify regions in the brain that show (i) an effect of RT: a correlation between RT and BOLD activity for the value-based task more so than for the perceptual task, and (ii) a memory effect: greater BOLD activity for successful retrieval of object memories (using the separate object-memory localizer task, see Materials and methods, Figure 3—figure supplement 1 and Figure 3—source data 1). Each of these analyses of the fMRI data (RT; memory retrieval) identified largely separate networks of brain regions (Figure 3—figure supplement 1 and Figure 3—figure supplement 3; Stark and Squire, 2001; Yarkoni et al., 2009). Critically, however, both showed significant effects in the hippocampus and, as shown in Figure 3 (and Figure 3—source data 2), the conjunction of these two effects revealed significant shared BOLD activity in the hippocampus. BOLD activity in memory-related hippocampal regions was more positively correlated with RT for value-based decisions than perceptual decisions, consistent with our hypothesis that deliberation associated with resolving preference relies on memory-related hippocampal mechanisms.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-v2.jpg)
+
+**Figure 3.:** The figure shows a representative slice at the level of the hippocampus. The map exploits all three tasks and shows a comparison of the effect of trial-by-trial RT on value-based decisions with perceptual decisions, localized (with a conjunction analysis) to regions of the brain that also show a memory-retrieval effect. The full map can be viewed at https://neurovault.org/collections/BOWMEEOR/images/56727. This effect in the hippocampus was replicated with a separate analysis controlling for potential confounds (e.g. mean value across items in a pair; Figure 3—figure supplement 3D). Coordinates reported in standard MNI space. Heatmap color bars range from z-stat = 2.3 to 3.2. The map was cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent threshold of p<0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** This map was used in the conjunction map presented in Figure 3. Coordinates reported in standard MNI space. Heatmap color bars range from z-stat = 2.3 to 3.2. The map was cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent threshold of p<0.05. To see the full uncorrected map, go to https://neurovault.org/collections/BOWMEEOR/images/56726.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Main effect of task type on whole-brain BOLD activity at stimulus onset. We find very strong ventral stream and hippocampus activation for the value-based compared to the perceptual decision task. This is not surprising as ventral stream activity is crucial to recognition of objects such as the food items used. To see the full uncorrected map, go to https://neurovault.org/collections/BOWMEEOR/images/56728. (B) Modulated effect of value-based compared to perceptual RT on whole-brain BOLD activity, restricted to the range of RTs that overlap across the two tasks. Even when restricting the range in RT to be equivalent across value-based and perceptual decision tasks, we still observed a more positive relationship between BOLD in the hippocampus and RT during value-based when compared to perceptual decisions, confirming the results from a simpler model in Figure 3 and a more complex model in Figure 3—figure supplement 3. To see the full uncorrected map, go to https://neurovault.org/collections/BOWMEEOR/images/56729. Coordinates reported in standard MNI space. Heatmap color bars range from z-stat = 3.2 to 6.2 in (A) and z-stat = 2.3 to 3.2 in (B). These maps were cluster-corrected at a whole-brain level p<0.05.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Parametric maps of the modulated effect of RT on BOLD in (A) value-based (to see the full uncorrected map, go to https://neurovault.org/collections/BOWMEEOR/images/56731) and (B) perceptual decisions (to see the full map, go to https://neurovault.org/collections/BOWMEEOR/images/56732) separately in a model that includes several regressors (e.g. mean of pair values, see Materials and methods). (C) The contrast between maps in (A) and (B) (to see the full map, go to https://neurovault.org/collections/BOWMEEOR/images/56730). (D) conjunction of the contrast in panel C and the memory contrast of Hits > Correct rejections. Coordinates reported in standard MNI space. Heatmap color bars for (A–D) range from z-stat = 2.3 to 3.2. Maps in (A–D) were cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent threshold of p<0.05. Parametric maps of the modulated effect of RT on hippocampal BOLD in (E) value-based (same as (A and F) perceptual decisions (same as B) separately. (G) The contrast between maps in (A and B) (same as C). (H) The same conjunction as in (D). Heatmap color bars for (E–H) range from z-stat = 3.1 to 4.2. Maps in (E–H) were small-volume corrected within an anatomical mask of bilateral hippocampus with a voxel-level threshold of p<0.05.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Three-way conjunction between the map of RTvalue-based >RTperceptual, and two meta-analysis maps downloaded from neurosynth.org based on the terms ‘autobiographical memory’ and ‘recollection’. Highlighted voxels crossed the statistical threshold in all three maps corrected for multiple comparisons.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Modulated effect of the value of the chosen food. Positive values indicate a more positive relationship between the value of the chosen item and BOLD. To see the full uncorrected map, go to https://neurovault.org/collections/BOWMEEOR/images/125281. Coordinates reported in standard MNI space. Heatmap color bars range from z-stat = 2.3 to 3.2. The map was cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent threshold of p<0.05.
 
 We conducted a series of control analyses to consider possible alternative explanations for the differential hippocampal activation on value-based versus perceptual tasks. First, the hippocampal BOLD activity might be related simply to the fact that the value-based decision task makes more demands on memory because it depends on identifying objects. Indeed, a main effect of value-based versus perceptual decisions reveals differences in BOLD activity along the ventral stream and in the medial temporal lobe, including the hippocampus (Figure 3—figure supplement 2A and Figure 3—source data 3). However, if object identification were the reason for the RT effects, one would expect to find only a main effect of task—that is, an overall difference between the two tasks regardless of deliberation time—rather than a significant interaction between task and RT. The observation of both a main effect of task and an interaction with RT suggests that differences in object recognition do not account for the finding in the hippocampus. Second, we wondered whether the hippocampal BOLD activity in the value-based task could be related to the fact that for some participants there was a difference in the range of RT in the value-based task compared to the perceptual task. To test this, we repeated the analysis using only trials that shared the same range of RT on the two tasks (by participant). This analysis revealed a similar result (Figure 3—figure supplement 2B and Figure 3—source data 4), suggesting that the difference in the hippocampus is not related to differences in RT range.
 
 A third possibility we considered was that the tasks differ in overall levels of difficulty. Indeed, RT is a function of the difficulty levels in each of the two tasks, but there is also variability in RT within each level of difficulty, allowing us to address questions about RT while controlling for difficulty. Therefore, we tested the possibility that difficulty accounted for more of the variance in hippocampal BOLD activity than RT by repeating the same analysis as in Figure 3 while controlling for the magnitude of color coherence and ∆Value, as well as other potential correlates of RT (e.g. mean of the pair of values; see Materials and methods). This analysis again revealed RT-related activity in the hippocampus that is greater for value-based than perceptual decisions, even after accounting for other correlates of RT, both within an anatomical ROI of bilateral hippocampus and at a whole-brain corrected level (Figure 3—figure supplement 3 and Figure 3—source datas 5–8). The conjunction between the RT effect and the memory map was again found within the hippocampus ROI (Figure 3—figure supplement 3H). Finally, because our memory encoding task involved value judgments (see Materials and methods), we reran the conjunction analysis using an independent memory recognition localizer that was not specific to value-based encoding, instead using two independent meta-analysis maps from neurosynth.org based on the terms ‘autobiographical memory’ and ‘recollection’. The three-way conjunction between the differential effect of RT on BOLD and these two meta-analysis maps also shows overlap in the hippocampus (Figure 3—figure supplement 4).
 
-## Connectivity between hippocampus and parietal cortex increases with value-based decision time
+#### Connectivity between hippocampus and parietal cortex increases with value-based decision time
 
 The fMRI results suggest that BOLD activity in the hippocampus is related to the time it takes to make value-based decisions. We next explored the broader neural circuits that interact with the hippocampus during value-based decisions and how activity in such circuits varies with RT. We used a psychophysiological interaction (PPI) analysis to identify brain regions with activity that covaried in an RT-dependent manner with the activity of hippocampal ‘seed’ voxels—that is those that exhibited RT-dependent activation on the value-based decision task and memory-related activation on the memory localizer task. The strongest RT-dependent correlation was between the hippocampus and the parietal cortex (superior parietal lobule and precuneus), showing that functional connectivity between the hippocampus and parietal cortex was greater for value-based decisions that took longer (Figure 4 and Figure 4—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig4-v2.jpg)
 
-**Figure 4.:** Lateral (left) and medial (right) view of a semi-inflated surface of a template brain. PPI results were projected onto the cortical surface. There was a stronger correlation in activity between the hippocampus and the parietal cortex when value-based decisions took more time. The full map can be viewed at https://neurovault.org/collections/BOWMEEOR/images/129376. Heatmap color bars range from z-stat = 2.3 to 3.2. The map was cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent of p<0.05.10.7554/eLife.46080.028Figure 4—source data 1.Figure 4; PPI for value-based decision trials with hippocampus seed modulated by RT.
+**Figure 4.:** Lateral (left) and medial (right) view of a semi-inflated surface of a template brain. PPI results were projected onto the cortical surface. There was a stronger correlation in activity between the hippocampus and the parietal cortex when value-based decisions took more time. The full map can be viewed at https://neurovault.org/collections/BOWMEEOR/images/129376. Heatmap color bars range from z-stat = 2.3 to 3.2. The map was cluster corrected for familywise error rate at a whole-brain level with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent of p<0.05.
 
-## Experiment 2: behavior in amnesic patients
+### Experiment 2: behavior in amnesic patients
 
 The fMRI data reveal that the timing of value-based decisions is related to BOLD activity in the hippocampus, suggesting a possible role for the hippocampus in the deliberation process. However, fMRI can only tell us about brain activity correlated with a mental process, leaving open the critical question of whether the hippocampus plays a direct, causal role in value-based decisions. Experiment 2 was designed to address this question by testing value-based decision making in patients with amnesia subsequent to damage to the hippocampus and nearby MTL structures.
 
 Our overarching hypothesis is that the hippocampus contributes to value-based decisions by supporting the comparison of options, the simulation of outcomes, and the recollection of internal evidence. We therefore expected that damage to the hippocampus would impair this deliberation process. As noted earlier, we had no strong prediction regarding whether patients would show faster or slower RTs in general. We reasoned that slower RTs might reflect efforts to search for evidence to resolve decisions, whereas faster RTs might reflect choices that lack deliberative reasoning altogether. Patients with hippocampal damage are not known to have general impairments in valuation processes and the experiment only included food items that each patient fully recognized (see Materials and methods). Therefore, we expected that patients would make choices largely consistent with their subjective valuations. Finally, for the perceptual task, we expected the patients to show intact performance, consistent with the notion that the hippocampus is not needed to make decisions based on external evidence.
 
-## Timing of value-based decisions is impaired in amnesic patients
+#### Timing of value-based decisions is impaired in amnesic patients
 
 We tested six amnesic patients with damage to the hippocampus and surrounding MTL on the decision tasks from Experiment 1, slightly modified to accommodate the patient population (see Materials ans methods). The patients have well-characterized memory impairments combined with intact verbal reasoning and IQ (see Table 1), and have participated in several prior studies (Foerde et al., 2013; Grilli and Verfaellie, 2016; Palombo et al., 2019; Palombo et al., 2015b). We compared the patients to fourteen age-, education-, and verbal IQ-matched healthy participants.
 
+**Table 1.**
+ Amnesic patient demographic and neuropsychological data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Patient #</th>
+      <th rowspan="2">Diagnosis</th>
+      <th rowspan="2">Gender</th>
+      <th rowspan="2">Age</th>
+      <th rowspan="2">Edu</th>
+      <th colspan="2">WAIS-III</th>
+      <th colspan="3">WMS-III</th>
+      <th rowspan="2">BNT</th>
+      <th rowspan="2">FAS</th>
+      <th rowspan="2">L-N sequence</th>
+      <th rowspan="2">Years since onset</th>
+    </tr>
+    <tr>
+      <th>VIQ</th>
+      <th>WMI</th>
+      <th>GM</th>
+      <th>VD</th>
+      <th>AD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P01</td>
+      <td>Hypoxic-ischemic</td>
+      <td>F</td>
+      <td>67</td>
+      <td>12</td>
+      <td>88</td>
+      <td>75</td>
+      <td>52</td>
+      <td>56</td>
+      <td>55</td>
+      <td>−1.3</td>
+      <td>−1.1</td>
+      <td>-2</td>
+      <td>27.29</td>
+    </tr>
+    <tr>
+      <td>P02</td>
+      <td>Status epilepticus + left temp. lobectomy</td>
+      <td>M</td>
+      <td>54</td>
+      <td>16</td>
+      <td>93</td>
+      <td>94</td>
+      <td>49</td>
+      <td>53</td>
+      <td>52</td>
+      <td>−4.6</td>
+      <td>−0.96</td>
+      <td>-1</td>
+      <td>29.17</td>
+    </tr>
+    <tr>
+      <td>P03</td>
+      <td>Hypoxic-ischemic</td>
+      <td>M</td>
+      <td>61</td>
+      <td>14</td>
+      <td>106</td>
+      <td>115</td>
+      <td>59</td>
+      <td>72</td>
+      <td>52</td>
+      <td>0.54</td>
+      <td>−0.78</td>
+      <td>1.33</td>
+      <td>24.18</td>
+    </tr>
+    <tr>
+      <td>P04</td>
+      <td>Hypoxic-ischemic</td>
+      <td>M</td>
+      <td>65</td>
+      <td>17</td>
+      <td>131</td>
+      <td>126</td>
+      <td>86</td>
+      <td>78</td>
+      <td>86</td>
+      <td>1.3</td>
+      <td>0.03</td>
+      <td>1.33</td>
+      <td>15.00</td>
+    </tr>
+    <tr>
+      <td>P05</td>
+      <td>Encephalitis</td>
+      <td>M</td>
+      <td>75</td>
+      <td>13</td>
+      <td>99</td>
+      <td>104</td>
+      <td>49</td>
+      <td>56</td>
+      <td>58</td>
+      <td>−0.11</td>
+      <td>−0.5</td>
+      <td>0.33</td>
+      <td>5.85</td>
+    </tr>
+    <tr>
+      <td>P06</td>
+      <td>Stroke</td>
+      <td>M</td>
+      <td>53</td>
+      <td>20</td>
+      <td>111</td>
+      <td>99</td>
+      <td>60</td>
+      <td>65</td>
+      <td>58</td>
+      <td>1.02</td>
+      <td>2.1</td>
+      <td>−0.33</td>
+      <td>3.45</td>
+    </tr>
+  </tbody>
+</table>
+
+_Age in years at first session; Edu, education in years; WAIS-III, Wechsler Adult Intelligence Scale-III (Wechsler, 1997a); WMS-III, Wechsler Memory Scale-III (Wechsler, 1997b); VIQ, verbal IQ; WMI, working memory index; GM, general memory; VD, visual delayed; AD, auditory delayed; scores are age-adjusted such that a score of 100 is the age-adjusted mean with a standard deviation of 15; BNT, Boston Naming Test; FAS, verbal fluency test; L-N, Letter-Number Sequence. BNT, FAS and L-N scores were z-scored against normative data for each test._
+
 On the perceptual decision task, both patients and healthy participants made more accurate decisions when the color was more strongly biased toward blue or yellow (Figure 5A, top). The RTs of both the patients and healthy participants were longer for decisions between options that were more difficult to discriminate (i.e. color coherence near zero, Figure 5A, bottom). Patients took about the same amount of time as healthy controls to make a perceptual decision and there were no significant differences between the groups on accuracy (i.e. slopes of the choice function in Figure 5A, p=0.28) or RT (interaction between |color coherence| and group on RT, p=0.18; and main effect of group on RT, p=0.41). Further, for both groups, choices and RTs were well-described by a drift diffusion model (Figure 5A, solid lines), suggesting that damage to the hippocampus did not impair the patients’ ability to make decisions that require sequential sampling of external evidence.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig5-v2.jpg)
+
+**Figure 5.:** (A) Proportion of blue choices (top) and mean RT (bottom) plotted as a function of signed color coherence, the logarithm of the odds that a dot is plotted as blue. Data from 14 healthy controls and six amnesic patients (2922 and 1246 trials, respectively). (B) Proportion of right-item preference (top) and mean RT (bottom) plotted as a function of value difference (right minus left) binned into 11 levels. Data from 14 healthy controls and six amnesic patients (2893 and 1118 trials, respectively). To further summarize these findings, we plot individual average speed-adjusted accuracy, calculated as average accuracy divided by average RT per participant during (C) perceptual decisions and (D) value-based decisions (here, accuracy is defined as choices that are consistent with the individuals’ initial value ratings). Circle symbols are data from amnesic patients (red) and healthy age-matched controls (black). Square symbols are group averages. Error bars are s.e.m. Curves are fits of a bounded drift diffusion model (see Materials and methods). See Figure 5—figure supplement 4 for fits to data from individual participants, Figure 5—source data 1 for model parameters fit to data from individual participants, and Figure 5—figure supplement 2 for consideration of an alternative model.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Probability histogram of (A) value ratings from the rating phase and of (B) the resulting ΔValues in the choice phase for healthy participants (black) and amnesic patients (red). The solid lines are univariate kernel density estimates fit to the data. Healthy controls and amnesic patients use the full range of the rating scale when valuing individual items. The resulting distribution of ΔValues calculated from these value ratings in both groups are largely overlapping.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** We evaluated a heuristic model in which choices and RT were governed by a small set of items that were either strongly liked or disliked and thus induce fast ‘trivial’ decisions. The remainder of ‘non-trivial’ decisions are stochastic and slow, accounting for the majority of trials. The model posits that RT is not governed by ∆Value but by whether the comparison is trivial or non-trivial. This qualitative prediction is refuted in panels (A and B) (healthy participants, p<0.005), but not in panel (C) (amnesic patients; p=0.29). Fits to establish the best criterion for the trivial/non-trivial designation were established for each participant. Solid lines are least square fits to mean RT for choices between items, aggregated across participants. Shaded area is the bootstrapped 90% confidence interval for the regression slope estimate. Points and error bars (means ± s.e.m.) are plotted corresponding to the bins of ∆Value shown in other RT graphs (e.g., Figures 2 and 5). The dashed lines are the predictions from the best fitting heuristic model: the mean RT from all trials that the model designates as non-trivial. Other qualitative predictions of the model are not well supported. For example, there is no criterion on item ratings that satisfies the trivial/non-trivial distinction. No values of $k_{1}$ and $k_{2}$ identify trivial trials for which choices are fully consistent with the heuristic model prediction, as shown by the heat maps. Insets show the proportion of trials in which participants chose the item that should be chosen trivially, based on the heuristic. The range of potential criteria ($k_{1,2}$) span the highest and lowest tertiles of the values derived from the auction (A) and the rating scales (B,C). The cell marked X contains no data. The heuristic model also does not explain why the patients are slow overall (especially on trivial decisions; not shown). The heuristic model does not outperform the drift diffusion model for any of the groups, but it highlights a qualitative distinction between the amnesic patients and the other healthy groups. See Materials and methods for additional details.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** MRI images for four patients (T1-weighted images for P02, P03, and P06, and T2-weighted images for P05 are presented), and computed tomography (CT) images for patient P01 show damage to the hippocampus in all cases. Brain images are not available for the sixth patient.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/46080/elife-46080-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Light lines are running means. Dots are means and error bars are standard errors of the mean. Solid lines are model fits.
 
 In contrast, on the value-based decision task the amnesic patients’ performance diverged from that of healthy controls. Although the amnesic patients’ choices were clearly governed by ∆Value (red sigmoid function, Figure 5B top, simple effect of ΔValue on choices among amnesics, p<0.0001), their choices were more stochastic than those of the controls (flatter red sigmoid function, Figure 5B top, p=0.0008). This observation implies that the amnesic patients were not randomly guessing or forgetting the subjective value of the items but were less sensitive to their difference. Notably, the patients did not show any obvious differences in their use of the value rating scale nor in the resulting range of ΔValues (Figure 5—figure supplement 1). This implies that the flatter choice function is not explained by a difference in the use of the value rating scale but that the ∆Value derived from that scale had less purchase on their choices.
 
@@ -106,85 +299,103 @@ The idea that memory supports construction of evidence to guide value-based deci
 
 ## Materials and methods
 
-## Human subjects
+### Human subjects
 
-## Experiment 1: young healthy fMRI participants
+#### Experiment 1: young healthy fMRI participants
 
 Thirty-three healthy participants were recruited through fliers posted on campus and the surrounding area in New York City. Three participants were excluded from analysis due to excessive motion during MRI scanning. The final sample consisted of n = 30 (19 female), mean age = 24.7 ± 5.5 and self-reported Body Mass Index (BMI) = 23 ± 4.5. No statistical method was employed to pre-determine the sample size. The sample size we chose is similar to that used in previous publications.
 
 All experimental procedures were approved by the Institutional Review Board (IRB) at Columbia University and all scan participants provided signed informed consent before taking part in the study.
 
-## Experiment 2: amnesic patients and age-matched healthy control participants
+#### Experiment 2: amnesic patients and age-matched healthy control participants
 
 Eight patients with amnesia due to damage to the hippocampus and sixteen age-, education- and verbal IQ-matched healthy control participants were recruited to participate in a version of the same study (for details of the differences between the scan study and the patient study, see below). Two patients and two age-matched healthy control participants were excluded; one patient and one healthy participant did not perform the perceptual decision task satisfactorily (i.e. they did not tend to choose the color that was dominant in the stimulus), one healthy participant did not perform the value-based decision task satisfactorily (i.e. their choices were not consistent with their initial preference ratings) and one patient never completed the perceptual decision task. The final sample included n = 6 patients (one female) with amnesia (see Table 1 for demographic and neuropsychological data) and n = 14 (6 female) healthy controls matched for age (61.6 ± 10.5), education (15.7 ± 3.6), and verbal IQ (WAIS-III VIQ = 109.5 ± 10.2). All patients presented with severe anterograde and retrograde amnesia. Patients had lower than normal memory scores (two to three standard deviations below normal as measured by WMS-III, Table 1), but were largely within normal range for measures of working memory and verbal aptitude. Lesions of five of the MTL patients are presented in Figure 5—figure supplement 3, either on MRI or CT images. The remaining patient (P04) had suffered cardiac arrest and could not be scanned due to medical contraindications. MTL pathology for this patient was inferred based on etiology and neuropsychological profile. For the patient who suffered encephalitis (P05), clinical MRI was acquired only in the acute phase of illness, with no visible lesions observed on T1-weighted images. However, T2-flair images demonstrated bilateral hyperintensities in the hippocampus and MTL cortices, as well as the anterior insula. Within the MTL, two patients (P03, P06) had lesions restricted to the hippocampus, while three patients had volume loss extending outside of the hippocampus (P01, P02, P05). For four of the patients (P02, P03, P05, P06), it was possible to determine that the lesion overlapped with the peak of hippocampal activation in the fMRI study. All patients and age-matched healthy participants provided informed consent in accordance with the Institutional Review Boards at Boston University and the VA Boston Healthcare System.
 
-## Tasks
+### Tasks
 
-## Experiment 1
+#### Experiment 1
 
 The study took place over two sessions. On the first day, participants were not scanned. They were trained on the perceptual color dots task (details below), received feedback (correct/incorrect) on each trial during training, and were trained to criterion, defined as 80% or higher accuracy over the last four blocks of 10 trials. Training consisted of a minimum 200 trials and a maximum 400 trials. After color dots training, participants underwent incidental encoding for the Memory Localizer task: they rated 100 neutral objects, presented one at a time on the computer screen, on how much they liked that object by placing the cursor along a visual analog scale that ranged from 0 (least) to 10 (most) using the computer mouse. This liking rating task served as a memory encoding phase, followed two days later by a surprise memory recognition test in the scanner (details below). The first study session lasted about 1 hr. When it ended, participants were told to refrain from eating or drinking anything besides water for four hours before their next appointment. On the second session, which took place 2 days after the first session, participants took part in an auction outside of the scanner. They were then placed in the MRI scanner and performed the food choice task, the color dots task, and the memory recognition task.
 
-## Auction
+#### Auction
 
 Participants were endowed with $3, which they used to take part in an auction. The auction followed Becker-Degroot-Marschak (BDM) rules (Becker et al., 1964). This auction procedure allowed us to obtain a measure of willingness-to-pay (WTP) for each of 60 appetitive food items per participant (Plassmann et al., 2007). Participants were presented with one snack item at a time, in random order, on a computer screen. They placed their bid by moving a cursor on an analog scale that spanned from $0 to $3 at the bottom of the screen using the computer mouse. The auction was self-paced, and the next item was presented only after the participant placed his or her bid. After participants placed bids on all 60 items, they were given a chance to revise their bids to account for adjustments and scaling effects that can occur after participants experience the full food stimulus set. Participants were presented with each of the 60 items in random order a second time with their original bid displayed below and were asked whether they wanted to change their bid. If they clicked ‘NO’, they were presented with the next food item, and their original bid was kept as the WTP for that item. If participants clicked ‘YES’, the $0 to $3 analog scale was presented and they placed a new bid using the mouse as before. This new bid was recorded as the final WTP for that item. The starting location of the cursor along the analog scale was randomized on each trial and the mouse cursor was reset to the middle of the screen on each trial to prevent participants from simply clicking through the entire auction phase without deliberation. Participants were told that a single trial would be drawn at random at the end of the session, and that they could bid any amount of the full $3 for each food item because the auction repeated in an independent fashion for each of the 60 items. They were told that their best strategy to win the auction was to bid exactly what each item was worth to them to purchase from the experimenter at the end of the experiment and that bidding consistently high or consistently low was a bad strategy. At the end of the session, the computer generated a counter bid in the form of a random number between $0 and $3 in increments of 25 cents. If the computer bid was higher than the participant’s bid, then he or she lost the auction; if the participant matched or outbid the computer, he or she was offered to purchase the randomly drawn food item from the experimenter at the lower price generated by the computer. The outcome of the auction was played out at the end of the experimental session. After performing the auction outside the scanner, participants performed the following three tasks in the scanner while functional brain images were acquired.
 
-## Food choice
+#### Food choice
 
 The 60 food items were rank-ordered based on WTPs obtained during the auction, and 150 unique pairs made up from the 60 items were formed such that the difference in WTP between the two items in a pair (i.e. ∆Value) varied. Each of the 60 items appeared in five different pairs. Pairs were presented in random order, one pair at a time, with one item on each side of a central fixation cross. Right/left placement of the higher-value item in a pair was counterbalanced across trials. Participants were instructed to choose the food they preferred. Participants chose one item on each trial by pressing one of two buttons on an MRI-compatible button box. They were given up to 3 s to make their selections. After a choice was made, the selected item was highlighted for 500 ms. If participants did not make a choice before the 3 s cutoff, the message ‘Please respond faster’ was displayed for 500 ms. Trials were separated by a jittered inter-trial-interval (ITI) drawn from an exponential distribution with a mean of 3, if the value generated was below 1 or above 12, it was redrawn. The true average of the resulting distribution of ITIs across trials was 3.05 s with an sd = 2.0 s. Participants were told that they would be given the chosen food on a single randomly selected trial to eat. Participants were presented with 210 trials total, split into three 70-trial scan runs. Runs of the food choice task were interleaved with runs of the color dots task (below). Of the 150 unique pairs, 90 pairs were presented only once and 60 pairs were presented twice. Thus, each of the 60 food items was presented 7 times in total. Each scan run of the food choice task lasted 7 min.
 
-## Color dots
+#### Color dots
 
-Participants viewed a dynamic random dot display and were asked to determine whether there were more yellow or blue dots. Dots were presented at random locations within a central circular aperture (diameter 5 cm) and replaced in each video frame (60 Hz) by new dots (density 16.7 dots•cm−2•s−1) at new random positions. Each dot was assigned a color randomly with probability controlled by the color coherence, C=log(pblue/pyellow), such that pblue=eC1+eC and pyellow=1−pblue. A dot that is not blue is yellow. Throughout a single trial, C was fixed at a value drawn from a set of 11 possible levels {−2, –1, −0.5, –0.25, −0.125, 0, 0.125, 0.25, 0.5, 1, 2}. For C>0 (pblue>0.5) a blue choice is graded as correct regardless of the actual ratio of blue:yellow dots displayed. For C<0 (pyellow>0.5) a yellow choice is graded as correct regardless of the actual ratio of blue:yellow dots actually displayed. For C=0 (pblue=Pyellow=0.5), the assignment of correct was deemed 0.5. The color strength is |C|.
+Participants viewed a dynamic random dot display and were asked to determine whether there were more yellow or blue dots. Dots were presented at random locations within a central circular aperture (diameter 5 cm) and replaced in each video frame (60 Hz) by new dots (density 16.7 dots•cm−2•s−1) at new random positions. Each dot was assigned a color randomly with probability controlled by the color coherence, $C=log(p_{blue}/p_{yellow})$, such that $p_{blue}=\frac{e^{C}}{1+e^{C}}$ and $p_{yellow}=1−p_{blue}$. A dot that is not blue is yellow. Throughout a single trial, $C$ was fixed at a value drawn from a set of 11 possible levels {−2, –1, −0.5, –0.25, −0.125, 0, 0.125, 0.25, 0.5, 1, 2}. For $C>0$ ($p_{blue}>0.5$) a blue choice is graded as correct regardless of the actual ratio of blue:yellow dots displayed. For $C<0$ ($p_{yellow}>0.5$) a yellow choice is graded as correct regardless of the actual ratio of blue:yellow dots actually displayed. For $C=0$ ($p_{blue}=P_{yellow}=0.5$), the assignment of correct was deemed 0.5. The color strength is $|C|$.
 
 Participants responded by pressing one of two buttons, with the color-button mapping counterbalanced across participants. Participants were instructed to make their response as soon as they had an answer. The stimulus was presented for a maximum of 2.5 s. If they responded within the 2.5 s window, the stimulus disappeared and a central fixation cross reappeared. Intertrial intervals were generated using the same procedure used for the value-based decision task, resulting in a distribution mean across trials of 3.04 s with an sd = 2.4. Participants did not receive feedback during the main data collection, but on session 1 (training; no scanning) they received correct/incorrect feedback on each trial. Feedback appeared after a response was made and remained on the screen for 500 ms. If they did not respond within the 2.5 s choice window, a message asking participants to please respond faster was displayed for 500 ms. Participants were presented with a total of 210 trials, split into three scan runs of 70 trials each. Each scan run of the color dots task lasted 6.5 min.
 
-## Memory recognition
+#### Memory recognition
 
 Participants were presented with the 100 objects they had rated during session one as well as 100 new objects, randomly intermixed, one object at a time in the middle of the screen. Below the image of the object and to the right and left of center appeared the words ‘OLD’ and ‘NEW’ that corresponded to the right/left button mapping. On each trial, participants were asked to determine whether the object on the screen was old, meaning they remembered rating that object on their first visit or if the object was new, meaning they did not remember seeing or rating that object. Participants responded by pressing one of two buttons on an MRI-compatible button box. Old/New response-button mapping was counterbalanced across participants. The stimulus remained on the screen for a maximum of 3 s. If participants responded within the 3 s response window, their choice (i.e. OLD or NEW) was highlighted for 500 ms. If they did not respond within the 3 s window, a message asking them to please respond faster was displayed for 500 ms. Trials were separated by a jittered ITI generated using the same procedure as for the other two tasks and resulted in a distribution mean across trials of 3.0 s with an sd = 1.98 s. The 200 trials were split into four scan runs of 50 trials (approximately 5 min) each. All four runs of this task were consecutive, with no other intervening tasks in between.
 
-## Experiment 2
+#### Experiment 2
 
 The patients and age-matched healthy participants performed a version of the scan study that did not include the memory recognition task and was performed outside of the scanner. The study was conducted over two days; on one day participants took part in the value-based decision task and on the other day they took part in the perceptual decision task. The order in which tasks were performed was counterbalanced across participants. The value-based decision task differed from the task in Experiment 1 in four ways. (1) The food stimuli used were different and consisted of a wider range of non-packaged foods, not just snack foods. (2) Rather than a BDM auction, participants indicated their pre-experimental preferences for 30 food items using a preference rating scale. Participants were instructed to rate how much they prefer to eat the food item on the screen from 0 (prefer least to eat) to 10 (prefer most to eat). Participants were asked to name the food item on the screen before rating it. Foods that a participant did not recognize or misnamed were excluded from analysis. This ensured that only familiar foods were included in the analysis. Ratings were z-scored within participant and ∆Value was calculated from the z-scored ratings for 210 unique pairs of items, none of which repeated during the food choice task. (3) Participants were given 3.5 s rather than 2.5 s to make a choice. (4) Participants were not asked to fast before the experiment and did not receive a snack at the end of the experiment based on their choice on a randomly selected trial. The perceptual decision task differed from the task in Experiment 1 in three ways: (1) participants received only 40 practice trials, (2) participants continued to receive correct/incorrect feedback throughout the entire task, and (3) participants were given 3.5 s to make a choice. Prior to the perceptual task, participants were trained on selecting blue or yellow using the proper button on the keyboard to ensure that they learned the color-button mapping prior to starting the perceptual decision task. Participants were trained for only 40 trials rather than to criterion and continued to receive correct/incorrect feedback for all trials.
 
-## fMRI acquisition
+### fMRI acquisition
 
 Imaging data were acquired on a 3 T GE MR750 MRI scanner with a 32-channel head coil. Functional data were acquired using a T2*-weighted echo planar imaging sequence (repetition time (TR) = 2 s, echo time (TE) = 22 ms, flip angle (FA) = 70°, field of view (FOV) = 192 mm, acquisition matrix of 96 × 96). Forty oblique axial slices were acquired with a 2 mm in-plane resolution positioned along the anterior commissure-posterior commissure line and spaced 3 mm to achieve full brain coverage. Slices were acquired in an interleaved fashion. Each of the food choice runs consisted of 212 volumes, each of the color dots runs consisted of 197 volumes, and the memory test runs consisted of 150 volumes. In addition to functional data, a single three-dimensional high-resolution (1 mm isotropic) T1-weighted full-brain image was acquired using a BRAVO pulse sequence for brain masking and image registration.
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Choice and reaction time data
+#### Choice and reaction time data
 
 Choice and RT data were analyzed using regression models. Choice data were scored on accuracy (correct choice in the perceptual decision task or consistency of responses with the stated value for the choice option—WTP for the scan study and preference rating for patient study—that is score one for trials when the participant chose the food with higher WTP/rating and 0 if they chose the food with lower WTP/rating). These binary data were then entered into a repeated measures logistic regression mixed effects model to calculate the odds of choosing correctly/consistently with their prior valuation and test the relationship between choices and task difficulty (color coherence or ∆Value). ∆Value for the scan study was calculated by subtracting the WTP for the item on the left side of the screen from the WTP for the item on the right side of the screen. ∆Value for the patient study was calculated by subtracting the z-scored rating (z-scored within participant) for the item on the left from the z-scored rating of the item on the right. RT data were entered into a mixed effects repeated measures linear regression model to test the relationship between RT and |color coherence| or |∆Value|. For the patient study, we also entered group assignment as a predictor in the models and its interaction with ∆Value separately for each task. For the patient study, we also ran a full model combining across both tasks to assess the three-way interaction between group (patient or healthy), task type (perceptual or value-based), and difficulty on choices or RT.
 
-## Drift diffusion model
+#### Drift diffusion model
 
-We fit a one-dimensional drift diffusion model to the choice and RT on each decision. The model assumes that choice and RT are linked by a common mechanism of evidence accumulation, which stops when a decision variable reaches one of two bounds. The decision variable (x) is given by the cumulative sum of samples from a Normal distribution with mean μdt and variance dt,(1)dx=μdt+𝒩(0,dt)where 𝒩 represents an independent sample from a Normal distribution with mean 0 and variance dt, that is, the increment of a Wiener process. The accumulation starts with x = 0.
+We fit a one-dimensional drift diffusion model to the choice and RT on each decision. The model assumes that choice and RT are linked by a common mechanism of evidence accumulation, which stops when a decision variable reaches one of two bounds. The decision variable ($x$) is given by the cumulative sum of samples from a Normal distribution with mean $\mudt$ and variance $dt$,
 
-In the value-based decision, the mean of the momentary evidence (also termed the drift rate) is given by(2)μ=κs|VR−VL|p+μ0where VR and VL are the values of the right and left item respectively, κ is a fitted constant, s is the sign of the value difference (positive if VR>VL, negative otherwise), p is a fitted exponent and μ0 implements a bias to the drift rate to account for non-symmetric distributions of choice or RT between left and right choices. If p=1, then κs would yield a drift rate that varies linearly as a function of ∆Value. The power law instantiates the possibility that the monotonic relationship between ∆Value and drift rate is not necessarily linear. κ, p, and μ0 are fitted parameters.
+$$
+dx=\mudt+𝒩(0,dt)
+$$
 
-In the color-discrimination task, the mean of the momentary evidence is given by(3)μ=κs|C|p+μ0where C is the color coherence, and s is positive if C>0 and negative otherwise. There is reason to expect p≈1 for the color-discrimination task, but we allowed this degree of freedom (for parity).
+where $𝒩$ represents an independent sample from a Normal distribution with mean 0 and variance $dt$, that is, the increment of a Wiener process. The accumulation starts with $x$ = 0.
 
-We used time-varying decision bounds to account for potential differences in RT between correct and error trials. This is the normative implementation of bounded drift diffusion when there are multiple difficulty levels (Drugowitsch et al., 2012). The shape of the bound was determined by three parameters. The initial bound height, B0, remains constant for 0 ≤ t < Bdel, and then collapses exponentially towards zero with time constant B2 (in seconds). The two bounds were assumed to be symmetrical around x=0. For the value-based task, the positive bound represents a commitment to a right-item choice, and the negative bound represents a commitment to a left item choice. For the perceptual task, the positive and negative bounds indicate a commitment to the blue and yellow choices, respectively. The RT is given by the sum of the decision time, determined by the drift-diffusion process, and a non-decision time that we assume Gaussian with mean tnd and standard deviation σtnd.
+In the value-based decision, the mean of the momentary evidence (also termed the drift rate) is given by
+
+$$
+\mu=κs|V_{R}−V_{L}|^{p}+\mu_{0}
+$$
+
+where $V_{R}$ and $V_{L}$ are the values of the right and left item respectively, $κ$ is a fitted constant, s is the sign of the value difference (positive if $V_{R}>V_{L}$, negative otherwise), $p$ is a fitted exponent and $\mu_{0}$ implements a bias to the drift rate to account for non-symmetric distributions of choice or RT between left and right choices. If $p=1$, then $κs$ would yield a drift rate that varies linearly as a function of ∆Value. The power law instantiates the possibility that the monotonic relationship between ∆Value and drift rate is not necessarily linear. $κ$, $p$, and $\mu_{0}$ are fitted parameters.
+
+In the color-discrimination task, the mean of the momentary evidence is given by
+
+$$
+\mu=κs|C|^{p}+\mu_{0}
+$$
+
+where $C$ is the color coherence, and $s$ is positive if $C>0$ and negative otherwise. There is reason to expect $p≈1$ for the color-discrimination task, but we allowed this degree of freedom (for parity).
+
+We used time-varying decision bounds to account for potential differences in RT between correct and error trials. This is the normative implementation of bounded drift diffusion when there are multiple difficulty levels (Drugowitsch et al., 2012). The shape of the bound was determined by three parameters. The initial bound height, B0, remains constant for 0 ≤ t < Bdel, and then collapses exponentially towards zero with time constant B2 (in seconds). The two bounds were assumed to be symmetrical around $x=0$. For the value-based task, the positive bound represents a commitment to a right-item choice, and the negative bound represents a commitment to a left item choice. For the perceptual task, the positive and negative bounds indicate a commitment to the blue and yellow choices, respectively. The RT is given by the sum of the decision time, determined by the drift-diffusion process, and a non-decision time that we assume Gaussian with mean tnd and standard deviation $\sigma_{tnd}$.
 
 We performed separate fits for perceptual- and value-based tasks. The model was fit to maximize the joint likelihood of choice and RT of each trial. The likelihood of the parameters given the data from each trial was obtained by numerically solving the Fokker-Planck (FP) equation describing the dynamics of the drift-diffusion process. We used fast convolution methods to find the numerical solution to the FP equation. The parameter optimization was performed using the Nelder-Mead Simplex Method (Lagarias et al., 1998) to minimize the negative log-likelihood of the parameters given the choice and RT data. All parameters were bounded during the fitting procedure. We took the best fit parameters from one hundred fits using random starting points to ensure that the optimization search did not get stuck in a local minimum. For the value-based task, we reduced the number of unique drift-rates by rounding ∆Value to multiples of 0.1 dollars. In Figure 2 and Figure 5, we fit the models to grouped data from all participants after binning ∆Value into 11 levels. These 11 levels had fixed boundaries on ∆Value and were assigned the mean ∆Value of the points composing the bin. This binning was intended to match the levels of ∆Value to the discrete levels of color coherence. The fits for individual participants were performed on all trials (not binned) and are shown in Figure 2—figure supplement 1 and Figure 5—figure supplement 4. The best fitting parameters for the grouped and non-grouped data are displayed in Figure 2—source data 1 and Figure 5—source data 1.
 
-## Heuristic model
+#### Heuristic model
 
-We evaluated an alternative to drift-diffusion models, which obeys the following heuristic. Suppose that a subset of food items are valued as either highly desirable (D+) or highly undesirable (D−). All the other items are designated middling (D≈). This yields three types of decisions: (i) Decisions between an item from D+ and an item from the other categories (D− or D≈) are fast choices of the preferred item regardless of ∆Value. (ii) Decisions between an item from D− and an item from D≈ are fast choices of item from D≈ regardless of ∆Value. (iii) Decisions between two items from the same class (both from D+, both from D−, or both from D≈) are slow, regardless of ∆Value and they are stochastic. We allowed these stochastic choices to be governed by a logistic function of ∆Value, although it could be argued that they ought to be random. We refer to i and ii as trivial decisions and to iii as non-trivial decisions. The only role of ∆Value is to determine the choice probabilities for the non-trivial decisions. Importantly, it is uncoupled to the RT, which is uniformly slow for this category.
+We evaluated an alternative to drift-diffusion models, which obeys the following heuristic. Suppose that a subset of food items are valued as either highly desirable ($D^{+}$) or highly undesirable ($D^{−}$). All the other items are designated middling ($D^{≈}$). This yields three types of decisions: (i) Decisions between an item from $D^{+}$ and an item from the other categories ($D^{−}$ or $D^{≈}$) are fast choices of the preferred item regardless of ∆Value. (ii) Decisions between an item from $D^{−}$ and an item from $D^{≈}$ are fast choices of item from $D^{≈}$ regardless of ∆Value. (iii) Decisions between two items from the same class (both from $D^{+}$, both from $D^{−}$, or both from $D^{≈}$) are slow, regardless of ∆Value and they are stochastic. We allowed these stochastic choices to be governed by a logistic function of ∆Value, although it could be argued that they ought to be random. We refer to i and ii as trivial decisions and to iii as non-trivial decisions. The only role of ∆Value is to determine the choice probabilities for the non-trivial decisions. Importantly, it is uncoupled to the RT, which is uniformly slow for this category.
 
-We implemented this model using the following degrees of freedom: κ1 and κ2 are criteria that separate the ranges of value corresponding to D−, D≈ and D+; two means and two standard deviations for the fast and slow RTs; and two degrees of freedom (β0, β1) for the logistic regression relating the non-trivial choices to ∆Value. The model was fit to maximize the joint likelihood of choice and RT of each trial. We used the Nelder-Mead Simplex Method (Lagarias et al., 1998) to find the model’s parameters that minimize the negative log-likelihood (NLL) of the choice and RT data. RTi and RTii are assumed to be generated from a normal distribution with a mean μRTfast and a standard deviation σRTfast2. RTiii are assumed to be generated from μRTslow and a standard deviation σRTslow2. The NLL for non-trivial choices derive from a Bernoulli (binomial) distribution: −log(p[choice|,β0,β1]). The NLL for trivial choices is not properly specified. The model posits a deterministic decision rule for these trials, but the data exhibit stochasticity (see insets in Figure 5—figure supplement 2). To avoid infinite penalization during fitting, we assigned the probability p=0.99 for trivial choices consistent with the rule, and 1−p for the exceptions. For model comparison statistics (e.g. BIC), we obtain p from the logistic function (derived from the non-trivial choices) evaluated at Max(|∆Value|).
+We implemented this model using the following degrees of freedom: $κ_{1}$ and $κ_{2}$ are criteria that separate the ranges of value corresponding to $D^{−}$, $D^{≈}$ and $D^{+}$; two means and two standard deviations for the fast and slow RTs; and two degrees of freedom ($\beta_{0}$, $\beta_{1}$) for the logistic regression relating the non-trivial choices to ∆Value. The model was fit to maximize the joint likelihood of choice and RT of each trial. We used the Nelder-Mead Simplex Method (Lagarias et al., 1998) to find the model’s parameters that minimize the negative log-likelihood (NLL) of the choice and RT data. RTi and RTii are assumed to be generated from a normal distribution with a mean $\mu_{RTfast}$ and a standard deviation $\sigma_{RTfast}^{2}$. RTiii are assumed to be generated from $\mu_{RTslow}$ and a standard deviation $\sigma_{RTslow}^{2}$. The NLL for non-trivial choices derive from a Bernoulli (binomial) distribution: $−log(p[choice|,\beta_{0},\beta_{1}])$. The NLL for trivial choices is not properly specified. The model posits a deterministic decision rule for these trials, but the data exhibit stochasticity (see insets in Figure 5—figure supplement 2). To avoid infinite penalization during fitting, we assigned the probability $p=0.99$ for trivial choices consistent with the rule, and $1−p$ for the exceptions. For model comparison statistics (e.g. BIC), we obtain p from the logistic function (derived from the non-trivial choices) evaluated at Max(|∆Value|).
 
 The arbitrary choice of penalty for inconsistent choices on trivial trials renders model comparison ill-posed. The same can be said for the implementation of a logistic choice function to account for the stochastic non-trivial choices. Nevertheless, we compared the heuristic model to the diffusion models by comparing the deviance of the best fits (same as BIC because the number of degrees of freedom are equal). We also implemented a version of the model that employs a ‘trembling hand’ error for penalizing an incorrect choice on a trivial trial by allowing the probability p for trivial choices to be a free parameter. We find that the DDM model still performs better than this more permissive parametrization of the heuristic model (BIC = 425.88).
 
-The unsatisfactory aspects of this model comparison exercise led us to pursue a more qualitative strategy. The heuristic model posits independence of RT and ∆Value once grouped by trivial or non-trivial, whereas sequential sampling models (e.g. diffusion) predict a dependence regardless of this grouping. We evaluated this prediction by examining the effect of |∆Value| on RT, using mixed effects linear regression on combined data from the participants in the three experimental groups: imaging, amnesic patients and their age-matched controls. For the heuristic model, the designation of trivial vs. non-trivial was established from fits to each participant’s data (i.e., κ1 and κ2). The analysis is shown in Figure 5—figure supplement 2.
+The unsatisfactory aspects of this model comparison exercise led us to pursue a more qualitative strategy. The heuristic model posits independence of RT and ∆Value once grouped by trivial or non-trivial, whereas sequential sampling models (e.g. diffusion) predict a dependence regardless of this grouping. We evaluated this prediction by examining the effect of |∆Value| on RT, using mixed effects linear regression on combined data from the participants in the three experimental groups: imaging, amnesic patients and their age-matched controls. For the heuristic model, the designation of trivial vs. non-trivial was established from fits to each participant’s data (i.e., $κ_{1}$ and $κ_{2}$). The analysis is shown in Figure 5—figure supplement 2.
 
-## Imaging analysis
+### Imaging analysis
 
-## Imaging data preprocessing
+#### Imaging data preprocessing
 
 Raw imaging data in DICOM format were converted to NIFTI format and preprocessed through a standard preprocessing pipeline using the FSL package version 5 (Smith et al., 2004). Functional image time series were first aligned using the MCFLIRT tool to obtain six motion parameters that correspond to the x, y, z translation and rotation of the brain over time. Next, the skull was removed from the T2* images using the brain extraction tool (BET) and from the high-resolution T1 images using Freesurfer (Fischl et al., 1999; Ségonne et al., 2004). Spatial smoothing was performed using a Gaussian kernel with a full-width half maximum (FWHM) of 5 mm. Data and design matrix were high-pass filtered using a Gaussian-weighted least-squares straight line fit with a cutoff period of 100 s. Grand-mean intensity normalization of each run’s entire four-dimensional data set by a single multiplicative factor was performed. The functional volumes for each participant and run were registered to the high resolution T1-weighted structural volume using a boundary-based registration method implemented in FSL5 (BBR, Greve and Fischl, 2009). The T1-weighted image was then registered to the MNI152 2 mm template using a linear registration implemented in FLIRT (12 degrees of freedom). These two registration steps were concatenated to obtain a functional-to-standard space registration matrix.
 
-## Food choice
+#### Food choice
 
 We conducted a generalized linear model (GLM) analysis on the food choice task data. The first analysis included three regressors of interest: (i) onsets for all valid choice trials; (ii) same onsets and duration as (i) but modulated by RT; (iii) onsets for missed trials. After running this model, we ran a conjunction analysis using the output of this model and the equivalent model on the perceptual decision task data (see below) with our main memory retrieval success contrast (see memory recognition section below). The conjunction map is presented in Figure 3. This model was also used to generate the map in Figure 3—figure supplement 2A.
 
@@ -194,7 +405,7 @@ The third GLM model is the model we based our inferences on and included twelve 
 
 In all models, we also included the six x, y, z translation and rotation motion parameters obtained from MCFLIRT, framewise displacement (FD) and RMS intensity difference from one volume to the next (Power et al., 2012) as confound regressors. We also modeled out volumes with FD and DVARS that exceeded a threshold of 0.5 by adding a single time point regressor for each ‘to-be-scrubbed’ volume (Siegel et al., 2014). All regressors were entered at the first level of analysis and all (but the added confound regressors) were convolved with a canonical double-gamma hemodynamic response function. The temporal derivative of each regressor (except for the added confound regressors) was included in the model. The models were estimated separately for each participant and each run.
 
-## Color dots
+#### Color dots
 
 The first GLM analysis included three regressors of interest: (i) onsets for all valid choice trials; (ii) same onsets and duration as (i) but modulated by RT; (iii) onsets for missed trials. After running this model, we ran a conjunction analysis using the output of this model and the equivalent model on the value-based decision task data (see above) with our main memory retrieval success contrast (see memory recognition section below). The conjunction map is presented in Figure 3. This model was also used to generate the map in Figure 3—figure supplement 2A.
 
@@ -204,22 +415,22 @@ The third GLM model for the color dots task is the model that we based our infer
 
 For all models, we added the same covariates as in the food choice design matrix, including the six motion regressors described above, along with FD and DVARS as confound regressors.
 
-## Memory recognition
+#### Memory recognition
 
 The GLM for the memory recognition task data included 8 regressors of interest: (i) onsets of hit trials (i.e. participant responded old when the object on the screen was old), modeled with a duration that equaled the average RT across all valid memory trials and participants; (ii) same onset and duration as (i) but modulated by liking rating for the object demeaned across these trials within each run for each participant; (iii) onsets of miss trials (i.e. participant responded new when the object on the screen was old) modeled with the same duration as (i); (iv) same onset and duration as (iii) but modulated by liking rating for the object demeaned across these trials within each run for each participant; (v) onsets of correct rejection trials (i.e. participant responded new when the object on the screen was new) modeled with the same duration as (i); (vi) onsets of false alarm trials (i.e. participant responded old when the object on the screen was new) modeled with the same duration as (i); (vii) to account for any differences in RT between trial types we added a regressor with the onsets of all valid trials and the same duration as all other regressors (average RT across all trials and participants) while the modulator was the demeaned RT across all valid trials; (viii) onsets for missed trials. We added the same covariates as in the food choice design matrix, including the six motion regressors described above, along with FD and DVARS as confound regressors. The map for the contrast hits >correct rejections in this model is presented in Figure 3—figure supplement 1. This contrast was also used in the conjunction analysis presented in Figure 3.
 
-## Conjunction analysis
+#### Conjunction analysis
 
 To test the spatial overlap in memory-retrieval-related brain activity and value-based-RT-related activation, we conducted a conjunction analysis between the maps presented in Figure 3—figure supplement 1 (memory retrieval success contrast of hits [regressor (i) in memory recognition fMRI GLM model] greater than correct rejections [regressor (v) in memory recognition fMRI GLM model]) and the same map as in Figure 3—figure supplement 3C, but for the simpler model (contrast of value-based RT [regressor (iii) in the first food choice fMRI GLM model] greater than perceptual RT [regressor (iii) in the first color dots fMRI GLM model]). The conjunction map is presented in Figure 3.
 
-## Psychophysiological interaction (PPI)
+#### Psychophysiological interaction (PPI)
 
 As the seed for the PPI analysis, we used significant voxels for the contrast value-based RT greater than perceptual RT (Figure 3—figure supplement 3C) that lay within an anatomical mask of bilateral hippocampus (Harvard-Oxford Atlas). The PPI regressor was created by deconvolving the seed to obtain an estimated neural signal during value-based decisions using SPM’s deconvolution algorithm (Gitelman et al., 2003), calculating the interaction with the task in the neural domain and then reconvolving to create the final regressor. We followed McLaren et al.’s (McLaren et al., 2012) gPPI modeling procedure and included nine regressors in our GLM: (i) onsets of all valid food choice trials, modeled with a duration that equaled the average RT across all valid trials and participants; (ii) onsets of all valid trials, modeled with the same duration as in i and modulated by RT, demeaned across these trials within each run for each participant; (iii) onsets of all valid trials, modeled with the same duration as in i and modulated by |∆Value|, demeaned across these trials within each run for each participant; (iv) same onsets and duration as i but modulated by the value of the chosen food, demeaned across these trials within each run for each participant; (v) to account for any differences in right/left choices, we added a regressor with the same onsets and duration as i but modulated by an indicator for right/left response; (vi) onsets of all missed trials with the same duration as i; (vii) the raw time course extracted from the seed (after registering the seed to the native space of each run for each participant); (viii) a PPI regressor with the same onsets as i. The PPI that varied linearly with RT during food choice trials generated the map in Figure 4.
 
-## GLM model estimation and correction for multiple comparisons
+#### GLM model estimation and correction for multiple comparisons
 
 All GLM models were estimated using FSL’s FEAT. The first-level time-series GLM analysis was performed for each run per participant using FSL’s FILM. The first-level contrast images were then combined across runs per participant using fixed effects. The group-level analysis was performed using FSL’s mixed effects modeling tool FLAME1 (Beckmann et al., 2003). Group-level maps were corrected to control the familywise error rate in one of two ways: for whole-brain correction, we used cluster-based Gaussian random field correction for multiple comparisons, with an uncorrected cluster-forming threshold of z = 2.3 and corrected extent threshold of p<0.05. For small volume correction, we used a voxel-based Gaussian random field theory-based maximum height thresholding with a voxel-level corrected threshold of p<0.05 within a 3D mask of a region of interest.
 
-## Data and software availability
+### Data and software availability
 
 Data from this study are available from the corresponding author upon request. Task code and analysis code is available at https://github.com/abakkour/MDMRT_scan (Bakkour, 2019; copy archived at https://github.com/elifesciences-publications/MDMRT_scan/settings). Imaging analysis code is available from the corresponding author upon request.

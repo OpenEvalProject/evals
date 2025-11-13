@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.37241.001 Neural selectivity to orientation is one of the simplest and most thoroughly-studied cortical sensory features. Here, we show that a large body of research that purported to measure orientation tuning may have in fact been inadvertently measuring sensitivity to second-order changes in luminance, a phenomenon we term ‘vignetting'. Using a computational model of neural responses in primary visual cortex (V1), we demonstrate the impact of vignetting on simulated V1 responses. We then used the model to generate a set of predictions, which we confirmed with functional MRI experiments in human observers. Our results demonstrate that stimulus vignetting can wholly determine the orientation selectivity of responses in visual cortex measured at a macroscopic scale, and suggest a reinterpretation of a well-established literature on orientation processing in visual cortex.
+Neural selectivity to orientation is one of the simplest and most thoroughly-studied cortical sensory features. Here, we show that a large body of research that purported to measure orientation tuning may have in fact been inadvertently measuring sensitivity to second-order changes in luminance, a phenomenon we term ‘vignetting'. Using a computational model of neural responses in primary visual cortex (V1), we demonstrate the impact of vignetting on simulated V1 responses. We then used the model to generate a set of predictions, which we confirmed with functional MRI experiments in human observers. Our results demonstrate that stimulus vignetting can wholly determine the orientation selectivity of responses in visual cortex measured at a macroscopic scale, and suggest a reinterpretation of a well-established literature on orientation processing in visual cortex.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Here, we develop a theoretical account of the edge effect that Carlson (2014) de
 
 ## Results
 
-## Coarse-scale bias and stimulus vignetting: Model simulations
+### Coarse-scale bias and stimulus vignetting: Model simulations
 
 We studied the impact of stimulus vignetting on coarse-scale orientation preference maps. The principle underlying stimulus vignetting is that the vignette spreads Fourier energy. The direction and amplitude of this spread is determined by the underlying stimulus spectrum and the aperture geometry, in much the same way that the Fourier transform of a sinusoid windowed by a rectangle consists of the sinusoid frequency convolved with a sinc function. Due to this spectral spread at the aperture edge, neurons with receptive fields straddling the aperture edge respond to a combination of spatial frequency and orientation components, different from neurons with receptive fields far from the edge (Figure 1).
 
@@ -56,9 +56,17 @@ The model predicted that the coarse-scale orientation bias should depend on the 
 
 The stimuli used in Freeman et al. (2011), and in our simulations in Figure 2, had vignettes with gradual contrast changes, indicating that the impact of vignetting on orientation bias is not dependent on the presence of sharp edges. But is it possible that a more gradual edge would have mitigated vignetting effects? We answered this question by using a sinusoidal modulation that lacked any edges (Figure 3, left). We found similar results for both sinusoidal modulators and modulators with hard edges (i.e. square-wave), as expected, because vignetting arises from any contrast change in the image, rather than an ‘edge’ per se (see Discussion).
 
-## Coarse-scale bias and stimulus vignetting: fMRI experiments
+### Coarse-scale bias and stimulus vignetting: fMRI experiments
 
 We found evidence of stimulus vignetting at both 3T and 7T field strengths, at different spatial resolutions, and for both square wave and sinusoidal modulators, as predicted by the theoretical model. The radial modulator evoked a radial bias, that is, orientation preferences pointing inward toward the fovea (Figure 4, top row). The angular modulator evoked a tangential bias, that is, orientation preferences that were rotated by 90 deg from radial (Figure 4, bottom row). Furthermore, on a voxel-by-voxel basis, preferred orientations were shifted by 90 deg across modulators (Figure 5). Comparing model predictions to data from individual voxels, we observed a clear correspondence between predicted and measured orientation preference (Figure 6). Circular correlations between predicted and measured orientation preferences were 0.26 and 0.20 for radial and angular modulators, respectively (p<0.0001 for both). Note that many sources of noise in the measurements could impact this analysis: in estimating the location and size of each voxel’s pRF, in measuring each voxel’s orientation preference, and in coregistering each voxel’s response across multiple fMRI sessions. Moreover, the model we use is highly simplified; for example, it does not take into account changes in spatial frequency tuning at greater eccentricities. Yet, despite the multiple sources of noise and the simplified assumptions of the model, the correspondence between the model’s prediction and the empirical measurements is highly statistically significant.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37241/elife-37241-fig4-v1.jpg)
+
+**Figure 4.:** (A) Conventional resolution, 3T. Top: Responses to phase-encoded oriented gratings multiplied by a static radial modulator (shown in inset). The oriented grating cycled through 16 steps of orientation ranging from 0° to 180° every 24 s. The radial modulator was constant during the entire experiment. Map thresholded at coherence of 0.2. Hue indicates phase of the best fitting sinusoid. White lines indicate V1/V2 boundaries. Bottom: Responses to the same oriented grating as in A, but here the grating is multiplied by an angular modulator. As predicted by the model, the radial modulator gave rise to a radial orientation bias, while the angular modulator gave rise to a tangential orientation bias. (B) High-resolution, high field strength (7T) measurements of orientation preference for radial and angular modulators. Stimuli and conventions same as for A, except the modulators were radial and angular sinusoids.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37241/elife-37241-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Left: responses to square wave modulators at 3T. Middle: responses to square wave modulators at 7T. Right: responses to sinusoidal modulators at 7T.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/37241/elife-37241-fig5-v1.jpg)
 
@@ -106,7 +114,7 @@ Regardless of whether a gain map and/or asymmetric surround suppression contribu
 
 ## Materials and methods
 
-## Theoretical model
+### Theoretical model
 
 The image-computable model is based on the steerable pyramid (Simoncelli et al., 1992), a subband image transform that decomposes an image into orientation and spatial frequency channels (Figure 1). The pyramid simulates the responses of a large number of linear receptive fields (RFs), each of which computes a weighted sum of the stimulus image; the weights determine the orientation and spatial frequency tuning. RFs with the same orientation and spatial-frequency tuning, but shifted to different locations, are called a ‘channel’. In the model, the number of spatial frequency channels, orientation channels, and orientation bandwidth are model parameters that can each be chosen flexibly. We used an instantiation of the model with six orientations, which resulted in a bandwidth comparable to empirical tuning curves measured in primate electrophysiological recordings (Ringach et al., 2002). Using four or more bands with correspondingly broader or narrower tuning curves yielded similar results supporting the same conclusions. The number of spatial frequency channels was determined by the size of the input images and the spatial frequency bandwidth. We used images that were 768 × 1024 pixels, and a spatial frequency bandwidth of 0.5 octaves, and so the model had 15 different spatial frequency channels. The RFs cover all orientations and spatial frequencies evenly (i.e., the sum of the squares of the tuning curves is exactly equal to one for all orientations and spatial frequencies). For each orientation and spatial frequency, the pyramid includes RFs with two different phases, analogous to odd- and even-phase Gabor filters. The sum of the squares of the responses of two such RFs computes what has been called an ‘energy’ response (Adelson and Bergen, 1985; Heeger, 1992) because it depends on the local spectral energy within a spatial region of the stimulus, for a particular orientation and spatial frequency. The energy responses are also arranged in channels. The linear RFs in the model are hypothesized to be a basis set of orientation and spatial frequency tuning curves of V1 neurons; any invertible linear transform of the basis set can be substituted (Freeman and Adelson, 1991; Simoncelli et al., 1992; Simoncelli, 1993) and different such transforms can be substituted at each spatial location, consistent with the diversity in the tuning properties of V1 neurons, without changing the nature of the representation. The model was designed so that the filters evenly tile retinotopic space, orientation, and spatial frequency to avoid any possibility of the kind of artifact that was suggested to underlie Carlson (2014) simulation results (Clifford and Mannion, 2015).
 
@@ -114,11 +122,11 @@ The strength of the model is its simplicity. Our goal is not to provide an accur
 
 We used the theoretical model to predict fMRI responses to a wide range of stimuli. We then chose stimuli that were predicted to have opposite patterns of orientation bias when measured with fMRI. Predicted responses were calculated by finding the scale with maximal responses, summing the energy responses for the channels at that scale, and averaging across stimulus grating phases (See: fMRI experiments, Stimuli).
 
-## fMRI experiments
+### fMRI experiments
 
 fMRI experiments were conducted at two sites. Experiments at 3T were conducted at NYU Center for Brain Imaging. Experiments at 7T were conducted at Functional Magnetic Resonance Imaging Core Facility at NIH. Methods were similar between the two sites except where noted.
 
-## Stimuli
+#### Stimuli
 
 Stimuli consisted of two gratings (a carrier and a modulator) multiplied by one another (Figure 3). The carrier grating consisted of a large, oriented sinusoidal Cartesian grating (spatial frequency, NYU: 0.5 cycles per degree; NIH: 1.4 cycles per degree) presented within an annulus (NYU: inner radius, 0.5°; outer radius 9.5°; NIH: inner radius 0.75°; outer radius 9°). The spatial phase of the carrier grating was randomized every 250 ms from a predefined set of 16 phases uniformly distributed between 0 and 2π. The orientation of the carrier grating cycled through 16 evenly- spaced angles between 0° and 180° (1.5 s per orientation). The carrier grating completed 10.5 cycles in each run. Each cycle was 24 s long, producing a run length of 4 min, 12 s. The orientation of the carrier grating cycled clockwise in half of the runs and counter-clockwise in the other half.
 
@@ -126,7 +134,7 @@ The modulator grating was a polar-transformed grating. In the ‘square wave mod
 
 Because the only stimulus feature that varied within each run was the orientation of the carrier grating, any fMRI activity measured within each run could be attributed to either the orientation of the carrier grating, or an interaction between the orientation of the carrier grating and the static modulator grating. The modulator itself did not evoke any modulation in the fMRI responses because it did not change during the course of a scanning run.
 
-## Observers
+#### Observers
 
 Thirteen observers (eight females, aged 22–27 years) with normal or corrected-to-normal vision participated in the study. Observers provided written informed consent.
 
@@ -134,13 +142,13 @@ The consent and experimental protocol were in compliance with the safety guideli
 
 Each observer participated in multiple scanning sessions. Five observers (O1–O5) each participated in one session of the ‘square wave modulator’ experiment on the 3T scanner at NYU. Seven observers (O6–O11, O13) each participated in two sessions at NIH: one session for the ‘square wave modulator’ experiment and one session for the ‘sine wave modulator’ experiment. Data from a single session were discarded due to severe ghosting in the BOLD images. One observer (O12) did not participate in the ‘sine wave modulator’ experiment. In addition, each of the thirteen observers participated in one session to obtain a set of high-resolution anatomical volumes, used for cortical segmentation, and an additional session for retinotopic mapping.
 
-## Orientation mapping experiments
+#### Orientation mapping experiments
 
 Stimuli were generated using Matlab (MathWorks, MA) and MGL (Gardner et al., 2018b) on a Macintosh computer. Stimuli were displayed via an LCD projector (3T scanner: Eiki LC-XG250; resolution: 1024 × 768 pixels; refresh rate: 60 Hz. 7T scanner: PLUS U2-1200; resolution: 800 × 600 pixels; refresh rate: 60 Hz) onto a back-projection screen in the bore of the magnet. Observers viewed the display through an angled mirror at a viewing distance of approximately 58 cm (field of view in the 3T at NYU: 31.6 deg × 23.7 deg; field of view in the 7T at NIH: 20.5 deg × 16.1 deg).
 
 The novel stimuli consisted of two gratings (a carrier and a modulator) multiplied by one another (Figure 3). The carrier grating consisted of a large, oriented sinusoidal Cartesian grating presented within an annulus. The spatial phase of the carrier grating was randomized every 250 ms from a predefined set of 16 phases uniformly distributed between 0 and 2π. The orientation of the carrier grating cycled through 16 evenly-spaced angles between 0° and 180° (1.5 s per orientation). The carrier grating completed 10.5 cycles in each run. Each cycle was 24 s long, producing a run length of 4 min, 12 s. The orientation of the carrier grating cycled clockwise in half of the runs and counter-clockwise in the other half.
 
-## Behavioral task
+#### Behavioral task
 
 Throughout each run, observers continuously performed a demanding two-interval, forced-choice task to maintain a consistent behavioral state and stable fixation, and to divert attention from the main experimental stimuli. In each trial of the task, the fixation cross (a 0.4 deg crosshair) dimmed twice (for 400 ms at a time), and the observer indicated with a button press the interval (1 or 2) in which it was darker. The observer had 1 s to respond and received feedback through a change in the color of the fixation cross (correct green, incorrect red). Each contrast decrement and response period was preceded by a 800 ms interval, such that each trial lasted 4.2 s. The fixation task was out of phase with the main experimental stimulus presentation. Contrast decrements were presented using an adaptive, 1-up-2-down staircase procedure (Levitt, 1971) to maintain performance at approximately 70% correct.
 
@@ -152,19 +160,19 @@ For each observer, a high-resolution anatomy of the entire brain was acquired by
 
 At NIH, prior to the first experimental functional run of each session, 30 volumes were acquired with identical scanning parameters and slice prescription as the subsequent functional runs, except for the phase encoding direction which was reversed. This scan was used for correcting spatial distortions (see next section).
 
-## fMRI time series preprocessing
+#### fMRI time series preprocessing
 
 The single reverse phase-encoded run was used to estimate the susceptibility-induced off-resonance field using a method similar to that described in (Andersson et al., 2003) as implemented in FSL (Smith et al., 2004). This estimate was then used to correct the spatial distortions in each subsequent run in the session. Data from the first half cycle (eight volumes) at the beginning of each functional run were discarded to minimize the effect of transient magnetic saturation and to allow hemodynamic response to reach steady state: the first half cycle. Functional data were compensated for head movement within and across runs (Nestares and Heeger, 2000), linearly detrended, and high-pass filtered (cutoff: 0.01 Hz) to remove low-frequency noise and drift (Smith et al., 1999). The time series for each voxel was divided by its mean to convert from arbitrary intensity units to percent change in image intensity. Time series data from each run were shifted back in time by three volumes (4.5 s) to compensate approximately for hemodynamic lag. Time series for the clockwise runs were time reversed to match the sequence of the counterclockwise runs. Time series were then averaged within modulator type (the matrix of 8 conditions: cosine and sine modulator crossed with clockwise and counterclockwise orientation). Each individual voxel’s time-course was fitted to a cosine, and the orientation corresponding to the phase of the cosine was assigned as that voxel’s preferred orientation. It should be noted that shifting, inverting and averaging minimizes differences in hemodynamic responses between voxels, and results in a smooth time series that fits well to a cosine. Without this stage, the time series would have less Fourier power at the fundamental frequency and much of the power would instead shift to harmonic frequencies (see (Pratte et al., 2016) for examples of these effects).
 
-## Retinotopic maps
+#### Retinotopic maps
 
 Retinotopy was measured using non-periodic traveling bar stimuli and analyzed using the population receptive field (pRF) method (Dumoulin and Wandell, 2008). Bars were 3 deg wide and traversed the field of view in sweeps lasting 24 s. Eight different bar configurations (4 orientations and two traversal directions) were presented. The pRF of each voxel was estimated using standard fitting procedures (Dumoulin and Wandell, 2008), implemented in Matlab using mrTools (Gardner et al., 2018a). Visual area boundaries were drawn by hand on the flat maps, following published conventions (Engel et al., 1997; Larsson et al., 2017; Wandell et al., 2007).
 
-## pRF sampling analysis
+#### pRF sampling analysis
 
 To test the model’s predictions for the responses of individual fMRI voxels, we estimated pRFs and sampled the model’s output at the corresponding region of the visual field. Specifically, each voxel’s Gaussian pRF was used to weight the model output for each grating orientation, averaged across grating phase and modulator phase, resulting in a single predicted response value for each orientation. We then fitted a cosine to the responses, with the phase reflecting the voxel’s predicted preferred orientation. This was done separately for each of the two modulators. Finally, we compared the predicted preferred orientation to the measured preferred orientation (see Figure 6, top).
 
-## fMRI MVPA analysis
+#### fMRI MVPA analysis
 
 Classification was performed on fMRI time series, in a leave-one-run-out manner, with a naive Bayes classifier (using Matlab function ‘classify’ with ‘diagLinear’ option). First, for each voxel, we averaged across all 10 cycles within a run, yielding 16 time points per voxel, which reflected the amplitude of the response to each stimulus orientation. We refer to these 16 vectors across voxels as population responses, a single response vector per time point, or equivalently, per orientation.
 
@@ -174,6 +182,6 @@ For across-modulator decoding, the classifier was trained on data from one modul
 
 While decoding enabled us to measure orientation information present in population responses, it provided only an indirect view of the shift the responses undergo, as a result of changing the modulator. To visualize the responses in a more direct fashion, we used representational similarity analysis. Each condition (i.e., 16 orientations for each of 2 modulators), represented by a population response vector averaged across cycles and runs, was correlated with all other conditions, yielding a correlation matrix. The matrix was transformed into a dissimilarity matrix by subtracting from 1 (i.e., dissimilarity = 1-r, where r is the correlation coefficient). We then averaged across subjects and used multidimensional scaling (Matlab function ‘mdscale’) to reduce the dimensionality to 2. Results are plotted both with the original orientation labels, and after shifting the angular modulator’s orientation labels by 90 deg.
 
-## Data and code sharing
+#### Data and code sharing
 
 We make publicly available all of the fMRI data reported here, as well as open-source software for implementing the theoretic model of V1, generating stimuli for the fMRI experiments, and analyzing the fMRI data (Merriam and Roth, 2018), at https://doi.org/10.17605/OSF.IO/TBJRF.

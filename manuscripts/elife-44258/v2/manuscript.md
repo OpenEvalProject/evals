@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.44258.001 Imprinted X-inactivation silences genes exclusively on the paternally-inherited X-chromosome and is a paradigm of transgenerational epigenetic inheritance in mammals. Here, we test the role of maternal vs. zygotic Polycomb repressive complex 2 (PRC2) protein EED in orchestrating imprinted X-inactivation in mouse embryos. In maternal-null ( Eed m-/- ) but not zygotic-null ( Eed -/- ) early embryos, the maternal X-chromosome ectopically induced Xist and underwent inactivation. Eed m-/- females subsequently stochastically silenced Xist from one of the two X-chromosomes and displayed random X-inactivation. This effect was exacerbated in embryos lacking both maternal and zygotic EED ( Eed mz-/- ), suggesting that zygotic EED can also contribute to the onset of imprinted X-inactivation. Xist expression dynamics in Eed m-/- embryos resemble that of early human embryos, which lack oocyte-derived maternal PRC2 and only undergo random X-inactivation. Thus, expression of PRC2 in the oocyte and transmission of the gene products to the embryo may dictate the occurrence of imprinted X-inactivation in mammals.
+Imprinted X-inactivation silences genes exclusively on the paternally-inherited X-chromosome and is a paradigm of transgenerational epigenetic inheritance in mammals. Here, we test the role of maternal vs. zygotic Polycomb repressive complex 2 (PRC2) protein EED in orchestrating imprinted X-inactivation in mouse embryos. In maternal-null (Eedm-/-) but not zygotic-null (Eed-/-) early embryos, the maternal X-chromosome ectopically induced Xist and underwent inactivation. Eedm-/- females subsequently stochastically silenced Xist from one of the two X-chromosomes and displayed random X-inactivation. This effect was exacerbated in embryos lacking both maternal and zygotic EED (Eedmz-/-), suggesting that zygotic EED can also contribute to the onset of imprinted X-inactivation. Xist expression dynamics in Eedm-/- embryos resemble that of early human embryos, which lack oocyte-derived maternal PRC2 and only undergo random X-inactivation. Thus, expression of PRC2 in the oocyte and transmission of the gene products to the embryo may dictate the occurrence of imprinted X-inactivation in mammals.
 
 ## Introduction
 
@@ -34,9 +34,17 @@ Although Eed-/- embryos fail to maintain imprinted X-inactivation, the mutant em
 
 ## Results
 
-## EED and H3K27me3 enrichment on the inactive-X in Eed-/-embryos
+### EED and H3K27me3 enrichment on the inactive-X in Eed-/-embryos
 
 PRC2 proteins and H3K27me3 are first enriched on the prospective inactive paternal X-chromosome in the early mouse embryo at the 8–16 cell morula stage (Okamoto et al., 2004). We assessed the accumulation of EED, H3K27me3, and Xist RNA by immunofluorescence (IF) combined with RNA fluorescent in situ hybridization (FISH) in wild-type (WT) embryonic day (E) 3.5 blastocyst embryos (Cloutier et al., 2018; Hinten et al., 2016), which are in the process of silencing paternal X-linked genes and establishing imprinted X-inactivation (Borensztein et al., 2017; Namekawa et al., 2010; Patrat et al., 2009; Wang et al., 2016). As expected, females displayed coincident accumulation of EED, H3K27me3, and Xist RNA in a vast majority of the nuclei (72–100%). Males, by contrast, lacked such enrichment (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig1-v2.jpg)
+
+**Figure 1.:** See also Figure 1—figure supplement 1. (A,B) RNA FISH detection of Xist RNA (white) and immunofluorescence (IF) detection of EED (red) and H3K27me3 (green) in representative female and male wild-type (WT) (A) or female Eed+/- and Eed-/- (B) E3.0 – E3.5 blastocyst embryos. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Embryos ranged in size from 23 to 57 nuclei. Bar plots, percentage of nuclei with coincident accumulation of Xist RNA and EED and/or H3K27me3 enrichment in individual embryos. (C) Genotype and sex distribution of Eed+/- and Eed-/- mouse blastocyst embryos from the cross in (B). The difference between the frequency of Eed+/- vs Eed-/- male and female embryos is not significant (p>0.05, Two-tailed Student’s T-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic depicting the deletion of floxed Eed exon seven by CRE recombinase. (B) Breeding data showing the efficiency of Prm-Cre deletion of the Eedfl allele.
 
 Our previous work suggested that zygotically-null preimplantation embryos harbor WT maternal EED protein (Kalantry and Magnuson, 2006; Kalantry et al., 2006). To test for the presence of maternally-derived EED protein in Eed-/- embryos, we employed our previously generated conditional Eed mutation (Figure 1—figure supplement 1A) (Maclary et al., 2017). We generated E3.0-E3.5 blastocyst-stage embryos zygotically-null and heterozygous for Eed (Eed-/- and Eed+/-, respectively) from a cross of Eed+/- females with Eedfl/-;Prm-Cre males. Prm-Cre is active during spermatogenesis and catalyzes the deletion of the loxp flanked (floxed) Eed allele in the mature sperm (Figure 1—figure supplement 1B) (O'Gorman et al., 1997). As a result, about half of the embryos generated from the above cross are expected to be genotypically Eed-/- and the other half Eed+/-. In the derived embryos, we assayed inactive-X enrichment of EED, H3K27me3, and Xist RNA by combined IF/FISH (Figure 1B). Of the 41 female embryos examined, nine showed coincident accumulation of EED and/or H3K27me3 with Xist RNA in over 70% of the nuclei and were not significantly different from WT embryos in Figure 1A (p>0.1). An additional nine embryos were devoid of EED or H3K27me3 enrichment overlapping with the Xist RNA coat. We presumed the former to be Eed+/- embryos and the latter to be Eed-/- embryos. The remaining 23 embryos displayed 2–70% of nuclei with EED and/or H3K27me3 enrichment. This intermediate class likely represents Eed+/- or Eed-/- embryos that had not yet fully depleted maternally-inherited EED protein or Eed+/- embryos which had not yet robustly expressed zygotic EED. Male embryos from the cross, distinguished by a lack of Xist RNA coating, did not show enrichment of EED or H3K27me3 in the nucleus, as in the WT male embryos in Figure 1A.
 
@@ -46,17 +54,41 @@ To define the kinetics of depletion of maternal EED and induction of zygotic EED
 
 Eedfl/fl and Eedfl/- / Eed-/- 2-cell embryos exhibited similar levels of EED and H3K27me3, whereas Eedm-/- and Eedmz-/- embryos were devoid of both EED and H3K27me3 (Figures 2A, C and D; Supplementary file 1). These data are consistent with the 2-cell embryo harboring only maternally-derived EED and H3K27me3. Four-cell embryos displayed a similar pattern to 2-cell embryos, although a subset of Eedfl/- / Eed-/- ~4-cell embryos displayed reduced EED and H3K27me3 levels, consistent with expression of zygotic EED beginning at or slightly before this stage and its failure in Eed-/- embryos (Figure 2C and Figure 2—figure supplement 1B; Supplementary file 1). At the ~8-cell stage, Eedfl/- / Eed-/- embryos showed highly variable EED and H3K27me3 levels, suggesting further differentiation of the two genotypes. In agreement with increasing zygotic Eed expression, Eedm-/- ~8-cell embryos displayed higher levels of EED and H3K27me3 than the corresponding Eedmz-/- embryos (Figure 2C and Figure 2—figure supplement 1B; Supplementary file 1). By the ~16-cell stage, Eedfl/- / Eed-/- embryos were clearly separated into two categories. One group had statistically lower levels of EED, while the other group was statistically indistinguishable from Eedfl/fl embryos (Figures 2B, C and D; Supplementary file 1). Therefore, the likely genotypes of the two groups are Eed-/- and Eedfl/-, respectively. Eedm-/- 16-cell embryos continued to display higher levels of EED and H3K27me3 than the Eedmz-/- embryos, but nevertheless harbored significantly lower EED and H3K27me3 levels than Eedfl/fl embryos (Figures 2B, C and D; Supplementary file 1). In order to visualize how EED levels are changing across early embryogenesis, we plotted the mean fluorescence intensity values of EED for each genotype by embryonic stage (Figure 2E). Maternally-derived EED starts declining at ~4-cell stage but is still present at the 16-cell stage. Conversely, while zygotic Eed transcription initiates at ~4-cell stage, zygotic EED levels are still low in ~16-cell embryos, suggesting that EED in WT Eedfl/fl 16-cell embryos is a combination of maternally-derived and zygotically generated protein (Figure 2F).
 
-## Imprinted X-inactivation initiation in Eed-/-embryos
+![Figure 2.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig2-v2.jpg)
+
+**Figure 2.:** See also Figure 2—figure supplement 1, and Figure 2—source data 1. (A,B) Immunofluorescent (IF) detection of EED (red) and H3K27me3 (green) in 2- and 16-cell Eedfl/fl, Eedfl/- / Eed-/-, Eedm-/-, and Eedmz-/- embryos. Nuclei are stained blue by DAPI. (C) Dot plots of EED and H3K27me3 IF signals in the five genotypes (Eedfl/fl, Eedfl/-, Eed-/-, Eedm-/-, Eedmz-/-) at the ~2-cell,~4-cell, ~8-cell, and ~16-cell stage. Each dot represents an individual embryo. The gray line indicates mean fluorescence intensity. Pairwise statistical comparisons between all genotypes are included in Supplementary file 1. (D) Significance testing of differences in EED fluorescence intensity in ~2-cell embryos and ~16-cell embryos plotted in (C) (Two-tailed Student’s T-test). (E) Mean EED fluorescence intensity from data in (C) plotted across early embryogenesis. (F) Model of change in maternal, zygotic, and total EED expression levels during early embryonic development.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic depicting the deletion of Eed exon seven by Zp3-Cre used to generate embryos maternally null for Eed. (B) Representative images of Eedfl/fl, Eedfl/-, Eed-/-, Eedm-/-, and Eedmz-/- 4- and 8-cell embryos stained by IF for EED and H3K27me3. Nuclei are indicated by blue DAPI stain, EED stain is indicated in red, and H3K27me3 stain is indicated in green.
+
+### Imprinted X-inactivation initiation in Eed-/-embryos
 
 To test if zygotic Eed-/- embryos initiate and establish imprinted X-inactivation of the paternal X-chromosome, we compared X-linked gene expression in an allele-specific manner in individual hybrid Eedfl/fl, Eedfl/-, and Eed-/- E3.5 blastocysts by RNA sequencing (RNA-Seq) (Figure 3—figure supplement 1A). In these embryos, the maternal X chromosome was derived from the Mus musculus 129/S1 mouse strain and the paternal-X from the divergent Mus molossinus JF1/Ms strain (Materials and methods). We exploited single nucleotide polymorphisms (SNPs) to assign RNA-Seq reads to either the maternal or paternal X-chromosome in the hybrid embryos (Cloutier et al., 2018; Maclary et al., 2017). A subset of X-linked genes was expressed more robustly from the paternal allele relative to the maternal allele in Eedfl/- and Eed-/- female embryos compared to Eedfl/fl embryos (Figure 3A; Supplementary file 2). However, when the allelic expression ratio of all X-linked genes in Figure 3A was averaged, paternal X-linked gene expression was not significantly higher in Eed-/- blastocysts compared to Eedfl/- (p = 0.72) or Eedfl/fl (p = 0.76) female embryos (Figure 3B and Figure 3—figure supplement 1B; Supplementary file 2 and Supplementary file 3). X-linked genes were expressed predominantly from the maternal allele in all three genotypes. Thus, the ratio of maternal:paternal X-linked gene expression in Eed-/- female blastocysts was broadly similar to that in Eedfl/fl and Eedfl/- embryos.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig3-v2.jpg)
+
+**Figure 3.:** See also Figure 3—figure supplement 1. (A) Allele-specific X-linked gene expression heat map of female Eedfl/fl, Eedfl/-, and Eed-/- blastocysts. Four embryos each of Eedfl/fl, Eedfl/-, and Eed-/- genotypes were sequenced individually and only genes with informative allelic expression in all samples are plotted (see Materials and methods). Genes are ordered on the basis of allelic expression in Eedfl/fl embryos. (B) Average allelic expression of the RNA-Seq data shown in (A). The mean allelic expression of X-linked genes lacks significant difference between each combination of the three genotypes (p>0.05, Welch’s two-sample T-test). Pairwise statistical comparisons between all genotypes are included in Supplementary file 3. (C) Pyrosequencing-based quantification of allelic expression of X-linked genes Xist, Rnf12, Atrx and Pgk1 in Eedfl/fl, Eedfl/-, and Eed-/- blastocysts. Error bars represent the standard deviation of data from 3 to 6 independent blastocyst embryos. The mean allelic expression of all four genes lack significant difference between each combination of the three genotypes (p>0.05, Welch’s two-sample T-test). Pairwise statistical comparisons for all genes and between all genotypes are included in Supplementary file 4. (D) RNA FISH detection of Xist RNA (green), Rnf12 RNA (red), and IF detection of H3K27me3 (white) in representative Eedfl/fl or Eed-/- female blastocysts. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Individual nuclei displaying representative categories of stains are shown to the right of each embryo. Embryos ranged in size from 39 to 100 nuclei. (E) Bar plot of percentage of nuclei with coincident accumulation of Xist RNA and H3K27me3 in individual Eedfl/fl and Eed-/- embryos. Each bar is an individual embryo. Embryo numbers under the bars correspond to the same embryos plotted in F). (F) Bar plots of percentage of nuclei with or without Xist RNA-coating and Rnf12 RNA expression in the embryos stained in D) and plotted in E). The numbers under the bars correspond to the same embryos plotted in E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Validation of genotypes of E3.5 Eedfl/fl, Eedfl/-, and Eed-/- female blastocyst embryos. Eed exon 7 RNA-Seq reads are normalized to total mapped RNA-Seq reads. (B) Table describing the RNA-Seq genotypes, number of sequenced embryos, average % maternal X-linked gene expression, average number of SNPs per X-linked gene, and the SNP overlapping read coverage threshold. A comprehensive list of expression levels of all informative genes is included in Supplementary file 2. (C) Pyrosequencing-based quantification of allelic expression of X-linked genes Xist, Rnf12, Atrx, and Pgk1 in individual Eedfl/fl, Eedfl/-, and Eed-/- female blastocysts. Error bars, standard deviation of data from 3 to 6 independent embryos. The mean allelic expression of all four genes lacks significant difference between each combination of the three genotypes (p>0.05, Welch’s two-sample T-test). Pairwise statistical comparisons for all genes and between all genotypes are included in Supplementary file 4. (D) RNA FISH detection of Xist RNA (green), Rnf12 RNA (red), and IF detection of H3K27me3 (white) in representative Eedfl/fl and Eedfl/- or Eed-/- male blastocysts. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Right of each embryo, individual nuclei displaying representative categories of stains. Embryos ranged in size from 56 to 65 nuclei. Bar plot, percentage of nuclei with or without Xist RNA-coating and Rnf12 RNA expression.
 
 We next sought to validate the RNA-Seq data via Pyrosequencing. Pyrosequencing is a low-throughput technique that can accurately capture allelic expression ratios of individual genes (Cloutier et al., 2018; Gayen et al., 2015). We analyzed the expression of Xist and three X-linked genes subject to X-inactivation, Rnf12, Atrx, and Pgk1. Xist expression analysis by Pyrosequencing was especially important, as there was variability in Xist SNP-overlapping read coverage in the RNA-Seq data due potentially to the highly repetitive sequence of Xist RNA. We did not detect any significant changes in maternal:paternal allelic expression in hybrid Eed-/- vs. Eedfl/fl and Eedfl/- blastocysts (Figure 3C and Figure 3—figure supplement 1C; Supplementary file 4). Whereas Xist was expressed predominantly from the paternal allele, Rnf12, Atrx, and Pgk1 were preferentially expressed from the maternal allele in all three genotypes.
 
 As an independent validation of the RNA-Seq and Pyrosequencing results, we also performed RNA FISH to test Xist RNA coating and nascent RNA expression of Rnf12 in Eed-/- and Eedfl/fl female (Figure 3D) and male (Figure 3—figure supplement 1D) blastocysts. RNA FISH has the added benefit of providing single cell expression resolution in embryos (Cloutier et al., 2018; Hinten et al., 2016). We distinguished Eedfl/fl from Eed-/- female embryos by assaying H3K27me3 enrichment by IF on the Xist RNA-coated X-chromosome (Figure 3D and E). We classified embryos displaying fewer than 5% of the nuclei with this H3K27me3 enrichment as Eed-/- (Figure 3E). Xist RNA coating and Rnf12 expression in female Eed-/- embryos did not differ significantly from Eedfl/fl blastocysts (Figure 3D and F). Both sets of embryos displayed Xist RNA coating of one X-chromosome and Rnf12 expression from the other X-chromosome in a majority of the cells. Male Eed-/- or Eed+/- embryos also did not differ significantly from Eedfl/fl embryos in their Rnf12 expression patterns (Figure 3—figure supplement 1D). Thus, by three independent assays – allele-specific RNA-Seq, Pyrosequencing, and RNA FISH – zygotic Eed expression appears to be largely dispensable for the initiation and establishment of imprinted X-inactivation.
 
-## Defective imprinted X-inactivation initiation in Eedm-/-embryos
+### Defective imprinted X-inactivation initiation in Eedm-/-embryos
 
 Since early Eed-/- embryos harbor WT oocyte-derived EED protein, we next examined the role of maternal EED in initiating imprinted X-inactivation in Eedm-/- and Eedmz-/- blastocysts, which are devoid of oocyte-derived EED. Eedm-/- blastocysts exhibited a small percentage of nuclei with H3K27me3 enrichment coinciding with the Xist RNA coat (Figure 4A). Eedmz-/- blastocysts, on the other hand, lacked all such overlapping accumulation (Figure 4A). H3K27me3 enrichment on the Xist RNA-coated X-chromosome in Eedm-/- but not Eedmz-/- blastocysts is likely due to the expression of zygotic Eed in Eedm-/- but not Eedmz-/- embryos (Figure 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig4-v2.jpg)
+
+**Figure 4.:** See also Figure 4—figure supplement 1. (A) RNA FISH detection of Xist RNA (green) and IF stain for H3K27me3 (white) in representative Eedm-/- and Eedmz-/- female blastocysts. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Eedfl/fl blastocyst from Figure 3D shown for comparison. Right, individual representative nuclei. Mutant embryos ranged in size from 46 to 80 nuclei. Bar plot shows percentage of nuclei in each embryo analyzed that displayed H3K27me3 enrichment on the Xist RNA-coated X-chromosome. (B) Maternal:paternal X-linked gene expression heat map of female Eedm-/- and Eedmz-/- blastocysts. Five Eedm-/- and three Eedmz-/- embryos were sequenced individually and only genes with informative allelic expression in all samples are plotted (see Materials and methods). Eedfl/fl, Eedfl/-, and Eed-/- data from Figure 3A shown for comparison. Genes are ordered on the basis of allelic expression in Eedfl/fl embryos. (C) Average maternal:paternal X-linked gene expression ratio from the RNA-Seq data shown in B). Eedfl/fl, Eedfl/-, and Eed-/- data from Figure 3B shown for comparison. The mean allelic expression of X-linked genes is significantly different between Eedm-/- and Eedfl/fl, and Eedmz-/- and Eedfl/fl blastocysts. (p<0.05, Welch’s two-sample T-test). Pairwise statistical comparisons between all genotype groups are included in Supplementary file 3. (D) Average normalized maternal and paternal X-linked gene expression in blastocysts. Maternal and paternal X-linked gene expression is significantly different between Eedm-/- and Eedmz-/- embryos compared to Eedfl/fl embryos (*, p<0.05, Two-tailed Student’s T-test). Pairwise statistical comparisons between all genotypes are included in Supplementary file 3. (E) Pyrosequencing-based quantification of allelic expression of X-linked genes in Eedm-/- and Eedmz-/- blastocysts. Eedfl/fl data from Figure 3C are shown for comparison. Error bars represent the standard deviation of data from 3 to 6 independent blastocyst embryos. The mean allelic expression of Xist, Rnf12, and Atrx is significantly different between Eedfl/fl and Eedm-/- embryos. The mean allelic expression of Xist, Rnf12, Pgk1, and Atrx is significantly different between Eedfl/fl and Eedmz-/- embryos (p<0.05, Welch’s two-sample T-test). Pairwise statistical comparisons for all genes and between all genotypes are included in Supplementary file 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Validation of genotypes of E3.5 female embryos. Eed exon 7 RNA-Seq reads are normalized to total mapped RNA-Seq reads. (B) Table describing the RNA-Seq genotypes, number of sequenced embryos, average percentage maternal X-linked gene expression, average number of SNPs per X-linked gene, and the SNP overlapping read coverage threshold. A comprehensive list of expression levels of all informative genes is included in Supplementary file 2. (C) Normalized maternal or paternal reads per X-linked gene in individual Eedfl/fl, Eedfl/-, Eed-/-, Eedm-/-, and Eedmz-/- female E3.5 blastocysts. (D) Pyrosequencing-based quantification of allelic expression of X-linked genes Xist, Rnf12, Atrx, and Pgk1 in individual Eedfl/fl, Eedm-/-, and Eedmz-/- female E3.5 blastocysts. Error bars, standard deviation of data from 3 to 6 independent embryos. The mean allelic expression for Xist, Rnf12, and Atrx is significantly different between Eedfl/fl and Eedm-/- embryos (p<0.05, Welch’s two-sample T-test). The mean allelic expression for Xist, Rnf12, Atrx, and Pgk1 is significantly different between Eedfl/fl and Eedmz-/- embryos (p<0.05, Welch’s two-sample T-test). The mean allelic expression of Pgk1 is significantly different between Eedm-/- and Eedmz-/- embryos (p<0.05, Welch’s two-sample T-test). Pairwise statistical comparisons for all genes and between all genotypes are included in Supplementary file 4. (E) Allele-specific H3K27me3 ChIP-Seq at the Xist locus of wild-type MII oocyte, sperm, PN5 zygote, 8 cell embryo, and inner cell mass (ICM) (Zheng et al., 2016).
 
 To test if maternal EED regulates imprinted X-inactivation, we conducted allele-specific RNA-Seq on individual hybrid Eedm-/- and Eedmz-/- E3.5 blastocysts (Figure 4—figure supplement 1A). Strikingly, the RNA-Seq data revealed a relative increase in paternal X-linked gene expression in Eedm-/- and Eedmz-/- embryos compared to Eedfl/fl, Eedfl/-, and Eed-/- embryos (Figure 4B and C, and Figure 4—figure supplement 1B; Supplementary file 2 and Supplementary file 3). Furthermore, Eedmz-/- embryos appeared to express paternal X-linked genes to a greater degree compared to Eedm-/- embryos (Figure 4B). When allelic expression ratios of all X-linked genes in Figure 4B were averaged, however, the difference between Eedm-/- and Eedmz-/- embryos did not reach statistical significance (p=0.14) (Figure 4C; Supplementary file 3).
 
@@ -66,23 +98,31 @@ To validate the Eedm-/- and Eedmz-/- blastocyst RNA-Seq data, we again analyzed 
 
 Together, the RNA-Seq and Pyrosequencing data lead to several suggestions. The first is that maternal EED depletion in the oocyte induces Xist from the maternal X-chromosome in the early embryo. This derepression is consistent with maternal PRC2 repressing the maternal Xist locus, which is marked by H3K27me3 in the oocyte [Figure 4—figure supplement 1E; (Zheng et al., 2016). Ectopic Xist induction from the maternal-X then results in the silencing of genes on that X-chromosome. The second major suggestion is that loss of maternal EED induces paternal X-linked genes. Finally, the data implicate zygotic EED expression in the silencing of a subset of paternal X-linked genes at the onset of imprinted X-inactivation.
 
-## Maternal EED silences Xist on the maternal-X
+### Maternal EED silences Xist on the maternal-X
 
 To validate the RNA-Seq and Pyrosequencing data from the maternal Eed mutants, we performed RNA FISH in Eedm-/- and Eedmz-/- blastocysts for Xist and Rnf12 (Figure 5A). Whereas most nuclei in Eedm-/- and Eedmz-/- females displayed a single Xist RNA coat and monoallelic expression of Rnf12, a subset displayed Xist RNA coating of both X-chromosomes. The majority of these nuclei also lacked Rnf12 expression, suggesting silencing of Rnf12 on both X-chromosomes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig5-v2.jpg)
 
-**Figure 5.:** Eedm-/- and Eedmz-/- blastocysts.(A,B) RNA FISH detection of Xist RNA (green) and Rnf12 RNA (red) in representative Eedm-/- and Eedmz-/- female (A) and Eedmz-/- male (B) blastocysts. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Individual nuclei of representative categories of stain are shown to the right of each embryo. Eedfl/fl female data from Figure 3D shown for comparison. Mutant female embryos ranged in size from 46 to 80 nuclei. Fully developed mutant male embryos ranged in size from 53 to 110 nuclei. Delayed mutant male embryos ranged in size from 30 to 40 nuclei. Bar plot shows percentage of nuclei in each embryo with Xist RNA coats and/or Rnf12 RNA expression. Each bar represents an individual embryo and embryo numbers under the bars correspond to the same female embryos plotted in Figure 4A. *, p<0.05; **, p<0.01, Two-tailed Student’s T-test, between Eedm-/- and Eedfl/fl, or Eedmz-/- and Eedfl/fl. (C) Data showing the number of Eedm-/- embryos which can live to term compared to Eedfl/fl embryos. WT, wild-type. Table shows Eedm-/- litters sired by Mus musculus-derived male or Mus molossinus-derived male. Male Eedm-/- offspring are underrepresented compared to females, p=0.02, Two-tailed Student’s T-test.
+**Figure 5.:** (A,B) RNA FISH detection of Xist RNA (green) and Rnf12 RNA (red) in representative Eedm-/- and Eedmz-/- female (A) and Eedmz-/- male (B) blastocysts. Nuclei are stained blue with DAPI. Scale bars, 20 µm. Individual nuclei of representative categories of stain are shown to the right of each embryo. Eedfl/fl female data from Figure 3D shown for comparison. Mutant female embryos ranged in size from 46 to 80 nuclei. Fully developed mutant male embryos ranged in size from 53 to 110 nuclei. Delayed mutant male embryos ranged in size from 30 to 40 nuclei. Bar plot shows percentage of nuclei in each embryo with Xist RNA coats and/or Rnf12 RNA expression. Each bar represents an individual embryo and embryo numbers under the bars correspond to the same female embryos plotted in Figure 4A. *, p<0.05; **, p<0.01, Two-tailed Student’s T-test, between Eedm-/- and Eedfl/fl, or Eedmz-/- and Eedfl/fl. (C) Data showing the number of Eedm-/- embryos which can live to term compared to Eedfl/fl embryos. WT, wild-type. Table shows Eedm-/- litters sired by Mus musculus-derived male or Mus molossinus-derived male. Male Eedm-/- offspring are underrepresented compared to females, p=0.02, Two-tailed Student’s T-test.
 
 We similarly examined Eedmz-/- male blastocysts (Figure 5B). A subset of nuclei in Eedmz-/- male mutant embryos also exhibited ectopic Xist RNA coating of their sole, maternally-inherited X-chromosome. Interestingly, Eedmz-/- male embryos were present in two distinct morphological classes. The first category was comprised of large, well-developed embryos, which displayed few or no nuclei with Xist RNA coating. The second category consisted of underdeveloped embryos, which displayed Xist RNA-coating in much higher proportions (20–60% of nuclei). In both sets of embryos, Xist RNA coating was often accompanied by a loss of Rnf12 expression from the Xist RNA-coated X-chromosome. These data suggest that Xist RNA coating hinders developmental progression by silencing genes on the ectopically Xist RNA-coated X-chromosome. Eedmz-/- embryos that adaptively repress Xist may overcome this developmental deficiency.
 
 The correlation between reduced frequency of ectopic Xist RNA-coated nuclei and development of Eedmz-/- embryos led us to test the developmental competency of maternal-null Eed embryos. We assessed if Eedm-/- embryos could yield live born animals. To our surprise, a small number of Eedm-/- female as well as male embryos could live to term (Figure 5C), suggesting that the ectopic Xist RNA expression and coating could be resolved in maternal-null embryos of both sexes. Interestingly, significantly more females were born compared to males (p=0.02, Two-tailed Student’s T-test), suggesting that females can more robustly extinguish ectopic Xist RNA expression compared to males. These data further suggest that zygotic EED expression is sufficient to compensate for the absence of maternal EED in a subset of the early embryos. Eedmz-/- embryos are expected to be inviable, since loss of zygotic Eed expression results in lethality of both female and male embryos (Faust et al., 1995; Shumacher et al., 1996; Wang et al., 2001).
 
-## Switching of imprinted to random X-inactivation in Eedm-/-embryos
+### Switching of imprinted to random X-inactivation in Eedm-/-embryos
 
 The relative paucity of ectopic Xist RNA-coated nuclei in female Eedm-/- and Eedmz-/- blastocysts observed by RNA FISH in Figure 5A–B is inconsistent with the robust ectopic Xist RNA expression from and silencing of maternal X-linked genes and the increased expression of paternal X-linked genes that were detected via Pyrosequencing and RNA-Seq (Figure 4B–D). We thus postulated that instead of undergoing imprinted inactivation of the paternal X-chromosome, Eedm-/- and Eedmz-/- blastocysts switch to random X-inactivation of either the maternal- or the paternal-X in individual cells. Such mosaicism would explain the silencing of maternal X-linked genes and the induction of paternal X-linked gene expression in Eedm-/- and Eedmz-/- female embryos detected by RNA-Seq and Pyrosequencing.
 
 To test the above model of X-inactivation mosaicism, we developed and applied an allele-specific Xist RNA FISH strategy on hybrid control Eedfl/+ and test Eedm-/- female E3.5 blastocysts (Materials and methods; Figure 6—figure supplement 1). Allele-specific Xist RNA FISH allowed us to discriminate Xist RNA expression from the maternal vs. the paternal X-chromosome in individual cells. Allele-specific Xist RNA FISH displayed Xist RNA expression from only the paternal-X in Eedfl/+ female blastocysts (Figure 6A), as would be expected from embryos stably undergoing imprinted X-inactivation of the paternal-X. In Eedm-/- female blastocysts, however, we saw a mosaic distribution of Xist RNA expression and coating. Whereas some Eedm-/- blastocyst nuclei displayed Xist RNA expression from and coating of the maternal-X, others exhibited Xist RNA expression from and coating of the paternal-X. A subset of nuclei in Eedm-/- blastocysts exhibited Xist RNA expression from both the maternal and paternal X-chromosomes (Figure 6A), consistent with the non-allele specific Xist RNA FISH data from Eedm-/- and Eedmz-/- blastocysts in Figure 5A. Male Eedm-/- embryos similarly displayed ectopic Xist RNA expression from and coating of their sole maternally-inherited X-chromosome in approximately 50% of nuclei (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig6-v2.jpg)
+
+**Figure 6.:** See also Figure 6—figure supplement 1. (A,B) Allele-Specific Xist RNA FISH in Eedfl/+ and Eedm-/- male and female E3.0-E3.5 blastocyst embryos. Xist RNA expressed from the maternal X-chromosome is indicated in red and from the paternal X-chromosome in white. Representative embryos are depicted. Nuclei are stained blue with DAPI. Scale bars, 20 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44258/elife-44258-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Female Trophoblast stem (TS) cells (top panel) and extraembryonic endoderm (XEN) stem cells (bottom panel) stained with an allele-specific Xist RNA FISH probe. Both TS cells and XEN cells express Xist from and undergo imprinted X-inactivation of the paternal X-chromosome (Kunath et al., 2005; Tanaka et al., 1998). The TS cells are derived from a cross of JF1 Mus molossinus dam with a 129/S1-derived Mus musculus sire. The XEN cells are generated from a cross of 129/S1 Mus musculus dam and JF1 Mus molossinus-derived sire. In the TS cells, the paternal-X is therefore Mus musculus derived while in the XEN cells the paternal-X is JF1 Mus molossinus derived. Mus musculus-specific Xist RNA FISH probe detects the complimentary Xist RNA in red and the Mus molossinus-specific Xist RNA FISH probe detects its complimentary Xist RNA in white. (B) Eedfl/+ female E3.5 embryos stained with the same allele-specific Xist RNA FISH probe as in (A). Top panels, representative stained embryo derived from a cross of Eedfl/fl;XJF1XJF1 Mus molossinus-derived dam with a Mus musculus sire. Bottom panels, representative stained embryo from an Eedfl/fl Mus musculus-derived dam with a JF1 Mus molossinus-derived sire (this embryo is also shown in Figure 6A). Due to imprinted X-inactivation, both E3.5 embryos are expected to express Xist RNA from their paternal X-chromosome.
 
 From the blastocyst data, we extrapolated that earlier Eedm-/- embryos may harbor a higher proportion of cells with ectopic Xist RNA coating of the maternal-X. This pattern would be later resolved into the mosaic Xist RNA coating pattern observed at the blastocyst stage in females and loss of the Xist RNA coat in males. We therefore performed allele-specific Xist RNA FISH on 3–16 cell control Eedfl/+ and test Eedm-/- hybrid embryos. In the Eedfl/+ female embryos, Xist RNA was expressed from and coated only the paternal X-chromosome (Figure 7A). Most Eedm-/- female embryos, by contrast, displayed a high percentage of nuclei with Xist RNA expression and coating of both X-chromosomes (Figure 7A). In male 3–17 cell embryos, Eedfl/+ embryos did not show any nuclei with Xist RNA coating (Figure 7B). In Eedm-/- male embryos, by contrast, almost every nucleus exhibited ectopic Xist expression from and coating of the maternally-inherited X-chromosome (Figure 7B). Thus, in the absence of maternal EED most cells express Xist from both X-chromosomes in early female embryos and from the sole X in early male embryos. By the blastocyst stage, however, one of the two Xist alleles is stochastically silenced in most female cells and the sole Xist allele is silenced in most male cells.
 
@@ -90,7 +130,7 @@ From the blastocyst data, we extrapolated that earlier Eedm-/- embryos may harbo
 
 **Figure 7.:** (A,B) Allele-Specific Xist RNA FISH in Eedfl/+ and Eedm-/- female and male 3–16 cell embryos. Xist RNA expressed from the maternal X-chromosome is indicated in red and from the paternal X-chromosome in white. Representative embryos are depicted. Nuclei are stained blue with DAPI. Scale bars, 20 µm.
 
-## Lack of maternal EED in human embryos
+### Lack of maternal EED in human embryos
 
 Intriguingly, the Xist RNA coating of both X-chromosomes in female and of the single X in male early preimplantation Eedm-/- and Eedmz-/-mouse embryos resemble the pattern observed in preimplantation human female and male embryos (Okamoto et al., 2011; Petropoulos et al., 2016). In early preimplantation human embryos, females display Xist RNA coating of both Xs and males of their sole maternally-inherited X-chromosome. We therefore hypothesized that the Xist RNA expression profile in early human embryos may reflect the absence of maternally-derived EED and other core PRC2 proteins in human oocytes. To test this hypothesis, we analyzed RNA-Seq data from mouse and human oocytes to determine the expression levels of core PRC2 genes Eed, Ezh2, Ezh1, and Suz12 (Kobayashi et al., 2012; Macfarlan et al., 2012; Reich et al., 2011). Compared to mouse oocytes, human oocytes expressed all four genes at negligible levels (Figure 8A). This difference in the expression of PRC2 components in oocytes may underlie why early mouse but not human embryos undergo imprinted X-inactivation.
 
@@ -116,11 +156,287 @@ Xist RNA expression in Eedm-/- mouse embryos mimics the pattern observed in huma
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus)</td>
+      <td>Eed</td>
+      <td>ENSEMBL</td>
+      <td>ENSEMBL: ENSMUSG00000030619</td>
+      <td>Chromosome 7: 89,954,654–89,980,983 reverse strand</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus molossinus)</td>
+      <td>JF1/Ms; Mus molossinus</td>
+      <td>JAX</td>
+      <td>JAX:003720; RRID:MGI:2164136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>129/S1; Mus musculus</td>
+      <td>JAX</td>
+      <td>JAX:002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Eedfl</td>
+      <td>Maclary et al. (2017)</td>
+      <td></td>
+      <td>Lox sites inserted into the Eed gene in introns surrounding exon 7.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Protamine-cre)</td>
+      <td>Prm-cre</td>
+      <td>O'Gorman et al. (1997); JAX</td>
+      <td>JAX:003328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Zp3-cre)</td>
+      <td>Zp3-cre</td>
+      <td>Lewandoski et al. (1997); JAX</td>
+      <td>JAX:003651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (mouse embryo)</td>
+      <td>Mus musculus; Mus molossinus</td>
+      <td>this paper</td>
+      <td></td>
+      <td>2 cell stage to blastocyst stage embryos</td>
+    </tr>
+    <tr>
+      <td>Biological sample (RNA)</td>
+      <td>Mus musculus; Mus molossinus</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Generated from female blastocysts</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal EED (Rabbit monoclonal)</td>
+      <td>Sewalt et al. (1998)</td>
+      <td></td>
+      <td>Obtained from Otte Lab; Dilution: Figure 1 –1:1000, Figure 2 –1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal H3K27me3 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Millipore:#ABE44</td>
+      <td>Dilution: Figure 1 – 1:5000, Figure 2 – 1:25000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor DαM 555 (secondaries)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#A32773</td>
+      <td>Dilution: Figure 1 –1:300, Figure 2 – 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor DαRb 488 (secondaries)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#A21206</td>
+      <td>Dilution: Figure 1 –1:300, Figure 2 – 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor DαRb 647 (secondaries)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#A31573</td>
+      <td>Dilution: 1:300</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Quasar dye 570</td>
+      <td>Biosearch Technologies</td>
+      <td>primer sequences in Supplementary file 5</td>
+      <td>Allele-specific probe dye; labeled M. musculus-specific oligo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Quasar dye g70</td>
+      <td>Biosearch Technologies</td>
+      <td>primer sequences in Supplementary file 5</td>
+      <td>Allele-specific probe dye; labeled M. molossinus-specific oligo</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads mRNA DIRECT Kit</td>
+      <td>Thermo Fisher</td>
+      <td>ThermoFisher:#610.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Takara SMARTer Seq V4 stranded low input kit</td>
+      <td>Takara</td>
+      <td>Takara:#634889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BioPrime DNA Labeling System</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#18094011</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc</td>
+      <td>RRID:SCR_014583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org</td>
+      <td>RRID:SCR_001905</td>
+      <td>Used in RNA- Seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VCFtools</td>
+      <td>Danecek et al. (2011)</td>
+      <td>RRID:SCR_001235</td>
+      <td>Used in RNA -Seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al. (2013)</td>
+      <td>RRID:SCR_015899</td>
+      <td>Used in RNA- Seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HTSeq</td>
+      <td>Anders et al. (2015)</td>
+      <td>RRID:SCR_005514</td>
+      <td>Used in RNA- Seq analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>Liao et al. (2014)</td>
+      <td>RRID:SCR_012919</td>
+      <td>Used in RNA- Seq analysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#D21490</td>
+      <td>Dilution: 1:250,000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cy3-dCTP</td>
+      <td>GE Healthcare</td>
+      <td>GEHealthcare:#PA53021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluorescein-12-UTP</td>
+      <td>Roche</td>
+      <td>Roche: #11427857910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cy5-CTP</td>
+      <td>GE Healthcare</td>
+      <td>GEHealthcare:#25801087</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SSC</td>
+      <td>Ambion</td>
+      <td>Ambion:#AM9765</td>
+      <td>RNA FISH hybridization buffer, working concentation: 4X; allele-specific RNA FISH, working concentration : 2X</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dextrane sulfate</td>
+      <td>Millipore</td>
+      <td>Millipore:#S4030</td>
+      <td>RNA FISH hybridization buffer, working concentation: 20%; allele-specific RNA FISH, working concentration: 10%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Formamide, deionized</td>
+      <td>VWR Life Sciences</td>
+      <td>VWR:#0606</td>
+      <td>RNA FISH hybridization buffer; AlSp working concentation: 10%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BSA</td>
+      <td>New England Biolabs</td>
+      <td>NEB:#B9001S</td>
+      <td>IF blocking buffer, working concentration: 0.5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>yeast tRNA</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#15401–029</td>
+      <td>IF blocking buffer, working concentration: 50 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNAase out</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:#10777–019</td>
+      <td>IF blocking buffer, working concentration: 80 units/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tween-20</td>
+      <td>Thermo Fisher</td>
+      <td>ThermoFisher:# BP337-100</td>
+      <td>IF blocking buffer, working concentration: 0.2%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PBS</td>
+      <td>Gibco</td>
+      <td>Gibco:#14200</td>
+      <td>IF blocking buffer, working concentation: 1X</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield</td>
+      <td>Vector Labs</td>
+      <td>VectorLabs: #H-1000</td>
+      <td>Mounting medium for IF/RNA FISH samples</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All animals were handled according to protocols approved by the University Committee on Use and Care of Animals (UCUCA) at the University of Michigan (protocol #s PRO6455 and PRO8425).
 
-## Mice
+### Mice
 
 Mice harboring a conditional mutation in Eed were described in our prior publication (Maclary et al., 2017). A Mus molossinus JF1 X-chromosome was introgressed to generate Eedfl/fl;XJF1Y males. Mus musculus Eedfl/fl females were backcrossed onto the 129/S1 background. The X-linked Gfp transgenic (X-Gfp) and JF1 strains have been described previously (Hadjantonakis et al., 1998; Kalantry and Magnuson, 2006; Kalantry et al., 2006; Kalantry et al., 2009; Maclary et al., 2017).
 
@@ -128,7 +444,7 @@ Embryos generated for the purpose of allele-specific RNA sequencing (RNA-Seq),
 
 For derivation of embryos lacking zygotic Eed, the Protamine-Cre (Prm-Cre) transgene was bred into an Eedfl/fl or Eedfl/- background. Prm-Cre is expressed only during spermatogenesis (O'Gorman et al., 1997), thus resulting in the deletion of the Eed floxed allele in the male germline. For derivation of embryos lacking maternal EED, a Cre transgene controlled by the Zona pellucida three gene promoter (Zp3-Cre) (Lewandoski et al., 1997), was used to delete the floxed Eed alleles in growing oocytes.
 
-## Mouse embryo dissections and processing
+### Mouse embryo dissections and processing
 
 Embryonic day (E) 3.5 embryos were isolated essentially as described (Maclary et al., 2014). Embryos were flushed from the uterine limbs in 1X PBS (Invitrogen, #14200) containing 6 mg/ml BSA (Invitrogen, #15260037).
 
@@ -138,31 +454,31 @@ The zona pellucida surrounding embryos was removed through incubation in cold ac
 
 Isolated E3.5 embryos were either lysed for RNA isolation or plated onto 0.2% gelatin- (Sigma, #G2500) and/or 0.01% Poly-L-Lysine (PLL, Sigma, # P4707)-coated glass coverslips (22mm X 22mm, Thermo Fisher Scientific, #12548B) in 0.25X PBS for immunofluorescence (IF) coupled with RNA in situ hybridization (FISH). 2–16 cell embryos were plated on coverslips coated in 0.01% Poly-L-Lysine for IF. E3.5 or 4–16 cell embryos were plated on coverslips coated with 1X Denhardt’s (Sigma, #D9905) solution for allele-specific RNA FISH. For plated embryos, excess solution was aspirated, and coverslips were air-dried for approximately 15–30 min. After drying, embryos were permeabilized and fixed in 50 µL solution of either 0.05% or 0.1% Tergitol (Sigma, #NP407) with 1% paraformaldehyde (Electron Microscopy Sciences, #15710) in 1X PBS for 5 min, followed by 1% paraformaldehyde in 1X PBS for an additional 5 min. Excess solution was gently tapped off onto paper towels, and coverslips were rinsed 3X with 70% ethanol and stored in 70% ethanol at −20°C prior to IF and/or RNA FISH.
 
-## PCR
+### PCR
 
 For embryo DNA isolation, embryos were isolated as described above. Individual blastocysts were lysed in 15 µL buffer composed of 50 mM KCl, 10 mM Tris-Cl (pH 8.3), 2.5 mM MgCl2, 0.1 mg/mL gelatin, 0.45% NP-40, 0.45% Tween-20, and 0.4 mg/mL Proteinase K (Fisher, #BP1700). Embryos in lysis buffer were incubated at 50°C overnight, then stored at 4°C until use. Genomic PCR used 1–3 µL lysate per sample. Reactions for Eed were carried out in ChromaTaq buffer (Denville Scientific) with 2.5 mM MgCl2 added. XX vs. XY sexing PCR reactions were carried out in Klentherm buffer (670 mM Tris pH 9.1, 160 mM (NH4)SO4, 35 mM MgCl2,15mg/ml BSA). Both used RadiantTaq DNA polymerase (Alkali Scientific, #C109). Primer sequences are described in Supplementary file 5.
 
 Liveborn animals from the cross of Eedfl/fl;Zp3-Cre female by WT male were genotyped for Eed to confirm deletion of the floxed allele. Ear punches were taken after weaning and lysed in 50 µL of lysis buffer (above). Ear punches were incubated at 50°C overnight, then stored at 4°C until use. 1 µL of DNA lysate was used per reaction. Eed PCRs were carried out as above.
 
-## Quantification of allele-specific RNA expression by Pyrosequencing
+### Quantification of allele-specific RNA expression by Pyrosequencing
 
 Allele-specific expression was quantified using the Qiagen PyroMark sequencing platform, as previously described (Gayen et al., 2015). Briefly, the amplicons containing SNPs were designed using the PyroMark Assay Design software. cDNAs were synthesized using Invitrogen SuperScript III One-Step RT-PCR System (Invitrogen, #12574–026). Following the PCR reaction, 5 µL of the 25 µL reaction was run on a 3% agarose gel to assess the efficacy of amplification. The samples were then prepared for Pyrosequencing according to the standard recommendations for use with the PyroMark Q96 ID sequencer. All amplicons spanned intron(s), thus permitting discrimination of RNA vs. any contaminating genomic DNA amplification due to size differences. Control reactions lacking reverse transcriptase for each sample were also performed to rule out genomic DNA contamination. E3.5 embryos of similar sizes for all genotypes were used in the Pyrosequencing assays. Pyrosequencing primer sequences are described in Supplementary file 5.
 
-## Immunofluorescence (IF)
+### Immunofluorescence (IF)
 
 Embryos mounted on gelatin-, PLL-, and/or PLL/gelatin-coated glass coverslips were washed 3 times in 1X PBS for 3 min each while shaking. Coverslips were then incubated in blocking buffer consisting of 0.5 mg/mL BSA (New England Biolabs, #B9001S), 50 µg/mL yeast tRNA (Invitrogen, #15401–029), 80 units/mL RNAseOUT (Invitrogen, #10777–019), and 0.2% Tween 20 (Fisher, #BP337-100) in 1X PBS in a humid chamber for 30 min at 37°C. The samples were next incubated with primary antibody diluted in blocking buffer for 45 min −2 hr in the humid chamber at 37°C. The samples were then washed 3 times in 1X PBS/0.2% Tween 20 for 3 min each while shaking. After a 5 min incubation in blocking buffer at 37°C in the humid chamber, the samples were incubated in blocking buffer containing fluorescently-conjugated secondary antibody for 30 min in the humid chamber at 37°C, followed by three washes in PBS/0.2% Tween 20 while shaking for 3 min each. For samples undergoing only IF staining, DAPI was added to the third wash at a 1:250,000 dilution. Coverslips were then mounted on slides in Vectashield (Vector Labs, #H-1000). For samples undergoing IF combined with RNA FISH, the samples were processed for RNA FISH following the third wash. Antibody information is described in Supplementary file 5.
 
-## RNA fluorescence in situ hybridization (RNA FISH)
+### RNA fluorescence in situ hybridization (RNA FISH)
 
 RNA FISH with double-stranded and strand-specific probes was performed as previously described (Gayen et al., 2015; Hinten et al., 2016; Kalantry et al., 2009). The Rnf12 dsRNA FISH probe was made by random-priming using BioPrime DNA Labeling System (Invitrogen, #18094011) and labeled with Cy3-dCTP (GE Healthcare, #PA53021) using a previously described fosmid template (Kalantry et al., 2009). Strand-specific Xist probes were generated from templates as described (Maclary et al., 2014; Sarkar et al., 2015). Probes were labeled with Fluorescein-12-UTP (Roche, #11427857910) or Cy5-CTP (GE Healthcare, #25801087). Labeled probes from multiple templates were precipitated in a 0.5M ammonium acetate solution (Sigma, #09691) along with 300 µg of yeast tRNA (Invitrogen, #15401–029) and 150 µg of sheared, boiled salmon sperm DNA (Invitrogen, #15632–011). The solution was then spun at 15,000 rpm for 20 min at 4°C. The pellet was washed consecutively with 70% ethanol and 100% ethanol while spinning at 15,000 rpm at room temperature. The pellet was dried and resuspended in deionized formamide (VWR, #97062–010). The probe was denatured by incubating at 90°C for 10 min followed by an immediate 5 min incubation on ice. A 2X hybridization solution consisting of 4X SSC and 20% Dextran sulfate (Millipore, #S4030) was added to the denatured solution. All probes were stored in the dark at −20°C until use.
 
 Following IF, embryos mounted on coverslips were dehydrated through 2 min incubations in 70%, 85%, 95%, and 100% ethanol solutions and subsequently air-dried. The coverslips were then hybridized to the probe overnight in a humid chamber at 37°C. The samples were then washed 3 times for 7 min each at 37°C with 2X SSC/50% formamide, 2X SSC, and 1X SSC. A 1:250,000 dilution of DAPI (Invitrogen, #D21490) was added to the third 2X SSC wash. Coverslips were then mounted on slides in Vectashield (Vector Labs, #H-1000).
 
-## Allele-specific Xist RNA FISH
+### Allele-specific Xist RNA FISH
 
 Allele-specific Xist RNA FISH probes were generated as described (Levesque et al., 2013). Briefly, a panel of short oligonucleotide probes were designed to uniquely detect either the M. musculus or the M. molossinus alleles of Xist (Supplementary file 5). Five probes were designed for each Xist allele. Each probe overlapped a single nucleotide polymorphism (SNP) that differs between the two strains, with the SNP located at the fifth base pair position from the 5’ end. The same panel of five SNPs was used for both sets of allele-specific probes. The 3’ end of each oligonucleotide probe is fluorescently tagged using Quasar dyes (Biosearch technologies). M. musculus-specific oligos were labeled with Quasar 570 and M. molossinus-specific oligos labeled with Quasar 670. In addition to labeled SNP-overlapping oligonucleotides, a panel of 5 ‘mask’ oligonucleotides were also synthesized. These ‘mask’ probes are complimentary to the 3’ end of the labeled allele-specific probes and will hybridize to the allele-specific oligonucleotides, leaving only 9–10 base pairs of sequence surrounding the polymorphic site available to initially hybridize to the target Xist RNA. Since this region of complementarity is short, the presence of a single nucleotide polymorphism is sufficient to destabilize the hybridization with the alternate allele. Sequences of detection and mask probes are listed in Supplementary file 5. Allele-specific Xist RNA FISH probes were combined with a strand-specific Xist RNA probe, labeled with Fluorescein-12-UTP (Roche, #11427857910), which served as a guide probe that hybridizes to Xist RNA generated from both Xist alleles and ensured the fidelity of the allele-specific probes in detecting the cognate Xist RNA molecules. The guide Xist RNA probe was first ethanol precipitated as previously described, then resuspended in hybridization buffer containing 10% dextran sulfate, 2X saline-sodium citrate (SSC) and 10% formamide. The precipitated guide RNA probe was then mixed with the M. musculus and M. molossinus detection probes, to a final concentration of 5 nM per allele-specific oligo, and 10 nM mask probe, yielding a 1:1 mask:detection oligonucleotide ratio. Coverslips were hybridized to the combined probe overnight in a humid chamber at 37°C. After overnight hybridization, samples were washed twice in 2X SSC with 10% formamide at 37°C for 30 min, followed by one wash in 2X SSC for five min at room temperature. A 1:250,000 dilution of DAPI (Invitrogen, #D21490) was added to the second 2X SSC with 10% formamide wash. Coverslips were then mounted on slides in Vectashield (Vector Labs, #H-1000).
 
-## Microscopy
+### Microscopy
 
 Stained samples were imaged using a Nikon Eclipse TiE inverted microscope with a Photometrics CCD camera. The images were deconvolved and uniformly processed using NIS-Elements software. For four color images (blue, green, red, and white), the far-red spectrum was employed for the fourth color (AlexaFluor 647 secondary antibody and Cy5-UTP labelled riboprobes for RNA FISH). Additional antibody information is outlined in Supplementary file 5.
 
@@ -170,30 +486,67 @@ EED and H3K27me3 IF intensity quantifications were performed using the ‘3D Mea
 
 The Threshold function of the software cannot always distinguish between two nuclei that are overlapping. Similarly, if a single nucleus is an odd shape, it may be counted as multiple nuclei by the software. Some embryos therefore had different numbers of nuclei measured than the number of cells in the embryo. If the number of cells in an embryo differs from the number of nuclei listed, the actual number of cells is indicated in parenthesis next to the embryo label in Figure 2—source data 1.
 
-## RNA-Seq sample preparation
+### RNA-Seq sample preparation
 
 mRNA was isolated from whole embryos using the Dynabeads mRNA DIRECT Kit (Thermo Fisher, # 610.11) according to the manufacturer’s instructions. E3.5 embryos of similar sizes of all genotypes were used for RNA-Seq. Eedfl/- and Eed-/- embryos were genotyped by Eed RT-PCR and all embryo genotypes were confirmed by quantifying the relative expression of the floxed Eed exon seven to the sample’s number of mapped reads (Figure 3—figure supplement 1 and Figure 4—figure supplement 1). Samples were submitted to the University of Michigan DNA Sequencing Core for strand-specific library preparation using the Takara SMARTer Seq V4 stranded low input kit (Takara, #634889). All libraries were sequenced on the Illumina HiSeq2000 or HiSeq4000 platforms to generate 50 bp paired-end reads.
 
-## Mapping of RNA-Seq data
+### Mapping of RNA-Seq data
 
 Quality control analysis of the RNA-Seq data was conducted using FastQC. SNP data from whole-genome sequencing of the 129/S1 (M. musculus) and JF1/Ms (M. molossinus) mouse strains were substituted into the mm9 mouse reference genome build (C57BL/6 J) using VCFtools to generate in silico 129/S1 and JF1/Ms reference genomes (Keane et al., 2011; Maclary et al., 2017; Takada et al., 2013; Yalcin et al., 2011). Sequencing reads were separately mapped to each of the two in silico genomes using STAR (Dobin et al., 2013), allowing 0 mismatches in mapped reads to ensure allele-specific mapping of SNP-containing reads to only one strain-specific genome. STAR was selected for read mapping, in part due to the improved ability to handle structural variability and indels, with the goal of reducing mapping bias to the genome most similar to the reference genome. STAR is a spliced aligner capable of detecting structural variations and is able to handle small insertions and deletions during read mapping. STAR additionally permits soft-clipping of reads during mapping, trimming the ends of long reads that cannot be perfectly mapped. This function would permit clipping of reads that end near indels, thus preserving mappability at SNPs near indels.
 
 Prior work showed that the variability due to mapping bias between the 129/S1 and JF1/Ms genomes is minimal in our RNA-Seq analysis pipeline (Maclary et al., 2017). Although small biases may affect allelic mapping at a subset of SNP sites within a gene, the effect is mitigated since most genes contain multiple SNPs (Figure 3—figure supplement 1).
 
-## Allele-specific analysis of RNA-Seq data
+### Allele-specific analysis of RNA-Seq data
 
 For allelic expression analysis, only RNA-Seq reads overlapping known SNP sites that differ between the 129/S1 and JF1/Ms genomes were retained. All multi-mapping reads were excluded from the allele-specific analysis. For each SNP site, reads mapping to the 129/S1 and JF1/Ms X chromosomes were counted and the proportion of reads from each X chromosome identified. Allelic expression was calculated individually for each SNP site; for genes containing multiple SNPs, the paternal-X percentage for all SNPs was averaged to calculate gene-level allelic expression. All SNP sites with at least 10 SNP-overlapping reads were retained. Genes containing at least one SNP site with at least 10 SNP-overlapping reads were retained for further analysis and are referred to in the text as informative. In X-linked genes, the SNP frequency is ~1 SNP/250 bp in transcribed RNAs (Keane et al., 2011; Maclary et al., 2017; Takada et al., 2013; Yalcin et al., 2011).
 
-## RNA-Seq expression analysis
+### RNA-Seq expression analysis
 
-To calculate expression from the maternal vs. paternal X-chromosomes, all reads were first merged into a single alignment file and the number of reads per RefSeq annotated gene was counted using HTSeq. To calculate the percentage of expression arising from the paternal X-chromosome, the total read counts from HTSeq were normalized by number of mapped reads. Then, the normalized number of mapped reads for each gene was multiplied by the proportion of SNP-containing reads mapping to the paternal X-chromosome. This analysis was done in R using the following formula:{totalreads×(paternalreadsmaternalreads+paternalreads)}
+To calculate expression from the maternal vs. paternal X-chromosomes, all reads were first merged into a single alignment file and the number of reads per RefSeq annotated gene was counted using HTSeq. To calculate the percentage of expression arising from the paternal X-chromosome, the total read counts from HTSeq were normalized by number of mapped reads. Then, the normalized number of mapped reads for each gene was multiplied by the proportion of SNP-containing reads mapping to the paternal X-chromosome. This analysis was done in R using the following formula:
 
-## Analysis of human and mouse oocyte RNA-Seq data
+$$
+{totalreads\times(\frac{paternalreads}{maternalreads+paternalreads})}
+$$
+
+### Analysis of human and mouse oocyte RNA-Seq data
 
 For analysis of publicly available oocyte RNA-Seq data, raw Fastq files were obtained from the NCBI Sequence Read Archive. Quality control analysis was conducted using FastQC. Reads were aligned to the mm9 (mouse) or hg19 (human) reference genome using STAR (Dobin et al., 2013) and counted using FeatureCounts (Liao et al., 2014). BioProject and Run numbers for samples analyzed are listed here.
 
-Human oocyte RNA-SeqMouse oocyte RNA-SeqBioProject IDRun numberBioProject IDRun numberPRJNA146903SRR351336PRJDB21DRR001701PRJNA146903SRR351337PRJDB21DRR001702PRJEB8994ERR841204PRJNA154207SRR385627
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Human oocyte RNA-Seq</th>
+      <th colspan="2">Mouse oocyte RNA-Seq</th>
+    </tr>
+    <tr>
+      <th>BioProject ID</th>
+      <th>Run number</th>
+      <th>BioProject ID</th>
+      <th>Run number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PRJNA146903</td>
+      <td>SRR351336</td>
+      <td>PRJDB21</td>
+      <td>DRR001701</td>
+    </tr>
+    <tr>
+      <td>PRJNA146903</td>
+      <td>SRR351337</td>
+      <td>PRJDB21</td>
+      <td>DRR001702</td>
+    </tr>
+    <tr>
+      <td>PRJEB8994</td>
+      <td>ERR841204</td>
+      <td>PRJNA154207</td>
+      <td>SRR385627</td>
+    </tr>
+  </tbody>
+</table>
 
-## Statistical analysis and plots
+### Statistical analysis and plots
 
 Welch’s two-sample T-tests were used to test for significant differences between the means of Pyrosequencing and RNA-Seq allelic expression data. This test was chosen due to the unequal variance and sample sizes between different genotype groups. In the RNA-Seq allelic expression significance tests, the average percent paternal expression of all informative X-linked genes was calculated for each sample. The total paternal expression value for each genotype group was obtained by calculating the mean of the informative percent paternal values for all samples in that genotype group. A two-tailed Student’s T-test was used to determine the significance of RNA FISH and IF data. All barplots and heatmaps were made using the ggplot and Pheatmaps R packages, respectively. Dotplots were made using Python’s Seaborn package. Only genes that were informative in all samples were included in the heatmaps.

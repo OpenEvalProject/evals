@@ -32,51 +32,99 @@ In the course of normal differentiation, as well as under stress conditions, ste
 
 ## Results
 
-## Rad21 regulates ISC proliferation and differentiation
+### Rad21 regulates ISC proliferation and differentiation
 
 The Rad21 subunit of the Cohesin complex has been shown to act as a tumor suppressor and promoter of pro-inflammatory myeloid polarization in the hematopoietic system, while acting to preserve stemness and prevent differentiation of progenitor cells in the epidermis (Mullenders et al., 2015; Noutsou et al., 2017; Cuartero et al., 2018). These observations indicate that Cohesin may selectively regulate different types of somatic stem cells, and that further characterization of its role in stem cell behavior in vivo is warranted. Using the Drosophila ISC lineage as a model, we asked whether loss of Cohesin would influence stem cells in a barrier epithelium. We performed lineage tracing using the esg-FlpOut system (Jiang et al., 2009), which allows temperature-inducible Flp-mediated excision of a transcriptional STOP sequence in ISCs to achieve inherited expression of Gal4, and as a consequence expression of UAS-linked transgenes, in ISCs and their daughter cells. Using this system, knock down of Rad21 (using two independent shRNA constructs targeting Rad21) resulted in clones mostly containing individual cells with large nuclei and expressing Pdm1, indicating that Rad21 knock down triggered ISC differentiation into enterocytes (ECs) (Lee et al., 2009; Beebe et al., 2010; Mathur et al., 2010; Korzelius et al., 2014) (Figure 1A and B; Figure 1—figure supplement 1). Rad21-deficient cells became larger (Figure 1—figure supplement 2) and their nuclei were significantly bigger than nuclei of WT ISCs, supporting the notion of their terminal differentiation into ECs (Figure 1C). While Cohesin-depleted clones showed a significant increase in Pdm1 positive cells (Figure 1), they were not in fact smaller with respect to the numbers of cells per clone. Their size was about equal compared to wild-type clones, with some minor variability in the exact number of cells seen in different guts (Figure 1—figure supplement 1). Elimination of the Rad21 immunohistochemistry signal in ISCs after Rad21 knock down confirmed efficient protein downregulation (Figure 1—figure supplement 3).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig1-v1.jpg)
+
+**Figure 1.:** (A) esg-FlipOut (F/O) midguts expressing UAS-GFP alone (control) or expressing rad21RNAi. Samples were stained for GFP and Pdm1. (B) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 771, 543 and 389) ANOVA. (C) Analysis of nuclei size from A (n = 50). Mann-Whitney Test. (D) Quantification of the number of mitotic pH3-positive cells/midgut in the guts expressing UAS-EYFP alone (control) or expressing rad21RNAi with and without Ecc15 infection. (n = 6–8), ANOVA. *p<0.05, ***p<0.001. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Samples were stained for GFP and Pdm1. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Differentiated cells are labeled with white arrowheads. Samples were stained for GFP. Scale bars, 20 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Samples were stained for GFP and Rad21. Rad21 expression (Control, second raw) or Rad21 knock down efficiency (Rad21 RNAi) is indicated by white arrowheads. Scale bars, 20 µm.
 
 ISC differentiation is normally associated with abrogation of cell proliferation and reduction of mitotic markers. Consistent with ectopic ISC differentiation, loss of Rad21 inhibited ISC proliferation in response to infection by the mild enteropathogen Erwinia carotovora carotovora 15 (Ecc15), as assessed by the quantification of phospho-Histone H3+ cells in the gut (Figure 1D). This premature differentiation phenotype in Rad21 deficient Drosophila ISCs is consistent with loss of epidermal progenitor cells in mice due to aberrant differentiation after Rad21 knock down (Noutsou et al., 2017).
 
 Rad21/Cohesin is loaded onto chromosomes by the kollerin complex, which includes Nipped-B, and on chromosome arms is removed during mitotic prophase by Polo kinase, likely via phosphorylation of its SA1/SA2 subunits, while the centromeric pool of Cohesin is removed during the metaphase to anaphase transition by Separase (Hauf et al., 2005; Dorsett, 2009). We asked whether perturbing Rad21 loading or promoting Cohesin release would be sufficient to phenocopy the effects of Rad21 knockdown. To perturb Cohesin loading or release, we knocked down Nipped-B or over-expressed the constitutively active Polo mutant poloT182D (the Drosophila homologue of the mammalian Plk1T210D allele that leads to Cohesin release from chromatin while also delaying mitosis) (Sumara et al., 2002; van de Weerdt et al., 2005) in ISCs, and analyzed differentiation and proliferation (Figure 2). Similar to reducing rad21 expression, these perturbations induced premature ISC differentiation, indicated by ectopic Pdm1 expression (Figure 2A–C) and inhibition of mitotic activity (Figure 2—figure supplement 1). Interestingly, depletion of the chromatin-shaping and transcriptional repressor and insulator CTCF (CCCTC-binding factor) (Sexton and Cavalli, 2015) did not trigger ISC differentiation (Figure 2A–C). These data suggest that loading of Rad21/Cohesin onto chromatin is crucial for ISC maintenance and to prevent premature differentiation of ISCs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig2-v1.jpg)
+
+**Figure 2.:** (A) esg-F/O midguts expressing UAS-GFP alone (control) or expressing UAS-PoloT182D, nippedBRNAi or CTCFRNAi. Samples were stained for GFP and Pdm1. (B and C) Quantification of GFP-positive/Pdm1-positive cells from C. (B n = 640 and 200; C n = 758, 408 and 622), ANOVA. ***p<0.001, n.s. not significant. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control) or UAS-PoloT182D with and without Ecc15 infection (n = 8–10). ANOVA. (B) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control) or nippedBRNAi and with and without Ecc15 infection (n = 8–11). ANOVA.
+
 It is important to emphasize that ISCs divide at a very low rate in homeostatic conditions (Figures 1–4). The esg-FlpOut system we used allows determining the number of divisions that have occurred in our experiments. As shown in Figures 1A and 2A, in control flies, ISCs have for the most part, not divided (single labeled cells) or divided only once (doublets) in the course of the experiments. Rad21 knockdown, Polo activation, or NippedB knockdown resulted in cell differentiation regardless of whether ISCs had divided (clones with more than one labeled cell), or not (single labeled cell).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig3-v1.jpg)
+
+**Figure 3.:** (A) esgts midguts expressing UAS-EYFP alone (control) or expressing UAS-Rad21-HA (B). Quantification of the number of mitotic pH3-positive cells/midgut in the guts from A (n = 8), (C). esgts midguts expressing UAS-EYFP alone (upper panels) or expressing UAS-Rad21-HA (lower panels). Samples were stained for GFP and either Rad21 (upper panels) or HA tag (lower panels). ANOVA. **p<0.01. Scale bars, 20 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Samples were stained for GFP and Pdm1. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig4-v1.jpg)
 
-**Figure 4.:** (A) esg-F/O midguts expressing UAS-GFP alone (control) or expressing polo. cdk1RNAi and aurBRNAi. Samples were stained for GFP and Pdm1. (RNAiB) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 609, 369, 500, 482). (C) Quantification of the number of mitotic pH3-positive cells/midgut in esg guts expressing UAS-GFP alone (control) or cdk1ts and aurBRNAi with and without Ecc15 infection (n = 7–11), ANOVA. ***p<0.001. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.RNAi
+**Figure 4.:** (A) esg-F/O midguts expressing UAS-GFP alone (control) or expressing poloRNAi. cdk1RNAi and aurBRNAi. Samples were stained for GFP and Pdm1. (B) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 609, 369, 500, 482). (C) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control) or cdk1RNAi and aurBRNAi with and without Ecc15 infection (n = 7–11), ANOVA. ***p<0.001. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
 
 We further asked whether Rad21 over-expression would influence ISC behavior, or whether excessive Rad21 would only affect ISCs during mitosis, where its function in chromosome cohesion is important. Over-expression of Rad21-HA in ISCs using esg::Gal4 was sufficient to induce ISC proliferation in homeostatic conditions, suggesting that Rad21 can act in ISCs, at least in part, independently of chromatid cohesion (Figure 3A and B; over-expressed Rad21-HA localized to the nucleus, Figure 3C). Similarly, Rad21-HA overexpression in ISCs using esg-FlpOut system induced drastic cell overproliferation with formation of Pdm1-positive ECs (Figure 3—figure supplement 1). We therefore hypothesized that Rad21 influences ISC function via transcriptional regulation of proliferation and stemness genes in interphase, similar to its role in the mammalian epidermis (Noutsou et al., 2017).
 
-## Mitotic failure impacts cohesin and ISC homeostasis
+### Mitotic failure impacts cohesin and ISC homeostasis
 
 Rad21 and the Cohesin complex are critical for the accurate distribution of chromosomes during mitosis, and their perturbation has thus been implicated in aneuploidy (Haarhuis et al., 2014; Xu et al., 2014; Morales and Losada, 2018). Aneuploidy has recently been reported to cause ISC differentiation (Gogendeau et al., 2015) and also to promote dysplasia (Resende et al., 2018). These previous studies have reported conflicting results regarding the differentiation response of ISCs when aneuploidy is induced by knock down of spindle assembly checkpoint proteins: While depletion of bub3 was found to induce ISC differentiation and thus loss of ISCs (Gogendeau et al., 2015), depletion of BubR1, mad2, or mps1 all resulted in increased ISC proliferation and an accumulation of ISCs/EBs and EEs in the intestinal epithelium (Resende et al., 2018). Since depletion of all four factors results in aneuploidy, the differentiation response to Bub3 depletion seems to be a consequence of another function of Bub3, rather than the aneuploidy itself.
 
 To better understand the effects of Rad21 perturbation in ISCs, and to differentiate possible aneuploidy-mediated phenotypes from effects caused by transcriptional changes in interphase, we directly compared the ISC phenotypes caused by aneuploidy with the effects of Rad21 knock down. We knocked down the essential mitosis regulators Cdk1, polo and aurora B (Godinho and Tavares, 2008) using esgF/O, and monitored ISC differentiation and proliferation. These perturbations caused premature ISC differentiation, indicated by ectopic Pdm1 and inhibited mitotic activity (Figure 4A–C) reminiscent of results in published reports in which the checkpoint kinase Bub3 was knocked down (Gogendeau et al., 2015). However, the frequency of Pdm1-positive cells after these perturbations (Figure 4B) was prominently lower compared to downregulation of Rad21 (Figure 1B). Furthermore, we assessed expression of the ISC marker Delta in Rad21 and aurB-depleted ISCs using a Dl-lacZ reporter. AurB RNAi led to a significant reduction in Delta-lacZ expression, but Rad21 knock down completely eliminated this expression, indicating a more complete loss of stemness following Rad21 depletion than in other aneuploidy-inducing conditions (Figure 5A and B). Since only a minor proportion of ISCs undergo mitosis under homeostatic conditions, these results further point to a cell-cycle independent role of Cohesin in ISCs. Finally, we compared Rad21 localization and expression between ISCs with deregulated mitosis (expressing poloT182D) and WT cells. Even though Rad21 was localized to the nucleus (Figure 5—figure supplement 1) its expression was significantly decreased in poloT182D–expressing ISCs compared to WT controls (Figure 5—figure supplement 1). Thus, cell cycle defects could lead to Rad21 downregulation further triggering ISC differentiation.
 
-## Transcriptional role of Rad21 in regulating ISCs
+![Figure 5.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig5-v1.jpg)
+
+**Figure 5.:** (A) esg-F/O/Delta-lacZ midguts expressing UAS-GFP alone (control), aurBRNAi or expressing rad21RNAi. Samples were stained for GFP and b-gal. (B) Quantification of GFP-positive/Delta-lacZ-positive cells from A. (n = 1489, 1522, 733), ANOVA. **p<0.01, ***p<0.001. Scale bars, 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) esg-F/O midguts expressing UAS-GFP alone (control) or expressing UAS-PoloT182D were stained for GFP and Rad21. (B) Analysis of Rad21 intensity in UAS-GFP alone (control) or UAS-PoloT182D-expressing ISCs. Mann-Whitney Test. *p<0.05, **p<0.01, ***p<0.001, n.s. not significant. Scale bars, 20 µm.
+
+### Transcriptional role of Rad21 in regulating ISCs
 
 Rad21 is known to regulate transcription by shaping 3D structure of chromatin and bringing promotors and enhancers in close proximity to each other (Rudra and Skibbens, 2013). This is crucial for regulating transcription in interphase and for maintaining transcriptional memory after mitosis (Yan et al., 2013). These functions are dependent on recruitment of specific transcription factors and execution of particular transcriptional programs (Schaaf et al., 2013; Merkenschlager and Nora, 2016; Novo et al., 2018). We therefore hypothesized that Rad21 would regulate ISCs via recruitment of specific transcription factors to chromatin and promoting gene expression programs that maintain stemness and inhibit differentiation. To investigate how Rad21 regulates gene expression at a global level in ISCs, we conducted RNAseq analysis of FACS-sorted ISCs in which Rad21 was either downregulated (Rad21 RNAi) or overexpressed (UAS-Rad21-HA) for 3 and 7 days (Figure 6A–G). We used a previously described protocol for RNAseq analysis of FACS purified ISCs (Korzelius et al., 2014). Our data confirmed Rad21 knock down and overexpression, respectively, in ISCs (Figure 6E). We further observed that rad21 knockdown resulted in significant changes (q < 0.05 and Log2 equals or more then 1) in 985 genes against 489 genes in UAS-Rad21-HA samples (q < 0.05) with 160-gene overlap between conditions (Figure 6A and B, Figure 6—source data 1). Approximately 8,6% (32) of genes upregulated in Rad21 RNAi were also induced when the transcriptional repressor Esg was knocked down (Figure 6D and F), Figure 6—source data 1), including the transcription factor nubbin/pdm1, known to be repressed by Esg (Korzelius et al., 2014). EC-specific genes including Jon and trypsin family proteases, and ser6, were also enriched (approximately 17%, 65 genes) after Rad21 knock down (Dutta et al., 2015; Doupé et al., 2018) (Figure 6C and G, Figure 6—source data 1). Note that we did not observe upregulation of cell death markers after Rad21 knock down or over-expression (Figure 6, Figure 6—source data 1). These results were consistent with the differentiation phenotype of rad21-deficient ISCs (Figure 1), and led us to hypothesize that Rad21 may be required for Esg-mediated repression of differentiation genes. To test this hypothesis we performed a damID (Korzelius et al., 2014; Marshall et al., 2016) experiment to determine the genome-wide location of esg in wild-type and rad21 deficient ISCs. Using a previously described esg-dam construct, we observed 1034 significant peaks in esg-dam control samples, 862 of which were not observed in rad21 deficient ISCs, indicating that the vast majority of DNA interactions of esg in ISCs depend on functional rad21 (Figure 6H Figure 7 and Figure 6—source data 2). GO analysis of peaks appearing in Esg-Dam in contrast to Esg-Dam/Rad21 RNAi yielded a number of genes involved in ISC maintenance and differentiation pathways (Figure 6I and J) anticipated due to the function of esg, the lost interaction sites included locations close to differentiation and EC specific genes, such as nubbin/pdm1 (Figure 6K and Figure 6—source data 2).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig6-v1.jpg)
+
+**Figure 6.:** (A) Transcriptomic analysis of ISCs expressing UAS-EYFP (Control) or Rad21RNAi or UAS-Rad21-HA. Scatter plot of gene expression regulation after Rad21 knock down. Red dots represent significant hits (false discovery rate q < 0.05). (B) Overlap between significantly differentially expressed genes found in Rad21 RNAi and UAS-Rad21-HA datasets, Fisher exact test (***p<0.001). (C) Overlap between genes upregulated in Rad21 RNAi dataset and EC-specific genes (Doupé et al., 2018), Fisher exact test (***p<0.001). (D) Overlap between genes upregulated in Rad21 RNAi and esg RNAi datasets, Fisher exact test (***p<0.001) (Korzelius et al., 2014). (E) Rad21 expression in Control, Rad21RNAi or UAS-Rad21-HA ISCs from (A). (F) Examples of EC genes upregulated after Rad21 knock down from C. (G) Examples of genes shared in Rad21 RNAi and esg RNAi datasets from D. (H) DamID analysis of ISCs expressing Esg-Dam (Control) and Esg-Dam/Rad21RNAi (Rad21 RNAi). Overlap between significant peaks found in Esg-Dam compared to Dam only and significant peaks in Esg-Dam/Rad21RNAi compared to Dam only. (I) GO analysis of peaks significantly elevated in Esg-Dam compared to Esg-Dam/Rad21 RNAi samples. (J) Differential peaks as direct targets of Notch from H. (K) Differential occupancy of nub, GATAe and Brat loci by Esg-Dam or Esg-Dam after Rad21 knock down. Dam only serves as control. Lower panel shows peaks elevated after Rad21 knock down.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** *p<0.05, n.s. not significant.
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig7-v1.jpg)
 
-**Figure 7.:** (right).RNAiScatter plots showing reproducible peaks in repeat samples identified by the idr_tools pipeline. Black dots represent peaks with higher reproducibility (IDR <0.05).
+**Figure 7.:** Scatter plots showing reproducible peaks in repeat samples identified by the idr_tools pipeline. Black dots represent peaks with higher reproducibility (IDR <0.05).
 
 Finally, to verify our transcriptome data we performed qRT-PCR on FACS-purified Rad21-depleted ISCs and compared those to controls. We assessed expression of Pdm1 and esg, and found that, consistent with immunofluorescence data, Pdm1 was strongly induced after Rad21 downregulation, while Esg mRNA levels did not change after Rad21 knock down (Figure 6—figure supplement 1).
 
-## Notch-independent stem cell differentiation in Rad21 loss-of-function conditions can be inhibited by esg over-expression
+### Notch-independent stem cell differentiation in Rad21 loss-of-function conditions can be inhibited by esg over-expression
 
 Altogether, our data indicated that Rad21 depletion results in induction of a transcriptional differentiation program. It remained unclear, however, how Rad21 interacts with canonical differentiation pathways in the ISC lineage. Since Notch signaling is the main pathway that initiates differentiation of ISCs into ECs (Ohlstein and Spradling, 2007; Kapuria et al., 2012; Guo and Ohlstein, 2015), we set to explore whether perturbing Notch signaling would interfere with ISC differentiation in Rad21 loss of function conditions. Loss of Notch in the ISC lineage perturbs differentiation, resulting in the formation of tumors consisting of ISCs and EEs. However, when Rad21 was knocked down in Notch-deficient ISCs, these cells still differentiated into Pdm1-positive cells (Figure 8A and B), and drastically inhibited ISC proliferation was observed (Figure 8C). ISC differentiation induced by loss of Rad21 is thus independent of Notch signaling.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig8-v1.jpg)
 
-**Figure 8.:** (A) esg-F/O midguts expressing UAS-GFP alone (control), notch or notchRNAi/rad21RNAi. Samples were stained for GFP and Pdm1. (RNAiB) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 829, 2485, 376). (C) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control), notch or notchRNAi/rad21RNAi with and without Ecc15 infection (n = 6–7), ANOVA. **p<0.01, ***p<0.001. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.RNAi
+**Figure 8.:** (A) esg-F/O midguts expressing UAS-GFP alone (control), notchRNAi or notchRNAi/rad21RNAi. Samples were stained for GFP and Pdm1. (B) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 829, 2485, 376). (C) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control), notchRNAi or notchRNAi/rad21RNAi with and without Ecc15 infection (n = 6–7), ANOVA. **p<0.01, ***p<0.001. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
 
 Esg is a well-understood regulator of ISC maintenance that represses the expression of differentiation genes (Korzelius et al., 2014; Loza-Coll et al., 2014). The inhibition of Delta expression and the induction of Pdm1, both known Esg targets, after Rad21 downregulation, as well as our damID experiment, indicated a possible role for Rad21 in the regulation of the Esg transcriptional program. To functionally evaluate this hypothesis, we assessed whether Esg overexpression would influence differentiation of ISCs in Rad21 loss of function conditions. Esg overexpression robustly inhibited ISC differentiation in these conditions, significantly reducing the number of Pdm1-positive cells and increasing the frequency of mitotic ISCs in homeostatic as well as regenerative conditions (after infection) (Figure 9). These results indicate that Rad21 plays a critical role in the Esg-mediated maintenance of the stem cell state in the ISC lineage (Figure 10). At the same time, however, these data indicate that the requirement for Rad21 can be overcome by elevating Esg expression levels, suggesting that Rad21 plays mostly an accessory role to ensure robust Esg-mediated gene regulation.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig9-v1.jpg)
 
-**Figure 9.:** (A) esg-F/O midguts expressing UAS-GFP alone (control), expressing rad21, UAS-esgRNAi /rad21RNAi or UAS-esg. Samples were stained for GFP and Pdm1. (RNAiB) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 491, 402, 391, 766), (C) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control), rad21, UAS-esg/rad21RNAi or UAS-esg with and without Ecc15 infection (n = 4–6), ANOVA. *p<0.05, **p<0.01, ***p<0.001, n.s. not significant. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.RNAi
+**Figure 9.:** (A) esg-F/O midguts expressing UAS-GFP alone (control), expressing rad21RNAi, UAS-esg RNAi/rad21RNAi or UAS-esg. Samples were stained for GFP and Pdm1. (B) Quantification of GFP-positive/Pdm1-positive cells from A. (n = 491, 402, 391, 766), (C) Quantification of the number of mitotic pH3-positive cells/midgut in esgts guts expressing UAS-GFP alone (control), rad21RNAi, UAS-esg/rad21RNAi or UAS-esg with and without Ecc15 infection (n = 4–6), ANOVA. *p<0.05, **p<0.01, ***p<0.001, n.s. not significant. Differentiated cells are labeled with white arrowheads. Scale bars, 20 µm.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/48160/elife-48160-fig10-v1.jpg)
 
@@ -104,7 +152,7 @@ Recent evidence indicates that chromatin loops to a great extent could be reesta
 
 ## Materials and methods
 
-## Fly stocks
+### Fly stocks
 
 The following stocks study were reported previously (Korzelius et al., 2014).
 
@@ -112,42 +160,135 @@ Esgts driver: y,w;esg‐GAL4/CyO;tub‐GAL80ts,UAS‐GFP/Tm6B, Esg‐Flip-Out (F
 
 DamID lines:Dam only: w;M{w[+mC]=hs .min(FRT.STOP1)dam}ZH-51C/CyO,wg-lacZEsg-Dam: w;esg-Dam(ZH-51C) M4M1/CyO, wg-lacZ;MKRS/Tm6BNotch knock down: UAS‐NotchRNAi.The following Drosophila lines were obtained from Bloomington Stock Collection (Indiana): Rad21 RNAi (#36786, #65229), Cdk1 RNAi (#28368), AurB RNAi (#58308), Polo T182D (#8434), Polo RNAi (#35146, #35770), Nipped-B (#32406, #36614), CTCF RNAi (#40850).Flies containing Gal80ts were raised at 18°C and used at the minimum of 3 days of age. Animals were then shifted to 29°C for 7 days unless indicated.
 
-## Infection with Erwinia carotovora
+### Infection with Erwinia carotovora
 
 Bacteria were inoculated and grown overnight at 30 degrees, then collect and resuspended in 5% sucrose in water. Flies were shifted to 29°C for 7 days unless indicated to induce RNAi or transgene expression. Flies were then first starved for 4 hr in vials with water and subsequently flipped in new vials with Ecc15. Infections were conducted for 14–16 hr unless otherwise indicated. Esch experiment was conducted twice.
 
-## Antibodies
+### Antibodies
 
 Chicken anti-GFP (A10262, Invitrogen), mouse monoclonal anti-GFP (sc-9996, B-2, Santa-Cruz) rabbit polyclonal anti-Pdm1 (kindly provided by Cai Yu, Singapore), rabbit polyclonal anti-Rad21/vtd (kindly provided by Dale Dorsett, Saint Louis), rabbit polyclonal anti-pH3 (sc-8656, Santa Cruz), mouse monoclonal anti- beta-galactosidase/LacZ (40-1a, DSHB), HA-tag mouse monoclonal antibody (HA-7, H3663, Sigma). Secondary antibodies: goat polyclonal anti-chicken, rabbit, mouse Alexa 488, Alexa 568-coupled (A11039, A11036, A11034, A11029, A11031, Invitrogen). DAPI was used to stain DNA.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Protocol was adapted from the study described previously (Resnik-Docampo et al., 2017). Intestines from adult female flies were dissected into phosphate buffered saline (PBS) and fixed in in 4% paraformaldehyde (PFA) for 60 min at room temperature in nutating mixer. Guts were pemeabilized and washed by sequentially incubating in 0.5% Triton-x100 (Tx-100)/PBS, 0.5% Na-Deoxycholate (NaDoc), 0.3% Tx-100 for 10 min and blocked in 0.3% Tx-100/0.5 BSA/PBS for 30 min. Primary antibody in blocking solution was then added to guts and incubated overnight. Gut were further washed 4 times in 0.3% Tx-100 for 10 min. Then secondary antibody diluted in blocking solution was added, and guts were incubated for 2 hr. Afterward guts were washed 3 times in 0.3% Tx-100 for 10 min and incubated in DAPI for 5 min. Gut were subsequently washed once in 0.3% Tx-100 for 10 min and mounted in Vectashield (Vector Laboratories). Images were taken using Axiovert equipped with Apotome V or LSM710 confocal microscope and further analysed using Aviovision (Zeiss) and Image J software.
 
-## Quantification of pH3, Pdm1, DAPI, RAD21 and Delta signals
+### Quantification of pH3, Pdm1, DAPI, RAD21 and Delta signals
 
 Images were taken using Apotome (Zeiss). Mitotic index in fly guts was scored by pH3-positive ISCs in esg[ts] crosses. Mounted guts were inspected under microscope and pH3-positive ISCs (labeled by UAS-GFP) were counted. 6–12 guts per sample were scored in each experiment; each experiment was performed 2–3 times (biological replicas). Pdm1 signals were quantified in posterior midguts from flies derived from EsgF/O crosses by Axiovision software (Zeiss). Pdm1 positive ISCs (labeled with UAS-GFP) were scored in controls and in RNAi midguts. Images from 8 to 10 guts within 2–3 experiments (biological replicas) were analysed and results were pulled and presented. Delta-positive ISCs were quantified as described for Pdm1. Size of DAPI-positive nuclei and Rad21 intensity were measured in posterior midguts using Image J. A line around each of 50 DAPI and Rad21-positive nuclei was drawn and either size or average pixel intensity were analysed using Image J.
 
-## RNA isolation
+### RNA isolation
 
 Intestines (50/sample) in four independent experiments were dissected in PBD and homogenized by incubating in elastase for 1 hr at 27 degrees with vigorous shaking and pipetting. Cell suspensions were then used for FACS sorting (FACS Aria) and gated based on UAS-GFP signal set by w1118 cells autofluorescence. 10.000–20.000 GFP-positive cells were then processed for RNA isolation using Arcturus PicoPure RNA Isolation Kit (KIT0202, KIT0204, Thermo) according to manufacturer’s instructions. RNA was subsequently used for cDNA preparation using QuantiTect-Reverse Transcription Kit (205311, Qiagen) or RNAseq.
 
-## qRT-PCR
+### qRT-PCR
 
 PCR was performed 3 times using Thermo Scientific Maxima SYBR Green/ROX qPCR Master Mix (#K0222) according to manufacturer’s instructions. Pdm1 and Esg mRNA levels in rad21RNAi samples were normalized to housekeeping genes Gdh and Rpl32 and presented as ratio to controls (UAS-GFP). Primers: Gdh F: 5’-gctccgggaaaaggaaaa-3’, R: 5-tccgttaattccgatcttcg-3’; RpL32 F: 5’-atcgtgaagaagcgcaccaa-3’, R: 5’-tgtcgatacccttgggcttg-3’; Esg F: 5’-cgccagacaatcaatcgtaagc-3’, R: 5’-tgtgtacgcgaaaaagtagtgg-3’; Pdm1 (Nub) F: 5’-cgggataaatcgaaggaagc-3’, R: 5’-agtatttgatgtgtttgcgacttt-3’.
 
-## RNAseq
+### RNAseq
 
 RNA-seq dual-indexed TrueSeq stranded mRNA kit was used to prepare RNA-seq libraries. Libraries sequenced on Illumina Hiseq machine using two different lanes. Read length is 51 bases and number of reads varied across samples from 8.7M reads to 64.1M reads. First we used Trimmomatic tool version 0.36 (Bolger et al., 2014) to trim and filter low quality reads. Then, we used Tophat2 version 2.1.1 (Kim et al., 2013) to align reads that passed quality control to the UCSC dam6 reference genome. The vast majority of the reads passed quality control and the overall read mapping rate is consistently between 96.7% and 97.4% across samples. To normalize between read counts and to find differentially expressed genes between Rad21RNAi, Rad21HA, and control we used Cufflink suite of tools version 2.2.1 (Trapnell et al., 2010; Roberts et al., 2011b; Roberts et al., 2011a; Trapnell et al., 2013).
 
-## Statistics
+### Statistics
 
 Data are presented as mean SD or SEM. Statistical analysis of two experimental groups was performed using one-way ANOVA test. For non-parametric distributed data, the Mann-Whitney-U-test or Fisher exact test was applied. Significance was considered at p<0.05. *p<0.05, **p<0.01, ***p<0.001.
 
-## DamID
+### DamID
 
 Protocol was adapted from the study described previously (Marshall et al., 2016). Intestines (10–20/sample) in two independent experiments were dissected in PBD and used for extraction of genomic DNA using QIAamp DNA Micro Kit (56304, Qiagen). DNA was further digested by DpnI and cleaned via PCR purification. Digested DNA fragment were used for ligation of DamID adaptors and digestion by DpnII and PCR amplification. DNA was futher purified and sonicated to reduce fragment size. DNA quality was controlled by agarose gel and Agilent DNA Bioanalyser system. Samples were then used for library preparation and sequencing. NGS library was prepared using Illumina TruSeq nano 529 DNA kit. After library quality control sample were subsequently sequenced as 50 bp 530 single-end on an Illumina HiSeq2500.
 
-## DamID data analysis
+### DamID data analysis
 
 Read alignment and peak calling: We used damid_pipeline script from Marshall OJ's damid_pipeline software version 1.4.4 (Marshall and Brand, 2015) to align fastq files to the Drosophila dm6 reference genome and to produce coverage files. Alignment rate was good and uniform across Dam control and Esg-Dam samples but was significantly lower for the Esg-Dam(rad21Δ) samples as shown in Table 1. Then, to identify DNA regions with higher mapping counts in Esg-Dam samples compared to a Dam-control sample we used find_peaks script from the same software. find_peaks was called with the option –fdr = 0.1, allowing peaks with relatively high level of false discovery rate. The pipeline was set to compare between samples according to Table 2. Reproducibility analysis: We used the idr tool version 2.02 to merge reproducible peaks in both replicates of Esg-Dam and two replicates of Esg-Dam(Rad21Δ). Gene annotation: To find genes in proximity to genomic regions identifies as reproducible peaks, we used the BioConductor annotatr R package version 1.8.0 (Cavalcante and Sartor, 2017). Differential binding analysis: To identify differential targets of esg between control and Rad21Δ backgrounds we first used mergePeaks tool from the HOMER software (Heinz et al., 2010) to merge peaks. We merged peaks that passed IDR analysis in Esg-Dam samples with peaks that passed IDR analysis in Esg-Dam(Rad21Δ) samples. mergePeaks resulted in a list of 1362 peaks. Then we used HOMER's getDifferentialPeaks tool to find 902 peaks that are enriched in Esg-Dam compared to Esg-Dam(Rad21Δ) and vice-versa, 328 peaks that are enriched in Esg-Dam(Rad21Δ) compared to Esg-Dam. Cutoff used for enrichment was fold-change of 1.2 or greater.
+
+**Table 1.**
+ Dam ID alignment.Number of reads is uniform across samples, the sequence quality is good and uniform. Alignment rate is good and uniform across dam and Esg-Dam samples but significantly lower for the Esg-Dam/Rad21 samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th># reads</th>
+      <th>#reads containing no Ns</th>
+      <th>Overall alignment rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dam1</td>
+      <td>62,324,161</td>
+      <td>99.88</td>
+      <td>94.46%</td>
+    </tr>
+    <tr>
+      <td>dam2</td>
+      <td>61,289,068</td>
+      <td>99.88</td>
+      <td>95.17%</td>
+    </tr>
+    <tr>
+      <td>esg1</td>
+      <td>63,277,266</td>
+      <td>99.88</td>
+      <td>92.87%</td>
+    </tr>
+    <tr>
+      <td>esg2</td>
+      <td>64,279,981</td>
+      <td>99.88</td>
+      <td>92.41%</td>
+    </tr>
+    <tr>
+      <td>rad21esg1</td>
+      <td>66,375,925</td>
+      <td>99.88</td>
+      <td>56.21%</td>
+    </tr>
+    <tr>
+      <td>rad21esg2</td>
+      <td>63,063,034</td>
+      <td>99.88</td>
+      <td>79.86%</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ DamID peak calling.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>#low threshold peaks</th>
+      <th>#merged peaks</th>
+      <th>#peaks passing IDR cutoff of 0.05</th>
+      <th>%peaks passing IDR cutoff of 0.05</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>esg-dam1</td>
+      <td>2521</td>
+      <td rowspan="2">1973</td>
+      <td rowspan="2">1034</td>
+      <td rowspan="2">52.4%</td>
+    </tr>
+    <tr>
+      <td>esg-dam2</td>
+      <td>2537</td>
+    </tr>
+    <tr>
+      <td>rad21RNAi/esg-dam1</td>
+      <td>2387</td>
+      <td rowspan="2">1327</td>
+      <td rowspan="2">500</td>
+      <td rowspan="2">37.7%</td>
+    </tr>
+    <tr>
+      <td>rad21RNAi/esg-dam2</td>
+      <td>2175</td>
+    </tr>
+  </tbody>
+</table>

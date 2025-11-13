@@ -43,13 +43,180 @@ Increasing mobile phone ownership (over 67% of the global population in 2019) an
 
 Here, we examine the impact that regional heterogeneity and urbanicity has on travel patterns as well as how well spatial interaction models can reproduce travel patterns in LMICs by examining four countries in Sub-Saharan Africa: Namibia, Kenya, Burkina Faso, and Zambia (Figure 1A–D). These countries capture a range of levels of urbanization, population distribution, and importantly include large rural areas common in many LMICs. Using mobile phone data, we first characterized human mobility patterns from these four countries and determined which features were not well captured by basic gravity models. Next, we conducted an analysis of six variations of the basic gravity model, including variations that account for regional travel and urbanicity, as well as a basic radiation model to determine which provided the best trip estimates for each country (Simini et al., 2012). Finally, we compared the different model fits across the four countries to evaluate if the adjustments produced similar improvements for all countries. To our knowledge, no other models have captured these mobility features, been tested consistently against mobility data from multiple LMICs, and provided clear guidance on which model to use and when. This study provides further insight on the mobility patterns in LMICs and highlights where mobility model estimates may deviate when applied in other similar settings, ultimately improving our understanding of topics such as disease spread, migratory flows, and intervention efficacy in LMICs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Data from four Sub-Saharan African countries were selected to characterize human mobility patterns: Namibia, Kenya, Burkina Faso, and Zambia. Travel between districts (administrative level 2) was estimated via mobile phone data from each country. A basic gravity model was fit to trip data from each country which assumes that the number of trips decreases with distance and increases with population size (E–H). Here, one rural (left panel) and one urban (right panel) destination were selected from each country to show that, while the observed trips (black) from different origins do generally follow the assumptions of the gravity model (red), the gravity model is not fully capturing the observed trip patterns. See Figure 1—figure supplements 1–8 for this comparison made for all districts in each country. (I–L) Comparisons of origin-destination matrices colored by trip proportions estimated by the basic gravity model and the mobile phone data (observed) highlight how the basic gravity model tends to overestimate many trips, particularly those that are off-diagonal (e.g., inter-regional trips). The columns and rows of the OD matrix are ordered by district ID, which were assigned such that districts within the same region (adminstrative level 1) were clustered together. The capital district is indicated by the black arrow on the x- and y-axes. The colors indicate the proportion of an origin’s trips made to each destination (with light blue representing destinations visited infrequently and dark blue representing destinations visited most frequently). (See Supplementary file 1B for the key to the origin and destination numbers and Figure 1—figure supplement 9 for district level maps).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Basic model used power distance kernel. See Supplementary file 1B for key to district numbers and Figure 1—figure supplement 9 for a map.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (A-D) Administrative level two units are labeled for each country. See Supplementary file 1B for key to match ID number to district name. (E-H). Districts were sorted into urban and rural categories.
+
 ## Results
 
 We analyzed the average number of daily trips, defined here as the number of subscribers moving from one district (administrative level 2) to another, per month extracted from each mobile phone dataset (see Materials and methods). Similar to other studies, we found that the average number of monthly trips between districts from Namibia, Kenya, Burkina Faso, and Zambia generally decreased with trip distance and there were more trips from and to more populated areas (Figure 1E–H, Figure 1—figure supplements 1–8). Trips were concentrated between districts within the same region (administrative level 1) to varying degrees (intra-regional trips made up 30% of all trips in Burkina Faso, 45% in Kenya, 62% in Namibia, and 72% in Zambia) and to a few common destinations, including the district where the capital was located (Figure 1I–L, Supplementary file 1A). Although Namibia, Burkina Faso, and Zambia each consisted of ~95% predominantly rural districts, the distribution of monthly trips between urban and rural districts varied across countries. The majority of Namibia’s and Burkina Faso’s trips were between rural locations (62% and 70.5% of all trips, respectively), while Zambia’s trips were split between rural locations (53%) or rural and urban locations (46%). Kenya, with 56% predominantly urban districts, had the largest proportion of monthly trips between urban locations (70%). As a basic model, we first estimated trip counts using a basic gravity model (single parameter set fitted for all trips), which is based on the population sizes of the origin and destination and the distance between locations, with two variants on the distance kernel (power or exponential decay) (Equation 1). Estimates from this basic model overestimated trip counts and missed important features of the data, such as higher trip counts in short-distance and within-region trips, relative to long-distance and between-region trips (Figure 1E–L, Figure 1—figure supplements 1–8). Travel involving predominantly rural locations tended to be overestimated and these results were largely observed for both distance kernels and for all countries.
 
 Given how the basic model’s estimates of urbanicity and regional movement deviated from the call data records, we tested six additional variations of a gravity model that allowed for parameters to capture increasingly complex features in the data (Equations 2–9). These included fitting parameters for the origin and destination population sizes and trip distance to: (1) trips defined by origin and destination population density (urbanicity model: higher population density = predominantly urban, lower population density = predominantly rural), (2) trips within- and between-regions (regional model), and (3) trips defined by both region and urbanicity (regional-urbanicity model) (Figure 2). Each model variation was tested with two distance kernels (power and exponential decay). We also evaluated a basic radiation model (Equation 11; Masucci et al., 2013; Simini et al., 2012).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-v1.jpg)
+
+**Figure 2.:** Here, Kenya is used to demonstrate the trip types that could be defined by the region (represented by color) and/or urbanicity (solid = predominantly rural, dotted = predominantly urban) of the trip’s origin and destination to outline the various models fit. See Figure 2—figure supplements 1–2 for the fitted parameters.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Mobile phone data was used to fit parameters for origin population size (α), destination population size (β), and trip distance (γ) for each country. Different sets of parameters were fit, based on the gravity model type (color) and trip type (I: intra-regional, O: inter-regional, U: urban, R: rural). While the general trend of distance parameter as a function of trip type was similar across countries, the role the population size parameters played was country-specific. Note that there were no IUU routes in Namibia nor UU, IRU, IUR, IUU, or OUU routes in Burkina Faso, resulting in large standard deviations for the fitted parameters. Parameter values presented in Figure 2—source data 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Mobile phone data was used to fit parameters for origin population size (α), destination population size (β), and trip distance (D) for each country. Different sets of parameters were fit, based on the gravity model type (color) and trip type (I: intra-regional, O: inter-regional, U: urban, R: rural). While the general trend of distance parameter as a function of trip type was similar across countries, the role the population size parameters played was country-specific. Note that there were no IUU routes in Namibia nor UU, IRU, IUR, IUU, or OUU routes in Burkina Faso, resulting in large standard deviations for the fitted parameters. Parameter values presented in Figure 2—source data 1.
+
 All parameterized gravity models outperformed the basic model. Allowing for parameters to be fit by urbanicity or region improved model fit to varying degrees, depending on the country (Table 1, Supplementary file 2A). Accounting for urbanicity provided a larger improvement in model fit than region for all countries; however, this improvement was larger in Kenya and Burkina Faso than Namibia and was only observed for Zambia if the lower urbanicity threshold (10%) was implemented. In these models, the degree to which the parameters varied increased with model complexity, with the distance parameter varying the most, allowing for different weights to be applied based on the trip type (Figure 2—figure supplements 1–2). Overall, the most complex model, the regional-urbanicity model, had the best fit for all countries (the power variant reduced the basic model’s deviance information criterion (DIC) by 41% for Namibia, 30% for Kenya, 28% for Burkina Faso, and 16% for Zambia) (Table 1, Supplementary file 2A). Its flexibility allowed for the importance of origin and destination population sizes to vary by trip type, distinguished differences in the relative importance of distance by trip type, was able to better distinguish between inter- and intra-regional trip estimates, and adjusted for the lower trip counts between rural locations, relative to other trip types (Figure 3A, Figure 3—figure supplements 1–4). This was true regardless of the distance decay function assumed, although the best fitting decay function did vary by country (Supplementary file 2A). Interestingly, the radiation model had the most variable performance of all models, where it was the poorest performing in Namibia, Burkina Faso, and Zambia, but outperformed the basic gravity model (exponential form) in Kenya. Differences in the population distribution (more heterogenous in Namibia, Burkina Faso, and Zambia than Kenya) and locations of more populated areas may be the cause of these conflicting findings across countries (Figure 1—figure supplement 9; Linard et al., 2012; Masucci et al., 2013). These results were consistent across a range of administrative levels (1-3), suggesting that including locations’ urbanicity and/or region in a model will generally improve model fit across spatial scales (Supplementary file 2B).
+
+**Table 1.**
+ Gravity model variations (using power distance kernel) and radiation model, ranked for each country based on Deviance Information Criterion (DIC) and percent change (%Δ) from the basic gravity model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Rank</th>
+      <th colspan="2">Namibia</th>
+      <th colspan="2">Kenya</th>
+      <th colspan="2">Burkina Faso</th>
+      <th colspan="2">Zambia</th>
+    </tr>
+    <tr>
+      <th>Model</th>
+      <th>DIC (%Δ)</th>
+      <th>Model</th>
+      <th>DIC (%Δ)</th>
+      <th>Model</th>
+      <th>DIC (%Δ)</th>
+      <th>Model</th>
+      <th>DIC (%Δ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Reg - Urb.</td>
+      <td>3.62E + 06 (41.0)</td>
+      <td>Reg - Urb.</td>
+      <td>2.43E + 08 (30.1)</td>
+      <td>Reg - Urb.</td>
+      <td>1.93E + 05 (27.7)</td>
+      <td>Reg - Urb.</td>
+      <td>2.01E + 06 (16.3)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Urbanicity</td>
+      <td>4.56E + 06 (25.6)</td>
+      <td>Urbanicity</td>
+      <td>2.53E + 08 (27.2)</td>
+      <td>Urbanicity</td>
+      <td>2.05E + 05 (23.1)</td>
+      <td>Regional</td>
+      <td>2.08E + 06 (13.4)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Regional</td>
+      <td>4.61E + 06 (24.8)</td>
+      <td>Regional</td>
+      <td>3.40E + 08 (2.1)</td>
+      <td>Regional</td>
+      <td>2.52E + 05 (5.7)</td>
+      <td>Urbanicity</td>
+      <td>2.38E + 06 (1.1)</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Basic</td>
+      <td>6.12E + 06 (0.0)</td>
+      <td>Basic</td>
+      <td>3.48E + 08 (0.0)</td>
+      <td>Basic</td>
+      <td>2.67E + 05 (0.0)</td>
+      <td>Basic</td>
+      <td>2.40E + 06(0.0)</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Radiation</td>
+      <td>8.68E + 06 (-41.7)</td>
+      <td>Radiation</td>
+      <td>4.26E + 08 (-22.4)</td>
+      <td>Radiation</td>
+      <td>3.39E + 05 (-27.2)</td>
+      <td>Radiation</td>
+      <td>4.3E + 06 (-79.9)</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-v1.jpg)
+
+**Figure 3.:** (A) The proportion of trips from each origin location in Namibia was estimated by five different spatial models (power distance kernel displayed here) and ordered by the origin and destination ID. Regional clustering was more pronounced and there were fewer inter-regional trips in the adjusted models and radiation model, relative to the basic model. See Figure 3—figure supplements 1–4 for all countries and both distance kernel functions. The columns and rows of the OD matrix are ordered by district ID. (B) The ratio of predicted to observed trip counts in Namibia was calculated to determine the distribution of trips that were over- (ratio >1) or underestimated (ratio <1) in each trip type by model. The median ratio (solid black vertical line) for each trip type is compared with the equity line (white vertical line) for each model (shown as different colors). The proportion of trips that fall within the selected interval (± 10% of the observed trip count) was also used to assess a model’s ability to capture trips in that category. Generally, the basic model captured urban-to-urban trips the best and overestimated the other trip types. See Figure 3—figure supplements 5–7 for all countries, trip types, and distance kernel functions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row) distance kernels. See Supplementary file 1B for key to district numbers.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Gravity model variants were repeated with power (middle row) and exponential (bottom row). See Supplementary file 1B for key to district numbers.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Distributions of trips from gravity models using power distance kernel (A–D) and exponential distance kernel (E–H). The median ratio (black vertical line) for each trip type is compared with the equity line (white vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( ± 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Distributions of trips from gravity models using power distance kernel (A-D) and exponential distance kernel (E-H). The median ratio (solid black vertical line) for each trip type is compared with the equity line (dashed vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( ± 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/68441/elife-68441-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Distributions of trips from gravity models using power distance kernel (A-D) and exponential distance kernel (E-H). The median ratio (solid black vertical line) for each trip type is compared with the equity line (dashed vertical line) for each model (color). Trips that fell below the equity line were underestimated by the model, while those that fell above were overestimated. The proportion of trips that fall within the selected interval ( ± 10% of the observed trip count, values reported in Supplementary file 3B-C) was used to assess how well a model captured trips in that category.
 
 Overall model fit may not accurately describe how well each model can estimate certain trip types which may be relevant for particular questions. We further evaluated how close model estimates were to the observed trip count using the ratio of predicted to observed trip counts (Figure 3B, Figure 3—figure supplements 5–7). Unsurprisingly, the regional-urbanicity model (with either the exponential or power decay) produced some of the most accurate model estimates ( ± 10% of the observed trip counts) for most trip types in Namibia (11/14 trip categories), Kenya (7/14 trip categories), and Burkina Faso (6/9 trip categories) (Supplementary file 3A); however, the regional model produced the most accurate estimates for a range of trips in Zambia (5/13). The proportion of trips estimated within the 10% margin of error was lowest for Kenya, with the most accurate models only well estimating 3–7% of trips, and highest for Namibia, with some models estimating >30% of certain trip types. Depending on the type of trip and country, simpler models may provide more accurate trip estimates than the more complex regional-urbanicity model. We found that just accounting for region may be sufficient for best capturing rural-to-rural as well as general or specific inter-regional travel in Namibia. Further, a wide range of trip types was well estimated by the radiation model in Kenya and by a basic model (exponential decay) in Zambia.
 
@@ -67,58 +234,102 @@ Ultimately, gaining a more complete understanding of travel in diverse geographi
 
 ## Materials and methods
 
-## Population, urbanicity, and geolocation data
+### Population, urbanicity, and geolocation data
 
 WorldPop population data for each country were analyzed as people per pixel for each district (https://www.worldpop.org/) (Supplementary file 1A). WorldPop gridded building pattern datasets were used to categorize grid cells of each district as urban or rural as described elsewhere ( Dooley et al., 2020) using QGIS v3.6. Districts with more or less than 50% urban grid cells were categorized as urban and rural, respectively. A sensitivity analysis in which urban thresholds of 10% and 50% urban grid cells were compared showed that, while the general trends in model fits remained the same, the overall model fits were worse for the lower threshold in all countries but Zambia (Supplementary file 2C). Trip distances were defined as the haversine distance between centroids of districts. Shapefiles for the different countries were downloaded from DIVA-GIS (https://www.diva-gis.org/). Generally, the district identification numbers were assigned by the map source, with district IDs being clustered within their respective region.
 
-## Mobile phone data
+### Mobile phone data
 
 Anonymized call data records (CDRs) were provided by the leading mobile phone provider in each country (Supplementary file 1A). Two districts in Namibia did not have data (Oshakati and Uuvudhiya) and were excluded from analysis. The Burkina Faso provider shared CDRs from a subset of randomly selected subscribers (100,000, ~ 1.4% of subscribers), as opposed to the other countries’ providers that shared CDRs from all of their subscribers. The duration of and year(s) covered by the CDR datasets varied by country, defined by different data sharing agreements: Namibia’s ran October 2, 2010 – April 30, 2014; Kenya’s ran June 1, 2008 – July 3, 2009 (excluding the month of February, 2009); Burkina Faso’s ran January 1, 2016 – December 31, 2016; and Zambia’s ran August 1, 2020 – December 30, 2020. Briefly, CDRs for each country were first aggregated to tower locations and then to districts for each country. A similar method described elsewhere (Zu Erbach-Schoenberg et al., 2016) was used to assign cell towers to districts. Briefly, if a cell tower’s coverage zone fell squarely within one district, all CDRs associated with that tower were assigned to that district. If the coverage zone spanned more than one district, the number of CDRs assigned to each district was split according to the area of overlap between the coverage zone and districts. We only considered travel that crossed district boundaries, not local movement within the district. The average number of total monthly trips taken between each origin and destination was calculated and the proportion of trips was calculated for each origin by normalizing the trip counts to a given destination by the total trips made from that origin. Trip types were defined by origin and destination, either by urbanicity (urban or rural) or by region (intra- or inter-regional). Statistical and spatial analysis was done in R v3.6.3.
 
-## Mobility models
+### Mobility models
 
-We compared the ability of eight variations of the gravity model and a basic radiation model to capture the heterogeneity in trip counts (Tij) between each origin (i) and destination (j).
+We compared the ability of eight variations of the gravity model and a basic radiation model to capture the heterogeneity in trip counts ($T_{ij}$) between each origin (i) and destination (j).
 
-## Gravity models
+### Gravity models
 
-The gravity model estimates the trip counts, T^i,j, as a function of the population sizes at the origin (Pi) and destination (Pj) and deterrence function that depends on the distance between the two locations (di,j) (Equation 1).(1)T^i,j=θPiαPjβf(di,j)
+The gravity model estimates the trip counts, $T^_{i,j}$, as a function of the population sizes at the origin ($P_{i}$) and destination ($P_{j}$) and deterrence function that depends on the distance between the two locations ($d_{i,j}$) (Equation 1).
 
-Here, α and β are non-negative parameters that scale the strength of association between i and j; θ acts as a proportionality constant, and fdij is the penalty associated with a trip distance (d, in kilometers). Both the power fdij=dijγ and exponential fdij=expdi,jD forms of the deterrence function were tested, where γ is a non-negative parameter that determines the rate at which the number of trips decays with trip distance and D is a non-negative parameter that captures the deterrence distance (Chen, 2015). The number of trips increases with larger values of α and β and smaller values of γ or D. We tested eight model variations of Equation 1 in which these parameters were allowed to vary according to aspects of the origin and destination.
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha}P_{j}^{\beta}}{f(d_{i,j})}
+$$
+
+Here, $\alpha$ and $\beta$ are non-negative parameters that scale the strength of association between i and j; $\theta$ acts as a proportionality constant, and $fd_{ij}$ is the penalty associated with a trip distance (d, in kilometers). Both the power $fd_{ij}=d_{ij}^{\gamma}$ and exponential $fd_{ij}=exp\frac{d_{i,j}}{D}$ forms of the deterrence function were tested, where $\gamma$ is a non-negative parameter that determines the rate at which the number of trips decays with trip distance and D is a non-negative parameter that captures the deterrence distance (Chen, 2015). The number of trips increases with larger values of $\alpha$ and $\beta$ and smaller values of $\gamma$ or D. We tested eight model variations of Equation 1 in which these parameters were allowed to vary according to aspects of the origin and destination.
 
 Power variants:
 
-Basic: parameters are fitted to the full set of trips,(2)T^i,j=θPiαPjβdi,jγ
+Basic: parameters are fitted to the full set of trips,
 
-Urbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural-rural, rural-urban, urban-rural, and urban-urban),(3)T^i,j=θPiαkPjβkdi,jγk{k=1ifurbanicityi=rural∧urbanicityj=ruralk=2ifurbanicityi=rural∧urbanicityj=urbank=3ifurbanicityi=urban∧urbanicityj=ruralk=4ifurbanicityi=urban∧urbanicityj=urban
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha}P_{j}^{\beta}}{d_{i,j}^{\gamma}}
+$$
 
-Regional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2),(4)T^i,j=θPiαmPjβmdi,jγm{m=1ifregioni=regionjm=2ifregioni≠regionj
+Urbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural-rural, rural-urban, urban-rural, and urban-urban),
 
-Regional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc.).(5)T^i,j=θPiαnPjβndi,jγn{n=1ifregioni=regionj∧urbanicityi=rural∧urbanicityj=ruraln=2ifregioni≠regionj∧urbanicityi=rural∧urbanicityj=urbann=3ifregioni=regionj∧urbanicityi=urban∧urbanicityj=ruraln=4ifregioni≠regionj∧urbanicityi=urban∧urbanicityj=urbann=5ifregioni=regionj∧urbanicityi=rural∧urbanicityj=ruraln=6ifregioni≠regionj∧urbanicityi=rural∧urbanicityj=urbann=7ifregioni=regionj∧urbanicityi=urban∧urbanicityj=ruraln=8ifregioni≠regionj∧urbanicityi=urban∧urbanicityj=urban
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{k}}P_{j}^{\beta_{k}}}{d_{i,j}^{\gamma_{k}}}{k=1ifurbanicity_{i}=rural∧urbanicity_{j}=ruralk=2ifurbanicity_{i}=rural∧urbanicity_{j}=urbank=3ifurbanicity_{i}=urban∧urbanicity_{j}=ruralk=4ifurbanicity_{i}=urban∧urbanicity_{j}=urban
+$$
+
+Regional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2),
+
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{m}}P_{j}^{\beta_{m}}}{d_{i,j}^{\gamma_{m}}}{m=1ifregion_{i}=region_{j}m=2ifregion_{i}\neqregion_{j}
+$$
+
+Regional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc.).
+
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{n}}P_{j}^{\beta_{n}}}{d_{i,j}^{\gamma_{n}}}{n=1ifregion_{i}=region_{j}∧urbanicity_{i}=rural∧urbanicity_{j}=ruraln=2ifregion_{i}\neqregion_{j}∧urbanicity_{i}=rural∧urbanicity_{j}=urbann=3ifregion_{i}=region_{j}∧urbanicity_{i}=urban∧urbanicity_{j}=ruraln=4ifregion_{i}\neqregion_{j}∧urbanicity_{i}=urban∧urbanicity_{j}=urbann=5ifregion_{i}=region_{j}∧urbanicity_{i}=rural∧urbanicity_{j}=ruraln=6ifregion_{i}\neqregion_{j}∧urbanicity_{i}=rural∧urbanicity_{j}=urbann=7ifregion_{i}=region_{j}∧urbanicity_{i}=urban∧urbanicity_{j}=ruraln=8ifregion_{i}\neqregion_{j}∧urbanicity_{i}=urban∧urbanicity_{j}=urban
+$$
 
 Exponential variants:
 
-Basic: parameters are fitted to the full set of trips,(6)T^i,j=θPiαPjβexp(di,jD)
+Basic: parameters are fitted to the full set of trips,
 
-Urbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural – rural, rural – urban, urban – rural, and urban – urban. See definitions in Equation 3),(7)T^i,j=θPiαkPjβkexp(di,jDk)
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha}P_{j}^{\beta}}{exp(\frac{d_{i,j}}{D})}
+$$
 
-Regional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2. See definitions in Equation 4),(8)T^i,j=θPiαmPjβmexp(di,jDm)
+Urbanicity: parameters are fitted to trips categorized by the urbanicity of the origin and destination (k = 1 : 4 for rural – rural, rural – urban, urban – rural, and urban – urban. See definitions in Equation 3),
 
-Regional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc. See definitions in Equation 5),(9)T^i,j=θPiαnPjβnexp(di,jDn)
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{k}}P_{j}^{\beta_{k}}}{exp(\frac{d_{i,j}}{D_{k}})}
+$$
 
-We fit the gravity model parameters θ,α,β,γ,andD to observed trip counts extracted from mobile phone data (mi,j) using Bayesian inference, where the model likelihood was assumed to have Poisson error structure (Equation 10) and parameters were given uninformative Gamma priors. The gravity models were fitted to call data records using the R package ‘mobility’, which employs the JAGS (Just Another Gibbs Sampler) Bayesian MCMC algorithm and ‘rjags’ R package (found at https://github.com/COVID-19-Mobility-Data-Network/mobility, John, 2021). The posterior parameter estimates were then used to simulate human mobility patterns.(10)mi,j∼ Pois(T^i,j)
+Regional: parameters are fitted based on trips categorized by whether the origin and destination of a trip were both in the same region (intra-regional) or in different regions (inter-regional) (m = 1 : 2. See definitions in Equation 4),
 
-## Radiation model
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{m}}P_{j}^{\beta_{m}}}{exp(\frac{d_{i,j}}{D_{m}})}
+$$
 
-Like the gravity model, the radiation model estimates a trip count, T^i,j, as a function of origin and destination population size (Equation 11); however, it differs in the way that it assumes that the probability of making a trip is also influenced by nearby potential destinations (Simini et al., 2012). Thus, T^i,j is also dependent on the total population in the circle (si,j) centered at i with a radius equal to di,j, excluding populations in i and j, and we defined this value by summing the population sizes of districts that fell completely or partially within the radius. The number of trips emanating from origin i is Ti=σPi, where σ is the proportion of the entire country’s population that traveled over a given time period (P=∑iPi). We fit the parameters σ associated with each Ti,j to trips calculated from mobile phone data (mi,j) using a Poisson error structure (Equation 10). While additional forms of the radiation model have been explored elsewhere (Bjørnstad et al., 2019), we focused on a form that normalizes Ti,j for a finite system (Masucci et al., 2013).(11)T^i,j=σPi1−PiPPiPj(Pi+si,j)(Pi+Pj+si,j)
+Regional-Urbanicity: parameters are fitted to trips categorized by both the region and urbanicity of the origin and destination (n = 1 : 8 for intra-regional- rural-to-rural, inter-regional-rural-to-rural, etc. See definitions in Equation 5),
 
-## Model comparisons
+$$
+T^_{i,j}=\theta\frac{P_{i}^{\alpha_{n}}P_{j}^{\beta_{n}}}{exp(\frac{d_{i,j}}{D_{n}})}
+$$
+
+We fit the gravity model parameters $\theta,\alpha,\beta,\gamma,andD$ to observed trip counts extracted from mobile phone data ($m_{i,j}$) using Bayesian inference, where the model likelihood was assumed to have Poisson error structure (Equation 10) and parameters were given uninformative Gamma priors. The gravity models were fitted to call data records using the R package ‘mobility’, which employs the JAGS (Just Another Gibbs Sampler) Bayesian MCMC algorithm and ‘rjags’ R package (found at https://github.com/COVID-19-Mobility-Data-Network/mobility, John, 2021). The posterior parameter estimates were then used to simulate human mobility patterns.
+
+$$
+m_{i,j}∼ Pois(T^_{i,j})
+$$
+
+### Radiation model
+
+Like the gravity model, the radiation model estimates a trip count, $T^_{i,j}$, as a function of origin and destination population size (Equation 11); however, it differs in the way that it assumes that the probability of making a trip is also influenced by nearby potential destinations (Simini et al., 2012). Thus, $T^_{i,j}$ is also dependent on the total population in the circle ($s_{i,j}$) centered at i with a radius equal to $d_{i,j}$, excluding populations in i and j, and we defined this value by summing the population sizes of districts that fell completely or partially within the radius. The number of trips emanating from origin i is $T_{i}=\sigmaP_{i}$, where $\sigma$ is the proportion of the entire country’s population that traveled over a given time period $(P=\sumiP_{i})$. We fit the parameters $\sigma$ associated with each $T_{i,j}$ to trips calculated from mobile phone data ($m_{i,j}$) using a Poisson error structure (Equation 10). While additional forms of the radiation model have been explored elsewhere (Bjørnstad et al., 2019), we focused on a form that normalizes $T_{i,j}$ for a finite system (Masucci et al., 2013).
+
+$$
+T^_{i,j}=\frac{\sigmaP_{i}}{1−\frac{P_{i}}{P}}\frac{P_{i}P_{j}}{(P_{i}+s_{i,j})(P_{i}+P_{j}+s_{i,j})}
+$$
+
+### Model comparisons
 
 Models were compared using the Deviance Information Criterion (DIC), a criterion designed for MCMC outputs that assesses a model’s trade-off between goodness of fit and complexity (Shriner and Yi, 2009; Spiegelhalter et al., 2002). Models fit to the same datasets (e.g., from the same country) were compared and those with the lowest DIC were selected as the best model. To determine the distribution of trips that were over- or underestimated for a given model, the ratio of estimated to observed trip counts for each route was calculated. Given that the distribution of ratios ranged nine orders of magnitude, the general accuracy of model estimates for specific trip types was evaluated by comparing the proportion of trips with model estimates that fell within ±10% of the observed trips.
 
-## Modifiable areal unit problem
+### Modifiable areal unit problem
 
 To explore the impact of modifiable areal unit problem (MAUP) (e.g., the effect of the arbitrary definition of administrative units the spatial distribution of CDRs and population), we fit and compared models for a range of administrative units. We reran the gravity models with a power decay function at the administrative one unit (region) level for all countries and administrative three unit level for Burkina Faso, the only country whose dataset was supplied at the administrative three unit level. Note that the models involving regionality could not be run at the administrative one unit. Regardless of the administrative unit level used (e.g., smallest or largest district sizes), the general trend in model ranking was preserved (Supplementary file 2B).
 
-## Data availability
+### Data availability
 
 A different form of the datasets from Kenya and Namibia that were negotiated in a prior negation are available as supplements of (Ruktanonchai et al., 2016 and Wesolowski et al., 2015b). Individuals interested in the dataset from Zambia may contact the authors with requests.

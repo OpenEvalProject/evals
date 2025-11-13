@@ -7,11 +7,11 @@
 
 ### Affiliations
 
-1. https://ror.org/021rr7t48 Instituto de Investigaciones Bioquímicas de Bahía Blanca (INIBIBB), UNS–CONICET Bahía Blanca Argentina
-2. https://ror.org/028crwz56 Departamento de Biología, Bioquímica y Farmacia, Universidad Nacional Del Sur Bahía Blanca Argentina
+1. Instituto de Investigaciones Bioquímicas de Bahía Blanca (INIBIBB), UNS–CONICET Bahía Blanca Argentina ([ROR:021rr7t48](https://ror.org/021rr7t48))
+2. Departamento de Biología, Bioquímica y Farmacia, Universidad Nacional Del Sur Bahía Blanca Argentina ([ROR:028crwz56](https://ror.org/028crwz56))
 
 † Corresponding author
 
 ## Abstract
 
-A molecular pathway involving compounds found in processed foods and biogenic amines increases food intake and aging in the roundworm C. elegans .
+A molecular pathway involving compounds found in processed foods and biogenic amines increases food intake and aging in the roundworm C. elegans.

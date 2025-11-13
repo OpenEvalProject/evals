@@ -28,9 +28,7 @@ These have been added to the figure legends for the empirical figures.
 
 4) Reviewer 2 pointed out that unlike the spatially patterned Video #2, gray blob-like patches in Video #1, did not appear to be spatially periodic. He asked whether "such irregular blobs were the percept in the experiments, or is the irregularity an artifact of the video generation process? If blob spatial irregularity was perceived in the experiments, then does the model also explain this (presumably with noise in spatial connectivity strengths it could)? ". Please comment.
 
-Great observation. Yes, people often report irregular blobs under controlled viewing conditions. The model can indeed produce irregular blobs, by simply adding weak random connections between the E cells of the model, shown in Figure 3B.10.7554/eLife.17072.010Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.17072.010
-
-DOI: http://dx.doi.org/10.7554/eLife.17072.010
+Great observation. Yes, people often report irregular blobs under controlled viewing conditions. The model can indeed produce irregular blobs, by simply adding weak random connections between the E cells of the model, shown in Figure 3B.10.7554/eLife.17072.010Author response image 1.
 
 Author response image 1 shows some new output from the model showing irregular blobs, time is shown on the vertical axis and space on the horizontal. We have added text to the manuscript to explain that this is possible (Results, sixteenth paragraph).
 

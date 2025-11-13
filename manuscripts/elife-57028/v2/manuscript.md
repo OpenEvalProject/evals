@@ -47,113 +47,1004 @@ Spontaneously Hypertensive Heart Failure (SHHF) and age-matched Sprague-Dawley (
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig1-v2.jpg)
 
-**Figure 1.:** 6-week-old rats started drinking either water (control) or a TMAO solution. SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Lepr/Crl) SHHF, SD – Sprague-Dawley rats, SD-ISO - SD rats treated with ISO at the age of 56 week. ISO - administration of isoprenaline at a dose of 100 mg/kg s.c. T1 - metabolic and echocardiographic measurements, T2 - echocardiographic measurements, T3 - metabolic, echocardiographic and direct hemodynamic measurements.cp
+**Figure 1.:** 6-week-old rats started drinking either water (control) or a TMAO solution. SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl) SHHF, SD – Sprague-Dawley rats, SD-ISO - SD rats treated with ISO at the age of 56 week. ISO - administration of isoprenaline at a dose of 100 mg/kg s.c. T1 - metabolic and echocardiographic measurements, T2 - echocardiographic measurements, T3 - metabolic, echocardiographic and direct hemodynamic measurements.
 
-## SD rats
+### SD rats
 
 In general SD rats showed no pathological findings (Table 1, Figures 2 and 3, and Figure 3—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig2-v2.jpg)
 
-**Figure 2.:** SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Lepr/Crl), SD – Sprague-Dawley rats, SD-ISO: SD rats treated with ISO at the age of 56 week. ISO: administration of isoprenaline at a dose of 100 mg/kg s.c. SD: Left ventricular systolic function is normal/preserved. Left and right ventricular diameter is normal. Left ventricular wall thickness is normal. Left atrial diameter is normal. SHHF: Septal hypokinesis. Left ventricular free wall is hypertrophic. Endocardium is hyperechogenic. SD-ISO: Septal hypokinesis. Left ventricular end-systolic diameter is increased. Left atrial enlargement.cp
+**Figure 2.:** SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl), SD – Sprague-Dawley rats, SD-ISO: SD rats treated with ISO at the age of 56 week. ISO: administration of isoprenaline at a dose of 100 mg/kg s.c. SD: Left ventricular systolic function is normal/preserved. Left and right ventricular diameter is normal. Left ventricular wall thickness is normal. Left atrial diameter is normal. SHHF: Septal hypokinesis. Left ventricular free wall is hypertrophic. Endocardium is hyperechogenic. SD-ISO: Septal hypokinesis. Left ventricular end-systolic diameter is increased. Left atrial enlargement.
 
-## SD rats: Control vs TMAO treatment
+![Figure 3.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig3-v2.jpg)
 
-## Survival and water-electrolyte balance
+**Figure 3.:** A - myocardium; hematoxylin-eosin (HE) staining at magnification x10; B - myocardium; HE staining at magnification x40; C - myocardium; van Gieson staining at magnification x10; D - lungs; HE staining at magnification x10; E – kidney - renal cortex, renal bodies; HE staining at magnification x40; F - kidney - renal medulla; hematoxylin-eosin staining at magnification x10.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A, B, C - myocardium; hematoxylin-eosin staining at magnification x10; D, E, F - myocardium; hematoxylin-eosin staining at magnification x40; G, H, I- myocardium; van Gieson staining at magnification x10; J, K, L - lungs; hematoxylin-eosin staining at magnification x10; M, N, O – kidney - renal cortex, renal bodies; hematoxylin-eosin staining at magnification x40; P, T, S – kidney - renal medulla; hematoxylin-eosin staining at magnification x10.
+
+**Table 1.**
+ Metabolic, renal and cardiovascular parameters in 58-week-old normotensive SD rats.Sprague-Dawley rats maintained on either water (SD-control, n = 6–10) or TMAO solution (SD-TMAO, n = 7–10). Creatinine clearance calculated as urine creatinine x urine output (ml/min)/plasma creatinine. LVEDV - left ventricle end diastolic volume, LVESV - left ventricle end systolic volume, SV – stroke volume, EF - ejection fraction, IVSs(d) - intraventricular septum diameter during systole and diastole, respectively, LVEDP - pressure in the left ventricle during the end of diastole measured directly with a catheter, +dP/dt - maximal slope of systolic ventricular pressure increment, - dP/dt - maximal slope of diastolic ventricular pressure decrement. Values are means,± SD. P values by t-test or Mann-Whitney U test.Table 1—source data 1.Metabolic, renal and cardiovascular parameters in 58-week-old normotensiveSD rats.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Group/Parameter</th>
+      <th>SD-control</th>
+      <th>SD-TMAO</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Survival, energy and water balance</td>
+    </tr>
+    <tr>
+      <td>Survival from the study onset (%, n)</td>
+      <td></td>
+      <td>100% (10/10)</td>
+      <td>100% (10/10)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Body mass (g)</td>
+      <td></td>
+      <td>446.4 ± 40.63</td>
+      <td>452.86 ± 37.11</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>24 hr food intake (g)</td>
+      <td></td>
+      <td>19.99 ± 2.83</td>
+      <td>21.49 ± 2.64</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>24 hr water intake (g)</td>
+      <td></td>
+      <td>31.56 ± 10.02</td>
+      <td>36.66 ± 5.18</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>24 hr urine output (g)</td>
+      <td></td>
+      <td>18.66 ± 2.35</td>
+      <td>22.66 ± 6.49</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Tibia length (cm)</td>
+      <td></td>
+      <td>4.31 ± 0.1</td>
+      <td>4.25 ± 0.15</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td colspan="5">TMAO</td>
+    </tr>
+    <tr>
+      <td>Plasma TMAO (µmol/L)</td>
+      <td></td>
+      <td>6.55 ± 0.65</td>
+      <td>39.73 ± 20.6</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>24 hr TMAO urine excretion (µmoles)</td>
+      <td></td>
+      <td>5.96 ± 1.49</td>
+      <td>103.05 ± 56.7</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="5">Heart mass</td>
+    </tr>
+    <tr>
+      <td>Heart mass (g)</td>
+      <td></td>
+      <td>1.44 ± 0.08</td>
+      <td>1.46 ± 0.14</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td colspan="5">Arterial blood pressure and heart rate</td>
+    </tr>
+    <tr>
+      <td>Systolic (mmHg)</td>
+      <td></td>
+      <td>129.72 ± 8.56</td>
+      <td>127.07 ± 5.84</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>Diastolic (mmHg)</td>
+      <td></td>
+      <td>80.56 ± 13.3</td>
+      <td>86.61 ± 9.74</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>HR (beats/min)</td>
+      <td></td>
+      <td>333.9 ± 45</td>
+      <td>364.4 ± 8.6</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td colspan="5">Echocardiographic parameters</td>
+    </tr>
+    <tr>
+      <td>LVEDV (mL)</td>
+      <td></td>
+      <td>0.47 ± 0.15</td>
+      <td>0.57 ± 0.1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>LVESV (mL)</td>
+      <td></td>
+      <td>0.12 ± 0.04</td>
+      <td>0.13 ± 0.03</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>IVSs (cm)</td>
+      <td></td>
+      <td>0.35 ± 0.03</td>
+      <td>0.35 ± 0.03</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>IVSd (cm)</td>
+      <td></td>
+      <td>0.24 ± 0.03</td>
+      <td>0.25 ± 0.03</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>SV (mL)</td>
+      <td></td>
+      <td>0.36 ± 0.11</td>
+      <td>0.44 ± 0.1</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>EF (%)</td>
+      <td></td>
+      <td>75.63 ± 3.02</td>
+      <td>77.13 ± 6.01</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td colspan="5">Left ventricle hemodynamic parameters (direct measurements)</td>
+    </tr>
+    <tr>
+      <td>LVEDP (mmHg)</td>
+      <td></td>
+      <td>4.12 ± 0.78</td>
+      <td>4.25 ± 0.92</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>dP/dt (mmHg/ms)</td>
+      <td></td>
+      <td>6.54 ± 1.02</td>
+      <td>7.31 ± 1.23</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>-dP/dt (mmHg/ms)</td>
+      <td></td>
+      <td>5.00 ± 0.69</td>
+      <td>5.26 ± 0.45</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td colspan="5">Plasma NT-proBNP</td>
+    </tr>
+    <tr>
+      <td>NT-proBNP (pg/mL)</td>
+      <td></td>
+      <td>24.79 ± 8.1</td>
+      <td>18.61 ± 8.17</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td colspan="5">Electrolyte balance</td>
+    </tr>
+    <tr>
+      <td>Serum sodium (mmol/L)</td>
+      <td></td>
+      <td>138.86 ± 2.27</td>
+      <td>138.44 ± 0.50</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>24 hr sodium urine excretion (mmoles)</td>
+      <td></td>
+      <td>1.76 ± 0.23</td>
+      <td>2.11 ± 0.08</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Serum potassium (mmol/L)</td>
+      <td></td>
+      <td>5.27 ± 0.89</td>
+      <td>5.13 ± 0.17</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>24 hr potassium urine excretion (mmoles)</td>
+      <td></td>
+      <td>2.83 ± 0.58</td>
+      <td>3.00 ± 0.12</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Serum creatinine clearance (mL/min)</td>
+      <td></td>
+      <td>1.15 ± 0.18</td>
+      <td>1.16 ± 0.07</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hormones</td>
+    </tr>
+    <tr>
+      <td>Angiotensin II (pg/mL)</td>
+      <td></td>
+      <td>244.93 ± 35.55</td>
+      <td>250.07 ± 64.95</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>Aldosterone (pg/mL)</td>
+      <td></td>
+      <td>897.05 ± 95.34</td>
+      <td>925.61 ± 75.29</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Vasopressin (ng/mL)</td>
+      <td></td>
+      <td>0.92 ± 0.98</td>
+      <td>1.78 ± 0.59</td>
+      <td>0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+#### SD rats: Control vs TMAO treatment
+
+##### Survival and water-electrolyte balance
 
 There was no significant difference between the SD-control and SD-TMAO rats in survival rate (100% in both groups), body mass and food intake. The SD-TMAO rats showed 5-times higher plasma TMAO levels than the SD-control group. The SD-TMAO group showed a significantly higher 24 hr urine output and sodium urine excretion. There was no significant difference between the SD-TMAO and SD-control group in plasma Ang II and aldosterone level. However, the SD-TMAO rats showed higher vasopressin concentration (Table 1).
 
-## Circulatory parameters
+##### Circulatory parameters
 
 There was no significant difference between the SD-control and SD-TMAO group in hemodynamic parameters measured directly and with echocardiography, however, the SD-TMAO rats showed higher SV and HR (Table 1).
 
-## Histopathology
+##### Histopathology
 
 There were no pathological changes in the heart, lungs and kidneys in either the SD-control or SD-TMAO group (Figure 3 and Figure 3—figure supplement 1).
 
-## Gene expression
+##### Gene expression
 
 The SD-TMAO rats showed significantly lower expression of AT1 receptors (AT1R) in the heart. In the kidneys, SD-TMAO rats showed significantly higher expression of renin but lower expression of AT2 receptors (AT2R) and a trend towards a lower expression of AT1R (Figures 4 and 5).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig4-v2.jpg)
 
-**Figure 4.:** Box plot comparing the expression proﬁles of ATG (angiotensinogen), AT1A (angiotensin II receptor type 1a), AT1B (angiotensin II receptor type 1b), AT2 (angiotensin II receptor type 2), TGF-b (transforming growth factor-beta), TIMP2 (metalloproteinase inhibitor 2) in hearts of SD – Sprague-Dawley rats, SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Lepr/Crl), SD-ISO - SD rats treated with ISO at the age of 56 week, drinking either water (control groups) or TMAO solution, (n = 6–7 for each series). × - mean value, * indicates significant difference compared with the control group. *p<0.05 by t-test or Mann-Whitney U test.cpFigure 4—source data 1.
+**Figure 4.:** Box plot comparing the expression proﬁles of ATG (angiotensinogen), AT1A (angiotensin II receptor type 1a), AT1B (angiotensin II receptor type 1b), AT2 (angiotensin II receptor type 2), TGF-b (transforming growth factor-beta), TIMP2 (metalloproteinase inhibitor 2) in hearts of SD – Sprague-Dawley rats, SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl), SD-ISO - SD rats treated with ISO at the age of 56 week, drinking either water (control groups) or TMAO solution, (n = 6–7 for each series). × - mean value, * indicates significant difference compared with the control group. *p<0.05 by t-test or Mann-Whitney U test.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig5-v2.jpg)
 
-**Figure 5.:** Box plot comparing the expression proﬁles of ATG (angiotensinogen), AT1A (angiotensin II receptor type 1a), AT1B (angiotensin II receptor type 1b), AT2 (angiotensin II receptor type 2), renin in kidneys of SD – Sprague-Dawley rats, SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Lepr/Crl), SD-ISO - SD rats treated with ISO at the age of 56 week, drinking either water (control groups) or TMAO solution, (n = 6–7 for each series). × - mean value,* indicates significant difference compared with the control group. *p<0.05 by t-test or Mann-Whitney U test.cpFigure 5—source data 1.
+**Figure 5.:** Box plot comparing the expression proﬁles of ATG (angiotensinogen), AT1A (angiotensin II receptor type 1a), AT1B (angiotensin II receptor type 1b), AT2 (angiotensin II receptor type 2), renin in kidneys of SD – Sprague-Dawley rats, SHHF - Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl), SD-ISO - SD rats treated with ISO at the age of 56 week, drinking either water (control groups) or TMAO solution, (n = 6–7 for each series). × - mean value,* indicates significant difference compared with the control group. *p<0.05 by t-test or Mann-Whitney U test.
 
-## SHHF rats
+### SHHF rats
 
 In general, the SHHF animals showed characteristics of hypertrophic cardiomyopathy with compromised systolic function including substantially increased heart mass and plasma NT-proBNP, decreased stroke volume and ejection fraction as well as lung edema (Table 2, Figure 2). Histological evaluation of the heart revealed dilated cardiomyopathy that is a moderate increase in the diameter of cardiomyocytes, enlargement of the nucleus and a reduction of cytoplasmic acidity (Figure 6). In the lungs, a passive hyperemia with thickening of the interalveolar septa, a weak focal parenchymal edema and a moderate stromal connective tissue hyperplasia were present. There were no significant pathological changes in the kidneys (Figure 6).
 
+**Table 2.**
+ Metabolic, renal and cardiovascular parameters in 58-week-old SHHF rats.Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl) rats maintained on either water (SHHF-control, n = 5–6) or TMAO solution (SHHF-TMAO, n = 7–9).Creatinine clearance calculated as urine creatinine x urine output (ml/min)/plasma creatinine. LVEDV - left ventricle end diastolic volume, LVESV - left ventricle end systolic volume, SV – stroke volume, EF - ejection fraction, IVSs(d) - intraventricular septum diameter during systole and diastole, respectively, LVEDP - pressure in the left ventricle during the end of diastole measured directly with a catheter, +dP/dt - maximal slope of systolic ventricular pressure increment, - dP/dt - maximal slope of diastolic ventricular pressure decrement. Values are means,± SD. P values by t-test or Mann-Whitney U test.Table 2—source data 1.Metabolic, renal and cardiovascular parameters in SHHF rats.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Group/ Parameter</th>
+      <th>SHHF-control</th>
+      <th>SHHF-TMAO</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Survival, Energy and water balance</td>
+    </tr>
+    <tr>
+      <td>Survival from the onset of the study (%, n)</td>
+      <td></td>
+      <td>66% (6/9)</td>
+      <td>100% (9/9)</td>
+      <td>0.07 #</td>
+    </tr>
+    <tr>
+      <td>Body mass (g)</td>
+      <td></td>
+      <td>475.2 ± 17.1</td>
+      <td>476.3 ± 12.1</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td>24 hr food intake (g)</td>
+      <td></td>
+      <td>23.2 ± 3.2</td>
+      <td>24.2 ± 2.3</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>24 hr water intake (mL)</td>
+      <td></td>
+      <td>37.5 ± 7.5</td>
+      <td>41.1 ± 6.6</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>24 hr urine output (mL)</td>
+      <td></td>
+      <td>14.8 ± 2.8</td>
+      <td>17.9 ± 2.5</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Tibia length (cm)</td>
+      <td></td>
+      <td>3.95 ± 0.21</td>
+      <td>3.99 ± 0.11</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td colspan="5">TMAO</td>
+    </tr>
+    <tr>
+      <td>Plasma TMAO (µmol/L)</td>
+      <td></td>
+      <td>6.71 ± 1.49</td>
+      <td>20.32 ± 7.21</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>24 hr TMAO urine excretion (µmoles)</td>
+      <td></td>
+      <td>9.97 ± 3.46</td>
+      <td>126.8 ± 32.8</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="5">Heart mass</td>
+    </tr>
+    <tr>
+      <td>Heart mass (g)</td>
+      <td></td>
+      <td>1.87 ± 0.31</td>
+      <td>1.72 ± 0.3</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td colspan="5">Arterial blood pressure and heart rate</td>
+    </tr>
+    <tr>
+      <td>Systolic (mmHg)</td>
+      <td></td>
+      <td>136.2 ± 12.8</td>
+      <td>126.8 ± 12.7</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Diastolic (mmHg)</td>
+      <td></td>
+      <td>98.6 ± 7.3</td>
+      <td>87.6 ± 5.6</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>HR (beats/min)</td>
+      <td></td>
+      <td>314 ± 61</td>
+      <td>302 ± 20</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td colspan="5">Echocardiographic parameters</td>
+    </tr>
+    <tr>
+      <td>LVEDV (mL)</td>
+      <td></td>
+      <td>0.37 ± 0.19</td>
+      <td>0.52 ± 0.20</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>LVESV (mL)</td>
+      <td></td>
+      <td>0.14 ± 0.08</td>
+      <td>0.15 ± 0.1</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>IVSs (cm)</td>
+      <td></td>
+      <td>0.41 ± 0.01</td>
+      <td>0.35 ± 0.09</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>IVSd (cm)</td>
+      <td></td>
+      <td>0.29 ± 0.05</td>
+      <td>0.27 ± 0.07</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>SV (mL)</td>
+      <td></td>
+      <td>0.24 ± 0.12</td>
+      <td>0.36 ± 0.12</td>
+      <td>0.053</td>
+    </tr>
+    <tr>
+      <td>EF (%)</td>
+      <td></td>
+      <td>64 ± 8.5</td>
+      <td>71 ± 6.1</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td colspan="5">Left ventricle hemodynamic parameters (direct measurements)</td>
+    </tr>
+    <tr>
+      <td>LVEDP (mmHg)</td>
+      <td></td>
+      <td>3.10 ± 0.78</td>
+      <td>3.41 ± 1.95</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>dP/dt (mmHg/ms)</td>
+      <td></td>
+      <td>5.88 ± 0.92</td>
+      <td>5.50 ± 0.98</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>-dP/dt (mmHg/ms)</td>
+      <td></td>
+      <td>2.35 ± 0.28</td>
+      <td>2.55 ± 0.67</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td colspan="5">Plasma NT-proBNP</td>
+    </tr>
+    <tr>
+      <td>NT-proBNP (pg/mL)</td>
+      <td></td>
+      <td>52.26 ± 0.15.0</td>
+      <td>42.80 ± 9.5</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td colspan="5">Electrolyte balance</td>
+    </tr>
+    <tr>
+      <td>Serum sodium (mmol/L)</td>
+      <td></td>
+      <td>142.4 ± 3.31</td>
+      <td>138.9 ± 2.98</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>24 hr sodium urine excretion (mmoles)</td>
+      <td></td>
+      <td>1.42 ± 0.28</td>
+      <td>1.93 ± 0.33</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Serum potassium (mmol/L)</td>
+      <td></td>
+      <td>4.73 ± 0.33</td>
+      <td>4.49 ± 0.28</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>24 hr potassium urine excretion (mmoles)</td>
+      <td></td>
+      <td>2.89 ± 0.42</td>
+      <td>3.40 ± 0.54</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Serum creatinine clearance (mL/min)</td>
+      <td></td>
+      <td>0.42 ± 0.17</td>
+      <td>0.53 ± 0.05</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hormones</td>
+    </tr>
+    <tr>
+      <td>Angiotensin II (pg/mL)</td>
+      <td></td>
+      <td>325.7 ± 39.8</td>
+      <td>276.7 ± 38.3</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Aldosterone (pg/mL)</td>
+      <td></td>
+      <td>816.8 ± 300.4</td>
+      <td>758.4 ± 142.8</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Vasopressin (ng/mL)</td>
+      <td></td>
+      <td>3.02 ± 1.24</td>
+      <td>3.11 ± 1.03</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td colspan="5">Cytokines</td>
+    </tr>
+    <tr>
+      <td>TNF-a (pg/mL)</td>
+      <td></td>
+      <td>34.56 ± 24.69</td>
+      <td>24.98 ± 7.92</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>IL-10 (pg/mL)</td>
+      <td></td>
+      <td>15.91 ± 4.66</td>
+      <td>28.17 ± 14.39</td>
+      <td>0.036</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig6-v2.jpg)
 
-**Figure 6.:** Lepr/Crl) drinking either water (control group) or TMAO solution.cpA - myocardium; hematoxylin-eosin staining at magnification x10; B - myocardium; hematoxylin-eosin staining at magnification x40; C - myocardium; van Gieson staining at magnification x10; D - lungs; hematoxylin-eosin staining at magnification x10; E – kidney - renal cortex, renal bodies; hematoxylin-eosin staining at magnification x40; F – kidney - renal medulla; hematoxylin-eosin staining at magnification x10; G – Percentage of myocardial fibrosis [%], N:C ratio of cardiomyocytes, values are means,± SE.Figure 6—source data 1.
+**Figure 6.:** A - myocardium; hematoxylin-eosin staining at magnification x10; B - myocardium; hematoxylin-eosin staining at magnification x40; C - myocardium; van Gieson staining at magnification x10; D - lungs; hematoxylin-eosin staining at magnification x10; E – kidney - renal cortex, renal bodies; hematoxylin-eosin staining at magnification x40; F – kidney - renal medulla; hematoxylin-eosin staining at magnification x10; G – Percentage of myocardial fibrosis [%], N:C ratio of cardiomyocytes, values are means,± SE.
 
-## SHHF rats: Control vs TMAO treatment
+#### SHHF rats: Control vs TMAO treatment
 
-## Survival and water-electrolyte balance
+##### Survival and water-electrolyte balance
 
 All SHHF-TMAO rats (n = 9) survived from the beginning of the experiment till the age of 58 weeks, that is the time of anesthesia before echocardiography. In contrast, three out of nine animals (33%) in the SHHF-control group died. Specifically, two rats were euthanized due to hemiparalysis (ischemic stroke) and dyspnea (post-mortem lung edema), and one died spontaneously (post-mortem lung edema), at the age of 52, 56 and 57 weeks, respectively. The log-rank test showed a trend (p=0.0651) towards higher survival in the SHHF-TMAO than in SHHF-control group (Figure 7). One SHHF-TMAO animal died during anesthesia before echocardiographic examination. The following numbers in each group were included for further analysis: SHHF-TMAO (n = 8) and SHHF-control (n = 6).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig7-v2.jpg)
 
-**Figure 7.:** Lepr/Crl) rats drinking either water (control group, n = 9) or TMAO solution (n = 9).cpLog-Rank test p=0.06555.
+**Figure 7.:** Log-Rank test p=0.06555.
 
 There was no significant difference between the groups in food intake. The SHHF-TMAO animals showed 3–4-fold higher plasma TMAO level than the SHHF-control rats. The SHHF-TMAO rats had a significantly higher 24 hr urine output and sodium excretion than the SHHF-control rats. The SHHF-TMAO group showed significantly lower plasma sodium and Ang II levels, but there were no differences in aldosterone and vasopressin plasma levels (Table 2).
 
-## Circulatory parameters
+##### Circulatory parameters
 
 The SHHF-control and SHHF-TMAO group showed hypertrophic cardiomyopathy with compromised systolic functions and increased plasma NT-proBNP (Figures 2 and 6, Table 2). The SHHF-TMAO rats had a significantly lower diastolic blood pressure and a trend towards lower plasma NT-proBNP (p=0.09), higher stroke volume (p=0.053) and higher ejection fraction (p=0.06), (Table 2).
 
-## Histopathology
+##### Histopathology
 
 The general histological picture of myocardium and cardiomyocyte morphology did not differ significantly between the groups. Morphometric analysis did not show significant differences in the degree of myocardial fibrosis between the groups. However, in the TMAO group there was a trend towards less myocardial fibrosis (p=0.07), cardiomyocyte bands were more visible, and smaller inflammatory infiltration was found. The histological picture of the lungs and kidneys did not differ significantly between SHHF-control and SHHF-TMAO groups (Figure 6).
 
-## Gene expression
+##### Gene expression
 
 The SHHF-TMAO rats had a significantly lower expression of AT1R and a significantly higher expression of AT2R in the heart. In the kidneys, the SHHF-TMAO rats showed a significantly higher expression of renin and lower expression of AT1AR (Figures 4 and 5).
 
-## SD-ISO rats
+### SD-ISO rats
 
 In general, the SD animals subjected to catecholamine stress (isoprenaline) showed some characteristics of Takotsubo-like cardiomyopathy, including a mild degree of apical akinesis/dyskinesis, edema of cardiomyocytes, increased NT-proBNP level and mild lung edema (Figures 2 and 8, Table 3). Numerous, scattered foci of banded mononuclear cell infiltration were present in the myocardium. Severe hyperemia of myocardial capillaries and arterioles and small organized foci of myocardial extravasation were present. Nevertheless, the majority of the myocardium remained normal in structure. The lungs presented transudate in the alveoli. In the kidneys, there was a weak congestion in the medulla and renal bodies. A small number of tubules filled with an acidic substance was present. Stimulation of stromal fibrocytes without production of connective tissue fibers was observed (Figure 8).
 
+**Table 3.**
+ Metabolic, renal and cardiovascular parameters in 58-week-old SD-ISO rats.Sprague-Dawley rats treated with isoprenaline at the age of 56 weeks. Rats maintained on either water (ISO-control, n = 5–9) or TMAO solution (ISO-TMAO, n = 7–10). T1 - metabolic and echocardiographic measurements, T2 - echocardiographic measurements, T3 - metabolic, echocardiographic and direct hemodynamic measurements (see also the study design, Figure 1). Creatinine clearance calculated as urine creatinine x urine output (ml/min)/plasma creatinine. LVEDV - left ventricle end diastolic volume, LVESV - left ventricle end systolic volume, SV – stroke volume, EF - ejection fraction, IVSs(d), intraventricular septum diameter during systole and diastole, respectively. LVEDP - pressure in the left ventricle during the end of diastole measured directly with a catheter, +dP/dt - maximal slope of systolic ventricular pressure increment, - dP/dt - maximal slope of diastolic ventricular pressure decrement. Values are means,± SD. P values by t-test or Mann-Whitney U test, except # - by log-rank test.Table 3—source data 1.Metabolic, renal and cardiovascular parameters in SD-ISO rats.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Group/ Parameter</th>
+      <th>ISO-control</th>
+      <th>ISO-TMAO</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Survival, Energy and water balance</td>
+    </tr>
+    <tr>
+      <td>Survival from the study onset (%, n)</td>
+      <td></td>
+      <td>90% (9/10)</td>
+      <td>100% (10/10)</td>
+      <td>0.32#</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Body mass (g)</td>
+      <td>T1</td>
+      <td>434.44 ± 22.93</td>
+      <td>432.69 ± 37.59</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>438.67 ± 23.99</td>
+      <td>428.71 ± 37.14</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td rowspan="2">24 hr food intake (g)</td>
+      <td>T1</td>
+      <td>21.54 ± 1.43</td>
+      <td>21.84 ± 1.94</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>21.24 ± 2.44</td>
+      <td>22.08 ± 1.91</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td rowspan="2">24 hr water intake (mL)</td>
+      <td>T1</td>
+      <td>34.99 ± 3.10</td>
+      <td>34.82 ± 3.89</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>34.77 ± 5.47</td>
+      <td>35.59 ± 1.92</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td rowspan="2">24 hr urine output (g)</td>
+      <td>T1</td>
+      <td>19.28 ± 2.73</td>
+      <td>20.03 ± 4.42</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>19.68 ± 4.29</td>
+      <td>20.23 ± 2.6</td>
+      <td>0.37</td>
+    </tr>
+    <tr>
+      <td>Tibia length (cm)</td>
+      <td>T3</td>
+      <td>4.33 ± 0.06</td>
+      <td>4.34 ± 0.1</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td colspan="5">TMAO</td>
+    </tr>
+    <tr>
+      <td>Plasma TMAO (µmol/L)</td>
+      <td>T3</td>
+      <td>5.95 ± 2.35</td>
+      <td>32.51 ± 11.43</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>24 hr TMAO urine excretion (µmoles)</td>
+      <td>T3</td>
+      <td>5.74 ± 1.64</td>
+      <td>119.12 ± 65.96</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="5">Heart mass</td>
+    </tr>
+    <tr>
+      <td>Heart mass (g)</td>
+      <td>T3</td>
+      <td>1.46 ± 0.13</td>
+      <td>1.43 ± 0.19</td>
+      <td>0.39</td>
+    </tr>
+    <tr>
+      <td colspan="5">Arterial blood pressure and heart rate</td>
+    </tr>
+    <tr>
+      <td>Systolic (mmHg)</td>
+      <td>T3</td>
+      <td>142.48 ± 10.63</td>
+      <td>130.92 ± 11.67</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Diastolic (mmHg)</td>
+      <td>T3</td>
+      <td>97.10 ± 9.95</td>
+      <td>87.59 ± 10.47</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>HR (beats/min)</td>
+      <td>T3</td>
+      <td>356.56 ± 23.39</td>
+      <td>344.19 ± 49.69</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td colspan="5">Echocardiographic parameters</td>
+    </tr>
+    <tr>
+      <td rowspan="3">LVEDV (mL)</td>
+      <td>T1</td>
+      <td>0.44 ± 0.22</td>
+      <td>0.33 ± 0.17</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>0.54 ± 0.22</td>
+      <td>0.53 ± 0.23</td>
+      <td>0.47</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>0.51 ± 0.11</td>
+      <td>0.53 ± 0.34</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td rowspan="3">LVESV (mL)</td>
+      <td>T1</td>
+      <td>0.13 ± 0.09</td>
+      <td>0.11 ± 0.07</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>0.22 ± 0.13</td>
+      <td>0.13 ± 0.05</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>0.12 ± 0.05</td>
+      <td>0.08 ± 0.02</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td rowspan="3">IVSs (cm)</td>
+      <td>T1</td>
+      <td>0.33 ± 0.03</td>
+      <td>0.32 ± 0.05</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>0.33 ± 0.06</td>
+      <td>0.35 ± 0.09</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>0.36 ± 0.04</td>
+      <td>0.32 ± 0.05</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td rowspan="3">IVSd (cm)</td>
+      <td>T1</td>
+      <td>0.24 ± 0.04</td>
+      <td>0.23 ± 0.04</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>0.26 ± 0.03</td>
+      <td>0.25 ± 0.04</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>0.24 ± 0.04</td>
+      <td>0.25 ± 0.03</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td rowspan="3">SV (mL)</td>
+      <td>T1</td>
+      <td>0.29 ± 0.15</td>
+      <td>0.26 ± 0.12</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>0.35 ± 0.17</td>
+      <td>0.47 ± 0.22</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>0.38 ± 0.09</td>
+      <td>0.34 ± 0.07</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td rowspan="3">EF (%)</td>
+      <td>T1</td>
+      <td>71.22 ± 6.12</td>
+      <td>72.11 ± 14.51</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>T2</td>
+      <td>73.11 ± 8.88</td>
+      <td>70.11 ± 12.84</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>T3</td>
+      <td>78.67 ± 7.18</td>
+      <td>77.89 ± 11.94</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td colspan="5">Left ventricle hemodynamic parameters (direct measurements)</td>
+    </tr>
+    <tr>
+      <td>LVEDP (mmHg)</td>
+      <td>T3</td>
+      <td>6.73 ± 2.55</td>
+      <td>4.46 ± 0.74</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>dP/dt (mmHg/ms)</td>
+      <td>T3</td>
+      <td>9.20 ± 1.54</td>
+      <td>6.55 ± 1.18</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>-dP/dt (mmHg/ms)</td>
+      <td>T3</td>
+      <td>5.19 ± 0.38</td>
+      <td>4.76 ± 0.65</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td colspan="5">Plasma NT-proBNP</td>
+    </tr>
+    <tr>
+      <td>NT-proBNP (pg/mL)</td>
+      <td>T3</td>
+      <td>64.49 ± 43.59</td>
+      <td>22.01 ± 22.83</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td colspan="5">Electrolyte balance</td>
+    </tr>
+    <tr>
+      <td>Serum sodium (mmol/L)</td>
+      <td>T3</td>
+      <td>136.88 ± 3.56</td>
+      <td>137.89 ± 1.62</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>24 hr sodium urine excretion (mmoles)</td>
+      <td>T3</td>
+      <td>1.93 ± 0.27</td>
+      <td>2.09 ± 0.42</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Serum potassium (mmol/L)</td>
+      <td>T3</td>
+      <td>5.53 ± 0.89</td>
+      <td>5.02 ± 0.77</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>24 hr potassium urine excretion (mmoles)</td>
+      <td>T3</td>
+      <td>2.56 ± 0.35</td>
+      <td>2.92 ± 0.35</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Serum creatinine clearance (mL/min)</td>
+      <td>T3</td>
+      <td>1.26 ± 0.23</td>
+      <td>1.24 ± 0.26</td>
+      <td>0.43</td>
+    </tr>
+    <tr>
+      <td colspan="5">Hormones</td>
+    </tr>
+    <tr>
+      <td>Angiotensin II (pg/mL)</td>
+      <td>T3</td>
+      <td>286.4 ± 24.4</td>
+      <td>272.6 ± 39.5</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>Aldosterone (pg/mL)</td>
+      <td>T3</td>
+      <td>938.6 ± 114.6</td>
+      <td>1032.4 ± 120.6</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Vasopressin (ng/mL)</td>
+      <td>T3</td>
+      <td>0.98 ± 0.55</td>
+      <td>1.28 ± 0.66</td>
+      <td>0.18</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 8.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig8-v2.jpg)
 
-**Figure 8.:** A - myocardium; hematoxylin-eosin (HE) staining at magnification x10; B - myocardium; HE staining at magnification x40; C - lungs; HE staining at magnification x10; D – kidney - renal cortex, renal bodies; HE staining at magnification x40; E – kidney - renal medulla; HE staining at magnification x10; F – Percentage of necrotic and inflammatory area in myocardium [%], values are means,± SE.Figure 8—source data 1.
+**Figure 8.:** A - myocardium; hematoxylin-eosin (HE) staining at magnification x10; B - myocardium; HE staining at magnification x40; C - lungs; HE staining at magnification x10; D – kidney - renal cortex, renal bodies; HE staining at magnification x40; E – kidney - renal medulla; HE staining at magnification x10; F – Percentage of necrotic and inflammatory area in myocardium [%], values are means,± SE.
 
-## SD-ISO rats: Control vs TMAO treatment
+#### SD-ISO rats: Control vs TMAO treatment
 
-## Survival and water-electrolyte balance
+##### Survival and water-electrolyte balance
 
 There was no significant difference between ISO-control and ISO-TMAO groups in survival rate (9/10 vs 10/10, respectively). The ISO-TMAO rats showed five times higher TMAO plasma level than the ISO-control rats. There was no significant difference in food and water intake between the groups. There was also no significant difference between the groups in 24 hr urine output, however, the ISO-TMAO rats tended to have higher natriuresis (Table 3).
 
-## Circulatory parameters
+##### Circulatory parameters
 
 The ISO-TMAO rats showed significantly lower systolic and diastolic blood pressure, significantly lower plasma NT-proBNP and lower LV ESV and LVEDP (Table 3).
 
-## Histopathology
+##### Histopathology
 
 The histological picture of the heart, lungs and kidneys did not differ significantly between the groups (Figure 8).
 
-## Gene expression
+##### Gene expression
 
 In the heart, the ISO-TMAO rats showed significantly lower expression of ATG, AT1R and AT2R. In the kidneys, the ISO-TMAO rats showed significantly lower expression of ATG and AT1R and significantly higher expression of renin (Figures 4 and 5).
 
-## Effect of TMAO on renal excretion in SD rats - acute studies
+### Effect of TMAO on renal excretion in SD rats - acute studies
 
 We evaluated changes in renal excretion induced by TMAO, urea and saline intravenous administration in acute experiments. Results are summarized in Figure 9. Only TMAO induced diuresis. The pattern of diuresis and total solutes excretion induced by TMAO were similar. Increases of V and UosmV induced by TMAO were associated with transient decrease of Uosm, whereas UNaV and UKV were not affected. This indicates that TMAO did not affected the tubular transport of sodium and potassium but induced osmotic diuresis. The bolus infusions of TMAO or saline produced a transient increase in ABP with no changes in HR, which was followed by a decrease in ABP below the baseline (by 6 ± 3 mmHg). There was no significant correlation between changes in ABP and diuresis.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig9-v2.jpg)
 
-**Figure 9.:** The priming dose (indicated by arrow) of TMAO and urea were 2.8 mmol/kg b.w. (bolus), followed by continuous infusion at a rate of 2.8 mmol/kg b.w./60 min. V – urine flow; Uosm – urine osmolality; UosmV, UNaV, UKV – total solute, sodium and potassium excretion, respectively. Values are means ± SE. * - p<0.05 vs pretreatment values, # - p<0.02 TMAO vs saline, TMAO vs urea.Figure 9—source data 1.
+**Figure 9.:** The priming dose (indicated by arrow) of TMAO and urea were 2.8 mmol/kg b.w. (bolus), followed by continuous infusion at a rate of 2.8 mmol/kg b.w./60 min. V – urine flow; Uosm – urine osmolality; UosmV, UNaV, UKV – total solute, sodium and potassium excretion, respectively. Values are means ± SE. * - p<0.05 vs pretreatment values, # - p<0.02 TMAO vs saline, TMAO vs urea.
 
-## Effect of TMAO on structure of LDH exposed to HPS and increased temperature
+### Effect of TMAO on structure of LDH exposed to HPS and increased temperature
 
 Labeled LDH was stable in PBS solution, showing no tendency for spontaneous aggregation. The value of diffusion coefficients measured by FCS at 25°C was 49.2 ± 3.3 μm2/s. This corresponds to a hydrodynamic radius of around 5.0 nm, which is in line with previously reported values (Zipper and Durchschlag, 1998).
 
 The tertiary and quaternary structures of LDH, with and without TMAO, were not influenced by a 24 hr treatment with HPS (pressure oscillations mimicking those of a rat heart), (Figure 10A). Tests performed using a different pressure oscillation system, where pressures up to 1000 mmHg were applied, did not detect observable changes in the protein structure (see Figure 10—figure supplement 1).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig10-v2.jpg)
+
+**Figure 10.:** (A) - Diffusion coefficient of LDH incubated either in PBS buffer at a constant atmospheric pressure and room temperature (serving as a control) or exposed to pressure oscillation for 24 hrs either in PBS buffer or in 1 M TMAO solution in PBS buffer at room temperature. Irrespective of the presence of 1M TMAO, 24-hour incubation under oscillating pressure did not cause dissociation, denaturation, or aggregation of LDH. ( B) – Relative diffusion coefficient (diffusion coefficient $D$ divided by its value in PBS buffer at room temperature $D_{0}$) of LDH exposed to elevated temperatures for 15 min either in PBS buffer (black symbols) or 1 M TMAO solution in PBS (red symbols). Symbol shapes differentiate between three independent measurement series (series 1 (3nM of LDH) – squares, series 2 (30nM of LDH) – circles, series 3(300nM) – triangles). In series 1, we observed an increase in the relative diffusion coefficient, suggesting degradation of LHD tetramer structure to monomers. In series 2 and 3, an increase in diffusion coefficient was followed by a decrease in diffusion coefficient suggesting the degradation of LDH followed by the aggregation of the LDH monomers. The presence of TMAO shifted the threshold of change in relative diffusion coefficient towards higher temperatures.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** First bar is a control; the two following correspond to samples incubated for 24 hr in the high-pressure oscillation system without and with 1M TMAO in the solution.
 
 The incubation of LDH at atmospheric pressure and elevated temperatures (50–80°C) changed the diffusion coefficient of LDH, indicating the dissociation of LDH tetramers, as well as protein denaturation and aggregation. The addition of 1M TMAO produced a moderate stabilizing effect on LDH, shifting the threshold of observed protein morphology change towards higher temperatures (Figure 10B). Specifically, it seems that the gradual dissociation of tetramers to monomers occurred above 55°C, which was followed by the denaturation of the tertiary protein structure at higher temperatures. At a concentration of LDH >3 nM, the aggregation of monomers prevailed. At a lower concentration, the aggregation progressed more slowly, if at all, while any aggregates that did form, were too sparse to influence the measurement results. Further work, including probing a broader matrix of LDH concentrations and temperatures, is needed to confirm these initial findings. Nevertheless, in all the experiments, presence of TMAO shifted the threshold of change in LDH morphology towards higher temperatures and diminished the magnitude of the change. This suggests a stabilizing effect of TMAO on the native structure of the protein.
 
@@ -187,21 +1078,178 @@ To evaluate this hypothesis, we built a unique experimental setup to mimic the c
 
 Altogether, our study shows that TMAO exerts beneficial effects in cardiovascular pathologies associated with fluid retention such as HF. The beneficial effects of TMAO appear to stem from its diuretic action rather than from the protein-stabilizing effect of TMAO on LDH, which was described for deep-sea animals, but was found not be involved here. It may be that the hydrostatic pressure generated by a contracting heart is far lower than the deep‐sea pressures and is kinetic (pulsing and moving) rather than static. In this regard, there is evidence that static pressure may have very different effects on cells and proteins than kinetic pressure (Kaarniranta et al., 1998). Nevertheless, the stabilizing effect of TMAO on other, less stable, cardiac proteins exposed to HPS cannot be excluded.
 
-## Limitations
+### Limitations
 
 A limitation of our study is that biochemical and hemodynamic measurements were performed only at the end of the treatment. This is because we aimed to avoid stress-related circulatory complications in SHHF rats, which are very prone to lethal cardiovascular events.
 
-## Conclusions
+### Conclusions
 
 TMAO, a molecule present in seafood and a derivate of gut bacteria metabolism, exerts beneficial effects in HF rats. These benefits might be derived from the diuretic, natriuretic and hypotensive properties of TMAO. The hydrostatic pressure stress generated by the contracting heart does not affect LDH protein structure. Further studies designed to evaluate TMAO-dependent diuretic and natriuretic effects are needed, as TMAO may serve as a naturally occurring diuretic agent in diseases associated with fluid retention e.g. heart failure.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, male)</td>
+      <td>SHHF/MccGmiCrl-Leprcp/Crl</td>
+      <td>Charles River Laboratories (USA)</td>
+      <td>RRID:RGD_2313221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NT-proBNP</td>
+      <td>FineTest</td>
+      <td>cat. no. ER0309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>aldosterone</td>
+      <td>Cayman Chemicals</td>
+      <td>cat. no. 501090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>vasopressin</td>
+      <td>Biorbyt</td>
+      <td>cat. no. orb410987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>angiotensin II</td>
+      <td>FineTest</td>
+      <td>cat. no. ER1637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TNFα</td>
+      <td>R and D System</td>
+      <td>cat. no. RTA00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-10</td>
+      <td>R and D System</td>
+      <td>cat. no. R1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>angiotensinogen</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCED0051666</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>angiotensin II receptor type 1a</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCID0052626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>angiotensin II receptor type 1b</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCED0005729</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>angiotensin II receptor type 2</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCED0007551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>transforming growth factor-beta</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCED0007638</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>renin</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCID0008721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>metalloproteinase inhibitor 2</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCID0001559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Beta-actin</td>
+      <td>Bio-Rad</td>
+      <td>Unique Assay ID: qRnoCED0018219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMAO</td>
+      <td>abcr GmbH</td>
+      <td>cat. no. AB 109058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>isoprenaline hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>cat. no. I5627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CFX Manager</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_017251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SymPhoTime 64</td>
+      <td>PicoQuant</td>
+      <td>RRID:SCR_016263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AcqKnowledge Software</td>
+      <td>Biopac Systems, Inc</td>
+      <td>RRID:SCR_014279</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The study was performed according to Directive 2010/63 EU on the protection of animals used for scientific purposes and approved by the Local Bioethical Committee in Warsaw (permission:100/2016 and 098/2019). 4–5 week-old, male, lean Spontaneously Hypertensive Heart Failure (SHHF/MccGmiCrl-Leprcp/Crl) rats were purchased from Charles River Laboratories (USA). Age-matched Sprague-Dawley (SD) rats were obtained from the Central Laboratory for Experimental Animals, Medical University of Warsaw, Poland.
 
-## Study protocol
+### Study protocol
 
 Six-week-old SHHF (n = 18) and SD (n = 40) were randomly assigned to either control groups (rats drinking tap water) or the TMAO groups (rats drinking TMAO solution in tap water, TMAO - abcr GmbH - Karlsruhe, Germany, 333 mg/l). While no specific randomization method was used, rats from one cage were assigned to different groups. The dose of TMAO was selected in order to increase the plasma TMAO concentration by 3–5 times (to mimic possible physiological concentrations) and to avoid suprapharmacological effects of TMAO, based on our previous study (Huc et al., 2018).
 
@@ -209,47 +1257,47 @@ Rats were housed in groups of 2–3 animals, in polypropylene cages with environ
 
 SHHF-TMAO (n = 9), SHFF-control (n = 9), SD-TMAO (n = 10), SD-control (n = 10) were not subjected to any interventions except standard animal care until the age of 58 weeks. At the age of 56 weeks the ISO-control (n = 10) and ISO-TMAO (n = 10) series were given (s.c.) isoprenaline at a dose of 100 mg/kg b.w. (isoprenaline hydrochloride, Sigma-Aldrich, Saint Louis, MO, USA) to produce catecholamine stress as previously described (Sachdeva et al., 2014). The experimental protocol is depicted in Figure 1.
 
-## Experimental protocol in SD and SHHF
+### Experimental protocol in SD and SHHF
 
 58-week-old rats were maintained in metabolic cages for 2 days to evaluate the 24 hr water and food balance and to collect urine for analysis. The next day, the rats underwent an echocardiogram using a Samsung HM70: an ultrasound system equipped with a linear probe 5–13. MHz. After the echo examination the rats were anaesthetized with urethane (1.5 g/kg b.w. i.p., Sigma-Aldrich) and the left femoral artery was cannulated with a polyurethane catheter for arterial blood pressure (ABP) recordings. The recordings were started 40 min after the induction of anesthesia and 15 min after inserting the arterial catheter. After 10 min of ABP recordings, a Millar Mikro-Tip SPR-320 (2F) pressure catheter was inserted via the right common carotid artery and simultaneous left ventricle pressure (LVP) and ABP recordings were performed. The catheter was connected to a Millar Transducer PCU-2000 Dual Channel Pressure Control Unit (Millar, USA) and Biopac MP 150 (Biopac Systems, USA). After hemodynamic recordings, blood from the right ventricle of the heart was taken and rats were euthanized by decapitation. The heart, the lungs and the kidneys were harvested for histological and molecular analysis.
 
-## Experimental protocol in SD-ISO
+### Experimental protocol in SD-ISO
 
 56-week-old rats were housed in metabolic cages for 2 days to evaluate the 24 hr water and food balance and to collect urine for analysis. Echocardiography was performed as described above. The next day, rats were given isoprenaline (100 mg/kg, s.c.). 24 hr after the administration of ISO, the echocardiogram was repeated. Eight days after the ISO-treatment, the 24 hr food and water intake was evaluated and an echocardiogram was performed. Afterwards, the rats were anaesthetized with urethane (1.5 g/kg b.w. i.p., Sigma-Aldrich, Poland) and the hemodynamic measurements were taken, including ABP and LVP recordings as described above for SHHF and SD rats.
 
-## TMAO and general biochemistry evaluation
+### TMAO and general biochemistry evaluation
 
 Plasma and urine concentrations of TMAO were measured using Waters Acquity Ultra Performance Liquid Chromatograph coupled with a Waters TQ-S triple-quadrupole mass spectrometer. The mass spectrometer was operated in the multiple-reaction monitoring (MRM) - positive electrospray ionization (ESI) mode, as previously described (Jaworska et al., 2017).
 
 Serum and urine sodium, potassium, creatinine and urea were analyzed using a Cobas 6000 analyzer (Roche Diagnostics, Indianapolis, USA).
 
-## ELISA test
+### ELISA test
 
 The following ELISA kits were used for the evaluation: NT-proBNP (FineTest, cat. no. ER0309), aldosterone (Cayman Chemicals, cat. no. 501090), vasopressin (Biorbyt, cat. no. orb410987), angiotensin II (FineTest, cat. no. ER1637), TNFα and IL-10 (cat. no. RTA00 and R1000, respectively, R and D System). All procedures were carried out according to the standard protocol supplied with the ELISA Kit. The absorbance intensity was measured at 450 nm with a Multiskan Microplate Reader (Thermo Fisher Scientific). All experiments were performed in duplicate (technical replicates).
 
-## Histopathological evaluation
+### Histopathological evaluation
 
 Tissues sections were fixed in 10% buffered formalin, dehydrated using graded ethanol and xylene baths and embedded in paraffin wax. Sections of 3–4 μm were stained with hematoxylin and eosin (HE) and van Gieson stain (for connective tissue fibers). General histopathological examination was evaluated at a magnification of 10x, 40x and 100x (objective lens) and 10x (eyepiece) and photographic documentation was taken. Morphometric measurements were performed at magnification of 40x (objective lens).
 
-## Molecular biological procedures
+### Molecular biological procedures
 
 Heart and kidney samples were collected from rats under urethane anesthesia and frozen at −80°C. Next, the samples were homogenized on BeadBug microtube homogenizer (Benchmark Scientific, Inc). Total RNA was isolated from the samples according to the TRI Reagent protocol. cDNA was transcribed from RNA samples according to the iScript Reverse Transcription Supermix #1708841 protocol (Bio-Rad). The qPCR mixes were prepared according to the Bio-Rad SsoAdvanced Universal SYBR Green Supermix protocol #1725271. Amplifications were performed on a Bio-Rad CFX Connect Real-Time System under standardized conditions using commercial assays. Data were analyzed using CFX Manager 3.0 software. The genes investigated in this study were: angiotensinogen (Atg, qRnoCED0051666), angiotensin II receptor type 1a (At1a, qRnoCID0052626), angiotensin II receptor type 1b (At1b, qRnoCED0005729), angiotensin II receptor type 2 (At2, qRnoCED0007551), transforming growth factor-beta (Tgf-b, qRnoCED0007638), renin (Rn, qRnoCID0008721), metalloproteinase inhibitor 2 (Timp2, qRnoCID0001559). Beta-actin was used as housekeeping gene (Actbl2, qRnoCED0018219).
 
-## The effect of TMAO on diuresis, acute experiments
+### The effect of TMAO on diuresis, acute experiments
 
-## Surgical preparations
+#### Surgical preparations
 
 Male SD rats were anaesthetized with urethane 1.5 g/kg b.w. i.p., which provided stable anesthesia for at least 4 hr. The jugular vein was cannulated for fluid infusions, and the carotid artery for ABP measurement with the Biopac MP 150 (Biopac Systems, USA). The bladder was exposed with an abdominal incision and was cannulated for timed urine collection. After the surgery, 20–30 min was allowed for stabilization. During this time, 0.9% saline was infused intravenously at a rate of 5 ml/kg/h. After completion of all experiments, the rats were euthanized by decapitation and both kidneys were excised and weighed.
 
-## Experimental procedures and measurements
+#### Experimental procedures and measurements
 
 At the end of the stabilization period, three or four 10 min urine collections were taken to determine baseline water, sodium and total solute excretion rates in each experimental group. After stabilization of urine flow, TMAO (n = 8) was infused ﬁrst as a priming dose of 2.8 mmol/kg b.w. in 5 mL / kg b.w. of 0.9% saline/5 min, followed by an infusion delivering 2.8 mmol/kg b.w. of TMAO in 5 mL/kg b.w of saline/60 min. At the start of the priming injection, five 10 min urine collections were taken during the infusion of TMAO. This basic protocol was applied in the two following protocols where TMAO was replaced by its solvent (0.9% NaCl) or saline solution of urea (2.8 mmol/kg).
 
-## Analytical procedures and calculations
+#### Analytical procedures and calculations
 
 Urine volume was determined gravimetrically. Urinary osmolality (Uosm) was measured with the cryoscopic Osmomat 030 osmometer (Gonotec, Berlin, Germany). Urine sodium (UNa) and potassium (UK) concentration were measured by a flame photometer (BWB-XP, BWB Technologies Ltd, Newbury, UK). Urine flow (V), the excretion of total solutes (UosmV), sodium (UNaV) and potassium (UKV) were calculated using the standard formulas and standardized to g kidney weight (UXV/g KW). All measurements were performed in duplicates (technical replicates).
 
-## Oscillatory-pressure controller and fluorescence correlation spectroscopy
+### Oscillatory-pressure controller and fluorescence correlation spectroscopy
 
 We evaluated the effect of TMAO on bovine, cardiac LDH (Merck, Poland) exposed to pressure oscillations and increased temperature. The pressure oscillations were generated in a custom-built system. In order to mimic the conditions in the heart the pressure changed from 0 to 180–250 mmHg (or to higher values) at oscillation rate of 280 min-1. In general, the setup consisted of two main parts: i) a custom-built oscillatory pressure controller with solenoid micro valves to control the inner pressure and ‘pulse’ frequency and ii) a sample chamber (Figure 11). We designed and constructed three different samples chambers (Figures 12, 13 and 14), which permitted the samples to be exposed to pressure oscillations in different ways.
 
@@ -257,7 +1305,7 @@ We evaluated the effect of TMAO on bovine, cardiac LDH (Merck, Poland) exposed t
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig12-v2.jpg)
 
-**Figure 12.:** (a) Scheme of the experimental setup with the heart-shaped polydimethylsiloxane (PDMS) microfluidic device. (b) time-sequence snapshots of the device in operations. From left to right: the device is filled with liquid and is at rest (for better visualisation we used here red-dyed water instead of the transparent protein solution). The microchannel connecting the pressure system to the microfluidic chamber is filled halfway. Applying high pressure (valve # one open) pushes the liquid meniscus towards the chamber. Closing valve # one and opening valve # 2 (low pressure) the liquid meniscus pulls back (even further than its original position). (c) Close-up of the moving liquid meniscus, (d) oscillation profile generated from the position of the liquid meniscus in the microchannel as a function of time for various pressure differences Δp=p1 p2.Figure 12—source data 1.
+**Figure 12.:** (a) Scheme of the experimental setup with the heart-shaped polydimethylsiloxane (PDMS) microfluidic device. (b) time-sequence snapshots of the device in operations. From left to right: the device is filled with liquid and is at rest (for better visualisation we used here red-dyed water instead of the transparent protein solution). The microchannel connecting the pressure system to the microfluidic chamber is filled halfway. Applying high pressure (valve # one open) pushes the liquid meniscus towards the chamber. Closing valve # one and opening valve # 2 (low pressure) the liquid meniscus pulls back (even further than its original position). (c) Close-up of the moving liquid meniscus, (d) oscillation profile generated from the position of the liquid meniscus in the microchannel as a function of time for various pressure differences Δp=p1 p2.
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/57028/elife-57028-fig13-v2.jpg)
 
@@ -267,13 +1315,13 @@ We evaluated the effect of TMAO on bovine, cardiac LDH (Merck, Poland) exposed t
 
 **Figure 14.:** Two manometers were attached to the system and used to determine the pressure acting on the samples.
 
-## Oscillatory pressure controller
+#### Oscillatory pressure controller
 
 The custom-built oscillatory-pressure controller consisted of two pressure sources with constant but different air pressures (p1 and p2, respectively). Each pressure source was connected through a plunger-type solenoid microvalve (V165, Sirai, Italy) to the inlet/outlet of the sample chamber via Teflon tubes (ID/OD = 0.8/1.6 mm, Bola, Germany) as shown in Figure 11. The two microvalves were controlled by a multiplexer switch module (National Instruments, USA) interfaced via custom-made LabView software which is freely available from the Github repository (Nalin, 2020). Due to their electro-magneto-mechanical construction the microvalves had some response time: the delay between application of the current and opening of the valve was 24 ms, and the delay between stopping the current and shutting the valve was 8 ms (Churski et al., 2010). The time shifts were taken into consideration when calculating the required oscillatory pressure.
 
 Operation protocol: The two valves were initially closed and the pressure inside the sample chamber was equal to the atmospheric pressure. Upon initiating the oscillatory system, the first valve opened for 50 ms. As the first valve closed, the second valve opened for 50 ms followed by a 50 ms pause when both valves were closed. With the response times included, one full cycle took 214 ms, generating an oscillation of ~280/minute between pressure p1 and p2, mimicking the heartbeat of a rat. This pressure-oscillatory system was used in each relevant experiment with the only difference being the pressure applied: p1 and p2.
 
-## Microfluidic heart chip
+#### Microfluidic heart chip
 
 In the first set of experiments a microfluidic device was constructed in polydimethylsiloxane (PMDS; Sylgard 184, Dow Corning, USA) in three steps; first, the channels and sample chamber (in the shape of a heart) were micro-milled in a polycarbonate plate (PC; Macrolon, Germay) using a CNC milling machine (MSG4025, Ergwind, Poland); second, we poured PDMS onto the PC chip, polymerized the PDMS at 75°C for 2 hr, activated the surface using a Laboratory Corona Treater (BD 20AC, Electro-Technic Products, USA) and silanized in the vapors of tridecafluoro-1,1,2,2-tetrahydrooctyl-1-trichlorosilane (United Chemical Technologies, USA) for 60 min under vacuum (10mbar); third, this negative mold was used to produce the final PDMS chip. Inlet and outlet holes were punched using a small diameter (ID = 0.8 mm) biopsy puncher prior to bonding the PDMS chip to 1mm-thick glass slides using oxygen plasma for 45 s.
 
@@ -283,13 +1331,13 @@ In the first run, we applied p1 = 250 mmHg overpressure and p2 = 0 mmHg (i.e
 
 The inlet channel (from the side of the oscillatory system) was filled with the sample liquid only half-way. As the pressure was oscillating in the microfluidic device, rapid movement of the liquid meniscus could be observed according to the oscillation frequency (see Figure 12b–d). The overpressure p1 pushed the liquid meniscus towards the chamber, while upon switch to the low pressure (p2) the meniscus pulled back. Unfortunately, since the liquid was in direct contact with the oscillating air some evaporation occurred. As a consequence, the sample liquid evaporated from the chamber within approximately 40 min of starting the experiment, leaving the microfluidic chamber dry.
 
-## PDMS sample chamber in the shape of a micro centrifuge-tube
+#### PDMS sample chamber in the shape of a micro centrifuge-tube
 
 To avoid evaporation, we constructed a different microfluidic device, where the sample liquids were not in direct contact with the oscillating air. Briefly, we removed the caps of four 0.5 mL conical bottom micro centrifuge tubes (Eppendorf, Germany) and glued them to a microscope glass slide (75 × 24×1 mm) in a line separated by ~3 mm from each other. On two other, larger glass plates (75 × 50×1 mm), we glued small blocks of polycarbonate (45 × 15×5 mm) and fixed them on two opposing sides of the micro-centrifuge tube array, so that the distance between the polycarbonate blocks and the tubes from both sides was ~1 mm. We put this construction into a small box, filled it with polydimethylsiloxane (PDMS elastomer, Sylgard 184 mixed with curing agent at a ratio of 10:1 and degassed) and polymerized the PDMS at 75°C for 2 hr. After that, we removed it from the container, removed the glass plates, the polycarbonate blocks and micro centrifuge tubes from the cured PDMS. Next, we bonded the PDMS block from the two sides, where the removed polycarbonate blocks left a cuboid-shaped cavity to glass plates (75 × 50×1 mm) using oxygen plasma. We also inserted steel capillaries (OD = 0.8 mm) from two sides of each cavity to which we connected the oscillatory system by Teflon tubes (Bola, Germany). Next, we constructed a 4 mm thick PDMS plate to cover the top of the chamber array, which was left open after the Eppendorf tubes were removed from the PDMS. Prior to bonding with oxygen plasma, holes were punched in the PDMS cover to allow for sample injection. Once the microdevice was ready (see Figure 13d), we injected the sample liquids through the punched inlet holes into the sample chambers and sealed the inlet holes air-tight. The sample liquids filled the chamber completely. In a separate experiment we left small air bubbles in the Eppendorf-chambers for pressure estimation (see below).
 
 Operation parameters. After the chambers were filled the oscillatory system was turned on using pressures p1 = 2.5 bar and p2 = 500 mbar (equivalent to 1875 and 375 mmHg, respectively). Pressure higher than 2.5 bar resulted in destruction of the PDMS membrane between the sample chambers and the pressurized cavity. As the high-pressure air filled the cuboidal-cavities, they expanded and pushed the 1 mm thick PDMS membrane towards the sample-filled chambers squeezing and deforming them (the glass on the other side of the cavity prevented the expansion) (see Figure 13b–c). As the valve of the high-pressure source (p1) closed and the second valve opened, the pressure in the cavity dropped significantly and the deformed sample chambers returned to their original shape. The rapid oscillation of the air pressure (~280/min) in the cavities resulted in a corresponding squeeze-release pulsation of the chambers, mimicking a beating heart better than previous method. After 24 hr of operation, the system was turned off, the plugs were removed from the inlet holes and the samples were removed with a syringe and needle for analysis.
 
-## Pressure-bottle-pressure significantly exceeding the physiological range
+#### Pressure-bottle-pressure significantly exceeding the physiological range
 
 We put four samples into four 0.5 mL micro-centrifuge tubes (Eppendorf tubes), removed the caps of the tubes and covered them with parafilm (Bemis, USA) instead. Small holes were made in the parafilm with a syringe needle (OD = 0.6 mm). We put the sample-loaded Eppendorf tubes inside a 250 mL laboratory glass bottle (Duran, Fischer Scientific, Germany) and closed it air-tight with a screw cap. Before closing, two small holes were drilled in the cap and steel capillaries (OD = 0.8 mm) were placed in and glued with an epoxy-based resin. The oscillatory system was connected to the steel capillaries with Teflon tubes.
 
@@ -299,28 +1347,28 @@ To measure the actual pressure range inside the laboratory bottle, which acted d
 
 In the laboratory bottle the pressure acting on our samples never dropped below 450 mbar (320 mmHg) and increased up to 1600 mbar (1200 mmHg). The frequency oscillation of the pressure was ~230/min with some ‘desynchronization’ events every 15–20 s when the pressure difference Δp=p1 p2 was only ~150 mbar (110 mmHg). Whereas during synchronized operation, the pressure difference was ~600 mbar (450 mmHg).
 
-## Proteins under hydrostatic pressure stress (HPS)
+#### Proteins under hydrostatic pressure stress (HPS)
 
 In all experiments, proteins at a concentration of around 1 μmol/L were incubated in the pressure oscillation system for 24 hr at room temperature. In each experimental run, we incubated in parallel proteins suspended in pure phosphate buffer saline (PBS) and 1M solution of TMAO in PBS. As a control for each of the samples, the solutions were divided into portions, where one portion was placed in a chamber exposed to oscillatory pressure while the other portion was placed in the same chamber but exposed to a constant, atmospheric pressure. All other conditions were the same for control and experimental samples. All solutions were then diluted 100-fold in PBS and fluorescence correlation spectroscopy (FCS) measurements were performed.
 
-## Proteins under thermal stress
+#### Proteins under thermal stress
 
 LDH solutions (3, 30, 300 nM), in either pure PBS or PBS supplemented with 1M TMAO, were pipetted into Eppendorf tubes. Samples were placed in a water heat bath (Lauda, electronically controlled) and incubated for 15 min (in separate tests – data not shown here – we verified that prolonging the incubation time above this limit, up to 1 hr, did not influence the results). Next, samples were immersed in room-temperature water bath to cool down and FCS measurement was performed for samples equilibrated to 25°C.
 
-## Fluorescence correlation spectroscopy
+#### Fluorescence correlation spectroscopy
 
-The effect of hydrodynamic and thermal stress on Atto 488 (ATTO-TEC GmbH) labeled LDH structure was evaluated by means of FCS. Proteins were labeled using active NHS esters, according to a protocol supplied by the manufacturer. A 10-fold excess of the dye was used to ensure a high degree of labeling (which was especially important for LDH, where we intended to have at least one label per subunit to be able to monitor probe concentration changes upon dissociation of the tetramer). Post-labeling purification was performed using Bio-Rad BioGel P-30 size exclusion columns. Protein labeling and purification was performed immediately before starting each experimental run. Protein diffusion coefficients (D) are associated with the protein’s hydrodynamic radius (Rh) by Stokes-Einstein relation, D=kBT/6πηRh (where kB is Boltzmann constant, T is the temperature and η denotes the viscosity of medium). The alteration in protein structure by dissociation of the quaternary structure results in an increase of the observed diffusion coefficient, while denaturation of tertiary structure causes a decrease of D by a factor of 1.5 – 3 (Wilkins et al., 1999).
+The effect of hydrodynamic and thermal stress on Atto 488 (ATTO-TEC GmbH) labeled LDH structure was evaluated by means of FCS. Proteins were labeled using active NHS esters, according to a protocol supplied by the manufacturer. A 10-fold excess of the dye was used to ensure a high degree of labeling (which was especially important for LDH, where we intended to have at least one label per subunit to be able to monitor probe concentration changes upon dissociation of the tetramer). Post-labeling purification was performed using Bio-Rad BioGel P-30 size exclusion columns. Protein labeling and purification was performed immediately before starting each experimental run. Protein diffusion coefficients ($D$) are associated with the protein’s hydrodynamic radius ($R_{h}$) by Stokes-Einstein relation, $D=k_{B}T/6\piηR_{h}$ (where $k_{B}$ is Boltzmann constant, $T$ is the temperature and $η$ denotes the viscosity of medium). The alteration in protein structure by dissociation of the quaternary structure results in an increase of the observed diffusion coefficient, while denaturation of tertiary structure causes a decrease of $D$ by a factor of 1.5 – 3 (Wilkins et al., 1999).
 
-FCS measurements were performed on dedicated FCS system, based on a Nikon C1 inverted confocal microscope (Nikon Instruments, Japan) with a PlanApo 60x, NA=1.2 water immersion objective. The setup is equipped with a Pico Harp 300 system (PicoQuant, Germany). Measurements were performed in a climate chamber (Okolab, Italy) providing temperature control and required humidity at 25.0±0.5℃. Labeled proteins were excited by a 485 nm laser, and fluorescence was detected through a 488/LP long-pass filter (Chroma, USA). Data acquisition and analysis was performed using SymPhoTime 64 software (PicoQuant, Germany). The experiments were preceded by establishing the dimension of the confocal volume using rhodamine 110 (Sigma-Aldrich, USA).
+FCS measurements were performed on dedicated FCS system, based on a Nikon C1 inverted confocal microscope (Nikon Instruments, Japan) with a PlanApo 60x, NA=1.2 water immersion objective. The setup is equipped with a Pico Harp 300 system (PicoQuant, Germany). Measurements were performed in a climate chamber (Okolab, Italy) providing temperature control and required humidity at $25.0\pm0.5℃$. Labeled proteins were excited by a 485 nm laser, and fluorescence was detected through a 488/LP long-pass filter (Chroma, USA). Data acquisition and analysis was performed using SymPhoTime 64 software (PicoQuant, Germany). The experiments were preceded by establishing the dimension of the confocal volume using rhodamine 110 (Sigma-Aldrich, USA).
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Blinding was provided for each treatment (TMAO vs control). Unblinding was performed after statistical analysis. Any encountered outliers were included in the analysis. Diastolic arterial blood pressure (DBP), systolic arterial blood pressure (SBP) and heart rate (HR) were calculated from the arterial blood pressure tracing. Left ventricular end-diastolic pressure (LVEDP), maximal slope of systolic pressure increment (+dP/dt) and diastolic pressure decrement (-dP/dt) were calculated from the left ventricle blood pressure tracing using AcqKnowledge Biopac software (Biopac Systems, Goleta, USA). The Shapiro-Wilk test was used to test normality of the distribution. Differences between the TMAO and control groups were evaluated by an Independent-Samples t-test or by Mann-Whitney U test for data that were not normally distributed. In the acute experiments, the differences in the mean values between groups were first analyzed by the classic one-way ANOVA followed by a modified Student’s t-test for independent variables, using Bonferroni’s correction for multiple comparisons. The log-rank test was used to test the survival differences between TMAO and control animals. A value of two-sided p<0.05 was considered significant. Analyses were conducted using Statistica, version 13.3 (Tibco, Palo Alto, CA, USA).
 
-## Replicates
+### Replicates
 
 Replicates were not used unless otherwise stated. The basic definitions of technical and biological replicates are as follows. Technical replicates: a test performed on the same sample multiple times. Biological replicates: a test performed on biologically distinct samples representing an identical time point or treatment dose.
 
-## Sample size
+### Sample size
 
 Sample size was calculated at the start of the study, based on plasma levels of the investigated markers and hemodynamic parameters in rats, which were reported in our previous studies (Savi et al., 2018). We have chosen between-group difference in plasma NT-proBNP, ejection fraction, stroke volume and ABP as primary end-points with the following parameters, respectively: the difference between the tested (groups) 30%, 15%, 30% and 13%; the average for the entire population of 30 pg/mL, 80%, 0.35 mL, 100 mmHg; a common standard deviation of 7 pg/mL, 9%, 0.08 mL, 10 mmHg; for an alpha error of 0.05, test power 0.8. Other biochemical parameters were used as secondary end points.

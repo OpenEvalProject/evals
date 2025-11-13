@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.39151.001 Synapses change their strength in response to specific activity patterns. This functional plasticity is assumed to be the brain’s primary mechanism for information storage. We used optogenetic stimulation of rat hippocampal slice cultures to induce long-term potentiation (LTP), long-term depression (LTD), or both forms of plasticity in sequence. Two-photon imaging of spine calcium signals allowed us to identify stimulated synapses and to follow their fate for the next 7 days. We found that plasticity-inducing protocols affected the synapse’s chance for survival: LTP increased synaptic stability, LTD destabilized synapses, and the effect of the last stimulation protocol was dominant over earlier stimulations. Interestingly, most potentiated synapses were resistant to depression-inducing protocols delivered 24 hr later. Our findings suggest that activity-dependent changes in the transmission strength of individual synapses are transient, but have long-lasting consequences for synaptic lifetime.
+Synapses change their strength in response to specific activity patterns. This functional plasticity is assumed to be the brain’s primary mechanism for information storage. We used optogenetic stimulation of rat hippocampal slice cultures to induce long-term potentiation (LTP), long-term depression (LTD), or both forms of plasticity in sequence. Two-photon imaging of spine calcium signals allowed us to identify stimulated synapses and to follow their fate for the next 7 days. We found that plasticity-inducing protocols affected the synapse’s chance for survival: LTP increased synaptic stability, LTD destabilized synapses, and the effect of the last stimulation protocol was dominant over earlier stimulations. Interestingly, most potentiated synapses were resistant to depression-inducing protocols delivered 24 hr later. Our findings suggest that activity-dependent changes in the transmission strength of individual synapses are transient, but have long-lasting consequences for synaptic lifetime.
 
 ## Introduction
 
@@ -28,31 +28,71 @@ As suggested by previous studies, LTD and LTP differentially affected synaptic l
 
 ## Results
 
-## Optical theta frequency stimulation induced LTP at Schaffer collateral synapses
+### Optical theta frequency stimulation induced LTP at Schaffer collateral synapses
 
 CA3 neurons expressing the light-sensitive channel ChR2(E123T/T159C) (Berndt et al., 2011) together with the presynaptic vesicle marker synaptophysin-tdimer2 were stimulated with short pulses of blue light (2 ms long, 40 ms interval, λ = 470 nm). Paired pulses were used to reduce the number of trials necessary to detect responding spines and to be consistent with our previous study (Wiegert and Oertner, 2013). On CA1 pyramidal cells expressing GCaMP6s and mCerulean, active spines were identified by imaging stimulation-induced excitatory postsynaptic calcium transients (EPSCaTs). After an active spine was identified we switched to line scanning mode, defining a scan curve that intersected the responding spine and a small number of neighboring spines at high speed (500 Hz, Figure 1A). Calcium transients were restricted to the responding spine and were not detected in the dendrite. To provide an additional read-out of synaptic strength on the population level, a neighboring CA1 cell (‘reporter neuron’) was patch-clamped to record excitatory postsynaptic synaptic currents (EPSCs) before, during, and after plasticity induction. Light stimulation evoked EPSCs with a magnitude of 1330 ± 220 pA, consistent with our previous study (Wiegert and Oertner, 2013). To induce LTP, we stimulated CA3 pyramidal cells with 150 light pulses at 5 Hz, a theta-frequency stimulation (TFS) paradigm, which potentiates CA3-CA1 but not CA3-CA3 synapses in an NMDAR-dependent fashion (Moody et al., 1998; Thomas et al., 1998). TFS-induced LTP requires transient (30 s) stimulation of enough CA3 cells to drive postsynaptic CA1 cells to fire complex spike bursts (CSBs, Figure 1—figure supplement 1) (Thomas et al., 1998). To facilitate LTP induction, ACSF with reduced divalent ion concentration (2 mM CaCl2, 1 mM MgCl2) was used to increase excitability. We adjusted the stimulation light intensity to recruit more and more CA3 neurons until the synaptic drive was just below the action potential threshold in the CA1 reporter neuron. During optogenetic theta-frequency stimulation (oTFS), the reporter neuron responses changed from mostly subthreshold EPSPs with occasional single action potentials to CSBs (Figure 1C, Figure 1—figure supplement 1) (Losonczy and Magee, 2006). CSBs in the reporter neuron were time-locked with large calcium transients in the stretch of dendrite adjacent to the postsynaptic spine (Figure 1B, middle column), suggesting that synchronized CSBs were occurring in neighboring neurons. EPSCaTs were strongly potentiated 30 min after oTFS, generating calcium transients that frequently spread into the dendrite (Figure 1B, Figure 2B). Likewise, the amplitude of EPSCs in the reporter neuron increased after oTFS, indicating successful induction of LTP (Figure 1B, Figure 2A). Both CSBs and LTP induction were blocked in the presence of the NMDA receptor antagonist APV (Figure 2A and B). Thus, oTFS induced plasticity via NMDAR activation as previously demonstrated (Thomas et al., 1998). In some experiments, CSBs and large dendritic calcium transients did not occur during oTFS, likely due to insufficient numbers of virus-transfected CA3 pyramidal neurons. When no large dendritic calcium transients were triggered during oTFS, spine calcium signals were not consistently potentiated 30 min after oTFS (Figure 2B, Figure 2—figure supplement 1A and B). To estimate changes in EPSCaT and EPSC amplitude, 10–20 successive traces before and after stimulation were analyzed and averaged (Figure 1—figure supplement 2). EPSCs, integrating the activity of many synapses, showed considerably lower trial-to-trial variability (no failures) compared to EPSCaTs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: A fiber-coupled LED (λ = 470 nm) was used to locally stimulate ChR2-expressing CA3 neurons. Spines on GCaMP6s/mCerulean-expressing CA1 pyramidal cells were imaged with two-photon microscopy. For parallel electrical recordings, a second CA1 neuron was patch-clamped (reporter neuron). Middle: oblique dendrite branching off the apical trunk filled with mCerulean. Detection of active spines was done with GCaMP6s during presynaptic optogenetic stimulation. Stimulation-induced fluorescence changes (ΔF) of GCaMP6s were analyzed in fast frame scans (squares) of oblique dendrites until a responsive spine was detected (red square). Right: Magnified view of GCaMP6s fluorescence in the dendritic section harboring an activated spine. The laser was scanned in a user-defined trajectory across multiple spines and the parental dendrite during Ca2+ imaging (red curve). (B) Fluorescence signal across time from arbitrary line scan on dendrite shown in A during ChR2-stimulation before (‘pre oTFS’), immediately (‘post oTFS’) and 30 min (‘30 min post oTFS’) after optical theta-frequency stimulation (oTFS). Temporally matched traces from multiple trials and electrophysiological recording from a reporter neuron are shown below. During oTFS the Ca2+ response was recorded in frame scan mode (‘during oTFS’). The GCaMP6s-signal (ΔF) is shown for three selected time points during oTFS. GCaMP6s-traces from the same spines and dendrite imaged in line scans are shown below together with the corresponding electrophysiological recording in voltage clamp mode from the reporter neuron.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experiment where no dendritic calcium spikes were observed in the GCaMP6s-expressing CA1 pyramidal cell (colored traces, top) and no complex spike bursts (CSBs) were triggered in the neighboring ‘reporter’ neuron (black traces). (B) Experiment with dendritic calcium spikes and synchronous CSBs in the reporter neuron.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) EPSCaT amplitude of spine one is plotted for all trials shown in Figure 1B. Open circles show failures, filled circles show successes. Baseline responses (‘pre oTFS’) and responses immediately (‘post oTFS’) and 30 min after oTFS (‘30 min post oTFS’) are averaged and plotted below. (B) EPSC amplitude is plotted for the recording from the reporter neuron shown in Figure 1B. Average responses plotted below were normalized to the baseline (‘pre oTFS’).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-v2.jpg)
+
+**Figure 2.:** (A) Changes in excitatory postsynaptic current (EPSC) amplitude in reporter neurons immediately after and 30 min after oTFS in the absence (left) or presence (right) of the NMDA receptor antagonist APV during oTFS. EPSCs were significantly increased after 30 min (p=0.012, n = 20 slice cultures). The increase was blocked by APV (p=0.69, n = 6 slice cultures). (B) Relative change of average excitatory Ca2+ transients (EPCaTs) in individual spines 30 min after the oTFS protocol plotted against the average spine Ca2+ during oTFS. In experiments indicated by filled red circles, APV was present during oTFS. (C) EPSCaT amplitude (p=0.0008, n = 20 slice cultures) and EPSCaT potency (successes only, p=0.0025) but not EPSCaT probability (PCa, p>0.05) were increased 30 min after oTFS in experiments where complex spike bursts (CSBs) were induced during oTFS. (D) Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated (blue arrowhead). Volume of oTFS spines (p=0.002, n = 26 spines) and nearest (p=0.0001, n = 45 spines) but not distant neighbors (p=0.83, n = 58 spines) was increased 30 min after oTFS in experiments where CSBs were induced during oTFS. (E) Spine volume was not increased when NMDA receptors were blocked with APV during oTFS (p>0.05, n = 7 spines).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The null hypothesis, no change in average EPSCaT amplitude after oTFS, could not be rejected (p>0.05, n = 17). (B) The null hypothesis, no change in EPSCaT potency after oTFS, could not be rejected (p>0.05, n = 17). (C) The probability of EPSCaTs was significantly reduced after oTFS (p=0.0098, n = 17). (A) – (C): nonparametric Friedman test followed by Dunn’s multiple comparison test. (D) The null hypothesis, no change in spine head volume after oTFS, could not be rejected (p>0.05, n = 11, Wilcoxon matched-pairs signed rank test).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The null hypothesis, no change in average EPSCaT amplitude over time, could not be rejected (p>0.05, n = 16). (B) The null hypothesis, no change in EPSCaT potency over time, could not be rejected (p>0.05, n = 16). (C) The null hypothesis, no change in EPSCaT probability (PCa) over time, could not be rejected (p>0.05, n = 16). (A) – (C): nonparametric Friedman test followed by Dunn’s multiple comparison test. (D) The null hypothesis, no change in spine head volume after oTFS, could not be rejected (p>0.05, n = 16, RM one-way ANOVA).
 
 Taking into consideration only those experiments in which CSBs and dendritic calcium transients were evoked during oTFS, we observed that neither the amplitude nor the potency (amplitude of successes) of EPSCaTs changed immediately after oTFS. Thirty minutes later, however, both were significantly increased (Figure 2C), whereas spines that did not experience oTFS showed no change in EPSCaTs over time (Figure 2—figure supplement 2). The slowly developing potentiation was also reflected in the EPSCs recorded in the reporter neuron (Figure 2A), consistent with previous reports (Moody et al., 1998; Thomas et al., 1998). LTP had no significant effect on the probability of EPSCaT occurrence (PCa, Figure 2C), suggesting that the potentiation was mainly due to postsynaptic changes. Interestingly, while EPSCaT potency was not affected in experiments where no CSBs were elicited during oTFS, PCa was significantly reduced (Figure 2—figure supplement 1C). Thus, in experiments where the synaptic drive was not strong enough to trigger postsynaptic spikes, presynaptic activity in the theta frequency range appeared to elicit a weak form of presynaptic depression. No such reduction in PCa was seen when no oTFS was applied (Figure 2—figure supplement 2).
 
 Optogenetic TFS-induced synaptic potentiation was accompanied by slow changes in spine structure (mCerulean, Figure 2D). The head volume of spines that experienced CSBs was unchanged immediately after oTFS, but increased by 21 ± 6% during the next 30 min. The nearest neighboring spines also showed a small but significant increase in volume (15 ± 3%), whereas no consistent change was detected at more distant spines (2 ± 3%). When no oTFS was applied, the volume of responding spines (5 ± 4%) and neighbors (−4 ± 3%) remained stable (Figure 2—figure supplement 2). In oTFS experiments that failed to elicit CSBs or when NMDA receptors were blocked during oTFS, stimulated spines did not exhibit significant volume changes (Figure 2E; Figure 2—figure supplement 1D), suggesting similar requirements for the successful induction of functional and structural plasticity. As our functional assessment was limited to the few spines that were synaptically connected to ChR2-expressing CA3 neurons, we could not test whether neighboring enlarged spines were also functionally potentiated.
 
-## Synaptic properties 24 hr after LTP
+### Synaptic properties 24 hr after LTP
 
 We next asked whether synaptic potentiation was maintained during the 24 hr following oTFS. Consistent with our first data set, spine head volume and EPSCaT potency were significantly increased 30 min after oTFS (Figure 3A and B). Twenty-four hours after LTP induction, however, both measures had returned to baseline. We detected no significant change in EPSCaT probability either 30 min or 24 hr after oTFS (Figure 3C). Thus, beyond the acute effects on the day of potentiation, we did not observe permanent changes in synaptic strength after oTFS-induced LTP.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig3-v2.jpg)
 
-**Figure 3.:** (A) Analysis of volume changes of oTFS spines 30 min and 24 hr after oTFS. The volume increase 30 min after oTFS (p=0.03, n = 15 slice cultures) was not maintained 24 hr later (p=0.42). (B) Analysis of EPSCaT potency before, 30 min and 24 hr after oTFS. The increased potency 30 min after oTFS (p=0.015, n = 14 slice cultures) has significantly decreased again 24 hr later (p=0.005) and was similar to the condition before oTFS (p=0.55). (C) EPSCaT probability (PCa) did not change 30 min and 24 hr after oTFS (p=0.32, n = 14 slice cultures). For details on the statistical tests, please refer to the Materials and Methods section. (D) Long-term survival analysis after LTP. Spines were imaged at d0, d1 and d7. Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated (green arrowhead). (E) Spine survival 7 days after successful LTP induction on day 0. Surviving fractions are shown for responding spines, nearest and distant neighbors. (F) Spine survival 7 days after oTFS in experiments where no complex spike bursts were induced. Directly stimulated spines and their neighbors were analyzed separately. (G) Spine survival over 7 days under baseline conditions without any optical stimulation (black) and in spines responsive to optical test pulses (resp. spines, white) which were not exposed to plasticity-inducing protocols.10.7554/eLife.39151.010Figure 3—source data 1.
+**Figure 3.:** (A) Analysis of volume changes of oTFS spines 30 min and 24 hr after oTFS. The volume increase 30 min after oTFS (p=0.03, n = 15 slice cultures) was not maintained 24 hr later (p=0.42). (B) Analysis of EPSCaT potency before, 30 min and 24 hr after oTFS. The increased potency 30 min after oTFS (p=0.015, n = 14 slice cultures) has significantly decreased again 24 hr later (p=0.005) and was similar to the condition before oTFS (p=0.55). (C) EPSCaT probability (PCa) did not change 30 min and 24 hr after oTFS (p=0.32, n = 14 slice cultures). For details on the statistical tests, please refer to the Materials and Methods section. (D) Long-term survival analysis after LTP. Spines were imaged at d0, d1 and d7. Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated (green arrowhead). (E) Spine survival 7 days after successful LTP induction on day 0. Surviving fractions are shown for responding spines, nearest and distant neighbors. (F) Spine survival 7 days after oTFS in experiments where no complex spike bursts were induced. Directly stimulated spines and their neighbors were analyzed separately. (G) Spine survival over 7 days under baseline conditions without any optical stimulation (black) and in spines responsive to optical test pulses (resp. spines, white) which were not exposed to plasticity-inducing protocols.
 
-## Effect of long-term potentiation on synaptic lifetime
+### Effect of long-term potentiation on synaptic lifetime
 
 Next, we determined whether oTFS-induced LTP affected synaptic lifetime. Previous work showed that potentiated spines are not characterized by permanently enlarged heads, but are less likely to be eliminated during the next 3 days (De Roo et al., 2008). We therefore assessed the stability of potentiated spines and their neighbors during the following week. Under control conditions without external stimulation, 27% of all spines disappeared between days 1 and 7. This turnover rate is in agreement with previous measurements in hippocampal slice cultures (Wiegert and Oertner, 2013) and mouse hippocampus in vivo (Attardo et al., 2015). LTP induced by oTFS appeared to increase synaptic lifetime. In a dataset of 14 spines, 11 spines experienced CSBs and were potentiated. During the following 7 days, only one of these 11 potentiated spines disappeared (Figure 3D and E). The stability of spines next to the potentiated spine was also affected, mirroring the transient head volume increase on day 0 (Figures 2D and 3A). Compared to controls, nearest-neighbor spines disappeared less often between days 1 and 7 whereas more distant spines (>5 µm) were eliminated more often (Figure 3E). These findings are consistent with the concept of biochemical signaling molecules activated inside stimulated spines during oTFS and diffusing into neighboring, non-stimulated spines (Nishiyama and Yasuda, 2015), affecting acutely their size and on longer timer scales, their survival. As a control, we also analyzed oTFS experiments in which no CSBs were elicited in CA1 neurons. In these experiments, stimulated spines as well as their neighbors had reduced survival rates (Figure 3F). This destabilizing effect was contingent on 5 Hz presynaptic activation, as spines that were not stimulated at all or only stimulated by test pulses (responsive spines) had higher survival rates (Figure 3G).
 
-## Effects of sequential plasticity-inducing protocols on synaptic lifetime
+### Effects of sequential plasticity-inducing protocols on synaptic lifetime
 
 As we established previously (Wiegert and Oertner, 2013), optogenetic low frequency stimulation (oLFS, 900 APs at 1 Hz) induced long-term depression (LTD) at Schaffer collateral synapses, frequently abolishing EPSCaTs in the stimulated spine altogether (Figure 4A). In agreement with our previous results, 45% of spines that received oLFS disappeared between days 1 and 7. We speculated that if we induced LTP 24 hr after LTD, the doomed spines could perhaps be stabilized (Figure 4B). LTD on day 0 was considered successful when the average spine Ca2+ response dropped to less than 90% of the baseline response 30 min after oLFS, which was the case in 70% (28/40) of the experiments (Figure 4—figure supplement 1). Twenty-four hours later, we recorded a new baseline, since EPSCaT amplitudes frequently changed from one day to the other. We then applied oTFS to the spines that were depressed on the previous day. LTP induction was considered successful when the average spine Ca2+ response increased to more than 110% of the day one baseline response after oTFS, which was the case in 64% (18/28) of all experiments on day 1 (Figure 4C). We also considered spines that did not experience CSBs to assess whether the oTFS protocol itself would affect synapse lifetime independently of successful LTP induction. Thus, we compared two groups: synapses that underwent LTD followed by LTP (45% of all tested synapses) and synapses that also experienced LTD and oTFS, but did not show any potentiation in response to oTFS (25% of all tested synapses). Synapses that did not display LTD after oLFS on day 0 (30% of all tested synapses) were not considered further. When LTP was induced after LTD, only 12% of spines disappeared between days 1 and 7, indicating stabilization of doomed synapses. Of the spines that received oTFS after LTD but did not get potentiated, 43% disappeared between days 1 and 7, similar to the 45% disappearance rate seen after oLFS only. These results confirmed that successful LTP induction was necessary to rescue synapses from elimination. Without LTP, the oTFS stimulation protocol by itself had no measurable effect on the survival of previously depressed synapses.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig4-v2.jpg)
+
+**Figure 4.:** (A) Long-term survival analysis after LTD. Spines were imaged at d0, d1 and d7. Below: Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully depressed (red arrowhead). Open arrowhead on day seven indicates position of eliminated spine. Corresponding EPSCaT traces from indicated time points are shown in red. Pie chart shows quantification of spine survival after 7 days. (B) LTP 24 hr after LTD. Below: Dendritic segment harboring a responding spine that was successfully depressed on day 0 and potentiated on day 1 (yellow arrowhead). (C) Assessment of synaptic weight changes induced by oLFS on day 0 and oTFS on day 1. Dashed box in left graph indicates all experiments where LTD was successfully induced on day 0. Only these spines were considered in the LTP experiment on day 1 (middle). Yellow shaded box indicates all experiments where LTP was successfully induced on day 1 (after LTD on day 0; LTD ► LTP). Red shaded box indicates experiments where oTFS did not lead to LTP (only LTD). Pie charts show quantification of spine survival after 7 days for these two conditions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Outcome of all experiments where optogenetic low-frequency stimulation (oLFS) on day 0 was followed by optogenetic theta-frequency stimulation (oTFS) on day 1 (n = 30). (B) Outcome of selected experiments (subset of A, n = 18) where oLFS induced LTD (on day 0) and oTFS induced LTP of spine calcium signals (on day 1). Survival rate of this group (88%) is shown in Figure 4c.
+
 We next tested whether the LTP-induced stabilization of spines would persist even if LTD was subsequently induced (Figure 5A). LTP on day 0 was induced in 72% (18/25) of spines after oTFS (Figure 5B, Figure 5—figure supplement 1), similar to the set of oTFS experiments 1 day after oLFS (64%, p=0.85) and the first set of oTFS experiments (Figure 2B, 62%, 26/42, p=0.41). Again, we considered only spines where LTP was successfully induced. When oLFS was applied 24 hr later, we observed that LTD was induced in only 33% (6/18) of previously potentiated synapses on the next day (Figure 5B), a much lower success rate than the 70% when oLFS was applied with no prior plasticity. Since we were concerned that the 1 Hz induction protocol could have become supra-threshold 24 hr after LTP, we counted the number of spikes generated in the reporter neuron during oLFS. The median number of APs in reporter neurons during the 900 pulses of the oLFS protocol was 1.5 in naive cultures (n = 32) and 5.0 one day after LTP (n = 13, p=0.4, Mann-Whitney), corresponding to a postsynaptic spike probability below 1% in both cases. Thus, strong postsynaptic spiking during the oLFS protocol is not a likely explanation for the difficulty to depress previously potentiated synapses. We also considered the possibility that some synapses were already in a depressed state and could therefore not be depressed further. However, the initial EPSCaT amplitude (before oLFS) was not a predictor of successful LTD induction (Figure 5—figure supplement 1C). These results point to a synapse-specific memory of past potentiation events that cannot be detected as increased spine volume, increased release probability or increased EPSCaT potency (see Figure 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig5-v2.jpg)
+
+**Figure 5.:** (A) Long-term survival analysis of experiments where LTD was induced 24 hr after LTP. Maximum intensity projections of mCerulean fluorescence in dendritic segment harboring a responding spine that was successfully potentiated on day 0 and depressed on day 1 (yellow arrowhead). (B) Assessment of synaptic weight changes induced by oTFS on day 0 and oLFS on day 1. Dashed box in left graph indicates all experiments where LTP was successfully induced on day 0. Only these spines were considered in the LTD experiment on day 1 (middle). Yellow shaded box indicates all experiments where LTD was successfully induced on day 1 (after LTP on day 0, LTP ► LTD). Note the low probability of depression after potentiation. Green shaded box encompasses experiments where oLFS did not lead to LTD or even led to LTP (only LTP). Pie charts show quantification of spine survival after 7 days for these two conditions. (C) Comparison of spine survival 7 days after various plasticity paradigms. Stimulated spines are shown as open circles; non-stimulated neighbors within 10 µm are shown as filled circles. Values for ‘control’ and ‘LTD’ are from Wiegert and Oertner, 2013. (D) LTP stabilizes the spine carrying the potentiated synapse, but reduces the average lifetime of more distant (>5 µm) spines on the same dendrite.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39151/elife-39151-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Outcome of all experiments where oTFS on day 0 was followed by oLFS on day 1 (n = 20). (B) Outcome of selected experiments where oTFS induced LTP (on day 0) and oLFS induced LTD of spine calcium signals (on day 1, n = 6). Survival rate of this group (50%) is shown in Figure 5b. (C) Initial EPSCaT amplitude on day one did not predict success of LTD induction (p>0.05, n = 20). (D) Initial EPSCaT amplitude on day 0 (before oTFS) did not predict 7 day survival (p>0.05, n = 20). (E) EPSCaT amplitude on day1 (before oLFS) did not predict 7 day survival (p>0.05, n = 20).
 
 In the few experiments where LTD was successfully induced 24 hr after LTP, 50% of spines disappeared by day 7 (Figure 5B). In the more typical case where oLFS failed to induce LTD, only 8% of spines disappeared by day 7. One explanation for the different survival rates could be that the absolute strength of the synapse before the oLFS protocol determined whether it survived, irrespective of the sign of plasticity on day 1 (i.e. the synapse has a memory of its strength and not of its plastic change). However, the strength of the synapse on day 0 or on day one did not predict its survival (Figure 5—figure supplement 1D and E), leaving successful induction of depression as the only risk factor we could identify. In summary, the stabilizing effect of LTP on spines can be overwritten by subsequent LTD (Figure 5C), but this sequence of plasticity events is not very likely to happen.
 
@@ -72,26 +112,106 @@ By inducing two rounds of plasticity, we demonstrated that synaptic pruning is n
 
 ## Materials and methods
 
-## Slice culture preparation and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus, male)</td>
+      <td>Wistar</td>
+      <td>Charles River</td>
+      <td>Crl:WI</td>
+      <td>bred in the animal facility, UKE Hamburg</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (R. norvegicus, male)</td>
+      <td>Wistar</td>
+      <td>Janvier</td>
+      <td>RjHAN:WI</td>
+      <td>bred in the animal facility, UKE Hamburg</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Clamydomonas reinhardtii)</td>
+      <td>ChR2(ET/TC)</td>
+      <td>doi: 10.1073/pnas.1017210108</td>
+      <td></td>
+      <td>channelr hodopsin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Aequorea victoria)</td>
+      <td>GCaMP6s</td>
+      <td>doi: 10.1038/nature12354</td>
+      <td></td>
+      <td>calcium indicator</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. victoria)</td>
+      <td>mCerulean</td>
+      <td>doi: 10.1038/nbt945</td>
+      <td></td>
+      <td>fluorescent protein</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (R. norvegicus)</td>
+      <td>ChR2(ET/TC)−2A- synaptophysin- tdimer2</td>
+      <td>doi: 10.1073/pnas.1315926110</td>
+      <td></td>
+      <td>transfection of CA3 neurons</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rAAV2/7</td>
+      <td>Vector Facility UKE Hamburg</td>
+      <td></td>
+      <td>viral vector</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>APV</td>
+      <td>Tocris Bioscience</td>
+      <td>CAS Number 79055-68-8</td>
+      <td>NMDA receptor blocker</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ScanImage3.8</td>
+      <td>DOI: 10.1186/1475-925X-2–13</td>
+      <td></td>
+      <td>modified for arbitrary line scans</td>
+    </tr>
+  </tbody>
+</table>
+
+### Slice culture preparation and transfection
 
 Hippocampal slice cultures from male Wistar rats were prepared at postnatal day 4–5 as described (Gee et al., 2017). Animal procedures were in accordance with the guidelines of local authorities and Directive 2010/63/EU. At DIV 3, we pressure-injected rAAV2/7 encoding ChR2(ET/TC)−2A-synaptophysin-tdimer2 into CA3. At DIV 18, single-cell electroporation was used to transfect CA1 pyramidal neurons in rAAV-infected slices with GCaMP6s and mCerulean (ratio 1:1) as described (Wiegert et al., 2017).
 
-## Electrophysiology
+### Electrophysiology
 
 Experiments were performed between DIV 21 and 25. Whole-cell recordings from CA1 pyramidal cells were made at 25°C with a Multiclamp 700B amplifier (Molecular Devices). Patch pipettes with a tip resistance of 3–4 MΩ were filled with (in mM) 135 K-gluconate, 4 MgCl2, 4 Na2-ATP, 0.4 Na-GTP, 10 Na2-phosphocreatine, three ascorbate, and 10 HEPES (pH 7.2). LTD experiments were conducted in ACSF containing (in mM) 135 NaCl, 2.5 KCl, 4 CaCl2, 4 MgCl2, 10 Na-HEPES, 12.5 D-glucose, 1.25 NaH2PO4, 0.03 D-Serine (pH 7.4, sterile filtered). During LTP induction, ACSF with lower divalent ion concentration (2 CaCl2, 1 MgCl2) was used to increase excitability. Access resistance was monitored continuously and recordings with a drift of >20% were discarded.
 
-## Two-Photon microscopy
+### Two-Photon microscopy
 
 The custom-built two-photon imaging setup was based on an Olympus BX51WI microscope equipped with a LUMPLFLN 60 × 1.0 NA objective, controlled by the open-source software package ScanImage (Pologruto et al., 2003) which was modified to allow user-defined arbitrary line scans at 500 Hz. Two Ti:Sapphire lasers (MaiTai DeepSee, Spectra-Physics) controlled by electro-optic modulators (350–80, Conoptics) were used to excite cerulean (810 nm) and GCaMP6s (980 nm). To activate ChR2(ET/TC)-expressing cells outside the field of view of the objective, we used a fiber-coupled LED (200 µm fiber, NA 0.37, Mightex Systems) to deliver light pulses to CA3. During the blue light pulses, sub-stage PMTs (H7422P-40SEL, Hamamatsu) were protected by a shutter (NS45B, Uniblitz).
 
-## Measuring excitatory postsynaptic calcium transients (EPSCaTs)
+### Measuring excitatory postsynaptic calcium transients (EPSCaTs)
 
 Frame scans (10 × 10 µm) of oblique dendrites were acquired to detect spines responding to optogenetic stimulation of CA3 neurons. Two brief (2 ms) light pulses with an inter-pulse interval of 40 ms were applied to increase release probability and thus the chance of detecting responding spines. In each trial, 14 frames (64 × 64 pixel) were acquired at 7.8 Hz. At least five trials were recorded from each dendritic segment. The relative change in GCaMP6s fluorescence (ΔF/F0) was calculated on-line. If the spine signal exceeded two times the standard deviation (SD) of its resting fluorescence, this spine was considered as ‘potentially responding’. To measure Ca2+ transients with better signal-to-noise ratio, line scans were acquired across potentially responding spine heads and their parent dendrites (500 Hz, 20 trials/spine). To measure the amplitude of Ca2+ transients and to distinguish successful synaptic transmission events (EPSCaTs) from failures, we used a template-based fitting algorithm. The characteristic fluorescence time constant was extracted for every spine by fitting a double exponential function (τrise, τdecay) to the average GCaMP6s signal. To estimate the Ca2+ transient amplitude for every trial, we fit the spine-specific template to every response, amplitude being the only free parameter. Response amplitude was defined as the value of the fit function at its maximum. A trace was classified as ‘success’ when its amplitude exceeded two standard deviations (2σ) of baseline noise.
 
-## Long-term imaging of spine morphology
+### Long-term imaging of spine morphology
 
 The use of HEPES-buffered sterile-filtered ACSF allowed us to optically stimulate and image slice cultures under near-sterile conditions, using no perfusion system. The custom recording chamber (1 mm quartz glass bottom) and 60 × water immersion objective were sterilized with 70% ethanol and filled with 1.5 ml sterile ACSF. A small patch of membrane (5 × 6 mm) supporting the hippocampal culture was cut out of the cell culture insert (Millipore PICM0RG50), placed in the recording chamber and weighted down with a u-shaped gold wire. During imaging, the temperature of the slice culture was maintained at 25°C via a permanently heated oil-immersion condenser (NA = 1.4, Olympus). After each imaging session, the membrane patch was placed on a fresh sterile membrane insert and returned to the incubator. In the first imaging session, a spine displaying stimulation-induced EPSCaTs was centered and a three-dimensional image stack (XY: 10 × 10 µm, Z: 5–15 µm) of the mCerulean signal was acquired. Additional image stacks were acquired at low magnification to ensure identity of the dendritic segment. For post-hoc analysis of spine turnover, the three-dimensional image stacks were aligned based on a rigid-body algorithm (ImageJ). All spines identified in the three-dimensional image stack acquired before the plasticity induction protocol were analyzed in the subsequent stacks, with the following exception: Spines that appeared shifted from their original position on the dendrite by more than 1 µm in any direction between two consecutive imaging sessions were not included in the analysis, as it was not clear whether the original spine was replaced by a new one. If the imaged neuron showed any sign of compromised health at day 7 (bright GCaMP6 fluorescence at rest, dendritic swelling or beading), the experiment was excluded from the analysis. Maximum intensity projections are shown for illustrative purposes only and were not used for analysis. To estimate spine volume, we integrated the fluorescence intensity of the spine head (mCerulean) taken from a single optical section through the center of the spine. For each spine the point-spread-function (PSF) of the microscope was immersed in the apical trunk of the dendrite to obtain the maximum intensity. In case of different depth of spine and calibration measurement, we corrected for laser attenuation in the tissue. The volume of the PSF was determined with PSFj (Theer et al., 2014) using 170 nm fluorescent beads (Invitrogen). Knowing the volume of the PSF and the brightness of a given cell’s cytoplasm allowed us to convert spine intensity into absolute spine volume (Svoboda et al., 1996).
 
-## Statistics
+### Statistics
 
 All statistical analysis was performed using GraphPad Prism 6.0. Data were tested for Gaussian distribution by D’Agostino and Pearson omnibus normality test. Normally distributed data were tested for significant differences with a two-tailed t-test (Figure 3A) or one-way repeated-measures analysis of variance (ANOVA) followed by Sidak’s multiple comparisons test (Figure 3B,C). Data with non-normal distribution data were tested with the following nonparametric tests: Two-tailed Wilcoxon matched-pairs signed rank test (Figures 2A,D and 3A), Friedman test followed by Dunn’s multiple comparison test (Figure 2C; Figure 2—figure supplementary 1A-C). Investigators were not blinded to the group allocation during the experiments. Data analysis was automated as much as possible to preclude investigator biases. All experiments were done with interleaved controls; pharmacological treatments were mixed with untreated cultures.

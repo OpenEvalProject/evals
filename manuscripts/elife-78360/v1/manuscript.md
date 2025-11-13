@@ -15,14 +15,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02feahw73 Institut Cochin, Inserm U1016, CNRS UMR 8104, Université de Paris Paris France
-2. https://ror.org/034e7c066 Les Laboratoires Servier Suresnes France
+1. Institut Cochin, Inserm U1016, CNRS UMR 8104, Université de Paris Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+2. Les Laboratoires Servier Suresnes France ([ROR:034e7c066](https://ror.org/034e7c066))
 
 † Corresponding author
 
 ## Abstract
 
-Aggregates of the tau protein are a well-known hallmark of several neurodegenerative diseases, collectively referred to as tauopathies, including frontal temporal dementia and Alzheimer’s disease (AD). Monitoring the transformation process of tau from physiological monomers into pathological oligomers or aggregates in a high-throughput, quantitative manner and in a cellular context is still a major challenge in the field. Identifying molecules able to interfere with those processes is of high therapeutic interest. Here, we developed a series of inter- and intramolecular tau biosensors based on the highly sensitive Nanoluciferase (Nluc) binary technology (NanoBiT) able to monitor the pathological conformational change and self-interaction of tau in living cells. Our repertoire of tau biosensors reliably reports molecular proximity of physiological full-length tau at microtubules; i. changes in tau conformation and self-interaction associated with tau phosphorylation, as well as ii. tau interaction induced by seeds of recombinant tau or from mouse brain lysates of a mouse model of tau pathology. By comparing biosensors comprising different tau forms ( iii. i.e . full-length or short fragments, wild-type, or the disease-associated tau(P301L) variant) further insights into the tau transformation process are obtained. Proof-of-concept data for the high-throughput suitability and identification of molecules interfering with the pathological tau transformation processes are presented. This novel repertoire of tau biosensors is aimed to boost the disclosure of molecular mechanisms underlying pathological tau transformation in living cells and to discover new drug candidates for tau-related neurodegenerative diseases.
+Aggregates of the tau protein are a well-known hallmark of several neurodegenerative diseases, collectively referred to as tauopathies, including frontal temporal dementia and Alzheimer’s disease (AD). Monitoring the transformation process of tau from physiological monomers into pathological oligomers or aggregates in a high-throughput, quantitative manner and in a cellular context is still a major challenge in the field. Identifying molecules able to interfere with those processes is of high therapeutic interest. Here, we developed a series of inter- and intramolecular tau biosensors based on the highly sensitive Nanoluciferase (Nluc) binary technology (NanoBiT) able to monitor the pathological conformational change and self-interaction of tau in living cells. Our repertoire of tau biosensors reliably reports i. molecular proximity of physiological full-length tau at microtubules; ii. changes in tau conformation and self-interaction associated with tau phosphorylation, as well as iii. tau interaction induced by seeds of recombinant tau or from mouse brain lysates of a mouse model of tau pathology. By comparing biosensors comprising different tau forms (i.e. full-length or short fragments, wild-type, or the disease-associated tau(P301L) variant) further insights into the tau transformation process are obtained. Proof-of-concept data for the high-throughput suitability and identification of molecules interfering with the pathological tau transformation processes are presented. This novel repertoire of tau biosensors is aimed to boost the disclosure of molecular mechanisms underlying pathological tau transformation in living cells and to discover new drug candidates for tau-related neurodegenerative diseases.
 
 ## Introduction
 
@@ -36,15 +36,31 @@ Here, we have developed a series of tau biosensors using the NanoBiT complementa
 
 ## Results
 
-## Development of Nanoluciferase enzyme complementation-based tau biosensors
+### Development of Nanoluciferase enzyme complementation-based tau biosensors
 
 In order to monitor changes in tau conformation and aggregation we developed intra- and inter-molecular biosensors, respectively, using the NanoBiT technology. In this system, the Nluc enzyme is split into two fragments, a large 18 kDa fragment (LgBit) and a smaller 1.3 kDa fragment (SmBit), that are fused to the proteins of interest (Dixon et al., 2016). To design tau biosensors using this system, the LgBit was fused to the N-terminus of tau, and the SmBit either at the C-terminus of the double-fused tau (intramolecular sensors) or to the N-terminus of single-fused tau (intermolecular sensor) (Figure 1A). Different forms of tau exist. They contain or not have two domains at the N-terminal part (0 N-2N) and vary in the number of repeats (R1 to R4) at their central repeat domain. In this study we used full-length (2N4R) wild-type tau (WT-Tau), full-length tau carrying the pro-aggregating P301L mutation (Tau(P301L)), and the pro-aggregating K18 fragment of tau (Li and Lee, 2006; Michel et al., 2014; Shammas et al., 2015) comprising only the four-repeat domains (R1-R4) and carrying the P301L mutation (K18(P301L)) (Figure 1B). Among the advantages of the NanoBiT system used for these tau biosensors is that it allows monitoring the behavior of tau molecules in real-time, in living cells, in a straightforward pipeline. As shown in Figure 1C, cells can be treated with test compounds, and Nluc activity is measured immediately after the addition of its substrate, reflecting the fast and high-throughput properties of the assay.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme of NanoBiT-based intramolecular (conformational) and intermolecular (interaction) biosensors. (B) Biosensors were developed for three tau forms: full-length wild-type tau (WT-Tau) corresponding to the 2N4R isoform displaying both of the two domains at the N-terminal part (N1, N2), the proline-rich (PR) region, and four-repeat domains (R1–R4); full-length tau carrying the P301L mutation (Tau(P301L)); and the tau fragment comprising only the four repeat domains (R1–R4) and carrying the P301L mutation (K18(P301L)). (C) Workflow of NanoBiT assay (scheme created with Biorender). (D) Saturation curve of the intermolecular interaction sensor K18(P301L) in HEK293T cells expressing a fixed amount of LgBit-K18(P301L) (250 ng of a transfected vector) and increasing amounts of SmBit-K18(P301L) (0–500 ng of a transfected vector); data are expressed as mean ± SEM of four independent experiments. (E) Representative western blot analysis of the expression of K18(P301L) biosensor pairs used in panel D. (F) Cellular distribution of the K18(P301L) biosensor monitored by immunofluorescence microscopy (tubulin: in green; biosensor: anti-HA antibody, in red; nuclei: DAPI staining, in blue). Scale bar: 10 µm. (G) K18(P301S) interaction biosensor signal in the presence of recombinant monomeric K18 (mK18; 100 nM), aggregated K18 (aggK18; 100 nM) or tau (aggTau; 100 nM), or oligomeric amyloid beta peptide (oAb; 1 µM); data are expressed as mean ± SEM of five independent experiments; **p<0.01, ****p<0.001 by one-ANOVA, followed by Dunnett’s multiple comparisons test to basal condition. (H) K18(P301S) interaction biosensor signal in the presence of increasing concentrations of recombinant oligomeric K18 (0.3 nM to 300 nM); data are expressed as mean ± SEM of four independent experiments; * p<0.05 compared to control (0) by Student t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Thioflavin T (ThT) signal of recombinant tau, K18, and Aß proteins (10 µM) prepared as monomeric (m), oligomeric (o), or aggregated forms (agg). (B–C) K18(P301S) interaction signal in biosensor cells treated with recombinant aggregated K18 (aggK18) and in cells expressing only LgBiT-K18(P301L) (B) or only SmBiT-K18(P301L) (C); data are expressed as mean ± SEM of three independent experiments; **p<0.01, by Student t-test. (D) Kinetics of the Nluc enzyme:substrate activity following the addition of Nluc substrate in K18(P301L) expressing cells treated with the indicated concentrations of recombinant aggK18. Data are shown as mean ± SD of triplicates.
+
 In order to validate the NanoBiT system for the use in tau biosensors, we first developed an intermolecular tau interaction biosensor comprising the aggregation-prone K18 fragment displaying the P301L mutation (K18(P301L)), as the aggregation properties of this tau fragment have been extensively reported (Li and Lee, 2006; Michel et al., 2014; Shammas et al., 2015). HEK293T cells expressing a fixed amount of LgBit-K18(P301L) and increasing amounts of SmBit-K18(P301L), showed the expected saturation profile of the complementation signal, reflecting specific interaction and progressive saturation of LgBit-K18(P301L) with SmBit-K18(P301L) (Figure 1D). Expression levels of the sensor were monitored in parallel by western-blot using anti-HA antibodies recognizing both constructs (Figure 1E). The cellular distribution of the K18(P301L) biosensor was visualized by immunofluorescence microscopy using an antibody against the HA tag of the biosensor. The K18(P301L) biosensor showed a punctuated staining pattern predominantly in the cytosol with some co-localization with tubulin as well as some nuclear staining (Figure 1F). Next, we challenged biosensor cells with recombinant K18 protein, a treatment that has been previously reported to efficiently induce (‘seed’) tau aggregation (Holmes et al., 2014; Frost et al., 2009). Heparin-induced aggregates of recombinant K18 (aggK18) and of full-length tau (aggTau) were obtained as previously reported (Mirbaha et al., 2015). A robust increase in signal was observed in K18(P301L) sensor-expressing cells treated for 24 hr with either monomeric K18 (mK18) or aggK18 (Figure 1G). Seeds of aggTau also led to a significant increase in the sensor signal, while monomeric tau (mTau) and oligomers of the amyloid-beta peptide (oAß) had no effect (Figure 1G). No further increase in sensor signal was observed up to 48 hr of seed treatment (not shown). The presence of ß-sheet oligomers of Aß and of tau and K18 aggregates in the respective preparations has been confirmed by thioflavin T (ThT) assay (Figure 1—figure supplement 1A). Altogether, these results confirm the specificity of the sensor response towards tau seeds and the lack of cross-seeding activity to Aß. Concentration-response experiments of aggK18 show that the biosensor is sensitive to subnanomolar concentrations of seeds, displaying a twofold increase in signal at 0.3 nM of aggK18 (Figure 1H). No aggK18-induced increase in the complementation signal was observed when either LgBit-K18(P301L) or SmBit-K18(P301L) were expressed alone (Figure 1—figure supplement 1B–C). Of note, the kinetics of the Nluc enzyme:substrate reaction reaches a plateau in less than 10 min after substrate addition (Figure 1—figure supplement 1D), and all results are taken at this time-point to avoid any interference of the enzymatic activity kinetics on the comparison between different treatments. These results demonstrate the suitability of the NanoBiT technology to monitor the pathologically relevant seeding response and self-interaction of the K18(P301L) tau fragment.
 
-## Tau biosensors report conformational changes and tau-tau interaction in response to microtubule destabilization and phosphorylation
+### Tau biosensors report conformational changes and tau-tau interaction in response to microtubule destabilization and phosphorylation
 
 The conditions triggering the transformation processes of full-length wild-type tau in a cellular context are largely unknown. We, therefore, aimed to apply the NanoBiT approach to full-length wild-type tau. The WT-Tau intermolecular interaction sensor (LgBit-Tau/SmBit-Tau) behaved similarly to the K18(P301L) interaction sensor showing a robust saturation curve in HEK293T cells expressing a fixed amount of LgBit-Tau and increasing amounts of SmBit-Tau (Figure 2A). Replacement of the SmBit-Tau by the non-related Halo protein fused to SmBit generated no signal confirming the specificity of the tau intermolecular self-interaction assay (Figure 2A). Successful expression of sensors at the protein level was monitored by western-blot using the HA tag common to all constructs (Figure 2A, bottom).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig2-v1.jpg)
+
+**Figure 2.:** (A) Saturation curve of the intermolecular WT-Tau interaction sensor in HEK293T cells expressing a fixed amount of LgBit-Tau (250 ng of a transfected vector) and increasing amounts of SmBit-Tau or SmBit-Halo (0–500 ng of a transfected vector); data are expressed as mean ± SEM of five independent experiments. Bottom: Representative western blot (WB) analysis of the expression of the tau biosensor pairs. (B–C) Signals of WT-Tau (B) and K18(P301L) (C) interaction biosensors in cells treated or not with colchicine (10 µM, 1 hr); data are expressed as mean ± SEM of seven and five independent experiments, respectively; **p<0.005 by two-tailed paired Student t-test; n.s.=not-significant. (D) Cellular distribution of the WT-Tau interaction biosensor monitored by immunofluorescence microscopy in the absence (top panels) or presence (bottom panels) of colchicine (biosensor: anti-HA antibody, in red; tubulin: in green; nuclei: DAPI staining, in blue); Scale bar: 10 µm. (E) WT-Tau conformational sensor signal in HEK293T cells expressing increasing amounts of LgBit-Tau-SmBit vector (0–500 ng of a transfected vector); data are expressed as mean ± SEM of seven independent experiments. Bottom: Representative WB analysis of the expression of the Tau conformational biosensor. (F) Basal luminescence signal of the WT-Tau conformational (INTRA) and WT-Tau interaction (INTER) biosensors at the same expression levels; data are expressed as mean ± SEM of five independent experiments. (G–H) WT-Tau (G) and K18(P301L) (H) conformational biosensors signal in cells treated or not with colchicine; data are expressed as mean ± SEM of seven (G) or five (H) independent experiments; ***p<0.001 by two-tailed paired Student t-test; n.s.=not-significant. (I) Cellular distribution of the WT-Tau conformational biosensor monitored by immunofluorescence microscopy in the absence (top panels) or presence (bottom panels) of colchicine (biosensor: anti-HA antibody, in red; tubulin: in green; nuclei: DAPI staining, in blue); Scale bar: 10 µm. (J) Colocalization analysis (Manders' colocalization coefficient) of the fractional overlap between biosensor molecules and MTs. (K–L) Signals of WT-Tau conformational (K) and interaction (L) biosensors in cells treated or not with forskolin (10 µM, 24 hr); data are expressed as mean ± SEM of six independent experiments; **p<0.01, ***p<0.005 by two-tailed paired Student t-test; right panel: WB analysis and quantification of phosphorylated tau (P-Tau) and Total tau (T-tau) using AT8 and anti-HA antibodies, respectively. L: Lgbit-Tau; S: SmBit-Tau. (M) WT-Tau interaction biosensor response in cells treated with colchicine (10 µM, 1 hr), forskolin (10 µM, 24 hr), or both (colchicine followed by forskolin); data are expressed as mean ± SEM of five independent experiments; ** p<0.01, ***p<0.005, ****p<0.001 by one-way ANOVA followed by Sidak’s multiple comparison test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Thioflavin T (ThT) aggregation kinetics assay of recombinant full-length WT tau (10 µM) in the absence or presence of aggregation inducer (heparin 1:1) and in the absence or presence of colchicine (10 µM). (B–C) WT-Tau interaction (B) and conformation (C) biosensors signal in cells treated or not with colchicine (10 µM, 1 hr) or nocodazole (1 µM, 1 hr); data are expressed as mean ± SD of triplicates. (D) K18(P301L) interaction biosensor signal in cells treated or not with colchicine (10 µM, 1 hr) or nocodazole (1 µM, 1 hr); data are expressed as mean ± SD of triplicates. (E) WT-Tau conformation biosensor response in cells treated with colchicine (10 µM, 1 hr), forskolin (10 µM, 24 hr), or both (colchicine followed by forskolin); data are expressed as mean ± SEM of five independent experiments; **p<0.01 by one-way ANOVA followed by Sidak’s multiple comparison test. (F) WT-Tau interaction biosensor response in cells treated with colchicine (10 µM, 1 h), okadaic acid (OA 100 nM, 24 hr), or both (colchicine followed by OA); data are expressed as mean ± SD of triplicates. (G) Immunofluorescence analysis (red: anti-HA antibody; blue: DAPI staining of nuclei; scale bar: 10 µm) and biosensor signal of the WT-Tau conformation sensor expressed in the SH-SY-5Y neuronal cell line; data are expressed as mean ± SD of triplicates.
 
 The central repeat domain of tau is known to be involved in MT binding and in the pathological intermolecular interaction of tau (Mukrasch et al., 2005), meaning that both events are mutually exclusive. To determine whether the basal signal observed with the WT-Tau interaction sensor originates from MT-bound tau or cytosolic tau, we treated biosensor cells with colchicine to destabilize MTs. Under this condition, the sensor signal was decreased by 75% (Figure 2B) indicating that the basal signal most likely reflects molecular proximity between MT-bound tau molecules rather than self-interaction of cytoplasmic tau. Consistently, colchicine had no effect on the basal signal of the K18(P301L) interaction sensor, suggesting that the signal of this sensor is MT-independent and reflects K18(P301L) self-interaction in the cytosol (Figure 2C). A potential direct impact of colchicine on preventing tau-tau interactions was discarded by monitoring in vitro tau aggregation (induced by heparin) in the ThT assay (Figure 2—figure supplement 1A). Immunofluorescence microscopy revealed a strong colocalization of the tau sensor with MTs (Figure 2D top panel), which corresponds to the reported localization of endogenous full-length tau and is distinct from the predominant cytoplasmic localization of K18 (Frost et al., 2009). Instead, colchicine-treated cells showed disorganized MTs, as expected, and largely diminished colocalization between the tau sensor and tubulin staining (Figure 2D bottom panel). Collectively, these data indicate that the intermolecular tau sensor, like endogenous tau, is located at the MT and generates a complementation signal reflecting molecular proximity between tau molecules that are attached to MTs.
 
@@ -52,21 +68,45 @@ We then probed the conformational state of full-length tau with the intramolecul
 
 In the course of its pathological transformation, tau is known to become hyperphosphorylated and to dissociate from MTs (Brandt et al., 2020; Xia et al., 2021). However, the link of these events to tau transformation (conformational changes, seeding, aggregation) is not clear. To address this question, we induced tau phosphorylation by treating biosensor cells expressing either the conformation or the interaction WT-Tau sensors with forskolin for 24 hr. Forskolin directly activates the enzyme adenylyl cyclase, increasing the intracellular cAMP levels, which then leads to the activation of the cAMP-dependent kinase PKA that can phosphorylate tau (Seamon and Daly, 1986). For both biosensors, a 2–3-fold increase in signal was observed in the presence of forskolin, indicative of the induction of a change in conformation (Figure 2K) and the induction of tau self-interaction (Figure 2L). Phosphorylation of tau biosensors induced by forskolin treatment was confirmed by the increased immunoreactivity of the anti-phospho-tau specific AT8 antibody (Ser202/Thr205), a phosphorylation site that correlates well with pathological tau species observed in AD (Zhou et al., 2006; Figure 2K–L insets). In order to assess whether phosphorylation-induced self-interaction of WT tau biosensor can be favored by increasing the MT-free population of tau, we treated sensor cells with colchicine followed by forskolin. Surprisingly, the co-treatment condition completely abrogated the forskolin effect on the sensor signal (Figure 2M) as well as on tau phosphorylation (Figure 2M inset), suggesting that WT-tau phosphorylation occurs mainly at MT-bound tau. Accordingly, the WT-tau intramolecular conformational sensor followed a similar pattern, further supporting that the phosphorylation-induced conformational change is abrogated in MT-unbound tau (Figure 2—figure supplement 1E). An alternative method to favor tau phosphorylation is by inhibiting phosphatase activity with the use of okadaic acid (OA). Treatment of cells with OA for 24 hr resulted in an increase in the interaction WT-Tau sensor signal, similar to forskolin treatment, which is also lost by colchicine (Figure 2—figure supplement 1F). The effect of forskolin on the WT-Tau conformation sensor signal was recapitulated in the SH-SY-5Y neuronal cell line, although with a lower amplitude compared to HEK293 cells probably due to a lower number of transfected cells. Expression of the sensor in SH-SY-5Y cells was validated by immunofluorescence microscopy and its cell distribution follows MTs distribution pattern (Figure 2—figure supplement 1G). These data, together with the fact that HEK cells are not only cells where the biosensors are responsive like in neurons, but also easy to manipulate, led us to favor the use of HEK cells for the expression of the biosensors. In summary, our tau biosensors have proven to be useful tools to monitor the behavior of tau in a physiological cellular context, while enabling the investigation of different factors suspected to promote changes in its conformation and self-interaction properties.
 
-## Seeding response of tau biosensors
+### Seeding response of tau biosensors
 
 The mechanisms underlying the aggregation of physiological forms of tau remains poorly known. To investigate whether the high sensitivity of the NanoBiT system is able to report on the seeding response of physiological tau we assessed the response of our WT-Tau interaction sensor towards different seeds. Differently from the K18(P301L) interaction sensor (see Figure 1G–H), none of the recombinant K18 or tau seeds induced self-interaction of the WT-Tau biosensor when run in parallel (Figure 3A). The WT-Tau interaction biosensor also did not respond to seeds obtained from brain lysates of the transgenic (Tg) tauopathy mouse model carrying the P301S mutation (Figure 3B), while the K18(P301L) interaction biosensor cells showed a robust 107-fold increase in signal in the presence of brain lysates from the Tg mice compared to brain lysates from WT mice (Figure 3B). Such an increase was not observed in biosensor cells expressing LgBit-K18(P301L) and the non-related SmBit-Halo protein (Figure 3—figure supplement 1A), confirming the specificity of the biosensor response. The K18(P301L) seeding response to Tg brain lysates was concentration-dependent, reaching saturation at around 1 µg of protein lysate (Figure 3C). This sensor showed a large dynamic range spanning three logs of brain lysate concentrations (Figure 3C), with a minimum detection limit of 300 pg of total protein (Figure 3C inset). The robustness and reproducibility of this biosensor response were further confirmed using brain lysates from four independent WT and Tg mice to account for interindividual variability in tauopathy development (Figure 3—figure supplement 1B). This biosensor showed robust discrimination between WT and Tg brain lysates also in a 384-well format (luminescence signal: 932 vs 23,580 units.; Figure 3—figure supplement 1C), validating the potential of miniaturization of the assay. In contrast to the pronounced seeding response of the K18(P301L) interaction sensor, no change in the K18(P301L) conformation sensor signal was observed in response to most of the recombinant seeds or to brain lysates (Figure 3—figure supplement 1D–E). The only exception was aggK18, for which a partial decrease in the sensor signal was observed (Figure 3—figure supplement 1D). These results suggest that the seeds do not induce robust detectable conformational changes in the K18(P301L) sensor containing the P301L mutation and that the K18(P301L) is fully compatible with seed-induced aggregation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig3-v1.jpg)
+
+**Figure 3.:** (A) WT-Tau interaction biosensor signal in cells treated with monomeric (m) or aggregated (agg) forms of recombinant K18 or tau; data are expressed as mean ± SEM of five independent experiments. (B) K18(P301L) and WT-Tau interaction biosensors signal in cells treated with brain lysates (3 µg of total protein, 24 hr) obtained from wild-type (WT) or transgenic (Tg) mice; data are expressed as mean ± SEM of seven independent experiments; ****p<0.001 by one-ANOVA, followed by Sidak’s multiple comparison tests. (C) K18(P301L) interaction biosensor signal in the presence of increasing concentrations of brain lysates (in µg of total protein) obtained from WT or Tg mice; the representative curve of four independent experiments expressed as mean ± SD of triplicates. Insert: zoom of data points indicated by the square. (D) LgBit-Tau +SmBit-K18 interaction biosensor signal in the presence of brain lysates obtained from WT or Tg mice (3 µg); data are expressed as mean ± SEM of five independent experiments; ***p<0.005 by one-ANOVA, followed by Sidak’s multiple comparison tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Biosensor signal in cells expressing K18(P301L) interaction biosensor or the non-related LgBiT-K18(P301L)+SmBiT Halo biosensor interaction pair following treatment with brain lysates obtained from wild-type (WT) or transgenic (Tg) mice; data are expressed as mean ± SEM of five (SmBiT-K18(P301L)) or three (SmBiT-Halo) independent experiments; *p<0.05, by Student t-test compared to WT group. (B) Reproducibility of the K18(P301L) interaction biosensor response towards seeds from brain lysates obtained from four independent WT (WT 1–4) or Tg (Tg 1–4) mice; data are expressed as mean ± SEM of hree independent experiments; ****p<0.001, by one-way ANOVA followed by Sidak’s multiple comparison tests. (C) Assay miniaturization of K18(P301L) interaction biosensor: sensor response towards seeds from brain lysates obtained from WT or Tg mice in 384-well plate format; data are expressed as mean ± SD of quadruplicates. (D-E) K18(P301L) conformation biosensors signal in cells treated with monomeric (m) or aggregated (agg) forms of recombinant K18 or tau (D), or with brain lysates obtained from WT or Tg mice (E). Data are expressed as mean ± SEM of three to five independent experiments. **p<0.01 by one-ANOVA, followed by Sidak’s multiple comparison tests.
+
 Next, we raised the question of whether our WT-Tau sensor molecules, despite being resistant to the seeds from Tg brain lysates, would show increased interaction with seeding-responding forms of tau (i.e. K18) in the presence of pathological seeds from Tg brain lysates. For this, we assessed the complementation between LgBit-Tau and Smbit-K18(P301L) in the presence of brain lysates from WT and Tg mice. Interestingly, we observed a significant increase in the complementation signal upon treatment with brain lysates from Tg mice and not from WT mice (Figure 3D). This result indicates that full-length WT tau can be recruited to and interact with seeding-responsive K18 species.
 
-## The pro-aggregating P301L mutation renders full-length tau responsive to seeding
+### The pro-aggregating P301L mutation renders full-length tau responsive to seeding
 
 In order to investigate whether the conformational-impacting P301L mutation would be sufficient to render full-length tau susceptible to seeding and consequently increase self-interaction, we developed full-length Tau(P301L) biosensors. The corresponding Tau(P301L) interaction biosensor was responsive to forskolin (2.5-fold increase) (Figure 4A), similar to the WT-Tau sensor (Figure 2L). The Tau(P301L) conformation biosensor showed a larger (fivefold) forskolin-induced fold-change in signal (Figure 4B) compared to the corresponding WT-Tau biosensor (2.5-fold) (Figure 2K), suggesting a higher overall phosphorylation with the concomitant higher impact of phosphorylation on the conformation of the Tau(P301L) sensor. Efficient and higher phosphorylation levels of the Tau(P301L) sensor (compared to WT-Tau) were confirmed by AT8 antibody immunoreactivity (Figure 4A–B, inset panels). Fluorescence microscopy analysis of the cellular distribution of the Tau(P301L) interaction sensor showed co-localization with tubulin in the cytoplasm, although to a lesser extend compared to the WT-Tau biosensor (Manders' Coefficient score 0.7; Figure 4C). In comparison to the K18(P301L) sensor, the staining pattern was less punctuated and absent in the nucleus. Colchicine treatment led to an intermediate phenotype, with a modest decrease in the complementation signal of both conformation and interaction Tau(P301L) biosensors and in the co-localization with MTs (Figure 4D–E) and in the co-localization with MTs (Manders' Coefficient score 0.6; Figure 4C) compared to the robust decrease of the MT-bound WT-Tau sensors and the colchicine-insensitivity of the cytosolic K18(P301L) sensors. Collectively, these observations suggest that Tau(P301L) sensors exist as a mixture of MT-bound and cytosolic tau. To further confirm this dual location of the interaction Tau(P301L) biosensor we performed the single-target proximity ligation assay (PLA). We observed PLA positive signals (labeling proximity between at least 2 sensor molecules) in cells expressing the intermolecular Tau(P301L) biosensor (Figure 4F, right panel ii), while no PLA signal is detected in the negative control (absence of the primary antibodies) (Figure 4F, left panel i). In accordance with the bioluminescence results described above, the positive PLA signals, corresponding to intermolecular tau(P301L) interaction, are detected in the cytosol (likely tau(P301L) oligomers) (Figure 4F; sparse red dots) as well as co-localized with MTs (Figure 4F, zoom panel iii– white arrows). With respect to the seeding response of the Tau(P301L) interaction sensor, recombinant aggK18 (Figure 4G) and brain lysates from Tg mice (Figure 4H) induced a robust response. Considering that the LgBit biosensor fusion protein has a non-negligible size, we assessed whether the LgBit tag had any interference in the properties of tau aggregation. For this, we produced the recombinant version of the LgBit-tagged Tau(P301L) protein in E. coli and compared its aggregation kinetics with those of the untagged Tau(P301L) produced in parallel. Aggregation kinetics measured in vitro by ThT assay showed very similar properties between the two proteins, suggesting thus that the 18kD LgBit fragment does not interfere with the intrinsic tau aggregation property (Figure 4—figure supplement 1A). After ruling out that the LgBit tag interferes with the aggregation properties of the tau protein, we continued the characterization of the tau intramolecular biosensor (P301L) in cells. Similar to the K18(P301L), no seeding-induced conformational change was observed for the Tau(P301L) biosensor (Figure 4—figure supplement 1B–C). Notably, the effect of Tg brain lysate seeds on the biosensor response correlated well with an increase in the positive immunoreactivity of the tau phosphorylation-specific AT8 antibody and the MC-1 antibody recognizing pathological tau conformations (Jicha et al., 1997), compared to WT brain lysate (Figure 4I, left panel). Consistently, immunoreactivity for both antibodies was undetectable in cells treated with brain lysates from WT mice and in cells expressing the WT-Tau interaction biosensor that is not responsive to either WT or Tg brain lysates (Figure 4I, right panel). In order to obtain more information on the type of tau-tau interaction being formed with the biosensor (oligomers or fibrillar species) we performed thioflavin S (ThS) staining, which recognizes fibrillar species, together with immunostaining of the biosensor. We observed positive ThS staining only when cells were treated with Tg brain lysates, and ThS staining was not colocalized where the Tau(P301L) sensor was expressed (Figure 4—figure supplement 1D). A similar number of ThS-positive cells was observed in mock-transfected cells, not expressing the biosensor, indicating that the ThS staining probably originates from the fibrillar species contained in the Tg brain lysate, and that the luminescent sensor signal (measured in parallel) corresponds rather to oligomeric species that are undetectable by ThS (Figure 4—figure supplement 1D graphs). Taken together, these data indicate that Tau(P301L) biosensors are located at MTs and in the cytoplasm and show an intermediate phenotype between the WT-Tau and the K18(P301L) biosensors, with overall intermediate sensitivity to seeding most likely because of the pro-aggregating conformational effect of the P301L mutation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Tau(P301L) interaction (A) and conformation (B) biosensor signal in cells treated or not with forskolin (10 µM, 24 hr); data are expressed as mean ± SEM of four (A) or five (B) independent experiments; *p<0.05, ** 0.01 by Student t-test. Right panel: western blot analysis of phosphorylated tau (P-Tau) and total tau (T-tau) using AT8 and anti-HA antibodies, respectively; L: Lgbit-Tau; S: SmBit-Tau. (C) Cellular distribution of the Tau(P301L) interaction biosensor monitored by immunofluorescence microscopy in the absence (top panels) or presence (bottom panels) of colchicine (biosensor: anti-HA antibody, in red; tubulin: in green; nuclei: DAPI staining, in blue); Scale bar: 10 µm. Insets: colocalization analysis (Manders' colocalization coefficient) of the fractional overlap between biosensor molecules and microtubules (MTs). (D–E) Tau(P301L) and WT-Tau conformation (D) and interaction (E) biosensors signal in cells treated or not with colchicine (10 µM, 1 hr); data are expressed as mean ± SEM of three independent experiments; *p<0.05, **p<0.01, ***p<0.005 by Student t-test. (F) Proximity of Tau(P301L) biosensor molecules to MTs by PLA assay (PLA signal in red; tubulin in green; nuclei in blue by DAPI staining); i. negative control (absence of primary antibodies); ii. positive PLA signal; iii. zoomed image of the white square area shown in ii; white arrows show an overlap of PLA signal and MTs; scale bar: 10 µm. Inset graph: colocalization analysis (Manders' colocalization coefficient) of the fractional overlap between PLA signal and MTs; data are expressed as mean ± SEM of five images. (G–H) Tau(P301L) interaction biosensor signal in cells treated for 24 hr with recombinant proteins (G) or brain lysates obtained from wild-type (WT) or transgenic (Tg) mice (H); data are expressed as mean ± SEM of four (G) or five (H) independent experiments; **p<0.01 by one-ANOVA, followed by Sidak’s multiple comparison tests to the indicated group. (I) Immunofluorescence microscopy detection of tau pathological conformation (MC-1 antibody, green, upper panel) or phospho-tau (AT8 antibody, green, bottom panel) in cells expressing Tau(P301L) or WT-Tau interaction biosensors (HA antibody, red) and treated with brain lysates obtained from WT or Tg mice for 24 hr; nuclei are stained with DAPI (blue); scale bar: 10 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Thioflavin T (ThT) aggregation kinetics assay of recombinant full-length tau(P301L) and LgBit-Tau(P301L) proteins (10 µM), in the presence of aggregation inducer (heparin 1:1). (B–C) Tau(P301L) conformation biosensors signal in cells treated with monomeric (m) or aggregated (agg) forms of recombinant K18 or tau (B), or with brain lysates obtained from wild-type (WT) or transgenic (Tg) mice (C). Data are expressed as mean ± SEM of three to six independent experiments. **p<0.01 by one-ANOVA, followed by Sidak’s multiple comparison tests. (D) Thioflavin S (ThS) detection (blue) of tau fibrils in cells expressing the Tau(P301L) interaction biosensor (anti-HA staining, in red) in the absence (top panel) or presence (middle panel) of Tg brain lysates (12 ug of total protein per well in a 24-well plate; 24 hr), or in cells not expressing the biosensor and treated with Tg brain lysates (bottom panel). Merged image on the right of the ThS and HA fluorescence together with bright field image; scale bar: 10 µm. Inset graphs on the right show the respective biosensor luminescence signal of each condition.
+
 Altogether, these results indicate that our tau biosensors efficiently report changes in tau conformational, self-interaction, or seeding responses, enabling direct comparison between the behavior of different tau forms in living cells and under different challenging contexts.
 
-## Application of tau interaction biosensors for the identification of drug candidates
+### Application of tau interaction biosensors for the identification of drug candidates
 
 Given the established role of the seeding activity in spreading tau pathology in different brain areas, the identification of compounds able to interfere with this process holds great therapeutic potential. In view of the robust responses of our K18(P301L) and Tau(P301L) interaction biosensors towards seeds from Tg mouse brain lysates, we aimed to characterize their suitability to be used in screening for compounds interfering with their seeding/interaction response. We determined the Z-factor to estimate the high-throughput suitability and robustness of the K18(P301L) and Tau(P301L) interaction biosensor assays. Z-factor values of 0.7 and 0.5 were obtained, respectively, when comparing treatment with brain lysates from WT mice (low reference control) and Tg mice (high reference control) (Figure 5A–B). Z-factor values higher than 0.5 indicate that the assay displays a wide separation between the high and low references and low variability. Values between 0.7–1 are considered of excellent performance for high-throughput screenings (Zhang et al., 1999). As a proof-of-concept of the feasibility of using the sensor +Tg lysates to identify seeding-inhibiting compounds, we evaluated the seeding response of the K18(P301L) and Tau(P301L) interaction sensors in the presence of compounds previously reported in the literature to interfere with protein aggregation. Concomitant treatment of biosensor cells for 24 h with Tg brain lysates and compounds ID220249 (Pickhardt et al., 2015), CINQ-trp (Frenkel-Pinter et al., 2017), ID220255 (Pickhardt et al., 2015), and spermine (Bera and Nandi, 2007) had no significant effect on the Tg seed-induced complementation. In contrast, compounds ANLE138b (Wagner et al., 2013), leucomethylene blue mesylate (LMTMeSO4) (Harrington et al., 2015), and bb14 (Messing et al., 2013) showed a significant inhibition for both sensors (Figure 5C–D). Interestingly, higher inhibition efficacy was observed for the K18(P301L) sensor, suggesting that the effect of compounds was mainly dependent on the 4RD tau domain. Concentration-response curves performed with the K18(P301L) biosensor for these three compounds showed a bi-phasic inhibition curve, with a partial inhibition at nanomolar concentration and up to 80% inhibition at micromolar concentrations (Figure 5E–G). The pIC50 values of the first phase of the curves for each compound are as follows: ANLE138b: 10.5 ± 0.9; LMTMeSO4: 9.3 ± 0.7; bb14: 10 ± 0.9. At these pIC50 concentrations, the three compounds inhibited the sensor signal at approximately 30%. The pIC50 of the second phase of the curves could not be determined as no plateau is reached up to the highest concentrations used. Decrease of the biosensor signal due to cell toxicity of the compounds was excluded (Figure 5—figure supplement 1A), as well as a non-specific effect due to interference with Nluc activity (Figure 5—figure supplement 1B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) Determination of the assay Z-factor by collecting biosensor signals for K18(P301L) (A) or Tau(P301L) (B) interaction biosensor cells in the presence of brain lysates from wild-type (WT) (red, low reference signal) or transgenic (Tg) (blue, high reference signal) mice. (C–D) K18(P301L) (C) or Tau(P301L) (D) interaction biosensor signal in the presence of candidate inhibitors (10 µM, simultaneously to Tg treatment, 24 hr) of tau aggregation; data are expressed as mean ± SEM of four (C) or three (D) independent experiments; *p<0.05, ***p<0.005, ****p<0.001 by one-ANOVA, followed by Sidak’s multiple comparison tests to the vehicle group. (E–G) Concentration-response curves of the effect of compounds ANLE138b (E), LMTMeSO4 (F), and bb14 (G) on the K18(P301L) biosensor signal; data are expressed as mean ± SEM of four independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78360/elife-78360-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell viability assessed by MTT test in HEK293T cells incubated with vehicle (DMSO 0.1%) or the corresponding compounds (10 µM, 24 h); Triton 20% was used as a positive control of the assay; data are expressed as mean ± SD of triplicates. (B) Nluc activity in HEK293T cells expressing Nluc construct only (no tau) and incubated with vehicle (DMSO 0.1%) or the corresponding compounds (10 µM, overnight); data are expressed as mean ± SD of triplicates.
 
 Taken together, these results suggest that the NanoBiT-based tau biosensors are useful tools to monitor the behavior of the different forms of tau in a living cell context over time, and to identify or characterize candidate drugs able to interfere with the tau seeding/self-interaction processes.
 
@@ -84,44 +124,240 @@ Lastly, we provide ‘proof-of-principle’ evidence of the robustness of both T
 
 ## Methods
 
-## Expression vectors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>MAPT</td>
+      <td>GenBank</td>
+      <td>NCBI Entrez Gene: 4137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Human Embryonic Kidney (HEK) 293</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Human neuroblastoma SH-SY5Y cells</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:CVCL_0019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Tag constrcut)</td>
+      <td>NanoBiT system (SmBit and LgBit)</td>
+      <td>Promega</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected constructo (Homo sapiens)</td>
+      <td>LgBit-HA-K18(P301L)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Homo sapiens)</td>
+      <td>SmBit-HA-K18(P301L)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Homo sapiens)</td>
+      <td>LgBit-HA-Tau(P301L)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>transfected constructo (Homo sapiens)</td>
+      <td>SmBit-HA-Tau(P301L)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>transfected constructo (Homo sapiens)</td>
+      <td>LgBit-HA-Tau</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>transfected constructo (Homo sapiens)</td>
+      <td>SmBit-HA-Tau</td>
+      <td>This paper</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA antibody (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3724 S</td>
+      <td>IF(1:500), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA antibody (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#. 901514</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-tubulin (rat polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#: MAB1864</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-phospho tau antibody AT8 (Mouse monoclonal)</td>
+      <td>Thermofisher</td>
+      <td>MN1020;</td>
+      <td>IF(1:200), WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-aggregated tau MC-1 antibody (Mouse monoclonal), conformation-specific anti-tau antibody</td>
+      <td>PMID:9349554</td>
+      <td></td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>IRDye 800CW anti-Rabbit IgG (Goat polyclonal) Secondary Antibody</td>
+      <td>LI-COR Biosciences - GmbH</td>
+      <td>Cat.# 926–32211</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>IRDye 680RD anti-Mouse IgG(Goat polyclonal) Secondary Antibody</td>
+      <td>LI-COR Biosciences - GmbH</td>
+      <td>Cat.# 926–68070</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>nanoluciferase substrate Nano-Glo Live Cell</td>
+      <td>Promega</td>
+      <td>Cat.# N2012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Duolink PLA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat.# DUO92101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>thioflavin S</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.# T1892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>thioflavin T</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.# T3516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Image J</td>
+      <td>https://doi.org/10.1038/nmeth.2089</td>
+      <td>RRID: SCR_003070https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>GraphPad Prism 6</td>
+      <td>GraphPad Software Inc</td>
+      <td>RRID:SCR_002798; https://www.graphpad.com/scientificsoftware/-prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>EnVision Plate Reader</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td>see Methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression vectors
 
 Plasmids encoding for NanoBiT system (SmBit and LgBit) were purchased from Promega (Madison, USA) and cloned upstream of the tau protein in pcDNA3.1 vectors by restriction enzymes. The tau constructs used in this study comprise: (i). tau full-length (aa 1–441 of 2N4R tau); (ii). tau(P301L) (tau full-length displaying the P301L mutation); (iii). K18(P301L) (aa 244–369 comprising the four repeat domains of tau with the P301L mutation). The tau P301L mutants were generated by PCR using QuickChange Lightning Site-Direct mutagenesis kit (Agilent Technologies, Santa Clara, USA). For all intermolecular sensors, we generated N- and C-terminal LgBit/SmBit conjugated tau constructs. All the combination pairs were tested and the best configuration for each biosensor was chosen based on the criteria of displaying a measurable basal signal. Similarly, LgBit and SmBit at either N- or C-terminal positions were also tested for all intramolecular sensors. All constructs include an HA-tag and their sequences were verified by DNA sequencing.
 
-## Cell culture and cell transfection
+### Cell culture and cell transfection
 
 HEK293T (Sigma-Aldrich; RRID: CVCL 0063; authenticated by the provider) were maintained in Dulbecco’s Modified Eagle’s Medium (DMEM) Glutamax (Invitrogen) supplemented with 4.5 g/L glucose, 10% fetal bovine serum, 100 U/mL penicillin, and 0.1 mg/mL streptomycin, at 37 °C (95% O2, 5% CO2). SH-SY5Y cells were maintained in DMEM:F12 Medium (Invitrogen) supplemented with 10% fetal bovine serum, 100 U/mL penicillin, and 0.1 mg/mL streptomycin, at 37 °C (95% O2, 5% CO2). Cell lines were checked regularly for mycoplasma contamination. Cells were transfected with equal amounts of LgBit and SmBit construct (250 ng each per well in 6-well plates; or 125 ng each per well in 12-well plates) or 250 ng (6-well plates) of the intramolecular sensor. For the saturation curves, specific amounts of each construct were used, as indicated. Transfections were performed using jetPEI reagent according to the supplier’s instructions (Polyplus-transfection, New York, NY, USA). One day after transfection, cells were plated into white 96-well plates (Perkin Elmer Life Sciences, Waltham, MA) precoated with 10 μg/ml poly-L-lysine (Sigma-Aldrich), and the Nluc complementation assay was performed 48 hr post-transfection.
 
-## Preparation of recombinant proteins and mouse brain lysates
+### Preparation of recombinant proteins and mouse brain lysates
 
 His6-K18 (244-372), His6-WT 2N4R tau, tau(P301L), and LgBit-Tau(P301L) were produced in E. coli BL21 (DE3) bacteria and purified using IMAC capture followed by ion exchange chromatography (GTP biotechnology). K18 protein was eluted in 20 mM sodium phosphate, 500 mM NaCl, pH 7, 1 mM EDTA, and 2 mM DTT. The 2N4R tau protein was eluted in 25 mM sodium phosphate, 25 mM NaCl, 2.5 mM EDTA pH 6,6, and lyophilized in 50 mM 'ammonium acetate pH 8.2. Tau(P301L) and LgBit-Tau(P301L) proteins were eluted in phosphate-buffered saline and 1 mM DTT. Aggregated species of recombinant tau full-length and K18 fragments were prepared as previous reported (Mirbaha et al., 2015). Briefly, monomeric species were preincubated in 10 mM dithiothreitol for 60 min at room temperature, followed by incubation in oligomerization buffer (10 mM HEPES, 100 mM NaCl, and 2–6.8 µM heparin (1:1 ratio of monomeric tau to heparin, 37 °C, 24 hr)). Oligomers of amyloid beta peptide were obtained from lyophilized Aβ1-42 (Anaspec), which was firstly dissolved in 1,1,1,3,3,3‐hexafluoro‐2‐propanol, evaporated, aliquoted and reconstituted in anhydrous DMSO and PBS, followed by incubation for 24 hr at 4 °C prior to use (Cecon et al., 2019). Aggregated state of the preparations was assessed by thioflavin T assay. Brain-derived tau seeds were obtained from the P301S transgenic mice model of tauopathy, as their brain lysate has been shown to facilitate the formation of tau-tau interaction in HEK cells (Holmes et al., 2014). Heterozygous mice expressing human tau 1N4R with the P301S mutation (Yoshiyama et al., 2007), and WT littermates (referred to as Tg and WT mice, respectively) were obtained from Jackson Laboratories (Stock No: 008169) and bread for SERVIER at Charles River (Lyon, France). Five Nine-month-old male Tg and WT mice were sacrificed, and the cortex was rapidly removed and flash-frozen. Frozen tissue was lysed in 100 mg/mL of PBS (-Ca2+, -Mg2+), using a cooled Precellys homogenizer. Lysates were sonicated (Q800R2, Sonica) at 4 °C for 1 min at 90% power, and centrifuged for 15 min at 21.000 g, 4 °C. The supernatant was collected, aliquoted, and stored at –80 °C. Protein concentration was determined using a Pierce BCA Protein Assay Kit (ThermoFisher). Prior to use, lysates were sonicated again in a probe sonicator (Branson SLPe, 90%, 6 × 10 s, with 10 s intervals). Sample sizes were designed to give statistical power while minimizing animal use.
 
-## Nluc complementation assay
+### Nluc complementation assay
 
 Transfected cells expressing tau sensors were incubated with forskolin (10 µM, 24 hr) and/or colchicine (10 µM, 1 hr), in the 96-well plate. For tau seeding experiments, recombinant tau proteins (100 nM, 24 hr) or brain lysates from Tg and WT mice (up to 3 µg of total protein/well, 24 hr) were mixed with Lipofectamine 2000 reagent (1 µL/well) in Opti-MEM (Invitrogen) and incubated for 20 min before adding to HEK293T cells, as previously reported (Holmes et al., 2014). Immediately before the assay, the medium was removed, washed once with PBS, and replaced with PBS. The nanoluciferase substrate Nano-Glo Live Cell (Promega) was added to the wells at a final dilution of 1:100 and luminescence signal was read immediately and for several cycles in order to assure the detection of the plateau of the enzyme:substrate reaction, using the EnVision plate reader (PerkinElmer). The data acquired at the plateau phase (at 10 min after the addition of the substrate) were used for all graphs unless otherwise stated.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 HEK293T cells transiently expressing each sensor were seeded onto sterile poly-L-lysine coated 24-well format cover glass one day after transfection with the indicated tau biosensors, and treated with the indicated compounds. At the end of the incubation time, cells were washed, fixed with paraformaldehyde 4% or methanol:acetone (1:1) solution (15 min), permeabilized in 0.2% Triton X-100, and blocked for 1 hr with 5% horse serum. Cells were then incubated (overnight, 4 °C) with monoclonal anti-HA antibody (rabbit, dilution 1:500, cat. 3724 S; Cell Signaling), or anti-tubulin (rat, MAB1864; Millipore; 1:200), or with anti-phospho tau antibody AT8 (MN1020; Thermofisher; 1:200), or with the tau conformation-specific MC-1 antibody (dilution 1:500, Jicha et al., 1997). MC-1 antibody was generously provided by Dr. Peter Davies. After several washes, cells were incubated with anti-mouse or anti-rat, or anti-rabbit fluorescein-conjugated secondary antibodies (dilution 1:500, Invitrogen) and cell nuclei were stained with DAPI (SigmaAldrich). After mounting the cover glass into glass slides, the slides were analyzed under Zeiss Observer Z1 microscope (Zeiss, Germany). Images obtained were further analyzed using ImageJ software (Schneider et al., 2012). Colocalization was assessed by measuring the fractional overlap in at least three different images, in several fields comprising at least two cells positive for sensor expression, by Manders' Colocalization Coefficient analysis using the JACoP plugin for ImageJ.
 
-## Proximity ligation assay (PLA)
+### Proximity ligation assay (PLA)
 
 Biosensor-expressing cells plated in 8-well chamber slides (ibidi) were fixed in methanol:acetone (1:1) and permeabilized as described for immunofluorescence analysis. All the following steps of the proximity ligation assay were performed according to suppliers’ instructions (Duolink PLA; Sigma-Aldrich). Tau-tau sensor molecules interaction was assessed using two monoclonal antibodies against the HA tag (mouse, Biolegend cat. 901514; rabbit, Cell Signaling 3724 S), and two PLA probes (anti-rabbit-PLUS, anti-mouse-MINUS). Tubulin and nucleus staining was performed after the PLA as described in the immunofluorescence section and the slides were analyzed under Zeiss Observer Z1 microscope (Zeiss, Germany). Images obtained were further analyzed using ImageJ software.
 
-## Thioflavin S staining
+### Thioflavin S staining
 
 Immediately after the immunostaining procedure with the anti-HA antibody, cells were incubated with 0.1% ThS (Sigma-Aldrich) in 50% ethanol solution for 15 min, followed by two washes of 20 min with 50% ethanol and one wash with 80% ethanol. After one final wash in PBS, the cover glasses were mounted into glass slides and the slides were analyzed as described in the immunofluorescence analysis section (ThS ex: 391/em: 428 nm).
 
-## Thioflavin T assay
+### Thioflavin T assay
 
 In vitro aggregation assay was performed by incubating tau or Aß recombinant proteins (10 µM) in buffer containing 10 mM HEPES, 100 mM NaCl, 2 mM DTT, and 50 µM thioflavin T (Sigma-Aldrich), in the presence or absence of oligomerization inducer (heparin:tau at 1:1 concentration) in a black 96-well plate. Thioflavin T fluorescence was read immediately and every 30 min for 24 hr or up to 120 hr using the Envision plate reader (ex: 430 nm; em: 480 nm; with a 30 s shaking step before each read).
 
-## SDS-PAGE/Western blot
+### SDS-PAGE/Western blot
 
 Cells expressing tau biosensors were lysed in Laemli buffer (62.5 mmol/L Tris/HCl pH 6.8, 5% SDS, 10% glycerol, 0.005% bromophenol blue) and resolved in SDS-PAGE gel (10 or 12%), followed by protein transfer to nitrocellulose membranes. Membranes were blocked in 5% non-fat dried milk in TBS (10 mM Tris-HCl, pH 8, 150 mM NaCl), and immunoblotted with primary antibodies against the HA tag (rabbit, dilution 1:1000, cat. 3724 S; Cell Signaling), or anti-phospho tau antibody AT8 (MN1020; Thermofisher; 1:200), diluted in 0.3% BSA in TBS (overnight, 4 °C), followed by incubation with secondary antibodies coupled to 680 or 800 nm fluorophores (1:15,000 dilution in 0.3% nonfat dried milk in TBST (TBS with 1% Tween 20), 1 hr at room temperature; LI‐COR Biosciences, Lincoln, NE, USA). Membranes were read using the Odyssey LI‐COR infrared fluorescent scanner (LI‐COR Biosciences). Blot quantifications were performed using Empiria Studio software (LI‐COR Biosciences).
 
-## Data analysis
+### Data analysis
 
-Data are presented as means ± SEM of the indicated n (number of independent experiments). A minimum of three independent experiments, each performed in triplicates (technical replicates), were performed to an ensure accurate estimation of experiment variability. Nluc complementation experiments were each performed in triplicates to ensure the reliability of single values, and luminescence data are expressed as the raw data or normalized to % of basal signal or maximal signal, as indicated. Non-specific complementation signal was determined for inter-molecular sensors by expressing only one of the constructs or co-transfecting with a complementation construct comprising a protein (halo) non-related to tau. For the experiments on concentration-response curves of inhibitory compounds, data were fitted to the nonlinear regression log (inhibitor) versus response (three parameters) fitting equation (GraphPad Prism software version 6). Statistical analysis was performed using GraphPad Prism software version 6, applying Student’s t-est to compare two groups or ordinary one-way or two-way analysis of variance (ANOVA) when comparing multiple groups, followed by Tukey’s or Dunnett’s multiple comparison post hoc test when appropriate. Values of p<0.05 were considered statistically significant. Z-factor values (Zhang et al., 1999) of the Nluc complementation assay for the K18(P301L) and Tau(P301L) interaction biosensors were determined using the following equation, with cells treated with brain lysates from WT mice used as negative control and cells treated with Tg brain lysates as positive control:Z-factor=1 − 3(σp+σn)|μp−μn|
+Data are presented as means ± SEM of the indicated n (number of independent experiments). A minimum of three independent experiments, each performed in triplicates (technical replicates), were performed to an ensure accurate estimation of experiment variability. Nluc complementation experiments were each performed in triplicates to ensure the reliability of single values, and luminescence data are expressed as the raw data or normalized to % of basal signal or maximal signal, as indicated. Non-specific complementation signal was determined for inter-molecular sensors by expressing only one of the constructs or co-transfecting with a complementation construct comprising a protein (halo) non-related to tau. For the experiments on concentration-response curves of inhibitory compounds, data were fitted to the nonlinear regression log (inhibitor) versus response (three parameters) fitting equation (GraphPad Prism software version 6). Statistical analysis was performed using GraphPad Prism software version 6, applying Student’s t-est to compare two groups or ordinary one-way or two-way analysis of variance (ANOVA) when comparing multiple groups, followed by Tukey’s or Dunnett’s multiple comparison post hoc test when appropriate. Values of p<0.05 were considered statistically significant. Z-factor values (Zhang et al., 1999) of the Nluc complementation assay for the K18(P301L) and Tau(P301L) interaction biosensors were determined using the following equation, with cells treated with brain lysates from WT mice used as negative control and cells treated with Tg brain lysates as positive control:
+
+$$
+Z-factor=1 − \frac{3(\sigma_{p}+\sigma_{n})}{|\mu_{p}−\mu_{n}|}
+$$
 
 where σP=standard deviation of positive control; σn=standard deviation of negative control; μP=mean of positive control; μn=mean of negative control.

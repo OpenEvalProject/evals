@@ -52,7 +52,7 @@ We therefore combined computational modeling, multivariate pattern classificatio
 
 ## Results
 
-## Simulation study
+### Simulation study
 
 Simulations provide a formal basis for understanding the implications of the distributed and dynamic view, because a computer model’s architecture, behavior, learning, and testing patterns are fully known. We therefore adapted the well-known ‘hub and spokes’ model of semantic memory (Patterson et al., 2007; Chen et al., 2017; Rogers et al., 2004) to assess whether semantic representations change dynamically with stimulus processing and how the temporal generalization method can uncover such a code.
 
@@ -78,7 +78,7 @@ This pattern reflects the nonlinear trajectories apparent in the sparsely-sample
 
 These are the characteristics we looked for in the ECoG study.
 
-## ECoG study
+### ECoG study
 
 The dataset included voltages collected at 1000 Hz from 16 to 24 subdural electrodes situated in the left ventral anterior temporal cortex of 8 patients awaiting surgery while they named line-drawings of common animate and inanimate items matched for a range of confounds (see Materials and methods). We analyzed voltages over the 1640ms following stimulus onset, a window that allows us to assess decodeability both before and after the mean onset of naming (1190 ms). Voltages were decoded using a 50 ms sliding-window, with separate classifiers fitted at each window and the window advancing in 10 ms increments. This yielded 160 classifiers per subject, each decoding potentials measured across all vATL electrodes in a 50 ms window. Each classifier was then tested on all 160 time-windows. The classifiers were logistic regression models trained to discriminate animate from inanimate items based on the voltages measured across all electrodes and for all time-points within the corresponding window. The models were fitted with L1 regularization to encourage coefficients of 0 for many features (see Materials and methods).
 
@@ -90,13 +90,17 @@ Hold-out accuracy exceeded chance at about 200 ms post stimulus onset, well befo
 
 We next considered whether and how the neuro-semantic code changed over time. For each time window, we projected the classifier weights for all electrodes in all subjects to a cortical surface model, then animated the results (see Video 1). Figure 4E shows snapshots every 200 ms post stimulus onset. In mid-posterior regions, the code was spatially and temporally stable—weights on the lateral aspect were positive while those on the medial aspect were negative, consistent with feature-based views of representation. The anterior pattern differed, flipping from mainly positive at 200 ms to mainly negative by 800 ms and fluctuating across time and space throughout. In other words, the ‘meaning’ of a positive deflection in the voltage—whether it signaled animal or non-animal—stayed constant posteriorly but changed direction over time anteriorly, consistent with the deep, distributed, dynamic view (see A-3).
 
+![Video 1.](https://cdn.elifesciences.org/articles/66276/elife-66276-video1.mp4.jpg)
+
+**Video 1.:** Colored regions indicate areas receiving non-zero coefficients, with cool colors indicating negative mean coefficients, green indicating means near zero, and warm colors indicating positive mean coefficients. Coefficients anterior to the dashed line fluctuate more relative to those posterior to the line, which are more consistent over time.
+
 Finally, we assessed whether the four characteristics of the distributed and dynamic pattern noted earlier are statistically reliable in the ECoG data.
 
-## Constant decodeability
+### Constant decodeability
 
 The simulations suggest that semantic information should be decodeable from ATL neural activity from the onset of stimulus information and throughout stimulus processing. Figure 4A confirms this characteristic: from 200 ms post-onset, 95 % confidence intervals on mean decoding accuracy exceed chance for the duration of the stimulus-processing window.
 
-## Local temporal generalization
+### Local temporal generalization
 
 To assess whether the ‘overlapping waves’ pattern shown in Figure 4C is statistically reliable across subjects we conducted the following analysis. For each subject, we grouped the 160 classifiers into 10 clusters based on the preceding analysis, then computed the mean temporal decoding profile for each cluster separately in every subject. This provided a characterization of how well each cluster of classifiers performs over time in every individual subject. At each time-window, we identified the classifier-cluster that showed the highest hold-out accuracy across subjects, then used paired-samples t-tests to compute the probability that each remaining cluster was worse than the best-performing cluster. The probabilities were adjusted to control the false-discovery rate at α = 0.05. Figure 5A shows the result. Yellow indicates the best-performing cluster and other statistically indistinguishable clusters. Darker colors indicate clusters that perform reliably worse than the best cluster at different levels of significance. Each cluster is reliably better than all other clusters at some point in time, excepting only the first (classifiers fit to early windows that never exceed chance) and the last (which performs comparably to the second-last cluster toward the end of the processing window). Thus, the ‘overlapping waves’ pattern shown qualitatively in Figure 4C reflects statistically reliable differences in classifier performance across subjects over time.
 
@@ -104,13 +108,13 @@ To assess whether the ‘overlapping waves’ pattern shown in Figure 4C is stat
 
 **Figure 5.:** A. Statistical assessment of ‘overlapping waves’ pattern. Each row corresponds to one cluster of decoding models as shown in Figure 4C. Black vertical lines indicate timepoints where decoding is not reliable across subjects. Yellow shows the best-performing model cluster and other clusters that statistically perform as well. Green, blue, and purple indicate clusters that perform reliably worse than the best-performing cluster at increasingly strict statistical thresholds controlling for a false-discovery rate of 0.05. B. Broadening window of generalization. For classiﬁers ﬁt at each time window, breadth of classiﬁer generalization (as proportion of full processing window) is plotted againt the time at which the classiﬁer was ﬁt. The line shows a piecewise-linear model ﬁt to 32 non-overlapping time windows (black dots). The most likely model had a single inﬂection point at 473 ms post stimulus-onset, with breadth of generalization increasing linearly over this span, then hittng ceiling through most of the remaining processing window. The dashed line shows mean response latency. C. Fluctuating codes in more anterior regions. Correlation between mean variance of coeﬃcient change (see text) and anterior/posterior electrode location for electrodes grouped by decile along the anterior/posterior axis.
 
-## Widening generalization window
+### Widening generalization window
 
 .Simulations suggested that, as the system settles into an interpretation of the input, the neuro-semantic code grows more stable, so that classifiers generalize across a broader temporal window. Figure 4D shows a qualitatively similar pattern in ECoG; we conducted a further analysis to assess whether this widening pattern is statistically reliable. For classifiers fit at a given time window, we counted the number of test-windows where decoding accuracy reliably exceeded chance across subjects, using a statistical threshold of p < 0.01 uncorrected (ie about one expected false positive for the 160 comparisons). This provides an estimate of the ‘width’ of the temporal generalization envelope for classifiers fit at each time window. We then plotted generalization width against the time when the classifier was fit as shown by the gray dots in Figure 5B. The generalization window grows wider over the first ~500 ms of processing, where it hits a ceiling (ie classifiers generalize above chance for almost the whole window) then drops off for classifiers near the very end.
 
 To assess the statistical reliability of this pattern, we fit a piecewise-linear regression to the data points shown in black in Figure 5B, which represent the set of 32 fully non-overlapping (and hence independent) time-windows beginning with the first. The piecewise linear approach first fits a linear model to the data, then successively adds breakpoints and uses the Bayes Information Criterion (BIC) to find the number of breakpoints that provides the best model fit given the number of free parameters. From this approach, the best model involved a single breakpoint at ~473 ms post stimulus onset. The black line shows the resulting bilinear model, which fits the data with r2 = 0.85. The first model segment shows a reliable linear widening of the generalization window with fit time over ~500 ms (r2 = 0.70, p < 0.002), providing strong evidence that the generalization window expands linearly with stimulus processing until it hits ceiling.
 
-## Changing code direction
+### Changing code direction
 
 The surface maps shown in Figure 4E and accompanying animation (Video 1) suggest that classifier coefficients fluctuate more over time in anterior than posterior temporal cortex. Coefficient magnitude and direction indicate how a classifier ‘interprets’ deflections in the electrode voltage—that is, whether a negative deflection signals ‘living’ or ‘nonliving’ in the context of other measured signals. The possibility that coefficients fluctuate more in anterior than posterior regions thus suggests that the anterior regions may show greater dynamic change in how they encode semantic information over time, as was also observed in the simulations.
 
@@ -130,9 +134,9 @@ These conclusions rest partly on the analysis of classifier weights. When multip
 
 Prior studies applying temporal generalization to MEG data in visual semantic tasks uniformly report a very narrow and unchanging band of temporal generalization (Carlson et al., 2013; Cichy et al., 2014), a pattern consistent with the proposal that the neuro-semantic code changes rapidly over the course of stimulus processing. Our results differ from the MEG pattern, and indeed from most other work applying the temporal generalization approach (King and Dehaene, 2014), in showing a gradual widening of the temporal generalization window. This phenomenon does not arise from the autocorrelational structure of the data itself—the window of time over which an electrode reliably predicts its own future state does not grow wider with stimulus processing (A-5). Instead the widening must reflect an increasingly stable representational code. The simulation explains why the pattern arises in anterior temporal cortex: hub representations in vATL change rapidly early on due to interactions with modality-specific representations throughout cortex, but these changes slow as the full activation pattern emerges across network components.
 
-## Limitations and future directions
+### Limitations and future directions
 
-## Is the animacy code truly semantic?
+#### Is the animacy code truly semantic?
 
 We have focused on decoding a broad, binary semantic distinction that is a common focus of much work in this area—specifically, whether an image depicts an animate or an inanimate item. Animacy is a useful starting point because it is not transparently captured by low-level perceptual structure; in our stimuli, for instance, low-level visual similarity as expressed by Chamfer matching does not reliably distinguish the animate and inanimate items (see Materials and Methods). Nevertheless it remains possible that decoders in the current work exploit some other property that happens to be confounded with animacy. Whether this is the case or not, the preceding arguments suggest that the relevant information is expressed in a distributed, dynamically-changing neural code.
 
@@ -140,43 +144,43 @@ Further evidence for semantic structure could involve decoding the graded within
 
 Ideally one wants a multivariate decoding model that can be fit to all data within a given time window without feature preselection (as in the current paper), but which predicts the embedding of stimuli within a multidimensional semantic space instead of a simple binary classification. Oswal et al., 2016 recently developed theory and analysis for such an approach tailored to the decoding of neural data, and future work should consider whether more continuous/fine-grained aspects of semantic similarity can be decoded from vATL using such techniques.
 
-## Decoding voltage versus time-frequency spectrograms
+#### Decoding voltage versus time-frequency spectrograms
 
 We have taken the voltage measured at an electrode as a neural analog of unit activation in an artificial neural network model. It remains unclear, however, how the processing units in a neural network are best related to the signals measured by ECoG. Voltages measured at a surface electrode can be influenced by firing of nearby neurons but also by the activity of incoming synapses from neural populations at varying distances from the recording sites. Thus there is no guarantee that signals measured in vATL only reflect neural activation arising in vATL. Many ECoG studies decompose voltage time-series into time-frequency spectrograms, which indicate the power of oscillations arising in the signal at different temporal frequencies. Power in the gamma band is often thought to reflect spiking activity of local neurons (Merker, 2013), and thus might provide a better indication of the activity of neurons within vATL proper.
 
 We have not undertaken such an analysis for two reasons. First, our goal was to assess whether the neural code for animacy has the distributed and dynamic properties that arise within a well-studied neural network model of semantic cognition. Such models do not exhibit oscillating behavior, making the model analog to frequency bands unclear. Second, Prior ECoG work has shown that, while object- and person-naming does elicit increased gamma for more perceptual areas (like posterior fusiform), in anterior temporal regions it significantly alters beta-band power (Abel et al., 2016). Similarly, (Tsuchiya et al., 2008) applied multivariate decoding to ECOG signals to discriminate happy and fearful faces, finding reliable information in ventral temporal cortex in frequencies < 30 Hz (as well as in gamma). Such patterns may reflect ATL’s connections to multiple distal cortical areas, since beta-band oscillations are thought to aid in coordination of long-distance neural interactions (Kopell et al., 2000). Thus we have left the decoding of time-frequency information in these signals, and their connection to hypothesized information processing mechanisms in neural network models, to future work.
 
-## Limitation to ventral ATL
+#### Limitation to ventral ATL
 
 We have focused on vATL because of its widely-recognized role in semantic cognition (McClelland and Rogers, 2003; Patterson et al., 2007; Lambon Ralph et al., 2017). A drawback of the current approach is its limited field of view: we cannot draw inferences about other parts of cortex involved in semantic processing of visually-presented images, or whether the code arising in such areas changes dynamically. The current data do not, for instance, address important questions about the role of parietal, frontal and lateral/superior-temporal systems in semantic processing. The temporal generalization methods we have adopted may, however, contribute to these questions if applied to datasets collected from electrodes situated in these regions in future work.
 
-## Conclusion
+### Conclusion
 
 Why should a dynamic distributed code arise specifically within the vATL? The area is situated at the top of the ventral visual stream, but also connects directly to core language areas (Nobre et al., 1994; Mesulam, 1998) and, via middle temporal gyrus, to parietal areas involved in object-directed action (Chen et al., 2017). It receives direct input from smell and taste cortices (Gloor, 1997), and is intimately connected with limbic structures involved in emotion, memory, and social cognition (Gloor, 1997). Thus vATL anatomically forms the hub of a cross-modal network ideal for encoding associations among visual, linguistic, action, sensory, and social/motivational representations. Hub neurons interact with a wide variety of subsystems, each encoding a different kind of structure and content, potentially pushing the hub representations in different directions over time as activity propagates in the network. Other network components lying closer to the sensory or motor periphery connect mainly within individual modality-specific systems (Binney et al., 2012), so may be less impacted by such cross-modal interactions, as observed in the model. For this reason, the feature-based approach that has proven indispensable for characterizing neural representations in modality-specific cortices may be less suited to understanding the distributed and dynamic representations that arise in deeper and more broadly-connected (tertiary association) cortical regions. These include regions critical for human semantic knowledge, and potentially other higher-level cognitive functions.
 
 ## Materials and methods
 
-## Simulation study
+### Simulation study
 
 The model implements the ‘distributed-plus-hub’ theory of semantic representation developed in prior work (Patterson et al., 2007; Lambon Ralph et al., 2017; Rogers et al., 2004; Chen et al., 2017). It is a deep, fully continuous and recurrent neural network that learns associations among visual representations of objects, their names, and verbal descriptors, via a central cross-modal hub, with units and connectivity shown in Figure 2A of the main paper. Simulations were conducted using the open-source Light Efficient Network Simulator (Rohde, 1999) updated for contemporary libraries (https://github.com/crcox/lens). Code for replicating the simulations and the data reported in this paper are available at https://github.com/ttrogers, (copy archived at swh:1:rev:8cc85427c81922d107e33ef58f038fd228f042fe; RRID: SCR_021099).
 
 All units employed a continuous-time sigmoidal activation function with a time-constant of 0.25. Visual and Verbal units were given a fixed, untrainable bias of –3 that produced a low activation state without positive input. Hidden units had trainable biases. To simulate perception of an image, units encoding the item’s visual representation were given direct positive stimulation of +6 so that, combined with the fixed bias, they received a net input of +3 (in addition to any inputs from other units in the model) which persisted through stimulus processing. The resulting changes in unit activations propagated through visual hidden, hub, and verbal hidden units to eventually alter activation states in the verbal units. Because the model was reciprocally connected, such downstream changes fed back to influence upstream states at each moment of simulated time, as the whole system settled to a stable state. To simulate verbal comprehension, the same process unfolded, but with positive input externally provided to verbal units. Units updated their activation states asynchronously in permuted order on each tick of time and were permitted to settle for five time intervals (a total of 20 updates) during training and eight time intervals (32 updates) during testing.
 
-## Model environment
+#### Model environment
 
 The model environment contained visual and verbal patterns for each of 90 simulated objects, conceived as belonging to three distinct domains (e.g. animals, objects, and plants). Each domain contained 10 items from each of three sub-categories—thus there were 30 ‘animals’, 30 ‘objects’ and 30 ‘plants’. Visual patterns were constructed to represent each item by randomly flipping the bits of a binary category prototype vector in which items from the same domain shared a few properties and items from the same category shared many. The verbal patterns were constructed by giving each item a superordinate label true of all items within a given domain (animal, object, plant), a basic-level label true of all items within a category (e.g. ‘bird’, ‘fish’, ‘flower’, etc), and a subordinate label unique to the item (e.g. ‘robin’, ‘salmon’, ‘daisy’, etc). These procedures, adopted from prior work (Rogers et al., 2004), generated model input/target vectors that approximate the hierarchical relations among natural concepts in a simplified manner that permits clear understanding and control of the relevant structure.
 
-## Training
+#### Training
 
 For each input, target patterns that fully specified the item’s visual and verbal characteristics were applied throughout the duration of stimulus processing. The model was trained with backpropagation to minimize squared error loss. Half of the training patterns involved generating verbal outputs from visual inputs, while the other half involved generating visual outputs from verbal inputs. The model was initialized with small random weights sampled from a uniform distribution ranging from –1–1, then trained for 30,000 epochs in full batch mode with a learning rate of 0.002 and without weight decay. For each pattern, the settling process was halted after 20 activation updates, or when all Visual and Verbal units were within 0.2 of their target values, whichever came first. For all reported simulations, the model was trained five times with different random weight initializations. After training, all models generated correct output activations (i.e. on the correct side of the unit midpoint) for more than 99 % of output units across all training runs. Each model was analyzed independently, and the final results were then averaged across the five runs.
 
-## Testing
+#### Testing
 
 The picture-naming study was simulated by presenting visual input for each item, recording the resulting activations across the 25 hub units at each update as the model settled over 32 updates, and distorting these with uniform noise sampled from –0.005 to 0.005 to simulate measurement error. As the model settles over time it gradually activates the word unit corresponding to the item name, and in this sense simulates picture naming. Just as in the ECoG data, we recorded unit activations across a fixed period of time, regardless of when the correct name unit became active.
 
 Note that, whereas the ECoG study employed items drawn from two general semantic domains (living and nonliving), the model was trained on three domains. This provided a simple model analog to the true state of affairs in which people know about more semantic kinds than just those appearing in the ECoG stimulus set. To simulate the study, the model was presented with 60 items selected equally from two of the three semantic domains—so as in the study, half the stimuli belonged to one domain and half to another. To ensure results did not reflect idiosyncrasies of one domain, we simulated the task with each pair of domains and averaged results across these.
 
-## Analysis
+#### Analysis
 
 All analyses were conducted using R version 3.6. To visualize the trajectory of hub representations through unit activation space as a stimulus is processed, we computed a simultaneous three-component multidimensional scaling of the unit activation patterns for all 90 items at all 33 timepoints using the native R function cmdscale. The resulting coordinates for a given item at each point in time over the course of settling were plotted as lines in a 3D space using the scatterplot3d package in R. Figure 2B shows the result for one network training run. Figure 2C shows the same trajectories in the raw data (i.e. actual unit activation states rather than latent dimensions in a MDS) for randomly sampled pairs of hub units.
 
@@ -186,13 +190,185 @@ Each row of this matrix shows the mean accuracy of decoders trained at a given t
 
 Finally, to understand the time-window over which each cluster of decoders performs reliably better than chance, we computed a significance threshold using a one-tailed binomial probability distribution with Bonferroni correction. Each decoder discriminates two categories from 60 items, with probability 0.5 of membership in either category. We therefore adopted a significance threshold of 44 correct items out of 60, corresponding to a binomial probability of p < 0.03 with Bonferroni correction for 330 tests (10 clusters at each of 33 time points). The barplot in Figure 3D shows the proportion of the full time window during which each decoding cluster showed accuracy above this threshold.
 
-## ECoG study
+### ECoG study
 
-## Participants
+#### Participants
 
 Eight patients with intractable partial epilepsy (seven) or brain tumor (one) originating in the left hemisphere participated in this study. These include all left-hemisphere cases described in a previous study (Chen et al., 2016), and we will use the same case numbers reported in that work (specifically cases 1–5, 7, and 9–10). Background clinical information about each patient is summarized in Table 1. Subdural electrode implantation was performed in the left hemisphere for presurgical evaluation (mean 83 electrodes, range 56–107 electrodes/patient). A total of 16–24 electrodes (mean 20 electrodes) covered the ventral ATL in each patient. The subdural electrodes were constructed of platinum with an inter-electrode distance of 1 cm and recording diameter of 2.3 mm (ADTECH, WI). ECoG recording with subdural electrodes revealed that all epilepsy patients had seizure onset zone outside the anterior fusiform region, except one patient for whom it was not possible to localize the core seizure onset region. The study was approved by the ethics committee of the Kyoto University Graduate School of Medicine (No. C533). Participants all gave written information consent to participate in the study.
 
-## Stimuli and procedure
+**Table 1.**
+ Patient characteristics.CPS: complex partial seizure; GTCS: generalized tonic clonic seizure; ECoG: electrocorticogram; ERS: epigastric rising sensation; a/pMTG: anterior/posterior part of the middle temporal gyrus; a/pMTG: anterior/posterior part of the middle temporal gyrus; FCD: focal cortical dysplasia; * dual pathology ** diagnosed by clinical findings.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Patient 1</th>
+      <th>Patient 2</th>
+      <th>Patient 3</th>
+      <th>Patient 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age, gender, handedness</td>
+      <td>22 M R</td>
+      <td>29 M R&amp;L</td>
+      <td>17 F R</td>
+      <td>38 F R</td>
+    </tr>
+    <tr>
+      <td>WAIS-R (VIQ,PIQ,TIQ)</td>
+      <td>70, 78, 69</td>
+      <td>72, 78, 72</td>
+      <td>67, 76, 69</td>
+      <td>84,97,89</td>
+    </tr>
+    <tr>
+      <td>WMS-R(Verb, Vis, Gen,Attn, Del recall)</td>
+      <td>99, 64, 87, 91, 82</td>
+      <td>99, 92, 97, 87, 83</td>
+      <td>51, &lt; 50, &lt; 50, 81, 56</td>
+      <td>75,111,83,62,53</td>
+    </tr>
+    <tr>
+      <td>WAB</td>
+      <td>95.6</td>
+      <td>96</td>
+      <td>97.2</td>
+      <td>98.5</td>
+    </tr>
+    <tr>
+      <td>WADA test (Language)</td>
+      <td>Left</td>
+      <td>Bilateral</td>
+      <td>Left</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Age of seizure onset</td>
+      <td>16</td>
+      <td>10</td>
+      <td>12</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Seizure type</td>
+      <td>non-specific aura→ CPS, GTCS</td>
+      <td>aura (metamorphosia, ERS) → CPS</td>
+      <td>discomfort in throat→ CPS</td>
+      <td>ERS →CPS</td>
+    </tr>
+    <tr>
+      <td>Ictal ECoG onset</td>
+      <td>aMTG</td>
+      <td>PHG</td>
+      <td>PHG</td>
+      <td>PHG</td>
+    </tr>
+    <tr>
+      <td>MRI</td>
+      <td>L basal frontal cortical dysplasiaL anterior temporal arachnoid cyst</td>
+      <td>L posterior temporal cortical atrophy</td>
+      <td>L temporal tip arachnoid cyst</td>
+      <td>L hippocampal atrophy/sclerosis</td>
+    </tr>
+    <tr>
+      <td>Pathology</td>
+      <td>FCD type IA</td>
+      <td>FCD type IAHippocampal sclerosis*</td>
+      <td>FCD type IB</td>
+      <td>Hippocampal sclerosis**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Patient 5</td>
+      <td>Patient 7</td>
+      <td>Patient 9</td>
+      <td>Patient 10</td>
+    </tr>
+    <tr>
+      <td>Age, gender, handedness</td>
+      <td>55 M R</td>
+      <td>41 F R</td>
+      <td>51 M R</td>
+      <td>38 F R</td>
+    </tr>
+    <tr>
+      <td>WAIS-R (VIQ,PIQ,TIQ)</td>
+      <td>105,99,103</td>
+      <td>72, 83, 75</td>
+      <td>73, 97, 83</td>
+      <td>109, 115,112</td>
+    </tr>
+    <tr>
+      <td>WMS-R(Verb, Vis, Gen,Attn, Del recall)</td>
+      <td>71,117,84,109,72</td>
+      <td>83,111,89,94,82</td>
+      <td>80,101,85,1919,91</td>
+      <td>71,79,70,90,58</td>
+    </tr>
+    <tr>
+      <td>WAB</td>
+      <td>98</td>
+      <td>97.3</td>
+      <td>89.6</td>
+      <td>96.9</td>
+    </tr>
+    <tr>
+      <td>WADA test (Language)</td>
+      <td>Left</td>
+      <td>Right</td>
+      <td>Left</td>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <td>Age of seizure onset</td>
+      <td>55</td>
+      <td>19</td>
+      <td>43</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Seizure type</td>
+      <td>CPS (once)</td>
+      <td>aura (nausea,feeling pale) → CPS</td>
+      <td>CPS</td>
+      <td>non-specific aura→ CPS</td>
+    </tr>
+    <tr>
+      <td>Ictal ECoG onset</td>
+      <td>none</td>
+      <td>PHG</td>
+      <td>mITG</td>
+      <td>SMG</td>
+    </tr>
+    <tr>
+      <td>MRI</td>
+      <td>Low-grade gliomaL medial temporal lobe</td>
+      <td>L hippocampal atrophy/screrosisL parieto-occipital perinatal infarction</td>
+      <td>Left temporal cavernoma</td>
+      <td>L parietal opercurum tumor</td>
+    </tr>
+    <tr>
+      <td>Pathology</td>
+      <td>Diffuse astrocytoma</td>
+      <td>FCD IAHippocampal sclerosis*</td>
+      <td>arteriovenous malformation</td>
+      <td>Oligoastrocytoma</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Stimuli and procedure
 
 One hundred line drawings were obtained from previous norming studies (Barry et al., 2018; Snodgrass and Vanderwart, 1980), including 50 items in each of the two semantic categories that were the target of our decoding efforts (animal vs non-animal). A complete list of all items can be found in Chen et al., 2016. Living and nonliving stimuli were matched on age of acquisition, visual complexity, familiarity and word frequency, and had high name agreement. Independent-sample t-tests did not reveal any significant differences between living and nonliving items for any of these variables.
 
@@ -200,11 +376,11 @@ To assess whether animal / non-animal stimuli differed systematically in their n
 
 Participants were presented with stimuli on a PC screen and asked to name each item as quickly and accurately as possible. All stimuli were presented once in a random order in each session and repeated over four sessions in the entire experiment. The responses of participants were monitored by video recording. Each trial was time-locked to the picture onset using in-house MATLAB scripts (version 2010 a, Mathworks, Natick, MA). Stimuli were presented for 5 seconds each and each session lasted 8 minutes 20 seconds. Participants’ mean naming time was 1190 ms. Responses and eye fixation were monitored by video recording.
 
-## Data preprocessing
+#### Data preprocessing
 
 Data preprocessing was performed in MATLAB. Raw data were recorded at sampling rate of 1000 Hz for six patients and at 2000 Hz for two patients. The higher sampling rates for the two patients were down-sampled to 1000 Hz by averaging measurements from each successive pair of time-points. The raw data from the target subdural electrodes for the subsequent analysis were measured in reference to the electrode beneath the galea aponeurotica in four patients (Patients 4,5,7 and 10) and to the scalp electrode on the mastoid process contralateral to the side of electrode implantation in four patients (Patients 1–3 and 9). Multivariate pattern-classification analyses were also conducted without such referencing and yielded near-identical results. Baseline correction was performed by subtracting the mean pre-stimulus baseline amplitude (200 ms before picture onset) from all data points in the epochs. Trials with greater than±500 µV maximum amplitude were rejected as artifacts. Visual inspection of all raw trials was conducted to reject any further trials contaminated by artifacts, including canonical interictal epileptiform discharges. The mean waveform for each stimulus was computed across repetitions. Data included, for each stimulus at each electrode, all measurements beginning at stimulus onset and continuing for 1640 ms. While this window includes the onset of articulation toward the end, the critical results cannot reflect such motor activity since all key phenomena are observed prior to mean time to initiate the utterance (1190 ms).
 
-## Multivariate classification analysis
+#### Multivariate classification analysis
 
 The pre-processed data yielded, for each electrode in each patient, a times-series of voltages sampled at 1000 Hz over 1640 ms for each of 100 stimuli. For each patient, we trained classifiers to discriminate animal from non-animal images given the voltages evoked by each stimulus across all ventral-temporal electrodes in a 50 ms time-window. In a patient with 20 electrodes, one 50 ms window contains 1,000 measurements (50 voltages for each electrode x 20 electrodes). For each time window in every patient, these measurements were concatenated into feature vectors for each of the 100 stimuli, with the time windows advancing along the time-series in 10 ms steps. Thus, the first window included 1–50 ms post stimulus onset, the next included 11–60 ms, and so on. This procedure yielded feature vectors for all 100 items in 160 time-windows for every subject.
 
@@ -218,11 +394,11 @@ To better visualize how the code exploited by each classifier changes over time,
 
 To assess the breadth of time over which a cluster showed reliable above-chance classification accuracy, we again set Bonferroni-corrected significance thresholds using the binomial distribution. Stimuli included 100 items, with a.5 probability of each item depicting an animal. In the 1640ms measurement period there are 32 independent (i.e. non-overlapping) 50 ms time windows, and we assessed the mean classifier performance for each of 10 clusters at every window. We therefore corrected for 320 multiple comparisons using a significance threshold of 68 correct (p < 0.0001 per comparison, p < 0.03 with correction; this is the lowest number correct that yield a corrected p value less than 0.05).
 
-## Surface plot visualization
+#### Surface plot visualization
 
 Magnetization-prepared rapid gradient-echo (MPRAGE) volumetric scan was performed before and after implantation of subdural electrodes as a part of presurgical evaluations. In the volumetric scan taken after implantation, the location of each electrode was identified on the 2D slices using its signal void due to the property of platinum alloy. Electrodes were non-linearly co-registered to the patient MRI (MPRAGE) taken before implantation, and then to MNI standard space (ICBM-152) using FNIRT (https://www.fmrib.ox.ac.uk/fsl/fnirt/). The native coordinates of all the electrodes for all patients were morphed into MNI space and resampled into 2 mm isotropic voxels55.
 
-## Projecting classifier coefficients to the surface
+#### Projecting classifier coefficients to the surface
 
 As described above, a separate logistic classifier was fitted to each 50 ms window in each subject. The classifier was specified as a set of regression coefficients, with one coefficient for each timepoint at each electrode in the patient, and many coefficients set to 0 due to L1-regularization. The sign of the classifier coefficient indicates the ‘meaning’ of a oltage deflection in a particular direction: a positive coefficient indicates that animals are ‘signaled’ by a positive deflection in the voltage, while negative coefficients indicate that animals are signaled by a negative deflection. The magnitude of the coefficient indicates the ‘importance’ of the measurement, in the context of all other voltages appearing in the classifier. The distribution of coefficient directions and magnitudes across the cortex and over time thus provides an indication of how the underlying neuro-semantic code changes over time.
 

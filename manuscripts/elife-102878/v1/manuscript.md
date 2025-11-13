@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Neurosciences Graduate Program, University of California, San Diego La Jolla United States
-2. https://ror.org/0168r3w48 Department of Cognitive Science, University of California, San Diego La Jolla United States
-3. https://ror.org/0168r3w48 Halıcıoğlu Data Science Institute, University of California, San Diego La Jolla United States
-4. https://ror.org/0168r3w48 Kavli Institute for Brain and Mind, University of California, San Diego La Jolla United States
+1. Neurosciences Graduate Program, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Department of Cognitive Science, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+3. Halıcıoğlu Data Science Institute, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Kavli Institute for Brain and Mind, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 

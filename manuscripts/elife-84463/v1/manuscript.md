@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/002v40q27 Institut des Neurosciences Paris-Saclay, Université Paris-Saclay, CNRS Saclay France
+1. Institut des Neurosciences Paris-Saclay, Université Paris-Saclay, CNRS Saclay France ([ROR:002v40q27](https://ror.org/002v40q27))
 
 † Corresponding author
 

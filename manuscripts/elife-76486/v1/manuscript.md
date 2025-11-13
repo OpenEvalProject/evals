@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Department of Ecology and Evolution, University of Lausanne Lausanne Switzerland
+1. Department of Ecology and Evolution, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
 2. Inkawu Vervet Project, Mawana Game Reserve KwaZulu Natal South Africa
-3. https://ror.org/04xhy8q59 University of Poitiers Poitiers France
-4. https://ror.org/00pg6eq24 Laboratory of Cognitive & Adaptive Neurosciences, CNRS - UMR 7364, University of Strasbourg Strasbourg France
+3. University of Poitiers Poitiers France ([ROR:04xhy8q59](https://ror.org/04xhy8q59))
+4. Laboratory of Cognitive & Adaptive Neurosciences, CNRS - UMR 7364, University of Strasbourg Strasbourg France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))
 
 † Corresponding author
 
@@ -47,9 +47,149 @@ We refer to the group AK differentially as AK19 and AK20, representing their sta
 
 Across the experiment, a total of 81/164 vervet monkeys in all five groups, learned to successfully extract and eat peanuts during four exposures from each group’s first eating event (Table 1).
 
+**Table 1.**
+ Cumulative numbers of monkeys eating at each exposure in each group, with a total of 81 (of a possible 164) monkeys eating across the whole experiment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="6">Exposure number</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Group</th>
+      <th>Group size</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AK</td>
+      <td>~20</td>
+      <td>0*</td>
+      <td>5**</td>
+      <td>13**</td>
+      <td>17**</td>
+      <td>19**</td>
+      <td>-</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>BD</td>
+      <td>65</td>
+      <td>19</td>
+      <td>25</td>
+      <td>29</td>
+      <td>32</td>
+      <td>-</td>
+      <td>-</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>KB</td>
+      <td>19</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>LT</td>
+      <td>25</td>
+      <td>5</td>
+      <td>13</td>
+      <td>16</td>
+      <td>21</td>
+      <td>-</td>
+      <td>-</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>NH</td>
+      <td>35</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">Grand total =</td>
+      <td>81</td>
+    </tr>
+  </tbody>
+</table>
+
+_NB. *AK in 2019; **AK in 2020._
+
 When presented with the novel food, multiple individuals (2–16 individuals) in all groups (except BD where the knowledgeable immigrant approached the box first and immediately started eating) approached the box, looked at the peanuts, and retreated without touching any (visual inspection; Table 2); and at least one group member (1–7 individuals) approached and handled, sniffed or nibbled the peanuts before rejecting them and retreating from the box (contact inspection; Table 2).
 
-## Who innovated and how did it affect the extent to which the innovation was adopted by the group?
+**Table 2.**
+ Number of individuals in each group that showed each type of response to the peanuts before the innovator or knowledgeable immigrant started eating.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Approach box and leave</th>
+      <th>Contact exploration and rejection</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AK19</td>
+      <td>12</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>AK20</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>BD</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>KB</td>
+      <td>15</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>LT</td>
+      <td>16</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>NH</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Who innovated and how did it affect the extent to which the innovation was adopted by the group?
 
 When tested in 2018, in NH, a naïve immigrant male, Avo, was the third monkey to approach the box, and innovated extracting and eating peanuts during the group’s first exposure to the novel food. In KB a naïve infant male, Aar, was the 16th monkey to approach the box (across all the exposures) and innovated at the group’s third exposure.
 
@@ -61,13 +201,214 @@ During the first exposures to peanuts in BD, LT and NH, when new immigrant males
 
 **Figure 2.:** (A) Shows the proportion of each group that started eating when the first eating event took place. Total numbers of individuals, split by age, are shown below the x-axis. In NH the asterisk highlights the one adult which was the innovator male that left after their first exposure, and was only followed by juveniles learning to extract and eat. (B) Shows the progression in each group over four exposures from the first eating event. Solid squares represent when immigrant males were the first to eat, and the open square shows when the infant was first to eat. Solid lines show when there were adults present who had started to eat, whereas dashed lines show when there were only juveniles and infants present that had already started to eat. Males who were knowledgeable and imported innovations from other groups (Pro in BD and Yan in AK) are excluded from totals in both panels (visualized in Microsoft Excel).
 
-## Socio-demographic variation in uptake of the innovation
+### Socio-demographic variation in uptake of the innovation
 
 Here, we examined whether age, sex, and rank predicted successfully extracting and eating peanuts in the first exposure with an eating event and over the four subsequent exposures. During the first exposure an eating event, we found a significant main effect of age, with juveniles 4.17 times (417%) more likely to extract and eat peanuts than adults, and 5.43 times (543%) more likely than infants, but there was no significant difference between infants and adults (Model 1, Table 3). We did not find any significant effect of rank and sex on extracting and eating peanuts at the first exposure with an eating event. Conditional R2=0.25, meaning that model 1 explains a small amount of variance (Table 4). Maximum variance inflation factor (Max. VIF)=1.23, for the variable Age, suggesting no collinearity and that overfitting is not an issue and the dispersion test was not significant (p=0.60), meaning that data were not over or underdispersed.
 
+**Table 3.**
+ Models outputs for binomial and Poisson generalized linear mixed models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model no.</th>
+      <th>Outcome</th>
+      <th>Predictors*</th>
+      <th>Coefficient</th>
+      <th>Odds ratio</th>
+      <th>SE</th>
+      <th>z- value</th>
+      <th>p-value †</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Eat at first exposure with eating event: yes/no (binomial)N=161</td>
+      <td>Age: Infant – Adult ‡Juvenile – Adult ‡Juvenile – Infant ‡Sex (M)Standardized rank</td>
+      <td>–0.271.431.690.57–1.52</td>
+      <td>-4.175.43--</td>
+      <td>0.650.520.670.420.81</td>
+      <td>–0.412.742.511.36–1.89</td>
+      <td>0.9120.0170.0320.1750.058</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Eat over four exposures from first eating event: yes/no (binomial)N=161</td>
+      <td>Age: Infant – Adult ‡Juvenile – Adult ‡Juvenile – Infant ‡Sex (M)Standardized rank</td>
+      <td>–0.231.681.910.18–2.69</td>
+      <td>-5.396.77-0.07</td>
+      <td>0.550.550.630.410.81</td>
+      <td>–0.423.093.010.45–3.34</td>
+      <td>0.9080.0060.0070.656&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Freq. muzzle contact per individual per exposure(Zero-Inflated Poisson)N=256</td>
+      <td>Exposure no.No. eating (std.)Exposure no.X no. eating</td>
+      <td>–0.75–0.560.40</td>
+      <td>---</td>
+      <td>0.100.210.10</td>
+      <td>–7.20–2.703.92</td>
+      <td>&lt;0.0010.007&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">4</td>
+      <td rowspan="4">Frequency of muzzle contacts initiated (Poisson)N=253</td>
+      <td>Prior knowledge (K)</td>
+      <td>–0.46</td>
+      <td>0.63</td>
+      <td>0.09</td>
+      <td>–5.035</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sex (M)</td>
+      <td>–0.03</td>
+      <td>-</td>
+      <td>0.29</td>
+      <td>–0.11</td>
+      <td>0.911</td>
+    </tr>
+    <tr>
+      <td>Standardized rank</td>
+      <td>–2.54</td>
+      <td>0.08</td>
+      <td>0.57</td>
+      <td>–4.42</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age: Infant – Adult ‡Juvenile – Adult ‡Juvenile – Infant ‡</td>
+      <td>0.391.791.40</td>
+      <td>-6.004.07</td>
+      <td>0.430.360.45</td>
+      <td>0.905.023.09</td>
+      <td>0.635&lt;0.0010.006</td>
+    </tr>
+    <tr>
+      <td rowspan="4">5</td>
+      <td rowspan="4">Frequency targeted by muzzle contacts (Poisson)N=253</td>
+      <td>Prior knowledge (K)</td>
+      <td>1.14</td>
+      <td>3.13</td>
+      <td>0.10</td>
+      <td>11.67</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sex (M)</td>
+      <td>0.88</td>
+      <td>-</td>
+      <td>0.45</td>
+      <td>1.96</td>
+      <td>0.050</td>
+    </tr>
+    <tr>
+      <td>Standardized rank</td>
+      <td>–1.56</td>
+      <td>-</td>
+      <td>0.85</td>
+      <td>–1.84</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>Age: Infant – Adult ‡Juvenile – Adult ‡Juvenile – Infant ‡</td>
+      <td>–3.44–0.522.92</td>
+      <td>0.03-18.6</td>
+      <td>1.030.510.93</td>
+      <td>–3.98–0.943.13</td>
+      <td>&lt;0.0010.6030.005</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Reference categories are Adult, Female, and Naïve for categorical predictors: age, sex, and knowledge, respectively; abbr.: N=naïve; K=knowledgeable; M=male.†Bold italics show significant p-values at 0.05 level.‡Indicates post-hoc multiple comparisons (with Tukey correction)._
+
+**Table 4.**
+ Variance and standard deviation of random effects and marginal and conditional R squared of the five generalized linear mixed models presented in the paper.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Random effects</th>
+      <th>Variance</th>
+      <th>Standard deviation</th>
+      <th>R2 marginal</th>
+      <th>R2 conditional</th>
+      <th>Sample sizes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1Eat at 1st expo w/eating event</td>
+      <td>Group</td>
+      <td>0.42</td>
+      <td>0.65</td>
+      <td>0.14</td>
+      <td>0.24</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>Model 2Eat all expos</td>
+      <td>Group</td>
+      <td>3.21</td>
+      <td>1.79</td>
+      <td>0.12</td>
+      <td>0.55</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Model 3MC rate per ind, per expo</td>
+      <td>Individual</td>
+      <td>&lt;0.001</td>
+      <td>0.91</td>
+      <td rowspan="2">0.55</td>
+      <td rowspan="2">0.91</td>
+      <td rowspan="2">256</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Model 4Freq. MC initiated per ind</td>
+      <td>Individual</td>
+      <td>1.71</td>
+      <td>1.31</td>
+      <td rowspan="2">0.12</td>
+      <td rowspan="2">0.95</td>
+      <td rowspan="2">253</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>3.42</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Model 5Freq. MC received per ind</td>
+      <td>Individual</td>
+      <td>3.73</td>
+      <td>1.93</td>
+      <td rowspan="2">0.28</td>
+      <td rowspan="2">0.98</td>
+      <td rowspan="2">253</td>
+    </tr>
+    <tr>
+      <td>Group</td>
+      <td>1.58</td>
+      <td>1.26</td>
+    </tr>
+  </tbody>
+</table>
+
 Over four exposures from the first eating event, we found a significant main effect of age, with juveniles 5.39 times (539%) more likely to extract and eat peanuts than adults, and 6.77 times (677%) more likely than infants, but no significant difference between infants and adults (Model 2, Table 3). We also found a significant main effect of rank, whereby higher-ranked individuals were more likely to extract and eat peanuts. Specifically, low-ranked individuals were 93% less likely, per unit of standardized rank, than higher-rank individuals to eat. Again, we found no significant effect of sex (Model 2, Table 3). Conditional R2=0.55, meaning that model 2 explains a good amount of variance (Table 4). Max. VIF = 1.30, for the variable Age, suggesting no collinearity and that overfitting is not an and the dispersion test was not significant (p=0.60), meaning that data were not over or underdispersed.
 
-## Muzzle contact rate across repeated exposure to novel food
+### Muzzle contact rate across repeated exposure to novel food
 
 We recorded a total of 498 muzzle contacts initiated by 64 different individuals in all four study groups during the first four exposures from the first eating event.
 
@@ -77,7 +418,7 @@ Regarding the rate of muzzle contacts across exposures, we found a significant i
 
 **Figure 3.:** (A) Variation in muzzle contact rate according to the number of monkeys eating and exposure number. Shading shows 95% CI. (B) Model predictions based on the significant interaction between exposure number and number of monkeys eating. When greater numbers of monkeys are eating (blue) the effect of exposure number is less extreme than when fewer monkeys are eating (red).
 
-## Influence of knowledge of novel food and socio-demographic variation on muzzle contact behavior
+### Influence of knowledge of novel food and socio-demographic variation on muzzle contact behavior
 
 For all individuals present in groups during the experiment, across the four exposures from the first eating event, the mean (s.d.; range) number of muzzle contacts each naïve individual initiated was 2.30 (4.79; 0–26) and they were targeted 0.91 (3.21; 0–22) times; and each knowledgeable individual initiated 2.20 (4.01; 0–26) muzzle contacts and they were targeted 4.81 (11.18; 0–79) times.
 
@@ -89,7 +430,7 @@ Regarding being targets of muzzle contacts, we found significant main effects of
 
 By exposing five groups of wild vervet monkeys to a novel extractive foraging problem, we created conditions under which to (1) observe innovation by individuals, and the uptake of transmission of knowledge within and between groups, and (2) assess the function and patterns of muzzle contact behavior in the context of encountering a novel food. We found evidence of immigrant males as fast innovators, and as potential vectors of information between groups. We observed faster uptake of the innovation in groups when new immigrant males, rather than infants or juveniles, ate first. We found effects of age and rank on uptake of the food, both during the first exposure, and over four exposures, with juveniles and high-rankers eating the novel food more readily than adults and low-rankers. Furthermore, as groups had more exposure to the food, if many monkeys had started to eat peanuts and olfactory contact with novel food increased, the rate of muzzle contacts decreased. Initiating muzzle contacts was influenced by prior knowledge of the food, age, and rank, and being targeted by muzzle contacts was influenced by knowledge and age. Below we discuss the contributions of these results to perspectives on the potential value of dispersing individuals in the innovation and transmission of behavioural adaptations to novel circumstances within populations.
 
-## Who innovated and how did it affect the extent to which the innovation was adopted by the group?
+### Who innovated and how did it affect the extent to which the innovation was adopted by the group?
 
 In the two groups where innovation occurred at the first exposure to peanuts (LT and NH), immigrant males, each with less than three months tenure in the group, were the innovators. In KB, an infant innovated, but only at their group’s third exposure to the novel food. Fast innovation (i.e. at the first exposure) to exploit a novel resource by new immigrants could be linked to a physiological state related to dispersal but we remain cautious here as our N=2. In the first exposure in AK19 there was a relatively new male, Boc (Supplementary file 1), who had immigrated within four months, but he was very old (>12 years old) and had recently become very inactive. Boc disappeared, presumably due to natural death, two months after AK19’s exposure to peanuts. Such characteristics may counteract any effects of recent dispersal on exploratory tendencies. Indeed, very old age has been found to be related to declining boldness – a personality trait related to exploration – in big horn ewes (Réale et al., 2000). In addition, the group did not show sustained interest in the peanuts, and after brief inspections of the contents of the box, started traveling away from the experiment area within 5 min from the start of the experiment.
 
@@ -101,19 +442,19 @@ Alternative explanations for these patterns of uptake, such as group habituation
 
 Moreover, whilst previous experiments suggested that high-ranked adult philopatric females are preferred over high-ranked adult males as models to learn from van de Waal et al., 2010, in the context of exploiting a novel resource, risk dynamics come into play. Adult females are likely to be the most risk-averse age-sex category, due to the great potential negative impact of risks on their inclusive fitness, especially when young dependent offspring are present or whilst pregnant. This might limit their potential to discover new information that others can exploit. Under these conditions, adult males that are either in an exploratory dispersal state, or that enter a group with knowledge of resources previously unknown to the group (as in McDougall et al., 2010) may play important roles in generating and/or facilitating the spread of behavioral adaptations to exploit novel resources and face rapid environmental changes.
 
-## Socio-demographic variation in the uptake of the novel food
+### Socio-demographic variation in the uptake of the novel food
 
 Both, in the first exposure, and over four exposures, juveniles were more likely to eat than adults and infants. These results suggest that juveniles overcome neophobia faster, corresponding closely with results regarding risk-taking in another population of vervet monkeys (Fairbanks, 1993). Furthermore, juvenile vervets have been found to learn faster (Kumpan et al., 2020), and work on other species suggests that juveniles are overall more exploratory and less neophobic than adults (Benson-Amram et al., 2013; Bergman and Kitchen, 2009; Miller et al., 2015; Sherratt and Morand-Ferron, 2018). Taken together we propose that juveniles are, in general, more prone to taking risks around novelty, particularly when conspecifics provide social information. Moreover, alongside the results of section 1 a, we propose that it could be adaptive that groups do not follow novel foraging information from juveniles as readily as adults (i.e. in NH), as this may limit the spread of potentially dangerous information acquired by exploratory but inexperienced juveniles. We also expect that infants were not more likely than adults to eat due to still being at least partly reliant on their mothers to learn their foraging repertoire (Whiten and van de Waal, 2018) in contrast to juveniles who explore more independently.
 
 Over four exposures, higher-ranked individuals were significantly more likely to eat than lower-ranked individuals, probably due to preferential access to the resource as it became more familiar and sought-after.
 
-## Muzzle contact frequency in groups
+### Muzzle contact frequency in groups
 
 Muzzle contact rates decreased over repeated exposure to the novel food, providing some support for our hypothesis that the less muzzle contacts would occur when the food had become more familiar in each group. However, we expected this effect to be greatest when many monkeys were eating. Contrary to this, muzzle contact rates decreased more slowly when more monkeys were eating. This also makes sense, because more monkeys eating means more monkeys were in the area of the novel food, and therefore, there were more opportunities to engage in muzzle contact. The steeper decrease in muzzle contact rate when fewer monkeys were eating also likely reflects that there were more muzzle contacts at the very beginning, when very few monkeys were eating, and the later exposures where very few monkeys were eating also gave rise to fewer opportunities for muzzle contacts. Cases where very few monkeys were eating in later exposures were due to KB and NH, where very few individuals started to eat over the four exposures time frame examined here, and the two exposures in BD (Expo. 4) and LT (Expo. 3) with only small portions of the group present. Nonetheless, the overall decrease in muzzle contact rate demonstrates the relevance of the behavior in the context of an unknown foraging item, because as the monkeys became more familiar with it by eating it, they sought olfactory information from their conspecifics less frequently. This result concurs with findings from a similar study in wild olive baboons (Laidre, 2009). It could be argued that our conclusion regarding muzzle contact serving to acquire information is premature in the absence of evidence that muzzle contact directly led to individuals eating. However, unlike in the context of observing and learning to use novel tools (e.g. Hobaiter et al., 2014), we do not expect muzzle contact to be a prerequisite to learning to extract and eat peanuts. We argue that muzzle contacts need not be correlated with extracting peanuts in such a manner in order to support that they serve to acquire information. We provide further evidence to support this function below (section 2b).
 
 That there were more muzzle contacts when more monkeys were eating could be interpreted that muzzle contacts are provoked by seeing conspecifics consume any food, regardless of its novelty. We have, however, used provisions of corn kernels in experiments for 10 years with this study population, and when presenting monkeys with this now familiar resource, we do not see rates of muzzle contact anywhere close to those observed during the early exposures in this experiment (Rochat, 2022). This is supported by the significant main effect of exposure number (Figure 3).
 
-## Influence of knowledge of novel food and socio-demographic variation on muzzle contact behavior
+### Influence of knowledge of novel food and socio-demographic variation on muzzle contact behavior
 
 Muzzle contacts were initiated the most by individuals that had not yet extracted and eaten peanuts (hereafter, naïve individuals; opposite: knowledgeable), higher-ranked individuals, and juveniles. Contrastingly, muzzle contacts were targeted the most towards knowledgeable individuals, and the least towards infants. We find the most compelling evidence for our hypothesis of the function of muzzle contact in information acquisition in that naïve individuals initiated the most and knowledgeable individuals were targeted the most. We do not make claims related to knowing what others know, but rather we assume that seeing a group member eating an unknown resource prompts the initiation of muzzle contact toward that individual. Moreover, this result corroborates the finding in (2a) of decreasing muzzle contact frequency with increased exposure to and familiarity with the resource, and the overall function of muzzle contact in soliciting foraging information.
 
@@ -121,25 +462,25 @@ The effect of age on initiating muzzle contacts falls in line with the expected 
 
 That high-ranked individuals were more likely to be both initiators and targets is likely because, first, like juveniles, they were far more likely to become knowledgeable, and second, because a high degree of tolerance is required by the target towards the initiator due to the close proximity in which this behavior occurs (as described in Nord et al., 2021). Lower-ranked individuals are not tolerated at the close proximity required to initiate muzzle contacts, especially around food resources; and they were much less likely to become knowledgeable, likely reducing their salience as targets.
 
-## Conclusion
+### Conclusion
 
 We add to the literature an experimental example of exploitation of a novel resource by multiple groups, facilitated here by dispersers. Our results provide evidence that dispersing individuals may promote the generation of new, environmentally relevant information and its spread around populations – a factor that has been largely overlooked, despite the known role of dispersal in gene flow (Greenwood, 1980). We urge future research to investigate what physiological mechanisms might exist underpinning a transitory dispersal syndrome characterized by heightened exploration and reduced neophobia that is triggered during, or triggers, dispersal. We studied a species with sex-biased dispersal and we open up the question of whether similar dynamics as suggested here might be at play in species where both sexes disperse, and whether dispersing females and males show similar levels of boldness during dispersal or not, due to different life-time risk mitigation strategies. Finally, we suggest further research, in diverse species, into whether dispersers transmit valuable information between groups, which can have major implications for population fitness, especially in the context of the rapid anthropogenic change that most animal populations now face. This study contributes novel insights into the roles of dispersers in wider behavioral ecology, which we hope will inspire and inform future work, spanning the disciplines of animal behavior and cultural evolution.
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 The study was conducted at the ‘Inkawu Vervet Project’ (IVP) in a 12000-hectares private game reserve: Mawana (28°00.327 S, 031°12.348E) in KwaZulu Natal province, South Africa. The biome of the study site is described in Bono et al., 2018.
 
 Five groups of habituated wild vervet monkeys (Chlorocebus pygerythrus) took part in the study: ‘Ankhase (AK)’, ‘Baie Dankie (BD)’, ‘Kubu (KB)’, ‘Lemon Tree (LT)’, and ‘Noha (NH)’. Habituation began in 2010 in AK, BD, LT and NH, and in 2013 in KB. All observers in the field were trained to identify individuals by individual bodily and facial features (eye rings, scars, color, shape etc.). During the study period, these stable groups comprised between 19 and 65 individuals including infants (Table 1). We refer to the group AK differentially as AK19 and AK20, representing their status in 2019 and 2020, respectively, as 40% of the group composition changed between years due to dispersals, deaths, and changes in age categories (infants that became juveniles; see Supplementary file 1a).
 
-## Dominance rank calculations
+### Dominance rank calculations
 
 Agonistic interactions (aggressor behavior: stare, chase, attack, hit, bite, take place; victim behavior: retreat, flee, leave, avoid, jump aside) were collected ad libitum (Altmann, 1974) on all adults and juveniles of each group. These data were collected for a duration of one year, up until the date of each group’s first exposure, during all behavioral observation hours and during experiments involving food provisions. Data were collected by CC, PD, and different trained observers from the IVP team. Before beginning data collection, observers had to pass an inter-observer reliability test with Cohen’s kappa >0.80 McHugh, 2012 for each data category between two observers. Data were collected on handheld computers (Palm Zire 22) using Pendragon software version 5.1 and, from the end of August 2017, on tablets (Vodacom Smart Table 2) and smartphones (Runbo F1) equipped with the Pendragon version 8.
 
 Individual ranks were calculated using the I&SI method (de VRIES, 1998), based on win/lose outcomes of dyadic agonistic interactions, using Socprog software version 2.7. Linearity of hierarchies are reported in Supplementary file 1b. Ranks were standardized to represent the proportion of the group that outranks each individual, falling between 0 (highest) and 1 (lowest) in each group (rank – 1/group size). Agonistic data on adults and juveniles were included, and we assigned infants with the rank just below their mother, based on the youngest offspring ascendency in this species (Cheney and Seyfarth, 1990).
 
-## Peanut exposures
+### Peanut exposures
 
 We provided each group with a highly nutritious novel food that required extraction before consumption – unshelled peanuts (Figure 1A) – in large quantities to avoid monopolization by single individuals. Experiments took place after sunrise when the monkeys were located at their sleeping site during the dry, food-scarce South African winter, to maximize both the motivation to engage in food-rewarded experiments and the number of group members in the vicinity.
 
@@ -149,9 +490,9 @@ Peanuts were presented to all groups in clear rectangular plastic boxes (34 × 1
 
 Reactions to and interactions with peanuts were recorded by three to five observers using handheld JVC video cameras (EverioR Quad Proof GZ-R430BE) and cameras mounted on a tripod. Observers narrated the identities of monkeys interacting with peanuts for later video coding.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Video coding
+#### Video coding
 
 To extract the identities of individuals who successfully extracted and ate peanuts from their shells during each exposure, PD-coded videos of AK19-20, BD, and LT with the Windows 10 default video software, and CC-coded videos of KB and NH with Media Player Classic Home Cinema software version 1.7.11. Having extensive experience working in the field with these groups, PD and CC were proficient in recognizing individuals from the videos, and often the identities were narrated live in the audio of the video recordings which provided additional assurance of accuracy.
 
@@ -159,21 +500,76 @@ For analyses of muzzle contacts, GL and PD counted the frequency of muzzle conta
 
 To test interobserver reliability, PD recorded 15% of all videos in the study that were originally coded by CC, to verify agreement on what each coded as ‘successful extracting and eating,’ and achieved a Cohen’s kappa of 0.96. PD also recorded 10% of the videos of the study that were originally coded by GL to verify agreement on what constituted muzzle contact interactions, and achieved a Cohen’s kappa of 0.98.
 
-## Data analysis
+### Data analysis
 
-## Who innovated and how did it affect the extent to which the innovation was adopted by the group?
+#### Who innovated and how did it affect the extent to which the innovation was adopted by the group?
 
 We did not formally analyze these data, we only described who innovated and which individuals began to consume the novel food in each group.
 
-## Demographic variation in the uptake of the novel food
+#### Demographic variation in the uptake of the novel food
 
 We used two generalized linear mixed models (GLMMs) for data following a binomial distribution to investigate demographic variation in whether or not individuals extracted and ate peanuts (question 2b). The first model investigated (i) the first exposure with an eating event (AK20, BD, KB, LT & NH; Model 1; Table 5), and the second model investigated (ii) four exposures from the first eating event (AK-20, BD, KB, LT & NH; Model 2; Table 5). In each model, the outcome was a binomial yes/no variable (did the individual eat), we considered age, sex, and rank (standardized rank) as fixed effects and the group was included as a random effect. Males that dispersed between groups were only considered in their first group in this analysis, so all individuals were only considered once in these models. Effect sizes are reported as odds ratios. Here and in all subsequent models, we inspected Q-Q plots and residual deviation plots, and tested for over-/underdispersion using the DHARMa R package (Hartig, 2022) to assess model suitability.
 
-## Rate of muzzle contact over repeated exposure to the novel food
+**Table 5.**
+ Model structures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Distribution</th>
+      <th>Outcome</th>
+      <th>Fixed effects</th>
+      <th>Random effects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model 1Eat at 1st expo w/eating event</td>
+      <td>Binomial</td>
+      <td>Eat: Yes / No</td>
+      <td>Age (adult/juv./infant)Sex (F/M)Rank*</td>
+      <td>Group</td>
+    </tr>
+    <tr>
+      <td>Model 2Eat all expos</td>
+      <td>Binomial</td>
+      <td>Eat: Yes / No</td>
+      <td>Age (adult/juv./infant)Sex (F/M)Rank*</td>
+      <td>Group</td>
+    </tr>
+    <tr>
+      <td>Model 3MC rate per ind, per expo</td>
+      <td>Zero-inflated Poisson</td>
+      <td>Freq. initiated</td>
+      <td>Exposure number (1-4)No. monkeys eating (z-score)Duration of exposure (mins.; offset)</td>
+      <td>GroupIndividual</td>
+    </tr>
+    <tr>
+      <td>Model 4Freq. MC initiated per ind</td>
+      <td>Poisson</td>
+      <td>Freq. initiated</td>
+      <td>Prior success (1/0)Age (adult/juv./infant)Sex (F/M)Rank*Total exposure duration per ind. (mins.; offset)</td>
+      <td>GroupIndividual</td>
+    </tr>
+    <tr>
+      <td>Model 5Freq. MC received per ind</td>
+      <td>Poisson</td>
+      <td>Freq. received</td>
+      <td>Prior success (1/0)Age (adult/juv./infant)Sex (F/M)Rank*Total exposure duration per ind. (mins.; offset)</td>
+      <td>GroupIndividual</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Dominance rank calculated with I&SI method, and standardized between 0 (high rank) –1 (low rank) – see Methods for more details._
+
+#### Rate of muzzle contact over repeated exposure to the novel food
 
 To investigate the effect of exposure to the novel food on muzzle contact rate, we looked at four exposures from the first eating event for each group, as this event marks when at least one member of the group had recognized the novel food as a viable food. We also wanted to account for the number of individuals eating during each exposure, as it was inherent in our hypothesis that muzzle contacts around the novel food would be related to individuals eating it. Specifically, we expected the muzzle contact rate to decrease across exposures when there were many monkeys eating it and, therefore, developing their own knowledge of it, but not if only very few were eating. To test this, we fitted a Zero-Inflated Poisson GLMM (using the glmmTMB function from R package ‘glmmTMB’ Brooks et al., 2017) with a frequency of muzzle contacts initiated by each individual as the outcome variable, exposure number, and the number of monkeys eating during the exposure (z-transformed) as fixed effects, with an interaction between the two, and group and individual as random effects. We included the log of the duration of the experiment as an offset in order to model the rate of muzzle contacts per minute per individual (Model 3; Table 5). Effect sizes are reported as odds ratios. We used the DHARMa R package (Hartig, 2022) to assess model suitability (as above), and to test zero inflation in an initial Poisson GLMM.
 
-## Influence of knowledge of novel food and socio-demographic variation in muzzle contact behavior
+#### Influence of knowledge of novel food and socio-demographic variation in muzzle contact behavior
 
 We wanted to assess which factors influenced individuals’ involvement in muzzle contact interactions. Specifically, we wanted to test hypotheses regarding the function of this behavior in information acquisition, so whether individuals’ prior knowledge of the food was an important factor or not. We expected individuals who had not yet successfully extracted and eaten peanuts to initiate more muzzle contacts, and those who had already successfully extracted and eaten peanuts to be targeted more. In addition, if muzzle contact is involved in information acquisition, as we predicted, we would also expect variation between different age, sex, and rank classes in whether they initiated more or were targeted more in line with our current state of understanding of social learning in this species. To investigate this, we counted how many muzzle contacts each individual of each group was involved in, first separated by whether they were the initiator or target, and further, by whether they were naïve or knowledgeable about the novel food. We then used two GLMMs to analyze (i) what factors influenced initiating muzzle contacts (Model 4), and (ii) what factors influenced being targeted by muzzle contacts (Model 5). Model 4 had the frequency of initiating as the outcome variable, with prior knowledge, age, sex, and standardized rank as predictors, and individual and group as random effects (Table 5). Model 5 had the frequency of being targeted as the outcome variable, with prior knowledge, age, sex, and standardized rank as predictors, and individual and group as random effects (Table 5). In both of these models, the log of each group’s total duration (minutes) of exposure to peanuts was used as the offset, and effect sizes for both of these models were assessed as odds ratios.
 

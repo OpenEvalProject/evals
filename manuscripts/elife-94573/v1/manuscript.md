@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02qg15b79 Marine Climate Change Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan
-2. https://ror.org/04gsp2c11 Centre for Sustainable Tropical Fisheries and Aquaculture, College of Science and Engineering, James Cook University Townsville Australia
-3. https://ror.org/02qg15b79 Computational Neuroethology Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan
-4. https://ror.org/02qg15b79 Marine Eco-Evo-Devo Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan
-5. https://ror.org/048evbw70 Marine Research Station, Institute of Cellular and Organismic Biology, Academia Sinica Jiau Shi Taiwan
-6. https://ror.org/04gsp2c11 Australian Research Council Centre of Excellence for Coral Reef Studies, James Cook University Townsville Australia
+1. Marine Climate Change Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
+2. Centre for Sustainable Tropical Fisheries and Aquaculture, College of Science and Engineering, James Cook University Townsville Australia ([ROR:04gsp2c11](https://ror.org/04gsp2c11))
+3. Computational Neuroethology Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
+4. Marine Eco-Evo-Devo Unit, Okinawa Institute of Science and Technology Graduate University Onna-son Japan ([ROR:02qg15b79](https://ror.org/02qg15b79))
+5. Marine Research Station, Institute of Cellular and Organismic Biology, Academia Sinica Jiau Shi Taiwan ([ROR:048evbw70](https://ror.org/048evbw70))
+6. Australian Research Council Centre of Excellence for Coral Reef Studies, James Cook University Townsville Australia ([ROR:04gsp2c11](https://ror.org/04gsp2c11))
 
 † Corresponding author
 
 ## Abstract
 
-Most teleost fishes exhibit a biphasic life history with a larval oceanic phase that is transformed into morphologically and physiologically different demersal, benthic, or pelagic juveniles. This process of transformation is characterized by a myriad of hormone-induced changes, during the often abrupt transition between larval and juvenile phases called metamorphosis. Thyroid hormones (TH) are known to be instrumental in triggering and coordinating this transformation but other hormonal systems such as corticoids, might be also involved as it is the case in amphibians. In order to investigate the potential involvement of these two hormonal pathways in marine fish post-embryonic development, we used the Malabar grouper ( Epinephelus malabaricus ) as a model system. We assembled a chromosome-scale genome sequence and conducted a transcriptomic analysis of nine larval developmental stages. We studied the expression patterns of genes involved in TH and corticoid pathways, as well as four biological processes known to be regulated by TH in other teleost species: ossification, pigmentation, visual perception, and metabolism. Surprisingly, we observed an activation of many of the same pathways involved in metamorphosis also at an early stage of the larval development, suggesting an additional implication of these pathways in the formation of early larval features. Overall, our data brings new evidence to the controversial interplay between corticoids and thyroid hormones during metamorphosis as well as, surprisingly, during the early larval development. Further experiments will be needed to investigate the precise role of both pathways during these two distinct periods and whether an early activation of both corticoid and TH pathways occurs in other teleost species.
+Most teleost fishes exhibit a biphasic life history with a larval oceanic phase that is transformed into morphologically and physiologically different demersal, benthic, or pelagic juveniles. This process of transformation is characterized by a myriad of hormone-induced changes, during the often abrupt transition between larval and juvenile phases called metamorphosis. Thyroid hormones (TH) are known to be instrumental in triggering and coordinating this transformation but other hormonal systems such as corticoids, might be also involved as it is the case in amphibians. In order to investigate the potential involvement of these two hormonal pathways in marine fish post-embryonic development, we used the Malabar grouper (Epinephelus malabaricus) as a model system. We assembled a chromosome-scale genome sequence and conducted a transcriptomic analysis of nine larval developmental stages. We studied the expression patterns of genes involved in TH and corticoid pathways, as well as four biological processes known to be regulated by TH in other teleost species: ossification, pigmentation, visual perception, and metabolism. Surprisingly, we observed an activation of many of the same pathways involved in metamorphosis also at an early stage of the larval development, suggesting an additional implication of these pathways in the formation of early larval features. Overall, our data brings new evidence to the controversial interplay between corticoids and thyroid hormones during metamorphosis as well as, surprisingly, during the early larval development. Further experiments will be needed to investigate the precise role of both pathways during these two distinct periods and whether an early activation of both corticoid and TH pathways occurs in other teleost species.
 
 ## Introduction
 
@@ -45,21 +45,428 @@ In order to gain insight into the molecular pathways involved in grouper larval 
 
 ## Results and discussion
 
-## Genome assembly, phasing, scaffolding, and annotation
+### Genome assembly, phasing, scaffolding, and annotation
 
 A total of 46 Gbp of PacBio HiFi reads (~43 X coverage, Table 1) were assembled into a fully haplotype phased genome of the Malabar grouper (Epinephelus malabaricus) with the primary phase consisting of 298 contigs across 1.09 Gbp genome length, a contig N50 of 7.4 Mbp, and a genome level BUSCO completeness of 93.6% with 1.3% duplication (Table 2). The raw assembly was further scaffolded by Phase Genomics using HiC data, resulting in a 1.03 Gbp assembly across 24 pseudo-chromosomes (Table 2). The scaffolded pseudo-chromosomes ranged from 22.5 Mbp to 50.6 Mbp in size and contained 90.5% of the contigs and 92.8% of the contig length (Figure 1). The gene model annotation resulted in 26,140 protein-coding genes, with a BUSCO completeness of 95.5% and a duplication level of 1.3%. The final GC content was 41.3% and the assembly contained 56.4% repeat regions overall, which were mainly made up of DNA transposons (28.9%), followed by LINEs (5.3%), and LTR elements (2.2%) (Table 3). The genome length, GC content, repeat content, number of gene models, and BUSCO values are similar to other published chromosome-level grouper genomes, for example Epinephelus lanceolatus (Zhou et al., 2019), E. akaara (Ge et al., 2019), and E. moara (Zhou et al., 2021).
+
+**Table 1.**
+ PacBio HiFi data generated for E. malabaricus genome assembly based on three SMRT cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SMRT cell 1</th>
+      <th>SMRT cell 2</th>
+      <th>SMRT cell 3</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>≥Q20 Reads</td>
+      <td>322,103</td>
+      <td>442,205</td>
+      <td>1,373,662</td>
+      <td>2,137,970</td>
+    </tr>
+    <tr>
+      <td>≥Q20 Yield (bp)</td>
+      <td>8,468,697,810</td>
+      <td>11,690,872,687</td>
+      <td>26,355,056,210</td>
+      <td>46,514,626,707</td>
+    </tr>
+    <tr>
+      <td>≥Q20 Read Length(mean, bp)</td>
+      <td>26,291</td>
+      <td>26,437</td>
+      <td>19,185</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Statistics of the Epinephelus malabaricus chromosome-scale genome assembly, scaffolding and gene annotation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Contig assembly size</th>
+      <th>1,092,599,927 bp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of contigs</td>
+      <td>298</td>
+    </tr>
+    <tr>
+      <td>Contig N50</td>
+      <td>7,396,124 bp</td>
+    </tr>
+    <tr>
+      <td>Largest contig</td>
+      <td>26,202,351 bp</td>
+    </tr>
+    <tr>
+      <td>Mean base-level coverage PacBio HiFi</td>
+      <td>43 X</td>
+    </tr>
+    <tr>
+      <td>Contig length contained in scaffolds</td>
+      <td>92.8%</td>
+    </tr>
+    <tr>
+      <td>Contigs contained in scaffolds</td>
+      <td>90.5%</td>
+    </tr>
+    <tr>
+      <td>Scaffolded assembly size</td>
+      <td>1,027,628,325 bp</td>
+    </tr>
+    <tr>
+      <td>Number of scaffolds</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Scaffold N50</td>
+      <td>43,313,630 bp</td>
+    </tr>
+    <tr>
+      <td>Largest Scaffold</td>
+      <td>50,623,973 bp</td>
+    </tr>
+    <tr>
+      <td>Smallest Scaffold</td>
+      <td>22,540,365 bp</td>
+    </tr>
+    <tr>
+      <td>Non-ATGC characters</td>
+      <td>36,700  bp (0.003%)</td>
+    </tr>
+    <tr>
+      <td>GC contents</td>
+      <td>41.3%</td>
+    </tr>
+    <tr>
+      <td>Genome: BUSCO completeness</td>
+      <td>3,406 (93.6%)</td>
+    </tr>
+    <tr>
+      <td>Genome: Complete and single copy</td>
+      <td>3,359 (92.3%)</td>
+    </tr>
+    <tr>
+      <td>Genome: Complete and duplicated</td>
+      <td>47 (1.3%)</td>
+    </tr>
+    <tr>
+      <td>Genome: Fragmented</td>
+      <td>48 (1.3%)</td>
+    </tr>
+    <tr>
+      <td>Genome: Missing</td>
+      <td>186 (5.1%)</td>
+    </tr>
+    <tr>
+      <td>Number of protein-coding genes</td>
+      <td>26,140</td>
+    </tr>
+    <tr>
+      <td>Average gene length</td>
+      <td>20,718 bp</td>
+    </tr>
+    <tr>
+      <td>Average CDS length</td>
+      <td>1,750 bp</td>
+    </tr>
+    <tr>
+      <td>Average exons per gene</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td>Repeat contents (DFAM)</td>
+      <td>56.4 %</td>
+    </tr>
+    <tr>
+      <td>Number of protein-coding genes</td>
+      <td>26,140</td>
+    </tr>
+    <tr>
+      <td>Gene annotation: BUSCO completeness</td>
+      <td>3476 (95.5%)</td>
+    </tr>
+    <tr>
+      <td>Gene annotation: Complete and single copy</td>
+      <td>3,429 (94.2%)</td>
+    </tr>
+    <tr>
+      <td>Gene annotation: Complete and duplicated</td>
+      <td>47 (1.3%)</td>
+    </tr>
+    <tr>
+      <td>Gene annotation: Fragmented</td>
+      <td>31 (0.9%)</td>
+    </tr>
+    <tr>
+      <td>Gene annotation: Missing</td>
+      <td>133 (3.6%)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Detailed repeat annotation results using the DFAM repeat database.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Total Genome length</th>
+      <th colspan="3">1,027,628,325 bp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bases masked</td>
+      <td colspan="3">579,515,295 bp (56.4 %)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>number of elements</td>
+      <td>length occupied</td>
+      <td>percentage of sequence</td>
+    </tr>
+    <tr>
+      <td>Retroelements</td>
+      <td>660,880</td>
+      <td>123,046,856</td>
+      <td>11.97%</td>
+    </tr>
+    <tr>
+      <td>SINEs:</td>
+      <td>74,049</td>
+      <td>7,798,000</td>
+      <td>0.76%</td>
+    </tr>
+    <tr>
+      <td>Penelope</td>
+      <td>25,476</td>
+      <td>3,705,071</td>
+      <td>0.36%</td>
+    </tr>
+    <tr>
+      <td>LINEs:</td>
+      <td>422,597</td>
+      <td>86,199,668</td>
+      <td>8.39%</td>
+    </tr>
+    <tr>
+      <td>CRE/SLACS</td>
+      <td>1</td>
+      <td>100</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>L2/CR1/Rex</td>
+      <td>266,320</td>
+      <td>53,565,106</td>
+      <td>5.21%</td>
+    </tr>
+    <tr>
+      <td>R1/LOA/Jockey</td>
+      <td>10,918</td>
+      <td>2,170,694</td>
+      <td>0.21%</td>
+    </tr>
+    <tr>
+      <td>R2/R4/NeSL</td>
+      <td>11,286</td>
+      <td>3,660,204</td>
+      <td>0.36%</td>
+    </tr>
+    <tr>
+      <td>RTE/Bov-B</td>
+      <td>47,451</td>
+      <td>10,563,888</td>
+      <td>1.03%</td>
+    </tr>
+    <tr>
+      <td>L1/CIN4</td>
+      <td>35,250</td>
+      <td>8,411,019</td>
+      <td>0.82%</td>
+    </tr>
+    <tr>
+      <td>LTR elements:</td>
+      <td>164,234</td>
+      <td>29,049,188</td>
+      <td>2.83%</td>
+    </tr>
+    <tr>
+      <td>BEL/Pao</td>
+      <td>10,186</td>
+      <td>2,183,697</td>
+      <td>0.21%</td>
+    </tr>
+    <tr>
+      <td>Ty1/Copia</td>
+      <td>4,658</td>
+      <td>823,228</td>
+      <td>0.08%</td>
+    </tr>
+    <tr>
+      <td>Gypsy/DIRS1</td>
+      <td>76,319</td>
+      <td>13,796,105</td>
+      <td>1.34%</td>
+    </tr>
+    <tr>
+      <td>Retroviral</td>
+      <td>32,317</td>
+      <td>5,441,530</td>
+      <td>0.53%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA transposons</td>
+      <td>1,604,009</td>
+      <td>296,558,272</td>
+      <td>28.86%</td>
+    </tr>
+    <tr>
+      <td>hobo-Activator</td>
+      <td>799,713</td>
+      <td>138,795,609</td>
+      <td>13.51%</td>
+    </tr>
+    <tr>
+      <td>Tc1-IS630-Pogo</td>
+      <td>138,975</td>
+      <td>24,805,298</td>
+      <td>2.41%</td>
+    </tr>
+    <tr>
+      <td>PiggyBac</td>
+      <td>22,605</td>
+      <td>3,909,912</td>
+      <td>0.38%</td>
+    </tr>
+    <tr>
+      <td>Tourist/Harbinger</td>
+      <td>161,216</td>
+      <td>38,134,353</td>
+      <td>3.71%</td>
+    </tr>
+    <tr>
+      <td>Other (Mirage, P-element, Transib)</td>
+      <td>52,802</td>
+      <td>10,665,183</td>
+      <td>1.04%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rolling-circles</td>
+      <td>101,574</td>
+      <td>30,491,612</td>
+      <td>2.97%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unclassified:</td>
+      <td>669,818</td>
+      <td>111,877,701</td>
+      <td>10.89%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total interspersed repeats:</td>
+      <td></td>
+      <td>531,482,829</td>
+      <td>51.72%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Small RNA:</td>
+      <td>26,405</td>
+      <td>2,780,064</td>
+      <td>0.27%</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Satellites:</td>
+      <td>11,580</td>
+      <td>2,523,082</td>
+      <td>0.25%</td>
+    </tr>
+    <tr>
+      <td>Simple repeats:</td>
+      <td>277,904</td>
+      <td>12,099,447</td>
+      <td>1.18%</td>
+    </tr>
+    <tr>
+      <td>Low complexity:</td>
+      <td>29,110</td>
+      <td>1,563,810</td>
+      <td>0.15%</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig1-v1.jpg)
 
 **Figure 1.:** E. malabaricus genome contig contact matrix using Hi-C data. The color bar indicates contact density from dark red (high) to white (low).
 
-## General transcriptomic results
+### General transcriptomic results
 
 Transcriptomic analysis of E. malabaricus larval development was performed on grouper larvae raised in the Okinawa Prefectural Sea Farming Center. An average of 77.1 M reads were obtained per sample (pooled or individual entire larvae), which after quality control and mapping resulted in an average of 65.8 M uniquely mapped reads (85.6%) per sample for differential gene analysis. Sampled larvae from one day to two months old were sorted according to their morphology allowing us to sequence nine developmental stages (D01, D03, D06, D10, D13, D18, D32, D60, Juvenile) (Table 2). Principal component analysis (PCA) performed on all genes allowed to distinguish between three distinct groups: early developmental phase (composed of D01), intermediate developmental phase (composed of D03, D06, D10, D13, and D18) and late developmental phase (composed of D32, D60, and Juvenile) (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig2-v1.jpg)
+
+**Figure 2.:** (A) Principal component analysis of different larval stages using variance stabilizing transformed complete transcriptome. (B) Cluster analysis using the coseq R package, focusing on genes that are upregulated on days 3 and/or 32. The number of genes in each cluster are shown above each graph. Adjusted p-values and functional annotations for the four gene clusters in this figure can be found in ource data 2. Gene expression data was generated from whole larvae.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Cluster analysis of differentially expressed genes n=22,135, likelihood ratio test (LRT) analysis (full model: design = ~dph, reduced model: reduced = ~1, adjusted p-value threshold: 0.001). Genes contained in clusters: (1) 925, (2) 382, (3) 548, (4) 1193, (5) 804, (6) 1503, (7) 2025, (8) 786, (9) 2399, (10) 570, (11) 801, (12) 1141, (13) 2439, (14) 1471, (15) 681, (16) 1702, (17) 2765.
+
 The analysis of upregulated genes during this post-embryonic development series revealed two major peaks of gene expression that underlie the clusters of regulated genes. Indeed, the cluster analysis shows 2651 genes upregulated on D03 and to a lesser degree on D32 (clusters 1 and 2), 1515 genes upregulated on D32 (cluster 3), and 785 genes upregulated on D32 and to a lesser degree on D03 (cluster 4) (Figure 2B). Unsurprisingly, these two transitions, D01 to D03 and D18 to D32, also show the highest number of differentially expressed genes with 14,830 genes (7151 up, 7,679 down) between D01 and D03, and 10,774 genes (5320 up and 5454 down) between D18 and D32 (Supplementary file 1). This suggests that there are two major events occurring in terms of gene expression: one early on, at day 3, and one later around day 32. This last event corresponds to the separation between the intermediate and late developmental phases and is concomitant with the regression of the elongated spines, an overall change of shape, and progression of the pigmentation. In other grouper species, the regression of the elongated spines corresponds to the onset of metamorphosis and is associated with an increase in TH levels (de Jesus et al., 1998). However, the very early event is more striking as such a global gene expression change very early on has, to our knowledge, never been reported in other teleost fish species.
 
-## Two periods of activation of the TH signaling pathway during grouper post-embryonic development
+### Two periods of activation of the TH signaling pathway during grouper post-embryonic development
 
 We investigated the expression patterns of key genes involved in the hypothalamo-pituitary-thyroid axis (tshb, trhr1a, trhr1a-like, trhr1b, trhr2) as well as in TH synthesis (tg, tpo, nis), TH metabolism (dio1, dio2, dio3), and finally the genes encoding thyroid hormone receptors (trα, trαβ, trβ). These genes all play important roles in the regulation of TH levels and TH signaling in the body and understanding their expression patterns during larval development can illuminate the underlying mechanisms that drive this process.
 
@@ -67,19 +474,19 @@ The gene encoding the pituitary thyroid stimulating hormone (tshb) is strongly e
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig3-v1.jpg)
 
-**Figure 3.:** E. malabaricus.(A) TRH: thyroid releasing hormone, TSH: thyroid stimulating hormone. (B), DUOX: dual oxidase, TG: thyroglobulin, TPO: thyroperoxidase, SIS: sodium iodine symporter. (C) DIO: deiodinase. (D) TR: thyroid hormone receptor. Colored lines join the average values of each stage. Biochemical pathways adapted from Roux et al., 2023. (E) T4 and T3 levels (in ng/g of larvae) during early larval development. Three biological replicates consisting of pooled larvae were analysed at each stage (D01 n = 120 larvae per replicate, D03 n = 120 larvae per replicate, D06 n = 60 larvae per replicate, D10 n = 40 larvae per replicate). # indicates that the value is below the quantification limit, and different letters indicate significant differences <0.05 (one-way ANOVA followed by a Tukey HSD test for T4 levels only as no significant differences were observed after ANOVA for T3 levels). Gene expression data was generated from whole fish. Expression levels were derived from DESeq2 normalized gene counts.Figure 3—source data 1.
+**Figure 3.:** (A) TRH: thyroid releasing hormone, TSH: thyroid stimulating hormone. (B), DUOX: dual oxidase, TG: thyroglobulin, TPO: thyroperoxidase, SIS: sodium iodine symporter. (C) DIO: deiodinase. (D) TR: thyroid hormone receptor. Colored lines join the average values of each stage. Biochemical pathways adapted from Roux et al., 2023. (E) T4 and T3 levels (in ng/g of larvae) during early larval development. Three biological replicates consisting of pooled larvae were analysed at each stage (D01 n = 120 larvae per replicate, D03 n = 120 larvae per replicate, D06 n = 60 larvae per replicate, D10 n = 40 larvae per replicate). # indicates that the value is below the quantification limit, and different letters indicate significant differences <0.05 (one-way ANOVA followed by a Tukey HSD test for T4 levels only as no significant differences were observed after ANOVA for T3 levels). Gene expression data was generated from whole fish. Expression levels were derived from DESeq2 normalized gene counts.
 
 These results suggest the activation of the TH axis around D32, which coincides with the regression of the elongated appendages (second dorsal spine and pelvic spines) and the appearance of the adult-like pigmentation pattern, indicating that metamorphosis in E. malabaricus occurs around D32 in our rearing conditions. These observations are consistent with what has been observed in E. coioides, in which TH levels peak around 40 dph when the pelvic and second dorsal spines regress and adult-like pigmentation pattern formation is ongoing (de Jesus et al., 1998). Interestingly, the high expression levels of tshb, trhr, tg, tpo, sis, dio3, and TRs at the very beginning of development (D01-D03) suggest a precocious activation of TH synthesis, which, to our knowledge, has not been observed in groupers nor in other teleost fishes so far (Figure 3). Measurements of TH levels during these early development stages showed an early peak of T4 at D03, confirming the early activation of the TH pathway observed with gene expression patterns (Figure 3E).
 
-## TH involvement in elongate appendage and regression
+### TH involvement in elongate appendage and regression
 
 As mentioned in the introduction, many marine fish larvae present several morphological features that improve larval survival rates during their pelagic phase (Miller and Kendall, 2019). This is what we observe in grouper with the formation of elongated spines of the dorsal and pelvic fins that are supposed to have a defensive function (Kawabe and Kohno, 2009; Cunha et al., 2013; Leu et al., 2005). These spines then regress while adult-like pigmentation pattern appears and TH surge corresponding to the TH-regulated metamorphosis. It is well known that during fish larval development genes involved in ossification are under the controls of TH. In zebrafish, TH control the proper morphogenesis and ossification in the majority of the bones, during post-embryonic development and metamorphosis (Keer et al., 2019). This is why we investigated the expression changes of some of these genes in E. malabaricus. Interestingly, we observed, once again, two surges in the expression of the following genes: bone gamma-carboxyglutamate (bglap), periostin (postnb), and phosphate-regulating endopeptidase (phex), three key genes implicated in the mineralization of tissues. The first at D13 following the early surge in TH signaling genes, and the second starting at D60 (Figure 4A). The first surge of gene expression coincides with the appearance and growth of the dorsal and pelvic elongated spines starting at D10 (Figure 4B, shown by green arrowhead), while the second surge coincides with the regression of these spines, a process known to be regulated by TH in E. coioides (de Jesus et al., 1998). The coincidence of both the growth and the regression of the elongated spines with the activation of the TH pathway in E. malabaricus may suggest that TH may play a role not only in the regression of these spines but also in their formation in this species.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig4-v1.jpg)
 
-**Figure 4.:** E. malabaricus metamorphosis.(A) Expression patterns of key genes involved in the ossification process and known to be regulated by TH in teleosts. Bglap: bone gamma carboxyglutamate protein, mgp: matrix gla protein, postna: periostin a, postnb: periostine b, phex: phosphate regulating endopeptidase homolog X linked. (B) Pictures of E. malabaricus at D03, D10, D32, and D60 illustrate the elongation of the dorsal and pelvic floating spines (green arrow heads at D10 and D32) and their regression (red arrow heads at D60). (C) Expression patterns of genes involved in pigmentation. Three areas of interest were chosen to illustrate the appearance of melanophores (C6 to C8: at the top of the head, C11 to C13: above internal organs, and, C20 to C25: close to the caudal peduncle,) and xanthophores (C7 to C8 at the top of the head, C14 to C16 above internal organs and C26: close to the caudal peduncle). (D) Expression patterns of genes encoding for the rhodopsins (rh1) and the visual cone opsins (rh2A, rh2B, rh2C, opnlw, opnsw1, opnsw2A-1, opnsw2A-2, opnsw2B). Gene expression data was generated from whole fish. Expression levels were derived from DESeq2 normalized gene counts.
+**Figure 4.:** (A) Expression patterns of key genes involved in the ossification process and known to be regulated by TH in teleosts. Bglap: bone gamma carboxyglutamate protein, mgp: matrix gla protein, postna: periostin a, postnb: periostine b, phex: phosphate regulating endopeptidase homolog X linked. (B) Pictures of E. malabaricus at D03, D10, D32, and D60 illustrate the elongation of the dorsal and pelvic floating spines (green arrow heads at D10 and D32) and their regression (red arrow heads at D60). (C) Expression patterns of genes involved in pigmentation. Three areas of interest were chosen to illustrate the appearance of melanophores (C6 to C8: at the top of the head, C11 to C13: above internal organs, and, C20 to C25: close to the caudal peduncle,) and xanthophores (C7 to C8 at the top of the head, C14 to C16 above internal organs and C26: close to the caudal peduncle). (D) Expression patterns of genes encoding for the rhodopsins (rh1) and the visual cone opsins (rh2A, rh2B, rh2C, opnlw, opnsw1, opnsw2A-1, opnsw2A-2, opnsw2B). Gene expression data was generated from whole fish. Expression levels were derived from DESeq2 normalized gene counts.
 
-## Other TH-regulated biological processes are also activated during grouper metamorphosis
+### Other TH-regulated biological processes are also activated during grouper metamorphosis
 
 Pigmentation changes are often the most visible changes in some teleost species such as clownfish (Salis et al., 2021). In grouper, the pigmentation changes are accompanied by the regression of the dorsal and pelvic spines. The acquisition of an adult pigmentation pattern is characterized by the formation of brown and white vertical bars in E. malabaricus (Figure 4C, juvenile stage). To reveal the molecular regulations driving these pigmentation changes, we assessed the expression of key pigmentation genes involved in white (iridophore genes), black (melanophore genes), and yellow (xanthophore genes) pigment cells known to be regulated by TH in zebrafish and clownfish (Salis et al., 2021; Saunders et al., 2019).
 
@@ -89,13 +496,21 @@ During their metamorphosis in the wild, fish larvae also undergo ecological chan
 
 The timing of cone opsin (opnsw2a1, opsnw2a2, and opnlw) expression in E. malabaricus is similar to E. bruneus (Matsumoto and Ishibashi, 2016), but different from E. akaara where opnsw2 is strongly expressed early and then decreases (Kim et al., 2019). However, the expression levels of mid-wavelength opsins and opnlw are similar between E. malabaricus and E. akaara, suggesting their involvement in cone photoreceptor differentiation, while rod photoreceptors differentiate during metamorphosis in E. akaara and E. malabaricus larvae.
 
-## Metamorphosis is accompanied by a metabolic shift
+### Metamorphosis is accompanied by a metabolic shift
 
 Because metamorphosis is known to be energetically demanding and because the ecology of the planktonic larvae and the demersal juveniles are different, we investigated metabolic gene expression. Figure 5 shows the expression profile of the genes encoding for the rate-limiting steps enzymes involved in glycolysis, (phosphofructokinase, pfkma, and pfkmb), and citric acid cycle (citrate synthase, cs; isocitrate dehydrogenase, idh3a; oxoglutarate dehydrogenase complex, ogdhl, dlst2). The expression profile of all the genes associated with these pathways are shown in Figure 5—figure supplement 1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig5-v1.jpg)
+
+**Figure 5.:** (A) Schematization of the metabolic transition occuring during E. malabaricus larval development showing that young larvae rely on aerobic metabolism whereas older larvae rely on anaerobic metabolism. Expression levels of genes involved in glycolysis (pfkma, pfkmb), krebs cycle (idh3, dlstb). Gene expression data was generated from whole fish. Expression levels were derived from DESeq2 normalized gene counts.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94573/elife-94573-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Expression levels of genes involved in glycolysis, lactic fermentation, and citric acid cycle at each developmental stage (D01, D03, D06, D10, D13, D18, D60, J) extracted from transcriptomic data. Enzyme highlighted in red represents rate-limiting steps for each metabolic pathway.
+
 These profiles revealed a clear overall pattern: glycolysis genes are poorly expressed at the very beginning of the larval development while their expression increases throughout the development. This is particularly visible for pfkma which starts to increase from D10 and reaches its highest expression level at D32, likely coinciding with the onset of metamorphosis, and then decreases until the juvenile stage (J) (Figure 5A). The genes involved in the rate-limiting steps of the citric acid cycle (cs, idh3, dlst) are more expressed during early larval stages and then decrease progressively. It is also worth noting that several genes involved in both glycolysis and the TCA cycle are encountering these two peaks of expression during the larval development (gpi1b, aldoaa, gapdh1, pgam1a, pgam1b, pgam2, eno1b, pkma, dlsta, dldh, sdhb, mdh2, Appendix 6). The lactic acid fermentation genes show an increase throughout the larval development with peaks of expression at D18 for ldha and at D03 for ldhc (Figure 5—figure supplement 1). Taken together, these results reveal that at the very beginning of the development larval fish mainly rely on the citric acid cycle for aerobic energy production and then switch progressively to anaerobic energy production via glycolysis and lactic fermentation. This trend is similar to what has been observed in other fish species such as sea bass (Mazurais, 2011; Darias et al., 2008), but contrasts with the situation of other species such as the clownfish (Roux et al., 2023). TH are known to play a role in the regulation of metabolism in mammals (Mullur et al., 2014), so it is likely that a similar regulatory process occurs during the development of E. malabaricus larvae, as it has been recently observed in the development of clownfish larvae (Roux et al., 2023). Larval development and metamorphosis are very sensitive periods during which larvae must face a myriad of challenges: disperse into the open ocean, find food, escape from predators, locate and swim toward a suitable habitat, metamorphose, and settle. All these challenges are highly demanding in terms of energy, it is thus very important for the larvae to properly allocate this energy to ensure the success of these various challenges. The regulation by TH of genes involved in processes such as glycolysis, lactic fermentation, and citric acid cycle might be a way for larvae to tune their energetic source to enhance their survival and the success of metamorphosis.
 
-## Possible involvement of corticoid pathways in grouper larval development
+### Possible involvement of corticoid pathways in grouper larval development
 
 Synergistic action of cortisol and THs has been encountered during flatfish larval development and more specifically during its metamorphosis. However, crosstalk between corticoids and TH pathways have remained poorly investigated during fish post-embryonic development (Moster, 1981). For this reason, we decided to investigate eight key genes genes involved in the Hypothalamo-Pituitary-Interrenal axis: crha, crhb, crhr1a, crhr1b, crhr2, pomc-a1, pomc-a2, pomc-b, mr, gr1, gr2 which encodes, respectively, for the corticotropin-releasing hormone (which stimulates the production of POMC and the stress hormone ACTH), the receptors of the CRH which are involved in the production of the stress-related hormone ACTH the pro-opiomelanocortin A1, A2, and B (precursors of several hormones such as ACTH) and corticoid receptors: mineralocorticoid receptor (MR) and glucocorticoid receptor (GR1&2) (Figure 6) We also scrutinized the expression levels of genes encoding for key proteins involved in corticoid synthesis: star, fdx1, fdx2, fdxr, cyp11a1, hsd3b1, cyp17a1, cyp21a2, cyp11c1, hsd11b1, hsd11b2.
 
@@ -113,40 +528,200 @@ More generally, the fact that the outcome of metamorphosis is very variable from
 
 ## Materials and methods
 
-## Larval husbandry
+### Larval husbandry
 
 This study was conducted in partnership with the Okinawa Prefectural Sea Farming Center, Motobu-cho, Okinawa, Japan. Epinephelus malabaricus larvae and juveniles were obtained from various clutches obtained from natural spawning in 2020, 2021, and 2023. Larvae were reared under natural conditions in 50,000 L of natural sea water in circular tanks. Light exposure duration followed natural daylight hours, salinity (approximately 33–34 ppm), and temperature (approximately 27॰C on average) remained relatively stable as the tanks were constantly renewed with natural seawater. Microalgae (Nannochloropsis sp.) was added from hatching until 15 days post-hatching (dph) to maintain the nutritional value of live-feed organisms and create a green-water environment. Rotifers Brachionus sp. (S type) were enriched with fish oil and distributed twice a day from 1 dph to maintain a concentration of 10 ind/mL until 13 dph. Artemia nauplii were added twice a day from 13 dph to 20 dph. Frozen copepods were given five times a day from 13 dph until 20 dph. Artificial food was given from 20 dph during the daytime by automatic feeding (one distribution every hour).
 
-## Sample collection and tissue collection
+### Sample collection and tissue collection
 
 In order to assemble and functionally annotate the genome, tissues for DNA sequencing and RNA sequencing were collected on September 8, 2020 from two approximately 4-month-old fish sourced from the Okinawa Prefectural Sea Farming Center. The fish were euthanized by cervical dislocation, and immediately dissected. The liver and muscle tissues of one fish were immediately frozen in liquid nitrogen for PacBio HiFi and Hi-C sequencing, respectively. Brain, gill, liver, heart, caudal fin, eye, spleen, stomach, intestine, muscle, skin spinal cord, and spinal nerve tissues were taken from the second fish and stored in RNAlater (ThermoFisher Scientific) for tissue-specific transcriptome sequencing.
 
 For the larval developmental analysis, whole larval and juvenile fish were sampled between April 30, 2021 and June 2, 2021, ranging from 1 day post-hatching (dph) to approximately 2 months (Table 4). A total of four clutches spawned in early and late April were sampled during this period and larvae were collected and sorted according to their morphology allowing us to sequence eight developmental stages. Larvae and juveniles were euthanized in the afternoon (between 13:00 and 15:00) with MS222 solution (200 mg/L, Sigma-A5040) before being placed in RNAlater. Larger fish were cut open for improved RNAlater penetration and samples were kept at 4॰C for 2-8 days before being stored at –20॰C until extraction. Larvae for TH and cortisol measurements were sampled in triplicates between June 17, 2023 and June 26, 2023 at D01 (n=120 per replicate), D03 (n=120 per replicate), D06 (n=60 per replicate), and D10 (n=40 per replicate), as described in Roux et al., 2023 and kept at –80 until analysis. TH and cortisol extraction and measurement were outsourced to ASKA Pharmaceutical Medical Co., Kanagawa, Japan. Detailed protocols can be found in Appendix 1 for TH and Appendix 2 for cortisol.
 
+**Table 4.**
+ Morphological description of the larval and juvenile stages sampled for the transcriptomic analysis.D01: 1 day post hatching (dph), D03: 3 dph, D10: 10 dph, D:13 13–15 dph, D18: 18–20 dph, D32: 32–34 dph, D60: ca. 60 dph, J: ca. 60 dph with juvenile phenotype. NL is “notochord length” for preflexion and flexion larvae, SL is “standard length” for postflexion and older stages, and TL is “total length” for all stages.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Age (dph)</th>
+      <th></th>
+      <th>Timpoint/Stage</th>
+      <th>Morphological description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2.5 mm NL/2.7 mm TL</td>
+      <td>D01</td>
+      <td>Newly hatched larva with a yolk sac; mouth unopened; eyes not pigmented; no pectoral fin</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2.7 mm NL/2.9 mm TL</td>
+      <td>D03</td>
+      <td>Yolk sac remains; the mouth is opened; eyes are pigmented; pectoral fins are formed; large melanophores appear on the ventral cavity and on the second half of the body</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2.9 mm NL/3.1 mm TL</td>
+      <td>D06</td>
+      <td>Yolk sac has been resorbed; dorsal-fin spine starts to form within the fin fold</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>3.8 mm NL/4.0 mm TL</td>
+      <td>D10</td>
+      <td>Embryonic fin fold start differentiating in anal and dorsal fin while second spine of dorsal fin and spines of pelvic fins begin to extend with some melanophores colonizing the tips and xanthophores start covering the ventral cavity</td>
+    </tr>
+    <tr>
+      <td>13–15</td>
+      <td>6.0 mm NL/6.4 mm TL</td>
+      <td>D13</td>
+      <td>Spines of dorsal and pelvic fins grow. First spine of dorsal fin appears, second spine of dorsal fin and spines of pelvic fins become serrated; head spines appear, caudal-fin rays start to form, tip of the notochord begins to flex; xanthophores continue their expansion</td>
+    </tr>
+    <tr>
+      <td>18–20</td>
+      <td>6.8 mm SL/8.3 mm TL</td>
+      <td>D18</td>
+      <td>Notochord post-flexed; hypural bones are formed and in perpendicular position; caudal-fin rays are segmented; soft rays of dorsal and anal fins start to form and both fins start to form their final shape; fin rays are forming on upper part of the pectoral fin; soft rays of pelvic fins began to form; melanophores appeared on the top of the head and on the caudal peduncle</td>
+    </tr>
+    <tr>
+      <td>30–32</td>
+      <td>10.0 mm SL/12.8 mm TL</td>
+      <td>D32</td>
+      <td>Second spine of dorsal fin and spines of pelvic fins start to regress; soft rays in dorsal, anal, and pectoral fins are weakly segmented, caudal fin becomes truncated shape; melanophores are appearing at the basis of dorsal spines and along the notochord, melanophores ventrally on the caudal peduncle disappears; xanthophores start colonizing the caudal peduncle</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>14.7 mm SL/19.1 mm TL</td>
+      <td>D60</td>
+      <td>Second spine of dorsal fin and spines of pelvic finscontinue their regression. Soft rays in pectoral and pelvic fins segmented; caudal-fin rays branched; anterior two bands of melanophores start appearing in some individuals: xanthophores are disappearing from the ventral cavity</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>27.6 mm SL/34.6 mm TL</td>
+      <td>J</td>
+      <td>Juvenile stage; scales cover the body surface; second spine of dorsal fin and spines of pelvic fins fully regressed and became plain without hooks; caudal fin reached its final round shape; adult pigmentation pattern is more visible with alternate light and brownish vertical bands making lateral line system fully visible</td>
+    </tr>
+  </tbody>
+</table>
+
 All sampling conducted in this study was done under the approval of the Animal Care and Use Committee at the Okinawa Institute of Science and Technology Graduate University (approval N°2021–328).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 Genomic DNA was extracted from liver tissue using the NucleoBond HMW DNA extraction kit (Machery-Nagel). Library preparation was carried out with the SMRTbell Express Template Prep Kit 2.0 and SMRTbell Enzyme Cleanup Kit, Sequencing primer v2, Sequel II Binding Kit 2.0, and Sequel II Sequencing Kit 2.0 (Pacific Biosciences). Sequencing was done on a Sequel II System, using three SMRT Cell 8 M flow cells through diffusion loading of 60-100pM library. Hi-C library preparation and sequencing was carried out by Phase Genomics from muscle tissue using the Phase Genomics Proximo Animal Kit v3.0 and sequenced on a Illumina HiSeq 4000 with 150 bp PE.
 
-## RNA extraction and sequencing
+### RNA extraction and sequencing
 
 For the functional genome annotation, tissue samples were homogenized using a Kinematica Polytron PT1200E Homogenizer and RNA was extracted using the Maxwell RSC simply RNA Tissue Kit (Promega: AS1340). Individually barcoded IsoSeq Express libraries of all 13 tissues were prepared by the OIST Sequencing Section using the SMRTbell Express Template Prep Kit 2.0. The libraries were sequenced on a PacBio Sequel 2 across two SMRT Cell 8 M flow cells.
 
 For the developmental transcriptomic analysis, samples from 1 to 32 dph were homogenized in thioglycerol using metal beads lysing matrix tubes (MPB) in an automated homogenizer (FastPrep-24 5 G MPB). Bigger samples (60 dph and juveniles) were manually homogenized in thioglycerol using 14 mL round bottom tubes and a tissue grinder (Tissue Ruptor II, Qiagen). Samples from 1 and 3 dph consisted of pools of three larvae in triplicates, while all remaining timepoints consisted of triplicates of single individuals. RNA extraction was then carried out as for the tissue samples using the Maxwell RSC simply RNA Tissue Kit (Promega: AS1340). Library preparation was carried out at the OIST Sequencing Section using the NEBNext Ultra II Directional RNA Library Prep Kit. The final pooled library was then split into two Illumina Nova Seq SP flowcells for sequencing with 150 bp PE reads.
 
-## Genome assembly, scaffolding, and phasing
+### Genome assembly, scaffolding, and phasing
 
 The genome assembly was carried out using unprocessed PacBio HiFi reads with the diploid aware Improved Phased Assembler (https://github.com/PacificBiosciences/pbipa; Sović and Kronenberg, 2020) using default parameters, which resulted in a primary and alternative phase genome. The two-phased genomes were assessed using purge_haplotigs (Roach et al., 2018) using default parameters to generate a genome-wide read-depth histogram; however, no purging was necessary. Completeness of the final assembly was assessed using BUSCO (V4.1.2) (Manni et al., 2021) with the actinopterygii_odb10 database. Scaffolding and phasing were outsourced to Phase Genomics (See Appendix 3 for details).
 
-## Genome and functional annotation
+### Genome and functional annotation
 
 Genome annotation was carried out as described (Ryu et al., 2022). Briefly, repeat content analysis was done in RepeatModeler (Flynn et al., 2020) (V2.0.1), RepeatMasker (Tempel, 2012) (V4.1.1), the vertebrata library of Dfam (V3.3) (Storer et al., 2021), and GenomeTools (V1.6.1) (Gremme et al., 2013). Annotation was done using BRAKER2 (Brůna et al., 2021) and associated programs (Barnett et al., 2011; Brůna et al., 2020; Buchfink et al., 2015; Gotoh, 2008; Hoff, 2019; Hoff et al., 2016; Iwata and Gotoh, 2012; Li et al., 2009; Lomsadze et al., 2014; Lomsadze et al., 2005; Stanke et al., 2008; Stanke et al., 2006). For this, the ISO-seq data from the adult tissue and RNA-seq data from the larval samples (see below for the quality control process) were used together with publicly available protein data (Table 5). Post-processing was carried out as described by Ryu et al., 2022 using the Swiss-Prot protein database (UniProt) (Consortium, 2021) with Diamond (Buchfink et al., 2015) (V2.0.9) and Pfam domains (Mistry et al., 2021) identified by InterProScan (V5.48.83.0) (Zdobnov and Apweiler, 2001). Gene model statistics were calculated using the get_general_stats.pl script from the eval package (V2.2.8) (Keibler and Brent, 2003). Finally, functional annotation was carried out with the filtered gene models produced by BRAKER. The amino acid sequences were blasted against the non-redundant protein database (downloaded 15. November 2021) using blastp (V2.10.0+; parameters: -show_gis -num_threads 10 -evalue 1e-5 -word_size 3 -num_alignments 20 -outfmt 14 -max_hsps 20) (Altschul et al., 1990). Additionally, protein domains were assigned using InterProScan (V5.48.83.0; parameters: --disable-precalc --goterms --pathways -f xml) (Zdobnov and Apweiler, 2001). The blast and interproscan results were then loaded into OmicsBox (Gotz et al., 2008; Huerta-Cepas et al., 2017) for post-processing.
 
-## Differential gene expression analysis
+**Table 5.**
+ Origin of protein sequences used for genome annotation in braker2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Common name</th>
+      <th>Number of proteins</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amphiprion ocellaris</td>
+      <td>Ocellaris clownfish</td>
+      <td>48,668</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Danio rerio</td>
+      <td>zebrafish</td>
+      <td>88,631</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Acanthochromis polyacanthus</td>
+      <td>spiny chromis damselfish</td>
+      <td>36,648</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Oreochromis niloticus</td>
+      <td>Nile tilapia</td>
+      <td>36,648</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Oryzias latipes</td>
+      <td>Japanese medaka</td>
+      <td>47,623</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Poecilia reticulata</td>
+      <td>guppy</td>
+      <td>45,692</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Salmo salar</td>
+      <td>Atlantic salmon</td>
+      <td>112,302</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Stegastes partitus</td>
+      <td>bicolor damselfish</td>
+      <td>31,760</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Takifugu rubripes</td>
+      <td>Japanese puffer</td>
+      <td>49,529</td>
+      <td>https://www.ncbi.nlm.nih.gov/protein</td>
+    </tr>
+    <tr>
+      <td>Epinephelus lanceolatus</td>
+      <td>Giant grouper</td>
+      <td>42,970</td>
+      <td>GCA_005281545.1, RefSeq</td>
+    </tr>
+    <tr>
+      <td>Epinephelus akaara</td>
+      <td>Red-spotted grouper</td>
+      <td>23,923</td>
+      <td>4398b9f, Dryad</td>
+    </tr>
+    <tr>
+      <td>Total aa sequences</td>
+      <td></td>
+      <td>1,155,478</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Differential gene expression analysis
 
 The differential gene expression analysis for the larval developmental stages was carried out on the sequencing data from the whole larval and juvenile fish. Before processing, the data from the two lanes were merged per sample. Low-quality bases and adaptor sequences were filtered using Trim Galore (V0.6.5) (Krueger, 2015) and cutadapt (V2.10) (Martin, 2011) using default parameters with the exception of ‘--length 30.’ Kraken2 (V2.0.9-beta) (Wood et al., 2019) was used to remove bacterial reads using the bacterial and archeal database (V4.08.20) and ‘--confidence 0.3.’ Cleaned reads were mapped using STAR (V2.7.9a) (Dobin et al., 2013) with ‘--quantMode GeneCounts’ and ‘--outSAMtype BAM SortedByCoordinate,’ using the filtered gff file produced by the braker2 annotation outlined above for the genome indexing (--genomeSAindexNbases 13, --sjdbOverhang 149). The unstranded mapped reads were then loaded into Rstudio (V2022.02.4) (Team, 2020) using R (V3.6.3) (R Development Core Team, 2013). DESeq2 (V1.36.0) (Love et al., 2014) was used for general data analysis, with coseq (V1.20.0) (Godichon-Baggioni et al., 2019; Rau and Maugis-Rabusseau, 2018) being used for cluster analysis. The cluster analysis was carried out on differentially expressed genes only, as determined through likelihood ratio test (LRT) analysis (full model: design = ~dph, reduced model: reduced = ~1, adjusted p-value threshold: 0.001) in DESeq2. Adjusted p-values and annotations for the group of genes represented in Figure 1B in this study can be found in the Suppl. Data File. Normalization was done in DESeq2, while the following parameters were used for coseq: model = ‘Normal,’ transformation = ‘arcsin,’ seed = 1234, iter = 10,000. Specific genes belonging to clusters where D03 and/or Day 32 showed upregulation and were then re-clustered with the same parameter for visualization. A complete representation of all initial clusters found in this study can be found in Figure 2—figure supplement 1. Pairwise analysis of differentially expressed genes between two-time points was done using the Wald test in DESeq2 (design = ~dph, adjusted p-value threshold: 0.01, log2FoldChange ≥ ±0.58). Figures were plotted using ggplot2 (V3.4.1) (Wickham, 2009), and the analysis made general use of the tidyverse package (V1.3.2) (Wickham et al., 2019). Lastly, expression levels shown in Figures 3—6 are normalized gene counts produced by DESeq2.
 
-## Materials and correspondence
+### Materials and correspondence
 
 Correspondence and material requests should be addressed to Roger Huerlimann at either roger.huerlimann@oist.jp or roger.huerlimann@gmail.com.

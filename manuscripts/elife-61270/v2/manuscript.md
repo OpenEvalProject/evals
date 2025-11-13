@@ -48,7 +48,73 @@ Here, we describe a surgical technique to permanently implant a micro-cuff elect
 
 ## Materials and methods
 
-## Electrode preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Quick adhesive cement system (Metabond)</td>
+      <td>Parkell</td>
+      <td>Cat. # S380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylephrine</td>
+      <td>West-Ward Pharmaceutical</td>
+      <td>NDC 0641-6229-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipopolysaccharide (LPS) from Escherichia coli 0111:B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. # L-4130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TNF-α mouse ELISA kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. # 88-7324-88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-neurofilament heavy polypeptide</td>
+      <td>Abcam</td>
+      <td>Cat. # ab8135 RRID:AB_306298</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa 488 secondary antibody</td>
+      <td>Invitrogen</td>
+      <td>Cat. # A-11008 RRID:AB_143165</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Trichrome stain kit</td>
+      <td>Abcam</td>
+      <td>Cat. # ab150686</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Electrode preparation
 
 150 μm MicroLeads cuff electrodes (MicroLeads Neuro, Gaithersburg, MD) and 100 μm CorTec microsling cuffs (CorTec, Freiburg, Germany) were commercially fabricated and used for cuff preparation (Figure 1A). MicroLeads cuffs are constructed with medical-grade assembly techniques using biocompatible materials, largely silicone, polyimide, and platinum iridium, and utilize a self-closing mechanism. CorTec microsling cuffs are also constructed with biocompatible materials including a silicone base, platinum iridium contacts, and a parylene C coating, and utilize a buckle-like closing mechanism. These bipolar platinum-iridium micro-cuff electrodes were soldered to gold sockets after cutting the lead wires to a length of 2.5–3.0 cm (Figure 1A). Electrical impedance was measured in saline for each electrode at 1 kHz using MicroProbes Impedance Tester (MicroProbes, Gaithersburg, MD). For sterilization, the soldered electrodes were submerged in 0.55% ortho-phthaladehyde solution (Cidex OPA, Advanced Sterilization Products, Irvine, CA) or 70% ethanol for 15 min, rinsed four times with sterile saline, and if Cidex used sonicated in saline for 5 min as a final rinse.
 
@@ -56,7 +122,7 @@ Here, we describe a surgical technique to permanently implant a micro-cuff elect
 
 **Figure 1.:** (A) Lead wires of cuff electrodes produced by MicroLeads or CorTec are cut to a length of 2.5–3.0 cm and soldered to gold pins (right panel, MicroLeads). Front-facing (upper panels) and side (lower panels) view of 150 μm MicroLeads and 100 μm CorTec cuff electrodes. (B, C) Overview of implant, headcap with pins and location of the vagus nerve (VN) cuff. The cuff is implanted on the left cervical VN. (D) A 1 cm ventral incision is made about 0.5 cm lateral to the sternal notch, exposing subcutaneous tissue (SCT) and the parotid gland (PG). (E) SCT is bluntly dissected freeing the PG, which is then retracted from view exposing the carotid sheath (CS). (F) The VN is bluntly dissected away from the carotid artery (CA) and the internal jugular vein (IJV). (G) The scalp is incised to expose lambda and bregma. (H) A subcutaneous tunnel is created from skull base to cervical incision site, either between the eye and ear (depicted) or directly caudal to the ear. (I) The cuff is tunneled under the sternomastoid muscle and implanted on the VN. Pins are finally secured to the skull with dental cement. Created with BioRender.com.
 
-## Implantation procedure
+### Implantation procedure
 
 Male C57BL/6 mice were purchased from Charles River Laboratories (Wilmington, MA) at the age of 8–12 weeks. Animals were housed under 12 hr light/dark cycle with ad libitum access to food and water. All animal experiments complied with relevant ethical guidelines and were approved by the Institutional Animal Care and Use Committee of the Feinstein Institutes for Medical Research (protocol numbers: 2016-029, 2017-010, and 2019-010) and University of Colorado Anschutz Medical Campus (protocol number: 00238). The surgery features an implantation of a cuff electrode on the cervical VN with lead wires that are tunneled to a headcap secured with dental cement to the skull (Figure 1B, C).
 
@@ -64,47 +130,127 @@ Mice were placed on a heated surgical platform equipped with a dissecting micros
 
 For awake stimulation experiments, mice were instrumented with implanted ECG electrodes to measure heart rate threshold (HRT) in conscious animals. Following the surgical approach described above, three platinum wires were tunneled subcutaneously along the cuff leads from the skull to the ventral neck. The left ECG lead was tunneled subcutaneously through a 1 cm incision at the left costal margin and the exposed part fixed to the underlying muscle with 6-0 nylon suture. The right ECG lead was tunneled subcutaneously from the neck incision and sutured to the pectoralis muscle. The ground ECG lead was imbedded in the neck between the right lobe of the salivary gland and the skin. The ECG and cuff leads were connected to a multi-channel nano-connector (Omnetics Connector Corporation, Minneapolis, MN) and cemented to the skull as described before.
 
-## Nerve stimulation and physiological monitoring
+### Nerve stimulation and physiological monitoring
 
 Validation experiments were carried out in several cohorts of mice by three research groups (Zanos group at Feinstein Institutes, Welle group at University of Colorado Anschutz Medical Campus, and Tracey group at Feinstein Institutes). Electrode functionality was evaluated by the ability to induce a decrease in HR during stimulation in anesthetized animals. HRT was defined as the minimum current intensity required to elicit an ~5–15% reduction in HR using a stimulus train of 300 bi-phasic, charge-balanced, square pulses at a pulsing frequency of 30 Hz with short (100 μs) or long (500–1000 μs) pulse widths (PWs). In most cases, HRT was initially determined with short PWs, which was changed to long PWs (500/600 μs and finally to 1000 μs whenever HRT exceeded 2 mA); in four mice, HRT was determined with both short and long PWs over several sessions. In one cohort, mice were tested on 3–7 days during the first week post-implantation, then once or twice weekly thereafter, whereas another two cohorts were tested less frequently or regularly. During testing sessions, anesthetized mice were instrumented with ECG electrodes and a nasal temperature sensor (IT-23 microprobe, Physitemp Instruments, Clifton, NJ) to measure ECG and nasal air flow and calculate HR and breathing rate (BR). The physiological signals were amplified using a biological amplifier (Bio-Amp Octal, ADInstruments, Colorado Springs, CO) for ECG and Temperature Pod (ADInstruments) for nasal temperature and digitized using PoweLab 16/35 (ADInstruments). The digital signals were then streamed to a PC running LabChart v8 (ADInstruments). VNS was delivered by a rack-mounted stimulus generator (STG4008, Multichannel Systems, Reutlingen, BW Germany). In a fourth cohort of animals, stimulation response was defined as a reduction in HR measured with an infrared paw sensor (Mouse Stat Jr, Kent Scientific) or respiratory rate (measured visually) in response to a stimulus train of 0.2–1 mA intensity, short PW, and 30 Hz frequency. Stimulation failure occurred when there was no response in either HR reduction or BR alterations. Other failure modalities included headcap failure. Cuff functionality was tested regularly within the first 14 days. Thereafter, a subset of the mice was selected for additional stimulation testing on a per-needed basis for further experiments.
 
 In awake experiments, animals implanted with ECG leads were gently restrained and connected to a commutator (P1 Technologies, Roanoke, VA) that interfaced with the stimulus generator and the bio-amplifier; HRT was determined as described above. Intensity at maximum charge injection capacity (CIC) was calculated using the average reported value of CIC for platinum iridium (50–150 μC/cm2) (Cogan, 2008; Merrill et al., 2005) applied to the implanted electrode surface area (0.00474 cm2) for short and long PWs.
 
-## Baroreflex assessment
+### Baroreflex assessment
 
 Implanted and naive mice were anesthetized and placed on a warmed surgical platform in the supine position and instrumented with ECG leads. The right external jugular vein was isolated by blunt dissection and two sutures were placed rostrally and caudally. The rostral suture was ligated to prevent bleeding. After occluding blood flow by pulling on the caudal suture, a small incision was made in the jugular vein and a 1 French catheter (Instech Labs, Plymouth Meeting, PA) was carefully advanced into the vessel after removing the caudal suture. A small amount of saline was injected to confirm the catheter was functional. The right CS was then exposed. A 1.4 French pressure catheter (SPR-671, Millar, Houston, TX) was carefully advanced into the artery using the same technique described for the jugular vein. Once the two catheters were in place and confirmed functional, 100 μl of phenylephrine (25 μg/kg) supplemented with heparin (7 U/ml) in saline was injected into the jugular vein over 7 s (Fleming et al., 2013) and pressure and HR monitored. Systolic and diastolic pressure and ECG signals were amplified using Bio-Amp Octal (ADInstruments) as described before. To calculate the baroreflex sensitivity index, a 10 s window around the peak systolic blood pressure (BP) was identified to calculate the systolic BP and corresponding HR after phenylephrine injection. Baseline values were calculated from a 10 s window immediately before the injection.
 
-## LPS endotoxemia challenge
+### LPS endotoxemia challenge
 
 Lipopolysaccharide (LPS) from Escherichia coli 0111:B4 (Sigma-Aldrich, St. Louis, MO) was dissolved in saline and sonicated for 30 min before administration. LPS doses were determined empirically to produce physiological levels of TNF as described in Caravaca et al., 2019. In one set of experiments, performed by the Tracey group (Feinstein Institutes), 8-week-old mice (n = 12) were implanted with a left VN cuff. On day 9–17 post-surgery, VNS or sham stimulation was delivered twice (once in the morning and once in the evening) under light anesthesia using 1 mA intensity at 250 μs PW and 30 Hz frequency for 5 min. On the following day, mice were administered LPS (0.7 mg/kg, i.p.) 5 hr after receiving a third dose of VNS or sham stimulation. In another set of experiments, performed by the Zanos group (Feinstein Institutes), 8-week-old mice were implanted with a left VN cuff. HRT was determined at least 5 days before endotoxemia to avoid any long-lived VNS effects. 2–6 weeks post-implantation, animals were anesthetized and received either sham stimulation or VNS at HRT intensity using 250 μs PW and 10 Hz frequency for 5 min. LPS was administered to mice (0.1 mg/kg, i.p.) 3 hr after stimulation. In both sets of experiments, blood was collected by cardiac puncture 90 min post-LPS injection and left to clot for 1 hr at room temperature. The blood samples were then centrifuged at 2000 xg for 10 min and serum collected for TNF determination by ELISA (Invitrogen, Carlsbad, CA) following the manufacturer’s instructions. Serum samples were assayed in duplicate for each animal.
 
-## Histology and immunohistochemistry
+### Histology and immunohistochemistry
 
 Mice with long-term implants of at least 2 weeks old (n = 4) or naive controls were anesthetized, and the implant site carefully exposed to locate and isolate the nerve relative to anatomical landmarks. Mice were then euthanized, and the nerve fixed in place by filling the incision site with 10% buffered formalin for about 30 min. The nerve, along with the cuff in implanted animals, was then explanted and kept in 10% formalin overnight. The following day, the cuff electrodes were removed under a dissecting microscope, and the nerve samples grossed and prepared for paraffin embedding or frozen sectioning. Serial cross-sections of the tissue specimens were obtained at 5 μm thickness using a microtome and subsequently deparaffinized in preparation for staining. In some experiments, mice with chronic implants of at least 4 weeks (n = 5) were euthanized and segments of the neck were excised and fixed in 10% buffered formalin for at least 2 weeks. Fixed segments were then prepared for frozen sectioning. Serial cross-sections of the tissue specimens were obtained at 50 µm thickness using a cryostat. Standard immunohistochemical protocols were followed to stain the mounted sections for neurofilament (Crosby et al., 2016). Briefly, sections were rinsed with 1× Tris-buffered saline (TBS) then blocked for 1 hr using 1% normal goat serum and Triton X-100 (Sigma Aldrich) in TBS. Sections were then incubated with a primary antibody against neurofilament (1:500, ab8135, Abcam, Cambridge, MA) overnight at 4°C. The following day, sections were rinsed and incubated with goat anti-rabbit Alexa 488 secondary antibody (1:500, Thermo Fisher, Waltham, MA) for 2 hr at room temperature. Following incubation, stained slides were rinsed three times with TBS buffer then mounted with Fluoromount-G (Thermo Fisher). Images of the VN were obtained with ×100 magnification using a Keyence BZ-X810 fluorescence microscope (Keyence, Osaka, Japan). Hematoxylin and eosin (H&E) and Masson’s trichrome (Trichrome Stain Kit, Abcam) stains were performed using standard protocols. In neck block sections, the left VN was identified either within the tissues covering the upper margin of the cuff or in the most anterior part of the neck adjacent to the cuff.
 
-## Statistical analysis
+### Statistical analysis
 
 Pearson correlation was used to characterize the relationship between implant age and HRT, and between implant age and electrical impedance; p-values less than 0.05 were deemed statistically significant. Student’s t-test (or Mann–Whitney U for non-Gaussian variables) was used to compare between two means with Bonferroni correction for multiple comparisons; p-values less than 0.05 were deemed statistically significant.
 
 ## Results
 
-## A surgical procedure to interface with the VN in mice
+### A surgical procedure to interface with the VN in mice
 
 We first set out to design a surgical process that allows for successful long-term implantation of a micro-cuff electrode onto the mouse cervical VN. Due to the small size of the nerve (~100 μm in diameter) and cuff, this required a carefully considered protocol. We first optimized our surgical approach to isolate the CS with minimal tissue injury by employing blunt dissection using a set of fine forceps and a surgical hook (Figure 1E). Retracting the sternocleidomastoid muscle and parotid gland is critical in obtaining an adequate view of the sheath before VN isolation. Following the same principle, the VN was carefully dissected along its length using fine blunt forceps after identifying the pulsating internal CA just posterolateral to the trachea (Figure 1F). Electrode tunneling is another critical step that requires minimizing lead wire travel distance and mechanical strain, while maintaining stability. We found that subcutaneous tunneling around the neck or directly between the eye and ear (Figure 1H) both result in equally successful implants. Further, tunneling deep to the sternocleidomastoid muscle helps align the cuff on the same plane as the nerve and minimize lateral tracking of the cuff by providing a muscular border. We also found that maintaining a front-facing cuff orientation (Figure 1A) as the cuff is tunneled to the vagus nerve ensures easy placement and prevents the cuff from pulling at or twisting the nerve. Careful adjustment of the cuff orientation intraoperatively to achieve minimal anatomic disruption improves surgical outcomes. Potential mechanical damage is further reduced by using cuffs slightly larger (100–150 μm) than the diameter of the vagus to prevent compression and by incorporating coiled wires to reduce mechanical strain. Moreover, construction of a robust headcap contributes to the stability and longevity of the implant and results in minimal headcap failures (n = 1) (Figure 3F). Careful preparation of the skull, including complete tissue removal, and adequate scoring and drying helps bind the cement to the skull surface and prevent infections. Also, the silicone construction of the cuff shell as well as including adequate distance between the edges of the cuff and stimulating electrodes reduces current leakage to surrounding tissues.
 
-## VNS through the long-term implant elicits changes in HR and BR
+### VNS through the long-term implant elicits changes in HR and BR
 
 The cervical VN comprises parasympathetic motor and visceral sensory fibers that regulate many physiological functions including HR and breathing (Berthoud and Neuhuber, 2000; Agostoni et al., 1957; Chang et al., 2015). To characterize the physiological outcomes of stimulation through the implanted micro-cuff, we stimulated the VN with increasing current intensity while measuring stimulus-elicited changes in HR and BR in animals under isoflurane anesthesia. VNS produces decreases in HR as well as changes in BR (Figure 2A). The magnitude of HR reduction is dependent on current intensity (r = 0.8971, p=0.0062) (Figure 2B), whereas BR shows more variable responses, including slowing down and acceleration of breathing (Figure 2A, Figure 3A). In conscious mice (n = 2), VNS produces comparable dose-dependent HR responses (Video 1, Figure 2—figure supplement 1). Animals receiving awake VNS do not show any signs of distress or visible changes in BR.
 
-## Longitudinal changes in implant functionality
+![Figure 2.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative traces from a chronically implanted mouse showing nasal air flow (top panel) and extracted breathing rate (BR, second panel), and ECG (third panel) and extracted heart rate (HR, fourth panel). Trains of VNS of increasing intensity from 200 to 800 μA (fifth panel, yellow traces) cause BR and HR responses with increasing magnitudes. (B) Percentage of HR reduction as a function of VNS intensity in four chronically implanted mice (parameters: short pulse width, frequency 30 Hz, duration 5 s).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Physiological traces from a stimulation event in an awake animal showing changes in heart rate (HR) captured in Video 1. (B) Heart rate threshold (HRT) values vs. implant age for mouse shown in Video 1. Arrow indicates day on which testing shown in (A) occurred.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig3-v2.jpg)
+
+**Figure 3.:** (A) Examples of physiological responses to vagus nerve stimulation (VNS) in two mice, showing changes in breathing rate (BR; green trace) and heart rate (HR; red trace) elicited by a train of VNS with HRT intensity, as determined on that day of testing (yellow trace, with stimulus parameters shown). HRT is defined as the stimulation intensity required to produce an ~5–15% decrease in HR. (B) HRT values vs. implant age (n = 26 mice), where multiple measurements were grouped together under the corresponding week. Horizontal gray dotted line indicates intensity corresponding to maximum charge injection capacity (ICIC) with 600 μs pulse width (PW), as calculated for these electrodes. (C) HRT values determined with VNS trains of 0.1, 0.5, and 1 ms-wide pulses at different implant ages in three mice. (D) Electrical impedance measured at different implant ages (n = 29 mice). (E) HRT values plotted against electrode impedance from individual measurements performed during a 40-day period post-implant. ‘Infinity’ HRT values (data points in red) indicate implants that did not produce a HR response up to 2 mA at 2 ms PW. Pearson correlation was 0.05 (p NS). (F) Surgical success rates for one of the tested cohorts of animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heart rate threshold (HRT) values during the first week post-implantation (n = 20 mice) determined with short pulse width. (B) HRT values on the first day post-implantation plotted against pre-implantation impedance measured ex vivo (n = 15 mice).
+
+![Video 1.](https://cdn.elifesciences.org/articles/61270/elife-61270-video1.mp4.jpg)
+
+**Video 1.:** Video clip showing a conscious mouse with a long-term VN implant and ECG leads, connected to a commutator and receiving VNS on post-implant day 15. The screen shows heart rate (HR; green trace) and a stimulation event (purple trace). VNS occurs at the 23 s time point.
+
+### Longitudinal changes in implant functionality
 
 To assess the longitudinal functionality of each implant, we determined HRT over time, defined as the minimum current intensity of a stimulus train (300 pulses at 30 Hz) required to elicit an approximately 5–15% decrease in HR. VNS delivered using the implant elicits drops in HR and changes in breathing for up to 8 weeks post-implantation (Figure 3A). Initial HRT values determined with short PW were variable among animals (range = 30–400 μA, mean = 156, SD = 118, n = 20 mice) and increased over the first week post-implantation (Pearson r = 0.89, p = 0.0064, n = 20 mice) (Figure 3—figure supplement 1A), whereas HRT values determined with long PWs did not change significantly with time (r = −0.22, p NS, n = 26 mice) (Figure 3B). HRT values with short PW were 54% greater on average than those with long PW, and that relationship was maintained over time (Figure 3C). Pre-implantation impedance values did not correlate with initial HRT (r = 0.34, p NS, n = 15 mice) (Figure 3—figure supplement 1B), and bipolar electrical impedance did not increase over the period of testing (r = −0.68, p = 0.0415, n = 29) (Figure 3D). Interestingly, there was no correlation between changes in electrical impedance and HRT values (r = 0.05, p NS); in some mice, nonfunctional cuffs continued to have relatively low impedance values despite their inability to induce a physiological response (Figure 3E). Implant failure occurred more frequently in earlier compared to later cohorts: percentage of mice with functional implants at 4 weeks post-implantation increased from 40% in cohort 1 to 90% in cohort 3 (Table 1). In a separate group of animals, implants were 96% functional during the first 5 days after surgery (50/52 mice, excluding deaths during surgery); functional implants were tested again in days 6–14, with a success rate of 76% (38/50) (Table 1 and Figure 3F). In a random subset of those implants, 17/18 and 11/13 were functional in the 15–30 and 30+ days period, respectively (Table 1). Overall, electrode failures occurred during the first 2 weeks post-implantation and implant functionality stabilized thereafter (Table 1).
 
-## Long-term implantation does not impact vagally mediated reflexes
+**Table 1.**
+ Functional implants across time in several animal cohorts.Implants were tested in four cohorts. In cohorts 1–3, implant functionality was determined based on heart rate threshold, and implant failure was defined as the absence of a physiological response upon stimulation with 3 mA or higher on three consecutive testing sessions. In cohort 4, functionality was determined based on a reduction in heart rate or breathing rate and failure was defined as absence of response with 1 mA on one occasion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Functional cuffs</th>
+    </tr>
+    <tr>
+      <th>Days post-implantation:</th>
+      <th>1–5</th>
+      <th>6–14</th>
+      <th>15–29</th>
+      <th>30+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cohort 1 (n = 10)</td>
+      <td>8/10 (80%)</td>
+      <td>6/10 (60%)</td>
+      <td>4/10 (40%)</td>
+      <td>4/10 (40%)</td>
+    </tr>
+    <tr>
+      <td>Cohort 2 (n = 10)</td>
+      <td>10/10 (100%)</td>
+      <td>7/10 (70%)</td>
+      <td>7/10 (70%)</td>
+      <td>6/10 (60%)</td>
+    </tr>
+    <tr>
+      <td>Cohort 3 (n = 9)</td>
+      <td>9/9 (100%)</td>
+      <td>8/9 (90%)</td>
+      <td>8/9 (90%)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Cohort 4 (n = 52)</td>
+      <td>50/52 (96%)</td>
+      <td>38/50 (76%)</td>
+      <td>17/18*</td>
+      <td>11/13*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Group is a randomly selected subset of the (6–14 days) functional implants (n = 38)._
+
+### Long-term implantation does not impact vagally mediated reflexes
 
 The VN modulates several vital bodily functions via reflexes, including appetite, BP, and respiration (Paintal, 1973). To demonstrate that long-term cuffing of the VN does not affect these reflexes, we evaluated the implanted animals’ weight change and food intake, baroreflex, and breathing reflexes. The change in body weight of implanted animals during the first and second weeks post-implantation is not different than sham surgery controls (Figure 4A, Figure 4—figure supplement 1A). Further, the average food intake during the first 2 weeks is similar in both groups (Figure 4B, Figure 4—figure supplement 1B) and within the range of reported daily average intake in healthy animals (Bachmanov et al., 2002). Implanted mice do not exhibit elevated levels of serum TNF 2–3 weeks post-implantation (Figure 4—figure supplement 1C). To evaluate the vagal component of the baroreflex, we injected implanted and naive animals with phenylephrine, a vasopressor that increases BP, and recorded reflexive changes in HR (Figure 4C). Both implanted and naive animals have similar HR at baseline, with a similarly significant decrease upon phenylephrine injection (Figure 4C, D). Further, the baroreflex sensitivity index, expressed as the ratio of heart rate change (ΔHR) to systolic blood pressure change (ΔSBP), is not significantly different between the two groups (Figure 4E). We also evaluated whether long-term cuffing affected vagally mediated breathing reflexes (e.g., Herring–Breuer reflex; Chang et al., 2015) by evoking breathing changes with electrical stimulation. We found that mice with long-term implants exhibit changes in breathing (Figure 4F, Figure 4—figure supplement 1D) similar to those induced in acute VNS experiments (Figure 4—figure supplement 1E).
 
-## VNS using the long-term implant inhibits TNF release in endotoxemia
+![Figure 4.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig4-v2.jpg)
+
+**Figure 4.:** (A) Weight change at first and second week post-surgery in mice subjected to sham surgery (n = 6) and in implanted mice (n = 6). (B) Average food intake during the first and second week post-surgery in sham surgery and in implanted mice (n = 6 in each group). (C) Example of baroreflex-mediated changes in heart rate (HR) in response to phenylephrine (PE)-elicited increase in blood pressure in a naive animal (left) and in an animal with a long-term implant (right). Traces showing mean arterial blood pressure (MAP; green trace) and HR (red trace); vertical line indicates time of PE injection. (D) HR in naive and implanted animals before and after PE injection. (E) Baroreflex sensitivity index in naive and implanted animals (n = 4 in each group). Index is calculated as the absolute value of the change in HR (ΔHR) over the change in systolic blood pressure (ΔSBP), before and after PE injection. (F) Examples of HR (red trace) and BR (green trace) changes in four mice with long-term implants showing responses to vagus nerve stimulation (VNS); BR responses include rapid, shallow breathing (upper left), and slowing down (upper right, lower left), or cessation of breathing (lower right) during VNS. Data is presented as mean ± SEM; NS = not significant, *p<0.05 by Student’s t-test with Bonferroni correction for multiple comparisons.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Daily body weights in animals after sham surgery and long-term implantation (n = 6 in each group).(B) Daily food intake in the two groups of animals. (C) Serum TNF levels at 16–19 days post-implantation in the two groups of animals. (D) Physiological traces from nine different mice showing various breathing responses to vagus nerve stimulation (VNS) at different implant ages and (E) during acute VNS in two naive mice.
+
+### VNS using the long-term implant inhibits TNF release in endotoxemia
 
 Acute VNS decreases serum TNF levels in acute inflammation by modulating the immune response via a neuroimmune mechanism termed the IR (Borovikova et al., 2000). To test whether our long-term implant can produce a similar effect, we used it to deliver VNS in an LPS endotoxemia model of acute inflammation using a set of parameters that have been shown to inhibit TNF release in acute experiments in mice (Caravaca et al., 2019). Mice with 9- to 17-day-old implants received three VNS doses (1 mA intensity, 250 μs PW, 30 Hz frequency, 5 min duration): two doses administered 1 day prior to LPS administration and one dose on the following day, 5 hr before LPS or vehicle (saline) administration (Figure 5A). We found that VNS significantly decreases serum TNF in stimulated animals compared to sham stimulation (Figure 5B). Notably, these parameters did not usually induce a change in HR during stimulation (Figure 5C). In another experiment, we tested whether one-time VNS could decrease serum TNF. Mice with either 6-week-old or 16- to 19-day-old implants received VNS (HRT intensity, 250 μs PW, 10 Hz frequency, and 5 min duration) or sham stimulation, 3 hr before LPS administration (Figure 5D). Overall, we found that one-time VNS does not produce a significant decrease in TNF levels. However, out of the 14 stimulated mice, VNS produced a decrease in HR in seven animals, of which four exhibited more than ~40% decrease in serum TNF compared to sham-stimulated controls and animals with no HR response (Figure 5E). Mice that lacked a physiological response had TNF levels comparable to sham-stimulated controls.
 
@@ -112,9 +258,17 @@ Acute VNS decreases serum TNF levels in acute inflammation by modulating the imm
 
 **Figure 5.:** (A) Mice with 9- to 17-day-old implants received three doses of VNS over 2 days using previously reported parameters (intensity 1 mA, pulse width [PW] 250 μs, frequency 30 Hz). Lipopolysaccharide (LPS) was administered 5 hr after the last VNS dose, and blood was collected 90 min post-LPS injection. (B) Serum TNF levels from implanted mice that received no LPS (saline) with sham or VNS (first and second bars), sham surgery mice that received LPS (third bar), and implanted mice that received LPS with sham or VNS (fourth and fifth bars). Data shown as mean ± SEM. *p = 0.0177, by Mann–Whitney with Bonferroni correction for multiple comparisons. (C) Mean heart rate (HR) before, during, and after each stimulation event for endotoxemic mice that received VNS. Each line corresponds to a subject with matching shape and color in fifth bar in (B). (D) In a separate experiment, mice with 2- to 6-week-old implants (n = 22) received a single dose of VNS, or sham VNS, for 5 min (intensity at heart rate threshold [HRT], PW 250 μs, frequency 10 Hz). LPS was administered 3 hr after VNS and blood was collected 90 min post-LPS injection. (E) Serum TNF levels from mice that received sham stimulation (left bar), mice that received VNS without a HR response (middle bar), and mice that received VNS that elicited a HR response (right bar). Data shown as mean ± SEM. p NS (VNS with bradycardia vs. sham, and VNS with vs. without bradycardia) by Mann–Whitney with Bonferroni correction for multiple comparisons.
 
-## Long-term implantation does not induce significant nerve damage
+### Long-term implantation does not induce significant nerve damage
 
 Long-term efficacy of peripheral nerve implants could deteriorate due to direct nerve damage or reaction of surrounding tissue to the electrode (Anderson et al., 2008; Tyler and Durand, 2003). To determine the impact of these processes in our long-term implants, we collected cuffed and non-cuffed left VNs from implanted mice at ~2–6 weeks post-implantation for gross and histological analysis; naive mice were used as controls. The implant site appeared healed and exhibited moderate tissue growth encompassing the lead wires and cuff surfaces in animals with both functional and nonfunctional implants (example from 12 days post-implantation shown in Figure 6A). Histological analysis of explanted cuffed left nerves revealed preserved nerve fibers compared with non-cuffed left nerves from naive controls with no obvious axonal pathology or inflammation (Figure 6B, Figure 6—figure supplement 1A, B). The explanted nerves were surrounded by increased amounts of fibrotic tissue (Figure 6C) or exhibited thickened perineurium (Figure 6B, Figure 6—figure supplement 1A). In another group of animals (n = 6) in which we examined cross-sections of whole neck blocks just above the cuff margin 6 weeks post-implantation, histological analysis revealed similar preserved nerves (Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig6-v2.jpg)
+
+**Figure 6.:** (A) 3-week-old micro-cuff electrode upon explantation (right panel). The cuff was carefully removed with intact rostral and caudal portions (middle panel) and nerve sectioned at three levels (dotted lines, left panel). (B) Cross-sections of cuffed vagus nerve at corresponding levels shown in (A) stained with hematoxylin and eosin (H&E) (left panels) and for axons (neurofilament, green; right panels). (C) Explanted cuffed vagus nerve (red dotted circle, upper left panel, H&E) stained for axons (upper right, neurofilament, green; DAPI nuclear stain, blue), and collagen (lower panel, Masson’s Trichrome).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61270/elife-61270-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Cross-sections of (A) explanted cuffed left vagus nerves (VNs) (n = 3) and (B) non-implanted left VNs from naive animals (n = 2) at ~3 weeks post-implantation. Left panel shows gross fixed nerve before embedding and sectioning. Middle and right panels are cross-sections of the nerve stained with hematoxylin and eosin (H&E) and for axons (neurofilament, green), showing minor crush artifacts. Scale bars are 10 μm. (C) Cross-sections of the neck immediately rostral to the cuff (right panels) at 6 week post-implantation stained for axons (neurofilament, green) and showing landmarks: (1) rostral cuff margin; (2) trachea; and (3) esophagus. The left VNs are marked by a red box; scale bar is 100 μm. The cuffed left VN (magnified ×100, left panels) is located adjacent to the cuff (1). Scale bars are 10 μm.
 
 ## Discussion
 

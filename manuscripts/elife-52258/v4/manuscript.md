@@ -24,6 +24,30 @@ Distinctions between cell types underpin organizational principles for nervous s
 
 The concept of cell types provides a general organizing principle for understanding biological structures including the brain (Regev et al., 2017; Zeng and Sanes, 2017). The simplest conceptualization of a neuronal cell type, as a population of phenotypically similar neurons with features that cluster around a single set point (Wang et al., 2011b), is extended by observations of variability in cell type features, suggesting that some neuronal cell types may be conceived as clustering along a line rather than around a point in a feature space (Cembrowski and Menon, 2018; O'Donnell and Nolan, 2011; Figure 1A). Correlations between the functional organization of sensory, motor and cognitive circuits and the electrophysiological properties of individual neuronal cell types suggest that this feature variability underlies key neural computations (Adamson et al., 2002; Angelo et al., 2012; Fletcher and Williams, 2019; Garden et al., 2008; Giocomo et al., 2007; Kuba et al., 2005; O'Donnell and Nolan, 2011). However, within-cell type variability has typically been deduced by combining data obtained from multiple animals. By contrast, the structure of variation within individual animals or between different animals has received little attention. For example, apparent clustering of properties along lines in feature space could reflect a continuum of set points, or could result from a small number of discrete set points that are obscured by inter-animal variation (Figure 1B). Moreover, although investigations of invertebrate nervous systems show that set points may differ between animals (Goaillard et al., 2009), it is not clear whether mammalian neurons exhibit similar phenotypic diversity (Figure 1B). Distinguishing these possibilities requires many more electrophysiological observations for each animal than are obtained in typical studies.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-v4.jpg)
+
+**Figure 1.:** (A) Neuronal cell types are identifiable by features clustering around a distinct point (blue, green and yellow) or a line (orange) in feature space. The clustering implies that neuron types are defined by either a single set point (blue, green and yellow) or by multiple set points spread along a line (orange). (B) Phenotypic variability of a single neuron type could result from distinct set points that subdivide the neuron type but appear continuous when data from multiple animals are combined (modular), from differences in components of a set point that do not extend along a continuum but that in different animals cluster at different locations in feature space (orthogonal), or from differences between animals in the range covered by a continuum of set points (offset). These distinct forms of variability can only be made apparent by measuring the features of many neurons from multiple animals.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-figsupp1-v4.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Logic of the gap statistic. (A) Simulated clustered dataset with three modes (k = 3) (open gray circles) (upper) and the corresponding simulated reference dataset drawn from a uniform distribution with lower and upper limits set by the minimum and maximum values from the corresponding clustered dataset (open gray diamonds). Data were allocated to clusters by running a K-means algorithm 20 times on each set of data and selecting the partition with the lowest average intracluster dispersion. Red, green, blue and yellow dashed ovals show a realization of the data subsets allocated to each cluster when kEval = 1, 2, 3 and 4 modes. (B) The average value of the log intracluster dispersion for the clustered (open circles) and reference (open diamonds) datasets for each value of k tested in panel (A). (C) Gap values resulting from the difference between the clustered and reference values for each k in panel (B). Many (≥500 in this paper) reference distributions are generated and their mean intracluster dispersion values are subtracted from those arising from the clustered distribution to maximize the reliability of the Gap values. (D) A procedure for selecting the optimal k depending on the associated gap values. Quantitative procedure for selecting optimal k (kest). ∆Gap values (open circles) are obtained by subtracting from the Gap value of a given k the Gap value for the previous k (∆Gapk = Gapk – Gapk-1). For each ∆Gapk, if the ∆Gap value is greater than a threshold (filled triangles) associated with that ∆Gapk, that ∆Gapk will be kest, if no ∆Gap exceeds, the threshold, kest = 1. In the figure, for ∆Gapk = 2, 3, 4 (brown, pink and cyan), the ∆Gap value exceeds its threshold only when ∆Gapk = 3. Therefore kest = 3. (E–G) Determination of ∆Gapk thresholds. (E) Histograms of ∆Gap values calculated from 20,000 simulated datasets drawn from uniform distributions for each ∆Gapk (brown, pink and cyan, respectively, for ∆Gapk = 2, 3, 4) for a single dataset size (n = 40). ∆Gap thresholds (filled triangles) are the values beyond which 1% of the ∆Gap values fall and vary with ∆Gapk. (F) Histograms of ∆Gap values for a range of dataset sizes (n = 20, 40, 100) and their associated thresholds. (G) Plot of the ∆Gap thresholds as a function of dataset size and ∆Gapk. For separate ∆Gapk, ∆Gap threshold values are fitted well by a hyperbolic function of dataset size. These fits provide a practical method of finding the appropriate ∆Gap threshold for an arbitrary dataset size.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-figsupp2-v4.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Simulated datasets (each n = 40) drawn from continuous (uniform, k = 1 mode) (upper) and modular (multimodal mixture of Gaussians with k = 2 modes) (lower) distributions, and plotted against simulated dorsoventral locations. Also shown are the probability density functions (pdf) used to generate each dataset (light blue) and the densities estimated post-hoc from the generated data as kernel smoothed densities (light gray pdfs). (B) Histograms showing the distribution of kest from 1000 simulated datasets drawn from each pdf in panel (A). kest is determined for each dataset by a modified gap statistic algorithm (see Figure 1—figure supplement 1 above). When kest = 1, the dataset is considered to be continuous (unclustered), when kest ≥2, the dataset is considered to be modular (clustered). The algorithm operates only on the feature values and does not use location information. (C) Illustration of a set of clustered (k = 2) pdfs with the distance (in standard deviations) between clusters ranging from 2 to 6 (upper). Systematic evaluation of the ability of the modified gap statistic algorithm to detect clustered organization (kest ≥2) in simulated datasets of different size (n = 20 to 100) drawn from the clustered (filled blue) and continuous (open blue) pdfs (lower). The proportion of datasets drawn from the continuous distribution that have kest ≥2 is the false positive (FP) rate (pFP = ~0.07). The light gray filled circle shows the smallest dataset size (n = 40) with SD = 5, where the proportion of datasets detected as clustered (pdetect) is ~0.8. (D). Plot showing how pdetect at n = 40, SD = 5 changes when datasets are drawn from pdfs with different numbers of clusters (n modes from 2 to 8). Further evaluation of the analysis of additional clusters is represented in the following figure.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-figsupp3-v4.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Plots showing how pdetect (the ability of the modified gap statistic algorithm to detect clustered organization) depends on dataset size and separation between cluster modes in simulated datasets drawn from clustered pdfs with different numbers of modes. The gray markers indicate n = 40, SD = 5 (as shown in Figure 1E). In each plot, pdetect is shown as a function of simulated dataset size and separation between modes when k = 3 (A), k = 5 (B) and k = 8 (C), which was the maximum number of clusters evaluated. (D–F) Histograms showing the counts of kest from the 1000 simulated n = 40, SD = 5 datasets (gray filled circles) illustrated in panels (A–C), respectively. (G) pdetect as a function of dataset size and mode separation with k = 5 when cluster modes are unevenly sampled. Sample sizes from clusters vary randomly with each dataset. A single mode can contribute from all to none of the points in any simulated dataset. (H) pdetect as a function of dataset size and mode separation with k = 5 when the distance between mode centers increases by a factor of sqrt(2) between sequential cluster pairs. Data are shown for different initial separations (the distance between the first two cluster centers) ranging from 1 to 4 (with corresponding separations between the final cluster pair ranging from 4 to 16).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-figsupp4-v4.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Counts of log discontinuity ratio scores generated from a simulated uniform data distribution. The data distribution was ordered and then sampled either at positions drawn at random from a uniform distribution (dark blue) or at positions with a fixed increment (light blue). For the data sampled at random positions, approximately half of the scores are >0 and for even sampling all scores are >0. Therefore, a threshold score >0 does not distinguish discrete from continuous distributions. (B) Comparison of pdetect as a function of dataset size for the adapted gap statistic algorithm, the discontinuity (upper) and the discreteness algorithm (lower). Each algorithm is adjusted to yield a 7% false positive rate. Each column shows simulations of data with different numbers of modes (k).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig1-figsupp5-v4.jpg)
+
+**Figure 1—figure supplement 5.:** Examples of grid spacing for individual neurons (crosses) from different mice. Kernel smoothed densities (KSDs) were generated with either a wide (solid gray) or a narrow (dashed lines) kernel. The number of modes estimated using the modified gap statistic algorithm is ≥ 2 for all but one animal (animal 4) with n ≥ 20 (animals 3 and 7 have < 20 recorded cells). We did not have location information for animal 2.
+
 Stellate cells in layer 2 (SCs) of the medial entorhinal cortex (MEC) provide a striking example of correspondence between functional organization of neural circuits and variability of electrophysiological features within a single cell type. The MEC contains neurons that encode an animal’s location through grid-like firing fields (Fyhn et al., 2004). The spatial scale of grid fields follows a dorsoventral organization (Hafting et al., 2005), which is mirrored by a dorsoventral organization in key electrophysiological features of SCs (Boehlen et al., 2010; Dodson et al., 2011; Garden et al., 2008; Giocomo et al., 2007; Giocomo and Hasselmo, 2008a; Pastoll et al., 2012a). Grid cells are further organized into discrete modules (Stensola et al., 2012), with the cells within a module having a similar grid scale and orientation (Barry et al., 2007; Gu et al., 2018; Stensola et al., 2012; Yoon et al., 2013); progressively more ventral modules are composed of cells with wider grid spacing (Stensola et al., 2012). Studies that demonstrate dorsoventral organization of integrative properties of SCs have so far relied on the pooling of relatively few measurements per animal. Hence, it is unclear whether the organization of these cellular properties is modular, as one might expect if they directly set the scale of grid firing fields in individual grid cells (Giocomo et al., 2007). The possibility that set points for electrophysiological properties of SCs differ between animals has also not been considered previously.
 
 Evaluation of variability between and within animals requires statistical approaches that are not typically used in single-cell electrophysiological investigations. Given appropriate assumptions, inter-animal differences can be assessed using mixed effect models that are well established in other fields (Baayen et al., 2008; Geiler-Samerotte et al., 2013). Because tests of whether data arise from modular as opposed to continuous distributions have received less general attention, to facilitate detection of modularity using relatively few observations, we introduce a modification of the gap statistic algorithm (Tibshirani et al., 2001) that estimates the number of modes in a dataset while controlling for observations expected by chance (see 'Materials and methods' and Figure 1—figure supplements 1–5). This algorithm performs well compared with discreteness metrics that are based on the standard deviation of binned data (Giocomo et al., 2014; Stensola et al., 2012), which we find are prone to high false-positive rates (Figure 1—figure supplement 4A). We find that recordings from approximately 30 SCs per animal should be sufficient to detect modularity using the modified gap statistic algorithm and given the experimentally observed separation between grid modules (see 'Materials and methods' and Figure 1—figure supplements 2–3). Although methods for high-quality recording from SCs in ex-vivo brain slices are well established (Pastoll et al., 2012b), typically fewer than five recordings per animal were made in previous studies, which is many fewer than our estimate of the minimum number of observations required to test for modularity.
@@ -32,9 +56,17 @@ We set out to establish the nature of the set points that establish the integra
 
 ## Results
 
-## Sampling integrative properties from many neurons per animal
+### Sampling integrative properties from many neurons per animal
 
 Before addressing intra- and inter-animal variability, we first describe the data set used for the analyses that follow. We established procedures to facilitate the recording of integrative properties of many SCs from a single animal (see 'Materials and methods'). With these procedures, we measured and analyzed electrophysiological features of 836 SCs (n/mouse: range 11–55; median = 35) from 27 mice (median age = 37 days, age range = 18–57 days). The mice were housed either in a standard home cage (dimensions: 0.2 × 0.37 m, N = 18 mice, n = 583 neurons) or from postnatal day 16 in a 2.4 × 1.2 m cage, which provided a large environment that could be freely explored (N = 9, n = 253, median age = 38 days) (Figure 2—figure supplement 1). For each neuron, we measured six sub-threshold integrative properties (Figure 2A–B) and six supra-threshold integrative properties (Figure 2C). Unless indicated otherwise, we report the analysis of datasets that combine the groups of mice housed in standard and large home cages and that span the full range of ages.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig2-v4.jpg)
+
+**Figure 2.:** (A–C) Waveforms (gray traces) and example responses (black traces) from a single mouse for step (A), ZAP (B) and ramp (C) stimuli (left). The properties derived from each protocol are shown plotted against recording location (each data point is a black cross) (right). KSDs with arbitrary bandwidth are displayed to the right of each data plot to facilitate visualization of the property’s distribution when location information is disregarded (light gray pdfs). (A) Injection of a series of current steps enables the measurement of the resting membrane potential (Vrest) (i), the input resistance (IR) (ii), the sag coefficient (sag) (iii) and the membrane time constant (τm) (iv). (B) Injection of ZAP current waveform enables the calculation of an impedance amplitude profile, which was used to estimate the resonance resonant frequency (Res. F) (i) and magnitude (Res. mag) (ii). (C) Injection of a slow current ramp enabled the measurement of the rheobase (i); the slope of the current-frequency relationship (I-F slope) (ii); using only the first five spikes in each response (enlarged zoom, lower left), the AHP minimum value (AHPmin) (iii); the spike maximum (Spk. max) (iv); the spike threshold (Spk. thr.) (v); and the spike width at half height (Spk. HW) (vi).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig2-figsupp1-v4.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) The large cage environment viewed from above (A) and from inside (B).
 
 Because SCs are found intermingled with pyramidal cells in layer 2 (L2PCs), and as misclassification of L2PCs as SCs would probably confound investigation of intra-SC variation, we validated our criteria for distinguishing each cell type. To establish characteristic electrophysiological properties of L2PCs, we recorded from neurons in layer 2 that were identified by Cre-dependent marker expression in a Wfs1Cre mouse line (Sürmeli et al., 2015). Expression of Cre in this line, and in a similar line (Kitamura et al., 2014), labels L2PCs that project to the CA1 region of the hippocampus, but does not label SCs (Kitamura et al., 2014; Sürmeli et al., 2015). We identified two populations of neurons in layer 2 of MEC that were labelled in Wfs1Cre mice (Figure 3A–C). The more numerous population had properties consistent with L2PCs (Figure 3A,G) and could be separated from the unidentified population on the basis of a lower rheobase (Figure 3C). The unidentified population had firing properties that were typical of layer 2 interneurons (Gonzalez-Sulser et al., 2014). A principal component analysis (PCA) (Figure 3D–F) clearly separated the L2PC population from the SC population, but did not identify subpopulations of SCs. The properties of the less numerous population were also clearly distinct from those of SCs (Figure 3A,C). These data demonstrate that the SC population used for our analyses is distinct from other cell types also found in layer 2 of the MEC.
 
@@ -44,15 +76,164 @@ Because SCs are found intermingled with pyramidal cells in layer 2 (L2PCs), and 
 
 To further validate the large SC dataset, we assessed the location-dependence of individual electrophysiological features, several of which have previously been found to depend on the dorso-ventral location of the recorded neuron (Boehlen et al., 2010; Booth et al., 2016; Garden et al., 2008; Giocomo et al., 2007; Pastoll et al., 2012a; Yoshida et al., 2013). We initially fit the dependence of each feature on dorsoventral position using a standard linear regression model. We found substantial (adjusted R2 >0.1) dorsoventral gradients in input resistance, sag, membrane time constant, resonant frequency, rheobase and the current-frequency (I-F) relationship (Figure 3G). In contrast to the situation in SCs, we did not find evidence for dorsoventral organization of these features in L2PCs (Figure 3G). Thus, our large dataset replicates the previously observed dependence of integrative properties of SCs on their dorsoventral position, and shows that this location dependence further distinguishes SCs from L2PCs.
 
-## Inter-animal differences in the intrinsic properties of stellate cells
+### Inter-animal differences in the intrinsic properties of stellate cells
 
 To what extent does variability between the integrative properties of SCs at a given dorsoventral location arise from differences between animals? Comparing specific features between individual animals suggested that their distributions could be almost completely non-overlapping, despite consistent and strong dorsoventral tuning (Figure 4A). If this apparent inter-animal variability results from the random sampling of a distribution determined by a common underlying set point, then fitting the complete data set with a mixed model in which animal identity is included as a random effect should reconcile the apparent differences between animals (Figure 4B). In this scenario, the conditional R2 estimated from the mixed model, in other words, the estimate of variance explained by animal identity and location, should be similar to the marginal R2 value, which indicates the variance explained by location only. By contrast, if differences between animals contribute to experimental variability, the mixed model should predict different fitting parameters for each animal, and the estimated conditional R2 should be greater than the corresponding marginal R2 (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig4-v4.jpg)
+
+**Figure 4.:** (A) Examples of rheobase as a function of dorsoventral position for two mice. (B, C) Each line is the fit of simulated data from a different subject for datasets in which there is no inter-subject variability (B) or in which intersubject variability is present (C). Fitting data from each subject independently with linear regression models suggests intersubject variation in both datasets (left). By contrast, after fitting mixed effect models (right) intersubject variation is no longer suggested for the dataset in which it is absent (B) but remains for the dataset in which it is present (C). (D) Each line is the fit of rheobase as a function of dorsoventral location for a single mouse. The fits were carried out independently for each mouse (left) or using a mixed effect model with mouse identity as a random effect (right). (E) The intercept (I), sum of the intercept and slope (I + S), and slopes realigned to a common intercept (right) for each mouse obtained by fitting mixed effect models for each property as a function of dorsoventral position.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig4-figsupp1-v4.jpg)
+
+**Figure 4—figure supplement 1.:** Membrane properties of SCs from slices containing more medial (blue) and more lateral (red) parts of the MEC plotted as a function of dorsal ventral position. Neurons from more medial slices had a higher spike threshold, a lower spike maximum and a less-negative spike after-hyperpolarization (see Supplementary file 6). Properties are labelled as in Figure 2.
 
 Fitting the experimental measures for each feature with mixed models suggests that differences between animals contribute substantially to the variability in properties of SCs. In contrast to simulated data in which inter-animal differences are absent (Figure 4B), differences in fits between animals remained after fitting with the mixed model (Figure 4D). This corresponds with expectations from fits to simulated data containing inter-animal variability (Figure 4C). To visualize inter-animal variability for all measured features, we plot for each animal the intercept of the model fit (I), the predicted value at a location 1 mm ventral from the intercept (I+S), and the slope (lines) (Figure 4E). Strikingly, even for features such as rheobase and input resistance (IR) that are highly tuned to a neurons’ dorsoventral position, the extent of variability between animals is similar to the extent to which the property changes between dorsal and mid-levels of the MEC.
 
 If set points that determine integrative properties of SCs do indeed differ between animals, then mixed models should provide a better account of the data than linear models that are generated by pooling data across all animals. Consistent with this, we found that mixed models for all electrophysiological features gave a substantially better fit to the data than linear models that considered all neurons as independent (adjusted p<2×10−17 for all models, χ2 test, Table 1). Furthermore, even for properties with substantial (R2 value >0.1) dorsoventral tuning, the conditional R2 value for the mixed effect model was substantially larger than the marginal R2 value (Figure 4D and Table 1). Together, these analyses demonstrate inter-animal variability in key electrophysiological features of SCs, suggesting that the set points that establish the underlying integrative properties differ between animals.
 
-## Experience-dependence of intrinsic properties of stellate cells
+**Table 1.**
+ Dependence of the electrophysiological features of SCs on dorsoventral position.Key statistical parameters from analyses of the relationship between each measured electrophysiological feature and dorsoventral location. The data are ordered according to the marginal R2 for each property’s relationship with dorsoventral position. Slope is the population slope from fitting a mixed effect model for each feature with location as a fixed effect (mm−1), with p(slope) obtained by comparing this model to a model without location as a fixed effect (χ2 test). For all properties except the spike thereshold, the slope was unlikely to have arisen by chance (p<0.05). The marginal and conditional R2 values, and the minimum and maximum slopes across all mice, are obtained from the fits of mixed effect models that contain location as a fixed effect. The estimate p(vs linear) is obtained by comparing the mixed effect model containing location as a fixed effect with a corresponding linear model without random effects (χ2 test). The values of p(slope) and p(vs linear) were adjusted for multiple comparisons using the method of Benjamini and Hochberg (1995). Units for the slope measurements are units for the property mm−1. The data are from 27 mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Slope</th>
+      <th>P (slope)</th>
+      <th>Marginal R2</th>
+      <th>Conditional R2</th>
+      <th>Slope (min)</th>
+      <th>Slope (max)</th>
+      <th>P (vs linear)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IR (MΩ)</td>
+      <td>11.794</td>
+      <td>8.39e-17</td>
+      <td>0.383</td>
+      <td>0.532</td>
+      <td>9.630</td>
+      <td>14.262</td>
+      <td>4.33e-40</td>
+    </tr>
+    <tr>
+      <td>Rheobase (pA)</td>
+      <td>−119.887</td>
+      <td>9.07e-15</td>
+      <td>0.382</td>
+      <td>0.652</td>
+      <td>−153.873</td>
+      <td>−76.130</td>
+      <td>6.55e-43</td>
+    </tr>
+    <tr>
+      <td>I-F slope (Hz/pA)</td>
+      <td>0.036</td>
+      <td>6.06e-10</td>
+      <td>0.228</td>
+      <td>0.561</td>
+      <td>0.019</td>
+      <td>0.087</td>
+      <td>6.82e-34</td>
+    </tr>
+    <tr>
+      <td>Tm (ms)</td>
+      <td>2.646</td>
+      <td>3.70e-12</td>
+      <td>0.192</td>
+      <td>0.343</td>
+      <td>1.809</td>
+      <td>3.979</td>
+      <td>1.20e-29</td>
+    </tr>
+    <tr>
+      <td>Res. frequency (Hz)</td>
+      <td>−1.334</td>
+      <td>4.13e-09</td>
+      <td>0.122</td>
+      <td>0.553</td>
+      <td>−2.299</td>
+      <td>−0.342</td>
+      <td>6.37e-65</td>
+    </tr>
+    <tr>
+      <td>Sag</td>
+      <td>0.033</td>
+      <td>6.06e-10</td>
+      <td>0.121</td>
+      <td>0.347</td>
+      <td>0.016</td>
+      <td>0.043</td>
+      <td>1.91e-38</td>
+    </tr>
+    <tr>
+      <td>Spike maximum (mV)</td>
+      <td>1.900</td>
+      <td>1.85e-05</td>
+      <td>0.064</td>
+      <td>0.436</td>
+      <td>−1.288</td>
+      <td>3.297</td>
+      <td>1.14e-50</td>
+    </tr>
+    <tr>
+      <td>Res. magnitude</td>
+      <td>−0.114</td>
+      <td>6.34e-08</td>
+      <td>0.064</td>
+      <td>0.198</td>
+      <td>−0.138</td>
+      <td>−0.087</td>
+      <td>9.13e-20</td>
+    </tr>
+    <tr>
+      <td>Vm (mV)</td>
+      <td>−0.884</td>
+      <td>3.67e-05</td>
+      <td>0.046</td>
+      <td>0.348</td>
+      <td>−1.965</td>
+      <td>0.150</td>
+      <td>8.73e-35</td>
+    </tr>
+    <tr>
+      <td>Spike AHP (mV)</td>
+      <td>−0.645</td>
+      <td>1.93e-02</td>
+      <td>0.011</td>
+      <td>0.257</td>
+      <td>−1.828</td>
+      <td>0.408</td>
+      <td>1.82e-17</td>
+    </tr>
+    <tr>
+      <td>Spike width (ms)</td>
+      <td>0.017</td>
+      <td>1.93e-02</td>
+      <td>0.010</td>
+      <td>0.643</td>
+      <td>−0.021</td>
+      <td>0.055</td>
+      <td>7.04e-139</td>
+    </tr>
+    <tr>
+      <td>Spike threshold (mV)</td>
+      <td>0.082</td>
+      <td>8.20e-01</td>
+      <td>0.000</td>
+      <td>0.510</td>
+      <td>−2.468</td>
+      <td>2.380</td>
+      <td>2.03e-17</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experience-dependence of intrinsic properties of stellate cells
 
 Because neuronal integrative properties may be modified by changes in neural activity (Zhang and Linden, 2003), we asked whether experience influences the measured electrophysiological features of SCs. We reasoned that modifying the space through which animals can navigate may drive experience-dependent plasticity in the MEC. As standard mouse housing has dimensions less than the distance between the firing fields of more ventrally located grid cells (Brun et al., 2008; Hafting et al., 2005), in a standard home cage, only a relatively small fraction of ventral grid cells is likely to be activated, whereas larger housing should lead to the activation of a greater proportion of ventral grid cells. We therefore tested whether the electrophysiological features of SCs differ between mice housed in larger environments (28,800 cm2) and those with standard home cages (740 cm2).
 
@@ -62,27 +243,27 @@ To determine whether inter-animal differences remain after accounting for housin
 
 Together, these data suggest that specific electrophysiological features of SCs may be modified by experience of large environments. After accounting for housing, significant inter-animal variation remains, suggesting that additional mechanisms acting at the level of animals rather than individual neurons also determine differences between SCs.
 
-## Inter-animal differences remain after accounting for additional experimental parameters
+### Inter-animal differences remain after accounting for additional experimental parameters
 
 To address the possibility that other experimental or biological variables could contribute to inter-animal differences, we evaluated the effects of home cage size (Supplementary files 3–4), brain hemisphere (Supplementary file 5), mediolateral position (Figure 4—figure supplement 1 and Supplementary file 6), the identity of the experimenter (Supplementary file 7) and time since slice preparation (Supplementary files 8 and 9). Several of the variables influenced some measured electrophysiological features, for example properties primarily related to the action potential waveform depended on the mediolateral position of the recorded neuron (Supplementary file 6; Canto and Witter, 2012; Yoshida et al., 2013), but significant inter-animal differences remained after accounting for each variable. We carried out further analyses using models that included housing, mediolateral position, experimenter identity and the direction in which sequential recordings were obtained as fixed effects (Supplementary file 10), and using models fit to minimal datasets in which housing, mediolateral position and the recording direction were identical (Supplementary file 11). These analyses again found evidence for significant inter-animal differences.
 
 Inter-animal differences could arise if the health of the recorded neurons differed between brain slices. To minimize this possibility, we standardized our procedures for tissue preparation (see 'Materials and methods'), such that slices were of consistent high quality as assessed by low numbers of unhealthy cells and by visualization of soma and dendrites of neurons in the slice. Several further observations are consistent with comparable quality of slices between experiments. First, if the condition of the slices had differed substantially between animals, then in better quality slices, it should be easier to record from more neurons, in which case features that depend on tissue quality would correlate with the number of recorded neurons. However, the majority (10/12) of the electrophysiological features were not significantly (p>0.2) associated with the number of recorded neurons (Supplementary file 12). Second, analyses of inter-animal differences that focus only on data from animals for which >35 recordings were made, which should only be feasible with uniformly high-quality brain slices, are consistent with conclusions from analysis of the larger dataset (Supplementary file 13). Third, the conditional R2 values of electrophysiological features of L2PCs are much lower than those for SCs recorded under the same experimental conditions (Table 1 and Supplementary file 1), suggesting that inter-animal variation may be specific to SCs and cannot be explained by slice conditions. Together, these analyses indicate that differences between animals remain after accounting for experimental and technical factors that might contribute to variation in the measured features of SCs.
 
-## The distribution of intrinsic properties is consistent with a continuous rather than a modular organization
+### The distribution of intrinsic properties is consistent with a continuous rather than a modular organization
 
 The dorsoventral organization of SC integrative properties is well established, but whether this results from within animal variation consistent with a small number of discrete set points that underlie a modular organization (Figure 1B) is unclear. To evaluate modularity, we used datasets with n ≥ 34 SCs (N = 15 mice, median age = 37 days, age range = 18–43 days). We focus initially on rheobase, which is the property with the strongest correlation to dorsoventral location, and resonant frequency, which is related to the oscillatory dynamics underlying dorsoventral tuning in some models of grid firing (e.g. Burgess et al., 2007; Giocomo et al., 2007). For n ≥ 34 SCs, we expect that if properties are modular, then this would be detected by the modified gap statistic in at least 50% of animals (Figure 1—figure supplements 2C and 3). By contrast, we find that for datasets from the majority of animals, the modified gap statistic identifies only a single mode in the distribution of rheobase values (Figure 5A and Figure 6) (N = 13/15) and of resonant frequencies (Figure 5B and Figure 6) (N = 14/15), indicating that these properties have a continuous rather than a modular distribution. Consistent with this, smoothed distributions did not show clearly separated peaks for either property (Figure 5). The mean and 95% confidence interval for the probability of evaluating a dataset as clustered (pdetect) was 0.133 and 0.02–0.4 for rheobase and 0.067 and 0.002–0.32 for resonant frequency. These values of pdetect were not significantly different from the proportions expected given the false positive rate of 0.1 in the complete absence of clustering (p=0.28 and 0.66, binomial test). Thus, the rheobase and resonant frequency of SCs, although depending strongly on a neuron’s dorsoventral position, do not have a detectable modular organization.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig5-v4.jpg)
 
-**Figure 5.:** (A, B) Rheobase (A) and resonant frequency (B) are plotted as a function of dorsoventral position separately for each animal. Marker color and type indicate the age and housing conditions of the animal (‘+’ standard housing, ‘x’ large housing). KSDs (arbitrary bandwidth, same for all animals) are also shown. The number of clusters in the data (kest) is indicated for each animal ().k^
+**Figure 5.:** (A, B) Rheobase (A) and resonant frequency (B) are plotted as a function of dorsoventral position separately for each animal. Marker color and type indicate the age and housing conditions of the animal (‘+’ standard housing, ‘x’ large housing). KSDs (arbitrary bandwidth, same for all animals) are also shown. The number of clusters in the data (kest) is indicated for each animal ($k^$).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/52258/elife-52258-fig6-v4.jpg)
 
-**Figure 6.:** (A, B) Histograms showing the kest () counts across all mice for each different measured sub-threshold (k^A) and supra-threshold (B) intrinsic property. The maximum k evaluated was 8. The proportion of each measured property with kest>1 was compared using binomial tests (with N = 15) to the proportion expected if the underlying distribution of that property is always clustered with all separation between modes ≥5 standard deviations (pink text), or if the underlying distribution of the property is uniform (purple text). For all measured properties, the values of kest () were indistinguishable (p>0.05) from the data generated from a uniform distribution and differed from the data generated from a multi-modal distribution (p<1×10k^−6).
+**Figure 6.:** (A, B) Histograms showing the kest ($k^$) counts across all mice for each different measured sub-threshold (A) and supra-threshold (B) intrinsic property. The maximum k evaluated was 8. The proportion of each measured property with kest>1 was compared using binomial tests (with N = 15) to the proportion expected if the underlying distribution of that property is always clustered with all separation between modes ≥5 standard deviations (pink text), or if the underlying distribution of the property is uniform (purple text). For all measured properties, the values of kest ($k^$) were indistinguishable (p>0.05) from the data generated from a uniform distribution and differed from the data generated from a multi-modal distribution (p<1×10−6).
 
 When we investigated the other measured integrative properties, we also failed to find evidence for modularity. Across all properties, for any given property, at most 3 out of 15 mice were evaluated as having a clustered organization using the modified gap statistic (Figure 6). This does not differ significantly from the proportion expected by chance when no modularity is present (p>0.05, binomial test). Consistent with this, the average proportion of datasets evaluated as modular across all measured features was 0.072 ± 0.02 (± SEM), which is similar to the expected false-positive rate. By contrast, the properties of grid firing fields previously recorded with tetrodes in behaving animals (Stensola et al., 2012) were detected as having a modular organization using the modified gap statistic (Figure 1—figure supplement 5). For seven grid-cell datasets with n ≥ 20, the mean for pdetect is 0.86, with 95% confidence intervals of 0.42 to 0.996. We note here that discontinuity algorithms that were previously used to assess the modularity of grid field properties (Giocomo et al., 2014; Stensola et al., 2012) did indicate significant modularity in the majority of the intrinsic properties measured in our dataset (N = 13/15 and N = 12/15, respectively), but this was attributable to false positives resulting from the relatively even sampling of recording locations (see Figure 1—figure supplement 4A). Therefore, we conclude that it is unlikely that any of the intrinsic integrative properties of SCs that we examined have organization within individual animals resembling the modular organization of grid cells in behaving animals.
 
-## Multiple sources of variance contribute to diversity in stellate cell intrinsic properties
+### Multiple sources of variance contribute to diversity in stellate cell intrinsic properties
 
 Finally, because many of the measured electrophysiological features of SCs emerge from shared ionic mechanisms (Dodson et al., 2011; Garden et al., 2008; Pastoll et al., 2012a), we asked whether dorsoventral tuning reflects a single core mechanism and whether inter-animal differences are specific to this mechanism or manifest more generally.
 
@@ -104,7 +285,7 @@ Phenotypic variation is found across many areas of biology (Geiler-Samerotte et 
 
 **Figure 8.:** (A) The configuration of a cell type can be conceived of as a trough (arrow head) in a developmental landscape (solid line). In this scheme, the trough can be considered as a set point. Differences between cells (filled circles) reflect variation away from the set point. (B) Neurons from different animals or located at different dorsoventral positions can be conceptualized as arising from different troughs in the developmental landscape. (C) Variation may reflect inter-animal differences in factors that establish gradients (upper left) and in factors that are uniformly distributed (lower left), combining to generate set points that depend on animal identity and location (right). Each line corresponds to schematized properties of a single animal.
 
-## A conceptual framework for within cell type variability
+### A conceptual framework for within cell type variability
 
 Theoretical models suggest how different cell types can be generated by varying target concentrations of intracellular Ca2+ or rates of ion channel expression (O'Leary et al., 2014). The within cell type variability predicted by these models arises from different initial conditions and may explain the variability in our data between neurons from the same animal at the same dorsoventral location (Figure 8A). By contrast, the dependence of integrative properties on position and their variation between animals implies additional mechanisms that operate at the circuit level (Figure 8B). In principle, this variation could be accounted for by inter-animal differences in dorsoventrally tuned or spatially uniform factors that influence ion channel expression or target points for intracellular Ca2+ (Figure 8C).
 
@@ -112,7 +293,7 @@ The mechanisms for within cell type variability that are suggested by our resu
 
 Our comparison of neurons from animals in standard and large cages provides evidence for the idea that within cell-type excitable properties are modified by experience (Zhang and Linden, 2003). For example, granule cells in the dentate gyrus that receive input from SCs increase their excitability when animals are housed in enriched environments (Green and Greenough, 1986; Ohline and Abraham, 2019). Our experiments differ in that we increased the size of the environment with the goal of activating more ventral grid cells, whereas previous enrichment experiments have focused on increasing the environmental complexity and availability of objects for exploration. Further investigation will be required to dissociate the influence of each factor on excitability.
 
-## Implications of continuous dorsoventral organization of stellate cell integrative properties for grid cell firing
+### Implications of continuous dorsoventral organization of stellate cell integrative properties for grid cell firing
 
 Dorsoventral gradients in the electrophysiological features of SCs have stimulated cellular models for the organization of grid firing (Burgess, 2008; Giocomo and Hasselmo, 2008b; Grossberg and Pilly, 2012; O'Donnell and Nolan, 2011; Widloski and Fiete, 2014). Increases in spatial scale following deletion of HCN1 channels (Giocomo et al., 2011), which in part determine the dorsoventral organization of SC integrative properties (Garden et al., 2008; Giocomo and Hasselmo, 2009), support a relationship between the electrophysiological properties of SCs and grid cell spatial scales. Our data argue against models that explain this relationship through single cell computations (Burgess, 2008; Burgess et al., 2007; Giocomo et al., 2007), as in this case, the modularity of integrative properties of SCs is required to generate modularity of grid firing. A continuous dorsoventral organization of the electrophysiological properties of SCs could support the modular grid firing generated by self-organizing maps (Grossberg and Pilly, 2012) or by synaptic learning mechanisms (Kropff and Treves, 2008; Urdapilleta et al., 2017). It is less clear how a continuous gradient would affect the organization of grid firing predicted by continuous attractor network models, which can instead account for modularity by limiting synaptic interactions between modules (Burak and Fiete, 2009; Bush and Burgess, 2014; Fuhs and Touretzky, 2006; Guanella et al., 2007; Shipston-Sharman et al., 2016; Widloski and Fiete, 2014; Yoon et al., 2013). Modularity of grid cell firing could also arise through the anatomical clustering of calbindin-positive L2PCs (Ray et al., 2014; Ray and Brecht, 2016). Because many SCs do not appear to generate grid codes and as the most abundant functional cell type in the MEC appears to be non-grid spatial neurons (Diehl et al., 2017; Hardcastle et al., 2017), the continuous dorsoventral organization of SC integrative properties may also impact grid firing indirectly through modulation of these codes.
 
@@ -120,7 +301,7 @@ Our results add to previous comparisons of medially and laterally located SCs (C
 
 The continuous dorsoventral variation of the electrophysiological features of SCs suggested by our analysis is consistent with continuous dorsoventral gradients in gene expression along layer 2 of the MEC (Ramsden et al., 2015). For example, labelling of the mRNA and protein for the HCN1 ion channel suggests a continuous dorsoventral gradient in its expression (Nolan et al., 2007; Ramsden et al., 2015). It is also consistent with single-cell RNA sequencing analysis of other brain areas, which indicates that although the expression profiles for some cell types cluster around a point in feature space, others lie along a continuum (Cembrowski and Menon, 2018). It will be interesting in future to determine whether gene expression continua establish corresponding continua of electrophysiological features (Liss et al., 2001).
 
-## Functional consequences of within cell type inter-animal variability
+### Functional consequences of within cell type inter-animal variability
 
 What are the functional roles of inter-animal variability? In the crab stomatogastric ganglion, inter-animal variation correlates with circuit performance (Goaillard et al., 2009). Accordingly, variation in intrinsic properties of SCs might correlate with differences in grid firing (Domnisoru et al., 2013; Gu et al., 2018; Rowland et al., 2018; Schmidt-Hieber and Häusser, 2013) or behaviors that rely on SCs (Kitamura et al., 2014; Qin et al., 2018; Tennant et al., 2018). It is interesting in this respect that there appear to be inter-animal differences in the spatial scale of grid modules (Figure 5 of Stensola et al., 2012). Modification of grid field scaling following deletion of HCN1 channels is also consistent with this possibility (Giocomo et al., 2011; Mallory et al., 2018). Alternatively, inter-animal differences may reflect multiple ways to achieve a common higher-order phenotype. According to this view, coding of spatial location by SCs would not differ between animals despite lower level variation in their intrinsic electrophysiological features. This is related to the idea of degeneracy at the level of single-cell electrophysiological properties (Marder and Goaillard, 2006; Mittal and Narayanan, 2018; O'Leary et al., 2014; Swensen and Bean, 2005), except that here the electrophysiological features differ between animals whereas the higher-order circuit computations may nevertheless be similar.
 
@@ -128,27 +309,27 @@ In conclusion, our results identify substantial within cell type variation in ne
 
 ## Materials and methods
 
-## Mouse strains
+### Mouse strains
 
 All experimental procedures were performed under a United Kingdom Home Office license and with approval of the University of Edinburgh’s animal welfare committee. Recordings of many SCs per animal used C57Bl/6J mice (Charles River). Recordings targeting calbindin cells used a Wfs1Cre line (Wfs1-Tg3-CreERT2) obtained from Jackson Labs (Strain name: B6;C3-Tg(Wfs1-cre/ERT2)3Aibs/J; stock number:009103) crossed to RCE:loxP (R26R CAG-boosted EGFP) reporter mice (described in Miyoshi et al., 2010). To promote expression of Cre in the mice, tamoxifen (Sigma, 20 mg/ml in corn oil) was administered on three consecutive days by intraperitoneal injections, approximately 1 week before experiments. Mice were group housed in a 12 hr light/dark cycle with unrestricted access to food and water (light on 07.30–19.30 hr). Mice were usually housed in standard 0.2 × 0.37 m cages that contained a cardboard roll for enrichment. A subset of the mice was instead housed from pre-weaning ages in a larger 2.4 × 1.2 m cage that was enriched with up to 15 bright plastic objects and eight cardboard rolls (Figure 2—figure supplement 1). Thus, the large cages had more items but at a slightly lower density (large cages — up to 1 item per 0.125 m2; standard cages — 1 item per 0.074 m2). All experiments in the standard cage used male mice. For experiments in the large cage, two mice were female, six mice were male and one was not identified. Because we did not find significant effects of sex on individual electrophysiologically properties, all mice were included in the analyses reported in the text. When only male mice were included, the effects of housing on the first principal component remained significant, whereas the effects of housing on individual electrophysiologically properties no longer reach statistical significance after correcting for multiple comparisons. Additional analyses that consider only male mice are provided in the code associated with the manuscript.
 
-## Slice preparation
+### Slice preparation
 
 Methods for preparation of parasagittal brain slices containing medial entorhinal cortex were based on procedures described previously (Pastoll et al., 2012b). Briefly, mice were sacrificed by cervical dislocation and their brains carefully removed and placed in cold (2–4°C) modified ACSF, with composition (in mM): NaCl 86, NaH2PO4 1.2, KCl 2.5, NaHCO3 25, glucose 25, sucrose 75, CaCl2 0.5, and MgCl2 7. Brains were then hemisected and sectioned, also in modified ACSF at 4–8°C, using a vibratome (Leica VT1200S). To minimize variation in the slicing angle, the hemi-section was cut along the midline of the brain and the cut surface of the brain was glued to the cutting block. After cutting, brains were placed at 36°C for 30 min in standard ACSF, with composition (in mM): NaCl 124, NaH2PO4 1.2, KCl 2.5, NaHCO3 25, glucose 20, CaCl2 2, and MgCl2 1. They were then allowed to cool passively to room temperature. All slices were prepared by the same experimenter (HP), who followed the same procedure on each day.
 
-## Recording methods
+### Recording methods
 
 Whole-cell patch-clamp recordings were made between 1 to 10 hr after slice preparation using procedures described previously (Pastoll et al., 2013; Pastoll et al., 2012a; Pastoll et al., 2012b; Sürmeli et al., 2015). Recordings were made from slice perfused in standard ACSF maintained at 34–36°C. In these conditions, we observe spontaneous fast inhibitory and excitatory postsynaptic potentials, but do not find evidence for tonic GABAergic or glutamatergic currents. Patch electrodes were filled with the following intracellular solution (in mM): K gluconate 130; KCl 10, HEPES 10, MgCl2 2, EGTA 0.1, Na2ATP 2, Na2GTP 0.3 and NaPhosphocreatine 10. The open tip resistance was 4–5 MΩ, all seal resistances were >2 GΩ and series resistances were <30 MΩ. Recordings were made in current clamp mode using Multiclamp 700B amplifiers (Molecular Devices, Sunnyvale, CA, USA) connected to PCs via Instrutech ITC-18 interfaces (HEKA Elektronik, Lambrecht, Germany) and using Axograph X acquisition software (http://axographx.com/). Pipette capacitance and series resistances were compensated using the capacitance neutralization and bridge-balance amplifier controls. An experimentally measured liquid junction potential of 12.9 mV was not corrected for. Stellate cells were identified by their large sag response and the characteristic waveform of their action potential after hyperpolarization (see Alonso and Klink, 1993; Gonzalez-Sulser et al., 2014; Nolan et al., 2007; Pastoll et al., 2012a).
 
 To maximize the number of cells recorded per animal, we adopted two strategies. First, to minimize the time required to obtain data from each recorded cell, we measured electrophysiological features using a series of three short protocols following initiation of stable whole-cell recordings. We used responses to sub-threshold current steps to estimate passive membrane properties (Figure 2A), a frequency modulated sinusoidal current waveform (ZAP waveform) to estimate impedance amplitude profiles (Figure 2B), and a linear current ramp to estimate the action potential threshold and firing properties (Figure 2C). From analysis of data obtained with these protocols, we obtained 12 quantitative measures that describe the sub- and supra-threshold integrative properties of each recorded cell (Figure 2A–C). Second, for the majority of mice, two experimenters made recordings in parallel from neurons in two sagittal brain sections from the same hemisphere. The median dorsal-ventral extent of the recorded SCs was 1644 µm (range 0–2464 µm). Each experimenter aimed to sample recording locations evenly across the dorsoventral extent of the MEC, and for most animals, each experimenter recorded sequentially from opposite extremes of the dorsoventral axis. Each experimenter varied the starting location for recording between animals. For several features, the direction of recording affected their measured dependence on dorsoventral location, but the overall dependence of these features on dorsoventral location was robust to this effect (Supplementary file 9).
 
-## Measurement of electrophysiological features and neuronal location
+### Measurement of electrophysiological features and neuronal location
 
 Electrophysiological recordings were analyzed in Matlab (Mathworks) using a custom-written semi-automated pipeline. We defined each feature as follows (see also Nolan et al., 2007; Pastoll et al., 2012a): resting membrane potential was the mean of the membrane potential during the 1 s prior to injection of the current steps used to assess subthreshold properties; input resistance was the steady-state voltage response to the negative current steps divided by their amplitude; membrane time constant was the time constant of an exponential function fit to the initial phase of membrane potential responses to the negative current steps; the sag coefficient was the steady-state divided by the peak membrane potential response to the negative current steps; resonance frequency was the frequency at which the peak membrane potential impedance was found to occur; resonance magnitude was the ratio between the peak impedance and the impedance at a frequency of 1 Hz; action potential threshold was calculated from responses to positive current ramps as the membrane potential at which the first derivative of the membrane potential crossed 20 mv ms−1 averaged across the first five spikes, or fewer if fewer spikes were triggered; rheobase was the ramp current at the point when the threshold was crossed on the first spike; spike maximum was the mean peak amplitude of the action potentials triggered by the positive current ramp; spike width was the duration of the action potentials measured at the voltage corresponding to the midpoint between the spike threshold and spike maximum; the AHP minimum was the negative peak membrane potential of the after hyperpolarization following the first action potential when a second action potential also occurred; and the F-I slope was the linear slope of the relationship between the spike rate and the injected ramp current over a 500 ms window.
 
 The location of each recorded neuron was estimated as described previously (Garden et al., 2008; Pastoll et al., 2012b). Following each recording, a low magnification image was taken of the slice with the patch-clamp electrode at the recording location. The image was calibrated and then the distance measured from the dorsal border of the MEC along the border of layers 1 and 2 to the location of the recorded cell.
 
-## Analysis of location-dependence, experience-dependence and inter-animal differences
+### Analysis of location-dependence, experience-dependence and inter-animal differences
 
 Analyses of location-dependence and inter-animal differences used R 3.4.3 (R Core Team, Vienna, Austria) and R Studio 1.1.383 (R Studio Inc, Boston, MA).
 
@@ -158,13 +339,13 @@ To evaluate the location-dependence of a given feature, p-values were calculate
 
 To evaluate partial correlations between features, we used the function cor2pcor from the R package corpcor (Schafer et al., 2017). Principal components analysis used core R functions.
 
-## Implementation of tests for modularity
+### Implementation of tests for modularity
 
 To establish statistical tests to distinguish ‘modular’ from ‘continuous’ distributions given relatively few observations, we classified datasets as continuous or modular by modifying the gap statistic algorithm (Tibshirani et al., 2001). The gap statistic estimates the number of clusters (kest) that best account for the data in any given dataset (Figure 1—figure supplement 1A-C). However, this estimate may be prone to false positives, particularly where the numbers of observations are low. We therefore introduced a thresholding mechanism for tuning the sensitivity of the algorithm so that the false-positive rate, which is the rate of misclassifying datasets drawn from continuous (uniform) distributions as ‘modular’, is low, constant across different numbers of cluster modes and insensitive to dataset size (Figure 1—figure supplement 1D-G). With this approach, we are able to estimate whether a dataset is best described as lacking modularity (kest = 1), or having a given number of modes (kest > 1). Below, we describe tests carried out to validate the approach.
 
 To illustrate the sensitivity and specificity of the modified gap statistic algorithm, we applied it to simulated datasets drawn either from a uniform distribution (k = 1, n = 40) or from a bimodal distribution with separation between the modes of five standard deviations (k = 2, n = 40, sigma = 5) (Figure 1—figure supplement 2A). We set the thresholding mechanism so that kest for each distinct k (where kest ≥2) has a false-positive rate of 0.01. In line with this, testing for 2 ≤ kest ≤ 8 (the maximum k expected to occur in grid spacing in the MEC), across multiple (N = 1000) simulated datasets drawn from the uniform distribution, produced a low false-positive rate (P(kest)≥2 = ~0.07), whereas when the data were drawn from the bimodal distribution, the ability to detect modular organization (pdetect) was good (P[kest]≥2 = ~0.8) (Figure 1—figure supplement 2B). The performance of the statistic improved with larger separation between clusters and with greater numbers of data points per dataset (Figure 1—figure supplement 2C) and is relatively insensitive to the numbers of clusters (Figure 1—figure supplement 2D). The algorithm maintains high rates of pdetect when modes have varying densities and when sigma between modes varies in a manner similar to grid spacing data (Figure 1—figure supplement 3).
 
-## Analysis of extracellular recording data from other laboratories
+### Analysis of extracellular recording data from other laboratories
 
 Recently described algorithms (Giocomo et al., 2014; Stensola et al., 2012) address the problem of identifying modularity when data are sampled from multiple locations and data values vary as a function of location, as is the case for the mean spacing of grid fields for cells at different dorsoventral locations recorded in behaving animals using tetrodes (Hafting et al., 2005). They generate log-normalized discontinuity (which we refer to here as lnDS) or discreteness scores, which are the log of the ratio of discontinuity or discreteness scores for the data points of interest and for the sampling locations, with positive values interpreted as evidence for clustering (Giocomo et al., 2014; Stensola et al., 2012). However, in simulations of datasets generated from a uniform distribution with evenly spaced recording locations, we find that the lnDS is always greater than zero (Figure 1—figure supplement 4A). This is because evenly spaced locations result in a discontinuity score that approaches zero, and therefore the log ratio of the discontinuity of the data to this score will be positive. Thus, for evenly spaced data, the lnDS is guaranteed to produce false-positive results. When locations are instead sampled from a uniform distribution, approximately half of the simulated datasets have a log discontinuity ratio greater than 0 (Figure 1—figure supplement 4A), which in previous studies would be interpreted as evidence of modularity (Giocomo et al., 2014). Similar discrepancies arise for the discreteness measure (Stensola et al., 2012). To address these issues, we introduced a log discontinuity ratio threshold, so that the discontinuity method could be matched to produce a similar false-positive rate to the adapted gap statistic algorithm used in the example above. After including this modification, we found that for a given false-positive rate, the adapted gap statistic is more sensitive at detecting modularity in the simulated datasets (Figure 4—figure supplement 1B).
 

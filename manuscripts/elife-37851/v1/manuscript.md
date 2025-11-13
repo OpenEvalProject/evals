@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.37851.001 Cell fate decisions occur through the switch-like, irreversible activation of fate-specifying genes. These activation events are often assumed to be tightly coupled to changes in upstream transcription factors, but could also be constrained by cis -epigenetic mechanisms at individual gene loci. Here, we studied the activation of Bcl11b , which controls T-cell fate commitment. To disentangle cis and trans effects, we generated mice where two Bcl11b copies are tagged with distinguishable fluorescent proteins. Quantitative live microscopy of progenitors from these mice revealed that Bcl11b turned on after a stochastic delay averaging multiple days, which varied not only between cells but also between Bcl11b alleles within the same cell. Genetic perturbations, together with mathematical modeling, showed that a distal enhancer controls the rate of epigenetic activation, while a parallel Notch-dependent trans -acting step stimulates expression from activated loci. These results show that developmental fate transitions can be controlled by stochastic cis -acting events on individual loci.
+Cell fate decisions occur through the switch-like, irreversible activation of fate-specifying genes. These activation events are often assumed to be tightly coupled to changes in upstream transcription factors, but could also be constrained by cis-epigenetic mechanisms at individual gene loci. Here, we studied the activation of Bcl11b, which controls T-cell fate commitment. To disentangle cis and trans effects, we generated mice where two Bcl11b copies are tagged with distinguishable fluorescent proteins. Quantitative live microscopy of progenitors from these mice revealed that Bcl11b turned on after a stochastic delay averaging multiple days, which varied not only between cells but also between Bcl11b alleles within the same cell. Genetic perturbations, together with mathematical modeling, showed that a distal enhancer controls the rate of epigenetic activation, while a parallel Notch-dependent trans-acting step stimulates expression from activated loci. These results show that developmental fate transitions can be controlled by stochastic cis-acting events on individual loci.
 
 ## Introduction
 
@@ -34,23 +34,63 @@ Epigenetic control is ordinarily difficult to disentangle from control due to ch
 
 Using this approach of tracking two gene copies, we have studied the developmental activation of Bcl11b, a key driver of T-cell commitment and identity. To become a T-cell, hematopoietic progenitors transition through a series of developmental states, where they lose alternate lineage potential and eventually commit to the T-cell lineage (Figure 1A). T-cell lineage commitment requires the irreversible switch-like activation of Bcl11b, which serves to repress alternate lineage potential and establish T-lineage identity (Ikawa et al., 2010; Li et al., 2010a; Li et al., 2010b). Bcl11b is regulated by an ensemble of transcription factors, including Runx1, GATA-3, TCF-1, and Notch, which bind to multiple locations on the gene locus (Li et al., 2013; Kueh et al., 2016). However, even when these developmentally controlled transcription factors have been fully mobilized, Bcl11b activation occurs only after an extended time delay of ~4 days, allowing pre-commitment expansion of progenitors (Kueh et al., 2016). During activation, the Bcl11b locus remodels its epigenetic state, undergoing changes in DNA methylation and histone modification (Ji et al., 2010; Zhang et al., 2012), nuclear positioning, genome compartmentalization and looping interactions (Hu et al., 2018), and expression of a cis-acting lncRNA transcript (Isoda et al., 2017). These observations suggest that the dynamics of Bcl11b activation could be determined by epigenetic processes as well as transcription factors.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of early T-cell development. Bcl11b turns on to silence alternate fate potentials and drive T-cell fate commitment. ETP – early thymic progenitor; DN2 – CD4- CD8-double negative-2A progenitor; DP – CD4+ CD8+; NK – natural killer; DC – dendritic cell. (B) Dual-allelic Bcl11b reporter cells, where two distinguishable fluorescent proteins (YFP and mCherry) are inserted non-disruptively into the same sites on the two endogenous Bcl11b loci. (C) Flow cytometry plots show cKit versus CD25 levels in CD4-CD8- double negative (DN) thymic progenitors (left), along with Bcl11b-YFP versus Bcl11b-mCh expression levels in the indicated DN progenitor subsets from dual Bcl11b reporter mice. Arrowheads indicate cells expressing one copy of Bcl11b. (D) Flow plots show Bcl11b-YFP versus Bcl11b-mCh levels in CD4+CD8+double positive (DP) T-cell precursors from the thymus (left), or CD4 (center) or CD8 (right) T-cells from the spleen. Results are representative of analysis of 6–8 mice from two independent experiments. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The two Bcl11b loci were targeted in embryonic stem (ES) cells using homologous recombination, followed by drug selection using the indicated drug-resistance markers (vertical arrows). ES cells were then injected into blastocysts (horizontal arrows) to generate the indicated mice. These mice were subsequently bred to generate the appropriate two-color mice for experiments (see Materials and methods). To generate the enhancer disrupted ES cells, the dual-color tagged ES line was retargeted with a deletion construct including a selectable hygromycin resistance gene (hyg). Cells with the correct insertion were then used to generate mice.
+
 To separately follow two Bcl11b copies in developing cells, we engineered a dual-color reporter mouse, where the two Bcl11b copies are tagged with distinguishable fluorescent proteins. We then used quantitative live-cell imaging to follow Bcl11b activation dynamics in single progenitor lineages, along with mathematical modeling and perturbation experiments to dissect the relative contributions of cis- and trans- acting inputs to Bcl11b regulation. Our results revealed that activation of Bcl11b and consequent T-cell commitment require a stochastic, cis-acting epigenetic step on the Bcl11b locus. This step occurs independently at the two alleles in the same cell, with a slow timescale spanning multiple days and cell cycles. A separate trans-acting step, controlled by the T-cell developmental signal Notch, occurs in parallel with this cis-acting step and provides an additional necessary input for Bcl11b activation. Finally, we found that over the course of development, T-cell progenitors lose the ability to activate the cis-epigenetic switch, and as a result, can progress to final differentiated states with only one Bcl11b locus stably activated. Together, these results show that intrinsically stochastic events occurring at single gene copies can determine the timing and outcome of mammalian cell fate decisions.
 
 ## Results
 
-## Two Bcl11b copies show slow, independent activation in single progenitor lineages
+### Two Bcl11b copies show slow, independent activation in single progenitor lineages
 
 We generated a double knock-in reporter mouse strain, with an mCitrine yellow fluorescent protein (YFP) inserted non-disruptively in the 3’-untranslated region of one Bcl11b copy and an mCherry red fluorescent protein (mCh) at the same site in the other copy (Figure 1B and Figure 1—figure supplement 1). Both Bcl11b copies contain a floxed neomycin resistance cassette downstream of the fluorescent protein (Figure 1—figure supplement 1); however, we have shown conclusively, using Cre-mediated excision, that this cassette has no effect on Bcl11b activation (Kueh et al., 2016). We isolated thymocyte populations at different stages of development and differentiation directly from dual reporter Bcl11b mice, and measured the fraction of cells expressing Bcl11b from each allele at stages spanning the initial onset of Bcl11b expression (Figure 1C). As reported previously (Kueh et al., 2016; Tydell et al., 2007), Bcl11b was inactive in early T-cell progenitors (ETPs), and began to turn on in the subsequent CD4, CD8 double negative (DN)2a stage, becoming expressed in all cells throughout the rest of T-cell development (Figure 1A,C,D). By DN2b and DN3 stages, the large majority of cells had turned on both Bcl11b copies. These transitions involve multiple cell cycles each, with about 2 days between late ETP and DN2a and about 3 days between DN2a and DN2b (Kueh et al., 2016). However, in the DN2a compartment where Bcl11b gene activation begins, a significant fraction of the cells expressed only one copy of Bcl11b, with roughly equal fractions of cells expressing either the YFP or mCherry (mCh) alleles (Figure 1C, arrowheads). This suggested that the two Bcl11b copies could turn on at different times in the same cell during development.
 
 To determine directly whether two Bcl11b copies switch on independently in the same cell, we used multi-day timelapse imaging to follow the two Bcl11b fluorescent reporters in clonal lineages of developing progenitors. We isolated Bcl11b-negative DN2a T-cell progenitors from dual Bcl11b reporter mice, transduced them with cyan fluorescent protein (CFP)-expressing retroviral constructs for cell tracking, and cultured them in vitro at limiting dilution with OP9-DL1 stromal cells (Schmitt and Zúñiga-Pflücker, 2002), confining them in microwells to allow tracking of descendants of each progenitor over multiple days (Figure 2A). We used OP9-DL1 cells to present the Notch ligand DL1, a critical T-cell developmental signal, and included the supportive cytokines Interleukin (IL)−7 and Flt3 ligand (see Materials and methods). The ~1 hr interval between successive frames did not permit complete lineage tracking due to rapid cell movement (Video 1), but still enabled mapping and visualization of all descendants, and determination of coarse-grained lineage relationships (Figure 2B,C, bottom left).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bcl11b-negative DN2 cells derived from bone-marrow progenitors were isolated by flow cytometry, cultured within microwells, and followed for 5 days using fluorescence imaging. Cells were then segmented using automated image analysis. (B–C). Dynamics of Bcl11b activation in two representative clonal progenitor lineages. Timelapse images (top) show developing T-cell progenitors from two representative clones (left), with segmented cell boundaries in white. Numbers (top left) indicate time in hours. Scale bar = 10 microns. Trees (bottom left) show coarse-grained cell lineage relationships for the cells shown here. Plots (center, lower rows) show Bcl11b-YFP and Bcl11b-mCh expression time traces in all cells from a single clone, with vertical gray bars indicating the time points of the image shown on the left. Horizontal lines indicate activation threshold. Colored scatterplots (bottom right) show time evolution of Bcl11b-mCh versus Bcl11b-YFP levels in single clones, from 0 hr (cyan) to 120 hr (purple). (D) Heat maps show Bcl11b-YFP and Bcl11b-mCh distributions in the polyclonal population at the indicated time points. White lines represent Bcl11b expression thresholds. Color bar (left) represents normalized cell numbers at each time point. (E) Fractions of cells having different Bcl11b allelic expression states over time, obtained by mixed Gaussian fitting of the heat maps shown. Data represent a cohort of ~200 starting cells from a single timelapse movie. Overall, data show that Bcl11b switches on slowly and stochastically in single lineages of progenitors, maintaining alternate activity states in the same clone, heritable across many divisions. Results are representative of three independent experiments. See also Figure 2—figure supplement 1 and Video 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Bone-marrow-derived Bcl11b-YFP-mCherry- DN2 progenitors were sorted, seeded on OP9-DL1 monolayers within PDMS micro-well arrays, and continuously observed using long-term timelapse imaging. Microwells seeded with single proliferating cell clones were identified, and Bcl11b activation states of descendants were then analyzed after 4 days. (A) Timelapse images show DIC (gray), YFP (yellow) and mCherry (red) fluorescence of cells descended from single progenitors. Each row represents cells within a single microwell. Images were taken between 105 and 115 hr after onset of imaging. Scale bar represents 10 microns. (B) Stacked bar chart shows the range of Bcl11b activation states observed for clonal descendants after 4 days. Left bar indicates clones where cells were all found in the same activation state; right bar gives clones with multiple activation states observed within a single clone.
+
+![Video 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-video1.mp4.jpg)
+
+**Video 1.:** Bcl11b-YFP-mCh- DN2 progenitors were cultured on OP9-DL1 monolayers with 5 ng/mL IL-7 and Flt3-L within individual PDMS micro-wells, and continuously imaged for 100 hr. Images show superposition of a DIC image (gray) and cellular fluorescent intensities from the Bcl11b-mCherry (red) and Bcl11b-YFP (green) channels, with segmented cell boundaries shown in white. For clarity, images show only the fluorescence intensities within the cell boundaries, excluding auto-fluorescence from well boundaries and OP9-DL1 monolayers. Scatter-plot (bottom-right) updates with each frame to show fluorescent intensities of segmented cells at corresponding time points. Scale bar = 50 microns.
+
 We had previously shown that about 3 days are required for half of the cells in such DN2a populations to turn on any Bcl11b expression (Kueh et al., 2016). In theory, this delay could reflect requirement for activation of some additional transcription factor. However, even a novel transcription factor would be able to work on both alleles in parallel. Instead, strikingly, imaging revealed strongly asynchronous activation of the two Bcl11b copies in the same cell during this time period. Within single clonal lineages from DN2a progenitors, one copy of Bcl11b could switch on multiple days and cell generations before the other (Figure 2B,C and Video 1), giving rise to distinct allelic expression states that persisted over multiple divisions. Across clones, however, similar percentages of cells activated Bcl11b-YFP first as compared to those turning on Bcl11b-mCherry first, consistent with independent activation (Figure 2D,E). Similar activation rates for both alleles were also observed on average across populations from individual mice regardless of parent-of-origin (data not shown), ruling out any imprinting-type bias. These results indicated that the allelic bias within clones was clonally inherited.
 
 From a dynamic point of view, we observed that in some clones, the times at which a Bcl11b allele first turned on differed between progeny of a single cell (Figure 2C, 42 hr), such that individual progenitors frequently gave rise to clonal descendants with multiple distinct states of Bcl11b allelic activation (53.3% heterogeneous after 4d, N = 15, Figure 2—figure supplement 1). A substantial percentage (~40%) of all cells remained mono-allelic in expression after 4d (Figure 2E), indicating that stochastic locus activation occurs with a slow time constant spanning multiple days. Furthermore, the fractions of cells mono-allelically expressing Bcl11b-YFP or Bcl11b-mCh increased with the same dynamics, indicating that each locus is triggered with the same stochastic activation rate. We note that the percentages of mono-allelic cells generated at given timepoints on OP9-DL1 co-culture differed from those in DN2b progenitors from the thymus, which have emerged from Bcl11b non-expressing DN2a cells at some unknown time in the past (40% versus ~15%, Figure 1C). This could reflect differences in the kinetics of Bcl11b allelic activation between the OP9-DL1 system and the thymic microenvironment. However, in both cases, we observed clearly defined Bcl11b mono-allelic as well as bi-allelic expressing populations, implying that the same slow cis- event observed in in vitro tracking experiments also governs Bcl11b activation and T-lineage commitment in the thymus. Taken together, these results suggest that timing of the Bcl11b activation switch – and the ensuing commitment to become a T-cell – is controlled independently at each Bcl11b allele by a stochastic and remarkably slow rate-limiting step.
 
-## A distal enhancer modulates stochastic Bcl11b locus activation
+### A distal enhancer modulates stochastic Bcl11b locus activation
 
 The stochastic transition of Bcl11b from an inactive to active state may be controlled by specific cis-regulatory DNA elements on the Bcl11b locus. Consistent with this idea, we found that graded changes in Notch signaling, GATA-3 activity, and TCF-1 activity alter the likelihood of all-or-none activation, rather than the amplitude of transcription (Kueh et al., 2016). Indeed, in a number of systems, cis-regulatory elements do not appear to control transcriptional amplitudes, but instead modulate the probabilities of all-or-none activation (Fukaya et al., 2016; Khan et al., 2011; Walters et al., 1995; Weintraub, 1988). To test how stochastic activation of individual Bcl11b alleles may be controlled, we examined the effect of disrupting the one known positive cis-regulatory element region, which resides ~850 kb downstream of Bcl11b within a ‘super enhancer’ at the opposite end of the same topologically associated domain (Li et al., 2013) (Figure 3A). This region, which shows distinctive histone marking and some T-lineage-specific transcription factor occupancy even before Bcl11b activation (Kueh et al., 2016), lies about 11 kb from the promoter of a Bcl11b-associated lncRNA, and loops to the Bcl11b gene body in a T-cell lineage specific manner (Hu et al., 2018; Isoda et al., 2017; Li et al., 2013). Like the Bcl11b locus itself, this enhancer region is marked by H3K27me3 in non-T lineage cells (Li et al., 2013).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of normal and enhancer-deleted two-color Bcl11b reporter strains (left). Genome browser plots (right), showing +850 kb enhancer of Bcl11b, showing distributions of histone marks (H3K4me2, H3K27me3, and H3K27Ac) and an associated LncRNA (Isoda et al., 2017). Orientation is with transcription from left to right (reversed relative to genome numbering). Gray shaded area indicates the enhancer region deleted using gene targeting (removed region: chr12:108,396,825–108,398,672, mm9). (B) Flow cytometry plots show Bcl11b-mCh versus Bcl11b-YFP levels in developing T-cell populations from dual Bcl11b reporter mice, either with an intact YFP enhancer (top), or a disrupted YFP enhancer (bottom). Results are representative of two independent experiments. (C) Bar graphs showing the percentages of cells in early thymic populations with mono- and bi-allelic expression of wildtype mCherry and wildtype YFP versus mutant YFP alleles in wildtype Bcl11bYFP/mCh and Bcl11bYFPΔEnh/mCh dual reporter mice, demonstrating the reduced frequency of mutant YFP allele expression relative to the wildtype mCherry allele in the same cells. Each bar shows results from one mouse; n = 4 mice of each strain are shown. (D) DN2 progenitors were sorted for different Bcl11b allelic activation states as indicated, cultured on OP9-DL1 monolayers for 4 days, and analyzed using flow cytometry. Flow plots show Bcl11b-mCh versus Bcl11b-YFP levels of cells generated from precursors with a normal (top) or disrupted (bottom) YFP enhancer, showing defective YFP up-regulation from the mutant relative to the wildtype alleles. Enhancer disruption reduces the probability of switch-like Bcl11b activation, but does not affect expression levels after activation. Results are representative of two independent experiments. See also Figure 1—figure supplement 1, and Figure 3—figure supplement 1–4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative flow cytometry plots showing gating strategies for thymic subsets and two-color Bcl11b expression in these populations from Bcl11bYFP/mCh(neo) (wildtype) or Bcl11bYFPΔEnh/mCh(neo) (Δenhancer) mice. DN subsets were enriched by magnetic bead depletion of mature thymic cells before staining and analysis. (B) Percentages of cells expressing only mCherry (RFP mono) or YFP (YFP mono) in specific T cell populations from Bcl11bYFP/mCh(neo) (wt) or Bcl11bYFPΔEnh/mCh(neo) (YFPΔenh) mice. Each symbol represents results from an individual mouse (n = 4 to 6 mice per group). This figure shows that although bi-allelic expression predominates, mono-allelic expression of both YFP and mCherry wildtype alleles persist in some cells throughout intrathymic development. Furthermore, the YFPΔenh mutant dramatically increases the percentage of cells expressing only the mCherry (wildtype) allele due to failure to activate the mutant allele. However, the level of mono-allelic expression seen decreases generally over development of CD4 and CD8 SP αβ T cells and is slightly higher among TCRγδ+ and NKT cells relative to conventional TCRβ+ cells, possibly consistent with additional selection events.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative flow cytometry plots showing gating strategies for splenic subsets and two-color Bcl11b expression in these populations from Bcl11bYFP/mCh(neo) (wildtype) or Bcl11bYFPΔEnh/mCh(neo) (Δenhancer) mice. Some T-cell subsets were enriched by magnetic bead depletion of B cells before staining and analysis as indicated. (B) Percentages of cells expressing only mCherry (RFP mono) or YFP (YFP mono) in specific T cell populations from Bcl11bYFP/mCh(neo (wt) or Bcl11bYFPΔEnh/mCh(neo) (YFPΔenh) mice. Each symbol represents results from an individual mouse (n = 2 to 8 mice per group). The data show that patterns of mono-allelic expression seen in the thymus (cf. Figure 3—figure supplement 1) persist in the periphery in CD4, CD8 NKT, and TCRγδ T cells, for both wildtype and YFPΔenh mutant alleles. However, there are subset differences which are most evident in the mCherry wildtype/YFP Δenh genotype. In particular, activated or antigen-experienced (CD44+) CD8 cells show a greater frequency of mono-allelic mCherry expression than naïve (CD44-) CD8 cells, whereas CD4+ CD25+Treg cells exhibit much lower levels of mono-allelism than conventional CD4+ and CD8+ cells. These results could be related to the specific requirements for Bcl11b activity in different peripheral T-cell subsets (Avram and Califano, 2014).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** B6.Cd45.1 mice were irradiated with 1000 rads and injected retro-orbitally with 106 fetal liver cells from Bcl11bYFP/mCh(neo) (wt) and Bcl11bYFPΔEnh/mCh(neo) (YFPΔenh) (Cd45.2+) mice (F0 generation). After 8 weeks chimeric mice were analyzed for expression of the wild type (wt) mCherry and wt or mutant (Δenh) YFP alleles. (A) Representative flow cytometry plots showing gating strategies for CD45.2+ splenic subsets and two-color Bcl11b expression in these populations from Bcl11b. Other thymic and splenic T-cell populations were gated similarly to those shown Figure 3—figure supplement 1A and Figure 3—figure supplement 2A-B. (B) Percentages of cells expressing only mCherry (RFP mono) or YFP (YFP mono) in specific T cell populations, demonstrating the persistence of small but similar percentages of mono-allelically expressed mCherry and YFP alleles in wt mice and the major increase in mono-allelic mCherry positive cells in the presence of the YFPΔEnh mutant alllele. Each symbol represents results from an individual mouse (n=2 mice per group). Results are shown for chimeras from one wildtype/mutant F0 donor pair. Similar results were obtained from chimeras from a different pair of wildtype and mutant fetal F0 donors.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Representative FACS plots showing gates used for CD4 and CD8 double negative (DN), double positive (DP) and single positive (CD4 and CD8) populations (left plots) and the relative levels of Bcl11b-YFP in each subset generated from enhancer mutant and wild-type mice (right histograms, n = 2 for each genotype).
 
 Using standard gene targeting, we deleted this distal ~2 kb enhancer region on the Bcl11b-YFP allele, leaving the Bcl11b-mCherry allele intact, to generate Bcl11bYFPΔEnh/mCh dual reporter mice (Figure 3A and Figure 1—figure supplement 1), and then analyzed resultant effects on YFP regulation in different T-cell subsets (Figure 3B,C and Figure 3—figure supplements 1–3). These were analyzed either from established young adult Bcl11bYFPΔEnh/mCh mice (Figure 3B,C and Figure 3—figure supplements 1,2) or from adult chimeras populated with fetal liver cells from the F0 generation (Figure 3—figure supplement 3A,B). The non-disrupted Bcl11b-mCherry allele served as an internal, same-cell control. At the ETP stage, essentially all Bcl11b alleles were silent, regardless of whether they had an intact or disrupted enhancer, as expected (Figure 3B). During the DN2a and DN2b stages, the enhancer-disrupted Bcl11b-YFP allele showed dramatically reduced activation compared to the Bcl11b-mCherry allele in the same cell. Interestingly, at later developmental stages in the thymus and in peripheral T-cell subsets (CD4, Treg, CD8) a large fraction of cells showed expression of the enhancer-disrupted YFP allele, along with the wild-type Bcl11b-mCherry allele (Figure 3B,C and Figure 3—figure supplements 1,2,3), indicating that the targeted element is not indispensable for Bcl11b activation. However, a small but significant percentage of cells still failed to activate the enhancer-disrupted allele, and instead persisted in a mono-allelic state with only expression of the Bcl11b-mCherry allele (Figure 3B,C and Figure 3—figure supplements 1,2,3). Mono-allelic cells were found in memory as well as naïve T-cell subsets (Figure 3—figure supplement 2), implying that these mono-allelically expressing cells are capable of immune responses, as expected from the normal phenotype of Bcl11b knockout heterozygotes. As shown in fetal liver chimeras, generation and persistence of Bcl11b-mCherry mono-allelic cells due to the mutant Bcl11bYFPΔEnh allele were determined cell intrinsically (Figure 3—figure supplement 3). However, from flow cytometric profiles, cells that turned on the disrupted allele expressed it at normal levels, suggesting that the enhancer mutation reduced the stochastic rate of Bcl11b activation, but not its expression level once activated.
 
@@ -58,11 +98,23 @@ To directly test this hypothesis, we measured Bcl11b-YFP activation with or with
 
 The activation of the enhancer-disrupted Bcl11b allele observed in many DN2b and later cells suggests that there are other cis-regulatory elements on the Bcl11b locus that can also promote stochastic locus activation. The extended intergenic gene desert between Bcl11b and the next gene, Vrk1, is rich in potential regulatory elements that could compensate for the disruption of the enhancer element in the cells activating the YFP allele (Hu et al., 2018). Alternatively, the intact enhancer at the mCherry-tagged locus in the same cell could activate the enhancer-deleted Bcl11b locus in trans, but this was ruled out when we bred mice with the enhancer disruption to homozygosity (Bcl11bYFPΔEnh/YFPΔEnh). Progenitors from these mice were still able to turn on Bcl11b and to undergo T-cell development to CD4, CD8 double positive (DP) and single positive (SP) cells, and all the cells in these populations had normal levels of Bcl11b expression (Figure 3—figure supplement 4). Thus, the enhancer we identified works together with other regulatory elements specifically to control Bcl11b activation timing.
 
-## A parallel trans-acting step enables expression from an activated Bcl11b locus
+### A parallel trans-acting step enables expression from an activated Bcl11b locus
 
 The known transcriptional regulators of Bcl11b—TCF-1, Gata3, Notch1 and Runx1—are already strongly expressed prior to entering the DN2 stage, suggesting they are not limiting for Bcl11b activation in DN2 cells. The data presented above show that cis-acting mechanisms can substantially slow activation at individual alleles. However, additional trans-acting factors or post-translational changes in these factors could still limit the kinetics of Bcl11b activation, working either upstream of the cis-opening mechanism or as a separate, independent requirement. To gain insight into whether such trans-acting inputs are necessary to explain the observed dynamics, and how they could act together with the cis-acting step, we developed a set of minimal models requiring the cis-activating step either alone or together with an additional trans-acting step (see Appendix for model details). While the analysis is subject to technical limitations such as fluorescent protein sensitivity and time delays in expression, and the actual biological behavior is undoubtedly more complex, these minimal models, nevertheless, enable discrimination among broad classes of behavior.
 
 To obtain unbiased estimates of the population fractions from imaging data (Figure 2), we fit four two-dimensional Gaussians to single-cell Bcl11b-YFP and Bcl11b-mCherry data (see Materials and methods for details). We note that estimated population fractions increased after a delay (Figure 4B, gray-shaded area), due to a time lag in fluorescence accumulation and detection after activation (Figure 4—figure supplement 1). We accounted for this lag by incorporating a fixed time delay into all of our model fits (see Materials and methods).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig4-v1.jpg)
+
+**Figure 4.:** (A) Candidate models for Bcl11b activation from the DN2 stage, involving a single cis-acting switch (top left), sequential trans-, then cis-acting switches (bottom left), and parallel, independent trans- and cis- acting switches (right). (B) Plots show best fits of different models to the time evolution of Bcl11b allelic activation states, observed by timelapse imaging (Figure 2). Gray-shaded area indicates time delay for detection of indicated allelic state as a result of the time required for stable fluorescence protein accumulation. Best fit rate constants indicated in legend. (C) Bar charts show reduced chi-squared values for each model fit, that is the normalized sum-squared fit errors over all time points and allelic states, divided by the degrees of freedom (d.f.) (see Materials and methods). Both sequential and parallel trans-cis models fit the data significantly better than the cis-only model (F-test, F = 12.2, p=0.0052, sequential vs. cis-only model; F = 8.13, p=0.021, parallel vs. cis-only model). (D) Three possible classes of Bcl11b activation states observable from clonal lineage data. Lineage trees and transition diagrams show examples of simulated lineages that fall into the indicated classes. (E) Pie charts show expected distribution of allelic activation states predicted for clonal lineages of non-expressing progenitors in either the sequential (left) or the parallel (right) trans-cis model, obtained from N = 30,000 simulations, using parameters derived from bulk fitting (see Appendix). (F) Pie chart (left) shows observed distribution of activation states observed across an entire imaging time course. Colored scatterplots (right) show Bcl11b-mCh versus Bcl11b-YFP levels of single-cell lineages, falling into the indicated categories. Clones were scored according to observable fluorescence across an entire developmental trajectory, from 0 hr (cyan) to 120 hr (purple). The observed frequency of clones with ‘single mono-allelic’ expression of Bcl11b (7/9 = 77%) is significantly different than that predicted for the sequential trans-cis Model (20.1%, **- p<0.001, χ2 = 14.9, d.f. = 1), but not significantly different from that predicted for the parallel trans-cis Model (63.9%, χ2 = 0.27, d..f = 1, n.s.). Results are representative of three independent experiments. See Figure 4—figure supplement 2 for data for independent replicate experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Two-dimensional plots show experimental (right) and best-fit (left) heat maps of Bcl11b levels at the indicated time points. Data are taken from 5 hr time windows centered on the indicated time points. White horizontal and vertical bars (right) provide a visual guide for discerning Bcl11b activation levels, while red arrows (t = 7.5 hr) show emergence of the two mono-allelic expressing populations, together with emergence of bi-allelic expressing population.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Table shows observed numbers of clones with indicated allelic activation patterns, showing data from three independent experiments. Simulations of clonal lineages from sequential or parallel trans-cis activation models are shown (N = 30,000 simulations). See Figure 4 and main text for model description and allelic pattern definition. (B) Live images show cells from two clonal lineages showing a single mono-allelic pattern of activation, with mono-allelic expression of either the red allele only (Clone I), or the yellow allele only (Clone II). Images shown are from Experiment 3, whereas images and data in Figure 4 are shown from Experiment 1.
 
 In the simplest ‘cis only’ model, we assume that only the cis-activation step is required for Bcl11b activation in DN2 stage, with all required trans-acting steps having occurred prior to the ETP-DN2 transition (Figure 4A, left). Because cis-activation is controlled at each allele by a single rate constant, this model predicts a substantial lag between the appearance of mono-allelic cells, which require one cis-activation event, and the appearance of bi-allelic cells, which require two independent events (Appendix). By contrast, in experiments, bi-allelic cells accumulated immediately (Figure 4B and Figure 4—figure supplement 1), without a substantial lag relative to mono-allelic ones, resulting in a poor fit of the data to the cis-only model (Figure 4A). These results rule out the simplest cis-only model, and suggest that additional trans events may still limit Bcl11b expression at the DN2 stage.
 
@@ -74,11 +126,19 @@ As intuitively expected, the sequential trans-cis model predominantly generated 
 
 To discriminate experimentally between these two models, we quantified the distribution of Bcl11b allelic activation states generated in clonal lineages from progenitors starting with no Bcl11b activation, observed by timelapse microscopy as described above (Figure 2). Within a clone, we most frequently observed mono-allelic expression from only one specific allele, with or without bi-allelically expressing cells (Figure 4F ‘single mono-allelic’, light green, 7/9 clones, Figure 4—figure supplement 2; similar results observed over three independent experiments), but only rarely observed mono-allelic expression from both loci within the same clone (Figure 4F, ‘mixed mono-allelic’, gray, 1/9 clones). The observed percentage of ‘single mono-allelic’ expressing clones (7/9 = 77%) was significantly greater than that expected from the sequential trans-cis model (20.4%, p<0.005). Moreover, in one clone, we observed concurrent activation of both alleles (Figure 4F), a behavior that would have been exceedingly rare in a sequential model (none observed in 30,000 simulations). Together, these results suggest that a trans-acting step, acting in parallel with the cis-acting step, controls Bcl11b expression.
 
-## Notch signaling controls the parallel trans-acting step in Bcl11b activation
+### Notch signaling controls the parallel trans-acting step in Bcl11b activation
 
 Notch signaling drives T-cell fate commitment and provides an important input for Bcl11b expression. While not required to maintain Bcl11b expression in committed cells, it acts earlier to enhance the probability of all-or-none Bcl11b expression at the DN2 stage and stabilize Bcl11b expression shortly after activation, preventing the re-silencing that still can occur in a small fraction of newly expressing cells (Kueh et al., 2016). The Notch intracellular domain is diffusible in the nucleus, but could affect Bcl11b activation by modulating either the cis or trans step in the parallel model. For example, Notch signaling could activate a trans factor that drives Bcl11b transcription from a cis-activated locus, and thereby alter the fraction of cells that express Bcl1b from a cis-activated locus. Alternatively, Notch could affect the rate of the cis-activation process, for instance by enhancing the activity of chromatin-remodeling enzymes on the Bcl11b promoter or enhancer, in which case it might alter the ratio of mono-allelic to bi-allelic activation states. To distinguish between these cases, we first experimentally analyzed the effects of removing Notch signaling on Bcl1b allelic expression patterns, and then compared the results to predictions based on corresponding perturbations in the parallel trans-cis model.
 
 We sorted DN2 cells with no expression, mono-allelic expression or bi-allelic expression of Bcl11b as initial populations, and then cultured them either on OP9-DL1 or OP9-Control feeders to maintain or remove Notch signaling, respectively. After 4 days, we analyzed the resulting Bcl11b allelic expression states using flow cytometry (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig5-v1.jpg)
+
+**Figure 5.:** BM-derived DN2 progenitors with different Bcl11b allelic activation states were sorted, cultured on either OP9-Control (-Notch) or OP9-DL1 (+Notch) monolayers for four days, and analyzed using flow cytometry. (A) Flow cytometry plots show Bcl11b-mCherry versus Bcl11b-YFP expression levels in analyzed cells. Percentages of non-expressing, mono-allelic expressing (both YFP and mCherry) and bi-allelic expressing cells were used to calculate the locations in the phase space. Note that when Notch signaling is withdrawn from bi-allelically expressing cells, they downregulate both alleles coordinately (green-shaded arrow). (B) Phase space diagrams experimentally obtained from analysis of flow cytometry data. Points in phase space represent the average of 2–4 replicate data points in a single experiment (hollow circles). Inset shows final activation states of bi-allelic starting progenitors upon Notch withdrawal. Results shown are representative of two independent experiments. (C–D) Predicted phase space diagrams for fraction of bi-allelic expressing cells (Fb) against the fraction of mono-allelic expressing cells (Fm, YFP+ and mCh+ combined), for either the sequential trans-cis activation model (C), or the parallel trans-cis model (see Appendix for details). Black (colored) dotted lines connect initial state to the normal (perturbed) final state. Note that actual developmental trajectories may be curved (not shown). Arrows show predicted shifts in final state due to the indicated perturbations. Note that perturbations affect both the rates and reversibility of the indicated reactions. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The parallel and sequential trans-cis Bcl11b activation models (upper and lower panels, respectively). Effects of perturbation of cis (blue) or trans (green) acting steps in both models are shown with colored arrows. Phase space diagrams show the predicted final fractions of mono-allelic expressing cells (FM, sum of mono-allelic cells from both alleles), and bi-allelic expressing cells (Fb), for both unperturbed cells (black lines) and cells where the indicated reaction steps are perturbed (colored lines). Box indicates the only predicted mode that is consistent with observed effects of experimental Notch signaling inhibition. Definitions for the forward and back rate constants (kf0, kf1, kr0, kr1) are given in Appendix 1—tables 3–6 of the Appendix.
 
 DL1 removal affected the distribution of Bcl11b allelic expression states differently depending on the state of the starting cell population. For progenitors with no initial Bcl11b expression, DL1 removal decreased the total fraction of cells that subsequently expressed Bcl11b from either allele from 0.9 to 0.5 (sum of mono-allelic and bi-allelic expressing cells, Figure 5A), as expected from the known positive effect of Notch on Bcl11b activation (Kueh et al., 2016). This reduction disproportionately affected mono-allelic expressing cells, such that the fraction of mono-allelic expressing cells relative to bi-allelic expressing cells decreased (from ~0.8 to 0.4, Figure 5A). In progenitors starting with mono-allelic Bcl11b expression, DL1 removal showed a large percentage reduction in the mono-allelic population, with a smaller reduction in the bi-allelic population (~14% versus 20% reduction, from Figure 5A). Finally, in bi-allelic expressing Bcl11b progenitors, most cells maintained expression despite Notch removal, as expected (Kueh et al., 2016), but a small fraction (~0.06) lost expression of both Bcl11b alleles entirely, reverting directly from the bi-allelic to a non-expressing state (Figure 5A, green arrows). To visually summarize these effects of Notch withdrawal, we represented the distribution of non-expressing, mono-allelic, and bi-allelic expressing cell states in the population in each condition from each starting population as points within a triangular region of allowed states in a single diagram (Figure 5B).
 
@@ -90,7 +150,7 @@ By contrast, perturbation of the trans-acting step in the model produced effects
 
 Additionally, we also considered a third possibility in which Notch controls a necessary trans-acting step occurring strictly prior to cis-activation, as postulated by the sequential trans-cis model (Figure 5—figure supplement 1). In this case, progenitors that express one or both Bcl11b alleles would no longer be affected by Notch withdrawal, inconsistent with the experimental observations (Figure 5B). Taken together, these results strongly suggest that a separate Notch-dependent trans-acting event, occurring in parallel with Bcl11b locus activation, is necessary for Bcl11b activation and T-cell lineage commitment.
 
-## Bcl11b activation can only occur over a limited developmental window
+### Bcl11b activation can only occur over a limited developmental window
 
 Given the finite rate of cis- and trans-activation steps, all cells would be expected to eventually activate both Bcl11b copies. However, a small fraction of cells were consistently found to express Bcl11b mono-allelically in thymic and peripheral T cell subsets (Figures 1 and 3B,C and Figure 3—figure supplements 1,2). This result suggested that activation might be possible only for a limited time and that cells might lose competence to activate any still-silent Bcl11b locus as they develop. To test this hypothesis, we sorted mono-allelically expressing cells from different developmental stages, cultured them in vitro on OP9-DL1 monolayers for 4 days, and analyzed expression of both Bcl11b alleles (Figure 6A). The already-active copy retained active expression throughout the assay, as expected. However, the frequency of activation of the initial silent Bcl11b allele varied strongly with developmental stage. Activation occurred efficiently at the DN2 stage (DN2A and DN2B combined) but dropped sharply as cells progressed to DN3 (~80% versus~15% activated after 4 days, Figure 6A), and dropped even further at the double positive (DP) and CD4 single positive stages (~1.5% and 2.4%, respectively, Figure 6A). Equivalent results were obtained regardless of whether the experiment started with active wildtype YFP and mCherry alleles (Figure 6A). These results indicate that cis-activation of Bcl11b predominantly occurs during DN2 and DN3 stages.
 
@@ -98,7 +158,7 @@ This DN2-stage preference for Bcl11b activation competence could arise from stag
 
 ## Discussion
 
-Stochastic epigenetic control switches have been described in yeasts, plants, and, more recently, constructed in synthetic systems (Berry et al., 2017; Bintu et al., 2016; Hathaway et al., 2012; Keung et al., 2014; Xu et al., 2006), yet their roles in controlling fate decisions in vertebrate developmental systems are not well understood. Specifically, it is not clear when epigenetic states simply respond passively to ‘upstream’ developmental changes in transcription factor activity, and when they actively impose distinct temporal constraints on transcription factor effects. By separately following the two chromosomal copies of Bcl11b in single cells, we found that the decision to turn on Bcl11b, and the ensuing transition to T-cell fate, involves a stochastic, irreversible rate-limiting cis-activation step that occurs on each chromosomal allele of the Bcl11b gene itself. The cis-acting step occurs at a low enough rate (kC=(4.2±3.3)×10-3/hr, Figure 4A) to generate numerous mono-allelically expressing cells as intermediates, and is stable enough to propagate the same mono-allelic activation state through multiple rounds of cell division in individual clones. In particular, by generating delays of multiple days and cell generations prior to differentiation, the cis-acting switch also indirectly controls the overall degree of proliferation of the progenitor pool. These results thus demonstrate that stochastic, epigenetic events on individual gene loci can fundamentally limit the timing and outcome of mammalian cell fate decisions, as well as the population structure of the resulting differentiated population.
+Stochastic epigenetic control switches have been described in yeasts, plants, and, more recently, constructed in synthetic systems (Berry et al., 2017; Bintu et al., 2016; Hathaway et al., 2012; Keung et al., 2014; Xu et al., 2006), yet their roles in controlling fate decisions in vertebrate developmental systems are not well understood. Specifically, it is not clear when epigenetic states simply respond passively to ‘upstream’ developmental changes in transcription factor activity, and when they actively impose distinct temporal constraints on transcription factor effects. By separately following the two chromosomal copies of Bcl11b in single cells, we found that the decision to turn on Bcl11b, and the ensuing transition to T-cell fate, involves a stochastic, irreversible rate-limiting cis-activation step that occurs on each chromosomal allele of the Bcl11b gene itself. The cis-acting step occurs at a low enough rate ($k_{C}=(4.2\pm3.3)\times10^{-3}$/hr, Figure 4A) to generate numerous mono-allelically expressing cells as intermediates, and is stable enough to propagate the same mono-allelic activation state through multiple rounds of cell division in individual clones. In particular, by generating delays of multiple days and cell generations prior to differentiation, the cis-acting switch also indirectly controls the overall degree of proliferation of the progenitor pool. These results thus demonstrate that stochastic, epigenetic events on individual gene loci can fundamentally limit the timing and outcome of mammalian cell fate decisions, as well as the population structure of the resulting differentiated population.
 
 Slow, stochastic Bcl11b activation is controlled in part by an enhancer far downstream from the Bcl11b promoter, on the opposite end of the same topologically associated domain. Multiple known epigenetic changes that occur on the Bcl11b locus could participate in the processes whose dynamics we have measured here. The distal enhancer could recruit chromatin regulators that clear repressive chromatin modifications from the Bcl11b locus. In its silent state, the Bcl11b promoter and gene body are covered by DNA methylation and histone H3K27me3 modifications (Hu et al., 2018; Ji et al., 2010; Zhang et al., 2012). Chromatin regulators recruited by the enhancer could disrupt repressive modifications in their vicinity, catalyzing a phase transition that results in cooperative, all-or-none removal of repressive marks on the entire gene locus (Larson et al., 2017; Strom et al., 2017). As another possibility, the distal enhancer could recruit trans- factors that facilitate its T-lineage-specific looping with the Bcl11b promoter and its subsequent activation (Li et al., 2013). In early T-cell progenitors, the Bcl11b promoter establishes new contacts with its distal enhancer, resulting in de novo formation of an altered topological associated domain, with boundaries defined by these two elements (Hu et al., 2018; Isoda et al., 2017). Trans- regulators of DNA loop extrusion that associate with the distal enhancer, whose binding may be facilitated by non long-coding RNA transcription (Isoda et al., 2017), may stabilize these looping interactions (Fudenberg et al., 2016; Nasmyth, 2001; Riggs, 1990; Sanborn et al., 2015), which may release Bcl11b from the repressive environment of the nuclear periphery and permit its activation (Isoda et al., 2017). The evidence for such epigenetic differences associated with the Bcl11b locus in T and non-T cells have been known for some time, but the functional impacts of cis-acting mechanisms on locus activation dynamics has been unknown until now. Ultimately, any of these mechanisms that are rate-limiting will have to account for the stochastic nature of Bcl11b locus activation, its exceptionally long activation time constant, and its all-or-none, irreversible nature, demonstrated here. Dissecting the molecular and biophysical basis of these striking emergent properties will be the subject of future investigation.
 
@@ -112,19 +172,526 @@ Here, we have illustrated a general approach that can reveal the dynamics of epi
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Animals
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTarget Bcl11b IRES-H2Bm Cherry-neo/3pUTR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Gene targeting vector with IRES-H2B-mCherry- loxP-neo-loxP cassette knocked into 3' UTR of Bcl11b</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTarget Bcl11b dEnh-hygro</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Gene targeting vector with Enhancer replaced by hygromycin cassette</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT-PGK-gb2- hygromycin-FRT cassette</td>
+      <td>Genebridges</td>
+      <td>Cat# A010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MSCV IRES H2B-mCerulean</td>
+      <td>Kueh et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCL-Eco</td>
+      <td>Imgenex</td>
+      <td>Cat# NBP2-29540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Bcl11bYFP(neo)/mCh(neo)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Two color reporter mice generated from breeding animals homozygous for either Bcl11b YFP(neo) or Bcl11b mCh(neo). See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Bcl11bmCh(neo)/mCh(neo)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Homozygous Bcl11b mCh(neo) reporter mice used to generate two color reporter mice. Derived from Bcl11b YFP/mCh(neo) F0 chimeric mice. See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Bcl11bYFP/mCh(neo)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Control mice for comparing the effects of the enhancer on Bcl11b expression. Generated by targeting Bcl11b mCherry gene targeting vector to V6.5 mouse embryonic stem (ES) cells with single modified Bcl11b mCitrine dneo allele. See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Bcl11bYFPdEnh/mCh(neo)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Two color reporter mouse with Bcl11b enhancer deleted. Generated by targeting dEnh gene target vector to V6.5 mouse ES cells with genotype Bcl11b YFP/mCh(neo). See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Bcl11bYFPdEnh/dEnh</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Homozygous deleted enhancer mice generated from Bcl11b YFP dEnh/mCh(neo) mice. See Materials and methods for details.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>CD45.1 C57BL/6: B6.SJL-Ptprca  Pepcb/BoyJ</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No# 002014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>OP9-DL1-GFP</td>
+      <td>Schmitt and Zúñiga-Pflücker, 2002</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>OP9-Mig</td>
+      <td>Schmitt and Zúñiga-Pflücker, 2002</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>OP9-DL1-hCD8</td>
+      <td>Kueh et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Human Phoenix-ECO</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a Biotin (clone 53–6.7)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0081-86; RRID:AB_466348</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCRb Biotin (clone H57-597)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5961-85; RRID:AB_466820</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCRgd Biotin (clone GL3)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5711-85; RRID:AB_466669</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ter119 Biotin (clone TER-119)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5921-85; RRID:AB_466798</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse NK1.1 Biotin (clone PK136)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5941-85; RRID:AB_466805</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Gr-1 Biotin (clone RB6-8C5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5931-86; RRID:AB_466802</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c Biotin (clone N418)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0114-85; RRID:AB_466364</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b Biotin (clone M1/70)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0112-86; RRID:AB_466361</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 Biotin (clone 1D3/6D5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0193-85; RRID:AB_657658</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3e Biotin (clone 145–2 C11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0031-85; RRID:AB_466320</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse B220 Biotin (clone RA3-6B2)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0452-85; RRID:AB_466450</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80 Biotin (clone BM8)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-4801-85; RRID:AB_466658</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 Biotin (clone GK1.5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-0041-85; RRID:AB_466326</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human/mouse CD44 eFluor 450 (clone IM7)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0441-82; RRID:AB_1272246</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD25 Brilliant Violet 510 (clone PC61)</td>
+      <td>Biolegend</td>
+      <td>Cat# 102041; RRID:AB_2562269</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD117 (cKit) APC-eFluor 780 (clone 2B8)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-1171-82; RRID:AB_1272177</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HSA eFluor 450 (clone M1/69)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0242-82; RRID:AB_1311169</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 Brilliant Violet 510 (clone GK1.5)</td>
+      <td>Biolegend</td>
+      <td>Cat# 100449; RRID:AB_2564587</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a APC (clone 53–6.7)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0081-82; RRID:AB_469335</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCRb APC-eFluor 780 (clone H57-597)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-5961-82; RRID:AB_1272173</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD25 APC-eFluor 780 (clone PC61.5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0251-82; RRID:AB_1272179</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD19 eFluor 450 (clone 1D3/6D5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0193-82; RRID:AB_2734905</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD117 (cKit) APC (clone 2B8)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-1171-82; RRID:AB_469430</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 APC-eFluor 780 (clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0451-82; RRID:AB_1548781</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD25 APC (clone PC61.5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0251-82; RRID:AB_469366</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 APC-eFluor 780 (clone GK1.5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0041-82; RRID:AB_11218896</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a APC-eFluor 780 (clone 53–6.7)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0081-82; RRID:AB_1272185</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 APC (clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0451-82; RRID:AB_469392</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD5 eFluor 450 (clone 53–7.3)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0051-82; RRID:AB_1603250</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCRgd APC (clone GL3)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-5711-82; RRID:AB_842756</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD49b eFluor 450 (clone DX5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-5971-82; RRID:AB_10671541</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse NK1.1 APC (clone PK136)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-5941-82; RRID:AB_469479</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3e APC-eFluor 780 (clone 145–2 C11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 47-0031-82; RRID:AB_11149861</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TCRb eFluor 450 (clone H57-597)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-5961-82; RRID:AB_11039532</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD49b Biotin (clone DX5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 13-5971-82; RRID:AB_466825</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD62L APC (clone MEL-14)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0621-82; RRID:AB_469410</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2 Brilliant Violet 510 (clone 104)</td>
+      <td>Biolegend</td>
+      <td>Cat# 109837; RRID:AB_2561393</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 eFluor 450 (clone GK1.5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0041-82; RRID:AB_10718983</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 eFluor 450 (clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0451-82; RRID:AB_1518806</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin PerCP-Cyanine5.5</td>
+      <td>Biolegend</td>
+      <td>Cat# 405214; RRID:AB_2716577</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin Brilliant Violet 510</td>
+      <td>Biolegend</td>
+      <td>Cat# 405234</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human Flt3-Ligand</td>
+      <td>PeproTech</td>
+      <td>Cat# 300–19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL-7</td>
+      <td>PeproTech</td>
+      <td>Cat# 200–07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human Stem Cell Factor (SCF)</td>
+      <td>PeproTech</td>
+      <td>Cat# 300–07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse IL-6</td>
+      <td>eBioscience</td>
+      <td>Cat# 14-8061-62</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse Stem Cell Factor (SCF)</td>
+      <td>eBioscience</td>
+      <td>Cat# 34-8341-82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse IL-3</td>
+      <td>eBioscience</td>
+      <td>Cat# 14-8031-62</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Retronectin</td>
+      <td>Takara</td>
+      <td>Cat# T100B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DL1-extIgG Protein</td>
+      <td>Varnum-Finney et al., 2000</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo (v10.0.8)</td>
+      <td>Tree Star</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (R2016a)</td>
+      <td>MathWorks</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FuGENE 6 Transfection Reagent</td>
+      <td>Promega</td>
+      <td>Cat# E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MACS Streptavidin Microbeads</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-048-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LS Columns</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-042-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>250mm-diameter PDMS circular micromesh arrays</td>
+      <td>Microsurfaces Pty Ltd</td>
+      <td>Cat# MMA-0250-100-08-01</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Animals
 
 Fo chimeric mice from Bcl11bYFP/mCh(neo) and Bcl11bYFPΔEnh/mCh(neo) ES-cell blastocyst injections were all made in our lab (described in Materials and method Details). Founder animals were brought to term and crossed in house to generate Bcl11bYFP(neo)/mCh(neo), Bcl11bYFP/mCh(neo), Bcl11bYFPΔEnh/mCh(neo), and Bcl11bYFPΔEnh/mCh(neo) mice. CD45.1 C57BL/6 mice were purchased from Jackson Laboratory. All adult animals were used between 5 and 12 weeks of age. Both male and female mice were used similarly in all studies. Animals used for these experiments were bred and maintained at the Animal Facilities at both the California Institute of Technology and the University of Washington, and animal protocols were reviewed and approved by the Institute Animal Care and Use Committees of both institutions (Protocols #1445 and #1409, California Institute of Technology; Protocol #4397–01, University of Washington).
 
-## Cells
+#### Cells
 
 Primary cells isolated from thymus, spleen, bone marrow, and fetal livers were cultured on a OP9-DL1 or OP9-control stromal monolayer system (Schmitt and Zúñiga-Pflücker, 2002) at 37°C in 5% CO2 conditions with standard culture medium [80% αMEM (Gibco), 20% Fetal Bovine Serum (Sigma-Aldrich), Pen-Strep-Glutamine (Gibco), 50 μM β-mercaptoethanol (Sigma)] supplemented with appropriate cytokines (described in Materials and method Details). Both OP9-DL1 and OP9-control cell lines were tested and found to be negative for mycoplasma contamination.
 
-## Method details
+### Method details
 
-## Construct designs
+#### Construct designs
 
 Gene targeting vectors for generating dual allelic Bcl11b fluorescent reporter and subsequent enhancer knockout were constructed using a two-step bacterial artificial chromosome (BAC) recombineering method. First, Bcl11b-BACs were modified to either insert a fluorescent reporter or disrupt the enhancer sequence with a drug selection marker. An internal ribosome entry site (IRES)-histone 2B-mCherry red fluorescent protein (mCh)-loxP-neomycin (neo)-loxP cassette with homology arms targeting the 3’-untranslated region (UTR) of Bcl11b was derived from a similar histone 2B-mCitrine yellow fluorescent protein (YFP) gene targeting vector version published previously (Kueh et al., 2016) and an IRES-H2B-mCherry-loxP-neomycin (neo)-loxP cassette. These two starting plasmids were digested with restriction enzymes NheI and HindIII (New England Biolabs) to exchange the fluorescent protein sequences. Homology arms flanking the 5’ and 3’ ends of the 1.9 kb enhancer (Enh) sequence to be replaced (chr12: 108,396,825–108,398,612, mm9 assembly; chr12:107,158,615–107,160,462, in mm10) were attached to a FRT-PGK-gb2-hygromycin (hygro)-FRT drug selection cassette through fusion PCR, and inserted into a cloning vector (pGEM-T-Easy, Promega). Next, restriction enzymes were used to release the homology-flanked fluorescent or drug reporter cassettes, and the resultant linear fragments were introduced into recombineering E. Coli strain SW102 containing appropriate BACs for specific targeting. The IRES-mCh-neo fragment was linearized with AatII, SalI-HF, ScaI-HF and knocked into a BAC containing the entire Bcl11b gene locus (RP24-282D6, from http://bacpac.chori.org). Restriction enyzmes XmnI, PspOMi, and SbfI released the FRT-hygro-FRT cassette used to replace the enhancer sequence in a BAC containing genomic regions downstream of the Bcl11b locus (RP23-445J15, from http://bacpac.chori.org). Correctly modified BACs were then selected using kanamycin or hygromycin in combination with chloramphenicol, and verified by PCR and pulse-field gel electrophoresis analysis using the restriction enzyme NotI (New England Biolabs).
 
@@ -132,72 +699,98 @@ A second recombineering reaction retrieved the targeting sequences from reporter
 
 The retroviral construct expressing IRES-H2B-mCerulean cyan fluorescent protein (CFP) used for timelapse imaging experiments was generated in a previous study (Kueh et al., 2013). A complete list of vectors used is provided in Key Resources Table.
 
-## Mouse generation
+#### Mouse generation
 
 A series of genetic modifications were performed to generate different Bcl11b reporter mouse strains used for this study (Figure 1—figure supplement 1). V6.5 mouse embryonic stem (ES) cells with a single modified Bcl11b allele expressing the IRES-H2B-mCitrine-loxp-neo-loxp fluorescent reporter were first transfected with Cre recombinase to excise the neomycin cassette. Subclones of this line with a correct deletion of the neomycin cassette were then targeted with the IRES-mCherry-neo gene targeting vector to generate dual allelic Bcl11b fluorescent reporter cells, and targeted again with the ΔEnh-hygro cassette to delete the enhancer in one allele. After each targeting event, recombinant ES cells grown on feeders were positively selected with antibiotics according to the cassette inserted, and negatively selected with G418. Resistant clones were passaged onto feeder-free conditions and screened using PCR and qPCR for correct targeting. Clones with the desired genotype were karyotyped for normal chromosome numbers before being injected into C57BL/6 blastocyst embryos or subjected to subsequent gene targeting.
 
 F0 chimeric mice from Bcl11bYFP/mCh(neo) and Bcl11bYFPΔEnh/mCh(neo) ES-cell blastocyst injections were generated, and either analyzed at embryonic day 14.5 (E14.5) or brought to term for breeding. Bcl11bYFP/mCh(neo) F0 chimeric mice were crossed to C57BL/6 mice, and the offspring containing Bcl11b-IRES-mCherry-neo allele were then bred to homozygosity for this allele. Dual allelic Bcl11bYFP(neo)/mCh(neo) mice with identical Bcl11b alleles except for fluorescent protein reporters were generated from breeding Bcl11bmCh(neo)/mCh(neo) mice to previously produced Bcl11bYFP(neo)/YFP(neo) mice (Kueh et al., 2016), and were used for in vitro assay studies of bone marrow derived T-cells. Bcl11bYFPΔEnh/mCh(neo) mice were generated in a similar manner by first breeding to C57BL/6 mice to generate enhancer deleted heterozygotes, then crossing mice to Bcl11bmCh(neo)/mCh(neo). Bcl11bYFPΔEnh/YFPΔEnh mice were generated in parallel by crossing enhancer deleted heterozygotes together. For experiments comparing the effects of the enhancer on Bcl11b expression, direct control Bcl11bYFP/mCh(neo) mice were generated from breeding Bcl11bYFP/YFP and Bcl11bmCh(neo)/mCh(neo) animals. However, we have previously reported that the presence or absence of neo cassette does not affect the Bcl11b reporter locus (Kueh et al., 2016), and do not observe any differences in expression pattern in this study as well (see Figures 1 and 3).
 
-## Cell purification
+#### Cell purification
 
 Thymocytes and splenocytes were purified from lymphoid organs removed from 4- to 6-week-old normal and enhancer-deleted two-color Bcl11b reporter strains, and 2-month post-fetal liver precursor transplantation CD45.1 chimeras prior to flow cytometry analysis or fluorescent activated cell sorting (FACS). Harvested lymphoid organs were mechanically dissociated to make single cell suspensions that were re-suspended in Fc blocking solution with 2.4G2 hybridoma supernatant (prepared in the Rothenberg lab). Early stage thymocyte precursors to be analyzed (ETP, DN2A, DN2B, DN3: Figures 1C and 3B, and Figure 3—figure supplement 1) or sorted (DN2, DN3: Figures 3D and 6A), were first depleted of mature cell lineages using a biotin-streptavidin-magnetic bead removal method. Thymocyte suspensions were labeled with biotinylated lineage marker antibodies (CD8α, TCRβ, TCRγδ, Ter119, Gr-1, CD11c, CD11b, NK1.1), incubated with MACS Streptavidin Microbeads (Miltenyi, Biotec) in HBH buffer (HBSS (Gibco), 0.5% BSA (Sigma-Aldrich), 10 mM HEPES, (Gibco)) pre-filtered through cell separation magnet (BD Biosciences), and passed through a magnetic column (Miltenyi Biotec). Rare T-cell subsets found in the spleen (Figure 3—figure supplement 2) were enriched using a similar depletion protocol by labeling splenocytes with biotinylated antibodies CD19, CD11b, CD11c, and Gr-1. Later-stage thymocyte precursors analyzed (Figure 1D, Figure 3B, and Figure 3—figure supplements 1, 3, 4) or sorted (Figure 6A), and whole splenocyte populations analyzed (Figure 3—figure supplements 2, 3) were directly stained with conjugated fluorescent cell surface antibodies (see Supplementary file 1, Key Resources Table).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig6-v1.jpg)
 
-**Figure 6.:** Bcl11b activation occurs within a limited developmental time window.Cells expressing only one Bcl11b allele at the indicated stages were sorted from thymocytes, cultured for 4d on OP9-DL1 monolayers, and analyzed for activation of the initially inactive Bcl11b allele using flow cytometry. (A) Flow plots (left) show Bcl11b-mCh versus Bcl11b-YFP expression levels for descendants of cells that had mono-allelic expression at the indicated stages of development; bar charts (right) show the fraction of progenitors from different stages that activate the silent Bcl11b allele upon culture. Data represent mean and standard deviation of 4–5 replicates, derived from two independent experiments. The competence to activate the silent Bcl11b allele decreases upon progression to the DN3 stage and beyond. (B) Flow plots (left) show Bcl11b-mCh versus Bcl11b-YFP expression levels for DN2 or DN3 progenitors with either an intact YFP allele enhancer (top) or a disrupted YFP allele enhancer (bottom). Bar chart (right) shows the fraction of cells activating the silent Bcl11b allele upon re-culture. Data show that enhancer disruption reduces the Bcl11b activation advantage in DN2 cells as compared to DN3 cells. Data represent mean and standard deviation of three replicates from two independent experiments.
+**Figure 6.:** Cells expressing only one Bcl11b allele at the indicated stages were sorted from thymocytes, cultured for 4d on OP9-DL1 monolayers, and analyzed for activation of the initially inactive Bcl11b allele using flow cytometry. (A) Flow plots (left) show Bcl11b-mCh versus Bcl11b-YFP expression levels for descendants of cells that had mono-allelic expression at the indicated stages of development; bar charts (right) show the fraction of progenitors from different stages that activate the silent Bcl11b allele upon culture. Data represent mean and standard deviation of 4–5 replicates, derived from two independent experiments. The competence to activate the silent Bcl11b allele decreases upon progression to the DN3 stage and beyond. (B) Flow plots (left) show Bcl11b-mCh versus Bcl11b-YFP expression levels for DN2 or DN3 progenitors with either an intact YFP allele enhancer (top) or a disrupted YFP allele enhancer (bottom). Bar chart (right) shows the fraction of cells activating the silent Bcl11b allele upon re-culture. Data show that enhancer disruption reduces the Bcl11b activation advantage in DN2 cells as compared to DN3 cells. Data represent mean and standard deviation of three replicates from two independent experiments.
 
 Bone Marrow (BM) cells were harvested from dissected femurs and tibiae of 2- to 3- month-old Bcl11bYFP(neo)/mCh(neo) mice. Fetal livers (FLs) were removed from F0 chimeric fetuses of pregnant surrogate mice at E14.5, individually disrupted mechanically via pipetting into whole organ suspension, and frozen down in freezing media (50% FBS, 40% αMEM, 10% DMSO) for liquid nitrogen storage. Prior to in vitro culture use, BM and thawed FL cell suspensions were blocked in 2.4G2 supernatant, tagged with biotinylated antibody lineage markers specific to BM (CD19, CD11b, CD11c, NK1.1, Ter119, CD3ε, Gr-1, B220) or FL (CD19, F4/80, CD11c, NK1.1, Ter119, Gr-1), and depleted of biotin-streptavidin-magnetically labeled mature lineage cells as described above. Eluted lineage depleted (Lin-) bone marrow progenitors were either frozen down in freezing media for storage in liquid nitrogen or used directly for in vitro cell culture assays of T-cell development, while Lin- fetal liver progenitors were immediately cultured.
 
-## In vitro differentiation of T-cell progenitors
+#### In vitro differentiation of T-cell progenitors
 
 DN T-cell precursors used for in vitro studies were generated by culturing BM and FL stem and progenitor cells on a OP9-DL1 stromal monolayer culture system (Schmitt and Zúñiga-Pflücker, 2002), following previously detailed methods (Kueh et al., 2016) with adapted variations as described below. To promote the DN T-cell development, purified or thawed Lin- progenitors were cultured on OP9-DL1 stromal cell monolayers (Schmitt and Zúñiga-Pflücker, 2002) plated on tissue-culture treated plates (Corning) using standard culture medium [80% αMEM (Gibco), 20% Fetal Bovine Serum (Sigma-Aldrich), Pen-Strep-Glutamine (Gibco), 50 μM β-mercaptoethanol (Sigma)], grown at 37°C in 5% CO2 conditions, and supplemented with cytokines. All in vitro T-cell generation cultures of Bcl11b-YFP/mCh Lin- BM precursors were supplemented with 5 ng/mL Flt-3L (Peprotech) and 5 ng/mL IL-7 (Peprotech), and were sorted after 6 or seven total days of culture following transduction with a retroviral vector expressing CFP 1 day prior (Figures 2, 4F and 5A, and Figure 2—figure supplement 1, Figure 4—figure supplements 1–2). Lin- fetal liver precursors were cultured with 5 ng/mL Flt-3L and 1 ng/mL IL-7 for the indicated number of days before analysis or sorting. For experiments in which Bcl11b locus activation was compared in the presence and absence of Notch signals, DN2 progenitors were cultured in parallel with OP9-DL1 stroma and with OP9-Control (without DL1 expression), respectively, as previously described (Kueh et al., 2016).
 
 Sorted thymocytes (Figures 3D and 6A), BM-derived DN2 progenitors (Figure 5A), and FL-DN progenitors (Figure 6B) were seeded manually onto 6000 OP9-DL1 or OP9-Control feeder cells per well in 96-well plates, cultured in standard medium supplemented with 5 ng/mL Flt-3L and either 5 ng/mL IL-7 (BM) or 1 ng/mL IL-7 (Thymocytes and FL), and harvested for analysis after the indicated number of days.
 
-## Flow cytometry and cell sorting
+#### Flow cytometry and cell sorting
 
 Unless otherwise noted, flow cytometry analysis and fluorescent-activated cell sorting of all in vitro and ex vivo lymphocytes were prepared using the procedures outlined. Briefly, cultured cells on tissue culture plates and primary cells from lymphoid organs were prepared as single cell suspensions, incubated in 2.4G2 Fc blocking solution, stained with respective surface cell markers as indicated (see Supplementary file 1, Key Resources Table), resuspended in HBH, filtered through a 40 μm nylon mesh, and analyzed using a benchtop MacsQuant VYB flow cytometer (Miltenyi Biotec, Auburn, CA) or sorted with Sony Synergy Sorter (Sony Biotechnology, Inc, San Jose, CA). Both instruments contain capabilities to detect mCherry fluorescence by 561 nm laser excitation. All antibodies used in these experiments are standard, commercially available monoclonal reagents widely established to characterize immune cell populations in the mouse; details are given in Supplementary file 1. Acquired flow cytometry data were all analyzed with FlowJo software (Tree Star).
 
-## Timelapse imaging
+#### Timelapse imaging
 
 Timelapse imaging of live-cells was used to study Bcl11b gene expression dynamics in single cells (Figures 2 and 4F, and Figure 2—figure supplement 1, Figure 4—figure supplements 1–2, and Video 1). To prepare for multi-day imaging, PDMS micromesh arrays (250 μm hole diameter, Microsurfaces, AU) containing small microwells that prevent seeded cells from migrating out of a single imaging field of view on 40x objective were adhered to 24-well glass-bottomed plates (Mattek, Ashland, MA). To prevent overcrowding in microwells and enable proper cell tracking, non-GFP expressing OP9-DL1, described in Kueh et al., 2016, and sorted CFP+ DN2 progenitors were plated at appropriate densities to achieve ~8 cells/microwell and ~1 cell/microwell, respectively. Cells were cultured in standard medium using Phenol Red-free αMEM (Gibco) and supplemented with 5 ng/mL Flt-3L and 5 ng/mL IL-7.
 
-## Image segmentation and analysis
+#### Image segmentation and analysis
 
 Cells were segmented using image processing workflow implemented in MATLAB (Mathworks, Natick, MA), as previously described in detail (Kueh et al., 2013; Kueh et al., 2016). Briefly, this workflow involved: (1) Correction for uneven fluorescence illumination, calculated from a fluorescent slide with uniform intensity, followed by background subtraction; (2) Automated cell segmentation, using an Laplacian filter-based edge detection algorithm, followed by exclusion of non-cell objects by size and shape selection. Cell segmentations were then subject to manual inspection, and segmented objects that did not correspond to cells were then eliminated. For each data set, automated segmentation parameters were chosen such that the fraction of incorrectly identified cells was <1% of the total number of segmented cells. To calculate fluorescence intensities for segmented cells, we first calculated average intensity levels for an annulus surrounding the segmented cell, and subtracted this background value from image intensities in the cell interior. This additional subtraction was performed to remove auto-fluorescence contributions from OP9-DL1 feeder cells to intensity measurements. Fluorescence intensity measurements were either displayed for clonal cell lineages confined within individual microwells (Figure 2B, C and Figure 2—figure supplement 1A, Figure 4—figure supplement 2B), or in a two-dimensional heat map showing the intensity distributions for different indicated time windows for all 218 microwells in a single imaging experiment (Figures 2B–D and 4F, and Figure 4—figure supplement 1).
 
-To obtain the time evolution of Bcl11b population fractions, we fit the 2D histograms of Bcl11b-YFP and Bcl11b-RFP levels, given by y and r respectively, to a sum of four 2D Gaussian functions:Fr,y=∑i=14fir,y.
+To obtain the time evolution of Bcl11b population fractions, we fit the 2D histograms of Bcl11b-YFP and Bcl11b-RFP levels, given by y and r respectively, to a sum of four 2D Gaussian functions:
 
-Each 2D Gaussian function is given by:fi(r,y)=Ni2πσr,iσy,i1−ρi2⋅exp⁡(−12(1−ρi2r2)[(r−μr,i)2σr,i2+(y−μy,i)2σr,i2+2ρi(r−μr,i)(y−μr,i)σr,iσy,i])
+$$
+Fr,y=\sumi=14f_{i}r,y.
+$$
 
-Here, we define the four populations i=1…4 to correspond to the non-expressing, yellow mono-allelic, red mono-allelic and bi-allelic populations respectively (Figure 4—figure supplement 1). Here, Ni corresponds to the volume under the Gaussian function when integrated over r and y. When fitted to experimental 2D histogram, Ni provides an estimate of the number of cells within a given population.
+Each 2D Gaussian function is given by:
 
-We performed our fitting in two steps: (1) we first obtained the means, standard deviations and correlation coefficients of the Bcl11b non-expressing population (μr,1, μy,1,σr,1,σy,1,ρ1) by fitting the first 2D Gaussian function f1(r,y) to a 2D histogram of Bcl11b-YFP and Bcl11b-RFP levels of cells at the beginning of the experiment (within the time window 0<t<10 hr), which were sorted to have both Bcl11b alleles inactive. This fit to the initial non-expressing Bcl11b population is crucial for accurate determination of different Bcl11b allelic populations using the 4-Gaussian fit approach. (2) To obtain a time series of Bcl11b allelic population fractions from single-cell data, we then fit the constrained 4-Gaussian model F(r,y) to 2D histograms of Bcl11b-YFP and RFP levels obtained across successive time bins, fixing the parameters for the first Gaussian, and allowing the means, standard deviations and correlation coefficients of the remaining Gaussians(μr,j, μy,j,σr,j,σy,j,ρj), j = 2….4 to vary within bounds set by the observed fluorescence distributions of the Bcl11b allelic-expressing population. From these fits, we then obtain the observed fraction of cells in the ith state in a time window centered on time t:fiobs(t)=Ni(t)/∑j=14Nj(t)
+$$
+f_{i}(r,y)=\frac{N_{i}}{2\pi\sigma_{r,i}\sigma_{y,i}\sqrt{1−ρ_{i}^{2}}}⋅exp⁡(−\frac{1}{2(1−ρ_{i}^{2}r^{2})}[\frac{(r−\mu_{r,i})^{2}}{\sigma_{r,i}^{2}}+\frac{(y−\mu_{y,i})^{2}}{\sigma_{r,i}^{2}}+\frac{2ρ_{i}(r−\mu_{r,i})(y−\mu_{r,i})}{\sigma_{r,i}\sigma_{y,i}}])
+$$
 
-To estimate confidence bounds, we also perform error analysis to get the confidence bounds for fi(t), given by:δfiobs=fiobsδNiNi2+∑j=14δNj2∑j=14Nj2
+Here, we define the four populations $i=1…4$ to correspond to the non-expressing, yellow mono-allelic, red mono-allelic and bi-allelic populations respectively (Figure 4—figure supplement 1). Here, Ni corresponds to the volume under the Gaussian function when integrated over r and y. When fitted to experimental 2D histogram, Ni provides an estimate of the number of cells within a given population.
 
-Here, δNi represents the error in the estimation of Ni from least squares fitting.
+We performed our fitting in two steps: (1) we first obtained the means, standard deviations and correlation coefficients of the Bcl11b non-expressing population $(\mu_{r,1},\mu_{y,1},\sigma_{r,1},\sigma_{y,1},ρ_{1})$ by fitting the first 2D Gaussian function $f_{1}(r,y)$ to a 2D histogram of Bcl11b-YFP and Bcl11b-RFP levels of cells at the beginning of the experiment (within the time window $0<t<1$0 hr), which were sorted to have both Bcl11b alleles inactive. This fit to the initial non-expressing Bcl11b population is crucial for accurate determination of different Bcl11b allelic populations using the 4-Gaussian fit approach. (2) To obtain a time series of Bcl11b allelic population fractions from single-cell data, we then fit the constrained 4-Gaussian model $F(r,y)$ to 2D histograms of Bcl11b-YFP and RFP levels obtained across successive time bins, fixing the parameters for the first Gaussian, and allowing the means, standard deviations and correlation coefficients of the remaining Gaussians$(\mu_{r,j},\mu_{y,j},\sigma_{r,j},\sigma_{y,j},ρ_{j})$, j = 2….4 to vary within bounds set by the observed fluorescence distributions of the Bcl11b allelic-expressing population. From these fits, we then obtain the observed fraction of cells in the ith state in a time window centered on time t:
 
-## Model analysis and fitting
+$$
+f_{i}^{obs}(t)=N_{i}(t)/\sumj=14N_{j}(t)
+$$
 
-Models for Bcl11b activation (Cis-only, Sequential trans-cis, Parallele trans-cis; Figure 4A, Appendix) were numerically simulated using an ordinary differential equation solver in MATLAB. The predicted time course from these models were fit to experimental data, using a least-squares procedure with the following free parameters: the cis- and trans- activation rates (kC and kT respectively), and the fraction of cells in each Bcl11b non-expressing sub-state, constrained to equal one at t = 0 (sequential and parallel trans-cis models only). For both yellow/red mono-allelic and bi-allelic expressing populations fractions, there is a clear lag in their rise kinetics of ~15–20 hr (Figure 4B), even though all bi-allelic and mono-allelic expressing cells are all already discernible after the earliest measured time interval (~5 hr, Figure 4—figure supplement 1, red arrows). This lag in measured population fraction data occurs, because the earliest Bcl11b expressing cells still have fluorescent reporter levels that are very similar to the non-expressing cell populations, and are therefore not detected by the constrained Gaussian feature described above. Thus, to correct for this lag, we introduced detection time delay into the fitting functions for the three Bcl11b –expressing populations, as follows:fi't=fit-τi
+To estimate confidence bounds, we also perform error analysis to get the confidence bounds for $f_{i}(t)$, given by:
 
-Here, τi denotes the time delay in the detection of the ith allelic expression state, taken to be the time at which the detected fraction of cells in the ith state increases to a value significantly greater than zero. Note that as RFP and YFP differed in their accumulation rates and detection thresholds, they showed different time delays for detection. We evaluated the goodness of each model fit by calculating its reduced chi-squared value, defined as:χ2=∑i,jfi,j-fi,jobsδfi,jobsd.f.where the summation is taken over all allelic expressing states i and all time points j, subject to the time lag defined above, and the number of degrees freedom (d.f) is defined as the number of fitted data points, minus the number of fitting parameters. To compare whether the sequential or parallel trans-cis models provided a significantly better fit to the data compared to the cis- only model, we then took the ratio of reduced chi-squared values for the two compared fits (i.e. their F values), and evaluated for statistical difference using the F-test. Qualitative predictions for perturbing specific reaction steps (Figure 5—figure supplement 1) were obtained by performing a series of simulations with increasing magnitude of perturbation to the same ending time point. In accordance with experimental observations showing some inactivation of the Bcl11b locus upon Notch withdrawal (Figure 5A,B), perturbations involved both a reduction of the forward rate constant, and an increase in the rate of a reverse reaction, together with a graded attenuation in the perturbation after activation of one Bcl11b allele (see Figure 5—figure supplement 1, and Appendix for a comprehensive description). Parameters were chosen based on the best fits of the unperturbed time course (Figure 4B), although the direction of the predicted shifts in phase space do not depend on the exact parameters being chosen (Figure 5C,D, and Figure 5—figure supplement 1).
+$$
+\deltaf_{i}^{obs}=f_{i}^{obs}\sqrt{\frac{\deltaN_{i}}{N_{i}}^{2}+\frac{\sumj=14\deltaN_{j}^{2}}{\sumj=14N_{j}^{2}}}
+$$
+
+Here, $\deltaN_{i}$ represents the error in the estimation of $N_{i}$ from least squares fitting.
+
+#### Model analysis and fitting
+
+Models for Bcl11b activation (Cis-only, Sequential trans-cis, Parallele trans-cis; Figure 4A, Appendix) were numerically simulated using an ordinary differential equation solver in MATLAB. The predicted time course from these models were fit to experimental data, using a least-squares procedure with the following free parameters: the cis- and trans- activation rates (kC and kT respectively), and the fraction of cells in each Bcl11b non-expressing sub-state, constrained to equal one at t = 0 (sequential and parallel trans-cis models only). For both yellow/red mono-allelic and bi-allelic expressing populations fractions, there is a clear lag in their rise kinetics of ~15–20 hr (Figure 4B), even though all bi-allelic and mono-allelic expressing cells are all already discernible after the earliest measured time interval (~5 hr, Figure 4—figure supplement 1, red arrows). This lag in measured population fraction data occurs, because the earliest Bcl11b expressing cells still have fluorescent reporter levels that are very similar to the non-expressing cell populations, and are therefore not detected by the constrained Gaussian feature described above. Thus, to correct for this lag, we introduced detection time delay into the fitting functions for the three Bcl11b –expressing populations, as follows:
+
+$$
+f_{i}^{'}t=f_{i}t-\tau_{i}
+$$
+
+Here, $\tau_{i}$ denotes the time delay in the detection of the ith allelic expression state, taken to be the time at which the detected fraction of cells in the ith state increases to a value significantly greater than zero. Note that as RFP and YFP differed in their accumulation rates and detection thresholds, they showed different time delays for detection. We evaluated the goodness of each model fit by calculating its reduced chi-squared value, defined as:
+
+$$
+χ^{2}=\frac{\sum_{i,j}\frac{f_{i,j}-f_{i,j}^{obs}}{\deltaf_{i,j}^{obs}}}{d.f.}
+$$
+
+where the summation is taken over all allelic expressing states i and all time points j, subject to the time lag defined above, and the number of degrees freedom (d.f) is defined as the number of fitted data points, minus the number of fitting parameters. To compare whether the sequential or parallel trans-cis models provided a significantly better fit to the data compared to the cis- only model, we then took the ratio of reduced chi-squared values for the two compared fits (i.e. their F values), and evaluated for statistical difference using the F-test. Qualitative predictions for perturbing specific reaction steps (Figure 5—figure supplement 1) were obtained by performing a series of simulations with increasing magnitude of perturbation to the same ending time point. In accordance with experimental observations showing some inactivation of the Bcl11b locus upon Notch withdrawal (Figure 5A,B), perturbations involved both a reduction of the forward rate constant, and an increase in the rate of a reverse reaction, together with a graded attenuation in the perturbation after activation of one Bcl11b allele (see Figure 5—figure supplement 1, and Appendix for a comprehensive description). Parameters were chosen based on the best fits of the unperturbed time course (Figure 4B), although the direction of the predicted shifts in phase space do not depend on the exact parameters being chosen (Figure 5C,D, and Figure 5—figure supplement 1).
 
 To generate predictions for allelic state distributions from single clones (Figure 4D,E), we performed Monte-Carlo simulations of clonal single proliferating progenitor lineages, using Markov transition probabilities determined by best-fit rate constants to sequential or parallel trans-cis models (see Appendix). Here, the cell division time was taken to be 20 hr, corresponding to rates of cell expansion observed in experiments, and measurements of clonal allelic distributions were taken at 100 hr (i.e. after five cell divisions), also matching the time of experimental sampling. Probabilities per cell division for each transition were obtained by converting the continuous-time models to a discrete Markov chain, and these probabilities were taken to be independent between two daughters of the same cell, consistent with the first-order kinetics of these transitions in our models. To test experimental data against each model, we obtained the expected probability of having clones with dual-allelic expression together with mono-allelic expression from two alleles (Y + R + D) or from a single allele (Y + D and R + D) clones, for each model, and compared the observed frequencies from clonal lineage data using a chi-squared test.
 
-## Radiation chimeras
+#### Radiation chimeras
 
 Fetal liver precursor transplanted CD45.1 chimeras were generated to study the long-term T-cell potential of cells without Bcl11b enhancer in mice. Individual fetal liver whole organ suspensions were thawed and split for depletion protocols indicated above or stimulated in standard medium supplemented with 50 ng/mL IL-6 (eBioscience), 50 ng/mL SCF (eBioscience), and 20 ng/mL IL-3 (eBioscience) for 2 days to enrich for hematopoietic stem cell (HSC) progenitors. CD45.1 C57BL/6 mice were subjected to sublethal radiation of 1000 rads from a cesium source. Cells were re-suspended in PBS and 106 cells in a volume of 200 μL were injected retro-orbitally into anesthesized, irradiated mice using 31G, 6 mm insulin syringes (BD). Comprehensive splenocyte analysis was performed on 2-month post-transplantation chimeras by sacrificing mice and harvesting spleen and thymus organs following protocols indicated above (Figure 3—figure supplement 3).
 
-## Retroviral transduction on Retronectin-DL1-coated plates
+#### Retroviral transduction on Retronectin-DL1-coated plates
 
 Retroviral particles were packaged by transient cotransfection of the Phoenix-Eco packaging cell line with the retroviral construct and the pCL-Eco plasmid (Imgenex) using FuGENE 6 (Promega). Viral supernatants were collected at 2 and 3 days after transfection and immediately frozen at −80°C until use. To infect BM-derived T-cell progenitors, 33 μg/mL retronectin (Clontech) and 2.67 μg/mL of DL1-extracellular domain fused to human IgG1 Fc protein (Varnum-Finney et al., 2000) were added in a volume of 500 μL per well in 24-well tissue culture plates (Costar, Corning) and incubated overnight. Viral supernatants were added next day into coated wells and spun down at 2000 rcf for 2 hr at room temperature. BM-derived T-cell progenitors used for viral transduction were cultured for 5 days according to conditions described above, disaggregated, filtered through a 40 μm nylon mesh, and 106 cells transferred onto each retronectin/DL1-coated virus-bound 24-well supplemented with 5 ng/mL SCF (Peprotech), 5 ng/mL Flt3-L, and 5 ng/mL IL-7.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The sample size for each experiment, and number of independent experiments are stated in the Figures and Figure Legends. In Figure 4B, the best fits of the different models were evaluated by comparing sum-squared errors using the F-test (Figure 4C), adjusted for different degrees of freedom for each model. A chi-squared test was applied to compare experimental data against model predictions shown in Figure 4F. Data that had a calculated p-value<0.05 was considered statistical significant, and exact P-values are reported in the figure legends. Bar chart data shown (Figure 6A,B) represent mean and standard deviation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/37851/elife-37851-fig7-v1.jpg)
 
-**Figure 7.:** Bcl11b regulation by parallel cis and trans-limiting steps.Bcl11b activation requires two rate-limiting steps: a switch of the Bcl11b locus from an inactive to active epigenetic state, and the activation of a trans factor is necessary for transcription of Bcl11b from an activated locus. Notch signaling activates TCF-1 and GATA3 in early thymic progenitors (García-Ojeda et al., 2013; Scripture-Adams et al., 2014; Weber et al., 2011), and these two factors may act on the identified distal enhancer to control the rate-limiting cis step on the Bcl11b locus (green). In parallel, Notch promotes the activation of a trans factor (red) that is necessary for transcription from a cis-activated Bcl11b locus. The cis and trans-limiting steps together control the dynamics of Bcl11b expression and T-cell lineage commitment.
+**Figure 7.:** Bcl11b activation requires two rate-limiting steps: a switch of the Bcl11b locus from an inactive to active epigenetic state, and the activation of a trans factor is necessary for transcription of Bcl11b from an activated locus. Notch signaling activates TCF-1 and GATA3 in early thymic progenitors (García-Ojeda et al., 2013; Scripture-Adams et al., 2014; Weber et al., 2011), and these two factors may act on the identified distal enhancer to control the rate-limiting cis step on the Bcl11b locus (green). In parallel, Notch promotes the activation of a trans factor (red) that is necessary for transcription from a cis-activated Bcl11b locus. The cis and trans-limiting steps together control the dynamics of Bcl11b expression and T-cell lineage commitment.

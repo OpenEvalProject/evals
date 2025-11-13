@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.23383.001 The first results from the Reproducibility Project: Cancer Biology suggest that there is scope for improving reproducibility in pre-clinical cancer research. DOI: http://dx.doi.org/10.7554/eLife.23383.001
+The first results from the Reproducibility Project: Cancer Biology suggest that there is scope for improving reproducibility in pre-clinical cancer research.
 
 ## What does it mean to repeat the methodology?
 

@@ -33,7 +33,7 @@ Overall, these findings are consistent with theories that posit that the brain c
 
 ## Results
 
-## Simulation of the perceptual decision process
+### Simulation of the perceptual decision process
 
 In a re-assessment of an existing dataset (Lüttke et al., 2016a) selected participants with high percentage of fused percepts for McGurk stimuli. When presented with acoustic /aba/ together with a video of a speaker articulating /aga/ the most frequent percept was /ada/; we refer to these as fused McGurk trials. These listeners were combining information from acoustic (A) and visual (V) modalities since the same /aba/ acoustic token was correctly categorized as /aba/ when presented alone. After a fused McGurk trial, participants showed recalibration. They classified acoustic only /aba/ stimuli as ‘ada’ more frequently (29% ‘ada’ percepts) than when the acoustic only /aba/was presented after any other stimulus (16% ‘ada’ percepts).
 
@@ -55,7 +55,7 @@ The model qualitatively reproduces the average performance across participants i
 
 **Figure 2.:** Simulation of the Lüttke et al. (2016a) experiment. Model classification across all trials. Each subpanel shows the percentage of /aba/, /ada/ and /aga/ percepts corresponding to each of the six conditions (Ab: acoustic only /aba/; Ad: acoustic only /ada/; Ag: acoustic only /aga/; VbAb: congruent audiovisual /aba/; VgAb incongruent McGurk stimuli with visual /aga/ and acoustic /aba/; VgAg: congruent /aga/). Congruent and acoustic only stimuli are categorized with a high degree of accuracy and McGurk trials are consistently fused, that is, perceived as /ada/. We reproduce the experimental paradigm consisting of six types of stimuli presented in pseudo-random order; three non-ambiguous acoustic only tokens:/aba/, /ada/ and /aga/, and three audiovisual stimuli: congruent /aba/, incongruent visual /aga/with acoustic /aba/(McGurk stimuli), and congruent /aga/.
 
-## Simulation of the recalibration process
+### Simulation of the recalibration process
 
 After the model has made the perceptual decision, it is recalibrated. After each trial, we changed the generative model’s location parameters associated with the perceived category (θk,V θk,A), which represent the categories through their expected sensory feature values in each modality. This was done for both the acoustic and visual parameters after an audio-visual trial, and for the acoustic parameter after an acoustic trial. We assumed that this happens for every trial as part of a monitoring process that assesses how well the internal model matches sensory inputs. The changes are thus driven by residual sensory prediction error, the difference between the expected and observed values for the modulation amplitudes in each modality.
 
@@ -65,9 +65,19 @@ When listeners consistently reported the fused percept ’ada’ when confronte
 
 **Figure 3.:** (A) Speech tokens are represented in a multimodal feature space here represented by two main dimensions. Each ellipse stands for the internal representation of each congruent category (‘aba’ in blue, ‘ada’ in red, ‘aga’ in yellow). The red squares show the location of the audiovisual stimuli in the 2D feature space. They represent congruent /aba/(top left), congruent /aga/(bottom right), and McGurk stimuli (bottom left). When McGurk stimuli are repeatedly perceived as /ada/, the /ada/ representation (in solid red) is modified in such a way that it ‘moves’ (dashed red) towards the presented McGurk stimulus (visual /aga/ with acoustic /aba/) and therefore should affect the processing of subsequent sensory input. The right panel illustrates how the acoustic representation for /ada/ has shifted towards that of /aba/. (B) The effects of the shift in the internal representation on the categorization of the purely acoustic /aba/(Ab), /ada/(Ad) and /aga/(Ag) sounds. Each panel shows the percentage of /aba/, /ada/ and /aga/ percepts for the ‘control’ representations (solid lines) and the representations with the recalibrated /ada/(dashed line). As in Lüttke et al. (2016a), the biggest effect is observed when categorizing the /aba/ sounds.
 
-In the model, the residual prediction error occurs in the transformation from token identity to predicted modulation of the acoustic feature (CA). Sensory evidence drives estimated CA towards the experimentally presented value: /aba/ for McGurk stimuli. Thus, when the percept is /ada/, there is a mismatch between the top-down prediction as determined by the top-down component p(CA|k) that drives CA towards θ/ada/,A, and the actual value determined by the bottom-up component. This is evident in the following expression(1)Ck,A=σA2σA2+σk,A2θk,A+σk,A2σA2+σk,A2SAwith the first term reflecting the prior expectation for category ‘k’ and the second reflecting the sensory evidence.
+In the model, the residual prediction error occurs in the transformation from token identity to predicted modulation of the acoustic feature (CA). Sensory evidence drives estimated CA towards the experimentally presented value: /aba/ for McGurk stimuli. Thus, when the percept is /ada/, there is a mismatch between the top-down prediction as determined by the top-down component p(CA|k) that drives CA towards θ/ada/,A, and the actual value determined by the bottom-up component. This is evident in the following expression
 
-The expression can be rewritten to make the prediction error explicit.(2)Ck,A=θk,A+σk,A2σA2+σk,A2(SA−θk,A)
+$$
+C_{k,A}=\frac{\sigma_{A}^{2}}{\sigma_{A}^{2}+\sigma_{k,A}^{2}}\theta_{k,A}+\frac{\sigma_{k,A}^{2}}{\sigma_{A}^{2}+\sigma_{k,A}^{2}}S_{A}
+$$
+
+with the first term reflecting the prior expectation for category ‘k’ and the second reflecting the sensory evidence.
+
+The expression can be rewritten to make the prediction error explicit.
+
+$$
+C_{k,A}=\theta_{k,A}+\frac{\sigma_{k,A}^{2}}{\sigma_{A}^{2}+\sigma_{k,A}^{2}}(S_{A}−\theta_{k,A})
+$$
 
 This highlights how the listener’s estimate of the modulation comes from combining the prediction from the category (first term) and the weighted residual prediction error (in the second term).
 
@@ -81,7 +91,7 @@ Although we did not perform an exhaustive parameter search, we did repeat the si
 
 Below, for each recalibration model, we report results based on the parameter values that led to the best fit to the ‘McGurk contrast’.
 
-## Model without recalibration
+### Model without recalibration
 
 As a control we simulated the experiment with no recalibration. For the simulation with the closest fit to the McGurk contrast, the percentage of acoustic /aba/ categorized as ‘ada’ was 14% after fused McGurk stimuli and 15% after the control stimuli (Wilcoxon signed-rank test p=0.6, Figure 4A). The 95% CI for the difference between trials preceded or not by a fused McGurk stimulus was [−6.48, 5.25]%. For the /ada/ contrast, the percentage of acoustic /aba/ categorized as ‘ada’ was 14% after correctly identified /ada/ sounds and 19% after the control stimuli (Wilcoxon signed-rank test p=0.5). The 95% CI for the difference between the two conditions was [−8.24, 4.21]%.
 
@@ -89,27 +99,51 @@ As a control we simulated the experiment with no recalibration. For the simulati
 
 **Figure 4.:** ‘ada’ percepts in response to acoustic /aba/ stimulation. We show two contrasts. The McGurk contrast compares the percentage of ‘ada’ responses when acoustic /aba/ is preceded by control stimuli (acoustic /aba/ and /aga/, congruent /aba/ and /aga/) versus by fused McGurk trials. The /ada/ contrast refers to acoustic /aba/ preceded by control stimuli (acoustic /aba/ and /aga/) versus acoustic trials correctly perceived as ‘ada’. The four panels show the simulation results for the parameters that led to the closest fit to the McGurk contrast reported by Lüttke et al. (2016a) for four different update rules as indicated in the insets: (A) control, no update, (B) the standard Bayesian updates, (C) the constant delta rule, and (D) Decay, the update rule that assumes that recalibration occurs at two time scales. Both the standard Bayes (B) and the constant delta rule (C) lead to changes in internal representations that are reflected in the overall increase in ‘ada’ percepts (with respect to the control, no update model on panel A) however, it did not translate into significant effects specific to the next trial. The model assuming two time scales does reproduce the effect of a fused McGurk on the next trial (McGurk contrast). Only the McGurk contrast for the two time scale recalibration model (D, left) was significant (**p=0.0003). All other p values were greater than 0.05, except (*, p=0.03, C right).
 
-## Bayesian updating
+### Bayesian updating
 
 We first considered the same updating principle as in Kleinschmidt and Jaeger (2015) to model changes in speech sound categorization after exposure to adapting stimuli. After each trial the generative model updates the parameters by considering their probability given the sensory input and the categorization p(θ|k sV sA), leading to sequential Bayesian updating (Equation 6 in the methods section). The closest fit to the McGurk contrast was obtained for simulations with κk,f,0 = 1 and νk,f,0 = 1. The percentage of /ada/ responses to acoustic only /aba/ stimuli was 23% after fused McGurk stimuli and 22% after control stimuli. This difference was not significant (Wilcoxon signed-rank test p=0.7, Figure 4B). The 95% confidence interval for the difference in medians between the two conditions was [−6.14, 7.97]%, thus failing to reproduce the effect of interest. This might be due to the fact that Bayesian update rules have the form of a delta rule with a decreasing learning rate. As a consequence, the magnitude of changes in the categories diminishes as the experiment progresses and all stimuli end up being related to the same internal model. The updates did lead to observable effects; there was an overall increase of /ada/ responses to acoustic /aba/(24% vs. the 14% of the control experiment without parameter updates). The resulting changes in model parameters are expected to induce an after-effect, that is, the point of subjective equivalence in an /aba /- /ada/ acoustic continuum should be shifted in the direction of /aba/.
 
-## Constant delta rule
+### Constant delta rule
 
-The Bayesian update rule used above assumes that the parameters are constant in time and that therefore all samples have equal value, whether they are old or recent. This is equivalent to a delta rule with a learning rate tending to zero. We therefore considered a rule with a constant learning rate, which allows for updates of similar magnitude over the whole experiment. The model’s expected modulation for the perceived category was recalibrated according to:Δθk,f=0.2(sf−θk)p(k|sA,sV)onlyfork=perceptwhere f indexes the feature (f = A, acoustic feature; f = V, visual feature). As Figure 4C shows, the percentage of acoustic /aba/ categorized as ‘ada’ was not significantly higher when the preceding trial was a fused McGurk trial compared with any other stimulus (27% vs. 24%, Wilcoxon signed-rank test, p = 0.08 Figure 4C; median difference at 95% CI [−0.14 12]%). Note that in this case too, the proportion of /ada/ responses for acoustic /aba/ inputs is increased compared with simulations run without any adaptation (Figure 4A).
+The Bayesian update rule used above assumes that the parameters are constant in time and that therefore all samples have equal value, whether they are old or recent. This is equivalent to a delta rule with a learning rate tending to zero. We therefore considered a rule with a constant learning rate, which allows for updates of similar magnitude over the whole experiment. The model’s expected modulation for the perceived category was recalibrated according to:
+
+$$
+Δ\theta_{k,f}=0.2(s_{f}−\theta_{k})p(k|s_{A},s_{V})onlyfork=percept
+$$
+
+where f indexes the feature (f = A, acoustic feature; f = V, visual feature). As Figure 4C shows, the percentage of acoustic /aba/ categorized as ‘ada’ was not significantly higher when the preceding trial was a fused McGurk trial compared with any other stimulus (27% vs. 24%, Wilcoxon signed-rank test, p = 0.08 Figure 4C; median difference at 95% CI [−0.14 12]%). Note that in this case too, the proportion of /ada/ responses for acoustic /aba/ inputs is increased compared with simulations run without any adaptation (Figure 4A).
 
 Although the learning rate is constant, which means that recalibration magnitude does not necessarily decrease during the experiment, recalibration does not decay across trials. As a result, for trials between consecutive /ada/ percepts, stimuli experience a similar /ada/ category and the simulations do not lead to a significant difference in the classification of acoustic /aba/ whether preceded or not by a fused McGurk trial.
 
-## Hierarchical updates with intrinsic decay
+### Hierarchical updates with intrinsic decay
 
 We also tested an alternative update rule that was expected to better reflect how changes occur in the environment. We considered that they might occur hierarchically, with just two levels in a first approximation, corresponding to keeping ‘running averages’ over different time scales, enabling sensitivity to fast changes without erasing longer-lasting trends.
 
 We considered two sets of hierarchically related variables associated with a single category: θk,f (fast) and μk,f (slow). The faster decaying one, θk,f, is driven by both sensory prediction error and the more slowly changing variable, μk,f (more details can be found in Materials and Methods). This slowly changing and decaying variable, μk,f, keeps a representation based on a longer term ‘average’ over sensory evidence. In the limit, μk,f is constant; and this is what we consider here for illustrative purposes. Thus the update rules include an instant change in the fast variable due to the sensory prediction error in the perceived category plus a decay term toward the slower variable for every category. The instant change corresponds to the traditional update after an observation; the decay reflects the transient character of this update.
 
-The results in Figure 4D were run with the following parameters:Δθk,f=0.4(sf−θk)p(k|sA,sV)onlyfork=perceptΔθk,f=0.14(μk,f−θk,f)forallkΔμk,f=0forallkwhere subscript f indexes the feature (f = A for acoustic, f = V for visual). All categories decay toward the corresponding long-term stable values (μk,A, μk,V) in the inter-trial interval. By comparing the decay contribution Δθk,f = 0.14 (μk,f - θk,f) with the update expression for a quantity with decay time constant τ in an interval Δt (here Δt = 5 s, the interval between consecutive trials) Δθk,f = Δt/τ (μk,f - θk,f), we can derive a rough estimate for the decay time constant τ ~5/0.14 s ~ 35 s.
+The results in Figure 4D were run with the following parameters:
+
+$$
+Δ\theta_{k,f}=0.4(s_{f}−\theta_{k})p(k|s_{A},s_{V})onlyfork=percept
+$$
+
+
+
+$$
+Δ\theta_{k,f}=0.14(\mu_{k,f}−\theta_{k,f})forallk
+$$
+
+
+
+$$
+Δ\mu_{k,f}=0forallk
+$$
+
+where subscript f indexes the feature (f = A for acoustic, f = V for visual). All categories decay toward the corresponding long-term stable values (μk,A, μk,V) in the inter-trial interval. By comparing the decay contribution Δθk,f = 0.14 (μk,f - θk,f) with the update expression for a quantity with decay time constant τ in an interval Δt (here Δt = 5 s, the interval between consecutive trials) Δθk,f = Δt/τ (μk,f - θk,f), we can derive a rough estimate for the decay time constant τ ~5/0.14 s ~ 35 s.
 
 The percentage of acoustic /aba/categorized as ‘ada’ after control trials was 18% vs. 29% after fused McGurk (Wilcoxon ranked-signed test, p=0.0004), the median difference being 95% CI: [5.8, 18.0]%. Therefore two effects can be observed; the overall increase in acoustic /aba/ categorized as /ada/ and the rapid recalibration effect reflected in the specific increase observed when acoustic /aba/ was preceded by a fused McGurk trial.
 
-## Update rule comparison
+### Update rule comparison
 
 We have modelled recalibration as the continuous updating of the model parameters that represent each of the speech categories used to guide perceptual decisions, in particular the expected values of sensory features associated with each category θk,V, θk,A (k indexing the category). With this approach, the ideal adapter Bayesian account turned out to be incompatible with the experimental findings, due to the erroneous underlying assumption of a stable environment. Because the model assumes that all the sensory observations are derived from exactly the same non-changing distributions, past observations do not lose validity with time. As a result, the location estimate corresponds to the running average of the feature values in the stimuli that have been associated with each category in the course of the experiment. As the occurrence of a perceived category increases, the size of recalibration decreases, until categorization differences across successive trials are no longer observable (Figure 5A).
 
@@ -135,11 +169,11 @@ The model, which encompasses both the perceptual decision and the recalibration 
 
 In summary, during audiovisual speech integration, and in McGurk stimuli in particular, the brain tends to find the most parsimonious account of the input, merging the acoustic and visual sensory streams even at the expense of residual prediction errors at brain areas that encode unisensory stimulus features, represented in the model by the acoustic 2nd formant and lip amplitude modulation. Different participants may value differently this parsimony/accuracy trade-off. Those who consistently fuse the two streams presumably recalibrate their category representations (e.g. /ada/ after fused McGurk) thereby reducing residual prediction errors at the feature level. That is, we suggest that recalibration does not happen primarily at the areas encoding the stimulus features, but at higher order areas that encode sub-lexical speech categories, in a process that updates categories at least with two time scales.
 
-## Non-Bayesian models of speech category learning and recalibration
+### Non-Bayesian models of speech category learning and recalibration
 
 As our interest lies at the computational level, we have not tested other, non-Bayesian models of speech category learning and recalibration (reviewed in Heald et al., 2017). Some existing models involve processes that are similar to ours; for example, non-Bayesian abstract models of new speech category learning use Gaussian distributions with parameters that are updated with delta rules similar to that of Equation 7 (Vallabha et al., 2007a; McMurray et al., 2009). On the other hand, connectionist models of speech category learning posit a first layer of units with a topographic representation of the sound feature space and a second layer representing individual speech categories. Learning or recalibration is modelled by changing the connection weights between the two layers. In this way, Mirman et al. (2006), modelled the recalibration of established prelexical categories that arises when an ambiguous sound is disambiguated by the lexical context as in the Ganong effect – a sound between /g/ and /k/ that tends to be classified as /g/ when preceding ‘ift’ or as /k/ when preceding ‘iss’ (Ganong, 1980). This effect shares some similarities with the McGurk effect, although the latter is stronger as it changes the perception of a non-ambiguous sound. The benefit of having two timescales is also illustrated by a connectionist model of the acquisition of non-native speech sound categories in the presence of well-established native ones (Vallabha and McClelland, 2007b). Interference between new and existing categories was avoided by positing a fast learning pathway applied to the novel categories, and a slower learning pathway to the native ones. Finally, connectionist models can also reproduce short-term effects such as perceptual bias and habituation (Lancia and Winter, 2013). These examples suggest that a connectionist model could provide a physiologically plausible instantiation of our abstract Bayesian model as long as one incorporates two pathways with two different timescales or a single pathway that uses metastable synapses (Benna and Fusi, 2016).
 
-## Advantages of a dual time-scale representation
+### Advantages of a dual time-scale representation
 
 Parallel learning systems working at different temporal scales have previously been proposed in relation to speech; one able to produce fast mappings and heavily relying on working memory, while the other relies on procedural learning structures that eventually results in effortless, implicit, associations (Myers and Mesite, 2014; Zeithamova et al., 2008; Maddox and Chandrasekaran, 2014). Our proposal can theoretically be motivated on similar grounds. We argue that the brain implements at least two representations of natural categories; one more flexible than the other. The more flexible one might be used to achieve the agent’s current goal, while the more stable and less precise representation keeps general knowledge about sound categories. We propose the term ‘working’ representation for the more flexible sound category representation, to distinguish it from its more stable ‘episodic’ form.
 
@@ -153,7 +187,7 @@ In this view, the agent needs to infer the distribution (mean and covariance) th
 
 Finally, from the optimal agent’s perspective, the internal model used for a given trial is the predictive working representation built from 1) updated representations after the last observation and 2) their expected change in the intervening time. The latter component denotes the uncertainty associated with the representations, for example more volatile representations becoming more uncertain more quickly. This last point is important as it means that, across trials, increased uncertainty associated with the previous estimate of the working representation implies more reliance on the long-term representation. In other words, across trials, the expected sound feature modulation encoded by the working representation ‘decays’ back towards that of the long-term representation. This reflects a form of ‘optimal forgetting’, that is, the expected loss of relevance of a past observation for the current trial.
 
-## Functional neuroanatomy of transient category shifts
+### Functional neuroanatomy of transient category shifts
 
 Whether the two time scales that were needed to explain simultaneous tracking of long and short-term category representations are hierarchically organized or implemented in parallel, and what brain regions or mechanisms might be implicated is an open question.
 
@@ -163,21 +197,21 @@ A second option involves prefrontal cortex working in tandem with other brain re
 
 Finally, the hierarchical nature of perception and action (Kiebel et al., 2008; Friston, 2008) might be paralleled in the brain, by hierarchical processing in prefrontal cortex (Badre, 2008; Koechlin and Jubault, 2006; Summerfield et al., 2006) and sensory areas (Felleman and Van Essen, 1991; Chevillet et al., 2011). It is hence conceivable that the relation between the two timescales is hierarchical with higher-level representations becoming increasingly abstract and time insensitive. This could happen, for example, if the brain used representations at a speaker level that are drawn from more general representations of speech categories at the population level. Recalibration might work at every level of the temporal hierarchy, with higher levels integrating update information within increasingly longer time windows (longer timescales), making them less and less sensitive to new observations.
 
-## Revised ‘ideal adapter’
+### Revised ‘ideal adapter’
 
 While the ‘ideal adapter’ account focused on cumulative recalibration (Kleinschmidt and Jaeger, 2015), our results suggest that shorter-lived effects are also behaviorally relevant. The ideal adapter could be formalized as a simple incremental optimal Bayesian inference in a non-volatile environment (Figure 6, left panel), whereas our update rule could be cast in a normative framework that explicitly accounts for environmental volatility. A hierarchical model with constant volatility at two levels (Figure 6, right panel) could lead to hierarchical update equations (Wilson et al., 2013) that can be approximated by constant learning rates (with higher learning rates - faster ‘forgetting’- being related to stronger volatility). The right panel of Figure 6 assumes that the higher level (μ) has lower volatility than the intermediate level (θ), hence combining volatility with hierarchy. This combination departs from models used to explain decision making in changing environments (Behrens et al., 2007; Summerfield et al., 2011; Mathys et al., 2014), which are not hierarchical, and focus on the nontrivial task of inferring the environment volatility. These studies show that human participants adapt their learning rates to the changing volatility, which could be modelled without keeping representations across several time scales. In these tasks, participants need to keep track of short-lived changes in arbitrary cue-reward associations or in arbitrarily defined sensory categories (Summerfield et al., 2011), whereas we model overlearned and behaviourally relevant categories, which also requires to maintain long-term estimates as empirical priors.
 
-## Relevance to speech and language pathologies
+### Relevance to speech and language pathologies
 
 Our modelling results are relevant to continuous speech processing, in particular to account for auditory processing anomalies in dyslexia. Evidence from a two-tone frequency discrimination task suggests that participants’ choices are driven not only by the tones presented at a given trial, but also by the recent history of tone frequencies in the experiment, with recent tones having more weight than earlier ones (Jaffe-Dax et al., 2017). It turns out that, when compared with controls, subjects with dyslexia show a decreased reliance on temporally distant tones, suggesting a shorter time constant (Jaffe-Dax et al., 2017). Translating this result to the current model, we could hypothesize that in dyslexia the long-term component (μ in Figure 6B) has either a shorter time span, or is coupled to the lower representation with a lower weight. In both cases, we would expect a deficit in building long-term stable speech category representations since they would be overly driven by the current context. ASD individuals on the other hand, are optimally biased by long-term tones, but do not show the bias by short-term tones of neurotypical participants (Lieder et al., 2019), which suggests a faster decay or an absence of the short-term component in Figure 6B. This would predict a failure of ASD individuals to show the specific effect after McGurk trials in the experiment simulated here.
 
-## Conclusion
+### Conclusion
 
 We present a revised ‘ideal adapter’ model for speech sound recalibration that has both transient and cumulative components organized hierarchically. This new model provides evidence for a hierarchy of processes in the recalibration of speech categories, and highlights that after experiencing the McGurk effect, it is not the acoustic features related to the sensory input that are modified, but higher-level syllabic representations. The model implies that the activity changes in sensory cortices are not locally generated but reflect the interaction of bottom-up peripheral sensory inputs and top-down expectations from regions where categorical perception takes place. Considering natural speech processing as the inversion of a continuously monitored and recalibrated internal model can unveil the potential operations and strategies that listeners use when they are confronted with the acoustic volatility associated with speech categories, which by their nature have both rapidly changing (e.g. speaker specific) and slowly changing (e.g. speaker general) components. Such a model can be implemented by a hierarchy of empirical priors that are subject to changes at different time scales. Although developed in the context of speech processing, our proposal may also apply to other cognitive domains requiring perhaps more nested timescales, such as action planning (Badre, 2008; Koechlin and Summerfield, 2007; Koechlin et al., 2003).
 
 ## Materials and methods
 
-## Generative model
+### Generative model
 
 The goal of inference is to establish which is the speech token that gave rise to the incoming sensory input. We restrict ourselves to three possible tokens: /aba/, /ada/ and /aga/ (as in Lüttke et al., 2016a). Although several acoustic and visual features can distinguish between them, we choose to model the 2nd formant transition, which is minimal for /aba/ but increases for /ada/ and /aga/, and the degree of lip closure, which is maximal for /aba/ and less prominent for /ada/ and /aga/(lip closure /aba/>/ada/>/aga/). This choice is based on the fact that what distinguishes between the three speech sounds is the place of articulation. Acoustically the 2nd formant transition is an important cue for place of articulation, particularly within the ‘a’ vowel context (Liberman et al., 1957); visually it is the degree of lip aperture at the time of the vocal cavity occlusion depending on its location (complete lip closure for the bilabial (/aba/), and decreasing lip closure for the alveolar (/ada/) and velar (/aga/) (Campbell, 2008; Varnet et al., 2013).
 
@@ -187,15 +221,45 @@ We use ‘k’ as the speech token index k = {/aba/,/ada/,/aga/}, ‘f’ as fea
 
 There are two sources of variability, one related to sensory noise (σV, σA) and the variability of modulation amplitudes across different articulations of the same speech token (σk,V, σk,A), k = {/aba/,/ada/,/aga/}.
 
-The hierarchical generative model is defined by the following relations:(3)p(sf|Cf)∝exp(−(sf−Cf)22σf2),f=A,V(4)p(Cf|k)∝exp(−(Cf−θk,f)22σk,f2),f=A,V,k=speechtoken
+The hierarchical generative model is defined by the following relations:
+
+$$
+p(s_{f}|C_{f})∝exp(−\frac{(s_{f}−C_{f})^{2}}{2\sigma_{f}^{2}}),f=A,V
+$$
+
+
+
+$$
+p(C_{f}|k)∝exp(−\frac{(C_{f}−\theta_{k,f})^{2}}{2\sigma_{k,f}^{2}}),f=A,V,k=speechtoken
+$$
 
 While the above defines the generative (top-down model) p(sf|Cf,k), our interest lies in its inversion p(k|sA,sV), where sA,sV represents the sensory input in a single trial.
 
-From the inversion of the model defined by the relations above one obtains:(5)p(k|sA,sV)∝exp(−(sV−θk,V)22(σV2+σk,V2)−(sA−θk,A)22(σA2+σk,A2))p(k)which results from marginalizing over ‘CV’ and ‘CA’-the intermediate stages that encode the visual and acoustic features, explicitly:p(k|sA,sV)=∫dCVdCAp(k,CV,CA|sA,sV)=∫dCVdCAp(sV|CV)p(CV|k)p(sA|CA)p(CA|k)p(k)∝exp(−(sV−θk,V)22(σV2+σk,V2)−(sA−θk,A)22(σA2+σk,A2))p(k)∫dCV1σk,Vexp⁡(−(CV−CV,k)22σV,k2)∫dCA1σk,Aexp⁡(−(CA−CA,k)22σA,k2)Cf,kσf,k2≡sfσf2+θk,fσk,f2,1σf,k2≡1σf2+1σk,f2,f=V,A
+From the inversion of the model defined by the relations above one obtains:
+
+$$
+p(k|s_{A},s_{V})∝exp(−\frac{(s_{V}−\theta_{k,V})^{2}}{2(\sigma_{V}^{2}+\sigma_{k,V}^{2})}−\frac{(s_{A}−\theta_{k,A})^{2}}{2(\sigma_{A}^{2}+\sigma_{k,A}^{2})})p(k)
+$$
+
+which results from marginalizing over ‘CV’ and ‘CA’-the intermediate stages that encode the visual and acoustic features, explicitly:
+
+$$
+p(k|s_{A},s_{V})=\intdC_{V}dC_{A}p(k,C_{V},C_{A}|s_{A},s_{V})=\intdC_{V}dC_{A}p(s_{V}|C_{V})p(C_{V}|k)p(s_{A}|C_{A})p(C_{A}|k)p(k)∝exp(−\frac{(s_{V}−\theta_{k,V})^{2}}{2(\sigma_{V}^{2}+\sigma_{k,V}^{2})}−\frac{(s_{A}−\theta_{k,A})^{2}}{2(\sigma_{A}^{2}+\sigma_{k,A}^{2})})p(k)
+$$
+
+
+
+$$
+\intdC_{V}\frac{1}{\sigma_{k,V}}exp⁡(−\frac{(C_{V}−C_{V,k})^{2}}{2\sigma_{V,k}^{2}})\intdC_{A}\frac{1}{\sigma_{k,A}}exp⁡(−\frac{(C_{A}−C_{A,k})^{2}}{2\sigma_{A,k}^{2}})\frac{C_{f,k}}{\sigma_{f,k}^{2}}≡\frac{s_{f}}{\sigma_{f}^{2}}+\frac{\theta_{k,f}}{\sigma_{k,f}^{2}},\frac{1}{\sigma_{f,k}^{2}}≡\frac{1}{\sigma_{f}^{2}}+\frac{1}{\sigma_{k,f}^{2}},f=V,A
+$$
 
 We assume that initial variance and prior probabilities are equal across categories (p(k)=1/3).
 
-Alternatively, marginalization over ‘k’ gives the probabilities over the hidden variables ‘CV’ and ‘CA’, which we associate with encoding of stimulus features (lip aperture, 2nd formant transition) in visual and auditory cortex respectively.p(CV,CA|sV,sA)=∑kp(k|sV,sA)12πσV,kexp⁡(−(CV−CV,k)22σV,k2)12πσA,kexp⁡(−(CA−CA,k)22σA,k2)Cf,kσf,k2≡sfσf2+θk,fσk,f2,1σf,k2≡1σf2+1σk,f2,f=V,A
+Alternatively, marginalization over ‘k’ gives the probabilities over the hidden variables ‘CV’ and ‘CA’, which we associate with encoding of stimulus features (lip aperture, 2nd formant transition) in visual and auditory cortex respectively.
+
+$$
+p(C_{V},C_{A}|s_{V},s_{A})=\sumkp(k|s_{V},s_{A})\frac{1}{\sqrt{2\pi}\sigma_{V,k}}exp⁡(−\frac{(C_{V}−C_{V,k})^{2}}{2\sigma_{V,k}^{2}})\frac{1}{\sqrt{2\pi}\sigma_{A,k}}exp⁡(−\frac{(C_{A}−C_{A,k})^{2}}{2\sigma_{A,k}^{2}})\frac{C_{f,k}}{\sigma_{f,k}^{2}}≡\frac{s_{f}}{\sigma_{f}^{2}}+\frac{\theta_{k,f}}{\sigma_{k,f}^{2}},\frac{1}{\sigma_{f,k}^{2}}≡\frac{1}{\sigma_{f}^{2}}+\frac{1}{\sigma_{k,f}^{2}},f=V,A
+$$
 
 This shows explicitly how internal estimates of sensory features (lip aperture ‘CV’ and 2nd formant ‘CA’) are driven by bottom up sensory evidence (sV, sA) and top-down expectations related with each category ‘k’ contributing according to its internal expectations (θk,V θk,A). When there is strong evidence for a given category ‘k’, the sum can be approximated by a single Gaussian centered at a compromise between θk,V and sV for the visual feature and between θk,A and sA for the acoustic feature.
 
@@ -203,39 +267,77 @@ In principle the model could also be made to perform causal inference (Magnotti 
 
 The model’s percept corresponds to the category that maximizes the posterior distribution: p(k|sA, sV).
 
-## Recalibration model
+### Recalibration model
 
 The previous section presented how the model does inference in a single trial. We now turn to how the model updates the parameters that encode the internal representation of the three speech categories. This happens after every trial, thus simulating an internal model that continuously tries to minimize the difference between its predictions and the actual observations; we assume that in this process, in which the model tries to make itself more consistent with the input just received, it will only update the category corresponding to its choice. We will present three updating rules. The normative incremental Bayesian update model used by Kleinschmidt and Jaeger (2015), and the empirically motivated constant delta rule and hierarchical delta rule with intrinsic decay.
 
-## Bayesian updating
+### Bayesian updating
 
-The internal representation of the speech categories is determined by six location parameters (θk,V θk,A) and six width parameters (σk,V, σk,A). We follow Gelman et al. (2003) and define the following prior distributions for the internal model parameters (θk,V, σk,V; θk,A, σk,A). For each of the six (θ, σ) pairs (2 sensory features × 3 categories) the prior is written as:p(θk,f,σk,f)=p(θk,f|σk,f)p(σk,f)∝σk,f2(σk,f2)−(vk,f,0/2+1)exp⁡(−[κk,f,0(θk,f−μk,f,0)2+vk,f,0σk,f,02]2σk,f2)
+The internal representation of the speech categories is determined by six location parameters (θk,V θk,A) and six width parameters (σk,V, σk,A). We follow Gelman et al. (2003) and define the following prior distributions for the internal model parameters (θk,V, σk,V; θk,A, σk,A). For each of the six (θ, σ) pairs (2 sensory features × 3 categories) the prior is written as:
+
+$$
+p(\theta_{k,f},\sigma_{k,f})=p(\theta_{k,f}|\sigma_{k,f})p(\sigma_{k,f})∝\sigma_{k,f}^{2}(\sigma_{k,f}^{2})^{−(v_{k,f,0}/2+1)}exp⁡(−\frac{[κ_{k,f,0}(\theta_{k,f}−\mu_{k,f,0})^{2}+v_{k,f,0}\sigma_{k,f,0}^{2}]}{2\sigma_{k,f}^{2}})
+$$
 
 As above, f refers to the sensory feature, either V or A, and k to the speech category, either /aba/, /ada/ or /aga/.
 
-After a new trial with sensory input (sV, sA) the updated prior has the following parameters:κk,f,0←κk,f,0+1μk,f,0←μk,f,0+1κk,f,0+1(sf−μk,f,0)vk,f,0←vk,f,0+1vk,f,0σk,f,02←vk,f,0σk,f,02+κk,f,0κk,f,0+1(sf−μk,f,0)2
+After a new trial with sensory input (sV, sA) the updated prior has the following parameters:
+
+$$
+κ_{k,f,0}←κ_{k,f,0}+1
+$$
+
+
+
+$$
+\mu_{k,f,0}←\mu_{k,f,0}+\frac{1}{κ_{k,f,0}+1}(s_{f}−\mu_{k,f,0})
+$$
+
+
+
+$$
+v_{k,f,0}←v_{k,f,0}+1
+$$
+
+
+
+$$
+v_{k,f,0}\sigma_{k,f,0}^{2}←v_{k,f,0}\sigma_{k,f,0}^{2}+\frac{κ_{k,f,0}}{κ_{k,f,0}+1}(s_{f}−\mu_{k,f,0})^{2}
+$$
 
 After each trial the inference process described in the previous section determines the percept from the posterior probability p(k|sV sA). Only the feature parameters of the representation corresponding to the percept are subsequently updated.
 
-We use the values that maximize the posterior over the parameters given the input and the current estimated category ‘k’ to determine the point estimates that will define the updated model parameters for the next trial (Equation 6). The updates for the location and spread parameters then take the form:(6)Δθk,f=1κk,f,0+n(k)(sf−θk,f)Δσk,f2=1vk,f,0+n(k)+1[κk,f,0+n(k)−1κk,f,0+n(k)(sf−θk,f)2−σk,f2]
+We use the values that maximize the posterior over the parameters given the input and the current estimated category ‘k’ to determine the point estimates that will define the updated model parameters for the next trial (Equation 6). The updates for the location and spread parameters then take the form:
+
+$$
+Δ\theta_{k,f}=\frac{1}{κ_{k,f,0}+n(k)}(s_{f}−\theta_{k,f})Δ\sigma_{k,f}^{2}=\frac{1}{v_{k,f,0}+n(k)+1}[\frac{κ_{k,f,0}+n(k)−1}{κ_{k,f,0}+n(k)}(s_{f}−\theta_{k,f})^{2}−\sigma_{k,f}^{2}]
+$$
 
 Where ‘k’ is the perceived category, n(k) the number of times the category has been perceived, f = V,A designates the sensory feature and νk,f,0 and κk,f,0 are parameters from the prior distribution. The larger νk,f,0 and κk,f,0 are, the more k ‘perceptions’ it takes for the parameter values of category ‘k’ to plateau but also the smaller the updates after each trial.
 
-## Constant delta rule
+### Constant delta rule
 
 The above update equations implicitly assume that the environment is stable and therefore updated parameters keep information from all previous trials. This is the result of the generative model, which did not include a model for environmental parameter changes. Introducing expectations about environmental changes led us to consider rules with constant learning rates. We restrict ourselves here to updates for the six location parameters (θk,V θk,A) of Equation 6.
 
-We first considered a constant delta rule scaled by the evidence in favor of the selected category p(k|sV, sA),(7)Δθk,f=A(sf−θk,f)p(k|sV,sA)
+We first considered a constant delta rule scaled by the evidence in favor of the selected category p(k|sV, sA),
+
+$$
+Δ\theta_{k,f}=A(s_{f}−\theta_{k,f})p(k|s_{V},s_{A})
+$$
 
 As in the Bayesian case, updates accumulate without decay between trials. The main difference is that θk,f is driven more strongly by recent evidence than by past evidence, implicitly acknowledging the presence of volatility.
 
-## Hierarchical delta rule with decay
+### Hierarchical delta rule with decay
 
-Finally we consider updates that decay with time. We reasoned that the decay should be towards parameter estimates that are more stable, which we denote by μk,f. We propose a hierarchical relation, with updates in μk,f being driven by θk,f, while updates in θk,f are driven by sensory evidence. At each trial all categories (k’) decay toward their long-term estimates and only the perceived category (k) updates both μk,f and θk,f:(8)Δθk′,f=D(μk′,f−θk′,f)Δθk,f=R1(sf−θk,f)p(k|sV,sA)Δμk,f=R2(θk,f−μk,f)p(k|sV,sA)
+Finally we consider updates that decay with time. We reasoned that the decay should be towards parameter estimates that are more stable, which we denote by μk,f. We propose a hierarchical relation, with updates in μk,f being driven by θk,f, while updates in θk,f are driven by sensory evidence. At each trial all categories (k’) decay toward their long-term estimates and only the perceived category (k) updates both μk,f and θk,f:
+
+$$
+Δ\theta_{k^{′},f}=D(\mu_{k^{′},f}−\theta_{k^{′},f})Δ\theta_{k,f}=R_{1}(s_{f}−\theta_{k,f})p(k|s_{V},s_{A})Δ\mu_{k,f}=R_{2}(\theta_{k,f}−\mu_{k,f})p(k|s_{V},s_{A})
+$$
 
 The first equation reflects the decay while the last two equations apply to the perceived category ‘k’. ‘D’, ‘R1’ and ‘R2’ are constant parameters. R2 was set to zero since we do not expect the long-term component to change significantly within the experimental session.
 
-## Model simulations
+### Model simulations
 
 We simulate the experimental paradigm in Lüttke et al. (2016a), in which human participants were asked about what they heard when presented with auditory syllables or auditory syllables accompanied with a video of the corresponding speaker’s lip movements. There were six stimulus types: three acoustic only stimuli: /aba/, /ada/ and /aga/ and three audiovisual stimuli, congruent /aba/, congruent /ada/ and McGurk stimuli, that is, acoustic /aba/ accompanied by the video of a speaker articulating /aga/. Each stimulus type was presented 69 times to each participant. In the original experiment three different realizations of each of the six types were used. In our simulations we use a single realization per stimulus that is corrupted by sensory noise.
 
@@ -255,13 +357,19 @@ The stimuli presented to the modelled participant corresponded to the expected a
 
 The six stimuli were defined by:
 
-Even if the underlying parameters for a given stimulus type were the same for every trial, sensory noise created variability. The input to the model was the pair sV, sA  defined by:sV=CV+σVηVsA=CA+σAηAwhere ηV and ηA are sampled from independent Gaussian distributions with zero mean and unit variance. That is, sV sA are noisy versions of the true amplitude modulations in the visual and auditory modality.
+Even if the underlying parameters for a given stimulus type were the same for every trial, sensory noise created variability. The input to the model was the pair sV, sA  defined by:
+
+$$
+s_{V}=C_{V}+\sigma_{V}η_{V}s_{A}=C_{A}+\sigma_{A}η_{A}
+$$
+
+where ηV and ηA are sampled from independent Gaussian distributions with zero mean and unit variance. That is, sV sA are noisy versions of the true amplitude modulations in the visual and auditory modality.
 
 The six stimulus types were presented to the model in random order with 69 repetitions for each. At the end of the presentation, the model chose a percept based on the posterior distribution over syllable identity ‘k’ given the stimulus. The perceived syllable was then recalibrated by updating its defining parameters (either both mean and variance or mean alone depending on the specific update rule).
 
 In the model recalibration step, sometimes θ/ada/,A became smaller than θ/aba/,A. This happened mostly for the constant delta rule as we increased the learning rate parameter, which also lead to increases in the McGurk contrast. Despite this modification, the observed McGurk contrast for the constant delta rule was not statistically significant. θ/ada/,A becoming smaller than θ/aba/,A constitutes a reversal of the initial relation between these parameters; empirically one finds that 2nd formant modulation is larger for /ada/ than for /aba/ (θ/ada/,A > θ/aba/,A). We included a line in our code that made sure that this did not occur. If after recalibration θ/ada/,A was smaller than θ/aba/,A, the two were interchanged. This can be interpreted as a prior that incorporates information about the relations between categories. If reversals were accepted, subsequent acoustic /aba/ would be systematically classified as /ada/.
 
-## Update rule evaluation
+### Update rule evaluation
 
 To evaluate the performance of the models, we used the following data from the original experiment. 1) The McGurk contrast, defined by two values: pada,Mc the proportion of acoustic only /aba/ categorized as ‘ada’ when preceded by a fused McGurk; (29%) or by other stimuli pada,oth, acoustic /aba/ and /aga/ and congruent /aba/ and /aga/, (16%). 2) Overall performance: the proportion of the most frequent category for each of the six stimulus types: 80% of ‘aba’ percepts for acoustic only /aba/, 83% of ‘ada’ percepts for acoustic only /ada/, 98% of ‘aga’ percepts for acoustic only /aga/; 98% of ‘aba’ percepts for congruent audiovisual /aba/, 87% of ‘ada’ percepts for incongruent McGurk (acoustic /aba/ and visual /aga/), and 98% of ‘aga’ percepts for congruent /aga/. We will represent these values as the six entries of the vector cstim.
 

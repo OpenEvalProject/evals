@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Département d'immunobiologie, Université de Lausanne Epalinges Switzerland
-2. https://ror.org/0245cg223 Institute of Organic Chemistry, Centre for Integrative Biological Signalling Studies, University of Freiburg Freiburg Germany
+1. Département d'immunobiologie, Université de Lausanne Epalinges Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+2. Institute of Organic Chemistry, Centre for Integrative Biological Signalling Studies, University of Freiburg Freiburg Germany ([ROR:0245cg223](https://ror.org/0245cg223))
 
 † Corresponding author
 
 ## Abstract
 
-Eukaryotic cells control inorganic phosphate to balance its role as essential macronutrient with its negative bioenergetic impact on reactions liberating phosphate. Phosphate homeostasis depends on the conserved INPHORS signaling pathway that utilizes inositol pyrophosphates and SPX receptor domains. Since cells synthesize various inositol pyrophosphates and SPX domains bind them promiscuously, it is unclear whether a specific inositol pyrophosphate regulates SPX domains in vivo, or whether multiple inositol pyrophosphates act as a pool. In contrast to previous models, which postulated that phosphate starvation is signaled by increased production of the inositol pyrophosphate 1-IP 7 , we now show that the levels of all detectable inositol pyrophosphates of yeast, 1-IP 7 , 5-IP 7 , and 1,5-IP 8 , strongly decline upon phosphate starvation. Among these, specifically the decline of 1,5-IP 8 triggers the transcriptional phosphate starvation response, the PHO pathway. 1,5-IP 8 inactivates the cyclin-dependent kinase inhibitor Pho81 through its SPX domain. This stimulates the cyclin-dependent kinase Pho85-Pho80 to phosphorylate the transcription factor Pho4 and repress the PHO pathway. Combining our results with observations from other systems, we propose a unified model where 1,5-IP 8 signals cytosolic phosphate abundance to SPX proteins in fungi, plants, and mammals. Its absence triggers starvation responses.
+Eukaryotic cells control inorganic phosphate to balance its role as essential macronutrient with its negative bioenergetic impact on reactions liberating phosphate. Phosphate homeostasis depends on the conserved INPHORS signaling pathway that utilizes inositol pyrophosphates and SPX receptor domains. Since cells synthesize various inositol pyrophosphates and SPX domains bind them promiscuously, it is unclear whether a specific inositol pyrophosphate regulates SPX domains in vivo, or whether multiple inositol pyrophosphates act as a pool. In contrast to previous models, which postulated that phosphate starvation is signaled by increased production of the inositol pyrophosphate 1-IP7, we now show that the levels of all detectable inositol pyrophosphates of yeast, 1-IP7, 5-IP7, and 1,5-IP8, strongly decline upon phosphate starvation. Among these, specifically the decline of 1,5-IP8 triggers the transcriptional phosphate starvation response, the PHO pathway. 1,5-IP8 inactivates the cyclin-dependent kinase inhibitor Pho81 through its SPX domain. This stimulates the cyclin-dependent kinase Pho85-Pho80 to phosphorylate the transcription factor Pho4 and repress the PHO pathway. Combining our results with observations from other systems, we propose a unified model where 1,5-IP8 signals cytosolic phosphate abundance to SPX proteins in fungi, plants, and mammals. Its absence triggers starvation responses.
 
 ## Introduction
 
@@ -46,13 +46,27 @@ So far, analysis of the role of inositol pyrophosphates in Pi homeostasis and Pi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig1-v1.jpg)
 
-**Figure 1.:** S. cerevisiae.
-
-## Dynamics of the cytosolic concentrations of 5-IP7, 1-IP7, and 1,5-IP8
+### Dynamics of the cytosolic concentrations of 5-IP7, 1-IP7, and 1,5-IP8
 
 In yeast, the myo-inositol hexakisphosphate kinases Vip1 and Kcs1 generate 1-IP7 and 5-IP7, respectively, and they are both required for synthesis of 1,5-IP8 (Figure 1; Mulugu et al., 2007; Saiardi et al., 1999; Zong et al., 2022; Wang et al., 2012; Zong et al., 2021). Inositol pyrophosphatases, such as Ddp1 and Siw14, dephosphorylate these compounds at the 1- and 5-position, respectively (Figure 1A; Lonetti et al., 2011; Wang et al., 2018; Steidle et al., 2020). We analyzed the kinetics and the role of these inositol pyrophosphates in PHO pathway activation. To this end, yeasts were cultured in liquid synthetic complete (SC) media to early logarithmic phase and then transferred to Pi-free SC medium. The cells were extracted with perchloric acid and inositol phosphates were analyzed by capillary electrophoresis coupled to electrospray ionization (ESI) mass spectrometry (Qiu et al., 2020). Three inositol pyrophosphates were detectable: 1-IP7, 5-IP7, and 1,5-IP8. We note that the CE-MS approach does not differentiate pyrophosphorylation of the inositol ring at the 1- and 3-positions. Thus, our assignments of the relevant species as 1-IP7 and 1,5-IP8 are based on previous characterization of the reaction products and specificities of IP6Ks and PPIPKs (Mulugu et al., 2007; Saiardi et al., 1999; Zong et al., 2022; Wang et al., 2012; Zong et al., 2021; Dollins et al., 2020).
 
 Quantitation of inositol pyrophosphates by CE-MS was facilitated by spiking the samples with synthetic, 13C-labeled inositol pyrophosphate standards (Harmel, 2019; Puschmann et al., 2019). The recovery rate of inositol pyrophosphates during the extraction was determined by adding known quantities of synthetic standards to the cells already before the extractions. This demonstrated that 89% of 1-IP7, 90% of 5-IP7, and 75% of 1,5-IP8 were recovered in the extract (Figure 2—figure supplement 1). To estimate the cellular concentrations of these compounds, the volume of the cells was determined by fluorescence microscopy after staining of the cell wall with trypan blue (Figure 2—figure supplement 2). This yielded an average cell volume of 42 fL. Detailed morphometric studies of yeast showed that the nucleus occupies around 8% of this volume and that all other organelles collectively account for approx. 18% (Uchida et al., 2011). Taking this into account we can estimate the concentrations in the cytosolic space (including the nucleus, which is permeable to small molecules) of cells growing logarithmically on SC medium as 0.5 µM for 1-IP7, 0.7 µM for 5-IP7, and 0.3 µM for 1,5-IP8 (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig2-v1.jpg)
+
+**Figure 2.:** (A) Inositol pyrophosphate concentrations in the cytosol. The indicated strains were grown logarithmically in synthetic complete (SC) medium containing 7.5 mM of inorganic phosphate (Pi) (30°C, 150 rpm, overnight). When OD600nm reached 1 (1 × 107 cells/mL), 1 mL of culture was extracted with perchloric acid and analyzed for inositol pyrophosphates by CE-ESI-MS. The y-axis provides the estimated cytosolic concentrations based on an average cell volume of 42 fL. Means (n=4) and standard deviations are indicated. ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, tested with Student’s t-test. (B) Evolution of inositol pyrophosphate species during Pi starvation. Cells were grown as in A, washed twice with Pi starvation medium, and further incubated in Pi starvation medium. The inoculum for the samples bound to be extracted after different times of further incubation in starvation medium was adjusted such that all samples had similar OD600nm at the time of harvesting (OD600nm=0.5 for 30 min and 60 min samples; OD600nm=0.4 for 120 min and 240 min samples; OD600nm=0.25 for 360 min samples). At the indicated times in starvation media, 1 mL aliquots were extracted and analyzed for inositol pyrophosphates as in A. The data was normalized by the number of cells harvested before calculating cytosolic concentrations. Means and standard deviations are given (n=3). (C) Depletion of 5-IP7 in starving vip1Δ cells. The indicated cells were grown in Pi-replete medium and then transferred to Pi starvation medium as in B. At the indicated times, samples were extracted and analyzed for 5-IP7 as in A. Means and standard deviations (n=4) are shown as solid lines and shaded areas, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Illustration of the procedure of inositol pyrophosphate extraction using TiO2 beads. 0.1 µM [13C6]1,5-IP8, 0.5 µM [13C6]5-IP7, and 0.5 µM [13C6]1-IP7 were spiked into the yeast culture immediately before perchloric acid extraction (pre-spiking) or spiked into the inositol pyrophosphate fraction extracted from the cells before the capillary electrophoresis coupled to mass spectrometry (CE-MS) measurement (post-spiking). (B) Recovery. Ratios of the endogenous inositol pyrophosphates over the 13C-labeled standards were determined in the pre- and post-spiked samples. Signals of the pre-spiked samples were set to 1 and served as the reference for the post-spiked samples. Comparison of pre- and post-spiked samples shows 75% of recovery for 1,5-IP8, 93% for 5-IP7, and 87% for 1-IP7. Means (n=4) and standard deviations are indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Cells were grown in synthetic complete (SC) medium over night until they reached an OD600nm of 1. 10 µg/mL of trypan blue was added, and the cells were analyzed on a fluorescence microscope. Cells in the acquired images were analyzed by automated image segmentation and their volume was measured using the Nikon NIS Elements General Analysis 3 software package. The script for measuring cell volumes has been deposited at Figshare under the DOI 10.6084 /m9.figshare.c.6700281.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The indicated strains were grown logarithmically in synthetic complete (SC) medium containing 7.5 mM of Pi (30°C, 150 rpm, overnight). The cells were spun down, washed twice with Pi starvation medium, and further incubated in Pi starvation medium or in SC with Pi for 2 hr. The inoculum for the samples for this final 2 hr incubation was adjusted such that all samples had an OD600nm of 1 (107 cells/mL) at the time of harvesting. After the 2 hr incubation, 1 mL of culture was extracted with perchloric acid and analyzed for inositol pyrophosphates by CE-ESI-MS. The data was normalized by the number of cells harvested before calculating cytosolic concentrations. The y-axis provides the estimated cytosolic concentrations based on an average cell volume of 42 fL. Means (n=4) and standard deviations are indicated. Graphs show the content of (A) 1,5-IP8, (B) 5-IP7, and (C) 1-IP7. ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, determined with Student’s t-test.
 
 Next, we determined the impact of Kcs1, Vip1, Siw14, and Ddp1 on the inositol pyrophosphate levels in the cells (Figure 2A). 5-IP7 was not detected in the kcs1Δ mutant and 1-IP7 was strongly reduced in the vip1Δ strain. 1,5-IP8 was undetectable in kcs1Δ and decreased by 75% in vip1Δ. The nature of the residual 1,5-IP8 and 1-IP7 signals is currently unclear. They may represent inositol pyrophosphates synthesized by enzymes other than Kcs1 and Vip1, such as the inositol polyphosphate multi-kinases, which can also produce inositol pyrophosphates (Riemer et al., 2021; Zong et al., 2022; Laha et al., 2019; Adepoju et al., 2019; Whitfield et al., 2020). Importantly, residual 1,5-IP8 and 1-IP7 were not observed in Pi-starved wildtype cells (Figure 2B). This may be due to presence of the Vip1 phosphatase activity, which is missing in vip1Δ cells, but which may quench weak production of inositol pyrophosphates such as 1-IP7 or 1,5-IP8 by other enzymes in wildtype cells. Since this aspect is not central to the question of our study, it was not pursued further. kcs1Δ mutants showed a two- to threefold decrease in 1-IP7, suggesting that the accumulation of 1-IP7 depends on 5-IP7. This might be explained by assuming that, in the wildtype, most 1-IP7 stems from the conversion of 5-IP7 to 1,5-IP8, followed by dephosphorylation of 1,5-IP8 to 1-IP7. A systematic analysis of this interdependency will require rapid pulse-labeling approaches for following the turnover of the phosphate groups, which are not yet established for inositol pyrophosphates (Wilson and Saiardi, 2017; Harmel, 2019; Nguyen Trung et al., 2022; Azevedo and Saiardi, 2006). An unexpected finding was the up to 20-fold overaccumulation of 5-IP7 in the vip1Δ mutant. By contrast, ddp1Δ cells showed normal levels of 5-IP7 and 1,5-IP8 but a 10-fold increase in 1-IP7. siw14Δ cells showed a fivefold increase in 5-IP7, but similar levels of 1,5-IP8 and 1-IP7 as wildtype.
 
@@ -60,15 +74,23 @@ We performed time course experiments to analyze how inositol pyrophosphate level
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig3-v1.jpg)
 
-**Figure 3.:** C. neoformans and S. pombe.Inositol pyrophosphates were measured in C. neoformans (A) and S. pombe (B). Both fungi were logarithmically grown in synthetic complete (SC) medium for 17 h up to an OD600nm of 1. Cells were sedimented by centrifugation, resuspended in SC without Pi, and incubated further. At the indicated times, aliquots were extracted with perchloric acid. Inositol pyrophosphates were enriched on TiO2 beads and analyzed by CE-MS. Concentrations of 1,5-IP8, 5-IP7 and 1-IP7 in the extracts were determined by comparison with added synthetic 13C-labeled inositol pyrophosphate standards. The graphs provide the concentrations in the extracts. n=4 for C. neoformans, and n=3 for S. pombe; means and standard deviations are indicated. The inositol pyrophosphate values were normalized to the OD600 of the culture for every given time point.
+**Figure 3.:** Inositol pyrophosphates were measured in C. neoformans (A) and S. pombe (B). Both fungi were logarithmically grown in synthetic complete (SC) medium for 17 h up to an OD600nm of 1. Cells were sedimented by centrifugation, resuspended in SC without Pi, and incubated further. At the indicated times, aliquots were extracted with perchloric acid. Inositol pyrophosphates were enriched on TiO2 beads and analyzed by CE-MS. Concentrations of 1,5-IP8, 5-IP7 and 1-IP7 in the extracts were determined by comparison with added synthetic 13C-labeled inositol pyrophosphate standards. The graphs provide the concentrations in the extracts. n=4 for C. neoformans, and n=3 for S. pombe; means and standard deviations are indicated. The inositol pyrophosphate values were normalized to the OD600 of the culture for every given time point.
 
 Taken together, Pi starvation leads to a virtually complete depletion of all three inositol pyrophosphate species, with 1,5-IP8 declining faster than 1-IP7 and 5-IP7. Furthermore, inositol pyrophosphatase mutants provide the possibility to generate relatively selective increases in 5-IP7 and 1-IP7. We used this information to dissect the impact of 5-IP7, 1-IP7, and 1,5-IP8 on control of the PHO pathway.
 
-## 1,5-IP8 signals cytosolic Pi levels to the PHO pathway
+### 1,5-IP8 signals cytosolic Pi levels to the PHO pathway
 
 To this end, we correlated the measured inositol pyrophosphate concentrations to the induction of the PHO pathway. We assayed a key event of PHO pathway activation, partitioning of the fluorescently tagged transcription factor Pho4yEGFP between the cytosol and the nucleus. Pho4 shuttles between nucleus and cytosol and its phosphorylation through Pho85-Pho80 favors Pho4 accumulation in the cytosol. The relocation of Pho4 can hence serve as an in vivo indicator of PHO pathway activation (Thomas and O’Shea, 2005; Wykoff et al., 2007; O’Neill et al., 1996). It provides a readout for Pho85-Pho80 activity. PHO4 was tagged at its genomic locus, making Pho4yEGFP the sole source of this transcription factor. Pho4 relocation was assayed through automated image segmentation and analysis. The artificial intelligence-based segmentation algorithm recognized more than 90% of the cells in a bright-field image and delimited their nuclei based on a red-fluorescent nuclear mCherry marker (Figure 4—figure supplement 1). This segmentation allows quantitative measurements of Pho4 distribution between the cytosol and nucleus in large numbers of cells. In addition, we assayed PHO pathway activation through fluorescent yEGFP reporters expressed from the PHO5 (prPHO5-yEGFP) and PHO84 (prPHO84-yEGFP) promotors. These are classical assays of PHO pathway activation, but their output is further downstream and hence comprises additional regulation, for example at the level of chromatin or RNA, or the direct activation of Pho4 through metabolites such as AICAR (Nishizawa et al., 2008; Almer et al., 1986; Barbaric et al., 2007; Lam et al., 2008; Pinson et al., 2009). Upon Pi withdrawal, both promotors are induced by the PHO pathway but the PHO84 promotor reacts in a more sensitive manner and is induced more rapidly than the PHO5 promotor (Thomas and O’Shea, 2005).
 
 In wildtype cells grown under Pi-replete conditions, Pho4yEGFP was cytosolic and the PHO5 and PHO84 promotors were inactive, indicating that the PHO pathway was repressed (Figure 4). Within 30 min of starvation in Pi-free medium, Pho4yEGFP relocated into the nucleus and PHO84 and PHO5 were strongly induced. By contrast, kcs1Δ cells showed Pho4yEGFP constitutively in the nucleus already under Pi-replete conditions, and PHO5 and PHO84 promoters were activated. These cells have strongly reduced 1,5-IP8 and 5-IP7, and 50% less 1-IP7 than the wildtype. Thus, a decline of inositol pyrophosphates not only coincides with the induction of the Pi starvation program, but the genetic ablation of these compounds is sufficient for a forced triggering of this response in Pi-replete conditions. Therefore, we explored the hypothesis that inositol pyrophosphates repress the PHO pathway, and that their loss upon Pi starvation creates the signal that activates the starvation response.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig4-v1.jpg)
+
+**Figure 4.:** The indicated cells producing Pho4yEGFP and the histone Hta2mCherry as a nuclear marker were logarithmically grown in inorganic phosphate (Pi)-replete synthetic complete (SC) medium, washed, and transferred to Pi starvation medium as in Figure 2A. (A) Subcellular localization of Pho4yEGFP was analyzed on a spinning disc microscope. Cells are shown in the presence of 7.5 mM of Pi (+Pi) or 30 min after the shift to Pi starvation (- Pi) medium. Yellow lines surrounding the cells illustrate the segmentation performed by the algorithm that was used to quantify Pho4yEGFP distribution in B. Scale bar: 5 μM. λex: 470 nm; λem: 495–560 nm. (B) Average intensity of Pho4yEGFP fluorescence was determined by automated image segmentation and analysis. Pho4yEGFP localization is quantified by the ratio of the average fluorescence intensities in the nucleus over the average fluorescence intensity in the cytosol (IN/IC). 100–200 cells were analyzed per condition and experiment. n=3. Means and standard deviation are indicated. (C) Activation of the PHO5 promotor. Cells expressing the prPHO5-yEGFP reporter construct from a centromeric plasmid were grown in Pi-replete medium (7.5 mM Pi) as in Figure 2A, and then shifted to Pi starvation medium or kept in Pi-replete medium. After 4 hr of further incubation, fluorescence intensity of the same number of cells was measured in a Spectramax EM microplate reader. λex: 480 nm; λem: 510 nm. n=3. Means and standard deviations are indicated. (D) Activation of the PHO84 promotor. Cells expressing the prPho84-yEGFP reporter construct from a centromeric plasmid were treated and analyzed as in C. For B, C, and D: ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, tested with Turkey’s test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The subcellular localization of Pho4-yEGFP has been quantified from time-lapse fluorescence microscopy experiments. This quantification required the segmentation of microscopy images to discriminate cytosolic and nuclear compartments. To this end, the Hta2 histone of Pho4-yEGFP strains has been tagged with mCherry. Nuclei were segmented using mCherry fluorescence images while the cell contours were segmented using bright-field images. Cell segmentation and the fluorescence quantification were performed using the General Analysis 3 module of the NIS Elements software (Nikon). (A) Bright-field and two fluorescence images of the same field are shown. Yellow lines indicate the boundaries of the cells and nuclei that have been recognized by the algorithm. (B) Flowchart of the commands of the NIS Elements General Analysis 3 suite used for the segmentation. The script has been deposited at Figshare under the doi 10.6084 /m9.figshare.c.6700281.
 
 In this case, we must explain the behavior of the vip1Δ mutation, which strongly reduces 1-IP7 and 1,5-IP8 and maintains the PHO pathway repressed in Pi-replete medium. Upon withdrawal of Pi, vip1Δ cells did not show nuclear relocation of Pho4 after 30 min and, even after 4 hr of starvation, PHO5 was not expressed. The PHO84 promoter remained partially repressed in comparison with the wildtype. These results are at first sight consistent with the proposal that 1-IP7 activates the PHO pathway (Lee et al., 2007; Lee et al., 2008). Several further observations draw this hypothesis into question, however. First, all three inositol pyrophosphate species strongly decline upon Pi starvation instead of showing the increase postulated by Lee et al. Second, vip1Δ cells show a more than 15-fold overaccumulation of 5-IP7. Genetic ablation of this pool by deleting KCS1 is epistatic to the vip1Δ mutation. A kcs1Δ vip1Δ double mutant constitutively activates the PHO pathway already in presence of Pi, despite its strong reduction of 1-IP7 and the complete absence of 1,5-IP8. Third, ddp1Δ cells, which show a 10-fold quite selective increase in 1-IP7 under Pi-replete conditions, did not induce the PHO84 and PHO5 promotors, nor did they show Pho4 accumulation in the nucleus in Pi-replete medium. Thus, even a strong increase in 1-IP7 is not sufficient to activate the PHO pathway, while reductions of inositol pyrophosphates do this.
 
@@ -80,11 +102,19 @@ The data described above argues against a diminution of 1-IP7 as a critical fact
 
 This interpretation is also consistent with the phenotype of siw14Δ cells. Although these cells accumulate 5-IP7, they accumulate it fourfold less than vip1Δ, remaining below the 5 µM threshold where we should expect non-physiological repression of the PHO pathway. However, siw14Δ cells contain the same concentration of 1,5-IP8 as the wildtype (Figure 2A), degrade it upon Pi starvation as the wildtype (Figure 2—figure supplement 3), and relocalize Pho4yEGFP with similar kinetics as the wildtype (Figure 5B). Taken together with the evidence presented above, 1,5-IP8 thus ends up being the only inositol pyrophosphate that correlates with the activation of the PHO pathway in all mutants and conditions. This points to 1,5-IP8 as the controller of the PHO pathway.
 
-## The PHO pathway is controlled by the SPX domain of Pho81
+### The PHO pathway is controlled by the SPX domain of Pho81
 
 Our results strongly argue against an increase of 1-IP7 as the key factor for inactivating the CDK Pho85-Pho80 through the CDK inhibitor Pho81. This prompted us to also re-evaluate the regulation of Pho81 because previous studies had proposed a small peptide from the central region of Pho81, called the minimum domain (amino acids 645–724), as a receptor for 1-IP7 that triggers the PHO pathway (Lee et al., 2007; Lee et al., 2008). This model rests mainly on results with the isolated minimum domain used in vitro or, in highly overexpressed form, in vivo. This expression of the minimum domain outside its normal molecular context may be problematic because earlier work had suggested that the N- and C-terminal portions of Pho81, that is regions outside the minimum domain, could provide competing inhibitory and stimulatory functions for Pho81 (Ogawa et al., 1995).
 
 We targeted the N-terminal SPX domain of Pho81 through various mutations, leaving the rest of Pho81 and its minimum domain intact (Figure 6). First, we asked whether Pho81 lacking the N-terminal 200 amino acids, corresponding to a deletion of its SPX domain, could still activate the PHO pathway. This Pho81ΔSPX is likely to be folded because a yEGFP-tagged version of Pho81ΔSPX localized to the nucleus (Figure 6C and D), which requires Pho81 to interact with nuclear import factors and with Pho85-Pho80 (Huang et al., 2001). We tested the effect of Pho81ΔSPX on relocation of Pho4yEGFP (Figure 6A and B). Whereas wildtype cells efficiently relocated Pho4yEGFP to the nucleus upon Pi starvation, pho81ΔSPX cells partially maintained Pho4yEGFP in the cytosol. Thus, while the SPX domain is not essential for nuclear targeting of Pho81, it is required for efficient nuclear relocation of Pho4 and the induction of the PHO pathway under Pi starvation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig6-v1.jpg)
+
+**Figure 6.:** Cells were logarithmically grown in inorganic phosphate (Pi)-replete synthetic complete (SC) medium as in Figure 2A, washed, and incubated for further 4 hr in medium with 7.5 mM of Pi (+Pi), or in starvation medium (- Pi). (A) Pho4 relocation. The indicated cells expressed Pho4yEGFP from its genomic locus. At the end of the 4 hr starvation period, GFP fluorescence was imaged on a spinning disc microscope. Scale bar: 5 µm. λex: 488 nm; λem: 500–530 nm. (B) Quantification of the nuclear localization of Pho4yEGFP in images from A. Average intensity of Pho4yEGFP fluorescence was determined by automated image segmentation and analysis. Pho4yEGFP localization is quantified by the ratio of the average fluorescence intensities in the nucleus over the average fluorescence intensity in the cytosol (IN/IC). 100–200 cells were analyzed per condition and experiment. n=3. Means and standard deviation are indicated. (C) Pho81yEGFP localization. The cells expressed the indicated variants of Pho81yEGFP from its genomic locus. At the end of the 4 hr growth period, GFP fluorescence was imaged as in A. (D) Quantification of the total cellular fluorescence of Pho81yEGFP. Images from C were subjected to automated segmentation and the average fluorescence intensity of the entire cells was quantified as in Figure 4B. 100–200 cells were quantified per sample. n=3 experiments. Means and standard deviation are indicated. (E) Pho81yEGFP expression assayed by western blotting. Whole-cell protein extracts were prepared from cells expressing the indicated variants of Pho81yEGFP, which had been grown in Pi-replete SC medium as in Figure 2A. Proteins were analyzed by SDS-PAGE and western blotting using antibodies to GFP. Vps1 was decorated as a loading control. (F) Quantification of Pho81yEGFP blotting. Bands from experiments as in E were quantified on a LICOR Odyssey infrared fluorescence imager. The signals from wildtype cells were set to 1. Means and standard deviations are shown. n=3. For B, D, and F: ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, determined with Turkey’s test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Crystal structure close-up view of Chaetomium thermophilum Vtc4 SPX domain complexing IP6 (5IJP). (B) Structure prediction (generated with SWISS-MODEL) of the S. cerevisiae Pho81 SPX domain revealing the potential conserved PBC and KSC clusters. (C) Alignment of the conserved residues myo-inositol polyphosphate-binding motifs of Pho81 and of the different VTC subunits.
 
 Several lysines located on α-helix 4 of SPX domains form part of an inositol pyrophosphate-binding patch (Ried et al., 2021; Pipercevic et al., 2023). Substituting them by alanine severely reduces the affinity of the domains for inositol pyrophosphates and can thus mimic the inositol pyrophosphate-free state. We determined the corresponding lysines in the SPX domain of Pho81 (Figure 6—figure supplement 1), created a point mutation in the genomic PHO81 locus that substitutes one of them, K154, by alanine, and investigated the impact on the PHO pathway. Pho81K154A-yEGFP should be correctly folded because it concentrates in the nuclei of the cells (Huang et al., 2001). pho81K154A cells constitutively activated the PHO pathway because Pho4yEGFP accumulated in their nucleus already under Pi-replete conditions (Figure 6A and B). This constitutive activation was also observed in a pho81K154A vip1Δ double mutant, confirming that 1-IP7 synthesis by Vip1 is not necessary for PHO pathway induction. Induction of the PHO pathway through SPX substitutions is further illustrated by PHO81 expression, which itself is under the control of the PHO pathway (Figure 6E and F). Western blots of protein extracts from cells grown under Pi-replete conditions showed increased levels of Pho81 in pho81K154A cells, like those observed in strains that constitutively activate the PHO pathway due to the absence of inositol pyrophosphates, such as kcs1Δ and vip1Δ/kcs1Δ. They were significantly higher than in cells that do not constitutively activate the PHO pathway, such as wildtype or vip1Δ. In sum, these results suggest that the PHO pathway is regulated through binding of inositol pyrophosphates to the SPX domain of Pho81.
 
@@ -94,7 +124,7 @@ This critical role of the SPX domain for controlling Pho81 is also consistent wi
 
 **Figure 7.:** The image shows an Alphafold prediction of the Pho81 SPX domain (amino acids 1–215), taken from Alphafold database model AF-P17442-F1 (Varadi et al., 2022), in yellow. Basic residues of the putative inositol pyrophosphate-binding site have been identified by structure matching with the IP6-associated SPX domain of VTC4 from C. thermophilum (PDB 5IJP). They are labeled in red. Residues from random mutagenesis screens, which lead to constitutive activation of the PHO pathway, are labeled in green.
 
-## SPX and minimum domains contribute to the interaction of Pho81 with Pho85-Pho80 in vivo
+### SPX and minimum domains contribute to the interaction of Pho81 with Pho85-Pho80 in vivo
 
 The traditional model of PHO pathway activation has tied the effect of 1-IP7 to the minimum domain of Pho81, proposing that a complex of the two competitively inhibits Pho85 kinase (Lee et al., 2008). Since the results presented above argued against a role of 1-IP7 in inhibiting Pho85-Pho80 and triggering the PHO pathway, we explored potential alternative roles of the minimum domain by modeling the Pho80-Pho81 interaction with a Google Colab notebook for Alphafold multimer v3 (Mirdita et al., 2022). The non-templated structure prediction of the complex (Figure 8) yields a Pho80 structure that agrees with an available crystal structure (Huang et al., 2007), showing R121 and E154 of Pho80 forming a salt bridge in a groove, which is critical for controlling Pho85 kinase (Huang et al., 2001). The prediction shows the groove binding a long unstructured loop of Pho81, which corresponds to the minimum domain. Substitutions in the minimum domain, and specifically of the residues binding the Pho80 groove in the prediction (residues 690–701), constitutively repress the PHO pathway when introduced into full-length Pho81, and they destabilize the interaction of Pho81 with Pho85-Pho80 (Ogawa et al., 1995; Huang et al., 2001). The same effects are also shown by the pho80R121K and pho80E154V alleles, which ablate the critical salt bridge in the Pho80 groove (Huang et al., 2001; Huang et al., 2007). The similarity of the effects of these substitutions validates the predicted interaction of the minimum domain with the R121/E154-containing groove. It invites a re-interpretation of the role of the minimum domain and suggests that this domain may serve as an anchor for Pho80 on Pho81 rather than acting directly on the Pho85 kinase.
 
@@ -106,13 +136,13 @@ The recruitment of Pho81 to the nucleus and its interaction with Pho85-Pho80 in 
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig9-v1.jpg)
 
-**Figure 9.:** yEGFP in pho80 and R121Kpho80 loss-of-affinity mutants.E154VCells were logarithmically grown in inorganic phosphate (Pi)-replete synthetic complete (SC) medium as in Figure 2A, washed, and incubated for further 4 hr in medium with 7.5 mM of Pi (+Pi), or in starvation medium (-Pi). (A) Pho81 imaging. Cells expressing the indicated variants of Pho81yEGFP and Pho80 from their genomic loci were imaged on a spinning disc microscope after 4 hr of growth in the presence of 7.5 mM Pi (+Pi), or after 4 hr of Pi starvation (- Pi). Scale bar = 5 μM. λex: 488 nm; λem: 500–530 nm. Note that the fluorescent dots visible in pho81 cells are not nuclei because they are too small and at positions where nuclei are not found. Their location was not further investigated because it is not essential for this study. (ΔspxB) Quantification of the nuclear localization of Pho81yEGFPin pho80 cells. Images from A were subjected to automated segmentation and quantification of the average fluorescence intensity in the nucleus and cytosol as in R121KFigure 4B. 100–200 cells were quantified per sample. n=3 experiments. (C) Quantification of the nuclear localization of Pho81yEGFP in pho80 mutants was performed as in B. For B and C: ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, determined with Turkey’s test.E154V
+**Figure 9.:** Cells were logarithmically grown in inorganic phosphate (Pi)-replete synthetic complete (SC) medium as in Figure 2A, washed, and incubated for further 4 hr in medium with 7.5 mM of Pi (+Pi), or in starvation medium (-Pi). (A) Pho81 imaging. Cells expressing the indicated variants of Pho81yEGFP and Pho80 from their genomic loci were imaged on a spinning disc microscope after 4 hr of growth in the presence of 7.5 mM Pi (+Pi), or after 4 hr of Pi starvation (- Pi). Scale bar = 5 μM. λex: 488 nm; λem: 500–530 nm. Note that the fluorescent dots visible in pho81Δspx cells are not nuclei because they are too small and at positions where nuclei are not found. Their location was not further investigated because it is not essential for this study. (B) Quantification of the nuclear localization of Pho81yEGFPin pho80R121K cells. Images from A were subjected to automated segmentation and quantification of the average fluorescence intensity in the nucleus and cytosol as in Figure 4B. 100–200 cells were quantified per sample. n=3 experiments. (C) Quantification of the nuclear localization of Pho81yEGFP in pho80E154V mutants was performed as in B. For B and C: ****p<0.0001; ***p<0.001; **p<0.01; *p<0.05; n.s. not significant, determined with Turkey’s test.
 
 Two in vivo observations are consistent with the notion that this compensation may reflect an interaction of the SPX domain with Pho85-Pho80: First, Pho81ΔSPX-yEGFP, which lacks this SPX domain, did not show starvation-induced nuclear accumulation in pho80R121K and pho80E154V cells (Figure 9). Second, a yEGFP fusion of only the SPX domain of Pho81 (Pho81SPXyEGFP), which lacks the rest of the protein and thereby excludes a constitutive interaction through the minimum domain, localized mainly to the cytosol of PHO80 wildtype cells under Pi-replete conditions, but it concentrated in the nucleus upon Pi starvation (Figure 10). This concentration was not observed in pho80Δ cells, which lack nuclear Pho85-Pho80. By contrast, pho80R121K or pho80E154V cells, which only target the minimum domain-Pho80 interaction but leave Pho85-Pho80 kinase active and in the nucleus (Huang et al., 2007), retained the capacity to accumulate Pho81SPXyEGFP in their nuclei upon Pi starvation. These results suggest that the SPX domain contributes to the interaction of Pho81 and Pho85-Pho80. Our observations are consistent with a model in which this SPX-Pho85-Pho80 interaction is independent of the minimum domain but controlled by Pi through inositol pyrophosphates, which can destabilize it and relieve the inhibition of Pho85-Pho80.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig10-v1.jpg)
 
-**Figure 10.:** yEGFP to the nucleus by Pho85-Pho80.The indicated wildtype or isogenic mutant cells expressing the SPX domain of Pho81 as a yEGFP fusion (Pho81SPXyEGFP) from a centromeric plasmid under the ADH promotor were logarithmically grown in synthetic complete (SC), sedimented in a tabletop centrifuge, and transferred into SC with (+Pi) or without Pi (-Pi). After 3 hr of further cultivation, cells were imaged by spinning disc confocal microscopy. 50 cells per condition were analyzed from two independent experiments. Regions of interest were defined manually, and the fluorescence contained in the nuclei (IN) or the cytosol (IC) was integrated using ImageJ. Scale bar: 5 µm. Indicated pairwise differences were evaluated by a Mann-Whitney test. ****p<0.0001; n.s. not significant. (A) WT (BY4742) and isogenic pho80Δ cells expressing PHO81SPX. (yEGFPB) WT (BY4741) and isogenic cells expressing pho80 or R121Kpho80 from their genomic locus and Pho81SPXE154VyEGFP from the plasmid.
+**Figure 10.:** The indicated wildtype or isogenic mutant cells expressing the SPX domain of Pho81 as a yEGFP fusion (Pho81SPXyEGFP) from a centromeric plasmid under the ADH promotor were logarithmically grown in synthetic complete (SC), sedimented in a tabletop centrifuge, and transferred into SC with (+Pi) or without Pi (-Pi). After 3 hr of further cultivation, cells were imaged by spinning disc confocal microscopy. 50 cells per condition were analyzed from two independent experiments. Regions of interest were defined manually, and the fluorescence contained in the nuclei (IN) or the cytosol (IC) was integrated using ImageJ. Scale bar: 5 µm. Indicated pairwise differences were evaluated by a Mann-Whitney test. ****p<0.0001; n.s. not significant. (A) WT (BY4742) and isogenic pho80Δ cells expressing PHO81SPXyEGFP. (B) WT (BY4741) and isogenic cells expressing pho80R121K or pho80E154V from their genomic locus and Pho81SPXyEGFP from the plasmid.
 
 ## Discussion
 
@@ -136,45 +166,119 @@ Taking all these aspects together, we propose the following working model (Figur
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/87956/elife-87956-fig11-v1.jpg)
 
-**Figure 11.:** 8 and Pho81.At high Pi concentrations, inositol pyrophosphates accumulate. 1,5-IP8 binds the SPX domain of Pho81, which labilizes the interaction of Pho81 with Pho80 and prevents Pho81 from inhibiting Pho85-Pho80 kinase. In low Pi, 1,5-IP8 declines. Liberation of the SPX domain from this ligand allows this domain to interact with Pho85-Pho80. This, and the interaction of the minimum domain with a critical groove of Pho80, allow Pho81 to inhibit Pho80-85. The resulting dephosphorylation of Pho4 triggers its concentration in the nucleus and activation of the PHO pathway. This inhibition is reinforced by increased expression of PHO81, which itself is a PHO pathway-controlled gene.
+**Figure 11.:** At high Pi concentrations, inositol pyrophosphates accumulate. 1,5-IP8 binds the SPX domain of Pho81, which labilizes the interaction of Pho81 with Pho80 and prevents Pho81 from inhibiting Pho85-Pho80 kinase. In low Pi, 1,5-IP8 declines. Liberation of the SPX domain from this ligand allows this domain to interact with Pho85-Pho80. This, and the interaction of the minimum domain with a critical groove of Pho80, allow Pho81 to inhibit Pho80-85. The resulting dephosphorylation of Pho4 triggers its concentration in the nucleus and activation of the PHO pathway. This inhibition is reinforced by increased expression of PHO81, which itself is a PHO pathway-controlled gene.
 
 This revision of PHO pathway regulation permits to develop a coherent picture on intracellular phosphate signaling across the eukaryotic kingdoms. Phosphate abundance being indicated by the accumulation of 1,5-IP8 is compatible with the situation in mammalian cells, where 1,5-IP8 triggers Pi export through the putative phosphate transporter XPR1 (Li et al., 2020; Giovannini et al., 2013), and with the situation in plants, where IP8 is particularly abundant upon shift to high-Pi substrate and inhibits transcription factors for the phosphate starvation response (Ried et al., 2021; Dong et al., 2019; Riemer et al., 2021; Zhu et al., 2019). Thus, loss of 1,5-IP8 may generally signal phosphate scarcity in eukaryotic cells.
 
 ## Materials and methods
 
-## Materials and data availability
+### Materials and data availability
 
 All strains and plasmids used in this study (listed in Supplementary file 1) are available from the corresponding author upon request. Software and datasets are available from Figshare under the DOI 10.6084 /m9.figshare.c.6700281.
 
-## Strains
+### Strains
 
 Detailed lists of strains, plasmids, and primers used in this study are provided in the appendix.
 
 The S. cerevisiae strains used in this study were all obtained by genetic manipulations from the BY4741 background described in Table 1. This strain corresponds to the wildtype of this study. For the sake of clarity, the BY4741 background was therefore not indicated in the genotype of each mutant strain.
 
-## Yeast culture
+**Table 1.**
+ Parameters for MRM transitions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Precursor ion</th>
+      <th>Product ion</th>
+      <th>dwell</th>
+      <th>CE (V)</th>
+      <th>Cell acc (V)</th>
+      <th>Polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[13C6]IP8</td>
+      <td>411.9</td>
+      <td>362.9</td>
+      <td>80</td>
+      <td>10</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>IP8</td>
+      <td>408.9</td>
+      <td>359.9</td>
+      <td>80</td>
+      <td>10</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>[13C6]IP7</td>
+      <td>371.9</td>
+      <td>322.9</td>
+      <td>80</td>
+      <td>10</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>IP7</td>
+      <td>368.9</td>
+      <td>319.9</td>
+      <td>80</td>
+      <td>10</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>[13C6]IP6</td>
+      <td>331.9</td>
+      <td>486.9</td>
+      <td>80</td>
+      <td>17</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+    <tr>
+      <td>IP6</td>
+      <td>328.9</td>
+      <td>480.9</td>
+      <td>80</td>
+      <td>17</td>
+      <td>1</td>
+      <td>Negative</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast culture
 
 Unless stated otherwise, all experiments were performed with S. cerevisiae BY4741 cells or derivatives thereof. Cells have been grown in liquid SC medium of the following composition: 3.25 g yeast nitrogen base (YNB) without amino acids (Difco 291920); 1 g Synthetic Complete Mixture (Kaiser) Drop-Out: Complete (Formedium DSCK1000); 50 ml 20% glucose; 450 mL demineralized water. Phosphate starvation experiments were performed in SC-Pi medium: 3.25 g YNB without amino acids and phosphate, supplemented with KCl (Formedium CYN6703); 1 g Synthetic Complete Mixture (Kaiser) Drop-Out: Complete (Formedium DSCK1000); 50 mL 20% glucose; 450 mL water. These synthetic media were sterile filtered and tested for absence of free Pi by the malachite green assay. Cultures were shaken in capped Erlenmeyer flasks at 150 rpm at 30°C unless stated otherwise.
 
-## Yeast strains and their genetic manipulation
+### Yeast strains and their genetic manipulation
 
 The S. cerevisiae strains used in this study are listed and described in Supplementary Information. DNA transformations were carried out with overnight cultures at 30°C in YPD medium (yeast extract-peptone-dextrose) using the following protocol: Cultures (not exceeding 107 cells/mL) were centrifuged at 1800 × g for 2 min. 25 μL of pellet was resuspended in 25 μL of LiAc-TE 0.1 M (lithium acetate 0.1 M, Tris 10 mM, EDTA 1 mM). The cell suspension was supplemented with 240 μL of PEG 50%, 36 μL of LiAC 1 M, 5 μL of boiled ssDNA, and the DNA (200 ng of plasmid and/or 0.5–2 mg of PCR product). After 30 min at 30°C, a heat shock was carried out at 42°C for 20 min. Cells were then centrifuged at 1800 × g for 2 min, resuspended in 150 μL of water, and grown on selective plates for 2–4 days. Fluorescent protein tags have been obtained using a standard method (Sheff and Thorn, 2004), except for Hta2 tagging, which was performed by CRISPR-Cas9. All introduced single mutations, knockouts, and fluorescent protein tags were confirmed by PCR and sequencing.
 
-## Plasmid constructions
+### Plasmid constructions
 
 The plasmids used to carry out CRISPR-Cas9 genome editing were obtained by cloning hybridized oligonucleotides coding for the sgRNA between the XbaI and AatII restriction sites of the parent plasmid (pSP473, pSP475, or pSP476). The plasmids used to overexpress VIP1 (pVC97 and pVC114) were obtained by cloning the VIP1 open reading frame between the BamHI and SalI restriction sites of the parent plasmid (respectively pRS415-GPD and pRS413-GPD) (Mumberg et al., 1995). The plasmid used to monitor prPHO5-GFP expression (pVC115) was obtained by replacing the pgk1 promoter with the –1 to –1500 region of the PHO5 promoter and by replacing the gene for G418 resistance to the coding region of the LEU2 gene within the pCEV-G1-Km backbone (Addgene).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Cells were grown logarithmically in SC medium for 12–15 hr until they reached a density of 107 cells/mL. For Pi starvation experiments, overnight-grown cells were washed twice, resuspended in SC-Pi medium at a density of ca. 5×106 cells/mL, and incubated at 30°C. Fluorescence images were recorded on a Nikon Eclipse Ti2/Yokogawa CSU-X1 Spinning Disk microscope equipped with two Prime BSI sCMOS cameras (Teledyne Photometrics), a LightHUB Ultra Laser Light (Omicron Laserage), and an Apo TIRF 100×/1.49 Oil lens (Nikon).
 
 Time-lapse experiments were performed on a Nikon Eclipse Ti2 inverted microscope equipped with a Prime BSI sCMOS camera (Teledyne Photometrics), a Spectra X Light Engine (Lumencor), a Plan Apo λ 100×/1.45 Oil lens (Nikon). Microscopy chambers were made using sticky-Slides VI 0.4 (Ibidi) glued onto concanavalin A-coated coverslips (Knittel glass, 24×60×0.13–0.17 mm). The cell suspension (200 μL, 107 cells/mL) was added to the chamber. After 30 s of sedimentation, a flow of SC medium was applied using the microfluidic flow controller AF1 Mk2 (Elveflow) coupled to a MUX distributor (Elveflow). After 2 min, the flow was switched to SC-Pi medium, and imaging was started. After further 2 min, the flow was stopped, and the time lapse was continued by recording one image every 5 min. The temperature was kept at 30°C using the stage-top incubator Uno-Controller (Okolab).
 
-## Western blots
+### Western blots
 
 Five mL of cells grown overnight in SC medium (until ca. 107 cells/mL) was centrifuged (1800 × g, 2 min). Cells were resuspended in 1 mL of lithium acetate (2 M) and centrifuged as before. Cells were resuspended in 1 mL of sodium hydroxide (0.4 M) and kept on ice for 5 min. After centrifugation (1800 × g, 2 min), cells were resuspended in 100 μL of SDS-PAGE sample buffer and boiled for 5 min. After centrifugation under the same conditions, the supernatant was collected, and the protein content was measured using a NanoDrop 1000 Spectrophotometer (Witec). Supernatant concentrations were adjusted, and the samples were loaded on SDS-polyacrylamide gels.
 
-## Inositol pyrophosphate quantification
+### Inositol pyrophosphate quantification
 
 Cells were logarithmically grown in SC medium overnight to reach a density of 107 cells/mL. One mL of cell culture was mixed with 100 µL of 11 M perchloric acid (Roth HN51.3). After snap-freezing in liquid nitrogen, the samples were thawed and cell debris was removed by centrifugation (15,000 × g, 3 min, 4°C). Titanium dioxide beads (Titansphere TiO2 beads 5 mm, GL Sciences 5020-75000) were pretreated by washing them once with water, once with 1 M perchloric acid, and finally resuspending them in 200 µL 1 M perchloric acid. The cell supernatant was mixed with 1.5 mg of beads and incubated with shaking or on a rotating wheel for 15 min at 4°C. The beads were collected by centrifugation (15,000 × g, 1 min, 4°C) and washed twice with 1 M perchloric acid. Inositol phosphates were eluted by 300 µL of 3% ammonium hydroxide and the eluate was evaporated using a speed-vac concentrator at 42°C and 2000 rpm overnight. The pellet was resuspended using 20 µL of water. CE-ESI-MS analysis was performed on an Agilent 7100 CE coupled to triple quadrupole mass spectrometer (QqQ MS) Agilent 6495c, equipped with an Agilent Jet Stream ESI source. Stable CE-ESI-MS coupling was enabled by a commercial sheath liquid coaxial interface, with an isocratic liquid chromatography pump constantly delivering the sheath liquid.
 
@@ -182,10 +286,10 @@ All experiments were performed with a bare fused silica capillary with a length 
 
 The MS source parameters setting were as follows: nebulizer pressure was 8 psi, sheath gas temperature was 175°C, and with a flow at 8 L/min, gas temperature was 150°C and, with a flow of 11 L/min, the capillary voltage was –2000 V with nozzle voltage 2000 V. Negative high-pressure RF and low-pressure RF (ion funnel parameters) was 70 V and 40 V, respectively. Parameters for MRM transitions are in Table 1.
 
-## Spectrofluorimetry
+### Spectrofluorimetry
 
 Cells were grown overnight to a density of 5×106 cells/mL in SC medium. They were then resuspended in SC-Pi medium after two washing steps. For each timepoint, the concentration of the cell suspension was measured and adjusted to 107 cells/mL before fluorescence measurement. The fluorescence of yEGFP (λex: 400 nm; λem: 500–600 nm; λcutoff: 495 nm) and mCherry (λex: 580 nm; λem: 600–700 nm; λcutoff: 590 nm) were measured on a Molecular Devices SpectraMax Gemini EM microplate fluorimeter at 30°C.
 
-## Analysis of inositol pyrophosphate in C. neoformans and S. pombe
+### Analysis of inositol pyrophosphate in C. neoformans and S. pombe
 
 C. neoformans grubii wildtype cells were grown in liquid SC medium to logarithmic phase. They were sedimented (3000 × g, 1 min, 4°C), washed twice with phosphate-free medium, aliquoted, and used to inoculate four 25 mL cultures in SD medium lacking phosphate. The inoculum was adjusted (starting OD600 at 0.9, 0.6, 0.4, 0.3, etc., respectively) such that, after further incubation for 0–240 min, all samples had similar OD600 at the time of harvesting. The sample for the 0 min timepoint was taken from the culture in SC medium. The starvation time was counted beginning with the first wash. At the indicated timepoints, the OD600 of the culture was measured. A 4 mL sample was collected, supplemented with 400 µL of 11 M perchloric acid, frozen in liquid nitrogen, and kept at –80°C. The samples were thawed, and inositol pyrophosphates were extracted using 6 mg TiO2 beads due to the higher number of cells. For S. pombe, wildtype cells were prepared in a similar way to C. neoformans. Three mL of culture was collected, supplemented with 300 µL of 11 M perchloric acid, and frozen in liquid nitrogen. All further steps were as described above for S. cerevisiae samples.

@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Life Sciences, Imperial College London London United Kingdom
-2. https://ror.org/05vt9qd57 Waksman Institute and Department of Molecular Biology and Biochemistry, Rutgers, the State University of New Jersey New Brunswick United States
+1. Department of Life Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. Waksman Institute and Department of Molecular Biology and Biochemistry, Rutgers, the State University of New Jersey New Brunswick United States ([ROR:05vt9qd57](https://ror.org/05vt9qd57))
 
 † Corresponding author
 
 ## Abstract
 
-The ability to control transgene expression, both spatially and temporally, is essential for studying model organisms. In Drosophila , spatial control is primarily provided by the GAL4/UAS system, whilst temporal control relies on a temperature-sensitive GAL80 (which inhibits GAL4) and drug-inducible systems. However, these are not ideal. Shifting temperature can impact on many physiological and behavioural traits, and the current drug-inducible systems are either leaky, toxic, incompatible with existing GAL4-driver lines, or do not generate effective levels of expression. Here, we describe the auxin-inducible gene expression system (AGES). AGES relies on the auxin-dependent degradation of a ubiquitously expressed GAL80, and therefore, is compatible with existing GAL4-driver lines. Water-soluble auxin is added to fly food at a low, non-lethal, concentration, which induces expression comparable to uninhibited GAL4 expression. The system works in both larvae and adults, providing a stringent, non-lethal, cost-effective, and convenient method for temporally controlling GAL4 activity in Drosophila .
+The ability to control transgene expression, both spatially and temporally, is essential for studying model organisms. In Drosophila, spatial control is primarily provided by the GAL4/UAS system, whilst temporal control relies on a temperature-sensitive GAL80 (which inhibits GAL4) and drug-inducible systems. However, these are not ideal. Shifting temperature can impact on many physiological and behavioural traits, and the current drug-inducible systems are either leaky, toxic, incompatible with existing GAL4-driver lines, or do not generate effective levels of expression. Here, we describe the auxin-inducible gene expression system (AGES). AGES relies on the auxin-dependent degradation of a ubiquitously expressed GAL80, and therefore, is compatible with existing GAL4-driver lines. Water-soluble auxin is added to fly food at a low, non-lethal, concentration, which induces expression comparable to uninhibited GAL4 expression. The system works in both larvae and adults, providing a stringent, non-lethal, cost-effective, and convenient method for temporally controlling GAL4 activity in Drosophila.
 
 ## Introduction
 
@@ -35,47 +35,136 @@ Although the impact of this technology on the field cannot be understated, it is
 
 As an alternative approach, a range of drug-inducible systems have been developed, where the drug can be administered to flies in their diet to activate transcript expression (Barwell et al., 2017; Kogenaru and Isalan, 2018; Osterwalder et al., 2001; Potter et al., 2010; Sethi and Wang, 2017). These systems each have advantages and disadvantages (see Table 1) and are not often compatible with available GAL4 lines, thus requiring the creation (and optimisation) of their own drivers. In addition, the systems that are compatible with existing GAL4 lines can affect the fly’s physiology or survival, thereby limiting their use, and the certainty of any findings when employed. For example, the GeneSwitch system (Osterwalder et al., 2001) is not compatible with existing GAL4 lines and requires the user to generate a new modified GAL4 line. Furthermore, the system shows leaky expression in the absence of the drug (RU-486) (Poirier et al., 2008; Scialo et al., 2016), and RU-486 can cause behavioural changes (Li and Stavropoulos, 2016) and is dangerous to handle for pregnant women as it can cause termination of the pregnancy (Avrech et al., 1991). Another drug-inducible system utilised in Drosophila is the QF system (Potter et al., 2010). Here, QF is a transcriptional activator that can be inhibited by QS (analogous to GAL4 and GAL80). Quinic acid inhibits the repressive action of QS, therefore, can switch on transgene expression. Quinic acid is non-toxic for flies, however, the drawback of this system is that it is not compatible with the vast collection of existing GAL4 lines.
 
+**Table 1.**
+ Main advantages and disadvantages of the most common drug-inducible gene expression systems currently available to the Drosophila community.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Expression system</th>
+      <th>Reference</th>
+      <th>Advantages</th>
+      <th>Disadvantages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GeneSwitch</td>
+      <td>Osterwalder et al., 2001</td>
+      <td>Non-toxic for adult flies</td>
+      <td>Not compatible with existing GAL4 linesLeaky expression (Poirier et al., 2008; Scialo et al., 2016)Larval exposure impacts on adult sleep patterns (Li and Stavropoulos, 2016)Drug is unsafe to handle for female researchersDrug is expensive</td>
+    </tr>
+    <tr>
+      <td>QF System</td>
+      <td>Potter et al., 2010</td>
+      <td>Non-toxic for flies</td>
+      <td>Not compatible with existing GAL4 lines</td>
+    </tr>
+    <tr>
+      <td>Tet-off GAL80</td>
+      <td>Barwell et al., 2017</td>
+      <td>GAL4/UAS compatible</td>
+      <td>Long induction time (&gt;5 days)Requires x2 copies of the GAL80 transgeneAffects microbiota</td>
+    </tr>
+    <tr>
+      <td>TMPINDUCIBLE</td>
+      <td>Kogenaru and Isalan, 2018; Sethi and Wang, 2017</td>
+      <td>GAL4/UAS compatible</td>
+      <td>Currently not compatible for general use with existing GAL4 linesTMP drug is only dissolvable in DMSO (affects survival of larvae) or has to be added as a dry powder to food</td>
+    </tr>
+  </tbody>
+</table>
+
 The auxin-degron system, first identified in Arabidopsis, involves the auxin-dependent ubiquitination, and subsequent degradation, of proteins that are tagged with a specific auxin-inducible degron (AID) sequence (Dharmasiri et al., 2005; Dharmasiri and Estelle, 2002; Li et al., 2019). Its natural function allows for the prompt elimination of Aux/IAA transcription factors in plants and has been adapted for use in other species, most notably Caenorhabditis elegans, to artificially target proteins for rapid degradation (Zhang et al., 2015). In this system, the F-box protein TIR1, an auxin receptor, binds with conserved proteins Skp1 and Cullin to form a Skp1–Cul1–F-box (SCF) E3 ligase complex which ubiquitinates proteins tagged with an AID sequence in an auxin-dependent manner. The specificity and versatility of the system has made it an effective tool in multiple systems including mice (Yesbolatova et al., 2020) and human cell culture (Li et al., 2019).
 
 Importantly, the auxin-degron system has been successfully employed in Drosophila (Chen et al., 2018; Trost et al., 2016). Trost and colleagues showed that AID-tagged EYFP and AID-tagged Rux protein levels could be knocked down in S2 cell lines and transgenic Drosophila, respectively. While Chen and colleagues knocked down AID-tagged PERIOD protein in the adult brain. Inspired by these studies, we have applied the auxin-degron system to enable both temporal and spatial control of transgene expression when combined with the GAL4/UAS system in Drosophila. This was achieved by creating a ubiquitously expressed GAL80 fused with AID tags, such that GAL80 is degraded in the presence of the auxin phytohormone (Figure 1). We demonstrate that this system works in both larvae (5 mM auxin) and adult flies (10 mM), which are concentrations that do not affect fly survival, development, or locomotion (larval crawling and adult climbing). This auxin-inducible gene expression system (AGES) is safe to handle, cheap, easy to prepare, provides tuneable and stringent (i.e. not leaky) expression, and most importantly, is compatible with the majority of existing GAL4-driver lines developed by the Drosophila community.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig1-v1.jpg)
+
+**Figure 1.:** A tubulin promoter ubiquitously expresses the bicistronic TIR1 and AGES cassette. Auxin-inducible degron (AID)-tagged GAL80 is cleaved from the TIR1 due to the presence of the T2A sequence. In the absence of auxin, GAL80 can inhibit GAL4 activity, whilst the presence of auxin induces degradation of GAL80, allowing GAL4 to drive the expression of UAS-transgene(s).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Map of the pattB-tubP-AtTIR1-P2A-miniAID-Gal80-miniAID-SV40 plasmid (generated using Snapgene). The full sequence is in Figure 1—figure supplement 1—source data 1.
+
 ## Results
 
-## Generation of an auxin-degradable GAL80 Drosophila line
+### Generation of an auxin-degradable GAL80 Drosophila line
 
 To generate an auxin-inducible system for control of GAL4 activity in Drosophila, we designed a transgene that would ubiquitously express two proteins, TIR1 and AID-tagged GAL80. (Figure 1). We included shorter AID sequences (minimal degron of IAA17) than previously used in Drosophila (Trost et al., 2016). Fusion of this minimal AID to luciferase resulted in a fusion protein with short half-life in plants (~10 min) (Dreher et al., 2006). We also instead used Arabidopsis thaliana TIR1 (AtTIR1), which has two point mutations (improving affinity and auxin sensitivity) that can deplete nuclear and cytoplasmic proteins in C. elegans (Zhang et al., 2015). The P2A sequence between AtTIR1 and AID-tagged GAL80 encodes a self-cleaving peptide that is known to work efficiently in Drosophila cell culture (Daniels et al., 2014). The AtTIR1-T2A-AID-GAL80-AID sequence was codon optimised, synthesised, and cloned downstream of the αTub84B promoter in pattB (Figure 1 and Figure 1—figure supplement 1). The αTub84B (tubulin) promoter drives expression of the bicistronic sequence in all cells, all of the time, and (in the absence of auxin) will inhibit any GAL4 activity. When present, auxin will tether the TIR1 to the AID sequences, triggering the degradation of GAL80 and the release of GAL4 inhibition (Figure 1).
 
-## AGES allows induction of GAL4 activity in the adult fat body
+### AGES allows induction of GAL4 activity in the adult fat body
 
 We combined the AGES with c564-GAL4 to see if we could get inducible expression in fat body. A nuclear localised GFP (nls-GFP) was used as a reporter of GAL4 activity. We first examined adult female flies that were placed on food containing different concentrations of 1-naphthaleneacetic acid potassium salt (K-NAA) auxin, which has shown to be more water soluble than NAA (Martinez et al., 2020). A negative control consisting of fly food without auxin (0 mM auxin) was included to investigate whether there was any leaky GAL4 activity in absence of auxin. After 24 hr, GFP fluorescence in the abdomen was assayed (note that there is some naturally occurring autofluorescence in the fly abdomen). At 5 and 10 mM, GFP fluorescence is clearly detectable in the abdomen of live female flies (Figure 2A). Based on this assay, 10 mM for 24 hr results in ~60% of the GFP fluorescence levels seen in the positive control (Figure 2B). At 1 mM there is no detectable GFP above background fluorescence, and the levels are indistinguishable from both the 0 mM and the negative control (lacking both the GAL4 driver and the UAS-nls-GFP). To provide an alternative and more direct assay of transgene induction, quantitative PCR (qPCR) was used to measure the levels of GFP mRNA (Figure 2C). Here, 5 and 10 mM show levels of mRNA equivalent to the positive control, while 0 mM showed no significant difference when compared with the negative control.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig2-v1.jpg)
+
+**Figure 2.:** (A) Ventral images of live females that express GAL4 in fat body tissue. Ingestion of food containing auxin (≥5 mM for 24 hr) induces GAL4 activity and the expression of GFP. (B) Quantification of GFP levels. Pixel intensity thresholding was performed to isolate abdomens as regions of interest. The average pixel intensities from six replicates were quantified and analysed using Kruskal-Wallis test with Dunn pair-wise comparison (***, p < 0.001 and **, p < 0.01). (C) Quantitative PCR (qPCR) data for GFP mRNA levels using different concentrations of auxin (three biological replicates). Values were normalised to housekeeping gene RpL4 (Ribosomal Protein L4) and relative expression levels (compared to the negative control) were calculated using the ΔΔCt method. Y-axis displaying ΔΔCt values and statistics done using Kruskal-Wallis test with Dunn pair-wise comparison (*, p < 0.05). See Figure 2—source data 1 for raw data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ventral images of live males that express GAL4 in fat body tissue. Ingestion of food containing auxin (24 hr) induces GAL4 activity and the expression of GFP. (B) Quantification of GFP levels (from six male abdomens). Pixel intensity thresholding was performed to isolate abdomens as regions of interest. The average pixel intensities were quantified and analysed using ordinary one-way ANOVA (**, p = 0.002, ****, p < 0.0001). (C) Quantitative PCR (qPCR) data for GFP mRNA levels using different concentrations of auxin (three biological replicates). Values were normalised to housekeeping gene RpL4 (Ribosomal Protein L4) and relative expression levels were calculated using the ΔΔCt method. Y-axis displaying ΔΔCt values and statistics done using ordinary one-way ANOVA (**, p < 0.005).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Quantification of GFP levels in female abdomens (expressed in the fat body). Pixel intensity thresholding was performed to isolate abdomens as regions of interest. The average pixel intensities were quantified and analysed using ordinary one-way ANOVA (*, p < 0.05, ****, p < 0.0001). (B) Quantification of GFP levels in female abdomens with freshly made auxin food and 15-week-old food.
 
 Adult males eat less than females (Wong et al., 2009), therefore, this will impact on auxin ingestion and possibly on transgene induction. As with females, we examined both GFP fluorescence levels in the abdomen, and GFP mRNA levels in male flies (Figure 2—figure supplement 1). Although reduced compared to females, there is still a robust induction of GFP expression.
 
 To assess how quickly transgene expression is turned off after removal of auxin from the food, we performed a time course experiment using adult females and 10 mM auxin. After 24 hr, flies were shifted to food without auxin and GFP fluorescence levels in the abdomen measured every 24 hr. At 48 hr (24 hr without auxin), GFP levels were reduced (Figure 2—figure supplement 2A). At 72 and 96 hr, the levels were not significantly different to 0 hr. Furthermore, we tested how stable auxin is in prepared food kept at 4°C. Even after 15 weeks, the auxin food could induce GFP levels to that of newly prepared food (Figure 2—figure supplement 2B).
 
-## AGES allows induction of GAL4 activity in Drosophila larvae
+### AGES allows induction of GAL4 activity in Drosophila larvae
 
 In addition to the need for temporal control of GAL4 activity in the adult, researchers might also want to induce expression at specific points during larval development. To test if AGES works in larvae, we used the c564-GAL4 fat body driver and tested multiple auxin concentrations (Figure 3A and C). Here, we observed that expression could be induced at lower concentrations of auxin. When using food containing no auxin, there is no detectable GFP, whereas with 1 mM auxin, GFP is expressed, although at lower levels than with higher concentrations of auxin (Figure 3A and C). Five mM auxin is an optimal concentration, as concentrations above that do not increase GFP levels. Five mM auxin can induce low-level GFP expression after 6 hr (Figure 3B and D). However, 18 hr is required to provide maximum levels of expression.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig3-v1.jpg)
 
-**Figure 3.:** Drosophila larvae.(A) GFP fluorescence quantification in fat body tissue after induction (for 24 hr) on food with different concentrations of auxin. The average pixel intensities from six larvae were quantified and analysed using Kruskal-Wallis test with Dunn pair-wise comparison (***, p < 0.001 and **, p < 0.01). (B) Time course of GFP expression in fat body tissue when using 5 mM auxin. The average pixel intensities from six larvae were quantified and analysed using Kruskal-Wallis test with Dunn pair-wise comparison (**, p < 0.01). (C) Representative images of larvae fed on different concentrations of auxin. (D) Representative images of larvae imaged at each time interval since induction. See Figure 3—source data 1 for raw data.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) GFP fluorescence quantification in fat body tissue after induction (for 24 hr) on food with different concentrations of auxin. The average pixel intensities from six larvae were quantified and analysed using Kruskal-Wallis test with Dunn pair-wise comparison (***, p < 0.001 and **, p < 0.01). (B) Time course of GFP expression in fat body tissue when using 5 mM auxin. The average pixel intensities from six larvae were quantified and analysed using Kruskal-Wallis test with Dunn pair-wise comparison (**, p < 0.01). (C) Representative images of larvae fed on different concentrations of auxin. (D) Representative images of larvae imaged at each time interval since induction. See Figure 3—source data 1 for raw data.
 
-## Use of AGES for controlling cell-specific transgene expression in the larval and adult nervous system
+### Use of AGES for controlling cell-specific transgene expression in the larval and adult nervous system
 
 For AGES to work with GAL4 lines expressed in the central nervous system, auxin must be able to pass the selectively-permeable glial membrane, akin to the mammalian blood-brain barrier (Limmer et al., 2014). NAA can cross the blood-brain barrier in Drosophila (Chen et al., 2018). To verify this using K-NAA, we first used elav-GAL4 (expressed in all neurons) and examined the expression of GFP in the adult brain. Similar to the fat body c564-GAL4 driver, we observe robust expression of GFP, when flies are fed auxin food (10 mM) for 24 hr (Figure 4—figure supplement 1). This demonstrates that AGES works in the central nervous system and that K-NAA auxin can cross the blood-brain barrier in Drosophila.
 
 We then tested more restricted GAL4-driver lines in the larval ventral nerve cord (grh-GAL4) and in the adult (Or85a-GAL4). In both cases there was no detectable GAL4 activity in the absence of auxin, while in the presence of auxin (10 mM for adults and 5 mM for larvae) GFP in a pattern consistent with the GAL4 driver is observed (Figure 4A and C) at levels significantly above background fluorescence levels (Figure 4B and D).
 
-## Effects of auxin on development, adult survival, and behaviour
+![Figure 4.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig4-v1.jpg)
+
+**Figure 4.:** (A) GFP fluorescence driven by Or85a-GAL4 in the antennal lobe, with and without auxin. (B) GFP fluorescence quantification in the antennal lobe 24 hr after induction (four to six replicates). Statistics performed using ordinary one-way ANOVA (*, p < 0.05). (C) GFP fluorescence driven by grh-GAL4 in the larval ventral nerve cord, with and without auxin. (D) GFP fluorescence quantification in the ventral nerve cord 24 hr after induction (six replicates). Statistics performed using ordinary one-way ANOVA (*, p < 0.05). See Figure 4—source data 1 for raw data.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Confocal images of adult brains stained with anti-GFP and anti-Elav. Adults were fed food containing 5 mM auxin for 24 hr. Scale bars represent 20 µm.
+
+### Effects of auxin on development, adult survival, and behaviour
 
 For a universally applicable drug-inducible system, the drug should not impact on development or mortality of the flies. We tested whether continuous exposure to different concentrations of auxin (K-NAA) would impact on developmental timing. Time to pupation (from egg-laying) is unaffected for concentrations up to 5 mM, however, 10 mM caused a delay of approximately 1 day (Figure 5A). Ten mM auxin causes some developmental delay, although it has no impact on the survival of the flies through these developmental stages (compared to a no auxin control) (Figure 5B). These data indicate that 10 mM auxin should be avoided for larval induction, however, this is not an issue as >1 mM is sufficient for robust induction of expression (Figure 5A) and 5 mM does not cause any developmental delay. Concentrations of 5 and 10 mM auxin can induce expression in adults (Figure 2 and Figure 2—figure supplement 1). Survival assays on both male and female adults show that concentrations of 5 and 10 mM have no effect on survival and lifespan (Figure 5D and E). Therefore, in summary, up to 5 mM auxin is optimal for use in larvae, whilst up to 10 mM auxin is best for use in adults. We also tested whether auxin affects locomotion of larvae (crawling assay) and adults (climbing assay) and see no significant effects with 5 and 10 mM auxin, respectively (Figure 5—figure supplement 1).
 
-## AGES allows inducible manipulation of Drosophila adult circadian locomotor rhythms
+![Figure 5.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig5-v1.jpg)
+
+**Figure 5.:** (A) Time taken from egg-laying to wandering L3 larvae. (B) Time taken from egg-laying to pupation. (C) Survival across developmental stages (larval to pupal and pupal to adult) with 10 mM auxin. (D) Survival of adult females during continuous exposure to auxin. (E) Survival of adult males during continuous exposure to auxin. Logrank test and weighted Gehan-Breslow-Wilcoxon model (ns) were used for the adult survival assays. See Figure 5—source data 1 for raw data.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Larval crawling speed on 0 mM food (10 larvae) and 5 mM auxin food (10 larvae). (B) Distance climbed in climbing assay for males and females on 0 mM food (five separate vials and a total of 144 flies for males and 130 flies for females) and 10 mM auxin food (five separate vials and a total of 141 flies for males and 141 flies for females). Analysed using a paired t-test.
+
+### AGES allows inducible manipulation of Drosophila adult circadian locomotor rhythms
 
 To determine whether AGES is suitable for acute adult behavioural manipulation, we recapitulated a classic GeneSwitch manipulation of clock neuron excitability using AGES (Depetris-Chauvin et al., 2011). A key circuit for control of Drosophila rhythmic behaviour is the ventrolateral neuron (LNv) cluster, of which the small ventrolateral neurons (sLNvs) are both necessary and sufficient for maintenance of free-running locomotor rhythms (Grima et al., 2004; Renn et al., 1999; Stoleru et al., 2004). The four large LNvs and four out of five sLNvs express the neuropeptide pigment dispersing factor (PDF) (Helfrich-Förster, 1995; Renn et al., 1999). PDF is a key clock output neuropeotide required for synchronisation of clock neuron groups, and loss of PDF function results in arrythmicity, desynchronisation of clock oscillators, and altered period length (Lear et al., 2009; Lin et al., 2004; Peng et al., 2003; Sheeba et al., 2008). Adult-specific silencing of PDF+ LNvs by expression of the inwardly rectifying potassium channel Kir2.1 using PDF-GAL4-GeneSwitch is sufficient to nearly ablate circadian locomotor rhythms in constant conditions without resetting the molecular clock (Depetris-Chauvin et al., 2011).
 
 To recapitulate this behavioural experiment, we combined the PDF-GAL4 line with the AGES to allow auxin-inducible control of Kir2.1 expression in PDF+ neurons. We simultaneously replicated GeneSwitch-driven Kir2.1 expression in PDF+ neurons. After eclosion and entrainment to a 12 hr light:12 hr dark (12:12 LD) schedule on standard fly food, flies were individually loaded into activity tubes and placed in the Drosophila activity monitoring (DAM) system (Trikinetics) for 3 days in 12:12 LD, followed by 8 days in constant darkness (DD). Control activity tubes contained standard DAM food (2% agar, 5% sucrose) while experimental food contained RU-486 (200 mg/mL) or NAA (2 or 10 mM). In contrast to the previous experiments, NAA auxin was used here instead of K-NAA auxin. Analysis of the amplitude of the behavioural locomotor rhythm in constant darkness by fast Fourier transform (FFT) (Plautz et al., 1997) showed robust inhibition of locomotor rhythms in both male and female experimental PDF-GAL4; AGES > UAS-Kir2.1 flies on 2 or 10 mM NAA (Figure 6A-D, Figure 6—figure supplement 1A,B). Two mM NAA was sufficient to completely ablate circadian locomotor rhythms in both male and female experimental flies (Figure 6C and D), without a significant effect on average 24 hr locomotor activity of parental controls (Figure 6—figure supplement 2 A-D). Two mM NAA feeding significantly lengthened the behavioural period of male PDF-GAL4/+; AGES/+ parental controls by 19 min, with no effect on females of the same genotype. In agreement with the classic study by Depetris-Chauvin et al., 2011, 200 μg/mL RU-486 feeding also reduced circadian locomotor rhythms in both sexes of flies with PDF-GAL4-GeneSwitch-driven expression of Kir2.1 (Figure 6E and F), though the effect was not as strong as 2 mM NAA feeding in the AGES flies. In addition, RU-486 feeding resulted in a broader distribution of locomotor rhythm strengths and a net increase in rhythmicity in male PDF-GAL4-GeneSwitch parental control flies (Figure 6E), which was accompanied by a 51 min increased period length and increased average 24 hr locomotor activity (Figure 6—figure supplement 2G). RU-486 also increased the period of female PDF-Gal4-GeneSwitch parental controls by 46 min, with no effect on total activity or rhythm strength (Figure 6F, Figure 6—figure supplement 2F,H). In summary, we find that 2 mM NAA feeding is sufficient for AGES-induced expression of Kir2.1 in adult PDF+ clock neurons to ablate circadian locomotor behaviour. Indeed, we observed a stronger ablation of locomotor rhythmicity in the AGES compared to GeneSwitch, with fewer off-target behavioural effects of NAA feeding of parental control flies.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig6-v1.jpg)
+
+**Figure 6.:** (A, B) Representative double-plotted actograms for 5- to 10-day-old male flies maintained on standard food (A) or food supplemented with 2 mm NAA (B) for 3 days in 12 hr light:12 hr dark (12:12 LD) and 7 days in DD. Left: parental control UAS-Kir2.1, centre: parental control PDF-GAL4; AGES, right: experimental PDF-GAL4/UAS-Kir2.1; AGES/+. Bars indicate LD cycle, grey shaded days indicate constant darkness. (C) Amplitude of circadian rest:activity rhythms on DD days 2–8 represented by fast Fourier transform (FFT) power at 24 hr for male PDF-GAL4;AGES > UAS-Kir2.1 flies and their parental controls on standard food (orange) and food supplemented with 2 mM NAA (blue). Points represent individual flies, box shows 25–75% confidence interval, median line, and outliers. (D) Twenty-four hr FFT power as in (C) for female PDF-GAL4;AGES > UAS-Kir2.1 flies and their parental controls. (E) Twenty-four hr FFT power for as in (C) male PDF-GAL4-Geneswitch > UAS-Kir2.1 flies and their parental controls maintained on vehicle control food (orange) and food supplemented with 466 mM RU-486 (red). (F) Twenty-four hr FFT power as in (E) for female PDF-GAL4-Geneswitch > UAS-Kir2.1 flies and their parental controls. For all panels, means were compared by two-way ANOVA by genotype and food substrate, see Figure 6—source data 1 for raw data, p-values, and key resource data. Means sharing the same letter are not significantly different from one another by Tukey’s post hoc test (p > 0.05).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Behavioural data for PDF-GAL4; AGES > UAS-Kir2.1 flies and their parental controls on standard food (orange), 2 mM NAA (blue) or 10 mM NAA (purple). (A, B) Twenty-four hr fast Fourier transform (FFT) power on DD days 2–8 for male (A) and female (B) PDF-GAL4; AGES > UAS-Kir2.1 flies. Two mM NAA data is replotted from Figure 6. Means were compared by two-way ANOVA by genotype and food substrate. Means sharing the same letter are not significantly different from one another by Tukey’s post hoc test (p > 0.05). (C, D) Period length for male (C) and female (D) flies. Means were compared by Student’s t-test for flies of the same genotype on different food substrates. (E, F) Average 24 hr activity counts for male (E) and female (F) flies. Means were compared by two-way ANOVA by genotype and food substrate. Means sharing the same letter are not significantly different from one another by Tukey’s post hoc test (p > 0.05). See Figure 6—source data 1 for raw data and p-values.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/67598/elife-67598-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Period length estimated by chi-squared periodogram on days 2–8 of DD for male (A) and female (B) PDF-GAL4; AGES > UAS-Kir2.1 flies and their parental controls on standard food (orange) and food supplemented with 2 mM NAA (blue). Means were compared by Student’s t-test for flies of the same genotype on different food substrates. (C, D) Average 24 hr activity counts on days 2–8 of DD for male (C) and female (D) PDF-GAL4; AGES > UAS-Kir2.1 flies and their parental controls on standard food (orange) and food supplemented with 2 mM NAA (blue). Means were compared by two-way ANOVA by genotype and food substrate, and Tukey’s post hoc test. Only genotype had significant effects on activity (p = 2.86 × 10–7) and there was no significant interaction effect. Means sharing the same letter are not significantly different from one another by Tukey’s post hoc test (p > 0.05). (E, F) Period length for male (E) and female (F) PDF-GAL4-Geneswitch > UAS-Kir2.1 flies and their parental controls maintained on vehicle control food (orange) and food supplemented with 466 mM RU-486 (teal). Statistics as in panels A and B. (G, H) Average 24 hr activity counts for male (G) and female (H) PDF-GAL4-Geneswitch > UAS-Kir2.1 flies and their parental controls maintained on vehicle control food (orange) and food supplemented with 466 mM RU-486 (teal). Statistics as in panels C and D. Genotype had significant effects on activity in both males and females (p = 4.48 × 10–7, p = 3.60 × 10–2, respectively) and there was a significant interaction between the effects of genotype and food substrate in both males and females (p = 0.007, p = 3.76 x 10–9, respectively). See Figure 6—source data 1 for raw data and p-values.
 
 ## Discussion
 
@@ -101,33 +190,33 @@ In summary, AGES offers the fly community a cheap, safe, and easy system for tem
 
 ## Materials and methods
 
-## Generation of AGES line
+### Generation of AGES line
 
 The AtTIR1-T2A-AID-GAL80-AID sequence was synthesised by Twist Biosciences (twistbioscience.com) (Figure 1—figure supplement 1). The GAL80 sequence (from Saccharomyces cerevisiae) and the AtTIR1 sequence (Zhang et al., 2015) were codon optimised for Drosophila for more effective translation. The αTub84B promoter was amplified from a tubulin-eGFP plasmid (gift from M Dionne) using the following primers: tub_FWD: GATATCAAGCTTGCACAGGTCC and tub-RV: GTACCTTCACGCTGTGGATGAGG. The αTub84B and AtTIR1-T2A-AID-GAL80-AID sequences were cloned into pattB (Bischof et al., 2007) using Gibson assembly (Gibson et al., 2009). Successful clones were sequence verified. Annotated sequence is in Figure 1—figure supplement 1—source data 1. The plasmid is publically available at DGRC: the Drosophila Genomics Resource Center (DGRC: ): https://dgrc.bio.indiana.edu/product/View?product=1568 Microinjection was performed by Cambridge Fly Facility using the VK00040 line, which has an attB site at location att3B (87B10) on chromosomal arm 3R. Injected adult males were collected and mated to w1118 virgin females to identify transgenics (orange eyes). tub-TIR1-T2A-AID-GAL80-AID is available at the BDSC (stock #92470) or the VDRC Stock Center (stock #311020).
 
-## Fly stocks and food
+### Fly stocks and food
 
 In this study, c564-GAL4, UAS-nls-GFP/CyO-actin-GAL4-GFP flies were used to perform fluorescent reporter experiments in the adult and larval fat body, and for quantification of GFP mRNA expression. Moreover, these flies were used in adult survival assays. CantonS flies were used in the developmental survival and developmental timeline experiments. For fluorescent reporter experiments in the adult brain, we used elav-GAL4, UAS-nls-GFP. For behavioural experiments, Iso31 flies were used as a background strain (Ryder et al., 2004), and we used PDF-Gal4 (Park et al., 2000) and PDF-GeneSwitch-GAL4 (BDSC 81116) to drive expression of UAS-Kir2.1 (BDSC 6597). Flies were kept at 25°C on and standard Drosophila food (recipe in supplementary material) was supplemented (just before being aliquoted into vials/bottles/plates) with auxin (K-NAA available from Phytotech [#N610] or Glentham Life Sciences [GK2088]) at varying concentrations. For behavioural experiments, flies were raised and entrained on standard food, and transferred to activity monitoring tubes containing 2% agar, 5% sucrose, supplemented with indicated concentrations of RU-486 in ethanol (Mifepristone, Sigma-Aldrich) or NAA (Phytotech, #N600).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Adult and larval brains were dissected in 1× PBS and fixed for 25 min at room temperature in 4% formaldehyde (methanol free) in 0.3% Triton X-100 PBS (PBST). They were washed four times for 1 hr with 0.3% PBST. Normal goat serum (2% in PBST) was used for tissue blocking (RT, 15 min to 1 hr) and subsequent overnight primary antibody incubation. All tissue washes were done in PBST.
 
 Primary antibodies used were chicken anti-GFP (Abcam #13970, 1:2000), guinea pig anti-Dpn 1:10,000 (Caygill and Brand, 2017) and rat anti-Elav 1:500 (Developmental Studies Hybridoma Bank [DSHB]). Secondary antibodies used include Alexa Fluor 488, 545, and 633 at a concentration of 1:200 (Life Technologies) and tissue was incubated for 1.5 hr at room temperature. Tissue was mounted on standard glass slides in Vectashield Mounting medium (Vector Laboratories). Brains were imaged using a Zeiss LSM 510 microscope. Analysis of acquired images was done using Fiji (Schindelin et al., 2012).
 
-## Imaging and image analysis
+### Imaging and image analysis
 
 Live imaging of GFP in adult flies and larvae was performed using a Nikon SMZ 1500 microscope. In larvae, to identify earliest auxin induction effects, animals were then placed on 1 mM auxin-supplemented food and imaged at 0, 1, 5, 10, and 25 hr intervals. Adults were placed on food containing varying auxin concentrations for 24 hr prior to imaging.
 
 Live GFP levels were quantified in six animals per condition (including negative and positive controls). Binary images were created by using a threshold (Outsu’s thresholding) and the Wand Tool in Fiji was used to trace the GFP-positive area as region of interest (ROI). The ROI corresponded to abdomens in adults or whole larvae. Mean pixel intensity per ROI was calculated using the Measure plugin in Fiji for a total of six biological replicates. Statistical significance analysed using one-way ANOVA (normally distributed) or Kruskal-Wallis test with Dunn pair-wise comparison (non-normally distributed). Parametric t-test or non-parametric Wilcoxon tests were used to compare individual conditions with respective controls. Statistical tests were completed in R (v3.6.3) and plots were performed using the software GraphPad Prism version 9 for Windows.
 
-## Developmental and survival assays
+### Developmental and survival assays
 
 All animals were kept at 25°C. To determine the effects of auxin on larval development, 10 mated Canton-S flies were allowed to lay eggs on fly food containing 0, 1, 5, or 10 mM of auxin for a maximum of 24 hr, or until ~50 eggs were counted. Five replicates were obtained for each concentration, except for 0 mM where four replicates were used. Daily emergence of L3 larvae and presence of pupae were recorded to determine the time required for egg-to-L3, and egg-to-pupae development for each concentration.
 
 Adult survival assays were performed on c564-GAL4, UAS-nls-GFP/AGES flies on three replicates, with 20 flies per replicate. Male and female animals were separated 5 days post-eclosion. Each replicate was continuously exposed to 0, 5, and 10 mM auxin food. Death was scored daily until all flies were deceased. Statistical tests and plots were performed using the software GraphPad Prism version 9 for Windows.
 
-## RNA extraction and real-time qPCR
+### RNA extraction and real-time qPCR
 
 In order to quantify whether levels of GFP mRNA expression changed in the presence of auxin, the c564-GAL4, UAS-nls-GFP/AGES flies were placed on 0, 5, and 10 mM auxin-supplemented food for 24 hr. The c564-GAL4, UAS-nls-GFP/+ flies were used as a positive control whilst the AGES flies were used as a negative control (lacking both the GAL4 driver and the UAS-nls-GFP). The 0 mM was included to investigate whether there was any leaky GAL4 activity in absence of auxin.
 
@@ -135,6 +224,6 @@ Total RNA was extracted from whole adult flies, three per replicate per conditio
 
 The gene RpL4 (Ribosomal Protein L4) was used as reference gene. The GFP mRNA expression levels were calculated using the ΔΔCt method (ΔCt = Ct [mean Ct of reference gene] – Ct [target]; ΔΔCt = ΔCt [target] − mean ΔCt [control]) (Livak and Schmittgen, 2001). Target refers to the auxin concentrations (0, 5, 10 mM) and control refers to the AGES flies. Primers used: RpL4_FW - 5’-TCCACCTTGAAGAAGGGCTA-3’, RpL4_RV – 5’-TTGCGGATCTCCTCAGACTT-3’, GFP_FW – 5’-GAGCTGTACAAGAGCAGGCA-3’, GFP_RV – 5’-GTTGACGGCGTTTTCGTTCA-3’. Statistical significance analysed Kruskal-Wallis test with Dunn pair-wise comparison in R (v3.6.3).
 
-## Drosophila activity monitoring assay
+### Drosophila activity monitoring assay
 
 We evaluated circadian locomotor rhythms using the DAM system (Trikinetics). Male and female flies of the indicated genotype were entrained in a 12:12 LD cycle prior to loading individual 5- to 7-day-old flies into glass DAM tubes containing control or experimental diets. For AGES flies, the control diet consisted of standard DAM food. For GeneSwitch flies, the control diet consisted of 1% ethanol vehicle in standard DAM food. Flies were monitored via DAM assay for 3 days in 12:12 LD at 25°C, followed by 8 days in constant darkness (DD). Circadian locomotor parameters were analysed using ClockLab software (Actimetrics) for data from days 2 to 8 of DD. Period length was determined by χ2 periodogram analysis, and relative rhythm power at 24 hr was determined using FFT. FFT power and average daily activity counts for each sex were compared by two-way ANOVA by genotype and food substrate, with Tukey’s post hoc comparisons. Because period length could not be estimated for arrhythmic flies, period length was compared by Student’s t-test for flies of the same genotype on different food substrates.

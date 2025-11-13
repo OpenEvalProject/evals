@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.44443.001 We perform a comprehensive integrative analysis of multiple structural MR-based brain features and find for the first-time strong evidence relating inter-individual brain structural variations to a wide range of demographic and behavioral variates across a large cohort of young healthy human volunteers. Our analyses reveal that a robust ‘positive-negative’ spectrum of behavioral and demographic variates, recently associated to covariation in brain function, can already be identified using only structural features, highlighting the importance of careful integration of structural features in any analysis of inter-individual differences in functional connectivity and downstream associations with behavioral/demographic variates.
+We perform a comprehensive integrative analysis of multiple structural MR-based brain features and find for the first-time strong evidence relating inter-individual brain structural variations to a wide range of demographic and behavioral variates across a large cohort of young healthy human volunteers. Our analyses reveal that a robust ‘positive-negative’ spectrum of behavioral and demographic variates, recently associated to covariation in brain function, can already be identified using only structural features, highlighting the importance of careful integration of structural features in any analysis of inter-individual differences in functional connectivity and downstream associations with behavioral/demographic variates.
 
 ## Introduction
 
@@ -79,6 +79,6 @@ In this work, we use data from the Human Connectome Project (HCP) N = 500 rele
 
 Further details and code implementing each feature extraction procedure as well as the Linked ICA factorization are publicly available at Llera (2019) (copy archived at https://github.com/elifesciences-publications/Llera_elife_2019_1).
 
-## Statistical analysis
+### Statistical analysis
 
 To uncover relationships between the behavioral/demographic measures and the components obtained from the Linked-ICA decomposition we perform a correlation analysis between each independent component subjects’ contribution and each available behavioral measure. This operation is schematically summarized in Figure 1 operation C. To take into account the family structure present in the HCP sample while assessing significance we use the Permutation Analysis of Linear Models (PALM) (Winkler et al., 2014; Winkler et al., 2015) and use 106 permutations per tested correlation (Figure 1 operation D). We define significance at p<0.05 and address the multiple comparison by applying FDR correction (Benjamini and Hochberg, 1995) as well as full Bonferroni correction (Figure 1 operation E).

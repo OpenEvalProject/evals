@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.23708.001 The molecular force of blood-stage infection ( mol FOB) is a quantitative surrogate metric for malaria transmission at population level and for exposure at individual level. Relationships between mol FOB, parasite prevalence and clinical incidence were assessed in a treatment-to-reinfection cohort, where P.vivax ( Pv ) hypnozoites were eliminated in half the children by primaquine (PQ). Discounting relapses, children acquired equal numbers of new P. falciparum ( Pf ) and Pv blood-stage infections/year ( Pf- mol FOB = 0–18, Pv- mol FOB = 0–23) resulting in comparable spatial and temporal patterns in incidence and prevalence of infections. Including relapses, Pv- mol FOB increased >3 fold (relative to PQ-treated children) showing greater heterogeneity at individual ( Pv- mol FOB = 0–36) and village levels. Pf- and Pv- mol FOB were strongly associated with clinical episode risk. Yearly Pf clinical incidence rate (IR = 0.28) was higher than for Pv (IR = 0.12) despite lower Pf- mol FOB. These relationships between mol FOB, clinical incidence and parasite prevalence reveal a comparable decline in Pf and Pv transmission that is normally hidden by the high burden of Pv relapses. Clinical trial registration: ClinicalTrials.gov NCT02143934
+The molecular force of blood-stage infection (molFOB) is a quantitative surrogate metric for malaria transmission at population level and for exposure at individual level. Relationships between molFOB, parasite prevalence and clinical incidence were assessed in a treatment-to-reinfection cohort, where P.vivax (Pv) hypnozoites were eliminated in half the children by primaquine (PQ). Discounting relapses, children acquired equal numbers of new P. falciparum (Pf) and Pv blood-stage infections/year (Pf-molFOB = 0–18, Pv-molFOB = 0–23) resulting in comparable spatial and temporal patterns in incidence and prevalence of infections. Including relapses, Pv-molFOB increased >3 fold (relative to PQ-treated children) showing greater heterogeneity at individual (Pv-molFOB = 0–36) and village levels. Pf- and Pv-molFOB were strongly associated with clinical episode risk. Yearly Pf clinical incidence rate (IR = 0.28) was higher than for Pv (IR = 0.12) despite lower Pf-molFOB. These relationships between molFOB, clinical incidence and parasite prevalence reveal a comparable decline in Pf and Pv transmission that is normally hidden by the high burden of Pv relapses.Clinical trial registration: ClinicalTrials.gov NCT02143934
 
 ## Introduction
 
@@ -47,15 +47,310 @@ In this study, we extend the analysis of molFOB’s relationship with incidence 
 
 ## Results
 
-## Demographic and parasitological parameters at enrolment
+### Demographic and parasitological parameters at enrolment
 
 This study was conducted in six villages in Maprik district, East Sepik Province, PNG between August 2009 and May 2010 (Robinson et al., 2015). 524 children aged 5–10 years were enrolled and randomized to receive either chloroquine (CQ), artemeter-lumefantrine (AL) and primaquine (PQ); or CQ, AL and placebo. Demographic parameters of the 466 children that completed the full course of randomized treatment with PQ/CQ/AL (n = 233) or placebo/CQ/AL (n = 233), and were thereafter closely followed for 8 months, were comparable between the six villages (Table 1).
 
+**Table 1.**
+ Characteristics of study participants by village.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Village</th>
+      <th>N</th>
+      <th>% female</th>
+      <th>Mean age (±SD)</th>
+      <th>Mean weight (±SD)</th>
+      <th>% LLIN use at enrolment*</th>
+      <th>Mean LLIN use during follow-up† (%, range)</th>
+      <th>Mean Hb (±SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amahup</td>
+      <td>119</td>
+      <td>53</td>
+      <td>7.6 (±1.5)</td>
+      <td>19.8 (±3.3)</td>
+      <td>99</td>
+      <td>99 (50–100)</td>
+      <td>11.1 (±1.0)</td>
+    </tr>
+    <tr>
+      <td>Albinama</td>
+      <td>99</td>
+      <td>43</td>
+      <td>7.7 (±1.5)</td>
+      <td>20.0 (±3.3)</td>
+      <td>95</td>
+      <td>97 (78–100)</td>
+      <td>11.7 (±1.8)</td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>54</td>
+      <td>59</td>
+      <td>7.8 (±1.6)</td>
+      <td>19.8 (±4.3)</td>
+      <td>96</td>
+      <td>99 (83–100)</td>
+      <td>11.3 (±1.1)</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>93</td>
+      <td>51</td>
+      <td>7.8 (±1.5)</td>
+      <td>20.3 (±3.3)</td>
+      <td>91</td>
+      <td>99 (69–100)</td>
+      <td>11.7 (±1.2)</td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>70</td>
+      <td>50</td>
+      <td>7.4 (±1.7)</td>
+      <td>19.3 (±2.9)</td>
+      <td>77</td>
+      <td>92 (56–100)</td>
+      <td>10.7 (±1.0)</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>31</td>
+      <td>55</td>
+      <td>7.4 (±1.6)</td>
+      <td>19.2 (±4.6)</td>
+      <td>100</td>
+      <td>100 (92–100)</td>
+      <td>12.1 (±1.4)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>466</td>
+      <td>51</td>
+      <td>7.6 (±1.5)</td>
+      <td>19.8 (±3.5)</td>
+      <td>93</td>
+      <td>100 (50–100)</td>
+      <td>11.4 (±1.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* LLIN use in the night preceding enrolment.† Information on LLIN use in the previous night was collected at each follow-up visit and averaged across follow-up per participant. Mean LLIN use by village was calculated from the averaged individual LLIN use.Hb: Haemoglobin._
+
 P. vivax was the most common infection at enrolment with 48% of children positive by quantitative PCR (qPCR), followed by P. falciparum (24%), P. malariae (15%) and P. ovale (3%; Table 2). 39% of children were not infected with any Plasmodium species at enrolment. The vast majority of P. malariae (75%) and almost all P. ovale infections (93%) occurred in children co-infected with either P. vivax and/or P. falciparum (Table 2). Prevalence of each Plasmodium species varied between villages (P. falciparum, 9–71%; P. vivax, 38–67%; P. malariae, 8–40%; P. ovale, 0–11%; Table 2) and was highest in Bolumita for all species. Accordingly, mixed-species infections were also most prevalent in Bolumita (Table 2). The multiplicity of infection (MOI), that is, the number of parasite genotypes per infection, also varied between villages for both species (mean P. falciparum MOI, 1.1–2.2 clones/infection; mean P. vivax MOI, 1.6–2.9 clones/infection) and children from Bolumita carried more multi-clone infections with P. vivax and P. falciparum than children in other villages (Table 2). Mean P. falciparum parasite density was almost two- to six-fold higher in Bolumita (331 18S rRNA gene copies/µl) than in other villages (56–192 18S rRNA gene copies/µl, Table 2).
 
-## molFOB and parasite prevalence after randomized radical cure treatment
+**Table 2.**
+ Plasmodium infection status at enrolment by village.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Village</th>
+      <th colspan="5">P. falciparum</th>
+      <th colspan="5">P. vivax</th>
+      <th colspan="3">P. malariae</th>
+      <th colspan="3">P. ovale</th>
+    </tr>
+    <tr>
+      <th>N pos.</th>
+      <th>Prevalence by qPCR (CI95)</th>
+      <th>% mixed*</th>
+      <th>Mean† density (IQR)</th>
+      <th>Mean MOI‡ (range)</th>
+      <th>N pos.</th>
+      <th>Prevalence by qPCR (CI95)</th>
+      <th>% mixed*</th>
+      <th>Mean† density (IQR)</th>
+      <th>Mean MOI‡ (range)</th>
+      <th>N pos.</th>
+      <th>Prevalence by qPCR (CI95)</th>
+      <th>% mixed*</th>
+      <th>N pos.</th>
+      <th>Prevalence by qPCR (CI95)</th>
+      <th>% mixed*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Albinama</td>
+      <td>18</td>
+      <td>18 (11–27)</td>
+      <td>72</td>
+      <td>131 (38–189)</td>
+      <td>1.4 (1–4)</td>
+      <td>54</td>
+      <td>55 (44–65)</td>
+      <td>24</td>
+      <td>3 (1–17)</td>
+      <td>1.8 (1–7)</td>
+      <td>9</td>
+      <td>9 (5–17)</td>
+      <td>67</td>
+      <td>5</td>
+      <td>5 (2–12)</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Amahup</td>
+      <td>14</td>
+      <td>12 (7–19)</td>
+      <td>57</td>
+      <td>56 (14–105)</td>
+      <td>1.6 (1–5)</td>
+      <td>46</td>
+      <td>39 (30–48)</td>
+      <td>24</td>
+      <td>3 (1–29)</td>
+      <td>2.2 (1–7)</td>
+      <td>12</td>
+      <td>10 (6–17)</td>
+      <td>83</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>15</td>
+      <td>28 (17–42)</td>
+      <td>67</td>
+      <td>79 (30–848)</td>
+      <td>1.7 (1–5)</td>
+      <td>23</td>
+      <td>43 (30–57)</td>
+      <td>43</td>
+      <td>2 (1–28)</td>
+      <td>2.0 (1–7)</td>
+      <td>9</td>
+      <td>17 (8–30)</td>
+      <td>56</td>
+      <td>2</td>
+      <td>3 (0–14)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>8</td>
+      <td>9 (4–17)</td>
+      <td>63</td>
+      <td>64 (10–325)</td>
+      <td>2.0 (1–4)</td>
+      <td>35</td>
+      <td>38 (30–48)</td>
+      <td>14</td>
+      <td>2 (1–14)</td>
+      <td>1.9 (1–6)</td>
+      <td>7</td>
+      <td>8 (3–15)</td>
+      <td>57</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>50</td>
+      <td>71 (59–81)</td>
+      <td>80</td>
+      <td>331 (62–1988)</td>
+      <td>2.2 (1–8)</td>
+      <td>47</td>
+      <td>67 (55–78)</td>
+      <td>81</td>
+      <td>3 (2–27)</td>
+      <td>2.9 (1–10)</td>
+      <td>28</td>
+      <td>40 (29–52)</td>
+      <td>89</td>
+      <td>8</td>
+      <td>11 (5–22)</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>8</td>
+      <td>26 (13–45)</td>
+      <td>75</td>
+      <td>192 (30–848)</td>
+      <td>1.1 (1–2)</td>
+      <td>18</td>
+      <td>58 (39–75)</td>
+      <td>28</td>
+      <td>3 (1–25)</td>
+      <td>1.6 (1–5)</td>
+      <td>4</td>
+      <td>13 (4–31)</td>
+      <td>50</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Overall</td>
+      <td>113</td>
+      <td>24 (20–28)</td>
+      <td>73</td>
+      <td>163 (20–1103)</td>
+      <td>1.9 (1–8)</td>
+      <td>223</td>
+      <td>48 (43–52)</td>
+      <td>37</td>
+      <td>3 (1–23)</td>
+      <td>2.2 (1–10)</td>
+      <td>69</td>
+      <td>15 (12–18)</td>
+      <td>75</td>
+      <td>15</td>
+      <td>3 (2–5)</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>p-value§</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.034</td>
+      <td>0.086</td>
+      <td>0.047</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>0.947</td>
+      <td>0.020</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.086</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.133</td>
+    </tr>
+  </tbody>
+</table>
+
+_* % of infections by qPCR that are mixed-species infections.† Geometric mean of species-specific 18S rRNA copy numbers per µl blood.‡ MOI, multiplicity of infection: number of Pf-msp2 and Pv-msp1F3 alleles per infection.§ Differences between villages were tested for using Chi2 and Fisher’s exact test (prevalence, proportion mixed) or Kruskal-Wallis test (MOI, log10-transformed parasite density)._
+
+### molFOB and parasite prevalence after randomized radical cure treatment
 
 Children who had received PQ for clearance of P. vivax hypnozoites experienced similar numbers of new blood-stage infections with P. falciparum and P. vivax during follow-up (mean Pf-molFOB = 1.5 CI95 [1.3–1.7] new blood-stage clones/year, Pv-molFOB = 1.6 [1.4–1.9] new blood-stage clones/year, Figure 1A, Figure 1—figure supplement 1). Pf-molFOB in the placebo arm was comparable to the PQ arm (mean Pf-molFOB = 1.4 [1.2–1.6] new blood-stage clones/year), whereas due to the hypnozoite reservoir Pv-molFOB was more than three times higher in the placebo arm compared to the PQ arm (mean Pv-molFOB = 5.4 [4.9–5.8] new blood-stage clones/year). Pv-molFOB in the placebo arm showed a pronounced peak at months 2–3 of follow-up, which likely represents a wave of fast-relapsing hypnozoites in children who did not receive PQ (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig1-v2.jpg)
+
+**Figure 1.:** Blue lines, P. falciparum; red lines, P. vivax; solid lines, placebo arm; dashed lines, PQ arm. Open circles in (B) mark enrolment qPCR prevalence for each species.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Definition of P. falciparum new infections in two exemplary children is shown. The study design and timelines of follow-up are shown in upper panel: enrolment visit (‘E’), followed by radical treatment (black bar ‘T’) and 235 days of follow-up. The presence of P. falciparum clones by sampling visit is visualized below. Columns represent sampling visits, rows represent P. falciparum msp2 alleles, that is distinct P. falciparum clones. Grey solid circles, P. falciparum negative sample, grey open circle, missing sample due to missed follow-up visit; red circle: sample positive for respective Pf-msp2 allele. New infections were defined as a positive sample preceded by two samples negative for this allele (black rectangles), excluding missed samples (see Child 2, allele F, days 120–200). The time point of new infections is marked by arrows for the two children.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Purple lines, P. ovale; green lines, P. malariae; solid lines, Placebo arm; dashed lines, PQ arm. Open circles mark enrolment qPCR prevalence for each species.
 
 P. vivax prevalence in the PQ arm was comparable to P. falciparum prevalence throughout the study and increased steadily, irrespective of the diagnostic method used (Figure 1B and C). P. vivax prevalence increased more rapidly in the placebo arm until month 3 of follow-up and dropped thereafter, similar to patterns in Pv-molFOB in the same arm. Prevalence as measured by qPCR did not reach pre-treatment levels until the end of the study for any of the four Plasmodium species (Figure 1B, Figure 1—figure supplement 2).
 
@@ -63,9 +358,286 @@ At the end of follow-up, P. vivax prevalence by qPCR in the placebo arm was 25% 
 
 Similarly, throughout and at the end of follow-up P. vivax prevalence in the placebo arm was 2–3 fold higher compared to P. falciparum (irrespective of treatment arm; P. falciparum prevalence at end of follow-up, 10% [8–14%]), which is in agreement with the prevalence pattern at enrolment. Assuming equal transmission from mosquitoes for both species, which was corroborated by a comparable Pf-molFOB and Pv-molFOB in the PQ arm, P. vivax relapses have contributed to a P. vivax prevalence twice as high as that of P. falciparum.
 
-## Risk of recurrent blood-stage infections and molFOB during follow-up
+### Risk of recurrent blood-stage infections and molFOB during follow-up
 
 In the present study design, recurrent blood-stage infection can either originate from a new transmission event (both arms and all species) or for P. vivax and P. ovale also from a relapse of any previous infection (placebo arm only). After adjusting for the effect of PQ treatment (Robinson et al., 2015), village of residence and infection status by qPCR at enrolment were the main predictors for the risk of recurrent Plasmodium spp. during follow-up (Table 3). Interestingly, in addition to a protective effect against recurrent P. vivax and P. ovale, the risk of recurrent P. falciparum was also reduced by 27% [0–48%] after PQ treatment (p=0.064).
+
+**Table 3.**
+ Multivariable predictors for time to recurrent blood-stage infection with Plasmodium species by qPCR
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable</th>
+      <th colspan="3">P. vivax</th>
+      <th colspan="3">P. falciparum</th>
+      <th colspan="3">P. malariae</th>
+      <th colspan="3">P. ovale</th>
+    </tr>
+    <tr>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PQ treatment</td>
+      <td>0.18</td>
+      <td>0.13–0.25</td>
+      <td>&lt;0.001</td>
+      <td>0.73</td>
+      <td>0.52–1.02</td>
+      <td>0.064</td>
+      <td>0.51</td>
+      <td>0.22–1.19</td>
+      <td>0.121</td>
+      <td>0.31</td>
+      <td>0.12–0.75</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.95</td>
+      <td>0.87–1.04</td>
+      <td>0.247</td>
+      <td>1.05</td>
+      <td>0.94–1.17</td>
+      <td>0.361</td>
+      <td>0.98</td>
+      <td>0.75–1.29</td>
+      <td>0.905</td>
+      <td>0.96</td>
+      <td>0.74–1.26</td>
+      <td>0.793</td>
+    </tr>
+    <tr>
+      <td>LLIN use at enrolment</td>
+      <td>0.62</td>
+      <td>0.39–0.98</td>
+      <td>0.043</td>
+      <td>0.84</td>
+      <td>0.49–1.44</td>
+      <td>0.531</td>
+      <td>1.33</td>
+      <td>0.33–6.09</td>
+      <td>0.715</td>
+      <td>0.95</td>
+      <td>0.26–3.43</td>
+      <td>0.936</td>
+    </tr>
+    <tr>
+      <td>Hb at enrolment (g/dl)</td>
+      <td>0.88</td>
+      <td>0.80–0.98</td>
+      <td>0.019</td>
+      <td>0.90</td>
+      <td>0.80–1.02</td>
+      <td>0.099</td>
+      <td>0.83</td>
+      <td>0.61–1.12</td>
+      <td>0.224</td>
+      <td>0.92</td>
+      <td>0.66–1.28</td>
+      <td>0.634</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Albinama (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Amahup</td>
+      <td>0.45</td>
+      <td>0.29–0.71</td>
+      <td>0.001</td>
+      <td>0.58</td>
+      <td>0.31–1.11</td>
+      <td>0.101</td>
+      <td>0.34</td>
+      <td>0.07–1.79</td>
+      <td>0.205</td>
+      <td>2.83</td>
+      <td>0.29–27.48</td>
+      <td>0.370</td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>2.15</td>
+      <td>1.40–3.31</td>
+      <td>&lt;0.001</td>
+      <td>1.81</td>
+      <td>0.99–3.30</td>
+      <td>0.054</td>
+      <td>0.92</td>
+      <td>0.24–3.60</td>
+      <td>0.910</td>
+      <td>7.74</td>
+      <td>0.85–70.45</td>
+      <td>0.070</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>1.00</td>
+      <td>0.66–1.54</td>
+      <td>0.983</td>
+      <td>0.60</td>
+      <td>0.30–1.19</td>
+      <td>0.145</td>
+      <td>0.24</td>
+      <td>0.03–2.07</td>
+      <td>0.193</td>
+      <td>4.60</td>
+      <td>0.51–41.41</td>
+      <td>0.173</td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>3.34</td>
+      <td>2.09–5.33</td>
+      <td>&lt;0.001</td>
+      <td>4.73</td>
+      <td>2.69–8.30</td>
+      <td>&lt;0.001</td>
+      <td>1.21</td>
+      <td>0.34–4.31</td>
+      <td>0.770</td>
+      <td>19.43</td>
+      <td>2.19–172.37</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>0.83</td>
+      <td>0.44–1.59</td>
+      <td>0.583</td>
+      <td>2.29</td>
+      <td>1.17–4.50</td>
+      <td>0.015</td>
+      <td>0.82</td>
+      <td>0.15–4.53</td>
+      <td>0.823</td>
+      <td>3.17</td>
+      <td>0.19–52.41</td>
+      <td>0.420</td>
+    </tr>
+    <tr>
+      <td colspan="13">Infection status at enrolment (by qPCR)</td>
+    </tr>
+    <tr>
+      <td>Uninfected (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P. vivax</td>
+      <td>1.27</td>
+      <td>0.91–1.78</td>
+      <td>0.165</td>
+      <td>1.37</td>
+      <td>0.86–2.20</td>
+      <td>0.186</td>
+      <td>0.92</td>
+      <td>0.20–4.18</td>
+      <td>0.913</td>
+      <td>2.17</td>
+      <td>0.68–6.97</td>
+      <td>0.192</td>
+    </tr>
+    <tr>
+      <td>P. falciparum</td>
+      <td>1.36</td>
+      <td>0.84–2.19</td>
+      <td>0.205</td>
+      <td>1.56</td>
+      <td>0.86–2.82</td>
+      <td>0.145</td>
+      <td>3.54</td>
+      <td>0.85–14.72</td>
+      <td>0.083</td>
+      <td>1.25</td>
+      <td>0.26–5.90</td>
+      <td>0.779</td>
+    </tr>
+    <tr>
+      <td>P. malariae</td>
+      <td>0.83</td>
+      <td>0.38–1.85</td>
+      <td>0.655</td>
+      <td>0.99</td>
+      <td>0.38–2.56</td>
+      <td>0.977</td>
+      <td>6.35</td>
+      <td>1.31–30.81</td>
+      <td>0.022</td>
+      <td>1.58</td>
+      <td>0.17–14.30</td>
+      <td>0.676</td>
+    </tr>
+    <tr>
+      <td>Mixed P.f. or P.v.†</td>
+      <td>1.74</td>
+      <td>1.14–2.65</td>
+      <td>0.010</td>
+      <td>2.08</td>
+      <td>1.25–3.48</td>
+      <td>0.005</td>
+      <td>3.37</td>
+      <td>0.88–12.90</td>
+      <td>0.076</td>
+      <td>2.03</td>
+      <td>0.55–7.53</td>
+      <td>0.287</td>
+    </tr>
+  </tbody>
+</table>
+
+_* AHRs were modeled using Cox proportional hazard regression.† Mixed infection including P. falciparum or P. vivax infection in conjunction with one or more other Plasmodium spp.PQ: Primaquine; LLIN: long-lasting insecticide-treated net; Hb: haemoglobin._
 
 The risk of a recurrent infection (measured by qPCR) with P. falciparum, P. vivax and P. ovale varied more than 7-fold between villages, with a higher risk observed in Bolumita (78%, 77%, and 15% with recurrent P. vivax, P. falciparum and P. ovale, respectively) compared to the other villages (recurrent P. vivax, range 25–73%; recurrent P. falciparum, range 12–44%; recurrent P. ovale, range 0–7%). For P. falciparum and P. vivax, a mixed infection at enrolment as measured by qPCR was further associated with up to a two-fold increased risk of recurrent infection (P. falciparum: AHR = 2.08 [1.25–3.48], p=0.005; P. vivax: AHR = 1.74 [1.14–2.65], p=0.010; Table 3), supporting the idea that focal transmission within villages leads to the presence of high-risk and low-risk individuals. For P. malariae, the infection status at enrolment was a stronger predictor of risk of recurrent infection than village of residence. An infection with P. falciparum, P. malariae or a mixed infection at enrolment as measured by qPCR was associated with up to a 6-fold increase in risk of recurrent P. malariae (AHRPf-enrol = 3.54 [0.85–14.72], p=0.083; AHRPm-enrol = 6.35 [1.31–30.81], p=0.022; AHRmixed = 3.37 [0.88–12.90], p=0.076; Table 3).
 
@@ -75,25 +647,579 @@ The incidence of new P. falciparum and P. vivax blood-stage clones detected duri
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig2-v2.jpg)
 
-**Figure 2.:** P.falciparum molFOB (A) and P. vivax molFOB by treatment arm (B).Relative frequencies among the 466 children are shown.
+**Figure 2.:** Relative frequencies among the 466 children are shown.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig3-v2.jpg)
 
-**Figure 3.:** molFOB (A, B) and clinical episode risk (C, D) of P.falciparum (A, C) and P. vivax (B, D).Upper panels show the kriging fit of model predictions of molFOB and clinical episode risk of children in both treatment arms. Lower panels show the standard error relative to the kriging estimate. Dots represent study participants’ houses and are color-coded according to village. Black lines: vehicle-accessible road; dark grey lines: vehicle-inaccessible road; light grey lines: river; red/white cross: health center or aid post; grey square: school or enrolment location. Maps were prepared using ArcGIS 10.2 (Esri, USA).
+**Figure 3.:** Upper panels show the kriging fit of model predictions of molFOB and clinical episode risk of children in both treatment arms. Lower panels show the standard error relative to the kriging estimate. Dots represent study participants’ houses and are color-coded according to village. Black lines: vehicle-accessible road; dark grey lines: vehicle-inaccessible road; light grey lines: river; red/white cross: health center or aid post; grey square: school or enrolment location. Maps were prepared using ArcGIS 10.2 (Esri, USA).
 
-## Patterns in the risk of P. vivax and P. falciparum clinical episodes
+**Table 4.**
+ Multivariable predictors of Pv- and Pf-molFOB per follow-up interval.Model predictions from this model were used for mapping molFOB in Figure 3A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Variable</th>
+      <th colspan="6">P. vivax</th>
+      <th colspan="3">P. falciparum</th>
+    </tr>
+    <tr>
+      <th colspan="3">PQ arm</th>
+      <th colspan="3">Placebo arm</th>
+      <th colspan="3">Combined arms</th>
+    </tr>
+    <tr>
+      <th>IRR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>IRR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>IRR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PQ treatment</td>
+      <td>n.a.†</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>0.89</td>
+      <td>0.65–1.22</td>
+      <td>0.474</td>
+    </tr>
+    <tr>
+      <td>New P. falc. infections in interval‡</td>
+      <td>1.32</td>
+      <td>0.92–1.89</td>
+      <td>0.134</td>
+      <td>1.10</td>
+      <td>0.85–1.42</td>
+      <td>0.466</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>New P. vivax infections in interval‡</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>1.15</td>
+      <td>0.97–1.36</td>
+      <td>0.100</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.86</td>
+      <td>0.74–1.01</td>
+      <td>0.059</td>
+      <td>0.95</td>
+      <td>0.87–1.04</td>
+      <td>0.305</td>
+      <td>1.03</td>
+      <td>0.92–1.14</td>
+      <td>0.640</td>
+    </tr>
+    <tr>
+      <td>LLIN use at enrolment</td>
+      <td>0.96</td>
+      <td>0.51–1.79</td>
+      <td>0.897</td>
+      <td>0.62</td>
+      <td>0.43–0.91</td>
+      <td>0.013</td>
+      <td>1.07</td>
+      <td>0.7–1.62</td>
+      <td>0.755</td>
+    </tr>
+    <tr>
+      <td>Hb at enrolment (g/dl)</td>
+      <td>0.85</td>
+      <td>0.72–1.01</td>
+      <td>0.063</td>
+      <td>0.91</td>
+      <td>0.85–0.99</td>
+      <td>0.025</td>
+      <td>0.85</td>
+      <td>0.75–0.97</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Albinama (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Amahup</td>
+      <td>0.02</td>
+      <td>0–0.11</td>
+      <td>&lt;0.001</td>
+      <td>0.56</td>
+      <td>0.34–0.91</td>
+      <td>0.020</td>
+      <td>0.52</td>
+      <td>0.25–1.07</td>
+      <td>0.074</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>0.85</td>
+      <td>0.4–1.8</td>
+      <td>0.664</td>
+      <td>1.74</td>
+      <td>1.16–2.61</td>
+      <td>0.007</td>
+      <td>1.81</td>
+      <td>0.98–3.35</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>0.28</td>
+      <td>0.1–0.82</td>
+      <td>0.020</td>
+      <td>1.13</td>
+      <td>0.73–1.73</td>
+      <td>0.590</td>
+      <td>0.75</td>
+      <td>0.37–1.52</td>
+      <td>0.423</td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>1.52</td>
+      <td>0.73–3.17</td>
+      <td>0.268</td>
+      <td>2.67</td>
+      <td>1.83–3.9</td>
+      <td>&lt;0.001</td>
+      <td>6.05</td>
+      <td>3.32–11.05</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>0.5</td>
+      <td>0.15–1.68</td>
+      <td>0.264</td>
+      <td>0.76</td>
+      <td>0.4–1.43</td>
+      <td>0.394</td>
+      <td>2.8</td>
+      <td>1.39–5.64</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Study Day</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Day 0–35 (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Day 36–80</td>
+      <td>1.37</td>
+      <td>0.54–3.48</td>
+      <td>0.509</td>
+      <td>1.99</td>
+      <td>1.39–2.84</td>
+      <td>&lt;0.001</td>
+      <td>2.42</td>
+      <td>1.44–4.07</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Day 81–175</td>
+      <td>1.34</td>
+      <td>0.57–3.12</td>
+      <td>0.503</td>
+      <td>0.89</td>
+      <td>0.61–1.3</td>
+      <td>0.538</td>
+      <td>1.13</td>
+      <td>0.7–1.84</td>
+      <td>0.616</td>
+    </tr>
+    <tr>
+      <td>Day &gt; 175</td>
+      <td>0.65</td>
+      <td>0.25–1.69</td>
+      <td>0.374</td>
+      <td>0.56</td>
+      <td>0.38–0.83</td>
+      <td>0.004</td>
+      <td>0.87</td>
+      <td>0.48–1.56</td>
+      <td>0.643</td>
+    </tr>
+  </tbody>
+</table>
+
+_*IRRs were modeled per sampling interval using negative binomial generalized estimating equations allowing for repeated visits with log-link and an exchangeable correlation structure.† n.a., not applicable.‡molFOB in the follow-up interval (time-varying covariate).PQ: Primaquine; LLIN: long-lasting insecticide-treated net; Hb: haemoglobin._
+
+### Patterns in the risk of P. vivax and P. falciparum clinical episodes
 
 A total of 98 clinical malaria episodes, here defined as fever plus presence of LM-detectable parasites, were observed during the study period. Of these, 64 (65%) exceeded the previously established pyrogenic thresholds of 2500 and 500 parasites/µl per LM for P. falciparum and P. vivax, respectively (Mueller et al., 2009b). P. falciparum was the most common cause of clinical malaria episodes (P. falciparum, 64 clinical episodes; P. vivax, 31 clinical episodes; mixed P. falciparum/P. vivax by LM, 3 clinical episodes), despite lower incidence of new P. falciparum blood-stage clones compared with P. vivax (P. falciparum, 342 new P. falciparum blood-stage clones; P. vivax, 849 new blood-stage clones). Including clinical episodes with mixed infection as determined by LM in the estimates for both species, clinical incidence rate (IR) was 0.28 [0.21–0.35] P. falciparum episodes/year and 0.12 [0.08–0.17] P. vivax episodes/year. At least one new blood-stage clone was detected in 70% (47/67) of samples from P. falciparum and 71% (24/34) of samples from P. vivax clinical episodes. Of these clinical episodes with new blood-stage clones, 96% (45/47) and 83% (20/24) carried only the new but no persistent P. falciparum and P. vivax clones, respectively.
 
 P. vivax clinical episodes occurred mainly in the placebo arm shortly after directly observed treatment (DOT) (Robinson et al., 2015), the time of peak Pv-molFOB due to relapsing hypnozoites (Figure 1A). On an individual level, Pv-molFOB was positively associated with the risk of clinical episodes and each additional blood-stage P. vivax clone increased the risk of experiencing a P. vivax clinical episode slightly (AHR = 1.07 [1.04–1.09], p<0.001; Table 5). No significant differences in P. vivax clinical episode risk were observed between villages after adjusting for individual molFOB. The risk for a P. vivax clinical episode decreased significantly with age (AHR = 0.62 [0.46–0.84], p=0.002; Table 5). This was paralleled by a decrease in P. vivax densities with age (by qPCR, exp(β)=0.90 [0.83–0.98], p=0.016; Supplementary file 3) indicative of more advanced immunity against P. vivax and thus better control of P. vivax densities in older children.
 
+**Table 5.**
+ Multivariable predictors for time to P. vivax and P. falciparum clinical episodes.Model predictions from this model were used for mapping the relative risk of clinical malaria episodes in Figure 3C and D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variable</th>
+      <th colspan="3">P. vivax</th>
+      <th colspan="3">P. falciparum</th>
+    </tr>
+    <tr>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+      <th>AHR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PQ treatment</td>
+      <td>0.76</td>
+      <td>0.34–1.68</td>
+      <td>0.497</td>
+      <td>1.79</td>
+      <td>1.05–3.03</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>P. vivax molFOB‡</td>
+      <td>1.07</td>
+      <td>1.04–1.09</td>
+      <td>&lt;0.001</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+    </tr>
+    <tr>
+      <td>P. falciparum molFOB‡</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>n.a.</td>
+      <td>1.15</td>
+      <td>1.11–1.21</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.62</td>
+      <td>0.46–0.84</td>
+      <td>0.002</td>
+      <td>0.98</td>
+      <td>0.85–1.13</td>
+      <td>0. 799</td>
+    </tr>
+    <tr>
+      <td>LLIN use at enrolment</td>
+      <td>0.84</td>
+      <td>0.24–2.88</td>
+      <td>0.778</td>
+      <td>0.44</td>
+      <td>0.22–0.87</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Hb at enrolment (g/dl)</td>
+      <td>0.95</td>
+      <td>0.74–0.67</td>
+      <td>0.668</td>
+      <td>0.85</td>
+      <td>0.71–1.01</td>
+      <td>0.070</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Albinama (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Amahup</td>
+      <td>0.89</td>
+      <td>0.23–3.46</td>
+      <td>0.871</td>
+      <td>0.65</td>
+      <td>0.20–2.08</td>
+      <td>0.465</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>1.48</td>
+      <td>0.45–4.86</td>
+      <td>0.518</td>
+      <td>1.26</td>
+      <td>0.50–3.14</td>
+      <td>0.626</td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>0.85</td>
+      <td>0.21–3.53</td>
+      <td>0.827</td>
+      <td>1.39</td>
+      <td>0.59–3.30</td>
+      <td>0.455</td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>0.99</td>
+      <td>0.24–4.03</td>
+      <td>0.987</td>
+      <td>1.32</td>
+      <td>0.58–3.03</td>
+      <td>0.508</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>1.00</td>
+      <td>0.23–4.31</td>
+      <td>0.997</td>
+      <td>4.29</td>
+      <td>2.06–8.97</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="7">Infection status at enrolment (by qPCR)</td>
+    </tr>
+    <tr>
+      <td>Uninfected (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P. vivax</td>
+      <td>0.77</td>
+      <td>0.29–2.07</td>
+      <td>0.608</td>
+      <td>1.64</td>
+      <td>0.91–2.95</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>P. falciparum</td>
+      <td>1.74</td>
+      <td>0.59–5.11</td>
+      <td>0.316</td>
+      <td>0.97</td>
+      <td>0.34–2.77</td>
+      <td>0.954</td>
+    </tr>
+    <tr>
+      <td>Mixed P.f. or P.v.</td>
+      <td>1.59</td>
+      <td>0.56–4.50</td>
+      <td>0.381</td>
+      <td>1.24</td>
+      <td>0.57–2.68</td>
+      <td>0.582</td>
+    </tr>
+  </tbody>
+</table>
+
+_* AHRs were modeled using multiple failure Cox proportional hazard regression.† n.a., not applicable‡ Average molFOB until the time of failure (time-varying covariate).PQ: Primaquine; LLIN: long-lasting insecticide-treated net; Hb: haemoglobin._
+
 Patterns in the occurrence of P. falciparum clinical episodes during follow-up were more complex. Between-village variation in P. falciparum clinical episode risk remained significant even after adjusting for individual exposure. This effect was mainly apparent in Numangu, where children were at three- to six-fold higher risk for clinical episodes than children in other villages (Numangu AHR = 4.29 [2.06–8.97], other villages range AHR = 0.65 [0.20–2.08] to 1.39 [0.59–3.30]; Table 5). Overall, Pv-molFOB was positively associated with the risk of clinical episodes and each additional P. falciparum blood-stage clone slightly increased the risk for P. falciparum clinical episodes (AHR = 1.15 [1.11–1.21], p<0.001; Table 5); however, relative to the number of new blood-stage clones, P. falciparum clinical episodes were less frequent in highly exposed children compared to low-exposed children (Figure 4). One clinical episode per three new blood-stage clones was detected in the least exposed children (Pf-molFOB <4 new blood-stage clones/year), but only one clinical episode per 15 blood-stage clones in the highest exposed children (Pf-molFOB >9 new blood-stage clones/year, Fisher’s exact test p<0.001). Age was not associated with the risk of P. falciparum clinical episodes. LLIN use at enrolment was associated with a 56% [13–78%] reduced risk of P. falciparum clinical episodes (p=0.018; Table 5).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23708/elife-23708-fig4-v2.jpg)
 
-**Figure 4.:** P.falciparum (A) and P. vivax (B) clinical episodes relative to molFOB.Mean clinical episode incidence is shown as bars (left axis) and proportion of clinical episode incidence divided by molFOB as connected dots (right axis). Error bars represent 95% CIs. p-values refer to the differences between groups in the proportion of clinical episodes and new infections, assessed by Chi2 or Fisher’s exact test.
+**Figure 4.:** Mean clinical episode incidence is shown as bars (left axis) and proportion of clinical episode incidence divided by molFOB as connected dots (right axis). Error bars represent 95% CIs. p-values refer to the differences between groups in the proportion of clinical episodes and new infections, assessed by Chi2 or Fisher’s exact test.
 
 A higher risk for P. falciparum clinical episodes in children that had received PQ treatment for clearance of P. vivax liver stages was observed (AHR = 1.79 [1.05–3.03], p=0.031; Table 5), suggesting a potential protective effect of P. vivax infections against P. falciparum clinical episodes. Analysis to further explore this revealed that a concurrent or recent infection (i.e., at the same or preceding follow-up visit) with P. vivax reduced the odds of a P. falciparum clinical episode by 65% [22-85%] (p=0.011; Table 6). Further indications for a potential interaction between the two species was also observed when analyzing P. falciparum parasite densities, which were reduced by 55% [19–75%] (p=0.008; Supplementary file 3) in mixed P. falciparum/P. vivax infections compared to P. falciparum single infections, indicative of suppression of one of the species in mixed infections.
+
+**Table 6.**
+ Multivariable predictors for odds of P. falciparum clinical episodes
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">P. falciparum episode</th>
+    </tr>
+    <tr>
+      <th>Variable</th>
+      <th>OR*</th>
+      <th>CI95</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PQ treatment</td>
+      <td>1.42</td>
+      <td>0.80–2.52</td>
+      <td>0.226</td>
+    </tr>
+    <tr>
+      <td>P. vivax qPCR positive†</td>
+      <td>0.35</td>
+      <td>0.15–0.78</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>P. falciparum molFOB‡</td>
+      <td>1.21</td>
+      <td>1.10–1.34</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>0.93</td>
+      <td>0.80–1.09</td>
+      <td>0.370</td>
+    </tr>
+    <tr>
+      <td>LLIN at enrolment</td>
+      <td>0.37</td>
+      <td>0.16–0.83</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Hb (g/dl) at enrolment</td>
+      <td>0.88</td>
+      <td>0.70–1.11</td>
+      <td>0.292</td>
+    </tr>
+    <tr>
+      <td>Village</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Albinama (ref)</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Amahup</td>
+      <td>0.41</td>
+      <td>0.12–1.39</td>
+      <td>0.154</td>
+    </tr>
+    <tr>
+      <td>Balif</td>
+      <td>0.9</td>
+      <td>0.26–3.08</td>
+      <td>0.870</td>
+    </tr>
+    <tr>
+      <td>Balanga</td>
+      <td>1.19</td>
+      <td>0.42–3.39</td>
+      <td>0.747</td>
+    </tr>
+    <tr>
+      <td>Bolumita</td>
+      <td>1.48</td>
+      <td>0.42–5.17</td>
+      <td>0.540</td>
+    </tr>
+    <tr>
+      <td>Numangu</td>
+      <td>4.17</td>
+      <td>1.64–10.58</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td colspan="4">Study Day</td>
+    </tr>
+    <tr>
+      <td>Day 0–80</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Day 81–175</td>
+      <td>0.99</td>
+      <td>0.51–1.91</td>
+      <td>0.972</td>
+    </tr>
+    <tr>
+      <td>Day &gt; 175</td>
+      <td>0.83</td>
+      <td>0.39–1.75</td>
+      <td>0.629</td>
+    </tr>
+  </tbody>
+</table>
+
+_* ORs were modeled using a binomial generalized estimating equation with logit link function using an exchangeable correlation structure.† Determined as P. vivax positive at the same or previous sampling visit.‡molFOB in the follow-up interval (time-varying covariate).PQ: Primaquine; LLIN: long-lasting insecticide-treated net; Hb: haemoglobin._
 
 ## Discussion
 
@@ -121,7 +1247,7 @@ In conclusion, this study provides detailed insight into the changing epidemiolo
 
 ## Materials and methods
 
-## Study design and participants
+### Study design and participants
 
 This study was conducted in six villages in the Albinama and Balif areas, Maprik district, East Sepik Province, PNG between August 2009 and May 2010. The area is serviced by the Albinama health sub-center, Balif aid post and a network of health workers in all study villages. The study design has been described in detail elsewhere (Robinson et al., 2015). Briefly, 524 children aged 5–10 years whose parents provided written informed consent for their participation were enrolled and randomized to receive either chloroquine (CQ, days 1–3, total dose 25 mg/kg), artemeter-lumefantrine (Coartem, AL, days 11–13, 2 mg/kg A, 12 mg/kg L) and primaquine (PQ, days 1–20, 0.5 mg/kg/day); or CQ (days 1–3), AL (days 11–13), and placebo (days 1–20) over 20 days of directly observed treatment (DOT1-20) in a double-blinded manner. Children were actively visited and examined for signs and symptoms of malaria fortnightly at their schools for 8 months. In addition, passive surveillance was provided by the local health centre, aid post and village health workers throughout the study period. Finger-prick blood samples (250 µl) were collected at fortnightly active-follow-up visits in the first 12 weeks and monthly thereafter, as well as from symptomatic children detected during active or passive morbidity surveillance. Symptomatic children were tested for malaria infection with rapid diagnostic test (RDT, CareStartMalaria pLDH/HRP2 Combo, AccessBio, USA), and only RDT and or LM-confirmed Plasmodium infections of any density were treated with a 3 day course of AL.
 
@@ -129,13 +1255,13 @@ Household, village and health facility location data was collected using a handh
 
 The study received ethical clearance from the PNG IMR Institutional Review Board (0908), the PNG Medical Advisory Committee (09.11), the Ethics Committee of Basel 237/11 and was conducted in full concordance with the Declaration of Helsinki. The study was registered on ClinicalTrials.gov (NCT02143934).
 
-## Laboratory methods
+### Laboratory methods
 
 All blood samples were examined by LM and qPCR for detection and speciation of Plasmodium infections as described earlier (Robinson et al., 2015). Each blood slide was read independently by two skilled microscopists and re-read by an expert microscopist in case of discrepancies in positivity, speciation or density (≥2 x log10 difference). Thick blood films were examined by LM for 200 fields (1000x magnification) before being declared parasite-negative. Parasite density was converted from the number of parasites per 200–500 white blood cells (WBC) to parasites/µl assuming 8000 WBC/µl (WHO malaria microscopy training guide) and calculated as the geometric mean of all positive reads.
 
 DNA was extracted from the red blood cell pellet using the FavorPrep 96-well genomic DNA extraction kit (Favorgen). Samples carrying any Plasmodium spp. infection were identified using a generic qPCR (Wampfler et al., 2013) and positives were subsequently tested in species-specific qPCRs (Rosanas-Urgell et al., 2010; Wampfler et al., 2013). All qPCRs targeted the small subunit (18S) ribosomal RNA gene and were performed as simplex (P. vivax and P. falciparum) or duplex qPCR (P. malariae, P. ovale). The concentration of target copies per µl of DNA was determined relative to a dilution row of standard plasmid as previously described (Rosanas-Urgell et al., 2010). The qPCR limit of detection (LOD) was determined using a standard plasmid dilution row and defined as the last point with more than 50% of replicates positive. The LOD was 2 target copies/µl DNA, equaling 4 target copies/reaction, for all qPCRs. All samples that crossed the fluorescence threshold were scored as positive for species-specific qPCRs. In all samples positive in P. falciparum and/or P. vivax qPCRs, individual parasite clones were distinguished by genotyping the length-polymorphic Pf-msp2 or Pv-msp1F3 marker genes using capillary electrophoresis for highly precise fragment sizing (Koepfli et al., 2013; Koepfli et al., 2011; Falk et al., 2006; Schoepflin et al., 2009). MOI was determined by counting the number of detected Pf-msp2 or Pv-msp1F3 alleles per sample. molFOB was calculated from the number of new parasite clones detected per child or per sampling interval in the peripheral blood, divided by the individual time at risk or length of the interval. A new infection was defined as a Pf-msp2 or Pv-msp1F3 allele not present in the two preceding genotyping-positive samples collected during active or passive surveillance (Figure 1—figure supplement 1). Imperfect diagnostic detectability was not further adjusted for.
 
-## Statistical analysis
+### Statistical analysis
 
 Children were considered at risk for clinical malaria clinical episodes until the end of the study or until they were censored (on the last visit before two consecutively missed scheduled follow-up visits [Robinson et al., 2015]). For clinical endpoints, time-at-risk (TAR) was not further adjusted for interim missed follow-up visits because the intense active and passive case detection presumably led to detection of all malaria clinical episodes. In contrast, TAR for analysis of molecular data (e.g., molFOB) was reduced by the duration of the missed interval if a child was not seen by the study team for six weeks or more (≥42 days). Children with a TAR of less than 3 months (<84 days) were excluded. This resulted in an analyzed population of 466 children (characterized in Table 1) of which 430 (92.3%) completed the whole follow-up period, with a median of 15 (IQR: 13–17) study contacts and mean TAR of 186 days (IQR 168–223 days).
 

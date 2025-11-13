@@ -13,11 +13,27 @@
 
 ## Abstract
 
-In bilaterians and cnidarians, epithelial cell-polarity is regulated by the interactions between Par proteins, Wnt/PCP signaling pathway, and cell-cell adhesion. Par proteins are highly conserved across Metazoa, including ctenophores. But strikingly, ctenophore genomes lack components of the Wnt/PCP pathway and cell-cell adhesion complexes raising the question if ctenophore cells are polarized by mechanisms involving Par proteins. Here, by using immunohistochemistry and live-cell imaging of specific mRNAs, we describe for the first time the subcellular localization of selected Par proteins in blastomeres and epithelial cells during the embryogenesis of the ctenophore Mnemiopsis leidyi . We show that these proteins distribute differently compared to what has been described for other animals, even though they segregate in a host-specific fashion when expressed in cnidarian embryos. This differential localization might be related to the emergence of different junctional complexes during metazoan evolution.
+In bilaterians and cnidarians, epithelial cell-polarity is regulated by the interactions between Par proteins, Wnt/PCP signaling pathway, and cell-cell adhesion. Par proteins are highly conserved across Metazoa, including ctenophores. But strikingly, ctenophore genomes lack components of the Wnt/PCP pathway and cell-cell adhesion complexes raising the question if ctenophore cells are polarized by mechanisms involving Par proteins. Here, by using immunohistochemistry and live-cell imaging of specific mRNAs, we describe for the first time the subcellular localization of selected Par proteins in blastomeres and epithelial cells during the embryogenesis of the ctenophore Mnemiopsis leidyi. We show that these proteins distribute differently compared to what has been described for other animals, even though they segregate in a host-specific fashion when expressed in cnidarian embryos. This differential localization might be related to the emergence of different junctional complexes during metazoan evolution.
 
 ## Introduction
 
 In bilaterians and cnidarians, a polarized epithelium is classically defined as a group of polarized cells joined by belt-like cell-cell junctions and supported by a basement membrane (Magie and Martindale, 2008; St Johnston and Sanson, 2011; Thompson, 2013; Ohno et al., 2015; Salinas-Saavedra et al., 2015). While the asymmetric cortical distribution of the Wnt Planar Cell Polarity (PCP) pathway components polarizes the cells along the tissue plane, the asymmetric cortical distribution of Par system components polarizes the cells along the apical-basal axis (St Johnston and Sanson, 2011; Thompson, 2013; Gumbiner and Kim, 2014; Besson et al., 2015; Yang and Mlodzik, 2015; Ahmed and Macara, 2016; Aigouy and Le Bivic, 2016; Butler and Wallingford, 2017; Davey and Moens, 2017; Salinas-Saavedra et al., 2015; Fanto and McNeill, 2004; St Johnston and Ahringer, 2010; Cha et al., 2011; Kumburegama et al., 2011; Nance and Zallen, 2011; Momose et al., 2012; Wallingford, 2012). The mechanisms that organize cell-polarity are highly conserved in all animals that have been studied and most likely been present in the most recent common ancestor (MRCA) of Cnidaria and Bilateria (Thompson, 2013; Salinas-Saavedra et al., 2015; Kumburegama et al., 2011; Momose et al., 2012; Fahey and Degnan, 2010; Ragkousi et al., 2017; Salinas-Saavedra et al., 2018; Belahbib et al., 2018; Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig1-v3.jpg)
+
+**Figure 1.:** (A) Three major evolutionary steps (left side) that might have changed the organization of cell polarity in the Metazoa. The diagram (right side) depicts the subcellular asymmetric localization of Par proteins in Cnidaria and Bilateria. However, there are no previous descriptions available for ctenophore cells. (B) The stereotyped early development of M. leidyi.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Trees were constructed using MrBayes (v3.2.6 × 64) and consisted of 2,000,000 generations using ‘mixed’ models. Maximum-likelihood tree bootstraps were based on 100 replicates. Aq: Amphimedon queenslandica; Cel: Caenorhabditis elegans; Ct: Capitella teleta; Dmel: Drosophila melanogaster; Dre: Danio rerio; Hs: Homo sapiens; Ml: Mnemiopsis leidyi; Mm: Mus musculus; Nv: Nematostella Vectensis; Sp: Strongylocentrotus purpuratus; Xla: Xenopus laevis. See also Fahey and Degnan, 2010 and Belahbib et al., 2018.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Protein domains were predicted by Geneious software using Pfam and SMART databases. Aq: Amphimedon queenslandica; Cel: Caenorhabditis elegans; Ct: Capitella teleta; Dmel: Drosophila melanogaster; Dre: Danio rerio; Hs: Homo sapiens; Ml: Mnemiopsis leidyi; Mm: Mus musculus; Nv: Nematostella Vectensis; Sp: Strongylocentrotus purpuratus; Xla: Xenopus laevis. See also references Belahbib et al., 2018 and Fahey and Degnan, 2010 .
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Protein domains were predicted by Geneious software using Pfam and SMART databases. Aq: Amphimedon queenslandica; Cel: Caenorhabditis elegans; Ct: Capitella teleta; Dmel: Drosophila melanogaster; Dre: Danio rerio; Hs: Homo sapiens; Ml: Mnemiopsis leidyi; Mm: Mus musculus; Nv: Nematostella Vectensis; Sp: Strongylocentrotus purpuratus; Xla: Xenopus laevis. See also references Fahey and Degnan, 2010 and Belahbib et al., 2018.
 
 Interestingly, ctenophores or comb jellies, whose position at the base of metazoan tree is still under debate (Dunn et al., 2008; Hejnol et al., 2009; Ryan et al., 2013; Moroz et al., 2014; Whelan et al., 2017), (Simion et al., 2017), (Feuda et al., 2017), possess a stereotyped development (Figure 1B) and do not have the genes that encode the components of the Wnt/PCP pathway in their genomes (Ryan et al., 2013). Thus, the study of the subcellular organization of the Par system components in ctenophores is important to understand the evolution of tissue organization in Metazoa.
 
@@ -27,25 +43,121 @@ This mechanism is deployed in bilaterian cells to establish embryonic and epithe
 
 ## Results
 
-## MlPar-6 gets localized to the apical cortex of cells during early M. leidyi development
+### MlPar-6 gets localized to the apical cortex of cells during early M. leidyi development
 
 We characterized the subcellular localization of the MlPar-6 protein during early M. leidyi development by using our specific MlPar-6 antibody (Figure 2 and Figure 2—figure supplements 1–6). Although MlPar-6 immunoreactivity can be detected in the periphery of the entire cell, in all of over 100 specimens examined, its expression appears to be polarized to the animal cortex (determined by the position of the zygotic nucleus; Figure 2A and Figure 2—figure supplements 8–10) of the single cell zygote and to the apical (animal) cell cortex during every cleavage stage (Figure 2 and Figure 2—figure supplement 3). At the cortex, MlPar-6 localizes to cell-contact-free regions facing the external media (Figure 2C). Gradually through the next three hours of development, MlPar-6 becomes localized to the position of cell-cell contacts by 60 cell stage onwards (Figure 2—figure supplements 3E–G and 4). During gastrulation (3–7 hpf; Figure 2D and Figure 2—figure supplements 3–4), MlPar-6 is not localized in cells undergoing cellular movements including the oral (four hpf; Figure 2—figure supplement 3G) and aboral ectoderm (5–6 hpf; Figure 2D) undergoing epibolic movements, syncytial endoderm, and mesenchymal ‘mesoderm’ (quotation marks its debatable homology). However, this protein remains polarized in ‘static’ ectodermal cells remaining at the animal pole (blastopore) and vegetal pole (4–7 hpf; Figure 2—figure supplements 3F–J and 4). By the end of gastrulation (8–9 hpf; Figure 2E), MlPar-6 becomes localized asymmetrically to the apical cortex of the ectodermal epidermal cells and the future ectodermal pharyngeal cells that start folding inside the blastopore (Figure 2E and Figure 2—figure supplement 5A–C). Interestingly, we do not observe a clear cortical localization in later cydippid stages, and the antibody signal is weaker after 10 hpf in juveniles (Figure 2F). Contrary to expectations, at these later stages, MlPar-6 is cytosolic and does not localize in the cortex of epidermal cells, and a few epithelial and mesenchymal cells showed nuclear localization (Figure 2F). Thereafter, MlPar-6 remains cytosolic in all scored stages up to 24 hpf (Figure 2—figure supplement 6). Cytosolic and nuclear localization of Par-6 has been reported in other organisms when the polarizing roles of this protein are inactive (Mizuno et al., 2003; Johansson et al., 2000; Cline and Nelson, 2007). Thus, our data suggest that MlPar-6 does not play a role in cell polarity during juvenile cydippid stages. These patterns of apical localization seem not to be affected by the cell cycle (Figure 2—figure supplements 8–11). Further work is required to assess the relationship between cell cycle and the localization of these proteins.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-v3.jpg)
+
+**Figure 2.:** Immunostaining against MlPar-6 protein shows that this protein localizes asymmetrically in the cell cortex of the eggs (A) and in the cell-contact-free regions of cleavage stages (B–C; white arrows). White circle in C indicates the lack of signal in the cell-contact region. Yellow arrowhead indicates the zygotic nucleus in A. a’ is a magnification of the section depicted in (B) the first cleavage. (D–F): b’ to i’ correspond to magnifications of the regions depicted for each stage. (D) 5–6 hpf, MlPar-6 protein localizes to the apical cortex of the ectodermal cells (Ecto) but is absent from endodermal (Endo) and ‘mesodermal’ (‘Meso’) cells. White arrowhead indicates MlPar-6 protein in regions of cell-contact. Yellow arrowheads indicate the absence of cortical localization. (E) Until 9 hpf, MlPar-6 protein localizes to the apical cortex of the ectoderm (white arrows) and pharynx (white arrowhead) but it is not cortically localized after 10 hpf (F; Yellow arrowheads indicate nuclear localization). Images are maximum projections from a z-stack confocal series. The 8 cell stage corresponds to a single optical section. Orientation axes are depicted in the Figure: Animal/oral pole is to the top. Morphology is shown by DAPI and Tubulin immunostainings. See Figure 2—figure supplements 1–11 for expanded developmental stages. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cleavage stages and (B) gastrulation. Animal pole is to the top. Ectoderm is colored in grey. Endoderm and ‘mesoderm’ are colored in yellow and red, respectively. Blue arrows depict gastrulation movements in (B). For simplicity, most of the cell boundaries are not depicted.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Genome searches of M. leidyi showed that there is only a single copy for both Par-6 (MlPar-6) and Par-1 (MlPar-1) genes and they express through development in the transcriptome of M. leidyi (Babonis, 2018; Levin et al., 2016). (A) Western blots of M. leidyi adult tissue extracts using specific antibodies (rabbit polyclonal affinity-purified; Bethyl labs, Inc) against MlPar-6 and MlPar-1. Pre-adsorption of the antibodies with a tenfold excess of the antigen peptide resulted in the elimination of the staining of the appropriate-sized single band for MlPar-6 and MlPar-1. Arrowheads indicate the molecular weight in KD (MlPar-6: predicted size 33.3 KD and MlPar-1: predicted size 84.7 KD). A red arrow indicates the single band recognized by the antibody for each protein. See Figure 2—figure supplement 12 for the full lanes and input lysate staining. (B) Negative control without the rabbit primary antibody shows that there is no inherent autofluorescence. (C) Whole-mount immunohistochemistry pre-adsorption experiments show that the staining pattern was strongly mitigated in early embryos when pre-incubated antibodies against MlPar-6 and MlPar-1 with the respective peptide. Thus, both antibodies are specific to their intended targets and provide robust reagents to determine the subcellular localization of these proteins during M. leidyi embryogenesis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A–E) Immunostaining against MlPar-6 during cleavage stages of M. leidyi development complimentary to Figure 2. (A–D) MlPar-6 protein localizes to the apical cortex (white arrows) until the 60 cell-stage (E) where its signal was detected in regions of cell-cell contact (white arrowhead). During 3 to 4 hpf (F–G), MlPar-6 protein localizes to the apical cortex (white arrows) but it is not localized in cells undergoing cellular movements. (H) Magnification of the region H depicted in 60 cell-stage. (I–J) Vegetal views of MlPar-6 localization during 3 and 4 hpf. Morphology is shown by DAPI and Tubulin immunostainings. Yellow arrows indicate nuclear localization. Yellow arrowheads indicate the absence of cortical localization. Images are maximum projections from a z-stack confocal series. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Complimentary to Figure 2. MlPar-6 protein localizes to the apical cortex of the ectodermal cells (Ecto) but is absent from endodermal (Endo) and ‘mesodermal’ (‘Meso’) cells. 5 to 7 hpf (A–D): MlPar-6 protein localizes to the apical cortex of the ectoderm (white arrows). Images are maximum projections from a z-stack confocal series. 6 hpf embryo (C) corresponds to a single optical section from a z-stack confocal series. a’ to h’ correspond to the magnifications of the regions depicted for each stage. The axial orientation in each panel is animal pole up. Morphology is shown by DAPI and Tubulin immunostainings. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** Complimentary to Figure 2. (A–C) Immunostaining against MlPar-6 shows that MlPar-6 protein localizes to the apical cortex (white arrows) until nine hpf. 8–9 hpf images in (A) and (C) are single optical sections from a z-stack confocal series. a’ to f’ correspond to the magnifications of the regions depicted for each stage. Orientation is depicted in (A): Animal/oral pole is to the top. Morphology is shown by DAPI and tubulin immunostainings. Yellow arrowheads indicate the absence of cortical localization in (A) and nuclear localization (C). (D–H) in vivo localization of MlPar6-mVenus during different stages of M. leidyi development. The overexpression of MlPar6-mVenus protein displays similar patterns observed with the antibody staining against the same protein; no cortical localization was observed after 10 hpf (H). All images are maximum projections from a z-stack confocal series. Orientation is animal/oral pole to the top. Morphology is shown by DIC microscopy. White arrows indicate MlPar6-mVenus protein cortical localization. Yellow arrowheads indicate the absence of cortical localization and cytosolic aggregation. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** The distribution of MlPar-6 in juvenile epithelium is nuclear and cytosolic during later stages. Neither asymmetrical nor cortical localization was observed. a’ and b’ correspond to the magnifications of the regions depicted. Morphology is shown by DIC, DAPI, and tubulin immunostainings. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** (A) Depiction of the measurement direction during early stages. 0 is the vegetal pole and one is the animal pole in a’ (Figure 2—figure supplements 8–10). 0 and 1 in b’ are arbitrary along the apical cortex (Figure 2—figure supplement 11). The drop in the signal observed for earliest stages in Figure 2—figure supplements 8 and 11 corresponds to the space outside of the focal plane (green star; a’) and the space between cleavage furrow (blue star; b’), respectively. (B) Depiction of the measurement direction during later stages. 0 is basal and 1 is the apical in a’. 0 and 1 in b’ are arbitrary along the apical cortex.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Fluorescent intensity (Y axis) was measured along the vegetal/animal and basal/apical axes (X axis) for the developmental stages reported in Figure 2 and Figure 2—figure supplements 1–6. All measured cells display apical localization of MlPar-6 until 10hpf where its intensity is uniform (Figure 2—figure supplement 10). These measurements correspond to cells in undergoing through interphase and metaphase. Numerical data can be found in Figure 2—figure supplement 8—source data 1.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp9-v3.jpg)
+
+**Figure 2—figure supplement 9.:** The distribution of the MlPar-6 antibody signal was obtained by plotting Fluorescent intensity data from Figure 2—figure supplement 8 (Y axis) in intervals along the vegetal/animal and basal/apical axes (X axis) for the developmental stages reported. Means and SEM are depicted in the figure. Numerical data can be found in Figure 2—figure supplement 9—source data 1.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp10-v3.jpg)
+
+**Figure 2—figure supplement 10.:** Different MlPar-6 localization between basal and apical cortex for each stage represented in Figure 2 and Figure 2—figure supplement 8. Median, 95% CI, and P values are depicted in the figure. Numerical and statistical data can be found in Figure 2—figure supplement 10—source data 1.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp11-v3.jpg)
+
+**Figure 2—figure supplement 11.:** Fluorescent intensity (Y axis) was measured along the apical axis (X axis) for cells undergoing through anaphase and telophase, during the developmental stages reported in Figure 2 and Figure 2—figure supplements 1–6. All measured cells display uniform apical localization of MlPar-6. During cleavage stages MlPar-6 signal display higher intensity in the cleavage furrow and cell-cell contact region of 60 cell-stage (middle points along the X axis). Unfortunately, we did not have enough telophase replicates to show statistical significance of these observations. Numerical data can be found in Figure 2—figure supplement 11—source data 1.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig2-figsupp12-v3.jpg)
+
+**Figure 2—figure supplement 12.:** (A) Coomassie stained gel of the full input lysate. (B) Full Western blot lanes for the MlPar-6 and MlPar-1 antibodies sections shown in Figure 2—figure supplement 2.
+
 Similar results were obtained when we overexpressed the mRNA encoding for MlPar-6 fused to mVenus (MlPar-6-mVenus) and recorded the in vivo localization of the protein in M. leidyi embryos (Figure 2—figure supplement 5D–H). Translated MlPar-6-mVenus was observed approximately 4 hr post injection into the uncleaved egg so localization during early cleavage stags was not possible. However, during gastrulation, MlPar-6-mVenus localizes to the apical cell cortex and displays enrichment at the level of cell-cell contacts (Figure 2—figure supplement 5D–F). As we observed by antibody staining, this cortical localization is no longer observable during the cell movements associated with gastrulation and MlPar-6-mVenus remains cytosolic (Figure 2—figure supplement 5D bottom). After eight hpf, MlPar-6-mVenus localizes to the apical cortex of ectodermal epidermal and pharyngeal cells but is not observable in any other internal tissue (Figure 2—figure supplement 5G). After 10 hpf, MlPar-6-mVenus remains in the cytosol and no cortical localization was detectable (Figure 2—figure supplement 5H). Microinjection and mRNA expression in ctenophores is really challenging. For the first time, we have overexpressed fluorescent-tagged proteins for in vivo imaging. In spite of the low number of replicates (see Materials and methods), our results are consistent with the antibody observations presented above.
 
-## MlPar-1 remains cytoplasmic during early M. leidyi development
+### MlPar-1 remains cytoplasmic during early M. leidyi development
 
 In bilaterians and cnidarians, the apical localization of MlPar-6 induces the phosphorylation of MlPar-1, displacing this protein to basolateral cortical regions (Ohno et al., 2015; Salinas-Saavedra et al., 2015; Ragkousi et al., 2017; Salinas-Saavedra et al., 2018). Using our specific MlPar-1 antibody, we characterized the subcellular localization of the MlPar-1 protein during the early M. leidyi development (Figure 3 and all its supplements). Even though MlPar-1 appears to be localized in the cortex at the cell-contact regions of early blastomeres and gastrula stages (Figure 3D–E), this antibody signal was not clear enough to be discriminated from the cytosolic distribution, possibly due to edge effects. Nevertheless, and strikingly, MlPar-1 remains as punctate aggregations distributed uniformly in the cytosol, and in some cases, co-distributes with chromosomes during mitosis (Figure 3 and Figure 3—figure supplement 2). We did not observe asymmetric localization of MlPar-1 in the cell cortex of M. leidyi embryos at any of the stages described above for MlPar-6.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-v3.jpg)
+
+**Figure 3.:** Immunostaining against MlPar-1 protein shows that this protein remains cytoplasmic during early cleavage stages (A–D). MlPar-1 protein appears as punctate aggregations distributed uniformly in the cytosol (white arrows). Yellow arrowhead indicates the zygote nucleus in (A). 8 cell-stage (D): A single optical section from a z-stack confocal series. MlPar-1 appears to be localized in the cortex at the cell-contact regions but this antibody signal was similar to its cytosolic distribution. (E–G) Between 5 and 11 hpf, MlPar-1 protein remains as punctate aggregations distributed uniformly in the cytosol (white arrows). a’ to f’ correspond to the magnifications of the regions depicted for each stage. (E) MlPar-1 appears to be localized in the cortex at the cell-contact regions (white arrowheads) but this antibody signal was similar to its cytosolic distribution. (F) MlPar-1 protein remains cytoplasmic in ectodermal cells (Ecto; c’), endodermal (Endo; d’), and ‘mesodermal’ (‘Meso’) cells. Images are maximum projections from a z-stack confocal series. Sagittal view of an 8–9 hpf embryo corresponds to a single optical section from a z-stack confocal series. Orientation axes are depicted in the figure. Morphology is shown by DAPI and tubulin immunostainings. The animal pole is towards the top. Scale bars: 20 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cleavage stages and (B) gastrulation. (B) Ectoderm is colored in grey. Endoderm and ‘mesoderm’ are colored in yellow and red, respectively. Animal pole is to the top. For simplicity, most of the cell boundaries are not depicted.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Immunostaining against MlPar-1 during cleavage stages of M. leidyi development shows that MlPar-1 protein appears as punctate aggregations distributed uniformly in the cytosol (white arrows). White arrowheads indicate nuclear localization. (E–H) Between 3 hpf and 7 hpf, MlPar-1 protein remains as punctate aggregations distributed uniformly in the cytosol (white arrows). (E–G) MlPar-1 appears to be localized in the cortex at the cell-contact regions (white arrowheads) but this antibody signal was similar to its cytosolic distribution. Images are maximum projections from a z-stack confocal series. (E–H): a’ to d’ correspond to the magnifications of the regions depicted for each stage. Morphology is shown by DAPI and tubulin immunostainings. Yellow arrowheads indicate nuclear localization in (F). The animal pole is towards the top. Scale bars: 20 µm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A–C) MlPar-1 protein remains as punctate aggregations distributed uniformly in the cytosol (white arrows). Images are maximum projections from a z-stack confocal series. a’ and b’ correspond to the magnifications of the regions depicted for each stage. Morphology is shown by DAPI and tubulin immunostainings. The animal pole is to the top. Scale bars: 20 µm. (D–G) The overexpression of MlPar1-mCherry protein displays similar patterns observed with the antibody staining against the same protein, with no cortical localization observed after four hpf. White arrows indicate MlPar-1-mCherry protein cytosolic aggregates. White arrowhead indicates MlPar-1-mCherry protein aggregates in the tentacle apparatus. All images are maximum projections from a z-stack confocal series. Orientation of axes are depicted in the Figure.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** The distribution of MlPar-1 in juvenile epithelium is cytosolic during later stages, similar to Figure 3—figure supplement 3F–G. Neither asymmetrical nor cortical localization was observed. a’ and b’ correspond to the magnifications of the regions depicted Morphology is shown by DIC, DAPI, and tubulin immunostainings. Scale bars: 20 µm.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp5-v3.jpg)
+
+**Figure 3—figure supplement 5.:** Fluorescent intensity (Y axis) was measured along the basal/apical axes (X axis) for the developmental stages reported in Figure 3. Numerical data can be found in Figure 3—figure supplement 5—source data 1 and 2. Median, 95% CI, and P values are depicted in the figure.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig3-figsupp6-v3.jpg)
+
 These results were also supported in vivo when we overexpressed the mRNA encoding for MlPar-1 fused to mCherry (MlPar-1-mCherry) into M. leidyi embryos by microinjection (Figure 3—figure supplement 3). Similar to MlPar-6-mVenus mRNA overexpression, the MlPar-1-mCherry translated protein was observed after 4 hr post injection into the uncleaved egg. Our in vivo observations on living embryos confirm the localization pattern described above by using MlPar-1 antibody at gastrula stages. MlPar-1-mCherry localizes uniformly and form aggregates in the cytosol during gastrulation (4–5 hpf; Figure 3—figure supplement 3D–E and Video 1). This localization pattern remains throughout all recorded stages until cydippid juvenile stages where MlPar-1-mCherry remains cytosolic in all cells but is highly concentrated in the tentacle apparatus and underneath the endodermal canals (24 hpf; Figure 3—figure supplement 3F–G, Figure 3—figure supplement 4, and Video 2).
 
-## MlPar-6 and MlPar-1 Proteins can localize like host proteins localize in a heterologous system
+![Video 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-video1.mp4.jpg)
+
+**Video 1.:** 2.5 min in vivo recording of a gastrula embryo at 40x.
+
+![Video 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-video2.mp4.jpg)
+
+### MlPar-6 and MlPar-1 Proteins can localize like host proteins localize in a heterologous system
 
 To discount the possibility that the observations recorded in vivo for both MlPar-6-mVenus and MlPar-1-mCherry proteins are caused by a low-quality mRNA or lack of structural conservation, we overexpressed each ctenophore mRNA into embryos of the cnidarian Nematostella vectensis and followed their localization by in vivo imaging (Figure 4). In N. vectensis embryos, MlPar-6-mVenus and MlPar-1-mCherry symmetrically distribute during early cleavage stages (Figure 4A and C) and both proteins localize asymmetrically only after blastula formation (Figure 4B and D). In these experiments, both MlPar-6-mVenus and MlPar-1-mCherry translated proteins display the same pattern as the previously described endogenous N. vectensis Par-6 and Par-1 proteins (Salinas-Saavedra et al., 2015). These data suggest that the protein structure of ctenophore MlPar-6 and MlPar-1 contains the necessary information to localize as other bilaterians proteins do.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig4-v3.jpg)
+
+**Figure 4.:** The translated exogenous proteins display the same pattern than the previously described for endogenous N. vectensis proteins (A–D). White arrowheads indicate MlPar6-mVenus and MlPar1-mCherry cortical localization (B and D). All images are a single slice from a z-stack confocal series. (E) Graphical depiction of fluorescence intensity measurements between basal and apical cortex. The diagram at the left shows the direction of the measurements represented in this figure and in Figure 4—figure supplement 2. Median, 95% CI, and P values are depicted in the figure.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Diagram depicting the evolution of different interactions between known signaling pathways that organize cell polarity in animal cells (see references), including the new information obtained by this study during the early development of the ctenophore M. leidyi. Our results challenge the conception of a deep homology of the epithelial organization and the establishment of the apicobasal cell polarity in Metazoa.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54927/elife-54927-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Fluorescent intensity (Y axis) was measured along the basal/apical axes (X axis) for the developmental stages reported in Figure 4. All measured cells display asymmetric localization of MlPar-6-mVenus and MlPar-1-mCherry during later stages. Median, 95% CI, and P values are depicted in the figure. Numerical data can be found in Figure 4—figure supplement 2—source data 1 and 2.
+
 ## Discussion
 
-## Par protein asymmetry is established early but not maintained during M. leidyi embryogenesis
+### Par protein asymmetry is established early but not maintained during M. leidyi embryogenesis
 
 The asymmetric localization of the Par/aPKC complex has been used as an indicator of apical-basal cell polarity in a set of animals, including bilaterians (Ohno et al., 2015; Salinas-Saavedra et al., 2015; Besson et al., 2015; Yang and Mlodzik, 2015; Goldstein and Macara, 2007; Munro and Bowerman, 2009; Doerflinger et al., 2010; Chan and Nance, 2013; Lang and Munro, 2017; Mizuno et al., 2003; Kemphues et al., 1988; Etienne-Manneville and Hall, 2003; Vinot et al., 2005; Lee et al., 2007; Martindale and Hejnol, 2009; Martindale and Lee, 2013; Chalmers et al., 2005; Hayase et al., 2013) and a cnidarian (Salinas-Saavedra et al., 2015; Ragkousi et al., 2017). While in the studied bilaterians this asymmetry is established and maintained since the earliest stages of development (Munro and Bowerman, 2009; Lang and Munro, 2017; Zhu et al., 2017; Nance, 2014; Hoege and Hyman, 2013; Von Stetina and Mango, 2015), in the cnidarian N. vectensis there is no early asymmetrical localization of any of the Par components (Salinas-Saavedra et al., 2015; Ragkousi et al., 2017) and embryonic polarity is controlled by the Wnt signaling system (Kumburegama et al., 2011; Wikramanayake et al., 2003; Lee et al., 2007; Martindale and Hejnol, 2009; Martindale and Lee, 2013). In spite of these differences, once epithelial tissues form and epithelial cell-polarity is established in both bilaterian and cnidarian species, the asymmetric localization of Par proteins become highly polarized and is maintained through development. In those cases, Par-mediated apicobasal cell polarity is responsible for the maturation and maintenance of cell-cell adhesion in epithelial tissue (Ohno et al., 2015; Salinas-Saavedra et al., 2018). We have suggested that the polarizing activity of the Par system was already present in epithelial cells of the MRCA between Bilateria and Cnidaria (Salinas-Saavedra and Martindale, 2018; Salinas-Saavedra and Martindale, 2018) and could be extended to all Metazoa, where these proteins are present (including ctenophores, sponges, and placozoans Fahey and Degnan, 2010; Belahbib et al., 2018).
 
@@ -55,7 +167,7 @@ The components of the ctenophore MlPar/aPKC complex (MlPar-3/MlaPKC/MlPar-6 and 
 
 Recent studies have shown that ctenophores do not have homologs for any of the Crb complex components (Belahbib et al., 2018), required for the proper stabilization of the CCC and Par/aPKC complex in other studied taxa (Ohno et al., 2015; Harris and Peifer, 2004; Tepass, 2012; Chalmers et al., 2005; Hayase et al., 2013; Whitney et al., 2016). The lack of MlPar-6 (Figure 2) polarization during later stages is totally congruent with these observations, indicating that Par proteins in ctenophores do not have the necessary interactions to stabilize apico-basal cell polarity in their cells as in other animals. In addition, ctenophore species do not have the molecular components to form SJs and lack a Scribble homolog (Belahbib et al., 2018; Ganot et al., 2015). This could explain the cytosolic localization of MlPar-1 during the observed stages (Benton and St Johnston, 2003; Iden and Collard, 2008; Humbert et al., 2015; Bilder et al., 2000; Vaccari et al., 2005), (Bonello et al., 2019).
 
-## Evolution of cell polarity and epithelial structure in metazoa
+### Evolution of cell polarity and epithelial structure in metazoa
 
 Given the genomic conservation of cell-polarity components in the Bilateria and Cnidaria, we propose to classify their epithelium as ‘Par-dependent’ to include its mechanistic regulatory properties. That is, the structural properties of a ‘Par-dependent’epithelium are the result of conserved interactions between subcellular pathways that polarize epithelial cells. Thus, when we seek to understand the origins of the epithelial nature of one particular tissue, we are trying to understand the synapomorphies (shared derived characters) of the mechanisms underlying the origin of that particular tissue. Under this definition, a ‘Par-dependent epithelium’ may have a single origin in Metazoa, but, different mechanisms might have co-opted to generate similar epithelial morphologies (Figure 4—figure supplement 1). Ctenophore epithelia, along with other recent works in N. vectensis endomesoderm (Salinas-Saavedra et al., 2015; Salinas-Saavedra et al., 2018) and Drosophila midgut (Chen et al., 2018), suggest this possibility. In all these cases, epithelial cells are highly polarized along the apical-basal axis, but this polarization does not depend on Par proteins. Therefore, these cells are not able to organize a ‘Par-dependent epithelium’ (mechanistic definition) but still polarized epithelial morphologies.
 
@@ -65,29 +177,158 @@ In conclusion, regardless the phylogenetic position of the Ctenophora, the conse
 
 ## Materials and methods
 
-## Culture and spawning of M. leidyi
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse Anti-alpha-Tubulin Monoclonal Antibody, Unconjugated, Clone DM1A</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9026; RRID:AB_477593</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MlPar-6 custom peptide antibody produced in rabbit</td>
+      <td>Bethyl labs; This study</td>
+      <td></td>
+      <td>Stored at MQ Martindale's lab; (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MlPar-1 custom peptide antibody produced in rabbit</td>
+      <td>Bethyl labs; This study</td>
+      <td></td>
+      <td>Stored at MQ Martindale's lab; (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG Secondary Antibody, Alexa Fluor 568</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11004; RRID:AB_2534072</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG Secondary Antibody, Alexa Fluor 647</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-21245; RRID:AB_2535813</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI (4',6-Diamidino-2-Phenylindole, Dihydrochloride)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1306; RRID:AB_2629482</td>
+      <td>(0.1 µg/µl)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Alexa Fluor 488; 10,000 MW, Anionic, Fixable</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D22910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Alexa Fluor 555; 10,000 MW, Anionic, Fixable</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D34679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Alexa Fluor 647; 10,000 MW, Anionic, Fixable</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D22914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran, Cascade Blue, 10,000 MW, Anionic, Lysine Fixable</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mlpar-6: F-GTACTGTGCTGTGTGTTTGGA; R- GTACTGTGCTGTGTGTTTGGA</td>
+      <td>Mnemiopsis Genome Project - NIH-NHGRI</td>
+      <td>MLRB351777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mlpar-1: F- ATGTCAAATTCTCAACACCAC; R- CAGTCTTAATTCATTAGCTATGTTA</td>
+      <td>Mnemiopsis Genome Project - NIH-NHGRI</td>
+      <td>MLRB182569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSPE3-mVenus</td>
+      <td>Roure et al., 2007</td>
+      <td></td>
+      <td>Gateway vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSPE3-mCherry</td>
+      <td>Roure et al., 2007</td>
+      <td></td>
+      <td>Gateway vector</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>NIH</td>
+      <td>http://fiji.sc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris 7.6.4</td>
+      <td>Bitplane Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Culture and spawning of M. leidyi
 
 Spawning, gamete preparation, fertilization and embryo culturing of M. leidyi at the Whitney Laboratory for Marine Bioscience of the University of Florida (USA)embryos was performed as previously described (Salinas-Saavedra and Martindale, 2018).
 
-## Western blot
+### Western blot
 
 Western blots were carried out as described (Salinas-Saavedra et al., 2015; Salinas-Saavedra et al., 2018) using adult epithelial tissue lysates dissected by hand in order to discard larger amount of mesoglea. Antibody concentrations for Western blot were 1:1000 for all antibodies tested.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 All immunohistochemistry experiments were carried out using the previous protocol for M. leidyi (Salinas-Saavedra and Martindale, 2018). The primary antibodies and concentrations used were: mouse anti-alpha tubulin (1:500; Sigma-Aldrich, Inc Cat.# T9026. RRID:AB_477593). Secondary antibodies are listed in the Key Resources table. Rabbit anti-MlPar-6, and rabbit anti-MlPar-1 antibodies were custom made high affinity-purified peptide antibodies that commercially generated by Bethyl labs, Inc (Montgomery, TX, USA). Affinity-purified M. leidyi anti-Par-6 (anti-MlPar-6) and anti-Par-1 (anti-MlPar-1) peptide antibodies were raised against a selected amino acid region of the MlPar-6 protein (MTYPDDSNGGSGR) and MlPar-1 protein (KDIAVNIANELRL), respectively. Blast searches against the M. leidyi genome sequences showed that the amino acid sequences were not present in any predicted M. leidyi proteins other than the expected protein. Both antibodies are specific to M. leidyi proteins (Figure 2—figure supplement 2) and were diluted 1:100.
 
-## mRNA microinjections
+### mRNA microinjections
 
 The coding region for each gene of interest was PCR-amplified using cDNA from M. leidyi embryos and cloned into pSPE3-mVenus or pSPE3-mCherry using the Gateway system (Roure et al., 2007). To confirm the presence of the transcripts during M. leidyi development, we cloned each gene at 2 hpf and 48 hpf. N. vectensis eggs were injected directly after fertilization as previously described (Salinas-Saavedra et al., 2015; DuBuc et al., 2014; Layden et al., 2013) with the mRNA encoding one or more proteins fused in frame with reporter fluorescent protein (N-terminal tag) using an optimized final concentration of 300 ng/µl for each gene. Fluorescent dextran was also co-injected to visualize the embryos. Live embryos were kept at room temperature and visualized after the mRNA of the FP was translated into protein (4–5 hr). Live embryos were mounted in 1x sea water for visualization. Images were documented at different stages. We injected and recorded at least 20 embryos for each injected protein and confocal imaged each specimen at different stages for detailed analysis of phenotypes in vivo. We repeated each experiment at least five times obtaining similar results for each case. The fluorescent dextran and primers for the cloned genes are listed in Key resources table.
 
-## Imaging of M. leidyi embryos
+### Imaging of M. leidyi embryos
 
 Images of live and fixed embryos were taken using a confocal Zeiss LSM 710 microscope using a Zeiss C-Apochromat 40x water immersion objective (N.A. 1.20). Pinhole settings varied between 1.2–1.4 A.U. according to the experiment. The same settings were used for each individual experiment to compare control and experimental conditions. Z-stack images were processed using Imaris 7.6.4 (Bitplane Inc) software for three-dimensional reconstructions and FIJI for single slice and videos. Final figures were assembled using Adobe Illustrator and Adobe Photoshop.
 
 Par proteins display a general cytosolic localization when their polarizing activity is inactive. This signal was diminished by modifying contrast and brightness of the images in order to enlighten their cortical localization (active state in cell-polarity and stronger antibody signal) as it has shown in other organisms. All RAW images are available upon request.
 
-## Fluorescent intensity measurements and statistical analyses
+### Fluorescent intensity measurements and statistical analyses
 
 Images of fixed embryos were measured using FIJI plot profile tool using the RAW source data. Fluorescent intensity was measured along the animal-vegetal axis for 1 and 2 cell stages and along the apico-basal axis for the other later stages. The data obtained were then normalized by the maximum value of each X and Y axes. X axis corresponds to the distance from basal (0) to apical (1) cortex. Y axis corresponds to fluorescence intensity. The normalized data were plotted and the numerical values can be found in figure supplement-data source files. For later stages than 8 cells, we took measurements of two cells located in perpendicular axes of the embryo where the apicobasal axis was clearly detectable. These measurements correspond to cells going through interphase and metaphase. Statistical analyses were executed using GraphPad prism software. To do this, we compared the 10% most basal positions with the 10% most apical positions for each stage. We plotted this data and differences were assessed by comparing medians using Mann-Whitney U test.
 

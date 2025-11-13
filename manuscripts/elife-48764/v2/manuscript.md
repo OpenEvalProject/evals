@@ -30,7 +30,7 @@ The main findings are briefly summarized here. First, we revealed the basic, mai
 
 ## Results
 
-## Face induced MEG signals in the source space
+### Face induced MEG signals in the source space
 
 Subjects were presented with famous faces and familiar objects and instructed to perform a simple classification task (face or object) while their brain activity was recorded using MEG. After a rest period, each subject was scanned with fMRI viewing the same group of face and object images presented in separate blocks. Since each subject underwent both fMRI and MEG measurements, we could compare the face-selective regions defined by fMRI with the reconstructed MEG signals evoked by faces in the source space.
 
@@ -38,13 +38,43 @@ Subjects’ face-selective regions in the occipitotemporal cortex were localized
 
 Figure 1 shows the fMRI identified face regions and MEG measured face-evoked signals in a typical subject, displayed in ventral and lateral views of an inflated right hemisphere (Source localization results and fMRI localization results are shown in Figure 1—figure supplement 1–4 for more individual subjects). Face-selective regions rOFA, rpFFA, raFFA and rpSTS were identified by fMRI localizer (Figure 1A). MEG responses evoked by faces are shown in 10 ms steps from 120 ms to 160 ms in source space (cortical surface) (Figure 1B). It could be seen in the MEG signal that the location of a cluster of activation in the right occipital cortex at about 120 ms after stimulus onset is consistent with rOFA. At about 150–160 ms, a cluster of activation was found in posterior part of superior temporal sulcus, overlapping with rpSTS. Two temporally separated clusters of MEG source activation were found in the right fusiform gyrus, one consistent with the location of pFFA (about 130 ms) and another with aFFA (about 150 ms) (see Video 1). Similar spatiotemporal patterns of activation could be seen across the 13 subjects tested. These results show that face response areas identified by MEG are highly consistent with that defined by fMRI, thus it is a reasonable approach to extract the MEG time courses based on fMRI-guided region of interest (ROI). In this paper, with the understanding that the sources of MEG signals were constrained by the fMRI defined ROIs, we use the fMRI terms (OFA, FFA and pSTS) to indicate the corresponding cortical area in MEG data.
 
-## Bottom-up processing sequence induced by normal faces
+![Figure 1.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig1-v2.jpg)
+
+**Figure 1.:** (A) Face-selective statistical map (faces>objects) showing four face-selective regions (rOFA, rpFFA, raFFA and rpSTS). (B) Face-evoked MEG source activation patterns represented as LCMV value maps at different time points (120-160 ms) after the stimulus onset. LCMV values represent signal power normalized by noise.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (Left) Face-selective statistical map (faces>objects) showing face-selective regions (OFA, pFFA, aFFA and pSTS). (Right) Face-evoked MEG source activation patterns represented as LCMV value maps at different time points (120-160 ms) after the stimulus onset. LCMV values represent signal power normalized by noise. Results of these four subjects were shown here because of their relatively clear fMRI defined face-selective areas.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (Left) Face-selective statistical map (faces>objects) showing face-selective regions (OFA, pFFA, aFFA and pSTS). (Right) Face-evoked MEG source activation patterns represented as LCMV value maps at different time points (120-160 ms) after the stimulus onset. LCMV values represent signal power normalized by noise. Results of these four subjects were shown here because of their relatively clear fMRI defined face-selective areas.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (Left) Face-selective statistical map (faces>objects) showing face-selective regions (OFA, pFFA, aFFA and pSTS). (Right) Face-evoked MEG source activation patterns represented as LCMV value maps at different time points (120-160 ms) after the stimulus onset. LCMV values represent signal power normalized by noise. Results of these four subjects were shown here because of their relatively clear fMRI defined face-selective areas.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (Left) Face-selective statistical map (faces>objects) showing face-selective regions (OFA, pFFA, aFFA and pSTS). (Right) Face-evoked MEG source activation patterns represented as LCMV value maps at different time points (120-160 ms) after the stimulus onset. LCMV values represent signal power normalized by noise. Results of these four subjects were shown here because of their relatively clear fMRI defined face-selective areas.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48764/elife-48764-video1.mp4.jpg)
+
+### Bottom-up processing sequence induced by normal faces
 
 We investigated the typical dynamic sequence for processing faces in the ventral occipitotemporal cortex investigated by presenting subjects with face images of well-known individuals. We analyzed the time courses of face-selective areas identified in the source space. Seven face-selective areas (lOFA, rOFA, lpFFA, rpFFA, raFFA, lpSTS, rpSTS) were identified, guided by fMRI face localizer results from each individual subject, and they were used to extract the face-response time courses of the MEG source data. We averaged the resulting time courses across subjects and the waveforms are shown in Figure 2A. Face images induced stronger responses compared to objects in face-selective areas, especially for the right hemisphere. The timing of peak responses for individual ROIs are summarized in Figure 2B and C, revealing the fundamental temporal characteristics of the neural processing of faces. In the right hemisphere, face-evoked responses emerged earlier in the posterior areas than in the anterior areas, the peak responses occurred at 116 ± 6 ms, 125 ± 5 ms and 150 ± 10 ms for rOFA, rpFFA and raFFA, respectively. Although there is no significant difference between rOFA and rpFFA (t12 = 1.57, p=0.43, Bonferroni corrected), the peak response timing of raFFA is significantly delayed compared with rpFFA (t11 = 3.21, p=0.025, Bonferroni corrected), suggesting a bottom-up process. Similarly, OFA reached its peak response earlier than pFFA in the left hemisphere (lOFA:122 ± 5 ms, lpFFA:126 ± 6 ms), although this trend is not statistically significant (t11 = 0.64, p>0.05, Bonferroni corrected). Responses from the left anterior FFA was not shown because the corresponding activation cluster was not observed clearly in most subjects. In addition, dorsal face-selective region pSTS showed weaker and temporally broader responses, involved in face processing roughly from 130 to 180 ms. The sequential progression from posterior to anterior regions along the ventral occipitotemporal cortex, especially the significantly delayed activation of raFFA, indicates a bottom-up hierarchical functional structure of the ventral face pathway.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig2-v2.jpg)
+
+**Figure 2.:** (A) The time courses of face (solid line) and object (dotted line) induced responses averaged across subjects, for the seven face-selective ROIs. Shaded area means SEM. The green bar indicates significant difference between face and object. ﻿Significance was assessed by ﻿cluster-based permutation test (cluster-defining threshold p<0.05, significance level p<0.05) for each ROI. (B) The peak latency averaged across subjects for each ROI (mean ± SEM). The peak latency of raFFA is significantly later than rpFFA (t11 = 3.21, p=0.025, Bonferroni corrected) (C) The mean peak latencies for the face-selective ROIs were shown on inflated cortical surfaces of both hemispheres at corresponding locations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48764/elife-48764-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The time courses of unfamiliar face (solid line) and object (dotted line) induced responses averaged across subjects, for the seven face-selective ROIs. Shaded area means SEM. (B) The peak latency averaged across subjects for each ROI (mean± SEM).
+
 In addition to famous faces, we also presented unfamiliar faces to subjects and analyzed the data in the same way. Results showed essentially similar hierarchical dynamic sequences of face processing regardless of face familiarity (Figure 2—figure supplement 1). Thus, unfamiliar face images were used in the next experiment reported below.
 
-## Top-down operation in face processing highlighted by viewing Mooney faces
+### Top-down operation in face processing highlighted by viewing Mooney faces
 
 While the processing of normal (famous or unfamiliar) faces mainly followed the posterior to anterior (bottom-up) face processing sequence, we further investigated the possibility that under certain stimulus conditions, top-down modulation of face processing could become more prominent. According to the predictive coding theory, when the representation of sensory input in lower areas is poorly matched with the predictions generated from higher level areas, the activity in lower areas representing residual error would be increased (Rao and Ballard, 1999; Murray et al., 2004; Mumford, 1992). Hence, we adopted the two-tone Mooney face images (Figure 3A), which could be recognized as faces but lack prototypical local facial features, as the main stimuli in this experiment. Our hypothesis was that when processing Mooney faces which could activate the FFA based on the global configuration, the top-down modulation from FFA to OFA (prediction of facial parts) would be more prominent.
 
@@ -56,7 +86,7 @@ In this experiment, subjects (n = 28) were presented with normal unfamiliar fa
 
 To further analyze the dynamic causal relationship between OFA and pFFA, we performed Granger causality analysis over sliding time windows of 50 ms duration from 75 to 230 ms after stimulus presentation which covers the periods of essential activation in OFA and pFFA. The significant directed connectivity in each time window is shown in Figure 3D. There were much more extensive directed influences from pFFA to OFA during the processing of Mooney than normal faces. In particular, rpFFA influenced rOFA in Mooney face condition ﻿continuously from 75 to 170 ms, which was more sparsely observed in normal face condition. Thus response time courses and Granger causality analysis together show that, compared with processing of normal faces, the cortical processing of Mooney faces is more dominated by the top-down rpFFA to rOFA projection.
 
-## Primarily feedforward processing of face-like stimuli with misarranged internal features
+### Primarily feedforward processing of face-like stimuli with misarranged internal features
 
 We also investigated the processing dynamics of face-like stimuli with internal features clearly available but spatially misarranged, to contrast with the processing of normal as well as Mooney faces. The normal external features (hair, chin, face outline) and the locally normal internal features led to the engagement of the face-sensitive areas. Results show that the rOFA, rpFFA and raFFA were activated sequentially (rOFA: 132 ± 7 ms, rpFFA: 133 ± 5 ms, raFFA: 169 ± 12 ms. Figure 4B). Compared with the responses to normal faces, the activations in the rOFA and rpFFA were somewhat delayed in the case of the distorted faces. However, unlike the Mooney faces, the distorted faces still engaged the OFA earlier than the FFA, presumably because of the explicitly available local facial features. While the dominant signals are consistent with a feedforward processing from OFA to FFA, there was a hint of a predictive error signal, possibly related to the misarranged spatial configurations, that produced a low activity in rOFA at a later stage.
 
@@ -64,7 +94,7 @@ We also investigated the processing dynamics of face-like stimuli with internal 
 
 **Figure 4.:** (A) Example stimuli and averaged time courses for each face-selective ROI. The green horizontal bar indicates significant difference between distorted face and object (cluster-defining threshold p<0.01, corrected significance level p<0.05). (B) Peak latency averaged across subjects for each ROI. The peak latency of raFFA is significant later than rpFFA (paired t test, p=0.019, t8 = 2.92).
 
-## Parallel facilitation of face-processing network from contextual cues alone
+### Parallel facilitation of face-processing network from contextual cues alone
 
 In real life, facial features are not always available. Previous studies showed that face-specific responses could be elicited by contextual body cues (Cox et al., 2004; Chen and Whitney, 2019; Martinez, 2019). Here we further investigated the dynamics of contextual ﻿facilitation of face processing when face perception was supported by contextual cues alone without explicit facial features using the same experimental paradigm and data analysis procedures as before.
 
@@ -100,50 +130,222 @@ In summary, our study delineated the precise timing of bottom-up, top-down, as w
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 All subjects (age range 19–31) provided written informed consent and consent to publish before the experiments, and experimental protocols were approved by the Institutional Review Board of the Institute of Biophysics, Chinese Academy of Sciences (#2017-IRB-004). The image used in Figure 3 is a photograph of one of the authors and The Consent to Publish Form was obtained.
 
-## Experiment 1 (normal famous and unfamiliar face)
+### Experiment 1 (normal famous and unfamiliar face)
 
 Fifteen subjects were presented with famous faces (popular film actors, 50% female) and objects (houses, scenery and small manmade objects) and were instructed to perform a category classification task (face or object) while their brain activity was recorded using MEG. Two subjects with excessive head motion (>5 mm) were excluded from further analysis. Each type of image includes 50 exemplars and all faces are own race faces. All images used were equated for contrast and mean luminance using the SHINE toolbox (Willenbockel et al., 2010). Each trial was initiated with a fixation with a jittered duration (800–1000 ms), then a grayscale visual image (face or object, 8 × 6 °) was presented at the center of screen for 500 ms, followed by a response period. Subjects were asked to maintain fixation and report whether the image was a face or an object using button press as soon as possible. There were 120 trials for each condition. Nine of the thirteen subjects participated in an additional experiment in which unfamiliar faces were used.
 
-## Experiment 2 (normal unfamiliar face and Mooney face)
+### Experiment 2 (normal unfamiliar face and Mooney face)
 
 Experiment two was conducted similar to Experiment 1, except that unfamiliar faces and two-tone Mooney faces were presented to ﻿subjects (n = 28) in separate blocks (15 trials each) during which subjects performed a one-back task. Two subjects with excessive head motion (>5 mm) were excluded from further analysis.
 
-## Experiment 3 (face-like images with spatially misarranged internal features)
+### Experiment 3 (face-like images with spatially misarranged internal features)
 
 Experiment three was conducted similar to Experiment 1, except that distorted face and object images were presented to subjects (n = 9). Distorted face images were created by rearranging the eyes, mouth and nose into a nonface configuration (Liu et al., 2002).
 
-## Experiment 4 (contextual cues defined the presence of faces without internal features)
+### Experiment 4 (contextual cues defined the presence of faces without internal features)
 
 Experiment four was conducted similar to Experiment 2. Three types of stimuli (Figure 5A) were created as described in previous study (Cox et al., 2004): (i) images of highly degraded faces (no internal facial features) with contextual body cues that imply the presence of faces, (ii) similar to images in (i) but with body cues arranged in an incorrect configuration and thus do not imply the presence of faces, (iii) images of objects. Fifteen subjects participated in this experiment and one of them was excluded from further data analysis due to excessive head motion (>5 mm).
 
-## MEG data acquisition and analysis
+### MEG data acquisition and analysis
 
 MEG data were recorded continuously using a 275-channel CTF system. Three coils were attached on the head, one close to nasion, and the other two close to left and right preauricular points respectively. fMRI scanning was performed shortly after MEG data collection, and the locations of coils were marked with vitamin E caplets to align with MEG frames. MEG data analysis was performed using MATLAB (﻿RRID: SCR_001622) and Fieldtrip toolbox (﻿Oostenveld et al., 2011) (RRID: ﻿SCR_004849) for artifact detection and MNE-python (﻿RRID: SCR_005972) for source analysis (Gramfort et al., 2013; Gramfort et al., 2014).
 
-## Preprocessing
+#### Preprocessing
 
 After acquisition, we first conducted time correction as there was time delay (measured with a photodiode) between the stimulus onset on the screen and the trigger signal in the recorded MEG data. Then the data were bandpass filtered with a frequency range of 2–80 Hz and epoched from 250 ms before to 550 ms after the stimulus onset. Bad channels and trials contaminated by artifacts including eye blinks, muscle activities and SQUID jumps were removed before further analysis.
 
-## Source localization
+#### Source localization
 
 Source localization can be generally divided into two steps, forward solution and inverse solution. Boundary-element model (BEM) which describes the geometry of the head and conductivities of the different tissues, coregistration information between MEG and MRI, and volume source space which defines the position of the source locations (10242 sources per hemisphere and the source spacing is 3.1 mm) were used to calculate forward solution. For inverse solution, we first estimated noise and data covariance matrix from −250 to 0 ms epochs and 100 to 350 ms epochs respectively. Afterwards, the Linearly Constrained Minimum Variance (LCMV) beamformer was calculated using covariance matrix and forward solution (Van Veen et al., 1997). The regularization for the whitened data covariance is 0.01. The source orientation which maximizes output source power is selected.
 
-## Time course analysis
+#### Time course analysis
 
 To explore the time course, virtual sensors were computed on the 30 Hz low-pass filtered data using the LCMV beamformer at the grid points within individual face-selective areas. The time course of each face-selective area was extracted from the grid point showing max value of MEG response. Subjects who did not show corresponding face-selective areas in fMRI localizer were excluded from time course extraction (See Table 1 for details). To identify time-points of significant differences, we performed non-parametric statistical tests with cluster-based multiple comparison correction (Maris and Oostenveld, 2007).
 
-## Peak latency analysis
+**Table 1.**
+ Number of subjects showing fMRI defined face-selective areas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Experiment 1</th>
+      <th>Experiment 2</th>
+      <th>Experiment 3</th>
+      <th>Experiment 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>famous face</td>
+      <td>Unfamiliar face</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IOFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>25/26</td>
+      <td>9/9</td>
+      <td>13/14</td>
+    </tr>
+    <tr>
+      <td>IpFFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>26/26</td>
+      <td>9/9</td>
+      <td>14/14</td>
+    </tr>
+    <tr>
+      <td>IpSTS</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>18/26</td>
+      <td>9/9</td>
+      <td>11/14</td>
+    </tr>
+    <tr>
+      <td>rOFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>26/26</td>
+      <td>9/9</td>
+      <td>14/14</td>
+    </tr>
+    <tr>
+      <td>rpFFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>26/26</td>
+      <td>9/9</td>
+      <td>14/14</td>
+    </tr>
+    <tr>
+      <td>raFFA</td>
+      <td>12/13</td>
+      <td>9/9</td>
+      <td>18/26</td>
+      <td>9/9</td>
+      <td>12/14</td>
+    </tr>
+    <tr>
+      <td>rpSTS</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>23/26</td>
+      <td>9/9</td>
+      <td>14/14</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Peak latency analysis
 
 For each ROI of each subject, peak latency was defined as the timing of the largest peak within the first 250 ms of averaged response. To avoid the influence of bad source data with weak signal, time course without any time points showing response 5 SDs above the baseline (time average from −250 to 0 ms) was eliminated from peak analysis. The numbers of subjects used in peak latency analysis are summarized in Table 2. Two-tailed paired t tests (subjects with missing values were excluded) were used to compare the peak latencies between ROIs. While in Experiment 2, a more rigorous statistical approach, two sample paired permutation test (10000 permutations), was used to compare the peak latencies between pFFA and OFA (See results for details).
 
-## Granger causality analysis
+**Table 2.**
+ Number of subjects used in peak latency analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Experiment 1</th>
+      <th colspan="2">Experiment 2</th>
+      <th>Experiment 3</th>
+      <th>Experiment 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>famous face</td>
+      <td>unfamiliar face</td>
+      <td>normal face</td>
+      <td>Mooney face</td>
+      <td>distorted face</td>
+      <td>contaxtual cues defined face</td>
+    </tr>
+    <tr>
+      <td>IOFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>24/26</td>
+      <td>24/26</td>
+      <td>9/9</td>
+      <td>13/14</td>
+    </tr>
+    <tr>
+      <td>IpFFA</td>
+      <td>12/13</td>
+      <td>9/9</td>
+      <td>25/26</td>
+      <td>25/26</td>
+      <td>9/9</td>
+      <td>12/14</td>
+    </tr>
+    <tr>
+      <td>IpSTS</td>
+      <td>11/13</td>
+      <td>8/9</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>rOFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>24/26</td>
+      <td>26/26</td>
+      <td>9/9</td>
+      <td>13/14</td>
+    </tr>
+    <tr>
+      <td>rpFFA</td>
+      <td>13/13</td>
+      <td>9/9</td>
+      <td>24/26</td>
+      <td>25/26</td>
+      <td>9/9</td>
+      <td>13/14</td>
+    </tr>
+    <tr>
+      <td>raFFA</td>
+      <td>12/13</td>
+      <td>8/9</td>
+      <td>18/26</td>
+      <td>15/26</td>
+      <td>9/9</td>
+      <td>10/14</td>
+    </tr>
+    <tr>
+      <td>rpSTS</td>
+      <td>12/13</td>
+      <td>7/9</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Granger causality analysis
 
 To study the regional information flow between ROIs, we employed Granger causality analysis (Granger, 1969) which is a statistical technique that based on the prediction of one time series on another. Time courses used in this analysis were extracted from each ROI without low-passed filtering. Causality analysis was performed using Multivariate Granger Causality (MVGC) toolbox (Barnett and Seth, 2014). Evoked response was removed from the data by linear regression before further analysis because the time series is assumed to be stationary in Granger causality analysis and this assumption is challenged in evoked brain responses (Wang et al., 2008). We conducted separate analysis over a series of overlapping 50 ms time windows (based on a previous study Ashrafulla et al., 2013) from 75 to 230 ms, which covers the period of face-induced activation in both OFA and FFA. There is a trade-off between stationary, temporal resolution (shorter is better) and accuracy of model fit (longer is better) when considering the size of time window. Moreover, smaller window is not considered because activity beyond Beta-band is not strong according to the power spectrum. First, the best model order was selected according to Bayesian information criteria (BIC). Then the corresponding vector auto regressive (VAR) model parameters were estimated for the selected model order and the autocovariance sequence for the VAR model was calculated. Then the bidirectional Granger causality values for each pair ROI were obtained by calculating pairwise-conditional time-domain MVGCs based on autocovariance sequence. Finally, to evaluate whether causality values are significantly greater than zero (assume null hypothesis causality value = 0), we performed significance test using F null distribution with FDR correction for multiple comparisons (Benjamini and Hochberg, 1995).
 
-## fMRI data acquisition and analysis
+### fMRI data acquisition and analysis
 
 Scanning was performed on a 3T Siemens Prisma scanner in the Beijing MRI Center for Brain Research. We acquired high-resolution T1-weighed anatomical volumes first, and then performed a run of functional face localizer (Pitcher et al., 2011a) with interleaved face and object blocks using a gradient echo-planar sequence (20-channel head coil, TR = 2 s, TE = 30 ms, resolution 2.0 × 2.0 × 2.0 mm, 31 slices, matrix = 96 × 96). fMRI data were analyzed using FreeSurfer ﻿(RRID: SCR_001847) and AFNI (RRID: SCR_005927). Face-selective areas were defined as regions that responded more strongly to faces than to objects.

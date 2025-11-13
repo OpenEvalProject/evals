@@ -33,7 +33,7 @@
 
 ## Abstract
 
-10.7554/eLife.15175.001 We determined whether the mutations found in ovarian cancers could be identified in the patients' ovarian cyst fluids. Tumor-specific mutations were detectable in the cyst fluids of 19 of 23 (83%) borderline tumors, 10 of 13 (77%) type I cancers, and 18 of 18 (100%) type II cancers. In contrast, no mutations were found in the cyst fluids of 18 patients with benign tumors or non-neoplastic cysts. Though large, prospective studies are needed to demonstrate the safety and clinical utility of this approach, our results suggest that the genetic evaluation of cyst fluids might be able to inform the management of the large number of women with these lesions. DOI: http://dx.doi.org/10.7554/eLife.15175.001
+We determined whether the mutations found in ovarian cancers could be identified in the patients' ovarian cyst fluids. Tumor-specific mutations were detectable in the cyst fluids of 19 of 23 (83%) borderline tumors, 10 of 13 (77%) type I cancers, and 18 of 18 (100%) type II cancers. In contrast, no mutations were found in the cyst fluids of 18 patients with benign tumors or non-neoplastic cysts. Though large, prospective studies are needed to demonstrate the safety and clinical utility of this approach, our results suggest that the genetic evaluation of cyst fluids might be able to inform the management of the large number of women with these lesions.
 
 ## Introduction
 
@@ -41,11 +41,11 @@ Ovarian cancer is the most lethal gynecologic malignancy, with 21,290 estimated 
 
 Complicating the diagnosis of ovarian cancer is the fact that ovarian cysts are common in women of all ages, with a prevalence of 35% and 17% in pre- and post-menopausal women, respectively (Pavlik et al., 2013). These cysts are frequently benign and found incidentally on routine imaging (Pavlik et al., 2013). Though malignancy is an unusual cause of the cysts, 30% of the cysts exhibit radiographic features suspicious for malignancy, such as solid areas or mass (Pavlik et al., 2013). In addition to the anxiety that such findings provoke, many women undergo unnecessary surgery for cysts that are not malignant and may not be responsible for the symptoms they have. For example, only 5% of 570 women in a large ovarian cancer screening randomized trial who underwent surgical evaluation actually had a malignancy (Buys et al., 2005). Similarly in another study of symptomatic women, only 4% of 197 women who had concerning features on transvaginal ultrasound were ultimately diagnosed with ovarian cancer (Gilbert et al., 2012). Compounding this issue is the fact that surgery for ovarian cysts requires general anesthesia and is associated with significant morbidity, causing complications in 15% of women (Buys et al., 2011). These complications include damage to nerves and ureters, bleeding, infection, and perforation of adjacent viscera. Furthermore, the procedure often results in hormonal and fertility loss (in the case of bilateral oophorectomy) (Buys et al., 2011). Even minimal procedures such as ovarian cystectomy can affect fertility in premenopausal women by decreasing follicular response and oocyte number (Loh et al., 1999; Demirol et al., 2006). If a preoperative test could help determine whether the cystic lesion was benign or malignant, unnecessary surgery and its associated complications could be avoided in many patients. This would be particularly helpful for women of reprodutive age who wish to preserve their fertility, as well as women whose medical comorbidities or functional status makes anesthesia and surgery hazardous.
 
-Ovarian cysts and tumors are classified as non-neoplastic, benign, borderline, or malignant based on microscopic examination after surgical removal (
+Ovarian cysts and tumors are classified as non-neoplastic, benign, borderline, or malignant based on microscopic examination after surgical removal (Figure 1). Non-neoplastic cysts are by far the most common class of ovarian cysts. They are frequently found in pre-menopausal women, arising when an egg is not released properly from either the follicle or corpus luteum and usually resolve spontaneously within several months (Christensen et al., 2002). Benign cystic tumors, such as cystadenomas and cystadenofibromas, rarely progress to malignancy (Cheng et al., 2004; Levine et al., 2010). No genetic alterations have yet been identified in either non-neoplastic cysts or in benign cystic tumors (Cheng et al., 2004). Neither of these cyst types requires surgery unless they are symptomatic or large (Levine et al., 2010). These cysts can be easily sampled with ultrasound-guided fine-needle aspiration within minutes in an outpatient setting without the need for anesthesia (Duke et al., 2006).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15175/elife-15175-fig1-v1.jpg)
 
-**Figure 1.:** Ovarian cysts and tumors are currently classified according to microscopic evaluation after surgical removal. The majority of ovarian cysts are non-neoplastic (often 'functional' in premenopausal women). Ovarian tumors with combined cystic and solid components are either benign tumors, borderline tumors, or malignant cancers (type I or II). Only cysts associated with borderline tumors and cancers require surgical excision. We show here that the DNA purified from cyst fluid can be analyzed for somatic mutations commonly found in their associated tumors. The type of mutation detected not only could indicate the type of tumor present but also could potentially inform management.DOI: http://dx.doi.org/10.7554/eLife.15175.003
+**Figure 1.:** Ovarian cysts and tumors are currently classified according to microscopic evaluation after surgical removal. The majority of ovarian cysts are non-neoplastic (often 'functional' in premenopausal women). Ovarian tumors with combined cystic and solid components are either benign tumors, borderline tumors, or malignant cancers (type I or II). Only cysts associated with borderline tumors and cancers require surgical excision. We show here that the DNA purified from cyst fluid can be analyzed for somatic mutations commonly found in their associated tumors. The type of mutation detected not only could indicate the type of tumor present but also could potentially inform management.
 
 At the other end of the spectrum are epithelial ovarian cancers, which are potentially lethal and unequivocally require surgery. A dualistic model has been proposed to classify these neoplasms (Kurman and Shih, 2010). Type I tumors are composed of low-grade serous, low-grade endometrioid, clear cell, and mucinous carcinomas. They are generally indolent, frequently diagnosed at early stage (Stage I or II), and develop from well-established precursor lesions ('borderline' or 'atypical proliferative' tumors, as described below) (Kurman and Shih, 2011). Type I cancers commonly exhibit mutations in KRAS, BRAF, CTNNB1, PIK3CA, PTEN, ARID1A, or PPP2R1A (Kurman and Shih, 2010). In contrast, type II tumors are generally high-grade serous carcinomas. They are highly aggressive, most often diagnosed in late stage (Stage III or IV), and have suggested origins from the distal fallopian tube (Lee et al., 2007). Type II cancers are the most clinically important group of ovarian cancers, comprising 75% of all ovarian carcinomas and responsible for 90% of ovarian cancer deaths (Kurman and Shih, 2011). They almost always harbor TP53 mutations (Cancer Genome Atlas Research Network. 2011). Also unlike type I cancers, which are relatively chemo-resistant and more often treated only with surgical excision, type II cancers respond to conventional chemotherapy, particularly after maximal debulking to reduce tumor burden (Bristow et al., 2002; Schmeler et al., 2008).
 
@@ -57,13 +57,102 @@ More recently, genetic analysis of specific types of cyst fluids has been consid
 
 ## Results
 
-## Characteristics of the tumors and cyst fluid samples
+### Characteristics of the tumors and cyst fluid samples
 
 DNA was isolated from surgically excised ovarian cysts of 77 women. Ten of them had non-neoplastic cysts, 12 had benign tumors, 24 had borderline tumors, and 31 had cancers (13 Type I and 18 Type II). Age, histopathologic diagnosis, stage, and other clinical information are provided in Supplementary file 1. The median amount of DNA recovered from the cysts was 222 ng (interquartile range (IQR) of 53 to 3120 ng) (Supplementary file 2). There was no significant difference in the amounts of DNA between borderline tumors and type I or type II cancers. However, the borderline tumors and cancers contained significantly more DNA than the non-neoplastic cysts or benign tumors (4453 ± 6428 ng vs. 62 ± 64 ng; p<0.001, Wilcoxon rank-sum test).
 
-## A multiplex PCR-based assay to identify tumor-specific mutations in cyst fluid samples
+### A multiplex PCR-based assay to identify tumor-specific mutations in cyst fluid samples
 
-We designed a multiplex PCR-based assay that could simultaneously assess the regions of 17 genes frequently mutated in ovarian tumors. The amount of DNA shed from neoplastic cells was expected to be a minor fraction of the total DNA in the cyst fluid, with most DNA emanating from normal cells. We therefore used a sensitive detection method, called Safe-SeqS (Safe-Sequencing System), to identify mutations in cyst fluid samples (Kinde et al., 2011). In brief, primers were designed to amplify 133 regions, covering 9054 distinct nucleotide positions within the 17 genes of interest (Supplementary file 3). Three multiplex PCR reactions, each containing non-overlapping amplicons, were then performed on each sample. One primer in each pair included a unique identifier (UID) for each template molecule, thereby drastically minimizing the error rates associated with PCR and sequencing, as described previously (Kinde et al., 2011). Under the conditions used in the current experiments, mutations present in >0.1% of template molecules could generally be reliably determined (Kinde et al., 2011; 2013; Bettegowda et al., 2014). We could not perform sequencing on five cysts (four non-neoplastic cysts and one cyst associated with a borderline tumor) because there was insufficient DNA (<3 ng recovered), and these were scored as uninterpretable. When this assay was applied to cyst fluid samples with sufficient DNA, no mutations were identified in the 18 cysts obtained from patients with simple cysts (n = 6) or benign tumors (n = 12) (Table 1). This was in stark contrast to the fluids obtained from the 18 patients with type II cancers, all of which were found to contain a mutation (Table 1). Ten (77%) of the 13 cyst fluids from patients with type I cancers and 19 (83%) of the 23 cyst fluids from patients with borderline tumors contained at least one detectable mutation. When categorized by the need for surgery (i.e., presence of a borderline tumor or a type I or type II cancer), the sensitivity of this assay was 87% (47 of 54 cysts; 95% confidence interval of 75% to 95%) and its specificity was 100% (95% confidence interval of 74% to 100%; Table 1).10.7554/eLife.15175.004Table 1.Detection of tumor-specific mutations in cyst fluid. The fraction of samples detected and the median fraction of mutant alleles are indicated, grouped by cyst type, cancer stage, and the need for surgery.DOI: http://dx.doi.org/10.7554/eLife.15175.004Fraction of samples detected (95% confidence interval)Median fraction of mutant alleles (IQR)Total # of samplesTypeNon-neoplastic0% (0–46%)0% (0–0%)6Benign tumor0% (0–26%)0% (0–0%)12Borderline tumor83% (61–95%)2.4% (1.5–10.8%)23Type I cancer77% (46–95%)7.8% (3.3–28.7%)13Type II cancer100% (81–100%)60.3% (31.3–70.8%)18Cancer stageEarly (I and II)82% (48–97%)7.4% (3.0–30.9%)11Late (III and IV)95% (75–100%)51.2% (30.2–69.5%)20Cysts requiring surgeryNo0% (0–26%)0% (0–0%)18Yes87% (75–95%)12.6% (2.7–40.2%)54
+We designed a multiplex PCR-based assay that could simultaneously assess the regions of 17 genes frequently mutated in ovarian tumors. The amount of DNA shed from neoplastic cells was expected to be a minor fraction of the total DNA in the cyst fluid, with most DNA emanating from normal cells. We therefore used a sensitive detection method, called Safe-SeqS (Safe-Sequencing System), to identify mutations in cyst fluid samples (Kinde et al., 2011). In brief, primers were designed to amplify 133 regions, covering 9054 distinct nucleotide positions within the 17 genes of interest (Supplementary file 3). Three multiplex PCR reactions, each containing non-overlapping amplicons, were then performed on each sample. One primer in each pair included a unique identifier (UID) for each template molecule, thereby drastically minimizing the error rates associated with PCR and sequencing, as described previously (Kinde et al., 2011). Under the conditions used in the current experiments, mutations present in >0.1% of template molecules could generally be reliably determined (Kinde et al., 2011; 2013; Bettegowda et al., 2014). We could not perform sequencing on five cysts (four non-neoplastic cysts and one cyst associated with a borderline tumor) because there was insufficient DNA (<3 ng recovered), and these were scored as uninterpretable. When this assay was applied to cyst fluid samples with sufficient DNA, no mutations were identified in the 18 cysts obtained from patients with simple cysts (n = 6) or benign tumors (n = 12) (Table 1). This was in stark contrast to the fluids obtained from the 18 patients with type II cancers, all of which were found to contain a mutation (Table 1). Ten (77%) of the 13 cyst fluids from patients with type I cancers and 19 (83%) of the 23 cyst fluids from patients with borderline tumors contained at least one detectable mutation. When categorized by the need for surgery (i.e., presence of a borderline tumor or a type I or type II cancer), the sensitivity of this assay was 87% (47 of 54 cysts; 95% confidence interval of 75% to 95%) and its specificity was 100% (95% confidence interval of 74% to 100%; Table 1).
+
+**Table 1.**
+ Detection of tumor-specific mutations in cyst fluid. The fraction of samples detected and the median fraction of mutant alleles are indicated, grouped by cyst type, cancer stage, and the need for surgery.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fraction of samples detected (95% confidence interval)</th>
+      <th>Median fraction of mutant alleles (IQR)</th>
+      <th>Total # of samples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Type</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-neoplastic</td>
+      <td>0% (0–46%)</td>
+      <td>0% (0–0%)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Benign tumor</td>
+      <td>0% (0–26%)</td>
+      <td>0% (0–0%)</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Borderline tumor</td>
+      <td>83% (61–95%)</td>
+      <td>2.4% (1.5–10.8%)</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Type I cancer</td>
+      <td>77% (46–95%)</td>
+      <td>7.8% (3.3–28.7%)</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Type II cancer</td>
+      <td>100% (81–100%)</td>
+      <td>60.3% (31.3–70.8%)</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Cancer stage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Early (I and II)</td>
+      <td>82% (48–97%)</td>
+      <td>7.4% (3.0–30.9%)</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Late (III and IV)</td>
+      <td>95% (75–100%)</td>
+      <td>51.2% (30.2–69.5%)</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Cysts requiring surgery</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>0% (0–26%)</td>
+      <td>0% (0–0%)</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>87% (75–95%)</td>
+      <td>12.6% (2.7–40.2%)</td>
+      <td>54</td>
+    </tr>
+  </tbody>
+</table>
 
 Ovarian cancers are generally detected only late in the course of disease, perhaps explaining the poor prognosis of patients. Accordingly, only 11 of the 31 cysts associated with cancers in our study had early (Stage I or II) disease (Supplementary file 1). As expected, most of these were type I carcinomas (n = 8). Nevertheless, it was encouraging that mutant DNA could be detected in nine (82%) of these 11 patients (Table 1). Mutations could be detected in 95% of the 20 patients with Stage III or IV cancers (Table 1).
 
@@ -71,27 +160,58 @@ A variety of control experiments were performed to confirm the integrity of thes
 
 In addition to DNA from normal individuals used as controls, additional negative controls were provided by the simple cysts and benign tumors. Using the identical assay, none of the DNA from their cyst fluids contained detectable mutations. A final control was provided by the borderline and malignant tumors themselves. In general, only one or two of the 9054 base-pairs (bp) queried were mutated in any one tumor (Supplementary file 2). The other ~9000 bp could then be independently queried in the corresponding cyst fluid, and none of these positions were found to be mutated.
 
-## Relationship between the type of tumor present and the type of mutation found in the associated cyst fluid sample
+### Relationship between the type of tumor present and the type of mutation found in the associated cyst fluid sample
 
-The mutant allele fractions in the cyst fluids tended to be higher in the type II cancers (median of 60.3%) than the type I cancers (median of 7.8%) or borderline tumors (median of 2.4%), though there was considerable overlap (
+The mutant allele fractions in the cyst fluids tended to be higher in the type II cancers (median of 60.3%) than the type I cancers (median of 7.8%) or borderline tumors (median of 2.4%), though there was considerable overlap (Table 1; Figure 2A). With respect to stage, the DNA from cyst fluids of late-stage cancers had higher median mutant allele fractions (51.2%) than those of early-stage cancers (7.4%) or borderline tumors (2.4%), but with considerable overlap (Table 1; Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15175/elife-15175-fig2-v1.jpg)
 
-**Figure 2.:** (A) Classification by tumor type. No mutations were found in the DNA of non-neoplastic or benign cysts. Of the cysts that required surgery, the median mutant allele fraction was higher in the cyst fluids associated with type II cancer (60.3%) than type I (7.8%) or borderline tumors (2.4%). (B) Classification by tumor stage. The DNA from cyst fluids of late-stage cancers had a higher median mutant allele fraction (51.2%) than those of early-stage cancers (7.4%) or borderline tumors (2.4%). Percent mutant allele is depicted on a logarithmic scale. Horizontal bars depict median and IQR.DOI: http://dx.doi.org/10.7554/eLife.15175.005
+**Figure 2.:** (A) Classification by tumor type. No mutations were found in the DNA of non-neoplastic or benign cysts. Of the cysts that required surgery, the median mutant allele fraction was higher in the cyst fluids associated with type II cancer (60.3%) than type I (7.8%) or borderline tumors (2.4%). (B) Classification by tumor stage. The DNA from cyst fluids of late-stage cancers had a higher median mutant allele fraction (51.2%) than those of early-stage cancers (7.4%) or borderline tumors (2.4%). Percent mutant allele is depicted on a logarithmic scale. Horizontal bars depict median and IQR.
 
-On the other hand, the type of mutation varied considerably among these cysts (
+On the other hand, the type of mutation varied considerably among these cysts (Figure 3). In type I tumors, the genes mutated were BRAF (n = 1), KRAS (n = 5), NRAS (n = 1), PIK3R1 (n = 1), PPP2R1A (n = 1), PTEN (n = 1), or TP53 (n = 3). Two distinct mutations were found per sample in three type I cancers. The BRAF mutation (V600_S605 > D) was unusual that it resulted from an in-frame deletion/insertion rather than the base substitution (V600E) characteristic of the vast majority of BRAF mutations reported in the literature. This mutation has been observed in a papillary thyroid cancer and a cutaneous melanoma (Cruz et al., 2003; Barollo et al., 2014). The deletion results in loss of a phosphorylation site in the activation loop of BRAF, while the insertion of an aspartic acid has been suggested to increase BRAF kinase activity by mimicking an activating phosphorylation (Davies et al., 2002). In contrast, all but one type II cancers (94% of 18) had mutations in TP53; the only exception was OVCYST 073, a high-grade endometrioid carcinoma. The borderline tumors were distinguished by yet a different pattern from that of the either type I or type II cancers. Of the 19 mutations in borderline tumors, 12 (63%) were BRAF V600E, never observed in type I or type II cancers, and the remainder were at KRAS codon 12 or 61 (Supplementary file 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15175/elife-15175-fig3-v1.jpg)
 
-**Figure 3.:** Yellow boxes represent mutations with mutant allele frequency (MAF) between 0.1% and 1%; orange boxes represent mutations with MAF between 1 and 10%; red boxes represent mutations with MAF greater than 10% (* indicates patients with insufficient DNA for analysis; ** indicates patients with two detected mutations).DOI: http://dx.doi.org/10.7554/eLife.15175.006
+**Figure 3.:** Yellow boxes represent mutations with mutant allele frequency (MAF) between 0.1% and 1%; orange boxes represent mutations with MAF between 1 and 10%; red boxes represent mutations with MAF greater than 10% (* indicates patients with insufficient DNA for analysis; ** indicates patients with two detected mutations).
 
-## Markers associated with the need for surgery
+### Markers associated with the need for surgery
 
-A multivariate analysis was used to identify the most informative molecular features of cyst fluids and to compare them to the commonly used serum biomarkers for ovarian cancer, HE4 (human epididymis protein 4) and CA-125 (
+A multivariate analysis was used to identify the most informative molecular features of cyst fluids and to compare them to the commonly used serum biomarkers for ovarian cancer, HE4 (human epididymis protein 4) and CA-125 (Bast et al., 1983; Hellström et al., 2003) (Table 2). We defined 'informative' as indicating a need for surgery (i.e., borderline tumors or type I or II cancers). The amount of DNA in cyst fluids was generally, but not significantly, higher in the cysts requiring surgery (p=0.69, Table 2), though there were many cysts not requiring surgery that had higher DNA levels than cysts requiring surgery (Figure 4A). Similarly, the serum CA-125 levels were significantly higher in cysts requiring surgery (p=0.01, Table 2), but there were many cysts not requiring surgery that had higher levels than those requiring surgery (Figure 4B). Serum HE4 levels were not correlated with cyst type (p=0.92, Table 2; Figure 4C). On the other hand, the presence of a mutation was highly informative for the presence of a cyst requiring surgery in the multivariate analysis, as no mutations were found in cysts not requiring surgery (p<0.001, Table 2).
+
+**Table 2.**
+ Multivariate analysis for markers associated with need for surgery. The presence of a mutation, cyst DNA amount, and common serum biomarkers for ovarian cancer were analyzed for association with cysts that require surgical removal (Firth’s penalized likelihood logistic regression).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mutation present</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Serum CA-125 elevated</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>HE4 elevated</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Cyst DNA amount</td>
+      <td>0.69</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15175/elife-15175-fig4-v1.jpg)
 
-**Figure 4.:** Cyst DNA amount and levels of commonly used ovarian cancer serum biomarkers are plotted according to the cyst type and need for surgery. (A) The amounts of DNA in cyst fluids was generally higher in cysts requiring surgery (blue) than those that do not (red), but no significant correlation was found (p=0.69). (B) CA-125 levels was significantly higher in cysts that required surgery than those that do not (p=0.01). (C) Serum HE4 levels was not correlated with the need for surgery (p=0.92). All values are depicted on a logarithmic scale. P-values were calculated using Firth’s penalized likelihood logistic regression in a multivariate model (See Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.15175.008
+**Figure 4.:** Cyst DNA amount and levels of commonly used ovarian cancer serum biomarkers are plotted according to the cyst type and need for surgery. (A) The amounts of DNA in cyst fluids was generally higher in cysts requiring surgery (blue) than those that do not (red), but no significant correlation was found (p=0.69). (B) CA-125 levels was significantly higher in cysts that required surgery than those that do not (p=0.01). (C) Serum HE4 levels was not correlated with the need for surgery (p=0.92). All values are depicted on a logarithmic scale. P-values were calculated using Firth’s penalized likelihood logistic regression in a multivariate model (See Materials and methods).
 
 ## Discussion
 
@@ -113,17 +233,17 @@ Our data suggest that a cyst without any solid component upon imaging, and there
 
 ## Materials and methods
 
-## Patient samples
+### Patient samples
 
 Cyst fluids were collected prospectively from women presenting with a suspected ovarian tumor. Patients were diagnosed by transvaginal sonography or computed tomography and admitted for surgical removal of the cyst due to suspicious imaging findings by gynecologic oncology surgeons at Sahlgrenska University Hospital, Gothenburg, Sweden. The study was approved by the ethical board of Gothenburg University and patients provided written consent. According to the approved protocol, 15 to 20 mL of ovarian cyst fluid was collected after removal of the cyst from the abdomen. All samples were immediately put in 4°C for 15–30 min, centrifuged for 10 min at 500 g, and aliquoted into Eppendorf tubes. The fluids were transferred to −80°C, within 30–60 min after collection. All histology was reviewed by board-certified pathologists (Supplementary file 1). Ten, 12, 24, and 31 cyst fluid samples from patients with non-neoplastic cysts, benign tumors, borderline tumors, and malignant ovarian cancers, respectively, were assayed in this study.
 
 Plasma HE4 concentrations were determined using a commercial HE4 EIA assay (Fujirebio Diagnostics, PA, USA) and plasma CA-125 levels were measured using the Architect CA 125 II (Abbott Diagnostics, IL, USA). DNA was purified from tumor tissue (either freshly-frozen, or formalin-fixed and paraffin-embedded) after microdissection to remove neoplastic components. DNA was purified from tumors and from 1 mL of each cyst fluid sample using an AllPrep DNA kit (Qiagen, Germany) according to the manufacturer’s instructions. Purified DNA from all samples was quantified as previously described (Rago et al., 2007).
 
-## Statistical analysis
+### Statistical analysis
 
 A Wilcoxon rank-sum test was used to compare the amount of DNA in the cancers and borderline tumors with the amount of DNA in the simple cysts and benign tumors. The fraction of samples detected by tumor-specific mutations in the cyst fluid, as well as their 95% confidence intervals, was calculated for each tumor type (Table 1). When the presence of a mutation in the cyst fluid was used to predict the need for surgery, the sensitivity and specificity of the assay, as well as the 95% confidence intervals, were calculated. Firth’s penalized likelihood logistic regression was used to quantify the association between molecular features of cyst fluids and the need for surgery (Table 2) in a multivariate model. The model predictors included the presence of mutation, log10(ng) of cyst DNA and indicators for normal CA-125 and HE4 values. Normal CA-125 values were defined as <35 U/mL and normal HE4 values were defined as <92 pmol/L and <121 pmol/L for pre- and post-menopausal women, respectively, according to the cutoffs used at the Sahlgrenska University Hospital. Statistical analyses were performed using the R statistical package (version 3.1.2). Unless noted otherwise, all patient-related values are reported as means ± SD.
 
-## Mutation detection and analysis
+### Mutation detection and analysis
 
 DNA from either cyst fluids or tumors was used for multiplex PCR, as previously described (Kinde et al., 2011) with the exceptions noted below. One-hundred-and-thirty-three primer pairs were designed to amplify 110 to 142 bp segments containing regions of interest from the following 17 genes: AKT1, APC, BRAF, CDKN2A, CTNNB1, EGFR, FBXW7, FGFR2, KRAS, MAPK1, NRAS, PIK3CA, PIK3R1, POLE, PPP2R1A, PTEN, and TP53. Primer sequences are listed in Supplementary file 3. These primers were used to amplify DNA in 25 μL reactions as previously described except that 15 cycles were used for the inial amplification (Kinde et al., 2011). For each sample, three multiplex reactions, each containing non-overlapping amplicons, were performed. Reactions were purified with AMPure XP beads (Beckman Coulter, PA, USA) and eluted in 100 μL of Buffer EB (Qiagen). A fraction (0.25 μL) of purified PCR products were then amplified in a second round of PCR, as described (Kinde et al., 2011). The PCR products were purified with AMPure and sequenced on an Illumina MiSeq instrument.
 

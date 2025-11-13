@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/027m9bs27 Division of Neuroscience, School of Biological Sciences, Faculty of Biology, Medicine and Health,University of Manchester Manchester United Kingdom
-2. https://ror.org/013meh722 Department of Zoology, University of Cambridge Cambridge United Kingdom
+1. Division of Neuroscience, School of Biological Sciences, Faculty of Biology, Medicine and Health,University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+2. Department of Zoology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Developing neural circuits are influenced by activity and are especially sensitive to changes in activity during critical periods (CPs) of development. Changes occurring during a CP often become ‘locked in’ so that they affect the mature network. Indeed, several neurodevelopmental disorders have been linked to excessive activity during such periods. It is, therefore, important to identify those aspects of neural circuit development that are influenced by neural activity during a CP. In this study, we take advantage of the genetic tractability of Drosophila to show that activity perturbation during an embryonic CP permanently alters properties of the locomotor circuit. Specific changes we identify include increased synchronicity of motoneuron activity and greater strengthening of excitatory over inhibitory synaptic drive to motoneurons. These changes are sufficient to reduce network robustness, evidenced by increased sensitivity to induced seizure. We also show that we can rescue these changes when increased activity is mitigated by inhibition provided by mechanosensory neurons. Similarly, we demonstrate a dose-dependent relationship between inhibition experienced during the CP and the extent to which it is possible to rescue the hyperexcitable phenotype characteristic of the para mutation. This suggests that developing circuits must be exposed to a properly balanced sum of excitation and inhibition during the CP to achieve normal mature network function. Our results, therefore, provide novel insight into how activity during a CP shapes specific elements of a circuit, and how activity during this period is integrated to tune neural circuits to the environment in which they will likely function. bss
+Developing neural circuits are influenced by activity and are especially sensitive to changes in activity during critical periods (CPs) of development. Changes occurring during a CP often become ‘locked in’ so that they affect the mature network. Indeed, several neurodevelopmental disorders have been linked to excessive activity during such periods. It is, therefore, important to identify those aspects of neural circuit development that are influenced by neural activity during a CP. In this study, we take advantage of the genetic tractability of Drosophila to show that activity perturbation during an embryonic CP permanently alters properties of the locomotor circuit. Specific changes we identify include increased synchronicity of motoneuron activity and greater strengthening of excitatory over inhibitory synaptic drive to motoneurons. These changes are sufficient to reduce network robustness, evidenced by increased sensitivity to induced seizure. We also show that we can rescue these changes when increased activity is mitigated by inhibition provided by mechanosensory neurons. Similarly, we demonstrate a dose-dependent relationship between inhibition experienced during the CP and the extent to which it is possible to rescue the hyperexcitable phenotype characteristic of the parabss mutation. This suggests that developing circuits must be exposed to a properly balanced sum of excitation and inhibition during the CP to achieve normal mature network function. Our results, therefore, provide novel insight into how activity during a CP shapes specific elements of a circuit, and how activity during this period is integrated to tune neural circuits to the environment in which they will likely function.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ Our earlier work showed that manipulating activity during 17–19 hr after egg l
 
 ## Results
 
-## Increasing neural activity during embryogenesis permanently alters network function and synchronicity
+### Increasing neural activity during embryogenesis permanently alters network function and synchronicity
 
 To manipulate neural activity in developing embryos, we fed gravid (i.e. egg-laying) female flies picrotoxin (PTX), which increases neural activity by non-competitive antagonism of the GABAA receptor (Lin et al., 2012). This procedure is sufficient to expose embryos and the resulting young larvae to PTX. Larval metabolism and excretion during early to mid-developmental stages removes PTX, so that it is no longer detectable when assaying for effect in wall-climbing third-instar larvae (L3; Marley and Baines, 2011a). Crucially, our previous work has shown that permanent changes in network function observed as a result of embryonic exposure to PTX occur due to the change in activity during the CP, which lasts from 17 to 19 hr AEL (Giachello and Baines, 2015). Similar activity manipulation during larval stages is without effect (Sarah Doran and RAB, unpublished data). We measured the effect of PTX-linked activity manipulation during the CP on two independent parameters at L3: recovery from electroshock (which is longer in other models of CP activity manipulation [Giachello and Baines, 2015]) and crawling velocity (Figure 1A–C). Videos of seizure activity can be viewed in Marley and Baines, 2011b. Embryonic exposure to PTX significantly increased the duration of electroshock-induced seizures compared to controls (61.11 ± 3.94 s, EtOH; 96.49 ± 6.81 s, PTX; n = 36, 35; p<0.0001) (Figure 1B). PTX exposure did not, however, influence crawling velocity (1.06 ± 0.04 mm/s, EtOH; 0.98 ± 0.04 mm/s, PTX; n = 56, 58; p=0.14) (Figure 1C). This suggests that changes caused by PTX exposure during the CP were not significant enough to alter circuit function under ‘normal’ conditions (i.e. crawling) but clearly altered network robustness: the ability of the network to respond to strong stimulation (electroshock).
 
@@ -45,7 +45,7 @@ With a network-level phenotype for perturbation of CP activity established (incr
 
 Increasing neural activity during embryogenesis (PTX) significantly increased synchronicity across segments A6-A4 compared to vehicle control (0.9 ± 0.09 s, EtOH; 0.67 ± 0.06 s, PTX; n = 18, 18; p=0.05) (Figure 1F). This increased synchronicity of activity between adjacent segments is consistent with, and may contribute to, the seizure phenotype observed. It likely reflects significant changes in CPG properties that make it harder for larvae to recover from electroshock.
 
-## Increased activity during the CP alters the E:I balance within the locomotor network
+### Increased activity during the CP alters the E:I balance within the locomotor network
 
 Motoneuron activity reflects the integration of the excitatory and inhibitory premotor synaptic drive to which the cell is exposed. We therefore tested the effect of embryonic exposure to PTX on the synaptic drive provided by two identified premotor interneurons – one exciter and one inhibitor – which are monosynaptically connected to aCC (Giachello et al., 2022). Specifically, we quantified the strength of cholinergic excitor A18a (a.k.a. CLI2; Hasegawa et al., 2016) and GABAergic inhibitor A31k (Schneider-Mizell et al., 2016) to aCC at L3, following PTX-induced activity perturbation during embryonic development. To achieve this, premotor interneurons were activated using optogenetics, while whole-cell patch recordings were made from aCC (Figure 2A, left).
 
@@ -55,7 +55,7 @@ Motoneuron activity reflects the integration of the excitatory and inhibitory pr
 
 Larval motoneurons do not generate action potentials (APs) without synaptic drive. Thus, to determine how synaptic inputs may have changed following embryonic CP manipulation, current was injected into aCC to evoke stable firing before premotors were stimulated. Evoked firing before optogenetic stimulation, in larvae expressing A18a-Gal4, was different between control L3 (EtOH) and those exposed to PTX (6.87 ± 0.46 Hz, EtOH; 10.41 ± 1.44 Hz, PTX; n = 8, 8; p=0.03). While this difference may reflect a change in excitability due to PTX exposure, it may also have been due to the requirement for injecting differing amounts of current to maintain spiking at a constant rate. Regardless, optogenetic activation of excitatory A18a increased AP frequency in aCC in control L3 (Figure 2A, right), and this increase was significantly larger in L3 derived from embryos exposed to PTX (7.24 ± 2.04 Hz, EtOH; 15.81 ± 3.14 Hz, PTX; n = 8, 8; p=0.04) (Figure 2B). Evoked firing before optogenetic stimulation, in larvae expressing A31k-Gal4, was not significantly different between control L3 (EtOH) and those exposed to PTX (7 ± 0.94 Hz, EtOH; 7.36 ± 1 Hz, PTX; n = 8, 9; p=0.8). Activation of inhibitory A31k decreased AP firing in control L3 (Figure 2A); however, this decrease was not significantly different in L3 derived from embryos exposed to PTX (23.71 ± 6.76 Hz, EtOH; 28.24 ± 2.4 Hz, PTX; n = 8, 9; p=0.15) (Figure 2C). Comparing the magnitude of the changes in A18a or A31k input using an effect size calculation (see ‘Materials and methods’ for details) corroborates that excitation increased more than inhibition, as Cohen’s d = 1.14 (large effect size) for A18a and 0.78 (medium effect size) for A31k. Measurement of Vm, Rin, and capacitance showed no significant changes due to the presence of PTX (Vm: –47.8 ± 1.26 mV, EtOH; –47.6 ± 0.78 Hz, PTX; n = 16, 17; p=0.84); (Rin: 765.4 ± 27.05 MΩ, EtOH; 746.1 ± 28.13 MΩ, PTX; n = 16, 17; p=0.62); (cap: 23.2 ± 1.0 pF, EtOH; 23.1 ± 2.6 pF, PTX; n = 16, 17; p=0.95). Our data suggests that embryonic exposure to PTX induced a shift in the E:I balance of the larval locomotor circuit to favour excitation, which is consistent with the network-level phenotypes observed (Figure 1). Thus, our results suggest that increasing activity during the embryonic CP increases the strength of excitatory, but not inhibitory, premotor synaptic drive.
 
-## Increased excitatory input to motoneurons reflects increased postsynaptic sensitivity to quantal release
+### Increased excitatory input to motoneurons reflects increased postsynaptic sensitivity to quantal release
 
 Increased excitatory synaptic drive to aCC may be due to either or both presynaptic and postsynaptic adaptations to manipulation of activity during embryogenesis. Thus, we sought to understand which of these effects may be responsible for the changes we observed. A change in the frequency of mini excitatory postsynaptic potentials (mEPSPs, a.k.a. minis) would suggest the adaptation is primarily presynaptic (e.g. increased probability of release), whilst a change in distribution and/or amplitude of minis is more consistent with a mechanism acting postsynaptically (e.g. increased or altered receptor subunits). We quantified the mean amplitude, cumulative distribution, and frequency of minis. Specifically, we began by recording spontaneous minis in wild-type larvae following embryonic exposure to PTX (Figure 3A).
 
@@ -67,9 +67,17 @@ Whole-cell voltage-clamp recordings, made in 2 µM tetrodotoxin (TTX, which limi
 
 It is technically challenging to record minis elicited in response to quantal release from a defined neuron because doing so requires isolating minis from a single neuron (e.g. A18a) from those released by other excitatory premotors (there are many which synapse with aCC; Zarin et al., 2019). To maximise our ability to do so, we adapted a technique developed in mammals, which substitutes extracellular Sr2+ (8 mM) for Ca2+ (2 mM) (Xu-Friedman and Regehr, 1999; Bekkers and Clements, 1999). This substitution promotes asynchronous vesicular release (i.e. occurrence of single quantal events) following firing of an evoked AP by a presynaptic neuron, which can be recorded in a postsynaptic neuron as a series of minis. Thus, we replaced Ca2+ (2 mM) with Sr2+ (6 mM, which better supported survival of larval neurons than 8 mM) and used optogenetics to stimulate A18a, while recording from aCC. We validated this approach by showing that optogenetic activation of A18a, in the presence of Sr2+, greatly reduced evoked synaptic current but increased the frequency of minis recorded in aCC (Figure 4—figure supplement 1), which is consistent with asynchronous release. Thus, under these conditions, stimulation of A18a produced a series of minis predominantly released from this premotor interneuron (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91599/elife-91599-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative traces showing minis (mini excitatory postsynaptic potentials [mEPSPs], green arrows) in L3 aCC (Vm held at –60 mV), following optogenetic excitation of A18a. (B) Mini frequency, measured as events observed in the 3 s following optogenetic stimulation of A18a (50 ms light pulse), was not different between vehicle-only controls (EtOH) and L3 exposed to picrotoxin (PTX) during development. (C) Mini amplitude was significantly larger following exposure to PTX during embryogenesis, vs. controls (EtOH). (D) Cumulative distribution (%) of mini amplitudes demonstrates a clear rightward shift in current size, following activity manipulation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91599/elife-91599-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative traces show synaptic currents recorded in anterior corner cell (aCC) following optogenetic stimulation (1 s LED) of A18a in control (Ca2+) or 6 mM Sr2+ saline. Recordings made in control saline feature large synaptic events (~30 pA), indicative of normal vesicular release from the premotor. By contrast, the large current response to optogenetic stimulation is absent in 6 mM Sr2+. (B) Analysis of peak currents recorded in aCC, elicited by optogenetic stimulation of A18a are significantly larger in control (Ca2+) than 6 mM Sr2+ saline (28.96 ± 4.56 s, Ca2+; 4.4 ± 0.85 s, Sr2+; n = 8, 8; p<0.0001), thus, the changes we observed in current amplitude are consistent with the asynchronous mini release reported when using Sr2+ saline in mammals. (C) Similarly, there is a significant increase in the frequency of asynchronous synaptic events (minis) recorded in aCC in 6 mM Sr2+ saline, in the 3 s following stimulation of A18a (Evoked) vs. the 3 s prior (4.25 ± 0.59 Hz, Spontaneous; 10.83 ± 1.12 Hz, Evoked; n = 8, 8; p<0.0001). (D) Minis (green arrows) were defined as ≥2 pA events with a short rise time and slow decay. In combination, these results suggest recording current in aCC following optogenetic stimulation of A18a in 6 mM Sr2+ saline enables quantifying the frequency and amplitude of minis elicited by this premotor interneuron.
+
 Analysis of whole-cell patch-clamp recordings (Vm held at –60 mV) showed that there was no change in mini frequency, in the 3 s following optogenetic stimulation of A18a, in PTX vs. controls (10.83 ± 1.12 Hz, EtOH; 10.76 ± 1.93 Hz, PTX; n = 8, 7; p=0.97) (Figure 4B). There was, however, a significant increase in mini amplitude (4.28 ± 1.91 pA, EtOH; 5.31 ± 1.85 pA, PTX; n = 138, 98; p<0.0001) (Figure 4C) and corresponding rightward shift in the cumulative distribution of current amplitudes (Figure 4D). These data are consistent with a change in the postsynaptic sensitivity of aCC to quantal release, which alters the E:I balance in the L3 locomotor circuit, following manipulation of activity during embryogenesis. Moreover, that we see the same effect in the presence of external Ca2+ (Figure 3) likely indicates that sensitivity to all excitatory inputs has increased.
 
-## Increased excitation during the CP does not alter motoneuron morphology or synaptic connectivity
+### Increased excitation during the CP does not alter motoneuron morphology or synaptic connectivity
 
 Given our mini recordings suggested that the change in E:I balance may be associated with a change in the postsynaptic response to neurotransmitter release, we used high-resolution confocal microscopy to characterise the morphology and synaptic connectivity of aCC, following embryonic treatment with PTX (Figure 5). This analysis demonstrated no obvious change in dendritic arbor length, number of branch points, or terminals (Figure 5E). Furthermore, the number of excitatory postsynaptic sites (Drep2 puncta number) and synaptic density (µM dendrite per synapse) of aCC was unchanged following exposure to PTX during embryogenesis (Figure 5F). This suggests that the changes in mini amplitude, other physiology, and seizure phenotype we observed are not due to significant changes in cellular morphology. Rather, it suggests the changes may be related to an alteration in excitatory postsynaptic receptor number and/or sub-unit composition.
 
@@ -77,23 +85,31 @@ Given our mini recordings suggested that the change in E:I balance may be associ
 
 **Figure 5.:** (A, B) Representative images of anterior corner cell (aCC) motoneurons from larval ventral nerve cords 72 hr after larval hatching (ALH), from control (A) or embryonic exposure to picrotoxin (B). aCC dendritic arbor structure is marked by membrane targeted myr::tdTomato (red), and postsynaptic excitatory sites are marked by a Drep2::YPet fusion protein (cyan). Visualisation of individual aCC motoneurons is achieved by an RN2-enhancer element driving a stochastic FLP-out LexA expression system. (C) tdTomato fluorescence was used for AI-supported 3D reconstruction of the whole aCC dendritic arbor, allowing quantification of total dendrite length (grey segments), branch points (blue spots), and terminals (red spots). (D) Following live imaging, nerve cords were fixed and stained using a fluorophore-tagged nanobody to detect the Drep2::YPet fusion protein (D), enabling high-resolution and photostable imaging of Drep2::YPet puncta for quantification of excitatory postsynaptic site number by semi-automated spot detection (D’). (E) The total dendrite length, number of branch points, and number of terminals are shown for both control and picrotoxin treatments. (F) The number of Drep2::YPet puncta for the larger ipsilateral arbor (‘arbor1’) the smaller contralateral arbor (‘arbor2’), and the combined sum across both arbors (‘aCC’) is shown for both control and picrotoxin treatments. (G) Synapse density, calculated as the total dendrite length divided by total Drep2::YPet positive postsynaptic sites. In (E–G), each point represents a single aCC, where the symbol shape denotes the particular cell.
 
-## Stimulating mechanosensory neurons during the CP rescues the seizure phenotype associated with excessive excitatory activity
+### Stimulating mechanosensory neurons during the CP rescues the seizure phenotype associated with excessive excitatory activity
 
 As described above, developing circuits can be exposed to various influences (light, temperature, mutations, etc.) which may alter levels of activity. While some of these influences will increase excitation, others may decrease it. Because our data suggest that experiencing excessive excitation during the CP leads to an imbalanced mature network, it is conceivable that the nervous system must experience balance or a particular sum of excitatory and inhibitory influences, during the CP, to encode normal network properties (Fagiolini and Hensch, 2000).
 
 To test this hypothesis, we combined manipulations of predicted opposite valence to see whether, in the instance that we could achieve approximately equal strengths, increased excitation and inhibition would cancel each other. We chose to stimulate chordotonal (ch) neurons to counteract PTX. This is because ch neurons are mechanosensitive cells that have been proposed to provide an inhibitory ‘brake’ that slows locomotor network activity during the CP (Carreira-Rosario et al., 2021). We, therefore, built a device to stimulate ch neurons (see ‘Materials and methods’ and Figure 6—figure supplement 1) and performed experiments in which they were activated during the CP (17–19 hr AEL) or in immediately adjacent periods (15–17 hr or 19–21 hr AEL) to assess the impact of the brake alone, before pairing it with PTX (Figure 6A and B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/91599/elife-91599-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic showing stimulation of mechanosensory chordotonal neurons (ch) by vibration during the CP (17–19 hr after egg laying [AEL]). (B) Stimulating ch neurons during the CP, but not during 15–17 hr AEL or 19–21 hr AEL, significantly increases mature larval (L3) recovery duration from electroshock-induced seizure. CS is unmanipulated wild-type (Canton-S) controls. (C–E) Exposure to picrotoxin (PTX) during embryogenesis significantly increases mature larval (L3) recovery duration from electroshock-induced seizure, increases network synchronicity, and increases the strength of excitatory (A18a) inputs to motor neurons (aCC). All these effects are rescued by co-activation of ch neurons during the CP (PTX + Ch).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91599/elife-91599-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Image of the device, showing an Arduino Uno Rev 3 printed circuit board with microcontroller, which drives a speaker according to timings and frequency (i.e. 17–19 hr after egg laying [AEL] at 0.5 Hz) coded using C++ in Arduino IDE, and with an amplitude adjusted using a potentiometer. (B) GCaMP imaging demonstrating activity in the chordotonal neurons prior to (left) and following (right) stimulation by the device (response shown is to 1 s tone at 80 dB). (C) Representative trace of the activity shown in (B).
+
 Activation of ch neurons during the CP, but not before or after it, significantly lengthened recovery from induced seizures in L3 larvae (72.69 ± 6.02 s, 15–17 hr AEL; 122.7 ± 8.43 s, 17–19 hr AEL; 65.83 ± 26.07 s, 19–21 hr AEL; n = 39, 38, 40; p<0.0001 for 15–17 hr vs. 17–19 hr and 17–19 hr vs. 19–21 hr, 0.58 for 15–17 hr vs. 19–21 hr) (Figure 6B). This result shows that the majority of ch neuron activity influence on mature circuit function is, like PTX, limited to the embryonic CP. Similarly, that stimulating ch activity during the CP increases the seizure response to electroshock is consistent with optogenetic inhibition causing the same effect (Giachello and Baines, 2015). This result also supports previous work that showed perturbing activity of sensory neurons during the locomotor CP causes lasting changes to behaviour (Fushiki et al., 2013; Carreira-Rosario et al., 2021).
 
 Next, we tested how ch activity impacted the phenotypes observed for recovery from electroshock, network synchronicity, and amplitude of inputs from A18a to aCC, following embryonic exposure to PTX (Figure 6C–E). Remarkably, ch neuron activation provided a complete rescue of both network and cellular-level phenotypes associated with embryonic exposure to PTX. Thus, recovery from electroshock, which was again increased following exposure to PTX, was rescued to control levels when PTX was paired with ch neuron activation (72.03 ± 5.71 s, EtOH; 194.7 ± 12.22 s, PTX; 92.75 ± 8.95 s, PTX + Ch; n = 40, 40, 40; p<0.0001 for EtOH vs. PTX and PTX vs. PTX vs. PTX + Ch, 0.58 for EtOH vs. PTX + Ch) (Figure 6C). PTX-induced increase in synchrony of activity between adjacent aCC motoneurons was also rescued (0.96 ± 0.07 s, EtOH; 0.63 ± 0.06 s, PTX; 0.88 ± 0.08 s, PTX + Ch; n = 27, 28, 27; p=0.004 for EtOH vs. PTX, 0.75 for EtOH vs. PTX + Ch, 0.03 for PTX vs. PTX + Ch) (Figure 6D). Finally, the increased strength of excitatory A18a inputs to aCC following exposure to PTX was rescued by stimulation of ch neurons during the CP (12.92 ± 1.704 Hz, EtOH; 22.79 ± 2.42 Hz, PTX; 14.75 ± 1.98 s, PTX + Ch; n = 8, 8, 8; p=0.008 for EtOH vs PTX, 0.53 for EtOH vs. PTX + Ch, 0.023 for PTX vs. PTX + Ch) (Figure 6E). These results support the hypothesis that CPs integrate the excitatory and inhibitory activity to which they are exposed, to compute a sum that leads to a corresponding output in the mature locomotor network. If that sum equals balance (i.e. appropriate relative amounts of each), normal physiological function is established. An imbalance, however, may lead to altered network function.
 
-## Balancing activity during the CP rescues adult behaviour caused by genetic mutation
+### Balancing activity during the CP rescues adult behaviour caused by genetic mutation
 
 Next, we sought further confirmation that CPs integrate the activity they are exposed to. Specifically, we tested the effect of different amplitudes of ch neuron activity (as a function of 0, 40 dB, 60 dB, and 80 dB speaker volume), on recovery from seizure in bang-sensitive (parabss) L3. parabss mutants express a hypermorphic variant of the sole Drosophila voltage-gated sodium channel (para), which makes neurons more excitable. Previous work has shown that excitation is increased at all stages of embryonic and larval development, resulting in increased synchrony between aCC neurons and increased duration of electroshock-induced seizures (Marley and Baines, 2011a; Streit et al., 2016; Giachello and Baines, 2015). These larvae, therefore, provided an alternative means of inducing excessive excitation during the embryonic CP (rather than PTX) that we could oppose by ch neuron activity to test for impact on recovery from electroshock (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/91599/elife-91599-fig7-v2.jpg)
 
-**Figure 7.:** (A) The para (bssbss) mutation causes lifelong neural hyperactivity, which is evident in a long duration of recovery from seizure when compared to wild-type controls (Canton-S). This recovery can be rescued by balancing the hyperactivity present with inhibition provided by sufficiently strong stimulation of chordotonal (ch) neurons, during the CP (bss + 80 dB). Weaker stimulation of the ch neuron-mediated inhibition provides intermediate phenotypes (bss + 60 dB, bss + 40 dB) that suggest the function of the mature network reflects the sum of excitatory and inhibitory activity during the CP. (B) para raised at 21°C experience less excitation than those raised at 25°C (e.g. in bssA) during development, and demonstrate a reduced seizure phenotype compared to the latter. This phenotype is completely rescued by 40 dB stimulation of ch neurons (vs. 80 dB at 25°C (A)), which supports the idea that it is a balanced sum of excitatory and inhibitory activity during the CP, that enables normal mature network function. Similarly, exposing para raised at 21°C to 80 dB vibration during the CP results in a significant increase in seizure duration. We hypothesise that at this temperature inhibition provided by ch neuron activity is greater than the increase in excitation resulting from the bsspara mutation.bss
+**Figure 7.:** (A) The parabss (bss) mutation causes lifelong neural hyperactivity, which is evident in a long duration of recovery from seizure when compared to wild-type controls (Canton-S). This recovery can be rescued by balancing the hyperactivity present with inhibition provided by sufficiently strong stimulation of chordotonal (ch) neurons, during the CP (bss + 80 dB). Weaker stimulation of the ch neuron-mediated inhibition provides intermediate phenotypes (bss + 60 dB, bss + 40 dB) that suggest the function of the mature network reflects the sum of excitatory and inhibitory activity during the CP. (B) parabss raised at 21°C experience less excitation than those raised at 25°C (e.g. in A) during development, and demonstrate a reduced seizure phenotype compared to the latter. This phenotype is completely rescued by 40 dB stimulation of ch neurons (vs. 80 dB at 25°C (A)), which supports the idea that it is a balanced sum of excitatory and inhibitory activity during the CP, that enables normal mature network function. Similarly, exposing parabss raised at 21°C to 80 dB vibration during the CP results in a significant increase in seizure duration. We hypothesise that at this temperature inhibition provided by ch neuron activity is greater than the increase in excitation resulting from the parabss mutation.
 
 In agreement with previous work (Giachello and Baines, 2015), parabss recovery from electroshock was significantly longer than wild-type controls (168 ± 6.96 s, bss; 87.74 ± 3.45 s, CS; n = 50, 50; p<0.0001). This difference was rescued completely when ch neurons were stimulated during the CP at 80 dB (87.74 ± 3.45 s, CS; 94.51 ± 4.59 s, bss + 80 dB; n = 50, 50; p=0.91). This was the maximum strength of stimulation possible, and importantly, the effect was reduced in a dose-dependent manner as the intensity of ch stimulation during the CP decreased (125.6 ± 5.82 s, bss + 60 dB; 144.3 ± 6.61 s, bss + 40 dB; n = 50, 50; p=0.03 for bss vs. bss + 40 dB, <0.0001 for bss vs. bss + 60 dB) (Figure 7A).
 
@@ -123,33 +139,141 @@ In conclusion, our work provides novel insight into how activity manipulation, d
 
 ## Materials and methods
 
-## Drosophila rearing and stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>parabss1(bss)</td>
+      <td>Laboratory stocks</td>
+      <td></td>
+      <td>Nav channel hypermorph</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GMR94G06-Gal4</td>
+      <td>Gift from Juan J. Pérez-Moreno Pérez-Moreno and O’Kane, 2019</td>
+      <td></td>
+      <td>Expressed in aCC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>15B07-Gal4 -Gal4</td>
+      <td>Gift from Aref Zarin</td>
+      <td></td>
+      <td>Expressed in A18a</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>A31k-Gal4-Gal4</td>
+      <td>Gift from Akinao Nose</td>
+      <td></td>
+      <td>Expressed in A31k</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>iav-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC #52273</td>
+      <td>Expressed in chordotonal neurons</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Chronos</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC #77115</td>
+      <td>Green-shifted channelRhodopsin</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP7f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC #80906</td>
+      <td>Calcium activity indicator</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop2-Flp2</td>
+      <td>Gift from Jan Felix Evers Gärtig et al., 2019</td>
+      <td></td>
+      <td>lexAoperon flip-out line</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>13xLexAop2-IVS-myr::tdTomato (su(Hw)attP5)</td>
+      <td>Generated for use in the present study</td>
+      <td>BDSC #56142</td>
+      <td>Modified lexAoperon flip-out line</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Sigma-Aldrich, UK, or Merck, NJ</td>
+      <td>Sigma-Aldrich P1675 or Merck 528105</td>
+      <td>Toxin that increases neural activity</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Arduino IDE</td>
+      <td>Arduino</td>
+      <td>Arduino 1.8.19</td>
+      <td>Environment used for programming Arduino Uno</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Arduino Uno Rev 3</td>
+      <td>Arduino</td>
+      <td></td>
+      <td>Printed circuit board with ATmega 328P microcontroller</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Adafruit STEMMA Speaker</td>
+      <td>Adafruit</td>
+      <td>Plug and Play Audio Amplifier</td>
+      <td>1 W, 8 Ohm speaker</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila rearing and stocks
 
 Drosophila stocks were kept on standard corn meal medium, at 25°C. For all experiments where crosses were necessary, stocks were selected and combined as a 1:2 ratio of Gal4-line males to UAS-line virgin females.
 
 Wild-type Canton-S or bang-sensitive (a.k.a. bss, parabss1) were from our lab stocks. The following lines were used for GCaMP imaging and/or electrophysiology: w;;GMR94G06-Gal4 aCC, gift from Juan J. Pérez-Moreno (Pérez-Moreno and O’Kane, 2019); w-; 15B07-Gal4 (A18a, a.k.a. A18a-Gal4, gift from Aref Zarin); R20A03-p65ADzp in attP40; R93B07-ZpGDBD in attP2 (A31k, a.k.a, A31k-Gal4, gift from Akinao Nose); P{iav-GAL4.K}3 (chordotonal neurons, BDSC #52273); w[*]; P{y[+t7.7] w[+mC]=20XUAS-Chronos::mVenus}attP40 (BDSC #77115); w[1118]; P{y[+t7.7] w[+mC]=20XUAS-IVS-jGCaMP7f}su(Hw)attP5 (BDSC #80906); w-; 13xLexAop2-Flp2@attP40, Drep2FonYPet gift from Jan Felix Evers (Gärtig et al., 2019), 13xLexAop2-IVS-myr::tdTom @ su(HW)attP5/CyO, Dfd-GMR::YFP; RN2-FLP-hopA, tub-FRT-stop-FRT-LexAVP16 (No.5)/TM6b, Sb, Dfd-GMR::YFP (a.k.a. RN2-FLP LexA-tdTom Drep2::YPet) for microscopy.
 
-## Manipulation of activity during development
+### Manipulation of activity during development
 
-## PTX feeding protocol for increasing neural activity during development
+#### PTX feeding protocol for increasing neural activity during development
 
 PTX (Sigma-Aldrich, UK) and vehicle food were made by pipetting 20 µl 25 mg/ml PTX, or an equivalent volume of vehicle (ethanol, EtOH) to 1 ml of ddH2O, for a final concentration of 415 µm PTX. A 4 g yeast extract powder (Melford, UK) was stirred into the 1 ml ddH2O to make 5 g yeast paste food. Approximately 1 ml of either PTX or control food was then placed on the surface of a 6 ml grape agar plate. Flies were added to a 50 ml beaker using a funnel, and the beaker was connected to a grape agar plate (with food) using a pressure-fit plastic collar to form a small laying pot. Laying pots were left at 18°C for 48 hr (over weekend) to allow flies to acclimate and eat the food. After 48 hr, pots were moved to 25°C and changed (beaker swapped and food replenished) at 10:00 and 15:00 every day for 5 d (Monday–Friday). Embryos were collected from the surface of grape agar plates using a wet paintbrush for the final 3 d (Wednesday–Friday) of this process. Following collection, embryos (of either sex) were gently placed on the surface of vials containing either (1) corn meal medium enriched with ~70 µM all-trans retinal (Sigma-Aldrich, 50 µl of 100 mM stock pipetted onto ~7 ml food and left to dry before embryos were added), a cofactor chromophore necessary for activation of channelrhodopsin, for animals to be used in optogenetic experiments; or (2) normal corn meal medium, in the case of embryos developing into larvae used in GCaMP imaging or behavioural experiments.
 
-## Vibration protocol for activating chordotonal neurons during embryonic development
+### Vibration protocol for activating chordotonal neurons during embryonic development
 
 Gravid females were fed either (1) normal corn meal medium where effect of chordotonal neurons was not used to rescue effect of PTX (e.g. Canton-S and parabss experiments) or (2) 830 µm PTX food (as above), when chordotonal neuron activity was used to rescue effect of PTX. Male and female embryos were collected Monday–Thursday and timed precisely (from animals laying in a 4 hr window between 10:30 and 14:30) to ensure that the developmental stage at which embryos were exposed to vibration included the 17–19 hr AEL CP. Embryos were collected onto grape agar plates and arranged dorsal side up. Plates were then placed on a custom-made perspex shelf glued to a speaker (Adafruit STEMMA Speaker – Plug and Play Audio Amplifier), in a 25°C incubator. The speaker was wired to an Arduino Uno Rev 3 printed circuit board with an ATmega328P microcontroller, which was programmed using C++, via the Arduino IDE (Arduino 1.8.19), using code available on GitHub (J-M-L et al., 2022).
 
 The code was written and refined by several users of the Arduino forum. The original forum thread, which includes the usernames of those who contributed to it, is visible here. The code instructed the Arduino to power the speakers to provide a 1 kHz tone (vibration) to the perspex shelf (so the embryos), with an on–off frequency of 0.5 Hz (on 1 s, off 1 s) for 6 hr, starting 12.75 hr after a button was pressed. Thus, once embryos were collected and placed on the shelf at 14:30, the button was pressed at 14:45, and stimulation was delivered to embryos between 03:30 and 09:30. Tone volume was 80 dB for all experiments besides those where others are stated explicitly (e.g. 40 and 60 dB).
 
-## Crawling velocity
+### Crawling velocity
 
 Male and female wall-climbing third-instar larvae (L3) were selected from vials and washed to remove food residue. They were dried with a tissue and placed in the centre of a 1% agarose gel arena surrounded by a 5 M NaCl (Sigma-Aldrich) moat. Animals were then left to acclimatise to the arena and recover from handling for 30 s. Crawling was then recorded for 120 s using a DanioVision observation chamber (Noldus, the Netherlands). Only larvae that spent 100% of recording time within the gel arena were included in analysis (the few that entered the moat were excluded). Velocity was calculated from movement of a centroid automatically identified by the tracking system, in mm/s, using the Ethovision software (Noldus, v. XT 11).
 
-## Recovery from electroshock
+### Recovery from electroshock
 
 Assays were conducted as described previously (Marley and Baines, 2011a). In brief, male and female wall-climbing L3 larvae were selected from vials and washed to remove food residue. L3 were dried with a tissue and placed on an plastic plate lid to recover from handling. Once animals had recovered and normal crawling had resumed, a handheld stimulator composed of two tungsten wires fixed to a nonconducting rod (tips of the two wires [0.1 mm diameter] were set 1–2 mm apart) was positioned and very gently pressed into the larval cuticle, perpendicular to and over the approximate position of the CNS. A direct current pulse (10 V, 1 s) generated by a DS2A Mk.II stimulator (Digitimer Ltd, UK) was delivered via the probe to the animals, which usually responded with a sustained contraction and subsequent immobility representing seizure-like behaviour. The time to resumption of normal behaviour (regular, whole-body peristaltic waves that produce forward locomotion) was recorded and defined as duration of recovery from seizure. Strong peripheral stimulation likely causes excessive and synchronous synaptic excitation within the CNS, resulting in seizure. However, the precise mechanism of this effect remains to be determined.
 
-## Electrophysiology
+### Electrophysiology
 
 Recordings were performed as described previously (Baines and Bate, 1998; Marley and Baines, 2011a) in male and female L3 larvae. In brief, the protocol was as follows: larvae were dissected in a dish in saline (135 mM NaCl [Fisher Scientific, UK], 5 mM KCl [Fisher Scientific], 4 mM MgCl2·6H2O [Sigma-Aldrich], 2 mM CaCl2·2H2O [Fisher Scientific], 5 mM TES [Sigma-Aldrich], 36 mM sucrose [Fisher Scientific], at pH 7.15) to remove the CNS. The isolated CNS preparation was then transferred to a 200 µl droplet of external saline, within which it was laid flat (dorsal side up) and glued to a Sylgard-coated cover slip on a slide. Then, 200 µM mecamylamine (Sigma-Aldrich) was added to the droplet of saline for recordings made following optogenetic activation of A31k, but was not added for those made following activation of cholinergic A18a.
 
@@ -157,26 +281,26 @@ Before recording, interneuron Gal4 and mVenus-tagged reporter line expression (e
 
 Current-clamp recordings from aCC were made by injecting current (~5–10 pA) sufficient to evoke APs in aCC at a frequency of ~5–10 Hz. Premotor synaptic drive was elicited by optogenetic stimulation of interneurons using green light (565 nm OptoLED, Cairn Instruments) controlled by a Clampex (version 10.7) protocol comprised of three sweeps (repetitions) of 1 s LED off, 1 s on, 1 s off, for each preparation. Change in frequency (ΔAP Freq. [Hz]) was calculated as the difference in number of APs firing before and during optogenetic stimulation.
 
-## GCaMP imaging
+### GCaMP imaging
 
 Imaging was performed on aCC motor neurons in w; UAS-GCamP7f x w;;GMR94GO-Gal4 male and female L3 derived from gravid females fed PTX, or vehicle control (see section ‘Manipulation of activity during development’). Larvae were dissected in a dish in external saline (see section ‘Electrophysiology’) to remove the CNS. The isolated CNS preparation was then transferred to a droplet of saline, within which it was laid flat (dorsal side up) on a Sylgard-coated cover slip on a slide. The slide was positioned under a microscope (model BX51WI, Olympus) with a Hamamatsu ORCA-flash 4.0C114440 digital camera, and the CNS viewed using a ×20 water immersion lens. Blue light (a 470 nm OptoLED, Cairn Instruments) was used to excite GCaMP, and fluorescence was recorded for 180 s at a 10 Hz imaging rate using Winflour v4.1.3 (University of Strathclyde). During analysis, ROIs were placed on aCC axons, on the same side of the VNC, from A6-A4, and exported into Clampex (10.7). Traces were smoothed (add type and amount), with forward wave propagation being measured between adjacent ipsilateral ROIs. Time lag was measured as the mean duration between events (peak amplitudes), between segments A6-A5 and A5-A4. Means were calculated from up to five individual measures of time lag.
 
-## Confocal microscopy
+### Confocal microscopy
 
-## PTX feeding protocol
+#### PTX feeding protocol
 
 PTX (Merck, NJ) was prepared to 25 mg/ml in 100% ethanol, then 40 ul of this stock diluted 50-fold by adding to 1960 ul ddH2O then mixed with 8 g of yeast extract powder (Melford), while for controls the equivalent amount of EtOH only was used. Canton-S virgin females were crossed to RN2-FLP LexA-tdTom Drep2::YPet males (see above for complete genotype) and left to mate in vials at 25°C for 24 hr. Mated flies were distributed to two laying pots with apple juice agar plates, with an excess (~0.5 g) of either PTX or control yeast extract paste. Laying pots were kept at 25°C, and yeast plates changed and discarded daily for 3 d to ensure sufficient time for drug exposure. Thereafter, newly hatched larvae aged to within 1 hr of one another were picked from laying plates and transferred to new apple juice agar plates with an excess of normal yeast paste (dried baker’s yeast and ddH2O), and allowed to develop at 25°C for 72 hr.
 
-## Imaging
+#### Imaging
 
 At 72 hr after larval hatching (ALH), larvae of the correct genotype were chosen by selection against the Dfd-GMR-YFP balancer. Larval nerve cords were dissected at room temperature in Sorensen’s saline, adhered to a poly-l-lysine (Merck)-coated coverglass, and imaged ‘live’ within a drop of Sorensen’s saline on a Leica Stellaris 5 upright confocal microscope with a Leica 506148 HC APO L 63×/0.9 W U-V-I Water Immersion objective. The following imaging settings were used: format 800 × 800, 16 bit, scan speed 400 Hz, bidirectional scanning, pinhole 1 Airy Unit, z step size 0.3 um, sequential frame scanning. For Drep2::YFP detection: excitation 514 nm at 1.5% power, gain 20, emission collection window 520–540 nm, frame accumulation 3. For myr::tdTom detection: excitation 561 nm at 2% power, gain 15, emission collection window 570–700 nm, line accumulation 4. Inbuilt Leica LIGHTNING deconvolution software was used with default settings optimised for water immersion. Following acquisition of the ‘live’ image, nerve cords were fixed for 15 min at room temperature in 2% PFA in Sorensen’s saline, washed 3× in Sorensen’s saline, blocked for 1 hr at 4°C in blocking solution (1× Sorensen’s saline, 0.3% Triton-X-100, 0.25% BSA), and then incubated for 15 hr at 4°C with FluoTag-X4 anti-RFP STAR635P and FluoTag-X4 anti-GFP ATTO488 (NanoTag Biotechnologies), both diluted 1:500 in blocking solution. Stained samples were then washed 3× in Sorensen’s saline at 4°C for >1 hr before imaging again. Imaging settings for nanobody-stained samples were the same as for live samples, with the following specific differences: format 1024 × 1024, z step size 0.25 um. For Drep2::YFP>anti-GFP ATTO488 detection: excitation 488 nm at 1.5% power, gain 2.5, emission collection window 498–580 nm, line averaging 3, line accumulation 3. For myr::tdTom>anti-RFP STAR635P detection: excitation 638 nm at 2% power, gain 15, emission collection window 648–830 nm, line averaging 3, line accumulation 3.
 
-## Image analysis
+#### Image analysis
 
 Imaris v10.0 software (Bitplane) was used for image analysis. Dendrites were reconstructed from the myr::tdTom channel of ‘live images’ as dendrite morphology is clearer pre-fixation. The Imaris filaments module was used for dendrite reconstruction using the tree autopath algorithm, with the starting points threshold set to include just one starting point on the cell body. Seed points for segments multiscale points were set to a thinnest diameter of 0.01 um and largest diameter of 3 um. Iterative rounds of user-informed AI training were used for seed point classification until all seed points correctly coincided with dendrites, followed by iterative rounds of AI training for segment classification. A tree-build maximum gap length of 5 um was used. Drep2::YPet marking postsynaptic sites was detected from the fixed and nanobody-stained images since Drep2::YPet>anti-GFP ATTO488 showed good photostability through the z-stack compared with ‘live’ YPet protein, which suffered substantial photobleaching through the course of acquiring a ‘live’ image stack. The Imaris spots module was used for Drep2::YPet spot detection using an estimated xy diameter of 0.1 um and z diameter of 0.5 um. The spot quality threshold was informed by the frequency histogram and set to the trough point, at which any further decrease in threshold results in a sharp increase in spot number, corresponding to false-positive spots detected outside the cell from low-level background. In this way, all Drep2::YPet puncta of different sizes were detected, while avoiding false positives from low-level background.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were imported into and organised in Microsoft Excel (Microsoft Corporation, WA), and GCaMP imaging activity peaks were smoothed and quantified in ClampFit before being copied into GraphPad Prism 9 (GraphPad Software) for statistical analysis. Normality was tested using the Shapiro–Wilk test, with further analysis conducted according to the nature of the distribution. Specifically, differences between two groups of normally distributed data for crawling velocity, recovery time from electroshock, change in aCC evoked AP firing frequency in response to premotor interneuron stimulation and mini amplitude or frequency, were analysed by Student’s t-tests and are shown as mean ± SEM. Normally distributed data compared across three groups (e.g. all experiments that showed rescue of activity imbalance by ch stimulation, besides synchronicity [see below]) was analysed using one-way ANOVA with multiple comparisons. Data for rescue of synchronicity following exposure to PTX by ch stimulation were not normally distributed, so were analysed using one-way ANOVA with Kruskal–Wallis multiple comparisons test. p-Values<0.05 are considered significant, and levels of significance are represented by *p<0.05, **p<0.01, ***p<0.01.
 
-Effect size (Cohen’s d) for change in aCC-evoked AP firing frequency in response to premotor interneuron stimulation was calculated manually using the formula: Cohen`sd=M1-M2/SDpooled , where M1 = mean aCC AP firing frequency before activation of premotor neuron; M2 = mean aCC AP firing frequency during activation of premotor neuron; and SDpooled= .
+Effect size (Cohen’s d) for change in aCC-evoked AP firing frequency in response to premotor interneuron stimulation was calculated manually using the formula: $Cohen^{`}sd=M_{1}-M_{2}/SD_{pooled}$ , where $M_{1}$ = mean aCC AP firing frequency before activation of premotor neuron; $M_{2}$ = mean aCC AP firing frequency during activation of premotor neuron; and $SD_{pooled}=\sqrt{}$ .

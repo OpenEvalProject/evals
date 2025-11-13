@@ -176,7 +176,7 @@
 
 ## Abstract
 
-Recently, loss-of-function variants in TLR7 were identified in two families in which COVID-19 segregates like an X-linked recessive disorder environmentally conditioned by SARS-CoV-2. We investigated whether the two families represent the tip of the iceberg of a subset of COVID-19 male patients. This is a nested case-control study in which we compared male participants with extreme phenotype selected from the Italian GEN-COVID cohort of SARS-CoV-2-infected participants (<60 y, 79 severe cases versus 77 control cases). We applied the LASSO Logistic Regression analysis, considering only rare variants on young male subsets with extreme phenotype, picking up TLR7 as the most important susceptibility gene. Overall, we found TLR7 deleterious variants in 2.1% of severely affected males and in none of the asymptomatic participants. The functional gene expression profile analysis demonstrated a reduction in TLR7-related gene expression in patients compared with controls demonstrating an impairment in type I and II IFN responses. Young males with TLR7 loss-of-function variants and severe COVID-19 represent a subset of male patients contributing to disease susceptibility in up to 2% of severe COVID-19. Funded by private donors for the Host Genetics Research Project, the Intesa San Paolo for 2020 charity fund, and the Host Genetics Initiative. NCT04549831 .
+Background:Recently, loss-of-function variants in TLR7 were identified in two families in which COVID-19 segregates like an X-linked recessive disorder environmentally conditioned by SARS-CoV-2. We investigated whether the two families represent the tip of the iceberg of a subset of COVID-19 male patients.Methods:This is a nested case-control study in which we compared male participants with extreme phenotype selected from the Italian GEN-COVID cohort of SARS-CoV-2-infected participants (<60 y, 79 severe cases versus 77 control cases). We applied the LASSO Logistic Regression analysis, considering only rare variants on young male subsets with extreme phenotype, picking up TLR7 as the most important susceptibility gene.Results:Overall, we found TLR7 deleterious variants in 2.1% of severely affected males and in none of the asymptomatic participants. The functional gene expression profile analysis demonstrated a reduction in TLR7-related gene expression in patients compared with controls demonstrating an impairment in type I and II IFN responses.Conclusions:Young males with TLR7 loss-of-function variants and severe COVID-19 represent a subset of male patients contributing to disease susceptibility in up to 2% of severe COVID-19.Funding:Funded by private donors for the Host Genetics Research Project, the Intesa San Paolo for 2020 charity fund, and the Host Genetics Initiative.Clinical trial number:NCT04549831.
 
 ## Introduction
 
@@ -192,11 +192,11 @@ Here, we performed a nested case-control study within our prospectively recruite
 
 ## Materials and methods
 
-## Patients and samples
+### Patients and samples
 
 A subset of 156 young (<60 years) male COVID-19 patients was selected from the Italian GEN-COVID cohort of 1,178 SARS-CoV-2-infected participants (https://sites.google.com/dbm.unisi.it/gen-covid) (Daga et al., 2021). The study (GEN-COVID) was consistent with Institutional guidelines and approved by the University Hospital (Azienda Ospedaliero-Universitaria Senese) Ethical Review Board, Siena, Italy (Prot n. 16929, dated March 16, 2020). We performed a nested case-control study (STREGA reporting guideline was used to support reporting of this study). Cases were selected according to the following inclusion criteria: i. male gender; ii. young age (<60 years); iii endotracheal intubation or CPAP/biPAP ventilation (79 participants). As controls, 77 participants were selected using the sole criterion of being oligo-asymptomatic not requiring hospitalization. Cases and controls represented the extreme phenotypic presentations of the GEN-COVID cohort. Exclusion criteria for both cases and controls were: i. SARS-CoV-2 infection not confirmed by PCR; ii. non-white ethnicity. Materials and methods details are listed in the Online Repository. A similar cohort from the second wave, composed of 83 young male COVID-19 patients, was used to expand the cohort.
 
-## Statistical methods
+### Statistical methods
 
 We adopted the LASSO logistic regression, one of the most common Machine Learning algorithms for classification, that provides a feature selection method within the classification task able to enforce both the sparsity and the interpretability of the results (Tibshirani, 1996). In fact, the coefficients of the logistic regression model are directly related to the importance of the corresponding features, and LASSO regularization shrinks close to zero the coefficients of features that are not relevant in predicting the response, reducing overfitting and giving immediate interpretability of the model predictions in terms of few feature importance.
 
@@ -208,19 +208,76 @@ In order to evaluate the significance of the association between TLR7 variants a
 
 For the quantitative PCR assay, the fold changes in mRNA expression level per gene were compared between the individual patients and controls using an unpaired t test on the log-transformed fold changes. p Values < 0.05 were considered statistically significant.
 
-## In vitro peripheral blood mononuclear cell (PBMC) experiments
+### In vitro peripheral blood mononuclear cell (PBMC) experiments
 
 Peripheral blood mononuclear cells (PBMC) were isolated by Ficoll‐Hypaque (GE Healthcare Bio-Sciences AB) density gradient centrifugation as previously described (Mantovani et al., 2019). 5 × 105 PBMC from COVID-19 patients 6 months after recovery and six unaffected male and female controls were stimulated for 4 hr with the TLR7 agonist imiquimod at 5 μg/mL or cell culture medium. Total RNA extraction was performed with RNeasy Plus Mini kit and gDNA eliminator mini spin columns (QIAGEN, Hilden, Germany), following the manufacturer's instructions. First-strand cDNA was synthesized from total RNA using High-Capacity cDNA Reverse Transcription Kit following the manufacturer's instructions (Thermo Fisher Scientific, Waltham, Massachusetts, United States). The Advanced Universal SYBR Green Supermix (BioRad, Redmond, WA, United States) was used. All reactions were performed in triplicates using the CFX96 Real-Time machine detection system (BioRad, Redmond, WA, United States) and each sample was amplified in duplicate. The following primers were used:
 
-TLR7Fw Primer5’-CATCAAGAGGCTGCAGATTAAA-3’Rv Primer5’-GAAAAGATGTTGTTGGCCTCA-3’IFN-γFw Primer5’-TGACCAGAGCATCCAAAAGA-3’Rv Primer5’-CTCTTCGACCTCGAAACAGC-3’IRF7Fw Primer5’-CCATCTTCGACTTCAGAGTCTTC-3’Rv Primer5’-TCTAGGTGCACTCGGCACAG-3’ISG15Fw Primer5’-GACAAATGCGACGAACCTCT-3’Rv Primer5’-GAACAGGTCGTCCTGCACAC-3’IFN-aFw Primer5’-GACTCCATCTTGGCTGTGA-3’Rv Primer5’-TGATTTCTGCTCTGACAACCT-3’HRPT1Fw Primer5’-TGACACTGGCAAAACAATGCA-3’Rv Primer5’-GGTCCTTTTCACCAGCAAGCT-3’
+<table>
+  <tbody>
+    <tr>
+      <td rowspan="2">TLR7</td>
+      <td>Fw Primer</td>
+      <td>5’-CATCAAGAGGCTGCAGATTAAA-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-GAAAAGATGTTGTTGGCCTCA-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IFN-γ</td>
+      <td>Fw Primer</td>
+      <td>5’-TGACCAGAGCATCCAAAAGA-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-CTCTTCGACCTCGAAACAGC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IRF7</td>
+      <td>Fw Primer</td>
+      <td>5’-CCATCTTCGACTTCAGAGTCTTC-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-TCTAGGTGCACTCGGCACAG-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">ISG15</td>
+      <td>Fw Primer</td>
+      <td>5’-GACAAATGCGACGAACCTCT-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-GAACAGGTCGTCCTGCACAC-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">IFN-a</td>
+      <td>Fw Primer</td>
+      <td>5’-GACTCCATCTTGGCTGTGA-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-TGATTTCTGCTCTGACAACCT-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HRPT1</td>
+      <td>Fw Primer</td>
+      <td>5’-TGACACTGGCAAAACAATGCA-3’</td>
+    </tr>
+    <tr>
+      <td>Rv Primer</td>
+      <td>5’-GGTCCTTTTCACCAGCAAGCT-3’</td>
+    </tr>
+  </tbody>
+</table>
 
 A total of 2.5 × 105 PBMC from COVID-19 patients and healthy controls were maintained in RPMI-1640 supplemented with 10% of FCS, 1% antibiotic antimycotic solution, 1% L-glutamine and 1% Sodium Pyruvate (Sigma-Aldrich, St. Louis, MO, USA) and stimulated in vitro for 4 hr with Lipopolysaccharide (LPS) at 1 μg/ml or cell culture medium and the Protein Transport Inhibitor GolgiStop (BD Biosciences, San Diego, CA, USA). After washing, PBMC were stained for surface cell marker using mouse anti-CD14PerCP-Cy5.5 (BD Biosciences) and anti-CD3BV605 (BD Biosciences) monoclonal antibody (mAb). Cells were fixed with BD Cytofix/Cytoperm and permeabilized with the BD Perm/Wash buffer (BD Biosciences) according to the manufacturer's instructions, in the presence of anti-IL6BV421 (BD Biosciences) mAb. Ex-vivo TLR7 intracellular expression was evaluated in PBMC from patients and controls by flow cytometry. 2,5 × 105 PBMC were stained for surface markers using anti-CD19BV605, anti-CD14PerCP-Cy5.5 and anti-CD3BV421 (BD Biosciences) mAbs. Cells were fixed and permeabilized in the presence of anti-TLR7 Alexa Fluor 488 (R and D System, Minneapolis, MN, USA) mAb or isotype control as described above. After staining cells were washed, immediately fixed in CellFix solution (BD Biosciences) and analysed. Cell acquisition was performed on a 12-color FACSCelesta (BD Biosciences, San Diego, CA, USA) instrument. Data analysis was performed with the Kaluza 2.1 software (Beckman Coulter).
 
-## Protein stability prediction
+### Protein stability prediction
 
 The protein structure of Human Toll Like Receptor, UniProtKB ID Q9NYK1 [https://www.uniprot.org/uniprot/Q9NYK1], was obtained by homology modeling using Swiss Model tool (Waterhouse et al., 2018). The selected template protein with 97% of sequence identity was the Crystal structure of monkey TLR7 with PDB ID 5GMF [https://www.rcsb.org/structure/5GMF]. The two Val to Asp missense mutations were analysed by using different protein stability predictors like Polyphen-2 (Adzhubei et al., 2010), SIFT (Ng and Henikoff, 2003), and DynaMut (Rodrigues et al., 2018).
 
-## Transfection experiments of TLR7 variants
+### Transfection experiments of TLR7 variants
 
 PCR based site-directed mutagenesis was performed in pUNO-hTLR7 plasmid (Invivogen), kindly provided by Ugo D’Oro (GSK Vaccines, Siena, Italy) (Iavarone et al., 2011), to generate specific plasmids for each TLR7 variant, including those considered neutral (mutagenic primers available on request).
 
@@ -234,11 +291,152 @@ Toll-like receptor 7 (TLR7) was picked up as one of the most important susceptib
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67569/elife-67569-fig1-v2.jpg)
 
-**Figure 1.:** TLR7 variants and association with COVID-19.LASSO logistic regression on boolean representation of rare variants of all genes of the X chromosome is presented. TLR7 is picked up by LASSO logistic regression as one of the most important genes on the X chr (Panel A). The LASSO logistic regression model provides an embedded feature selection method within the binary classification tasks (male patients with life-threatening COVID-19 vs infected asymptomatic male participants). The upward histograms (positive weights) reflect a susceptible behavior of the features to the target COVID-19, whereas the downward histograms (negative weights) a protective action. Panel B represents the cross-validation accuracy score for the grid of LASSO regularization parameters; the error bar is given by the standard deviation of the score within the 10 folds; the red circle (1.26) corresponds to the parameter chosen for the fitting procedure. Performances are evaluated through the confusion matrix of the aggregated predictions in the 10 folds of the cross-validation (Panel C) and with the boxplot (Panel D) of accuracy (60% average value), precision (59%), sensitivity (75%), specificity (43%), and ROC-AUC score (68%). The box extends from the Q1 to Q3 quartile, with a line at the median (Q2) and a triangle for the average.
+**Figure 1.:** LASSO logistic regression on boolean representation of rare variants of all genes of the X chromosome is presented. TLR7 is picked up by LASSO logistic regression as one of the most important genes on the X chr (Panel A). The LASSO logistic regression model provides an embedded feature selection method within the binary classification tasks (male patients with life-threatening COVID-19 vs infected asymptomatic male participants). The upward histograms (positive weights) reflect a susceptible behavior of the features to the target COVID-19, whereas the downward histograms (negative weights) a protective action. Panel B represents the cross-validation accuracy score for the grid of LASSO regularization parameters; the error bar is given by the standard deviation of the score within the 10 folds; the red circle (1.26) corresponds to the parameter chosen for the fitting procedure. Performances are evaluated through the confusion matrix of the aggregated predictions in the 10 folds of the cross-validation (Panel C) and with the boxplot (Panel D) of accuracy (60% average value), precision (59%), sensitivity (75%), specificity (43%), and ROC-AUC score (68%). The box extends from the Q1 to Q3 quartile, with a line at the median (Q2) and a triangle for the average.
 
 We then investigated a similar cohort coming from the Italian second wave composed of male patients under 60 years of age without comorbidities (56 cases and 27 controls) was used to expand the cohort. All participants were white European. We found a TLR7 variant in one of 56 cases (1.7%) and in none of 27 controls. Overall, the association between the presence of TLR7 rare variants and severe COVID-19 was significant (p=0.037 by Fisher Exact test, Table 1).
 
+**Table 1.**
+ Fisher exact test of the overall combined cohorts in young males (<60 years).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Clinical category</th>
+      <th>N. wild-type variants (97.84%)</th>
+      <th>N. pathological variants (2.15%)</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Severely affected males</td>
+      <td>129</td>
+      <td>6</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>Asymptomatic males</td>
+      <td>104</td>
+      <td>0</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>233</td>
+      <td>6</td>
+      <td>239 (Grand Total)</td>
+    </tr>
+  </tbody>
+</table>
+
+_p-value=0.0037._
+
 We then investigated the presence of TLR7 rare variants in the entire male cohort of 561 COVID-19 patients (261 cases and 300 controls) regardless of age. We found TLR7 rare missense variants in three additional patients over 60 years of age, including two cases (who shared the p.Ala1032Thr variant) and one control (C1), bearing the p.Val222Asp variant, predicted to have a low impact on protein function (CADD of 5.36) (Table 2).
+
+**Table 2.**
+ TLR7 variants in severely affected Italian males -all ages- (cases).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nucleotide change</th>
+      <th>Amino acid change</th>
+      <th>dbSNP</th>
+      <th>CADD</th>
+      <th>ExAC_ NFE</th>
+      <th>Function*</th>
+      <th>N. of patients</th>
+      <th>Clinical category†</th>
+      <th>Age</th>
+      <th>Cohort</th>
+      <th>Patient ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c.901T&gt;C</td>
+      <td>Ser301Pro</td>
+      <td>-</td>
+      <td>26.4</td>
+      <td>N/A</td>
+      <td>LOF</td>
+      <td>1</td>
+      <td>3</td>
+      <td>46</td>
+      <td>Italian</td>
+      <td>P3</td>
+    </tr>
+    <tr>
+      <td>c.2759G&gt;A</td>
+      <td>Arg920Lys</td>
+      <td>rs189681811</td>
+      <td>16.52</td>
+      <td>0.0002</td>
+      <td>LOF‡</td>
+      <td>1</td>
+      <td>4</td>
+      <td>49</td>
+      <td>Italian</td>
+      <td>P6</td>
+    </tr>
+    <tr>
+      <td>c.3094G&gt;A</td>
+      <td>Ala1032Thr</td>
+      <td>rs147244662</td>
+      <td>22.3</td>
+      <td>0.0006</td>
+      <td>LOF</td>
+      <td>2</td>
+      <td>3</td>
+      <td>65/66</td>
+      <td>Italian</td>
+      <td>P7/P8</td>
+    </tr>
+    <tr>
+      <td>c.655G&gt;A</td>
+      <td>Val219Ile</td>
+      <td>rs149314023</td>
+      <td>12.28</td>
+      <td>0.0003</td>
+      <td>HYPO</td>
+      <td>1</td>
+      <td>4</td>
+      <td>32</td>
+      <td>Italian</td>
+      <td>P1</td>
+    </tr>
+    <tr>
+      <td>c.863C&gt;T</td>
+      <td>Ala288Val</td>
+      <td>rs200146658</td>
+      <td>15.37</td>
+      <td>0.000012</td>
+      <td>Neutral</td>
+      <td>1</td>
+      <td>3</td>
+      <td>57</td>
+      <td>Italian</td>
+      <td>P2</td>
+    </tr>
+    <tr>
+      <td>c.1343C&gt;T</td>
+      <td>Ala448Val</td>
+      <td>rs5743781</td>
+      <td>13.08</td>
+      <td>0.00465</td>
+      <td>Neutral</td>
+      <td>2</td>
+      <td>3</td>
+      <td>53/58</td>
+      <td>Italian</td>
+      <td>P4/P5</td>
+    </tr>
+  </tbody>
+</table>
+
+_CADD, Combined Annotation Dependent Depletion; ExAC, Exome Aggregation Consortium; NFE, Non-Finnish European;*Function: HYPO, hypomorphic; LOF, loss-of-function;†Clinical category: 4, Hospitalized and intubated; 3, Hospitalized and CPAP-BiPAP and high-flows oxygen treated; 2, Hospitalized and treated with conventional oxygen support only; 1, Hospitalized without respiratory support; 0, Not hospitalized oligo/asymptomatic individuals.‡based on in silico prediction._
 
 In order to functionally link the presence of the identified TLR7 missense variants and the effect on the downstream type I IFN-signaling, we performed a gene expression profile analysis in peripheral blood mononuclear cells (PBMCs) isolated from patients following recovery, after stimulation with the TLR7 agonist imiquimod, as reported by van der Made et al., 2020. To explore all TLR7 variants identified, we examined PBMCs from the control and all cases except P4 and P6 because them were not available. However, P4 and P5 shared the same variant. This analysis showed a statistically significant decrease of all TLR7-related genes for two variants (Ser301Pro and Ala1032Thr) identified in cases P3, P7, and P8 compared with healthy controls (Ctl) demonstrating a complete impairment of TLR7 signaling pathways in response to TLR7 stimulation (Figure 2, panel A and Table 2). The variant Val219Ile (P1) showed a hypomorphic effect determining a statistically significant decrease in mRNA levels only for IRF7 (directly activated by TLR7) and IFN-γ (Figure 2, panel A). Two Ala to Val variants identified in severely affected patients, Ala288Val and Ala448Val, were functionally neutral, that is not predicted to impair the TLR7 signaling pathways. This was confirmed by biochemical and structural analysis on the crystal structure of TLR7 protein (https://www.uniprot.org/uniprot/Q9NYK1). The prediction performed with different computational approaches showed both variants as benign with no effects on structural stabilization. Interestingly, the p.Val222Asp variant (C1) proved to be functionally neutral, in keeping with it being identified in the control and not in cases (Figure 2, panel A).
 

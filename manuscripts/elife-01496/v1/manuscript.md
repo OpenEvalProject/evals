@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.01496.001 Oxygenic photosynthesis supports virtually all life forms on earth. Light energy is converted by two photosystems—photosystem I (PSI) and photosystem II (PSII). Globally, nearly 50% of photosynthesis takes place in the Ocean, where single cell cyanobacteria and algae reside together with their viruses. An operon encoding PSI was identified in cyanobacterial marine viruses. We generated a PSI that mimics the salient features of the viral complex, named PSI PsaJF . PSI PsaJF is promiscuous for its electron donors and can accept electrons from respiratory cytochromes. We solved the structure of PSI PsaJF and a monomeric PSI, with subunit composition similar to the viral PSI, providing for the first time a detailed description of the reaction center and antenna system from mesophilic cyanobacteria, including red chlorophylls and cofactors of the electron transport chain. Our finding extends the understanding of PSI structure, function and evolution and suggests a unique function for the viral PSI. DOI: http://dx.doi.org/10.7554/eLife.01496.001
+Oxygenic photosynthesis supports virtually all life forms on earth. Light energy is converted by two photosystems—photosystem I (PSI) and photosystem II (PSII). Globally, nearly 50% of photosynthesis takes place in the Ocean, where single cell cyanobacteria and algae reside together with their viruses. An operon encoding PSI was identified in cyanobacterial marine viruses. We generated a PSI that mimics the salient features of the viral complex, named PSIPsaJF. PSIPsaJF is promiscuous for its electron donors and can accept electrons from respiratory cytochromes. We solved the structure of PSIPsaJF and a monomeric PSI, with subunit composition similar to the viral PSI, providing for the first time a detailed description of the reaction center and antenna system from mesophilic cyanobacteria, including red chlorophylls and cofactors of the electron transport chain. Our finding extends the understanding of PSI structure, function and evolution and suggests a unique function for the viral PSI.
 
 ## Introduction
 
@@ -33,35 +33,207 @@ In this work, we characterized both biochemically and structurally a phage-mimet
 
 ## Results
 
-## Structure of a trimeric PSIPsaJF
+### Structure of a trimeric PSIPsaJF
 
-We hypothesized that the consequences of this viral JF gene product would be a PSI complex with more promiscuous electron acceptor reactions (
+We hypothesized that the consequences of this viral JF gene product would be a PSI complex with more promiscuous electron acceptor reactions (Sharon et al., 2009). Cyanobacteria employ a multitude of electron transfer reactions in their membrane systems. These systems are at least partially insulated by spatial confinement of the various electron donors and acceptors, but the molecular interactions between these donors and acceptors may also contribute to pathway isolation. To explore the promiscuity of viral PSI complexes, we constructed a phage-mimetic PsaJ-PsaF fusion in the easily cultivable cyanobacterium Synechocystis sp. PCC 6803. The borders of PsaJ and PsaF are easily located in the viral gene and the high conservation of the PsaF subunit enabled us to duplicate the salient features of the viral gene into our artificially constructed fusion made from the corresponding Synechocystis genes (Figure 1—figure supplement 1). Synechocystis strains carrying the fused PsaJF gene as their sole source of PsaF and PsaJ, grow at wild type rates in heterotrophic conditions and without added carbon. After purifying the PSI complex from the photosynthetic membranes of both wild-type and PsaJF strains, we found that the trimer to monomer ratio is similar in both strains, indicating that the assembly and stability of PSIPsaJF is not disturbed (Figure 1A). The subunit composition of the purified complex showed that it indeed contained the fused PsaJF subunit in lieu of PsaJ and PsaF (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig1-v1.jpg)
 
-**Figure 1.:** (A) Sucrose gradients of chlorophyll containing complexes from either wild type or PsaJF containing bacteria showing similar trimer to monomer ratios in both strains. (B) An SDS-PAGE gel showing the polypeptide composition of the trimeric PSI fractions from the sucrose gradient showing the presence of the PsaJF fusion (which was confirmed by MS analysis) in the purified PSI complex. (C) The PSI trimer structure viewed from the stromal side of the membrane showing the fused subunit assembled in the complete complex.DOI: http://dx.doi.org/10.7554/eLife.01496.003
+**Figure 1.:** (A) Sucrose gradients of chlorophyll containing complexes from either wild type or PsaJF containing bacteria showing similar trimer to monomer ratios in both strains. (B) An SDS-PAGE gel showing the polypeptide composition of the trimeric PSI fractions from the sucrose gradient showing the presence of the PsaJF fusion (which was confirmed by MS analysis) in the purified PSI complex. (C) The PSI trimer structure viewed from the stromal side of the membrane showing the fused subunit assembled in the complete complex.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.01496.004
+To get a more detailed view of the PsaJF subunit in PSIPsaJF, we crystallized PSIPsaJF and obtained diffraction data to 3.8 Å resolution (Table 1). The crystal structure of the PSIPsaJF complex was solved by molecular replacement, first by using the previously determined cyanobacterial structure as a search model (PDB ID 1JBO) and later with a higher resolution model from Synechocystis (see ‘Results’ below). The model reveals three monomers in the asymmetric unit. A complete trimeric complex is formed from monomers positioned in three unit cells (Figure 1C). As seen in Figure 2A,B, the overall architecture of PSI from Synechocystis is highly similar to the Thermosynechococcus elongatus PSI with two noticeable exceptions, the fused PsaJF subunit and PsaX, which as expected, is missing (the genome of Synechocystis PCC6803 does not contain a PsaX homolog).
 
-To get a more detailed view of the PsaJF subunit in PSI
+**Table 1.**
+ X-ray data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th>PsaJF trimer</th>
+      <th colspan="2">PSI monomer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>ESRF–ID29</td>
+      <td>ESRF–ID29</td>
+      <td>SLS–PXI–X06SA</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97625</td>
+      <td>0.97625</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>30–3.8</td>
+      <td>30–2.8</td>
+      <td>30–3</td>
+    </tr>
+    <tr>
+      <td>Measured reflections</td>
+      <td>426,209 (63,882)</td>
+      <td>419,672 (61,558)</td>
+      <td>396,647 (57,225)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>113,221 (16,536)</td>
+      <td>91,895 (13,209)</td>
+      <td>72,095 (10,585)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)</td>
+      <td>6.8 (71)</td>
+      <td>7.5 (124)</td>
+      <td>5.6 (77.3)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>9.9 (1.2)</td>
+      <td>8 (1.3)</td>
+      <td>10 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness</td>
+      <td>98.9 (99.5)</td>
+      <td>99.4 (99.1)</td>
+      <td>96.8 (98.3)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>3.8 (3.9)</td>
+      <td>4.6 (4.7)</td>
+      <td>5.1 (5.4)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 21</td>
+      <td>P 21 21 21</td>
+      <td>P 21 21 21</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>214, 134, 220</td>
+      <td>120, 173, 179</td>
+      <td>120, 174, 179</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 111.1, 90</td>
+      <td>90, 90, 90</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Refinement statistics</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>30–3.8</td>
+      <td>30–2.8</td>
+      <td>30–3</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>25.9/29.7</td>
+      <td>21/24</td>
+      <td>24.4/28</td>
+    </tr>
+    <tr>
+      <td>No. of chains</td>
+      <td>30</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>No. of ligands</td>
+      <td>360</td>
+      <td>119</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å2)</td>
+      <td>128</td>
+      <td>85</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>R.M.S deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond Angles</td>
+      <td>1.7</td>
+      <td>1.7</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>Bond lengths</td>
+      <td>0.014</td>
+      <td>0.005</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statistics</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Favored region %</td>
+      <td>93.8</td>
+      <td>93.8</td>
+      <td>93.2</td>
+    </tr>
+    <tr>
+      <td>Allowed region %</td>
+      <td>5.1</td>
+      <td>5.9</td>
+      <td>6.3</td>
+    </tr>
+    <tr>
+      <td>Outlier region %</td>
+      <td>1.1</td>
+      <td>0.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>clashscore</td>
+      <td>5.5</td>
+      <td>3.8</td>
+      <td>4.6</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig2-v1.jpg)
 
-**Figure 2.:** (A) PSI from Thermosynechococcus with PsaJ (Blue) and PsaF (cyan) shown from the membrane plane, the N-terminus of PsaF extends as two alpha helices into the luminal space. PsaX is colored red. (B) The PsaJF (magenta) containing PSI complex from Synechocystis showing the flatter luminal plateau created from the removal of the N-terminus of PsaF. (C) Superposition of the JF subunit from Synechocystis (magenta) on the PsaF (cyan) and PsaJ (blue) subunits from Thermosynechococcus, the overall structure of the fused subunit remains undisturbed.DOI: http://dx.doi.org/10.7554/eLife.01496.006
+**Figure 2.:** (A) PSI from Thermosynechococcus with PsaJ (Blue) and PsaF (cyan) shown from the membrane plane, the N-terminus of PsaF extends as two alpha helices into the luminal space. PsaX is colored red. (B) The PsaJF (magenta) containing PSI complex from Synechocystis showing the flatter luminal plateau created from the removal of the N-terminus of PsaF. (C) Superposition of the JF subunit from Synechocystis (magenta) on the PsaF (cyan) and PsaJ (blue) subunits from Thermosynechococcus, the overall structure of the fused subunit remains undisturbed.
 
 Our trimeric PSI structure is the first look at a mesophilic cyanobacterial PSI. As such, even at this relatively low resolution, some interesting features are apparent. The structure clearly shows the presence of the fused subunit integrated in the PSIPsaJF complex (Figure 2B). Deleting the N-terminus of PsaF resulted in a flattened plateau on the luminal side of the complex (Figure 2B,C). Three chlorophyll molecules and four carotenoids are coordinated by PsaJ and PsaF in the Thermosynechococcus PSI structure (Figure 2C). We find that all of these ligands are probably lost during the assembly of PSIPsaJF and could not be traced in our model (Figure 2C). In spite of the relatively low resolution, we find that the overall organization of the other cofactors in PSI is hardly affected in PSIPsaJF demonstrating the mild effect of the JF mutation on the overall organization and integrity of the complex.
 
-## PSIPsaJF is a promiscuous electron acceptor
+### PSIPsaJF is a promiscuous electron acceptor
 
-Next we tested whether PSI
+Next we tested whether PSIPsaJF is a promiscuous electron acceptor. We measured the half-life of PSI reduction by a mammalian respiratory cytochrome c. As seen in Figure 3A, P700 in PSIPsaJF is reduced much faster by a respiratory cytochrome c than in the wild-type complex. However, PSIPsaJF is reduced by its native electron donor cytochrome c553 (CytC553) with similar kinetics compared to the wild-type PSI (Figure 3B). This is in contrast to eukaryotic PSI where the N-terminus of PsaF was shown to be important for the electron donation reaction between plastocyanin and PSI (Hippler et al., 1996). The similar electron donation rates observed with CytC553 are in agreement with previously published results obtained from PsaF and PsaJ deleted strains (Xu et al., 1994a, 1994b). When the light-dependent oxidation of cytochrome c was followed we obtained similar results. Compared to the wild-type complex, PSIPsaJF had faster cytochrome oxidation kinetics when respiratory cytochrome was used (Figure 3C), and similar kinetics when native CytC553 was used (Figure 3D). The similarity between the reaction kinetics of PSI reduction together with the similar cellular growth rates of wild-type and PSIPsaJF strains shows that deleting the N-terminus of PsaF causes no gross perturbation to the interaction between PSI and CytC553, that is, the N-terminus of PsaF does not play any positive role in this interaction in Synechocystis. The N-terminus of PsaF can act as a negative regulator of some electron donation reactions, especially from positively charged donors such as respiratory cytochromes. We suggest that this was the original function of PsaF in a more primitive form of PSI and only later, as PSI evolved, the binding site was refined to its final configuration. In the viral PSI, such promiscuity can be beneficial when the viral reaction center encounters the highly variable cytochromes found in marine cyanobacteria (Mazor et al., 2012) or alternatively to allow PSI to accept electrons from respiratory activities when PSII activity is compromised.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig3-v1.jpg)
 
-**Figure 3.:** PsaJF is a promiscuous electron acceptor.(A) P700 reduction kinetics (after a 100 ms pulse of orange light) showing faster reduction kinetics of a PSIPsaJF complex with respiratory CytC (red line) compared to the wild-type complex (blue line). (B) Native cytochrome C553 reduces both wild-type and PSIPsaJF complexes at similar rates. (C) Plots of the cytochrome oxidation (ΔA 550 nm–540 nm) under continuous white illumination by PSI, showing faster oxidation of a respiratory cytochrome by PSIPsaJF (red trace) compared to the wild-type PSI (blue trace). (D) Native CytC553 is oxidized with similar kinetics by both complexes.DOI: http://dx.doi.org/10.7554/eLife.01496.007
+**Figure 3.:** (A) P700 reduction kinetics (after a 100 ms pulse of orange light) showing faster reduction kinetics of a PSIPsaJF complex with respiratory CytC (red line) compared to the wild-type complex (blue line). (B) Native cytochrome C553 reduces both wild-type and PSIPsaJF complexes at similar rates. (C) Plots of the cytochrome oxidation (ΔA 550 nm–540 nm) under continuous white illumination by PSI, showing faster oxidation of a respiratory cytochrome by PSIPsaJF (red trace) compared to the wild-type PSI (blue trace). (D) Native CytC553 is oxidized with similar kinetics by both complexes.
 
-## High-resolution structure of a PSI monomer
+### High-resolution structure of a PSI monomer
 
 The small subunits PsaF, J, K, L, I, and M of the PSI complex can each be deleted without observing any severe growth defects in cells (Chitnis and Chitnis, 1993; Xu et al., 1995; Naithani et al., 2000). Their conservation in all cyanobacterial species, arguably the most diverse group of microorganisms, suggests that over evolutionary time periods losing them is detrimental. Different small subunits, however, are functionally connected. For example, in cells lacking PsaJ, PsaF is only partially incorporated into the complex (Xu et al., 1994a). A similar situation is seen in PsaI deleted cells, where PsaL is only partially assembled into the complex (Xu et al., 1995). In both the cases, a ‘simple’ single transmembrane (TM) helix (PsaJ or PsaI) seems to be necessary for the assembly of a more complex subunit (PsaF or PsaL, respectively).
 
@@ -71,43 +243,43 @@ Fortuitously, PsaL and PsaI were missing from the final purified complex (Figure
 
 The crystals obtained from this monomeric form of PSI belong to a higher symmetry space group (P212121), had a reduced cell volume (∼3.75 × 106 Å3) and, most importantly, diffracted to a resolution of 2.8 Å. At this resolution, the entire complement of ligands and cofactors is revealed, and it is feasible to carry out a detailed comparison between the thermophilic and mesophilic complexes.
 
-## Electron transport chain
+### Electron transport chain
 
-The available structures of PSI from thermophilic cyanobacteria and higher plants show complete conservation in all the components of the electron transport chain (ETC) from P700 to the iron sulfur clusters (
+The available structures of PSI from thermophilic cyanobacteria and higher plants show complete conservation in all the components of the electron transport chain (ETC) from P700 to the iron sulfur clusters (Jordan et al., 2001; Ben-Shem et al., 2003; Amunts et al., 2007). In light of this complete conservation, we were surprised to discover a large rearrangement of the isoprenoid tail of the phylloquinone (Q1A) coordinated by PsaA (Figure 4B, Figure 4—figure supplement 2). This movement is accompanied by rearrangement of the phytol tails of chlorophylls A06 and A40 (ligands are named according to Jordan, et al. whenever possible [Jordan et al., 2001]). In spite of these large movements, the positions of the quinone heads and chlorine rings are highly conserved between all known PSI structures (Figures 4B and 5A). The movements in Q1A and the surrounding chlorophylls appear to originate from two amino acid changes that occurred in the PsaJ subunit between Synechocystis and Thermosynechococcus. Ala J16 in Thermosynechococcus changed to Met J16 in Synechocystis, making contacts with terminal carbon atoms of Q1A (Figure 4C). Similar contacts are seen in the Thermosynechococcus Q1A terminal carbon atoms, but these contacts are made with Met 19 in PsaJ, which changed to Leu 19 in Synechocystis (Figure 4C). Interestingly, this interaction between the terminal carbon atoms of the isoprenoid tail and methionine is present in a number of cyanobacterial species (Figure 4—figure supplement 4). It is interesting to note that most of the other contacts stabilizing the tail conformation of Q1A mainly involve interactions between the hydrophobic tails of other ligands.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig4-v1.jpg)
 
-**Figure 4.:** Synechocystis.(A) A luminal view of the monomeric PSI complex. PsaL and PsaI that are missing from our crystal are shown in gray. (B) Comparison of the ETC of Synechocystis (red) to that of Thermosynechococcus (blue) reveals near perfect superposition in all the components with the clear exception of the quinone A1 isoprenoid tail. (C) Superposed PsaJ from Synechocystis (red) and Thermosynechococcus (blue) showing the coordinating methionine residue (carbons in green and the sulfur atom in yellow). (D) The phytol tail of chlorophyll A40 is reoriented in Synechocystis in order to accommodate the movement of the quinone tail. (E) The phytol tail of Chlorophyll A1 in Synechocystis shifted to accommodate the PsaJ MET16 change.DOI: http://dx.doi.org/10.7554/eLife.01496.008
+**Figure 4.:** (A) A luminal view of the monomeric PSI complex. PsaL and PsaI that are missing from our crystal are shown in gray. (B) Comparison of the ETC of Synechocystis (red) to that of Thermosynechococcus (blue) reveals near perfect superposition in all the components with the clear exception of the quinone A1 isoprenoid tail. (C) Superposed PsaJ from Synechocystis (red) and Thermosynechococcus (blue) showing the coordinating methionine residue (carbons in green and the sulfur atom in yellow). (D) The phytol tail of chlorophyll A40 is reoriented in Synechocystis in order to accommodate the movement of the quinone tail. (E) The phytol tail of Chlorophyll A1 in Synechocystis shifted to accommodate the PsaJ MET16 change.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Synechocystis psal mutant.(A) Sucrose gradients of dissolved membranes from wild-type or psal strains showing a homogenous population of monomeric complex in the psal mutant. (B) Sucrose gradients of DEAE chlorophyll peak fractions from either wild-type or psal strains. (C) Silver stained SDS-PAGE of the polypeptide composition of the chlorophyll peaks (0.5 µg chlorophyll loaded in each well) from B (lane 1–WT trimer, lane 2–WT monomer, lane 3–psal monomer) showing the absence of PsaL in the psal mutant. The four bands that co-purified with the monomeric PSI from the wild-type sample (labeled ‘PHYCO’) were shown by MS analysis to contain CP47, CP43, Lcm and isiA, these bands were consistently absent from the psal mutant complex preparations.DOI: http://dx.doi.org/10.7554/eLife.01496.009
+**Figure 4—figure supplement 1.:** (A) Sucrose gradients of dissolved membranes from wild-type or psal strains showing a homogenous population of monomeric complex in the psal mutant. (B) Sucrose gradients of DEAE chlorophyll peak fractions from either wild-type or psal strains. (C) Silver stained SDS-PAGE of the polypeptide composition of the chlorophyll peaks (0.5 µg chlorophyll loaded in each well) from B (lane 1–WT trimer, lane 2–WT monomer, lane 3–psal monomer) showing the absence of PsaL in the psal mutant. The four bands that co-purified with the monomeric PSI from the wild-type sample (labeled ‘PHYCO’) were shown by MS analysis to contain CP47, CP43, Lcm and isiA, these bands were consistently absent from the psal mutant complex preparations.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** A showing the different position of the A1 quinone from Synechocystis (in red).2Fo-Fc maps were contoured at 1.4σ.DOI: http://dx.doi.org/10.7554/eLife.01496.010
+**Figure 4—figure supplement 2.:** 2Fo-Fc maps were contoured at 1.4σ.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** B and Fx.(A) Electron transfer (ET) pathways between Q1A, Q1B and Fx. Positive difference map peaks calculated with the water molecules omitted from the model are shown in green (contoured at 3σ). Quinones and waters from Thermosynechococcus are colored in light pink. Synechocystis quinones are colored in green, water in blue, and amino acids in magenta. (B) Same as A only the relevant fragments from PsaA and PsaB from Synechocystis are included. Quinone coordinating Trp residues are shown (W 693 and W 668 from PsaA and PsaB respectively), together with Trp 664 in PsaB which separates Fx and Q1A (The corresponding amino acid in PsaA is Glycine 689). (C) A 180° rotation of B showing a different view of the water pocket. (D) A view of the entire Fx binding regions shown with the Q1 and Fx coordination loops.DOI: http://dx.doi.org/10.7554/eLife.01496.011
+**Figure 4—figure supplement 3.:** (A) Electron transfer (ET) pathways between Q1A, Q1B and Fx. Positive difference map peaks calculated with the water molecules omitted from the model are shown in green (contoured at 3σ). Quinones and waters from Thermosynechococcus are colored in light pink. Synechocystis quinones are colored in green, water in blue, and amino acids in magenta. (B) Same as A only the relevant fragments from PsaA and PsaB from Synechocystis are included. Quinone coordinating Trp residues are shown (W 693 and W 668 from PsaA and PsaB respectively), together with Trp 664 in PsaB which separates Fx and Q1A (The corresponding amino acid in PsaA is Glycine 689). (C) A 180° rotation of B showing a different view of the water pocket. (D) A view of the entire Fx binding regions shown with the Q1 and Fx coordination loops.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig4-figsupp4-v1.jpg)
 
-**Figure 4—figure supplement 4.:** Position 16 and 19 in the Synechocystis PsaJ sequence are indicated on top. Sequences were aligned using muscle and rendered with Jalview8.DOI: http://dx.doi.org/10.7554/eLife.01496.012
+**Figure 4—figure supplement 4.:** Position 16 and 19 in the Synechocystis PsaJ sequence are indicated on top. Sequences were aligned using muscle and rendered with Jalview8.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig5-v1.jpg)
 
-**Figure 5.:** Synechocystis.A depth cued image comparing the overall organization of the PSI antenna from Synechocystis (green) or Thermosynechococcus (purple) viewed from the stromal side of the membrane, only chlorine rings are shown for clarity. The C2 pseudosymmetry axis is shown in blue. PsaX is shown as gray filled circle. The new chlorophyll detected in Synechocystis (B40) is clearly seen next to PsaX which precludes its binding in Thermosynechococcus.DOI: http://dx.doi.org/10.7554/eLife.01496.013
+**Figure 5.:** A depth cued image comparing the overall organization of the PSI antenna from Synechocystis (green) or Thermosynechococcus (purple) viewed from the stromal side of the membrane, only chlorine rings are shown for clarity. The C2 pseudosymmetry axis is shown in blue. PsaX is shown as gray filled circle. The new chlorophyll detected in Synechocystis (B40) is clearly seen next to PsaX which precludes its binding in Thermosynechococcus.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Synechocystis monomeric and trimer PSI.(A) Synechocystis monomeric conformation (green) of chlorophyll pair A38-A39 compared to Thermosynechococcus conformation in light pink. (B) The conformation of the A38-A39 pair in the PSIPsaJF trimeric complex shows no significant movements between all three PSI's complexes. PsaF (from the monomeric complex) is shown in the background in gray. (C) Conformation of the putative red pair B37-B38 as observed in our monomeric model. The coordinating water molecule of B37 is shown as a blue sphere (the position of the corresponding water from Thermosynechococcus is in pink) together with the Fo-Fc omit map (contoured at 4σ). The Large movements of the phytol tails probably result from the absence of PsaL since they are absent in the trimer PSIPsaJF model, shown in (D). (E) Synechocystis monomeric conformation (green) of chlorophyll pair B07-A32. The significant movement of the chlorine ring of B07 is clearly seen. The three transmembrane helixes of PsaL missing in the Synechocystis monomeric crystal are shown together with the conformation of this region in Thermosynechococcus (light pink). (F) The same region as modeled in the 3.8 Å PSIPsaJF trimer (Synechocystis in green, Thermosynechococcus in light pink) does not show any movements, however the low resolution of the trimetric model prevents us from reaching a definite conclusion.DOI: http://dx.doi.org/10.7554/eLife.01496.014
+**Figure 5—figure supplement 1.:** (A) Synechocystis monomeric conformation (green) of chlorophyll pair A38-A39 compared to Thermosynechococcus conformation in light pink. (B) The conformation of the A38-A39 pair in the PSIPsaJF trimeric complex shows no significant movements between all three PSI's complexes. PsaF (from the monomeric complex) is shown in the background in gray. (C) Conformation of the putative red pair B37-B38 as observed in our monomeric model. The coordinating water molecule of B37 is shown as a blue sphere (the position of the corresponding water from Thermosynechococcus is in pink) together with the Fo-Fc omit map (contoured at 4σ). The Large movements of the phytol tails probably result from the absence of PsaL since they are absent in the trimer PSIPsaJF model, shown in (D). (E) Synechocystis monomeric conformation (green) of chlorophyll pair B07-A32. The significant movement of the chlorine ring of B07 is clearly seen. The three transmembrane helixes of PsaL missing in the Synechocystis monomeric crystal are shown together with the conformation of this region in Thermosynechococcus (light pink). (F) The same region as modeled in the 3.8 Å PSIPsaJF trimer (Synechocystis in green, Thermosynechococcus in light pink) does not show any movements, however the low resolution of the trimetric model prevents us from reaching a definite conclusion.
 
 Another noticeable feature of the ETC is the conservation of water molecules position around Fx (Figure 4—figure supplement 3). This water pocket is positioned between Q1B and Fx and can potentially modify the ET rates between the A and B branches of PSI. Mutations in the coordinating tryptophan residue greatly affect the ET rates between Q1B and Fx (Ali et al., 2006).
 
 Changes in the orientation of the isoprenoid tail can fine-tune the ETC. The fact that small, less conserved, subunits, such as PsaJ, are involved in changing these orientations, provides relaxed evolutionary constraints that facilitate faster exploration of the available changes (Peisajovich et al., 2006). To summarize, the components of the ETC are extremely conserved over all known PSI structures. However, even small changes in the orientation of components can play a part in fine tuning ET processes. Most of the studies on the ETC are performed in Synechocystis (Savitsky et al., 2013) and assume that all of the factors involved occupy identical positions as shown in Thermosynechococcus or higher plants, this may lead to somewhat erroneous conclusions. The surprising observation of a conserved water cluster positioned along the ET path between Q1B and Fx suggests that this feature has a functional role.
 
-## Light-harvesting and red chlorophylls
+### Light-harvesting and red chlorophylls
 
 The polypeptide chains of PSI coordinate more than a 100 pigments, which funnel excitation energy to P700 with near absolute quantum efficiency (Croce and van Amerongen, 2013). A common theme in PSI is the occurrence of red chlorophylls, which absorb (and fluoresce) light at longer wavelengths than P700 (Palsson et al., 1998; Gobets et al., 2001). Red chlorophylls slow the trapping kinetics of P700, however, the quantum yield of the complex is not affected by this at room temperature; at higher light intensities red traps may have a photoprotective role. In addition, red chlorophylls increase the absorbance cross section of the entire complex, especially in shaded environments.
 
@@ -115,15 +287,15 @@ There is considerable variability in the strength of the red absorption between 
 
 The ring positions of the A32-B7 dimer shifted slightly from Thermosynechococcus to Synechocystis, and the side chain coordinating the magnesium of B7 changed from glutamine to histidine. These changes can contribute greatly to the Qy position of the pigment (Wientjes et al., 2012). However, this dimer is also located close to PsaI and PsaL, and therefore may have been affected by their exclusion from the complex (Figure 5—figure supplement 1E,F). Indeed, in the PSIPsaJF model, the positions of both rings are slightly shifted toward the position observed in Thermosynechococcus. This dimer may be sensitive to the oligomerization state of the complex, as it has been shown that some red absorption is lost upon monomerization (Gobets et al., 2001), a phenomenon which is common to both Synechocystis and Thermosynechococcus. A monomeric structure that includes both PsaI and PsaL will resolve this question.
 
-In contrast, it is very clear that chlorophyll B33 is completely missing from the stacked trimer observed in
+In contrast, it is very clear that chlorophyll B33 is completely missing from the stacked trimer observed in Thermosynechococcus (Figures 5 and 6). This is accompanied by a small deletion in the PsaB loop, which supports B33. A similar deletion is found in approximately third of the cyanobacterial PsaB sequences, as well as the PsaB sequences in eukaryotes (Figure 6—figure supplement 1), where the corresponding chlorophyll has shifted substantially (Ben-Shem et al., 2003; Amunts et al., 2007). The ring distances and orientation between B31 and B32 hardly changed from Thermosynechococcus to Synechocystis. These findings strongly support the B31-B32-B33 trimer as the strong red absorber in Thermosynechococcus and suggest that the one of remaining dimers, either B37-B38 or B31-B32, is responsible for the residual red absorbance seen in Synechocystis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig6-v1.jpg)
 
-**Figure 6.:** Synechocystis.(A) The luminal-side chlorophyll trimer (B31-B32-B33) is missing in Synechocystis, while chlorophyll B40 forms a stromal chlorophyll trimer (Synechocystis in green, Thermosynechococcus in light pink). The PsaB loop on the stromal side (PsaB 301-319) extends to coordinate chlorophyll B40 and A phospholipid (shown in dark gray), while the luminal side PsaB loop (PsaB 451-501) is shortened in Synechocystis and chlorophyll B33 is lost as a result. (B) A close up on the stromal side changes showing the large conformational change in PsaB. In spite of this the phospholipid is clearly observed. (C) Loss of the B31-B33-B33 chlorophyll trimer in Synechocystis, the shortened PsaB loop together with the remaining chlorophylls in Synechocystis is shown.DOI: http://dx.doi.org/10.7554/eLife.01496.015
+**Figure 6.:** (A) The luminal-side chlorophyll trimer (B31-B32-B33) is missing in Synechocystis, while chlorophyll B40 forms a stromal chlorophyll trimer (Synechocystis in green, Thermosynechococcus in light pink). The PsaB loop on the stromal side (PsaB 301-319) extends to coordinate chlorophyll B40 and A phospholipid (shown in dark gray), while the luminal side PsaB loop (PsaB 451-501) is shortened in Synechocystis and chlorophyll B33 is lost as a result. (B) A close up on the stromal side changes showing the large conformational change in PsaB. In spite of this the phospholipid is clearly observed. (C) Loss of the B31-B33-B33 chlorophyll trimer in Synechocystis, the shortened PsaB loop together with the remaining chlorophylls in Synechocystis is shown.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/01496/elife-01496-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Representative sequences (50 out of 200 used for alignment) from MSA of various PsaB sequences, position 311 in the Synechocystis PsaB sequence is indicated on top. Boxes highlight sequences from the three known PSI structures.DOI: http://dx.doi.org/10.7554/eLife.01496.016
+**Figure 6—figure supplement 1.:** Representative sequences (50 out of 200 used for alignment) from MSA of various PsaB sequences, position 311 in the Synechocystis PsaB sequence is indicated on top. Boxes highlight sequences from the three known PSI structures.
 
 Photosystem I contain another chlorophyll trimer that is coordinated by PsaA (A20-A21-PL1). The ring-to-ring distances between the chlorophylls of this trimer do not suggest direct coupling, but, surprisingly, our model revealed the presence of an additional chlorophyll trimer, related by the pseudo C2 symmetry axis of the reaction center (Figures 5 and 6A,B). The new trimer is formed by an additional chlorophyll, B40, which is coordinated by the head group of a phospholipid (one of three present in PSI) (Figure 6A,B). The phosphate oxygen atom lays 2.8 Å from the magnesium atom of B40. This coordination of chlorophylls by lipids is reminiscent of the situation in light-harvesting complex II (LHC-II) (Standfuss et al., 2005). In contrast, CP29, which is highly homologous to LHC-II, does not contain such a configuration and this probably contributes to the different non photochemical quenching properties of both proteins (Pan et al., 2011).
 
@@ -133,7 +305,7 @@ The position of this new chlorophyll (B40) is occupied by subunit PsaX in Thermo
 
 Photosystem I is one of the most complex enzymes in nature. Even though the evolution of photosynthesis must have taken a complex path, today we can only see a limited snapshot of this path. The high degree of sequence conservation and the importance of pigments to the photosynthetic process further limit our ability to deduce function from mere sequences.
 
-## Viral reaction centers
+### Viral reaction centers
 
 The prevalence of photosynthetic genes in marine cyanophage genomes suggests that photosynthesis and respiration play an important part in the phage–host interaction. Aside from the PSI operon, genes for other subunits of the major complexes of the photosynthetic electron transport chain reside in phages including PSII, NDH-I, F-ATPase (Philosof et al., 2011). Small soluble proteins like cytochromes and ferredoxins are also abundant (Sharon et al., 2011). A common property of these genes is that they cluster together as a distinct group when compared to their cyanobacterial counterparts (Zeidner et al., 2005). In some cases, it is possible to suggest that viral subunits modify the flow of electrons in the photosynthetic chain based on the known function of the cyanobacterial counterpart. This is the case with the virally encoded NDH-I subunits, where the function of the native, bacterial complex in cyclic electron flow is established.
 
@@ -141,7 +313,7 @@ In this study, we show that a phage specific mutation, removal of the N-terminus
 
 We suggest that the phage-encoded PSI complex with its unique gene composition adds an important step to the scenario of PSI evolution from a primordial homodimeric entity to the current highly evolved complexes (Nelson, 2011; Mazor et al., 2012). In this scenario, the formation of the primordial heterodimer allowed for the evolution of the unique properties of the peripheral subunits, trimer formation in the case of PsaL and interaction with electron donors in the case of PsaF. The specificity and complexity of biological machines increases along their evolutionary path and PSI is a prime example of this property. Cyanobacterial PSI is much more complicated and intricate than its ancestral homodimer and the plant PSI adds additional levels of complexity over the cyanobacterial complex. The preservation of simpler forms of PSI is therefore quite unique and stems from the relatively simple life cycle of phages and from the unique evolutionary requirements associated with this life cycle. For example, some marine phages from the Myoviridae family can infect different species of cyanobacteria (Sullivan et al., 2003) and this creates unique requirements on their genes such as utilizing the different chlorophyll species found in Prochlorococcus and Synechococcus. The viral complex preserves some of the properties of the common PSI ancestor, lost from both the cyanobacterial and plant PSI. One of these properties appears to be promiscuity for electron donors as exemplified by the fused PsaJF subunit. The incredible richness uncovered by ocean genomic surveys suggests that further sampling will reveal further examples of ancestral forms of PSI and other unique versions of highly conserved genes.
 
-## Mesophilic cyanobacterial PSI
+### Mesophilic cyanobacterial PSI
 
 The two structures described in this work provide the first detailed look at the Synechocystis PSI complex. The two most prominent differences between Synechocystis and Thermosynechococcus are the longer trapping time for excitation energy and the stronger red absorbance found in Thermosynechococcus. Both of these differences are probably related to the number of red-shifted pigments found in PSI. This study provides definite proof for the absence of the putative ‘red’ chlorophyll trimer in Synechocystis and narrowed the number of coupled pigment dimers to two. Further calculations should help identifying other, more subtle alteration in pigment energy along the antenna system. Structurally, the Synechocystis PSI complex revealed the PsaX-less conformation of the antenna and it is evident that this configuration is closer to the plant PSI inner antenna and thus can be considered the ancestral arrangement.
 
@@ -151,44 +323,44 @@ A cluster of water molecules located between Fx and Q1B, conserved between Therm
 
 ## Materials and methods
 
-## Culture conditions
+### Culture conditions
 
 Cyanobacteria were cultured in BG11 medium supplemented with 10 µg/ml Ferric ammonium citrate, 5 mM glucose and 10 µg/ml chloramphenicol under continuous white light (∼40 µE) in 30°C.
 
-## Strain construction
+### Strain construction
 
 Synechocystis PsaJ (amino acids 1–40) and PsaFΔN (amino acids 84–165) were amplified by PCR and fused together with a Cys-Ser-Cys linker between them. The PsaJF gene was fused to the native PsaF promoter together with 300 bp of upstream and downstream sequences to direct its recombination to the genome of Synechocystis. The Kanamycin resistance gene was cloned just downstream to the PsaJF gene. Primer sequences are available in Supplementary file 1.
 
 Transformation of Synechocystis sp. PCC6803 was performed according to standard protocols. Gene replacement constructs were generated in pGEM or pJET, and used directly for transformation. All transformants were streaked on increased antibiotic concentrations for a minimum of three times, and verified by PCR.
 
-## Photosystem I purification
+### Photosystem I purification
 
 20–40 l of cells were grown in regular BG11 (supplemented with 10 µg/ml ferric ammonium citrate and 5 mM glucose, plus 10 µg/ml chloramphenicol for strains with His-tagged PsaL) under light intensity of ∼40 µE at 30°C. Cells were harvested using centrifugation, and washed once by STN1 buffer (30 mM Tricine-NaOH pH 8, 15 mM NaCl, 0.4 M sucrose). Finally, cells were resuspended in 50 ml of STN1, and broken by an Avestin EmulsiFlex-C3 (three cycles at 1500 psi). The lysate was cleared by centrifugation in a SS34 rotor for 10 min at 12,000 rpm. Membranes in the supernatant were pelleted using ultracentrifugation (Ti70 rotor, 45,000 rpm for 2 hr), and resuspended in 50 ml STN2 (30 mM Tricine-NaOH pH-8, 100 mM NaCl, 0.4 M sucrose). After resuspension in STN2, the membranes were incubated on ice for 30 min, then collected again (Ti70 rotor, 45,000 rpm, 2 hr), and resuspended in approximately 15 ml of STN1. n-Dodecyl β-D-maltoside (DDM, Affymetrix, http://www.affymetrix.com/estore/index.jsp) was added to the membranes (from a 10% stock solution in water) at a 15:1 DDM to chlorophyll ratio. The suspension was gently mixed by hand a few times then incubated on ice for 30 min. After solubilization, the insoluble material was discarded using ultracentrifugation (Ti70, 45,000 rpm, 30 min). The solubilized membranes were loaded onto a DEAE column (DE52; Whatman http://www.gelifesciences.com/webapp/wcs/stores/servlet/catalog/en/GELifeSciences/brands/whatman/), column volume was adjusted to the chlorophyll content of the sample (1.5 or 1.2 ml DEAE per 1 mg chlorophyll for trimer or monomer preparations, respectively). The column was eluted using a linear NaCl gradient (15–200 mM NaCl for monomer preparation; 15–350 mM NaCl for trimer preparations) in 30 mM Tricine-NaOH pH 8, 0.2% DDM. Dark green fractions were collected and precipitated using PEG3350 (Hampton research http://hamptonresearch.com/Default.aspx), final PEG concentration was 8.5% for trimer preparations and 12% for monomer preparations. The green precipitate was resuspended in 30 mM Tricine-NaOH, pH 8, 0.05% DM, (10 mM NaCl for monomer; 75 mM NaCl for trimer), and loaded onto a 10–30% sucrose density gradient, prepared in 30 mM Tricine-NaOH pH-8, 0.05% DDM (10 mM NaCl for monomer; 75 mM NaCl for trimer). Following centrifugation (SW40 rotor, 37,000 rpm, 12 hr) the appropriate green band was collected and used for kinetic measurements or crystallization.
 
-## Photosystem I crystallization
+### Photosystem I crystallization
 
 The chlorophyll peak from the sucrose gradient was collected, NaCl was added to a final concentration of 150 mM and the complex was precipitated using PEG3350 (9% for trimeric complexes; 12% for monomeric complexes). After centrifugation (13,000 rpm, 5 min in an Eppendorf tabletop), the green precipitate was resuspended in minimal volume of buffer (3 mM Tricine-NaOH pH 8, 0.02% DDM), and any undissolved material was removed by repeating the centrifugation step. The chlorophyll concentration in the soluble material was adjusted to the desired concentration (typically 3 mg/ml) using the above buffer, and dispensed in 4 µl drops into 24-well, sitting drop crystallization plates. Protein drops were mixed 1:1 with reservoir solution (90 mM NaCl, 90 mM MgCl2, 0.0005% n-Nonyl-β-D-Maltoside (NM), 100 mM glycine, 30 mM Tricine-NaOH, pH 8, 9–11% gradient of PEG3350 for trimer complex; 60 mM Tricine-NaOH, pH 8, 9% PEG3350, 0.0005% NM, 100 mM glycine, 100–120 mM NaCl gradient for monomer complex). Crystals were formed within 1–3 days, and grown to their final size by a week. The crystals of the PSI trimer were large and flat with no precipitate in the well. In contrast, the monomeric complex formed multiple crystal forms. Only a small fraction of the crystals, recognized through their overall shape, diffracted to high resolution. The other crystals diffracted to very low resolution or did not diffract at all. Cryo protection was achieved by replacing the mother liquor in the well and in the reservoir with solutions containing progressively increasing PEG3350 concentrations (10%, 15%, 20% and 30%) with a minimum of 2 hr between each solution (usually 24 hr between each step). Finally crystals were placed in 40% PEG3350 solution for a few minutes, mounted on loops and frozen in liquid nitrogen.
 
-## Data collection and refinement
+### Data collection and refinement
 
 Data were collected at ESRF, Grenoble, station ID29, or at the SLS, Villigen, station PXI. Diffraction frames were processed with XDS (Kabsch, 2010), scaled and merged with SCALA (Evans, 2006; Winn et al., 2011).
 
-## Monomer
+### Monomer
 
 Two data sets from two different crystals were used in the refinement of the monomeric complex, one obtained from ID29 at the ESRF and one from PXI at SLS. Refinement was done with PHENIX (Adams et al., 2010). Monomer descriptions of chlorophyll and β-carotene were computed from average values of the 1.9 E PSII structure (Umena et al., 2011). At 3 Å the use of additional, external restraints was found to be ineffective. TLS refinement was used throughout the refinement. A very coarse choice of TLS groups was found to be optimal with the membrane domain, the stromal ridge and PsaK chosen as three separate TLS groups. Adding hydrogen atoms to the model was found to greatly improve the clash score and geometry of the model and so hydrogens were used throughout the refinement.
 
-## Trimer
+### Trimer
 
 The PSIPsaJF model was refined against a single data set obtained at ID29. Initially a truncated model (with most side chains and phytol tails removed) of PSI from Thermosynechococcus was used for molecular replacement and as a source of external restraints. Refinement was carried out using Refmac5 (Murshudov et al., 2011), using a coarse TLS model including only two groups, one encompassing the entire membrane domain and the other defined as the stromal ridge (PsaC, PsaD and PsaE). The use of external restraints (as well as NCS restraints) was vital to achieving reasonable statistics and ProSMART (Nicholls et al., 2012) was found to be the most effective choice in our case. Multiple rounds of refinements followed by manual building by coot were carried out. PHENIX was used in the final rounds solely for B factor and TLS refinement. The use of the higher resolution Synechocystis monomeric model resulted in a ∼1.5% reduction in R values (both working and free) and more importantly resulted in better maps. The improvement in map quality allowed us to complete the tracing of PsaK (without side chains), which is very disordered in our monomeric model and was not traced completely even in the high-resolution structure from Thermosynechococcus.
 
-## Cytochrome c553 purification
+### Cytochrome c553 purification
 
 The soluble fraction after membrane sedimentation was used as a starting material for purification. Soluble material from 100 l culture was first clarified using 50% ammonium sulfate precipitation, than the remaining material in the supernatant was precipitated using 100% ammonium sulfate. The precipitated material was dialyzed over-night and loaded on a DEAE column equilibrated with 10 mM Tris–HCl pH 7.4. The column was eluted using a linear NaCl gradient (0–200 mM), pink fractions were collected and concentrated using a centricon (5 kDa cutoff). The concentrated pink fraction was loaded on a Superdex 75 gel filtration column. The pink protein peak coming off this column contained a single 10 kDa polypeptide according to SDS-PAGE and displayed the appropriate absorbance spectrum for cytochrome c553.
 
-## P700 reduction kinetics
+### P700 reduction kinetics
 
 Kinetic measurements were carried out using a JTS-10 spectrophotometer. Reaction mixture (for the data presented in Figure 3A,B) included 35 µg chl of purified PSI, 60 mM MES pH-6, 0.02 %DDM, 25 mM MgCl2, 50 mM NaCl, 5 mM ascorbate, 5 µM methyl viologen and cytochrome C553 (1 µM) or horse heart cytochrome c (2.5 µM) in a total volume of 1 ml. A 100 ms light pulse was applied from an orange LED source (630 nm) and three independent traces were averaged for each experiment.
 
-## Light-dependent cytochrome oxidation
+### Light-dependent cytochrome oxidation
 
 Absorbance changes (550 nm–540 nm) were recorded using an Aminco DW-2 spectrophotometer. The components were mixed in a 1 ml quartz cuvette and they included 40 µg chl of purified PSI, 30 mM Tricine-HCl pH 8, 25 mM NaCl, 10 mM ascorbate, 10 µM methyl viologen, 5 mM horse heart cytochrome C or 2.5 mM cytochrome C553. Light was provided from a slide projector and filtered through Appropriate filters.

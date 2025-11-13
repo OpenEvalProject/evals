@@ -46,7 +46,7 @@
 
 ## Abstract
 
-10.7554/eLife.47678.001 Prostate is the most frequent cancer in men. Prostate cancer progression is driven by androgen steroid hormones, and delayed by androgen deprivation therapy (ADT). Androgens control transcription by stimulating androgen receptor (AR) activity, yet also control pre-mRNA splicing through less clear mechanisms. Here we find androgens regulate splicing through AR-mediated transcriptional control of the epithelial-specific splicing regulator ESRP2 . Both ESRP2 and its close paralog ESRP1 are highly expressed in primary prostate cancer. Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms, including splicing switches correlating with disease progression. ESRP2 expression in clinical prostate cancer is repressed by ADT, which may thus inadvertently dampen epithelial splice programmes. Supporting this, treatment with the AR antagonist bicalutamide (Casodex) induced mesenchymal splicing patterns of genes including FLNB and CTNND1 . Our data reveals a new mechanism of splicing control in prostate cancer with important implications for disease progression.
+Prostate is the most frequent cancer in men. Prostate cancer progression is driven by androgen steroid hormones, and delayed by androgen deprivation therapy (ADT). Androgens control transcription by stimulating androgen receptor (AR) activity, yet also control pre-mRNA splicing through less clear mechanisms. Here we find androgens regulate splicing through AR-mediated transcriptional control of the epithelial-specific splicing regulator ESRP2. Both ESRP2 and its close paralog ESRP1 are highly expressed in primary prostate cancer. Androgen stimulation induces splicing switches in many endogenous ESRP2-controlled mRNA isoforms, including splicing switches correlating with disease progression. ESRP2 expression in clinical prostate cancer is repressed by ADT, which may thus inadvertently dampen epithelial splice programmes. Supporting this, treatment with the AR antagonist bicalutamide (Casodex) induced mesenchymal splicing patterns of genes including FLNB and CTNND1. Our data reveals a new mechanism of splicing control in prostate cancer with important implications for disease progression.
 
 ## Introduction
 
@@ -60,33 +60,53 @@ We reasoned that a potential model to unify the role of androgens and the AR in 
 
 ## Results
 
-## ESRP2 is a direct target for AR regulation in prostate cancer cells
+### ESRP2 is a direct target for AR regulation in prostate cancer cells
 
 To first gain insight into how androgens may mediate patterns of splicing control, we analysed a recently generated dataset of genes that exhibit reciprocal expression patterns on acute androgen stimulation in vitro versus clinical ADT (Munkley et al., 2016). While a number of genes encoding splicing factors changed expression in response to acute androgen stimulation in vitro, ESRP2 also showed a reciprocal expression switch between acute androgen stimulation in culture and ADT in patients (Munkley et al., 2016). ESRP2 expression decreased following ADT in 7/7 prostate cancer patients (Rajan et al., 2014) (Figure 1A). Furthermore, RNAseq data prepared from different stages of LTL331 patient-derived xenografts (Akamatsu et al., 2015) showed reduced ESRP2 mRNA levels following castration and relapse neuroendocrine prostate cancer (NEPC, Figure 1B). We similarly analysed expression of ESRP1. ESRP1 is a close paralog of ESRP2, but was not identified in our initial screen to identify androgen-regulated genes (Munkley et al., 2016). ESRP1 expression levels also reduced following ADT (Figure 1A). However, ESRP1 showed less change in gene expression compared to ESRP2 in patient-derived xenografts following castration or relapse NEPC (Figure 1C) (Akamatsu et al., 2015).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig1-v2.jpg)
+
+**Figure 1.:** (A) Analysis of RNAseq data from human prostate cancer pre- and post- androgen deprivation therapy (ADT) (Chen et al., 2018; Rajan et al., 2014) shows that there is a significant downregulation of ESRP1 and ESRP2 mRNA following ADT in all seven patients tested (p=6e-04, Mann Whitney U test). (B–C) RNAseq data from LTL331 patient-derived xenografts grown in mice (Akamatsu et al., 2015) show a greater reduction in (B) ESRP2 mRNA levels following castration compared to (C) ESRP1 mRNA levels. (D) Western blot analysis of ESRP2 levels in a range of prostate cancer cell lines (actin was used as a loading control). (E) Western blot analysis of ESRP1 levels in prostate cancer cell lines. (F) Real-time PCR analysis of ESRP2 and ESRP1 mRNAs in LNCaP cells grown in steroid deplete (SD) or androgen (A+) treated conditions for 24 hr (statistical significance calculated by t test). (G) Real-time PCR analysis of ESRP2 mRNA in RWPE-1 cells grown in steroid deplete (SD) or androgen (A+) treated conditions for 24 hr. (H) Western blots analysis of ESRP1 and 2 protein in LNCaP cells treated with 10nm R1881 (androgens) for 24 and 48 hr. (I) Quantitative analysis (real-time PCR) of ESRP2 mRNA expression over a 24 hr time course following androgen exposure. (J) Real-time PCR analysis of AR-ChIP performed in LNCaP cells treated with 10nM R1881 for 24 hr revealed AR binding proximal to the ESRP2 gene. (K) Induction of ESRP2 is evident in LNCaP cells treated with R1881 concentrations between 1 to 100 nM (p value of 0.029 is for the comparison between 0 nm and 10nm R1881). Statistical significances were calculated by t tests, apart from (A) which used a Mann Whitney U test, and H which used Two-way ANOVA. Real time PCR analyses used at least three independent biological replicates (RNA prepared from separate samples), apart from the AR ChIP (panel I) for which each value shown is a mean of 3 technical replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Detection of ESRP1 and ESRP2 proteins in PC3 cells by Western blot. Note that both specific antibodies are able to detect the endogenous protein and the specific over-expressed protein, but they do not cross-react. (B) Detection of ESRP1 and ESRP2 proteins in LNCaP cells by Western blot, using protein isolated from cells treated with a control siRNA, or after siRNA-mediated depletion of ESRP1 and ESRP2. (C) Detection of ESRP1 and ESRP2 proteins in PC3 cells by immunohistochemistry.
 
 Further analyses supported androgen-mediated control of ESRP2 but not ESRP1 in prostate cancer cell lines. Western blots detected high endogenous levels of both ESRP1 and ESRP2 proteins within the AR positive LNCaP and CWR22 RV1 prostate cancer cell lines, as compared to the AR negative PC3 and DU145 prostate cancer cell lines (Figure 1D and E). However, qPCR analysis showed that while androgens activated ESRP2 gene expression in response to in AR-positive LNCaP cells, this was not observed for ESRP1 gene expression (Figure 1F). Androgen mediated-control of ESRP2 expression was also detected in two additional AR-expressing prostate cell lines (VCaP and RWPE-1, Figure 1G). ESRP2 protein expression was detected 48 hr after androgen exposure, with ESRP1 protein levels not changing over this same time-period (Figure 1H). The specificity of the ESRP1 and ESRP2 antibodies used in these experiments was confirmed by detection of over-expressed protein and detection of siRNA mediated protein depletion by western blot (Figure 1—figure supplement 1).
 
 Further experimental analyses also supported ESRP2 as an early and so likely direct target for transcriptional control by the AR: (i) ESRP2 gene expression in LNCaP cells was rapidly induced in response to 10 nM of the synthetic androgen analogue R1881 (methytrienolone) (Figure 1I). (ii) Chromatin immunoprecipitation (ChIP) from LNCaP cells confirmed direct AR binding to a site within 20 Kb of the ESRP2 gene promoter that had been previously predicted from a genome-wide study (at position chr16: 68210834–68211293 on human genome assembly hg38) (Massie et al., 2011) (Figure 1J). The AR ChIP signal adjacent to ESRP2 was similar to that detected in parallel for KLK3 (encoding prostate specific antigen, or PSA), which is a known AR-regulated gene. (iii) Consistent with ESRP2 regulation at physiological androgen concentrations, ESRP2 transcription in LNCaP cells was induced over a wide range of R1881 concentrations, ranging from 1 nM to 100 nM (Figure 1K). Each of these above data are consistent with AR-mediated regulation of ESRP2 expression levels within prostate cancer cell lines as well as tissue.
 
-## ESRP2 and its paralog ESRP1 are highly expressed in primary prostate tumours and inhibit tumour growth in vivo
+### ESRP2 and its paralog ESRP1 are highly expressed in primary prostate tumours and inhibit tumour growth in vivo
 
 We next monitored ESRP1 and ESRP2 expression profiles from prostate cancer patients. Meta-analysis of 719 clinical prostate cancer tumours from 11 previously published studies detected significant up-regulation of both ESRP1 and ESRP2 in 9/11 datasets (Figure 2—source data 1) (Arredouani et al., 2009; Cancer Genome Atlas Research Network, 2015; Fraser et al., 2017; Grasso et al., 2012; Lapointe et al., 2004; Liu et al., 2006; Luo et al., 2002; Taylor et al., 2010; Tomlins et al., 2007; Vanaja et al., 2003; Varambally et al., 2005; Wallace et al., 2008). We experimentally validated this meta-analysis using two independent panels of clinical samples. Real-time PCR showed significant up-regulation of both ESRP1 and ESRP2 mRNA in (1) prostate carcinoma relative to benign prostate hyperplasia (BPH) (Figure 2A); and (2) in nine prostate tumour samples relative to matched normal tissue from the same patient (Figure 2B). A recent study by Walker et al. (2017) identified a molecular subgroup of prostate cancers with metastatic potential at presentation. Within this dataset ESRP1 was 2.76 fold up-regulated in the ‘metastatic-subgroup’ compared to the ‘non-metastatic subgroup’. Using RNA from a subset of samples from the Walker et al. study, we confirmed significant (p<0.05) upregulation of the ESRP1 gene in primary prostate cancer patients presenting with a metastatic biology (Figure 2C). ESRP2 gene expression did not significantly increase in the 20 samples studied. We also used these same samples to assess if the observed up-regulation of ESRP1 and ESRP2 could result from prostate tumours consisting of a more pure population of epithelial-derived cells compared to matched tissue. Arguing against this possibility, levels of E-Cadherin were not significantly increased between BPH compared to prostate carcinoma, or between matched tumour and normal prostate tissue from patients (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-v2.jpg)
+
+**Figure 2.:** (A) Real-time PCR analysis of ESRP1 and ESRP2 mRNA from patients with benign prostate hyperplasia (BPH) and 17 malignant samples from transurothelial resection of the prostate (TURP) samples. (B) Real-time PCR analysis of ESRP1 and ESRP2 mRNA from normal and matched prostate cancer tissue from nine patients obtained from radical prostatectomy. (C) Analysis of ESRP1 and ESRP2 mRNA levels in samples from the Walker et al. (2017) cohort. Statistical analysis in parts (A)-(C) were performed using t tests. (D) Interrogation of the TCGA PRAD (PRostate ADenocarcinoma) cohort using KM-express (Chen et al., 2018). ESRP1 expression levels linked to a reduced time to PSA biochemical recurrence (bifurcate gene expression at average, log-rank test p=0.022). Over-expression of (E) ESRP1, (F) ESRP2, or (G) both ESRP1 and ESRP2 in PC3 cells significantly slowed the growth of prostate cancer xenografts in vivo. Data were analysed by Two-way ANOVA, and the p value is for the overall difference between two groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Real-time PCR analysis of E-Cadherin mRNA from patients with benign prostate hyperplasia (BPH) and 17 malignant samples from transurothelial resection of the prostate (TURP) samples. (B) Real-time PCR analysis of E-Cadherin mRNA from normal and matched prostate cancer tissue from nine patients obtained from radical prostatectomy.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) PC3 and (B) DU145 cell line models reduced prostate cancer cell growth in vitro. Data were analysed by Two-way ANOVA, and the p value is for the overall difference between two groups.
 
 Each of the above data showed that ESRP1 and ESRP2 expression levels are relatively high in primary prostate cancer compared to normal prostate tissue. High ESRP2 expression was not prognostic of disease progression in the TCGA (PRostate ADenocarcinoma) PRAD cohort analysed using KM-express (Chen et al., 2018), but high expression of ESRP1 associated with a significantly reduced time to first biochemical recurrence (p=0.022) (Figure 2D). We tested our antibodies against ESRP1 and ESRP2 proteins on prostate cancer FFPE tissue and cell blocks, but they did not pass our stringent quality control tests (Figure 1—figure supplement 1C). While this manuscript was in preparation, another group used an alternative ESRP1 antibody to show up-regulation of ESRP1 in 12,000 prostate cancer tissue microarray tumours (Gerhauser et al., 2018).
 
 We next investigated the effects of ESRP1/2 expression on the biology of prostate cancer cells in vivo. Because of their low normal endogenous expression profiles (Figure 1C and D), we selected PC3 and DU145 cells to study the effects on prostate cancer cells of ESRP1/ESRP2 protein up-regulation. Ectopic expression of ESRP1 and ESRP2 protein expression in AR negative PC3 and DU145 cell line models reduced prostate cancer cell growth in vitro (Figure 2—figure supplement 2). Over-expression of both ESRP1 and ESRP2 (either alone or together) in PC3 cells also significantly slowed growth of prostate cancer xenografts in vivo (Figure 2E–G). Taken together, the above data show that ectopic expression of ESRP1 and ESRP2 proteins slow the growth of PC3 and DU145 prostate cancer cell lines and are strongly suggestive that high levels of ESRP2 protein inhibit growth of prostate cancer cells.
 
-## Identification of endogenous ESRP1/ESRP2-regulated targets in prostate cancer cells
+### Identification of endogenous ESRP1/ESRP2-regulated targets in prostate cancer cells
 
 To enable us to test whether androgens may control splicing indirectly via transcriptional regulation of ESRP2, we next set out to identify a panel of endogenous ESRP2-responsive exons within prostate cancer cells. We first used siRNAs to jointly deplete both ESRP1 and ESRP2 proteins from LNCaP cells (since ESRP1 and ESRP2 can regulate overlapping targets); and in parallel treated LNCaP cells with a control siRNA. We then used RNAseq to monitor the effects of these treatments on the LNCaP transcriptome. Bioinformatic analysis (Trincado et al., 2018) of these RNAseq data (GSE129540) predicted 446 ESRP1/ESRP2 regulated alternative splicing events across 319 genes (ΔPSI > 10%, p<0.05) (Figure 3—source data 1). We experimentally validated splicing switches for 44 predicted ESRP1/ESRP2-controlled exons by RT-PCR analysis, after LNCaP cells were treated with either of two independent sets of siRNAs directed against ESRP1 and ESRP2 or control siRNAs (Figure 3 and Figure 3—source data 2). We detected similar splicing switches for 35/44 of these skipped exons after jointly depleting ESRP1 and 2 from the AR-positive CWR22 RV1 prostate cancer cell line. 28/44 of these splicing switches were also observed after jointly depleting ESRP1 and ESRP2 from the AR positive PNT2 cells that model the normal prostate epithelium (Figure 3 and Figure 3—source data 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig3-v2.jpg)
 
-**Figure 3.:** Heat map showing mean PSI levels for a panel of ESRP-regulated exons in prostate cancer cell lines (CWR22RV1, PNT2, LNCaP and PC3). Mean PSIs were calculated for ESRP-regulated isoforms between cells treated with siRNAs specific to ESRP1 and ESRP2, or control siRNAs (CWR22RV1, PNT2, LNCaP), between PC3 cells with and without ectopic expression of ESRP1 or ESRP2, and between LNCaP cells grown in steroid deplete versus androgen stimulated conditions (10nM R1881 for 48 hr). Biological triplicate samples were used for CWR22RV1, PNT2 and LNCaP cells, and technical replicate samples were used for RNAs prepared from PC3 cells. PSI levels were measured using RT-PCR analysis averaged from three replicates (mean data given in Figure 3—source data 2), and clustered in the heat map according to splicing patterns across the different conditions. The heatmap was generated using heatmap.2 function using R’s ‘gplots’ package. The black shading in the heatmap denotes non-detection of the mRNA isoform after RT-PCR, and white denotes no change detected.10.7554/eLife.47678.010Figure 3—source data 1.Trincado et al., 2018).446 ESRP regulated alternative splicing events were identified across 319 genes (ΔPSI > 10%, p<0.05).10.7554/eLife.47678.011Figure 3—source data 2.Gene names (column A) are shown next to PSI levels detected under different experimental conditions (columns B-P). In columns B-P red cell shading indicates increased exon inclusion; blue shading indicates decreased exon splicing; the white cells labelled NA indicate these conditions were not analysed; and the white cells labelled 0 indicate no change in splicing was detected. Patterns of splicing in the PRAD dataset (Saraiva-Agostinho and Barbosa-Morais, 2019) between tumour as compared to normal tissue (Tumour versus normal, column Q); whether there was any correlation in the PRAD dataset (Saraiva-Agostinho and Barbosa-Morais, 2019) between splicing inclusion or exclusion of the exon with time to biochemical recurrence of the tumour (column R); the p value associated with the pattern of splicing shown in column Q (T-test p-value (BH adjusted), column S); and the difference from the median pattern of inclusion (Δ median PSI, column T) or expression in normal versus prostate tumour tissue in the PRAD cohort (Saraiva-Agostinho and Barbosa-Morais, 2019); the coordinates of the alternative event on hg38 (Alternative event 1 (HG38), column U) and hg19 (Alternative event 1 (HG19), column V); and the forward (column W) and reverse (column X) primers used to detect the alternative event using RT-PCR.
+**Figure 3.:** Heat map showing mean PSI levels for a panel of ESRP-regulated exons in prostate cancer cell lines (CWR22RV1, PNT2, LNCaP and PC3). Mean PSIs were calculated for ESRP-regulated isoforms between cells treated with siRNAs specific to ESRP1 and ESRP2, or control siRNAs (CWR22RV1, PNT2, LNCaP), between PC3 cells with and without ectopic expression of ESRP1 or ESRP2, and between LNCaP cells grown in steroid deplete versus androgen stimulated conditions (10nM R1881 for 48 hr). Biological triplicate samples were used for CWR22RV1, PNT2 and LNCaP cells, and technical replicate samples were used for RNAs prepared from PC3 cells. PSI levels were measured using RT-PCR analysis averaged from three replicates (mean data given in Figure 3—source data 2), and clustered in the heat map according to splicing patterns across the different conditions. The heatmap was generated using heatmap.2 function using R’s ‘gplots’ package. The black shading in the heatmap denotes non-detection of the mRNA isoform after RT-PCR, and white denotes no change detected.
 
 Given this set of endogenous target exons, we carried out further analyses to next identify target exons that respond to increasing levels of either ESRP2 or ESRP1 expression in PC3 cells (which normally express low levels of endogenous ESRP1/ESRP2) (Figure 1D and E). Ectopic expression of either ESRP1 or ESRP2 in PC3 cells induced splicing switches for 31/42 exons analysed. Importantly, the splicing switches induced by ectopic expression of either ESRP2 or ESRP1 were reciprocal to the splicing switches detected after siRNA depletion of ESRP1/ESRP2 (Figure 3). Experimentally validated ESRP-regulated exons fell into two groups. Splicing of one group of exons were repressed by ectopic expression of ESRP1 or ESRP2 in PC3 cells, and reciprocally activated by endogenous ESRP1/ESRP2 depletion in LNCaP cells (these exons are in the top of the heatmap in Figure 3, from OSBL3 to FN1). Splicing of the second group of exons were activated by ectopic expression of ESRP1 or ESRP2, and reciprocally repressed by ESRP1/ESRP2 depletion (from TRIP10 to ITGA6 in Figure 3).
 
-## An androgen steroid hormone-ESRP2 axis controls alternative splicing in AR-positive prostate cancer cells
+### An androgen steroid hormone-ESRP2 axis controls alternative splicing in AR-positive prostate cancer cells
 
 The above data identified a robust panel of alternative exons within prostate cancer cells that responded to ESRP1/ESRP2 expression levels. We next tested if this panel of ESRP2-regulated exons are additionally regulated by ambient androgen concentrations. LNCaP cells were harvested after growth in steroid deplete media and after 48 hr of androgen stimulation (this timing was designed to enable full levels of androgen-mediated ESRP2 protein induction, Figure 1H). Our prediction was that androgen stimulation of LNCaP cells would activate ESRP2 expression to regulate our panel of endogenous test exons. If this was the case, splicing switches in response to androgen stimulation should occur in a reciprocal direction to splicing changes induced by ESRP1/ESRP2 protein depletion in LNCaP cells. Consistent with these expectations, more than 70% (37/44) exons in our test panel demonstrated androgen regulated splicing (Figure 3—source data 2). Importantly, plotting the percent spliced-in (PSI) for each exon after 48 hr androgen stimulation (Y axis) versus the PSI after ESRP1/ESRP2 depletion (X axis) showed a significant negative correlation (slope = −0.66, R2 = 0.64, p<0.0001) (Figure 4A). Thus, exons that showed more exon skipping in response to ESRP1/ESRP2 depletion had higher splicing inclusion after androgen stimulation (which would induce ESRP2 expression) (examples shown in Figure 4A and B). Reciprocally, exons that showed higher splicing inclusion in response to ESRP1/2 depletion also had less splicing inclusion after androgen stimulation (examples shown in Figure 4A and C). These results experimentally support an androgen-ESRP2 axis that controls splicing patterns in prostate cancer cells.
 
@@ -96,7 +116,7 @@ The above data identified a robust panel of alternative exons within prostate ca
 
 The genes containing ESRP-activated exons that were also activated by androgen exposure (Figure 4B) included: MINK1 (exon 18) which encodes a pro-migratory serine/threonine kinase; MAP3K7 (exon 12) which encodes a serine/threonine kinase that regulates signalling and apoptosis, activates NFKappaB, and is lost in aggressive prostate cancer (Kluth et al., 2013; Rodrigues et al., 2015); GRLH1 (exon 5) that encodes a transcription factor involved in epithelial cell functions (Jacobs et al., 2018); and FLNB (exon 30), alternative splicing of which has been identified as a key switch contributing to breast cancer metastasis (Li et al., 2018; Ravipaty et al., 2017). Amongst the genes containing ESRP2-repressed exons that were also skipped in response to androgen stimulation (Figure 4C) were DOCK7 (exon 23), which encodes a guanine nucleotide exchange factor involved in cell migration (Gadea and Blangy, 2014); and RPS24 (exon 5), a gene that is highly expressed in prostate cancer (Arthurs et al., 2017).
 
-## The AR-ESRP2 axis controls splicing of mRNA isoforms that are important for prostate cancer disease progression
+### The AR-ESRP2 axis controls splicing of mRNA isoforms that are important for prostate cancer disease progression
 
 To visualise the amplitude of ESRP2-mediated splicing control, we plotted PSIs measured in vitro after ectopic expression of ESRP1/ESRP2 versus PSI values after siRNA mediated depletion of ESRP1/ESRP2 (Figure 5A, using data from Figure 3 and Figure 3—source data 2, slope = −0.74, R2 = 0.6221, p<0.0001). Consistent with the heat map (Figure 3), ESRP2-regulated exons fell into two groups. Splicing of one group of exons were ESRP2-activated, and splicing of these were conversely repressed by ESRP1/ESRP2 depletion, while the second group of ESRP2-repressed exons had the reverse properties.
 
@@ -104,21 +124,41 @@ To assess how important ESRP2-regulated mRNAs might be in prostate cancer we mon
 
 Expression of the second group of ESRP1/ESRP2-promoted mRNA isoforms correlated with an increased time to biochemical occurrence. These exons are shown in green in Figure 5A, and include exons in the FLNB, SLK and ITGA6 genes (functions of these genes and exons are summarised in Figure 5—source data 2). For example, inclusion of ITGA6 exon 25 is activated by ESRP2, and predicted to alter signalling pathways activated by the encoded protein (Groulx et al., 2014). Splicing inclusion of the third set of exons did not correlate with time to biochemical recurrence (identified as grey dots in Figure 5A, and summarised in Figure 5—source data 3). These exons included GRHL1 exon 5, splicing of which is needed to maintain the GRHL1 reading frame. GRHL1 encodes a transcription factor important for the operation of epithelial enhancer sequences (Cieply et al., 2016; Jacobs et al., 2018).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-v2.jpg)
+
+**Figure 5.:** (A) Graphical representation of levels of average PSI levels in response to ectopic ESRP2 expression in PC3 cells (Y axis) versus after ESRP1/ESRP2 depletion in LNCaP cells. Individual PSI values to make this graph are averaged from three biological replicates, and are given in Figure 3—source data 2. Note that the PSI values for ESRP over-expression refer to ESRP2 over-expression, with the exception of FNIP1 and SLC37A2 that are for ESRP1 over-expression (see Figure 3—source data 2). Linear regression analysis of this data was analysed using Graphpad. Individual splice forms were correlated with clinical data for time to PSA biochemical recurrence within the PRAD cohort (Saraiva-Agostinho and Barbosa-Morais, 2019). Points on this graph corresponding to individual ESRP-regulated splice isoforms are coloured differently according to whether they correlate with an increased time to PSA biochemical recurrence (blue dots), a decreased time to biochemical recurrence (red dots) or had no significant correlation (black dots) is shown. (B–C) Kaplan-Meier plots showing data from TCGA PRAD cohort of percentage of tumours that are free of biochemical recurrence versus time in years, associated with expressing the alternative splice isoforms of (B) RPS24 exon 5 (PSI cut off 0.44), and (C) FLNB exon 30 (PSI cut off 0.78) (Saraiva-Agostinho and Barbosa-Morais, 2019). (D) Violin plots of distributions of significance of biochemical recurrence (BCR) free survival difference between better and worse prognosis groups of patients defined by PSI cut-off values in primary tumour samples, for ESRP-regulated and all other exons whose PSI variance across TCGA primary tumours was ≥0.005 (approximately the minimum for regulated events, to avoid biasing the potential functional relevance towards these). The survival difference significance for each exon is given by -log10 of the p-value of the log-rank test used to compare survival distributions and the PSI cut-off value is the one minimising that p-value, given by psichomics (Saraiva-Agostinho and Barbosa-Morais, 2019).The depicted statistical significance (p) of the difference between the distributions summarised by the violins was calculated with a two-sided Wilcoxon signed-rank test. (E) Volcano plot showing alternative splicing analysis (Saraiva-Agostinho and Barbosa-Morais, 2019) of RNAseq data performed between normal prostate tissue and prostate tumour tissue from the TCGA PRAD cohort (consisting of 497 prostate tumour samples and 52 normal tissue). The t-test p-value (Benjamini-Hochberg adjusted for multiple testing) was used as metric of statistical significance. Significantly differentially spliced events (|Δ median PSI| ≥ 0.1 and FDR ≤ 0.01) are highlighted in orange, others in grey. ESRP2-activated exons are labelled in red text, and ESRP2-repressed exons are labelled in blue text. (F) Percentage splicing inclusion (PSI), quantified by RT-PCR, of DOCK7 exon 23 within samples of prostate tumour and adjacent normal tissue (statistical significance calculated using t test). (G) Percentage splicing inclusion (PSI), quantified by RT-PCR, of RPS24 exon 2 within nine matched samples of prostate tumour and adjacent normal tissue (statistical significance calculated using t test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-figsupp1-v2.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig5-figsupp2-v2.jpg)
+
 To provide some measurement of the enrichment for clinically-relevant events, we compared the significance of optimal biochemical reoccurrence (BCR) survival difference between ESRP-regulated and all other exons whose PSI variance across TCGA primary tumours was ≥0.005 (approximately the minimum for regulated events, to avoid biasing the potential relevance towards these). As illustrated in the violin plot in Figure 5D, there was a significant trend for a stronger prognostic value amongst the ESRP-regulated exons.
 
 Further analysis of the PRAD cohort revealed that 19/38 ESRP-regulated exons also have different patterns of splicing inclusion between tumour and normal tissue (Figure 5E and Figure 3—source data 2). These differentially spliced exons include the AR-ESRP2-controlled alternative exons in the DOCK7 and RPS24 genes (both of which were excluded in prostate tumours compared to normal prostate tissue); and the alternative exons in the MINK1 and MAP3K7 genes (each of which had increased levels of splicing inclusion in prostate tumours compared to normal tissue). Further qRT-PCR analysis of an independent cohort confirmed more frequent skipping of DOCK7 (exon 23) and RPS24 (exon 5) in prostate tumour tissue compared to normal prostate (Figure 5F and G).
 
 Some exons had more subtle changes than would be apparent from just comparing overall exon skipping and exon inclusion in prostate cancer. NUMB exon three and ITGA6 exon 25 (both activated by ESRP2) are predominantly skipped in prostate tumours compared to normal tumour tissue, yet their PSI levels increase in larger, more advanced tumours to produce their respective mRNA isoforms that are associated with a decreased time to biochemical recurrence (Figure 5—figure supplement 2A and B). RAC1 exon 3A (activated by ESRP2) falls into the ‘grey’ area when comparing inclusion in normal versus prostate cancer, but more detailed analysis show that this exon is highly included in higher Gleason grades of prostate cancer, again to produce the RAC1 splicing isoform associated with a decreased time to biochemical recurrence (Figure 5—figure supplement 2C). RPS24 exon 5 (repressed by ESRP2, and overall more skipped in tumours) is skipped more in larger more advanced tumours, making the mRNA isoform associated with a decreased time to biochemical recurrence (Figure 5—figure supplement 2D). Similarly, MYO1B exon 23 (skipped in response to ESRP2) is both overall more skipped in prostate tumour versus normal, and more skipped in higher Gleason grade cancers (Figure 5—figure supplement 2E). FLNB exon 31 (activated by ESRP2) actually shows slightly reduced splicing inclusion in larger, more aggressive tumours (Figure 5—figure supplement 2F).
 
-## Splicing of key exons are switched by a drug that antagonises AR activity
+### Splicing of key exons are switched by a drug that antagonises AR activity
 
 The above data identified a subset of ESRP2-regulated splicing switches that associated with biochemical recurrence of prostate cancer after treatment. Since ESRP2 expression was repressed by ADT in patient prostate cancer tissue, we next investigated whether AR inactivation may influence mRNA splice isoforms that correlate with cancer progression. To test this, androgen induction of ESRP2 mRNA expression was blocked using the androgen antagonist bicalutamide (Casodex) (Figure 6A). Consistent with Casodex preventing expression of some potentially harmful isoforms in prostate cancer cells, the splicing inclusion of NUMB exon three and TUFT1 exon two were reduced by Casodex (both these exons are normally activated by androgen exposure and ESRP2). Likewise, exon skipping events in the RPS24, FN1 and MYH10 genes that correlated with a poorer prognosis were also reduced by Casodex (these exons are normally skipped in response to ESRP2). Not all the splicing switches induced by Casodex correlate with increased time to biochemical recurrence. Skipping of CTNND1 exon 2 and 3 correlates with a decreased time to biochemical recurrence within the TGCA dataset (Figure 5—figure supplement 1), and this is the mRNA isoform promoted by Casodex treatment (Figure 6C). Splicing inclusion of MAGI1 exon 7 (normally repressed by ESRP2) and RALGPS2 exon 15 were also increased by Casodex treatment (Figure 6B and C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-v2.jpg)
+
+**Figure 6.:** (A) ESRP2 mRNA expression in cells grown in steroid deplete (SD) conditions, and after addition of androgens (A+) (quantified by real-time PCR from three biological replicates). Androgen-mediated activation of ESRP2 expression was inhibited in the presence of 10 μM of the anti-androgen bicalutamide (Casodex). Cells were cultured for 24 hr. The p value shows the statistical significance that was calculated using a t test between the A + vehicle and the A + casodex samples. (B–C) Capillary gel electrophoretogram showing RT-PCR analysis the splicing response + /- 24 hr Casodex treatment for exons that are normally (B) activated or (C) repressed by androgens (three biological samples shown, statistical significances were calculated using a t test, with the exception of CTNND1 where there was zero inclusion detected for exons 2 and 3 before depletion of ESRP2, and FN1 where there was zero inclusion of exon 25 before Casodex treatment).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blot showing levels of the AR, ESRP2 and actin in samples of LNCaP cells following growth in steroid deplete media (SD), or plus androgens for 48 hr (A+). Cells were transfected with esiRNAs designed to deplete the AR, or a control siRNA (NTesiRNA). Statistical significance was calculated using a t test. (B) Capillary gel electrophoretograms showing RT-PCR analysis of 3 biological replicate RNA samples, measuring splicing inclusion levels for FLNB exon 30 and TUFT1 exon two after siRNA depletion of the AR or treatment with a control siRNA.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47678/elife-47678-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Capillary gel electrophoretograms showing RT-PCR analysis of 3 biological replicate RNA samples, measuring splicing inclusion levels for MAP3K7 exon 12; an ESRP2 regulated exons between exons 7 and 8 in the ARFGAP2 gene (this exon is currently unannotated so designated with an asterisk); and CTNND1 exons 2 and 3 after siRNA depletion of the AR or treatment with a control siRNA. p values were calculated using graphpad, with the exception of CTNND1 where there was zero inclusion detected for exons 2 and 3 before depletion of ESRP2.
 
 ESRP2 and ESRP1 are important to maintain epithelial splicing programmes. We thus considered whether by repressing ESRP2 expression, ADT might also inadvertently switch splicing towards mesenchymal patterns that could facilitate metastasis. Consistent with this prediction, treatment of LNCaP cells with Casodex reduced splicing inclusion levels of the FLNB gene exon 30 by almost 20% (Figure 6B). Although it is not differentially spliced between normal prostate and prostate cancer (Figure 5E), increased skipping of FLNB exon 30 has been recently reported as a key driver of EMT in breast cancer development (Li et al., 2018). Similarly, Casodex treatment also increased splicing inclusion of what are normally mesenchymal-expressed exons in the CTNND1 gene (Warzecha et al., 2009b) (Figure 6C).
 
 We used siRNA as a further strategy to reduce AR expression (Figure 6—figure supplement 1A). As predicted, ESRP2 protein expression was reduced by siRNA depletion of the AR (Figure 6—figure supplement 1A). Furthermore, siRNA-mediated depletion of AR reduced levels of FLNB splicing inclusion from 84% to 69%, and levels of TUFT1 exon 2 splicing from 23% to 9% (Figure 6—figure supplement 1B). Both these data support a scenario where splicing inclusion of ESRP2-dependent exons are controlled by expression levels of the AR.
 
-## Splicing patterns respond to changes in the expression of ESRP2 alone
+### Splicing patterns respond to changes in the expression of ESRP2 alone
 
 The above data suggested a model where decreases in ESRP2 expression in response to inhibition of AR activity are sufficient to induce splicing changes, even though ESRP1 was still expressed. To further investigate whether loss of ESRP2 alone would be sufficient to induce splicing changes we carried out individual siRNA-mediated depletion of ESRP2 both within both LNCaP and CWR22RV1 cells. Consistent with our model, single ESRP2 depletion was able to switch splicing patterns of exons within the MAP3K7, ARFGAP2 and CTNND1 genes (Figure 6—figure supplement 2; Figure 3—source data 2). As examples, individual depletion of ESRP2 reduced splicing inclusion of MAP3K7 exon 12, and activated splicing inclusion of CTNND1 exons 2 and 3 (Figure 6 – Figure 3—source data 2). Furthermore, splicing patterns of ESRP1/ESRP2 target exons were also responsive to single up-regulation of either ESRP1 or ESRP2 (Figure 3—source data 2).
 
@@ -140,54 +180,239 @@ The clinical prognosis of metastatic prostate cancer is poor (Livermore et al., 
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ESRP1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>ESRP2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>LNCaP</td>
+      <td>ATCC</td>
+      <td>CRL-1740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>PC3</td>
+      <td>ATCC</td>
+      <td>CRL-1435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>CWR-RV1</td>
+      <td>ATCC</td>
+      <td>CRL-2505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>PNT2</td>
+      <td>Sigma Aldrich</td>
+      <td>95012613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>RWPE-1</td>
+      <td>ATCC</td>
+      <td>CRL-11609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ESRP2</td>
+      <td>Genetex</td>
+      <td>GTX123665</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ESRP1</td>
+      <td>Sigma,</td>
+      <td>HPA023719</td>
+      <td>1:1000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-AR</td>
+      <td>BD Bioscience,</td>
+      <td>554226</td>
+      <td>1:10000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin rabbit polyclonal antibody</td>
+      <td>Sigma</td>
+      <td>A2668</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG mouse monoclonal antibody</td>
+      <td>Sigma</td>
+      <td>F3165</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>normal rabbit IgG</td>
+      <td>Jackson labs</td>
+      <td>711-035-152</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>normal mouse IgG</td>
+      <td>Jackson labs</td>
+      <td>715-036-150</td>
+      <td>1:2000 dilution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ESRP1 plasmid</td>
+      <td>Gift from Prof Russ Carstens (University of Philadelphia. USA)</td>
+      <td>PIBX-C-FF-B-ESRP1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ESRP2 plasmid</td>
+      <td>Gift from Dr Keith Brown (University of Bristol. UK)</td>
+      <td>pBIGi hESRP2-FLAG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>Primers to detect splice isoforms</td>
+      <td>This paper</td>
+      <td></td>
+      <td>designed using Primer3 http://primer3.ut.ee/</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>designed using Primer3 http://primer3.ut.ee/</td>
+    </tr>
+    <tr>
+      <td>Sequence based reagent</td>
+      <td>siRNAs</td>
+      <td>hs.Ri.ESRP1.13.1, hs.Ri.ESRP1.13.2, hs.Ri.ESRP2.13.1, hs.Ri.ESRP2.13.2, IDT (51-01-14-04), AR esiRNA EHU025951 Control esiRNA EHUEGFP Sigma</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercialassay or kit</td>
+      <td>Rnaeasy plus kit</td>
+      <td>Qiagen</td>
+      <td>catalog number 74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercialassay or kit</td>
+      <td>DNA free</td>
+      <td>Ambion</td>
+      <td>catalog number AM1906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad prism</td>
+      <td>https://graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>synthetic androgen analogue methyltrienolone (R1881)</td>
+      <td>Perkin–Elmer</td>
+      <td>NLP005005MG</td>
+      <td>10 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bicalutamide (Casodex)</td>
+      <td>Sigma</td>
+      <td>B9061</td>
+      <td>10 μM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 Cell culture and androgen treatment of cells was as described previously (Munkley et al., 2015a; Munkley et al., 2015b; Munkley et al., 2015c; Munkley et al., 2014; Rajan et al., 2011). All cells were grown at 37°C in 5% CO2. LNCaP cells (CRL-1740, ATCC) were maintained in RPMI-1640 with L-Glutamine (PAA Laboratories, R15-802) supplemented with 10% Fetal Bovine Serum (FBS) (PAA Laboratories, A15-101). For androgen treatment of LNCaP cells, medium was supplemented with 10% dextran charcoal stripped FBS (PAA Laboratories, A15-119) to produce a steroid-deplete medium. Following culture for 72 hr, 10 nM synthetic androgen analogue methyltrienolone (R1881) (Perkin–Elmer, NLP005005MG) was added (Androgen +) or absent (Steroid deplete) for the times indicated. Similarly, LNCaP cells were pre-treated with with 10 μM bicalutamide (Casodex) or ethanol (vehicle) for 2 hr prior to addition of 10nM R1881 for 48 hr. Cell line validation was carried out using STR profiling was according to the ATCC guidelines. All cell lines underwent regular mycoplasma testing.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used for western blotting: Anti-ESRP2 rabbit antibody (Genetex, GTX123665), anti-rabbit ESRP1 (Sigma, HPA023719), anti-AR mouse antibody (BD Bioscience, 554226), anti-actin rabbit antibody (Sigma, A2668), anti-FLAG mouse monoclonal antibody (Sigma, F3165), normal rabbit IgG (711-035-152 Jackson labs) and normal mouse IgG (715-036-150 Jackson labs). For immunohistochemistry the following ESRP antibodies were tested: anti-rabbit ESRP1 (Sigma, HPA023719) and anti-rabbit ESRP2 (Abcam ab113486) but were found not to be specific for FFPE cell pellets.
 
-## RT-qPCR
+### RT-qPCR
 
 Cells were harvested and total RNA extracted using TRI-reagent (Invitrogen, 15596–026), according to the manufacturer’s instructions. RNA was treated with DNase 1 (Ambion) and cDNA was generated by reverse transcription of 500 ng of total RNA using the Superscript VILO cDNA synthesis kit (Invitrogen, 11754–050). Quantitative PCR (qPCR) was performed in triplicate on cDNA using SYBR Green PCR Master Mix (Invitrogen, 4309155) using the QuantStudio 7 Flex Real-Time PCR System (Life Technologies). ESRP1 was detected using (ESRP1 for AGCACTACAGAGGCACAAACA; ESRP1 Rev TGGAGAGAAACTGGGCTACC). ESRP2 was detected using the primer combination (ESRP2 For CCT GAA CTA CAC AGC CTA CTA CCC; ESRP2 Rev TCC TGA CTG GGA CAA CAC TG). Samples were normalised using the average of three reference genes: GAPDH (GAPDH For AAC AGC GAC ACC CAT CCT C; GAPDH Rev TAGCACAGCCTGGATAGCAAC); β–tubulin (TUBB For CTTCGGCCAGATCTTCAGAC; TUBB Rev AGAGAGTGGGTCAGCTGGAA); and actin (ACTIN For CATCGAGCACGGCATCGTCA; ACTIN Rev TAGCACAGCCTGGATAGCAAC).
 
-## siRNA
+### siRNA
 
 siRNA mediated protein depletion of ESRP1/2 was carried out using Lipofectamine RNAiMAX Transfection Reagent (Thermo Fisher, 13778075) as per the manufacturer’s instructions and for the times indicated. The siRNA sequences used were ESRP1 siRNA1 (hs.Ri.ESRP1.13.1); ESRP1 siRNA2 (hs.Ri.ESRP1.13.2); ESRP2 siRNA 1 (hs.Ri.ESRP2.13.1); ESRP2 siRNA 2 (hs.Ri.ESRP2.13.2); and a negative control siRNA (IDT (51-01-14-04)). AR esiRNA was as described previously (Munkley et al., 2016).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Freshly cut tissue sections were analysed for immunoexpression using Ventana Discovery Ultra autostainer (Ventana Medical Systems, Tucson, Arizona). In brief, tissue sections were incubated in Cell conditioning solution 1 (CC1, Ventana) at 95°C to retrieve antigenicity, followed by incubation with respective primary antibodies described above. Bound primary antibodies were visualized using UltraMap DAB anti-Rb Detection Kit.
 
-## AR-ChIP
+### AR-ChIP
 
 LNCaP cells were stimulated with 10 nM R1881 overnight. The ChIP assay was performed using the one step ChIP kit (Abcam ab117138) as per manufacturer’s instruction. Briefly, cells were fixed and crosslinked in 1% formaldehyde for 10 min at 37°C and incubated with protease inhibitors. Chromatin was isolated from cell lysates and enzymatically fragmented using an EZ-Zyme Chromatin Prep Kit (Merck 17 375). 10 ug of anti - AR antibody (Abcam ab74272) or IgG control antibody was used to precipitate DNA crosslinked with the androgen receptor. Enriched DNA was then probed by qPCR using primers targeting the ESRP2 regulatory region to assess AR binding intensity. Primer sequences used to detect PSA were (PSA ChIP for GCC TGG ATC TGA GAG AGA TAT CAT C; PSA Chip rev ACA CCT TTT TTT TTC TGG ATT GTT G). Primers used to detect AR binding near to ESRP2 were (ESRP2 Chip for TCCCGAGTAGCTGGGACTAC; ESRP2 Chip rev CAGTGGCTTACACCTGGGAG).
 
-## Creation of PC3 stable cell lines
+### Creation of PC3 stable cell lines
 
 The ESRP1 plasmid (PIBX-C-FF-B-ESRP1) was a gift from Prof Russ Carstens (University of Philadelphia. USA) and the ESRP2 plasmid (pBIGi hESRP2-FLAG) from Dr Keith Brown (University of Bristol, UK). PC3 cells were transfected using FuGene HD Transfection Reagent as per manufacturer’s instructions. Stable transfectants with ESRP1 was selected using 10 µg/ml Blasticidin and ESRP2 plasmid was selected using 150 ug/ml Hygromycin. ESRP2 Plasmid was inducible by 2.5 ug/ml doxycycline for 48 hr. PC3 ESRP1 overexpressed cells were transfected with pBIGi hESRP2-FLAG plasmid using the same protocol.
 
-## In vitro cell proliferation analysis
+### In vitro cell proliferation analysis
 
 For cell growth curves (carried out for in vitro analysis of PC3 stable cell lines), PC3 cells were seeded 100,000 cells per well in 12-well plate in eight plates. Cells were counted every 24 hr after seeding in the plate. All the treatments had 12 repeats. WST assays were carried out over 7 days as per manufacturer’s instructions (Cayman, CAY10008883). For DU145 cells 10,000 cells were seeded per well in a 96 well plate. All data was tested by two-way ANOVA.
 
-## RNAseq analysis
+### RNAseq analysis
 
 LNCaP cells (passage 19) were treated with either control siRNAs or siRNAs targeting ESRP1 and ESRP2 for 72 hr (samples prepared in triplicate). RNA was extracted 72 hr after siRNA treatment using the Qiagen RNAeasy kit (Cat No. 74104) as per the manufacturer's instructions. RNAseq was carried out using TruSeq Stranded mRNA Sequencing NextSeq High-Output to obtain 2 × 75 bp reads. Quality control of reads was performed using FastQC. Reads were mapped to the hg38 transcriptome using Salmon. Differential gene expression analysis was performed using DESeq2. Percent spliced-in (PSI) estimates for splicing events were calculated using SUPPA2 (Trincado et al., 2018) based on isoform transcripts per million (TPM) estimates from Salmon (Patro et al., 2017). Quantification utilised Gencode gene models (release 28). Differential PSI was calculated using DiffSplice using the empirical method (Hu et al., 2013). Events with a delta PSI > 10% and FDR < 0.05 were considered as significant.
 
-## Psichomics and bioinformatic analysis of PRAD cohort
+### Psichomics and bioinformatic analysis of PRAD cohort
 
 Clinical expression patterns of ESRP2-regulated exons were monitored using psichomics (Saraiva-Agostinho and Barbosa-Morais, 2019). Differential splicing analysis between primary solid tumour and solid tissue normal samples were subsequently performed to evaluate relative higher inclusion levels in either tumour or normal tissue samples using Δ median and t-test p-value (Benjamini-Hochberg adjusted) values. Survival analysis based on TCGA clinical data derived from prostate cancer patient samples was performed with time to first PSA biochemical recurrence being the event of interest. Additional statistical analyses and generation of plots were performed in R (R Development Core Team, 2019). Violin plots were created with R package vioplot (Adler and Kelly, 2018).
 
-## Tumour xenografts
+### Tumour xenografts
 
 Stable overexpression of ESRP1 and stable doxycycline-inducible overexpression of either ESRP2 alone or ESRP1 and 2 were obtained using PC3 cells (that have the low endogenous levels of both proteins). One million PC3 overexpressing ESRP1 or control cells were injected subcutaneously in the flank of male nude mice and tumour volumes were monitored. Two million PC3 cells overexpressing ESRP2, overexpressing ESRP1 and 2, or control cells were injected subcutaneously in the flank of male nude mice and tumour volumes were monitored. PC3 ESRP2 and PC3 ESRP1/2 cells were cultured in medium supplemented with 2.5 ug/ml doxycycline for 48 hr prior to injecting into nude mice to induce ESRP2 expression and mice were administered Doxycycline repeatedly. Tumour diameters were measured using calipers.
 
-## Clinical samples
+### Clinical samples
 
 Our study made use of RNA from 32 benign samples from patients with benign prostatic hyperplasia (BPH) and 17 malignant samples from transurethral resection of the prostate (TURP) samples. Malignant status and Gleason score were obtained for these patients by histological analysis. We also analysed normal and matched PCa tissue from nine patients obtained by radical prostectomy. The samples were obtained with ethical approval through the Exeter NIHR Clinical Research Facility tissue bank (Ref: STB20). Written informed consent for the use of surgically obtained tissue was provided by all patients. The RNA samples analysed in Figure 2C were previously published (Walker et al., 2017).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed using GraphPad Prism 6 (GraphPad Software, Inc). Statistical analyses were conducted using the GraphPad Prism software (version 5.04/d). PCR quantification of mRNA isoforms was assessed using the unpaired student’s t-test. Data are presented as the mean of three independent samples ± standard error of the mean (SEM). Statistical significance is denoted as *p<0.05, **p<0.01, ***p<0.001 and ****p<0.0001.

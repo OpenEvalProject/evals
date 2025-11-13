@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01dagn361 Tata Institute of Fundamental Research Hyderabad India
+1. Tata Institute of Fundamental Research Hyderabad India ([ROR:01dagn361](https://ror.org/01dagn361))
 
 † Corresponding author
 
@@ -34,21 +34,21 @@ As one of the key observations, our simulation unequivocally reveals LLPS-like a
 
 In this study, we utilized the recently developed Martini 3 (Souza et al., 2021) CG model to simulate collective interaction of a large number of αS chains in explicit presence of aqueous media at various concentrations commensurate with in vitro conditions including the presence of crowders and salt. As Martini 3 was not originally developed for IDPs, we carefully optimized the protein-water interactions against atomistic simulation of monomer and dimer of αS, as detailed in the Methods section, to ensure compatibility with αS (see Methods).
 
-Initially, we examined the impact of concentration on the protein’s aggregation by simulating copies of chains, maintaining a polydispersity of protein conformations of αS. In particular, three different conformations of αS (referred to here as ms1, ms2, and ms3) with Rgs (radius of gyration) ranging between collapsed and extended states (1.84–5.72 nm) at different concentrations, with a composition, as estimated in a recent investigation (Menon and Mondal, 2023), were employed. First the chains were simulated for extensive period in a set of three protein concentrations, close to previous experiments.
+Initially, we examined the impact of concentration on the protein’s aggregation by simulating copies of chains, maintaining a polydispersity of protein conformations of αS. In particular, three different conformations of αS (referred to here as $ms1$, $ms2$, and $ms3$) with Rgs (radius of gyration) ranging between collapsed and extended states (1.84–5.72 nm) at different concentrations, with a composition, as estimated in a recent investigation (Menon and Mondal, 2023), were employed. First the chains were simulated for extensive period in a set of three protein concentrations, close to previous experiments.
 
-## Simulations capture enhanced aggregation beyond a threshold concentrations of αS
+### Simulations capture enhanced aggregation beyond a threshold concentrations of αS
 
 We performed simulations of αS at various concentrations, namely 300 μM, 400 μM, 500 μM, and 750 μM. We begin by analyzing the aggregation behavior of αS. As shown in Figure 2, we observe that most chains do not aggregate at 300 and 400 μM as characterized by the prevalence of high number of free monomers. The respective snapshots of the simulation indicate the presence of greater extent of single chains. Also, the chains that are not free form very small oligomers of the order of dimer to tetramer (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig2-v1.jpg)
 
-**Figure 2.:** The blue dot at the middle of each distribution represents the mean number of monomers observed for each concentration. For each concentration we show representative snapshots of the system. For each concentration, we also report the statistics of the number of chains in the largest cluster (). (na) A snapshot from the simulation at 300 μM α-syn. (b) A snapshot from the simulation at 400 μM α-syn. (c) A snapshot from the simulation for 500 μM α-syn. (d) A snapshot from the simulation at 750 μM α-syn.
+**Figure 2.:** The blue dot at the middle of each distribution represents the mean number of monomers observed for each concentration. For each concentration we show representative snapshots of the system. For each concentration, we also report the statistics of the number of chains in the largest cluster (n). (a) A snapshot from the simulation at 300 μM α-syn. (b) A snapshot from the simulation at 400 μM α-syn. (c) A snapshot from the simulation for 500 μM α-syn. (d) A snapshot from the simulation at 750 μM α-syn.
 
 However, upon increasing the concentration to 500 μM, which has also been the critical concentration reported for αS to undergo LLPS (Ray et al., 2020), we observe a sharp drop in the average number of free monomers in the system (Figure 2). The corresponding representative snapshot of the system also depicts a few higher-order aggregates, such as pentamers and hexamers, as well as most chains forming small oligomers. This can be understood from the value of the average number of chains present in the largest clusters, as reported in Figure 2.
 
 The system, being at critical concentration, formation of large aggregates would require longer timescales than the simulation length. Therefore, in order to promote the formation of large aggregates (heptamers or more) for finer characterization, we performed a simulation at a higher concentration of 750 μM αS. As shown in Figure 2d, we observe further decrease in the total number of free monomeric chains in the solution. There is simultaneous appearance of a very few droplet-like aggregates (hexamer or more) as can be seen from Figure 2 and the adjacent snapshot of the system (Figure 2). However, we note that ∼60% of the protein chains are free and do not participate in aggregation and we think that as such in water, αS does not possess a strong and spontaneous self-aggregation tendency. In the following sections we characterize the aggregation tendency of αS in the presence of certain environmental modulator that can shed more light on this hypothesis.
 
-## Molecular crowders and salt accelerate αS aggregation
+### Molecular crowders and salt accelerate αS aggregation
 
 The cellular environment, accommodating numerous biological macromolecules, poses a highly crowded space for proteins to fold and function (Ellis and Minton, 2006; Deeds et al., 2007; Li et al., 2008; Zhou, 2013). In in vitro studies, inert polymers such as Dextran, Ficoll, and polyethylene glycol (PEG) are commonly employed as macromolecular crowding agents. In the context of αS aggregation, previous experimental studies have revealed an increased rate of in vitro fibrillation in the presence of different crowding agents (Uversky et al., 2002; Munishkina et al., 2008; Horvath et al., 2021). Notably, a recent experimental study demonstrated the occurrence of phase separation (LLPS) of αS in the presence of PEG molecular crowder (Ray et al., 2020). Moreover, considering that in vivo environments also contain various moieties like salts and highly charged ions, a recent in vitro study has shown that the ionic strength of the solvent directly influences the aggregation rates of αS (Sawner et al., 2021), with higher ionic strength enhancing αS aggregation.
 
@@ -62,33 +62,75 @@ As expected, the addition of crowders leads to an enhancement of αS aggregation
 
 Following this, we conducted an analysis of the number of chains present in the largest clusters that formed. Figure 3b clearly illustrates that the addition of crowder or salt leads to a notable increase in the average number of proteins forming a cluster. This crucial observation points to the fact that the inclusion of accelerators, such as crowder or salt, not only promotes aggregation but also plays a role in stabilizing the formed oligomers. Importantly, we observed that the effect of crowder on aggregation is slightly more pronounced compared to that of the salt. In the subsequent section, we delve into the reasons behind the enhanced aggregation induced by these accelerators, aiming to decipher the underlying mechanisms responsible for their influence on αS aggregation dynamics. As the aggregation is significant enough for performing quantitative analysis only when the concentration of αS is 750 μM, we perform all analysis on scenarios at 750 μM of αS.
 
-## Crowders and salt differentially modulate surface tension for promoting LLPS-like αS droplets
+### Crowders and salt differentially modulate surface tension for promoting LLPS-like αS droplets
 
-The preceding sections underscore our simulation-based observation that, influenced by crowders and salt, αS aggregates into higher-order oligomers (hexamers and beyond) at a significantly accelerated propensity compared to the scenario without these influences. Here, we delve into the investigation of the energetic aspects underlying this aggregation phenomenon. An important contributor to the energetics is the surface tension, arising from the creation of interfaces between the dense and dilute phases of the protein upon droplet formation. This presence of interfaces is accompanied by surface tension and surface energy. The surface energy of a system is directly proportional to its surface area; systems with higher surface energy tend to minimize their surface area. Consequently, systems comprising multiple smaller droplets exhibit a larger surface area, and hence a higher surface energy. Conversely, systems characterized by fewer, larger droplets possess a comparatively reduced surface area and correspondingly lower surface energy. This insight leads us to conjecture that surface tension could play a pivotal role in driving LLPS and the formation of larger αS droplets. To explore this hypothesis, we calculate the surface tension of the resultant droplets, as per Equations 1 and 2 and as described in SI Methods and Benayad et al., 2021.(1)γ20=5kBT16π⟨(δa+δb)2⟩(2)γ22=15kBT16π⟨(δa−δb)2⟩
+The preceding sections underscore our simulation-based observation that, influenced by crowders and salt, αS aggregates into higher-order oligomers (hexamers and beyond) at a significantly accelerated propensity compared to the scenario without these influences. Here, we delve into the investigation of the energetic aspects underlying this aggregation phenomenon. An important contributor to the energetics is the surface tension, arising from the creation of interfaces between the dense and dilute phases of the protein upon droplet formation. This presence of interfaces is accompanied by surface tension and surface energy. The surface energy of a system is directly proportional to its surface area; systems with higher surface energy tend to minimize their surface area. Consequently, systems comprising multiple smaller droplets exhibit a larger surface area, and hence a higher surface energy. Conversely, systems characterized by fewer, larger droplets possess a comparatively reduced surface area and correspondingly lower surface energy. This insight leads us to conjecture that surface tension could play a pivotal role in driving LLPS and the formation of larger αS droplets. To explore this hypothesis, we calculate the surface tension of the resultant droplets, as per Equations 1 and 2 and as described in SI Methods and Benayad et al., 2021.
 
-where δa=a−R and δb=b−R is the perturbation of the droplet shape from a perfect sphere with a radius R along any two pairs of principle axes of general ellipsoid estimating the shape of the droplet. The surface tension (γ) is thus estimated using γ≈γ20≈γ22. Please see SI Methods and Benayad et al., 2021, for more details.
+$$
+\gamma_{20}=\frac{5k_{B}T}{16\pi⟨(\deltaa+\deltab)^{2}⟩}
+$$
 
-Figure 4a provides a comparison of the surface tension (γ), for three different scenarios involving αS: (i) αS in solution, (ii) αS in the presence of crowders, and (iii) αS in the presence of salt. Notably, in each case, the surface tension is considerably lower (0.0035–0.0075 mN/m) than the surface tension for FUS droplets in water (∼0.05 mN/m) (Benayad et al., 2021). As stated earlier, the magnitude of surface tension is an estimate of the aggregation tendency of any liquid-liquid mixture. Since we find that γαS is much lower than γFUS, we assert that the propensity with which αS aggregates should be much lower than that of FUS.
+
+
+$$
+\gamma_{22}=\frac{15k_{B}T}{16\pi⟨(\deltaa−\deltab)^{2}⟩}
+$$
+
+where $\deltaa=a−R$ and $\deltab=b−R$ is the perturbation of the droplet shape from a perfect sphere with a radius $R$ along any two pairs of principle axes of general ellipsoid estimating the shape of the droplet. The surface tension ($\gamma$) is thus estimated using $\gamma≈\gamma_{20}≈\gamma_{22}$. Please see SI Methods and Benayad et al., 2021, for more details.
+
+Figure 4a provides a comparison of the surface tension ($\gamma$), for three different scenarios involving αS: (i) αS in solution, (ii) αS in the presence of crowders, and (iii) αS in the presence of salt. Notably, in each case, the surface tension is considerably lower (0.0035–0.0075 mN/m) than the surface tension for FUS droplets in water (∼0.05 mN/m) (Benayad et al., 2021). As stated earlier, the magnitude of surface tension is an estimate of the aggregation tendency of any liquid-liquid mixture. Since we find that γαS is much lower than $\gamma_{FUS}$, we assert that the propensity with which αS aggregates should be much lower than that of FUS.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig4-v1.jpg)
+
+**Figure 4.:** (a) Surface tensions of droplets, estimated from $\gamma_{20}$ and $\gamma_{22}$, for three cases have been shown. Both $\gamma_{20}$ and $\gamma_{22}$ provide almost similar estimates of the value of surface. (b) Comparison of protein concentrations for the dilute (red) and the droplet (blue) phases for 750 μM αS+50 mM NaCl. (c) Excess free energy of transfer comparison for three cases.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Comparison of protein concentrations in the dense and the dilute phase for 750 μM αS. (b) Comparison of protein concentrations in the dense and the dilute phase for 750 μM αS in the presence of 10% (vol/vol) crowders.
 
 Next, we conduct a comparison of the three different scenarios to understand the effects of crowders and salt on the aggregation of αS. From Figure 4a, it is evident that the surface tensions are very similar for cases (i) and (ii), while it has increased for case (iii). This implies that the addition of crowders does not significantly impact the surface tension of the aggregates, although it renders the protein more prone to aggregation. On the other hand, the addition of salt causes an increase in surface tension. Given the relationship between surface area and volume, where a higher surface-to-volume ratio signifies numerous smaller droplets, the surface energy is concurrently elevated. In the presence of salt, a tendency is observed for these smaller aggregates to coalesce, giving rise to larger aggregates, albeit in reduced numbers. This behavior is an endeavor to curtail the surface-to-volume ratio and thus mitigate the associated surface energy. Therefore, the larger the surface tension, the higher is tendency of the protein to form aggregates, as seen from the surface tension values of αS and FUS, as mentioned earlier.
 
-To minimize the surface energy, fusion of aggregates, either via merging of two or more droplets into one is seen for liquid-like phase-separated droplets in experiments (Ray et al., 2020). Although droplet fusion was not observed in our simulations due to the limited system size, it was shown that if a protein undergoes LLPS, a significant difference in protein concentration occurs between the droplet and the dilute phase (Nguyen et al., 2022). To verify whether the aggregates observed in our simulations exhibit characteristics of LLPS, we calculated the protein concentrations in the dilute and concentrated phases. For the droplet phase, the concentration of the protein was calculated using Equation 3.(3)cphase=NphaseNA×Vphase
+To minimize the surface energy, fusion of aggregates, either via merging of two or more droplets into one is seen for liquid-like phase-separated droplets in experiments (Ray et al., 2020). Although droplet fusion was not observed in our simulations due to the limited system size, it was shown that if a protein undergoes LLPS, a significant difference in protein concentration occurs between the droplet and the dilute phase (Nguyen et al., 2022). To verify whether the aggregates observed in our simulations exhibit characteristics of LLPS, we calculated the protein concentrations in the dilute and concentrated phases. For the droplet phase, the concentration of the protein was calculated using Equation 3.
 
-where Nphase is the number of protein chains in the phase (here dilute or concentrated), NA is Avogadro’s number, and Vphase is the volume occupied by the phase. For the dilute phase, we estimated the volume of the concentrated/dense phase (Vdense) using Equation 4 (Nguyen et al., 2022).(4)Vdensei=4π3λ1λ2λ3
+$$
+c_{phase}=\frac{N_{phase}}{N_{A}\timesV_{phase}}
+$$
 
-where Vdensei is the volume of the ith droplet, λ1, λ2, and λ3 are the eigenvalues of the gyration tensor for the aggregate. The volume of the dilute phase is the remainder volume of the system given by Equation 5.(5)Vdilute=V−∑iVdensei
+where $N_{phase}$ is the number of protein chains in the phase (here dilute or concentrated), $N_{A}$ is Avogadro’s number, and $V_{phase}$ is the volume occupied by the phase. For the dilute phase, we estimated the volume of the concentrated/dense phase ($V_{dense}$) using Equation 4 (Nguyen et al., 2022).
+
+$$
+V_{dense}^{i}=4\pi\sqrt{3}\lambda_{1}\lambda_{2}\lambda_{3}
+$$
+
+where $V_{dense}^{i}$ is the volume of the $i$th droplet, $\lambda_{1}$, $\lambda_{2}$, and $\lambda_{3}$ are the eigenvalues of the gyration tensor for the aggregate. The volume of the dilute phase is the remainder volume of the system given by Equation 5.
+
+$$
+V_{dilute}=V−\sumiV_{dense}^{i}
+$$
 
 where V is the total volume of the system.
 
-As shown in Figure 4b and Figure 4—figure supplement 1, there is an almost two orders of magnitude difference between the concentration of αS in the dilute and droplet phases for all scenarios. Such a pronounced difference is a hallmark of LLPS, leading us to assert that the aggregates formed in our simulations possess LLPS-like properties. Consequently, we use the term ‘droplet’ interchangeably with ‘aggregates’ for the remainder of our investigation.(6)ΔGtransfer=RTln⁡(cdilutecdense)
+As shown in Figure 4b and Figure 4—figure supplement 1, there is an almost two orders of magnitude difference between the concentration of αS in the dilute and droplet phases for all scenarios. Such a pronounced difference is a hallmark of LLPS, leading us to assert that the aggregates formed in our simulations possess LLPS-like properties. Consequently, we use the term ‘droplet’ interchangeably with ‘aggregates’ for the remainder of our investigation.
 
-Finally, utilizing the calculated concentrations, we proceed to estimate the excess free energy of monomer transfer (ΔGtransfer), from Equation 6, between the dilute and droplet phases, where cdilute is the concentration of αS in the dilute phase, cdense is the concentration of αS in the dense/droplet phase, R is the universal gas constant, and T is the temperature of the system (=310.15 K). As illustrated in Figure 4c, both crowder and salt scenarios demonstrate lower ΔGtransfer values compared to the case without their presence. However, the thermodynamic origins behind this pronounced aggregation differ for crowders and salt. Crowders enhance aggregation primarily through excluded volume interactions, which are of an entropic nature. On the other hand, salt enhances aggregation by increasing the droplet’s surface tension, thus contributing to the enthalpy of the system. As a result, apart from the already known fact that macromolecular crowding decreases ΔGtransfer via entropic means, we also infer that salt decreases ΔGtransfer via enthalpic means by increasing the surface tension of the formed droplets.
+$$
+ΔG_{transfer}=RTln⁡(\frac{c_{dilute}}{c_{dense}})
+$$
 
-## Aggregation results in chain expansion and chain reorientation in αS
+Finally, utilizing the calculated concentrations, we proceed to estimate the excess free energy of monomer transfer ($ΔG_{transfer}$), from Equation 6, between the dilute and droplet phases, where $c_{dilute}$ is the concentration of αS in the dilute phase, $c_{dense}$ is the concentration of αS in the dense/droplet phase, R is the universal gas constant, and T is the temperature of the system (=310.15 K). As illustrated in Figure 4c, both crowder and salt scenarios demonstrate lower $ΔG_{transfer}$ values compared to the case without their presence. However, the thermodynamic origins behind this pronounced aggregation differ for crowders and salt. Crowders enhance aggregation primarily through excluded volume interactions, which are of an entropic nature. On the other hand, salt enhances aggregation by increasing the droplet’s surface tension, thus contributing to the enthalpy of the system. As a result, apart from the already known fact that macromolecular crowding decreases $ΔG_{transfer}$ via entropic means, we also infer that salt decreases $ΔG_{transfer}$ via enthalpic means by increasing the surface tension of the formed droplets.
+
+### Aggregation results in chain expansion and chain reorientation in αS
 
 An indicative trait of molecules undergoing LLPS is the adoption of extended conformations upon integration into a droplet structure. Given that the aggregates observed in our simulations exhibit a concentration disparity reminiscent of LLPS between the dilute and dense phases, we endeavored to validate the presence of a comparable chain extension phenomenon within our simulations (Nguyen et al., 2022). To address this, we quantified the radius of gyration (Rg) for individual chains and classified them based on whether they were situated in the dilute or dense phase. The distribution of Rg values for each category is illustrated in Figure 5a and Figure 5—figure supplement 1. Remarkably, the distribution associated with the dense phase distinctly indicates that the protein assumes an extended conformation within this context. As elucidated earlier, this marked propensity for extended conformations aligns with a characteristic hallmark of LLPS as previously seen in experiments (Ubbiali et al., 2022).
 
-Having observed the conformational alterations of αS during LLPS, our subsequent aim was to quantify the extent of these conformational changes in relation to their initial states (referred to as ‘ms1’, ‘ms2’, or ‘ms3’ in decreasing order of Rg; Menon and Mondal, 2023). To achieve this, we computed the root mean square deviation (RMSD) of each protein relative to its starting conformation. The resulting distributions were visually depicted using violin plots, featuring bold edges in Figure 5b and c. The protein ensemble was segregated into two categories: (i) those from the dilute phase (Figure 5b) and (ii) those from the dense phase (Figure 5c).
+![Figure 5.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig5-v1.jpg)
+
+**Figure 5.:** All the figures are for 750 μM αS+50 mM NaCl. (a) Distribution of Rg for proteins present in the dense or the dilute phases. (b) Comparison of root mean square deviation (RMSD) for protein chains present in the dilute phase, with single-chain RMSDs as the reference (dotted edges). (c) Comparison of RMSD for protein chains present in the dense phase, with single-chain RMSDs as the reference (dotted edges). (d) Distribution of the angle of orientation of two chains inside the droplet for the three different scenarios. (e) Representative snapshot for angle between 0 and 20 degree. (f) Representative snapshot for angle between 50 and 70 degree. (g) Representative snapshot for angle between 80 and 120 degree. (h) Representative snapshot for angle between 150 and 180 degree.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Comparison of $R_{g}$ in the dense and the dilute phase for 750 μM α-synuclein (αS). (b) Comparison of $R_{g}$ in the dense and the dilute phase for 750 μM αS in the presence of 10% (vol/vol) crowders.
+
+Having observed the conformational alterations of αS during LLPS, our subsequent aim was to quantify the extent of these conformational changes in relation to their initial states (referred to as ‘ms1’, ‘ms2’, or ‘ms3’ in decreasing order of $R_{g}$; Menon and Mondal, 2023). To achieve this, we computed the root mean square deviation (RMSD) of each protein relative to its starting conformation. The resulting distributions were visually depicted using violin plots, featuring bold edges in Figure 5b and c. The protein ensemble was segregated into two categories: (i) those from the dilute phase (Figure 5b) and (ii) those from the dense phase (Figure 5c).
 
 Surprisingly, regardless of their initial configurations, the observed RMSD values were notably high. To facilitate a comparative analysis, we also included distributions of RMSDs for single chains simulated in the presence of 50 mM of salt, depicted using violin plots with broken edges. Intriguingly, the conformational state labeled as ms1, exhibited the least RMSD, a characteristic attributed to its notably extended conformation. This phenomenon aligns with the preference of droplets for extended conformations, implying that ms1 required the least conformational perturbation and thus exhibited a lower RMSD.
 
@@ -96,19 +138,35 @@ For both ms2 and ms3, a conspicuous increase in RMSD values was observed across 
 
 As discussed in the previous paragraph that the αS monomers inside the droplets must undergo conformational expansion and we hypothesized that they adopt orientation so as to minimize the inter-chain electrostatic repulsions. To this end, we try to decipher the orientations of the chains via defining their axes of orientations and subsequently calculating the angles between the major axis of two monomers. We calculate the major axis of gyration, given by the eigenvector corresponding to the largest eigenvalue of the gyration tensor, for each monomer inside a droplet. We next find the nearest neighbor (minimum distance of approach <8 Å) for each monomer, carefully taking care of over-counting.
 
-The angle between two monomers is defined as the angle between the major axes of gyration between chain i and its nearest neighbor j. We plot the distributions of the angles for all scenarios and all droplets in Figure 5d. We observe that irrespective of the conditions, the distribution peaks at right angles. The representative snapshots (Figure 5e–h) showcase their mode of orientation. Interestingly the distribution is the same for all the three scenarios, again stressing upon the fact the αS droplets share similar features in terms of interactions and orientations irrespective of their environments.
+The angle between two monomers is defined as the angle between the major axes of gyration between chain $i$ and its nearest neighbor $j$. We plot the distributions of the angles for all scenarios and all droplets in Figure 5d. We observe that irrespective of the conditions, the distribution peaks at right angles. The representative snapshots (Figure 5e–h) showcase their mode of orientation. Interestingly the distribution is the same for all the three scenarios, again stressing upon the fact the αS droplets share similar features in terms of interactions and orientations irrespective of their environments.
 
-## Characterization of molecular interactions in aggregation-prone conditions
+### Characterization of molecular interactions in aggregation-prone conditions
 
 As established in preceding sections, both crowders and salt have been observed to augment the aggregation of αS while concurrently stabilizing the resultant aggregates. This phenomenon leads to the protein adopting extended conformations within a notably heterogeneous ensemble. Shifting our attention, we now delve into a residue-level investigation to unravel the specific interactions responsible for stabilizing these aggregates and, consequently, facilitating the aggregation process.
 
 To compute the differential contact maps, our approach involved initial calculations of average intra-protein residue-wise contact maps, termed as intra-protein contact probability maps, for monomers present in both the dilute and dense phases (refer to Figure 6—figure supplement 1). Subsequently, we derived the difference by subtracting the contact probabilities of monomers within the dilute phase from those within the dense phase. As evident from Figure 6a, a discernible reduction in intra-chain Nter-Cter interactions is observed for monomers within the droplet phase, depicted by the presence of blue regions along the off-diagonals. Such a reduction in such interactions has also been observed via experiments (Ubbiali et al., 2022) and it is similarly noticeable in the two other cases, as evident in Figure 6b and c.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig6-v1.jpg)
+
+**Figure 6.:** (a) 750 μM α-synuclein (αS) in water. (b) 750 μM αS in the presence of 10% (vol/vol) crowders. (c) 750 μM αS in the presence of 50 mM NaCl.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) 750 μM αS. (b) 750 μM α-synuclein (αS) + 10% (vol/vol) crowders. (c) 750 μM αS + 50 mM NaCl.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (a) 750 μM αS. (b) 750 μM αS + 10% (vol/vol) crowders. (c) 750 μM αS + 50 mM NaCl.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (a) 750 μM αS + 10% (vol/vol) crowders - 750 μM αS. (b) 750 μM αS + 50 mM NaCl - 750 μM αS.
+
 Furthermore, a significant decline in intra-protein interactions, especially the NAC-NAC interactions, is predominantly observed at shorter ranges, indicated by deep-blue regions concentrated near the diagonals. Notably, these diminished intra-chain interactions (Figure 6 and Figure 6—figure supplement 1) potentially facilitate the formation of inter-chain interactions (Figure 6—figure supplement 2). Thus, we observed that increased inter-chain NAC-NAC regions (Figure 6—figure supplement 3) facilitate the formation of αS droplets which also have been previously seen from FRET experiments on αS LLPS droplets (Ray et al., 2020). Building on these observations, we posit that these interactions play a pivotal role in stabilizing the aggregates that have formed.
 
 Moreover, from the difference heatmaps in Appendix 1—figure 5, it can be observed that the residues 95–110 (VKKDQLGKNEEGAPQE) have reduced contact probabilities upon introduction of crowders/salt, whereas the rest of the contacts have slightly increased. These residues are highly charged and we think that upon introduction of crowders/salt, the proteins inside the droplet needed to be spatially oriented to facilitate the formation of largest aggregates. This re-orientation occurs to minimize the electrostatic repulsions among these residues belonging to different chains. These analyses provide hints that these residues are present in the protein so as to avoid the formation of aggregation-prone conformations, which is why their interactions had to be minimized to form more stable and larger aggregates.
 
-## Phase-separated αS monomer forms small-world networks
+### Phase-separated αS monomer forms small-world networks
 
 The investigations so far suggest that irrespective of the factors that cause the aggregation of αS, the interactions that drive the formation of droplet remain essentially the same. However, the conformations of the monomers vary depending on their environment. In the presence of crowders they adapt to form much more compact aggregates. Therefore, here we characterize whether the environment influences the connectivity among different chains of the protein inside a droplet.
 
@@ -118,17 +176,25 @@ Figure 7a, b, and c shows molecular representations of the largest cluster forme
 
 **Figure 7.:** (a) The largest cluster formed by αS at 750 μM. (b) The largest cluster formed by αS at 750 μM in the presence of 10% (vol/vol) crowder. (c) The largest cluster formed by αS at 750 μM in the presence of 50 mM salt. Different residues have been color coded as per the figure legend. (d) A graph showing the contacts among different chains constituting the largest cluster formed by αS at 750 μM. (e) A graph showing the contacts among different chains constituting the largest cluster formed by αS at 750 μM in the presence of 10% (vol/vol) crowder. (f) A graph showing the contacts among different chains constituting the largest cluster formed by αS at 750 μM in the presence of 50 mM NaCl. The mean small-worldness (S) of all droplet has been reported above the graph. (g) Distribution of small-worldness (S) for all scenarios.
 
-A network can be classified as a small-world network by calculating the clustering coefficient and the average shortest path length for the network and comparing those to an equivalent Erdos-Renyi network (Rényi, 1959). The clustering coefficient (C) is a measure of the ‘connectedness’ of a graph, indicating the extent to which nodes tend to cluster together. It quantifies the likelihood that two nodes with a common neighbor are also connected. On the other hand, the average shortest path length (L) is a metric that calculates the average number of steps required to traverse from one node to another within a network. It provides a measure of the efficiency of information or influence propagation across the graph. To estimate the small-worldness of a graph, we calculate a parameter (S) defined by Equation 7.(7)S=CCrLLr
+A network can be classified as a small-world network by calculating the clustering coefficient and the average shortest path length for the network and comparing those to an equivalent Erdos-Renyi network (Rényi, 1959). The clustering coefficient (C) is a measure of the ‘connectedness’ of a graph, indicating the extent to which nodes tend to cluster together. It quantifies the likelihood that two nodes with a common neighbor are also connected. On the other hand, the average shortest path length (L) is a metric that calculates the average number of steps required to traverse from one node to another within a network. It provides a measure of the efficiency of information or influence propagation across the graph. To estimate the small-worldness of a graph, we calculate a parameter ($S$) defined by Equation 7.
 
-where C and L are the clustering coefficient and average shortest path length for the graph generated for a droplet respectively, while Cr and Lr clustering coefficient and average shortest path length for an equivalent Erdos-Renyi network, respectively. Small-world networks exhibit the characteristic property of having C>>Cr, while L≈Lr. In light of this, for every scenario (solely αS, αS in the presence of crowder, and αS in the presence of salt), we generate an ensemble of graphs that correspond to the droplets formed during the simulation.
+$$
+S=\frac{\frac{C}{C_{r}}}{\frac{L}{L_{r}}}
+$$
 
-For each graph, we calculate the small-worldness coefficient (S) (Humphries and Gurney, 2008) and illustrate the distribution in Figure 7g. We observe a narrow distribution of S with a mean of 3.4 for all cases. In a previous report of RNA-LLPS, a value of S≈4 was used to classify the droplets small-world networks (Nguyen et al., 2022). Therefore, S=3.4 would suggest that the droplets formed during the simulations are small-world like. Moreover, we observe that the distribution of S is invariant with respect to the environment of the droplet.
+where $C$ and $L$ are the clustering coefficient and average shortest path length for the graph generated for a droplet respectively, while $C_{r}$ and $L_{r}$ clustering coefficient and average shortest path length for an equivalent Erdos-Renyi network, respectively. Small-world networks exhibit the characteristic property of having $C>>C_{r}$, while $L≈L_{r}$. In light of this, for every scenario (solely αS, αS in the presence of crowder, and αS in the presence of salt), we generate an ensemble of graphs that correspond to the droplets formed during the simulation.
+
+For each graph, we calculate the small-worldness coefficient ($S$) (Humphries and Gurney, 2008) and illustrate the distribution in Figure 7g. We observe a narrow distribution of $S$ with a mean of 3.4 for all cases. In a previous report of RNA-LLPS, a value of $S≈4$ was used to classify the droplets small-world networks (Nguyen et al., 2022). Therefore, $S=3.4$ would suggest that the droplets formed during the simulations are small-world like. Moreover, we observe that the distribution of $S$ is invariant with respect to the environment of the droplet.
 
 Therefore, we establish that the modes of interactions, orientations, and even connectivities among αS monomers inside a droplet remain same even when their environments are extremely different. We think that this occurs since the residue-level interactions among different monomers inside the droplet are similar irrespective of the environment, as shown in a previous section. This puts forth a very interesting way of viewing αS LLPS. We think that if these residue-level interactions can be disturbed then the stability of the formed droplets might be affected in such a way that they might dissolve spontaneously.
 
 ## Discussion
 
-We used simulations to investigate the molecular basis of αS monomeric aggregation into soluble oligomers resembling micro-LLPS. The WT protein demonstrated limited aggregation, suggesting a low inherent propensity for LLPS dictated by its primary sequence. IDPs, like αS, often share primary sequence characteristics associated with phase separation. Charged residues distributed with uncharged amino acids, resembling the ‘sticker and spacer’ model, contribute to this molecular grammar. This observation aligns with a general trend in IDPs (Choi et al., 2019; Martin et al., 2020; Choi et al., 2020). To assess αS LLPS propensity from its primary sequence, we calculated Shannon entropy (S) (Shannon, 1948, Equation 8 and Figure 8—source data 1), Kyte-Doolittle hydrophobicity (Kyte and Doolittle, 1982; Figure 8—source data 2), normalized, maximum of the sum of PLAAC log-likelihood ratios (NLLR) (Lancaster et al., 2014; Figure 8—source data 3), and LLPS propensity scores obtained from catGranules webserver (Bolognesi et al., 2016; Figure 8—source data 4).(8)S=∑ipilog⁡pi
+We used simulations to investigate the molecular basis of αS monomeric aggregation into soluble oligomers resembling micro-LLPS. The WT protein demonstrated limited aggregation, suggesting a low inherent propensity for LLPS dictated by its primary sequence. IDPs, like αS, often share primary sequence characteristics associated with phase separation. Charged residues distributed with uncharged amino acids, resembling the ‘sticker and spacer’ model, contribute to this molecular grammar. This observation aligns with a general trend in IDPs (Choi et al., 2019; Martin et al., 2020; Choi et al., 2020). To assess αS LLPS propensity from its primary sequence, we calculated Shannon entropy (S) (Shannon, 1948, Equation 8 and Figure 8—source data 1), Kyte-Doolittle hydrophobicity (Kyte and Doolittle, 1982; Figure 8—source data 2), normalized, maximum of the sum of PLAAC log-likelihood ratios (NLLR) (Lancaster et al., 2014; Figure 8—source data 3), and LLPS propensity scores obtained from catGranules webserver (Bolognesi et al., 2016; Figure 8—source data 4).
+
+$$
+S=\sumip_{i}log⁡p_{i}
+$$
 
 where pi is the probability of occurrence of a residue in a given sequence.
 
@@ -138,7 +204,7 @@ We note a significant difference in the Shannon entropy value of αS compared to
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig8-v1.jpg)
 
-**Figure 8.:** (a) Comparison of Shannon entropy of different datasets with αS. (b) Comparison of Kyte-Doolittle hydrophobicity of different datasets with αS. (c) Comparison of LLR scores, obtained from PLAAC, of different datasets with αS. (d) Comparison of liquid-liquid phase separation (LLPS) propensity scores, obtained from catGRANULE websever, of different datasets with αS. The values have been summarized in Figure 8—source data 5.Figure 8—source data 1.Shannon, 1948) for various datasets and α-synuclein (αS).Figure 8—source data 2.Kyte and Doolittle, 1982) scores for various datasets and α-synuclein (αS).Figure 8—source data 3.Lancaster et al., 2014) scores for various datasets and α-synuclein (αS).Figure 8—source data 4.Bolognesi et al., 2016) scores for various datasets and α-synuclein (αS).Figure 8—source data 5.
+**Figure 8.:** (a) Comparison of Shannon entropy of different datasets with αS. (b) Comparison of Kyte-Doolittle hydrophobicity of different datasets with αS. (c) Comparison of LLR scores, obtained from PLAAC, of different datasets with αS. (d) Comparison of liquid-liquid phase separation (LLPS) propensity scores, obtained from catGRANULE websever, of different datasets with αS. The values have been summarized in Figure 8—source data 5.
 
 For characterizing αS’s aggregation phenomena, we calculated droplet surface tension under varied conditions. We observed that crowders minimally impacted surface tension, while salt increased it; however, both scenarios decreased the relative free energy of the system. Crowders achieved this via entropic means, whereas salt employed enthalpic means. Residue-residue interactions during droplet formation were consistent across environments, with crowder or salt enhancing these interactions. The aggregation pathway involved overall inter-chain interaction enhancement, specifically reducing intra-chain Nter-Cter and Nter-NAC interactions, leading to more extended protein conformations in droplets. The comparison with reported FRET observations (Ray et al., 2020) aligns well with the findings from our simulations, indicating that within the droplets, intra-chain NAC-NAC interactions have been supplanted by inter-chain NAC-NAC interactions. Droplet proteins displayed consistent orientation and ‘small-worldness’, a measure of inter-chain connectivity, remained consistent across diverse conditions. Thus, αS aggregates appeared invariant regarding their initial environment in terms of interactions and contacts.
 
@@ -154,94 +220,286 @@ The significance of the solvent in αS aggregation remains underexplored. Recent
 
 ## Methods
 
-## Selection of the metric for optimizing water-protein interactions
+### Selection of the metric for optimizing water-protein interactions
 
 We have opted to utilize the radius of gyration (Rg) of αS as the primary metric for optimizing water-protein interactions in Martini 3 for αS. To calibrate the Martini 3 force field, we employed 73 μs of all-atom data obtained from DE Shaw Research. From a polymer physics perspective, modifying water-protein interactions entails altering the solvent characteristics surrounding the biopolymer. We believe that Rg serves as an effective metric in this context. Additionally, we focus on matching the distribution of Rg values rather than solely targeting the mean value. This approach implies that, at a molecular level, the CGMD simulations conducted with optimized water-protein interactions enable the protein to explore conformations present in the all-atom ensemble.
 
-Furthermore, we conducted cross-validation by comparing the fraction of bound states in all-atom and CGMD dimer simulations. This we claim that Rg is good metric to be used for tuning of water-protein interactions in Martini 3.
+Furthermore, we conducted cross-validation by comparing the fraction of bound states in all-atom and CGMD dimer simulations. This we claim that $R_{g}$ is good metric to be used for tuning of water-protein interactions in Martini 3.
 
-## Optimizing Martini 3 parameters for αS
+### Optimizing Martini 3 parameters for αS
 
-Martini 3 (Souza et al., 2021) was trained using DES-Amber (Piana et al., 2020) that is an atomistic force field tuned for single-domain and multi-domain proteins. Therefore, the default parameters of the CG model is not suited for simulations of disordered proteins and reported to underestimate the global dimensions of these systems in addition to overestimating protein-protein interactions. Previous attempts to simulate IDPs have modified the Martini force field by tuning the water-protein interactions, specifically, σ and ϵ of Lennard-Jones interactions to render them suitable for modeling a specific IDP or all IDPs (Benayad et al., 2021; Thomasen et al., 2022; Zerze, 2024). Here, we follow a similar protocol, however instead of tuning only the ϵ part of the water-protein Lennard-Jones interactions, we refine both the σ and ϵ parameters of the water-protein interactions (Equation 9).(9)V′(r)=4ϵ′[(σ′r)12−(σ′r)6]
+Martini 3 (Souza et al., 2021) was trained using DES-Amber (Piana et al., 2020) that is an atomistic force field tuned for single-domain and multi-domain proteins. Therefore, the default parameters of the CG model is not suited for simulations of disordered proteins and reported to underestimate the global dimensions of these systems in addition to overestimating protein-protein interactions. Previous attempts to simulate IDPs have modified the Martini force field by tuning the water-protein interactions, specifically, $\sigma$ and $ϵ$ of Lennard-Jones interactions to render them suitable for modeling a specific IDP or all IDPs (Benayad et al., 2021; Thomasen et al., 2022; Zerze, 2024). Here, we follow a similar protocol, however instead of tuning only the $ϵ$ part of the water-protein Lennard-Jones interactions, we refine both the $\sigma$ and $ϵ$ parameters of the water-protein interactions (Equation 9).
 
-where ϵ′=λϵ, σ′=λσ, and λ is the scaling parameter that needs to be optimized. Scaling σ tunes the relative radius of the hydration spheres of each residue of a protein while a change in ϵ changes the strength of the water-residue interactions (Figure 9a). Increasing the ϵ value of water-protein interactions results in a higher energy demand for removing water molecules (dehydration) as a chain transitions from the dilute to the dense phase. Conversely, a higher σ value implies that the hydration shell will be at a greater distance, facilitating dehydration if a chain moves into the dilute phase. Therefore, adjusting water-protein interactions based on the protein’s single-chain behavior may not significantly influence the protein’s phase behavior. Furthermore, fine-tuning both ϵ and σ parameters only requires a minimal change in the overall protein-water interaction (1%). As a result, this adjustment minimally alters the force field parameters.
+$$
+V^{′}(r)=4ϵ^{′}[(\frac{\sigma^{′}}{r})^{12}−(\frac{\sigma^{′}}{r})^{6}]
+$$
+
+where $ϵ^{′}=\lambdaϵ$, $\sigma^{′}=\lambda\sigma$, and $\lambda$ is the scaling parameter that needs to be optimized. Scaling $\sigma$ tunes the relative radius of the hydration spheres of each residue of a protein while a change in $ϵ$ changes the strength of the water-residue interactions (Figure 9a). Increasing the $ϵ$ value of water-protein interactions results in a higher energy demand for removing water molecules (dehydration) as a chain transitions from the dilute to the dense phase. Conversely, a higher $\sigma$ value implies that the hydration shell will be at a greater distance, facilitating dehydration if a chain moves into the dilute phase. Therefore, adjusting water-protein interactions based on the protein’s single-chain behavior may not significantly influence the protein’s phase behavior. Furthermore, fine-tuning both $ϵ$ and $\sigma$ parameters only requires a minimal change in the overall protein-water interaction (1%). As a result, this adjustment minimally alters the force field parameters.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig9-v1.jpg)
 
-**Figure 9.:** (a) Plot of LJ potentials with respect to . (λb) The percentage bound values between two coarse-grained (CG) αS chains for different values of . The dashed black line represents the percentage bound values for two all-atom chains. (λc) Error between  calculated from CG and from all-atom simulations vs Rg. The inset plot showcases the average values of λ obtained from CG along with their respective standard deviations. The dashed line represents the average value from all-atom simulations.Rg
+**Figure 9.:** (a) Plot of LJ potentials with respect to $\lambda$. (b) The percentage bound values between two coarse-grained (CG) αS chains for different values of $\lambda$. The dashed black line represents the percentage bound values for two all-atom chains. (c) Error between $R_{g}$ calculated from CG and from all-atom simulations vs $\lambda$. The inset plot showcases the average values of $R_{g}$ obtained from CG along with their respective standard deviations. The dashed line represents the average value from all-atom simulations.
 
-As we are interested in exploiting multi-chain simulations to study the LLPS of αS using Martini 3, we use the percentage of time two all-atom monomers remain bound to each other as the benchmark. To obtain an optimum scaling parameter for the water-protein interactions in Martini 3, specific to αS, we perform CG simulations with two αS chains with different values of λ. We start with two chains, without any secondary structure enforced upon them, randomly placed in a 15.7 nm box making sure that they are apart by at least 0.8 nm which we use as cutoff to classify the chains to be bound. If the minimum distance between any two residues belonging to the different chains are closer than 0.8 nm we consider them to be bound. Using the cutoff defined, we calculate the percentage bound between the two αS monomers for different values of λ in the CG model. We also calculate the same from atomistic simulations reported in Menon and Mondal, 2023, as the reference. From Figure 9b, we can see that for multiple values of λ, we observe a close agreement in percentage bound values between CG and atomistic simulations.
+As we are interested in exploiting multi-chain simulations to study the LLPS of αS using Martini 3, we use the percentage of time two all-atom monomers remain bound to each other as the benchmark. To obtain an optimum scaling parameter for the water-protein interactions in Martini 3, specific to αS, we perform CG simulations with two αS chains with different values of $\lambda$. We start with two chains, without any secondary structure enforced upon them, randomly placed in a 15.7 nm box making sure that they are apart by at least 0.8 nm which we use as cutoff to classify the chains to be bound. If the minimum distance between any two residues belonging to the different chains are closer than 0.8 nm we consider them to be bound. Using the cutoff defined, we calculate the percentage bound between the two αS monomers for different values of $\lambda$ in the CG model. We also calculate the same from atomistic simulations reported in Menon and Mondal, 2023, as the reference. From Figure 9b, we can see that for multiple values of $\lambda$, we observe a close agreement in percentage bound values between CG and atomistic simulations.
 
-We conducted additional single-chain CG simulations of αS, varying the parameter λ, while refraining from imposing any secondary structure constraints. Subsequently, we compared the mean Rg values derived from these CG simulations with the 73 μs all-atom trajectory, which replaced the previously published 30 μs all-atom trajectory in Robustelli et al., 2018, and was provided by DE Shaw Research. Figure 9c illustrates that, for λ=1.01, the average Rg in the CG simulations closely matches the Rg values obtained from the all-atom data. Consequently, we have chosen λ=1.01 for the multi-chain simulations, as it minimizes errors for both single-chain Rg and the observed percentage of time bound in the two-protein chain simulations.
+We conducted additional single-chain CG simulations of αS, varying the parameter $\lambda$, while refraining from imposing any secondary structure constraints. Subsequently, we compared the mean Rg values derived from these CG simulations with the 73 μs all-atom trajectory, which replaced the previously published 30 μs all-atom trajectory in Robustelli et al., 2018, and was provided by DE Shaw Research. Figure 9c illustrates that, for $\lambda=1.01$, the average Rg in the CG simulations closely matches the Rg values obtained from the all-atom data. Consequently, we have chosen $\lambda=1.01$ for the multi-chain simulations, as it minimizes errors for both single-chain Rg and the observed percentage of time bound in the two-protein chain simulations.
 
-## Porting fullerene-based crowder to Martini 3
+### Porting fullerene-based crowder to Martini 3
 
-In this study, we model the crowders as fullerenes that have purely repulsive interactions with each other. Their interactions are modeled as consisting of only the repulsive part of their Lennard-Jones interactions instead of the full potential (Equation 10).(10)VF−F(r)=4γϵσ12r
+In this study, we model the crowders as fullerenes that have purely repulsive interactions with each other. Their interactions are modeled as consisting of only the repulsive part of their Lennard-Jones interactions instead of the full potential (Equation 10).
 
-where VF−F(r) is the interaction among different fullerenes and γ=1.0 for the default parameters reported for Martini 2.
+$$
+V^{F−F}(r)=\frac{4\gammaϵ\sigma^{12}}{r}
+$$
 
-The parameters previously reported for fullerene is for Martini 2 CG force field. Therefore, we port the parameters first to Martini 3 by addition of new interactions in Martini 3 force field (CNP beads). We test the validity of the ported parameters of fullerene by calculating and comparing their mean squared displacements (MSD) with those obtained from atomistic simulations (see Figure 10). For this, we performed atomistic simulation of 10% (vol/vol) fullerene in water in a cubic box of ∼5 nm as it is the concentration used with αS monomers as reported previously (Menon and Mondal, 2023). In a similar setup, we also run CG simulations of 10% (vol/vol) of fullerenes in water, where the volume of each fullerene-based crowder has been set to 0.55 nm3 (Adams et al., 1994). As shown in Figure 10, the default ported parameters of fullerene do not reproduce the MSD obtained in atomistic simulations. This indicates that the fullerene parameters need to be tuned to obtain a good agreement in this dynamical property (MSD). To achieve this, similar to the previous approach taken for modeling of αS in Martini 3, we tune the water-CNP interactions in Martini 3 (Equation 10). We iteratively vary γ to match the MSD from CG simulations to the reference atomistic one. We observe that at γ=1.2, we obtain the closest match between Martini 3 CG and atomistic simulations (Figure 10).
+where $V^{F−F}(r)$ is the interaction among different fullerenes and $\gamma=1.0$ for the default parameters reported for Martini 2.
+
+The parameters previously reported for fullerene is for Martini 2 CG force field. Therefore, we port the parameters first to Martini 3 by addition of new interactions in Martini 3 force field (CNP beads). We test the validity of the ported parameters of fullerene by calculating and comparing their mean squared displacements (MSD) with those obtained from atomistic simulations (see Figure 10). For this, we performed atomistic simulation of 10% (vol/vol) fullerene in water in a cubic box of ∼5 nm as it is the concentration used with αS monomers as reported previously (Menon and Mondal, 2023). In a similar setup, we also run CG simulations of 10% (vol/vol) of fullerenes in water, where the volume of each fullerene-based crowder has been set to 0.55 nm3 (Adams et al., 1994). As shown in Figure 10, the default ported parameters of fullerene do not reproduce the MSD obtained in atomistic simulations. This indicates that the fullerene parameters need to be tuned to obtain a good agreement in this dynamical property (MSD). To achieve this, similar to the previous approach taken for modeling of αS in Martini 3, we tune the water-CNP interactions in Martini 3 (Equation 10). We iteratively vary $\gamma$ to match the MSD from CG simulations to the reference atomistic one. We observe that at $\gamma=1.2$, we obtain the closest match between Martini 3 CG and atomistic simulations (Figure 10).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig10-v1.jpg)
 
-**Figure 10.:** α.The black line represents the MSD obtained from atomistic simulations with purely repulsive fullerene-fullerene interactions.
+**Figure 10.:** The black line represents the MSD obtained from atomistic simulations with purely repulsive fullerene-fullerene interactions.
 
-## Initial conformation generation for large-scale multi-chain simulations
+### Initial conformation generation for large-scale multi-chain simulations
 
-A recent study used Markov state models to delineate the metastable states based on the extent of compaction (Rg) and identified three macrostates and their relative populations (Menon and Mondal, 2023). Subsequent to the investigation, we utilize three representative conformations, each corresponding to one of the macrostates. We designate these macrostates as 1 (ms1), 2 (ms2), and 3 (ms3) (Figure 11). Therefore, in the multi-chain simulations, we maintain similar relative populations of these macrostates (Appendix 1—figure 6). The reported percentages of macrostates (labeled as ms1, ms2, and ms3) are 0.06%, 85.9%, and 14%, respectively. We added 50 αS monomers consisting of 1 chain of ms1, 45 chains of ms2, and 4 chains of ms3 in a cubic box with their respective secondary structures, determined via DSSP (Kabsch and Sander, 1983; Joosten et al., 2011; Touw et al., 2015), enforced using Martini 3. The size of the box of side α is determined as per Equation 11.(11) a=NNA×C3
+A recent study used Markov state models to delineate the metastable states based on the extent of compaction (Rg) and identified three macrostates and their relative populations (Menon and Mondal, 2023). Subsequent to the investigation, we utilize three representative conformations, each corresponding to one of the macrostates. We designate these macrostates as 1 (ms1), 2 (ms2), and 3 (ms3) (Figure 11). Therefore, in the multi-chain simulations, we maintain similar relative populations of these macrostates (Appendix 1—figure 6). The reported percentages of macrostates (labeled as ms1, ms2, and ms3) are 0.06%, 85.9%, and 14%, respectively. We added 50 αS monomers consisting of 1 chain of ms1, 45 chains of ms2, and 4 chains of ms3 in a cubic box with their respective secondary structures, determined via DSSP (Kabsch and Sander, 1983; Joosten et al., 2011; Touw et al., 2015), enforced using Martini 3. The size of the box of side α is determined as per Equation 11.
+
+$$
+ a=\sqrt[3]{\frac{N}{N_{A}\timesC}}
+$$
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig11-v1.jpg)
 
 **Figure 11.:** The left side of the figure shows the coarse-grained representation of three different conformation of αS. State-1 is the most extended conformation, followed by state-2 and finally state-3 which is the most compact conformation. The right side of the figure shows the mixture of all these conformations with a total of 50 chains in a cubic box. The residues have been color coded on the basis of their polarity/charge.
 
-where N is the number of monomers, NA is the Avogadro’s number, and C is the required concentration of αS.
+where $N$ is the number of monomers, $N_{A}$ is the Avogadro’s number, and $C$ is the required concentration of αS.
 
 Here, we simulate multiple concentrations of the protein, namely, 300, 400, 500, and 750 µM. 300 and 400 µM are below the critical concentrations required to undergo LLPS (Ray et al., 2020). We then solvate the system in CG water. We set up the 50-chain system to simulate three conditions: (i) in pure water, (ii) in 50 mM NaCl, and (iii) in presence of 10% (vol/vol) crowders. To study the effect of salt, we add the required number of Na+ and Cl- ions to attain the desired concentration of 50 mM while also adding a few ions to render the system electrically neutral. In the system with crowders, we first add crowders after solvation by replacing a few solvent molecules with the required number of crowder molecules. We next resolvate the system along with the crowders. Finally we render the system electro-neutral by addition of the required number of Na+ or Cl- ions. The details of the simulation setup are provided in Table 1.
 
-## Simulation setup
+**Table 1.**
+ Details of the systems that were explored.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Summary</th>
+      <th>Conc. of αS (μM)</th>
+      <th>Box size (nm)</th>
+      <th># water</th>
+      <th># crowders</th>
+      <th># Na+</th>
+      <th># Cl-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>300 μM αS in water</td>
+      <td>300</td>
+      <td>65.66</td>
+      <td>2,304,122</td>
+      <td>0</td>
+      <td>450</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>400 μM αS in water</td>
+      <td>400</td>
+      <td>59.69</td>
+      <td>1,729,213</td>
+      <td>0</td>
+      <td>450</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>500 μM αS in water</td>
+      <td>500</td>
+      <td>55.52</td>
+      <td>1,389,721</td>
+      <td>0</td>
+      <td>450</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>750 μM αS in water</td>
+      <td>750</td>
+      <td>48.42</td>
+      <td>920,023</td>
+      <td>0</td>
+      <td>450</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>750 μM αS + 10%(vol/vol) crowder</td>
+      <td>750</td>
+      <td>48.42</td>
+      <td>843,011</td>
+      <td>20,128</td>
+      <td>450</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>750 μM αS + 50 mM NaCl</td>
+      <td>750</td>
+      <td>48.42</td>
+      <td>913,357</td>
+      <td>0</td>
+      <td>3783</td>
+      <td>3333</td>
+    </tr>
+  </tbody>
+</table>
+
+_For all simulations, a total of 50 monomeric protein chains have been used which comprise 1×ms1, 45×ms2, and 4×ms3._
+
+### Simulation setup
 
 Upon successful generation of the initial conformation, we first perform an energy minimization using steepest gradient descent using an energy tolerance of 10 kJ/mol/nm. We next perform NVT simulations at 310.15 K using v-rescale thermostat for 5 ns using 0.01 ps as the time step. It is then followed by NPT simulation at 310.15 K and 1 bar using v-rescale thermostat and Berendsen barostat for 5 ns with a time step of 0.02 ps.
 
 Next we perform CGMD simulations using velocity-verlet integrator with a time step of 0.02 ps using v-rescale thermostat at 310.15 K and Berendsen barostat at 1 bar. Both Lennard-Jones and electrostatic interactions are cut off at 1.1 nm. Coulombic interactions are calculated using reaction-field algorithm and relative dielectric constant of 15. We perform CGMD for at least 2.5 µs for the systems with 50 αS monomers. The details of the simulation runtimes have been provided in Table 2. We use the last 1 µs for further analyses.
 
-## Ascertaining the attainment of steady state in simulation
+**Table 2.**
+ Runtimes of different simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>No. of replicas</th>
+      <th>Runtime (s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>300 μM αS</td>
+      <td>1</td>
+      <td>2.5 μs</td>
+    </tr>
+    <tr>
+      <td>400 μM αS</td>
+      <td>1</td>
+      <td>4.3 μs</td>
+    </tr>
+    <tr>
+      <td>500 μM αS</td>
+      <td>1</td>
+      <td>4.1 μs</td>
+    </tr>
+    <tr>
+      <td>750 μM αS</td>
+      <td>4</td>
+      <td>2.6, 3.1, 3.0, 3.5 μs</td>
+    </tr>
+    <tr>
+      <td>750 μM αS + 10% (vol/vol) crowders</td>
+      <td>4</td>
+      <td>2.8, 2.5, 2.6, 2.6 μs</td>
+    </tr>
+    <tr>
+      <td>750 μM αS + 50 mM NaCI</td>
+      <td>4</td>
+      <td>2.6, 2.4, 2.6, 2.3 μs</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ascertaining the attainment of steady state in simulation
 
 In this study, we utilized the final 1 μs from each simulation for further analysis. To ascertain whether the simulations have achieved a steady state, we plotted the time profile of protein concentration in the dilute phase for all three cases.
 
 Except for minor intermittent fluctuation involving only αS in neat water (Figure 12a and b), the remaining cases exhibit notably stable concentrations throughout various segments of the trajectory (Figure 12c–f). The relatively higher fluctuations observed in Figure 12a and b stem from the slow, spontaneous aggregation of αS alone, compounded by the inherently ambiguous nature of the dense phase. Consequently, the addition or removal of a few chains from the dense to the dilute phase results in significant fluctuations in protein concentration within the dilute phase. Conversely, in the other two scenarios (Figure 12c–f), aggregation is expedited by the presence of crowders/salt, leading to the formation of larger aggregates. Consequently, the addition or removal of one or two chains has negligible impact on concentration, thereby mitigating sudden large jumps. In summary, the conspicuous jumps depicted in Figure 12a and b arise from the gradual, fluctuating aggregation of pure αS and finite size effects. However, since these remain within the realm of fluctuations, we assert that the systems have indeed reached steady states. This assertion is bolstered by the subsequent figure, where the time profile of several pertinent system-wide macroscopic properties reveals no discernible change between 1.5 and 2.5 μs (Figure 12—figure supplement 1).
 
-## Calculation of concentration of phases
+![Figure 12.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig12-v1.jpg)
 
-We quantify the concentration of the protein in the solution (dilute phase) and in the aggregate (high-density phase) similar to the approach taken by Nguyen et al., 2022. We first calculate the volume of aggregate by Equation 12 as follows:(12)Vaggr=4π3λ1λ2λ33
+**Figure 12.:** (a) Concentration vs time profile of αS between 1.5 and 2.0 μs. (b) Concentration vs time profile of αS between 2.0 and 2.5 μs. (c) Concentration vs time profile of αS + 10% (vol/vol) crowders between 1.5 and 2.0 μs. (d) Concentration vs time profile of αS + 10% (vol/vol) crowders between 2.0 and 2.5 μs. (e) Concentration vs time profile of αS + 50 mM NaCl between 1.5 and 2.0 μs. (f) Concentration vs time profile of αS + 50 mM NaCl between 2.0 and 2.5 μs.
 
-where λ1, λ2, and λ3 are the eigenvalues from the gyration tensor of the aggregate. The concentration of the proteins in the aggregate is then calculated by Equation 13.(13)Caggr=NNA.Vaggr
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/95180/elife-95180-fig12-figsupp1-v1.jpg)
 
-where N is the number of chains in the aggregate, NA is the Avogadro’s number, and Vaggr is the volume of the aggregate obtained using Equation 14.
+**Figure 12—figure supplement 1.:** (a–c) Energies, pressure, and volume of the simulation box for 750 μM α-synuclein (αS). (d–f) Energies, pressure, and volume of the simulation box for 750 μM αS + 10% (vol/vol) crowders. (g–i) Energies, pressure, and volume of the simulation box for 750 μM αS + 50 mM NaCl.
 
-The concentration of the dilute phase is then calculated by Equation 14.(14)Cdilute=NdiluteNA.Vdilute
+### Calculation of concentration of phases
 
-where Ndilute is the number of chains present in trimers or lower aggregates, NA is the Avogadro’s number, and Vdilute=Vsystem−∑iVaggri. ∑iVaggri is the total volume occupied by larger aggregates (6 or more).
+We quantify the concentration of the protein in the solution (dilute phase) and in the aggregate (high-density phase) similar to the approach taken by Nguyen et al., 2022. We first calculate the volume of aggregate by Equation 12 as follows:
 
-## Calculation of small-worldness (S)
+$$
+V_{aggr}=\frac{4\pi}{3}\sqrt[3]{\lambda_{1}\lambda_{2}\lambda_{3}}
+$$
 
-It is defined as per Equation 15 (Humphries and Gurney, 2008).(15)S=γGλG
+where $\lambda_{1}$, $\lambda_{2}$, and $\lambda_{3}$ are the eigenvalues from the gyration tensor of the aggregate. The concentration of the proteins in the aggregate is then calculated by Equation 13.
 
-where γG=CGΔCrandΔ and λG=LGLrand.  CG is the mean clustering coefficient for a graph G and LG is the mean shortest path length for G. CrandΔ and Lrand are the mean clustering coefficient and mean shortest path length for an ensemble of Erdos-Renyi random network of the same size, respectively.
+$$
+C_{aggr}=\frac{N}{N_{A}.V_{aggr}}
+$$
 
-## Calculation of surface tension
+where $N$ is the number of chains in the aggregate, $N_{A}$ is the Avogadro’s number, and $V_{aggr}$ is the volume of the aggregate obtained using Equation 14.
+
+The concentration of the dilute phase is then calculated by Equation 14.
+
+$$
+C_{dilute}=\frac{N_{dilute}}{N_{A}.V_{dilute}}
+$$
+
+where $N_{dilute}$ is the number of chains present in trimers or lower aggregates, $N_{A}$ is the Avogadro’s number, and $V_{dilute}=V_{system}−\sumiV_{aggr}^{i}$. $\sumiV_{aggr}^{i}$ is the total volume occupied by larger aggregates (6 or more).
+
+### Calculation of small-worldness (S)
+
+It is defined as per Equation 15 (Humphries and Gurney, 2008).
+
+$$
+S=\frac{\gamma_{G}}{\lambda_{G}}
+$$
+
+where $\gamma_{G}=\frac{C_{G}^{Δ}}{C_{rand}^{Δ}}$ and $\lambda_{G}=\frac{L_{G}}{L_{rand}}$.  $C_{G}$ is the mean clustering coefficient for a graph $G$ and $L_{G}$ is the mean shortest path length for $G$. $C_{rand}^{Δ}$ and $L_{rand}$ are the mean clustering coefficient and mean shortest path length for an ensemble of Erdos-Renyi random network of the same size, respectively.
+
+### Calculation of surface tension
 
 We follow the procedure reported by Benayad et al., 2021, with only one minor difference. In Benayad et al., 2021, exact masses for the Martini beads were not taken into account, rather all beads were assumed to have the same mass. In this study we use the actual masses of the beads for all calculations.
 
-As per Benayad et al., 2021, we first calculate the droplet shape using Equations 16 and 17.(16)Cα,β=mi(riα−rCMSα)(riβ−rCMSβ)∑imi
+As per Benayad et al., 2021, we first calculate the droplet shape using Equations 16 and 17.
 
-where C is the mass weighted covariance matrix, α and β are directions x,y or z; i is the index for atoms/beads of protein monomers within a droplet, rCMSα/β is the center of mass of the droplet in x,y, or z direction; mi is the mass of the atom/bead.
+$$
+C_{\alpha,\beta}=\frac{m_{i}(r_{i}^{\alpha}−r_{CMS}^{\alpha})(r_{i}^{\beta}−r_{CMS}^{\beta})}{\sumim_{i}}
+$$
 
-The eigenvalues λ1,d2, and λ3 of C are given by: λ1=vh2,λ2=vb2,λ3=vc2. Since R3=abc, where R is the average droplet radius, we obtain Equation 17:a=R⁢λ11/3(λ2⁢λ3)1/6b=R⁢λ21/3(λ1⁢λ9)1/6(17)c=Rλ31/3(λ1λ2)1/6
+where $C$ is the mass weighted covariance matrix, α and β are directions $x,y$ or $z$; i is the index for atoms/beads of protein monomers within a droplet, $r_{CMS}^{\alpha/\beta}$ is the center of mass of the droplet in $x,y$, or $z$ direction; $m_{i}$ is the mass of the atom/bead.
 
-We next define δa=a−R, δb=b−R, and δc=c−R. Using these, we obtain Equation 18:(18)⟨(δa±δb)2⟩=13∑i=12∑j=i+13⟨(δai±δaj)2⟩
+The eigenvalues $\lambda_{1},d_{2}$, and $\lambda_{3}$ of $C$ are given by: $\lambda_{1}=vh^{2},\lambda_{2}=vb^{2},\lambda_{3}=vc^{2}$. Since $R^{3}=abc$, where R is the average droplet radius, we obtain Equation 17:
 
-Therefore, the surface tension (γ) is then estimated using γ≈γ20≈γ22, whereγ20=5kBT16π⟨(δa−δb)2⟩(19)γ20=5kBT16π⟨(δa−δb)2⟩
+$$
+a=\frac{R⁢\lambda_{1}^{1/3}}{(\lambda_{2}⁢\lambda_{3})^{1/6}}
+$$
 
-## List of software
+
+
+$$
+b=\frac{R⁢\lambda_{2}^{1/3}}{(\lambda_{1}⁢\lambda_{9})^{1/6}}
+$$
+
+
+
+$$
+c=\frac{R\lambda_{3}^{1/3}}{(\lambda_{1}\lambda_{2})^{1/6}}
+$$
+
+We next define $\deltaa=a−R$, $\deltab=b−R$, and $\deltac=c−R$. Using these, we obtain Equation 18:
+
+$$
+⟨(\deltaa\pm\deltab)^{2}⟩=\frac{1}{3}\sumi=12\sumj=i+13⟨(\deltaa_{i}\pm\deltaa_{j})^{2}⟩
+$$
+
+Therefore, the surface tension ($\gamma$) is then estimated using $\gamma≈\gamma_{20}≈\gamma_{22}$, where
+
+$$
+\gamma_{20}=\frac{5k_{B}T}{16\pi⟨(\deltaa−\deltab)^{2}⟩}
+$$
+
+
+
+$$
+\gamma_{20}=\frac{5k_{B}T}{16\pi⟨(\deltaa−\deltab)^{2}⟩}
+$$
+
+### List of software
 
 We have used only open-source software for this study. All simulations have been performed using GROMACS-2021 (Van Der Spoel et al., 2005; Abraham et al., 2015). Snapshots were generated using PyMOL 2.5.4 (Schrödinger, 2015a; Schrödinger, 2015b; Schrödinger, 2015c). Analysis were performed using Python (Van Rossum and Drake, 2009) and MDAnalysis (Michaud-Agrawal et al., 2011; Gowers et al., 2016). Figures were prepared using Matplotlib (Hunter, 2007), Jupyter (Kluyver et al., 2016), and (Inkscape, 2024).

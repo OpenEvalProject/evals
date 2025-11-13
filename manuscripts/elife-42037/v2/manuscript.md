@@ -32,7 +32,7 @@
 
 ## Abstract
 
-10.7554/eLife.42037.001 Positive-sense RNA viruses hijack intracellular membranes that provide niches for viral RNA synthesis and a platform for interactions with host proteins. However, little is known about host factors at the interface between replicase complexes and the host cytoplasm. We engineered a biotin ligase into a coronaviral replication/transcription complex (RTC) and identified >500 host proteins constituting the RTC microenvironment. siRNA-silencing of each RTC-proximal host factor demonstrated importance of vesicular trafficking pathways, ubiquitin-dependent and autophagy-related processes, and translation initiation factors. Notably, detection of translation initiation factors at the RTC was instrumental to visualize and demonstrate active translation proximal to replication complexes of several coronaviruses. Collectively, we establish a spatial link between viral RNA synthesis and diverse host factors of unprecedented breadth. Our data may serve as a paradigm for other positive-strand RNA viruses and provide a starting point for a comprehensive analysis of critical virus-host interactions that represent targets for therapeutic intervention.
+Positive-sense RNA viruses hijack intracellular membranes that provide niches for viral RNA synthesis and a platform for interactions with host proteins. However, little is known about host factors at the interface between replicase complexes and the host cytoplasm. We engineered a biotin ligase into a coronaviral replication/transcription complex (RTC) and identified >500 host proteins constituting the RTC microenvironment. siRNA-silencing of each RTC-proximal host factor demonstrated importance of vesicular trafficking pathways, ubiquitin-dependent and autophagy-related processes, and translation initiation factors. Notably, detection of translation initiation factors at the RTC was instrumental to visualize and demonstrate active translation proximal to replication complexes of several coronaviruses. Collectively, we establish a spatial link between viral RNA synthesis and diverse host factors of unprecedented breadth. Our data may serve as a paradigm for other positive-strand RNA viruses and provide a starting point for a comprehensive analysis of critical virus-host interactions that represent targets for therapeutic intervention.
 
 ## Introduction
 
@@ -46,9 +46,25 @@ To capture the full breadth of host cell proteins and cellular pathways that are
 
 ## Results
 
-## Engineering the BirAR118G biotin ligase into the MHV replicase transcriptase complex
+### Engineering the BirAR118G biotin ligase into the MHV replicase transcriptase complex
 
 To insert the promiscuous biotin ligase BirAR118G as an integral subunit of the MHV RTC, we used a vaccinia virus-based reverse genetic system (Coley et al., 2005; Eriksson et al., 2008) to generate a recombinant MHV harboring an in-frame fusion of myc-tagged BirAR118G to nsp2. MHV-BirAR118G-nsp2 retained the cleavage site between nsp1 and BirAR118G, while a deleted cleavage site between BirAR118G and nsp2 ensured the expression of a BirAR118G-nsp2 fusion protein (Figure 1a). This strategy was chosen because it was recently employed by Freeman et al. for a fusion of green fluorescent protein (GFP) with nsp2 and represents the only known site tolerating large insertions within the MHV replicase polyprotein (Freeman et al., 2014). MHV-BirAR118G-nsp2 replicated to comparable peak titers and replication kinetics as the parental wild-type MHV-A59 (Figure 1b). MHV-GFP-nsp2, which was constructed in parallel and contained the coding sequence of EGFP (Freeman et al., 2014) instead of BirAR118G, was used as a control and also reached wild-type virus peak titers, with slightly reduced viral titers at 9 hr post- infection (h.p.i.) compared to MHV-A59 and MHV-BirAR118G-nsp2 (Figure 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig1-v2.jpg)
+
+**Figure 1.:** (a) Genome organization of recombinant MHV-BirAR118G-nsp2. The positive-sense RNA genome of MHV contains a 5’ cap and a 3’ poly(A) tail. ORF1a and ORF1b encode the viral replication and transcription complex (nsp1-16). myc-BirAR118G was inserted as an N-terminal fusion with nsp2 within ORF1a. The cleavage site between nsp1 and myc-BirAR118G was retained (black arrow) while a deleted cleavage site between BirAR118G and nsp2 ensured the release of a BirAR118G-nsp2 fusion protein from the pp1a polyprotein. The cleavage site between nsp2 and nsp3 was also retained (grey arrow). (b) Viral replication kinetics of recombinant MHV-BirAR118G-nsp2 were compared to wild-type MHV-A59 and recombinant MHV-GFP-nsp2. Murine L929 fibroblasts were infected at a multiplicity of infection (MOI) of 1 plaque forming unit (pfu) per cell. Viral supernatants were collected at the indicated time points, titrated by plaque assay and expressed in pfu per ml. Data points represent the mean and SEM of three independent experiments, each performed in quadruplicate. (c) Immunofluorescence analysis of MHV-BirAR118G-nsp2-mediated biotinylation of RTC-proximal factors. L929 cells were infected with MHV-BirAR118G-nsp2 (MOI = 1) in medium supplemented with 67 µM biotin. Cells were fixed 15 hr post infection (h.p.i.) and processed for immunofluorescence analysis with antibodies directed against the BirAR118G (anti-myc), the viral replicase (anti-nsp2/3) and biotinylated factors (streptavidin). Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Scale bars: 20 µm; insets 5 µm. (d) Ultrastructural analysis of MHV-APEX2-nsp2 infection. L929 cells were infected with MHV-APEX2-nsp2 and MHV-A59 (MOI = 2), or mock infected. At 10 h.p.i., cells were fixed, stained with DAB and processed for electron microscopy investigations. Representative low (scale bar: 10 µm) and high magnifications (scale bar: 2 µm) are displayed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** MHV-BirAR118G-nsp2, MHV-A59- or non-infected L929 fibroblasts were cultured in medium or in medium supplemented with 67 µM biotin for 15 hr. Lysates were separated by SDS-PAGE and western blots were probed using antibodies recognizing the N-terminal myc-tag of BirAR118G-nsp2. The black arrow indicates the fusion protein corresponding to the predicted molecular weight (102.2 kDa). High molecular weight proteins probably representing viral polyprotein precursors (grey arrow) were also specifically detected in MHV-BirAR118G-nsp2 –derived samples.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** MHV-BirAR118G-nsp2, MHV-A59- or non-infected L929 fibroblasts were cultured in medium supplemented with 67 µM biotin. Cells were fixed 9 and 15 hr post infection (h.p.i.) and processed for immunofluorescence analysis with antibodies directed against the BirAR118G (anti-myc), the viral replicase (anti-nsp2/3) and biotinylated factors (streptavidin). Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Scale bars: 10 µm; insets 5 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** MHV-BirAR118G-nsp2, MHV-A59- or non-infected L929 fibroblasts were cultured in medium supplemented with 67 µM biotin. Cells were fixed 12 hr post-infection (h.p.i.) and processed for immunofluorescence analysis with antibodies directed against the BirAR118G (anti-myc), the viral replicase (anti-nsp2/3, nsp8) and biotinylated factors (streptavidin). Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Scale bars: 10 µm; insets 5 µm.
 
 Western blot analysis confirmed that the BirAR118G-nsp2 fusion protein is specifically detected in MHV-BirAR118G-nsp2-infected cells and that the BirAR118G biotin ligase remains fused to nsp2 during MHV-BirAR118G-nsp2 infection (Figure 1—figure supplement 1). To further confirm the accommodation of BirAR118G within the viral RTC, MHV-A59-, MHV-BirAR118G-nsp2-, and mock-infected L929 fibroblasts were visualized using indirect immunofluorescence microscopy. BirAR118G-nsp2 remained strongly associated with the MHV RTC throughout the entire replication cycle, as indicated by the co-localization of BirAR118G-nsp2 with established markers of the MHV replicase, such as nsp2/3 and nsp8 (Figure 1c, Figure 1—figure supplement 2, Figure 1—figure supplement 3). This observation corroborates previous studies demonstrating that nsp2, although not required for viral RNA synthesis, co-localizes with other nsps of the coronaviral RTC (Schiller et al., 1998; Hagemeijer et al., 2010; Graham et al., 2005). Importantly, by supplementing the culture medium with biotin, we could readily detect biotinylated proteins with fluorophore-coupled streptavidin that appeared close to the MHV RTC throughout the entire replication cycle in MHV-BirAR118G-nsp2-infected cells, demonstrating efficient proximity-dependent biotinylation of RTC-proximal host factors (Figure 1c, Figure 1—figure supplement 2, Figure 1—figure supplement 3).
 
@@ -56,7 +72,7 @@ Furthermore, to define the localization of the nsp2 fusion protein at the ultras
 
 Collectively, these results establish that the recombinant MHV-BirAR118G-nsp2 replicates with comparable kinetics to wild-type MHV-A59, expresses a functional BirAR118G biotin ligase that is tightly associated with the MHV RTC, and that biotinylated, RTC-proximal proteins can be readily detected in MHV-BirAR118G-nsp2 infected cells.
 
-## Determination of the coronavirus RTC-proximal proteome
+### Determination of the coronavirus RTC-proximal proteome
 
 To further demonstrate the efficiency and specificity of BirAR118G-mediated biotinylation we assessed, by western blot analysis, fractions of biotinylated proteins derived from MHV-A59-, MHV-BirAR118G-nsp2-, or non-infected cells that were grown with or without the addition of biotin (Figure 2a, Figure 2b). A characteristic pattern of endogenously biotinylated proteins was observed under all conditions where no exogenous biotin was added to the culture medium (Figure 2b). The same pattern was detectable in non-infected and wild-type MHV-A59-infected cells when the culture medium was supplemented with biotin, suggesting that the addition of biotin in the absence of the BirAR118G biotin ligase does not recognizably change the fraction of endogenously biotinylated proteins. In contrast, we observed a greatly increased fraction of biotinylated proteins in lysates derived from MHV-BirAR118G-nsp2-infected cells treated with biotin. This result demonstrates that virus-mediated expression of the BirAR118G biotin ligase results in efficient biotinylation when biotin is added to the culture medium. Moreover, we could readily affinity purify, enrich, and recover the fraction of biotinylated proteins under stringent denaturing lysis and washing conditions by using streptavidin-coupled magnetic beads (Figure 2b).
 
@@ -72,9 +88,17 @@ The BirAR118G biotin ligase biotinylates proteins in its close proximity that mu
 
 Collectively, our results show that the approach of integrating a promiscuous biotin ligase as an integral subunit into a coronavirus RTC revealed a comprehensive list of host cell proteins that comprises the RTC microenvironment. The efficacy and specificity of our approach is best illustrated by the fact that we were able to identify all expected viral components of the MHV RTC, while other viral proteins, such as nsp1, structural proteins S, E, and M, and accessory proteins, were not amongst the significantly enriched proteins. Since the biotin-based proximity labeling was performed during the entire viral life cycle, our data likely also contains proteins that are only transiently present in the RTC microenvironment or only comprise a sub-fraction of the cellular pool in close proximity to the MHV RTC.
 
-## Functional classification of RTC-proximal host factors
+### Functional classification of RTC-proximal host factors
 
 To categorize functionally related proteins from the list of RTC-proximal host proteins and identify enriched biological themes in the dataset, we performed a functional classification of RTC-proximal factors using Gene Ontology (GO) enrichment analysis. 86 GO biological process (BP) terms were significantly enriched in the dataset (p-value < 0.05), of which 32 terms were highly significant (p-value < 0.005) (Figure 3a, Supplementary file 2). Additional analysis using AmiGO revealed that 25 of these 32 highly significant GO BP terms fell into five broad functional categories, namely cell adhesion, transport, cell organization, translation, and catabolic processes. To examine these categories further, identify important cellular pathways within them, and extract known functional associations among RTC-proximal host proteins, we performed STRING network analysis on the RTC-proximal proteins in each category (Figure 3b, Figure 3c, Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig3-v2.jpg)
+
+**Figure 3.:** (a) Gene Ontology enrichment analysis of RTC-proximal cellular factors. 32 terms were highly significant (p-value < 0.005) and were assigned to five broad functional categories: cell-cell adhesion, transport, cell organization, translation, catabolic processes. (b–c) STRING protein interaction network analysis of the categories ‘transport’ (b) and ‘translation’ (c). The nodes represent RTC-proximal host proteins and the edges represent the interactions, either direct (physical) or indirect (functional), between two proteins in the network. Cellular proteins assigned to the ‘transport’ category separated into four distinct interaction clusters. I: protein transport, II: COPII anterograde transport, III: COPI retrograde transport, IV: clathrin-mediated transport.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The nodes represent RTC-proximal host proteins and the edges represent the interactions, either direct (physical) or indirect (functional), between two proteins in the network.
 
 Despite ‘cell-cell adhesion’ scoring high, it likely represents a typical limitation of gene annotation databases, where many genes play multiple roles in numerous pathways and processes. Accordingly, most genes assigned to the GO BP term 'cell-cell adhesion' are also found in the other categories described below.
 
@@ -90,9 +114,17 @@ Lastly, the category ‘catabolic processes’ (Figure 3a, Figure 3—figure sup
 
 Collectively, the coronavirus RTC-proximal proteins identified by proximity labeling greatly expand the repertoire of candidate proteins implicated in the coronavirus replication cycle. Importantly, since this screening approach was tailored to detect host factors associated with the coronavirus RTC, it provides a spatial link of these factors to the site of viral RNA synthesis.
 
-## Identification of proviral factors within the coronavirus RTC microenvironment
+### Identification of proviral factors within the coronavirus RTC microenvironment
 
 In order to assess the potential functional relevance of RTC-proximal factors identified in our MHV- BirAR118G-nsp2-mediated proximity-dependent screen, we designed a custom siRNA library individually targeting the expression of each of the 513 identified RTC-proximal host proteins. siRNA-treated L929 cells were infected (MOI = 0.05, n = 4) with a recombinant MHV expressing a Gaussia luciferase reporter protein (MHV-Gluc) (Lundin et al., 2014) and replication was assessed by virus-mediated Gaussia luciferase expression (Figure 4a). Cell viability after siRNA knockdown was also assessed and genes resulting in cytotoxicity following silencing were discarded from further analysis. Importantly, we included internal controls of known relevance for MHV entry (MHV receptor Ceacam1a) and replication (Gbf1, Arf1) on each plate and found in each case that siRNA silencing of these factors significantly reduced MHV replication, which underscores the robustness and effectiveness of our approach (Figure 4—figure supplement 1a) (Verheije et al., 2008). We found that siRNA-mediated silencing of 53 RTC-proximal host factors significantly reduced MHV replication compared to non-targeting siRNA controls. These factors can therefore be considered proviral and required for efficient replication (Figure 4b; Supplementary file 3). In contrast, we did not find antiviral factors that resulted in significant enhancement of viral replication upon siRNA knockdown. While this work was performed in a murine fibroblast cell line, the identification of antiviral proteins may be anticipated in a similar siRNA-mediated knockdown screen using primary target cells such as macrophages, that are better equipped in eliciting antiviral responses upon virus infection.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig4-v2.jpg)
+
+**Figure 4.:** (a) Impact of siRNA-silencing of RTC-proximal cellular proteins on viral replication. L929 fibroblasts were reverse-transfected with siRNAs (10 nM) for 48 hr before being infected with MHV-Gluc (MOI = 0.05, n = 4). Replication was assessed by virus-mediated Gaussia luciferase expression at 15 h.p.i. and was normalized to levels of viral replication in cells targeted by scrambled siRNA controls. Target proteins to the left of the dashed line represent RTC-proximal factors whose silencing decreased viral replication. (b) Bubble plot illustrating host proteins that significantly impact MHV replication. Bubble size is proportional to the level of viral replication impairment. Colors correspond to the functional categories highlighted in Figure 3. Light grey bubbles (below the dashed line) represent host proteins that did not significantly impact MHV replication (p-value > 0.05). (c, d, e, f) Silencing of RTC-proximal components of the cellular translation machinery. Upon 48 hr siRNA silencing of factors assigned to the category ‘translation’ (Figure 3), L929 fibroblasts were infected with MHV-Gluc (MOI = 0.05, n = 3). Luciferase activity (c), cell-associated viral RNA levels (d) and viral titers (e) were assessed at 12 h.p.i.. (f) Western blot quantification of total cellular translation following silencing of a subset of the host translation apparatus. Upon 48 hr siRNA-silencing, L929 fibroblasts were pulsed with 3 µM puromycin for 60 min. Control cells were treated, prior to puromycin incubation, with 355 µM cycloheximide and 208 µM Emetin for 30 min to block protein synthesis. Cell lysates were separated by SDS-PAGE and Western blots were probed using anti-puromycin antibodies to assess puromycin incorporation into polypeptides and normalized to actin levels. Error bars represent the mean ± standard deviation, where * is p ≤ 0.05, ** is p ≤ 0.005, *** is p ≤ 0.0005 and **** is p < 0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Controls included the established factors such as MHV entry receptor (Ceacam1a), Gbf1, Arf1. Arfgap2 was found to moderately affect MHV replication during pilot experiments and was included to cover the entire inhibitory range. (b) Cell viability following 48 hr siRNA-silencing of components of the cellular translation machinery. (c) Expression levels of Rpl13a, eIF3E, eIF3I, eIF3F, eIF4G1, eIF4G2, eIF2ak3, Rsl24d1 following siRNA knockdown compared to expression levels in cells treated with non-targetting siRNA. (d) Visual inspection of L929 treated with siRNA targetting eIF3E, eIF3I, eIF3F, Rrbp1, Rpl13a, non-targetting siRNA (scramble). Note that RNA silencing (b) and translation activity (c) in Rpl13a-silenced cells could not be assessed, likely due to cytotoxicity observed by visual inspection of cells. (e) Western blot and western blot analysis of total cellular translation. Upon 48 hr siRNA-silencing, L929 fibroblasts were pulsed with 3 µM puromycin for 60 min. Control cells were treated, prior to puromycin incubation, with 355 µM cycloheximide and 208 µM Emetin for 30 min to block protein synthesis. Western blots were probed using anti-puromycin antibodies to assess puromycin incorporation into polypeptides and normalized to actin levels. Error bars represent the mean ±standard deviation of three independent experiments, where * is ** is p ≤ 0.005.
 
 Notably, siRNA targets that had the strongest impact on MHV replication were in majority contained within the functional categories highlighted in Figure 3a (Figure 4b). Indeed, in line with the hypothesis that MHV subverts key components mediating both anterograde and retrograde vesicular transport between the ER, Golgi apparatus and endosomal compartments for the establishment of replication organelles, several factors contained within these pathways impaired MHV replication as exemplified by the siRNA-mediated silencing of Kif11, Snx9, Dnm11, Scfd1, Ykt6, Stx5a, Clint1, Aak11, or Vapa (Figure 4b). Consistently, ER-associated protein sorting complexes associated with the ribosome and newly synthetized proteins (Naca, BTF3, SRP54a, SRP68) that were revealed in the GO enrichment analysis (Figure 3a, Supplementary file 2), also appear to be required for efficient MHV replication (Figure 4b).
 
@@ -100,7 +132,7 @@ Furthermore, we also observed significantly reduced MHV replication upon silenci
 
 Most interestingly, this custom siRNA screen identified a crucial role of the host protein synthesis apparatus that was associated with the MHV RTC as indicated by the proximity-dependent proteomic screen (Figure 3a, Figure 3c). Silencing of ribosomal proteins Rpl13a and Rls24d1 and several subunits of the eIF3 complex resulted in greatly reduced MHV replication and scored with highest significance in the siRNA screen, suggesting that proximity of the host cell translation machinery to the viral RTC likely has functional importance for coronavirus replication (Figure 4b).
 
-## Active translation near sites of viral mRNA synthesis
+### Active translation near sites of viral mRNA synthesis
 
 Due to the striking dependence of MHV replication on a subset of RTC-proximal translation initiation factors, we extended these results in independent assays. For this, we selected all host factors assigned to the category ‘translation’ (Figure 3a) and assessed virus replication following siRNA-mediated silencing of each factor. Measurement of luciferase activity after MHV-Gluc infection confirmed initial findings obtained by screening the entire siRNA library of MHV RTC-proximal factors (Figure 4c). Specifically for Rpl13a, and eIFs 3i, 3 f, and 3e viral replication was reduced to levels comparable to our controls Ceacam1a (MHV receptor) and Gbf1 (Verheije et al., 2008). Consistently, cell-associated viral mRNA levels (Figure 4d) and viral titers (Figure 4e) were reduced upon siRNA silencing of these factors. Although the silencing of a subset of host translation factors severely restricted MHV replication, effective knockdown of these factors (Figure 4—figure supplement 1c) did not affect cell viability (Figure 4—figure supplement 1b, Figure 4—figure supplement 1d) and only moderately affected host cell translation levels (Figure 4f, Figure 4—figure supplement 1e). This data demonstrates that the reduced viral replication observed after siRNA knockdown is not due to a general impairment of host translation. To confirm the knockdown of host translation factors on the protein level we employed antibodies that were available for eIF3e, eIF3f, and eIF3i, and as shown in Figure 5, murine L929 fibroblasts that were treated individually with four target-specific siRNAs displayed significantly reduced expression of eIF3e, eIF3f, and eIF3i proteins (Figure 5a, Figure 5b). Importantly, under conditions of eIF3e, eIF3f, and eIF3i knockdown, viral replication was also significantly restricted, confirming the importance of these translation initiation factors for MHV replication (Figure 5c).
 
@@ -115,6 +147,14 @@ Subsequently, we aimed to visualize the localization of active translation durin
 **Figure 6.:** Visualization of active translation in MHV-infected L929 fibroblasts. Cells infected with MHV-A59 (MOI = 1) or non-infected cells were cultured for 6, 8, 10 and 12 hr and pulsed with cycloheximide, emetine and puromycin for 5 min to label translating ribosomes. All cells, including non-treated control infections, were subjected to a coextraction/fixation procedure to remove free puromycin. Cells were labeled using anti-nsp2/3 antiserum and anti-puromycin antibodies. Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Note the gradual decrease of overlap between the viral replication and actively translating ribosomes highlighted in the intensity profiles. Scale bar: 20 µm; insets 5 µm.
 
 Remarkably, we observed a similar phenotype in Huh7 cells infected with human coronaviruses, such as HCoV-229E or the highly pathogenic MERS-CoV (Figure 7). The HCoV-229E RTC, which was detected with an antiserum directed against nsp8, appeared as small and dispersed perinuclear puncta during early infection and eventually converged into larger perinuclear structures later in infection. Consistent with findings obtained for MHV, we observed a striking co-localization of the HCoV-229E RTC with sites of active translation during the early phase of the infection (Figure 7, Figure 7—figure supplement 1). The co-localization gradually decreased as the infection reached the late phase with upcoming signs of CPE. Finally, we further demonstrated that active translation is localized to the site of MERS-CoV RNA synthesis as dsRNA puncta highly overlapped with the ribopuromycylation stain in MERS-CoV-infected Huh7 cells (Figure 7). Collectively, these results not only confirm the spatial link between individual components of the host cell translation machinery and coronavirus replication compartments as identified by proximity-dependent biotinylation using MHV-BirAR118G-nsp2, but they also demonstrate that active translation is taking place in close proximity to the viral RTC.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig7-v2.jpg)
+
+**Figure 7.:** Visualization of active translation during HCoV-229E and MERS-CoV infections. Huh7 cells were infected with HCoV-229E and MERS-CoV (MOI = 1) for 12 hr and 6 hr, respectively. Cells were pulsed with cycloheximide, emetine and puromycin for 5 min to label translating ribosomes and subjected to a coextraction/fixation procedure to remove free puromycin. Non-infected and/or non-pulsed cells were used as control. Cells were labelled using anti-nsp8 (HCoV-229E) or dsRNA (MERS-CoV) and anti-puromycin antibodies. Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Intensity profiles in magnified regions are shown. Scale bar: 20 µm; insets 5 µm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/42037/elife-42037-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Huh7 cells were infected with HCoV-229E (MOI = 1) for 12, 15, 18, 24 hr. Cells were pulsed with cycloheximide, emetine and puromycin for 5 min to label translating ribosomes and subjected to a coextraction/fixation procedure to remove free puromycin. Non-infected and/or non-pulsed cells were used as control. Cells were labeled using anti-nsp8 (HCoV-229E) and anti-puromycin antibodies. Nuclei are counterstained with DAPI. Z-projection of deconvolved z-stacks acquired with a DeltaVision Elite High-Resolution imaging system are shown. Scale bar: 20 µm.
 
 ## Discussion
 
@@ -136,23 +176,285 @@ The novel finding of a close association of the host translation machinery with 
 
 ## Materials and methods
 
-## Cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>BirAR118G</td>
+      <td></td>
+      <td>PMCID: 3308701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse hepatitis virus)</td>
+      <td>MHV-A59</td>
+      <td></td>
+      <td>PMID: 15709029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse hepatitis virus)</td>
+      <td>MHV-Gluc</td>
+      <td></td>
+      <td>PMID: 24874215</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse hepatitis virus)</td>
+      <td>MHV-BirAR118G-nsp2</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (human coronavirus)</td>
+      <td>HCoV-229E</td>
+      <td></td>
+      <td>PMID: 19057873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (middle east respiratory syndrome coronavirus)</td>
+      <td>MERS-CoV</td>
+      <td></td>
+      <td>PMID: 23170002; 23078800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>L929</td>
+      <td>Sigma</td>
+      <td>85011425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>17Cl1</td>
+      <td>Gift from S.G. Sawicki</td>
+      <td>PMC422565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Huh7</td>
+      <td>Gift from V. Lohmann</td>
+      <td>CVCL_0336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (african green monkey)</td>
+      <td>Vero B4</td>
+      <td>Gift from M. Müller</td>
+      <td>CVCL_1912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-dsRNA J2 (mouse monoclonal IgG2a, kappa chain)</td>
+      <td>English and Scientific Consulting</td>
+      <td>Product No: 10010500</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-myc (mouse monoclonal)</td>
+      <td>Cell signalling</td>
+      <td>2276</td>
+      <td>1:8000 (IF); 1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nogo A + B (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Product No : ab47085</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EIF3E (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA023973</td>
+      <td>1:100 (IF); 1:300 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EIF3F (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab176853</td>
+      <td>1:3000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EIF3I (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA029939</td>
+      <td>1:500 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Puromycin(mouse monoclonal IgG2a,κ)</td>
+      <td>Merk Millipore</td>
+      <td>MABE343</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHV nsp2/3 (rabbit polyclonal)</td>
+      <td>Gift from S. Baker</td>
+      <td>PMID: 9514967</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHV nsp8 (rabbit polyclonal)</td>
+      <td>Gift from S. Baker</td>
+      <td>PMID: 11907209</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-229E-nsp8 (rabbit polyclonal)</td>
+      <td>Gift from J Ziebuhr</td>
+      <td>PMID: 9847320</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-mouse 488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-545-150</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit 594</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-585-152</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit 647</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-605-152</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-rabbit HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-035-152</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-mouse HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-035-151</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-actin HRP (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>A3854</td>
+      <td>1:25000-1:50000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>On-Target Plus CherryPick siRNA Library</td>
+      <td>Horizon Discovery Ltd.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Gaussia Luciferase Glow Assay Kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>16160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CytoTox 96 Non-Radioactive Cytotoxicity Assay</td>
+      <td>Promega</td>
+      <td>G1780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Viromer Green</td>
+      <td>Lipocalyx</td>
+      <td>VG-01LB-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma</td>
+      <td>P9620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>C7698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetin</td>
+      <td>Sigma</td>
+      <td>E2375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>Sigma</td>
+      <td>B4501</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells
 
 Murine L929 fibroblasts (ECACC 85011425) and murine 17Cl1 fibroblasts (gift from S.G. Sawicki) were cultured in MEM supplemented with 10% (v/v) heat-inactivated fetal bovine serum (FBS), 100 μg/ml streptomycin and 100 IU/ml penicillin (MEM+/+). Huh-7 hepatocarcinoma cells (gift from V. Lohnmann) and Vero B4 cells (kindly provided by M. Müller) were propagated in Dulbecco’s Modified Eagle Medium-GlutaMAX supplemented with, 1 mM sodium pyruvate, 10% (v/v) heat-inactivated fetal bovine serum, 100 μg/ml streptomycin, 100 IU/ml penicillin and 1% (w/v) non-essential amino acids. 17Cl1 and Vero B4 are used routinely in our laboratory for the generation of virus stocks. L929 and Huh-7, which were used in this study’s experiments, were newly purchased (L929) or were verified by a Multiplex human cell line authentication test in the Lohmann laboratory (Huh-7). All cell lines were regularly tested to check they were free of mycoplasma contamination using a commercially available system (LookOut Mycoplasma qPCR detection kit, Sigma).
 
-## Viruses
+### Viruses
 
 Recombinant MHV strain A59 (WT), MHV-Gluc (Lundin et al., 2014), which expresses a Gaussia luciferase reporter replacing accessory gene 4 of MHV strain A59, and HCoV-229E were generated as previously described (Coley et al., 2005; Eriksson et al., 2008; Thiel et al., 2001). Viruses were propagated on 17Cl1 cells (MHV) and Huh-7 cells (HCoV-229E) and their sequence was confirmed by RT-PCR sequencing. MERS-CoV (van Boheemen et al., 2012; Bermingham et al., 2012) was propagated and titrated on Vero cells.
 
-## Generation of recombinant MHV viruses
+### Generation of recombinant MHV viruses
 
 Recombinant MHV viruses were generated using a vaccinia virus-based system as described before (Eriksson et al., 2008). In short, a pGPT-1 plasmid encoding an Escherichia coli guanine phosphoribosyltransferase (GPT) flanked by MHV-A59 nt 447–950 and 1315–1774 was used for targeted homologous recombination with a vaccinia virus (VV) containing a full-length cDNA copy of the MHV-A59 genome (Coley et al., 2005). The resulting GPT-positive VV was further used for recombination with a plasmid containing the EGFP coding sequence flanked by MHV-A59 nt 477–956 and 951–1774 for the generation of MHV-GFP-nsp2, based on the strategy employed by Freeman et al. (Freeman et al., 2014). Alternatively, a plasmid containing the BirAR118G coding sequence (Roux et al., 2012) or the APEX2 coding sequence (Lam et al., 2015), with a N-terminal myc-tag or V5-tag, respectively, and a C-terminal (SGG)3 flexible linker flanked by MHV-A59 nt 477–956 and 951–1774 was used for the generation of MHV- BirAR118G-nsp2 and MHV-APEX2-nsp2. The resulting VV were used to generate full-length cDNA genomic fragments by restriction digestion of the VV backbone. Rescue of MHV-GFP-nsp2, MHV-BirAR118G-nsp2 and MHV-APEX2-nsp2 was performed by electroporation of capped in vitro transcribed recombinant genomes into a BHK-21-derived cell line stably expressing the nucleocapsid (N) protein layered on permissive 17Cl1 mouse fibroblasts. Recombinant MHV viruses were plaque-purified three times and purified viruses were passaged three times for stock preparations. All plasmid sequences, VV sequences and recombinant MHV sequences were confirmed by PCR or RT-PCR sequencing. Viruses were propagated on 17Cl1 cells and virus stocks were titrated by plaque assay on L929 cells.
 
-## Viral replication assay
+### Viral replication assay
 
 L929 cells were infected with MHV-A59, MHV-GFP-nsp2, MHV-BirAR118G-nsp2 or MHV-APEX2-nsp2 in quadruplicate at an MOI = 1. Virus inoculum was removed 2 h.p.i., cells were washed with PBS and fresh medium was added. Viral supernatants were collected at the indicated time point and titrated by plaque assay on L929 cells. Titers reported are the averages of three independent experiments ± standard error of the mean (SEM).
 
-## Immunofluorescence imaging
+### Immunofluorescence imaging
 
 Biotinylation assays were carried out as described before with minor modifications (Roux et al., 2013). 106 L929 cells grown on glass coverslips were infected with MHV-A59, MHV-BirAR118G-nsp2 or MHV-APEX2-nsp2 at an MOI = 1, or non-infected in medium supplemented with 67 µM biotin (Sigma B4501). Cells were washed thrice with PBS at the indicated time points and fixed with 4% (v/v) neutral buffered formalin before being washed three additional times. Cells were permeabilized in PBS supplemented with 50 mM NH4Cl, 0.1% (w/v) Saponin and 2% (w/v) BSA (CB) for 60 min and incubated 60 min with the indicated primary antibodies diluted in CB (polyclonal anti-MHV-nsp2/3 or nsp8 (gift from S Baker), 1:200 (Schiller et al., 1998; Gosert et al., 2002); anti-myc, 1:8000 Cell Signalling 2276). Cells were washed three times with CB and incubated for 60 min with donkey-derived, AlexaFluor488-conjugated anti-mouse IgG (H + L) and donkey-derived, AlexaFluor647-conjugated anti-rabbit IgG (H + L) (Jackson Immunoresearch). Cells were additionally labeled with streptavidin conjugated to AlexaFluor 594 (Molecular Probes) to detect biotinylated proteins. Coverslips were mounted on slides using ProLong Diamond Antifade mountant containing 4',6-diamidino-2-phenylindole (DAPI) (Thermo Fisher Scientific).
 
@@ -162,7 +464,7 @@ For proximity ligation assays, L929 cells were seeded in 24-well plates on glass
 
 All samples were imaged by acquiring 0.2 µm stacks over 10 µm using a DeltaVision Elite High-Resolution imaging system (GE Healthcare Life Sciences) equipped with a 60x or 100x oil immersion objective (1.4 NA). Images were deconvolved using the integrated softWoRx software and processed using Fiji (ImageJ). Brightness and contrast were adjusted identically for each condition and their corresponding control. Figures were assembled using the FigureJ plugin (Mutterer and Zinck, 2013).
 
-## Biotinylation assay – western blot – mass spectrometry
+### Biotinylation assay – western blot – mass spectrometry
 
 L929 cells were infected with MHV-A59 or MHV-BirAR118G-nsp2, and for comparison MHVH277A and MHVH227A-BirAR118G-nsp2, at an MOI = 1 in medium supplemented with 67 µM biotin (Sigma B4501). At 15 h.p.i., cells were washed three times with PBS and lysed in ice-cold buffer containing 50 mM TRIS-Cl pH 7.4, 500 mM NaCl, 0.2% (w/v) SDS, 1 mM DTT and 1x protease inhibitor (cOmplete Mini, Roche). Cells were scraped off the flask and transferred to tubes. Cells were kept on ice until the end of the procedure. Triton X-100 was added to each sample to a final concentration of 2%. Samples were sonicated for two rounds of 20 pulses with a Branson Sonifier 250 (30% constant, 30% power). Equal volumes of 50 mM TRIS-Cl were added to each sample and samples were centrifuged at 4°C for 10 min at 18,000 x g. Supernatants were incubated with magnetic beads on a rotator at 4°C overnight (800 µl Dynabeads per sample, MyOne Streptavidin C1, Life Technologies) that were previously washed with lysis buffer diluted 1:1 with 50 mM TRIS-Cl. Beads were washed twice with buffer 1 (2% (w/v) SDS), once with buffer 2 (0.1% (w/v) deoxycholic acid, 1% (v/v) Triton X-100, 1 mM EDTA, 500 mM NaCl, 50 mM HEPES pH 7.5), once with buffer 3 (0.5% w/v deoxycholic acid, 0.5% NP40, 1 mM EDTA, 250 mM LiCl, 10 mM TRIS-Cl pH 7.4) and once with 50 mM TRIS-Cl pH 7.4. Proteins were eluted from beads by the addition of 0.5 mM biotin and Laemmli SDS-sample buffer and heating at 95°C for 10 min.
 
@@ -170,17 +472,17 @@ For SDS-PAGE and western blot analysis, cells were cultured in six-well plates a
 
 For mass spectrometry analysis, lysates and affinity purification were performed as described above from 4*107 cells cultured in 150 cm2 tissue culture flasks. Proteins were separated 1 cm into a 10% (w/v) SDS-polyacrylamide gel. A Coomassie stain was performed and 4 × 2 mm bands were cut with a scalpel. Proteins on gel samples were reduced, alkylated and digested with Trypsin (Gunasekera et al., 2012). Digests were loaded onto a pre-column (C18 PepMap 100, 5 µm, 100 A, 300 µm i.d. x 5 mm length) at a flow rate of 20 µL/min with solvent C (0.05% TFA in water/acetonitrile 98:2). After loading, peptides were eluted in back flush mode onto the analytical Nano-column (C18, 3 μm, 100 Å, 75 μm x 150 mm, Nikkyo Technos C. Ltd., Japan) using an acetonitrile gradient of 5% to 40% solvent B (0.1% (v/v) formic acid in water/acetonitrile 4,9:95) in 40 min at a flow rate of 400 nL/min. The column effluent was directly coupled to a Fusion LUMOS mass spectrometer (Thermo Fischer, Bremen; Germany) via a nano-spray ESI source. Data acquisition was made in data-dependent mode with precursor ion scans recorded in the orbitrap with resolution of 120’000 (at m/z = 250) parallel to top speed fragment spectra of the most intense precursor ions in the Linear trap for a cycle time of 3 s maximum. Spectra interpretation was performed with Easyprot on a local, server run under Ubuntu against a forward + reverse Mus musculus 2016_04) and MHV 2016_07) database, using fixed modifications of carboamidomethylated on Cysteine, and variable modification of oxidation on Methionine, biotinylation on Lysine and on protein N-term, and deamidation of Glutamine and Asparagine. Parent and fragment mass tolerances were set to 10 ppm and 0.4 Da, respectively. Matches on the reversed sequence database were used to set a Z-score threshold, where 1% false discoveries (FDR) on the peptide spectrum match level had to be expected. Protein identifications were only accepted, when two unique peptides fulfilling the 1% FDR criterion were identified. MS identification of biotinylated proteins was performed in three independent biological replicates. For label-free protein quantification, LC-MS/MS data was interpreted with MaxQuant (version 1.5.4.1) using the same protein sequence databases and search parameters as for EasyProt. Match between runs was activated, however samples from different treatments were given non-consecutive fraction numbers in order to avoid over-interpretation of data. The summed and median normalized top3 peptide intensities extracted from the evidence table as a surrogate of protein abundance (Braga-Lagache et al., 2016) and LFQ values were used for statistical testing. The protein groups were first cleared from all identifications, which did not have at least two valid LFQ values. Protein LFQ levels derived from MaxQuant were log-transformed. Missing values were imputed by assuming a normal distribution between sample replicates. A two-tailed t-test was used to determine significant differences in protein expression levels between sample groups and p-values were adjusted for multiple testing using the Benjamini-Hochberg (FDR) test. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository with the dataset identifier PXD009975.
 
-## Computational analysis
+### Computational analysis
 
 Database for Annotation, Visualization, and Integrated Discovery (DAVID) was used to perform GO enrichment analysis on the RTC-proximal cellular factors identified via mass spectrometry (Huang et al., 2009a; Huang et al., 2009b; Ashburner et al., 2000; The Gene Ontology Consortium, 2017). GO BP terms with a p-value < 0.05 were considered to be terms that were significantly enriched in the dataset. Additional analysis of significant GO terms was conducted using AmiGO and revealed that the top 32 GO BP terms (p-value < 0.005) were predominantly associated with five broad functional categories (cell-cell adhesion, transport, cell organization, translation, and catabolic processes) (Carbon et al., 2009). Alternatively, enrichment analysis was performed using SetRank (data not shown), a recently described algorithm that circumvents pitfalls of commonly used approaches and thereby reduces the amount of false-positive hits (Simillion et al., 2017) and the following databases were searched for significant gene sets: BIOCYC (Krummenacker et al., 2005), GO (Ashburner et al., 2000), ITFP (Zheng et al., 2008), KEGG (Kanehisa et al., 2014), PhosphoSitePlus (Hornbeck et al., 2012), REACTOME (Croft et al., 2014), and WikiPathways (Kelder et al., 2012). Both independent approaches lead to highly similar results and consistently complement results obtained upon GO Cellular Components analysis.
 
 STRING functional protein association networks were generated using RTC-proximal host proteins found within each of the five broad functional categories. Default settings were used for active interaction sources and a high confidence interaction score (0.700) was used to maximize the strength of data support. The MCL clustering algorithm was applied to each STRING network using an inflation parameter of 3 (Szklarczyk et al., 2017; Szklarczyk et al., 2015).
 
-## siRNA screen
+### siRNA screen
 
 A custom siRNA library targeting each individual RTC-proximal factor (On Target Plus, SMART pool, 96-well plate format, Dharmacon, GE Healthcare) was ordered. Additionally, a deconvolved library of 4 individual siRNAs was purchased for selected targets. 10 nM siRNA were reverse transfected into L929 cells (8*103 cells per well) using Viromer Green (Lipocalyx) according to the manufacturer’s protocol. Cells were incubated 48 hr at 37°C 5% CO2 and cell viability was assessed using the CytoTox 96 Non-Radioactive Cytotoxicity Assay (Promega). Cells were infected with MHV-Gluc (MOI = 0.05, 1000 plaque forming units/well), washed with PBS 3 h.p.i. and incubated in MEM+/+for additional 9 or 12 hr. Gaussia luciferase was measured from the supernatant using Pierce Gaussia Luciferase Glow Assay Kit (ThermoFisher Scientific). Experiments were carried out in four independent replicates and both cytotoxicity values and luciferase counts were normalized to the corresponding non-targeting scrambled control of each plate. A one-way ANOVA (Kruskal-Wallis test, uncorrected Dunn’s test) was used to test the statistical significance of reduced viral replication (mean <95% as compared to scramble control, n = 216). The R package ggplot2 was used to create the bubble plot (Figure 4b).
 
-## siRNA screen validation
+### siRNA screen validation
 
 L929 cells were transfected with 10 nM siRNA as described above. 48 hr post-transfection, cell viability was assessed using the CytoTox 96 Non-Radioactive Cytotoxicity Assay (Promega) and visually inspected by automated phase-contrast microscopy using an EVOS FL Auto 2 Imaging System equipped with a 4x air objective. Cells were infected with MHV-Gluc (MOI = 0.05), washed with PBS 3 h.p.i. and incubated for 9 additional hours. Gaussia luciferase activity, viral titers and cell viability were measured from the supernatant as described above. One-way ANOVAs (ordinary one-way ANOVA, uncorrected Fisher’s LSD test) were used to test the statistical significance.
 
@@ -188,14 +490,14 @@ Total cellular RNA was isolated from cells using the NucleoMag RNA Kit (Machery 
 
 Western blots were performed after a 48 hr transfection of 10 nM individual siRNAs as described before. Cells were lysed in M-PER Mammalian Protein Extraction Reagent (ThermoFisher Scientific) supplemented with cOmplete Mini Protease Inhibitor Cocktail (Roche) and Laemmli SDS-sample buffer. Samples were loaded on 4–12% Bolt Bis-Tris gels and run in MES SDS buffer (Life Technolgies). Proteins were blotted on a nitrocellulose membranes using a power blotter system and power blotter select transfer stacks (ThermoFisher Scientific). Membranes were blocked in 5% milk in PBS supplemented with 0.5% Tween20 (PBST) and incubated with primary antibodies (anti-eIF3E, HPA023973; anti-eIF3F, ab176853; anti-eIF3I, HPA029939) and secondary HRP-conjugated donkey anti-rabbit antibodies (Jackson ImmunoResearch) in 0.5% milk in PBST. Proteins were visualized using WesternBright enhanced chemiluminescence horseradish peroxidase substrate (Advansta) according to the manufacturer's protocol. Subsequently, membranes were washed extensively in PBST and probed using an HRP-conjugated anti-actin antibody (Sigma A3854).
 
-## Total cellular translation
+### Total cellular translation
 
 siRNA-based silencing was performed as described above. 48 hr post-transfection, control cells were incubated with 355 μM cycloheximide (Sigma) and 208 μM Emetin (Sigma) for 30 min to block protein synthesis. Cells were treated with 3 μM puromycin for 60 min followed by three PBS washes (Shen et al., 2018). Total cell lysates were prepared using M-PER mammalian protein extraction reagent (Thermo Scientific) supplemented with protease inhibitors (cOmplete Mini, Roche). Lysates were separated on a 10% (w/v) SDS-PAGE and electroblotted as described above. Western blots were probed using a monclonal AlexaFluor647-conjugated anti-puromycin antibody (clone 12D10, Merk Millipore) and a donkey-derived HRP-conjugated anti-mouse (Jackson immunoresearch 715-035-151). Actin was detected using a monoclonal HRP-conjugated anti-actin antibody (Sigma A3854) and used to normalize input.
 
-## Ribopuromycylation assay
+### Ribopuromycylation assay
 
 Ribopuromycylation of actively translating ribosomes was performed as described before (David et al., 2012). L929, Huh-7 cells were seeded on glass coverslips and infected with MHV-A59 (L929), HCoV-229E (Huh-7) and MERS-CoV (Huh-7) at MOI = 1. One hour after inoculation, cells were washed with PBS and incubated further for the indicated time. Cells were treated with 355 μM cycloheximide and 208 μM Emetin (Sigma) for 15 min at 37°C. Cells were further incubated in medium containing 355 μM cycloheximide, 208 μM Emetin and 182 μM puromycin (Sigma) for additional 5 min. Cells were washed twice in ice-cold PBS and fix on ice for 20 min in buffer containing 50 mM TRIS HCl, 5 mM MgCl2, 25 mM KCl, 355 μM cycloheximide, 200 mM NaCl, 0.1% (v/v) TritonX-100, 3% formalin and protease inhibitors (cOmplete Mini, Roche). Cells were blocked for 30 min in CB, and immunostained as described above using polyclonal anti-MHV-nsp2/3 (gift from S. Baker), polyclonal anti-HCoV-229E-nsp8 (gift from J. Ziebuhr), or monoclonal anti-dsRNA (J2 MAB, English and Scientific Consulting) as primary antibodies to detect MHV and HCoV-229E replication complexes, respectively. Donkey-derived, AlexaFluor488-conjugated anti-mouse or anti-rabbit IgG (H + L) were used as secondary antibodies. Additionally, ribosome-bound puromycin was detected using a monoclonal AlexaFluor647-conjugated anti-puromycin antibody (clone 12D10, Merk Millipore). Slides were mounted, imaged and processed as described above.
 
-## DAB staining and transmission electron microscopy
+### DAB staining and transmission electron microscopy
 
 L929 fibroblasts were seeded in 24-well plates and infected with MHV-APEX2-nsp2, MHV-A59, or non-infected for 10 hr. 3,3-diaminobenzidine (DAB) stains were performed as described previously (Martell et al., 2017). Briefly, cells were fixed at 10 h.p.i. using warm 2% (v/v) glutaraldehyde in 100 mM sodium cacodylate, pH 7.4, supplemented with 2 mM calcium chloride (cacodylate buffer) and placed on ice for 60 min. The following incubations were performed on ice in ice-cold buffers unless stated otherwise. Cells were washed 3x with sodium cacodylate buffer, quenched with 20 mM glycine in cacodylate buffer for 5 min. before three additional washes with cacodylate buffer. Cells were stained in cacodylate buffer containing 0.5 mg/ml DAB and 10 mM H2O2 for 20 min until DAB precipitates were visible by light microscopy. Cells were washed 3x with cacodylate buffer to stop the staining reaction. Processing of samples for transmission electron microscopy (TEM) was performed as described previously (Schätz et al., 2013). Briefly, cells were washed once with PBS prewarmed to 37°C and subsequently fixed with 2.5% (v/v) glutaraldehyde (Merck, Darmstadt, Germany) in 0.1 M cacodylate buffer (Merck, Hohenbrunn, Germany) pH 7.4 for 30 min at room temperature or overnight at 4°C. After three washes in cacodylate buffer for 10 min each, cells were post-fixed with 1% OsO4 (Chemie Brunschwig, Basel, Switzerland) in 0.1 M cacodylate buffer for 1 hr at 4°C and again washed three times with cacodylate buffer. Thereafter, cells were dehydrated in an ascending ethanol series (70%, 80%, 90%, 94%, 100% (v/v) for 20 min each) and embedded in Epon resin, a mixture of Epoxy embedding medium, dodecenyl succinic anhydride (DDSA) and methyl nadic anhydride (MNA) (Sigma Aldrich, Buchs, Switzerland). Ultrathin sections of 90 nm were then obtained with diamond knives (Diatome, Biel, Switzerland) on a Reichert-Jung Ultracut E (Leica, Heerbrugg, Switzerland) and collected on collodion-coated 200-mesh copper grids (Electron Microscopy Sciences, Hatfield, PA). Sections were double-stained with 0.5% (w/v) uranyl acetate for 30 min at 40°C (Sigma Aldrich, Steinheim, Germany) and 3% (w/v) lead citrate for 10 min at 20°C (Laurylab, Saint Fons, France) in an Ultrastain (Leica, Vienna, Austria) and examined with a Philips CM12 transmission electron microscope (FEI, Eindhoven, The Netherlands) at an acceleration voltage of 80 kV. Micrographs were captured with a Mega View III camera using the iTEM software (version 5.2; Olympus Soft Imaging Solutions GmbH, Münster, Germany).

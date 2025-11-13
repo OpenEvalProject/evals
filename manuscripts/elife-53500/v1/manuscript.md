@@ -33,9 +33,17 @@ We set out to study the process of complete divergence of genes by delving into 
 
 ## Results
 
-## A synteny-based approach to establish homology beyond sequence similarity
+### A synteny-based approach to establish homology beyond sequence similarity
 
 To estimate the frequency at which homologues diverge beyond recognition, we developed a pipeline that allows the identification of candidate homologous genes regardless of whether pairwise sequence similarity can be detected. The central idea behind our pipeline is that genes found in conserved syntenic positions in a pair of genomes will usually share ancestry. The same basic principle has been previously used to detect pairs of WGD paralogues in yeast (Wolfe and Shields, 1997; Kellis et al., 2004; Dietrich, 2004) and more recently to identify homologous long non-coding RNAs (Herrera-Úbeda et al., 2019). Coupled with the knowledge that biological sequences diverge over time, this allows us to estimate how often a pair of homologous genes will diverge beyond detectable sequence similarity in the context of syntenic regions. This estimate can then be extrapolated genome-wide to approximate the extent of origin by complete divergence for orphan genes and TRGs outside of syntenic regions, provided that genes outside regions of conserved synteny have similar evolutionary rates as genes inside syntenic regions. The estimates that we will provide of the rate of divergence beyond recognition inside synteny blocks are best viewed as an upper-bound of the true rate because some of the genes found in conserved syntenic positions in a pair of genomes will not be homologous. If we could remove all such cases, the rate of divergence beyond recognition would only decrease, but not increase, relative to our estimate (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig2-v1.jpg)
+
+**Figure 2.:** (A) Summary of the reasoning we use to estimate the proportion of genes in a genome that have diverged beyond recognition. (B) Pipeline of identification of putative homologous pairs with undetectable similarity. 1) Choose focal and target species. Parse gene order and retrieve homologous relationships from OrthoDB for each focal-target pair. Search for sequence similarity by BLASTP between focal and target proteomes, one target proteome at a time. 2) For every focal gene (b), identify whether a region of conserved micro-synteny exists, that is when the upstream (a) and downstream (c) neighbours have homologues (a’, c’) separated by either one or two genes. This conserved micro-synteny allows us to assume that b and b’ are most likely homologues. Only cases for which the conserved micro-synteny region can be expanded by one additional gene are retained. Specifically, if genes d and e have homologues, these must be separated by at most one gene from a’ and c’, respectively. A per-species histogram of the number of genes with at least one identified region of conserved micro-synteny can be found in Figure 2—figure supplement 1. For all genes where at least one such configuration is found, move to the next step. 3) Check whether a precalculated BLASTP hit exists (by our proteome searches) between query (b) and candidate homologue (b’) for a given E-value threshold. If no hit exists, move to the next step. 4) Use TBLASTN to search for similarity between the query (b) and the genomic region of the conserved micro-synteny (-/+ 2 kb around the candidate homologue gene) for a given E-value threshold. If no hit exists, move to the next step. 5) Extend the search to the entire proteome and genome. If no hit exists, move to the next step. 6) Record all relevant information about the pairs of sequences forming the b – b’ pairs of step 2). Any statistically significant hit at steps 3–5 is counted as detected homology by sequence similarity. In the end, we count the total numbers of genes in conserved micro-synteny without any similarity for each pair of genomes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Species are ordered in increasing divergence times from their corresponding focal species.
 
 Figure 2B illustrates the main steps of the pipeline and the full details can be found in Materials and methods. Briefly, we first select a set of target genomes to compare to our focal genome (Figure 2B, step 1). Using precomputed pairs of homologous genes (those belonging to the same OrthoDB [Kriventseva et al., 2008] group) we identify regions of conserved micro-synteny. Our operational definition of conserved micro-synteny consists of cases where a gene in the focal genome is found within a conserved chromosomal block of at least three genes: the immediate downstream and upstream neighbours of the focal gene must have homologues in the target genome that are themselves separated by at most one or two genes and, if the genes immediately next to these neighbours (second neighbours of the focal gene) have homologues in the target genome, these must also be separated from the homologues of the immediate neighbours by at most one gene (Figure 2B, step 2; see Materials and methods for details). Since the choice of synteny criterion can have an impact on downstream analyses we have also used one more relaxed and one more stringent definition (see Materials and methods; results using these alternative definitions are presented later). All focal genes for which at least one region of conserved micro-synteny, in any target genome, is identified, are retained for further analysis. This step establishes a list of focal genes with at least one presumed homologue in one or more target genomes (i.e., the gene located in the conserved location in the micro-synteny block).
 
@@ -43,7 +51,7 @@ We then examine whether the focal gene has any sequence similarity in the target
 
 We applied this pipeline to three independent datasets using as focal species Saccharomyces cerevisiae (yeast), Drosophila melanogaster (fly) and Homo sapiens (human). We included 17, 16 and 15 target species, respectively, selected to represent a wide range of evolutionary distances from each focal species (see Materials and methods). The numbers of cases of conserved micro-synteny detected for each focal-target genome pair is shown in Figure 2—figure supplement 1.
 
-## Selecting optimal BLAST E-value cut-offs
+### Selecting optimal BLAST E-value cut-offs
 
 Homology detection is highly sensitive to the technical choices made during sequence similarity searches (Tautz and Domazet-Lošo, 2011; Arendsee et al., 2019). We therefore sought to explore how the choice of E-value threshold would impact interpretations of divergence beyond similarity. First, we performed BLASTP searches of the focal species’ total protein sequences against the total reversed protein sequences of each target species. Matches produced in these searches can safely be considered ‘false homologies’ since biological sequences do not evolve by reversal (Frith, 2011) (see Materials and methods). These false homologies were then compared to ‘undetectable homologies’: cases with conserved micro-synteny (presumed homologues) but without any detectable sequence similarity.
 
@@ -51,7 +59,162 @@ In Figure 3A, we can see how the ratios of undetectable and false homologies var
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig3-v1.jpg)
 
-**Figure 3.:** (A) Proportions of false and undetectable homologies as a function of the E-value cut-off used. Abbreviations of species names can be found in Table 1. Putative undetectable homology proportion (top row) is defined as the percentage of all genes with at least one identified region of conserved micro-synteny (and thus likely to have a homologue in the target genome) that have no significant match anywhere in the target genome (see Materials and methods and Figure 2). False homology proportion (bottom row) is defined as a significant match to the reversed proteome of the target species (see Materials and methods). Divergence time estimates were obtained from www.TimeTree.org. Data for this figure can be found in Figure 3—source data 2 (upper plots) and Figure 3—source data 3 (lower plots). (B) Proportion (out of all genes with sequence matches) where a match is found in the predicted region (‘opposite’) in the target genome for the three datasets, using the relaxed E-value cut-offs (0.01, 0.01, 0.001 for yeast, fly and human, respectively [10−4 for comparison with chimpanzee]), as a function of time since divergence from the respective focal species. Data can be found in Figure 3—source data 1.Figure 3—source data 1.‘div. time’: time since divergence from the focal species. ‘Phylostrat. E-value’: optimal E-value for use in phylostratigraphy. ‘general E-value’: optimal E-value maximizing Mathews Correlation Coefficient. ‘# residues’: number of residues in the complete proteome of the species. ‘found opposite’: genes in conserved micro-synteny whose sequence match is found at the predicted genomic location. ‘found elsewhere’: genes in conserved micro-synteny whose match is found elsewhere than the predicted location. ‘not found (and in micro-synteny)': genes in conserved micro-synteny that do not have a match. ‘total in micro-synteny’: total number of genes in conserved micro-synteny. ‘not found and outside micro-synteny’: number of genes without a match that are not found in conserved micro-synteny. ‘total genes checked’: number of focal genes examined.Figure 3—source data 2.Figure 3A.Column names: ‘total’: total number of genes in conserved micro-synteny, ‘not_found’: number of genes without significant sequence similarity, ‘div’: time since divergence from focal species.Figure 3—source data 3.Figure 3A.Column names: ‘found’: number of genes with significant sequence similarity, the rest are the same as in Source Data 1.
+**Figure 3.:** (A) Proportions of false and undetectable homologies as a function of the E-value cut-off used. Abbreviations of species names can be found in Table 1. Putative undetectable homology proportion (top row) is defined as the percentage of all genes with at least one identified region of conserved micro-synteny (and thus likely to have a homologue in the target genome) that have no significant match anywhere in the target genome (see Materials and methods and Figure 2). False homology proportion (bottom row) is defined as a significant match to the reversed proteome of the target species (see Materials and methods). Divergence time estimates were obtained from www.TimeTree.org. Data for this figure can be found in Figure 3—source data 2 (upper plots) and Figure 3—source data 3 (lower plots). (B) Proportion (out of all genes with sequence matches) where a match is found in the predicted region (‘opposite’) in the target genome for the three datasets, using the relaxed E-value cut-offs (0.01, 0.01, 0.001 for yeast, fly and human, respectively [10−4 for comparison with chimpanzee]), as a function of time since divergence from the respective focal species. Data can be found in Figure 3—source data 1.
+
+**Table 1.**
+ Names and abbreviations of target species included in the three datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Full name</th>
+      <th>Abbr.</th>
+      <th>Full name</th>
+      <th>Abbr.</th>
+      <th>Full name</th>
+      <th>Abbr.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Saccharomyces kudriavzevii</td>
+      <td>Skud</td>
+      <td>Drosophila sechellia</td>
+      <td>Dsec</td>
+      <td>Pan troglodytes</td>
+      <td>Ptro</td>
+    </tr>
+    <tr>
+      <td>Saccharomyces arboricola</td>
+      <td>Sarb</td>
+      <td>Drosophila simulans</td>
+      <td>Dsim</td>
+      <td>Gorilla gorilla</td>
+      <td>Ggor</td>
+    </tr>
+    <tr>
+      <td>Naumovozyma castellii</td>
+      <td>Ncas</td>
+      <td>Drosophila erecta</td>
+      <td>Dere</td>
+      <td>Mus musculus</td>
+      <td>Mmus</td>
+    </tr>
+    <tr>
+      <td>Naumovozyma dairenensis</td>
+      <td>Ndai</td>
+      <td>Drosophila yakuba</td>
+      <td>Dyak</td>
+      <td>Rattus norvegicus</td>
+      <td>Rnor</td>
+    </tr>
+    <tr>
+      <td>Kazachstania naganishii</td>
+      <td>Knag</td>
+      <td>Drosophila ananassae</td>
+      <td>Dana</td>
+      <td>Bos taurus</td>
+      <td>Btau</td>
+    </tr>
+    <tr>
+      <td>Kazachstania africana</td>
+      <td>Kafr</td>
+      <td>Drosophila persimilis</td>
+      <td>Dper</td>
+      <td>Canis familiaris</td>
+      <td>Cfam</td>
+    </tr>
+    <tr>
+      <td>Vanderwaltozyma polyspora</td>
+      <td>Vpol</td>
+      <td>Drosophila pseudoobscura</td>
+      <td>Dpse</td>
+      <td>Felis catus</td>
+      <td>Fcat</td>
+    </tr>
+    <tr>
+      <td>Tetrapisispora blattae</td>
+      <td>Tbla</td>
+      <td>Drosophila mojavensis</td>
+      <td>Dmoj</td>
+      <td>Sus scrofa</td>
+      <td>Sscr</td>
+    </tr>
+    <tr>
+      <td>Tetrapisispora phaffii</td>
+      <td>Tpha</td>
+      <td>Drosophila willistoni</td>
+      <td>Dwil</td>
+      <td>Anolis carolinensis</td>
+      <td>Acar</td>
+    </tr>
+    <tr>
+      <td>Torulaspora delbrueckii</td>
+      <td>Tdel</td>
+      <td>Drosophila grimshawi</td>
+      <td>Dgri</td>
+      <td>Gallus gallus</td>
+      <td>Ggal</td>
+    </tr>
+    <tr>
+      <td>Candida glabrata</td>
+      <td>Cgla</td>
+      <td>Drosophila virilis</td>
+      <td>Dvir</td>
+      <td>Meleagris gallopavo</td>
+      <td>Mgal</td>
+    </tr>
+    <tr>
+      <td>Zygosaccharomyces rouxii</td>
+      <td>Zrou</td>
+      <td>Anopheles gambiae</td>
+      <td>Agam</td>
+      <td>Taeniopygia guttata</td>
+      <td>Tgut</td>
+    </tr>
+    <tr>
+      <td>Kluyveromyces lactis</td>
+      <td>Klac</td>
+      <td>Aedes aegypti</td>
+      <td>Aaeg</td>
+      <td>Latimeria chalumnae</td>
+      <td>Lcha</td>
+    </tr>
+    <tr>
+      <td>Lachancea thermotolerans</td>
+      <td>Lthe</td>
+      <td>Bombyx mori</td>
+      <td>Bmor</td>
+      <td>Danio rerio</td>
+      <td>Drer</td>
+    </tr>
+    <tr>
+      <td>Eremothecium cymbalariae</td>
+      <td>Ecym</td>
+      <td>Tribolium castaneum</td>
+      <td>Tcas</td>
+      <td>Lepisosteus oculatus</td>
+      <td>Locu</td>
+    </tr>
+    <tr>
+      <td>Ashbya aceri</td>
+      <td>Aace</td>
+      <td>Apis mellifera</td>
+      <td>Amel</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eremothecium gossypii</td>
+      <td>Egos</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 In the context of phylostratigraphy (estimation of phylogenetic branch of origin of a gene based on its taxonomic distribution; Domazet-Loso et al., 2007), gene age underestimation due to BLAST ‘false negatives’ has been considered a serious issue (Moyers and Zhang, 2014), although the importance of spurious BLAST hits generating false positives has also been stressed (Domazet-Lošo et al., 2017). We defined a set of E-value cut-offs optimised for phylostratigraphy, by choosing the highest E-value that keeps false homologies under 5%. This strategy emphasizes sensitivity over specificity. We have also calculated general-use optimal E-values by using a balanced binary classification measure (see Materials and methods). The phylostratigraphy optimal E-value thresholds are 0.01 for all comparisons using yeast and fly as focal species and 0.001 for those of human, except for chimpanzee (10−4). These are close to previously estimated optimal E-value cut-offs for identifying orphan genes in Drosophila, found in the range of 10−3 - 10−5, see ref (Domazet-Loso and Tautz, 2003). These cut-offs have been used for all downstream analyses.
 
@@ -59,9 +222,17 @@ We find that, for the vast majority of focal genes examined that do have matches
 
 In total, we were able to identify 180, 81 and 156 unique focal species genes in the dataset of yeast, fly and human respectively, that have at least one undetectable homologue in at least one target species but no significant sequence similarity to that homologue or to any other part of the target genome (see Figure 4—figure supplement 1 for two exemplars of these findings).
 
-## The rate of ‘divergence beyond recognition’ and its contribution to the total pool of genes without similarity
+### The rate of ‘divergence beyond recognition’ and its contribution to the total pool of genes without similarity
 
 How quickly do homologous genes become undetectable? In other words, given a pair of genomes from species separated by a certain amount of evolutionary time, what percentage of their genes will have diverged beyond recognition? Within phyla, the proportion of putative undetectable homologues correlated strongly with time since divergence, suggesting a continuous process acting during evolution (Figure 4). However, different rates were observed between phyla, represented by the slopes of the fitted linear models in Figure 4. Genes appeared to be diverging beyond recognition at a faster pace in the yeast and fly lineages than in the human lineage.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig4-v1.jpg)
+
+**Figure 4.:** Putative undetectable homology proportion in focal - target species pairs plotted against time since divergence of species. The y axis represents the proportion of focal genes in micro-synteny regions for which a homologue cannot be detected by similarity searches in the target species. Linear fit significance is shown in the graph. Points have been jittered along the X axis for visibility. Two exemplars of focal-target undetectable homologues can be found in Figure 4—figure supplement 1. Data can be found in Figure 3—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Genomic region comparison view of ENSEMBL for the case of the human gene CSAG1 (top) and its undetectable homologue in mouse, 1700084M14Rik (bottom). The two genes are highlighted in green, while the adjacent genes based on which the syntenic region was defined are highlighted in blue rectangles. (B) Same as in A but for the D. melanogaster gene CG13577 (top) and its undetectable homologue in D. virilis DvirGJ21588. Note that this is not a genomic region comparison view, but two separate genome browser views from the ENSEMBL metazoan web resource.
 
 We next sought to estimate how much the process of divergence beyond recognition contributes to the genome-wide pool of genes without detectable similarity. To do so, we need to assume that the proportion of genes that have diverged beyond recognition in micro-synteny blocks (Figure 4) can be used as a proxy for the genome-wide rate of origin-by-divergence for genes without detectable similarity, irrespective of the presence of micro-synteny conservation. This in turn depends on the distribution of evolutionary rates inside and outside micro-synteny blocks.
 
@@ -69,15 +240,31 @@ We calculated the non-synonymous (dN) and synonymous (dS) substitution rates of 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig5-v1.jpg)
 
-**Figure 5.:** (A) Density plots of d and Sd distributions. Outliers are not shown for visual purposes Data can be found in NFigure 5—source data 1. (B) Statistics of unpaired Wilcoxon test comparisons between genes inside and outside of conserved micro-synteny. Effect size was calculated using Rosenthal’s formula (Rosenthal et al., 1994) (Z/sqrt(N)).Figure 5—source data 1.d and Nd data used to generate SFigure 5 and the accompanying statistics.See Materials and methods section for how these data were generated. Column names: ‘micro-synteny’: whether the gene satisfies our conserved micro-synteny criteria with the relevant species (see Materials and methods).
+**Figure 5.:** (A) Density plots of dS and dN distributions. Outliers are not shown for visual purposes Data can be found in Figure 5—source data 1. (B) Statistics of unpaired Wilcoxon test comparisons between genes inside and outside of conserved micro-synteny. Effect size was calculated using Rosenthal’s formula (Rosenthal et al., 1994) (Z/sqrt(N)).
 
 We extrapolated the proportion of genes without detectable similarity that have originated by complete divergence, as calculated from conserved micro-synteny blocks (Figure 4), to all genes without similarity in the genome (Figure 6, see Materials and methods and Figure 6—figure supplement 1 for detailed description). We found that, in most pairwise species comparisons, the observed proportion of all genes without similarity far exceeds that estimated to have originated by divergence (Figure 6A). The estimated contribution of divergence ranges from 0% in the case of D. sechellia (fly dataset), to 57% in the case of T. castaneum (fly dataset), with an overall average of 20.6% (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig6-v1.jpg)
+
+**Figure 6.:** (A) Proportion of genes with undetectable homologues in micro-synteny regions (thus likely diverged beyond recognition, solid bars) and proportion of total genes without similarity, genome-wide (transparent bars), in the different focal - target genome pairs. Schematic representation for how these proportions are calculated can be found in Figure 6—figure supplement 1. Error bars show the standard error of the proportion. (B) Estimated proportions of genes with putative undetectable homologues (explained by divergence) out of the total number of genes without similarity genome-wide. This proportion corresponds to the ratio of the micro-synteny proportion (solid bars in top panel) extrapolated to all genes, to the proportion calculated over all genes (transparent bars in top panel). See text for details. Red horizontal lines show averages. Species are ordered in ascending time since divergence from the focal species. Abbreviations used can be found in Table 1. The equivalent results using the phylogeny-based approach can be found in Figure 6—figure supplement 3. The impact of more/less stringent conserved synteny definitions on this result can be found in Figure 6—figure supplement 2 (see also Materials and methods for details). Data for this figure and for Figure 6—figure supplement 3 can be found in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Horizontal lines represent segments of chromosomes, and circles represent genes. Checkmarks denote identified sequence similarity. Red 0’s denote absence of sequence similarity. n: number of total genes; X: number of genes without sequence similarity; F: focal genome; T: target genome. Blue shades represent sequence similarity searches. In the upper part of the figure, we represent the similarity search at the entire proteome level between focal and target genomes. In the lower part of the figure, we indicate the analysis within conserved micro-synteny regions, where dashed lines indicate homologues used to define micro-synteny conservation. For the gene of interest (yellow circles in the focal genome) sequence similarity in the target genome is indicated by shared colour of circles.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Total number of genes in conserved micro-synteny regions using three different definitions of conserved synteny blocks: ‘relaxed’: only one syntenic homologous gene on either side; ‘current’: the definition used throughout our manuscript, which is more stringent than the ‘relaxed’ one; ‘stringent’: three syntenic homologous genes on either side, or two syntenic homologues if the −3, +3 neighbours have no homologues at all (see Materials and methods for details). The five most distant species in the fly dataset are shown on a separate, logarithmic scale for visual purposes, since the ‘stringent’ definition greatly reduces the number of identified conserved regions. Notice that this is true as well in other cases, such as for ‘Vpol’ and ‘Tbla’ in the yeast dataset. (B) Estimated ‘proportions explained by divergence’ for the pairwise (left) and the phylogeny-based (right) approaches, using three different definitions of conserved synteny blocks (explained in A). Note that the ‘relaxed’ definition introduces some known false positives (non-homologous genes which due to rearrangements are placed ‘opposite’ each other), and it is for this reason that the current definition was eventually preferred (see Materials and methods for more details). As expected from the presence of these false positives the results show a limited increase but are generally similar: pairwise overall mean 23% (relaxed) vs. 20.6% (current), phylogeny-based overall mean 33.7% (relaxed) vs. 30% (current). The ‘stringent’ definition becomes problematic in many cases, especially in the comparison of distant species, as the number of genes for which the synteny criterion is satisfied becomes too small (as shown in A). A comparison including only species with >200 conserved micro-synteny regions (i.e. excluding ‘Vpol’, ‘Tbla’, ‘Tpha’, ‘Ecym’, ‘Agam’, ‘Aaeg’, ‘Bmor’, ‘Tcas’, ‘Amel’, ‘Drer’) shows that in the pairwise case the mean drops from 16% in the current one to 10.9% in the stringent one. Applying the same cut-off in the phylogeny-based case (meaning that we exclude the four more distant phylostrata of the fly dataset), we get an average of 14% for stringent compared to 27.4% for current.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) n: number of total genes; X: number of Taxonomically Restricted Genes (TRGs). Graphical representation of the of the phylogeny-based approach to estimate the proportion of genes that lack similarity beyond a specific phylogenetic level because of sequence divergence. The phylogenetic tree on the left-hand side of the vertical line shows an example of a TRG: a focal species (F) gene that has a homologue (defined by sequence similarity) only in its closest neighbour and nowhere else (absence of homologue is shown with a red 0). This permits the inference of the branch origin of this gene (phylostratum of the gene) as the branch just prior to the divergence of the lineages that carry the gene (highlighted in grey). For each phylostratum we can calculate the proportion of genes originated since (X) out of all genes in the genome (n). On the right-hand side of the vertical line we show an example of a gene (a) that is also a TRG as in the left-hand side, but that also has a region of conserved micro-synteny with a species outside of the phylostratum, that is an outgroup. Thus, we can infer that this TRG can be explained by sequence divergence, as it appears to have an undetectable homologue in one of the outgroups. Similarly to the pairwise case then, we can calculate the proportion of TRGs explained by divergence (d) as the number of such cases (TRGs with conserved micro-synteny with at least one outgroup and hence a putative undetectable homologue in an outgroup) out of all the genes with conserved micro-synteny with at least one outgroup. (B) Same as Figure 6A but with phylostrata. For each phylostratum, transparent bars show the proportion X/n as defined above in A and solid bars the proportion d. (C) Same as Figure 6B but with phylostrata. For each phylostratum, the ratio of the two proportions shown in top panel (d/[X/n]), for which we have assumed that proportion d, calculated over genes showing conserved micro-synteny with an outgroup, can be approximately extrapolated genome-wide. This ratio gives the estimated proportion of TRGs explained by divergence. Red horizontal lines show averages.
 
 The criteria used to define conserved micro-syntenic regions affect the number of regions identified (Figure 6—figure supplement 2A; Materials and methods) and can thus impact the proportions explained by divergence that are calculated based on such regions. Using a more relaxed conserved synteny definition (only one syntenic homologue on either side of the focal gene) had limited impact on these results (overall average of 23% explained by divergence; Figure 6—figure supplement 2B; Materials and methods). We also used a more stringent definition of conserved micro-syntenic regions (an additional syntenic homologue on either side), but the number of regions identified was too low to extract meaningful conclusions with the more distant species pairs in our data sets (e.g. <5 for comparisons to all non-Drosophila species in the fly dataset, Figure 6—figure supplement 2A). In the species where the number of identified regions was sufficient, the average proportion explained by divergence dropped from 16% (using our current definition in this subset of species) to 10.9% (see Figure 6—figure supplement 2B; Materials and methods). The more pronounced difference in the stringent-current comparison could be explained by the fact that these proportions are calculated as the ratio of two small ratios (see Figure 6—figure supplement 1), which can be sensitive as the small ratio in the numerator changes with the conserved synteny definition. An alternative explanation is that as the synteny criterion becomes stricter, genes that satisfy it could be under stronger evolutionary constraints and therefore less likely to diverge. For both reasons, we recommend avoiding the application of stringent conserved synteny criteria when undertaking similar analyses, although ultimately the choice depends on the evolutionary distance and the more general degree of synteny conservation between the species being compared.
 
 We also applied the same reasoning to estimate how much divergence beyond recognition contributes to TRGs. To this aim we calculated the fraction of focal genes lacking detectable homologues in a phylogeny-based manner, in the target species and in all species more distantly related to the focal species than the target species (see Materials and methods and Figure 6—figure supplement 3A for a schematic explanation). Again, the observed proportion of TRGs far exceeded that estimated to have originated by divergence (the contribution of divergence ranging from 0% to 52% corresponding to the first and before-last ‘phylostratum’ of the fly dataset tree respectively, with an overall average of 30%; Figure 6—figure supplement 3B C). Changing the conserved synteny definition impacted the proportions of TRGs explained by divergence similarly to what was seen in the pairwise case (Figure 6—figure supplement 2B). We estimate that the proportion of TRGs which originated by divergence-beyond-recognition, at the level of Saccharomyces, melanogaster subgroup, and primates are at most 45%, 20% and 24%, respectively (Materials and methods). Thus, we conclude that the origin of most genes without similarity cannot be attributed to divergence beyond recognition. This implies a substantial role for other evolutionary mechanisms such as de novo emergence and horizontal gene transfer, although horizontal gene transfer is not known to be frequent in metazoa.
 
-## Properties of genes diverged beyond recognition
+### Properties of genes diverged beyond recognition
 
 Even as homologous primary sequences diverge beyond recognition, it is conceivable that other ancestral similarities persist. We found weak but significant correlations between pairs of undetectable homologues in the human dataset when comparing G+C content (Spearman’s rho = 0.25, p-value=2×10−5) and CDS length (Spearman’s rho = 0.35, p-value=1.5×10−9). We also compared protein properties between the pairs of genes and found weak conservation for solvent accessibility, coiled regions and alpha helices only (yeast: % residues in solvent-exposed regions, rho = 0.14, p-value=0.0037; yeast and human: % residues in coiled protein regions, rho = 0.19, p-value=8.25×10−05 and rho = 0.14, p-value=0.017; human: % residues in alpha helices, rho = 0.2, p-value=0.00056).
 
@@ -85,17 +272,17 @@ We searched for shared Pfam (Finn et al., 2016) domains (protein functional moti
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig7-v1.jpg)
 
-**Figure 7.:** (A) Pfam domain matches in undetectable homologues. ‘focal’ (transparent bars) corresponds to the genes in the focal species, while ‘target’ (solid bars) to their putative undetectable homologues in the target species. Whiskers show the standard error of the proportion. The yeast comparison is statistically significant at p-value<2.2×10−16 and the human comparison at p-value=2×10−5 (Pearson’s Chi-squared test). Raw numbers can be found in Figure 7—source data 2. (B) Distributions of properties of focal genes (‘focal’) and their undetectable homologues (‘target’), when both have a significant match (p-value<0.001) to a Pfam domain or are members of the same OrthoDB group (blue points; n = 25), and when they lack a common Pfam match but both have at least one (red points; n = 183). All blue points correlations are statistically significant (Spearman’s correlation, p-value<0.05; Bonferroni corrected) except from percentage of transmembrane residues (TM pct), marked with an asterisk. Details of correlations can be found in Figure 7—source data 1. All units are in percentage of residues, apart from ‘GC pct’ (nucleotide percentage) and CDS length (nucleotides). ‘Buried pct’: percentage of residues in regions with low solvent accessibility; ‘CDS length’: length of the CDS; ‘Coil pct’: percentage of residues in coiled regions; ‘Exposed pct’: percentage of residues in regions with high solvent accessibility; ‘GC pct’: Guanine Cytosine content; ‘Helix pct’: percentage of residues in alpha helices; ‘ISD pct’: percentage of residues in disordered regions; ‘LowComp pct’: percentage of residues in low complexity regions; ‘Strand pct’: percentage of residues in beta strands; ‘TM pct’: percentage of residues in transmembrane domains. Data can be found in Figure 7—source data 3. (C) Protein sequence alignment generated by MAFFT of MNE1 and its homologue in K. lactis. Pfam match location is shown with a light grey rectangle in S. cerevisiae, and a dark grey one in K. lactis.Figure 7—source data 1.Full property names can be found in the legend of Figure 7.Figure 7—source data 2.Figure 7—source data 3.Figure 7.Column names: ‘Gene_focal’: Name of the focal species gene, ‘Gene_ortho’: name of the target species gene, ‘same’: whether a common Pfam match was found or these genes are in the same OrthoDB group, ‘focal’: the value for the property in the focal gene, ‘ortho’: the value for the property in the target species gene, ‘var’: the name of the property.
+**Figure 7.:** (A) Pfam domain matches in undetectable homologues. ‘focal’ (transparent bars) corresponds to the genes in the focal species, while ‘target’ (solid bars) to their putative undetectable homologues in the target species. Whiskers show the standard error of the proportion. The yeast comparison is statistically significant at p-value<2.2×10−16 and the human comparison at p-value=2×10−5 (Pearson’s Chi-squared test). Raw numbers can be found in Figure 7—source data 2. (B) Distributions of properties of focal genes (‘focal’) and their undetectable homologues (‘target’), when both have a significant match (p-value<0.001) to a Pfam domain or are members of the same OrthoDB group (blue points; n = 25), and when they lack a common Pfam match but both have at least one (red points; n = 183). All blue points correlations are statistically significant (Spearman’s correlation, p-value<0.05; Bonferroni corrected) except from percentage of transmembrane residues (TM pct), marked with an asterisk. Details of correlations can be found in Figure 7—source data 1. All units are in percentage of residues, apart from ‘GC pct’ (nucleotide percentage) and CDS length (nucleotides). ‘Buried pct’: percentage of residues in regions with low solvent accessibility; ‘CDS length’: length of the CDS; ‘Coil pct’: percentage of residues in coiled regions; ‘Exposed pct’: percentage of residues in regions with high solvent accessibility; ‘GC pct’: Guanine Cytosine content; ‘Helix pct’: percentage of residues in alpha helices; ‘ISD pct’: percentage of residues in disordered regions; ‘LowComp pct’: percentage of residues in low complexity regions; ‘Strand pct’: percentage of residues in beta strands; ‘TM pct’: percentage of residues in transmembrane domains. Data can be found in Figure 7—source data 3. (C) Protein sequence alignment generated by MAFFT of MNE1 and its homologue in K. lactis. Pfam match location is shown with a light grey rectangle in S. cerevisiae, and a dark grey one in K. lactis.
 
 One of these rare cases is MNE1, a 1992nt long S. cerevisiae gene encoding a protein that is a component of the mitochondrial splicing apparatus (Watts et al., 2011). The surrounding micro-synteny is conserved in five yeast species, and the distance from the upstream to the downstream neighbour is well conserved in all five (minimum of 2062nt and a maximum of 2379nt). In four of the five species the homologue can also be identified by sequence similarity, but MNE1 of S. cerevisiae has no detectable protein or genomic similarity to its homologous gene in Kluyveromyces lactis, KLLA0_F23485g. Both the conserved micro-synteny and lack of sequence similarity are confirmed by examination of the Yeast Gene Order Browser (Byrne and Wolfe, 2005). Despite the lack of primary sequence similarity, the S. cerevisiae and K. lactis genes share a significant (E-value <0.001) Pfam match (Pfam accession PF13762.5; Figure 7C) and are members of the same fast-evolving OrthoDB group (EOG092E0K2I). The two are also not statistically different in terms of the protein properties that we calculated (Paired t-test p-value=0.8). Thus, MNE1 exemplifies possible retention of ancestral properties in the absence of detectable pairwise sequence similarity.
 
-## Lineage-specific gene origination through divergence
+### Lineage-specific gene origination through divergence
 
 We looked for cases of focal genes that resulted from complete lineage-specific divergence along a specific phylogenetic branch (Figure 8A). When comparing the CDS lengths of these focal genes to those of their undetectable homologues, we found that focal genes tend to be much shorter (Figure 8B). This finding could partially explain the shorter lengths frequently associated with young genes (Vakirlis et al., 2018; Carvunis et al., 2012; Wilson et al., 2017; Ruiz-Orera et al., 2015). Through a lineage-specific shift of selection pressure, truncation of the gene could initiate accelerated divergence in a process that may at first resemble pseudogenization.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53500/elife-53500-fig8-v1.jpg)
 
-**Figure 8.:** (A) Schematic representation of the criteria used to detect lineage-specific divergence. 1, identification of any lineages where a homologue with a similar sequence can be detected (example for one lineage shown). 2, identification of at least two non-monophyletic target species with an undetectable homologue. 3, search in proteomes of outgroup species to ensure that no other detectable homologue exists. The loss of similarity can then be parsimoniously inferred as having taken place, through divergence, approximately at the common ancestor of the yellow-coloured genes (yellow branch). Leftmost yellow box: focal gene; Red boxes: neighbouring genes used to establish conserved micro-synteny; Green boxes: undetectable homologues. Grey bands connecting genes represent homology identifiable from sequence similarity. (B) CDS length distributions of focal genes and their corresponding undetectable homologues (averaged across all undetectable homologous genes of each focal one) in the three datasets. Dashed lines connect the pairs. All comparisons are statistically significant at p-value<0.05 (Paired Student’s t-Test P-values: 2.5×10-5, 0.0037, 0.03 in yeast, fly and human respectively). Distribution means are shown as red stars. Box colours correspond to coloured boxes representing genes in A, but only the focal genome gene (leftmost yellow gene in A) is included in the ‘focal’ category. Data can be found in Figure 8—source data 1. All focal-target undetectable homologue pairs (not just the ones included in this figure) can be found in Figure 8—source data 2. (C) Schematic representation of the species topology of 5 yeast species (see Table 1 for abbreviations) and the genic arrangements at the syntenic region of YLR255C (shown at the ‘Scer’ leaf). Colours of boxes correspond to A. Gene orientations and CDS lengths are shown. The Whole Genome Duplication branch is tagged with a black dot. Genes grouped within dotted rectangles share sequence similarity with each other but not with other genes shown. Grey bands connecting genes represent homology identifiable from sequence similarity. Green genes: TPHA0B03620, ZYRO0E05390g, Ecym_2731.Figure 8—source data 1.Figure 8—source data 2.Relevant for Figure 8 are the columns ‘Gene_focal’, ‘Gene_ortho’ (name of target gene), ‘len_focal’ (CDS length of focal gene) and ‘len_ortho’ (CDS length of target gene).
+**Figure 8.:** (A) Schematic representation of the criteria used to detect lineage-specific divergence. 1, identification of any lineages where a homologue with a similar sequence can be detected (example for one lineage shown). 2, identification of at least two non-monophyletic target species with an undetectable homologue. 3, search in proteomes of outgroup species to ensure that no other detectable homologue exists. The loss of similarity can then be parsimoniously inferred as having taken place, through divergence, approximately at the common ancestor of the yellow-coloured genes (yellow branch). Leftmost yellow box: focal gene; Red boxes: neighbouring genes used to establish conserved micro-synteny; Green boxes: undetectable homologues. Grey bands connecting genes represent homology identifiable from sequence similarity. (B) CDS length distributions of focal genes and their corresponding undetectable homologues (averaged across all undetectable homologous genes of each focal one) in the three datasets. Dashed lines connect the pairs. All comparisons are statistically significant at p-value<0.05 (Paired Student’s t-Test P-values: 2.5×10-5, 0.0037, 0.03 in yeast, fly and human respectively). Distribution means are shown as red stars. Box colours correspond to coloured boxes representing genes in A, but only the focal genome gene (leftmost yellow gene in A) is included in the ‘focal’ category. Data can be found in Figure 8—source data 1. All focal-target undetectable homologue pairs (not just the ones included in this figure) can be found in Figure 8—source data 2. (C) Schematic representation of the species topology of 5 yeast species (see Table 1 for abbreviations) and the genic arrangements at the syntenic region of YLR255C (shown at the ‘Scer’ leaf). Colours of boxes correspond to A. Gene orientations and CDS lengths are shown. The Whole Genome Duplication branch is tagged with a black dot. Genes grouped within dotted rectangles share sequence similarity with each other but not with other genes shown. Grey bands connecting genes represent homology identifiable from sequence similarity. Green genes: TPHA0B03620, ZYRO0E05390g, Ecym_2731.
 
 We sought a well-defined example to illustrate this process. YLR255C is a 354nt long, uncharacterized yeast ORF that is conserved across S. cerevisiae strains according to the Saccharomyces Genome Database (Cherry et al., 2012) (SGD). YLR255C is a species-specific, orphan gene. Our analyses identified undetectable homologues in four other yeast species. Three of them share sequence similarity with each other while the fourth one is another orphan gene, specific to K. naganishii (Figure 8C). The presence of two orphan genes in conserved synteny is strong evidence for extensive sequence divergence as an explanation of their origin. Based on the phylogenetic relationships of the species and the CDS lengths of the undetectable homologues, we can infer that the ancestor of YLR255C was longer (Figure 8C). Furthermore, given that S. cerevisiae and K. naganishii have both experienced a recent Whole Genome Duplication (WGD), a role of that event in the origination of the two shorter species-specific genes is plausible. The undetectable homologue in T. phaphii, another post-WGD species, has both similar CDS length to that of the pre-WGD ones and conserved sequence similarity to them, which is consistent with a link between shortening and loss of sequence similarity.
 
@@ -123,15 +310,15 @@ Overall, our findings are consistent with the view that multiple evolutionary pr
 
 All data and scripts necessary to reproduce all figures and analyses are available at https://github.com/Nikos22/Vakirlis_Carvunis_McLysaght_2019 (Vakirlis, 2020; copy archived at https://github.com/elifesciences-publications/Vakirlis_Carvunis_McLysaght_2019). Correspondence of scripts to figures can be found in each Materials and methods subsection and in the readme file available online on GitHub.
 
-## Data collection
+### Data collection
 
 Reference genome assemblies, annotation files, CDS and protein sequences were downloaded from NCBI’s GenBank for the fly and yeast datasets, and ENSEMBL for the human dataset. Species names and abbreviations used can be found in Table 1. The latest genome versions available in January 2018 were used. The yeast annotation used did not include dubious ORFs. OrthoDB v 9.1 flat files were downloaded from https://www.orthodb.org/?page=filelist. Divergence times for focal-target pairs were obtained from http://timetree.org/ (Hedges et al., 2006) (estimated times). dN and dS values where obtained for D. melanogaster and D. simulans from http://www.flydivas.info/ (Stanley and Kulathinal, 2016) and for human and mouse from ENSEMBL biomart. For S. cerevisiae, we calculated dN and dS over orthologous alignments of 5 Saccharomyces species (S. cerevisiae, S. paradoxus, S. mikatae, S. kudriavzevii, S. bayanus) downloaded from http://www.saccharomycessensustricto.org/cgi-bin/s3.cgi (Scannell et al., 2011) using yn00 from PAML (Yang, 2007) (average of 4 pairwise values for each gene).
 
-## Synteny-based pipeline for detection of homologous gene pairs
+### Synteny-based pipeline for detection of homologous gene pairs
 
 Related to Figure 3, Figure 4, Figure 2—figure supplement 1, Figure 6—figure supplement 2; relevant scripts: Figure3A.R, Figure3B_4_fig2-supp1.R.
 
-## Calculation of undetectable and false homologies and definition of optimal E-values
+### Calculation of undetectable and false homologies and definition of optimal E-values
 
 For every focal-target pair and for every E-value cut-off, the proportions of focal genes with at least one identified region of conserved micro-synteny for which a match was found ‘opposite’ or elsewhere in the genome were calculated. The remaining proportion, that is those with conserved micro-synteny but no match, constitutes the percentage of putative undetectable homologies. To estimate the ‘false homologies’, we calculated the proportion of the focal proteome that had a BLASTp match to the reversed target proteome, or to their corresponding reversed syntenic genomic region for the ones with identified micro-synteny (see step 4 of previous section). Based on these proportions, we chose the highest value limiting ‘false homologies’ to 0.05 for our analyses.
 
@@ -139,7 +326,7 @@ We also calculated the Mathews Correlation Coefficient (MCC) measure of binary c
 
 Related to Figure 3, Figure 4; relevant scripts: Figure3A.R, Figure3B_4_fig2-supp1.R, Balanced_optimal_evalue_MCC.R.
 
-## Calculation of contribution of divergence beyond recognition to observed numbers of genes without detectable similarity
+### Calculation of contribution of divergence beyond recognition to observed numbers of genes without detectable similarity
 
 For a given pair of focal-target genomes, we estimate the proportion of all focal genes without detectable similarity that is due to processes other than sequence divergence in a pairwise manner (Figure 6) and in a phylogeny-based manner (Figure 6—figure supplement 3). The pairwise approach is calculated as follows (see also Figure 6—figure supplement 1 for a schematic explanation): an X number of the total n of focal genes will have no similarity with the target, based on a BLASTP search of the target’s proteome using the corresponding optimal E-value cut-off and a TBLASTN search of the target’s genome with an E-value cut-off of 10−6. We have also estimated the proportion d of total genes that have lost similarity due to divergence. This was calculated over genes in conserved micro-synteny but we assume that it can be used as a proxy for the entire genome since presence in a conserved micro-syntenic region does not significantly impact evolutionary rates (Figure 5). By calculating the ratio of d over X/n we can obtain the contribution of divergence to the total genes without similarity. Note that, for this calculation to be unbiased, d here is based on the same similarity searches used to define X (i.e. it does not include the local TBLASTN search shown in step 4 of Figure 2B). The phylogeny-based approach is performed as follows: for a given ‘phylostratum’ (a given ancestral branch of the focal species), we estimate the proportion of genes restricted to this phylostratum due to divergence, again calculated over genes in conserved micro-synteny and extrapolated to all genes as in the pairwise case. This is done by taking the number of genes restricted to the phylostratum (TRGs, i.e. those for which the phylogenetically farthest species with a sequence similarity match falls within the subtree defined by the phylostratum) that have a putative undetectable homologue (based on micro-synteny) in at least one lineage outside of that phylostratum, and dividing them by the number of all genes that are predicted to have a homologue (based on micro-synteny) in at least one lineage outside the phylostratum. In other words, the proportion out of all genes with at least one micro-synteny conserved region, and thus a putative homologue, with a species outside the phylostratum, that are restricted, based on sequence similarity, within the specific phylostratum. As in the pairwise case, this proportion is compared to the proportion calculated based on sequence similarity alone out of all genes, meaning the proportion of TRGs for a given phylostratum, out of all genes.
 
@@ -147,13 +334,13 @@ The proportion of TRGs that we predict can be explained by divergence at the phy
 
 Related to Figure 5, Figure 6, Figure 6—figure supplements 1–3; relevant scripts: Figure6_fig6-supp2.R, Figure6-supp3.R, Figure_5_7_8.R.
 
-## Protein and CDS properties
+### Protein and CDS properties
 
 Pfam matches were predicted using PfamScan.pl to search protein sequences against a local Pfam-A database downloaded from ftp://ftp.ebi.ac.uk/pub/databases/Pfam (Finn et al., 2016; Eddy, 2011). Guanine Cytosine content and CDS length was calculated from the downloaded CDSomes in Python. Secondary structure (Helix, Strand, Coil), solvent accessibility (buried, exposed) and intrinsic disorder were predicted using RaptorX Property (Wang et al., 2016). Transmembrane domains were predicted with Phobius (Käll et al., 2007). Low complexity regions in protein sequences were predicted with segmasker from the BLAST+ suite. In the correlation analysis of the various properties, when multiple isoforms existed for the focal or target gene in a pair, we only kept the pairwise combination (focal-target) with the smallest CDS length difference. For the protein and CDS properties analyses, we removed 23 pairs of undetectable homologues for which our bioinformatic pipeline failed to retrieve both the focal and target species homologue CDS sequence due to non-correspondence between the downloaded annotation and CDS files. Furthermore, in all undetectable homologues property analyses, we removed from our dataset 14 pairs of undetectable homologues whose proteins consisted of low complexity regions in more than 50% of their length, since we observed that such cases can often produce false positives (artificial missed homologies) because of BLASTP’s low complexity filter. Pairwise alignments were performed with MAFFT (Katoh and Standley, 2013). All statistical analyses were conducted in R version 3.2.3. All statistical tests performed are two-sided.
 
 Related to Figure 7; relevant scripts: Figure_5_7_8 .R.
 
-## Identification of TRGs resulting from lineage-specific divergence within micro-syntenic regions
+### Identification of TRGs resulting from lineage-specific divergence within micro-syntenic regions
 
 To identify novel genes likely resulting from lineage-specific divergence and restricted to a specific taxonomic group, we applied the following criteria. Out of all the candidate genes in the three focal species with at least two undetectable homologues in two non-monophyletic (non-sister) target species, we retained those that had no match, according to our pipeline, to target species that diverged before the most distant of the target species with an undetectable homologue (see Figure 8A for a schematic representation). For those genes, we also performed an additional BLASTP search against NCBI’s NR database with an E-value cut-off of 0.001 and excluded genes that had matches in outgroup species (i.e. in species outside of Saccharomyces, Drosophila and placental mammals for yeast, fly and human respectively).
 

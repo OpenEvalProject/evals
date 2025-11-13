@@ -27,17 +27,617 @@ To address these questions, we applied nanoscale imaging tools to detect and stu
 
 ## Results
 
-## Detection of MVR events
+### Detection of MVR events
 
 To detect MVR events and resolve their locations in hippocampal synapses, we took advantage of a nanoscale imaging approach that we recently developed (Maschi and Klyachko, 2017), combined with the use of a pH-sensitive indicator, pHluorin, which was targeted to the vesicle lumen via vGlut1 (vGlut1-pHluorin) (Balaji and Ryan, 2007; Leitz and Kavalali, 2011; Voglmaier et al., 2006). vGlut1-pHluorin was expressed in cultures of excitatory hippocampal neurons using lentiviral infection at DIV3. Imaging was then performed at DIV16–19 at 37°C. Release events were evoked using 1 Hz stimulation for 120 s (Figure 1A). Robust detection of individual release events was achieved at 40 ms/frame rate throughout the observation time period.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig1-v2.jpg)
+
+**Figure 1.:** (A) Sample spatial distribution of ten UVR events and a single MVR (arrows) event within a hippocampal bouton evoked by 120 APs at 1 Hz. Release sites were defined using a hierarchical clustering algorithm with a cluster diameter of 50 nm (Maschi and Klyachko, 2017) and are shown by crossed circles. Images (before and after 1 AP stimulation) show a sample MVR event highlighted by arrows. (B) Examples of MVR events in different boutons. (C) Proportion of MVR events as a function of intra-event separation distances. (D, E) Cumulative distributions of AZ area (D) and number of clusters/release sites (E) for all recorded boutons (black) and boutons exhibiting MVR events (red). (F) Spatial overlap of MVR and UVR events. Percentages of MVR events in which none, one or both events in the pair occurred at release sites that also harbored at least one UVR event. (G) Probability of reuse by UVR events of more proximal vs. more distal release sites engaged in MVR event pairs. (H) Analysis of release probability (Pr-site) of more distal (left bars) and more proximal (right bars) release sites engaged in MVR event pairs compared to other release sites equidistant to the AZ center within ±25 nm but not engaged in the MVR event during the observation period (shown schematically on the left). (I) Proportion of release sites that are reused at least once during the observation period as a function of the distance to the AZ center. Numbers shown represent average release site re-use in a given bin. N = 3781 (UVR) and 245 (MVR) events, from 90 dishes from 11 independent cultures; *p<0.05, **p<0.01, ***p<0.001. Two-sample KS-test (D, E); Chi-square test (G); Paired t-test (H).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Percentage of MVR events in which none, one or both events in the pair overlapped (within 25 nm) with at least one UVR event during observation period, as determined by proximity analysis.
 
 Using a hierarchical clustering algorithm, as well as simulations and statistical considerations, we have previously determined that release events are not randomly distributed throughout the AZ, but occur in a set of defined and repeatedly reused release sites within the AZs (Maschi and Klyachko, 2017). Our current data are consistent with that finding (Figure 1A and see 'Materials and methods' for details). In addition, visual examination of these recordings revealed a subset of events that involve the simultaneous fusion of two vesicles in the same bouton following a single action potential (Figure 1A,B). To identify these double fusion events (i.e., MVR) automatically and to determine their precise spatial locations, we used a well-established mixture-model fitting approach with two fixed-width Gaussians to approximate the point spread function (PSF)-like images of each vesicle (Jaqaman et al., 2008; Thomann et al., 2003). We previously used a conceptually similar fitting approach to localize individual non-overlapping UVR events, achieving ~27 nm precision (Maschi and Klyachko, 2017).
 
 Here, when studying instances of MVR, we found that although the distance between the two fusion events comprising MVR varied widely, shorter separation distances were more frequently observed (Figure 1C). Over 90% of fusion event pairs that are involved in MVR were separated by less than 600 nm. The chances of misidentifying two events in the neighboring boutons as occurring in the same bouton is negligible, as we have previously used 3D FIB-SEM reconstruction of our neuronal cultures to show that the average bouton-to-bouton distance is an order of magnitude larger than the average event-to-event distance (Maschi and Klyachko, 2017). At the other end of the spectrum, it is important to note that this mixture-model fitting approach does not reliably fit the subset of double fusion events that occur so close as to be nearly overlapping. We examine this subset of unresolved MVR events using additional computational tools that are presented in the subsequent sections.
 
-## MVR events preferentially occur at release sites with higher release probability
+### MVR events preferentially occur at release sites with higher release probability
 
 We first asked how the incidence of MVR is distributed in the synapse population. Previous studies suggest that the synaptic release probability is a strong predictor of a propensity for MVR (Christie and Jahr, 2006; Huang et al., 2010). Moreover, we know that AZ size is a major determinant of synaptic release probability (Holderith et al., 2012; Matz et al., 2010). We thus explored the relationship between AZ size (see 'Materials and methods' for details) and the probability of observing MVR events at individual synaptic boutons. We also used the number of release sites per bouton as another, functional measure of synaptic release probability. Individual release sites within each bouton were defined using a hierarchical clustering algorithm with a cluster diameter of 50 nm (Maschi and Klyachko, 2017). Boutons at which at least one MVR event was observed had a significantly larger AZ (Figure 1D and Table 1; N = 3781 (UVR) and 245 (MVR) events, 90 dishes from 11 independent cultures; p<0.001, two-sample KS-test) and a significantly larger number of release sites than the synapse population overall (Figure 1E; Table 1). These results suggest that MVR events are more likely to occur at boutons that have larger AZs and higher overall release probability.
+
+**Table 1.**
+ Data values and statistical analyses.Columns represent (from left to right): figure/panel number; experimental conditions; number of samples (synapses, dishes and cultures); mean values and standard errors of the means (SEM); statistical test used for comparison; and the P-value resulting from the statistical comparison.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure number</th>
+      <th>Conditions</th>
+      <th>NSyn</th>
+      <th>NDishes</th>
+      <th>NCultures</th>
+      <th>Mean ± SEM</th>
+      <th>Statistical test</th>
+      <th>Pval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Figure 1D</td>
+      <td>All</td>
+      <td>3781</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.1014 ± 0.0009</td>
+      <td rowspan="2">Two-sample KS-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.164 ± 0.005</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 1E</td>
+      <td>All</td>
+      <td>3781</td>
+      <td>90</td>
+      <td>11</td>
+      <td>6.57 ± 0.05</td>
+      <td rowspan="2">Two-sample KS-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>9.8 ± 0.03</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 1G</td>
+      <td>Proximal</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.45 ± 0.05</td>
+      <td rowspan="2">Chi-square test</td>
+      <td rowspan="2">0.0386</td>
+    </tr>
+    <tr>
+      <td>Distal</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.29 ± 0.05</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 1H</td>
+      <td>Distal MVR/UVR</td>
+      <td>66</td>
+      <td>90</td>
+      <td>11</td>
+      <td>1.24 ± 0.09</td>
+      <td>Paired t-test</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Proximal MVR/UVR</td>
+      <td>95</td>
+      <td>90</td>
+      <td>11</td>
+      <td>1.28 ± 0.08</td>
+      <td>Paired t-test</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 2C</td>
+      <td>UVR</td>
+      <td>151</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.32 ± 0.02</td>
+      <td rowspan="2">Two-sample KS-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MVR</td>
+      <td>144</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.47 ± 0.02</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 3B</td>
+      <td>Proximal MVR/Proximal MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>1 ± 0.03</td>
+      <td rowspan="2">Chi-square test</td>
+      <td rowspan="2">0.017</td>
+    </tr>
+    <tr>
+      <td>Distal MVR/Proximal MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.65 ± 0.02</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 3C</td>
+      <td>Larger MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>214 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.0058</td>
+    </tr>
+    <tr>
+      <td>Smaller MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>242 ± 7</td>
+    </tr>
+    <tr>
+      <td>Figure 3D</td>
+      <td>MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>y = 3.108+0.02106 x</td>
+      <td>Linear fit</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 3E</td>
+      <td>MVR &lt;400 nm</td>
+      <td>129</td>
+      <td>90</td>
+      <td>11</td>
+      <td>9.8 ± 0.7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>MVR &gt;400 nm</td>
+      <td>115</td>
+      <td>90</td>
+      <td>11</td>
+      <td>14.3 ± 0.9</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Figure 4A</td>
+      <td>EGTA MVR Linear fit</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>y = 8.801+0.00556 ×</td>
+      <td>Linear fit</td>
+      <td>0.264</td>
+    </tr>
+    <tr>
+      <td>MVR &lt;400 nm</td>
+      <td>156</td>
+      <td>57</td>
+      <td>11</td>
+      <td>10.1 ± 0.8</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.131</td>
+    </tr>
+    <tr>
+      <td>MVR &gt;400 nm</td>
+      <td>69</td>
+      <td>57</td>
+      <td>11</td>
+      <td>12.3 ± 1.2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 4B</td>
+      <td>Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>0.021 ± 0.005</td>
+      <td rowspan="2">One-way analysis of covariance (ANOCOVA)</td>
+      <td rowspan="2">0.022</td>
+    </tr>
+    <tr>
+      <td>EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>0.006 ± 0.005</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 4C</td>
+      <td>Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>52 ± 3</td>
+      <td rowspan="2">Chi-square test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>69 ± 3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 4D</td>
+      <td>Larger MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>178 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Smaller MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>216 ± 7</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Figure 4E</td>
+      <td>Ctrl Pr = 0.042</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>104 ± 8</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.042</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>62 ± 5</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.033</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>93 ± 3</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.033</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>72 ± 2</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.025</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>107 ± 2</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.025</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>83 ± 1</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.017</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>124 ± 1</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.017</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>100 ± 1</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.008</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>154.6 ± 0.7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.008</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>129.8 ± 0.8</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Figure 4F</td>
+      <td>Ctrl MVR</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>y=a+b∗xc</td>
+      <td rowspan="4">Fit</td>
+      <td rowspan="4">0.0030</td>
+    </tr>
+    <tr>
+      <td>EGTA MVR</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>a = 17.951</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>b = 1.0049e+09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>c = 5.5575</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 4G</td>
+      <td>Distal MVR/UVR</td>
+      <td>52</td>
+      <td>57</td>
+      <td>11</td>
+      <td>1.29 ± 0.09</td>
+      <td>Paired t-test</td>
+      <td>0.0020</td>
+    </tr>
+    <tr>
+      <td>Proximal MVR/UVR</td>
+      <td>77</td>
+      <td>57</td>
+      <td>11</td>
+      <td>1.5 ± 0.1</td>
+      <td>Paired t-test</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Figure 3—figure supplement 1A</td>
+      <td>UVR</td>
+      <td>136</td>
+      <td>90</td>
+      <td>11</td>
+      <td>11.5 ± 0.8</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.1262</td>
+    </tr>
+    <tr>
+      <td>MVR,&lt;400 nm</td>
+      <td>129</td>
+      <td>90</td>
+      <td>11</td>
+      <td>9.8 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>UVR</td>
+      <td>136</td>
+      <td>90</td>
+      <td>11</td>
+      <td>11.5 ± 0.8</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.0232</td>
+    </tr>
+    <tr>
+      <td>MVR,&gt;400 nm</td>
+      <td>115</td>
+      <td>90</td>
+      <td>11</td>
+      <td>14.3 ± 0.9</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Figure 3—figure supplement 1B</td>
+      <td>UVR</td>
+      <td>665</td>
+      <td>90</td>
+      <td>11</td>
+      <td>y = 35.088-0.0064674 x</td>
+      <td>Linear fit</td>
+      <td>0.207</td>
+    </tr>
+    <tr>
+      <td>UVR 0–100 nm</td>
+      <td>285</td>
+      <td>90</td>
+      <td>11</td>
+      <td>34.9±0.6</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.1376</td>
+    </tr>
+    <tr>
+      <td>UVR 200–300 nm</td>
+      <td>109</td>
+      <td>90</td>
+      <td>11</td>
+      <td>33.4 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1D</td>
+      <td>Synaptic vesicle diameters</td>
+      <td>NSyn = 93 NVesic = 806</td>
+      <td>–</td>
+      <td>3</td>
+      <td>y = 48.109+0.0047331x</td>
+      <td>Linear fit</td>
+      <td>0.161</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Figure 4—figure supplement 1A</td>
+      <td>Larger Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>214 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.0058</td>
+    </tr>
+    <tr>
+      <td>Smaller Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>242 ± 7</td>
+    </tr>
+    <tr>
+      <td>Larger EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>178 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Smaller EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>216 ± 7</td>
+    </tr>
+    <tr>
+      <td>Larger Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>214 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Larger EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>178 ± 7</td>
+    </tr>
+    <tr>
+      <td>Smaller Ctrl MVR</td>
+      <td>245</td>
+      <td>90</td>
+      <td>11</td>
+      <td>242 ± 7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">0.0116</td>
+    </tr>
+    <tr>
+      <td>Smaller EGTA MVR</td>
+      <td>225</td>
+      <td>57</td>
+      <td>11</td>
+      <td>216 ± 7</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Figure 4—figure supplement 1B</td>
+      <td>Ctrl Pr = 0.042</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>104 ± 8</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.042</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>62 ± 5</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.033</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>93 ± 3</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.033</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>72 ± 2</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.025</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>107 ± 2</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.025</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>83 ± 1</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.017</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>124 ± 1</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.017</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>100 ± 1</td>
+    </tr>
+    <tr>
+      <td>Ctrl Pr = 0.008</td>
+      <td>2417</td>
+      <td>90</td>
+      <td>11</td>
+      <td>154.6 ± 0.7</td>
+      <td rowspan="2">Two-sample t-test</td>
+      <td rowspan="2">&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>EGTA Pr = 0.008</td>
+      <td>2338</td>
+      <td>57</td>
+      <td>11</td>
+      <td>129.8 ± 0.8</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition to detecting a variable propensity for MVR across the synapse population, we were interested in whether there is similar variability among release sites within the same synaptic bouton. In other words, are all release sites within a single bouton equally likely to support vesicle fusion involved in both UVR and MVR events or are there specific characteristics of individual release sites that make them more or less likely to support one type of fusion event over the other? We looked at the extent of release site overlap between MVR and UVR events, defining it as a ‘full overlap’ when both release sites involved in MVR were also observed as release sites during UVR events, ‘partial overlap’ when only one release site involved in MVR also served as a release site during UVR, and ‘no overlap’ when neither release site involved in an MVR event was observed as a release site for a UVR event during our observation period. We found full overlap with UVR for ~15% of MVR events, whereas ~47% of MVR events showed partial overlap, and ~38% showed no overlap (Figure 1F; Table 1). These results did not depend on the specific definition of release sites because we obtained essentially the same breakdown using proximity analysis of individual events without defining release sites using any clustering algorithms (Figure 1—figure supplement 1; Table 1).
 
@@ -51,7 +651,7 @@ We also observed more general patterns among release sites within a given AZ, in
 
 Taken together, these findings provide evidence of a marked heterogeneity of release site properties within the individual AZs, characterized by a gradient of Pr-site from the AZ center to the periphery. These results further suggest that, in addition to the radial distribution of release probability, release sites that have a higher propensity for MVR are characterized by a higher release probability than other sites equidistant to the AZ center.
 
-## The spatiotemporal features of resolved MVR events are generalizable to MVR events that cannot be resolved
+### The spatiotemporal features of resolved MVR events are generalizable to MVR events that cannot be resolved
 
 The well-separated MVR events analyzed above had sufficient spatial separation to allow each event in the pair to be individually localized (resolved events). However, because the AZ is very small overall, a significant proportion of MVR events involve vesicle release at sites within a sub-diffraction distance from one another. Such unresolved events would not have been captured in our analyses thus far. Therefore, we next asked to what extent the findings relating to resolvable MVR events could be generalized to unresolved MVR events.
 
@@ -65,9 +665,21 @@ The identified MVR events were then analyzed on the basis of asymmetry considera
 
 We then examined the spatiotemporal features of the unresolved MVR events. First, we observed that unresolved MVR events preferentially have smaller asymmetry scores (Figure 2D) and thus tend to occur at smaller separation distances, similarly to the resolved MVR events (Figure 1C). Next, we examined the localization of unresolved MVR events relative to the AZ center/periphery. We observed that more asymmetrical (more spatially separated) events occurred closer to the AZ center, whereas symmetrical events tend to be more peripheral (Figure 2E, top). An equivalent calculation for the resolved MVR events (see figure legend for details) showed a very similar relationship (Figure 2E, bottom), supporting the notion that the two subpopulations of MVR events have similar spatial properties. Finally, as described for the resolved MVR events above, we examined the extent to which release sites were used for either MVR or UVR, or both. Only a subpopulation of strongly overlapping MVR events (asymmetry score <0.5) were used in this analysis because these highly symmetrical events could be well-approximated by a single symmetrical Gaussian fit, making this analysis comparable to that of the resolved MVR events. The extent of overlap of MVR and UVR events at individual release sites was comparable between unresolved and resolved MVR events (Figures 2F and 1F), with overlap more likely occuring closer to the AZ center in both cases (Figures 2F and 1G). These data suggest that unresolved and resolved MVR events have comparable spatial features. Thus, our observations can likely be generalized across the entire population of MVR events.
 
-## Temporal desynchronization of release events comprising MVR
+### Temporal desynchronization of release events comprising MVR
 
 We next asked whether there is also heterogeneity within the temporal properties of MVR events. Previous studies present evidence of temporal ‘jitter’ on a millisecond timescale (~1–5 ms) within the release pair comprising an MVR event at both excitatory and inhibitory cerebellar synapses (Auger et al., 1998; Auger and Marty, 2000; Crowley et al., 2007; Malagon et al., 2016; Rudolph et al., 2011). Upon initial inspection of resolved MVR events, we noticed that one of the two fusion events comprising an MVR is often noticeably larger in amplitude than the other (Figure 3A). In our experimental approach, action potentials are synchronized with the beginning of the frame acquisition; thus, considering the quantal nature of fusion events, we hypothesized that this difference in amplitude reflects imperfect synchronization between the two release events (if one release event occurs later in the recording frame, we would expect to collect a smaller number of photons for this delayed event, i.e., smaller amplitude) (Figure 3A, top).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig3-v2.jpg)
+
+**Figure 3.:** (A) Sample image (right) and intensity profile (left) of an MVR event with noticeable difference in intra-event amplitude. The top insert shows a cartoon representation of a relationship between a time delay (red arrow) of the second fusion after an action potential and the resulting amplitude difference within an MVR event. (B) Probability that the proximal or distal event within MVR pairs is larger, normalized to that of the proximal event. (C) Distance to the AZ center from the larger and smaller events within MVR pairs. (D, E) Amplitude difference of the two events comprising MVR as a function of intra-event separation. Linear fit (D) and t-test of pooled data (E) are shown. *p<0.05, ***p<0.001; Chi-square test (B); Paired t-test (C); Two-sample t-test (E). N = 245 MVR events, from 90 dishes from 11 independent cultures.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Uncertainty in the fusion event amplitude determination was estimated on the basis of the amplitude variation of consecutive UVR events evoked in the same bouton at 1 Hz. Uncertainty in determination of individual event amplitude does not account for the amplitude differences observed in MVR events with large separation. (B) Amplitude of UVR events as a function of the distance to the AZ center. No correlation was found between event amplitude and distance to AZ center (p=0.21, linear fit). The bar graph shows that no significant difference in amplitude exists between central events (pooled data for 0–100 nm) vs. peripheral events (pooled data for 200–300 nm). (C, D) Vesicle diameter as a function of distance to the AZ center was determined for all vesicles positioned within 100 nm from the AZ (defined previously as tethered vesicles; Maschi et al., 2018) from LaSEM micrographs of hippocampal cultures (EM data from Maschi et al., 2018). Distance from the vesicle to the AZ center was determined from the projection of the vesicle center position onto the AZ plane (C). Vesicle diameter did not show significant changes with distance from the AZ center (p=0.16, linear fit). ***p<0.001; ns, not significant. Two-sample t-test (A,B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) MVR events occur at the same rate throughout the 120 action potential stimulus at 1 Hz, showing absolutely no increase in double event probability during the train, as would be expected if these events are generated by asynchronous release. (B) An amplitude histogram for asynchronous release events detected in 3 mM Sr+2 after single APs using 1 Hz 120 AP stimulation shows the loss of quantal homogeneity of asynchronous fusion events (with a left-shifted non-Gaussian distribution). This is distinct from the Gaussian amplitude distribution that we observed for synchronous MVR or UVR events in our measurements. (C) Amplitude difference of two asynchronous events detected in the same frame in the same bouton in the presence of 3 mM Sr2+ as a function of intra-event separation. In contrast to MVR events, no correlation was found between spatial event separation and desynchronization (p=0.662).
 
 To test this hypothesis, we looked at the relationship between the relative amplitude and the spatial organization of the release pairs comprising each MVR event. We observed that the larger amplitude event (assumed to occur first) was more likely to occur closer to the AZ center than the smaller one in the pair (Figure 3B; Table 1). Accordingly, the average distance to the AZ center was significantly shorter for the larger amplitude event relative to the event with the smaller amplitude within the pair (Figure 3C; Table 1). Most importantly, this amplitude difference was correlated with the distance between the two events within the pair (Figure 3D,E), such that larger amplitude differences were associated with larger separation distances (Figure 3D,E). This spatial organization parallels the gradient of release site release probability from the AZ center to the periphery (Figure 1I, and see below). We note that a component of the amplitude differences can arise from the uncertainty in determining the fusion event amplitude; we estimated this uncertainty to be ~10% (Figure 3—figure supplement 1A). Thus, the uncertainty in our measurements may account for the amplitude differences that we measured for the most closely spaced MVR events, but it does not account for the differences that we measured for MVR events that are further apart (Figure 3—figure supplement 1A). Moreover, the positive correlation between the amplitude difference and the spatial separation of the two events comprising MVR cannot be explained by random noise or by measurement uncertainty. We thus interpret our results as indicating that the amplitude difference between the two fusion events that comprise an MVR, at least in part, reflects imperfect synchronization.
 
@@ -77,7 +689,7 @@ We also considered the possibility that factors other than desynchronization, su
 
 In summary, our results support the notion that vesicle release associated with MVR is desynchronized and follows a specific spatial organization with respect to the center of the AZ. Specifically, the first of the two events in the MVR pair is preferentially located closer to the AZ center. This spatial organization of MVR events parallels our finding that release probability and the probability that a release site is involved in an MVR also follows a center-to-periphery spatial gradient.
 
-## Double events do not result from asynchronous release overlapping temporally with synchronous events
+### Double events do not result from asynchronous release overlapping temporally with synchronous events
 
 Given the intrinsically limited temporal resolution of our imaging tools, we must consider the possibility that the double events that we observed arose not from MVR, but rather from asynchronous release events generated by preceding stimulation and temporarily overlapping with UVR. We addressed this possibility in five complementary ways.
 
@@ -91,9 +703,17 @@ Fourth, the synchronicity of double events in our recordings is relatively high,
 
 Finally, we note that previous studies find minimal asynchronous release evoked by 1 Hz stimulation under nearly identical experimental conditions (37°C, 2 mM extracellular Ca2+) (Raingo et al., 2012). Thus, at least five complimentary lines of evidence strongly suggest that double events in our recordings do indeed reflect synchronous MVR events, with no significant contribution of asynchronous release.
 
-## Spatiotemporal features of MVR events and release site properties are calcium-dependent
+### Spatiotemporal features of MVR events and release site properties are calcium-dependent
 
 We next set out to explore the mechanistic origin of the spatial organization of MVR events relative to the AZ center. Our previous study suggested a possible role of calcium in the spatial regulation of release site properties because we observed that release site usage is regulated in an activity-dependent manner, such that site usage shifts towards the periphery during trains of activity (Maschi and Klyachko, 2017). Previous studies have also found that the propensity for MVR events increases as extracellular calcium levels increase (Leitz and Kavalali, 2011). However, whether calcium regulates the spatiotemporal organization of MVR events and/or the properties of the release sites remains unknown. To test this possibility, we pre-incubated neurons with a cell-permeable calcium chelator EGTA-AM (30 µm) for 20 min. EGTA does not directly affect vesicle release because it is too slow to buffer rapid calcium rise near voltage-gated calcium channels (VGCCs), but it is effective in buffering the ensuing slower calcium elevation caused by diffusion. We observed several effects of EGTA on the spatiotemporal distribution of MVR events. First, EGTA affected MVR event desynchronization: although the amplitudes of the two fusion events comprising MVR were still different, the difference no longer depended on their separation distance (Figure 4A,B; Table 1; N = 225 synapses, from 57 dishes from 11 independent cultures). Second, in the presence of EGTA, a larger proportion of MVR events occurred at shorter intra-event distances (Figure 4C; Table 1), that is, pairs of release events comprising MVR were more likely to be closer to each other in the presence of EGTA. In addition, the average distances from both events in the MVR pair to the AZ center were significantly shortened in the presence of EGTA (Figure 4—figure supplement 1A, Table 1). Thus, calcium buffering causes MVR events to occur at shorter separation distances and more proximal to the AZ center. However, the preferential localization of the larger (earlier) event in the MVR pair closer to the AZ center was still observed in the presence of EGTA (Figure 4D, Table 1). These effects of buffering calcium diffusion with EGTA suggest that several major spatiotemporal features of MVR events are determined, in part, by calcium diffusion following an action potential.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig4-v2.jpg)
+
+**Figure 4.:** (A) Effect of EGTA on the correlation between the spatial separation and amplitude difference between two events comprising an MVR. (B) The effect of EGTA was assessed by comparing the slopes of the correlation in panel (A) in control (from Figure 3D) and EGTA (from A) conditions. (C) Proportion of MVR events with intra-event separation <400 nm in EGTA and control conditions. (D) Distance to the AZ center from the larger and smaller events within MVR pairs in the presence of EGTA. (E,F) Average distance to the AZ center (E) and its relative change (F) for individual release sites binned on the basis of their release probability, in EGTA and control conditions. (G) Release probability of more distal (left bars) and more central (right bars) release sites engaged in MVR event pairs compared to all other release sites equidistant to the AZ center within ±25 nm, in the presence of EGTA. ***p<0.001; ns, not significant. Statistical tests were as follows: two-sample t-test (A,E); one-way analysis of covariance (ANOCOVA) (B); Chi-square test (C); and Paired t-test (D,G). Control: N = 245 MVR events from 90 dishes from 11 independent cultures. EGTA: N = 225 MVR events from 57 dishes from 11 independent cultures.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55210/elife-55210-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Distance to the AZ center from the larger and smaller events within MVR pairs in control (data from Figure 3C) and EGTA conditions (data from Figure 4D). (B) Average distance to the AZ center of individual release sites binned on the basis of their release probability, in control and EGTA conditions (data from Figure 4E). ∗∗p<0.01; ∗∗∗p<0.001. Two-sample t-test.
 
 In line with the idea that the spatiotemporal features of MVR events reflect release site heterogeneity, we observed that the preferential utilization of more central release sites was exacerbated in the presence of EGTA (Figure 4E, Figure 4—figure supplement 1B; Table 1). Interestingly, buffering intraterminal calcium had a larger effect on more central release sites with higher Pr-site values than on the more peripheral sites with lower Pr-site (Figure 4F). These results are in line with our earlier findings that the release site utilization shifts in the opposite direction (i.e. from AZ center towards periphery) when intraterminal calcium is elevated during high-frequency stimulation (Maschi and Klyachko, 2017). It is also consistent with the shorter separation distance within MVR events in the presence of EGTA (Figure 4C), and the shorter distances of MVR events to the AZ center in the presence of EGTA (Figure 4—figure supplement 1A). Indeed, the preferential use of sites with higher release probability (as compared to other, equidistant sites) during MVR events persists in the presence of EGTA (Figure 4G; Table 1), while the utilization of these sites shifts closer to the AZ center in the presence of EGTA.
 
@@ -113,29 +733,29 @@ Another possibility is that release site properties are determined, in part, by
 
 ## Materials and methods
 
-## Neuronal cell cultures
+### Neuronal cell cultures
 
 Neuronal cultures were produced from rat hippocampus as previously described (Peng et al., 2012). Briefly, hippocampi were dissected from E16 pups, dissociated by papain digestion, and plated on coated glass coverslips. Neurons were cultured in Neurobasal media supplemented with B27. All animal procedures conformed to the guidelines approved by the Washington University Animal Studies Committee.
 
-## Experimental design
+### Experimental design
 
 All live imaging measurements were replicated in more than 100 boutons derived from 57 to 90 coverslips from 11 independent cultures (see Table 1 for individual experiments). Most experiments were carried out in an unblended manner and no specific randomization strategy was used. Statistical computations were not performed to determine the optimal sample size for experiments.
 
-## Lentiviral infection
+### Lentiviral infection
 
 VGlut1-pHluorin was generously provided by Drs Robert Edwards and Susan Voglmaier (University of California San Francisco) (Voglmaier et al., 2006). Lentiviral vectors were generated by the Viral Vectors Core at Washington University. Hippocampal neuronal cultures were infected at DIV3 as previously described (Maschi and Klyachko, 2017).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 All experiments were conducted at 37°C within a whole-microscope incubator (In Vivo Scientific) at DIV16–19. Neurons were perfused with bath solution (125 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 15 mM glucose, 50 μM DL-AP5, 10 μM CNQX adjusted to pH 7.4). Asynchronous release events were recorded using the same solutions, except that 3 mM Sr2+ and 0 mM CaCl2 were used in the bath. Fluorescence was excited with a Lambda XL lamp (Sutter Instrument) through a 100 × 1.45 NA oil-immersion objective and captured with a cooled CMOS camera (Hamamatsu). With this configuration, the effective pixel size was 65 nm. The focal plane was continuously monitored, and focal drift was automatically adjusted with ~10 nm accuracy by an automated feedback focus control system (Ludl Electronics). Field stimulation was performed by using a pair of platinum electrodes and controlled by the software via Master-9 stimulus generator (AMPI). Images were acquired using an acquisition time of 40 ms, one 45 ms before stimulation and one coincidently with stimulation (0 ms delay).
 
-## Large-area scanning electron microscopy (LaSEM)
+### Large-area scanning electron microscopy (LaSEM)
 
 The LASEM methods and data used were published previously (Maschi et al., 2018). Briefly, cells were grown on 12 mm glass coverslips, were aspirated of media and were fixed in a solution containing 2.5% glutaraldehyde and 2% paraformaldehyde in 0.15 M cacodylate buffer with 2 mM CaCl2 (pH 7.4) that had been warmed to 37 °C for one hour. The samples were then stained according the methods described by Deerinck et al. (2010). Large areas (~330 × 330 µm) were then imaged at high resolution in a FE-SEM (Zeiss Merlin, Oberkochen, Germany) using the ATLAS (Fibics, Ottowa, Canada) scan engine to tile large regions of interest. High-resolution tiles were captured at 16,384 × 16,384 pixels at 5 nm/pixel with a 5 µs dwell time and line average of 2. The SEM was operated at 8 KeV and 900 pA using the solid-state backscatter detector. Tiles were aligned and exported using ATLAS 5.
 
-## Image and data analysis
+### Image and data analysis
 
-## Event detection and localization
+#### Event detection and localization
 
 The fusion event localization at subpixel resolution was performed as previously described (Maschi and Klyachko, 2017) using Matlab and the uTrack software package, which was kindly made available by Dr Gaudenz Danuser's lab (Aguet et al., 2013; Jaqaman et al., 2008). The input parameters for the PSF were determined using stationary green fluorescent 40 nm beads.
 
@@ -145,34 +765,34 @@ Localization of resolved MVR events (Figures 1, 3 and 4) was performed using a m
 
 Unresolved MVR events (Figure 2) were identified on the basis of the event amplitude. The single event amplitude and its variability were determined for each bouton individually. Photobleaching was accounted for by fitting the event intensity changes over time. The threshold for MVR event detection was set at two standard deviations above the mean single event amplitude determined individually for each bouton. Localization of unresolved MVR events was determined using an asymmetrical Gaussian model fit that was based on the minimization of the residuals.
 
-## Definition of release sites
+#### Definition of release sites
 
 Release sites were defined using a hierarchical clustering algorithm based on built-in functions in Matlab as described previously (Maschi and Klyachko, 2017; Maschi et al., 2018; Wang et al., 2016). We have previously compared the results of this clustering analysis, obtained with the experimentally observed distribution of fusion events, with the the same number of simulated events distributed randomly across the same AZs (Maschi and Klyachko, 2017). We found that randomly distributed release events result in a very different pattern of clustering than the experimentally observed events, and do not reproduce the observed features of real release event clusters. The observed clusters thus do not arise from a random distribution of release events, but rather represent a set of defined and repeatedly reused release sites within the AZs.
 
-## Release site release probability
+#### Release site release probability
 
 The release probability of individual release sites was calculated based on the number of release events detected per release site, divided by the duration of the observation period. UVR and MVR events were counted equivalently in this analysis, with each of the two release events comprising an MVR counted independently as a single release event at the two release sites that harbored them.
 
-## AZ dimensions and center
+#### AZ dimensions and center
 
 The AZ size was approximated on the basis of the convex hull encompassing all vesicle fusion events in a given bouton. This measurement is in a close agreement with the ultrastructural measurements of AZ dimensions (Maschi and Klyachko, 2017). AZ center was defined as the mean position of all fusion events in a given bouton.
 
-## Event proximity analysis
+#### Event proximity analysis
 
 To determine the spatial overlap of MVR and UVR events, a proximity analysis was performed in which overlap was defined as having at least one UVR event occurring within 25 nm of an MVR event during the observation period.
 
-## Synapse identification and analysis of vesicle diameter in LaSEM data
+#### Synapse identification and analysis of vesicle diameter in LaSEM data
 
 Three characteristic features were used for synapse identification: the presence of a synaptic vesicle cluster, the postsynaptic density, and the uniform gap between pre- and postsynaptic membranes. Distance to the AZ center was determined from the projection of the vesicle center position to the AZ plane.
 
-## Fit regression models
+#### Fit regression models
 
 Nonlinear and linear fit regression models were generated using built-in functions in Matlab.
 
-## Data inclusion and exclusion criteria
+### Data inclusion and exclusion criteria
 
 A minimum of five detected release events per bouton was required for all analyses.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed in Matlab. Statistical significance was determined using two-sample two-tailed t-test, paired t-test, Kolmogorov-Smirnov (K-S) test, one-way analysis of covariance (ANOCOVA) or chi-square test, where appropriate. The number of experiments reported reflects the number of different cell cultures tested. The value of N is provided in the corresponding figure legends and in Table 1. The statistical tests used to measure significance are indicated in each figure legend along with the corresponding significance level (p value). Data are reported as mean ± SEM and p<0.05 was considered statistically significant. Analysis of the samples was not blinded to condition. Randomization and sample size determination strategies are not applicable to this study and were not performed.

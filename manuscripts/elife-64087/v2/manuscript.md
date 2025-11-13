@@ -19,11 +19,23 @@
 
 ## Abstract
 
-Voltage-gated calcium channels control key functions of excitable cells, like synaptic transmission in neurons and the contraction of heart and skeletal muscles. To accomplish such diverse functions, different calcium channels activate at different voltages and with distinct kinetics. To identify the molecular mechanisms governing specific voltage sensing properties, we combined structure modeling, mutagenesis, and electrophysiology to analyze the structures, free energy, and transition kinetics of the activated and resting states of two functionally distinct voltage sensing domains (VSDs) of the eukaryotic calcium channel Ca V 1.1. Both VSDs displayed the typical features of the sliding helix model; however, they greatly differed in ion-pair formation of the outer gating charges. Specifically, stabilization of the activated state enhanced the voltage dependence of activation, while stabilization of resting states slowed the kinetics. This mechanism provides a mechanistic model explaining how specific ion-pair formation in separate VSDs can realize the characteristic gating properties of voltage-gated cation channels.
+Voltage-gated calcium channels control key functions of excitable cells, like synaptic transmission in neurons and the contraction of heart and skeletal muscles. To accomplish such diverse functions, different calcium channels activate at different voltages and with distinct kinetics. To identify the molecular mechanisms governing specific voltage sensing properties, we combined structure modeling, mutagenesis, and electrophysiology to analyze the structures, free energy, and transition kinetics of the activated and resting states of two functionally distinct voltage sensing domains (VSDs) of the eukaryotic calcium channel CaV1.1. Both VSDs displayed the typical features of the sliding helix model; however, they greatly differed in ion-pair formation of the outer gating charges. Specifically, stabilization of the activated state enhanced the voltage dependence of activation, while stabilization of resting states slowed the kinetics. This mechanism provides a mechanistic model explaining how specific ion-pair formation in separate VSDs can realize the characteristic gating properties of voltage-gated cation channels.
 
 ## Introduction
 
 Voltage-gated calcium channels (CaV) translate membrane depolarization into calcium influx. Thus, they contribute to cellular excitability and they couple electrical activity to fundamental cell functions like contraction of heart and skeletal muscle, secretion of neurotransmitters and hormones, and the regulation of gene expression. Together with voltage-gated sodium channels (NaV), CaVs form a structurally related ion channel superfamily with a fourfold symmetry (Figure 1A). Their pore-forming α1 subunits are composed of four homologous but non-identical domains (repeats I-IV), each containing six transmembrane helices (S1-S6). The S5 and S6 helices plus the connecting P loop of all four repeats form the central channel pore with the selectivity filter and the activation gate (Catterall et al., 2020). Helices S1-S4 of each repeat form separate voltage sensing domains (VSDs). The S4 helix contains positively charged residues (termed gating charges) in every third position, and its movement across the electric field upon membrane depolarization is thought to initiate the conformational change resulting in channel opening (Catterall et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain structure of eukaryotic CaV channels. (B) Structure model of the human CaV1.1 α1 subunit (top view; color code as in A) refined with molecular dynamics (MD) simulation in a membrane environment (see 'Materials and methods') based on the 3.6 Å structure of rabbit CaV1.1 (Pan et al., 2018; Wu et al., 2016). (C) Sequence alignment of the S4 helices of each CaV1.1 voltage sensing domain (VSD) compared to the homo-tetrameric NaVAb; gating charges (R, K) are indicated in blue. (D) Structure of a single repeat (IV) within the space-filling model of CaV1.1. (E) Structural overlay of NaVAb with VSD IV of CaV1.1. (F) Cylindrical representation of the VSD structure showing the positive gating charges in S4 (blue) and countercharges (red) of the intra- and extracellular negative clusters (INC, ENC) in S1, S2, and S3. The phenylalanine in S2, marking the hydrophobic constriction site (HCS), is indicated in green. Ribbon models of the four VSDs of CaV1.1 in the up-state, showing the side chains of the S4 gating charges (R, light blue; K, dark blue) and their putative ion-pair partners (red). Note that the numbers and positions of the ion-pair interactions in the ENC differ between the VSDs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Comparison of the individual four VSDs of CaV1.1 with the VSD of NaVAb (Payandeh et al., 2011) illustrates the overall similarity with the ancestral channel. At the same time highlights the structural differences between the CaV1.1 VSDs. NaVAb, orange; CaV1.1 VSD are color-coded according to Figure 1A; exon 29 in the S3-S4 linker of VSD IVa is shown in yellow.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Structural overlay of all four VSDs with each other to visualize the structural differences between each VSD. The first mentioned of each pair is shown in turquoise, the second in gray; exon 29 in the IVS3-S4 loop is shown in yellow. The root-mean-square deviation (RMSD) values calculated of the VSDs without loops indicate the similarities of VSD I with VSD III, and of VSD II with VSD IV. Insertion of exon 29 in VSD IVa decreases its structural similarity with the other VSDs.
 
 Several high-resolution structures of prokaryotic and eukaryotic NaV channels have been solved (Lenaeus et al., 2017; Pan et al., 2018; Payandeh et al., 2011; Yan et al., 2017; Zhang et al., 2012). Recent advances in cryo-electron microscopy (cryo-EM) enabled the determination of the structure of the voltage-gated calcium channel CaV1.1 at 3.6 Å resolution, displaying a closed pore and the VSDs in the activated up-state (Wu et al., 2016; Wu et al., 2015). Very recently, three cryo-EM structures of homo-tetrameric sodium channels experimentally locked in resting (or VSD-down) states have been reported (Wisedchaisri et al., 2021; Wisedchaisri et al., 2019; Xu et al., 2019). However, up to now the resting states of eukaryotic CaV and NaV channels remained inaccessible to experimental structure determination. Nevertheless, many years of experimental work and structure modeling provide ample support for the sliding helix model of the voltage sensor action (Catterall et al., 2017; Yarov-Yarovoy et al., 2012). According to this model, the negative membrane potential at rest pulls the positively charged S4 helices down toward the cytoplasmic side of the membrane holding the channel gate closed. The reversal of the electric field upon membrane depolarization causes the outward displacement of the S4 helix by about 10 Å. The movement of two to three positive gating charges through the hydrophobic constriction site (HCS) in the center of the VSD is facilitated by the transient formation of ion-pair interactions with negative countercharges in the other helices of the VSD (Catterall et al., 2017).
 
@@ -33,7 +45,7 @@ Here, we applied molecular dynamics (MD) simulation and Markov state modeling (M
 
 ## Results
 
-## The structure of CaV1.1 reveals differences between VSDs
+### The structure of CaV1.1 reveals differences between VSDs
 
 Based on the cryo-EM structure of CaV1.1 (Wu et al., 2016; Wu et al., 2015), we generated a new structural model to study the molecular mechanisms determining the specific gating properties of this voltage-gated calcium channel. To this end, we used the Rosetta computational modeling software (Bender et al., 2016; Rohl et al., 2004) to build a homology model of the human eukaryotic CaV1.1 and included all missing loops and modeled both splice variants with and without exon 29 (Tuluc et al., 2009). The resulting models were equilibrated and simulated at 300 K in the membrane environment to identify favorable side-chain orientations and to relax the protein.
 
@@ -41,7 +53,7 @@ CaV1.1 is a pseudo-tetrameric channel with a domain-swapped arrangement in which
 
 As predicted by the sliding helix model (Catterall et al., 2017), the gating charges form ion pairs with countercharges of the extracellular negative cluster (ENC) and intracellular negative cluster (INC). The interactions of the inner gating charges with countercharges of the INC are identical in the four VSDs of CaV1.1, representing the typical arrangement of the highly conserved charge transfer center (Tao et al., 2010). However, between the VSDs, the outer ion-pair interactions differ. Overall, the four VSDs of CaV1.1 can be grouped into two classes – VSDs I and III, and VSDs II and IV, respectively – each with the same number and position of countercharges in the ENC. While in VSDs I and III, the gating charges form ion pairs with two glutamate residues in the S2 helix, VSDs II and IV gating charges interact with one negative countercharge each in the S2 and S3 helices. Also, in VSDs I and III, the additional outermost gating charges are lysines (K0), whereas in VSDs II and IV, the innermost gating charge is a lysine residue (K4) instead of an arginine (R4) in VSDs I and III. Note that lysine forms only a single interaction with a negative countercharge in the INC as opposed to two formed by arginine. Together these differences in the ion pairs formed by the gating charges indicate that the activated state of VSDs I and III is considerably more stabilized than that of VSDs II and IV.
 
-## MD simulation and MSM of VSD I in activated and resting states
+### MD simulation and MSM of VSD I in activated and resting states
 
 The interactions between gating charges and their ion-pair partners observed in the structure model based on available cryo-EM structures of CaV1.1 merely represent a snapshot depicting the endpoint of the voltage sensing process. However, because high-resolution structures of resting states of CaV channels are lacking, the molecular details of the steps leading up to VSD activation are still elusive. Exploiting the potential of structure modeling to fill this gap (Jensen et al., 2012; Yarov-Yarovoy et al., 2012), we applied MD simulation and MSM of individual VSDs to predict the structures, kinetics, and energy levels of resting states. To overcome the high energy barriers and the timescale limitations of MD simulations in the absence of the membrane potential, we used Umbrella sampling. This enhanced sampling technique explores the conformational transitions of a VSD as the positively charged S4 helix moves along the likely pathway toward the cytoplasmic side of the VSD, and thus create the seeding points for subsequent MD simulations. For this purpose, the obtained structures were clustered based on a geometrical RMSD criterion resulting in about 50 cluster representatives. These were simulated for 100 ns each (aggregated simulation time close to 5 µs) to obtain unbiased trajectories, which were then projected in a time-lagged independent component analysis (tICA), representing the slowest reaction coordinates. Finally, the kinetic coordinate system provided by the tICA allows calculation of thermodynamics and kinetics by an MSM (Figure 2—figure supplement 1).
 
@@ -49,13 +61,37 @@ Using this approach, we modeled the resting state structures of CaV1.1 VSDs I an
 
 The free energy maps calculated for the MD simulation of VSD I, VSD IVe, and VSD IVa each comprised four energy minima (Figure 2A,E,I) and the corresponding structures resembled the activated and three resting states, as predicted by the sliding helix model. Across these states, the S4 helix of VSD I described a stepwise downward movement of 15.3 Å, corresponding to three helical turns (Figure 2B,C). In the activated state, the gating charges K0, R1, R2, and R3 were above phenylalanine (F97) of the HCS, and only R4 was below it. In the deepest resting state 1, only K0 and R1 were positioned above the HCS, while R2, R3, and R4 were located below it. In all four states, IS4 adopted a shifting stretch of 310 helical conformation (Figure 2—figure supplement 2), so that the side chains of the gating charges all pointed toward the center of the VSD. As IS4 moved from the activated state to resting state 1, R4, R3, R2, and R1 sequentially formed ion pairs with countercharges of the INC (E100 in IS2 and D126 in IS3), which are part of the highly conserved charge transfer center of voltage-gated cation channels (Figure 2B; Figure 3A, Tao et al., 2010). In all states also the gating charges above and below the HCS formed extensive ionic bonds with negative countercharges in IS1 and IS2. In the resting states 2 and 3 and in the activated state R1, R2, and R3 formed ion bonds with E87 and E90, plus in resting state 3 and the activated state K0 formed an additional ion bond with E76 in the IS1-S2 loop. In resting states 1 and 2, gating charges R3 and R4 formed ion bonds with E49 and E54 at the cytoplasmic end of IS1. This multitude of ionic interactions stabilizes each of the consecutive states and thus strictly delineates the path of IS4 through VSD I upon channel activation and deactivation. Note that in addition to the indicated ionic bonds, the gating charges form transient hydrogen bonds and hydrophobic and polar interactions with several other putative interaction partners, all of which might contribute to the movement of S4 across the membrane electrical field, but are not subject of the present study.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-v2.jpg)
+
+**Figure 2.:** (A,E,I) The free energy surfaces of 5.0 µs trajectories of VSD I (A), VSD IV of CaV1.1e (E), and CaV1.1a including exon 29 (I) reconstructed in the time-lagged independent component analysis (tICA) coordinate space resulted in four macrostates. (B,F,J) Representative structures of each VSD in the four macrostates correspond to three resting and the activated states. The S4 gating charges (blue) show a sequential movement relative to the phenylalanine (green) in the hydrophobic constriction site (HCS) and stabilizing interactions with ion-pair partners (red) and H-bond donors/acceptors (pink) in the intracellular negative cluster (INC) and extracellular negative cluster (ENC). Transition kinetics (in µs) were calculated using a Markov state model. (C,G,K) Overlays of the activated (magenta) and resting state 1 (cyan) illustrating the maximum displacement of S4 during activation. (D,H,L) Schematic 1D representations of the free energy surface of VSD I (D), VSD IV of CaV1.1e (H), and CaV1.1a (L), with energy barriers calculated using transition state theory at 0 mV favoring the activated state. Gray trace in (H) shows free energy surface of (D) for comparison; gray trace in (L) shows free energy surface of (H) for comparison. Because in skeletal muscle cells, VSDs II and III probably control excitation-contraction coupling (Flucher, 2020; Flucher, 2016), and as their contribution to channel gating is less well understood, we did not include them in the present study.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (1) We applied Umbrella sampling as enhanced sampling technique to overcome the timescale limitations of classical molecular dynamics with the aim of generating structurally diverse starting points for further molecular dynamics (MD) simulations along the putative activation pathway. (2) The resulting Umbrella trajectories were clustered geometrically resulting in the distinct starting structures for subsequent classical MD simulations. (3) The obtained trajectories (aggregated simulation time close to 5 µs) were used to construct a tICA (time-lagged independent component analysis). This kinetic coordinate system represents the basis for the MSM. The symbolic structures in the center show the movements represented by TIC1 and TIC2. (4) To allow subsequent MSM, the so-called microstates have to be identified by applying k-means clustering. (5) These microstates are coarse-grained into macrostates by performing spectral clustering. (6) The free energy surface and the transition times are obtained by including the resulting weights and probabilities of the MSM. Note that the figures represent schematic examples and not data from the present modeling.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** As predicted by the sliding helix model ,the S4 helices of CaV1.1 VSD I (left) and VSD IV (right) assume a 310 helical conformation, thus aligning consecutive gating charges in one direction. The length and position of this 310 helical stretch differ between the two VSDs and between the activated and resting states.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Implied timescales as function of lag time for each system (top). A lag time of 100 steps has been selected to build the MSM. The Chapman-Kolmogorov tests (bottom) for the respective MSM of each voltage sensing domain (VSD) demonstrate the reliability of our MSM. The individual panels of the Chapman-Kolmogorov tests show transitions between two states as labeled respectively. The x-axis denotes multiples of the lag time and the y-axis represents the probability. The plots show a comparison between MSMs estimated at higher lag times and depict extrapolations of the MSMs at a single lag time.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Comparison of the cryo-electron microscopy (cryo-EM) structure of VSD II of NaV1.7/NaVAb stabilized in a resting state by toxin binding (PDB accession code 6N4R) (Xu et al., 2019) (green), with the resting states of CaV1.1 VSD I obtained by our molecular dynamics (MD) simulation. We observed the highest structural similarity of the VSD II of NaV1.7/NaVAb with our resting state 2 (gray) (Cα root-mean-square deviation [RMSD] of 1.9 Å).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Comparison of the cryo-electron microscopy (cryo-EM) structure of VSD of NaVAb stabilized in a resting state by toxin binding (PDB accession code 6P6W) (Wisedchaisri et al., 2019) (cyan), with the resting states of CaV1.1 VSD IV obtained by our molecular dynamics (MD) simulation. We observed the highest structural similarity of the NaVAb VSD with our resting state 1 (gray) (Cα root-mean-square deviation [RMSD] of 1.7 Å).
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig3-v2.jpg)
 
-**Figure 3.:** V1.1 voltage sensing domains (VSDs) I and IV gating charges in activated and resting states.(A) Tabular overview of ion-pair interactions of the positive gating charges (blue) with countercharges (red) observed in the activated and three resting states of VSDs I, IVa, and IVe. Fields shaded in green show the sequential interaction with the ion-pair partners of the intracellular negative cluster (INC). In VSD I this transition through the charge transfer center (CTC) involves R4, R3, R2, R1, whereas in VSD IV only R4 and R3 participate in equivalent interactions. Ion-pair formation with the extracellular negative cluster (ENC) (pink shading) of VSD I involved three gating charges (R3, R2, R1) in the activated and intermediate resting states 2 and 3. In VSD IV ion-pair formation with the ENC is limited to the activated state, and it is further reduced by inclusion of exon 29 in VSD IVa. (B) Structure overlay of VSD I, VSD IVa (including exon 29; yellow), and VSD IVe in the activated state. (C) Schematic representation of the three VSDs indicating similar ion-pair formation in the INC, representing the conserved CTC (dark green), but highly distinct ion-pair formation in the ENC (light green) of the three analyzed VSDs.
+**Figure 3.:** (A) Tabular overview of ion-pair interactions of the positive gating charges (blue) with countercharges (red) observed in the activated and three resting states of VSDs I, IVa, and IVe. Fields shaded in green show the sequential interaction with the ion-pair partners of the intracellular negative cluster (INC). In VSD I this transition through the charge transfer center (CTC) involves R4, R3, R2, R1, whereas in VSD IV only R4 and R3 participate in equivalent interactions. Ion-pair formation with the extracellular negative cluster (ENC) (pink shading) of VSD I involved three gating charges (R3, R2, R1) in the activated and intermediate resting states 2 and 3. In VSD IV ion-pair formation with the ENC is limited to the activated state, and it is further reduced by inclusion of exon 29 in VSD IVa. (B) Structure overlay of VSD I, VSD IVa (including exon 29; yellow), and VSD IVe in the activated state. (C) Schematic representation of the three VSDs indicating similar ion-pair formation in the INC, representing the conserved CTC (dark green), but highly distinct ion-pair formation in the ENC (light green) of the three analyzed VSDs.
 
 Next, we used MSM of the MD simulation data to estimate transition times between the resting and activated states during the activating and deactivating VSD motion (Figure 2B,D; Figure 2—figure supplement 3; Supplementary file 1). The conformational transitions between the different activation states of CaV1.1 VSD I occurred in the high µs to low ms timescale. Because the values calculated in our model are obtained in the absence of the force provided by changes in the electric field, the absolute transition times derived from MSM may not correspond to the actual transition times of the VSD upon physiological activation and deactivation. Nevertheless, relative differences between transition times provide meaningful information when compared between different VSDs or functionally different mutants (see below). Relying on a simple transition state theory model (Laidler and King, 1983), we generated a schematic 1D representation of the high-dimensional free energy surface (Figure 2D), allowing an intuitive interpretation of free energy levels of the states and ΔG of the energy barriers. The free energy of the activated state was the lowest and transitions in the activating direction were two to four times faster than in the deactivating direction, consistent with the fact that our MD simulations were performed on structure models at a depolarized membrane (0 mV), which favors the activated state of the VSDs. The energy barriers (ΔG) for the three state transitions of VSD I in the activating direction were between 48 and 51 kJ/mol.
 
-## MD simulation and MSM of VSD IV in activated and resting states
+### MD simulation and MSM of VSD IV in activated and resting states
 
 How do the molecular interactions during VSD activation and deactivation and the kinetics of state transition differ between VSD I and VSD IV to explain their distinct functions in determining kinetics and voltage dependence of activation, respectively? (Tuluc et al., 2009) The basic structural features of the activated and resting states of VSD IV corresponded to those of VSD I, except that in VSD IV the translocation of S4 across the HCS covered a shorter distance and involved fewer ion-pair interactions (Figure 2F,G,J,K). Upon the deactivating motion of the S4 helix of VSD IV, only a single gating charge (R3) fully translocated from a position above the HCS (F1161) to below it. Accordingly, the total vertical displacement in the two splice variants of IVS4 was 12.9 Å in VSD IVe and only 10.2 Å in VSD IVa, corresponding to roughly two helical turns.
 
@@ -65,15 +101,43 @@ Can these striking structural differences explain the kinetic differences confer
 
 The direct comparison of VSD I and the two splice variants of VSD IV in the activated and resting states demonstrates striking differences between VSDs I and IV in the extent of ion-pair formation in the ENC (Figure 3). As shown above, in VSD IV these involve interaction of R1 and R2 with the ion-pair partner D1196 in IVS3 formed in the activated state that is subject to modulation by alternative splicing of exon 29. VSD I lacks an analogous ion-pair partner in the corresponding position of IS3. Instead IS4 displays extensive ion pairs with countercharges (E76, E87, E90) in IS2 that are sequentially formed by gating charges R3, R2, R1, and K0 in the activated and the intermediate resting states 2 and 3 (Video 1). This indicates that in VSDs I and IV, the gating charges above the HCS utilize structurally distinct ion-pair partners to stabilize the voltage sensor either only in the activated state (VSD IV) or in the activated and resting states (VSD I). The additionally formed ion pairs in the resting states of VSD I are paralleled by a remarkable increase in the energy barriers and the state transition times, suggesting that the number and strength of interactions between the gating charges and the ENC transiently formed in the resting states determine the slow activation kinetics of VSD I.
 
-## VSD I ion pairs differentially regulate gating properties
+![Video 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-video1.mp4.jpg)
+
+### VSD I ion pairs differentially regulate gating properties
 
 To experimentally test this hypothesis, we simultaneously mutated both countercharges, E87 and E90, to alanine (E87A/E90A) in the rabbit GFP-CaV1.1e (Tanabe et al., 1988; Tuluc et al., 2009), expressed them in their native environment in dysgenic myotubes and examined the effects on the gating properties of its calcium currents (Figure 4A). The structure of the VSDs in general and in particular the studied residues are highly conserved in CaV channels (Wu et al., 2016). Immunofluorescence labeling demonstrated that wildtype (WT) and mutant channels were equally expressed and targeted to triad junctions in the myotubes (Figure 4—figure supplement 1). In contrast, their gating properties differed significantly (Figure 4B–I; Supplementary file 1). As hypothesized, activation kinetics was more than four times faster in the mutant compared to WT (Figure 4D,E), thus identifying E87 and/or E90 as critical determinants of the slow activation kinetics of CaV1.1. Interestingly, also the voltage dependence of activation was right-shifted to more depolarizing potentials by 18.2 mV and the peak current density was somewhat reduced (Figure 4F–I).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic model of VSD I in the activated and resting states, showing the putative loss of interactions between gating charges and countercharges E87 and E90 upon their mutation to alanine. (B–I) In CaV1.1e the double mutation E87A/E90A (orange) accelerated activation kinetics and right-shifted the voltage dependence of activation, compared to wildtype (WT) CaV1.1e (red). (B,C) Representative current traces at Vmax of WT CaV1.1e (20 mV) and CaV1.1e E87A/E90A (40 mV), respectively, and normalized currents at Vmax (D). (E) Scatter plot of the time to peak; (F) current-voltage relationship; (G) scatterplot of maximum current density (p=0.03); (H) voltage dependence of activation; (I) scatter plot of the voltage at half-maximal activation (V½). Mean ± SEM; p-values calculated with Student’s t-test, ***p<0.00001. (J,K) The time-lagged independent component analysis (tICA) free energy surface of CaV1.1e E87A/E90A displays three macrostates with structures corresponding to the activated state and resting states 1 and 3, and transition kinetics in the low μs timescale. (L) The 1D energy plot shows substantially lower calculated energy barriers between the states of the double mutant (black) compared to the WT VSD I (gray).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Dysgenic (CaV1.1-null) myotubes were transfected with the indicated GFP-CaV1.1e constructs and myotubes were fixed and double immunofluorescence labeled with anti-GFP (to localize the CaV1.1 construct) and anti-RyR1 (as a triad marker). Colocalization of GFP-CaV1.1e constructs with RyR1 in clusters indicates its normal incorporation into triadic calcium channel complexes of skeletal myotubes. All three used GFP-CaV1.1e mutants (E87A/E90A, E87A, and E90A) showed similar expression and distribution as the WT GFP-CaV1.1e. Scale bars, 10 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Scatter plots of the time constant of activation, when fitted to a bi-exponential function (fast and slow component) or to a mono-exponential function (mono). (A) This scatter plot shows that, when countercharges E87 and E90 are simultaneously neutralized, kinetics of activation becomes best described by a mono-exponential function due to the loss of the slow component; this time constant of E87A/E90A is faster than that of the mono-exponential fit of CaV1.1e wildtype (WT) (WT mono, red; E87A/E90A mono, orange; p=0.0003 calculated with the Student’s t-test) and even faster than WT fast (maroon) when CaV1.1e WT activation is fitted to a bi-exponential function. (B) The scatter plot for E87A shows that, when only this countercharge is neutralized, activation is still best fitted to a bi-exponential function as in CaV1.1e WT. No significant differences were found between WT slow vs. E87A slow (p=0.24, Student’s t-test) and WT fast vs. E87A fast (p=0.20, Student’s t-test). When activation is forced to a mono-exponential function, no differences were found between WT mono and E87A mono (p=0.84, Student’s t-test). (C) When countercharge E90 alone is neutralized, kinetics of activation is best described by a mono-exponential function due to a complete loss of the slow component; the time constant of E90A is faster than the mono-exponential fit of CaV1.1e WT (WT mono, red; E90A mono, purple; p=0.003) and even faster than WT fast (maroon) when CaV1.1e WT activation is fitted to a bi-exponential function. (D–F) Bar graphs show the current contribution of the slow vs. fast component of activation, when fitted best to a bi-exponential function (CaV1.1e WT in D, E, and F and CaV1.1e E87A in E). (D) CaV1.1e WT is best fitted to a bi-exponential function with a 31.9:68.1% ratio of fast:slow. CaV1.1e E87A/E90A can only be described by a mono-exponential function, indicating a 100% contribution of the fast component. (E) Activation of both CaV1.1e WT and E87A are best described bi-exponentially, with a somewhat bigger current contribution of the slow component (Aslow) in the mutant (Aslow WT vs. E87A is 63.8% vs. 80.8%, p=0.052 calculated with the Student’s t-test). (F) E90A can only be described by a mono-exponential function, indicating a loss of the slow component. (G–I) Scatter plots showing the fractional inactivation at the end of the 500 ms test pulse. None of the mutations affected the inactivation properties of CaV1.1 (p-values calculated with the Student’s t-test are 0.31 in G, 0.16 in H, and 0.10 in I, see Supplementary file 1).
+
 If the comparably long transition times for WT VSD I determined by MSM related to the experimentally determined activation kinetics, then MSM of the E87A/E90A mutant channel should result in rapid transition times. This was indeed the case! The transition times of VSD I on activation and deactivation of the E87A/E90A mutant were more than 50 times faster than those of the WT VSD (Figure 4J–L; Figure 2—figure supplement 3, Figure 4—figure supplement 2, Supplementary file 1; Videos 1 and 2). This supports our interpretation of the role of the two countercharges in determining the gating properties, and also substantiates the reliability and predictive value of the kinetic analysis of our MD simulations. Yet, it is worth noting that the transition kinetics derived from our MD simulation relate to the activation of an isolated VSD, whereas kinetics and voltage dependence of channel activation reflect the concerted action of all four VSDs and its mechanical transduction to the channel gate. Consequently, changes in activation properties of a single VSD will only result in similar changes of current activation, when this VSD is obligatory and rate-limiting for gating, or, in an allosteric model, according to its relative contribution to the gating process. This limitation may also account for the different magnitudes of the effects (50-fold vs. 5-fold) on the activation kinetics of the E87A/E90A mutant observed in MSM and current recordings.
+
+![Video 2.](https://cdn.elifesciences.org/articles/64087/elife-64087-video2.mp4.jpg)
 
 As E87 and/or E90 govern the kinetics as well as voltage dependence of CaV1.1 activation, we wondered whether these two properties are mechanistically linked to each other or separable? Our structural model predicts that E87 interacts with R1 in resting state 3, and with R1 and R2 in the activated state (Figure 5A), which is consistent with a prime role in stabilizing the activated state. In contrast, E90 forms consecutive interactions with R3, R2, and R1 in resting state 2, resting state 3, and the activated state, respectively (Figure 5K), thus stabilizing VSD I both in its resting and activated states. To examine the individual contributions of E87 and E90 to shaping the gating properties, we generated constructs with individual E87A and E90A substitutions. The two mutations showed differential effects on the gating properties of CaV1.1 currents. The E87A mutation right-shifted the voltage dependence of activation by 12.3 mV, while activation kinetics were not altered (Figure 5B–G). In contrast, the E90A mutation accelerated the activation kinetics four- to fivefold and showed a 7.7 mV right-shift of voltage dependence (Figure 5L–Q).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig5-v2.jpg)
+
+**Figure 5.:** (A,K) Schematic of VSD I in activated and resting states, showing the loss of ionic interactions upon mutation of E87A or E90A. (B–G) In CaV1.1e E87A right-shifted voltage dependence of activation without affecting kinetics (wildtype [red], E87A [lime]). (L–Q) The E90A mutation accelerated kinetics >4-fold and right-shifted voltage dependence of activation (wildtype [red], E87A [purple]). (B,L) Normalized representative currents show acceleration of activation in E90A (L) but not in E87A (B). (C,M) Time to peak (p=0.47 in C, p=0.00017 in M); (D,N) current-voltage relationship; (E,O) maximum current density (p=0.08 in E, p=0.04 in O); (F,P) voltage dependence of activation; (G,Q) voltage at half-maximal activation (V½) (p=0.000014 in G, p=0.008 in Q). Mean ± SEM; p-values calculated with Student’s t-test. (H–J) The time-lagged independent component analysis (tICA) free energy surface and schematic 1D representation of E87A show four macrostates corresponding to resting states 1, 2, 3 and the activated state with energy barriers similar to wildtype (gray) and transition kinetics in the higher μs timescale. (R–T) E90A shows three macrostates corresponding to the resting states 1 and 3 and the activated state, reduced energy barriers, and transition kinetics in the low μs timescale.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64087/elife-64087-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Voltage clamp protocol used to examine deactivation kinetics (top) and representative current traces (bottom). Upon repolarization from +60 mV to varying negative potentials (at 10 mV increments), activated channels conduct a transient inward calcium current (downward spike) before they deactivate and close the channel pore. The decay of this so-called tail current was fitted with a mono-exponential function to determine the time constants of deactivation. (B) The time constants of deactivation are equally fast in CaV1.1e WT, E90A, and E87A (in contrast to their distinct activation kinetics; cf. Figure 5—figure supplement 2). At −20 mV significant kinetic differences start to occur, because at such weak repolarization part of the channels fail to deactivate and thus contaminate the tail current with a slowly inactivating current component (p=0.019; two-way repeated measures ANOVA and Holm-Sidak post hoc test). (C) Simplified model explaining slow activation and fast deactivation of the channel. We assume that at least two VSDs need to be in the up-state for the channel gate to open (at +60 mV). In response to the depolarizing voltage step, the slow VSD (orange; VSD I in CaV1.1) will be rate-limiting and thus endow the channel with slow activation kinetics. On repolarization, the rapid downward movement of another VSD (green) will close the channel gate with fast deactivation kinetics, thus masking the continuing downward movement of the slow VSD.
+
 Again, MD simulation and MSM analysis reflected these differential functional effects. In accordance with its effect on activation kinetics, the E90A mutation, but not E87A, showed greatly accelerated transition times and reduced energy barriers between the resting and activated states (Figure 5H–J and R–T). Furthermore, the free energy maps of all three mutations showed shallower energy wells in the activated states, consistent with their reduced stabilization and their right-shifted voltage dependence of current activation. Also, compared to WT VSD I, the three mutants displayed a decreased drop of the energy minima (ΔG) from resting state 3 to the activated state (Figure 4L and Figure 5J,T; Figure 4—figure supplement 2; Supplementary file 1). In the two mutations affecting activation kinetics (E87A/E90A and E90A), resting states 1 and 2 collapsed into a single deep energy well (Figures 4J and 5R), consistent with the notion that in WT VSD I sequential formation of ion-pair interactions between E90 and R1, R2, and R3 is required to stabilize the separate resting states of VSD I, and that the transitions between these states slow down activation kinetics (Videos 1–4; Supplementary file 1). Thus, the structures derived from our simulations provide mechanistic explanations for how CaV channels determine their unique gating properties.
+
+![Video 3.](https://cdn.elifesciences.org/articles/64087/elife-64087-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/64087/elife-64087-video4.mp4.jpg)
 
 Notably, the differences of the transition kinetics observed in the MSM analysis between VSDs I and IV, and between WT VSD I and the E87A and E90A were manifested in the activating and deactivating direction (Figures 2, 4 and 5). However, patch clamp analysis of deactivation kinetics in WT and mutant VSD I did not reflect these differences (Figure 5—figure supplement 1). Upon repolarization to negative membrane potentials, the deactivation time constants of all tested constructs were between 4 and 10 ms and thus near the activation time constants of the fast activating mutants (E87A/E90A and E90A). This is expected considering the distinct dependence of channel activation and deactivation on the actions of multiple VSDs. Upon depolarization, the VSDs need to proceed through all resting states into the activated state before the channel gate will open. Inevitably, the speed of this action is limited by the slowest VSD necessary for channel opening (VSD I in the case of CaV1.1). In contrast, on deactivation the channel gate closes when the first essential VSD transits from the activated state into resting state 2 (Figure 5—figure supplement 1). Principally, this can be any one of the four VSDs. Therefore, channel deactivation will be rapid even if VSD I requires considerably more time to return to its deepest resting state, as predicted by our MSM analysis.
 
@@ -91,11 +155,126 @@ If the outward motion of the S4 helix with the sequential stabilization of the i
 
 ## Materials and methods
 
-## Homology model of the CaV1.1 α1 subunit
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CACNA1S</td>
+      <td>Wu et al., 2016</td>
+      <td>Q13698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (rabbit)</td>
+      <td>CACNA1S</td>
+      <td>Grabner et al., 1998</td>
+      <td>P07293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>GLT, dysgenic skeletal myotubes</td>
+      <td>Powell et al., 1996</td>
+      <td>GLT; mdg/mdg</td>
+      <td>CaV1.1-null</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rabbit)</td>
+      <td>GFP-CaV1.1e (wild type)</td>
+      <td>Tuluc et al., 2009</td>
+      <td></td>
+      <td>CaV1.1- D exon 29</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rabbit)</td>
+      <td>GFP-CaV1.1e -E87A/E90A, -E87A, -E90A</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFP</td>
+      <td>Invitrogen Thermo Fisher</td>
+      <td>A-6455, RRID:AB_221570</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-RyR</td>
+      <td>Invitrogen Thermo Fisher</td>
+      <td>(MA3-925) 34 C RRID: AB_2254138</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AMBER simulation software</td>
+      <td>AmberMD</td>
+      <td>RRID: SCR_014230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AmberTools 19</td>
+      <td>AmberMD</td>
+      <td>RRID: SCR_018497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger</td>
+      <td>RRID: SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampex</td>
+      <td>Clampex</td>
+      <td>Version 10.2 RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit</td>
+      <td>Clampfit</td>
+      <td>Version 10.7 RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SigmaPlot</td>
+      <td>SigmaPlot</td>
+      <td>Version 12.0 RRID:SCR_003210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism</td>
+      <td>Version 7 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Homology model of the CaV1.1 α1 subunit
 
 We predicted the structure of the human WT CaV1.1 α1 subunit by making a homology model based on the cryo-EM structure of the rabbit CaV1.1 α1 subunit with the VSDs in the up-state and the pore closed (Wu et al., 2016). Homology modeling has been performed using Rosetta and MOE (Molecular Operating Environment, version 2018.08, Molecular Computing Group Inc, Montreal, Canada). The sequence identity between the rabbit and the human CaV1.1 α1 subunit is 92.6%, the sequence similarity even 95.6%. Because of the high sequence similarity and identity between the human and the rabbit CaV1.1, we generated only 10 homology models and chose the one model with the best energy score as starting structure for further minimizations, equilibrations, and simulations. The fragment-based cyclic coordinate descent algorithm implemented in Rosetta was used to generate structures for loops that were not resolved in the CaV1.1 α1 subunit template (Supplementary file 1; input scripts – IS1, Canutescu and Dunbrack, 2003; Wang et al., 2007). The C-terminal and N-terminal parts of each domain were capped with acetylamide and N-methylamide to avoid perturbations by free charged functional groups. The structure model was embedded in a plasma membrane consisting of POPC (1-palmitoyl2-oleoyl-sn-glycero-3-phosphocholine) and cholesterol in a 3:1 ratio, using the CHARMM-GUI Membrane Builder (Jo et al., 2009). Water molecules and 0.15 M NaCl were included in the simulation box. Energy minimizations of the WT and the mutants in the membrane environment were performed. The topology was generated with the tleap tool of the AmberTools18 (Case et al., 2018), using force fields for proteins and lipids, ff14SBonlysc and Lipid14 (Dickson et al., 2014), respectively. The WT and mutant structures were heated from 0 to 300 K in two steps, keeping the lipids fixed, and then equilibrated over 1 ns. Then MD simulations were performed for 10 ns, with time steps of 2 fs, at 300 K and in anisotropic pressure scaling conditions as suitable for membrane proteins. Van der Waals and short-range electrostatic interactions were cut off at 10 Å, whereas long-range electrostatics were calculated by the particle mesh Ewald method. A hierarchical clustering was performed on the 10 ns trajectory using an RMSD distance cut-off criterion of 2.5 Å, resulting in three clusters. We chose the highest populated cluster representative for all further steps. PyMOL Molecular Graphics System was used to visualize the key interactions and point out differences in the WT and mutant structures (PyMOL Molecular Graphics System, version 2.0, Schrödinger, LLC).
 
-## Enhanced sampling and MD simulation protocol
+### Enhanced sampling and MD simulation protocol
 
 Because high-resolution structures of resting states of CaV and NaV channels are still lacking, we applied MD simulation and MSM of individual VSD in the context of the whole channel to predict the structures and energy levels of resting states (Chodera and Noé, 2014). The workflow of the modeling procedure is summarized in Figure 2—figure supplement 1. To overcome the high energy barriers and the timescale limitations of MD simulations, we applied Umbrella sampling as enhanced sampling technique. As collective variable we used the distance between the S4 gating charge residues (R1, R2, and R3) and anchor residues at the intracellular helical ends of the VSDs located in S1 and S3, by using a force constant of the harmonic spring potential of 80 kcal/mol*Å2 to pull the S4 helix downward. Starting from the equilibrated structure, the Umbrella windows decreased between a distance of 24.0–14.0 Å using a step size of 1 Å. Each Umbrella window was simulated for 100 ns. After 20 ns of simulation time, the current conformation was extracted and used as starting structures for the next Umbrella window. The force constant of 80 kcal/mol*Å2 was determined to allow a sliding movement of S4 with minimal distortion of the VSDs. Additionally, we applied a weak backbone restraint on the φ torsion angle of the S4 helix of 50 kcal/mol*rad2 to guarantee a minimum of local artifacts of the Umbrella sampling process, that is, loss of secondary structure of the S4 helix. This combination of pulling and torsional restraint was tested and resulted in a sliding movement of the S4 helix without observing unfolding events. Note that the combination of restraints and Umbrella sampling does not result in equilibrium distributions, due to insufficient overlap between the individual sampling windows. Rather the Umbrella sampling was applied to generate conformations along a potential deactivation pathway; however, no states were pre-defined based on the Umbrella sampling. Hence, the Umbrella sampling was used as a mechanical force to pull the S4 helix in the absence of a membrane potential. To obtain the different activation and resting states, we used the resulting pathway of the combined Umbrella sampling trajectories and clustered it using a small distance cutoff criterion to also obtain cluster representatives at transition state regions. Using this procedure, we cannot exclude the possibility of other substantially different pathways (e.g., such that involve helix rotation and formation or breaking of interactions before or after S4 translocation). However, from our calculations we see no indications of the existence of such completely different pathways, which are kinetically accessible. Thus, to reconstruct the transition kinetics and to improve the sampling efficiency, we clustered the Umbrella sampling trajectories applying the program implemented in the AMBER suite cpptraj (Roe and Cheatham, 2013) by using the average linkage hierarchical clustering algorithm with an RMSD distance cutoff criterion of 1.2 Å resulting in a large number of clusters. The choice of the distance cutoff is optimized to obtain a broad cluster distribution within the conformational space of each VSD. The cluster representatives of the different activation states were equilibrated and simulated for 100 ns using the AMBER18 simulation package. For the resulting trajectories, a tICA was performed using the Python library PyEMMA 2 employing a lag time of 10 ns.
 
@@ -107,24 +286,38 @@ To construct coarse-grained models, the PCCA uses the eigenspectrum of a transit
 
 To build the Markov state model, we used the Cα coordinates of the respective S4 transmembrane helix, defined 100 microstates using the k-means clustering algorithm and applied a lag time of 10 ns. The sampling efficiency and the reliability of the Markov state model (e.g., defining optimal feature mappings) can be evaluated with the Chapman-Kolmogorov test (Figure 2—figure supplement 4), by using the variational approach for Markov processes and by taking into account the fraction of states used, as the network states must be fully connected to calculate probabilities of transitions and the relative equilibrium probabilities (Likas et al., 2003). The construction of the MSM allows to quantify thermodynamic and kinetic properties of the resulting ensembles without the intrinsic bias resulting from the seeding process (Figure 2—figure supplement 1). The first stage of the MSM is to discretize the obtained conformational space into the so-called microstates, grouping together conformations of the system that can exchange rapidly (e.g., by k-means clustering). The aim is to construct a kinetically relevant clustering by using a geometric criterion, which still allows a quantitative connection with experiments, due to their high resolution. To identify the kinetic relevance of the clustering, an appropriate lag time, that is, observation interval, has to be chosen. This resulting microstate model can then be used as starting point for a kinetic clustering. To create a more understandable model, a kinetic clustering of a relevant set of microstates to the so-called macrostates can be performed, which are larger aggregates that correspond to the free energy wells (e.g., by PCCA+ clustering). The additional kinetic clustering into macrostates results in a more compact representation than the microstate model and thereby allows an easier processing and understanding of the conformational space. Thus, these qualitative models are ideal for generating new hypotheses, which can then be tested again with higher resolution models and experiments. The MSM was constructed by following the guidelines and input commands from the provided tutorial (http://www.emma-project.org/latest/tutorial.html#jupyter-notebook-tutorials).
 
-To calculate the 1D free energy barriers K‡ we used the obtained mean first passage times k from the MSM and calculated the barriers according to the transition state theory with the following equation:k=kBTh∗K‡
+To calculate the 1D free energy barriers $K^{‡}$ we used the obtained mean first passage times k from the MSM and calculated the barriers according to the transition state theory with the following equation:
 
-## Expression plasmids
+$$
+k=\frac{k_{B}T}{h}∗K^{‡}
+$$
+
+### Expression plasmids
 
 Cloning procedure for GFP-CaV1.1e WT was previously described (Tuluc et al., 2009). For better comparison with the literature, the non-corrected version of CaV1.1 was used. This CaV1.1 construct contains a lysine in position R1 of the VSD I, which results in a 12 mV left-shifted V½ compared to the construct with the evolutionary conserved arginine in position R1 (El Ghaleb et al., 2019). To generate the double mutant GFP-CaV1.1e-E87A/E90A and the single mutants GFP-CaV1.1e-E87A and GFP-CaV1.1e-E90A, aa E87 and E90 were neutralized by SOE-PCR (Supplementary file 5). Briefly, nt 1–1113 of the coding sequence of CaV1.1e (nt 226–1338 of CACNA1S NCBI reference sequence NM_001101720.1) were PCR-amplified with overlapping primers introducing the point mutation A > C at position nt 260 and/or the point mutation A > G at position nt 269 (nt 485 and nt 494, respectively, of NM_001101720.1) in separate PCR reactions using GFP-CaV1.1e-WT as template. The two separate PCR products were then used as templates for a final PCR reaction with flanking primers to connect the nucleotide sequences. This fragment was then SalI/EcoRI digested and cloned into the respective sites of GFP-CaV1.1e WT. Sequence integrity of the newly generated constructs was confirmed by sequencing (MWG Biotech, Martinsried, Germany).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 Myoblasts of the dysgenic (mdg/mdg) cell line GLT were cultured as previously described in Powell et al., 1996. Briefly, cells were plated on 35 mm culture dishes and transfected with 0.5 μg of the desired CaV1 subunit 4 days after plating using FuGENE-HD transfection reagent (Promega). After 7–8 days in culture, transfected myotubes showing GFP fluorescence were analyzed by electrophysiology or fixed for immunolabeling after 9–10 days in culture. The auxiliary calcium channel subunits α2δ−1, β1a, and γ1, along with the STAC3 protein and ryanodine receptor, are endogenously expressed by GLT myotubes, enabling functional membrane incorporation of the channel constructs in the triad junction.
 
-## Immunofluorescence and antibodies
+### Immunofluorescence and antibodies
 
 Paraformaldehyde-fixed cultures were immunolabeled as previously described (Flucher et al., 1994) with rabbit polyclonal anti-GFP (1:10,000; Invitrogen Thermo Fisher) and mouse monoclonal anti-RyR (34 C; 1:500; Invitrogen Thermo Fisher) and fluorescently labeled with goat anti-rabbit Alexa-488 and secondary goat anti-mouse Alexa-594 (1:4000), respectively. Thus, the anti-GFP label and the intrinsic GFP signal were both recorded in the green channel. Samples were observed using a 60×, 1.42 NA objective with a BX53 Olympus microscope and 14-bit images were captured with a cooled charge-coupled device camera (XM10, Olympus) and CellSens Dimension image-processing software (Olympus). Image composites were arranged in Adobe Photoshop CS6 (Adobe Systems Inc) and linear adjustments were performed to correct black level and contrast.
 
-## Electrophysiology and data analysis
+### Electrophysiology and data analysis
 
-Calcium currents were recorded with the whole-cell patch clamp technique in voltage clamp mode using an Axopatch 200A amplifier (Axon Instruments). Patch pipettes (borosilicate glass; Science Products) had resistances between 1.5 and 3.5 MΩ when filled with (mM) 145 Cs-aspartate, 2 MgCl2, 10 HEPES, 0.1 Cs-EGTA, and 2 Mg-ATP (pH 7.4 with CsOH). The extracellular bath solution contained (mM) 10 CaCl2, 145 tetraethylammonium chloride, and 10 HEPES (pH 7.4 with tetra-ethylammonium hydroxide). Data acquisition and command potentials were controlled by pCLAMP software (Clampex version 10.2; Axon Instruments); analysis was performed using Clampfit 10.7 (Axon Instruments) and SigmaPlot 12.0 (SPSS Science) software. The current-voltage dependence was fitted according toI=Gmax∗(V−Vrev)/(1+exp(−(V−V1/2)/k))where Gmax is the maximum conductance of the L-type calcium currents, Vrev is the extrapolated reversal potential of the calcium current, V1/2 is the potential for half-maximal conductance, and k is the slope. The conductance was calculated using G = (− I * 1000)/(Vrev − V), and its voltage dependence was fitted according to a Boltzmann distribution:G=Gmax/(1+exp(−(V−V1/2)/k))
+Calcium currents were recorded with the whole-cell patch clamp technique in voltage clamp mode using an Axopatch 200A amplifier (Axon Instruments). Patch pipettes (borosilicate glass; Science Products) had resistances between 1.5 and 3.5 MΩ when filled with (mM) 145 Cs-aspartate, 2 MgCl2, 10 HEPES, 0.1 Cs-EGTA, and 2 Mg-ATP (pH 7.4 with CsOH). The extracellular bath solution contained (mM) 10 CaCl2, 145 tetraethylammonium chloride, and 10 HEPES (pH 7.4 with tetra-ethylammonium hydroxide). Data acquisition and command potentials were controlled by pCLAMP software (Clampex version 10.2; Axon Instruments); analysis was performed using Clampfit 10.7 (Axon Instruments) and SigmaPlot 12.0 (SPSS Science) software. The current-voltage dependence was fitted according to
 
-## Statistical analysis
+$$
+I=G_{max}∗(V−V_{rev})/(1+exp(−(V−V_{1/2})/k))
+$$
+
+where Gmax is the maximum conductance of the L-type calcium currents, Vrev is the extrapolated reversal potential of the calcium current, V1/2 is the potential for half-maximal conductance, and k is the slope. The conductance was calculated using G = (− I * 1000)/(Vrev − V), and its voltage dependence was fitted according to a Boltzmann distribution:
+
+$$
+G=G_{max}/(1+exp(−(V−V_{1/2})/k))
+$$
+
+### Statistical analysis
 
 All four experimental groups were analyzed in transiently transfected cells from three to five independent cell passages. The E87A/E90A, E87A, and E90A variants of CaV1.1e were always recorded in parallel with the WT CaV1.1e in cells of the same passage to obtain the best controls for statistical comparison. Consequently, the values for WT controls vary slightly between conditions. The means, standard errors (SE), and p-values were calculated using the Student’s t-test, two-tailed, with significance criteria *p<0.05, **p<0.01, and ***p<0.001. Two-way repeated measures ANOVA, with the Holm Sidak post hoc test, was used to calculate p-values of deactivation.

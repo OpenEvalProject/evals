@@ -49,13 +49,61 @@ The present article introduces the BigBrainWarp toolbox. The aim of the toolbox 
 
 ## Materials and methods
 
-## Overview of BigBrain
+### Overview of BigBrain
 
 In brief, the reconstruction of BigBrain involved coronal slicing of a complete paraffin-embedded brain (65-year-old male) into 7404 sections at 20 μm thickness. Each section was stained for cell bodies (Merker, 1983), digitised, and subjected to manual and automatic artefact repair. The digitised sections were reconstructed into a contiguous 3D volume. The volumetric reconstruction is available online at 40 µm, 100 µm, 200 µm, 300 µm, 400 µm, and 1000 µm resolutions (http://bigbrainproject.org). The 40 µm version is released as 125 individual blocks corresponding to five subdivisions in the x, y, and z directions, with overlap. 100 -1000µm resolution volumes are provided as single files. The Merker staining labels cell bodies, similar to Nissl staining, with a high contrast between black cell bodies on a light background (Merker, 1983). In the digitised images, darker colouring is represented by lower numbers (8bit graphics: 0–28 = black-white). It is common practice to invert the values of the intensity, such that image intensity increases with staining intensity.
 
 The grey and white matter boundaries of the cortical surface released in 2014 contain 163,842 vertices on each hemisphere, with vertices aligned between pial and white surfaces (Lewis et al., 2014). Surfaces were generated using a modified version of CIVET (Kim et al., 2005; MacDonald et al., 2000). Since then, a number of additional surface reconstructions have been published from which we may attain a range of metrics (Table 1).
 
-## Staining intensity profiles and derived features
+**Table 1.**
+ Surface constructions for BigBrain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Surfaces</th>
+      <th>Utility</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grey and white</td>
+      <td>Initialisation and visualisation</td>
+      <td>Lewis et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Layer 1/2 and layer 4</td>
+      <td>Boundary conditions</td>
+      <td>Wagstyl et al., 2018a</td>
+    </tr>
+    <tr>
+      <td>Equivolumetric</td>
+      <td>Staining intensity profiles</td>
+      <td>Waehnert et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Deep learning laminar</td>
+      <td>Laminar thickness</td>
+      <td>Wagstyl et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Hippocampal</td>
+      <td>Initialisation and visualisation</td>
+      <td>DeKraker et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Mesiotemporal confluence</td>
+      <td>Initialisation and visualisation</td>
+      <td>Paquola et al., 2020a</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Initialisation broadly refers to an input for feature generation, for example creation of staining intensity profiles or surface transformations._
+
+### Staining intensity profiles and derived features
 
 Sampling staining intensity from many cortical depths provides a profile of the cytoarchitecture, hereafter referred to as a staining intensity profile. This is achieved by constructing a set of surfaces within the cortex, then sampling intensity estimates at matched vertices across the surfaces. The current approach involves equivolumetric surface construction, whereby a set of intracortical surfaces are initialised at equidistant depths, then modulated by cortical curvature (Waehnert et al., 2014). This holds advantages for histological data because laminae vary in thickness depending on cortical folding (Bok, 1929). The procedure can be deployed using dedicated python scripts (Wagstyl et al., 2018b) and is implemented in the BigBrainWarp toolbox (sample_intensity_profiles.sh).
 
@@ -65,17 +113,17 @@ Previous research has sought to characterise the laminar structure of the cortex
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70119/elife-70119-fig1-v2.jpg)
 
-**Figure 1.:** A) whole brain 3D reconstruction (taken on https://atlases.ebrains.eu/viewer) to (B) a histological section at 20 µm resolution (available from bigbrainproject.org) to (C) an intracortical staining profile.The profile represents variations in cellular density and size across cortical depths. Distinctive features of laminar architecture are often observable i.e., a layer IV peak. Note, the presented profile was subjected to smoothing as described in the following section. BigBrainWarp also supports integration of previous research on BigBrain including (D–E) cytoarchitectural and (F–G) morphological models (DeKraker et al., 2019; Paquola et al., 2020a; Paquola et al., 2019; Wagstyl et al., 2020).
+**Figure 1.:** The profile represents variations in cellular density and size across cortical depths. Distinctive features of laminar architecture are often observable i.e., a layer IV peak. Note, the presented profile was subjected to smoothing as described in the following section. BigBrainWarp also supports integration of previous research on BigBrain including (D–E) cytoarchitectural and (F–G) morphological models (DeKraker et al., 2019; Paquola et al., 2020a; Paquola et al., 2019; Wagstyl et al., 2020).
 
 More detailed characterisation of cytoarchitecture is offered by moment-based parameterisation of staining intensity profiles. This technique, pioneered by the Jülich group (Schleicher et al., 1999; Zilles et al., 2002), involves calculating the central moments (i.e., mean, the center of gravity, standard deviation, skewness, and kurtosis) of each staining intensity profile and the derivative profile, resulting in a multidimensional feature vector for each cortical point. Each central moment may be interpreted in neurobiological terms (Zilles et al., 2002). For example, the mean has been related to overall cellular density (Wree et al., 1982). It is higher in the primary visual cortex than in Brodmann area 45 than in the primary motor cortex, Brodmann area 4. In contrast, skewness varies from sensory to limbic areas (i.e., sensory-fugal) and indexes the balance of cellular density in infra- vs supra-granular layers (Paquola et al., 2020b). Comparison of profiles can illuminate large-scale patterns of cortical organisation. Observer-independent discrimination of cortical areas can be accomplished by comparing moment-based feature vectors between neighbouring vertices (Schleicher et al., 1999). The areal boundaries are defined where the feature vector exhibits a sudden shift. Over the past 20 years, this procedure has been employed in 23 post mortem brains, including BigBrain, resulting in a 3D probabilistic atlas of the human brain (Amunts et al., 2020). While this work is based on a selection of histological sections of each brain, recent work investigates solutions for mapping each section in a stack with the help of deep learning, in order to produce gapless 3D maps at full detail (Schiffer et al., 2020) and ultimately obtain a dense mapping of the BigBrain model.
 
 Cortex-wide cytoarchitectural similarity may also be estimated by cross-correlating staining intensity profiles between different cortical locations (Paquola et al., 2019). We recently applied diffusion map embedding, a nonlinear manifold learning technique (Coifman and Lafon, 2006), to the profile cross-correlation matrix of BigBrain to identify principle axes of cytoarchitectural differentiation (Paquola et al., 2019; Figure 1D). Here, we replicated the approach with updated staining intensity profiles. Bearing in mind the high-dimensional matrix manipulation necessary for this procedure, we first decimated the BigBrain mesh from 327,684 to ~10,000 vertices. Mesh decimation involves selection of a subset of vertices that preserve the overall shape of the surface followed by retriangulation of the faces with only the selected vertices. We assigned non-selected vertices to the nearest selected vertex, based on shortest path on the mesh (ties were solved by shortest Euclidean distance). In this manner, all 327,684 vertices belong to one of ~10,000 parcels. Derivation of the cytoarchitectural gradients involved (1) averaging staining intensity profiles within each parcel, (2) pair-wise correlation of parcel-average staining intensity profiles (controlling for the global-average staining intensity profile), (3) transformation to a normalised angle matrix, and (4) diffusion map embedding of this matrix. Each eigenvector captures an axis of cytoarchitectural variation and is accompanied by an eigenvalue that approximates the variance explained by that eigenvector. Here, the first two eigenvectors explain approximately 42% and 35% of variance, respectively, and describe anterior–posterior and sensory-fugal axes (further details in Tutorial 2).
 
-## Morphometric models in BigBrain
+### Morphometric models in BigBrain
 
 The high resolution of BigBrain allows for precise segmentation of anatomical structures. Manual segmentations of the putamen, caudate nucleus, globus pallidus pars externa, globus pallidus pars interna, nucleus accumbens, amygdala, thalamus, red nucleus, substantia nigra, subthalamic nucleus, and the hippocampus are available on Open Science Framework (https://osf.io/xkqb3/). Extending upon whole-structure segmentation, a recent study DeKraker et al., 2019 used anatomical landmarks to create an internal coordinate system of the hippocampus. The approach involved solving Laplace’s equation under three sets of boundary conditions: anterior–posterior, proximal–distal (relative to the subiculum), and inner–outer (DeKraker et al., 2018). Subsequently, the hippocampus can be ’unfolded’, allowing examination of histological and morphometric features in a topologically continuous space (Figure 1F), in line with other surface-based studies of the hippocampus (Bernhardt et al., 2016; Caldairou et al., 2016; Kim et al., 2014; Vos de Wael et al., 2018). Furthermore, this 3D coordinate system enabled the creation of a continuous surface model of the mesiotemporal cortex (Paquola et al., 2020b). The hippocampus is typically excluded from cortical surface models due to its complex folding and unusual cytoarchitectural makeup, with Cornu Ammonis subfields being allocortical and the dentate gyrus an interlocked terminus. Using the proximal–distal axis of the hippocampus, we were able to bridge the isocortical and hippocampal surface models recapitulating the smooth confluence of cortical types in the mesiotemporal lobe, i.e. mesiotemporal confluence (Figure 1G). The continuous surface model, defined by a pial/inner surface and a white/outer surface, can also be used to initialise equivolumetric surface constructions (Waehnert et al., 2014; Wagstyl et al., 2018b). We generated staining intensity profiles using 40 µm resolution blocks of BigBrain across the cortical confluence, which are released in BigBrainWarp with the matching surface model.
 
-## BigBrain–MRI transformations
+### BigBrain–MRI transformations
 
 BigBrain–MRI integration is pillared upon transformations between spaces. Spatial registration already exists as a fundamental component of most neuroimaging pipelines. As such, extensive research has focused on the creation of standard spaces, such as ICBM-MNI152 (Fonov et al., 2011b; Fonov et al., 2009) and FreeSurfer’s fsaverage (Fischl et al., 1999). Many studies have advanced registration techniques over the years (Collins and Evans, 2011; Klein et al., 2009; Xiao et al., 2019). Registration of BigBrain to MRI templates involves additional challenges, however, including histological artefacts, differences in intensity contrasts and inter-individual variability.
 
@@ -89,9 +137,91 @@ A prior study (Xiao et al., 2019) was able to further improve the accuracy of th
 
 The unique morphology of BigBrain also presents challenges for surface-based transformations. Idiosyncratic gyrification of certain regions of BigBrain, especially the anterior cingulate, cause misregistration (Lewis et al., 2020). Additionally, the areal midline representation of BigBrain, following inflation to a sphere, is disproportionately smaller than standard surface templates, which is related to differences in surface area, in hemisphere separation methods, and in tessellation methods. To overcome these issues, ongoing work (Lewis et al., 2020) combines a specialised BigBrain surface mesh with multimodal surface matching (MSM; Robinson et al., 2018; Robinson et al., 2014) to co-register BigBrain to standard surface templates. In the first step, the BigBrain surface meshes were re-tessellated as unstructured meshes with variable vertex density (Möbius and Kobbelt, 2010) to be more compatible with FreeSurfer generated meshes. Then, coarse-to-fine MSM registration was applied in three stages. An affine rotation was applied to the BigBrain sphere, with an additional ‘nudge’ based on an anterior cingulate landmark. Next, nonlinear/discrete alignment using sulcal depth maps (emphasising global scale, Figure 2Biii), followed by nonlinear/discrete alignment using curvature maps (emphasising finer detail, Figure 2Biii). The higher-order MSM procedure that was implemented for BigBrain maximises concordance of these features while minimising surface deformations in a physically plausible manner, accounting for size and shape distortions (Figure 2Bi; Knutsen et al., 2010; Robinson et al., 2018). This modified MSMsulc+curv pipeline improves the accuracy of transformed cortical maps (4.38 ± 3.25 mm), compared to a standard MSMsulc approach (8.02 ± 7.53 mm) (Figure 2Bii–iii; Lewis et al., 2020).
 
-## Compiling BigBrainWarp
+### Compiling BigBrainWarp
 
 For BigBrainWarp, a modular set of scripts maps between common BigBrain and MRI spaces. Users need only interact with the overarching bigbrainwarp function (see Table 2 for full functionality). The package automatically pulls state-of-the-art deformation fields and selects the appropriate transformation procedure, based on user inputs to bigbrainwarp (Figure 3). The bigbrainwarp function allows input and output of data that is aligned to the BigBrain volume, BigBrainSym volume, ICBM152 2009b symmetric volume, BigBrain surface (synonymous with BigBrainSym surface), fsaverage or fs_LR (164 k and 32 k versions). The type (i.e. volume or surface) is determined based on the input data. For volumetric input, the function is agnostic to voxel size, assuming an isomorphic resampling relative to the standard templates. For surface-based input, the data must contain a value for each vertex. By wrapping multiple forms of transformations into a single bash script (Figure 3B–C), we aim to reduce the onus on the user to have experience in the various software packages that are required by different registration procedures (e.g. minc-tools, FSL, HCP-workbench). Furthermore, containerisation of BigBrainWarp via Docker allows users to interact with the scripts without installing dependencies. This procedure ensures flexibility with ongoing developments in the field and simplifies procedures for new users.
+
+**Table 2.**
+ Input parameters for the bigbrainwarp function.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+      <th>Conditions</th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>in_space</td>
+      <td>Space of input data</td>
+      <td>Required</td>
+      <td>bigbrain, bigbrainsym, icbm, fsaverage, fs_LR</td>
+    </tr>
+    <tr>
+      <td>out_space</td>
+      <td>Space of output data</td>
+      <td>Required</td>
+      <td>bigbrain, bigbrainsym, icbm, fsaverage, fs_LR</td>
+    </tr>
+    <tr>
+      <td>wd</td>
+      <td>Path to working directory</td>
+      <td>Required</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>desc</td>
+      <td>Prefix for output files</td>
+      <td>Required</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>in_vol</td>
+      <td>Full path to input data, whole brain volume.</td>
+      <td rowspan="3">Requires either in_vol, or in_lh and in_rh</td>
+      <td>Permitted formats: mnc, nii or nii.gz</td>
+    </tr>
+    <tr>
+      <td>ih_lh</td>
+      <td>Full path to input data, left hemisphere surface</td>
+      <td rowspan="2">Permitted formats: label.gii, annot, shape.gii, curv or txt</td>
+    </tr>
+    <tr>
+      <td>ih_rh</td>
+      <td>Full path to input data, right hemisphere surface</td>
+    </tr>
+    <tr>
+      <td>interp</td>
+      <td>Interpolation method</td>
+      <td>Required for in_vol. Optional for txt input. Not permitted for other surface inputs.</td>
+      <td>For in_vol, can be trilinear (default), tricubic, nearest or sinc.For txt, can be linear or nearest</td>
+    </tr>
+    <tr>
+      <td>out_type</td>
+      <td>Specifies whether output in surface or volume space</td>
+      <td>Optional function for bigbrain, bigbrainsym and icbm output. Defaults to the same type as the input.</td>
+      <td>surface, volume</td>
+    </tr>
+    <tr>
+      <td>out_res</td>
+      <td>Resolution of output volume</td>
+      <td>Optional where out_type is volume. Default is 1</td>
+      <td>Value provided in mm</td>
+    </tr>
+    <tr>
+      <td>out_den</td>
+      <td>Density of output mesh</td>
+      <td>Optional where out_type is surface. Default is 164</td>
+      <td>For fs_LR out_space, 164 or 32</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: the options are subject to change as the toolbox is expanded. Updates will be posted on https://bigbrainwarp.readthedocs.io/en/latest/pages/updates.html._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70119/elife-70119-fig3-v2.jpg)
 
@@ -99,11 +229,90 @@ For BigBrainWarp, a modular set of scripts maps between common BigBrain and MRI 
 
 We used BigBrainWarp to map histological gradients, discussed above, to fsaverage, fs_LR and ICBM152. Conversely, we used BigBrainWarp to transform in vivo derived microstructural and functional gradients, as well as intrinsic functional communities (Yeo et al., 2011), to the BigBrain surface. For the initial release of BigBrainWarp, we selected the multi-scale imaging connectomics (MICs) dataset, which contains group-level features on standard surface templates from 50 healthy adults (Royer et al., 2021). In particular, we adopted cortical gradients derived from qT1 mapping and resting-state functional connectivity. The current contents of the toolbox are shown in Table 3.
 
+**Table 3.**
+ BigBrainWarp contents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Definition</th>
+      <th>Original space</th>
+      <th>Transformed spaces</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Profiles</td>
+      <td>Staining intensity profiles, sampled at each vertex and across 50 equivolumetric surfaces</td>
+      <td>BigBrain</td>
+      <td>fsaverage, fs_LR (164 k and 32 k)</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>Grey/white matter boundary</td>
+      <td>BigBrain, fsaverage, fs_LR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sphere</td>
+      <td>Spherical representation of surface mesh</td>
+      <td>BigBrain, fsaverage, fs_LR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Confluence</td>
+      <td>Continuous surface that includes isocortex and allocortex (hippocampus) from Paquola et al., 2020a</td>
+      <td>BigBrain</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Histological gradients</td>
+      <td>First two eigenvectors of cytoarchitectural differentiation derived from BigBrain</td>
+      <td>BigBrain</td>
+      <td>fsaverage, fs_LR (164 k and 32 k), icbm</td>
+    </tr>
+    <tr>
+      <td>Microstructural gradients</td>
+      <td>First two eigenvector of microstructural differentiation derived from quantitative in-vivo T1 imaging</td>
+      <td>fsaverage</td>
+      <td>BigBrain,</td>
+    </tr>
+    <tr>
+      <td>Functional gradients</td>
+      <td>First three eigenvectors of functional differentiation derived from rs-fMRI</td>
+      <td>fsaverage</td>
+      <td>BigBrain</td>
+    </tr>
+    <tr>
+      <td>Seven functional networks</td>
+      <td>Seven functional networks from Yeo et al., 2011</td>
+      <td>fsaverage</td>
+      <td>BigBrain</td>
+    </tr>
+    <tr>
+      <td>17 Functional networks</td>
+      <td>17 Functional networks from Yeo et al., 2011</td>
+      <td>fsaverage</td>
+      <td>BigBrain, icbm</td>
+    </tr>
+    <tr>
+      <td>Layer thickness</td>
+      <td>Layer thicknesses estimated from Wagstyl et al., 2020</td>
+      <td>BigBrain</td>
+      <td>fsaverage, fs_LR (164 k and 32 k)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Datasets Are Named According to BIDS and Align with Recommendations From TemplateFlow (Ciric et al., 2021)._
+
 ## Results
 
 The BigBrainWarp toolbox supports a range of integrative BigBrain–MRI analyses. The following tutorials outline three BigBrain–MRI analyses with unique types of transformations, specifically (1) BigBrain volume to ICBM2009sym, (2) BigBrain surface to fsaverage, and (3) fsaverage to BigBrain surface. Neither the forms nor the motivations are exhaustive but illustrate applications (see Figure 3 for all possible transformations). Code for each tutorial is available in the BigBrainWarp toolbox.
 
-## Tutorial 1: BigBrain → ICBM2009sym MNI152 space
+### Tutorial 1: BigBrain → ICBM2009sym MNI152 space
 
 Motivation: Despite MRI acquisitions at high and ultra-high fields reaching submillimeter resolutions with ongoing technical advances, certain brain structures and subregions remain difficult to identify (Kulaga-Yoskovitz et al., 2015; Wisse et al., 2017; Yushkevich et al., 2015). For example, there are challenges in reliably defining the subthalamic nucleus (not yet released for BigBrain) or hippocampal Cornu Ammonis subfields (manual segmentation available on BigBrain, https://osf.io/bqus3/; DeKraker et al., 2019). BigBrain-defined labels can be transformed to a standard imaging space for further investigation. Thus, this approach can support exploration of the functional architecture of histologically defined regions of interest.
 
@@ -119,7 +328,7 @@ bigbrainwarp --in_space bigbrain --out_space icbm --wd/project/ --desc confluenc
 
 **Figure 4.:** (A) i. BigBrain surface models of the isocortex and hippocampal subfields are projected on a 40 µm resolution coronal slice of BigBrain. (ii–iii) The continuous surface model bridges the inner hippocampal vertices with pial mesiotemporal vertices (entorhinal, parahippocampal or fusiform cortex). Vertices at the medial aspect of the subiculum were identified as bridgeheads and used to bridge between the two surface constructions. Geodesic distance from the nearest bridgehead was used as the iso-to-allocortical axis. (B) Iso-to-allocortical axis values were projected from the surface into the BigBrain volume, then transformed to ICBM2009sym using BigBrainWarp. (C) Intrinsic functional connectivity was calculated between each voxel of the iso-to-allocortical axis and 1000 isocortical parcels. For each parcel, we calculated the product-moment correlation (r) of rsFC strength with iso-to-allocortical axis position. Thus, positive values (red) indicates that rsFC of that isocortical parcel with the mesiotemporal lobe increases along the iso-to-allocortex axis, whereas negative values (blue) indicate decrease in rsFC along the iso-to-allocortex axis.
 
-## Tutorial 2: BigBrain → fsaverage
+### Tutorial 2: BigBrain → fsaverage
 
 Motivation: In vivo brain imaging reveals regionally variable effects of many demographic and clinical factors on brain structure and function. For example, prior studies of lifespan processes presented spatially variable patterns of cortical atrophy with advancing age, together with increased deposition of pathological aggregates, such as amyloid beta (Aβ) (Bilgel et al., 2018; Jansen et al., 2015; Knopman et al., 2018; Rodrigue et al., 2012; Sperling et al., 2011). Histological data provides a window into the cytoarchitectural features that align with imaging-derived phenotypes and that, in this instance, may predispose an area to specific aging-related processes. Essentially, we can evaluate whether regions with a certain cytoarchitecture overlap with those showing more marked aging effects. Furthermore, large-scale cytoarchitectural gradients can provide a unified framework to describe topographies, simplifying and standardising the reporting of imaging-derived phenotypes.
 
@@ -135,7 +344,7 @@ For this analysis, we additionally smoothed the histological gradients on fsaver
 
 **Figure 5.:** (A) Four stages of histological gradient construction. (i) Vertex-wise staining intensity profiles (dotted lines) are averaged within parcels (solid lines). Colours represent different parcels. (ii) Pair-wise partial correlation of parcel-average staining intensity profiles produces a cortex-wide matrix of cytoarchitectural similarity. (iii) The correlation matrix is subjected to dimensionality reduction, in this case diffusion map embedding, to extract the eigenvectors of cytoarchitectural variation. (iv) The eigenvectors capture histological gradients (Hist-G) and are projected onto the BigBrain cortical surface for inspection. (B) The t-statistic cortical map illustrates regional variations in the effect of age on Aβ deposition (Lowe et al., 2019), which was calculated vertex-wise on fsaverage5. To allow comparison, histological gradients were transformed to fsaverage5 using BigBrainWarp. Scatterplots show the association of the t-statistic map with the histological gradients. (C) Bar plot shows the Bayesian Information Criterion of univariate and multivariate regression models, using histological gradients to prediction regional variation in effect of age on Aβ deposition. The univariate Hist-G2 regression had the lowest Bayesian Information Criterion, representing the optimal model of those tested.
 
-## Tutorial 3: fsaverage → BigBrain
+### Tutorial 3: fsaverage → BigBrain
 
 Motivation: A core aim of fMRI research is to map functional specialisation in the brain (Bassett et al., 2008; Eickhoff et al., 2018; Gordon et al., 2017; Raichle, 2015; Shine et al., 2019; Yeo et al., 2011). On the one hand, this work follows a long legacy of defining cortical areas, and on the other hand, it extends beyond the possibilities of post mortem research by capturing patterns of coordinated activity. For instance, clustering resting-state fMRI connectivity reveals a robust set of intrinsic functional networks (Beckmann and Smith, 2004; Gordon et al., 2017; Yeo et al., 2011). Nonetheless, there exists a gap in the literature between these well-characterised functional networks and their cytoarchitecture. BigBrain offers the opportunity to characterise and evaluate differences of cytoarchitecture for functionally defined atlases.
 

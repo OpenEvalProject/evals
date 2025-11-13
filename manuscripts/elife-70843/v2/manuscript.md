@@ -58,27 +58,116 @@ When combining these features with affinity reagents, such as antibodies, assays
 
 The application of LC-MS to detect tryptic digest peptides of SARS-CoV-2 proteins has been successfully demonstrated (Cardozo et al., 2020; Cazares et al., 2020; Freire-Paspuel and Garcia-Bereguiain, 2021; Gouveia et al., 2020a; Gouveia et al., 2020b; Ihling et al., 2020; Saadi et al., 2021; Van Puyvelde et al., 2021). However, these studies also highlight that the technique can be hampered by matrix effects, that is, analysis interferences arising from the constituent components of swab (preservation) media or other matrices, as well as base sensitivity, to be able to reach clinically relevant detection levels, suggesting the need for clean-up, for example, solid phase-based extraction and/or affinity enrichment (Renuse et al., 2020; Van Puyvelde et al., 2021). Moreover, commonality can be observed within the results of these studies in terms of which tryptic digest peptides are typically detected by means of LC-MS. Nucleocapsid protein (NCAP) is the most abundant viral SARS-CoV-2 protein with an estimated ~300–1000 copies per virion particle (Bezstarosti et al., 2020; Phimister et al., 2020), making it, because of the relatively high number of NCAP copies per virion, an attractive target for LC-MS-based detection compared to other viral proteins. A number of NCAP candidate peptides were therefore evaluated in terms of enrichment efficiency and LC-MS behavior, that is, sensitivity and linear dynamic range, and peptide immunoassay suitability (Whiteaker et al., 2011). The LC-MS MRM responses of a number of candidate NCAP SIL peptides are shown in Figure 2—figure supplement 1, ranking the peptides in descending order of MRM sensitivity. From this set of peptides, primarily based on both MRM response and peptide immunoassay suitability, peptide AYNVTQAFGR was found to be one of the best surrogate peptide candidates, but, equally importantly, it is not significantly affected to date by known SARS-CoV-2 virus mutations (https://www.gisaid.org/). Other evaluated peptides, but not discussed in detail, included ADETQALPQR, DGIIWVATEGALNTPK, and NPANNAAIVLQLPQGTTLPK, of which the basic quantitative characterization results are summarized in Figure 2—figure supplements 2–4, respectively.
 
-## Method characterization
+### Method characterization
 
 The LC-MS MRM data were processed using TargetLynx XS and with a cut-off threshold algorithm based on peptide peak height and area thresholds, as well as quantifier to qualifier ion ratio threshold (30%). In other words, using two different consistently measured peptide fragment ions, that is, MRM transitions, to confirm the presence of SARS-CoV-2 proteins. Typical detection examples for the quantifier, qualifier, and SIL MRM transitions are shown in the (A) panel of Figure 2. An internal standard SIL corrected LC-MS calibration curve for antibody enriched NCAP peptide AYNVTQAFGR detected in a spiked nasopharyngeal swab matrix solution is shown in the (B) panel of Figure 2, covering a linear dynamic range from 3 to 50,000 amol/µl, providing >4 orders of linear dynamic range, meanwhile affording an LLOQ amount of 3 amol/µl of AYNVTQAFGR peptide (with precision ≤20%, bias ±20 % and S/N > 10:1 [peak-to-peak]). Shown as well are example quantifier and qualifier MRM chromatograms of positive (Figure 2C) and negative (Figure 2D) SARS-CoV-2 phosphate-buffered saline (PBS) swab samples. The selectivity of the method is highlighted by the complete absence of signal in the MRM chromatogram of the negative SARS-CoV-2 sample (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-v2.jpg)
+
+**Figure 2.:** Quantifier, qualifier, and stable isotope labeled (SIL) internal standard peptide chromatograms spiked at the lower limit of quantification (3 amol/µl) (A). Calibration curve of the AYNVTQAFGR peptide based on enriched recombinant NCAP digest, spiked with a constant amount of SIL peptide (B). Two representative intensity-scaled MRM chromatograms of positive (mean cycle threshold [Ct] 31) (C) and negative (blank) (D) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) swab samples, respectively, normalized to the most abundant shared MRM transition. Intensity-scaled SIL internal standard peptide MRM chromatograms of positive (E) and negative (F) SARS-CoV-2 swab samples.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig2-figsupp4-v2.jpg)
+
 The precision of the method was evaluated at 3, 10, 400, and 25,000 amol/µl for NCAP AYNVTQAFGR peptide and NCAP spiked into PBS and viral transport medium (VTM, Liofilchem, Italy). Peptides were enriched by antibodies and samples were analyzed in replicates of 5-over-5 separate occasions. The inter- and intra-day precision values of the method, as summarized in Table 1, were shown to be ≤20 % CV.
+
+**Table 1.**
+ Intra- and inter-day method precision (n = 5) when monitoring severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) nucleocapsid protein (NCAP) peptide AYNVTQAFGR using immuno-affinity peptide enrichment liquid chromatography-mass spectrometry (LC-MS) (multiple reaction monitoring [MRM]).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="8">Precision (% CV)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="4">Intra (concentration [amol/μl])</th>
+      <th colspan="4">Inter (concentration [amol/lμl])</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>10</td>
+      <td>400</td>
+      <td>25,000</td>
+      <td>3</td>
+      <td>10</td>
+      <td>400</td>
+      <td>25,000</td>
+    </tr>
+    <tr>
+      <td>Peptide-spiked PBS</td>
+      <td>12.0</td>
+      <td>11.1</td>
+      <td>5.8</td>
+      <td>5.2</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>NCAP-spiked PBS</td>
+      <td>18.9</td>
+      <td>3.9</td>
+      <td>4.8</td>
+      <td>6.4</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Peptide-spiked VTM</td>
+      <td>12.5</td>
+      <td>6.8</td>
+      <td>2.4</td>
+      <td>3.0</td>
+      <td>15.5</td>
+      <td>10.2</td>
+      <td>6.8</td>
+      <td>4.7</td>
+    </tr>
+    <tr>
+      <td>NCAP-spiked VTM</td>
+      <td>13.2</td>
+      <td>10.2</td>
+      <td>2.4</td>
+      <td>2.9</td>
+      <td>11.6</td>
+      <td>17.6</td>
+      <td>18.5</td>
+      <td>11.1</td>
+    </tr>
+  </tbody>
+</table>
+
+_–, not tested._
 
 Additionally, the AYNVTQAFGR peptide was shown to be stable in the autosampler at 10°C for over 48 hr following re-analysis and comparison to a stored calibration curve.
 
-## Sample analysis
+### Sample analysis
 
 The samples analyzed by LC-MS and RT-PCR were compared. The high and low pools were analyzed in triplicate with a precision of 3.0% CV and 12.2% CV, respectively, for each pool. Example quantifier and qualifier LC-MS MRM chromatograms of peptide AYNVTQAFGR are shown in the two bottom panes of Figure 2, respectively. The results shown in Figure 3A suggests good (inverse) correlation between the LC-MS (log2 transformed quantifier response, i.e., SIL corrected quantifier peak area) and the RT-PCR (Ct) data, which has also been noted in other so-called ‘non-enriched’ studies (Van Puyvelde et al., 2021). The results shown in Figure 3B represent the LC-MS data in an alternative, quartile distribution-based format, suggesting that differentiation between sample types is feasible and that the detected abundances are significantly different (p = 0.00018; Mann-Whitney U test).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig3-v2.jpg)
 
-**Figure 3.:** 2 quantifier response) vs. real-time polymerase chain reaction (RT-PCR) (cycle threshold [Ct]) read-out correlation with linear regression (A) and quartiles distribution of the LC-MS results (B).Color labeling is based on RT-PCR diagnoses; blue = positive severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2); gray = not detected (no light signals) or inconclusively quantified (single transition) by LC-MS.
+**Figure 3.:** Color labeling is based on RT-PCR diagnoses; blue = positive severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2); gray = not detected (no light signals) or inconclusively quantified (single transition) by LC-MS.
 
 Following CLSI EP 12-A2 User Protocol for Evaluation of Qualitative Test Performance guidance, a summary of the sample analysis results is shown in a 2 × 2 contingency table format in Figure 4, using the RT-PCR results as a reference, estimated sensitivity and specificity values for LC-MS are 83.3% and 100%, respectively. The 95% score confidence interval (CI) limits for sensitivity calculations were 70.4–91.3% and for specificity were 98.8–100%. Accordingly, the agreement between RT-PCR and LC-MS was strong (kappa value of 0.9 [95% CI 0.83–0.97]). When analyzing samples above the estimated LLOQ (3 amol/μl, which approximates to Ct ≤30), the estimated sensitivity is improved to 94.7% with the corresponding 95% score CI limits for sensitivity 82.7–98.5%. Further work will look at adding a secondary confirmatory peptide to the cut-off algorithm. However, RT-PCR does not distinguish between infectious virus and non-infectious nucleic acids (Engelmann et al., 2021), whereas LC-MS will only detect one or multiple peptides from the protein complement of the virus. This has implications on the interpretation of RT-PCR Ct levels itself in terms of infectious vs. non-infectious classification of patient samples but also for determining the sensitivity and specificity of complementary and/or alternative methods. Peptide levels have not been evaluated in the context of infectiousness yet, but other conditions, such as sample storage before LC-MRM/MS, can also give rise to analytical variance due to the inherent difference in stability between RNA and proteins. Additionally, Ct values are not universally applicable as they differ between manufacturers and methods (Engelmann et al., 2021; van Kasteren et al., 2020), which enforces the need of methods that are capable of determining viral load more accurately.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70843/elife-70843-fig4-v2.jpg)
 
-**Figure 4.:** A).The LC-multiple reaction monitoring (MRM)/MS performance is based on RT-PCR results obtained from 48 positive and 308 negative samples. (B) The LC-MRM/MS performance based on all positive samples with an RT-PCR results below cycle threshold (Ct) 30 (limit of detection [LOD] for the LC-MRM/MS) and 308 negative samples.
+**Figure 4.:** The LC-multiple reaction monitoring (MRM)/MS performance is based on RT-PCR results obtained from 48 positive and 308 negative samples. (B) The LC-MRM/MS performance based on all positive samples with an RT-PCR results below cycle threshold (Ct) 30 (limit of detection [LOD] for the LC-MRM/MS) and 308 negative samples.
 
 ## Discussion
 
@@ -90,44 +179,199 @@ We show that the SISCAPA technology is an attractive route forward for future mo
 
 ## Materials and methods
 
-## Sample collection
+### Sample collection
 
 The study was performed in accordance with the declaration of Helsinki and the study protocol (Jämförande studier av Covid-19 smitta och antikroppssvar i olika grupper i samhället) was approved by the Ethical Review Board of Linköping, Sweden (Regionala etikprövningsnämnden, Linköping, DNR – 2020–06395). Informed consent and consent to publish, including consent to publish anonymized data, was obtained from all subjects. Briefly, asymptomatic individuals working at an elderly caregiver in Sweden were screened on a regular basis at their workplace. A three-point collection (throat, nasal, saliva) was performed by participants using a self-sampling collection kit (Sansure Biotech, Changsha, China) containing PBS (1× PBS, 137 mM NaCl; 2.7 mM KCl; 4.3 mM Na2HPO4; 1.47 mM KH2PO4). Clinical samples were collected by swabs dipped into the sample collection tube and transported to the laboratory within 8 hr. All samples were heat inactivated upon arrival to ensure that the core temperature of the vial reached at least 56°C for 30 min. The protocol used ensured that the core temperature did not reach above 60°C ± 0.5°C (1 sd), which has been shown to have no effect on the RT-PCR sensitivity.
 
-## RT-PCR
+### RT-PCR
 
 Samples were analyzed using an RT-PCR test from Sansure Biotech (Changsha, China) according to FDA-EUA guidelines. The Novel Coronavirus (2019-nCoV) Nucleic Acid Diagnostic Kit was used for quantitative detection of the ORF-1ab and the N gene of novel coronavirus (2019-nCoV). Briefly, samples were lysed at room temperature for at least 10 min to allow for RNA release by chemical lysis using Sample Release Reagent (Sansure Biotech). The presence or absence of SARS-CoV-2 RNA was determined by RT-PCR combined with multiplexed fluorescent probing, which targets a SARS-CoV-2-specific region of ORF-1ab (FAM) and N gene (ROX) together with the human Rnase P internal control (Cy5). The RT-PCR analysis was performed using a CFX96 Real‐Time PCR Detection System (Bio-Rad, Hercules, CA) programmed with the following RT-PCR protocol according to the manufacturer’s instruction (50°C, 30 min; 95°C 1 min) followed by 45 cycles of (95°C 30 s, 60 °C 30 s). The RT-PCR results were interpreted according to instructions. Positive (FAM/ROX Amplification, Ct < 40). Negative (FAM/ROX No amplification; Cy5 Amplification, Ct < 40).
 
-## Immuno-affinity peptide enrichment LC-MS
+### Immuno-affinity peptide enrichment LC-MS
 
-## Materials
+#### Materials
 
 Recombinant NCAP was from R&D Systems, Minneapolis, MN, trypsin from Worthington, Lakewood, NJ, and anti-peptide antibodies from SISCAPA Assay Technologies, Washington, DC. All other chemicals were from MilliporeSigma, St Louis, MI, unless stated otherwise.
 
-## Calibrator preparation
+#### Calibrator preparation
 
 NCAP digest, protocol described below, was used for calibration and quantitation of viral proteins. A serial dilution from 2.2 pmol/µl NCAP to 10,000, 2000, 400, 80, 16, and 3 amol/µl was performed consecutively in pooled negative sample background.
 
-## Samples
+#### Samples
 
 Clinical samples subjected to two freeze-thaw cycles prior were anonymized and two control pools were established by pooling randomly chosen samples based on their RT-PCR result (Ct < 30 [high pool], 30 ≤ Ct < 33 [low pool]). A total of 180 µl from each sample was used per enrichment experiment. A set of 48 positive and 308 negative samples was subjected to the LC-MS analysis.
 
-## Protein extraction and digestion
+### Protein extraction and digestion
 
 A total of 20 µl of denaturant mixture (1 % (w/v) RapiGest [Waters Corporation, Milford, MA]) in 1 M triethylammonium bicarbonate, 50 mM dithiothreitol (Waters Corporation) were aliquoted into the collection plate (Waters Corporation). Next, 180 µl of the diluted NCAP and patient samples were carefully transferred from the collection tubes into the same plate. The plate was incubated on a heater-shaker at 500 rpm at 56°C for 15 min followed by the addition of 50 µl trypsin solution (7.3 mg/ml trypsin in 10 mM HCl). After mixing at 500 rpm for 30 s, the samples were digested at 37°C for 30 min and thereafter quenched by addition of trypsin stopping agent (0.22 mg/ml of Tosyl-L-lysyl-chloromethane hydrochloride in 10 mM HCl) at a final concentration of 37 µg/ml. The sample plate was mixed at 500 rpm for 30 s and incubated at room temperature for 5 min. The samples were spiked with 20 µl of SIL peptide mixture solution and mixed thoroughly on a shaker at 500 rpm for 30 s.
 
-## Peptide enrichment
+### Peptide enrichment
 
 Anti-peptide antibodies, raised toward proteotypic peptides from the NCAP, were screened and validated as previously described (Pope et al., 2009). The antibody-coupled magnetic bead immune adsorbents corresponding to four SIL peptides (ADETQALPQR-13C615N4, AYNVTQAFGR-13C615N4, DGIIWVATEGALNTPK-13C615N2, and NPANNAAIVLQLPQGTTLPK-13C615N2) were resuspended fully by vortex mixing. The suspension of each anti-peptide antibody tube was mixed together in 1:1 ratio and 40 µl of the mixture was added to each digest. The plate was mixed at 1400 rpm to ensure that beads were resuspended and thereafter incubated for 1 hr at 800 rpm at room temperature. After 1 hr incubation, the plate was placed on a magnet array (SISCAPA Assay Technologies). As soon as the beads had settled on the sides of each well (typically 1 min), the supernatant was removed; 150 µl of wash buffer (0.03% CHAPS, 1× PBS) was added to each sample and the beads were fully resuspending at 1400 rpm for 30 s and 450 rpm for another 30 s. The plate was placed on the magnet array again and the supernatant was removed. This step was repeated three times. The beads were subsequently resuspended in 50 µl elution buffer (0.5% formic acid, 0.03% CHAPS) and incubated for 5 min at room temperature. The beads were discarded by transferring the eluent to a QuanRecovery plate (Waters Corporation) for LC-MS analysis.
 
-## LC-MS detection and quantification
+### LC-MS detection and quantification
 
 Chromatography was performed on an ACQUITY UPLC I-Class FTN system, with Binary Solvent Manager and column heater (Waters Corporation); 20 µl of the enriched sample was injected onto a ACQUITY Premier Peptide BEH C18, 2.1 mm × 50 mm, 1.7 µm, 300 Å column (Waters Corporation) and separated using a gradient elution of mobile phase A containing laboratory LC-MS grade de-ionized water with 0.1% (v/v) formic acid, and mobile phase B containing LC-MS grade acetonitrile with 0.1% (v/v) formic acid. The gradient elution was performed at 0.6 ml/min with initial inlet conditions at 5% B, increasing to 28% B over 4.5 min, followed by a column wash at 90% B for 0.6 min and a return to initial conditions at 5% B. The total run time was 5.7 min, with a 6.5 min injection-to-injection cycle time.
 
 A Xevo TQ-XS tandem MS (Waters Corporation, Wilmslow, UK) operating in positive electrospray ionization (ESI+) was used for the detection and quantification of the peptides. The instrument conditions were as follows: capillary voltage 0.5 kV, source temperature 150°C, desolvation temperature 600°C, cone gas flow 150 l/h, and desolvation gas flow 1000 l/h. The MS was calibrated at unit mass resolution for MS1 and MS2. Light and heavy labeled peptides were detected using MRM mode of acquisition with experimental details overviewed in Table 2.
 
+**Table 2.**
+ Multiple reaction monitoring (MRM) transitions and mass spectrometry (MS) method details target nucleocapsid protein (NCAP) severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) peptides.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>MRM</th>
+      <th>MRM transition type</th>
+      <th>Cone voltage (V)</th>
+      <th>Collision energy (V)</th>
+      <th>Retention time (min)</th>
+      <th>Scan window (min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">ADETQALPQR</td>
+      <td>564.8 &gt; 400.2</td>
+      <td>Quantifier</td>
+      <td>35</td>
+      <td>19</td>
+      <td rowspan="4">1.09</td>
+      <td rowspan="4">0.6–1.4</td>
+    </tr>
+    <tr>
+      <td>564.8 &gt; 584.4</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>564.8 &gt; 712.4</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>569.8 &gt; 410.2</td>
+      <td>SIL</td>
+      <td>35</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">AYNVTQAFGR</td>
+      <td>563.8 &gt; 679.4</td>
+      <td>Quantifier</td>
+      <td>35</td>
+      <td>19</td>
+      <td rowspan="4">2.49</td>
+      <td rowspan="4">2.0–3.0</td>
+    </tr>
+    <tr>
+      <td>563.8 &gt; 578.3</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>563.8 &gt; 892.5</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>568.8 &gt; 689.4</td>
+      <td>SIL</td>
+      <td>35</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">DGIIWVATEGALNTPK</td>
+      <td>562.3 &gt; 643.4</td>
+      <td>Quantifier</td>
+      <td>35</td>
+      <td>14</td>
+      <td rowspan="4">4.12</td>
+      <td rowspan="4">3.6–4.8</td>
+    </tr>
+    <tr>
+      <td>562.3 &gt; 572.3</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>562.3 &gt; 700.4</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>565.2 &gt; 708.4</td>
+      <td>SIL</td>
+      <td>35</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">NPANNAAIVLQLPQGTTLPK</td>
+      <td>687.4 &gt; 841.5</td>
+      <td>Quantifier</td>
+      <td>35</td>
+      <td>18</td>
+      <td rowspan="4">3.92</td>
+      <td rowspan="4">3.6–4.2</td>
+    </tr>
+    <tr>
+      <td>687.4 &gt; 766.4</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>687.4 &gt; 865.5</td>
+      <td>Qualifier</td>
+      <td>35</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>690.4 &gt; 849.5</td>
+      <td>SIL</td>
+      <td>35</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
 TargetLynx XS (Waters Corporation) was used to process the raw LC-MS data, that is, signal processing (mean smoothing and background subtraction), peak detection (area and height), and quantification of the MRM chromatograms, including the calculation of the quantifier ion to qualifier ion ratio. The quantified data were exported as tables (Supplementary file 1) and additional analysis and visualization carried out using Python 3.
 
-## Data and materials availability
+### Data and materials availability
 
 The ProteomeXchange ID for this dataset is PXD026366. The proteomics data have been deposited to Panorama Public (Sharma et al., 2014) (https://panoramaweb.org/sars-cov-2_siscapa.url). This dataset includes raw files and integrated peak areas from TargetLynx XS, as well as visualization of all LC-MRM/MS chromatograms.

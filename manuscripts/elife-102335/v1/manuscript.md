@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/008xxew50 Department of Applied and Experimental Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands
-2. https://ror.org/008xxew50 Institute for Brain and Behavior Amsterdam (iBBA), Vrije Universiteit Amsterdam Amsterdam Netherlands
-3. https://ror.org/04dkp9463 Department of Psychology, University of Amsterdam Amsterdam Netherlands
-4. https://ror.org/04dkp9463 Amsterdam Brain and Cognition, University of Amsterdam Amsterdam Netherlands
-5. https://ror.org/027bh9e22 Cognitive Psychology Unit, Institute of Psychology & Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands
-6. https://ror.org/00t3r8h32 Department of Psychology, University of Lübeck Lübeck Germany
-7. https://ror.org/00t3r8h32 Center of Brain, Behavior and Metabolism, University of Lübeck Lübeck Germany
+1. Department of Applied and Experimental Psychology, Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+2. Institute for Brain and Behavior Amsterdam (iBBA), Vrije Universiteit Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
+3. Department of Psychology, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+4. Amsterdam Brain and Cognition, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+5. Cognitive Psychology Unit, Institute of Psychology & Leiden Institute for Brain and Cognition, Leiden University Leiden Netherlands ([ROR:027bh9e22](https://ror.org/027bh9e22))
+6. Department of Psychology, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
+7. Center of Brain, Behavior and Metabolism, University of Lübeck Lübeck Germany ([ROR:00t3r8h32](https://ror.org/00t3r8h32))
 
 † Corresponding author
 
@@ -74,6 +74,18 @@ Next, to establish the effect of criterion shifts on neural measures, we turned 
 
 In a first step, we computed classifier performance over time across all trials (irrespective of responses or condition) in the experiment, separately for Experiments 1 and 2. We subsequently computed the average classification performance across both experiments (see Figure 3A, left panel) and identified three times at which local maxima occurred in this average (137, 266, and 430 ms). These peaks reflect stages that are often identified in similar experiments that investigate the time course of perceptual organization (Fahrenfort et al., 2017; Fahrenfort et al., 2008; Fahrenfort et al., 2007). Figure 3A (right panel) shows that these peaks have highly similar topographic maps of current source density, obtained from the forward transformed weights of the training data from the selected peaks for both experiments (Haufe et al., 2014). To keep multiple comparisons to a minimum, further testing was carried out on the time points at which these three peaks occurred. Note that classification performance was higher for Experiment 1 than for Experiment 2, as this experiment had 3 sessions instead of 2, and target stimuli were presented for 40 ms instead of 30 ms (which also resulted in a higher behavioral d’ for Experiment 1 than for Experiment 2). Note that this has no bearing on the relevant hypothesis tests, because hypothesis testing effects are only within, and not between experiments (i.e. the only relevant difference is between conservative and liberal, not between Experiments 1 and 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/102335/elife-102335-fig3-v1.jpg)
+
+**Figure 3.:** (A) Classification performance of target present versus target absent time-locked to stimulus onset, expressed in area under the curve (AUC), separately for Experiment 1 (N=16) and Experiment 2 (N=26), as well as average classification performance, shaded areas are standard error of the mean (left panel). The average performance across both experiments clearly shows three local classification performance peaks at 137, 266, and 430 ms. The distribution of cortical activity at these peaks was highly similar for Experiments 1 and 2, as shown in topographic current source density maps that were obtained from the forward transformed classification weights, obtained from training a classifier using all electrodes for visualization purposes (right panel). (B) Classification performance of target present versus target absent after post hoc sorting on ‘seen’ and ‘unseen’ responses (here collapsed across ‘seen’ and ‘unseen’, see Figure 4 for the uncollapsed data), separately for Experiments 1 and 2, and separately for the liberal and the conservative condition. (C) Same as in B, but this time performing classification analysis on all trials without first post hoc sorting into ‘seen’ and ‘unseen’ trials (using the same classifiers as used in B). See Figure 3—figure supplement 1 for the complete time series.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102335/elife-102335-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Shaded areas are standard error of the mean.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102335/elife-102335-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** A classifier is always trained on all target versus no-target trials of a given participant and tested in a different participant on the various cells of any given experimental design. See methods for details.
+
 Next, to investigate the effect of these criterion shifts on neural measures, we determined how classification performance was affected by post hoc sorting trials based on response categories, separately for decisions made under a liberal criterion and under a conservative criterion. We applied a standard post hoc sorting procedure to the EEG data of each experiment, creating a conscious condition of ‘seen’ figure trials and an unconscious condition of ‘unseen’ figure trials, separately under a conservative and a liberal criterion. For Experiment 1, the difference between seen and unseen was operationalized as participants either giving a ‘yes’ response (=’seen’) or no response at all (=’unseen’). For Experiment 2 the difference between seen and unseen was operationalized as giving a response of 1, 2, or 3 on the PAS (=’seen’) or giving a 0-response on the PAS (=’unseen’).
 
 To ensure that differences resulting from post hoc sorting could not be explained by differences in signal-to-noise ratio resulting from disparities in trial counts in the testing set, we equated trial counts between the liberal and conservative condition within each participant by randomly selecting the same number of trials from overrepresented cells (for Experiment 1, this was done at the level of ‘seen’ and ‘unseen’ responses, for Experiment 2 the trial counts were equated at each of the PAS levels, see methods for details). As a result, response-contingent conditions in the liberal and conservative conditions had identical input for all classification analyses. Although different trial counts in the testing set might affect the precision with which area under the curve (AUC) is estimated in a decoding analysis, it does not affect the size of AUC itself. Trial count equation was merely performed to make sure the liberal and conservative condition were as comparable as possible. Analyzing the data without equating trial counts resulted in qualitatively identical results.
@@ -126,59 +138,86 @@ Summarizing, aside from the effect of the criterion on behavioral responses them
 
 ## Methods
 
-## Simulations
+### Simulations
 
-For all simulations, we simulated experiments in Matlab by generating 10,000 normally distributed noise and noise + signal trials using different parameters for the distance between the two distributions as the sensitivity of the system and the criterion that was applied under any given simulation (see OSF https://doi.org/10.17605/OSF.IO/AP23W for all Matlab code and parameter settings). Decoder classification performance was approximated by conceptualizing the difference d between the average signal strength of signal trials and noise trials after post hoc sorting on criterion as a measure of decoder sensitivity under post hoc sorting (ranging from 0 to ∞). This value was converted to AUC classification performance (ranging from 0.5 to 1), using the formula AUC=Φd′2, in which ϕ is the normal cumulative distribution function. The equivalent Matlab code is AUCsorted = normcdf(dsorted/√2), for the relevant conversion formula from d to AUC see Ruscio, 2008.
+For all simulations, we simulated experiments in Matlab by generating 10,000 normally distributed noise and noise + signal trials using different parameters for the distance between the two distributions as the sensitivity of the system and the criterion that was applied under any given simulation (see OSF https://doi.org/10.17605/OSF.IO/AP23W for all Matlab code and parameter settings). Decoder classification performance was approximated by conceptualizing the difference d between the average signal strength of signal trials and noise trials after post hoc sorting on criterion as a measure of decoder sensitivity under post hoc sorting (ranging from 0 to ∞). This value was converted to AUC classification performance (ranging from 0.5 to 1), using the formula $AUC=Φ\frac{d^{′}}{\sqrt{2}}$, in which ϕ is the normal cumulative distribution function. The equivalent Matlab code is AUCsorted = normcdf(dsorted/√2), for the relevant conversion formula from d to AUC see Ruscio, 2008.
 
-## Participants and payment
+### Participants and payment
 
 All participants had normal or corrected-to-normal vision and were recruited at the University of Amsterdam (UvA) in partial fulfillment of first year psychology curricular requirements or for monetary reimbursement (€10 per hour). Participants signed a written informed consent form before the start of the experiment, including consent to publish the results from the studies. All procedures were approved by the Ethics Review Board Psychology, section Brain & Cognition of the University of Amsterdam.
 
-## Experiment 1
+#### Experiment 1
 
 Sixteen participants (eight females, mean age 24.1 years, SD 1.64, all right-handed) completed three experimental EEG sessions on different days, each session lasting ca. 2 hr. At the beginning of the experiment, participants were informed they could earn a total bonus of €30, on top of their regular pay of €10 per hour or course credit. After completing the last session of the experiment, every participant was paid the full bonus as required by the ethical committee.
 
-## Experiment 2
+#### Experiment 2
 
 Thirty-four participants completed three experimental sessions: one behavioral training session lasting approximately 45 min and two experimental EEG session lasting 2.5 hr each. The EEG data from 26 participants were analyzed (14 female, mean age 23.1 years, SD 3.19, 22 right-handed). Four participants were excluded from analysis due having extremely low trial counts on one or more cells after post hoc sorting on the four response levels of the PAS (<5 trials). Four participants were excluded due to equipment failure and/or human error during data collection resulting in corrupted data. Participants had the opportunity to earn an extra €5 in each EEG session, based on the variable payoff scheme described below. All participants were naïve to the purpose of the study.
 
-## Experimental setup and presentation software
+### Experimental setup and presentation software
 
 Participants completed the experiment in a low-lit, quiet room. Stimuli were shown on a computer monitor, with a refresh rate of 100 Hz. The experiment was created on Presentation software (Neurobehavioral Systems, Inc, Berkeley, CA, https://www.neurobs.com/).
 
-## Experiment 1
+#### Experiment 1
 
 Participants were seated approximately 70 cm away from the monitor.
 
-## Experiment 2
+#### Experiment 2
 
 Participants rested their heads on a chin rest 73 cm away from the monitor.
 
-## Stimuli and RSVP
+### Stimuli and RSVP
 
 Stimuli consisted of a continuous semi-random RSVP of full screen texture patterns (see Figure 2). The texture patterns consisted of line elements approximately 0.07° thick and 0.4° long in visual angle. Each texture in the RSVP was oriented in one of four possible directions: 0° [vertical], 45°, 90°, or 135°. After a random intertrial interval (ITI) containing randomly ordered textures, a fixed-order sequence containing 25 textures began. The fifth stimulus of the sequence either contained a texture-defined figure (target, T) or a homogenous texture (non-target, NT). The fixed sequence contained the following orientations: 45°, 90°, 0°, 90°, T/NT, 0°, 90°, 0°, 90°, 0°, 45°, 0°, 135°, 90°, 45°, 0°, 135°, 0°, 45°, 90°, 45°, 90°, 135°, 0°, 135°. This fixed sequence ensured that the visual stimulation surrounding the target was always the same across trials. The non-target was a homogeneous diagonally oriented texture (45° or 135°). The target was the same texture but contained an orientation-defined square in the center, of which the surface elements were orthogonally rotated with respect to the background. Orientation of targets and non-targets was randomly selected, while ensuring that each orientation was used in 50% of trials. The visual angle of the target square was approximately 2.4°. In 75% of trials, a target figure was shown, and in 25% no figure was shown.
 
-## Experiment 1
+#### Experiment 1
 
 Target stimuli were presented for 40 ms (i.e. stimulation frequency 25 Hz). The ITI varied randomly between 300 and 2200 ms. The fixation dot was red throughout the experiment.
 
-## Experiment 2
+#### Experiment 2
 
 Target stimuli were presented for 30 ms (i.e. stimulation frequency of 33.3 Hz). The ITI varied randomly between 1800 and 2200 ms. The onset of the fixed sequence containing a target or a non-target was signaled by the central fixation dot turning from gray to black. The fixation dot was black during the fixed sequence. After the fixed sequence, the fixation dot changed to green, which indicated that participants could respond.
 
-## Task instructions and payoff induced criterion manipulation
+### Task instructions and payoff induced criterion manipulation
 
 Participants were instructed to detect a target in an RSVP stream by pressing a button, while their criterion was manipulated.
 
-## Experiment 1
+#### Experiment 1
 
 Participants were instructed to press a button using their right hand whenever they observed a target in the continuous RSVP. Although the onset of a trial within the continuous stream of textures was not explicitly cued, the similar distribution of reaction times in target and non-target trials suggests that participants used the temporal structure of the task even when no target appeared. See Kloosterman et al., 2019 for details. In alternating 9-min blocks of trials, we actively biased participants’ perceptual decisions by instructing them either to report as many targets as possible while playing an aversive tone after each miss (no button press after presentation of a target, liberal condition), or by instructing them to only report high-certainty targets while playing an aversive tone after each false alarm (button press even when no target was presented, conservative condition). Participants were told their bonus would be diminished by €0.03 after a miss and diminished by €0.10 after a false alarm. Participants were free to respond at any time during a block whenever they detected a target. A trial was considered a target present response when a button press occurred before the fixed-order sequence ended (i.e. within 0.84 s after onset of the fifth texture containing the (non)target, see Figure 2). The criterion manipulation switched back and forth after every block, so that each session contained both conservative and liberal criterion blocks.
 
-## Experiment 2
+#### Experiment 2
 
 Participants were instructed to determine whether they observed a target in the continuous RSVP using the Perceptual Awareness Scale (PAS; Ramsøy and Overgaard, 2004). The PAS is a four-point scale, on which participants rate the strength of their experience of a stimulus from 0 to 3.
 
 The following instructions regarding the PAS were given to participants:
+
+<table>
+  <thead>
+    <tr>
+      <th>Response category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 – No experience</td>
+      <td>No impression of a square.</td>
+    </tr>
+    <tr>
+      <td>1 – Brief glimpse</td>
+      <td>A feeling that a square was shown.</td>
+    </tr>
+    <tr>
+      <td>2 – Almost clear experience</td>
+      <td>Ambiguous experience of a square. A feeling of being almost certain about seeing a square.</td>
+    </tr>
+    <tr>
+      <td>3 – Clear experience</td>
+      <td>Non-ambiguous experience of the square. No doubt in one’s answer.</td>
+    </tr>
+  </tbody>
+</table>
 
 Between blocks, participants were reminded of the description of each response option of the PAS. Participants received additional on-screen feedback if they used one response option for less than 10% of responses in the previous block: ‘You are not using all the possible responses on the scale. If this reflects your experience, that is absolutely fine. Otherwise, here are the categories again:’, followed by the PAS descriptions. This was to ensure participants were always aware of using the scale in full, rather than settling into a pattern of choosing between two responses, for example. Participants were further explicitly instructed to respond only according to what they experienced, regardless of the feedback they received during the experiment:
 
@@ -186,33 +225,33 @@ Between blocks, participants were reminded of the description of each response o
 
 Participants were instructed to respond when the fixation dot changed from gray to green, which occurred at the end of the fixed RSVP sequence. Responses given while the fixation date was not green were not recorded. Participants responded using the index finger of their preferred hand, by pressing keys labeled ‘0’, ‘1’, ‘2’, or ‘3’, corresponding to the responses possible on the PAS. As soon as a response was given, the fixation dot changed to gray and the button pressed was displayed in the center of the screen for 60 ms, on top of a stream of textures with a gray fixation dot, so participants could ensure they had pressed the correct key (or, alternatively, correct their finger position for the following trial). An auditory feedback tone was given for either false alarms (conservative condition, responding ‘1’, ‘2’, or ‘3’ when no target was present) or misses (liberal condition, responding ‘0’ when a target was present). In addition, for every tone, €0.01 was deducted from their €5 reward for that session. The criterion manipulation occurred at a session level, so that one feedback scheme was exclusively executed in on session, and the other in the other session. The order of sessions was counterbalanced across participants. There was no break in the stream of textures throughout a block of 144 trials, unless no response was given within the 5 s limit. In this case, participants were shown a screen reading ‘Please respond every time the fixation dot is green about what you just experienced.’, then given a 5-s countdown before the stream of textures resumed. Throughout the block, the same texture was never repeated twice in a row. No performance feedback was provided at the end of a block. Participants were informed of how much of the extra reward they earned in each session at the end of all sessions.
 
-## EEG sessions
+### EEG sessions
 
-## Experiment 1
+#### Experiment 1
 
 Prior to EEG recording in the first session, participants performed a 10-min practice run of both conditions, in which visual feedback directly after a miss (liberal condition) or false alarm (conservative) informed participants about their mistake, allowing them to adjust their decision bias accordingly. During EEG recording, participants performed six blocks per session lasting ca. 9 min each. During a block, participants continuously monitored the screen and were free to respond by button press whenever they thought they saw a target. Each block contained 240 trials, of which 180 target and 60 non-target trials. The condition of the first block of a session was counterbalanced across participants. There were short breaks between blocks, in which participants indicated when they were ready to begin the next block.
 
-## Experiment 2
+#### Experiment 2
 
 Prior to collecting EEG, each subject underwent a practice session. The practice session started with a slower version of the task, so participants could familiarize themselves with the structure of the trials, and clearly identify the target, and in which they were familiarized with the PAS scale. Only participants that were able to perform the task with a reasonable accuracy of 30% (hit rate minus false alarm rate) were invited for the subsequent EEG sessions. EEG was collected in two different experimental sessions. A session contained ten blocks of either the liberal or conservative condition (counterbalanced across participants). Each block contained 144 trials (108 target trials, 36 non-target trials), and lasted approximately 9 min.
 
-## EEG recording
+### EEG recording
 
 Continuous EEG data were recorded at 512 HZ using a 64-channel BioSemi Active-Two system (BioSemi, Amsterdam, The Netherlands). Two external electrodes were placed on the earlobes, to be used as a reference. Electrooculargraphy (EOG) was recorded using four electrodes: on the outer side of each eye (horizontal) and above and below the left eye (vertical). Horizontal and vertical EOG electrodes were referenced against each other, to obtain information about horizontal eye movements, and vertical eye movements and blinks, respectively. Triggers were sent at the time of response and target presentation, recording the orientation and type of trial (target or catch).
 
-## Experiment 1
+#### Experiment 1
 
 EEG was recorded from a 48-electrode EEG cap that was slightly modified to include I1 and I2 next to Iz. Other electrodes were placed according to the 10–20 system. The complete list of electrodes was AF3, AF4, C3, C4, CP1, CP2, CP3, CP4, CP5, CP6, Cz, F3, F4, F7, F8, FC1, FC2, FC5, FC6, Fp1, Fp2, Fz, I1, I2, Iz, O1, O2, Oz, P1, P10, P2, P3, P4, P5, P6, P7, P8, P9, PO3, PO4, PO7, PO8, POz, Pz, T7, T8, TP7, TP8.
 
-## Experiment 2
+#### Experiment 2
 
 EEG was recorded from a standard 64-electrode EEG cap, according to the 10–20 system. The complete list of electrodes was AF3, AF4, AF7, AF8, AFz, C1, C2, C3, C4, C5, C6, CP1, CP2, CP3, CP4, CP5, CP6, CPz, Cz, F1, F2, F3, F4, F5, F6, F7, F8, FC1, FC2, FC3, FC4, FC5, FC6, FCz, FT7, FT8, Fp1, Fp2, Fpz, Fz, Iz, O1, O2, Oz, P1, P10, P2, P3, P4, P5, P6, P7, P8, P9, PO3, PO4, PO7, PO8, POz, Pz, T7, T8, TP7, TP8.
 
-## EEG pre-processing
+### EEG pre-processing
 
 The EEG data from Experiment 1 were pre-processed as described in detail in Kloosterman et al., 2019, with the only exception that for these analyses no detrending was applied to the data. The data from Experiment 2 were pre-processed using a very similar pre-processing pipeline, as described next. All pre-processing and subsequent analyses were conducted using EEGLAB (Delorme and Makeig, 2004), FieldTrip (Oostenveld et al., 2011), and/or the ADAM toolbox (Fahrenfort et al., 2018) using MATLAB code. All data were referenced to the average voltage of two electrodes attached to the earlobes. Channel locations were looked up according to the standard 10–5 BESA cap. Data were downsampled to 256 Hz to reduce time and space required for further pre-processing and analysis. The continuous EEG data were epoched between 100 ms before target presentation and 750 ms after target presentation. An independent component analysis (ICA) was used on epoched and demeaned data to identify and remove eye-blinks. Finally, the data were transformed to scalp current density (CSD) using spherical splines (Perrin et al., 1989), after which the data were baseline-corrected using the interval (–100, 0) ms prior to decoding. No high- or low-pass filtering was applied to the data to preclude temporal displacements (van Driel et al., 2021; Vanrullen, 2011).
 
-## EEG decoding analyses
+### EEG decoding analyses
 
 Trials were balanced such that the number of trials within each stimulus–response combination were always the same between the liberal and the conservative condition. To achieve this, trials were randomly selected from the stimulus–response condition with the overrepresented stimulus class to match the condition with fewer responses in number. This was done to ensure that differences between the liberal and conservative conditions could not arise just because more trials were included in one condition than in the other.
 

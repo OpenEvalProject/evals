@@ -17,32 +17,32 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 Stomatology Hospital, School of Stomatology, Zhejiang University School of Medicine, Zhejiang Provincial Clinical Research Centre for Oral Diseases, Key Laboratory of Oral Biomedical Research of Zhejiang Province, Cancer Centre of Zhejiang University Hangzhou China
-2. https://ror.org/04epb4p87 The First School of Clinical Medicine, Zhejiang Chinese Medical University Hangzhou China
-3. https://ror.org/04epb4p87 School of Stomatology, Zhejiang Chinese Medical University Hangzhou China
-4. https://ror.org/04epb4p87 Department of Epidemiology, School of Public Health Zhejiang Chinese Medical University Hangzhou China
+1. Stomatology Hospital, School of Stomatology, Zhejiang University School of Medicine, Zhejiang Provincial Clinical Research Centre for Oral Diseases, Key Laboratory of Oral Biomedical Research of Zhejiang Province, Cancer Centre of Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. The First School of Clinical Medicine, Zhejiang Chinese Medical University Hangzhou China ([ROR:04epb4p87](https://ror.org/04epb4p87))
+3. School of Stomatology, Zhejiang Chinese Medical University Hangzhou China ([ROR:04epb4p87](https://ror.org/04epb4p87))
+4. Department of Epidemiology, School of Public Health Zhejiang Chinese Medical University Hangzhou China ([ROR:04epb4p87](https://ror.org/04epb4p87))
 
 † Corresponding author
 
 ## Abstract
 
-Periodontitis drives irreversible destruction of periodontal tissue and is prone to exacerbating inflammatory disorders. Systemic immunomodulatory management continues to be an attractive approach in periodontal care, particularly within the context of ‘predictive, preventive, and personalized’ periodontics. The present study incorporated genetic proxies identified through genome-wide association studies for circulating immune cells and periodontitis into a comprehensive Mendelian randomization (MR) framework. Univariable MR, multivariable MR, subgroup analysis, reverse MR, and Bayesian model averaging (MR-BMA) were utilized to investigate the causal relationships. Furthermore, transcriptome-wide association study and colocalization analysis were deployed to pinpoint the underlying genes. Consequently, the MR study indicated a causal association between circulating neutrophils, natural killer T cells, plasmacytoid dendritic cells, and an elevated risk of periodontitis. MR-BMA analysis revealed that neutrophils were the primary contributors to periodontitis. The high-confidence genes S100A9 and S100A12 , located on 1q21.3, could potentially serve as immunomodulatory targets for neutrophil-mediated periodontitis. These findings hold promise for early diagnosis, risk assessment, targeted prevention, and personalized treatment of periodontitis. Considering the marginal association observed in our study, further research is required to comprehend the biological underpinnings and ascertain the clinical relevance thoroughly.
+Periodontitis drives irreversible destruction of periodontal tissue and is prone to exacerbating inflammatory disorders. Systemic immunomodulatory management continues to be an attractive approach in periodontal care, particularly within the context of ‘predictive, preventive, and personalized’ periodontics. The present study incorporated genetic proxies identified through genome-wide association studies for circulating immune cells and periodontitis into a comprehensive Mendelian randomization (MR) framework. Univariable MR, multivariable MR, subgroup analysis, reverse MR, and Bayesian model averaging (MR-BMA) were utilized to investigate the causal relationships. Furthermore, transcriptome-wide association study and colocalization analysis were deployed to pinpoint the underlying genes. Consequently, the MR study indicated a causal association between circulating neutrophils, natural killer T cells, plasmacytoid dendritic cells, and an elevated risk of periodontitis. MR-BMA analysis revealed that neutrophils were the primary contributors to periodontitis. The high-confidence genes S100A9 and S100A12, located on 1q21.3, could potentially serve as immunomodulatory targets for neutrophil-mediated periodontitis. These findings hold promise for early diagnosis, risk assessment, targeted prevention, and personalized treatment of periodontitis. Considering the marginal association observed in our study, further research is required to comprehend the biological underpinnings and ascertain the clinical relevance thoroughly.
 
 ## Introduction
 
-## Periodontitis imposes a considerable social burden on dental practice and general health
+### Periodontitis imposes a considerable social burden on dental practice and general health
 
 Periodontitis is a highly prevalent disease that affects a considerable percentage of the population. According to large-scale epidemiological research, up to half of all adults worldwide suffer periodontal disease, with severe periodontitis threatening 10.5–12.0% of them (Kassebaum et al., 2014). Furthermore, periodontitis is the leading cause of adult tooth loss, necessitating extensive dental procedures such as extractions, dental implants, or prosthetics, which can be costly and time-consuming for both patients and dental practitioners (Genco and Sanz, 2020). Recent research demonstrated a relationship between periodontitis and inflammatory comorbidities such as type 2 diabetes, cardiovascular disease, rheumatoid arthritis, and inflammatory bowel disease (Hajishengallis and Chavakis, 2021). The high prevalence and harmful implications of periodontitis underline the importance of managing periodontitis to maintain oral and general health (Peres et al., 2019). Since early-stage prevention is the most significant way to improve health, the identification of additional potential risk factors was required to provide predictive, preventive, and personalized strategies for periodontal care (Ma et al., 2021).
 
-## Evidence from epidemiology and pathophysiology demonstrates the impact of circulating immune cells on periodontitis
+### Evidence from epidemiology and pathophysiology demonstrates the impact of circulating immune cells on periodontitis
 
 Periodontitis is a chronic inflammatory disease characterized by the interactions between microorganisms and host immune response (Curtis et al., 2020). The immune response to periodontitis comprises both innate and adaptive immunity, with multiple cytokines, immune cells, and inflammatory pathways participating in a complex interplay (Dutzan et al., 2016). Systemic immunological alternations, such as circulating immune cells, play a crucial role in the initiation and progression of periodontitis (Cekici et al., 2014). An observational study indicated that patients with periodontitis experience a greater level of circulating leukocytes (Noz et al., 2021), while another discovered that the distribution of B cells alters in the context of severe periodontitis, with a higher proportion of circulating memory B cells (Demoersman et al., 2018). Furthermore, inflamed periodontal tissue recruits immune cells from circulation (Hajishengallis, 2020). With the progression of periodontitis, there is a significant alteration in the quantity of immune cells present within the periodontal tissue. Specifically, an increase in the count of both monocytes and B cells is observed, whereas a decrease is noted in the count of T cells (Nair et al., 2014; Steinmetz et al., 2016). The promising concept of ‘trained immunity’ has recently provided a greater understanding of the host immune response in periodontitis (Netea et al., 2020), which can explain the fact that the increased hyper-responsiveness of circulating immune cells from patients with periodontitis as well as its probable mechanism of mediating periodontitis and its comorbidities (Li et al., 2023).
 
-## Immunomodulation of systemic immune response serves as a hub for periodontal care
+### Immunomodulation of systemic immune response serves as a hub for periodontal care
 
 Systemic immunomodulation management can potentially improve host homeostasis by altering the composition and function of the immune milieu (Yang et al., 2021). Periodontitis can be effectively managed by restricting immune cell activation, implying that immunomodulators have significant promise in constructing comprehensive strategies for periodontal management (Zidar et al., 2021). For example, resveratrol, quercetin, and N-acetylcysteine were reported to reduce the release of reactive oxygen species by neutrophils, which aided in the prevention of periodontitis (Orihuela-Campos et al., 2015). Nonetheless, from a medical and therapeutic perspective, it is critical to determine whether the link between circulating immune cells and periodontitis is merely correlative or driven by causative mechanistic interactions (Lamont and Hajishengallis, 2015). Understanding the role of systemic immune alternations in periodontitis is critical for developing an effective strategy for early screening of high-risk patients, prompt implementation of definitive prevention, and individualized deployment of targeted treatment, all to reduce unexpected inflammatory responses, maintaining oral health, and avoiding complications (Zhang et al., 2023).
 
-## Mendelian randomization provides a potent complement to causal inference in terms of genetics
+### Mendelian randomization provides a potent complement to causal inference in terms of genetics
 
 Previous research has substantiated the potential of immunomodulation management in predicting and preventing periodontitis; however, in observational studies, the association is frequently disguised by reverse causality, confounding factors, and disease conditions, which obscured the intrinsic causal inference between them (Hajishengallis and Korostoff, 2017). Mendelian randomization (MR) investigates the causal relationships between risk factors and diseases by exploiting genetic variants as instrumental variables (IVs) (Davies et al., 2018), which is less likely to be affected by underlying bias or disease condition in that alleles are randomly allocated from parents to offspring (Julian et al., 2023). Notably, MR with distinct causal relationships may provide fresh evidence from a genomics perspective (Golubnitschaja et al., 2014). We postulate that individuals with a disproportionate immunological network have a higher risk of periodontitis due to unexpected inflammatory reactions.
 
@@ -54,13 +54,182 @@ The present study, as shown in Figure 1, was based on the Strengthening the Repo
 
 **Figure 1.:** (A) Overview of the process and principal assumptions of MR. (B) Data sources of the GWASs. (C) Methods performed in the present study. Abbreviations and Notes: BCC, Blood Cell Consortium; BMA, Bayesian model averaging, a high-throughput method based on nonlinear regression; BMI, body mass index; FPG, fasting plasma glucose; FUSION, functional summary-based imputation; GLIDE, Gene-Lifestyle Interactions in Dental Endpoints collaboration consortium; GWAS, genome-wide association study; IVW, inverse variance weighted, the primary method in MR to explore the association between exposure and outcome; LOO, leave-one-out, a method for detecting potential influential SNPs; SNP, single-nucleotide polymorphism, as genetic instrumental variables for the exposure and outcome; MACE, model-averaged causal estimate; MIP, marginal probability of inclusion; MR, Mendelian randomization; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier, a method for assessing and rectifying pleiotropic SNPs; MSCE, model-specific causal estimate; MVMR, multivariable Mendelian randomization, an MR model for adjusting confounding and mutual correction; Neu, neutrophil; NKT, natural killer T cell; pDC, plasmacytoid dendritic cell; PP, posterior probability; TWAS, transcriptome-wide association study; UVMR, univariable Mendelian randomization.
 
-## Estimated effects of circulating immune cells on periodontitis risk
+**Table 1.**
+ Characteristics of the GWAS data for MR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Phenotype</th>
+      <th>Year</th>
+      <th>Sample size (n case/n control)</th>
+      <th>n SNP (million)</th>
+      <th>Ancestry</th>
+      <th>Unit</th>
+      <th>Consortium/cohort</th>
+      <th>PMID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Exposure</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Circulating immune cells</td>
+      <td>2020</td>
+      <td>563,946</td>
+      <td>15</td>
+      <td>European</td>
+      <td>nl</td>
+      <td>BCC</td>
+      <td>32888494</td>
+    </tr>
+    <tr>
+      <td>Lymphocyte subsets</td>
+      <td>2020</td>
+      <td>3757</td>
+      <td>15.2</td>
+      <td>European</td>
+      <td>µg</td>
+      <td>Sardinian cohort</td>
+      <td>32929287</td>
+    </tr>
+    <tr>
+      <td>Outcome</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Periodontitis</td>
+      <td>2019</td>
+      <td>35,096 (12,251/22,845)</td>
+      <td>10.8</td>
+      <td>European</td>
+      <td>Event</td>
+      <td>GLIDE</td>
+      <td>31235808</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chronic periodontitis (FinnGen)</td>
+      <td>2023</td>
+      <td>263,668 (4434/259,234)</td>
+      <td>20.2</td>
+      <td>European</td>
+      <td>Event</td>
+      <td>FinnGen (R9K11)</td>
+      <td rowspan="3">36653562</td>
+    </tr>
+    <tr>
+      <td>Chronic gingivitis (FinnGen)</td>
+      <td>2021</td>
+      <td>196,245 (850/195,395)</td>
+      <td>16.4</td>
+      <td>European</td>
+      <td>Event</td>
+      <td>FinnGen (R5K11)</td>
+    </tr>
+    <tr>
+      <td>Gingival hyperplasia (FinnGen)</td>
+      <td>2023</td>
+      <td>259,613 (379/259,234)</td>
+      <td>20.2</td>
+      <td>European</td>
+      <td>Event</td>
+      <td>FinnGen (R9K11)</td>
+    </tr>
+    <tr>
+      <td>Covariate</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cigarettes smoked per day</td>
+      <td>2019</td>
+      <td>249,752</td>
+      <td>12</td>
+      <td>European</td>
+      <td>1/SD</td>
+      <td>GSCAN</td>
+      <td>30643251</td>
+    </tr>
+    <tr>
+      <td>Fasting plasma glucose</td>
+      <td>2021</td>
+      <td>200,622</td>
+      <td>31</td>
+      <td>European</td>
+      <td>mmol/l</td>
+      <td>MAGIC</td>
+      <td>34059833</td>
+    </tr>
+    <tr>
+      <td>Body mass index</td>
+      <td>2018</td>
+      <td>681,275</td>
+      <td>2.3</td>
+      <td>European</td>
+      <td>kg/m2</td>
+      <td>GIANT</td>
+      <td>30124842</td>
+    </tr>
+  </tbody>
+</table>
+
+### Estimated effects of circulating immune cells on periodontitis risk
 
 Following a rigorous screening procedure, a total of 1940 SNPs were selected as IVs in the present study (Supplementary file 1–Table S2). The F-statistics ranged from 28.67 to 220.07, indicating a low risk of weak instrument bias. Three circulating immune cells were identified to be suggestively significant in the inverse variance weighted (IVW) method [odds ratio (OR): 1.09, 95% confidence interval (CI): 1.01–1.17, p = 0.030 for natural killer T (NKT) cells; OR: 1.11, 95% CI: 1.00–1.23, p = 0.042 for neutrophils; OR: 1.13, 95% CI: 1.02–1.25, p = 0.025 for plasmacytoid dendritic cells (pDCs)], which were further supported by the maximum likelihood and MR Pleiotropy RESidual Sum and Outlier (MR-PRESSO) (Figure 2A, B; Supplementary file 1–Table S3). The MR-Egger regression revealed no evidence of horizontal pleiotropy (p-values for intercept >0.05). However, significant heterogeneity was detected in two traits (memory B cell and monocyte) (Supplementary file 1–Table S4), which faded after the removal of outliers (Supplementary file 1–Table S5—Table S5, Figure 2—figure supplement 1). Moreover, the leave-one-out analysis showed no influential SNPs significantly linked with the outcome (Figure 2—figure supplement 2). The observed significant results remained robust after removing pleiotropic SNPs (Supplementary file 1–Table S6), and the scatter plot displayed a balanced distribution among SNPs (Figure 2C–E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig2-v1.jpg)
+
+**Figure 2.:** (A) A circular heatmap representing the MR analyses for the associations between circulating immune cells and the risk of periodontitis. Lines, from outermost to innermost, represent IVW, MR-WM, MR-ML, MR‐Egger, and MR-PRESSO, respectively. The color scale of the heatmap is based on the OR. *p < 0.05. (B) A forest plot of the MR analyses for significant results in (A) (p < 0.05). The effects are quantified using OR with 95% CI. (C–E) The effect estimates for each variant in natural killer T cell (C), neutrophil (D), and plasmacytoid DC (E) are provided by plotting SNP–outcome associations against SNP–exposure associations. Lines with different colors represent the regression slope fitted by different MR methods. Abbreviations: CI, confidence interval; DC, dendritic cell; F-stat, F-statistic; IVW, inverse variance weighted; Het, heterogeneity; MR, Mendelian randomization; MR-ML, Mendelian randomization weighted median; MR-WM, Mendelian randomization maximum likelihood; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; OR, odds ratio; Pleio, pleiotropy; SNP, single-nucleotide polymorphism; UVMR, univariable Mendelian randomization.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Based on the RadialMR method, we detected 1, 21, 1, and 14 outlier SNPs from the memory B cell (A), the monocyte (B), the natural killer T cell (C), and the neutrophil (D), respectively. Abbreviations: IVW, inverse variance weighted; MR, Mendelian randomization; SNP, single-nucleotide polymorphism.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** No influential SNPs were detected for either the neutrophil (A), the natural killer T cell (B), or the plasmacytoid DC (C). Abbreviations: DC, dendritic cell; MR, Mendelian randomization; SNP, single-nucleotide polymorphism.
+
 A replication UVMR of three subgroups of periodontal diseases (chronic periodontitis, chronic gingivitis, and gingival hyperplasia) was also performed in the FinnGen cohort (Figure 3, Figure 3—figure supplement 1). However, the significant findings identified within the primary database were not replicated during subgroup analysis, which may be attributed to the heterogeneity of periodontal disease and variations in the population composition across datasets. Intriguingly, B cell was discovered to be involved in the subgroups of the FinnGen population (OR: 1.11, 95% CI: 1.02–1.22, p = 0.019 for chronic periodontitis; OR: 1.39, 95% CI: 1.02–1.88, p = 0.036 for gingival hyperplasia) (Supplementary file 1–Tables S7–S9). Reverse MR revealed no indication of reverse causality (Supplementary file 1–Table S10).
 
-## Assessing the independent and prioritized relationships through MVMR
+![Figure 3.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig3-v1.jpg)
+
+**Figure 3.:** (A) A circular heatmap illustrates the results of the subgroup analysis and reverse MR. Lines in the heatmap represent periodontitis (GLIDE), chronic periodontitis (FinnGen), chronic gingivitis (FinnGen), gingival hyperplasia (FinnGen), and reverse MR analysis, progressing from outside to inside. The color scale of the heatmap is determined by the odds ratio (OR). *p < 0.05. (B) A forest plot of the MR analyses for significant results in Figure 4A (p < 0.05). The effects are quantified using OR with 95% CI. Abbreviations: CG, chronic gingivitis; CI, confidence interval; CP, chronic periodontitis; DC, dendritic cell; F-stat, F-statistic; GH, gingival hyperplasia; GLIDE, Gene-Lifestyle Interactions in Dental Endpoints collaboration consortium; Het, heterogeneity; IVW, inverse variance weighted; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; PD, periodontitis; Pleio, pleiotropy; SNP, single-nucleotide polymorphism; MR, Mendelian randomization.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The effect estimates for each variant in B cell (CP) (A), plasmacytoid DC (CP) (B), B cell (GH) (C), and CD4+ T cell (CG) (D) are provided by plotting SNP–outcome associations against SNP–exposure associations. Lines with different colors represent the regression slope fitted by different MR methods. Abbreviations: CG, chronic gingivitis; CP, chronic periodontitis; DC, dendritic cell; GH, gingival hyperplasia; IVW, inverse variance weighted; MR-PRESSO, Mendelian Randomization Pleiotropy RESidual Sum and Outlier; SNP, single-nucleotide polymorphism; MR, Mendelian randomization.
+
+### Assessing the independent and prioritized relationships through MVMR
 
 After accounting for variable mutual adjustment and covariate correction for potential confounders, the causal relationship between circulating neutrophils and periodontitis remained stable with no evidence of heterogeneity or pleiotropy (Figure 4A, B). Nevertheless, the observed association dissipated upon adjusting for body mass index (BMI), unveiling significant heterogeneity. Even though the MVMR-least absolute shrinkage and selection operator (MVMR-LASSO) analysis was utilized to make appropriate corrections, caution was still recommended when dealing with the effect. Furthermore, the significance of pDC and NKT remained stable after mutual adjustment, whereas the strength of the association for pDC was compromised in the MR-Egger sensitivity analysis (Supplementary file 1–Table S11).
 
@@ -70,15 +239,176 @@ After accounting for variable mutual adjustment and covariate correction for pot
 
 In the MR-BMA framework, the best models and factors were ordered and prioritized based on their posterior probability (PP) and marginal inclusion probability (MIP) metrics (Table 2, Supplementary file 1−Table S12). Consequently, we observed neutrophil as the best model and leading factor for periodontitis (p = 0.771, MIP = 0.895), followed by NKT and pDC. The Cochran’s Q test and Cook’s distance failed to detect outlier or influential variations (Figure 4C–E).
 
-## TWAS reveals key crosstalk genes
+**Table 2.**
+ Ranking of risk factors and models for periodontitis in MR-BMA analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Ranking by MIP</th>
+      <th>MIP</th>
+      <th>MACE</th>
+      <th>Ranking by PP</th>
+      <th>PP</th>
+      <th>MSCE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neutrophil</td>
+      <td>1</td>
+      <td>0.895</td>
+      <td>0.097</td>
+      <td>1</td>
+      <td>0.771</td>
+      <td>0.108</td>
+    </tr>
+    <tr>
+      <td>Natural killer T cell</td>
+      <td>2</td>
+      <td>0.135</td>
+      <td>−0.003</td>
+      <td>2</td>
+      <td>0.056</td>
+      <td>−0.017</td>
+    </tr>
+    <tr>
+      <td>Plasmacytoid DC</td>
+      <td>3</td>
+      <td>0.102</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0.045</td>
+      <td>0.007</td>
+    </tr>
+  </tbody>
+</table>
+
+_DC, dendritic cell; MACE, average causal effect of risk factor model; MIP, marginal inclusion probability; MR-BMA, Mendelian randomization-Bayesian model averaging; MSCE, model-specific causal estimates; PP, poster probability._
+
+### TWAS reveals key crosstalk genes
 
 The TWAS indicated that five cross-trait genes, including CC2D2B (10q24.1), RP11-326C3.7 (11p15.5), USP3 (15q22.31), HERC1 (15q22.31), and AMFR (16q13), may be implicated in the interaction of circulating immune cells with periodontitis (Figure 5A, B). After Bonferroni correction (p < 6.27 × 10−6), we identified 658 of 3081 characteristics significantly associated with neutrophils, 5 of 443 with NKT, and 5 of 1038 with pDC. Within a broad criterion (p < 5 × 10−4), we discovered that 6 of 423 characteristics were linked to periodontitis (Figure 5C, Figure 5—figure supplement 1). Notably, four of these high-confidence genes were found to be involved with multiple phenotypes: S100A9, S100A12 (neutrophils and periodontitis); MCM6, P14KAP2 (neutrophils and pDC) (Table 3, Figure 5D). Most of these significant features survived conditional analysis and permutation testing (381/658 for neutrophils, 3/5 for NKT, 5/5 for pDC, and 5/6 for periodontitis). The majority of them were shown to be colocalized with their respective phenotype (554/658 for neutrophils, 4/5 for NKT, 3/5 for pDC, and 0/6 for periodontitis), implying that shared and pleiotropic SNPs influence both gene expression and phenotype (Supplementary file 1–Tables S13–S16).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig5-v1.jpg)
+
+**Figure 5.:** (A) A Venn diagram illustrates the intersecting genes shared by multiple traits (p < 0.05). (B) A heatmap representing the TWAS and colocalization analysis for five genes interacting among neutrophil, natural killer T cell, plasmacytoid DC, and periodontitis. The TWAS Z-score is used as the color scale for the heatmap. *PP.H3 + PP.H4 > 0.5; **PP.H3 + PP.H4 > 0.8; ***PP.H4 > 0.8. (C) Manhattan plot of gene–traits associations for periodontitis. The x-axis represents genomic positions. Blue lines indicate a Z-score of 1.96. Red circles represent significant gene–trait associations (p < 0.05). Six genes satisfy a multiple corrected threshold of p < 5 × 10−4. (D) Regional Manhattan plot of conditional analysis for S100A9, S100A12 in periodontitis. Gray bars indicate the location of genes on chromosome 1. Genes colored in orange and green on the graph indicate the marginally and jointly significant genes that best explain the GWAS signals. Gray and blue dots indicate the GWAS p-values before and after conditioning on the jointly significant gene. Abbreviations: DC, dendritic cell; GWAS, genome-wide association study; PP, posterior probability; TWAS, transcriptome-wide association study.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92895/elife-92895-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The Manhattan plot illustrates gene–trait associations for plasmacytoid DC (A) and natural killer T (B). The x-axis represents the genomic position. The blue lines indicate a Z-score of 1.96. The red circles denote significant gene–trait associations (p < 0.05). Ten genes satisfy a multiple corrected threshold of p < 6.27 × 10−6. The regional Manhattan plot demonstrates the conditional analysis for MCM6 in plasmacytoid DC (C), natural killer T (D), and P14KAP2 in plasmacytoid DC (E), natural killer T (F). The gray bars mark the location of genes on the chromosome. The genes highlighted in orange and green on the graph represent the marginally and jointly significant genes that best explain the GWAS signals. The gray and blue dots indicate the GWAS p-value before and after conditioning on the jointly significant gene. Abbreviations: DC, dendritic cell; GWAS, genome-wide association study; PP, posterior probability; TWAS, transcriptome-wide association study.
+
+**Table 3.**
+ TWAS and colocalization analysis identified genes involved in multiple phenotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Position</th>
+      <th>Phenotype</th>
+      <th>TWAS Z-score</th>
+      <th>TWAS p val</th>
+      <th>Perm p val</th>
+      <th>Model p val</th>
+      <th>PP.H3</th>
+      <th>PP.H4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">S100A9</td>
+      <td rowspan="2">1q21.3</td>
+      <td>Neutrophil</td>
+      <td>7.225</td>
+      <td>5.0 × 10−13</td>
+      <td>0</td>
+      <td>1.7 × 10−17</td>
+      <td>0.035</td>
+      <td>0.962</td>
+    </tr>
+    <tr>
+      <td>Periodontitis</td>
+      <td>−3.564</td>
+      <td>3.7 × 10−4</td>
+      <td>1.3 × 10−3</td>
+      <td>1.7 × 10−17</td>
+      <td>0.008</td>
+      <td>0.259</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S100A12</td>
+      <td rowspan="2">1q21.3</td>
+      <td>Neutrophil</td>
+      <td>7.310</td>
+      <td>2.7 × 10−13</td>
+      <td>1.7 × 10−4</td>
+      <td>4.1 × 10−43</td>
+      <td>0.027</td>
+      <td>0.970</td>
+    </tr>
+    <tr>
+      <td>Periodontitis</td>
+      <td>−3.513</td>
+      <td>4.4 × 10−4</td>
+      <td>8.1 × 10−4</td>
+      <td>4.1 × 10−43</td>
+      <td>0.008</td>
+      <td>0.244</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MCM6</td>
+      <td rowspan="2">2q21.3</td>
+      <td>Neutrophil</td>
+      <td>−5.549</td>
+      <td>2.9 × 10−8</td>
+      <td>0</td>
+      <td>3.5 × 10−13</td>
+      <td>0</td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>Plasmacytoid DC</td>
+      <td>7.172</td>
+      <td>7.4 × 10−13</td>
+      <td>2.7 × 10−3</td>
+      <td>3.5 × 10−13</td>
+      <td>1.000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="2">PI4KAP2</td>
+      <td rowspan="2">22q11.21</td>
+      <td>Neutrophil</td>
+      <td>5.345</td>
+      <td>9.0 × 10−8</td>
+      <td>3.3 × 10−3</td>
+      <td>3.7 × 10−39</td>
+      <td>0.003</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Plasmacytoid DC</td>
+      <td>5.322</td>
+      <td>1.0 × 10−7</td>
+      <td>3.2 × 10−3</td>
+      <td>3.7 × 10−39</td>
+      <td>0.009</td>
+      <td>0.045</td>
+    </tr>
+  </tbody>
+</table>
+
+_DC, dendritic cell; Perm, permutation test; PP, posterior probability; TWAS, transcriptome-wide association study._
 
 ## Discussion
 
 In the present research, we employed MR to explore the potential links between circulating immune cells and periodontitis. Our study revealed causal relationships between elevated levels of circulating neutrophils, NKT cells, and pDCs with a higher risk of periodontitis. TWAS and colocalization analysis demonstrated possible high-confidence and cross-trait genes to be engaged in their interaction.
 
-## Circulating neutrophils play a significant part in periodontitis and inflammatory comorbidities
+### Circulating neutrophils play a significant part in periodontitis and inflammatory comorbidities
 
 Notably, our findings suggested that circulating neutrophils may play a leading causal role in the likelihood of periodontitis, and it remained robust after correcting for potential confounding factors and outliers. Neutrophils are abundant and short-lived myeloid cells that can be rapidly recruited to inflammatory sites, serving as the first line of defense against infections and other host insults. In recent years, a profound understanding of the role of neutrophils in chronic inflammatory diseases, where they may directly act as effectors of destructive inflammation, has been gained. However, a scarcity of neutrophils can also trigger damaging tissue inflammation, their pivotal role in maintaining physiological equilibrium (Ley et al., 2018). Numerous pieces of clinical evidence have uncovered that neutrophils account for a significant portion of inflammatory tissue damage and that the severity of periodontitis is positively correlated with the overproduction, dysregulation, or hyperactivity of neutrophils (Chapple et al., 2023; Fine et al., 2021). A case–control study indicated that periodontitis patients suffered from more apoptotic circulatory neutrophils than healthy people (Nicu et al., 2018). An increased neutrophil count could suggest the inflammatory burden of gingivitis and dental plaque in the oral cavity (Sreenivasan and Prasad, 2022). Another study discovered neutrophil depletion ameliorated experimental periodontitis, while unrestrained recruitment aggravated it (Dutzan et al., 2018).
 
@@ -88,13 +418,13 @@ The recently developed concept of ‘trained immunity’ has introduced new pers
 
 Periodontitis exemplifies a condition that stimulates maladaptive myelopoiesis in the bone marrow, characterized by producing excessive hyper-inflammatory monocytes and neutrophils (Li et al., 2023). This leads to an influx of maladaptively trained neutrophils in both the blood circulation and periodontal tissues that infiltrate not only oral tissues but also non-oral ones, simultaneously triggering an increase in the production of neutrophil extracellular traps and a reduction in their degradation (White et al., 2016). As a result, this process intensifies the collapse of the epithelial barrier, fosters bacteremia, exacerbates periodontitis, and amplifies the severity of inflammatory complications (Burmeister et al., 2022). While our comprehension of neutrophils' regulatory mechanisms and functions is far from complete, current research has facilitated the development of targeted therapeutic strategies to manage chronic inflammatory disorders mediated by neutrophils, such as the inflammatory response observed in periodontitis.
 
-## Several lymphocyte subsets are causally associated with the risk of periodontitis
+### Several lymphocyte subsets are causally associated with the risk of periodontitis
 
 NKT cells, a distinct fraction of T lymphocytes, are linked to the pathophysiology of various inflammatory, osteolytic, and autoimmune diseases (Godfrey et al., 2000). Similar to our findings, previous research revealed more NKT recruited in periodontitis tissues (Muthukuru, 2012; Yamazaki et al., 2001). Several studies have demonstrated the tissue-specific function of NKT and highlighted its pathogenic role in periodontitis (Aoki-Nonaka et al., 2014; Melgar-Rodríguez et al., 2021), which may be attributed to the proinflammatory and immunoregulatory activities mediated by NKT, spanning from cytokine production to immune cell interactions (Seidel et al., 2020).
 
 In addition, our study identified a convoluted causal relationship between pDC and periodontitis. Dendritic cells, as specialized antigen-presenting cells, play a crucial role in the modulation of the host immune response and may be related to bone loss during periodontitis (El-Awady et al., 2022; Ginesin et al., 2023). In response to viral encounters and infection, pDC represents a unique subgroup of DC that releases type I interferon (Jego et al., 2003). However, pDC is only discovered in a tiny percentage of healthy oral tissues, and more relevant clinical research still needs to be conducted (Meghil and Cutler, 2020; Wilensky et al., 2014). The involvement of pDC in periodontitis deserves further investigation.
 
-## Systemic immunomodulation management for immune cells serves as a target for periodontal care
+### Systemic immunomodulation management for immune cells serves as a target for periodontal care
 
 Periodontitis is a damaging inflammatory disease induced and exacerbated by the plaque biofilm and host immune response (Moutsopoulos and Konkel, 2018). The systemic immune response comprises both innate and adaptive immunity, with numerous cytokines, immune cells, and inflammatory pathways interacting in complex crosstalk during periodontitis, hinting that immunomodulation management may be an essential target for periodontal care (Dutzan et al., 2016; Hajishengallis, 2014).
 
@@ -102,7 +432,7 @@ Reactive periodontal therapies, which focus on plaque management, pocket depth r
 
 Our present study highlighted five genes (USP3, AMFR, HERC1, CC2D2B, and RP11-326C3.7) that may play a pivotal role in the communication between circulating neutrophils, pDC, NKT, and periodontitis, as well as two high-confidence genes (S100A9, S100A12) situated within 1q21.3 as prospective gene targets for regulating circulating neutrophils during periodontitis. Our findings could pave the way for a novel preventive and therapeutic approach to modifying the systemic immunological equilibrium in periodontitis patients by modulating circulating immune cells. These findings enable the prediction of individuals at risk of periodontitis by screening specific immune imbalances, which could then be employed to prevent periodontitis and related inflammatory comorbidities, particularly in patients with systemic susceptibility factors.
 
-## Strengths and limitations in the present study
+### Strengths and limitations in the present study
 
 The present study exhibited several strengths. First, under the premise of three key assumptions, MR is a powerful tool for explaining the relationship between complicated features (such as circulating immune cells) by successfully mitigating the effect of probable confounders and allowing for reasonable causal order. Second, a rigorous quality control process was conducted in accordance with the STROBE-MR checklist in multiple domains, including IVs selection, heterogeneity investigations, and removal of pleiotropic loci (Supplementary file 2—STROBE-MR Checklist). Third, we adopted a series of sensitivity tests and MVMR to rule out the impact of outlier, influential, or pleiotropic SNPs. Fourth, a novel method based on nonlinear Bayesian averaging was applied to explore the causal drivers of disease risk from a set of high-throughput risk factors. Finally, TWAS was used in conjunction with MR to identify achievable regulatory gene targets for periodontal care.
 
@@ -112,26 +442,26 @@ In conclusion, the present study provides suggestive evidence of the causal asso
 
 ## Materials and methods
 
-## Data source
+### Data source
 
 Summary-level data on 17 circulating immune cells were obtained from large-scale GWAS conducted by the Blood Cell Consortium (BCC) and the Sardinian cohort (Orrù et al., 2020 [GWAS Catalog: GCST0001391-GCST0002121]; Vuckovic et al., 2020 [GWAS Catalog: GCST90002379-GCST90002407]). The GWAS data for periodontitis and its subtypes were supplied by the Gene-Lifestyle Interactions in Dental Endpoints collaboration (GLIDE) consortium and the FinnGen cohort (Kurki et al., 2023; Shungin et al., 2019). To maintain the homogeneity within the target group and minimize overlap, we performed a screening process on the population. Populations from the Latin American and UK Biobank were excluded from the periodontitis dataset (Ye et al., 2023). Characteristics of GWAS and included cohorts are highlighted in Table 1 and Supplementary file 1–Table S1. The statistical analyses were performed using ‘TwoSampleMR’ (version 0.5.7)’, ‘MRPRESSO’ (version 1.0), ‘RadialMR’ (version 1.1), ‘mrbma’ (version 0.1.0), and ‘GagnonMR’ (version 0.0.0.9) packages in R software (version 4.3.1).
 
 Candidates for IVs underwent a thorough set of screening procedures. A complicated criterion was performed to equalize the sample disparities among databases. We initially filtered the p-values of the SNPs, followed by the selection of independent SNPs using the linkage disequilibrium approach. A rigorous threshold of p < 1 × 10−9 was applied to the database with an abundance of positive SNPs (as in the BCC consortium) to ensure the reliability of IVs. Otherwise, a relatively strict standard of p < 1 × 10−6 was initially adopted (as in the Sardinian cohort), and we would loosen it at p < 5 × 10−6 if less than three SNPs met this threshold (an essential requirement for MR-PRESSO analysis). The R2 and F-statistics were introduced to demonstrate the degree of genetic variation explained and their relative impact on the outcomes, and SNPs with F-statistics <10 would be removed based on the first MR assumption (Papadimitriou et al., 2020). In addition, SNPs that exhibited a direct association with the outcome would also be deleted to support the third MR assumption. Palindromic and ambiguous SNPs were eliminated throughout the harmonization processes to ensure the reliability and validity of causal inference. In MVMR, we excluded SNPs in the major histocompatibility complex area (6p21.31) due to their complexity and confounding effects (Burgess and Thompson, 2015).
 
-## Univariable Mendelian randomization
+### Univariable Mendelian randomization
 
 In UVMR, the IVW method was performed as the primary analysis, and four alternative MR methods, including weighted median, maximum likelihood, MR-Egger, and MR-PRESSO global test were employed for sensitivity testing to assess the robustness of the IVW estimates. The IVW assumes that all genetic variations meet the conditions and integrates calculations from multiple genetic variants by weighting them inversely to variances (Sanderson et al., 2022). The weighted median generates precise estimates when more than half of the SNPs are valid (Gormley et al., 2023). The maximum likelihood offers a normal bivariate distribution to estimate causal effects by maximizing the likelihood function with a linear relationship (Xue et al., 2021). MR-Egger provides estimates after accounting for possible horizontal pleiotropy discovered by its incorporated intercept test, albeit the estimates were frequently underpowered (Bowden et al., 2016). MR-PRESSO detects outliers that cause pleiotropy and generates estimates once these outlier SNPs are eliminated (Verbanck et al., 2018). The observed significant results were considered ‘robust’ if the effect of sensitivity analyses was identical to that of the IVW method, yielding a p-value <0.05.
 
-## Multivariable Mendelian randomization
+### Multivariable Mendelian randomization
 
 To gauge the individual influence of each variant, MVMR analysis with mutual adjustment was performed, followed by a correction for associated confounders (Burgess and Thompson, 2015). We have incorporated covariates, including the number of cigarettes smoked, fasting plasma glucose levels, and BMI into the MVMR analysis, given that these factors could indirectly affect systemic immune responses and inflammation (Liu et al., 2023). The MVMR-IVW method was utilized as the primary test, supplemented by the MVMR-LASSO and the MVMR-Egger method (Bowden et al., 2016). The MVMR-LASSO regression yields dependable estimations for moderate-to-high degrees of heterogeneity or pleiotropy, and it also assists in alleviating the potential effects of multicollinearity among variables (Grant and Burgess, 2021).
 
 The heterogeneity and horizontal pleiotropy of the results were quantified using Cochran’s Q-statistics and the intercept term in MR-Egger regression, respectively. The MR-Radial, a more sensitive method for outliers, would detect and remove outlier SNPs whenever heterogeneity or pleiotropy was discovered (Bowden et al., 2018). The leave-one-out analysis and scatter plot were conducted to detect influential SNPs.
 
-## Bayesian model averaging
+### Bayesian model averaging
 
 As a multivariate framework for high-throughput risk factors based on nonlinear regression, the MR-BMA was then employed to explore the leading traits responsible for outcome (Zuber et al., 2020). First, we used closed-form Bayes factors and independence priors to calculate each variant’s PP and model-specific causal estimates. Next, the total PPs for all potential models were added to determine the MIP. The model-averaged causal estimate, which reflected the average direct effect of each metabolic trait on the outcomes, was also used to compare risk factors and interpret the directions. Finally, the best model was chosen, preferably based on ranking each model’s MIP and PP values. The Q-statistic and Cook’s distance were used to identify invalid outliers and influential variants within the model. A genetic variant was defined as either an outlier or an influential variant if it possessed a q-value exceeding 10 or its Cook’s distance surpassed the median of the corresponding F-distribution (Eledum, 2021). The MR-BMA would be repeated once unqualified variations were discovered.
 
-## Transcriptome-wide association study
+### Transcriptome-wide association study
 
 We exploited the updated Genotype-Tissue Expression (GTEx) project Version 8 whole-blood data for TWAS analysis (Gusev et al., 2016). First, the functional summary-based imputation (FUSION) pipeline was used to infer the transcriptome associated with significant outcomes, among which the optimal gene expression model was chosen by comparing the values of R2 provided by Bayesian sparse linear mixed models and multiple penalized linear regressions. A Bonferroni-corrected criterion of p < 6.27 × 10−6 (0.05/7890 genes) was adopted to measure statistical significance. Then, conditional analysis and permutation testing were implemented to assess the dependability and robustness of the gene transcript–trait relationships discovered through TWAS. Finally, we performed an expression quantitative trait locus colocalization analysis on TWAS-derived genes to determine whether the association was caused by a single causal SNP (PP.H4) or distinct causal SNPs (PP.H3). PP.H3 + PP.H4 > 0.8 was considered significant evidence of colocalization (Wallace, 2020).

@@ -37,7 +37,7 @@
 
 ## Abstract
 
-10.7554/eLife.40907.001 Bcl-2 family proteins reorganize mitochondrial membranes during apoptosis, to form pores and rearrange cristae. In vitro and in vivo analysis integrated with human genetics reveals a novel homeostatic mitochondrial function for Bcl-2 family protein Bid. Loss of full-length Bid results in apoptosis-independent, irregular cristae with decreased respiration. Bid-/- mice display stress-induced myocardial dysfunction and damage. A gene-based approach applied to a biobank, validated in two independent GWAS studies, reveals that decreased genetically determined BID expression associates with myocardial infarction (MI) susceptibility. Patients in the bottom 5% of the expression distribution exhibit >4 fold increased MI risk. Carrier status with nonsynonymous variation in Bid’s membrane binding domain, Bid M148T , associates with MI predisposition. Furthermore, Bid but not Bid M148T associates with Mcl-1 Matrix , previously implicated in cristae stability; decreased MCL-1 expression associates with MI. Our results identify a role for Bid in homeostatic mitochondrial cristae reorganization, that we link to human cardiac disease.
+Bcl-2 family proteins reorganize mitochondrial membranes during apoptosis, to form pores and rearrange cristae. In vitro and in vivo analysis integrated with human genetics reveals a novel homeostatic mitochondrial function for Bcl-2 family protein Bid. Loss of full-length Bid results in apoptosis-independent, irregular cristae with decreased respiration. Bid-/- mice display stress-induced myocardial dysfunction and damage. A gene-based approach applied to a biobank, validated in two independent GWAS studies, reveals that decreased genetically determined BID expression associates with myocardial infarction (MI) susceptibility. Patients in the bottom 5% of the expression distribution exhibit >4 fold increased MI risk. Carrier status with nonsynonymous variation in Bid’s membrane binding domain, BidM148T, associates with MI predisposition. Furthermore, Bid but not BidM148T associates with Mcl-1Matrix, previously implicated in cristae stability; decreased MCL-1 expression associates with MI. Our results identify a role for Bid in homeostatic mitochondrial cristae reorganization, that we link to human cardiac disease.
 
 ## Introduction
 
@@ -63,15 +63,27 @@ Our study provides an integrative approach, summarized in Figure 1, that spans o
 
 ## Results
 
-## Bid-/- cells have a cristae defect that can be rescued with BH3-mutated or D59-mutated Bid
+### Bid-/- cells have a cristae defect that can be rescued with BH3-mutated or D59-mutated Bid
 
 Consistent with a pro-survival function, Bid-/- myeloid progenitor cells (MPCs) display decreased growth rates not due to altered proliferation, but instead as a result of decreased viability (p<0.05) (Figure 2—figure supplement 1a–c). Given the critical apoptotic role for Bid at the mitochondria, we evaluated mitochondrial structure in Bid-/- MPCs by transmission electron microscopy (TEM) (Figure 2a and b, Figure 2—figure supplement 2a). Compared to Bid +/+ MPCs, mitochondria in Bid-/- MPCs were highly abnormal. Quantitation of the average number of cristae per mitochondrion revealed a significant decrease in the number of cristae in Bid-/- MPCs compared to Bid +/+ MPCs (p<0.0001) (Figure 2c). This function is independent of Bid’s apoptotic role, as Bid-/- MPCs stably expressing Flag-HA-tagged full-length Bid mutated in either in its BH3-domain (FHA-BidBH3) or caspase-8 cleavage site D59 (FHA-BidD59A) could rescue cristae structure (p<0.0001) (Figure 2c). Furthermore, quantitation of the area density of mitochondria per cell revealed a slight decrease in density in the Bid-/- cells compared to Bid+/+ cells (p<0.05), while FHA-BidD59A expressing cells had increased mitochondrial density compared to all other cell lines (Figure 2d).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig2-v3.jpg)
+
+**Figure 2.:** (A) Transmission electron microscopy (TEM) of mitochondria from MPC cell lines including: Bid +/+ (WT), Bid-/-, Bid-/- + FHA Bid, Bid-/- + FHA-BidBH3 and Bid-/- + FHA-BidD59A. Representative images at 30,000X (scale bar = 500 nm), 67,000X and 100,000X magnification (scale bar = 100 nm). Also see Figure 2—figure supplement 2. (B) Western blot of expression levels of Bid for the indicated genotypes. Note that full-length Bid is observed in Bid-/- + FHA Bid cells due to cleavage of the FlagHA-epitope tag. (C) Quantitation of the number of cristae per mitochondria (represented by the average length density) and (D) the mitochondrial density per cell (represented by the average area density) of the MPC lines shown in (A). A total of 40 images were quantified at 30,000X for each cell line. (E) Western blot of Bid (left) and HA-tag (right) indicating increased presence of cleaved Bid (cBid) in Bid-/- + FHA Bid cells (lower blots are darker exposure). FlagHA-tagged expressing cells were loaded for equal Bid expression. P-values were determined by one-way ANOVA (p<0.0001) with unpaired Student’s t-test (C, D). Error bars indicate ±SEM for all data. ns = not significant, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bid-/- MPCs display decreased growth rates (n = 4) but not proliferation rates (B) in complete media (n = 3). (C) Viability assay of Bid +/+ and Bid-/- cells in complete media (n = 7). Data were normalized to no treatment. P-values were determined by unpaired Student’s t-test for (A–C). Error bars indicate ±SEM for all data. ns = not significant, *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Transmission electron microscopy images of the indicated MPC cell lines. Images were taken at 67,000X, scale bar = 100 nm. (B) Western analysis of BH3-only proteins including Bad, Puma, and Bim from Bid +/+ and Bid-/- MPCs or (C) LV Cardiomyocytes. Loss of Bid does not lead to a compensatory increase in expression of these apoptotic proteins. * indicates cross-reacting band.
 
 Several groups have reported that cleaved Bid (cBid) reorganizes cristae (Cogliati et al., 2013; Scorrano et al., 2002) or Bid BH3-peptide narrows cristae junction size (Yamaguchi et al., 2008) in the presence of isolated mitochondria. Given that myeloid cells have high endogenous protease activity, we anticipated that reintroduction of WT FHA-Bid into Bid-/- MPCs by retroviral transduction may not rescue mitochondrial structure (Figure 2a–d). Indeed, overexpression of full-length WT Bid (Bid-/- + FHA Bid) but not FHA-BidBH3 or FHA-BidD59A results in the production of endogenous cBid in the absence of a death stimulus (Figure 2e). Thus, in a myeloid cell line, we observe that Bid’s apoptotic domains must be mutated to fully restore cristae.
 
 We next analyzed expression of other BH3-only apoptotic proteins as we anticipated they may be upregulated in the absence of Bid, and considering the known role of Bim in disassembly of mitochondrial Opa-1 oligomers (Yamaguchi et al., 2008). We evaluated Bid-/- cellular extracts as well as lysate from left ventricular (LV) cardiac tissue which are highly enriched in mitochondria, and find no compensatory upregulation of Bim, Bad, or Puma to account for the observed loss of cristae structure in Bid-/- cells (Figure 2—figure supplement 2b and c).
 
-## Full-length Bid localizes to multiple-mitochondrial subcompartments in the absence of cell death
+### Full-length Bid localizes to multiple-mitochondrial subcompartments in the absence of cell death
 
 It has previously been shown that full-length Bid can localize to mitochondria in the absence of an apoptotic stimulus (Maryanovich et al., 2012; Wang et al., 2014). To confirm this result, we first evaluated Bid in subcellular fractions of Bid-/- and WT MPCs. We find full-length Bid in a heavy membrane, mitochondrial-enriched fraction absent of cytosolic contamination (Figure 3a). We also observe full-length Bid in mitochondria isolated from liver tissue, both in a crude mitochondrial fraction as well as in a Percoll purified fraction (Figure 3b).
 
@@ -81,13 +93,21 @@ It has previously been shown that full-length Bid can localize to mitochondria i
 
 To determine the submitochondrial localization of full-length Bid, isolated liver mitochondria were treated with Proteinase K (PK) in the presence or absence of SDS. We observe that a pool of Bid remains uncleaved with PK, under conditions in which we observe cleaved Bak (Figure 3c), a protein associated with the OMM. Furthermore, we used an osmotic shock approach to separate and enrich for OMM and mitoplast (inner membrane and matrix containing fractions) from isolated liver mitochondria. We find an enrichment of Bid in the mitoplast-containing fraction compared to the OMM (Figure 3d). Taken together, the above results suggest that full-length Bid can localize to the mitochondria during non-apoptotic conditions and is found both at the OMM as well as in the mitoplast.
 
-## Bid-/- mice have abnormal left ventricular mitochondrial cristae exacerbated by acute cardiac stress
+### Bid-/- mice have abnormal left ventricular mitochondrial cristae exacerbated by acute cardiac stress
 
 Mitochondria cristae defects in humans can result in severe abnormalities in multiple organ systems, especially the heart (Brown et al., 2017; Meyers et al., 2013). We were interested to know if Bid-/- mice also display cristae abnormalities beyond myeloid cells. TEM of left ventricular tissue isolated from Bid-/- mice revealed striking irregularities both in gross mitochondrial organization between myofibrils as well as loss of normal lamellar cristae structure (Figure 4a). Specifically, without treatment, Bid-/- tissue had overall decreased mitochondrial electron density corresponding to significantly increased cristae width (p<0.0001) (Figure 4b).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig4-v3.jpg)
+
+**Figure 4.:** (A) Transmission electron microscopy (TEM) of left ventricle cardiomyocyte mitochondria from Bid +/+ and Bid-/- 18 hr with or without 0.5 mg/kg Epinephrine treatment. Representative images at 11,000X (scale bar = 2 μm), 30,000X (scale bar = 500 nm), and 67,000X (scale bar = 100 nm). (B) (Top) Quantitation of average cristae width (nanometers) corresponding to (A). n = 150 cristae per genotype, measured at 67,000X. (Bottom) Percent of cristae corresponding to the indicated widths (nm). (C) Echocardiogram analysis of left-ventricular internal diameter diastole (LVIDd, mm) and (D) LVID systole (LVIDs, mm) of Bid +/+ and Bid-/- mice at the indicated time points. (E) Ejection fraction (%) from Bid +/+ and Bid-/- mice without treatment (Baseline), 18 hr after 0.5 mg/kg Epinephrine, and 120 hr post Epinephrine (recovery). (F) End diastolic volume (μl) and (G) End systolic volume (μl) at the indicated time points. n = 12, 12, 5 Bid +/+ mice and n = 12, 10, 6 for Bid-/- mice for baseline, 18 hr, and 120 hr time points, respectively for (C–G). P-values were determined by one-way ANOVA with unpaired Student’s t-test (B), and unpaired Student’s t-test (C–G). Error bars indicate ± SEM for all data. ns = not significant, *p<0.05, **p<0.01 and ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fractional shortening (%) from mice corresponding to Figure 4. (B) Heart weight to body weight ratio from mice in Figure 4. (C) Fractional shortening (%) from Bid +/+ and Bid-/- mice after 3 doses of 7.5 mg/kg of Doxorubicin every 5 days (n = 4 mice per group). (D) Ejection fraction (%) of Doxorubicin treated mice as in (C). Measurements for FS and EF were made in at least duplicate using the LV trace function using the Visual Sonics Software ver2.2. P-values were determined by two-way ANOVA with unpaired student’s t-test (A) and unpaired Student’s t-test for (B–D). Error bars indicate ± SEM for all data. ns = not significant, *p<0.05, **p<0.01.
+
 To test how Bid-/- mice respond to an acute stress, we used Epinephrine (Epi) to increase the energetic demand on the mitochondria. We assessed both Bid+/+ and Bid-/- mitochondria 18 hr after a dose of 0.5 mg/kg Epi and find that while both Bid+/+ and Bid-/- tissues are damaged, the Bid-/- cristae are significantly more deformed (p<0.0001) (Figure 4a and b). Interestingly, these damaged cristae are structurally similar to mitochondria observed after induction of an acute myocardial infarction (MI) (Bryant et al., 1958). Thus, Bid-/- mice have a severe cardiac cristae defect that results in increased susceptibility to acute stress-induced damage.
 
-## Acute cardiac stress results in a functional defect in Bid-/- mice
+### Acute cardiac stress results in a functional defect in Bid-/- mice
 
 To determine whether the mitochondrial cristae defect in Bid-/- mice translates to decreased cardiac function, we performed echocardiograms on mice. In the absence of a clear mouse model of heart failure (Breckenridge, 2010), we chose Epi as an acute pharmacological stress due to the fact it causes both a rise in blood pressure with increased left ventricular (LV) afterload as well as increased myocardial contractility (Goldberg et al., 1960). This results in maximal oxygen demand with potential to reveal a phenotype driven by mitochondrial dysfunction.
 
@@ -95,21 +115,33 @@ Bid+/+ and Bid-/- mice were evaluated at baseline (without treatment), 18 hr aft
 
 Lastly, we also employed an additional pharmacological myocardial stress in the form of Doxorubicin (Dox) (3 doses of 7.5 mg/kg), a chemotherapy drug with heart mitochondrial toxicity (Hull et al., 2016). Dox also resulted in a significant decrease in FS and EF (p<0.01) (Figure 4—figure supplement 1c and d) in Bid-/- mice. Thus, using two different models, Epinephrine, which directly results in increased oxygen demand, as well as the mitochondrial toxic drug Doxorubicin, we find that Bid plays a role in maintaining LV function under stress.
 
-## Bid-/- hearts have increased fibrotic damage after acute stress, similar to post-MI damage observed in human patients
+### Bid-/- hearts have increased fibrotic damage after acute stress, similar to post-MI damage observed in human patients
 
 Myocardial fibrosis due to cardiomyocyte remodeling after damage is a prominent sequelae of MI, and directly contributes to loss of cardiac function (Talman and Ruskoaho, 2016). To determine the extent of fibrotic damage, we used Masson’s trichrome staining and quantitatively evaluated whole heart tissue sections (Figure 5). We find that Bid-/- tissue has significantly increased fibrosis both at the 18 hr and the recovery time point, 5 days post treatment (p<0.05) (Figure 5b and c). Interestingly, WT mice display no increase in fibrosis at 18 hr post-Epi; fibrosis developed in WT hearts at 5 days post-Epi. Thus, Bid-/- mice have more fibrosis and increased susceptibility to damage after stress. This result recapitulates the response to cardiomyocyte damage in human MI and suggests that although the Bid-/- mice are able to recover functionally, the long-term damage is more severe.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig5-v3.jpg)
 
-**Figure 5.:** Bid-/- hearts.(A) Representative images of H and E staining of Bid+/+ and Bid-/- hearts (top) and Masson’s Trichrome staining (bottom) without treatment. Quantitation of the Trichrome positivity (Total positive pixels/Total pixels), n = 3,3 respectively. (B) H and E and Masson’s Trichrome 18 hr after Epinephrine (0.5 mg/kg) with quantitation as in (A), n = 4, 3. (C) H and E and Masson’s Trichrome 5 days after Epinephrine (0.5 mg/kg) with quantitation, n = 6,6. P-values were determined by unpaired Student’s t-test. Error bars indicate ± SEM for all data. ns = not significant, *p<0.05.10.7554/eLife.40907.013Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Representative images of H and E staining of Bid+/+ and Bid-/- hearts (top) and Masson’s Trichrome staining (bottom) without treatment. Quantitation of the Trichrome positivity (Total positive pixels/Total pixels), n = 3,3 respectively. (B) H and E and Masson’s Trichrome 18 hr after Epinephrine (0.5 mg/kg) with quantitation as in (A), n = 4, 3. (C) H and E and Masson’s Trichrome 5 days after Epinephrine (0.5 mg/kg) with quantitation, n = 6,6. P-values were determined by unpaired Student’s t-test. Error bars indicate ± SEM for all data. ns = not significant, *p<0.05.
 
-## Loss of Bid results in decreased respiratory complex subunits and ATP synthase dimer activity
+### Loss of Bid results in decreased respiratory complex subunits and ATP synthase dimer activity
 
 To better understand how loss of Bid alters mitochondrial function, we performed proteomics using Multidimensional Protein Identification Technology (MudPIT) on equal concentrations of isolated mitochondrial protein from Bid +/+ and Bid-/- MPCs (Figure 6—figure supplement 1a). We identified a total of 3258 proteins that mapped to unique Entrez gene identifiers. Cross referencing our hits to the Mouse MitoCarta 2.0 (Calvo et al., 2016), we identified 54 significantly different mitochondrial proteins between the Bid+/+ and Bid-/- samples (Figure 6—figure supplement 1b and c).
 
 Our MudPIT results suggested a possible defect in mitochondrial respiratory chain function. To interrogate individual respiratory complexes, we isolated mitochondria from heart tissue of age matched Bid +/+ (WT) and Bid-/- mice. We then resolved digitonin-extracted complexes using gradient Native-PAGE, stained with Coomassie blue, and treated with complex-specific substrates to measure enzymatic activity. We observe a decrease in the activity of ATP synthase dimers from Bid-/- heart mitochondria (p<0.05) (Figure 6a and b), consistent with the known association between dimerization of ATP synthase in cristae loop formation and stabilization of cristae structure (Hahn et al., 2016; Paumard et al., 2002). Enzymatic activity of additional respiratory complexes and supercomplexes were also evaluated including Complex I (CI) and complex IV (CIV). We observed a significant decrease in the activity of complex I within the SCs and a trend for decreased activity of complex IV containing SCs (Figure 6—figure supplement 1d,e and f). Overall, these results are consistent with a role for Bid in maintenance of cristae structure linked to respiratory chain function.
 
-## Bid-/- MPCs display decreased respiration
+![Figure 6.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig6-v3.jpg)
+
+**Figure 6.:** (A) Representative native gel (left) and in-gel activity (IGA) assay (right) for Complex V (ATP synthase) from isolated Bid +/+ and Bid-/- heart mitochondria, D = dimer and M = monomer of ATP synthase. (B) Quantitation of IGA assay for heart CV activity as measured by the relative density of indicated dimer and monomer bands (arbitrary units), (n = 4). Also see Figure 6—figure supplement 1D–F for additional respiratory complex activity analysis. (C) Oxygen consumption rate (OCR) was measured in an Oroboros Oxygraph in complete IMDM media on equivalent numbers of indicated cells (2 × 106) (n = 7,7,4,3,3 respectively). (D) State 3 respiration of saponin permeabilized left ventricle cardiac fibers from Bid +/+ and Bid-/- mouse hearts in MiRO5 respiration medium supplemented with glutamate, malate, and ADP (n = 3). (E) Oxygen consumption (JO2) of permeabilized left ventricular cardiac fibers from Bid+/+ and Bid-/- mice in the presence of indicated metabolic substrates. G = glutamate, M = malate, CI = Complex I, CII = Complex II, Rot = Rotenone (n = 6,6 respectively). (F) Simultaneous ATP synthesis in presence of metabolic substrates as in (E). P-values determined by unpaired Student’s t-test (B), (D), one-way ANOVA (p<0.0001) with unpaired Student’s t-test (two-way) for (C), and two-way ANOVA (p<0.01) with unpaired Student’s t-test for (E) and (F). Error bars indicate ±SEM for all data. ns = not significant, *p<0.05, **p<0.01,***p<0.001, and ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MudPIT analysis workflow on isolated MPC mitochondria. (B) Summary of results revealing 54 significantly different mitochondrial proteins different by Fisher’s exact test (p<0.05). (C) Heat map highlights spectral count differences between identified cristae-related proteins. Scale indicates no spectral counts (white) to high spectral counts (red). (D) Representative Coomassie stained gradient native gel of equivalent amounts of Bid +/+ and Bid-/- heart mitochondria protein (left), in-gel activity (IGA) assay for Complex I (middle, arrow denotes significantly different complex activity), and in-gel activity for Complex IV (right). CI = Complex I, CIII = Complex III, CIV = Complex IV, CV = Complex V, and SC = supercomplexes. (E) Quantitation of in-gel activity assay for CI respiratory complexes In Bid+/+ and Bid-/- hearts, arbitrary units, n = 3 per gel (representative of 4 runs). (F) Quantitation of in-gel activity assay for all CIV respiratory complexes In Bid+/+ and Bid-/- hearts, arbitrary units, n = 3 per gel (representative of X runs). P-values were determined by unpaired Student’s t-test for (E). Error bars indicate ± SEM for all data. ns = not significant, *p<0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Bid+/+ and Bid-/- MPCs were cultured for 24 hr in complete media (no treatment = NT) or treated with10 µM Antimycin A (AMA) as a positive control for the last two hours followed by staining with 2 µM MitoSOX for mitochondrial ROS. Data are represented as geometric mean fluorescence intensity (MFI) (NT n = 7,6 and AMA n = 6,6 for Bid+/+ and Bid-/-, respectively). (B) Bid +/+ and Bid-/- MPCs were subjected to serum withdrawal for 24 hr and stained with MitoSOX (n = 4,4 for Bid+/+ and Bid-/- with and without FBS). (C) Treatment as in (B) followed by staining with 5 µM of DHE for cellular ROS (n = 11,10 with FBS and n = 4,4 without FBS for Bid+/+ and Bid-/-, respectively). (D) Mitochondrial membrane potential assessed with 50 nM TMRE in Bid +/+, Bid-/-, Bid-/- + FHA-BidBH3 and Bid-/- + FHA-BidBH3AA MPCs (n = 4,4,4,3 respectively). Cells overexpressing BH3- or BH3AA-mutanted Bid were gated on CD25 high expressing cells (i.e. only cells containing FHA-Bid). (E) Mitochondrial ROS of the indicated cell lines measured with MitoSOX as in (D) (n = 4,4,4,3 respectively). (F) ATP/O ratio determined from data shown in Figure 6E and F. P-values were determined by two-way ANOVA (p<0.001) with Tukey’s post test for (A–C), one-way ANOVA (not significant) with Student’s t-test (two-tailed) (D), (E), and two-way ANOVA with unpaired Student’s t-test for (F). Error bars indicate ± SEM for all data. ns = not significant, *p<0.05, **p<0.01.
+
+### Bid-/- MPCs display decreased respiration
 
 We next measured respiration directly from Bid-/- MPCs and LV fibers. Using an Oroboros Oxygraph, we found Bid-/- MPCs displayed significantly decreased oxygen consumption rates (OCR) compared to Bid+/+ cells (p=0.008), consistent with a cristae defect. Respiration could be restored in Bid-/- MPCs by re-introduction of FHA-BidBH3 and FHA-BidD59A but not FHA-Bid into Bid-/- MPCs (Bid-/- v. Bid-/- + FHA-BidBH3, p<0.0001 and Bid-/- v. FHA-BidD59A, p=0.0008) (Figure 6c).
 
@@ -119,7 +151,7 @@ Bid’s phosphorylation sites S61 and S78 (BidAA) have also been shown to corres
 
 We measured TMRE and MitoSOX by flow cytometry, gating on cells positive for human CD25 (co-expressed with FHA-Bid). We find that compared to BidBH3, FHA-BidBH3AA MPCs do not have altered membrane potential and show only a trend for increased ROS (p=0.1956) (Figure 6—figure supplement 2d and e). Thus, our results in MPCs are most consistent with a role for these phosphorylation sites in overall cell viability, by preventing caspase-8 cleavage of Bid (Desagher et al., 2001), rather than specifically in the regulation of mitochondrial membrane potential or ROS production.
 
-## Permeabilized cardiac fibers from Bid-/- mice exhibit decreased respiration and ATP production
+### Permeabilized cardiac fibers from Bid-/- mice exhibit decreased respiration and ATP production
 
 Next, to determine whether the decreased respiration is also observed in mouse cardiac fibers, we evaluated oxygen consumption in Bid-/- and Bid+/+ heart tissue. Respiration of permeabilized left ventricular (LV) cardiac fiber bundles (PmFBs) was measured in the presence of the complex I (CI) substrates malate and glutamate, as well as ADP (state 3). Bid-/- LV fibers also displayed significantly decreased oxygen consumption compared to Bid+/+ LV fibers (p=0.0103) (Figure 6d).
 
@@ -129,9 +161,25 @@ Rotenone, (complex I specific inhibitor) prevents electron flux through CI and w
 
 Oxidative phosphorylation efficiency can be defined as the ratio of ATP to O. Interestingly, despite an overall decrease in respiration and ATP production, Bid-/- PmFBs have similar efficiency to Bid +/+ when using CI substrates. This is consistent with our finding that Bid-/- mitochondria do not have increased ROS or loss of membrane potential (Figure 6—figure supplement 2a–d). However, in the presence of rotenone and succinate, Bid-/- PmFBs have an increased ATP/O ratio (p<0.05) (Figure 6—figure supplement 2f). This suggests Bid-/- mitochondria may compensate by bypassing complex I in favor of respiratory complex I I, which is not found in respiratory supercomplexes (Schägger and Pfeiffer, 2001) and therefore would be less impacted by disorganized cristae.
 
-## PrediXcan analysis reveals decreased BID expression associates with myocardial infarction
+### PrediXcan analysis reveals decreased BID expression associates with myocardial infarction
 
 Given the observed increased fibrosis in Bid-/- mice, phenotypically similar to post-MI damage in humans, we investigated the clinical relevance of our findings. We applied PrediXcan (Gamazon et al., 2015; Gamazon et al., 2018) (see Materials and methods and Figure 7a) to test the association of genetically determined BID expression in 29,366 patients in BioVU (Roden et al., 2008) with MI predisposition. Because of the substantial prior support from our studies observed for Bid’s role in heart function and inducing fibrotic damage with acute stress, we evaluated the association with MI risk of BID expression and used Bonferroni adjustment for the number of cardiac traits tested to assess statistical significance. Consistent with our findings in mice, we observed that decreased BID expression is significantly associated with MI (Figure 7b).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig7-v3.jpg)
+
+**Figure 7.:** (A) Diagram of PrediXcan analysis workflow. PrediXcan estimates the genetically regulated component of gene expression (germline), excluding the impact of the disease itself and the environment on expression. (B) PrediXcan in a BioVU replication cohort of 29, 366 patients (in heart tissue). Patients were also binned by BID gene expression, with the lowest 5% analyzed for incidence of the cardiac traits discovered by PrediXcan. A total of 1447 patients encompassed the lowest 5% in BID expression. Myocardial infarction had the highest increased incidence, represented by graph for fold change in these patients compared to all Vanderbilt Synthetic Derivative (SD) patients (1,593,350 records). P-values were determined by logistic regression with disease status as response variable and imputed gene expression as predictor.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Table of genes used for heritability and expression analysis. BID was analyzed in a primary analysis while all other genes encompassed a secondary analysis. (B) Heritability analysis for all indicated genes. Only BECN1 and BID were found to be significantly heritable. (C) Table of BID traits with associated p-values, effect size, and tissue type for all significant traits. (D) PrediXcan analysis results for gene expression and association with MI in BID and secondary analysis of all other genes.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A–F) Graphs of significant cardiac traits in the BioVU validation cohort ranked by p-values (-log10) for BECN1, NOXA, BNIP3L, BAD, BNIP3, and PUMA and the corresponding direction of gene expression. For all genes, cardiac traits that appeared more than once were represented in the graph by the most significant p-value. P-values were determined by logistic regression with disease status as response variable and imputed gene expression as predictor.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A) PrediXcan analysis in CARDIoGRAMplus C4D for association of BCL2L13 and BID with MI in. (p=0.02, effect size = −0.06, SE = 0.026). (B) Association of SNP rs2109659 with BID gene expression in GTEx (n = 114 lymphoblastoid cells, p=0.04, z-score = −2.05, effect allele = C) and Westra data sets (n = 5311 peripheral blood samples, p=2.15×10−23, z-score = −9.97, effect allele = C).
 
 To quantify the extent of genetic control of BID expression, we performed SNP-based heritability analysis (Gamazon and Park, 2016). Genotype-Tissue Expression (GTEx) project data, despite the breadth of tissues, are still generally underpowered for this analysis (because of sample size), and we therefore utilized a larger transcriptome panel DGN (n = 922) (Battle et al., 2014), which is, however, available only in whole blood. The BID heritability estimate was significant (h2 = 0.08 with standard error [SE] of 0.026), providing support for genetic regulation (Figure 7—figure supplement 1a and b).
 
@@ -141,7 +189,7 @@ In order to more precisely characterize the effect of decreased genetically dete
 
 To determine whether our findings are unique to BID among other BH3-only and related genes, including BECN1 (a Bcl-2-interacting protein involved in autophagy) and MTCH2 (a Bid-interacting protein) (Grinberg et al., 2005; Katz et al., 2012; Shamas-Din et al., 2013), we performed a secondary PrediXcan analysis. The results revealed a unique role for BID among these genes in conferring MI risk (see Supplementary Information, Materials and methods, and Figure 7—figure supplement 2a–f).
 
-## Validation in BioVU and CARDIoGRAMplusC4D GWAS
+### Validation in BioVU and CARDIoGRAMplusC4D GWAS
 
 In a separate BioVU sample set (see Materials and methods and Figure 7—figure supplement 1c and d), we observed a significant correlation (p=0.002) between decreased genetically determined BID expression in the aorta and MI. We analyzed the publicly available CARDIoGRAMplusC4D GWAS datasets (Schunkert et al., 2011; Nikpay et al., 2015) (see Materials and methods). Consistent with the BioVU discovery and validation results, decreased genetically determined expression of BID in heart was associated (p=0.02, effect size = −0.06, SE = 0.026) with MI in CARDIoGRAMplusC4D.
 
@@ -149,9 +197,17 @@ Interestingly, several of the SNPs (in the locus) nominally associated with MI a
 
 For completeness, we report the BID associations with cardiac traits using additional tissues (Sudlow et al., 2015). Interestingly, all nominally significant associations with other cardiac traits in these tissues in BioVU were consistent with decreased expression of BID (Figure 7—figure supplement 3c).
 
-## Bid’s alpha-helix-6 is important for its ability to regulate mitochondrial function
+### Bid’s alpha-helix-6 is important for its ability to regulate mitochondrial function
 
 Here we show that site-directed mutagenesis informed by exome association analysis of BID revealed that Bid's alpha-helix-6 directs its role to regulate mitochondrial function. First, we evaluated whether there was an association between coding SNPs within BID and MI risk. Using BioVU, we developed a cohort of 23,195 self-reported Caucasian subjects (median age 63 years [IQR 43 to 57 years] and 52% female) who had previously undergone genotyping (Illumina Human Exome BeadChip v1) (see Supplementary Information), of whom 1507 were MI cases. In multivariable logistic regression, a significant association was observed between carrier status (i.e. presence of any missense variant) and MI (p=0.013; OR 1.7 [95% CI 1.1–2.6]). Although this would not meet significance in an unbiased, exome-wide search, we are testing only a single gene for which we have already observed substantial evidence for its role in conferring MI risk. This gene-level association was primarily driven by variants in the membrane binding domain (MBD), including E120D, R123Q and M148T (Figure 8a). Carrier status for MBD variants (i.e. presence of any missense variant in the MBD) was strongly associated with MI (p=0.002; OR 8.5 [95% CI 2.1–33.6]) (Figure 8b and c). Notably, M148T was also associated with MI risk (p=0.029, OR = 1.47) in the recent meta-analysis of exome-chip studies involving 42,335 patients and 78,240 controls of European ancestry, consistent with the BioVU results (Stitziel et al., 2016).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig8-v3.jpg)
+
+**Figure 8.:** (A) Linear representation of Bid protein structure and approximate SNP locations. Human BID SNPs and several key domains and regions of Bid are indicated. (B) Statistical values including p-value, odds ratio (OR), and 95% confidence interval (95% CI) for Bid SNP association with MI for overall carrier status of BID variants or with variants in the membrane binding domain. (C) Graphical representation of the proportion of patients with MI in carrier groups with no SNPs in BID (no variant), any BID variant, or MBD variant. (D) Western blot of expression levels of Bid for the indicated cell lines. (E) TEM of Bid +/+, Bid-/- + FHABidBHBH3, and Bid-/- + FHABidBHBH3/M148T MPCs. Representative images at 30,000X (scale bar = 500 nm). (F) Quantitation of the number of cristae per mitochondria (average length density) and (G) the mitochondrial density per cell (average area density) of the MPC lines shown in (E). (n = 40,40,15 images per cell line respectively). (H) OCR of Bid +/+, Bid-/-, Bid-/- + FHABidBHBH3, and Bid-/- + FHABidBHBH3/M148T MPCs for all cell lines (n = 6,12,6,5 respectively). P-values were determined by multivariable logistic regression with Bonferroni correction as described in methods for (B) and (C), one-way ANOVA with Student’s t-test for (F) and G), and one-way ANOVA (p<0.05) with Student’s t-test for (H). Error bars indicate ±SEM for all data. ns = not significant, *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Viability assay (AV/PI) for indicated cell lines corresponding to Figure 8 and (B) the 24 hr time-point (n = 5). (C) Western blot of expression levels of Bid for the indicated genotypes. (D) OCR of Bid-/-, Bid-/- + FHABidBHBH3, Bid-/- + FHABidBHBH3/E120D, and Bid-/- + FHABidBHBH3/R124Q MPCs for all cell lines (n = 4,4,6,6 respectively). (E) Viability assay (AV/PI) of MPCs for indicated times following TNF-α/Actinomycin D treatment and (F) 24 hr timepoint (n = 3,3,3,6,6 respectively). The percent of viable cells was normalized to no treatment. P-values were determined by one-way ANOVA (p<0.05) with Student’s t-test for (B, D) and (F). Error bars indicate ±SEM for all data. ns = not significant, *p<0.05, **p<0.01, ***p<0.001.
 
 We next evaluated whether any of these coding variants, particularly those that lie within the MBD, affect Bid’s regulation of mitochondrial function. In particular, the conserved M148 residue lies within Bid’s alpha-helix-6, which regulates mitochondrial association and cristae remodeling in the context of cBid during apoptosis (Cogliati et al., 2013; Oh et al., 2005; Shamas-Din et al., 2013).
 
@@ -161,13 +217,21 @@ We evaluated mitochondrial cristae number in Bid +/+, Bid-/- + FHA-BidBH3 and 
 
 Interestingly, the two other SNPs identified in the membrane binding region of Bid also lie within a hydrophobic region of Bid as well as the region predicted to interact with MTCH2 (Katz et al., 2012). We made the corresponding mutations, E120D and R124Q in BH3-mutated Bid to determine if these would also result in altered mitochondrial function (Figure 8—figure supplement 1c). Compared to BH3-mutated Bid, BidBH3/E120D MPCs had equivalent respiration. While BidBH3/R124Q MPCs had decreased respiration (Figure 8—figure supplement 1d), it was not significantly different from WT MPCs. Neither BidBH3/E120D nor BidBH3/R124Q MPCs displayed altered sensitivity to TNF-α/Actinomycin D stimulated cell death (Figure 8—figure supplement 1e and f).
 
-## Bid binds the matrix form of Mcl-1, which can be altered with helix-6 mutant M148T
+### Bid binds the matrix form of Mcl-1, which can be altered with helix-6 mutant M148T
 
 Our observation that Bid is found within the mitoplast (Figure 3c and d) raised the possibility that it is interacting with mitochondrial matrix proteins known to regulate cristae structure. In particular, the anti-apoptotic Bcl-2 family member Mcl-1 has been shown to have a matrix isoform involved in respiratory chain maintenance and mitochondrial metabolism (Escudero et al., 2018; Perciavalle et al., 2012; Thomas et al., 2013; Wang et al., 2013). It is known that the BH3-domain of cBid associates with Mcl-1, to inhibit apoptosis (Clohessy et al., 2006).
 
 We tested whether full-length Bid associates with WT Mcl-1, an outer mitochondrial membrane form of Mcl-1OM or the matrix form of Mcl-1, Mcl-1Matrix. Using FlagHA-tagged Bid expressed in 293 T cells, we were able to immunoprecipitate all three forms of Mcl-1 (Figure 9a). This is in contrast to the other BH3-only protein Bim, which did not associate with Mcl-1Matrix (Perciavalle et al., 2012). We then sought to determine the role of helix-6 in this association. We find that FHA-BidM148T displays decreased association with Mcl-1Matrix compared to both WT-Bid and our rescue mutant, FHA-BidD59A. Furthermore, FHA-BidM148T displays increased association with WT Mcl-1 relative to either WT Bid or FHA-BidD59A (Figure 9b). The above results are consistent with a role for helix-6 in Bid’s association with Mcl-1Matrix, in the context of the mitochondrial cristae.
 
-## PrediXcan reveals decreased MCL-1 gene expression is associated with myocardial infarction
+![Figure 9.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig9-v3.jpg)
+
+**Figure 9.:** (A) Immunoprecipitation of FlagHA-Bid with anti-Flag M2 agarose beads from 293T whole cell lysate overexpressing FHA-Bid and one of the indicated Mcl-1 constructs: Mcl-1 (WT), Mcl-1OM (outer membrane), or Mcl-1Matrix. (B) Immunoprecipitation as in A with the indicated Bid constructs overexpressed with either empty vector (MSCV), Mcl-1 (WT) or Mcl-1Matrix in 293 T cells. Input represents approximately 1/70th of total protein used for immunoprecipitation. (C) PrediXcan analysis of proteins previously found to be involved in cristae stability. MTX1 = Metaxin1. (D) Contingency table of patients queried in the BioVU Synthetic Derivative for MI and the indicated diseases (left) identified by ICD9 code. Patient numbers are indicated in parenthesis and values in the heat map indicate the raw relative risk (RR) values. p=3.944×10−16 for MI v burn or headache (control diseases) and p<2.2×10−16 for MI v all other diseases. (E) Proposed model for a full-length Bid’s homeostatic role in regulating mitochondrial cristae structure. Bid can localize to the matrix where its association with Mcl-1 (directly or indirectly) facilitates the stabilization of respiratory complexes and cristae structure. This interaction is diminished by M148T-mutated Bid.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/40907/elife-40907-fig9-figsupp1-v3.jpg)
+
+**Figure 9—figure supplement 1.:** A total of 41 genes with known associations to cristae structure. Genes are identified by their names and unique Entrez Gene ID.
+
+### PrediXcan reveals decreased MCL-1 gene expression is associated with myocardial infarction
 
 Informed by our observation of Bid’s interaction with mitochondrial matrix proteins known to regulate cristae structure organization, we applied PrediXcan to evaluate potential contribution to MI susceptibility for these genes (see Figure 9—figure supplement 1). Loss of Mcl-1 has previously been shown to result in cardiomyopathy (Wang et al., 2013) and impaired autophagy leading to heart failure in mice (Thomas et al., 2013). We find that decreased genetically determined expression of MCL-1 is significantly associated with MI (p=0.00903) (Figure 9c). In addition to MCL-1, we find that MTX1 (Metaxin1), a mitochondrial protein transporter that associates with the MICOS complex (Guarani et al., 2015), has reduced genetically determined expression significantly associated with MI (p=1.93×10−5).
 
@@ -197,19 +261,387 @@ In sum, we have identified a homeostatic role for Bid in the regulation of mitoc
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mus musculus, C57BL/6J)</td>
+      <td></td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 000664 (Black 6) RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mus musculus, C57BL/SJ)</td>
+      <td>Bid-/-</td>
+      <td>PMID: 10476969</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>Myeloid Progenitor Cells (MPCs)</td>
+      <td>PMID: 16122425</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (mouse)</td>
+      <td>BID (BH3 interacting death domain agonist)</td>
+      <td>PMID: 8918887 NCBI Reference</td>
+      <td>MGI:108093 NM_007544.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>pOZ-FH-C-hCD25</td>
+      <td>PMID: 14712665</td>
+      <td></td>
+      <td>Available from Addgene (plasmid #32516)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-Bid</td>
+      <td>PMID: 8918887</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidBH3</td>
+      <td>PMID: 8918887</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidD59A</td>
+      <td>PMID: 12519725</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidBH3AA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant made with site directed mutagenesis of FHA-BidBH3 construct; Zinkel Laboratory; See Table 1 for primer sequences</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidBH3/M148T</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant made with site directed mutagenesis of FHA-BidBH3 construct; Zinkel Laboratory; See Table 1 for primer sequences</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidM148T</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant made with site directed mutagenesis of FHA-Bid construct; Zinkel Laboratory; SeeTable 1 for primer sequences</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidBH3/E120D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant made with site directed mutagenesis of FHA-BidBH3 construct; Zinkel Laboratory; See Table 1 for primer sequences</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (pOZ-FH-C-hCD25 vector)</td>
+      <td>FHA-BidBH3/R124Q</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mutant made with site directed mutagenesis of FHA-BidBH3 construct; Zinkel Laboratory; See Table 1 for primer sequences</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bid (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>AF860 RRID: AB_2065622</td>
+      <td>1:1000 (5% milk, Western Blot (WB))</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bid (rabbit polyclonal)</td>
+      <td>PMID: 8918887</td>
+      <td>Antibody generated by S. Korsmeyer Lab</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bim (H-5, mouse monoclonal)</td>
+      <td>Santa Cruz Biotech-nology</td>
+      <td>sc-3743589 RRID: AB_10987853</td>
+      <td>1:100 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bad (Clone 48, mouse)</td>
+      <td>BD Biosciences</td>
+      <td>610391 RRID: AB_397774</td>
+      <td>1:500 ((5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Puma/bbc3, N-terminal (rabbit)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4743 RRID: AB_477351</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>H6908 RRID: AB_260070</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VDAC1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab15895 RRID: AB_2214787</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (AC-15, mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5441 RRID: AB_476744</td>
+      <td>1:200,000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (FL-335, rabbit polyclonal)</td>
+      <td>Santa Cruz Biotech-nology</td>
+      <td>sc-25778 RRID: AB_10167668</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Bak, NT (rabbit polyclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat #06–536 RRID: AB_310159</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MnSOD (rabbit polyclonal)</td>
+      <td>Stressgen</td>
+      <td>ADI-SOD-111 RRID: AB_10631750</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mcl-1 (rabbit polyclonal)</td>
+      <td>Rockland Immunochemi-cals Inc</td>
+      <td>600-401-394S RRID: AB_2266446</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Opa-1 (Clone 18, mouse)</td>
+      <td>BD Biosciences</td>
+      <td>612606 RRID: AB_399888</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Calreticulin (D3E6, XP, rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>12238 RRID: AB_2688013</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pyruvate dehydrogenase E2/E3 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab110333 RRID: AB_10862029</td>
+      <td>1:1000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL anti-rabbit IgG, HRP- linked (from donkey)</td>
+      <td>GE Healthcare</td>
+      <td>NA934 RRID: AB_772206</td>
+      <td>1:10,000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG, HRP-conjugate</td>
+      <td>Novex</td>
+      <td>A16072 RRID:AB_2534745</td>
+      <td>1:10,000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat IgG HRP</td>
+      <td>Santa Cruz Biotech-nology</td>
+      <td>sc-2020 RRID:AB_631728</td>
+      <td>1:10,000 (5% milk, WB)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxorubicin HCl (Dox)</td>
+      <td>APP Fresenius Kabi USA, LCC</td>
+      <td>NDC 63323-883-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epinephrine (Epi)</td>
+      <td>BPI Labs, LLC</td>
+      <td>NDC 54288-103-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene 6 Transfection Reagent</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange XL Site -Directed Mutagenesis Kit, 10 rxn</td>
+      <td>Agilent Technologies</td>
+      <td>200521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneJET Plasmid Miniprep Kit</td>
+      <td>Thermo-Fisher Scientific (Thermo Scientific)</td>
+      <td>K0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GenElute HP Plasmid Maxiprep Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>NA0310-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink HiPure Plasmid Maxiprep Kit</td>
+      <td>Thermo-Fisher Scientific (Invitrogen)</td>
+      <td>K210006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PrediXcan</td>
+      <td>PMID: 26258848 and other</td>
+      <td></td>
+      <td>https://github.com/hakyimlab/PrediXcan</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>S-PrediXcan</td>
+      <td>Other</td>
+      <td></td>
+      <td>https://github.com/hakyimlab/MetaXcan</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CARDIoGRAMplusC4D</td>
+      <td>Other</td>
+      <td></td>
+      <td>www.CARDIOGRAMPLUSC4D.ORG</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GTEx Consortium (v6p)</td>
+      <td>PMID: 29022597 and other</td>
+      <td></td>
+      <td>http://www.gtexportal.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice were housed, and experiments performed with approval by the IACUC of Vanderbilt University Medical Center in compliance with NIH guidelines. WT (Bid+/+) and Bid-/- mice were back-crossed onto a C57BL/6 background at least nine generations in addition to being re-derived to mice with a pure C56BL/6 background. Age and sex of mice used for experiments are indicated where applicable.
 
-## Cell culture and Bid mutants
+### Cell culture and Bid mutants
 
 Hox11-immortalized MPCs were cultured in IMDM medium with 20% FBS, 100 U/ml penicillin-streptomycin, 2 mM glutamine, 0.1 mM β-mercaptoethanol, and 10% WEHI conditioned medium as a source of IL-3. Cell lines were mycoplasma tested and negative. Cell lines were also authenticated by genotyping. To generate MPCs expressing exogenous wild type or mutant Bid, Bid was cloned into pOZ-FH-C-hCD25 using XhoI and NotI restriction sites (Nakatani and Ogryzko, 2003). BH3 mutant Bid has amino acids 93–96 of mouse Bid mutated from IGDE to AAAA (Wang et al., 1996). The D59A mutant Bid is mutated at the caspase eight cleavage site. M148T, E120D, R123Q, and BH3S61AS78A (BH3AA) were designed according to the Quickchange II Site-directed mutagenesis Kit (Agilent Technologies) using the pOZ-FH-C-Bid-BH3-mut-hCD25 as a template. Stable cell lines were generated with retroviral transduction using Fugene 6 (Promega) or Lipofectamine 2000 (Thermo Fisher Scientific). Please see Table 1 for primer sequences.
 
-## Cell death and proliferation assays
+**Table 1.**
+ Site-directed mutagenesis primer sequences for Bid
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer (Bid mutant)</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">M148T</td>
+      <td>Fwd: 5’ GGAGAACGACAAGGCCATGCTGATAATGACAATGC 3'</td>
+    </tr>
+    <tr>
+      <td>Rev: 5' GCATTGTCATTATCAGCATGGCCTTGTCGTTCTCC 3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">E120D</td>
+      <td>Fwd: 5’ GAATGGCAGCCTGTCGGATGAAGACAAAAGGAAC 3’</td>
+    </tr>
+    <tr>
+      <td>Rev: 5’ GTTCCTTTTGTCTTCATCCGACAGGCTGCCATTC 3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R123Q</td>
+      <td>Fwd: 5’ GTCGGAGGAAGACAAAAGGAACTGCC GGCCAAAG 3’</td>
+    </tr>
+    <tr>
+      <td>Rev: 5’ CTTTGGCCAGGCAGTTCCTTTTGTCTTCCTCCGAC 3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S78A</td>
+      <td>Fwd: 5’CCAGATTCTGAAGCTCAGGAA GAAATCATCCACAACATTGCC3’</td>
+    </tr>
+    <tr>
+      <td>Rev: 5’GGCAATGTTGTGGATGATTTCTTCCTGAGCTTCAGAATCTGG3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S61A</td>
+      <td>Fwd: 5’CAGACAGACGGCGCCCAGGCCAGCCGC3’</td>
+    </tr>
+    <tr>
+      <td>Rev: 5’GCGGCTGGCCTGGGCGCCGTCTGTCTG3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell death and proliferation assays
 
 At the indicated times cells were, washed, incubated with Annexin V-FITC (Biovision) in 1X Annexin V staining buffer (10 mM HEPES, pH 7.4, 140 mM NaCl, 2.5 mM CaCl2). Immediately prior to analysis, propodeum iodide (Sigma) was added to a final concentration of 1 μg/ml. TNF-α/Actinomycin D death assays were performed by treating cells with 25 ng/ml TNF-α and 50 ng/ml Actinomycin D in complete IMDM growth medium Samples were analyzed on a Becton-Dickinson flow cytometer and FlowJo analysis software. Cell growth was determined by trypan blue viability.
 
-## Electron microscopy and image quantitation
+### Electron microscopy and image quantitation
 
 Cells were washed with 0.1 M cacodylate buffer and fixed in 2.5% glutaraldehyde/0.1M cacodylate for 1 hr at room temperature and left at 4°C overnight. The samples were post-fixed in 1% osmium tetroxide and washed 3 times with 0.1 M cacodylate buffer. The samples were dehydrated through a graded ethanol series followed by incubation in 100% ethanol and propylene oxide (PO) as well as 2 exchanges of pure PO. Samples were embedded in epoxy resin and polymerized at 60°C for 48 hr.
 
@@ -219,13 +651,13 @@ LV cardiac tissue was harvested from WT or Bid-/- mice at 18 hours with or witho
 
 Quantitation was done with FIJI (Fiji Is just ImageJ) software using a stereology plugin (Version 0.1) to create a multipurpose stereological grid (Gundersen and Jensen, 1987). Horizontal grid lines were overlaid on each image using the same tile density setting for all samples. The end of each line was counted as a point and points on the grid were counted as nucleus, extracellular space, cytoplasm or mitochondria. Total reference points per image were everything except nucleus and extracellular space. Cristae were counted when intersecting the grid line or point, and each crista was counted twice to account for double membranes. Data is represented as either area density (equivalent to volume density), which is the number of mitochondria divided by the number of reference points. Length density (which is equivalent to surface density) was calculated as two times the number of cristae intersections divided by the total length of line for all possible intersections. For LV tissue cristae quantitation, 150 individual cristae were measured per treatment condition using the measurement tool in ImageJ software.
 
-## Western Blot and Co-immunoprecipitation
+### Western Blot and Co-immunoprecipitation
 
 MPCs were treated as indicated and clarified cell extracts were prepared by lysis in RIPA buffer supplemented with protease (Complete Mini, Roche) and phosphatase (PhosSTOP, Roche) inhibitor followed by centrifugation at 12,000 rcf. Heart tissue extract was also prepared in the same way. Proteins were resolved by SDS-PAGE and transferred to PVDF membrane. Immunoblots were probed with the indicated antibodies and developed using chemiluminescent HRP substrate and autoradiography film. Co-immunoprecipitation was performed on 293T cells transfected by Fugene 6 (Promega) with the following Bid constructs: FlagHA-Bid, FHA-BidD59A, FHA-BidM148T and the following Mcl-1 constructs (a kind gift from Dr. Joseph Opferman): pMSVC-puro (empty vector), Mcl-1 (WT), Mcl-1OM, Mcl-1Matrix. Input was removed from equal concentrations of whole cell lysate, followed by immunoprecipitation with Flag-M2 agarose beads (Sigma).
 
 Antibodies used: anti-Bid goat (R and D Systems) or anti-Bid rabbit polyclonal antibody (Wang et al., 1996), anti-Bim H-5 (Santa Cruz), anti-Bad Clone 48 (BD Biosciences), anti-Puma/bbc3 (Sigma), N-terminal (Sigma), anti-HA tag (Sigma), anti-VDAC1 (Abcam), anti-β-Actin (Sigma), anti-GAPDH (Santa Cruz), anti-Bak, NT (EMD Millipore), anti-MnSOD (Stressgen), anti-Mcl-1 (Rockland Immunochemicals Inc) anti-Opa1 (BD Biosciences), anti-Calreticulin (Cell Signaling Technology), anti-PDH E2/E3 (Abcam), anti-HRP conjugated anti-rabbit (GE Healthcare), and HRP conjugated anti-mouse (Novex), and HRP conjugated anti-goat (Santa Cruz).
 
-## Mitochondrial isolation
+### Mitochondrial isolation
 
 Mitochondria were isolated by differential centrifugation from both tissue and cell lines. Unless stated otherwise, all isolations were done at 4°C. Mouse liver mitochondria were isolated using a protocol adapted from Brookes et al. (Brookes et al., 2002)and heart mitochondria were isolated based on a protocol by JW Palmer et al. (Palmer, 1977).
 
@@ -235,39 +667,39 @@ Heart tissue: Hearts were dissected, rinsed with buffer A (220 mM mannitol, 70 m
 
 MPCs: MPC mitochondria were prepared based upon the protocol by Wieckowski et al. (Wieckowski et al., 2009). At least 2 × 108 cells were harvested, rinsed in cold PBS buffer and re-suspended in isolation buffer (225 mM mannitol,75 mM sucrose, 0.1 mM EGTA, and 30 mM Tris-HCl, pH 7.4) containing 20 µg/ml digitonin to permeabilize the outer membrane. After a 25 min incubation on ice, cells were homogenized with a glass-glass dounce homogenizer until >90% of the cells were damaged (determined by trypan blue visualization). Cell debris was removed with two 5 min spins at 600 g followed by a 7,000 g spin for 10 min. The mitochondrial containing pellet was washed in buffer, and spun at 7,000 g, washed and followed by a final spin at 10,000 g. The mitochondrial pellet was stored in MRB buffer at −80°C. Cytosolic proteins were retained from the supernatant after debris removing spins and spun at 100,000 g for 1 hr to separate light membranes. Protein concentration for all isolations was determined by Bradford reagent.
 
-## Proteinase K treatment
+### Proteinase K treatment
 
 Mitochondria were isolated from WT mouse liver, with fragmented mitochondria removed from the pellet after the first fast spin. Isolated mitochondria (4 mg/ml) were then treated with 0.5 mg/ml Proteinase K (Macherey-Nagel GmbH and Co. KG) in the presence or absence of 1% SDS for 20 min on ice followed by quenching with 5 mM PMSF.
 
-## Mitochondrial subfractionation
+### Mitochondrial subfractionation
 
 Crude liver mitochondria were isolated from two WT mice, and fragmented mitochondria were removed from the pellets after the first fast spin. Pellets were combined, and treated as described in Perciavalle et al. (2012) with the following modification: 1. The mitoplast fraction was washed 2x in buffer (10 mM KH2PO4 with one-third volume of 10 mM MgCl2) to remove contaminating OMM and 2. isolated OMM was resuspended in buffer followed by a second spin at 100,000 g for 1 hr for further purification.
 
-## Echocardiography and Epinephrine treatment
+### Echocardiography and Epinephrine treatment
 
 Echocardiograms on male Bid +/+ (WT) and Bid-/- C57BL/6 mice were performed under 2–3% isoflurane anesthesia using an a VisualSonics Vevo 770 instrument housed and maintained in the Vanderbilt University Institute of Imaging Science core lab. Measurements of the left ventricular internal diameter end diastole (LVIDd) and the left ventricular internal diameter end systole (LVIDs) were determined from M-mode tracings in triplicate for each mouse. Mice were echoed before (baseline), and 18 hr (stress condition) and 5 days after (recovery) an IP injection of Epinephrine at 0.5 mg/kg per mouse.
 
-## Doxorubicin treatment
+### Doxorubicin treatment
 
 Female WT (Bid+/+) and Bid-/- C57BL/6 approximately 12–18 weeks of age were treated with 3 doses of Doxorubicin at 7.5 mg/kg 5 days apart. Echocardiogram was performed three days after the final dose. Echocardiography was performed using the VEVO2100 digital ultrasound system (Visual Sonics; Toronto, Ontario). Studies were performed using the MS400 18–38 MHz transducer. M-mode images were then processed using the Visual Sonics Software ver2.2. All measurements were made in at least duplicate using the LV trace function.
 
-## Histology and fibrosis quantitation
+### Histology and fibrosis quantitation
 
 Hearts were excised from mice, weighed, and fixed for a minimum of 12 hr (overnight) in 10% formalin and embedded in paraffin. Coronal sections of hearts were cut and stained using H and E and Masson trichrome blue stain by the Translational Pathology Shared Resource (TPSR) at Vanderbilt University. Trichrome stained slides were scanned at 40X magnification using the Aperio CS2 Brightfield Scanner or whole slide imaging was performed in the Digital Histology Shared Resource at Vanderbilt University Medical Center (www.mc.vanderbilt.edu/dhsr). Representative 2x and 60x H and E and Trichrome images were acquired on an Olympus BX43 brightfield microscope with a Spot Insight camera.
 
 Aperio Imagescope software version 12.3.28013 was used to define regions of within the left ventricle, excluding edges where stain uptake may have been falsely increased or any visible artifact within the section. Slides were run through a positive pixel algorithm and input parameters were adjusted to detect aniline blue staining and positive pixels are counted and grouped as weak, medium, or strong intensity. Positivity is defined as the total number of positive pixels divided by the total number of pixels in the region of interest.
 
-## Multidimensional protein identification technology (MudPIT)
+### Multidimensional protein identification technology (MudPIT)
 
 Equal amounts of Bid +/+ and Bid-/- MPC mitochondrial protein were isolated and frozen. Samples were trypsinized and analyzed by MudPIT. MS/MS spectra were identified using SEQUEST software which queried a Uniprot-mouse-reference-canonical_20121112_rev database (Unknown version, 86222 entries). Results were visualized in Scaffold 4.5.1 software (Proteome Software Inc.) and protein identification was limited to two unique peptides per protein and a 5% FDR (false discovery rate) for both peptides and proteins. For analysis, samples were ranked based upon Fisher’s exact test done in Scaffold with a significance value of p<0.05. The Mouse MitoCarta 2.0 (Calvo et al., 2016; Pagliarini et al., 2008) (Broad Institute) was used to verify genes encoding mitochondrial proteins.
 
-## Native-PAGE and In-gel activity assay
+### Native-PAGE and In-gel activity assay
 
 Mitochondria from heart and liver tissue were prepared as described. Complexes were extracted based on the protocol by Wittig, et al. (Wittig et al., 2006)and run on native gels followed by incubation with complex specific substrates.
 
 Specifically, mitochondrial protein was extracted with digitonin at a 6.0 g/g detergent/protein ratio for complexes I and IV extraction and 2.5 g/g ratio for complex V. After solubilization, samples were spun at 20,000 g for 20 min. Supernatant was retained and protein concentration was determined by Bradford reagent (BioRAD). Samples were supplemented with 50% glycerol and 5% Coomassie blue G-250 dye. Equivalent protein concentrations were then loaded onto pre-cast NativePAGE 4–16% Bis-Tris gel (Invitrogen by ThermoFisher Scientific). Samples were run at 4°C for 30 min at 100V and 2 1/2 hr at 300V. Cathode and anode buffers per Wittig, et al. For Coomassie band visualization, gels were stained with NOVEX Colloidal blue staining kit (Invitrogen) and de-stained overnight. All in gel activity assays were performed at room temperature. Complex I was developed in 5 mM Tris-HCl buffer (pH 7.4) supplemented with 10 mg/ml NADH (Roche Diagnostics) and 25 mg of Nitro Blue Tetrazolium (Sigma) for 10 min. Complex IV was developed in 50 mM Sodium Phosphate buffer (pH 7.2) supplemented with 5 mg of Diaminobenzidine (DAB) (Sigma) and 100 µl of horse heart cytochrome c (Sigma) for at least 30 min. Complex V activity was determined by equilibration of native gels in a 35 mM Tris/270 mM Glycine buffer (RPI) (pH 8.3) for 1 hr followed by addition of 14 mM MgSO4 (Fisher), Pb(NO3)2 (Sigma) and 8 mM ATP (Roche), adjusted to pH 8.6 and incubated until a precipitate appeared. Reactions were quenched with fixation in methanol and gels were scanned for quantitation. Quantitation was done on replicate samples (n = 3 WT and Bid-/- mice for CI and CIV, n = 4 WT and Bid-/- for CV) run on the same gel for accuracy, however experiments were done a minimum of three independent times. Analysis was done using the gel tool function of ImageJ software and graphs were generated with GraphPad Prism.
 
-## High resolution respirometry
+### High resolution respirometry
 
 MPCs: To determine the basal respiration rate of MPCs, oxygen consumption rates (OCR) were measured in an Oroboros O2K oxygraph (Oroboros Instruments). For each genotype, 2 × 106 viable cells, determined by trypan blue exclusion, were added to oxygraph chambers containing 2 ml of culture medium. The average OCR was measured over an interval of stable oxygen flux following addition of cells to the chamber.
 
@@ -279,11 +711,11 @@ O2-equilibrated Buffer Z was supplemented with: 5 U/ml HK, 5 U/ml G6PDH, 5 mM D-
 
 For each step of the experimental protocol, JO2 or JATP were obtained from identical time points and are reported as the mean of >20 s of steady-state data (>10 individual data points). Instrumental background rates (prior to any substrate additions) were subtracted from all subsequent values for JO2 and JATP and data were normalized to PmFB weight. ATP:O ratio was calculated by dividing the rate of ATP synthesis by the rate of atomic oxygen consumed using the formula: ATP/O = JATP/(JO2*2)
 
-## Measurement of cellular ROS and membrane potential
+### Measurement of cellular ROS and membrane potential
 
 Intracellular ROS was determined by staining MPCs with either 2 µM MitoSOX or 5 µM DHE for 30 min followed by washing and analysis by flow cytometry. As a positive control, cells were also treated with Antimycin A for 1.5 hr prior to staining with MitoSOX. Membrane potential was measured by staining for 30 min with 50 nM TMRE. For Bid-/- + FHA-BidBH3 and Bid-/- + FHA-BidBH3AA MPCs. Cells were also stained for human CD25 and measurements were obtained from CD25 +cells. All samples were analyzed on a Becton-Dickinson flow cytometer and FlowJo analysis software.
 
-## PrediXcan
+### PrediXcan
 
 We performed PrediXcan analysis (Gamazon et al., 2015) to evaluate potential roles for Bid in myocardial infarction. PrediXcan proposes gene expression as a mechanism underlying disease risk by testing the genetically determined component of expression for association with disease risk. An observed association implies a likely causal direction of effect from the gene expression trait to disease risk since, as can be reasonably assumed, disease risk does not alter germline genetic profile. The genetic component of BID expression was estimated from an imputation model (Elastic Net (Gamazon et al., 2015) with mixing parameter α = 0.5) trained on a reference transcriptome data set (the Genotype-Tissue Expression (GTEx) project (Gamazon et al., 2018; Gamazon et al., 2015). Imputation performance for each analyzed tissue was evaluated using 10-fold cross-validation (between imputed expression and directly measured expression), as previously described (Gamazon et al., 2015).
 
@@ -291,15 +723,15 @@ The imputation model derived from GTEx left heart ventricle was then applied to 
 
 In a secondary analysis, we also tested the other members of the BH3-only Bcl-2 family as well as the BID-interacting protein MTCH2. The connection of MTCH2 with obesity has been explored in the literature (Bauer et al., 2009), prompting us to evaluate the PrediXcan association with BMI using the GIANT Consortium dataset (Locke et al., 2015).
 
-## Comorbidity analysis in the Synthetic Derivative
+### Comorbidity analysis in the Synthetic Derivative
 
 The Synthetic Derivate consists of approximately 2.8 million de-identified records that contain basic clinical and demographic information of individuals seen at Vanderbilt University Medical Center. This resource was used to determine the number of patients with the following ICD-9 codes as well as their basic demographic information (age, sex, and ethnicity): Burn (949), Headache (784), Myocardial Infarction (410), Cardiomyopathy (425), Hypertension (401.9), Diabetes mellitus (250), Hypercholesteremia (272). Caucasian patient numbers were then used to create a 2 × 2 contingency table binned by age group to determine the relative risk (RR) of each ICD-9 code with MI. Raw RR risk scores and patient numbers are as indicated in the figure.
 
-## Replication of gene-level association and search for cardiac phenotype associated regulatory variation
+### Replication of gene-level association and search for cardiac phenotype associated regulatory variation
 
 The CARDIoGRAMplusC4D Consortium consists of multiple large-scale genetic association studies (e.g., 14 CAD GWAS studies) of individuals of European descent totaling 22,233 cases and 64,762 controls and a later (larger but more heterogeneous) meta-analysis of GWAS studies of European, South Asian, and East Asian decent totaling 60,801 cases and 123,504 controls. These data provide a resource to identify new SNP associations with coronary artery disease or myocardial infarction and facilitate replication of the gene-level (PrediXcan) association (Nikpay et al., 2015; Schunkert et al., 2011).
 
-## BioVU BID coding SNP analysis
+### BioVU BID coding SNP analysis
 
 The human clinical cohort was derived from BioVU. Genotyping was performed with the Illumina Human Exome BeadChip v1 by the Vanderbilt DNA resources core (VANTAGE) using standard quality control procedures.
 
@@ -309,7 +741,7 @@ Analyses of genotype-phenotype associations from the coding SNPs were performed 
 
 We also utilized the recent meta-analysis of exome-chip studies of MI, involving 42,335 cases and 78,240 controls to replicate the coding SNP associations (Stitziel et al., 2016).
 
-## Additional statistical methods
+### Additional statistical methods
 
 Within each experiment, all pairwise comparisons were made by the indicated statistical test and all relevant and significant comparisons are indicated on the figures or in figure legends. All biological replicates (denoted as n) are defined as the same experimental method independently tested on different samples of the same type of cell or mouse model. It should also be noted that one Bid-/- mouse was not included in the statistical analysis of echocardiogram data (Figure 4) at 18 hr as it was a statistical outlier (Grubbs’ outlier test, p<0.05).
 
@@ -317,13 +749,13 @@ Graphs and statistical analysis were completed using GraphPad Prism software and
 
 ****p<0.001. All error bars indicate SEM (standard error of the mean).
 
-## Study approval
+### Study approval
 
 Human blood and tissue samples for BioVU were obtained with written informed consent under protocols approved by the Vanderbilt University Medical Center IRB, and PrediXcan analysis for BioVU is encompassed in VUMC IRB# 151187. As indicated in the IRB, this study does not meet the definition of human subject’s research.
 
 The Vanderbilt University Institutional Animal Care and Use Committee approved all experiments (IACUC #M16000037, M/14/231, V/17/001, M1600220).
 
-## Data availability
+### Data availability
 
 The authors declare that all relevant data are available within the article and its supplementary information files.
 

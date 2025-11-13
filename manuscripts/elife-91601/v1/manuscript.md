@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/032q5ym94 Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital Charlestown United States
+1. Athinoula A. Martinos Center for Biomedical Imaging, Massachusetts General Hospital Charlestown United States ([ROR:032q5ym94](https://ror.org/032q5ym94))
 2. Department of Radiology, Harvard Medical School Boston United States
 
 † Corresponding author
@@ -38,7 +38,7 @@ Here, we used conventional (based on a 3T scanner) and high-resolution (based on
 
 This study consists of seven experiments. Experiment 1 focused on localizing the scene-selective site (PIGS) within the posterior intraparietal region. Experiment 2 showed consistency in the spatial location of PIGS across sessions. Experiment 3 examined PIGS location relative to V6, an area involved in motion coherency and optic flow encoding, and also relative to the retinotopic visual areas IPS0-4. Experiment 4 showed that, despite its small size, PIGS is detectable in group-averaged maps in large populations. Experiment 5 showed that scenes and non-scene objects are differentiable from each other based on the evoked response evoked within PIGS. Experiment 6 tested the response in PIGS to ego-motion in scenes, yielding a result that differentiated PIGS from the other scene-selective regions. Finally, Experiment 7 showed that PIGS does not respond selectively to biological motion.
 
-## Experiment 1: Small scene-selective sites are detectable within the posterior intraparietal gyrus
+### Experiment 1: Small scene-selective sites are detectable within the posterior intraparietal gyrus
 
 When the level of spatial smoothing is relatively low, scene-selective sites (other than PPA/TPA, TOS/OPA, and RSC/MPA) are detectable across the brain, especially within the posterior intraparietal gyrus (Figure 1B). To test the consistency in location of these scene-selective sites across individuals, 14 subjects were presented with scene and face stimuli while we collected their fMRI activity. Considering the expected small size of the scene-selective sites within the intraparietal region, we used limited signal smoothing in our analysis (FWHM = 2 mm; see ‘Methods’) to increase the chance of detecting these sites.
 
@@ -46,7 +46,7 @@ Figure 2 shows the activity maps evoked by the ‘scenes > faces’ contrast in 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/91601/elife-91601-fig2-v1.jpg)
 
-**Figure 2.:** Figure 1.Panel (A) shows the significance of evoked activity in the left hemisphere (LH) of one individual subject. The inset shows the enlarged activity map within the intraparietal region. The three scene-selective areas, along with area posterior intraparietal gyrus scene-selective site (PIGS), are indicated in the map with arrows. The location of the parieto-occipital sulcus (POS), the intraparietal sulcus (IPS), and the calcarine sulcus (CS) is also indicated in the inset. Panel (B) shows the result from six other individuals. In this panel, the first two columns show the activity within the LH, while the next two columns show the activity within the right hemisphere (RH) of the same subjects. In all subjects, PIGS (black arrow) is detectable bilaterally within the posterior portion of the intraparietal gyrus, near (but outside) the POS. All activity maps were overlaid on the fsaverage to highlight the consistency in PIGS location across the subjects.
+**Figure 2.:** Panel (A) shows the significance of evoked activity in the left hemisphere (LH) of one individual subject. The inset shows the enlarged activity map within the intraparietal region. The three scene-selective areas, along with area posterior intraparietal gyrus scene-selective site (PIGS), are indicated in the map with arrows. The location of the parieto-occipital sulcus (POS), the intraparietal sulcus (IPS), and the calcarine sulcus (CS) is also indicated in the inset. Panel (B) shows the result from six other individuals. In this panel, the first two columns show the activity within the LH, while the next two columns show the activity within the right hemisphere (RH) of the same subjects. In all subjects, PIGS (black arrow) is detectable bilaterally within the posterior portion of the intraparietal gyrus, near (but outside) the POS. All activity maps were overlaid on the fsaverage to highlight the consistency in PIGS location across the subjects.
 
 When measured at the same threshold levels (p<10–2), the relative size of PIGS was 73.86% ± 49.01% (mean ± SD) of RSC/MPA, 28.26% ± 15.67% of TOS/OPA, and 19.45% ± 8.43% of PPA/TPA. Considering the proximity of PIGS to the skull and head coil surface (Figure 1), the relatively small size of PIGS could not be ascribed to the lower signal-/contrast-to-noise ratio in that region.
 
@@ -56,7 +56,7 @@ To better clarify the consistency of PIGS localization across subjects, we also 
 
 **Figure 3.:** Panel (A) shows the group-averaged activity, evoked within the intraparietal region of 14 subjects who participated in Experiment 1. Panel (B) shows the group-averaged activity, evoked within the intraparietal region of 31 subjects who participated in Experiment 4. Importantly, PIGS was evident in both groups bilaterally in the corresponding location (black arrows). Thus, despite its small size, this area was detectable even in the group-averaged activity maps based on large populations. Notably, in both panels, maps were generated based on random-effects, after correction for multiple comparisons. In both maps, the location of restrosplenial cortex/medial place area (RSC/MPA) and transverse occipital sulcus/occipital place area (TOS/OPA) are respectively indicated with white and green arrows.
 
-## Experiment 2: PIGS reproducibility across scan sessions
+### Experiment 2: PIGS reproducibility across scan sessions
 
 To test the reproducibility of our results, four subjects were selected randomly from those who participated in Experiment 1. These subjects were scanned again (on a different day) using a 7T (rather than a 3T) scanner and a different set of scenes and faces (Figure 4A).
 
@@ -66,7 +66,7 @@ To test the reproducibility of our results, four subjects were selected randomly
 
 As demonstrated in Figure 4, despite utilizing a different scanner and a different set of stimuli, PIGS was still detectable in the same location (Figure 4B–D). Here again, PIGS was localized within the posterior portion of the intraparietal gyrus and close to the posterior lip of POS. Considering the higher contrast/signal-to-noise ratio of 7T (compared to 3T) scans, this result strongly suggested that the PIGS evidence was not simply a nuisance artifact in fMRI measurements.
 
-## Experiment 3: Localization of areas PIGS vs. V6 and retinotopic visual areas
+### Experiment 3: Localization of areas PIGS vs. V6 and retinotopic visual areas
 
 Posterior intraparietal cortex accommodates area V6, which is involved in motion coherency (optic-flow) encoding (Pitzalis et al., 2010). Recent studies have suggested that scene stimuli evoke a strong response within V6 (Sulpizio et al., 2020). Moreover, the intraparietal cortex accommodates multiple retinotopically organized visual areas (Swisher et al., 2007), including IPS0-4 that are believed to be involved in spatial attention control and higher-level object information processing (Silver et al., 2005; Konen and Kastner, 2008). Previous studies have suggested that the area TOS/OPA overlaps with the retinotopic visual areas V3A/B and IPS0 (V7) (Nasr et al., 2011; Silson et al., 2016). In Experiment 3, we clarified the location of PIGS relative to these regions.
 
@@ -82,7 +82,7 @@ In Experiment 3b, we scanned two subjects, randomly selected from those who had 
 
 **Figure 6.:** The right and left columns show respectively the polar angle and scene > face response mapping, collected in a 7T scanner on two different days. In both subjects, PIGS was located close to areas IPS3-4. Area TOS/OPA overlapped with areas V3A/B and IPS0 (V7). The borders of visual areas (defined based on the polar angle mapping) are indicated by dashed black lines. Notably, for both subjects, maps were overlaid on their own reconstructed flattened cortex. No activity smoothing was applied to the collected data (i.e., FWHM = 0; see ‘Methods’). Similar results were also found in the opposite hemispheres (not shown here). On the right column, the scale bars indicate 1 cm.
 
-## Experiment 4: PIGS localization in a larger population
+### Experiment 4: PIGS localization in a larger population
 
 The results of Experiments 1–3 suggest that PIGS can be localized consistently across individual subjects, and this area appears to be distinguishable from the adjacent area V6. However, considering the small size of this area, it appears necessary to test whether this area was detectable based on group averaging in a larger population. Accordingly, in Experiment 4 we scanned 31 individuals (other than those who participated in Experiments 1–3) while they were presented with the same stimuli as in Experiment 1 (Figure 2).
 
@@ -94,7 +94,7 @@ These results suggest that one may rely on the probabilistically generated label
 
 **Figure 7.:** Panel (A) shows the activity evoked by scenes and faces, across PIGS, V6, restrosplenial cortex/medial place area (RSC/MPA), and transverse occipital sulcus/occipital place area (TOS/OPA), all of them localized based on probabilistically generated labels based on a different group of subjects. Panel (B) shows the level of scene-selective activity, measured as ‘scene – face’, within these regions. Despite the small size of PIGS, the probabilistic label could detect the scene-selective activity within this area and the level of this activity was significantly higher than the adjacent area V6. In all panels, each dot represents the activity measured in one subject.
 
-## Experiment 5: Selective response to scenes compared to non-scene objects in PIGS
+### Experiment 5: Selective response to scenes compared to non-scene objects in PIGS
 
 Thus far, we localized PIGs in multiple experiments by contrasting the response evoked by scenes vs. faces. In Experiments 5a and 5b, we examined whether PIGS also showed a selective response to scenes compared to objects (not just faces). In Experiment 5a, 12 individuals, other than those who participated in Experiments 1–3, were scanned while viewing pictures of scenes (other than those used to localize PIGS) and everyday objects (Figure 8A; see Methods).
 
@@ -110,7 +110,7 @@ As demonstrated in Figure 8B and C for one individual subject, ‘scenes vs. obj
 
 In Experiment 5b, 15 individuals (other than those who participated in Experiments 1 and 5a), were scanned while viewing a new set of stimuli that included pictures of scenes, faces, everyday objects, and scrambled objects (Figure 8D). In contrast to Experiment 5a in which the number of objects within each image could vary, here, each image contained only one object (see ‘Methods’). Despite this change, contrasting the response to scene vs. non-scene images (averaged over objects, scrambled objects, and faces) evoked a similar activity pattern, as scene vs. faces (Figure 8E and F). Moreover, the ROI analysis yielded a significant scene-selective activity within PIGS (t(14) = 2.37, p=0.03), RSC/MPA (t(14) = 10.33, p<10–7), and TOS/OPA (t(14) = 4.79, p<10–3) (Figure 9). Here again, the level of scene-selective activity within PIGS was higher than V6 (t(14) = 2.27, p=0.04). Together, results of Experiments 1–5 suggest that PIGS responds selectively to a wide range of scenes compared to non-scene objects, and that the level of this activity is higher than in the adjacent area V6.
 
-## Experiment 6: PIGS response to ego-motion
+### Experiment 6: PIGS response to ego-motion
 
 Experiments 1–5 clarified the location of PIGS and its general functional selectivity for scenes. However, a more specific role of this area in scene perception remains undefined. Experiment 6 tested the hypothesis that area PIGS is involved in encoding ego-motion within scenes. This hypothesis was motivated by the fact that PIGS is located adjacent to V6 (Figure 5D), an area involved in encoding optic flow. Other studies have also suggested that ego-motion may influence the scene-selective activity within this region, without clarifying whether this activity was centered either within or outside V6 (Pitzalis et al., 2020; Sulpizio et al., 2020).
 
@@ -134,7 +134,7 @@ In addition to PIGS, we also found a significantly stronger response to coherent
 
 In the same session (but different runs), we also tested the selectivity of the PIGS response for simpler forms of motion. In different blocks, subjects were presented with radially moving vs. stationary concentric rings (see ‘Methods’). Consistent with the previous studies of motion perception (Pitzalis et al., 2010; Korkmaz Hacialihafiz and Bartels, 2015), the results of an ROI analysis here did not yield any strong (significant) motion-selective activity within PIGS (t(11) = 1.84, p=0.10), RSC/MPA (t(11) = 1.97, p=0.08), PPA/TPA (t(11) = 1.93, p=0.08), and V6 (t(11) = 2.03, p=0.07). In contrast, we found strong motion selectivity within area TOS/OPA (t(11) = 4.57, p<10–3), likely due to its overlap with the motion-selective area V3A/B (Nasr et al., 2011). Thus, in contrast to optic flow and ego-motion, simpler forms of motion only evoke weak-to-no selective activity within PIGS and V6.
 
-## Experiment 7: PIGS response to biological motion
+### Experiment 7: PIGS response to biological motion
 
 The results of Experiment 6 showed that PIGS responds selectively to ego-motion in scenes, but not strongly to radially moving rings. However, it could be argued that PIGS may also respond to the other types of complex motion, for example, biological motion. To test this hypothesis, we measured the PIGS response to biological vs. translational motion in 12 subjects (see ‘Methods’). As illustrated in Figure 13, and consistent with the previous studies of biological motion (Puce et al., 1998; Beauchamp et al., 2003; Puce and Perrett, 2003; Pelphrey et al., 2005; Jastorff and Orban, 2009; Kamps et al., 2016), biological motion evoked a stronger response bilaterally within area MT and superior temporal sulcus but not within the posterior intraparietal gyrus. Consistent with the maps, an ROI analysis (based on the functionally defined labels) showed no significant difference between the response to biological vs. translational motion within PIGS (t(11) = 1.27, p=0.23), TOS/OPA (t(11) = 1.63, p=0.13), RSC/MPA (t(11) = 1.40, p=0.18), and PPA/TPA (t(11) = 0.41, p=0.69). These results indicated that PIGS does not respond to all types of complex motion.
 
@@ -146,7 +146,7 @@ The results of Experiment 6 showed that PIGS responds selectively to ego-motion 
 
 These data suggest that selective scene processing is not limited to areas PPA/TPA, RSC/MPA, and TOS/OPA, and that additional smaller scene-selective sites can also be found across the visual system. By focusing on one small scene-selective site, we showed that this site (PIGS) was consistently identifiable across individuals and groups. We also showed that inclusion of this site in the models of scene processing may clarify how ego-motion influences scene perception.
 
-## FMRI and all that ‘noise, noise, noise’!
+### FMRI and all that ‘noise, noise, noise’!
 
 The early fMRI studies dealt with a considerable amount of noise in measurements, partly due to using lower magnetic field scanners and imperfect hardware and software. This noise in measurements affected the reliability of the findings. Consequently, those early studies focused on larger activity sites that were more reliably detectable across subjects/sessions. The smaller sites were either ignored or eliminated by excessive signal smoothing, applied to enhance the level of contrast-to-noise ratio.
 
@@ -154,25 +154,25 @@ However, advances in neuroimaging techniques have now made it possible to detect
 
 The present data shows that PIGS could be localized consistently across multiple subjects and across different sessions and scanners. Furthermore, our results indicated that the probabilistic labels, generated based on one population, can be used to localize PIGS and distinguish its function from the adjacent regions (e.g., V6) in a second population. Together, these results highlight the reliability of current fMRI techniques in detecting smaller cortical regions in the level of individual subjects.
 
-## PIGS responds selectively to a variety of scene stimuli
+### PIGS responds selectively to a variety of scene stimuli
 
 To establish a true category-selective response, the stimulus set should sample enough variety to reflect the range and variability among the category members. Consistent with this are the many (and continuing) studies seeking to define the range and fundamental aspects of ‘place selective’ (Epstein and Kanwisher, 1998; Troiani et al., 2014) and ‘face selective’ (Kanwisher et al., 1997; Yue et al., 2011) stimuli in extrastriate visual cortex, decades after their first discovery.
 
 Accordingly, here we tested five different scene stimulus sets across our experiments, including a wide variety of indoor/outdoor and natural/manmade scenes. In all cases, we were able to evoke a selective response within PIGS, and the level of this response was comparable to that in the adjacent scene-selective areas RSC/MPA and TOS/OPA. Thus, the scene-selective response in PIGS appeared not to be limited to a single subset of scenes. However, it remains unclear whether scene stimuli are differentiable from each other based on the pattern of evoked response in this region. More experiments are necessary to test this hypothesis (see also the Limitations).
 
-## PIGS and TOS/OPA are two different areas
+### PIGS and TOS/OPA are two different areas
 
 Our results clearly showed that PIGS and TOS/OPA are two distinct scene-selective areas based on multiple criteria: first, anatomically, TOS/OPA is located mostly anterior to the IPS, whereas PIGS is located more dorsally and posterior to the IPS. Second, TOS/OPA overlaps with areas V3A/B and IPS0, whereas PIGS was located adjacent to IPS3-4. Third, these two areas respond distinctly to moving stimuli. Specifically, while TOS/OPA responds selectively to moving concentric rings and less selectively to ego-motion, PIGS shows the opposite pattern and responds selectively to ego-motion within the naturalistic scenes but not to moving rings (see below). Considering these anatomical and functional differences, these two areas appear to be two distinct hubs within the scene processing networks.
 
 Also notably, PIGS is located relatively far from the lateral place memory area (LPMA), which is located anterior to the IPS and close to the tip of the superior temporal sulcus (Steel et al., 2021; Steel et al., 2023). Considering this, and the fact that there was no memory demand in our paradigms, PIGS and LPMA also appear to be two distinct visual areas.
 
-## PIGS is not just another scene-selective area
+### PIGS is not just another scene-selective area
 
 Our results (Experiment 6) suggest that ego-motion can significantly influence the activity evoked within PIGS. This phenomenon distinguishes the role of PIGS in scene perception, relative to other scene-selective regions. Specifically, previous studies have shown that PPA/TPA and RSC/MPA show weak-to-no sensitivity to motion per se (Korkmaz Hacialihafiz and Bartels, 2015). In comparison, area TOS/OPA shows a stronger motion-selective response, presumably related to its (partial) overlap with area V3A/B (Tootell et al., 1997; Nasr et al., 2011). Instead, the current data show that the ego-motion-related activity within PIGS is stronger than in TOS/OPA.
 
 This finding is consistent with the fact that PIGS is located adjacent to area V6 (Figures 4 and 5), an area that contributes to encoding optic flow (Pitzalis et al., 2010). Considering PIGS and V6 proximity, hypothetical inputs from V6 may contribute to the strong ego-motion selective response in PIGS. This said, the current data also suggests that the role of PIGS differs from that in V6 in terms of ego-motion encoding. Compared to V6, PIGS showed a stronger impact of ego-motion on scene processing, while V6 shows a stronger response to optic flow induced by random dot arrays. Thus, PIGS contributes to scene encoding and ego-motion within scenes, while V6 is likely involved in detecting optic flow caused by ego-motion.
 
-## Ego-motion encoding in PIGS vs. TOS/OPA
+### Ego-motion encoding in PIGS vs. TOS/OPA
 
 We showed that PIGS and TOS/OPA are located on two different sides of the IPS with TOS/OPA located more ventrally compared to PIGS. We also showed a stronger impact of ego-motion on activity within PIGS compared to TOS/OPA. In contrast, TOS/OPA (but not PIGS) responded selectively to simpler forms of motion. These results suggest that PIGS and TOS/OPA are likely two different visual areas, with PIGS being involved in encoding higher-level ego-motion cues.
 
@@ -180,57 +180,57 @@ However, at least two previous studies suggested that area TOS/OPA may also cont
 
 This difference may well reflect methodological discrepancies. Specifically, in the study by Kamps et al., the static and ego-motion stimuli were presented with two different refresh rates. While in our study, the coherently and incoherently changing stimuli were refreshed with the same temporal frequency (see ‘Methods’). In the study by Jones et al., 2023, the response to scrambled scenes was used as a control condition, whereas our stimuli were more equivalent, differing only in the sequence of image presentation. Moreover, these studies used higher levels of spatial smoothing (FWHM = 5 mm) compared to the values we used here during preprocessing. Also, for understandable reasons, they limited their analysis to previously known scene-selective areas. These technical differences make it difficult to directly compare the two sets of results.
 
-## Ego-motion but not attention and/or visual context
+### Ego-motion but not attention and/or visual context
 
 Experiment 6 showed stronger scene-selective activity within PIGS when subjects were presented with coherently (compared to incoherently) changing scenes. It could be argued that coherently changing scenes attract more attention compared to incoherently changing scenes. On the face of it, this hypothesis appears to be consistent with the expected contribution of the intraparietal cortex in controlling spatial attention (Behrmann et al., 2004; Szczepanski et al., 2010). But if true, attention to scenes should also increase the level of activity within the scene-selective areas (O’Craven et al., 1999; Nasr and Tootell, 2012b; Baldauf and Desimone, 2014). While here, we did not find any significant activity increases in response to coherently (vs. incoherently) changing scenes in PPA/TPA, RSC/MPA, and TOS/OPA. Thus, modulation of attention, per se, could not be responsible for the enhanced activity within PIGS in response to coherently (compared to incoherently) changing scenes.
 
 Furthermore, the stimuli used in coherently vs. incoherently changing block conditions represented the same scenes, and the only difference between the two conditions was the sequence of images within the blocks. In that sense, the two experimental conditions may be considered to have the same visuospatial context. However, it could be also argued that the coherently changing scenes provide more information about the environmental layout. In that case, considering the previous reports that PPA/TPA and RSC/MPA are also involved in layout encoding (Epstein and Kanwisher, 1998; Wolbers et al., 2011), we expected to see more activity within those regions in response to coherently compared incoherently changing scenes. In the absence of such an activity modulation, a change in the visual context could not be responsible for the enhanced PIGS activity.
 
-## Direction-selective response within the intraparietal cortex
+### Direction-selective response within the intraparietal cortex
 
 Motion-selective sites are expected to show at least some level of sensitivity to motion direction (Albright et al., 1984; Zimmermann et al., 2011). We did not test the sensitivity of PIGS to the direction of ego-motion. However, Pitzalis et al., 2020 have shown evidence for motion direction encoding within the V6+ region (Pitzalis et al., 2020). Furthermore, Tootell et al. reported evidence for motion direction (approaching vs. withdrawing) encoding within posterior intraparietal cortex (Tootell et al., 2022). Although none of these studies showed any evidence for a new scene-selective area, they raised the possibility that PIGS may also contribute toward encoding ego-motion direction, and even higher-level cognitive concepts such as detecting an intrusion to personal space (Holt et al., 2014).
 
-## Limitations
+### Limitations
 
 In the past, many studies have scrutinized the response function of scene-selective areas to numerous stimulus contrasts. According to these studies, scene-selective areas can differentiate many object categories based on their low-, mid-, and/or higher-level visual features such as their natural size (Konkle and Oliva, 2012), (non-)animacy (Yue et al., 2020; Coggan and Tong, 2023), rectilinearity (Nasr et al., 2014), spatial layout (Harel et al., 2013), orientation (Nasr and Tootell, 2012a), spikiness (Coggan and Tong, 2023), location within the visual field (Levy et al., 2001), and spatial content (Bar et al., 2008). Our findings are only a first step toward characterizing PIGS in greater detail. More tests are required to reach the current (yet incomplete) knowledge about the response function of PIGS.
 
-## Conclusion
+### Conclusion
 
 Neuroimaging studies of scene perception have typically focused on linking scene perception to the evoked activity within PPA/TPA, TOS/OPA, and RSC/MPA. Although other scene-selective sites are detectable across the visual cortex, they are largely ignored because of their relatively small size. Our data suggests that the future inclusion of these small sites in the models of scene perception may help clarify current models of scene processing in dynamic environments.
 
 ## Methods
 
-## Participants
+### Participants
 
 Fifty-nine human subjects (33 females), aged 22–68 y, participated in this study. All subjects had normal or corrected-to-normal vision and radiologically normal brains, without any history of neuropsychological disorder. All experimental procedures conformed to NIH guidelines and were approved by the institutional review board of the Massachusetts General Hospital (2018P001557). Written informed consent was obtained from all subjects before the experiments.
 
-## General procedure
+### General procedure
 
 This study consists of seven experiments during which we used fMRI to localize and study the evoked scene-selective responses. During these experiments, stimuli were presented via a projector (1024 × 768 pixel resolution, 60 Hz refresh rate) onto a rear-projection screen. Subjects viewed the stimuli through a mirror mounted on the receive coil array. Details of these stimuli are described in the following sections.
 
 During all experiments, to ensure that subjects were attending to the screen, they were instructed to report color changes (red to blue and vice versa) for a centrally presented fixation object (0.1° × 0.1°) by pressing a key on the keypad. Subject detection accuracy remained above 75% and showed no significant difference across experimental conditions (p>0.10). MATLAB (MathWorks, Natick, MA) and the Psychophysics Toolbox (Brainard, 1997; Pelli, 1997) were used to control stimulus presentation.
 
-## Experiment 1: Localization of scene-selective areas
+#### Experiment 1: Localization of scene-selective areas
 
 In 14 subjects (six females), we localized scene-selective areas PPA/TPA, RSC/MPA, and TOS/OPA by measuring their evoked brain activity using a 3T fMRI scanner as they were presented with eight colorful images of real-world (indoor) scenes vs. (group) faces (Nasr et al., 2011). Scene and face images were retinotopically centered and subtended 20° × 26° of visual field without any significant differences between their root mean square (RMS) contrast (t(14) = 1.10, p=0.29). Scene and face stimuli were presented in different blocks (16 s per block and 1 s per image). Each subject participated in four runs and each run consisted of 10 blocks plus 32 s of blank presentation at the beginning and at the end of each block. Within each run, the sequence of blocks and the sequence of images within them was randomized.
 
-## Experiment 2: Reproducibility of PIGS across scan sessions (3T vs. 7T)
+#### Experiment 2: Reproducibility of PIGS across scan sessions (3T vs. 7T)
 
 To localize PIGS with higher spatial resolution and enhance the signal-/contrast-to-noise ratio (relative to Experiment 1), four subjects were randomly selected from those who participated in Experiment 1 and were scanned using a 7T scanner. These individuals were presented with 300 grayscale images of scenes and 48 grayscale images of (single) faces other than those used in Experiment 1. Here, scene images included pictures of indoor (100 images), manmade outdoor (100 images) and natural outdoor (100 images) scenes, selected from the Southampton-York Natural Scenes dataset (Adams et al., 2016).
 
 As in Experiment 1, all images were retinotopically centered and subtended 20° × 26° of visual field, and there was no significant difference between the RMS contrast across the two categories (t(346) = 0.75, p=0.38). Scene and face images were presented across different blocks. Each block contained 24 stimuli (1 s per stimuli), with no blank presentation between the stimuli. The sequence of stimuli was randomized within the blocks. Each subject participated in 12 runs (11 blocks per run; 24 s per block; 1 s per stimulus), beginning and ending with an additional block (12 s) of uniform black presentation. In each run, the sequence of blocks and the sequence of images within them were randomized.
 
-## Experiment 3: PIGS localization relative to area V6 and retinotopic visual areas
+#### Experiment 3: PIGS localization relative to area V6 and retinotopic visual areas
 
 Experiment 3a was designed to clarify the relative localization of PIGS vs. area V6 (Pitzalis et al., 2010). All 14 subjects who participated in Experiment 1 were examined again in a separate scan session using a 3T scanner. During this scan session, we localized area V6 by contrasting the response evoked by coherent radially moving (optic flow) vs. randomly moving white dots (20° × 26°), presented against a black background. The experiment was block-designed, and each block took 16 s. Each subject participated in five runs (14 blocks per run), beginning and ending with an additional block of 16 s uniform black presentation.
 
 Experiment 3b was designed to compare the localization of PIGS relative to the border of retinotopic visual areas such as V3A/B and IPS0-4. Two subjects who had participated in Experiment 2 were randomly selected and scanned again in a 7T scanner, during which we defined the border of retinotopic visual areas using a phase encoding approach (Sereno et al., 1995; Engel et al., 1997). Specifically, subjects were presented with rotating (CW and CCW) wedge-shaped (45°) apertures that revolved over 28 s, followed by a 4 s blank presentation. Instead of using a flashing checkerboard, we used naturalistic stimuli consisting of color objects presented against a pink-noise background, updated at 15 Hz (Benson et al., 2018). Each subject participated in 10 runs (four blocks per run).
 
-## Experiment 4: Localization of PIGS in a larger population
+#### Experiment 4: Localization of PIGS in a larger population
 
 Considering the small size of PIGS, it was important to show that this area could survive group-averaging over larger populations, compared to Experiment 1. Accordingly, Experiment 4 localized this area in a large pool of subjects, consisting of 31 individuals (19 females) other than those who participated in Experiment 1. The stimuli and procedure were identical to Experiment 1.
 
-## Experiment 5: Response to two independent sets of scenes and non-scene objects
+#### Experiment 5: Response to two independent sets of scenes and non-scene objects
 
 Experiments 1–4 used the response evoked by scenes vs. faces to localize PIGS. However, it remained unknown whether PIGS also showed a selective response to the ‘scenes vs. objects’ contrast. Accordingly, in two independent groups of subjects (no overlap), Experiment 5 tested the response evoked by scenes vs. non-scene objects in PIGS and the adjacent areas (i.e., V6, TOS/OPA and RSC/MPA).
 
@@ -238,7 +238,7 @@ Specifically, in Experiment 5a, 13 subjects (seven females), other than those wh
 
 In Experiment 5b, 14 subjects (eight females), other than those who participated in Experiments 1 and 5a, were scanned using a 3T scanner. Each subject was presented with 32 grayscales images of indoor/outdoor scenes, 32 images of everyday (non-face) objects plus also their scrambled versions, and 32 images of single faces (Nasr and Rosas, 2016b). Scene and non-scene stimuli were different than those used in Experiments 1–4 and 5a. In contrast to Experiment 5a, all non-scene images included only one single object and there was no significant difference between the RMS contrasts of scenes and the three object categories (F(3, 111) = 0.42, p=0.74). Other details were similar to those in Experiment 5a.
 
-## Experiment 6: Coherently vs. incoherently changing scenes
+#### Experiment 6: Coherently vs. incoherently changing scenes
 
 This experiment was designed to differentiate the role of PIGS in scene perception from TOS/OPA, RSC/MPA, and PPA/TPA. In total, 12 subjects, from the 14 subjects who participated in Experiment 1, participated in this experiment. The excluded two subjects could not participate further in our tests for personal reasons. Subjects were scanned using a 3T scanner on a different day relative to Experiments 1–3. During this scan, they were presented with rapidly ‘coherently vs. incoherently changing scenes’ (100 ms per image), across different blocks (16 s per block).
 
@@ -248,27 +248,27 @@ In separate blocks, subjects were also presented with 80 images that included mu
 
 On different runs (within the same session), subjects were also presented with concentric rings, extending 20° × 26° (height × width) in the visual field, presented against a light gray background (40 cd/m2). In half of the blocks (16 s per block), rings moved radially (centrifugally vs. centripetally; 4°/s) and the direction of motion changed every 4 s to reduce the impact of motion aftereffects. In the remaining half of the blocks, rings remained stationary throughout the whole block. Each subject participated in two runs and each run consisted of eight blocks, plus 16 s of uniform gray presentation at the beginning and the end of each run. The sequence of moving and stationary blocks was pseudo-randomized across runs.
 
-## Experiment 7: Response to biological motion
+#### Experiment 7: Response to biological motion
 
 To test whether PIGS also responds selectively to biological motion, 12 individuals were selected randomly and scanned using a 3T scanner while they were presented with the moving point-lights that represented complex biological movements such as crawling, cycling, jumping, paddling, and walking (Jastorff and Orban, 2009). Each action was presented for 2 s and the sequence of actions was randomized across the blocks (20 s per block). As a control, in different blocks, the subjects were shown the same stimuli when all of the point-lights moved in the same direction (i.e., translation motion). Each subject participated in 11 runs and each run consisted of 12 blocks, plus 10 s of blank presentation at the beginning and the end of each run.
 
-## Imaging
+### Imaging
 
-## 3T scans
+#### 3T scans
 
 In Experiments 1, 3a, and 4–6, subjects were scanned using a horizontal 3T scanner (Tim Trio, Siemens Healthcare, Erlangen, Germany). Gradient echo EPI sequences were used for functional imaging. Functional data were acquired using single-shot gradient echo EPI with nominally 3.0 mm isotropic voxels (TR = 2000 ms; TE = 30 ms; flip angle = 90°; band width [BW] = 2298 Hz/pix; echo-spacing = 0.5 ms; no partial Fourier; 33 axial slices covering the entire brain; and no acceleration). During the first 3T scan (see ‘Methods’), structural (anatomical) data were acquired for each subject using a 3D T1-weighted MPRAGE sequence (TR = 2530 ms; TE = 3.39 ms; TI = 1100 ms; flip angle = 7°; BW = 200 Hz/pix; echo-spacing = 8.2 ms; voxel size = 1.0 × 1.0 × 1.33 mm).
 
-## 7T scans
+#### 7T scans
 
 In Experiments 2 and 3b, subjects were scanned using a 7T Siemens whole-body scanner (Siemens Healthcare) equipped with SC72 body gradients (maximum gradient strength, 70 mT/m; maximum slew rate, 200 T/m/s) using a custom-built 32-channel helmet receive coil array and a birdcage volume transmit coil. Voxel dimensions were nominally 1.0 mm, isotropic. Single-shot gradient-echo EPI was used to acquire functional images with the following protocol parameter values: TR = 3000 ms; TE = 28 ms; flip angle = 78°; BW = 1184 Hz/pix; echo-spacing = 1 ms; 7/8 phase partial Fourier; 44 oblique-coronal slices; and acceleration factor r = 4 with GRAPPA reconstruction and FLEET-ACS data (Polimeni et al., 2016) with 10° flip angle. The field of view included the occipital-parietal brain areas to cover PIGS, RSC/MPA, and TOS/OPA (but not PPA/TPA).
 
-## Data analysis
+### Data analysis
 
-## Structural data analysis
+#### Structural data analysis
 
 For each subject, inflated and flattened cortical surfaces were reconstructed based on the high-resolution anatomical data (Dale et al., 1999; Fischl et al., 1999; Fischl et al., 2002), during which the standard pial surface was generated as the gray matter border with the surrounding cerebrospinal fluid or CSF (i.e., the GM–CSF interface). The white matter surface was also generated as the interface between white and gray matter (i.e., WM–GM interface). In addition, an extra surface was generated at 50% of the depth of the local gray matter (Dale et al., 1999).
 
-## Individual-level functional data analysis
+#### Individual-level functional data analysis
 
 All functional data were rigidly aligned (6 df) relative to subject’s own structural scan using rigid Boundary-Based Registration (Greve and Fischl, 2009), and then motion-corrected. Data collected in the 3T (but not 7T) scanner was spatially smoothed using a 3D Gaussian kernel (2 mm FWHM). To preserve the spatial resolution, data collected within the 7T scanner was not spatially smoothed.
 
@@ -276,22 +276,22 @@ Subsequently, a standard hemodynamic model based on a gamma function was fit to 
 
 The resultant significance maps based on 3T scans were sampled from the middle of cortical gray matter defined for each subject based on their structural scan (see ‘Methods’). For 7T scans, the resultant significance maps were sampled from deep cortical layers at the gray–white matter interface. This procedure reduced the spatial blurring caused by superficial veins (Koopmans et al., 2010; Polimeni et al., 2010; De Martino et al., 2013; Nasr et al., 2016a). For presentation, the resultant maps were projected either onto the subject’s reconstructed cortical surfaces or onto a common template (fsaverage; FreeSurfer; Fischl, 2012).
 
-## Group-level functional data analysis
+#### Group-level functional data analysis
 
 To generate group-averaged maps, functional maps were spatially normalized across subjects, then averaged using weighted least square random-effects models (using the contrast effect size and the variance of contrast effect size as the input parameters) and corrected for multiple comparisons (Friston et al., 1999). For Figure 1A and to replicate our original finding (Nasr et al., 2011), the group-average maps were generated using fixed-effects. The resultant significance maps were projected onto a common human brain template (fsaverage).
 
-## ROI analysis
+#### ROI analysis
 
 The main ROIs included area PIGS, the two neighboring scene-selective areas (RSC/MPA, TOS/OPA), and area V6. In Experiment 6, we also included area PPA/TPA in our analysis. These ROIs were localized in two different ways: (1) functionally, for each subject based on their own evoked activity (see below), and (2) probabilistically, based on activity measured in a different group of subjects.
 
-## Functionally localized ROIs
+#### Functionally localized ROIs
 
 For those subjects who participated in Experiments 6 and 7, we localized scene-selective areas PIGS, TOS/OPA, RSC/MPA, and PPA/TPA based on their stronger response to scenes compared to faces at a threshold level of p<10–2 using the method described in Experiment 1. For subjects in Experiment 6, we also localized area V6 based on the expected selective response in this region to coherent radially vs. incoherently moving random dots (see Experiment 3). In those subjects in which PIGS and V6 showed partial overlap, the overlapping parts were excluded for the analysis.
 
-## Probabilistically localized ROIs
+#### Probabilistically localized ROIs
 
 For those subjects who participated in Experiments 4 and 5, we tested the consistency of PIGS locations across populations using probabilistic labels for areas PIGS, TOS/OPA, RSC/MPA, and V6. These labels were generated based on the results of Experiment 1 (for PIGS, TOS/OPA, and RSC/MPA) and Experiment 3a (for V6). Specifically, we localized the ROIs separately for the individual subjects who participated in Experiments 1 and 3a. Then the labels were overlaid on a common brain template (fsaverage). We computed the probability that each vortex within the cortical surface belonged to one of the ROIs. The labels for PIGS, TOS/OPA, RSC/MPA, and V6 were generated based on those vertices that showed a probability higher than 20%. This method assured us that our measurements were not biased by those subjects who showed stronger scene-selective responses. Moreover, by selecting a relatively low threshold (i.e., 20%), we avoided confining our ROIs to the center of activity sites.
 
-## Statistical tests
+#### Statistical tests
 
 To test the effect of independent parameters, we applied paired t-tests and/or a repeated-measures ANOVA, with Greenhouse–Geisser correction whenever the sphericity assumption was violated.

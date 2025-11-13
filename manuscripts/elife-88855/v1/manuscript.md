@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences Nanjing China
-2. https://ror.org/01sf06y89 School of Natural Sciences, Macquarie University Macquarie Park Australia
-3. https://ror.org/00z3td547 State Key Laboratory of Continental Dynamics, Shaanxi Key Laboratory of Early Life & Environments, Department of Geology, Northwest University Xi'an China
-4. https://ror.org/048a87296 Institute of Earth Sciences, Palaeobiology, Uppsala University Uppsala Sweden
-5. https://ror.org/05k323c76 Department of Palaeobiology, Swedish Museum of Natural History Stockholm Stockholm Sweden
+1. State Key Laboratory of Palaeobiology and Stratigraphy, Nanjing Institute of Geology and Palaeontology, Chinese Academy of Sciences Nanjing China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. School of Natural Sciences, Macquarie University Macquarie Park Australia ([ROR:01sf06y89](https://ror.org/01sf06y89))
+3. State Key Laboratory of Continental Dynamics, Shaanxi Key Laboratory of Early Life & Environments, Department of Geology, Northwest University Xi'an China ([ROR:00z3td547](https://ror.org/00z3td547))
+4. Institute of Earth Sciences, Palaeobiology, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+5. Department of Palaeobiology, Swedish Museum of Natural History Stockholm Stockholm Sweden ([ROR:05k323c76](https://ror.org/05k323c76))
 
 † Corresponding author
 
@@ -35,49 +35,49 @@ For the first time, exquisitely well-preserved columnar shell structures are des
 
 ## Results
 
-## Systematic palaeontology
+### Systematic palaeontology
 
-## Remarks
+### Remarks
 
 Holmer et al., 1996 established the Eoobolidae to include lingulides characterized by a pitted metamorphic shell and a post-metamorphic shell with pustules. The new taxa described here are assigned to Eoobolidae based on these typical characters. Despite Balthasar’s suggestion to reassign all Eoobolidae members to Zhanatellidae Koneva, 1986, based on the discovery of Eoobolus cf. triparilis from the Series 2 Mural Formation in the Canadian Rocky Mountains with a pitted metamorphic shell and tuberculate post-metamorphic shell (Balthasar, 2009), we adhere to Betts’s argument for retaining Eoobolidae (Betts et al., 2019). Actually, the distinctive features of eoobolids, such as the elevated and divided ventral and dorsal pseudointerareas, are quite different from zhanatellids that are characterized by adpressed dorsal pseudointerarea (Popov and Holmer, 1994; Betts et al., 2019).
 
-## Type species
+### Type species
 
 Latusobolus xiaoyangbaensis sp. nov., here designated.
 
-## Etymology
+### Etymology
 
 From the Latin ‘latus’ (wide), to indicate the transversely oval outline of both ventral and dorsal valves, morphologically similar to Obolus. The gender is masculine.
 
-## Diagnosis
+### Diagnosis
 
 For a full description and discussion of Latusobolus gen. nov., refer to Appendix 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88855/elife-88855-fig1-v1.jpg)
 
-**Figure 1.:** Latusobolus xiaoyangbaensis gen. et sp. nov. from the Cambrian Series 2 Shuijingtuo Formation in southern Shaanxi, South China.(A–C) ELI-XYB S5-1 BS01. (A) Cross-section of a ventral lateral margin, note post-metamorphic pustules by arrow, primary layer 1 and stacked sandwich columnar units 2–7, box indicates area in B. (B) Enlarged view of (A) showing the boundary between top primary and underlying secondary layers by dotted line. (C) Enlargement of shell layers 1–4 of (A) note canals of columns (arrows), gap (tailed arrows) between two stratiform lamellae by dotted lines. (D) Poorly phosphatised columns of ventral valve, note canals by tailed arrows, ELI-XYB S5-1 BR06. (E) Columns of dorsal valve, ELI-XYB S5-1 BS17. (F) Cross-section of a ventral lateral margin, showing post-metamorphic pustules, box indicates the area in (G), ELI-XYB S4-2 BO06. (G) Enlarged primary layer pustules and underlying secondary layer columns. (H) Dorsal valve, one unit of stacked columnar architecture with the exfoliation of top primary layer, noting column canals on the stratiform lamella surface by arrows, ELI-XYB S4-2 BO08. (I) Apatite spherules of granule aggregations of ventral columnar shell structure, note granule rods by arrow and thin gap left by the degradation of organic counterparts by tailed arrow, ELI-XYB S4-2 BO06. Scale bars: (A), 50 µm; (B), (E), (G), 20 µm; (C), (H), 10 µm; (D), 5 µm; (F), 100 µm; (I), 1 µm.
+**Figure 1.:** (A–C) ELI-XYB S5-1 BS01. (A) Cross-section of a ventral lateral margin, note post-metamorphic pustules by arrow, primary layer 1 and stacked sandwich columnar units 2–7, box indicates area in B. (B) Enlarged view of (A) showing the boundary between top primary and underlying secondary layers by dotted line. (C) Enlargement of shell layers 1–4 of (A) note canals of columns (arrows), gap (tailed arrows) between two stratiform lamellae by dotted lines. (D) Poorly phosphatised columns of ventral valve, note canals by tailed arrows, ELI-XYB S5-1 BR06. (E) Columns of dorsal valve, ELI-XYB S5-1 BS17. (F) Cross-section of a ventral lateral margin, showing post-metamorphic pustules, box indicates the area in (G), ELI-XYB S4-2 BO06. (G) Enlarged primary layer pustules and underlying secondary layer columns. (H) Dorsal valve, one unit of stacked columnar architecture with the exfoliation of top primary layer, noting column canals on the stratiform lamella surface by arrows, ELI-XYB S4-2 BO08. (I) Apatite spherules of granule aggregations of ventral columnar shell structure, note granule rods by arrow and thin gap left by the degradation of organic counterparts by tailed arrow, ELI-XYB S4-2 BO06. Scale bars: (A), 50 µm; (B), (E), (G), 20 µm; (C), (H), 10 µm; (D), 5 µm; (F), 100 µm; (I), 1 µm.
 
-## Etymology
+### Etymology
 
 After the occurrence at the Xiaoyangba section in southern Shaanxi, China.
 
-## Type material
+### Type material
 
 Holotype, ELI-XYB S5-1 BR09 (Appendix 1—figure 1M–P), ventral valve, and paratype, ELI-XYB S4-2 BO11 (Appendix 1—figure 2M–P), dorsal valve, from the Cambrian Series 2, level S5-1 and level S4-2, respectively, of Shuijingtuo Formation at the Xiaoyangba section (Zhang et al., 2021a) near Xiaoyang Village in Zhenba County, southern Shaanxi Province, China.
 
-## Diagnosis
+### Diagnosis
 
 As for the genus.
 
-## Description
+### Description
 
 For a full description and discussion of Latusobolus xiaoyangbaensis gen. et sp. nov., refer to Appendix 1.
 
-## Type species
+### Type species
 
 Obolus (Eoobolus) triparilis Matthew, 1902 (selected by Rowell, 1965).
 
-## Diagnosis
+### Diagnosis
 
 See Holmer et al. (p. 41) (Holmer et al., 1996).
 
@@ -85,21 +85,21 @@ Figure 2 and Appendix 1—figures 5–7, Supplementary file 2.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88855/elife-88855-fig2-v1.jpg)
 
-**Figure 2.:** Eoobolus acutulus sp. nov. from the Cambrian Series 2 Shuijingtuo Formation in Three Gorges areas, South China.(A–C) ELI-AJH S05 BT12. (A) Cross-section of a ventral lateral margin, note primary layer 1 and stacked sandwich columnar units 2–11, box indicates area in B. (B) Enlarged view of A. (C) Enlarged view of B, show thin gap left by the degradation of organic counterparts (tailed arrow) between two stratiform lamellae by dotted lines, the fusion point of two columnar units by arrow. (D–F) ELI-AJH 8-2-3 BT02. (D) Cross-section of shell margin, box indicates area in E. (E) Different preservation condition of columnar architecture. (F) Poorly phosphatised columns, note the opening of canals along the organic membrane by arrows, and space between two stratiform lamellae by tailed arrows. (G–H) ELI-AJH 8-2-3 BT03. (G) Note canals on the cross-section and surface of stratiform lamella by arrows, and partly exfoliated primary layer by tailed arrow. (H) Magnified columns in (G), composed of granule spherules with canal by arrow. (I) Cross-section of shell margin, box indicates area in (J), ELI-AJH 8-2-3 BT04. (J) Enlarged short columns. (K) Imbricated columnar architecture (arrows), ELI-AJH S05 BT12. Scale bars: (A), (E), 50 µm; (B), (I), 20 µm; (C), 5 µm; (D), 200 µm; (F), (G), (J), (K), 10 µm; (H), 1 µm.
+**Figure 2.:** (A–C) ELI-AJH S05 BT12. (A) Cross-section of a ventral lateral margin, note primary layer 1 and stacked sandwich columnar units 2–11, box indicates area in B. (B) Enlarged view of A. (C) Enlarged view of B, show thin gap left by the degradation of organic counterparts (tailed arrow) between two stratiform lamellae by dotted lines, the fusion point of two columnar units by arrow. (D–F) ELI-AJH 8-2-3 BT02. (D) Cross-section of shell margin, box indicates area in E. (E) Different preservation condition of columnar architecture. (F) Poorly phosphatised columns, note the opening of canals along the organic membrane by arrows, and space between two stratiform lamellae by tailed arrows. (G–H) ELI-AJH 8-2-3 BT03. (G) Note canals on the cross-section and surface of stratiform lamella by arrows, and partly exfoliated primary layer by tailed arrow. (H) Magnified columns in (G), composed of granule spherules with canal by arrow. (I) Cross-section of shell margin, box indicates area in (J), ELI-AJH 8-2-3 BT04. (J) Enlarged short columns. (K) Imbricated columnar architecture (arrows), ELI-AJH S05 BT12. Scale bars: (A), (E), 50 µm; (B), (I), 20 µm; (C), 5 µm; (D), 200 µm; (F), (G), (J), (K), 10 µm; (H), 1 µm.
 
-## Etymology
+### Etymology
 
 From the Latin ‘acutulus’ (somewhat pointed), to indicate the slightly acuminate ventral valves with an acute apical angle. The gender is masculine.
 
-## Type material
+### Type material
 
 Holotype, ELI-AJH S05 BT11 (Appendix 1—figure 5E–H), ventral valve, and paratype, ELI-AJH S05 1-5-07 (Appendix 1—figure 5M), dorsal valve, from the Cambrian Series 2, level S05 of Shuijingtuo Formation at the Aijiahe section (Zhang et al., 2016b) near Aijiahe Village in Zigui County, north-western Hubei Province, China.
 
-## Diagnosis
+### Diagnosis
 
 For a full description and discussion of Eoobolus acutulus sp. nov., refer to Appendix 1.
 
-## Biomineralized columnar architecture
+### Biomineralized columnar architecture
 
 The shell architectures are exquisitely well-preserved in these newly assigned eoobolid Latusobolus xiaoyangbaensis gen. et sp. nov. and Eoobolus acutulus sp. nov. Their shell architectures are stratiform in a hierarchical pattern, and consist of laminated primary layer and columnar secondary layer (Figures 1 and 2). The laminated primary layer is about 1–3 μm thick, composed of compact apatitic lamellae (Figures 1B and 2G), while the secondary layer is stratiform with numerous columns disposed orthogonally between a pair of stratiform lamellae (Figures 1B, C, 2B, C, J and K; Appendix 1—figure 4I and J; Appendix 1—figure 7J) and looks like being composed of stacked sandwich columnar units. The hollow space in the columns and between lamellae of stacked columnar units may be originally filled with the rich composition of organic material (Figures 1C, I, 2C, F, H and Figure 3E; Appendix 1—figure 4I).
 
@@ -113,7 +113,7 @@ The maximum number of multi-stacked sandwich columnar units increases to 13 in E
 
 ## Discussion
 
-## Diversity of linguliform brachiopod shells
+### Diversity of linguliform brachiopod shells
 
 Although the supposed living fossil Lingula has long been considered to virtually lack morphological evolutionary changes (Schopf, 1984), more recent studies have shown that lingulide brachiopods have experienced dramatic modifications in many aspects (Liang et al., 2023), including arrangement of internal organs (Zhang et al., 2008), life mode (Topper et al., 2015), shell structure (Cusack et al., 1999), and even genome (Goto et al., 2022; Luo et al., 2015). The complexity and diversity of linguliform shell architecture was increasingly recognised in the pioneering study of Cusack, Williams and Holmer (Cusack et al., 1999; Holmer, 1989; Williams and Cusack, 1999; Williams and Holmer, 1992). Moreover, such complex architectures had a wide distribution in closely related brachiopod groups when they made their first appearance at the beginning of the Cambrian. In connection with an ongoing comprehensive scrutiny of well-preserved linguliform shell ultrastructures from the lower Cambrian limestones of South China, their complexity and diversity hidden in their conservative oval shape is becoming more and more intriguing. However, compared to their ancestral representatives, the shell structure in living lingulides is relatively simple, revealing profound modifications during their long evolutionary history (Cusack et al., 1999; Holmer et al., 2008a; Williams, 1997a; Williams and Cusack, 1999).
 
@@ -127,7 +127,7 @@ The fossil record reveals that the columnar shell structure (Figure 3G–I and F
 
 **Figure 4.:** (A) Eoobolus incipiens, P00712-AJXM-267.5 DT-12. (B–D) Lingulellotreta ergalievi, ELI-AJH 8-2-3 CI11. (B) Cross-section of shell margin, box indicates area in C, note primary layer 1 and stacked sandwich columnar units 2–22, and raised pseudointerarea (tailed arrow). (C) Enlarged view of thin gap (tailed arrow) between two stratiform lamellae by dotted lines, the fusion of two stacked columnar units into one by arrow. (D) Imbricated growth pattern of stacked columnar units. (E) Palaeotreta zhujiahensis, note column openings (arrow) on eight successive columnar units by tailed arrows, ELI-AJH 8-2-1 AE09. (F–J) Eohadrotreta zhenbaensis. (F) Relatively taller columns (ca. 20 µm), ELI-AJH 8-2-1 acro16. (G) Apatite spherules of granule aggregations in one columnar unit, note column openings (arrows) on both stratiform lamella surfaces, ELI-AJH S05 E18. (H) Cross-section shows column openings on four successive units by tailed arrows, ELI-WJP 7 AB98. (I) Poorly phosphatised columns (arrows), note openings of canals on surface of stratiform lamella by tailed arrows, ELI-AJH S05 I76. (J) Stacked columnar units in an imbricated pattern, ELI-WJP 6 R47. Scale bars: (A), (E), (I), 10 µm; (B), 100 µm; (C), (F), 20 µm; (G), 2 µm; (H), 5 µm; (D), (J), 50 µm.
 
-## Biomineralization process of organo-phosphatic columnar architecture
+### Biomineralization process of organo-phosphatic columnar architecture
 
 Metazoans are known for secreting very different types of biominerals through the process of biological mineralization. This linking of living soft organic tissues with solid earth minerals is a process that has changed the nature of Earth’s fossil archive (Addadi and Weiner, 2014; Lowenstam and Weiner, 1989; Roda and Mar, 2021; Wood and Zhuravlev, 2012). Because of the fine quality of phosphate biomineralization in linguliforms (Cusack et al., 1999; Williams and Cusack, 1999), they can have exquisitely finely preserved shell ultrastructures (Figures 3 and 4), including epithelium cell moulds (Figure 3C and F–I). This permits us to reconstruct the biomineralization process of their apatitic cylindrical columns and address key questions about how these hierarchical structures relate to mechanical functions. Although the biomineralization process of living brachiopods at the cellular level is not well known, biochemical experiments (Cusack et al., 1999; Cusack et al., 1992; Lévêque et al., 2004; Williams and Cusack, 1999) have revealed the possibility that the biologically-controlled, organic matrix mediated extracellular mineralization during brachiopod shell secretion. This process can be compared to the hard tissue-forming process of mollusc shells and vertebrate teeth (Golub, 2011; Neary et al., 2011; Roda and Mar, 2021).
 
@@ -145,7 +145,7 @@ The most intriguing and enigmatic phenomenon of skeletal biomineralization is th
 
 Given the long history of this subphylum, the possession of a phosphatic shell likely has numerous advantages. The innovative columnar architecture can mechanically increase the thickness and strength of the shell by the presence of numerous, stacked thinner laminae, comparable with the laminated fabric seen in obolids (Cusack et al., 1999; Zhang et al., 2016a). Furthermore, the stacked sandwich columns also increase the strength, flexibility, and ability to resist crack propagation by filling the space between the stratiform lamellae with organic material, comparable with the baculate fabric (Lévêque et al., 2004; Merkel et al., 2009). Thus, the stacked sandwich model of the columnar architecture possesses a greater advantage of mechanical functions and adaptation with a superior combination of strength, durability, and flexibility in laminated and baculate fabrics, resembling the colonnaded and reinforced concrete often used in urban construction. New data from nuclear magnetic resonance spectroscopy and X-ray diffraction reveals that apatite in brachiopod shells is highly ordered and thermodynamically stable crystalline and it is more robust in the extremes of moisture, ambient osmotic potential and temperature, unlike the poorly ordered crystal of vertebrate bone (Neary et al., 2011). This type of more efficient and economical shell may also have been responsible for the early diversity of major linguliform brachiopods during the Cambrian explosion, resulting in this group becoming a significant component of the Cambrian Evolutionary Fauna (Bassett et al., 1999; Sepkoski, 1984; Zhang et al., 2008; Zhang et al., 2020b; Zhang et al., 2021b).
 
-## Evolution of stacked sandwich columnar architecture in early brachiopod clades
+### Evolution of stacked sandwich columnar architecture in early brachiopod clades
 
 Evolutionary transformations have repeatedly modified the organo-phosphatic architecture consisting of various aggregates of spherular apatite, held together by a scaffolding of glycosaminoglycan complexes, fibrous proteinaceous struts and chitinous platforms, in linguliform brachiopod shells since the early Cambrian (Cusack et al., 1999). As one of the oldest forms of brachiopod shell architectures, the columnar shell has long been regarded as a unique character of acrotretide brachiopods (Cusack et al., 1999; Holmer, 1989). However, recent discoveries of columnar shell structures in a diversity of early Cambrian stem group brachiopods have revealed that the same biomineralization strategy is utilised much more widely than previously thought (Butler et al., 2015; Holmer et al., 1996; Holmer et al., 2008a; Skovsted et al., 2010; Streng et al., 2007; Ushatinskaya and Korovnikov, 2014; Zhang, 2018; Zhang et al., 2021a). This highlights the need for a better understanding of the origin and adaptive modification of stacked-sandwich columnar architectures in early lophophorate evolution.
 
@@ -153,7 +153,7 @@ The Eoobolidae is presently considered to be the oldest known linguliform brachi
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88855/elife-88855-fig6-v1.jpg)
 
-**Figure 6.:** Eoobolus incipiens, Latusobolus xiaoyangbaensis gen. et sp. nov., Eoobolus acutulus sp. nov., Eoobolus variabilis, Eoobolus? aff. priscus, Lingulellotretidae Lingulellotreta malongensis, Lingulellotreta ergelievi, Acrotretida Palaeotreta shannanensis, Palaeotreta zhujiahensis, Eoohadrotreta zhenbaensis, Hadrotreta primaeva, Canthylotreta crista, and stem group Setatella significans.The height and diameter data of columns are based on data from literature (Skovsted and Holmer, 2003; Streng et al., 2007; Streng and Holmer, 2006; Ushatinskaya and Korovnikov, 2014; Zhang et al., 2016b; Zhang et al., 2020b; Zhang et al., 2020c).Figure 6—source data 1.Figure 6.
+**Figure 6.:** The height and diameter data of columns are based on data from literature (Skovsted and Holmer, 2003; Streng et al., 2007; Streng and Holmer, 2006; Ushatinskaya and Korovnikov, 2014; Zhang et al., 2016b; Zhang et al., 2020b; Zhang et al., 2020c).
 
 Among all early Cambrian linguliforms with columnar architectures, the acrotretides have developed the most complex shell structure (Figure 4E–J). The Cambrian fossil record unveiled a clear pattern of increasing growth (regarding both the diameter and height of the columns and the number of stacked sandwich columnar units) of the columnar architecture in acrotretides: from a very simple type, observed in Palaeotreta shannanensis (similar to that of E. incipiens) to the slightly more developed structure in Palaeotreta zhujiahensis (similar to that of L. malongensis) (Zhang et al., 2020c) to the most advanced architecture observed in Eohadrotreta zhenbaensis and younger specimens (Figure 6). The diameter of a single orthogonal column increases about two times in acrotretides compared to eoobolids, whereas the general height of the columns increases to 10 µm in Eohadrotreta zhenbaensis and to 29 µm in Hadrotreta primaeva, which is about 10 times as high as seen in Eoobolus variabilis. Furthermore, the number of columnar units has also increased to about 30, collectively increasing the shell thickness to a maximum value of more than 300 µm in Eohadrotreta.
 

@@ -25,21 +25,53 @@ Here, we investigate how Doc2b contributes to transmission at the PC to Deep Cer
 
 ## Results
 
-## Spontaneous release
+### Spontaneous release
 
 In order to assess the suitability of the PC to DCN synapse for our studies, we used fluorescence in situ hybridization (FISH) to evaluate Doc2b and Doc2a gene expression in adult (P60-P70) wildtype and Doc2b KO mice (Groffen et al., 2010). PCs strongly expressed Doc2b but not Doc2a in wildtype animals (Figure 1A). In PCs of Doc2b KO mice, Doc2b expression was eliminated and Doc2a expression remained absent (Figure 1B). In wildtype animals, DCN neurons did not express either Doc2b or Doc2a (Figure 1A). Doc2b was apparent in the dentate gyrus of the hippocampus (Verhage et al., 1997; Figure 1—figure supplement 1A), and the striatum (data not shown) of wildtype animals but was absent in the KO (Figure 1—figure supplement 1B). Doc2a expression was apparent in the CA3 region of the hippocampus in both WT and Doc2b KO (Figure 1—figure supplement 1). Furthermore, we used immunostaining to demonstrate that Doc2b protein colocalizes with parvalbumin, a marker for PC boutons, in the DCN of WT animals (Figure 1C). Doc2b immunoreactivity was not detected in Doc2b KO animals (Figure 1D). Doc2b immunoreactivity was also prominent in PC cell bodies and dendrites and in other brain regions including the hippocampus (Figure 1—figure supplement 2). These studies indicate that Doc2b is the only calcium-dependent Doc2 present at PC synapses of adult wildtype mice, that it is eliminated in Doc2b KO mice, and that there is no compensatory expression of Doc2a in PCs of Doc2b KO mice.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig1-v1.jpg)
+
+**Figure 1.:** (A) Sagittal cerebellum slice from a WT mouse at postnatal day 60 (P60) labeled using FISH for DAPI (blue), Doc2b (green), and Doc2a (red). Abbreviations, Purkinje Cell Layer (PCL), Molecular Layer (ML), Granule Cell Layer (GCL), and Deep Cerebellar Nuclei (DCN). Scale bar, 200 μm. (B) Same as in (A) but for Doc2b KO. Images are on the same scale as in (A). (C) Sagittal DCN section from a WT mouse at postnatal day 60 (P60) immunostained for parvalbumin (left, cyan) and Doc2b (right, magenta). Scale bar, 25 μm. (D) Same as in (C) but for Doc2b KO. Images are on the same scale as in (C). (E) mIPSCs were recorded at the PC to DCN synapse in P40-50 mice in the presence of TTX, NBQX, and CPP. Representative traces from individual cells for WT and Doc2b KO littermates. (F) Summary data for mIPSC frequency and amplitude at the PC to DCN synapse in P40-50 mice. n = 14 cells (3 animals) for WT, n = 12 cells (3 animals) for Doc2b KO. Individual cells are shown as small circles and genotype average is shown as larger bold circle. Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test) (see Materials and Methods for details). (G) Same as in (C) but for P11-12 mice. (H) Same as in (D) but for P11-12 mice. n = 20 cells (3 animals) for WT, n = 20 cells (2 animals) for Doc2b KO.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sagittal hippocampus slice from a WT mouse at P60 labeled with RNAscope probe for DAPI (blue). Scale bar, 200 μm. (Aa). Inset from (A) with expanded view of dentate gyrus, labeled with RNAscope probes for DAPI, Doc2b (green), and Doc2a (red). Scale bar, 50 μm. (Ab). Inset from (A) with expanded view of CA3 hippocampus, labeled with RNAscope probes for DAPI, Doc2b, and Doc2a. Scale bar, 50 μm. (B) Same as in (A) but for Doc2b KO. Images are on the same scale as in (A). (Ba) Same as in (Aa) but for Doc2b KO. (Bb) Same as in (Ab) but for Doc2b KO.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sagittal cerebellum slice from a WT mouse at postnatal day 60 (P60) immunostained for parvalbumin (left, cyan) and Doc2b (right, magenta). Scale bar, 300 μm. (B) Same as in (A) but for Doc2b KO. Images are on same scale as in (A). (C) Sagittal hippocampus slice from a WT mouse at P60 immunostained for DAPI (top, blue) and Doc2b (bottom, magenta). Scale bar, 300 μm. Abbreviation, Dentate gyrus (DG). (D) Same as in (C) but for Docb2 KO. Images are on same scale as in (C).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) mIPSCs were recorded at PC to PC synapses in P7-8 mice in the presence of TTX, NBQX, CPP, and strychnine. Representative traces from individual cells for WT (black) and Doc2b KO (red) littermates. (B) Summary data for mIPSC frequency and amplitude at PC to PC synapses. n = 25 cells (7 animals) for WT, n = 36 cells (7 animals) for Doc2b KO. Left: Statistical significance was assessed using two-tailed Wilcoxon Signed-Rank test after the data were found to be asymmetrically distributed (Shapiro-Wilk test). Right: Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) mEPSCs were recorded at PC to PC synapses in P11-12 mice in the presence of TTX and gabazine. Representative traces from individual cells for WT (black) and Doc2b KO (red) littermates. (B) Summary data for mEPSC frequency and amplitude at PF to PC synapses. n = 25 cells (four animals) for WT, n = 24 cells (three animals) for Doc2b KO. Statistical significance was assessed using two-tailed Student’s t-tests.
 
 Based on multiple studies that show that Doc2b positively regulates mini frequency (Courtney et al., 2018; Groffen et al., 2010; Pang et al., 2011; Ramirez et al., 2017), we expected the loss of Doc2b to decrease mIPSC frequency at the PC to DCN synapse. Surprisingly, however, there was no difference in mIPSC frequency for WT and Doc2b KO mice at the mature PC to DCN synapse under physiological conditions (34-35o C, 1.5 mM external calcium, Cae) (p=0.93, two-tailed unpaired Student’s t-test) (Figure 1E–F). This contrasts with the strong reduction in mIPSC frequency that Doc2b KO causes in hippocampal autapse cultures (Groffen et al., 2010), hippocampal neuronal cultures (Courtney et al., 2018; Groffen et al., 2010; Pang et al., 2011; Ramirez et al., 2017), and PC to PC synapses (Groffen et al., 2010). In the latter case, the observed 75% reduction in mIPSC frequency at PC to PC synapses is paricularly interesting because it also involves synapses made by PCs. In contrast to our PC to DCN studies which were perfomed in near physiological conditions (34-35o C, 1.5 Cae), experiments at PC to PC synapses were performed in brain slices of P7-P8 mice at room temperature in elevated Cae (2.0 mM). This raises the possibility that the age of the animal, the temperature of the experiments, or the external calcium levels could all contribute to differences in the Doc2b dependence of mIPSC frequency. We found that mIPSC frequency was reduced by 65% in P7-P8 in Doc2b KO mice for experiments that were performed at 34-35o C and in 1.5 Cae (p<0.001, two-tailed Wilcoxon signed-rank test) (Figure 1—figure supplement 3). This result suggests that the age of the animal could account for the Doc2b dependence of mIPSC frequency. It is impractical to extend studies of the PC to PC synapse to older animals because PCs are the dominant source of inhibition for other PCs for only a brief developmental window, and in older animals, molecular layer interneurons become the dominant source of inhibition (Altman, 1972; Bernard and Axelrad, 1993). These observations suggest that Doc2b contributes to mini release in developing animals but not in adults. To address this possibility, we repeated experiments at the PC to DCN synapse in P11-12 animals, but again observed no difference in mini release in Doc2b KO mice (p=0.57, two-tailed unpaired Student’s t-test) (Figure 1G–H).
 
 Another potential issue in interpreting previous studies is that Doc2b is present both presynaptically and postsynaptically at PC to PC synapses and at many cultured synapses that have been studied. Although Doc2b is thought to function presynaptically, it remains possible that Doc2b may act postsynaptically to influence mini frequency. We therefore tested whether postsynaptic loss of Doc2b affects mini frequency by recording miniature excitatory postsynaptic currents (mEPSCs) at the parallel fiber to PC synapse, in which Doc2b is normally expressed in the postsynaptic PC, but not in the presynaptic granule cells (Figure 1A). At the parallel fiber to PC synapse, we saw no effect on mEPSC frequency or amplitudes in Doc2b KO mice (p=0.83), arguing against a postsynaptic contribution of Doc2b to minis (Figure 1—figure supplement 4).
 
-## Synaptic strength and release kinetics
+### Synaptic strength and release kinetics
 
 We assessed the role of Doc2b in determining the strength and kinetics of evoked release by studying individual PC inputs. To isolate synaptic responses from single PCs, we stimulated PC axons at the stimulus threshold and evoked failures and synaptic currents with a similar probability (Figure 2A–B). The peak single fiber conductances were similar for WT and Doc2b KO mice (p=0.22, two-tailed Wilcoxon signed-rank test) (WT: 30.9 ± 3.5 nS, n = 30 inputs, Doc2b KO: 26.9 ± 2.7, n = 29 inputs), indicating that the loss of Doc2b does not alter evoked release at the PC to DCN synapse.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig2-v1.jpg)
+
+**Figure 2.:** (A) Top: Example minimal stimulation of a PC input to a DCN neuron, where the stimulus intensity was lowered until failures or single inputs were evoked with similar probability. Bold traces show average traces for failures and single inputs. Bottom: IPSC amplitudes at a fixed stimulus intensity. (B) Representative examples of single inputs from WT and Doc2b KO mice. (C) Summary data for minimal conductances and single IPSC decay time constant (tau) for WT and Doc2b KO. n = 30 inputs for WT, n = 29 inputs for Doc2b KO. Average conductance was 30.9 ± 4 nS for WT and 26.9 ± 3 nS for Doc2b KO. Average IPSC tau decay was 3.43 ± 0.2 ms for WT and 3.63 ± 0.2 for Doc2b KO. Left: Statistical significance was assessed using two-tailed Wilcoxon Signed-Rank test after the data were found to be asymmetrically distributed (Shapiro-Wilk test). Right: Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative example of single input from WT, showing average failure and average input. (B) Individual trials from the example in (A) showing failures (top) and successfully evoked single inputs (bottom). Stimulus artifact is blanked for clarity. (C) Same as in (A) but for Doc2b KO. Same scale as in (A). (D) Same as in (B) but for Doc2b KO. Same scale as in (B). (E) Summary data of spontaneous events occurring before and after a minimal electrical stimulus in WT, sorted by events occurring during failures (dark) and inputs (light). Stimulus duration blanked for clarity. n = 9 cells (3 animals). (F) Same as in (E) but for Doc2b KO. n = 11 cells (4 animals). Same scale as in (E).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative example of DCN response to 4 × 100 Hz burst stimulation of PC fibers from WT. (B) Individual trials from the example in (A). Stimulus artifact is blanked for clarity. (C) Same as in (A) but for Doc2b KO. Same scale as in (A). (D) Same as in (B) but for Doc2b KO. Same scale as in (B). (E) Summary data of spontaneous events occurring before and after burst stimulation in WT. Stimulus duration blanked for clarity. n = 9 cells (three animals). (F) Same as in (E) but for Doc2b KO. n = 11 cells (four animals). Same scale as in (E).
+
 The high affinity and slow kinetics of calcium-binding made Doc2 a strong candidate sensor for asynchronous release, and a study concluded that Doc2 mediates slow asynchronous release in hippocampal cultures (Yao et al., 2011). However, we found that the decays of the synaptic currents were unaltered in Doc2b KO mice (Figure 2B–C). The IPSC decay time constants were similar for WT and Doc2b KO mice (p=0.45, two-tailed unpaired Student’s t-test) (WT: 3.43 ± 0.18 ms, Doc2b KO: 3.63 ± 0.17 ms). We also quantified asynchronous release by detecting individual inhibitory synaptic events. There was a high frequency (50–100 Hz) of spontaneous IPSCs onto DCN cells. As expected, during failure trials, there was no change in spontaneous event frequency (Figure 2—figure supplement 1). If asynchronous release is present at the PC to DCN synapse, the number of events after a success trial would be expected to transiently increase, but this was not the case (Figure 2—figure supplement 1). Instead there was a transient decrease in sIPSC frequency. This reduction was present in both WT and Doc2b KO mice and could be lengthened by stimulating PCs 4 times at 100 Hz (Figure 2—figure supplement 2). Several possible mechanisms could account for the transient decrease of sIPSC frequency, including depletion of the readily releasable pool, or shunting of more distal inputs as somatic PC conductances are activated. However, with regard to the issue of asynchronous release, these experiments demonstrate that asynchronous release is not detected at the PC to DCN synapse in WT or Doc2b KO animals.
 
-## Sustained responses and synaptic plasticity
+### Sustained responses and synaptic plasticity
 
 PCs usually fire at high frequencies for sustained periods, and it is therefore important to use appropriate stimulus patterns to assess the contribution of Doc2b under physiological conditions. The PC to DCN synapse changes considerably during development. We therefore examined the role of Doc2b at PC to DCN synapses in both juveniles (P13-15) and adults (P60-80). We tested the hypothesis that Doc2b helps PC to DCN synapses maintain their efficacy during sustained periods of high-frequency activation.
 
@@ -47,13 +79,13 @@ We began by studying the PC to DCN synapse in juveniles, where synaptic depressi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig3-v1.jpg)
 
-**Figure 3.:** (A) PC axons were stimulated at various frequencies and responses were recorded from large DCN neurons in P13-15 mice. Representative IPSCs for WT are shown with stimulus artifact blanked for clarity. (B) Same as in (A) but for Doc2b KO. Same scale as in (A) unless indicated otherwise. (C) Normalized paired pulse ratio (PPR) as a function of stimulation frequency. Data are mean ± S.E.M. n = 14 cells (6 animals) for WT, n = 11 cells (6 animals) for Doc2b KO. Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test). (D) Same as in C but showing steady-state IPSC amplitude as a function of stimulation frequency. (E) Same as in C but showing steady-state decay time constant (λ) as a function of stimulation frequency.Figure 3—source data 1.
+**Figure 3.:** (A) PC axons were stimulated at various frequencies and responses were recorded from large DCN neurons in P13-15 mice. Representative IPSCs for WT are shown with stimulus artifact blanked for clarity. (B) Same as in (A) but for Doc2b KO. Same scale as in (A) unless indicated otherwise. (C) Normalized paired pulse ratio (PPR) as a function of stimulation frequency. Data are mean ± S.E.M. n = 14 cells (6 animals) for WT, n = 11 cells (6 animals) for Doc2b KO. Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test). (D) Same as in C but showing steady-state IPSC amplitude as a function of stimulation frequency. (E) Same as in C but showing steady-state decay time constant (λ) as a function of stimulation frequency.
 
 In adults, steady-state transmission at PC to DCN synapses is frequency-independent (Turecek et al., 2017; Turecek et al., 2016). This unusual property requires a precise balance between activity-dependent vesicle depletion and activity-dependent facilitation mediated by Syt7 (Turecek et al., 2017). However, synaptic responses are present during sustained high-frequency activation in Syt7 KO mice, although they are no longer frequency-invariant (Turecek et al., 2017). Therefore, there must be Syt7-independent mechanisms that help sustain release after repetitive PC activity. We hypothesized that Doc2b, which exhibits similar Ca-binding properties as Syt7, could help enhance release in response to PC activity. We tested this hypothesis by studying PC to DCN synapses from adults (P60-P80). Frequency-invariance is readily observed at this age in WT, as steady-state synaptic strength remains constant across PC firing frequency (Figure 4A; Turecek et al., 2016). In Doc2b KO mice, we observed no difference in synaptic responses compared to WT mice, and frequency-invariance remained intact (Figure 4). Specifically, steady-state synaptic strength and the kinetics of reaching steady-state were normal in Doc2b KO (p=0.32 and p=0.51, respectively) (Figure 4C–D). In addition, we examined whether the amount of Syt7-dependent facilitation was affected by Doc2b KO. If Syt7 and Doc2b are activated by a shared Ca source, then Syt7-dependent facilitation may become more prominent in Doc2b KO as Doc2b competing for Ca is absent. However, we did not observe any difference in the magnitude or time-course of facilitation in Doc2b KO at the PC to DCN synapse (Figure 4G–H). Altogether, our data do not support a role for Doc2b in PC to DCN synaptic transmission or short-term plasticity in young or mature animals under physiological conditions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55165/elife-55165-fig4-v1.jpg)
 
-**Figure 4.:** (A) Example of DCN response to PC axon stimulation at 10 Hz or 100 Hz in WT. Stimulus artifact blanked for clarity. (B) Same as in (A) but for Doc2b KO. Same scale as in (A) unless indicated otherwise. (C) Normalized steady-state IPSC amplitude as a function of stimulation frequency. Data are mean ± S.E.M. n = 10 cells (four animals) for WT, n = 9 cells (four animals) for Doc2b KO. Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test). (D) Same as in C but showing steady-state decay time constant (λ) as a function of stimulation frequency. (E) Example of DCN response to PC axon stimulation switched between 100 Hz and 10 Hz in WT and Doc2b KO, showing the frequency-independence of steady-state. Scale on right is same as scale on left. (F) Normalized IPSC amplitudes as a function of stimulus number for the protocol in (D). (G) Expanded view of examples in (D), showing a hidden facilitation unmasked when stepping from 10 Hz to 100 Hz. Scale on right is same as scale on left. (H) Same as in (E) but expanded view of frequency step from 10 Hz to 100 Hz.Figure 4—source data 1.
+**Figure 4.:** (A) Example of DCN response to PC axon stimulation at 10 Hz or 100 Hz in WT. Stimulus artifact blanked for clarity. (B) Same as in (A) but for Doc2b KO. Same scale as in (A) unless indicated otherwise. (C) Normalized steady-state IPSC amplitude as a function of stimulation frequency. Data are mean ± S.E.M. n = 10 cells (four animals) for WT, n = 9 cells (four animals) for Doc2b KO. Statistical significance was assessed using two-tailed Student’s t-tests after data were found to be normally distributed (Shapiro-Wilk test). (D) Same as in C but showing steady-state decay time constant (λ) as a function of stimulation frequency. (E) Example of DCN response to PC axon stimulation switched between 100 Hz and 10 Hz in WT and Doc2b KO, showing the frequency-independence of steady-state. Scale on right is same as scale on left. (F) Normalized IPSC amplitudes as a function of stimulus number for the protocol in (D). (G) Expanded view of examples in (D), showing a hidden facilitation unmasked when stepping from 10 Hz to 100 Hz. Scale on right is same as scale on left. (H) Same as in (E) but expanded view of frequency step from 10 Hz to 100 Hz.
 
 ## Discussion
 
@@ -63,23 +95,173 @@ It is surprising that the loss of this high-affinity calcium-binding protein whi
 
 ## Materials and methods
 
-## Ethics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Doc2b (gene) Doc2b (protein)</td>
+      <td>UniProtKB</td>
+      <td>P-70169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Doc2b KO mice</td>
+      <td>Doi:http://doi.org/10.1126/science.1183765; PMID:20150444</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Doc2b</td>
+      <td>Synaptic Systems</td>
+      <td>Cat #174 103; RRID:AB_2619874</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Parvalbumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Product#P3088-.2ML; RRID:AB_477329</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG H and L Alexa Fluor647</td>
+      <td>Abcam</td>
+      <td>Ab150083; RRID:AB_2714032</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG H and L Alexa Fluor568</td>
+      <td>Abcam</td>
+      <td>Ab175473</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fluorophore-conjugated Probe-Mm-Doc2b</td>
+      <td>ACD Bio</td>
+      <td>Cat#484798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2.5 VS Probe -Mm-Doc2A probe</td>
+      <td>ACD Bio</td>
+      <td>Cat#531549-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks (https://www.mathworks.com/ downloads/)</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2017a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgorPro</td>
+      <td>Wavemetrics (https://www.wavemetrics.com/order/order_igordownloads6.htm)</td>
+      <td>RRID:SCR_000325</td>
+      <td>Version 6.37</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OlyVIA software</td>
+      <td>Olympus (https://www.olympus-lifescience.com/en/support/downloads/)</td>
+      <td>RRID:SCR_016167</td>
+      <td>Version 2.9.1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Doc2b primers</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5’CATTGCCACTTCATAAGCGTAAGTTTCC 3’ 5’CGAGGATGGAACCCTGTTTACTCTGG 33’ 5’CCTTCTATCGCCTTCTTGACG 3’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Abcam</td>
+      <td>Ab120046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>Abcam</td>
+      <td>Ab120159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strychnine hydrochloride</td>
+      <td>Abcam</td>
+      <td>Ab120416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR95531 (gabazine)</td>
+      <td>Abcam</td>
+      <td>Ab120042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin citrate</td>
+      <td>Abcam</td>
+      <td>Ab120055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen (ThermoFIsher Scientific)</td>
+      <td>Cat#00-3958-02</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics
 
 All animal procedures were carried out in accordance with the NIH and Animal Care and Use Committee (IACUC) guidelines and protocols approved by the Harvard Medical Area Standing Committee on Animals (animal protocol #1493).
 
-## Animals
+### Animals
 
 Doc2b heterozygotes were kindly given by the Chapman laboratory and bred to produce Doc2b KOs and WT animals for experiments. Mice were originally produced in a C57/BL6 background (Groffen et al., 2010). Animal genotypes were assessed by PCR.
 
-## Slice preparation
+### Slice preparation
 
 WT or Doc2b KO mice of both sexes were used for physiology experiments. Animal age varied across experiments (P12 and P40-P50 for PC to DCN mIPSCs, P7-8 for PC to PC mIPSCs, P18-P20 for PC to DCN minimal stimulation and burst stimulation, and P13-15 and P60-P80 for PC to DCN train experiments). Animals older than P20 were anesthetized with ketamine/xylazine/ acepromazine and transcardially perfused with warm choline-ACSF solution containing in mM: 110 Choline Cl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 0.5 CaCl2, 7 MgCl2, 3.1 Na-Pyruvate, 11.6 Na-Ascorbate, 0.005 NBQX, and 0.0025 (R)-CPP, oxygenated with 95% O2/5% CO2. To prepare sagittal slices of the cerebellum, the hindbrain was first removed, a cut was made down the midline of the cerebellum, and the two halves of the cerebellum were glued down to the slicing chamber. 150–200 µm thick sagittal slices were cut with a Leica 1200S vibratome in warm choline-ACSF. Slices were transferred to a standard ACSF solution containing, in mM: 127 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 1.5 CaCl2, and 1 MgCl2 maintained at 34–35°C for 10–12 min and then moved to room temperature for 20–30 min before beginning recordings. Procedures involving animals were approved by the Harvard Medical Area Standing Committee on Animals.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell voltage clamp recordings were performed on spontaneously active, large diameter (20–25 µm) neurons in the lateral and interposed deep cerebellar nuclei. These large DCN neurons have been characterized as glutamatergic projection neurons (Uusisaari et al., 2007). Selection criteria used to identify these cells are similar to those used in a previous study (Turecek et al., 2016), which confirmed glutamatergic identity of DCN cells in mice expressing TdTomato-labeled vesicular glutamate transporter (VGLUT2) (Slc17a6-IRES-Cre;Ai14). Cells were also selected in the more dorsal areas of the DCN along fiber tracts, as finding reliable PC inputs was easiest in these areas. Borosilicate glass electrodes were filled with a high chloride (ECl = 0 mV) internal containing in mM: 110 CsCl, 10 HEPES, 10 TEA-Cl, 1 MgCl2, 4 CaCl2, 5 EGTA, 20 Cs-BAPTA, 2 QX314, and 0.2 D600, adjusted to pH 7.3 with CsOH. BAPTA was used in high concentration to prevent long-term plasticity (Ouardouz and Sastry, 2000; Pugh and Raman, 2006; Zhang and Linden, 2006). Low resistance (1–2 MΩ) electrodes were used to minimize series resistance (1–8 MΩ), which was compensated up to 80%. Compensation was only applied for the estimated capacitance of the cell body (5 pF). DCN cells were held at −30 to −40 mV and PCs were held at −60 to −70 mV. Liquid junction potentials were left unsubtracted. All experiments were done at 34–35°C. For DCN and PC recordings, 5 µM NBQX to block AMPARs, 2.5 µM (R)-CPP to block NMDARs, and 1 µM strychnine to block glycine receptors were included in the bath. For parallel fiber to PC recordings, 5 µM SR95531 was added in the bath to isolate mEPSCs. All experiments measuring mIPSCs or mEPSCs included 1 µM TTX in the bath. Flow rate was measured as 5 mL/min. All recordings and analysis were performed blind.
 
-## Analysis
+### Analysis
 
 Recordings were obtained using Multiclamp 700B (Molecular Devices), sampled at 20 kHz and filtered at 4 kHz, and collected in Igor Pro (Wavemetrics). Data were analyzed using custom-written scripts in Matlab (Mathworks), which are available at https://github.com/waderegehr-lab/Doc2b-eLife (copy archived at https://github.com/elifesciences-publications/Doc2b-eLife; Regehr, 2020). All data are shown as means ± SEM unless otherwise indicated. For data obtained from each electrophysiology experiment, a Shapiro-Wilk test with significance level of 0.05 was used to test whether data were normally distributed. Most data were found to be normally distributed and subsequently analyzed by a two-tailed unpaired Student’s t-test. Some data were asymmetrically distributed with a right skew (Figure 2; Figure 1—figure supplement 3) and were tested by non-parametric Wilcoxon signed-rank. The threshold for statistical significance was set at p<0.05.
 
@@ -87,11 +269,11 @@ The frequencies of miniature postsynaptic currents and spontaneous events were 
 
 During trains, IPSC amplitudes were measured from averaged traces as the peak evoked current relative to a baseline measured 2 ms before onset of the stimulus. In young animals, IPSCs usually do not fully decay during high-frequency trains before subsequent stimuli. To accurately measure IPSC amplitude, baselines were then measured by extrapolating a single exponential fit from the previous IPSC. The steady-state IPSC was measured as the average size of the IPSCs between the 50th to 80th stimuli.
 
-## Fluorescence in situ hybridization (FISH)
+### Fluorescence in situ hybridization (FISH)
 
 Eight- to 9-week-old WT and Doc2b KO animals were anesthetized with isoflurane before the brain was quickly removed, frozen in dry ice, and embedded in optimal cutting temperature (OCT) compound (Tissue-Tek). 20-µm-thick sagittal slices of the whole brain were cut on a cryostat (Microm HM500-CM) and mounted on glass slides (Superfrost Plus, VWR, 48311–703). Fluorescent in situ hybridization was carried out according to the ACD-Bio RNAscope Multiplex Assay manual (document Number 320514). Samples were subsequently fixed in 4% paraformaldehyde in phosphate-buffered saline (PBS) for 15 min at 4°C and then dehydrated with 50% (x1), 70%, and 100% (x2) ethanol washes for 5 min each. Slides were air-dried and a barrier around the tissue was drawn using an Immedge hydrophobic barrier pen (Vector Laboratories). Brain slices were then incubated in RNAscope protease III reagent (ACD-Bio 322337) at room temperature for 30 min and rinsed twice in PBS for 5 min. Fluorophore-conjugated Probe-Mm-Doc2b (Cat #484798) and 2.5 VS Probe -Mm-Doc2A probe (Cat# 531549-C2) were incubated with the slide-mounted tissue sections in a HybEz II oven (ACD-Bio) for two hours at 40°C, then washed in RNAscope wash buffer reagent (ACD-Bio 310091) twice. To amplify fluorescence signals, the tissue was incubated in AMP 1-Fl for 30 min at 40°C (HybEZ oven), washed twice with wash buffer for 3 min at room temperature. Subsequently, the tissue was incubated in AMP 2-FL for 15 min at 40°C, washed twice, and incubated in AMP 4-LA-A for 15 min at 40°C, then washed twice again. Sections were then stained with DAPI and mounted using ProLong antifade reagent (Thermo Fisher Scientific P36930). Positive control probes to ensure in situ quality included housekeeping genes (C1-Mm-Polr2a, C2-Mm PPIB, and C3-Mm-UBC). Fluorescence from negative control probes targeting bacterial RNA (C1, C2, C3-dapB) was not detected. Slides were imaged at 20x (air) by a whole slide scanning microscope (Olympus VS120). All image acquisition and processing were done blind.
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Mice were anesthetized with isoflurane and perfused first with cold phosphate buffered saline (PBS, pH = 7.4, Sigma Cat# P-3813), then by 4% paraformaldehyde in PBS. The brain was removed and post-fixed overnight at 4°C in the same solution. For slicing, the brain was embedded in 4% agar (Sea Plaque, Lonza, Cat# 50101) and sliced in PBS using a vibratome (VT1000S, Leica) at a thickness of 50 µm. Slices were then incubated in blocking solution containing 4% normal goat serum (NGS) in PBS for 1–2 hr. After blocking, the slices were incubated in the same solution with the addition of primary antibody overnight at 4°C (rabbit polyclonal anti-Doc2b (1:200; Synaptic Systems, Cat# 174 103) and mouse monoclonal anti-Parvalbumin (1:500, Sigma-Aldrich, Product # P3088-.2ML)). Slices were then washed three times for 10 min. Next, slices were incubated in 4% NGS and 0.1% triton X-100 in PBS with the addition of secondary antibodies for 2 hr at room temperature (goat anti-rabbit IgG H and L Alexa Fluor647 (1:1000, ab150083) and goat anti-mouse IgG H and L Alexa Fluor568 (1:1000, ab175473)). Slices were then washed three times for 5 min in PBS, mounted on glass slides and covered with mounting medium (Invitrogen Fluoromount-G Mounting Medium, Cat #: 00-4958-02) and a glass coverslip. Mounting medium was allowed to cure for at least 24 hr before imaging.
 

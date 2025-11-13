@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/022kthw22 Department of Brain and Cognitive Sciences and Center for Visual Science, University of Rochester New York United States
-2. https://ror.org/022kthw22 Department of Brain and Cognitive Sciences, the Center for Visual Science and the Department of Neuroscience, University of Rochester Rochester United States
+1. Department of Brain and Cognitive Sciences and Center for Visual Science, University of Rochester New York United States ([ROR:022kthw22](https://ror.org/022kthw22))
+2. Department of Brain and Cognitive Sciences, the Center for Visual Science and the Department of Neuroscience, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
 
 † Corresponding author
 

@@ -38,9 +38,33 @@ Here, we sought to test the hypothesis that cellular and physiological differenc
 
 ## Results
 
-## Developing Purkinje cells operate at different rates depending on their cerebellar location
+### Developing Purkinje cells operate at different rates depending on their cerebellar location
 
 Following our previous work (Zhou et al., 2014), we investigated when the differences between Z– and Z+ PC activity emerge during development. We first performed extracellular recordings in vivo in PCs of Slc1a6-EGFP or C57BL/6J awake mice (Figure 1A1). Slc1a6-EGFP mice express enhanced green fluorescent protein (EGFP) under the Slc1a6 promotor, an expression pattern that correlates with high levels of ZebrinII (aldolase C) (Gincel et al., 2007; Gong et al., 2003). PCs were identified during the recording by the presence of SSs and CSs, while the consistent presence of a pause in SS following each CS (i.e. climbing fiber pause [CF pause]) confirmed that the recording was obtained from a single unit (De Zeeuw et al., 2011; Figure 1A2-Figure 1—figure supplement 1A1). Additionally, it was confirmed that CSs cause a pause in SS activity as the interval between CSs and the following SS was longer than the interval between two SSs in virtually all recorded cells (Figure 1—figure supplement 2A). PC recording locations were determined with biocytin or Evans blue, and their ZebrinII identity was determined histologically (Figure 1B2 -Figure 1—figure supplement 1A2). Immunohistochemical and electrophysiological data were divided in four different age groups: an early postnatal group of P12-P17, a juvenile group from P18 to P29, an adolescent group from P30 to P59, and an adult group from P60. We observed that SS firing rate is significantly higher in Z− PCs when compared with the Z+ PCs in all age groups, starting from early postnatal ages (P12-P17, Z−: 57.3 ± 5.3 Hz, Z+: 42.3 ± 5.7 Hz, p=0.013, see Supplementary file 1 for additional age groups). Moreover, Z– PCs significantly increase their firing rate progressively from P12 until reaching their mature rate (P12-P17, Z– vs. >P60 Z–: p<0.0001) while Z+ PCs firing rate remained low and plateaued at P18, which is not significantly different from the rate at the mature stage (P18-P29 Z+ vs. Z+:>P60 Z+: p=0.185) (Figure 1B1,C1, Figure 1—figure supplement 1A3, Supplementary file 1 for additional age groups). Although there is no difference in SS regularity, measured as coefficient of variation 2 (CV2), in the young P12-P17 group (CV2, Z–: 0.51 ± 0.03, Z+: 0.51 ± 0.04, p=0.94), there is a significant difference between Z– and Z+ PC regularity in the older groups. From P18 onwards, Z– PCs are more irregular than Z+ PCs (>P60, Z–: 0.47 ± 0.01, Z+: 0.40 ± 0.01, p<0.001) (Figure 1C2). Differences in the coefficient of variance (CV) between Z– and Z+ were only observed in the adult group (>P60, p<0.0001). Additionally, CV decreases from early postnatal onward in both groups (Supplementary file 1); as PCs become mature the variation in inter-spike-intervals (ISI) is reduced compared to young PCs (Figure 1—figure supplement 1B1). The gradual shift to more regular activity was confirmed by a decreasing regularity index of SSs as the age increases for both groups, with only a significant higher level in Z+ PCs at P30-P59 (p=0.011, Figure 1—figure supplement 1B2, Supplementary file 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-v2.jpg)
+
+**Figure 1.:** (A1) Schematic illustration of single unit cerebellar extracellular recordings in Purkinje cells of awake head-fixed mice (left). Schematic representation of a cerebellar coronal section and respective image showing lobules VI, VIII, IX and X, Crus I, Crus II, Paramedian, and Copula Pyramidis. Cerebellar coronal section with PCs labeled with Aldolase C (green). Inset showing recording site marked with biocytin (red) in lobule IX (right). (A2) Example trace of in vivo P30-59 ZebrinII– Purkinje cell recording identified by its hallmark feature, the occurrence of complex spikes (asterisks) and simple spikes. (B1) Example traces of extracellular Zebrin– and Zebrin+ Purkinje cell recordings at P12-17 with clearly distinguishable simple spikes and complex spikes (asterisks). (B2) Photomicrographs of coronal sections with examples of ZebrinII+ (left) and ZebrinII– (right) P12-17 Purkinje cells in lobule X, Paramedian, and Simplex, respectively. Purkinje cells are labeled with Aldolase C (green). Insets showing recording sites marked with biocytin (red) in lobule X, Paramedian (left) and Simplex (right). (C1) Purkinje cell simple spike firing rate, (C2) coefficient of variation 2 (CV2) for simple spikes, (D1) complex spike firing rate and (D2) Climbing fiber pause recorded in vivo for ZebrinII– Purkinje cells (gray) and ZebrinII+ Purkinje cells (purple) in four age groups. Age groups: P12-17, P18-29, P30-59, and >P60. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001 and ***p<0.0001. Scale bars = (A1) 100 µm (left), 500 µm (right), and (B2) 500 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A1) Example trace of a young P12 Purkinje cell recording identified by its hallmark feature, the occurrence of complex spikes (asterisk) and simple spikes (left). Inset depicting the complex spike (asterisk) following a climbing fiber pause with clear visible spikelets (right). (A2) Photomicrographs of coronal sections with examples of P18-29 ZebrinII–, P30-59 ZebrinII+, >P60 ZebrinII+, and ZebrinII– Purkinje cells labeled with Aldolase C (green). Insets showing recording sites marked with biocytin (red) in lobules IX IV/V and Paramedian. (A3) Example traces of ZebrinII– and ZebrinII+ Purkinje cells extracellular recordings at >P60 ZebrinII+ an ZebrinII–, P18-29 ZebrinII+, and P30-59 ZebrinII– with clearly distinguishable simple spikes and complex spikes (asterisks). (B1) Purkinje cell coefficient of variation (CV) for simple spikes, (B2) regularity index for simple spikes, (C1) coefficient of variation 2 (CV2) for complex spikes and (C2) regularity index for complex spikes recorded in vivo for ZebrinII– Purkinje cells (gray) and ZebrinII+ Purkinje cells (purple) in four age groups. Age groups: P12-17, P18-29, P30-59, and >P60. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001 and ***p<0.0001. Scale bars = (A2) 500 µm (top left, top right, bottom right) and 250 µm (bottom left).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scatterplot of the log mean simple spike-interval versus the log climbing fiber (CF) pause of all cells recorded in four age groups (blue: P12-17; green: P18-29; red: P30-59 and purple: P>60). The diagonal black line represents the reference line where the climbing fiber pause is equally long as the simple spike-interval.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Purkinje cell simple spike firing rate in vivo for Purkinje cells in all lobules at (A1) >P60, (A2) P30-59, (A3) P18-29 and (A4) P12-17. Purkinje cell simple spike firing rate in vivo for (B1) ZebrinII– Purkinje cells in lobules I to V and ZebrinII– Purkinje cells in the hemispheres and for (B2) ZebrinII+ Purkinje cells in the nodulus and ZebrinII+ Purkinje cells in the floculus in four age groups. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) P12-P17 Purkinje cell recording location with simple spike rate and (B) P12-P17 Purkinje cell recording location with complex spike rate.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) P12-P17 Purkinje cell recording location with simple spike coefficient of variation (CV2) and (B) P12-P17 Purkinje cell recording location with simple spike coefficient of variation (CV).
 
 Based on previous work (Zhou et al., 2014), we expected that the CS activity would be also lower in Z+ than in Z– PCs. CSs are driven by the activity of CFs that originate from the inferior olive. As expected, the CS activity of Z+ PCs is significantly reduced compared with Z– PC CSs in adulthood, a difference that becomes evident from as early as P18-P27 (Z–: 1.50 ± 0.15 Hz; Z+: 1.14 ± 0.08 Hz, p<0.001). In marked contrast, CS activity of Z+ PCs at P12-P17 is significantly higher when compared with Z– PC CSs (Z–: 0.79 ± 0.09 Hz; Z+: 1.06 ± 0.11 Hz, p=0.011) (Figure 1D1). Interestingly, while in Z– PCs the CS rate is first significantly lower (P12-P17) and then higher (P18-P29) than in adult mice (>P60), the temporal profile of the CS rate in Z+ PCs shows less dramatic changes with only a significantly higher rate at P18-P29 (Supplementary file 1). Our previous data showed that at the adult stage, the duration of the pause in SS after a CS, the CF pause, was in line with the firing rate of SSs; a lower firing rate in Z+ PC would lead to a longer CF pause in these cells. In the developing cerebellum, several CFs innervate one single PC and synapse elimination occurs from P8 to P17 until a single selected CF innervates a single PC. The CF mono-innervation of a PC is established by the third postnatal week of cerebellar development (Hashimoto and Kano, 2013; Watanabe and Kano, 2011). Because the CF pause is longer in Z+ PCs than in Z– PCs in adult mice (Zhou et al., 2014), we hypothesized that longer CF pauses would be detected in Z+ PCs than in Z– PCs when CF elimination is known to be completed at this mature stage. Our results confirmed our hypothesis. While there is no significant difference in CF pause in young cells P12-P17 (Z–: 81.1 ± 12.7 msec; Z+: 79.6 ± 13.8 msec, p=0.94), there is a significant increase in CF pause of Z+ PCs when compared with Z– PCs at P18, after synapse elimination, that is maintained into adulthood (>P60, Z–: 20.0 ± 0.8 msec; Z+: 34.5 ± 2.4 msec, p<0.0001) (Figure 1D2). Additionally, CV2 of CSs is significantly decreased in Z+ PCs when compared with Z– PCs at P12-P17 (Z–: 0.91 ± 0.03; Z+: 0.85 ± 0.02, p=0.015), whereas no differences were observed in the intermediate groups. In the adult group (>P60), CV2 is significantly decreased in Z+ PCs when compared with Z– PCs (Z–: 0.84 ± 0.01; Z+: 0.81 ± 0.01, p=0.034) (Figure 1—figure supplement 1C1). As for SS, the CS regularity index decreases with age in both groups, but no significant difference between Z– PCs and Z+ PCs was observed (all p>0.40; Figure 1—figure supplement 1C2).
 
@@ -48,37 +72,85 @@ Although recordings were grouped based on ZebrinII expression, the observed deve
 
 Taken together, these results are in line with previous analyses in which we and others demonstrated the presence of differences across lobules in adult mice (Xiao et al., 2014; Zhou et al., 2014; Chopra et al., 2020). Our results suggest that differences in SS firing rate between Z– and Z+ PCs arise during development as early as P12 and the CS firing rate and CF pause settle at adult levels after the period of synapse elimination at P18. Overall, the firing rate of ZebrinII-identified PC populations differentiates from early postnatal ages, and reached a stable, adult level in Z+ PCs first.
 
-## Developing Purkinje cells of distinct cerebellar regions have different intrinsic activity
+### Developing Purkinje cells of distinct cerebellar regions have different intrinsic activity
 
 PCs are intrinsically active in the absence of excitatory and inhibitory synaptic inputs (De Zeeuw et al., 2011; Raman and Bean, 1999; Womack and Khodakhah, 2002). In our previous work, we found that the difference in PC SS firing rate recorded in vivo was primarily the result of intrinsic activity of PCs in the adult mouse (Zhou et al., 2014). Next, we asked what is the contribution of intrinsic activity to the activity of developing PCs and when during development the differences in intrinsic activity arise among different populations of PCs. To answer these questions, we performed in vitro electrophysiological recordings on sagittal cerebellar sections of P3 to adult mice to measure the intrinsic properties of PCs throughout cerebellar development (Figure 2—figure supplement 1A). Because ZebrinII parasagittal patterning is only complete around P12-P15 (Brochu et al., 1990; Lannoo et al., 1991) and ZebrinII labeling is ambiguous before P12, we focus our in vitro studies on lobules III and X (Brochu et al., 1990; Zhou et al., 2014; Sugihara and Quy, 2007b; Figure 2A1), which can be readily identified in the cerebellum at all ages, are oriented in such a way that it is possible to record from them in a single sagittal slice and have previously been demonstrated to be representative of the Z– and Z+ PC populations (Zhou et al., 2014; Wu et al., 2019). To remove the impact of synaptic inputs to PCs, we used blockers for NMDA, AMPA, GABAA and glycine receptors during the cell-attached recordings. For this experiment, we analyzed seven different age groups: P3-P5, P6-P9, P10-P11, P12-P17, P18-P29, P30-P59 and an adult group >P60. PC firing rate significantly increases from P3-P5 to P10-P11 (LIII p=0.0002; LX p=0.0007), but over these first days of development there were no differences in the firing rate between PCs of different cerebellar regions (Figure 2A2,B1-Figure 2—figure supplement 2B, Supplementary file 1). Starting from P12 to P17, similar to the in vivo data, we observed that the intrinsic activity of PCs located in lobule X is significantly different from those located in lobule III (LIII: 51.7 ± 3.4 Hz; LX: 34.8 ± 2.0 Hz, p=0.008, Figure 2B1). After this key point during development, the differences in intrinsic firing rate in PCs from both cerebellar regions are maintained into adulthood (>P60, LIII: 61.2 ± 2.5 Hz; LX: 46.3 ± 1.9 Hz, p<0.0001). In contrast to the results in vivo, SS rate in vitro are both only significantly different from adult rates until P12-P17. However, the strongest increase in rate occurs later in lobule III PCs (P10-P11 to P12-P17:+23.5 Hz) than in those in lobule X (P6-P9 to P10-11:+11.1 Hz) (Supplementary file 1). In line with the in vivo results (Figure 1B2), there is a significant increase in irregularity in lobule III PCs from P18 when compared with lobule X PCs (CV2, LIII: 0.11 ± 0.01; LX: 0.05 ± 0.00, p<0.0001) and this is maintained into adulthood (>P60, CV2, LIII: 0.11 ± 0.01; LX: 0.04 ± 0.00, p<0.0001) (Figure 2B2). These differences in CV2 are confirmed by lower CV and higher regularity index levels for lobule X PCs when compared with lobule III PCs from P18 to P29 onwards (P18-P29 CV, LIII: 0.14 ± 0.01; LX: 0.10 ± 0.01, p<0.007; P18-P29 regularity index, LIII: 0.016 ± 0.002; LX: 0.060 ± 0.004, p<0.0001) (Figure 2—figure supplement 1C1–2). Young PCs at P6-P9 exhibit a significantly higher CV and higher regularity index in lobule III PCs when compared with lobule X PCs, suggesting the potential presence of subtler differences in early development (Figure 2—figure supplement 1C1–2). All together, these data indicate that differences in SS firing rate at least in lobules III and X are indeed the result of differences of intrinsic activity of distinct PC subpopulations starting at P12-P17 and maintained into mature ages.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig2-v2.jpg)
+
+**Figure 2.:** (A1) Cell-attached recordings in vitro in Slc1a6-EGFP mice that express eGFP in Purkinje cells. Recordings of intrinsic Purkinje cell activity were made in lobules III and X. Purkinje cells were identified by the size of the soma (asterisk) clearly visible in the Purkinje cell layer. (A2) Example traces of cell-attached recordings of lobule III and X Purkinje cells at P6-9 and P18-29. (B1) Purkinje cell intrinsic simple spike rate and (B2) coefficient of variation 2 (CV2) recorded in vitro for lobule III Purkinje cells (gray) and lobule X Purkinje cells (purple) in seven age groups. Age groups: P3-5, P6-9, P10-11, P12-17, P18-29, P30-59, and >P60. Error bars represent SEM, for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bar = (A1) 500 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of cell-attached recordings in vitro in lobules III and X (left) and example of a Purkinje cell filled with biocytin and stained afterwards (right). (B) Example traces of cell-attached recordings of lobule III and X Purkinje cells at different developmental ages. (C1) Purkinje cell coefficient of variation (CV) and (C2) regularity index recorded in vitro for lobule III Purkinje cells (gray) and lobule X Purkinje cells (purple) in seven age groups. Age groups: P3-5, P6-9, P10-11, P12-17, P18-29, P30-59, and >P60. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bar = (A) 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A1) Purkinje cell intrinsic simple spike rate recorded in vitro for lobule III Purkinje cells (gray) and lobule X Purkinje cells (purple) and Purkinje cell simple spike firing rate recorded in vivo for ZebrinII– Purkinje cells (gray) and ZebrinII+ Purkinje cells (purple). (A2) The input-driven spike rate is represented by delta-spike rate for ZebrinII– Purkinje cells (gray) and ZebrinII+ Purkinje cells (purple). Age groups: P3-5, P6-9, P10-11, P12-17, P18-29, P30-59, and >P60. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001.
+
 However, one cannot exclude the role of extrinsic input in PC SS rates. As observed in Figure 2—figure supplement 2, in both lobule III/Z– and lobule X/Z+ PCs, the firing rate in vivo was significantly higher than the firing rate in vitro (Figure 2—figure supplement 2A1). This difference is evident from P18-P29 onwards. However, there was a higher input component in the lobule III/Z– when compared with lobule X/Z+ PCs (Figure 2—figure supplement 2A2) contributing to the regional difference between the two subtypes of PCs.
 
-## Dendrite complexity is more pronounced in Purkinje cells in the anterior lobule III
+### Dendrite complexity is more pronounced in Purkinje cells in the anterior lobule III
 
 Neuronal morphology is a key determinant of the functional properties of neurons. Several studies have shown that different cell types show a causal relationship between firing patterns and neuronal morphology such as dendritic structure (Mainen and Sejnowski, 1996; Vetter et al., 2001), dendritic size (Gollo et al., 2013), and branching points (Ferrante et al., 2013). Hence, we hypothesized that differences in activity between different cerebellar regions could suggest differences in PC morphology. To investigate this possibility, we analyzed dendritic arborization complexity in different PC subpopulations of adult mice and during development. PCs from lobules I/II/III and IX/X were filled with biocytin and stained with Cy3-streptavidin. We then performed sholl analysis (Ferreira et al., 2014) to quantify PC dendritic arbor complexity, maximum length from the cell soma and cell area. Concomitantly with the physiology data, we observed that from P6-P11 to P12-17 there is a rapid increase in dendritic complexity and area (Figure 3A) across all PCs. However, unlike in the physiological data there is no significant difference in dendritic complexity (P12-P17, LI-III: 336.1 ± 31.7; LIX-X: 291.2 ± 17.1, p=0.38, Figure 3B1), maximum length (P12-P17, LI-III: 138.3 ± 5.1 µm; LIX-X: 142.5 ± 3.9 µm, p=0.74, Figure 3B2), and area (P12-P17, LI-III: 5419 ± 399 µm2; LI-X: 6109 ± 462 µm2, p=0.46, Figure 3B3) between PCs in anterior (lobules I/II/III) and nodular (lobules IX/X) regions at P12-P17. While dendritic arborization in lobules IX-X marginally changed after this time point, dendritic complexity significantly increased in lobules I-III from the third postnatal week (from P18) into adulthood: dendritic complexity (P60, LI-III: 663.1 ± 23.8; LIX-X: 445.7 ± 22.2, p<0.0001, Figure 3B1), maximum length (P60, LI-III: 206.6 ± 5.9 µm; LIX-X: 169.9 ± 4.0 µm, p<0.0001, Figure 3B2), and area (P60, LI-III: 10890 ± 412 µm2; LIX-X: 8520 ± 377 µm2, p<0.0001, Figure 3B3). A difference in size and complexity in dendritic arborization of PC subpopulations can therefore be first observed at P18 (see Supplementary file 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig3-v2.jpg)
+
+**Figure 3.:** (A) Photomicrographs of Purkinje cells filled with biocytin in lobule III and X (top panel); and sholl analysis of Purkinje cells located in lobules I/II/III (gray) or IX/X (purple) in six age groups (lower panel). (B1) Total number of intersections, (B2) longest dendrite length and (B3) area analysis for lobules I/II/III Purkinje cells (gray) and lobules IX/X Purkinje cells (purple) in six age groups. Age groups: P3-5, P6-11, P12-17, P18-29, P30-59, and >P60. Error bars represent SEM, for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bar = (A) 50 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Photomicrographs of Purkinje cells filled with biocytin in lobule III; regions within lobule III (A = apex; B = base; S = sulcus), Scale bar = 500, 200 and 50 µm. (B1) Percentage of Purkinje cells localized in the apex, sulcus or base at different developmental ages and (B2) percentage of Purkinje cells localized in the apex, sulcus or base at different developmental ages between A (anterior) and N (nodular) lobules. (C1) Percentage of Purkinje cells localized in anterior lobules I, II, and III and nodular lobules IX and X at different developmental ages and (C2) percentage of Purkinje cells localized in lobules I, II, and III and lobules IX and X at different developmental ages between A (anterior) and N (nodular) lobules.
 
 Because PC morphology can vary depending on their location in the same lobule during development (Nedelescu and Abdelhack, 2013; Nedelescu et al., 2018; Sudarov and Joyner, 2007), we investigated the location of each PC analyzed per age in the apex, base and sulcus of each lobule (Figure 3—figure supplement 1A). There was not systematic bias in our sampling from apex, base or sulcus (Figure 3—figure supplement 1B1) at different developmental ages and between anterior and nodular lobules (Figure 3—figure supplement 1B2). Additionally, most of the cells collected for this analysis were located in lobule III and X (Figure 3—figure supplement 1C1–2) at different developmental ages.
 
 Our data show that indeed the rapid period of maturation for PCs occurs between P9 to P12. The slow period of dendritic expansion however differs between PC populations. PCs located predominantly in lobule III grow larger and have more complex dendritic trees compared to PCs located predominantly in lobule X. These data also suggest that, in line with their firing rates, PCs in lobule X reach their dendritic maturity earlier than PCs from lobule III.
 
-## Translocation of climbing fibers occurs earlier in the nodular cerebellum
+### Translocation of climbing fibers occurs earlier in the nodular cerebellum
 
 Both our physiological and morphological data suggest that PCs from the anterior lobule III, and Z– PCs recorded in vivo, reach mature levels later when compared to PCs from lobule X, or the Z+ population. Because CF and PC development are intertwined (Watanabe and Kano, 2011), we tested for potential differences between modules in CF development. To characterize and compare CF development in lobules I-III and IX-X, we stained PCs with calbindin and CFs with VGluT2, which in the molecular layer labels CF terminals, at P7, P14, P21, P35, and P60 (Figure 4A). Remarkably, we found that at P7 there was a significant increase in VGluT2 puncta in lobules IX-X (P7, LI-III: 0.62 ± 0.31%; LIX-X: 3.87 ± 0.19%, p<0.0001, Figure 4B2) when compared with lobules I-III. As a result, at P7 the percentage of CF extension into the molecular layer (ML) was significantly increased in lobules IX-X (P7, LI-III: 11.1 ± 1.1%; LIX-X: 80.5 ± 1.0%, p<0.0001, Figure 4B3). These results suggest that CF translocation starts earlier in nodular lobules (Figure 4A). In anterior lobules, most of the VGluT2 puncta at P7 were still localized around the PC somata while in nodular lobules the CF terminals were predominantly targeting the younger dendritic arbors. From P7 to P14, there was a dramatic increase in ML thickness in both regions of the cerebellum (Figure 4B1) but the significant difference in VGluT2 puncta and CF terminals disappeared (VGluT2 puncta, P7: p<0.0001, P14: p=0.78; CF terminals, P7: p<0.0001, P14: p=0.24, Figure 4B2 and B3). From P21 into adulthood, there was a significant increase in ML thickness in lobules I-III when compared with the nodular lobules (P60, LI-III: 137.5 ± 1.3 µm; Lob IX-X: 116.9 ± 4.9 µm, p<0.001, Figure 4B1). With the exception of an increase in VGluT2 puncta and CF terminals from P21 to P35 for both regions studied, no other differences were observed (Figure 4B2 and B3; Supplementary file 1). These results indicate that CF translocation into the PC dendrite starts earlier in nodular lobules when compared with anterior lobules I, II, and III pointing to another difference in the maturation of the cerebellar circuitries in different cerebellar regions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig4-v2.jpg)
 
-**Figure 4.:** (A) Photomicrographs of lobule III and lobule X regions depicting climbing fiber (VGluT2 staining, cyan) and Purkinje cell (calbindin, red) development in five age groups. (B) Molecular layer (ML) thickness, (1B) VGluT2 puncta per area of region of interest and (2B) climbing fiber (CF) extension per ML thickness quantification for lobules I/II/III (gray) and lobules IX/X (purple) in five age groups. Age groups: P7, P14, P21, P35, and P60. Error bars represent SEM, for values see 3Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bar = (A) 40 µm.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** (A) Photomicrographs of lobule III and lobule X regions depicting climbing fiber (VGluT2 staining, cyan) and Purkinje cell (calbindin, red) development in five age groups. (B1) Molecular layer (ML) thickness, (B2) VGluT2 puncta per area of region of interest and (B3) climbing fiber (CF) extension per ML thickness quantification for lobules I/II/III (gray) and lobules IX/X (purple) in five age groups. Age groups: P7, P14, P21, P35, and P60. Error bars represent SEM, for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bar = (A) 40 µm.
 
-## Purkinje cell axonal complexity increases during the second postnatal week
+### Purkinje cell axonal complexity increases during the second postnatal week
 
 Our data demonstrate that intrinsic physiology of PCs as well as their input structure, the dendritic tree, develop differentially between anterior/Z– and nodular/Z+ populations as well as exhibiting a stark growth period beginning in the second half of the second postnatal week. We next asked whether the PC output structure, the axonal arbor, matches this developmental timeline. The PC axon is a large structure that targets specific cerebellar nuclei based on their location and ZebrinII identity (Sugihara et al., 2009). PC axons are present in the cerebellar nuclei as early as embryonic day (E) 15.5 in mice (Sillitoe et al., 2009) and E18 in rats (Eisenman et al., 1991). Targeting to the correct cerebellar subnuclei is also already in place at very early points in cerebellar development (Sillitoe et al., 2009). In culture, PC axons exhibit a multi-step developmental process (de Luca et al., 2009). However, the developmental process of PC axons in vivo is not known. Taking advantage of the Pcp2-creERT2;Ai14 mouse model, we sparsely labeled PCs with red fluorescent protein (RFP) and searched for isolated axonal arbors within the cerebellar nuclei (Figure 5A). Labeling was optimal between P10 and P21, although it was sometimes possible to identify well-isolated axons at P7 as well. We therefore analyzed axon arbor morphology as a total group at P7, P10, P14, and P21, while comparisons between Z– and Z+ subnuclei were restricted to P10, P14 and P21 (Figure 5B). Labeled PCs were randomly distributed throughout the cerebellar cortex (Figure 5—figure supplement 1). We performed three-dimensional sholl analysis on single axon arbors with the first branching point as the center. This analysis revealed significant differences across age of PC axon arbor maximum length and complexity, as both parameters increase from P7 to P14 and then decrease at P21 (number of intersections, P7: 84.2 ± 18.2; P10: 254.4 ± 40.5; P14: 277.4 ± 17.5; P21: 296.4 ± 37.9, p=0.013; length, P7: 124.2 ± 17.8 µm; P10: 212.7 ± 24.4 µm; P14: 216.4 ± 14.3 µm2; P21: 225.2 ± 16.1 µm2, p=0.060, Figure 5C,E1, E2). Area taken up by the axon arbors, however, continued to increase with age (area, P7: 1.52 ± 0.20 µm2·103 P10: 1.47 ± 0.25 µm2·103; P14: 2.26 ± 0.19 µm2·103; P21: 3.07 ± 0.29 µm2·103, p<0.0001; Figure 5E3). The primary source of the peak at P14 is driven by Z– axon arbors (Figure 5D2). Sholl analysis revealed significant differences between Z– and Z+ axon arbors at P10, P14 and P21, with Z– axon arbors exhibiting a denser branching complexity than Z+ (P10: p=0.0457; P14: p=0.0017; P21: p=0.0388). Significant differences were found between Z– and Z+ groups for length and area but not number of intersections (intersections, p=0.252; length, p=0.0197; area, p=0.0257; Figure 5F1-3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig5-v2.jpg)
+
+**Figure 5.:** (A) Photomicrographs of cerebellar sections demonstrating sparse labeling of Purkinje cells. Left panels are stained with antibodies against ZebrinII as well as red fluorescent protein (RFP) to label Purkinje cells expressing RFP. Right panels are stained with DAPI and RFP to show examples of Purkinje cells and Purkinje cell axon arbors (top inset and bottom inset, respectively) in sagittal and coronal cerebellar sections (top and bottom right panels, respectively). (B) Photomicrographs of example ZebrinII– and ZebrinII+ axon arbors from P10, P14, and P21 mice. (C) Sholl analysis of all axon arbors at P7, P10, P14, and P21, average crosses are indicated with points and fitted with a smoothed line. (D1-3) Sholl analyses of ZebrinII– and ZebrinII+ groups of axons at P10, P14, and P21, respectively. (E1) Total number of intersections, (E2) longest dendrite length and (E3) axon arbor area analysis for all axons at different ages. (F1) Total number of intersections, (F2) longest dendrite length and (F3) axon arbor area analysis for ZebrinII– (gray) and ZebrinII+ axon arbors (purple) at P10, P14, and P21. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bars = (A) 500 µm in large panels; 20 µm in top inset, 50 µm in bottom inset. (B) 20 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Sparsely labeled Purkinje cells are randomly distributed throughout the cerebellar cortex at P10, P14, and P21 as exemplified by three representative mice at each age. Purkinje cells are labeled with red fluorescent protein (RFP, red) and the structure of the sections are visible with DAPI (blue). A representative coronal section from the anterior and posterior cerebellum are shown for each mouse. White arrowheads indicate Purkinje cells at P10 when dendrites are not as developed. Purkinje cells in coronal sections are visible as planar lines at P14 and P21. Scale bar = 1 mm.
+
 Taken together, our novel approach to analyze axon terminal development in cerebellar nuclei indicates that PC axons reach near mature shapes already early in development, with a peak in size around P14 and subtle differences between Z– and Z+ axons.
 
-## Differential developmental timelines for the emergence of cerebellar-specific behaviors
+### Differential developmental timelines for the emergence of cerebellar-specific behaviors
 
 Our data indicate that differentiation of cerebellar subpopulations can start early in development and suggest that different cerebellar regions have distinct developmental trajectories. To address if differences in cerebellar maturation have behavioral relevance, we aimed to study the performance of mice in cerebellum-dependent behavioral tasks that are directly linked to the PC subpopulations. The different developmental timeline of PC SS Activity was comparable between Z+ PCs in the flocculus and nodulus, as well as between Z– PCs in the hemispheres and anterior cerebellum (Figure 1—figure supplement 3B). Based on these observations, we performed two cerebellum-dependent learning tests, vestibulo-ocular reflex (VOR) adaptation and eyeblink conditioning (EBC), linked to the Z+ flocculus and the Z− anterior and hemispheric cerebellar regions, respectively. To facilitate the comparison, we determined the learning curves in juvenile mice directly after weaning (starting from P21) and for reference compared these curves to those of adult (10–11 weeks old) mice. The VOR ensures the stabilization of images on the retina via compensatory eye movement every time the vestibular system is activated (head movement). VOR adaptation is the adjustment of compensatory eye movements based on a mismatch between vestibular and visual input, moving in the same or opposite direction (i.e. in or out of phase) (Ito, 1982; Nagao, 1989; Schonewille et al., 2010; Wulff et al., 2009). Moreover, compensatory eye movements are controlled by the flocculus, together with the nodulus forming the vestibulocerebellum, which is predominantly Z+ (Sugihara and Shinoda, 2004; Hawkes and Herrup, 1995; Sillitoe and Hawkes, 2002; Figure 6A1). In the EBC paradigm, a neutral sensory stimulus alone leads to a well-timed eyeblink after repeated pairing with a noxious stimulus which induces a reflexive eyelid closure (usually a mild airpuff) (Boele et al., 2010; McCormick and Thompson, 1984; Thompson and Steinmetz, 2009). The cerebellar eyeblink regions putatively reside in the anterior cerebellum, in particular at the border of lobule IV-V to VI, and from the hemisphere lobule IV-V to simplex, a region that is largely ZebrinII-negative (Sugihara and Shinoda, 2004; Hawkes and Herrup, 1995; Sillitoe and Hawkes, 2002; Heiney et al., 2014; Figure 6B1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig6-v2.jpg)
+
+**Figure 6.:** (A1) Schematic illustration of eye movement recording setup. Mice are head-fixed in the center of a turntable (green arrow) for vestibular stimulation and surrounded by a random dotted pattern drum (red arrow) for visual stimulation. A CCD camera was used for infrared (IR) video-tracking of the left eye (top left). Examples of nasal (N) and temporal (T) eye positions. Red circles = pupil fit; black cross = corneal reflection (CR); white cross = pupil (P) center. Example trace of eye position (gray) with drum position (red), during stimulation at an amplitude of 5° and frequency of 0.6 Hz (top right). Cerebellar circuitry controlling compensatory eye movements and their adaptation. Purkinje cells in the flocculus (FL) receive vestibular and visual input via the mossy fiber (MF) - parallel fiber (PF) system (green) and climbing fiber which influence eye movements via the vestibular nuclei (VN) and the oculomotor (OM) neurons. PN, pontine nuclei; GC, granule cell (bottom left). Photomicrograph of the flocculus a ZebrinII+ Purkinje cell predominant region; Purkinje cells labeled with Aldolase C (green) (bottom right). (A2) Results of 5 days of vestibule-ocular reflex (VOR) phase reversal training, probed by recording VOR (in the dark before, between and after sessions) with mice kept in the dark in between experimental sessions in young (P21-25, dotted line) and adult (P70-90, full line) mice. (B1) Schematic illustration of the eyeblink conditioning setup. Head-fixed mice on a freely moving treadmill, are presented a green LED light (conditioned stimulus, CS) followed several hundred milliseconds later by a weak air-puff on the eye (unconditioned stimulus, US). Eyelid movements were recorded with a camera (top). Cerebellar circuitry controlling eyeblink conditioning. Purkinje cells in the paravermal region around the primary fissure receive inputs carrying sensory information from for example the pontine nuclei (PN) through the mossy fiber-parallel fiber (MF-PF) pathway and the error signal from the inferior olive (IO) through the climbing fiber (CF). These Purkinje cells in turn influence eyelid muscles via the anterior interposed nucleus (AIN) and motor nuclei (MN) (bottom left). Photomicrograph of the base of paravermis a ZebrinII– Purkinje cell predominant region; Purkinje cells labeled with Aldolase C (green) (bottom right). (B2) As a result of repeated conditioned stimulus (CS)-unconditioned stimulus (US) pairings, mice will eventually learn to close their eye in response to the conditioned stimulus (CS), which is called the conditioned response (CR) (top). Percentage of conditioned response (CR%) in young (dotted line) and adult (full line) mice during 5 days of training (bottom). Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001. Scale bars = (A) 200 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Gain (top) and phase (bottom) of baseline performance of compensatory eye movements: (A1 and B1) the optokinetic reflex (OKR), (A2 and B2) the vestibulo-ocular reflex (VOR) and (A3 and B3) the visually enhanced VOR (VVOR) in young (dotted line) and adult (full line) mice. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001 and ***p<0.0001.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Example trace of eye movement position in young (blue) and adult (green) mice before and after training in relation with the table position (black) at an amplitude of 5°. (B) Gain of 5 days of vestibulo-ocular reflex (VOR) phase reversal, probed by recording VOR (in the dark before, between, and after sessions) with mice kept in the dark in between experimental sessions, in young (dotted line blue) and adult (full line green) mice. (C) Illustration of VOR gain consolidation analysis and the percentage of consolidation between young (blue) and adult (green) mice at days 1-2, 2–3, and 3–4. (D) Gain and (E) phase of 5 days of VOR phase reversal training, in young (dotted line blue) and adult (full line green) mice. Error bars represent SEM., for values see Supplementary file 1. * denotes p<0.05, **p<0.001, and ***p<0.0001.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Vestibulo-ocular reflex (VOR) phase reversal gain in (A) individual sessions and (B) averaged sessions per 5 days in young (blue) and adult (green) mice.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/63668/elife-63668-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A1) Example traces of a single unconditioned response and (A2) a single conditioned response. Insets: mouse eye video captures show eyelid closure ranging from 0 (fully-open) to 1 (fully-closed). (B1) The onset and (B2) peak time of the unconditioned response (UR) in young (dotted square) and adult (full square) mice. Comparison of fraction of eyelid closure between young (top) and adult mice (bottom). (C1 and C3) Waterfall plot showing the averaged eyeblink trace during conditioned stimulus (CS)-only trials for the 10 sessions (color intensity increasing from sessions 1 to 10). (C2 and C4) Session averages (thin gray lines) per mouse and overall average (thick black lines) for the 10 sessions.
 
 We first tested if juvenile and adult animals differed in their basal optokinetic reflex (OKR; eye movements driven sole by visual input), vestibular-ocular reflex (VOR; eye movements driven sole by vestibular input in the dark) and visually enhanced VOR (VVOR, a combination of OKR and VOR in the light) (Figure 6—figure supplement 1). We determined the gain (the ratio of eye movement to stimulus amplitude) and phase (timing of the response relative to input) of basal compensatory eye movements at different oscillation frequencies (0.1–1 Hz). Neither the OKR gain or phase differ significantly between age groups (OKR gain, young: 0.60 ± 0.09; adult: 0.59 ± 0.10, p=0.84; and OKR phase, young: −15.5 ± 6.7; adult: −15.4 ± 5.0, p=0.96, Figure 6—figure supplement 1A1,B1). In contrast, the VOR gain is significantly increased (VOR gain, young: 0.42 ± 0.09; adult: 0.61 ± 0.09, p<0.0001, Figure 6—figure supplement 1A2) and the VOR phase decreased (VOR phase, young: 29.4 ± 5.8; adult: 21.4 ± 4.5, p=0.0024, Figure 6—figure supplement 1B2) in adult mice when compared with juveniles. Moreover, while there are no differences in the VVOR phase (VVOR phase, young: 1.33 ± 0.46; adult: 1.35 ± 0.13, p=0.97, Figure 6—figure supplement 1B3), there is a significant increase in the VVOR gain of juvenile animals compared with adults (VVOR gain, young: 0.89 ± 0.01; adult: 0.96 ± 0.01, p=0.009, Figure 6—figure supplement 1A3).
 
@@ -96,7 +168,7 @@ While the variety of sensorimotor and cognitive functions controlled by the cere
 
 **Figure 7.:** Left, selected features for physiological activity, represented by simple spike firing rate in vitro, simple spike rate in vivo and complex spike rate in vivo. Below the graphs periods of rapid development are indicated, either based on our data or by extrapolation when first recorded levels are already high, see e.g. simple spike rate in vivo. Right, selected morphological features, represented by dendritic shape, axonal shape (both as total number of intersections) and climbing fibers (as % of climbing occupation of molecular layer). Note that, although not all data points are available and extrapolation is required, the general trend emerging is that of rapid development in the second postnatal week (P7 to P14) and that Lobule III/ZebrinII– PCs typical complete rapid development later. Z– = ZebrinII negative, Z+ = ZebrinII positive, SS = simple spike, CS = complex spike.
 
-## Distinct developmental trajectories of specific cerebellar circuitries
+### Distinct developmental trajectories of specific cerebellar circuitries
 
 PCs are generated in the ventricular zone at the base of the fourth ventricle (Morales and Hatten, 2006; Hoshino et al., 2005; Yamada et al., 2014). Cerebellar compartmentalization has been shown to correlate with PCs birth dates: early-born (E10-E11.5) will become adult Z+ PCs and late-born (E11.5-E13) will become adult Z– PCs (Hashimoto and Mikoshiba, 2003; Namba et al., 2011; Larouche and Hawkes, 2006). Thus, there is a strong relationship between embryonic compartments and adult zonal patterning associated with the modular organization of the olivo-cortico-nuclear circuit (Brochu et al., 1990; Sugihara and Shinoda, 2004; Sugihara and Shinoda, 2007a; Voogd and Ruigrok, 2004; Voogd et al., 2003; Pijpers and Ruigrok, 2006). The maturation of the zonal phenotype is only complete around P12-P15, based on the molecular markers ZebrinII (Brochu et al., 1990; Lannoo et al., 1991) or PLCβ4 (76). Although this patterned organization of heterogeneity is a unique feature of the cerebellum, its impact on early cerebellar circuitry assembly was unknown. In our studies, developmental electrophysiological and morphological analyses revealed that lobule X/Z+ PCs reached adult stable properties earlier than anterior lobule III/Z– PCs (Figure 7), particularly when it comes to simple and complex spike activity, as well as dendritic morphology. This suggests that the configuration of mature PCs follows directly from their development, which is a consequence of their birthdate. In vivo recordings followed by post-mortem analysis allowed us to group PC acquired throughout the cerebellum into Z+ and Z– subpopulations. Signs of ZebrinII-related differentiation in the electrophysiological properties, similar to those observed in firing rate of SS in the adult mouse in vivo (Zhou et al., 2014), could already be detected in the end at the second postnatal week from P12 (Figure 1C1). When examined across lobules, rather than in direct relation to ZebrinII, the slower development appears most obvious in lobules I-II, III, VI-VII and the Z− PCs in the hemispheres, while particularly lobule X and the flocculus appear to reach adult levels at P18-P29 (Figure 1—figure supplement 3A–B), but prohibit us from making conclusive statements. As also found in adult mice based in in vitro recording from lobules III and X (Zhou et al., 2014; Wu et al., 2019), the difference at P12-P19 is, at least in part, caused by differences in intrinsic activity (Figure 2B1). We focus our in vitro studies of intrinsic activity on lobule III in the anterior vermis and lobule X in the nodular vermis (Brochu et al., 1990; Zhou et al., 2014; Sugihara and Shinoda, 2007a; Figure 2A1), as these regions can be readily identified in the cerebellum at all ages, are oriented in such a way that it is possible to record from them in a single sagittal slice and have previously been demonstrated to be representative of the Z– and Z+ PC populations (Zhou et al., 2014; Wu et al., 2019). Z+ PCs demonstrate early maturation of their physiological properties by reaching a SS activity level in vivo at P18 that is not significantly different from that in adulthood. Contrarily, in PCs from anterior regions of the cerebellum the activity continues to gradually increase until adulthood (Figure 1—figure supplement 3). Similarly, CS activity, which results exclusively from the activity of neurons in the inferior olive, also showed reduced activity of Z+ PCs compared with Z– PC CSs from P18-P27 (Figure 1D1). Overall, physiological differences in two populations of PCs are first detected at the end of the second postnatal week and result from intrinsic differences combined with an input component (Figure 2—figure supplement 2).
 
@@ -104,7 +176,7 @@ Previous reports have shown that, in rats, changes in physiological properties d
 
 Developmental patterning of SS and CS rates in vivo, as well as that of the axonal projection features, were analyzed across the populations of Z– and Z+ PCs. SS activity in vitro, dendritic development and CF innervation were taken from virtually exclusively Z– anterior and Z+ nodular lobules, because ZebrinII is not expressed at the earlier time points tested for these parameters and the need for coronal slicing hinders analyzing multiple time points. The possibility that some of the observed differences are related to lobules or transverse zones cannot be excluded (Kim et al., 2009; Hawkes and Eisenman, 1997; Armstrong et al., 2001), particularly for the morphological changes. However, this selection of lobules is commonly used for comparisons (Kim et al., 2012) and have consistently been confirmed with targeted recordings (Zhou et al., 2014; Wu et al., 2019). Differentiation in the translocation of input(s) further supports the concept that cerebellar circuitries develop at specific and precise timelines that correlate with the subtype of PC and their physical location.
 
-## Spatiotemporal aspects of gene expression patterns and developmental trajectories
+### Spatiotemporal aspects of gene expression patterns and developmental trajectories
 
 There are several lines of evidence that support the concept of spatial regulation of the cerebellum. In mammals, the cerebellar cortex is divided rostrocaudally into four transverse zones (anterior, central, posterior, and nodular) and mediolaterally into parasagittal stripes (Hawkes and Eisenman, 1997; Ozol et al., 1999; Armstrong and Hawkes, 2000; Armstrong et al., 2000). Both transverse and parasagittal compartments can be distinguished by gene expression. Analyses of the meander tail (Ross et al., 1990) and lurcher (Tano et al., 1992) mutant mice have revealed a genetic compartmental boundary between nodular and anterior lobules. Consistent with this notion, a recent single-cell RNA-sequencing study has shown gene expression correlated or anti-correlated with the ZebrinII pattern (Rodriques et al., 2019). A second spatial gene expression pattern was identified related to the vestibulocerebellar region (lobules IX and X), in which genes are exclusively expressed within or outside this region (Rodriques et al., 2019). But what is the developmental profile of these spatial expression differences, and what drives the differentiation? Studies suggest that specification of PC subpopulations (both transversal and parasagittal subtypes of PCs) is regulated by cell autonomous mechanisms, more so than activity or afferent dependent, starting from the birth of the PCs (Hashimoto and Mikoshiba, 2003; Namba et al., 2011; Larouche and Hawkes, 2006; Chung et al., 2008). Hashimoto and Mikoshiba, 2003 PC birthdating experiments revealed that, in contrast with the expression of the markers available at the time, the eight clusters of PCs the authors identified embryonically were unchanged until adulthood. Although ZebrinII is a ‘late-onset’ parasagittal marker, others, such as neurogranin (Larouche et al., 2006), were shown to be expressed from E14.5 in a pattern that was maintained until P20. While Slc1a6 expression is similar to that of ZebrinII in adult mice, its mRNA can already by detected from embryonic ages and immunohistochemical analysis supports a patterned, selective expression in the caudal cerebellum from embryonic day 18 (Yamada et al., 1997). Additionally, PLCβ4 expression is restricted to the Z– cells and its expression also begins just before birth. The PLCβ4-positive clusters in the neonate are complementary with the Z– neurons (Marzban et al., 2007). With the use of mouse genetics (Sillitoe et al., 2009) or adenovirus tracing (Namba et al., 2011) it was possible to verify that the birth date-related PCs correlated with the zonal pattern of ZebrinII. Finally, it is known that the nodulus (vermal lobule X) and the flocculus are distinct divisions of the cerebellum at an early age (Fujita et al., 2012). Our electrophysiological data add to this notion that differences in physiological properties result from intrinsic properties of PCs (Figure 2) early in development. Intrinsic activity could be observed as early as P3 and differences between PC subpopulations become apparent starting from P12. Moreover, we observed that the influence of extrinsic inputs, the net effect of excitatory and inhibitory inputs, is relatively small in the second week, but starts to drive activity at P18. While this influence remains relatively stable in nodular lobule X/Z+ PCs, the net driving effect of extrinsic inputs increases over time for anterior lobule III/Z– PCs until the cells reach their full maturation in the adult (Figure 2—figure supplement 2). It should be noted, however, that the methods we employed do not allow us to determine the individual contributions of each input, except that of the CFs, and that this maturation could also be the result of a shift in the balance between excitation and inhibition (Jelitai et al., 2016).
 
@@ -112,7 +184,7 @@ While the precise molecular mechanism underlying these differences is not well-d
 
 During the second postnatal week of development also the complexity of the PC axonal arbor increases significantly (Figure 5). Corticonuclear topography is related with the topography of the olivocerebellar pathway (Sugihara et al., 2009; Sugihara and Shinoda, 2007a), in that Z+ PCs typically project to the lateral/caudoventral cerebellar nuclei while Z– neurons typically project to the medial/rostrodorsal parts of the cerebellar nuclei. In adult rats, PC axon arbors have been shown to vary morphologically based on their location within the cerebellar nuclei with more Z+ subnuclei containing denser, more complex PC axonal arbors (Sugihara et al., 2009). Our data shows for the first time the existence of a similar pattern of distinct morphology of PC axons in the different subnuclei during development (Figure 5). Although neuronal subtypes of the related vestibular nuclei have been identified (Shin et al., 2011), neither the subtypes in the cerebellar nuclei nor the pattern of PC to cerebellar nuclei neuron projections have been comprehensively studied. Linking the projection pattern of Z+ and Z– PCs to genetically identified neuronal subpopulations of each cerebellar nuclei is a crucial future step in understanding the development and functioning of the olivocerebellar circuit.
 
-## Differential ontogeny of cerebellar-sensorimotor functions
+### Differential ontogeny of cerebellar-sensorimotor functions
 
 Unique timelines in the maturation of cerebellar microcircuitries sparked the hypothesis that correlated behaviors are impacted and have distinct developmental profiles as well. Although the list of cerebellum-related behaviors is long, only few tasks have been directly linked to specific, restricted cerebellar regions. The difference in developmental timeline of PC SS activity, which directly influences downstream targets, is comparable between flocculus and nodulus, as well as between Z– PCs in the hemispheres and anterior cerebellum (Figure 1—figure supplement 3B). Therefore, we examined VOR adaptation and EBC as proxies for Z+ and Z− cerebellar module-related behaviors, respectively. VOR adaptation and EBC are regulated by different modules in the cerebellum: VOR adaptation is controlled by the flocculus of the vestibulocerebellum, which is a Z+ region (Zhou et al., 2014; Sugihara and Quy, 2007b; Lisberger, 1988; Ito, 2002; Fujita et al., 2014), and EBC is controlled by the hemispheric lobule VI, which is predominantly a Z– region (Mostofi et al., 2010; Boele et al., 2010; Thompson and Steinmetz, 2009; Heiney et al., 2014; Hesslow, 1994a; Hesslow, 1994b). Our data show that different elements of the nodular Z+ circuitry mature, that is reach their adult levels at the juvenile (P21) stage, earlier than anterior Z– circuitries and hence we hypothesize that this differentiation would manifest itself in the ability to perform related learning tasks. We found that young animals, compared to adult mice, start with a similar OKR baseline similar, but a lower VOR baseline (Figure 6—figure supplement 1). A similar attenuation of VOR gain, but more specifically for lower to midrange frequencies, was observed previously, while we were not able to replicate the higher OKR gain at 1.0 Hz visual stimulation observed in that work (Faulstich et al., 2004). Taken together, both studies suggest a delayed maturation of the VOR with a potential compensatory role for an ‘overactive’ OKR system. As OKR gain is attenuated by loss or dysfunctional cerebellar input, the VOR gain typically increases in those conditions (Schonewille et al., 2010; van Alphen and De Zeeuw, 2002) and hence these results argue against any impairments due to incomplete development of the floccular region. When challenged with a learning paradigm, the VOR phase reversal, the younger animals adapted faster than adult animals. These results support our hypothesis that the flocculus circuitry at P21 is functional and suggests that it even allows for faster learning, a form of immature hyperplasticity, comparable to known forms of enhanced neural plasticity in development (Wiesel and Hubel, 1965; Hensch and Bilimoria, 2012; Cai et al., 2014). Additionally, when comparing the simple spike rate development in the flocculus with the nodular regions of the cerebellum (Figure 6—figure supplement 3B2), even with limited data points, data suggests that by P18-29 these PCs have reached their adult firing rate stage. In contrast, younger animals have a poorer performance in the CR of the EBC paradigm compared to adult animals. Functional immaturity of the eyeblink response has been suggested to be due to immaturity of the afferent pathway when using an auditory cue (Nicholson and Freeman, 2000). However, the fact that we use a visual cue and compare the results with visual stimulus-driven OKR and VOR adaptation, argue against the role of an immature afferent pathway, while the presence of normal URs rejects the premise that an inability to blink is the cause. At P21 the firing rate of anterior Z– PCs in the eyeblink region (Figure 1—figure supplement 3A3,B1), is reduced when compared to adult counterparts (Figure 1—figure supplement 3A4,B1), which can likely contribute to the impaired CR in young animals (Wu et al., 2019; ten Brinke et al., 2015). Evidence suggests that Z– and Z+ PCs utilize different forms of synaptic plasticity, but there is still no consensus on which plasticity mechanisms underlie VOR adaptation and EBC. Long-term depression (LTD) was the first type of synaptic plasticity implicated in cerebellar motor learning (Ito, 2000). LTD has been suggested to participate in the EBC response (Grasselli and Hansel, 2014; Freeman, 2015) and this form of plasticity is known to occur on Z– lobule III PCs while in Z+ lobule X PCs is not detected (Paukert et al., 2010; Wadiche and Jahr, 2005). Interestingly, blocking TRPC3 function eliminates LTD plasticity (Kim, 2013) and, we recently showed that, TRPC3 loss-of-function in mice showed an impaired EBC response (Wu et al., 2019), but normal VOR adaptation. LTD can be readily induced in the anterior regions of juvenile PCs (Kim, 2013) and LTD-deficient mice do not have impaired EBC, arguing against a central role for LTD in the EBC impairment in juvenile mice. Intrinsic excitability is increased after EBC (Schreurs et al., 1997; Titley et al., 2020) and deletion of calcium-activated potassium channel SK2 ablated this plasticity of intrinsic excitability (intrinsic plasticity) and resulted in impaired EBC, but enhanced VOR adaptation (Grasselli et al., 2020), a phenotype that is in line with the juvenile phenotype (Hesslow, 1994b). Thus, a lack of ability to reach higher levels of excitability by young anterior Z– PCs could explain the lower performance in the P21 animals. The latter example suggests that the temporal difference in the emergence of cerebellum-sensorimotor behaviors (Figure 6), could result from a distinct cell-autonomous excitability regulation in distinct PCs populations. Future studies will have to determine the precise parameters for induction of the difference forms of plasticity in each region, and their respective timelines.
 
@@ -120,21 +192,297 @@ Overall, this study highlights the heterogeneity within the cerebellum during de
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Slc1a6-EGFP</td>
+      <td>Gong et al., 2003</td>
+      <td>MMRRC: 012845-UCD</td>
+      <td>(Tg(Slc1a6-EGFP) HD185Gsat/Mmucd)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pcp2-creERT2</td>
+      <td>Institut Clinique de la Souris, France Jackson Laboratory</td>
+      <td>MGI:97508; ICS: 0273</td>
+      <td>(Tg(Pcp2-creERT2)17.8.ICS)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ai14</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX: 007908</td>
+      <td>(Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>The Jackson Laboratory Janvier Labs Charles River</td>
+      <td>JAX: 00055 Janvier: C57BL/6JRj CR: C57BL/6NCrl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-ZebrinII/Aldolase C (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-12065 RRID:AB_2242641 RRID:AB_2315622</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti- Calbindin D-28K (Mouse monoclonal)</td>
+      <td>Swant</td>
+      <td>Cat# 300 RRID:AB_10000347</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig anti-VGluT2 (Guinea pig polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# AB2251-l RRID:AB_2665454</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-RFP (Rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>Cat# 600-401-379 RRID:AB_2209751</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3 Streptavidin</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 016-160-084 RRID:AB_233724</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-AffiniPure Donkey anti-Mouse (Mouse polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 715-165-150 RRID:AB_2340813</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-AffiniPure Donkey anti-Guinea Pig (Guinea pig polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 706-545-148 RRID:AB_2340472</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Daylight 488 (Goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 705-486-147 RRID:AB_2616594</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-AffiniPure Donkey Anti-Rabbit (Rabbit polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 711-165-152 RRID:AB_2307443</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4’,6-Diamidine-2’-phenylindole dihydrochloride (DAPI)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# D3571 RRID:AB_2307455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde (PFA)</td>
+      <td>Millipore</td>
+      <td>Cat# 104005</td>
+      <td>4%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B4261</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Evans Blue</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E2129</td>
+      <td>0.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Hello Bio Ltd</td>
+      <td>Cat# HB0506</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX</td>
+      <td>Hello Bio Ltd</td>
+      <td>Cat# HB0442</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Hello Bio Ltd</td>
+      <td>Cat# HB0225</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mineral oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M3516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>National Institute of Health</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB 2008, 2016</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN digital Imaging for Light Microscopy</td>
+      <td>ZEISS</td>
+      <td>RRID:SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X (LAS X)</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_013673</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clampfit 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA Electronics</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Compensatory eye movements analysis</td>
+      <td>Schonewille group</td>
+      <td></td>
+      <td>https://github.com/MSchonewille/iMove</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Eyeblink conditioning analysis</td>
+      <td>Neurasmus B.V. Rotterdam</td>
+      <td>RRID:SCR_021043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica SM2000 R sliding microtome</td>
+      <td>Leica Biosystems</td>
+      <td>RRID:SCR_018456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>P-1000 Puller</td>
+      <td>Sutter Instrument</td>
+      <td>RRID:SCR_021042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LSM 700 laser scanning confocal</td>
+      <td>ZEISS</td>
+      <td>RRID:SCR_017377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SP5 confocal</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_020233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SP8 confocal</td>
+      <td>Leica Microsystems</td>
+      <td>RRID:SCR_018169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Axio Imager.M2</td>
+      <td>ZEISS</td>
+      <td>RRID:SCR_018876</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animals in this study were handled and kept under conditions that respected the guidelines of the Dutch Ethical Committee for animal experiments and were in accordance with the Institutional Animal Care and Use Committee of Erasmus MC (IACUC Erasmus MC), the European and the Dutch National Legislation. All animals were maintained under standard, temperature controlled, laboratory conditions. Mice were kept on a 12:12 light/dark cycle and received water and food ad libitum. The following transgenic mouse lines were used in this study: Slc1a64-EGFP (Tg(Slc1a6-EGFP)HD185Gsat/Mmucd) (Gong et al., 2003), Pcp2-creERT2 (Tg(Pcp2-creERT2)17.8.ICS) (Wu et al., 2019), and Ai14 (B6;129S6-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J) (Madisen et al., 2010). The following primer sequences were used for routine genotyping: Slc1a6-EGFP (5’-TTCCTGATTGCTGGAAAGATTCTGG −3’; 5’-AGTTCAGGGAAAGGCCA TACCTTGG-3’; 5’-GGATCGGCCATTGAACAAGATGG-3’; 5’-AAGTTCATCTGCACCACCG-3’; 5’-TCCTTGAAGAAGATG GTGCG-3’), Pcp2-creERT2 (5’-CCATGGTGATACAAGGGACATCTTCC-3’; 5’-CATGTGAAATTGTGCTG CAGGCAGG-3’; 5’-GCTATGACTGGGCACAACAGACAATC-3’; 5’-CAAGGTGAGATGACAGGAGATC CTG-3’), and Ai14 (5’-CTGTTCCTGTACGGCATGG-3’; 5’-CCGAAAATCTGTGGGAAGTC-3’; 5’-GGCATTAAAGCAGCGTATCC-3’; 5’-AAGGGAGCTGCAGTGGAGTA-3’). Both male and female mice were used in all experiments.
 
-## In vivo extracellular recordings and analysis
+### In vivo extracellular recordings and analysis
 
 The in vivo extracellular recordings were performed in a total of 161 mice with an age range from P12 to P269. We used either Slc1a6-EGFP (Dehnes et al., 1998) or C57BL/6J mice to record PCs. Briefly, mice were maintained under general anesthesia with isoflurane/O2 (4% induction and 1–5–2% maintenance) while five holes were drilled using a high-speed diamond-tipped drill (Foredome, Bethel, CT, USA, RRID:SCR_021046). To obtain electrocorticogram (ECoG) signals, five pure silver ball-tipped electrodes (custom-made from 0.125 mm diameter silver wire; Advent research materials LTD, Eynsham, Oxford, United Kingdom, RRID:SCR_021045) were placed on the meningeal layer of the dura mater. Two silver electrodes were positioned bilateral above the primary cortex (M1, 1 mm rostral; 1 mm lateral; relative to Bregma), two were placed above the primary sensory cortex (S1, 1 mm caudal; 3.5 mm lateral; relative to Bregma), and one in the interparietal bone (1 mm caudal; 1 mm lateral; relative to Lambda). UV-sensitive composites, a layer of Optibond (Kerr, Bioggio, Switzerland) and Charisma Flow (Heraeus Kulzer, Hesse, Germany), were used to fix the silver electrodes and a pedestal in the mouse head. To obtain extracellular recordings a craniotomy was made in the occipital bone and temporarily closed with Kwik-Cast sealant (World Precision Instruments Inc, Sarasota, FL, USA, RRID:SCR_008593) to prevent cooling of the brain. In the end of the surgery, mice received 0.1–0.2 ml saline for hydration and 0.2 l O2/min. ECoG and extracellular recordings were sampled at 20 kHz (setup 1: Digidata 1322A, Molecular Devices LLC., Axon instruments, Sunnyvale, CA, USA, RRID:SCR_021041), amplified, and stored for offline analysis (CyberAmp and Multiclamp 700A, Molecular Devices, RRID:SCR_021040) or at 50 kHz (setup 2: ECoG: adapted MEA60, Multichannel system, Reutlingen, Germany, RRID:SCR_021039; extracellular: Multiclamp 700B amplifier, RRID:SCR_018455, with a Digidata 1440; Molecular Devices, RRID:SCR_021038). Single-unit recordings started two hours after the termination of isoflurane application, only when the ECoG looked normal for an active mouse in an alert status. We recorded using borosilicate glass pipettes (Harvard apparatus, Holliston, MA, USA, RRIDSCR_021037) with 0.5–1.0 µm tips and a resistance of 6–12 MΩ. Glass pipettes were filled with internal solution containing (in mM): 9 KCl, 3.48 MgCl2, 4 NaCl, 120 K+-Gluconate, 10 HEPES, 28.5 Sucrose, 4 Na2ATP, 0.4 Na3GTP in total pH 7.25–7.35, osmolarity 290–300 mOsmol/Kg (Sigma-Aldrich, Merck KGaA, Darmstadt, Germany, RRID:SCR_008988); and 1% biocytin or 0.5% Evans Blue. At the recording location biocytin was released with iontophoresis with 1 s pulses of 4 µA for 3 min (custom-built device, Erasmus MC, Rotterdam, The Netherlands, RRID:SCR_002737) or Evans blue was injected with pressure. This procedure was done to identify the location of the recordings. In our analysis, we included only the cells that we could identify the recording location by the use of the injection spot. For spike analysis of the PCs, only cells with a recording length of at least 90 s were included in the study (duration: 214 ± 160 s). All in vivo recordings were analyzed using a MATLAB (MathWorks, Natick, MA, USA, RRID:SCR_001622) code to detect spikes using threshold and principal component analysis (Aminov et al., 2012) and a custom build MATLAB code to analyze inter spike variables. The CV is the variation in inter-spike-intervals (ISI) during firing and was calculated by dividing the standard deviation by the mean of ISIs. The CV2 represents the variance on a spike-to-spike base, it is less sensitive for a single outlier and was calculated as 2*|ISIn + 1-ISIn| / (ISIn + 1 + ISIn). The regularity index was calculated by extracting regular spike patterns, using a CV2 threshold of <0.2 for at least three consecutive spikes (Shin et al., 2007). Adult >P60 PCs data set localized in the flocculus used in this study has also been used in a previous study (Zhou et al., 2014).
 
-## In vitro extracellular recordings and analysis
+### In vitro extracellular recordings and analysis
 
 The in vitro extracellular recordings were performed in a total of 49 mice with an age range from P3 to P378. We used either Slc1a6-EGFP (Gong et al., 2003; Dehnes et al., 1998) or C57BL/6J mice to record PCs. As previously described (Wu et al., 2019), the brain was quickly removed and placed in ice-cold slice solution (continuously carbogenated with 95% O2 and 5% CO2) containing the following (in mM): 240 Sucrose, 2.5 KCl, 1.25 NaH2PO4, 2 MgSO4, 1 CaCl2, 26 NaHCO3, 10 D-glucose. Acute sagittal slices 250 µm thick of vermal cerebellar tissue were cut in ice-cold slicing solution using a vibratome (VT1000S, Leica Biosystems, Wetzlar, Germany, RRID:SCR_016495) with a ceramic blade (Campden Instruments Ltd, Manchester, United Kingdom, RRID:SCR_021036). Directly after slicing, the slices were transferred to a recovery bath and were incubated in oxygenated artificial cerebrospinal fluid (ACSF) and maintained at 34°C for one hour. The ACSF was continuously carbogenated with 95% O2 and 5% CO2 and consisted of (in mM): 124 NaCl, 5 KCl, 1.25 Na2HPO4, 2 MgSO4, 2 CaCl2, 26 NaHCO3, 20 D-glucose. After incubation period, slices were transferred to room temperature. To record the individual slices, these were transferred to a recording chamber and maintained at 34 ± 1°C with a feedback temperature controller with heater (Scientifica, Uckfield, United Kingdom, RRID:SCR_021035) under continuous superfusion with the oxygenated ACSF.
 
 For all the recordings, slices were bathed with ACSF supplemented with synaptic receptor blockers, NMDA receptor antagonist D-AP5 (50 µM, Hello Bio Ltd, Bristol, United Kingdom, RRID:SCR_021047), selective and competitive AMPA receptor antagonist NBQX (10 µM, Hello Bio Ltd, Bristol, United Kingdom, RRID:SCR_021047), non-competitive GABAA receptor antagonist and glycine receptor inhibitor Picrotoxin (100 µM, Hello Bio Ltd, Bristol, United Kingdom, RRID:SCR_021047). PCs were visualized with SliceScope Pro 3000, a CCD camera, a trinocular eyepiece (Scientifica, Uckfield, United Kingdom, RRID:SCR_021035) and ocular (Teledyne Qimaging, Surrey, Canada). Whole-cell and cell attached recordings were obtained using borosilicate pipettes (Harvard apparatus, Holliston, MA, USA RRIDSCR_021037) with a resistance of 4–6 MΩ, filled with internal solution containing (in mM): 9 KCl, 3.48 MgCl2, 4 NaCl, 120 K+-Gluconate, 10 HEPES, 28.5 Sucrose, 4 Na2ATP, 0.4 Na3GTP in total pH 7.25–7.35, osmolarity 290–300 mOsmol/Kg (Sigma-Aldrich, Merck KGaA, Darmstadt, Germany, RRID:SCR_008988). Cell-attached recordings were made with a seal of 30 MΩ to 2 GΩ and lasted for a minimum of 90 s up to 150 s. Recording pipettes were supplemented with 1 mg/ml biocytin to allow histological staining to identify PCs location. Cell-attached recordings were performed using an ECP-10 amplifier (HEKA Electronics, Lambrecht, Germany, RRID:SCR_018399) and digitized at 20 kHz. Acquisition was done in Patchmaster (HEKA Electronics, Lambrecht, Germany, RRID:SCR000034) and ABF Utility (Synaptosoft, Fort Lee, NJ, USA, RRID:SCR_019222) was used to convert the Patchmaster files for analysis. Clampfit 10 (Molecular Devices, LLC, San Jose, USA, RRID:SCR_011323) was used to analyze spikes (Aminov et al., 2012) and a custom-build MATLAB code (MathWorks, Natick, MA, USA, RRID:SCR_001622) using inter spike properties was used to analyze spike variables (Shin et al., 2007).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For immunohistochemistry, mice were deeply anesthetized with sodium pentobarbital, perfused transcardially with sodium chloride solution (Baxter International Inc, Deerfield, IL, USA, #TKF7124, RRID:SCR_003974) followed by 4% paraformaldehyde (PFA) in 0.1M phosphate buffer (PB). The dissected brains were then post-fixed in 4% PFA for 2 hr at 4°C and then cryoprotected in 10% sucrose/0.1M PB (Sigma-Aldrich, #S-0389, RRID:SCR_008988) overnight at 4°C. Next day, the brains were embedded in 14% gelatin/30% sucrose/0.1M PB solution (gelatin: FujiFilm Wako Pure Chemical Corporation, Osaka, Japan, #077–03155, RRID:SCR_021034), fixed for 2 hr at room temperature and incubated overnight in 30% sucrose/0.1M PB solution.
 
@@ -146,7 +494,7 @@ Free-floating sagittal brain slices from P7, P14, P21, P35, and P60 C57BL/6J mic
 
 To label axonal projections from Pcp2-creERT2; Ai14 mice brains were sectioned 150 µm thick in a coronal plane with a freezing microtome. Free-floating sections were rinsed with 0.1M PB and blocked for 2 hr in a solution of 0.5% Triton X-100/10% normal horse serum/0.1M PB at room temperature. Sections were then incubated overnight at 4°C in a solution of 0.5% Triton X-100/2% normal horse serum/0.1M PB with primary antibodies against Aldolase C (1:1000, goat polyclonal) and RFP (1:1000, Rockland). After rinsing the sections with 0.1M PB, sections were incubated 2 hr at room temperature in a solution of 0.5% Triton X-100/2% normal horse serum/0.1M PB with secondary antibodies Alexa Fluor 488-AffiniPure Donkey anti-goat (1:500, Jackson Immuno Research Labs, RRID:AB_2616594) and Cy3 AffiniPure Donkey anti-rabbit (1:500, Jackson Immuno Research Labs, RRID:AB_2307443). Finally, brain slices were incubated for 10 min with DAPI in 0.1M PB, rinsed with PB, mounted in slides in chrome alum (gelatin/chromate) and mounted with Mowiol.
 
-## Image acquisition and morphological analysis
+### Image acquisition and morphological analysis
 
 Images were acquired at 8-bit depth and 1024 × 1024 pixel resolution with Axio Imager.M2 (Carl Zeiss Microscopy, LLC, USA, RRID:SCR_011876), LSM 700 (Carl Zeiss Microscopy, LLC, USA, RRID:SCR_017377) or a SP5/SP8 (Leica Microsystems, Wetzlar, Germany, SP5 RRID:SCR_020233, SP8 RRID:SCR_018169) confocal laser scanning microscope. For each experiment, images were acquired using the same laser power and detection filter settings.
 
@@ -158,7 +506,7 @@ Tile scan images of PCs and CFs from different lobules of the cerebellum were ac
 
 Images of PC axon terminal arbors in the cerebellar nuclei were acquired with a 20x objective with a z-interval of 1 µm. For each age group, sections were imaged for each brain (at least three brains per age). Isolated axon arbors were imaged and analyzed with the sholl analysis macro implemented in FIJI software. To quantify the area of a PC, the maximum projection of each image was thresholded in FIJI to fit the area of the cell and measured.
 
-## Compensatory eye movement recordings
+### Compensatory eye movement recordings
 
 Young (P21 on the first day of training) and adult (10–11 weeks old) C57BL/6J mice were used to perform compensatory eye movement recordings, which were described in detail previously (Schonewille et al., 2010). Briefly, to head restrain mice during the eye movement recordings a metal construct, pedestal, was placed on their skull under general anesthesia with isoflurane/O2. After 3 days of recovery from the surgery, mice were head-fixed and placed in a mouse holder in the center of a turntable (diameter: 60 cm), surrounded by a cylindrical screen (diameter 63 cm) with a random-dotted pattern (drum). Compensatory eye movements [optokinetic reflex (OKR), visual vestibular ocular reflex in the light (VVOR) and dark (VOR)] were induced using a sinusoidal rotation of the drum in light (OKR), rotation of the table in the dark (VOR) or the rotation of the table in the light (VVOR) with an amplitude of 5° at 0.1–1 Hz. Motor performance in response to these stimulations was evaluated by calculating the gain (fitted eye velocity/fitted stimulus velocity) and phase (eye to stimulus difference in degrees) of the response.
 
@@ -168,7 +516,7 @@ The first training day, in-phase stimulation of the visual (the drum) and vestib
 
 A CCD camera was fixed to the turntable in order to monitor the eyes of the mice. Eye movements were recorded with eye-tracking software (ETL-200, ISCAN systems, Burlington, NA, USA, RRID:SCR_021044). Eyes were illuminated during the experiments using two table-fixed infrared emitters (output 600 mW, dispersion angle 7°, peak wavelength 880 nm) and a third emitter, which produced the tracked corneal reflection, was mounted to the camera and aligned horizontally with the optical axis of the camera. Eye movements were calibrated by moving the camera left-right (peak-to-peak 20°) during periods that the eye did not move (Stahl, 2004). Gain and phase values of eye movements were calculated using custom-made MATLAB scripts, available at GitHub (GitHub, San Francisco, CA, USA, https://github.com/MSchonewille/iMove; copy archived at swh:1:rev:e0dda8be37519e58387c2b9702479625e66b54ec; Beekhof, 2021; Schonewille et al., 2010). Consolidation is the percentage of adaptive change that was still present after 23 hr in the dark and was calculated as 100%*(dxt0-dx + 1 t0)/(dxt0-dxt30), with dxt0 as the value before training on the first day, dx + 1t0 as the value before training on the next day and dxt30 as the last, final value on the first day.
 
-## Eyeblink conditioning
+### Eyeblink conditioning
 
 Young (P21, on the first day of training) and adult (10–11 weeks old) C57BL/6J mice were used to perform EBC behavioral tests as done previously (Boele et al., 2018). Briefly, a metal pedestal was placed on the mice skull under general anesthesia with isoflurane/O2 in order to allow for head fixation during the EBC experiments. After 3 days of recovery, mice were head-fixed and placed on top of a foam cylindrical treadmill on which they were allowed to walk freely. Mice were habituated for 2 days (30 min per day) before beginning the conditioning sessions in a sound- and light-isolating chamber which houses the eye-blink set-up. No stimuli was delivered during habituation.
 
@@ -176,6 +524,6 @@ Eyelid movements were monitored under infrared illumination using a high-speed (
 
 Individual eyeblink traces were analyzed with a custom written script in MATLAB R2018a. Trials with significant activity in the 500 msec pre-conditioned stimulus period were regarded as invalid for further analysis. Valid trials were further normalized by aligning the 500 msec pre-conditioned stimulus baselines and calibrating the signal so that the size of a full blink was 1. In valid normalized trials, all eyelid movements larger than 0.05 and with a latency to CR onset between 50 and 250 msec, a latency to CR peak of 100–250 msec (relative to conditioned stimulus onset) and a positive slope in the 150 msec before unconditioned stimulus time were considered as conditioned responses (CRs).
 
-## Statistical analysis
+### Statistical analysis
 
 Error bars in all graphs indicate mean ± SEM. For each experiment, the sample size and statistical tests used are summarized in Supplementary file 1. Data was tested for normality with Shapiro–Wilk tests and for equal variances using the F-test. For normal distributed data, statistical significance was determined by the two-way ANOVA with multiple comparisons or mixed-effects test with repeated measures. If the data was not normally distributed, statistical significance was calculated using the Kruskal–Wallis test with multiple comparisons. The minimum level of significance accepted for all tests was p<0.05. Statistical analyses were performed using GraphPad Prism (GraphPad Software, San Diego, CA, USA, RRID:SCR_002798).

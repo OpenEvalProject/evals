@@ -10,7 +10,7 @@
 ### Affiliations
 
 1. Department of Brain and Cognition & Leuven Brain Institute Leuven Belgium
-2. https://ror.org/03vek6s52 Department of Neurobiology, Harvard Medical School Boston United States
+2. Department of Neurobiology, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -26,13 +26,27 @@ One aspect that almost all rodent studies have in common is that the exact task 
 
 In this study, we implemented this approach and created a large stimulus set that can be used for a variety of visual experiments. We decided to create the stimuli in a way that they are adaptable to different types of tasks, such as a ‘simple’ discrimination task or non-linear tasks (e.g. Bossens and Op de Beeck, 2016). We then took a subset of these stimuli and performed a visual discrimination experiment in rats (see Figure 1 for the design). The task itself was defined in a stimulus space with two dimensions, here referred to as concavity and alignment. The stimuli consisted of a base shape that varied in concavity, with three spheres attached to it that were either horizontally aligned or misaligned. The task was then further complicated by transforming the stimuli along several dimensions that preserve the identity of the object. We started by training the animals in a base stimulus pair, with the target being the concave object with horizontally aligned spheres. Once the animals were trained in this base stimulus pair, we used the identity-preserving transformations to test for generalization. After a number of transformation phases, we selected a final stimulus set by choosing a combination of transformations based on the outcomes of a trained CNN. Using the neural network as a (basic) model for the different stages of ventral visual stream processing, we chose stimulus pairs that require either higher or lower levels of processing and thus allow us to maximally differentiate between the task strategies used by the animals. As a final part of this study, we performed an online human experiment with the same stimuli and design as the experiment for the rats, providing us with a rich three-way comparison of rat behavioural data with human behavioural data and with CNN data.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig1-v1.jpg)
+
+**Figure 1.:** Animals started with a standardized shaping procedure, followed by three training protocols, as indicated by the dashed outline. In these protocols, animals received real reward, that is, reward for touching the target. The target corresponds to the concave object in all training protocols. The rats received correction trials for incorrect answers, that is, touching the convex object. After the three training protocols, the animals went through a number of testing protocols. The order of the first six protocols (*) and the last two testing protocols (**) was counterbalanced between the animals. During testing protocols, animals received one-third old trials and two-third new trials. In the new trials, they received random reward in 80% of the trials, whereas in the old trials, they received real reward and correction trials if necessary. Again, the target in the testing protocols correspond to the concave objects, whereas the distractors correspond to the convex objects.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The design of the human study resembles the design of the animal study, with minor adaptations. We removed the one-third old trials in the test protocols but included two additional dimension learning protocols.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Timeline of a correct trial (a) and an incorrect trial (b). In case of a correct trial, animals receive a reward in the form of sugar pellets for touching the target. If they answer incorrectly, they do not receive sugar pellets but instead the house light is turned on. For training protocols, a correction trial is added. (c) shows images of the experimental setup.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig1-figsupp3-v1.jpg)
+
 ## Results
 
 In this study, we trained and tested 11 rats and 45 humans on a complex two-dimensional discrimination task (see Figure 1 for the design of the rat study and Figure 1—figure supplement 1 for the design of the human study). Rats and humans were first trained in a base pair. Next, we tested their ability to generalize across several image transformations. In the last two protocols of the design, we used a computational approach to select stimuli that require different visual strategies.
 
-## Animal study
+### Animal study
 
-## Training
+#### Training
 
 We first checked the variation in performance across phases and stimulus pairs during training. In the first training phase, animals were trained in the base stimulus pair, which were the maximally different target and distractor in a concavity × alignment stimulus space where each dimension was varied with four values (4 × 4 space). This training was successful for all 12 animals and lasted on average for 8.62 sessions (SD = 1.61). Animals were trained until they reached 80% performance for two consecutive sessions.
 
@@ -50,9 +64,17 @@ Overall, the findings from the training phase and the above-chance performance o
 
 The six protocols that test generalization to various transformations with new, untrained images are associated with performances lower than 80% (binomial test, see Supplementary file 1a [lower table] for detailed table with results), but significantly higher than chance level (see Supplementary file 1a [lower table]). The pairwise percentage matrices of the animals in Figure 3 provide a more detailed view of what is happening in every test, and Figure 3—figure supplement 1 shows the individual accuracy for each animal. The distractor has a higher impact on performance than the target in some tests. Supplementary file 1b shows the marginal means and standard deviation for each target and distractor for these two test protocols. From these means it is clear that there is a higher variation in the performance between distractors in rotation X (52–65%) and rotation Z (56–73%) than between targets (55–60% resp. 60–66%). The same happens in the size test protocol.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig3-v1.jpg)
+
+**Figure 3.:** The colour bar indicates the percentage correct of the pooled responses of all animals together. The redder a cell is, the higher the average performance. Values below 40% accuracy are indicated in the highest intensity of blue. Cells with an ‘o’ marker indicate a below-chance performance, whereas cells with an *, **, or *** marker indicate a performance that is significantly higher than chance level (p-value <0.05, <0.01, or <0.001 respectively). This was calculated with a binomial test on pooled performance of all animals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The black circle indicates the average accuracy across all rats together. Each coloured cross represents the accuracy of one rat.
+
 After these first six test protocols, the animals were presented with a schedule where all three rotations are combined (see Figure 1). On the new stimuli, the animals performed 58.56%, which is rather low, but still significantly different from chance level (binomial test on pooled performance of all animals: p<0.0001; 95% CI [0.57;0.60]).
 
-## Testing computational levels of complexity
+#### Testing computational levels of complexity
 
 For the final two test protocols, we used a CNN to find image pairs that would contrast strategies based upon a different stage in visual processing, with either early layers having lower performance than high layers (zero vs. high), or early layers having better performance than high layers (high vs. zero). Rat performance was particularly low for zero vs. high (56.47%), yet still significantly different from chance level when averaged across all stimulus pairs (binomial test on pooled performance of all animals; p<0.0001; 95% CI [0.55;0.58]). In contrast, rats were able to solve the high vs. zero pairs not only better than chance (average: 64.84%; binomial test on pooled performance of all animals; p<0.0001; 95% CI [0.63;0.66]), but also significantly better than zero vs. high (paired t-test on rat performance, t(10) = –4.49, p=0.0012). This suggests that rats align with lower levels of processing when we purposely select image pairs that are optimized to contrast different levels of the visual processing hierarchy.
 
@@ -68,7 +90,7 @@ It is possible that rat performance would be based upon multiple levels of proce
 
 Given the relevance of convolutional layers, we can expect that relatively basic visual features might partially explain the behavioural strategy of rats. This includes dimensions such as brightness and pixel-based similarity. To get a first indication of the relevance of these features, we calculated the correlation across image pairs between rat performance and brightness and pixel similarity. Here we found a correlation of 0.34 for pixel similarity and 0.39 for brightness, suggesting that these two visual features partially explain our results when compared to the full-set reliability of rat performance (0.58).
 
-## Human study
+### Human study
 
 A final part of this study was to include an online human study that follows the same design as the animal part. Figure 5 shows the average performance of humans (dark blue) versus rats (light blue) for all nine test protocols, as well as their performance on the old stimuli that were added in (or during) the testing protocols as quality control. Overall, humans performed better on all tests protocols than rats, with an average performance over all tests of 94.34% (humans) and 62.29% (rats). There was already a difference in terms of training performance (humans 92.86% vs. rats 77.84%), but the difference on the test protocols is larger. We subtracted the training performance of humans or rats from the testing performance of humans or rats, respectively, and even with this normalization for training performance there is still a significantly higher test performance in humans compared to rats (t(16) = –6.47, p<0.0001). Thus, not surprisingly, the degree of invariance in this object classification task is higher for humans compared to rat.
 
@@ -110,23 +132,39 @@ For future studies, it will be highly valuable to use this computational informe
 
 ## Methods
 
-## Animal study
+### Animal study
 
-## Animals
+#### Animals
 
 A total of 12 male outbred Long–Evans rats (Janvier Labs, Le Genest-Saint-Isle, France) started this behavioural study. Out of these 12 animals, 2 were tested extensively in a first pilot study and were included in the remainder of the study as well. All animals were 11 weeks old at the start of shaping and were housed in groups of four per cage. Each cage was enriched with a plastic toy (Bio-Serv, Flemington, NJ), paper cage enrichment, and wooden blocks. Near the end of the experiment, one animal had to be excluded because of health issues. During training and testing, the animals were food restricted to maintain a body weight between 85 and 90% of their underprived body weight. They received water ad libitum. All experiments and procedures involving living animals were approved by the Ethical Committee of the University of Leuven and were in accordance with the European Commission Directive of September 22, 2010 (2010/63/EU).
 
-## Setup
+#### Setup
 
 The setup is identical to the one used by Schnell et al., 2019 and Schnell et al., 2023. A short description will follow here. The animals were trained and tested in four automated touchscreen rat-testing chambers (Campden Instruments, Ltd., Leicester, UK) with ABET II controller software (v2.18, WhiskerServer v4.5.0). The animals performed one session per day and each session lasted for 100 trials or 60 min, whichever came first. A reward tray in which sugar pellets (45 mg sucrose pellets, TestDiet, St. Louis, MO) could be delivered was installed on one side of the chamber. On the other side of the chamber, an infrared touchscreen monitor was installed. This monitor was covered with a black Perspex mask containing two square response windows (10.0 × 10.0 cm). A shelf (5.4 cm wide) was installed onto this black mask (16.5 cm above the floor) to force the animals to attend to the stimuli and view the stimuli within their central visual fields. Close proximity to the screen was enough to elicit a response because the screens are infrared. As the position of the rats in the touchscreen setup is not fixed, the actual size and position of the stimuli might vary in retinal coordinates. In a previous study, we manipulated the cycles per degree of stimuli in an orientation discrimination task and estimated that the decision distance of rats in this setup lies around 12.5 cm from the screen (Crijns and Op de Beeck, 2019). Figure 1—figure supplement 2 shows the timeline graphic of a correct and incorrect trial as well as images of the experimental setup.
 
-## Stimuli
+#### Stimuli
 
 Stimuli were created using the Python scripting implementation of the 3D modelling software Blender 3D (version 2.93.3) and measured 100 × 100 pixel. In general, the stimuli were objects that consisted of a body (base) with three spheres attached to it. A first step was to alter two dimensions of the object, namely, the concavity of the base and the alignment of the three spheres. The base was made either concave or convex by increasing (convex) or decreasing (concave) the base parameter. The alignment of the spheres was altered by changing the placement of the left and the right spheres. These spheres could either be horizontally aligned or misaligned. In the misaligned case, the spheres were placed diagonally from upper left to lower right. Figure 7a shows two example stimuli, the ones that later were selected as the so-called ‘base pair’. Next, additional exemplars were created by uniformly tiling the two-dimensional stimulus space between these two example stimuli. We decided to create 11 levels of the concavity dimension and 4 levels of alignment. This already yields 44 stimuli (see Figure 7—figure supplement 1). We chose these levels of concavity and alignment based on the pixel dissimilarity of the stimuli (see Figure 7—figure supplement 2). The final goal was to construct a 4 × 4 stimulus grid (Figure 7b) by selecting a subset of the 4 × 11 stimulus grid. We chose a large number of concavity levels as this ensures flexibility in the calibration of the two dimensions relative to each other.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig7-v1.jpg)
+
+**Figure 7.:** (a) The base pair of the main experiment. (b) The chosen 4 × 4 stimulus grid. The red diagonal dotted line indicates the ambiguous stimuli that can be seen as target as well as distractor. All stimuli below this line (green triangle) indicate the distractor sub-grid, whereas all stimuli above this line (yellow triangle) highlight the target sub-grid.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** We chose 11 values for concavity, ranging between –0.5 and 0.8, and 4 values for alignment, ranging between 0 and 1.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** This matrix is calculated in the exact same way as Schnell et al., 2023. The colour bar indicates pixel dissimilarity values, normalized between 0 and 100. The higher this value, and thus the redder a cell, the more dissimilar two stimuli are. The naming convention of the stimuli is as follows: XX-alYYsmZZZ.png, where XX is an ordering number, YY indicates the alignment level, and ZZZ indicates the concavity (smoothness) level.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/87719/elife-87719-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** The first three rows show rotation along the x-axis, y-axis, and z-axis, respectively, always in angles of 30°, 60°, 90°, 120°, 150°, and 180°. The fourth row illustrates the light location transformation. The last row shows some combinations of transformations, with different values for the alignment and concavity parameter.
+
 We added identity-preserving transformations to the stimuli, such as rotation among the x-axis, y-axis, and z-axis in six different angles (0°–180° in steps of 30°), as well as changing the light location (left, under, up, right, front) and finally the size and position. The latter two transformations were implemented using Python (3.7.3). Excluding the size and position transformation, these transformations resulted in a total set of 75,460 stimuli (4 [alignment] * 11 [concavity] * 7 [x-axis rotation] * 7 [y-axis rotation] * 7 [z-axis rotation] * 5 [light location] = 75,460 stimuli). Figure 7—figure supplement 3 shows examples of these transformations, and Figure 1 shows an overview of all image pairs that were used in this study.
 
-## Protocols
+#### Protocols
 
 Once the pilot was finished (see Supplementary file 2 for details), we set up the experiment and chose our stimuli. We started by reducing the 4 × 11 stimulus grid to a 4 × 4 stimulus grid (see Figure 7b). All stimuli on the diagonal can be seen as ambiguous stimuli (four stimuli in total) as they can be identified as a target as well as a distractor. The six stimuli above this diagonal create the target part of the grid, and the six stimuli below this diagonal resemble the distractor sub-grid.
 
@@ -148,7 +186,7 @@ One animal was not placed in the transformations phase as it was the slowest ani
 
 To further examine the visual features that could explain rat performance, we calculated the correlation between the rat performances and image brightness of the transformations. We did this by calculating the difference in brightness of the base pair (brightness base target – brightness base distractor), and subtracting the difference in brightness of every test target–distractor pair for each test protocol (brightness test target – brightness test distractor for each test pair). We then correlated these 287 brightness values (one for each test image pair) with the average rat performance for each test image pair. We performed a similar correlation analysis for pixel similarity to investigate the correlation between pixel similarity of the test stimuli in relation to the base stimuli with the average performance of the animals on all nine test protocols. We did this by calculating the pixel similarity between the base target with every other testing distractor (A), the pixel similarity between the base target with every other testing target (B), the pixel similarity between the base distractor with every other testing distractor (C), and the pixel similarity between the base distractor with every other testing target (D). For each test image pair, we then calculated the average of (A) and (D), and subtracted the average of (C) and (B) from it. We correlated these 287 values (one for each image pair) with the average rat performance on all test image pairs.
 
-## Computational modelling
+### Computational modelling
 
 One important goal of this study was to create a CNN-informed stimulus set to present to the animals. To do so, we followed the steps of Schnell et al., 2023 and Vinken and Op de Beeck, 2021 to train a CNN on the same stimuli on which our animals were trained. The steps of training the network are identical to Schnell et al., 2023, and a short description will follow here. We used the standard AlexNet CNN architecture that was pre-trained on ImageNet to classify images into 1000 object categories (MATLAB 2021b Deep Learning Toolbox). Following Vinken and Op de Beeck, 2021, we applied principal component analysis to calculate the activations in every layer to standardize the values across inputs and reduce the dimensionality. We then trained a linear support vector machine classifier by using the MATLAB function fitclinear, with limited-memory BFGS solver and default regularization. We performed this with the standardized DNN layer activations in the principal component space as inputs, before ReLU, to our 24 training stimuli (see Figure 1), that is, all stimuli of the training, dimension learning, and transformations protocols. The layers of AlexNet were divided into 13 sublayers, similar to that in Schnell et al., 2023 and Vinken and Op de Beeck, 2021.
 
@@ -166,17 +204,17 @@ Afterward we also calculated the binary target–distractor CNN decision perform
 
 Comparing the rat performances to the classification scores of the network was done by calculating the correlation across image pairs between these model scores and the rat performances averaged across animals. We concatenated the performance of the animals on all nine test protocols, as well as the distance to hyperplane of the network on all nine test protocols. Correlating these two arrays resulted in the correlations as visualized in Figure 4. To test whether these correlations are significant, we performed a permutation test. We permutated these arrays 1000 times, resulting in a normal distribution of permutated data per layer. We then calculated, per layer how many of the permutated values are greater than or equal to the correlation that is presented in Figure 4 and divided this by the number of permutations.
 
-## Human study
+### Human study
 
-## Participants
+#### Participants
 
 Data was collected from 50 participants (average age 33.24 ± 12.23; 34 females) who participated in return for a gift voucher of 10 euros. Out of these 50 participants, 5 were excluded because of outlying behaviour during the quality check protocols (see section ‘MethStimuli and protocols’). All participants had normal or corrected-to-normal vision. The experiment was approved by the ethical commission of KU Leuven (G-2020-1902R3), and each participant digitally signed an informed consent form before the start of the experiment.
 
-## Setup
+#### Setup
 
 For the human part of this study, we developed an online experiment using PsychoPy3 (v2020.1.3, Python version 3.8.10) and placed it on the online platform Pavlovia. All participants received the link and their individual participant number by e-mail with which they could participate in the experiment on their own computer. It took 30–45 min to complete the online study.
 
-## MethStimuli and protocols
+#### MethStimuli and protocols
 
 We used the same stimuli as in the animal study. The human experiment underwent the same phases as depicted in Figure 1, albeit with small changes. We dropped the one-third old trials in the test protocols and included two additional dimension learning protocols in between the first counterbalanced tests as quality check (see Figure 1—figure supplement 1). Supplementary file 1h provides an overview of the number of trials during the human experiment for each phase. Figure 1—figure supplement 1 shows an overview of all image pairs that were presented in the human study.
 

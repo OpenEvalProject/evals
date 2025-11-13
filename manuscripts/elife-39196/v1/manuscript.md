@@ -24,7 +24,8 @@ Lasting changes in gene expression are critical for the formation of long-term
                     and memory phases have been studied in detail, only little is known regarding
                     the gene regulatory changes that occur within these neurons. We here use the
                     fruit fly as powerful model system to study the neural circuits of
-                    CrebB-dependent appetitive olfactory LTM. We edited the CrebB locus to create a GFP-tagged CrebB conditional knockout allele,
+                    CrebB-dependent appetitive olfactory LTM. We edited the CrebB
+                    locus to create a GFP-tagged CrebB conditional knockout allele,
                     allowing us to generate mutant, post-mitotic neurons with high spatial and
                     temporal precision. Investigating CrebB-dependence within the mushroom body (MB)
                     circuit we show that MB α/β and α'/β' neurons as well as MBON α3, but not in

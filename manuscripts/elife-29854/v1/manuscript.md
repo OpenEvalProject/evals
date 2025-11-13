@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.29854.001 Several human diseases are associated with a lack of caveolae. Yet, the functions of caveolae and the molecular mechanisms critical for shaping them still are debated. We show that muscle cells of syndapin III KO mice show severe reductions of caveolae reminiscent of human caveolinopathies. Yet, different from other mouse models, the levels of the plasma membrane-associated caveolar coat proteins caveolin3 and cavin1 were both not reduced upon syndapin III KO. This allowed for dissecting bona fide caveolar functions from those supported by mere caveolin presence and also demonstrated that neither caveolin3 nor caveolin3 and cavin1 are sufficient to form caveolae. The membrane-shaping protein syndapin III is crucial for caveolar invagination and KO rendered the cells sensitive to membrane tensions. Consistent with this physiological role of caveolae in counterpoising membrane tensions, syndapin III KO skeletal muscles showed pathological parameters upon physical exercise that are also found in CAVEOLIN3 mutation-associated muscle diseases.
+Several human diseases are associated with a lack of caveolae. Yet, the functions of caveolae and the molecular mechanisms critical for shaping them still are debated. We show that muscle cells of syndapin III KO mice show severe reductions of caveolae reminiscent of human caveolinopathies. Yet, different from other mouse models, the levels of the plasma membrane-associated caveolar coat proteins caveolin3 and cavin1 were both not reduced upon syndapin III KO. This allowed for dissecting bona fide caveolar functions from those supported by mere caveolin presence and also demonstrated that neither caveolin3 nor caveolin3 and cavin1 are sufficient to form caveolae. The membrane-shaping protein syndapin III is crucial for caveolar invagination and KO rendered the cells sensitive to membrane tensions. Consistent with this physiological role of caveolae in counterpoising membrane tensions, syndapin III KO skeletal muscles showed pathological parameters upon physical exercise that are also found in CAVEOLIN3 mutation-associated muscle diseases.
 
 ## Introduction
 
@@ -46,11 +46,23 @@ We here describe that KO of syndapin III (also called PACSIN3), which encodes fo
 
 ## Results
 
-## Generation of syndapin III KO mice
+### Generation of syndapin III KO mice
 
 Caveolins are required for caveolae formation. Bacterial reconstitutions, furthermore, suggested that caveolins also were sufficient for caveolar invagination (Walser et al., 2012). In this case, discrimination between caveolin and bona fide caveolar functions would be impossible. Recent observations, however, suggested that it might nevertheless be possible to unveil specifically the functions of caveolar invaginations. RNAi against the F-BAR protein syndapin II led to a reduction of deeply invaginated caveolae without affecting the presence of endogenous cav1 at the plasma membrane of NIH3T3 cells (Koch et al., 2012) and to increased levels of overexpressed cav1 in the TIRF-zone of HeLa cells (Hansen et al., 2011), respectively.
 
 Toward addressing the role of caveolar invaginations in the various diseases associated with CAV3 mutations, we therefore studied the muscle-enriched member of the syndapin family (Kessels and Qualmann, 2004; Qualmann et al., 2011), syndapin III (Figure 1a), by generating syndapin III KO mice. The Cre/lox system was used to delete exons 5 and 6 leading to a premature stop. A mouse line lacking syndapin III was obtained via mating with constitutively and ubiquitously Cre recombinase-expressing mice (Figure 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig1-v1.jpg)
+
+**Figure 1.:** (a) Murine syndapin III domain structure and putative remaining peptide upon syndapin III exon 5 and 6 deletion. (b) Generation of syndapin III KO mice. Scheme of the syndapin III gene comprising 11 exons (coding exon parts in black) and of targeting vector and strategy of Southern blot analyses. Homologous recombination (homologous regions in dark grey and black) resulted in floxed exons 5 and 6. (c–e) Merges of MIPs of NIH3T3 cells transfected with GFP (c), GFP-syndapin III1-70 peptide (putatively remaining upon KO; composed of aa1-70 of syndapin III and five unrelated aa resulting from the frameshift caused by exon 5,6 deletion) (d) and GFP-syndapin III F-BAR (e), respectively. Cotransfected plasma membrane-targeted mCherry (mCherryF) served as internal control for a membrane-bound protein. In (e), the GFP channel of a GFP-syndapin III F-BAR-transfected cell is shown in addition to the merge to visualize the tubular structures induced by syndapin III F-BAR. The inset in (e) shows an enlargement of the boxed area. Bars, 10 µm. For enlarged images see Figure 1—figure supplement 1. (f–h) Immunoblotting analyses of fractionations of transfected HEK293 cells showing that whereas plasma membrane-targeted mCherry (f–h, lower panel) and GFP-syndapin III F-BAR (h, upper panel) are readily detectable in the crude membrane fraction P2, both GFP and GFP-syndapin III1-70 are not (f,g, upper panels). (i) MIPs of NIH3T3 cells transfected with GFP-syndapin III F-BAR coexpressing mCherry-syndapin III1-70 showing undisturbed membrane localization, self-assembly and membrane tubulation abilities of GFP-syndapin III F-BAR. Bars, 10 µm. For enlarged images see Figure 1—figure supplement 2. (j) Southern blot analysis of exemplary ES cell clones (G10, transgenic; H7, WT). (k) Genotyping of the offspring of heterozygous mating identifies all possible genotypes. (l) Normal frequency of genotypes and genders of syndapin III KO mice. (m,n) RT-PCRs on heart (m) and skeletal muscle cDNA (n). (o) Immunoblottings of tissue homogenates (50 µg each) show the lack of syndapin III in KO tissues. GAPDH and β-actin, controls. (p–r) Immunofluorescence analyses of syndapin III and cav3 in transversal skeletal muscle sections from WT (p) and syndapin III KO mice (r) and quantitative colocalization analyses (q) in ROIs placed at plasma membrane (n = 240 ROIs from eight images) and intracellular areas (n = 160 ROIs from eight images) in confocal stacks of images of transversal sections of WT skeletal muscles. Data, mean ± SEM. Statistical significance, Mann-Whitney U test. Bars, 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (c–e) Merges of MIPs of NIH3T3 cells transfected with GFP, GFP-syndapin III1-70 (putatively remaining upon KO; composed of aa1-70 peptide of syndapin III and five unrelated aa resulting from the frameshift caused by exon 5,6 deletion) (c) and GFP-syndapin III F-BAR (d), respectively. Cotransfected plasma membrane-targeted mCherry (mCherryF) served as internal control for a membrane-bound protein. The GFP channel of a GFP-syndapin III F-BAR-transfected cell is shown in addition to the merges (left panel in e) to visualize the tubular structures induced by syndapin III F-BAR. The inset in e shown an enlargement of the boxed area. Bars, 10 µm. The duplications of Figure 1c–d shown in this figure supplement were requested to allow for detailed evaluation of the differences in the localization of GFP-syndapin III F-BAR versus GFP-syndapin III1-70 or GFP.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** MIPs of NIH3T3 cells transfected with GFP-syndapin III F-BAR coexpressing mCherry-syndapin III1-70 showing undisturbed membrane localization and membrane tubulation abilities of GFP-syndapin III F-BAR. Bars, 10 µm. The duplications of Figure 1i shown in this figure supplement were requested to allow for detailed evaluation of lack of colocalization of GFP-syndapin III F-BAR with mCherry-syndapin III1-70.
 
 As schematically depicted in Figure 1a, any putative syndapin III translation product in the syndapin III KO line would be limited to a peptide comprising only the first 70 amino acids of syndapin III and five non-related amino acids. The anti-syndapin III isoform-specific antibodies raised against the non-F-BAR part of the protein (Koch et al., 2011) are not able to recognize such a putative peptide. Additional control examinations conducted clearly showed that the putative syndapin III1-70 peptide anyhow did not show any F-BAR domain functionalities, such as induction of membrane tubules (Figure 1c–e; Figure 1—figure supplement 1) and membrane binding (Figure 1f–h). Also, the putative syndapin III1-70 peptide did not interfere with key syndapin III F-BAR functions, as demonstrated by coexpression. GFP-syndapin III F-BAR still showed its normal distribution (Figure 1i; Figure 1—figure supplement 2). The observed lack of functionality is in line with the fact that such a putative peptide would only represent a minor fragment of the N-terminal F-BAR domain of syndapin III. Syndapin III exons 5,6 deletion thus leads to full syndapin III loss-of-function (Figure 1a–k).
 
@@ -60,13 +72,13 @@ Furthermore, immunoblotting of tissue homogenates of WT and syndapin III KO mice
 
 Specific anti-syndapin III immunolabeling was also detected in immunofluorescence analyses of muscle tissues. Syndapin III KO tissues showed no anti-syndapin III immunodetections. Analyses of WT samples showed that syndapin III is enriched at the cav3-positive plasma membranes in sections of skeletal muscles (Figure 1p–r). Colocalization in transversal tissue sections hereby was very high at the plasma membrane (Pearson correlation coefficient 0.55 ± 0.01) and not existing at all in intracellular areas (Pearson correlation coefficient 0.08 ± 0.01), respectively (Figure 1q).
 
-## Syndapin III is crucial for invagination of cav3-coated caveolae
+### Syndapin III is crucial for invagination of cav3-coated caveolae
 
 We next subjected primary cardiomyocytes from hearts of WT and syndapin III KO mice to fixation, thin sectioning and transmission electron microscopy (TEM). Cardiomyocytes from newborn WT pups showed plasma membrane areas with high frequencies of profiles resembling those of caveolae (Figure 2a,a’). In contrast, the plasma membranes of cardiomyocytes from syndapin III KO mice largely lacked deeply invaginated structures (Figure 2b,b’).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig2-v1.jpg)
 
-**Figure 2.:** Syndapin III KO leads to a loss of plasma membrane invaginations with caveolar morphology.(a–b’) TEM of 50 nm sections of chemically fixed primary cardiomyocytes isolated from WT (a,a’) and syndapin III KO mice (b,b’), respectively. Marked are deep membrane invaginations hit by the orientation of the section in a way that they can be recognized as caveolar profiles (black arrows), deep invaginations with (often due to non-perpendicular sectioning) unclear opening (arrows with question marks) and more shallow membrane indentations of unclear nature (arrowheads). Note that syndapin III KO membrane stretches (b,b’) have fewer invaginations. Bars, 100 nm. (c) Quantitative analyses of plasma membrane stretches for the presence and frequency of deeply invaginated profiles with caveolar appearance corresponding to structures in images marked with arrows. Data, mean ± SEM. Statistical significance, two-tailed Student’s t test. WT, eight membrane stretches; KO, 13 membrane stretches from different cells. (d) Immunoblotting analyses of tissue homogenates from WT and syndapin III KO mice with anti-syndapin I antibodies show expression of syndapin I only in the brain but no ectopic expression in heart or skeletal muscles of syndapin III KO mice. 40 µg protein each was loaded per lane. Anti-GAPDH signals served as controls. (e–h) Quantitative western blot analyses of homogenates of hearts (e,f) and skeletal muscles (g,h) from WT and syndapin III KO mice addressing putative changes of syndapin II expression levels. Data, mean ± SEM. n = 12 each. (i) Schematic 3D-view onto a membrane field with caveolae, shallow circular indentations, a longitudinal indentation and orientations of putative random sections (colored) leading to non-representative and often unclear image data calling for views onto wide fields of membrane and 3D-information to ensure more reliable quantitative analyses.10.7554/eLife.29854.007Figure 2—source data 1.Figure 2 (i.e. of Figure 2c,f and h).
+**Figure 2.:** (a–b’) TEM of 50 nm sections of chemically fixed primary cardiomyocytes isolated from WT (a,a’) and syndapin III KO mice (b,b’), respectively. Marked are deep membrane invaginations hit by the orientation of the section in a way that they can be recognized as caveolar profiles (black arrows), deep invaginations with (often due to non-perpendicular sectioning) unclear opening (arrows with question marks) and more shallow membrane indentations of unclear nature (arrowheads). Note that syndapin III KO membrane stretches (b,b’) have fewer invaginations. Bars, 100 nm. (c) Quantitative analyses of plasma membrane stretches for the presence and frequency of deeply invaginated profiles with caveolar appearance corresponding to structures in images marked with arrows. Data, mean ± SEM. Statistical significance, two-tailed Student’s t test. WT, eight membrane stretches; KO, 13 membrane stretches from different cells. (d) Immunoblotting analyses of tissue homogenates from WT and syndapin III KO mice with anti-syndapin I antibodies show expression of syndapin I only in the brain but no ectopic expression in heart or skeletal muscles of syndapin III KO mice. 40 µg protein each was loaded per lane. Anti-GAPDH signals served as controls. (e–h) Quantitative western blot analyses of homogenates of hearts (e,f) and skeletal muscles (g,h) from WT and syndapin III KO mice addressing putative changes of syndapin II expression levels. Data, mean ± SEM. n = 12 each. (i) Schematic 3D-view onto a membrane field with caveolae, shallow circular indentations, a longitudinal indentation and orientations of putative random sections (colored) leading to non-representative and often unclear image data calling for views onto wide fields of membrane and 3D-information to ensure more reliable quantitative analyses.
 
 Quantitative analyses of plasma membrane stretches from these sections suggested that indeed deeply invaginated membrane profiles with caveolar appearance were largely absent from syndapin III KO cardiomyocytes. WT membranes showed about 2 caveolae/µm membrane stretch. Syndapin III KO mice displayed 0.29 caveolae/µm, that is only 15% of WT (Figure 2c).
 
@@ -75,6 +87,22 @@ Immunoblottings with anti-syndapin I antibodies demonstrated that the crucial ro
 Thin sectioning of fixed cells is a standard technique, but we were concerned that several caveats of this classical method may compromise our data. First, lipids cannot be fixed well chemically and caveolae are known to be induced, morphologically changed and/or promoted by chemical fixation (Severs, 1988) shedding doubt on the numbers and caveolar morphologies we obtained using chemically fixed samples. Second, the membrane profiles we observed were not always clearly identifiable as caveolae. Therefore, especially in WT samples, many of them had to be excluded from the quantitation (Figure 2a,a’; question marks). Unambiguous identification of caveolar structures would require 3D-information and immunolabeling. However, even serial sectioning using 50 nm thin sections and 3D-reconstruction would fail to provide reliable 3D-information on 70-nm wide structures. Furthermore, immunolabeling of thin sections is inefficient, as only the section surfaces are accessible for immunodetection. Indeed, even in cases of exceptionally high labeling efficiencies reported, anti-caveolin immunolabeling of sections with caveolae selected for superimposition analyses only reached an average of 2.5 gold particles/caveola (Ludwig et al., 2013). Unlabeled caveolae would severely compromise our quantitative analyses. Third, even if caveolae are efficiently recognized, quantitative analyses of membrane topologies would be restricted to areas defined by the length of a membrane segment multiplied by the thickness of the ultrathin section (50 nm), that is would merely represent 0.05 µm2 area per µm membrane stretch evaluated (Figure 2i, colored lines). Furthermore, we noticed WT plasma membrane stretches without any caveolar profiles, whereas others showed accumulations (Figure 2a,a’). Caveolar frequency thus also largely depends on the random orientation of sections in relation to caveolae-enriched regions (Figure 2i).
 
 In order to i) preserve membrane topologies by rapid freezing, ii) image perpendicular views of large plasma membrane fields, iii) obtain 3D-information and iv) be able to probe wide areas of the plasma membrane with antibodies, we therefore established immunogold labeling protocols for freeze-fractured primary cardiomyocytes. The P-halves of the fractured membranes provide full antibody access to the entire cytosolic membrane surface (P-face). Labeling densities can thus reach high values. This will ensure the identification of most caveolar membrane profiles as caveolae. The cooling rates used exceeded 4000 K/s, that is membrane topologies were preserved within milliseconds, whereas chemical fixation takes minutes, that is >100,000 times longer. TEM analyses of such membranes provided perpendicular views onto large membrane fields and rotation shadowing provided 3D-information (Figure 3a,b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig3-v1.jpg)
+
+**Figure 3.:** (a,b) Details of wide-field TEM images of anti-syndapin III immunogold-labeled P-faces of freeze-fractured plasma membranes of cardiomyocytes (CDMC) from WT (a) and syndapin III KO mice (b). (c) Blinded, quantitative evaluations of the anti-syndapin III labeling distribution on full areas of freeze-fractured membranes. (a–c) WT, 15.8 µm2 from 20 images; KO, 27 µm2 from 20 images (two independent cardiomyocyte preparations each pooled from two animals/genotype). (d-i’) Electron micrographs of coimmunolabeled control surfaces (d,e) and P-faces of WT (h,h’,h’’; for the picture, from which the details in h’ and h’’ were taken, see Figure 3—figure supplement 1) and syndapin III KO cells (i,i’) as well as blinded quantitative evaluations of labeling densities (f,g; n = 20 images each condition) demonstrating the specificity of the labelings at the P-face of WT cardiomyocytes. Syndapin III (15 nm gold, red labels) is present at caveolae highlighted by anti-cav3 labeling (10 nm gold, blue labels). Labelings at caveolae are marked by black arrows, at shallow indentations by grey arrows and at flat membrane areas by grey arrowheads. Bars, 100 nm. For non-color-marked EM micrographs see Figure 3—figure supplement 2. (j) Analyses of the fractions of caveolae-like profiles (deep and shallow) and of non-caveolar invaginations that were either unlabeled or labeled for cav3, syndapin III and both, respectively (n = 92 WT invaginations). (k,l) Blinded quantitative analyses of the relative densities of caveolae (deep, 70 nm in diameter invaginations formally confirmed as caveolae by anti-cav3 labeling) (k), and of shallow indentations (l), which also were anti-cav3-positive. n = 20 images each; in total, 132 cav3-positive structures were scored. (m) Densities of the (rare) non-caveolar invaginations in WT and syndapin III KO cardiomyocytes (due to the low abundance of such structures (n = 8), n.s.). (n–p) Quantitative analyses of anti-cav3 immunogold labels at deep caveolar invaginations (n; highly significantly decreasing in accordance with the reduced density of (cav3-marked) caveolae), in total (o; n.s) and within cav3 cluster ROIs (150 nm in diameter) (p; n.s.) at the plasma membrane of WT and syndapin III KO cardiomyocytes. (j-o) WT, 29.2 µm2 membrane from 20 images; KO, 35.6 µm2 from 20 images (two independent preparations of two animals each). In (p), 107 (KO) and 50 (WT) cav3 cluster ROIs (150 nm diameter,≥4 anti-cav3 immunogold labels) were analyzed. Data, mean ± SEM. Statistical significance, one-way Anova with Tukey’s post-test (f,g) and two-tailed Student’s t test (k–p), respectively. For further characterization of the primary cardiomyocyte cultures in respect of syndapin III, cav1, cav3 localizations and colocalizations and for phenotypical analyses of cav3 vs. cav1-positive cells see Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Syndapin III (15 nm gold) is present at caveolae highlighted by anti-cav3 labeling (10 nm gold) in primary mouse cardiomyocytes. Labelings at caveolae are marked by black arrows, at shallow indentations by grey arrows and at flat membrane areas by grey arrowheads. Boxed areas represent the details shown in Figure 3h’ and h’’. Bar, 200 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Non-color-marked electron micrographs shown in Figure 3h–h’’ and in Figure 3i,i’ showing that syndapin III (15 nm gold) is present at caveolae highlighted by anti-cav3 labeling (10 nm gold) in primary mouse cardiomyocytes. Labelings at caveolae are marked by black arrows, at shallow indentations by grey arrows and at flat membrane areas by grey arrowheads. Bars, 100 nm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Sections of skeletal muscles of WT mice and of syndapin III KO mice (specificity control for anti-syndapin III staining) subjected to immunofluorescence analyses showed no spatial overlap of anti-cav1 and anti-syndapin III immunosignals suggesting that both proteins are expressed in different cell types. The specificity of the anti-syndapin III immunolabeling is proven by absence of the signal in syndapin III KO mice (lower panels). Bars, 100 µm. (b) Electron microscopical examinations of freeze-fractured and double-immunogold-labeled membranes of cells in cardiomyocyte preparations from WT hearts exhibiting either anti-cav1-labeled (10 nm) caveolae or anti-syndapin III-labeled (15 nm) caveolae. Thus, syndapin III specifically associates with cav3-coated caveolae and is not found at cav1-coated caveolae from non-muscle cells. Bars, 100 nm. (c,d) Sections of skeletal muscles (c) and heart (d) of WT mice subjected to immunofluorescence analyses showed no spatial overlap of anti-cav1 and anti-cav3 immunosignals suggesting that both caveolin isoforms are present in muscle tissues but are expressed in different cell types. Bar, 100 µm. (e,f) Electron microscopical examinations of freeze-fractured and double-immunogold-labeled membranes of cells in cardiomyocyte preparations from WT (e) and syndapin III KO hearts (f) exhibiting either anti-cav3-labeled (10 nm) caveolae or anti-cav1-labeled (15 nm) caveolae. Note that cav1-positive caveolae are unaffected (left in e and f), that is invaginated despite syndapin III KO, whereas specifically cav3-positive membranes of myocytes (right in e and f) appear flattened upon syndapin III KO. Bars, 100 nm. Thus, cav1 and cav3 do not occur together and syndapin III is crucial for the invagination of specifically cav3-coated caveolae of the muscle cells present in the primary cell preparation from hearts.
 
 P-faces of freeze-fractured membrane replica from WT and syndapin III KO mice showed specific anti-syndapin III immunogold labeling in WT samples. Specificity controls included incubations of E-faces, unrelated surfaces (ice areas) in the samples and syndapin III KO controls with primary and secondary antibodies evaluated quantitatively (Figure 3a–f).
 
@@ -96,9 +124,17 @@ Taken together, the lack of deep caveolar invaginations in syndapin III KO cardi
 
 Importantly, syndapin III KO specifically resulted in a loss of invaginated cav3-positive caveolae. This specificity for cav3 caveolae coincided with an overlap of syndapin III with cav3 but not with cav1 in immunohistological and EM analyses (Figure 3—figure supplement 3a,b). Likewise, cav3 showed no overlap with cav1 (Figure 3—figure supplement 3c-f). This argued for a differential expression of cav3 and syndapin III in muscle and cav1 in non-muscle cells. Consistently, cav1-coated caveolae found in the primary cell cultures were unaffected by syndapin III KO, that is were invaginated normally (Figure 3—figure supplement 3f). It can therefore be firmly concluded that syndapin III is important specifically for invagination of cav3-coated caveolae found in muscle cells.
 
-## Impairment of caveolar invagination upon syndapin III KO does not lead to dissociation of CAVIN-1 from the plasma membrane and reveals that cav3 and CAVIN-1 are not sufficient for caveolae formation
+### Impairment of caveolar invagination upon syndapin III KO does not lead to dissociation of CAVIN-1 from the plasma membrane and reveals that cav3 and CAVIN-1 are not sufficient for caveolae formation
 
 CAVIN-1 forms a flexible, net-like protein mesh around caveolin complexes (Stoeber et al., 2016) and has been introduced as factor critical for caveolae formation (Hill et al., 2008; Liu and Pilch, 2008; Liu et al., 2008). Thus, we next evaluated whether the striking reduction of caveolar invaginations upon syndapin III KO may just be an indirect effect caused by some loss of CAVIN-1 function. Quantitative western blot analyses, however, demonstrated that the expression levels of CAVIN-1 were unchanged in both hearts and skeletal muscles of syndapin III KO mice (Figure 4a,b). Also, the expression of the other CAVIN proteins (Cheng et al., 2015) as well as that of the non-muscle caveolin, cav1, was unchanged (Figure 4c–f).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig4-v1.jpg)
+
+**Figure 4.:** (a,b) Quantitative western blot analyses of homogenates of hearts and skeletal muscles from WT and syndapin III KO mice showing that the levels of the important cav3 coat component CAVIN-1 are unaffected. (c-f) Quantitative western blot analyses of homogenates of hearts (c,d) and skeletal muscles (e,f) from WT and syndapin III KO mice addressing components suggested to play roles in caveolae formation that may be redundant or related to the critical role of syndapin III in caveolar invagination (normalized to GAPDH). Data, mean ± SEM. N = 12 each genotype. (g,h) Electron micrographs of anti-CAVIN-1 immunogold labeling (green labels) of freeze-fractured cardiomyocytes isolated from WT (g) and syndapin III KO mice (h) (in combination with a low concentration immunolabeling of cav3 (blue labels) to prove that indeed a membrane of a (cav3-positive) cardiomyocyte is examined). Note that CAVIN-1’s membrane association and its ability to form clusters is not impaired in syndapin III KO cells. Examples of clustered labeling of CAVIN-1 at (cav3-positive) deeply invaginated caveolae are marked by black arrows, at shallow indentations by grey arrows and at flat membrane areas by grey arrowheads. For non-color-marked EM micrographs see Figure 4—figure supplement 1. Bars, 100 nm. (i,j) Quantitative analyses of the labeling densities in WT and syndapin III KO samples at the plasma membrane in general (i) and specifically within CAVIN-1 clusters (j). (k,l) Analyses of the density of CAVIN-1 clusters at the plasma membrane (k) and of the percent of clusters without cav3 signal in WT and syndapin III KO cardiomyocytes (l). Data, mean ± SEM. Twenty images each (i–l). Statistical analysis, unpaired Student’s t test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Upper panels, non-color marked electron micrographs of anti-CAVIN-1 immunogold labeling of freeze-fractured cardiomyocytes isolated from WT (left) and syndapin III KO mice (right) (in combination with a low concentration immunolabeling of cav3 (blue) to prove that that indeed a membrane of a (cav3-positive) cardiomyocyte is examined) corresponding to Figure 4g,h. Note that CAVIN-1 membrane association and its ability to form clusters is not impaired in syndapin III KO cells. Lower panels, further example images for WT (left) and syndapin III KO cardiomyocyte preparations immunolabeled for CAVIN-1 and cav3. Examples of clustered labeling of CAVIN-1 at (cav3-positive) deeply invaginated caveolae are marked by black arrows, at shallow indentations by grey arrows and at flat membrane areas by grey arrowheads. Bars, 100 nm.
 
 To additionally firmly rule out that a lack of the important coat component CAVIN-1 at specifically the plasma membrane may cause the caveolar impairments observed, we next quantitatively visualized CAVIN-1 by immunolabeling of freeze-fractured syndapin III KO and WT cardiomyocytes. In WT cardiomyocytes, CAVIN-1 localized to deeply invaginated, shallowly invaginated and flat membrane areas. As expected, anti-CAVIN-1 immunogold signals were colocalized with the signals of anti-cav3 antibodies, which we used at low concentration to formally prove that the plasma membranes analyzed indeed correspond to cardiomyocytes and not to other cell types (Figure 4g; Figure 4—figure supplement 1).
 
@@ -108,19 +144,35 @@ However, quantitative evaluations of our ultra-high-resolution imaging experimen
 
 Taken together, all of our examinations thus strongly suggest that the loss of cav3-caveolae can be specifically attributed to syndapin III loss-of-function. Our observations also unveiled that even a combination of cav3 and CAVIN-1 residing at the plasma membrane is insufficient for caveolar invagination, if syndapin III is lacking.
 
-## Syndapin III shapes liposomes into tubules with caveolar diameters and localizes to the rim of cav3 coats
+### Syndapin III shapes liposomes into tubules with caveolar diameters and localizes to the rim of cav3 coats
 
 To shed light on the mechanisms, by which syndapin III may shape the plasma membrane into caveolar invaginations, two important questions needed to be addressed: Does syndapin III have the ability to generate membrane curvatures that resemble the 70 nm diameters of caveolae? And if so, would syndapin III integrate everywhere into the cav3 coat to control its topology or rather act as a locally restricted curvature-inducer? The first question seemed critical, as in vitro-reconstitutions with liposomes analyzed by negative-staining procedures suggested that a fragment of syndapin III can induce membrane curvatures but the diameters were very invariant (around 110 nm [Bai et al., 2012]), that is they did not fit caveolar diameters. However, our analyses with full-length syndapin III using two different methods of evaluation, freeze-fracture/TEM as well as cryoTEM, showed that syndapin III had mechanistic properties in line with its caveolar localization and function. Both tagged and untagged full-length syndapin III formed tubules with an average diameter of about 80 nm (Figure 5a–e). The observed diameter range of 75–90 nm corresponded very well to the membrane topologies that were immuno-positive for syndapin III in vivo. Cav3-caveolae had diameters of 60–80 nm (Figure 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig5-v1.jpg)
 
-**Figure 5.:** (a–c) Analyses of tubules induced by incubating liposomes with syndapin III (a,b) and GST (c), respectively, by freeze-fracturing/TEM (a) as well as by cryo-TEM (b,c). (d,e) Quantitative analyses of tubule diameter distributions (d) and averages of diameters (e) induced by syndapin III and GST-syndapin III, respectively. Data in (e), mean +SEM. (d,e) n= 50 (GST-syndapin III) and n = 38 (syndapin III) freeze-fractured tubuli. (f) High resolution, 80 kV top view of a deeply invaginated caveolar structure of a WT cardiomyocyte immunolabeled for syndapin III (15 nm gold) and cav3 (10 nm gold). Bar, 50 nm. (g,h) Corresponding 120 kV tomogram images (g) and views from a 3D-reconstruction (h) show that syndapin III is at the edge of the cav3 coat (34 caveolae analyzed; two full 3D-segmentations; invaginated membrane, green; immunogold labels cav3, yellow; syndapin III, red). Bars in f–h), 50 nm.10.7554/eLife.29854.017Figure 5—source data 1.Figure 5 (i.e. of Figure 5d and e).
+**Figure 5.:** (a–c) Analyses of tubules induced by incubating liposomes with syndapin III (a,b) and GST (c), respectively, by freeze-fracturing/TEM (a) as well as by cryo-TEM (b,c). (d,e) Quantitative analyses of tubule diameter distributions (d) and averages of diameters (e) induced by syndapin III and GST-syndapin III, respectively. Data in (e), mean +SEM. (d,e) n= 50 (GST-syndapin III) and n = 38 (syndapin III) freeze-fractured tubuli. (f) High resolution, 80 kV top view of a deeply invaginated caveolar structure of a WT cardiomyocyte immunolabeled for syndapin III (15 nm gold) and cav3 (10 nm gold). Bar, 50 nm. (g,h) Corresponding 120 kV tomogram images (g) and views from a 3D-reconstruction (h) show that syndapin III is at the edge of the cav3 coat (34 caveolae analyzed; two full 3D-segmentations; invaginated membrane, green; immunogold labels cav3, yellow; syndapin III, red). Bars in f–h), 50 nm.
 
 The fact that syndapin III seemed to prefer curvatures that are less than those observed for established cav3 coats suggested that syndapin III may not be an integral part of invaginated cav3 coats but may reside at areas that are about 10 nm wider. EM tomograms and 3D-segmentations of membrane topology in combination with the 3D-detection of immunogold labels indeed demonstrated that syndapin III was not found at the lateral walls or at the bottom of caveolar invaginations but was restricted to areas of membrane curvature transition from the caveolar invagination to the continuum of the plasma membrane (Figure 5f–h; Videos 1 and 2).
 
-## Syndapin III organizes cav3-coated caveolae and cav3-associated lipid domains
+![Video 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-video1.mp4.jpg)
+
+**Video 1.:** Cav3 and syndapin III are indicated by the electron-dense gold particles (anti-syndapin III, 15 nm; anti-cav3, 10 nm). Reconstruction and tomographic sectioning carried out with IMOD software. Bar, 50 nm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/29854/elife-29854-video2.mp4.jpg)
+
+**Video 2.:** Syndapin III is indicated by the red spheres and cav3 is indicated by the yellow spheres. The Pt/C layer of freeze-fractured cardiomyocyte plasma membrane is indicated (green). Segmentation carried out with IMOD software. Bar, 50 nm.
+
+### Syndapin III organizes cav3-coated caveolae and cav3-associated lipid domains
 
 Coprecipitations from heart lysates confirmed that the syndapin III F-BAR-domain interacts with cav3 coats. Interestingly, similar to the caveolin coat component CAVIN-1 showing only weak – if any – interactions with caveolin (Hill et al., 2008; Liu and Pilch, 2008; Mohan et al., 2015), the interactions were rather weak and therefore suggested that syndapin III may not represent a general and integral part of cav3 coats (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig6-v1.jpg)
+
+**Figure 6.:** (a) Coprecipitation of endogenous cav3 from heart lysates with the indicated immobilized GST-fusion proteins of syndapin III. (b,c) GFP-syndapin III F-BAR domain but not GFP clusters with cav3 at the membrane of primary cardiomyocytes. Boxed areas, higher magnification insets. Bars, 10 µm. (d–k) Syndapin III KO changes the biophysical properties of cav3-containing DRMs. Immunoblottings of cav3 and syndapin III (d–g) and proteins representing Golgi (GM130), cytosol (GAPDH), plasma membrane (IRTK) and ER (PDI) (j,k) in TritonX-100-resistant membrane preparations from heart and skeletal muscles from WT (d,e) and syndapin III KO mice (f,g,j,k). Quantitative analyses (h,i) demonstrate the shift of cav3-containing TritonX-100-resistant membranes from fractions F4 +F5 to F6 +F7 in heart (d,f,h) and from F3 +F4 to F5 +F6 in skeletal muscle (e,g,i) upon syndapin III KO. Hearts, n = 3 each genotype; skeletal muscles, n = 9 each genotype. Data, mean ± SEM. Statistical significances, two-way ANOVA and Bonferroni post-test. For individual comparisons of WT and KO fractions see Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a–d) Quantitative comparisons of density gradient fractions of DRMs showing an altered cav3 distribution in syndapin III KO hearts (a,b) and skeletal muscles (c,d) compared to WT. Upon syndapin III KO, cav3 is shifted to fractions of higher density in both heart (b) and skeletal muscle (d). Hearts, n = 3 each genotype; skeletal muscles, n = 9 each genotype. Data represent mean ± SEM. Statistical significance was evaluated using two-tailed Student’s t-test.
 
 However, similar to syndapin II and cav1 in some cell lines (Koch et al., 2012; Senju et al., 2011), overexpression of the F-BAR-domain of syndapin III led to colocalization of endogenous cav3 at F-BAR-enriched sites at the plasma membrane of primary cardiomyocytes (Figure 6b,c). Syndapin III may thus modulate membrane topologies and thereby organize cav3 coats at muscle cell membranes.
 
@@ -130,7 +182,7 @@ Interestingly, cav3 showed an altered distribution upon syndapin III KO (Figure 
 
 Together, these data strongly suggest that syndapin III plays a critical role in organizing caveolar coats and associated lipid environments.
 
-## Dissecting the functions of caveolae from those of cav3
+### Dissecting the functions of caveolae from those of cav3
 
 Caveolin KO analyses suggested that caveolae represent crucial signaling hubs (Hansen and Nichols, 2010). The physiological defects in caveolin-deficient mice may thus in part relate to the observed ERK1/2 hyperactivation rather than to the cellular functions of caveolar invaginations. Furthermore, cav3 KO was reported to impair lipid raft associations of the dystrophin-glycoprotein complex and to result in its loss (Woodman et al., 2002).
 
@@ -138,25 +190,33 @@ We therefore vigorously tested syndapin III KO mice for these phenotypes. Relati
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig7-v1.jpg)
 
-**Figure 7.:** syndapin III KO and may thus not reflect impairments of caveolar invagination.(a,b) Quantitative immunoblot analyses of ERK1/2 and phosphoERK1/2 in heart homogenates of WT and syndapin III KO mice (normalized to WT) show no alteration of MAPK signaling (pERK1/2/ERK1/2 signals). Data represent mean ± SEM; n = 12 each. (c–f) Unchanged subcellular localization of both dystrophin and β-dystroglycan in sections of skeletal muscles from syndapin III KO mice. Bars, 50 µm. (g–j) Levels of dystrophin and β-dystroglycan are unchanged in heart and skeletal muscle homogenates upon syndapin III KO (normalized to WT). Data represent mean ± SEM; n = 12 each.10.7554/eLife.29854.024Figure 7—source data 1.Figure 7 (i.e. of Figure 7b,h and j).
+**Figure 7.:** (a,b) Quantitative immunoblot analyses of ERK1/2 and phosphoERK1/2 in heart homogenates of WT and syndapin III KO mice (normalized to WT) show no alteration of MAPK signaling (pERK1/2/ERK1/2 signals). Data represent mean ± SEM; n = 12 each. (c–f) Unchanged subcellular localization of both dystrophin and β-dystroglycan in sections of skeletal muscles from syndapin III KO mice. Bars, 50 µm. (g–j) Levels of dystrophin and β-dystroglycan are unchanged in heart and skeletal muscle homogenates upon syndapin III KO (normalized to WT). Data represent mean ± SEM; n = 12 each.
 
 Dystrophin impairments were not observed either. No localization defects of dystrophin and β-dystroglycan could be detected in sections of skeletal muscles from syndapin III KO mice (Figure 7c–f). Also dystrophin and β-dystroglycan expression levels were unaltered upon syndapin III KO in both heart and skeletal muscle (Figure 7g–j).
 
-## Syndapin III-mediated caveolar invagination counterpoises mechanical stress and thereby ensures cellular integrity
+### Syndapin III-mediated caveolar invagination counterpoises mechanical stress and thereby ensures cellular integrity
 
 Increases of membrane tension, as mimicked by applying hypoosmotic stress, led to fewer GFP-cav1-coated caveolae in HeLa and MLEC cells (Sinha et al., 2011). Our TEM analyses of freeze-fractured NIH3T3 cells, which we labeled for cav1 (in average 13.9 anti-cav1 labels/caveola (iso)), confirm that the immediate cell response to increased membrane tensions induced by hypoosmotic conditions is a reduction of caveolar invaginations (Figure 8—figure supplement 1a–d). In NIH3T3 cells, cav1 hereby remained at the plasma membrane (Figure 8—figure supplement 1e–h). These data strongly support a role of caveolae as mechanosensors buffering mechanical stress.
 
 The observed counteractions do not just reflect abilities of cav1-expressing transformed, immortal cell lines, such as HeLa, MLEC (Sinha et al., 2011) or NIH3T3 (this study) but primary mouse cardiomyocytes showed a similar behavior. The induced mechanical stress dramatically reduced deeply invaginated, cav3-positive structures (−75%) (Figure 8a–d). Again, the anti-cav3 labeling density at the plasma membrane remained constant upon hypoosmotic flattening of caveolae (Figure 8e). The distribution of cav3 changed in accordance with the flattened membrane topology (Figure 8f–h).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig8-v1.jpg)
+
+**Figure 8.:** (a,b) Anti-cav3-labeled P-faces of freeze-fractured plasma membranes of cardiomyocytes from WT mice incubated for 5 min in isoosmotic (iso) (a) and hypoosmotic conditions (hypo; hypo15 buffer) (b). Bars, 200 nm. (c,d) A dramatic reduction of deeply invaginated caveolar structures was observed upon the induced, cell swelling-mediated rise in membrane tension caused by hypo conditions. (e–h) Quantitation of the anti-cav3 labeling distribution in total and in relations to deeply invaginated, shallow and flat membrane topologies (relative to isoosmotic condition). Data (c–h), mean ± SEM. iso, 148.8 µm2 membrane area from 43 images, 251 caveolar invaginations; hypo, 124.6 µm2 membrane area from 36 images, 66 caveolar invaginations, two independent cardiomyocyte preparations and assays. Statistical significance, two-tailed Student’s t test. For related examinations of caveolar flattening upon induction of membrane tensions in NIH3T3 cells please see Figure 8—figure supplement 1. (i–o) Trypan Blue assays with WT (i–k) and syndapin III KO cardiomyocytes (l–n) subjected to membrane tensions mimicked by mild hypoosmotic stress (5 min hypo30; j,m) and stronger hypoosmotic stress (5 min hypo15; k,n) unveiling a higher vulnerability of syndapin III KO cells under conditions increasing membrane tensions. Note the increased abundancy of Trypan Blue-positive, ruptured cardiomyocytes upon hypoosmotic stress. Bar in n (for i–n), 50 µm. (o) Quantitative data, mean ± SEM of 18 blinded experiments (about 100 cells each assay) from six independent preparations of cardiomyocytes/genotype. One-way Anova with Tukey’s post-test.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (a,b) Electron micrographs of P-faces of freeze-fractured plasma membranes of NIH3T3 cells incubated for 5 min in isoosmotic (iso) (a) and hypoosmotic (hypo) conditions (b) and labeled with anti-cav1 antibodies. Bars, 200 nm. (c–d) Quantitative determinations of caveolae and shallow indentations identified by anti-cav1 immunolabeling. Note that caveolae are reduced upon hypoosmotic stress (c, 56.4% of iso). (e–h) Quantitative assessment of the density of anti-cav1 labeling at the plasma membrane in total (e) and of its distribution in relations to deeply invaginated caveolae (cav1-positive), shallow indentations (cav1-positive) and flat membrane topologies (f–h) relative to isoosmotic conditions. Note that while the total anti-cav1 labeling density at the plasma membrane is equal under both conditions (e), the distribution of cav1 is massively shifted to flat membrane topologies upon hypoosmotic swelling and membrane tension (f–h). Iso, 152.2 µm2 membrane from 44 images; hypo, 145.32 µm2 membrane from 42 images from two independent assays. In total, 1767 cav1-positive invaginations were scored (blinded analyses by an independent experimentator). Data represent mean ± SEM. Statistical significance was evaluated using 2-tailed Student’s t test.
+
 A function of caveolae in buffering mechanical stress leads to the prediction that a lack of invaginated caveolae will render myocytes vulnerable to abrupt changes of membrane tensions. To test this hypothesis experimentally in primary cells, we compared the structural integrity of WT and syndapin III KO cardiomyocytes under such conditions using Trypan Blue (Figure 8i–o). WT cells were able to fully cope with moderate stress (hypo30) and were only moderately affected by stronger hypoosmotic stress (hypo15) (Figure 8i–k,o). In contrast, syndapin III KO cardiomyocytes showed a significantly higher vulnerability under both conditions (Figure 8l–o).
 
-## Severe impairment of caveolar invagination has no obvious cardiac consequences
+### Severe impairment of caveolar invagination has no obvious cardiac consequences
 
 Interestingly, the inability of syndapin III KO mice to invaginate caveolae had no obvious consequences for heart function and integrity. Syndapin III KO mice were viable and heart sections of juvenile mice did not show any hypertrophic cardiac myocytes (Figure 9a–c). Heart weights (data not shown separately) and heart/body weight ratios were unaltered (Figure 9d,e). Left ventricle wall thickness also did not differ from WT (Figure 9f–h)
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig9-v1.jpg)
 
-**Figure 9.:** syndapin III KO in heart tissue has no consequences on cardiac integrity.(a–c) Wheat germ agglutinin stainings of 8 µm cryosections of hearts of 20 weeks old syndapin III KO mice (b) show no signs of cellular damage or alteration of cross-sectional areas of cardiac myocytes when compared to WT (a). Bars, 50 µm. Quantitative data (c) represent mean ± SEM. WT, 273 cells, 6 animals; KO, 378 cells, 7 animals. Statistical significance was tested using two-tailed Student’s t test. p=0.7462 (n.s.). (d,e) Ratios (x1000) of heart and body weights of about 4-month-old female (d) and male (e) mice. WT, eight female and male mice each; KO, seven female and nine male mice. Statistical significance, two-tailed Student’s t test. Female mice, p=0.3132 (n.s.); male mice, p=0.1377 (n.s.). (f–h) H&E stainings of WT and syndapin III KO heart cryosections show no left ventricular wall thickening upon syndapin III KO. Bars, 500 µm. Quantitative data represent mean ± SEM. WT, seven animals; KO, nine animals. Statistical significance, two-tailed Student’s t test. p=0.9451 (n.s.). (i–l) H&E stainings of paraffin sections of aged WT and syndapin III KO myocard (three animals each) display no signs of cellular damage or of necrosis irrespective of whether mice were trained or not. Bar, 50 µm. (m,n) Details of wide-field views of P-faces of freeze-fractured heart tissues double-immunogold labeled for cav3 and syndapin III. Note that, also in heart tissue, the formation of caveolae is impaired upon syndapin III KO. In WT, syndapin III and cav3-immunopositive caveolae are marked (long black arrows; shallow, cav3-positive indentation, short grey arrow). Bar, 100 nm. (o,p) Quantitative determinations of caveolae (o) and of shallow, cav3-positive membrane indentations (p) in WT and syndapin III KO hearts. (q) Quantitative assessment of the anti-cav3 labeling densities at membranes of freeze-fractured syndapin III KO hearts relative to WT (n.s.). (r) Quantitative western blotting of TritonX-100-resistant membrane fractions from WT and syndapin III KO hearts showing unchanged cav3 levels. 25 µg protein loaded each. n = 6 each genotype. (s,t) Quantitative assessment of the cav3 immunolabeling at caveolae (s) and shallow indentations (t). Note that the observed decreases are in accordance with the reduced abundance of these structures (compare s,t) vs. (o,p). (o–q, s,t) WT, 72.7 µm2 membrane from 21 images; KO, 72.7 µm2 membrane from 21 images from two independent cardiomyocyte preparations (from two hearts) each genotype. In total, 107 cav3-positive structures scored. Data, mean ± SEM. Statistical significance, two-tailed Student’s t test.10.7554/eLife.29854.029Figure 9—source data 1.Figure 9 (i.e. of Figure 9c–e,h and o–t).
+**Figure 9.:** (a–c) Wheat germ agglutinin stainings of 8 µm cryosections of hearts of 20 weeks old syndapin III KO mice (b) show no signs of cellular damage or alteration of cross-sectional areas of cardiac myocytes when compared to WT (a). Bars, 50 µm. Quantitative data (c) represent mean ± SEM. WT, 273 cells, 6 animals; KO, 378 cells, 7 animals. Statistical significance was tested using two-tailed Student’s t test. p=0.7462 (n.s.). (d,e) Ratios (x1000) of heart and body weights of about 4-month-old female (d) and male (e) mice. WT, eight female and male mice each; KO, seven female and nine male mice. Statistical significance, two-tailed Student’s t test. Female mice, p=0.3132 (n.s.); male mice, p=0.1377 (n.s.). (f–h) H&E stainings of WT and syndapin III KO heart cryosections show no left ventricular wall thickening upon syndapin III KO. Bars, 500 µm. Quantitative data represent mean ± SEM. WT, seven animals; KO, nine animals. Statistical significance, two-tailed Student’s t test. p=0.9451 (n.s.). (i–l) H&E stainings of paraffin sections of aged WT and syndapin III KO myocard (three animals each) display no signs of cellular damage or of necrosis irrespective of whether mice were trained or not. Bar, 50 µm. (m,n) Details of wide-field views of P-faces of freeze-fractured heart tissues double-immunogold labeled for cav3 and syndapin III. Note that, also in heart tissue, the formation of caveolae is impaired upon syndapin III KO. In WT, syndapin III and cav3-immunopositive caveolae are marked (long black arrows; shallow, cav3-positive indentation, short grey arrow). Bar, 100 nm. (o,p) Quantitative determinations of caveolae (o) and of shallow, cav3-positive membrane indentations (p) in WT and syndapin III KO hearts. (q) Quantitative assessment of the anti-cav3 labeling densities at membranes of freeze-fractured syndapin III KO hearts relative to WT (n.s.). (r) Quantitative western blotting of TritonX-100-resistant membrane fractions from WT and syndapin III KO hearts showing unchanged cav3 levels. 25 µg protein loaded each. n = 6 each genotype. (s,t) Quantitative assessment of the cav3 immunolabeling at caveolae (s) and shallow indentations (t). Note that the observed decreases are in accordance with the reduced abundance of these structures (compare s,t) vs. (o,p). (o–q, s,t) WT, 72.7 µm2 membrane from 21 images; KO, 72.7 µm2 membrane from 21 images from two independent cardiomyocyte preparations (from two hearts) each genotype. In total, 107 cav3-positive structures scored. Data, mean ± SEM. Statistical significance, two-tailed Student’s t test.
 
 Even at >64 weeks of age, sections of syndapin III KO hearts did not show signs of cardiomyocyte hypertrophy or necrosis. Physical exercise-induced necrosis was not detectable either (Figure 9i–l).
 
@@ -168,13 +228,13 @@ Consistent with the observations in dissociated cells, the anti-cav3 labeling de
 
 We thus concluded that the syndapin III KO-mediated impairment of caveolar invagination is not limited to isolated, cultured cells but is also valid in hearts of syndapin III KO mice but not critical for this organ.
 
-## Impairments in caveolar invagination lead to human disease-related skeletal muscle defects
+### Impairments in caveolar invagination lead to human disease-related skeletal muscle defects
 
 LGMD-1C, distal myopathy and RMD are degenerative, skeletal muscle-associated diseases associated with mutations in CAV3 (Gazzerro et al., 2010). Skeletal muscles subjected to freeze-fracturing and immunogold labeling procedures clearly showed that specific anti-syndapin III immunolabeling is present at caveolae of skeletal muscles (Figure 10a; compare Figure 10b). A significant portion of the caveolae found in muscle tissues were immunopositive for syndapin III (Figure 10c). Non-caveolar invaginations were very rare and their density did not show any significant change upon syndapin III KO (Figure 10c,d).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig10-v1.jpg)
 
-**Figure 10.:** Syndapin III KO causes impairments in caveolar invagination in skeletal muscle.(a,b) Double-immunogold labeled, freeze-fractured skeletal muscles of WT and syndapin III KO mice (syndapin III, 15 nm gold; cav3, 10 nm gold) show that caveolar invagination is impaired in tissues of syndapin III KO mice. Bar, 200 nm. (c) Analyses of the fractions of caveolar-like profiles (deep and shallow) and non-caveolar invaginations labeled for cav3, syndapin III and both in freeze-fractured muscles. In total, 291 invaginations from WT skeletal muscles were evaluated. (d) Densities of the (extremely rare) non-caveolar invaginations in WT and syndapin III KO cardiomyocytes (low abundance of such structures, in total only n = 2 (WT) and n = 3 (KO) found; n.s.). (e–j) Colocalization analyses based on confocal images of longitudinal sections of skeletal muscles immunostained for cav3 and syndapin III. (e,f) Example images. Encircled is a ROI for colocalization analyses at puncta (e); (f) shows magnification and (g) shows the corresponding Pearson correlation coefficient (n = 60 ROIs). (h–j) Quantitative analyses of anti-cav3 immunofluorescence signals at the plasma membrane ((h); n = 230 ROIs each genotype in transversal sections), in intracellular volumes ((i); n = 160 ROIs each genotype in transversal sections) and in cav3 puncta ((j); n = 60 each genotype in longitudinal sections). (k) Quantitative immunoblotting of TritonX-100-insoluble material showed no differences in cav3 and cav1 levels upon syndapin III KO. 25 µg protein loaded each. WT, 12 animals; KO, 12 animals. (l) Quantitative analyses of immunogold-labeled, freeze-fractured skeletal muscle fibers showing no difference in anti-cav3 labeling density between WT and syndapin III KO muscles at the plasma membrane. (m,n) Example of 3D surface rendering (using IMARIS) of confocal image stacks of the anti-cav3 immunolabeling shown in overview (e) for determination of the frequency of syndapin III-positive cav3 puncta. Yellow spheres, syndapin III-positive; white spheres, syndapin III-negative cav3 3D surface rendered puncta. (n) Quantitative analyses of the frequencies of spatial overlap of syndapin III with cav3 at the level of light microscopy (14 ROIs). (o,p) Quantitation of the densities of deep caveolae and shallow indentations in electron micrographs of freeze-fractured skeletal muscles show severe impairments of caveolar invagination in vivo. (q,r) The relative density (WT = 100%) of the anti-cav3 labeling associated with invaginated, caveolar membrane topologies of syndapin III KO muscle membranes changes in accordance with the reduced densities of invaginated caveolar structures. WT, 128 µm2 membrane from 37 images; KO, 69.2 µm2 membrane from 20 images from two muscle preparations. In total, 400 cav3-positive structures scored. (s,t) Analyses of the density of cav3 clusters at the plasma membrane of freeze-fractured skeletal muscle fibers (s) and of the anti-cav3 immunogold labeling density in cluster ROIs (t). Analyses in (s) were done by image and expressed as clusters/µm2 (Nassoy and Lamaze, 2012). n = 20 images each genotype. (t) n = 377 ROIs (WT) and 148 ROIs (KO). Data, mean ± SEM. Statistical significance, two-tailed Student’s t-test.10.7554/eLife.29854.031Figure 10—source data 1.Figure 10 (i.e. of Figure 10c,d,g-l and n-t).
+**Figure 10.:** (a,b) Double-immunogold labeled, freeze-fractured skeletal muscles of WT and syndapin III KO mice (syndapin III, 15 nm gold; cav3, 10 nm gold) show that caveolar invagination is impaired in tissues of syndapin III KO mice. Bar, 200 nm. (c) Analyses of the fractions of caveolar-like profiles (deep and shallow) and non-caveolar invaginations labeled for cav3, syndapin III and both in freeze-fractured muscles. In total, 291 invaginations from WT skeletal muscles were evaluated. (d) Densities of the (extremely rare) non-caveolar invaginations in WT and syndapin III KO cardiomyocytes (low abundance of such structures, in total only n = 2 (WT) and n = 3 (KO) found; n.s.). (e–j) Colocalization analyses based on confocal images of longitudinal sections of skeletal muscles immunostained for cav3 and syndapin III. (e,f) Example images. Encircled is a ROI for colocalization analyses at puncta (e); (f) shows magnification and (g) shows the corresponding Pearson correlation coefficient (n = 60 ROIs). (h–j) Quantitative analyses of anti-cav3 immunofluorescence signals at the plasma membrane ((h); n = 230 ROIs each genotype in transversal sections), in intracellular volumes ((i); n = 160 ROIs each genotype in transversal sections) and in cav3 puncta ((j); n = 60 each genotype in longitudinal sections). (k) Quantitative immunoblotting of TritonX-100-insoluble material showed no differences in cav3 and cav1 levels upon syndapin III KO. 25 µg protein loaded each. WT, 12 animals; KO, 12 animals. (l) Quantitative analyses of immunogold-labeled, freeze-fractured skeletal muscle fibers showing no difference in anti-cav3 labeling density between WT and syndapin III KO muscles at the plasma membrane. (m,n) Example of 3D surface rendering (using IMARIS) of confocal image stacks of the anti-cav3 immunolabeling shown in overview (e) for determination of the frequency of syndapin III-positive cav3 puncta. Yellow spheres, syndapin III-positive; white spheres, syndapin III-negative cav3 3D surface rendered puncta. (n) Quantitative analyses of the frequencies of spatial overlap of syndapin III with cav3 at the level of light microscopy (14 ROIs). (o,p) Quantitation of the densities of deep caveolae and shallow indentations in electron micrographs of freeze-fractured skeletal muscles show severe impairments of caveolar invagination in vivo. (q,r) The relative density (WT = 100%) of the anti-cav3 labeling associated with invaginated, caveolar membrane topologies of syndapin III KO muscle membranes changes in accordance with the reduced densities of invaginated caveolar structures. WT, 128 µm2 membrane from 37 images; KO, 69.2 µm2 membrane from 20 images from two muscle preparations. In total, 400 cav3-positive structures scored. (s,t) Analyses of the density of cav3 clusters at the plasma membrane of freeze-fractured skeletal muscle fibers (s) and of the anti-cav3 immunogold labeling density in cluster ROIs (t). Analyses in (s) were done by image and expressed as clusters/µm2 (Nassoy and Lamaze, 2012). n = 20 images each genotype. (t) n = 377 ROIs (WT) and 148 ROIs (KO). Data, mean ± SEM. Statistical significance, two-tailed Student’s t-test.
 
 The presence of syndapin III at caveolae was corroborated by confocal microscopy analyses of longitudinal sections of skeletal muscle. Syndapin III clearly colocalized with cav3 puncta of different sizes and the Pearson correlation coefficient was clearly positive (Figure 10e–g).
 
@@ -190,7 +250,7 @@ Surprisingly, despite a relatively severe loss of deeply invaginated caveolae up
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/29854/elife-29854-fig11-v1.jpg)
 
-**Figure 11.:** Syndapin III KO leads to skeletal muscle phenotypes reminiscent of clinical symptoms found in patients with myopathies associated with CAV3 mutation.(a–f) Histological examinations of cryosections of musculus gastrocnemius from >64 weeks old WT and syndapin III KO mice (three animals each). Whereas no clear signs of cellular damage or disintegration were observed by H&E staining under untrained conditions (a,b), syndapin III KO mice displayed a higher frequency of detached nuclei upon training (c), arrows). (e,f) Acidic phosphatase stainings clearly demonstrate necrotic events (asterisks in c) and e). Bars, 50 µm. (g,h) Quantitative evaluations of the frequency of detached nuclei. (i,j) Percental distribution of fiber cross sectional areas (in 50 µm2 intervals) in WT and syndapin III KO muscles. Arrows highlight areas of the caliber spectra with striking differences (black, more frequent in syndapin III KO; grey, more frequent in WT). (k,l) Quantitation of the mean cross sectional areas of muscle fibers in trained and untrained mice of both genotypes. N-numbers (g–l), untrained WT, 849; untrained KO, 952; trained WT, 949; trained KO, 1244 fibers. Data, mean (i,j); error bars omitted for clarity) and mean ± SEM (g,h,k,l), respectively. Statistical significance, 2-tailed Student’s t-test.
+**Figure 11.:** (a–f) Histological examinations of cryosections of musculus gastrocnemius from >64 weeks old WT and syndapin III KO mice (three animals each). Whereas no clear signs of cellular damage or disintegration were observed by H&E staining under untrained conditions (a,b), syndapin III KO mice displayed a higher frequency of detached nuclei upon training (c), arrows). (e,f) Acidic phosphatase stainings clearly demonstrate necrotic events (asterisks in c) and e). Bars, 50 µm. (g,h) Quantitative evaluations of the frequency of detached nuclei. (i,j) Percental distribution of fiber cross sectional areas (in 50 µm2 intervals) in WT and syndapin III KO muscles. Arrows highlight areas of the caliber spectra with striking differences (black, more frequent in syndapin III KO; grey, more frequent in WT). (k,l) Quantitation of the mean cross sectional areas of muscle fibers in trained and untrained mice of both genotypes. N-numbers (g–l), untrained WT, 849; untrained KO, 952; trained WT, 949; trained KO, 1244 fibers. Data, mean (i,j); error bars omitted for clarity) and mean ± SEM (g,h,k,l), respectively. Statistical significance, 2-tailed Student’s t-test.
 
 H&E staining of sections of WT and syndapin III KO muscle fibers, however, revealed a sign of necrosis in one section from syndapin III KO muscles (our unpublished data). This minor indication for muscular defects in syndapin III KO mice and the fact that also some of the human CAV3-associated myopathies show relatively mild symptoms and late onset (Gazzerro et al., 2010), respectively, prompted us to next subject aged mice to physical exercises. Strikingly, we observed genotype-dependent signs of muscle damage. H&E stainings of musculus gastrocnemius cryosections from syndapin III KO mice subjected to physical exercise showed necrotic fibers invaded by immune cells as well as inflammation secondary to degeneration (Figure 11c–f; asterisk in Figure 11c). Acidic phosphatase analyses highlighting the lysosomal activity of immune cells proved that necrotic events occur in muscles of trained syndapin III KO mice (Figure 11e; asterisks). In contrast, irrespective of whether mice were trained or not, WT muscles did not display a single case of necrosis (Figure 11b,d,f).
 
@@ -224,7 +284,570 @@ Taken together, it seems that muscular caveolar invaginations are largely dispen
 
 ## Materials and methods
 
-## Generation of syndapin III KO mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (mouse and rat)</td>
+      <td>PACSIN3/syndapin III</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Labs (Bar Harbor, Maine)</td>
+      <td>IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>129/SvJ mouse genomic λ library</td>
+      <td>Stratagene (San Diego, California)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH3T3</td>
+      <td>Cell Lines Services GmbH (Eppelheim, Germany)</td>
+      <td>CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>Cell Lines Services GmbH</td>
+      <td>CVCL0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (rat)</td>
+      <td>GFP-syndapin III F-BAR (aa 1–336; extended F-BAR)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Syndapin III aa1-70 peptide (plus five unrelated aa encoded by exon5/6 deletion-induced frame shift and multiple stop codons)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>guinea pig anti-syndapin I, rabbit anti-syndapin II, rabbit anti-syndapin III, anti-GST</td>
+      <td>Koch et al. (2011), EMBO J 30:4955–4969., Qualmann et al. (1999), Mol Biol Cell 10:501–513. Koch et al. (2012), Histochem Cell Biol 138: 215-230., Qualmann and Kelly (2000), J Cell Biol 148:1047–1062</td>
+      <td></td>
+      <td>anti-syndapin I, II, III 1:1000 (western blot); 1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-GAPDH (polyclonal)</td>
+      <td>Santa Cruz (Dallas, Texas)</td>
+      <td>sc48167 AB_1563046</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-cav3 (monoclonal )</td>
+      <td>Santa Cruz</td>
+      <td>sc-5310, AB_626814</td>
+      <td>1:500 (western blot), 1:50 (IHC), 1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-cav3 (polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-7665 AB_637945</td>
+      <td>1:500 (western blot), 1:50 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-cav1 (monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-53564, AB_628859</td>
+      <td>1:500 (western blot), 1:50 (IHC), 1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-cav1 (polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-894 AB_2072042</td>
+      <td>1:1000 (western blot), 1:200 (IHC), 1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-IRTK (polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-710, AB_631106</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-CAVIN-1 (monoclonal)</td>
+      <td>BD Bioscience (Franklin Lakes, New Jersey)</td>
+      <td>611258, AB_398788</td>
+      <td>1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-PDI (monoclonal)</td>
+      <td>Stressgene (Farmingdale, New York)</td>
+      <td>ADI-SPA-891, AB_10615355</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-β-actin (monoclonal)</td>
+      <td>Sigma</td>
+      <td>A5441, AB_476744</td>
+      <td>1:5000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-β-tubulin (monoclonal)</td>
+      <td>Sigma</td>
+      <td>T4026, AB_477577</td>
+      <td>1:1500 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-CAVIN-1 (polyclonal)</td>
+      <td>Proteintech (Rosemont, Illinois)</td>
+      <td>18892–1-AP,AB_10596795</td>
+      <td>1:1000 (western blot), 1:100 (IHC), 1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-CAVIN-3 (polyclonal)</td>
+      <td>Proteintech</td>
+      <td>16250–1-AP AB_2171894</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-CAVIN-2 (polyclonal)</td>
+      <td>R &amp; D Systems (Minneapolis, Minnesota)</td>
+      <td>AF5759AB_2269901</td>
+      <td>1:200 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-CAVIN-4 (polyclonal)</td>
+      <td>Sigma</td>
+      <td>HPA020987AB_1853080</td>
+      <td>1:400 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-β-dystroglycan (monoclonal)</td>
+      <td>Leica Biosystems (Wetzlar, Germany)</td>
+      <td>NCL-b-DG,AB_442043</td>
+      <td>1:1000 (western blot); 1:200 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-dystrophin (monoclonal)</td>
+      <td>Leica Biosystems</td>
+      <td>NCL-DYS1,AB_442080</td>
+      <td>1:200 (western blot); 1:50 (IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GM130 (monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610822AB_398141</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-β-catenin (monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610153, AB_397554</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-ERK1/2 (monoclonal)</td>
+      <td>Cell Signalling (Danvers, Massachusetts)</td>
+      <td>#9107AB_2235073</td>
+      <td>1:5000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-pERK1/2 (monoclonal)</td>
+      <td>Cell Signalling</td>
+      <td>#9106, AB_331768</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GFP (monoclonal)</td>
+      <td>Clontech (Mountain View, California)</td>
+      <td>632380,AB_10013427</td>
+      <td>1:8000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Cherry(polyclonal)</td>
+      <td>Abcam (Cambridge, UK)</td>
+      <td>ab167453AB_2571870</td>
+      <td>1:1000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor555-labeled wheat germ agglutinin (WGA)</td>
+      <td>Molecular Probes (Eugene, Oregon)</td>
+      <td>W32464</td>
+      <td>1:2000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor488-labeled wheat germ agglutinin (WGA)</td>
+      <td>Molecular Probes</td>
+      <td>W11261</td>
+      <td>1:2000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor488-labeled goat anti-guinea pig</td>
+      <td>Molecular Probes</td>
+      <td>AB_142018</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor568-labeled goat anti-guinea pig</td>
+      <td>Molecular Probes</td>
+      <td>AB_141954</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor488-labeled donkey anti-mouse</td>
+      <td>Molecular Probes</td>
+      <td>AB_141607</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor568-labeled donkey anti-mouse</td>
+      <td>Molecular Probes</td>
+      <td>AB_2534013</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor647-labeled goat anti-mouse</td>
+      <td>Molecular Probes</td>
+      <td>AB_141725</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor488-labeled donkey anti-rabbit</td>
+      <td>Molecular Probes</td>
+      <td>AB_141708</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor568-labeled goat anti-rabbit antibodies</td>
+      <td>Molecular Probes</td>
+      <td>AB_143011</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor647-labeled goat anti-rabbit antibodies</td>
+      <td>Molecular Probes</td>
+      <td>AB_141775</td>
+      <td>1:1000 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor680-labeled donkey-anti-goat</td>
+      <td>Molecular Probes</td>
+      <td>AB_141494</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor680-labeled goat-anti-rabbit</td>
+      <td>Molecular Probes</td>
+      <td>AB_2535758</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor680-labeled goat-anti-mouse</td>
+      <td>Molecular Probes</td>
+      <td>AB_1965956</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-rabbit-peroxidase</td>
+      <td>Dianova (Hamburg, Germany)</td>
+      <td>AB_2337945</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-guinea pig-peroxidase</td>
+      <td>Dianova</td>
+      <td>AB_2337405</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse-peroxidase</td>
+      <td>Dianova</td>
+      <td>AB_2338523</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight800-conjugated goat anti-rabbit</td>
+      <td>Pierce/Thermo (Waltham, Massachusetts)</td>
+      <td>AB_2556775</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight800-conjugated goat anti-mouse</td>
+      <td>Pierce</td>
+      <td>AB_2556774</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDy 800CW-conjugated donkey anti-goat</td>
+      <td>BioTrend (Köln, Germany)</td>
+      <td>AB_220102</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea pig antibodies coupled to IRDye680</td>
+      <td>LI-COR Bioscience (Lincoln, Nebraska)</td>
+      <td>AB_10956079</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-guinea pig antibodies coupled to IRDye800</td>
+      <td>LI-COR Bioscience</td>
+      <td>AB_1850024</td>
+      <td>1:10000 (western blot)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gold-labeled goat anti-rabbit (10 nm)</td>
+      <td>British Biocell International (Cardiff, UK)</td>
+      <td>AB_1769130</td>
+      <td>1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gold-labeled goat anti-rabbit (15 nm)</td>
+      <td>British Biocell International</td>
+      <td>AB_1769134</td>
+      <td>1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gold-labeled goat anti-mouse (10 nm)</td>
+      <td>British Biocell International</td>
+      <td>AB_1769156</td>
+      <td>1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>gold-labeled goat anti-mouse (15 nm)</td>
+      <td>British Biocell International</td>
+      <td>AB_2715551</td>
+      <td>1:50 (FRIL)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rat syndapin III full length (aa 1–424) in pGEX-5X1 (plasmid)</td>
+      <td>Braun et al. (2005) Mol Biol Cell, 16:3642–3658.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rat syndapin III F-BAR (aa 1–336; extended F-BAR) in pGEX-5X1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rat syndapin III ∆F-BAR (aa 336–424) in pGEX-5X1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rat syndpin III SH3 (aa 366–424) in pGEX-5X1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rat syndapin III ∆SH3 (aa 1–365) in pGEX-5X1 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-rat syndapin III F-BAR (aa 1–336; extended F-BAR) in pEGFP-C2 (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mouse syndapin III aa1-70 peptide (plus five unrelated aa encoded by exon5/6 deletion-induced frame shift and multiple stop codons) plasmids including pGEM-T, mCherry-pCMV-Tag2b, pEGFP-C2 and pGEX-5X-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat GST-syndapin III full length (aa 1–424) and rat syndapin III full-length (untagged)</td>
+      <td>Braun et al. (2005) Mol Biol Cell 16:3642–3658 (for plasmid and (uncut) GST-fusion protein)</td>
+      <td></td>
+      <td>Untagged syndapin III was obtained from GST-syndapin III upon cleavage of the GST tag with 6 U precission protease/mg protein and overnight dialysis against 20 mM HEPES, 150 mM NaCl, 2 mM EDTA und 2.5 mM DTT pH 7.4 at 4°C.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat GST-syndapin III F-BAR (GST+Sdp III aa 1–336; extended F-BAR)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat GST-syndapin III ∆F-BAR (GST+Sdp III aa 336–424)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat GST-syndapin III SH3 (GST+SdpIII aa 366–424)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rat GST-syndapin III ∆SH3 (GST+Sdp III aa 1–365)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin Plasmid</td>
+      <td>Macherey-Nagel (Düren, Germany)</td>
+      <td>740.588.250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoBond Xtra Midi</td>
+      <td>Macherey-Nagel</td>
+      <td>740.410.100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rediprime II Random Prime Labelling System</td>
+      <td>GE Healthcare (Chicago, Illinois)</td>
+      <td>#RPN1633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>α P32 dCTP</td>
+      <td>GE Healthcare (Chicago, Illinois)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>AxioVision 4.8.2</td>
+      <td>Zeiss (Oberkochen, Germany)</td>
+      <td>SCR_002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ZEN 2012</td>
+      <td>Zeiss</td>
+      <td>SCR_013672</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism6</td>
+      <td>GraphPad (La Jolla, California)</td>
+      <td>SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>imageJ</td>
+      <td>other</td>
+      <td>SCR_003070</td>
+      <td>open source software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD package</td>
+      <td>Kremer et al. (1996) Journal of Structural Biology, 116, 71–76</td>
+      <td>SCR_003297</td>
+      <td>open source software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMARIS 8.4</td>
+      <td>Bitplane (Zürich, Switzerland)</td>
+      <td>SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:10000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of syndapin III KO mice
 
 The targeting vector was constructed using a clone isolated from a 129/SvJ mouse genomic λ library (Stratagene). An BamHI/blunt/HindIII fragment of approximately 2.6 kbp of this clone including exons 1–2 of the syndapin III gene was combined with a PCR-generated, approximately 4 kbp large HindIII/SnaBI fragment including exons 3–11 and cloned into the pKO‐DTA plasmid (Lexicon Genetics) containing a phosphoglycerate kinase (pgk) promoter‐driven diphtheria toxin A cassette.
 
@@ -242,7 +865,7 @@ Animals were housed under 14 hr light/10 hr dark conditions with ad libitum acce
 
 Trained mice (age matched WT and syndapin III KO male mice with a C57BL/6J background of >93.7%) received 10 running sessions at a speed of 20 cm/s (1 hr per mouse and per week) prior to histological examination of muscle integrity.
 
-## Antibodies
+### Antibodies
 
 Anti-syndapin III, anti-syndapin II, anti-syndapin I and anti-GST antibodies and their affinity purification were described previously (Koch et al., 2011; Koch et al., 2012; Qualmann and Kelly, 2000; Qualmann et al., 1999). Polyclonal goat anti-GAPDH antibodies (sc48167), monoclonal mouse and polyclonal goat anti-cav3 (sc-5310; sc-7665), monoclonal mouse and polyclonal rabbit anti-cav1 (sc-53564; sc-894) as well as polyclonal rabbit anti-IRTK antibodies (sc-710) were from SantaCruz. Anti-CAVIN-1 antibodies (611258) were from BD Bioscience. Monoclonal anti-PDI antibodies (ADI-SPA-891) were from Stressgene. Monoclonal mouse anti-β-actin (A5441) and anti-β-tubulin (T4026) antibodies were from Sigma. Polyclonal rabbit anti-CAVIN-1 and 3 antibodies (18892–1-AP; 16250–1-AP) were from Proteintech, polyclonal goat anti-CAVIN-2 antibodies (AF5759) were from R&D Systems and polyclonal rabbit anti-CAVIN-4 antibodies (HPA020987) were from Sigma. Monoclonal mouse anti-β-dystroglycan and anti-dystrophin antibodies were from Leica (NCL-b-DG; NCL-DYS1). Monoclonal anti-GM130 and anti-β-catenin antibodies were from BD Biosciences (610822; 610153). Monoclonal mouse anti-ERK1/2 and anti-pERK1/2 (#9107; #9106) were from Cell Signaling. Monoclonal mouse anti-GFP (632380) and polyclonal anti-mCherry antibodies (ab167453) were from Clontech and Abcam, respectively.
 
@@ -250,7 +873,7 @@ Alexa Fluor®555- and Alexa Fluor 488-labeled wheat germ agglutinin (WGA) was pu
 
 Gold-labeled goat anti-rabbit (10 nm and 15 nm) and goat anti-mouse (10 nm and 15 nm) secondary antibodies were from British Biocell International.
 
-## Plasmids and recombinant fusion proteins
+### Plasmids and recombinant fusion proteins
 
 Syndapin III full length (aa 1–424) was cloned from a rat cDNA library and inserted into pGEX-5X1 as described previously (Braun et al., 2005). Syndapin III F-BAR (aa 1–336; extended F-BAR), ∆F-BAR (aa 336–424), SH3 (aa 366–424) and ∆SH3 (aa 1–365) were generated by PCR with appropriate primers and GST-syndapin III as template and were cloned into pGEX vectors. All PCR-generated constructs were sequenced to verify that their sequences were correct.
 
@@ -262,7 +885,7 @@ Plasma-membrane-targeted fluorescent proteins were described previously (Schneid
 
 Syndapin III1-70 peptide (plus five unrelated aa encoded by exon5/6 deletion-induced frame shift and multiple stop codons) was generated by PCR and cloning into pGEM-T (Promega). The construct was subcloned (EcoRI/SalI) into mCherry-pCMV-Tag2b, pEGFP-C2 and pGEX-5X1, respectively.
 
-## Morphological analysis of cardiac myocyte cross-sections and ventricular wall thickness
+### Morphological analysis of cardiac myocyte cross-sections and ventricular wall thickness
 
 To analyze cardiac myocyte cross-sections, 20 weeks old WT and syndapin III KO mice were killed by cervical dislocation. Beginning at 1000 µm from the apex, hearts were cut in 8 µm thick slices using a cryostat (CM3050S Leica Biosystems).
 
@@ -270,7 +893,7 @@ Cardiomyocytes lining the left ventricle from at least two sections per animal w
 
 Left ventricular wall thickness was determined using cardiac cryosections from 20 weeks old mice stained with H&E that were imaged by using a EC Plan-Neofluar 5x/0.16 objective (microscope and camera as above). Pictures were taken as tiles with 20% overlap. Based on a stitched image (ZEN 2012 software (Zeiss)), the wall thickness was calculated as half the difference of the outer and inner diameter of the left ventricle using the ZEN 2012 software (Zeiss).
 
-## Immunofluorescence analyses of heart and skeletal muscle sections
+### Immunofluorescence analyses of heart and skeletal muscle sections
 
 Heart and musculus quadriceps and gastrocnemius samples, respectively, were from 12 to 15 weeks old WT and syndapin III KO mice. After processing for cryosectioning 20 µm thick transversal and 40 µm thick longitudinal sections were blocked with 5% goat serum in 0.1 M phosphate buffer (pH 7.4) and 0.25% Triton X-100 for 1 hr and incubated with primary antibodies in the above buffer at 4°C for 12 hr. Secondary antibodies were applied for 2 hr. Subsequent to DAPI staining, sections were embedded in Fluoromount-G.
 
@@ -280,13 +903,13 @@ Quantitative analyses of anti-cav3 intensities were done with ImageJ. Rectangula
 
 3D surface rendering of anti-cav3 immunolabeling was done using IMARIS 8.4 (Bitplane). ROIs (14 in total, 2 per image) were defined in an unbiased manner using the anti-cav3 channel in confocal image stacks of longitudinal muscle cryosections. Cav3 spots were generated with a defined diameter of 0.5 µm. The generated spheres were then filtered for syndapin III presence or absence (expressed as percent of all cav3 spots (averaged per image) for quantitative analyses) and color-coded (for visual presentation).
 
-## Muscle pathology examinations
+### Muscle pathology examinations
 
 Mice were killed by cervical dislocation. 7 × 7 mm biopsies from musculus gastrocnemius were cryoconserved and 4% PFA-fixed/paraffin-embedded, respectively. Cryosections (10 µm) were used for H&E, trichrome, sudan black, periodic acid–Schiff, ATPase (pH 4.2, 4.6, 9.4), acidic phosphatase, succinate dehydrogenase, cytochrome oxidase, NADH-tetrazolium reductase, myoadenylate deaminase, phosphofructokinase, ATPase, iron and lactate dehydrogenase stainings. Paraffin sections (4 µm) were used for H&E, Congo Red, periodic acid–Schiff and Elastic van Gieson (EvG) stainings according to standard procedures.
 
 Images were taken with a Zeiss Observer Z.1, a 20x/0.5 objective and AxioVision 4.8.2 software. Analyses of the percent of detached nuclei and of the caliber spectra were conducted using H&E stainings. Caliber spectra were done with ImageJ and the select wand and freehand selection tools to mark muscle fibers.
 
-## Osmotic stress assay, transfection and immunofluorescence analyses of cardiomyocytes
+### Osmotic stress assay, transfection and immunofluorescence analyses of cardiomyocytes
 
 Cardiomyocytes were prepared, transfected with lipofectamine and subjected to immunofluorescence analysis as described (Lygren et al., 2007; Schwintzer et al., 2011).
 
@@ -294,13 +917,13 @@ Cardiomyocytes from WT and syndapin III KO mice were subjected to iso buffer (20
 
 In further assays, cardiomyocytesc from WT and syndapin III KO mice were subjected to iso conditions and to hypo30- and hypo15-induced mild and stronger membrane tension stress and were stained with Trypan Blue. Ruptured cells were counted systematically in a blinded study (about 100 cells/assay; 18 assays).
 
-## Cell culture and immunofluorescence analyses of cell lines
+### Cell culture and immunofluorescence analyses of cell lines
 
 Culturing of NIH3T3 cells and HEK293 cells (Cell Lines Services GmbH) was essentially done as described (Kessels et al., 2001). All cell lines are regularly tested for mycoplasma and were mycoplasma-negative. Transfections were done using TurboFect according to the instructions of the supplier (Thermo Scientific).
 
 Fluorescence microscopy of NIH3T3 cells fixed 24 hr after transfection (4% PFA for 7 min) was done using a Zeiss AxioObserver.Z1 microscope equipped with an ApoTome2 and Plan-Apochromat 63x/1.4 and 40x/1.3 objectives and an AxioCam MRm CCD camera (Zeiss). Digital images were recorded by ZEN2012 software and image processing was done using Adobe Photoshop.
 
-## Biochemical analyses
+### Biochemical analyses
 
 Tissue homogenizations and quantitative immunoblotting were essentially performed as described (Schwintzer et al., 2011).
 
@@ -316,7 +939,7 @@ Fractionations addressing the membrane association of GFP, GFP-syndapin III F-BA
 
 For coprecipitation analyses, heart homogenates in lysis buffer II were centrifuged at 100000 x g at 4°C for 30 min. Membrane-containing pellets were solubilized by 1% TritonX-100 in PBS, incubated 30 min at RT and centrifuged (20 min, 17000 x g, 4°C). Supernatants were transferred to agarose-coupled GST-fusion proteins and after 3 hr at 4°C the samples were washed, eluted with SDS sample buffer and immunoblotted.
 
-## Protein/liposome binding assays and EM analyses of liposomes
+### Protein/liposome binding assays and EM analyses of liposomes
 
 Freeze fracturing of liposomes incubated with proteins (2 µM) was done as described (Beetz et al., 2013). Cryo-TEM of liposomes coated with GST-syndapin III and syndapin III and of control incubations was performed on holey carbon film-covered copper grids. Liquid ethane-frozen samples (~−180°C) were transferred into a pre-cooled cryo-transmission electron microscope operated at 120 kV (Philips CM 120) using a cryo-transfer unit (Gatan 626-DH). Images were recorded with a 1K CCD Camera (FastScan F114, TVIPS).
 
@@ -324,28 +947,28 @@ Freeze-fracture replica were viewed using a Zeiss EM 902A transmission electron 
 
 Tubule diameters were analyzed using ImageJ. For diameter distribution analyses, measured diameters were grouped in 5 nm-step categories (0–5 nm,>5 to 10 nm,>10 to 15 nm and so on).
 
-## Cardiomyocyte fixation, sectioning and processing for EM analyses
+### Cardiomyocyte fixation, sectioning and processing for EM analyses
 
 Primary cardiomyocytes isolated from WT and syndapin III KO mice were fixed by adding 2.5% glutaraldehyde in 0.1 M cacodylate buffer. After 1 hr, the cells were collected by centrifugation at 600 x g and washed 3x with PBS. After post-fixation in 1% osmiumtetroxide for 1 hr, dehydration in ascending ethanol series with post-staining in uranylacetate was performed. The samples were embedded in epoxy resin (Araldite) and finally sectioned ultrathin using a LKB Ultratome III (LKB). After mounting on coated copper grids and post-staining with lead citrate for 10 min, the sections were examined in a TEM (EM 902A, Zeiss) at 80 kV. Images were recorded digitally using an 1 k FastScan-CCD-camera (TVIPS camera and software). Plasma membrane sections of about 2 µm length each were analyzed for the presence or absence of caveolar membrane profiles. Data were expressed as caveolae/length of membrane stretch. Images were processed using Adobe Photoshop software.
 
-## Freeze-fracturing of cardiomyocytes, of NIH3T3 cells and of heart and skeletal muscle tissues
+### Freeze-fracturing of cardiomyocytes, of NIH3T3 cells and of heart and skeletal muscle tissues
 
 Freeze-fracturing of NIH3T3 cells and primary cardiomyocytes was essentially done as described (Koch et al., 2012; Schneider et al., 2014).
 
 To obtain freeze-fracture replica directly from skeletal muscles and hearts, heart and musculus gastrocnemius were isolated and cut longitudinal in 300 μm-thick slices using a McIlwain Tissue Chopper. Sections were transferred into PBS and frozen in 20% (w/v) BSA between a copper head sandwich profile. Copper sandwiches were freeze-fractured, shadowed with carbon and platinum/carbon, and incubated in 0.2% collagenase II in DMEM at 37°C overnight. After washing, replica were incubated in 5% (w/v) SDS and 30 mM sucrose in 10 mM Tris/HCl, pH 8.4 overnight.
 
-## Immunolabeling and TEM of freeze-fractured plasma membranes
+### Immunolabeling and TEM of freeze-fractured plasma membranes
 
 Replica were immunolabeled and analyzed by TEM as described (Schneider et al., 2014). Quantitative evaluations were performed by an independent experimentator and in a blinded manner using samples from several independent freeze-fracturing experiments. Cav1, cav3, CAVIN-1 and syndapin III labeling densities were determined per 3.47 µm2 image and analyzable ROI, respectively, and expressed as % of the corresponding WT and isoosmotic condition, respectively, of each assay (set at 100%). Immunolabels were only considered as localized to a caveolar invagination if localized <50 nm from the (inner) caveolar rim. In total, 1087 µm2 membrane were scored for quantitative analyses and 2889 caveolin-positive invaginations were evaluated.
 
 Cluster analyses of cav3 and CAVIN-1 immunogold signals were done using circular ROIs of 150 nm diameter around caveolae (70 nm (inner caveolar diameter) + 2×10 nm (PM curvature zone around the caveolae) + 2×30 nm (maximally possible primary/secondary antibody extension and gold particle size). Four or more immunosignals per ROI were considered as cluster.
 
-## Electron tomography of freeze-fractured caveolae
+### Electron tomography of freeze-fractured caveolae
 
 For electron tomography, replica specimens were placed in a tilt-rotate specimen holder (Model 626; Gatan) and tomographic data sets were recorded using a Philips CM120 operated at 120 kV. Images were captured every 2° over a −70° to 56° range using a 2K CCD camera (TecCam F216, TVIPS).
 
 The tilted views were aligned using the positions of the gold particles as fiducial points. Tomograms were computed and analyzed with the software IMOD Package (Kremer et al., 1996).
 
-## Statistical analyses
+### Statistical analyses
 
 Prism6 was used for testing for normal data distribution and for statistical analysis (for methods used for statistical significance calculations please see the figure legends accompanying the respective data panel). *p<0.05, **p<0.01,***p<0.001 throughout.

@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/047s2c258 Department of Physics, University of Maryland College Park United States
-2. https://ror.org/047s2c258 Institute for Physical Science and Technology, University of Maryland College Park United States
-3. https://ror.org/00za53h95 Department of Cell Biology, Johns Hopkins University Baltimore United States
-4. https://ror.org/047s2c258 Department of Chemistry & Biochemistry, University of Maryland College Park United States
+1. Department of Physics, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+2. Institute for Physical Science and Technology, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
+3. Department of Cell Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+4. Department of Chemistry & Biochemistry, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))
 
 † Corresponding author
 
@@ -39,27 +39,101 @@ We further use nanotopography to alter the waves’ spatial structures and chara
 
 ## Results
 
-## Cortical waves and cell migration can be studied independently in giant cells
+### Cortical waves and cell migration can be studied independently in giant cells
 
 We imaged cells that simultaneously expressed both limE-RFP and PHCrac-GFP. The former allows us to monitor filamentous actin (F-actin), which represents CEN activities. The latter enables us to monitor phosphatidylinositol-3,4,5-trisphosphate (PIP3), an indicator of STEN activities. In single, differentiated cells, usually only one wave is generated at the leading edge (Figure 1a and Video 1), and the wave motion is coupled with cell motion. For instance, when the cell in Figure 1a changed its direction of motion, the wave remained at the leading edge (72 s - 120 s).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig1-v1.jpg)
+
+**Figure 1.:** (a) Snapshots of a differentiated, single D. discoideum cell expressing limE-RFP and PHcrac-GFP, with cell boundaries denoted with blue dashed lines. The right column shows the normalized intensity of limE and PHcrac from the arrows in the merge images. The scale bars are 10 µm. (b). Snapshots of an electrofused giant D. discoideum cell on a flat surface, with scanning profiles in the right column. All scale bars are 10 µm. (c) A snapshot of an electrofused giant cell on the ridged surface. The left kymographs are from the line 2 and line 3 specified in the merged image. Line two shows a wave propagating along nanoridges, and line three shows a wave that existed briefly and then dissipated. (d) 3D reconstruction (single time point) of a single D. discoideum cell plated on nanoridges, acquired using a lattice light-sheet microscope. Here, we show the top aspect view (top row) and the side aspect view (bottom row). On the dorsal membrane of the cell, there are waves forming microcytotic cups (triangle) on the curved membrane, and on the basal membrane, there are streak-like waves (asterisk). The red channel represents limE-RFP, and the green channel represents PHcrac-GFP. As both the side and top views show, the dorsal waves and basal waves are independent structures, but both are composed of coordinated F-actin and PIP3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Images of PHcrac (top row) and LimE (middle row) in a 20 V/cm EF with the cathode located on the left. The EF was turned on at 0 min and reversed at 34 min. From the combined images (bottom row), it is clear that F-actin and PIP3 remained coordinated during electrotaxis. (b). Kymograph of angular distribution of F-actin (top) / PIP3 (bottom) wave motion. Optical-flow analysis was applied to both the F-actin and PIP3 videos to measure wave motion. Then we stacked up the angular distribution at each time point along the x-axis. The dynamics of F-actin/PIP3 in response to EFs are similar. The color was coded according to the proportion of each bin in the angular distribution. (c) Polar plots of angular distributions from the time points specified in b.
+
+![Video 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-video1.mp4.jpg)
+
+**Video 1.:** Images were acquired every 4 s and shown at 5 frames/s.
+
 In giant cells, multiple waves were initiated randomly and propagated radially across the basal membranes (Figure 1b and Video 2). CEN is driven by STEN, but has a substantially shorter characteristic timescale. Thus, PIP3 waves displayed band-like shapes, whereas F-actin appeared across the bands with higher levels at the rims of PIP3 waves (Miao et al., 2019). As shown in Figure 1b, colliding waves did not cross, but instead rotated by 90° (Figure 1b , 150 s - 200 s). This behavior is suggestive of a refractory period following excitation, which is a hallmark of an excitable system. On nanoridges, the giant cells generated multiple, quasi-1D patches of F-actin and PIP3 with shorter lifetimes than on flat surfaces (Figure 1c and Video 3). Some waves formed and propagated for a short distance (Line two in Figure 1c), whereas others formed and then quickly dissipated (Line three in Figure 1c). The wave dissipation can be explained in terms of an excitable system with lateral inhibition, in which the dispersion of the inhibitor is faster than that of the activator. Thus, the waves eventually dissipate due to the spatial accumulation of the inhibitor. Prior studies have shown that in this situation, the excitable system threshold determines the wave duration (Bhattacharya et al., 2020; Ermentrout et al., 1984). As was the case on flat surfaces, 1D patches occurred throughout the basal surfaces on ridges, and thus were independent of cell motion.
+
+![Video 2.](https://cdn.elifesciences.org/articles/73198/elife-73198-video2.mp4.jpg)
+
+**Video 2.:** Images were acquired every 10 s and shown at 5 frames/s.
+
+![Video 3.](https://cdn.elifesciences.org/articles/73198/elife-73198-video3.mp4.jpg)
+
+**Video 3.:** Images were acquired every 10 s and shown at 5 frames/s.
 
 Waves were also generated on the dorsal planes. In contrast to basal waves, which propagated across the surface contact (Videos 2 and 3), dorsal waves were associated with membrane deformations, and resembled macropinosomes (Video 4). Based on 3D lattice light-sheet images of a cell plated on nanoridges (Figure 1d and Video 5), activation of PIP3 and F-actin was correlated in both basal waves and dorsal waves. However, the dorsal waves were primarily generated in cuplike structures, whereas the stripe-like basal waves spanned the entire basal plane. In all cases, PIP3 activity was coordinated with F-actin activity (Profiles in Figure 1a, b and c), both in the absence (Figure 1) and presence of an EF (Figure 1—figure supplement 1, Video 6). Therefore, in the experiments described below, we only monitored F-actin activity.
 
-## EFs increase the area, duration, and speed of waves on nanoridges
+![Video 4.](https://cdn.elifesciences.org/articles/73198/elife-73198-video4.mp4.jpg)
+
+**Video 4.:** Images were acquired every 10 s and shown at 5 frames/s.
+
+![Video 5.](https://cdn.elifesciences.org/articles/73198/elife-73198-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/73198/elife-73198-video6.mp4.jpg)
+
+**Video 6.:** An electric field of 20 V/cm was applied at 0 min, where the cathode was set at the left side. Then the field was reversed to cathode being on the right at 35 min. Images were acquired every 10 s and shown at 5 frames/s.
+
+### EFs increase the area, duration, and speed of waves on nanoridges
 
 We found that giant cells respond to a narrow range (15 V/cm to 20 V/cm) of EF amplitudes (Videos 7 and 8), and that higher voltage (35 V/cm) damaged cells. The 1D waves generated on nanoridges related to esotaxis enabled us to quantify the effects of a 20 V/cm EF (all EFs used here are of this magnitude, see Figure 2—figure supplement 1 and Materials and methods for more details about the electrotaxis experiments) on the areas, durations, and speeds of waves. Figure 2a shows snapshots of the dynamics of F-actin in a giant cell on parallel nanoridges with a 1.6 μm spacing. In the absence of an EF (top row in Figure 2a), individual actin polymerization events were initiated in patches on the basal surfaces (Figure 2a and Video 9).
 
+![Video 7.](https://cdn.elifesciences.org/articles/73198/elife-73198-video7.mp4.jpg)
+
+**Video 7.:** An electric field of 10 V/cm was applied at 0 min, where the cathode was set at the left side. Images were acquired every 10 s and shown at 5 frames/s.
+
+![Video 8.](https://cdn.elifesciences.org/articles/73198/elife-73198-video8.mp4.jpg)
+
+**Video 8.:** An electric field of 15 V/cm was applied at 0 min, where the cathode was set at the left side. Images were acquired every 10 s and shown at 5 frames/s.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig2-v1.jpg)
+
+**Figure 2.:** (a) limE images of a giant cell on nanoridges without an EF (top) and in a 20 V/cm EF turned on at 0 min (bottom). (b). The temporal change of the percentage of the cell area occupied by limE without an EF (blue, Ncell = 5) and in a 20 V/cm EF introduced at 0 min (red, Ncell = 4). The shaded areas represent the mean plus or minus one standard deviation. (c). Division of groups of waves. The color represents the orientation of optical-flow vectors according to the color wheel. The green arrows are the optical-flow vectors, the length of which correspond to the magnitude of motion. The left image is an example of a large structure composed of two independent substructures, where the vectors at the right edge are not moving in the same direction. The wave scales in the directions perpendicular to (blue arrows) and parallel to the ridges (orange arrow) were measured on the preprocessed waves. (d) Density scatter plots of wave scales parallel to ridges vs. perpendicular to ridges. (e) Density scatter plots of actin-wave dimension vs. actin-wave duration. For each wave duration, the five points with the smallest wave areas (black circles) were selected to fit the boundaries (solid black lines). (f) Distributions of wave propagation speeds before (blue, Nwave = 125) and after (red, Nwave = 163) applying an EF. The analyses in d-f were based on N = 4 independent experiments. The two distributions are different (Two-sample t-test, p = 0.017).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Top view of the experimental setup. (b) Back view of the setup. Agar bridges isolate the cell media from electrodes to avoid changes in pH and the generation of electrochemical products. The cells were injected using pipettes into the center channel (red box highlighted in a). The height of the electrotaxis channel is ~0.25 mm. The channel was sealed with a large substrate coverslip and a smaller top coverslip.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (a). Shape dynamics of a giant D. discoideum cell at 10 s intervals. Cell boundaries were outlined using an active contour algorithm. Boundaries are color-coded according to time. Four stages were categorized: (S0) Random motion in the absence of an EF. (S1) Random motion in the first 15 min in the presence of an EF. (S2) Transition state usually with a retraction at the back. (S3) Steady migration state in the presence of an EF. (b). A schematic of local protrusion and retraction, where the solid line is the current frame, and the dotted line represents the cell boundary 1 min later. A protrusive region (yellow) is defined as one occupied in the new frame, not in the previous frame, and a retractive region (blue) is defined as one occupied in the previous frame, not in the new frame. (c). Kymograph of local boundary motion. The x-axis represents time, the y-axis indicates boundary points, and the color of each pixel corresponds to the speed. (d). Correlation curves of boundary motion at different time points. (e). Correlation length (defined as the point at which curves in d reach a value of 1/2) vs. time. Each curve represents an independent experiment conducted on a different day.
+
+![Video 9.](https://cdn.elifesciences.org/articles/73198/elife-73198-video9.mp4.jpg)
+
+**Video 9.:** An electric field of $20 V/cm$ was applied at 0 min, where the cathode was set at the left side. Then the field was reversed to cathode being on the right at 30 min. Images were acquired every 10 s and shown at 5 frames/s.
+
 In the first several minutes after turning on the EF, most patches propagated as a wave along a single ridge (Figure 2a, blue inset). After the EF was on for 10 min, some patches appeared to undergo coordinated motion across several ridges (Figure 2a, pink inset). We calculated the ratio of F-actin occupancy to cell area, and found that an EF increased the overall level of actin polymerization by a factor of two to three (Figure 2b). Actin patches were larger in the presence of an EF and organized into larger groups located preferentially at the cell front (bottom row in Figure 2a, 20 min, and 25 min), leading to wider protrusions at cell fronts that drove directed cell migration (Figure 2—figure supplement 2). To determine whether the groups comprised a single, large wave growing across multiple ridges or multiple, small patches nucleated in close proximity, we measured the dynamics of the patches using optical flow (Lee et al., 2020), focusing on the patch edges (Figure 2c, left image. See Materials and methods for more details). If both edges of a patch were moving in the same direction, the structure was classified as a single, large wave. If the edges were not coordinated, the patch was classified as multiple, individual structures. This method enabled us to capture accurately waves that span across multiple ridges and are moving coordinately.
 
-Once the large actin structures were classified, their instantaneous dimensions were measured parallel and perpendicular to the ridges (Figure 2c). Density scatter plots of both dimensions exhibit elliptical contours (Figure 2d), suggesting that nanotopography constrains wave growth. With an EF parallel to the ridges, the waves broadened in both directions (Figure 2d). The average increases in wave dimension parallel and perpendicular to the ridges were 20% and 13%, respectively, and the average increase in wave area was 44%. An increase in wave duration was also observed, with the minimum wave area correlated to the duration (Figure 2e, black circles). The wave area depends exponentially on the maximum wave duration (Figure 2e, solid black lines), allowing us to extract a characteristic wave time scale via(1)Areamin=C*eDurationT   .
+Once the large actin structures were classified, their instantaneous dimensions were measured parallel and perpendicular to the ridges (Figure 2c). Density scatter plots of both dimensions exhibit elliptical contours (Figure 2d), suggesting that nanotopography constrains wave growth. With an EF parallel to the ridges, the waves broadened in both directions (Figure 2d). The average increases in wave dimension parallel and perpendicular to the ridges were 20% and 13%, respectively, and the average increase in wave area was 44%. An increase in wave duration was also observed, with the minimum wave area correlated to the duration (Figure 2e, black circles). The wave area depends exponentially on the maximum wave duration (Figure 2e, solid black lines), allowing us to extract a characteristic wave time scale via
+
+$$
+Area_{min}=C*e^{\frac{Duration}{T}}   .
+$$
 
 Here, C is a constant, and T is the characteristic time scale, which is 48 s with no EF and 61 s in the presence of a 20 V/cm EF. This difference is consistent with the EF drawing the system closer to the excitability threshold. An average increase of 9% in wave propagation speed was also observed in the presence of an EF (Figure 2f).
 
-## EFs guide the direction of actin waves
+### EFs guide the direction of actin waves
 
 Next, we consider the directional guidance of actin waves by EFs on nanoridges (Figure 3a and Video 9) and on flat surfaces (Figure 3b and Video 10, see Methods for details). The EF was introduced at 0 min (T1), and in the first 2 min had little effect on the actin dynamics on any surface. On nanoridges, actin waves continued to propagate preferentially along the ridges (Figure 3a, T1). On flat surfaces, the waves propagated radially in groups, as seen from the broad distribution at T1 in Figure 3b. In the presence of an EF, the waves propagated preferentially towards the cathode within ~15 min (Figure 3a and b, T2). The perpendicular spread was significantly more limited on nanoridges (Figure 3a, T2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig3-v1.jpg)
+
+**Figure 3.:** (a, b) Optical-flow analysis of actin-wave dynamics in giant cells on ridged and flat surfaces. The top row shows a time series of limE images for giant cells overlaid with optical-flow vectors, the color of which is coded according to the color wheel. The accompanying polar plots show the corresponding orientation displacements of optical-flow vectors. For both a and b the EF was turned on at 0 min. The bottom time stamp indicates when the EF was reversed from the cathode being on the right (red) to the cathode being on the left (green). (c) Distributions of wave duration from three independent days of experiments. The distributions were weighted by wave area, because the number of long-lasting large waves on flat surfaces (Nwave = 359) is smaller than the number of short-lived small patches on ridged surfaces (Nwave = 658). Correspondingly, the absolute waves counts do not match the pixel-based, optical-flow analysis in a and b. Based on a two-sample t-test on the wave areas on flat surfaces vs. on ridges, the null hypothesis was rejected at the 5% significance level with p = 2 × 10–15. (d). Kymographs of orientation displacements of optical-flow vectors. The x-axes of the kymographs represent time, and the y-axes represent orientation. The colors represent the proportions. The EF was turned on at time T1, and was reversed at the time denoted by the black arrow (e) LimE snapshots showing the patterns of actin-wave expansion during steady directed migration in a constant EF (top) and after reversing the EF direction (bottom). The blue arrows point to specific stages of wave expansion. W: Wave, S: Stage of wave expansion. The right panel is a cartoon illustrating the patterns of actin-wave expansion during directed migration in EFs (top) and after EFs were reversed (bottom).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) A schematic showing the two imaging planes used, with the morphology of the substrate. (b) LimE-RFP images recorded at the dorsal plane. Unlike the basal focal plane images, which capture the complete basal wave dynamics, the dorsal plane images do not capture the full dorsal wave motion. To avoid photobleaching and laser damage, we only imaged the cross-section of the dorsal waves and tracked the cross-sections using optical-flow analysis. (c) A schematic introducing four-parameter, bimodal von Mises (vM) fitting. The orientation distribution (gray) was fitted to a bimodal vM distribution at each time point. The two vM distributions were set to share the degree of concentration κ (κ 1 = κ 2), peak locations μ that were set to be 180° apart (μ 1 = μ 2 + 180°). (d) Temporal evolution of fitting parameters in response to EF reversal. Among two fitted vM distributions, the one with a larger proportion (vMp) was tracked. For both plots, the curves represent the mean p of vMp with standard derivations from multiple experiments (N = 5), and the colors represent the μ of vMp.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Temporal evolution of cosine function of the fitted preferential direction of actin wave propagation for giant cells on flat surfaces. The analysis was based on N = 3 experiments.
+
+![Video 10.](https://cdn.elifesciences.org/articles/73198/elife-73198-video10.mp4.jpg)
+
+**Video 10.:** An electric field of 20 V/cm was applied at 10 min, where the cathode was set at the left side. The cathode was reversed at 30 min. Images were acquired every 10 s and shown at five frames/s.
 
 The direction of the EF was reversed after the cell had commenced steady directional migration, which took ~20–25 min. Following the field reversal, waves on ridged surfaces reoriented toward the new cathode within 5 min (Figure 3a, T3). On flat surfaces, the wave propagation direction was perpendicular to both the previous and the new EF directions at ~7 min after the field reversal (Figure 3b, T3). Preferential propagation toward the new cathode occurred after ~13 min (Figure 3b, T4). The difference in response time between nanoridges and flat surfaces may be related to the fact that waves persist longer on flat surfaces than on nanoridges (Figure 3c).
 
@@ -69,9 +143,29 @@ Wave turning may be related to differences in the patterns of wave expansion (Fi
 
 We also simultaneously imaged limE-RFP at the basal plane (near the surface contact) and the dorsal plane (6 µm higher). Dorsal waves (Videos 11 and 12) are localized at cell fronts and rearranged to the new fronts following EF reversal (Figure 3—figure supplement 1). Rather than directly switching preferential direction, dorsal waves gradually turned toward the new cathode (Figure 3—figure supplement 1), in a manner similar to that of basal waves on flat surfaces. Thus, two different response times to EF reversal exist within the same cell, with a faster response for basal waves guided by nanotopography and a slower response for the free dorsal waves. On flat surfaces, the two responses are synchronized (Figure 3—figure supplement 2).
 
-## Subcellular spatial inhomogeneity of the response to EFs on nanoridges
+![Video 11.](https://cdn.elifesciences.org/articles/73198/elife-73198-video11.mp4.jpg)
+
+**Video 11.:** An electric field of 20 V/cm was applied at 5 min, where the cathode was set at the left side. The cathode was reversed at 30 min. Images were acquired every 10 s and shown at 5 frames/s.
+
+![Video 12.](https://cdn.elifesciences.org/articles/73198/elife-73198-video12.mp4.jpg)
+
+**Video 12.:** An electric field of 20 V/cm was applied at 10 min, where the cathode was set at the left side. The cathode was reversed at 30 min. Images were acquired every 10 s and shown at 5 frames/s.
+
+### Subcellular spatial inhomogeneity of the response to EFs on nanoridges
 
 Although waves in migrating D. discoideum cells localize predominantly at the leading edge (Weiner et al., 2007; Zhao et al., 2002), waves are observed across the basal layer in giant D. discoideum cells. We analyzed the smaller, shorter lived waves on nanoridges. Although the wave locations were distributed essentially uniformly throughout cells in the absence of an EF, more waves were generated at the cell fronts in the presence of an EF (Figure 4a and Video 9). In addition, the average area per wave was larger near the front of cells in an EF (Figure 4b). We also measured the wave properties in the single cells scattered throughout the field of view but did not observe a corresponding gradient of wave properties among single cells closer to the cathode versus the cells closer to the anode. This result indicates that the spatial inhomogeneity shown in Figure 4a and b was caused by the EF rather than by the absolute electrical potential relative to the ground (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig4-v1.jpg)
+
+**Figure 4.:** (a) Density scatter plots of the wave area vs. x position of the wave relative to the cell center. Nanoridges and EF are orientated in the x-direction. The difference of x coordinates of cell center and wave location was calculated, then the value was further normalized by the cell radius. Each point represents a wave, and all the points were collected from five independent experiments. The left plot is for a period in which there was no EF (Nwave = 296), and the right plot is for a period in which there was a 20 V/cm EF, during which the cells exhibited steady directional migration (Nwave = 224). For each experiment without an EF, the EF was always turned on several minutes later. Thus, we defined the direction in which cathode was located in the presence of an EF as the positive direction in the absence of an EF. The color code corresponds to the density of points. (b) Average wave area in subcellular regions. The points in a were sectioned, based on their x position relative to the cell center (normalized by cell radius) at a bin size of 0.25 (8 sections in total from –1–1), and calculated the average wave area in each section. (c) Changes in actin waves' spatial distribution in response to EF reversal; data from six independent experiments. The color of each plot is coded according to the timeline displayed at the bottom of the panel. P2-P5: The EF was reversed, and cells gradually developed polarization toward the new cathode. The number of waves in each plot: Np2 = 272, Np3 = 277, Np4 = 193, Np5 = 246. (d) A schematic illustrating the old and new fronts of giant cells when the EF was reversed. (e) Time stacks of orientation distributions of optical-flow vectors at an old front and a new front. The EF was reversed from the cathode being at the right (0) to the cathode being at the left (π) at 0 min. (f) Comparisons of response time between new fronts (green) and old fronts (orange) from multiple experiments (Ncell = 5). The p-value was calculated using a pairwise t-test at the 5% significance level. (g) Cartoon illustrating different time scales of local wave propagation and global rearrangement of STEN-CEN thresholds, in response to EF reversal.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** To explore these scenarios, we quantified the waves in single cells surrounding the giant cell in the field of view, where the center of the field was defined as the origin. In contrast to the giant cells, these single cells are scattered throughout the field of view but are not large enough for the potential gradient to create significant intracellular polarization. Thus, if the spatial inhomogeneity is caused by the external electrical potential gradient, we would observe a gradient of wave properties from single cells located in the region between -50 μm and 50 μm. (a) A limE image. Single cells are highlighted with blue circles. (b) c. Density scatter plots of wave location vs. wave area for single cells (highlighted by blue circles in a) in the absence (b) and the presence (c) of EF. Unlike in giant cells (Figure 4a, b), the wave areas in single cells are spatially homogeneous. The ratio of mean wave areas in the regions nearer the cathode (location > 0) to those in regions farther from the cathodes (location < 0) was calculated for both single cells and giant cells. In giant cells, this ratio increases from 0.85 to 2.00 with an EF (Figure 4a), whereas for single cells, the ratio is almost unchanged (1.08 without an EF and 0.98 with an EF). This analysis was based on the experiments from four different days.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73198/elife-73198-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Illustration of analysis of the propagation of individual waves. We first segmented each wave. For all of the optical-flow vectors within the wave region, we normalized the magnitudes and then calculated the x projection of their resultant vector $v-_{x}$ ($v-_{x}=\frac{\sum1Ncos⁡(\theta_{i})}{N},$) where $  \theta_{i}$ is the orientation of optical-flow vector $i$. For waves propagating unidirectionally, $v-_{x}$ is close to ± 1, whereas for waves extending bidirectionally, $v-_{x}$ is close to 0. b. Violin plots of $v-_{x}$ of waves near old and new fronts, at different time windows illustrated by the bottom timeline. The violin plots show the distribution of $v_{x}-$ weighted by wave area, and the centered boxplot (gray bars) show the $v-_{x}$ without any weighting. The analysis was based on N = 7 experiments performed over four different days. As the plots show, individual waves in the old fronts reversed their directions towards new cathodes (both violin plot and boxplot shift their centers towards < 0 region) after 9 min (P4). For waves in the new fronts, larger waves shifted their directions to new cathode within 6 min (violin plot shifts to < 0 at P3), and smaller wave response time is comparable to waves in the old fronts (boxplot shifts to < 0 at P4).
 
 We explored the response of this inhomogeneity to EF reversal by tracking each wave location relative to the cell centroid in the 12 min following EF reversal (Figure 4c). New waves started to appear near the side of the cell facing the new cathode within 3 min (Figure 4c, left region of P2), whereas the complete inhibition of wave generation near the old cell front took longer (Figure 4c, right region of P5). This observation suggests that the initiation at a new cell front and the inhibition of waves at the old front are regulated by two distinct processes with different timescales.
 
@@ -81,7 +175,7 @@ Next, we looked at the time required to switch propagation direction in differen
 
 By employing giant cells, in which the cortical waves are disentangled from cell motion, we demonstrate that EFs modulate cortical wave dynamics directly, providing a mechanism for cell guidance by EFs (Figure 1c, b and d). Our use of nanoridges to generate quasi-1D waves that are small, short-lived, and unable to turn (Figure 1c) enabled detailed quantification of wave properties, demonstrating that EFs directly affect the abundance, locations, and directions of cortical waves.
 
-## EFs guide cortical wave dynamics
+### EFs guide cortical wave dynamics
 
 Previous studies have suggested that the basal cortical waves in D. discoideum are insensitive to external chemotactic gradients, whereas ‘pseudopods’ at other regions in the same cells can be guided (Lange et al., 2016). This conclusion is surprising because the biochemical events traveling with the waves are the same as those occurring on pseudopods, and pseudopods with the dorsal cups on the same cells do respond to chemoattractants. Also, similar cortical waves in human mammary epithelial cells can be guided effectively by epidermal growth factors (Zhan et al., 2020). Additional input from the greater contact of giant D. discoideum cells with the surface may outweigh the effect of applied chemical gradients on the basal waves. Other studies have shown that single cells can integrate combinations of external chemical and mechanical stimuli.
 
@@ -89,7 +183,7 @@ Our work shows that in giant cells, waves of both F-actin polymerization (Figure
 
 We further explored the dynamics in response to EF reversal at the subcellular level using nanotopography (Figure 4). We observed that the new waves are induced to propagate towards the current cathode within 2–3 min (Figure 4e and Figure 4—figure supplement 2), suggesting that waves themselves can adapt quickly to the changing electrical environments. Because we only observed the fast adaptation on ridged surfaces, this phenomenon may be related to the shorter wave lifetimes on nanoridges than on flat surfaces. A short lifetime allows waves to be nucleated at a higher rate on the nanoridges, leading to a rapid directional response. During this process, the EF may regulate the wave nucleation through locally changing specific charged lipids, ion fluxes, or local pH gradients (Crevenna et al., 2013; Frantz et al., 2008; Köhler et al., 2012; Martin et al., 2011; Zhou and Pang, 2018).
 
-## EFs modulate the thresholds of the excitable wave system
+### EFs modulate the thresholds of the excitable wave system
 
 Recent studies have shown that the cortical wave system can be described as a coupled signal transduction and cytoskeletal excitable network. Based on both simulation and experimental studies (Bhattacharya et al., 2020; Miao et al., 2017), it has been shown that the wave ranges, durations, and speeds are determined by the local threshold of activation, which in turn are regulated by the relative levels of activators and inhibitors (Miao et al., 2017; Miao et al., 2019).
 
@@ -97,7 +191,7 @@ Our quantification shows that guided waves become larger, faster, and more persi
 
 Local excitation and global inhibition (Xiong et al., 2010), LEGI, schemes have effectively recreated the features of both fast directional sensing and stable polarity in response to chemical signals, which can lead to robust biased excitable network. Both directional sensing and stable polarity can lead to a robust biased excitable network. For chemical signals, the directional response from PIP3 occurs within seconds, whereas the establishment of stable polarity usually requires many minutes. However, based on our analysis, establishing both directional response (Figure 3) and polarity (Figure 4) in response to EFs requires 5–10 min. It is worth noting that PIP3 waves also sense EFs on a time scale of minutes (Figure 1—figure supplement 1). Our observation suggests that EFs act on the polarity establishment rather than directional sensing. This hypothesis is supported by a recent study showing that G-protein-coupled receptors (GPCRs), which are the regulator in the LEGI model for D. discoideum that allows for sensing chemoattractant on timescales of seconds, are not essential for electrotaxis (Zhao et al., 2002).
 
-## EFs act on waves, and waves determine cell behaviors
+### EFs act on waves, and waves determine cell behaviors
 
 Our results raise the possibility that cortical wave dynamics are modulated directly by EFs and that the waves in turn mediate cellular response. Waves travel across cell membranes to coordinate the trailing edge with the front edge, and the cytoskeletal components in cortical waves are involved in developing the stable polarity. On the other hand, the duration and turning capacity of STEN-CEN waves directly impact the speed and characteristics of the cellular response to EFs (Figure 3) on a longer timescale than that of surface-receptor-regulated chemotaxis.
 
@@ -111,19 +205,57 @@ EFs provide a means to modulate cortical waves directly. On the other hand, biol
 
 ## Materials and methods
 
-## Cell line
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (D. discoideum)</td>
+      <td>Aca null</td>
+      <td>https://doi.org/10.1016/S0092-8674(03)00081–3</td>
+      <td></td>
+      <td>The cell line was a gift from Carole A. Parent lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. discoideum)</td>
+      <td>PHcrac-GFPLimE-RFP</td>
+      <td>https://doi.org/10.1038/ncb3495</td>
+      <td></td>
+      <td>The cell line was a gift from Peter N. Devreotes lab.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Optical flow analysis (run by MATLAB)</td>
+      <td>https://doi.org/10.1091/mbc.E19-11-0614</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell line
 
 In the study, we used LimE-RFP aca null Dictyostelium discoideum (D.d.) and PHcrac-GFP/LimE-RFP D.d cell lines. LimE-RFP aca null was a gift from Carole A. Parent lab (https://doi.org/10.1016/S0092-8674(03)00081-3), and PHcrac-GFP-LimE-RFP was a gift from Peter N. Devreotes lab (https://doi.org/10.1038/ncb3495). We have conducted the mycoplasma contamination testing for both cell lines and did not detected contamination.
 
-## Cell culture
+### Cell culture
 
 Dictyostelium discoideum cell lines were grown axenically in the HL5 medium. Aggregation adenylyl cyclase null (ACA−) mutants, which do not produce cAMP and do not have chemotaxis signal relay (Kriebel et al., 2003), were used in electrotaxis experiments to avoid chemotaxis. The cells used also express limE-RFP as a reference for filamentous actin structures. G418 was used as the selection medium during cell culture. For the experiments in Figure 1, Figure 1—figure supplement 1, we used Dictyostelium discoideum co-expressing PHcrac-GFP and LimE-RFP, and we used G418 as the selective medium. Note that an enhancement in LimE concentration is associated with protrusions, as seen in Figure 2—figure supplement 2, and that the protrusions are biased to the side facing the cathode. Because protrusions are driven by F-actin polymerization, we believe this observation rules out the possibility that LimE binding/unbinding to/from F-actin itself is sensitive to EFs.
 
-## Electrofusion
+### Electrofusion
 
 Cells were washed twice with 17 mM Sorensen buffer (15 mM KH2PO4 and 2 mM Na2HPO4, pH 6.0) and rolled for 30 min at a concentration of 1.5 × 107 mL–1. Electrofusion was conducted with a Gene Pulser Gen1 system. Three pulses of 1 kV at a 1 s interval were applied. After electroporation, cells were relaxed for 5 min. Then cells were diluted to 5 × 105 mL–1 with normal developing buffer (5 mM KH2PO4, 5 mM Na2HPO4, 2 mM MgCl2 and 0.2 mM CaCl2, PH 6.5) and seeded into a customized electrotactic chamber, with dimensions 20 mm × 5 mm × 0.25 mm. The aca null cell line that we used did not generate many waves in the vegetative stage, and electro-fusion with 1 kV pulses stressed the cells. Thus cells were starved for 2 hr before experiments to generate more actin waves.
 
-## Nanotopography fabrication
+### Nanotopography fabrication
 
 The nanotopographic pattern used in these cell studies was fabricated through a technique known as multiphoton absorption polymerization (MAP), as described elsewhere (LaFratta et al., 2006; LaFratta et al., 2004). An ultrafast, pulsed laser beam (Coherent Mira 900 F, 76 MHz) was passed through a high-numerical-aperture microscope objective into a photopolymerizable resin sandwiched between glass coverslips. A LabVIEW (National Instruments) program allowed for control of the stage position and the shutter state, determining where polymerization occurred (and did not) in the resin, allowing patterning. Once fabrication was completed, the patterned sample was developed in ethanol twice for 3 min each to remove unreacted monomer. The polymerized structure was baked at 110 °C for at least 1 hr.
 
@@ -131,29 +263,45 @@ To produce the necessary number of replicate patterns with the same dimensions, 
 
 The mold was used to produce replicas of the original pattern. A drop of the same acrylic resin was placed on the patterned area of the PDMS mold, and then an acrylate-functionalized glass coverslip was pressed firmly on top, spreading the sandwiched drop. Tape secured this system in place. The resin was cured for a total of 5 min under a UV lamp (Blak-ray), producing a polymer film. It should be noted that the PDMS mold is the negative relief pattern of the structure made using MAP. Therefore, samples (or replicas) of the original pattern could be produced on a relatively large scale with this method. The replicas were soaked in ethanol for at least 12 hr before use in the cell studies. We fabricated samples with flat surfaces by using a PDMS mold with a smooth surface.
 
-## Lattice light-sheet microscopy
+### Lattice light-sheet microscopy
 
 The 3i lattice light-sheet microscope in the Johns Hopkins School of Medicine Microscope Facility was used for two-color, 3D imaging. Vegetative, single Dictyostelium cells were seeded on a circular 5 mm coverslip patterned with nanoridges, which was immersed in a bath of standard developing buffer throughout imaging.
 
-## Electrotaxis experiments
+### Electrotaxis experiments
 
 We 3D-printed electrotaxis chambers (Figure 2—figure supplement 1) with dimensions of 20 mm × 5 mm × 0.25 mm and composed of a clear resin using a Formlabs Form2 3D-printer. Agar bridges were used to isolate cell media from electrodes to minimize electrochemical products and pH changes. Twenty V/cm constant EFs were applied. Time-lapse images of the phase-contrast channel and the RFP/GFP channel were recorded using PerkinElmer spinning-disk microscope at a frame rate of 0.1 frames/s (Yokogawa CSU-X1 spinning-disk scan head (5000 rpm)) with Hamamatsu EMCCD camera and Volocity analysis software.
 
-## Optical-flow analysis and model fitting of actin polymerization dynamics
+### Optical-flow analysis and model fitting of actin polymerization dynamics
 
 We applied the Lukas-Kanade optical-flow method to quantify the direction of the intensity flow in fluorescence videos. This algorithm produced pixel-basis vector fields of intensity motion. Before applying the optical-flow algorithm, each image was smoothed by a 2D Gaussian filter (σ = 3) to reduce noise. After the smoothing, we further removed the flow vectors created by noise using optical-flow reliability as our criterion. The reliability is defined as the smallest eigenvalues of the ATwA matrix, where w is a Gaussian weight matrix and A is the intensity gradient matrix. The size of the weight matrix for D. discoideum was set at 19 × 19, with standard deviation σ = 2 (0.42 μm).
 
-We built a bimodal von Mises model to compare the actin and cellular responses accurately. A von Mises distribution is given by(2)fVMθ|μ,κ=eκcos⁡θ-μ2πI0(κ)  .
+We built a bimodal von Mises model to compare the actin and cellular responses accurately. A von Mises distribution is given by
 
-where the peak location is μ and the concentration κ. The orientation distribution of optical-flow vectors at each time point is fit with two von Mises distributions(3)      fθ|μ1,μ2,κ,p1,p2=p1fVMθ|μ1,κ+p2fVMθ|μ1+π,κ
+$$
+f_{VM}\theta|\mu,κ=\frac{e^{κcos⁡\theta-\mu}}{2\piI_{0}(κ)}  .
+$$
 
-where p is the proportion of each component. We use the constraints(4)μ1-μ2=π
+where the peak location is μ and the concentration κ. The orientation distribution of optical-flow vectors at each time point is fit with two von Mises distributions
 
-and(5)p1+p2=1
+$$
+      f\theta|\mu_{1},\mu_{2},κ,p_{1},p_{2}=p_{1}f_{VM}\theta|\mu_{1},κ+p_{2}f_{VM}\theta|\mu_{1}+\pi,κ
+$$
+
+where p is the proportion of each component. We use the constraints
+
+$$
+\mu_{1}-\mu_{2}=\pi
+$$
+
+and
+
+$$
+p_{1}+p_{2}=1
+$$
 
 Maximum likelihood estimation (MLE) is applied to estimate model parameters based on the orientation of all the optical-flow vectors every 12 frames (2 min). With this model, we can quantitatively study the temporal change of actin dynamics. The preferential direction is defined as the μ with the largest proportion p at each time point.
 
-## Quantification of actin wave properties
+### Quantification of actin wave properties
 
 The segmentation of actin waves was conducted based on the combined information from fluorescence intensities and optical flow. We first applied the kmeans (k = 3) cluster (Kanungo et al., 2002) to pick up the bright regions in the limE-RFP videos, then only kept the moving objects by applying the reliability mask from the optical-flow analysis.
 

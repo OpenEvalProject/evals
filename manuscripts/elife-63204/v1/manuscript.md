@@ -33,19 +33,236 @@ In this study, we have conducted a series of multi-modality experiments to under
 
 ## Results
 
-## Sub-tendons within the Achilles tendon have different mechanical properties
+### Sub-tendons within the Achilles tendon have different mechanical properties
 
 Five (two males and three females, aged 78–87 years) fresh-frozen human Achilles tendon specimens were carefully dissected, and individual sub-tendons were subjected to quasi-static mechanical tests to failure. The soleus sub-tendon had the greatest CSA and the highest failure force and stiffness compared to both gastrocnemii sub-tendons (Table 1, detailed statistical analysis results in Supplementary file 1). There were no significant differences in material properties between the sub-tendons.
 
-## Sub-tendons have different CSA, shapes, and twists
+**Table 1.**
+ Mechanical testing results of three Achilles sub-tendons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th colspan="3">CSA (mm2)</th>
+      <th colspan="3">Failure force (N)</th>
+      <th colspan="3">Ultimate stress (MPa)</th>
+      <th colspan="3">Ultimate strain (%)</th>
+      <th colspan="3">Young’s modulus (MPa)</th>
+      <th colspan="3">Stiffness (N/mm)</th>
+    </tr>
+    <tr>
+      <th>(age–sex)</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+      <th>LG</th>
+      <th>MG</th>
+      <th>S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>69 M</td>
+      <td>13.6</td>
+      <td>14.5</td>
+      <td>39.2</td>
+      <td>325.0</td>
+      <td>402.2</td>
+      <td>1701.2</td>
+      <td>24.0</td>
+      <td>27.7</td>
+      <td>45.3</td>
+      <td>9.7</td>
+      <td>10.0</td>
+      <td>19.1</td>
+      <td>353.9</td>
+      <td>375.8</td>
+      <td>399.4</td>
+      <td>79.9</td>
+      <td>97.6</td>
+      <td>260.6</td>
+    </tr>
+    <tr>
+      <td>78 F</td>
+      <td>12.4</td>
+      <td>10.8</td>
+      <td>20.6</td>
+      <td>154.7</td>
+      <td>571.1</td>
+      <td>1155.6</td>
+      <td>12.5</td>
+      <td>52.6</td>
+      <td>56.2</td>
+      <td>11.6</td>
+      <td>8.9</td>
+      <td>17.5</td>
+      <td>175.0</td>
+      <td>771.1</td>
+      <td>421.1</td>
+      <td>36.7</td>
+      <td>145.6</td>
+      <td>167.8</td>
+    </tr>
+    <tr>
+      <td>84 F</td>
+      <td>5.7</td>
+      <td>10.7</td>
+      <td>30.9</td>
+      <td>503.6</td>
+      <td>621.8</td>
+      <td>1577.0</td>
+      <td>89.0</td>
+      <td>58.3</td>
+      <td>51.0</td>
+      <td>8.9</td>
+      <td>12.2</td>
+      <td>10.4</td>
+      <td>1231.5</td>
+      <td>636.9</td>
+      <td>734.9</td>
+      <td>118.2</td>
+      <td>121.4</td>
+      <td>385.1</td>
+    </tr>
+    <tr>
+      <td>85 F</td>
+      <td>10.4</td>
+      <td>14.0</td>
+      <td>38.2</td>
+      <td>787.5</td>
+      <td>688.3</td>
+      <td>1090.9</td>
+      <td>75.8</td>
+      <td>49.0</td>
+      <td>28.6</td>
+      <td>11.9</td>
+      <td>10.6</td>
+      <td>15.8</td>
+      <td>853.6</td>
+      <td>617.2</td>
+      <td>239.9</td>
+      <td>151.7</td>
+      <td>144.7</td>
+      <td>156.6</td>
+    </tr>
+    <tr>
+      <td>87 M</td>
+      <td>4.6</td>
+      <td>17.0</td>
+      <td>35.2</td>
+      <td>301.6</td>
+      <td>647.7</td>
+      <td>1578.5</td>
+      <td>65.9</td>
+      <td>38.1</td>
+      <td>44.9</td>
+      <td>8.2</td>
+      <td>10.2</td>
+      <td>10.8</td>
+      <td>1033.4</td>
+      <td>496.2</td>
+      <td>606.2</td>
+      <td>80.9</td>
+      <td>143.0</td>
+      <td>349.6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>9.3*</td>
+      <td>13.4*</td>
+      <td>32.8</td>
+      <td>414.5*</td>
+      <td>586.2*</td>
+      <td>1420.6</td>
+      <td>53.4</td>
+      <td>45.1</td>
+      <td>45.2</td>
+      <td>10.1</td>
+      <td>10.4</td>
+      <td>14.7</td>
+      <td>729.5</td>
+      <td>579.4</td>
+      <td>480.3</td>
+      <td>93.5*</td>
+      <td>130.5*</td>
+      <td>263.9</td>
+    </tr>
+    <tr>
+      <td>SD</td>
+      <td>4.0</td>
+      <td>2.7</td>
+      <td>7.6</td>
+      <td>242.5</td>
+      <td>111.3</td>
+      <td>277.1</td>
+      <td>33.4</td>
+      <td>12.2</td>
+      <td>10.4</td>
+      <td>1.6</td>
+      <td>1.2</td>
+      <td>3.9</td>
+      <td>449.5</td>
+      <td>149.9</td>
+      <td>192.7</td>
+      <td>43.5</td>
+      <td>20.9</td>
+      <td>103.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_CSA: cross-sectional area, LG: lateral gastrocnemius, MG: medial gastrocnemius, S: soleus sub-tendon. *Significantly different from soleus sub-tendon after post hoc analysis (p<0.017)._
+
+### Sub-tendons have different CSA, shapes, and twists
 
 Another three Achilles tendons (age–sex: 54-M, 55-M, and 14-F – constructed into Models 1, 2, and 3, respectively) were collected and dissected into sub-tendon components. These tendons were selected based on availability and to represent a diverse range of individual differences in tendon morphology. The precise morphology and geometry were recorded and used to create 3D computer-aided design models. The tendons varied in CSA from 42.3 to 90.4 mm2, and the twist and the internal arrangement of their sub-tendons showed great individual variability (Figure 1), as reported previously (Edama et al., 2015; Pękala et al., 2017). In the proximal part of the tendon, the anterior portion was mostly occupied by the soleus sub-tendon and the posterior portion by medial gastrocnemius on the medial aspect and lateral gastrocnemius on the lateral aspect. Passing distally, the sub-tendons rotate in a lateral direction and the longest tendon (Model 1, 70 mm) rotated the most since its lateral gastrocnemius sub-tendon almost completely occupied the anterior surface. In the shorter tendons (Models 2 and 3, 40 mm), at the distal end, the anterior portion was occupied by the lateral gastrocnemius and soleus sub-tendons. The tendon used for Model 3 was the thinnest (CSA: 42.3 mm2), while tendons used in Models 1 and 2 were substantially thicker (89.1 and 90.4 mm2). The models closely replicated the original sub-tendon geometries, capturing individual variability in sub-tendon arrangements. The tendons (and models) are not intended to represent the geometrical features of a particular gender or age group, but to represent diversity among individuals.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63204/elife-63204-fig1-v1.jpg)
 
-## Sub-tendon displacement is affected by the degree of sliding but is geometry dependent
+### Sub-tendon displacement is affected by the degree of sliding but is geometry dependent
 
 To study the effect of sub-tendon loading on the longitudinal displacement of the proximal soleus face, we ran an FEA of each model with the same axial tension (100 N) in each sub-tendon but with different degrees of sliding between them – namely, frictionless, frictional (with friction coefficient 0.2, 0.4, 0.6, 0.8, and 1.0) and bonded (no sliding). When the soleus sub-tendon was loaded in isolation, assigning frictional contacts reduced the soleus displacement compared to the frictionless contact across all three models. When the medial gastrocnemius sub-tendon was loaded, soleus displacement increased with increasing friction. This trend was also observed when the lateral gastrocnemius was loaded, but interestingly only in Models 1 and 2 (Figure 2). When loaded, the three models showed distinct transverse plane rotation behaviour, which is likely caused by their different geometrical features (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63204/elife-63204-fig2-v1.jpg)
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63204/elife-63204-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Large variations in displacements and directions were noted between different models under different loading conditions. The scale of the y-axes differs to allow better visualisation of differences in the data.
 
 Displacement data were normalised to frictionless contact conditions to observe the relative displacement change and therefore the impact of increasing cohesion between the sub-tendons, as may occur with ageing (Figure 3). When the soleus was loaded, all three models showed a similar decrease in soleus displacement as friction increases. In the gastrocnemii-loaded conditions, a substantial increase in soleus displacement was observed in Model 1 and a lesser increase was observed in Model 2, suggesting tendon shapes and geometries affect force transmission across sub-tendons when interface properties change.
 
@@ -53,7 +270,7 @@ Displacement data were normalised to frictionless contact conditions to observe 
 
 **Figure 3.:** Note the scale of the y-axes differs to allow better visualisation of differences in the data.
 
-## Reduced sliding decreases mean stress of the whole tendon, but not peak stress
+### Reduced sliding decreases mean stress of the whole tendon, but not peak stress
 
 All models showed decreased mean von Mises stress for frictional and bonded contacts compared to frictionless contact (Figure 4, upper row); however, the peak von Mises stress, a prediction of material yielding, differed among all three models (Figure 4, lower row). As friction increased, the peak stress intensity of Model 1 decreased, but Models 2 and 3 fluctuated with different sub-tendon loading conditions. For bonded contact conditions, all models showed lower peak stress compared to the frictionless and frictional contact conditions, but the size of the decrease varied greatly between models. Furthermore, changing the contact properties, in addition to affecting the intensity of peak stress, also changed the region where the peak stress occurred (Figure 5). Due to the large geometry differences (CSA and twist) across the three models, no clear pattern in the change of peak stress location is seen.
 
@@ -65,7 +282,7 @@ All models showed decreased mean von Mises stress for frictional and bonded cont
 
 **Figure 5.:** LG: lateral gastrocnemius, MG: medial gastrocnemius, S: soleus sub-tendon. View planes: Ant.: anterior, Pos.: posterior, Lat.: lateral, Med.: medial, Int.: internal view with the covering sub-tendon removed.
 
-## In vivo age-related displacement decline can be explained by modelling results
+### In vivo age-related displacement decline can be explained by modelling results
 
 We further explored whether our modelling results (Figure 3) reflect in vivo age-related decline in displacement non-uniformity. Each muscle was electrically stimulated, and the resulting soleus musculotendinous junction displacements were recorded and normalised to their relative muscular displacements. The older group of participants, aged 52–67 years (n = 7), demonstrated significantly (p=0.005) lower normalised soleus junction displacement compared to the younger group (20–29 years, n = 9) for soleus stimulation (Figure 6). This decrease in displacement with increasing age shows the same trend as the modelling result when the soleus sub-tendon was loaded in isolation (Figure 3, right). We found no detectable differences in soleus junction displacement between groups for both gastrocnemii stimulation conditions (p=0.963 and p=0.558).
 
@@ -85,35 +302,35 @@ The results of our study suggest that using the traditional anatomical landmark 
 
 In our in vivo studies, we found a negative relationship between participant age and the electrical-induced soleus junction displacements, and this relationship supported our FEA results when assigning frictional contacts, reinforcing the belief that the matrix between sub-tendons stiffens with age. No statistically significant difference was detected between young and old groups in both gastrocnemii stimulation trials. Our modelling results suggested that gastrocnemii-induced soleus displacement is generally low and, importantly, depends on the shape and twist of the tendon, which we were unable to measure in our in vivo studies. Furthermore, the gastrocnemii have longer tendinous parts that have complex interactions with the underlying soleus muscle and aponeurosis (Finni et al., 2003; Magnusson et al., 2003), and the CSA of gastrocnemii sub-tendons are smaller and may have less influence on the larger soleus sub-tendon. The simplification of our in vivo study may therefore overlook certain age-related features in muscle-tendon units and surrounding structures that may potentially affect our results. To the best of our knowledge, no study has investigated whether material properties of sub-tendons reduce with age or whether the reduction is similar among three sub-tendons; thus, we cannot conclude that the measured age-related decline in displacement is solely from the reduction of interface sliding ability without the influence from altered tendon material properties. Our use of minimal electrical intensity during stimulation prevented co-contraction of other muscles, but the expected contraction force was low and less than most physiological loading scenarios. Overall, our in vivo method provides a relatively simple, low-cost setup that is able to detect in vivo sub-tendon sliding ability. In future studies combining this method with other techniques such as ultrasound speckle tracking, shear-wave elastography (Lima et al., 2018), skin advance-glycation end-product measurements (Couppé et al., 2014), or Raman spectroscopy (Yin et al., 2020) may enable non-invasive measurement of ‘tendon age’, which is a valuable but currently unobtainable clinical parameter in studying tendon injuries.
 
-## Conclusions
+### Conclusions
 
 In conclusion, our study provides novel concepts and improved understanding of Achilles tendon mechanical behaviour. The different mechanical properties of Achilles sub-tendons could originate from various structural or compositional adaptations (Birch, 2007) to different functional demands. Our results suggest that using the musculotendinous junction displacement to measure Achilles tendon strain in vivo should be done with caution and should not be used to compare tendons from different individuals without regard for tendon morphological variations such as CSA, shape, and twist. Differences in the transfer of force between sub-tendons with different geometrical arrangements suggest that some tendon morphology types have a higher risk of injury and that sites within the tendon most prone to injury will vary between individuals. Our study has provided new insights into tendon mechanics and could inspire new, potentially personalised, treatment and prevention strategies to revolutionise current management of Achilles tendon health, injury prevention, and rehabilitation.
 
 ## Materials and methods
 
-## Separation of Achilles sub-tendons
+### Separation of Achilles sub-tendons
 
 The tendon specimens (total n = 8) used in this study were collected from the Vesalius Clinical Training Centre, University of Bristol (REC 08/H0724/34) and from UCL/UCLH Biobank for Studying Health and Disease (HTA license number 12055) with Local R and D approval (Ref: 11/0464). Fresh-frozen specimens (from the Vesalius Clinical Training Centre, n = 5) were used for mechanical testing, and fresh specimens (from UCL/UCLH Biobank, n = 3) were used for morphology measurements and computer model construction. Only tendons showing no signs of injury or disease were included in the study. Sub-tendons were separated as described in the study (Szaro et al., 2009). For the three specimens used for model construction, a longitudinal reference line (from the mid-point of calcaneal insertion site to mid-point between the two gastrocnemii bellies) was drawn before separation as a guide to align tendon cross-sections (see below). Exterior moulds were created to minimise geometry distortion during separation (Goodship and Birch, 2005).
 
-## Measurement of sub-tendon mechanical properties
+### Measurement of sub-tendon mechanical properties
 
 The CSA of each sub-tendon was measured (ImageJ, v1.51) at the same level as the thinnest region (~10 to 40 mm proximal to insertion) of the whole Achilles tendon. Each sub-tendon was tested using a mechanical testing system (5967, Instron, Norwood, MA) with a linear electric motor and a 3 kN load cell. After secured into cryoclamps with 60 mm gauge length, a pre-load was applied (10 N for gastrocnemii and 20 N for soleus) and then 20 cycles of pre-conditioning (triangular wave to 5% strain) was applied. The load was removed to allow the specimen to go slack (4 mm) before pulling to failure (rate: 0.75 mm/s). Young’s modulus and stiffness were calculated as the slope of the linear region of the stress–strain and force–displacement curves.
 
-## Construction of Achilles sub-tendon computer models
+### Construction of Achilles sub-tendon computer models
 
 After separation, the three sub-tendons were carefully assembled and fitted into the original exterior mould. Cross-sections (10 mm apart) were cut through the mould and the sub-tendons from proximal to distal, starting from the soleus musculotendinous junction. These cross-sections were then photographed together with a ruler (1 mm accuracy) using a 12-megapixel camera yielding a resolution of 0.014 mm/pixel. Since the fascicles intertwined at the insertion, we could only confidently separate sub-tendons to a level approximately 10 mm proximal to the calcaneus, thus the reconstructed models end at this point.
 
 Three separate Achilles sub-tendon models were created in a web-based computer-aided design platform (Onshape, PTC, Boston, MA). First, each sub-tendon cross-section was delineated (perimeter, then internal borders) and aligned according to the longitudinal reference line. The CSA differences between the drawn sub-tendon area and the photographic measurements were less than 1 mm2. Next, the cross-sections belonging to each sub-tendon were constructed from distal to proximal, creating three solid parts. The models constructed were inspected to ensure no penetration or separation between each part before conducting simulations.
 
-## Finite element analysis
+### Finite element analysis
 
 A commercially available FEA software (ANSYS v19.0, Ansys Inc, Canonsburg, PA) was used for mesh generation and static stress analysis. Each sub-tendon was modelled as a hyperelastic, non-linear, neo-Hookean material (Handsfield et al., 2017; Hansen et al., 2017) with the initial modulus (Lat. G: 226.7 MPa, Med. G: 143.2 MPa, Soleus: 103.1 MPa) obtained by curve-fitting the in vitro axial tensile testing results. Sub-tendons were meshed into quadratic 10-node tetrahedral solid elements (TET10). A mesh convergence test was conducted using static stress analysis with criteria of 1% for each model. Maximal element edge length for each model was 0.8, 0.5, and 0.4 mm, respectively, and yielded 258402, 195286, and 223423 elements, respectively. The contact faces between sub-tendon pairs were manually selected and assigned different contact properties: frictionless, frictional (with coefficient 0.2, 0.4, 0.6, 0.8, and 1.0) and bonded. Surface-to-surface translational joints, with no restriction along the longitudinal axis while limiting transverse plane separation, were assigned at the contact faces to prevent sub-tendon separation. Fixed displacement at distal faces (to mimic the fixed calcaneus insertion) and individual 100 N linear ramped tensile forces at the proximal face of each sub-tendon (to mimic muscular pull) were applied.
 
-## In vivo muscular stimulation study – participants
+### In vivo muscular stimulation study – participants
 
 This study was approved by the University College London Research Ethics Committee (ref. 1487/1001). All participants were well informed and provided consent in accordance with the Declaration of Helsinki. Participants were assigned into two groups according to their age (Young: 20–30 years, n = 9; Old: over 50 years, n = 7). The exclusion criteria were having any previous diagnosed Achilles tendon injuries and any systematic disease that may affect muscle-tendon functions.
 
-## Experiment procedures
+### Experiment procedures
 
 The participants were prone on an examination bed with feet firmly step against the wall (~90°). Three pairs of 50 mm diameter electrodes were placed on the motor points of the three muscles bellies (Botter et al., 2011; Kim et al., 2005). The skin was cleaned with alcohol swaps and shaved if necessary to ensure minimal intensity for inducing muscular contraction and minimising discomfort. Each muscle was stimulated using a commercially available transcutaneous electrical neuromuscular stimulation device with 30 Hz, 300 μs pulse train, and an on–off cycle of 8 s (4 s on and 4 s off) for 2 min to induce tetanic contractions. Before the stimulation, an ultrasound probe (2–8 MHz, 9L-D, LOGIQ S8, GE Healthcare, Buckinghamshire, UK) was placed at the musculotendinous junction of the three muscles to ensure proper image quality. During the stimulation, the intensity increased gradually (to ~20 mA) until visible displacement of the stimulated muscle (e.g. medial gastrocnemius) was recorded, while at the same time, no visible contraction of other muscles (e.g. lateral gastrocnemius and soleus) was observed, before moving the probe to the soleus musculotendinous junction to measure its displacement (Figure 7). At least three consecutive contractions were recorded and stored for offline analyses. Randomised sequence and ample rest between stimulations were used to reduce artefacts.
 
@@ -121,10 +338,10 @@ The participants were prone on an examination bed with feet firmly step against 
 
 **Figure 7.:** MG/LG: medial or lateral gastrocnemius, SOL: soleus. MTJ: musculotendinous junction.
 
-## Ultrasound image analysis
+### Ultrasound image analysis
 
 The analysis was performed in a semi-automatic way using an in-house MATLAB code (R2019a, MathWorks, Natick, MA), utilising the Computer Vision Toolbox add-on for tracking displacements and correcting movement artefacts. The peak soleus musculotendinous junction displacement of each stimulation trial was tracked and normalised by its contracted muscular displacements (for gastrocnemii: musculotendinous junction, for soleus: one distal muscle fascicle–aponeurosis junction; Figure 7, left), assuming the muscular displacement affects only by stimulation intensity, while sub-tendon displacement affects by interface sliding capacity. We arbitrarily chose the distal soleus muscle fascicle–aponeurosis junction as the reference point (Muramatsu et al., 2001) since no clear anatomical landmark lies within the soleus muscle.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using SPSS (v26, IBM, Armonk, NY). Kruskal–Wallis H tests were used for comparing mechanical properties among sub-tendons, and Mann–Whitney U tests were used for post hoc analysis. In vivo soleus junction displacement between groups was compared using Mann–Whitney U tests. Level of significance was set at 0.05, two tailed. A minimum of total 12 participants for the in vivo study was determined by a priori sample size estimation (d = 1.9, α = 0.05, β = 0.90) using G*Power 3.1.9 (Universität Düsseldorf).

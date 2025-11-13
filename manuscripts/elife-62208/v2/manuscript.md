@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Genomes store information at scales beyond the linear nucleotide sequence, which impacts genome function at the level of an individual, while influences on populations and long-term genome function remains unclear. Here, we addressed how physical and chemical DNA characteristics influence genome evolution in the plant pathogenic fungus Verticillium dahliae . We identified incomplete DNA methylation of repetitive elements, associated with specific genomic compartments originally defined as Lineage-Specific (LS) regions that contain genes involved in host adaptation. Further chromatin characterization revealed associations with features such as H3 Lys-27 methylated histones (H3K27me3) and accessible DNA. Machine learning trained on chromatin data identified twice as much LS DNA as previously recognized, which was validated through orthogonal analysis, and we propose to refer to this DNA as adaptive genomic regions. Our results provide evidence that specific chromatin profiles define adaptive genomic regions, and highlight how different epigenetic factors contribute to the organization of these regions.
+Genomes store information at scales beyond the linear nucleotide sequence, which impacts genome function at the level of an individual, while influences on populations and long-term genome function remains unclear. Here, we addressed how physical and chemical DNA characteristics influence genome evolution in the plant pathogenic fungus Verticillium dahliae. We identified incomplete DNA methylation of repetitive elements, associated with specific genomic compartments originally defined as Lineage-Specific (LS) regions that contain genes involved in host adaptation. Further chromatin characterization revealed associations with features such as H3 Lys-27 methylated histones (H3K27me3) and accessible DNA. Machine learning trained on chromatin data identified twice as much LS DNA as previously recognized, which was validated through orthogonal analysis, and we propose to refer to this DNA as adaptive genomic regions. Our results provide evidence that specific chromatin profiles define adaptive genomic regions, and highlight how different epigenetic factors contribute to the organization of these regions.
 
 ## Introduction
 
@@ -35,33 +35,269 @@ In addition to the role of heterochromatin in transcriptional regulation in fila
 
 ## Results
 
-## DNA cytosine methylation occurs at TEs
+### DNA cytosine methylation occurs at TEs
 
 To understand the role of DNA methylation in V. dahliae, whole-genome bisulfite sequencing, in which unmethylated cytosine bases are converted to uracil while methylated cytosines remain unchanged (Clark et al., 1994; Lister and Ecker, 2009), was performed in the wild-type and a heterochromatin protein one deletion mutant (Δhp1). The overall level of DNA methylation in V. dahliae is low, with an average weighted methylation percentage (calculated as the number of reads supporting methylation over the number of cytosines sequenced) at CG dinucleotides of 0.4% (Table 1). The fractional CG methylation level (calculated as the number of cytosine positions with a methylated read over all cytosine positions) is higher, averaged to 9.7% over 10 kb windows. Weighted and fractional cytosine methylation (mC) levels are statistically significantly higher in the WT compared to the Δhp1 mutant for all cytosine contexts (Mann-Whitney U-test and Holm correction, p-value<2.2e-16, Table 1; Figure 1—figure supplement 1). This result is consistent with the requirement of HP1 for DNA methylation in N. crassa (Freitag et al., 2004). To understand DNA methylation in the context of the functional genome, DNA methylation was analyzed over genes, promoters, and TE. Despite statistically significant differences between WT and Δhp1 for gene and promoter methylation, the bisulfite sequencing data shows virtually no DNA methylation at these two features (Figure 1A, Mann-Whitney U-test and Holm correction, p-values listed with figure). We attribute the difference to a marginal set of elements having a real difference between the genotypes, but the biological significance is likely negligible (Figure 1—figure supplement 2). In contrast, there is a higher degree of methylation at TEs, and weighted mCG is five times higher in the wild-type versus Δhp1 (Figure 1A, bottom panel). To support this, 31% (697/2227) of the TEs in the wild-type strain have a weighted mCG value greater than or equal to the mean weighted CG methylation level (0.015), while this number is 1% (33/2227) in Δhp1. In contrast, 0% of wild-type (1/11430) and Δhp1 (0/11430) genes have a weighted mCG value equal to this level. Notably, the Δhp1 strain displays a reduced growth rate, altered colony morphology, reduced spore production, and reduced virulence, likely attributable to the pleiotropic effects of genome-wide heterochromatin alterations (Kramer et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig1-v2.jpg)
+
+**Figure 1.:** (A) Violin plot of the distribution of DNA methylation levels quantified as weighted methylation over genes, promoters, and transposable elements (TEs). Cytosine methylation was analyzed in the CG, CHG, and CHH sequence context. Methylation was measured in the wild-type (WT) and heterochromatin protein one knockout strain (Δhp1). (B, C) Whole chromosome plots showing TE and Gene counts (blue and red heatmaps) and wild-type (black lines) and Δhp1 (green line) CG methylation as measured with bisulfite sequencing. Data is computed in 10 kilobase non-overlapping windows. (C) Two previously defined LS regions (Faino et al., 2016) are highlighted by gray windows. (D) Violin plot of weighted cytosine methylation in 10 kb windows broken into core versus LS location (E) Same as D but plots are for the counts of TEs per 10 kb window. (F) Same as in D but methylation levels were computed at individual TE elements. (A,D,E,F) Statistical differences for indicated comparisons were carried out using non-parametric Mann-Whitney U-test and Holm multiple testing correction with associated p-values shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cytosine methylation was calculated using weighted methylation (see Materials and methods) in the CG, CHG, and CHH sequence context in both wild-type (WT) and Dhp1. Methylation levels were determined to be significantly higher in WT using the Mann-Whitney U-test. The symbol (***) indicates p<2.2e-16. (B) Similar to (A), but the genome-wide methylation level was calculated using fractional methylation. All data were summarized in 10 kb bins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cytosine methylation was calculated using weighted methylation (see Materials and methods) in the CG, CHG, and CHH sequence context in both wild-type (JR2) and Dhp1. DNA methylation was summarized over genes, promoters and TEs as labeled. The individual elements are shown as colored points, along with a violin plot showing the distribution and median as a black line. Methylation levels were determined to be significantly higher in WT, Mann-Whitney U-test with Holm multiple testing correction. Associated p-values are shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Volcano plot showing the log2 fold-change for Dhp1 compared to the wild-type (WT) grown in PDB culture. The adjusted p-value (-log10) is shown in the y-axis to indicate statistical significance. Individual genes are shown as colored pointed, with genes in the core (blue) and those in Lineage-Specific (LS; yellow) regions. Genes were considered differentially expressed if they were log2 fold-change < −1 or >1, shown as vertical dashed lines, and an adjusted p-value<0.01, shown as a horizontal dashed line. These cut-offs resulted in 1522 genes more highly expressed in Dhp1, and 587 more highly expressed in wild-type. (B) Bar plot showing the average and range of log2 fold-change values for genes (n = 1522) expressed significantly higher in Dhp1 compared to wild-type from (A). The genes were grouped based on core (blue) versus LS (yellow) location. These groups were statistically significantly different based on Mann-Whitney U-test, p-value<2.2e-16.
+
+**Table 1.**
+ Summary of DNA methylation in Verticillium dahliae wild-type (WT) and heterochromatin protein one deletion mutant (Δhp1) as measured by whole genome bisulfite sequencing calculated over 10 kb non-overlapping windows.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Avg. weighted mCG*</th>
+      <th>Avg. weighted mCHG*</th>
+      <th>Avg. weighted mCHH*</th>
+      <th>Avg. fraction mCG*</th>
+      <th>Avg. fraction mCHG*</th>
+      <th>Avg. fraction mCHH*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>0.0040</td>
+      <td>0.0037</td>
+      <td>0.0034</td>
+      <td>0.097</td>
+      <td>0.097</td>
+      <td>0.088</td>
+    </tr>
+    <tr>
+      <td>Δhp1</td>
+      <td>0.0030</td>
+      <td>0.0030</td>
+      <td>0.0032</td>
+      <td>0.082</td>
+      <td>0.083</td>
+      <td>0.079</td>
+    </tr>
+  </tbody>
+</table>
+
+_Avg. Weighted, The average of total methylated cytosines in a given context divided by total cytosines in that context in a 10 kb windows; Avg. Fraction, The total cytosine positions with a read supporting methylation divided by total cytosines in a specific context in a 10 kb window; mCG, methylated cytosine residing next to a guanine; mCHG, methylated cytosine residing next to any base that is not a guanine next to a guanine; mCHH, methylated cytosine residing next to any two bases that are not a guanines. *, values are significantly different (p-value<0.001), Mann-Whitney U-test. The distribution of values and p-values for individual comparisons are shown in Figure 1—figure supplement 1._
+
 To further analyze DNA methylation levels and confirm that the low DNA methylation levels in the wild-type strain are indeed different than those in Δhp1, CG DNA methylation levels were plotted in 10 kb windows across individual chromosomes. These plots clearly show that DNA methylation is not continuously present across the V. dahliae genome, and DNA methylation is significantly different between wild-type and Δhp1 (Figure 1B,C). Furthermore, regions in the genome with higher densities of TEs and lower gene numbers have higher levels of DNA methylation, consistent with the global DNA methylation summary (Figure 1B,C). Interestingly, these results show that while DNA methylation is only present at TEs, not all TEs are methylated, a phenomenon that was previously described as ‘non-exhaustive’ DNA methylation (Montanini et al., 2014). To further understand this phenomenon, we sought to identify discriminating genomic features that could account for some TEs not being methylated. The whole-chromosome methylation data suggested a lack of DNA methylation at previously identified LS regions (Figure 1C, gray windows). These LS regions were previously detailed for V. dahliae, and are characterized as regions that are highly variable between isolates of the species, are enriched for actively transcribed TEs, and contain an increased proportion of genes involved in host virulence (Klosterman et al., 2011; de Jonge et al., 2013; Faino et al., 2016). Thus, we tested if DNA sequences at LS regions are less frequently methylated by comparing weighted mCG levels in 10 kb bins containing at least one TE for core versus LS regions. This analysis showed significantly more DNA methylation for core bins (Mann-Whitney U-test and Holm correction, p-value=2.9e-9, Figure 1D), which cannot be accounted for by a simple difference in the number of TEs in the core and LS regions analyzed (Mann-Whitney U-test and Holm correction, p-value=0.8, Figure 1E). Higher CG methylation levels also hold true when analyzed at the level of individual TE elements (Mann-Whitney U-test and Holm correction, p-value=1.3e-13, Figure 1F). Analyzing the transcriptional impact of Δhp1 on in vitro grown cultures identified 1522 genes that were expressed significantly higher in Δhp1 compared to wild-type (log2 fold-change >1 and adjusted p-value<0.01, Figure 1—figure supplement 3A). Of the genes more highly expressed in Δhp1, those located in LS regions showed a greater transcriptional increase (Figure 1—figure supplement 3B). However, as we have shown that loss of DNA methylation alone does not result in altered gene transcription (Kramer et al., 2020), the differential gene expression caused by HP1 mutation is likely caused by additional effects on chromatin and DNA compaction (Jamieson et al., 2016). Collectively, these analyses demonstrate that DNA methylation occurs almost exclusively at TEs and, importantly, that not all TEs are methylated. This observation can in part be explained by mCG differences for TEs in the core versus LS regions.
 
-## TE classes have distinct genomic and epigenomic profiles
+### TE classes have distinct genomic and epigenomic profiles
 
 To understand the functional status of the various TEs in the genome, DNA-histone modification location data were collected using chromatin immunoprecipitation followed by sequencing (ChIP-seq) against H3K9me3 and H3K27me3, which allows for the identification of DNA interacting with these modified histones. Characteristics of TE sequence, such as GC percentage, composite RIP index (CRI), and TE age, estimated as the Jukes-Cantor distance to the consensus sequence of the specific TE family, were calculated (see Materials and methods). To further classify genomic regions as eu- or heterochromatic, we performed an assay for transposase accessible chromatin and sequencing (ATAC-seq) (Buenrostro et al., 2013). This method uses a TN5 transposase to restrict physically accessible DNA in the nucleus and tags the DNA ends with oligonucleotides for downstream sequencing. Transcriptional activity was assayed using RNA-sequencing. To analyze all of these TE characteristics (variables) at once, dimensional reduction with principal component analysis (PCA) was employed, which facilitates data interpretation on two-dimensions to identify important variables and their relationships within large datasets. The individual TEs were grouped into four broad classes (Type I DNA elements and Type II LTR, LINEs, and Unspecified elements) and analyzed for each measured variable (Supplementary file 1- table 1). The first dimension of PCA shows the largest separation of the data points and variables, and largely separates the data based on euchromatin versus heterochromatin features (Figure 2A, PC1). This is seen by the variables ATAC-seq, %GC, RNA-sequencing, H3K9me3 ChIP, CRI, and DNA methylation (mCG) being furthest separated along the x-axis (Figure 2A). Open chromatin features such as higher ATAC-seq, %GC, and transcriptional activity are positive on the x-axis, with small angles between the vectors, indicating correlation among those variables. Conversely, features associated with heterochromatin, such as H3K9me3 association, DNA methylation and indication of RIP (CRI) are all negative on the x-axis, and the position of their vectors indicates correlation among these variables, and negative correlation to the euchromatin features (Figure 2A). The second axis discriminates elements based on their H3K27me3 profile and sequence characteristics such as Jukes Cantor (TE age), Identity and Length (Figure 2A). Regarding the TE classifications, there is a stronger association for the LTR and Unspecified elements with the heterochromatin features (Figure 2A, gray and red ellipse extending along negative x-axis). Collectively, this multivariate description of TEs identifies those that are more transcribed and open as having lower association with H3K9me3, mCG, and RIP mutation. There are statistically significant differences between the TE types for each of these variables (Supplementary file 1- table 2, Dunns test with Benjamini-Hochberg testing correction), and the LTR elements have the highest levels of H3K9me3 and mCG, along with the highest CRI values and lowest %GC, consistent with the mechanistic link between the four variables (Figure 2B). Interestingly, a bimodal distribution occurs for %GC and CRI within the LTR and Unspecified elements, indicating that some of the LTR elements have undergone RIP and are heterochromatic, while other elements have not been subject to this mechanism (Figure 2B). This delineation occurs for the Unspecified and LTR elements with a %GC sequence content less than approximately 40%, which have positive CRI values and high H3K9me3 signal (Figure 2C). A similar distinction is seen with ATAC-seq data that show a clear break around 40% GC content, and elements below this have lower ATAC-seq signal and higher H3K9me3 signal (Figure 2D). These trends are not observed for the LINE and DNA elements (Figure 2—figure supplement 1). The TEs were further divided into sub-classes (Supplementary file 1- table 3), we do not detect an obvious difference to explain these data. For instance, while there is a significant difference between the nine sub-classes for %GC and CRI (Kruskal-Wallis statistic = 382.4, p-value=1.07e-77 %GC; Kruskal-Wallis statistic = 259.41, p-value=1.74e-51 CRI) (Supplementary file 1- table 4) the two LTR subclasses (Copia and Gypsy) do not have statistically different means (Conovers test and BH correction, p-value=1 %GC; p-value=0.19 CRI) (Figure 2—figure supplement 2; Supplementary file 1, table 5). The two LTR subclasses are significantly different for their association with H3K9me3 and H3K27me3 (Conover test and BH correction, p-value=1.03e-06 H3K9me3; p-value=1.08e-10 H3K27me3) (Figure 2—figure supplement 2; Supplementary file 1- table 5), but the subclasses of LTRs both occur in the two bimodal states, and cannot account for the difference (Figure 2—figure supplement 3). It is not possible to distinguish the unspecified elements into reliable subclasses. These results suggest that the most prominent TE classes in the genome, LTR and Unspecified elements, exist in two distinct chromatin states, which we cannot easily distinguish through sequences of sub-classes.
 
-## TE location significantly influences the epigenetic and DNA accessibility profile
+![Figure 2.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig2-v2.jpg)
+
+**Figure 2.:** (A) Principle component analysis for 14 variables measured for each individual transposable element (TE). Each vector represents one variable, with the length signifying the importance of the variable in the dimension. The relationship between variables can be determined by the angle connecting two vectors. For angles < 90°, the two variables are correlated, while those >90° are negatively correlated. Each individual element is shown and highlighted by color and symbol as indicated by the key. Colored ellipses show the confidence interval for the four families along with a single large symbol to show the mean position for the four families. mCG, weighted CG DNA methylation; mCHG, weighted CHG DNA methylation; CRI, Composite RIP index; %GC, percent GC sequence content; Identity, Nucleotide identity as percent identity to the consensus TE sequence of a family; Length, element length; Jukes Cantor, Jukes Cantor corrected distance as proxy of TE age; RNAseq, RNA-sequencing reads from (PDB), half strength MS (HMS) or tomato xylem sap (Xylem) grown fungus expressed as variance stabilizing transformed log2 values (see Materials and methods for details); H3K9me3, log2 (TPM+1) values of mapped reads from H3K9me3 ChIP-seq; H3K27me3, log2 (TPM+1) values of mapped reads from H3K27me3 ChIP-seq; ATAC-seq, log2 (TPM+1) values for mapped reads from Assay for transposase accessible chromatin. (B) Ridge plots showing the distribution of the individual TE families per variable. The median value is shown as a solid black line in each ridge. Variables same as in A except for mCG, log2(weighted cytosine DNA methylation + 0.01). (C) Scatter plot for %GC versus CRI values for individual TE elements shown as points. The two plots are for TEs characterized as Unspecified (Unsp) or LTR, labeled in the upper left corner. Each point is colored according to log2 (TPM+1) values from H3K9me3 ChIP-seq, scale shown above each plot. A density plot is shown for both variables on the opposite side from the labeled axis. (D) Same as in C, but the y-axis is now showing the log2 (TPM+1) values from ATAC-seq.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatter plot for %GC sequence content versus CRI values for individual TE elements shown as points, separated by TE type, LINE, and DNA, labeled in the top left of each plot. Each point is colored according to TPM values from H3K9me3 ChIP-seq, scale shown above each plot. A density plot is shown opposite to each respective labeled axis. (B) Similar to (A), but the y-axis is showing the log2 TPM values from ATAC-seq. %GC, The percent GC sequence content; CRI, Composite RIP index; ATAC-seq, Log2 of (TPM+1) values of mapped reads from Assay for Transposase Accessible Chromatin.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Each data type is shown in the upper right corner of the individual box plots. Outliers are shown as individual points. The nine subclasses of TEs are listed to the left of each figure. Test for significant differences between means of the nine subclasses per data type are shown in Supplementary file 1- table 4 (Kruskal-Wallis test) and significance of individual pair-wise differences are shown in Supplementary file 1- table 5 (Conover test and BH correction).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** The same transposable elements (TEs) are shown in three separate scatter plots with marginal densities. Individual Copia elements are shown as blue points, and Gypsy elements as gray points. These plots are related to those shown in Figure 2, but only for the LTR elements. All plots show the % GC variable in the x-axis and different y-axis variables for reference. Clustered patterns of points are not simply accounted for by the two subclasses of LTR elements.
+
+**Table 2.**
+ Confusion Matrix for LS and core prediction in V.dahliae from test data classification using the final trained model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Known</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Predicted</th>
+      <th>Core</th>
+      <th>LS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">LR</td>
+      <td>Core</td>
+      <td>638</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>50</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td rowspan="2">GBM</td>
+      <td>Core</td>
+      <td>645</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>43</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="2">BCT</td>
+      <td>Core</td>
+      <td>672</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>16</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td rowspan="2">RF</td>
+      <td>Core</td>
+      <td>623</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>65</td>
+      <td>31</td>
+    </tr>
+  </tbody>
+</table>
+
+_LR, Logistic Regression; GBM, Stochastic Gradient Boosting; BCT, Boosted Classification Tree; RF, Random Forest; Core, regions of the genome defined as core; LS, regions of the genome defined as Lineage Specific. For final model parameter settings and classification thresholds, see Materials and methods._
+
+**Table 3.**
+ Assessment of four trained machine learning algorithms on final test data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Models</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>MCC</th>
+      <th>F1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LR</td>
+      <td>0.34</td>
+      <td>0.79</td>
+      <td>0.49</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>GBM</td>
+      <td>0.39</td>
+      <td>0.85</td>
+      <td>0.55</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>BCT</td>
+      <td>0.45</td>
+      <td>0.39</td>
+      <td>0.39</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>RF</td>
+      <td>0.32</td>
+      <td>0.94</td>
+      <td>0.52</td>
+      <td>0.48</td>
+    </tr>
+  </tbody>
+</table>
+
+_LR, Logistic Regression; GBM, Stochastic Gradient Boosting; BCT, Boosted Classification Tree; RF, Random Forest; MCC, Matthews Correlation Coefficient; F1, F-score or harmonic mean of precision and recall. For final model parameter settings and classification thresholds, see Materials and methods._
+
+### TE location significantly influences the epigenetic and DNA accessibility profile
 
 To further dissect the relationship between epigenetic modifications, chromatin status and genomic location, pair-wise comparisons were made for all TEs in core versus LS regions. All measured variables, except TE length, are significantly different for TEs in the core versus LS regions (Figure 3—figure supplement 1). Further division of the TEs indicated that the LTR and Unspecified elements showed the greatest differences for core versus LS measurements (Figure 3A), demonstrating that the major driver of core versus LS differences are driven by the LTR and Unspecified elements. The bimodal distribution for GC content, CRI, H3K9me3, and ATAC-seq can be accounted for in part by core versus LS separation (Figure 3B, red versus gray). Collectively, the status of the LS TE elements can be characterized as devoid of DNA and H3K9 methylation, low RIP signal, generally higher than 0.5 GC content, higher levels of H3K27me3, more open with ATAC-seq signal, and higher transcription levels (Figure 3D). The core versus LS location is not sufficient to fully explain the chromatin status, as there are many elements located in the core genome that share a similar profile with the LS elements (Figure 3D, elements highlighted in black boxes), but as an ensemble, the core elements are statistically different than those found at LS regions.
 
-## Significantly different chromatin status between core and LS regions extends to larger DNA segments
+![Figure 3.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heatmap comparing core versus LS values within the four TE classifications for the variable listed to the right. Plot colored based on p-values from Wilcoxon rank sum test. p-values≥0.05 are colored white going to red for p-value ≅ 0. (B) Scatter and density plots similar to those shown in Figure 2c except the individual TE points are colored by core (gray) versus LS (red) location. The density plots are also constructed based on the two groupings (C) Similar to B, with the y-axis now showing the log2 (TPM+1) values from ATAC-seq (D) Multiple grouped heatmaps for ten variables collected for each TE. Each row represents a single element and the same ordering is used across all plots. The LS elements are grouped at the top, indicated by the red bar at the top left, and the core elements are grouped below, indicated by the gray bar at the left. Elements are further grouped by the four classifications indicated by the color code shown to the left. Within each element group, the elements are ordered by descending GC content. The scale for each heatmap is shown at the right. GC content, fraction of GC in sequence; Jukes Cantor, corrected distance as proxy of TE age; CRI, Composite RIP index; Length, element length; mCG and mCHG, log2(weighted cytosine DNA methylation+0.01) for CG and CHG, respectively; RNAseq-PDB, variance stabilizing transformed log2 RNA-sequencing reads from PDB grown fungus; H3K9me3 and H3K27me3 and ATAC-seq, TPM values of mapped reads H3K9me3 ChIP-seq, H3K27me3 ChIP-seq, or Assay for transposase accessible chromatin, respectively. Black boxes highlight LTR and Unsp elements in the core that have euchromatin profiles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Violin plots show the distribution of the values for each category, along with a box plot showing the mean (thick black line) 1st and 3rd quartiles, and whiskers extending to the furthest data point within 1.5 of the interquartile range. Differences between the core and LS values were measured using the non-parametric Mann-Whitney test and p-values adjusted using the Holm method. Adjusted p-values are shown above each plot. mCG- Log2 weighted cytosine DNA methylation for CG; Jukes Cantor- estimate of sequence divergence from a consensus element; Length- element length in base pairs; Identity- The percent identity of the elements to a family consensus; GC content- The fraction of GC sequence content; CRI- Composite RIP index; RNAseq- variance stabilizing transformed log2 RNA-sequencing reads from Potato Dextrose Broth (PDB), half-Murashige and Skoog (HMS) or Tomato Xylem (X) grown fungi; H3K9me3 and H3K27me3 - TPM values of mapped reads from ChIP sequencing using anti-bodies against the respective histone modifications; ATAC-seq - TPM values of mapped reads from Assay for Transposase Accessible Chromatin.
+
+### Significantly different chromatin status between core and LS regions extends to larger DNA segments
 
 The analysis of TEs in the genome clearly shows that a subpopulation of elements that occur in the previously defined LS regions have different epigenetic modifications and physical openness compared to those in the core genome. LS regions are significant for V. dahliae biology as they code many proteins which support host infection (de Jonge et al., 2013; Faino et al., 2016). To generate a global analysis beyond an analysis of TEs, the genome was analyzed over 10 kb non-overlapping windows. This analysis showed that regions with high TE density tend to have lower GC content, higher DNA and H3K9 methylation and a lack of ATAC-seq reads. The distribution of H3K27me3 overlaps with regions having DNA and H3K9 methylation, but additional H3K27me3 regions occur that lack DNA and H3K9 methylation (Figure 4A). It appeared that regions marked by H3K27me3 that lack H3K9me3 have more open DNA than regions with H3K27me3 and H3K9me3 (Figure 4A, ATAC). This is apparent for the LS regions that appear to have increased H3K27me3 signal, lack H3K9me3 and have an intermediate level of DNA accessibility (Figure 4B, regions marked by gray boxes). PCA was again employed to combine the variables into a single analysis, with the first dimension explaining nearly 60% of the variation in the data (Figure 4C). The first dimension largely captures the variables describing euchromatin versus heterochromatin, such that ATAC-seq and %GC are furthest separated on the x-axis from H3K9me3, DNA methylation and TE density (Figure 4C). Interestingly, the DNA segments classified as core are mostly separated across the first dimension (Figure 4C). The second and third dimensions of the PCA explained a similar amount of variation in the data; 14.4% and 10.7%, respectively. Data from the RNA-seq experiment contributed nearly all the information to the second dimension, while the H3K27me3 ChIP-seq data contributed most of the information in the third dimension (Figure 4—figure supplement 1, and Supplementary file 1- table 6). Interestingly, when this third dimension is considered, we observe a separation of the core from the LS regions (Figure 4C,y-axis). This observation suggests that LS regions are more discernable from the core based on variation for H3K27me3, and less by variation for DNA openness, and DNA or H3K9 methylation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig4-v2.jpg)
+
+**Figure 4.:** (A and B) Whole chromosomes plots showing TE and gene counts over 10 kb genomic windows, blue and red heatmaps respectively. The %GC content is shown in purple, RNA-seq show in orange, CG cytosine DNA methylation shown in black, H3K9me3 and H3K27me3 ChIP-seq shown in red and blue respectively, and ATAC-seq shown in green. Values are those previously described. (B) Two LS regions are highlighted with a gray window. (C) Principle component analysis for seven variables at each 10 kb window. Dimensions 1 and 3 are plotted and collective explain ~70% of the variation in the data. The individual symbols are colored by genomic location with core (blue circles) and LS (yellow triangles). Colored ellipses show the confidence interval for the core and LS elements with a single large symbol to show the mean. (D) Scatter plot of the 10 kb windows colored for core and LS location by ATAC-seq data (TPM, x-axis) and H3K27me3 (TPM, y-axis). The size of each symbol is proportional to the TE count, shown as five possible ranges from 0 (smallest), 1–3 (next, larger), up to 10–12 (largest). The density plot of each variable is shown on the opposite axis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each genomic window is shown as a point on the graph, with the windows in the core colored as blue circles and LS as yellow triangles. Colored ellipses show the confidence interval for the core and LS elements with a single large symbol to show the mean. The amount of variation for the first and second dimensions are shown in parentheses. mCG- Log2 weighted cytosine DNA methylation for CG; %GC - The percent GC sequence content; RNAseq-PDB- TPM for RNA-sequencing reads from Potato Dextrose Broth (PDB); H3K9me3 and H3K27me3 - TPM values of mapped reads from ChIP sequencing using anti-bodies against the respective histone modifications; ATAC-seq - TPM values of mapped reads from Assay for Transposase Accessible Chromatin.
+
 Our observations can be summarized into a genome-wide model; for the core genome, regions with higher TE density have low ATAC-seq signal (closed DNA) and elevated H3K9me3 signal and thus represent the heterochromatic regions (Figure 4D, cluster of large blue dots plotted at middle left). Core genomic regions that are gene-rich have a higher ATAC-seq and lower H3K9me3 signal and represent the euchromatic portion of the genome (Figure 4D, cluster of small blue dots plotted in the lower-middle section). The LS regions are a hybrid of the two that contain high TE density and higher H3K27me3 signal but have higher ATAC-seq signals when compared with similar TE containing regions in the core genome (Figure 4D, cluster of large yellow triangles plotted in the middle). This simple model of the genome accounts for many of the phenomena described here, and links the epigenome, physical genome and functional genome.
 
-## Machine learning predicts more lineage-specific genomic regions than previously considered
+### Machine learning predicts more lineage-specific genomic regions than previously considered
 
 Given that a clear model emerges that links the epigenome and physical openness of DNA with adaptive regions of the genome, we assessed the extent to which these features can predict core or LS regions. Stimulated by our observations (Figure 4), we used ATAC-seq, RNA-seq, H3K27me3, TE density, and H3K9me3 along with the binary classification of the 10 kb windows as core or LS for machine learning. Four supervised machine learning algorithms were used to train (i.e. learn) on 80% of the data (2890 regions) using a 10-fold cross validation repeated three times, while the remaining 20% (721 regions) were used to test the model (i.e. predict). Repeated cross-validation and parameter tuning identified the best model parameters based on accuracy (Figure 5—figure supplement 1). Assessing the classifier’s performance using area under the receiver operating characteristic (auROC) curve suggested excellent results ranging from 0.93 to 0.95 (value of 1 is perfect prediction) (Figure 5A). While auROC is the de facto standard for machine learning performance (Bradley, 1997), it is not appropriate for assessing predictive performance of binary classification problems when the two classes are heavily skewed as it overestimates performance due to the high number of true negatives (Davis and Goadrich, 2006). This is the case for our analysis in which the test set (721 regions) contains only 33 of the known LS regions (4.6%). To more accurately assess model performance, precision-recall curves were employed as these do not use true negatives, and are therefore less influenced by skewed binary classifications (Saito and Rehmsmeier, 2015). All four algorithms consistently outperformed a random classifier, with the boosted classification tree (BCT) and stochastic gradient boosting (GBM) algorithms having the same highest area under the precision-recall curve of 0.52 (Figure 5B). Each final model was used to classify the test data. The resulting confusion matrix indicated that the BCT model only identified 13 of the 33 LS regions (Table 2), resulting in poor recall (Table 3). In contrast, the other three models did identify most of the known LS regions (high recall), but had lower precision caused by the high rate of false positives (Tables 2 and 3). We also assessed the final model performance using Matthews correlation coefficient (MCC) because it is a better measure of binary classification performance for unbalanced data sets (Sokolova et al., 2006). The GBM and random forest (RF) models had the highest MCC values for our experiments (Table 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig5-v2.jpg)
+
+**Figure 5.:** (A) Area under the Response operator curve (auROC) plotting sensitivity and false positive rate (FPR) for four machine learning algorithms, BCT- Boosted classification tree; GBM- stochastic gradient boosting; LR- logistic regression; RF- random forest. The auROC scores are shown next the algorithm key in the gray box. The black dotted line represents the performance of a random classifier. Perfect model performance would be a curve through point (0,1) in the upper left corner. (B) Area under the Precision-Recall curve for the same four models shown in A. Area under the curves are shown in the figure key in the gray box. The black dashed line shows the performance of a random classifier, calculated as the TP / (TP + FN). Perfect model performance would be a curve through point (1,1) in the upper right corner.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The random forrest model was trained using three-time 10-fold cross-validation (CV) under varying conditions for the parameter ‘randomly selected predictor’. The plot shows the average accuracy across the 30 trials for each variable level as a black square. (B) Average accuracy results from three-time 10-fold CV using the boosted classification tree algorithm. The variables ‘number of trees’ (x-axis) and ‘max tree depth’ (blue, green, black lines) were varied across the trials. Each data point represents the average accuracy across the CV. (C) Average accuracy results from three-time 10-fold CV using the stochastic gradient boosting algorithm. The variables ‘number of boosting iterations’ (x-axis), ‘shrinkage’ (y-axis), ‘minimum terminal node size’ (columns), and max tree depth (blue, green, black lines) were varied across the trials. Each data point represents the average accuracy across the CV. (D) The individual accuracy measurements and box plot for the final models picked for each algorithm. Results are from the 30 CV runs.
 
 Our original intention for running the ML analysis was to determine if genomic and chromatin characteristics could be used to identify the previous LS and core regions, which our results show to be true (e.g. high recall). However, subsequently we were interested to explore the relatively large number of false positives (i.e. regions classified as LS by the ML analysis that were previously classified as core). Since the original classification of core and LS in V. dahliae was based on presence/absence variation of only a limited set of strains (de Jonge et al., 2013; Faino et al., 2016), we reasoned it was possible that the false positives could in fact be genuine LS regions that were originally missed. Alternatively, the false positive regions may be errors by the ML models, and therefore not genuine LS regions.
 
 The two best models from the initial testing, GBM and RF, were used to further understand the nature of the false positives. The GBM and RF models predicted a total of 96 and 81 regions as LS, respectively, suggesting there could be two to three times more LS DNA than previously identified. We re-ran the GBM and RF algorithms on 15 new training-test splits, independently training and predicting on each set (see Materials and methods for details). This approach nearly saturated the genome, providing multiple predictions per window and only 124 of the 3611 regions were missed (Figure 6—figure supplement 1). The average MCC performance estimate of the GBM and RF classifiers were 0.53 and 0.48 over the 15 runs, and our results indicate consistent performance across the independent predictions (Figure 6A; Figure 6—figure supplement 2; Supplementary file 1- Tables 7 and 8). The GBM classifier predicted a total of 285 of the 10 kb regions as LS, while the RF classifier predicted 388 (Supplementary file 1- table 9,10). The LS predictions for the two models were in agreement for 280 regions, which is 98% of the GBM predictions and 72% of those from the RF (Figure 6B), overall showing high agreement between the two classifiers (Figure 6—figure supplement 3).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-v2.jpg)
+
+**Figure 6.:** (A) Two machine learning algorithms, Stochastic Gradient Boosting (GBM) and Random Forest (RF), were used to predict Lineage-Specific (LS) regions from 15 independent training-test splits (80/20). Classifier performance was measured for each of the 15 trials, and summarized as a boxplot with each trial represented as a point. (B) Venn diagram showing the overlap between the results of the two classifiers and the original observations of LS regions (de Jonge et al., 2013; Faino et al., 2016). Each slice of the diagram shows the number of LS regions predicted, see Materials and methods for additional details. (C) Schematic representation of the eight chromosomes (labeled on right) of V. dahliae strain JR2. Core (gray) and LS (green) classification for 10 kb windows. The consensus predictions were those made by both the GBM and RF model (in total 280). (D) Boxplot showing a significant difference for in planta gene induction between core and LS genes, Mann-Whitney U test p-value=1.34e-50. (E) Density distribution for core (gray) and LS (orange) elements based on absence counts over 100 bp windows. The mean absence counts are shown as a dashed vertical line. (F) Similar to E but the analysis was conducted for TEs. (G) Boxplot showing no significant difference between core and LS TE elements for absence counts, Mann-Whitney U test p-value=0.92. (H) Similar to E but the analysis was conducted for genes. (I) Boxplot showing a significant difference between core and LS genes for absence counts, Mann-Whitney U test p-value=3.82e-104. ns, non-significant; **** p-value<1.00e-4.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The genomic data were compiled into 3611 10 kb windows. For machine learning training and testing (related to Figure 6), only 20% of the data could be used for prediction. To generate predictions genome wide, we randomly and independently split the data into training and testing (80:20) an generated predictions. Therefore, each regions could have received more than one prediction. The above distribution profile shows that a majority of the regions received three predictions, with a large proportion of the data having received between 2 and 4 predictions. Only 124 regions received no prediction by change. For each split, we ensured that the population distribution of ~20:1 (core:LS) was maintained in the training and testing data.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** For each trail, the data set were split 80:20, training and testing, 15 independent times. For each data split, the model was trained and tested and the performance was assessed using Recall (A) and Precision (B). The x-axis’ show the data split trial. Results for each trial are shown as an orange triangle connected with a dashed line for Random Forrest (RF) based classification and a gray point for Stochastic Gradient Boosting (GBM). The mean across the 15 trials is shown by a solid horizontal line of the respective color.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The eight chromosomes of V. dahliae are labeled at the right (Chr. X) along with the physical DNA size indicated at the bottom. (A) GBM model predictions for 10 kb windows as either core or LS regions are shown in gray and yellow, respectively. The GBM model predicted a total of 285 LS regions. (B) RF model predictions for 10 kb windows as either core and LS regions shown are shown in gray and blue, respectively. The RF model predicted a total of 388 LS regions.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Box plot of the LS region sizes for the New classification based on model consensus and the previous LS classification. The number of regions, their mean and standard deviation (Std) are shown above the respective box plots. The means were not statistically significantly different, Mann-Whitney U-Test, p-value=0.93.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (Top) The genome of V. dahliae was split into 10 kb windows, and labeled as core or LS based on previous observations, shown in Figure 4D, re-shown here for comparison. (Bottom) Same 10 kb genomic windows and data, but the regions are now defined as core and LS based on the consensus machine learning predictions. The core regions are shown in blue as circles. LS regions shown as yellow triangles. Points are plotted according to TPM ATAC-seq signal (x-axis) and H3K27me3 ChIP-seq TPM (y-axis). The size of each point is proportional to the number of TEs in the 10 kb window, shown as TE density. The marginal density plots are shown opposite of the respective axis.
 
 A consensus prediction was generated for each 10 kb DNA segment, where a region was classified LS if predicted by both models, resulting in 280 high confidence LS regions. An additional 41 regions were classified LS using a conservative joining step in which a single predicted core region was called LS if it was flanked by LS predictions on both sides (see Materials and methods). LS regions that were consecutive or within 20 kb of each other were concatenated to form longer LS segments, resulting in a total of 91 LS regions comprised of 3.33 Mb of DNA (Figure 6C). The original LS classification liberally merged LS regions to form four main regions and an additional four smaller regions, altogether totaling 8 LS regions and 1.82 Mb of DNA (Faino et al., 2016). Comparing the new consensus LS classification with the original classification, we find the new LS regions have a shorter, but not statistically significantly different, mean length (mean length = 36578 bp new LS, mean length = 226898 bp old LS, Mann-Whitney U-test, Holm adjusted p-value=0.93) (Figure 6—figure supplement 4), but the total amount of DNA classified as LS has increased nearly two times. Also, the newly defined set of LS regions appears to more clearly delineate the LS and core regions (Figure 6—figure supplement 5). That is, using the new core and LS classification, the separation between core and LS becomes more distinct. The newly described LS regions go beyond the original definition of LS (Klosterman et al., 2011; de Jonge et al., 2013), and as such, we propose to refer to the newly defined LS regions as ‘adaptive genomic regions’.
 
@@ -69,9 +305,25 @@ Under the hypothesis that the newly identified classifications from ML were not 
 
 Collectively, these analyses suggest that ML algorithms can be used to predict new LS regions based on epigenetic and physical DNA accessibility data. The identification of potentially new LS regions missed in the original classification provides new avenues to identify proteins important for host infection and adaptation. Our predictions were validated by showing enrichment for functional categories of genes known to be important for infection and host adaptation. Our results further show that the expanded classifications represent regions of the genome that are more variable across strains of the species and uncover the new finding that LS genes in particular experience greater PAV in V. dahliae. These results support that genome structure is influencing genome function and demonstrates a ML approach for predictive biology that advances our understanding of genome biology.
 
-## Unsupervised genome clustering using chromatin data supports functional differences for core and LS classification
+### Unsupervised genome clustering using chromatin data supports functional differences for core and LS classification
 
 Using the described supervised learning approach, we were able to identify new regions of the genome as LS, and subsequently validated that these new regions fit the characteristics of LS function. To further confirm these results and define the functional genome, uniform manifold approximation and projection (UMAP) (McInnes et al., 2018a) was employed for dimensional reduction of TEs and genes based on transcriptional, chromatin and DNA openness data. The significance of this alternative approach is that it is unsupervised, and does not rely on, or is influenced by, prior LS and core classifications. Under the hypothesis that genome structure influences genome function, a prediction is that LS and core classification (evolutionary function) should show a non-random spatial association when layered on-top of the UMAP clustering (genome structure and function data). This approach generated three distinct UMAP groups for TEs, which we termed Group1, 2 and 3 (Figure 7A). When the LS and core classification were applied to the UMAP groups, Group1 and Group2 displayed significant non-random associations of core- and LS-designated elements respectively (x-axis p-value=1.77e-38 and y-axis p-value=9.0e-80, Mann-Whitney U test) (Figure 7A). Additionally, the core and LS elements were enriched in Group1 and Group2, respectively, (X2 = 348.84, p=1.78e-76) (Supplementary file 1- table 14). To understand the UMAP groups, each genomic variable used for UMAP was summarized across the three groups (Figure 7—figure supplement 1). The TEs in Group1 have the lowest GC content, transcriptional activity, and DNA openness, along with the highest CRI, H3K9me3 signal, and DNA methylation (Supplementary file 1- table 15, Kruskal-Wallis test; Figure 7—figure supplement 1, Conover test with Holm correction). Based on these characteristics, we conclude that Group1 TE elements from UMAP are largely heterochromatic. The TE elements in Group2 and Group3 are more similar to one another based on the per-variable analysis, although many statistically significantly differences exist (Figure 7—figure supplement 1). These findings show that unsupervised genomic clustering on functional and structural data can recapitulate a large part of our previously defined core and LS regions. We interpret this data as supporting a link between genome organization on a physical level (i.e. epigenetics and DNA accessibility), genome function (i.e. transcriptional activity), and genome adaptation to the environment (i.e. LS and core regions). Interestingly, while there was no difference in PAV for TE elements classified as core and LS (Figure 6E), we did find significant PAV differences for the three UMAP groups (Kruskal-Wallis H statistic = 593.73, p-value=1.18e-129) (Figure 7B, Conover test with Holm correction). Within the three UMAP groups, there were also significant differences for PAV between LS and core elements (Figure 7C, Mann-Whitney U test and Holm correction). Specifically, the median absence count for all core TEs was 15 (Figure 6G), but the median count is less than one for the core TEs in UMAP Group2 and Group3, which makeup 39.4% of the core TEs (Figure 7C). It is not clear what accounts for the core TE elements in UMAP Group2 and Group3, which are less defined by heterochromatic characteristics but experience less absence variation across the analyzed V. dahliae strains.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig7-v2.jpg)
+
+**Figure 7.:** (A) Uniform Manifold Approximation and Projection (UMAP) clustering of individual V. dahliae TEs, color coded for core (blue) and LS (red). UMAP clustering in two dimensions resulted in the identification Group1, 2, and 3 elements. Boxplots are shown opposite of the x- and y-axis to quantify the UMAP designation of the LS and core elements. Statistical difference measured using Mann-Whitney U test for UMAP labeling on the x-axis, p-value=1.77e-38, and y-axis, p-value=9.04e-80. (B) Boxplot for TE absence counts for UMAP Group1, 2, and 3 elements. Statistical difference measured using Conover’s test and Holm multiple-test correction of p-values (C) Boxplot for TE absence counts for LS and core elements in UMAP Group1, 2, and 3. Statistical difference measured using Mann-Whitney U test and Holm multiple-test correction of p-values. (D) Similar UMAP clustering as shown in (A), but performed using genes as the clustering elements shown as individual dots. Marginal boxplots shown as in (A), x-axis p-value=5.45e-221, and y-axis p-value=1.84e-28. (E) UMAP gene clustering, color coded to show three groups. (F) Boxplot for in planta gene induction for UMAP Group1, 2, and 3 genes. Statistical difference measured using Conover’s test and Holm multiple-test correction of p-values. **, p-value<0.01; ****, p-value<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** GC content, GC sequence fraction; Jukes Cantor, corrected Jukes Cantor distance of TE comparisons; CRI, Composite RIP index; RNAseq, variance stabilizing transformed log2 RNA-sequencing reads from Xylem-media grown fungus; H3K9me3 and H3K27me3 and ATAC-seq, TPM values of mapped reads from H3K9me3 ChIP-seq, H3K27me3 ChIP-seq, or Assay for transposase accessible chromatin respectively; 5mCG, log2 weighted cytosine DNA methylation+0.01 for CG. Pairwise comparisons were performed using Conover’s test, with Holm multiple testing correction. **, p-value<0.01; ****, p-value<0.0001.ns, Non-significant p-value at a = 0.05.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** GC content, GC sequence fraction; RNAseq, log2 TPM+1 of RNA-sequencing reads from PDB grown fungus; H3K9me3 and H3K27me3 and ATAC-seq, TPM values of mapped reads from H3K9me3 ChIP-seq, H3K27me3 ChIP-seq, or Assay for transposase accessible chromatin respectively; 5mCG, log2 weighted cytosine DNA methylation+0.01 for CG. There were no significant differences for the comparisons of DNA methylation levels at a = 0.05. Pairwise comparisons were performed using Conover’s test, with Holm multiple testing correction. *, p-value<0.05; ****, p-value<0.0001.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/62208/elife-62208-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** dahliae strain. (A) Scatter plot showing each 11,429 genes as a point following the UMAP results. Each gene is colored according to its absence count across 42 V. dahliae strains. (B) Box plot showing the distribution of gene absence counts for each of the three UMAP groups. (C) Similar plot as shown in A, but only genes that have an absence count greater than zero are plotted. (D) Similar to B, but only genes that have an absence count greater than zero are plotted. Pairwise comparisons were performed using Conover’s test, with Holm multiple testing correction. There were 2130, 8140, and 1159 genes in UMAP Group1, 2, and 3 respectively for A and B. There were 666, 3156 and 441 genes in UMAP Group1, 2, and 3 respectively for C and D. ns, non-significant a = 0.05; ****, p-value<0.0001.
 
 We similarly analyzed genes using UMAP, under the same prediction that LS and core elements would show spatial grouping within the UMAP analysis. Here, UMAP grouped the majority of the genes in the genome (89.9%) into a single cluster (Figure 7D). Within this group, we observed significant local-clustering of LS classified genes (x-axis p-value=5.45e-221 and y-axis p-value=1.84e-28, Mann-Whitney U test and Holm correction), which can be seen as an ‘island’ in the upper left section of the group (Figure 7D). Based on this, the large group was further sub-divided based on a visible separation, and the UMAP results were analyzed based on the resulting three groups (Figure 7E). The UMAP Group1 genes contained four times more LS genes than expected (X2 = 2119.4, p-value=0) (Supplementary file 1- table 16), and Group1 containing 75% of the LS genes. Furthermore, Group1 genes had the lowest GC content and transcription in axenic culture, and the highest H3K9 and H3K27 trimethylation (Supplementary file 1- table 17, Kruskal-Wallis test; Figure 7—figure supplement 2, Conover test with Holm correction). Interestingly, the Group1 genes also had the highest in planta gene induction, which was not a variable used for UMAP creation, further validating that UMAP generated groups with relevant biological differences (Kruskal-Wallis H statistic = 1582.09, p-value=0) (Figure 7F, Conover test with Holm correction). There was no significant difference for gene absence counts between the three groups (Kruskal-Wallis H statistic = 4.18, p-value=0.09) (Figure 7—figure supplement 3A,B), however this was influenced by the majority of genes having a zero absence count (i.e. are conserved). When only genes with an absence count greater than 0 were analyzed (i.e. the gene was missing from at least one strain), Group1 genes had a significantly higher mean absence count (Group1 = 13.4; Group 2 = 1.9; Group 3 = 3.1, Kruskal-Wallis H statistic = 583.06, p-value=2.46e-127) (Figure 7—figure supplement 3C,D, Conover test with Holm correction). Thus, the UMAP Group1 genes have characteristics of heterochromatin when grown axenically, are enriched for LS classified genes, display significantly higher in planta gene induction, and the genes have the highest absence counts across the analyzed V. dahliae strains. These results show that unsupervised UMAP groupings are able to capture functionally relevant biological groupings based on genomic and chromatin data, a previously unreported link.
 
@@ -89,41 +341,107 @@ We acknowledge that our model does not strictly differentiate all regions of the
 
 ## Materials and methods
 
-## Fungal growth and strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (V. dahliae)</td>
+      <td>JR2, wild-type</td>
+      <td>PMID:26286689</td>
+      <td></td>
+      <td>Fungal Biodiversity Center (CBS), 143773</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (V. dahliae)</td>
+      <td>JR2, Δhp1</td>
+      <td>https://doi.org/10.1101/2020.08.26.268789</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti H3K9me3 (Polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39765</td>
+      <td>ChIP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti H3K27me3 (Polyclonal)</td>
+      <td>Active Motif</td>
+      <td>39155</td>
+      <td>ChIP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRF-HU2</td>
+      <td>Frandsen et al., 2008</td>
+      <td></td>
+      <td>USER-cloning</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ DNA Methylation-Gold kit</td>
+      <td>Zymo Research</td>
+      <td>D5005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA library Preparation</td>
+      <td>Illumina</td>
+      <td>FA-121–1030</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fungal growth and strain construction
 
 V. dahliae strain JR2 (CBS 143773) was used for experimental analysis (Faino et al., 2015). The strain was maintained on potato dextrose agar (PDA) (Oxoid, Thermo Scientific, CM0139) and grown at 22°C in the dark. For liquid grown cultures, conidiospores were collected from PDA plates after approximately two weeks and inoculated into flasks containing the desired media at a concentration of 2 × 104 spores per mL. Media used in this study include PDA, half-strength Murashige and Skoog plus vitamins (HMS) (Duchefa-Biochemie, Haarlem, The Netherlands) medium supplemented with 3% sucrose and xylem sap (abbreviated, X) collected from greenhouse grown tomato plants of the cultivar Moneymaker. Liquid cultures were grown for four days in the dark at 22°C and 160 RPM. The cultures were strained through miracloth (22 μm) (EMD Millipore, Darmstadt, Germany), pressed to remove liquid, flash frozen in liquid nitrogen and ground to powder with a mortar and pestle. Samples were stored at −80°C if required prior to nucleic acid extraction.
 
 The Δhp1 strain was constructed as previously described (Santhanam, 2012). Briefly, the genomic DNA regions flanking the 5’ and 3’ HP1 coding sequence were amplified (left border, For. Primer, 5’-GGTCTTAAUGACCTGAAGAATCGAGCAAGGA and Rev. primer, 5’-GGCATTAAUATGAAAGCACCGGGATTTTTCT; right border, For. Primer, 5’-GGACTTAAUATGCTGTTGGGAGGCAGAATAA Rev. primer, 5’-GGGTTTAAUCCACGTAGATGGAGGGGTAGA). The PCR products were cloned in to the pRF-HU2 vector system (Frandsen et al., 2008) using USER enzyme following manufactured protocol (New England Biolabs, MA, USA). Correctly ligated vector was transformed into Agrobacterium tumefaciens strain AGL1 used for V. dahliae spore transformation (Santhanam, 2012). Colonies of V. dahliae growing on hygromycin B selection after 5 days were moved to individual plates containing PDA and hygromycin B. Putative transformants were screened using PCR to check for deletion of the HP1 sequence (For. Primer, 5’- AATCCCGCAAGGGAAAAGAGAC and Rev. primer, 5’- CGTGTGCTTTGTCTTCTGACCA) and the integration of the hygromycin B sequence (For. Primer, 5’- TGGAATATGCCACCAGCAGTAG and Rev. primer, 5’- GGAGTCGCATAAGGGAGAGCG) at the specific locus.
 
-## Bisulfite sequencing and analysis
+### Bisulfite sequencing and analysis
 
 The wild-type V. dahliae strain and Δhp1 were grown in liquid PDA for three days, flash frozen and collected as described earlier. DNA was extracted from a single sample of wild-type strain JR2 and Δhp1 and sent to the Beijing Genome Institute (BGI) for bisulfite conversion, library construction and Illumina sequencing. Briefly, the DNA was sonicated to a fragment range of 100–300 bp, end-repaired and methylated sequencing adapters were ligated to 3’ ends. The EZ DNA Methylation-Gold kit (Zymo Research, CA, USA) was followed according to manufacturer guidelines for bisulfite conversion of non-methylated DNA. Libraries were paired-end 100 bp sequenced on an Illumina HiSeq 2000.
 
 Whole-genome bisulfite sequencing reads were analyzed using the BSMAP pipeline (v. 2.73) and methratio script (Xi and Li, 2009). The results were partitioned into CG, CHG and CHH cytosine sites for analysis. Only cytosine positions containing greater than four sequencing reads were included for analysis. Methylation levels were summarized as weighted methylation percentage, calculated as the number of reads supporting methylation over the number of cytosines sequenced or as fractional methylation, calculated as the number of methylated cytosines divided by all cytosine positions (Schultz et al., 2012). For fractional methylation, a cytosine was considered methylated if it was at least 5% methylated from all the reads covering that cytosine. As such, weighted methylation captures quantitative aspects of methylation, while fractional methylation is more qualitative. Weighted and fractional methylation were calculated over intervals described in the text, including genes, promoters (defined as the 300 bp upstream of the translation start site), TEs and 10 kb windows. For each feature, weighted and fractional methylation were calculated from the sum of the mapped reads or the sum of the positions, respectively, over the analyzed region. Two sample comparisons were computed using base R (R Development Core Team, 2019) to compute the non-parametric Mann-Whitney U test (equivalent to the two-sample Wilcoxon rank-sum test) and Holm multiple testing correction was used for the associated p-values. Principle component analyses were computed in R using the packages FactoMineR (v 1.42) (Le et al., 2008) and factoextra (v 1.0.5) (Kassambara and Mundt, 2017).
 
-## Transposable element annotation
+### Transposable element annotation
 
 Repetitive elements were identified in the V. dahliae stains JR2 genome assembly (Faino et al., 2015) as well as in three other high-quality V. dahliae genome assemblies (Shi-Kunne et al., 2018) using a combination of LTRharvest (Ellinghaus et al., 2008) and LTRdigest Steinbiss et al., 2009 followed by de novo identification of RepeatModeler (Smit and Hubley, 2015). Briefly, LTR sequences were identified (recent and ancient LTR insertions) and subsequently filtered, for example for occurrence of primer binding sites or for nested insertions (see procedure outlined by Campbell and colleagues for details [Campbell et al., 2014]). Prior to the de novo prediction with RepeatModeler, genome-wide occurrences of the identified LTR elements are masked. Predicted LTR elements and the de novo predictions from RepeatModeler were subsequently combined, and the identified repeat sequences of the four V. dahliae strains were clustered using vsearch (80% sequence identity, search on both strands; v 2.4.4) (Rognes et al., 2016). A non-redundant V. dahliae repeat library that contained consensus sequences for each cluster (i.e. repeat family) was constructed by performing multiple sequence alignments using MAFFT (v7.271) Katoh and Standley, 2013 followed by the construction of a consensus sequence as described by Faino et al., 2016. The consensus repeat library was subsequently manually curated and annotated (Wicker classification [Wicker et al., 2007]) using PASTEC (default databases and settings; search in the reverse-complement sequence enabled) (Hoede et al., 2014), which is part of the REPET pipeline (v2.2) (Flutre et al., 2011), and similarity to previously identified repetitive elements in V. dahliae (Faino et al., 2015; Amyotte et al., 2012). The occurrence and location of repeats in the genome assembly of V. dahliae strain JR2 were determined using RepeatMasker (v 4.0.7; sensitive option). The RepeatMasker output was post-processed using ‘One code to find them all’ (Bailly-Bechet et al., 2014) which supports the identification and combination of multiple matches (for instance due to deletions or insertions) into combined, representative repeat occurrences. We only further considered matches to the repeat consensus library, and thereby excluded simple repeats and low-complexity regions. To estimate divergence time of TEs, each individual copy of a TE was aligned to the consensus of its family using needle, which is part of the EMBOSS package (Rice et al., 2000). Sequence divergence between the TEs and the TE-family consensus was corrected using the Jukes-Cantor distance, with a correction term that accounts for insertions and deletions (Jukes, 1969; Van de Peer et al., 1990). The composite RIP index (CRI) was calculated as previously described (Lewis et al., 2009). Briefly, CRI was determined by subtracting the RIP substrate from the RIP product index, which are defined by dinucleotide frequencies as follows: RIP product index = (TpA/ApT) and the RIP substrate index = (CpA + TpG/ApC + GpT). Positive CRI values indicate the analyzed sequences were subjected to the RIP process. For TE analysis, elements that are less than 100 bp were removed.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 V. dahliae strain JR2 (CBS 143773) was grown in triplicate liquid media PDB, HMS, and xylem sap as described. RNA extraction was carried out using TRIzol (Thermo Fisher Science, Waltham, MA, USA) following manufacturer guidelines. Following RNA re-suspension, contaminating DNA was removed using the TURBO DNA-free kit (Ambion, Thermo Fisher Science, Waltham, MA, USA) and RNA integrity was estimated by separating 2 μL of each sample on a 2% agarose gel and quantified using a Nanodrop (Thermo Fisher Science, Waltham, MA, USA) and stored at −80°C. Library preparation and sequencing was carried out at BGI. Briefly, mRNA were enriched based on polyadenylation purification and random hexamers were used for cDNA synthesis. RNA-sequencing libraries were constructed following end-repair and adapter ligation protocols and PCR amplified. Purified DNA fragments were single-end 50 bp sequenced on an Illumina HiSeq 2000.
 
 Reads were mapped to the V. dahliae stain JR2 genome assembly (Faino et al., 2015) using STAR (v 2.6.0) with settings (--sjdbGTFfeatureExon exon, --sjdbGTFtagExonParentTranscript Parent, --alignIntronMax 400, --outFilterMismatchNmax 5, --outFilterIntronMotifs RemoveNoncanonical) (Dobin et al., 2013). Mapped reads were quantified using the summarizeOverlaps (Lawrence et al., 2013) and variance stabilizing transformation (vst) features of DESeq2 (Love et al., 2014). For TE analysis, the coordinates of the annotated TEs were used as features for read counting. To perform RNAseq analysis over whole genome 10 kb regions, raw mapped reads were summed over 10 kb bins using bedtools (v 2.27) (Quinlan and Hall, 2010) and converted to Transcripts Per Million (TPM) (Wagner et al., 2012) and averaged over the three reps for analysis.
 
-## Chromatin immunoprecipitation and sequencing and analysis
+### Chromatin immunoprecipitation and sequencing and analysis
 
 V. dahliae strain JR2 was grown in PDB and samples collected as described. Approximately 400 mg ground material was resuspended in 4 ml ChIP Lysis buffer (50 mM HEPES-KOH pH7.5, 140 mM NaCl, 1 mM EDTA, 1% Triton X-100, 0.1% NaDOC) and dounced 40 times in a 10 cm3 glass tube with tight fitting pestle on 800 power with a RZR50 homogenizer (Heidolph, Schwabach, Germany), followed by five rounds of 20 s sonication on ice with 40 s rest between rounds with a Soniprep 150 (MSE, London, UK). Samples were redistributed to 2 ml tubes and pelleted for 2 min at max speed in tabletop centrifuge. The supernatants were combined, together with 20 µl 1M CaCl2 and 2.5 µl MNase, and after 10 min of incubation in a 37°C water bath with regular manual shaking, 80 µl 0.5M EGTA was added and tubes were put on ice. Samples were pre-cleared by adding 40 µl Protein A Magnetic Beads (New England Biolabs, MA, United States) and rotating at 4°C for 60 min, after which the beads were captured, 1 ml fractions of supernatant were moved to new 2 ml tubes containing 5 μl H3K9me3 or H3K27me3 antibody (ActiveMotif; #39765 and #39155) respectively and incubated overnight with continuous rotation at 4°C. Subsequently, 20 μl protein-A magnetic beads were added and incubated for 3 hr at 4°C, after which the beads were captured on a magnetic stand and subsequently washed with 1 ml wash buffer (50 mM Tris HCl pH 8, 1 mM EDTA, 1% Triton X-100, 100 mM NaCl), high-salt wash buffer (50 mM Tris HCl pH 8, 1 mM EDTA, 1% Triton X-100, 350 mM NaCl), LiCl wash buffer (10 mM Tris HCl pH8, 1 mM EDTA, 0.5% Triton X-100, 250 mM LiCl), TE buffer (10 mM Tris HCl pH 8, 1 mM EDTA). Nucleosomes were eluted twice from beads by addition of 100 μl pre-heated TES buffer (100 mM Tris HCl pH 8, 1% SDS, 10 mM EDTA, 50 mM NaCl) and 10 min incubation at 65°C. 10 mg /ml 2 μl Proteinase K (10 mg /ml) was added and incubated at 65°C for 3 hr, followed by chloroform clean-up. DNA was precipitated by addition of 2 volumes 100% ethanol, 1/10th volume 3 M NaOAc pH 5.2 and 1/200th volume 120 mg/ml glycogen, and incubated overnight at −20°C. Two ChIP replicates were performed for each antibody from independently grown samples. Sequencing libraries were prepared using the TruSeq ChIP Library Preparation Kit (Illumina) according to instructions, but without gel purification and with use of the Velocity DNA Polymerase (BioLine, Luckenwalde, Germany) for 25 cycles of amplification. Single-end 125 bp sequencing was performed on the Illumina HiSeq2500 platform at KeyGene N.V. (Wageningen, the Netherlands).
 
 Reads were mapped to the reference JR2 genome, using BWA-mem with default settings (Li, 2013). For ChIP and ATAC-seq mapping, three regions of the genome were masked due to aberrant mapping, possibly owing to sequence similarity to the mitochondrial genome (chr1:1–45000, chr2:3466000–3475000, chr3:1–4200). This is similar to what is described as blacklisted regions in other eukaryotic genomes (Amemiya et al., 2019). The raw mapped reads were counted either over the TE coordinates or 10 kb intervals for the two separate analyses. The raw mapped reads were converted to TPM and the average of the two ChIP-seq replicates were used for analysis.
 
-## Assay for transposase-accessible chromatin (ATAC)-sequencing and analysis
+### Assay for transposase-accessible chromatin (ATAC)-sequencing and analysis
 
 The V. dahliae strain JR2 was grown in PDB liquid media as described. Mycelium was collected, filtered, rinsed and flash frozen in liquid nitrogen. The ATAC-seq procedure was carried out mainly as described previously (Buenrostro et al., 2015). Nuclei were collected by resuspending ground mycelium in 5 mL of ice-cold Nuclei Isolation Buffer (NIB) (100 mM NaCl, 4 mM NaHSO4, 25 mM Tris-HCl, 10 mM MgSO4, 0.5 mM EDTA, 0.5% NP-40 including protease inhibitors added at time of extraction, 2 mM Phenylmethanesulfonyl fluoride (PMSF), 100 µM Leupeptin, 1 µg/mL Pepstatin, 10 µM E-64). The homogenate was layered onto 10 mL of an ice-cold sucrose-Ficoll gradient (bottom layer 5 mL of 2.5M sucrose in 25 mM Tris-HCl, 5 mL 40% Ficoll 400 (GE Biosciences Corporation, NJ, USA)). Nuclei were separated into the lower phase by centrifugation at 2000 g for 30 min at 4°C. The upper layer was discarded and the lower phase (~4 mL) moved to another collection tube containing 5 mL of ice-cold NIB. Nuclei were pelleted at 9000 g for 15 min at 4°C and re-suspended in 3 mL of NIB. The integrity of the nuclei and their concentration in the solution were estimated by DAPI staining (DAPI Dilactate 5 mg/mL, used at a 1/2000 dilution for visualization) and counted on a hemocytometer. A total of 200,000 nuclei were transferred to a 1.5 mL microfuge tube, and nuclei pelleted at 13,000 g for 15 min at 4°C and resuspended in the transposition reaction (20 µL of 2x Nextera reaction buffer, 0.5 µL of Nextera Tn5 Transposase, 19.5 µL of nuclease-free H20) (Illumina, Nextera DNA library Preparation kit FA-121–1030) and the reaction was carried out for 5 min at 37°C. Empirical testing showed this Tn5 incubation period and nuclei density resulted in optimal DNA fragmentation, and a single sample was used for further library preparation and sequencing. The reaction was halted, and fragmented DNA purified using a MinElute PCR purification kit (Qiagen, MD, USA). The eluted DNA was amplified in reaction buffer (10 µL of transposased DNA, 10 µL nuclease-free H20, 2.5 µL forward PCR primer (5’-AATGATACGGCGACCACCGAGATCTACACTCGTCGGCAGCGTCAGATGTG), 2.5 µL reverse PCR primer (CAAGCAGAAGACGGCATACGAGATTTCTGCCTGTCTCGTGGGCTCGGAGATGT) and 25 µL NEBnext High-Fidelity 2x PCR Master Mix (New England Biolabs, MA, United States)) using thermo-cycler conditions described in Buenrostro et al., 2015 for a total of nine cycles. Amplified library was purified using the MinElute PCR Purification Kit (Qiagen, MD, USA) and paired-end 100 bp sequenced on an Illumina HiSeq4000.
 
 Reads were mapped to the reference JR2 genome with the described blacklisted regions masked, using BWA-mem with default settings (Li, 2013). The mapped reads were further processed to remove duplicates reads arising from library prep and sequencing using Picard toolkit markDuplicates (Picard Toolkit, 2018). The mapped reads were counted either over the TE coordinates or 10 kb intervals for the two separate analyses using bedtools multicov (v 2.27) (Quinlan and Hall, 2010). The reads were converted to TPM values and those numbers used for analysis.
 
-## Machine learning and assessment
+### Machine learning and assessment
 
 The machine learning algorithms were implemented using the classification and regression training (caret) package in R (R Development Core Team, 2019; Kuhn, 2008). The full set of genomic data was used to create a data frame comprising the genome in 10 kb segments as rows and the individual collected variables as columns. The regions were classified as core or LS based on the previous observations (Faino et al., 2016). The model for all algorithms was; classification = ATAC seqTPM + ChIP-H3K27me3TPM + ChIP-H3K9me3TPM + TEdensity + PDB-RNAseqTPM. The data were split into 80% training (i.e. learning) and 20% testing (i.e. prediction), and the proportion of core and LS regions were kept approximately equal in the two splits. Only the training data was used for parameter tuning and testing. Four algorithms used tested- logistic regression (LR), random forest (RF), stochastic gradient boosting (GBM), and boosted classification tree (BCT). The models were assessed by testing various tuning parameters, which are model specific by performing three-time 10-fold cross-validation with the training data. Final parameter settings were determined based on the highest accuracy. The logistic regression model was implemented using method glm and family binomial and this method does not have parameters to tune. The random forest model was implemented using method rf and the tuning parameter ‘Randomly Selected Predictors’ (mtry) was tried at values 1, 2, 3, and 4, with a value of 1 giving the highest mean accuracy (supp fig ML#1). The stochastic gradient boost model was implemented using method gbm and the tuning parameters ‘number of iterations’ (n.trees) was tested at 50, 500, 1000; ‘complexity of trees’ (interaction.depth) was tested at 1, 5, 10; ‘learning rate’ (shrinkage) was tested at 0.01 and 0.001; and ‘minimum node splitting’ (n.minobsinnode) was tested at 1, and 5 (supp fig ML#2). The final stochastic gradient boost model used parameters n.trees = 500, interaction.depth = 5, shrinkage = 0.01, and n.minobsinnode = 5. The boosted classification tree model was implemented using method ada and the tuning parameters ‘number of trees’ (iter) was tested at 100, 1000, 3000; ‘maximum tree depth’ (maxdepth) was tested at 1, 5, 20; and the learning rate (nu) was held constant at 0.01 (supp fig ML#3). The final boosted classification tree model used parameters iter = 3000, maxdepth = 20, and nu = 0.01.
 
@@ -135,10 +453,10 @@ For each genomic region, a consensus designation was assigned based on the highe
 
 For assessment of old and new LS designations, the following three categories of coding sequence were assessed; in planta induced genes, putative effectors and coding sequences for secreted peptides. The in planta induced genes were determined by mapping RNA sequencing reads from V. dahliae colonizing Arabidopsis thaliana at 21 days post-inoculation conducted in triplicate. Gene transcription levels in planta were compared to RNA-seq from in vitro cultivation in PDB using Kallisto quant with settings --single -l 50 s 0.001 --pseudobam (Bray et al., 2016). Differential gene expression between A. thaliana infection and PDB growth were determined using the DESeq2 package (Love et al., 2014), and genes up regulated in Arabidopsis compared to media with an adjusted p-value<0.05 were designated as in planta induced. Secreted peptides were predicted from the amino acid sequences of all annotated genes with SignalP (v5.0) (Almagro Armenteros et al., 2019). Putative effectors were predicted by further analyzing the amino acid sequences of secreted peptides using EffectorP (v2.0) (Sperschneider et al., 2018). For each functional category, a 2 × 2 contingency table was created for the number of genes in the functional category by the LS or core location for both the old and new LS classification. Pearson’s chi-squared test and Yate’s continuity correction were used to determine if the observed values were significantly different than expected. Yate’s error correction reduces the chi-square value and is therefore conservative and less prone to false significance. The chi-square analysis and expected values were calculated using base R chisq.test (R Development Core Team, 2019).
 
-## Analysis of presence absence variation
+### Analysis of presence absence variation
 
 The LS and core designations were assessed for PAV across a collection of 42 V. dahliae strains (Supplementary file 1- table 18). PAV were identified using whole-genome alignments of DNA sequence reads from the 42 V. dahliae strains to the reference genome assembly of V. dahliae strain JR2 (Faino et al., 2015) using BWA-mem with default settings (Li and Durbin, 2009). Library artifacts were marked and removed using Picard Tools with -MarkDuplicates followed by -SortSam to sort the reads (Picard Toolkit, 2018). Raw read coverage was averaged per 100 bp non-overlapping window using the BEDtools -multicov function (Quinlan and Hall, 2010). To estimate presence or absence of a window per strain, we transformed the raw read coverage value to a binary classifier where a region with >= 10 reads indicate presence (1) and <10 reads indicate absence (0). For each window, the number of strains that were classified as absent were summed to get the ‘absent count’ value, which is easily interpretable as the number of strains for which the window was absent. To estimate absence counts for TEs and genes, the 100 bp absence count windows were intersected with TEs and genes using BEDtools -intersect where > 50% of the 100 bp window had to overlap with the feature (Quinlan and Hall, 2010). From these, a mean absence count was calculated per TE and gene and used for further analysis.
 
-## Uniform manifold approximation and projection (UMAP) analysis
+### Uniform manifold approximation and projection (UMAP) analysis
 
 The UMAP algorithm for dimensional reduction (McInnes et al., 2018a) was implemented in Python3 (McInnes et al., 2018b; Virtanen et al., 2020). For TE analysis, the following variables were included when running UMAP: Jukes cantor, fraction of GC content, CRI, variance stabilized transformed RNA-seq from ½ MS grown fungal culture, log2 transformed TPM ChIP-seq for H3K9me3 and H3K27me3, log2 transformed TPM for ATAC-seq and log2 transformed weighted CG DNA methylation with the following parameters n_neighbor = 50, n_components = 2, min_dist = 0.1 and a random_state = 42. For gene analysis, the following variables were included when running UMAP: fraction of GC content, log2 transformed RNA-seq from PDB grown fungal culture, log2 transformed TPM ChIP-seq for H3K9me3 and H3K27me3, log2 transformed TPM for ATAC-seq and log2 transformed weighted CG DNA methylation with the following parameters n_neighbor = 100, n_components = 2, min_dist = 0.1 and a random_state = 42. Additional values for n_neighbor were checked to balance local versus global clustering. For genes, Group1 and Group2 were split based on visual assessment of the larger cluster, attempting to separate genes along what appeared as local clustering. The resulting two-dimensional values from UMAP fit.transform were used for plotting (Hunter, 2007; Waskom et al., 2017) and further statistical analysis (van der Walt et al., 2011; McKinney, 2010; Pedregosa et al., 2011). Pairwise post hoc tests were computed using either Mann-Whitney U-Test or Kruskal-Wallis test followed by post-hoc analysis with Conover’s test using Holm’s multiple-testing correction, implemented from scikit-posthocs as posthoc_mannwhitney and posthoc_conover (Terpilowski, 2019).

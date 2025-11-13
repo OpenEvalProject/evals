@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Neurobiology, Duke University Durham United States
-2. https://ror.org/00py81415 Department of Physics, Duke University Durham United States
+1. Department of Neurobiology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
+2. Department of Physics, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -30,55 +30,93 @@ In this work, we explore a generalization of previously investigated temporally 
 
 ## Results
 
-## Degree of symmetry in learning rule determines retrieval speed
+### Degree of symmetry in learning rule determines retrieval speed
 
-We explore a network model in which the firing rate dynamics of each neuron ri in a population of size N is described by the equation(1)τdridt=−ri+ϕ(∑j=1NJijrj+Iiext(t))
+We explore a network model in which the firing rate dynamics of each neuron ri in a population of size $N$ is described by the equation
 
-where τ is the time constant of firing rate dynamics, Jij is the connectivity matrix, ϕ(x) is a sigmoidal neuronal transfer function (see Methods), and Iiext(t) describes the external input provided to each neuron at time t.
+$$
+\tau\frac{dr_{i}}{dt}=−r_{i}+ϕ(\sumj=1NJ_{ij}r_{j}+I_{i}^{ext}(t))
+$$
 
-We follow a similar learning procedure as in Gillett et al., 2020. A sequence of P random i.i.d standard Gaussian patterns ξiμ is presented to the network and stored in network connectivity. This sequence of patterns modifies the strength of synaptic connections Jij from neuron j to i according to a Hebbian learning rule that transforms pre and post synaptic inputs into synaptic weight changes. The resulting connectivity matrix Jij is a generalization of previously studied rules which combines both temporally symmetric and asymmetric learning (Pereira and Brunel, 2018; Gillett et al., 2020),(2)Jij=AcijNc(∑μ=1Pzif(ξiμ)g(ξjμ)+∑μ=1P−1(1−zi)f(ξiμ+1)g(ξjμ))
+where $\tau$ is the time constant of firing rate dynamics, $J_{ij}$ is the connectivity matrix, $ϕ(x)$ is a sigmoidal neuronal transfer function (see Methods), and $I_{i}^{ext}(t)$ describes the external input provided to each neuron at time $t$.
 
-where cij is a matrix describing the structural connectivity, whose entries are given by i.i.d. Bernoulli random variables, p(cij=1)=c, p(cij=0)=1−c, where c is the connection probability; The functions g(x) and f(x) describe how the synaptic plasticity rule depends on pre and postsynaptic input patterns during learning, respectively; The parameter A controls the overall strength of the recurrent connections; And zi∈[0,1] describes the degree of temporal symmetry at synapses of neuron i. A neuron with fully temporally symmetric plasticity is described by zi=1, while zi=0 indicates a neuron with fully temporally asymmetric plasticity. Note that we focus here to the case of a single sequence stored in synaptic connectivity, but such networks can also store multiple sequences (Gillett et al., 2020).
+We follow a similar learning procedure as in Gillett et al., 2020. A sequence of $P$ random i.i.d standard Gaussian patterns $ξ_{i}^{\mu}$ is presented to the network and stored in network connectivity. This sequence of patterns modifies the strength of synaptic connections $J_{ij}$ from neuron $j$ to $i$ according to a Hebbian learning rule that transforms pre and post synaptic inputs into synaptic weight changes. The resulting connectivity matrix $J_{ij}$ is a generalization of previously studied rules which combines both temporally symmetric and asymmetric learning (Pereira and Brunel, 2018; Gillett et al., 2020),
 
-We first explore the bilinear learning rule scenario (f(x)=g(x)=x) with homogeneous synaptic plasticity, i.e. zi=z for all i=1,…,N. At the two extremes of this variable we can recover previously studied learning rules. When z=0, only the second term in Equation 2 is present, resulting in a purely temporally asymmetric rule. Networks with connectivity constructed using such a rule can recall a sequence of stored patterns, and their sequential retrieval dynamics have been extensively characterized (Gillett et al., 2020). When z=1, synaptic plasticity is temporally symmetric, potentially leading to fixed point attractor dynamics (Pereira and Brunel, 2018). If z is instead fixed to a value between 0 and 1, then the asymmetric component in the plasticity rule leads to the retrieval of the whole sequence, but the speed at which the sequence is retrieved strongly depends on z. For instance, in Figure 1b we demonstrate retrieval for an intermediate value of z=0.5. Retrieval is quantified by plotting the Pearson correlation of the instantaneous firing rate r(t) with each stored pattern ξμ as a function of time (see Methods). During sequence retrieval, correlations with individual patterns in the sequence increase, peak and decrease one after the other, indicating the network transiently visit states close to each of the patterns in succession. We find that in such a network, retrieval speed strongly depends on z. For the parameters in Figure 1b, retrieval proceeds nearly twice as slowly as compared to a network with connectivity arising from a purely asymmetric learning rule, where retrieval speed is fixed by the time constant of the firing rate dynamics (Gillett et al., 2020). However, retrieval speed is fixed by the choice of z (see Figure 1c showing a linear dependence of speed on z), and cannot be dynamically modulated in response to changes in the external input Iiext.
+$$
+J_{ij}=A\frac{c_{ij}}{Nc}(\sum\mu=1Pz_{i}f(ξ_{i}^{\mu})g(ξ_{j}^{\mu})+\sum\mu=1P−1(1−z_{i})f(ξ_{i}^{\mu+1})g(ξ_{j}^{\mu}))
+$$
+
+where $c_{ij}$ is a matrix describing the structural connectivity, whose entries are given by i.i.d. Bernoulli random variables, $p(c_{ij}=1)=c$, $p(c_{ij}=0)=1−c$, where $c$ is the connection probability; The functions $g(x)$ and $f(x)$ describe how the synaptic plasticity rule depends on pre and postsynaptic input patterns during learning, respectively; The parameter $A$ controls the overall strength of the recurrent connections; And $z_{i}\in[0,1]$ describes the degree of temporal symmetry at synapses of neuron i. A neuron with fully temporally symmetric plasticity is described by $z_{i}=1$, while $z_{i}=0$ indicates a neuron with fully temporally asymmetric plasticity. Note that we focus here to the case of a single sequence stored in synaptic connectivity, but such networks can also store multiple sequences (Gillett et al., 2020).
+
+We first explore the bilinear learning rule scenario ($f(x)=g(x)=x)$ with homogeneous synaptic plasticity, i.e. $z_{i}=z$ for all $i=1,…,N$. At the two extremes of this variable we can recover previously studied learning rules. When $z=0$, only the second term in Equation 2 is present, resulting in a purely temporally asymmetric rule. Networks with connectivity constructed using such a rule can recall a sequence of stored patterns, and their sequential retrieval dynamics have been extensively characterized (Gillett et al., 2020). When $z=1$, synaptic plasticity is temporally symmetric, potentially leading to fixed point attractor dynamics (Pereira and Brunel, 2018). If $z$ is instead fixed to a value between 0 and 1, then the asymmetric component in the plasticity rule leads to the retrieval of the whole sequence, but the speed at which the sequence is retrieved strongly depends on $z$. For instance, in Figure 1b we demonstrate retrieval for an intermediate value of $z=0.5$. Retrieval is quantified by plotting the Pearson correlation of the instantaneous firing rate $r(t)$ with each stored pattern $ξ^{\mu}$ as a function of time (see Methods). During sequence retrieval, correlations with individual patterns in the sequence increase, peak and decrease one after the other, indicating the network transiently visit states close to each of the patterns in succession. We find that in such a network, retrieval speed strongly depends on $z$. For the parameters in Figure 1b, retrieval proceeds nearly twice as slowly as compared to a network with connectivity arising from a purely asymmetric learning rule, where retrieval speed is fixed by the time constant of the firing rate dynamics (Gillett et al., 2020). However, retrieval speed is fixed by the choice of $z$ (see Figure 1c showing a linear dependence of speed on $z$), and cannot be dynamically modulated in response to changes in the external input $I_{i}^{ext}$.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig1-v1.jpg)
 
-**Figure 1.:** (a) Schematic of network connectivity after learning with a plasticity rule that combines temporally symmetric and asymmetric components. The network stores a sequence of patterns that activate non-overlapping sets of neurons (colored according to the pattern that activates them). Note connections both within each set, and from one set to the next. (b) Correlation of each stored pattern with network activity following initialization to the first pattern. Retrieval speed is fixed by the balance of symmetry/asymmetry at the synapse. (c) Relative retrieval speed as a function of temporal symmetry (z), showing linear relationship. Solid line: , the speed computed from MFT (see Methods). Black dots: Network simulations. (1−zd) Connectivity of a network with two types of neurons, asymmetric (left) and symmetric (right). Note that the connections from left neurons project to neurons active in the next pattern in the sequence, while connections from right neurons project to neurons active in the same pattern as the pre-synaptic neuron. The two types of neurons can be driven differentially by external inputs ( and Iaext, respectively) (Isexte) Solid lines: correlations as in (a) for two distinct pairs of input strengths (in the range [–1,0] for  and Iaext), demonstrating two different retrieval speeds. Dashed lines: correlations with noisy time-dependent heterogeneous input added to the network (see Methods). In the simulations shown on the center and right panels, Isext, N=80,000, c=0.005, τ=10ms, P=16, A=2, and θ=0. For simplicity, we depict only 3 of the 16 stored patterns in the left schematics.σ=0.1
+**Figure 1.:** (a) Schematic of network connectivity after learning with a plasticity rule that combines temporally symmetric and asymmetric components. The network stores a sequence of patterns that activate non-overlapping sets of neurons (colored according to the pattern that activates them). Note connections both within each set, and from one set to the next. (b) Correlation of each stored pattern with network activity following initialization to the first pattern. Retrieval speed is fixed by the balance of symmetry/asymmetry at the synapse. (c) Relative retrieval speed as a function of temporal symmetry (z), showing linear relationship. Solid line: $1−z$, the speed computed from MFT (see Methods). Black dots: Network simulations. (d) Connectivity of a network with two types of neurons, asymmetric (left) and symmetric (right). Note that the connections from left neurons project to neurons active in the next pattern in the sequence, while connections from right neurons project to neurons active in the same pattern as the pre-synaptic neuron. The two types of neurons can be driven differentially by external inputs ($I_{a}^{ext}$ and $I_{s}^{ext}$, respectively) (e) Solid lines: correlations as in (a) for two distinct pairs of input strengths (in the range [–1,0] for $I_{a}^{ext}$ and $I_{s}^{ext}$), demonstrating two different retrieval speeds. Dashed lines: correlations with noisy time-dependent heterogeneous input added to the network (see Methods). In the simulations shown on the center and right panels, $N=80,000$, $c=0.005$, $\tau=10ms$, $P=16$, $A=2$, $\theta=0$, and $\sigma=0.1$. For simplicity, we depict only 3 of the 16 stored patterns in the left schematics.
 
-## Heterogeneity in synaptic plasticity temporal asymmetry gives rise to a speed control mechanism
+### Heterogeneity in synaptic plasticity temporal asymmetry gives rise to a speed control mechanism
 
-We next explored whether adding heterogeneity to this learning rule, allowing zi to differ across synapses, can produce networks capable of both recalling stored sequences of patterns and modulating the speed of recall. We initially consider a bimodal distribution of degrees of temporal symmetry across the network. For each neuron, zi was drawn randomly and independently as a Bernoulli random variable with probability p(zi=1)=0.5, p(zi=0)=0.5. As a result, the network of N neurons can be divided into two subpopulations of approximately equal sizes Na=Ns=N2 neurons, according to the learning rule present at their synapses:(3)τdriadt=−ria+ϕ(∑j=1NaJijaarja+∑j=1NsJijasrjs+Iaext(t))(4)τdrisdt=−ris+ϕ(∑j=1NsJijssrjs+∑j=1NaJijsarja+Isext(t))
+We next explored whether adding heterogeneity to this learning rule, allowing zi to differ across synapses, can produce networks capable of both recalling stored sequences of patterns and modulating the speed of recall. We initially consider a bimodal distribution of degrees of temporal symmetry across the network. For each neuron, zi was drawn randomly and independently as a Bernoulli random variable with probability $p(z_{i}=1)=0.5$, $p(z_{i}=0)=0.5$. As a result, the network of $N$ neurons can be divided into two subpopulations of approximately equal sizes $N_{a}=N_{s}=\frac{N}{2}$ neurons, according to the learning rule present at their synapses:
 
-where the connectivity matrix is given by(5)JijaX=cijaXNac∑μP−1f(ξia,μ+1)g(ξjX,μ)(6)JijsX=cijsXNsc∑μPf(ξis,μ)g(ξjX,μ)
+$$
+\tau\frac{dr_{i}^{a}}{dt}=−r_{i}^{a}+ϕ(\sumj=1N_{a}J_{ij}^{aa}r_{j}^{a}+\sumj=1N_{s}J_{ij}^{as}r_{j}^{s}+I_{a}^{ext}(t))
+$$
 
-and where X=a,s denotes the presynaptic population. Note that the external input IXext now depends on the population. To reduce the space of possible learning rules, we have assumed that the type of learning at a synapse depends only on the identity of the postsynaptic neuron. The bimodal distribution of zi restricts synapses to only one of the two types of plasticity, but in the final section entitled ‘Retrieval with a broad distribution of learning rules’ we relax this constraint.
 
-In Figure 1e, we show an example of how the stored sequence can be retrieved under different input conditions. In both the top and bottom panels of 1e, network activity is initialized to the first pattern in the sequence, and a constant external input is provided to each subpopulation (‘asymmetric’ input Iaext, and ‘symmetric’ input Isext). In the top panel, the symmetric population is effectively silenced with strongly negative input, resulting in retrieval that lasts approximately τP, consistent with the dynamics being driven purely by the asymmetric component in the learning rule (Gillett et al., 2020). In the bottom panel, this input is no longer strongly negative, causing retrieval time to more than double, due to the effect of the symmetric population that tends to slow down the dynamics. Retrieval in both conditions is robust to noise, as shown in Figure 1E, in which noisy inputs to neurons strongly perturb single neuron firing rates but leave sequence retrieval intact at both speeds (see Methods).
 
-To characterize how retrieval time depends on these two sources of external input, we explored the space of the parameters defining the inputs to the network, Ia and Is. In Figure 2, we show the dependence of retrieval quality and speed on these variables. Retrieval quality is quantified by measuring the maximal correlation of the final pattern in the retrieved sequence. Retrieval speed is measured in units of the inverse of the neural time constant, τ−1. It is computed by measuring the average inverse time between the peaks of consecutive correlations of the network state with consecutive patterns in the sequence. For example, a speed of 0.5 corresponds to an average time difference of 2τ between the peaks of the correlations of two consecutive retrieved patterns with network state. In the upper left quadrant of Figure 2b, speed depends primarily on the strength of input to the symmetric population. Moving away from this region in the direction of increasing symmetric input, retrieval speed slows down to approximately 0.5. In the lower right quadrant, retrieval speed instead depends primarily on the strength of external input provided to the asymmetric population. As this negative input grows, retrieval speed becomes approximately four times slower than the speed of the purely asymmetric network. In Figure 2, we have focused on the region in which external inputs are negative. This is because in our model external inputs are expressed relative to the threshold, and this region leads to biologically plausible average firing rates that are much smaller than the maximal firing rates (see Methods). While we have focused on negative input in Figure 2, retrieval speed is also modulated by positive input. Interestingly, it is the magnitude, not sign, of the input that determines retrieval speed. Expanding the phase diagram in panel (b) to positive input shows that the same dependence holds: values for retrieval speed are approximately symmetric about the Iaext and Isext axes (not shown).
+$$
+\tau\frac{dr_{i}^{s}}{dt}=−r_{i}^{s}+ϕ(\sumj=1N_{s}J_{ij}^{ss}r_{j}^{s}+\sumj=1N_{a}J_{ij}^{sa}r_{j}^{a}+I_{s}^{ext}(t))
+$$
+
+where the connectivity matrix is given by
+
+$$
+J_{ij}^{aX}=\frac{c_{ij}^{aX}}{N_{a}c}\sum\muP−1f(ξ_{i}^{a,\mu+1})g(ξ_{j}^{X,\mu})
+$$
+
+
+
+$$
+J_{ij}^{sX}=\frac{c_{ij}^{sX}}{N_{s}c}\sum\muPf(ξ_{i}^{s,\mu})g(ξ_{j}^{X,\mu})
+$$
+
+and where $X=a,s$ denotes the presynaptic population. Note that the external input $I_{X}^{ext}$ now depends on the population. To reduce the space of possible learning rules, we have assumed that the type of learning at a synapse depends only on the identity of the postsynaptic neuron. The bimodal distribution of zi restricts synapses to only one of the two types of plasticity, but in the final section entitled ‘Retrieval with a broad distribution of learning rules’ we relax this constraint.
+
+In Figure 1e, we show an example of how the stored sequence can be retrieved under different input conditions. In both the top and bottom panels of 1e, network activity is initialized to the first pattern in the sequence, and a constant external input is provided to each subpopulation (‘asymmetric’ input $I_{a}^{ext}$, and ‘symmetric’ input $I_{s}^{ext}$). In the top panel, the symmetric population is effectively silenced with strongly negative input, resulting in retrieval that lasts approximately $\tauP$, consistent with the dynamics being driven purely by the asymmetric component in the learning rule (Gillett et al., 2020). In the bottom panel, this input is no longer strongly negative, causing retrieval time to more than double, due to the effect of the symmetric population that tends to slow down the dynamics. Retrieval in both conditions is robust to noise, as shown in Figure 1E, in which noisy inputs to neurons strongly perturb single neuron firing rates but leave sequence retrieval intact at both speeds (see Methods).
+
+To characterize how retrieval time depends on these two sources of external input, we explored the space of the parameters defining the inputs to the network, $I_{a}$ and $I_{s}$. In Figure 2, we show the dependence of retrieval quality and speed on these variables. Retrieval quality is quantified by measuring the maximal correlation of the final pattern in the retrieved sequence. Retrieval speed is measured in units of the inverse of the neural time constant, $\tau^{−1}$. It is computed by measuring the average inverse time between the peaks of consecutive correlations of the network state with consecutive patterns in the sequence. For example, a speed of 0.5 corresponds to an average time difference of $2\tau$ between the peaks of the correlations of two consecutive retrieved patterns with network state. In the upper left quadrant of Figure 2b, speed depends primarily on the strength of input to the symmetric population. Moving away from this region in the direction of increasing symmetric input, retrieval speed slows down to approximately 0.5. In the lower right quadrant, retrieval speed instead depends primarily on the strength of external input provided to the asymmetric population. As this negative input grows, retrieval speed becomes approximately four times slower than the speed of the purely asymmetric network. In Figure 2, we have focused on the region in which external inputs are negative. This is because in our model external inputs are expressed relative to the threshold, and this region leads to biologically plausible average firing rates that are much smaller than the maximal firing rates (see Methods). While we have focused on negative input in Figure 2, retrieval speed is also modulated by positive input. Interestingly, it is the magnitude, not sign, of the input that determines retrieval speed. Expanding the phase diagram in panel (b) to positive input shows that the same dependence holds: values for retrieval speed are approximately symmetric about the $I_{a}^{ext}$ and $I_{s}^{ext}$ axes (not shown).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig2-v1.jpg)
 
-**Figure 2.:** (a) Retrieval quality, defined as the peak correlation  of the final pattern in the sequence, as a function of external inputs to asymmetric population mP, and to symmetric population Iaext. The white line bounds the region of successful retrieval. Below this line (black region), retrieval is not possible, regardless of initial condition (see Methods). (Isextb) Retrieval speed, measured by averaging the inverse time between consecutive pattern correlation peaks (see Methods). (c) Solid lines: firing rates of three randomly selected neurons during retrieval for parameters corresponding to the circle (left) and diamond (right) in panels (a–b), which are the same parameters used in Figure 1e. Note the approximate (but not exact) temporal scaling by a factor ∼ 3 between these two sets of external inputs. Dashed lines: firing rates in response to the same noisy inputs as in Figure 1e. (d) Activity of 125 units (from a total of 80,000), sorted by peak firing rate time, for parameters corresponding to the circle (left) and diamond (right) in panels (a–b). All other parameters are as in Figure 1b.
+**Figure 2.:** (a) Retrieval quality, defined as the peak correlation $m^{P}$ of the final pattern in the sequence, as a function of external inputs to asymmetric population $I_{a}^{ext}$, and to symmetric population $I_{s}^{ext}$. The white line bounds the region of successful retrieval. Below this line (black region), retrieval is not possible, regardless of initial condition (see Methods). (b) Retrieval speed, measured by averaging the inverse time between consecutive pattern correlation peaks (see Methods). (c) Solid lines: firing rates of three randomly selected neurons during retrieval for parameters corresponding to the circle (left) and diamond (right) in panels (a–b), which are the same parameters used in Figure 1e. Note the approximate (but not exact) temporal scaling by a factor ∼ 3 between these two sets of external inputs. Dashed lines: firing rates in response to the same noisy inputs as in Figure 1e. (d) Activity of 125 units (from a total of 80,000), sorted by peak firing rate time, for parameters corresponding to the circle (left) and diamond (right) in panels (a–b). All other parameters are as in Figure 1b.
 
-## Flexible retrieval with a non-linear plasticity rule
+### Flexible retrieval with a non-linear plasticity rule
 
-We next considered the consequences of a nonlinear learning rule implemented by the following presynaptic and postsynaptic functions in Equation 2:(7)f(x)=qf−1+Θ(x−xf)(8)g(x)=qg−1+Θ(x−xg)
+We next considered the consequences of a nonlinear learning rule implemented by the following presynaptic and postsynaptic functions in Equation 2:
 
-where Θ(x) is the Heaviside function. This rule binarizes the activity patterns ξ according to a threshold, and its effects on persistent and sequential network activity have been studied extensively (Lim et al., 2015; Pereira and Brunel, 2018; Gillett et al., 2020). The parameter qg is chosen such that ∫Dzg(z)=0, which keeps the mean connection strength at zero. The general dependency of retrieval speed on asymmetric and symmetric inputs in a network utilizing this rule is similar to that of the bilinear rule (see Figure 2). One key difference is that a much wider range of speeds can be achieved using a nonlinear rule within the same retrieval quality bounds (see Methods). In fact, retrieval speed can now be arbitrarily slowed down, and even completely stopped when the input to the asymmetric population is sufficiently negative (see white dots in Figure 3b). In this region, persistent activity is stable, and there exists a fixed point attractor correlated with any of the patterns in any stored sequence. There also exists a region in which sequential activity stops in the middle of retrieval and switches to stable persistent activity (see hatched diagonal lines in Figure 3b). Note that retrieval is not considered to be successful in this region (as the sequence is not fully retrieved), and so it is plotted in black.
+$$
+f(x)=q_{f}−1+Θ(x−x_{f})
+$$
+
+
+
+$$
+g(x)=q_{g}−1+Θ(x−x_{g})
+$$
+
+where $Θ(x)$ is the Heaviside function. This rule binarizes the activity patterns $ξ$ according to a threshold, and its effects on persistent and sequential network activity have been studied extensively (Lim et al., 2015; Pereira and Brunel, 2018; Gillett et al., 2020). The parameter qg is chosen such that $\intDzg(z)=0$, which keeps the mean connection strength at zero. The general dependency of retrieval speed on asymmetric and symmetric inputs in a network utilizing this rule is similar to that of the bilinear rule (see Figure 2). One key difference is that a much wider range of speeds can be achieved using a nonlinear rule within the same retrieval quality bounds (see Methods). In fact, retrieval speed can now be arbitrarily slowed down, and even completely stopped when the input to the asymmetric population is sufficiently negative (see white dots in Figure 3b). In this region, persistent activity is stable, and there exists a fixed point attractor correlated with any of the patterns in any stored sequence. There also exists a region in which sequential activity stops in the middle of retrieval and switches to stable persistent activity (see hatched diagonal lines in Figure 3b). Note that retrieval is not considered to be successful in this region (as the sequence is not fully retrieved), and so it is plotted in black.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig3-v1.jpg)
 
-**Figure 3.:** (a) Correlations between stored patterns and network states in asymmetric (left) and symmetric (right) populations, for three different external input combinations (denoted by the inset symbol, see right panel). (b) Retrieval speed as a function of parameters describing external inputs, similarly as in Figure 2. White dots indicate the region in which stable persistent activity of the first pattern is present. Hatched diagonal lines indicate the region in which incomplete sequential activity terminates in stable persistent activity. All parameters are as in Figure 2, except  and A=20. The parameters of the learning rule are σ=0.05, xf=1.5, xg=1.5, and qf=0.8.qf=0.8
+**Figure 3.:** (a) Correlations between stored patterns and network states in asymmetric (left) and symmetric (right) populations, for three different external input combinations (denoted by the inset symbol, see right panel). (b) Retrieval speed as a function of parameters describing external inputs, similarly as in Figure 2. White dots indicate the region in which stable persistent activity of the first pattern is present. Hatched diagonal lines indicate the region in which incomplete sequential activity terminates in stable persistent activity. All parameters are as in Figure 2, except $A=20$ and $\sigma=0.05$. The parameters of the learning rule are $x_{f}=1.5$, $x_{g}=1.5$, $q_{f}=0.8$, and $q_{f}=0.8$.
 
-## Temporally varying external inputs can lead to transitions between persistent and sequential activity
+### Temporally varying external inputs can lead to transitions between persistent and sequential activity
 
-We next explored how this heterogeneity might be used not only to control the speed of dynamics, but also to trigger transitions between qualitatively different dynamics. In Figure 4, we use the same nonlinear model as in the previous section, and present discrete, time-dependent inputs intended to achieve persistent retrieval of a single pattern, followed by sequential retrieval of the remaining patterns at a specified time. To initiate persistent activity, we briefly present the first pattern as an input to the symmetric population. This elicits persistent activity in this population, as reflected by the sustained positive correlation of the symmetric population with the first pattern during the first 200ms (Figure 4b). This activity does not recruit sequential activity in either population, however, as the asymmetric population responsible for that transition is presented with sufficiently strong negative input during this period. To initiate sequential activity, inhibition to the asymmetric population is released after t=0.2 s, prompting the network to retrieve the stored sequence in both populations.
+We next explored how this heterogeneity might be used not only to control the speed of dynamics, but also to trigger transitions between qualitatively different dynamics. In Figure 4, we use the same nonlinear model as in the previous section, and present discrete, time-dependent inputs intended to achieve persistent retrieval of a single pattern, followed by sequential retrieval of the remaining patterns at a specified time. To initiate persistent activity, we briefly present the first pattern as an input to the symmetric population. This elicits persistent activity in this population, as reflected by the sustained positive correlation of the symmetric population with the first pattern during the first 200ms (Figure 4b). This activity does not recruit sequential activity in either population, however, as the asymmetric population responsible for that transition is presented with sufficiently strong negative input during this period. To initiate sequential activity, inhibition to the asymmetric population is released after $t=0.2$ s, prompting the network to retrieve the stored sequence in both populations.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig4-v1.jpg)
 
-**Figure 4.:** (a) Inputs provided to the asymmetric (black) and symmetric population (orange) consist of a ‘preparatory period’ input lasting 200ms, followed by an ‘execution period’ input that is fixed for the rest of the interval. During a 200ms preparatory period, a brief input is presented to the symmetric population for the first 10ms, which drives the network to a state which is strongly correlated with the first pattern in a sequence. This input is removed after 10ms, but the network remains in a persistent activity state corresponding the the first pattern, because a strong negative input is presented to the asymmetric population throughout the entire 200ms, which prevents the network from retrieving the sequence. At the end of this period, the input to the symmetric population is decreased, while the asymmetric population is increased, which leads to retrieval of the sequence (‘execution period’). Sequence retrieval can happen at different speeds, depending on the inputs to the asymmetric and symmetric populations. (b) Correlations with stored patterns in the sequence in each population, in each input scenario. Note correlations in the slow retrieval case are temporally scaled by a factor ∼ 2.5 compared to the fast retrieval case. (c) Example single unit firing rates in each population. Note that for some neurons firing rates do not follow a simple temporal rescaling - for instance the purple neuron in the symmetric population is active at around  in the slow retrieval case, but is not active in the fast retrieval case. All parameters are as in t=0.45Figure 3, except  and θ=0.07.σ=0.05
+**Figure 4.:** (a) Inputs provided to the asymmetric (black) and symmetric population (orange) consist of a ‘preparatory period’ input lasting 200ms, followed by an ‘execution period’ input that is fixed for the rest of the interval. During a 200ms preparatory period, a brief input is presented to the symmetric population for the first 10ms, which drives the network to a state which is strongly correlated with the first pattern in a sequence. This input is removed after 10ms, but the network remains in a persistent activity state corresponding the the first pattern, because a strong negative input is presented to the asymmetric population throughout the entire 200ms, which prevents the network from retrieving the sequence. At the end of this period, the input to the symmetric population is decreased, while the asymmetric population is increased, which leads to retrieval of the sequence (‘execution period’). Sequence retrieval can happen at different speeds, depending on the inputs to the asymmetric and symmetric populations. (b) Correlations with stored patterns in the sequence in each population, in each input scenario. Note correlations in the slow retrieval case are temporally scaled by a factor ∼ 2.5 compared to the fast retrieval case. (c) Example single unit firing rates in each population. Note that for some neurons firing rates do not follow a simple temporal rescaling - for instance the purple neuron in the symmetric population is active at around $t=0.45$ in the slow retrieval case, but is not active in the fast retrieval case. All parameters are as in Figure 3, except $\theta=0.07$ and $\sigma=0.05$.
 
 Note that in this scenario also, a sequence can be retrieved at various speeds, using the same inputs during the persistent period, but changing the level of constant stimulation provided during retrieval (compare left and right panels in Figure 4b). As in a network with only a single asymmetric population, single neuron activity in this network is temporally sparse, with many neurons being active only at specific time intervals (Figure 4c).
 
@@ -86,15 +124,15 @@ In our network, stability of persistent activity requires the dependence of the 
 
 The dynamics shown in Figure 4 reproduces some of the landmark features observed in electrophysiological recordings during delayed motor tasks. In such tasks, a preparatory period follows presentation of a cue (e.g. instructing a target direction or a desired response speed), during which the animal can prepare the motor response, but not execute it (Churchland et al., 2012). This period is typically characterized by persistent activity of specific groups of neurons, whereas during motor execution those same neurons instead display transient activity (Svoboda and Li, 2018).
 
-## Flexible sequence retrieval in networks with a continuous distribution of degrees of temporal symmetry
+### Flexible sequence retrieval in networks with a continuous distribution of degrees of temporal symmetry
 
-Up to this point, we have analyzed a network model in which neurons are separated in two discrete classes distinguished by their plasticity rule (symmetric or asymmetric). For a given postsynaptic neuron, the learning rule present at all presynaptic synapses was chosen to be either temporally symmetric or asymmetric with equal probability, defining two distinct subpopulations of neurons. Can retrieval speed still be modulated by external input when synapses do not fall into such a binary classification, but have more heterogeneous properties? To model this heterogeneity, we chose to embed a continuum of learning rules. Instead of a bimodal distribution for zi in Equation 2, we choose a uniform distribution on the interval [0,1]. The input Iiext provided to each neuron i in Equation 1 is a linear combination of symmetric and asymmetric input components: Iiext=ziIsext+(1−zi)Iaext. We also choose to investigate a network with the previously described non-linear plasticity rule. Figure 5 shows that a network with these modifications also exhibits flexible sequence retrieval, and that speed decreases as the asymmetric input component becomes more negative. However, as shown in Figure 5c, to reach slower speeds a positive Isext is now required. Note that a region of stable persistent activity is no longer present in this scenario, as stable persistent activity requires that a finite fraction of neurons in the network have a symmetric plasticity rule.
+Up to this point, we have analyzed a network model in which neurons are separated in two discrete classes distinguished by their plasticity rule (symmetric or asymmetric). For a given postsynaptic neuron, the learning rule present at all presynaptic synapses was chosen to be either temporally symmetric or asymmetric with equal probability, defining two distinct subpopulations of neurons. Can retrieval speed still be modulated by external input when synapses do not fall into such a binary classification, but have more heterogeneous properties? To model this heterogeneity, we chose to embed a continuum of learning rules. Instead of a bimodal distribution for zi in Equation 2, we choose a uniform distribution on the interval $[0,1]$. The input $I_{i}^{ext}$ provided to each neuron i in Equation 1 is a linear combination of symmetric and asymmetric input components: $I_{i}^{ext}=z_{i}I_{s}^{ext}+(1−z_{i})I_{a}^{ext}$. We also choose to investigate a network with the previously described non-linear plasticity rule. Figure 5 shows that a network with these modifications also exhibits flexible sequence retrieval, and that speed decreases as the asymmetric input component becomes more negative. However, as shown in Figure 5c, to reach slower speeds a positive $I_{s}^{ext}$ is now required. Note that a region of stable persistent activity is no longer present in this scenario, as stable persistent activity requires that a finite fraction of neurons in the network have a symmetric plasticity rule.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig5-v1.jpg)
 
-**Figure 5.:** (a) Firing rate dynamics of five representative neurons during retrieval for each external input configuration (see inset symbols in panel c). (b) Correlation of network activity with each stored pattern during retrieval for each external input configuration. (c) Retrieval speed as described in Figure 2. All parameters are as in Figure 3 except .A=10
+**Figure 5.:** (a) Firing rate dynamics of five representative neurons during retrieval for each external input configuration (see inset symbols in panel c). (b) Correlation of network activity with each stored pattern during retrieval for each external input configuration. (c) Retrieval speed as described in Figure 2. All parameters are as in Figure 3 except $A=10$.
 
-## Learning external input strengths using a reward-based plasticity rule
+### Learning external input strengths using a reward-based plasticity rule
 
 The low-dimensional external inputs used to regulate speed are unrelated to the stored sequential input patterns. This suggests that a mapping from external inputs to retrieval speed can be learned independently from a particular set of sequential patterns. We demonstrated that a reinforcement learning rule can be used to converge to external input values implementing a desired speed (Figure 6). By using a reward signal measuring how similar retrieval is to the desired speed, the rule adjusts initially random external inputs to the appropriate values over the course of multiple trial repetitions (see Methods for details). Critically, once these external input values are learned, they can be used to modulate the retrieval speed of other stored sequences without having to relearn this mapping.
 
@@ -102,9 +140,9 @@ The low-dimensional external inputs used to regulate speed are unrelated to the 
 
 **Figure 6.:** The black and grey lines denote the trajectories for two learning trials targeting different speeds. External inputs start at −0.2 (marked with a circle) and terminate at values implementing desired target speeds of 0.8 and 0.3 (marked with crosses). All parameters are as in Figure 2.
 
-## Flexible retrieval of sequences in a spiking network
+### Flexible retrieval of sequences in a spiking network
 
-We have until now focused exclusively on rate networks that do not obey Dale’s law. We now turn to networks composed of excitatory and inhibitory spiking neurons, as a more realistic model of neurobiological networks. We implemented learning in excitatory to excitatory synaptic connectivity, generalizing the procedure described in Gillett et al., 2020 to two excitatory subpopulations. We found that successful speed control can be obtained in such networks using biases in external inputs to symmetric and asymmetric populations, as in the simpler rate model described above. Figure 7 shows network simulations using two different external input configurations, leading to sequence retrieval at two different speeds. Interestingly, small external input biases (∼1mV) relative to the difference in spiking threshold and resting potential (20mV) are sufficient to generate a temporal rescaling of as large as ∼ 2.
+We have until now focused exclusively on rate networks that do not obey Dale’s law. We now turn to networks composed of excitatory and inhibitory spiking neurons, as a more realistic model of neurobiological networks. We implemented learning in excitatory to excitatory synaptic connectivity, generalizing the procedure described in Gillett et al., 2020 to two excitatory subpopulations. We found that successful speed control can be obtained in such networks using biases in external inputs to symmetric and asymmetric populations, as in the simpler rate model described above. Figure 7 shows network simulations using two different external input configurations, leading to sequence retrieval at two different speeds. Interestingly, small external input biases ($∼1mV$) relative to the difference in spiking threshold and resting potential ($20mV$) are sufficient to generate a temporal rescaling of as large as ∼ 2.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/88805/elife-88805-fig7-v1.jpg)
 
@@ -114,13 +152,13 @@ We have until now focused exclusively on rate networks that do not obey Dale’s
 
 In this paper, we have introduced a new mechanism for flexible control of retrieval speed in networks storing sequences. This mechanism relies on heterogeneity of synaptic plasticity rules across neurons in the network, with different degrees of temporal asymmetry. Neurons with temporally symmetric plasticity act as brakes of the dynamics, as they stabilize network activity in its current state, while neurons with temporally asymmetric plasticity act instead as accelerators, as they push the network toward the next pattern in the sequence. The speed of retrieval can then be modified in a flexible way by changing external inputs driving these two types of neurons. Furthermore, we found that this mechanism can be used to gate transitions between persistent and sequential activity. We showed that appropriate inputs can be learned using a reinforcement learning scheme. Finally, we also showed that networks of spiking neurons can generate the same behavior, provided the excitatory network is subdivided in asymmetric and symmetric neurons.
 
-## Heterogeneity of synaptic plasticity
+### Heterogeneity of synaptic plasticity
 
 Our findings suggest a potential functional role for the experimentally observed diversity in synaptic plasticity rules (Bi and Poo, 1998; Abbott and Nelson, 2000; Sjöström et al., 2001; Mishra et al., 2016; Suvrathan et al., 2016). In particular, a wide diversity of spike-timing dependent plasticity (STDP) curves have been reported in various brain structures, and sometimes in the same structure. In the hippocampus, temporally asymmetric STDP is typically observed in cultures (Bi and Poo, 1998) or in CA3 to CA1 connections in slices in some conditions, but temporally symmetric STDP is observed in area CA3 (Mishra et al., 2016). Interestingly, the degree of temporal symmetry at CA3 to CA1 connections can be modulated by extracellular calcium concentration (Inglebert et al., 2020) and post-synaptic bursting (Wittenberg and Wang, 2006; Inglebert et al., 2020). In the cerebellum, synaptic plasticity rules with diverse temporal requirements on the time difference between parallel fiber and climbing fiber inputs have been found in Purkinje cells in different zones of this structure suvrathan16. While this heterogeneity has been found so far across structures or across different regions in the same structure, this heterogeneity could also be present within local networks, as current experimental methods for probing plasticity only have access to a single delay between pre and post-synaptic spikes in each recorded neuron, and would therefore miss this heterogeneity.
 
 For simplicity, the degree of temporal asymmetry was chosen in our model to depend only on the identity of the postsynaptic neuron. This is consistent with the observation that a model of synaptic plasticity that depends only on the postsynaptic concentration of calcium can account for a range of experimentally observed STDP curves (Graupner and Brunel, 2012). This suggests that heterogeneities in temporal asymmetry could arise due to heterogeneities in biophysical parameters that control calcium dynamics in post-synaptic spines.
 
-## Comparison with other mechanisms of speed control
+### Comparison with other mechanisms of speed control
 
 The mechanism investigated here is distinct from previously described models of input-driven speed control. It does not require adaptation mechanisms or delays to slow down retrieval of subsequent patterns (Sompolinsky and Kanter, 1986; Murray and Escola, 2017). It also does not require presentation of multiple exemplars spanning the desired range of retrieval speeds in order to find the appropriate network structure (Wang et al., 2018). However, the mapping between external input strength and retrieval speed must be learned in order for the network to be able to perform retrieval at desired speeds. Unlike the model explored in Wang et al., 2018, however, once this mapping is learned, it can be used to control the speed of other stored sequences.
 
@@ -128,17 +166,17 @@ Another recent study (Beiran et al., 2023) has investigated how a recurrent netw
 
 Future experimental work could analyze the evolution of neural activity across the training of interval timing tasks, and evaluate whether it is consistent with such a reinforcement-based rule.
 
-## Experimental predictions
+### Experimental predictions
 
 This mechanism presented here makes several predictions regarding the relationship between plasticity rules, external input, and the speed of network dynamics. One prediction is that retrieval speed could be modified by providing different external inputs to each population (asymmetric and symmetric). In vivo, these populations could be identified using the dependence of mean firing rates on speed of retrieval - neurons who increase their rates with slower/faster retrieval speeds would be predicted to be the symmetric/asymmetric neurons, respectively. Targeting one class of neurons or the other, using holographic techniques (see e.g. Marshel et al., 2019) would then be expected to increase or decrease the speed of retrieval. Another prediction is that these cells have distinct profiles of temporal asymmetry in their synaptic plasticity. The model presented here also predicts the existence of ‘null’ input directions, for which no change in retrieval speed is expected as external input is changed. When moving along these ‘null’ directions, single neurons would only be expected to change their temporal firing patterns, but without affecting the speed of retrieval.
 
-## Transitions between persistent and sequential activity
+### Transitions between persistent and sequential activity
 
 Heterogeneity in the learning rule also provides a mechanism that enables input changes to drive transitions in activity states. An example of such a transition is frequently reported in primary motor cortex (M1) during delayed reaching tasks, where a preparatory period with persistent activity or ramping dynamics is followed by an execution period with transient, sequential dynamics (Riehle and Requin, 1989; Li et al., 2016). We demonstrated how an input change can gate such a transition in a simple network model composed of neurons with two distinct plasticity rules, the first temporally symmetric, and the second temporally asymmetric. At the start of the preparatory period, asymmetric neurons are inhibited, and a transient specific input elicits persistent activity in symmetric neurons. When inhibition is removed, asymmetric neurons become activated and drive a transition to sequential activity in both types of neurons.
 
 Inhibitory gating has been previously hypothesized as a mechanism to control the initiation of execution period activity. Analysis of M1 activity suggests that local inhibitory interneurons do not engage in this gating, as putative inhibitory neurons do not appear to be preferentially active during the preparatory period compared to the execution period (Kaufman et al., 2013). However, this does not rule out the possibility that the necessary inhibition could arise from other external inputs to M1. It is also possible that inhibition may not be required at all. Effective silencing of the asymmetric neurons could occur by a reduction of excitatory input during the preparatory period. Recent work in mice suggests that thalamocortical interactions may be a potential candidate for driving the required transition. Recorded activity in motor thalamus during a reaching task shows that at movement onset, thalamus activity is negatively correlated with premotor activity, but positively correlated with activity in M1 (Nashef et al., 2021). In a separate directional licking task, thalamus projections were shown to be required for initiating cued movement, and mimicked presentation of the cue when optogenetically stimulated (Inagaki et al., 2022). An alternative model for transitions between preparatory and execution activity has recently been proposed (Bachschmid-Romano et al., 2023), in which external inputs trigger a switch between a preparatory state and a nearly orthogonal execution state. However, in the model of Bachschmid-Romano et al., 2023, the execution epoch is described by a single pattern, and any temporal dynamics within this epoch is inherited from external inputs, while in the present paper the temporal dynamics during the execution phase is generated by the recurrent connectivity structure.
 
-## Limitations and future directions
+### Limitations and future directions
 
 We have focused here on a simple learning scenario in which a temporally asymmetric plasticity rule imprints a sequence of external input patterns into the recurrent synaptic connectivity. In real neuronal networks, one expects recurrent synaptic inputs to shape the response of a network to external inputs, and therefore how such inputs sculpt recurrent connectivity. Studying such a learning process is outside the scope of this paper, but is an important topic for future work.
 
@@ -146,78 +184,192 @@ In this paper, we have focused on Hebbian specific synaptic plasticity rules to 
 
 ## Methods
 
-## Neuronal transfer function
+### Neuronal transfer function
 
-The neuronal transfer function is given by the sigmoidal function(9)ϕ(h)=rmax2(1+erf(h−θ2σ))
+The neuronal transfer function is given by the sigmoidal function
 
-where θ determines the input at which the neuron fires at half the maximal value rmax, and σ is inversely proportional to the gain. This function was chosen for continuity with previous work (Gillett et al., 2020). We expect that using qualitatively similar functions should not alter the results of this paper.
+$$
+ϕ(h)=\frac{r_{max}}{2}(1+erf(\frac{h−\theta}{\sqrt{2}\sigma}))
+$$
 
-## Noisy inputs
+where $\theta$ determines the input at which the neuron fires at half the maximal value $r_{max}$, and $\sigma$ is inversely proportional to the gain. This function was chosen for continuity with previous work (Gillett et al., 2020). We expect that using qualitatively similar functions should not alter the results of this paper.
 
-We introduce noisy inputs to each neuron in Figures 1e and 2c through independent realizations of an Ornstein-Uhlenbeck process with a mean equal to either Iaext or Isext, respectively, with standard deviation of 0.3, and a correlation time constant of 4 ms. This noise leads to fluctuations of firing rate that are comparable to rate fluctuations induced by sequence retrieval (Figure 2c), while leaving sequence retrieval intact (Figure 1e).
+### Noisy inputs
 
-## Measuring pattern correlations
+We introduce noisy inputs to each neuron in Figures 1e and 2c through independent realizations of an Ornstein-Uhlenbeck process with a mean equal to either $I_{a}^{ext}$ or $I_{s}^{ext}$, respectively, with standard deviation of 0.3, and a correlation time constant of 4 ms. This noise leads to fluctuations of firing rate that are comparable to rate fluctuations induced by sequence retrieval (Figure 2c), while leaving sequence retrieval intact (Figure 1e).
 
-To compute the Pearson pattern correlation mμ(t), we compute the overlap of each of the stored patterns ξμ with the instantaneous firing rates for the entire population and divide by the standard deviation of firing rate activity: mμ(t)=1N∑i=1Nriξiμ/σr(t). In Figures 3 and 4, we compute the correlations separately for each subpopulation.
+### Measuring pattern correlations
 
-## Measuring retrieval speed
+To compute the Pearson pattern correlation $m_{\mu}(t)$, we compute the overlap of each of the stored patterns $ξ_{\mu}$ with the instantaneous firing rates for the entire population and divide by the standard deviation of firing rate activity: $m_{\mu}(t)=\frac{1}{N}\sumi=1Nr_{i}ξ_{i}^{\mu}/\sigma_{r}(t)$. In Figures 3 and 4, we compute the correlations separately for each subpopulation.
 
-To measure retrieval speed v in Figures 2, 3 and 5, we recorded the times at which each pattern correlation attained its peak value, and computed the average time difference between the peaks of successive patterns in a sequence. We then divided the time constant of the rate dynamics by this averaged value in order to convert speed into units of τ−1:(10)v=τ1P−1∑l=2Pargmaxt(ml(t))−argmaxt(ml−1(t))
+### Measuring retrieval speed
+
+To measure retrieval speed $v$ in Figures 2, 3 and 5, we recorded the times at which each pattern correlation attained its peak value, and computed the average time difference between the peaks of successive patterns in a sequence. We then divided the time constant of the rate dynamics by this averaged value in order to convert speed into units of $\tau^{−1}$:
+
+$$
+v=\frac{\tau}{\frac{1}{P−1}\suml=2Pargmax_{t}(m_{l}(t))−argmax_{t}(m_{l−1}(t))}
+$$
 
 To account for simulations with dynamics that did not have well-defined correlation peaks (typically observed at extreme storage loads or with persistent activity), we excluded peak time differences that exceeded two standard deviations of the average difference value. If no peak time difference passed this criteria, the sequence was considered not retrieved (black regions in Figures 2, 3 and 5).
 
-## Mean-field theory of single-population network with variable degree of temporal asymmetry
+### Mean-field theory of single-population network with variable degree of temporal asymmetry
 
-In this section we derive a mean-field theory for the single population network with homogeneous synaptic plasticity. This is a generalization of the theory derived for a purely temporally asymmetric network Gillett et al., 2020. We define order parameters qμ(t)=E(r(t)ξμ) and M=E((r)2(t)), describing the average overlap of network activity with pattern ξμ and the average squared firing rate, respectively.
+In this section we derive a mean-field theory for the single population network with homogeneous synaptic plasticity. This is a generalization of the theory derived for a purely temporally asymmetric network Gillett et al., 2020. We define order parameters $q_{\mu}(t)=E(r(t)ξ^{\mu})$ and $M=E((r)^{2}(t))$, describing the average overlap of network activity with pattern $ξ^{\mu}$ and the average squared firing rate, respectively.
 
-Using Equations 1 and 2, we derive equations describing the temporal evolution of the overlaps (for l∈{2,...,P}),(11)τdqldt=−ql+∫DξlDxξlϕ((1−z)ξlql−1+zξlql+Rlx+Iext)
+Using Equations 1 and 2, we derive equations describing the temporal evolution of the overlaps (for $l\in{2,...,P}$),
 
-where Rl is a ‘noise’ term due to patterns μ≠l in the sequence (see Gillett et al., 2020 for details) By making the following change of variables:(12)v=qlzξl+xRl(qlz)2+Rl2(13)u=ξlRl−qlzx(qlz)2+Rl2
+$$
+\tau\frac{dq_{l}}{dt}=−q_{l}+\intDξ^{l}Dxξ^{l}ϕ((1−z)ξ^{l}q_{l−1}+zξ^{l}q_{l}+R_{l}x+I^{ext})
+$$
 
-in which we have defined qlz=(1−z)ql−1+zql, we obtain(14)τdqldt=−ql+qlzG((qlz)2+Rl2),
+where $R_{l}$ is a ‘noise’ term due to patterns $\mu\neql$ in the sequence (see Gillett et al., 2020 for details) By making the following change of variables:
 
-where(15)G(x)=∫Dvϕ(vx+Iext)x.
+$$
+v=\frac{q_{l}^{z}ξ_{l}+xR_{l}}{\sqrt{(q_{l}^{z})^{2}+R_{l}^{2}}}
+$$
 
-Assuming that G(x)≈1, which is the case during successful retrieval (see also Gillett et al., 2020), then we can simplify to:(16)τ1−zdqldt=−ql+ql−1
 
-This equation makes it clear that retrieval speed depends linearly on z, that is on the balance between the symmetric and asymmetric components of synaptic plasticity.
 
-## Mean-field theory of heterogeneous network and conditions for retrieval
+$$
+u=\frac{ξ_{l}R_{l}−q_{l}^{z}x}{\sqrt{(q_{l}^{z})^{2}+R_{l}^{2}}}
+$$
 
-Mean-field theory can be used to further analyze retrieval speed dynamics, along the lines of Gillett et al., 2020. We define order parameters qμX(t)=E(rX(t)ξX,μ) and MX=E((rX)2(t)), describing the average overlap of network activity in subpopulation X with pattern ξX,μ and the average squared firing rate in subpopulation X, respectively. The equations for the overlaps are given by:(17)τdqladt=−qla+(ql−1a+ql−1s)⋅Ga((ql−1a+ql−1s)2+(Rla)2)(18)τdqlsdt=−qls+(qls+qla)⋅Gs((qla+qls)2+(Rls)2)
+in which we have defined $q_{l}^{z}=(1−z)q_{l−1}+zq_{l}$, we obtain
 
-where Gis given, for arbitrary transfer functions ϕ by:(19)GX(x)=∫Dvϕ(vx+IXext)x.
+$$
+\tau\frac{dq_{l}}{dt}=−q_{l}+q_{l}^{z}G((q_{l}^{z})^{2}+R_{l}^{2}),
+$$
 
-For the transfer function used in this paper, Equation 9, the expression simplifies,(20)GX(x)≡12π(σ2+x)exp(−(θ+IXext)22(σ2+x)).
+where
 
-As in the previous section, Rla and Rls are ‘noise’ terms due to patterns μ≠l in the sequence, which also depends on the average squared firing rates Ma and Ms. Using Equations 17 and 18, we can derive the dynamics of the combined population overlap ql(t)=qla(t)+qls(t):(21)τdqldt=−ql+ql−1Ga((ql−1)2+(Rla)2)+qlGs((ql)2+(Rls)2)
+$$
+G(x)=\frac{\intDvϕ(v\sqrt{x}+I_{ext})}{\sqrt{x}}.
+$$
 
-To compute the boundary for successful retrieval given by the white line in Figure 2, we analyze this equation when the gains are constant: Gx(t)=Gx. Plugging in and rearranging, we find:(22)τ1−Gsdqldt=−ql+Ga1−Gsql−1
+Assuming that $G(x)≈1$, which is the case during successful retrieval (see also Gillett et al., 2020), then we can simplify to:
 
-This equation shows that the sequence can only be retrieved if Ga/(1−Gs)>1, otherwise the peak of the overlaps decay to zero with increasing l. Thus retrieval of an asymptotically long sequence is successful if the gain converges to a value greater or equal to one during retrieval. This condition can only be satisfied if(23)maxx[Ga(x;θ,σ,Iexta)+Gs(x;θ,σ,Iexts)]≥1
+$$
+\frac{\tau}{1−z}\frac{dq_{l}}{dt}=−q_{l}+q_{l−1}
+$$
 
-To test for successful sequence retrieval in Figure 2, we computed the maximal correlation value of the final pattern mP(t), and compared this value to a threshold θP=0.05. If the value fell below this threshold, then retrieval was considered unsuccessful, and was denoted by a black square. This threshold criterion was also used in Figures 3 and 5.
+This equation makes it clear that retrieval speed depends linearly on $z$, that is on the balance between the symmetric and asymmetric components of synaptic plasticity.
 
-## Reward-driven learning
+### Mean-field theory of heterogeneous network and conditions for retrieval
 
-A simple perturbation-based reinforcement learning rule is used to demonstrate that external inputs can be generated that produce network dynamics at a desired target speed over the course of multiple trial repetitions. We simulate a series of trials with stochastically varying external inputs. At each trial n, the external inputs used in the previous trial are perturbed randomly,(24)Ipertext,a=In−1ext,a+λΔxna(25)Ipertext,s=In−1ext,s+λΔxns
+Mean-field theory can be used to further analyze retrieval speed dynamics, along the lines of Gillett et al., 2020. We define order parameters $q_{\mu}^{X}(t)=E(r^{X}(t)ξ^{X,\mu})$ and $M_{X}=E((r^{X})^{2}(t))$, describing the average overlap of network activity in subpopulation $X$ with pattern $ξ^{X,\mu}$ and the average squared firing rate in subpopulation $X$, respectively. The equations for the overlaps are given by:
 
-where λ is the strength of the perturbation, and Δxnp are uniformly distributed random variables over the interval [−1,1], drawn independently for each population p∈{a,s} at each trial n. If these external inputs lead to an improvement in speed compared to previous trials, then(26)Inext,a=Ipertext,a(27)Inext,s=Ipertext,s
+$$
+\tau\frac{dq_{l}^{a}}{dt}=−q_{l}^{a}+(q_{l−1}^{a}+q_{l−1}^{s})⋅G_{a}((q_{l−1}^{a}+q_{l−1}^{s})^{2}+(R_{l}^{a})^{2})
+$$
 
-else,(28)Inext,a=In−1ext,a(29)Inext,s=In−1ext,s
 
-In Figure 6, the correlation threshold θm=0.05, the target speed vtarget={0.3,0.8}, and λ=0.1. On the first trial (n=0), the external inputs are taken to be I0ext,a=−0.2 and I0ext,s=−0.2 (open circle in Figure 6).
 
-## Network of excitatory and inhibitory spiking neurons
+$$
+\tau\frac{dq_{l}^{s}}{dt}=−q_{l}^{s}+(q_{l}^{s}+q_{l}^{a})⋅G_{s}((q_{l}^{a}+q_{l}^{s})^{2}+(R_{l}^{s})^{2})
+$$
+
+where Gis given, for arbitrary transfer functions $ϕ$ by:
+
+$$
+G_{X}(x)=\frac{\intDvϕ(v\sqrt{x}+I_{X}^{ext})}{\sqrt{x}}.
+$$
+
+For the transfer function used in this paper, Equation 9, the expression simplifies,
+
+$$
+G_{X}(x)≡\frac{1}{\sqrt{2\pi(\sigma^{2}+x)}}exp(−\frac{(\theta+I_{X}^{ext})^{2}}{2(\sigma^{2}+x)}).
+$$
+
+As in the previous section, $R_{l}^{a}$ and $R_{l}^{s}$ are ‘noise’ terms due to patterns $\mu\neql$ in the sequence, which also depends on the average squared firing rates $M_{a}$ and $M_{s}$. Using Equations 17 and 18, we can derive the dynamics of the combined population overlap $q_{l}(t)=q_{l}^{a}(t)+q_{l}^{s}(t)$:
+
+$$
+\tau\frac{dq_{l}}{dt}=−q_{l}+q_{l−1}G_{a}((q_{l−1})^{2}+(R_{l}^{a})^{2})+q_{l}G_{s}((q_{l})^{2}+(R_{l}^{s})^{2})
+$$
+
+To compute the boundary for successful retrieval given by the white line in Figure 2, we analyze this equation when the gains are constant: $G_{x}(t)=G_{x}$. Plugging in and rearranging, we find:
+
+$$
+\frac{\tau}{1−G_{s}}\frac{dq_{l}}{dt}=−q_{l}+\frac{G_{a}}{1−G_{s}}q_{l−1}
+$$
+
+This equation shows that the sequence can only be retrieved if $G_{a}/(1−G_{s})>1$, otherwise the peak of the overlaps decay to zero with increasing $l$. Thus retrieval of an asymptotically long sequence is successful if the gain converges to a value greater or equal to one during retrieval. This condition can only be satisfied if
+
+$$
+maxx[G_{a}(x;\theta,\sigma,I_{ext}^{a})+G_{s}(x;\theta,\sigma,I_{ext}^{s})]\geq1
+$$
+
+To test for successful sequence retrieval in Figure 2, we computed the maximal correlation value of the final pattern $m_{P}(t)$, and compared this value to a threshold $\theta_{P}=0.05$. If the value fell below this threshold, then retrieval was considered unsuccessful, and was denoted by a black square. This threshold criterion was also used in Figures 3 and 5.
+
+### Reward-driven learning
+
+A simple perturbation-based reinforcement learning rule is used to demonstrate that external inputs can be generated that produce network dynamics at a desired target speed over the course of multiple trial repetitions. We simulate a series of trials with stochastically varying external inputs. At each trial $n$, the external inputs used in the previous trial are perturbed randomly,
+
+$$
+I_{pert}^{ext,a}=I_{n−1}^{ext,a}+\lambdaΔx_{n}^{a}
+$$
+
+
+
+$$
+I_{pert}^{ext,s}=I_{n−1}^{ext,s}+\lambdaΔx_{n}^{s}
+$$
+
+where λ is the strength of the perturbation, and $Δx_{n}^{p}$ are uniformly distributed random variables over the interval $[−1,1]$, drawn independently for each population $p\in{a,s}$ at each trial $n$. If these external inputs lead to an improvement in speed compared to previous trials, then
+
+$$
+I_{n}^{ext,a}=I_{pert}^{ext,a}
+$$
+
+
+
+$$
+I_{n}^{ext,s}=I_{pert}^{ext,s}
+$$
+
+else,
+
+$$
+I_{n}^{ext,a}=I_{n−1}^{ext,a}
+$$
+
+
+
+$$
+I_{n}^{ext,s}=I_{n−1}^{ext,s}
+$$
+
+In Figure 6, the correlation threshold $\theta_{m}=0.05$, the target speed $v_{target}={0.3,0.8}$, and $\lambda=0.1$. On the first trial $(n=0)$, the external inputs are taken to be $I_{0}^{ext,a}=−0.2$ and $I_{0}^{ext,s}=−0.2$ (open circle in Figure 6).
+
+### Network of excitatory and inhibitory spiking neurons
 
 We simulated a network of excitatory and inhibitory leaky integrate-and-fire (LIF) neurons similar to the one described described in the Appendix of Gillett et al., 2020 (sections 3 and 4) with a few differences described below.
 
-In this network, the dynamics of the membrane potential of neuron i (i=1,…,Nα) in population α (α=E,I) are governed by the following equations:(30)τmαdViαdt=Θ(Viα−Vfloorα)(−Viα+Vrestα+∑β∑j≠iKαβSijαβ+Iiα(t)+σατmαWα(t))(31)τsαdSijαβdt=−Sijαβ+Jijαβτsα∑tjkδ(t−tjk−D)
+In this network, the dynamics of the membrane potential of neuron i ($i=1,…,N_{\alpha}$) in population $\alpha$ ($\alpha=E,I$) are governed by the following equations:
 
-where α,β∈{E,I}, D controls the synaptic delay, Iα(t) controls the time-dependent external input drive, τrp controls the refractory period, Θ(x) is the Heaviside function, and Wα(t) is a white noise input with zero mean and unit variance density.
+$$
+\tau_{m}^{\alpha}\frac{dV_{i}^{\alpha}}{dt}=Θ(V_{i}^{\alpha}−V_{floor}^{\alpha})(−V_{i}^{\alpha}+V_{rest}^{\alpha}+\sum\beta\sumj\neqiK_{\alpha\beta}S_{ij}^{\alpha\beta}+I_{i}^{\alpha}(t)+\sigma^{\alpha}\sqrt{\tau_{m}^{\alpha}}W^{\alpha}(t))
+$$
 
-Excitatory neurons are divided into two (asymmetric and symmetric) populations of equal size (NE=Na+Ns), with connectivity matrices given by the following, where ω is the rectified synaptic transfer function defined in the procedure and X∈{a,s}:(32)JijaX=cijaXNacω(AEENac∑μ=1P−1f(ξia,μ+1)g(ξjX,μ))(33)JijsX=cijsXNscω(AEENsc∑μ=1P−1f(ξis,μ)g(ξjX,μ)).
 
-The excitatory populations receive external input that depends on their identity, and on the retrieval configuration. For slow retrieval, we set the input IEi(t) equal to Iaext=−1.5mV and Isext=0.5mV for asymmetric and symmetric neurons, respectively. For fast retrieval, we use Iaext=0.75mV and Isext=−0.75mV. In inhibitory neurons, we use Iii(t)=0.
 
-The learning strength (AEE) is set to .25, which result in changes to the following parameters: JIE/KIE=0.134, λVE=5.123, λVI=3.012. All other parameter values are identical to those documented in Table 7c of the referenced Appendix (Gillett et al., 2020).
+$$
+\tau_{s}^{\alpha}\frac{dS_{ij}^{\alpha\beta}}{dt}=−S_{ij}^{\alpha\beta}+J_{ij}^{\alpha\beta}\tau_{s}^{\alpha}\sumt_{j}^{k}\delta(t−t_{j}^{k}−D)
+$$
+
+where $\alpha,\beta\in{E,I}$, $D$ controls the synaptic delay, $I_{\alpha}$(t) controls the time-dependent external input drive, $\tau_{rp}$ controls the refractory period, $Θ(x)$ is the Heaviside function, and $W_{\alpha}(t)$ is a white noise input with zero mean and unit variance density.
+
+Excitatory neurons are divided into two (asymmetric and symmetric) populations of equal size ($N_{E}=N_{a}+N_{s}$), with connectivity matrices given by the following, where $\omega$ is the rectified synaptic transfer function defined in the procedure and $X\in{a,s}$:
+
+$$
+J_{ij}^{aX}=\frac{c_{ij}^{aX}}{\sqrt{N_{a}c}}\omega(\frac{A_{EE}}{\sqrt{N_{a}c}}\sum\mu=1P−1f(ξ_{i}^{a,\mu+1})g(ξ_{j}^{X,\mu}))
+$$
+
+
+
+$$
+J_{ij}^{sX}=\frac{c_{ij}^{sX}}{\sqrt{N_{s}c}}\omega(\frac{A_{EE}}{\sqrt{N_{s}c}}\sum\mu=1P−1f(ξ_{i}^{s,\mu})g(ξ_{j}^{X,\mu})).
+$$
+
+The excitatory populations receive external input that depends on their identity, and on the retrieval configuration. For slow retrieval, we set the input $I_{E}^{i}(t)$ equal to $I_{a}^{ext}=−1.5mV$ and $I_{s}^{ext}=0.5mV$ for asymmetric and symmetric neurons, respectively. For fast retrieval, we use $I_{a}^{ext}=0.75mV$ and $I_{s}^{ext}=−0.75mV$. In inhibitory neurons, we use $I_{i}^{i}(t)=0$.
+
+The learning strength ($A_{EE}$) is set to .25, which result in changes to the following parameters: $J^{IE}/K_{IE}=0.134$, $\lambda_{V}^{E}=5.123$, $\lambda_{V}^{I}=3.012$. All other parameter values are identical to those documented in Table 7c of the referenced Appendix (Gillett et al., 2020).

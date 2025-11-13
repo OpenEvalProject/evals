@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0072zz521 Department of Microbiology, University of Massachusetts Amherst Amherst United States
-2. https://ror.org/0190ak572 Department of Biology, New York University New York United States
-3. https://ror.org/035t8zc32 Department of Infection Metagenomics, Research Institute for Microbial Diseases, Osaka University Osaka Japan
-4. https://ror.org/0072zz521 Molecular and Cellular Graduate Program, University of Massachusetts Amherst Amherst United States
+1. Department of Microbiology, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+2. Department of Biology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
+3. Department of Infection Metagenomics, Research Institute for Microbial Diseases, Osaka University Osaka Japan ([ROR:035t8zc32](https://ror.org/035t8zc32))
+4. Molecular and Cellular Graduate Program, University of Massachusetts Amherst Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
 
 † Corresponding author
 
@@ -37,45 +37,172 @@ While studying membrane departitioning can illuminate requirements for maintenan
 
 ## Results
 
-## Reversible departitioning and repartitioning of the mycobacterial plasma membrane
+### Reversible departitioning and repartitioning of the mycobacterial plasma membrane
 
 We previously demonstrated that the known plasma membrane fluidizer benzyl alcohol (Friedlander et al., 1987; Ingram, 1976; Konopásek et al., 2000; Nagy et al., 2007; Strahl et al., 2014; Zielińska et al., 2020) disrupts the association of peptidoglycan precursor synthase MurG to the M. smegmatis IMD and halts polar growth of the organism (García-Heredia et al., 2021). The effects of benzyl alcohol on peptidoglycan synthesis and growth reverse within 30 min after removing the chemical from the growth medium (García-Heredia et al., 2021). We wondered whether the ability of MurG to reassociate with the IMD post-benzyl alcohol extended to additional membrane domain constituents and/or fluidizers. Accordingly, we first treated M. smegmatis expressing functional fluorescent protein fusions to IMD-associated proteins GlfT2, Ppm1, and MurG (García-Heredia et al., 2021; Hayashi et al., 2016) with either benzyl alcohol or a different plasma membrane fluidizer, dibucaine (Kinoshita et al., 2019). IMD-associated proteins normally localize adjacent to the sites of polar growth in mycobacteria (García-Heredia et al., 2021; Hayashi et al., 2016). We found that Ppm1 and MurG were delocalized from the subpolar region by either chemical, whereas GlfT2 was delocalized only by dibucaine (Figure 1A and C and Figure 1—figure supplement 1). After 12 hr of recovery in the absence of the chemicals, the IMD marker proteins relocalized to their subpolar positions (Figure 1B). These data suggest that IMD-associated proteins can delocalize and relocalize to the subpolar region of the cell respectively in response to, and recovery from, different membrane-acting chemicals. The divergent behavior of Ppm1 and MurG vs. GlfT2 in the presence of benzyl alcohol also implies that the nature and/or strength of IMD association with constituent proteins may vary.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig1-v2.jpg)
+
+**Figure 1.:** mCherry-GlfT2, Ppm1-mNeonGreen, and MurG-Dendra2 are functional fluorescent protein fusions to well-established, IMD-associated proteins (Hayashi et al., 2016; Hayashi et al., 2018; García-Heredia et al., 2021). IMD proteins were imaged after 1 hr benzyl alcohol or 1 hr dibucaine treatment, (A), and again 12 hr after washout, (B). Pictures are representative of three independent experiments. Scale bars, 2.5 μm. (C) Fluorescence distributions of the fusion proteins after chemical treatment were calculated from three independent experiments. Lines show the average of all cells (50 < n < 75). Signal was normalized to cell length and total fluorescence intensity. Cells were oriented such that the brighter poles are on the right-hand side of the graph. See ‘Materials and methods’ for details. (D) Lysates from M. smegmatis taken before, during, and 3 hr after benzyl alcohol treatment were sedimented in sucrose density gradients and imaged.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** mCherry-GlfT2, Ppm1-mNeonGreem, and MurG-Dendra2 are functional fluorescent protein fusions to well-established, IMD-associated proteins (García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016). Lines show the average of total cells (n = 102).
+
 As a complementary way to track membrane constituents, we examined the IMD and PM-CW biochemically. Under normal growth conditions, the IMD can be separated from the PM-CW by sucrose density gradient fractionation (García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016; Morita et al., 2005); the IMD fractions are less dense and distinct from the PM-CW fractions. As before (García-Heredia et al., 2021), we found that benzyl alcohol treatment resulted in the apparent loss of membranous material from the IMD fractions (Figure 1D). We also observed IMD recovery within the 3 hr post-benzyl alcohol washout. Taken together, these data suggest that benzyl alcohol treatment and washout can serve as a model for reversible membrane departitioning and repartitioning.
 
-## Identification of non-essential genes that promote tolerance to and/or recovery from membrane fluidization
+### Identification of non-essential genes that promote tolerance to and/or recovery from membrane fluidization
 
 Subpolar IMD localization correlates closely with polar cell growth (Hayashi et al., 2018). We hypothesized that the ability of M. smegmatis to recover from benzyl alcohol depends at least in part on its ability to reform the IMD, and therefore, that genes that promote membrane partitioning would constitute a subset of the genes that enable M. smegmatis to tolerate and/or recover from benzyl alcohol. In mycobacteria, the essential, tropomyosin-like protein Wag31 (DivIVA) promotes polar cell wall assembly and rod shape and promotes IMD protein localization and isolability (García-Heredia et al., 2018; Habibi Arejan et al., 2022; Jani et al., 2010; Kang et al., 2008; Melzer et al., 2018). While DivIVA depletion slowed M. smegmatis growth, as expected, we observed only a small additional growth defect when bacteria were exposed to benzyl alcohol (Figure 2—figure supplement 1). We reasoned that DivIVA may contribute more to membrane partitioning maintenance than to initiation. Additionally, or alternatively, the essential role(s) of the protein may partially obscure its function in IMD biogenesis. Therefore, we used transposon sequencing (Gawronski et al., 2009; Goodman et al., 2009; Langridge et al., 2009; van Opijnen et al., 2009) to search for non-essential factors that promote tolerance to and/or recovery from membrane disruption. Using the TRANSIT platform (DeJesus et al., 2015), we identified six candidate genes (Figure 2 and Table 1) that fit our desired profile, that is, had fewer transposon insertions 16–24 hr post-benzyl alcohol exposure compared to DMSO vehicle control. Of these genes, ponA2 showed the greatest statistical significance.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig2-v2.jpg)
+
+**Figure 2.:** A transposon library was treated with benzyl alcohol or DMSO for 1 hr. Benzyl alcohol was washed away and bacteria were resuspended in Middlebrook 7H9 growth medium. The OD600 was then adjusted to 0.01 and bacteria were incubated for an additional 16–24 hr to an OD600 of ~1.0. The library was then collected for DNA sequencing. Transposon insertion counts presented relative to counts ratio (treated/control) per gene and the corresponding p-values calculated by Mann–Whitney U-test (y-axis) from n = 3 independent experiments. The horizontal gray line indicates p<0.05; the vertical gray lines indicate two-fold change.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Left, wild-type M. smegmatis, and right, DivIVA depletion depletion occurs upon addition of anhydrotetracycline (aTc; García-Heredia et al., 2021; Meniche et al., 2014). Following exposure to benzyl alcohol or DMSO vehicle control, M. smegmatis were washed and resuspended in growth medium in the absence of anhydrotetracycline (aTc). Cells were adjusted to OD600 0.01 and incubated ± 100 ng/mL aTc and 0.0015% of resazurin. Data combined from two independent experiments performed with six technical replicates each. Similar results were obtained when cells were pre-incubated with aTc for 2 hr prior to benzyl alcohol exposure (not shown).
+
+**Table 1.**
+ Genes identified by Tn-seq.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Underrepresented in benzyl alcohol-treated M. smegmatis (candidates for promoting survival)</th>
+    </tr>
+    <tr>
+      <th>Gene locus</th>
+      <th>Gene name</th>
+      <th>Gene description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MSMEG_0846c</td>
+      <td>–</td>
+      <td>Putative monovalent cation/H+ antiporter subunit D</td>
+    </tr>
+    <tr>
+      <td>MSMEG_2775</td>
+      <td>nhaA</td>
+      <td>Na+/H+ antiporter NhaA</td>
+    </tr>
+    <tr>
+      <td>MSMEG_4533c</td>
+      <td>–</td>
+      <td>Sulfate-binding protein</td>
+    </tr>
+    <tr>
+      <td>MSMEG_5488c</td>
+      <td>–</td>
+      <td>DNA-binding response regulator</td>
+    </tr>
+    <tr>
+      <td>MSMEG_5781c</td>
+      <td>pstC</td>
+      <td>Phosphate ABC transporter, permease protein PstC</td>
+    </tr>
+    <tr>
+      <td>MSMEG_6201</td>
+      <td>ponA2</td>
+      <td>Bifunctional transglycosylase/transpeptidase</td>
+    </tr>
+    <tr>
+      <td colspan="3">Overrepresented in benzyl alcohol-treated M. smegmatis (candidates for impairing survival)</td>
+    </tr>
+    <tr>
+      <td>MSMEG_2768</td>
+      <td>–</td>
+      <td>OB-fold nucleic acid binding domain-containing protein</td>
+    </tr>
+    <tr>
+      <td>MSMEG_2772</td>
+      <td>–</td>
+      <td>Amino acid permease</td>
+    </tr>
+    <tr>
+      <td>MSMEG_5694</td>
+      <td>–</td>
+      <td>Hypothetical protein MSMEG_5694</td>
+    </tr>
+  </tbody>
+</table>
+
 PonA2 is one of three bifunctional transglycosylase/transpeptidase enzymes, also known as class A penicillin-binding proteins (aPBPs), involved in cell wall peptidoglycan biosynthesis in M. smegmatis. PonA1 and likely PonA2 are enriched in the PM-CW (García-Heredia et al., 2021; Hayashi et al., 2016). While M. smegmatis PonA1 is essential for growth and/or viability, PonA2 and PonA3 are not (Kieser et al., 2015a; Patru and Pavelka, 2010; Vandal et al., 2008). PonA3 is not present in M. tuberculosis and not expressed in M. smegmatis under normal growth conditions (Patru and Pavelka, 2010). In contrast, PonA2 is conserved in both species and promotes survival of M. smegmatis under stress conditions such as starvation or oxygen depletion; M. tuberculosis tolerance to heat, some antibiotics, acid, reactive oxygen and nitrogen; and M. tuberculosis survival in some mouse backgrounds (DeJesus et al., 2017; Kieser et al., 2015a; Li et al., 2022; Patru and Pavelka, 2010; Smith et al., 2022; Vandal et al., 2009a; Vandal et al., 2008). As enzymatic removal of the M. smegmatis cell wall departitions the membrane (García-Heredia et al., 2021), we reasoned that PonA2 may promote membrane partitioning and opted to analyze this hit further.
 
-## PonA2 contributes to efficient mycobacterial growth following benzyl alcohol exposure
+### PonA2 contributes to efficient mycobacterial growth following benzyl alcohol exposure
 
 To test whether PonA2 contributes to benzyl alcohol recovery, we constructed a clean deletion mutant (∆ponA2) and a complemented strain (cponA2) by introducing ponA2 under its native promoter in the L5 integration site. We found that the number of colony-forming units (CFUs) for ∆ponA2 was comparable to that of wild-type (Figure 3A and Figure 3—figure supplement 1) immediately after benzyl alcohol treatment, but that ∆ponA2 growth lagged during the early post-washout recovery period (Figure 3B). The ∆ponA2 growth delay was specific to benzyl alcohol as there was no delay after treatment with the DMSO vehicle control. Furthermore, the defect in benzyl alcohol recovery was restored in the complemented strain (cponA2), indicating that the defect is due to the lack of ponA2. These data suggest that PonA2 helps M. smegmatis to recover from benzyl alcohol.
 
-## PonA2 restores membrane partitioning after benzyl alcohol treatment
+![Figure 3.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig3-v2.jpg)
+
+**Figure 3.:** (A) Top, wild-type or ΔponA2 M. smegmatis were treated with benzyl alcohol for 1 hr, then 10-fold serial dilutions were spotted on Middlebrook 7H10 agar. The image is representative of three independent experiments. Bottom, colony-forming units (CFUs) were calculated from three biological replicates. Colors correspond to same-day replicates. ns, no statistically significant difference by Mann–Whitney U-test. p=0.4 or p>0.99 respectively. (B) Benzyl alcohol- or DMSO vehicle-treated wild-type, ΔponA2, or complemented strain (cponA2) were washed three times then grown in Middlebrook 7H9 medium. Lines show the average and SD obtained from three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Wild type, ΔponA2, or complemented M. smegmatis (cponA2) were treated with benzyl alcohol at indicated concentrations for 1 hr, then 10-fold serial dilutions were spotted on Middlebrook 7H10 agar. Image is representative of two independent experiments.
+
+### PonA2 restores membrane partitioning after benzyl alcohol treatment
 
 M. smegmatis eventually restores membrane partitioning after benzyl alcohol treatment (García-Heredia et al., 2021; Figure 1B and D), but the factors that promote repartitioning are unknown. We used subpolar enrichment of IMD-associated Ppm1 (Figure 1; Hayashi et al., 2016) as a readout for membrane partitioning before and after benzyl alcohol treatment. Prior to benzyl alcohol exposure, Ppm1 was enriched in the subpolar regions of wild-type, ΔponA2, and the complemented mutant (Figure 4A–C). Immediately after benzyl alcohol exposure, subpolar enrichment diminished for all three strains. During the recovery period, Ppm1 relocalized to the subpolar regions within ~3 hr for wild-type and ~1 hr for the complement (Figure 4C). However, Ppm1 did not completely relocalize in ∆ponA2 even up to 6 hr of outgrowth (Figure 4A, C and D). These data indicate that PonA2 contributes to spatial repartitioning of the plasma membrane following benzyl alcohol-induced fluidization.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig4-v2.jpg)
+
+**Figure 4.:** (A) Fluorescence imaging of M. smegmatis expressing Ppm1-mNeonGreen before benzyl alcohol treatment or after benzyl alcohol washout. Arrowheads indicate subpolar foci of Ppm1-mNeonGreen. Scale bars, 2.5 µm. Pictures are representative of three independent experiments. (B) Fluorescence of cells imaged as in (A) were quantitated from three independent experiments as in Figure 1C. Lines show the average of all cells (50 < n < 69). (C) The percentage of signal associated with the distal 15% of rod-shaped cells is quantified to indicate polarity of fluorescence distribution. Each color in the super plots (Lord et al., 2020) represents an independent biological replicate. Smaller symbols are the polarities of each cell, and larger symbols are the means of the polarity in each replicate. Statistical significance was determined by the Kruskal–Wallis test, followed by Dunn’s multiple-comparison test. ns, no statistically significant difference (p=0.3313); *p=0.0130; **p=0.0037. Data were obtained from three or six independent experiments. (D) Lysates from M. smegmatis at indicated time points were sedimented in a sucrose density gradient. Representative images of the collection tubes after sucrose gradient fractionation at left. Densitometry of the membranous material (highlighted next to the tubes with solid and dashed gray lines) shown in the right panel. The lines are the average pixel values derived from three distinct lines across images obtained from a representative experiment. The lighter areas are the standard deviations. Images of wild-type sucrose gradient fractionations are repeated from Figure 1D for clarity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data were obtained from three independent experiments and are means of biological duplicates or triplicates. Data for wild-type and ∆ponA2 are reproduced from Figure 6A for comparison.
 
 As a complementary way to track membrane repartitioning, we examined the IMD and PM-CW by sucrose density gradient fractionation (García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016; Morita et al., 2005). Benzyl alcohol treatment of both wild-type and ΔponA2 M. smegmatis results in the apparent loss of membranous material from the IMD fractions (Figure 4D; García-Heredia et al., 2021). In contrast to wild-type, however, the mutant failed to recover the IMD within the 3 hr, post-benzyl alcohol washout period. This experiment suggests that, in addition to spatial repartitioning, PonA2 contributes to biochemical repartitioning of the plasma membrane after benzyl alcohol treatment.
 
 We did not identify other enzymes involved in peptidoglycan biosynthesis from the Tn-seq analysis. Transposon insertions do not always interrupt gene function, and trans-complementation can occur when mutants are pooled. When tested individually, however, loss of other, non-essential cell wall synthases, including the monofunctional SEDS family transglycosylase RodA (ΔrodA) and multiple l,d-transpeptidases (ΔldtABE) had no effect on M. smegmatis outgrowth post-benzyl alcohol (Figure 4—figure supplement 1). These data suggest that promotion of membrane repartitioning is not a universal property of peptidoglycan biosynthetic and/or remodeling enzymes.
 
-## PonA2 does not localize membrane–cell wall interactions under unstressed conditions
+### PonA2 does not localize membrane–cell wall interactions under unstressed conditions
 
 Physical interactions between the plasma membrane and bilayer-extrinsic polymers have been proposed to maintain membrane partitioning in other systems (Daněk et al., 2020; Feraru et al., 2011; Martinière et al., 2012; McKenna et al., 2019; Wagner et al., 2020). In mycobacteria, we have demonstrated co-fractionation of the plasma membrane and cell wall upon mechanical cell lysis, that is, PM-CW (García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016; Morita et al., 2005; Puffal et al., 2022). The existence of the PM-CW implies that the plasma membrane and cell wall are physically associated. To test this hypothesis further, we developed a microfluidics-based assay (Figure 5A and B) to quantify and visualize membrane-cell wall interactions in M. smegmatis. In Escherichia coli, hyperosmotic shock causes severe plasmolysis, whereby the plasma membrane retracts from the cell wall, indicating that these structures are not strongly associated (Rojas et al., 2018). As plasmolysis occurs in areas with weak membrane–cell wall association, we predicted that plasmolysis bays in M. smegmatis would preferentially form at sites of IMD enrichment, for example, subpolar foci. We exposed M. smegmatis in a microfluidics chamber to hyperosmotic shock and measured the number and location of plasmolysis bays. Bay formation was significantly more likely to occur in the subpolar region of the cell compared to the polar region (Figure 5C; note that the midcell region is a mix of IMD and PM-CW; García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016; Prithviraj et al., 2023), supporting the notion that membrane–cell wall interaction is weaker in the IMD than in the PM-CW.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig5-v2.jpg)
+
+**Figure 5.:** (A) Left, schematic of the microfluidics plasmolysis assay. GFP-expressing M. smegmatis were subjected to hyperosmotic shock (3 M sorbitol) in microfluidics device and imaged before, during, and after shock. Right, images before and after hyperosmotic shock. Cells were perfused with 7H9 medium for 5 min and then perfused with 7H9 + 3 M sorbitol for 5 min. Cells were imaged in phase (50 ms) and GFP (50 ms) every 30 s. An arrowhead indicates the septum while arrows indicate sites of plasmolysis. Scale bars, 2.5 μm. Images are representative of four independent experiments. (B) Cytoplasmic GFP enables visualization and quantitation of plasmolysis bays. Arrows indicate representative sites of plasmolysis. Scale bars, 2.5 μm. Images are representative of two independent experiments. (C) Analysis of the sites of plasmolysis (as defined in [B]) in wild-type (n = 85) and ΔponA2 (n = 101) M. smegmatis from two biological replicates performed in duplicate. For this analysis, we removed cells that did not plasmolyse. Statistical significance was determined by the two-way ANOVA test, followed by Šídák’s multiple-comparisons test. ****p<0.0001, ns, p>0.99. Polar, subpolar, and midcell bays spatially correlate with the PM-CW, inner membrane domain (IMD), and a mixture of PM-CW and IMD, respectively (García-Heredia et al., 2021; Hayashi et al., 2018; Hayashi et al., 2016; Prithviraj et al., 2023). (D) The proportion of cells that did not plasmolyse in (C) was calculated for wild-type (n = 90) and ΔponA2 (n = 123) M. smegmatis. Statistical significance was determined by the Mann–Whitney U-test. **p=0.045. (E) Cell lengths were analyzed for wild-type (n = 84) and ΔponA2 (n = 132) M. smegmatis from three biological replicates. Each color in the super plots (Lord et al., 2020) represents an independent biological replicate. Smaller symbols are the lengths of individual cells, and larger symbols are the means of each replicate. Statistical significance was determined by the Mann–Whitney U-test. ns, p=0.4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cell widths of wild-type (n = 116), ∆ponA2 (n = 124), and complemented ∆ponA2 (cponA2; n = 107). (B) Cell widths of wild-type (n = 278), ∆ponA2 complemented with TG- ponA2 (n = 120), TP- ponA2 (n = 101), or TG- TP- ponA2 (n = 109) were quantified from three independent experiments.
+
 One potential mechanism by which PonA2 contributes to membrane partitioning is by localizing membrane–cell wall interactions to the PM-CW. Consistent with delocalized membrane–cell wall interactions, ΔponA2 was less likely to plasmolyse than wild-type M. smegmatis (Figure 5D). As in M. tuberculosis (Kieser et al., 2015a), the mutant is wider than wild-type (Figure 5—figure supplement 1A) but of similar length (Figure 5E), suggesting that decreased membrane surface area is unlikely to explain plasmolysis resistance in the absence of PonA2. Despite ΔponA2’s decreased propensity to plasmolyse, however, we did not detect differences in the subcellular distribution of plasmolysis in the mutant relative to wild-type (Figure 5C). These data suggest that PonA2 does not significantly contribute to membrane partitioning by localizing membrane–cell wall interactions, at least under basal conditions.
 
-## PonA2 promotes membrane repartitioning and regrowth post-fluidization via its conserved transglycosylase domain
+### PonA2 promotes membrane repartitioning and regrowth post-fluidization via its conserved transglycosylase domain
 
 Given that PonA2 is a bifunctional transpeptidase/transglycosylase, we hypothesized that one or both of its enzymatic activities contribute to membrane homeostasis. Accordingly, we made point mutations to alter well-conserved, catalytically active amino acids (Figure 6—figure supplement 1), substitutions that have been previously shown to eliminate activity in in vitro assays for PBP1a (Born et al., 2006) and PBP1b (Terrak et al., 1999) in E. coli, and the transpeptidase function of PonA1 in M. smegmatis (Kieser et al., 2015b). Specifically, we complemented ∆ponA2 with ponA2 alleles that bear E108T (transglycosylase inactive [TG-]), S405A (transpeptidase inactive [TP-]), or both (TG-/TP-) mutations. Complementation with wild-type ponA2 restored the ability of M. smegmatis to tolerate a non-lethal challenge with moenomycin (Melzer et al., 2022), an antibiotic that targets aPBP transglycosylation (Gampe et al., 2013; Meeske et al., 2016; Ostash and Walker, 2010; Welzel, 2005), and to bind normally to the fluorescent β-lactam Bocillin-FL, which covalently labels active PBP peptidases (Wissel and Weiss, 2004). By contrast, and consistent with the notion that the TG- and TP- mutations respectively inactivate PonA2 transglycosylase and transpeptidase domains, these alleles failed to complement in the moenomycin and Bocillin-FL assays (Figure 6—figure supplement 2). ∆ponA2 complemented with the TP- ponA2 allele behaved similarly to ∆ponA2 complemented with wild-type ponA2 for both post-benzyl alcohol outgrowth (Figure 6A) and membrane repartitioning (Figure 6B and C). However, the recovery of ∆ponA2 complemented with the TG- or TP-/TG- ponA2 allele was delayed in a manner comparable to uncomplemented ∆ponA2. These data suggest that PonA2 promotes membrane repartitioning and regrowth post-benzyl alcohol via its conserved transglycosylase domain.
 
-## PonA2’s roles in supporting polar cell wall elongation and rod morphology are genetically separable from its roles in membrane partitioning
+![Figure 6.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig6-v2.jpg)
+
+**Figure 6.:** (A) Following exposure to benzyl alcohol or the DMSO vehicle control, cells were washed, resuspended in Middlebrook 7H9, and incubated with 0.0015% of resazurin. Data were obtained from three independent experiments and are means of biological duplicates or triplicates. (B) Inner membrane domain (IMD) marker (Ppm1-mNeonGreen) polarities were assessed in mutants before, during, or 3- or 6 hr after benzyl alcohol treatment as in Figure 4C. Data from ΔponA2 and ΔponA2 complemented with wild-type ponA2 are repeated from Figure 4C for ease of comparison. Each color in the super plots (Lord et al., 2020) represents an independent biological replicate. Smaller symbols are the polarities of each cell, and larger symbols are the means of each replicate. (C) The polarity of 3 hr time points from (B) were compiled and compared across mutants. The bar graph shows the average and standard deviation. Statistical significance was determined by the Kruskal–Wallis test, followed by Dunn’s multiple-comparison test. ns, no statistically significant difference (p=0.2538 or 0.7601 respectively); ****p<0.0001; ***p=0.0002.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** As in M. smegmatis ponA1 (Kieser et al., 2015b), the true start codon of ponA2 is located in the upstream of the annotation in MycoBrowser (Kapopoulou et al., 2011). That is, M. smegmatis ponA2 starts from 87 base pairs upstream of MSMEG_6201. Red shading indicate conserved amino acids. Arrows and blue squares indicate the amino acids that were mutated. Amino acid sequences were aligned using Jalview2 (Waterhouse et al., 2009).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Mutation in conserved ponA2 transglycosylase domain sensitizes M. smegmatis to moenomycin. Log-phase bacteria were adjusted to OD600 = 0.1 and incubated with 15.625 mg/mL moenomycin and 0.0015% of resazurin. Representative data from two independent experiments. (B) Mutation in conserved ponA2 transpeptidase domain abolishes transpeptidase activity. 30 μg of whole-cell lysates were incubated with 100 nmol of Bocillin-FL for 30 min at 37℃ then separated by SDS-PAGE. Gel fluorescence was visualized by Amersham ImageQuant 800 system (Cytiva). Star at left indicates PonA2.
+
+### PonA2’s roles in supporting polar cell wall elongation and rod morphology are genetically separable from its roles in membrane partitioning
 
 We wondered whether PonA2 supports membrane homeostasis by localizing cell wall assembly. Previously we showed that the polarity of peptidoglycan synthesis decreases in the absence of RodA, a SEDS family transglycosylase, and upon treatment with aPBP transglycosylation inhibitor moenomycin (Melzer et al., 2022). To more directly assay the function of PonA2, we labeled nascent peptidoglycan in wild-type and ∆ponA2 after a brief incubation in the presence of alkyne-d-alanine-d-alanine (alkDADA, also called EDA-DA; García-Heredia et al., 2018; Liechti et al., 2014) and detected the presence of the alkyne probe via copper-catalyzed alkyne-azide cycloaddition (CuAAC) to a fluorescent azide label. In wild-type and ∆ponA2 mycobacteria, fluorescence was enriched at the cell poles, the sites of cell elongation in this genus (Aldridge et al., 2012; Joyce et al., 2012; Kieser and Rubin, 2014; Meniche et al., 2014; Santi et al., 2013; Singh et al., 2013; Thanky et al., 2007; Figure 7A). However, as with RodA absence or moenomycin treatment (Melzer et al., 2022), there was a modest decrease in the polarity of nascent peptidoglycan in ΔponA2 compared to wild-type (Figure 7B and C). Moreover, a subpopulation of mutant cells had clear cell bulging (Figure 7A and Figure 5—figure supplement 1A), a phenotype that has long been linked to peptidoglycan defects (Burdon, 1946; Chung et al., 2009; Hett et al., 2010; Huang et al., 2008; Typas et al., 2010; Vigouroux et al., 2020). The morphological defects are consistent with prior observations of aberrant width and morphology, respectively, in ΔponA2 M. tuberculosis (Kieser et al., 2015a) and stationary phase ΔponA2 M. smegmatis (Patru and Pavelka, 2010). However, in contrast to the role of PonA2 in post-benzyl alcohol membrane repartitioning and regrowth, which depend solely on its transglycosylation domain (Figure 6), the role of PonA2 in localizing cell wall synthesis depended on both its transglycosylase and transpeptidase domains (Figure 7D). Furthermore, the role of PonA2 in maintaining normal rod shape did not depend on either domain (Figure 5—figure supplement 1B). The genetic separability of the phenotypes suggests that PonA2’s contributions to membrane partitioning, polar peptidoglycan assembly, and cell morphology are distinct.
 
-## PonA2 promotes tolerance to benzyl alcohol-induced membrane permeabilization
+![Figure 7.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig7-v2.jpg)
+
+**Figure 7.:** (A) Nascent peptidoglycan in wild-type or ∆ponA2 M. smegmatis was labeled for 15 min (~10% generation) with alkyne-d-alanine-d-alanine (alkDADA) followed by copper-catalyzed alkyne-azide cycloaddition (CuAAC) with AFDye488 Azide. Scale bars, 1 µm. Pictures are representative of three independent experiments. (B) Wild-type and ∆ponA2 strains were labeled as in (A) and subcellular fluorescence was quantitated as in Figure 1C. Lines show the average of all cells (50 < n < 68) obtained by three independent experiments. (C) The percentage of signal associated with the distal 15% of rod-shaped cells quantified to indicate polarity of fluorescence distribution. Statistical significance was determined by Mann–Whitney U-test. p-value, *p=0.0227. (D) Polarity ratio of catalytically inactive mutants. Statistical significance was determined by the Kruskal–Wallis test, followed by Dunn’s multiple-comparison test. Data were obtained from the three independent experiments. ****p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A, left) Benzyl alcohol- or DMSO-treated wild-type or ΔponA2 strains were stained with propidium iodide to detect membrane-compromised cells. Scale bars, 5 µm. Images are representative of three independent experiments. (A, right) Propidium iodide-positive cells in individual fields of wild-type (n = 160) or ΔponA2 (n = 327) were enumerated. Mann–Whitney U-test. ns, not statistically significant (p=0.4805); ***p=0.0002. Data were combined from two independent experiments. (B) Flow cytometry analysis of propidium iodide-positive cells in time course after benzyl alcohol washout. Cells were incubated at 65℃ for 1 hr for heat-killed control. Data are representative of three independent experiments. (C) ∆ponA2 M. smegmatis complemented with wild-type ponA2 or alleles with mutated transpeptidase (TP-) and/or transglycosylase (TG- and TP- TG-) domains were treated with benzyl alcohol and stained with propidium iodide. Propidium iodide staining quantitated in the same way as the right panel of (A). Data were combined from six individual experiments. The line show the average and standard deviation. Statistical significance was determined by the Kruskal–Wallis test, followed by Dunn’s multiple-comparison test. ns, not statistically significant (p=0.9001); **p=0.0033; *p=0.0235 or 0.0287. In total, 577 < n < 1410 cells were examined across five independent experiments.
+
+### PonA2 promotes tolerance to benzyl alcohol-induced membrane permeabilization
 
 Given that loss of PonA2 sensitizes mycobacteria to a variety of stresses (DeJesus et al., 2017; Kieser et al., 2015a; Li et al., 2022; Patru and Pavelka, 2010; Vandal et al., 2009b; Vandal et al., 2008), we also considered the possibility that the membrane partitioning and growth phenotypes of ∆ponA2 uncovered by benzyl alcohol were associated with enhanced susceptibility to the chemical. For example, high fluidity can enhance the permeability of model membranes (Frallicciardi et al., 2022; Gabba et al., 2020; Lande et al., 1995; Rossignol et al., 1982). To test membrane permeability, we incubated wild-type and ∆ponA2 with propidium iodide, a dye that fluoresces upon DNA intercalation and is normally membrane-impermeant. At baseline, neither wild-type nor ∆ponA2 stained appreciably with propidium iodide (Figure 7—figure supplement 1A). However, ~20% of wild-type cells were propidium iodide-positive after benzyl alcohol treatment (Figure 7—figure supplement 1A and C), indicating that benzyl alcohol-induced fluidization can compromise the membrane barrier. Under the same conditions,~60% of the ∆ponA2 cells were propidium iodide-positive (Figure 7—figure supplement 1A and C). These data suggest that ∆ponA2 cells are more permeable than wild-type following benzyl alcohol exposure.
 
@@ -83,9 +210,17 @@ Propidium iodide staining is often used to detect dead cells. However, the CFUs 
 
 As with the delayed growth and membrane repartitioning phenotypes of benzyl alcohol-exposed ∆ponA2, enhanced membrane permeability was complemented by wild-type ponA2 but not by the TG- or TP-/TG- ponA2 alleles (Figure 7—figure supplement 1C). Complementation with the TP- ponA2 allele was intermediate between that with wild-type and TG- ponA2, although not statistically significant. These phenotypes imply that the role of the PonA2 in membrane permeability and partitioning may be genetically linked. Therefore, we tested whether enhanced uptake of benzyl alcohol could explain the delayed growth and membrane repartitioning of ΔponA2 relative to wild-type (Figures 3B, 4 and 6). Accurate measurement of benzyl alcohol cell accumulation is challenging given its volatile nature. However, we reasoned that an uptake defect should manifest as concentration-dependent, differential sensitivity to benzyl alcohol between wild-type and ΔponA2, an outcome that we did not observe (Figure 3—figure supplement 1). In aggregate, our data are most consistent with the notion that the PonA2 transglycosylase domain promotes tolerance to benzyl alcohol-induced membrane permeabilization.
 
-## The cell wall glycan backbone contributes to membrane partitioning maintenance
+### The cell wall glycan backbone contributes to membrane partitioning maintenance
 
 One potential mechanism by which PonA2 transglycosylation promotes membrane partitioning is via cell wall integrity. While we previously showed that spheroplasting delocalizes multiple IMD markers (García-Heredia et al., 2021), complete removal of the cell wall may have pleiotropic effects on membrane physiology. More recently, we showed that limited peptidoglycan digestion by the glycoside hydrolases lysozyme and mutanolysin delocalizes the IMD-enriched protein MurG (Melzer et al., 2022). To test the specificity of this observation, we examined the distribution of two additional IMD markers, Ppm1 and GlfT2 (Hayashi et al., 2018; Hayashi et al., 2016). Ppm1, but not GlfT2, modestly delocalized upon lysozyme and mutanolysin treatment (Figure 8A and Figure 8—figure supplement 1). These results were consistent with the divergent behavior of Ppm1 and MurG vs. GlfT2 in the presence of benzyl alcohol (Figure 1A and C) and suggest that the maintenance of membrane partitioning is supported, directly or indirectly, by the cell wall glycan backbone.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig8-v2.jpg)
+
+**Figure 8.:** (A) Left, images of M. smegmatis expressing inner membrane domain (IMD) marker Ppm1-mNeonGreen ± 60 min treatment with cell wall hydrolases lysozyme and mutanolysin. Arrowheads indicate subpolar foci of Ppm1-mNeonGreen. Bars highlight dispersed fluorescent signal of Ppm1-mNeonGreen. Scale bars, 5 µm. Middle, quantitation of Ppm1-mNeonGreen polarity for cells with no treatment (n = 134) or lysozyme/mutanolysin treatment (n = 187). Lines show the average of all cells. Right, the percentage of Ppm1-mNeonGreen signal associated with the distal 15% of rod-shaped cells is quantified to indicate polarity of fluorescence distribution. Each color in the super plots (Lord et al., 2020) represents an independent biological replicate. Smaller symbols are the polarities of each cell and larger symbols are the means of each replicate. The line shows the average and standard deviation. Data were obtained from three independent experiments. Mann–Whitney U p-value, *p=0.04. (B) Bacteria treated with benzyl alcohol (dashed line) or DMSO vehicle (solid line) were washed then grown in Middlebrook 7H9 with d-cycloserine or moenomycin at the indicated concentrations. The lines are the average of two or three biological replicates.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/81924/elife-81924-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Arrowheads indicate subpolar foci of mCherry-GlfT2. Scale bars, 5 µm. Bottom, quantitation of mCherry-GlfT2 signals with no treatment (n = 475) or lysozyme/mutanolysin treatment (n = 370). Bottom left, lines show the average of total cells. Bottom right, the percentage of signal associated with the distal 15% of rod-shaped cells is quantified to indicate polarity of fluorescence distribution (details in ‘Materials and methods’). The line shows the average and standard deviation. Each color in the super plots represents an independent biological replicate. Smaller symbols are the polarities of each cell and larger symbols are the means of the polarity in each of three biological replicates. Mann–Whitney U p-value, p=0.4685.
 
 De novo membrane partitioning is supported by concurrent cell wall polymerization. PonA2 helps M. smegmatis to tolerate (Figure 7—figure supplement 1) and recover from (Figures 3, 4 and 6) benzyl alcohol-induced membrane disruption. In the absence of benzyl alcohol treatment, however, ΔponA2 has normal growth, impermeability and Ppm1 localization, as well as a biochemically isolable IMD (Figures 3, 4 and 6, Figure 7—figure supplement 1). While ΔponA2 was overall less likely to plasmolyse compared to wild-type (Figure 5D), there were no obvious differences in the subcellular distribution of plasmolysis between the strains (Figure 5C). These data indicate that PonA2 is dispensable for maintaining membrane partitioning under unstressed conditions, at least to the limit of our detection. Therefore, we focused on understanding the role of PonA2 in de novo membrane partitioning.
 
@@ -111,84 +246,241 @@ Individual steps of the bacterial cell wall synthesis pathway are partitioned wi
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mycobacterium smegmatis mc2155)</td>
+      <td>M. smegmatis</td>
+      <td>NC_008596 in GenBank</td>
+      <td></td>
+      <td>Wild-type M. smegmatis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>mCherry-GlfT2 and Ppm1-mNeonGreen</td>
+      <td>Hayashi et al., 2016</td>
+      <td></td>
+      <td>See reference for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>mCherry-GlfT2 and MurG-Dendra2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 wild-type background</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 wild-type background complementing wild-type ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 wild-type background complementing TG- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 wild-type background complementing TP- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 wild-type background complementing TG- and TP- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 mC-GlfT2 and Ppm1-mNG background</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 mC-GlfT2 and Ppm1-mNG background complementing wild-type ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 mC-GlfT2 and Ppm1-mNG background complementing TG- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 mC-GlfT2 and Ppm1-mNG background complementing TP- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>DponA2 mC-GlfT2 and Ppm1-mNG background complementing TG- and TP- ponA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>mCherry-GlfT2/DivIVA-eGFP-ID</td>
+      <td>García-Heredia et al., 2021</td>
+      <td></td>
+      <td>See reference for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>GFP expressing wild-type</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. smegmatis)</td>
+      <td>GFP expressing DponA2 background of wild-type</td>
+      <td>This study</td>
+      <td></td>
+      <td>The mutant was generated as described in Supplementary material and methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB codes</td>
+      <td>García-Heredia et al., 2018; Paintdakhi et al., 2016</td>
+      <td>RRID:SCR_001622</td>
+      <td>Scripts designed for MATLAB to analyze the fluorescence profiles along a cell body from data collected in Oufti.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Python script</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Materials and methods’ and Source code 1 for details</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_003070</td>
+      <td>See reference for details</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>Commercially available</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and growth conditions
 
 Markerless, knock-in M. smegmatis strains expressing both HA-mCherry-GlfT2 and Ppm1-mNeonGreen-cMyc or HA-mCherry-GlfT2 alone were previously established (Hayashi et al., 2016). M. smegmatis mc2155 (wild-type), ∆ponA2, and ∆ponA2 L5::ponA2 (wild-type and various alleles of ponA2) were grown in Middlebrook 7H9 growth medium (BD Difco, Franklin Lakes, NJ) supplemented with 11 mM glucose, 14.5 mM NaCl, 0.4% (vol/vol) glycerol, and 0.05% (vol/vol) Tween-80 (Sigma–Aldrich, St. Louis, MO), as well as kanamycin (50 μg/mL) and/or hygromycin (50 μg/mL) where appropriate. Bacteria were grown at 37°C with shaking at 130 rpm. For chemical treatments, 200 µL of 5 M benzyl alcohol in DMSO (Sigma-Aldrich) or 20 µL of 0.2 M dibucaine in water (Sigma-Aldrich) was added to a 10 mL log-phase culture to achieve a final concentration of 100 mM or 0.4 mM, respectively,. The same volume of DMSO (200 μL to 10 mL culture, 2% [v/v]) or water (20 μL for 10 mL culture) was added as negative control. Phosphate-buffered saline (PBS) with 0.05% (vol/vol) Tween-80 (PBST) was used to wash out benzyl alcohol prior to resuspending bacteria in Middlebrook 7H9.
 
-## Transposon library construction
+### Transposon library construction
 
 A transposon library of M. smegmatis was made by using Himar mutagenesis as previously described (Long et al., 2015; Siegrist and Rubin, 2009). Briefly, Φ MycoMarT7 phage (Piddock et al., 2000) and a log-phase M. smegmatis culture were mixed and incubated for at 37°C for 4 hr. Cells were spread on Middlebrook 7H10 medium supplemented with 11 mM glucose, 14.5 mM NaCl, 0.5% glycerol, 0.05% Tween 80, and 50 μg/mL of kanamycin and incubated for 2–3 d at 37°C, yielding a library of ~105 mutants. The library was prepared by scraping colonies and stored as frozen stocks in Middlebrook 7H9 medium with 25% (vol/vol) glycerol at –80°C for further experiments. Library coverage of TA dinucleotide sites was determined to be ~35% by Illumina sequencing.
 
-## Benzyl alcohol selection of transposon libraries
+### Benzyl alcohol selection of transposon libraries
 
 A frozen stock was thawed and 20 μL of the stock was inoculated to 20 mL of Middlebrook 7H9 medium. After overnight incubation at 37°C to allow the library to recover, this library starter culture was subcultured into 100 mL cultures to make a log-phase culture. The log-phase culture was treated by benzyl alcohol or DMSO vehicle control for 1 hr. Both cultures were washed three times with PBST and resuspended in Middlebrook 7H9 at a starting OD600 of 0.01. The cultures were incubated at 37°C until the OD600 became 1.0 in order to standardize the number of outgrowth generations between libraries to approximately 6.5 generations.
 
-## Sequencing of transposon mutant libraries
+### Sequencing of transposon mutant libraries
 
 Genomic DNA was extracted from benzyl alcohol- or DMSO-treated transposon libraries, and the library mutant composition was determined by sequencing amplicons of the transposon-genome junctions as previously described using primers indicated in Supplementary file 1 (DeJesus et al., 2017; Long et al., 2015). On average, library sequencing yielded between 0.5 million and 4 million unique transposon-inserted-sequences which cover over 35% of the possible TA sites in the genome.
 
-## Mapping and quantification of transposon insertions
+### Mapping and quantification of transposon insertions
 
 Raw sequence data were processed using the TPP tool from the TRANSIT TnSeq analysis platform (DeJesus et al., 2015), and transposon genome junctions were mapped to the M. smegmatis mc2155 reference genome (GenBank accession number NC_018143.1) using the Burroughs-Wheeler aligner (Li and Durbin, 2009). To account for possible PCR amplification biases, reads corresponding to the same TA site and possessing the same 7-nucleotide barcode were derived from the same template, and these duplicate reads were discarded from the final template counts. Data in Figure 2 were obtained from three biological replicates.
 
-## Identification of genes affecting fitness under benzyl alcohol selection
+### Identification of genes affecting fitness under benzyl alcohol selection
 
 Genes conditionally affecting fitness in the presence of benzyl alcohol were identified using the resampling test module in the TRANSIT analysis platform as previously described (DeJesus et al., 2017; DeJesus et al., 2015). In brief, we treated DMSO (a control treatment) and benzyl alcohol to transposon mutant library in triplicate. After washing out by PBST thrice, OD600 was adjusted to 0.01. The cultures were incubated for 16–24 hr to OD600~1.0. DNA was isolated from 30 mL of culture, sequenced, and analyzed as described in the previous work (DeJesus et al., 2017; DeJesus et al., 2015).
 
-## Construction of plasmids and mutants
+### Construction of plasmids and mutants
 
-## pMUM264
+#### pMUM264
 
 To delete the endogenous ponA2 gene, we amplified upstream and downstream regions of ponA2 using the A980 and A981 (all primers are shown in Supplementary file 1). These two fragments were assembled into pCOM1 (Hayashi et al., 2016) at Van91I sites by Gibson assembly (New England Biolabs). The assembled plasmid, pMUM264, was transformed into M. smegmatis by electroporation, and positive clones were isolated based on hygromycin resistance and SacB-dependent sucrose sensitivity. Correct deletion of the ponA2 gene was confirmed by PCR.
 
-## pMUM280
+#### pMUM280
 
 Primers A980 and A981 were designed to amplify ponA2, including 192 bp of upstream native promoter region from wild-type. The PCR fragment was assembled into pMUM 126 (Hayashi et al., 2016) at KpnI-XbaI sites by Gibson assembly. The assembled plasmid, pMUM280, was transformed into M. smegmatis by electroporation, and positive clones were isolated based on kanamycin resistance.
 
-## pMUM293 (TG-) and 294 (TP-)
+#### pMUM293 (TG-) and 294 (TP-)
 
 Primers A995 to A998 were designed to make point mutations of ponA2 as shown in Supplementary file 1 using the Q5 Site-Directed Mutagenesis Kit (New England Biolabs). After mutations were confirmed by sequencing, the resulting plasmid, pMUM293 or 294, was transformed into M. smegmatis as above.
 
-## pMUM295 (TG-/TP-)
+#### pMUM295 (TG-/TP-)
 
 The part of pMUM293 which includes the TG region was digested by SacI and MluI and the fragment was inserted into the same region of pMUM294 by ligation.
 
-## CFUs and growth curves
+### CFUs and growth curves
 
 Wildtype, ∆ponA2, and the complemented strain (cponA2) cells were grown to stationary phase, then back-diluted and allowed to grow overnight to log phase (OD600 0.5–0.8). Cultures were treated with DMSO or benzyl alcohol (100 mM of final concentration) at 37°C with shaking at 150 rpm for 1 hr. The treated cultures were washed with PBST three times and resuspended in Middlebrook 7H9 medium at a starting OD600 of 0.1 for continuous OD measurement in 125 mL flasks (Figure 3C) or 96-well-plate with antibiotics (Figure 8B). BioTek Synergy 2 was used for the growth curve in 96-well-plate. Aliquots (20 μL) were serial diluted with 7H9 media (200 μL) and 5 μL of aliquot is plated for CFUs.
 
-## Resazurin growth curves
+### Resazurin growth curves
 
 Our Tn-seq experiment (Figure 2) and initial validation (Figure 3B) were performed in 7H9 growth medium that lacked albumin. We found that M. smegmatis clumped when grown in the same medium in 96-well plate format, precluding accurate OD600 readings. Addition of albumin prevented clumping. However, genetic or chemical perturbation of PonA2 no longer had a phenotype post-benzyl alcohol when albumin was included in the growth medium. While we do not yet understand this effect, we speculate that albumin might mitigate benzyl alcohol-induced fluidization and/or alter osmolarity. Therefore, we used resazurin reduction as an alternative, high-throughput method to assess M. smegmatis growth ± benzyl alcohol for the experiments in Figures 6A and 8B (Eagen et al., 2018). In brief, cells were washed three times with PBST and resuspended in Middlebrook 7H9 following a 1 hr treatment with DMSO vehicle control or benzyl alcohol. Then, 200 µL of culture and 20 µL of 0.015% (w/v) resazurin (Acros Organics) were mixed in 96-well-plates, and absorbance at 570 nm and 600 nm wwas measured by the Synergy H1 Hybrid microplate reader (BioTek) overnight. The percent of reduced resazurin was calculated as before (Eagen et al., 2018).
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 An aliquot (5 µL) of bacterial culture was inoculated on an agar pad (1% agarose in water) placed on a glass slide glass. Images were acquired on Nikon Eclipse E600. Cell outlines were traced using Oufti (Nguyen et al., 2007; Paintdakhi et al., 2016). Intensity profiles were generated using MATLAB code as described in García-Heredia et al., 2018. Polarity ratios were calculated by combining signal values for 15% of the cell length on either pole and dividing the sum by total cell fluorescence. Super plots were generated as described.
 
-## Membrane fractionation
+### Membrane fractionation
 
 Log-phase M. smegmatis cells treated with benzyl alcohol were harvested by centrifugation and washed in PBST. One gram of wet pellet was resuspended in 4 mL of lysis buffer containing 25 mM HEPES (pH 7.4), 20% (wt/vol) sucrose, 2 mM EGTA, and a protease inhibitor cocktail (Thermo Fisher Scientific, Waltham, MA) as described (Morita et al., 2005). Bacteria were lysed by high pressure of nitrogen (~2000 ppm). The lysate was centrifuged, and supernatant was spotted on the top of a tube containing sucrose gradient (20–50% [w/v], 25 mM HEPES). The sample was sedimented by ultra centrifuge (Beckman-Coulter) at 35,000 rpm for 6 hr on SW-40Ti rotor (Beckman-Coulter) at 4°C as in the previous literature (García-Heredia et al., 2021; García-Heredia et al., 2021; Hayashi et al., 2016; Morita et al., 2005). The tubes were imaged after sedimentation.
 
-## Densitometry analysis
+### Densitometry analysis
 
 Images in Figure 4D were converted to grayscale in ImageJ (Schindelin et al., 2012). Three parallel lines were drawn from the top of the tube to the middle of tube. The gray values along the lines were quantified in each pixel. The average and standard deviation were plotted.
 
-## Bocillin-FL
+### Bocillin-FL
 
 Cell lysates were prepared by bead beating as in the previous literature (Rahlwes et al., 2017). Then, 30 μg protein of cell lysate was incubated with 100 pmol Bocillin-FL (Invitrogen) in a total volume of 7.5 μL for 30 min in 37°C (Levine and Beatty, 2021). The sample was mixed with 2.5 μL of 4×-SDS-loading buffer and boiled for 3 min at 98°C. The entire sample was subjected to SDS-PAGE analysis. Gel was imaged by Amersham ImageQuant 800 system (Cytiva).
 
-## Cell wall damage
+### Cell wall damage
 
 Cells expressing mCherry-GlfT2 were grown to stationary phase, then back-diluted and allowed to grow overnight to log phase (OD600 = 0.5–0.8). Cultures were incubated at 37°C shaking at 300 rpm in Benchmark Scientific MultiTherm Shaker H5000-H for 1 hr with 500 μg/mL lysozyme (Sigma-Aldrich, prepared fresh) and 500 U/mL mutanolysin (Sigma-Aldrich). Cells were imaged as described above.
 
-## Cell envelope labeling
+### Cell envelope labeling
 
 AlkDADA was custom synthesized by WuXi Apptec. Mid-log M. smegmatis was labeled with 2 mM alkDADA for 15 min. Cells were washed with PBST containing 0.01% BSA (PBSTB) and fixed in 2% formaldehyde at room temperature for 10 min. Cells were washed twice and applied for the reaction with CuAAC AFDye488 Azide (Click Chemistry Tool, Scottsdale, AZ) as described (García-Heredia et al., 2018; Siegrist et al., 2013).
 
-## Cell width morphology profiles
+### Cell width morphology profiles
 
 Cells were placed on an agar pad slide, and imaged by phase microscopy (Nikon Eclipse E600, Nikon Eclipse Ti with ×100 objectives, N.A.=1.30). From the phase microscopy images, cells were outlined and segmented using Oufti (Paintdakhi et al., 2016). Cell width data were exported from Oufti and analyzed using a custom Python script. Using this script, cell lengths were normalized to a length of 1 (midcell = 0.5) and their width along their length was plotted as a line with each line representing a single cell. Multiple cell width profiles were superimposed on top of each other to visualize the major morphological trend (rod vs. blebbed). Additionally, percentages of cells with maximum widths ≥0.95 µm (green dotted line) were counted and the total percentage of cells obtaining widths at or above these thresholds was displayed.
 
-## Imaging in microfluidic devices
+### Imaging in microfluidic devices
 
 We used a Nikon Eclipse Ti2-E inverted fluorescence microscope with a ×100 (N.A. 1.40) oil-immersion objective for imaging DU885 electron-multiplying charge-coupled device camera (Andor) for imaging (Rojas et al., 2018). Devices were kept at 37°C for imaging. Cells were streaked out on LB agar containing 50 µg/mL hygromycin and incubated at 37°C for 2–3 d. Single colonies were inoculated into Middlebrook 7H9 containing 50 µg/mL hygromycin and incubated for ~48 hr at 37°C. The cells were then back diluted and added to the B04A microfluidic perfusion plate (CellASIC) during exponential phase. Plates were loaded with medium pre-warmed to 37°C. Cells were loaded into the plate, which was incubated at 37°C, without shaking, for 30 min before imaging. Medium was exchanged using the ONIX microfluidic platform (CellASIC). In the case where cells were stained with RADA, a TAMRA-based fluorescent d-amino acid (Tocris Bioscience), 1 µM RADA was added to the culture upon back dilution. If the cells were not stained with RADA, Alexa Fluor 647 NHS succinimidyl ester (Thermo Fisher Scientific) was added to the media as an occlusion dye (it is not cell wall permeable and thus can be used to track the cells). Cells were perfused with Middlebrook 7H9 medium for 5 min and then hyperosmotically shocked with 7H9 + 3 M sorbitol for 10 min.

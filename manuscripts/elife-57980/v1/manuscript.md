@@ -35,15 +35,21 @@ Therefore, we aimed to provide robust evidence about trends of mean levels of to
 
 ## Results
 
-## Selection process
+### Selection process
 
 The search yielded 6699 titles and abstracts; of these, 1123 were studied in detail and finally 197 studies met the inclusion criteria (Figure 1—figure supplement 1).
 
-## General characteristics of selected studies
+### General characteristics of selected studies
 
 Brazil, with 61 studies, and Chile with 21 studies, contributed with the greatest number of studies to the systematic review (Figure 1 - Figure 1—figure supplement 1 and Supplementary file 1, table 1). There were more studies conducted since 2010 (Figure 1—figure supplement 1). Across studies, the mean proportion of men in the study population was 43%, and the mean age was 48 years (Supplementary file 1, table 1).
 
-## Total cholesterol
+![Figure 1.](https://cdn.elifesciences.org/articles/57980/elife-57980-fig1-v1.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57980/elife-57980-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** In this figure supplement, we show the number of data sources by country and year of data collection.
+
+### Total cholesterol
 
 Evidence from 86 studies (168,553 individuals) informed the overall estimates on mean total cholesterol. The random-effects meta-analysis revealed a pooled mean total cholesterol of 193 mg/dl since 2005 (Table 1). During the last years, there seemed to be a negative yet weak correlation with time, signalling a small decrease in mean total cholesterol (Figure 2). National studies tended to report lower mean levels than community and sub-national studies (Figure 2). Southern and Tropical Latin America appeared to have higher levels than the other sub-regions (Figure 2).
 
@@ -51,31 +57,120 @@ Evidence from 86 studies (168,553 individuals) informed the overall estimates on
 
 **Figure 2.:** The solid blue line represents a linear regression trend. Year in the x-axis refers to data collection year. Countries within sub-regions are shown in Supplementary file 1, Table 5. Individual estimates are shown in Supplementary file 1, Table 2.
 
+**Table 1.**
+ Pooled mean and pooled prevalence estimates since 2005, random-effects meta-analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean (mg/dl)</th>
+      <th>Lower 95% confidence interval</th>
+      <th>Upper 95% confidence interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total cholesterol (37 studies)</td>
+      <td>193.39</td>
+      <td>189.10</td>
+      <td>197.68</td>
+    </tr>
+    <tr>
+      <td>LDL-Cholesterol (30 studies)</td>
+      <td>119.98</td>
+      <td>116.08</td>
+      <td>123.88</td>
+    </tr>
+    <tr>
+      <td>HDL-Cholesterol (42 studies)</td>
+      <td>46.55</td>
+      <td>44.99</td>
+      <td>48.12</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (39 studies)</td>
+      <td>139.27</td>
+      <td>130.57</td>
+      <td>147.98</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Prevalence (%)</td>
+      <td>Lower 95% confidence interval</td>
+      <td>Upper 95% confidence interval</td>
+    </tr>
+    <tr>
+      <td>High total cholesterol - ≥ 200 mg/dl (six studies)</td>
+      <td>34.04</td>
+      <td>19.04</td>
+      <td>49.04</td>
+    </tr>
+    <tr>
+      <td>High total cholesterol - ≥ 240 mg/dl (five studies)</td>
+      <td>20.97</td>
+      <td>13.51</td>
+      <td>28.43</td>
+    </tr>
+    <tr>
+      <td>High LDL-Cholesterol - ≥ 130 mg/dl (two studies)</td>
+      <td>40.41</td>
+      <td>29.05</td>
+      <td>51.78</td>
+    </tr>
+    <tr>
+      <td>High LDL-Cholesterol - ≥ 160 mg/dl (five studies)</td>
+      <td>19.73</td>
+      <td>11.57</td>
+      <td>27.89</td>
+    </tr>
+    <tr>
+      <td>Low HDL-Cholesterol ≤ 40(men) and ≤50(women) (nine studies)</td>
+      <td>48.27</td>
+      <td>36.31</td>
+      <td>60.22</td>
+    </tr>
+    <tr>
+      <td>High Triglycerides ≥ 150 mg/dl (12 studies)</td>
+      <td>43.12</td>
+      <td>35.40</td>
+      <td>50.85</td>
+    </tr>
+    <tr>
+      <td>High Triglycerides ≥ 200 mg/dl (four studies)</td>
+      <td>20.48</td>
+      <td>16.28</td>
+      <td>24.69</td>
+    </tr>
+  </tbody>
+</table>
+
 The total cholesterol prevalence estimates were informed by 68 studies (129,123 individuals) overall. The pooled prevalence since 2005 was 21% for total cholesterol ≥240 mg/dl and 34% for total cholesterol ≥200 mg/dl (Table 1). There was a positive trend with time, signalling an increase yet weak evidence supported this observation (Figure 3). National studies were evenly distributed; Southern and Tropical Latin America seemed to have higher estimates (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57980/elife-57980-fig3-v1.jpg)
 
 **Figure 3.:** Year in the x-axis refers to data collection year. Countries within sub-regions are shown in Supplementary file 1, Table 5. Studies included in this graphics are those with standard clinically relevant definitions. I.e., total cholesterol ≥150 mg/dl,≥200 mg/dl, or ≥240 mg/dl; LDL-Cholesterol ≥100 mg/dl,≥130 mg/dl, or ≥160 mg/dl; HDL-Cholesterol ≤40 mg/dl in men and ≤50 mg/dl in women; triglycerides ≥ 100 mg/dl,≥130 mg/dl,≥150 mg/dl, or ≥200 mg/dl. That is, prevalence estimates based on other definitions were excluded. Individual estimates are shown in Supplementary file 1, Table 3.
 
-## LDL-Cholesterol
+### LDL-Cholesterol
 
 The overall sample for LDL-Cholesterol was 61 studies (86,854 subjects). Since 2005, the pooled mean was 120 mg/dl (Table 1). There was a non-significant decreasing trend (Figure 2). National studies seemed to report lower means, and there was not a clear geographic distribution (Figure 2).
 
 Overall, LDL-Cholesterol prevalence estimates were informed by 29 studies (42,900 individuals). The pooled prevalence of high LDL-cholesterol since 2005 was 21% for LDL-Cholesterol ≥160 mg/dl and 40% for LDL-Cholesterol ≥130 mg/dl (Table 1), and such estimates have slightly increased (Figure 3). National studies were evenly distributed along the other studies (Figure 3). Southern and Tropical Latin America appeared to have higher estimates (Figure 3).
 
-## HDL-Cholesterol
+### HDL-Cholesterol
 
 The HDL-Cholesterol mean estimates benefited from 84 studies (121,282 subjects). The pooled mean since 2005 was 47 mg/dl (Table 1). The time trend of mean HDL-Cholesterol was negative yet non-significant (Figure 2). National studies were evenly distributed; Southern and Tropical Latin America seemed to show higher means (Figure 2).
 
 The HDL-Cholesterol prevalence estimates were based on 34 studies (55,164 individuals) overall. The pooled prevalence since 2005 was 48% for HDL-Cholesterol ≤40 mg/dl in men and ≤50 mg/dl in women (Table 1). The prevalence of low HDL-Cholesterol had a negative trend, yet not strong evidence supported this finding (Figure 3). National studies were evenly distributed; Central Latin America seemed to have higher rates of low HDL-Cholesterol (Figure 3).
 
-## Triglycerides
+### Triglycerides
 
 There were 84 studies (121,009 people) included in the mean triglycerides analysis. The pooled mean was 139 mg/dl since 2005 (Table 1). The mean levels of triglycerides have slightly increased (Figure 2). Estimates from national studies did not show a strong pattern (Figure 2). Estimates from Andean and Central Latin America appeared to be higher than those from Southern and Tropical Latin America (Figure 2).
 
 Data from 70 studies (109,935 people) informed the triglycerides prevalence estimates overall. The pooled prevalence of high triglycerides was 21% for triglycerides ≥ 200 mg/dl and 43% for triglycerides ≥ 150 mg/dl (Table 1). The prevalence of high triglycerides has increased (Figure 3), yet weak evidence supported this finding. National studies did not show any patterns (Figure 3). As it was the case in mean triglycerides, Andean and Central Latin America seemed to have higher rates of high triglycerides (Figure 3).
 
-## Risk of bias
+### Risk of bias
 
 Given the overall selection criteria (population-based studies with blood samples to measure lipid biomarkers), studies had moderate risk of bias. For details about the assessment tool and our grading rationale, please refer to Supplementary file 1 pp. 08–09.
 
@@ -117,40 +212,40 @@ Levels and prevalence estimates of unhealthy total cholesterol, LDL-Cholesterol,
 
 ## Materials and methods
 
-## Protocol
+### Protocol
 
 This is a systematic review of the literature (PROSPERO CRD42019120491; PRISMA Checklist available in Supplementary file 1). We aimed to identify trends in total cholesterol and cholesterol fractions in LAC general population; also, to ascertain which dyslipidaemia (e.g. low HDL-cholesterol) is the most prevalent in LAC.
 
-## Eligibility criteria
+### Eligibility criteria
 
 Research reports were analysed if they targeted adult men and women of the general population. We focused on LAC populations, thus studies with LAC populations in countries outside the LAC region, and studies with only foreign populations in LAC nations, were excluded. Population-based studies were defined as those which followed a random sampling of the general population. Conversely, studies addressing specific populations (e.g., shanty towns), those with patients (e.g., stroke survivors), or people with risk factors (e.g., smokers), were excluded.
 
 The outcomes of interest were lipid biomarkers levels and dyslipidaemia prevalence. We focused on clinically and public health relevant lipid biomarkers: total cholesterol, HDL-Cholesterol, LDL-cholesterol and triglycerides. Only studies in which lipid biomarkers were measured with valid methods (e.g. laboratory or point-of-care devices) were included; that is, studies which results relied only on self-reported information were excluded.
 
-## Information sources
+### Information sources
 
 The search was conducted on December 21st, 2018. We used Scopus, LILACS, Embase, Medline and Global Health; the last three through Ovid. In all of these, the search was conducted without time or language restriction. The search terms are available in Supplementary file 1 pp. 06–07.
 
-## Study selection
+### Study selection
 
 Results from each search engine were downloaded and saved in EndNote where duplicates were dropped. A second search for duplicates was conducted with Rayyan, an online tool for systematic reviews (Ouzzani et al., 2016). Titles and abstracts were independently reviewed by two researchers (RMC-L and NP-B; CA-R and CJB-M; LA-F and DS-V), and discrepancies were solved by consensus or a third party (AB-O). After this screening phase, selected reports were downloaded and independently studied in detail by two researchers (RMC-L and NP-B; CA-R and CJB-M; LA-F and DS-V); discrepancies were solved by consensus or by a third party (AB-O). Finally, selected studies were scrutinized again to check for data duplication, i.e. different reports that used the same data (e.g., a national survey). In this case, the paper which presented more information (e.g., all four lipid biomarkers), or the one with the largest sample size, was included in the systematic review and meta-analysis. In other words, we aimed to include each study or survey once. The unit of analysis is a study.
 
-## Data collation
+### Data collation
 
 An extraction form was developed by the authors and tested with a random sample of selected studies; the form was not modified after data collation started. This form included study’s characteristics: mean age, proportion of men, year of data collection, and if it was a nationally representative sample. The extraction form also collated the mean and prevalence estimate as well as a dispersion measurement (e.g. standard deviation or confidence interval) of the available lipid biomarkers.
 
-## Risk of bias of individual studies
+### Risk of bias of individual studies
 
 We used the risk of bias tool developed by Hoy and colleagues (Hoy et al., 2012). Notably, this tool was also used by a systematic review on a similar topic (Noubiap et al., 2018). These criteria were implemented in an Excel spreadsheet and evaluated independently by two reviewers (RMC-L and NP-B; CA-R and CJB-M; LA-F and DS-V); discrepancies were solved by consensus or a third party (AB-O).
 
-## Summary measures
+### Summary measures
 
 We present both a narrative and quantitative summary. The narrative summary described the study’s characteristics, while the quantitative summary explored the trends of the lipid biomarkers means as well as prevalence estimates. In addition, following a random-effects meta-analysis and using data from 2005 onwards, we computed the pooled mean and the pooled prevalence estimate for each lipid biomarker and dyslipidaemia trait. We only used the most recent data (i.e., from 2005) to report on the current -or most recent- levels in LAC, rather than summarizing all available information with no clear time frame. Because the selected studies had different sample size and scope (e.g., national surveys versus community studies), we conducted the random-effects meta-analysis. Unlike a fixed-effect meta-analysis, in a random-effects meta-analysis large studies would not drive or bias the pooled estimates.
 
-## Ethical considerations
+### Ethical considerations
 
 This is a systematic review of published scientific evidence and open information. Human subjects did not participate in this work directly and there was no intervention. Approval from an IRB/ethics committee was not requested.
 
-## Role of the funder
+### Role of the funder
 
 The funder had no role in the research question, data collation, analysis or reporting of the results. All the authors collectively are responsible for data accuracy and they all have approved the submitted work.

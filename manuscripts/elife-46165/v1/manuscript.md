@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46165.001 Integration of stimuli of different modalities is an important but incompletely understood process during decision making. Here, we show that Drosophila are capable of integrating mechanosensory and chemosensory information of choice options when deciding where to deposit their eggs. Specifically, females switch from preferring the softer option for egg-laying when both options are sugar free to being indifferent between them when both contain sucrose. Such sucrose-induced indifference between options of different hardness requires functional sweet neurons, and, curiously, the Transmembrane Channel-like (TMC)-expressing mechanosensitive neurons that have been previously shown to promote discrimination of substrate hardness during feeding. Further, axons of sweet neurons directly contact axons of TMC-expressing neurons in the brain and stimulation of sweet neurons increases Ca 2+ influx into axons of TMC-expressing neurons. These results uncover one mechanism by which Drosophila integrate taste and tactile information when deciding where to deposit their eggs and reveal that TMC-expressing neurons play opposing roles in hardness discrimination in two different decisions.
+Integration of stimuli of different modalities is an important but incompletely understood process during decision making. Here, we show that Drosophila are capable of integrating mechanosensory and chemosensory information of choice options when deciding where to deposit their eggs. Specifically, females switch from preferring the softer option for egg-laying when both options are sugar free to being indifferent between them when both contain sucrose. Such sucrose-induced indifference between options of different hardness requires functional sweet neurons, and, curiously, the Transmembrane Channel-like (TMC)-expressing mechanosensitive neurons that have been previously shown to promote discrimination of substrate hardness during feeding. Further, axons of sweet neurons directly contact axons of TMC-expressing neurons in the brain and stimulation of sweet neurons increases Ca2+ influx into axons of TMC-expressing neurons. These results uncover one mechanism by which Drosophila integrate taste and tactile information when deciding where to deposit their eggs and reveal that TMC-expressing neurons play opposing roles in hardness discrimination in two different decisions.
 
 ## Introduction
 
@@ -28,19 +28,27 @@ In this work, we set out to assess how Drosophila females integrate information 
 
 ## Results
 
-## Drosophila are receptive to laying eggs on plain (sugar free) substrates of different hardness but generally prefer the softer one
+### Drosophila are receptive to laying eggs on plain (sugar free) substrates of different hardness but generally prefer the softer one
 
 While it is commonly observed that flies tend to avoid depositing their eggs on very hard surfaces (e.g. hard plastic), the specific range of hardness that is acceptable for flies to lay their eggs and how well they discriminate egg-laying substrates of different levels of hardness have not been extensively explored. Since previous reports have shown that agarose of different concentrations have different levels of hardness (Jeong et al., 2016; Sánchez-Alcañiz et al., 2017b; Karageorgi et al., 2017), we first presented egg-laying females with different concentrations of agarose in our high-throughput egg-laying apparatus, each of which can assay egg-laying of 30 individual females in parallel (Gou et al., 2016). Importantly, we did not add sucrose or other nutritive substances to these substrate so as to minimize the impact of chemosensory cues on flies’ sensing and discrimination of substrate hardness. Instead, we placed a drop of sucrose solution some distance away from the agarose substrates so that flies still had access to an energy source during egg-laying (see the ‘center hole’ in Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig1-v1.jpg)
 
-**Figure 1.:** Drosophila can discriminate egg-laying substrates of different hardness.(A) Upper image: schematic of our single-choice assay. In this assay, we placed the same agarose (colored strips) on the two sides of the arena and a drop of sucrose in the center hole. The two agarose are separated by acrylic. Each of our apparatus has 30 arenas that can assay egg-laying of 30 individual females. (B) Comparison of acceptance of different concentrations of agarose for egg-laying in single-choice assay. Each data point in a column denotes the number of eggs laid by a single female over 14 hr. The numbers of females examined per group are labeled on the graph (N = 24 for each group in this experiment). Note that in this work, when comparisons of multiple groups were needed, we used letters (e.g. a, b) to describe the statistical relationship between them and used the following rule: groups that share at least one letter (e.g. ab vs. bc) are statistically indistinguishable, and groups that have different letters (e.g. a vs. b) are statistically different. One-way ANOVA followed by Tukey’s multiple comparisons test. These comparisons may yield different p values (e.g. p<0.05, p<0.0001) at times, in which case, we labeled the highest. Also, throughout this work, the ‘cross’ labeled in each column denotes sample mean ± s.e.m. (C) Upper panel: schematic of our two-choice assay. In this assay, we placed two different agarose (colored strips) on the two sides of the arena. Lower panel: formula for calculating egg-laying preference index (PI) and a representative image of eggs laid by a single WT female in a 0.5% vs. 1.5% two-choice assay. (D) PI (for 0.5% agarose) of WT(w) females in different two-choice assays where 0.5% agarose was pitted against other concentrations of agarose. ns: not significant, ****p<0.0001, *p<0.05; Wilcoxon signed-rank test (H11180 = 0). (E) Representative trajectory of a single WT female as it explored the arena in a 0.5% vs. 1.5% two-choice assay. The x-axis denotes time, and the y-axis denotes the y position of the fly. (F) Quantification of the proportion of time females spent on the 0.5% agarose vs. on the 1.5% agarose in the two-choice arena. ns: not significant; Wilcoxon matched-pairs test.10.7554/eLife.46165.003Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Upper image: schematic of our single-choice assay. In this assay, we placed the same agarose (colored strips) on the two sides of the arena and a drop of sucrose in the center hole. The two agarose are separated by acrylic. Each of our apparatus has 30 arenas that can assay egg-laying of 30 individual females. (B) Comparison of acceptance of different concentrations of agarose for egg-laying in single-choice assay. Each data point in a column denotes the number of eggs laid by a single female over 14 hr. The numbers of females examined per group are labeled on the graph (N = 24 for each group in this experiment). Note that in this work, when comparisons of multiple groups were needed, we used letters (e.g. a, b) to describe the statistical relationship between them and used the following rule: groups that share at least one letter (e.g. ab vs. bc) are statistically indistinguishable, and groups that have different letters (e.g. a vs. b) are statistically different. One-way ANOVA followed by Tukey’s multiple comparisons test. These comparisons may yield different p values (e.g. p<0.05, p<0.0001) at times, in which case, we labeled the highest. Also, throughout this work, the ‘cross’ labeled in each column denotes sample mean ± s.e.m. (C) Upper panel: schematic of our two-choice assay. In this assay, we placed two different agarose (colored strips) on the two sides of the arena. Lower panel: formula for calculating egg-laying preference index (PI) and a representative image of eggs laid by a single WT female in a 0.5% vs. 1.5% two-choice assay. (D) PI (for 0.5% agarose) of WT(w1118) females in different two-choice assays where 0.5% agarose was pitted against other concentrations of agarose. ns: not significant, ****p<0.0001, *p<0.05; Wilcoxon signed-rank test (H0 = 0). (E) Representative trajectory of a single WT female as it explored the arena in a 0.5% vs. 1.5% two-choice assay. The x-axis denotes time, and the y-axis denotes the y position of the fly. (F) Quantification of the proportion of time females spent on the 0.5% agarose vs. on the 1.5% agarose in the two-choice arena. ns: not significant; Wilcoxon matched-pairs test.
 
 To assess the acceptability of substrates of different hardness for egg-laying, we first presented flies with agarose of different concentrations in single-choice conditions where they had access to agarose of one specific concentration in each chamber (Figure 1A). We found that flies laid comparable numbers of eggs on agarose whose concentration ranged from 0.25% to 1.5% (Figure 1B). But they laid fewer eggs on agarose with concentrations that were either too high or too low (Figure 1B), likely because they cannot easily insert their ovipositor into a substrate that is very hard and because they tend to avoid walking on a surface that is liquid-like. We then determined how well females discriminated agarose of different concentrations in two-choice assays (Figure 1C). In particular, we focused on examining whether flies favored the softer 0.5% agarose over several other harder substrates. We found that flies consistently laid more eggs on the 0.5% agarose when it was pitted against 1.0%, 1.25% or 1.5% agarose in different two-choice assays (Figure 1D). Since flies laid comparable amount of eggs on these concentrations of agarose in single-choice assays (Figure 1B), their preference for the softer 0.5% agarose in the two-choice assays indicated that: 1) they were capable of discriminating ‘equally acceptable’ substrates of different hardness and 2) they preferred the softer one when given a choice. Further, tracking the positions of flies as they explored and laid eggs in a 0.5% vs. 1.5% two-choice assay showed that they spent comparable amounts of time on these two agarose substrates (Figure 1E and F), suggesting that their preference to deposit eggs on the softer 0.5% agarose substrate was not due to intrinsic positional preference for the softer substrate. We thus chose the 0.5% vs. 1.5% agarose as our standard two-choice assay to search for the specific sensory mechanism that enables Drosophila females to discriminate substrates of different hardness during egg-laying.
 
-## Drosophila use different mechanosensitive channels and neurons to discriminate substrates of different hardness during feeding and egg-laying
+### Drosophila use different mechanosensitive channels and neurons to discriminate substrates of different hardness during feeding and egg-laying
 
 To start identifying the potential sensory mechanism by which egg-laying females discriminate agarose substrates of different hardness, we screened a small collection of mutants for genes that have been shown to sense water, hardness of food substrates during feeding, or nociceptive mechanical force. This list includes mutants for the water sensor Ppk28 (Cameron et al., 2010), TRP channels Nanchung (Nan) (Kim et al., 2003; Gong et al., 2004), Inactive (Iav) (Kim et al., 2003; Gong et al., 2004), NompC (Walker et al., 2000), and the evolutionarily conserved mechanosensitive channels Piezo (Kim et al., 2012) and TMC (Zhang et al., 2016). Curiously, none of these mutants behaved differently from controls: they all showed a preference to deposit their eggs on the softer 0.5% agarose substrate when given a 0.5% and a 1.5% agarose substrate to choose from (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig2-v1.jpg)
+
+**Figure 2.:** (A) PI (for 0.5% agarose) of several known channel mutants in a 0.5% vs. 1.5% two-choice assay. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (B–D) PI (for 0.5% agarose) of females with TMC-expressing neurons silenced (B) or NompC and Nan-expressing neurons silenced (C–D) in a 0.5% vs. 1.5% two-choice assay. (R41E11-GAL4 is another driver that labels the NompC and Nan-expressing neurons) (Jeong et al., 2016). ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test for comparisons in panels (I and J), Mann–Whitney test for comparison in panel K). (E–G) PI (for 0.5% agarose) of WT females with their (E) labellum, (F) tarsi of all six legs, and (G) labellum plus tarsi of all legs removed in a 0.5% vs. 1.5% two-choice assay. ***p<0.001, **p<0.01; Mann–Whitney test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Number of eggs laid by females with different appendages removed in single-choice assay. ****p<0.0001, ***p<0.001, **p<0.01; Kruskal–Wallis test followed by Dunn's multiple comparisons test against control. (B–D) PI (for 0.5% agarose) of WT females with different appendages removed in a 0.5% vs. 1.5% two-choice assay. ns: not significant; Mann–Whitney test.
 
 We next attempted to identify the specific sensory neurons that the flies use to discriminate substrates of different hardness during egg-laying. Previous studies have shown that Drosophila prefer to feed on softer substrates over hard ones, and that they rely on two distinct groups of mechanosensitive neurons on the labellum to sense and discriminate hardness of substrates (Zhang et al., 2016; Jeong et al., 2016; Sánchez-Alcañiz et al., 2017b). The first group has only two members that are known as the multi-dendritic neurons in the labellum (MD-L neurons), displays large and complex dendrites, and expresses and uses the evolutionarily conserved mechanosensitive channel TMC to sense the hardness of food substrates (Zhang et al., 2016; Pan et al., 2018; Vreugde et al., 2002; Keresztes et al., 2003; Pan et al., 2013). The second group has numerous members, displays dendrites that are short and simple, and expresses and uses the TRP channels Nanchung (Nan) and NompC to sense the hardness of food substrates (Jeong et al., 2016; Sánchez-Alcañiz et al., 2017b). We wondered whether these two groups of mechanosensitive neurons may also play a role in discriminating substrates of different hardness during egg-laying, although possibly by using channels other than TMC, NompC, and Nan, since mutants for these three channels did not behave significantly different from controls (Figure 2A). However, silencing these neurons by using the same tools employed by the feeding studies (Jeong et al., 2016; Zhang et al., 2016; Sánchez-Alcañiz et al., 2017b) did not significantly impact flies’ ability to discriminate substrates of different hardness during egg-laying either: these manipulated flies still clearly preferred to lay eggs on the 0.5% agarose in the 0.5% vs. 1.5% two-choice assays (Figure 2B–D). These results raised two possibilities: first, flies may rely on an as-yet-unidentified group (or groups) of mechanosensitive neurons on the labellum to sense and discriminate substrates of different hardness during egg-laying; second, the mechanosensitive neurons that are critical for discriminating substrate hardness during egg-laying may not be housed on the labellum.
 
@@ -48,25 +56,61 @@ To attempt to identify the appendage(s) that houses the specific mechanosensitiv
 
 Taken together, these results uncover three important differences between substrate hardness discrimination during feeding and egg-laying. First, flies use different sets of mechanosensitive channels to discriminate substrates of different hardness during feeding and egg-laying – TMC, NompC, and Nan were not required for discrimination during egg-laying (Figure 2A) but were required for discrimination during feeding (Jeong et al., 2016; Zhang et al., 2016; Sánchez-Alcañiz et al., 2017b). Second, although flies rely on mechanosensitive neurons on the labellum/proboscis to discriminate substrates of different hardness during feeding (Jeong et al., 2016; Zhang et al., 2016; Sánchez-Alcañiz et al., 2017b), the principal mechanosensitive neurons they use to discriminate hardness during egg-laying likely may be housed on the ovipositor instead since removal of none of the other appendages caused females unable to discriminate substrates of different hardness (Figure 2G). While we do not have direct evidence to support this claim, we note that ovipositor is known to possess mechanosensitive neurons (Sánchez-Alcañiz and Benton, 2017a; Stocker, 1994; Newland and Burrows, 1994) and that flies have been shown to actively probe substrates with their ovipositor prior to depositing each egg (Yang et al., 2008). Third and most curiously, labellum and legs may house mechanosensitive neurons whose input acts to inhibit – as opposed to promote – discrimination of substrates of different hardness during egg-laying, as severing these appendages enhanced discrimination of substrates of different hardness (Figure 2E–G).
 
-## Detection of sucrose on substrates inhibits discrimination of substrates of different hardness during egg-laying
+### Detection of sucrose on substrates inhibits discrimination of substrates of different hardness during egg-laying
 
 Our experiments have so far focused on assessing how egg-laying females discriminated plain agarose substrates of different levels of hardness. To begin to probe how they evaluate substrates of different hardness in the presence of additional sensory cues, we next asked whether adding sugars to substrates of different hardness affects how they are discriminated by females. Specifically, we added the same amount of sucrose to both the 0.5% and the 1.5% agarose substrates and found that, interestingly, presence of sucrose in both substrates significantly reduced females’ preference to lay eggs on the softer 0.5% substrate (Figure 3A and B). The reduction in preference was mild when sucrose concentration was low (e.g. 5 mM) but became stronger as the concentration of sucrose increased (Figure 3—figure supplement 1A). When the concentration reached 100 mM, flies became virtually indifferent between the 0.5% and the 1.5% choice (Figure 3A and B; Figure 3—figure supplement 1A). A similar reduction in discrimination was observed when sucrose was replaced with several other sweet compounds, pineapple juice, but not with sorbitol, which is a nutritious but unsweet substance for flies (Figure 3—figure supplement 1B). In contrast, presence of the bitter chemical caffeine or the sour chemical acetic acid did not significantly impact discrimination of substrates of different hardness (Figure 3—figure supplement 1C). Furthermore, because a previous report has shown that arena size can influence how animals behaviorally respond to sucrose during egg-laying site selection (Schwartz et al., 2012), we also examined whether sucrose was similarly capable of reducing discrimination of substrates of different hardness when animals were selecting for egg-laying substrates in larger arenas. We found that, similar to what we have observed in our ‘regular arenas’, flies in arenas that were ~8X the size still preferred the softer 0.5% agarose over the 1.5% agarose when both substrates were sucrose free but reduced their soft preference when both contained 100 mM sucrose (Figure 4—figure supplement 2B and C). Together, these results showed that the presence of sweet compounds in substrates can cause females to become less discriminating between substrates of different hardness during egg-laying.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images of eggs laid by a single WT female in a 0.5% vs. 1.5% two-choice assay where both substrates were sugar free (top) and where both substrates contained 100 mM sucrose (bottom). (B) PI (for 0.5% agarose) of WT females in a 0.5% vs. 1.5% two-choice assay where both substrates were sugar free (black) and where both substrates contained 100 mM sucrose (blue). ****p<0.0001; Mann–Whitney test. The PI for the sucrose-containing group on the right is not significantly different from 0; Wilcoxon signed-rank test (H0 = 0). (C) Stiffness of agarose 0.5% and 1.5% agarose substrates with or without 100 mM, 300 mM, and 500 mM of sucrose in them. ****p<0.0001; Mann–Whitney test. (D–F) PI (for 0.5% agarose) of WT females with different appendages surgically removed in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ****p<0.0001, ***p<0.001; Mann–Whitney test. (G) PI (for 0.5% agarose) of mutants that lacked either a critical co-receptor Gr64f (Gr64fLexA) (Yavuz et al., 2014) for sugar sensing or all eight known sugar receptors (‘sugar blind’) (Yavuz et al., 2014) in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.05. (H) PI (for 0.5% agarose) of females with their Gr64fLexA or Gr5aLexA-labeled neurons selectively silenced in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.001. (I) PI (for 0.5% agarose) of females with their Gr66a-GAL4-labeled neurons (aka the bitter-sensing taste neurons) selectively silenced in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ns: not significant; one-way ANOVA followed by Tukey’s multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Impact of sucrose on WT females’ PI (for 0.5% agarose) in a 0.5% vs 1.5% two-choice assay where sucrose (from 0 mM to 500 mM) was added to both substrates. n = 24. Data are mean and s.e.m. (B) PI (for 0.5% agarose) of WT females in a 0.5% vs. 1.5% two-choice assay where both substrates were sugar free (black) or where both substrates contained some sweet substances. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.01. (C) PI (for 0.5% agarose) of WT females in a 0.5% vs. 1.5% two-choice assay where both substrates contained either 3% acetic acid or 10 mM caffeine. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (D–F) PI (for 0.5% agarose) of WT females with their antennae, maxillary palps, and wings selectively severed from them in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ns: not significant, **p<0.01; Mann–Whitney test). (G) PI (for 0.5% agarose) of females with their sweet neurons (labeled by different GAL4s) silenced in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. Note that Gr5a-GAL4 and Gr64f-GAL4 both label sweet neurons on the labellum and legs, whereas Gr64a-GAL4 labels only sweet neurons on the legs. Groups that share at least one letter are statistically indistinguishable; one-way ANOVA followed by Tukey’s multiple comparisons test with p<0.05. (H) PI (for 0.5% agarose) of females that lacked either the Gr64f receptor (the critical co-receptor for sugar sensing) or all eight sugar receptors in a plain 0.5% vs. plain 1.5% assay. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (I) PI (for 0.5% agarose) of females with their sweet neurons silenced in a plain 0.5% vs. plain 1.5% assay using two independently generated sweet neurons drivers. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test.
 
 There are at least two explanations for females’ reduced preference for the softer substrate when sucrose was added to substrates of different hardness. First, presence of sucrose significantly altered the hardness of these two substrates, rendering them to have similar levels of hardness. Second, detection of sucrose by sweet neurons modified how these substrates were perceived by flies. To test the first possibility, we measured the hardness of 0.5% and 1.5% agaroses with or without 100 mM, 300 mM, and 500 mM sucrose. We found that while the presence of different concentrations of sucrose did slightly alter the hardness of both the 0.5% and the 1.5% agarose substrates, differences in hardness between the two substrates remained significantly different (Figure 3C). To test the second possibility, we eliminated females’ sweet-sensing ability and tested how well they discriminated substrates of different hardness in the presence of sucrose. We first severed different appendages that are known to house sweet neurons and found that eliminating the tarsi or labellum significantly increased flies’ preference for the softer substrate in the presence of sucrose (Figure 3D–F). Interestingly, while severing neither the wings nor the maxillary palps had any significant effect, severing the antennae also increased soft preference in the presence of sucrose (Figure 3—figure supplement 1D–F). (It is worth noting that recent reports have suggested that some olfactory neurons express specific molecular sugar receptors and these neurons thus may potentially be capable sensing sugars, too [Fujii et al., 2015; Yavuz et al., 2014]). We next removed several molecular sugar receptors from flies and found that mutants that are known to be defective in sugar sensing (Fujii et al., 2015; Yavuz et al., 2014) also showed a clear preference for the softer substrate in the presence of sucrose (Figure 3G), as did flies with their sweet neurons selectively silenced (Figure 3H; Figure 3—figure supplement 1G). Further, silencing only the sweet-sensing neurons on the legs but not on the labellum (labeled by Gr64aGAL4) (Fujii et al., 2015) recovered some soft preference (Figure 3—figure supplement 1G), too, albeit to a lesser extent than silencing all sweet neurons. As a control, we also silenced the bitter-sensing taste neurons and found that it failed to recover significant soft preference in the presence of sucrose (Figure 3I). Lastly, we showed that the improvements of hardness discrimination in the presence of sucrose by inhibiting sweet sensing were not because sweet neurons can act as inhibitors of hardness discrimination in general: silencing sweet neurons did not enhance discrimination of substrates of different hardness when the substrates were sugar free (Figure 3—figure supplement 1H and I).
 
 Taken together, these results suggest that presence of sweet compounds on egg-laying substrates of different hardness can cause females to become less discriminating between them and reduce their preference for the softer one. Further, such sucrose-induced indifference towards substrates of different hardness requires activation of sweet neurons on flies’ labellum, tarsi, and possibly also on antennae (even though it is presently unclear whether Gr64f-expressing neurons on the antennae are truly capable of sensing sugar).
 
-## Sucrose-induced inhibition of discrimination of substrates of different hardness requires TMC and TMC-expressing mechanosensitive neurons
+### Sucrose-induced inhibition of discrimination of substrates of different hardness requires TMC and TMC-expressing mechanosensitive neurons
 
 We next aimed to determine how activation of sweet neurons may promote indifference between two substrates of different hardness in the presence of sucrose. In particular, we wondered whether activation of sweet neurons may act to modulate specific mechanosensory pathways. To test this idea, we first examined the various channel mutants we had tested earlier. While none of these channels appeared to play a role in hardness discrimination when the substrates were sugar free (Figure 2A), it is conceivable that some may contribute to sugar-induced indifference between substrates of different hardness. Indeed, whereas most of these mutants behaved similarly to controls (Figure 4A), several independently generated tmc mutants (Zhang et al., 2016; Guo et al., 2016) behaved differently from the rest and showed a strong preference for the softer substrate despite the presence of sucrose (Figure 4A and B; Figure 4—figure supplement 1A). These results suggest TMC channel, like sweet neurons, may act to inhibit discrimination of substrates of different hardness in the presence of sucrose.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig4-v1.jpg)
+
+**Figure 4.:** (A) PI (for 0.5% agarose) of different channel mutants in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ****p<0.0001; Mann–Whitney test, compared against control. (B and C) PI (for 0.5 agarose) of tmc mutants and mutants with tmc selectively rescued in tmc-GAL4-expressing neurons in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. tmc1 and tmcGAL4 are two independently generated mutations in tmc. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test, p<0.05. Note that tmcGAL4 and tmc-GAL4 are two independently generated GAL4s. (D) PI (for 0.5% agarose) of females with tmc-GAL4-expressing neurons selectively silenced in the presence and absence of vGlu-GAL80 in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.05. (E and F) Processes labeled by tmc-GAL4 in the brain in the (E) absence and (F) presence of vGlut-GAL80. (G) PI (for 0.5% agarose) for females whose TMC-expressing neurons were inhibited by using tmcGAL4, an independently generated GAL4 for tmc, in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (H and I) Comparison of expression patterns on the labellum driven by tmc-GAL4 vs. tmcGAL4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) PI (for 0.5% agarose) of two additional tmc mutants in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.05. (B) PI (for 0.5% agarose) for females with output of their TMC-expressing neurons inhibited by TNT in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. ***p<0.001; Mann–Whitney test. (C) PI (for 0.5% agarose) for females with their NompC/Nan-expressing neurons inhibited in a sucrose + 0.5% vs. sucrose + 1.5% two-choice assay. We used drivers on two different chromosomes, that is nompC-LexA (2) and nompC-LexA (3), to inhibit these neurons. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (D) PI (for plain 0.5% agarose) of tmc mutants in plain 0.5% vs. sucrose + 0.5% two-choice assay. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (E) PI (for plain 0.5% agarose) of animals whose neurons labeled by the tmc-GAL4 were selectively silenced in a plain 0.5% vs. sucrose + 0.5% two-choice assay. ns: not significant; Kruskal–Wallis test followed by Dunn's multiple comparisons test. (F) PI (for plain 0.5% agarose) of Gr64f and sugar blind mutants in plain 0.5% vs. sucrose + 0.5% two-choice assay. Groups that share at least one letter are statistically indistinguishable; Kruskal–Wallis test followed by Dunn's multiple comparisons test with p<0.05. (G) Representative pictures of tmc-GAL4/vGlu-GAL80;+/UAS-CsChrimson females after exposure to red light (left) or kept in darkness (right) overnight. (H) Comparison of number of eggs laid by tmc-GAL4/vGlu-GAL80;+/UAS-CsChrimson females in red light condition vs. in dark condition. Each data point in a column denotes the number of eggs laid by a single female over 14 hr. ****p<0.0001; Mann–Whitney test. (I) Comparison of number of eggs laid by tmc-GAL4/UAS-dTrpA1 female at 30 °C vs. at 22 °C. Each data point in a column denotes the number of eggs laid by a single female over 14 hr. ****p<0.0001; Mann–Whitney test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) RT-PCR of tmc transcripts and rp49 transcripts (loading control) using total RNA extracted from tarsi, antennae, foreleg, and proboscis (positive control). Note that these transcripts were sequence confirmed. (B) A comparison of the sizes of the regular arena (up) and a large arena (bottom) we used for assessing egg-laying choice. Note that for the large arenas, there are four wells per arena for housing agarose of different concentrations. (C) PI (for 0.5% agarose) of WT females in a 0.5% vs. 1.5% task in the large arenas. Green: substrates were sucrose free. Red: substrates contained 100 mM sucrose. ***p<0.001, ns: not significant; Mann–Whitney test. Each data point represents one egg-laying bias from a single female.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Our two-choice feeding assay. Up: the bottom piece of our behavior apparatus with agarose of different concentrations (in different colors) loaded into the substrate-holding troughs. Bottom: zoomed-in picture of a single arena when the apparatus was fully assembled. Note that we used the same apparatus for assessing egg-laying preferences. (B) Feeding preferences of WT and tmc mutants when given a 100 mM sucrose-containing 0.5% agarose vs. a 100 mM sucrose-containing 1.5% agarose. ns: not significant; Mann–Whitney test. See Materials and methods about how we calculated the preference index. Further, the PIs for these two groups of flies are not significantly different from 0; Wilcoxon signed-rank test (H0 = 0).
 
 To confirm the role of TMC-dependent mechanosensation in inhibiting discrimination of substrates of different hardness in the presence of sucrose, we did the following experiments. First, we reintroduced the tmc gene back to the tmc1 mutants (by using a tmc-GAL4 that has been shown to label the TMC-expressing mechanosensitive MD-L neurons on the labellum as well as a few CNS neurons [Zhang et al., 2016]). We found that this manipulation reverted tmc1 mutants to behave more like WT animals: they were less discriminating of substrates of different hardness in the presence of sucrose (Figure 4C). Second, we selectively silenced the output of TMC-expressing neurons (by using the same tmc-GAL4 to direct expression of Kir2.1 or TNT [Sweeney et al., 1995]) and found that these manipulations caused animals to clearly prefer the soft substrate like tmc1 mutants did despite the presence of sucrose (Figure 4D and Figure 4—figure supplement 1B). In contrast, silencing the Nan-expressing group of neurons on the labellum did not recover any significant soft preference (Figure 4—figure supplement 1C). Importantly, silencing these tmc-GAL4-expressing neurons in the presence of vGlut-GAL80 (Bussell et al., 2014), a transgene that blocked GAL4-dependent expression in CNS neurons labeled by tmc-GAL4, still caused animals to show a clear preference for the softer substrate in the presence of sucrose (Figure 4D–F). But silencing neurons labeled by an independently generated tmcGAL4 (a knocked-in GAL4 for tmc [Guo et al., 2016]), which fortuitously did not label the TMC-expressing mechanosensitive MD-L neurons on the labellum (Figure 4H and I), failed to recover significant soft preference in the presence of sucrose (Figure 4G). We then asked whether animals that lacked either the tmc gene or functional TMC-expressing neurons might be defective in sugar sensing when selecting for egg-laying site, as such defect might also explain their preference for the softer substrate in the presence of sucrose. However, we found that these mutants readily discriminated two 0.5% agarose substrates with different levels of sucrose (Figure 4—figure supplement 1D–F), a task that requires them to sense sugar properly. We note that this is also consistent with the previous finding that MD-L neurons from WT and tmc mutants showed comparable electrophysiological responses to sucrose (Zhang et al., 2016).
 
 Taken together, our results showed that TMC and TMC-expressing mechanosensitive neurons on the labellum did not play a significant role in hardness discrimination when both egg-laying substrates were sugar free, however interestingly, they can act to inhibit discrimination of substrates of different hardness when sucrose was present on both. The requirement of functional TMC and TMC-expressing neurons in sucrose-induced inhibition of discrimination (or sucrose-induced indifference) thus suggests that activation of sweet neurons may act to inhibit such discrimination by modulating the sensory pathway activated by TMC neurons.
 
-## Axon termini of sweet taste neurons in the brain contact with and can signal to those of TMC neurons
+### Axon termini of sweet taste neurons in the brain contact with and can signal to those of TMC neurons
 
 Finally, we set out to identify the potential mechanism by which sweet neurons may modulate the sensory pathway activated by the TMC-expressing mechanosensitive neurons. A previous report had shown that sweet neurons and TMC-expressing neurons on the proboscis project their axons to overlapping areas in the subesophageal zone (SEZ) in the brain (Zhang et al., 2016) and we confirmed this by using an independently generated tool to label sweet neurons (Figure 5A and B; Figure 5—figure supplement 1A). Given the close proximity of their projections, we wondered whether axons of sweet neurons may directly contact those of TMC-expressing neurons in the SEZ. To test this idea, we first used the ‘conventional’ GRASP technique (Feinberg et al., 2008) that targeted two halves of the GFP – CD4-spGFP1-10 and CD4-spGFP11 – to the cell membranes of the sweet neurons and the TMC-expressing neurons, respectively. Encouragingly, we detected reconstituted GFP clearly at areas targeted by both sets of axons in the SEZ (Figure 5—figure supplement 1B and C). To test whether these putative contacts might be synaptic in nature, we switched to using the syb:GRASP technique (Macpherson et al., 2015) where one-half of the GFP was targeted specifically to the presynaptic termini of the sweet neurons and would be exposed to the synaptic cleft only upon vesicle fusion. Again, we were able to detect reconstituted GFP clearly in the SEZ (Figure 5C; Figure 5—figure supplement 1D), suggesting that sweet neurons can conceivably act as a presynaptic partner to axonal termini of TMC neurons in the SEZ. In contrast, we did not detect any reconstituted GFP signals in the ventral nerve cord (Figure 5—figure supplement 1E).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig5-v1.jpg)
+
+**Figure 5.:** (A and B) Double labeling of the TMC-expressing MD-L neurons and Gr64f-expressing sweet neurons on the labellum (A) and in the SEZ (B) in the brain. Scale bar: 50 μm. (C) syb:GRASP (green) between TMC-expressing MD-L neurons and sweet neurons. These brains were counter-stained with neuropil marker nc82 (magenta). Scale bar: 50 μm. (D) Representative images showing buffer- and sucrose-induced changes in CGaMP signal in axon termini of TMC neurons in the SEZ. Top: preparation made from WT animals; bottom: preparation made from Gr64f mutants (Gr64fLexA). The color scale on the right shows ΔF/F. (E) Changes in peak GCaMP intensity (ΔF/F0) in TMC axons from WT vs. Gr64f mutants in response to different concentrations of sucrose. ns: not significant, ***p<0.001, **p<0.01; Mann–Whitney test. (F) Representative images showing buffer- and ATP-induced changes in the GCaMP signal of TMC axons in preparations made from animals that overexpressed P2X2 in Gr64f-expressing sweet neurons. (G) Changes in peak GCaMP intensity (ΔF/F0) in TMC axons from animals with or without P2X2 overexpressed in Gr64f-expressing sweet neurons in response to different concentrations of ATP. ****p<0.0001, ***p<0.001; Mann–Whitney test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Double labeling of Gr5aLexA-labeled sweet neurons and tmc-GAL4-labeled neurons in the SEZ. Gr5aLexA is an independent driver for labeling sweet neurons. Scale bar: 50 μm. (B and C) Reconstituted GFP between Gr5aLexA-labeled sweet neurons and tmc-GAL4-labeled neurons detected by the conventional GRASP technique in the SEZ. Scale bar: 50 μm. (D) Reconstituted GFP between tmc-GAL4-labeled neurons and Gr5aLexA-labeled sweet neurons in the SEZ detected using the syb:GRASP technique instead. Scale bar: 50 μm. (E) No syb:GRASP signal can be detected in the VNC between tmc-GAL4-labeled neurons and Gr64fLexA-labeled sweet neurons. Scale bar: 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46165/elife-46165-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Changes in peak GCaMP intensity (ΔF/F0) in TMC axons from WT vs. tmc mutants in response to different concentrations of sucrose. ns: not significant, **p<0.01, *p<0.05; Mann–Whitney test. (B) Changes in GCaMP (ΔF/F0) in axons of TMC-expressing neurons in response to 300 mM sorbitol, 300 mM sucrose, and 1 M KCl in our ex vivo preparation. Groups that share at least one letter are statistically indistinguishable; one-way ANOVA followed by Tukey’s multiple comparisons test with p<0.05. (C) Changes in GCaMP (ΔF/F0) in the somas of a few sweet neurons in response to 300 mM sucrose. The trace was averaged from ten samples. The solid line represents the means, and the error bars indicate s.e.m. (D) Changes in GCaMP (ΔF/F0) in somas of TMC neurons in response to 300 mM sucrose. The trace was averaged from ten samples. The solid line represents the means, and the error bars indicate s.e.m. (E) Images showing the changes in GCaMP in axons of TMC-expressing neurons in response to buffer or 10 mM ATP when P2X2 was expressed in Gr5aLexA-expressing neurons. (F) Changes in GCaMP signals (ΔF/F0) in axons of TMC-expressing neurons in response to different concentrations of ATP when P2X2 was expressed in Gr5aLexA-expressing neurons. ***p<0.001; Mann–Whitney test.
 
 To probe whether the potential axonal–axonal contacts we observed using the GRASP techniques permit the sweet neurons to transmit signal to the TMC-expressing neurons, we next assessed if we could detect a change in Ca2+ influx in the axonal termini of TMC neurons when we stimulated the sweet neurons. To do this, we developed an ex vivo preparation where we monitored Ca2+ influx into axons of TMC-expressing by using the genetically encoded Ca2+ indicator GCaMP6s (Chen et al., 2013). We first exposed the preparation to sucrose directly, and indeed observed a significant increase in GCaMP signal in the axonal termini of TMC neurons (Figure 5D and E). Several additional results suggest that the increase in GCaMP signal we observed was neither caused by movements nor because TMC neurons were intrinsically sugar sensitive. First, exposing the preparations to sorbitol, a sugar that cannot activate Drosophila sweet-taste neurons and cannot inhibit discrimination of substrates of different hardness during egg-laying (Figure 3—figure supplement 1B), failed to induce a significant increase in GCaMP in the axonal termini of TMC neurons (Figure 5—figure supplement 2B). Second, cell bodies of TMC neurons on the proboscis did not respond to sucrose whereas those of sweet neurons did (Figure 5—figure supplement 2C and D). Third, addition of sucrose failed to induce as significant an increase in GCaMP in TMC axons from mutant that lacked Gr64f (Figure 5D and E); Gr64f is a molecular co-receptor for sugar that has been shown to be important for sugar sensing (Fujii et al., 2015; Yavuz et al., 2014). Further, we also found that sucrose-induced GCaMP increase in axons of TMC neurons was reduced in a tmc mutant background (Figure 5—figure supplement 2A), suggesting that strong increase in Ca2+ influx in termini of TMC axons requires co-activation of sweet neurons and input from TMC channels.
 
@@ -90,62 +134,506 @@ Lastly, what is the potential advantage in allowing sugar detection to inhibit d
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 3605; RRID:BDSC_3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ppk28</td>
+      <td>PMID:21515576</td>
+      <td>BDSC_33559;RRID:BDSC_33559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nan36a</td>
+      <td>Kim et al., 2003; Gong et al., 2004</td>
+      <td>BDSC_24902;RRID:BDSC_24902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>iav1</td>
+      <td>Kim et al., 2003;Gong et al., 2004</td>
+      <td>DGGR:101174; RRID:DGGR_101174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompCf00642</td>
+      <td>Sun et al., 2009</td>
+      <td>FlyBase Cat#FBst1016369; RRID:FlyBase_FBst1016369</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC1</td>
+      <td>Walker et al., 2000</td>
+      <td>BDSC_42260; RRID:BDSC_42260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC3</td>
+      <td>Walker et al., 2000</td>
+      <td>BDSC_42258; RRID:BDSC_42258</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PiezoKO</td>
+      <td>Kim et al., 2012</td>
+      <td>BDSC_58770; RRID:BDSC_58770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tmcpb</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_18483; RRID:BDSC_18483</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tmcMI02041</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_35958; RRID:BDSC_35958</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tmc1</td>
+      <td>Zhang et al., 2016</td>
+      <td>BDSC_66556; RRID:BDSC_66556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-tmc/Cyo; tmc1/TM6B</td>
+      <td>Zhang et al., 2016</td>
+      <td>BDSC_66560; RRID:BDSC_66560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tmc-GAL4/Cyo; MKRS/TM6B</td>
+      <td>Zhang et al., 2016</td>
+      <td>BDSC_66557; RRID:BDSC_66557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC-LexAII</td>
+      <td>Shearin et al., 2013</td>
+      <td>BDSC_52240; RRID:BDSC_52240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nompC-LexAIII</td>
+      <td>Shearin et al., 2013</td>
+      <td>BDSC_52241; RRID:BDSC_52241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>R41E11-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_50131; RRID:BDSC_50131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr5a-GAL4</td>
+      <td>Weiss et al., 2011</td>
+      <td>BDSC_57592; RRID:BDSC_57592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64f-GAL4</td>
+      <td>Weiss et al., 2011</td>
+      <td>BDSC_57668; RRID:BDSC_57668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr66a-GAL4</td>
+      <td>Dunipace et al., 2001</td>
+      <td>BDSC_57670; RRID:BDSC_57670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TubP-GAL80ts/Cyo;TM2/TM6B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_7019; RRID:BDSC_7019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>vGlut-GAL80/Cyo;TM2/TM6B</td>
+      <td>Bussell et al., 2014</td>
+      <td>BDSC_58448; RRID:BDSC_58448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6s</td>
+      <td>Chen et al., 2013</td>
+      <td>BDSC_77131; RRID:BDSC_77131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNT</td>
+      <td>Sweeney et al., 1995</td>
+      <td>BDSC_28838; RRID:BDSC_28838</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNTIMP</td>
+      <td>Sweeney et al., 1995</td>
+      <td>BDSC_28840; RRID:BDSC_28840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAop-rCD2::RFP, UAS-mCD8::GFP/Cyo;TM3/TM6B</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC_67093; RRID:BDSC_67093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAOP2-P2 × 2</td>
+      <td>Gou et al., 2014</td>
+      <td>BDSC_76030; RRID:BDSC_76030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAOP-mCD4-spGFP11, UAS-mCD4-spGFP1-10</td>
+      <td>Gordon and Scott, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>LexAOP-nSyb-spGFP1-10, UAS-CD4-spGFP11; MKRS/TM6B</td>
+      <td>Macpherson et al., 2015</td>
+      <td>BDSC_64315; RRID:BDSC_64315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CsChrimson</td>
+      <td>Klapoetke et al., 2014</td>
+      <td>BDSC_55136; RRID:BDSC_55136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dTrpA1</td>
+      <td>Hamada et al., 2008</td>
+      <td>BDSC_26263; RRID:BDSC_26263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr5aLexA</td>
+      <td>Yavuz et al., 2014; Fujii et al., 2015</td>
+      <td>Flybase: FBal0304286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Sugar-blind (Δ8Grsugar/Δ8Grsuga)</td>
+      <td>Yavuz et al., 2014; Fujii et al., 2015</td>
+      <td>Flybase: FBrf0228945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64aGAL4</td>
+      <td>Yavuz et al., 2014; Fujii et al., 2015</td>
+      <td>Flybase: FBal0304287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Gr64fLexA</td>
+      <td>Yavuz et al., 2014; Fujii et al., 2015</td>
+      <td>Flybase: FBal0304291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Flybase: FBtp0125506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D.melanogaster)</td>
+      <td>tmcGAL4</td>
+      <td>Guo et al., 2016</td>
+      <td>Flybase: FBal0321088</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#S0389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>fructose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#F0127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#G8270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>trehalose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T5251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>arabinose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#A3131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>sorbitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>#W302902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>caffeine</td>
+      <td>Sigma-Aldrich</td>
+      <td>#C0750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>all trans-Retinal</td>
+      <td>Sigma-Aldrich</td>
+      <td>#R2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>acetic acid</td>
+      <td>EMD Millipore</td>
+      <td>#AX0073</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>agarose</td>
+      <td>Invitrogen</td>
+      <td>#16500–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>adenosine 5′-triphosphate (ATP)</td>
+      <td>Amersham Biosciences</td>
+      <td>#27-1006-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-brp (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>#nc82;RRID:AB_2314866</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#A-11120, RRID:AB_221568</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#A-11122, RRID:AB_221569</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>Rockland</td>
+      <td>#600-401-379, RRID:AB_2209751</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Alexa 488 anti-rabbit secondaries</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#R37118, RRID:AB_2556546</td>
+      <td>(1:500))</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Alexa 488 anti-mouse secondaries</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#R37114, RRID:AB_2556542</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Alexa 594 anti-rabbit secondaries</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#R37119, RRID:AB_2556547</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Alexa 594 anti-mouse secondaries</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>#R37115, RRID:AB_2556543</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID: 22930834</td>
+      <td>https://imagej.nih.gov/ij; RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ctrax</td>
+      <td>Branson et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom MATLAB code</td>
+      <td>Yang et al., 2015</td>
+      <td>https://github.com/ulrichstern/yanglab-ctrax</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 All fly stocks were raised in a standard cornmeal–molasses–agar medium maintained at 25 °C, 60% humidity, and a 12 hr:12 hr light:dark circadian control. We used w1118 flies as the wild-type strain. The following lines were used in this study: ppk28 (Cameron et al., 2010); nan36a (Kim et al., 2003; Gong et al., 2004); iav1 (Kim et al., 2003; Gong et al., 2004); nompCf00642 (Sun et al., 2009); nompC1 (BL-42260) (Walker et al., 2000); nompC3 (BL-42258) (Walker et al., 2000); PiezoKO (BL-58770) (Kim et al., 2012); tmcpb (BL-18483); tmcMI02041 (BL-35958); tmc1 (BL-66556) (Zhang et al., 2016); UAS-tmc/Cyo; tmc1/TM6B (BL-66560) (Zhang et al., 2016); tmc-GAL4/Cyo; MKRS/TM6B (BL-66557); nompC-LexAII (BL52240), nompC-LexAIII (BL52241) (Shearin et al., 2013); R41E11-GAL4 (BL-50131); Gr5a-GAL4 (BL-57592) (Weiss et al., 2011); Gr64f-GAL4 (BL-57668) (Weiss et al., 2011); Gr66a-GAL4 (BL-57670) (Dunipace et al., 2001); TubP-GAL80ts/Cyo;TM2/TM6B (BL-7019); vGlut-GAL80/Cyo;TM2/TM6B (BL-58448) (Bussell et al., 2014); UAS-GCaMP6s (BL-77131) (Chen et al., 2013); UAS-TNT (BL-28838) (Sweeney et al., 1995); UAS-TNTIMP (BL-28840) (Sweeney et al., 1995); LexAop-rCD2::RFP, UAS-mCD8::GFP/Cyo;TM3/TM6B (BL-67093); LexAOP2-P2 × 2 (Gou et al., 2014); LexAOP-mCD4-spGFP11, UAS-mCD4-spGFP1-10 (Gordon and Scott, 2009), LexAOP-nSyb-spGFP1-10, UAS-CD4-spGFP11; MKRS/TM6B (BL-64315) (Macpherson et al., 2015). UAS-CsChrimson (Klapoetke et al., 2014), UAS-dTRPA1 (Hamada et al., 2008), Gr5aLexA, sugar blind, Gr64aGAL4, and Gr64fLexA were gifts from Dr. Hubert Amrein (Fujii et al., 2015; Yavuz et al., 2014). UAS-Kir2.1 and tmcGAL4 (Guo et al., 2016) were from Drs. Gwyneth Card and Yuh-Nung Jan, respectively.
 
-## Chemicals
+### Chemicals
 
 The following chemicals were purchased from Sigma Aldrich (Saint Louis, MO, USA): sucrose (Cat# S0389), fructose (Cat# F0127), glucose (Cat# G8270), trehalose (Cat# T5251), arabinose (Cat# A3131), sorbitol (Cat# W302902), caffeine (Cat# C0750), and all-trans-retinal (Cat#R2500). Acetic acid (Cat# AX0073) was purchased from EMD Millipore (EMD Millipore, Billerica, MA). Agarose and adenosine 5′-triphosphate (ATP) were purchased from Invitrogen (Cat# 16500–100, Carlsbad, CA) and Amersham Biosciences (Cat# 27-1006-01, Piscataway, NJ), respectively.
 
-## Behavior assays
+### Behavior assays
 
 Unless otherwise mentioned, all behavior assays were performed with females in darkness with temperature and humidity controlled at 25°C and 60%, respectively.
 
-## Preparation of females to be assayed
+#### Preparation of females to be assayed
 
 The experimental flies were prepared as previously described (Yang et al., 2015; Gou et al., 2014). Briefly, 20 to 30 females of the appropriate genotypes and 10 to 15 males of mixed genotypes were gathered into a single food vial that was supplied with wet yeast paste. After 4-8 days, the food in the vial became very chewed up by the larvae, and at this point females were well fed but deprived of egg-laying. Thus, they were ready to lay eggs when placed in our egg-laying apparatus (Yang et al., 2015). We usually let females lay eggs overnight (~14 hr). Groups to be compared were always run in parallel. Note that regardless of the assays we performed (single-choice vs. two-choice vs. large arenas), we always assayed at the level of single animals — each data point on a graph denotes the outcome (number of eggs laid or PI) of a single female.
 
-## Two-choice egg-laying assay in regular arenas
+#### Two-choice egg-laying assay in regular arenas
 
 For two-choice assays, individual flies were placed in custom-made transparent Plexiglas chambers. Detailed information of the chambers was described before (Gou et al., 2016). For conditional inactivation experiments using UAS-Kir2.1 and tub-GAL80ts, all flies were maintained at 22°C except for the shift in the experimental group (where the temperature increased to 31°C for 2–3 days before the assay to inactivate GAL80ts). For optogentic activation experiments, flies were maintained similarly as described before except that immediately after eclosion, flies to be assayed were put into foil-covered food vials that contained 0.2 mM all-trans-retinal until ready for experiments. When ready, flies were then loaded into egg-laying apparatus illuminated with or without red LED light from above and allowed to lay eggs for ~14 hr (Guntur et al., 2017). For thermogenetic activation experiments, flies were raised and egg-laying deprived (as described before) at 22˚C, and then placed at either control (22˚C) or experimental temperatures (30˚C) for ~14 hr for egg-laying. For two-choice assay in large arenas, we followed the same protocol for preparing the flies but used a custom-apparatus with arenas that are ~8X the size of that of regular arenas.
 
-## Egg-laying rate assay (single-choice assay)
+#### Egg-laying rate assay (single-choice assay)
 
 For this assay, individual flies were put into two-choice chambers but we loaded the same concentration of agarose onto the two sides of each arena. For all these assays, we took pictures of the results when the assays ended, and manually counted the eggs.
 
-## Positional preference assay
+#### Positional preference assay
 
 To track the positions of females, we mounted four webcams (Microsoft LifeCam Cinema) on top of the egg-laying apparatus using a custom-built holder. Females and chambers were prepared as described before (Zhu et al., 2014; Stern et al., 2015a; Stern et al., 2015b). However, we recorded behaviors of egg-laying females for 30 min only. We used CamUniversal software for video acquisition, Avidemux software for video conversion, and the open-source tracking software Ctrax (Branson et al., 2009) for tracking. Individual egg-laying events in the videos were manually annotated. To analyze the Ctrax-generated trajectories, we used custom MATLAB and Python code (Stern et al., 2015a).
 
-## Feeding preference assay
+#### Feeding preference assay
 
 We used our regular-sized egg-laying apparatus to conduct food preference assay. Briefly, for each arena, 100 mM sucrose-containing 0.5% of agarose was placed on one trough and 100 mM sucrose-containing 1.5% agarose was placed on the other. The agarose was mixed with either blue dye (Erioglaucine disodium salt, Solarbio, Cat# E8500) or a red dye (Sulforhodamine B, Solarbio, catalog Cat# S6080). 2–4 day-old females WT and mutant flies were wet-starved for 24 hr and then loaded individually into each arena and allowed to feed in darkness for 90 min. We then examined the colors of the abdomens using a dissecting microscope after feeding was terminated. The food preference index (PI) for the 0.5% agarose (red color) was as follows: PI = [(Nred + 0.5 Npurple) – (Nblue + 0.5 Npurple)]/(Nred + Nblue + Npurple). Nred, Nblue, and Npurple indicated the number of flies with red, blue and purple abdomens, respectively.
 
-## Egg-laying substrate hardness measurements
+### Egg-laying substrate hardness measurements
 
 First, 40 ml of agarose gel (0.5% or 1.5% agarose with or without 100 mM sucrose) was prepared in a 60 mm2 diameter dish (Nunc, Denmark). Agarose hardness, expressed as the maximum force (N), was measured at room temperature with a TA.XT plus texture analyzer (Stable Micro Systems, Goldaming, Surrey, UK) using a 50 mm diameter flat plunger (SMS P/50). The instrument settings were as follows: pre-test speed: 4.0 mm/s; test speed: 2.0 mm/s; post-test speed: 5.0 mm/s; strain: 40%; and trigger force: 5 g. The TPA analysis was carried out at ambient temperature (25°C). Texture Expert Exceed version 2.5 (Stable Micro Systems) was used for data collection and calculations.
 
-## RT-PCR
+### RT-PCR
 
 Different tissue samples, including the tarsi, antenna, foreleg, proboscis (as positive control) were dissected from 300 female adults (at 3 days after eclosion). Total RNA was isolated from tissue samples using TRIzol Reagent (Invitrogen, Carlsbad, CA) by following the manufacturer’s instructions. First-strand cDNA was synthesized with First-Strand cDNA Synthesis kit (Tiangen, Beijing, China) using an oligo(dT)18 primer and a 1 μg total RNA template in a 20 μl reaction, following the manufacturer’s protocol. We used I-5 2 x High-Fidelity Master Mix to conduct RT-PCR (Thermo Fisher Scientific Inc, Waltham, MA). The primers used were as follows. rp49 (control for normalization): forward primer, 5’- GACCATCCGCCCAGCATACAG −3’; reverse primer: AATCTCCTTGCGCTTCTTGGAGGAG. tmc: forward primer, 5’- CCTTCTTCCTGCCCATGATA −3’; reverse primer: TAGCGGTTTCTCCTTGCTGT. The RT-PCR products were sequenced and confirmed with BLAST analysis.
 
-## Tissue dissection, staining, and imaging
+### Tissue dissection, staining, and imaging
 
 We generally dissected labellum and brain of four- to eight-day-old females in PBS buffer, and then fixed them in 4% paraformaldehyde in PBS for ~25 min at room temperature. Fixed tissues were processed using standard antibody staining protocol before being mounted with SlowFade diamond (Life Technologies, Carlsbad, CA, USA). Samples were imaged at 20 × or 40 × magnification on Zeiss 700 confocal microscopes (Jena, Germany), and processed with ImageJ. Titers for primary antibodies were as follows: mouse anti-nc82 (Developmental Studies Hybridoma Bank nc82, 1:50), mouse anti-GFP (1:200, A11120, Thermo Fisher Scientific), rabbit anti-GFP (1:1000, A11122, Thermo Fisher Scientific), and rabbit anti-RFP (1:500, 600-401-379, Rockland). Secondary antibodies were Donkey Alexa 488 anti-rabbit, Donkey Alexa 488 anti-mouse, Donkey Alexa 594 anti-rabbit, and Donkey Alexa 594 anti-mouse (1:500, R37118, R37114, R37119, R37115, Thermo Fisher Scientific). For GRASP, we did not stain the samples with anti-GFP, and imaged the fixed and washed samples directly.
 
-## Calcium imaging
+### Calcium imaging
 
 Brains or labellum of 4- to 10-day-old female flies expressing GCaMP6s were dissected and mounted posterior side down onto the center of a customized imaging chamber (Gou et al., 2014; Guntur et al., 2015). The cuticle and connective tissue covering the SEZ was removed using fine forceps. The proboscis was extended and immobilized with high vacuum grease. The brain and chamber were filled with artificial hemolymph (AHL: 120 mM NaCl, 3 mM KCl, 5 mM TES, 2 mM CaCl2, 1.5 mM trehalose, 10 mM glucose, 10 mM NaHCO3, 4 mM MgCl2, 10 mM HEPES, 10 mM sorbitol), with the final pH adjusted to 7.25 (Guntur et al., 2017). GCaMP6 fluorescence was acquired using a Zeiss LSM700 confocal microscope equipped with a 40 × 0.8 NA water immersion objective and the live-series ZEN image acquisition software. Briefly, baseline GCaMP fluorescence was acquired by scanning the cells with a 488 nm laser at 128 × 128 pixels at 8-bit dynamic range. The GCaMP6 signal in ROI acquired before stimulation (baseline) was used as F0, and the peak change in fluorescence after the addition of the test solution was used as F′. For quantification, ΔF/F was calculated as (F′-F0)/F0 to reflect the changes in GCaMP signals before and after stimulation. For each experiment, we examined GCaMP responses from six to ten animals. The images were acquired and analyzed using the imaging software integrated with the Zeiss LSM 700.
 
-## Statistics
+### Statistics
 
 We used the GraphPad Prism6 software package and ‘R project’ (R Foundation for Statistical Computing, Vienna, Austria, 2005; R-project-org) to graph and statistically analyze data. We tested whether the values were normally distributed using D’Agostino–Pearson omnibus and Shapiro–Wilk normality tests before performing statistical analysis. When data were normally distributed, we used parametric tests; when data were not normally distributed, we used non-parametric tests. All tests were two-tailed. All data are presented as mean ± s.e.m. We also consistently labeled the sample numbers directly on graphs.
 
-## Sample size
+#### Sample size
 
 Our results were based on analysis of behavior at the level of single animals. Sample sizes were determined prior to experimentation based on both variance and effect sizes. For each experiment, we typically tested 16 single animals per trial and repeated the trial two to three times. All the data are biological replicates.
 
-## Data exclusion
+#### Data exclusion
 
 We only excluded data when the number of eggs laid by a female was less than 10 when we determined its preference index (PI). First, regular females generally laid more than 10 eggs in our experimental setting. Second, a low number of eggs would cause the PI to be unreliable: for example, if a female laid only one egg – one on choice A and zero on choice B – its PI for choice A would be 1, but there would be little confidence that this animal truly had this strong a bias.

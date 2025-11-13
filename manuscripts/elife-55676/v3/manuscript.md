@@ -30,17 +30,61 @@ In this study, we demonstrated that miR-17~92 family miRNAs critically controlle
 
 ## Results
 
-## miR-17~92 family miRNAs protect mice from obesity
+### miR-17~92 family miRNAs protect mice from obesity
 
 To investigate the function of miR-17~92 family miRNAs, we generated Mirc2−/− (called ‘miR-106a~363−/−’ here) Mirc3−/− (called ‘miR-106b~25−/−' here) Mirc1flox/flox (called ‘miR-17~92flox/flox’ here) Lyz2-Cre triple knockout (TKO) mice, which efficiently deleted all miRNAs in miR-17~92 family (Figure 1—figure supplement 2A–C). Interestingly, we found that TKO mice consistently exhibited increased body weights than age- and gender-matched Lyz2-Cre (WT) control mice at the age of 30 weeks (Figure 1A and Figure 1—figure supplement 3A–C). Then we isolated the visceral adipose tissue (VAT) and brown adipose tissue (BAT) from these mice and found that both the absolute weights of VAT and BAT and the percentages of VAT in TKO mice were significantly higher than those in WT mice (Figure 1B and C and Figure 1—figure supplement 3D). Furthermore, we scanned these mice with magnetic resonance imaging (MRI) and found that the total adipose tissue weight and its percentage of body weight were significantly increased in TKO mice (Figure 1D and E). Thus, these results indicated that miR-17~92 family miRNAs protected mice from obesity. To mimic this chronic obese phenotype, we fed TKO and WT mice with a high-fat diet (HFD). Consistent with the results obtained with animals under regular diet, body weights, VAT weights, and the VAT percentages of TKO mice were significantly higher than those of WT mice upon 20 weeks of feeding with high fat-diet (Figure 1F–H). Meanwhile, TKO and WT mice were scanned with MRI, and MRI quantitation indicated that both total adipose tissue weight and its percentage were significantly increased in TKO mice (Figure 1I and J). To further clarify the physiological role of miR-17~92 family miRNAs in ameliorating obesity, we generated mice deficient of miR-17~92 family miRNAs in the hematopoietic compartment by transferring bone marrow (BM) cells from WT and TKO mice into irradiated C57BL/6J or CD45.1 recipients (Figure 1—figure supplement 3E), and subsequently fed these chimeric mice with a regular chow diet or high-fat diet. TKO chimeric mice also exhibited increased body weights compared with WT chimeric mice (Figure 1K and Figure 1—figure supplement 3F). Moreover, the absolute weights and the percentages of VAT and total adipose tissue were significantly increased in TKO chimeric mice (Figure 1L–O). In summary, these results demonstrate that myeloid-intrinsic miR-17~92 family miRNAs protect mice from obesity.
 
-## miR-17~92 family miRNAs maintain adipose tissue macrophage homeostasis
+![Figure 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig1-v3.jpg)
+
+**Figure 1.:** (A) A representative photograph (left panel) and body weight (right panel) of the Lyz2-Cre (WT) and miR-106a~363−/− miR-106b~25−/− miR-17~92flox/flox Lyz2-Cre (TKO) mice at the age of 30 weeks, n = 14–16 per group. (B and C) Visceral adipose tissue (VAT) weight (B) and VAT percentage of body weight (C) of WT and TKO mice at the age of 30 weeks. (D and E) Total adipose tissue weight (D) and its percentage of body weight (E) of WT and TKO mice were measured by scanning the whole mice with magnetic resonance imaging (MRI) machine at the age of 30 weeks. (F–J) WT and TKO mice were fed with a high-fat diet (HFD) and were sacrificed on 13–20 weeks post HFD. Body weight of each mouse was measured weekly, n = 8 per group (F); VAT weight (G), VAT percentage of body weight (H), total adipose tissue weight (I), and its percentage of body weight (J) were measured. (K–O) C57BL/6J mice were irradiated and transferred with WT (WT → WT) or TKO (TKO → WT) bone marrows (BMs). Then these BM chimeras were fed with an HFD and were sacrificed on 16–28 weeks post HFD. Body weight of each mouse was measured weekly, n = 7–8 per group (K); VAT weight (L), VAT percentage of body weight (M), total adipose tissue weight (N), and its percentage of body weight (O) were measured. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (unpaired Student’s t-test). Data are pooled from four (A–C), two (D, E, F, K, L, and M), or five (G and H) independent experiments (mean ± s.e.m.), or are representative of one independent experiment (I, J, N, and O).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Schematic representation of three miRNA clusters of miR-17~92 family miRNAs (A) and their target sequences (B). The mature miRNAs in different families are shown in different colors. Yellow: members of the miR-17 family; Red: members of the miR-18 family; Blue: members of the miR-19 family; Green: members of the miR-25 family. The ‘seed region’ of each mature miRNA is shown in bold format.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) qPCR analysis of various mature miRNAs (horizontal axes) in the miR-17~92 cluster (A), miR-106a~363 cluster (B), and miR-106b~25 cluster (C) in Lyz2-Cre (WT) and miR-106a~363−/− miR-106b~25−/− miR-17~92flox/flox Lyz2-Cre (TKO) BMDMs; results are presented as relative expression normalized to the control small RNA U6. Data are representative of two independent experiments (mean + s.d.).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A–B) Body weights of the Lyz2-Cre (WT) and TKO male (A) or female (B) mice at the age of 30 weeks (n = 7–9 per group). (C) Body weights of WT and TKO mice fed with regular chow diet, n = 4 per group. (D) Brown adipose tissue (BAT) weights of WT and TKO mice at the age of 30 weeks. (E) CD45.1 mice were irradiated and transferred with 106 donor bone marrow (BM) cells from WT (WT → WT) or TKO (TKO → WT) mice. Six weeks post BM transfer, CD45.1 and CD45.2 expression on adipose tissue macrophages (ATMs) was analyzed by flow cytometry. One representative experiment was shown in the left panel and cumulative data were shown in the right panel (n = 4 per group). (F) Body weights of chimeric mice transferred with WT (WT → WT) or TKO (TKO → WT) BMs fed with regular chow diet (n = 8 per group). Each symbol represents an individual mouse. *p<0.05, **p<0.01 and ****p<0.0001 (unpaired Student’s t-test). Data are representative or are pooled from two (A, B, D, and E) or one (C and F) independent experiments (mean ± sem).
+
+### miR-17~92 family miRNAs maintain adipose tissue macrophage homeostasis
 
 We next thought to investigate the mechanisms by which miR-17~92 family miRNAs protected mice from obesity. As obesity is often associated with insulin resistance, we first examined the glucose homeostasis in TKO and WT mice with glucose tolerance test (GTT) and found that TKO mice showed higher insulin resistance than control animals (Figure 2A). It is well established that pro-inflammatory cytokine TNF and anti-inflammatory cytokine IL-10 are critical in regulating the insulin sensitivity and obesity (Chawla et al., 2011; Olefsky and Glass, 2010), so we first detected TNF and IL-10 levels in the serum of WT and TKO mice and found increased TNF and decreased IL-10 proteins in TKO mice relative to WT animals (Figure 2—figure supplement 1A and B). Then we examined the expression of Tnf and Il10 mRNA in WT and TKO VAT by quantitative real-time PCR (qPCR). We found that the expression of Tnf was significantly higher, whereas the expression of Il10 was significantly lower in TKO VAT than those in WT VAT (Figure 2B and Figure 2—figure supplement 1C and D) As macrophages are reported to be the major immune cells producing these cytokines in the VAT (Chawla et al., 2011; Odegaard and Chawla, 2011), we first analyzed the ATM population in VAT of WT and TKO mice. miR-17~92 family miRNAs were efficiently deleted in TKO ATMs (Figure 2—figure supplement 2A–E) and their deficiency did not alter the population of ATMs in mice (Figure 2C and D and Figure 2—figure supplement 3A–E). Furthermore, genome-wide RNA profiling analyses were performed with fluorescence-activated cell sorting (FACS) sorted ATMs from WT and TKO mice fed with regular chow diet or high-fat diet. Gene ontology (GO) analysis indicated that genes differentially expressed in both TKO versus WT mice and high-fat diet versus chow diet fed WT mice were enriched in the inflammatory response category (Figure 2E and Figure 2—figure supplement 4A). Meanwhile, the inflammatory score indexing cellular inflammatory phenotypes calculated based on the RNA sequencing data indicated that ATMs from TKO mice were more inflammatory than the WT counterparts under both regular chow diet and high-fat diet conditions (Figure 2—figure supplement 4B). Moreover, both RNA sequencing results and qPCR results showed that TKO ATMs expressed increased Tnf and decreased Il10 (Figure 2F–H and Figure 2—figure supplement 4C and D). Thus, these results demonstrated that miR-17~92 family miRNA deficiency shifts ATM toward an inflammatory phenotype characterized by TNF overproduction in the absence of exogenous infectious or inflammatory signals, suggesting that miR-17~92 family miRNAs maintain ATM homeostasis to prevent obesity and to facilitate glucose tolerance.
 
-## miR-17~92 family miRNAs balance TNF and IL-10 production in macrophages
+![Figure 2.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig2-v3.jpg)
+
+**Figure 2.:** (A) Glucose tolerance test in WT and TKO mice (left panel); area under curve (AUC) of left panel (right panel), n = 6 per group. (B) qPCR analysis of Tnf and Il10 mRNA in visceral adipose tissue of WT and TKO mice. (C and D) Flow cytometry of ATM population in WT and TKO mice. (C) A representative figure showing the ATM population of CD45+ cells; (D) cumulative quantification of ATM population as in (C). (E and F) ATMs were sorted from WT and TKO mice fed with regular chow diet, RNA samples of ATMs were extracted and pooled from two mice, and genome-wide RNA profiling analyses were performed. (E) Gene ontology (GO) analysis of WT and TKO ATM RNA-seq datasets showing the enriched GO terms in TKO ATMs; (F) RNA-seq analysis showing RNA expression in TKO ATMs versus those in WT cells. RNAs upregulated in TKO ATMs were colored red, whereas RNAs downregulated were colored blue, gene Tnf was pointed out and colored orange, and gene Il10 was pointed out and colored green. Top 10 upregulated genes (Ighg2b, Gm11843, Dcdc2a, Mmp7, Slc38a5, Tenm2, Cdh16, Ptn, Ighv1-42, and Nanp) were colored yellow and top 10 downregulated genes (Csf2ra, Zfp125, Cxcl5, Ighv14-3, Igkv4-59, Igkv6-20, Igkv16-104, Fth-ps2, Igkv4-91, and B230303A05Rik) were colored bright blue. (G and H) qPCR analysis of Tnf (G) and Il10 (H) mRNA in ATMs of WT and TKO mice. Results were shown as relative expression normalized to those expressions in one WT mice of each experiment. NS, not significant (p>0.05); *p<0.05, ***p<0.001, and ****p<0.0001 (unpaired Student’s t-test). Data are representative of three independent experiments (C) or are pooled from two (A), three (B and D), or five (G and H) independent experiments (mean ± sem).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) Protein levels of TNF (A) and IL-10 (B) in serum of WT and TKO mice measured by ELISA. (C and D) qPCR analysis of Tnf (C) and Il10 (D) mRNA with additional primer pairs in WT and TKO adipose tissues. *p<0.05, **p<0.01 (unpaired Student’s t-test). Data are pooled from three (A–D) independent experiments (mean ± s.e.m.).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A and B) Flow cytometry analysis of RFP expression in ATMs (A) and peritoneal macrophages (B, positive control) from Lyz2-Cre and Lyz2-RFP mice. (C–E) qPCR analysis of various mature miRNAs (horizontal axes) in the miR-17~92 cluster (C), miR-106a~363 cluster (D), and miR-106b~25 cluster (E) in Lyz2-Cre (WT) andTKO ATMs; results are presented as relative expression normalized to the control small RNA U6. Data are representative of two independent experiments (mean + s.d.).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A–E) Flow cytometry analysis of CD11c (A), CD64 (B), CX3CR1 (C), MerTK (D), and Ly6C (E) expression in ATMs from Lyz2-Cre (WT) and TKO mice. Data are representative of two independent experiments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A and B) WT and TKO mice were fed with regular chow diet or high-fat diet (HFD) for 8 weeks; ATMs were sorted for a genome-wide RNA profiling analysis. (A) Gene ontology analysis of RNA-seq datasets of ATMs from WT mice fed with chow diet or HFD. (B) Inflammatory score of WT and TKO mice fed with chow diet or HFD. Inflammatory score = sum of log (FPKM+1) of representative pro-inflammatory genes (Tnf, Il6, Cxcl1, Ccl2, and Ccl8) − sum of log (FPKM+1) of representative anti-inflammatory genes (Il10, Il4, Il5, and Il13). (C and D) qPCR analysis of Tnf (C) and Il10 (D) mRNA with an additional set of primers in WT and TKO ATMs. *p<0.05 (unpaired Student’s t-test). Data are representative of one (A and B) or are pooled from two (C and D) independent experiments (mean ± s.e.m.).
+
+### miR-17~92 family miRNAs balance TNF and IL-10 production in macrophages
 
 To circumvent the technical limitation imposed by relatively scarce number of ATMs, we next utilized BM-derived macrophages (BMDMs) for further mechanistic studies. Compared to WT controls, basal expression of Tnf mRNA and of Il10 mRNA was consistently upregulated and downregulated, respectively in TKO BMDMs (Figure 3A and B and Figure 3—figure supplement 1A and B), recapitulating the above observations in ATMs. Notably, due to heightened expression of these cytokine genes in TLR-activated especially lipopolysaccharide (LPS)-stimulated conditions, upregulation or downregulation of Tnf and Il10 expression became more appreciable in activated macrophages than in resting cells (Figure 3C and D and Figure 3—figure supplement 1C–F). The mRNA expression patterns were further corroborated with alterations of TNF and IL-10 protein production by TKO macrophages (Figure 3E and F). Next, in order to clarify the connection between TNF and IL-10 in TKO BMDMs, we supplemented recombinant IL-10 protein prior to LPS stimulation and found that with sufficient quantity of IL-10, TNF production by TKO BMDMs reduced to a comparable level as WT BMDMs (Figure 3G). Moreover, blockade of IL-10 receptor with an anti-IL-10R antibody prior to LPS stimulation diminished the differences of TNF production observed between WT and TKO BMDMs (Figure 3—figure supplement 1G), implying that overexpression of TNF was likely secondary to inadequate amount of IL-10 produced by TKO cells. To functionally correct the obese phenotypes of TKO mice, an anti-TNF antibody or PBS was administrated weekly to TKO and WT mice along with HFD for 20 weeks. The anti-TNF treatment significantly reversed the obese phenotypes of TKO mice (Figure 3H), indicating that TNF was a functional target of miR-17~92 family miRNAs in regulating obesity. Overall, these results suggested that miR-17~92 family miRNAs suppressed TNF-mediated inflammation through promoting IL-10 expression in macrophages.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig3-v3.jpg)
+
+**Figure 3.:** (A and B) qPCR analysis of Tnf (A) and Il10 (B) mRNA in WT and TKO BMDMs without stimulation. (C and D) qPCR analysis of Tnf (C) and Il10 (D) mRNA in WT and TKO BMDMs stimulated for the indicated periods with LPS. (E and F) ELISA of TNF (E) and IL-10 (F) in supernatants from WT and TKO BMDMs stimulated for the indicated periods with LPS. (G) ELISA of TNF in supernatants from WT and TKO BMDMs pre-treated 1 hr with indicated dose of IL-10 and then stimulated with LPS for 6 hr. (H) WT and TKO mice were injected with PBS or anti-TNF (10 mg/kg) weekly and were fed with a high-fat diet. Body weight of each mice was measured weekly. NS, not significant (p>0.05); *p<0.05, **p<0.01, and ***p<0.001 (paired Student’s t-test and two-way ANOVA). Data are representative of or are pooled from five (A–D), four (E and F), three (G), or one (H) independent experiments (mean + s.d. in A–G and mean ± sem in H).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) qPCR analysis of Tnf (A) and Il10 (B) mRNA with an additional set of primers in WT and TKO BMDMs without stimulation. (C and D) qPCR analysis of Tnf (C) and Il10 (D) mRNA with an additional set of primers in WT and TKO BMDMs stimulated for the indicated periods with LPS. (E and F) qPCR analysis of Tnf (E) and Il10 (F) mRNA in WT and TKO BMDMs stimulated for the indicated periods with Pam3CSK4. (G) ELISA of TNF in supernatants from WT and TKO BMDMs pre-treated 0.5 hr with anti-IL-10R or anti-IgG (2 μg/ml) and then stimulated with LPS for 6 hr. NS, not significant (p>0.05); *p<0.05 (paired Student’s t-test). Data are representative of five (A–D) or two (E and F) (mean + s.d.) or are pooled from four (G) independent experiments (mean + s.e.m.).
 
 As miR-17~92 family miRNAs consist of three distinct clusters (Figure 1—figure supplement 1A), next we examined the relative contribution of each miRNA cluster in regulating TNF and IL-10 expression. Deletion of individual cluster or double deficiency of miR-106a~363 and miR-106b~25 clusters (DKO) did not significantly alter LPS-induced Tnf expression in macrophages (Figure 4A–D). Expression of Il10 showed modest reduction in individual cluster single KO as well as in DKO BMDMs (Figure 4E–H). To investigate the collective effects of these three clusters, we compared the fold changes of Tnf and Il10 expression over their respective WT controls among macrophages harboring various genotypes of miRNA deficiency and found that Tnf was only markedly upregulated upon deletion of all three clusters while the extent of Il10 downregulation largely correlated with the number of deleted miRNA clusters (Figure 4I and J). Taken together, these results indicated that three miRNA clusters of miR-17~92 family collectively inhibited TNF and promoted IL-10 expression in macrophages.
 
@@ -48,13 +92,49 @@ As miR-17~92 family miRNAs consist of three distinct clusters (Figure 1—figure
 
 **Figure 4.:** (A–D) qPCR analysis of Tnf mRNA in WT and miR-17~92flox/flox Lyz2-Cre (17/92 KO) (A), miR-106a~363−/− (106a KO) (B), miR-106b~25−/− (106b KO) (C), or miR-106a~363−/− miR-106b~25−/− (106a 106b DKO) (D) BMDMs stimulated for the indicated periods with LPS. (E–H) qPCR analysis of Il10 mRNA in WT and 17/92 KO (E), 106a KO (F), 106b KO (G), or 106a 106b DKO (H) BMDMs stimulated for the indicated periods with LPS. (I and J) qPCR analysis of Tnf (I) and Il10 (J) mRNA in WT and various knockout (horizontal axes) BMDMs stimulated for 1 hr with LPS; results are presented relative to those of LPS-stimulated WT BMDMs. **p<0.01 (paired Student’s t-test). Data are representative of two (A–C and E–G) or three (D and H) independent experiments or are pooled from two to three (I and J) independent experiments (mean + s.d.).
 
-## miR-17~92 family miRNAs promote IL-10 production via sustaining Fos expression
+### miR-17~92 family miRNAs promote IL-10 production via sustaining Fos expression
 
 Having established IL-10 as a key target of miR-17~92 family miRNAs-mediated regulation in macrophages, we then sought to identify the mechanisms by which they promote IL-10 expression. As phosphatase and tensin homolog (PTEN) is a well-studied target of miR-17~92 family miRNAs (O'Donnell et al., 2005; Xiao et al., 2008) and PTEN and its related molecules have been implicated in modulating IL-10 expression (Hu et al., 2006; Martin et al., 2005), we first investigated whether miR-17~92 family miRNAs regulated IL-10 and TNF through targeting PTEN. Inhibition of PTEN phosphatase activity by a chemical inhibitor in TKO BMDMs did not apparently alter expression of IL-10 and TNF, suggesting that the regulation of TNF and IL-10 by miR-17~92 family miRNAs was independent of PTEN (Figure 5—figure supplement 1A and B). To further explore how IL-10 was regulated by miR-17~92 family miRNAs, we performed genome-wide expression profiling analysis in TKO and WT BMDMs (Zhang et al., 2020). Interestingly, we found that Fos, encoding a key component of transcriptional factor AP-1 that drives the expression of IL-10 (Hu et al., 2006; Saraiva and O'Garra, 2010), was downregulated in TKO BMDMs compared to WT controls, whereas the expression of other reported targets of miR-17~92 family miRNAs remained minimally affected (Figure 5A). Then we experimentally confirmed that Fos was consistently and significantly decreased in TKO BMDMs at both mRNA and protein levels (Figure 5B–E and Figure 5—figure supplement 2A and B). In contrast to Fos, the expression of Jun, another key component of AP-1 complex, did not apparently differ between WT and TKO BMDMs (Figure 5—figure supplement 3A and B). Furthermore, overexpression of Fos in TKO BMDMs rescued the reduced expression of IL-10 and the enhanced expression of TNF to the levels comparable with that in WT cells (Figure 5F–H and Figure 5—figure supplement 4A and B), indicating that subdued expression of IL-10 in TKO BMDMs was likely resulted from diminished Fos activities. Thus, these data demonstrated that miR-17~92 family miRNAs promoted IL-10 production via sustaining the expression of Fos.
 
-## miR-17~92 family miRNAs directly target YY1 to regulate Fos expression
+![Figure 5.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig5-v3.jpg)
+
+**Figure 5.:** (A) RNA-seq analysis showing RNA expression in TKO BMDMs versus those in WT cells. RNAs upregulated in TKO BMDMs were colored red, whereas RNAs downregulated were colored blue, gene Fos was pointed out and colored bright blue, and genes Phlpp2, E2f1, Pten, and Bim were pointed out and colored green. Top 10 upregulated genes (Atp6v0c-ps2, Hmga1-rs1, H2-Q6, H2-Ea-ps, Gm8580, Gm8909, Sap25, LOC547349, H2–l, and H2–Q10) were colored yellow and top 10 downregulated genes (Mir8114, 0610010B08Rik, Gm14430, Gm8615, Asb4, Gm14305, 6230416C02Rik, Gm38431, Pira7, and Cpt1b) were colored purple. (B and C) qPCR analysis of Fos mRNA in WT and TKO BMDMs stimulated for the indicated periods with LPS. (D) Immunoblotting analysis of c-Fos ad p38 (loading control) in whole-cell lysates of WT and TKO BMDMs treated for the indicated periods with LPS. (E) Quantifications of c-Fos protein abundance in unstimulated condition in (D) by densitometry from four independent experiments. (F) qPCR analysis of Il10 mRNA in WT and TKO BMDMs transfected with control or Fos overexpression vector and stimulated for the indicated periods with LPS. (G) Cumulative results from three independent experiments of Il10 levels in LPS-stimulated 6 hr results as in (F), normalized to mRNA expression in control vector transfected WT cells. (H) ELISA of IL-10 in supernatants from WT and TKO BMDMs transfected with control or Fos overexpression vector and stimulated with LPS for 12 hr. *p<0.05 and **p<0.01 (paired Student’s t-test). Data are representative of six (B), four (D), or three (F) independent experiments or are pooled from six (C), four (E), or three (G and H) independent experiments (mean + s.d.).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A and B) qPCR analysis of Tnf (A) and Il10 (B) mRNA in WT and TKO BMDMs stimulated with or without LPS for 3 hr in the presence or absence of a PTEN inhibitor SF1670 (2 μM). Data are representative of three independent experiments (mean + s.d.).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A and B) The whole immunoblots of c-Fos (A) and p38 (B) in whole-cell lysates of WT and TKO BMDMs treated for the indicated periods with LPS.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) qPCR analysis of Jun mRNA in WT and TKO BMDMs stimulated for the indicated periods with LPS. (B) Immunoblotting analysis of c-Jun and p38 (loading control) in whole-cell lysates of WT and TKO BMDMs treated for the indicated periods with LPS. Data are representative of two independent experiments (mean + s.d.).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** (A and B) qPCR analysis of Fos (A) and Tnf (B) mRNA in WT and TKO BMDMs transfected with control or Fos overexpression vector and stimulated with or without LPS for 6 hr. Data are representative of three independent experiments (mean + s.d.).
+
+### miR-17~92 family miRNAs directly target YY1 to regulate Fos expression
 
 Having demonstrated that miR-17~92 family miRNAs regulate IL-10 by sustaining the expression of Fos, we next sought to investigate how Fos was regulated by miR-17~92 family miRNAs. In previous studies, Fos is reported to be inhibited by a transcriptional factor YY1 (Shi et al., 1997). Interestingly, despite the fact that the mRNA levels of Yy1 were comparable between WT and TKO BMDMs, YY1 protein was significantly increased in TKO BMDMs (Figure 6A–C), implying post-transcriptional regulation of YY1 by miR-17~92 family miRNAs. Bioinformatics analysis with the miRanda tool (Betel et al., 2010) revealed YY1 as a predicted target of the miR-17 family miRNAs, a subfamily of miR-17~92 family miRNAs (Figure 6D). Luciferase reporter assays with the constructs containing Yy1 3′UTR showed significant attenuation of luciferase activities by miRNAs from miR-17~92, miR-106a~363, or miR-106b~25 cluster, whereas mutation of the miR-17 family miRNAs’ binding sites on Yy1 3’UTR reversed such inhibitory effects (Figure 6E), suggesting that YY1 was likely to be the direct target of miR-17~92 family miRNAs. To further validate the involvement of YY1 in miR-17~92 family miRNAs-mediated regulation of Fos, we knocked down YY1 expression by RNA interference in WT and TKO BMDMs (Figure 6—figure supplement 1A–C). Knocking down YY1 significantly upregulated the expression of Fos at the mRNA and protein levels (Figure 6F–H and Figure 6—figure supplement 2A and B) and subsequently decreased TNF and increased IL-10 expression (Figure 6I–L). Collectively, these results suggested that miR-17~92 family miRNAs promoted Fos expression by releasing YY1-mediated inhibition.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig6-v3.jpg)
+
+**Figure 6.:** (A) qPCR analysis of Yy1 mRNA in WT and TKO BMDMs stimulated for the indicated periods with LPS. (B) Immunoblotting analysis of YY1 and p38 (loading control) in whole-cell lysates of WT and TKO BMDMs treated for the indicated periods with LPS. (C) Quantifications of YY1 protein abundance in unstimulated condition in (B) by densitometry from three independent experiments. (D) Schematic illustration of predicted binding sites of miR-17 family miRNAs (red) in wild-type (YY1-WT) or mutated (YY1-Mut) Yy1 3′ untranslated region (UTR). (E) Luciferase reporter assays of Rluc gene expression containing the wild-type or mutated binding sites (as in D) in Yy1 3′UTR in 293 T cells co-transfected with the luciferase reporter vector and negative control (Control), miR-17~92 cluster (17/92), miR-106a~363 cluster (106a), or miR-106b~25 cluster (106b) miRNAs overexpression vector. Results are presented as Rluc/Luc activity ratio and are normalized to values in the control vector group. (F) qPCR analysis of Fos mRNA in TKO BMDMs transfected with control or YY1 short interfering RNAs (siRNAs), normalized to mRNA expression in control siRNA transfected cells. (G) Immunoblotting analysis of c-Fos and p38 (loading control) in whole-cell lysates of TKO BMDMs transfected with control or YY1 siRNAs. (H) Quantifications of c-Fos protein abundance in (G) by densitometry from four independent experiments. (I and J) qPCR analysis of Tnf (I) and Il10 (J) mRNA in TKO BMDMs transfected with control or YY1 siRNAs and stimulated with LPS for 1 hr. (K and L) ELISA of TNF (K) and IL-10 (L) in supernatants from TKO BMDMs transfected with control or YY1 siRNAs and stimulated with LPS for 6 hr. *p<0.05 and **p<0.01 (paired Student’s t-test). Data are representative of three (A, B, I, and J) or four (G) independent experiments or are pooled from three (C, K, and L), six (E), or four (F and H) independent experiments (mean + s.e.m.).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) qPCR analysis of Yy1 in WT BMDMs transfected with control or YY1 siRNAs, normalized to mRNA expression in control siRNA transfected cells. (B and C) qPCR analysis of Yy1 (B) and immunoblotting analysis of YY1 and p38 (loading control, C) in TKO BMDMs transfected with control or YY1 siRNAs, qPCR results were normalized to mRNA expression in control siRNA transfected cells. **p<0.01 (paired Student’s t-test). Data are pooled from (A) or are representative of (B) four independent experiments (mean + s.d.).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A and B) qPCR analysis of Fos (A) and immunoblotting analysis of c-Fos and p38 (loading control, B) in WT BMDMs transfected with control or YY1 siRNAs. Data are representative of two independent experiments (mean + s.d.).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/55676/elife-55676-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** MicroRNAs of miR-17~92 family target YY1 to release its repression on Fos, allowing optimal production of IL-10 and subsequently repress production of TNF, thus inhibiting chronic inflammation such as obesity. Overall, miR-17~92 family miRNAs act as crucial regulators of the balance between pro- and anti-inflammatory cytokines in macrophages to maintain adipose tissue homeostasis.
 
 ## Discussion
 
@@ -68,66 +148,405 @@ TNF is a pro-inflammatory cytokine critical for host defense against bacterial, 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Lyz2-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 004781</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>miR-106a~363−/− (Mirc2−/−)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>miR-106b~25−/−(Mirc3−/−)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008460</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>miR-17~92flox/flox (Mirc1flox/flox)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 008458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>miR-106a~363−/− miR-106b~25−/− (Mirc2−/− Mirc3−/−)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>miR-106a~363−/−miR-106b~25−/−miR-17~92flox/flox Lyz2-Cre (Mirc2−/− Mirc3−/− Mirc1flox/flox Lyz2-Cre)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>CD45.1</td>
+      <td>Gift from Dr. Yan Shi, Tsinghua University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Lyz2-RFP</td>
+      <td>Gift from Dr. Yuncai Liu, Tsinghua University</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>ACS-4500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F4/80-APC (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-4801-82, RRID:AB_2784648</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-APC/Cy7 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103116, RRID:AB_312981</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b-PerCP-Cy5.5 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 45-0112-82, RRID:AB_953558</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Mer-BV605 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 747894</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD64-PE (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 139304, RRID:AB_10612740</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c-FITC (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553801, RRID:AB_395060</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CX3CR1-PE/Cy7 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 149015, RRID:AB_2565699</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly6C-Alexa Fluor 700 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 128024, RRID:AB_10643270</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.1-BV421(mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 110732, RRID:AB_2562563</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2-PE/Cy7 (mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat# 25-0454-80, RRID:AB_2573349</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p38α (C-20) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-535, RRID:AB_632138</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Fos Antibody (4) (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-52, RRID:AB_2106783</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>c-Jun (60A8) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9165, RRID:AB_2130165</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YY1 antibody [EPR4652] (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab109237, RRID:AB_10890662</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-10R (rat monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Cat# BE0050, RRID:AB_1107611</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat IgG1 isotype control (rat monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Cat# BE0088, RRID:AB_1107775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TNFα (rat monoclonal)</td>
+      <td>Bio X Cell</td>
+      <td>Cat# BP0058, RRID:AB_1107764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psiCHECK-2-YY1-WT (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psiCHECK-2-YY1-Mut (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>YY1 siRNA</td>
+      <td>GenePharma</td>
+      <td>N/A</td>
+      <td>GAACUCACCUCCUGAUUAU (sense), AUAAUCAGGAGGUGAGUUC (antisense)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for qPCR</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Murine IL-10</td>
+      <td>PeproTech</td>
+      <td>Cat# 210–10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Total RNA Miniprep Purification Kit</td>
+      <td>GeneMark</td>
+      <td>TR01-150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNF ELISA Set</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 555268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-10 ELISA Kit</td>
+      <td>BioLegend</td>
+      <td>Cat# 431414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan microRNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 4366596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TaqMan MicroRNA assays</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 4427975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay System</td>
+      <td>Promega</td>
+      <td>Cat# E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SF1670</td>
+      <td>Selleck</td>
+      <td>Cat# S7310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS-EB (LPS from E. coli O111:B4)</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-eblps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pam3CSK4</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-pms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TransIT-TKO Transfection Reagent</td>
+      <td>Mirus</td>
+      <td>Cat# MIR2150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo(v10.0.7)</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J (v1.52a)</td>
+      <td>https://imagej.nih.gov/ij/index.html</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The miR-106a~363−/− (Mirc2−/−, Jax stock #008461), miR-106b~25−/− (Mirc3−/−, Jax stock #008460), and miR-17~92flox/flox (Mirc1flox/flox, Jax stock #008458) mice were purchased from The Jackson Laboratory, which were all on C57BL/6J background. miR-17~92flox/flox were crossed with Lyz2-Cre mice to obtain mice with myeloid-specific deletion of miR-17~92 cluster. The miR-106a~363 and miR-106b~25 miRNA clusters double KO mice were obtained by crossing miR-106a~363−/− mice with miR-106b~25−/− mice. The miR-17~92, miR-106a~363, and miR-106b~25 clusters triple KO mice were obtained by crossing miR-106a~363−/− miR-106b~25−/− mice with miR-17~92flox/flox Lyz2-Cre mice. CD45.1 mice were kindly provided by Dr. Yan Shi (Tsinghua University). Lyz2-RFP mice were kindly provided by Dr. Yuncai Liu (Tsinghua University) which were originally bred from Lyz2-Cre and ROSA-tdRFP mice (Luche et al., 2007). Experiments were performed with mice at 6–8 weeks of age unless otherwise specified with age- and gender-matched controls. Wild-type C57BL/6J mice were used as controls for miR-106a~363−/−, miR-106b~25−/−, and miR-106a~363−/− miR-106b~25−/− mice, and Lyz2-Cre mice were used as controls for miR-17~92flox/flox Lyz2-Cre and miR-106a~363−/− miR-106b~25−/− miR-17~92flox/flox Lyz2-Cre mice. All experiments using mice were approved by the Institutional Animal Care and Use Committees at Tsinghua University (Protocol #17-HXY1).
 
-## Cell culture and reagents
+### Cell culture and reagents
 
 Murine BMDMs were obtained as previously described (Xu et al., 2012) and maintained in DMEM (HyClone) supplemented with 10% FBS (Gibco) and 10% supernatant of L929 cell as conditioned medium providing macrophage colony-stimulating factor (M-CSF, identified as complete medium). Briefly, bone marrow cells were extracted and cultured with complete medium for 5 days to derive BMDMs. Cell culture grade LPS and Pam3CSK4 were purchased from Invivogen and were used at a concentration of 10 ng/ml unless otherwise specified. SF1670 were from Selleck. anti-IL10R, anti-IgG, and anti-TNF were purchased from BioXCell. anti-IL10R or anti-IgG was added 30 min prior to LPS stimulation and were present throughout LPS exposure.
 
-## Reverse transcription and qPCR
+### Reverse transcription and qPCR
 
 RNA was extracted from whole cell lysates and was reversely transcribed to cDNA as previously described (Zhang et al., 2019). qPCR was performed with an ABI StepOnePlus thermal cycler. Primary transcripts were measured with primers that amplify either exon–intron junctions or intronic sequences. Threshold cycle numbers were normalized to samples amplified with primers specific for glyceraldehyde-3-phosphate dehydrogenase (Gapdh). For qPCR analysis of mature miRNA, cDNA was prepared from total RNA, which was isolated with TRIzol reagent (Invitrogen), with the TaqMan microRNA Reverse Transcription Kit (Applied Biosystems). TaqMan MicroRNA assays were used according to the manufacturer’s recommendations (Applied Biosystems) for real-time PCR. Expression of U6 snRNA was used for normalization of expression values. Primer sequences are listed in Supplementary file 1.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 Cytokine secretion was quantified with TNF (BD Biosciences) or IL-10 (Biolegend) ELISA kit according to the manufacturers' instructions.
 
-## BM chimeras
+### BM chimeras
 
 BM chimeras were generated as previously described (Hu et al., 2008). Briefly, 6-week-old recipient C57BL/6J mice or CD45.1 mice were irradiated twice at a dose of 5.5 Gy with 3 hr break in between, followed by intravenous injection of 106 donor BM cells from WT or TKO mice. Chimeric mice were used for experiments 6 weeks after the initial BM transfer.
 
-## HFD-induced obesity
+### HFD-induced obesity
 
 Mice were fed with an HFD and body weight was measured weekly for 13–28 weeks. Mice were scanned with MRI machine (QMR06-090H, NIUMAG) for analysis of body composition before scarification for VAT excision. VAT weight was measured and was calculated for the percentage of body weight.
 
-## Glucose tolerance test
+### Glucose tolerance test
 
 Mice were injected intraperitoneally with glucose (2 mg/g of body weight) after fasting overnight (14–16 hr). The levels of blood glucose were measured with a glucometer (GA-3, SANNUO).
 
-## Isolation of cells from adipose tissue
+### Isolation of cells from adipose tissue
 
 Mice were sacrificed and VAT were removed and cut into small pieces. Then tissues were digested in 5 ml ice cold digestion buffer (RPMI 1640 medium containing 10% FBS, 2 mg/ml Collagenase IV [Sigma-Aldrich], and 50 μg/ml DNaseI [Sigma-Aldrich]) for 45 min at 37°C with rotation (200 rpm). The digested tissues were passed through a 70 μm cell strainer and centrifugated at 1500 rpm for 10 min to get the isolated cells.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells from adipose tissues were prepared and lysed with ACK lysing buffer (Gibco) to exclude red blood cells and were stained with antibodies on ice for 30 min in the dark. APC/Cy7 anti-mouse CD45 (30-F11, BioLegend), Percpcy5.5 anti-mouse CD11b (M1/70, eBioscience), and APC anti-mouse F4/80 (BM8, eBioscience) were used to stain ATMs, and BV605 anti-mouse Mer (108928, BD Biosciences), PE anti-mouse CD64 (X54-5/7.1 BioLegend), FITC anti-mouse CD11c (HL3, BD Biosciences), PE/Cy7 anti-mouse CX3CR1 (SA011F11, BioLegend), and Alexa Fluor 700 anti-mouse Ly6C (HK1.4, BioLegend) were used to further analyze surface markers of ATMs, BV421 anti-mouse CD45.1 (A20, BioLegend) and PE/Cy7 anti-mouse CD45.2 (104, eBioscience) were used to identify ATMs from CD45.1 and CD45.2 mice, and all antibodies were used in 1:400 dilutions except CD64 (used in 1:200 dilutions). Cells were washed three times and they were performed on FACSFortessa or FACSAria III flow cytometer (BD Biosciences) and analyzed with FlowJo software (Tree Star).
 
-## Immunoblotting analysis
+### Immunoblotting analysis
 
 Whole cell lysates were prepared as described previously (Xu et al., 2012). For immunoblotting analysis, lysates were separated by 10% SDS-PAGE and transferred to a PVDF membrane (Millipore) for probing with antibodies. The antibodies against p38 (sc-535) and c-Fos (sc-52) were purchased from Santa Cruz Biotechnology, YY1 antibody (ab109237) was purchased from Abcam, and c-Jun antibody (#9165) was obtained from Cell Signaling Technology.
 
-## RNA sequencing and analysis
+### RNA sequencing and analysis
 
 Total RNA was isolated with TRIzol reagent (Invitrogen) from whole cell lysates of ATMs from WT and TKO mice fed with regular chow diet or HFD. RNA was isolated, libraried, and sequenced with Illumina Novaseq platform by Novogene (Novogene; Beijing, China). Total reads were cleaned and mapped to the mm10 reference genome and then were normalized as fragments per kilobase of transcript per million mapped reads (FPKM). Upregulated and downregulated genes in TKO ATMs were identified as p≤0.05, (FPKM +1) fold changes (TKO/WT) ≥1.6 for upregulated genes, and (FPKM +1) fold changes (TKO/WT) ≤0.6 for downregulated genes. Differential expressed genes (DEGs) between WT-HFD and WT ATMs were defined as p≤0.05 and absolute value of log2 ratio (WT-HFD/WT) ≥1. GO analysis was conducted with upregulated and downregulated genes in TKO versus WT ATMs group and DEGs in WT-HFD versus WT ATM group by Enrichr (Chen et al., 2013; Kuleshov et al., 2016). Inflammatory score was calculated with the following formula: Inflammatory score = sum of log (FPKM+1) of representative pro-inflammatory genes (Tnf, Il6, Cxcl1, Ccl2, and Ccl8) − sum of log (FPKM+1) of representative anti-inflammatory genes (Il10, Il4, Il5, and Il13). RNA-seq datasets with WT and TKO BMDMs from our previous published work (Zhang et al., 2020) were reanalyzed and plotted.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 The psiCHECK2 (Promega) reporter plasmid was cloned with 3′-UTR fragments of Yy1 containing wild-type or mutated predicted binding sites of miR-17 family miRNAs (Supplementary file 2) to generate Yy1 reporter plasmids. A total of 293 T cells were plated into 24-well plates at 1 × 105 cells per well 24 hr before transfection with 10 ng reporter plasmid and 500 ng overexpression vectors encoding miRNAs of miR-17~92, miR-106a~363, or miR-106b~25 clusters using the Lipofectamine 2000 transfection reagent (Invitrogen). Luciferase assays were performed 48 hr post-transfection using the Dual-Luciferase Reporter Assay System (Promega) following the manufacturer’s protocol. The renilla firefly luciferase (Rluc) activity was normalized by the firefly luciferase activity (Luc) and expression is presented as Rluc/Luc ratio.
 
-## Cell lines
+### Cell lines
 
 A total of 293 T cells (ATCC ACS-4500) were maintained in DMEM supplemented with 10% FBS and 1% Penicillin–Streptomycin (Gibco) and tested negative for mycoplasma.
 
-## RNA-mediated interference
+### RNA-mediated interference
 
 Small interfering RNA (siRNA) specifically targeting mouse Yy1 (5′-GAACU CACCU CCUGA UUAU-3′ (sense)/5′-AUAAU CAGGA GGUGA GUUC-3′ (antisense)) and nontargeting control siRNA were from GenePharma. The siRNAs were transfected into mouse BMDMs through the use of TransIT TKO transfection reagent according to the manufacturer’s instructions (Mirus Bio). Cells were then lysed for mRNA and protein extraction 48 hr post-transfection.
 
-## Statistical analysis
+### Statistical analysis
 
 p-values were calculated with a two-tailed paired or unpaired Student’s t-test or two-way ANOVA. Not significant, p>0.05; *p<0.05; **p<0.01; ***p<0.001; and ****p<0.0001.
 
-## Data and materials availability
+### Data and materials availability
 
 All data supporting the findings of this study are presented within the article and its supplementary files. The RNA-seq data set is deposited in the National Center for Biotechnology Information Gene Expression Omnibus under accession number GSE129613 (Zhang et al., 2020) and GSE158627.

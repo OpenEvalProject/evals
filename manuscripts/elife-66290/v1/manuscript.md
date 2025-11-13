@@ -25,7 +25,7 @@
 
 ## Abstract
 
-In eukaryotes, histone variant distribution within the genome is the key epigenetic feature. To understand how each histone variant is targeted to the genome, we developed a new method, the RhIP ( R econstituted h istone complex I ncorporation into chromatin of P ermeabilized cell) assay, in which epitope-tagged histone complexes are introduced into permeabilized cells and incorporated into their chromatin. Using this method, we found that H3.1 and H3.3 were incorporated into chromatin in replication-dependent and -independent manners, respectively. We further found that the incorporation of histones H2A and H2A.Z mainly occurred at less condensed chromatin (open), suggesting that condensed chromatin (closed) is a barrier for histone incorporation. To overcome this barrier, H2A, but not H2A.Z, uses a replication-coupled deposition mechanism. Our study revealed that the combination of chromatin structure and DNA replication dictates the differential histone deposition to maintain the epigenetic chromatin states.
+In eukaryotes, histone variant distribution within the genome is the key epigenetic feature. To understand how each histone variant is targeted to the genome, we developed a new method, the RhIP (Reconstituted histone complex Incorporation into chromatin of Permeabilized cell) assay, in which epitope-tagged histone complexes are introduced into permeabilized cells and incorporated into their chromatin. Using this method, we found that H3.1 and H3.3 were incorporated into chromatin in replication-dependent and -independent manners, respectively. We further found that the incorporation of histones H2A and H2A.Z mainly occurred at less condensed chromatin (open), suggesting that condensed chromatin (closed) is a barrier for histone incorporation. To overcome this barrier, H2A, but not H2A.Z, uses a replication-coupled deposition mechanism. Our study revealed that the combination of chromatin structure and DNA replication dictates the differential histone deposition to maintain the epigenetic chromatin states.
 
 ## Introduction
 
@@ -45,9 +45,29 @@ In the present study, we developed a new method, in which a reconstituted histon
 
 ## Results
 
-## RhIP assay reproduces in vivo histone deposition
+### RhIP assay reproduces in vivo histone deposition
 
 To understand how histones are incorporated into chromatin in cells, we developed the RhIP assay, in which an in vitro reconstituted histone complex, nucleotides, and a cellular extract are added to permeabilized cells (Figure 1A). We first confirmed that the RhIP assay can recapitulate the specific histone incorporations observed in cells. The H3.1-H4 incorporation into chromatin is coupled with replication, while the H3.3-H4 incorporation occurs throughout the cell cycle (Ahmad and Henikoff, 2002). We reconstituted H3-H4 complexes in vitro, using recombinant H3.1, H3.3, and H4 (Figure 1B). The recombinant H3.1 and H3.3 were fused to HA and FLAG tags at their C-termini, respectively. The permeabilized cells were then prepared by treating HeLa cells with a nonionic detergent, Triton X-100, and the reconstituted H3-H4 complexes were mixed with the cellular extract and nucleotides. Cy5-dUTP was also added, in order to monitor DNA replication. After the reaction, the exogenously added H3.1 and H3.3 were detected with antibodies against the HA and FLAG tags, respectively (Figure 1C–E). As a result, the H3.1 was detected in the Cy5 positive cells (S phase cells), while the H3.3 was detected irrespective of the Cy5 signal. As the co-incubated H3.1–3HA-H4 and H3.3-3FLAG-H4 complexes showed different staining patterns, they were incorporated into the chromatin by specific mechanisms, rather than non-specifically, in the RhIP assay.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the RhIP assay, using reconstituted H3.1-H4 and H3.3-H4 complexes. Permeabilized cells were prepared from HeLa cells treated with non-ionic detergent, to perforate the cellular membranes. The in vitro reconstituted H3-H4 complexes were then added to the cells with the cellular extract and nucleotides. Cy5-dUTP was added to label the nascent DNA, so replication could be monitored. (B) Reconstituted H3.1-H4 and H3.3-H4 complexes were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. The 3HA and 3FLAG tags were fused to the C-termini of H3.1 and H3.3, respectively. Lane one indicates the molecular mass markers, and lanes 2 and 3 indicate the H3.1-H4 and H3.3-H4 complexes, respectively. (C) RhIP-immunostaining of H3.1 and H3.3. Exogenously added H3-H4 complexes were stained with an anti-HA or -FLAG antibody. Cells in S phase were monitored with Cy5-dUTP, which was incorporated into the nascent DNA. Bar indicates 10 μm. (D) Quantification of C. The mean fluorescence intensities (MFI) of H3.1–3HA (left) and H3.3-3FLAG (right) were measured. Nuclei were divided into S phase (Cy5 positive) and out of S phase (Cy5 negative) (n > 50, triplicate). (E) Relative intensity of H3.1 or H3.3 signal in S phase against signal out of S phase. Experiments were repeated three times and averaged data with standard deviations are shown. The two-tailed Student’s t-test was used for the statistical comparisons. (F) Schematic representation of the RhIP-ChIP assay, using the reconstituted H3.1-H4 and H3.3-H4 complexes. The reconstituted H3.1-H4 or H3.3-H4 complex was added to permeabilized cells with the cellular extract and nucleotides. Cy5-dUTP was added to label the nascent DNA. The chromatin was partially digested with micrococcal nuclease (MNase). Chromatin immunoprecipitation was performed with anti-HA magnetic beads. The precipitated DNA was extracted and analyzed by agarose gel electrophoresis. (G) Reconstituted H3.1-H4 and H3.3-H4 complexes were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. A 3HA tag was fused to the C-termini of H3.1 and H3.3. Lane one indicates the molecular mass markers, and lanes 2 and 3 indicate the H3.1-H4 and H3.3-H4 complexes, respectively. (H) The immunoprecipitated DNA was analyzed by 2% agarose electrophoresis. Upper and lower images were obtained from the same gel. The DNA was visualized with SYBR Gold (upper), and the nascent DNA was visualized by detecting the Cy5 signals (lower). Lane 1 indicates the 100 bp DNA ladder. Lanes 2–4 and 5–7 indicate input samples and immunoprecipitated samples, respectively. Each set includes the experiments with no reconstituted histone complex (negative control, lanes 2 and 5), with H3.1–3HA-H4 (lanes 3 and 6), and with H3.3–3HA-H4 (lanes 4 and 7).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) An aggregate plot of reads occupancy surrounding the TSS of active or inactive genes from the RhIP-ChIP-seq of H3.3. (B) The results of RhIP-ChIP-qPCR of H3.3. ChIP enrichments (fold enrichment over input) for GAPDH (active) and LIC02199 (inactive) genes are shown. Experiments were repeated three times and averaged data with standard deviations are shown. The two-tailed Student’s t-test was used for the statistical comparisons. (C) The read counts of GAPDH and LINC02199 of RNA-seq (GSE163214). (D) The plotFingerprints of RhIP-ChIP-seq and ChIP-seq of H3.3. (E) Quality control metrics of each sequencing data set shown in (D). The synthetic JS distance is the Jensen-Shannon distance between a given sample and the expected distribution of a perfect input sample. Higher values indicate greater differences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Scheme of cell fractionation (left). HeLa cells were treated with non-ionic detergent and the supernatant (soluble fraction), which is removed from permeabilized cells, and the pellet, which corresponds to permeabilized cells, were separated (insoluble fraction). Distributions of HIRA and CAF-1 (p60) were investigated by western blotting (right). Histone H3 and GAPDH served as the chromatin and cytoplasmic protein controls, respectively. Asterisk indicates a non-specific band. (B) Scheme of RhIP-immunostaining assay using CAF-1- or HIRA-knockdown cells. HeLa cells were transfected with siRNAs against CAF-1 (p60 and p150), HIRA or luciferase (control) for 8 hr. For evaluation by immunostaining, the CAF-1- or HIRA-knockdown cells were mixed with control cells, and then plated on the same dish. For the CAF-1-knockdown experiment to measure replication-coupled H3.1 incorporation, thymidine was added to synchronize the cells in S phase, 18 hr before the permeabilization. After 72 hr, RhIP-immunostainings were performed. The CAF-1- and HIRA-knockdown cells were identified with antibodies against CAF-1 (p60) and HIRA, respectively. (C) RhIP-immunostaining of H3.1 using CAF-1 (p60 and p150) -knockdown cells. Upper: All cells shown here are in S-phase with Cy5-dUTP incorporation (right). The H3.1 incorporation was identified with anti-HA antibodies (arrows), and the CAF-1 (p60) -knockdown was identified as the absence of α-p60 signals (arrowheads). Bar indicates 10 μm. Lower: Quantification of the image data above. The mean fluorescence intensities (MFI) of H3.1–3HA in control cells (CAF-1 (+)) and CAF-1-knockdown cells (CAF-1 (-)) in S phase were measured (n > 35, triplicate). The two-tailed Student’s t-test was used for the statistical comparisons. (D) RhIP-immunostaining of H3.3 using HIRA-knockdown cells. Upper: The H3.3 incorporation was identified with anti-HA antibodies (arrows), and HIRA-knockdown cells were identified by the absence of anti-HIRA signals (arrowheads). Bar indicates 10 μm. Lower: Quantification of the image data shown above. The mean fluorescence intensities (MFI) of H3.3–3HA in control cells (HIRA (+)) and HIRA-knockdown cells (HIRA (-)) (n > 50 triplicate). The two-tailed Student’s t-test was used for the statistical comparisons.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Scheme of the RhIP-immunostaining with harsh washing conditions. The RhIP assay was performed with H3.1-H4 and H3.3-H4, and then the cells were washed with PBST or PBST containing 300 mM NaCl prior to fixation. (B) RhIP-immunostaining of H3.1 with PBST (upper) and PBST containing 300 mM NaCl (lower) conditions. Exogenously added H3.1–3HA-H4 complex and CAF-1 (p60) were stained with anti-HA and anti-p60 antibodies, respectively. Cells in S phase were monitored with Cy5-dUTP, which was incorporated within the nascent DNA. Bar indicates 10 μm. (C) Quantification of (B). The mean fluorescence intensities (MFI) of H3.1–3HA (left) and CAF-1 (p60) (right) were measured (n > 100). (D) RhIP-immunostaining of H3.3 with PBST (upper) and PBST containing 300 mM NaCl (lower) conditions. Exogenously added H3.3–3HA-H4 complex and HIRA were stained with anti-HA and anti-HIRA antibodies, respectively. Bar indicates 10 μm. (E) Quantification of (D). The mean fluorescence intensities (MFI) of H3.3–3HA (left) and HIRA (right) were measured (n > 100).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Schematic representation of the RhIP assay. The RhIP assay was performed with H3.1-H4, in the presence of either the cellular extract or the histone chaperones NAP1 or ASF1. (B) Purified human NAP1 and ASF1 were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. Lane 1 indicates the molecular mass markers, and lanes 2 and 3 indicate Nap1 and Asf1, respectively. (C) RhIP-immunostaining images of H3.1. The exogenously added H3.1–3HA-H4 complex was stained with an anti-HA antibody. Cells in S phase were monitored with Cy5-dUTP. Bar indicates 10 μm.
 
 To improve the resolution of the analysis, we performed the RhIP assay followed by chromatin immunoprecipitation (RhIP-ChIP) (Figure 1F). The reconstituted H3.1–3HA-H4 or H3.3–3HA-H4 complex was added to permeabilized cells along with the cellular extract and nucleotides, including Cy5-dUTP to label the nascent DNA (Figure 1F and G). After the reaction, the chromatin was partially digested by micrococcal nuclease (MNase), and the nucleosomes containing H3.1–3HA or H3.3–3HA were immunoprecipitated with an antibody against the HA tag. The precipitated DNA was then extracted and analyzed by gel electrophoresis. As shown in Figure 1H, the amounts of precipitated DNA are nearly the same between the H3.1 and H3.3 samples, as judged from the SYBR Gold staining (Figure 1H, upper); however, the amount of nascent DNA labeled with Cy5 is much greater in the H3.1 sample than in the H3.3 sample (Figure 1H, lower). This result indicates that H3.1 is incorporated into replicating chromatin more efficiently than H3.3. We further performed the RhIP-ChIP-seq of H3.3 to examine the distribution of incorporated H3.3 in the RhIP assay (Figure 1—figure supplement 1A). We found that exogenously added H3.3 was preferentially incorporated into transcriptionally active genes, rather than inactive genes. This distribution pattern is consistent with many previous studies (Bachu et al., 2019; Mito et al., 2005; Pchelintsev et al., 2013). The RhIP-ChIP-qPCR analysis also demonstrated the H3.3 enrichment at the transcriptionally active GAPDH, as compared to that at the inactive gene, LNC02199 (Figure 1—figure supplement 1B and C). Thus, our results imply that the reconstituted H3.1-H4 and H3.3-H4 complexes are incorporated into the chromatin of permeabilized cells with the same dynamics as observed in intact cells.
 
@@ -55,31 +75,71 @@ CAF-1 and HIRA are key factors for the H3.1 and H3.3 depositions in vivo, respec
 
 We further examined whether the cellular extract is essential or replaceable by the histone chaperones, NAP1 or ASF1 (Figure 1—figure supplement 4A). NAP1 and ASF1 bind to the H2A-H2B and H3-H4 complexes in vivo, respectively, and both promote nucleosome formation in vitro (Ishimi et al., 1984; Munakata et al., 2000; Tachiwana et al., 2008; Tyler et al., 1999). Human NAP1 and ASF1 were purified as recombinant proteins (Figure 1—figure supplement 3B). The H3.1-H4 complex was then added to the permeabilized cells in the absence of the cellular extract or in the presence of NAP1 or ASF1, and the incorporation was analyzed by immunostaining (Figure 1—figure supplement 4C). Without the cellular extract or the histone chaperone, the exogenously added H3.1 was not detected in the permeabilized cells, indicating that no H3.1 incorporation had occurred. NAP1 promoted the promiscuous incorporation irrespective of DNA replication, and ASF1 facilitated H3.1 accumulation in the nucleoli. These data indicated that the functional deposition of the exogenously added histone complex requires the cellular extract, which may contain essential components. Together with the fact that the efficiency of RhIP-ChIP of exogenously added H3.3 is almost the same as that of endogenous H3.3 ChIP (Figure 1—figure supplement 1D and E), we conclude that the RhIP assay reproduces cellular histone deposition and is suitable for analyzing histone incorporation in vitro.
 
-## H2A.Z incorporation into chromatin differs from that of H2A and H2A.X
+### H2A.Z incorporation into chromatin differs from that of H2A and H2A.X
 
 Among the H2A family members, canonical H2A and the H2A.X variant show even and broad genome-wide distributions, but H2A.Z specifically localizes in open chromatin, including promoters and enhancers (Buschbeck and Hake, 2017; Raisner et al., 2005). To test whether this difference reflects their deposition manners, we performed the RhIP assay (Figure 2A). The H2A-H2B and H2A.Z-H2B complexes were reconstituted in vitro using recombinant proteins (Figure 2B) and added to permeabilized cells, which were then immunostained (Figure 2C). The H2A and H2A.Z signals were both observed in the Cy5-negative and -positive permeabilized cells, indicating that their incorporations occur irrespective of DNA replication. We also found that H2A forms foci in the S phase nuclei. We then merged the images of the H2A and Cy5 signals. The replication foci change as cells progress through S phase (Leonhardt et al., 2000). In early S phase, the replication foci are present throughout the nucleoplasm, except for the nucleoli. The foci then accumulate at the nuclear periphery and around the nucleoli. In late S phase, the foci increase in size but decrease in number. We found that the H2A signals overlapped well with the replication foci throughout replication (Figure 2C and D). The H2A.Z signals overlapped with the early replication foci to some extent, but they were clearly eliminated from the late replication foci (Figure 2C and D). In contrast to the difference between H2A and H2A.Z, the H2A and H2A.X signals overlapped well with each other, suggesting that their incorporation mechanism is the same (Figure 2—figure supplement 1). These results indicate that H2A, H2A.X, and H2A.Z can be incorporated into chromatin in a replication-independent manner; however, during S phase, H2A and H2A.X are preferentially incorporated into the chromatin of ongoing replication sites, in contrast to H2A.Z.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic representation of the RhIP assay, using the reconstituted H2A-H2B and H2A.Z-H2B complexes. (B) The reconstituted H2A-H2B and H2A.Z-H2B complexes were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. The 3HA and V5 tags were fused to the N-termini of H2A and H2A.Z, respectively. Lane one indicates the molecular mass markers, and lanes 2 and 3 indicate the H2A-H2B and H2A.Z-H2B complexes, respectively. (C) RhIP-immunostaining of H2A and H2A.Z. Top: Exogenously added H2A-H2B or H2A.Z-H2B complexes were stained with either an anti-HA or -V5 antibody. Cells in S phase were monitored with Cy5-dUTP. Middle and Bottom: merged images of Cy5-dUTP (green) and H2A or H2A.Z (red) in early S (Middle) and late S (Bottom) phase. Bar indicates 10 μm, and r indicates the Pearson’s correlation coefficient. (D) Colocalization analyses of Cy5-dUTP and H2A.Z or H2A (n > 35 cells). Experiments were repeated three times and averaged data are shown. The two-tailed Student’s t-test was used for the statistical comparisons. (E) Reconstituted H2A-H2B and H2A.Z-H2B complexes were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. A 3HA tag was fused to the N-termini of H2A and HA.Z. Lane 1 indicates the molecular mass markers, and lanes 2 and 3 indicate the H2A-H2B and H2A.Z-H2B complexes, respectively. (F) The RhIP-ChIP assay was performed using H2A and H2A.Z, as described in Figure 1F. The immunoprecipitated DNA was analyzed by 2% agarose electrophoresis. Upper and lower images were obtained from the same gel. The DNA was visualized with SYBR Gold (upper), and the nascent DNA was visualized by detecting the Cy5 signals (lower). Lane 1 indicates the 100 bp DNA ladder. Lanes 2–4 and 5–7 indicate input samples and immunoprecipitated samples, respectively. Each set has the experiments with no reconstituted histone complex (negative control, lanes 2 and 5), with 3HA-H2A-H2B (lanes 3 and 6), and with 3HA-H2A.Z-H2B (lanes 4 and 7).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the RhIP assay, using the reconstituted H2A-H2B and H2A.X-H2B complexes. (B) Reconstituted H2A-H2B and H2A.X-H2B complexes were analyzed by SDS-16% PAGE with Coomassie Brilliant Blue staining. The 3HA and V5 tags were fused to the N-termini of H2A and H2A.X, respectively. Lane one indicates the molecular mass markers, and lanes 2 and 3 indicate the H2A-H2B and H2A.X-H2B complexes, respectively. (C) RhIP-immunostaining images of H2A and H2A.X. Exogenously added H2A-H2B complexes were stained with an anti-HA or -V5 antibody. Cells in S phase were monitored with Cy5-dUTP. Bar indicates 10 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cells were synchronized in early or late S phase by a double thymidine block. The experimental scheme is shown above the image panels. Cell synchronization was confirmed by the homogeneous replication pattern, revealed by Cy5-dUTP labeling (middle and right top panels). (B) The immunoprecipitated DNA was analyzed by 1.5% agarose electrophoresis. Upper and lower images were obtained from the same gel. The DNA was visualized with SYBR Gold (upper) and the nascent DNA was visualized by detecting the Cy5 signals (lower). Lane 1 indicates a 100 bp DNA ladder. Lanes 2–7 and 8–13 indicate early S and late S phase samples, respectively. Lanes 2–4 and 8–10 indicate input samples, and lanes 5–7 and 11–13 indicate immunoprecipitated samples, respectively. Each set has the experiments with no reconstituted histone complex (negative control, lanes 2, 5, 8, and 11), and with 3HA-H2A.Z-H2B (lanes 4, 7, 10, and 13). H2A.Z is rarely present in the Cy5-labeled nascent chromatin, in both early and late S phase cells, suggesting replication-independent chromatin incorporation.
 
 We further analyzed the incorporation of H2A and H2A.Z into replicating chromatin by a RhIP-ChIP assay, as in Figure 1F (Figure 2E and F). The amounts of precipitated DNA are nearly the same between the H2A and H2A.Z precipitants, as judged from the SYBR Gold staining (Figure 2F, upper); however, the amount of nascent DNA labeled with Cy5 is much greater in the H2A precipitant than in the H2A.Z sample (Figure 2F, lower). This result indicates that H2A is incorporated into replicating chromatin more efficiently than H2A.Z.
 
 The replication timing in S phase strongly correlates with the chromatin configurations (Rivera-Mulia and Gilbert, 2016). In general, early and late replicating chromatin regions correspond to open and closed chromatin, respectively. We investigated whether the efficiencies of H2A and H2A.Z incorporation into replicating chromatin change, according to the replication timing (Figure 2—figure supplement 2). For this analysis, the cells were synchronized in early S phase by a double thymidine block, and then early and late S phase cells were collected at 0 and 5 hr post thymidine-release, respectively. The synchronized cells showed the typical early and late replication foci representing nascent DNA labeled with Cy5-dUTP (Figure 2—figure supplement 2A). Using these cells, we performed RhIP-ChIP assays of H2A and H2A.Z. The results revealed that the incorporation efficiencies of both H2A and H2A.Z into replicating chromatin did not change, irrespective of the replication timing in S phase. This implies that the efficiencies of replication-coupled histone deposition are not different between open (early S-replicating) and closed (late S-replicating) chromatin (Figure 2—figure supplement 2B).
 
-## Open and closed chromatin structures regulate histone deposition
+### Open and closed chromatin structures regulate histone deposition
 
 The RhIP-ChIP assay showed that the H2A.Z deposition on nascent DNAs was constant in the early and late S phases (Figure 2F and Figure 2—figure supplement 2). In contrast, the RhIP-immunostaining revealed that more signals of H2A.Z incorporation were overlapped at the early replicating foci than the late replicating foci (Figure 2C and D). This discrepancy may arise from the lower resolution of the immunostaining imaging. Some of the overlapping signals of H2A.Z and Cy5 in early S phase might represent the replication-independent H2A.Z deposition that occurred close to, but not exactly at, the replication sites in open chromatin. To determine whether the efficiency of the histone deposition depends on the open/closed chromatin configuration, we performed RhIP-ChIP-seq and analyzed the H2A and H2A.Z incorporations in each type of chromatin (Figure 3). First, we investigated the replication-independent histone deposition using asynchronous permeabilized cells, in which the majority of the cells are out of S phase. We found that the RhIP-ChIP-seq profiles of H2A and H2A.Z showed a strong correlation (0.62 Pearson correlation) and specific peaks at megabase resolution, which were not observed in the input samples (Figure 3A). We noticed that these patterns are similar to the DNaseI-seq results, which mapped open chromatin regions (Tsompana and Buck, 2014), suggesting that H2A and H2A.Z are predominantly incorporated into open chromatin regions. We then analyzed the efficiency of histone incorporations into open and closed chromatin using the chromHMM data (Core 15-state model), which classified the open and closed chromatin regions (Ernst and Kellis, 2012; Roadmap Epigenomics Consortium et al., 2015; Figure 3B and Figure 3—figure supplement 1A). The ChIP/input ratios of each chromatin region revealed that H2A and H2A.Z were efficiently incorporated into transcriptionally active open chromatin, while their incorporations into closed chromatin were inefficient. These results indicate that histone incorporation occurs mainly in the open chromatin regions in a replication-independent manner, and closed chromatin suppresses histone incorporation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig3-v1.jpg)
+
+**Figure 3.:** Z mainly occurs at less condensed chromatin and H2A incorporation into condensed chromatin requires a replication-coupled deposition mechanism. (A) RhIP-ChIP-seq and DNaseI-seq profiles using asynchronous cells were visualized with the Integrative Genomics Viewer (left). From top to bottom, profiles of H2A, H2A.Z, DNaseI-seq (GEO:GSM816643), input (H2A), and input (H2A.Z) are indicated. Scatter plot analyses of the H2A.Z and H2A RhIP-ChIP-seq along the genome (right). (B) Enrichment of incorporated H2A (left) or H2A.Z (right) in asynchronous cells. Each chromatin region was previously annotated by the chromHMM, as follows. TssA: active TSS, TssAFlnk: flanking active TSS, TxFlnk: transcribed state at the 5' and 3' ends of genes showing both the promoter and enhancer signatures, Tx: strong transcription, TxWk: weak transcription, EnhG: genic enhancers, Enh: enhancers, Het: heterochromatin, ReprPC: repressed PolyComb, and ReprPCWk: weak repressed PolyComb (Ernst and Kellis, 2012; Roadmap Epigenomics Consortium et al., 2015). (C) The Pearson’s correlation coefficients between asynchronous and late S cells (two biological replicates each) were calculated from the RhIP-ChIP-seq data at 800 bp intervals. Left and right panels indicate the correlation coefficients of the H2A and H2A.Z data, respectively. (D) Enrichment of incorporated H2A in asynchronous (white boxes) and late S (green boxes) phase cells. Data for asynchronous cells are those shown in Figure 4C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Biological replicate of Figure 3B. (B) RhIP-ChIP-seq profiles using asynchronous and late S phase cells were visualized with the Integrative Genomics Viewer. From top to bottom, profiles of H2A (asynchronous), H2A (late S), H2A.Z (asynchronous) and H2A.Z (late S) are indicated (chr9: 72883596–106296034). (C) Biological replicate of Figure 3D.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scatter plot analyses of the H2A.Z RhIP-ChIP-seq replicates (left), and the H2A.Z and H2A RhIP-ChIP-seq (right) at known H2A.Z sites. (B) The plotFingerprints of RhIP-ChIP-seq (left and right) or ChIP-seq of H2A.Z (right). (C) Quality control metrics of each sequencing data set shown in (B). The synthetic JS distance is the Jensen-Shannon distance between a given sample and the expected distribution of a perfect input sample. Higher values indicate greater differences between the two curves, with minimum and maximum values of 0 and 1, respectively.
+
 We then examined whether the efficiency of the histone incorporation into closed chromatin changes during S phase (Figure 3C and D). We performed RhIP-ChIP-seq with cells synchronized at late S phase. We found that the RhIP-ChIP-seq profiles between asynchronous cells and late S phase cells changed for H2A, but not for H2A.Z, indicating that H2A incorporation into chromatin is affected by replication, in contrast to H2A.Z incorporation (Figure 3C and Figure 3—figure supplement 1B). We then investigated how the incorporation efficiency of H2A into open and closed chromatin regions changes between asynchronous and late S phase cells. The results revealed that the efficiency of H2A incorporation into open chromatin decreased in late S phase (Figure 3D, lanes 1–7), while in contrast, the incorporation into closed chromatin increased (Figure 3D, lanes 8–10 and Figure 3—figure supplement 1B). Considering the fact that only closed chromatin is replicated in late S phase, the changes in the incorporation efficiency may be due to the changes in the replicating chromatin. Note that replication does not progress completely in the RhIP assay, and only a small fraction of closed chromatin is replicated under the conditions shown in Figure 4E, which is the reason why the ChIP/input ratio does not exceed one. We concluded that replication allows the incorporation of H2A, but not H2A.Z, in closed chromatin. The frequency of exchange is high in open chromatin and low in closed chromatin for H2A and H2A.Z. As a result, H2A.Z is specifically incorporated within open chromatin.
 
-## The distribution of incorporated H2A.Z in the RhIP assay is similar to the steady-state of H2A.Z localizations
+![Figure 4.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig4-v1.jpg)
+
+**Figure 4.:** (A) Representative profiles of RhIP-ChIP-seq using asynchronous cells and ChIP-seq (GEO:GSM1003483) at chr10: 73,079,443–73,805,171. (B) Aggregation plots of the H2A (RhIP-ChIP, left), H2A.Z (RhIP-ChIP, center), and H2A.Z (ChIP, right) at the center of TSS-flanking 5 Kb regions from the whole genome. Red and blue lines indicate expressed and non-expressed genes, respectively. (C) The correlations of H2A.Z (ChIP) and H2A (RhIP-ChIP) (left), and H2A.Z (ChIP), H2A.Z (RhIP-ChIP) (center) at known H2A.Z sites determined by ChIP-seq analysis. The correlations of H2A.Z (ChIP) and H2A.Z (RhIP-ChIP) at known H2A.Z sites located in gene bodies (right). (D) Heatmaps of H2A.Z and H2A (RhIP-ChIP) at the center of H2A.Z peaks of ChIP-seq flanking 5 Kb regions. The heatmap represents H2A.Z peaks ranked from the strongest to weakest in RhIP-ChIP-seq. Corresponding aggregation plots are at the top. (E) Reversed analysis of (D). Heatmap of H2A.Z (ChIP) at the H2A.Z peaks of RhIP-ChIP-seq. The corresponding aggregation plot is at the top. Asterisk indicates peaks with no read counts of H2A.Z (ChIP), which are approximately 3% of the entire peaks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Biological replicate of Figure 4D. (B) Biological replicate of Figure 4E.
+
+### The distribution of incorporated H2A.Z in the RhIP assay is similar to the steady-state of H2A.Z localizations
 
 As endogenous H2A.Z predominantly localizes in transcription start sites (TSS) (Barski et al., 2007; Buschbeck and Hake, 2017; Ernst et al., 2011; Jin et al., 2009; Link et al., 2018; Obri et al., 2014; Schones et al., 2008), we further analyzed the H2A.Z distributions in the RhIP assay at kilobase resolution (Figure 4). The alignment of the H2A.Z profiles from RhIP-ChIP-seq and ChIP-seq (ENCODE Project Consortium, 2012) at a representative chromosome position (chr10:73,079,443–73,805,171) highlighted the similarity between the two, but the H2A profiles of the RhIP-ChIP-seq did not (Figure 4A). Moreover, in the RhIP assay the incorporated H2A.Z predominantly accumulated at the TSS of expressed genes, as also observed in the ChIP-seq analysis of H2A.Z, but the incorporated H2A was relatively excluded from the TSS (Figure 4B). A correlation analysis at known H2A.Z sites, determined by a ChIP-seq analysis, showed a moderately positive, linear relationship between H2A.Z of RhIP-ChIP-seq and H2A.Z of ChIP-seq (0.31 Pearson correlation coefficient) and little to no correlation between H2A of RhIP-ChIP-seq and H2A.Z of ChIP-seq (0.20 Pearson correlation coefficient) (Figure 4C). In addition, a correlation analysis at the known H2A.Z sites located in gene bodies showed a fairly linear relationship between H2A.Z of RhIP-ChIP-seq and H2A.Z of ChIP-seq (0.25 Pearson correlation coefficient) (Figure 4C, right). The heatmap revealed that the H2A.Z of RhIP-ChIP-seq accumulates at almost all of the H2A.Z peaks found by ChIP-seq (Figure 4D left and Figure 4—figure supplement 1A). In contrast, the H2A of RhIP-ChIP-seq showed no accumulation at the H2A.Z peaks of ChIP-seq (Figure 4D right). This is consistent with the results that the correlation of RhIP-ChIP-seq of H2A and H2A.Z at the H2A.Z peaks of ChIP-seq is lower than that along the genome (Figure 3A right and Figure 3—figure supplement 2A right). The reversed heatmap analysis again showed the accumulations of the H2A.Z of ChIP-seq at the H2A.Z peaks found by RhIP-ChIP-seq, and only 3% of the H2A.Z peaks of the RhIP assay were absent from those of ChIP-seq (denoted with * in Figure 4E and Figure 4—figure supplement 1B). These data revealed that the distribution of the incorporated H2A.Z in the RhIP assay overlapped well with the steady state localization of H2A.Z determined by the ChIP-seq analysis.
 
-## H2A.Z deposition in the RhIP assay requires ANP32E and ATP supplements from the cellular extract
+### H2A.Z deposition in the RhIP assay requires ANP32E and ATP supplements from the cellular extract
 
 As H2A.Z is incorporated into the same regions of the endogenous H2A.Z in the RhIP assay, the pre-incorporated H2A.Z in the chromatin may be dynamically exchanged with the exogenously added H2A.Z in the RhIP assay. The exchange reaction requires the H2A.Z-H2B complex to be evicted from nucleosomes, and ANP32E has this eviction activity (Gursoy-Yuzugullu et al., 2015; Murphy et al., 2020; Murphy et al., 2018; Obri et al., 2014). We then examined whether ANP32E is involved in the deposition of H2A.Z in the RhIP assay. Our fractionation analysis showed that ANP32E was extracted during the permeabilization process; in contrast, the other H2A.Z deposition factors SRCAP and TIP60 remained in the permeabilized cells (Figure 5A). Given that ANP32E exists in the cellular extract used in the RhIP assay (Figure 5B), we prepared cellular extracts from the control and ANP32E-knockdown cells (Figure 5B), and used them for the RhIP-ChIP-seq analysis of H2A.Z (Figure 5C). To allow a quantitative assessment of the ChIP-seq analysis, we combined spike-in controls with the RhIP-ChIP-seq (Chen et al., 2015; Egan et al., 2016; Orlando et al., 2014). The efficiencies of H2A.Z incorporations into active TSS and enhancer regions were decreased upon the ANP32E-knockdown (Figure 5D and Figure 5—figure supplement 1A). Previous reports showed that the endogenous H2A.Z is predominantly detected in TSS and to a lesser extent in enhancers (Barski et al., 2007; Buschbeck and Hake, 2017; Ernst et al., 2011; Jin et al., 2009; Link et al., 2018; Obri et al., 2014; Schones et al., 2008). Together with these observations, our results suggested that the ANP32E-dependent evictions of the pre-incorporated H2A.Z in active TSS and enhancer regions promote the incorporation of exogenously added H2A.Z.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig5-v1.jpg)
+
+**Figure 5.:** (A) Scheme of cell fractionation (left). HeLa cells were treated with non-ionic detergent and the supernatant (soluble fraction), which is removed from permeabilized cells, and the pellet, which corresponds to permeabilized cells, were separated (insoluble fraction). Distributions of SRCAP, TIP60 and ANP32E were investigated by western blotting (right). Histone H3 and GAPDH served as the chromatin and cytoplasmic protein controls, respectively. (B) Preparation of the ANP32E-knockdown cellular extract. HeLa cells were transfected with siRNA against ANP32E. After 72 hr, the ANP32E-knockdown cellular extract was prepared from the cells. The ANP32E-knockdown was confirmed by western blotting (upper). Loading control with the membrane stained with CBB (lower). (C) Scheme of RhIP-ChIP-seq of H2A.Z using the ANP32E-knockdown cellular extract. (D) Enrichment of incorporated H2A.Z with the control or ANP32E-knockdown extract. Each chromatin region was previously annotated by the chromHMM, as follows. TssA: active TSS, Enh: enhancers, and Ins: insulator. (E) Scheme of RhIP-ChIP-seq of H2A.Z using the ATP-depleted cellular extract. (F) Enrichment of incorporated H2A.Z with the ATP-depleted or ATP-supplemented extract. Each chromatin region was the same as in (D).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66290/elife-66290-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Biological replicate of Figure 5D. (B) Biological replicate of Figure 5B.
+
 In addition to eviction activity, chromatin remodeling is a key determinant for the H2A.Z localizations. The SRCAP and TIP60/EP400 complexes are chromatin remodeling factors that replace nucleosomal H2A with H2A.Z. These factors were found in the permeabilized cells, suggesting that chromatin remodeling is also involved in H2A.Z deposition in the RhIP assay (Figure 5A). A series of studies using the yeast SRCAP ortholog SWR1 revealed the mechanism of chromatin remodeling-mediated H2A.Z deposition and showed that ATPase activity is essential for the H2A.Z deposition (Altaf et al., 2010; Luk et al., 2010; Mizuguchi, 2004; Sun and Luk, 2017; Sun et al., 2020). Therefore, we investigated whether ATP is required for the deposition of H2A.Z in the RhIP assay. As cellular ATP is removed during the permeabilization process, the permeabilized cells lack ATP. We then prepared the ATP-reduced cellular extract and used it in a RhIP-ChIP-seq analysis of H2A.Z with or without ATP supplementation (Figure 5E). We found that ATP facilitated H2A.Z deposition at active TSS and enhancer regions as effectively as ANP32E (Figure 5F and Figure 5—figure supplement 1B). This indicated that the H2A.Z deposition in the RhIP assay is a net result of the ANP32E-mediated eviction and deposition of H2A.Z, and the replacement of pre-incorporated H2A with H2A.Z by chromatin remodeling. As ATP is used in multiple biological processes, such as transcription, splicing/translation, molecular chaperone functions, and so on, the possibility that these ATP-dependent reactions affected the H2A.Z incorporation in this assay cannot be excluded. Intriguingly, the efficiencies of H2A.Z incorporations into insulator regions are less affected under ANP32E- or ATP-reduced conditions (Figure 5D and F). This suggests that there may be another mechanism for H2A.Z deposition in insulator regions.
 
-## The αc helix of H2A is important for its replication-coupled deposition
+### The αc helix of H2A is important for its replication-coupled deposition
 
 As the RhIP assay reproduces the replication-coupled and replication-independent incorporations of H2A and H2A.Z, we then tried to identify the residues responsible for the replication-coupled H2A and replication-independent H2A.Z depositions by a mutant analysis. A previous study showed that swapping the M6 region of H2A.Z with the corresponding H2A residues could not rescue the embryonic lethality of the H2A.Z null mutation in Drosophila melanogaster (Clarkson et al., 1999), suggesting that the region specifies the H2A.Z identity. The M6 region of H2A.Z and the corresponding region of H2A are exposed on the surface of the H2A.Z-H2B or H2A-H2B dimer (Horikoshi et al., 2013; Luger et al., 1997; Suto et al., 2000; Tachiwana et al., 2010; Figure 6A, cyan or green). This indicates that another protein can recognize the regions, which may be important for their depositions. To test this idea, we constructed the swapped mutant (H2A.Z_M6) and performed the RhIP assay (Figure 6B–F). Surprisingly, the H2A.Z_M6-H2B signals were observed in late replicating chromatin (Figure 6D and E), and its incorporation pattern in late S phase was more similar to that of H2A-H2B, rather than H2A.Z-H2B (Figure 6F). This indicated that the mutant is no longer H2A.Z, in terms of deposition. Thus, the M6 region of H2A.Z is responsible for the H2A.Z-specific deposition, and the corresponding region (amino acids 89–100) of H2A is responsible for the replication-coupled H2A deposition.
 
@@ -109,17 +169,188 @@ In conclusion, our novel method elucidated the mechanism of histone incorporatio
 
 ## Materials and methods
 
-## Cell culture and thymidine block
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-7392 RRID:AB_627809</td>
+      <td>IF(1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit, monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3724 RRID:AB_1549585</td>
+      <td>IF(1:2,000) only used in Figure 1—figure supplements 1D and 3D</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DDDDK (anti-FLAG) (rabbit, polyclonal)</td>
+      <td>MBL</td>
+      <td>PM020 RRID:AB_591224</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (chicken, polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab9113 RRID:AB_307022</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p60 (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab109442 RRID:AB_10861771</td>
+      <td>IF(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIRA (mouse, monoclonal)</td>
+      <td>Active Motif</td>
+      <td>WC119.2H11 RRID:AB_10715607</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIRA (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab129169 RRID:AB_11140220</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p60 (rabbit, monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab109442 RRID:AB_10861771</td>
+      <td>WB(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3 (mouse, monoclonal)</td>
+      <td>MBL</td>
+      <td>MABI0301 RRID:AB_11142498</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SRCAP (rabbit, polyclonal)</td>
+      <td>Kerafast</td>
+      <td>ESL103</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TIP60 (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc-166323 RRID:AB_2296327</td>
+      <td>WB(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ANP32E (rabbit, polyclonal)</td>
+      <td>MyBioSource</td>
+      <td>MBS9214243</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (mouse, monoclonal)</td>
+      <td>MBL</td>
+      <td>ML171-3 RRID:AB_10597731</td>
+      <td>WB(3:1000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAAGGGTGCAGCTGAGCTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TACGAAGCCCTTCCAGGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LINC02199_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGGTGTCAAATGTCACAATGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>LINC02199_R</td>
+      <td>Thermo Fisher</td>
+      <td>PCR primers</td>
+      <td>GGGGTTTTGAGGATTCCAAAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>si_p60 gene</td>
+      <td>This paper</td>
+      <td>siRNA</td>
+      <td>AAUGAUAACAAGGAGCCGGAGdTdT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>si_p150 gene</td>
+      <td>This paper</td>
+      <td>siRNA</td>
+      <td>CUGUCAUGUGGGUUCUGACdTdT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGET SMARTpool siRNA (HIRA gene)</td>
+      <td>Dharmacon</td>
+      <td>siRNA</td>
+      <td>L-013610-00-0005</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa</td>
+      <td>Peter R Cook</td>
+      <td>N/A</td>
+      <td>A human cervical cancer cell line (female origin)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>SF8628</td>
+      <td>Merck</td>
+      <td>SCC127 RRID:CVCL_IT46</td>
+      <td>Human DIPG H3.3-K27M Cell Line</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and thymidine block
 
 HeLa and SF8628 cells were cultured in DMEM supplemented with 10% fetal bovine serum, at 37°C in a 5% CO2 atmosphere. For cell synchronization, HeLa cells were cultured with 2 mM thymidine for 18 hr (Figure 1—figure supplement 2C). For the double thymidine block, the medium was then changed to remove the thymidine. After 9 hr of culture without thymidine, the HeLa cells were cultured with 2 mM thymidine again for 15 hr, for synchronization in S phase (Figure 2—figure supplement 2). All cell lines used in this study had their identities validated by STR profiling and it was also confirmed by Hoechst staining that there was no mycoplasma contamination.
 
-## Reconstitution of histone complex
+### Reconstitution of histone complex
 
 All histones used in this study were produced in Escherichia coli cells as recombinant proteins. The human H3.1 and H3.3 genes were inserted in the pET21a vector (Novagen), as C-terminal 3HA-His6 or 3FLAG-His6 fused genes. The human H2A, H2A.X, H2A.Z, and H2A.Z_M6 genes were inserted in the pET15b vector (Novagen) as N-terminal His6-3HA, His6-3FLAG or His6-V5 fused genes. All the genes were overexpressed in the BL21(DE3) E. coli strain, by adding 0.5 mM isopropyl-β-D-thiogalactopyranoside. Each histone was then purified as described previously, using Ni-NTA affinity chromatography (Tachiwana et al., 2010). The epitope tag-fused histones were freeze-dried without removing the His6 tags. As the His6 tag was not used to detect or precipitate histones in this study, His6 was not mentioned in the text and figures, so that His6-epitope-tag-histone and histone-epitope-tag-His6 were referred to as epitope-tag-histone and histone-epitope-tag, respectively. Human H2B and H4 were overexpressed and purified after removing the His6 tags, as described previously (Tachiwana et al., 2010).
 
 Freeze-dried H3.1 or H3.3 was mixed with H4 and H2A, H2A.X, H2A.Z, and H2A.Z_M6, along with H2B, in 20 mM Tris-HCl buffer (pH 7.5), containing 7 M guanidine hydrochloride and 20 mM 2-mercaptoethanol, and incubated on ice. After 1 hr, the samples were dialyzed against reconstitution buffer (10 mM Tris-HCl, pH 7.5, and 2 mM 2-mercaptoethanol) containing 2 M NaCl, overnight at 4°C. The NaCl concentration was then decreased by three steps of dialysis against reconstitution buffer containing 1 M NaCl for 4 hr, 0.5 M NaCl for 4 hr, and 0.1 M NaCl overnight. After the dialyses, the precipitants were removed by centrifugation and the supernatants were analyzed by Superdex 200 gel filtration chromatography (GE Healthcare).
 
-## Preparation of the cellular extract
+### Preparation of the cellular extract
 
 The cellular extract was prepared as previously described, with modifications (Martini et al., 1998). Confluent HeLa cells in twenty-five 15 cm dishes were rinsed twice with ice-cold PBS in a cold room. Then, 10 ml of ice-cold hypotonic buffer (10 mM HEPES-KOH, pH 7.8, 10 mM KCL, 1.5 mM MgCl2, 1 mM dithiothreitol and 1 × proteinase inhibitor cocktail [cOmplete, EDTA-free, Roche]) was added to each dish to swell the cells, and the dishes were incubated for 5 min in a cold room. After repeating this step once, the excess buffer was removed by leaning the dishes against a wall for 5 min. The cells were then scraped off the dish and disrupted with 35 strokes in a 1 ml Dounce homogenizer with a loose-fitting pestle (Wheaton). Nuclei were removed by centrifugation at 1,500 × g for 5 min at 4°C, and the collected supernatant was further centrifuged at 14,000 × g for 5 min at 4°C. The supernatant was then flash-frozen with liquid nitrogen. After 30 min at −80°C, the cellular extract was thawed and the debris was removed. The concentration of the cellular extract was then measured with a protein quantification kit (MACHEREY-NAGEL). Usually, 3–4 ml of 5–8 mg/ml cellular extract were obtained.
 
@@ -127,35 +358,35 @@ For the preparation of the ATP-depleted cellular extract, HeLa cells were grown 
 
 For the preparation of the knockdown cellular extract, HeLa cells were transfected with siRNAs against the luciferase or ANP32E gene using the Lipofectamine RNAiMAX Transfection Reagent (Thermo Fisher), according to the manufacturer’s instructions. After 72 hr, the cellular extract was prepared as described above. The siRNAs used are as follows: siRNA against luciferase gene: CGUACGCGGAAUACUUCGAdTdT siRNA against ANP32E gene: AUGGAUUUGAUCAGGAGGAdTdT.
 
-## RhIP-immunostaining
+### RhIP-immunostaining
 
 HeLa cells were grown on a coverslip in a six well dish to 2.5 × 105 per well. The cells were chilled on ice and rinsed twice with 2 ml of ice-cold PBF (100 mM CH3COOK, 10 mM Na2HPO4, 30 mM KCl, 1 mM dithiothreitol, 1 mM MgCl2, 1 mM ATP, and 5% Ficoll). To permeabilize the cells, 1 ml of PBF containing 0.2% Triton X-100 was added, and the cells were incubated for 5 min on ice and then rinsed twice with 2 ml of ice-cold PBF. As the permeabilized cells were easily detached from the coverslips, all subsequent steps were performed gently. The coverslips with the attached permeabilized cells were moved onto parafilm laid on an aluminum block, and incubated at 30°C. Then, a 50 μl portion of a RhIP-reaction mixture, containing 100 nM histone complex, 3.6 μg/μl cellular extract, 2.5% Ficoll, 100 mM CH3COOK, 10 mM Na2HPO4, 30 mM KCl, 1 mM dithiothreitol, 1 mM MgCl2, 100 μM each of dNTPs, and NTPs (Roche) with or without 250 nM Cy5-dUTP (Enzo Life Sciences), was added to the permeabilized cells, and incubated for 60 min at 30°C. The coverslip was placed in a well of a 12-well plate, and the cells were washed twice for 5 min with 1 ml of PBS containing 0.1% Tween 20 (PBST), at room temperature. The cells were then fixed with 4% PFA (Electron Microscopy Sciences) in PBS for 20 min at room temperature, and rinsed three times with PBS. The cells were treated with 1% BSA in PBST for 1 hr at room temperature, and then incubated for 2 hr at room temperature with one of the following primary antibodies: anti-HA (mouse, 1/1000, Santa Cruz, sc-7392), anti-HA (only used in Figure 1—figure supplements 1D and 3D, rabbit, 1/2,000, Cell Signaling Technology, 3724), anti-DDDDK (FLAG) (rabbit, 1/500, MBL, PM020), anti-V5 (chicken, 1/1000, Abcam, ab9113), anti-p60 (rabbit, 1/400, Abcam, ab109442), and anti-HIRA (mouse, 1/200, Active Motif, WC119.2H11). The cells were washed with PBST three times for 10 min each, and then incubated for 1 hr at room temperature with secondary antibodies: Goat Alexa Fluor 488 or 546-conjugated anti-mouse IgG (1/1000, Life Technologies), or goat DyLight 488- or 550-conjugated anti-rabbit IgG or chicken IgY (1/1000, Thermo Fisher). The cells were washed with PBST three times for 10 min each. DNA was stained with Hoechst 33342. The samples were mounted with ProLong Gold (Life Technologies). The images in Figure 1, Figure 1—figure supplements 2 and 3, and Figure 2—figure supplements 1 and 2 were acquired by using the Deltavision set-up (Cytiva) with an inverted Olympus IX71 microscope, equipped with a CoolSNAP ES2 CCD camera (Photometrics) and a 60×, 1.42 Plan Apo N Olympus oil-immersion objective. Other images were acquired with an LSM 880 inverted confocal microscope (Zeiss), equipped with an AiryScan module and a 63×, 1.40 Plan-Apochromat Zeiss oil objective. All image files were converted to the TIFF format using the ImageJ software (Schneider et al., 2012) and imported into Illustrator (Adobe) for assembly. The co-localization analysis was performed using the ImageJ Colocalization_Finder plugin.
 
 For the RhIP-immunostaining assay with the CAF-1- or HIRA-knockdown, HeLa cells were transfected with siRNAs against the luciferase (negative control), CAF-1 (p60), CAF-1 (p150), or HIRA gene using the Lipofectamine RNAiMAX Transfection Reagent (ThermoFisher), according to the manufacturer’s instructions. To knockdown the CAF-1 complex, the siRNAs against the CAF-1-p60 and CAF-I-p150 genes were added simultaneously. After an incubation for 8 hr, the cells were collected by trypsin/EDTA treatment, and the CAF-1- or HIRA-knockdown cells were mixed with control-knockdown cells and re-plated and co-cultured for 64 hr. For the CAF-1-knockdown experiment, 2 mM of thymidine was added to synchronize the cells in S phase, 18 hr before the permeabilization. Immunostainings were then performed as described above. siRNAs used for this experiment are as follows: siRNA against p60 gene: AAUGAUAACAAGGAGCCGGAGdTdT siRNA against p150 gene: CUGUCAUGUGGGUUCUGACdTdT siRNA against HIRA gene: ON-TARGET SMARTpool siRNA L-013610-00-0005 (Dharmacon).
 
-## RhIP-ChIP
+### RhIP-ChIP
 
 The RhIP-ChIP assays shown in Figures 1H and 2F and Figure 2—figure supplement 2 were performed as follows. Semi-confluent HeLa cells in a 10 cm dish were chilled on ice, and rinsed twice with 5 ml of ice-cold PBF. To permeabilize the cells, 2.5 ml of PBF containing 0.2% Triton X-100 was added and incubated for 5 min on ice. The cells were rinsed twice with 5 ml of ice-cold PBF, and then 2.5 ml of the RhIP-reaction mixture was added to the permeabilized cells. After sealing the lid of the dish with parafilm, the cells were incubated for 60 min at 30°C. The RhIP-reaction mixture was then removed, and the cells were washed twice with 5 ml of PBST at room temperature for 5 min each. Subsequently, native-ChIP was performed as described previously with minor modifications (Tachiwana et al., 2015). The cells were collected in 1 ml of NB buffer (15 mM Tris-HCl, pH 7.5, 15 mM NaCl, 60 mM KCl, 300 mM sucrose and 1 × proteinase inhibitor cocktail (cOmplete, EDTA-free, Roche)). After centrifugation at 1500 × g for 5 min at 4°C, the cells were resuspended in 100 μl of NB buffer. CaCl2 was then added to a final concentration of 2 mM. The cells were treated with 150 mU/μl of micrococcal nuclease (MNase, Worthington) for 5 min at 37°C, to generate soluble chromatin fragments. The reaction was terminated by adding 10 mM EDTA, and the solubilized chromatin fragments were separated from the pellets by centrifugation at 16,000 × g for 5 min at 4°C. The samples were then mixed with 50 μl of anti-HA-tag mAb-Magnetic Beads (MBL International) in 15 mM Tris-HCl, pH 7.5, 300 mM NaCl, and 0.1% NP-40. After an overnight incubation at 4°C with gentle mixing on a wheel, the beads were washed three times each with 500 μl of ChIP buffer (10 mM Tris-HCl, pH 8.0, 200 mM KCl, 1 mM CaCl2, 0.5% NP-40), ChIP buffer containing 500 mM KCl, and TE. The DNA was then eluted with a Proteinase K solution (20 mM Tris-HCl, pH 8.0, 20 mM EDTA, 0.5% sodium dodecyl sulfate (SDS), and 0.5 mg/ml Proteinase K) and extracted with phenol-chloroform. The DNA was precipitated with ethanol and resuspended in 10 mM Tris-HCl, pH 8.0, and 1 mM EDTA. The resulting DNA samples were separated by electrophoresis on a 2% agarose gel (7.4 V/cm, 35 min) (Figures 1H and 2F) or a 1.5% agarose gel (7.1 V/cm, 60 min) (Figure 2—figure supplement 2B) in 1 × TAE, and stained with SYBR Gold (Thermo Fisher). Images of the DNA stained with SYBR Gold and the nascent DNA labeled with Cy5 were obtained with an Amersham Typhoon scanner (Cytiva).
 
 The H3.3 enrichment shown in Figure 1E was analyzed by qPCR with a StepOne Plus system (Applied Biosystems) using SYBR Green fluorescence. The cycle number required to reach the threshold was recorded and analyzed. PCR was performed using the same amounts of the immunoprecipitated DNA (RhIP-ChIP sample) and the input DNA. Values were normalized to the input DNA. Primer sets used for this analysis are as follows:
 
-## RhIP-ChIP-seq
+### RhIP-ChIP-seq
 
 RhIP-ChIP-seq was performed in the same way as RhIP-ChIP with modifications. HeLa cells were used in Figures 3–5 and SF2868 cells were used in Figure 1—figure supplement 1A. After the RhIP assay, the permeabilized cells were washed twice with PBST for 5 min at room temperature, and then cross-linked with 3% formaldehyde in PBS for 5 min at room temperature. After fixation, the cells were resuspended with 1 ml of ChIP buffer and collected by centrifugation at 1500 × g for 5 min at 4°C. The cells were then treated with 7.5 mU/μl MNase in 400 μl ChIP buffer for 30 min at 37°C. The MNase reaction was terminated by adding 10 mM EDTA, and the solubilized chromatin fragments were separated from the pellets by centrifugation at 16,000 × g for 5 min at 4°C. The supernatant was incubated with 50 μl of anti-HA-tag mAb-Magnetic Beads, and gently mixed by rotation at 4°C overnight. The beads were then washed three times each with 500 μl of ChIP buffer, ChIP buffer containing 500 mM KCl, and TE. The beads were resuspended in 100 μl of ChIP elution buffer (50 mM Tris-HCl, pH 8.0, 10 mM EDTA, 25 mM NaCl, and 1% SDS), and incubated overnight at 65°C to reverse the cross-links. The DNA was then eluted with 0.4 mg/ml Proteinase K, and further purified with a PCR clean-up kit (MACHEREY-NAGEL). The DNA libraries were prepared using a SMARTer ThruPLEX Tag-seq Kit (Takara Bio) for Figures 3 and 4, or a SMARTer ThruPLEX DNA-seq kit (Takara Bio) for Figure 5. The samples were sequenced on an Illumina HiSeq 1500 system for Figures 3 and 4, and an Illumina HiSeq X Ten system for Figure 5.
 
 For the spike-in normalization performed in Figure 5, one-tenth of the fragmented chromatin was subjected to cross-link reversal prior to the ChIP procedure. After an overnight incubation at 65°C, the resulting DNA was recovered as described above and the concentration was measured. Then, one two-hundredth of Drosophila spike-in chromatin (Active Motif) was mixed with the rest of the chromatin. Two μg of spike-in antibody (Active Motif) per 50 ng of Drosophila spike-in chromatin were mixed with ProteinA/G magnetic beads (Pierce). The spike-in antibody beads were then mixed with 50 μl of anti-HA-tag mAb-Magnetic Beads and the chromatin mixture. Subsequent steps were performed as described above.
 
-## ChIP‐seq data analysis
+### ChIP‐seq data analysis
 
 For ChIP-seq data shown in Figures 3 and 4, the in-read unique-molecular-identifiers (tags) were extracted using UMI-tools (Smith et al., 2017) with the command: umi_tools extract --extract-method=regex --bc-pattern='(?p<umi_1>.{6})(?p<discard_1>.{0,3}GTAGCTCA){s <= 2}'. The extracted reads were mapped to the human genome (GRCh38) using hisat2 (version 2.1.0) (Kim et al., 2015). The PCR-duplicates were removed using umi_tools dedup. The read counts on 15 chromatin states were calculated using BED-Tools (Quinlan and Hall, 2010). The definition of the ChromHMM track was obtained from the consolidated data set of the Roadmap Epigenomics project (E117_15_coreMarks_hg38lift_mnemonics.bed) (Roadmap Epigenomics Consortium et al., 2015). The BED files of enhancer and insulator regions used in Figure 5 were also extracted from ChromHMM track. The overall concentrations of the ChIP signals (log2 ratio) were calculated as the ratio of the proportion of reads in each chromatin state between the ChIP and input DNA data; that is, log2(ChIP/Input) after normalization of the total reads. The signal tracks (bigwig files) were created at 1 bp intervals on the genome, and then the counts were normalized as CPM (Reads Per Million reads), using deepTools (Ramírez et al., 2014). ChIP-seq signals were visualized with the Integrative Genomics Viewer, IGV (Robinson et al., 2011). The Pearson correlation coefficients were calculated throughout 800 bp intervals with the multiBigwigSummary program of deepTools, and plotted with the plotCorrelation program (Ramírez et al., 2014). The multiBigwigSummary program was also used to compute the average scores for RhIP-ChIP-seq data and ChIP-seq data (GEO:GSM1003483) at H2A.Z sites, which were determined with replicates of the ChIP-seq data (GEO:GSM1003483) by the mergePeaks program of HOMER (Heinz et al., 2010). The computeMatrix programs of deepTools were utilized to analyze the peak localizations at the centers of TSS, the known H2A.Z sites, and the H2A.Z peaks of the RhIP-ChIP-seq data. Genes with five or more read counts in the RNA-seq data (GSE140768 for Figure 1—figure supplement 1, GSE123571 for Figure 4B) were defined as expressed genes, and the rest were regarded as non-expressed genes. The H2A.Z peaks of the RhIP-ChIP-seq data were also determined with the mergePeaks program of HOMER. The plotFingerprint program of deepTools was utilized to analyze the enrichment of ChIP signals.
 
 For the spike-in normalization used in Figure 5, the reads were mapped to the human genome (GRCh38) and the fly genome (BDGP Release 6 + ISO1 MT/dm6), using bowtie2 (version 2.3.4.3) (Langmead and Salzberg, 2012). The PCR-duplicates were removed using the MarkDuplicates tool of Picard (Broad Institute, 2019). Normalization factors were then generated using the numbers of mapped reads on the fly genome. The numbers of mapped reads on the human genome were then downsampled, using the view program of SAMtools according to the normalization factors (1000 Genome Project Data Processing Subgroup et al., 2009).
 
-## Purification of NAP1 and ASF1
+### Purification of NAP1 and ASF1
 
 Human NAP1 was purified as described previously (Tachiwana et al., 2008). The human ASF1 gene was inserted in the pET15b vector (Novagen), in which the thrombin proteinase recognition sequence was replaced by the PreScission protease recognition sequence. Escherichia coli strain BL21-CodonPlus (DE3)-RIL cells (Agilent Technologies) were freshly transformed with the vector, and cultured at 30°C. After the cell density reached an A600 = 0.8, 1 mM isopropyl- β-D-thiogalactopyranoside was added, and the culture was continued at 18°C for 12 hr to induce His6-tagged Asf1 expression. The cells were collected and resuspended in 20 mM Tris-HCl, pH 7.5, containing 500 mM KCl, 10% glycerol, 0.1% NP-40, 1 mM phenylmethylsulfonyl fluoride (PMSF), and 2 mM 2-mercaptoethanol. After cell disruption by sonication, the debris was removed by centrifugation (27,216 × g; 20 min), and the clarified lysate was mixed gently with 4 ml (50% slurry) of nickel-nitrilotriacetic acid (Ni-NTA)-agarose resin (Qiagen) at 4°C for 1 hr. The Ni-NTA beads were washed with 200 ml of 20 mM Tris-HCl, pH 7.5, containing 500 mM NaCl, 10% glycerol, 10 mM imidazole, and 2 mM 2-mercaptoethanol. The His6-tagged Asf1 was eluted by a 100 ml linear gradient of 10 to 500 mM imidazole in 50 mM Tris-HCl buffer (pH 7.5), containing 500 mM NaCl, 10% glycerol, and 2 mM 2-mercaptoethanol. PreScission protease (8 units/mg protein, Cytiva) was added to remove the His6 tag from the ASF1. The sample was dialyzed against 20 mM Tris-HCl, pH 7.5, containing 100 mM NaCl, 1 mM EDTA, 10% glycerol, and 2 mM 2-mercaptoethanol. The ASF1 was further purified by chromatography on a Mono Q (Cytiva) column, eluted with a 25 ml linear gradient of 100–600 mM NaCl in 20 mM Tris-HCl, pH 7.5, containing 1 mM EDTA, 10% glycerol, and 2 mM 2-mercaptoethanol. The eluted Asf1 was further purified by chromatography on a Superdex 75 (Cytiva) column, eluted with 1.2 column volumes of the same buffer containing 100 mM NaCl. The Asf1 was repurified by Mono Q chromatography, concentrated, and dialyzed against 20 mM Tris-HCl (pH 7.5), containing 150 mM NaCl, 1 mM dithiothreitol, 0.5 mM EDTA, 0.1 mM PMSF, and 10% glycerol.
 
-## Subcellular fractionation and western blotting
+### Subcellular fractionation and western blotting
 
 Semi-confluent HeLa cells in a 10 cm dish were chilled on ice and rinsed twice with 5 ml of ice-cold PBF. To permeabilize the cells, 2.5 ml of PBF containing 0.2% Triton X-100 was added, and incubated for 5 min on ice. The supernatant was collected as the soluble fraction. The permeabilized cells were rinsed twice with 5 ml of ice-cold PBF and scraped off the dish. After centrifugation at 800 × g for 5 min at 4°C, the pellets were resuspended in 250 μl of RIPA buffer (50 mM Tris-HCl, pH 7.6, 150 mM NaCl, 1% NP-40, 0.5% sodium deoxycholate, 1 × protease inhibitor cocktail and 0.1% SDS) and treated with benzonase. The supernatant was then collected by centrifugation at 16,000 × g for 5 min at 4°C as the soluble fraction. The insoluble fraction was diluted ten-fold with PBF containing 0.2% Triton X-100 to adjust the dilution ratio between the soluble and insoluble fractions.
 

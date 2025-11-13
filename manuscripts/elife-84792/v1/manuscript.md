@@ -25,10 +25,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02c5jsm26 Research Institute of Molecular Pathology (IMP), Campus-Vienna-Biocenter 1 Vienna Austria
-2. https://ror.org/05n3x4p02 Vienna BioCenter PhD Program, Doctoral School of the University at Vienna and Medical University of Vienna, Vienna BioCenter (VBC) Vienna Austria
+1. Research Institute of Molecular Pathology (IMP), Campus-Vienna-Biocenter 1 Vienna Austria ([ROR:02c5jsm26](https://ror.org/02c5jsm26))
+2. Vienna BioCenter PhD Program, Doctoral School of the University at Vienna and Medical University of Vienna, Vienna BioCenter (VBC) Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
 3. Boehringer Ingelheim RCV GmbH & Co KG, Doktor-Boehringer-Gasse Vienna Austria
-4. https://ror.org/05n3x4p02 Medical University of Vienna, Vienna BioCenter Vienna Austria
+4. Medical University of Vienna, Vienna BioCenter Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
 
 † Corresponding author
 
@@ -44,9 +44,33 @@ Drug development is guided by genetic loss-of-function (LOF) experiments that va
 
 To develop such an assay system, we reasoned that instead of using gene-specific LOF triggers for every new candidate gene, the expression of any gene could be efficiently suppressed by engineering the target site of a pre-validated, highly potent, synthetic short-hairpin RNA (shRNA) into its exonic sequence (Figure 1A). Besides ensuring efficient target knockdown in a highly standardized manner, such an approach would also provide control over off-target activities through expressing the shRNA side-by-side in target-site engineered and wildtype cells. This approach leaves the genome engineering procedure, needed to integrate the pre-validated artificial RNA interference (ARTi) target site into a gene of interest, as the only potential source of off-target effects. As suitable RNAi system, we chose optimized micro-RNA embedded shRNAs (shRNAmirs) in the miR-E backbone (Fellmann et al., 2013), which do not interfere with endogenous miRNA processing (Premsrirut et al., 2011) and can be expressed from tet-responsive elements and other Pol-II promoters in the 3′-UTR of fluorescent reporter genes, thus providing a versatile system for inducible RNAi (Zuber et al., 2011). To identify potent ARTi sequences with minimal off-target activity, we analyzed the nucleotide composition of shRNAs that reach exceptionally high-performance scores in common shRNA design algorithms (Vert et al., 2006) and of miRNA seed sequences with exceptionally low off-target scores according to siSPOTR (Boudreau et al., 2013). By merging nucleotide biases identified in both analyses, we derived a 22-nt base composition matrix for the design of ARTi shRNAmirs (TTCGWWWNNAHHWWCATCCGGN; W = A/T, H = A/T/C; N = A/T/G/C) (Figure 1B and Figure 1—figure supplement 1A and B). To further reduce possible off-target effects, we eliminated all shRNAs whose extended seed sequence (guide positions 2–14) had a perfect match in the human or mouse transcriptome and, finally, selected six top-scoring ARTi predictions for experimental validation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic outline of the ARTi approach. (B) Sequence logo (https://weblogo.berkeley.edu) displaying nucleotide position biases of 2161 shRNAs with exceptionally high Designer of Small Interfering RNA (DSIR) scores (>105). Inlay depicts miRNA seed sequence biases. (C) Reporter assay comparing gene-specific shRNAs to ARTi-shRNAmirs. (D) Competitive proliferation assays in human cell lines after transduction with ARTi-shRNAmirs, neutral (shRen.713) and essential control shRNAs (shRPL9.324 or shPSMA3.164) (n=3, error bars represent SD). (E) Principal component (PC) analysis of gene expression profiling upon stable expression of indicated shRNAs or treatment with MEK inhibitor (trametinib) in RKO cells. (F) Volcano plots visualizing de-regulated genes upon expression of indicated shRNAs and trametinib treatment in RKO cells compared to empty vector control. ARTi, artificial RNA interference; shRNAmirs, micro-RNA embedded shRNAs.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence logo displaying nucleotide position biases of seed sequences (guide positions 2–8) with the lowest off-target score in siSPOTR analysis (top 1%). (B) Sequence logo displaying position biases in sequences from a that harbor a T in guide position 2. (C) Knockdown efficiency of ARTi-shRNAmirs. Flow cytometric quantification of GFP knockdown efficiency in immortalized mouse embryonic fibroblastss (MEFs) 2 d after transduction with indicated ARTi-shRNAmir or control short-hairpin RNAs (shRNAs). Percent knockdown is normalized to shRen.713 control. shRen.660 served as a neutral control whose target site was not included in the reporter. Red asterisks indicate ARTi-shRNAmirs that were selected for follow-up studies. (D) Toxicity of ARTi-shRNAmirs. Competitive proliferation assays of three murine cell lines after transduction with ARTi-shRNAmirs, shRen.713, or shMyc.1834 control, showing the relative fraction of shRNA-expressing cells at indicated time points following the initial measurement (day 4 after shRNA transduction). (E) Principal component analysis of gene expression profiling in HT-1080 cells. Respective shRNAmirs and treatments are indicated in the respective colors. X-axis: principal component 1; Y-axis: principal component 2. (F) Volcano plots visualizing de-regulated genes in HT 1080 cells. All shRNAmirs and treatments were tested against the empty vector control. X-axis: -log10(p-value); Y-axis: log2 fold change. (G) Cell growth assay for ARTi-shRNAmir transduced cells and their parental controls in the presence and absence of dox. ARTi, artificial RNA interference; shRNAmirs, micro-RNA embedded shRNAs.
+
 We tested these ARTi-shRNAmirs using an established knockdown reporter assay (Fellmann et al., 2013) for their ability to suppress expression of a GFP transgene that harbors the respective target sites in its 3′-UTR. In all six cases, ARTi-shRNAmir matched or outperformed previously validated highly potent shRNAmirs targeting Renilla luciferase or PTEN (Fellmann et al., 2013; Figure 1—figure supplement 1C). We compared these results to a panel of 592 gene-specific shRNAs that were tested using the same assay and found that ARTi-shRNAmirs ranked among top-performing shRNAmirs overall (Figure 1C). Next, we selected the three top-performing ARTi-shRNAmirs and evaluated possible off-target activities using competitive proliferation assays and transcriptome profiling. ARTi-shRNAmir expression had no effects on proliferation or survival in four human and three mouse cell lines (Figure 1D and Figure 1—figure supplement 1D), with the exception of ARTi.6634 and ARTi.6786, which induced a mild fitness defect in the murine leukemia cell line RN2 and MV4-11, respectively. In contrast to the effects of a MEK inhibitor trametinib, which we included as a positive control, stable expression of ARTi-shRNAmirs had only marginal effects on the transcriptome in two commonly used human cell lines (Figure 1E and F and Figure 1—figure supplement 1E and F) and no effect in proliferation assays (Figure 1—figure supplement 1G), indicating that they do not trigger major off-target effects, even in the absence of their respective target site. Together, these studies established a set of highly potent, off-target-free ARTi-shRNAmirs, among which we selected ARTi.6570 (ARTi-shRNAmir) for further investigations.
 
 To establish ARTi as a method for target validation, we performed ARTi-based LOF experiments in cancer cell lines and xenograft models for three prominent oncology targets: EGFR and KRAS, which act as driving oncogenes in various cancer types (Hynes and MacDonald, 2009; Punekar et al., 2022), and STAG1, which has been identified as a synthetic lethal interaction with recurrent LOF mutations of STAG2 (Bailey et al., 2021; van der Lelij et al., 2020; Benedetti et al., 2014; van der Lelij et al., 2017). To establish an ARTi-repressible version of oncogenic EGFRdel19, we cloned ARTi-shRNAmir target sequences into an expression construct encoding EGFRdel19 fused to dsRed (Figure 2A), which rendered Ba/F3 cells cytokine-independent and sensitive to EGFR inhibition (Figure 2—figure supplement 1A). We introduced this construct into human EGFRdel19-dependent PC-9 lung adenocarcinoma cells and subsequently knocked out the endogenous EGFR gene. The EGFRdel19::V5::dsRed::ARTi transgene fully rescued the loss of endogenous EGFRdel19, while doxycycline (dox)-induced expression of the ARTi-shRNAmir (ARTi.6570) strongly inhibited proliferation of PC-9 cells and triggered a near-complete suppression of the EGFRdel19::V5::dsRed::ARTi protein (Figure 2B and C and Figure 2—figure supplement 1B). Consistently, in RNA-sequencing we observed an almost complete drop of reads mapping to the codon-optimized EGFRdel19::V5::dsRed::ARTi transgene upon dox-inducible expression of the ARTi-shRNAmir, as well as a downregulation of DUSP6 and other canonical targets of RAF-MEK-ERK signaling, which acts as key effector pathway of EGFRdel19 (Figure 2—figure supplement 1C-E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of EGFRdel19::V5::dsRed::ARTi engineering in PC-9 cells. Blue color denotes overexpressed ARTi variant. Green denotes endogenous gene. (B) Western blot demonstrating knockdown of EGFRdel19::V5::dsRed::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Proliferation assay and crystal violet staining of parental and engineered PC-9 cells in the absence or presence of doxycycline (dox). Crystal violet staining is a representative example of two independent biological repeat experiments.( D) In vivo experiment comparing dox-induced EGFRdel19::V5::dsRed::ARTi knockdown to pharmacological EGFRdel19 inhibition. Mean tumor volume and ± SEM is plotted for all in vivo experiments. (E) Schematic of MIA PaCa-2 engineering. Blue color denotes overexpressed ARTi variant. Green denotes endogenous gene. (F) Western blot for KRAS and Actin in indicated engineered MIA PaCa-2 cells in the presence and absence of dox. Western blot is a representative example of two independent biological repeat experiments. (G) Proliferation assay and crystal violet staining of parental and engineered MIA PaCa-2 cells in the absence or presence of dox. Crystal violet staining is a representative example of two independent biological repeat experiments. (H) Growth curves of tumors implanted with engineered MIA PaCa-2 cells in the absence and presence of dox in vivo. (I) Schematic of C-terminal endogenous tagging of STAG1. Green color denotes endogenous genes. (J) Western blot demonstrating knockdown of STAG1-ARTi. Western blot is a representative example of three independent biological repeat experiments. (K) Immunohistochemistry staining of STAG1 in engineered HCT 116 cells in the absence and presence of dox. Asterisk marks an area of murine fibroblasts that serve as an internal positive control. (I) Growth curves of tumors implanted with engineered HCT 116 cells in the absence and presence of dox.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Functional validation of the EGFRdel19 construct in Ba/F3 cells. Provided are GI50 values (nM) for indicated conditions and compounds (parental cells IL-3-dependent; other cells dependent on transgenes [no IL-3]). Numbers represent GI50 value calculated from three technical repeats. Three biological repeat experiments were conducted, and one representative experiment is shown in (A). (B) Western blot analysis confirming expression of EGFRdel19::V5::dsRed::ARTi constructs, knockout of endogenous EGFR and doxycycline (dox)-induced knockdown or EGFRdel19::V5::dsRed::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Expression levels (y-axis: normalized counts) of the EGFRdel19::V5::dsRed::ARTi construct in parental and engineered PC-9 cells after 4 and 8 d of dox treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (D) Expression levels (y-axis: normalized counts) of the MAPK target gene DUSP6 in parental and engineered PC-9 cells after 4 and 8 d of dox treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (E) Heatmap visualizing the gene expression changes in MAPK pathway target and ERBB genes in engineered cells in the presence and absence of dox. (F) In vivo experiment comparing dox-induced expression of the ARTi-shRNAmir to drinking water control in PC-9 parental cells. Lines connect mean tumor volume data and ± SEM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of MIA PaCa-2 genome engineering. (B) AMG-510 GI50 values in MIA PaCa-2 parental and engineered cells. Numbers represent GI50 value calculated from three technical repeats. Three biological repeat experiments were conducted, and one representative experiment is shown in (B). (C) Expression levels (y-axis: normalized counts) of the dsRed::KRASG12R transgene in parental and engineered MIA PaCa-2 cells after 4 and 8 d of doxycycline (dox) treatment or no treatment. Individual datapoints of three biological replicates overlay the boxplots. (D) Western blot for KRAS (green) and Actin (magenta) (upper plot) and dsRed (green) and Actin (magenta) (bottom plot) for indicated engineered MIA PaCa-2 cells in the presence and absence of dox. Western blot is a representative example of three independent biological repeat experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84792/elife-84792-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of synthetic lethal interaction between STAG1 and STAG2. Cells survive loss of either paralog but are incapable of growing upon combined loss of STAG1 and STAG2. (B) Western blot confirmation of STAG2 knockout and ARTi-shRNAmir-induced knockdown of endogenous STAG1::V5::ARTi. Western blot is a representative example of three independent biological repeat experiments. (C) Proliferation assay of ARTi engineered HCT 116 cells in vitro, visualized by crystal violet staining following a 9-day doxycycline (dox) or control treatment. Staining is a representative example of three independent biological repeat experiments. (D) Quantification of nuclear Stag1 level (Figure 2k) using engineered HCT 116 cells in an in vivo xenotransplantation experiment the control group (-dox) and dox (+dox) treated group.
 
 To evaluate whether ARTi can recapitulate drug activities in vivo, we xenotransplanted EGFRdel19::V5::dsRed::ARTi engineered PC-9 cells harboring the dox-inducible ARTi-shRNAmir and treated recipient mice upon tumor formation with either dox or the clinically approved EGFR inhibitor osimertinib. Dox-induced expression of the ARTi-shRNAmir led to rapid and durable tumor regression that was indistinguishable from the effects of osimertinib (Figure 2D) and not observed in parental PC-9 cells that lack the ARTi target site (Figure 2—figure supplement 1F). We therefore conclude that ARTi-induced phenotypes are to be attributed to on-target effects that predict the activity of advanced small-molecule inhibitors in vivo.
 
@@ -60,7 +84,7 @@ Together, these studies establish ARTi as a versatile and precise LOF method for
 
 ## Materials and methods
 
-## Design and cloning of ARTi shRNAs
+### Design and cloning of ARTi shRNAs
 
 To design pairs of artificial shRNAs and matching target sites that trigger effective and selective target suppression with minimal off-target effects, nucleotide composition of shRNAs that reach exceptionally high-performance scores in a well-established siRNA prediction tool (DSIR [Designer of Small Interfering RNA]; Vert et al., 2006) and contain no A or T in guide position 20 to eliminate shRNAmirs that produce RISC-loadable small RNAs from the passenger strand were analyzed. To establish the criteria for ARTi design, siRNA predictions for the human and mouse genome were retrieved from DSIR (Vert et al., 2006) using default parameters. Top-scoring predictions (DSIR score >105) harboring G or C in position 20 were analyzed for nucleotide biases, which were used to define basic design criteria at the 5′-end the 3′-half. Next, possible off-targets were minimized using siSPOTR (Boudreau et al., 2013), an siRNA-based prediction tool that assesses off-target potential of different siRNA seed sequences (guide positions 2–8) in the human and mouse genome. Seed sequences with the lowest predicted off-target activity (top 1%) showed biases for C and/or G in guide positions 2–6, but 23% contained a T at the 5′ end of the seed sequence that is required in our design (Figure 1B). Among these, we observed particularly strong biases for CG in the following two positions (Figure 1B), which were found in 73% of all seed sequences harboring a 5′ T. Overall, 17% of all top-scoring seed sequences harbored TCG at their 5′ end, making it the second most common triplet (after CGC, which was found in 20%). Based on these analyses, we fixed the first four nucleotides of the guide to TTCG. For the following positions, we reasoned that introducing additional GC biases would destroy 5′–3′ asymmetry of small RNA duplexes that is critically required for efficient RISC loading. To maintain sufficient asymmetry, we therefore decided to bias the next three positions toward A or T, which in most positions is in alignment with nucleotide biases associated with knockdown efficacy.
 
@@ -86,17 +110,17 @@ Insertion after the STOP codon:
 
 shRNAs were ordered as single-stranded DNA Ultramer oligonucleotides (Integrated DNA Technologies), amplified by PCR and cloned into different retroviral or lentiviral miRE/miRF shRNAmir expression vectors (LT3GFPIR Fellmann et al., 2013) using EcoR/XhoI restriction digest or Gibson assembly.
 
-## Cell culture
+### Cell culture
 
 Human HCT 116 cells (ATCC: CCL-247) were cultured in RPMI 1640 medium (Thermo Fisher) and PC-9 cells in McCoy’s 5A medium (Thermo Fisher), supplemented with 10% FBS and 1x GlutaMAX (Thermo Fisher). RKO (ATCC: CRL-2577) and MOLM-13 cells (DSMZ: ACC 584) were cultured in RPMI 1640, supplemented with 10% FBS (Sigma-Aldrich), 4 mM L-glutamine (Thermo Fisher), 1 mM sodium pyruvate (Sigma-Aldrich), and penicillin/streptomycin (100 U ml−1/100 μg ml−1, Sigma-Aldrich). HT-1080 (ATCC: CCL-121) and LentiX lentiviral packaging cells (Clontech, Cat# 632180) were cultivated in DMEM (Thermo Fisher) with 10% FBS, 4 mM L-glutamine, 1 mM sodium pyruvate, and penicillin/streptomycin (100 U ml−1/100 μg ml−1). MV4-11 cells (ATCC: CRL-9591) were cultured in IMDM with 10% FBS, 4 mM L-glutamine, 1 mM sodium pyruvate, and penicillin/streptomycin (100 U ml−1/100 μg ml−1).
 
 Murine MLL-AF9OE, NrasG12D AML cells (RN2; Zuber et al., 2011) were cultured in RPMI 1640 medium supplemented with 10% FBS, 20 mM L-glutamine, 10 mM sodium pyruvate, 10 mM HEPES (pH 7.3), penicillin/streptomycin (100 U ml−1/100 μg ml−1), and 50 μM β‐ME. KrasG12D, Trp53-/-, MYCOE PDAC cells (EPP2), SV40 large T antigen immortalized mouse embryonic fibroblasts (RRT-MEF; Fellmann et al., 2011), and NIH/3T3 (ATCC: CRL-1658) were cultured in DMEM supplemented with 10% FBS, 20 mM glutamine, 10 mM sodium pyruvate, and penicillin/streptomycin (100 U ml−1/100 μg ml−1). MIA PaCa-2 (ATCC: CRL-1420) and GP2d (Ecacc: 95090714) cells were cultured in DMEM supplemented with 10% FBS. Ba/F3 (DSMZ: ACC300) cells were cultured in RPMI 1640 medium supplemented with 10% FBS, 10 ng ml-1 IL-3 (R&D Systems), and Ls513 cells were cultured in RPMI 1640 medium supplemented with 10% FBS. All cell lines were maintained at 37°C with 5% CO2, routinely tested for mycoplasma contamination, and authenticated by short tandem repeat analysis.
 
-## Reporter assay
+### Reporter assay
 
 SFFV-GFP-P2A-Puro-ARTi-target sensor was cloned into pRSF91 retroviral plasmid (Galla et al., 2011) using Gibson assembly. RRT-MEFs were transduced with retroviruses expressing a GFP-reporter harboring the target sites for validated shRNAs and one ARTi-shRNA in its 3′-UTR. For each reporter cell line, single cells were FACS-sorted into 96-well plates using a FACSAria III cell sorter (BD Biosciences) to obtain single-cell-derived clones. These clones were transduced with retrovirus constructs in pSin-TRE3G-mCherry-miRE-PGK-Neo (TCmPNe) backbone expressing either the respective dox-inducible ARTi shRNA or validated shRNAs and mCherry fluorescence marker. shRNA expression was induced with dox and GFP levels were quantified via flow cytometry 2 d post induction. Knockdown efficiency was calculated as 1 minus the ratio of mean GFP signal in mCherry+ (shRNA+) cells over mCherry- cells and normalized to Renilla luciferase specific neutral control shRNA (Ren.713).
 
-## Competitive proliferation assay
+### Competitive proliferation assay
 
 To investigate the effect of ARTi constructs in the absence of the endogenous target gene, competitive proliferation assays were performed in several human and murine cell lines. Human HT-1080, RKO, MOLM-13, and MV4-11 cell lines were lentivirally transduced with shRNAmir expression constructs cloned into pRRL-SFFV-GFP-miRF-PGK-Neo (SGFN) backbone at 20–60% efficiency. Initial infection efficiency was determined at day 4 post transfection (day 0) by measuring GFP expression as a readout using iQue Screener Plus flow cytometer (IntelliCyt). Percentage of shRNA+ cells (GFP positive) was monitored by flow cytometry in regular intervals, and results were normalized to day 0.
 
@@ -104,33 +128,33 @@ Human GP2d, Ls513, and MIA PaCa-2 cell lines were lentivirally transduced with s
 
 Murine NIH-3T3, EPP2, and RN2 cells were retrovirally transduced with shRNAmir constructs cloned into pMSCV-miR-E-PGK-Neo-IRES-mCherry backbone (LENC; Addgene plasmid #111163), and initial infection levels were determined by flow cytometry based on mCherry expression 4 d post transduction (day 0).
 
-## Crystal violet staining
+### Crystal violet staining
 
 To visualize ARTi-shRNAmir’s effect, crystal violet staining assays were performed. 25,000 HCT 116 cells and 15,000 PC-9 cells per well were seeded in a 6-well plate containing 2 ml tetracycline-free growth medium and 1 µg ml-1 dox. Medium was exchanged every 2–3 d. After 9 d, wells were washed with ice-cold PBS and subsequently stained with 1 ml of 2.3% crystal violet solution for 10 min. Subsequently, wells were washed with ultrapure water and dried overnight. Images were obtained with a scanner.
 
-## Transcriptional profiling
+### Transcriptional profiling
 
 For the unbiased identification of ARTi shRNA off-targets, RKO and HT-1080 shRNA+ cells from the competition proliferative assay experiment were selected with Geneticin/G418 Sulfate (Gibco) for 7 d and checked for GFP expression. On day 7, one arm of the empty vector control group was treated with IC50 concentration of trametinib (MedChem Express: HY-10999) for 24 hr based on the data in the Genomics of Drug Sensitivity in Cancer database (https://www.cancerrxgene.org; Yang et al., 2013). Subsequently, cells were trypsinized, washed with ice-cold PBS, pelleted, and snap frozen. Total RNA was isolated using in-house magnetic beads kit and King Fisher Duo Prime Purification System (Thermo Fisher). NGS libraries were prepared with QuantSeq 3' mRNA-Seq Library Prep Kit (FWD) HT for Illumina (Lexogen) and UMI Second Strand Synthesis Module for QuantSeq FWD (Lexogen). Samples were sequenced on Illumina NovaSeq platform with 100 bp single-read protocol.
 
 Engineered MIA PaCa-2 and PC-9 cells were cultured in the presence of 1 µg ml-1 dox to induce expression of the ARTi shRNA. dox-containing media were replenished twice weekly and on days 4 and 8 after the initial treatment. 2 × 106 dox-treated and untreated control cells were harvested, washed with PBS, lysed, treated with DNAse I (QIAGEN), and total RNA was extracted using the RNeasy Mini Kit (QIAGEN). NGS libraries were prepared as above. Samples were sequenced on an Illumina NextSeq 2000 platform with a 75 bp protocol.
 
-## Bioinformatic analyses of 3′ mRNA-seq
+### Bioinformatic analyses of 3′ mRNA-seq
 
 For 3′ mRNA-seq reads derived from the human cell lines HT-1080 and RKO, the 6-nt-long 5′ UMIs were attached to each read name with umi-tools (v1.0.0; Smith et al., 2017). Subsequently, the UMIs plus the next four nucleotides (UMI spacer), as well as 3′ adapters (stringency of 3) and bases with low quality (threshold of 25) were trimmed away using cutadapt (v1.18; Martin, 2011) and its wrapper tool trimgalore (v0.6.2). Read quality control was performed with FastQC (v0.11.8). The remaining reads were sample-wise aligned to the human (GRCh38.p13; GCA_000001405.28) reference genome. Mapping and subsequent filtering of 3′-UTR mapped reads was performed with slamdunk (v0.4.3; Neumann et al., 2019) in QuantSeq mode (slamdunk map -5 12 -n 100 -q). 3′ UTR regions were assembled based on the description in Muhar et al., 2018. Aligned and filtered reads were deduplicated with umi-tools (v1.0.0) (Housden et al., 2017), based on the mapping coordinate and the UMI attached to the read name, prior to quantifying read abundances within 3′-UTR regions using feature Counts (v2.0.1; Liao et al., 2014). Differential expression analysis (DEA) was performed with DESeq2 (v1.30.1; Love et al., 2014) for each ARTi shRNA to empty vector control. Here, the number of up- and downregulated genes were calculated by filtering the DEA results for genes with a log2 fold-change ≥2 (up) or ≤2 (down) and a -log10 p-value ≥5. Principal component analysis was performed on the 1000 most variable expressed genes with the prcomp function from the stats (v4.2.0) R package.
 
 For transcriptional profiling of the human cell lines MIA PaCa-2 and PC-9, the genome reference file and annotations were constructed based on the GRCh38 assembly and the Ensembl 86 version, respectively. The sequences of the shRNA construct (ARTi.6570 [RN_v_76, RN_v_118]) as well as the EGFRdel19::V5::dsRed::ARTi (RN_v_108) and the dsRed::Linker::KRASG12R-ARTi (RN_v_287) were also included. Mapping of the sequencing reads derived from the human cell lines was performed with STAR (v2.5.2b; Dobin et al., 2013) aligner allowing for soft clipping of adapter sequences. Quantification of read counts to transcript annotations was implemented using RSEM (v1.3.0; Li and Dewey, 2011) and featureCounts (v1.5.1; Liao et al., 2014). Normalization of read counts and differential analysis was implemented with the limma (Ritchie et al., 2015) and voom (Law et al., 2014) R packages.
 
-## Genome engineering of EGFR in PC-9 and Ba/F3
+### Genome engineering of EGFR in PC-9 and Ba/F3
 
 Genome engineering of PC-9 cells was done as previously described (Wilding et al., 2022). In brief: PC-9_RIEN cells were transduced with an ecotropic pMSCV-EGFRdel19_V5_dsRed_ARTi-PGK-Blasticidin retrovirus cloned at GenScript and produced in Platinum E cells (Cell Biolabs) in the presence of 8 μg ml-1 Polybrene (Merck Millipore). After 24 hr, stable transgenic cell pools were selected using 10 µg ml-1 Blasticidin (Sigma-Aldrich). Subsequently, cells were diluted to obtain single cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and analyzed by western blot. Identified homozygous PC-9_ EGFRdel19-ARTi clones were further engineered by cutting endogenous EGFR with a CRISPR all-in-one vector pX458_Exon20_gRNA TAGTCCAGGAGGCAGCCGAA (GenScript) using X-tremeGENE 9 DNA transfection reagent (Roche) according to the protocol supplied by the vendor. 48 hr after transfection, GFP-positive cells were sorted by FACS (SONY cell sorter S800Z) and diluted to obtain single-cell clones. Positive clones, which contained only the exogenous EGFRdel19-ARTi, but not the endogenous EGFR, were identified by western blot. Next, the selected EGFR clone was transduced with a pantropic LT3GEPIR_Puro_ARTi-shRNA TTCGATAACAATATCATCCGGA retrovirus cloned at GenScript, China, and produced via the Lenti-X Single Shot system (Clontech). 72 hr later, stable transgenic cell pools were selected using 0.5 µg ml-1 Puromycin (Sigma-Aldrich). Following the selection, cells were diluted to obtain single cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and induced via 1 µg ml-1 dox. Positive clones were characterized by a strong GFP-induction that was identified by flow cytometry.
 
 Ba/F3 cells were transduced with an ecotropic pMSCV-EGFRdel19_V5_dsRed_ARTi-PGK-Blasticidin retrovirus cloned at GenScript and produced in Platinum E cells in the presence of 4 μg ml-1 Polybrene. After 72 hr, stable transgenic cells were selected by using 50 µg ml-1 Blasticidin, without adding IL-3.
 
-## Genome engineering of KRAS in MIA PaCa-2
+### Genome engineering of KRAS in MIA PaCa-2
 
 MIA PaCa-2 ARTi-shRNAmir-expressing cells were transduced with an ecotropic pMSCV-dsRed::KRASG12R-ARTi-PGK-Blasticidin retrovirus cloned at GenScript, China, and produced in Platinum E cells in the presence of 8 μg ml-1 Polybrene. After 24 hr, stable transgenic cell pools were selected using 10 µg ml-1 Blasticidin. Subsequently, endogenous KRAS was knocked out by transient transfection of three gRNAs targeting exon 2, and the region containing the G12C variant (present in MIA PaCa-2 cells) was used in a co-transfection (gRNA#3: GAATATAAACTTGTGGTAGT; gRNA#6: CTTGTGGTAGTTGGACTTG; gRNA#7: GTAGTTGGAGCTTGTGGCGT). Knockout clones were identified by the absence of the endogenous KRAS protein using western blot.
 
-## Genome engineering of STAG1/STAG2 in HCT 116
+### Genome engineering of STAG1/STAG2 in HCT 116
 
 HCT 116 cell line was engineered by cutting STAG1 with gRNAs targeting the region close to the STOP codon. Guide RNAs TTCTTCAGACTTCAGAACAT or CTGAAGAAAATTTACAAATC were cloned into the pSpCas9(BB)–2A-GFP plasmid (pX458; Addgene plasmid 48138) and used in a co-transfection. Simultaneously, a STAG1_AID_V5_P2A_Blasti_STOP_ARTi repair template with 800 bp of left and right homologous arms of the STAG1 genomic locus (in pUC57-Simple backbone) was transfected into HCT 116 cells using Lipofectamine 3000 transfection reagent (Thermo Fisher) according to the manufacturer’s instructions. A stable transgenic cell pool was selected 48 hr after transfection using 5 µg ml-1 Blasticidin and diluted to obtain single-cell clones. Positive clones were identified by western blot.
 
@@ -138,15 +162,15 @@ Identified homozygous HCT 116_STAG1_ARTi clones were further engineered by disru
 
 Next, the selected HCT 116 clone was transduced with a pantropic LT3GEPIR_Puro_ARTi-shRNA TTCGATAACAATATCATCCGGAretrovirus cloned at GenScript, China, and produced via the Lenti-X Single Shot system (Clontech). 72 hr later, stable transgenic cell pools were selected using 2 µg ml-1 Puromycin (Sigma, P9620). Following the selection, cells were diluted to obtain single-cell clones. After 14 d of culture, single cell-derived colonies were transferred to 6-well plates and induced via 1 µg ml-1 dox. Positive clones were characterized by a strong GFP-induction that was identified by flow cytometry.
 
-## Western blot
+### Western blot
 
 The following primary antibodies were used for immunoblot analyses: EGFR (Cell Signaling, #4267); STAG1 (GeneTex, GTX129912); STAG2 (Bethyl, A300-159A); b-actin (Sigma, A5441); KRAS (LSbio, LS-C17566); and V5 (Sigma, V8012). PC-9, MIA PaCa-2, and HCT 116 cell pellets harboring EGFR, KRAS, and STAG1/STAG constructs respectively were lysed in Triton X-100 lysis buffer, sonicated, and stored at –80°C. For protein detection, the pellets were thawed on ice, followed by 15 min centrifugation at 13,000 rpm and 4°C. Furthermore, cell lysates were loaded onto a pre-casted SDS–polyacrylamide gel (4–12%) and proteins were transferred onto a nitrocellulose or PVDF membrane. Membranes were probed with the respective primary antibodies overnight. The next day, secondary antibodies conjugated with fluorescent dye were added and the proteins were detected by the Odyssey detection system.
 
-## Compound treatment
+### Compound treatment
 
 To investigate sensitivity to EGFR-targeting compounds, cell viability was determined using the Cell Titer Glo assay (Promega). For this purpose, 10 mM stock solutions in DMSO of afatinib (Li et al., 2008), osimertinib (Liu et al., 2018; Soria et al., 2018; Liu et al., 2018), and poziotinib (Kim et al., 2019; Robichaux et al., 2019) were used. 5000 cells per well were seeded in 150 µl of the medium in technical triplicates in 96-well plates and incubated at 37°C and 5% CO2 for 5 hr, followed by the compound addition. Cells were treated with seven different concentrations of inhibitors in a serial eightfold dilutions starting with the highest concentration of 3 µM. For comparability, DMSO normalization to the highest added volume was performed. Subsequently, cells were cultivated for 96 hr at 37°C and 5% CO2. 50 µl of Cell Titer Glo reagent was added to each well, incubated for 10 min in the dark, and luminescence was measured using the multilabel Plate Reader VICTOR X4. The measurement time was set to 0.2 s. Luminescence values relative to DMSO-treated cells were plotted in GraphPad Prism and fitted using nonlinear regression with a variable slope to calculate IC50 values at 50% inhibition. MIA PaCa-2 KRAS G12C inhibitor (AMG-510) (Fakih et al., 2020; Lanman et al., 2020; Fakih et al., 2019) treatments were performed as described for EGFR with the following modifications: 2000 cells per well and 0.5 nM to 3 µM concentration range of AMG-510.
 
-## In vivo experiments
+### In vivo experiments
 
 The PC-9 EGFR k.o., EGFRdel19::ARTi study was performed at the AAALAC-accredited animal facility of CrownBio Leicestershire, UK. Female NSG (NOD.Cg-PrkdcscidII2rgtm1wjl/SzJ) Crl mice were obtained from Charles River. The age of animals at study initiation was 7–8 wk and had an acclimatization period of ≥14 d. Mice were group-housed in IVCs. The study complies with the UK Animals Scientific Procedures Act 1986 (ASPA) in line with Directive 2010/63/EU of the European Parliament and the Council of September 22, 2010, on the protection of animals used for scientific purposes.
 
@@ -158,10 +182,122 @@ To establish subcutaneous tumors, mice were injected with 2 × 106 HCT 116 in PB
 
 Tumor diameters were measured with a caliper three times a week. The volume of each tumor (in mm3) was calculated according to the formula ‘tumor volume = length * diameter2 * π/6.’ Mice were randomized into the treatment groups when tumor size reached between ~130 and 190 mm3. Group sizes were calculated for each tumor model based on tumor growth during model establishment experiments. A power analysis was performed using a sample size calculator (https://www.stat.ubc.ca/~rollin/stats/ssize/n2.html). For all models used in the studies, 10 mice per group were used. 2 mg ml-1 doxycycline hyclate (Sigma) and 5 mg ml-1 sucrose were added to the drinking water of the treatment groups, the control group received water with 5 mg ml-1 sucrose only. Osimertinib (Tagrisso, AstraZeneca, 40 mg tablet) was dosed per os daily at a dose of 25 mg kg-1 in Natrosol, and control mice were dosed per os daily with Natrosol. To monitor side effects of treatment, mice were inspected daily for abnormalities and body weight was determined three times per week. Animals were sacrificed when the tumors reached a size of 1500 mm3. Food and water were provided ad libitum. In vivo experiments were not repeated.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Xenograft samples were fixed in 4% formaldehyde for 24 hr and embedded in paraffin. 2-µm-thick sections were cut using a microtome. STAG1 was stained with Polink 2 Plus HRP rat NM detection system (GBI Labs #D46-6) according to the manufacturer’s instructions using a recombinant rat monoclonal STAG1 antibody (Abcam ab241544, Lot:GR3334172-1; 1:200) after cooking 10 min at 110°C in antigen unmasking solution (Vector #H3301). After staining, the slides were digitalized (scanner: Leica Aperio AT2). All slides were reviewed and evaluated for quality by a board-certified MD pathologist. Imaging analysis was performed using the digital pathology platform HALO (Indica Labs). A tissue-classifying algorithm was trained to selectively recognize viable tumor tissue against stroma, necrosis, and skin. The tissue classification output for each scan was reviewed and manually edited as necessary. A cell detection and scoring algorithm was trained to measure DAB optical density (OD) in the nuclei of tumor cells. A positivity threshold for DAB OD was determined by normalization with respect to the DAB OD as calculated from bona fide negative tissue (e.g., murine stroma as background). The object data for background-normalized nuclear ODs for each tumor cell were exported from three control and three doxycycline-treated cases (207945 and 33331 pooled objects, respectively). The cumulative distribution of the background-normalized DAB OD for each tumor cell nucleus was then plotted for control and doxycycline-treated cases, separately (Figure 2K).
 
-## Cell lines
+### Cell lines
 
 All newly generated ARTi cell lines are available upon request. The following parental cell lines were used:
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell line name</th>
+      <th>Species</th>
+      <th>Supplier name</th>
+      <th>Catalog number</th>
+      <th>Clone number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PC-9</td>
+      <td>Human</td>
+      <td>ECACC</td>
+      <td>90071810</td>
+      <td>Lot# 14A030</td>
+    </tr>
+    <tr>
+      <td>MIA PaCa-2</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CRL-1420</td>
+      <td>Lot# 1350798</td>
+    </tr>
+    <tr>
+      <td>HT 1080</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CCL-121</td>
+      <td>Lot# 63835574</td>
+    </tr>
+    <tr>
+      <td>HCT 116</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CCL-247</td>
+      <td>Lot# 6028631</td>
+    </tr>
+    <tr>
+      <td>RKO</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CRL-2577</td>
+      <td>Lot# 59354083</td>
+    </tr>
+    <tr>
+      <td>MV4-11</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CRL-9591 (old number)</td>
+      <td>Lot# 58352230</td>
+    </tr>
+    <tr>
+      <td>MOLM-13</td>
+      <td>Human</td>
+      <td>DSMZ</td>
+      <td>ACC 554</td>
+      <td>Lot# 11</td>
+    </tr>
+    <tr>
+      <td>NIH-3T3</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CRL-1658</td>
+      <td>Lot# 63292276</td>
+    </tr>
+    <tr>
+      <td>EPP2</td>
+      <td></td>
+      <td>KrasG12D, Trp53-/-, MYCOE PDAC cells (EPP2)</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>RN2</td>
+      <td>Murine</td>
+      <td>MLL-AF9OE, NrasG12D AML cells (RN2; Zuber et al., 2011)</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Gp2d</td>
+      <td>Human</td>
+      <td>ECACC</td>
+      <td>95090714</td>
+      <td>Lot# 11E013</td>
+    </tr>
+    <tr>
+      <td>Ls513</td>
+      <td>Human</td>
+      <td>ATCC</td>
+      <td>CRL-2134</td>
+      <td>Lot# 57761342</td>
+    </tr>
+    <tr>
+      <td>Ba/F3</td>
+      <td>Murine</td>
+      <td>DSMZ</td>
+      <td>ACC300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>293T-Lenti-X</td>
+      <td>Human</td>
+      <td>Clontech</td>
+      <td>632180</td>
+      <td>Lot# 1404558A</td>
+    </tr>
+  </tbody>
+</table>

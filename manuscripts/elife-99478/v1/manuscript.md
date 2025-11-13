@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04cvxnb49 Goethe University Frankfurt, Institute of Medical Psychology Frankfurt am Main Germany
-2. https://ror.org/04cvxnb49 Goethe University Frankfurt, Cooperative Brain Imaging Center Frankfurt am Main Germany
+1. Goethe University Frankfurt, Institute of Medical Psychology Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
+2. Goethe University Frankfurt, Cooperative Brain Imaging Center Frankfurt am Main Germany ([ROR:04cvxnb49](https://ror.org/04cvxnb49))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ Until now, a direct reflection of the attractive bias of current information on 
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 Ten human participants (seven females) memorized two sequentially presented visual objects per trial (S1 and S2), while their neural signals were measured via MEG. Each participant completed two sessions with a total of 1022 trials. The objects were colored dot fields, and participants had to remember the motion direction of the dots. After a short delay, one of the motion directions was cued via the dot color (red or green, Figure 1a). As expected, we observed a serial dependence toward the target of the previous trial, as the reported target motion direction of the current trial was systematically attracted to the retro-cued motion direction of the previous trial. This attraction (Figure 1b) followed a derivative-of-Gaussian (DoG)-shaped curve with an amplitude parameter of 3.51° (bootstrapped SD: 0.479°, lower 95% of permutations between –3.51° and 2.03°, p < 0.001, R2 = 0.236) and a w parameter of 0.024, equaling a width of 47.37° (full width at half maximum, FWHM). We ran one-sided permutation tests (n = 10) to assess whether this attraction differed from zero. In contrast, we did not observe a significant serial dependence toward the non-target of the previous trial (amplitude: –1.02°, bootstrapped SD: 0.788°, middle 95% of permutations between –1.63 and 1.49, p = 0.206, R2 = 0.014; w parameter: 0.046, equaling 24.53° FWHM), which replicated our previous observations (Czoschke et al., 2019; Fischer et al., 2020).
 
@@ -39,13 +39,13 @@ Ten human participants (seven females) memorized two sequentially presented visu
 
 We also estimated serial dependence between the current and the previously cued object with regard to their color congruence. Serial dependence was modulated by task-relevant color. It was stronger when the current item had the same color as the cued item of the previous trial (amplitude = 4.02°, SD = 0. 528°, lower 95% of permutations between –3.70° and 2.41°, p < 0.001, R2 = 0.167) than when their colors differed (amplitude = for all three epochs, we observed 2.99°, SD = 0. 538°, lower 95% of permutations between –2.99° and 1.79°, p = 0.001, R2 = 0.106). The amplitude difference amounted to 1.02°, p = 0.038. This replicated the context effect found in our previous study (Fischer et al., 2020). The behavioral results thus showed that our two-item working memory task, performed during an MEG recording, produced reliably an attractive bias between target items across trials.
 
-## MEG results
+### MEG results
 
 We applied an IEM (Brouwer and Heeger, 2009; Brouwer and Heeger, 2011; Sprague and Serences, 2013) to the MEG data from all active sensors (271) within defined time windows of 100 ms length. MEG data were recorded in two sessions on different days. Specifically, we constructed an encoding model with 18 motion direction-selective channels. Each channel was designed to show peak sensitivity to a specific motion direction, with gradually decreasing sensitivity to less similar directions. In a training step, the encoding model was fitted to the MEG data of one session to obtain a weight matrix that indicates how well the sensor activity can be explained by the modeled direction. In the testing step, the weight matrix was inverted and applied to the MEG data of the other session, resulting in a response profile of ‘reconstruction strengths’, that is, how strongly each motion direction was present in a trial. When a specific motion direction was present in the MEG signal, the reconstruction strengths peaked at that specific direction and decreased with increasing direction difference. If no information was present, reconstruction strengths were comparable across all modeled directions, that is, the response profile was flat. To integrate response profiles across trials, single-trial profiles were aligned to a common center direction (i.e., 180°) and then averaged.
 
 To quantify the accuracy of each IEM reconstruction, that is, how well the response profile represents a specific motion direction relative to all other directions, we computed the ‘reconstruction fidelity’. Fidelity was obtained by projecting the polar vector of the reconstruction at every direction angle (in steps of 1°) onto the common center (180°) and averaging across all direction angles (Rademaker et al., 2019; Sprague et al., 2016). As such, ‘reconstruction fidelity’ is a summary metric with fidelity greater than zero indicating an accurate reconstruction (see Methods for details).
 
-## Reconstruction of the remembered directions per epoch
+### Reconstruction of the remembered directions per epoch
 
 First, we estimated how well we could reconstruct the motion direction of both current items throughout the current trial. For this aim, we divided the current trial into three epochs, including the encoding and maintenance epochs of S1 and S2 (termed S1 and S2 epochs, respectively) and the retro-cue epoch. Specifically, during the S1 epoch, we reconstructed the direction of S1, during the S2 epoch, we reconstructed the direction of S2, and during the retro-cue epoch, we reconstructed the motion direction of the currently retro-cued S1 or S2 (current target). Our reconstruction procedure used the stimulus information during the training step by modeling the presented or memorized directions with the chosen encoding model and fitting them to the MEG data from the corresponding epoch in one MEG session by creating a weight matrix. Then the inverted weight matrix was applied to independent testing MEG data from the corresponding epoch in the other MEG session to reconstruct the direction information, which was then aligned on a single-trial level to a common center with regard to the presented or memorized direction. For example, to reconstruct S1 direction during the S1 epoch, the model was trained on data from the S1 epoch in one MEG session and applied to the S1 epoch of the other MEG session (see Methods for details).
 
@@ -63,11 +63,11 @@ For completeness, we also reconstructed the direction of S1 during the S2 epoch,
 
 Furthermore, we tried to reconstruct the motion direction that was not retro-cued during the retro-cue epoch, that is, the non-target of a given trial that became task-irrelevant after the retro-cue. As expected, the information about the non-target item could not be reconstructed in the retro-cue phase (all cluster p-values >0.05).
 
-## Attractive shift of motion direction reconstructions as a direct signature of serial dependence
+### Attractive shift of motion direction reconstructions as a direct signature of serial dependence
 
 The main analysis of our study aimed to identify the neural signature of serial dependence. For this aim, we looked for an attractive bias of the reconstructed neural representations that mirrored the attractive behavioral bias by testing whether the mean of the significant reconstructions within the S1, S2, or retro-cue epochs showed positive shifts of their maxima from the common center of 180° toward the previous target (Figure 2c; see Methods for details). We found that the shift of the mean reconstruction of the first and second item did not differ from 0° for the S1 epoch (–2.83°, p = 0.743, bootstrapping test, pFDR = 0.870, 95% of permutations between –11.60° and 6.00°) or for the S2 epoch (–2.50°, p = 0.870, bootstrapping test, pFDR = 0.870, 95% of permutations between –7.57° and 2.11°), respectively. In contrast, for the retro-cue epoch, we found that the mean reconstruction of the current target was shifted toward the previous target (10.22°, p = 0.009, bootstrapping test, pFDR = 0.026, 95% of permutations between 1.64° and 21.97°; Figure 2c). In addition, there was an attractive shift of the S1 direction toward the target of the previous trial during the S2 epoch (11.69°, p < 0.001, bootstrapping test, 95% of permutations between 4.96° and 31.06°; Figure 3c). Thus, our MEG data provided evidence for an attractive distortion of current neural representations toward the target information in the previous trial, thereby revealing a direct neural signature of serial dependence.
 
-## Correlation between neural representation and behavioral response
+### Correlation between neural representation and behavioral response
 
 To assess whether the observed item reconstructions from the MEG signals were behaviorally relevant, we correlated them with the subjects’ behavioral responses. Specifically, we calculated the circular correlation between the maximum of the stimulus direction reconstructions and the response error for each time point and epoch separately across single trials, that is, we tested whether the shift/deviation of the neural response from the true value, for example, in the clockwise (CW) direction, was accompanied by a corresponding shift/deviation of the behavioral response.
 
@@ -81,7 +81,7 @@ For each time point, the shift of the maximum of the reconstructed direction in 
 
 The presented single trial-wise correlation between the neural shift and behavioral shift did not directly incorporate the behavioral bias toward the previous trial. Thus, in order to relate the neural attractive shift and the behavioral indicators of serial dependence more directly, we performed an additional correlation analysis on aggregated data on the between-subject level. In detail, we correlated the individual neuronal shift during the retro-cue epoch with the two individual parameter fits of the behavior shift, that is, amplitude (a) and tuning width (w). In line with the correlation analysis on single-trial level, the analysis on the between-subject level also revealed a significant correlation between the w parameter of serial dependence and the neural shifts for the retro-cue epoch. Details of this correlation analysis are displayed in Appendix 1.
 
-## Reactivation of the previous target direction
+### Reactivation of the previous target direction
 
 Finally, we used our IEM analysis approach to replicate previous results that have shown a reactivation of memory traces from the previous trial before the stimulus presentation of the current trial (Barbosa et al., 2020). Specifically, we reconstructed the motion direction of the target from the previous trial during the 1 s of the ITI immediately preceding the current trial (Figure 5). Consistent with previous findings from monkey single cell and human EEG recordings (Barbosa et al., 2020), we observed that the information about the previous target was reactivated just prior to the onset of the next trial. Direction reconstructions showed a fidelity significantly greater than zero during a time period at the end of the ITI (p = 0.019, cluster extent: –200 to 100 ms (relative to S1 onset), mean fidelity = 0.069). Importantly, we also tracked the information of the previous target throughout the whole current trial to test whether it was reactivated also during the processing of the current items. Interestingly, we found that the target from the previous trial was reactivated once more, but at a later time period during the current trial, that is, when the retro-cue indicated which item of the current trial was the target for the upcoming response (p = 0.040, cluster extent: 2700–2900 ms relative to trial onset, mean fidelity = 0.057). In contrast, we found no evidence of previous target reactivations during the encoding or maintenance of current items (no clusters with a p-value <0.05).
 
@@ -91,7 +91,7 @@ Finally, we used our IEM analysis approach to replicate previous results that ha
 
 Additionally, in order to test whether a reactivation of the previous target could explain the neural attractive shift observed in the current trial, we reconstructed the motion direction of the previous target from MEG data recorded during the different epochs of the current trial. Specifically, we trained the encoding model either on the presented stimuli in the S1 and S2 epochs or on the currently relevant item during the retro-cue epoch, respectively, and tried to reconstruct the target direction of the previous trial within each epoch. We observed that there was no cross-reconstruction between the current and the previous representation during the retro-cue epoch, which indicates that the observed attractive shift of the current target reconstruction following the retro-cue was not driven by a reactivation of the previous target in the same neural code. However, during the beginning of the S2 epoch, we observed a significant cross-reconstruction, that is, previous target reactivation co-occurred with the reconstruction of S2 while it was presented to the subjects. The complete analysis and results are described in Appendix 1.
 
-## Eye movement control
+### Eye movement control
 
 To control for influences of eye movements on the MEG data, we recorded horizontal and vertical electrooculograms to identify blinks and eye-movement-related independent components of the MEG data that were removed during our MEG preprocessing (see Methods). In addition, we also recorded continuous gaze position with a higher spatial resolution using an eye tracker. We used the eye-tracking data to estimate whether there was a systematic relationship between eye movements and the motion direction of currently processed items in the S1, S2, or retro-cue phases. We found that gaze directions were systematically related to presentation and memorization of the stimulus direction (S1 and S2 epoch) and its cue-based retrieval (retro-cue phase). They also varied considerably between subjects. Most importantly, gaze directions were not systematically related to the MEG data, thus ruling out that they had mainly driven our MEG results. The details of the eye movement control analysis are displayed in Appendix 1. Importantly, the central finding of our study is that serial dependence emerged at a later post-encoding stage of object processing in working memory, irrespective of any possible eye movements.
 
@@ -123,21 +123,115 @@ In summary, our study provides a direct neural signature of serial dependence th
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
 
-## Subjects
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB, 2019</td>
+      <td>https://www.mathworks.com/</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circular statistics</td>
+      <td>https://de.mathworks.com/matlabcentral/fileexchange/10676-circular-statistics-toolbox-directional-statistics</td>
+      <td>RRID:SCR_016651</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BADS</td>
+      <td>Acerbi and Ma, 2017</td>
+      <td>https://arxiv.org/abs/1705.04405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EzyFit v2.44</td>
+      <td>https://de.mathworks.com/matlabcentral/fileexchange/10176-ezyfit-2-44</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 38</td>
+      <td>https://www.anaconda.com/docs/main</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spyder v.4.1.5</td>
+      <td>https://www.spyder-ide.org/</td>
+      <td>RRID:SCR_017585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>autoreject v0.2.2</td>
+      <td>https://autoreject.github.io/stable/index.html</td>
+      <td>RRID:SCR_022515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MNE software v0.22.0</td>
+      <td>https://mne.tools/stable/index.html</td>
+      <td>RRID:SCR_005972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NumPy v1.19.2</td>
+      <td>https://numpy.org/</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pandas v1.1.3</td>
+      <td>https://pandas.pydata.org/</td>
+      <td>RRID:SCR_018214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy v1.5.2</td>
+      <td>https://scipy.org/</td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
+
+#### Subjects
 
 Thirteen participants were recruited from the Goethe-University Frankfurt and the Fresenius University of Applied Sciences Frankfurt. All subjects reported normal or corrected-to-normal vision and were screened for red–green blindness. One subject participated as a pilot subject for only one MEG session, one subject was excluded after the first behavioral training session because of dependency on glasses, and one subject dropped out after the first MEG session due to exhaustion because of the MEG setting. This resulted in a sample of 10 subjects (3 male), aged between 22 and 30 years (mean: 25.2 years). All subjects gave informed consent and received either a compensation of €10/hr or course credit. The study was approved by the Ethics Committee of the Medical Faculty of the Goethe-University Frankfurt am Main.
 
 The choice for the sample size was based on a priori power calculation. At the time of the sample size calculation, there were no comparable EEG or MEG studies to inform our power calculation. Thus, we based our calculation on a robust serial dependence effect that we found in a behavioral study including four different experiments with overall more than 100 participants with 1632 trials each (Fischer et al., 2020). Based on the contrast between target and non-target with an effect size of 1.359 in Experiment 1, a power analysis with 80% desired power led to a small, estimated sample size of six subjects. However, we expected that the detection of the neural signature of this effect would require more participants. Thus, we based our final power calculation on a much smaller behavioral effect, that is, the modulation of serial dependence by the context-feature congruency. We focused again on the results from Experiment 1 of our previous study that used color as the context feature for retro-cueing (Fischer et al., 2020), as we planned to use the same paradigm for the MEG study. This color congruency effect resulted in a more conservative power estimate: Based on an effect size of 0.856 in that experiment, a sample size of n = 10 should yield a power of 80% with two MEG sessions per subject.
 
-## Experimental paradigm
+### Experimental paradigm
 
-## Stimuli
+#### Stimuli
 
 Random dot patterns (RDP) were presented centrally on the screen and consisted of 200 dots colored in red (RGB: 255, 0, 0) or green (RGB: 0, 86.4105, 0) on a black background. The green was adjusted to match the luminance of the red in DKL color space and then transferred back to RGB space. The dots were presented within an invisible circular aperture which had a radius of 7.5° of visual angle. The dots had a diameter of 0.15° of visual angle and were placed randomly within the circular aperture of the RDP at stimulus onset. The dots moved with a velocity of 3.5°/s and were fully coherent in a direction randomly drawn from a pool of directions between 5° and 355° spaced 10° from one another, therefore avoiding cardinal directions. Dots reaching the edge of the aperture were repositioned randomly on the edge of the opposing side of the aperture, so that dot density was kept constant throughout the presentation. Throughout the whole experiment, a white fixation square with a diagonal of 0.15° of visual angle was presented centrally on the screen, except for the cue presentation, when the fixation square changed its color to red or green to cue which item should be reported. The item was reported by adjusting a randomly oriented line to match the reported direction. The response line was white, with a width of 0.6° and a length equaling the dot field radius. The starting point of the line was the fixation square, and the end point could be altered so that the line could point in all possible directions.
 
-## Procedure
+#### Procedure
 
 The experiment consisted of a delayed-estimation task. Specifically, each trial began with the presentation of the first stimulus (S1) for 200 ms followed by a noise mask for 100 ms consisting of dots moving with 0% coherence (i.e., randomly) and of the same color as the preceding RDP. After a 1000-ms interval (ISI), the second stimulus (S2) and its noise mask were presented for 200 and 100 ms, respectively (Figure 1). Subjects were asked to memorize the motion direction of both RDP for a delay of 1000 ms. Then the fixation square changed its color to red or green for 1500 ms, thereby cueing which motion direction became a target item and had to be reported. Immediately after cue offset, a randomly oriented line was presented. Subjects had to report the target motion direction by rotating the line by moving an MEG-compatible track ball horizontally. No time limit was given for the response, and subjects were encouraged to work as precisely as possible. After adjusting the line direction, subjects had to confirm their response by pressing the left trackball button. At the end of each trial, a fixation screen of 2000–2500 ms (jittered in steps of 10 ms, randomized) was presented. Subjects were instructed to fixate the fixation square throughout the whole experiment.
 
@@ -147,66 +241,86 @@ Every subject completed 1022 trials in two sessions on different days. Each sess
 
 Prior to the two MEG sessions, each subject was invited for a behavioral practice session. This session consisted of eight blocks of the task and was therefore slightly longer than the MEG experiment. We screened the participants for red–green blindness, checked MEG and MRI contraindications, and instructed them in the behavioral task before participants started to practice the task. In addition to the feedback presented at the end of each block as in the MEG part of the study, subjects received trial-wise feedback in this first session. If their response deviated more than 30° from the cued motion direction, we presented feedback (‘>30°!’). Thereby they could practice to be as precise as possible for the MEG sessions.
 
-## MEG recording and preprocessing
+### MEG recording and preprocessing
 
-## Data acquisition
+#### Data acquisition
 
 We recorded MEG with a whole-head MEG system (Omega 2005; VSM MedTech Ltd, Port Coquitlam, Canada) with 275 axial gradiometers (271 active) at a sampling rate of 1200 Hz and without online filtering. Additionally, we recorded electrocardiogram (ECG), vertical and horizontal electrooculograms (EOG) as well as continuous gaze position and pupil dilation of the right eye by an MEG-compatible eye tracker (Eyelink CL 1000, SR Research Ltd). Head position was continuously recorded via head localization coils placed at the nasion and above both ear canal entrances using ear plugs. The initial head position was saved at the beginning of the first MEG session and presented to the participants for repositioning at the beginning of the second session as well as throughout each session if repositioning was necessary. Behavioral responses were recorded with an MEG-compatible trackball (Current Designs Inc), enabling subjects to continuously recall motion directions.
 
-## Preprocessing
+### Preprocessing
 
 MEG data were preprocessed using the python-based M/EEG analysis toolbox MNE (version 0.22.0; Gramfort et al., 2013). The MEG signal was first notch filtered at 50 Hz and up to 250 Hz in steps of 50 Hz to remove line noise and then cut into trials from 1000 ms before S1 onset until 500 ms after response onset. Trials containing SQUID jump artifacts were manually identified and excluded. The remaining trials were then high-pass filtered (1 Hz) and decomposed via independent component analysis (ICA) with the FastICA method implemented in MNE. The decomposition was then applied to the notch-filtered continuous data, and ICs representing cardiac and ocular activity were identified via correlation with ECG and EOG signals. The notch-filtered continuous data were then low-pass filtered at 25 Hz and cut for the respective analysis. To analyze reactivations of the previous target direction, the data were cut into one long epoch (last second of the ITI up until the end of the retro-cue delay). For the analysis regarding the directions of the current trial, we used three epochs per trial: S1 encoding and maintenance (called S1 epoch), S2 encoding and maintenance (called S2 epoch), and retro-cue presentation and delay (called retro-cue epoch). The epochs started 200 ms before stimulus/retro-cue onset and lasted until 1500 ms after stimulus/retro-cue onset. For the S1/S2 epochs, only 1300 ms after stimulus onset were included in the analysis as those reflected the presentation + delay time. Those epochs were baseline-corrected (–200 to 0 ms), the previously identified ICs reflecting cardiac and ocular activity were removed, and the data resampled at 300 Hz.
 
-## Statistical analysis
+### Statistical analysis
 
-## Behavioral analysis
+#### Behavioral analysis
 
 First, we excluded trials in which the response error was at least 3 SDs higher than the subject’s mean response error, or in which the response time exceeded 20 s, indicating potential attentional lapses. We also excluded the first trial of each block, as serial dependence cannot occur on those trials, and demeaned the response errors by subtracting the overall mean response error of a participant from each individual response error to remove general individual response biases independent of serial dependence.
 
-The evaluation of serial dependence was based on individual response errors, defined as the deviation between presented and entered direction. The errors were sorted regarding the difference between the target stimulus of the current trial and the target stimulus from the previous trial, as well as the relation of difference between the current item and the item of the previous trial (CW or counter-clockwise [CCW]). The difference was computed by subtracting the direction of the current item from the direction of the item of the previous trial. Therefore, when the current item was oriented more CW or more CCW, this resulted in a negatively or positively signed distance, respectively. A mean response error for a signed distance (distance * relation) deviating from 0 indicated a systematic response bias. When the sign of this systematic bias matched the sign of the distance between the directions, it indicated an attractive response bias. Conversely, an opposite sign of the systematic bias compared to the signed distance indicated a repulsive response bias. In addition, the signed response errors were sorted according to the color congruence between the two items (same vs. different color). The individual mean response biases were used to evaluate the serial dependence per color congruence level. We fitted the first derivative of a Gaussian curve DoG; for example, (1), a model which is usually used to describe serial dependence. The DoG, given by(1)y=xawce−(wx)2\begin{document}$$\displaystyle y=xawce^{-\left (wx\right)^{2}}$$\end{document}
+The evaluation of serial dependence was based on individual response errors, defined as the deviation between presented and entered direction. The errors were sorted regarding the difference between the target stimulus of the current trial and the target stimulus from the previous trial, as well as the relation of difference between the current item and the item of the previous trial (CW or counter-clockwise [CCW]). The difference was computed by subtracting the direction of the current item from the direction of the item of the previous trial. Therefore, when the current item was oriented more CW or more CCW, this resulted in a negatively or positively signed distance, respectively. A mean response error for a signed distance (distance * relation) deviating from 0 indicated a systematic response bias. When the sign of this systematic bias matched the sign of the distance between the directions, it indicated an attractive response bias. Conversely, an opposite sign of the systematic bias compared to the signed distance indicated a repulsive response bias. In addition, the signed response errors were sorted according to the color congruence between the two items (same vs. different color). The individual mean response biases were used to evaluate the serial dependence per color congruence level. We fitted the first derivative of a Gaussian curve DoG; for example, (1), a model which is usually used to describe serial dependence. The DoG, given by
 
-was fitted to the pooled mean response biases of all subjects (similar to the procedure by Fritsche et al., 2017) per factor level, that is, one data point per subject and distance for the respective factor level. In the DoG, x is the relative direction difference of two stimuli, a is the amplitude of the curve peak, w scales the curve width, and c is the constant y2/e−0.5\begin{document}$y\sqrt{2}/e^{-0.5}$\end{document}. The w parameter was constrained to a value range of 0.01–0.1. We optimized the log likelihoods of our curve fitting using Bayesian adaptive direct search (BADS; Acerbi and Ma, 2017). BADS alternates between a series of fast, local Bayesian optimization steps and a systematic, slower exploration of a mesh grid. To estimate the variability of the parameters a and w, we bootstrapped the DoG curve fit 1000 times, sampling the data with replacement on each iteration, and computed the standard deviation of the resulting bootstrapped distributions of a (see Fischer et al., 2020) for a similar procedure. To assess the significance of serial dependence on a group level, we used permutation tests, that is, we randomly inverted the signs of each participant’s mean response error, fitted a new DoG model to the pooled group data, and collected the resulting amplitude parameters a in a permutation distribution. We repeated this permutation procedure 1000 times and reported the percentage of permutations that led to equal or higher values for a than the one estimated for the empirical data as p-values. The significance level was set to α = 0.05 (one-sided permutation test).
+$$
+y=xawce^{−(wx)^{2}}
+$$
 
-## MEG analysis
+was fitted to the pooled mean response biases of all subjects (similar to the procedure by Fritsche et al., 2017) per factor level, that is, one data point per subject and distance for the respective factor level. In the DoG, x is the relative direction difference of two stimuli, a is the amplitude of the curve peak, w scales the curve width, and c is the constant $y\sqrt{2}/e^{−0.5}$. The w parameter was constrained to a value range of 0.01–0.1. We optimized the log likelihoods of our curve fitting using Bayesian adaptive direct search (BADS; Acerbi and Ma, 2017). BADS alternates between a series of fast, local Bayesian optimization steps and a systematic, slower exploration of a mesh grid. To estimate the variability of the parameters a and w, we bootstrapped the DoG curve fit 1000 times, sampling the data with replacement on each iteration, and computed the standard deviation of the resulting bootstrapped distributions of a (see Fischer et al., 2020) for a similar procedure. To assess the significance of serial dependence on a group level, we used permutation tests, that is, we randomly inverted the signs of each participant’s mean response error, fitted a new DoG model to the pooled group data, and collected the resulting amplitude parameters a in a permutation distribution. We repeated this permutation procedure 1000 times and reported the percentage of permutations that led to equal or higher values for a than the one estimated for the empirical data as p-values. The significance level was set to α = 0.05 (one-sided permutation test).
 
-## IEM analysis
+### MEG analysis
+
+#### IEM analysis
 
 To reconstruct motion directions from neural signals, we used the so-called IEM technique (Sprague et al., 2018). We built an encoding model characterizing motion direction-selective responses in the MEG signal with the underlying assumption that the MEG signal in each sensor reflects a weighted sum of neural activity revealed by different motion directions. Our model consisted of a basis set of 18 channels spanning the room of 0–360° with centers in steps of 20°. The channels had the shape of sinusoids raised to the 18th power (adapted from Ester et al., 2015; Sprague, 2016). This model was applied to the MEG data, which was separated into a training and a test dataset. For each subject, we trained the model on one MEG session and tested it on the other one in two iterations, so that each MEG session was once training and once test data, and training and test data were independent. To analyze the currently relevant motion directions, we applied this reconstruction approach to the three types of epochs (S1 epoch, S2 epoch, and post-cue epoch) separately, and in each epoch, the currently relevant direction was the aim of the reconstruction (S1 epoch: S1 direction, S2 epoch: S2 direction, post-cue epoch: cued target direction). To increase the signal-to-noise ratio, the epoched data were averaged across time bins of 100 ms, centered on 50 ms, 150 ms, etc. after epoch onset. This led to 13 analysis time points for the S1 and S2 epoch and 15 analysis time points for the post-cue epoch. For each epoch, the directions were reconstructed for each time point separately in a time point by time point fashion. To check for reactivations of the previous target direction, we applied the same analysis on the last second of the ITI and the whole time course of the current trial, resulting in 51 analysis time points. This time, the aim of the reconstruction was the previous target direction; therefore, the data were trained and tested on this direction.
 
-In the first step, we modeled the activation of each sensor as a weighted sum of filter responses:(2)B1= C1W\begin{document}$$\displaystyle B_{1}=\ C_{1}W$$\end{document}
+In the first step, we modeled the activation of each sensor as a weighted sum of filter responses:
 
-B1 is the MEG signal in each sensor at a given time point (n trials * n sensors), C1 the modeled response of each channel given the presented direction in each trial (n trials * n channels) and W a weight matrix representing the contribution of each channel to the measured signal in each sensor (n channels * n sensors). W was estimated by using ordinary least-squares regression:(3)W^=(C1TC1)−1C1TB1\begin{document}$$\displaystyle \hat{W} = \left(C_1^T C_1\right)^{-1} C_1^T B_1$$\end{document}
+$$
+B_{1}= C_{1}W
+$$
 
-In the second step, we inverted W and applied it to the independent test MEG data B2 (n sensors * n trials) to compute the estimated channel responses Ĉ2 (n channels * n trials):(4)C^2=(W^TW^)−1W^TB2\begin{document}$$\displaystyle \hat{C}_2 = \left(\hat{W}^T \hat{W}\right)^{-1} \hat{W}^T B_2$$\end{document}
+B1 is the MEG signal in each sensor at a given time point (n trials * n sensors), C1 the modeled response of each channel given the presented direction in each trial (n trials * n channels) and W a weight matrix representing the contribution of each channel to the measured signal in each sensor (n channels * n sensors). W was estimated by using ordinary least-squares regression:
+
+$$
+W^=(C_{1}^{T}C_{1})^{−1}C_{1}^{T}B_{1}
+$$
+
+In the second step, we inverted W and applied it to the independent test MEG data B2 (n sensors * n trials) to compute the estimated channel responses Ĉ2 (n channels * n trials):
+
+$$
+C^_{2}=(W^^{T}W^)^{−1}W^^{T}B_{2}
+$$
 
 The estimated channel responses Ĉ2 were transformed from the channel space back to the direction space by weighting Ĉ2 with each channel’s sensitivity from the basis set. Those reconstructed channel responses were then circularly shifted to a common center (180°). This whole reconstruction procedure was done separately per subject, session, epoch, and time point, and this was iterated 20 times. Across those iterations, the centers of the basis set were shifted by 1° so that the channel centers were evenly spaced in steps of 1° across the whole direction space as a result of those iterations. The single-trial reconstructions were then analyzed in two different ways, described in the following paragraphs.
 
-## Shifts of the reconstructed direction
+#### Shifts of the reconstructed direction
 
-The main goal of our analysis was to examine potential shifts of the neural representation in relation to the target item of the previous trial. Therefore, the single-trial reconstructions were ordered in two groups, those with a previous target that was CW oriented in relation to the currently relevant item and those with a previous target that was CCW oriented. The CCW reconstructions were flipped along the direction space. Thereby, for both CW and CCW trials, a negative deviation of the maximum of the reconstruction from 180° indicated an attraction toward the previous target, whereas a positive deviation indicated a repulsion. Those reconstructions were then first averaged within each possible motion direction and then across them to account for different presentation numbers of the directions. This averaged reconstruction was obtained for each iteration (see above) and then later averaged across sessions. Thereby, the analysis resulted in a reconstruction per participant, epoch, and time point. In the next step, the fidelity of those reconstructions was assessed per epoch and time point to identify time points with significant direction information in the MEG signal. A fidelity above 0 indicates a meaningful direction signal and was obtained by projecting the polar vector of the reconstruction at every direction angle (in steps of 1°) onto the common center (180°). The length of this projected vector indicates the information strengths of the reconstruction at each angle. The fidelity F was obtained by averaging those information strengths:(5)F=mean(r(θ)cos⁡(θ))\begin{document}$$\displaystyle F=mean\left (r\left (\theta \right) \cos \left (\theta \right)\right)$$\end{document}
+The main goal of our analysis was to examine potential shifts of the neural representation in relation to the target item of the previous trial. Therefore, the single-trial reconstructions were ordered in two groups, those with a previous target that was CW oriented in relation to the currently relevant item and those with a previous target that was CCW oriented. The CCW reconstructions were flipped along the direction space. Thereby, for both CW and CCW trials, a negative deviation of the maximum of the reconstruction from 180° indicated an attraction toward the previous target, whereas a positive deviation indicated a repulsion. Those reconstructions were then first averaged within each possible motion direction and then across them to account for different presentation numbers of the directions. This averaged reconstruction was obtained for each iteration (see above) and then later averaged across sessions. Thereby, the analysis resulted in a reconstruction per participant, epoch, and time point. In the next step, the fidelity of those reconstructions was assessed per epoch and time point to identify time points with significant direction information in the MEG signal. A fidelity above 0 indicates a meaningful direction signal and was obtained by projecting the polar vector of the reconstruction at every direction angle (in steps of 1°) onto the common center (180°). The length of this projected vector indicates the information strengths of the reconstruction at each angle. The fidelity F was obtained by averaging those information strengths:
+
+$$
+F=mean(r(\theta)cos⁡(\theta))
+$$
 
 We identified the time points in each epoch with significant direction reconstruction fidelity by computing a one-sided cluster-based permutation test (as implemented in MNE) against zero. As the effect of the neural shift was expected to be very small, we averaged the reconstructions in each epoch only over those time points that showed significant reconstruction fidelity and thus interpretable data. To examine systematic shifts, we then tested if the maximum of the reconstruction was systematically different from the common center (180°). For display purposes, we subtracted the reconstructed maximum from 180° to compute the direction shifts. A positive shift thus reflected attraction, and a negative shift reflected repulsion.
 
-## Statistical inference of shifts
+#### Statistical inference of shifts
 
 To assess the significance of potential shifts, we used a bootstrapping procedure similar to Ester et al., 2020. To this aim, we randomly selected reconstructions from 10 participants (with replacement), then computed the mean reconstruction over the resampled participants and collected the shift. This was done on 10,000 iterations. The distribution of shifts was then used to examine if the observed shift was significantly larger than zero. A shift was significant when 95% of the resampling iterations led to a shift equal to or higher than 0°, that is, we conducted a one-sided bootstrapping test as we expected an attraction, which was indicated by a shift larger than 0°. To obtain an indicator for the variability of the shifts, the middle 95% of shifts resulting from the described resampling procedure are reported. Thus, our bootstrapping procedure relied on (1) detecting an offset against zero and (2) evaluating the robustness of the observed effect across participants. As such, it contrasts with the frequently used permutation approach that assesses whether an empirical neural shift is more extreme than the permutation distribution. The permutation approach seemed more suited to assess the magnitude of the shift, which in our study was not a priority. Therefore, we reasoned that bootstrapping was better suited to assess the direction of the neural shift and its robustness across participants.
 
-## Correlation between neural representation and behavioral response
+#### Correlation between neural representation and behavioral response
 
 In addition, we correlated the maximum of single-trial reconstructions with the upcoming behavioral response to test whether shifts in behavior and in the neural signal on a single-trial level were systematically related to each other. Both behavioral and neural shifts in any direction (CW or CCW) in a single-trial response can originate from or be modulated by different sources like, for example, noise in the motor response, but they can also result from attractive serial dependence that can be observed by averaging over trials. We collected the reconstructions before flipping them with regard to the previous target and removed trials where the behavioral response deviated more than three SDs from the individual response error. Then we computed the circular correlation between the deviation of the reconstructed maximum from the presented direction and the response error for each participant, session, epoch, and time point. For S1 and S2 epochs, only epochs from trials where the respective item was cued as the response target were included.
 
-## Statistical inference of correlations
+#### Statistical inference of correlations
 
 The obtained correlation coefficients were averaged across sessions and then time points for each epoch with a correlation significantly differing from zero were identified by computing a one-sided cluster-based permutation test (as implemented in MNE) against zero.
 
-## Reconstruction of previous target direction
+#### Reconstruction of previous target direction
 
 We also examined whether the neural signals of the current trial contained memory traces of the previous target direction. Therefore, another IEM analysis was employed, but this time trained and tested on the target direction of the previous trial throughout the last second of the ITI and the current trial. Time points that contained significant direction information from the previous target were identified by computing the fidelity of the reconstructions as described above and tested against zero with a one-sided cluster-based permutation test.
 
-## Multiple comparison correction
+#### Multiple comparison correction
 
 In order to correct for multiple comparisons, we applied an FDR correction (Benjamini–Hochberg) to those analyses that resulted in one p-value per epoch, that is, the bootstrapping tests of the shifts against zero, and reported these corrected values alongside the original ones. Furthermore, for cluster-based permutation tests that were applied to each epoch individually, we multiplied p-values higher than the minimally possible (p < 0.002) for significant clusters by the number of epochs (3), thus resulting in a Bonferroni correction.
 
-## Software
+### Software
 
 All behavioral analysis was performed with MATLAB, 2019 and the following toolboxes/functions: Circular Statistics Toolbox (Berens, 2009), BADS (Acerbi and Ma, 2017), and EzyFit v2.44 (Moisy, 2016). The MEG analysis was performed with Python 3.8 in the distribution v.2020.11 (Anaconda, 2020) using spyder v.4.1.5 (Raybaut, 2009) and the following toolboxes: autoreject v0.2.2 (Jas et al., 2017), MNE v0.22.0 (Gramfort et al., 2013), numpy v1.19.2 (Harris et al., 2020), pandas v1.1.3 (McKinney, 2010; The Pandas Development Team, 2020), and scipy v1.5.2 (Virtanen et al., 2020).

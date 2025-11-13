@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.47097.001 Muscle development and regeneration require delicate cell cycle regulation of embryonic myoblasts and adult muscle satellite cells (MuSCs). Through analysis of the Polo-like kinase (Plk) family cell-cycle regulators in mice, we show that Plk1’s expression closely mirrors myoblast dynamics during embryonic and postnatal myogenesis. Cell-specific deletion of Plk1 in embryonic myoblasts leads to depletion of myoblasts, developmental failure and prenatal lethality. Postnatal deletion of Plk1 in MuSCs does not perturb their quiescence but depletes activated MuSCs as they enter the cell cycle, leading to regenerative failure. The Plk1 -null MuSCs are arrested at the M-phase, accumulate DNA damage, and apoptose. Mechanistically, Plk1 deletion upregulates p53, and inhibition of p53 promotes survival of the Plk1 -null myoblasts. Pharmacological inhibition of Plk1 similarly inhibits proliferation but promotes differentiation of myoblasts in vitro, and blocks muscle regeneration in vivo. These results reveal for the first time an indispensable role of Plk1 in developmental and regenerative myogenesis.
+Muscle development and regeneration require delicate cell cycle regulation of embryonic myoblasts and adult muscle satellite cells (MuSCs). Through analysis of the Polo-like kinase (Plk) family cell-cycle regulators in mice, we show that Plk1’s expression closely mirrors myoblast dynamics during embryonic and postnatal myogenesis. Cell-specific deletion of Plk1 in embryonic myoblasts leads to depletion of myoblasts, developmental failure and prenatal lethality. Postnatal deletion of Plk1 in MuSCs does not perturb their quiescence but depletes activated MuSCs as they enter the cell cycle, leading to regenerative failure. The Plk1-null MuSCs are arrested at the M-phase, accumulate DNA damage, and apoptose. Mechanistically, Plk1 deletion upregulates p53, and inhibition of p53 promotes survival of the Plk1-null myoblasts. Pharmacological inhibition of Plk1 similarly inhibits proliferation but promotes differentiation of myoblasts in vitro, and blocks muscle regeneration in vivo. These results reveal for the first time an indispensable role of Plk1 in developmental and regenerative myogenesis.
 
 ## Introduction
 
@@ -32,53 +32,101 @@ The polo-like kinases (PLKs) are a conserved subfamily of Ser/Thr protein kinase
 
 ## Results
 
-## Plk1 is dynamically expressed during muscle regeneration and myogenesis
+### Plk1 is dynamically expressed during muscle regeneration and myogenesis
 
 To establish the relevance of Polo-like kinases in myogenesis, we surveyed the expression of Plk1–Plk4 (Plk5 was not surveyed as it does not have a kinase domain) at various time points during CTX-induced muscle regeneration. Activation and proliferation of MuSCs peaks at 3 days post injury (DPI), and the overall architecture of the muscle is restored by 10 DPI (CHARGÉ and Rudnicki, 2004). The mRNA levels of Plk1, Plk3, and Plk4 were all transiently up-regulated after muscle injury, reaching peak expression levels at 3 DPI and returning to the preinjury levels at 10 DPI, but Plk1 exhibited the most prominent fold change (increased by >13 fold) at 3 DPI (Figure 1A). The expression pattern of Plk1 corresponded to those of myogenic transcriptional factors Pax7 and MyoG at both mRNA (Figure 1B) and protein (Figure 1C) levels. We also surveyed the mRNA levels of Plk1-4 during differentiation of primary myoblasts isolated from limb muscles. Compared with day 0 (proliferating myoblast), Plk1, Plk3, and Plk4 levels were all down-regulated during myogenic differentiation (Figure 1D). Among these, Plk1 and Plk4 exhibited the most robust down-regulation (Figure 1D). The expression pattern of Plk1 was inversely correlated to the expression of myogenic differentiation makers Myog and eMyhc, which were robustly upregulated during differentiation (Figure 1E). Consistently, Plk1 levels progressively declined from embryonic day 17.5 (E17.5) to postnatal day 90 (P90) during limb muscle differentiation and maturation in vivo (Figure 1F). Since Plk1 is the most dynamically regulated Plks during myogenesis, we focused on Plk1 for the rest of the current study.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig1-v1.jpg)
 
-**Figure 1.:** Plks during muscle regeneration and differentiation.(A–B) Relative mRNA levels of Plks and myogenic factors Pax7 and MyoG in TA muscles from mice (n = 4) at various timepoints after CTX induced injury, determined by qPCR, DPI: Days post injury; (C) Representative protein level of Plk1, Pax7 and Myog at various timepoints during muscle regeneration; (D–E) qPCR showing relative mRNA levels of Plks and myogenic differentiation markers (Myogenin and eMhyhc: embryonic myosin heavy chain) at various timepoints of primary myoblast differentiation (n = 3, biological samples); (F) qPCR analysis of Plk1 expression in TA muscles from 17.5 day, 3 week and 3-month-old mice (n = 3, biological samples).
+**Figure 1.:** (A–B) Relative mRNA levels of Plks and myogenic factors Pax7 and MyoG in TA muscles from mice (n = 4) at various timepoints after CTX induced injury, determined by qPCR, DPI: Days post injury; (C) Representative protein level of Plk1, Pax7 and Myog at various timepoints during muscle regeneration; (D–E) qPCR showing relative mRNA levels of Plks and myogenic differentiation markers (Myogenin and eMhyhc: embryonic myosin heavy chain) at various timepoints of primary myoblast differentiation (n = 3, biological samples); (F) qPCR analysis of Plk1 expression in TA muscles from 17.5 day, 3 week and 3-month-old mice (n = 3, biological samples).
 
 Non-myogenic cells such as fibroadipogenic progenitors, endothelial cells, and infiltrating inflammatory cells are also present in the muscle during regeneration. To assure that the above-observed Plk1 dynamics are specific to MuSCs, we used an established antibody to detect Plk1 protein expression in MuSCs that were co-labeled with Pax7, an established marker of MuSCs (Seale et al., 2000). In the freshly isolated EDL myofibers (Day 0) carrying quiescent MuSCs, Plk1 immunofluorescence signal was undetectable in any Pax7+ MuSCs (Figure 2A). After culture, Plk1 signal appeared in activated MuSCs that co-express MyoD (Day 1), and then was abundantly expressed in clusters of MuSCs progenies or myoblasts (Days 2–3), with positive signal only detected in MyoD+ cells (Figure 2A, n > 200 cells), which marks activated MuSCs (Olguin and Olwin, 2004; Zammit et al., 2004). We also analyzed mRNA levels of Plk1 in FACS-purified MuSCs isolated from non-injured and injured muscle tissues, representing quiescent and activated MuSCs, respectively. Plk1 mRNA level was 15-fold higher in activated than in quiescent MuSCs (Figure 2B). Additionally, bFGF, a growth factor known to promote the proliferation of MuSCs, increased the level of Plk1 in cultured myoblasts (Figure 2C). Collectively, these lines of evidence demonstrate that Plk1 expression is dynamically regulated in MuSCs during their quiescence, activation, proliferation and differentiation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig2-v1.jpg)
 
-**Figure 2.:** Plk1 is specifically expressed in activated MuSCs.(A) Plk1 immunofluorescence in Pax7+ MuSCs attached on freshly isolated EDL myofibers (Day 0) or after cultured for 1–3 days from three male wildtype mice (at least 10 fibers were collected at each time point, quantification of MyoD+Plk1+ MuSCs were based on 200 cells on myofibers cultured for 72 hr), scale bar: 10 μm; (B) Relative levels of Plk1 mRNA in quiescent and activated satellite cells, data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates); (C) Relative levels of Plk1 mRNA in primary myoblast treated with (+) or without (-) 4 ng/ml bFGF for 24 hr, data represent mean ± s.e.m. (t-test: *p<0.05; n = 4, biological replicates).
+**Figure 2.:** (A) Plk1 immunofluorescence in Pax7+ MuSCs attached on freshly isolated EDL myofibers (Day 0) or after cultured for 1–3 days from three male wildtype mice (at least 10 fibers were collected at each time point, quantification of MyoD+Plk1+ MuSCs were based on 200 cells on myofibers cultured for 72 hr), scale bar: 10 μm; (B) Relative levels of Plk1 mRNA in quiescent and activated satellite cells, data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates); (C) Relative levels of Plk1 mRNA in primary myoblast treated with (+) or without (-) 4 ng/ml bFGF for 24 hr, data represent mean ± s.e.m. (t-test: *p<0.05; n = 4, biological replicates).
 
-## Loss of Plk1 in myogenic progenitors leads to embryonic lethality
+### Loss of Plk1 in myogenic progenitors leads to embryonic lethality
 
 To assess the role of Plk1 in muscle development in vivo, we crossed the MyodCre with Plk1f/f mice to generate the myoblast-specific Plk1 knockout (MyodCre::Plk1f/f, or Plk1MKO) mice (Figure 3A). In this model, Plk1 should be deleted in all muscle progenitors during development as MyodCre marks all embryonic myogenic cells (Kanisicak et al., 2009). After several intercrosses of heterozygous mice, no live Plk1MKO pups were obtained, indicating that myoblast-specific knockout of Plk1 resulted in prenatal lethality. Therefore, embryos were harvested in utero at E16.5, several days before birth. From 69 embryos analyzed, we obtained 13 motionless embryos that were subsequently confirmed by PCR to be Plk1MKO (Supplementary file 1). Plk1MKO embryos were shorter in body length and transparent in appearance (Figure 3B). Histological sections through limbs revealed an absence of central-nucleated myofibers that were otherwise stained by eosin and embryonic myosin heavy chain (eMyHC) in the Plk1MKO embryos (Figure 3C–D). In contrast, eosin and eMyHC staining reveals the development of various groups of muscles in the WT control embryos (Figure 3C–D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig3-v1.jpg)
 
-**Figure 3.:** Plk1 in myogenic progenitors leads to embryonic lethality.(A) Targeting strategy for myogenic progenitor specific deletion of Plk1, boxes represent exons and triangles represent LoxP; (B) Representative images of WT, heterozygous KO (Het) and Plk1MKO embryos at stage E16.5, arrowheads points to the forelimbs, showing the; (C) H and E staining of E16.5 hindlimb cross-sections (upper panel) and magnified representative area (bottom panel, scale bar: 50 μm) showing lack of muscle fibers (labeled by eosin in pink) in Plk1MKO embryos, T: Tibia, F: Fibula; (D) Immunofluorescence of eMyHC (marking myofibers) in E16.5 whole limb cross-sections; (E) Immunofluorescence of Pax7 and KI67 in limb cross-sections of embryos at E16.5, scale bar: 50 μm.
+**Figure 3.:** (A) Targeting strategy for myogenic progenitor specific deletion of Plk1, boxes represent exons and triangles represent LoxP; (B) Representative images of WT, heterozygous KO (Het) and Plk1MKO embryos at stage E16.5, arrowheads points to the forelimbs, showing the; (C) H and E staining of E16.5 hindlimb cross-sections (upper panel) and magnified representative area (bottom panel, scale bar: 50 μm) showing lack of muscle fibers (labeled by eosin in pink) in Plk1MKO embryos, T: Tibia, F: Fibula; (D) Immunofluorescence of eMyHC (marking myofibers) in E16.5 whole limb cross-sections; (E) Immunofluorescence of Pax7 and KI67 in limb cross-sections of embryos at E16.5, scale bar: 50 μm.
 
 To determine the effect of Plk1MKO on myogenic progenitors, we labeled limb muscle sections with Pax7 antibody. Whereas numerous Pax7+ myoblasts were detected in the WT control limb muscles, the Plk1MKO limb muscles were completely depleted of Pax7+ myoblasts (Figure 3E), suggesting that Plk1 is necessary for the generation or maintenance of embryonic myoblasts in the limb muscles. In addition, no Ki67+ cells were Pax7+ in the Plk1MKO limb muscles (Figure 3E), suggesting that proliferative failure may be another driver of the depletion of myoblasts. These results indicate that loss of Plk1 in myogenic progenitors blocks their proliferation and survival, leading to failure in skeletal muscle development and embryonic lethality.
 
-## Deletion of Plk1 impairs muscle regeneration in adult mice
+### Deletion of Plk1 impairs muscle regeneration in adult mice
 
 The prenatal lethality of the Plk1MKO mice precludes the exploration Plk1 function in postnatal MuSCs and muscle regeneration. To circumvent embryonic lethality, we established tamoxifen (TMX)-inducible Pax7CreER::Plk1f/f (Plk1PKO) mice to specifically delete Plk1 in Pax7-expressing MuSCs upon TMX injection in adult mice (Figure 4—figure supplement 1A). WT control and Plk1PKO mice were intraperitoneally (IP) injected with TMX for five days followed by 14 days of chasing (Figure 4—figure supplement 1A). Knockout efficiency was shown by the lack Plk1 signal in MuSCs isolated from Plk1PKO myofibers but not in WT MuSCs after 72 hr of culture (Figure 4—figure supplement 1B). In the absence of injury, no morphological differences were observed between Plk1PKO and WT muscles based on H and E staining of tibialis anterior (TA) muscle cross-sections at Day 14 after TMX-induced deletion of Plk1 (Figure 4—figure supplement 1C–D). Immunofluorescence staining of Pax7 showed that the number of MuSCs (Pax7+/DAPI+) in Plk1PKO mice was ~70% of that in WT mice, and no MyoG+ differentiated cells were observed in either WT or KO muscles (Figure 4—figure supplement 1E–G). These results confirm the efficiency of the Plk1PKO conditional KO mouse model and demonstrate that the loss of Plk1 do not lead to obvious morphological changes in uninjured muscles.
 
 We then examined muscle regeneration of the Plk1PKO mice to determine the effect of Plk1 KO on MuSCs. TA muscles from both Plk1PKO and WT mice were degenerated by CTX after TMX-induced Plk1 deletion (Figure 4A). At 7 DPI, the masses of WT TA muscles were recovered to 70% of preinjury levels, whereas the TA muscle masses of Plk1PKO mice were only recovered by ~40% (Figure 4B–C). Histologically, the WT TA muscles were uniformly replaced by newly regenerated myofibers characterized by central-nucleated myofibers (Figure 4D). In contrast, TA muscles of Plk1PKO mice were devoid of newly regenerated myofibers (Figure 4D). Pax7+ cells were diminished in Plk1PKO mice, together with an absence of any Dystrophin-expressing myofibers (Figure 4E–F). Furthermore, very few MyoG+ cells and no eMyHC+ myofibers were observed in Plk1PKO mice (Figure 4—figure supplement 2A–C). Compared with uniformly regenerated muscles in WT mice, Plk1PKO mice had no Pax7+KI67+ cells, but a compensatory increase in the number of Pax7–KI67+ cells (Figure 4—figure supplement 2D–E), indicating depletion of MuSCs and increased proliferation of non-myogenic cells. To further distinguish if Plk1 KO leads to regenerative delay or deficiency, we examined TA muscles at 21 DPI (Figure 4—figure supplement 2F), at which time the CTX-injured muscles were completely repaired, and the muscle weights were restored to the non-injured levels in the WT mice (Figure 4—figure supplement 2G). However, the TA muscle mass of the CTX-injured muscles was only 25% of the mass of the non-injured muscles in the Plk1PKO mice (Figure 4—figure supplement 2G). Newly regenerated myofibers (indicated by central-nucleation) were uniformly packed in the WT TA muscles (Figure 4—figure supplement 2H). In contrast, TA muscles of Plk1PKO mice were devoid of newly regenerated myofibers, and were infiltrated by Plin1 +adipocytes (Figure 4—figure supplement 2H–I) and F4/80+ macrophages (Figure 4—figure supplement 2I). These results revealed that Plk1 KO leads to ablation of MuSCs and severe regenerative failure.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design for tamoxifen (TMX, four 8-week-old male mice from each group received a daily intraperitoneal injection for 5 consecutive days) induced deletion of Plk1 in Pax7CreER::Plk1f/f (Plk1PKO) mice, following by cardiotoxin (CTX) injection to induce muscle degeneration and regeneration. Numbers indicate timing of TMX induction (5 consecutive days of injection following by 7 days of chasing), CTX injection and sample collection (7 days after injury); (B) Representative images of TA muscles in WT and Plk1PKO mice; (C) TA muscle weight recovery at 7 days after CTX injury, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates, mice were males at around 11 weeks old when sampled); (D) H and E staining of TA muscle cross-sections (upper panel) and magnified representative areas at 7 days after CTX injury (bottom panels, scale bar: 20 μm); (E) Immunofluorescence of Pax7 and Dystrophin (to outline myofibers) in TA muscle cross-sections at 7 days after CTX injury, scale bar: 20 μm; (F) The average number of MuSCs per microscopic area, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates, all MuSCs from five radom areas were counted for each mouse).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematics showing timing of TMX induction and sample collection (four 8-week-old male mice from either group received a daily intraperitoneal injection of TMX for 5 consecutive days, then sampled after 14 days); (B) Immunofluorescence of Plk1 (green), Pax7 (red) and DAPI (blue) in MuSCs attached on EDL myofibers after cultured for 3 days, scale bar: 10 μm; (C) H and E staining of TA muscle cross-sections after 14 days of TMX induction; (D) The average fiber area of TA muscle cross-sections after 14 days of TMX induction, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates, all fibers from five random areas were counted for each mouse); (E) Immunofluorescence of Pax7 (red) and Laminin (green) in TA muscle cross-sections 7 days after TMX induction, scale bar: 20 μm, white arrowheads point to Pax7+DAPI+ MuSCs; (F) Immunofluorescence of MyoG (red) and Laminin (green) in TA muscle cross-sections 14 days after TMX induction, scale bar: 20 μm; (G) The average number of Pax7+ or MyoG+ cells per microscopic area, data represent mean ± s.e.m. (t-test: **p<0.01; n = 6 biological replicates, all MuSCs from five random areas were counted for each mouse).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Immunofluorescence of MyoG (red) and Dystrophin (green) in TA muscle cross-sections 7 days after CTX injury, scale bar: 20 μm, white arrows point to myogenic cells; (B) The average number of MyoG+ cells per microscopic area, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4 biological replicates, all MyoG+ cells from five random cross-sectional areas were counted for each mouse); (C) Immunofluorescence of eMyHC (red) and Dystrophin (green) in TA muscle cross-sections 7 days after CTX injury, scale bar: 20 μm; (D) Immunofluorescence of KI67 (green) and Pax7 (red) in TA muscle cross-sections 7 days after CTX injury, scale bar: 20 μm; (E) The average number of KI67+ cells and KI67+Pax7+ cells per microscopic area, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4 biological replicates, all KI67+ cells from five random cross-sectional areas were counted for each mouse); (F) Experimental design for tamoxifen (TMX, three 3-month-old male mice in each group received a daily intraperitoneal injection for 5 consecutive days) induced deletion of Plk1 in Plk1PKO mice, following by cardiotoxin (CTX) injection to induce muscle degeneration and regeneration. Numbers indicate timing of TMX induction (following by 7 days of chasing), CTX injection and sample collection (in days, sampling at 21 days after CTX injury); (G) Representative images of TA muscles in WT and Plk1PKO mice at 21 days after CTX injury (left panel), TA muscle weight recovery at 21 days after CTX injury (right panel), data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates); (H) H and E staining of TA muscle cross-sections at 21 days after CTX injury, scale bar: 20 μm; (I) Immunofluorescence of F4/80 and Perilipin-1 (to outline adipocytes) in TA muscle cross-sections at 21 days after CTX injury, scale bar: 20 μm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic showing timing of BI2623 and CTX injection, and sample collection (Samples were collected 5 days after 50 μl saline or 50 μl of 10 μM CTX injection in the absence or presence of 10 μg BI2536, from four 2-month-old male mice); (B) TA weight at 5 days post-CTX injection in the absence or presence of BI, data represent mean ± s.e.m. (t-test: *p<0.05; n = 4, biological replicates); (C–D) Representative H and E staining of injured or non-injured TA muscles at 5 days post-CTX injection in the absence or presence of BI2536 (BI), red fibers with central nuclei represent regenerating myoﬁbers, scale bar: 50 μm; (E) Representative images of Pax7 (red) staining in muscle cross section at 5 days post-CTX injection in the absence or presence of BI, nuclei were counterstained with DAPI (blue), scale bar: 20 μm; (F) Quantification of Pax7+ cells per field in muscle cross-section, co-staining of Pax7 and DAPI were recognized as Pax7+ cells, indicated by white arrows, data represent mean ± s.e.m. (t-test: */#p<0.05; n = 4, biological replicates, all MuSCs from five random cross-sectional areas were counted for each mouse); (G) Representative images of Pax7 (red) staining in isolated EDL single fibers from 5 days post CTX injection in the absence or presence of BI, nuclei were counterstained with DAPI (blue), scale bar: 20 μm; (H) Quantification of Pax7+ cells per single fiber, at least 20 fibers were counted for each treatment data represent mean ± s.e.m. (t-test: */#p<0.05; n = 4, biological replicates, all MuSCs from five random images were counted for each mouse).
+
 To further dissect if Plk1 function in MuSCs and muscle regeneration depends on its kinase activity, we treated regenerating muscles with BI2536, a selective inhibitor of Plk1 activity (Figure 4—figure supplement 3A). BI2536 treatment (injection of 50 μl into the TA muscle at a final dosage of 0.4 μg/g body weight) significantly inhibited regeneration of CTX-injured muscles (Figure 4—figure supplement 3B). H and E staining of vehicle control and BI2536-treated muscle cross-sections revealed that BI2536-treated muscles had increased interstitial space filled with inflammatory infiltration and very few newly regenerated myofibers (Figure 4—figure supplement 3C). Consistent to Plk1 KO results, BI2536 treatment did not have any effects on morphology of uninjured muscles (Figure 4—figure supplement 3D), suggesting Plk1 mainly functions to regulate proliferating MuSCs during regeneration. BI2536 treatment reduced the number of Pax7+ cells by~60% in regenerating muscles, but not in uninjured muscle sections (Figure 4—figure supplement 3E–F). Similarly, BI2536 treatment did not affect the abundance of MuSCs in uninjured EDL myofibers, but significantly reduced the number of MuSCs on CTX-injured myofibers (Figure 4—figure supplement 3G–H). These data together suggest that genetic deletion or pharmacological inhibition of Plk1 similarly inhibits the proliferation of MuSCs and prevents muscle regeneration.
 
-## Plk1-null MuSCs undergo cell cycle arrest at M Phase
+### Plk1-null MuSCs undergo cell cycle arrest at M Phase
 
 To investigate how Plk1 regulate cell cycle progression of MuSCs, we synchronized WT myoblasts by double thymidine block and released them to allow synchronous cell cycle progression. Plk1 expression was significantly increased as cells enter G2 and peaked at metaphase, indicated by phosphohistone H3 (pHH3) labeling (Figure 5A). The cell-cycle-dependent expression pattern suggests a key role of Plk1 in regulating metaphase progression of MuSCs. To further determine cell cycle defects of Plk1 KO MuSCs, we analyzed proliferation of MuSCs attached on cultured EDL myofibers. After 3 days of culture, the WT MuSCs formed clusters of 6–8 myoblasts on the myofibers. However, MuSCs from Plk1PKO mice failed to complete the cytokinesis and were arrested at mitosis stage, evident from the dispersed distribution of nuclear Pax7 and MyoD signals surrounding metaphase and telophase chromosomes (Figure 5B). The numbers of myoblasts were also significantly decreased on the Plk1PKO relative to WT myofibers (Figure 5—figure supplement 1A). We also isolated primary myoblast from Plk1PKO and used 4-hydroxy-tamoxifen (4-OHT) to induce acute Plk1 deletion in proliferating myoblasts. The high efficiency of 4-OHT-induced Plk1 deletion was verified by WB and DNA recombination analysis (Figure 5D). Compared to the control (Methanol) treatment in which the number of myoblasts increased exponentially, the numbers of 4-OHT-treated myoblast only slightly increased in the first 12 hr, followed by a gradual decrease (Figure 5E), suggestive of cell death. The numbers of myoblasts continually decreased when the myoblasts were cultured for more than 2 days (Figure 5—figure supplement 1B). Flow cytometry analyses revealed a significant increase of tetraploid cells 24 after 4-OHT induced KO of Plk1 (Figure 5F). DAPI staining also demonstrated that over 60% of Plk1-null myoblast underwent a cell cycle arrest at M-phase with condensation of the chromatin and the disappearance of the nucleolus (Figure 5G).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig5-v1.jpg)
+
+**Figure 5.:** (A) Western blot showing relative protein levels of Plk1 and cell cycle marker pHH3 at different time points after WT myoblast were synchronized by double thymidine block (DTB) protocol and released; (B) Immunofluorescence of Pax7 and MyoD in MuSCs on cultured EDL myofibers (72 hr) isolated from WT and Plk1PKO mice 7 days after TMX induced deletion of Plk1, scale bar: 10 μm, (at least 10 fibers were collected from four individual 11-week-old male mice); (C) Schematics showing 4-hydroxy-tamoxifen (4-OHT) induced deletion of Plk1 in primary myoblasts isolated from Plk1PKO mice (Primary myoblasts were isolated from four 6-week-old male mice, and frozen at −80°C and stored for the following experiments), Methanol treatment is the vehicle control; (D) Western blot showing effective knockout of Plk1 after 4-OHT induction (upper panel) and PCR analysis of genomic DNA showing the DNA recombination 4-OHT induction; (E) Quantification of the average numbers of myoblast per well, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates); (F) Flow cytometry analysis of methanol or 4-OHT treated myoblast with propidium iodide staining to mark DNA content (left panel), and quantification of percentage of myoblasts containing double-DNA content (right panel), data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates); (G) DAPI staining of myoblasts at 30 hr after methanol or 4-OHT induction to reveal DNA morphology, scale bar: 10 μm, white arrowheads indicated cells containing unsegregated chromosomes.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of MuSCs on 3 day cultured EDL myofibers isolated from WT and Plk1PKO mice 14 days after TMX induction, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates, MuSCs from at least 10 fibers were counted for each mouse); (B) Total myoblast numbers after 0, 12, 36, 84 and 132 hr methanol or 4-OHT induction, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4 biological replicates, cell numbers were counted from three replicates from four WT or Plk1PKO myoblasts); (C) Immunofluorescence of Pax7 and DAPI in MuSCs on 3 day cultured EDL myofibers isolated from BI or vehicle treated mice, scale bar: 10 μm; (D) Quantification of (C), data represent mean ± s.e.m. (t-test: *p<0.05; n = 4, biological replicates, MuSCs from at least 10 fibers were counted for each mouse).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Total myoblast numbers after 24 hr treatment of 0, 1, 5, 10, 50, 100, 500, 1000 nM BI or (B) 24, 48, 72 hr treatment of 100 nM BI, data represent mean ± s.e.m. (t-test: *p<0.05; n = 4, biological replicates, cell numbers were counted from three replicates from four vehicle or BI-treated myoblasts); (C) Representative images of primary myoblast morphology 24 hr after treatment of 100 nM BI, nuclei were stained with DAPI (white), scale bar: 20 μm; (D) Quantification of tetraploid-like cells, data represent mean ± s.e.m. (t-test: *p<0.05; n = 5, biological replicates, 25–50 myoblasts/replicate, three replicates from five different time points were counted for quantification).
+
 The Plk1 inhibitor BI2536 was also used to treat cultured myofibers carrying MuSCs and primary myoblasts in vitro. When EDL myofibers were cultured for 3 days in the absence or presence of 100 nM BI2536, BI2536 treatment not only reduced the total number of myoblast clusters per myofiber by ~70%, but also reduced the number of cells per clusters, with no cluster containing more than four cells (Figure 5—figure supplement 1C–D). In contrast, 40% of the vehicle-treated myofibers contained clusters of more than four cells per cluster (Figure 5—figure supplement 1D). Consistently, BI2536 also suppressed the proliferation of primary myoblasts dose-dependently over various timepoints (Figure 5—figure supplement 2A–B). Nuclear staining with DAPI indicated that more than 40% of the BI2536-treated myoblasts were arrested at an undivided stage, resulting in tetraploid-like cells (Figure 5—figure supplement 2C–D), indicating an unsuccessful division of myoblasts by Plk1 inhibition. Together, these data reveal a key role of Plk1 in cytokinesis and indicate that loss or inhibition of Plk1 leads to proliferative defect and cell cycle arrest at M-phase.
 
-## Plk1-null MuSCs apoptose
+### Plk1-null MuSCs apoptose
 
 We next questioned what’s the fate of the Plk1-null myoblasts that were arrested at M-phase. To test this, we first checked the cell viability by antibody staining with cleaved Caspase-3 (C-Cas3), a marker for apoptosis (Igney and Krammer, 2002). As a positive control, 100 mM H2O2 was used to treat MuSCs on EDL myofibers cultured for 72 hr, which resulted in robust C-Cas3 signal (Figure 6—figure supplement 1A). Next, Plk1PKO EDL myofibers were cultured in vehicle control (Methanol) or 4-OHT to induce Plk1 deletion. None of the methanol-treated myoblasts on myofibers were C-Cas3 positive, but all the 4-OHT treated MyoD+ myoblasts were C-Cas3 positive at 48 and 72 hr after the treatment (Figure 6A). Morphologically, the 4-OHT-treated myoblasts were arrested in the cell cycle before the first division (Figure 6A). All activated myoblasts were C-Cas3 negative at 20 hr in both treatment group, indicative of a cell-cycle-dependent Cas3 activation. In situ terminal deoxynucleotidyl transferase dUTP nick-end labeling (TUNEL) also showed that MuSCs on EDL myofibers were all TUNEL+ without finishing the first division after 42 hr culture (Figure 6B). Myoblasts cultured from Plk1PKO mice were also 100% C-Cas3+ or TUNEL+ when induced with 4-OHT following 2 days of culture, but control groups only had ~5% C-Cas3+ or TUNEL+ cells (Figure 6C–F). In addition, there were no presence of MyoG+ differentiated myoblasts on EDL myofibers from Plk1PKO mice after 72 hr of culture (Figure 6—figure supplement 1B). Apoptosis of Plk1 null myoblast was also confirmed by Annexin V-FITC Apoptosis Staining, which showed a dramatically increment of FITC/PI double positive cells 36 hr after 4-OHT induction when compared to the control group (Figure 6—figure supplement 1C–D). These results suggest that Plk1 deletion induced loss of MuSCs due to apoptosis but not differentiation.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative images of MyoD (red) and cleaved Caspase-3 (green) staining in MuSCs located on EDL myofibers cultured for 20, 48 and 72 hr, myofibers were isolated from Plk1PKO mice and treated with 4-OHT to induce deletion of Plk1 at time 0, Methanol is the vehicle control, scale bar: 10 μm, at least 10 cells from 10 single myofibers per mouse (n = 3 mice) were counted; (B) Immunofluorescence of Myod (red) and TUNEL (green) in MuSCs on EDL myofibers cultured for 42 hr, scale bar, 10 μm, at least 10 cells from 10 single myofibers per mouse (n = 3 mice) were counted; (C–D) Representative images of cleaved Caspase-3 (C) and TUNEL (D) staining in primary myoblasts at 48 hr after methanol or 4-OHT treatment, nuclei were counterstained with DAPI, arrowheads indicate cells arrested at M-phase, scale bar: 50 μm; (E–F) Quantification of percentages of Caspase-3+ (E) and TUNEL+ (F) cells, data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates (mice), three replicates/mouse, 25–50 myoblasts/replicate were analyzed).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative images of MyoD (red) and cleaved Caspase-3 (green) staining in 72 hr cultured MuSCs of fresh isolated EDL single fibers treated with H2O2 for 30 min, scale bar: 10 μm; (B) Immunofluorescence of Myog (red) and DAPI (blue) in MuSCs on 3 day cultured EDL myofibers isolated from WT and Plk1PKO mice 7 days after TMX induction, white arrowheads point to undivided MuSCs on fibers from Plk1PKO mice, (C) Flow cytometry analysis of methanol or 4-OHT treated myoblast with Annexin V and PI staining to mark apoptotic cells; (D) Quantification of percentage of Annexin V/PI double positive myoblasts, data represent mean ± s.e.m. (t-test: **p<0.01; n = 4, biological replicates).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Representative images of MF20 staining (red) in primary myoblast 48 hr after 100 nM BI treatment in growth medium (GM, DMEM +20%FBS +4 ng/μl bFGF), nuclei were counterstained with DAPI (blue); (B) Quantification of MF20+ cells per field in BI2536 treated myoblast, five fields were counted for each treatment, data represent mean ± s.e.m. (t-test: *p<0.05; n = 3, biological replicates); (C) Representative images of MF20 staining in primary myoblast 48 hr after BI treatment in differentiation media (DM, DMEM +2% HS), nuclei were counterstained with DAPI; (D) Fusion index of differentiated myoblasts, five fields were counted for each treatment, data represent mean ± s.e.m. (t-test: *p<0.05; n = 3, biological replicates), scale bar: 50 μm; (E) Representative protein level of MF20 in primary myoblast 48 hr after BI treatment in GM and DM (n = 3); (F) Relative mRNA level of eMyHC in primary myoblast after BI treatment in GM and DM, data represent mean ± s.e.m. (t-test: *p<0.05; n = 3, biological replicates).
+
 As Plk1 KO activates Cas3, which is necessary for myogenic differentiation (Larsen et al., 2010), we also examined the effect of Plk1 inhibition on differentiation of myoblasts. As deletion of Plk1 in proliferating myoblasts leads to cell death and precludes analysis of cell differentiation, we used BI2536 to inhibit Plk1 activity in myoblasts. Interestingly, myosin heavy chain (marked by MF20), markers of myogenic differentiation, was observed in 15% of myoblasts treated with BI2536, but rarely observed in control myoblasts cultured in growth media without BI2536 (Figure 6—figure supplement 2A–B). This suggests that Plk1 inhibition promotes premature differentiation of myoblasts. When BI2536 was added to myoblasts at the onset of serum withdrawal-induced myogenic differentiation, the fusion index at 48 hr was increased by 30% compared to vehicle treatment controls (Figure 6—figure supplement 2C–D). The protein and mRNA levels of MF20 were increased by Plk1 inhibition under both growth and differentiation conditions (Figure 6—figure supplement 2E–F). These results demonstrate that pharmacological inhibition of Plk1 in primary myoblasts promote their differentiation.
 
-## DNA damage response and p53 are induced in Plk1-null MuSCs
+### DNA damage response and p53 are induced in Plk1-null MuSCs
 
 To understand how Plk1 deletion and inhibition leads to the apoptosis of myoblasts, we first examined DNA damage response (DDR), revealed by the presence of phosphorylated histone 2A family member X (γH2AX) (Paull et al., 2000). We found that Plk1 null MuSCs (labeled by Cav1) that were arrested at undivided stage had very strong γH2AX signal (Figure 7A). This is in sharp contrast to control cells that contained very few small puncta of γH2AX signal (Figure 7A). Similarly,~80% of cultured Plk1 KO primary myoblasts were strongly γH2AX+ at 2 days after 4-OHT induction, whereas only ~23% control WT myoblast exhibited weak γH2AX signal (Figure 7B–C). We also analyzed DNA fragmentation of BI2536 treated myoblasts using single-cell gel electrophoresis assay, revealing that 70% of myoblasts accumulated DNA damage after BI2536 treatment (Figure 7D). Among these, 55% of myoblasts were scored as moderate damage (Classes 1–3) and 15% were scored as maximal damage (Class 4) (Figure 7E). In contrast, 95% control myoblasts were fragmentation-free and only 5% control myoblasts displayed moderate DNA damage (Figure 7E). We also synchronized cell cycle with double thymidine block and release (Figure 7—figure supplement 1A). The Plk1 KO (4-OHT treated) myoblasts exhibited more abundant γH2AX signal than control myoblasts at 8 hr after the release, but no differences in TUNEL signal were observed between the two groups (Figure 7—figure supplement 1B), suggesting DNA damage precedes apoptosis. At 12 hr after release, TUNEL+ myoblasts were significantly increased in 4-OHT treated groups (~80%) and all the 4-OHT-treated myoblast were TUNEL positive at 16 hr and 24 hr after release. Consistently, we also found that γH2AX signal was increased by approximately fourfold in BI2536-treated myoblasts compared to control myoblasts (Figure 7—figure supplement 1C–D). These results are in agreement with the pivotal role of Plk1 in DNA damage checkpoint regulation (Takaki et al., 2008), and demonstrate that deletion of Plk1 in MuSCs accumulates DNA damage response and leads to apoptosis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunofluorescence of γH2AX (red) and Caveolin-1 (green) in MuSCs on EDL myofibers cultured for 72 hr. Myofibers were isolated from Plk1PKO mice and treated with 4-OHT to induced Plk1 deletion (methanol: vehicle control), scale bar: 10 μm; (B) Representative images of γH2AX staining in primary myoblast isolated from Plk1PKO mice, treated with 4-OHT or methanol, and cultured for 48 hr, nuclei were counterstained with DAPI, scale bar: 50 μm; (C) Quantification of percentages γH2AX+ myoblasts after treatment shown in B, data represent mean ± s.e.m. (t-test: **p<0.01; n = 3, biological replicates(mice), three replicates/mouse, 25–50 myoblasts/replicate were analyzed); (D) Representative images of single-cell gel electrophoresis under alkaline conditions in primary myoblasts 24 hr after BI2536 treatment; (E) Percentage of myoblasts with different levels of DNA damage, presented as no damage, moderate damage (classes 1–3) and maximal damage (class 4), data represent mean ± s.e.m. (t-test: *p<0.05; n = 3, biological replicates (mice), three replicates/mouse, 25–50 myoblasts/replicate were analyzed); (F) Western blot showing relative levels of p53 and Phospho-ATR in Plk1PKO primary myoblast at 24 hr after methanol or 4-OHT treatment; (G) Representative images of cleaved Caspase-3 (red) staining in primary myoblast 24 hr after 4-OHT together with DMSO (left panel) or p53 inhibitor (p53i) treatment (right panel), nuclei were counterstained with DAPI, scale bar: 50 μm, (H) Quantification of C-Cas3+ apoptotic cells at 24 hr after methanol or 4-OHT together with p53 inhibitor or ATM/ATR inhibitor treatment, data represent mean ± s.e.m. (t-test: p<0.05; n = 3, biological replicates, 25–50 myoblasts from three replicates from three individual mice were counted for quantification).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/47097/elife-47097-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic showing timing of double thymidine and 4-OHT/methanol treatment, and sample collection; (B) Immunofluorescence of γH2AX and TUNEL after double thymidine block/release for 8 and 12 hr, (C) Representative images of γH2AX staining in primary myoblasts 24 hr after BI treatment; (D) Percentage of γH2AX + myoblasts after treatment, data represent mean ± s.e.m. (t-test: *p<0.05; n = 5, biological replicates, 25–50 myoblasts from three replicates from five different treatments were counted for quantification).
 
 Finally, we explored the molecular mechanism mediating the defective DDR and apoptosis of Plk1-null MuSCs. The tumor suppressor p53, known to play a pivotal role in DDR and cell survival, was reported to be upregulated by Plk1 inhibition in cancer cells (Liu and Erikson, 2003). WB analysis showed that p53 protein level was massively elevated in Plk1 KO myoblasts compared to control myoblasts (Figure 7F). In contrast, Plk1 KO did not affect the level of Phospho-ATR (Figure 7F), which has been reported to play a role in G2 checkpoint (Cimprich and Cortez, 2008). To examine if p53 upregulation is responsible for cell apoptosis, we used Pifithrin-α (2 nM, Sigma) to inhibit p53 in control and Plk1 KO myoblasts. We found that 4-OHT-induced deletion of Plk1 led to more than 80% of apoptotic cells (C-Caspase three positive) within 36 hr, and inhibition of p53 significantly reduced apoptosis of Plk1-null myoblasts (Figure 7G,H). However, inhibition of ATR failed to rescue the apoptosis of Plk1-null myoblasts (Figure 7H), suggesting that apoptosis occurred prior to the G2-checkpoint. Interestingly, inhibition of p53 or ATR/ATM alone in WT myoblasts increased their apoptosis (Figure 7H), consistent with the notion that p53 and ATR promotes cell survival in the absence of DNA damage (Reinhardt et al., 2007; Sakaguchi et al., 1998). Altogether, these results point to the upregulation of p53 as a key driver of cell cycle arrest and apoptosis in the Plk1-null MuSCs.
 
@@ -98,50 +146,256 @@ PLK1 is highly expressed in several cancer types, and thus represents a druggabl
 
 ## Materials and methods
 
-## Mice and animal care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Plk1flox</td>
+      <td>Pubmed</td>
+      <td>PMID: 27417127</td>
+      <td>Dr. Guillermo de Cárcer (Spanish National Cancer Research Centre)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Myodcre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 014140 RRID:IMSR_JAX:014140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax7creER</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012476 RRID:IMSR_JAX:012476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pax7(PAX7) mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# pax7 RRID:AB_528428</td>
+      <td>IHC (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MyoG mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# PCRP-MYOG-1C5 RRID:AB_2722260</td>
+      <td>IHC (1:500) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MF20 mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# MF 20 RRID:AB_2147781</td>
+      <td>IHC (1:50) WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eMyHC mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# F1.652 RRID:AB_528358</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Plk1 rabbit polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4535 RRID:AB_2252687</td>
+      <td>IHC (1:500) WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MyoD mouse monoclonal</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-377460</td>
+      <td>IHC (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Dystrophin rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab15277 RRID:AB_301813</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67 rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab15580 RRID:AB_443209</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-Histone H3 rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9701 RRID:AB_331535</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-ATR rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 30632 RRID:AB_2798992</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p53 rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9282 RRID:AB_331476</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cleaved Caspase-3 rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9661 RRID:AB_2341188</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H2A.X, phospho mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>Cat# ab26350 RRID:AB_470861</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 goat polyclonal antimouse IgG1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21121 RRID:AB_141514</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 goat polyclonal antirabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11034 RRID:AB_2576217</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>568 goat polyclonal antimouse IgG1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21124 RRID:AB_2535766</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>488 goat polyclonal antirabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21244 RRID:AB_2535812</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat polyclonal anti-rabbit IgG</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 111-035-003 RRID:AB_2313567</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat polyclonal anti-mouse IgG</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat# 115-035-003 RRID:AB_10015289</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BI2536</td>
+      <td>Selleckchem</td>
+      <td>Cat# S1109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pifithrin-α</td>
+      <td>Sigma</td>
+      <td>Cat# P4359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGK733</td>
+      <td>Sigma</td>
+      <td>Cat# C9867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>propidium iodide</td>
+      <td>Sigma</td>
+      <td>Cat# P4170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Annexin V</td>
+      <td>Invitrogen</td>
+      <td>Cat# V13241</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice and animal care
 
 MyodCre (#014140), Pax7CreER (#012476) mice were obtained from Jackson Laboratory and housed in the animal facility with free access to water and standard rodent chow. Plk1f/f mice was a gift from Dr. Cárcer from Spanish National Cancer Research Centre (CNIO), Madrid, Spain (Wachowicz et al., 2016). Mice were genotyped by PCR of ear DNA using primers listed in Supplementary file 2. The genotypes of experimental KO and associated control animals are as follows: Plk1PKO (Pax7CreER::Plk1f/f) and wild type (Plk1f/f), Plk1MKO (MyodCre::Plk1f/f) and wild type (Plk1f/f). Mouse maintenance and experimental use were performed according to protocols approved by the Purdue Animal Care and Use Committee.
 
-## Muscle injury and regeneration
+### Muscle injury and regeneration
 
 Muscle regeneration was induced by injections of cardiotoxin (CTX, sigma) into the tibialis anterior (TA) muscles of 8–12 week-old male mice. Mice were anesthetized using a ketamine-xylazine cocktail, and 50 μl saline or 50 μl of 10 μM CTX was injected into TA muscles in the absence or presence of 10 μg BI2536. Muscles were then harvested at different days post-injection to assess the completion of regeneration, repair and gene expression. Tamoxifen (Calbiochem) was prepared in corn oil at a concentration of 10 mg ml−1, and experimental and control mice were injected intraperitoneally at 2 mg per day per 20 g body weight for 5 days to induce Cre-mediated deletion.
 
-## Isolation, culture and differentiation of primary myoblast
+### Isolation, culture and differentiation of primary myoblast
 
 Primary myoblasts were isolated from hind limb skeletal muscle of 6-week-old male mice as previously described (Yue et al., 2017). Muscle tissues were minced and digested in type II collagenase and Dispase B mixture (Roche). Digested cells were harvested and cultured in growth media, F-10 Ham’s medium (Thermo Fisher Scientific) supplemented with 20% fetal bovine serum (FBS, Atlanta), 4 ng/ml basic fibroblast growth factor (Thermo Fisher Scientific) and 1% penicillin-streptomycin (Thermo Fisher Scientific) on collagen-coated dishes. Primary myoblasts were isolated and purified after 2–3 times of pre-plate. For in vitro genetic deletion, 4-OHT (0.4 μM, Calbiochem) was added in culture medium for 1 day to induce Cre-mediated deletion. P53 (Pifithrin-α, Sigma) and ATM/ATR (CGK733, Sigma) inhibitor were used according to the manufactory’s protocol and treated the myoblast together with 4-OHT or Methanol. Muscle differentiation was induced using 80% confluence of isolated primary myoblasts in Dulbecco's Modified Eagle Medium (DMEM, Sigma,) supplemented with 2% horse serum (Sigma). Differentiated cells were kept in differentiation media for further analysis.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 The amount of DNA present in the cell was detected by Flow cytometry using propidium iodide (PI) staining. For each single test, Pax7CreER::Plk1f/f myoblasts from three individual were harvest from a 10 cm dish after treated with 4-OHT or Methanol for 1 day. Then the myoblasts were washed in PBS for twice and fixed in pre-cooled 70% ethanol for overnight. After another two times of wash with PBS, myoblasts were centrifuged, and the pellet was resuspended with PBS containing 10 μg/ml ribonuclease. Suspended myoblasts were incubated at 37°C for 1 hr and the 10 μl (2 mg/ml) PI was added and incubated at 4°C for more than 1 hr before analysis using a BD flow cytometer.
 
 Apoptosis of myoblasts was detected by Flow cytometry using Alexa Fluor 488 annexin V and PI (Invitrogen, V13241) double staining. For each single test, Pax7CreER::Plk1f/f myoblasts from two individual were digested using trypsin from two 10 cm dishes after treated with 4-OHT or Methanol for 36 hr. Then the myoblasts were washed with pre-cooled PBS and centrifuged. The pellet was resuspended with 100 μl of 1X annexin-binding buffer, then 5 µL Alexa Fluor 488 annexin V and 1 µL 100 µg/mL PI working solution was added to each cell suspension. The mixtures were incubated at room temperature for 15 min then 400 μl 1X annexin-binding buffer was added before analysis using a BD flow cytometer.
 
-## Isolation and culture of single fiber
+### Isolation and culture of single fiber
 
 Single fibers were isolated from extensor digitorum longus (EDL) muscles of adult mice as previously described (Pasut et al., 2013). Briefly, intact EDL muscles were digested in 0.2% type I collagenase (Sigma) in DMEM and incubated for approximately 1 hr at 37°C. Fibers were then liberated from the muscle bulk using graded glass pipettes. Suspended ﬁbers were cultured in 60 mm horse-serum-coated plates in DMEM supplemented with 10% FBS, 4 ng/ml basic fibroblast growth factor (Promega), and 1% penicillin-streptomycin for 3 days. Freshly isolated ﬁbers and cultured ﬁbers were then ﬁxed in 4% paraformaldehyde (PFA) for subsequent immunofluorescent analysis. MuSCs from at least 20 fibers were stained and count for statistical analysis.
 
-## Hematoxylin–eosin and immunofluorescence staining
+### Hematoxylin–eosin and immunofluorescence staining
 
 Fresh TA muscles and hind limb were embedded in optimal cutting temperature compound (OCT, Tissue-Tek) and frozen in isopentane that was chilled on dry ice. Frozen muscles were then cut into 10 μm-thick cross-sections by using a Leica CM1850 cryostat (Leica). For hematoxylin and eosin staining, the slides were first stained in hematoxylin for 15 min, rinsed in running tap water and then stained in eosin for 1 min. Slides were dehydrated in graded ethanol and Xylene, and then covered using Permount. Stained images were captured with a Nikon D90 digital camera installed on a Leica DM6000 (Leica) inverted microscope.
 
 Immunofluorescence was performed on cross-sections, myofiber explants, primary myoblasts and differentiated myotubes. Briefly, samples were fixed in 4% PFA (paraformaldehyde) for 5 min and then permeabilized and blocked in PBS containing 5% goat serum, 2% bovine serum albumin (BSA), 0.2% Triton X-100, and 0.1% sodium azide for 1 hr. Samples were subsequently incubated with primary antibodies (Key resources table) overnight at 4°C. After washing with PBS, the samples were incubated with secondary antibodies and DAPI for 1 hr at room temperature. Fluorescent images were captured with a CoolSnap HQ charge coupled-device camera (Photometrics) by using a Leica DM6000 microscope (Leica). 10 separated images were taken and count in each experimental groups.
 
-## In situ TUNEL assay to detect cell apoptosis
+### In situ TUNEL assay to detect cell apoptosis
 
 For TUNEL and Pax7 staining, slides were fixed in 4% PFA for 10 min and then subjected to the TUNEL reaction using the CF488A TUNEL Assay Apoptosis Detection Kit (Biotium) according to the manufacturer’s instructions. For negative control, samples were added TUNEL reaction buffer without TdT Enzyme. Samples treated with H2O2 (100 mM) for 30 min before TUNEL staining was set up as positive control. Counterstaining of Pax7 was then performed as regular immunofluorescence staining procedure.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA from muscle tissue and myoblast was extracted by using Trizol reagent (Thermo Fisher Scientific). The first-strand cDNA was generated with random primer with MMLV Reverse Transcriptase (Thermo Fisher Scientific). Real-time PCR reactions were performed with a SYBR green PCR kit (Roche) in the Roche LightCycler 480 System (Roche). Primers for the genes of interest were all derived from the primer bank (Harvard Medical School) and were listed in Supplementary file 2. Gene expression was determined with the 2-ΔΔCt relative quantification method and normalized to 18 s expression.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Protein was extracted from homogenized muscle tissue or muscle cells (For Plk1-null myoblasts, each sample represent proteins extract from one 10 cm culture dish) with RIPA buffer that contained a protease inhibitor cocktail (Sigma) and phosphatase inhibitors NaF and Na3VO4. Protein concentration was measured using the BCA protein quantification kit (Pierce). Equal amounts of each protein sample were loaded for electrophoresis (Bio-Rad). Proteins were then transferred to a PVDF membrane (Biorad) and incubated with primary antibodies, followed by anti-rabbit or anti-mouse immunoglobulin G-horseradish peroxidase secondary antibody (Cell Signaling Technology). Signals were detected using fluorescence or chemiluminescence Western blot detection reagent (Santa Cruz Biotechnology) on a FluorChem E system (Protein Simple). Antibodies used for western blot analysis were listed in Key resources table.
 
-## Single-cell gel electrophoresis
+### Single-cell gel electrophoresis
 
 Single cell gel electrophoresis assay was performed in primary myoblast as previously described (Collins, 2004). Briefly, 10,000 cells were collected in 10 μl PBS and mixed with 75 μl of 0.5% low-melting point agarose. The cell-agarose mixture was then placed on a chilled and fully frosted slide with a 1% normal-melting point agarose coating layer. Subsequently, the slide was submerged in lysis solution (2.5 M NaCl, 100 mM Na2EDTA, 10 mMTris, pH 10, 1% Sodium Sarcosinate with 1% triton X-100% and 10% DMSO being 1 hr before use) overnight at 4°C. Electrophoreses were carried out in alkaline electrophoresis buffer (1 mM Na2EDTA and 300 mM NaOH, pH >13) at 24 v, 300 milliamperes for 30 min. The slide was then neutralized and stained with 1 μg/ml DAPI for 15 min. Images were captured with CoolSnap HQ charge coupled-device camera (Photometrics) by using a Leica DM6000 microscope (Leica). 100 nuclei were measured by their tail DNA content for each treatment, and scored five classes (0–4) according to previous protocol (Collins, 2004). Class 0 represent 0% DNA is in tail and class 4 means 100% DNA is in the tail, respectively. Classes 1–3 are in between 0 and 100% and with an increment from 1 to 3.
 
-## Statistical analysis
+### Statistical analysis
 
 All analyses were conducted with Student's t-test (two-tail). All experimental data were presented as mean ± SEM. Comparisons with p values < 0.05 or <0.01 were considered statistically significant.

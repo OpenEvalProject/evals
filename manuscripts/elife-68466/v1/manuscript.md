@@ -27,7 +27,7 @@
 
 ## Abstract
 
-DNA double-strand break (DSB) repair by homologous recombination (HR) is thought to be restricted to the S- and G 2 - phases of the cell cycle in part due to 53BP1 antagonizing DNA end resection in G 1 -phase and non-cycling quiescent (G 0 ) cells. Here, we show that LIN37, a component of the DREAM transcriptional repressor, functions in a 53BP1-independent manner to prevent DNA end resection and HR in G 0 cells. Loss of LIN37 leads to the expression of HR proteins, including BRCA1, BRCA2, PALB2, and RAD51, and promotes DNA end resection in G 0 cells even in the presence of 53BP1. In contrast to 53BP1-deficiency, DNA end resection in LIN37-deficient G 0 cells depends on BRCA1 and leads to RAD51 filament formation and HR. LIN37 is not required to protect DNA ends in cycling cells at G 1 -phase. Thus, LIN37 regulates a novel 53BP1-independent cell phase-specific DNA end protection pathway that functions uniquely in quiescent cells.
+DNA double-strand break (DSB) repair by homologous recombination (HR) is thought to be restricted to the S- and G2- phases of the cell cycle in part due to 53BP1 antagonizing DNA end resection in G1-phase and non-cycling quiescent (G0) cells. Here, we show that LIN37, a component of the DREAM transcriptional repressor, functions in a 53BP1-independent manner to prevent DNA end resection and HR in G0 cells. Loss of LIN37 leads to the expression of HR proteins, including BRCA1, BRCA2, PALB2, and RAD51, and promotes DNA end resection in G0 cells even in the presence of 53BP1. In contrast to 53BP1-deficiency, DNA end resection in LIN37-deficient G0 cells depends on BRCA1 and leads to RAD51 filament formation and HR. LIN37 is not required to protect DNA ends in cycling cells at G1-phase. Thus, LIN37 regulates a novel 53BP1-independent cell phase-specific DNA end protection pathway that functions uniquely in quiescent cells.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Whether pathways exist in addition to 53BP1 and RIF1/shieldin that protect DNA e
 
 ## Results
 
-## Identification of novel factors that regulate DNA end resection
+### Identification of novel factors that regulate DNA end resection
 
 Murine pre-B cells transformed with the Abelson murine leukemia virus kinase, hereafter referred to as abl pre-B cells, are rapidly cycling cells (Rosenberg et al., 1975). When treated with the abl kinase inhibitor, imatinib, abl pre-B cells stop cycling with a predominantly 2N DNA content indicative of them being in G0/G1 (Bredemeyer et al., 2006; Muljo and Schlissel, 2003). Imatinib treated abl pre-B cells that ectopically express Bcl2 survive in culture for several days and we refer to these cells as non-cycling abl pre-B cells (Bredemeyer et al., 2006).
 
@@ -47,37 +47,69 @@ DNA DSBs in G0/G1 cells are repaired by NHEJ, which requires DNA Ligase 4 to jo
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig1-v1.jpg)
 
-**Figure 1.:** (A) Flow cytometric analysis of chromatin-bound RPA before and after IR of non-cycling Lig4−/− and Lig4−/−:Trp53bp1−/− abl pre-B cells. (B) Flow cytometric analysis of FLAG-Cas9 in Lig4−/− cells with (+dox) and without (−dox) doxycycline to induce expression of FLAG-Cas9. (C) Schematic diagram of the genome-scale guide RNA screen for genes preventing DNA end resection in non-cycling Lig4−/− abl pre-B cells. (D) Enrichment score (fold enrichment) of individual gRNAs to a subset of genes identified in the RPA high population. gRNA, guide RNA; IR, ionizing radiation.Figure 1—source data 1.Lig4−/− abl pre-B cells.
+**Figure 1.:** (A) Flow cytometric analysis of chromatin-bound RPA before and after IR of non-cycling Lig4−/− and Lig4−/−:Trp53bp1−/− abl pre-B cells. (B) Flow cytometric analysis of FLAG-Cas9 in Lig4−/− cells with (+dox) and without (−dox) doxycycline to induce expression of FLAG-Cas9. (C) Schematic diagram of the genome-scale guide RNA screen for genes preventing DNA end resection in non-cycling Lig4−/− abl pre-B cells. (D) Enrichment score (fold enrichment) of individual gRNAs to a subset of genes identified in the RPA high population. gRNA, guide RNA; IR, ionizing radiation.
 
 To facilitate our screen for gRNAs that increase the association of RPA with DSBs, we introduced a lentivirus containing a FLAG-Cas9 cDNA under the control of a doxycycline-inducible promoter into Lig4−/− abl pre-B cells. Immunodetection of the FLAG epitope allowed flow cytometric assessment of FLAG-Cas9 protein expression upon doxycycline treatment, showing that FLAG-Cas9 can be induced in all the cells in the population (Figure 1B). A lentiviral mouse gRNA library containing approximately 90,000 gRNAs to 18,000 mouse genes was introduced into these cells followed by doxycycline treatment for 7 days to promote Cas9-gRNA-mediated gene inactivation (Figure 1C; Tzelepis et al., 2016). After 2 days of imatinib treatment to render these cells non-cycling, the cells were subjected to irradiation (IR) and those with the highest level (top 10%) of chromatin-bound RPA were isolated by flow cytometric cell sorting (Figure 1C). The gRNAs from this ‘RPA-high’ cell population were sequenced, and the frequency of individual gRNAs in the RPA-high population relative to those in the ‘RPA-low’ population was determined.
 
 Multiple gRNAs to genes encoding proteins known to prevent DNA end resection such as 53BP1, RIF1, and shieldin subunits were enriched in the RPA-high cell population, demonstrating the veracity of this screening approach (Figure 1D and Figure 1—source data 1). In addition, several gRNAs to Lin37, a gene encoding the LIN37 subunit of the MuvB complex, were also highly enriched in RPA-high cells (Figure 1D and Figure 1—source data 1; Litovchick et al., 2007). When bound to the pocket proteins p130/p107, and E2F proteins E2F4/5 and DP, the MuvB complex forms the DREAM transcription repressor complex, which functions to repress genes that promote entry into the cell cycle (Litovchick et al., 2007; Sadasivam and DeCaprio, 2013; Mages et al., 2017).
 
-## RPA accumulation at DNA DSBs in non-cycling LIN37-deficient cells
+### RPA accumulation at DNA DSBs in non-cycling LIN37-deficient cells
 
 We generated DNA Ligase 4-deficient abl pre-B cells that were deficient in LIN37 (Lig4-−/−:Lin37−/−) (Figure 2A). Similar to 53BP1-deficient abl pre-B cells, LIN37-deficient cells also exhibited increased RPA association with DSBs in chromatin after IR, with most of the cells lacking LIN37 having even more chromatin-bound RPA after IR than cells lacking 53BP1 (Figure 2B). This is not a consequence of increased IR-induced DNA damage in the absence of LIN37, because all the cells had similar levels of γH2AX indicative of similar DNA DSB generation in response to IR (Figure 2B). Analyses of non-cycling wild type (WT), Trp53bp1−/−, and Lin37−/− abl pre-B cells that expressed Ligase 4 yielded similar results, indicating that RPA binding at DSBs in 53BP1 and LIN37 deficient abl pre-B cells does not depend on DNA Ligase 4 deficiency (Figure 2—figure supplement 1). After irradiation, RPA phosphorylation at serine 4 and serine 8 of the RPA32 subunit was also detected at higher levels in non-dividing Lig4−/−:Trp53bp1−/− and Lig4−/−:Lin37−/− as compared to Lig4−/− abl pre-B cells, further suggesting that this RPA binding is at resected DNA ends (Figure 2C; Maréchal and Zou, 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig2-v1.jpg)
+
+**Figure 2.:** (A) Western blot analysis of indicated proteins in Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. (B) Flow cytometric analysis of chromatin-bound RPA (top) and γH2AX (bottom) before and after IR of non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. The experiments were repeated in two independently generated cell lines at least twice. (C) Western blot analysis of RPA32 and phosphorylated RPA 32 (pRPA32(S4/S8)) of non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells treated without or with IR after indicated times. (D) Flow cytometric analysis of cycling and non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells for BrdU incorporation and DNA content (7-AAD). Percentage of cells in S-phase is indicated. (E) Representative images of IR-induced RPA foci in non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells from two independent experiments. (F) Western blot analysis of indicated proteins in WT, Trp53bp1−/−, and Lin37−/− MCF10A cells. (G) Flow cytometric analysis of BrdU pulsed cycling (top) or non-cycling (bottom) WT, Trp53bp1−/−, and Lin37−/− MCF10A cells as in (D). (H, I) Flow cytometric analysis of chromatin-bound RPA (top) and γH2AX (bottom) before or after IR of non-cycling WT and (H) Trp53bp1−/− or (I) Lin37−/− MCF10A cells. IR, ionizing radiation; WT, wild type.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot analysis of indicated proteins in WT, Trp53bp1−/−, and Lin37−/− abl pre-B cells. (B) Flow cytometric analysis of BrdU and DNA (7-AAD) of BrdU pulsed cycling (top) or non-cycling (bottom) WT, Trp53bp1−/−, and Lin37−/− abl pre-B cells. Percentage of cells in S-phase is indicated. (C, D) Flow cytometric analysis of chromatin-bound RPA (top panels) and γH2AX (bottom panels) before or after IR of non-cycling WT and Trp53bp1−/− (C) or Lin37−/− (D) abl pre-B cells. The experiments were repeated in two independently generated cell lines at least twice. IR, ionizing radiation.
 
 LIN37 is a component of the DREAM complex, which along with RB prevents cells from entering S-phase where resection of DNA ends and RPA loading normally occur at DSBs as part of HR (Weinberg, 1995; Sadasivam and DeCaprio, 2013; Ciccia and Elledge, 2010). However, loss of LIN37 does not cause imatinib-treated abl pre-B cells to enter S-phase as evidenced by imatinib-treated Lig4−/−:Lin37−/− abl pre-B cells having primarily 2N DNA content and not incorporating BrdU, which is indicative of DNA synthesis in S-phase cells (Figure 2D). If RPA is binding to chromatin at DSBs this binding should form discrete RPA IR-induced foci (IRIF) that can be visualized by immunofluorescence staining. Indeed, chromatin-bound RPA in IR treated non-cycling Lig4−/−:Trp53bp1−/− and Lig4−/−:Lin37−/− abl pre-B cells formed discrete nuclear foci indicative of localization at DSBs (Figure 2E).
 
 To evaluate LIN37 function in a different cell type using a distinct approach to render them non-cycling, we generated LIN37- and 53BP1-deficient MCF10A human mammary epithelial cells. Upon withdrawal of epidermal growth factor (EGF) these cells stop cycling, have 2N DNA content, and lack of BrdU incorporation consistent with the notion that they are in G0/G1 (Figure 2F and G). Non-cycling Lin37−/− and Trp53bp1−/− MCF10A cells also exhibited increased chromatin-bound RPA after IR as compared to WT MCF10A cells (Figure 2H and I), indicating that the function of LIN37 in suppressing RPA accumulation at DNA DSBs in non-cycling cells is conserved in human and mouse. As was seen above in murine cells, the extent of RPA accumulation in human cells lacking LIN37 after IR was greater than seen in cells lacking 53BP1, suggesting that LIN37 plays an important role in preventing DNA end resection and extensive generation of ssDNA at DSBs in non-cycling mammalian cells (Figure 2H and I).
 
-## DNA ends are resected in non-cycling LIN37-deficient cells
+### DNA ends are resected in non-cycling LIN37-deficient cells
 
 The CtIP nuclease is required to initiate DNA end resection during HR and DNA ends in non-cycling abl pre-B cells that are deficient in H2AX undergo resection that depends on CtIP (Sartori et al., 2007; Helmink et al., 2011). To determine whether IR-induced RPA association with chromatin in LIN37-deficient abl pre-B cells also depends on CtIP, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells that expressed a Ctip gRNA were treated with doxycycline to induce Cas9 expression and maximal CtIP protein reduction, due to Ctip gene inactivation, prior to analysis (Figure 3A). This approach, which we refer to as ‘bulk gene inactivation’, allows for the depletion of proteins normally required for cell division and viability. The chromatin-bound RPA in IR treated non-cycling Lig4−/−:Lin37−/− and Lig4−/−:Trp53bp1−/− abl pre-B cells depended on CtIP (Figure 3A), indicating that the increased level of chromatin-bound RPA after IR in cells lacking LIN37 or 53BP1 is due to DNA end resection that would lead to the generation of ssDNA.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cas9-induced Lig4−/−:Trp53bp1−/− and Lig4−/−:Lin37−/− abl pre-B cells with (+) and without (−) the Ctip gRNA (gCtip). Western blot analysis with indicated antibodies (left) and flow cytometric analysis of chromatin-bound RPA before and after IR of the non-cycling cells (right) are shown. Representative of three experiments. (B) End-seq tracks of representative AsiSI sites on mouse chromosomes 1, 7, and 19 in non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells. (C) The heatmaps of End-seq at AsiSI DSBs across the mouse genome (y-axis) after AsiSI induction in non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells. Two experiments were carried out in two independently generated Lig4−/−:iAsiSI and Lig4−/−:Lin37−/−:iAsiSI clones. DSB, double-strand break; End-seq, End Sequencing; gRNA, guide RNA; IR, ionizing radiation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flow cytometric analysis of BrdU incorporation and DNA content (7-AAD) of WT abl pre-B cells after treated with Palbociclib. (B) Western blot analysis of WT abl pre-B cells treated with or without Palbociclib using indicated antibodies. (C) Flow cytometric analysis of chromatin-bound RPA before or after IR of non-cycling Lig4−/−:Trp53bp1−/− and Lig4−/−:Lin37−/− abl pre-B cells treated with or without Palbociclib 1 hr prior to IR. IR, ionizing radiation; WT, wild type.
 
 CDK-dependent phosphorylation of CtIP is required to promote DNA end resection in cycling cells (Huertas and Jackson, 2009; Huertas et al., 2008). We treated non-cycling Lig4−/−:Lin37−/− and Lig4−/−:Trp53bp1−/− abl pre-B cells with the CDK4/6 inhibitor Palbociclib at a concentration sufficient to arrest abl pre-B cells in G1 (Figure 3—figure supplement 1A) and reduce RB phosphorylation (Figure 3—figure supplement 1B), which are both CDK4/6-dependent (Pennycook and Barr, 2020; Weinberg, 1995). Palbociclib treatment of imatinib-treated non-cycling Lig4−/−:Lin37−/− and Lig4−/−:Trp53bp1−/− abl pre-B cells did not affect the levels of chromatin-bound RPA after IR, indicating CtIP-dependent resection in non-cycling cells does not require CDK4/6 activity (Figure 3—figure supplement 1C).
 
 To gain direct evidence of DNA DSB end resection in LIN37-deficient abl pre-B cells, DNA End Sequencing (End-seq) was used to directly assay DNA end structures at approximately 200 AsiSI sites in abl pre-B cells with an inducible AsiSI endonuclease (iAsiSI) (Canela et al., 2016). End-seq allows for nucleotide resolution mapping of length and end position of DNA end resection at DSBs generated throughout the genome (Canela et al., 2016). The End-seq analysis revealed that while AsiSI DSBs in non-cycling Lig4−/−:iAsiSI abl pre-B cells were minimally resected (<200 bp), those in non-cycling Lig4−/−:Lin37−/−:iAsiSI abl pre-B cells were resected up to 2 kb (Figure 3B and C). We conclude that loss of LIN37 leads to the CtIP-dependent resection of broken DNA ends in non-cycling cells.
 
-## LIN37 and 53BP1 are in distinct pathways of DNA end protection
+### LIN37 and 53BP1 are in distinct pathways of DNA end protection
 
 53BP1 and its downstream effector proteins protect DNA ends from resection through multiple potential mechanisms (Setiaputra and Durocher, 2019; Mirman and de Lange, 2020; Bunting et al., 2010). To determine whether LIN37 functions in the same pathway as 53BP1, we first examined whether loss of LIN37 alters the expression levels of key proteins in the 53BP1 pathway. In this regard, western blot analysis revealed that loss of LIN37 did not lead to reduction in the levels of 53BP1, RIF1, or SHLD1 proteins in cycling or non-cycling abl pre-B cells (Figure 4A and Figure 4—figure supplement 1A). Moreover, after IR treatment, robust and near equivalent numbers of 53BP1 and RIF1 foci form in non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells, demonstrating that both 53BP1 and RIF1 efficiently localize to DSBs in LIN37-deficient cells (Figure 4B and C, Figure 4—figure supplement 1B and C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig4-v1.jpg)
+
+**Figure 4.:** (A) Western blot analysis of indicated proteins in cycling and non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. (B, C) Quantification of 53BP1 (B) or RIF1 (C) foci after IR treatment of non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. Red bars indicate the median number of foci in each sample. More than 1000 cells were analyzed in each cell line in two independent experiments (****p<0.0001, ***p=0.0002, Mann-Whitney test). (D, E) Flow cytometric analysis of chromatin-bound RPA before and after IR of non-cycling Lig4−/−:Trp53bp1−/− (D) or Lig4−/−:Lin37−/− (E) abl pre-B cells after bulk gene inactivation of Lin37 (gLin37) or Trp53bp1 (gTrp53bp1), respectively. Representative of three experiments. IR, ionizing radiation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blot analysis of indicated proteins in cycling and non-cycling WT, Trp53bp1−/−, and Lin37−/− abl pre-B cells. (B, C) Representative images of 53BP1 (B) or RIF1 (C) foci after IR treatment of non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. IR, ionizing radiation.
+
 To test whether 53BP1 and LIN37 protect DNA ends using the same or different pathways, we conducted an epistasis analysis of DNA end resection in non-cycling cells lacking LIN37, 53PB1, or both of these proteins. To this end, a Lin37 gRNA was used to carry out bulk Lin37 inactivation in Lig4−/−:Trp53bp1−/− abl pre-B cells (Figure 4D). Loss of LIN37 in non-cycling Lig4−/−:Trp53bp1−/− abl pre-B cells led to an increase in chromatin-bound RPA after IR, as compared to non-cycling Lig4−/−:Trp53bp1−/− abl pre-B cells that express LIN37 (Figure 4D). Similarly, the loss of 53BP1 in non-cycling Lig4−/−:Lin37−/− abl pre-B cells also led to increased chromatin-bound RPA after IR (Figure 4E). Given the additive effect of inactivation of both LIN37 and 53BP1, we conclude that in non-cycling cells 53BP1 and LIN37 are part of mechanistically distinct pathways that are both required to protect DNA ends from resection.
 
-## LIN37 suppresses the expression of DNA end resection and HR proteins in non-cycling cells
+### LIN37 suppresses the expression of DNA end resection and HR proteins in non-cycling cells
 
 As LIN37 participates in the formation of the DREAM transcriptional repressor, we considered the possibility that LIN37 may protect DNA ends through the suppression of genes encoding pro-resection proteins (Sadasivam and DeCaprio, 2013). A mutant form of LIN37, LIN37CD, does not associate with the DREAM complex and while DREAM lacking LIN37 binds to its target genes, it cannot repress their expression (Mages et al., 2017). Expression of WT LIN37, but not LIN37CD, in non-cycling Lig4−/−:Lin37−/− abl pre-B cells decreased IR-induced chromatin-bound RPA (Figure 5A). That DNA end protection in LIN37-deficient cells can be restored by WT LIN37, but not LIN37CD, suggests that LIN37 functions to protect DNA ends through its activity in the DREAM transcriptional repressor.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig5-v1.jpg)
+
+**Figure 5.:** (A) Western blot analysis (top) and flow cytometric analysis for chromatin-bound RPA after before or after IR (bottom) of non-cycling Lig4−/−:Lin37−/− abl pre-B cells with empty lentivirus or lentivirus expressing wild type (WT) LIN37 or the LIN37 (CD) mutant. Representative of three experiments. (B) Volcano plot of RNA-Seq analysis of non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells showing log2 values of the ratio of normalized transcript levels of Lig4−/−:Lin37−/− to Lig4−/− cells (X-axis) and −log10 of the q-values of fold enrichment of each gene (Y-axis). The dashed line indicates q=0.05. Genes with q-values≤0.05 are denoted as red dots. (C) Western blot analysis of indicated proteins in cycling and non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. (D) Western blot analysis of indicated proteins in cycling or non-cycling WT, Trp53bp1−/−, and Lin37−/− MCF10A cells. (E) Western blot analysis of indicated proteins in cycling and non-cycling Lig4−/−:Lin37−/− abl pre-B cells with empty lentivirus or lentivirus expressing WT LIN37 or the LIN37 (CD) mutant. HR, homologous recombination; IR, ionizing radiation; RNA-Seq, RNA sequencing.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Gene ontology (GO) analysis of genes upregulated in non-cycling Lig4−/−:Lin37−/− abl pre-B cells. Enriched GO terms with the 20 lowest p-values (on the right of each bar) are shown. (B) Western blot analysis of indicated proteins in cycling or non-cycling WT, Trp53bp1−/−, and Lin37−/− abl pre-B cells. HR, homologous recombination; WT, wild type.
 
 To identify genes repressed by DREAM that encode proteins that would promote end resection in non-cycling cells, we carried out RNA sequencing (RNA-Seq) analysis of cycling and non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells. Cycling Lig4−/−:Lin37−/− abl pre-B cells exhibit very few (approximately 20) significant gene expression changes as compared to Lig4−/− abl pre-B cells (Figure 5—source data 1). In contrast, when compared to non-cycling Lig4−/− abl pre-B cells, non-cycling Lig4−/−:Lin37−/− abl pre-B cells exhibited increased expression (>2-fold) of over 300 genes (Figure 5B and Figure 5—source data 1). We found that many genes upregulated in non-cycling Lig4−/−:Lin37−/− abl pre-B cells have functions in HR, including DNA end resection (Brca1, Bard1, Blm, and Exo1), recombination (Brca2, Bard1, Palb2, Mms22l, Rad51, Rad51b, and Rad54b), and DNA synthesis (Hrob/BC030867, Mcm3, Mcm4, Mcm5, Mcm7, Mcm8, Pold1, and Pole). A subset of FA genes also exhibited increased expression in non-cycling Lig4−/−:Lin37−/− abl pre-B cells (Figure 5B and Figure 5—source data 1). Many of the upregulated genes we identified were also found to be bound by DREAM in NIH3T3 cells (Figure 5—source data 1; Mages et al., 2017; Litovchick et al., 2007). Gene ontology (GO) analysis reveals that the upregulated genes in non-cycling Lig4−/−:Lin37−/− abl pre-B cells are enriched in biological processes, such as cell cycle, cell division, DNA metabolic process, and DNA repair, consistent with previous analyses in LIN37-deficient mouse cells or human cells deficient in other DREAM components (Figure 5—figure supplement 1A and Figure 5—source data 1; Mages et al., 2017; Litovchick et al., 2007). These data indicate that in non-cycling abl pre-B cells LIN37-DREAM transcriptionally represses many genes encoding proteins that function in DNA end resection and HR.
 
@@ -85,17 +117,33 @@ Western blot analysis revealed that the levels of BRCA1, BARD1, BLM, RAD51, and
 
 The ability of LIN37 to repress the expression of these key HR proteins in non-cycling cells requires LIN37 to function in the context of the DREAM complex as evidenced by our observation that the expression of WT LIN37, but not LIN37CD in non-cycling Lig4−/−:Lin37−/− abl pre-B cells, led to a decrease in the levels of BRCA1, BARD1, BLM, RAD51, and FANCD2 proteins (Figure 5E). Of note is that the expression of the MRE11 and CtIP nucleases were not affected by the loss of LIN37 in cycling or non-cycling cells (Figure 5C and Figure 5—figure supplement 1B). We conclude that in non-cycling cells, LIN37, as part of the DREAM transcriptional repressor complex, represses genes encoding many proteins that function in DNA end resection and DSB repair by HR.
 
-## DNA resection and HR machinery are functional in non-cycling LIN37-deficient cells
+### DNA resection and HR machinery are functional in non-cycling LIN37-deficient cells
 
 We performed a whole-genome CRISPR/Cas9 reverse genetic screen to identify genes that mediate DNA end resection in non-cycling LIN37-deficient abl pre-B cells. To this end, we identified gRNAs enriched in IR treated non-cycling Lig4−/−:Lin37−/− abl pre-B cells that had low levels of chromatin-bound RPA, indicating reduced DNA end resection despite having no LIN37 (Figure 6—source data 1). As expected, gRNAs to Rbbp8 (encodes CtIP) and to Mre11b (encodes MRE11) were enriched in these RPA low cells, in agreement with their nucleolytic roles in resection and emphasizing the validity of our screen (Figure 6—source data 1). In addition, we isolated gRNAs to many genes encoding DNA end resection and HR proteins that are normally repressed by LIN37, including Brca1, Bard1, Blm, and several FA genes, indicating that the expression of these proteins brought about by LIN37-deficiency in non-cycling cells promotes the extensive DNA end resection that is observed in these cells (Figure 6—source data 1). Indeed, bulk inactivation of BRCA1, BARD1, BLM, or FANCD2 significantly reduced the level of chromatin-bound RPA after IR in non-cycling Lig4−/−:Lin37−/− abl pre-B cells (Figure 6A). In striking contrast, the loss of these proteins had no effect on RPA localization to DSBs after IR treatment of non-cycling Lig4−/−:Trp53bp1−/− abl pre-B cells, further emphasizing that LIN37 and 53BP1 are part of mechanistically distinct pathways that prevent DNA end resection and ssDNA generation in non-cycling cells (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig6-v1.jpg)
+
+**Figure 6.:** (A) Western blot analysis of proliferating Lig4−/−:Trp53bp1−/− or Lig4−/−:Lin37−/− abl pre-B cells with or without indicated gRNAs following Cas9 induction for bulk gene inactivation using the indicated antibodies (left). Flow cytometric analysis of chromatin-bound RPA before and after IR of the same cells after rendered non-cycling by imatinib treatment (right). Representative of three experiments. (B) Quantification of RAD51 foci in non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells before IR treatment and 4 and 20 hr after IR. Red bars indicate the median number of RAD51 foci in each sample of more than 1000 cells analyzed for each cell line. Representative of two independent experiments (****p<0.0001, Mann-Whitney test). (C) Flow cytometric analysis of HR-mediated DSB repair in non-cycling Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells using the HPRT-DR-GFP reporter. The percentage of GFP-positive cells is shown. Error bars are ± SEM from three experiments (*p=0.0124, t-test). DSB, double-strand break; gRNA, guide RNA; HR, homologous recombination; IR, ionizing radiation.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative images of RAD51 IR-induced foci in non-cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells. IR, ionizing radiation.
 
 LIN37-deficient non-cycling abl pre-B cells also exhibited induction of Brca2, Palb2, and Rad51, which function to replace RPA with RAD51 on ssDNA to form RAD51 nucleofilaments at DSBs during HR (Figure 5B, C and D, Figure 5—figure supplement 1B and Figure 5—source data 1). Indeed, there was a significant increase in the number of RAD51 foci in non-cycling Lig4−/−:Lin37−/− abl-pre-B cells after IR as compared to Lig4−/− abl-pre-B cells (Figure 6B and Figure 6—figure supplement 1). Once formed, a RAD51 nucleofilament will initiate a homology search and HR-mediated DSB repair (Prakash et al., 2015). Indeed, using the HPRT-DR-GFP reporter for DSB repair by HR, we observed an increase in homology-mediated DSB repair in non-cycling Lig4−/−:Lin37−/− abl-pre-B cells as compared to Lig4−/− abl-pre-B cells (Figure 6C; Pierce et al., 2001).
 
 We conclude that in the absence of LIN37, the extensive DNA end resection can lead to HR-mediated DSB repair in non-cycling cells. Moreover, this occurs in the presence of 53BP1.
 
-## LIN37 uniquely prevents DNA end resection in quiescent G0 cells
+### LIN37 uniquely prevents DNA end resection in quiescent G0 cells
 
 We find that LIN37 is required to prevent DNA end resection and subsequent HR steps in non-cycling cells that have 2N DNA content and do not incorporate BrdU indicating that they are in G0 or G1. To distinguish between G0 and G1, we assayed non-cycling imatinib-treated abl pre-B cells and EGF-deprived MCF10A cells for expression of the cyclin-dependent kinase, CDK4, and phospho-CDK4, which along with CDK6 is required for non-cycling quiescent G0 cells to move into G1 (Figure 7A and B; Malumbres and Barbacid, 2001; Pennycook and Barr, 2020). Both non-cycling abl pre-B cells and MCF10A cells had low levels of CDK4 and phsopho-CDK4 indicative of them being in G0 (Figure 7A and B). RB suppresses genes encoding proteins required for G0 cells to transit to G1 and then into S-phase (Weinberg, 1995; Pennycook and Barr, 2020; Sadasivam and DeCaprio, 2013). The phosphorylation of RB by CDK4 or CDK6 leads to its inactivation and the transit of cells from G0 to G1 (Weinberg, 1995; Pennycook and Barr, 2020). Phospho-Rb was not detected by western blot analysis of imatinib-treated abl pre-B cells or MCF10A cells deprived of EGF indicating that these cells are in G0 (Figure 7A and B). PCNA, which is expressed early in the transition from G1 to S was also not detected in these cells (Figure 7A and B). Taken together, these data indicate that imatinib-treated abl pre-B cells and MCF10A cells deprived of EGF have exited the cell cycle and entered G0, also known as quiescence, and LIN37 is required to protect DNA ends from resection in these cells.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Western blot analysis of indicated proteins in cycling and non-cycling abl pre-B cells (A) or MCF10A cells (B). (C, D) Western blot analysis of indicated proteins in cycling G1 or S/G2/M abl pre-B cells (C) or MCF10A cells (D), isolated by flow cytometric cell sorting based on the PIP-FUCCI reporter. Representative of two independent experiments. Asterisk indicates non-specific recognizing bands. (E, F) Flow cytometric analysis of chromatin-bound RPA and γH2AX before and after IR treatment of G1-phase Lig4−/−, Lig4−/−:Trp53bp1−/− and Lig4−/−:Lin37−/− abl pre-B cells (E) or WT, Trp53bp1−/−, and Lin37−/− MCF10A cells (F). Representative of three experiments. IR, ionizing radiation; WT, wild type﻿.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68466/elife-68466-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A, B) Flow cytometric analysis of EdU incorporation and DNA content (7-AAD) of cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells (A) or cycling WT, Trp53bp1−/−, and Lin37−/− MCF10A cells (B). Cells were treated (+EdU) or not treated (−EdU) with EdU and analyses were carried out before or after IR. The percentage of G1-phase cells is shown. IR, ionizing radiation; WT, wild type.
 
 Cycling cells in G1-phase also rely on NHEJ to repair DNA DSBs and we next asked whether LIN37 functions to protect DNA ends from resection in these cells. To this end, we employed the PIP-FUCCI cell cycle sensor to isolate G1 and S/G2/M populations from cycling Lig4−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin37−/− abl pre-B cells and WT, Trp53bp1−/−, and Lin37−/− MCF10A cells by flow cytometric cell sorting (Grant et al., 2018). The effectiveness of this purification was evidenced by the absence of Cyclin A in G1-phase cells (Figure 7C and D; Henglein et al., 1994). We conducted RNA-Seq analysis on proliferating G1-phase Lig4−/− and Lig4−/−:Lin37−/− abl pre-B cells to determine if the LIN37-DREAM complex also exerts its transcription repressor activity in the G1-phase of the cell cycle. Our RNA-Seq analysis revealed that the expression of ~360 genes is significantly elevated in G1 Lig4−/−:Lin37−/−, compared to Lig4−/− abl pre-B cells (Figure 7—source data 1). Of these genes, ~200 are uniquely upregulated in proliferating G1-phase Lig4−/−:Lin37−/− abl pre-B cells while the remaining genes have increased expression in both imatinib-treated G0 and proliferating G1-phase Lig4−/−:Lin37−/− abl pre-B cells, including Brca1, Bard1, Blm, Rad51, and Fancd2 (Figure 7—source data 2). However, western blot analysis revealed that in contrast to G0 cells, G1 cells expressed readily detectable levels of the HR proteins BRCA1, BARD1, BLM, FANCD2, and RAD51. Moreover, loss of LIN37 did not lead to a significant change in the levels of these proteins in G1-phase cells isolated from proliferating populations (Figure 7C and D). These results indicate that LIN37-DREAM functions to negatively regulate the expression of a subset of HR genes in G1-phase cells, however, this does not lead to a significant decrease in the levels of proteins encoded by these genes.
 
@@ -117,7 +165,675 @@ While LIN37-DREAM and 53BP1 both inhibit DNA end resection in G0 cells, LIN37-DR
 
 ## Materials and methods
 
-## Cell lines and cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-53BP1 (Rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A300-272A</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-53BP1 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-305</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LIN37 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-515686</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BLM (Rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A300-572A</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BRCA1 (Mouse monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>Custom made (Andre Nussenzweig, NCI)</td>
+      <td>WB (1:1000); for mouse BRCA1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BRCA1 (Mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>07-434</td>
+      <td>WB (1:1000); for human BRCA1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAD51 (Rabbit polyclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>ABE257</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RAD51 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab176458</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BARD1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-85707</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CtIP (Rabbit polyclonal)</td>
+      <td>N/A</td>
+      <td>Custom made (Richard Baer, Columbia University)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MRE11 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-142</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIF1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13422</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIF1 (Rabbit polyclonal)</td>
+      <td>N/A</td>
+      <td>Custom made (Davide Robbiani, Rockefeller University)</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C20orf196/ SHLD1 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>PA5-559280</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse Monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>G8795</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KAP1 (Rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>GTX102226</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FANCD2 (Rabbit monoclonal)</td>
+      <td>R and D Systems</td>
+      <td>MAB93691</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BRCA2 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>19791-1-AP</td>
+      <td>WB (1:500); for human BRCA2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rb1 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>LF-MA0173</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho -Rb (Ser780) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8180T</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho -Rb (Ser807/ 811) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8516T</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (Rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A300-276A</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDK4 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-31308</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDK4 (phosphor Thr172) (Rabbit polyclonal)</td>
+      <td>GeneTex</td>
+      <td>GTX00778</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RPA32 (4E4) (Rat monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2208S</td>
+      <td>WB (1:1000); FC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-H2AX (ser139) (Mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>05-636</td>
+      <td>FC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP, goat anti-mouse</td>
+      <td>Promega</td>
+      <td>W4021</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP, goat anti-rabbit IgG</td>
+      <td>Promega</td>
+      <td>W4011</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555, donkey anti-rabbit IgG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-31572</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488,goat anti-rat IgG</td>
+      <td>BioLegend</td>
+      <td>405418</td>
+      <td>FC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647,goat anti-mouse IgG</td>
+      <td>BioLegend</td>
+      <td>405322</td>
+      <td>FC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCW-Cas9 (plasmid)</td>
+      <td>Addgene</td>
+      <td>50661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-U6-Chimeric_BB-CBh-hSpCas9 (plasmid)</td>
+      <td>Addgene</td>
+      <td>42230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKLV-U6 gRNA(BbsI)-PGKpuro-2ABFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>50946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLenti-CMV-Blast-PIP-FUCCI (plasmid)</td>
+      <td>Addgene</td>
+      <td>138715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Genome-wide CRISPR guide RNA library V2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>67988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lin37 cDNA BC013546 (plasmid)</td>
+      <td>transOMIC</td>
+      <td>TCM1004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TRE-Thy1.1 (plasmid)</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHPRT-DR-GFP (plasmid)</td>
+      <td>Marian Jasin, MSKCC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCBASceI (plasmid)</td>
+      <td>Marian Jasin, MSKCC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCBA (plasmid)</td>
+      <td>Marian Jasin, MSKCC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MCA10A</td>
+      <td>ATCC</td>
+      <td>CRL-10317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MCA10A: iCas9</td>
+      <td>This study</td>
+      <td>Clone 25</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MCA10A: Trp53bp1−/−: iCas9</td>
+      <td>This study</td>
+      <td>Clones 7 and 50</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MCA10A: Lin37−/−:iCas9</td>
+      <td>This study</td>
+      <td>Clones 5 and 21</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>WT:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>M63.1.MG36.iCas9.302</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Trp53bp1−/−:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>Clones 1 and 27</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Lin37−/−:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>Clones 9 and 59</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Lig4−/−:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>A5.83.MG9.iCas9.16</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Lig4−/−: Trp53bp1−/−:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>Clones 81 and 82</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Lig4−/−:Lin37−/−:iCas9 abl pre-B cells</td>
+      <td>This study</td>
+      <td>Clones 6 and 42</td>
+      <td>Available upon request</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imatinib</td>
+      <td>Selleckchem</td>
+      <td>S2475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EGF</td>
+      <td>PeproTech</td>
+      <td>AF-100-15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrocortisone</td>
+      <td>Sigma-Aldrich</td>
+      <td>H-0888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera Toxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>C-8052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>I-1882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cytofix/Cytoperm solution</td>
+      <td>BD Biosciences</td>
+      <td>554722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Perm/Wash Buffer</td>
+      <td>BD Biosciences</td>
+      <td>554723</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Alexa Fluor 647 Flow Cytometry Assay Kit</td>
+      <td>Life Technologies</td>
+      <td>C10419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SG Cell Line 4D X Kit L</td>
+      <td>Lonza</td>
+      <td>V4XC-3024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>7-AAD (DNA stain)</td>
+      <td>BD Biosciences</td>
+      <td>559925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pKLV lib330F</td>
+      <td>This study (designed based on Tzelepis et al., 2016)</td>
+      <td>PCR primers</td>
+      <td>AATGGACTATCATATGCTTACCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pKLV lib490R</td>
+      <td>This study (designed based on Tzelepis et al., 2016)</td>
+      <td>PCR primers</td>
+      <td>CCTACCGGTGGATGTGGAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PE.P5_pKLV lib195 Fwd</td>
+      <td>This study (designed based on Tzelepis et al., 2016 and standard Illumana adaptor sequences)</td>
+      <td>PCR primers</td>
+      <td>AATGATACGGCGACCACCGAGATCTGGCTTTATATATCTTGTGGAAAGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P7 index180 Rev</td>
+      <td>This study (designed based on Tzelepis et al., 2016 and standard Illumana adaptor sequences)</td>
+      <td>PCR primers</td>
+      <td>CAAGCAGAAGACGGCATACGAGATINDEXGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCCAGACTGCCTTGGGAAAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 iso1_5′XhoI_S</td>
+      <td>This study (designed based on cDNA BC013546)</td>
+      <td>PCR primers</td>
+      <td>GCCCTCGAGATGTTCCCGGTAAAGGTGAAAGTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 3′NotI_AS</td>
+      <td>This study (designed based on cDNA BC013546)</td>
+      <td>PCR primers</td>
+      <td>GCCGCGGCCGCTCACTGCCGGTCATACATCTCCCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 CD1_AS</td>
+      <td>This study (designed based on cDNA BC013546 and Mages et al., 2017)</td>
+      <td>PCR primers</td>
+      <td>TACAGTGGTGTGTTCTCACTGAACTGGGCCAAGTCCACAGCCCCG GCAAATAGCTTGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 CD2_S</td>
+      <td>This study (designed based on cDNA BC013546 and Mages et al., 2017)</td>
+      <td>PCR primers</td>
+      <td>ACTTGGCCCAGTTCAGTGAGAACACACCACTGTACCCCATCGCCGGCGCCTGGATGCGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BU1</td>
+      <td>Canela et al., 2016</td>
+      <td>PCR primers</td>
+      <td>5′-Phos-GATCGGAAGAGCGTCGT GTAGGGAAAGAGTGUU[Biotin-dT]U [Biotin-dT]UUACACTCTTTC CCTACACGACGCTCTTCCGATC* T-3′ [*phosphorothioate bond]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BU2</td>
+      <td>Canela et al., 2016</td>
+      <td>PCR primers</td>
+      <td>5′-Phos-GATCGGAAGAGCACACG TCUUUUUUUUAGACGTGTGCTCTTCCGATC*T-3′ [*phosphorothioate bond]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>53 bp1 gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>GAACCTGTCAGACCCGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 gRNA sequences</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>AAGCTATTTGACCGGAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Brca1 gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>GTCTACATTGAACTAGGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ctip gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>ATTAACCGGCTACGAAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bard1 gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>AAATCGTAAAGGCTGCCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Blm gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>GATTTAACGAAGGAATCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fancd2 gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>TCTTGTGATGTCGCTCGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trp53bp1 (human) gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>TCTAGTGTGTTAGATCAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Lin37 (human) gRNA sequence</td>
+      <td>Sequence is from Tzelepis et al., 2016</td>
+      <td>N/A</td>
+      <td>TCTAGGGAGCGTCTGGATG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SeqKit</td>
+      <td>Shen et al., 2016</td>
+      <td>RRID:SCR_018926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Langmead et al., 2009</td>
+      <td>RRID:SCR_005476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools</td>
+      <td>Li et al., 2009</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BEDtools</td>
+      <td>Quinlan and Hall, 2010</td>
+      <td>RRID:SCR_006646</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>LSRII flow cytometer</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_002159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>FACSAria II Cell Sorter</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_018934</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Lionheart LX automated microscope</td>
+      <td>BioTex Instrument</td>
+      <td>RRID:SCR_019745</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>4-D Nucleofector</td>
+      <td>Lonza</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and cell culture
 
 Abelson virus-transformed pre-B cells (abl pre-B cells) were generated as described previously (Bredemeyer et al., 2006). DNA Ligase 4-deficient (Lig4−/−) abl pre-B cells were generated by deleting the LoxP site-flanked Lig4 coding sequence by expressing Cre recombinase (Helmink et al., 2011). Deletion of the Lig4 gene was verified by PCR. WT and Lig4−/− abl pre-B cells and MCF10A human mammary epithelial cells (from ATCC, CR-10317) used in this study all contain pCW-Cas9 (Addgene# 50661), which has a FLAG-tagged Cas9 cDNA under the control of a doxycycline-inducible promoter. Intracellular staining with anti-FLAG and flow cytometry were used to identify clones homogeneously expressing FLAG-CAS9 after doxycycline treatment.
 
@@ -125,7 +841,7 @@ Trp53bp1−/−, Lin37−/−, Lig4−/−:Trp53bp1−/−, and Lig4−/−:Lin
 
 To render cells non-cycling, abl pre-B cells were treated with 3 μM imatinib (Selleck Chemicals, S2475) for 2 (for chromatin-bound RPA assay) or 3 (for gene expression analysis) days and MCF10A cells were grown in EGF-free media for 2 days. At least two independent knockout clones of each gene in each cell type were generated and used in the experiments in this study. Knockout clones were verified by western blot analysis for lack of expression of the targeted proteins. MCF10A cell lines were authenticated by STR profiling, and MCF10A and murine cell lines tested negative for mycoplasma contamination.
 
-## Chromatin-bound RPA assay
+### Chromatin-bound RPA assay
 
 The chromatin-bound RPA flow cytometry assay was carried out as described previously with modifications (Forment et al., 2012). Briefly, the cells were washed with FACS wash (2% FBS in 1× phosphate-buffered saline [PBS]) followed by pre-extraction in Triton X-100 on ice for 10 min (0.05% for imatinib-treated abl pre-B cells, 0.2% for proliferating abl pre-B cells, and 0.5% for MCF10A cells). The cells were washed again with FACS wash and fixed in BD Cytofix/Cytoperm at room temperature for 10 min. After fixation, the cells were incubated with anti-RPA32 antibody (Cell Signaling Technology, 2208S, 1:500) and anti-phospho-H2AX (S139) (Millipore Sigma, 05-636, 1:1000) in 1× BD Perm/Wash buffer at room temperature for 2 hr, followed by staining with Alexa Fluor 488 goat anti-rat IgG (BioLegend, 405418, 1:500) and Alexa Fluro 647 goat anti-moue IgG (BioLegend, 405322, 1:500) at room temperature for 1 hr. 20 μl of 7-AAD (BD Pharmingen, 559925) was added to each sample before resuspending cells in 300 μl of 1× PBS. RPA32 and phospho-H2AX (S139) levels were analyzed on a BD LSRFortessa Flow Cytometer.
 
@@ -133,54 +849,58 @@ For analysis of G1 cells in a proliferating population, the cells were pulsed w
 
 Non-cycling abl pre-B cells were exposed to 15 Gy of IR and analyzed 18 hr after irradiation. Cycling abl pre-B cells were analyzed 3 hr after 5 Gy of IR. Non-cycling MCF10A were exposed to 30 Gy of IR and analyzed 4 hr after irradiation. Cycling MCF10A cells were analyzed 6 hr after 25 Gy IR.
 
-## Genome-wide guide RNA CRISPR/Cas9 screen
+### Genome-wide guide RNA CRISPR/Cas9 screen
 
 Lig4−/− or Lig4−/−:Lin37−/− abl pre-B cells were transduced with lentiviral mouse genome-wide CRISPR gRNA library V2 (Addgene #67988) by centrifuging a cell and viral supernatant mixture (supplemented with 5 μg/ml polybrene) at 1800 rpm for 90 min. BFP-positive (stably transduced) cells were isolated on BD FACSAria II Cell Sorter, treated with 3 μg/ml doxycycline for 7 days followed by treatment with 3 μM imatinib for 2 days. 18 hr after exposing to 20 Gy IR, the cells were processed as described above for the chromatin-bound RPA flow cytometry assay and analyzed on a BD FACSAria II Cell Sorter. Cells with high (top 10%), low (bottom 10%) RPA staining, as well as unsorted cells were collected, and genomic DNA of these cells was harvested for amplification of gRNAs.
 
 To generate an Illumina sequencing library, gRNAs in the selected cells were first amplified using primers pKLV lib330F and pKLV lib490R and the program ‘98°C/5 min - [98°C/15 s - 60°C/15 s - 68°C/1 min]×18–68°C/5 min’. The resulting PCR products were used as the template for additional PCR amplification using primers PE.P5_pKLV lib195 Fwd and P7 index180 Rev and the program ‘94°C/5 min - [94°C/15 s - 60°C/30 s - 68°C/20 s]×10–68°C/5 min’ to add Illumina HiSeq adapters and indexes (RPI5:CACTGT, RPI6: ATTGGC, and RPI12: TACAAG). The final PCR products (~300 bp) were resolved in 1.5% agarose gel and purified by QIAQuick Gel Purification Kit (QIAGEN). Purified DNA was sequenced on Illumina HiSeq2500 system to determine gRNA representation in each sample (50 bp single-end reads).
 
-Raw fastq files were demultiplexed by the Genomics and Epigenomics Core Facility of the Weill Cornell Medicine Core Laboratories Center. The gRNA sequence region was then retrieved from the sequencing data using Seqkit (Shen et al., 2016) and mapped to the gRNA sequence library (Koike-Yusa et al., 2014; Tzelepis et al., 2016). The number of reads of each library sequence was counted and then normalized as follows Shalem et al., 2014:NormalizedreadspergRNA=readspersgRNAtotalreadsforallsgRNAsinsample×106+1
+Raw fastq files were demultiplexed by the Genomics and Epigenomics Core Facility of the Weill Cornell Medicine Core Laboratories Center. The gRNA sequence region was then retrieved from the sequencing data using Seqkit (Shen et al., 2016) and mapped to the gRNA sequence library (Koike-Yusa et al., 2014; Tzelepis et al., 2016). The number of reads of each library sequence was counted and then normalized as follows Shalem et al., 2014:
+
+$$
+NormalizedreadspergRNA=\frac{readspersgRNA}{totalreadsforallsgRNAsinsample}\times10^{6}+1
+$$
 
 Finally, the enrichment score of a gRNA was calculated as a ratio of normalized reads of the gRNA in two samples.
 
-## Bulk gene inactivation
+### Bulk gene inactivation
 
 To inactivate Trp53bp1, Lin37, Ctip, Brca1, Bard1, Blm, or Fancd2 in bulk cells populations, the cells were transduced with lentivirus pKLV-gRNAs by mixing cell suspensions with viral supernatant supplemented with 5 μg/ml polybrene and 3 μg/ml doxycycline and spinning at 1800 rpm for 90 min. Stably transduced cells were sorted 3 days after transduction and sorted cells were kept in growth media with 3 μg/ml doxycycline for additional 24 hr before being subjected to analysis.
 
-## Plasmid constructs
+### Plasmid constructs
 
 pCW-Cas9 was a gift from Eric Lander and David Sabatini (Addgene plasmid #50661) (Wang et al., 2014). pX330-U6-Chimeric_BB-CBh-hSpCas9 was a gift from Feng Zhang (Addgene plasmid #42230) (Cong et al., 2013). pKLV-U6gRNA(BbsI)-PGKpuro2ABFP was a gift from Kosuke Yusa (Addgene plasmid #50946) (Koike-Yusa et al., 2014). pLenti-CMV-Blast-PIP-FUCCI was a gift from Jean Cook (Addgene plasmid # 138715) (Grant et al., 2018). pHPRT-DR-GFP, pCBASceI, and pCBA were kindly provided by Dr. Maria Jasin (Memorial Sloan Kettering Cancer Center, New York, NY).
 
 For LIN37 reconstitution experiments, Lin37 WT or CD mutant cDNAs were cloned into tetracycline-inducible TRE-Thy1.1 lentiviral vector to generate TRE-Lin37 (WT)-Thy1.1 or TRE-Lin37 (CD)-Thy1.1. WT Lin37 was amplified from Lin37 cDNA BC013546 (transOMIC) using primers Lin37 iso1_5′XhoI_S and Lin37 3′NotI_AS. To generate Lin37 CD mutant, Lin37 iso1_5′XhoI_S and Lin37 CD1_AS, and Lin37 CD2_S and 3′NotI_AS were first used to generate two cDNA fragments containing mutations in CD1 and CD2. The resulting PCR products were used in an overlapping PCR that annealed the two fragments to generate the full-length Lin37 (CD) mutant.
 
-## End sequencing (End-seq)
+### End sequencing (End-seq)
 
 End-seq was performed as previously described, using 20×106 abl pre-B cells harboring TET-inducible AsiSI-ER fusion treated with 3 μM imatinib (Canela et al., 2016). Briefly, the cells were embedded in agarose plugs, lysed, and treated with proteinase K and RNase A. The agarose-embedded genomic DNA was then blunted using ExoVII (NEB) and ExoT (NEB). Blunted DNA ends were A-tailed using Klenow exo- (NEB), and a biotinylated hairpin adaptor BU1 was ligated. After adaptor ligation, DNA was recovered after plug melting and treatment with beta-agarase. DNA was sheared to a length between 150 and 200 bp by sonication (Covaris), and biotinylated DNA fragments were purified using streptavidin beads (MyOne C1, Invitrogen). Following streptavidin capture, the newly generated ends were end-repaired using T4 DNA polymerase, Klenow fragment, and T4 polynucleotide kinase; A-tailed with Klenow exo-fragment (15 U); and finally ligated to hairpin adaptor BU2 using the NEB Quick Ligation Kit. After the second adaptor ligation, libraries were prepared by first digesting the hairpins on both adapters with USER enzyme (NEB) then PCR amplified for 16 cycles using TruSeq index adapters. All libraries were quantified using qPCR. Sequencing was performed on the Illumina NextSeq500 (75 bp single-end reads).
 
 End-seq reads were aligned to the mouse genome (GRCm38p2/mm10) using Bowtie v1.1.2 with parameters (-n 3 k 1 l 50) and alignment files were generated and sorted using SAMtools and BEDtools (Li et al., 2009; Quinlan and Hall, 2010; Langmead et al., 2009). Heatmap was plotted using heatmap.2 of gplots package in R.
 
-## Antibodies for western blot analysis
+### Antibodies for western blot analysis
 
 The following antibodies were used for western blot analysis: 53BP1 (Bethyl Laboratories, A300-272A, 1:3000), LIN37 (Santa Cruz Biotechnology, sc-515686, 1:200), BLM (Bethyl Laboratories, A300-572A, 1:2000), BRCA1 for mouse (R and D Systems, gift from Dr. Andre Nussenzweig, NCI, 1:1000) (Zong et al., 2019), BRCA1 for human (Millipore Sigma, 07-434, 1:1000), RAD51 (Millipore Sigma, ABE257, 1:2000), BARD1 (Thermo Fisher Scientific, PA5-85707, 1:1000), CtIP (gift from Dr. Richard Baer, [Columbia University, New York], 1:1000), MRE11 (Novus Biologicals, NB100-142, 1:2000), RIF1 (Abcam, ab13422, 1:500), SHLD1/C20orf196 (Thermo Fisher Scientific, PA5-559280, 1:200), GAPDH (Sigma, G8795, 1:10,000), KAP1 (Genetex, GTX102226, 1:2000), FANCD2 (R and D Systems, MAB93691, 1:1000), BRCA2 for human (Proteintech, 19791-1-AP, 1:500), Rb1 (Thermo Fisher Scientific, LF-MA0173, 1:1000), Phospho-Rb (Ser780) (Cell Signaling Technology, 8180T, 1:1000), Phospho-Rb (Ser807/811) (Cell Signaling Technology, 8516T, 1:1000), PCNA (Bethyl Laboratories, A300-276A, 1:3000), CDK4: (Novus Biologicals, NBP1-31308, 1:1000), CDK4 (phosphor Thr 172) (GeneTex, GTX00778, 1:1000), and RPA (Cell Signaling Technology, 2208S, 1:1000).
 
-## RNA- sequencing (RNA-Seq) analysis
+### RNA- sequencing (RNA-Seq) analysis
 
 RNA was purified from cycling Lig4−/− or Lig4−/−:Lin37−/− cells treated with imatinib for 72 hr (two biological replicates each) using an RNeasy Mini Kit (QIAGEN). RNA-Seq libraries were prepared and directional RNA sequencing of 2×50 bp was performed at the Transcriptional Regulation and Expression Facility at Cornell University using NextSeq 500 sequencer. The raw fastq reads were first processed with Trim-Galore (Babraham Institute). The filtered reads were then aligned to GRCm38 reference genome with ENSEMBL annotations using Spliced Transcripts Alignment 2.7 (STAR 2.7) (Dobin et al., 2013). Differential expression was computed using DESeq2 (Bioconductor) and a false discovery rate 0.05 cutoff was used to identify sets of differentially expressed genes (Love et al., 2014).
 
 For RNA-Seq of G1 cells in proliferating cultures, G1-phase cells (Lig4−/− or Lig4−/−:Lin37−/− cells, two biological replicates) were isolated using PIP-FUCCI system (see below). RNA was prepared using the RNeasy Mini Kit (QIAGEN). RNA-Seq libraries were prepared and directional RNA sequencing of 2×75 bp was performed at the Genomics Core Libraries of Heflin Center of Genomic Sciences at University of Alabama at Birmingham using NextSeq 500 sequencer. RNA-Seq data was analyzed as described above.
 
-## Ionizing radiation-induced foci formation assay
+### Ionizing radiation-induced foci formation assay
 
 Lig4−/−, Lig4−/−:Lin37−/−, and Lig4−/−:Trp53bp1−/− abl pre-B cells were treated or not with 3 μM imatinib for 48 hr. Thereafter, the cells were pulsed with 10 μM EdU (Invitrogen) for 30 min and subjected to 10 Gy irradiation. For the detection of RAD51 foci, irradiated cells were allowed to recover for 4 or 20 hr, at which point they were immobilized on slides pre-coated with CellTak (Corning) and briefly pre-extracted (20 mM HEPES, 50 mM NaCl, 3 mM MgCl2, 0.3 M sucrose, and 0.2% Triton X-100) on ice for 15 s to remove soluble nuclear proteins. Extracted samples were then fixed (4% paraformaldehyde), permeabilized (0.5% Triton X-100 in PBS), incubated with anti-RAD51 primary antibody (Abcam, ab176458, 1:250). Alternatively, irradiated (10 Gy) cells were allowed to recover for 1 hr prior to fixation without a preceding pre-extraction step, and subsequently incubated with primary antibodies recognizing 53BP1 (Novus Biologicals, NB100-305, 1:1000) or RIF1 (gift from Davide Robbiani [Rockefeller University, New York], 1:5000). In all cases, IRIFs were visualized by incubating samples with Alexa Fluor 555-conjugated secondary antibodies (Invitrogen). Where indicated, click-IT chemistry was performed as per the manufacturer’s instructions. Finally, DNA was counterstained with DAPI (Thermo Fisher Scientific). Immunofluorescence images were captured at 40× magnification on a Lionheart LX automated microscope (BioTek Instruments, Inc). Quantification of IRIF was performed using the Gen5 spot analysis software (BioTek Instruments, Inc).
 
-## DR-GFP assay
+### DR-GFP assay
 
 To monitor HR activity using the DR-GFP reporter in non-cycling abl pre-B cells, the cells were first treated with 3 μM imatinib for 48 hr. 4 μg of pHPRT-DR-GFP, 4 μg of pCBASceI plasmids (or pCBA, the control plasmid without I-SceI) and 2 μg of pKLV-hCD2 (for monitoring transfection efficiency) were mixed with 10 million of imatinib-treated abl pre-B cells in 100 μl of Nucleofection Buffer SG (Lonza). The cell-DNA mixtures were pulsed in 4D Nucleofector X Unit using pulse code CM-147. Pulsed cells were placed in growth with 3 μM imatinib and cultured for 24 before analyzing the percentage of GFP+ and hCD2+ cells by flow cytometry. The percentages of GFP+ cells between different samples were normalized by the percentages of hCD2+ cells to take into account the difference of transfection efficiency among the samples.
 
-## Guide RNA
+### Guide RNA
 
 Bulk gene inactivation or stable knockout mutants was achieved by CRSPR/Cas9 using the following gRNAs: gTrp53bp1 (GAACCTGTCAGACCCG ATC), gLin37 (AAGCTATTTGACCGGAGTG), gCtip (ATTAACCGGCTACGA AAGA), gBrca1 (GTCTACATTGAACTAGGTA), gBard1 (AAATCGTAAAGGCT GCCAC), gBlm (GATTTAACGAAGGAATCGG), gFancd2 (TCTTGTGATGTC GCTCGAC), gTrp53bp1 (human) (TCTAGTGTGTTAGATCAGG), and gLin37 (human) (TCTAGGGAGCGTCTGGATG).
 
-## Cell cycle phase purification by PIP-FUCCI
+### Cell cycle phase purification by PIP-FUCCI
 
 Abl pre-B cells or MCF10A cells were transduced with pLenti-CMV-Blast-PIP-FUCCI and selected in 5 mg/ml Blasticidin for 3 days (Grant et al., 2018). To collect G1-phase cells from proliferating cultures, mVenus-positive cells that were also mCherry-negative were sorted. To collect S/G2/M cells, all mCherry-positive cells were sorted. Cell sorting was conducted on a BD FACSAria (BD Biosciences) at the Comprehensive Flow Cytometry Core at University of Alabama at Birmingham (supported by NIH P30 AR048311 and NIH P30 AI27667).

@@ -31,13 +31,29 @@ Most integral membrane proteins are cotranslationally integrated into their targ
 
 ## Results
 
-## Force profile analysis
+### Force profile analysis
 
 FPA takes advantage of the ability of APs to bind in the upper parts of the ribosome exit tunnel and thereby pause translation when their last codon is in the ribosomal A-site (Ito and Chiba, 2013). The duration of an AP-induced pause is reduced in proportion to pulling forces exerted on the nascent chain (Goldman et al., 2015; Kemp et al., 2020), that is, APs can act as force sensors and can be tuned by mutation to react to different force levels (Cymer et al., 2015a). In an FPA experiment, a series of constructs is made in which a force-generating sequence element (e.g., a TMH) is placed an increasing number of residues away from an AP (reflected in N, the number of residues from the start of the protein to the end of the AP), which in turn is followed by a C-terminal tail (Figure 1a). In constructs where the TMH engages in an interaction that generates a strong enough pulling force F on the nascent chain at the point when the ribosome reaches the last codon of the AP, pausing will be prevented and mostly full-length protein will be produced during a short pulse with [35S]-Met (Figure 1b, middle). In contrast, in constructs where little force is exerted on the AP, pausing will be efficient and more of the arrested form of the protein will be produced (Figure 1b, left and right). The fraction full-length protein produced, fFL = IFL/(IFL+IA), where IFL and IA are the intensities of the bands representing the full-length (FL) and arrested (A) species on an SDS-PAGE gel (Figure 1c and Figure 1—figure supplement 1), can therefore be used as a proxy for F in a given construct (Kemp et al., 2020; Niesen et al., 2018; Leininger et al., 2019). A plot of fFL versus N – a force profile (FP) – thus can provide a detailed picture of the cotranslational process in question, as reflected in the variation in the force exerted on the nascent chain during translation. FPs can be recorded with up to single-residue resolution by increasing N in steps of one residue (corresponding to a lengthening of the nascent chain by ~3 Å).
 
-## EmrE: 4 TMHs, 110 residues
+![Figure 1.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig1-v2.jpg)
+
+**Figure 1.:** (a) Basic construct. Arrested (A) and full-length (FL) products are indicated. (b) At construct length N1, TMH2 has not yet entered the SecYEG channel and no pulling force F is generated. At N2, TMH2 is integrating into the membrane and F ≫0. At N3, TMH2 is already integrated and F ≈ 0. (c) SDS-PAGE gels showing A and FL products for [35S]-Met labeled and immunoprecipitated EmrE(Cout) (N = 105), GlpG (N = 196), and BtuC (N = 314). Control constructs AC and FLc have, respectively, a stop codon and an inactivating Ala codon replacing the last Pro codon in the arrest peptide (AP). The band just below the A band in the EmrE(Cout) (N = 105) lane most likely represents ribosomes stacked behind the AP-stalled ribosomes (Notari et al., 2018) and is not included in the calculation of fFL. See Figure 1—figure supplement 1 for additional gels.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Full-length (FL) and arrested (A) products are indicated by black and white circles, respectively. Repeat experiments are indicated by single and double lines above the lanes for EmrE (a–e), by short lines beneath the lanes for GlpG (f–i), and are on neighboring gels for BtuC. For BtuC, some full-length (FLc) and arrest (Ac) controls are included (c.f., Figure 1c); these are for the construct immediately to the right of the control construct lanes. GlpG (j, k) show GlpG constructs (indicated by –) and the corresponding LepB-GlpG constructs (indicated by +) for N = 136–196. For N = 141–186, GlpG constructs have the expected full-length band (lower gray circles) that runs slightly faster than the corresponding LepB-GlpG construct (black circles), plus an extra band of unknown provenance that runs more slowly than the full-length LepB-GlpG construct (upper gray circles). The GlpG fFL values shown in Figure 3—figure supplement 1a were calculated by assigning only the lower (dashed magenta curve), or both (dashed green curve), of the bands indicated by gray circles as full-length product. Panel l shows a repeat experiment for the LepB-GlpG constructs included in panels j and k.
+
+### EmrE: 4 TMHs, 110 residues
 
 We chose EmrE as an example of a small, relatively simple 4-TMH protein. EmrE is a dual-topology protein, that is, the monomers integrate into the inner membrane in a 50–50 mixture of Nin-Cin and Nout-Cout topologies; two oppositely oriented monomers then assemble into an antiparallel dimer (Chen et al., 2007; Rapp et al., 2007). To avoid potential complications caused by the dual topology, we used EmrE(Cout), a mutant version that adopts the Nout-Cout topology (Rapp et al., 2007), and further used the relatively weak SecM(Ec) AP (Ismail et al., 2012) and included an HA tag for immunoprecipitation (Figure 2a). A series of EmrE(Cout)-AP constructs (see Supplementary file 1 for sequences) was used to obtain the FP shown in Figure 2b (orange curve), at 2–5 residues resolution. Also shown is an FP derived from a CGMD simulation (CGMD-FP, gray; Van Lehn et al., 2015); a hydrophobicity plot (HP) is included in Figure 2—figure supplement 1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig2-v2.jpg)
+
+**Figure 2.:** (a) Construct design. EmrE(Cout) is shortened from the C-terminal end of the LepB-derived linker (dotted), as indicated by the arrow. Cytoplasmic (red) and periplasmic (blue) loops, and lengths of full-length EmrE(Cout), LepB-derived linker, HA tag + arrest peptide (AP), and C-terminal tail, are indicated. Since the 30-residue HA + AP segment is constant in all constructs, the force profile (FP) reflects nascent chain interactions occurring mainly outside the ribosome exit tunnel. (b) FPs for EmrE(Cout) (orange), EmrE(Cout,E14L) (green), EmrE(Cout) with SecM(Ec-sup1) AP (blue), EmrE(Cout, I37I38→NN) (magenta triangles), and coarse-grained molecular dynamics (CGMD-FP) calculated with a −100 mV membrane potential (gray). (c) Effects of mutations in E14 on fFL values for the N values are indicated by arrows in (b). p-values (two-sided t-test): *p < 0.05; **p < 0.01; ***p < 0.001. (d, e) Sequences corresponding to peaks I–IV aligned from their Nstart (d) and Nend (e) values. The + sign indicates 45 residues from the polypeptide transferase center (PTC). Hydrophobic transmembrane helix (TMH) segments are shown in orange and transmembrane α-helices underlined (PDB: 3B5D). Error bars in b and c indicate SEM values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** As in Figure 2b, but with a hydrophobicity plot (HP) (ΔG) calculated by TOPCONS (3, 50) (gray). Since the HP represents the membrane integration energy, and the force profile (FP) the force generated during integration, the two profiles have been aligned such that peaks in the FP approximately align with maxima in the derivative of the HP.
 
 We have previously shown that a model TMH composed of Ala and Leu residues generates a peak in an FP recorded with the SecM(Ec) AP that reaches half-maximal amplitude (Nstart) when the N-terminal end of the TMH is ~45 residues away from the polypeptide transferase center (PTC) (Ismail et al., 2012), and a recent real-time FRET study of cotranslational membrane integration found that the N-terminal end of the first TMH in a protein reaches the vicinity of the SecYEG translocon when it is 40–50 residues away from the PTC (Mercier et al., 2020). For EmrE(Cout) TMH1, this would correspond to constructs with N ≈ 50. However, the fFL values are hardly above background in this region of the FP. Due to the functionally important E14 residue, TMH1 is only marginally hydrophobic and does not become firmly embedded in the membrane until the protein dimerizes (Seurig et al., 2019). To ascertain whether the lack of a peak in the FP corresponding to the membrane integration of TMH1 is because of its low hydrophobicity, we mutated E14 to L. Indeed, in the FP obtained for EmrE(Cout,E14L) (Figure 2b, green curve), a clear peak appears at the expected chain length Nstart ≈ 50 residues. Mutation E14A yields an fFL value intermediate between EmrE(Cout,E14L) and EmrE(Cout) at N = 55 (Figure 2c), while fFL for the mutants EmrE(Cout,E14D) and EmrE(Cout,E14Q) is the same as for EmrE(Cout).
 
@@ -45,9 +61,17 @@ Peak II has Nstart ≈ 76, corresponding to a situation where the N-terminal end
 
 Peak III has Nstart ≈ 102 residues, with the N-terminal end of TMH3 ~45 residues from the PTC (Figure 2d). Peak IV is difficult to locate precisely in the FP because fFL values are high throughout the TMH3–TMH4 region, but is seen at Nstart ≈ 132 residues when the strong SecM(Ec-sup1) AP (Yap and Bernstein, 2009) is used (blue curve), again with the N-terminal end of TMH4 ~45 residues from the PTC (Figure 2d). As shown in Figure 2e, the TMHs cease generating a pulling force when their C-terminal ends are ~45 residues away from the PTC, indicating that they are fully integrated at this point.
 
-## GlpG: 6 TMHs, 276 residues
+### GlpG: 6 TMHs, 276 residues
 
-We next studied GlpG, a medium-sized monomeric 6-TMH rhomboid protease with an ~60 residue cytoplasmic N-terminal domain (NTD) (Sherratt et al., 2012; Wang et al., 2006) (Figure 3a),  a protein that allows us to follow the cotranslational folding of a soluble domain and integration of a membrane domain in the same experiment.
+We next studied GlpG, a medium-sized monomeric 6-TMH rhomboid protease with an ~60 residue cytoplasmic N-terminal domain (NTD) (Sherratt et al., 2012; Wang et al., 2006) (Figure 3a), a protein that allows us to follow the cotranslational folding of a soluble domain and integration of a membrane domain in the same experiment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig3-v2.jpg)
+
+**Figure 3.:** (a) Construct design, c.f., Figure 2a. The N-terminal LepB fusion is indicated. (b) Force profiles (FPs) for GlpG and LepB-GlpG (N = 131–224) (orange), NTD(F16E) (green), in vitro translated N-terminal domain (NTD) (magenta), and NTD(F16E) (black), LepB-GlpG with SecM(Ec-Sup1) AP (blue), and coarse-grained molecular dynamics (CGMD)-FP calculated with a −100 mV membrane potential (gray). Error bars indicate SEM values. Note that the LepB-GlpG constructs are two residues shorter than the corresponding GlpG constructs but are plotted with the same N values as the latter to facilitate comparison. (c) NTD (PDB ID: 2LEP), with F16 in spacefill. (d) Enlarged FPs for LepB-GlpG with SecM(Ec) AP (orange), SecM(Ec-Ms) AP (green), SecM(Ec-sup1) AP (blue), and GlpG(Y138F139L143→NNN) with SecM(Ec-Ms) AP (magenta). CGMD-FP in gray. (e) Structure of GlpG with the periplasmic surface helix in blue, TMH2 in red, the membrane-associated cytoplasmic segment in cyan, and TMH5 in yellow. Y138F139L143 and G222I223Y224L225 are shown as sticks. (f) LepB-GlpG peak III-a and III-c sequences aligned, respectively, from their Nstart and Nmax values, and the mutant LepB-GlpG(Y138F139L143→NNN) peak III-c sequence aligned from its Nmax value. Hydrophobic transmembrane helix (TMH) segments are shown in orange and transmembrane α-helices (PDB: 2IC8)underlined. The periplasmic surface helix is italicized. AP: arrest peptide; PTC: polypeptide transferase center.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) fFL values for peak III obtained for LepB-GlpG fusion constructs (orange) and GlpG constructs calculated either including (dashed green) or excluding (dashed magenta) the slowly migrating band indicated in Figure 1—figure supplement 1j,k in IFL. The two latter are from single measurements. (b) As in Figure 3b, but with a hydrophobicity plot (HP) (ΔG) calculated by TOPCONS (Hessa et al., 2007; Tsirigos et al., 2015) (gray). (c) Sequences corresponding to peaks II–VII aligned based on the Nstart values. The periplasmic surface helix upstream of TMH2 and the hydrophobic patch upstream of TMH5 are in italics. Hydrophobic transmembrane helix (TMH) segments are shown in orange and membrane-embedded α-helices underlined. (d) Sequences corresponding to peaks II–VII aligned based on the Nend values. Hydrophobic TMH segments are shown in orange and membrane-embedded α-helices underlined. PTC: polypeptide transferase center.
 
 The FP is shown in Figure 3b (orange curve). It was obtained at 5-residue resolution, except for the portion N = 168–224, which we measured with single-residue resolution. For unknown reasons, constructs with N ≈ 140–190 residues gave rise to a slowly migrating band on the gel that was difficult to interpret (Figure 1—figure supplement 1j,k); this problem did not arise when the NTD (GlpG residues 1–60) was replaced by residues 1–58 of the LepB protein (Figure 3a), and the corresponding fFL values are shown in the FP (N = 131–224). The LepB part contains an N-terminal, Nout-Cin-oriented TMH (Wolfe et al., 1983; von Heijne, 1989), that interacts with the signal recognition particle Ffh (Schibich et al., 2016) and hence targets the LepB-GlpG constructs to the SecYEG translocon before GlpG TMH1 is translated. This could in principle affect the FP; however, because the C-terminal end of the LepB part is ≥70 residues away from the C-terminal end of the SecM AP in these constructs, LepB is far outside the ribosome exit tunnel and therefore unlikely to exert a strong effect. Indeed, fFL values for GlpG (calculated either including or excluding the slowly migrating band in IFL) and LepB-GlpG are very similar in the peak III region (N = 166–231) of the FP (Figure 3—figure supplement 1a). Nstart and Nend values for peaks II–VII are indicated in Figure 3—figure supplement 1c,d.
 
@@ -59,9 +83,25 @@ As peak III saturates at fFL ≈ 0.9 over a rather wide range, we sought a more 
 
 We further recorded a SecM(Ec-Ms) FP (magenta) for the triple mutation Y138F139L143→NNN (Figure 3e) that renders the periplasmic surface helix less hydrophobic: the mutation strongly reduces the amplitude of peak III-a, has only a small effect on peak III-b, and both reduces the amplitude and shifts Nstart and Nmax for peak III-c by approximately four residues (Figure 3d,f). Thus, the periplasmic surface helix engages in hydrophobic interactions already during its passage through the translocon, presumably by sliding along a partly open lateral gate (Cymer et al., 2015b). It also adds to the force generated by the membrane integration of TMH2, possibly by partitioning into the periplasmic leaflet of the inner membrane at approximately the same time that TMH2 enters the translocon.
 
-## BtuC: 10 TMHs, 326 residues
+### BtuC: 10 TMHs, 326 residues
 
 Finally, we studied BtuC, a vitamin B12 transporter with 10 TMHs, as an example of a large, multispanning protein with a complex fold (Hvorup et al., 2007). In order to improve expression, we added the N-terminal part of LepB to the BtuC constructs (Figure 4a) and used a LepB antiserum for immunoprecipitation. The Nout-Cin orientation of LepB TMH1 ensures that the Nin-Cin topology of BtuC will be maintained, and constructs that we could measure without the LepB fusion gave similar fFL values as those seen for the LepB fusions (Figure 4—figure supplement 1b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig4-v2.jpg)
+
+**Figure 4.:** (a) Construct design, cf. Figure 2a. The N-terminal LepB fusion is indicated. N values are calculated from the N-terminus of BtuC. For constructs with N ≥ 298, the C-terminal tail is 75 residues long. Circles indicate constructs for which mutations were made in the corresponding transmembrane helix (TMH) (see Figure 4—figure supplement 2. (b) Force profiles (FPs) for BtuC (orange), BtuC-TMH2 (green), BtuC(R47R56R59→QQQ) (black), BtuC-TMH6 (dark blue), BtuC-TMH8 (blue), BtuC-TMH10 (pink), and CGMD-FP calculated with a −100 mV membrane potential (gray). Error bars indicate SEM values. Note that the BtuC-TMH2, BtuC-TMH6, BtuC-TMH8, and BtuC-TMH10 constructs are plotted with the same N values as the corresponding BtuC constructs to facilitate comparison (i.e., the number of residues between the TMH in question and the last residue of the AP is the same in both types of constructs, see Supplementary file 1). (c) Sequences corresponding to peaks I–XI aligned from their Nstart values. Hydrophobic TMH segments are shown in orange and membrane-embedded α-helices according to the OPM database (Lomize et al., 2012) underlined. Re-entrant loops and surface helices discussed in the text are italicized. (d) Construct design for obtaining FPs of isolated Nout-oriented BtuC TMHs. Dashed segments are derived from LepB. (e) Enlarged FPs for BtuC (orange) and (R47R56R59→QQQ) (black), together with coarse-grained molecular dynamics (CGMD)-FPs calculated with (gray) and without (dashed gray) a −100 mV potential. (f) BtuC TMH9-TMH10, with hydrophobic flanking residues in stick representation (PDB ID: 2QI9). (g) Enlarged FPs for BtuC (orange), isolated TMH6 (residues 187–206; blue), and isolated TMH5-6 (residues 138–206; green). In the latter construct, LepB TMH2 was not included in order to maintain the correct membrane topology of the BtuC TMH5-TMH6 part. The CGMD-FP is in gray. (h) Structure of TMH6 including the upstream periplasmic re-entrant helix and the downstream cytoplasmic surface helix, with hydrophobic flanking residues in stick representation. AP: arrest peptide; PTC: polypeptide transferase center.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) As in Figure 4b, but with a hydrophobicity plot (ΔG) calculated by TOPCONS (3, 50) (gray). (b) Close-up view of the BtuC force profile (FP) (N = 30–150; orange), and the corresponding FP obtained with BtuC constructs lacking the N-terminal LepB fusion (green). For the latter, an HA tag was included just upstream of the arrest peptide, and cells were radiolabeled with [35S]-Met for 1 min before trichloroacetic acid precipitation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Sequences of the 67 residues leading up to the end of the arrest peptide (AP) for constructs with the indicated N-values. The constructs are identified by black circles on the BtuC FP in Figure 4b. For each construct, the residues indicated in bold green were simultaneously mutated to Ala. The shaded area encompasses residues located 40–50 residues away from the C-terminal end of the AP in the respective constructs. Hydrophobic transmembrane helix segments are shown in orange and membrane-embedded α-helices underlined. (b) fFL values for the unmutated constructs (orange) and the Ala-replacement mutants (blue). Error bars indicate SEM values, and stars indicate p-values calculated using a two-sided t-test (*p < 0.05; **p < 0.01; ***p < 0.001).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64302/elife-64302-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** As in Figure 4b, with the force profile (FP) for construct BtuC(ΔTMH1-TMH4) in green.
 
 We identified 11 peaks in the FP (Figure 4b, orange), one more than could be accounted for by the 10 TMHs. Since it was not possible to provide an unequivocal match between the BtuC FP and the CGMD-FP (or HP, Figure 4—figure supplement 1a), we did two sets of controls. First, we chose constructs at or near peaks in the FP and CGMD-FP and mutated multiple hydrophobic residues (Leu, Ile, Val, Met) located 40–50 residues from the PTC to less hydrophobic Ala residues (Figure 4—figure supplement 2). The mutations caused significant drops in fFL (p < 0.01, two-sided t-test), except for construct N = 191 that is mutated at the extreme N-terminus of TMH5. The mutation data allowed us to identify the membrane integration of TMHs 1, 2, 3, 4, 5, 7, 8, 9, and 10 with peaks I, II, III, IV, V, VIII, IX, X, and XI, respectively; the overlapping peaks VIII and IX appear to represent the concerted integration of the closely spaced TMH7 and TMH8. However, peak II (corresponding to TMH2) is shifted to unexpectedly high, and peaks V (corresponding to TMH5), X (corresponding to TMH9), and XI (corresponding to TMH10) to unexpectedly low, Nstart values (Figure 4c). To confirm these assignments, we obtained FPs for the isolated TMH2 (dashed green), TMH8 (dashed light blue), and TMH10 (dashed pink) sequences (Figure 4b) by introducing them into the periplasmic domain of LepB such that they maintained their natural Nout-Cin orientation (Figure 4d); the FPs for the individual TMHs overlap the corresponding peaks II, IX, and XI in the full FP. Likewise, an FP obtained for a construct lacking TMH1-TMH4 overlaps the full FP, except that peak V is shifted to a higher Nstart value (Figure 4—figure supplement 3), more in line with the peak seen in the CGMD-FP. The low Nstart value for the Nin-Cout-oriented TMH5 in full-length BtuC may result from an early interaction between a positively charged patch (RFARRHLSTSR) just upstream of TMH5 and negatively charged lipid headgroups (note that only two of the four Arg residues are present in the ΔTMH1-TMH4 construct; Figure 4—figure supplement 3), while the low Nstart values for peaks X and XI are likely caused by the short upstream hydrophobic segments LCGL and LAAALEL (Figure 4c,f), similar to peak III in GlpG.
 
@@ -79,40 +119,141 @@ We also find that the cytoplasmic NTD in GlpG folds already in the ribosome exit
 
 ## Materials and methods
 
-## Enzymes and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CMC0016</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MC1061</td>
+      <td>J Biol Chem. 261:13844–9. PMID:3531212</td>
+      <td>NA</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein-G-agarose</td>
+      <td>Roche</td>
+      <td>11243233001</td>
+      <td>Resin used for immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA.11 epitope tag antibody (mouse monoclonal) IgG</td>
+      <td>BioLegend</td>
+      <td>Cat# 901533</td>
+      <td>Used for immunoprecipitation (1 μl of 1 mg/ml, diluted 1:820)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LepB antibody (rabbit polyclonal) IgG</td>
+      <td>Generated in-house</td>
+      <td>NA</td>
+      <td>Used for immunoprecipitation (dilution 1:820)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET Duet-1 (plasmid)</td>
+      <td>Novagen</td>
+      <td>Cat# 71146</td>
+      <td>Expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pING1 (plasmid)</td>
+      <td>Gene 34:137–45. PMID:4007491</td>
+      <td>NA</td>
+      <td>Expression plasmid</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GeneJET Plasmid miniprep kit</td>
+      <td>Thermo Fisher Scientific RRID: SCR_008452</td>
+      <td>Cat# 0502</td>
+      <td>Used to purify plasmids</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GeneJET PCR Purification Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# K0701</td>
+      <td>Used to purify linear fragments for in vitro expression</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PURExpress</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E6800L</td>
+      <td>Used for in vitro expression</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>35S methionine</td>
+      <td>PerkinElmer</td>
+      <td>Cat# NEG009T001MC</td>
+      <td>35S Methionine is incorporated into the protein during in vitro and in vivo translation and aids detection by phosphor imaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EasyQuant</td>
+      <td>Developed in-house Nat Struct Mol Biol. 19:1018–22. PMID: 23001004</td>
+      <td></td>
+      <td>Used to quantify relative fraction full length of translated protein from SDS-PAGE</td>
+    </tr>
+  </tbody>
+</table>
+
+### Enzymes and chemicals
 
 All enzymes used in this study were purchased from Thermo Fisher Scientific (USA) and New England Biolabs (USA). Oligonucleotides were from Eurofins Genomics (Germany). DNA isolation/purification kits and precast polyacrylamide gels were from Thermo Fisher Scientific (USA). L-[35S]-methionine was obtained from PerkinElmer (USA). Mouse monoclonal antibody against the HA antigen was purchased from BioLegend (USA). Protein G-agarose beads were manufactured by Roche (Switzerland). All other reagents were from Sigma-Aldrich (Germany).
 
-## Cloning and mutagenesis
+### Cloning and mutagenesis
 
-## EmrE
+#### EmrE
 
 The previously described Nout-Cout-oriented EmrE(Cout) version carrying mutations T28R, L85R, and R106A was engineered in a pETDuet-1 vector (Rapp et al., 2007). A series of constructs was designed by inserting nucleotides downstream of EmrE(Cout) coding for a variable LepB-derived linker sequence (between 4 and 34 residues), the 9-residue long HA tag, the 17-residue long E. coli SecM AP, and a 23-residue long C-terminal tail. The following APs with stalling strengths were used: SecM(Ec) (FSTPVWISQAQGIRAGP), SecM(Ec-Ms) (FSTPVWISQHAPIRGSP, mutations underlined), and SecM(Ec-Sup1) (FSTPVWISQAPPIRAGP, mutations underlined). The LepB-derived linker as well as EmrE(Cout) were truncated 2–5 residues at a time from the C-terminus of the respective sequence. Site-specific DNA mutagenesis was carried out to introduce point mutations E14L, E14A, E14D, and E14Q in EmrE(Cout). All cloning and mutagenesis products were confirmed by DNA sequencing. Different EmrE sequences used in this study are summarized in Supplementary file 1.
 
-## GlpG
+#### GlpG
 
 The gene encoding for GlpG was amplified from the genome of E. coli K-12 MG1655 strain by PCR and assembled together with other sequence elements into the pING1 plasmid (Johnston et al., 1985; Dalbey and Wickner, 1985) by Gibson assembly (in-house). For the longest truncates, a LepB-derived unstructured linker was introduced downstream of the GlpG sequence, followed by an HA tag, a 17-residue long E. coli SecM AP, and a 23-residue long C-terminal tail derived from LepB. Partially overlapping primers were used in around-the-horn PCR (Floor, 2018) to create deletion variants truncating upstream of the HA tag. All the sequences of GlpG deletion variants used in this study are summarized in Supplementary file 1. For LepB-GlpG constructs, 60 N-terminal residues corresponding to the soluble domain were truncated from GlpG and substituted by LepB N-terminal segment comprising TMH1 and a long cytoplasmic loop (1–174 res of LepB). Three different stalling sequences of increasing strength were used: SecM(Ec) (FSTPVWISQAQGIRAGP), SecM(Ec-Ms) (FSTPVWISQHAPIRGSP, mutations underlined), and SecM(Ec-Sup1) (FSTPVWISQAPPIRAGP, mutations underlined). Mutations in SecM(Ec) AP and GlpG folding variants NTD(F16E), GlpG(Y138F139L143→NNN) were engineered using partially overlapping primers in around-the-horn PCR. All cloning and mutagenesis products were confirmed by DNA sequencing.
 
 For in vitro transcription/translation of the soluble NTD domain, constructs of variable length were fused to the SecM(Ec) AP and cloned into the pET19b vector. Folding variant NTD(F16E) was engineered using partially overlapping primers in around-the-horn PCR. pET19b plasmids containing different GlpG variants were used as template to create linear DNA fragments amplified by PCR for each construct using forward and reverse primers that anneal to the T7 promoter and terminator regions, respectively.
 
-## BtuC
+#### BtuC
 
 The previously described pING1 plasmid harboring a truncated LepB sequence with an inserted hydrophobic test segment (6L/13A) followed by a variable LepB-derived linker (between 9 and 43 residues), the 17-residue long E. coli SecM AP, and a C-terminal tail comprising 23 or 75 residues derived from LepB was used to generate all BtuC constructs (Ismail et al., 2012). All BtuC sequences used in this study are summarized in Supplementary file 1. The gene encoding BtuC was amplified from the genome of the E. coli K-12 MG1655 strain by PCR and then engineered to replace 6L/13A using Gibson assembly (in-house) (Gibson et al., 2009). In order to maintain the correct topology of BtuC, the sequence coding for TMH2 of LepB (between residues P58 and P114) was removed by deletion-PCR, resulting in a 177-residue-long sequence upstream of BtuC. A gene sequence encoding 52 residues (part of LepB P2 domain) was introduced downstream of the SecM AP for constructs with N ≥ 298, resulting in an extension of the C-terminal tail from 23 to 75 residues in order to improve protein separation during SDS-PAGE. The LepB-derived linker as well as BtuC were truncated four residues at a time from the C terminus of the respective sequence. Site-specific DNA mutagenesis was carried out to replace three or six hydrophobic residues with Ala residues in TMHs of BtuC and to replace three Arg residues with Gln residues in the periplasmic loop connecting TMH1 and TMH2 (R47R56R59→QQQ). Gene sequences of single TMH and 2-TMH constructs were cloned with the variable linker sequence derived from LepB, and the single TMH constructs were placed in the background containing gene sequences of both LepB TMHs in order to maintain the correct topology. Furthermore, BtuCΔLepB constructs lacking the N-terminal LepB fusion were obtained by deletion of the entire LepB sequence upstream of BtuC, and the 9-residue long LepB-derived linker was replaced with an HA tag for immunoprecipitation. All cloning and mutagenesis products were confirmed by DNA sequencing.
 
-## In vivo pulse-labeling analysis
+### In vivo pulse-labeling analysis
 
 Competent E. coli MC1061 (Dalbey and Wickner, 1986) or BL21 (DE3) cells were transformed with the respective pING1 (BtuC, GlpG) or pET Duet-1 (EmrE) plasmid, respectively, and grown overnight at 37°C in M9 minimal medium supplemented with 19 amino acids (1 μg/ml, no Met), 100 μg/ml thiamine, 0.4% (w/v) fructose, 100 mg/ml ampicillin, 2 mM MgSO4, and 0.1 mM CaCl2. Cells were diluted into fresh M9 medium to an OD600 of 0.1 and grown until an OD600 of 0.3–0.5. Expression from pING1 was induced with 0.2% (w/v) arabinose and continued for 5 min at 37°C. Expression from pET Duet-1 was induced with 1 mM IPTG and continued for 10 min at 37°C. Proteins were then radiolabeled with [35S]-methionine for 2 min (1 min for BtuC constructs lacking the N-terminal LepB fusion) at 37°C before the reaction was stopped by adding ice-cold trichloroacetic acid (TCA) to a final concentration of 10%. Samples were put on ice for 30 min and precipitates were spun down for 10 min at 20,000 g at 4°C in a tabletop centrifuge (Eppendorf, Germany). After one wash with ice-cold acetone, centrifugation was repeated and pellets were subsequently solubilized in Tris-SDS buffer (10 mM Tris-Cl pH 7.5, 2% [w/v] SDS) for 5 min while shaking at 1400 rpm at 37°C. Samples were centrifuged for 5 min at 20,000 g to remove insoluble material. The supernatant was then added to a buffer containing 50 mM Tris-HCl pH 8.0, 150 mM NaCl, 0.1 mM EDTA-KOH, 2% (v/v) triton X-100, and supplemented with Pansorbin (Sigma-Aldrich) (BtuC constructs) or Protein-G-agarose (Roche) (all GlpG and EmrE constructs, and BtuC constructs lacking the N-terminal LepB fusion). After 15 min incubation on ice, non-specifically bound proteins were removed by centrifugation at 20,000×g (when Pansorbin was used) or 7000×g (when Protein-G-agarose was used). The supernatant was used for immunoprecipitation of BtuC constructs using Pansorbin and LepB antisera (rabbit) (in-house), or immunoprecipitation of GlpG/EmrE constructs using Protein-G-agarose and Anti-HA.11 Epitope Tag Antibody (mouse) (BioLegend). The incubation was carried out at 4°C while rolling. After centrifugation for 1 min, immunoprecipitates were washed with 10 mM Tris-Cl pH 7.5, 150 mM NaCl, 2 mM EDTA, and 0.2% (v/v) triton X-100 and subsequently with 10 mM Tris-Cl pH 7.5. Samples were spun down again and pellets were solubilized in SDS sample buffer (67 mM Tris, 33% [w/v] SDS, 0.012% [w/v] bromophenol blue, 10 mM EDTA-KOH pH 8.0, 6.75% [v/v] glycerol, 100 mM DTT) for 10 min while shaking at 1400 rpm. Solubilized proteins were incubated with 0.25 mg/ml RNase for 30 min at 37°C and subsequently separated by SDS-PAGE on Bis-Tris gels (Thermo Fisher Scientific). Gels were fixed in 30% (v/v) methanol and 10% (v/v) acetic acid and dried by using a Bio-Rad gel dryer model 583 (Bio-Rad Laboratories, US). Radiolabeled proteins were detected by exposing dried gels to phosphorimaging plates, which were scanned in a Fujifilm FLA-3000 scanner (Fujifilm, Japan). Band intensity profiles were obtained using the FIJI (ImageJ) software and quantified with our in-house software EasyQuant. Ac and/or FLc controls were included in the SDS-PAGE analysis for constructs where the identities of the A and FL bands were not immediately obvious on the gel. Data was generally collected from three independent biological replicates for EmrE and BtuC, and for two or three replicates for GlpG, and averages and SEM were calculated (see Source data 1). Note that for two replicates plotting the average ± SEM is equivalent to plotting the average ± error bars representing the two experimental measurements.
 
-## In vitro transcription/translation of GlpG NTD
+### In vitro transcription/translation of GlpG NTD
 
 In vitro transcription/translation was performed using the commercially available PURExpress system (New England Biolabs). Reactions were mixed according to the manufacturer’s recommendations by the addition of 2.2 μl of linear DNA of each construct giving a final volume of 10 μl. Polypeptide synthesis was carried out in the presence of [35S]-methionine at 37°C for 15 min under 700 rpm shaking. Translation was stopped by the addition of TCA to a final concentration of 5% and incubated on ice for at least 30 min. Total protein was sedimented by centrifugation at 20,000 g for 10 min at 4°C in a tabletop centrifuge (Eppendorf, Germany). The pellet was resuspended in 2× SDS/PAGE sample buffer, supplemented with RNaseA (400 μg/ml) to digest the stalled peptidyl-tRNA, and incubated at 37°C for 15 min under 1000 rpm agitation. The samples were resolved on 12% Bis-Tris gels (Thermo Fisher Scientific) in MOPS buffer. Gels were dried on Hoefer GD 2000 dryer (Hoefer, US), exposed to a phosphorimager screen for 24 hr, and scanned using the Fujifilm FLA-9000 phosphorimager for visualization of radioactively labeled protein species.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Computer simulations of cotranslational membrane integration were carried out using a previously developed and validated CGMD model in which nascent proteins are mapped onto CG beads representing three amino acids (Niesen et al., 2017; Niesen et al., 2018). The nascent protein interacts with the Sec translocon and the ribosome via pairwise interactions that depend on the hydrophobicity and charge of the beads of the nascent protein. The interaction parameters are unchanged from previous work (Niesen et al., 2017). The lateral gate of the translocon switches between the open and closed conformations with probability dependent on the difference in free energy between the two conformations. The structures of the ribosome and translocon are based on cryo-EM structures and, aside from the lateral gate of the translocon, are fixed in place during the simulations. The lipid bilayer and cytosol are modeled implicitly. The positions of the nascent protein beads are evolved using overdamped Langevin dynamics with a timestep of 300 ns and a diffusion coefficient of 253 nm2/s. Membrane potentials are included by adding an electrostatic energy term to the simulations, as previously described (Niesen et al., 2018).
 
 To simulate protein translation, new amino acids are added to the nascent chain at a rate of five amino acids per second. Simulations of EmrE, GlpG, and BtuC begin with 12 amino acids translated. Translation continues until the nascent protein reaches the desired length, at which point translation is halted and forces on the C-terminus of the nascent chain are measured every 3 ms for 6 s. This methodology has been found to accurately reproduce experimental FPs (Niesen et al., 2018). Forces are measured starting at a nascent protein length of 18 amino acids for EmrE and BtuC, and 70 for GlpG. The computational force profile (CGMD-FP) is then obtained by measuring the forces at lengths incremented by four amino acids. Simulations at different lengths are performed independently and repeated 100 times. Because the ribosomal exit tunnel is truncated in the CGMD model, a shift in the protein index is required to compare simulated and experimental results. Shifts of −12, –5, and −5 residues are used for EmrE, GlpG, and BtuC CGMD-FPs, respectively. The shifts are estimated by aligning the computational and experimental FPs and are in line with what is expected given the length of the truncated exit tunnel. Variation in the shift may reflect different degrees of compaction of the nascent chain. Although previous work provides a framework to estimate the experimentally observed fraction full length from simulated forces given a specific AP (Niesen et al., 2018; Tian et al., 2018), forces are reported directly to facilitate comparison between experiments performed with different APs.
 
-## Protein contact order calculation
+### Protein contact order calculation
 
 The relative contact order for the GlpG NTD was calculated using the Contact Order server at https://depts.washington.edu/bakerpg/contact_order/contact_order.cgi.

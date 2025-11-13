@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01r9htc13 U-CRI (ULB Center for Research in Immunology), Université Libre de Bruxelles (ULB) Charleroi Belgium
-2. https://ror.org/01r9htc13 Immunobiology Laboratory, Université Libre de Bruxelles (ULB) Charleroi Belgium
-3. https://ror.org/01r9htc13 Institute for Medical Immunology, Université Libre de Bruxelles (ULB) Charleroi Belgium
-4. https://ror.org/01r9htc13 Department of Radiation Oncology, Institut Jules Bordet, Université Libre de Bruxelles Brussels Belgium
-5. https://ror.org/01r9htc13 Laboratory of Clinical and Experimental Oncology (LOCE), Institut Jules Bordet, Université Libre de Bruxelles Brussels Belgium
+1. U-CRI (ULB Center for Research in Immunology), Université Libre de Bruxelles (ULB) Charleroi Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+2. Immunobiology Laboratory, Université Libre de Bruxelles (ULB) Charleroi Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+3. Institute for Medical Immunology, Université Libre de Bruxelles (ULB) Charleroi Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+4. Department of Radiation Oncology, Institut Jules Bordet, Université Libre de Bruxelles Brussels Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
+5. Laboratory of Clinical and Experimental Oncology (LOCE), Institut Jules Bordet, Université Libre de Bruxelles Brussels Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
 
 † Corresponding author
 
 ## Abstract
 
-The oxygen sensor prolyl hydroxylase domain 2 (PHD2) plays an important role in cell hypoxia adaptation by regulating the stability of HIF proteins (HIF1α and HIF2α) in numerous cell types, including T lymphocytes. The role of oxygen sensor on immune cells, particularly on regulatory T cell (Treg) function, has not been fully elucidated. The purpose of our study was to evaluate the role of PHD2 in the regulation of Treg phenotype and function. We demonstrate herein that selective ablation of PHD2 expression in Treg (PHD2 ΔTreg mice) leads to a spontaneous systemic inflammatory syndrome, as evidenced by weight loss, development of a rectal prolapse, splenomegaly, shortening of the colon, and elevated expression of IFN-γ in the mesenteric lymph nodes, intestine, and spleen. PHD2 deficiency in Tregs led to an increased number of activated CD4 conventional T cells expressing a Th1-like effector phenotype. Concomitantly, the expression of innate-type cytokines such as Il1b , Il12a , Il12b, and Tnfa was found to be elevated in peripheral (gut) tissues and spleen. PHD2 ΔTreg mice also displayed an enhanced sensitivity to dextran sodium sulfate-induced colitis and toxoplasmosis, suggesting that PHD2-deficient Tregs did not efficiently control inflammatory response in vivo, particularly those characterized by IFN-γ production. Further analysis revealed that Treg dysregulation was largely prevented in PHD2-HIF2α (PHD2-HIF2α ΔTreg mice), but not in PHD2-HIF1α (PHD2-HIF1α ΔTreg mice) double KOs, suggesting an important and possibly selective role of the PHD2-HIF2α axis in the control of Treg function. Finally, the transcriptomic analysis of PHD2-deficient Tregs identified the STAT1 pathway as a target of the PHD2-HIF2α axis in regulatory T cell phenotype and in vivo function.
+The oxygen sensor prolyl hydroxylase domain 2 (PHD2) plays an important role in cell hypoxia adaptation by regulating the stability of HIF proteins (HIF1α and HIF2α) in numerous cell types, including T lymphocytes. The role of oxygen sensor on immune cells, particularly on regulatory T cell (Treg) function, has not been fully elucidated. The purpose of our study was to evaluate the role of PHD2 in the regulation of Treg phenotype and function. We demonstrate herein that selective ablation of PHD2 expression in Treg (PHD2ΔTreg mice) leads to a spontaneous systemic inflammatory syndrome, as evidenced by weight loss, development of a rectal prolapse, splenomegaly, shortening of the colon, and elevated expression of IFN-γ in the mesenteric lymph nodes, intestine, and spleen. PHD2 deficiency in Tregs led to an increased number of activated CD4 conventional T cells expressing a Th1-like effector phenotype. Concomitantly, the expression of innate-type cytokines such as Il1b, Il12a, Il12b, and Tnfa was found to be elevated in peripheral (gut) tissues and spleen. PHD2ΔTreg mice also displayed an enhanced sensitivity to dextran sodium sulfate-induced colitis and toxoplasmosis, suggesting that PHD2-deficient Tregs did not efficiently control inflammatory response in vivo, particularly those characterized by IFN-γ production. Further analysis revealed that Treg dysregulation was largely prevented in PHD2-HIF2α (PHD2-HIF2αΔTreg mice), but not in PHD2-HIF1α (PHD2-HIF1αΔTreg mice) double KOs, suggesting an important and possibly selective role of the PHD2-HIF2α axis in the control of Treg function. Finally, the transcriptomic analysis of PHD2-deficient Tregs identified the STAT1 pathway as a target of the PHD2-HIF2α axis in regulatory T cell phenotype and in vivo function.
 
 ## Introduction
 
@@ -45,43 +45,99 @@ To better delineate the role of PHD2, HIF1α, and HIF2α in the regulation of Tr
 
 ## Results
 
-## Deletion of PHD2 in Tregs leads to a systemic, type 1-like, inflammatory syndrome associated to altered Treg numbers and phenotype
+### Deletion of PHD2 in Tregs leads to a systemic, type 1-like, inflammatory syndrome associated to altered Treg numbers and phenotype
 
 Based on the predominance of Egln1 (PHD2) expression in Tregs over other members of the PHD family, we generated a mouse strain lacking PHD2 expression in Tregs (identified as PHD2ΔTreg) (Figure 1, Figure 1—figure supplement 1), as described in Materials and methods. These mice displayed a strongly reduced expression of Egln1 mRNA in Tregs, while retaining control level expression of this enzyme in other, non-Treg spleen and peripheral lymph node cells (Figure 1—figure supplement 1). Upregulation of GLUT1 expression, a well-known target of HIF1α, was also only found in Foxp3-expressing cells in these mice, further supporting the selective depletion of PHD2 in Tregs vs. T convs (Figure 1—figure supplement 1). While fertile and viable, over 70% of these mice developed a spontaneous inflammatory syndrome, characterized by weight loss, episodes of anal prolapse, reduced colon length, splenomegaly, and hemorrhagic abdomen (Figure 1a–e). This last feature is most likely due to an increased blood hematocrit (with enhanced numbers of circulating red blood cells) associated to an elevation in vascular permeability, as shown in Figure 1—figure supplement 2. Although the frequency of CD4+ and CD8+ conventional T lymphocytes (see Figure 1—figure supplement 3 for gating strategy) in several lymphoid organs was not significantly altered in PHD2ΔTreg mice (Figure 1f), the total number of CD4+ cells was increased in the peripheral lymphoid organs of these mice (Figure 1—figure supplement 4). Moreover, these lymphocytes displayed clear signs of spontaneous activation, as evidenced by the significant increase in the expression of markers (i.e., CD44) associated to an effector-like phenotype (Figure 1g and h). Confirming these findings, intracellular staining of short-term stimulated T cells (using pharmacological agents bypassing TCR signaling) revealed an increased capacity of conventional T cells from PHD2ΔTreg mice to produce IFN-γ, while retaining control-like production of IL-17 (Figure 1i). The ex vivo evaluation of mRNA abundance in whole, unfractionated, mesenteric lymph nodes (mLNs) similarly showed a significantly elevated expression of type 1-associated adaptive and innate cytokines, including Ifng, Il1b, both Il12 subunits, and Tnfa (Figure 1j). Overall, these observations point to the establishment of a Th1-like, proinflammatory environment in mice possessing PHD2-deficient Tregs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig1-v2.jpg)
+
+**Figure 1.:** (a) Body weight of naive mice was determined weekly. (b) At 12 weeks of age, male and female mice were examined for rectal prolapse. (c) Splenomegaly and colon length summarized in (d). (e) Representative gross autopsy of a hemorrhagic abdomen, (f–i) Lymphoid cells from spleen, mesenteric (mLN), peripheral (pLN) lymph nodes, or the small intestine lamina propria were collected from Foxp3cre and PHD2ΔTreg mice. (f) Frequency of conventional, Foxp3- CD4 and CD8-expressing cells among TCRβ-expressing T lymphocytes. (g) Representative merged (n = 15) t-distributed stochastic neighbor embedding (t-SNE) plot after dimensionality reduction and unsupervised clustering of flow cytometry data from CD4-expressing spleen cells. Relative distributions of CD4+ lymphocyte subsets are shown as doughnut charts. (h) Frequency of effector-like (CD44hi CD62Llo) conventional T lymphocytes in the indicated lymphoid organs. (i) Frequency of IFN-γ (top panel) and IL-17A (bottom panel) producing CD4+ T cells after in vitro stimulation. (j) Expression of inflammatory cytokines determined by qPCR on extracts from unfractionated mLNs. Data are representative of at least three independent experiments with n = 9 (a, j), n = 25 (d), and n = 15 (f–i) per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Naive Tconv: Foxp3- CD44- CD62L+; Memory Tconv: Foxp3- CD44+ CD62L+; Effector Tconv: Foxp3- CD44+ CD62L-; Memory Treg: Foxp3+ CD44+CD62L+; Effector Treg: Foxp3+ CD44+CD62L-.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Treg cells from Foxp3cre male and female mice were purified by cell sorting from spleen (n = 10), mesenteric (mLN) (n = 8), peripheral (pLN) lymph nodes (n = 4), or the small intestine lamina propria (n = 4) and expression of Egln2 (PHD1), Egln1 (PHD2), and Egln3 (PHD3) analyzed by qPCR. (b) YFP-positive (YFP+) and YFP-negative (YFP-) cells from PHD2-sufficient (Foxp3cre mice) and PHD2-deficient (PHD2ΔTreg mice) were purified by cell sorting from spleen and mLN and expression of Egln1 analyzed by qPCR. The graph demonstrates selective loss of Egln1 gene expression in Tregs, but not in Tconvs purified from PHD2ΔTreg mice. (c) Ifng gene expression relative to RPL32 by ex vivo-purified Tregs from spleen and mLN was determined by qPCR. (d) Representative flow cytometry expression profile of GLUT1, a specific HIF1α target gene in Foxp3-expressing or nonexpressing cells from Foxp3cre and PHD2ΔTreg mice. (e) Frequency of GLUT1-expressing Tregs in lymphoid organs from Foxp3cre and PHD2ΔTreg mice. Data are representative of two independent experiments with n = 6 per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) White blood cell (WBC) counts, (b) red blood cell (RBC) counts, (c) platelet (PLT) counts, and (d) hematocrit (HCT) from Foxp3cre, PHD2ΔTreg, and PHD2-HIF2αΔTreg male mouse blood. To assess vascular permeability, mice were i.v. injected with a 0.5% Evans blue solution, and the indicated, organs collected after 30 min and placed in formamide at 55°C during 24 hr. The absorbance of supernatants was measured at 600 nm, (e) Representative image of the colon supernatant after 24 hr in formamide, (f) ng of Evans blue per mg of tissue for spleen, mesenteric lymph nodes (mLN), colon, and liver of different groups of mice injected or not with Evans blue. Data are representative of two (a–d) or three (e, f) independent experiments with n = 7–9 per group (a–d) or n = 4–6 per group (e, f). Values are presented as the mean ± SD and were compared by one-way ANOVA (a–d) or two-way ANOVA (f) with Tukey’s multiple comparisons test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Representative flow cytometry dot plots displaying the gating strategy for the identification of conventional T cell populations in Figures 1 and 3—5 and for the identification of regulatory T cell subsets in Figure 2, Figure 4, and Figure 8 .
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Absolute cell counts of (a) CD4+ T cells, (b) CD8+ T cells, (c) regulatory T cells, and (d) activated conventional T cells in the spleen, mesenteric (mLN), peripheral (pLN) lymph nodes, and the small intestine lamina propria of Foxp3cre and PHD2ΔTreg male and female mice. Data are representative of at least three independent experiments with n = 15 per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Much to our surprise, flow cytometric analysis of lymphoid organs from naive animals revealed an increased frequency of Treg cells in the spleen, lymph nodes, and lamina propria of PHD2ΔTreg mice when compared to control animals (Figure 2a). To evaluate the possible influence of PHD2 deletion on Treg development, thymic cell suspensions were analyzed for the expression of early Treg markers, including Foxp3, CD25, and CD24 (Owen et al., 2019). Recent studies have revealed that mature Foxp3high CD25+ Tregs can differentiate from two distinct thymic precursors identified as respectively CD25+ Foxp3- and CD25- Foxp3low precursor Tregs (pre-Tregs). Analysis of thymic cell suspensions revealed an accumulation of the Foxp3low pre-Tregs and a reduction in the number of mature Tregs in PHD2-deficient, Foxp3-expressing cells, suggesting an early role for PHD2 in the generation of thymic-derived Tregs (Figure 2b and c). Accordingly, PHD2-deficient, Foxp3-expressing cells retained higher expression of CD24 (Figure 2d), a marker associated to a thymic immature state (Owen et al., 2019), further confirming a putative role for PHD2 in the development of thymic-derived Tregs. No difference in the relative frequency of Treg subsets identified by the co-expression of Foxp3 with either naive and memory markers (Figure 2e) or with master transcription factors T-bet, GATA3, or RORγt (Figure 2f) was noted in these mice. The phenotype of splenic, PHD2-deficient Tregs was however significantly altered, showing a slight, but statistically significant, reduction in the expression of Foxp3 (Figure 2g), accompanied by reduced expression of the CD25, ICOS, and CD44 markers and enhanced expression of PD-1 (Figure 2h). Of note, neither CTLA-4 (Figure 2h) nor Il10 (Figure 2i) expression was altered in PHD2-deficient Tregs. To evaluate the functional consequences of PHD2 deletion on peripheral Treg development, we generated Tregs from naive, conventional T cells using a well-established in vitro protocol. In keeping with in vivo observations, culture of CD4+ T conv from PHD2ΔTreg mice led to a consistently higher yield of Foxp3-expressing cells when activated in the presence of Treg-inducing cytokines (Figure 2j and k). In contrast to their in vivo counterparts, these induced Tregs displayed control level expression of Foxp3 (Figure 2l).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig2-v2.jpg)
 
-**Figure 2.:** Lymphoid cells from the thymus, spleen, mesenteric (mLN), and peripheral (pLN) lymph nodes were collected at 12 weeks of age from Foxp3cre and PHD2ΔTreg male and female mice, and the relative frequency and phenotype of Foxp3-expressing cells were established by flow cytometry or qPCR. (a) Frequency of Foxp3-expressing cells among CD4-positive T lymphocytes. (b) Representative flow cytometry expression profiles of Foxp3 and CD25 expression among thymic CD4+ T cells. (c) Frequency of mature-like (CD25+ Foxp3+) and Treg precursors subsets identified respectively as CD25- Foxp3lo and CD25+ Foxp3- cells among thymic CD4+ T cells. (d) Frequency of immature-like, CD24+ Foxp3+ T cells in the thymus of adult mice. (e) Frequency of effector (CD62Llow CD44high), memory (CD62Lhigh CD44high), and naive (CD62Lhigh CD44low) splenic Foxp3-expressing cells. (f) Frequency of splenic Tregs expressing the master transcription factors T-bet, GATA3, and RORγt. (g) Ratio of the Foxp3 MFI of PHD2-KO splenic Tregs to Foxp3cre splenic Tregs. (h) Expression of CD25, CD44, ICOS, PD-1, and CTLA-4 in splenic Treg of Foxp3cre and PHD2ΔTreg mice. Top panel: representative traces of MFI. Bottom panel: ratios of the MFIs of PHD2-KO Treg to Foxp3cre Treg cells are expressed as the mean ± SD. (i) Il10 gene expression relative to RPL32 by ex vivo-purified Tregs was determined by qPCR. (j–l) CD4+ Foxp3- splenic naive T cells were stimulated in vitro with anti-CD3/CD28 (5/1 μg/ml) in the presence of TGF-β (3 μg/ml) and IL-2 (10 μg/ml) for 72 hr to induce Treg polarization. (j) Representative flow cytometry expression profiles of Foxp3 expression at the end of the culture period. The first panel represents a typical profile of cells activated in the absence of polarizing cytokines. (k) Number of Foxp3+ cells generated in the culture conditions. (l) Expression (MFI) of Foxp3 by in vitro-induced Treg cells. Data are representative of at least two independent experiments with n = 15 (a, e–g) n = 9 (h, i) or n = 6 (c, d, k, l) per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001.Figure 2—source data 1.
+**Figure 2.:** Lymphoid cells from the thymus, spleen, mesenteric (mLN), and peripheral (pLN) lymph nodes were collected at 12 weeks of age from Foxp3cre and PHD2ΔTreg male and female mice, and the relative frequency and phenotype of Foxp3-expressing cells were established by flow cytometry or qPCR. (a) Frequency of Foxp3-expressing cells among CD4-positive T lymphocytes. (b) Representative flow cytometry expression profiles of Foxp3 and CD25 expression among thymic CD4+ T cells. (c) Frequency of mature-like (CD25+ Foxp3+) and Treg precursors subsets identified respectively as CD25- Foxp3lo and CD25+ Foxp3- cells among thymic CD4+ T cells. (d) Frequency of immature-like, CD24+ Foxp3+ T cells in the thymus of adult mice. (e) Frequency of effector (CD62Llow CD44high), memory (CD62Lhigh CD44high), and naive (CD62Lhigh CD44low) splenic Foxp3-expressing cells. (f) Frequency of splenic Tregs expressing the master transcription factors T-bet, GATA3, and RORγt. (g) Ratio of the Foxp3 MFI of PHD2-KO splenic Tregs to Foxp3cre splenic Tregs. (h) Expression of CD25, CD44, ICOS, PD-1, and CTLA-4 in splenic Treg of Foxp3cre and PHD2ΔTreg mice. Top panel: representative traces of MFI. Bottom panel: ratios of the MFIs of PHD2-KO Treg to Foxp3cre Treg cells are expressed as the mean ± SD. (i) Il10 gene expression relative to RPL32 by ex vivo-purified Tregs was determined by qPCR. (j–l) CD4+ Foxp3- splenic naive T cells were stimulated in vitro with anti-CD3/CD28 (5/1 μg/ml) in the presence of TGF-β (3 μg/ml) and IL-2 (10 μg/ml) for 72 hr to induce Treg polarization. (j) Representative flow cytometry expression profiles of Foxp3 expression at the end of the culture period. The first panel represents a typical profile of cells activated in the absence of polarizing cytokines. (k) Number of Foxp3+ cells generated in the culture conditions. (l) Expression (MFI) of Foxp3 by in vitro-induced Treg cells. Data are representative of at least two independent experiments with n = 15 (a, e–g) n = 9 (h, i) or n = 6 (c, d, k, l) per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001.
 
 To evaluate whether the altered phenotype of PHD2-deficient Tregs was a cell-autonomous phenomenon, heterozygous Foxp3cre/+ Egln1fl/fl mice in which both PHD2-sufficient (YFP-negative) and PHD2-deficient (YFP-positive) Tregs coexist were examined (Figure 3). These mice did not display any sign of inflammation or hematological dysfunction and were morphologically (cf. weight, colon length, and spleen size) indistinguishable from Foxp3cre or Foxp3cre/+ mice (this latter strain displaying the expected 1:1 ratio of YFP-pos:YFP-neg cells). Surprisingly, WT Tregs outcompeted PHD2-deficient Tregs in all compartments examined in Foxp3cre/+ Egln1fl/fl mice (i.e., thymus, spleen, and peripheral lymph nodes, Figure 3a). A similar trend was observed following the transfer of an equal mix of WT and PHD2-deficient Tregs in Rag2-deficient mice (data not shown), strongly suggesting that PHD2 expression plays a role in Treg fitness and survival in the periphery. As previously shown in Figure 2, PHD2-deficient Tregs expressed lower levels of Foxp3, CD25, and CD44, indicative of an intrinsic role of PHD2 in regulating Treg phenotype (Figure 3b–e). However, expression of CTLA-4 was not altered in PHD2-deficient Tregs (Figure 3b and f). Whether the altered fitness/ capacity to repopulate the periphery of PHD2-deficient Tregs is due to reduced expression of CD25 remains to be established.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig3-v2.jpg)
 
-**Figure 3.:** Spleen, thymus, mesenteric (mLN), and peripheral (pLN) lymph nodes were collected at 8 weeks of age from Foxp3cre/+Egln1f/f heterozygous female mice, and the relative frequency and phenotype of Foxp3-expressing cells were established by flow cytometry. (a) Proportion of WT (YFP- cells) or PHD2-KO (YFP+ cells) Treg cells among Foxp3-expressing cells. (b) Representative histograms of Foxp3, CD25, CD44, and CTLA-4 expression in splenic WT Tregs (black lines) compared to splenic PHD2-KO Tregs (red lines). (c) Foxp3 MFI, (d) CD25 MFI, (e) CD44 MFI, and (f) CTLA-4 MFI of WT and PHD2-KO Tregs in lymphoid organs. Data are representative of two independent experiments with n = 9 per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 3—source data 1.
+**Figure 3.:** Spleen, thymus, mesenteric (mLN), and peripheral (pLN) lymph nodes were collected at 8 weeks of age from Foxp3cre/+Egln1f/f heterozygous female mice, and the relative frequency and phenotype of Foxp3-expressing cells were established by flow cytometry. (a) Proportion of WT (YFP- cells) or PHD2-KO (YFP+ cells) Treg cells among Foxp3-expressing cells. (b) Representative histograms of Foxp3, CD25, CD44, and CTLA-4 expression in splenic WT Tregs (black lines) compared to splenic PHD2-KO Tregs (red lines). (c) Foxp3 MFI, (d) CD25 MFI, (e) CD44 MFI, and (f) CTLA-4 MFI of WT and PHD2-KO Tregs in lymphoid organs. Data are representative of two independent experiments with n = 9 per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test. Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
-## In vivo-reduced suppressive function of PHD2-deficient Tregs
+### In vivo-reduced suppressive function of PHD2-deficient Tregs
 
 To evaluate the suppressive capacity of PHD2-deficient Tregs cells, ex vivo-purified CD45.2-expressing Tregs from control and PHD2ΔTreg mice were adoptively co-transferred into syngeneic Rag-deficient mice with CFSE-labeled, CD45.1-expressing CD4+ naive T lymphocytes (Figure 4a). In the absence of Tregs, transferred naive cells rapidly divided and acquired an effector-like phenotype, a well-established consequence of homeostatic proliferation in a lymphopenic environment (Figure 4b). Addition of WT Tregs in the inoculum led to a significant reduction of conventional T cell proliferation and phenotype switch, while PHD2-deficient Tregs appeared functionally impaired in this assay (Figure 4b–d). Lack of suppressive activity of these Tregs was not a consequence of reduced viability and/or in vivo survival, as shown by the normal recovery rate of both Treg-populations at the time of assay readout (Figure 4e). In contrast, when tested in vitro, PHD2-deficient Tregs consistently displayed a fully functional suppressive activity (Figure 4f and g).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig4-v2.jpg)
 
-**Figure 4.:** (a) Treg function was assayed following adoptive co-transfer of CD45.2 Foxp3-expressing cells with naive, CFSE-labeled congenic CD45.1 CD4+ lymphocytes (Treg: Tconv ratio 1:3) into syngeneic lymphopenic male mice (Rag2-/-). Recipient mice were euthanized at day 6 post-transfer, and their spleen and mesenteric lymph node (mLN) cells analyzed by flow cytometry. (b) Representative flow cytometry expression profiles of CFSE-labeled cells (CD45.1 gate in the spleen) with or without co-transferred Foxp3+ cells from Foxp3cre or PHD2ΔTreg male mice. (c) Percentage of suppression established from CFSE staining profiles. (d) Frequency of activated (CD4+ CD45.1+ CD44hi CD62Llo) cells in the indicated lymphoid organs. (e) Frequency of Treg cells in the indicated organs 6 days post-transfer. (f, g) CFSE-labeled, naive conventional CD4+ T cells from CD54.1 mice were co-cultured with ex vivo-purified Treg cells from Foxp3cre or PHD2ΔTreg mice at the indicated ratios in the presence of anti-CD3 antibodies (0.5 μg/ml) and splenic feeder cells. (f) Representative flow cytometry profiles of CSFE staining. (g) Percent of suppression of proliferation as compared to cultures in which Treg cells were omitted. Data are representative of three independent experiments with n = 15 (b–e) or n = 4 (f, g) per group. Values are presented as the mean ± SD and were compared by two-way ANOVA with Tukey’s multiple comparisons test (c–e) or two-tailed unpaired Student’s t-test (g). Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001.Figure 4—source data 1.
+**Figure 4.:** (a) Treg function was assayed following adoptive co-transfer of CD45.2 Foxp3-expressing cells with naive, CFSE-labeled congenic CD45.1 CD4+ lymphocytes (Treg: Tconv ratio 1:3) into syngeneic lymphopenic male mice (Rag2-/-). Recipient mice were euthanized at day 6 post-transfer, and their spleen and mesenteric lymph node (mLN) cells analyzed by flow cytometry. (b) Representative flow cytometry expression profiles of CFSE-labeled cells (CD45.1 gate in the spleen) with or without co-transferred Foxp3+ cells from Foxp3cre or PHD2ΔTreg male mice. (c) Percentage of suppression established from CFSE staining profiles. (d) Frequency of activated (CD4+ CD45.1+ CD44hi CD62Llo) cells in the indicated lymphoid organs. (e) Frequency of Treg cells in the indicated organs 6 days post-transfer. (f, g) CFSE-labeled, naive conventional CD4+ T cells from CD54.1 mice were co-cultured with ex vivo-purified Treg cells from Foxp3cre or PHD2ΔTreg mice at the indicated ratios in the presence of anti-CD3 antibodies (0.5 μg/ml) and splenic feeder cells. (f) Representative flow cytometry profiles of CSFE staining. (g) Percent of suppression of proliferation as compared to cultures in which Treg cells were omitted. Data are representative of three independent experiments with n = 15 (b–e) or n = 4 (f, g) per group. Values are presented as the mean ± SD and were compared by two-way ANOVA with Tukey’s multiple comparisons test (c–e) or two-tailed unpaired Student’s t-test (g). Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001.
 
-## Increased susceptibility of PHD2ΔTreg mice to type 1 experimental inflammation
+### Increased susceptibility of PHD2ΔTreg mice to type 1 experimental inflammation
 
 A series of experimental acute and chronic inflammatory models were employed to further evaluate the capacity of PHD2ΔTreg mice to sustain an in vivo inflammatory challenge. We first exposed mice to a chemical-induced colitis protocol. This assay revealed an increased sensitivity of PHD2ΔTreg mice to most dextran sodium sulfate (DSS)-induced inflammatory manifestations, including weight loss (Figure 5a), survival (Figure 5b), clinical score (Figure 5c), and colon length (Figure 5d). No difference was noted, however, in crypt morphology induced by DSS in both mouse strains (Figure 5e). Similar observations were made when mice were acutely infected with Toxoplasma gondii, a model of infection-induced pathology (Figure 5f). Infected PHD2ΔTreg mice displayed increased weight loss (Figure 5g), reduced colon length (Figure 5h), and increased frequency of activated cells characterized by an effector-like phenotype (Figure 5i) and IFN-γ secretion capacity (Figure 5j). Infected PHD2ΔTreg mice also displayed a decrease in Treg T-bet+ frequency, a population known to control Th1 inflammation during toxoplasmosis (Wohlfert et al., 2020; Figure 5k). Overall, PHD2ΔTreg mice displayed an uncontrolled expansion of Th1-like cells following experimental toxoplasmosis. In contrast, both PHD2-deficient and -sufficient mouse strains were equally sensitive to enteritis induced upon injection of anti-CD3 antibodies (Figure 5—figure supplement 1), a model known to induce the predominant expansion of Th17-like, inflammatory effectors in vivo (Esplugues et al., 2011). The role of uncontrolled IFN-γ secretion in mediating the proinflammatory status of this mouse strain was further confirmed by the observation that ubiquitous loss of Ifng gene expression largely reversed the phenotypical and cellular altered status of PHD2ΔTreg mice (Figure 5—figure supplement 2).
 
-## Concomitant loss of HIF2α, but not HIF1α, expression partially corrects the proinflammatory phenotype of PHD2ΔTreg mice
+![Figure 5.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig5-v2.jpg)
+
+**Figure 5.:** Foxp3cre and PHD2ΔTreg male mice were provided with 2% DSS in tap water for 5 days. On day 5, the 2% DSS water was replaced with normal drinking water and mice were followed during 14 days for (a) body weight, (b) survival, (c) colitis severity, and (d) colon length. (e) Colons were isolated from untreated mice or 6 days after colitis induction and were fixed and stained with hematoxylin and eosin (H&E); arrows indicate inflammatory cell infiltrates. (f) Foxp3cre and PHD2ΔTreg male mice were infected by intragastric gavage with 10 cysts of ME-49 type II Toxoplasma gondii (control group are Foxp3cre mice without treatment) and subsequently followed for (g) body weight. (h) Mice were sacrificed 8 days after infection to assess colon length. (i) Frequency of effector-like (CD44hi CD62Llo) conventional T lymphocytes in the indicated lymphoid organs. (j) Frequency of IFN-γ-producing CD4+ T cells after in vitro stimulation. (k) Frequency of T-bet+ among Foxp3+(Treg) cells. Data are representative of three independent experiments with n = 20 (a, b), n = 10–14 (c, d), n = 5 (e), or n = 10 (g–k) per group. Values are presented as the mean ± SD and were compared by two-tailed unpaired Student’s t-test (a, c, g), by Mantel–Cox test (b), one-way ANOVA with Tukey’s multiple comparisons test (d, h) or two-way ANOVA with Tukey’s multiple comparisons test (i–k). Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Foxp3cre and PHD2ΔTreg female mice were injected twice i.p. with anti-CD3 mAbs (20 µg) at 2 days interval and weighted daily. (a) Weight loss was found similar in both mouse strains tested. (b) Relative expression of inflammatory mediators evaluated by qPCR on whole, unfractionated mesenteric lymph nodes. A similar, Th17-like response was observed in both mouse strains. Data are representative of two independent experiments with n = 6 per group. Values are presented as the mean ± SD and were compared by one-way ANOVA with Tukey’s multiple comparisons test. Only significant differences are indicated as follows: *p<0.05, **p<0.01.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** PHD2ΔTreg mice were crossed with IFN-γKO mice (PHD2ΔTreg IFN-γKO mice) and were compared to Foxp3cre and PHD2ΔTreg male and female mice and analyzed for (a) colon length, (b) frequency of effector-like (CD44hi CD62Llo) conventional T lymphocytes in the indicated lymphoid organs, (c) frequency of IFN-γ production after in vitro stimulation, (d) frequency of IL-17A-producing cells after in vitro stimulation, and (e) frequency of Foxp3+ cells in the indicated lymphoid organs. Data are representative of three independent experiments with n = 10 per groups. Values are expressed as the mean ± SD and were compared by one-way ANOVA with Tukey’s multiple comparisons test (a) or two-way ANOVA with Tukey’s multiple comparisons test (b–e). Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+### Concomitant loss of HIF2α, but not HIF1α, expression partially corrects the proinflammatory phenotype of PHD2ΔTreg mice
 
 Based on the notion that HIF1α and HIF2α represent well-described targets of PHD2, we established a series of conditional KOs mouse strains to identify the molecular pathway responsible for the decreased functional activity of PHD2-deficient Tregs at steady state (Figure 6; see Figure 6—figure supplement 1 for strain validation). Treg-selective deletion of HIF1α and HIF2α expression alone did not significantly alter colon length (used as a proxy for spontaneous inflammation) nor general T cell immune homeostasis (Figure 6—figure supplement 1). The same observation was made for double HIF1α and HIF2α KOs (data not shown). In marked contrast, combined deletion of PHD2 and HIF2α reversed some of the inflammatory symptoms observed in PHD2ΔTreg mice, such as splenomegaly, colon length (Figure 6a and b), and hematocrit counts (Figure 1—figure supplement 2). Treg-specific, PHD2-HIF1α double KOs were virtually indistinguishable from PHD2ΔTreg according to these morphological criteria. Noteworthy, however, Treg-specific PHD2-HIF1α double KOs mice were born at sub-Mendelian ratios and displayed a marked weight loss during adult life and reduced viability, indicative of a more pronounced proinflammatory status (data not shown). This mouse strain also displayed a tendency toward increased expansion of Th1-like cells in peripheral lymph nodes (Figure 6e). PHD2-HIF1α-HIF2α triple KOs and PHD2-HIF2α double KOs displayed a similar phenotype, establishing a predominant role for HIF2α over HIF1α in mediating the effects of PHD2 on the capacity of Treg to regulate immune homeostasis at rest. Similarly, lack of HIF2α expression largely reversed the altered phenotype of conventional T cells induced by loss of Treg-associated PHD2 expression. Indeed, cells from double (PHD2-HIF2α) and triple (PHD2-HIF1α-HIF2α) Treg-specific KOs displayed a near-normal phenotype (based on CD62L and CD44 expression) and propensity to secrete IFN-γ (Figure 6c–e). Finally, loss of Treg-associated expression of HIF2α also reversed the expansion of Treg numbers (Figure 6f) and restored Foxp3 protein expression to near-control levels (Figure 6g).
 
-## Transcriptomic analysis identifies cell survival, response to chemokines, and STAT1-mediated signaling as target pathways of the PHD2-HIF2α axis in Tregs
+![Figure 6.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig6-v2.jpg)
+
+**Figure 6.:** (a) Representative gross autopsy of spleens and colon length summarized in (b) of Foxp3cre, PHD2ΔTreg, PHD2-HIF1αΔTreg, PHD2-HIF2αΔTreg, and PHD2-HIF1α-HIF2αΔTreg (TKO) mice. (c) Representative merged (n = 15) t-distributed stochastic neighbor embedding (t-SNE) plot after dimensionality reduction and unsupervised clustering of flow cytometry data from CD4-expressing spleen cells. Relative distributions of CD4+ lymphocyte subsets are shown as doughnut charts. (d–g) Lymphoid cells from spleen, mesenteric (mLN), peripheral (pLN) lymph nodes, or the small intestine lamina propria were collected from Foxp3cre, PHD2ΔTreg, PHD2-HIF1αΔTreg mice, PHD2-HIF2αΔTreg and PHD2-HIF1α-HIF2αΔTreg (TKO) male and female mice and the relative frequency and phenotype of Foxp3-positive and Foxp3-negative, conventional T lymphocytes determined by flow cytometry. (d) Frequency of effector-like (CD44hi CD62Llo) conventional T lymphocytes in the indicated lymphoid organs. (e) Frequency of IFN-γ-producing CD4+ T cells after in vitro stimulation. (f) Frequency of Foxp3-expressing cells among CD4-positive T lymphocytes. (g) Ratio of the Foxp3 MFI of PHD2-KO, PHD2-HIF1αKO, PHD2-HIF2αKO, or TKO splenic Tregs to Foxp3cre splenic Tregs. Data are representative of at least three independent experiments with n = 15 per groups. Values are expressed as the mean ± SD and were compared by one-way ANOVA with Tukey’s multiple comparisons test (b, g) or two-way ANOVA with Tukey’s multiple comparisons test (d–f). Only significant differences are indicated as follows: *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Splenic Treg cells were purified by cell sorting from Foxp3cre (n = 3), PHD2ΔTreg (n = 2), PHD2-HIF1αΔTreg (n = 2), PHD2-HIF2αΔTreg (n = 3), PHD2-HIF1α-HIF2αΔTreg (TKO) (n = 3), HIF1αΔTreg (n = 3), and HIF2αΔTreg (n = 3) male mice and their genotype verified by qPCR on the extracted total RNA fraction. (b) Representative gross autopsy findings revealing normal spleen and colon size (summarized in panel c) in 12-week-old male and female mice. (d) Frequency of CD4+ Foxp3- CD44hi CD62Llo cells in lymphoid organs. (e) Frequency of CD4+ lymphocytes producing IFN-γ upon in vitro stimulation. (f) Frequency of Foxp3+ cells in the indicated lymphoid organs. (g) Ratio of the Foxp3 MFI of HIF1αKO or HIF2αKO splenic Tregs to Foxp3cre splenic Tregs. Data are representative of three independent experiments with n = 10. Values are presented as the mean ± SD and were compared by one-way ANOVA with Tukey’s multiple comparisons test (c, g) or two-way ANOVA with Tukey’s multiple comparisons test (d–f). No statistical differences were found between groups.
+
+### Transcriptomic analysis identifies cell survival, response to chemokines, and STAT1-mediated signaling as target pathways of the PHD2-HIF2α axis in Tregs
 
 Collectively, the previous observations suggest that the PHD2-HIF2α regulatory axis confers to Tregs the capacity to control the spontaneous, type 1-like, activity of conventional T cells. To identify PHD2-dependent signaling pathways operating in Tregs, splenic Foxp3-expressing cells were purified from all mouse strains described in this article and their transcriptome analyzed following bulk RNA-seq. A set of 532 genes were found differentially expressed between WT and PHD2-deficient Tregs (Figure 7) (a summary list of upregulated and downregulated pathways in PHD2ΔTreg mice vs. Foxp3cre mice is provided in Figure 7—figure supplement 1). Differential gene expression analysis between all mouse strains studied identified 1868 genes differentially expressed between groups. An unsupervised clustering of the differentially expressed genes led to the identification of 20 clusters, as shown in Figure 7a. To identify the gene clusters that were specifically involved in the immune homeostatic control of naive mice, the RNA-seq data were filtered and grouped by k-means clustering. We next searched for sets of genes whose expression best correlated with an arbitrary inflammatory index, established based on previously described findings (mostly colon length, splenomegaly, and spontaneous conventional T cell activation status) and summarized in Figure 7b. In particular, while concomitant deletion of HIF1α expression worsened the inflammatory status of PHD2ΔTreg mice, loss of HIF2α expression mitigated most inflammatory-related parameters at rest. We therefore clustered genes according to a ‘gradient of disease severity’ and grouped them in sets of gene whose expression decreased (cluster 10, Figure 7c) or increased (cluster 11, Figure 7d) accordingly. Gene Ontology analysis of these clustered gene sets revealed the following. Reduced expression of cell death-related and gain of survival-associated gene expression correlated with the increased frequency of Tregs in the corresponding mouse strains (Figure 7c and d). Not surprisingly, the expression of genes associated with anti-inflammatory responses was gradually lost according to the same severity gradient. Finally, genes, associated with T cell migration, including several chemokine receptors, also displayed an ordered loss of expression along the same gradient (Figure 7c). For comparison purposes, genes whose expression was restored to control levels upon combined deletion of PHD2 and HIF1α were also examined. As expected from previously published findings, these HIF1α-dependent biological pathways included glycolysis and angiogenesis (Figure 7e).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig7-v2.jpg)
+
+**Figure 7.:** Splenic Treg cells were purified by cell sorting from Foxp3cre (n = 3), PHD2ΔTreg (n = 2), PHD2-HIF1αΔTreg (n = 2), PHD2-HIF2αΔTreg (n = 3), and PHD2-HIF1α-HIF2αΔTreg (TKO) (n = 3) male mice, and total RNA was extracted and sequenced by RNA-sequencing (Illumina). (a) Heatmap of genes differentially expressed. Values are represented as log2 fold change (FC) obtained from median of each gene and are plotted in red-blue color scale with red indicating increased expression and blue indicating decreased expression. Hierarchical clustering of genes (k-means clustering) shows 20 clusters. (b) Classification of mouse strains according to their spontaneous inflammation severity. (c) Heatmap of genes downregulated when PHD2 and PHD2-HIF1α are deleted and whose expression is restored to a control level (close to Foxp3cre Treg) following deletion of HIF2α (cluster 10, 181 genes). (d) Heatmap of genes upregulated when PHD2 and PHD2-HIF1α are deleted and whose expression is restored to a control level following deletion of HIF2α (cluster 11, 66 genes). (e) Heatmap of genes upregulated when PHD2 and PHD2-HIF2α are deleted and whose expression is restored to a control level following deletion of HIF1α (cluster 3, 98 genes). Cluster 3, 10, and 11 were subjected to functional annotations and regulatory network analysis in the Ingenuity Pathway Analysis (IPA) software. Data were analyzed using DESeq2, a gene is differentially expressed when log2FC > 0.5 and false discovery rate (FDR) < 0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Top: significantly downregulated pathways in PHD2-deficient Tregs compared to Tregs from Foxp3cre mice. (b) Top: significantly upregulated pathways in PHD2-deficient Tregs compared to Tregs from Foxp3cre mice. Affected pathways were determined by over-representation analysis (ORA analysis) in R program after DESeq2 analysis. Dot color and size represent respectively false discovery rate (FDR) and the number of genes affected in a given pathway.
+
 Ingenuity Pathway Analysis (IPA) was performed in order to identify possible upstream regulators affecting expression of downstream genes identified in clusters 10 and 11. This analysis led to the identification of STAT1 as a putative upstream transcription factor regulating the expression of a set of genes whose expression was altered in PHD2-deficient Tregs (Figure 8a). Since Stat1 mRNA expression was not altered by PHD2 invalidation (as revealed by RNA-seq analysis), we tested the capacity of STAT1 to undergo phosphorylation in response to IFN-γ. This set of experiments led to the identification of a defective, accumulation of phopho-STAT1 in PHD2-deficient Tregs (Figure 8b and c), while the levels of total STAT1 protein appeared unaffected (Figure 8d). Noteworthy, concomitant deletion of HIF2α restored a near-control response to IFN-γ in PHD2-deficient Tregs (Figure 8b–d). In keeping with the observed proinflammatory phenotype associated with these mouse strains, conventional T cells from PHD2ΔTreg mice displayed an augmented response to IFN-γ (as judged by pSTAT1 accumulation), partially reversed in mice bearing Tregs lacking both PHD2 and HIF2α expression (Figure 8b, left panel). Finally, the proportion of Tregs expressing CXCR3, a well-described STAT1-dependent chemokine receptor (Hall et al., 2012), was reduced in a HIF2α-dependent manner in PHD2-deficient Tregs (Figure 8e), further strengthening the conclusion that PHD2 expression controls the response of Tregs to IFN-γ.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig8-v2.jpg)
+
+**Figure 8.:** (a) Upregulated and downregulated genes (clusters 10 and 11 in Figure 6c and d) were imported into the Ingenuity Pathway Analysis (IPA) software and were subjected to Upstream Regulator Analysis (URA) prediction algorithms. STAT1 was predicted as an upstream regulator of downregulated genes with a p-value=3 × 10–12. Phosphorylated form of STAT1 (pSTAT1 [Tyr701]) was assessed by flow cytometry after brief in vitro stimulation (30 min) of splenic CD4+ T lymphocytes with recombinant IFN-γ. (b) Representative histogram of pSTAT1 MFI for conventional CD4+ T cells (Tconv) and Treg cells of Foxp3cre, PHD2ΔTreg, and PHD2-HIF2αΔTreg male mice. Mean value expression (represented by MFI) of (c) pSTAT1 or (d) STAT1 total protein by splenic Treg of Foxp3cre, PHD2ΔTreg, and PHD2-HIF2αΔTreg mice. (e) Frequency of Treg cells expressing the CXCR3 receptor. Data are representative of three independent experiments with n = 9 (b–d) or n = 12 (e) per groups. Values are presented as the mean ± SD and were compared by one-way ANOVA with Tukey’s multiple comparisons. Only significant differences are indicated as follows: **p<0.01, ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/70555/elife-70555-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Representative flow cytometry dot plots displaying the gating strategy for the identification of YFP-positive populations in the (a) spleen, (b) mesenteric lymph node (mLN), (c) thymus, and (d) liver. Although the majority of YFP-expressing cells also expressed Foxp3, a minor population (from 1% to 3% depending on the organ considered) of YFP cells lacked expression of both CD45 and Foxp3, suggesting a possible expression of the Cre-recombinase in nonhematopoietic cells in PHD2ΔTreg mice.
 
 ## Discussion
 
@@ -103,58 +159,551 @@ Considering the specific role of PHD2, it is worth mentioning that both the tran
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6</td>
+      <td>Envigo</td>
+      <td>RRID:MGI:5658455</td>
+      <td>Horst, The Netherlands</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Egln1f/f</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_NM-CKO-2100497</td>
+      <td>P. Carmeliet (VIB-KULeuven)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Foxp3-Cre-YFP</td>
+      <td>PMID:18387831</td>
+      <td>RRID:IMSR_JAX:016959</td>
+      <td>A. Liston (KULeuven)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Hif1af/f (Hif1atm3Rsjo/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:007561</td>
+      <td>F. Bureau (Liege University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Epasf/f (Epas1tm1Mcs/J)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008407</td>
+      <td>J.A. Lopez (Madrid University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ifng-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_CARD:178</td>
+      <td>Bar Harbor, ME</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>CD45.1 (B6.SJL-Ptprca Pepcb/BoyJ)</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:002014</td>
+      <td>Bar Harbor, ME</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rag2-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:008449</td>
+      <td>Bar Harbor, ME</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD278 (Icos)-biotin (C398.4A, mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>13-9949-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD27-PeCy7 (LG.7F9, mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>25-0271-82</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Foxp3-FITC (FJK-16s, mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>71-5775-40</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse RORγt-PE (B2D, mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>12-6981-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse T-bet-PE (4B10, mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>12-5825-82</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse PD1-PECF594 (J43, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>562523;RRID:AB_2737634</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CXCR3-APC (CXCR3-173, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>562266;RRID:AB_11153500</td>
+      <td>(3:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD24-PECF594 (M1/69, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>562477;RRID:AB_11151917</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD25-BB515 (PC61, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>564424;RRID:AB_2738803</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD44-PECy7 (IM7, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>560569;RRID:AB_1727484</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4-A700 (RM4-5, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>557956;RRID:AB_396956</td>
+      <td>(3:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8-A700 (53-6.7, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>557959;RRID:AB_396959</td>
+      <td>(3:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4-PB (RM4-5, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>558107;RRID:AB_397030</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD62L-A700 (MEL-14, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>560517;RRID:AB_1645210</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse GATA3-PE (L50-823, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>560074;RRID:AB_1645330</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse RORγt-PECF594 (Q31-378, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>562684;RRID:AB_2651150</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse STAT1 (pY701)-A488(4a, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>612596;RRID:AB_399879</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IFNγ-PE (XMG1.2, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>554412;RRID:AB_395376</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-10-APC (JES5-16E3, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>554468;RRID:AB_398558</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-17-PerCP-Cy5.5 (N49-653, mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>560799;RRID:AB_2033981</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 antibody (2c11, mouse monoclonal)</td>
+      <td>BioXCell</td>
+      <td>145-2c11</td>
+      <td>20 μg/mouse</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>Streptavidin-PECy7.</td>
+      <td>BD Biosciences</td>
+      <td>557598;RRID:AB_10049577</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>IFN-γ protein</td>
+      <td>PeproTech</td>
+      <td>315-05</td>
+      <td>50 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Evans blue</td>
+      <td>Sigma</td>
+      <td>314-13-6</td>
+      <td>0.5%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin-A</td>
+      <td>eBioscience</td>
+      <td>00-4506-51</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran sodium sulfate, colitis grade (36,000–50,000 Da)</td>
+      <td>MP Biomedical</td>
+      <td>160110</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LIVE/DEAD kit</td>
+      <td>Invitrogen</td>
+      <td>L10119</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-CD90.2 beads MACS</td>
+      <td>Miltenyi</td>
+      <td>130-121-278</td>
+      <td>(1:5)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-CD4 beads MACS</td>
+      <td>Miltenyi</td>
+      <td>130-117-043</td>
+      <td>(1:3)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln1 (PHD2)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGCTATGTCCGTCACGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln1 (PHD2)_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TACCTCCACTTACCTTGGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln2 (PHD1)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCACGTGGACGCAGTAATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln2 (PHD1)_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGCCATGCACCTTAACATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln3 (PHD3)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGCAATGGTGGCTTGCTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Egln3 (PHD3)_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACCCCTCCGTGTAACTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCAGTTGCCACTTCCCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCATCCAGAAGTTTTCTCACAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Epas1 (HIF2a)_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACGGAGGTCTTCTATGAGTTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Epas1 (HIF2a)_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTATCCATTTGCTGGTCGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCCAAGTTTGAGGTCAACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAATCAGCAGCGACTCCTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTCAGTTTGGCCAGGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGGTTTCGGGACTGGCTAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il10_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGGGTGAGAAGCTGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il10_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTCCACTGCCTTGCTCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il17a_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATCCCTCAAAGCTCAGCGTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il17a_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGTCTTCATTGCGGTGGAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il1b_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAGCTTCCTTGTGCAAGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il1b_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGTGGCATTTCACAGTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGCACGGAGATGGATGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATATGCGAAGCACCTTGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTCTCTGGGAAATCGTGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAAGTGCATCATCGTTGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpl32_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACATCGGTTATGGGAGCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rpl32_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCCAGCTCCTTGACATTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfa_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCTCCCTCTCATCAGTTCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfa_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTACGACGTGGGCTACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12b_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGTGTCCTCAGAAGCTAACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il12b_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTAGGATCGGACCCTGCAGGGAAC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 6.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 mice were purchased from Envigo (Horst, The Netherlands). Egln1f/f mice were provided by P. Carmeliet (VIB-KULeuven, Leuven, Belgium); Foxp3-Cre-YFP mice, developed by A. Rudensky (Rubtsov et al., 2008), were kindly provided by A. Liston (KULeuven, Leuven, Belgium); Hif1atm3Rsjo/J (Hif1af/f) mice were kindly provided by F. Bureau (Liege University, Liege, Belgium); Epas1tm1Mcs/J (Epasf/f) mice were provided by J.A. Lopez (Madrid University, Madrid, Spain); Ifng-/-, CD45.1 (B6.SJL-Ptprca Pepcb/BoyJ) and Rag2-/- mice were obtained from The Jackson Laboratory (Bar Harbor, ME). All mice were backcrossed for more than 10 generations into a C57BL/6 background and housed in individually ventilated cages. Foxp3-Cre-YFP mice were crossed with Egln1f/f, Hif1af/f, Epasf/f to produce mice with Treg-specific deletion of PHD2, HIF1α, HIF2α, PHD2-HIF1α, PHD2-HIF2α, or PHD2-HIF1α-HIF2α. Heterozygous Foxp3cre/+ Egnl1fl/fl mice were generated by crossing the Foxp3-Cre-YFP mice with Egln1f/f mice. All mice were used between 8 and 14 weeks of age. PHD2-sufficient mice (expressing Foxp3-Cre-YFP, or floxed forms of PHD2, HIF1α, and HIF2α-encoding alleles and generated as littermates in our colony) were used as appropriate controls in the early stages of this work. These mice displayed a phenotype indistinguishable from WT mice and were therefore considered as a single experimental group throughout this study in order to reach statistical significance in all experiments. The experiments were carried out in compliance with the relevant laws and institutional guidelines and were approved by the Université Libre de Bruxelles Institutional Animal Care and Use Committee (protocol number CEBEA-4).
 
-## Antibodies, intracellular staining, and flow cytometry
+### Antibodies, intracellular staining, and flow cytometry
 
 The following monoclonal antibodies were purchased from eBioscience: CD278 (ICOS)-biotin, CD27-PeCy7, Foxp3-FITC, RORγt-PE, T-bet-PE; or from BD Biosciences: PD1-PECF594, CXCR3-APC, CD24-PECF594, CD25-BB515, CD44-PECy7, CD4-A700, CD8-A700, CD4-PB, CD62L-A700, GATA3-PE, RORγt-PECF594, STAT1 (pY701)-A488, IFNγ-PE, IL-10-APC, IL-17-PerCP-Cy5.5, streptavidin-PECy7. Live/dead fixable near-IR stain (Thermo Fisher) was used to exclude dead cells. For transcription factor staining, cells were stained for surface markers, followed by fixation and permeabilization before nuclear factor staining according to the manufacturer’s protocol (Foxp3 staining buffer set from eBioscience). For cytokine staining, cells were stimulated in media containing phorbol 12-myristate 13-acetate (50 ng/ml, Sigma-Aldrich), ionomycin (250 ng/ml, Sigma-Aldrich), and brefeldin-A (1/100, eBioscience) for 3 hr. After stimulation, cells were stained for surface markers, followed by fixation and permeabilization before intracellular staining according to the manufacturer’s protocol (cytokine staining buffer set from BD Biosciences). For phosphorylation staining, cells were stimulated with IFN-γ (50 ng/ml, PeproTech) for 30 min, fixed with formaldehyde, and permeabilized with methanol before staining. Flow cytometric analysis was performed on a Canto II (BD Biosciences) and analyzed using FlowJo software (Tree Star).
 
-## T cell cultures
+### T cell cultures
 
 After removal of Peyer’s patches and mesenteric fat, intestinal tissues were washed in Hank’s balanced salt solution (HBSS) 3% fetal calf serum (FCS) and phosphate-buffered saline (PBS), cut in small sections, and incubated in HBSS 3% FCS containing 2.5 mM EDTA and 72.5 µg/ml DTT for 30 min at 37°C with agitation to remove epithelial cells, and then minced and dissociated in RPMI containing liberase (20 µg/ml, Roche) and DNase (400 µg/ml, Roche) at 37°C for 30 min. Leukocytes were collected after a 30% Percoll gradient (GE Healthcare). Lymph nodes and spleens were mechanically disrupted in culture medium. CD4+ T cells were positively selected from organ cell suspensions by magnetic-activated cell sorting using CD4 beads (MACS, Miltenyi) according to the manufacturer’s protocol and purified as CD4+ CD44loCD62LhiCD25− or CD4+ CD44lo CD62Lhi YFP− by fluorescence-activated cell sorting. T cells were cultured at 37°C in RPMI supplemented with 5% heat-inactivated fetal bovine serum (Sigma-Aldrich), 1% nonessential amino acids (Invitrogen), 1 mM sodium pyruvate (Invitrogen), 2 mM L-glutamine (Invitrogen), 500 U/ml penicillin/500 µg/ml streptomycin (Invitrogen), and 50 μM β-mercaptoethanol (Sigma-Aldrich). To generate iTreg cells, cells were cultured in 24-well plates coated with 5 µg/ml anti-CD3 (BioXCell, clone 145-2C11) at 37°C for 72 hr. The culture was supplemented with anti-CD28 (1 µg/ml, BioXCell, clone 37.51), TGF-β (3 ng/ml, eBioscience), and IL-2 (10 ng/ml, PeproTech) for optimal iTreg cell polarization.
 
-## Treg cell suppression assays
+### Treg cell suppression assays
 
-## In vitro assay
+#### In vitro assay
 
 CD4+ CD44loCD62Lhi CD25− naive T cells were isolated from the spleen of CD45.1+ mice by cell sorting after positive enrichment for CD4+ cells using MACS LS columns (Miltenyi) and labeled with carboxyfluorescein diacetate succinimidyl ester (CFSE, Thermo Fisher). CD4+YFP+ Treg cells were isolated from the spleen of Foxp3cre or PHD2ΔTreg mice by cell sorting. Splenocytes from wild-type B6 mice were depleted in T cells (anti-CD90.2 beads, MACS, Miltenyi) using MACS LS columns (Miltenyi) and used as feeder cells. 4 × 104 CFSE-labeled naive T cells were cultured for 72 hr with feeder cells (1 × 105) and soluble anti-CD3 (0,5 μg/ml) in the presence or absence of various numbers of Treg cells as indicated.
 
-## In vivo assay
+#### In vivo assay
 
 Rag2-/- mice were injected i.v. with a mixture of naive, CFSE-labeled, CD4+ T cells (CD45.1+ CD4+ CD44lo CD62Lhi CD25−) (1 × 106) and splenic Treg from Foxp3cre or PHD2ΔTreg mice (3.3 × 105). Six days after the injection, Rag2-/- mice were sacrificed and CD4+ T cells proliferation and activation analyzed by flow cytometry.
 
-## DSS-induced colitis
+### DSS-induced colitis
 
 Foxp3cre or PHD2ΔTreg mice were provided with 2% DSS (MP Biomedical, 160110) in tap water for 5 days. On day 5, the DSS-containing water was replaced with normal drinking water and mice were followed during 14 days for body weight, survival, and colitis severity. Colitis severity score was assessed by examining weight loss, feces consistency, and hematochezia (Hemoccult SENSA, Mckesson Medical-Surgical, 625078) as described in Kim et al., 2012. Colon samples were washed with PBS and rolled from the distal to proximal end, transected with a needle and secured by bending the end of the needle and fixed in fresh 4% paraformaldehyde (Sigma-Aldrich) overnight and further subjected to routine histological procedures for embedment in paraffin and hematoxylin and eosin (H&E) staining. Tissues were analyzed and scored in a blinded fashion by an independent histopathologist, and representative images were subsequently chosen to illustrate key histological findings.
 
-## Toxoplasma infection
+### Toxoplasma infection
 
 ME-49 type II T. gondii was kindly provided by Dr De Craeye (Scientific Institute of Public Health, Belgium) and was used for the production of tissue cysts in C57BL/6 mice previously (1–3 months) inoculated with three cysts by gavage. Animals were killed, and the brains were removed. Tissue cysts were counted, and mice were infected by intragastric gavage with 10 cysts. Mice were sacrificed at day 8 after infection.
 
-## Anti-CD3 mAb-induced enteritis
+### Anti-CD3 mAb-induced enteritis
 
 Mice were injected i.p. with a CD3-specific antibody (clone 145-2C11, BioXCell 20 μg/mouse) on days 0 and 2 and weighted daily. Mice were sacrificed on day 3 and cytokine production evaluated by qPCR as indicated in the figure legend.
 
-## Hematological analysis
+### Hematological analysis
 
 Mice blood was obtained from the submandibular vein and collected into heparin-prefilled tubes. Blood samples were analyzed using a Sysmex KX-21 N Automated Hematology Analyzer.
 
-## Evans blue assay
+### Evans blue assay
 
 Blood vessel permeability was assessed as previously described (Radu and Chernoff, 2013). Briefly, 200 μl of a 0.5% sterile solution of Evans blue (Sigma) in PBS was i.v. injected in mice. After 30 min, organs were collected, weighted, and were put in formamide. After 24 hr in a 55°C water bath, absorbance was measured at 600 nm.
 
-## RT-qPCR
+### RT-qPCR
 
 RNA was extracted using the TRIzol method (Invitrogen) and reverse transcribed with Superscript II reverse transcriptase (Invitrogen) according to the manufacturer’s instructions. Quantitative real-time RT-PCR was performed using the SYBR Green Master mix kit (Thermo Fisher). Primer sequences were as follows:
 
 Rpl32 (F) ACATCGGTTATGGGAGCAAC; Rpl32 (R) TCCAGCTCCTTGACATTGT; Il1b (F) CAAGCTTCCTTGTGCAAGTG; Il1b (R) AGGTGGCATTTCACAGTTGA; Il10 (F) CCTGGGTGAGAAGCTGAAGA; Il10 (R) GCTCCACTGCCTTGCTCTTA; Ifng (F) TGCCAAGTTTGAGGTCAACA; Ifng (R) GAATCAGCAGCGACTCCTTT; Il6 (F) GTTCTCTGGGAAATCGTGGA; Il6 (R) GCAAGTGCATCATCGTTGTT; Il17a (F) ATCCCTCAAAGCTCAGCGTGTC; Il17a (R) GGGTCTTCATTGCGGTGGAGAG; Il12a (F) CCTCAGTTTGGCCAGGGTC; Il12a (R) CAGGTTTCGGGACTGGCTAAG; Il12b (F) ATGTGTCCTCAGAAGCTAACC; Il12b (R) CTAGGATCGGACCCTGCAGGGAAC; Tnfa (F) GCCTCCCTCTCATCAGTTCTA; Tnfa (R) GCTACGACGTGGGCTACAG; Egln1 (F) AGGCTATGTCCGTCACGTTG; Egln1 (R) TACCTCCACTTACCTTGGCG; Hif1a (F) CATCAGTTGCCACTTCCCCA; Hif1a (R) GGCATCCAGAAGTTTTCTCACAC; Epas1 (F) ACGGAGGTCTTCTATGAGTTGGC; Epas1 (R) GTTATCCATTTGCTGGTCGGC.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 All RNA-seq analyses were performed using ≥2 biological replicates. Total RNA was prepared from purified splenic Treg cells using the TRIzol method (Invitrogen). 200 ng of total RNA was subsequently used to prepare RNA-seq library by using TruSeq RNA sample prep kit (Illumina) according to the manufacturer’s instructions. Paired-end RNA-sequencing was performed on a NovaSeq 6000 (Illumina) (BRIGHTcore joint facility, ULB-VUB, Brussels, Belgium). Sequenced reads were aligned to the mouse genome (NCBI37/mm9), and uniquely mapped reads were used to calculate gene expression. Data analysis was performed using R program (DESeq2 package). Differentially expressed genes are considered significant when the false discovery rate (FDR or adjusted p-value) < 0.05 and the log2 fold change (FC) > 0.5. Upstream regulators analysis was performed following IPA. IPA predicts functional regulatory networks from gene expression data and provides a significance score (p-value) for each network according to the fit of the network to the set of genes in the database.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were conducted using GraphPad Prism (GraphPad Software). Statistical difference between two groups was determined by an unpaired, two-tailed Student’s t-tests. A one-way or two-way ANOVA was used for multigroup comparisons together with Tukey’s multiple comparisons post hoc tests. Survival significance in DSS-induced colitis was determined by a log-rank Mantel–Cox test. Data is judged to be statistically significant when p-value<0.05. In figures, asterisks denote statistical significance (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001).

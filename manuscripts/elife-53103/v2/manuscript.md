@@ -22,7 +22,7 @@
 
 ## Abstract
 
-The function of the central nervous system to regulate food intake can be disrupted by sustained metabolic challenges such as high-fat diet (HFD), which may contribute to various metabolic disorders. Previously, we showed that a group of octopaminergic (OA) neurons mediated starvation-induced hyperactivity, an important aspect of food-seeking behavior (Yu et al., 2016). Here we find that HFD specifically enhances this behavior. Mechanistically, HFD increases the excitability of these OA neurons to a hunger hormone named adipokinetic hormone (AKH), via increasing the accumulation of AKH receptor (AKHR) in these neurons. Upon HFD, excess dietary lipids are transported by a lipoprotein LTP to enter these OA + AKHR + neurons via the cognate receptor LpR1, which in turn suppresses autophagy-dependent degradation of AKHR. Taken together, we uncover a mechanism that links HFD, neuronal autophagy, and starvation-induced hyperactivity, providing insight in the reshaping of neural circuitry under metabolic challenges and the progression of metabolic diseases.
+The function of the central nervous system to regulate food intake can be disrupted by sustained metabolic challenges such as high-fat diet (HFD), which may contribute to various metabolic disorders. Previously, we showed that a group of octopaminergic (OA) neurons mediated starvation-induced hyperactivity, an important aspect of food-seeking behavior (Yu et al., 2016). Here we find that HFD specifically enhances this behavior. Mechanistically, HFD increases the excitability of these OA neurons to a hunger hormone named adipokinetic hormone (AKH), via increasing the accumulation of AKH receptor (AKHR) in these neurons. Upon HFD, excess dietary lipids are transported by a lipoprotein LTP to enter these OA+AKHR+ neurons via the cognate receptor LpR1, which in turn suppresses autophagy-dependent degradation of AKHR. Taken together, we uncover a mechanism that links HFD, neuronal autophagy, and starvation-induced hyperactivity, providing insight in the reshaping of neural circuitry under metabolic challenges and the progression of metabolic diseases.
 
 ## Introduction
 
@@ -42,11 +42,35 @@ Based on these findings, we therefore sought to examine whether HFD disrupted th
 
 ## Results
 
-## HFD specifically enhanced starvation-induced hyperactivity
+### HFD specifically enhanced starvation-induced hyperactivity
 
 We previously reported that starvation induced hyperactivity in fruit flies (Drosophila melanogaster). In this present study, we first confirmed that starvation-induced hyperactivity was a behavioral trait observed across different wild-type fly strains, though its magnitude might differ (Figure 1—figure supplement 1). In addition, the timing of the onset of starvation-induced hyperactivity might differ across different wild-type strains, too. In some strains the response started in Day 1 after starvation while some started in Day 2 (Figure 1—figure supplement 1). These results suggest that starvation-induced hyperactivity is a common behavioral phenomenon albeit considerable variabilities.
 
 We then asked whether HFD affected starvation-induced hyperactivity in fruit flies. Flies were fed with ND or HFD (by adding 20% coconut oil in ND) for five consecutive days before tested in a locomotion assay that measured the frequency to cross the midline of tubes in the Drosophila Activity Monitor System (DAMS, Trikinetics) (Figure 1A–B). The midline-crossing frequency assayed by DAMS offered a reliable measure of flies’ locomotor activity and hence starvation-induced hyperactivity (Yang et al., 2015; Yu et al., 2016). ND-fed flies exhibited a robust increase in locomotion upon starvation in both Day 1 and Day 2 (Figure 1A, E–F and H–I, blue). Compared to ND-fed flies, flies fed with HFD exhibited further enhanced hyperactivity upon starvation in both days (Figure 1B, E–F and H–I, orange). Meanwhile, the baseline activity of fed flies was not affected by HFD feeding (Figure 1A–B, D and G). These results suggest that HFD-fed flies are behaviorally more sensitive to starvation. We also compared the effect of adding 5%, 10%, and 20% coconut oil in ND and found that the effect of HFD to enhance starvation-induced hyperactivity was dose-dependent (Figure 1—figure supplement 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) Wild-type Oregon-R virgin female flies fed with normal fly food (A, ND, blue) or high-fat diet (B, HFD, orange) were assayed in the presence (dark color) and absence (light color) of 5% sucrose using DAMS-based locomotion assay (n = 46–63). Midline crossing activities of indicated flies are shown. Yellow bars represent 12 hr light-on period in this and following figures. (C) Survival curves of different fly groups assayed in A-B. (D–I) Average daily midline crossing activity of fed flies (D and G), starved flies (E and H), and starvation-induced hyperactivity (F and I) of flies assayed in A-B. Data were broken down to Day 1 (D–F) and Day 2 (G–I). In the following figures only Day one data are presented. (J) Total duration of feeding time during 24 hr recording in the FLIC assay (n = 38–47). (K) 1 hr food consumption measured by the BARCODE assay (n = 12–16 biological replicates, each containing four flies). (L) Average body weight of indicated flies fed ad libitum (n = 6 biological replicates, each containing three flies). (M) Triglyceride storage of indicated flies fed ad libitum (n = 6). (N) 1 hr CO2 production of flies fed with ND or HFD (n = 12–14 biological replicates, each containing five flies). (O–Q) Average body weight (O, n = 18 biological replicates, each containing 10 flies), triglyceride storage (P, n = 6), and 100 mM sucrose consumption (Q, n = 29) of indicated flies starved for 24 hr (ST: starvation, the time point marked by arrows in A and B). ns, p>0.05; *p<0.05; ***p<0.001; ****p<0.0001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A1, B1, C1, D1) Midline crossing activity of different wild-type strains assayed in the presence or absence of 5% sucrose (n = 46–63). (A2, B2, C2, D2) Average daily midline crossing activity in Day 1 of flies assayed in A1-D1. (A3, B3, C3, D3) Average daily midline crossing activity in Day 2 of flies assayed in A1-D1. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001. Strain 1: Oregon-R; Strain 2: Canton-S; Strain 3: a control strain from VDRC; Strain 4: a control strain from Bloomington. Note that for all these strains, most of the starved flies were dead after two days of starvation. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Wild-type Oregon-R virgin female flies fed with normal fly food (ND, blue) or different concentrations of coconut oil (orange) were assayed in the presence (dark color) and absence (light color) of 5% sucrose using DAMS-based locomotion assay (n = 52–63). Midline crossing activities of indicated flies are shown in A1, B1, C1, and D. (A2, B2, C2) Average daily midline crossing activity of fed flies assayed in A1, B1, C1, and D. (A3, B3, C3) Average daily midline crossing activity of s;tarved flies assayed in A1, B1, C1, and D. (A4, B4, C4) Starvation-induced hyperactivity of flies assayed in A1, B1, C1, and D. (E) A summary of the effect of coconut oil feeding. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic diagram of the video recording-based food seeking assay. Briefly, individual flies starved for 24 hr were introduced into a behavioral chamber with a small food patch (5% sucrose) located in the center, and their positions and moving trajectories were recorded by a camera placed on top and analyzed by a custom computer program. (B–C) Average walking speed before locating the food source (B) and latency to reach the food source (C). (D–E) Total number of food visits (D) and total duration on food (E) of starved flies during the 30 min assay. n = 14–19. Student’s t-test was used for pair-wise comparisons.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Wild-type Oregon-R virgin female flies fed with normal fly food (ND, blue) or different types of lipids (orange) were assayed in the presence (dark color) and absence (light color) of 5% sucrose using DAMS-based locomotion assay (n = 39–63). Midline crossing activities of indicated flies are shown in A1, B1, C1, D1, and E. (A2, B2, C2, D2) Average daily midline crossing activity of fed flies assayed in A1, B1, C1, D1, and E. (A3, B3, C3, D3) Average daily midline crossing activity of starved flies assayed in A1, B1, C1, D1, and E. (A4, B4, C4, D4) Starvation-induced hyperactivity of flies assayed in A1, B1, C1, D1, and E. (F) A summary of the effect of different oil feeding. Note that data shown in E are the same as data shown in Figure 1—figure supplement 2D. ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Wild-type Oregon-R virgin female flies fed with ND (blue) or HSD (orange) were assayed in the presence (dark color) and absence (light color) of 5% sucrose using DAMS-based locomotion assay (n = 41–63). Midline crossing activities of indicated flies are shown in A-B. (C–D) Average daily midline crossing activity of fed flies (C) and starved flies (D) assayed in A-B. (E) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
 
 We have previously shown that starvation-induced hyperactivity was a reliable yet indirect measure of food-seeking behavior in fruit flies (Yang et al., 2015; Yu et al., 2016).To examine whether HFD feeding indeed modulated food-seeking behavior, we conducted more detailed analysis of HFD-fed vs. ND-fed flies in a behavioral chamber in the presence of food sources (Figure 1—figure supplement 3A; Tian and Wang, 2018). We found that HFD-fed flies exhibited significantly increased walking speed and significantly decreased latency before locating and occupying the food sources (Figure 1—figure supplement 3B–C), whereas their total visits to food and the duration to stay on food remained unchanged (Figure 1—figure supplement 3D–E). These data further confirm that HFD feeding enhanced starvation-induced food seeking.
 
@@ -58,17 +82,25 @@ We then sought to understand how HFD feeding enhanced starvation-induced hyperac
 
 Consistently, upon 24 hr starvation, the body weight and lipid storage of both ND-fed and HFD-fed flies decreased (Figure 1O and P), whereas the food consumption of these two groups of flies increased in the MAFE assay, in comparable manners (Figure 1Q, note that flies exhibited no food ingestion in the MAFE assay when fed ad libitum) (Qi et al., 2015). Taken together, these results suggest that five days of HFD feeding specifically enhances starvation-induced hyperactivity without altering flies’ food intake and energy expenditure.
 
-## HFD increased the sensitivity of hunger-sensing, AKHR+ neurons
+### HFD increased the sensitivity of hunger-sensing, AKHR+ neurons
 
 We showed in a previous study that starvation-induced hyperactivity of adult flies was driven by a specific group of OA neurons in the fly brain (Yu et al., 2016). As a hunger sensor, the activity of these OA+ neurons is regulated in opposite directions, by two groups of functionally antagonizing hormones, the hunger-induced hormone AKH and the satiety hormones DILPs. Since HFD enhanced starvation-induced hyperactivity despite elevated energy storage, we reasoned that HFD might exert its behavioral effect by increasing the activity of these specific OA neurons via modulating the signaling of these two groups of hormones.
 
 We first tested whether the expression of AKH and DILP2 (the major type of DILPs expressed in the fly brain) was modulated by HFD feeding. As shown in Figure 2A–B, ND-fed and HFD-fed flies showed comparable AKH and DILP2 mRNA production as revealed by both RNAseq (Figure 2A) and quantitative RT-PCR (Figure 2B). Moreover, circulating AKH and DILP2 in flies’ hemolymph were elevated and reduced upon starvation, respectively (Figure 2C–D), consistent with their roles as hunger and satiety hormones. Nevertheless, their levels remained unaffected by HFD feeding under both fed and starved conditions, as shown by the dot blot using antibodies against AKH and DILP2 proteins (Figure 2C–D). Therefore, the production of these hormones that regulated starvation-induced hyperactivity was not regulated by HFD feeding.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) AKH and DILP2 mRNA levels of wild-type virgin female flies fed with ND or HFD. The fly heads and associated tissues were collected and subjected to RNAseq (A) or quantitative RT-PCR (B) (n = 3 biological replicates, each containing 25 flies). (C–D) AKH and DILP2 protein levels in the hemolymph of wild-type virgin female flies fed with ND or HFD and assayed under both fed and starved conditions (n = 3 biological replicates, each containing 30 flies). Hemolymph samples were collected from the flies and AKH and DILP2 protein levels were analyzed by dot blot with AKH and DILP2 antibodies (C), and the quantification was shown in (D). (E–F) AKHR and InR mRNA levels were analyzed similar to A-B (n = 3 biological replicates, each containing 25 flies). (G–H) AKHR and dInR protein levels of fly heads were analyzed by western blot (n = 3 biological replicates, each containing 25 flies). Note that AKHR-flag knock-in flies were generated by inserting FLAG sequence into the C terminal of AKHR gene via CRISPR/cas9 mediated gene editing. Antibodies against FLAG and dInR were used in the western blot. (I) Schematic diagram of the ex vivo calcium imaging. Green signals indicate AKHR+ neurons expressing GCaMP6 (AKHR:BD/+; nSyb:AD/UAS-GCaMP6m). Dotted red circle indicates the position of the pipette delivering synthetic AKH. (J–K) Representative traces (J) and quantification (K) of peak calcium transients of AKHR+ neurons upon AKH administration (n = 7–10). ns, p>0.05; *p<0.05; ***p<0.001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-B) AKHR-flag knock-in flies were fed with ND or HFD for 5 d, and then starved for 18 hr or not. AKHR-flag protein level in the head tissue was analyzed by western blot (A, n = 3 biological replicates, each containing 25 flies), and the quantification was shown in (B). *p < 0.05. Student’s t-test was used for pair-wise comparisons.
+
 We then asked whether the cognate receptors of AKH and DILP2, named AKHR and dInR (Drosophila insulin-like receptor), were modulated by HFD feeding. While AKHR mRNA levels remained unchanged after HFD feeding, as revealed by RNAseq and quantitative RT-PCR (Figure 2E–F), AKHR protein was significantly elevated in the head tissue of HFD-fed flies vs. that of ND-fed flies, as demonstrated by western blot (Figure 2G–H). Similar results were also observed in starved flies after HFD feeding (Figure 2—figure supplement 1). The production of dInR was not affected by HFD at both the transcriptional and translational levels (Figure 2E–H). These data suggest that HFD exerts a robust effect on AKHR protein accumulation without altering its mRNA production in the fly head.
 
 We have previously shown that AKHR was expressed in two clusters of OA neurons in the subesophageal zone (SEZ) region of the fly brain (Yu et al., 2016). These neurons were responsive to the hunger hormone AKH and exerted a robust effect in inducing starvation-induced hyperactivity (Yu et al., 2016). Since AKHR protein levels were upregulated by HFD feeding, we reasoned that these AKHR+ neurons might be more sensitive to AKH upon HFD feeding. Indeed, by using a calcium imaging setup with ex vivo brain preparations, we found that these AKHR+ neurons in HFD-fed flies exhibited more robust calcium transients when stimulated with synthetic AKH than those in ND-fed flies in a dose-dependent manner (Figure 2I–K). Taken together, HFD leads to increased AKHR protein accumulation in the fly brain and enhanced sensitivity of AKHR+ neurons to the hunger hormone AKH. These results may account for the observations that HFD-fed flies become more sensitive to starvation and exhibit enhanced hyperactivity upon starvation (Figure 1).
 
-## HFD enhanced AKHR accumulation by suppressing neuronal autophagy
+### HFD enhanced AKHR accumulation by suppressing neuronal autophagy
 
 We then sought to understand how HFD enhanced AKHR protein accumulation without promoting its mRNA production. One plausible hypothesis was that the degradation of AKHR via lysosome and/or proteasome was suppressed by HFD feeding. To examine this possibility, we ectopically expressed HA-tagged AKHR protein in cultured Drosophila S2 cells, and found that blocking lysosome-mediated protein degradation by lysosome inhibitors chloroquine (CQ) and NH4Cl increased AKHR protein levels dramatically, while MG132 treatment to disturb proteasome function exerted little effect (Figure 3A–B). Therefore, AKHR may be mainly degraded via the lysosome pathway.
 
@@ -80,37 +112,93 @@ We next asked whether AKHR was degraded via autophagy, a specific lysosome-depen
 
 We then aimed to confirm these in vitro results and asked whether HFD induced AKHR accumulation in AKHR+ neurons via suppressing its degradation by the autophagy pathway in vivo. The ratio of membrane-associated ATG8-II over soluble ATG8-I was a reliable indicator of autophagy induction (Mizushima et al., 2010). Indeed, HFD suppressed autophagy in the AKHR+ neurons, as evident by the relative decrease of membrane-associated ATG8-II upon HFD feeding (GFP-ATG8-II/I, Figure 3F–G). Additionally, specifically suppressing autophagy in AKHR+ neurons, by RNAi knock-down of two critical autophagy initiators ATG5 and ATG7, significantly enhanced AKHR accumulation in ND-fed flies (Figure 3H–I), phenocopying the effect of HFD feeding (Figure 2). Taken together, HFD feeding suppresses neuronal autophagy and enhances AKHR accumulation in AKHR+ neurons.
 
-## Suppression of autophagy in AKHR+ neurons enhanced their sensitivity to starvation
+### Suppression of autophagy in AKHR+ neurons enhanced their sensitivity to starvation
 
 AKHR and the activity of AKHR+ neurons are crucial for starvation-induced hyperactivity (Yu et al., 2016). We found that eliminating AKHR gene expression (Figure 4—figure supplement 1) and silencing AKHR+ neurons (Figure 4—figure supplement 2) both led to diminished effect of HFD to enhance starvation-induced hyperactivity, and that artificial activation of AKHR+ neurons (Figure 4—figure supplement 3) resulted in increased starvation-induced hyperactivity under ND feeding. Since HFD enhanced AKHR accumulation in AKHR+ neurons via suppressing autophagy, we hypothesized that blocking autophagy in AKHR+ neurons in ND-fed flies would mimic the effect of HFD feeding, leading to enhanced AKH sensitivity and hence stronger starvation-induced hyperactivity.
 
 We then directly tested this hypothesis in the calcium imaging setup using the ex vivo brain preparation. Indeed, RNAi knock-down of ATG5 and ATG7 in AKHR+ neurons both led to significantly enhanced calcium transients upon AKH administration in ND-fed flies (Figure 4A–B), phenocopying the effect of HFD feeding.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Representative traces (A) and quantification (B) of peak calcium responses of AKHR+ neurons to 316 nM AKH upon suppressing neuronal autophagy in AKHR+ neurons (n = 7–10). (C–D) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 43–62). (E) Average daily midline crossing activity of fed flies assayed in C-D. (F) Starvation-induced hyperactivity of flies assayed in C-D. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. One-way and two-wayANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Midline crossing activity of ND- and HFD-fed AKHR-/- flies assayed in the presence or absence of 5% sucrose (n = 43–73). (C–D) Average daily midline crossing activity of fed flies (C) and starved flies (D) assayed in A-B. (E) Starvation-induced hyperactivity of flies assayed in A-B. ns, p > 0.05. Student’s t-test was used for pair-wise comparisons.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 39–64). (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001. One-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 30–61). Red line indicates the time window for quantifying average midline crossing activity. (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; ***p<0.001; ****p<0.0001. One-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 30–60). (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. One-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
 Consistent with these results, blocking autophagy in AKHR+ neurons via RNAi knock-down of ATG5 significantly enhanced starvation-induced hyperactivity in ND-fed flies without altering their baseline activity (Figure 4C–F), again phenocopying the effect of HFD feeding. ATG7 knock-down exerted similar behavioral results (Figure 4—figure supplement 4). In both conditions, HFD feeding did not further enhance starvation-induced hyperactivity (Figure 4F and Figure 4—figure supplement 4), likely due to the suppression of autophagy by ATG5/7 knockdown. Taken together, suppressing neuronal autophagy in AKHR+ neurons resembles the effect of HFD feeding, enhancing the sensitivity of AKHR+ neurons as well as starvation-induced hyperactivity.
 
-## HFD suppressed autophagy via activating AMPK-TOR signaling
+### HFD suppressed autophagy via activating AMPK-TOR signaling
 
 To further examine the cellular mechanism underlying HFD-induced suppression of neuronal autophagy, we carried out RNAseq analysis of fly head tissues harvested from ND-fed and HFD-fed flies (Figure 5—source data 1; Figure 5—figure supplements 1). As shown in Figure 5—figure supplement 2, we found that a collection of genes related to anabolic activities were upregulated while a collection of catabolic genes were downregulated in HFD-fed flies. These results hinted a possibility that TOR (target of rapamycin) signaling, the key regulator of anabolism, was activated by HFD. Meanwhile, TOR is known to be a negative regulator of autophagy in both yeasts and animals (Wullschleger et al., 2006). Therefore, TOR signaling may mediate the effect of HFD to suppress autophagy.
 
 To further confirm this hypothesis, we examined p70S6K phosphorylation in vivo, which was a reliable indicator of TOR activation (Wullschleger et al., 2006). Indeed, the head tissues of HFD-fed flies exhibited higher levels of p70S6K phosphorylation (Figure 5A–B), suggesting that HFD activated TOR signaling. TOR signaling could be modulated by two major upstream signals, negatively by AMPK (AMP-activated protein kinase) signaling and positively by AKT signaling (Wullschleger et al., 2006). We found that upon HFD feeding, AMPK signaling (measured by the phosphorylation of AMPK) was suppressed, whereas AKT signaling (measured by the phosphorylation of AKT) remained unaffected (Figure 5C–D), suggesting that HFD modulates TOR signaling via the suppression of AMPK signaling.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) p70s6k/AKT/AMPK phosphorylation under ND vs. HFD feeding conditions. The head tissues of wild-type flies fed with ND or HFD were harvested and subjected to western blot with phosphorylated p70s6k antibody (A–B) and p-AKT/p-AMPK antibodies (C–D) (n = 3 biological replicates, each containing 25 flies). *Nonspecific bands. (E–F) AKHR accumulation upon pharmacological manipulation of AMPK-TOR signaling in cultured Drosophila S2 cells (n = 3). Cultured S2 cells transiently expressing AKHR-HA were treated with the indicated chemicals and then analyzed by western blot with HA antibody. (G–H) Representative traces (G) and quantification (H) of peak calcium responses of AKHR+ neurons to 316 nM AKH, with or without the indicated drug treatment (n = 7–10). ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Wild-type virgin female flies were fed with ND or HFD for 5 d before their head tissues harvested and subjected to RNAseq. The highly influenced KEGG pathways were shown (red: up-regulated by HFD; green: down-regulated by HFD).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Heat map of differentially expressed genes enriched in TOR signaling pathways. Wild-type virgin female flies were fed with ND or HFD for 5 d before their head tissues harvested and subjected to RNAseq. Green and red blocks represent down-regulated genes and up-regulated genes upon HFD feeding, respectively. Red and blue font colors indicate anabolism and catabolism genes, respectively. Note that most anabolism related genes were up-regulated while most catabolism related genes were down-regulated by HFD.
+
 Since AMPK-TOR signaling was known to modulate autophagy and the degradation of specific proteins, it was therefore possible that HFD suppressed neuronal autophagy and hence enhanced AKHR accumulation via modulating AMPK-TOR signaling. If this was the case, manipulating AMPK-TOR signaling would exert a robust effect on AKHR accumulation just as HFD feeding. Indeed, pharmacological activation of TOR signaling by MHY and suppression of AMPK by dorsomorphin (dorso) both resulted in AKHR accumulation in cultured S2 cells, whereas suppression of TOR signaling by rapamycin and activation of AMPK by AICAR exerted the opposite effect (Figure 5E–F). Consistent with these in vitro results, dorso and rapamycin feeding led to increased and decreased AKH sensitivity in AKHR+ neurons, respectively (Figure 5G–H), further confirming that AMPK-TOR signaling plays an important role in regulating AKHR accumulation and hence the sensitivity of AKHR+ neurons.
 
-## AMPK-TOR signaling mediated the effect of HFD on starvation-induced hyperactivity
+### AMPK-TOR signaling mediated the effect of HFD on starvation-induced hyperactivity
 
 Since AMPK-TOR signaling mediated the effect of HFD on AKHR accumulation and the neuronal sensitivity of AKHR+ neurons, we reasoned that manipulating AMPK-TOR signaling in vivo would affect the onset of starvation-induced hyperactivity.
 
 Indeed, suppressing TOR signaling in AKHR+ neurons by ectopic expression of dominant negative TORTED (Hennig and Neufeld, 2002) resulted in significantly decreased starvation-induced hyperactivity in ND-fed flies, and these flies did not respond to HFD (Figure 6A–D). These data suggest that TOR signaling is required for starvation-induced hyperactivity as well as the effect of HFD to further enhance this behavior.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 35–58). (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ***p<0.001. One-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Wild-type virgin female flies fed with ND (blue) or ND plus rapmycin (green) were assayed in the presence (dark color) and absence (light color) of 5% sucrose using DAMS-based locomotion assay (n = 48–64). Midline crossing activities of indicated flies are shown in A-B. (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. Student’s t-test and one-way ANOVA followed by post hoc test with Bonferroni correction were used for pair-wise and multiple comparisons, respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 36–46). (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. Student’s t-test, one-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A–B) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 30–59). (C) Average daily midline crossing activity of fed flies assayed in A-B. (D) Starvation-induced hyperactivity of flies assayed in A-B. ns, p>0.05; *p<0.05; **p<0.01; ****p<0.0001. Student’s t-test, one-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
 To further confirm these results, we introduced additional pharmacological and genetic manipulations. Like TORTED expression in AKHR+ neurons, rapamycin feeding suppressed starvation-induced hyperactivity in ND-fed flies (Figure 6—figure supplement 1). Notably, unlike TORTED expression AKHR+ neurons, rapamycin feeding enhanced the baseline locomotion of fed flies (Figure 6—figure supplement 1C), suggesting that global suppression of TOR signaling may have a locomotor effect.
 
 Besides, we genetically activated TOR signaling in AKHR+ neurons, by RNAi knock-down of TSC1, a suppressor of TOR signaling (Wullschleger et al., 2006) and by the ectopic expression of a dominant negative form of AMPK (AMPKDN) (Wullschleger et al., 2006). Both manipulations resulted in upregulated starvation-induced hyperactivity in ND-fed flies (Figure 6—figure supplements 2 and 3), phenocopying the effect of HFD feeding (Figure 1). Collectively, these data further confirm that HFD enhances starvation-induced hyperactivity via modulating AMPK-TOR signaling in AKHR+ neurons.
 
-## A lipoprotein LTP and its cognate receptor LpR1 linked HFD feeding to enhanced starvation-induced hyperactivity
+### A lipoprotein LTP and its cognate receptor LpR1 linked HFD feeding to enhanced starvation-induced hyperactivity
 
 We next sought to understand how HFD feeding exerted a robust effect on the autophagy pathway of a small group of brain neurons expressing AKHR. Since dietary lipids needed to enter the circulating system and different fly organs via specific carriers named lipoproteins, we asked whether certain lipoprotein(s) played a role in mediating the behavioral effect of HFD feeding.
 
 Three lipophorins, the main Drosophila lipoprotein, circulate in the hemolymph and transport lipids to different fly organs (Rodríguez-Vázquez et al., 2015). We performed proteomic analysis of circulating proteins in flies’ hemolymph by mass spectrometry (Figure 7—figure supplement 1; Figure 7—source data 2) and found that only one of the three lipoproteins, named Lipid Transfer Particle (LTP), but not the other two [Lipophorin (LPP) and Microsomal Triglyceride Transfer Protein (MTP)], was significantly upregulated in HFD-fed flies vs. ND-fed flies (Figure 7A–B). Meanwhile, both triglycerides and cholesterol were enriched in the hemolymph of HFD-fed flies (Figure 7C–D). Therefore, it was possible that LTP was the major carrier for excess circulating lipids after HFD feeding.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) LTP protein levels in the hemolymph. Hemolymph was collected from flies fed with ND or HFD and subjected to LC-MS/MS analysis. Volcano plot (A) shows peptides with differential enrichment (under ND vs. HFD feeding conditions). The horizontal line indicates the significance threshold (p=0.01) and the vertical lines indicate two-fold change. Green and red dots represent down-regulated and up-regulated peptides, respectively. Arrows indicate three lipoproteins (LTP, LPP and MTP). The level of LTP was shown in B (n = 3 biological replicates, each containing ~300 flies). (C–D) The cholesterol level (C) and triglyceride level (D) in the hemolymph harvested from ND vs. HFD fed flies (n = 4–6 biological replicates, each containing 60 flies). (E) Single cell RNAseq shows the gene expression level of candidate lipoprotein receptors in AKHR+ neurons (n = 5 cells). (F–G) AKHR protein levels from the head tissues of the indicated genotypes fed with ND or HFD (n = 3 biological replicates, each containing 25 flies). (H1–H3) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 43–57). (H4) Average daily midline crossing activity of fed flies assayed in H1-H3. (H5) Starvation-induced hyperactivity of flies assayed in H1-H3. ns, p>0.05; *p<0.05; **p<0.01. Student’s t-test, one-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Wild-type virgin female flies were fed with ND or HFD for 5 d before their hemolymph harvested and subjected to LC-MS/MS. The highly influenced KEGG pathways were shown (red: up-regulated by HFD; green: down-regulated by HFD).
 
 Recruitment of lipoproteins to the cell membrane by its receptors is a key event that initiates the transfer of neutral lipids to cells (Rodríguez-Vázquez et al., 2015). To understand the role of excess circulating lipids in suppressing autophagy of AKHR+ neurons, it was necessary to identify lipoprotein receptor expressed in these cells. To this aim, we carried out single cell RNAseq analysis for individual AKHR+ neurons harvested from the fly brains in situ. Among seven identified lipophorin receptors in Drosophila, lipophorin receptor 1 (LpR1) was most abundantly expressed in AKHR+ neurons (Figure 7E).
 
@@ -118,13 +206,13 @@ We thus examined the potential role of LpR1 in mediating the effect of HFD feedi
 
 Therefore, a specific lipoprotein LTP and its cognate receptor LpR1 may mediate the effect of HFD on the onset of starvation-induced hyperactivity. Detailed mechanistic studies of LTP-LpR1 signaling are required to fully elucidate their functions in regulating neuronal autophagy and AKHR protein accumulation upon HFD feeding.
 
-## Diet-independent hyperlipidemia also enhanced starvation-induced hyperactivity
+### Diet-independent hyperlipidemia also enhanced starvation-induced hyperactivity
 
 HFD is known to be a robust reward signal and can induce food craving (de Macedo et al., 2016). We therefore asked whether enhanced starvation-induced hyperactivity by HFD was solely mediated by excess lipid uptake, or HFD feeding also exerted other non-metabolic effects. By knocking down LpR1 in the fat body, the major organ for lipid storage and metabolism (Zheng et al., 2016), we generated diet-independent hyperlipidemia in ND-fed flies (Figure 8A–B). Notably, similar effect was also observed in mouse models (Wang et al., 2016).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/53103/elife-53103-fig8-v2.jpg)
 
-**Figure 8.:** + neurons and starvation-induced hyperactivity.(A–B) Average levels of cholesterol (A) and triglyceride (B) in the hemolymph of the indicated genotypes (n = 4–11 biological replicates, each containing 60 flies). (C–F) The levels of phosphorylated p70s6k (C–D) and AKHR-flag (E–F) from the head tissues of indicated genotypes (n = 4 biological replicates, each containing 25 flies). (G1-3) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 41–63). (G) Average daily midline crossing activity of fed flies assayed in G1-G3. (4G) Starvation-induced hyperactivity of flies assayed in G1-G3. ns, p>0.05; *p<0.05; ***p<0.001; ****p<0.0001. Student’s t-test, one-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable. (5H) A working model: We propose the following working model based on our results. AKHR protein levels in AKHR+ neurons are well maintained via protein expression and autophagic protein degradation. Under ND feeding, starvation induces the expression and release of AKH, which in turn activates AKHR+ neurons and hence the release of OA. OA signaling promotes starvation-induced hyperactivity in these starved flies. Upon HFD feeding, however, the regulation of starvation-induced hyperactivity is disrupted and greatly enhanced. Mechanistically, LTP delivers excess dietary lipids to AKHR+ neurons via its cognate receptor LpR1. Subsequently, neuronal autophagy is suppressed in AKHR+ neurons via AMPK-TOR signaling, which leads to AKHR accumulation. As a result, AKHR+ neurons become hyper sensitive to AKH and therefore starvation-induced hyperactivity is enhanced.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A–B) Average levels of cholesterol (A) and triglyceride (B) in the hemolymph of the indicated genotypes (n = 4–11 biological replicates, each containing 60 flies). (C–F) The levels of phosphorylated p70s6k (C–D) and AKHR-flag (E–F) from the head tissues of indicated genotypes (n = 4 biological replicates, each containing 25 flies). (G1-3) Midline crossing activity of indicated genotypes and diet treatments assayed in the presence or absence of 5% sucrose (n = 41–63). (G4) Average daily midline crossing activity of fed flies assayed in G1-G3. (G5) Starvation-induced hyperactivity of flies assayed in G1-G3. ns, p>0.05; *p<0.05; ***p<0.001; ****p<0.0001. Student’s t-test, one-way and two-way ANOVA followed by post hoc test with Bonferroni correction were used for multiple comparisons when applicable. (H) A working model: We propose the following working model based on our results. AKHR protein levels in AKHR+ neurons are well maintained via protein expression and autophagic protein degradation. Under ND feeding, starvation induces the expression and release of AKH, which in turn activates AKHR+ neurons and hence the release of OA. OA signaling promotes starvation-induced hyperactivity in these starved flies. Upon HFD feeding, however, the regulation of starvation-induced hyperactivity is disrupted and greatly enhanced. Mechanistically, LTP delivers excess dietary lipids to AKHR+ neurons via its cognate receptor LpR1. Subsequently, neuronal autophagy is suppressed in AKHR+ neurons via AMPK-TOR signaling, which leads to AKHR accumulation. As a result, AKHR+ neurons become hyper sensitive to AKH and therefore starvation-induced hyperactivity is enhanced.
 
 We then asked whether diet-independent hyperlipidemia had similar effects on AKHR accumulation and starvation-induced hyperactivity as HFD feeding. Compared with the control group, the phosphorylation of p70S6K in the diet-independent hyperlipidemia group was significantly up-regulated (Figure 8C–D). These results showed that like HFD feeding, diet-independent hyperlipidemia also activated TOR signaling. In addition, diet-independent hyperlipidemia led to upregulated AKHR accumulation (Figure 8E–F), mimicking the effect of HFD feeding. Consistent with these results, these ND-fed, hyperlipidemic flies showed significantly stronger starvation-induced hyperactivity than the two control groups (Figure 8G), which was comparable to that of HFD-fed flies (Figure 8G). Taken together, diet-independent hyperlipidemia phenocopied the effect of HFD feeding, suggesting that HFD feeding likely induces hyperlipidemia in fruit flies, which subsequently results in the cellular and circuitry changes underlying enhanced starvation-induced hyperactivity.
 
@@ -148,17 +236,286 @@ To summarize, our present study establishes a link between an unhealthy diet and
 
 ## Materials and methods
 
-## Flies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TORTED</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. #7013; RRID:BDSC_7013</td>
+      <td>FlyBase symbol: P{w+mC=UAS-Tor.TED}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-AMPK-DN</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. #32112; RRID:BDSC_32112</td>
+      <td>FlyBase symbol: P{w+mC=UAS-AMPKalpha.K57A}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. #32186; RRID:BDSC_32186</td>
+      <td>FlyBase symbol: P{y+t7.7 w+mC = 10XUAS-IVS-mCD8::GFP}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCD8GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. #32186; RRID:BDSC_32186</td>
+      <td>FlyBase symbol: P{y+t7.7 w+mC = 10XUAS-IVS-mCD8::GFP}</td>
+    </tr>
+    <tr>
+      <td>Cell line (include species here)</td>
+      <td>ppl-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. #58768; RRID:BDSC_58768</td>
+      <td>FlyBase symbol: P{w+mC = ppl-GAL4.P}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NaChBac</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>Cat. # 9469; RRID:BDSC_9469</td>
+      <td>FlyBase symbol: P{w+mC = UAS-NaChBac}</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-nSyb-AD-AKHR-BD</td>
+      <td>Our laboratory PMID:27612383</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-nSyb-AD</td>
+      <td>Our laboratory PMID:27612383</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS- AKHR-BD</td>
+      <td>Our laboratory PMID:27612383</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS- AKHR-/-</td>
+      <td>Our laboratory PMID:27612383</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS- kir2.1</td>
+      <td>Our laboratory PMID:30209352</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TSC1 RNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>Cat. #5074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ATG7 RNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>Cat. #2793</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-LpR1 RNAi</td>
+      <td>Tsinghua Fly Center</td>
+      <td>Cat. #2568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ATG5 RNAi</td>
+      <td>Laboratory of Dr. Chao Tong</td>
+      <td></td>
+      <td>Dr. Chao Tong (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>AKHR-FLAG</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>Thermofisher</td>
+      <td>Cat. #R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Akt (Ser473) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #9271; RRID:AB_329825</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-AMPK (Thr172) (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #2535; RRID:AB_331250</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #2555; RRID:AB_10692764</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #86861; RRID:AB_2800094</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #3724; RRID:AB_1549585</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. #2367, RRID:AB_10691311</td>
+      <td>IF(1:200); WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-actin (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #A5316; RRID:AB_476743</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKH (Rabbit polyclonal)</td>
+      <td>biorbyt</td>
+      <td>Cat. #orb97730</td>
+      <td>DOT BLOT (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dilp2 (Rabbit polyclonal)</td>
+      <td>Laboratory of Dr. Zhefeng Gong</td>
+      <td></td>
+      <td>DOT BLOT (1:1000) Dr. Zhefeng Gong (Zhejiang Universtiy)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AKHR-HA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-ATG8 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Dr. Liming Wang (Zhejiang University)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>AKH</td>
+      <td>PMID:2117437</td>
+      <td></td>
+      <td>pGlu-Leu-Thr-Phe-Ser-Pro-Asp-Trp-NH2</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Beyotime Biotechnology</td>
+      <td>Cat. #S1748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AICAR</td>
+      <td>Beyotime Biotechnology</td>
+      <td>Cat. #S1516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MHY (MHY1485)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #SML0810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>dorsomorphin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #P5499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroquine (CQ)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #C6628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Sangon Biotech</td>
+      <td>Cat. #A606203</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td>www.graphpad.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flies
 
 Flies were reared on standard fly food made of yeast, corn, and agar at 25°C and 60% humidity on a 12 hr light-12-hr dark cycle. Unless otherwise specified, virgin female flies were collected shortly after eclosion and placed in standard fly food (ND) vials (20 flies per vial) for 5–6 d prior to experiments. High fat diet (HFD)-fed flies were kept in vials with HFD medium containing 20% coconut oil and 80% ND for 5 d. HSD -fed flies were raised with ND plus 25% sucrose for 5 d. For rapamycin/dorsomorphin feeding, flies were raised on ND containing 400 μM rapamycin or 50 μM dorsomorphin for 5 d. nSyb-AD, AKHR-BD, and AKHR-/- flies were described previously (Yu et al., 2016). UAS-TSC1 RNAi (#5074), UAS-ATG7 RNAi (#2793) and UAS-LpR1 RNAi (#2568) were obtained from the Tsinghua Fly Center. UAS-TORTED (#7013), UAS-AMPK-DN (#32112), UAS-mCD8GFP (#32186) and ppl-GAL4 (#58768) were provided by the Bloomington Drosophila Stock Center at Indiana University. UAS-ATG5 RNAi flies were from Chao Tong (Zhejiang University). Fly strains were back-crossed for at least eight generations before tested in behavioral assays.
 
-## Chemicals, plasmids, and antibodies
+### Chemicals, plasmids, and antibodies
 
 If not otherwise indicated, all chemicals were from Sigma. MG132 (10 μM; Beyotime Biotechnology) and CQ (100 μM) exposure was for 4 hr. Rapamycin (200 nM; Sangon Biotech), AICAR (500 μM; Beyotime Biotechnology), MHY (5 μM) and dorsomorphin (5 μM) were added to the medium for 12 hr. pAC5.1-flag and pAC5.1-HA vectors were kindly provided by Xiaohang Yang (Zhejiang University). AKHR-HA was made by cloning the cDNA of AKHR into a pAC5.1-HA vector using SalI and NotI. The cDNA of GFP-ATG8 was from Chao Tong (Zhejiang University) and cloned into a pAC5.1-HA vector using EcoRI and BamHI to generate HA-GFP-ATG8.
 
 The following antibodies were used: rabbit polyclonal antibodies to p-AKT, p-AMPK, HA, Flag, GFP and mouse monoclonal antibody to HA (Cell Signaling Technology); mouse monoclonal antibody to actin (sigma); rabbit polyclonal antibody to AKH (biorbyt); rabbit polyclonal antibody to Dilp2 was kindly provided by Zhefeng Gong (Zhejiang University).
 
-## Behavioral assays
+### Behavioral assays
 
 DAMS-based locomotion assay was performed as described in our earlier report (Yu et al., 2016). Briefly, individual virgin female flies were introduced into 5 mm ×65 mm polycarbonate tubes (Trikinetics) after being lightly anesthetized. One end of these tubes was filled with medium containing 2% (wt/vol) agar ±5% (wt/vol) sucrose and the other end was blocked using cotton wool. These tubes were then inserted into DAMS monitors placing in fly incubators. The passage of flies through the middle of the tube was counted by an infrared beam through the midline of the tubes. The ratio of ST/FED was calculated by dividing the total crossing numbers collected from ZT0 to ZT24 in Day one and/or Day 2 of the locomotion assay under -sucrose vs. +sucrose conditions.
 
@@ -170,7 +527,7 @@ The BARCODE feeding was performed as described previously (Park et al., 2018). B
 
 The video recording-based food seeking assay was performed as described previously (Tian and Wang, 2018). Briefly, individual flies were starved for 24 hr and then transferred into a behavioral chamber (84 mm ×84 mm) with a small food patch (5% sucrose) in the center. The positions and moving trajectories of invidivial flies were recorded by a camera placed on top and analyzed by a custom computer program.
 
-## Calcium imaging
+### Calcium imaging
 
 The ﬂies were lightly anesthetized on ice, and brains were dissected in oxygen saturation (95% O2, 5% CO2) buffer extracellular saline solution [103 mM NaCl, 3 mM KCl, 5 mM N-Tris (hydroxymethyl) methyl-2-aminoethane-sulfonic acid, 10 mM trehalose, 8 mM glucose, 26 mM NaHCO3, 1 mM NaH2PO4, 1.5 mM CaCl2, and 4 mM MgCl2, The pH was adjusted to 7.5 and osmolarity to 265 mOsm].
 
@@ -180,50 +537,50 @@ Images were acquired on Nikon's Eclipse FN1 confocal microscopes with 40×/0.8 o
 
 Total image acquired duration is 4 min, first 1 min set to pre-puff drug time followed by 300 ms drug delivered. Image stacks were subsequently analyzed by Fiji (Schindelin et al., 2012; http://fiji.sc). ROIs were manually drawn around AKHR+ neuron cell body, and the intensity of 30 frames before puff time average to be F0, individual ΔF/F0 response traces were extracted, and the peak ΔF/F0 was obtained for significance analysis.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 For immunostaining, Drosophila S2 cells were fixed in 4% formaldehyde. After washing thrice in PBS, cells were blocked in PBS/FBS (PBS, pH 7.4, containing 10% FBS). The cells were then incubated with appropriate primary and secondary antibodies in PBS/FBS with 0.1% saponin.
 
-## RNA-seq and analysis
+### RNA-seq and analysis
 
 Total RNA from fly heads was extracted from 5-day-old female flies using the Trizol reagent (Invitrogen, USA), subjected to poly(A) mRNA isolation, cDNA synthesization, library preparation (NEBNext Ultra II DNA Library Prep Kit, NEB), and sequencing (Illumina Hiseq2500/4000 platform). Sequence data were subsequently mapped toDrosophilagenome and uniquely mapped reads were collected for further analysis. Gene expression was calculated by the FPKM (Fragments Per Kilobase Of Exon Per Million Fragments Mapped). The genes with p-value less 0.05 and fold change more than two were considered as the differentially expressed gene. Functional annotation of detected differentially expressed genes was assessed by publicly available databases including Gene Ontology (GO) (http://www.geneontology.org) and Kyoto Encyclopedia of Genes and Genomes (KEGG) (http://www.genome.jp/kegg). The RNAseq data were deposited in GEO database under the accession code GSE129602.
 
-## Single-cell RNAseq
+### Single-cell RNAseq
 
 As described in our previously report (Yu et al., 2016), individual AKHR+ cells (marked by GFP expression) were picked from dissected fly brain under a fluorescence microscope using a glass micropipette pulled from thick-walled borosilicate capillaries (BF120-69-10, Sutter Instruments). Separated cells were transferred to lysate buffer immediately, followed by reverse transcription and cDNA amplification (SMARTer Ultra Low RNA Kit for Sequencing, Clonetech). The amplified cDNA underwent library preparation using the NEBNext Ultra II DNALibrar kit and subject to sequencing by Illumina Hiseq 2500 platform. The sequenced raw data were purified to remove low-quality reads, adaptor sequences and amplification primer before mapping to Drosophila genome. Only mapped reads were selected for further analysis. FPKM (Fragments Per Kilobase Of Exon Per Million Fragments Mapped) was used to quantify gene expression. The RNAseq data were deposited in GEO database under the accession code GSE129601.
 
-## Measurements of CO2 production
+### Measurements of CO2 production
 
 The CO2 production was performed as described previously (Takeuchi et al., 2009). 1 ml plastic syringes were used for the respirometers after filling a small amount of CO2 absorbent (Soda lime, Sigma) between two pieces of sponge in the body of the syringe. A 5 μl fine graduated capillary connected to the plastic adaptor attached to the syringe. Five flies were gently aspirated into the syringe body and plunger inserted to form a closed chamber. After being kept on the flat surface at 25°C for 15 min to equilibrate, a little ink was placed at the end of the micropipet. The CO2 production was calculated based on the rate of movement of the ink.
 
-## Triglyceride and cholesterol measurement
+### Triglyceride and cholesterol measurement
 
 For whole fly bodies, single fly was anesthetized and transferred to 400 μL of 0.5% PBST, subject to homogenization (Tissuelyser 24, Qiagen, USA) and incubation at 92°C for 10 min. After centrifugation, the supernatant was measured by Triglyceride Quantification Colorimetric/Fluorometric Kit (BioVision, USA).
 
 For fly hemolymph, extracted hemolymph was directly measured by Triglyceride Assay or Cholesterol Assay Kit (Nanjing Jiancheng Bioengineering Institute, China).
 
-## Hemolymph extraction
+### Hemolymph extraction
 
 40 flies were decapitated and transferred to a punctured 0.5 ml tube. The tube was then placed into 1.5 ml eppendorf tube, subjected to centrifugation for 5 min at 2500 × g at 4°C. Collected hemolymph in 1.5 ml eppendorf tube was used for further analysis.
 
-## LC-MSms/MS
+### LC-MSms/MS
 
 LC-MS/MS analysis was performed on HPLC chromatography system named Thermo Fisher Easy-nLC 1000 equipped with a C18 colume (1.8 mm, 0.15 × 1.00 mm). The MS/MS data were searched with MaxQuant (version 1.5.2.8). The following parameters were used: (i) enzyme: trypsin; (ii) fixed modification: carbamidomethyl (C); (iii) variable modifications: oxidation (M) and deamidation (NQ); (iv) mass tolerance for precursor ions: 20 ppm; (v) mass tolerance for fragment ions: 4.5 ppm; (vi) peptide charge: 1+, 2+ and 3+; (vii) instrument: ESI-LTQ; (viii) allowing up to two missed cleavage. (ix) minimal peptide length: six amino acid. (x) the false discovery rate (FDR) for peptide and protein identifications: 0.01. The intensity for each protein was obtained from three technical repeats. The global analysis was carried by in-house program. The criteria for the interesting proteins were: the ratio of intensity between the experimental and control samples larger than two and p-value<0.05 was considered to be statistically significant. The raw data was shown in Figure 7—source data 1.
 
-## Western blotting and dot blotting
+### Western blotting and dot blotting
 
 For western blot, total protein was extracted from fly heads or cultured S2 cells. Samples were denatured, separated by SDS-PAGE, and transferred to a polyvinylidene difluoride membrane. After being blocked in TBST containing 5% milk, the membrane was incubated with the specific primary antibody followed by HRP-conjugated goat-anti-rabbit or goat anti-mouse antibody. The specific bands were detected by an ECL western blotting detection system (Bio-rad, USA).
 
 For dot blot, hemolymph was extracted and spotted onto nitrocellulose membrane and let dry for 20 min. After washing, blocking, incubation with the corresponding primary and secondary antibodies, the membranes were also analyzed by an ECL western blotting detection system.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA from fly heads was isolated from 5-day-old female flies with TRIzol reagent (Invitrogen, USA). Reverse transcription of RNA to cDNA was achieved using 2 μg of total RNA with random hexamer primers using RT-PCR SuperMix Kit (TransGen Biotech, China). Q-PCR was performed with SYBR premix Ex TaqTM (Takara, China) on CFX96 Touch Real-Time PCR Detection System (Bio-Rad, USA). The primers used are presented as follows: DILP2 F: 5′-GCCTTTGTCCTTCATCTCG-3′, DILP2 R: 5′-CCATACTCAGCACCTCGTTG-3′; AKH F: 5′- ATCCCAAGAGCGAAGTCC −3′, AKH R: 5′- CCTGAGATTGCACGAAGC −3′; AKHR F: 5′- ACTGCTACGGAGCCATTT −3′, AKHR R: 5′- TGTCCAGCCAGTACCACA −3′; InR F: 5′- GCAGCAATGAATGCGACGAT −3′, InR R: 5′- CCTGCGTCGCTTGTTGAAAA −3′; GAPDH F: 5′-GAATCCTGGGCTACACCG-3′, GAPDH R: 5′-CTTATCGTTCAGAATGC-3′.
 
-## Cell lines
+### Cell lines
 
 Schneider's Line S2 (S2) cells (Thermo Fisher, R69007) were maintained in the lab and were all mycoplasma-free. The cells were grown in Schneider's Insect Medium (sigma) supplemented with 10% fetal bovine serum (FBS) at 25°C. Transfections were performed using Lipofectamine 3000 according to the manufacturer’s instructions (Invitrogen). Cells were analyzed 24–48 hr after transfection.
 
-## Statistical analysis
+### Statistical analysis
 
 Data presented in this study were verified for normal distribution by D’Agostino–Pearson omnibus test. Student’s t test, one-way ANOVA and two-way ANOVA (for comparisons among three or more groups and comparisons with more than one variant) were used. The post hoc test with Bonferroni correction was performed for multiple comparisons following ANOVA. The raw data for all behavioral assays were shown in source data files associated with Figures.

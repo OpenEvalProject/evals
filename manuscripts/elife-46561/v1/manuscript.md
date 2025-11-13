@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46561.001 We are writing to comment on the recent study by Olesen et al., 2018 on antibiotic use and antibiotic resistance.
+We are writing to comment on the recent study by Olesen et al., 2018 on antibiotic use and antibiotic resistance.
 
 ## Introduction
 

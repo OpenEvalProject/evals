@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Hypoxia and consequent production of vascular endothelial growth factor A (VEGFA) promote blood vessel leakiness and edema in ocular diseases. Anti-VEGFA therapeutics may aggravate hypoxia; therefore, therapy development is needed. Oxygen-induced retinopathy was used as a model to test the role of nitric oxide (NO) in pathological neovascularization and vessel permeability. Suppression of NO formation was achieved chemically using L-NMMA, or genetically, in endothelial NO synthase serine to alanine (S1176A) mutant mice. Suppression of NO formation resulted in reduced retinal neoangiogenesis. Remaining vascular tufts exhibited reduced vascular leakage through stabilized endothelial adherens junctions, manifested as reduced phosphorylation of vascular endothelial (VE)-cadherin Y685 in a c-Src-dependent manner. Treatment with a single dose of L-NMMA in established retinopathy restored the vascular barrier and prevented leakage. We conclude that NO destabilizes adheren junctions, resulting in vascular hyperpermeability, by converging with the VEGFA/VEGFR2/c-Src/VE-cadherin pathway. This study was supported by the Swedish Cancer foundation (19 0119 Pj ), the Swedish Research Council (2020-01349), the Knut and Alice Wallenberg foundation (KAW 2020.0057) and a Fondation Leducq Transatlantic Network of Excellence Grant in Neurovascular Disease (17 CVD 03). KAW also supported LCW with a Wallenberg Scholar grant (2015.0275). WCS was supported by Grants R35 HL139945, P01 HL1070205, AHA MERIT Award. DV was supported by grants from the Deutsche Forschungsgemeinschaft, SFB1450, B03, and CRU342, P2.
+Background:Hypoxia and consequent production of vascular endothelial growth factor A (VEGFA) promote blood vessel leakiness and edema in ocular diseases. Anti-VEGFA therapeutics may aggravate hypoxia; therefore, therapy development is needed.Methods:Oxygen-induced retinopathy was used as a model to test the role of nitric oxide (NO) in pathological neovascularization and vessel permeability. Suppression of NO formation was achieved chemically using L-NMMA, or genetically, in endothelial NO synthase serine to alanine (S1176A) mutant mice.Results:Suppression of NO formation resulted in reduced retinal neoangiogenesis. Remaining vascular tufts exhibited reduced vascular leakage through stabilized endothelial adherens junctions, manifested as reduced phosphorylation of vascular endothelial (VE)-cadherin Y685 in a c-Src-dependent manner. Treatment with a single dose of L-NMMA in established retinopathy restored the vascular barrier and prevented leakage.Conclusions:We conclude that NO destabilizes adheren junctions, resulting in vascular hyperpermeability, by converging with the VEGFA/VEGFR2/c-Src/VE-cadherin pathway.Funding:This study was supported by the Swedish Cancer foundation (19 0119 Pj ), the Swedish Research Council (2020-01349), the Knut and Alice Wallenberg foundation (KAW 2020.0057) and a Fondation Leducq Transatlantic Network of Excellence Grant in Neurovascular Disease (17 CVD 03). KAW also supported LCW with a Wallenberg Scholar grant (2015.0275). WCS was supported by Grants R35 HL139945, P01 HL1070205, AHA MERIT Award. DV was supported by grants from the Deutsche Forschungsgemeinschaft, SFB1450, B03, and CRU342, P2.
 
 ## Introduction
 
@@ -38,7 +38,388 @@ Here, we show that suppressed NO formation via the use of the competitive NOS in
 
 ## Materials and methods
 
-## Animal studies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>Nos3+/+ (C57BL/6J)</td>
+      <td>DOI:10.1016/j.bbrc.2012.12.110</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>Nos3S1176A/S1176A (C57BL/6J)</td>
+      <td>DOI:10.1016/j.bbrc.2012.12.110</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>Cdh5-WT (C57BL/6J)</td>
+      <td>DOI: 10.1038/ni.2824</td>
+      <td></td>
+      <td>Referred to as VEC-WT throughout</td>
+    </tr>
+    <tr>
+      <td>Strain; strain background (Mus musculus)</td>
+      <td>Cdh5-Y685F (C57BL/6J)</td>
+      <td>DOI: 10.1038/ni.2824</td>
+      <td></td>
+      <td>Referred to as VEC-Y685F throughout</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human retinal microvascular endothelial</td>
+      <td>Cell Systems</td>
+      <td>Cat# ACBRI 181</td>
+      <td>Primary cells HRMEC</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VE-cadherin pY685 (rabbit polyclonal)</td>
+      <td>DOI:10.1038/ncomms2199</td>
+      <td></td>
+      <td>IF (1:50), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VE-cadherin (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>Cat# AF1002 RRID:AB_2077789</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eNOS (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab76198 RRID:AB_1310183</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Src GD11 clone (mouse monoclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# 05–184 RRID:AB_2302631</td>
+      <td>IF (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Src pY418 (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 44–660G RRID:AB_1500523</td>
+      <td>IF (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T9026 RRID:AB_477593</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eNOS pS1177 (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 612392 RRID:AB_399750</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 9272S RRID:AB_329827</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt pS473 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4058S RRID:AB_331168</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31 (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 553370 RRID:AB_394816</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD68 FA-11 clone (rat monoclonal)</td>
+      <td>BIO-RAD</td>
+      <td>Cat# MCA1957 RRID:AB_322219</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NG2 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Cat# AB5320 RRID:AB_91789</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERG (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# Ab92513 RRID:AB_2630401</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-31572 RRID:AB_162543</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rat IgG</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-21208 RRID:AB_141709</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-11055 RRID:AB_2534102</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Mouse IgG, (H + L) HRP</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-16011 RRID:AB_2534685</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG, (H + L) HRP</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-16023 RRID:AB_2534697</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG, (H + L) HRP</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-15999 RRID:AB_2534673</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Griess assay (nitrate/nitrite colorimetric assay kit)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 780001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>CD31 microbeads, mouse</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-097-418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nω-Methyl-L-arginine acetate salt (L-NMMA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M7033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Amersham ECL Prime Western Blotting Detection</td>
+      <td>GE Healthcare</td>
+      <td>Cat# RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos3 forward</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>AAGGTGATGAGGACTCTGTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos3 reverse</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>GATATCTCGGGCAGCAGCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos2 forward</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>GGTGAAGGGACTGAGCTGTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nos2 reverse</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>TGAGAACAGCACAAGGGGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfa forward</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>GCACATAGAGAGAATGAGCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vegfa reverse</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>CTCCGCTCTGAACAAGGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp forward</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>CCTTGTACCCTTCACCAATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp reverse</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>ACAGCCAAGATTCACGGTAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc forward</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>CCCACACAAAGCCCCTCAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc reverse</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PCR primers</td>
+      <td>AAGATCTGCATCGTCTCTCTCAC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VEGFA, recombinant, mouse</td>
+      <td>Peprotech</td>
+      <td>Cat# 450–32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Duolink In Situ PLA Probe anti-Rabbit MINUS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DUO92005 RID:AB_2810942</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Duolink In Situ PLA Probe anti-Mouse PLUS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DUO92001 RRID:AB_2810939</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Duolink In Situ Detection Reagent (Orange)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DUO92007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAF-FM diacetate (DA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D1946-1MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lycopersicon Esculentum (Tomato) Lectin (LEL, TL), Fluorescein</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# FL-1171–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fluoro-Max Dyed Green Aqueous Fluorescent Particles</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# G25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# H3570</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488-Isolectin B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I21411 RRID:AB_2314662</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 647-Isolectin B4</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I32450 RRID:SCR_014365</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>NIH, Bethesda, MD</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal studies
 
 Nos3S1176A/S1176A mice on a C57Bl/6J background have been described (Kashiwagi et al., 2013). Cdh5-WT and Cdh5-Y685F mice (referred to as VEC-WT and VEC-Y685F throughout text), also on C57Bl/6J background, were generated using a wild-type murine VE-cadherin/Cdh5 cDNA construct (VEC-WT) or a mutant cDNA in which Y685 is replaced by F685 (VEC-Y685F, Wessel et al., 2014). Both strains were maintained by crossing heterozygous mice. Wild-type C57BL/6J mice (Jackson Laboratory) and the Y685F strain were treated, when indicated, with Nω-methyl-l-arginine acetate salt (L-NMMA; Sigma-Aldrich) in PBS, 20 µg/g body weight, by intraperitoneal injection from postnatal (P) day 12 to P16.
 
@@ -46,71 +427,91 @@ Wild-type mice were also treated, when indicated, with a single dose of L-NMMA i
 
 Mouse husbandry and OIR-challenge took place at Uppsala University, and the Local Ethics committee approved all animal work for these studies. Animal handling was in accordance with the ARVO statement for the Use of Animals in Ophthalmologic and Vision Research. All animal experiments were repeated individually at least three times (biological repeats).
 
-## Oxygen-induced retinopathy
+### Oxygen-induced retinopathy
 
 A standard oxygen-induced retinopathy (OIR) model was used (Connor et al., 2009). Briefly, each litter of pups was placed, along with the mother, into a chamber maintaining 75.0% oxygen (ProOx 110 sensor and AChamber, Biospherix, Parish, NY) from P7 to P12. They were then returned to normal atmosphere (~21% oxygen), until P17 (termination). The lactating mother was removed each day, P8–P11, and placed in normal atmosphere for 2 hr, to prevent oxygen toxicity. At P17, pups were weighed and sacrificed. Eyes were enucleated and fixed in 4% paraformaldehyde (PFA) at room temperature for 30 min. See Supplementary file 1A for data on body weights at P17 after OIR. No mice were excluded from analysis.
 
-## Quantification of avascular area and neovascular tufts
+### Quantification of avascular area and neovascular tufts
 
 Avascular area and neovascular tuft formation were determined by immunostaining retinas followed by imaging (Leica SP8 confocal microscope) and analysis. Quantification of total vascularized area, central avascular area, and tuft area was performed by outlining images manually in ImageJ (NIH, Bethesda, MD). Using a tilescan of IB4 staining for the entire retina, the freehand selection tool was used to demarcate the vascular front, creating a region of interest (ROI) for the total vascularized area. The freehand selection tool was used to outline IB4-positive vessels from neovascular tufts (regions with disorganized dilated vessels). The ROIs for tufts were merged into a single ROI corresponding to the total neovascular tuft area for each retina. The tuft area normalized to the total vascularized area was reported as a percentage of the total retina that contained tufts. Similarly, the avascular region was determined using the freehand selection tool to outline the central avascular regions. Regions where the superficial layer of capillaries was absent were determined and merged to form a single ROI corresponding to the entire avascular region for each retina. The avascular area normalized to the total vascularized area was reported as a percentage of the total retina that was still avascular. The researcher was blinded to the genotype of the sample when performing quantifications.
 
-## Microsphere assay
+### Microsphere assay
 
 For microsphere extravasation experiments, mice at P17 were briefly warmed under heat lamp to dilate tail veins before injection of microspheres (1% solution of 25 nm fluorescent microspheres; 50 μl per mouse into the tail vein; ThermoFisher). Microspheres circulated for 15 min. To remove blood and microspheres from the retinal vessels, mice were perfused with room temperature phosphate-buffered saline (PBS) containing Ca2+/Mg2+, using a peristaltic pump for 2 min, under full isoflurane anesthesia. The eyes were then enucleated and fixed in 4% PFA at room temperature for 30 min before dissection, IB4 staining, and mounting for microscopy (Leica SP8 confocal microscope, 63× objective).
 
 Using ImageJ software, the microsphere channel and IB4-vessel channel (488 for Green fluorescence and 647 for IB4) were adjusted with threshold (Huang for IB4 and Triangle for FITC) for each channel. Extravasated microsphere area was calculated by measuring the signal in the green fluorescence channel after removing any signal contained within the ROI corresponding to the IB4-positive area. The Analyze Particles function was employed to quantify the microspheres. A lower limit of 10 pixels was selected to distinguish the microsphere signal from background noise. The mean area density for each group of mice was calculated from the median value of all images of the eyes of each mouse (Smith et al., 2020). To quantify leakage based on microscopic images, the amount of tracer extravasation was normalized to blood vessel density. The researcher was blinded to the genotype of the sample when performing quantifications. See Supplementary file 1B for data on body weights at P17; microsphere analyses. No mice were excluded from analysis.
 
-## Quantification of perfusion, pericyte coverage, and macrophage infiltration
+### Quantification of perfusion, pericyte coverage, and macrophage infiltration
 
 Mice at P17 were anesthetized with an intraperitoneal injection of ketamine/xylazine (100 μg/g and 10 μg/g bodyweight). Once sedated, the mice were given a retro-orbital injection of 25 μl tomato lectin (25 mg/mL) and allowed to circulate for 5 min, followed by perfusion with room temperature PBS containing Ca2+/Mg2+, using a peristaltic pump for 2 min. The eyes were then enucleated and fixed in 1% paraformaldehyde (PFA) at room temperature for 30 min before dissection. The eyes were processed for detection of IB4, inflammatory cells (CD68+), and pericytes (NG2+) and mounted for microscopy (Leica SP8 confocal microscope, 20× objective).
 
 Using imageJ software, macrophage infiltration was analyzed by counting the total number of CD68-positive particles in the entire retina. Pericyte coverage was analyzed by normalizing the NG2-positive area to the IB4 area of individual tufts. Perfusion was determined by normalizing the tomato lectin positive area to the IB4 area of individual tufts. The researcher was blinded to the genotype of the sample when performing quantifications. See Supplementary file 1C for data on body weights at P17 after OIR for inflammation, pericyte analysis, and perfusion. No mice were excluded from analysis.
 
-## Endothelial cell isolation from mouse lung
+### Endothelial cell isolation from mouse lung
 
 Mouse lungs were harvested from pups (age; P8–P10), minced, and digested in 2 mg/mL collagenase type I (385 U/mg; Worthington) in PBS with Ca2+/Mg2+ for 1 hr at 37°C. Cells were then isolated using CD31 Microbeads and MACS cell isolation equipment and reagents (Miltenyi Biotec). The cells were seeded at 3 × 105 cells/mL and cultured in MV2 medium with supplements and serum (PromoCell).
 
-## Griess reagent assay
+### Griess reagent assay
 
 Isolated endothelial cells were seeded at 3 × 105 cells/mL into 6 cm cell culture plates and allowed to adhere at 37°C and 5% CO2 overnight. After 24 hr a Griess Assay was performed (nitrate/nitrite colorimetric assay, Cayman chemical) according to the manufacturer’s instruction. Once complete, the cells were lysed in 1% (wt/vol) NP 40, 25 mM Tris–HCl pH 7.6, 0.1% SDS, 0.15 M NaCl, 1% sodium deoxycholate, and 1× Protease Inhibitor Cocktail (Roche), and concentration of nitrate/nitrite was normalized against protein concentration, measured using the BCA protein detection kit (ThermoFisher).
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 Isolated endothelial cells, serum starved at 37°C in MV2 medium (containing no growth factors) 3 hr before stimulation with murine VEGFA164 (50 ng/mL; R and D Systems), followed by fixation in 3% PFA for 3 min, permeabilized in 0.1% Triton X-100 for 3 min, and postfixed in 3% PFA for 15 min. Samples were blocked in Duolink blocking buffer for 2 hr at 37°C and used for proximity ligation assay (PLA). The Duolink protocol (Sigma-Aldrich) was followed using anti-phospho-Src Tyr 418 (Invitrogen) and total c-Src (Merck Millipore) antibodies, and oligonucleotide-linked secondary antibodies, denoted PLUS and MINUS probes, followed by the detection of reactions with fluorescent probes. Upon completion of the PLA protocol, cells were counterstained with antibodies against VE-cadherin (R and D systems), and Hoechst 33342 (ThermoFisher) to detect nuclei. Only cells positive for VE-cadherin were imaged and analyzed. To determine c-Src p418 association with VE-cadherin, a mask of the VE-cadherin channel was created and only points that aligned completely within the VE-cadherin mask were counted and expressed against the area of VE-cadherin per field of view (ImageJ software, NIH). As a technical control for each experiment, the same procedure was performed with the omission of either of the primary antibodies or the PLUS/MINUS probes.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Whole mount immunostaining was performed on PFA-fixed retinas incubated in blocking buffer for 2 hr (Buffer b; bovine serum albumin [BSA]/2% fetal calf serum [FCS]/0.05% Na-deoxycholate/0.5% Triton X-100/0.02% Na Azide in PBS). Incubation with primary antibodies over night at 4°C on a rocking platform was followed by incubation with secondary antibodies overnight at 4°C. Retinas were mounted on slides using Fluormount G. Images were taken by Leica SP8 confocal microscope and acquired with the 10× or 63× objective. Processing and quantification of images was done with ImageJ software (NIH). Quantification in the retina of total vascularized area, central avascular area, and area covered by neovascular tufts was performed by outlining images manually in ImageJ. Avascular area and tuft area were normalized to the total vascularized area of the retina.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RNA from retinas were purified using RNeasy Kit (Qiagen). One microgram of RNA was reverse transcribed using SuperScript III (Invitrogen), and quantitative PCR were assayed using Mus musculus primers against Vegfa (Mm00437306_m1, ThermoFisher), Nos3 (Mm00435217_m1), and Nos2 (Mm00440502_m1). The expression levels were normalized against TATA binding protein (TBP) Mus musculus (Mm01277042_m1, ThermoFisher) and Ubiqutin C (UBC) Mus musculus (Mm02525934_g1, ThermoFisher).
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 Human retinal microvascular endothelial cells (HRMECs; Cell Systems, #ACBRI 181) were cultured in a complete classic medium kit with serum and CultureBoost (Cell Systems, #4Z0–500). The cells were supplied mycoplasma free. HRMECs were used and passaged in 10 cm cell culture plates coated with attachment factor, between passages 5–10 for all experiments. All cells were serum starved for 3 hr at 37°C in MV2 medium (containing no growth factors) before stimulation. Murine VEGFA (Peprotech) was used at 50 ng/mL for in vitro analyses. L-NMMA (1 mM in PBS) was administrated 1 hr before stimulation with VEGFA.
 
-## Immunoblot
+### Immunoblot
 
 Cells were lysed in 1% (wt/vol) NP 40, 25 mM Tris–HCl pH 7.6, 0.1% SDS, 0.15 M NaCl, 1% sodium deoxycholate, 1× Protease Inhibitor Cocktail (Roche), 1 mM Na3VO4 (Sigma), and centrifuged at 21,100 g for 10 min. Protein concentration was measured with the BCA protein detection kit (ThermoFisher). Proteins were separated on a 4–12% Bis–Tris polyacrylamide gel (Novex by Life Technologies) and transferred to an Immobilon-P PVDF membrane (Millipore) using the Criterion Blotter System (Bio–Rad). The membrane was blocked with 3–5% skim milk in Tris-buffered saline (TBS; 0.1% Tween). For phosphotyrosine antibodies, blocking was done in 5% BSA in TBS, 0.1% Tween. The membrane was incubated with first antibodies overnight at 4°C. Membranes were then washed in TBS, 0.1% Tween and incubated with horseradish peroxidase (HRP)-conjugated secondary anti-mouse antibody (1:10,000; Invitrogen) in 3–5% skim milk, respectively, followed by final wash in TBS, 0.1% Tween and development using ECL prime (GE Healthcare). Luminescence signal was detected by the ChemiDoc MP system (Bio–Rad) and densitometry performed using Image Lab software (ver 4, Bio-Rad).
 
-## Antibodies
+### Antibodies
 
 The retinal vasculature was stained with directly conjugated Alexa Fluor 488-Isolectin B4 (1:200; Sigma, I21411) or Alexa Fluor 647-Isolectin B4 (1:200; Sigma, I32450). EC junctions and phosphorylated VE-cadherin were detected with anti-VE-cadherin antibody (1:200, R and D, AF1002) and affinity purified rabbit antibodies against VE-cadherin pY685; a kind gift from Prof. Elisabetta Dejana, Uppsala University/IFOM Milano (Orsenigo et al., 2012). For PLAs, VE-cadherin was detected using goat anti-VE-cadherin antibody (1:200, R and D Systems, AF1002). c-Src was detected using rabbit anti-Src (GD11 clone) antibody (1:200, Merck Millipore, Mouse, 05–184). Phosphorylated c-Src was assessed using rabbit anti-Src pY418 antibody (1:100, Invitrogen, 44–660G). Nuclei were detected using Hoechst 33342 (1:1000, ThermoFisher, H3570). For immunoblotting, the following antibodies were used as primaries: mouse-anti-α−tubulin (1:1000, Sigma, T9026), mouse anti-eNOS (1:1000, Abcam, ab76198), mouse anti-eNOS pS1177 (1:1000, BD, 612392), rabbit anti-Akt (1:1000, Cell Signaling, 9272S), rabbit anti-Akt pS473 (1:1000, Cell Signaling, 4058S), rabbit anti-Src (GD11 clone) antibody (1:1000, Merck Millipore, Mouse, 05–184), rabbit anti-Src pY418 antibody (1:1000, Invitrogen, 44–660G), goat anti-VE-cadherin (1:1000, R and D, AF1002), and rabbit anti-VE-cadherin pY685 (1:1000, DOI:10.1038/ncomms2199). Detection: Amersham ECL prime Western blotting detection reagent (GE Healthcare, RPN2232).
 
-## DAF-FM DA assay
+### DAF-FM DA assay
 
 Intracellular NO was measured in real time using the NO-specific fluorescence probe DAF-FM DA solution (Sigma-Aldrich). DAF-FM DA diffuses freely across the membrane and is hydrolyzed by intracellular esterases, resulting in the formation of DAF-FM. Intracellular DAF-FM reacts with the NO oxidation product N2O2, which generates the stable highly fluorescent derivative DAF-FM triazole. Cells were washed with modified HEPES buffer (20 mM HEPES buffer [Gibco] with 5 mM glucose, 50 µM l-arginine, and 0.1% BSA, pH 7.0–7.4), incubated with 5 µM DAF-FM DA in modified HEPES buffer for 30 min at room temperature, washed again, and finally incubated in modified HEPES buffer for 30 min at 37°C in the absence or presence of 1 mM L-NMMA. Fluorescence (emission wavelength, 485 nm; excitation wavelength, 538 nm) was measured at 37°C from 1 to 10 min using a fluorescence microtiter plate reader (Synergy HTX Multi-Mode Reader, BioTek). eNOS activity was expressed as the VEGFA-dependent increase in fluorescence per microgram of cellular protein. To determine the cellular protein content, the same cells were lysed in 1% (vol/vol) Triton X-100 and analyzed for protein content with the BCA protein detection kit. DAF-FM DA experiments were repeated three times. Within each experiment, four wells were used for each NO measurement.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism 6 (GraphPad). An unpaired Student’s t-test was used to compare means among two experimental groups. Two-way ANOVAs were performed when two factors were involved, for example, treatment and genotype. Multiple comparisons post hoc tests were chosen based on how many group comparisons were made. In all analyses, p<0.05 was considered a statistically significant result. Values shown are the mean, with standard error of the mean (S.E.M.) used as the dispersion measure. Biological replicates refer to individual mice/samples in a single experiment. Separate/individual experiments refer to experiments done at different times/days with independently generated material. A statistical method of sample size calculation was not used during the study design.
 
 ## Results
 
-## Reduced neoangiogenic tuft formation in C57BL/6 OIR with suppressed NO formation
+### Reduced neoangiogenic tuft formation in C57BL/6 OIR with suppressed NO formation
 
 To determine whether eNOS inhibition affects pathological angiogenesis in retinopathy in C57BL/6J mice, pups were exposed to 75% oxygen from P7 to P12 (hyperoxic period) where after they were placed at normal, atmospheric conditions (21% oxygen; relative hypoxic period) from P12 to P17 (Figure 1A). During the P7–P12 hyperoxic period, VEGFA expression is suppressed, leading to endothelial cell death and avascularity in the superficial vessel layer (reviewed in Scott and Fruttiger, 2010). The relative decrease in oxygen concentration upon return to normal atmosphere at P12–P17 induces hypoxia-inducible factor-dependent gene regulation, causing oxygen-induced retinopathy (OIR) and the formation of neoangiogenic tufts (Smith et al., 1994) (see Figure 1B for schematic outline).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig1-v2.jpg)
+
+**Figure 1.:** (A) Outline of OIR-challenge protocol; pups were placed in 75% O2 (hyperoxia) between P7 and P12, followed by return to normal atmosphere (relative hypoxia) until P17. (B) Schematic representation of vascular abnormalities after OIR in P17 retinas. (C) Nitric oxide formation determined using a Griess assay, expressed as the combined concentration of nitrite and nitrate, the end products of NO, reacting with molecules in biological fluids. Mean ± S.E.M. n = 3 mice/genotype. ****p<0.0001; t-test. (D) Representative images of whole mount retinas from Nos3+/+ and Nos3S1176A/S1176A mice, collected at P17 after OIR-challenge, stained with isolectin B4 (IB4). Avascular area is marked in magenta and tufts in blue. Scale bar = 500 µm. (E, F) Tuft area (E) and avascular area (F) expressed as percentage of total vascular area at P17. (G, H) Tuft size in µm2 (G) and total number/FOV in P17 mice (H). For (E–H): mean ± S.E.M. n = 7 (Nos3+/+) and 5 (Nos3S1176A/S1176A) mice. *p<0.05; t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images of Nos3+/+ and Nos3S1176A/S1176A retinas collected at P7, stained with isolectin B4 (IB4). (B, C) Quantification of vascular area (B) and outgrowth from the optic nerve (C) at P7 in Nos3+/+ and Nos3S1176A/S1176A pups. (D) Representative images of the vessel front from whole mount retinas collected at P7 stained with Isolectin-B4 (IB4, red, upper), ERG (yellow, upper), and CD34 (green, lower), to visualize vessel outgrowth and tip cells in Nos3+/+ and Nos3S1176A/S1176A retinal vasculature. Scale bar = 50 µm. (E–G) Filopodia length (E), tip cell number (F), branch points (G) in Nos3+/+ and Nos3S1176A/S1176A retinas at P7. Mean ± S.E.M. n = 3 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice, five to six images per mouse; t-test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative images of whole mount Nos3+/+ and Nos3S1176A/S1176A retinas collected at P12 after the vessel destruction phase of OIR and before vessel regrowth, stained with isolectin B4 (IB4). Scale bar = 500 µm. (B) Avascular area in Nos3+/+ and Nos3S1176A/S1176A retinas at P12 after OIR. n = 4 (Nos3+/+) and 5 (Nos3S1176A/S1176A) mice, three independent experiments; t-test.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Representative images of tufts visualized by IB4 binding and co-stained for NG2 (red) to mark pericytes in Nos3+/+ and Nos3S1176A/S1176A retinas collected at P17. Scale bar = 100 μm. (B) Pericyte coverage expressed as the NG2-positive area normalized to the IB4 area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice. t-test. (C) Representative images of one leaf of the retina (IB4) co-stained for CD68 (yellow) to mark circulatory/tissue macrophages in Nos3+/+ and Nos3S1176A/S1176A retinas collected at P17. Scale bar = 200 μm. (D) The number of CD68-positive macrophages in the entire retina represented by particle number, normalized to the retina area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice. t-test. (E) Representative images of tufts with circulating tomato lectin (green), co-stained with IB4 in Nos3+/+ and Nos3S1176A/S1176A retinas collected at P17. Scale bar = 100 μm. (F) Tuft perfusion, expressed as the area of tomato lectin normalized to the IB4 area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice. *p<0.05; t-test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–C) qPCR of Nos3 (A), Nos2 (B), and Vegfa (C) expression in P17 normoxic and OIR-challenged Nos3+/+ and Nos3S1176A/S1176A mouse retinas. (D, E) Relative levels of Nos2 and Nos3 compared against standard curves of TBP and UBC in Nos3+/+ (D) and Nos3S1176A/S1176A (E) retinas. Mean ± S.E.M. n = 5 (Nos3+/+) and 5 (Nos3S1176A/S1176A) mice. Three independent experiments. *, **, ***p<0.05, 0.01, 0.001; two-way ANOVA, Sidak’s multiple comparison test.
 
 To specifically address the role of eNOS in vascular retinal disease, we used a genetic model in which eNOS S1176 (mouse numbering, Fulton et al., 1999; S1177 in human) is replaced by alanine (A) (Kashiwagi et al., 2013). Phosphorylation of eNOS on this serine residue is a prerequisite for eNOS-driven NO production, which was verified using a Griess assay on isolated endothelial cells from Nos3+/+ and Nos3S1176A/S1176A mice (Figure 1C). Mice were subjected to the OIR regimen (Figure 1D). After OIR-challenge, Nos3S1176A/S1176A P17 retinas showed reduced pathological tuft area compared to Nos3+/+ (Figure 1E), while the extent of avascularity was the same (Figure 1F). The average size of individual tufts was reduced in the Nos3S1176A/S1176A pups (Figure 1G), while the total number of tufts formed after OIR was unaffected (Figure 1H).
 
@@ -118,13 +519,29 @@ The suppressed formation of neoangiogenic tufts in the absence of eNOS S1176 pho
 
 Importantly, the reduced tuft area in the Nos3S1176A/S1176A condition was not a result of differences in Nos3 or Nos2 expression between the Nos3+/+ and Nos3S1176A/S1176A mice before or after the OIR-challenge (Figure 1—figure supplement 4A,B). Reduced tuft area was also not a result of reduced VEGFA production as an equally induced level of VEGFA was seen in the mutant and wild-type retinas (Figure 1—figure supplement 4C). It should also be noted that the low relative expression level of Nos2 (encoding inducible nitric oxide synthase [iNOS]) compared to Nos3 (Figure 1—figure supplement 4D,E) emphasizes the primary role of eNOS as a source of endothelial NO, both in the unchallenged and OIR-treated condition.
 
-## VEGFA induces eNOS phosphorylation and activity
+### VEGFA induces eNOS phosphorylation and activity
 
 VEGFA produced during the relative hypoxia phase (P12–P17) is an important instigator of edema in retinopathy (Connor et al., 2009; Dor et al., 2001). VEGFA/VEGFR2 signaling and vessel leakage correlates with phosphorylation of VE-cadherin on Y685 (Li et al., 2016; Smith et al., 2020; Wessel et al., 2014). The level of pY685 VE-cadherin was examined by immunostaining of Nos3+/+ and Nos3S1176A/S1176A retinas at P17 after OIR-challenge. pY685 VE-cadherin immunostaining, normalized to the total VE-cadherin area, was significantly lower in Nos3S1176A/S1176A tufts than in the WT tufts (Figure 2A,B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative maximum intensity projections of similar sized tufts from Nos3+/+ and Nos3S1176A/S1176A retinas showing VE-cadherin (green), pY685 VE-cadherin (red), and isolectin B4 (IB4; cyan). Scale bar = 50 μm. (B) Ratio of pY685 positive area/total VE-cadherin positive area. Mean ± S.E.M n = 3–6 images per group from 5 (Nos3+/+) and 5 (Nos3S1176A/S1176A) mice, three independent experiments, *p<0.05; t-test. (C) Representative images of VE-cadherin staining (green) and proximity ligation assay (PLA) to detect c-Src pY418 (magenta) in isolated mouse lung endothelial cells (iEC) from Nos3+/+ and Nos3S1176A/S1176A mice. Scale bar = 20 µM. (D) c-Src pY418 PLA dots detected in PBS and VEGFA (50 ng/mL)-treated iECs from Nos3+/+ and Nos3S1176A/S1176A mouse lungs. Data expressed as the number of dots per field of view. (E) c-Src pY418 PLA dots co-localized with VE-cadherin (green), normalized against total VE-cadherin area in the field of view. Mean ± S.E.M. Cells isolated from n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice, from three separate experiments. *, **p<0.05, 0.01; two-way ANOVA, Sidak’s multiple comparisons test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Effect of VEGFA (V; 50 ng/mL; 1, 5, 10 min), histamine (H; 10 µM, 1, 5, 10 min), or medium (C, control) on eNOS phosphorylation at S1177 in cultured Human Retinal Microvascular Endothelial Cells (HRMEC). (B) Quantification of eNOS pS1177/total eNOS normalized to tubulin. Mean ± S.E.M. n = 3 independent experiments. *p<0.05; two-way ANOVA, Sidak’s multiple comparison test. (C) Antibody validation by immunoblotting for eNOS on HRMECs transfected with a control siRNA or Nos3-specific siRNA followed by treatment with VEGFA (50 ng/mL; 5 min). (D) Antibody validation by immunoblotting for eNOS pS1177 on HRMECs transfected with a control siRNA or Nos3-specific siRNA followed by treatment with VEGFA (50 ng/mL; 5 min). (E) Quantification of NO production in HRMECs treated with PBS or VEGFA (50 ng/mL, for 1, 5, or 10 min) using the cell-permeable fluorescent probe DAF-FM DA. (F) Quantification of NO production in HRMECs pre-treated with PBS or L-NMMA (1 mM) before VEGFA stimulation (50 ng/mL, 5 min). Mean ± S.E.M. n = 12, three independent experiments. *, **, ****p<0.05, 0.01, 0.0001; two-way ANOVA, Sidak’s multiple comparison test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative immunoblots and the effect of VEGFA (50 ng/mL; 1, 5, 10, 30 min) on eNOS, eNOS pS1177, AKT, AKT pS473, VE-cadherin, VE-cadherin pY685, c-Src, SFK pY418, and tubulin in cultured Human Retinal Microvascular Endothelial Cells (HRMEC) treated with a PBS vehicle or 1 mM L-NMMA for 1 hr. (B) Quantification of eNOS pS1177/total eNOS (normalized to tubulin). (C) Quantification of AKT pS473/total AKT (normalized to tubulin). (D) Quantification of VE-cadherin pY685/total VE-cadherin (normalized to tubulin). (E) Quantification of SFK pY418/total c-Src (normalized to tubulin) Mean ± S.E.M. n = 3 independent experiments. *, ***p<0.05, 0.001 (indicates significance between vehicle and L-NMMA-treated samples, stimulated with VEGFA as indicated). Two-way ANOVA, Sidak’s multiple comparison test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative maximum intensity projections of tufts from Nos3+/+ and Nos3S1176A/S1176A retinas immunostained for VE-cadherin (green), c-Src pY418 (red), and IB4 (cyan). (B) Quantification of pY418-positive area/total VE-cadherin area. n = 3 images per group from 3 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice from two separate experiments; t-test. (C) Representative images of VE-cadherin staining (green) and negative controls for proximity ligation in isolated mouse lung endothelial cells (iEC) from Nos3+/+ mice. Controls were performed by incubation with only one of the necessary antibodies or, one of the PLUS or MINUS PLA probes (mouse and rabbit secondary antibodies), which should inhibit rolling circle DNA synthesis. This allows for the detection of non-specific ligation or uncontrolled rolling circle DNA synthesis. Scale bar = 20 µm.
+
 We explored the potency of VEGFA/VEGFR2 in inducing NO generation and how this related to phosphorylation of VE-cadherin. eNOS was phosphorylated on S1177 in VEGFA-treated human retinal microvascular endothelial cells (HRMEC). Induction of eNOS phosphorylation appeared with similar kinetics but slightly more potently by VEGFA than by the inflammatory mediator histamine (Figure 2—figure supplement 1A,B; see Figure 2—figure supplement 1C,D for antibody validation), a well-known inducer of eNOS activity (Thors et al., 2004). eNOS phosphorylation was accompanied by NO production in response to VEGFA stimulation, as assessed using the fluorescent probe, DAF-FM DA added to the HRMEC culture medium. NO accumulated significantly by 1 min stimulation and still persisted at 10 min (Figure 2—figure supplement 1E). DAF-FM DA fluorescence, and therefore NO production, was blocked by incubating cells with L-NMMA (Figure 2—figure supplement 1F), to the level of the untreated control. Combined, these data show that VEGFA is a potent inducer of eNOS activity and NO production.
 
-## VE-cadherin phosphorylation at Y685 is reduced in Nos3S1176A/S1176A vessels after OIR due to the inhibition of c-Src Y418 phosphorylation
+### VE-cadherin phosphorylation at Y685 is reduced in Nos3S1176A/S1176A vessels after OIR due to the inhibition of c-Src Y418 phosphorylation
 
 Phosphorylation of VE-cadherin on Y685 correlates with activation of the cytoplasmic tyrosine kinase c-Src (Orsenigo et al., 2012; Wallez et al., 2007). The NO-generating reagent, SNAP, can increase the levels of activated c-Src phosphorylated on Y418 in fibroblast cultures (Rahman et al., 2010), indicating a potential role for NO in c-Src activation. We therefore tested whether eNOS 1176 phosphorylation correlates with phosphorylation of c-Src at Y418. In vitro, the cell-permeable NOS inhibitor L-NMMA had no effect on VEGFA-induced phosphorylation of eNOS (S1177). There was also no significant effect of L-NMMA treatment on VEGFA-induced phosphorylation of AKT (S473) (Figure 2—figure supplement 2A–C); VEGFA-mediated AKT activation is a prerequisite for phosphorylation of eNOS at S1177 (Chen and Meyrick, 2004; Schleicher et al., 2009). In contrast, phosphorylation of VE-cadherin at Y685 was attenuated and delayed (Figure 2—figure supplement 2D), an indication of reduced permeability (Smith et al., 2020). Immunoblotting for SFK Y418 phosphorylation, representing c-Src activation, showed a biphasic induction in the control. Treatment with L-NMMA efficiently suppressed the second pY418 peak at 10 min of VEGFA stimulation (Figure 2—figure supplement 2E). The inhibition by L-NMMA of the second Y418 peak observed here mirrors results obtained by Li et al., where a leakage-resistant VEGFR2 Y949F mutant also lacked the second pY418 peak in immunoblots (Li et al., 2016). Upon in vivo analyses, immunostaining for c-Src pY418 however failed to reveal differences in pY418 c-Src levels between Nos3+/+ and Nos3 S1176A/S1176A retinas (Figure 2—figure supplement 3A,B). These results indicate that the pY418 antibody is not specific to c-Src phosphorylation and likely recognizes several related Src family kinases (SFKs) such as Yes and Fyn. Thus, the double pY418 peaks appearing in the immunoblots may be due to phosphorylation of distinct SFKs.
 
@@ -132,27 +549,43 @@ To overcome the potential lack in antibody specificity for c-Src, we next employ
 
 These data indicate that eNOS S1176 phosphorylation and the consequent formation of NO are essential for the accumulation of active c-Src at endothelial junctions to induce the phosphorylation of VE-cadherin at Y685.
 
-## Suppressed vascular leakage in Nos3S1176A/S1176A retinas after OIR-challenge
+### Suppressed vascular leakage in Nos3S1176A/S1176A retinas after OIR-challenge
 
 In the retina, the blood–retina barrier (BRB) controls vascular permeability; however, the BRB is disrupted in retinopathies, causing edema and vision loss (Klaassen et al., 2013; Zhao et al., 2015). Edema correlates with increased vessel permeability, which is dependent on the phosphorylation status of VE-cadherin (Wessel et al., 2014) and c-Src activity (Wallez et al., 2007). To assess the role for eNOS specifically in vessel leakage after hypoxia-driven VEGFA production, 25 nm fluorescent microspheres were injected in the tail vein of P17 Nos3+/+ and Nos3S1176A/S1176A mice, after OIR-challenge. Confocal image analysis showed accumulation of microspheres outside the vascular tufts, in agreement with enhanced vessel leakage upon OIR (Figure 3A). The accumulation of microspheres normalized to tuft area was significantly lower in Nos3S1176A/S1176A retinas compared to Nos3+/+ (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig3-v2.jpg)
 
-**Figure 3.:** Nos3 retinas.S1176A/S1176A(A) Representative images of similar sized tufts from Nos3 and +/+Nos3 mice showing isolectin B4 (IB4; red), and leakage of tail-vein injected FITC-conjugated 25 nm microspheres (cyan) around the tufts. Scale bar = 100 µM. Lower panels show leakage maps. Dots that do not overlap with vessels (beige) are considered extravascular. (S1176A/S1176AB) Quantification of the average area of extravascular microspheres normalized to IB4 area. Mean ± S.E.M. n = 4 (Nos3) and 4 (+/+Nos3) mice, 6–15 images per mouse. *p<0.05, t-test.S1176A/S1176AFigure 3—source data 1.+/+ and Nos3S1176A/S1176A mice shown in Figure 3.
+**Figure 3.:** (A) Representative images of similar sized tufts from Nos3+/+ and Nos3S1176A/S1176A mice showing isolectin B4 (IB4; red), and leakage of tail-vein injected FITC-conjugated 25 nm microspheres (cyan) around the tufts. Scale bar = 100 µM. Lower panels show leakage maps. Dots that do not overlap with vessels (beige) are considered extravascular. (B) Quantification of the average area of extravascular microspheres normalized to IB4 area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice, 6–15 images per mouse. *p<0.05, t-test.
 
-## Reduced tuft area as a result of pharmacological inhibition of NO formation
+### Reduced tuft area as a result of pharmacological inhibition of NO formation
 
 The Nos3S1176A/S1176A mouse is unable to produce NO in the endothelium due to the non-phosphorylatable alanine replacing S1176. As we could not unequivocally exclude that the vascular effects observed in the Nos3S1176A/S1176A mutant were dependent on non-NO synthesis events linked to S1176 phosphorylation, we used L-NMMA to inhibit the formation of NO.
 
 Intraperitoneal injections of L-NMMA (20 µg/g body weight) were given daily to wild-type C57Bl/6J pups during P12–P17 (injections on days P12–P16), thus treatment was initiated before pathological neovessels were established (prevention therapy). This preventive administration had no effect on NG2-positive pericyte coverage or infiltration of CD68-positive macrophages (Figure 4—figure supplement 1A–D). However, L-NMMA treatment significantly reduced the area of vascular tufts formed by P17 (Figure 4A,B) but did not affect the avascular area (Figure 4C). The average tuft size was decreased (Figure 4D), while the total number of individual tufts increased with L-NMMA treatment (Figure 4E). As smaller tufts can fuse to form larger structures (Prahst et al., 2020), the increase in individual tufts in the L-NMMA-treated litter mates may reflect the suppressed growth and fusion of the tufts. The constitutive inhibition of eNOS activation in the Nos3S1176A/S1176A retina resulted in tufts that were more efficiently perfused than in the wild-type retina (Figure 1—figure supplement 3E,F). In contrast, with L-NMMA treatment, tuft perfusion was equivalent to that in the vehicle-treated pups (Figure 4—figure supplement 1E,F). It is expected that constitutive genetic inhibition and pharmacological inhibition during an interval after the hyperoxia treatment would differently suppress tuft formation and growth and result in distinct tuft morphologies, with more or less open lumens.
 
-## NO and VE-cadherin Y685 phosphorylation operate on the same pathway regulating vascular leakage
+![Figure 4.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative images of whole mount retinas from PBS- and L-NMMA-treated (P12–P16) wild-type C57Bl/6 mice, collected on P17 after OIR-challenge, and stained with isolectin B4 (IB4). Avascular area as a result of OIR is marked in magenta and tufts in blue. Scale bar = 500 µm. (B, C) Tuft area and avascular area expressed as percentage of total vascular area at P17. (D, E) Tuft size in µm2 and total number of tufts/field of vision at P17. Mean ± S.E.M. n = 8 (PBS) and 9 (L-NMMA) treated mice. *, **p<0.05, 0.01; t-test. (F) Representative images of whole mount IB4-stained P17 retinas from OIR-challenged VEC-WT and VEC-Y685F mice injected with PBS or L-NMMA during P12-P16. Avascular area is marked in magenta and tufts in blue. Scale bar = 500 µm. (G) Tuft area normalized to total vascular area in PBS or L-NMMA-treated VEC-WT and VEC-Y685F retinas. (H) Avascular area normalized to total vascular area. Mean ± S.E.M. n = 8 (VEC-WT) and 8 (VEC-Y685F) mice. **, ***p<0.01, 0.001; two-way ANOVA, Sidak’s multiple comparison test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative images of tufts visualized by IB4 binding and co-stained for NG2 (red) to mark pericytes in PBS and L-NMMA-treated retinas collected at P17. Scale bar = 100 μm. (B) Pericyte coverage expressed as the NG2-positive area normalized to the IB4 area. Mean ± S.E.M. n = 4 (PBS) and 4 (L-NMMA) mice. t-test. (C) Representative images of one leaf of the retina (IB4) co-stained for CD68 (yellow) to mark circulatory/tissue macrophages in PBS and L-NMMA treated retinas collected at P17. Scale bar = 200 μm. (D) The number of CD68-positive macrophages in the entire retina represented by particle number, normalized to the retina area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice. t-test. (E) Representative images tufts with circulating tomato lectin (green) co-stained with IB4 in PBS- and L-NMMA-treated retinas collected at P17. Scale bar = 100 μm. (F) Tuft perfusion, expressed as the tomato lectin area normalized to the IB4 area Mean ± S.E.M. n = 4 (PBS) and 4 (L-NMMA) mice. t-test.
+
+### NO and VE-cadherin Y685 phosphorylation operate on the same pathway regulating vascular leakage
 
 To further explore the relationship between NO and VE-cadherin pY685 in the formation of leaky, pathological vessels, we used mice expressing wild-type VE-cadherin (VEC-WT) or mutant VE-cadherin wherein phosphorylation at position 685 is abolished by exchanging the tyrosine (Y) for phenylalanine (F), VEC-Y685F (Wessel et al., 2014). VEC-Y685F mice show suppressed induction of vascular leakage in the healthy skin (Wessel et al., 2014). We hypothesized that if NO modulates vascular leakage and tuft formation via a non-VE-cadherin Y685 pathway, L-NMMA would impart an additional reduction in tuft area to OIR-challenged VEC-Y685F mice. To test whether the VEC-Y685F mouse would respond to NOS inhibition, L-NMMA (20 µg/g body weight) was administered by intraperitoneal injection of VEC-WT and VEC-685F mice during the relative hypoxic period (injections on days P12–P16). Results show that L-NMMA treatment did not further suppress tuft formation in Y685F mice at P17. The reduction in tuft area was similar, about 50%, in PBS and L-NMMA-treated Y685F retinas and comparable to that seen in L-NMMA-treated VEC-WT mice (Figure 4F,G). The avascular area remained unaffected by all treatments (Figure 4H).
 
-## Single-dose L-NMMA decreases vascular leakage in the retina
+### Single-dose L-NMMA decreases vascular leakage in the retina
 
 We next aimed to more closely mimic a clinical situation by administering L-NMMA to OIR-challenged wild-type mice with established pathological vessels (intervention therapy). Mice were given one injection of L-NMMA (60 µg/g body weight) at P16. At P17, microspheres were injected and after 15 min, the experiment was terminated. The area of extravascular microspheres, assessed after normalization to tuft area (Figure 5A,B) or to total microsphere area (Figure 5A,C), was reduced by 50–60% after the single-dose treatment with L-NMMA compared to PBS. Of note, the total microsphere area was not affected by the L-NMMA treatment (Figure 5D), indicating that microspheres to a large extent were present in the vascular lumen in the L-NMMA-treated condition, while in the PBS control, they had crossed the disrupted barrier to the extravascular space. The tuft area was not affected by the L-NMMA treatment (Figure 5E). Analyses of a parallel cohort of mice showed that there was no effect of the single-dose L-NMMA treatment on vessel pericyte coverage, macrophage infiltration, or tuft perfusion (Figure 5—figure supplement 1A–F). Thus, these data indicate that leakage could be suppressed even from established neovascular structures.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative images of tufts from Nos3+/+ (wild type) mice treated with PBS or L-NMMA (60 µg/g body weight) 24 hr before tail-vein injection of 25 nm microspheres. Retinas were stained using isolectin B4 (IB4; cyan), microspheres (red) appear in and around the tufts. Scale bar = 100 µM. Lower panels show leakage maps. Dots that do not overlap with vessels (beige) are considered extravascular. (B) Quantification of the average area of extravascular microspheres normalized to IB4 area. (C) Quantification of the average area of extravascular microspheres normalized to total microsphere area. (D) Quantification of average total microsphere area in PBS- or L-NMMA-treated wild-type mouse retinas. (E) Quantification of tuft area normalized to total vascular area. Mean ± S.E.M. n = 5 (PBS) and 5 (L-NMMA) treated mice. *p<0.05; t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64944/elife-64944-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative images of tufts visualized by IB4 binding and co-stained for NG2 (red) to mark pericytes in single-dose-treated PBS and L-NMMA retinas collected at P17. Scale bar = 100 μm. (B) Pericyte coverage expressed as the NG2-positive area normalized to the IB4 area. Mean ± S.E.M. n = 4 (PBS) and 4 (L-NMMA) mice. t-test. (C) Representative images of one leaf of the retina (IB4) co-stained for CD68 (yellow) to mark circulatory/tissue macrophages in single-dose-treated PBS and L-NMMA retinas collected at P17. Scale bar = 200 μm. (D) The number of CD68-positive macrophages in the entire retina represented by particle number, normalized to the retina area. Mean ± S.E.M. n = 4 (Nos3+/+) and 4 (Nos3S1176A/S1176A) mice. t-test. (E) Representative images tufts with circulating tomato lectin (green) co-stained with IB4 in single-dose-treated PBS and L-NMMA retinas collected at P17. Scale bar = 100 μm. (F) Tuft perfusion, expressed as the area of tomato lectin normalized to the IB4 area. Mean ± S.E.M. n = 4 (PBS) and 4 (L-NMMA) mice. t-test.
 
 ## Discussion
 

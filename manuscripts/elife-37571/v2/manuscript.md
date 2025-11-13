@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.37571.001 Excitatory and inhibitory synapses are the brain’s most abundant synapse types. However, little is known about their formation during critical periods of motor skill learning, when sensory experience defines a motor target that animals strive to imitate. In songbirds, we find that exposure to tutor song leads to elimination of excitatory synapses in HVC (used here as a proper name), a key song generating brain area. A similar pruning is associated with song maturation, because juvenile birds have fewer excitatory synapses, the better their song imitations. In contrast, tutoring is associated with rapid insertion of inhibitory synapses, but the tutoring-induced structural imbalance between excitation and inhibition is eliminated during subsequent song maturation. Our work suggests that sensory exposure triggers the developmental onset of goal-specific motor circuits by increasing the relative strength of inhibition and it suggests a synapse-elimination model of song memorization.
+Excitatory and inhibitory synapses are the brain’s most abundant synapse types. However, little is known about their formation during critical periods of motor skill learning, when sensory experience defines a motor target that animals strive to imitate. In songbirds, we find that exposure to tutor song leads to elimination of excitatory synapses in HVC (used here as a proper name), a key song generating brain area. A similar pruning is associated with song maturation, because juvenile birds have fewer excitatory synapses, the better their song imitations. In contrast, tutoring is associated with rapid insertion of inhibitory synapses, but the tutoring-induced structural imbalance between excitation and inhibition is eliminated during subsequent song maturation. Our work suggests that sensory exposure triggers the developmental onset of goal-specific motor circuits by increasing the relative strength of inhibition and it suggests a synapse-elimination model of song memorization.
 
 ## Introduction
 
@@ -33,15 +33,106 @@ Adult birdsong is generated and temporally controlled by interactions among inhi
 
 ## Results
 
-## Experiment I: the effect of tutoring on synapse densities
+### Experiment I: the effect of tutoring on synapse densities
 
 Using electron microscopy (EM), we investigated the effects of tutor song exposure on HVC synapses. We compared synapse densities in zebra finches that were either exposed to an adult tutor for one day (SHORT birds) or that were never exposed to a tutor (ISO birds). To compare with densities in normally reared birds, we included a third group of birds that were tutored for 24 days (LONG birds). In this first experiment, we minimized the influence of age by sacrificing all birds mid-development at 59 days post hatch (dph), which is near the end of the critical sensory song learning period, Table 1, Figure 1A.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experiment timeline. Male zebra finches were either tutored for one day (SHORT), for 24 days (LONG), or not at all (ISO), before being sacrificed at 59 days post hatch (dph). (B) We identified excitatory and inhibitory synapses in HVC tissue imaged with serial section electron microscopy (ssEM). (C) The excitatory synapse density decreases with increasing tutor exposure. (D) The inhibitory synapse density increases in briefly tutored birds, but it decreases in chronically tutored birds. (E) Tutoring induces a transient increase in the percentage of inhibitory synapses. (C-E) White/gray bars represent group means and the error bars represent the means in individual birds ± the standard deviations.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** HVC sizes in different animal groups (bars), reported for each animal (whiskers depict means across the two hemispheres ± the standard deviations).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Estimated tissue deformation $R_{e}$ caused by EM embedding, reported for each of the 32 samples.Error bars stem from 3 measurements per sample.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Left, LM image of a sample block face after ultramicrotomy. Right, SEM overview of an ultrathin section cut from that block face. The red solid lines represent three distance measurements along the X- axis. Based on such measurement pairs, we estimated the tissue deformation $R_{X}$. The blue dashed lines represent three distance measurements along the Y- axis, used to estimate the deformation $R_{Y}$.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** We drew 3D spherical objects with TrakEM2 into mitochondria. (a – f) are consecutive 2D images of a sample mitochondrion that was longitudinally dissected. The yellow, blue, and red circles represent 2D sections of the spherical objects, which denote center (yellow), pre-center (blue), and post-center (red) Z positions.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Tissue deformations $R_{X}$ (blue), $R_{Y}$(red), $R_{z}$ (green) caused by ultramicrotomy.The bars depict averages of 3 measurements for each animal and the whiskers depict standard errors from these 3 measurements.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig1-figsupp6-v2.jpg)
+
+**Table 1.**
+ Bird groups used in Experiments I (ISO, SHORT, and LONG) and in Experiment II (ISO30, ISO60, ISO90, LONG60, LONG90)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bird group</th>
+      <th>Tutoring (dph)</th>
+      <th>Tutoring H/day</th>
+      <th>Sacrifice (dph)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ISO</td>
+      <td>-</td>
+      <td>-</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>SHORT</td>
+      <td>58</td>
+      <td>24</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>LONG</td>
+      <td>35–58</td>
+      <td>24</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>ISO30</td>
+      <td>-</td>
+      <td></td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>ISO60</td>
+      <td>-</td>
+      <td>-</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>ISO90</td>
+      <td>-</td>
+      <td>-</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>LONG60</td>
+      <td>35–59</td>
+      <td>2</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>LONG90</td>
+      <td>35–39</td>
+      <td>2</td>
+      <td>90</td>
+    </tr>
+  </tbody>
+</table>
 
 We found that one day of tutor exposure led to a 26 ± 5% decrease in the HVC asymmetric (excitatory) synapse density (p = 3*10−9, linear mixed effect (LME) model with bird group as fixed effect and bird identity as random effect, df = 1152, n = 4 SHORT birds and n = 4 ISO birds, see Materials and methods), Figure 1B,C. In contrast, the HVC symmetric (inhibitory) synapse density increased by about 20 ± 10% during one day of tutor exposure (p = 0.05, LME model, df = 1152, n=4 SHORT and n=4 ISO birds), Figure 1B,D. In combination, upon first tutoring and within 24 hr, the percent inhibitory synapses in HVC rose by 42% from on average 19% (ISO group) to 27% (SHORT group, p = 1.7*10−6, LME model with 32 observations, two fixed effect coefficients, and eight random effect coefficients, see Materials and methods), Figure 1E.
 
 Extended tutoring (LONG) had the net effect of removing both excitatory and inhibitory synapses. Compared with the ISO group, we found that 24 days of tutoring led to a decrease in excitatory synapse density of 37 ± 1% (p = 4.5*10−18, LME model, n = 4 LONG and n = 4 ISO birds) and to a decrease in inhibitory synapse density of 30 ± 2% (p = 0.003, LME model, n = 4 LONG and n = 4 ISO birds). Altogether, tutoring induced a synaptic bias towards inhibition that was transient, because the percent inhibitory synapses in LONG birds was barely larger than in ISO birds (21% vs 20%, p = 0.48, LME model, n = 4 LONG and n = 4 ISO birds).
 
-## Experiment II: the effects of age and tutoring on synapse densities
+### Experiment II: the effects of age and tutoring on synapse densities
 
 To assess whether the observed changes in synapse densities were aligned (or anti-aligned) with normal developmental trends, in a second experiment, we studied HVC synapse turnover and the excitatory-inhibitory balance as a function of age. We measured HVC synapse densities at the onset of the sensory learning phase at 30 dph in untutored birds (ISO30 birds) and at the onset of adulthood at 90 dph, both in extensively tutored birds (LONG90 birds) and in untutored birds (ISO90 birds). We included two additional groups of extensively tutored and untutored birds sacrificed mid-development (60 dph, LONG60 and ISO60 birds), Table 1, Figure 2A.
 
@@ -63,9 +154,21 @@ We combined the data from both experiments to perform a group-level analysis on 
 
 **Figure 3.:** (A) excitatory synapses, (B) inhibitory synapses. Error bars depict stand deviations.
 
-## Effects of tutoring on synapse sizes
+### Effects of tutoring on synapse sizes
 
 Synapse insertions and deletions are extreme cases of subtler processes of synapse size changes. To inspect the latter, we reconstructed HVC synapses in brains from the first experiment, imaged with focused ion beam electron microscopy (FIBSEM, see Materials and methods), Figure 4A–C. We found that synapse sizes (their physical volumes) were well approximated by log-normal distributions, Figure 4—figure supplement 1. Log mean synapse sizes displayed large differences across animals. Nevertheless, we found an effect of 40% larger excitatory synapses in SHORT birds compared to ISO birds (LME, p = 0.05), Figure 4D. Extended tutoring was not associated with significant size changes of excitatory synapses (LME, ISO vs LONG, p = 0.42). Sizes of inhibitory synapses were not affected by either short or long tutoring (LME, p > 0.05), Figure 4E. Also, we found no effect of tutoring on Feret diameters (directional measure of object size) of either excitatory or inhibitory synapses (LME, p > 0.05).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig4-v2.jpg)
+
+**Figure 4.:** (A) We acquired close to isotropic imagery of an (8 μm)3 cube of HVC tissue using focused ion beam electron microscopy (FIBSEM). (B) Example image of excitatory (red) and inhibitory (blue) synapses. (C) Example reconstructed excitatory (red) and inhibitory (blue) synapses. Shown are the synapses in the original FIBSEM dataset (left), 3D orthoslices intersected at the synapse centers with the segmented synapse voxels shown in color (middle), and 3D reconstruction of the segmented voxels with arrows pointing to the postsynaptic side (right). Scale bars: 0.5 μm. (D) Excitatory (asymmetric) synapses in tutored (SHORT) birds were larger than in untutored (ISO) birds, no significant change in synapse size was associated with extensive tutoring (LONG birds). (E) Neither SHORT nor LONG tutoring was associated with significant changes in inhibitory synapse sizes. C-D White/gray bars represent group means and the error bars represent the means in individual birds ± the standard deviations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Sizes (X-axis) were log-transformed. Gaussian fits are shown in red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37571/elife-37571-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) This sample image served as a reference for panels (b) – (d). (b) Objects (synapses in red, membranes in green, vesicles in purple, mitochondria in blue, and remainder in yellow) were manually labeled and served as ground truth for automated segmentation. (c) Ilastik-predicted pixel identities in corresponding colors. Note that despite the small mistake in b of labeling parts of a mitochondrion as ‘remainder’, the predicted pixel classification is robust and mitochondria are mostly correctly identified. (d) Binary image of segmented synapses. Pixels segmented as synapses are shown in red, superimposed on the original EM image.
 
 ## Discussion
 
@@ -97,7 +200,7 @@ One expected immediate effect of a tutoring-induced bias towards inhibition is t
 
 ## Materials and methods
 
-## Experimental subjects
+### Experimental subjects
 
 34 male juvenile zebra finches (<90 days) were raised in our facility at the University of Zurich, Switzerland. At 15 days post hatching (dph), the young birds were transferred together with their mothers to a sound-isolation chamber where they could not hear male songs. Between 25 and 35 dph, sex determination was performed based on feather appearance and on genotyping. At 35 dph, selected male birds were separated from siblings and transferred to individual sound-isolation chambers (inner volume 60 × 60 × 60 cm3) where their songs were recorded.
 
@@ -105,23 +208,23 @@ We randomly assigned birds to treatment groups with one exception: to minimize t
 
 Birds were housed in two cages with inner dimensions 39 × 23 × 39 cm3 (length ×width × height), joined together by the doors, resulting in a movement range of approximately 39 × 46 × 39 cm3. Each juvenile bird was housed together in the same cage with an adult bird, inside the recording chamber: either a male serving as live tutor or a female serving as companion (female zebra finches do not sing). Singing of juveniles and tutors was recorded continuously and monitored on a daily basis. We aborted the experiment in two juveniles because the tutor failed to sing at least 20 song motifs per day. Birds were maintained on a 14:10 hr light:dark cycle with food and water provided ad libitum. To avoid human bias, we coded all birds with numeric identifiers and performed all analyses in a manner that was blind to bird identity and treatment group. All experimental procedures were in accordance with the Veterinary Office of the Canton of Zurich.
 
-## Experiment I
+### Experiment I
 
 Experiment I was designed to investigate whether experience of the tutor song alters excitatory and inhibitory synaptic connectivity in HVC. We divided birds into the following three groups (Figure 1A), each composed of four animals:
 
 At 59 dph, all juveniles were deeply anesthetized and perfused.
 
-## Experiment II
+### Experiment II
 
 Experiment II was designed to explore changes in HVC excitatory and inhibitory synapses as a function of age. To separately explore age dependence in tutored and untutored birds, we divided birds into the following five groups, each composed of four animals:
 
-## Song analysis
+### Song analysis
 
 All vocalizations produced by the juveniles and their companions were recorded with a wall-mounted microphone (Audio Technica PRO 42), amplified with a microphone preamplifier (RME Quadmic), and digitally sampled at 32 kHz (PCI card, National Instruments). Songs were detected and saved using custom written software (Labview, National Instruments).
 
 To evaluate the similarity between the juveniles’ songs and tutors’ songs one day before sacrifice, we randomly selected from the last day of recording 20 song motifs from the pupil and 20 motifs from the tutor. The comparison of the 20 motif pairings was performed using Sound Analysis Pro (SAP) (Tchernichovski et al., 2000).
 
-## Brain sample collection, fixation, and sectioning
+### Brain sample collection, fixation, and sectioning
 
 Birds were sacrificed with 50 µL sodium pentobarbital (Streuli Pharma AG Esconarkon) injected intramuscularly. They were perfused with 5 mL 0.9% NaCl, followed by 300 ml freshly prepared fixative solution at body temperature (4% paraformaldehyde and 0.1% glutaraldehyde in 0.1 M pH 7.4 phosphate buffer (PB)). Our procedure was adapted from Knott et al. (2011), instead we used a slightly reduced glutaraldehyde concentration. After perfusion, brains were dissected from the skull and briefly washed in PB. Prior to sectioning, to enhance cutting stability, we separated the two hemispheres along the midline and embedded each in 3% agar. Parasagittal brain slices of 100 µm thickness were cut on a vibratome (Thermo Scientific, Microm HM 650V) and collected at 4°C in 0.1 M PB.
 
@@ -131,37 +234,37 @@ Before proceeding to ultramicrotomy, the ROI in HVC was located by comparing the
 
 HVC was located by reference to the LM images and trimmed in a trapezoidal shape with a diamond trimming knife (trimtool 20, DiATOME Ltd., Nidau, Switzerland). The Aclar film on top was trimmed away and the surface of the brain tissue block was polished. Serial 70-nm-thick ultrathin sections were cut with an ultramicrotome (Leica FC6) and a sharp diamond knife (Histo Jumbo, DiATOME Ltd). The sections formed a ribbon of tissue that were floating on the surface of the water bath. The section thickness was monitored based on the reflection index (golden:>100 nm; silver-gray: 50–100 nm). Sections that were too thick were discarded from collection. When the desired ribbon of serial ultrathin sections was produced, it was detached from the diamond blade and moved on the water surface with a human eyelash that was fixed to a toothpick. A custom-made silicon wafer (Si-Mat Silicon Materials, Kaufering, Germany) was first deionized with a charging generator (EN SL, Haug Biel AG, Biel, Switzerland) and then slowly dipped into the water bath. The floating ribbon of ultra-thin sections was flattened and attached to the silicon wafer and both were withdrawn from the water bath. Prior to the ssSEM imaging of the dried ultrathin sections, the silicon wafer was fixed with clips onto a SEM sample holder (cat. # 16112–20, Plano GmbH, Wetzlar, Germany).
 
-## HVC size
+### HVC size
 
 HVC volume grows significantly from 20 to 40 dph, after which it reaches 91% of its adult size (Bottjer et al., 1985;Herrmann and Bischof, 1986;Nordeen and Nordeen, 1988). The size of HVC is mainly genetically regulated (Airey and DeVoogd, 2000a) and manipulations of song experience have little influence (Brenowitz et al., 1995; Burek et al., 1991). However, although HVC volume and neuron number remain constant in adults (Wang et al., 2002), both HVC volume and HVC neuron number positively correlate with the number of song syllables copied from a tutor (Airey et al., 2000b; Ward et al., 1998).
 
 To measure HVC size in Experiment II, wet brain sections and Nissl-stained brain sections were imaged under a bright field light microscope (Olympus BX61). Wet brain sections were first mounted onto glass slides and kept moist with PB during imaging. Light microscopy images of HVC were taken at different magnifications (1.25x, 4x, and 10x). To compensate for fluctuations in environmental illumination, microscope parameters were set prior to imaging such that histograms of live images appeared normalized.
 
-In order to measure HVC size defined as the physical volume of HVC, we adopted the procedure described by Airey and colleagues (Airey et al., 2000c). Basically, all images of HVC in a given hemisphere were grouped together and imported as an image stack into a single TrakEM2 project. The images were then aligned using translational and rotational transformations. The HVC outline on each image was hand-drawn and the number n of pixels inside HVC was calculated. With known pixel size p and section thickness d, the size Vsec of HVC in a given brain section was estimated as the product of these three terms: Vsec=npd. The total size VHVC was calculated as the sum over all sections: VHVC=∑sec Vsec and the final HVC size for a given animal was calculated as the average of the right and left HVC sizes,Figure 1—figure supplement 1.
+In order to measure HVC size defined as the physical volume of HVC, we adopted the procedure described by Airey and colleagues (Airey et al., 2000c). Basically, all images of HVC in a given hemisphere were grouped together and imported as an image stack into a single TrakEM2 project. The images were then aligned using translational and rotational transformations. The HVC outline on each image was hand-drawn and the number n of pixels inside HVC was calculated. With known pixel size p and section thickness d, the size $V_{sec}$ of HVC in a given brain section was estimated as the product of these three terms: $V_{sec}=npd$. The total size $V_{HVC}$ was calculated as the sum over all sections: $V_{HVC}=\sumsecV_{sec}$ and the final HVC size for a given animal was calculated as the average of the right and left HVC sizes,Figure 1—figure supplement 1.
 
 To test for tutoring or aging-related changes in HVC size, we modeled HVC sizes using a linear mixed effects (LME) model with bird group as fixed effect and bird identity as random effects (see Section on Linear Mixed Effects Models). We found the following peak-decline trend: at 30 dph, HVC size was smaller than at 60 dph (p = 0.0004, LME model, ISO30 and ISO60); and at 60 dph, HVC size was larger than at 90 dph (p = 0.02, LME model, ISO60 and ISO90). Furthermore, we found that extended tutoring lead to HVC shrinkage at 60 dph (p = 0.03, ISO60 vs LONG60), whereas no effect of tutoring on HVC size was observed at 90 dph (p > 0.05, LME model ISO90 vs TUT90), which agrees with previous reports (Brenowitz et al., 1995; Burek et al., 1991).
 
-## Serial section electron microscopy (ssEM)
+### Serial section electron microscopy (ssEM)
 
 For synapse counting, we performed serial section electron microscopy (ssSEM) on thin tissue volumes of dimensions ~ 80 µm×80 µm×140 nm located near the center of HVC. We performed EM imaging with a high-throughput scanning electron microscope (Merlin, Carl Zeiss Microscopy GmbH, Oberkochen, Germany). The section holder was fixed onto the sample stage and loaded into the microscope chamber. The approximate locations of the serial sections were first determined with 5 kV of extra-high tension (EHT, the voltage applied to the electron gun) and an in-lens detector. The subsequent working distance (the distance between the sample surface and the electron gun) was 3.5 mm. The EHT was then reduced to 1.6 ± 0.1 kV, and the view mode was switched to the energy selective backscattered electron detector (EsB), with the EsB Grid voltage set to 550 V and the detector probe current set to 550 pA. All high-resolution ssSEM datasets were acquired with the EsB detector in the pixel-averaged noise-reducing scanning mode. After fine adjustments of the imaging parameters, the focus and astigmatism correction were optimized. All of these adjustments were set manually with the SmartSEM software (Carl Zeiss Microscopy GmbH). We acquired images with a pixel size of 4 nm and an electron beam dwell time of 7 µs. Image acquisition was performed automatically using the ATLAS 3D software (Fibics Incorporated, Ottawa, Canada).
 
 We identified excitatory and inhibitory synapses in EM imagery based on morphology (Gray, 1969; Klemann and Roubos, 2011). Excitatory (asymmetric) synapses typically display a pronounced post-synaptic density (PSD). In contrast, the PSD in inhibitory (symmetric) synapses looks similar to the presynaptic membrane, showing no obvious differences in membrane specialization. In addition, asymmetric synapses have wider synaptic clefts and are always associated with larger (~40 nm) and rounder synaptic vesicles when compared with symmetric synapses whose synaptic vesicles are smaller (~20 nm) and of irregular oval shape, Figures 1B and 4B.
 
-## Physical section deformation
+### Physical section deformation
 
-In both Experiments I and II, physical disector volumes were carefully calibrated before estimating synapse densities. To quantify tissue deformations that can occur during EM staining, embedding, and ultramicrotomy, we took LM and EM images at diverse tissue preparation stages. Deformations resulting from tissue embedding were estimated by comparing LM images of wet brain sections taken prior to resin embedding with LM images of the same sections after embedding. In such image pairs, we identified landmarks such as blood vessels, ventricles, and sharp sample borders. We then estimated the distances S between three pairs of such identified landmarks using Fiji.
+In both Experiments I and II, physical disector volumes were carefully calibrated before estimating synapse densities. To quantify tissue deformations that can occur during EM staining, embedding, and ultramicrotomy, we took LM and EM images at diverse tissue preparation stages. Deformations resulting from tissue embedding were estimated by comparing LM images of wet brain sections taken prior to resin embedding with LM images of the same sections after embedding. In such image pairs, we identified landmarks such as blood vessels, ventricles, and sharp sample borders. We then estimated the distances $S$ between three pairs of such identified landmarks using Fiji.
 
-We assumed that tissue deformations caused by EM staining and embedding were isotropic. We calculated the relative 3D physical volume deformation Re (shrinkage or dilation) from the ratio of measured 1-D line distances as Re=  Sembedded sectionSwet section3. For each animal, we estimated the relative 3D physical volume deformation Re (shrinkage or dilation) caused by tissue embedding, Figure 1—figure supplement 2. We found that embedding caused a dilation of 2.2 ± 0.2 % in each spatial direction.
+We assumed that tissue deformations caused by EM staining and embedding were isotropic. We calculated the relative 3D physical volume deformation $R_{e}$ (shrinkage or dilation) from the ratio of measured 1-D line distances as $R_{e}=\frac{Sembeddedsection}{Swetsection}^{3}$. For each animal, we estimated the relative 3D physical volume deformation $R_{e}$ (shrinkage or dilation) caused by tissue embedding, Figure 1—figure supplement 2. We found that embedding caused a dilation of 2.2 ± 0.2 % in each spatial direction.
 
-We similarly estimated tissue deformations caused by ultramicrotomy by comparing LM images of trimmed sample block faces with SEM images of ultrathin sections cut from the same sample block, Figure 1—figure supplement 3. Physical cutting was always along the same direction and thus introduced non-isotropic tissue deformations. Therefore, we separately measured the deformations along the three orthogonal axes X, Y, and Z. We defined the X-axis to be perpendicular to the cutting direction and the Y-axis to be parallel to the cutting direction (Figure 1—figure supplement 3, red and blue lines). We calculated the deformation RX along the X axis as the deformation ratio: RX= S(ultrathin section)S(embedded section), the deformation RY along the y axis was computed analogously. In summary, ultramicrotomy caused on average a 1.4 ± 0.3 % tissue dilation along the X-axis and a 17.9 ± 0.3 % shrinkage along the Y-axis (cutting direction).
+We similarly estimated tissue deformations caused by ultramicrotomy by comparing LM images of trimmed sample block faces with SEM images of ultrathin sections cut from the same sample block, Figure 1—figure supplement 3. Physical cutting was always along the same direction and thus introduced non-isotropic tissue deformations. Therefore, we separately measured the deformations along the three orthogonal axes X, Y, and Z. We defined the X-axis to be perpendicular to the cutting direction and the Y-axis to be parallel to the cutting direction (Figure 1—figure supplement 3, red and blue lines). We calculated the deformation $R_{X}$ along the X axis as the deformation ratio: $R_{X}= \frac{S(ultrathin section)}{S(embedded section)},$ the deformation $R_{Y}$ along the y axis was computed analogously. In summary, ultramicrotomy caused on average a 1.4 ± 0.3 % tissue dilation along the X-axis and a 17.9 ± 0.3 % shrinkage along the Y-axis (cutting direction).
 
-Thicknesses of ultrathin sections along the Z-axis were estimated using a cylindrical diameter method adopted from Fiala and Harris (Fiala and Harris, 2001). This method provides an estimation of the average separation of a given set of consecutive 2D images based on precise measurements of the diameters of cylindrical objects such as mitochondria, Figure 1—figure supplement 4. For a mitochondrion i that was longitudinally dissected in the images, we measured the diameter di and counted the number si of sections it spanned. By averaging the resulting ratio disi over all N inspected mitochondria (N≃20 in each bird), we obtained the following estimate t- of mean section thickness: t−= 1N ∑i disi. The average ultrathin section thickness was 1.5 ± 0.7 % thinner than the target thickness (70 nm) set in the ultra-microtome.The deformation RZ along the Z-axis was estimated as RZ=t−70 nm , where 70 nm represents the advancement of the resin block between two consecutive ultrathin section cuts. The deformations RZ of all samples are depicted as green bars in Figure 1—figure supplement 5; as expected, the tissue deformations caused by ultramicrotomy were non-isotropic, Figure 1—figure supplement 5. Along the cutting direction, the ultrathin sections shrunk to roughly 80% of their original size (Y-axis), whereas along the perpendicular X-axis there was essentially no deformation.
+Thicknesses of ultrathin sections along the Z-axis were estimated using a cylindrical diameter method adopted from Fiala and Harris (Fiala and Harris, 2001). This method provides an estimation of the average separation of a given set of consecutive 2D images based on precise measurements of the diameters of cylindrical objects such as mitochondria, Figure 1—figure supplement 4. For a mitochondrion $i$ that was longitudinally dissected in the images, we measured the diameter $d_{i}$ and counted the number $s_{i}$ of sections it spanned. By averaging the resulting ratio $\frac{d_{i}}{s_{i}}$ over all $N$ inspected mitochondria ($N≃$20 in each bird), we obtained the following estimate $t-$ of mean section thickness: $t−= \frac{1}{N} \sumi \frac{d_{i}}{s_{i}}$. The average ultrathin section thickness was 1.5 ± 0.7 % thinner than the target thickness (70 nm) set in the ultra-microtome.The deformation $R_{Z}$ along the Z-axis was estimated as $R_{Z}=\frac{t−}{70 nm },$ where 70 nm represents the advancement of the resin block between two consecutive ultrathin section cuts. The deformations $R_{Z}$ of all samples are depicted as green bars in Figure 1—figure supplement 5; as expected, the tissue deformations caused by ultramicrotomy were non-isotropic, Figure 1—figure supplement 5. Along the cutting direction, the ultrathin sections shrunk to roughly 80% of their original size (Y-axis), whereas along the perpendicular X-axis there was essentially no deformation.
 
-The cumulative tissue deformation Rcum from wet brain sections to embedded ultrathin sections was estimated as Rcum=Re * RX * RY* RZ, Figure 1—figure supplement 6. This number represents the overall change in tissue volume from the wet state to the ultrathin section state.
+The cumulative tissue deformation $R_{cum}$ from wet brain sections to embedded ultrathin sections was estimated as $R_{cum}=R_{e}*R_{X}*R_{Y}*R_{Z}$, Figure 1—figure supplement 6. This number represents the overall change in tissue volume from the wet state to the ultrathin section state.
 
-We calibrated density estimates for each sample with the value of Rcum. The synapse density estimates in Experiments I and II therefore reflected the density in the wet state, which was close to the in-vivo state. On average, physical volumes in ultrathin sections were 16.1 ± 0.7 % smaller than in wet brain sections.
+We calibrated density estimates for each sample with the value of $R_{cum}$. The synapse density estimates in Experiments I and II therefore reflected the density in the wet state, which was close to the in-vivo state. On average, physical volumes in ultrathin sections were 16.1 ± 0.7 % smaller than in wet brain sections.
 
-## Disector counting
+### Disector counting
 
 To estimate synapse densities, we used disector counting in ssSEM section pairs, which is a standard stereology method, Figure 6. Disector methods for synapse counting do not rely on the counting of every synapse in the sample. Disectors provide reliable estimates of object numbers (errors smaller than 6%) when the separating distance between consecutive disectors is no larger than twice the mean size of objects. When the separating distance is larger than three times the mean object size, density errors rapidly increase to 27% (Merchán-Pérez et al., 2009). Density estimates converge to the true density when more than a hundred disectors are inspected (Merchán-Pérez et al., 2009).
 
@@ -173,19 +276,23 @@ In each animal, we calibrated disector physical volumes. In experiment I, we ins
 
 Synapse density estimates from ssSEM imagery could in principle be biased because of missed synapses located between two consecutive sections (e.g. synapses smaller than 70 nm oriented parallel to the imaging plane). However, based on our measured synapse sizes of around 200 nm, we expect that our density estimates are not severely affected by such biases (see Section on Synapse sizes).
 
-## Estimation of percent symmetric synapses
+### Estimation of percent symmetric synapses
 
-To calculate the percentage of symmetric synapses, we computed in each disector i the total number Nis of dissected symmetric synapses and the total number Ni of dissected synapses. The percentage q of symmetric synapses can be estimated by dividing the sums of these two numbers, q =  100   ∑inNis    ∑inNi   , where n is the number of disectors. To estimate the variance of the percentage of symmetric synapses, we used a jackknife resampling procedure. Accordingly, the i th estimate qi of symmetric synapse percentage was defined as:qi =  100   ∑k≠inNis    ∑k≠inNi   .
+To calculate the percentage of symmetric synapses, we computed in each disector $i$ the total number $N_{i}^{s}$ of dissected symmetric synapses and the total number $N_{i}$ of dissected synapses. The percentage $q$ of symmetric synapses can be estimated by dividing the sums of these two numbers, $q=100\frac{\sum_{i}^{n}N_{i}^{s}}{\sum_{i}^{n}N_{i}}$, where $n$ is the number of disectors. To estimate the variance of the percentage of symmetric synapses, we used a jackknife resampling procedure. Accordingly, the $i$ th estimate $q_{i}$ of symmetric synapse percentage was defined as:
 
-The jackknife estimate q¯ of mean percentage and the estimate σq2 of its variance was then calculated as q¯=  1    n   ∑inqi=q and σq2=  n-1  n ∑i=1n( qi-q¯ )2, see (Efron and Stein, 1981; Shao and Wu, 1989 ). The mean and variance of symmetric synapse percentage are shown for each bird in Figure 1E.
+$$
+q_{i} =  100\frac{   \sumk\neqinN_{i}^{s} }{   \sumk\neqinN_{i}   }.
+$$
 
-We assessed statistical differences in the percentage of inhibitory synapses among the diverse bird groups in experiment 1 using two independent procedures. Our first approach was to use the method reported in the Results Section based on dividing the disectors in each animal into four separate groups and using an LME model on the 4 independent estimates of percent inhibitory synapses per animal. Our second approach was to use a basic bootstrapping procedure, in which we simulated n=106 experiments with 4 ISO and 4 SHORT birds with Gaussian-distributed percent symmetric synapses, taking the per-animal statistics reported in Figure 1E. Using this latter bootstrapping procedure, we obtained a p-value of p = 5*10−5, where the p-value represents the fraction of the 106 simulated experiments in which SHORT birds had a lower percentage of inhibitory synapses than ISO birds. Clearly, both approaches yielded the nearly identical statistical result that SHORT birds had a higher percentage of inhibitory synapses than ISO birds.
+The jackknife estimate $q¯$ of mean percentage and the estimate $\sigma_{q}^{2}$ of its variance was then calculated as $q¯=\frac{1}{n}\sum_{i}^{n}q_{i}=q$ and $\sigma_{q}^{2}=\frac{n-1}{n}\sumi=1n(q_{i}-q¯)^{2}$, see (Efron and Stein, 1981; Shao and Wu, 1989 ). The mean and variance of symmetric synapse percentage are shown for each bird in Figure 1E.
 
-## FIBSEM imaging
+We assessed statistical differences in the percentage of inhibitory synapses among the diverse bird groups in experiment 1 using two independent procedures. Our first approach was to use the method reported in the Results Section based on dividing the disectors in each animal into four separate groups and using an LME model on the 4 independent estimates of percent inhibitory synapses per animal. Our second approach was to use a basic bootstrapping procedure, in which we simulated $n=10^{6}$ experiments with 4 ISO and 4 SHORT birds with Gaussian-distributed percent symmetric synapses, taking the per-animal statistics reported in Figure 1E. Using this latter bootstrapping procedure, we obtained a p-value of p = 5*10−5, where the p-value represents the fraction of the $10^{6}$ simulated experiments in which SHORT birds had a lower percentage of inhibitory synapses than ISO birds. Clearly, both approaches yielded the nearly identical statistical result that SHORT birds had a higher percentage of inhibitory synapses than ISO birds.
+
+### FIBSEM imaging
 
 We imaged carbon-coated brain sample blocks with a FIBSEM microscope (Auriga 40, Carl Zeiss Microscopy GmbH). We first set the working distance to at least 10 mm and obtained live images of the block surface under an EHT of 5 kV and using the secondary electron detector. Thereafter, the working distance was reduced to 4.8 mm, and the EHT was reduced to 1.7 ± 0.2 kV. We ensured that the ROI on the sample surface was located precisely at the coincident point of the cross-beam system of the instrument. We switched the imaging modes back and forth between the SEM and FIB views. The Z-axis was moved only in the FIB view, while the beam shift in the X-Y axis was only used in the SEM view. Once the SEM and FIB views were well aligned, we chose a 40 × 40 µm ROI near the center of HVC while avoiding large synapse-free structures, such as blood vessels and cell bodies. We then exposed the cross-sectional surface by milling a coarse trench into the tissue with a 16-nA ion beam. A fine polish was then performed with a 600 pA ion current. We fine-tuned the electron beam and imaged the exposed cross-section using the SmartSEM software and the EsB grid voltage set to 1.3 kV. We applied an angle correction to the acquired images to compensate for the tilting of the sample surface. We set the pixel size to 5 nm and the electron dwell time to 13 µs for all acquired FIBSEM imagery. 10-nm-thick layers were then serially milled away with a 600 pA Ga ion current, and the exposed block surfaces were serially imaged with a 8 × 8 µm square-shaped ROI window defined in the ATLAS 4D software (Fibics Incorporated). The auto-focus and auto-stigmator were used every 90 min to counter the milling-induced focus drift along the Z-axis.
 
-## Synapse segmentation
+### Synapse segmentation
 
 We estimated the sizes of HVC synapses in FIBSEM imagery using the following segmentation procedure. The FIBSEM imagery was first aligned using TrakEM2 (Cardona et al., 2012) and then exported in tiff format. Because of the 2D alignment, the exported images contained margin areas with zero pixel values. We converted the values of these margin pixels to 255 (from black to white) using a custom macro implemented in Fiji. We then exported a subset of 200 consecutive images from each dataset to serve as training set for subsequent synapse segmentation.
 
@@ -203,20 +310,36 @@ We wrote several MATLAB scripts to visualize, process, and analyze the segmentat
 
 The corrected and recolored (blue: symmetric, red: asymmetric, Figure 3b) synapses were then subjected to volumetric and geometric measurements. The size of a synapse was defined as its physical volume containing the pre- and post-synaptic membranes, their associated synaptic densities, and the synaptic cleft. The precise physical size of a single FIBSEM voxel was estimated using the procedure described in the Section on Physical Section Deformation.
 
-## Synapse sizes
+### Synapse sizes
 
 For the synapse size and Feret diameter measurements, on average 320 synapses were fully segmented and pooled in each bird (range 202–406 synapses per bird, n = 12 birds). Synapses were classified into asymmetric and symmetric subtypes and their sizes and diameters were measured. Histograms of logarithmically transformed synapse sizes were fitted with Gaussians, Figure 4—figure supplement 1. To determine how well synapse sizes could be fit with log-normal distributions, we performed goodness-of-fit tests (Merchán-Pérez et al., 2014). In all 12 birds, asymmetric synapses were log-normally distributed (p < 0.002 in every animal, Kolmogorov-Smirnov test). In 6/12 animals, symmetric synapses were log-normally distributed (p < 0.05, Kolmogorov-Smirnov test), whereas in the remaining six there was a trend for log-normal distribution (p < 0.3 in all six cases). Based on these findings, we decided to examine synapse sizes using log-transformed data.
 
-For a given synapse i with measured physical volume Vi, the log-transformed size Wi is given by: Wi=log⁡(Vi). Let μ=1N ∑iNWi be the mean of Wi and σ2 its variance, where N is the total number of segmented synapses. The average synapse size V¯ in a given bird is then given by V¯=eμ. The standard error SE of logarithmic synapse size is given by SE=varN, where var=exp⁡(2μ+σ2)(exp⁡(σ2)−1), see (Mood et al., 1973). Both V¯ and SE are displayed for each animal in Figure 2B, C.
+For a given synapse $i$ with measured physical volume $V_{i}$, the log-transformed size $W_{i}$ is given by: $W_{i}=log⁡(V_{i})$. Let $\mu=\frac{1}{N}\sum_{i}^{N}W_{i}$ be the mean of $W_{i}$ and $\sigma^{2}$ its variance, where $N$ is the total number of segmented synapses. The average synapse size $V¯$ in a given bird is then given by $V¯=e^{\mu}$. The standard error $SE$ of logarithmic synapse size is given by $SE=\frac{\sqrt{var}}{\sqrt{N}}$, where $var=exp⁡(2\mu+\sigma^{2})(exp⁡(\sigma^{2})−1)$, see (Mood et al., 1973). Both $V¯$ and $SE$ are displayed for each animal in Figure 2B, C.
 
 We calculated the Feret diameters of synapses, defined as the diameter of the minimum-bounding sphere for each synapse. To improve the efficiency of this calculation, we implemented a linear time-randomized algorithm (Welzl, 1991). Average Feret diameters of both excitatory and inhibitory HVC synapses types were around 200 nm, which is much larger than the ssSEM-disector distance of 70 nm (we included an intermediate section in between the reference and look-up sections, the latter were separated by 140 nm, Figure 6B). Symmetric synapses had thinner synaptic clefts in the range 20 to 40 nm. Note that flat-shaped synapses parallel to the imaging plane with synaptic cleft size smaller than one third of the disector distance (70 nm / 3 ≈ 23.3 nm) could be missed by our disector counting. Therefore, it is possible that the disector counting systematically missed more symmetric synapses than asymmetric synapses. However, given the observed distribution of synapse sizes, we estimate to have missed at most 2.2 ± 0.7% of symmetric synapses (assuming random synapse orientations).
 
 We obtained similar findings for synapse Feret diameters that were log-normally distributed in each animal for asymmetric synapses (p < 0.002, Kolmogorov-Smirnov test, n = 12 birds) and that were log-normally distributed in 7/12 animals for symmetric synapses (p < 0.05), with a trend for log-normal distribution in the remaining five animals (p < 0.31 in all five cases). Based on these findings, we performed across-group analysis of synapse sizes and synapse Feret diameters using log-transformed data that we fitted with linear mixed effect models.
 
-## Linear mixed-effect models
+### Linear mixed-effect models
 
 We fitted linear mixed-effect (LME) models (Gelman and Hill, 2007) to our synapse data. We interpreted each measurement as a linear mixture of the following terms: a baseline value (usually representative of the ISO group), a fixed effect of tutoring or age, a random individual effect of the bird, and a zero-mean Gaussian observational error of fixed variance. We then evaluated the probability p (p value) that the fixed effect of tutoring or age significantly deviated from zero.
 
-More specifically, for bird min the ISO group, the synapse density yimISO in disector iwas modeled as the sum of the fixed group mean βISO, the random individual-bird effect bmISO, and the observation errorϵiISO:yimISO=βISO+ bmISO+ϵiISO.
+More specifically, for bird $m$in the ISO group, the synapse density $y_{im}^{ISO}$ in disector $i$was modeled as the sum of the fixed group mean $\beta^{ISO}$, the random individual-bird effect $b_{m}^{ISO}$, and the observation error$ϵ_{i}^{ISO}$:
 
-The synapse densities yimSHORT of birds in the SHORT group were modeled asyimSHORT=βISO+βSHORT+ bmSHORT+ϵiSHORT,and the synapse densities yimLONG of birds in the LONG group asyimLONG=βISO+βLONG+ bmLONG+ϵiLONG,where βSHORT is the fixed effect of short-term tutoring on synapse densities and βLONG the fixed effect of long-term tutoring. In the Result Section, we report the fixed effect βSHORT and βLONG and their standard errors as obtained with the function fitlmematrix in Matlab (Mathworks Inc.). Tutoring had a significant effect on SHORT densities when the 95% confidence interval for βSHORT did not contain the solution βSHORT=0 (same for βLONG). Reported p values correspond to the confidence of βSHORT≠0 (same for βLONG). Linear mixed-effect modeling of data from the second experiment was performed analogously.
+$$
+y_{im}^{ISO}=\beta^{ISO}+b_{m}^{ISO}+ϵ_{i}^{ISO}.
+$$
+
+The synapse densities $y_{im}^{SHORT}$ of birds in the SHORT group were modeled as
+
+$$
+y_{im}^{SHORT}=\beta^{ISO}+\beta^{SHORT}+b_{m}^{SHORT}+ϵ_{i}^{SHORT},
+$$
+
+and the synapse densities $y_{im}^{LONG}$ of birds in the LONG group as
+
+$$
+y_{im}^{LONG}=\beta^{ISO}+\beta^{LONG}+b_{m}^{LONG}+ϵ_{i}^{LONG},
+$$
+
+where $\beta^{SHORT}$ is the fixed effect of short-term tutoring on synapse densities and $\beta^{LONG}$ the fixed effect of long-term tutoring. In the Result Section, we report the fixed effect $\beta^{SHORT}$ and $\beta^{LONG}$ and their standard errors as obtained with the function fitlmematrix in Matlab (Mathworks Inc.). Tutoring had a significant effect on SHORT densities when the 95% confidence interval for $\beta^{SHORT}$ did not contain the solution $\beta^{SHORT}=0$ (same for $\beta^{LONG}$). Reported p values correspond to the confidence of $\beta^{SHORT}\neq0$ (same for $\beta^{LONG}$). Linear mixed-effect modeling of data from the second experiment was performed analogously.

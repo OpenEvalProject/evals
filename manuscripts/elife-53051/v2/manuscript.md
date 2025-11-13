@@ -18,7 +18,7 @@
 
 ## Abstract
 
-In speech, listeners extract continuously-varying spectrotemporal cues from the acoustic signal to perceive discrete phonetic categories. Spectral cues are spatially encoded in the amplitude of responses in phonetically-tuned neural populations in auditory cortex. It remains unknown whether similar neurophysiological mechanisms encode temporal cues like voice-onset time (VOT), which distinguishes sounds like / b / and/ p /. We used direct brain recordings in humans to investigate the neural encoding of temporal speech cues with a VOT continuum from / ba / to / pa /. We found that distinct neural populations respond preferentially to VOTs from one phonetic category, and are also sensitive to sub-phonetic VOT differences within a population’s preferred category. In a simple neural network model, simulated populations tuned to detect either temporal gaps or coincidences between spectral cues captured encoding patterns observed in real neural data. These results demonstrate that a spatial/amplitude neural code underlies the cortical representation of both spectral and temporal speech cues.
+In speech, listeners extract continuously-varying spectrotemporal cues from the acoustic signal to perceive discrete phonetic categories. Spectral cues are spatially encoded in the amplitude of responses in phonetically-tuned neural populations in auditory cortex. It remains unknown whether similar neurophysiological mechanisms encode temporal cues like voice-onset time (VOT), which distinguishes sounds like /b/ and/p/. We used direct brain recordings in humans to investigate the neural encoding of temporal speech cues with a VOT continuum from /ba/ to /pa/. We found that distinct neural populations respond preferentially to VOTs from one phonetic category, and are also sensitive to sub-phonetic VOT differences within a population’s preferred category. In a simple neural network model, simulated populations tuned to detect either temporal gaps or coincidences between spectral cues captured encoding patterns observed in real neural data. These results demonstrate that a spatial/amplitude neural code underlies the cortical representation of both spectral and temporal speech cues.
 
 ## Introduction
 
@@ -34,7 +34,27 @@ To address these questions, we recorded neural activity directly from the cortex
 
 Participants listened to and categorized speech sounds from a digitally synthesized continuum of consonant-vowel syllables that differed linearly only in their voice-onset time (VOT) from /ba/ (0 ms VOT) to /pa/ (50 ms VOT). This six-step continuum was constructed by manipulating only the relative timing of the spectral burst and the onset of voicing while holding all other acoustic properties of the stimuli constant (Figure 1A/B; see Materials and methods) (Klatt, 1980). Analysis of participants’ identification behavior confirmed that stimuli with longer VOTs were more often labeled as /pa/ (mixed effects logistic regression: βVOT = 0.19, t = 17.78, p=5.6*10−63; data for example participant in Figure 1C; data for all participants in Figure 1—figure supplement 1). Moreover, and consistent with past work, listeners’ perception of the linear VOT continuum was sharply non-linear, a behavioral hallmark of categorical perception (Liberman et al., 1957; Liberman et al., 1961; Kronrod et al., 2016). A psychophysical category boundary between 20 ms and 30 ms divided the continuum into stimuli most often perceived as voiced (/b/: 0 ms, 10 ms, 20 ms VOTs) or as voiceless (/p/: 30 ms, 40 ms, 50 ms VOTs).
 
-## Temporal cues to voicing category are encoded in spatially distinct neural populations
+![Figure 1.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig1-v2.jpg)
+
+**Figure 1.:** (A) Stimuli varied only in voice-onset time (VOT), the duration between the onset of the burst (top) and the onset of voicing (bottom) (a.u. = arbitrary units). (B) Acoustic waveforms of the first 100 ms of the six synthesized stimuli. (C) Behavior for one example participant (mean ± bootstrap SE). Best-fit psychometric curve (mixed effects logistic regression) yields voicing category boundary between 20–30 ms (50% crossover point). (D) Neural responses in the same representative participant show selectivity for either voiceless or voiced VOTs at different electrodes. Electrode size indicates peak high-gamma (HG; z-scored) amplitude at all speech-responsive temporal lobe sites. Electrode color reflects strength and direction of selectivity (Spearman’s ρ between peak HG amplitude and VOT) at VOT-sensitive sites (p<0.05). (E) Average HG responses (± SE) to voiced (0–20 ms VOTs; red) and voiceless (30–50 ms VOTs; blue) stimuli in two example electrodes from (D), aligned to stimulus onset (e1: voiceless-selective, V-; e2: voiced-selective, V+). Horizontal black bars indicate timepoints with category discriminability (p<0.005). Grey boxes mark average peak window (± SD) across all VOT-sensitive electrodes (n = 49). (F) Population-based classification of voicing category (/p/ vs. /b/) during peak window (150–250 ms after stimulus onset). Chance is 50%. Boxes show interquartile range across all participants; whiskers extend to best- and worst-performing participants; horizontal bars show median performance. Asterisks indicate significantly better-than-chance classification across participants (p<0.05; n.s. = not significant). Circles represent individual participants.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Mean (± SE across participants; n = 4 of 7 participants) percent /pa/ responses for each voice-onset time (VOT) stimulus. Best-fit psychometric curve (mixed effects logistic regression) yields voicing category boundary at 21.0 ms (50% crossover point; see Materials and methods for details). (B) Behavior (mean ± bootstrap SE) for each individual participant (P1, P2, P6, P7). Total trials (n) listed for each participant (see Supplementary file 1). Best-fit psychometric curves and category boundaries were computed using the mixed effects logistic regression across all participants, adjusted by the random intercept fit by the model for each participant. Voicing category boundaries were subject-dependent, with 3 of 4 participants’ occurring between 20–30 ms. P1 is representative participant in Figure 1C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** P1 is representative participant in Figure 1D. Electrode color reflects strength and direction of selectivity (Spearman’s ρ between peak HG amplitude and VOT) at subset of VOT-sensitive sites (p<0.05) for either voiceless VOTs (/p/; blue) or voiced VOTs (/b/; red). Electrode size indicates peak high-gamma (HG; z-scored) amplitude at all speech-responsive temporal lobe sites. Maximum and minimum electrode size and selectivity was calculated per participant for visualization.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Grand average auditory evoked potential (AEP) to all VOT stimuli. Evoked local field potentials (negative up-going) were averaged over all VOT-sensitive STG electrodes for one representative participant (P1) (mean ± SE, computed across electrodes). Three peaks of the AEP were identified for analysis: 75–100 ms (Pα), 100–150 ms (Nα), and 150–250 ms (Pβ) after stimulus onset. (B) Correlation coefficients (Pearson’s r) quantifying association between VOT and latency (top) or amplitude (bottom) of each peak (Pα: left; Nα: middle; Pβ: right) for each VOT-sensitive electrode for which that peak could be reliably identified (see Figure 1—figure supplement 4 and Materials and methods for details of this analysis). Horizontal bars represent bootstrapped estimate of correlation coefficient (mean and 95% CI) for each electrode (blue: voiceless-selective; red: voiced-selective; electrodes sorted by mean correlation value). Black bars around an electrode’s mean indicate that encoding of VOT by the designated parameter (latency or amplitude of a given peak) was significant (95% CI excluded r = 0; grey bars: not significant). Later peaks were reliably identified for fewer electrodes (Pα: n = 32 of 49 electrodes; Nα: n = 19; Pβ: n = 15).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A to D) Average high-gamma responses (± SE) to voiced (0–20 ms VOTs; red) and voiceless (30–50 ms VOTs; blue) stimuli in four representative VOT-sensitive STG electrodes, including two voiceless-selective (A: e1, C: e3) and two voiced-selective (B: e2, D: e4) electrodes, aligned to stimulus onset. Vertical bars indicate relative scaling of high-gamma (z-scored) in each panel. The two leftmost electrodes (e1, e2) correspond to e1 and e2 in main text (e.g., Figure 1E). (E to H) Average local field potentials (± SE) evoked by voiced/voiceless stimuli in the same four electrodes, aligned to stimulus onset. Vertical bars (negative-upgoing) indicate relative scaling of voltage in each panel. The three peaks of the AEP that were identified for analysis are labeled for each electrode (Pα, Nα, Pβ; see Figure 1—figure supplement 3). For a given electrode, peaks were omitted from this analysis if they could not be reliably identified across bootstrapped samples of trials from all six VOT conditions (e.g., Pβ for e4). See Materials and methods for details. (I to L) Average local field potentials evoked by each VOT stimulus (line color) in the same four electrodes, aligned to stimulus onset. (M to P) Mean latency (± bootstrap SE) of each AEP peak for each VOT stimulus for the same four electrodes. Mean bootstrapped correlation (Pearson’s r) between VOT and peak latency shown for each peak/electrode. (Q to T) Mean amplitude (± bootstrap SE) of each AEP peak for each VOT stimulus for the same four electrodes. Mean bootstrapped correlation (Pearson’s r) between VOT and peak amplitude shown for each peak/electrode. Note that negative correlations are visually represented as rising from left to right. Correlation coefficients comprised the source data for summary representations in Figure 1—figure supplement 3.
+
+### Temporal cues to voicing category are encoded in spatially distinct neural populations
 
 To investigate neural activity that differentiates the representation of speech sounds based on a temporal cue like VOT, we recorded high-density electrocorticography in seven participants while they listened to the VOT continuum. We examined high-gamma power (70–150 Hz) (Chang, 2015; Crone et al., 2001; Steinschneider et al., 2008; Ray and Maunsell, 2011), aligned to the acoustic onset of each trial (burst onset), at every speech-responsive electrode on the lateral surface of the temporal lobe of each patient (n = 346 electrodes; see Materials and methods for details of data acquisition, preprocessing, and electrode selection).
 
@@ -46,7 +66,7 @@ These results show that spatially distinct neural populations in auditory cortex
 
 Given this pattern of spatial tuning, we tested whether the voicing category of single trials could be reliably decoded from population neural activity across electrodes. For each participant, we trained a multivariate pattern classifier (linear discriminant analysis with leave-one-out cross validation) to predict trial-by-trial voicing category using high-gamma activity across all speech-responsive electrodes on the temporal lobe during the peak neural response (150–250 ms after stimulus onset; see Materials and methods). We found that, across participants, classification accuracy was significantly better than chance (Wilcoxon signed-rank test: p=0.016; Figure 1F, leftmost box plot), demonstrating that spatially and temporally distributed population neural activity during the peak response contains information that allows for decoding of a temporally-cued phonetic distinction in speech.
 
-## Peak neural response amplitude robustly encodes voicing category
+### Peak neural response amplitude robustly encodes voicing category
 
 Next, we asked which features of the population neural response encode voicing category. Specifically, we evaluated three alternatives for how temporally-cued voicing category is encoded by high-gamma responses in cortex during the peak neural response: (1) the spatial pattern of peak response amplitude across electrodes, (2) the temporal patterns of evoked responses across electrodes during the peak response, or (3) both amplitude and timing of neural activity patterns. We tested these hypotheses by selectively corrupting amplitude and/or temporal neural features that were inputs for the classifier. As with the previous analyses, and following prior work on speech sound encoding (Mesgarani et al., 2014), these analyses (Figure 1F) focused on cortical high-gamma activity during the peak response window (150–250 ms after stimulus onset; but see Figure 3 for analyses of an earlier time window).
 
@@ -60,9 +80,15 @@ The encoding of stop consonant voicing in the amplitude of evoked high-gamma res
 
 To link our results with this existing literature, we conducted a series of exploratory analyses of the neural responses to our stimuli using the raw voltage (LFP) signal. For each VOT-sensitive electrode (defined in the high-gamma analysis), we measured the correlations between VOT and peak latency and between VOT and peak amplitude for three peaks in the auditory evoked potential (AEP) occurring approximately 75–100 ms (Pα), 100–150 ms (Nα), and 150–250 ms (Pβ) after stimulus onset (Figure 1—figure supplement 3; Howard et al., 2000; Nourski et al., 2015). We found that some VOT-sensitive electrodes encoded VOT in the latency of these peaks (e.g., Figure 1—figure supplement 4, panels E/I/M), replicating previous results (Steinschneider et al., 2011). However, among electrodes that encode VOT in peak high-gamma amplitude, there exist many more electrodes that do not encode VOT in these temporal features of the AEP, and many that also encode VOT in the amplitude of these AEP peaks (Figure 1—figure supplements 3 and 4). This further supports the prominent role that amplitude information plays in the neural representation of voicing and VOT, both in high-gamma and in the LFP. Therefore, subsequent analyses focus on the high-gamma amplitude. (For detailed descriptions of these LFP analyses and their results, see Methods and Figure 1—figure supplements 3 and 4).
 
-## Peak response amplitude encodes sub-phonetic VOT information within preferred category
+### Peak response amplitude encodes sub-phonetic VOT information within preferred category
 
 Next, we assessed whether VOT-sensitive neural populations (Figure 2A), which reliably discriminate between phonetic categories (voiced vs. voiceless), also encoded within-category sub-phonetic detail in the peak response amplitude. Specifically, the cortical representation of stimuli from the same voicing category but with different VOTs (e.g., 30, 40, and 50 ms VOTs that all correspond to /p/) could be either categorical (i.e., all elicit the same peak response amplitude) or graded (i.e., peak response amplitude depends on within-category VOT).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig2-v2.jpg)
+
+**Figure 2.:** (A) Spatial distribution of VOT-sensitive electrodes across all participants (on standardized brain). (B) Average (± SE) normalized HG response to each VOT across all voiceless-selective (V-) electrodes, aligned to stimulus onset. Line style denotes category membership of a given VOT (solid: preferred category; dashed: non-preferred category). Grey box marks average peak window (± SD) across all VOT-sensitive electrodes. (C) Average (± SE) normalized response to each VOT across all voiced-selective (V+) electrodes. (D) Average (± SE) peak response to each VOT stimulus for V- electrodes (left) and V+ electrodes (right) (see Materials and methods). (E) A simple neural network model (top) comprised of five leaky integrator nodes was implemented to examine computational mechanisms that could account for the spatial encoding of a temporal cue (VOT). Arrows and circle represent excitatory and inhibitory connections between nodes. See Materials and methods for details on model parameters. Postsynaptic potentials (PSPs) illustrate the internal dynamics of the gap detector (Gap, middle) and coincidence detector (Coinc, bottom) in response to simulated VOT stimuli (line color). Outputs (panels F/G) are triggered by suprathreshold instantaneous PSPs (ΣPSP≥θ, dark lines) but not by subthreshold PSPs (ΣPSP<θ; semitransparent lines). (F) Model outputs (a.u. = arbitrary units) evoked by simulated VOT stimuli for Gap (one cycle = 10 ms). Note that outputs for 0 ms and 10 ms VOTs are overlapping. No error bars shown because model simulations are deterministic. Grey box marks average peak window (across panels F/G); width matches peak window of real neural data (panels B/C). (G) Model outputs for Coinc (H) Peak response to each simulated VOT stimulus for Gap (left) and Coinc (right).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53051/elife-53051-fig2-figsupp1-v2.jpg)
 
 We examined the average responses to each of the six VOTs separately in the voiceless-selective electrodes (V-; Figure 2B) and the voiced-selective electrodes (V+; Figure 2C). We observed clear differences in activity evoked by different VOTs at the peak response (~200 ms after stimulus onset), even within the same voicing category, consistent with sensitivity to sub-phonetic detail (Blumstein et al., 2005; Toscano et al., 2010; Toscano et al., 2018; Frye et al., 2007). However, the discriminability of responses to within-category VOTs depended on the preferred voicing category of a given electrode.
 
@@ -70,11 +96,11 @@ To quantify this observation, at each electrode, we computed the rank-based corr
 
 Together, these analyses revealed two key results: (1) VOT encoding in human STG is not purely categorical, but also (2) the relationship between response amplitude and VOT is not linear across the entire continuum (Figure 2D). These results suggest that, even at the level of STG, the brain maintains information about the specific, sub-phonetic details of individual speech sounds. The asymmetrical pattern of within-category encoding suggests that individual neural populations in human auditory cortex encode information about both the category identity of a speech sound and its more fine-grained acoustic properties, or its category goodness (Kuhl, 1991; Blumstein et al., 2005; Myers, 2007).
 
-## A simple neural network model of VOT encoding in STG
+### A simple neural network model of VOT encoding in STG
 
 Thus far, we have demonstrated that a temporal cue that distinguishes speech sounds is represented by a spatial/amplitude code (Ferster and Spruston, 1995; Shadlen and Newsome, 1994) in human STG. To understand how this could be implemented computationally in the brain, we built an architecturally minimalistic neural network (Figure 2E, top). The network was designed to implement a small set of basic computations, motivated by well-established models of temporal processing (Buonomano and Merzenich, 1995; Gao and Wehr, 2015; Eggermont, 2000; Carr, 1993; Konishi, 2003; Rauschecker, 2014; Rauschecker, 1998). Specifically, our model employs discrete integrator units that detect temporal gaps or coincidences between distinct spectral events by incorporating canonical neurophysiological mechanisms that allow current input to modulate a unit’s sensitivity to subsequent input in highly specific ways.
 
-The entire model is comprised of just five localist units: a burst detector, a voicing detector, a gap detector (Gap), a coincidence detector (Coinc), and an inhibitory unit. Conventional leaky integrator dynamics governed continuously varying activation values of each rectified linear unit within the model (McClelland and Rumelhart, 1981; McClelland et al., 2014), with the activity ait of a given unit i at time t depending on its prior activity ait-1, the weighted sum of its excitatory and inhibitory inputs ∑jwji*ajt-1, and unit-specific activation parameters (e.g., propagation threshold [θ], decay rate). To illustrate intuitively how time-dependent neuronal properties can give rise to spatially-localized temporal cue processing, model parameters and connection weights were set manually (see Methods for details; Figure 2—figure supplement 1; Supplementary file 2). We presented the network with simplified inputs mimicking the spectral and temporal properties of the six VOT stimuli used in the ECoG experiment (Figure 1A; see Materials and methods; Supplementary file 3). Presentation of burst and voicing inputs triggered propagation of activation that spread through the network, and our analyses assessed how the resulting activation dynamics differed depending on VOT.
+The entire model is comprised of just five localist units: a burst detector, a voicing detector, a gap detector (Gap), a coincidence detector (Coinc), and an inhibitory unit. Conventional leaky integrator dynamics governed continuously varying activation values of each rectified linear unit within the model (McClelland and Rumelhart, 1981; McClelland et al., 2014), with the activity $a_{i}t$ of a given unit $i$ at time $t$ depending on its prior activity $a_{i}t-1$, the weighted sum of its excitatory and inhibitory inputs $\sumjw_{ji}*a_{j}t-1$, and unit-specific activation parameters (e.g., propagation threshold [$\theta$], decay rate). To illustrate intuitively how time-dependent neuronal properties can give rise to spatially-localized temporal cue processing, model parameters and connection weights were set manually (see Methods for details; Figure 2—figure supplement 1; Supplementary file 2). We presented the network with simplified inputs mimicking the spectral and temporal properties of the six VOT stimuli used in the ECoG experiment (Figure 1A; see Materials and methods; Supplementary file 3). Presentation of burst and voicing inputs triggered propagation of activation that spread through the network, and our analyses assessed how the resulting activation dynamics differed depending on VOT.
 
 The simulated responses of Gap and Coinc to VOTs of 0–50 ms are shown in Figure 2F/G. We observed striking qualitative similarities between Gap simulated outputs (Figure 2F) and the real neural responses of V- electrodes (Figure 2B), and between Coinc outputs (Figure 2G) and the V+ electrodes (Figure 2C). By design, voicing category is clearly distinguished in both Gap and Coinc, with Gap responding more strongly to longer (voiceless) VOTs (30–50 ms), and Coinc responding more strongly to shorter (voiced) VOTs (0–20 ms). This demonstrates that spatial encoding of temporal cues (gaps vs. coincidences) can arise naturally within a simple, biologically-inspired neural network (Buonomano and Merzenich, 1995; Gao and Wehr, 2015; Eggermont, 2000; Carr, 1993; Konishi, 2003; Rauschecker, 2014; Rauschecker, 1998).
 
@@ -88,7 +114,7 @@ In contrast, coincidence detection (Carr, 1993; Konishi, 2003; Rauschecker, 201
 
 In summary, the neurophysiological dynamics underlying local STG encoding of VOT can be modeled using a simple, biologically-inspired neural network. The computational model captures both the between-category (phonetic) and within-category (sub-phonetic) properties of observed neural representations via well-established physiological mechanisms for gap and coincidence detection (Buonomano and Merzenich, 1995; Gao and Wehr, 2015; Eggermont, 2000; Carr, 1993; Konishi, 2003; Rauschecker, 2014; Rauschecker, 1998).
 
-## Mechanisms that explain local category selectivity also predict early temporal dynamics
+### Mechanisms that explain local category selectivity also predict early temporal dynamics
 
 Thus far, we have focused on the encoding of speech sounds that differ in VOT based on activity patterns around the peak of the evoked response. However, in comparing the real and simulated neural data (Figure 2), we also observed a qualitative resemblance with respect to the onset latencies of evoked responses. Specifically, the timing of the evoked neural responses (relative to burst onset) appeared to depend on stimulus VOT in V+ electrodes and in the coincidence detector (Coinc) unit (Figure 2C/G), but not in V- electrodes or in the gap detector (Gap) unit (Figure 2B/F). This pattern could suggest that early temporal dynamics of the evoked response contribute to the pattern of category selectivity observed at the peak.
 
@@ -146,61 +172,65 @@ In conclusion, the present results show that spatially-discrete neural populatio
 
 ## Materials and methods
 
-## Data and code availability
+### Data and code availability
 
 All data and code associated with this study and necessary for replication of its results are available under a Creative Commons license at the associated Open Science Framework project page (https://osf.io/9y7uh/) (Fox et al., 2020).
 
-## Participants
+### Participants
 
 A total of seven human participants with self-reported normal hearing were implanted with high-density (128 or 256 electrodes; 4 mm pitch) multi-electrode cortical ECoG surface arrays as part of their clinical treatment for epilepsy. Placement of electrode arrays was determined based strictly on clinical criteria. For all patients who participated in this study, coverage included peri-Sylvian regions of the lateral left (n = 3) or right (n = 4) hemisphere, including the superior temporal gyrus (STG). All participants gave their written informed consent before the surgery and affirmed it at the start of each recording session. The study protocol was approved by the University of California San Francisco Committee on Human Research. Data from two additional participants were excluded from analyses because of excessive epileptiform activity (artifacts) during recording sessions.
 
-## Imaging
+### Imaging
 
 Electrode positions (Figure 1D and Figure 1—figure supplement 2) were determined from post-surgical computed tomography (CT) scans and manually co-registered with the patient’s MRI. Details of electrode localization and warping to a standardized brain (MNI; Figure 2A) are described elsewhere (Hamilton et al., 2017).
 
-## Stimuli
+### Stimuli
 
 Stimuli (Figure 1B) were generated with a parallel/cascade Klatt-synthesizer KLSYN88a using a 20 kHz sampling frequency (5 ms frame width in parameter tracks). All stimulus parameters were identical across stimuli, with the exception of the time at which the amplitude of voicing began to increase (in 10 ms steps from 0 ms to 50 ms after burst onset; Figure 1A). The total duration of each stimulus was 300 ms regardless of VOT. The onset noise-burst was 2 ms in duration and had constant spectral properties across all stimuli. The dominant frequency ranges for the vowel were: F0 = 100 Hz; F1 = 736 Hz; F2 = 1221 Hz; F3 = 3241 Hz (consistent with a vocal tract length of 13.5 cm). Formant transitions always began at 30 ms. The vowel’s amplitude began ramping down 250 ms after stimulus onset. The stimuli are made available among this study’s supplementary materials and at the associated Open Science Framework page (Fox et al., 2020).
 
-## Behavioral procedure
+### Behavioral procedure
 
 During ECoG recording, the VOT stimuli were presented monaurally over free-field loudspeakers at a comfortably listening level via a custom MATLAB script (Fox et al., 2020) in a blocked pseudorandom order. Four of seven participants simultaneously performed a behavioral task wherein they indicated on each trial whether they heard ‘ba’ or ‘pa’ using a touchscreen tablet (programmed using a custom MATLAB GUI). In these recording sessions, the onset of the next trial began 500 ms after a response was registered or 5 s after the end of the stimulus (if no response was registered). In sessions where participants chose to listen to the stimuli passively (instead of participating in the behavioral task), the onset of the next trial began approximately 1000 ms after the end of the previous trial. Supplementary file 1 reports number of trials per participant.
 
-## Behavioral analysis
+### Behavioral analysis
 
 For the four participants who participated in the behavioral identification task, individual trials were excluded from behavioral analysis if a participant did not make a response or if the participant’s reaction time was more than three standard deviations from the participant’s mean reaction time.
 
-Behavioral response data were submitted to mixed effects logistic regression with a fixed effect of VOT (coded as a continuous variable) and random intercepts for participants, allowing individual participants to vary in their voicing category boundary. Using the best-fit model estimates, we calculated the overall voicing category boundary across all participants (χ = 21.0ms; Figure 1—figure supplement 1, panel A) and in the each individual participant (after adjusting for random intercept fit for each participant; Figure 1—figure supplement 1, panel B, and Figure 1C) as follows (Feldman et al., 2009), where β0 is the best-fit intercept and βVOT is the best-fit effect of slope:χ=-β0βVOT
+Behavioral response data were submitted to mixed effects logistic regression with a fixed effect of VOT (coded as a continuous variable) and random intercepts for participants, allowing individual participants to vary in their voicing category boundary. Using the best-fit model estimates, we calculated the overall voicing category boundary across all participants ($χ$ = 21.0ms; Figure 1—figure supplement 1, panel A) and in the each individual participant (after adjusting for random intercept fit for each participant; Figure 1—figure supplement 1, panel B, and Figure 1C) as follows (Feldman et al., 2009), where $\beta_{0}$ is the best-fit intercept and $\beta_{VOT}$ is the best-fit effect of slope:
 
-## ECoG signal processing
+$$
+χ=-\frac{\beta_{0}}{\beta_{VOT}}
+$$
 
-## Recording and preprocessing
+### ECoG signal processing
+
+#### Recording and preprocessing
 
 Voltage fluctuations were recorded and amplified with a multichannel amplifier optically connected to a digital signal acquisition system (Tucker-Davis Technologies) sampling at approximately 3051.78 Hz. Line noise was removed via notch filtering (60 Hz and harmonics at 120 and 180 Hz) and the resulting time series for each session was visually inspected to exclude channels with excessive noise. Additionally, time segments with epileptiform activity were excluded. The time series data were then common-average referenced (CAR) to included electrodes either across an electrode’s row in a 16 × 16 channel grid or across the entire grid depending on the technical specifications of the amplifier used for a given participant.
 
-## High-gamma extraction
+#### High-gamma extraction
 
 The analytic amplitude of the high-gamma (HG; 70–150 Hz) frequency band was extracted by averaging across eight logarithmically-spaced bands with the Hilbert transform as described elsewhere (Mesgarani et al., 2014; Sjerps et al., 2019). The HG signal was down-sampled to 400 Hz, providing temporal resolution to observe latency effects on the order of <10 ms (the spacing of the VOTs of among the six experimental stimuli).
 
-## Trial alignment and extraction
+#### Trial alignment and extraction
 
 Trial epochs were defined as 500 ms before to 1000 ms after each stimulus onset. Trials were excluded for all channels if the epoch window contained any time segments that had been marked for exclusion during artifact rejection. The HG signal for each trial was z-scored based on the mean and standard deviation of a baseline window from 500 ms to 200 ms before stimulus onset. A 50 ms moving average boxcar filter was applied to the HG time series for each trial.
 
-## Local field potential extraction
+#### Local field potential extraction
 
 Data for analyses of auditory evoked local field potentials consisted of the same raw voltage fluctuations (local field potential), preprocessed with identical notch filtering, CAR, artifact/channel rejection, and down-sampling (to 400 Hz). Trial epochs (500 ms before to 1000 ms after each stimulus onset) were not z-scored.
 
-## Electrode selection
+### Electrode selection
 
-## Speech-responsive electrodes
+#### Speech-responsive electrodes
 
 An electrode was included in our analyses if (1) it was anatomically located on the lateral temporal lobe (either superior or middle temporal gyrus), and (2) the electrode’s grand mean HG (across all trials and timepoints during a window 100–300 ms after stimulus onset) exceeded one standard deviation of the baseline window’s HG activity. Across all seven participants, 346 electrodes met these criteria (speech-responsive electrodes; Supplementary file 1; Figure 1—figure supplement 2).
 
-## Peak neural response
+#### Peak neural response
 
 The timepoint at which each speech-responsive electrode reached its maximum HG amplitude (averaged across all trials, irrespective of condition) was identified as that electrode’s peak, which was used in the subsequent peak encoding analyses. Because we were focused on auditory-evoked activity in the temporal lobe, the search for an electrode’s peak was constrained between 0 and 500 ms after stimulus onset. Electrode size in Figure 1D and Figure 1—figure supplement 2 corresponds to this peak HG amplitude for each speech-responsive electrode.
 
-## VOT-sensitive electrodes
+#### VOT-sensitive electrodes
 
 To identify electrodes where the peak response depended on stimulus VOT (VOT-sensitive electrodes), we computed the nonparametric correlation coefficient (Spearman’s ρ) across trials between VOT and peak HG amplitude. Because nonparametric (rank-based) correlation analysis measures the monotonicity of the relationship between two variables, it represents an unbiased (‘model-free’) indicator of amplitude-based VOT encoding, whether the underlying monotonic relationship is categorical, linear, or follows some other monotonic function (Bishara and Hittner, 2012). This procedure identified 49 VOT-sensitive electrodes across all seven participants (p<0.05; Figure 2A and Figure 1—figure supplement 2; Supplementary file 1). Electrode color in Figure 1D and Figure 1—figure supplement 2 corresponds to the correlation coefficient at each electrode’s peak (min/max ρ = ±0.35), thresholded such that all speech-responsive electrodes with non-significant (p>0.05) correlation coefficients appear as white.
 
@@ -208,9 +238,9 @@ This set of VOT-sensitive sites was then divided into two sub-populations based 
 
 Across VOT-sensitive electrodes, the mean peak occurred 198.8 ms after stimulus onset (SD = 42.3 ms). The semi-transparent grey boxes in Figures 1E and 2B/C illustrate this peak window (mean peak ± 1 SD).
 
-## Analysis of VOT-sensitive electrodes
+### Analysis of VOT-sensitive electrodes
 
-## Encoding of voicing category
+#### Encoding of voicing category
 
 Electrodes that exhibit a monotonic relationship between VOT and peak HG amplitude should also be likely to exhibit a categorial distinction between shorter (voiced) and longer (voiceless) VOTs. We conducted two analyses that confirmed this expectation. In each analysis, we computed a nonparametric test statistic describing the discriminability of responses to voiced vs. voiceless stimuli at each electrode’s peak (z-statistic of Mann-Whitney rank-sum test) and then tested whether the population of test statistics for each group of electrodes (V- and V+) differed reliably from zero (Wilcoxon signed-rank tests). In the first analysis, voicing category was defined based on the psychophysically determined category boundary (voiced: 0–20 ms VOTs; voiceless: 30–50 ms VOTs), which allowed us to include all VOT-sensitive electrodes (n = 49) in the analysis, including electrodes from participants who did not complete the behavioral task (3/7 participants).
 
@@ -220,23 +250,29 @@ Given the strong correspondence between the categorically defined VOT stimulus r
 
 Significance bars for the two example STG electrodes in one participant (e1 and e2; Figure 1E) we computed to illustrate the temporal dynamics of category selectivity. In these electrodes, we conducted the test of between-category encoding (Mann-Whitney rank-sum test; first analysis) at every timepoint during the trial epoch (in addition to the electrodes’ peaks). Bars plotted for each electrode in Figure 1E begin at the first timepoint after stimulus onset where the significance level reached p<0.005 and ends at the first point thereafter where significance fails to reach that threshold (e1: 140 to 685 ms post onset; e2: 65 to 660 ms post onset).
 
-## Encoding of VOT within voicing categories
+#### Encoding of VOT within voicing categories
 
-Because VOT-sensitive electrodes were identified via nonparametric correlation analysis (Spearman’s ρ) across all VOTs, the monotonic relationship between VOT and peak HG amplitude at these sites could be driven by the observed phonetic (between-category) encoding of voicing without any robust sub-phonetic (within-category) encoding of VOT. To assess sub-phonetic encoding of VOT in the peak response amplitude of VOT-sensitive electrodes, we computed the rank-based correlation (Spearman’s ρ) between VOT and HG amplitude at each electrode’s peak separately for trials in each voicing category (0–20 ms vs. 30–50 ms VOTs). The statistical reliability of within-category encoding was summarized by computing a test-statistic (t) for every correlation coefficient (ρ0-20 and ρ30-50 for each VOT-sensitive electrode) as follows:t=ρn-21-ρ2where n is the number of trials with VOTs in a given voicing category. The resulting set of test statistics (one per voicing category per VOT-sensitive electrode) served as the basis for the following analyses of peak within-category encoding.
+Because VOT-sensitive electrodes were identified via nonparametric correlation analysis (Spearman’s ρ) across all VOTs, the monotonic relationship between VOT and peak HG amplitude at these sites could be driven by the observed phonetic (between-category) encoding of voicing without any robust sub-phonetic (within-category) encoding of VOT. To assess sub-phonetic encoding of VOT in the peak response amplitude of VOT-sensitive electrodes, we computed the rank-based correlation (Spearman’s ρ) between VOT and HG amplitude at each electrode’s peak separately for trials in each voicing category (0–20 ms vs. 30–50 ms VOTs). The statistical reliability of within-category encoding was summarized by computing a test-statistic (t) for every correlation coefficient (ρ0-20 and ρ30-50 for each VOT-sensitive electrode) as follows:
+
+$$
+t=\frac{ρ\sqrt{n-2}}{\sqrt{1-ρ^{2}}}
+$$
+
+where n is the number of trials with VOTs in a given voicing category. The resulting set of test statistics (one per voicing category per VOT-sensitive electrode) served as the basis for the following analyses of peak within-category encoding.
 
 For each group of electrodes (V- and V+), we tested whether the encoding of VOT within each voicing category differed reliably from 0 (Wilcoxon signed-rank tests). We also conducted a Wilcoxon signed-rank test for each electrode group that compared the within-category correlation t-statistics for voiceless and voiced categories.
 
 The above tests addressed the encoding properties of one electrode group at a time (either V- or V+ electrodes). Finally, a pair of Wilcoxon signed-rank tests combined across the full set of VOT-sensitive electrodes (n = 49) to summarize the within-category VOT encoding results within electrodes’ (1) preferred and (2) non-preferred categories. In order to conduct this ‘omnibus’ test, we multiplied the correlation t-statistics for all V+ electrodes (for tests within each category) by −1. This simple transformation had the consequence of ensuring that positive correlation statistics always indicate stronger peak HG responses to VOTs that were closer to the endpoint of an electrode’s preferred category.
 
-## Visualizations of within-category VOT encoding
+#### Visualizations of within-category VOT encoding
 
 To visualize the pattern of within-category encoding of VOT in the peak HG amplitude of V- and V+ electrodes, we computed a normalized measure of the peak response amplitude to each VOT stimulus for each VOT-sensitive electrode. Figure 2B and C show the full time series of the average (± SE) evoked responses of V- and V+ electrodes to all six VOT stimuli. To show encoding patterns across electrodes with different peak amplitudes, each electrode’s activity was normalized by its peak HG (grand mean across all VOTs). Figure 2D shows the amplitude of the average response evoked by a given VOT at a given electrode’s peak relative to the average response evoked by the other VOT stimuli, or peak HG (% of max), averaged across electrodes in each group (V-, left; V+, right) and participants (± SE). For each electrode, the mean HG amplitude evoked by each VOT at the peak was scaled and normalized by subtracting the minimum across all VOTs and dividing by the maximum across all VOTs after scaling.
 
-## Neural response latency
+#### Neural response latency
 
 The normalized HG responses used for Figure 2B/C were also used for the analysis of onset latency effects (Figure 3): HG (normalized) (Figure 2B/C) and HG (% of peak) (Figure 3A) are computationally equivalent. Neural response onset latency for an electrode was defined as the first timepoint at which its average response to a given VOT stimulus exceeded 50% of its peak HG (based on the peak of the grand average response across all VOTs). A bootstrapping with resampling procedure was employed to estimate the onset latencies of responses to different VOTs at each electrode and to assess any possible relationship between onset latency and VOT. During each sampling step in this procedure (1000 bootstrap samples), we computed the average time series of the normalized HG response to each VOT, the onset latency for the response to each VOT, and the nonparametric correlation (Spearman’s ρ) between onset latency and VOT. Wilcoxon signed-rank tests asked whether the population of bootstrapped correlation coefficient estimates for each electrode group reliably differed from zero. A Mann-Whitney rank-sum test compared the VOT-dependency of response onset latency between electrode groups. Color-coded horizontal bars below the neural data in Figure 3A show onset latency estimates (mean ± bootstrap standard error) for responses to each VOT at two example electrodes. All electrodes were included in the analyses, but the bootstrapped correlation coefficient estimates for two V+ electrodes that were outliers (>3 SDs from median) were excluded from the visualized range of the box-plot’s whiskers in Figure 3B.
 
-## Population-based neural classification
+#### Population-based neural classification
 
 For each participant, we trained a set of multivariate pattern classifiers (linear discriminant analysis with leave-one-out cross validation) to predict trial-by-trial voicing category (/b/: 0–20 ms VOTs vs. /p/: 30–50 ms VOTs) using HG activity across all speech-responsive electrodes on the temporal lobe during a time window around the peak neural response. The peak window was defined as beginning 150 ms and ending 250 ms after stimulus onset, selected based on the average and standard deviation of the peaks across all VOT-sensitive electrodes. We created four separate classifiers for each participant that allowed us to evaluate the contribution of amplitude and temporal structure to voicing category encoding (Figure 1F).
 
@@ -248,57 +284,57 @@ Crucially, this procedure will misalign any reliable, category-dependent differe
 
 For each participant, we trained one classifier where neither amplitude nor timing information were corrupted (+Amplitude/+Timing), one where only timing information was corrupted (+Amplitude/-Timing), one where only amplitude information was corrupted (-Amplitude/+Timing), and one where both were corrupted (-Amplitude/-Timing; here, amplitude normalization preceded temporal jittering). With each of these datasets, we then performed dimensionality reduction to minimize overfitting using spatiotemporal principal component analysis on the ECoG data for every electrode and all timepoints within the peak window (retaining PCs accounting for 90% of the variance across trials of all VOTs). Finally, training and testing of the linear discriminant analysis classifiers were conducted iteratively, holding out a single trial, training a classifier to predict voicing category using all other trials, and then predicting the voicing category of the held-out trial. For each participant and for each classifier, accuracy was the proportion of held-out trials that were correctly labeled. Wilcoxon signed-rank tests assessed and compared accuracy levels (across participants) achieved by the different models.
 
-## Computational neural network model
+### Computational neural network model
 
-## Overview of architecture and dynamics
+#### Overview of architecture and dynamics
 
 A simple five-node, localist neural network (Figure 2E) was hand-connected to illustrate how time-dependent properties of neuronal units and their interactions can transform a temporal cue into a spatial code (responses of different amplitudes to different VOTs at distinct model nodes). A gap detector received excitatory input from both a burst detector and voicing detector, as well as input from an inhibitory node that only received excitatory input from the burst detector. This represented an implementation of a slow inhibitory postsynaptic potential (slow IPSP) circuit (Buonomano and Merzenich, 1995; Gao and Wehr, 2015; Douglas and Martin, 1991; McCormick, 1989). A coincidence detector received excitatory input from the burst and voicing detectors.
 
-## Network connectivity
+#### Network connectivity
 
 Weights between units in this sparsely connected, feedforward network were set according to a minimalist approach. All excitatory connections from the burst detector (to the inhibitory node, the gap detector, and the coincidence detector) had identical weights. All excitatory connections from the voicing detector (to the gap detector and the coincidence detector) had identical weights (stronger than from burst detector). Figure 2—figure supplement 1 indicates all nonzero connection weights between the network’s nodes, as illustrated in Figure 2E.
 
-## Leaky-integrator dynamics
+#### Leaky-integrator dynamics
 
-At the start of the model simulations, prior to the onset of any stimulus (t=1), the activation level ait of each node i was set to its resting level (ρi). Simulations ran for 100 cycles, with 1 cycle corresponding to 10ms. On each subsequent cycle (t∈2,100), activation levels of every node in the model were updated iteratively in two steps, as described in the following algorithm:
+At the start of the model simulations, prior to the onset of any stimulus ($t=1$), the activation level $a_{i}t$ of each node $i$ was set to its resting level ($ρ_{i}$). Simulations ran for 100 cycles, with 1 cycle corresponding to 10ms. On each subsequent cycle ($t\in2,100$), activation levels of every node in the model were updated iteratively in two steps, as described in the following algorithm:
 
 All activation parameters for all nodes are listed in Supplementary file 2. Minimum, maximum, and resting activation levels were identical across all units. Decay rates and propagation thresholds were identical across the burst and voicing detectors and the inhibitory node. The integrator units (gap and coincidence detectors) decayed more slowly than the other units, which could only affect other model nodes during one cycle. Activation levels in the coincidence detector had to reach a higher level (propagation threshold) to produce model outputs than in the gap detector, a difference which allowed the gap detector to register the fast suprathreshold response characteristic of slow IPSP circuits and allowed the coincidence detector to register a coincidence only when both burst and voicing were detected simultaneously or at a short lag.
 
-## Model inputs
+#### Model inputs
 
 Two inputs were clamped onto the model in each simulation, representing the onset of the burst and of voicing (Figure 1A). The voicing input was only clamped onto the voicing detector at the onset of voicing. Supplementary file 3 illustrates vectors describing each of the simulated VOT inputs.
 
-## Sensitivity of model dynamics to variations in hand-tuned model parameters
+#### Sensitivity of model dynamics to variations in hand-tuned model parameters
 
-Although most of the parameters of the model are theoretically uninteresting and were set to default levels (see Supplementary file 2), analysis of parameter robustness for the model revealed four primary sensitivities based on the relative values set for certain specific parameters. (1) and (2) below involve the propagation thresholds [θ] of the temporal integrator units (Gap, Coinc), which allow the model to achieve gap and coincidence detection. (3) and (4) below involve the rate of decay of activation [λ] of the temporal integrator units, which dictate where along the VOT continuum the boundary between voicing categories lies.
+Although most of the parameters of the model are theoretically uninteresting and were set to default levels (see Supplementary file 2), analysis of parameter robustness for the model revealed four primary sensitivities based on the relative values set for certain specific parameters. (1) and (2) below involve the propagation thresholds [$\theta$] of the temporal integrator units (Gap, Coinc), which allow the model to achieve gap and coincidence detection. (3) and (4) below involve the rate of decay of activation [$\lambda$] of the temporal integrator units, which dictate where along the VOT continuum the boundary between voicing categories lies.
 
 The primary factor affecting the location of the boundary between voiced (short VOTs) and voiceless (long VOTs) categories is the time-dependent rate of decay of postsynaptic potentials in Gap and Coinc towards the unit’s resting activation level.
 
 It is critical to note that, for all of these cases where the hand-tuned parameter settings are in balance, the balance is required for the model to achieve gap and coincidence detection and/or to determine the position of the VOT boundary between categories. This was all the model was designed to do. No parameters were hand-tuned to achieve the other response properties (e.g., asymmetric within-category encoding, onset latency dynamics).
 
-## Analysis of auditory evoked local field potentials
+### Analysis of auditory evoked local field potentials
 
-## Identification of key LFP peaks
+#### Identification of key LFP peaks
 
 We identified 3 peaks of the grand mean auditory evoked local field potential (AEP), which were consistent with AEP peaks previously described in the literature (Howard et al., 2000; Nourski et al., 2015): Pα (positive deflection approximately 75–100 ms after stimulus onset), Nα (negative deflection approximately 100–150 ms after stimulus onset), and Pβ (positive deflection approximately 150–250 ms after stimulus onset) (see Figure 1—figure supplements 3 and 4).
 
-## Bootstrapping approach
+#### Bootstrapping approach
 
 For each VOT-sensitive electrode (speech-responsive electrodes whose peak high-gamma amplitude was correlated with VOT), a bootstrapping with resampling procedure was used to estimate the latencies and amplitudes of each peak of the AEP elicited by trials from each VOT condition. During each sampling step in this procedure (1000 bootstrap samples), we computed the average time series of the AEP for each VOT (Figure 1—figure supplement 4, panels I-L), the ECoG samples of the time series during each of three time-ranges with the maximum (for positive peaks) or minimum (for the negative peak) mean voltage values for each VOT, and six correlation coefficients (Pearson’s r between VOT and amplitude/latency for each peak; see Figure 1—figure supplement 4, panels M-T).
 
-## Details of peak-finding
+#### Details of peak-finding
 
 Pα was defined as the maximum mean voltage from 0 to 150 ms after stimulus onset, Nα was defined as the minimum mean voltage from 75 to 200 ms after stimulus onset, and Pβ was defined as the maximum mean voltage from 150 to 250 ms after stimulus onset. To aid peak detection and enforce sequential ordering of the peaks, time ranges for the latter two peaks (Nα, Pβ) were further constrained on a per-sample basis by setting the minimum bound of the search time range to be the time of the previous peak (i.e., the earliest possible times for Nα and Pβ were Pα and Nα, respectively). For a given sample, if a peak occurred at either the earliest possible or latest possible time, it was assumed that the peak was either not prominent or did not occur during the defined time range for this electrode/VOT, so that sample was ignored in the analysis for that peak and any subsequent peaks. Because correlation coefficients for each peak were computed over just 6 VOTs in each sample, exclusion of a peak latency/amplitude value for one VOT condition resulted in exclusion of the all conditions for that peak for that sample. Finally, if more than 50% of the bootstrap samples were excluded for a given peak in a given electrode, no samples for that electrode/peak pair were not included in the analysis (see, e.g., Pβ for e4 in Figure 1—figure supplement 4, panels H/P/T).
 
-## Analysis of bootstrapped correlation estimates
+#### Analysis of bootstrapped correlation estimates
 
 For each remaining VOT-sensitive electrode/peak pair, we determined whether or not the latency and/or amplitude of the peak was significantly associated with VOT by evaluating whether the 95% confidence interval (95% CI) across all included bootstrapped estimates of the correlation coefficient excluded 0 (taking the highest density interval of the bootstrapped statistics) (Figure 1—figure supplement 3, panel B). These exploratory analyses did not undergo multiple comparison correction.
 
-## Detailed results of analysis of AEPs
+#### Detailed results of analysis of AEPs
 
 The exploratory analyses of correlations between VOT and the latency and/or amplitude of three peaks of the AEP in all VOT-sensitive electrodes revealed four overall conclusions:
 
-## Supplementary analyses of spatial patterns of VOT effects
+### Supplementary analyses of spatial patterns of VOT effects
 
 Of the 49 VOT-sensitive electrodes, 76% were located posterior to the lateral extent of the transverse temporal sulcus (defined as y ≥ 6 in MNI coordinate space based on projection of the sulcus onto the lateral STG in the left hemisphere). This is the same region that is densely populated with neural populations that are tuned for other phonetic features (e.g., manner of articulation; Mesgarani et al., 2014; Hamilton et al., 2018). Mann-Whitney rank-sum tests showed that there was no significant difference in the localization of voiceless-selective (V-) versus voiced-selective (V+) electrodes along either the anterior-posterior axis (y-dimension in MNI coordinate space; U = 342, z = −1.23, p=0.22) or the dorsal-ventral axis (z-dimension in MNI coordinate space; U = 414, z = 0.29, p=0.77).
 

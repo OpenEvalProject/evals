@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Biomedical Engineering, Washington University in St. Louis St Louis United States
-2. https://ror.org/01yc7t268 Department of Electrical and Systems Engineering, Washington University in St. Louis St Louis United States
+1. Department of Biomedical Engineering, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Department of Electrical and Systems Engineering, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 
@@ -31,13 +31,29 @@ Our results show that odor intensity changes result in subtle variations in the 
 
 ## Results
 
-## Behavioral responses to an odorant vary with repetition and intensity
+### Behavioral responses to an odorant vary with repetition and intensity
 
 We began by examining how behavioral responses change with repetitions of an odorant. We used an innate behavioral assay where the presentation of certain odorants triggered an appetitive palp-opening response (POR) in starved locusts (Figure 1a; Figure 1—figure supplement 1). Typically, these palps are used to grab food such as a blade of grass and can also be triggered when locusts encounter certain food-related odorants. Hence, it has been used as a measure of the appetitiveness of an odorant (Saha et al., 2017; Nizampatnam et al., 2022; Chandak and Raman, 2021). For this study, we regarded the probability of an odor eliciting a POR (p(POR)) as an indicator for stimulus perception. The baseline p(POR), in the absence of any olfactory stimuli, was negligible. Further, presentations of puffs of paraffin oil (control) evoked only weak PORs (Figure 1—figure supplement 2). Note that the p(POR) was computed by averaging the behavioral responses across locusts for each trial or repetition number (Figure 1b–d). Intriguingly, we found that the p(POR) systematically increased with repetitions of the same odorant and stabilized after about five stimulus presentations.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of the innate palp-opening response (POR) experimental paradigm. Opening of the locust’s maxillary palps within 15 s of the odor onset was considered a POR. (b) Schematic of the block odor stimulation protocol. Each block consisted of ten trials, and a 4 s odor pulse was presented in each trial. A 15 min no-stimulation period separated the blocks. (c) Response matrices are shown summarizing individual locust PORs (rows) for blocks of ten trials (columns). White boxes indicate PORs in a specific trial, while black boxes indicate the absence of PORs in that trial. Locusts were sorted such that the least responsive locusts are shown at the top and the most responsive ones are near the bottom. PORs varied between locusts across trials. The left matrix depicts responses of 36 locusts to isoamyl acetate. The right matrix shows the responses of 64 locusts to benzaldehyde. (d) The probability of PORs across locusts (p(POR)) is shown as a function of trial number for two odorants: iaa and bza at high intensities (1% v/v). (e) p(POR)s as a function of trial number is shown for four odorants (oct, hex, iaa, bza) at two different intensities (0.1% v/v – low and 1% v/v – high). The p(POR) of both odorant intensities increased over trials. Further, note that the p(POR) values for high-intensity odor exposures were notably higher than p(PORs) for low-intensity odor presentations. For this analysis, we computed the p(POR) for each locust at low and high concentrations of an odorant. This resulted in 36 paired values for isoamyl acetate, 33 paired values for hexanol, 47 paired values for octanol, and 64 paired values for benzaldehyde. We used a left-tailed t-test to check whether the p(POR) across all ten trials of lower intensity odor exposures was significantly smaller than the p(POR) during higher intensity presentations of the same odorant. (f) Bar plots compare the average P(POR) for the low- and high-intensity presentations of the same odor. Error bars indicate the standard error of the mean. p(POR) values observed at high and low intensities of an odorant were significantly different for all four odorants tested (p<0.05). n=36 locusts for iaa, n=33 locusts for hex, n=47 locusts for oct, and n=64 for bza.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (Left panel) POR responses of each locust (rows) across trials (columns) are shown for both low and high intensity exposures for all four odorants used in the study. For each odorant, locusts are shown such that each row indicates the response of the same locust to low and high-intensity odor presentations. Black boxes indicate no POR responses, and white boxes indicate POR responses in that trial. (Right panel) The probability of palp-opening responses across locusts is shown as a function of trial number. Replotted from Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The probability of palp opening responses (averaged across locusts; 10 trials per locust) between an odorant (hexanol) and the solvent used for diluting odorants (paraffin oil) is shown. Only odorants evoked significant palp-opening responses (p<0.05; one-sided t-test; n=10 locusts). Error bars indicate the standard error of the mean.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The average POR in the first five (left panels) and last five trials (right) is compared between high and low-intensity odor exposures (p≤0.05, one-tailed t-test). The difference in p(POR) was significant for all four odorants during the later trials. Error bars indicate the standard error of the mean.
+
 Previous results have shown that the POR is a function of both stimulus identity and intensity (Saha et al., 2017; Nizampatnam et al., 2022; Chandak and Raman, 2021). Therefore, we presented each locust with randomized blocks of the same odorant at either high (H, 1% v/v) or low (L, 0.1% v/v) intensities (Figure 1e). Our results indicate that the p(PORs) evoked by high and low stimulus intensities of an odorant were significantly different for all four odorants in our panel. (Figure 1f; p≤0.05; one-sided t-test). Notably, the behavioral responses to high and low concentration exposures of the same odorant were not significantly different in the earlier trials (Figure 1—figure supplement 3; p>0.05 for hex, iaa, and oct; one-sided t-test). However, the p(POR) became significantly different during the later trials (p≤0.05 for all four odorants; one-sided t-test; trials 6 through 10). In other words, high and low stimulus intensities were more behaviorally discriminable in the later trials. Hence, these results counterintuitively suggest that behavioral responses to an odorant at two different intensities were different after multiple encounters with the same stimulus.
 
-## Odor-evoked response adaptation leads to complex changes in individual neurons
+### Odor-evoked response adaptation leads to complex changes in individual neurons
 
 How do neural responses change as a function of stimulus repetition? To understand this, we examined the odor-evoked responses of individual projection neurons (PNs) in the locust antennal lobe as different odorants at two different intensities were repeatedly presented (Figure 2a). Odor-evoked responses in individual PNs varied subtly across trials (Figure 2b). In general, most PN responses to the odorant were stronger in the first trial and reduced during later trials of the same stimulus. Notably, the changes in PN responses in two different blocks of trials, where the same odorant was presented, showed repeatable changes in odor-evoked spiking patterns and the overall response strength (Figure 2c).
 
@@ -49,7 +65,7 @@ Next, we examined how individual PNs adapted during stimulus repetitions. Based 
 
 Are trial-to-trial changes in stimulus-evoked neural responses at two different concentrations of the same odorant correlated? If this is the case, then it would be reasonable to expect neurons that adapt more at the higher concentration to also change in a similar fashion at a lower concentration and vice versa. To assess this, we calculated and plotted the change in spike counts for each PN at both high and low concentrations of the same odorant (Figure 2f). Notably, the PNs with the greatest response change during repetitions of the higher-intensity odor exposures were not the ones that adapted heavily when encountering the same stimulus at a lower intensity (R2=0.17 (hex), 0.12 (oct), 0.21 (iaa), 0.08 (bza)). In sum, these results indicate that change due to adaptation in individual neurons is not a simple function of their response strength. Further, how individual neurons adapt is a function of both odor identity and intensity.
 
-## Adaptation and intensity decrements both reduce ensemble neural response strength
+### Adaptation and intensity decrements both reduce ensemble neural response strength
 
 What is the overall change in the spiking response across the neural ensemble? To examine this, we calculated the average spiking response across all PNs recorded and plotted the spike counts as a function of time for each trial (Figure 3a). Expectedly, the overall response strength was stronger in the first trial and reduced when the same stimulus was repeatedly encountered. A similar reduction in overall response strengths was also observed when the odorant intensity was reduced (Figure 3b).
 
@@ -59,7 +75,7 @@ What is the overall change in the spiking response across the neural ensemble? T
 
 Are the response reductions during stimulus repetition comparable to those observed with stimulus intensity decrements? To determine this, we plotted the total spike counts summed across all PNs over the entire stimulus presentation duration and plotted it as a function of the trial number (Figure 3c). We compared the changes over trials with the total spike counts observed during the high (H) and low (L) intensities of the same odorant. Notably, the total PN ensemble spike counts decreased due to both stimulus intensity reduction and repetition of the stimulus. Do these results indicate that adaptation could potentially confound information regarding stimulus intensity?
 
-## Adaptation-invariant encoding of odor intensity
+### Adaptation-invariant encoding of odor intensity
 
 Could the information regarding stimulus intensity be robustly encoded in the population neural responses? As noted earlier, both spiking activities in individual neurons and the volume of spikes at the ensemble level vary across trials. If adaptation alters the overall spiking activity amplitude (i.e., vector length; Figure 4a), while changes in stimulus intensity alter the combination of activated neurons (i.e. vector direction; Figure 4b), then information about odor identity and intensity can be preserved in an adaptation-invariant fashion. To test whether the recorded ensemble of neurons in our datasets encoded information in such an adaptation-invariant fashion, we first visualized the high-dimensional neural activities in each trial using a dimensionality reduction approach (see Methods). We plotted the ensemble responses in each 50ms time bin during the odor presentation time window (4 s) and linked them based on the order of their occurrence to generate trial-by-trial odor response trajectories (Figure 4c and d). Note that each trial generated a single loop response trajectory after dimensionality reduction. Further, neural responses in different trials evoked closed-loop trajectories that systematically reduced in length with increasing repetition but maintained their direction, indicating that the combination of neurons activated was mostly conserved. Different odorants evoked responses that were markedly different in the combination of activated neurons, and therefore, their response trajectories were oriented in different directions. Notably, different concentrations of the same odorant also generated response trajectories that subtly varied in direction. As a direct consequence, even though the overall spiking activities reduced over trials, the odor response trajectories reliably maintained their direction in all the trials. Hence, information about odor identity and intensity was robustly maintained across all trials.
 
@@ -69,9 +85,21 @@ Could the information regarding stimulus intensity be robustly encoded in the po
 
 To quantify these observations, we performed a correlation analysis using high-dimensional PN response vectors. If a similar combination of PNs (high-dimensional activity vectors) were activated in two different trials, then their correlation would be high. Correlations across different trials and concentrations of the same odorant are shown in Figure 5a. Confirming results from the dimensionality reduction analysis (Figure 4), we found odor-evoked responses across different trials of an odorant at a particular intensity were highly correlated (diagonal blocks on each panel). The similarity between odor-evoked responses evoked by different concentrations of the same odorant was considerably less correlated (off-diagonal blocks). A hierarchical clustering analysis revealed that the odor-evoked responses were nicely clustered based on odor identity and then by intensity (Figure 5b). These observations were further corroborated by a classification analysis (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig5-v1.jpg)
+
+**Figure 5.:** (a) Correlations between neural responses observed in different trials are shown. Each pixel/matrix element represents a similarity between mean neural responses in one trial versus those in another trial. Diagonal blocks reveal the correlation between trials when the same odorant at a specific intensity was repeatedly presented. (b) A dendrogram was generated using a correlation distance metric comparing trial-by-trial ensemble spiking activities evoked by two different stimuli at two different intensities (see Methods). Two major response clusters that correspond to stimulus identity and intensity were identified. The number at the leaf node represents the trial number.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Results from classification analysis are shown for the two datasets: hexanol–octanol at different concentrations (dataset 1; 80 PNs), and isoamyl acetate and benzaldehyde (dataset 2; 81 PNs). A one-nearest neighbor approach with correlation distance was used for predicting odor labels. We did a leave-one-trial-out validation. The true odor label is shown along the x-axis, and the predicted odor label is shown along the y-axis. As can be noted, the class labels for every single trial were correctly predicted in both datasets. The result after class labels were shuffled is also shown for comparison. These results strongly support our conclusion that odor intensity information is preserved, and odor concentration can be recognized independent of adaptation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/89330/elife-89330-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Comparison of odor-evoked responses between high and low intensity exposures of all four odorants used in the study. Spiking activities of individual PNs were summed over the entire odor presentation window, sorted based on their response to the high-intensity presentations, and plotted to reveal the combinatorial response. The mean ± S.D. across the 25 trials is shown.
+
 In sum, our results reveal that a combinatorial code could encode information regarding odor identity and intensity in an adaptation-invariant fashion. Since the same information about a stimulus is represented with fewer spikes in the later trials, we conclude that adaptation refines the odor codes by making them more efficient.
 
-## Neural response suppression vs. behavioral output facilitation
+### Neural response suppression vs. behavioral output facilitation
 
 Neural responses evoked by an odorant reduced with repetition (Figure 3). However, as we noted earlier, the behavioral responses increased upon stimulus repetition (Figure 1). This negative correlation is evident when the neural responses (total spiking activities evoked across neurons) were plotted against the behavioral POR response probability during a particular trial (Figure 6). This negative correlation between neural suppression and behavioral enhancement was observed for all odorants and both concentrations examined. It is worth noting that the last trial of the high-intensity exposure evoked neural responses that were comparable in strength to the first trial of the low-intensity exposure of the same stimulus. Yet, the behavioral responses observed during these two trials were markedly different. Hence, our results also indicate that the probability of the POR response is not simply a function of the total number of spikes elicited.
 
@@ -79,7 +107,7 @@ Neural responses evoked by an odorant reduced with repetition (Figure 3). Howeve
 
 **Figure 6.:** (a) The probability of odor-evoked POR (P(POR)) for a given trial is plotted against the total spike counts elicited during the trial or repetition number. Therefore, each point represents a single trial. Symbols with light and dark colors are used for differential trials of high and low-concentration odor exposures. The line represents the regression fit between the behavioral and neural responses (hex (L), R2=0.65; hex (H), R2=0.79). The negative slope of the regression line indicates that while the neural responses diminish over trials, the behavioral responses increase over trials. (b–d) Similar plots as in panel a but for oct (L/H), iaa (L/H), and bza (L/H).
 
-## Neural and behavioral changes due to adaptation are odor-specific
+### Neural and behavioral changes due to adaptation are odor-specific
 
 Finally, we wondered if the neural response reduction and behavioral enhancements were a global, non-specific state change in the olfactory system brought about by the repetition of any odorant, or are the observed neural and behavioral response changes odor-specific. To examine this, we used a ‘catch-trial paradigm’. (Figure 7a) In these sets of experiments, we repeatedly presented an odorant to induce adaptation. After a substantial reduction in the neural response or stabilization of the behavioral response, a deviant or catch stimulus was presented. Persistence of the observed reduction in neural responses and enhancement in behavioral responses when the catch stimulus is introduced would reveal that the adaptation-induced changes are not odor-specific.
 
@@ -113,7 +141,7 @@ Finally, we note that the anticorrelated link between neural suppression and beh
 
 ## Methods
 
-## Odor stimulation
+### Odor stimulation
 
 For delivering odorants, we followed a protocol described in our earlier work. Briefly, odorants were diluted in paraffin oil to either 1% or 0.1% concentration (v/v) and sealed in glass bottles (60 ml) with an air inlet and outlet. A pneumatic picopump (WPI Inc, PV-820) was used to displace a constant volume (0.1 L/min) of the static headspace above the diluted odor-mineral oil mixture into a desiccated carrier air stream (0.75 L/min) directed toward one of the locust’s antennae. A vacuum funnel placed behind the locust preparation continuously removed the delivered odors.
 
@@ -121,36 +149,44 @@ The first set of experiments included multiple blocks, with 25 trials each, when
 
 The second set of experiments involved two blocks of trials. The first block of trials included 30 trials, and the second block consisted of ten trials. In the first 25 trials of block 1, hexanol at 1% v/v was repeatedly presented. In the 26th trial, a puff of either isoamyl acetate 1% v/v or apple 1% v/v (a ‘deviant’ odorant) was presented. In trials 27–30, hexanol at 1% v/v was again presented. This was followed by a 15 min reset window when no stimulus was presented. In the second block of 10 trials (trials 31–40), the deviant stimulus was repeatedly presented. All inter-stimulus intervals (between trials) were 60 s, and all odor presentations were four seconds long.
 
-## Electrophysiology
+### Electrophysiology
 
 Post-fifth instar adult locusts (Schistocerca americana) were reared in a crowded colony with a 12-hr –12-hr light-dark cycle. Both males and females were used for electrophysiological experiments. First, the locusts were immobilized with both antennae intact. Then the primary olfactory region of their brain, the antennal lobes, was exposed, desheathed, and perfused with room-temperature locust saline. Extracellular multiunit recordings of PNs were performed with a 16-channel, 4x4 silicon probe (NeuroNexus) that was superficially inserted in the antennal lobe (AL). Prior to each experiment, all probes were electroplated with gold to achieve impedances in the range of 200–300 kΩ. The recordings were acquired with a custom 16-channel amplifier (Biology Electronics Ship; Caltech, Pasadena, CA). The signals were amplified with a 10 k gain, bandpass filtered (0.3–6 kHz), and sampled at 15 kHz using a LabVIEW data acquisition system. A visual demonstration of this protocol is available online (Saha et al., 2013a).
 
-## PN spike sorting
+### PN spike sorting
 
 To obtain single-unit PN responses, spike sorting was performed offline using the four best recording channels and conservative statistical principles (Pouzat et al., 2002). Spikes belonging to single PNs were identified as described in earlier work (Saha et al., 2013b; Saha et al., 2015). The following criteria were used to identify single units: cluster separation >5 x noise standard deviations, number of cluster spikes within 20ms <6.5% of total spikes, and spike waveform variance <6.5 x noise standard deviations. In total, 161 PNs from 40 locusts were identified. Two datasets were collected. In the first dataset, responses of 80 PNs to hex and iaa were recorded, and in the second dataset, responses of 81 PNs to iaa and bza were monitored.
 
-## Correlation analysis
+### Correlation analysis
 
-The PN spikes were binned in 50ms non-overlapping time bins, and spike counts of different PNs were concatenated to obtain a population spike count vector. Pearson correlation coefficients between two PN ensemble spike count vectors were calculated using Equation 1.(1)C=cov(Xtriali,Xtrialj)σtriali⋅σtrialj\begin{document}$$\displaystyle  C= \frac{cov\left (X^{trial\,i}, X^{trial\, j}\right)}{\sigma ^{trial\, i}\cdot \sigma ^{trial\, j}}$$\end{document}
+The PN spikes were binned in 50ms non-overlapping time bins, and spike counts of different PNs were concatenated to obtain a population spike count vector. Pearson correlation coefficients between two PN ensemble spike count vectors were calculated using Equation 1.
 
-Here, Xtriali\begin{document}$X^{trial\, i}$\end{document} and are time-averaged high-dimensional activity in trials i and j, respectively. σtriali\begin{document}$\sigma ^{trial\, i}$\end{document} and σtrialj\begin{document}$\sigma ^{trial\, j}$\end{document} are the standard deviations of Xtriali\begin{document}$X^{trial\, i}$\end{document} and Xtrialj\begin{document}$X^{trial\, j}$\end{document}, respectively.
+$$
+C=\frac{cov(X^{triali},X^{trialj})}{\sigma^{triali}⋅\sigma^{trialj}}
+$$
+
+Here, $X^{triali}$ and are time-averaged high-dimensional activity in trials i and j, respectively. $\sigma^{triali}$ and $\sigma^{trialj}$ are the standard deviations of $X^{triali}$ and $X^{trialj}$, respectively.
 
 Each pixel/matrix element in the correlation plot shown in Figure 5a indicates the similarity between PN spike count vectors observed in the ith and jth trials.
 
-## Tensor-based data decomposition
+### Tensor-based data decomposition
 
-We first organized neural response data as a three-way array (Neuron ×Time × Trials; the stimulus information was also blended into the trial dimension) and then employed a direct three-way tensor decomposition approach (Bro and PARAFAC, 1997; Bro and Kiers, 2003). Here, the 3-D data cube was approximated using three loading matrices, A, B, and C, with elements aif\begin{document}$a_{if}$\end{document}(neuron dimension), bjf\begin{document}$b_{jf}$\end{document} (time dimension), and ckf\begin{document}$c_{kf}$\end{document} (trial dimension). eijk\begin{document}$e_{ijk}$\end{document} was the residual element (see the equation below). The tri-linear model was found using alternating least squares.(2)xijk=∑f=1Faifbjfckf+eijk\begin{document}$$\displaystyle  x_{ijk}=\sum \limits_{f=1}^{F}a_{if}b_{jf}c_{kf}+e_{ijk}$$\end{document}
+We first organized neural response data as a three-way array (Neuron ×Time × Trials; the stimulus information was also blended into the trial dimension) and then employed a direct three-way tensor decomposition approach (Bro and PARAFAC, 1997; Bro and Kiers, 2003). Here, the 3-D data cube was approximated using three loading matrices, A, B, and C, with elements $a_{if}$(neuron dimension), $b_{jf}$ (time dimension), and $c_{kf}$ (trial dimension). $e_{ijk}$ was the residual element (see the equation below). The tri-linear model was found using alternating least squares.
 
-where i,j,k\begin{document}$i,j,k$\end{document} denote the three different dimensions, and F indicates the total number of factors used for the analysis that was determined by the core consistency diagnostics (Bro and PARAFAC, 1997; Bro and Kiers, 2003). In our case, when F=3\begin{document}$F=3$\end{document}, the core consistency was above 50 %, while it dropped to below 40% when F=4\begin{document}$F=4$\end{document}. Therefore, we used three factors for our data decomposition.
+$$
+x_{ijk}=\sumf=1Fa_{if}b_{jf}c_{kf}+e_{ijk}
+$$
 
-## Trial-to-trial odor trajectory
+where $i,j,k$ denote the three different dimensions, and F indicates the total number of factors used for the analysis that was determined by the core consistency diagnostics (Bro and PARAFAC, 1997; Bro and Kiers, 2003). In our case, when $F=3$, the core consistency was above 50 %, while it dropped to below 40% when $F=4$. Therefore, we used three factors for our data decomposition.
+
+### Trial-to-trial odor trajectory
 
 For this analysis, we first reconstructed the dataset by computing the outer product of the loading matrices that were obtained by the tensor decomposition. The reconstructed 3-D tensor was then unfolded into a concatenated matrix (i.e. along the trial dimension). After unfolding, the ensemble PN responses were arranged as time series data of n dimensions (where n is the number of neurons) and m steps (the number of 50 ms time bins × the number of trials). Note that only the PN activities during the 4-s stimulus presentation window in each trial were used for this analysis. The ensemble PN response vectors (in a given 50 ms time bin) were projected onto the three eigenvectors of the response covariance matrix that accounted for the most variance in the dataset, using principal component analysis. Finally, the low-dimensional points were connected in a temporal order to visualize neural response trajectories to different stimuli on a trial-to-trial basis. All trajectory plots shown in Figure 4 were generated after smoothing with a three-point running average low-pass filter.
 
-## Neural response similarity and dendrogram analysis
+### Neural response similarity and dendrogram analysis
 
-First, we calculated the summed spike counts during the 4 s odor presentation window for each PN. Then, the correlation similarity between two spike count profiles across PNs was calculated using Equation 1. Similarly, in this analysis, xi\begin{document}$x_{i}$\end{document} and xj\begin{document}$x_{j}$\end{document} represent a n×1\begin{document}$n\times 1$\end{document} vector (n=80 for hex-2oct; n=81 for iaa-bza) for trial i and j, respectively. The dendrogram was generated by hierarchical clustering of all stimulus identities, intensities, and individual trials based on the correlation distance. The dendrogram was created in such a way that the furthest pairwise distance between any two samples assigned to an individual cluster was minimized.
+First, we calculated the summed spike counts during the 4 s odor presentation window for each PN. Then, the correlation similarity between two spike count profiles across PNs was calculated using Equation 1. Similarly, in this analysis, $x_{i}$ and $x_{j}$ represent a $n\times1$ vector (n=80 for hex-2oct; n=81 for iaa-bza) for trial i and j, respectively. The dendrogram was generated by hierarchical clustering of all stimulus identities, intensities, and individual trials based on the correlation distance. The dendrogram was created in such a way that the furthest pairwise distance between any two samples assigned to an individual cluster was minimized.
 
-## Behavior experiments
+### Behavior experiments
 
 Experiments were performed on post-fifth instar locusts of either sex that were starved for approximately 24 hr. All behavioral experiments occurred between 10 am and 2 pm. The protocols for the innate behavioral preference experiments and palp tracking used in this study were published in previous studies (Saha et al., 2013b; Chandak and Raman, 2021; Nizampatnam et al., 2018; Saha et al., 2015), where the locusts’ thorax and legs were immobilized in custom casings that permitted the locusts’ head, and most notably, their palps and antennae, to freely gesticulate. The odor delivery setup and stimulus sequences for the single odorants were similar to the ones described for the electrophysiological experiments. Any palp movement that occurred within 15 s of the odor stimulus onset was considered a POR. All data were hand-scored. Refer to Figure 1—video 1 for a representative trial showing the POR response of a locust to hexanol (1% v/v) presentation.

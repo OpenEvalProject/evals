@@ -40,7 +40,7 @@ Common variants include a simple change in the identity of a base—such as an a
 
 The basic idea of Fraxinus is to compare reads from different samples (which could be pathogens or trees) with the relevant reference genome to identify important variants. To make this challenge manageable, we have selected locations within the reference genome that we know (based on a preliminary analysis of the data) are likely to contain genetic variants and included the bases on either side of these locations to make target patterns that contain a total of 21 bases. We have then extracted all the reads that overlap to some extent with each target pattern. To begin with, the game will only contain data on the pathogens, but the game could be played with data from any species, and we plan to include data on the trees within the next few weeks.
 
-In the game the A, C, G and T bases within both the target and read patterns are represented by coloured leaf shapes (see
+In the game the A, C, G and T bases within both the target and read patterns are represented by coloured leaf shapes (see Figure 1). The aim of the game, for the player, is to align the read patterns with the target pattern: the better the alignment between these two patterns, the higher the player’s score. The player can improve the alignment—and, therefore, his or her score—by shifting the whole read pattern, and then hiding individual leaves (to represent a deletion) or introducing a space between two leaves (an insertion). And if there already is a space between two leaves, it can be increased in size or removed.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01294/elife-01294-fig1-v1.jpg)
 

@@ -37,21 +37,53 @@ Here, by investigating the export and licensing of flam, we uncover a requiremen
 
 ## Results
 
-## FG nucleoporins Nup54 and Nup58 function specifically in transposon control
+### FG nucleoporins Nup54 and Nup58 function specifically in transposon control
 
 Various Nups have been ascribed gene regulatory functions, often via chromatin binding (Strambio-De-Castillia et al., 2010), and a subset of NPC subunits has been genetically implicated in transposon control in Drosophila ovaries (Czech et al., 2013; Handler et al., 2013; Muerdter et al., 2013; Figure 1A). To understand whether any of these Nups play a specific role in piRNA-guided TE silencing, we systematically assessed the effect of their depletion on cell viability, TE expression, and Yb-body formation in OSCs (Figure 1A, B). Knockdown of most Nups resulted in pronounced cell death and disassembled Yb-bodies, with little to no effect on TEs (Figure 1B, Figure 1—figure supplement 2A–F, Figure 1—figure supplement 3). Instead, loss of subunits of the Nup62 sub-complex (Nup54-Nup58-Nup62) and their scaffold Nup93-1 (Chug et al., 2015; Stuwe et al., 2015; Ulrich et al., 2014) caused strong TE de-repression (Figure 1B, Figure 1—figure supplement 2A–F). Among these, only the depletion of Nup54 and Nup58 resulted in TE up-regulation without severely affecting cell viability (Figure 1B, Figure 1—figure supplement 2A), potentially hinting to an effect distinct from general nuclear transport. Yb-bodies were also dispersed in siNup54 and siNup58 and residual Yb was visible only at increased laser power, despite an overall minor effect on Yb protein levels (Figure 1B, C, Figure 1—figure supplement 2C–G). Of note, TE de-repression caused by knockdown of nup54 and nup58 was comparable to that observed upon depletion of Nxt1 (Figure 1B, Figure 1—figure supplement 2A), reported to also function in the co-transcriptional gene silencing branch of the piRNA pathway (Batki et al., 2019; Fabry et al., 2019; Murano et al., 2019; Zhao et al., 2019). These data indicate that loss of TE silencing upon depletion of most Nups is likely a result of the general NPC function in gene expression, whereas Nup54 and Nup58 seem to have more specific roles in transposon control.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig1-v2.jpg)
+
+**Figure 1.:** (A) Heatmap summarising literature data for selected Nups and export factors and (B) effects of each knockdown (kd) on cell viability, transposon expression levels with respect to siGFP and Yb-body assembly after 96 hr of siRNA treatment (n = 3; see also Figure 1—figure supplement 2A–E and Figure 1—figure supplement 3). Asterisks denote samples imaged after 48 hr of siRNA treatment because of lethality at later timepoints. (C) Confocal images of Yb and Piwi proteins in ovarian somatic cells (OSCs) upon the indicated kd. Dotted red lines denote nuclear envelope (see also Figure 1—figure supplement 2F). (D–H) MA plots showing mean expression levels (reads per million mapped reads, rpm) against fold-changes of genes and transposable elements (TEs) in RNA-seq from the indicated kd with respect to siGFP control (n = 4). Yellow: genes de-regulated more than fourfold with adjusted p value < 0.05; blue: TEs; blue outlines: genes de-regulated more than fourfold carrying a nearby TE (gypsy, mdg1, 412, or blood) insertion in OSCs; magenta: uni-strand piRNA clusters (20A and flam). (I) Fold-changes in transcript levels upon the indicated kd with respect to siGFP.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of a Drosophila ovariole, the functional unit of the fly ovary. The follicle cells enclosing egg chambers are highlighted in magenta and cells of the germline are shown in grey. (B) Coverage plots of PIWI-interacting RNAs (piRNAs) and RNA-seq reads uniquely mapped to the uni-strand cluster flam in the indicated genotypes. Dashed lines indicate the location of the P-element insertion in the two flam mutant alleles. The mappability for an average 50 bp read length is shown at the bottom. (C) MA plots showing mean expression levels (rpm) against fold-changes with respect to control (flamBG/+) of genes and TEs in RNA-seq from the indicated genotypes (n = 3). Yellow: genes de-regulated more than fourfold with adjusted p value < 0.05. blue: transposable elements (TEs); magenta: uni-strand piRNA clusters (20A and flam). (D) Volcano plots showing fold-changes and corresponding significance of genes and TEs in RNA-seq from the indicated genotypes. Red: germline TEs; yellow: TEs active in somatic and germline tissue; green: somatic TEs. (E) Confocal images of Yb protein in follicle cells of control and indicated mutant flies. (F) Violin plots showing area of Yb-bodies in follicle cells of indicated genotypes. (G) Western blot showing Piwi and Yb levels in indicated genotypes; asterisk denotes an unspecific band from the anti-Yb antibody. (H) Confocal images of Yb and Piwi proteins in ovarian somatic cells (OSCs) upon the indicated knockdown (maximum intensity projections). Dotted red lines denote the nuclear envelope.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fold-changes in steady-state RNA levels of the indicated transposons or protein-coding mRNAs in OSCs upon the indicated knockdowns (kd) for 96 or 48 hrs. Values are relative to siGFP control kd and normalised to rp49. Error bars indicate standard deviation (n = 3). p values relative to the siGFP control are indicated above (unpaired t-test). (B) Fold-changes in steady-state RNA levels in OSCs upon the indicated kd for 96 or 48 hrs. Each bar indicates the kd target transcript expression level upon treatment with the respective siRNA. Values are relative to siGFP control and normalised to rp49. Error bars indicate standard deviation (n = 3). p values relative to the siGFP control are indicated above (unpaired t-test). (C) Confocal images of Yb and Piwi proteins and polyA-tail containing transcripts (oligo-dT) in OSCs upon the indicated kd. All kd are analysed after 96 hr unless indicated otherwise. See extended panel in Figure 1—figure supplement 3. (D, E) Violin plots showing area of Yb-bodies in OSCs upon the indicated kd, analysed after 96 (D) or 48 hr (E). ncells = total number of cells analysed. (F) Violin plots showing the area (in µm2) of Yb-bodies in OSCs upon the indicated kd, analysed after 96 hr. ncells = total number of cells analysed. ndots = number of Yb-bodies counted. (G) Quantification of western blots probing Piwi and Yb levels in the indicated kd (n = 4). p values with respect to siGFP control are indicated above (unpaired t-test). A representative western blot is shown on the right.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Confocal images of Yb and Piwi proteins and polyA-tail containing transcripts (oligo-dT) in OSCs upon the indicated knockdown. All knockdowns are 96 hr unless indicated otherwise.
 
 To test this hypothesis, we carried out RNA-seq from OSCs depleted of the Nup62 complex subunits (Nup62-Nup54-Nup58), the scaffold protein Nup93-1 or the piRNA biogenesis factor Yb (Olivieri et al., 2010; Saito et al., 2010; Szakmary et al., 2009). Cells depleted of Nup54 or Nup58 showed a strong increase in the expression of gypsy-family TEs, which are known to be expressed in the somatic compartment of the ovary and regulated by flam (Figure 1D–F, Figure 1—figure supplement 1C–D; Lécher et al., 1997; Pélisson et al., 1994; Prud'homme et al., 1995). Both the spectrum of TEs affected and the magnitude of de-repression were very similar to those observed in yb knockdowns. In contrast, we observed only a moderate impact on protein-coding genes, with 130 genes de-regulated in siYb (more than fourfold and adjusted p value < 0.05), 42 in siNup54, and 42 in siNup58 (Figure 1D–F, Figure 2—figure supplement 1A). A substantial fraction of those genes up-regulated by more than fourfold is found nearby transposon insertions that become de-silenced when the piRNA pathway is compromised (49/126 or 39% in siYb, 16/39 or 41% in siNup54, 13/40 or 33% in siNup58) (Figure 1D–F). One such example is the expanded (ex) gene on chromosome 2L (Figure 1D–F). This strongly suggests that most of the gene expression changes observed upon these knockdowns are in fact a consequence of TE re-activation.
 
 Although knockdown of nup62 and nup93-1 also caused de-repression of some flam-regulated TEs, we found much more pronounced mis-expression of protein-coding genes, with 207 genes de-regulated in siNup62 and 417 in siNup93-1 (more than fourfold and adjusted p value < 0.05) (Figure 1G, H), which could not be explained by proximity to nearby TE insertions. Furthermore, this was accompanied by de-repression of TEs that are not normally subject to piRNA-mediated silencing in somatic cells, for example, R2-element (Figure 1G, H). Of note, siNup62 and siNup93-1 resulted in expression changes of other Nups, RNA export factors, and Yb, presumably via indirect effects on nuclear transport and/or gene expression (Figure 1I). Considered together, our results indicate that, in somatic follicle cells, Nup54 and Nup58 play specialised roles dedicated to transposon silencing, distinct from Nup62 and Nup93-1. This functional specialisation of the two proteins, especially from their closest binding partners in the NPC, is highly surprising, particularly considering that Nup54 and Nup58 are integral components of an essential and ubiquitous protein complex and so presumed to have general functions across the animal.
 
-## Nup54 and Nup58 disruption specifically affects flam transcript stability
+### Nup54 and Nup58 disruption specifically affects flam transcript stability
 
 Nup54 and Nup58 belong to the highly conserved class of ‘FG-Nups’ (Beck and Hurt, 2017; Figure 2A) and constitute the heterotrimeric Nup62 complex (Nup54-Nup58-Nup62) (Chug et al., 2015; Stuwe et al., 2015; Ulrich et al., 2014) that lines the inner channel of the NPC (Beck and Hurt, 2017; Grandi et al., 1995; Kim et al., 2018). The phenylalanine-glycine (FG) repeats of the Nup62 complex subunits contribute to the selective permeability barrier of the NPC and interact with nuclear transport receptors, such as Nxf1 (Köhler and Hurt, 2007). Our RNA-seq showed a reduction in steady-state levels of flam transcript upon nup54, nup58, nup62, nup93-1, and yb knockdowns in OSCs (Figure 1D-H, Figure 2B, Figure 2—figure supplement 1B). This was both specific to flam as other somatic piRNA source loci (e.g. the protein-coding gene tj or the piRNA cluster 20A) were unaffected (Figure 2—figure supplement 1C, D), and unexpected since prior studies had shown accumulation of flam transcripts in cases where its conversion into piRNAs was disrupted, for example, by knockdown of the ribonuclease zuc (Murota et al., 2014). To probe the underlying mechanism, we first asked whether the impact was uniform throughout the locus. To address this question, we divided the flam genomic region into non-overlapping 1 kb bins and extracted those reads that could be mapped with high confidence (see Materials and methods). Plotting fold-changes in these 1 kb bins following zuc knockdown, which prevents flam processing into piRNAs, showed an increased precursor abundance that was uniform across the entire locus (Figure 2B, C). In contrast, depletion of Yb, Nup54, and Nup58 revealed a reduction that was more pronounced towards the 3′ end of flam (Figure 2B, C). In nup62 and nup93-1 knockdowns, reduced RNA levels were uniform, again highlighting a different role for these Nups (Figure 2B, C). As expected, we observed uniformly reduced RNA levels in flamBG/KG trans-heterozygous mutants that impair transcription of the entire locus (Figure 2B, Figure 2—figure supplement 1E; Brennecke et al., 2007; Goriaux et al., 2014; Malone et al., 2009). All these analyses showed similar patterns using 100 kb sliding windows (Figure 2—figure supplement 1F), thus our results were consistent regardless of the window size.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon showing the Nuclear Pore Complex (NPC) structure with nuclear and cytosolic factors involved in flam export; inset shows the domain structure of the Nup62 complex subunits and of Nup93-1. Green boxes: FG-repeats; purple box: Nup54-family domain; grey box: Nic96-family domain. (B) Box plots showing changes in flam RNA levels in the indicated knockdowns (kd) or genotypes. Each datapoint corresponds to a 1 kb bin. Fold-changes were calculated for each bin with respect to the siGFP control. (C) Heatmaps showing changes in flam RNA levels in the indicated kd. Each datapoint corresponds to a 1 kb bin, ordered from 5′ to 3′. Fold-changes were calculated for each bin with respect to the relative siGFP control. (D, E) Coverage plots of piRNAs and RNA-seq reads uniquely mapped to the flam locus or to the protein-coding gene tj upon the indicated kd. The mappability for 25 bp reads is shown at the bottom. (F, G) Scatter plots showing expression levels of PIWI-interacting RNAs (piRNAs) upon the indicated kd. (H) Heatmaps showing changes in flam-derived piRNA levels upon the indicated kd. Each datapoint corresponds to a 1 kb bin, ordered from 5′ to 3′. Fold-changes were calculated for each bin with respect to the siGFP control. (I) Quantification of nuclear and cytoplasmic flam RNA-FISH foci is shown. Nnuc = total number of nuclei analysed; ndots = total number of flam foci counted. (L) Confocal images of flam RNA and polyA-tail containing transcripts (oligo-dT) in ovarian somatic cells (OSCs) upon the indicated kd (full panel in Figure 2—figure supplement 3A). Arrowheads indicate cytosolic flam foci. Dotted line denotes the nuclear envelope based on anti-lamin staining. (M) Confocal images of polyA-tailed transcripts (oligo-dT) in OSCs upon the indicated kd (full panel in Figure 1—figure supplement 2C and Figure 1—figure supplement 3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Volcano plots showing fold-changes and corresponding significance of genes and transposable elements (TEs) in RNA-seq from the indicated kd. Red: germline TEs; yellow: TEs active in somatic and germline tissue; green: somatic TEs. (B–D) Coverage plots of PIWI-interacting RNAs (piRNAs) and RNA-seq reads uniquely mapped upon the indicated kd. The mappability for 50 bp reads is shown at the bottom. (E) Heatmap showing changes in flam RNA levels in indicated genotypes. Each datapoint corresponds to a 1 kb bin, ordered from 5′ to 3′. Fold-changes were calculated for each bin with respect to the flamBG/+ control. The blue arrow indicates the P-element insertion in the flamKG allele, which disrupts flam transcription. (F) Changes in flam RNA levels in the indicated kd (100 kb sliding windows, ordered from 5′ to 3′, n = 396 windows). Dotted lines represent linear regression fits between log2 FC and transcript coordinates with Pearson’s r and significance (p) shown. (G) Coverage plots of piRNAs, RNA-seq, and PRO-seq reads (in rpm) uniquely mapped upon the indicated kd. The mappability for 50 bp reads is shown at the bottom. (H, I) Box plots showing changes in PRO-seq signal upon the indicated kd (n = 2). Each datapoint for flam and 20A corresponds to a 1 kb bin. Fold-changes were calculated for each bin with respect to the siGFP control.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Bar plots showing small RNA size profiles of transposable element (TE)-mapped reads upon the indicated knockdowns (kd). Counts are normalised to 1 million mapped miRNAs. Red: antisense; blue: sense. (B) Bar plots showing the genomic source of the sense and antisense TE-mapped small RNAs shown in (A) upon the indicated kd. Counts are normalised to 1 million mapped miRNAs. (C) Coverage plot showing piRNA levels over the uni-strand cluster 20A. (D) Scatter plot showing expression levels of piRNAs upon the indicated kd. (E) Box plots showing changes in flam piRNA and siRNA levels upon the indicated kd (1 kb bins).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Confocal images of flam RNA and polyadenylated mRNAs (oligo-dT) upon the indicated knockdown (kd). Arrowheads indicate cytosolic flam foci. (B) Schematic of the probes used for flam DNA-FISH. (C, D) Confocal images of flam DNA and Yb protein signal in ovarian somatic cells (OSCs) (C) and ovaries (D).
+
 Next, to determine whether the observed reduction stems from decreased transcription initiation, we examined nascent RNA at the flam locus via PRO-seq. PRO-seq in control cells (siGFP) revealed one major transcription initiation peak, as expected (Brennecke et al., 2007; Goriaux et al., 2014), and detected a second, previously unidentified, minor peak ~1 kb further downstream (Figure 2—figure supplement 1G). Knockdown of nup54, nup58, or yb had little to no effect on either signal around the transcription initiation site or within the first 10 kb and 40 kb of flam, whereas a more pronounced decrease in siYb cells was observed upon inspection of the entire locus (Figure 2—figure supplement 1G, H). In contrast, global PRO-seq signal from protein-coding genes and cluster 20A was unchanged (Figure 2—figure supplement 1I). Overall, these observations are consistent with a hypothesis that loss of Nup54 or Nup58 reduces the stability of flam transcripts, with larger effects on regions distal from the transcription initiation sites.
 
-## Nup54 and Nup58 are specifically required for flam export and processing into piRNAs
+### Nup54 and Nup58 are specifically required for flam export and processing into piRNAs
 
 To analyse the effects of Nup54 and Nup58 depletion on piRNA populations, we sequenced small RNAs from OSC knockdowns. As previously reported (Hirakata et al., 2019), depletion of Yb caused a collapse in the antisense, TE-targeting piRNA population, but leaving 21-nt siRNAs unaffected (Figure 2—figure supplement 2A, B). Knockdown of nup54 and nup58 resulted in a approximately threefold decrease in antisense piRNAs, but this impact was highly specific to those derived from flam (Figure 2D, Figure 2—figure supplement 2A, B). In contrast, piRNAs derived from tj and cluster 20A were unaffected or slightly more abundant (Figure 2E, Figure 2—figure supplement 2C). Whilst siYb had a general impact on piRNA production, in line with its role as key biogenesis factor (Hirakata et al., 2019; Ishizu et al., 2015; Ishizu et al., 2019; Murota et al., 2014; Olivieri et al., 2010; Saito et al., 2010), siNup54 and siNup58 only showed a reduction of flam-derived piRNAs (Figure 2F, G, Figure 2—figure supplement 2D). Binning analysis of the flam locus showed that piRNAs were lost homogenously along the entire cluster in siYb (Figure 2H, Figure 2—figure supplement 2E), unlike the precursor transcript levels measured by RNA-seq, indicating that no processing can occur in the absence of Yb. In contrast, piRNA loss upon nup54 and nup58 knockdown was more pronounced towards the 3′ region (Figure 2H, Figure 2—figure supplement 2E), mirroring the precursor transcript reduction observed by RNA-seq. These data are in agreement with a defect in precursor specification upon siYb and suggest that Nup54 and Nup58 play a role in flam piRNA biogenesis that is distinct from that of Yb.
 
@@ -59,19 +91,39 @@ RNA-FISH for flam in OSCs typically shows discrete foci on the nuclear rim and i
 
 Considered together, these results indicate that transposon silencing defects resulting from loss of Nup54 or Nup58 arise from their role in facilitating flam export from the nucleus. In OSCs and follicle cells of the ovary, this activity dominates any general function in NPC biology since cells are viable and distributions of bulk mRNAs are largely unaffected upon their depletion. Given that the effect is most prominent on the 3′ end of the transcript, we hypothesise that Nup54 and Nup58 might be required to ensure processivity of nuclear export of this, otherwise unstable, long transcript. In this scenario, residual flam molecules (likely corresponding to the 5′ portion of the cluster) that reach the cytosol upon siNup54 and siNup58 might still be processed by Yb, although with lower efficiency than within properly formed Yb-bodies. This role of Nup54 and Nup58 could also, directly or indirectly, affect transcriptional elongation and termination of the piRNA cluster; however, further work will be required to test this hypothesis.
 
-## Characterisation of Nup54 and Nup58 domains required for TE silencing
+### Characterisation of Nup54 and Nup58 domains required for TE silencing
 
 The FG-repeats of Nup54 and Nup58 protrude into the inner channel to form the NPC permeability barrier and interact with nuclear transport receptors, such as Nxf1, making these regions obvious candidates for regulating flam export. We therefore designed deletion mutants targeting Nup54 and Nup58 domains and assayed their ability to interact with other Nups and to rescue TE de-repression in OSCs (Figure 3A). These constructs lack either the amino-terminal region, which in both Nups carries the FG-repeats, or the carboxy-terminal part, which mediates the interaction of these proteins with each other and with the rest of the pore (Figure 3A, B; Chug et al., 2015; Stuwe et al., 2015). We depleted Nup54 or Nup58 individually in OSCs and then re-introduced either an siRNA-resistant full-length (FL) or deletion construct of Nup54/Nup58, or a negative control (mCherry), and assayed their ability to restore transposon repression. As expected, FL Nup54 and Nup58 rescued mdg1 up-regulation to levels comparable to siGFP (Figure 3C). Likewise, deleting the FG-repeats in Nup54 and Nup58 (∆FG) had little effect on their TE silencing capability compared to FL Nups. In contrast, Nup54 and Nup58 lacking the C-terminal domain (∆C) failed to rescue transposon de-repression (Figure 3C, Figure 3—figure supplement 1A). These results suggest that the ability to interact with the other Nups is required to ensure TE silencing, and thus that Nup54 and Nup58 carry out this function from within the NPC.
 
-With very few exceptions, Nup null mutants are generally not viable in Drosophila. One such exception, the nup54MB003363 (nup54MB) allele, produces a truncated protein lacking the carboxy-terminal region due to a Mi{ET1} transposon insertion (Nallasivan et al., 2020). This shortened Nup54 protein lacks the Nup54-family domain (Figure 3A, D, Figure 3—figure supplement 1B) and fails to co-precipitate with Nup58 (Figure 3E), as expected from earlier reports (Chug et al., 2015). Thus, it resembles the carboxy-terminal truncation (Nup54∆C) that is unable to sustain transposon repression in OSCs (Figure 3A–C). We sought to determine if this hypomorphic allele phenocopies the molecular phenotype of the nup54 knockdown in OSCs. Trans-heterozygous flies (nup54MB/9B4) carrying the nup54MB allele over the nup549B4 deficiency spanning the entire nup54 locus (Nallasivan et al., 2020) were viable, although at reduced Mendelian ratios, and had smaller, but not rudimentary, ovaries (Figure 3—figure supplement 1C). To minimise differences in TE content between fly strains, we crossed the nup54MB allele to w1118 flies and compared nup54MB/9B4 trans-heterozygote mutants to nup54MB/w1118 heterozygotes and to w1118 controls. RNA-seq from ovaries of trans-heterozygous nup54MB/9B4 flies showed TE de-repression and reduced flam RNA levels (Figure 3F, G, Figure 3—figure supplement 1D). Expression levels of major dual-strand piRNA clusters (42AB, 38C, and 80F), which rely on different, specialised transcription and export pathways, were unchanged, if not slightly higher, in the case of 80F (Figure 3F). Of note, the increased expression of flam-regulated transposons (e.g. gypsy) was already evident in nupMB/w1118 heterozygous flies (Figure 3G, Figure 3—figure supplement 1D). In this in vivo setting, we observed a broader impact on the expression of protein-coding genes than for knockdowns in cell culture (Figure 3—figure supplement 1D, E), likely reflecting a more general function of Nup54 in the germline tissue of the ovary. In this regard, also germline TEs were up-regulated in nup54 mutants (Figure 3G, Figure 3—figure supplement 1D), confirming an earlier genetic link to TE silencing in germ cells (Czech et al., 2013). Close inspection of the levels of flam RNAs using the previously described binning strategy showed that the down-regulation was more prominent towards promoter-distal regions of the cluster (Figure 3—figure supplement 1F), thus recapitulating our results from knockdowns in OSCs. Lastly, Yb-bodies were reduced in nup54MB/9B4 trans-heterozygous flies (Figure 3H, Figure 3—figure supplement 2). The yb transcript is mildly up-regulated in nup54MB/9B4 (Figure 3—figure supplement 1E), thus loss of Yb-bodies likely arises as a result of compromised flam export.
+![Figure 3.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of the Nup54 and Nup58 domain structure and the deletion constructs used in rescue experiments and co-immunoprecipitation assays. Green box: phenylalanine-glycine (FG)-repeats; purple box: Nup54-family domain. (B) Western blots of FLAG-tag co-immunoprecipitates from lysates of S2 cells transfected with the indicated constructs. IN: input; UB: unbound; IP: immunoprecipitate. (C) Fold-changes in steady-state RNA levels of the mdg1 transposon in ovarian somatic cells (OSCs) nucleofected with the indicated siRNAs and rescue constructs. Values are relative to siGFP and normalised to rp49. Error bars indicate standard deviation (n = 4). p values indicated next to each bar were calculated with respect to the relative mCherry control (unpaired t-test). (D) Schematic of the nup54MB allele. The dashed box indicates the portion that is absent in the mutant (purple box: Nup54 family domain). (E) Western blots of FLAG-tag co-immunoprecipitates from lysates of S2 cells transfected with the indicated constructs. (F) Box plots showing changes in piRNA cluster transcript levels in the indicated genotypes. Each datapoint corresponds to a 1 kb bin. (G) Steady-state levels of transposable element (TE) transcripts in the indicated genotypes. (H) Confocal images of Yb protein in follicle cells of the indicated genotypes (full panel in Figure 3—figure supplement 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fold-changes in steady-state RNA levels of the gypsy transposon or act5c gene in ovarian somatic cells (OSCs) nucleofected with the indicated siRNAs and rescue constructs. Values are relative to siGFP control knockdown and normalised to rp49. Error bars indicate standard deviation (n = 4). p values indicated next to each bar were calculated with respect to the relative mCherry control (unpaired t-test). (B) Coverage plots of RNA-seq reads over the nup54 locus. (C) Brightfield images showing ovary size and morphology in the indicated genotypes. (D) MA plots showing mean expression levels (rpm) and fold-changes with respect to control (w1118) of genes and transposable elements (TEs) in RNA-seq from the indicated genotypes (n = 3). Yellow: genes de-regulated more than fourfold with adjusted p value < 0.05; blue: TEs; magenta: uni-strand PIWI-interacting RNA (piRNA) clusters (20A and flam). (E) Heatmaps showing fold-changes in the RNA expression levels of various nucleoporins (Nups) and export factors in the indicated genotypes. (F) Heatmap showing changes in flam RNA levels in the indicated genotypes. Each datapoint corresponds to a 1 kb bin, ordered from 5′ to 3′. Fold-changes were calculated for each bin with respect to the w1118 control.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Confocal images of Piwi and Yb proteins in ovaries of the indicated genotypes. Quantification of the size of Yb-bodies in the indicated genotypes is shown to the right. ndots = number of Yb-bodies counted; negg ch = number of egg chambers analysed.
+
+With very few exceptions, Nup null mutants are generally not viable in Drosophila. One such exception, the nup54MB003363 (nup54MB) allele, produces a truncated protein lacking the carboxy-terminal region due to a Mi{ET1} transposon insertion (Nallasivan et al., 2020). This shortened Nup54 protein lacks the Nup54-family domain (Figure 3A, D, Figure 3—figure supplement 1B) and fails to co-precipitate with Nup58 (Figure 3E), as expected from earlier reports (Chug et al., 2015). Thus, it resembles the carboxy-terminal truncation (Nup54∆C) that is unable to sustain transposon repression in OSCs (Figure 3A–C). We sought to determine if this hypomorphic allele phenocopies the molecular phenotype of the nup54 knockdown in OSCs. Trans-heterozygous flies (nup54MB/9B4) carrying the nup54MB allele over the nup549B4 deficiency spanning the entire nup54 locus (Nallasivan et al., 2020) were viable, although at reduced Mendelian ratios, and had smaller, but not rudimentary, ovaries (Figure 3—figure supplement 1C). To minimise differences in TE content between fly strains, we crossed the nup54MB allele to w1118 flies and compared nup54MB/9B4 trans-heterozygote mutants to nup54MB/w1118 heterozygotes and to w1118 controls. RNA-seq from ovaries of trans-heterozygous nup54MB/9B4 flies showed TE de-repression and reduced flam RNA levels (Figure 3F, G, Figure 3—figure supplement 1D). Expression levels of major dual-strand piRNA clusters (42AB, 38C, and 80F), which rely on different, specialised transcription and export pathways, were unchanged, if not slightly higher, in the case of 80F (Figure 3F). Of note, the increased expression of flam-regulated transposons (e.g. gypsy) was already evident in nupMB/w1118 heterozygous flies (Figure 3G,Figure 3—figure supplement 1D). In this in vivo setting, we observed a broader impact on the expression of protein-coding genes than for knockdowns in cell culture (Figure 3—figure supplement 1D, E), likely reflecting a more general function of Nup54 in the germline tissue of the ovary. In this regard, also germline TEs were up-regulated in nup54 mutants (Figure 3G, Figure 3—figure supplement 1D), confirming an earlier genetic link to TE silencing in germ cells (Czech et al., 2013). Close inspection of the levels of flam RNAs using the previously described binning strategy showed that the down-regulation was more prominent towards promoter-distal regions of the cluster (Figure 3—figure supplement 1F), thus recapitulating our results from knockdowns in OSCs. Lastly, Yb-bodies were reduced in nup54MB/9B4 trans-heterozygous flies (Figure 3H, Figure 3—figure supplement 2). The yb transcript is mildly up-regulated in nup54MB/9B4 (Figure 3—figure supplement 1E), thus loss of Yb-bodies likely arises as a result of compromised flam export.
 
 Overall, these data confirm a requirement of Nup54 and Nup58 for the expression and TE silencing activity of flam in both OSCs and in vivo. We find that the ability of Nup54 and Nup58 to form a complex is critical for their function but the integrity of the FG-repeat regions of each protein individually is not. Of note, the FG-repeats of their yeast homologs Nup49 and Nup57 are also dispensable for cell survival, leading to the suggestion that not all FG-Nups are equivalent and some can facilitate distinct translocation pathways (Iovine et al., 1995; Strawn et al., 2004).
 
-## Nup54/Nup58 coordinate nuclear export and cytosolic licensing of flam via Nxf1 and Yb
+### Nup54/Nup58 coordinate nuclear export and cytosolic licensing of flam via Nxf1 and Yb
 
 To understand the molecular basis of this specificity, we explored three avenues: (1) physical proximity of the flam genomic locus to cytosolic Yb-bodies, (2) direct binding of Nup54 and/or Nup58 to flam RNA, or (3) an interaction between Nup54/Nup58 and flam RNP export complexes. Although the flam locus is at the nuclear periphery, we failed to detect any consistent correlation with the position of Yb-bodies on the opposite side of the nuclear envelope in both OSCs and ovaries (Figure 2—figure supplement 3C; Figure 2—figure supplement 3D ) thus the first hypothesis seems unlikely. To test the second possibility, we carried out CLIP-seq for Nup54, Nup58, and the mRNA exportin Nxf1, which was previously implicated in flam export (Dennis et al., 2016). Nxf1 was shown to be loaded onto nascent mRNAs upon splicing, to interact with FG-Nups and to function itself as a mobile Nup (Ben-Yishay et al., 2019; Derrer et al., 2019; Köhler and Hurt, 2007), therefore representing the most probable link between the nascent flam transcript and the NPC. CLIP-seq experiments with HALO-tagged Nup54 and Nup58 failed to enrich for flam RNA, whereas independent experiments with amino- and carboxy-terminally HALO-tagged Nxf1 showed an interaction towards the 5′ end of the flam transcript (Figure 4—figure supplement 1A), which was reported to undergo splicing (Goriaux et al., 2014). Since the association of Nxf1 with a cargo transcript is believed to follow a splicing event, this may implicate its co-transcriptional loading onto the 5′ spliced region of flam as the initial signal for export. So far, no splicing has been reported in the downstream regions of flam.
 
 Next, we sought to determine whether the so far identified factors participating in flam export (i.e. Nxf1, Nup54, Nup58, and Yb) physically interact with each other. We first searched for protein interactions between Yb and the NPC via BASU-mediated proximity labelling, followed by mass spectrometry (PL-MS) in OSCs (Kim et al., 2014; Munafò et al., 2019; Ramanathan et al., 2018; Roux et al., 2012). In this experiment, the protein of interest is fused to a biotin ligase (BASU) and expressed in OSCs. Upon biotin supplementation, the fusion protein produces activated biotin-AMP intermediates that covalently attach to accessible lysine residues of proteins in close spatial proximity (Roux et al., 2012). Biotinylated proteins are subsequently recovered by streptavidin pulldown and identified by quantitative mass spectrometry. Yb PL-MS enriched, among others, for the known Yb interactors Armi and Piwi (Hirakata et al., 2019; Saito et al., 2010) but not for mitochondrial piRNA pathway proteins (Figure 4—figure supplement 1B, Figure 4—figure supplement 1—source data 1), in line with the current model for piRNA biogenesis that postulates shuttling of Armi between Yb-bodies and mitochondria but not that of Yb itself (Ge et al., 2019; Munafò et al., 2019; Yamashiro et al., 2020). Only one Nup, Nup214, which localises to the cytoplasmic filaments and whose yeast homolog (Nup159) cooperates with the DEAD-box helicase Dbp5 in disassembling export complexes, was detected as significantly enriched. This result indicates that Yb is not an integral NPC component but may nonetheless localise proximally to the cytosolic filaments of the pore. Instead, PL-MS for Nup54 and Nup58 (Figure 4A, B, Figure 4—source data 1, Figure 4—source data 2) enriched for various subunits of the NPC, including all the components of the Nup62 sub-complex and the scaffold Nup93-1. We detected a modest enrichment of Nxf1, which is known to interact with FG-Nups and to export flam RNA (Dennis et al., 2016; Segref et al., 1997). Notably, Yb was among the most highly enriched proteins in PL-MS for both Nups (Figure 4A, B), thus indicating that Yb contacts the (cytoplasmic side of the) NPC in OSCs. No other known piRNA pathway factor was detected in proximity to Nup54 and Nup58 with this approach.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Volcano plots showing enrichment and corresponding significance of biotinylated proteins identified via proximity labelling, followed by mass spectrometry (PL-MS) from ovarian somatic cells (OSCs) expressing the indicated constructs against control (n = 3). NPC subunits: green; Yb: magenta; Nxf1: blue; bait protein: yellow. (C, D) Confocal images of Yb protein and TurboID-Nup54/Nup58 or phenylalanine-glycine nucleoporins (FG-Nups) in OSCs. Arrowheads indicate Yb-bodies juxtaposed to Nup foci. (E, F) Western blots of FLAG-tagged co-immunoprecipitates from cells transfected with the indicated constructs and siRNAs. (G) Proposed model of flam export-coupled licensing in OSCs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66321/elife-66321-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Coverage plot of the indicated CLIP-seq reads over the first 50 kb of the flam locus (n = 3). The mappability for 50 bp reads is shown at the bottom. (B) Volcano plot showing enrichment and corresponding significance of biotinylated proteins identified via proximity labelling, followed by mass spectrometry (PL-MS) from ovarian somatic cells (OSCs) expressing BASU-Yb against control (n = 2). Cytosolic PIWI-interacting RNA (piRNA) pathway factors: magenta; nucleoporins: green; mitochondrial piRNA biogenesis factors: brown; bait protein: yellow. (C) Confocal images of Yb protein and TurboID-Nup54/Nup58 or phenylalanine-glycine nucleoporins (FG-Nups) in OSCs. Arrowheads indicate Yb-bodies juxtaposed to Nup foci. (D–F) Western blots of FLAG-tag co-immunoprecipitates from lysates of cells transfected with the indicated constructs. IN: input; UB: unbound; IP: immunoprecipitate. (G) Western blots of HA-tag co-immunoprecipitates from lysates of cells transfected with the indicated constructs. IN: input; UB: unbound; IP: immunoprecipitate.
 
 Since neither of the Nups was detected by Yb PL-MS, we sought to probe a putative interaction between Yb and the NPC via alternative methods. Using immunofluorescence, we could often observe overlapping and/or adjacent signals between Yb and Nup54/Nup58 (Figure 4C), as approximated by biotinylation staining from TurboID fusion proteins (Branon et al., 2018); however, the Nup signal was found along the entire nuclear envelope and not exclusively in association with Yb-bodies (Figure 4C). Conversely, Yb-bodies were often distinct from Nup foci, thus indicating that Yb is not stably anchored to the NPC but rather dynamic and possibly explaining why only the cytosolic Nup214 was detected by Yb PL-MS. These data were not an artefact due to protein over-expression as we observed similar staining patterns using an antibody specific for FG-Nups (Figure 4D, Figure 4—figure supplement 1C). This suggests that physical associations between Yb and Nup54/Nup58 within the NPCs are likely transient and that Nup54/Nup58 are not confined only to a discrete site on the nuclear envelope. With Nup54 and Nup58 expected to being present in every pore, flam export might only be initiated where they contact Yb, and this in turn would nucleate Yb-body assembly. We cannot formally exclude the hypothesis that a pool of Nup54 and Nup58 is also present within Yb-bodies and carries out its function independently of the NPC, although in this case one might have expected them to be detected in Yb PL-MS experiments.
 
@@ -89,75 +141,617 @@ The proposed mechanism for flam export-coupled licensing relies on a tissue-spec
 
 ## Materials and methods
 
-## Cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>fs(1)Yb</td>
+      <td>FlyBase</td>
+      <td>FBgn0000928</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>flamenco</td>
+      <td>FlyBase</td>
+      <td>FBgn0267704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup54</td>
+      <td>FlyBase</td>
+      <td>FBgn0033737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup58</td>
+      <td>FlyBase</td>
+      <td>FBgn0038722</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Elys</td>
+      <td>FlyBase</td>
+      <td>FBgn0031052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup43</td>
+      <td>FlyBase</td>
+      <td>FBgn0038609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup214</td>
+      <td>FlyBase</td>
+      <td>FBgn0010660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup62</td>
+      <td>FlyBase</td>
+      <td>FBgn0034118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup93-1</td>
+      <td>FlyBase</td>
+      <td>FBgn0027537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup98-96</td>
+      <td>FlyBase</td>
+      <td>FBgn0039120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nxf1/Sbr</td>
+      <td>FlyBase</td>
+      <td>FBgn0003321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nxt1</td>
+      <td>FlyBase</td>
+      <td>FBgn0028411</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>lamin</td>
+      <td>FlyBase</td>
+      <td>FBgn0002525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup107</td>
+      <td>FlyBase</td>
+      <td>FBgn0027868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nup154</td>
+      <td>FlyBase</td>
+      <td>FBgn0021761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Zuc</td>
+      <td>FlyBase</td>
+      <td>FBgn0261266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>tj</td>
+      <td>FlyBase</td>
+      <td>FBgn0000964</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Piwi (Rabbit polyclonal)</td>
+      <td>DOI:10.1016/j.cell.2007.01.043</td>
+      <td></td>
+      <td>IF(1:500) WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Yb (Mouse monoclonal)</td>
+      <td>DOI:10.1101/gad.1989510</td>
+      <td></td>
+      <td>IF(1:500) WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Yb (Rabbit polyclonal)</td>
+      <td>DOI:10.1038/emboj.2011.308</td>
+      <td></td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab18251, RRID:AB_2210057</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3724, RRID:AB_1549585</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9110, RRID:AB_307019</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>WB(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-lamin (Mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# adl67.10, RRID:AB_528336</td>
+      <td>IF(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Nuclear Pore Complex Proteins (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat# 902907, RRID:AB_2565026</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG Alexa Fluor-488 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11029, RRID:AB_2534088</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG Alexa Fluor-647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21245, RRID:AB_2535813</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP-Booster Atto-488 (Alpaca monoclonal)</td>
+      <td>Chromotek</td>
+      <td>Cat# gba488-100, RRID:AB_2631386</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IRDye 800CW Streptavidin</td>
+      <td>LI-COR</td>
+      <td>Cat# 926-32230</td>
+      <td>WB(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Streptavidin, Alexa Fluor 555 Conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S-21381</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse monoclonal anti-FLAG M2 magnetic beads</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# CatM8823, RRID:AB_2637089</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads MyOne Streptavidin C1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 65001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce IP Lysis Buffer-100 ml</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 87787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RIPA Lysis and Extraction Buffer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 89901</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thermo Scientific Pierce anti-HA magnetic beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNasin Plus RNase Inhibitor</td>
+      <td>Promega</td>
+      <td>Cat# N2615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Effectene Transfection Reagent</td>
+      <td>Qiagen</td>
+      <td>Cat# 301427</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleofector Kit V</td>
+      <td>Lonza</td>
+      <td>Cat# VVCA-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNase I, Amplification Grade</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18068015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNaseOUT Recombinant Ribonuclease Inhibitor</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10777019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Magne HaloTag Beads,20% Slurry</td>
+      <td>Promega</td>
+      <td>Cat# G7282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Deoxynucleotide Solution Set (100 mM; 25 μmol each)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# N0446S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 18080085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chloroform anhydrous 99+%</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 288306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TRIzol Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Insulin solution human</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I9278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fibronectin from human plasma 0.1% solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F0895</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProLong Diamond Antifade Mountant</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P36961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fly Extract</td>
+      <td>Drosophila Genomics Resource Center</td>
+      <td>Cat# 1645670</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer RNA Unique Dual Index Kit – 24U</td>
+      <td>Clontech</td>
+      <td>Cat# 634451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboPOOL 10 nM for Drosophila</td>
+      <td>Cambridge Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>D-Biotin solution</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# B20656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Shields and Sang M3 Insect Medium</td>
+      <td>Sigma</td>
+      <td>Cat# S3652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Library Quantification Kit</td>
+      <td>Kapa Biosystems</td>
+      <td>Cat# KK4873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProTEV Plus</td>
+      <td>Promega</td>
+      <td>Cat# V6101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Paraformaldehyde, 16% w/v aq. soln., methanol free</td>
+      <td>Alfa Aesar</td>
+      <td>Cat# 043368.9M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase A (affinity purified)1 mg/ml</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# AM2271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NuPAGE 4–12%, Bis-Tris,1.5 mm, Mini Protein Gel, 10-well</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# NP0335BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Xfect Transfection Reagent</td>
+      <td>Takara Bio</td>
+      <td>Cat# 631318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Protein A/G Magnetic Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 88802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agencourt RNAClean XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra Directional RNA Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat# E7420L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMARTer Stranded RNA-Seq Kit</td>
+      <td>Takara Bio</td>
+      <td>Cat# 634839</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Line Nucleofector kit V</td>
+      <td>Lonza</td>
+      <td>Cat# VVCA-1003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nucleofector II device</td>
+      <td>Lonza</td>
+      <td>Cat# AAB-1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>S2 cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R69007, RRID:CVCL_Z232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila melanogaster)</td>
+      <td>Ovarian somatic cells (OSCs)</td>
+      <td>DOI:10.1038/nature08501</td>
+      <td>RRID:CVCL_IY73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 2.1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>DOI:10.1093/bioinformatics/bts635</td>
+      <td>RRID:SCR_015899</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEseq2</td>
+      <td>DOI:10.1186/s13059-014-0550-8</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR</td>
+      <td>RRID:SCR_013715</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines
 
 OSCs were a gift from Mikiko Siomi and were cultured as described (Niki et al., 2006; Saito, 2014; Saito et al., 2009). Drosophila S2 cells were purchased from Thermo Fisher Scientific and were grown at 26°C in Schneider media supplemented with 10% FBS. Cells were routinely tested for mycoplasma infection by an in-house facility.
 
-## Fly stocks and handling
+### Fly stocks and handling
 
 All flies were kept at 25°C on standard cornmeal or propionic food. Control w1118 flies were a gift from the University of Cambridge Department of Genetics Fly Facility. Nup54 mutant lines were provided by M. Soller (Nallasivan et al., 2020). A full list of fly stocks used in this study is provided in Supplementary file 1.
 
-## Cell culture
+### Cell culture
 
 Knockdowns and nucleofections in OSCs were carried out as previously described (Saito, 2014) using the Cell Line Nucleofector Kit V (Lonza VVCA-1003) on a Nucleofector II device (program T-029). OSC transfections were carried out using Xfect transfection reagent (Takara Bio 631317), as previously described (Saito, 2014). All constructs used in cells were expressed from the Drosophila act5c promoter. A full list of siRNAs used in this study is provided in Supplementary file 1. S2 cells were transfected using Effectene (Qiagen), according to the manufacturer’s instructions.
 
-## BASU proximity labelling and mass spectrometry
+### BASU proximity labelling and mass spectrometry
 
 PL-MS experiments in OSCs were performed as previously described (Munafò et al., 2019). Briefly, 4 × 106 OSCs were transfected with 20 μg of plasmid expressing an HA-BASU fusion or HA-ZsGreen. 48 hr after transfection, the media was supplemented with 200 μM biotin for 1 hr. Cell pellets were lysed in 1.8 ml lysis buffer (50 mM Tris, pH 7.4, 500 mM NaCl, 0.4% SDS, 1 mM DTT, 2% TritonX-100 with cOmplete protease inhibitors) and sonicated using a Bioruptor Pico (Diagenode, 3× cycles 30 s on/30 s off). Sonicated lysates were diluted 2× in 50 mM Tris, pH 7.4, and cleared for 10 min at 16,500 g. Lysates were pre-cleared for 1 hr at 4°C with 100 μl of Protein A/G Dynabeads (Thermo Fisher Scientific 10015D) and the supernatant collected to a fresh tube. Biotinylated proteins were isolated by incubation with 200 μl of Dynabeads (MyOne Streptavidin C1; Life Technologies) overnight at 4°C. Beads were washed 2× in 2% SDS, 2× in Wash Buffer 1 (0.1% deoxycholate, 1% Triton X-100, 500 mM NaCl, 1 mM EDTA, and 50 mM 4-(2-hydroxyethyl)−1-piperazineethanesulfonic acid, pH 7.5), 2× with Wash Buffer 2 (250 mM LiCl, 0.5% NP-40, 0.5% deoxycholate, 1 mM EDTA, and 10 mM Tris, pH 8), and 2× with 50 mM Tris. Beads were rinsed twice with 100 mM ammonium bicarbonate. BASU-Nup54, BASU-Nup58, and BASU-Yb pulldowns were subjected to TMT-labelling followed by quantitative mass spectrometry on a nano-ESI Fusion Lumos mass spectrometer (Thermo Fisher Scientific). On-bead Trypsin digestion, TMT chemical isobaric labelling and data analysis were performed by the CRUK-CI proteomics core as previously described (Papachristou et al., 2018).
 
-## Proteomics data analysis
+### Proteomics data analysis
 
 Spectral raw files from PL-MS of BASU-Yb, Nup54, and Nup58 were processed with the SequestHT search engine on Thermo Scientific Proteome Discoverer 2.1. Data was searched against a custom FlyBase database (‘dmel-all-translation-r6.24’) at 1% spectrum-level FDR (False Discovery Rate) criteria using Percolator (University of Washington). MS1 mass tolerance was constrained to 20 ppm, and the fragment ion mass tolerance was set to 0.5 Da. TMT tags on lysine residues and peptide N termini (+229.163 Da) were set as static modifications. Oxidation of methionine residues (+15.995 Da), deamidation (+0.984) of asparagine and glutamine residues, and biotinylation of lysines and protein N-terminus (+226.078) were included as dynamic modifications. For TMT-based reporter ion quantitation, we extracted the signal-to-noise ratio for each TMT channel. Parsimony principle was applied for protein grouping, and the level of confidence for peptide identifications was estimated using the Percolator node with decoy database search. Strict FDR was set at q-value <0.01. Downstream data analysis was performed on R using the qPLEXanalyzer package (Kishore and Eldridge, 2018) as described (Papachristou et al., 2018). Only proteins with more than one unique peptide were plotted.
 
-## Co-immunoprecipitation from cell lysates
+### Co-immunoprecipitation from cell lysates
 
 S2 cells or OSCs were transfected with 3xFLAG- and HA-tagged constructs. After 48 hr, cells were lysed in 250 μl of Pierce IP lysis buffer supplemented with cOmplete protease inhibitors (Roche). Equal amounts of lysate for each sample were diluted to 1 ml with IP lysis buffer and incubated with 30 μl of anti-FLAG M2 magnetic beads (Sigma M8823) overnight at 4°C. For anti-HA pulldowns, lysates were incubated with 30 µl of anti-HA (Thermo Fisher Scientific 88836) beads overnight at 4°C. Beads were washed 3 × 15 min in 1× Tris-buffered Saline (TBS) with protease inhibitors, then resuspended in 2xNuPAGE LDS Sample Buffer (Thermo Fisher Scientific) and boiled for 3 min at 90°C to elute immunoprecipitated proteins.
 
-## Western blot
+### Western blot
 
 Western blots were carried out using standard protocols. Protein lysates were run on NuPAGE 4–12% pre-cast gels and transferred to nitrocellulose membranes using a dry blotting system (iBlot2.0). Membranes were blocked for 1 hr at RT with 1× LiCor blocking buffer diluted in Phosphate Buffered Saline (PBS) and primary antibodies incubated overnight at 4°C. Following 3× washes in PBS + 0.1%Tween, secondary antibodies conjugated to infrared dyes (and/or streptavidin; LiCor925-32230) were incubated for 45 min at room temperature (RT). Images were acquired on an Odyssey CLx scanner (LiCor). The following primary antibodies were used: anti-HA (C29F4; Cell Signaling Technology), anti-FLAG (Sigma #F1804), anti-Piwi (Brennecke et al., 2007), anti-Yb (Saito et al., 2010), anti-Yb (Handler et al., 2011) (used on ovary lysates), and anti-tubulin (ab18251).
 
-## OSCs immunostaining
+### OSCs immunostaining
 
 Cells were plated 1 day in advance on fibronectin-coated coverslips, fixed for 15 min in 4% Paraformaldehyde (PFA), permeabilised for 10 min in PBS, 0.2% Triton X-100, and blocked for 30 min in PBS, 0.1% Tween-20 (PBST), and 1% BSA. Primary antibodies were diluted 1:500 in PBST and 0.1%BSA) and incubated overnight at 4°C. After 3 × 5 min washes in PBST, secondary antibodies were incubated for 1 hr at RT. After 3 × 5 min washes in PBST, DAPI was incubated for 10 min at RT and washed twice in PBST. Coverslips were mounted with ProLong Diamond Antifade Mountant (Thermo Fisher Scientific #P36961) and imaged on a Leica SP8 confocal microscope (100× oil objective). For TurboID labelling, cell culture media was supplemented with 500 µM biotin for 1 hr. Detection was carried out using streptavidin conjugated to AlexaFluor-555 (Thermo Fisher Scientific). The following antibodies were used: anti-Piwi (Brennecke et al., 2007), anti-FLAG tag (Sigma #F1804), anti-HA tag (ab9110), anti-Yb (Saito et al., 2010), anti-lamin (DSHB, ADL67.10), and anti-FG-Nups (Biolegend mAb414).
 
-## RNA-FISH in OSCs
+### RNA-FISH in OSCs
 
 RNA-FISH was performed with hybridisation chain reaction (HCR), similar as reported (Ang and Yung, 2016; Choi et al., 2014). OSCs were seeded on fibronectin-coated coverslips, fixed for 15 min in 4% PFA, washed 2 × 5 min with PBS, and permeabilised for at least 24 hr in 70% ethanol at −20°C. Ethanol was removed and slides were washed 2 × 5 min in 2× saline-sodium citrate buffer (SSC). Samples were incubated for 10 min in 15% formamide in 2× SSC. HCR probes were diluted to 1 nM each in hybridisation buffer (15% formamide, 10% dextran sulfate in 2× SSC) and incubated overnight at 37°C in a humidified chamber. Samples were washed twice in 2× SSC and 10 min in 30% formamide at 37°C. HCR hairpins conjugated to AlexaFluor-647 or oligo-dT probes conjugated to AlexaFluor-488 were heat-denatured and diluted to 120 nM in 5× SSC and 0.1% Tween-20 (SSCT). HCR amplification was carried out for 2 hr at RT in the dark and washed 3 × 10 min with 5× SSCT. Nuclei were stained with DAPI (1:10,000 in SSCT) for 10 min, followed by 3 × 10 min washes in 5× SSC. Slides were mounted with ProLong Diamond Antifade Mountant (Thermo Fisher Scientific) and imaged on a Leica SP8 confocal microscope (100× oil objective). Probes were purchased from IDT, and all sequences are provided in Supplementary file 1.
 
-## RNA isolation and qPCR analysis
+### RNA isolation and qPCR analysis
 
 Ovary samples or cell pellets were lysed in 1 ml TRIzol, and RNA was extracted according to the manufacturer’s instruction. 1 μg of total RNA was treated with DNAseI (Thermo Fisher Scientific), and reverse transcribed with the Superscript III First Strand Synthesis Kit (Thermo Fisher Scientific), using oligo-dT20 primers. Real-time PCR (qPCR) experiments were performed with a QuantStudio Real-Time PCR Light Cycler (Thermo Fisher Scientific). Transposon levels were quantified using the ∆∆CT method (Livak and Schmittgen, 2001), normalised to rp49, and fold-changes were calculated relative to the indicated controls. All primer sequences are listed in Supplementary file 1.
 
-## Ovary immunostaining
+### Ovary immunostaining
 
 Fly ovaries were dissected in ice-cold PBS, fixed for 15 min in 4% PFA at RT, and permeabilised with 3 × 10 min washes in PBS with 0.3% Triton X-100 (PBS-Tr). Samples were blocked in PBS-Tr with 1% BSA for 2 hr at RT and incubated overnight at 4°C with primary antibodies in PBS-Tr and 1% BSA. After 3 × 10 min washes at RT in PBS-Tr, secondary antibodies were incubated overnight at 4°C in PBS-Tr and 1% BSA. After 4 × 10 min washes in PBS-Tr at RT (DAPI was added during the third wash) and 2 × 5 min washes in PBS, samples were mounted with ProLong Diamond Antifade Mountant (Thermo Fisher Scientific #P36961) and imaged on a Leica SP8 confocal microscope. Images were deconvoluted using Huygens Professional. The following antibodies were used: anti-Piwi (Brennecke et al., 2007), anti-Yb (Saito et al., 2010), and anti-FG Nups (Biolegend mAb414).
 
-## Image analysis on Fiji
+### Image analysis on Fiji
 
 Acquired images were analysed on Fiji using custom scripts (Source code 1 and 2). Briefly, for Yb-body area measurements we extracted the relative channel, applied a threshold, and analysed particle number and size. A similar number of images was processed for all samples. For flam RNA-FISH analysis, we identified nuclei from the lamin staining applying a difference of Gaussian filter. We then isolated the RNA-FISH spots and counted the number present inside the nuclear envelope versus the total amount. Cytoplasm was identified via oligo-dT staining. A similar number of images was processed for all samples.
 
-## RNA-seq
+### RNA-seq
 
 Ribosomal RNAs were depleted using riboPOOLs against D. melanogaster rRNAs (siTOOLs Biotech), according to the manufacturer’s instructions. Fly riboPOOLs were hybridised to 1 µg of RNA by adding 1 µl of resuspended riboPOOLs (100 µM), 5 µl of hybridisation buffer (10 mM Tris-HCl pH 7.5, 1 mM EDTA, 2 M NaCl), and 1 µl of RNAse Inhibitor Plus (Promega), incubating for 10 min at 68°C and cooling down slowly to 37°C. 80 µl of MyOne Streptavidin C1 beads (Thermo Fisher) for each sample were washed twice in 100 µl of Beads Resuspension Buffer (0.1 M NaOH, 0.05 M NaCl) and twice in 100 µl of Beads Wash Buffer (0.1 M NaCl). The beads were resuspended in 160 µl of Depletion buffer (5 mM Tris-HCl pH 7.5, 0.5 mM EDTA, 1 M NaCl) and divided into two 80 µl aliquots. Hybridised riboPOOLs were added to 80 µl of washed beads, mixed well, and incubated for 15 min at 37°C, followed by 5 min at 50°C. The supernatant was transferred to the second tube with 80 µl of washed beads and incubated for 15 min at 37°C, followed by 5 min at 50°C. rRNA-depleted samples were transferred to a fresh tube and purified using Agencourt RNAClean XP beads (Beckman Coulter A63987). RNA-seq libraries were prepared using the NEBNext Ultra Directional Library Prep Kit for Illumina (NEB #E7760), according to the manufacturer’s instructions for ribosome-depleted RNA. DNA libraries were quantified with KAPA Library Quantification Kit for Illumina (Kapa Biosystems) and sequenced on an Illumina HiSeq 4000 instrument.
 
-## sRNA-seq library preparation
+### sRNA-seq library preparation
 
 Small RNA libraries from OSCs were generated as described previously with slight modifications (McGinn and Czech, 2014). Briefly, 19- to 28-nt small RNAs were purified by PAGE from 15 μg of total RNA from OSCs. Next, the 3' adapter (containing four random nucleotides at the 5' end) was ligated using T4 RNA ligase 2, truncated KQ (NEB). Following recovery of the products by PAGE purification, the 5' adapter (containing four random nucleotides at the 3' end) was ligated to the samples using T4 RNA ligase (Ambion). Small RNAs containing both adapters were recovered by PAGE purification, reverse transcribed, and PCR amplified. Libraries were sequenced on an Illumina HiSeq 4000 instrument.
 
-## PRO-seq
+### PRO-seq
 
 PRO-seq was performed as described previously (Mahat et al., 2016). 4 × 106 OSCs treated with siRNAs for 96 hr were used for nuclei isolation. Isolated nuclei were resuspended in storage buffer and stored at −80°C until further processing. Nuclear run-on reactions were performed with biotin-11-CTP and biotin-11-UTP and unlabelled ATP and GTP. Purified RNA samples were fragmented for 10 min on ice in 0.2 N NaOH and purified using Bio-Spin P30 columns (Bio-Rad). Biotin-labelled RNA was purified using MyOne Streptavidin C1 Dynabeads (Thermo Fisher Scientific), decapped using the RppH enzyme (NEB), and purified by phenol/chloroform extraction. 3′ linkers and then 5′ linkers (same as for small RNA cloning) were ligated and biotinylated ligation products purified after each ligation using MyOne Streptavidin C1 Dynabeads. Reverse transcription was carried out using SuperScript III (Thermo Fisher Scientific), and libraries were amplified using HS Phusion Flex polymerase. The libraries were sequenced on an Illumina HiSeq 4000.
 
-## DNA-FISH
+### DNA-FISH
 
 DNA-FISH was carried out as described in Kishi et al., 2019. DNA-FISH probes were designed against a 10 kb region spanning the DIP1 and flamenco genomic loci (chrX:21624796–21634619) using Oligominer (Beliveau et al., 2018). The final set of 74 probes were completed with the addition of the SABER primer sequences at their 3′ ends (tttCAACTTAAC) and purchased from IDT. PER amplification was carried out as described by Kishi and colleagues (Kishi et al., 2019) and used directly for DNA-FISH. OSCs were plated on fibronectin-coated slides and fixed for 10 min in 4% PFA, permeabilised for 10 min in PBS, 0.5% TritonX-100, and washed twice in PBS with 0.1% Tween-20 (PBST). If necessary, DNase treatment was carried out at this stage by incubation with 4 µl of Turbo DNase in 100 µl of 1× Turbo DNase buffer for 30 min at 37°C. Cells were incubated 5 min in 0.1 N HCl, washed twice in PBST, and incubated in 2× SSCT (2× SSC with 0.1% Tween-20) with 50% formamide for 2 hr at 60°C. Cells were hybridised in 80 μl of ISH solution consisting of 2× SSCT, 50% formamide, 10% dextran sulfate, 400 ng/μl RNase A, and each PER extension at a final concentration of ~67 nM (1:15 dilution from 1 μM PER). After denaturation for 3 min at 80°C, cells were incubated overnight at 44°C in a humidified incubator. Hybridised samples were washed 4 × 5 min in prewarmed 2× SSCT at 60°C and then twice at RT. 80 µl of fluorescent hybridisation solution consisting of 1× PBS and 1 μM fluorescent imager strands were added to the samples and incubated for 1 hr at 37°C. Cells were washed 3 × 5 min in prewarmed PBS at 37°C, stained for 10 min at RT with DAPI (1:1000 dilution in PBS), and mounted using ProLong Diamond Antifade Mountant (Thermo Fisher Scientific #P36961). Samples were imaged on a Leica SP8 confocal microscope (100× oil objective).
 
-## CLIP-seq
+### CLIP-seq
 
 1 × 107 OSCs were nucleofected with 5 μg of the desired plasmid (HALO-tagged Nup54, Nup58, Nxt1, or a HALO-MCS control) and crosslinked on ice with 400 mJ/cm2 at 254 nm. HALO-tag CLIP-seq was performed as previously described (Munafò et al., 2019). Briefly, cell pellets were lysed in 300 µl of lLysis buffer (50 mM Tris-HCl pH 7.5, 150 mM NaCl, 1% Triton X-100, 0.1% deoxycholate, Protease Inhibitor [1:50 Promega], and RNasin Plus [1:500, Promega]), for 30 min at 4°C. DNase digestion was performed by adding 2 μl (4U) of Turbo DNase to the cell lysate and immediately placing the samples at 37°C for 3 min, shaking at 1100 rpm. Samples were transferred to and kept on ice for >3 min, then cleared by centrifugation at top speed for 20 min at 4°C. Cell lysates were diluted up to 1 ml with 100 mM Tris-HCl pH 7.5, 150 mM NaCl, and incubated with 200 µl of Magne-HaloTag (Promega G7282) beads overnight at 4°C. Beads were washed 2× in Wash Buffer A (100 mM Tris-HCl pH 7.5, 150 mM NaCl, 0.05% IGEPAL CA-630), 3× in Wash Buffer B (PBS, 500 mM NaCl, 0.1% Triton X-100, RNasin Plus 1:2000), 3× in PBS, 0.1% Triton X-100, and rinsed in Wash Buffer A. For release of the bait protein from the tag, beads were resuspended in 100 μl of 1X ProTEV Buffer, 1 mM DTT, and RNasin Plus (1:50) and 25 units of ProTEV Plus Protease (Promega V6101) and incubated 2 hr at 30°C, shaking at 1300 rpm. The supernatant containing the eluted protein and the crosslinked RNA was transferred to a fresh tube, and 15 µl Proteinase K in 300 µl PK/SDS buffer (100 mM Tris, pH 7.5; 50 mM NaCl; 1 mM EDTA; 0.2% SDS) were added to the eluate and incubated 1 hr at 50°C. RNA was isolated via phenol/chloroform extraction, resuspended in 8 µl of nuclease-free water, and used for library preparation. Library preparation for CLIP-seq samples was carried out with the SMARTer Stranded RNAseq kit (Takara Bio 634839), according to the manufacturer’s instructions.
 
-## Sequencing data analysis
+### Sequencing data analysis
 
 For small RNA-seq, adapters were clipped from raw fastq files with fastx_clipper (adapter sequence AGATCGGAAGAGCACACGTCTGAACTCCAGTCA) keeping only reads with at least 23 bp length. The first and last four bases were trimmed using seqtk (https://github.com/lh3/seqtk; Ramírez et al., 2016). After removal of cloning markers and reads mapping to rRNAs and tRNAs (list downloaded from FlyBase), high-quality reads were aligned to the D. melanogaster genome release 6 (dm6; downloaded from FlyBase) (Hoskins et al., 2015) using STAR (Dobin et al., 2013). For transposon-wide analysis, genome multi-mapping reads were randomly assigned to one location using option '--outFilterMultimapNmax 1000 --outSAMmultNmax 1 --outMultimapperOrder Random' and non-mapping reads were removed. Small RNA-seq reads were normalised to miRNA reads in the control library (set to rpm). Only high-quality small RNA reads with a length between 23 and 29 bp were used for the piRNA genome browser shots. piRNA distribution was calculated and plotted in R.
 
@@ -165,6 +759,6 @@ For RNA-seq, raw fastq files generated by Illumina sequencing were analysed by a
 
 For piRNA clusters 1 kb bin analysis, each cluster was divided into non-overlapping 1 kb bins and only those with a mappability score above 0.8 were retained. Uniquely mapped reads were counted using HTSeq (Anders et al., 2015), normalised to the total number of genome-mapped reads, and the per-window log2 fold-change between each knockdown and its control was calculated and plotted in R. The mappability was calculated as described in Derrien et al., 2012. For OSC RNA-seq, bins with 0 rpm in more than one sample were discarded. For ovary RNA-seq analysis, a pseudo-count of 0.01 was added to each bin and the bins with 0 rpm only in the control were discarded. For flam 100 kb bins analysis, the dm6 genome was divided into 100 kb sliding windows using 1 kb steps. Mappability for a window was defined as the fraction of all possible 50-mers derived from the window that aligned uniquely to it using STAR. Windows with mappability >0.05 and located fully within flam (n = 285) were kept for the analysis. For each sample, reads aligning uniquely to the sense strand and at least 50% within a window were counted and subsequently normalised to reads per 1 million uniquely aligned reads. The per-window log2 fold-change between each knockdown and its control was calculated using a pseudo-count of 1. Results from four individual replicates per knockdown were highly consistent with the results shown from the pooled analysis.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data visualisation and analyses were done using R and the following packages: ggplot2, DEseq2, qPLEXanalyzer. The UCSC genome browser was used to display high-throughput sequencing data and to prepare coverage plots shown in the article. n indicated in the figure legends refers to the number of independent biological replicates. Bar graphs display average of n biological replicates and standard deviation (SD), and p values were calculated with an unpaired t-test using GraphPad. Box plots display median, first, and third quartiles (box) and highest/lowest value within 1.5 interquartile range (whiskers); dots represent potential outliers beyond 1.5 * interquartile range.

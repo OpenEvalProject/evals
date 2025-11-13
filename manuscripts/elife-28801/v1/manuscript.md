@@ -28,7 +28,7 @@ To accommodate changing user needs, a number of new features have been added to 
 
 ## New relevance search algorithm
 
-A new relevance algorithm was recently developed and deployed as one of the sort options in PubMed. It aims to provide the most relevant results and the best quality information within a fraction of a second, in response to a variety of different user information needs. This algorithm is based on a machine learning method called 'learning-to-rank' (
+A new relevance algorithm was recently developed and deployed as one of the sort options in PubMed. It aims to provide the most relevant results and the best quality information within a fraction of a second, in response to a variety of different user information needs. This algorithm is based on a machine learning method called 'learning-to-rank' (Burges et al., 2011; Liu, 2009; Figure 1). The initial input to the learning-to-rank algorithm is the list of results returned by a classic term frequency algorithm (which ranks search results based on the relative frequency with which terms from the search query appear in the title and/or abstract of a record; Lu et al., 2009b; Robertson et al., 1996). We chose learning-to-rank because, in addition to its proven performance, it is capable of integrating a wide variety of different signals from the text record (including term frequencies) in order to return improved ranking results.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/28801/elife-28801-fig1-v1.jpg)
 
@@ -40,7 +40,7 @@ The new ranking algorithm has been available since April 2017 to those who selec
 
 ## PubMed labs and its new interface
 
-In parallel with these developments we are launching a new experimental site called PubMed Labs (
+In parallel with these developments we are launching a new experimental site called PubMed Labs (http://www.ncbi.nlm.nih.gov/labs/pubmed) that will allow us to continue our efforts to improve search quality while also working to improve PubMed's user interface: in particular, the interface for PubMed Labs (Figure 2) has been designed to provide an optimized user experience on small-screen devices (such as mobiles and tablets). We are taking a 'minimum viable product' approach in building PubMed Labs by launching it with a small number of core features and making iterative improvements and enhancements based on public testing and feedback. For example, PubMed Labs includes only a small subset of PubMed facets (selected on the basis of past usage in PubMed); decisions about the final set of facets will be based on user input and real-world usage. Other new features that we plan to introduce and analyze on PubMed Labs range from simple font color variations to complex algorithmic adjustments. Based on quantitative analysis of usage patterns, as well as direct user input and feedback, we will iteratively improve and enhance the minimum viable product.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/28801/elife-28801-fig2-v1.jpg)
 

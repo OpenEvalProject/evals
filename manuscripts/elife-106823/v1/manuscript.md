@@ -25,22 +25,22 @@
 
 ### Affiliations
 
-1. https://ror.org/051escj72 INTERTRYP, Université de Montpellier, Cirad, IRD Montpellier France
-2. https://ror.org/0495fxg12 Trypanosome Molecular Biology Unit, Institut Pasteur, Université de Paris Paris France
+1. INTERTRYP, Université de Montpellier, Cirad, IRD Montpellier France ([ROR:051escj72](https://ror.org/051escj72))
+2. Trypanosome Molecular Biology Unit, Institut Pasteur, Université de Paris Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
 3. Parasitology Unit, Institut Pasteur of Guinea Conakry Guinea
-4. https://ror.org/03q1wc761 Unité de Formation et de Recherche Environnement, Université Jean Lorougnon Guédé Daloa Côte d'Ivoire
+4. Unité de Formation et de Recherche Environnement, Université Jean Lorougnon Guédé Daloa Côte d'Ivoire ([ROR:03q1wc761](https://ror.org/03q1wc761))
 5. Unité de Recherche Trypanosomoses, Institut Pierre Richet Bouaké Côte d'Ivoire
 6. Virology Unit, Institut Pasteur of Guinea Conakry Guinea
 7. Programme National de Lutte contre la Trypanosomiase Humaine Africaine, Ministère de la Santé Conakry Guinea
-8. https://ror.org/0495fxg12 Bioinformatics and biostatistics hub, Institut Pasteur Paris France
-9. https://ror.org/05ye29x39 Cirad, UMR INTERTRYP Montpellier France
-10. https://ror.org/05f82e368 Trypanosome Transmission Group, Trypanosome Cell Biology Unit, Institut Pasteur, Université Paris Cité Paris France
+8. Bioinformatics and biostatistics hub, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+9. Cirad, UMR INTERTRYP Montpellier France ([ROR:05ye29x39](https://ror.org/05ye29x39))
+10. Trypanosome Transmission Group, Trypanosome Cell Biology Unit, Institut Pasteur, Université Paris Cité Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
 
 † Corresponding author
 
 ## Abstract
 
-Animal African trypanosomosis (AAT), caused by protist parasites of the genus Trypanosoma , puts upward of a million head of livestock at risk across 37 countries in Africa. The economic impact of AAT and the presence of human-infectious trypanosomes in animals place a clear importance on improving diagnostics for animal trypanosomes to map the distribution of the veterinary parasites and identify reservoirs of human-infectious trypanosomes. We have adapted the CRISPR-based detection toolkit SHERLOCK (Specific High-sensitivity Enzymatic Reporter unLOCKing) for trypanosomatid parasites responsible for AAT (SHERLOCK4AAT) including Pan-trypanosomatid, Trypanozoon , T. vivax , T. congolense , T. theileri , T. simiae, and T. suis assays. To test the applicability of this technique in the field, we analysed dried blood spots collected from 200 farm and 224 free-ranging pigs in endemic and historical human African trypanosomiasis foci in Guinea and Côte d’Ivoire, respectively. The results revealed that SHERLOCK4AAT can detect and discriminate between trypanosome species involved in multiple infections with a high sensitivity. 62.7% [58.1, 67.3] of pigs were found infected with at least one trypanosome species. T. brucei gambiense , a human-infectious trypanosome, was found in one animal at both sites, highlighting the risk that these animals may act as persistent reservoirs. These data suggest that, due to their proximity to humans and their attractiveness to tsetse flies, pigs could act as sentinels to monitor T. b. gambiense circulation using the SHERLOCK4AAT toolbox.
+Animal African trypanosomosis (AAT), caused by protist parasites of the genus Trypanosoma, puts upward of a million head of livestock at risk across 37 countries in Africa. The economic impact of AAT and the presence of human-infectious trypanosomes in animals place a clear importance on improving diagnostics for animal trypanosomes to map the distribution of the veterinary parasites and identify reservoirs of human-infectious trypanosomes. We have adapted the CRISPR-based detection toolkit SHERLOCK (Specific High-sensitivity Enzymatic Reporter unLOCKing) for trypanosomatid parasites responsible for AAT (SHERLOCK4AAT) including Pan-trypanosomatid, Trypanozoon, T. vivax, T. congolense, T. theileri, T. simiae, and T. suis assays. To test the applicability of this technique in the field, we analysed dried blood spots collected from 200 farm and 224 free-ranging pigs in endemic and historical human African trypanosomiasis foci in Guinea and Côte d’Ivoire, respectively. The results revealed that SHERLOCK4AAT can detect and discriminate between trypanosome species involved in multiple infections with a high sensitivity. 62.7% [58.1, 67.3] of pigs were found infected with at least one trypanosome species. T. brucei gambiense, a human-infectious trypanosome, was found in one animal at both sites, highlighting the risk that these animals may act as persistent reservoirs. These data suggest that, due to their proximity to humans and their attractiveness to tsetse flies, pigs could act as sentinels to monitor T. b. gambiense circulation using the SHERLOCK4AAT toolbox.
 
 ## Introduction
 
@@ -54,43 +54,61 @@ In this context, developing new diagnostic tools that are species-specific and h
 
 ## Results
 
-## Selection of targets for broad and species-specific SHERLOCK assays targeting AAT species (SHERLOCK4AAT)
+### Selection of targets for broad and species-specific SHERLOCK assays targeting AAT species (SHERLOCK4AAT)
 
 Target gene selection was based on two requirements: to develop (1) a broad SHERLOCK assay for the detection of all trypanosomatid parasites and (2) for species discrimination. To adapt SHERLOCK for the detection of AAT-related species, we followed the criteria as described in Sima et al., 2022. Briefly, candidate genes must (1) be expressed in the bloodstream form of the parasites, (2) be conserved between strains, (3) have few or no single-nucleotide polymorphisms (SNPs), or (4) show sequence divergence that would allow for species discrimination. All RPA primers and crRNAs designed for each SHERLOCK assay are listed in Supplementary file 2.
 
-## Pan-trypanosomatid assay
+#### Pan-trypanosomatid assay
 
 SHERLOCK has the capacity to discriminate between two sequences differing by a single nucleotide (Gootenberg et al., 2017). This study therefore focused on regions of the 18S rRNA gene that show limited sequence homology between species. In addition to being a multicopy gene, the 18S rRNA gene shares over 70% identity between Kinetoplastea members (Figure 1—figure supplement 1). Using BLAST analysis, the region between 1535–1672 bp (XR_002989632.1) was found to be conserved between all trypanosomatid species and was selected as the pan-trypanosomatid SHERLOCK target. RPA primers were designed to amplify this 138 bp region using Primer-Blast (Ye et al., 2012; Figure 1—figure supplement 2A and Supplementary file 2). The level of identity of the target region was assessed between the different sequences described in the Trypanosomatidae family, as well as in the order, subclass, and class that contain this family (Supplementary file 4). Examination of the Euglenozoa phylum, excluding the Kinetoplastea class, showed 98.4% identity within the Trypanosomatidae family and 97.3% identity within the Kinetoplastea class (Supplementary file 4). This was reduced to 82.9% for the Phylum Euglenozoa, excluding the Kinetoplastea sequences (Supplementary file 4). Three distinct crRNAs were designed to this region, which can be used individually or multiplexed to increase the sensitivity (Figure 1—figure supplement 3A and Supplementary file 2). The sequences described in each group were 100% conserved to the crRNA. RPA primers and crRNA targets of the pan-trypanosomatid SHERLOCK assay target regions (Kinetoplastea) were then compared to the homologous sequences from other classes within the Phylum Euglenozoa (Euglenida, Diplonemea, Symbiontida, and Kinetoplastea) (Figure 1—figure supplement 2A and Supplementary file 4). In addition, sequences from related protozoan parasite classes (Diplomonadida, Haemosporida, and Ciliophora) and from the genetically close but phylogenetically distinct group Microsporidia were also included in the analysis (Figure 1—figure supplement 2A).
 
-## Pan-Trypanozoon assay
+#### Pan-Trypanozoon assay
 
 A pan-Trypanozoon SHERLOCK assay was designed for increased selectivity to especially detect T. brucei s.l. (sensu lato). The regions within the 18S rRNA that were highly conserved among the species of the Trypanozoon subgenus, while showing significant divergence from other trypanosome species not belonging to the Trypanozoon subgenus, were analysed (Figure 1—figure supplement 2B). A region ranging from 1318 to 1433 bp (XR_002989632.1) (Figure 1A and Supplementary file 2) was selected as it showed high conservation among the Trypanozoon subgenus (99.12–100% percentage of identity, query coverage >90%), except for three T. evansi sequences (91.96–96.49%, OL869590.1, KT844944.1, MF142286.1). The crRNA target region selected was also conserved in the subgenus Trypanozoon and divergent in other parasites. Specific alignments with trypanosome species that could share the same hosts (T. congolense, T. vivax, Leishmania spp., etc) were performed to assess target amplicon specificity (Figure 1—figure supplement 2B). The pan-Trypanozoon SHERLOCK assay can discriminate between the species belonging to the Trypanozoon subgenus (T. b. spp., T. evansi types A and B, and T. equiperdum) from other non-Trypanozoon trypanosomes or other co-endemic parasites.
 
-## Species-specific assays
+![Figure 1.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the target regions used in the SHERLOCK4AAT toolbox. T. congolense, T. theileri (multiplex), T. simiae, Pan-Trypanozoo, and Pan-trypanosomatid SHERLOCK assays were designed using the 18S rRNA gene as a target; T. vivax SHERLOCK assay using the IFX gene and T. suis test using the gGAPDH gene. Gene-specific accession number in brackets below the assay name. Details of the regions amplified are provided for each SHERLOCK assay (amplicon). RPA primers are represented by black arrows, the extension in the forward primer represents the T7 polymerase promoter sequence. The regions targeted by the crRNAs (CRISPR guides) are also indicated in the diagram. The schematic representation is to scale. (B) Evaluation of the specificity of single pan-trypanosomatid and pan-Trypanozoon SHERLOCK tests RNA from T. b. brucei (Tbb), T. b. gambiense (Tbg), T. b. rhodesiense (Tbr), T. evansi A (TevA) and B (TevB), T. equiperdum (Teq), T. congolense (Tcg), T. vivax (Tvx), T. theileri (Tth), Leishmania major (Lm), Plasmodium falciparum (Pfl), and human embryonic kidney (HEK) cells. The boxplot means are represented by single lines, and error bars correspond to minimum and maximum values. N = 3 for the RPA amplifications and three Cas-13a detections for each RPA amplification, totalling nine replicates for each assay. T. theileri was used in fewer replicates as an input due to the limited genetic material available. (C) Evaluation of the specificity of T. congolense, T. vivax, T. theileri, T. simiae, and T. suis-specific SHERLOCK tests on RNA from Tbb, Tbg, Tcg, Tvx, Tth. Synthetic controls for T. simiae (Tsm) and T. suis (Tsu) were used to evaluate the species specificity of the assays. N = 1 RPA amplification and three Cas-13a detections totalling three replicates for each assay. Error bars represent standard deviations from the mean of the replicates. All inputs were used at a concentration of 5 ng/µl.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Alignments for 18S Pan-trypanosomatid SHERLOCK target region. The sequences used for the alignments are as follows: Microsporidia (Nosema adalia, KC412706.1), Ciliophora (Vorticella sp., DQ487201.2), Haemosporida (Plasmodium falciparum, XR_002966679.1), Diplomonadida (Giargia intestinalis, XR_005248679.1), Symbiontida (Calkinsia aureus, EU753419.1), Diplonemea (Diplonema ambulator, AY425009.1), Euglenida (Euglena sanguinea, JQ281806.1), and Kinetoplastea (Trypanosoma (T) brucei brucei, XR_002989632.1). (B) Alignments for 18S Pan-Trypanozoon SHERLOCK target region. The sequences used for the alignments are as follows: Human (H, pdb|5VYC|i), Plasmodium falciparum (Pfl, XR_002966679.1), Leishmania major (Lm, GQ332361.1), T. cruzi (Tcz, AJ009147.1), T. vivax (Tvx, EU477537.1), T. congolense (Tcg, AJ009146.1), T. theileri (Tth, AJ009163.1), T. simiae (Tsm, AJ404608.1), T. suis (Tsu, MK962702.1), and T. brucei brucei (Tbb, XR_002989632.1). Non-conserved bases between sequences are highlighted in bold.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** A screening was performed for each SHERLOCK assay: single 18S pan-trypanosomatid SHERLOCK (A), pan-Trypanozoon SHERLOCK (B), IFX T. vivax-specific SHERLOCK (C), 18S T. congolense-specific SHERLOCK (D) and 18S T. theileri-specific SHERLOCK (E). In each evaluation, a positive control (RNA from a target species, coloured bar) and a negative control (RNA from a non-target species, grey bar) were used. RPA pairs of primers are named A, B, or C, while crRNAs were named from 1 to 10. The time point used is indicated. # indicates the combination of RPA primers and crRNA selected for the rest of the analysis. All inputs were used at a concentration of 5 ng/µl.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The sequences used for the alignments are from T. simiae, T. godfreyi, T. sapaensis, T. vivax, T. theileri, and T. thomasbancrofti. Non-conserved bases between sequences are highlighted in grey. The percentage identity of each sequence was analysed against the RPA amplicon in the T. congolense-specific SHERLOCK assay.
+
+#### Species-specific assays
 
 For species discrimination within a single sample, several SHERLOCK assays were developed to detect the most prevalent species causing AAT. These include T. congolense, T. vivax, T. theileri, T. simiae, and T. suis.
 
-## T. congolense
+##### T. congolense
 
 Regions conserved in the 18S rRNA gene for all described T. congolense sequences, including the Savannah, Forest, Kilifi, and Dzanga-Sangha groups, were analysed. The target region selected from position 116 to 246 bp of the 18S rRNA gene (AJ009146.1) shows 100% identity between the described T. congolense sequences. BLAST analysis of the T. congolense 18S rRNA gene sequences, excluding the target species (T. congolense (taxid: 5692)) was also performed to determine the percentage of identity of closely related species. T. simiae (86.72–90.62%), T. sapaensis (88.28%), T. godfreyi (88.28%), and T. otospermophili (87.02%) had the highest percentage identity observed (Figure 1—figure supplement 4). Species with common hosts and of veterinary relevance such as the two analysed T. vivax strains showed 82.81% and 87.5% identity. In addition, none of these sequences were fully conserved for the selected crRNA (Figure 1—figure supplement 4), ensuring the specificity of the test and the absence of cross-detection with other species.
 
-## T. vivax
+##### T. vivax
 
 The invariant flagellum antigen (IFX) gene has no apparent homologue in any other Trypanosoma species or other related parasites, and was therefore selected (Autheman et al., 2021; Romero-Ramirez et al., 2022). BLAST analysis, using T. vivax Y486 (HE573024.1) as a reference genome, resulted in no matches (Figure 1A and Supplementary file 2).
 
-## T. theileri
+##### T. theileri
 
 A conserved region between the three T. theileri lineages (TthI, TthII, and TthIII) (Brotánková et al., 2022) was selected. The target region, ranging from 1014 to 1158 bp of the 18S rRNA gene (AJ009163.1), has 100% identity between the described sequences of the T. theileri lineages, and the most closely related sequences were from T. cruzi, T. rangeli, and T. dionisii, with a 97.89% identity (query coverage = 65%). The segment 1052–1081 bp corresponding to the crRNA sequence is highly conserved between T. theileri variants (Figure 1A and Supplementary file 2); however, it contains an SNP (1060 C/T) in a number of the sequences analysed. Hence, one RPA primer pair and two multiplexed crRNAs were designed to target both versions of the SNP for the T. theileri SHERLOCK assay (Figure 1—figure supplement 3E).
 
-## T. simiae
+##### T. simiae
 
 The region from 1246 to 1346 bp of the 18S rRNA gene (AJ404608.1) was selected as the targeted region for RPA amplification of the T. simiae-specific SHERLOCK assay. The segment 1273–1299 bp that corresponds to the crRNA sequence has 100% identity between the described sequences of T. simiae (Figure 1A and Supplementary file 2).
 
-## T. suis
+##### T. suis
 
 The multicopy GAPDH gene was used, as it can be phylogenetically separated into T. suis and T. suis-like strains from other African trypanosomes (Rodrigues et al., 2020). The region from 389 to 528 bp of the GAPDH gene (MK962702.1) has been selected as the targeted region for RPA amplification of the T. suis-specific SHERLOCK assay (Figure 1A and Supplementary file 2). This region is 100% conserved between the T. suis species described, and outside this clade, the most closely related sequences were found in T. congolense, with 90% of identity (query coverage >90%). The segment 410–437 bp of the gGAPDH gene (MK962702.1), that corresponds to the crRNA target region, is highly conserved between T. suis species, with 100% identity, and the BLAST analysis showed that this target fragment can only align to T. suis sequences but not to that of other Kinetoplastea species (taxid:5653).
 
-## SHERLOCK can discriminate between closely related AAT-causing trypanosomatid species
+### SHERLOCK can discriminate between closely related AAT-causing trypanosomatid species
 
 All RPA primers and crRNAs for each targeted species were screened to select the optimal combinations, with the highest specificity and selectivity. For the pan-trypanosomatid assay, RPA primer pair A was used to screen three crRNAs (A:crRNA1, A:crRNA2, and A:crRNA3; Figure 1—figure supplement 3A). From this, crRNA 3 was first selected for the simple pan-trypanosomatid assay. For the pan-Trypanozoon assay, three RPA primer pairs (A, B, and C) were screened with two crRNA candidates each (A:crRNA1, A:crRNA2, B:crRNA1, B:crRNA2, C:crRNA1, and C:crRNA2, Figure 1—figure supplement 3B). The A:crRNA1 combination was selected for the pan-Trypanozoon assay, being the one that obtained a higher fold change for the positive control and a lower fold change for the negative control. For the IFX T. vivax species-specific SHERLOCK assay, two RPA primer pairs were assessed (A and B) in combination with six crRNA candidates (A:crRNA1, A:crRNA2, A:crRNA3, B:crRNA4, B:crRNA5, and B:crRNA6). RPA primer pair B and crRNA 6 showed the lowest variability between replicates and without any cross-reaction with other trypanosome species (Figure 1—figure supplement 3C). For the T. congolense-specific assay, one pair of RPA primer (A) was combined with ten crRNA candidates (A:crRNA1, A:crRNA2, A:crRNA3, A:crRNA4, A:crRNA5, A:crRNA6, A:crRNA7, A:crRNA8, A:crRNA9, and A:crRNA10). The crRNA1 that exhibited the lowest inter-replicate deviation and no cross-reactivity when exposed to the genetic material of non-target trypanosomatid parasites was selected (Figure 1—figure supplement 3D). For the T. theileri-specific SHERLOCK assay, the combination of the RPA primer pair A with the two designed crRNAs (1 and 2) was used to cover the specific detection of all the T. theileri described sequences (Figure 1—figure supplement 3E). For T. simiae and T. suis, single combinations of RPA primer and crRNA were tested. The specificity of each of these combinations was also verified by comparing the specific recognition of each RNA target to RNA from human embryonic kidney (HEK) cell (for pan-trypanosomatid and pan-Trypanozoon tests) or RNA from T. brucei (for T. vivax, T. congolense, and T. theileri tests) (Figure 1—figure supplement 3). In total, one RPA primer–crRNA combination was selected for each assay, based on the highest fold-change over background fluorescence value, the highest specificity, and the minimum standard deviation (Figure 1A).
 
@@ -98,13 +116,41 @@ The specificity of the RPA primer–crRNA combinations selected for each assay w
 
 The analytical sensitivity of each assay was quantified using serial dilutions of positive control RNAs from known numbers of parasites. For the single pan-trypanosomatid assay, the LoD was between 10 and 103 parasites per ml. The pan-Trypanozoon and T. theileri assays tested 10 parasites per ml. For the T. congolense assay, the LoD was found between 10 and 103 parasites per mL, and between 104 and 105 parasites per ml for the T. vivax test (Figure 2A). The sensitivity of T. simiae and T. suis tests was evaluated on synthetic positive controls, as no genetic materials were available, and both showed an LoD between 10 and 100 fM (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig2-v1.jpg)
+
+**Figure 2.:** (A) Limit of detection (LoD) assays for the single pan-trypanosomatid, pan-Trypanozoon, T. vivax, T. congolense, and T. theileri assays were performed using RNAs from bloodstream parasites diluted to obtain equivalent concentrations of parasites per ml, ranging from 107 to 0.1 parasites/ml. (B) LoD of T. simiae and T. suis assays were performed on consecutive dilutions of the synthetic controls, ranging from 1010 to 101 fM. N = 24 for pan-trypanosomatid assay, N = 12 for pan-Trypanozoon and T. theileri assays, N = 6 for T. simiae assay, and N = 3 for T. congolense, T. vivax, and T. suis assays. Error bars represent standard deviations from the mean of the replicates; open circle represents each replicate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Means are represented by single lines. Quantities of porcine and T. b. brucei genetic material extracts included in each trial are as follows: ‘-’ none, ‘+’ 1 ng/µl, ‘++’ 2 ng/µl, and ‘+++’ 3 ng/µl.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Compilation of positive and negative results obtained using multiplex pan-trypanosomatid and pan-Trypanozoon SHERLOCK tests and receiver operating characteristic (ROC) curves obtained for each analysis. The red dotted line marks the selected threshold for each test. (B) Compilation of positive and negative results obtained using the species-specific SHERLOCK assays and ROC curve obtained for each analysis. The red dotted line marks the selected threshold for each test. (C) Summary of the analytical features of each SHERLOCK assay. Analytical sensitivity (95% of CI), specificity (95% of CI), and fold-change cut-off.
+
 Then, to improve the sensitivity of the simple pan-trypanosomatid assay, crRNA1 was tested in combination with crRNA3 for target recognition, as both crRNAs fall within the same RPA amplicon A (Figure 3A). Comparative analyses between the two versions were performed and multiplexing was shown to increase the performance of the assay, especially for the lower dilutions evaluated (100, 500, and 103 p/ml) by increasing the fold-change readouts of these positive controls by 1-, 2.5-, and 3-fold-change units, respectively (Figure 3—figure supplement 1). Using results obtained on the blood samples from pigs in Côte d’Ivoire (see next section), we compared the two versions of the pan-trypanosomatid SHERLOCK assays to determine the posterior distribution of sensitivity estimates. We applied a Monte Carlo method (Gibbs sampling) proceeding in an iterative chain using the infection frequency, specificity, and sensitivity of the two tests to update the infection status. We determined the posterior sensitivity distribution of the simple versus multiplex pan-trypanosomatid SHERLOCK assays. Multiplexing crRNAs increased the median sensitivity from 66.1% to 74.7%, while keeping specificity above 80% (Figure 3B). Furthermore, a higher concordance was observed between the results obtained on the same samples with the pan-Trypanozoon SHERLOCK assay and the multiplexed pan-trypanosomatid SHERLOCK assay (25.7% of double positives), as compared to the simple version (7.8% of double positives) (Figure 3C). Given its improved detection efficiency, the multiplex version of the 18 S rRNA pan-trypanosomatid assay was subsequently used exclusively and referred to as the multiplex pan-trypanosomatid assay.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematic of the single (one crRNA) and multiplex (two crRNAs) pan-trypanosomatid SHERLOCK assays designed using the 18S rRNA gene as a target. Gene-specific accession number in brackets below the assay name. Details of the amplified gene regions are provided (amplicon). RPA primers are represented by black arrows; the forward primer extension represents the T7 polymerase promoter sequence. The regions targeted by the crRNAs are indicated in the diagram. (B) Posterior sensitivity estimates of the single (green) and multiplex (purple) pan-trypanosomatid SHERLOCK assays on the 224 pig blood samples from Côte d’Ivoire presented in Figure 4. Estimates were obtained with the Monte Carlo method (Gibbs sampling) proceeding in an iterative chain. (C) Results of pan-Trypanozoon SHERLOCK assay plotted against results of the single (left panel) and multiplex (right panel) 18S pan-trypanosomatid SHERLOCK assays on pig samples from Côte d'Ivoire. The coloured dashed lines represent the detection thresholds set for each of the tests: single pan-trypanosomatid (green), multiplex pan-trypanosomatid (purple), and pan-Trypanozoon (orange). Numbers and proportions (%) of double positive samples are indicated at the top right of each graph and only positive for pan-trypanosomatid in the bottom right part of each graph.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Single and multiplex 18S pan-trypanosomatid SHERLOCK assays on dilutions of T. b. brucei RNA and on RNA extracted from human embryonic kidney (HEK) cells as negative control. N = 9 for each dilution. Error bars represent standard deviations from the mean of the replicates.
 
 To determine a positivity threshold value (fold-change cut-off) for each SHERLOCK assay, receiver operating characteristic (ROC) curve analyses were performed and used to evaluate each following analytical sensitivity and specificity. The positivity threshold values were 6.050 for the pan-trypanosomatid test, 11.70 for the pan-Trypanozoon test, 1.923 for the T. congolense test, 1.831 for the T. vivax test, 1.805 for the T. theileri test, 1.546 for the T. simiae test, and 2.609 for the T. suis test (Figure 2—figure supplement 2). Subsequently, for a given test, any sample with a fold-change value above the threshold was considered positive for this test. Unsurprisingly, assays designed against multiple copy genes (18S rRNA and GAPDH) showed a greater sensitivity than those targeting single copy genes (IFX). Taken together, all the validated tests were able to specifically detect the RNA targets for which they were designed, making it possible to distinguish between closely related trypanosomatid parasite species. We then applied this novel SHERLOCK4AAT toolbox was applied to the analysis of field samples in a molecular eco-epidemiological survey.
 
-## Application of the SHERLOCK4AAT toolbox to eco-epidemiological surveys in pigs
+### Application of the SHERLOCK4AAT toolbox to eco-epidemiological surveys in pigs
 
 In transmission foci of Western Africa, domestic pigs can host multiple trypanosome species. To investigate this, the SHERLOCK4AAT toolbox was used to survey trypanosomes circulating in domestic pigs from hypo-endemic and historical foci in Côte d'Ivoire and Guinea. In Côte d'Ivoire, blood samples were collected from 224 free-ranging pigs across the rural districts of Bonon, Bouaflé, Sinfra, Vavoua, and Brobo (Figure 4A). In the N'zérékoré prefecture of Forested Guinea, 200 farm pigs were sampled, with a focus on organized farming communities (Figure 5A). In addition to the SHERLOCK4AAT toolbox assays, all samples were also screened for T. b. gambiense using the previously described TgsGP SHERLOCK assay (Sima et al., 2022).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig4-v1.jpg)
+
+**Figure 4.:** (A) Map of the Côte d’Ivoire, the region where the samples were collected is highlighted in purple. (B) Results of the SHERLOCK4AAT screening of 224 pig samples collected in Côte d’Ivoire. The coloured dashed lines represent the detection thresholds set for each assay. Each colour represents a specific test: multiplex pan-trypanosomatid (green), pan-Trypanozoon (orange), T. b. gambiense (yellow), T. congolense (light green), T. vivax (purple), T. theileri (red), T. simiae (blue), and T. suis (black). (C) Table summarizing the number of positive samples as well as the percentage (%) positive infections for each test, calculated on the total number of samples analysed. The total number of samples analysed was 219 for the multiplex pan-trypanosomatid assay, 173 for the T. vivax-specific assay, and 224 for all other SHERLOCK assays. (D) Venn diagram representing the crossover between the positive samples analysed with the three tests (multiplex pan-trypanosomatid (green), pan-Trypanozoon (orange) and T. congolense (purple)) giving the highest prevalence. The percentage of the total is shown in brackets below the number of samples constituting each fraction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Estimates were obtained with the Monte Carlo method (Gibbs sampling) proceeding in an iterative chain.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/106823/elife-106823-fig5-v1.jpg)
 
@@ -120,7 +166,7 @@ Furthermore, 56 samples (25.6 ± 5.8%) in Côte d'Ivoire and 38 samples (19.0 ±
 
 ## Discussion
 
-## The SHERLOCK4AAT toolbox, a new panel of highly sensitive and specific high-throughput assays for detecting animal trypanosomes
+### The SHERLOCK4AAT toolbox, a new panel of highly sensitive and specific high-throughput assays for detecting animal trypanosomes
 
 Species identification is essential for assessing both the distribution of prominent parasites impacting veterinary health and spotting reservoirs for human-infective trypanosomes. In a context where symptoms are often mild and unspecific, especially in hosts like pigs, accurate species-specific detection methods are essential. Ideally, diagnostic assays should be able to analyse both fresh and stored (ambient temperature) samples to determine parasites circulating within a specific area.
 
@@ -130,7 +176,7 @@ Using parasite RNAs, the LoD of the SHERLOCK assays was estimated to range betwe
 
 In the current version of the SHERLOCK4AAT toolbox, each assay can be run in 2 hr 30 min, in a two-step reaction, at 2.5 € (exclusive of initial sample processing) (Sima et al., 2022). All tests are optimized for high throughput screening with a fluorescence readout; hence, they can be performed in standard lab conditions by a technician trained for basic molecular biology. SHERLOCK4AAT was not developed for direct case diagnosis in the field, but rather for eco-epidemiological surveillance at large scale. Considering the absence of trypanosome species-specific treatment for domestic animals, the future development of a RDT for AAT would only include the pan-trypanosomatid target or equivalent. This would, however, require further technical optimizations (TNA extraction, sensitivity, LFA, etc.).
 
-## SHERLOCK4AAT profiling in Guinea and Côte d’Ivoire
+### SHERLOCK4AAT profiling in Guinea and Côte d’Ivoire
 
 Trypanosome species identification can be used to finely map the risk of AAT parasite transmission in these areas. After cattle, pigs are the main domestic hosts infected by animal trypanosomes, but they can also be reservoirs of T. b. gambiense. T. b. gambiense infections in pigs are frequently reported in sub-Saharan Africa (Ebhodaghe et al., 2018; Okello et al., 2022a) and these domestic animals likely represent an underestimated reservoir of human-infective parasites (Büscher et al., 2018; Mehlitz and Molyneux, 2019). This is all the more important than pigs are often raised in close proximity to humans, increasing the risk of animal to human trypanosome transmission, reinforcing our efforts to integrate the detection of both animal and human parasites in domestic pigs in a One Health perspective (Rotureau et al., 2022).
 
@@ -142,25 +188,25 @@ T. b. gambiense is suspected to circulate among domestic animals raised in close
 
 ## Materials and methods
 
-## Mice infection and parasite purification
+### Mice infection and parasite purification
 
 Twenty-four hours prior to infection with trypanosome parasites, 8-week-old female BALB/c mice (Charles River Laboratory) were immunosuppressed by intraperitoneal injection of 0.1 ml Endoxan 500 mg (Baxter). T. congolense Savannah subgroup IL1180 strain (Tanzania, Serengeti 1971, STIB212), T. vivax Magnan strain (Burkina Faso, Magnan 2011), and T. theileri (Nederland, Utrecht 2003, UNUT) parasites (INTERTRYP unit’s cryobank) were inoculated by intraperitoneal injection of 0.15 ml of the cryopreserved blood containing parasites. Two mice were infected per strain and parasitaemia was monitored daily by tail blood sampling. Parasite yields were estimated by counting in a fast read 102 counting cells (Kova). Whole blood was collected by cardiac puncture under deep isoflurane anaesthesia when parasitaemia reached 1 × 108 cells per ml. Infected blood was passed over a diethylaminoethyl (DEAE)-cellulose column and the column washed using phosphate buffer saline (PBS) supplemented with 1% glucose (PBSG). Parasites were collected in PBSG and concentrated by centrifugation (2000 rpm, 10 min, RT).
 
-## Cell culture
+### Cell culture
 
 T. b. brucei Lister 427 (MiTaT 1.2, clone 221) bloodstream form cells from Institut Pasteur (Paris, France), and T. b. gambiense ELIANE (LiTAR1, LiTat 1.3, Paris/52/-/-/(ELIANE) ITMAS100500) bloodstream form cells from College of Medical, Veterinary and Biological Sciences (Wellcome Trust Centre for Molecular Parasitology, Glasgow, United Kingdom) were cultured in HMI-11 medium (Thermo Fisher Scientific) supplemented with 10% fetal bovine serum (Sigma) at 37°C with 5% CO2. The identity of these two cell lines was confirmed in SHERLOCK tests (Figure 1). Commercially available HEK 293T cells (Lonza), quality-checked negative for Mycoplasma contamination, were cultured in complemented dMEM (Merck) at 37°C with 5% CO2.
 
-## Epidemiological surveys
+### Epidemiological surveys
 
 Pig blood samples were collected from the external jugular vein in heparinized tubes during two independent surveys in Côte d'Ivoire and Guinea. In Côte d'Ivoire, 224 free-ranging pigs were sampled in May, June, and July 2021 in the Bonon and Sinfra hypo-endemic HAT foci, the Bouaflé and Vavoua historical HAT foci and the Brobo HAT-free area. In Guinea, 200 farm pigs were sampled in March 2023 in the N’zérékoré prefecture, an ancient gHAT focus. Four drops of blood were dried on 4th grade Whatman filter paper (Cytivia Life Sciences) and conserved in sealed plastic bags with silica gel at ambient temperature for several months until TNA extraction.
 
-## Nucleic acid extraction
+### Nucleic acid extraction
 
 RNA was extracted from bloodstream form parasites (T. b. brucei Lister 427, T. b. gambiense ELIANE, T. congolense Savannah subgroup IL1180, T. vivax Magnan, and T. theileri), HEK 293T cells and whole blood from French cattle, pig, sheep, and goat (Bergerie de la Combe aux Loups). Bloodstream form parasites from infected mice, as well as cultured HEK 293T cells, were harvested in TRIzol (Life Technologies) and Chloroform:Isoamyl alcohol (24:1, Sigma-Aldrich) was added, followed by centrifugation at 13,000 rpm at 4°C for 15 min. The upper aqueous phase was transferred to a fresh tube containing 0.5 ml of 75% ethanol. After incubation for 10 min at room temperature, RNA was extracted using a NucleoSpin RNA column (Macherey Nagel) or a RNAeasy kit (QIAGEN) according to the manufacturer’s instructions. 500 µl of blood sampled from French cattle, pig, sheep and goats was treated with 500 µl lysis buffer supplemented by 50 µl Proteinase K and incubated for 30 min at 56°C. The resulting mixture was transferred into a QIAshredder column (QIAGEN) and centrifuged at 13,000 rpm for 2 min. The flow-through was then used for RNA extraction using an RNeasy Mini kit (QIAGEN) according to the manufacturer recommendations. After extraction, qualities and quantities of RNA were evaluated using the NanoDrop One (Ozyme).
 
 For extraction of TNA from dry blood spots (DBS), three 6 mm punches from one spot of each animal DBS were resuspended in 300 µl of lysis buffer supplemented by 30 µl of Proteinase K and incubated for 30 min at 56°C. The punches and liquid were transferred into a QIAshredder column (QIAGEN) and centrifuged at 13,000 rpm for 2 min. TNA was extracted from the flow-through using the Maxwell RSC Buccal Swab Kit (AS1640) with the Maxwell RSC Instrument (AS4500) according to the manufacturer’s instructions. For each sample, all SHERLOCK assays were performed from a single TNA extraction.
 
-## Target selection, RPA primers, and crRNA design
+### Target selection, RPA primers, and crRNA design
 
 Alignments of the 18S rRNA, IFX, and GAPDH genes were performed on sequences from different species (Supplementary file 1) using Clustal Omega (Sievers and Higgins, 2018). The distance matrix representing the percentage identity between each sequence was represented using GraphPad Prism software (V.10).
 
@@ -170,21 +216,25 @@ The presence of SNPs in the target regions was assessed by aligning sequence var
 
 Primers for Recombinase Polymerase Amplification (RPA) of targeted regions were designed in Primer-BLAST (Ye et al., 2012) using the customized parameters described by Kellner et al., 2019. Oligonucleotides prone to generate self-dimers or cross-primer dimers detected by Multiple Primer Analyzer (Thermo Fisher) were discarded. Primers selected for each SHERLOCK assay are listed and highlighted in Supplementary file 2. The T7 promoter sequence (5′ GAAATTAATACGACTCACTATAGGG) was added at each 5′ end of the selected forward primers to enable the in vitro transcription necessary for Cas13a detection (Kellner et al., 2019).
 
-## Production of crRNAs and positive controls
+### Production of crRNAs and positive controls
 
 crRNA production was carried out as previously described (Kellner et al., 2019; Sima et al., 2022). Briefly, each crRNA DNA template, containing the spacer (specific targeted region) followed by the direct repeat (5′GATTTAGACTACCCCAAAAACGAAGGGGACTAAAAC) and the T7 promoter sequence, was in vitro transcribed using the HiScribe T7 Quick High Yield RNA Synthesis Kit (NEB) and purified using magnetic beads (Agencourt RNAClean XP). DNA template sequences used for the synthesis of each crRNA are detailed in Supplementary file 2.
 
 For the production of the synthetic positive controls, in vitro transcription of the targets was performed as previously described (Sima et al., 2022) using RNA from the target species for each specific assay. The amount of template used to produce the positive control for each assay was as follows: 200 ng of RNA from T. b. brucei Lister 427 for 18S pan-trypanosomatid and 18S pan-Trypanozoon assays, 120 ng of RNA from T. b. gambiense ELIANE strain for TgSGP assay, 120 ng of RNA from T. vivax Magnan strain for IFX assay, 230 ng of RNA from T. congolense Savannah subgroup IL1180 strain for 18S T. congolense-specific assay and 5 ng of RNA from T. theileri for 18S T. theileri-specific assay. Due to a lack of T. simiae and T. suis genetic material, the positive controls were synthesized at Eurogentec using the in-silico predicted sequence of the target region. Primers and target regions used to produce positive controls are listed in the Supplementary file 3.
 
-## SHERLOCK assays
+### SHERLOCK assays
 
 SHERLOCK assays were performed as previously described (Kellner et al., 2019; Sima et al., 2022). RPA was performed using the TwistAmp Basic kit (TwistDx) following the manufacturer’s instructions with slight modifications. To enable reverse transcription of the RPA (RT-RPA), 2.2 U of transcriptor reverse transcriptase (Roche) was added to the reaction. Specific RPA primer pairs were used for each target amplification at a concentration of 480 nM per primer, and the amplification reaction was carried out in a heating block at 42°C for 45 min (Sima et al., 2022). Leptotrichia wadeii Cas13a (LwCas13a) enzyme was produced as previously described (Kellner et al., 2019; Sima et al., 2022). Briefly, pC013-Twinstrep-SUMO-huLwCas13a plasmid (Addgene plasmid #90097) was inserted into Escherichia coli RosettaTM 2(DE3) pLysS competent cells for LwCas13a expression and purification (Gootenberg et al., 2017). Purified LwCas13a was conserved in Storage buffer (SB: Tris-HCl 1 M, NaCl 5 M, DTT 1 M and glycerol) (Kellner et al., 2019) in single-use aliquots at –80°C to avoid freeze–thaw cycles.
 
 The Cas13a–crRNA-mediated target detection reaction was performed simultaneously with the in vitro transcription of the target amplified by RT-RPA. In vitro transcription of the amplified target was performed using T7 RNA polymerase (Biosearch technology). Each Cas13a detection reaction was run in triplicate on a TECAN plate reader (INFINITE F200 PRO M PLEX) and fluorescence readouts were collected every 10 min for 3 hr. All reactions were carried out with the inclusion of a negative control template (NCT) adding nuclease-free water as input, and a positive control template (PCT), here the in vitro produced positive control for each specific SHERLOCK. For screening samples from epidemiological surveys, the same protocol as described above was used, except a TECAN plate reader (INFINITE F200 PRO Option Infinite F Nano +) was used and the assay was performed without replicates. Optimizations were carried out either at Institut Pasteur in Paris (France) or at INTERTRYP unit in Montpellier (France), while analysis of samples from epidemiological surveys was carried out at Institut Pasteur of Guinea.
 
-## Data representation and statistical analyses
+### Data representation and statistical analyses
 
-Fold-change over background fluorescence was used to represent fluorescence readouts for all SHERLOCK assays. Background fluorescence is given by the NCT evaluation, where water is used as input material for the RPA reaction. For each test, sample fluorescence obtained after 3 hr of reading was divided by NCT fluorescence at the same time,FC=Fsamplet=3hFnctmeant=3h\begin{document}$$\displaystyle  FC=\frac{Fsamplet=3h}{Fnctmeant=3h}$$\end{document}
+Fold-change over background fluorescence was used to represent fluorescence readouts for all SHERLOCK assays. Background fluorescence is given by the NCT evaluation, where water is used as input material for the RPA reaction. For each test, sample fluorescence obtained after 3 hr of reading was divided by NCT fluorescence at the same time,
+
+$$
+FC=\frac{Fsamplet=3h}{Fnctmeant=3h}
+$$
 
 where FC represents Fold-Change over background fluorescence, Fsample t = 3h represents sample fluorescence obtained after 3 hr and Fnct mean t = 3h represents NCT fluorescence after 3 hr of reactions.
 

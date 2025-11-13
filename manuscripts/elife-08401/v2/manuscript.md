@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.08401.001 Tumor suppressor p53 is the most frequently mutated gene in tumors. Many mutant p53 (mutp53) proteins promote tumorigenesis through the gain-of-function (GOF) mechanism. Mutp53 proteins often accumulate to high levels in tumors, which is critical for mutp53 GOF. Its underlying mechanism is poorly understood. Here, we found that BAG2, a protein of Bcl-2 associated athanogene (BAG) family, promotes mutp53 accumulation and GOF in tumors. Mechanistically, BAG2 binds to mutp53 and translocates to the nucleus to inhibit the MDM2-mutp53 interaction, and MDM2-mediated ubiquitination and degradation of mutp53. Thus, BAG2 promotes mutp53 accumulation and GOF in tumor growth, metastasis and chemoresistance. BAG2 is frequently overexpressed in tumors. BAG2 overexpression is associated with poor prognosis in patients and mutp53 accumulation in tumors. These findings revealed a novel and important mechanism for mutp53 accumulation and GOF in tumors, and also uncovered an important role of BAG2 in tumorigenesis through promoting mutp53 accumulation and GOF. DOI: http://dx.doi.org/10.7554/eLife.08401.001
+Tumor suppressor p53 is the most frequently mutated gene in tumors. Many mutant p53 (mutp53) proteins promote tumorigenesis through the gain-of-function (GOF) mechanism. Mutp53 proteins often accumulate to high levels in tumors, which is critical for mutp53 GOF. Its underlying mechanism is poorly understood. Here, we found that BAG2, a protein of Bcl-2 associated athanogene (BAG) family, promotes mutp53 accumulation and GOF in tumors. Mechanistically, BAG2 binds to mutp53 and translocates to the nucleus to inhibit the MDM2-mutp53 interaction, and MDM2-mediated ubiquitination and degradation of mutp53. Thus, BAG2 promotes mutp53 accumulation and GOF in tumor growth, metastasis and chemoresistance. BAG2 is frequently overexpressed in tumors. BAG2 overexpression is associated with poor prognosis in patients and mutp53 accumulation in tumors. These findings revealed a novel and important mechanism for mutp53 accumulation and GOF in tumors, and also uncovered an important role of BAG2 in tumorigenesis through promoting mutp53 accumulation and GOF.
 
 ## Introduction
 
@@ -36,109 +36,513 @@ In this study, to investigate the mechanism underlying mutp53 accumulation in tu
 
 ## Results
 
-## BAG2 is a novel mutp53-interacting protein in Trp53R172H/R172H mouse tumors and human cells
+### BAG2 is a novel mutp53-interacting protein in Trp53R172H/R172H mouse tumors and human cells
 
-R172H mutp53 knock-in (Trp53
+R172H mutp53 knock-in (Trp53R172H/R172H) mice mainly develop lymphomas in the spleen and thymus (Lang et al., 2004; Olive et al., 2004). Mutp53 protein levels are drastically increased in majority of tumors from Trp53R172H/R172H mice but are very low in normal tissues. To investigate the mechanism underlying mutp53 accumulation in tumors, we screened for proteins interacting with mutp53 in thymic lymphomas of Trp53R172H/R172H mice with drastic mutp53 accumulation (n = 3) using immunoprecipitation (IP) assays with an anti-p53 antibody followed by LC-MS/MS assays (Figure 1A). Normal tissues of Trp53R172H/R172H mice with low mutp53 levels were used as controls. LC-MS/MS assays identified a list of potential proteins binding to mutp53 in the thymic lymphomas of Trp53R172H/R172H mice (Figure 1B). Several known mutp53-binding proteins, including HSP90, Myosin, Cct8 and Pontin (Muller et al., 2005; Trinidad et al., 2013; Arjonen et al., 2014; Zhao et al., 2015), were among the list of proteins identified in tumors of Trp53R172H/R172H mice, which validated our approach. The complete list of proteins that bound to mutp53 in Trp53R172H/R172H tumors was listed in Table 1.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig1-v2.jpg)
 
-**Figure 1.:** mice.R172H/R172H(A) Work flow for identification of proteins interacting with mutp53 protein. Lysate of thymic lymphomas and normal thymus from Trp53 mice were subjected to co-immunoprecipitation (co-IP) using anti-p53 (FL393) beads. Eluted proteins were separated in a 4–15% SDS PAGE gel and analyzed by LC-MS/MS. (R172H/R172HB) The table of a list of protein candidates that interacted with mutp53 protein. (C) The interaction of mutp53 with BAG2 in thymic lymphomas of Trp53 mice was confirmed by co-IP assays followed by Western blot assays. Thymic lymphomas from Trp53R172H/R172H mice and p53R172H/R172H−/− mice as well as normal thymic tissue from Trp53 mice were subjected to co-IP assays using an anti-p53 antibody.R172H/R172HDOI: http://dx.doi.org/10.7554/eLife.08401.003
+**Figure 1.:** (A) Work flow for identification of proteins interacting with mutp53 protein. Lysate of thymic lymphomas and normal thymus from Trp53R172H/R172H mice were subjected to co-immunoprecipitation (co-IP) using anti-p53 (FL393) beads. Eluted proteins were separated in a 4–15% SDS PAGE gel and analyzed by LC-MS/MS. (B) The table of a list of protein candidates that interacted with mutp53 protein. (C) The interaction of mutp53 with BAG2 in thymic lymphomas of Trp53R172H/R172H mice was confirmed by co-IP assays followed by Western blot assays. Thymic lymphomas from Trp53R172H/R172H mice and p53−/− mice as well as normal thymic tissue from Trp53R172H/R172H mice were subjected to co-IP assays using an anti-p53 antibody.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** mice.R172H/R172HNormal thymus, spleen and kidney tissues from Trp53 mice were subjected to co-IP assays using an anti-p53 antibody (FL393).R172H/R172HDOI: http://dx.doi.org/10.7554/eLife.08401.004
+**Figure 1—figure supplement 1.:** Normal thymus, spleen and kidney tissues from Trp53R172H/R172H mice were subjected to co-IP assays using an anti-p53 antibody (FL393).
 
-Interestingly, BAG2 was identified as a potential mutp53 binding protein (
+**Table 1.**
+ The list of identified mutp53-interaction protein candidates
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene names</th>
+      <th colspan="2">Average counts</th>
+    </tr>
+    <tr>
+      <th>Normal thymus</th>
+      <th>Thymic lymphoma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ctsb</td>
+      <td>0</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Tfrc</td>
+      <td>0</td>
+      <td>15.5</td>
+    </tr>
+    <tr>
+      <td>Bag2</td>
+      <td>0</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Stip1</td>
+      <td>0</td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td>Hyou1</td>
+      <td>0</td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td>Cad</td>
+      <td>0</td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td>Rps19</td>
+      <td>0</td>
+      <td>14.5</td>
+    </tr>
+    <tr>
+      <td>Pfn1</td>
+      <td>0</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Cand1</td>
+      <td>0</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Hspa2</td>
+      <td>0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Lcp1</td>
+      <td>0</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Sar1a</td>
+      <td>0</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <td>Fam49b</td>
+      <td>0</td>
+      <td>10.5</td>
+    </tr>
+    <tr>
+      <td>Khsrp</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Ifi47</td>
+      <td>0</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Cse1l</td>
+      <td>0</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Ipo5</td>
+      <td>0</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>Hsp90b1</td>
+      <td>0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Hspbp1</td>
+      <td>0</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Rfc5</td>
+      <td>0</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Tkt</td>
+      <td>0</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>myosin</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Hadhb</td>
+      <td>0</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Hsp70</td>
+      <td>1</td>
+      <td>66</td>
+    </tr>
+    <tr>
+      <td>Phgdh</td>
+      <td>1</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Myh9</td>
+      <td>5</td>
+      <td>81.5</td>
+    </tr>
+    <tr>
+      <td>Hspd1</td>
+      <td>2</td>
+      <td>32.5</td>
+    </tr>
+    <tr>
+      <td>Rpl9-ps4</td>
+      <td>1</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Ubr5</td>
+      <td>1</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>Dars</td>
+      <td>1</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>Iqgap1</td>
+      <td>1</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Slc25a3</td>
+      <td>1</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Rars</td>
+      <td>1</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Ruvbl2</td>
+      <td>1</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Ddb1</td>
+      <td>1</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Hsph1</td>
+      <td>4</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>Dnajb4</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Aldoa</td>
+      <td>1</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Pcna</td>
+      <td>2</td>
+      <td>16.5</td>
+    </tr>
+    <tr>
+      <td>Eprs</td>
+      <td>1</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Hsp90</td>
+      <td>2</td>
+      <td>15.5</td>
+    </tr>
+    <tr>
+      <td>Gm9755</td>
+      <td>2</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>Dnaja1</td>
+      <td>3</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Atp5b</td>
+      <td>3</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Cltc</td>
+      <td>7</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>Gm5506</td>
+      <td>5</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Dnaja2</td>
+      <td>3</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>Bag5</td>
+      <td>7</td>
+      <td>31.5</td>
+    </tr>
+    <tr>
+      <td>Rps7</td>
+      <td>5</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <td>Ywhae</td>
+      <td>2</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Eef2</td>
+      <td>10</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>Adsl</td>
+      <td>2</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>Hsp90ab1</td>
+      <td>20</td>
+      <td>74.5</td>
+    </tr>
+    <tr>
+      <td>Gnb2l1</td>
+      <td>6</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Copg</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Rpl23</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Psmc6</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Pcbp2</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Pcbp1</td>
+      <td>3</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Pabpc4</td>
+      <td>5</td>
+      <td>15.5</td>
+    </tr>
+    <tr>
+      <td>Hspa8</td>
+      <td>77</td>
+      <td>237.5</td>
+    </tr>
+    <tr>
+      <td>Fcgr4</td>
+      <td>13</td>
+      <td>38.5</td>
+    </tr>
+    <tr>
+      <td>Mcm7</td>
+      <td>4</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Hadha</td>
+      <td>3</td>
+      <td>8.5</td>
+    </tr>
+    <tr>
+      <td>Kpnb1</td>
+      <td>5</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Atp5a1</td>
+      <td>9</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Pontin</td>
+      <td>4</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Bat3</td>
+      <td>3</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Pdia6</td>
+      <td>3</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>Dnajc7</td>
+      <td>38</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>Rps15a</td>
+      <td>6</td>
+      <td>13.5</td>
+    </tr>
+    <tr>
+      <td>Aldh2</td>
+      <td>4</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Trim28</td>
+      <td>5</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Eef1a1</td>
+      <td>16</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>St13</td>
+      <td>6</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Cct8</td>
+      <td>36</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Psmd11</td>
+      <td>6</td>
+      <td>9</td>
+    </tr>
+  </tbody>
+</table>
+
+Interestingly, BAG2 was identified as a potential mutp53 binding protein (Figure 1B). The BAG2-mutp53 interaction in Trp53R172H/R172H tumors was confirmed by co-IP followed by Western blot assays (Figure 1C). The weak interaction between BAG2 and mutp53 was also observed in normal tissues from Trp53R172H/R172H mice, including thymus, spleen and kidney (Figure 1C, Figure 1—figure supplement 1). To investigate whether BAG2 specifically interacts with mutp53 in human cells, human p53-null lung cancer H1299 cells were transfected with human BAG2-HA expression vectors together with human wtp53 or mutp53 (R175H) expression vectors. Co-IP assays employing either anti-p53 or anti-HA antibodies showed that BAG2 preferentially bound to mutp53 compared with wtp53 (Figure 2A). In addition to R175H, the strong BAG2-mutp53 interaction was observed in H1299 cells with ectopic expression of different mutp53 proteins, including R248W and R273H, respectively (Figure 2B). The interaction between the endogenous BAG2 and mutp53 proteins was also observed in several human cancer cell lines, including human colorectal cancer HCT116 p53R248W/−, HT-29 and SW480 cell lines which contain a single copy of Trp53 gene with R248W and R273H mutation, respectively, human breast cancer SK-BR-3, MDA-MB-468 cell lines which contain a single copy of Trp53 gene with R175H and R273H mutation, respectively, and human hepatocellular carcinoma Huh-7 cell lines which contain a single copy of Trp53 gene with Y220C mutation (Figure 2C, Figure 2—figure supplement 1). Together, these results demonstrate that BAG2 is a novel mutp53-specific binding partner, and this interaction is conserved in both mouse tumors and human cancer cells.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig2-v2.jpg)
 
-**Figure 2.:** (A) Ectopically expressed BAG2 preferentially interacted with mutp53 (R175H) protein compared with wild-type p53 (wtp53) protein in H1299 cells. H1299 cells were transiently transfected with vectors expressing mutp53 (R175H) or wtp53 together with HA-tagged BAG2 (BAG2-HA) expression vectors. Antibodies used for IP assays: HA for BAG2-HA and DO-1 for p53. (B) BAG2 interacted with several hotspot mutp53 proteins (R175H, R248W and R273H) in H1299 cells. H1299 cells were transiently transfected with vectors expressing mutp53 (R175H, R248W or R273H) together with BAG2-HA expression vectors. (C) The interaction of endogenous BAG2 with mutp53 (R248W) was observed in human colorectal cancer HCT116 p53R248W/− cells containing one allele of mutant p53 gene (R248W). (D) BAG2 interacted with mutp53 DNA binding domain (DBD). Upper panel: Schematic diagram showing the domain structure of mutp53 (R175H). Lower Panel: H1299 cells were transiently transfected with expression vectors of HA-tagged mutp53 (R175H) fragments together with BAG2-Flag expression vectors. Antibodies used for IP: Flag for BAG2-Flag proteins. (E) BAG2 preferentially interacted with the DBD of mutp53 (R175H) but not wtp53 DBD. H1299 cells were transiently transfected with expression vectors of HA-tagged mutp53 (R175H) DBD or wtp53 DBD together with BAG2-Flag expression vectors. (F) Mutp53 interacted with the Bcl-2 associated athanogene (BAG) domain of BAG2. Left panel: Schematic diagram showing the domain structure of BAG2. Right panel: H1299 cells were transiently transfected with expression vectors of mutp53 (R175H) together with Flag-tagged BAG2 fragments.DOI: http://dx.doi.org/10.7554/eLife.08401.006
+**Figure 2.:** (A) Ectopically expressed BAG2 preferentially interacted with mutp53 (R175H) protein compared with wild-type p53 (wtp53) protein in H1299 cells. H1299 cells were transiently transfected with vectors expressing mutp53 (R175H) or wtp53 together with HA-tagged BAG2 (BAG2-HA) expression vectors. Antibodies used for IP assays: HA for BAG2-HA and DO-1 for p53. (B) BAG2 interacted with several hotspot mutp53 proteins (R175H, R248W and R273H) in H1299 cells. H1299 cells were transiently transfected with vectors expressing mutp53 (R175H, R248W or R273H) together with BAG2-HA expression vectors. (C) The interaction of endogenous BAG2 with mutp53 (R248W) was observed in human colorectal cancer HCT116 p53R248W/− cells containing one allele of mutant p53 gene (R248W). (D) BAG2 interacted with mutp53 DNA binding domain (DBD). Upper panel: Schematic diagram showing the domain structure of mutp53 (R175H). Lower Panel: H1299 cells were transiently transfected with expression vectors of HA-tagged mutp53 (R175H) fragments together with BAG2-Flag expression vectors. Antibodies used for IP: Flag for BAG2-Flag proteins. (E) BAG2 preferentially interacted with the DBD of mutp53 (R175H) but not wtp53 DBD. H1299 cells were transiently transfected with expression vectors of HA-tagged mutp53 (R175H) DBD or wtp53 DBD together with BAG2-Flag expression vectors. (F) Mutp53 interacted with the Bcl-2 associated athanogene (BAG) domain of BAG2. Left panel: Schematic diagram showing the domain structure of BAG2. Right panel: H1299 cells were transiently transfected with expression vectors of mutp53 (R175H) together with Flag-tagged BAG2 fragments.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The interaction of endogenous BAG2 with mutp53 was observed in human colorectal cancer HT-29 and SW480 cell lines which contain one allele of mutant Trp53 gene (R273H), human breast cancer SK-BR-3 and MDA-MB-468 cell lines which contain one allele of mutant Trp53 gene (R175H and R273H, respectively), and human hepatocellular carcinoma Huh-7 cells which contain one allele of mutant Trp53 gene (Y220C).DOI: http://dx.doi.org/10.7554/eLife.08401.007
+**Figure 2—figure supplement 1.:** The interaction of endogenous BAG2 with mutp53 was observed in human colorectal cancer HT-29 and SW480 cell lines which contain one allele of mutant Trp53 gene (R273H), human breast cancer SK-BR-3 and MDA-MB-468 cell lines which contain one allele of mutant Trp53 gene (R175H and R273H, respectively), and human hepatocellular carcinoma Huh-7 cells which contain one allele of mutant Trp53 gene (Y220C).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** BAG2 interacted with DBD of mutp53 (R248W and R273H) but not the mutp53 fragments lacking DBD. H1299 cells were transiently transfected with expression vectors of the HA-tagged DBD of mutp53 (R248W and R273H) or mutp53 fragment lacking DBD (P6 as indicated in Figure 2D) together with BAG2-Flag expression vectors.DOI: http://dx.doi.org/10.7554/eLife.08401.008
+**Figure 2—figure supplement 2.:** BAG2 interacted with DBD of mutp53 (R248W and R273H) but not the mutp53 fragments lacking DBD. H1299 cells were transiently transfected with expression vectors of the HA-tagged DBD of mutp53 (R248W and R273H) or mutp53 fragment lacking DBD (P6 as indicated in Figure 2D) together with BAG2-Flag expression vectors.
 
-## DBD of mutp53 and BAG domain of BAG2 are essential for the BAG2-mutp53 interaction
+### DBD of mutp53 and BAG domain of BAG2 are essential for the BAG2-mutp53 interaction
 
 p53 protein contains two transcriptional activation domains (AD1 and AD2), a sequence-specific DBD, a tetramerization domain and a C-terminal domain (C-ter). To define the regions of mutp53 required for the BAG2-mutp53 interaction, expression vectors of fragments containing different mutp53 domains with HA-tag (Figure 2D, upper panel) and BAG2-Flag expression vectors were co-transfected into p53-null H1299 cells. Results of co-IP assays using an anti-Flag antibody showed that BAG2 interacted with all mutp53 (R175H) fragments containing the mutp53 DBD (P1-P5 in Figure 2D), but not the fragment lacking the mutp53 DBD (P6 in Figure 2D). Furthermore, BAG2 preferentially bound to DBDs of different mutp53 (R175H, R248W and R273H) but not wtp53 DBD (Figure 2E, Figure 2—figure supplement 2).
 
 The regions of BAG2 required for the BAG2-mutp53 interaction was examined by co-transfecting cells with vectors expressing different Flag-tagged BAG2 deletion mutants (Figure 2F, left panel) and mutp53 (R175H) expression vectors followed by co-IP assays. BAG2 contains a BAG domain (amino acids 91–211) at the C-terminus (Dai et al., 2005). The fragments containing the BAG domain interacted with mutp53 while the N-terminus of BAG2 protein lacking the BAG domain did not interact with mutp53 (Figure 2F). Interestingly, the binding of mutp53 to the BAG2 fragment which lacks the N-terminus is much weaker compared with the full length (FL) BAG2 protein. It is possible that the N-terminus of BAG2 has an additional role for efficient BAG2-mutp53 complex formation although itself does not directly interact with mutp53. These results demonstrate that mutp53 DBD and BAG domain of BAG2 are essential for the BAG2-mutp53 interaction.
 
-## BAG2 promotes mutp53 protein accumulation in cancer cells
+### BAG2 promotes mutp53 protein accumulation in cancer cells
 
-It was reported that BAG2 stabilizes some of its binding proteins, such as PINK1 and ataxin3-80Q (
+It was reported that BAG2 stabilizes some of its binding proteins, such as PINK1 and ataxin3-80Q (Che et al., 2013, 2014). To investigate whether BAG2 regulates mutp53 protein levels, endogenous BAG2 was knocked down by 2 different siRNA oligos and its impact upon mutp53 protein levels was evaluated in HCT116 p53R248W/− cells and p53-null Saos2 cells with stable ectopic expression of different mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). The knockdown of BAG2 was confirmed at both mRNA and protein levels by real-time PCR and Western blot assays, respectively (Figure 3A,B). While BAG2 knockdown showed no apparent effect on mutp53 mRNA levels (Figure 3—figure supplement 1), BAG2 knockdown greatly decreased the mutp53 protein levels in cells (Figure 3A). The effect of BAG2 overexpression on mutp53 protein levels was also determined in these cells. Ectopic BAG2 expression by vectors clearly increased mutp53 protein levels (Figure 3C), while had no clear effect on mutp53 mRNA levels in cells (Figure 3—figure supplement 2). These results demonstrate that BAG2 increases mutp53 protein levels in cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig3-v2.jpg)
 
-**Figure 3.:** (A) Knockdown of endogenous BAG2 by 2 different siRNA oligos decreased the mutp53 protein levels in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). The knockdown of BAG2 by siRNA at the protein level was examined by Western blot assays. (B) The efficient knockdown of BAG2 by siRNA was confirmed at the mRNA level by real-time PCR. Data are present as mean ±SD (n = 3). (C) Ectopic expression of BAG2 by transfection of BAG2-HA expression vectors increased the mutp53 protein levels in cells. (D) Knockdown of endogenous BAG2 by siRNA decreased the mutp53 protein levels in HCT116p53R248W/−, Saos2-R175H, Saos2-R248W and Saos2-R273H cells but not in these cells treated with the proteasome inhibitor MG132 (40 µM for 6 hr). (E) BAG2 inhibited the degradation of mutp53 (R175H) mediated by MDM2 in H1299 cells. Indicated combination of expression vectors of BAG2-HA, mutp53 (R175H), MDM2 were transfected into the cells. (F) Knockdown of MDM2 abolished the effect of BAG2 knockdown on mutp53 protein level. Knockdown of endogenous BAG2 decreased mutp53 protein levels in Saos2-R175H cells but not in cells with knockdown of endogenous MDM2. (G) BAG2 reduced the interaction of mutp53 with MDM2 in H1299 cells as determined by IP assays. Indicated combination of expression vectors of BAG2-HA, mutp53 (R175H) and MDM2 were transfected into the cells. Antibodies used for IP: DO-1 for p53. (H) Ectopic BAG2 expression decreased the ubiquitination levels of mutp53 in H1299 cells. Cells were transfected with indicated combination of expression vectors of BAG2-HA, mutp53 (R175H), His-ubiquitin (His-Ub), followed by MG132 treatment. Mutp53 ubiquitination was determined by IP using DO-1 antibody (for mutp53) followed by Western blot assays using an anti-Ub antibody. (I) Knockdown of endogenous BAG2 increased the ubiquitination levels of mutp53 in Saos2-R175H cells. Cells were transfected with indicated combination of BAG2 siRNAs and expression vectors of His-Ub followed by MG132 treatment.DOI: http://dx.doi.org/10.7554/eLife.08401.009
+**Figure 3.:** (A) Knockdown of endogenous BAG2 by 2 different siRNA oligos decreased the mutp53 protein levels in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). The knockdown of BAG2 by siRNA at the protein level was examined by Western blot assays. (B) The efficient knockdown of BAG2 by siRNA was confirmed at the mRNA level by real-time PCR. Data are present as mean ±SD (n = 3). (C) Ectopic expression of BAG2 by transfection of BAG2-HA expression vectors increased the mutp53 protein levels in cells. (D) Knockdown of endogenous BAG2 by siRNA decreased the mutp53 protein levels in HCT116p53R248W/−, Saos2-R175H, Saos2-R248W and Saos2-R273H cells but not in these cells treated with the proteasome inhibitor MG132 (40 µM for 6 hr). (E) BAG2 inhibited the degradation of mutp53 (R175H) mediated by MDM2 in H1299 cells. Indicated combination of expression vectors of BAG2-HA, mutp53 (R175H), MDM2 were transfected into the cells. (F) Knockdown of MDM2 abolished the effect of BAG2 knockdown on mutp53 protein level. Knockdown of endogenous BAG2 decreased mutp53 protein levels in Saos2-R175H cells but not in cells with knockdown of endogenous MDM2. (G) BAG2 reduced the interaction of mutp53 with MDM2 in H1299 cells as determined by IP assays. Indicated combination of expression vectors of BAG2-HA, mutp53 (R175H) and MDM2 were transfected into the cells. Antibodies used for IP: DO-1 for p53. (H) Ectopic BAG2 expression decreased the ubiquitination levels of mutp53 in H1299 cells. Cells were transfected with indicated combination of expression vectors of BAG2-HA, mutp53 (R175H), His-ubiquitin (His-Ub), followed by MG132 treatment. Mutp53 ubiquitination was determined by IP using DO-1 antibody (for mutp53) followed by Western blot assays using an anti-Ub antibody. (I) Knockdown of endogenous BAG2 increased the ubiquitination levels of mutp53 in Saos2-R175H cells. Cells were transfected with indicated combination of BAG2 siRNAs and expression vectors of His-Ub followed by MG132 treatment.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Knockdown of endogenous BAG2 had no apparent effect on the mRNA levels of mutp53 in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). Data are present as mean ±SD (n = 3).DOI: http://dx.doi.org/10.7554/eLife.08401.010
+**Figure 3—figure supplement 1.:** Knockdown of endogenous BAG2 had no apparent effect on the mRNA levels of mutp53 in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). Data are present as mean ±SD (n = 3).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Ectopic expression of BAG2 had no apparent effect on the mRNA levels of mutp53 in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). Data are present as mean ±SD (n = 3).DOI: http://dx.doi.org/10.7554/eLife.08401.011
+**Figure 3—figure supplement 2.:** Ectopic expression of BAG2 had no apparent effect on the mRNA levels of mutp53 in HCT116 p53R248W/− and Saos2 cells with stable ectopic expression of mutp53 (Saos2-R175H, Saos2-R248W and Saos2-R273H). Data are present as mean ±SD (n = 3).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** −/− cells.(A) The mRNA expression levels of BAG2 were examined in cells by using Taqman real-time PCR and normalized with actin. Data are presented as mean ±SD (n = 6). (B) The protein levels of BAG2 were examined in cells by Western blot assays.DOI: http://dx.doi.org/10.7554/eLife.08401.012
+**Figure 3—figure supplement 3.:** (A) The mRNA expression levels of BAG2 were examined in cells by using Taqman real-time PCR and normalized with actin. Data are presented as mean ±SD (n = 6). (B) The protein levels of BAG2 were examined in cells by Western blot assays.
 
-## BAG2 inhibits the degradation of mutp53 protein mediated by MDM2
+### BAG2 inhibits the degradation of mutp53 protein mediated by MDM2
 
 BAG2 is a co-chaperone protein, which can regulate the ubiquitination and degradation of some proteins (Dai et al., 2005; Che et al., 2013). Here, we investigated whether BAG2 promotes mutp53 protein accumulation through the inhibition of mutp53 protein ubiquitination and degradation. Since endogenous BAG2 expression levels are relatively higher in Saos2 and HCT116 p53R248W/− cells compared with H1299 cells as determined at the RNA and protein levels (Figure 3—figure supplement 3), experiments with knockdown of endogenous BAG2 were performed by using Saos2 and HCT116 p53R248W/− cells, and experiments with ectopic BAG2 expression were performed by using H1299 cells. We found that blocking proteasomal degradation by the proteasome inhibitor MG132 largely abolished the effect of BAG2 knockdown on mutp53 protein levels in HCT116 p53R248W/−, Saos2-R175H, Saos2-R248W and Saos2-R273H cells (Figure 3D). Ectopic expression of MDM2 clearly down-regulated mutp53 R175H in H1299 cells co-transfected with vectors expressing mutp53 R175H and MDM2 (Figure 3E), which is consistent with previous reports (Lukashchuk and Vousden, 2007; Zheng et al., 2013). Notably, co-expression of BAG2 largely reduced the degradation of mutp53 protein mediated by MDM2 (Figure 3E). Consistently, knockdown of endogenous MDM2 clearly increased mutp53 protein levels in Saoa2-R175H cells (Figure 3F). Notably, the effect of BAG2 knockdown on mutp53 protein levels was greatly reduced in cells with MDM2 knockdown, indicating that the effect of BAG2 knockdown on mutp53 protein levels is largely mediated by MDM2 (Figure 3F). MDM2 directly binds to mutp53 to negatively regulate mutp53. Co-expression of BAG2 clearly decreased the interaction of MDM2 with mutp53 in H1299 cells, which could be an important mechanism by which BAG2 inhibits MDM2-mediated mutp53 degradation (Figure 3G).
 
 To investigate whether BAG2 regulates mutp53 protein through inhibiting mutp53 ubiquitination, in vivo ubiquitination assays were employed. Ectopic BAG2 expression reduced ubiquitination of mutp53 in H1299 cells (Figure 3H). Knockdown of endogenous BAG2 by siRNA increased ubiquitination of mutp53 in Saos2-R175H cells (Figure 3I). These results demonstrate that BAG2 interacts with mutp53, and inhibits MDM2 binding to and degradation of mutp53, which leads to the mutp53 accumulation in cells.
 
-## Mutp53 promotes the nuclear translocation of BAG2
+### Mutp53 promotes the nuclear translocation of BAG2
 
-It has been reported that BAG2 proteins were mainly localized in the cytoplasm (
+It has been reported that BAG2 proteins were mainly localized in the cytoplasm (Dai et al., 2005). Indeed, in H1299 cells with ectopic expression of BAG2 alone, BAG2 proteins were predominantly localized in the cytoplasm as determined by immunofluorescence (IF) staining (Figure 4A). Interestingly, we found that mutp53 promoted BAG2 nuclear translocation; ectopic expression of mutp53 (R175H, R248W and R273H), which is mainly localized in the nucleus, clearly increased the translocation of BAG2 from the cytoplasm to the nucleus in cells transfected with vectors expressing BAG2 together with mutp53. Furthermore, BAG2 was largely co-localized with mutp53 in the nucleus (Figure 4A). In contrast, ectopic expression of wtp53, which is also mainly localized in the nucleus, did not have an obvious effect on BAG2 nuclear translocation in cells (Figure 4A). The effect of mutp53 on BAG2 nuclear translocation was also confirmed by Western blot assays using whole cell lysates and nuclear extracts isolated from H1299 cells transfected with BAG2 vectors alone or together with mutp53 vectors (Figure 4B). Both mutp53 and MDM2 proteins contain a nuclear localization signal (NLS) and are mainly localized in the nucleus, where MDM2 binds to and ubiquitinates mutp53 protein. The translocation of BAG2 to the nucleus where it interacts with mutp53 may play an important role in blocking MDM2 to bind to and degrade mutp53. To test this possibility, we constructed the vector expressing the NLS mutant of mutp53 R175H (mutp53NLS) by mutating Lys305, Arg306, Lys319, Lys320 and Lys321 to Ala as reported (O'Keefe et al., 2003). Unlike mutp53 proteins which were mainly localized in the nucleus, mutp53NLS proteins were mainly localized in the cytoplasm as shown by IF staining (Figure 4A). While mutp53NLS readily interacted with BAG2 as determined by co-IP assays (Figure 4C), mutp53NLS could not promote the nuclear translocation of BAG2. BAG2 was mainly localized in the cytoplasm in H1299 co-transfected with vectors expressing BAG2 and mutp53NLS (Figure 4A). Notably, ectopic expression of MDM2 showed a limited effect on degradation of mutp53NLS protein compared with mutp53 (R175H) (Figure 4D). Furthermore, co-expression of BAG2 had no obvious effect on mutp53NLS protein levels in cells co-transfected with expression vectors of BAG2, mutp53NLS and MDM2 (Figure 4D). These results strongly suggest that mutp53 promotes BAG2 nuclear localization and the BAG2-mutp53 interaction in the nucleus inhibits MDM2-mediated mutp53 protein degradation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig4-v2.jpg)
 
-**Figure 4.:** (A) H1299 cells were transiently transfected with vectors expressing BAG2-HA together with or without expression vectors of mutp53 (R175H, R248W, R273H, or R175HNLS) and wtp53. The protein localization of BAG2 and p53 in cells was determined by immunofluorescence (IF) staining. Antibody used for IF: Flag for BAG2-Flag and FL393 for p53. Nuclei were stained with DAPI. Left panels: representative IF images. Scale bar: 10 µm. Right panels: quantification of the subcellular distribution of BAG2 in 200 cells for each independent experiment. Numerical data are presented in Figure 4—source data 1. Data are present as mean ±SD (n = 4). *p < 0.05; ***p < 0.001. (B) Mutp53 promotes the nuclear translocation of BAG2 in H1299 cells as determined by Western blot assays. The protein levels of BAG2 were determined in whole cell lysates and nuclear extracts prepared from H1299 cells transfected with vectors expressing BAG2-HA together with or without mutp53 (R175H, R248W or R273H). (C) BAG2 interacted with mutp53NLS (R175HNLS) as determined by co-IP assays. H1299 cells were transfected with vectors expressing BAG2-Flag and mutp53 R175H or mutp53 R175HNLS. (D) MDM2 had a much reduced effect on degradation of mutp53NLS compared with mutp53 (R175H). While BAG2 inhibited the degradation of mutp53 (R175H) mediated by MDM2, it had no obvious effect on mutp53NLS protein levels in H1299 cells transfected with vectors expressing BAG2-HA, MDM2 and mutp53NLS.DOI: http://dx.doi.org/10.7554/eLife.08401.01310.7554/eLife.08401.014Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08401.014
+**Figure 4.:** (A) H1299 cells were transiently transfected with vectors expressing BAG2-HA together with or without expression vectors of mutp53 (R175H, R248W, R273H, or R175HNLS) and wtp53. The protein localization of BAG2 and p53 in cells was determined by immunofluorescence (IF) staining. Antibody used for IF: Flag for BAG2-Flag and FL393 for p53. Nuclei were stained with DAPI. Left panels: representative IF images. Scale bar: 10 µm. Right panels: quantification of the subcellular distribution of BAG2 in 200 cells for each independent experiment. Numerical data are presented in Figure 4—source data 1. Data are present as mean ±SD (n = 4). *p < 0.05; ***p < 0.001. (B) Mutp53 promotes the nuclear translocation of BAG2 in H1299 cells as determined by Western blot assays. The protein levels of BAG2 were determined in whole cell lysates and nuclear extracts prepared from H1299 cells transfected with vectors expressing BAG2-HA together with or without mutp53 (R175H, R248W or R273H). (C) BAG2 interacted with mutp53NLS (R175HNLS) as determined by co-IP assays. H1299 cells were transfected with vectors expressing BAG2-Flag and mutp53 R175H or mutp53 R175HNLS. (D) MDM2 had a much reduced effect on degradation of mutp53NLS compared with mutp53 (R175H). While BAG2 inhibited the degradation of mutp53 (R175H) mediated by MDM2, it had no obvious effect on mutp53NLS protein levels in H1299 cells transfected with vectors expressing BAG2-HA, MDM2 and mutp53NLS.
 
-## BAG2 promotes mutp53 GOF in chemoresistance
+### BAG2 promotes mutp53 GOF in chemoresistance
 
-The accumulation of mutp53 proteins is critical for mutp53 GOF in tumorigenesis (
+The accumulation of mutp53 proteins is critical for mutp53 GOF in tumorigenesis (Blandino et al., 2012; Muller and Vousden, 2014). Chemoresistance is one of the most important mutp53 GOFs (Napoli et al., 2012; Masciarelli et al., 2014). 5-flurorouracil (5-FU), which can induce apoptosis in cells, is one of the most commonly used chemotherapeutic agents for a wide variety of human cancers. 5-FU induced less apoptosis in Saos2-R175H, Saos2-R248W and Saos2-R273H cells compared with Saos2-Con cells as determined by Annexin V staining and the levels of cleaved Caspase 3 protein, demonstrating that mutp53 promotes chemoresistance, which is consistent with previous reports (Napoli et al., 2012; Masciarelli et al., 2014) (Figure 5A,B). Notably, knockdown of BAG2 increased 5-FU-induced apoptosis in Saos2-R175H, Saos2-R248W and Saos2-R273H cells but showed a very limited effect in Saos2-Con cells (Figure 5A,B). Consistently, 5-FU induced less apoptosis in HCT116 p53R248W/− cells compared with HCT116 p53−/− cells. Knockdown of BAG2 increased 5-FU-induced apoptosis in HCT116 p53R248W/− but not HCT116 p53−/− cells (Figure 5C,D). These results demonstrate that BAG2, which promotes mutp53 protein accumulation, promotes mutp53 GOF in chemoresistance.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) BAG2 knockdown increased 5-FU-induced apoptosis in Saos2 cells in a largely mutp53-dependent manner. The endogenous BAG2 was knocked down by siRNA in Saos2-Con, Saos2-R175H, Saos2-R248W and Saos2-R273H cells followed by 5-FU treatment (4 mM) for 48 hr. In A, Annexin V assays were used to determine the percentage of apoptotic cells. Data are present as mean ±SD, n = 4. *p < 0.05; **p < 0.01; ***p < 0.001. In B, the levels of cleaved Caspase 3, which reflect the degree of apoptosis of cells, were determined by Western blot assays. (C, D) BAG2 knockdown increased 5-FU-induced apoptosis in HCT116 p53R248W/− cells but had a limited effect in HCT116 p53−/− cells as determined by Annexin V assays (C) and Western blot assays for the cleaved Caspase 3 protein levels (D). Numerical data for A and C are presented in Figure 5—source data 1, 2, respectively.DOI: http://dx.doi.org/10.7554/eLife.08401.01510.7554/eLife.08401.016Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08401.01610.7554/eLife.08401.017Figure 5—source data 2.DOI: http://dx.doi.org/10.7554/eLife.08401.017
+**Figure 5.:** (A, B) BAG2 knockdown increased 5-FU-induced apoptosis in Saos2 cells in a largely mutp53-dependent manner. The endogenous BAG2 was knocked down by siRNA in Saos2-Con, Saos2-R175H, Saos2-R248W and Saos2-R273H cells followed by 5-FU treatment (4 mM) for 48 hr. In A, Annexin V assays were used to determine the percentage of apoptotic cells. Data are present as mean ±SD, n = 4. *p < 0.05; **p < 0.01; ***p < 0.001. In B, the levels of cleaved Caspase 3, which reflect the degree of apoptosis of cells, were determined by Western blot assays. (C, D) BAG2 knockdown increased 5-FU-induced apoptosis in HCT116 p53R248W/− cells but had a limited effect in HCT116 p53−/− cells as determined by Annexin V assays (C) and Western blot assays for the cleaved Caspase 3 protein levels (D). Numerical data for A and C are presented in Figure 5—source data 1, 2, respectively.
 
-## BAG2 promotes mutp53 GOF in metastasis and tumor growth
+### BAG2 promotes mutp53 GOF in metastasis and tumor growth
 
-A critical GOF of mutp53 is to promote metastasis (
+A critical GOF of mutp53 is to promote metastasis (Lang et al., 2004; Olive et al., 2004). We found that BAG2 promotes mutp53 GOF in metastasis. Migration is a critical step of metastasis. Compared with p53-null cells (Saos2-Con and HCT116 p53−/− cells), mutp53 (R175H, R248W and R273H in Saos2 cells and R248W in HCT116 p53R248W/− cells) promoted migration of cells as determined by transwell assays (Figure 6A,B). Notably, knockdown of BAG2 by either siRNA oligos or shRNA vectors largely abolished the promoting effect of mutp53 on migration in these cells (Figure 6A,B, Figure 6—figure supplement 1). The effect of BAG2 on mutp53 GOF in metastasis was further examined in vivo. HCT116 p53R248W/− and HCT116 p53−/− cells stably transduced with shRNA vectors against BAG2 and control cells transduced with control shRNA vectors were injected into the tail vein of nude mice to evaluate the formation of lung metastatic tumors. Mutp53 (R248W) greatly promoted lung metastatic tumor formation in nude mice; HCT116 p53R248W/− cells formed significantly higher number and larger size of tumors compared with HCT116 p53−/− cells (Figure 6C). Notably, this effect was greatly abolished by knockdown of BAG2 (Figure 6C). These results demonstrate that BAG2 promotes mutp53 GOF in metastasis.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig6-v2.jpg)
 
-**Figure 6.:** (A) Knockdown of endogenous BAG2 by 2 siRNA oligos preferentially inhibited the migration ability of Saos2-R175H, Saos2-R248W and Saos2-R273H cells compared with Saos2-Con cells as determined by transwell assays. Left panel: representative images form a portion of the field. Right panel: quantification of average number and area of migrated cells/field. (B) Knockdown of endogenous BAG2 preferentially inhibited the migration ability of HCT116 p53R248W/− cells compared with HCT116 p53−/− cells. For A, B, date are presented as mean ±SD, n = 4. ***p < 0.001. (C) BAG2 knockdown greatly inhibited lung metastasis of HCT116 p53R248W/− cells but had a limited effect on HCT116 p53−/− cells in vivo. HCT116 p53R248W/− and HCT116 p53−/− cells stably infected with shRNA against BAG2 and their control cells were injected into the nude mice via the tail vein. The number and size of lung metastatic tumors were determined at 6 weeks after inoculation. Left panel: representative H&E images of lung sections. Scale bar: 200 µm. Middle and Right panels: quantification of average number (middle panel) and area (right panel) of lung metastatic tumors, respectively. Date are presented as mean ±SD, n = 8/group. **p < 0.01; ***p < 0.001. (D) Knockdown of BAG2 by shRNA preferentially inhibited the anchorage-independent growth in HCT116p53R248W/− cells but not HCT116 p53−/− cells. Upper panel: representative images of cell colonies in soft agar. Lower panel: quantification of average number of colonies/field. Date are presented as mean ±SD, n = 4. ***p < 0.001. (E) BAG2 knockdown inhibited the growth of HCT116 xenograft tumors in a largely mutp53-dependent manner. HCT116 p53R248W/− and HCT116 p53−/− cells stably infected with shRNA against BAG2 and their control cells were employed for xenograft tumor formation in nude mice. Upper panel: A representative image of xenograft tumors. Lower panel: growth curves of xenograft tumors. Tumor volumes are presented as mean ±SD, n = 6/group. ***p < 0.001. (F) BAG2 knockdown decreased mutp53 protein levels in HCT116 p53R248w/− xenograft tumors as determined by Western blot assays.DOI: http://dx.doi.org/10.7554/eLife.08401.018
+**Figure 6.:** (A) Knockdown of endogenous BAG2 by 2 siRNA oligos preferentially inhibited the migration ability of Saos2-R175H, Saos2-R248W and Saos2-R273H cells compared with Saos2-Con cells as determined by transwell assays. Left panel: representative images form a portion of the field. Right panel: quantification of average number and area of migrated cells/field. (B) Knockdown of endogenous BAG2 preferentially inhibited the migration ability of HCT116 p53R248W/− cells compared with HCT116 p53−/− cells. For A, B, date are presented as mean ±SD, n = 4. ***p < 0.001. (C) BAG2 knockdown greatly inhibited lung metastasis of HCT116 p53R248W/− cells but had a limited effect on HCT116 p53−/− cells in vivo. HCT116 p53R248W/− and HCT116 p53−/− cells stably infected with shRNA against BAG2 and their control cells were injected into the nude mice via the tail vein. The number and size of lung metastatic tumors were determined at 6 weeks after inoculation. Left panel: representative H&E images of lung sections. Scale bar: 200 µm. Middle and Right panels: quantification of average number (middle panel) and area (right panel) of lung metastatic tumors, respectively. Date are presented as mean ±SD, n = 8/group. **p < 0.01; ***p < 0.001. (D) Knockdown of BAG2 by shRNA preferentially inhibited the anchorage-independent growth in HCT116p53R248W/− cells but not HCT116 p53−/− cells. Upper panel: representative images of cell colonies in soft agar. Lower panel: quantification of average number of colonies/field. Date are presented as mean ±SD, n = 4. ***p < 0.001. (E) BAG2 knockdown inhibited the growth of HCT116 xenograft tumors in a largely mutp53-dependent manner. HCT116 p53R248W/− and HCT116 p53−/− cells stably infected with shRNA against BAG2 and their control cells were employed for xenograft tumor formation in nude mice. Upper panel: A representative image of xenograft tumors. Lower panel: growth curves of xenograft tumors. Tumor volumes are presented as mean ±SD, n = 6/group. ***p < 0.001. (F) BAG2 knockdown decreased mutp53 protein levels in HCT116 p53R248w/− xenograft tumors as determined by Western blot assays.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Knockdown of endogenous BAG2 by shRNA vectors was confirmed at the protein level in HCT116 p53R248W/− and HCT116 p53−/− cells by Western blot assays. (B, C) Knockdown of endogenous BAG2 by shRNA vectors preferentially inhibited the migration ability of HCT116 p53R248W/− cells compared with HCT116 p53−/− cells as determined by the transwell assays. (B) Representative images from a portion of the field. (C) Quantification of average number (left panel) and area (right panel) of migrated cells/field. Date are presented as mean ±SD, n = 6. ***p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.08401.019
+**Figure 6—figure supplement 1.:** (A) Knockdown of endogenous BAG2 by shRNA vectors was confirmed at the protein level in HCT116 p53R248W/− and HCT116 p53−/− cells by Western blot assays. (B, C) Knockdown of endogenous BAG2 by shRNA vectors preferentially inhibited the migration ability of HCT116 p53R248W/− cells compared with HCT116 p53−/− cells as determined by the transwell assays. (B) Representative images from a portion of the field. (C) Quantification of average number (left panel) and area (right panel) of migrated cells/field. Date are presented as mean ±SD, n = 6. ***p < 0.001.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** R248W/− cells but not HCT116 p53−/− cells.Numbers of viable cells of HCT116 p53R248W/− but not HCT116 p53−/− cells with and without knockdown of BAG2 were counted daily by the Vi-CELL cell counter (Beckman Coulter). Date are presented as mean ±SD, n = 4.DOI: http://dx.doi.org/10.7554/eLife.08401.020
+**Figure 6—figure supplement 2.:** Numbers of viable cells of HCT116 p53R248W/− but not HCT116 p53−/− cells with and without knockdown of BAG2 were counted daily by the Vi-CELL cell counter (Beckman Coulter). Date are presented as mean ±SD, n = 4.
 
 The mutp53 GOFs also include the abilities to promote proliferation of tumor cells and anchorage-independent cell growth (Zhang et al., 2013). As shown in Figure 6D and Figure 6—figure supplement 2, mutp53 (R248W) promoted proliferation and anchorage-independent growth of HCT116 cells. Notably, knockdown of BAG2 clearly inhibited the rates of cell proliferation and anchorage-independent growth in HCT116 p53R248W/− but not HCT116 p53−/− cells. The xenograft tumorigenesis assays were further performed to investigate whether BAG2 knockdown reduced mutp53 GOF in promoting tumor growth in vivo. As shown in Figure 6E, knockdown of BAG2 in HCT116 p53R248W/− cells significantly inhibited the growth of xenograft tumors, whereas knockdown of BAG2 in HCT116 p53−/− had much less effect on the growth of xenograft tumors. Furthermore, knockdown of endogenous BAG2 clearly decreased mutp53 protein levels in HCT116 p53R248W/− tumors as determined by Western blot assays (Figure 6F), which is consistent with the results obtained from in vitro cultured cells. These results demonstrate that BAG2 promotes mutp53 GOFs in tumor cell growth.
 
-## BAG2 is overexpressed in human tumors and high levels of BAG2 are associated with poor prognosis in cancer patients and mutp53 protein accumulation in human tumors
+### BAG2 is overexpressed in human tumors and high levels of BAG2 are associated with poor prognosis in cancer patients and mutp53 protein accumulation in human tumors
 
-Results from our study have demonstrated that BAG2 interacts with mutp53 and inhibits mutp53 degradation, which in turn promotes mutp53 protein accumulation and enhances mutp53 GOF in tumorigenesis. BAG2 expression was found elevated in many types of human tumors, including colorectal cancers, lung cancers, breast cancers and sarcomas, compared with normal tissues as analyzed in 4 databases from Oncomine (GSE20842,
+Results from our study have demonstrated that BAG2 interacts with mutp53 and inhibits mutp53 degradation, which in turn promotes mutp53 protein accumulation and enhances mutp53 GOF in tumorigenesis. BAG2 expression was found elevated in many types of human tumors, including colorectal cancers, lung cancers, breast cancers and sarcomas, compared with normal tissues as analyzed in 4 databases from Oncomine (GSE20842, Gaedcke et al., 2011; GSE10072, Landi et al., 2008; GSE3744, Richardson, 2006; GSE21122, Taylor et al., 2010) (Figure 7A). The amplification of BAG2 was observed in many types of human tumors as analyzed by employing the cBioportal for Cancer Genomics (Figure 7—figure supplement 1), suggesting that gene amplification is an important mechanism for BAG2 overexpression in tumors. We further investigated whether BAG2 overexpression is associated with poor prognosis in cancer patients by using the PrognoScan database. PrognoScan, which has a large collection of publicly available database with microarray data and clinical information, can assess the prognostic power of gene expression levels (Mizuno et al., 2009). As shown in Figure 7B–E, BAG2 overexpression is associated with poor disease free survival in colorectal cancer patients (HR = 1.40, p = 0.022), poor disease specific survival in lung cancer patients (HR = 2.4, p = 0.00001), poor relapse free survival in breast cancer patients (HR = 1.3, p = 0.00014) and poor distant recurrence free survival in soft tissue cancer patients (HR = 1.67, p = 0.00001). These results suggest the significant prognostic value of BAG2 expression levels for patients with various types of cancer.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig7-v2.jpg)
 
-**Figure 7.:** (A) BAG2 mRNA levels are elevated in human cancers, including colorectal cancers, lung cancers, breast cancers and sarcomas. BAG2 mRNA levels in normal and cancer tissues are presented as box plots based on data in four different datasets obtained from the Oncomine database. The expression levels of BAG2 are expressed in terms of a log2 median-centered intensity which is calculated by normalizing the intensity of BAG2 probe to the median of the probe intensities across the entire array. (B–E) High levels of BAG2 are associated with poor prognosis in cancer patients. Kaplan–Meier curves indicating the disease free survival of 226 colorectal cancer patients (B), the disease specific survival of 90 lung cancer patients (C), the relapse free survival of 204 breast cancer patients (D) and the distant recurrence free survival of 140 soft tissue cancer patients (E). The survival information and expression levels of BAG2 were obtained from the public available databases (GSE14333 for B, GSE14814 for C, GSE12276 for D, and GSE30929 for E) and analyzed by PrognoScan, a web based platform evaluating the prognostic power of gene expression levels. (F) BAG2 overexpression correlates with mutp53 protein accumulation (p = 0.036, χ2 test) but not wtp53 protein accumulation in human colorectal cancers. BAG2 mRNA levels were determined in human colorectal cancers and normalized with β-actin. (G) Schematic model depicting that mutp53 interacts with BAG2 and promotes BAG2 nuclear translocation to inhibit MDM2-mediated mutp53 protein degradation, which in turn promotes mutp53 protein accumulation and GOF in tumorigenesis.DOI: http://dx.doi.org/10.7554/eLife.08401.021
+**Figure 7.:** (A) BAG2 mRNA levels are elevated in human cancers, including colorectal cancers, lung cancers, breast cancers and sarcomas. BAG2 mRNA levels in normal and cancer tissues are presented as box plots based on data in four different datasets obtained from the Oncomine database. The expression levels of BAG2 are expressed in terms of a log2 median-centered intensity which is calculated by normalizing the intensity of BAG2 probe to the median of the probe intensities across the entire array. (B–E) High levels of BAG2 are associated with poor prognosis in cancer patients. Kaplan–Meier curves indicating the disease free survival of 226 colorectal cancer patients (B), the disease specific survival of 90 lung cancer patients (C), the relapse free survival of 204 breast cancer patients (D) and the distant recurrence free survival of 140 soft tissue cancer patients (E). The survival information and expression levels of BAG2 were obtained from the public available databases (GSE14333 for B, GSE14814 for C, GSE12276 for D, and GSE30929 for E) and analyzed by PrognoScan, a web based platform evaluating the prognostic power of gene expression levels. (F) BAG2 overexpression correlates with mutp53 protein accumulation (p = 0.036, χ2 test) but not wtp53 protein accumulation in human colorectal cancers. BAG2 mRNA levels were determined in human colorectal cancers and normalized with β-actin. (G) Schematic model depicting that mutp53 interacts with BAG2 and promotes BAG2 nuclear translocation to inhibit MDM2-mediated mutp53 protein degradation, which in turn promotes mutp53 protein accumulation and GOF in tumorigenesis.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/08401/elife-08401-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** BAG2 gene was observed in many human tumors.Percentage of tumors showing genetic alterations, including amplification (red), mutation (green) and deletion (blue), in the BAG2 gene in different human tumors. Data were obtained from the cBioportal for Cancer Genomics (http://www.cbioportal.org).DOI: http://dx.doi.org/10.7554/eLife.08401.022
+**Figure 7—figure supplement 1.:** Percentage of tumors showing genetic alterations, including amplification (red), mutation (green) and deletion (blue), in the BAG2 gene in different human tumors. Data were obtained from the cBioportal for Cancer Genomics (http://www.cbioportal.org).
 
 The correlation between BAG2 overexpression and mutp53 accumulation was further investigated in a cohort of human colorectal cancer samples with known p53 mutation status and p53 protein levels (n = 100) (Zheng et al., 2013). p53 mutation status was determined by direct sequencing of exons 2–11 of p53 and the p53 protein levels were determined by IHC staining as previously described (Zheng et al., 2013). All tumors carrying mutp53 and a small percentage of tumors with wtp53 showed positive staining for p53 (>10% cells are stained). Tumors were divided into 2 groups according to median BAG2 expression levels as determined by Taqman real-time PCR assays. There is a clear correlation between high BAG2 expression and mutp53 accumulation (Figure 7F). In tumors with mutp53, 66.7% of tumors (18 out of 27) with high BAG2 expression displayed high p53 staining (>30% cells are stained) while only 40.9% tumors (9 out of 22) with low BAG2 expression had high p53 staining (p = 0.035). In contrast, in tumors with wtp53, there is no correlation between BAG2 expression and p53 accumulation. Among these tumors, 21.7% of tumors (5 out of 23) with high BAG2 expression and 17.9% of tumors (5 out of 28) with low BAG2 expression displayed low p53 staining (10–30% cells are stained), respectively (p = 0.36) (Figure 7F). These results demonstrate that BAG2 overexpression is significantly correlated with accumulation of mutp53 protein in colorectal cancers.
 
@@ -158,58 +562,102 @@ Taken together, results from this study demonstrate that BAG2 interacts with mut
 
 ## Materials and methods
 
-## Cell culture, mouse strains, constructs and cell treatments
+### Cell culture, mouse strains, constructs and cell treatments
 
-Human lung cancer H1299, osteosarcoma Saos2, breast cancer SK-BR-3, MDA-MB-468, colorectal cancer HT29, SW480 and hepatocellular carcinoma Huh-7 cell lines were obtained from ATCC (Manassas, VA). Human HCT116 p53R248W/− cells were gifts from Dr Bert Vogelstein at Johns Hopkins University. Stable cell lines expressing mutp53 R175H, R248Q and R273H were established as previously described (Zheng et al., 2013). p53−/− mice were obtained from Jackson Laboratory (Bar Harbor, ME) and Trp53R172H/R172H mice were gifts from Dr Gigi Lozano at MD Anderson Cancer Center. Expression vectors of BAG2-HA (pcDNA-HA-BAG2) were gifts from Dr Cam Patterson at University of North Carolina. Expression vectors of mutp53 fragments containing different domains were obtained by using site-directed mutagenesis to introduce R175H mutation into expression vectors of wtp53 fragments containing different domains, which were generous gifts from Dr Xinbin Chen at University of California, Davis. R175H mutp53NLS expression vectors were obtained by using site-directed mutagenesis. Primers used for site mutagenesis and cloning for mutp53 fragments, Flag-tagged FL BAG2 and BAG2 fragments are listed in Table 2. Retroviral shRNA vectors against human BAG2 were purchased from Open Biosystems (Thermo Scientific, Waltham, MA, Cat#V2LHS-27769). Two different siRNA oligos against MDM2 were purchased from Qiagen (Germantown, MD, Cat#SI00300846) and Dharmacon (Lafayette, CO, Cat#M-003279-01). Two different siRNA oligos against BAG2 were purchased from IDT (Coralville, Iowa). siRNA targeting BAG2: siRNA-1: 5′-GUU GGC UUU AGC GUU GAU CUU CGC CUG-3′; siRNA-2: 5′-GUG UCA GUA GAA ACA AUU AGA AAC C-3′. 5-FU and MG132 were purchased from Sigma (St. Louis, MO).10.7554/eLife.08401.023Table 2.Sequences of the primer sets used for site-directed mutagenesis and amplifying p53 and BAG2 fragmentsDOI: http://dx.doi.org/10.7554/eLife.08401.023Name of fragmentsPrimer sequencesFor site-directed mutagenesis Mutp53 R175H-HA P1 (aa 1–363), P2 (aa 43–393), P3 (aa 43–363)Forward5′-GAG GTT GTG AGG CAC TGC CCC CAC CAT-3′Reverse5′-ATG GTG GGG GCA GTG CCT CAC AAC CTC-3′ R175H mutp53NLSForward 15′-GTT GGG CAG TGC TGC CGC AGT GCT CCC TGG GGG CAG-3′Reverse 15′-CTG CCC CCA GGG AGC ACT GCG GCA GCA CTG CCC AAC-3′Forward 25′-TGA AAT ATT CTC CAT CCA GTG GTG CCG CCG CTG GCT GGG GAG AGG AGC TGG TGT TGT TG-3′Reverse25′-CAA CAA CAC CAG CTC CTC TCC CCA GCC AGC GGC GGC ACC ACT GGA TGG AGA ATA TTT CA-3′For amplifying p53 and BAG2 fragments Mutp53 R175H-HA, P4 (aa 93–393)Forward5′-GCG AAT TCA CCA TGG GCT ACC CAT ACG ATG TTC CAG ATT ACG CTC TGT CAT CTT CTG TCC CTT-3′Reverse5′-GAT CGA ATT CTC AGT CTG AGT CAG GCC CTT-3′ Mutp53 R175H-HA, P5 (aa 93–325), wtp53-DBD, Mutp53 R248W-DBD Mutp53 R273H-DBDForward5′-GCG AAT TCA CCA TGG GCT ACC CAT ACG ATG TTC CAG ATT ACG CTC TGT CAT CTT CTG TCC CTT-3′Reverse5′-GCG AAT TCT CAT CCA TCC AGT GGT TTC TT-3′ Mutp53 R175H-HA, P6 (Δaa 101–300)Forward 15′-GCG AAT TCA CCA TGG GCT ACC CAT ACG ATG TTC CAG ATT ACG CTG AGG AGC CGC AGT CAG ATC C-3′Reverse 15′-CTT AGT GCT CCC TGG CTG GGA AGG GAC AGA-3′Forward 25′-TCT GTC CCT TCC CAG CCA GGG AGC ACT AAG-3′Reverse 25′-GAT CGA ATT CTC AGT CTG AGT CAG GCC CTT-3′ BAG2-FlagForward5′-CGG AAT TCA TGG CTC AGG CGA AGA-3′Reverse5′-CGG GAT CCA TTG AAT CTG CTT TCA GCA T-3′ BAG2 B1-FlagForward5′-CGG AAT TCA TGG CTC AGG CGA AGA-3′Reverse5′-CGG GAT CCT CTT CCC ATC AAA CGG TT-3′ BAG2 B2-FlagForward5′-CGG AAT TCA CCA TGG GAA GAA CTC TCA CCG TT-3′Reverse5′-CGG GAT CCA TTG AAT CTG CTT TCA GCA T-3′
+Human lung cancer H1299, osteosarcoma Saos2, breast cancer SK-BR-3, MDA-MB-468, colorectal cancer HT29, SW480 and hepatocellular carcinoma Huh-7 cell lines were obtained from ATCC (Manassas, VA). Human HCT116 p53R248W/− cells were gifts from Dr Bert Vogelstein at Johns Hopkins University. Stable cell lines expressing mutp53 R175H, R248Q and R273H were established as previously described (Zheng et al., 2013). p53−/− mice were obtained from Jackson Laboratory (Bar Harbor, ME) and Trp53R172H/R172H mice were gifts from Dr Gigi Lozano at MD Anderson Cancer Center. Expression vectors of BAG2-HA (pcDNA-HA-BAG2) were gifts from Dr Cam Patterson at University of North Carolina. Expression vectors of mutp53 fragments containing different domains were obtained by using site-directed mutagenesis to introduce R175H mutation into expression vectors of wtp53 fragments containing different domains, which were generous gifts from Dr Xinbin Chen at University of California, Davis. R175H mutp53NLS expression vectors were obtained by using site-directed mutagenesis. Primers used for site mutagenesis and cloning for mutp53 fragments, Flag-tagged FL BAG2 and BAG2 fragments are listed in Table 2. Retroviral shRNA vectors against human BAG2 were purchased from Open Biosystems (Thermo Scientific, Waltham, MA, Cat#V2LHS-27769). Two different siRNA oligos against MDM2 were purchased from Qiagen (Germantown, MD, Cat#SI00300846) and Dharmacon (Lafayette, CO, Cat#M-003279-01). Two different siRNA oligos against BAG2 were purchased from IDT (Coralville, Iowa). siRNA targeting BAG2: siRNA-1: 5′-GUU GGC UUU AGC GUU GAU CUU CGC CUG-3′; siRNA-2: 5′-GUG UCA GUA GAA ACA AUU AGA AAC C-3′. 5-FU and MG132 were purchased from Sigma (St. Louis, MO).
 
-## IP assays and IP coupled with LC-MS/MS assays
+**Table 2.**
+ Sequences of the primer sets used for site-directed mutagenesis and amplifying p53 and BAG2 fragments
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Name of fragments</th>
+      <th>Primer sequences</th>
+    </tr>
+    <tr>
+      <th colspan="3">For site-directed mutagenesis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Mutp53 R175H-HA P1 (aa 1–363), P2 (aa 43–393), P3 (aa 43–363)</td>
+      <td>Forward</td>
+      <td>5′-GAG GTT GTG AGG CAC TGC CCC CAC CAT-3′</td>
+    </tr>
+    <tr>
+      <td>Reverse</td>
+      <td>5′-ATG GTG GGG GCA GTG CCT CAC AAC CTC-3′</td>
+    </tr>
+    <tr>
+      <td rowspan="4">R175H mutp53NLS</td>
+      <td>Forward 1</td>
+      <td>5′-GTT GGG CAG TGC TGC CGC AGT GCT CCC TGG GGG CAG-3′</td>
+    </tr>
+    <tr>
+      <td>Reverse 1</td>
+      <td>5′-CTG CCC CCA GGG AGC ACT GCG GCA GCA CTG CCC AAC-3′</td>
+    </tr>
+    <tr>
+      <td>Forward 2</td>
+      <td>5′-TGA AAT ATT CTC CAT CCA GTG GTG CCG CCG CTG GCT GGG GAG AGG AGC TGG TGT TGT TG-3′</td>
+    </tr>
+    <tr>
+      <td>Reverse2</td>
+      <td>5′-CAA CAA CAC CAG CTC CTC TCC CCA GCC AGC GGC GGC ACC ACT GGA TGG AGA ATA TTT CA-3′</td>
+    </tr>
+  </tbody>
+</table>
+
+### IP assays and IP coupled with LC-MS/MS assays
 
 To determine mutp53 binding partners in mouse tissues, mouse mutp53 protein complexes were purified from lysates from tumor and normal tissues of mutp53R172H/R172H mice by IP using anti-p53 (FL393) beads and eluted with 0.1 M Glycine solution. Eluted materials were separated in a 4–15% Tris SDS gel and visualized by silver staining using the silver staining kit (Invitrogen, Grand Island, NY) and coomassie blue staining. Coomassie blue-stained protein bands were excised from the gel and subsequently analyzed by LC-MS/MS at the Biological MS facility of Rutgers University.
 
 IP assays were performed as previously described (Zheng et al., 2013). In brief, 1 mg cell or tissue lysates in NP-40 buffer were used for IP using anti-p53 (DO-1 for human cells and FL393 for mouse tissues, Santa Cruz, Dallas, Texas), anti-HA and anti-Flag antibodies to pull down mutp53, BAG2-HA and BAG2-Flag protein, respectively.
 
-## Western blot assays
+### Western blot assays
 
 Standard Western blot assays were used to analyze the levels of protein. Nuclear extracts were prepared by using Qproteome Nuclear Protein Kit (Qiagen). Antibodies against p53 (FL393; 1:2000 dilution; Santa Cruz), MDM2 (2A10; 1:1000 dilution), Flag (1:10,000 dilution; Sigma), BAG2 (1:1000 dilution; Aviva Systems Biology), HA (1:4000 dilution; Roche), α-Tubulin (C-5286; 1:1000 dilution; Santa Cruz), Lamin A/C (SC-7293; 1:1000 dilution; Santa Cruz), cleaved-caspase 3 (D175; 1:1000 dilution; Cell Signaling), and β-actin (1:20,000 dilution; Sigma) were used in this study.
 
-## IF staining assays
+### IF staining assays
 
 IF staining was performed as previously described (Zheng et al., 2013). Antibodies against p53 (FL393) and Flag were used to detect p53 and BAG2-Flag, respectively. Slides were then incubated with Alexa Fluor 555 Goat Anti-Rabbit IgG (H + L) and Alexa Fluor 488 Goat Anti-mouse IgG (H + L) (Invitrogen). Nuclei were stained with 4′, 6-diamidino-2-phenylindole (DAPI; Vector, Burlingame, CA).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 RNA from cells was prepared with RNeasy kit (Qiagen). RNA from formalin fixed and paraffin-embedded colorectal tumor sections was prepared with High Pure miRNA Isolation kit (Roche, Indianapolis, IN). The cDNA was prepared by using High Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Grand Island, NY). Primers for Taqman real-time PCR assays were purchased from Applied Biosystems. The expression of genes was normalized with the β-actin gene.
 
-## In vivo ubiquitination of Mutp53
+### In vivo ubiquitination of Mutp53
 
 In vivo ubiquitination assays were performed as previously described (Liu et al., 2014). In brief, cells were transfected with different expression vectors, including mutp53 R175H, BAG2-HA and His-ubiquitin, or transfected with siRNA against BAG2 together with His-ubiquitin expression vectors. At 24 hr after transfection, cells were treated with MG132 for 6 hr. The levels of mutp53 ubiquitination were determined by IP using DO-1 antibody followed by Western blot assays with an anti-ubiquitin antibody (P4D1; 1:1000; Santa Cruz).
 
-## Annexin V staining
+### Annexin V staining
 
 Annexin V staining was used to determine apoptosis as previously described (Yu et al., 2014). In brief, cells were stained by using Muse Annexin V and Dead Cell Assay Kit (Millipore) and analyzed in a bench flow cytometry, the Muse Cell Analyzer (Millipore, Billerica, MA).
 
-## Cell migration assays
+### Cell migration assays
 
 The transwell system (BD Biosciences, San Jose, CA) was employed for cell migration assays as previously described (Zheng et al., 2013). In brief, cells in FBS-free medium were seeded into upper chambers. The lower chamber was filled with medium supplemented with 10% FBS. Cells on the lower surface of upper chambers were counted after culturing at 37°C for 24 hr.
 
-## Anchorage-independent growth assays
+### Anchorage-independent growth assays
 
 Anchorage-independent growth assays were performed as previously described (Li et al., 2014). In brief, cells were seeded in 6-well plates coated with media containing 0.6% agarose, and cultured in media containing 0.3% agarose. Colonies were stained and counted after 2–3 weeks.
 
-## Xenograft tumorigenicity assays
+### Xenograft tumorigenicity assays
 
 Cells (5 × 106 in 0.2 ml PBS) were injected subcutaneously (s.c.) into 8-week-old BALB/c athymic nude mice (Taconic). Tumor volumes were measured every 2 days for 3 weeks. Tumor volume = 1/2 (length × width2) (n = 6 mice/group). Tumor samples were processed for routine histopathological examination.
 
-## In vivo metastasis assays
+### In vivo metastasis assays
 
 In vivo lung metastasis assays were performed as previously described (Zheng et al., 2013). In brief, HCT116 p53R248W/− and HCT116 p53−/− cells with or without knockdown of BAG2 by shRNA vectors (1 × 106 in 0.1 ml PBS) were injected into 8-week-old nude mice via the tail vein (n = 8 mice/group). The mice were sacrificed at 6 weeks after the inoculation. The numbers of lung tumors were counted under a dissecting microscope and confirmed by histopathological analysis. The areas of tumor nodules were quantified in 8 representative images taken at 10 × magnification by using the imageJ software. Animal protocols were approved by the IACUC committee of Rutgers University.
 
-## Database of cancer patients
+### Database of cancer patients
 
 PrognoScan (http://www.prognoscan.org/), which has a large collection of publicly available database with microarray data and clinical information (Mizuno et al., 2009), was used to analyze the prognostic power of BAG2 expression levels in colorectal cancer patients (GSE14333, Sieber et al., 2010), lung cancer patients (GSE14814, Tsao et al., 2010), breast cancer patients (GSE12276, Bos et al., 2009), and soft tissue cancer patients (GSE30929, Gobble et al., 2011).
 
 A cohort of the de-identified colorectal cancer tissues with known p53 mutation status and p53 protein levels was obtained from the database of the First Affiliated Hospital of Harbin Medical University (Harbin, China) with an IRB approval (Zheng et al., 2013). None of these patients received pre-surgical chemotherapy.
 
-## Statistical analysis
+### Statistical analysis
 
 The differences in xenograft tumor growth among groups were analyzed for statistical significance by ANOVA, followed by Student's t-tests using a GraphPad Prism software. Kaplan–Meier statistics were performed to analyze the significance of differences in survival of patients among different groups using software in PrognoScan website. All other p values were obtained using Student's t-test or χ2 test. Values of p < 0.05 were considered to be significant.

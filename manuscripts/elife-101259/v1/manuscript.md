@@ -6,11 +6,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04rq5mt64 Center for Vaccine Development and Global Health, University of Maryland School of Medicine Baltimore United States
-2. https://ror.org/01xm4wg91 Moderna Therapeutics Cambridge United States
+1. Center for Vaccine Development and Global Health, University of Maryland School of Medicine Baltimore United States ([ROR:04rq5mt64](https://ror.org/04rq5mt64))
+2. Moderna Therapeutics Cambridge United States ([ROR:01xm4wg91](https://ror.org/01xm4wg91))
 
 † Corresponding author
 
 ## Abstract
 
-By altering which peptide antigens are presented to CD4 + T cells, adjuvants affect the specificity of the immune response.
+By altering which peptide antigens are presented to CD4+ T cells, adjuvants affect the specificity of the immune response.

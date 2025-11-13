@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.32054.001 Brain stimulation can be used to engage and modulate rhythmic activity in brain networks. However, the outcomes of brain stimulation are shaped by behavioral states and endogenous fluctuations in brain activity. To better understand how this intrinsic oscillatory activity controls the susceptibility of the brain to stimulation, we analyzed a computational model of the thalamo-cortical system in two distinct states (rest and task-engaged) to identify the mechanisms by which endogenous alpha oscillations (8Hz–12Hz) are modulated by periodic stimulation. Our analysis shows that the different responses to stimulation observed experimentally in these brain states can be explained by a passage through a bifurcation combined with stochastic resonance — a mechanism by which irregular fluctuations amplify the response of a nonlinear system to weak periodic signals. Indeed, our findings suggest that modulation of brain oscillations is best achieved in states of low endogenous rhythmic activity, and that irregular state-dependent fluctuations in thalamic inputs shape the susceptibility of cortical population to periodic stimulation.
+Brain stimulation can be used to engage and modulate rhythmic activity in brain networks. However, the outcomes of brain stimulation are shaped by behavioral states and endogenous fluctuations in brain activity. To better understand how this intrinsic oscillatory activity controls the susceptibility of the brain to stimulation, we analyzed a computational model of the thalamo-cortical system in two distinct states (rest and task-engaged) to identify the mechanisms by which endogenous alpha oscillations (8Hz–12Hz) are modulated by periodic stimulation. Our analysis shows that the different responses to stimulation observed experimentally in these brain states can be explained by a passage through a bifurcation combined with stochastic resonance — a mechanism by which irregular fluctuations amplify the response of a nonlinear system to weak periodic signals. Indeed, our findings suggest that modulation of brain oscillations is best achieved in states of low endogenous rhythmic activity, and that irregular state-dependent fluctuations in thalamic inputs shape the susceptibility of cortical population to periodic stimulation.
 
 ## Introduction
 
@@ -40,15 +40,15 @@ To quantify the impact of thalamic drive on cortical activity and alpha oscillat
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig2-v2.jpg)
 
-**Figure 2.:** (A) Sample spiking activity of five randomly selected excitatory cortical cells in the resting state, which is defined as a regime of minimal thalamic drive (). The firing activity of those neurons is highly correlated, and synchronized to the phase of simulated EEG alpha oscillations (top). (DLGN=1x10-4B) Activity of the same cortical neurons in the task state, where thalamic drive is high (). The spiking activity is now irregular and asynchronous, leading to a flat EEG activity where alpha oscillations have been suppressed. (DLGN=1C) Effect of gradual increase in thalamic drive on alpha power and mean firing rates for both cortical (grey) and sub-cortical (green) neurons.
+**Figure 2.:** (A) Sample spiking activity of five randomly selected excitatory cortical cells in the resting state, which is defined as a regime of minimal thalamic drive ($D_{LGN}=1x10^{-4}$). The firing activity of those neurons is highly correlated, and synchronized to the phase of simulated EEG alpha oscillations (top). (B) Activity of the same cortical neurons in the task state, where thalamic drive is high ($D_{LGN}=1$). The spiking activity is now irregular and asynchronous, leading to a flat EEG activity where alpha oscillations have been suppressed. (C) Effect of gradual increase in thalamic drive on alpha power and mean firing rates for both cortical (grey) and sub-cortical (green) neurons.
 
 Increases in thalamic inputs have a destabilizing effect on endogenous oscillations. While increasing thalamic drive also increased firing rates throughout the system, a gradual suppression of synchronous alpha activity could also be observed: the power of endogenous alpha oscillations decreased substantially. This increased thalamic drive also changed the spiking patterns of cortical neurons: spiking activity became irregular and asynchronous, in line with studies showing a transition towards decorrelated cortical dynamics at task-onset (Pfurtscheller et al., 1996; Poulet et al., 2012; Churchland et al., 2010). This negative correlation between alpha power and spike rate is further in line with other experimental findings (Haegens et al., 2011; van Kerkoerle et al., 2014). Taken together, these results demonstrate that changes in thalamic state are sufficient to destabilize alpha oscillations throughout the thalamo-cortical loop, as well as to shape spike correlations. We thus defined rest and task states as limit cases of low (i.e. rest) and high (i.e. task-engaged) thalamic drive, respectively (see Materials and methods), as indicated in Figure 2C. We note that aside from the thalamic input, the network parameters were kept constant. Such a smooth and gradual destabilization of alpha oscillations is suggestive of a noise-induced supercritical Hopf bifurcation (See Materials and methods). According to this well-known mechanism (Horsthemke and Lefever, 1982), noise acts as a gain control parameter by which non-linear oscillations sustained by delayed and recurrent inhibition (as in our model) can be altered and/or suppressed by a change in noise variance (Lefebvre et al., 2015; Hutt et al., 2016). In the process, noise also linearizes the dynamics by smoothing the non-linear response function of threshold systems (Gammaitoni, 1995; McDonnell and Abbott, 2009; Lefebvre et al., 2015). In the context of our model, rest and task-engaged states would then correspond to opposite points above and below the transition point, respectively, where the ‘noise’ is here mediated by increasingly irregular input from thalamus to cortex.
 
-Having defined rest and task-engaged states in our network model and having characterized the influence of thalamic activity on alpha oscillations, we next asked how state-dependent changes in resting state oscillations (the destabilization of alpha oscillations) were impacted by cortical periodic stimulation. To disambiguate the contribution of resonance (the amplification of endogenous oscillations) and entrainment (the phase locking to an externally applied frequency) and to test network responses, we first considered a cortical stimulation with moderate amplitude and frequency of 11 Hz (ωstim), which does not share any low order harmonic relationship with the endogenous frequency (i.e. ωo=8 Hz). This was done to align our simulation to a previous experimental setting (Alagapan et al., 2016), in order to determine whether we could reproduce the previously observed state-dependent effects. Then, we investigated how spiking activity and cortical oscillations properties changed as thalamic drive was gradually increased in the presence of periodic stimulation (Figure 3). We first computed the correlations in the spiking response amongst excitatory cells in the cortical network, either with 11 Hz stimulation or with no stimulation (sham), see Figure 3A. Without stimulation, thalamic drive suppresses correlated spiking and synchronous activity decreases. By contrast, when stimulation is applied in regimes of weak thalamic drive, correlations are lower than in the sham condition, indicating that stimulation itself interferes with endogenous activity. By increasing thalamic drive, spike-rate correlations gradually increase, indicating that cells are becoming entrained by the stimulation. Taken together, these observations elucidate a gradual transition from recurrent to externally driven dynamics as thalamic input is increased. To explore this further, we plotted, in Figure 3B, the peak power found both at alpha frequency (8 Hz) and at stimulation frequency (here 11 Hz). The power at stimulation frequency did indeed increase during the transition from the rest to the task state and that a shift in oscillatory regime can be observed. Indeed, one can clearly observe a jump in the dominant frequency from 8 Hz (endogenous alpha frequency) to 11 Hz (stimulation frequency) as resting state alpha oscillations are gradually suppressed.
+Having defined rest and task-engaged states in our network model and having characterized the influence of thalamic activity on alpha oscillations, we next asked how state-dependent changes in resting state oscillations (the destabilization of alpha oscillations) were impacted by cortical periodic stimulation. To disambiguate the contribution of resonance (the amplification of endogenous oscillations) and entrainment (the phase locking to an externally applied frequency) and to test network responses, we first considered a cortical stimulation with moderate amplitude and frequency of 11 Hz ($\omega_{stim}$), which does not share any low order harmonic relationship with the endogenous frequency (i.e. $\omega_{o}=$8 Hz). This was done to align our simulation to a previous experimental setting (Alagapan et al., 2016), in order to determine whether we could reproduce the previously observed state-dependent effects. Then, we investigated how spiking activity and cortical oscillations properties changed as thalamic drive was gradually increased in the presence of periodic stimulation (Figure 3). We first computed the correlations in the spiking response amongst excitatory cells in the cortical network, either with 11 Hz stimulation or with no stimulation (sham), see Figure 3A. Without stimulation, thalamic drive suppresses correlated spiking and synchronous activity decreases. By contrast, when stimulation is applied in regimes of weak thalamic drive, correlations are lower than in the sham condition, indicating that stimulation itself interferes with endogenous activity. By increasing thalamic drive, spike-rate correlations gradually increase, indicating that cells are becoming entrained by the stimulation. Taken together, these observations elucidate a gradual transition from recurrent to externally driven dynamics as thalamic input is increased. To explore this further, we plotted, in Figure 3B, the peak power found both at alpha frequency (8 Hz) and at stimulation frequency (here 11 Hz). The power at stimulation frequency did indeed increase during the transition from the rest to the task state and that a shift in oscillatory regime can be observed. Indeed, one can clearly observe a jump in the dominant frequency from 8 Hz (endogenous alpha frequency) to 11 Hz (stimulation frequency) as resting state alpha oscillations are gradually suppressed.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig3-v2.jpg)
 
-**Figure 3.:** (A) Firing-rate correlations of cortical excitatory neurons (average pairwise correlation between firing rates) as a function of thalamic drive with 11 Hz stimulation and sham (no stimulation). Without stimulation (sham), correlations in the network decrease as endogenous oscillations are suppressed. By contrast, with 11 Hz stimulation, correlations increase monotonically with thalamic input as the cells become entrained by the stimulation. (B) Peak power at the endogenous alpha frequency (=8 Hz) and at the stimulation frequency (ωo=11 Hz) as a function of increasing thalamic drive. The power of the endogenous oscillations is gradually suppressed, whereas the opposite occurs at the stimulation frequency, suggesting a transition between oscillatory regimes. (ωstimC) Full-power spectral density distribution as a function of thalamic drive. Without stimulation, increase in thalamic drive destabilizes endogenous alpha oscillations and power is gradually suppressed. In presence of stimulation, the destabilization of endogenous oscillations is more abrupt and is replaced by spectral power at the stimulation frequency. Stimulation parameters for (A), (B) and (C) were 0.15, S==11 Hz. (ωstimD) Mutual information between stimulation and network response as a function of increasing noise throughout the network, both with and without stimulation. When stimulation of weak amplitude (here 0.10) is applied, and the mutual information peaks at some intermediate value of noise, indicating that stochastic resonance is involved. (S=E) Phase distribution of firing-rate responses across trials at 11 Hz in the rest state (). In each trial, the stimulation was applied at a random phase. This is why the phase distribution is uniform over all angles (black line). The phase difference between the stimulation and the network response is also uniform, indicating that the network dynamics are not phase locked to the stimulus (i.e. there is no entrainment). (DLGN=1x10-5F) By contrast, in the task state (), cortical firing rates are phase locked to the stimulation, and the distribution shows a strong peak at the preferred phase (orange area). Here, DLGN=1x10-5 and S=0.1 = 11 Hz.ωstim
+**Figure 3.:** (A) Firing-rate correlations of cortical excitatory neurons (average pairwise correlation between firing rates) as a function of thalamic drive with 11 Hz stimulation and sham (no stimulation). Without stimulation (sham), correlations in the network decrease as endogenous oscillations are suppressed. By contrast, with 11 Hz stimulation, correlations increase monotonically with thalamic input as the cells become entrained by the stimulation. (B) Peak power at the endogenous alpha frequency ($\omega_{o}$=8 Hz) and at the stimulation frequency ($\omega_{stim}$=11 Hz) as a function of increasing thalamic drive. The power of the endogenous oscillations is gradually suppressed, whereas the opposite occurs at the stimulation frequency, suggesting a transition between oscillatory regimes. (C) Full-power spectral density distribution as a function of thalamic drive. Without stimulation, increase in thalamic drive destabilizes endogenous alpha oscillations and power is gradually suppressed. In presence of stimulation, the destabilization of endogenous oscillations is more abrupt and is replaced by spectral power at the stimulation frequency. Stimulation parameters for (A), (B) and (C) were $S=$0.15, $\omega_{stim}$=11 Hz. (D) Mutual information between stimulation and network response as a function of increasing noise throughout the network, both with and without stimulation. When stimulation of weak amplitude (here $S=$0.10) is applied, and the mutual information peaks at some intermediate value of noise, indicating that stochastic resonance is involved. (E) Phase distribution of firing-rate responses across trials at 11 Hz in the rest state ($D_{LGN}=1x10^{-5}$). In each trial, the stimulation was applied at a random phase. This is why the phase distribution is uniform over all angles (black line). The phase difference between the stimulation and the network response is also uniform, indicating that the network dynamics are not phase locked to the stimulus (i.e. there is no entrainment). (F) By contrast, in the task state ($D_{LGN}=1x10^{-5}$), cortical firing rates are phase locked to the stimulation, and the distribution shows a strong peak at the preferred phase (orange area). Here, $S=0.1$ and $\omega_{stim}$ = 11 Hz.
 
 We hypothesized that this enhanced spectral power at the stimulation frequency might occur through SR. SR has been implicated in the enhancement of sub-threshold signals in which random fluctuations — of either external or internal origin — act like a pedestal increasing the sensitivity of stimulated neurons to a given set of low-intensity inputs (Miniussi et al., 2013). Initially formulated in bistable systems with an implicit time-scale (a ‘resonance’), SR is also present in systems with threshold nonlinearities, which we note are present in our model.
 
@@ -58,25 +58,25 @@ Figure 4 summarizes these findings in the rest and task-engaged states. In the r
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig4-v2.jpg)
 
-**Figure 4.:** (A) In the absence of stimulation, the resting state is characterized with strong synchronous alpha oscillations, leading to stable attractor dynamics. These oscillations correspond to a stable limit cycle surrounding an unstable fixed point. Both excitatory and inhibitory neurons display firing-rate modulations (black and gray overlays) at the endogenous frequency. (B) When stimulation is applied in the rest state, the interaction between correlated neural activity and stimulation-induced fluctuations in membrane voltage results in weak entrainment. Despite the presence of periodic stimulation impacting all cortical neurons equally, the dynamics of the simulated EEG are predominantly characterized by endogenous oscillations (top). The spiking activity of both excitatory and inhibitory neurons remains locked to endogenous cycles, where stimulation has little to no impact on network activity (bottom). (C) By contrast, endogenous oscillations are suppressed in the task state, where the dynamics now evolve around a fixed point. Simulated EEG activity is fully entrained to the stimulation (top), and so are cortical neurons whose spiking is phased locked to the stimulation frequency. (C) The power spectral density distribution of the EEG response in the rest state. The spectrum is largely dominated by endogenous oscillations (8 Hz) and only weak contribution can be observed at the stimulation frequency (ωo=11 Hz), indicating that network oscillations are not entrained by the stimulation. (ωstim=D) The power spectral density distribution of the EEG response in the task state. Here, by contrast, the power at the endogenous frequency has been almost fully suppressed and a clear peak can be seen at the stimulation frequency. This implies that network oscillatory activity is fully determined by the stimulation. Stimulation parameters here are  0.15, S= = 11 Hz.ωstim
+**Figure 4.:** (A) In the absence of stimulation, the resting state is characterized with strong synchronous alpha oscillations, leading to stable attractor dynamics. These oscillations correspond to a stable limit cycle surrounding an unstable fixed point. Both excitatory and inhibitory neurons display firing-rate modulations (black and gray overlays) at the endogenous frequency. (B) When stimulation is applied in the rest state, the interaction between correlated neural activity and stimulation-induced fluctuations in membrane voltage results in weak entrainment. Despite the presence of periodic stimulation impacting all cortical neurons equally, the dynamics of the simulated EEG are predominantly characterized by endogenous oscillations (top). The spiking activity of both excitatory and inhibitory neurons remains locked to endogenous cycles, where stimulation has little to no impact on network activity (bottom). (C) By contrast, endogenous oscillations are suppressed in the task state, where the dynamics now evolve around a fixed point. Simulated EEG activity is fully entrained to the stimulation (top), and so are cortical neurons whose spiking is phased locked to the stimulation frequency. (C) The power spectral density distribution of the EEG response in the rest state. The spectrum is largely dominated by endogenous oscillations ($\omega_{o}=$8 Hz) and only weak contribution can be observed at the stimulation frequency ($\omega_{stim}=$11 Hz), indicating that network oscillations are not entrained by the stimulation. (D) The power spectral density distribution of the EEG response in the task state. Here, by contrast, the power at the endogenous frequency has been almost fully suppressed and a clear peak can be seen at the stimulation frequency. This implies that network oscillatory activity is fully determined by the stimulation. Stimulation parameters here are $S=$ 0.15, $\omega_{stim}$ = 11 Hz.
 
 But how does this state-dependent susceptibility depend on stimulation parameters? To answer this question, we first fixed stimulation amplitude and varied its frequency between 0 and 50 Hz, while computing the power spectral density in each case (Figure 5). A peak at the stimulation frequency can be seen along the diagonal, but the rest state power spectral density is characterized by a dominant horizontal peak at 8 Hz. According to this analysis, the spectral contribution of stimulation is negligible unless the stimulation frequency is close to the endogenous frequency and/or its harmonics (horizontal lines in Figure 5A), as expected via resonance (Ali et al., 2013; Herrmann et al., 2016). In the task-engaged state, the opposite occurs: reduced power at the endogenous frequency promotes entrainment, and stimulation power increases significantly across the range of stimulation frequency considered.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig5-v2.jpg)
 
-**Figure 5.:** (A) Power in the rest state is concentrated at the endogenous frequency (horizontal dashed line at 8 Hz) while the stimulation frequency  is increased from 0 to 50 Hz. The peak power found at the stimulation frequency (dashed line along the diagonal) is small unless ωstim, that is, when the stimulation frequency is close to the peak alpha frequency. (ωo≈ωstimB) In the task state, power is instead concentrated at the stimulation frequency across the range of values visited (along the diagonal). By contrast, power at the endogenous oscillation is much smaller. Note that the power at the stimulation frequency scales with the distance with respect to the alpha peak at 8 Hz. Stimulation parameters here are  0.15 while S= was varied from 0 to 50 Hz.ωstim
+**Figure 5.:** (A) Power in the rest state is concentrated at the endogenous frequency (horizontal dashed line at 8 Hz) while the stimulation frequency $\omega_{stim}$ is increased from 0 to 50 Hz. The peak power found at the stimulation frequency (dashed line along the diagonal) is small unless $\omega_{o}≈\omega_{stim}$, that is, when the stimulation frequency is close to the peak alpha frequency. (B) In the task state, power is instead concentrated at the stimulation frequency across the range of values visited (along the diagonal). By contrast, power at the endogenous oscillation is much smaller. Note that the power at the stimulation frequency scales with the distance with respect to the alpha peak at 8 Hz. Stimulation parameters here are $S=$ 0.15 while $\omega_{stim}$ was varied from 0 to 50 Hz.
 
 As a next step, we computed the power-spectral density of the simulated EEG activity of cortical excitatory and inhibitory cells, and systematically measured the peak frequency and power for all combinations of stimulation frequency and amplitudes within a given range. We then identified regions for which the dominant (i.e. peak) frequency was defined either by endogenous oscillations or by the stimulation — thus identifying regimes of entrainment. In Figure 6A, one can see the peak frequency of the simulated cortical EEG activity in the rest state. For most combinations of stimulation amplitudes and frequencies, the peak frequency remains stable and equal to the endogenous alpha frequency (i.e. 8 Hz). However, for higher amplitudes and for stimulation frequencies near 8 Hz, cortical neurons were gradually entrained by the stimulation (1:1 entrainment). A narrow triangular entrainment region (the so-called Arnold tongue, delimited by white dashed lines) (Glass and Belair, 1980; Hunter and Milton, 2003) emerges and gets larger as stimulation amplitude increases. Note that the asymmetrical shape of the Arnold tongue is here due to a stimulation-induced shift of the endogenous frequency (Hutt et al., 2016). The equivalent calculations were made in Figure 6B but for the task-engaged state. Multiple differences compared to the rest state can be observed. The Arnold tongue spans a much larger portion of the stimulus-parameter space, indicating robust entrainment for much weaker stimulation amplitudes. In Figure 6C and D, the power at peak response frequency is plotted. The power found at the endogenous frequency in the rest state outside the Arnold tongue (here also delimited by a white dashed line) is high, and is gradually suppressed as stimulation parameters are changed towards the entrainment region. There, peak power, associated with the stimulation frequency is much smaller (Figure 6C). Under the action of thalamic input in the task state, endogenous alpha oscillations are suppressed compared to those in the rest state, leading to weak power outside the Arnold tongue (Figure 6D). In contrast to the rest state, stimulation at the endogenous frequency enhances the peak power. In sum, the effect of stimulation on peak power when the frequency is close to the resonant frequency (vertical black dashed lines in Figure 6C and D) also depends on the state, that is, the thalamic drive.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig6-v2.jpg)
 
-**Figure 6.:** By systematically varying the stimulation amplitude () and frequency (S) and identifying the associated peak frequency (i.e. frequency where maximal power can be found) and peak power (i..e power at the peak frequency) in each case, we can delimit regions in parameter space where cortical dynamics are either governed by endogenous alpha oscillations or locked to the stimulation. (ωstimA) In the rest state, the vast majority of stimulation parameter space is characterized by an absence of entrainment. The peak frequency of cortical EEG activity remains at 8 Hz. However, as stimulation amplitude is increased for stimulation frequency near 8 Hz, entrainment occurs. However, this triangular region — called the Arnold tongue — remains narrow. (B) In the task state, the Arnold tongue increases significantly, and occupies most of the range of stimulation parameters considered — entrainment is thus more prevalent in the task state. (C) Peak power in the rest state for varying stimulation parameters. (D) Same as in (C) for the task state. Stimulation amplitude was varied within [0, 0.5] and its frequency within [0, 50 Hz].
+**Figure 6.:** By systematically varying the stimulation amplitude ($S$) and frequency ($\omega_{stim}$) and identifying the associated peak frequency (i.e. frequency where maximal power can be found) and peak power (i..e power at the peak frequency) in each case, we can delimit regions in parameter space where cortical dynamics are either governed by endogenous alpha oscillations or locked to the stimulation. (A) In the rest state, the vast majority of stimulation parameter space is characterized by an absence of entrainment. The peak frequency of cortical EEG activity remains at 8 Hz. However, as stimulation amplitude is increased for stimulation frequency near 8 Hz, entrainment occurs. However, this triangular region — called the Arnold tongue — remains narrow. (B) In the task state, the Arnold tongue increases significantly, and occupies most of the range of stimulation parameters considered — entrainment is thus more prevalent in the task state. (C) Peak power in the rest state for varying stimulation parameters. (D) Same as in (C) for the task state. Stimulation amplitude was varied within [0, 0.5] and its frequency within [0, 50 Hz].
 
 What mechanism is responsible for this state-dependence? Mathematical insights can play a key role here in helping us to understand how periodic stimulation interacts with intrinsic limit cycles (i.e. alpha oscillations) and how changes in stability can promote entrainment. In Alagapan et al., 2016), the authors modelled state-dependent entrainment using a population-scale network of cortical neurons interacting through both local and feedback projections in the presence of robust resting state oscillations. To learn more about the mechanism involved, we considered a simplified neural oscillator with delayed feedback (Lefebvre and Hutt, 2013; Lefebvre et al., 2015; Hutt et al., 2016) as a simplified model for the thalamo-cortical network. Networks of neurons that are exposed to delayed feedback and recurrent inhibition commonly display rhythmic activity whose features are tightly linked to input statistics (Dhamala et al. 2001; Doiron et al., 2003; Lefebvre and Hutt, 2013). To better understand the mechanism underlying the state-dependent changes in the amplitude of resting state oscillations, we investigated the dynamics of this simplified oscillator (see Materials and methods) in the presence of periodic forcing (i.e. stimulation) and various levels of noise. In can be shown that as input noise increases during the task state, limit cycle solutions are destabilized through a supercritical Hopf bifurcation. Analyzing the response of this simplified model both above and below the bifurcation threshold, that is, in the vicinity of the point where self-sustained (i.e. intrinsic) oscillations become unstable, we found that limit cycle solutions of this system are entrained by periodic forcing, although their amplitudes are highly sensitive to noise intensity. To see this, we computed resonance curves (Figure 7B) for this oscillator and compared the results for both high and low values of input noise variance. This simple qualitative analysis shows that the linearization induced by noise decreases the amplitude of the resonant solutions and increases the amplitude of all other forcing frequencies by transitioning through a critical state. Spectral clustering, in which the power and/or amplitude of forced solutions are concentrated near the intrinsic resonance, is a state of weak susceptibility to entrainment. The consequences of input-induced linearization in the simple conceptual model above are two-fold: (1) it causes a suppression of resonant oscillations, and (2) it augments the amplitude of non-resonant solutions. This was found to be in agreement with the state-dependency observed in our full spiking model as depicted in Figure 7C.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/32054/elife-32054-fig7-v2.jpg)
 
-**Figure 7.:** (A) We investigated the dynamics of a conceptual delayed feedback model in the presence of periodic forcing (i.e. stimulation) as a proxy for the thalamo-cortical circuit subjected to additive noise. The mean activity  experiences delayed feedback with delay u, additive noise and periodic forcing. (TB) Amplitude of entrained solution both above and below the Hopf bifurcation threshold. Below the bifurcation (black line), the linear gain  remains high because noise intensity is small. Solutions have a high amplitude only near the intrinsic critical frequency. Above the bifurcation (orange line), the linear gain |Rth| becomes smaller under the effect of noise. As a consequence, the amplitude of all non-resonant solutions increases, while the amplitude of resonant solution decreases. (|Rth|C) Peak power at  in the rest (black) and task (orange) states as stimulation frequency varies in the vicinity of ωstim. Although resulting from a more complex model, the effect remains qualitatively similar to the simplified case in (B).ωo
+**Figure 7.:** (A) We investigated the dynamics of a conceptual delayed feedback model in the presence of periodic forcing (i.e. stimulation) as a proxy for the thalamo-cortical circuit subjected to additive noise. The mean activity $u$ experiences delayed feedback with delay $T$, additive noise and periodic forcing. (B) Amplitude of entrained solution both above and below the Hopf bifurcation threshold. Below the bifurcation (black line), the linear gain $|R_{th}|$ remains high because noise intensity is small. Solutions have a high amplitude only near the intrinsic critical frequency. Above the bifurcation (orange line), the linear gain $|R_{th}|$ becomes smaller under the effect of noise. As a consequence, the amplitude of all non-resonant solutions increases, while the amplitude of resonant solution decreases. (C) Peak power at $\omega_{stim}$ in the rest (black) and task (orange) states as stimulation frequency varies in the vicinity of $\omega_{o}$. Although resulting from a more complex model, the effect remains qualitatively similar to the simplified case in (B).
 
 ## Discussion
 
@@ -98,50 +98,376 @@ In summary, our results demonstrate that target engagement by stimulation is sta
 
 ## Materials and methods
 
-## Model
+### Model
 
-We have developed and analyzed a model of the thalamo-cortical system in which recurrent interactions between the different neural populations generate strong synchronous activity within the alpha band (8 Hz–12 Hz). An illustration of the model structure and connections is presented in Figure 1A. The cortical population is composed of recurrently connected excitatory pyramidal neurons and inhibitory interneurons, and both interact with thalamic and reticular populations via delayed connections. The spiking activity of all neurons is modeled by a non-homogenous Poisson process,Xnjt→Poisson (f[unj(t)])where Xnjt=∑{tl}δnj(t-tl) is the spike train of the jth neuron in the population n={e,i,LGN,RTN}. The activation function f[u]=fo(1+exp⁡{-β(u-h)})-1 represents a saturating firing-rate function that relates monotonically to the cellular membrane potential u, with gain β, maximal rate fo and threshold h. The mean somatic membrane potentials unj of all neurons in the network obey the set of dynamic equationsαn-1dunj(t)dt= -unjt+b vnjt+∑mSnmt+In+2Dn ξnjt+Se,i(t)where we have spike frequency adaptationan-1dvnj(t)dt=-vnj(t)+unjtand where recurrent inputs areSnmt=Nn-1∑k=1NnWnmjk∙Enkt-τjk .
+We have developed and analyzed a model of the thalamo-cortical system in which recurrent interactions between the different neural populations generate strong synchronous activity within the alpha band (8 Hz–12 Hz). An illustration of the model structure and connections is presented in Figure 1A. The cortical population is composed of recurrently connected excitatory pyramidal neurons and inhibitory interneurons, and both interact with thalamic and reticular populations via delayed connections. The spiking activity of all neurons is modeled by a non-homogenous Poisson process,
 
-The rates αn and an define the time scale of the somatic membranes and adaptation, respectively. The post-synaptic potentials Enkt are computed by convolving spike trains with exponential synapses with time constant τmthat is,Enk(t)= ∫otXnk(s) 1τme−(t−s)/τm ds;
+$$
+X_{n}^{j}t→Poisson(f[u_{n}^{j}(t)])
+$$
 
-All populations, including the sub-cortical neurons (relay, reticular), are mutually coupled with sparse and spatially topographic projections (Hellwig, 2000). The synaptic connectivity kernels between neurons of index j and k, respectively from population m  and n are given by GaussiansWnmjkc=wnmoc2 πσm,n2 exp [-12 σn,m2xj-xk2]with connection probability c=0.2 and σm,n2as the spatial spread of the inter-neuronal connections. The network is also subjected to propagation delays τjk=xk-xj v-1 due to finite axonal conduction velocity v=0.35 m/s (Hutt et al., 2003). Furthermore, a delay of τth=45 ms was included between thalamus (RTN, LGN) and cortex (e,i), and a delay of τrtn=10 ms between reticular (RTN) and relay (LGN) populations.
+where $X_{n}^{j}t=\sum{t_{l}}\delta_{n}^{j}(t-t_{l})$ is the spike train of the $j^{th}$ neuron in the population $n={e,i,LGN,RTN}$. The activation function $f[u]=f_{o}(1+exp⁡{-\beta(u-h)})^{-1}$ represents a saturating firing-rate function that relates monotonically to the cellular membrane potential $u$, with gain $\beta$, maximal rate $f_{o}$ and threshold $h$. The mean somatic membrane potentials $u_{n}^{j}$ of all neurons in the network obey the set of dynamic equations
 
-## Thalamic drive and brain states
+$$
+\alpha_{n}^{-1}\frac{du_{n}^{j}(t)}{dt}=-u_{n}^{j}t+bv_{n}^{j}t+\summS_{nm}t+I_{n}+\sqrt{2D_{n}}ξ_{n}^{j}t+S_{e,i}(t)
+$$
 
-In addition to fixed bias inputs, In, neurons in the network are subjected to Gaussian white noise, ξn, of intensity, Dn. To represent an increase in sensory afference to the thalamus in two distinct conditions, the intensity of the noise driving the lateral geniculate nucleus (LGN) neurons is increased. To mimic externally imposed experimental states, we analyzed the dynamics of this network model in two conditions:
+where we have spike frequency adaptation
 
-rest state: regime of low thalamic drive (i.e. DLGN=1 ×10-4);
+$$
+a_{n}^{-1}\frac{dv_{n}^{j}(t)}{dt}=-v_{n}^{j}(t)+u_{n}^{j}t
+$$
 
-task-engaged state: regime of high thalamic drive (i.e. DLGN=1).
+and where recurrent inputs are
 
-Specifically, a transition between the rest and task-engaged states occurs whenever noise intensity at the LGN increases. Aside from this input, which was changed to set the system in the rest and/or task-engaged state, only the periodic stimulation parameters, such as amplitude and frequency, were changed. We chose not to define the thalamic drive intensity for the task state as the optimal value found through SR (i.e. Figure 3D), because this value was found to be sensitive to the stimulation amplitude and frequency, which will vary in the subsequent analysis. To represent the effect of periodic stimulation, all excitatory and inhibitory cortical neurons were equally driven by a periodic input with waveform Se,it=S sin(2 πωstimt), where S is defined as the stimulation amplitude and ωstim is the stimulation frequency. No stimulation is present for sub-cortical populations as non-invasive brain stimulation predominantly targets cortex.
+$$
+S_{nm}t=N_{n}^{-1}\sumk=1N_{n}W_{nm}^{jk}∙E_{n}^{k}t-\tau^{jk}.
+$$
 
-For minimal thalamic drive (i.e. DLGN=1 ×10-4), the network engages intense resting state alpha activity at a frequency of about 8 Hz due to the combined action of slow spike-frequency-dependent adaptation and finite conduction velocity — resulting in propagation delays that enhance the prevalence of correlated rhythmic states (Lefebvre et al., 2011; Deco et al., 2009). The stability of the resulting oscillatory solutions is maintained and amplified due to thalamo-cortical feedback, leading to phase-locked dynamics across all neural populations involved, both cortical and sub-cortical. The activity of each population in the resting state is depicted in Figure 1B. The parameter values that were chosen were aligned within the physiological range in the literature and are summarized in Table 1. The response of the sub-cortical populations (i.e. LGN, RTN) can be seen to adopt a stable phase offset with respect to cortical activity. Such phase differences have been observed experimentally and shown to be sensitive to ongoing oscillatory state (Slézia et al., 2011). In our model, this phase lag occurs because of the propagation delay in the transition to and back from the cortex. When thalamic drive is increased (i.e. DLGN=1), global oscillations are suppressed through a noise-induced Hopf bifurcation (see below). Through this transition, noise triggers a gradual change in effective gain between populations, suppressing global oscillations and replacing them by asynchronous activity.
+The rates $\alpha_{n}$ and $a_{n}$ define the time scale of the somatic membranes and adaptation, respectively. The post-synaptic potentials $E_{n}^{k}t$ are computed by convolving spike trains with exponential synapses with time constant $\tau_{m}$that is,
+
+$$
+E_{n}^{k}(t)= \intotX_{n}^{k}(s) \frac{1}{\tau_{m}}e^{−(t−s)/\tau_{m}} ds;
+$$
+
+All populations, including the sub-cortical neurons (relay, reticular), are mutually coupled with sparse and spatially topographic projections (Hellwig, 2000). The synaptic connectivity kernels between neurons of index $j$ and $k$, respectively from population $m$ and $n$ are given by Gaussians
+
+$$
+W_{nm}^{jk}c=\frac{w_{nm}^{o}c}{\sqrt{2\pi\sigma_{m,n}^{2}}}exp[-\frac{1}{2\sigma_{n,m}^{2}}xj-xk^{2}]
+$$
+
+with connection probability $c=0.2$ and $\sigma_{m,n}^{2}$as the spatial spread of the inter-neuronal connections. The network is also subjected to propagation delays $\tau^{jk}=xk-xjv^{-1}$ due to finite axonal conduction velocity $v$=0.35 m/s (Hutt et al., 2003). Furthermore, a delay of $\tau_{th}=$45 ms was included between thalamus (RTN, LGN) and cortex ($e,i$), and a delay of $\tau_{rtn}$=10 ms between reticular (RTN) and relay (LGN) populations.
+
+### Thalamic drive and brain states
+
+In addition to fixed bias inputs, $I_{n}$, neurons in the network are subjected to Gaussian white noise, $ξ_{n}$, of intensity, $D_{n}$. To represent an increase in sensory afference to the thalamus in two distinct conditions, the intensity of the noise driving the lateral geniculate nucleus (LGN) neurons is increased. To mimic externally imposed experimental states, we analyzed the dynamics of this network model in two conditions:
+
+rest state: regime of low thalamic drive (i.e. $D_{LGN}=1\times10^{-4}$);
+
+task-engaged state: regime of high thalamic drive (i.e. $D_{LGN}=1$).
+
+Specifically, a transition between the rest and task-engaged states occurs whenever noise intensity at the LGN increases. Aside from this input, which was changed to set the system in the rest and/or task-engaged state, only the periodic stimulation parameters, such as amplitude and frequency, were changed. We chose not to define the thalamic drive intensity for the task state as the optimal value found through SR (i.e. Figure 3D), because this value was found to be sensitive to the stimulation amplitude and frequency, which will vary in the subsequent analysis. To represent the effect of periodic stimulation, all excitatory and inhibitory cortical neurons were equally driven by a periodic input with waveform $S_{e,i}t=Ssin(2\pi\omega_{stim}t)$, where $S$ is defined as the stimulation amplitude and $\omega_{stim}$ is the stimulation frequency. No stimulation is present for sub-cortical populations as non-invasive brain stimulation predominantly targets cortex.
+
+For minimal thalamic drive (i.e. $D_{LGN}=1\times10^{-4}$), the network engages intense resting state alpha activity at a frequency of about 8 Hz due to the combined action of slow spike-frequency-dependent adaptation and finite conduction velocity — resulting in propagation delays that enhance the prevalence of correlated rhythmic states (Lefebvre et al., 2011; Deco et al., 2009). The stability of the resulting oscillatory solutions is maintained and amplified due to thalamo-cortical feedback, leading to phase-locked dynamics across all neural populations involved, both cortical and sub-cortical. The activity of each population in the resting state is depicted in Figure 1B. The parameter values that were chosen were aligned within the physiological range in the literature and are summarized in Table 1. The response of the sub-cortical populations (i.e. LGN, RTN) can be seen to adopt a stable phase offset with respect to cortical activity. Such phase differences have been observed experimentally and shown to be sensitive to ongoing oscillatory state (Slézia et al., 2011). In our model, this phase lag occurs because of the propagation delay in the transition to and back from the cortex. When thalamic drive is increased (i.e. $D_{LGN}=1$), global oscillations are suppressed through a noise-induced Hopf bifurcation (see below). Through this transition, noise triggers a gradual change in effective gain between populations, suppressing global oscillations and replacing them by asynchronous activity.
+
+**Table 1.**
+ Model parameter efinitions and Values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Definition</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ω</td>
+      <td>Network spatial extent</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ne</td>
+      <td>Number of excitatory cells</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>Ni</td>
+      <td>Number of inhibitory cells</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Nth</td>
+      <td>Number of thalamic cells</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>Nrtn</td>
+      <td>Number of reticular cells</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>Neural response function gain</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>Firing rate threshold</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>fo</td>
+      <td>Maximal firing rate</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>τm</td>
+      <td>Membrane time constant</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>αe</td>
+      <td>Membrane rate constant — excitatory cortical cells</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>αi</td>
+      <td>Membrane rate constant — inhibitory cortical cells</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>αth</td>
+      <td>Membrane rate constant — thalamic neurons</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>αrtn</td>
+      <td>Membrane rate constant — reticular cells</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>Neural adaptation rate constant</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>Neural adaptation gain</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Ie</td>
+      <td>Constant current bias</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Ii</td>
+      <td>Constant current bias</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>Ith</td>
+      <td>Constant current bias</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>Irtn</td>
+      <td>Constant current bias</td>
+      <td>−0.3</td>
+    </tr>
+    <tr>
+      <td>τth</td>
+      <td>Thalamo-cortical delay</td>
+      <td>45 ms</td>
+    </tr>
+    <tr>
+      <td>τrtn</td>
+      <td>Reticular-thalamic delay</td>
+      <td>10 ms</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Conduction velocity</td>
+      <td>0.35 m/s</td>
+    </tr>
+    <tr>
+      <td>ρ</td>
+      <td>Connection probability</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>we−&gt;eo</td>
+      <td>Synaptic connection strength</td>
+      <td>20.4</td>
+    </tr>
+    <tr>
+      <td>we−&gt;io</td>
+      <td>Synaptic connection strength</td>
+      <td>30.6</td>
+    </tr>
+    <tr>
+      <td>wi−&gt;eo</td>
+      <td>Synaptic connection strength</td>
+      <td>−30.6</td>
+    </tr>
+    <tr>
+      <td>wi−&gt;io</td>
+      <td>Synaptic connection strength</td>
+      <td>20.4</td>
+    </tr>
+    <tr>
+      <td>we−&gt;lgno</td>
+      <td>Synaptic connection strength</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>we−&gt;rtno</td>
+      <td>Synaptic connection strength</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>wlgn−&gt;eo</td>
+      <td>Synaptic connection strength</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>wlgn−&gt;io</td>
+      <td>Synaptic connection strength</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>wlgn−&gt;rtno</td>
+      <td>Synaptic connection strength</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>wrtn−&gt;lgno</td>
+      <td>Synaptic connection strength</td>
+      <td>−34</td>
+    </tr>
+    <tr>
+      <td>σe−&gt;e2</td>
+      <td>Synaptic connection range</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>σe−&gt;i2</td>
+      <td>Synaptic connection range</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>σi−&gt;e2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>σi−&gt;i2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>σe−&gt;th2</td>
+      <td>Synaptic connection range</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>σe−&gt;rtn2</td>
+      <td>Synaptic connection range</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>σth−&gt;e2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>σth−&gt;i2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>σth−&gt;rtn2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>σrtn−&gt;th2</td>
+      <td>Synaptic connection range</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>Integration time step</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition, we mention that the unit of the model voltage and the model firing threshold is arbitrary, which reflects an invariance with respective to unknown physiological parameters. Consequently, it is difficult to compare experimental stimulation parameters, such as stimulus amplitude, to model parameters. One typical distinction in the literature is the differentiation between ‘sub-threshold’ and ‘super-threshold’ stimulation (in terms of generating an action potential), which conveys the notion of ‘weak’ versus ‘strong’ input. However, the stimulation amplitude alone does not determine in isolation whether an action potential is generated. Rather the electrical state of the neuron (in particular, its level of depolarization) plays an equally important role. Thus such classification makes most sense when applied to stimulation occurring when the neuron is quiescent and thus at the resting membrane voltage. In our work here, we do not directly model the membrane voltage but rather how spiking activity depends on input, which implies an underlying subthreshold depolarization. However, as a reference for discussion of our results in the context of different human non-invasive brain stimulation paradigms, the shape of the transfer function of input to spiking output in our model supports the conclusion that the range of amplitudes considered here would mostly fall into the ‘weak’ (subthreshold) category.
 
-## Simulated EEG
+### Simulated EEG
 
-In our model, encephalographic (EEG) dynamics are modelled by a weighted sum over somatic excitatory and inhibitory potentials, that isA(t)= 1Ne ∑k=1Neϕekuek(t)+1Ni ∑k=1Niϕikuik(t),where ϕe,ik are real positive coefficients. Here we assume that the network's fine-scale structure is unknown, and thus consider random weights ϕe,ik = [0,1]. However, we note that specific choices of the ϕe,ik distributions can be made to increase the similarity of the network activity to physiological signals, such as LFPs and EEG (Linden et al., 2010, Mazzoni et al., 2015).
+In our model, encephalographic (EEG) dynamics are modelled by a weighted sum over somatic excitatory and inhibitory potentials, that is
 
-## Spectral analysis and phase distributions
+$$
+A(t)= \frac{1}{N_{e}} \sumk=1N_{e}ϕ_{e}^{k}u_{e}^{k}(t)+\frac{1}{N_{i}} \sumk=1N_{i}ϕ_{i}^{k}u_{i}^{k}(t),
+$$
+
+where $ϕ_{e,i}^{k}$ are real positive coefficients. Here we assume that the network's fine-scale structure is unknown, and thus consider random weights $ϕ_{e,i}^{k}$ = [0,1]. However, we note that specific choices of the $ϕ_{e,i}^{k}$ distributions can be made to increase the similarity of the network activity to physiological signals, such as LFPs and EEG (Linden et al., 2010, Mazzoni et al., 2015).
+
+### Spectral analysis and phase distributions
 
 Spectral analysis was performed using a fast Fourier transform (FFT) routine using freely available C++ scripts (Press et al., 2007). To quantify entrainment, we used a windowed discrete Fourier transform to compute the phase of the firing-rate activity for cortical excitatory cells across independent trials, and to this phase with the phase of the stimulation applied. As such, we computed the response of the network in rest and task conditions to stimulation delivered with a random phase for 200 independent trials of 2 s. In each trial, we randomly selected a time window of 500 ms and computed the phase difference, at the stimulation frequency of 11 Hz, between firing-rate response and input stimuli. We did this to ensure no phase consistency in the endogenous network response between successive trials on which we computed phase differences. We then evaluated the distribution of these phase differences across all trials in both conditions. Results are shown in Figure 3E and F. In each trial, cortical neurons were driven with a 11 Hz stimulus applied at a random phase. To ensure statistical significance, we successively shuffled and separated trials into two groups and computed the distribution of phase differences in each case. We then computed the circular variance of these distributions as a measure of phase clustering (i.e. small circular variance indicating more clustered phases around the mean). We then computed the probability of observing the variance in the unshuffled data.
 
-## Mutual information
+### Mutual information
 
-We computed mutual information between the stimulation signal S(t) and the mean firing-rate response r(t) to measure how well the stimulation waveform was reflected in the spiking patterns of cortical neurons across independent trials. We assumed that for sufficiently high firing rates, the random fluctuations impacting the network responses can be approximated by Gaussian white noise, and computed,MI=12log21+SNRwhere SNR=ρ1-ρ is the signal to noise ratio and ρ is the crossspectral correlation defined byρ=ΦrS0Φrr0ΦSS0
+We computed mutual information between the stimulation signal $S(t)$ and the mean firing-rate response $r(t)$ to measure how well the stimulation waveform was reflected in the spiking patterns of cortical neurons across independent trials. We assumed that for sufficiently high firing rates, the random fluctuations impacting the network responses can be approximated by Gaussian white noise, and computed,
 
-The convolutions Φxyf=∫0∞dωx~(ω)y~(ω-f) measure the covariance between the Fourier transforms x~(f) and y~(f) of two time series xt and y(t). We computed the mutual information between input signal S(t) and responses r(t) for increasing noise variance D across all populations of the network. We did this to confirm the presence of stochastic resonance, where irregular fluctuations first improve and then hinder the detection of weak signals, and also to compensate for firing-rate saturation (which bounds the variance of input- and noise-induced fluctuations).
+$$
+MI=\frac{1}{2}log_{2}1+SNR
+$$
 
-## Noise-induced transition and resonance curves for a simplified delayed neural oscillator
+where $SNR=\frac{ρ}{1-ρ}$ is the signal to noise ratio and $ρ$ is the crossspectral correlation defined by
 
-The thalamo-cortical system has been thoroughly studied, both in experiments and in models, and its low frequency dynamics have been shown to be largely determined by the presence of a delayed feedback loop between cortex and thalamus (e.g. Roberts and Robinson, 2008). A thorough derivation of the reduced dynamics for the detailed spiking model that we used in the simulations is far beyond the scope of this paper, and is highly challenging due to the combined presence of sparse and topographic synaptic projections, multiple cell types and spiking activity. To better understand the mechanism involved in shaping resting-state cortical oscillations, we built a simplified conceptual neural oscillator model,whose limit cycle solutions emerge due to the combined presence of delayed feedback and slow spike-frequency adaptation,dUdt= -U+bV+FthUt-T+S(t)sdVdt=−V+Uwith feedback response function FthU=g2(1+erf⁡U2Γ) for some gain g<0 and time delay T. The membrane potential proxy Uhere denotes the mean somatic membrane potential of cortical neurons, subjected to re-entrant inputs back from the thalamus. The response function also depends on the state-dependent noise variance Γ. This results from non-linear interactions between noise and a sigmoidal non-linearity, which is revealed by performing a mean-field reduction (Lefebvre et al., 2015; Hutt et al., 2016). Note that a similar model has been used before to study state-dependent entrainment and outlasting effects observed in experimental data in humans (Alagapan et al., 2016).
+$$
+ρ=\frac{Φ_{rS}0}{\sqrt{Φ_{rr}0Φ_{SS}0}}
+$$
 
-Assuming slow adaptation (s large) and the temporal evolution close to the systems fixed point, the smoothing of the neurons’ response functions (Lefebvre et al., 2015) leads to the effective linear dynamics with periodic forcing,(1)dUdt=b-1U+RthUt-T+Stwith Rth=g2πΓexp[-uo22Γ] and fixed point Uo. It has been shown that the value of the gain Rth is inversely proportional to the intensity of noise in the system. Indeed, for low values of Γ (i.e. in the rest state), |Rth| remains high due to the steepness of the neuron response function. By contrast, as Γ increases (i.e. in the task state), |Rth| decreases (Hutt et al. 2016). The impact of state-dependent noise on oscillatory solutions can thus be quantified by analyzing how the stability of the system depends on the parameter Γ. It can be shown that increasing the noise variance in the system above causes a destabilization of limit cycle solutions through a supercritical Hopf bifurcation. Setting S=0 and using the ansatz U=Uo+δU e−λt with λ=±i ωc, where ωc in the linearized system above, one obtains after separating real and imaginary parts,TRthc 2-1  =cos-1⁡(1/Rthc)
+The convolutions $Φ_{xy}f=\int_{0}^{∞}d\omegax~(\omega)y~(\omega-f)$ measure the covariance between the Fourier transforms $x~(f)$ and $y~(f)$ of two time series $xt$ and $y(t)$. We computed the mutual information between input signal $S(t)$ and responses $r(t)$ for increasing noise variance $D$ across all populations of the network. We did this to confirm the presence of stochastic resonance, where irregular fluctuations first improve and then hinder the detection of weak signals, and also to compensate for firing-rate saturation (which bounds the variance of input- and noise-induced fluctuations).
 
-Setting T=2∙τth=90 ms (i.e. twice the thalamo-cortical delay), one then obtains Rthc≈−1.05.
+### Noise-induced transition and resonance curves for a simplified delayed neural oscillator
 
-The derivation of the resonance curve for a linear delayed system with periodic forcing is easily accomplished by finding the amplitudes of its solution, which can be computed explicitly via substitution. Let us assume an entrained oscillatory solution of the formUt= AS,fsin⁡ft+BS,fcos⁡(ft)
+The thalamo-cortical system has been thoroughly studied, both in experiments and in models, and its low frequency dynamics have been shown to be largely determined by the presence of a delayed feedback loop between cortex and thalamus (e.g. Roberts and Robinson, 2008). A thorough derivation of the reduced dynamics for the detailed spiking model that we used in the simulations is far beyond the scope of this paper, and is highly challenging due to the combined presence of sparse and topographic synaptic projections, multiple cell types and spiking activity. To better understand the mechanism involved in shaping resting-state cortical oscillations, we built a simplified conceptual neural oscillator model,whose limit cycle solutions emerge due to the combined presence of delayed feedback and slow spike-frequency adaptation,
 
-Substituting this ansatz in Equation (1) above and solving for the A(S,f) and B(S,f), one can then compute the amplitude of the solution u as||U||=A(S,f)2+B(S,f)2,whereAS,f= -Scos⁡fTRth-1Rth2+2sin⁡fTRthT-2cos⁡fTRth+1+f2andB(S,f)= −Ssin⁡(fT)Rth+f(Rth2+2sin⁡(fT)RthT−2cos⁡(2fT)Rth+1+f2).
+$$
+\frac{dU}{dt}=-U+bV+F_{th}Ut-T+S(t)
+$$
+
+
+
+$$
+s^{\frac{dV}{dt}}=−V+U
+$$
+
+with feedback response function $F_{th}U=\frac{g}{2}(1+erf⁡\frac{U}{\sqrt{2Γ}})$ for some gain g<0 and time delay $T$. The membrane potential proxy $U$here denotes the mean somatic membrane potential of cortical neurons, subjected to re-entrant inputs back from the thalamus. The response function also depends on the state-dependent noise variance $Γ$. This results from non-linear interactions between noise and a sigmoidal non-linearity, which is revealed by performing a mean-field reduction (Lefebvre et al., 2015; Hutt et al., 2016). Note that a similar model has been used before to study state-dependent entrainment and outlasting effects observed in experimental data in humans (Alagapan et al., 2016).
+
+Assuming slow adaptation ($s$ large) and the temporal evolution close to the systems fixed point, the smoothing of the neurons’ response functions (Lefebvre et al., 2015) leads to the effective linear dynamics with periodic forcing,
+
+$$
+\frac{dU}{dt}=b-1U+R_{th}Ut-T+St
+$$
+
+with $R_{th}=\frac{g}{\sqrt{2\piΓ}}exp[-\frac{u_{o}^{2}}{2Γ}]$ and fixed point $U_{o}$. It has been shown that the value of the gain $R_{th}$ is inversely proportional to the intensity of noise in the system. Indeed, for low values of $Γ$ (i.e. in the rest state), $|R_{th}|$ remains high due to the steepness of the neuron response function. By contrast, as $Γ$ increases (i.e. in the task state), $|R_{th}|$ decreases (Hutt et al. 2016). The impact of state-dependent noise on oscillatory solutions can thus be quantified by analyzing how the stability of the system depends on the parameter $Γ$. It can be shown that increasing the noise variance in the system above causes a destabilization of limit cycle solutions through a supercritical Hopf bifurcation. Setting $S=0$ and using the ansatz $U=U_{o}+\deltaU e^{−\lambdat}$ with $\lambda=\pmi\omega_{c}$, where $\omega_{c}$ in the linearized system above, one obtains after separating real and imaginary parts,
+
+$$
+T\sqrt{R_{th}^{c2}-1}=cos^{-1}⁡(1/R_{th}^{c})
+$$
+
+Setting $T=2∙\tau_{th}=$90 ms (i.e. twice the thalamo-cortical delay), one then obtains $R_{th}^{c}≈$−1.05.
+
+The derivation of the resonance curve for a linear delayed system with periodic forcing is easily accomplished by finding the amplitudes of its solution, which can be computed explicitly via substitution. Let us assume an entrained oscillatory solution of the form
+
+$$
+Ut=AS,fsin⁡ft+BS,fcos⁡(ft)
+$$
+
+Substituting this ansatz in Equation (1) above and solving for the $A(S,f)$ and $B(S,f)$, one can then compute the amplitude of the solution $u$ as
+
+$$
+||U||=\sqrt{A(S,f)^{2}+B(S,f)^{2}},
+$$
+
+where
+
+$$
+AS,f=-S\frac{cos⁡fTR_{th}-1}{R_{th}^{2}+2sin⁡fTR_{th}T-2cos⁡fTR_{th}+1+f^{2}}
+$$
+
+and
+
+$$
+B(S,f)= −S\frac{sin⁡(fT)R_{th}+f}{(R_{th}^{2}+2sin⁡(fT)R_{th}T−2cos⁡(2fT)R_{th}+1+f^{2})}.
+$$

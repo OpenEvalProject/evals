@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02fa3aq29 LIVELab, McMaster University Hamilton Canada
-2. https://ror.org/02fa3aq29 Psychology, Neuroscience and Behaviour, McMaster University Hamilton Canada
-3. https://ror.org/04yrkc140 Department of Biomechanics, University of Nebraska Omaha Omaha United States
-4. https://ror.org/02der9h97 Center for the Ecological Study of Perception and Action, University of Connecticut Storrs United States
-5. https://ror.org/02der9h97 Department of Psychological Sciences, University of Connecticut Storrs United States
-6. https://ror.org/02der9h97 Department of Physics, University of Connecticut Storrs United States
-7. https://ror.org/02der9h97 CT Institute for Brain and Cognitive Sciences, University of Connecticut Storrs United States
+1. LIVELab, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
+2. Psychology, Neuroscience and Behaviour, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
+3. Department of Biomechanics, University of Nebraska Omaha Omaha United States ([ROR:04yrkc140](https://ror.org/04yrkc140))
+4. Center for the Ecological Study of Perception and Action, University of Connecticut Storrs United States ([ROR:02der9h97](https://ror.org/02der9h97))
+5. Department of Psychological Sciences, University of Connecticut Storrs United States ([ROR:02der9h97](https://ror.org/02der9h97))
+6. Department of Physics, University of Connecticut Storrs United States ([ROR:02der9h97](https://ror.org/02der9h97))
+7. CT Institute for Brain and Cognitive Sciences, University of Connecticut Storrs United States ([ROR:02der9h97](https://ror.org/02der9h97))
 8. Rotman Research Institute Toronto Canada
 
 † Corresponding author
@@ -47,77 +47,153 @@ Group music making constitutes an ecologically valid and convenient paradigm for
 
 Inspired by theoretical models from the animal literature (Sumpter, 2006), we assumed that individual interactions average to overall group behavior, a mean field, which provides stabilizing feedback to individual group members (Figure 2). A key prediction was that the relative influence of the stabilizing feedback would increase with increasing ensemble size. To this end, we measured separately the variability of individual drummers and the group. We constructed a theoretical group-aggregate onset time as the center of clusters of individual onset times. We expected that larger groups would exhibit lower variability as measured using the coefficient of variation of inter-onset intervals. We also tested this idea formally by adapting a Kuramoto model of group synchronization.
 
-The (Kuramoto, 1975) dynamic system of coupled phase oscillators, Equation 1, was conceptualized as a large population of oscillators with different natural frequencies capable of spontaneously locking to a common frequency.(1)θ˙i=ωi+KN∑j=1Nsin⁡(θj−θi)
+![Figure 2.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig2-v2.jpg)
+
+**Figure 2.:** The middle inset shows individual trajectories (red lines) and the mean field (blue line) in time (t). Averaging the phase oscillators θ (red lines) gives a so-called mean field (blue lines) with phase Ψ and amplitude r. As the individual oscillators become more coherent from (A) to (B), r increases which leads to stronger influence from Ψ to diverging θ’s (weight of the downward vectors).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig2-figsupp1-v2.jpg)
+
+The (Kuramoto, 1975) dynamic system of coupled phase oscillators, Equation 1, was conceptualized as a large population of oscillators with different natural frequencies capable of spontaneously locking to a common frequency.
+
+$$
+\theta˙_{i}=\omega_{i}+\frac{K}{N}\sumj=1Nsin⁡(\theta_{j}−\theta_{i})
+$$
 
 Here, θi is the phase of oscillator i, ωi is its preferred frequency, i.e., how fast around the unit circle it likes to go, K is coupling strength, and N is the number of oscillators.
 
-The model gives a mathematical account of group synchronization as dependent on a mean field, referred to here as group aggregate. A central feature of the model is that the feedback is positive: the amplitude of the mean field grows as a function of inter-individual synchronization, and reciprocally, the individual oscillators are affected more by the mean field if its amplitude is larger, see Figure 2. This is shown by using the definition of the mean of phases, Equation 2, to express Equation 1 equivalently (Strogatz, 2000) in terms of the coupling between individual oscillators and the mean field, Equation 3. Ψ is the mean field phase, and r is the mean field coherence, also called order parameter (Kuramoto, 1975).(2)reiΨ=1N∑j=1Neiθj(3)θ˙i= ωi+rKsin⁡(Ψ−θi)
+The model gives a mathematical account of group synchronization as dependent on a mean field, referred to here as group aggregate. A central feature of the model is that the feedback is positive: the amplitude of the mean field grows as a function of inter-individual synchronization, and reciprocally, the individual oscillators are affected more by the mean field if its amplitude is larger, see Figure 2. This is shown by using the definition of the mean of phases, Equation 2, to express Equation 1 equivalently (Strogatz, 2000) in terms of the coupling between individual oscillators and the mean field, Equation 3. $Ψ$ is the mean field phase, and r is the mean field coherence, also called order parameter (Kuramoto, 1975).
+
+$$
+re^{iΨ}=\frac{1}{N}\sumj=1Ne^{i\theta_{j}}
+$$
+
+
+
+$$
+\theta˙_{i}= \omega_{i}+rKsin⁡(Ψ−\theta_{i})
+$$
 
 Such individual-collective positive feedback loops enable ant trails and other phenomena in swarming animals (Sumpter, 2006) as well as acoustic herding in chorusing animals (Ravignani et al., 2014). The system also serves as a model for neuronal collective synchronization (Breakspear et al., 2010; Frank et al., 2000; Noori et al., 2020). Theoretically, the principles embodied by this system should apply to group action in humans too (Zhang et al., 2019). It has found application in understanding inter-personal synchronization of dyads (Dotov et al., 2019; Heggli et al., 2019; Roman et al., 2019), individual rate preferences in the dyad (Bégel et al., 2022), and effects of coupling topology in larger groups (Alderisio et al., 2016). In the present context, the model predicts that ensembles will be more stable than individuals because of the feedback loop between the timing of individuals and the group aggregate of individuals.
 
-The original Kuramoto model involves continuous dynamics and continuous coupling with constant gain and no delay. In a drumming task, participants are coupled by way of discrete acoustic onset times. Here, we propose a hybrid continuous-discrete system of oscillators with event-based feedback updated once per cycle, Equation 4. It utilizes a pulse function shaped like the acoustic envelope of a drum hit. To this end, Equation 5 specifies an asymmetric gamma distribution that rises sharply at time 0 and then decays slowly (Figure 2—figure supplement 1). In the model, an oscillator emits a pulse once per cycle when its phase angle crosses zero. Furthermore, we posit additive phase variability with a Gaussian distribution N(0,σ).(4)θ˙i=ωi+KN∑j=1NPj≠i(t)sinθi+N(0,σ),⋅⋅⋅⋅⋅⋅i=1,...,N(5)P(t)=f(t|a,b)=1baΓ(a)ta−1e−tb
+The original Kuramoto model involves continuous dynamics and continuous coupling with constant gain and no delay. In a drumming task, participants are coupled by way of discrete acoustic onset times. Here, we propose a hybrid continuous-discrete system of oscillators with event-based feedback updated once per cycle, Equation 4. It utilizes a pulse function shaped like the acoustic envelope of a drum hit. To this end, Equation 5 specifies an asymmetric gamma distribution that rises sharply at time 0 and then decays slowly (Figure 2—figure supplement 1). In the model, an oscillator emits a pulse once per cycle when its phase angle crosses zero. Furthermore, we posit additive phase variability with a Gaussian distribution $N(0,\sigma)$.
 
-Like the original system, this model involves intrinsic dynamics (ωi) and interaction dynamics given by the whole coupling term. For comparison, we tested two additional models: the classic Kuramoto system with constant full coupling, Equation 1, as well as the hybrid continuous-discrete model, Equations 4; 5, with a sparse coupling matrix in a ring topology. Specifically, the individual units were only coupled to their two immediate neighbors, j=i±1, with a periodic boundary condition, θN+1=θ1 and θ0=θN .
+$$
+\theta˙_{i}=\omega_{i}+\frac{K}{N}\sumj=1NP_{j\neqi}(t)sin\theta_{i}+N(0,\sigma),⋅⋅⋅⋅⋅⋅i=1,...,N
+$$
+
+
+
+$$
+P(t)=f(t|a,b)=\frac{1}{b^{a}Γ(a)}t^{a−1}e^{\frac{−t}{b}}
+$$
+
+Like the original system, this model involves intrinsic dynamics (ωi) and interaction dynamics given by the whole coupling term. For comparison, we tested two additional models: the classic Kuramoto system with constant full coupling, Equation 1, as well as the hybrid continuous-discrete model, Equations 4; 5, with a sparse coupling matrix in a ring topology. Specifically, the individual units were only coupled to their two immediate neighbors, $j=i\pm1$, with a periodic boundary condition, $\theta_{N+1}=\theta_{1}$ and $\theta_{0}=\theta_{N}$ .
 
 ## Results
 
 In Performance, Dynamics and coordination in ensemble, SCT conditions, and Group dynamics, we present the analyses of the participants’ drumming behavior. In Variability in the mean-field model with discretely updated feedback, we present the results from our adapted hybrid model consisting of a continuous-discrete system of oscillators with pulse-based feedback updated once per cycle.
 
-## Performance
+### Performance
 
-## Variability
+#### Variability
 
-## Does individual variability increase in ensemble compared to solo conditions?
+##### Does individual variability increase in ensemble compared to solo conditions?
 
 To answer this question, we fitted a model including only individuals’ data in dyads and quartets (octets did not complete solo conditions). As Figure 3A shows, individuals’ variability increased when playing in an ensemble relative to playing solo (β=0.009, SE=0.001, t=6.65, and ω2=0.10).
 
-## In the context of true ensemble playing, how does variability of the individuals and group aggregate change across dyads, quartets, and octets?
+![Figure 3.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig3-v2.jpg)
+
+**Figure 3.:** (A) Synchronization-continuation task (SCT) drumming trials (no data collected in N8 solo condition). (B) Pulse-coupled Kuramoto model. N2=dyad; N4=quartet; N8=octet; Inds = individual participants; Aggr = group-aggregate; Solo = solo condition; Ensemble = ensemble condition. Error bars are standard errors. With missing trials, the number of observations in the respective conditions was n=(88, 88, 44, 111, 110, 32, ∅, 953, 133) in (A), and n=(200, 198, 99, 400, 400, 100, 800, 688, 86) in (B).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** N2=dyad; N4=quartet; N8=octet; Inds = individual participants; Agg = group-aggregate; Solo = solo condition; Ens = ensemble condition; no data collected in N8 Solo condition. (A) Synchronization-continuation task (SCT) drumming trials. (B) Simulations. As a sanity check, group-aggregate variability of IOIs in the solo (pseudo-group-ensemble) was much higher. A linear model was fitted to duet and quartet drumming trials (N2 and N4), the groups where the participants performed both in solo and ensemble condition. The statistical model confirmed that the group-aggregate variability in ensemble condition was lower than the pseudo-group-aggregate in solo playing condition (β=−0.171, SE = 0.016, and t=−10.56). In addition, the pseudo-group-aggregate was higher than individuals’ variability in solo conditions (β=0.153, SE=0.011, and t=13.38). There was an interaction between group size and the difference between individuals and group aggregate. Pseudo-group-aggregate variability in solo trials increased as group size increased from duet to quartet (β=0.017, SE=0.004, and t=4.67), i.e., as more individual solo performances were put into calculating the mean field. In ensemble playing, group-aggregate variability decreased as group size increased from duet to quartet (β=−0.016, SE=0.005, and t=−3.22), the more individuals playing together, the lower the variability of the group average. Error bars are standard errors. With missing trials, the number of observations was n=(88, 111, ∅, 44, 32, ∅, 88, 110, 953, 44, 32, 133) in (A), and n=(200, 400, 800, 100, 100, 100, 198, 400, 688, 99, 100, 86) in (B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The classical Kuramoto model with constant coupling term. (B) The pulse-coupled model but with selective coupling in a ring topology, where units only interact with their immediate neighbors. In contrast to the pulse-coupled model developed in the present paper, these models do not exhibit the pattern of data across conditions found empirically, see Figure 3. Error bars are standard errors. With missing trials, the number of observations in the respective conditions was n=(200, 200, 100, 400, 400, 100, 800, 800, 100) in (A), and n=(200, 198, 99, 400, 396, 99, 800, 784, 98) in (B).
+
+##### In the context of true ensemble playing, how does variability of the individuals and group aggregate change across dyads, quartets, and octets?
 
 To specifically test the main hypothesis, we fitted a model to continuation (SCT) trials from all three group sizes in the ensemble playing condition. We found that individual variability increased with group size (β=0.001, SE=0.0005, t=2.20, and ω2=0.09), group-aggregate variability was lower than individual variability (β=−0.010, SE=0.003, t=−3.29, and ω2=0.01), and the difference between individual and group-aggregate variability increased for larger group sizes (β=−0.0025, SE=0.0005, t=−5.19, and ω2=0.03), see Figure 3A. As a sanity check, we verified that the procedure for group-aggregate onset times did not lead to spuriously periodic data. We observed very high variability for the pseudo-group-aggregate in solo condition where individuals did not hear each other, see Figure 3—figure supplement 1A.
 
-## How does variability compare between continuation and synchronization?
+##### How does variability compare between continuation and synchronization?
 
 The octet group completed trials in conditions of both SCT (i.e. after the offset of the reference metronome) and synchronization-only (with a constant reference metronome). Surprisingly, there were no differences between these conditions either in individual (t<1) or in group-aggregate variability (t<1).
 
-## Speeding up
+### Speeding up
 
-## Do individuals speed up more when playing solo than in dyad or quartet ensembles?
+#### Do individuals speed up more when playing solo than in dyad or quartet ensembles?
 
 Speeding up was defined as the linear increase in tempo (i.e. decrease of IOIs) over the course of a trial. As expected, individuals sped up even when playing solo (β=0.018, SE=0.007, t=2.67, and ω2=0.10), and greater speeding up was observed in ensemble than in solo conditions (β=0.022, SE=0.007, t=3.29, and ω2=0.16). The effect of group size was not significant (t<1).
 
-## Do dyad, quartet, and octet ensembles speed up to different extents?
+#### Do dyad, quartet, and octet ensembles speed up to different extents?
 
 To test the effect of group size across the duets, quartets, and octets, a second model was fitted with group size as a continuous predictor, but only including trials in SCT ensemble playing. As suggested by Figure 4, there was a trend for speeding up to decrease as group size increased. The best linear model included an effect of tempo (β=−0.001, SE=0.00005, t=−1.98, and ω2=0.005) and an interaction between group size and tempo (β=−.00004, SE=0.000007, t=−6.20, and ω2=0.11), reflecting that at higher tempos larger ensembles sped up less than smaller ensembles, see Figure 4—figure supplement 1.
 
-## Dynamics and coordination in ensemble, SCT conditions
+![Figure 4.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig4-v2.jpg)
 
-## Individual and group-aggregate dynamics (autocorrelations)
+**Figure 4.:** N2=dyad; N4=quartet; N8=octet (no data collected in solo N8 condition). Error bars are standard errors. With missing trials, the number of observations in the respective conditions was n=(88, 111, ∅, 88, 110, 482).
 
-## Individuals
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Individuals’ data across group sizes (color-coded) and tempos are shown (abscissa jittered for visibility) along with the model fit. Note that tempos 50, 100, and 240 were not included in the statistical analysis and main text.
+
+### Dynamics and coordination in ensemble, SCT conditions
+
+#### Individual and group-aggregate dynamics (autocorrelations)
+
+##### Individuals
 
 Figure 5A shows that individuals’ autocorrelations at lag 1 were negative across all group sizes and tempos. This is typical for the alternating long-short IOIs seen in synchronization tasks, reflecting alternating fast-slow synchronization errors when adapting to the previous interval. There was also a trend across all group sizes and tempo conditions for positive peaks at even lags (2, 4, 6, and 8) and negative peaks at odd lags (3, 5, and 7), see Figure 5—figure supplement 1. However, this general pattern became smoother with increasing group size. To test this statistically, in each trial, we took the average absolute difference between successive lags, thus measuring the average range of the autocorrelation function up to lag 8 and applied the same linear modeling approach as in Performance. The effect of group size was significant (β=−0.0054, SE=0.0023, t=−2.35, and ω2=0.13). There was also a decrease of range with increasing tempo (β=−0.00039, SE=0.0001, t=−4.92, and ω2=0.04). Additionally, we verified the signs, relative magnitudes, and the effects of group size and tempo on the autocorrelations by fitting separate linear models for each lag, see Supplementary file 1a.
 
-## Group-aggregate
+![Figure 5.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig5-v2.jpg)
+
+**Figure 5.:** (A) Autocorrelations of individual IOIs, averaged (SE) across participants’ trials and tempos, separately per group size (color-coded). (B) Same for group-aggregate IOIs. Error bars are bootstrap 95% confidence intervals. The number of observations in the respective group sizes was n=(88, 110, 474) in (A) and n=(44, 32, 66) in (B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Tempos 50, 100, and 240 were not included in the statistical analysis in the main text. Error bars are bootstrap 95% confidence intervals. The number of observations in the respective group sizes was n=(20, 14) in bpm=50, n=(22, 28, 83) in bpm=80, n=(77) in bpm=100, n=(22, 26, 85) in bpm=120, n=(22, 28, 83) in bpm=160, n=(22, 28, 84) in bpm=200, n=(22, 27) in bpm=240.
+
+##### Group-aggregate
 
 Interestingly, group-aggregate IOIs revealed the same overall pattern of results even though by definition the group-aggregate timing was smoother and less variable (see Group-aggregate (mean field) measure for ensembles and pseudo-ensembles), see Figure 5B and Supplementary file 1b. There was a trend across all group sizes for relative positive peaks at even lags 2, 4, 6, and 8 and relative negative peaks at odd numbered lags 1, 3, 5, and 7. The similarity of the dynamics of individuals and the group aggregate is not trivial because it implies that even groups of up to eight participants spontaneously acquire the alternating long-short interval dynamics characteristic of when individual participants synchronize with a stimulus.
 
-## Inter-personal coordination (cross-correlations)
+### Inter-personal coordination (cross-correlations)
 
 Cross-correlation applied to the pre-processed IOIs assessed inter-personal coordination between pairs of participants drumming together in the continuation phase of ensemble performances. On rare occasions, individuals produced diverging beat times by, for example, missing the drum or hitting it two times. The resulting outlier IOIs were removed, and the remaining were re-aligned relative to the other participants by temporal adjacency. The last pre-processing step consisted of whitening each time-series of IOIs (see From beat onset times to IOIs, outlier removal, and clustering–Pre-whitening).
 
 We analyzed lags in the range 0–4 because cross-correlation coefficients tended to be symmetric between positive and negative lags, see Figure 6. As expected, cross-correlations at lag 0 were negative in duets (β=−0.039, SE=0.011, t=−3.60, and ω2=0.04), consistent with the pattern of results for autocorrelations, and inter-personal coordination dynamics were smoother in larger group sizes. Furthermore, lag 0 cross-correlations became less negative with increasing group size (β=0.012, SE=0.002, t=5.93, and ω2=0.13). Lag 1 cross-correlations were positive (β=0.14, SE=0.012, t=11.80, and ω2=0.32), but their magnitude decreased with group size (β=−0.016, SE=0.002, t=−7.14, and ω2=0.20). There were also effects of tempo, see Figure 6—figure supplement 1.
 
-## Group dynamics
+![Figure 6.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig6-v2.jpg)
 
-## Network analysis
+**Figure 6.:** Averages (SE) across participant pairs and tempos are shown separately per group size (color-coded lines). IOIs were aligned across participants and pre-whitened by filtering with an autoregressive model. Error bars are bootstrap 95% confidence intervals. The number of observations in the respective group sizes was n=(44, 140, 1479).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** IOIs were aligned across participants and pre-whitened by filtering with an autoregressive model. Tempos 50, 100, and 240 were not included in the statistical analysis. Error bars are bootstrap 95% confidence intervals. The number of observations in the respective group sizes was n=(10, 19) in bpm=50, n=(11, 36, 248) in bpm=80, n=(232) in bpm=100, n=(11, 32, 260) in bpm=120, n=(11, 36, 248) in bpm=160, n=(11, 36, 254) in bpm=200, n=(11, 34) in bpm=240.
+
+### Group dynamics
+
+#### Network analysis
 
 We used network analysis in the continuation phase of trials of ensemble playing to describe group coordination at an even higher level of organization than interpersonal coordination. First, we obtained the directed graphs of functional connectivity among participant drummers. In each trial, the graph consisted of the real-valued directed links between pairs of drummers estimated by way of the transfer entropy (TE), see Figure 1C. Then, network properties of these graphs were computed, see Network analysis. There was a significant effect of group size on causal density (β=−0.0006, SE=0.0001, t=−5.88, and ω2=0.47), see Figure 7A. Causal density increased with tempo (β=0.008, SE=0.0019, t=4.01, and ω2=0.12). As Figure 7B shows, mean node strength increased with group size (β=0.0032, SE=0.00032, t=10.13, and ω2=0.73). Node strength was affected by tempo (β=0.016, SE=0.005, t=2.96, and ω2=0.07). For better model conditioning, tempos values were reduced and compressed by transforming them with a logistic function. Comparing between SCT trials and synchronization-only trials in the octet group found no difference for causal density (t<1) or mean node strength (t<1), suggesting group dynamics were similar regardless of whether a pacing stimulus was present or not.
 
-## Network properties and task performance
+![Figure 7.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig7-v2.jpg)
+
+**Figure 7.:** (A) Mean node strength increases with group size in the continuation phase of synchronization-continuation task (SCT) ensemble drumming trials. (B) Causal density decreases with group size (Abscissa jittered for visibility).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig7-figsupp1-v2.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The Gaussian model (green) was selected over the linear (red) using model comparison with Akaike information criterion and Bayesian information criterion (AIC and BIC), indicating that higher TE values tended to concentrate in the center of the distribution. Specifically, we compared a Gaussian and a linear model’s ability to predict TE values from all pairs during continuation tapping (including all group sizes) from their respective changes in tempo (maximum likelihood estimation, mle in R). Indeed, the AIC method selected the Gaussian model (–39,838.89) over the linear (–39,566.81). The estimated 95% CIs of model parameters indicated that the center of the Gaussian curve was just above zero, change of 1.56–2.37 beats per minute (bpm), over the continuation phase (tempo changes in the data ranged from about –20–40 bpm), suggesting that best group coordination was achieved when participants were slowly increasing their tempo or that slowly increasing the tempo allowed for best coordination.
+
+#### Network properties and task performance
 
 The relation between group dynamics and group performance was evaluated by regressing the network properties separately with respect to speeding up and IOI variability in ensemble playing. Speeding up decreased with increasing causal density (β=−0.005, SE=0.002, t=−2.22, and ω2=0.02) and was not associated with node strength (β=−0.01, SE=0.007, and t=−1.66), see Figure 7—figure supplement 1A–B. Variability was not associated with causal density (β=−.003, SE=0.0017, and t=−1.97) but decreased with increasing node strength (β=−0.007, SE=0.0019, t=−4.01, and ω2=0.09), see Figure 7—figure supplement 1C–D. Interestingly, we also observed that TE tended to be higher in trials that deviated less from the stimulus tempo, see Figure 7—figure supplement 2.
 
-## Variability in the mean-field model with discretely updated feedback
+### Variability in the mean-field model with discretely updated feedback
 
 The results of the modeling showed that the cycle duration variabilities of the mean-field hybrid Kuramoto model, adapted to have discretely updated feedback, reproduced the main experimental findings. The model results are summarized in Figure 3B and can be compared to the experimental results in Figure 3A. The adapted model reproduced the pattern of behavioral results at both the level of individual oscillators (relating to individuals in our drumming data) and the mean field (relating to our group-aggregate analyses). Specifically, for all group sizes, variability was higher for individual oscillators when playing in the group than when playing solo, but variability was always lowest for the mean field (group aggregate). In addition, with increasing group size, the difference between individual variability and that of the mean field became greater, indicating increasing collective benefits with increasing group size. See Figure 3—figure supplement 1B for a comparison with the null (pseudo-ensemble) condition. A separate report will address the model’s individual unit dynamics and co-variation in more detail (Delasanta et al., in preparation). The importance of the mean-field hybrid model for understanding the present results can be seen in that other versions of the Kuramoto model did not successfully replicate the pattern of the data. Specifically, a pulse-coupled network in a neighbors-only ring-topology and a constant coupling network in full connectivity did not exhibit the same pattern of variability as the empirical data, see Figure 3—figure supplement 2A–B.
 
@@ -133,7 +209,7 @@ Individuals’ tempos tended to increase in solo trials, and as expected, this e
 
 Having summarized task performance in terms of consistency and accuracy, we next considered drumming dynamics. Individuals’ autocorrelations exhibited negative coefficient peaks at odd lags and positive coefficient peaks at even lags. This is the typical error-correction process demonstrated when individuals synchronize their tapping with a stimulus or with each other in pairs (Konvalinka et al., 2010; Repp, 2005). With increasing group size, however, the magnitudes of the autocorrelation coefficient fluctuations with lag decreased; individuals’ alternating patterns became smoother. This suggests that as group size increases, drumming dynamics are dominated less by tap-by-tap error-correction and more by a group dynamic. Interestingly, the group-aggregate onsets exhibited the same autocorrelation pattern as individuals, even in octets. This implies that the collective mean field behavior spontaneously acquired some of the dynamic properties typically associated with individual performance.
 
-Inter-personal coordination in duets exhibited the negative cross-correlation at lag 0 and positive cross-correlation at lag 1 expected from past studies (Repp, 2005). The results for speeding up, variability, and cross-correlations in the dyads were consistent with the literature on dyadic interaction with tapping tasks. Yet, as group size increased in the present study, the coefficient magnitudes for cross-correlations decreased. In fact, they all but disappeared for groups of eight, suggestive of a leader-less group coordination scenario (Heggli et al., 2019). In a small number of trials, we even observed positive lag 0 cross-correlations in groups of eight, a signature of anticipation emerging from dynamic interaction. This result is consistent with the idea that group members coordinated less with each other and more with the mean field. Along with a more slowly decaying autocorrelation function, this suggests the emergence of a larger-scale group dynamic in the octet. As we hypothesized, mutual prediction is not necessarily the only basis for coordination in larger groups. The present model would be more like a predictive account had we included a new variable and an additional equation in the model, θ˙j,i=f(θi,θj,θj,i), corresponding to a separate internal oscillatory process θj,i that individual i dedicates to the prediction of an external signal j. Yet, there is no reason to assume that collective dynamics and mutual prediction are exclusive alternatives, only that collective dynamics are a mode of social interaction that emerges under certain constraints such as large groups of interacting agents.
+Inter-personal coordination in duets exhibited the negative cross-correlation at lag 0 and positive cross-correlation at lag 1 expected from past studies (Repp, 2005). The results for speeding up, variability, and cross-correlations in the dyads were consistent with the literature on dyadic interaction with tapping tasks. Yet, as group size increased in the present study, the coefficient magnitudes for cross-correlations decreased. In fact, they all but disappeared for groups of eight, suggestive of a leader-less group coordination scenario (Heggli et al., 2019). In a small number of trials, we even observed positive lag 0 cross-correlations in groups of eight, a signature of anticipation emerging from dynamic interaction. This result is consistent with the idea that group members coordinated less with each other and more with the mean field. Along with a more slowly decaying autocorrelation function, this suggests the emergence of a larger-scale group dynamic in the octet. As we hypothesized, mutual prediction is not necessarily the only basis for coordination in larger groups. The present model would be more like a predictive account had we included a new variable and an additional equation in the model, $\theta˙_{j,i}=f(\theta_{i},\theta_{j},\theta_{j,i})$, corresponding to a separate internal oscillatory process $\theta_{j,i}$ that individual i dedicates to the prediction of an external signal j. Yet, there is no reason to assume that collective dynamics and mutual prediction are exclusive alternatives, only that collective dynamics are a mode of social interaction that emerges under certain constraints such as large groups of interacting agents.
 
 Characterizing inter-personal interaction on the basis of bivariate measures is typical in the context of dyadic paradigms. Larger groups, however, create the possibility for higher-order interactions. Network analysis was applied to the connectivity graph of TEs among drummers. Larger groups had lower causal density but higher node strength. This is possible because individual nodes in larger groups project to a larger number of other individual nodes and suggests that in larger groups, each individual has a decreased influence on the group, both less potential to destabilize the group and lower requirements to keep the group stable. We also found that higher node strength was associated with better overall performance, both in terms of variability and tempo accuracy.
 
@@ -141,7 +217,7 @@ Group timing tasks address some of the foundations of human social interaction. 
 
 Participants in group activities sometimes report a so-called state of flow characterized by absorption, loss of sense of control, loss of self-consciousness, togetherness, and effortless action toward a shared goal (Csikszentmihalyi, 1990; Gaggioli et al., 2017; Hart et al., 2014). Little is known about the underlying group processes that enable such experiences. Some of the required conditions have been studied in the context of group musical performance (Bishop et al., 2019; D’Amario et al., 2018). Collective intentionality is often seen as an extrapolation of single-person cognitive processes in that individuals predict other individuals’ goals and actions (Tomasello, 2000, Tomasello, 2014). Yet, the neural and cognitive mechanisms historically identified in single-person paradigms do not always map onto the ontology of social behavior (Przyrembel et al., 2012). Collective intentionality can stand for an independent mode of social cognition (Satne and Salice, 2018; Zahavi and Satne, 2015). Social cognition theory can even be turned upside-down by observing cases where individual agency arises from social interaction (De Jaegher and Froese, 2009; Froese et al., 2014). The present work shows how collective dynamics can absorb individual action.
 
-## Beyond the group average
+### Beyond the group average
 
 We have argued that attraction to the group average constitutes an organizing principle that supports the coordinated performance of medium and large groups of individuals. There are theoretical and empirical reasons, however, to assume that other organizing tendencies can compete with the group average and potentially lead to more complicated dynamics. To begin with, our synchronization task was designed to foster collaboration, did not challenge individual skill, and did not create any incentives for competitive individual behavior. This collaborative aspect corresponds to social behaviors where crowds want to appear as a strong unity, for instance, when chanting a protest song or storming into battle. In contrast, choir singing demonstrates that both cooperation and competition are involved often in group musical performance (Keller et al., 2017). And different players in musical ensembles often simultaneously play different parts with different melodic and rhythmic features. While these parts must fit together, reflecting cooperation, at any one point, the player of the ‘melody’ or most important part influences other players more than vice versa, setting up leadership dynamics within the group (e.g. Chang et al., 2017). Different cultural contexts and performance styles may even emphasize the creative and expressive de-synchronization from the regular group beat, or avoid isochrony altogether, allowing musicians to unfold their own ideas or belonging to a specific tradition (Benadon et al., 2018; Davies et al., 2013; Lucas et al., 2011). Understanding musical creativity requires a situated approach and ethnographic engagement to find which features of the emergent collective acoustic environment constitute meaningful affordances for given musicians in a given context (Linson and Clarke, 2017).
 
@@ -153,11 +229,11 @@ In conclusion, we assume that the aforementioned factors fit within the collecti
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 102 university students participated in the duet (n=11 sessions; 22 participants), quartet (n=8 sessions; 32 participants), and octet (n=6 sessions; 48 participants) groups. In addition, 88 high-school students participated in the octet condition (n=11 sessions). Participants were recruited from the department’s participant pool with course credit and from local high schools as part of science field trips to the university. Across the set of all participants, musical training was distributed in the range from non-musician to amateur musician. We did not control the composition of musical skill within each ensemble.
 
-## Apparatus
+### Apparatus
 
 In ensemble playing conditions, participants were seated in chairs facing each other, equally spaced in a linear, square, or octagon arrangement, with diagonal distances of 3 meters in the duet and quartet groups and 6 meters in octet group. Ensemble playing conditions were performed in a large, tall-ceiling dance studio, part of the LIVELab, a laboratory dedicated to auditory and movement neuroscience (http://livelab.mcmaster.ca). In the duet and quartet groups, solo trials were recorded with individual participants immediately before or after the ensemble sessions in an adjacent sound-proof room.
 
@@ -167,15 +243,15 @@ The octet group used a set of electronic pads which, unlike the bucket drums, al
 
 The reference metronome that participants were asked to synchronize with was played over a dedicated speaker placed in the middle between participants. A custom patch for the sound synthesis and production software Pure Data (Puckette, 1997) ran on the computer to generate and time a sharp electronic kick drum sound, with a timbre very distinct from the individuals’ drums (600 Hz sine wave with 250 ms duration, 20 ms amplitude attack, and 230 ms decay). The stimulus was fed back and recorded as an additional channel along with the participants’ drum beats.
 
-## Stimuli
+### Stimuli
 
 The stimulus tempo of the isochronous reference metronome varied between 50 and 240 beats per minute (bpm) depending on condition (see below). Trials were 90 s long, and the synchronization phase always included 32 stimulus events. Thus, slower tempos had longer duration synchronization phases.
 
-## Task
+### Task
 
 Drumming is ecologically valid in terms of common musical practice, and tapping with sticks has been shown to improve timing relative to finger tapping (Madison et al., 2013; Manning et al., 2017). The task on each trial was a SCT. During the synchronization phase, participants were presented with trials containing a reference isochronous metronome at a particular tempo and were asked, using drumsticks, to: (1) synchronize with the given reference metronome, (2) keep their own variability as low as possible, (3) keep their drumming rate as steady as possible, and (4) synchronize with the other drummers when in an ensemble condition. During the continuation phase, the reference metronome stopped, and participants were told to continue to keep their drumming rate as steady as possible while synchronizing with other drummers in an ensemble. Those in the octet group also completed trials in a synchronization-only control task in which the isochronous metronome played for the entire trial (i.e. there was no continuation phase). Participants were instructed to focus their eyes on an ‘X’ taped in the centers of their drums, thus reducing the visual coupling among group members in the ensemble conditions.
 
-## Design
+### Design
 
 Participants were assigned to one of three group sizes: duet (2), quartet (4), or octet (8). Those in the duet and quartet groups completed the SCT task in both solo and ensemble conditions. Duet and quartet groups completed six trials at each of the following tempos: 50, 80, 120, 160, 200, and 240 bpm (or 1200, 750, 500, 375, 300, and 250 ms onset-to-onset intervals between beats) in each of the solo and ensemble conditions, with the order of tempos randomized. For each set of participants, there was random assignment to either the solo or ensemble condition first. Trials lasted 90 s with a synchronization phase of 32 metronome beats.
 
@@ -183,79 +259,79 @@ For octet groups, there were three differences in the design. First, they did no
 
 We found that the very low and very high tempos led to poor performance; hence, we eliminated extreme tempo trials and only analyzed the set of matching tempos across dyads, quartets, and octets, namely 80, 120, 160, and 200 bpm (750, 500, 375, and 300 ms). See the figure supplements for the extreme tempo conditions. For all groups, prior to completing the trials in each condition, participants engaged in practicing synchronized steady drumming without an initial metronome to set the tempo so that participants could become familiar with the sticks and drums and playing together in an ensemble.
 
-## Procedure
+### Procedure
 
 After providing informed consent, filling out demographic and music background questionnaires, reading instructions, and observing a demonstration of the apparatus, participants were instructed to find a comfortable posture on their chair and adjust the drum position during practice. They were asked not to adjust these further during the trials. Participants were allowed to practice as needed to feel comfortable with the task. After each trial, the experimenter verified with the participants that they were ready to start drumming again before the next trial was initiated. The whole session from arrival to departure lasted about an hour. Before asking for informed consent, the overall goals of the study were explained to the participants, including that the collected drumming data would potentially be presented anonymously at meetings and in scientific papers, and that the procedures had been approved by the McMaster Research Ethics Board.
 
 During the solo performance in the duet condition, one participant was moved to an adjacent sound-proof room while the second remained in the large dance studio. For the quartet condition, two of the participants were randomly assigned to arrive earlier and perform their solo trials before the group trials and the other two to perform their solo trials after the group trials. In the octets, individuals did not perform solo trials.
 
-## Analysis
+### Analysis
 
-## Pre-processing of onset times
+#### Pre-processing of onset times
 
 Onset times were processed using custom Matlab scripts (an example script for cleaning and matching IOIs is available at https://gitlab.com/dodo_bird/group_sync_elife, copy archived at swh:1:rev:6479ed2e3409ebc156fbc917a246cf4c4edf4f44, Dobromir, 2022). In SCT trials, only data from the continuation phase was analyzed. In the synchronization-only control trials of the octet group, the full-trial length was analyzed. The following steps were taken to remove artifacts and condition the data according to the requirements of the analyses used.
 
-## Signal
+##### Signal
 
 On a few occasions, participants accidentally pulled the cable from the drum and disconnected or damaged the sensor. A total of 15 bad channels (i.e. participants) were detected and removed from further analysis with a custom script using the onset variability, signal noise, and amplitude consistency. For further verification, we visually inspected the signals and onset times from all channels and trials.
 
-## Group-aggregate (mean field) measure for ensembles and pseudo-ensembles
+##### Group-aggregate (mean field) measure for ensembles and pseudo-ensembles
 
 For ensemble trials, we created a measure of the beat onset times of the group as a whole by constructing theoretical group-aggregate onsets in the center of clusters of individuals’ onset times, tn,g, where n is the beat onset number, and g signifies it is the group-aggregate onset. Specifically, we: (1) convolved onset times with a Gaussian kernel 200 ms in width, (2) smoothed the resulting group activity rate with a moving average window of a quarter of the reference stimulus beat onset-to-onset time, and (3) took the peak locations for group-aggregate beat onset times (see Figure 8). This algorithm, typically used in neuroscience to extract a firing rate or population activity from the spike times of multiple recorded units (Dayan and Abbott, 2001), provides a measure of the central tendency of one or more events clustered in time. The method does not necessarily restrict the group-aggregate pattern to one average onset because if a single onset time is isolated away from other clusters, for example, when a participant erroneously hits the drum while the other participants were silent, it will also be detected as a single-event cluster. Such events of large individual deviations from the group were very rare in the present study and eliminated from analysis because, overall, participants performed the task consistently and in agreement with group members. Group-aggregate beat onset times were calculated for each trial in each group during ensemble playing conditions. In solo trials of dyads and quartets, participants could not see or hear each other, but we computed onset times of the pseudo-group-aggregate for a baseline.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/74816/elife-74816-fig8-v2.jpg)
 
-## From beat onset times to IOIs, outlier removal, and clustering
+##### From beat onset times to IOIs, outlier removal, and clustering
 
 For each trial for each participant, the sequence of onset times tn,i, where i is participant and n onset number, was differenced to produce a time-series of inter-onset-intervals, IOIn,i=tnn,i – tn−1,i. Where appropriate for a more intuitive interpretation, we expressed these as tempos, Tn,i=60/IOIn,i. The same procedure was carried out to obtain the time-series of IOIs for the group-aggregate measure in ensemble conditions and the pseudo-aggregate measure in solo playing conditions.
 
 If a participant skipped a beat on a certain occasion, this would produce an outlier IOI twice as large as most others in the trial, thus biasing subsequent measures. IOIs exceeding 50% difference above or below the trial median were removed. The measures of individual variability and tempo trend (see below) were based on these IOIs.
 
-## Alignment of IOIs
+##### Alignment of IOIs
 
 Quantifying inter-personal coordinated tapping with the cross-correlation requires pairing IOIs from all participants in a given trial. To this end, we used a custom algorithm to detect IOIs that were matching across all group members. To illustrate, if one group member skipped a beat, the produced IOI was about double that of the others, and the corresponding IOIs for all group members were removed.
 
-## Pre-whitening
+##### Pre-whitening
 
 Cross-correlations are difficult to interpret in the presence of non-stationarities such as slow drift up and down of the IOI. We applied a method for removing such non-stationarities by pre-whitening the IOIs (Dean and Dunsmuir, 2016). Specifically, each time-series of IOIs was filtered using an auto-regressive model with coefficients estimated with automatic model-order selection (‘pre-whiten’ function from the time series analysis package TSA for R).
 
-## Performance measures and dynamics
+### Performance measures and dynamics
 
 All subsequent measures were based on the individual participants’ timing data. For the sake of characterizing overall group performance, the group-aggregate timing was analyzed in the same way as was individual participant timing and reported as a separate condition.
 
-## Variability and tempo trend
+#### Variability and tempo trend
 
 The tempo trend was defined as the linear trend of IOIs along successive beats in a trial. The slope b in the regression equation Tn,i=a + bni was fitted separately in each trial for each individual. The variabilities of each individual and group-aggregate were estimated separately using the coefficient of variation of their de-trended and pre-whitened IOIs.
 
-## Autocorrelation
+#### Autocorrelation
 
 Individuals’ and group-aggregate dynamics were analyzed using autocorrelation of IOIs.
 
-## Inter-personal coordination
+### Inter-personal coordination
 
-## Cross-correlation
+#### Cross-correlation
 
 The temporal pattern of co-variation among participants was analyzed using cross-correlation applied to the pre-whitened IOIs.
 
-## Transfer entropy
+#### Transfer entropy
 
-The bidirectional interaction between every pair of participants in a group was measured using TE (Schreiber, 2000). This is an information-theoretic measure of directed mutual information used for quantifying the effective connectivity in, for example, moving animals (Brown et al., 2020), sensori-motor and motor-motor interactions (Dotov and Froese, 2018; Lungarella and Sporns, 2006; Stoffregen et al., 2009), and complex networks of neurons (Gourévitch and Eggermont, 2007). Effective connectivity, sometimes also referred to as causality, is understood in the Wiener sense that having information about past source dynamics improves the prediction of future target dynamics (Wiener, 1956). We used a Matlab toolbox for TE (Ito et al., 2011) adapted for point processes such as neuronal firing times where a delay d separated the source (J) and target (I) dynamics are binary events, TEJ→I(d)=∑p(it+1,it,jt+1−d)log2p(it+1|it,jt+1−d)p(it+1|it). The t indices here are bins of time, set to 10 ms. We took the maximum TE over a range of up to 100 delay steps (i.e. 1 s). We performed the analysis either with or without removing the trend of decreasing intervals between time indices in a trial (i.e. trend for tempo to speed up) and found this did not change the pattern of results.
+The bidirectional interaction between every pair of participants in a group was measured using TE (Schreiber, 2000). This is an information-theoretic measure of directed mutual information used for quantifying the effective connectivity in, for example, moving animals (Brown et al., 2020), sensori-motor and motor-motor interactions (Dotov and Froese, 2018; Lungarella and Sporns, 2006; Stoffregen et al., 2009), and complex networks of neurons (Gourévitch and Eggermont, 2007). Effective connectivity, sometimes also referred to as causality, is understood in the Wiener sense that having information about past source dynamics improves the prediction of future target dynamics (Wiener, 1956). We used a Matlab toolbox for TE (Ito et al., 2011) adapted for point processes such as neuronal firing times where a delay d separated the source (J) and target (I) dynamics are binary events, $TE_{J→I}(d)=\sump(i_{t+1},i_{t},j_{t+1−d})log_{2}\frac{p(i_{t+1}|i_{t},j_{t+1−d})}{p(i_{t+1}|i_{t})}$. The t indices here are bins of time, set to 10 ms. We took the maximum TE over a range of up to 100 delay steps (i.e. 1 s). We performed the analysis either with or without removing the trend of decreasing intervals between time indices in a trial (i.e. trend for tempo to speed up) and found this did not change the pattern of results.
 
 Arguably, TE has several benefits over comparable methods (Lungarella et al., 2005). We identified another reason for applying TE to the sequence of time onsets t rather than what would be the first choice historically, namely TE or Granger causality among sequences of IOIs paired across participants. The latter scenario involves several steps of subtractive pre-processing consisting of removing outliers due to missed taps, pruning and aligning observations across participants, and filtering smooth trends that could be intrinsic to the performance, whereas applying a version of TE for point processes (sequences of onsets) avoids the steps which risk excessive data removal.
 
-## Network analysis
+### Network analysis
 
 The measures in Performance measures and dynamics are univariate and describe drumming performance of individuals. This individual-level analysis does not say much about how participants coordinate with each other to achieve group performance. Inter-personal coordination lists bi-variate measures typically used to analyze dyadic tapping and sensorimotor coordination problems. Yet, even such pair-level analysis is not sufficient in the group context where more than two participants coordinate simultaneously with each other. Hence, we obtained group-level measures by analyzing the network of effective connectivity among drummers (Newman et al., 2011). Drummers were treated as nodes (or vertices) and TE values as the weights of links (or edges) of a directed graph.
 
-## Causal density and mean node strength
+#### Causal density and mean node strength
 
 Among the rich set of phenomena that potentially can be quantified in a large network, only a few measures are relevant in the present context because of the low number of nodes and the real-valued nature of the graph consisting of continuous connection weights rather than binary links. We defined causal density as the average of all edge weights (Seth et al., 2011; Seth and Edelman, 2004). Mean node strength (Barrat et al., 2004), obtained using the igraph package for R (Csardi and Nepusz, 2006), was defined as the average across drummers of each drummer’s total outbound connectivity. This is a version of the more popular measure of node degree which is used for binary graphs.
 
-## Statistical analyses
+### Statistical analyses
 
 Linear mixed effects models (Bates et al., 2015; Singer and Willett, 2003) were used instead of ANOVAs because of the complex, unbalanced design and missing observations. By taking different subsets of the data and fitting separate models, we tested for: (1) effects of group size in SCT trials comparing dyads, quartets, and octets, (2) differences between solo and ensemble playing conditions in dyads and quartets, (3) differences between SCT and synchronization-only in octets, and (4) differences between individual and group-aggregate performance. For brevity, only the selected model with best fit is reported in Results. The modeling procedure was incremental, starting with the minimal specification of a grand mean and iteratively including predictors and their interactions until the model became over-specified or too complex to converge, which tended to be the case when including tempo. The Satterthwaite method was used to determine significant effects and interactions (Kuznetsova et al., 2017). Effect sizes are given by the ω2 (Ben et al., 2020).
 
-## Model parameters
+### Model parameters
 
 We simulated 100 runs per condition and each run corresponded to a trial with duration of 100 s. We used a sampling rate of 300 Hz and a third-order solver. Different sampling rates and using solvers with the Euler method or with an adaptive step size produced similar results. Performance variability was measured in terms of the coefficient of variation of cycle durations, treating zero-phase crossings as onset times, reproducing the behavioral data qualitatively. The pulse in Equation 5 with parameters a=1.25 and b=0.02 specifies an asymmetric gamma distribution that rises sharply at time 0 and then decays slowly in about 200 ms. The code needed to run the full simulation is available at https://gitlab.com/dodo_bird/group_sync_elife.
 

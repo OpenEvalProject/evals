@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Department of Chemistry, Faculty of Natural, Mathematical and Engineering Sciences, King’s College London London United Kingdom
+1. Department of Chemistry, Faculty of Natural, Mathematical and Engineering Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
 
 † Corresponding author
 

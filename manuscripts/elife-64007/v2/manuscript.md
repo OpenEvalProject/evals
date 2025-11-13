@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Circadian clocks in fungi and animals are driven by a functionally conserved transcription–translation feedback loop. In Neurospora crassa , negative feedback is executed by a complex of Frequency (FRQ), FRQ-interacting RNA helicase (FRH), and casein kinase I (CKI), which inhibits the activity of the clock’s positive arm, the White Collar Complex (WCC). Here, we show that the prd-2 ( period-2 ) gene, whose mutation is characterized by recessive inheritance of a long 26 hr period phenotype, encodes an RNA-binding protein that stabilizes the ck-1a transcript, resulting in CKI protein levels sufficient for normal rhythmicity. Moreover, by examining the molecular basis for the short circadian period of upf-1 mutants, we uncovered a strong influence of the Nonsense Mediated Decay pathway on CKI levels. The finding that circadian period defects in two classically derived Neurospora clock mutants each arise from disruption of prd-6 ck-1a regulation is consistent with circadian period being exquisitely sensitive to levels of casein kinase I .
+Circadian clocks in fungi and animals are driven by a functionally conserved transcription–translation feedback loop. In Neurospora crassa, negative feedback is executed by a complex of Frequency (FRQ), FRQ-interacting RNA helicase (FRH), and casein kinase I (CKI), which inhibits the activity of the clock’s positive arm, the White Collar Complex (WCC). Here, we show that the prd-2 (period-2) gene, whose mutation is characterized by recessive inheritance of a long 26 hr period phenotype, encodes an RNA-binding protein that stabilizes the ck-1a transcript, resulting in CKI protein levels sufficient for normal rhythmicity. Moreover, by examining the molecular basis for the short circadian period of upf-1prd-6 mutants, we uncovered a strong influence of the Nonsense Mediated Decay pathway on CKI levels. The finding that circadian period defects in two classically derived Neurospora clock mutants each arise from disruption of ck-1a regulation is consistent with circadian period being exquisitely sensitive to levels of casein kinase I.
 
 ## Introduction
 
@@ -37,33 +37,77 @@ We have mapped the prd-2 mutation to NCU01019 using whole genome sequencing, and
 
 ## Results
 
-## An interstitial inversion identifies prd-2
+### An interstitial inversion identifies prd-2
 
 Genetic mapping and preliminary analyses identified prd-2 as a recessive mutant with an abnormally long ~26 hr period length that mapped to the right arm of LG V (Morgan and Feldman, 1997; Morgan and Feldman, 2001). Genetic fine structure mapping using selectable markers flanking prd-2, in preparation for an anticipated chromosome walk, revealed an extensive region of suppressed recombination in the region of the gene, consistent with the existence of a chromosome inversion (Lambreghts, 2012). PCR data consistent with this prompted whole genome sequencing that revealed a 322 kb inversion on chromosome V (Lambreghts, 2012) in the original isolate strain hereafter referred to as prd-2INV. The left breakpoint of the inversion occurs in the 5’-UTR of NCU03775, and its upstream regulatory sequences are displaced in the prd-2INV mutant. However, a knockout of NCU03775 (FGSC12475) has a wild-type circadian period length, unlike the long period prd-2INV mutant (Figure 1—figure supplement 1). The next closest gene upstream of the left inversion is NCU03771, but its transcription start site (TSS) is >7 kb away. The right breakpoint of the inversion occurs in the 5’-UTR of NCU01019, disrupting 333 bases of its 5’-UTR and its entire promoter region (Figure 1A and B). A knockout of NCU01019 has a 26 hr long period, matching the prd-2INV long period phenotype (Figure 1C). The prd-2INV mutant has drastically reduced levels of NCU01019 gene expression in constant light conditions and in the subjective evening of a circadian free run (Figure 1D), suggesting that the inversion completely disrupts the NCU01019 promoter and TSS. Placing NCU01019 under the nutrient-responsive qa-2 promoter, we find that the long period length occurs at very low gene expression levels using 10−6 M quinic acid induction (Figure 1E). Finally, ectopic expression of NCU01019 at the csr-1 locus in the prd-2INV background rescues the long period phenotype (Figure 1F). We conclude that PRD-2 is encoded by NCU01019.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig1-v2.jpg)
+
+**Figure 1.:** Whole genome sequencing identified a 322,386 bp inversion on linkage group V in the original prd-2 mutant strain (Lambreghts, 2012). The inversion breakpoints disrupt two loci, NCU03775 and NCU01019, depicted in cartoon form (A). Sanger sequencing confirms the DNA sequence of the left and right breakpoints, and the corresponding NC12 genome coordinates are shown at each arrowhead (B). Circadian period length was determined by race tube (RT) assay for ras-1bd controls, targeted deletion of the NCU01019 locus, and the classically derived prd-2INV mutant. The ΔNCU01019 mutant has a long period and slow growth defect similar to prd-2INV (C). NCU01019 RNA expression levels are detectable by RT-qPCR in the prd-2INV mutant but are drastically reduced compared to ras-1bd controls grown in constant light (LL) or at subjective dusk (CT12) during a circadian free run (D). After replacing the endogenous promoter of NCU01019 with the inducible qa-2 promoter, addition of high levels of quinic acid (10−2 to 10−3 M) led to a normal circadian period by RT assay (10−2 M τ = 21.5 ± 0.2 hr; 10−3 M τ = 21.6 ± 0.3 hr; 10−4 M τ = 21.5 ± 0.2 hr). Lower levels of QA inducer led to a long circadian period (10−5 M τ = 22.8 ± 0.3 hr; 10−6 M τ = 24.3 ± 0.2 hr; 0 QA τ = 24.6 ± 0.3 hr) due to reduced NCU01019 expression. Asterisks (**) indicate p<1 × 10−10 by Student’s t-test compared to 10−2 M QA RT results (E). The entire NCU01019 locus (plus 951 bases of its upstream promoter sequence) was fused in-frame with codon-optimized luciferase. Ectopic expression of this NCU01019-luc construct in the prd-2INV background rescues the long period phenotype by RT assay (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** 96-well plate luciferase assays were used to measure the circadian period length. Traces represent the average of three technical replicates across three biological replicate experiments for: ras-1bd controls (black, τ = 21.9 ± 0.3 hr), ras-1bd prd-2INV (blue, τ = 25.6 ± 0.4 hr), FGSC2489 wild-type controls (black, τ = 21.7 ± 0.3 hr), and the ΔNCU03775 knockout strain FGSC12475 (blue, τ = 21.7 ± 0.3 hr). ΔNCU03775 has a wild-type circadian period length.
+
 We mapped the clock-relevant domains of the PRD-2 protein (Figure 2A), finding that both an SUZ domain and the proline-rich C-terminus of PRD-2 are required for a normal clock period. This result was confirmed in two separate genetic backgrounds either by replacing the endogenous locus with domain deletion mutants (Figure 2B) or by ectopic expression of domain mutants at the csr-1 locus in a Δprd-2 background (Figure 2C; Supplementary file 1). The SUZ domain family can bind RNA directly in vitro (Song et al., 2008), but curiously PRD-2’s adjacent R3H domain, which is better characterized in the literature as a conserved RNA-binding domain, is dispensable for clock function. The C-terminus of PRD-2 is predicted to be highly disordered, and finer mapping of this region showed that neither a glutamine/proline-rich domain (amino acids 525–612, 21% Gln, 26% Pro) nor a domain conserved across fungal orthologs (amino acids 625–682, 21% Pro) were required for normal clock function (Figure 2C). The remainder of the C-terminus (amino acids 495–524, 28% Pro; 683–790, 24% Pro) contains a clock-relevant region of PRD-2 based on deletion analyses. Further, PRD-2 SUZ domain and C-terminal deletion mutants are expressed at the protein level, indicating that clock defects must be due to the absent domain (Figure 2—figure supplement 1A). PRD-2 is exclusively localized to the cytoplasm based on biochemical evaluation, and this localization does not change as a function of time of day (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig2-v2.jpg)
+
+**Figure 2.:** PRD-2 has tandemly arrayed R3H and SUZ domains associated with RNA binding proteins, and its C-terminal region is highly enriched for proline (P) and glutamine (Q). The cartoon of PRD-2 protein lists relevant amino acid coordinates (A). The native NCU01019 locus was replaced with single domain deletion mutants, and 96-well plate luciferase assays were used to measure the circadian period length in triplicate wells per biological replicate experiment. A wild-type clock period was recovered in ras-1bd controls and the prd-2ΔR3H mutant, while Δprd-2, prd-2ΔSUZ, and prd-2ΔC-terminus had long period phenotypes (B). Independently constructed strains targeted domain deletion mutants to the csr-1 locus in a Δprd-2 background (Supplementary file 1), and mutant period lengths were determined by race tube assay. Period lengths (±1 SD) show that the clock-relevant domains of PRD-2 are the SUZ domain and the C-terminus (C). Total (T), Nuclear (N), and Cytosolic (C) fractions were prepared over a circadian time course (N = 1 per time point). γ-Tubulin (NCU03954) was used as a control for cytoplasmic localization and histone H3 (NCU01635) for nuclear localization. PRD-2 tagged with a C-terminal V5 epitope tag is localized to the cytoplasm throughout the circadian cycle (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** PRD-2 protein levels were measured from at least three biological replicates using strains where the endogenous NCU01019 locus was replaced with V5-tagged domain deletion constructs: prd-2ΔC-Terminus(Δ440–790), prd-2ΔSUZ(Δ345–431), and full length. Long and short exposures of a representative immunoblot are shown with quantification relative to tubulin loading controls (A). The C-terminal deletion strain has ~68% PRD-2 levels compared to the full length control, and the SUZ deletion has ~13% levels. Both are above the low levels of qa-driven NCU01019 needed to induce the long period phenotype (Figure 1E). MS data from a previous study (Hurley et al., 2018) revealed low amplitude rhythms in PRD-2 abundance with a broad peak in the subjective circadian night and early morning (~CT18 – 2). Circadian Time (CT) was calculated as described previously (Kelliher et al., 2020). PRD-2 abundance was also quantified from the localization time course (Figure 2D) relative to tubulin and relative to the first time point. Peak PRD-2 protein abundance was observed in the subjective morning from both MS and immunoblot data (B), corresponding with the rise in frq transcript levels (Aronson et al., 1994). To confirm rhythms in PRD-2 protein expression, the complete NCU01019 5’-UTR and coding sequence, including 951 bp of upstream promoter sequence but lacking its endogenous 3’-UTR sequence, was fused in-frame with codon-optimized luciferase (Gooch et al., 2008). This construct was transformed into the prd-2WT background at the csr-1 locus, and PRD-2 protein cycles in abundance (τ = 21.7 ± 0.8 hr). PRD-2 protein peaks during the circadian day (CT7.5±1) by luciferase fusion (C), slightly delayed relative to its morning peak by western blot and MS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Temperature and nutritional compensation were assessed in ras-1bd controls compared to ras-1bd Δprd-2. Race tubes (RTs) were incubated at 20°, 25°, or 30°C to determine free running period length. Temperature did not significantly affect period length for controls (ANOVA p=0.598) or for the Δprd-2 mutant (ANOVA p=0.756) RTs. 96-well plates were incubated at 20°, 25°, or 30°C to determine free running period length. Period was significantly different at 30°C for both genotypes (Asterisks [*]: control 20°C vs 30°C, Tukey test p=0.023; Δprd-2 20°C vs 30°C, Tukey test p=0.037; Δprd-2 25°C vs 30°C, Tukey test p=0.0002). 96-well plates were run with 0%, 0.03%, or 0.5% glucose w/v to test nutritional compensation. Period length was significantly different at 0% glucose for controls only (Asterisk [*]: control 0% vs 0.5%, Tukey test p=0.00005; control 0% vs 0.03%, Tukey test p=0.034; Δprd-2 ANOVA p=0.183).
 
 NCU01019 RNA expression is not induced by light (Wu et al., 2014) nor rhythmically expressed over circadian time (Hurley et al., 2014). NCU01019 protein is abundant and shows weak rhythms (Hurley et al., 2018; Figure 2—figure supplement 1B), which suggests that PRD-2 oscillations are driven post-transcriptionally to peak in the early subjective morning, prior to the peak in the frq transcript (Aronson et al., 1994). Rhythms in PRD-2 protein expression were confirmed using a luciferase translational fusion (Figure 2—figure supplement 1C), which peaked during the circadian day. prd-2INV and ΔNCU01019 have a slight growth defect (Figure 1C) and are less fertile than wild type as the female partner in a sexual cross (data not shown). Temperature and nutritional compensation of ΔNCU01019 alone are normal (Figure 2—figure supplement 2), which was expected given the normal TC profile of the prd-2INV mutant (Gardner and Feldman, 1981). PRD-2 (XP_961631.1) is well conserved among Ascomycota fungi as noted by BLASTp scores (<e-70), while only its R3H and/or SUZ domains have significant similarity to insect and mammalian proteins: the encore gene in flies and the R3HDM1, R3HDM2, and ARPP21 genes in human and mouse.
 
-## PRD-2 regulates CKI levels
+### PRD-2 regulates CKI levels
 
 To identify the putative mRNA targets of PRD-2, we performed total RNA-sequencing on triplicate samples of Δprd-2 versus control grown in constant light at 25°C. Hundreds of genes are affected by loss of PRD-2, but we did not identify a consensus functional category or sequence motif(s) for the putative PRD-2 regulon (Figure 3—figure supplement 1). Given the pleotropic phenotypes of Δprd-2, we posit that PRD-2 plays multiple roles in the cell, including regulation of carbohydrate and secondary metabolism. Focusing specifically on core clock genes, we found that ck-1a, frq, wc-2, ckb-1 (regulatory beta subunit of CKII), and frh were significantly altered in the absence of PRD-2 (Figure 3A). Pursuing the top two hits, we found that the CKI transcript was dramatically less stable in Δprd-2 (Figure 3B), while frq mRNA stability was not significantly altered (Figure 3—figure supplement 2). To demonstrate that PRD-2 binds the ck-1a transcript in vivo, we used RNA immunoprecipitation after UV cross-linking (CLIP). The Pumilio family RNA-binding protein PUF4 (NCU16560) was previously shown to bind in the 3’-UTR of cbp3 (NCU00057), mrp-1 (NCU07386), and other target genes identified by HITS-CLIP high-throughput sequencing (Wilinski et al., 2017). C-terminally tagged alleles of PRD-2, PUF4, and an untagged negative control strain were used to immunoprecipitate cross-linked RNAs (Materials and methods). As expected, cbp3 and mrp-1 positive controls were significantly enriched in the PUF4 CLIP sample compared to the negative IP (Figure 3C). ck-1a is also enriched in the PRD-2 CLIP sample, demonstrating that the CKI transcript is a direct target of the PRD-2 protein (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig3-v2.jpg)
+
+**Figure 3.:** Control and Δprd-2 cultures were grown in the light at 25°C in Bird medium for 48 hr prior to RNA isolation. Expression levels for core clock genes were measured by RNA-sequencing (N = 3 biological replicates per strain), and log2-transformed FPKM values are shown. Asterisks indicate p<0.05 (*) or p<5 × 10−5 (***) by Student’s t-test compared to control levels. The ck-1a transcript is >1.5× less abundant in Δprd-2 (A). ck-1a mRNA degradation kinetics were examined by Northern blot in a time course after treatment with thiolutin (THL) at approximately CT1 (N = 2 biological replicates). RNA levels were quantified using ImageJ, natural log transformed, fit with a linear model (glm in R, Gaussian family defaults), and half-life was calculated assuming first order decay kinetics (ln(2)/slope). Shaded areas around the linear fit represent 95% confidence intervals on the slope. The ck-1a transcript is 3× less stable in Δprd-2 (B). The PUF4 (NCU16560) RNA-binding protein pulls down known target transcripts cbp3 (NCU00057) and mrp-1 (NCU07386) by RT-qPCR (N = 3 biological replicates). PRD-2 CLIP samples were processed in parallel with PUF4 positive controls, and PRD-2 binds the ck-1a transcript in vivo (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** RNA-seq data were first filtered for low expression. Out of 9730 annotated N. crassa genes, 8622 were expressed in four of six samples (>0 FPKM units in triplicate control and Δprd-2). FPKM units for 8622 expressed genes were log2-transformed, averaged, subtracted from control, and Z-scores computed. In all, 129 genes (gold) were upregulated in Δprd-2 (Z-score < −2) and 292 genes (blue) were downregulated in Δprd-2 (Z-score >2). Hypothesizing that PRD-2 is an RNA-binding protein that stabilizes its target transcripts (Figure 3B), we searched for enriched sequence motifs in the untranslated regions of the 292 downregulated genes using Weeder2 (212 annotated 5’-UTRs and 226 annotated 3’-UTRs searched). Zero motifs scored better than 1.5 from Weeder2 output compared to background Neurospora nucleotide frequencies (data not shown). Up- and downregulated gene categories were then run through FunCat to determine functionally enriched categories of genes in the putative PRD-2 regulon. Of the 292 downregulated genes, 128 were input to FunCat, and the top scoring functional categories indicated that carbohydrate and secondary metabolism were decreased in Δprd-2. Out of 128 upregulated genes, 80 were also input to FunCat, and other metabolism categories were identified, which could indicate altered central carbon metabolism in the Δprd-2 mutant, correlating with its slow growth phenotype (Figure 1C).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** frq mRNA degradation kinetics were examined by northern blot in a time course after light-to-dark transfer (N = 2 biological replicates). RNA levels were quantified using ImageJ, natural log transformed, fit with a linear model (glm in R, Gaussian family defaults), and half-life was calculated assuming first order decay kinetics (ln(2)/slope). Shaded areas around the linear fit represent 95% confidence intervals on the slope. The frq half-life is approximately 3 min shorter in Δprd-2 but is not statistically different from the control (A). Using the same total RNA samples as shown in Figure 3B, frq degradation was examined by northern blot in a time course after treatment with thiolutin (THL) at approximately CT1 (N = 1 biological replicate). The stability of the frq transcript is not significantly altered in Δprd-2 after THL treatment (B) or light-to-dark transfer (A).
 
 Hypothesizing that the clock-relevant target of PRD-2 could be CKI, we used two genetic approaches to manipulate CKI activity in an attempt to rescue the Δprd-2 long period phenotype. First, we placed the ck-1a gene under the control of the quinic acid inducible promoter (Mehra et al., 2009) and crossed this construct into the Δprd-2 background. We found that increasing expression of ck-1a using high levels (10−1 to 10−2 M) of QA partially rescued the Δprd-2 long period phenotype (Figure 4A). We also noticed a synergistic poor growth defect in the double mutant at 10−4 M QA, consistent with low levels of ck-1a (an essential gene in Neurospora: Görl et al., 2001; He et al., 2006). There are two explanations for the lack of full rescue to periods shorter than 25 hr in the Pqa-2-ck-1a Δprd-2 double mutant: (1) even at saturating 10−1 M QA induction, the qa-2 promoter may not reach endogenous levels of ck-1a achieved under its native promoter, and/or (2) because PRD-2 acts directly as an RNA-binding protein for CKI transcripts, simply increasing levels of ck-1a RNA cannot fully rescue PRD-2’s role in stabilizing or positioning CKI transcripts in the cytoplasm.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig4-v2.jpg)
 
-**Figure 4.:** prd-2 long period phenotype.Representative race tubes (RTs) from ras-1 Pbd single (pink) and qa-2-ck-1aras-1 Pbd Δqa-2-ck-1aprd-2 double (yellow) mutants are shown with growth using the indicated concentrations of quinic acid (QA) to drive expression of ck-1a. All results are shown in a scatterplot, where each dot represents one RT’s free running period length. ras-1 controls (black) had an average period of 22.5 ± 0.5 hr (N = 12), and period length was not significantly affected by QA concentration (ANOVA p=0.297). bdras-1 Δbdprd-2 controls (blue) had an average period of 25.4 ± 0.4 hr (N = 10), and period length was not significantly affected by QA concentration (ANOVA p=0.093). Period length of ras-1 single mutants (pink) was significantly altered across QA levels (ANOVA p=3.6 × 10bd Pqa-2-ck-1a−6), and the average period at 10−1 M QA was 24.3 ± 0.5 hr (N = 4). Period length of ras-1 Pbd Δqa-2-ck-1aprd-2 double mutants (yellow) was also significantly affected by QA levels (ANOVA p=8.1 × 10−8), and the average period at 10−1 M QA was 25.4 ± 0.4 hr (N = 4). The double mutant period length was not genetically additive at high levels of QA induction (A). A hyperactive CKI allele was constructed by expressing the shortest isoform only (CKISHORT). 96-well plate luciferase assays were used to measure the circadian period length. Traces represent the average of three technical replicates across four biological replicate experiments for: ras-1 controls (gray, τ = 21.7 ± 0.3 hr), bdras-1 Δbdprd-2 (blue, τ = 25.7 ± 0.6 hr), ras-1 CKIbdSHORT (pink, τ = 17.4 ± 0.3 hr), and ras-1 CKIbdSHORT Δprd-2 double mutants (yellow, τ = 18.2 ± 0.3). CKISHORT is completely epistatic to Δprd-2 in double mutants (B).
+**Figure 4.:** Representative race tubes (RTs) from ras-1bd Pqa-2-ck-1a single (pink) and ras-1bd Pqa-2-ck-1a Δprd-2 double (yellow) mutants are shown with growth using the indicated concentrations of quinic acid (QA) to drive expression of ck-1a. All results are shown in a scatterplot, where each dot represents one RT’s free running period length. ras-1bd controls (black) had an average period of 22.5 ± 0.5 hr (N = 12), and period length was not significantly affected by QA concentration (ANOVA p=0.297). ras-1bd Δprd-2 controls (blue) had an average period of 25.4 ± 0.4 hr (N = 10), and period length was not significantly affected by QA concentration (ANOVA p=0.093). Period length of ras-1bd Pqa-2-ck-1a single mutants (pink) was significantly altered across QA levels (ANOVA p=3.6 × 10−6), and the average period at 10−1 M QA was 24.3 ± 0.5 hr (N = 4). Period length of ras-1bd Pqa-2-ck-1a Δprd-2 double mutants (yellow) was also significantly affected by QA levels (ANOVA p=8.1 × 10−8), and the average period at 10−1 M QA was 25.4 ± 0.4 hr (N = 4). The double mutant period length was not genetically additive at high levels of QA induction (A). A hyperactive CKI allele was constructed by expressing the shortest isoform only (CKISHORT). 96-well plate luciferase assays were used to measure the circadian period length. Traces represent the average of three technical replicates across four biological replicate experiments for: ras-1bd controls (gray, τ = 21.7 ± 0.3 hr), ras-1bd Δprd-2 (blue, τ = 25.7 ± 0.6 hr), ras-1bd CKISHORT (pink, τ = 17.4 ± 0.3 hr), and ras-1bd CKISHORT Δprd-2 double mutants (yellow, τ = 18.2 ± 0.3). CKISHORT is completely epistatic to Δprd-2 in double mutants (B).
 
 Next, we turned to a previously described fungal CKI constitutively active allele, CKI Q299STOP (Querfurth et al., 2007), reasoning that we might be able to rescue low ck-1a levels in Δprd-2 by genetically increasing CKI kinase activity. We replaced endogenous CKI with a CKISHORT allele, which expresses only the shortest ck-1a isoform (361 amino acids). CKISHORT lacks 23 amino acids in the C-terminal tail of the full length isoform that are normally subject to autophosphorylation leading to kinase inhibition. This CKISHORT allele also carries an in-frame C-terminal HA3 tag and selectable marker, which displace the endogenous 3’-UTR of ck-1a. The CKISHORT mutant has a short period phenotype (~17 hr), presumably due to hyperactive kinase activity and rapid feedback loop closure (Liu et al., 2019). Significantly, the CKISHORT mutation is completely epistatic to Δprd-2 (Figure 4B), indicating that CKI is the clock-relevant target of PRD-2.
 
-## NMD impacts the clock by regulating CKI levels
+### NMD impacts the clock by regulating CKI levels
 
 NMD in Neurospora crassa is triggered by various mRNA signatures. Open reading frames in 5’-UTRs that produce short peptides (5’-uORFs) can trigger NMD in a mechanism that does not require the Exon Junction Complex (EJC; Zhang and Sachs, 2015). The frq transcript has six such uORFs (Colot et al., 2005; Diernfellner et al., 2005) and could be a bona fide NMD target because its splicing is disrupted in the absence of NMD (Wu et al., 2017). Transcripts containing long 3’-UTRs are also subject to NMD regulation. In addition, transcripts with intron(s) near a STOP codon and/or with intron(s) in the 3’-UTR can be degraded by NMD after recruitment of the UPF1/2/3 complex by the EJC in a pioneering round of translation (Zhang and Sachs, 2015).
 
 Since the observation by Compton, 2003 that the short period mutant prd-6 identified the UPF1 core subunit of the NMD pathway, the clock-relevant target(s) of NMD has been an object of conjecture and active research. Because loss of NMD reduces the amount of the transcript encoding the short-FRQ protein isoform (Wu et al., 2017), and strains making only short-FRQ have slightly lengthened periods (Liu et al., 1997), Wu et al., 2017 recently speculated that the short period of the upf1prd-6 mutant might be explained by effects of NMD on FRQ. However, strains expressing only long-FRQ display an essentially wild-type period length (Colot et al., 2005; Liu et al., 1997), not a short period phenotype like upf1prd-6; this finding is not consistent with FRQ being the only or even principal clock-relevant target of NMD, leaving unresolved the role of NMD in the clock.
 
 To tackle this puzzle, we returned to classical genetic epistasis experiments and confirmed the observation that upf1prd-6 is completely epistatic to prd-2INV (Morgan and Feldman, 2001), going on to show that in fact each of the individual NMD subunit knockouts, ∆upf2 and ∆upf3 as well as Δupf1prd-6, is epistatic to the Δprd-2 long period phenotype (Figure 5A). Previous work had profiled the transcriptome of Δupf1prd-6 compared to a control (Wu et al., 2017); we re-processed this RNA-seq data and found, exactly as in Δprd-2, that ck-1a was the most affected core clock gene in Δupf1prd-6 (Figure 5B). The ck-1a transcript has an intron located 70 nt away from its longest isoform’s STOP codon, and its 3’-UTR is, remarkably, among the 100 longest annotated UTRs in the entire Neurospora transcriptome (Figure 5C). NMD targeting to long 3’-UTR transcripts like ck-1a is thought to occur independently of the EJC and nuclear cap-binding complex (CBC) in Neurospora crassa (Zhang and Sachs, 2015). We used the knockout mutant Δcbp80 (NCU04187) to confirm that Neurospora CBC is not required for a normal circadian clock and that the long period length of Δprd-2 is unchanged in the Δcbp80 background (Figure 5—figure supplement 1). Thus, ck-1a is a strong candidate for NMD-mediated degradation via its long 3’-UTR, not dependent on EJC and CBC components.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig5-v2.jpg)
+
+**Figure 5.:** 96-well plate luciferase assays were used to measure the circadian period length in triplicate wells per three biological replicate experiments for: ras-1bd controls (black, τ = 21.5 ± 0.3 hr), ras-1bd Δprd-2 (blue, τ = 25.5 ± 0.4 hr); ras-1bd Δupf1prd-6 (purple, τ = 18.1 ± 0.2 hr), ras-1bd Δupf1prd-6Δprd-2 double mutants (yellow, τ = 19.4 ± 0.7 hr); ras-1bd Δupf2 (purple, τ = 18.5 ± 0.5 hr), ras-1bd Δupf2 Δprd-2 double mutants (yellow, τ = 18.1 ± 0.3 hr); ras-1bd Δupf3 (purple, τ = 19.8 ± 0.3 hr), ras-1bd Δupf3 Δprd-2 double mutants (yellow, τ = 20.1 ± 0.2 hr). Each individual NMD subunit knockout is epistatic to the Δprd-2 long period phenotype (A). Raw RNA-seq data from a previous study (Wu et al., 2017) were analyzed using the same pipeline as data from Figure 3A (see Materials and methods). Control and Δupf1prd-6 gene expression levels (log2-transformed) are shown for core clock genes. The ck-1a transcript is >2× more abundant in Δupf1prd-6 (B). 3’-UTR lengths from 7793 genes were mined from the N. crassa OR74A genome annotation (FungiDB version 45, accessed on 10/25/2019), and plotted as a histogram. The arrow marks the 3’-UTR of ck-1a, which is 1739 bp and within the top 100 longest annotated UTRs in the entire genome (C). Representative race tubes (RTs) from ras-1bd Pqa-2-ck-1a single (pink) and ras-1bd Pqa-2-ck-1a Δupf1prd-6 double (yellow) mutants are shown at the indicated concentrations of quinic acid to drive expression of ck-1a. All results are shown in a scatterplot, where each dot represents one RT’s free running period length. ras-1bd controls (black) had an average period of 22.4 ± 0.4 hr (N = 20), and period length was not significantly affected by QA concentration (ANOVA p=0.605). ras-1bd Δupf1prd-6 controls (purple) had an average period of 17.5 ± 0.6 hr (N = 16), and period length was not significantly affected by QA concentration (ANOVA p=0.362). Period length of ras-1bd Pqa-2-ck-1a single mutants (pink) was significantly altered across QA levels (ANOVA p=2.9×10−8), and the average period at 10−5 M QA was 27.6 ± 0.8 hr (N = 8). Period length of ras-1bd Pqa-2-ck-1a Δupf1prd-6 double mutants (yellow) was also significantly affected by QA levels (ANOVA p=9.4×10−12), and the average period at 10−5 M QA was 24.7 ± 0.9 hr (N = 8). Thus, the double mutant period length was not genetically additive at low levels of QA induction, and the short period phenotype of Δupf1prd-6 is rescued (D). CKI protein levels were measured from the indicated genotypes grown in 0.1% glucose liquid culture medium (LCM) with QA supplemented at the indicated concentrations for 48 hr in constant light. A representative immunoblot of three biological replicates is shown, and replicates are quantified in the bar graph relative to ras-1bd control CKI levels from a 2% glucose LCM culture (E). CKI protein levels were measured from the indicated genotypes grown in 2% glucose LCM for 48 hr in constant light. A representative immunoblot of three biological replicates is shown, and replicates are quantified in the bar graph relative to ras-1bd control CKI levels (F). CKI protein levels are increased in Δupf1prd-6, decreased in the Δprd-2 mutant, and Δupf1prd-6 is epistatic to Δprd-2 with respect to CKI levels and circadian period length.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** 96-well plate luciferase assays were used to measure the circadian period length. Traces represent the average of three technical replicates across two biological replicate experiments for: ras-1bd controls (black, τ = 21.6 ± 0.4 hr), ras-1bd Δcbp80 (purple, FGSC22441, τ = 21.5 ± 0.3 hr), ras-1bd Δprd-2 (blue, τ = 25.7 ± 0.2 hr), and ras-1bd Δcbp80 Δprd-2 (yellow, τ = 24.9 ± 0.2 hr). ΔNCU04187 has a wild-type circadian period length and does not genetically interact with Δprd-2, suggesting that ck-1a regulation does not require CBP80.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Neurospora 3’-UTR lengths were mined from 7793 annotated genes (as described in Figure 5C) and plotted as a histogram. The black arrow marks the 3’-UTR of ck-1a (NCU00685) at 1739 bp in length (A). UTR lengths from Drosophila melanogaster were mined from 13,552 uniquely annotated genes (Ensembl GTF version BDGP6, accessed on 8/5/2020 from Illumina iGenomes) and plotted as a histogram. The black arrow marks the UTR of dbt (FBgn0002413) at 2443 bp in length (B). UTR lengths from Mus musculus were mined from 20,477 uniquely annotated genes (Ensembl GTF version GRCm38, accessed on 8/5/2020 from Illumina iGenomes) and plotted as a histogram. The black arrow marks the UTR of CSNK1D (ENSMUSG00000025162) at 2157 bp in length, and the blue arrow corresponds to CSNK1E (ENSMUSG00000022433) at 1456 bp (C). UTR lengths from Homo sapiens were mined from 22,401 uniquely annotated genes (Ensembl GTF version GRCh37, accessed on 8/5/2020 from Illumina iGenomes) and plotted as a histogram. The black arrow marks the UTR of CSNK1D (ENSG00000141551) at 2113 bp in length, and the blue arrow corresponds to CSNK1E (ENSG00000213923) at 1247 bp (D).
 
 We hypothesized that CKI is overexpressed in the absence of NMD (Figure 5B), leading to faster feedback loop closure and a short circadian period. To genetically control ck-1a levels, we crossed the regulatable Pqa-2-ck-1a allele into the Δupf1prd-6 background and confirmed our hypothesis by finding that at low levels of inducer (10−5 M QA), decreased levels of ck-1a transcript revert the short period length of Δupf1prd-6 to control period lengths (Figure 5D). Further, protein levels of CKI in the Δupf1prd-6 background are reduced to control levels at 10−5 M QA (Figure 5E), which explains the period rescue phenotype. CKI protein is two to three times more abundant in Δupf1prd-6 and in Δprd-2 Δupf1prd-6 (Figure 5F), matching its overexpression in the Δupf1prd-6 transcriptome (Figure 5B). CKI protein is 3× reduced in Δprd-2 (Figure 5F), also correlating with its reduced mRNA expression and stability (Figure 3). We conclude that CKI is also the clock-relevant target of UPF1PRD-6, placing NMD, PRD-2, and CKI in the same genetic epistasis pathway.
 
@@ -73,7 +117,7 @@ By uncovering the identity and mode of action of PRD-2 and exploring the mechani
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64007/elife-64007-fig6-v2.jpg)
 
-**Figure 6.:** PRD-6 in the circadian oscillator.The NMD complex (UPF1PRD-6, UPF2, and UPF3) targets the frq and ck-1a transcripts for degradation (upstream uORFs in frq; long 3’-UTR in ck-1a). PRD-2 binds to and stabilizes ck-1a transcripts (dashed lines), which could also promote local translation and complex formation for the negative arm of the clock. In the absence of PRD-2, the long period phenotype is due to low CKI levels, and in the absence of NMD, the short period phenotype is due to high CKI levels.
+**Figure 6.:** The NMD complex (UPF1PRD-6, UPF2, and UPF3) targets the frq and ck-1a transcripts for degradation (upstream uORFs in frq; long 3’-UTR in ck-1a). PRD-2 binds to and stabilizes ck-1a transcripts (dashed lines), which could also promote local translation and complex formation for the negative arm of the clock. In the absence of PRD-2, the long period phenotype is due to low CKI levels, and in the absence of NMD, the short period phenotype is due to high CKI levels.
 
 This work contributes another possible example to the growing literature describing conserved post-transcriptional regulation on core clock messages. Anti-sense transcription at the frq locus produces the qrf transcript, which is required for proper phase control and light responses of the fungal clock (Kramer et al., 2003). The mammalian PER2 anti-sense transcript displays nearly identical dynamics to qrf expression (Koike et al., 2012). Mammalian PER2 sense expression levels are further regulated by microRNA binding sites in its 3’-UTR (Yoo et al., 2017). In a similar manner, frq RNA is directly targeted for turnover by rhythmic exosome activity in the late day (Guo et al., 2009). Splicing of the frq transcript is regulated by temperature (Colot et al., 2005), mirroring thermal regulation mechanisms in the clocks of Drosophila (Majercak et al., 1999) and Arabidopsis (James et al., 2012). The codons composing the frq transcript are non-optimal, which improves FRQ’s co-translational folding (Zhou et al., 2013), and FRQ’s disordered protein structure is also stabilized by its binding partner FRH (Hurley et al., 2013). Mammalian PER2 is also largely intrinsically disordered, and indeed circadian clock proteins across species have large stretches of intrinsic disorder which are in the early stages of functional characterization (Pelham et al., 2020; Pelham et al., 2018) (reviewed in: Partch, 2020). These data document the complexity of post-transcriptional regulation of clock components, and this study demonstrates that even non-rhythmic clock transcripts such as CKI are under tight regulation that is essential for normal clock function.
 
@@ -85,7 +129,115 @@ CKI has a diverse array of functions in eukaryotes and is critically important i
 
 ## Materials and methods
 
-## Neurospora strains and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Neurospora crassa)</td>
+      <td>prd-2</td>
+      <td>FungiDB</td>
+      <td>NCU01019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Neurospora crassa)</td>
+      <td>upf1prd-6</td>
+      <td>FungiDB</td>
+      <td>NCU04242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Neurospora crassa)</td>
+      <td>ck-1a</td>
+      <td>FungiDB</td>
+      <td>NCU00685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>Supplementary file 1</td>
+      <td>This study; Fungal Genetics Stock Center (FGSC)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (mouse monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat. # R960-25</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tubulin alpha (mouse monoclonal)</td>
+      <td>Fitzgerald</td>
+      <td>Cat. # 10R-T130a</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CKI (rabbit polyclonal)</td>
+      <td>Generous gift from Michael Brunner (University of Heidelberg)</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 magnetic beads (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat. # M8823</td>
+      <td>30 μl beads incubated with 10 mg total protein for UV-CLIP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>c box-luc (plasmid-derived construct)</td>
+      <td>As described, PMID:25635104</td>
+      <td></td>
+      <td>&lt;500 bp of the frq promoter driving codon-optimized luciferase; targeted to the csr-1 locus for selection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-quinic acid</td>
+      <td>Sigma</td>
+      <td>Cat. # 138622</td>
+      <td>1 M stock solution, pH adjusted to 5.8 with NaOH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Allele-In-One Mouse Tail Direct Lysis Buffer</td>
+      <td>Allele Biotechnology</td>
+      <td>Cat. # ABP-PP-MT01500</td>
+      <td>50 μl reagent mixed withNeurospora asexual spores for gDNA isolation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiolutin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat. # 11350</td>
+      <td>Stock solution prepared in DMSO</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom R software</td>
+      <td>https://github.com/cmk35</td>
+      <td></td>
+      <td>UTR length analyses from Figure 5—figure supplement 2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Neurospora strains and growth conditions
 
 The ras-1bd prd-2INV strains 613–102 (mat A) and 613–43 (mat a) were originally isolated in the Feldman laboratory (Lewis, 1995). Strains used in this study were derived from the wild-type background (FGSC2489 mat A), ras-1bd background (87–3 mat a or 328–4 mat A), Δmus-51 background (FGSC9718 mat a), or the Fungal Genetics Stock Center (FGSC) knockout collection as indicated (Supplementary file 1). Strains were constructed by transformation or by sexual crosses using standard Neurospora methods (http://www.fgsc.net/Neurospora/NeurosporaProtocolGuide.htm).
 
@@ -95,11 +247,11 @@ Standard RT medium was used for all RTs (1× Vogel’s Salts, 0.1% glucose, 0.17
 
 Strains were genotyped by screening for growth on selection medium (5 μg/ml cyclosporine A, 400 μg/ml Ignite, and/or 200–300 μg/ml Hygromycin). PCR genotyping was performed on gDNA extracts from conidia incubated with Allele-In-One Mouse Tail Direct Lysis Buffer (Allele Biotechnology # ABP-PP-MT01500) according to the manufacturer’s instructions. GreenTaq PCR Master Mix (ThermoFisher # K1082) was used for genotyping. Relevant genotyping primers for key strains are: ras-1bd (mutant): 5’ TGCGCGAGCAGTACATGCGAAT and 5’ CCTGATTTCGCGGACGAGATCGTA 3’; ras-1WT (NCU08823): 5’ GCGCGAGCAGTACATGCGGAC 3’ and 5’ CCTGATTTCGCGGACGAGATCGTA 3’; prd-2WT (NCU01019): 5’ CACTTCCAGTTATCTCGTCAC 3’ and 5’ CACAACCTTGTTAGGCATCG 3’; Δprd-2::barR (KO mutant): 5’ CACTTCCAGTTATCTCGTCAC 3’ and 5’ GTGCTTGTCTCGATGTAGTG 3’; prd-2INV (left breakpoint): 5’ AGCGAGCTGATATGCCTTGT 3’ and 5’ CGACTTCCACCACTTCCAGT 3’; prd-2INV (right breakpoint): 5’ TGTTTGTCCGGTGAAGATCA 3’ and 5’ GTCGTGGAATGGGAAGACAT 3’; Δupf1prd-6::hygR (FGSC KO mutant): 5’ CTGCAACCTCGGCCTCCT 3’ and 5’ CAGGCTCTCGATGAGCTGATG 3’; barR::Pqa-2-ck-1a (QA inducible CKI): 5’ GTGCTTGTCTCGATGTAGTG 3’ and 5’ GATGTCGCGGTGGATGAACG 3’.
 
-## RNA stability assays
+### RNA stability assays
 
 Control and Δprd-2 liquid cultures grown in 1.8% glucose Bird medium were age-matched and circadian time (CT) matched to ensure that RNA stability was examined at the same phase of the clock. Control cultures were shifted to constant dark for 12 hr, and Δprd-2 cultures were shifted to dark for 14 hr (~CT1 for 22.5 hr wild-type period and for 26 hr Δprd-2 period; 46 hr total growth). Thiolutin (THL; Cayman Chemical # 11350) was then added to a final concentration of 12 μg/ml to inhibit new RNA synthesis. Samples were collected every 10 min after THL treatment by vacuum filtration and flash frozen in liquid nitrogen. THL has multiple off-target effects in addition to inhibiting transcription (Lauinger et al., 2017). For this reason, frq mRNA degradation kinetics were also examined with an alternative protocol. Light-grown, age-matched liquid Bird cultures of wild-type and Δprd-2 were shifted into the dark and sampled every 10 min to measure frq turnover; transcription of frq ceases immediately on transfer to darkness (Heintzen et al., 2001; Tan et al., 2004). All tissue manipulation in the dark was performed under dim red lights, which do not reset the Neurospora clock (Chen et al., 2009).
 
-## RNA isolation and detection
+### RNA isolation and detection
 
 Frozen Neurospora tissue was ground in liquid nitrogen with a mortar and pestle. Total RNA was extracted with TRIzol (Invitrogen # 15596026) and processed as described (Chen et al., 2009). RNA samples were prepared for RT-qPCR, northern blotting, RNA-sequencing, or stored at −80°C.
 
@@ -109,22 +261,22 @@ Northern probes were first synthesized using the PCR DIG Probe Synthesis Kit (Ro
 
 Total RNA was submitted to Novogene for stranded polyA+ library preparation and sequencing. 150 bp paired-end (PE) read libraries were prepared, multiplexed, and sequenced in accordance with standard Illumina HiSeq protocols. 24.8 ± 1.7 million reads were obtained for each sample. Raw FASTQ files were aligned to the Neurospora crassa OR74A NC12 genome (accessed September 28, 2017, via the Broad Institute: ftp://ftp.broadinstitute.org/pub/annotation/fungi/neurospora_crassa/assembly/) using STAR (Dobin et al., 2013). On average, 97.6 ± 0.3% of the reads mapped uniquely to the NC12 genome. Aligned reads were assembled into transcripts, quantified, and normalized using Cufflinks2 (Trapnell et al., 2013). Triplicate control and Δprd-2 samples were normalized together with CuffNorm, and the resulting FPKM output was used in the analyses presented. RNA-sequencing data have been submitted to the NCBI Gene Expression Omnibus (GEO; https://www.ncbi.nlm.nih.gov/geo/) under accession number GSE155999.
 
-## CLIP assay
+### CLIP assay
 
 CLIP was performed using PUF4 (NCU16560) as a positive control RNA-binding protein from Wilinski et al., 2017, with modifications. Neurospora strains containing endogenous locus C-terminally VHF tagged PUF4, PRD-2, or untagged negative control were used (Supplementary file 1). Liquid cultures were grown in 2% glucose LCM for 48 hr in constant light. Tissue was harvested by vacuum filtration and fixed by UV cross-linking for 7 min on each side of the fungal mat (Stratalinker UV Crosslinker 1800 with 254 nm wavelength bulbs). UV cross-linked tissue was frozen in liquid nitrogen and ground into a fine powder with a mortar and pestle. Total protein was extracted in buffer (25 mM Tris-HCl pH 7.4, 150 mM NaCl, 2 mM MgCl2, 0.5% NP-40, 1 mM DTT, 1× cOmplete protease inhibitor, 100 U/ml RNAse Out) and concentration determined by Bradford Assay (Bio-Rad # 500–0006). Approximately 10 mg of total protein was added to 30 µl anti-FLAG M2 magnetic beads (Sigma # M8823) prepared according to the manufacturer’s instructions. Beads and lysate were rotated for 4 hr at 4°C, followed by four washes in 750 µl extraction buffer (5–10 min rotating per wash). Bound RNA-binding proteins were eluted with 100 µl 0.1 M glycine-HCl pH 3.0 for 10 min. The supernatant was collected using a magnetic rack (NEB S1506S) and neutralized in 10 µl of 1 M Tris-HCl pH 8.0. The elution was incubated with 300 µl of TRIzol (Invitrogen # 15596026) for 10 min to extract RNA. Total RNA was isolated, DNAse treated, and concentrated using the Direct-zol RNA Microprep Kit (Zymo # R2062) following the manufacturer’s instructions.
 
 Equal amounts of immunoprecipitated RNA (~50 ng) were converted into cDNA using the oligo(dT) method from the SuperScript IV First-Strand synthesis kit (Invitrogen # 18091–050). RT-qPCR was performed using SYBR green master mix (Qiagen # 204054) and a StepOne Plus Real-Time PCR System (Applied Biosystems). Ct values were determined using StepOne software (Life Technologies) and normalized to the crp-43 gene (ΔCt) instead of the actin (NCU04173) gene because actin is a putative PUF4 target by HITS-CLIP (Wilinski et al., 2017). The ΔΔCt method was used to determine target mRNA enrichment relative to the negative IP sample. Relevant RT-qPCR primer sequences were designed to flank introns: cbp3 (NCU00057; PUF4 target): 5’ CGAGAAATTCGGCCTTCTCCC 3’ and 5’ GCCTGGTGGAAGAAGTGGT 3’; mrp-1 (NCU07386; PUF4 target): 5’ TAGTAGGCACCGACTTTGAGCA 3’ and 5’ CGGGGACAGGTGGTCGAA 3’; ck-1a (NCU00685; PRD-2 target): 5’ CGCAAACATGACTACCATG 3’ and 5’ CTCTCCAGCTTGATGGCA 3’; crp-43 (NCU08964; normalization control): 5’ CTGTCCGTACTCGTGACTCC 3’ and 5’ ACCATCGATGAGGAGCTTGC 3’.
 
-## Protein isolation and detection
+### Protein isolation and detection
 
 Frozen Neurospora tissue was ground in liquid nitrogen with a mortar and pestle. Total protein was extracted in buffer (50 mM HEPES pH 7.4, 137 mM NaCl, 10% glycerol v/v, 0.4% NP-40 v/v, and cOmplete Protease Inhibitor Tablet according to instructions for Roche # 11 836 170 001) and processed as described (Garceau et al., 1997). Protein concentrations were determined by Bradford Assay (Bio-Rad # 500–0006). For western blots, equal amounts of total protein (10–30 µg) were loaded per lane into 4–12% Bis-Tris Bolt gels (Invitrogen # NW04125BOX). Western transfer was performed using an Invitrogen iBlot system (# IB21001) and PVDF transfer stack (# IB401001). Primary antibodies used for western blotting were anti-V5 (1:3000, ThermoFisher # R960-25), anti-Tubulin alpha (1:10,000, Fitzgerald # 10R-T130a), or anti-CK1a (1:1000, rabbit raised). The secondary antibodies, goat anti-mouse or goat anti-rabbit HRP, were used at 1:5000 (Bio-Rad # 170–6516, # 170–6515). SuperSignal West Pico PLUS Chemiluminescent Substrate (ThermoFisher # 34578) or Femto Maximum Sensitivity Substrate (ThermoFisher # 34095) was used for detection. Immunoblot quantification and normalization were performed in ImageJ.
 
 Nuclear and cytosolic fractions were prepared as previously described (Hong et al., 2008). Approximately 10 μg of total protein from each fraction was loaded for immunoblotting. Primary antibodies for fraction controls were histone H3A (Fitzgerald) and γ-tubulin (Abcam). HRP-conjugated secondary antibodies (Bio-Rad) were used with SuperSignal West Pico ECL (Thermo) for detection.
 
-## Luciferase reporter detection and data analysis
+### Luciferase reporter detection and data analysis
 
 96-well plates were inoculated with conidial suspensions from strains of interest and entrained in 12 hr light:dark cycles for 2 days in a Percival incubator at 25°C. Temperature inside the Percival incubator was monitored using a HOBO logger device (Onset # MX2202) during entrainment and free run. Plates were then transferred into constant darkness to initiate the circadian free run. Luminescence was recorded using a Pixis 1024B CCD camera (Princeton Instruments). Light signal was acquired for 10–15 min every hour using LightField software (Princeton Instruments, 64-bit version 6.10.1). The average intensity of each well was determined using a custom ImageJ Macro (Larrondo et al., 2015), and background correction was performed for each frame. Results from two different algorithms were averaged together to determine circadian period from background-corrected luminescence traces. The MESA algorithm was used as previously described (Kelliher et al., 2020). A second period measurement was obtained from an ordinary least squares autoregressive model to compute the spectral density (in R: spec.ar(…, method=‘ols’)). RT period lengths were measured from scans using ChronOSX 2.1 software (Roenneberg and Taylor, 2000).
 
-## Data visualization
+### Data visualization
 
 All figures were plotted in R, output as scalable vector graphics, formatted using Inkscape, and archived in R markdown format. Data represent the mean of at least three biological replicates with standard deviation error bars, unless otherwise indicated.

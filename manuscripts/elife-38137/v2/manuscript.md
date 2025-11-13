@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.38137.001 Gradients of signaling proteins are essential for inducing tissue morphogenesis. However, mechanisms of gradient formation remain controversial. Here we characterized the distribution of fluorescently-tagged signaling proteins, FGF and FGFR, expressed at physiological levels from the genomic knock-in alleles in Drosophila . FGF produced in the larval wing imaginal-disc moves to the air-sac-primordium (ASP) through FGFR-containing cytonemes that extend from the ASP to contact the wing-disc source. The number of FGF-receiving cytonemes extended by ASP cells decreases gradually with increasing distance from the source, generating a recipient-specific FGF gradient. Acting as a morphogen in the ASP, FGF activates concentration-dependent gene expression, inducing pointed-P1 at higher and cut at lower levels. The transcription-factors Pointed-P1 and Cut antagonize each other and differentially regulate formation of FGFR-containing cytonemes, creating regions with higher-to-lower numbers of FGF-receiving cytonemes. These results reveal a robust mechanism where morphogens self-generate precise tissue-specific gradient contours through feedback regulation of cytoneme-mediated dispersion.
+Gradients of signaling proteins are essential for inducing tissue morphogenesis. However, mechanisms of gradient formation remain controversial. Here we characterized the distribution of fluorescently-tagged signaling proteins, FGF and FGFR, expressed at physiological levels from the genomic knock-in alleles in Drosophila. FGF produced in the larval wing imaginal-disc moves to the air-sac-primordium (ASP) through FGFR-containing cytonemes that extend from the ASP to contact the wing-disc source. The number of FGF-receiving cytonemes extended by ASP cells decreases gradually with increasing distance from the source, generating a recipient-specific FGF gradient. Acting as a morphogen in the ASP, FGF activates concentration-dependent gene expression, inducing pointed-P1 at higher and cut at lower levels. The transcription-factors Pointed-P1 and Cut antagonize each other and differentially regulate formation of FGFR-containing cytonemes, creating regions with higher-to-lower numbers of FGF-receiving cytonemes. These results reveal a robust mechanism where morphogens self-generate precise tissue-specific gradient contours through feedback regulation of cytoneme-mediated dispersion.
 
 ## Introduction
 
@@ -25,13 +25,33 @@ Several models primarily based on free/restricted/facilitated extracellular diff
 
 In this study, we aimed to address these fundamental questions by characterizing gradient formation of a Drosophila FGF family protein, Branchless (Bnl). In Drosophila, Bnl is the primary signal that guides the branching morphogenesis of tracheal epithelial tubes (Sutherland et al., 1996). At the third instar larval stage, Bnl produced from a restricted group of wing imaginal disc cells induces budding and growth of a wing disc-associated tracheal branch, the air-sac primordium (ASP), from the disc-associated transverse connective (TC) (Figure 1A) (Sato and Kornberg, 2002). ASP tracheoblast cells are precursors of adult air-sac, an organ that is analogous to the vertebrate lung. Traditionally, all paracrine signals such as FGF family proteins are thought to function as diffusible signals and form a gradient by passive extracellular dispersion. In accordance with the same line of thinking, one hypothesis predicts that Drosophila Bnl diffuses from its source to form an extracellular gradient and that the gradient guides directional migration of the tracheal branches such as the ASP (Horowitz and Simons, 2008; Ochoa-Espinosa and Affolter, 2012) (Figure 1A’). However, whether Bnl forms a gradient and if so, how Bnl is transported and modulated in the extracellular space to form a gradient remain unexplored. Moreover, all tracheal cells express the Bnl receptor, Breathless (Btl), and develop under the guidance of the same Bnl signal, but different embryonic and larval tracheal branches adopt different developmental stage-specific morphologies (Sato and Kornberg, 2002; Sutherland et al., 1996). We do not understand whether and how the shape of a Bnl gradient can dynamically adapt to diverse tissue morphologies.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig1-v2.jpg)
+
+**Figure 1.:** (A) Drawings depicting budding and directed growth of the third instar larval ASP (red, btl expression) regulated by Bnl produced in a restricted group of cells in the wing disc (green); Bnl source spatiotemporally changes position ahead of the growing ASP; TC, transverse connective. (A’) Drawing depicting hypothetical chemotactic gradient of secreted Bnl (green) that was predicted to guide the directed ASP (red) growth toward the Bnl expressing cells (green circle). (A’’) Drawing depicting a cross-section of the late third instar larval ASP and wing disc, showing their epithelial contours, relative position in X-Z-Y dimension, putative Bnl- responsive cells (red), and disc bnl-expressing cells (green); upper/lower Z. (B) A schematic map of bnl:gfpendo knock-in allele; grey box, non-coding exons; orange box, coding exons; line, introns. (C–D’) Z-projected images showing that Bnl:GFP, produced at physiological level from the bnl:gfpendo allele, moved from the disc bnl-source to the ASP and distributed along the distal to proximal direction of the recipient tissue; (C,C’) bnl-source marked by CherryCAAX expression (bnl-LexA, lexO-CherryCAAX/bnl:gfpendo); (D,D’) recipient ASP marked by CD8:Cherry expression (btl-Gal4,UAS-CD8:Cherry/+; bnl:gfpendo); (C,D) merged red and green channels; (C’,D’) only the green channel; arrows, Bnl:GFP signal detected specifically in the wing disc source and recipient ASP. (E) Graph showing the Bnl:GFP concentration gradient along the ASP D-P axis in late third instar larvae (N = 4 independent samples). (F) Coordination of Bnl:GFP gradient formation with the ASP growth; time points, hours (h) after third instar larval molt; relative position of bnl-source marked by dashed-line. (G) Narrow range of Bnl:GFP gradient in shorter ASPs from early third instar larvae (N = 3 independent samples). (E,G) Red line graph, trend-line of the X-Y scatter plot with exponential fit from the averaged value; Cmax, maximum average Y value (Bnl:GFP intensity); (H) Negative correlation of the ASP D-P axis length and the slope (Cmax to C1/2max) of the Bnl:GFP gradient; each coordinate represents a single disc-ASP tissue; upper panels, Bnl:GFP distribution in three examples of ASPs with different lengths of D-P axis (the cropped region). (I) A 3D sagittal view showing a continuous long-range Bnl:GFP distribution across the entire recipient ASP epithelium adopting its tubular contour; expression of a target gene reporter of Bnl signaling, pntP1-lacZ (red, anti-βGal) showing corresponding signaling response; (I’,I’’) Intensity plots of Bnl:GFP (green) and pntP1-lacZ (red) (I’’) across the entire ASP epithelium derived from the digitally straightening ASP epithelium shown in I’. (J) Drawing of a cross section of the ASP-wing disc, summarizing the observations from C,D,I. (C–I’) Fixed samples, Z-projection, except I-I’; AU, arbitrary unit; dashed line, ASP or wing disc outline. Scale bars, 30 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Scheme for CRISPR/Cas9-based generation of bnl:gfpendo and two possible outcomes from the HDR; orange box, coding exon; grey box, non-coding exon; line, introns; red vertical arrow, approximate gRNA target site; horizontal red arrows, approximate primer binding sites. (B-B’’’) Representative agarose gel pictures showing examples of the three-step PCR-based CRISPR screening process; red arrows, amplicons from gDNA of the c26-9 line used in this study; (B) PCR amplification products (*) obtained from the gDNA of different lines using primers fwd1-rev2 identified the gfp sequence containing positive HDR lines; (B’) HDR positive lines identified in B (e.g., c26-9), were reconfirmed by PCR using fwd2-rev1 primers; (B’’) the HDR positive lines identified in B,B’, were subjected to PCR screening using primers M13F and rev3; the lower-most bands (*) indicated unintended ‘ends-in’ HDR; Absence of the band showed probable ends-out HDR; (B’’’) the putative ‘ends-out’ HDR were confirmed with PCR amplification of the correct sized product with fwd1-rev1 primers, both of which annealed to the flanking gDNA regions outside of the inserted cassette; the correct ends-out HDR amplified ~700 bp longer product due to the presence of gfp sequence than the negative control untagged parental gDNA; markers, 1 kb DNA ladder from NEB; (B’’,B’’’) (-) represents PCR product amplification from negative control: gDNA from the nos-Cas9 parental line; (+) represents PCR product amplification from positive control: pDonor-bnl:GFP plasmid. (C) A table showing efficiency of generating bnl:gfpendo lines using CRISPR/Cas9; numbers of HDR progenies in (d,f,g) were determined by PCR based screen similar to B-B’’’; gene expression in (h) was verified in the larval imaginal discs, trachea, brain and embryo; normal morphology in (h) was verified in embryonic and larval trachea, and overall tissue morphology.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A, A’) Immunostaining with αBnl antibody (red) recognized Bnl:GFP puncta in the ASP; (A) merged channels; (A’) only the red channel. (B-C) Effect on the ASP (outlined by white dashed line) growth by knocking-down of bnl:gfpendo expression with bnlRNAi (bnl-Gal4/UAS-bnlRNAi,bnl:gfpendo); (B) control (bnl-Gal4/bnl:gfpendo); (B’,B’’) bnl-RNAi (bnl-Gal4/UAS-bnlRNAi,bnl:gfpendo); (B’) complete knock down and growth suppression; (B’’) partial knock down and growth suppression; red, phalloidin; (C) a table showing phenotypic consequences of bnlRNAi-mediated knock down of bnl:grpendo. (D-E’’) 3D sagittal views showing long-range Bnl:GFP distribution adopting the ASP tubular morphology; expression of a target gene reporter of Bnl signaling, pntP1-lacZ (red, anti-βGal) showing corresponding signaling response; (D’,E’) outline of the ASP epithelium selected for the digital straightening; (D’’,E’’) intensity plots from the digitally straightened (lower panels) epithelium from (D’ and E’) respectively. (A-B’,D,E) white dashed lines, ASP outlines. Scale bars, 30 μm.
+
 To investigate these important gaps in knowledge, we chose to focus on the Drosophila larval ASP because of its unique features. In this system, the wing disc bnl-source is spatially separated from the recipient ASP epithelium (Figure 1A”). Bnl signals exclusively to the ASP because the wing disc cells and myoblasts located between the disc and the ASP do not express its receptor, Btl. Moreover, the two additional Drosophila FGF family proteins, Pyramus and Thisbe, do not share receptors with Bnl (Sato and Kornberg, 2002; Stathopoulos et al., 2004). This system where there is a clear inter-organ communication path and a single Bnl-specific receptor exclusively expressed in the ASP is ideal for an unbiased interpretation of the extracellular route of Bnl transport and gradient formation. Genome-edited Bnl:GFP and Btl:Cherry constructs generated in this study revealed Bnl distribution with high sensitivity and precision, allowing direct visualization of an endogenous signal and signaling gradient. We showed that Bnl moves target-specifically from the producing cells to the ASP through cytonemes and forms a long-range concentration gradient by dynamically adopting the recipient ASP-specific shapes and contours. We also demonstrated that Bnl functions as a morphogen and, most importantly, we uncovered a novel self-regulatory mechanism of cytoneme-mediated signaling by which the Bnl morphogen gradient forms. Thus, these findings showed an example of morphogenesis in which cytoneme-dependent signaling can provide precision and adaptability in shaping long-range positional gradients and tissue architectures in space and time.
 
 ## Results
 
-## A concentration gradient of Bnl:GFP adopts the recipient ASP-specific contour
+### A concentration gradient of Bnl:GFP adopts the recipient ASP-specific contour
 
 To visualize Bnl dispersion without affecting normal tracheal morphogenesis, we employed the CRISPR/Cas9-based genome-editing technique to generate flies that harbor an in-frame insertion of a superfolder-GFP (sfGFP) sequence within the third coding exon of the bnl gene (Figure 1B; Figure 1—figure supplement 1A–C; Materials and methods). Animals that harbored the bnl:gfpendo knock-in allele were homozygous viable, had normal tissue morphology, and the expected gene expression patterns (Du et al., 2017; Sato and Kornberg, 2002). Under sensitive confocal microscopy (see Materials and methods), endogenous Bnl:GFP molecules were visualized as fluorescent puncta (Figure 1C,C’). The distribution patterns of these Bnl:GFP puncta revealed several unexpected features. In the wing disc source cells that were marked by CherryCAAX expression, Bnl:GFP puncta were faint, hardly detectable, and homogeneously distributed (Figure 1C–D’). As a paracrine signal, Bnl was expected to disperse and form a continuous gradient surrounding the wing disc source (Figure 1A’). However, all of the detectable bright fluorescent Bnl:GFP puncta outside of the source cells were asymmetrically distributed only in the recipient ASP cells (Figure 1C–D’). Thus, although Bnl:GFP moved from the wing disc source to the ASP, the punctate signal did not localize in the non-specific wing disc cells surrounding the signal source or in the myoblast cells located between the disc source and the ASP (Videos 1 and 2).
+
+![Video 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-video1.mp4.jpg)
+
+**Video 1.:** Serial Z-stacks of the CD8:Cherry-marked ASP and underlying wing disc Bnl:GFP producing cells shown from lower to upper optical sections; only the green channel is shown to highlight asymmetric Bnl:GFP localization; genotype: btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo.
+
+![Video 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-video2.mp4.jpg)
+
+**Video 2.:** Same sample and Z-stacks of the CD8:Cherry-marked ASP as shown in Video 1, but now with both red and green channels to highlight that the asymmetric Bnl:GFP distribution was due to dispersion of Bnl:GFP only in the recipient ASP epithelium; genotype: btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo.
 
 To ensure that the GFP-marked puncta in the ASP were actual Bnl molecules, we performed an immunohistochemistry assay (IHC) with αBnl antibody on the homozygous bnl:gfpendo larval tissues. The Bnl antibody recognized all of the Bnl:GFP puncta in the larval ASP, confirming that they represent the Bnl protein (Figure 1—figure supplement 2A,A’). To further validate whether the Bnl:GFP distribution in the ASP represented a functional distribution of the ligand, we knocked-down bnl:gfpendo expression in the wing disc source. Since Bnl is essential for tracheal/ASP growth (Sutherland et al., 1996; Sato and Kornberg, 2002), loss of a functional Bnl:GFP distribution was expected to abrogate ASP development. As expected, overexpression of bnlRNAi from the disc bnl-source in the bnl:gfpendo larvae knocked down both Bnl:GFP expression and ASP growth in most samples, indicating that the tagged signaling protein is functional (Figure 1—figure supplement 2B–C). However, due to incomplete RNAi-mediated knock-down of bnl:gfpendo, a few samples still contained low levels of Bnl:GFP. Importantly, these samples also had small, stunted ASPs with a shallow range of Bnl:GFP distribution. This correlation between Bnl:GFP levels/distribution and ASP growth suggested that the levels and distribution of Bnl:GFP in the ASP have a significant developmental role (Figure 1—figure supplement 2B–C).
 
@@ -43,9 +63,37 @@ Although 2D Z-projected images were sufficient to visualize the gradient in the 
 
 A trachea-specific Bnl:GFP gradient might reflect a receptor-bound signal distribution. To examine this possibility, we created animals harboring a btl:cherryendo knock-in allele using genome-editing technology (Figure 2A; Figure 2—figure supplement 1A–C; Materials and methods). As expected, Btl:Cherry expressed at physiological levels marked all tracheal cells, but formed a concentration gradient along the D-P axis of the ASP (Figure 2B; Figure 2—figure supplement 1D). This observation is consistent with an earlier report describing activation of btl transcription by Bnl signaling (Ohshiro et al., 2002). In trans-heterozygous btl:cherryendo/bnl:gfpendo animals, all the Bnl:GFP puncta in the ASP colocalized with Btl:Cherry and the receptor gradient coincided with that of the ligand gradient (Figure 2C–D; Figure 2—figure supplement 1E,E’). Most of the colocalized receptor-ligand puncta were compartmentalized apically in early- (αRab5 IF; ~76% of total puncta/ASP examined) and late- (αRab7 IF; ~90% of total puncta/ASP) endosomes, but not in recycling endosomes or lysosomes (Figure 2E–E”’; Figure 2—figure supplement 2A–C). These results suggested that the branch-specific Bnl:GFP gradient is receptor-bound, and mostly intracellular. Notably, a small number of receptor-ligand puncta were found at the basal side of ASP cells (arrows in Figure 2C,E). They were located mostly at the distal ASP tip cells and did not colocalize with any of the endosomal markers we examined (Figure 2E). These puncta on the exposed basal side of the ASP might represent Btl:Cherry-bound Bnl:GFP molecules prior to their receptor-mediated endocytosis.
 
-## Cytonemes mediate target-specific dispersion of Bnl:GFP
+![Figure 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig2-v2.jpg)
+
+**Figure 2.:** (A) A schematic map of btl:cherryendo knock-in allele; orange box, coding exon; grey box, non-coding exon; line, introns. (B) Btl:Cherry, expressed at physiological levels from the btl:cherryendo allele, was detected as densely packed puncta marking the ASP cell membrane. (C,C’) Bright colocalized Bnl:GFP-Btl:Cherry puncta visible at low exposure imaging, 100% of the Bnl:GFP puncta in the ASP are Btl:Cherry bound; (C’) only red channel shown. (D) Graded Btl:Cherry expression and distribution in the ASP coincided with the Bnl:GFP gradient in the ASP; N = 3 independent samples; lower panel, an example of the region of ASP used for generating the intensity plot in the upper panel; AU, arbitrary unit. (E-E’’’) About 90 ± 1.6% colocalized Bnl:GFP-Btl:Cherry puncta in the ASP also localized in αRab7-marked endosomes (arrowhead); (E) merged colors; (E’) zoomed in region marked by dashed box in E; (E’’) only green and blue channels showing endosome localized Bnl:GFP in the ASP; (E’) only blue channel. (C,C’,E-E’’’) arrow, basally localized Bnl:GFP-Btl:Cherry puncta that were not in the endosomes; arrowhead, apically localized receptor-ligand puncta that were also in the endosomes; all images, Z-projection of 5–6 selected optical planes; dashed line, ASP outline. (C–E’’’) bnl:gfpendo/btl:cherryendo larvae. (B–E’’’) fixed samples. (B,D) Z-projection of 30–40 optical planes. Scale bars, 30 μm; 10 μm (E); 5 μm (E’).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scheme for CRISPR/Cas9-based generation of btl:cherryendo allele and two possible outcomes from the HDR; orange box, coding exon; grey box, non-coding exon; line, introns; red vertical arrow, approximate gRNA target site; horizontal red arrows, approximate primer binding sites. (B-B’’’) Representative agarose gel pictures from CRISPR screening, showing examples of PCR-amplified products obtained from the genomic DNA (gDNA) of putative ‘ends-out’ and ‘ends-in’ HDR; red arrow, amplicons from line a21-10 used in this study; markers, 1 kb DNA ladder from NEB; (B) PCR amplification product (*) obtained from the gDNA of different lines using primers fwd1-rev2 identified the positive HDR harboring mCherry sequence; (B’) HDR positive lines identified using PCR primers fwd1-rev2 were reconfirmed by performing another PCR using fwd2-rev1 primers; *, the expected band; (B’’) The HDR positive lines identified in B and B’ steps were subjected to PCR screen with M13F and rev3 primers; amplification of a large product (*) indicated unintended ‘ends-in’ HDR lines; two ends-in lines were shown in the gel; (B’’’) The putative ‘ends-out’ HDR lines from step B’’ were further confirmed with PCR amplification with fwd1-rev1, both of which anneal to the flanking gDNA regions outside of the inserted cassette; the intended ends-out HDR lines amplified a ~ 700 bp longer PCR product than the control amplicon derived from the parental gDNA (nos-Cas9 parental line); (B’’’) (-), negative control- PCR product amplified from the genomic DNA of nos-Cas9 parental line. (C) A table showing efficiency of generating btl:cherryendo lines using CRISPR/Cas9; numbers of HDR progenies in (d,f,g) were determined by PCR based screen as described in Materials and methods and in B-B’’’; gene expression in (h) was verified in the larval and embryonic trachea; normal morphology in (h) was verified in embryonic and larval tracheal branching and overall tissue morphology. (D) Btl:Cherry, expressed from the btl:cherryendo allele, marked the ASP membrane and formed a gradient (lower panel) along the D-P axis of ASP. (E,E’) Btl:Cherry bound Bnl:GFP gradient in early (E) and late (E’) stage ASP; genotype: bnl:gfpendo/btl:cherryendo. Scale bars, 30 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Bnl:GFP puncta colocalized with early endosomes (pink) recognized by αRab5 antibody (arrow); lower panel, showing only Rab5 (pink) distribution from merged channels in upper panel. (B,B’,C) Bnl:GFP puncta in the ASP did not colocalize with the recycling endosome marker, Rab11 (red, αRab11, B,B’), or the lysosome marker, Lamp1 (red, αLamp1, C). White dashed line, ASP outline. Scale bars, 10 μm.
+
+### Cytonemes mediate target-specific dispersion of Bnl:GFP
 
 Bnl molecules were expected to move through the extracellular space from the wing disc source to the ASP. To clearly visualize the extracellular distribution pattern of post-secretory Bnl:GFP prior to their endocytosis in the ASP, we employed a standard detergent-free immunofluorescence (EIF) protocol (see Materials and methods). This protocol was specifically developed for detecting extracellular dispersion profiles of morphogens (Schwank et al., 2011; Strigini and Cohen, 2000). An αGFP EIF assay identified a distinct steady-state surface-bound extracellular/externalized pool of Bnl:GFP molecules (Figure 3A; henceforth referred as Bnl:GFPex). Interestingly, even though we used a highly sensitive Gallium arsenide phosphide detector for imaging (see Materials and methods), endogenous levels of EIF-stained Bnl:GFPex puncta appeared to emit very weak GFP-fluorescence, which was rapidly quenched during high magnification (40X) imaging. However, this property of GFP-tagged molecules enabled us to estimate the levels of externalized/extracellular Bnl:GFP (Bnl:GFPex), distinguishing them from the brightly fluorescent but non-EIF stained intracellular Bnl:GFP puncta in the ASP (henceforth referred as Bnl:GFPin) (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig3-v2.jpg)
+
+**Figure 3.:** (A-A’’) An αGFP-based EIF assay under the detergent-free conditions (Materials and methods), identified externalized Bnl:GFP (red, Bnl:GFPex) that localized specifically on the surfaces of the ASP, actin-rich ASP protrusion (arrow), and, at a low level, on wing disc signal producing cells (area within the dotted line); (A’) concentration gradient of surface-localized Bnl:GFPex similar to that of the intracellular Bnl:GFPin along the D-P axis of the ASP (N = 3 independent samples); bright Bnl:GFPin puncta were unrecognized by the EIF method; EIF-stained Bnl:GFPex puncta (red) emitted poor GFP fluorescence. (B-B’’) Control experiment for (A), showing random non-specific distribution (red, αGFP EIF) of extracellular secreted-GFP (secGFP; drawing in B; Materials and methods) when expressed from the disc bnl-source (green; see Figure 3—figure supplement 1A); (A’,B’’) drawings explaining distribution patterns in A,B’ respectively; (A,B’) blue, phalloidin-Alexa-647 staining of f-actin marked cell outlines. (C–E) Bnl:GFPex puncta (red; arrow) localized on the surface of CD8:Cherry-marked cytonemes (blue) emanated from the ASP (btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo); (C,D) αGFP-EIF; (E) αBnl-EIF. (F-F’) Enhanced-gain super-resolution images (Materials and methods), showing a sub-resolution distribution of faint Bnl:GFP molecules (nanopuncta) in live CD8:Cherry-marked ASP and ASP cytonemes (see Figure 3—figure supplement 2A–B’); genotype: btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo; (F’) zoomed-in area indicated by the ROI box in (F); (F’’) cytonemes from a different sample showing difference of nano-puncta (arrowheads) and large puncta representing clusters (arrow) of nano-puncta. (G) An αBnl EIF showing biased distribution of the native externalized Bnl puncta (Bnlex, arrow) in wild type (w-) background; grey, phalloidin-Alexa-647. (H) Bnlex puncta colocalized with endogenous Btl:Cherry on cytonemes extended from the btl:cherryendo ASP. (I,I’) Comparison of Bnlex (αBnl EIF, red; arrowhead) localization on the actin-rich ASP cytonemes (blue, phalloidin-Alexa 647) with and without a direct contact (green dots, arrow) with the disc bnl-source; genotype: btl-Gal4/lexO-nsyb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/+; (I’) a graph showing the comparative numbers; N = 14 ASP; p<0.0001 (two-tailed t-test). (J) A high-resolution image showing contacts between the ASP cytronemes (blue) and wing disc source (green) and enrichment of native externalized Bnl (red; Bnlex, detected with αBnl EIF) at these contact points; genotype: btl-Gal4, UAS-CD8:GFP/+; bnl-LexA, lexO-CherryCAAX/+. Scale bars, 20 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) green and red channels of Figure 3B’, showing αGFP EIF staining of a secGFP construct expressed from the bnl-source; red extracellular signal shows random distribution. (B-B’’) Examples of αGFP EIF-probed Bnl:GFPex (red) on the surfaces of CD8:Cherry (blue)-marked cytonemes (btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo); note that only some of the Bnl:GFPex on cytonemes were detected with GFP-fluorescence; (B’’) zoomed in image of one cytoneme from B’. Scale bars, 20 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A-A’’’) Bnl:GFP nanopuncta (<200 nm diameter; arrowhead) on ASP (A,A’), cytonemes (A,A’’), and the source cells (A”’); intracellular Bnl:GFP puncta (arrow) are larger in diameter (>500 nm diameter). (B,B’) αGFP EIF stain (red signal) recognized Bnl:GFP nanopuncta on the cell surface detected by super-resolution imaging; blue, phalloidin-Alexa 647 marks the ASP outline. All panels, only the selected Z-sections are shown. All samples, fixed tissues.Genotypes: (A-A’’’) btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo; (B,B’) bnl:gfpendo. Scale bars, 10 μm; 5 μm (A”,A”’).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Endogenous Btl:Cherry marked the ASP cytonemes; Genotype: btl:cherryendo. (B,B’) CD8:Cherry-marked cytonemes localized Bnl:GFP (arrow); (B) upper layer; (B’) lower layer; Genotype: btl-Gal4, UAS-CD8:Cherry/+; bnl:gfpendo. (C,C’) CD4:mIFP-marked cytonemes with colocalized Btl:Cherry and Bnl:GFP puncta (arrow); genotype: btl-Gal4, UAS-CD4:mIFP/+; bnl:gfpendo/btl:cherryendo. All samples, Z projected image; Scale bars, 20 μm.
 
 Most importantly, this experiment showed that although the EIF-stained Bnl:GFPex molecules represented secreted signals in the extracellular space, they did not disperse randomly in all directions. Instead, they were asymmetrically localized and only detected on the surfaces of signal producing cells and of the recipient ASP (Figure 3A,A’). Bnl:GFPex were highly enriched on the ASP and appeared to form a gradient on the recipient surface, in exactly the same way as the endocytosed Bnl:GFPin molecules (Figure 3A”). In contrast to the asymmetric Bnl:GFPex distribution, a secreted-GFP construct containing a sfGFP tag and an N-terminal signal peptide derived from the Bnl sequence (secGFP; see Materials and methods) randomly dispersed in the extracellular space surrounding the disc bnl-source (Figure 3B–B”; Figure 3—figure supplement 1A). These results showed that Bnl:GFP moved target-specifically in polarized fashion.
 
@@ -57,33 +105,79 @@ Native, untagged Bnl could also be detected on cytoneme surfaces using the αBnl
 
 Cytonemes exchange signals by establishing direct physical contacts between the source and recipient cells (Chen et al., 2017; González-Méndez et al., 2017; Huang and Kornberg, 2015; Roy et al., 2014). These signaling contacts between the ASP and the bnl source were originally discovered using a membrane GFP-reconstitution method (GFP reconstitution across synaptic partners, GRASP) (Huang and Kornberg, 2015; Roy et al., 2014). As shown in Video 3, an improved GRASP technique, ‘Synaptobrevin-GFP-reconstitution-across-synaptic-partners (syb-GRASP)’ revealed multiple functional contact sites between each of the ASP cytonemes and the bnl-source. To estimate the contact-dependency of the cytoneme-mediated Bnl reception, we combined the syb-GRASP experiment with the αBnl EIF assay. This experiment showed that the actin-rich (phalloidin-stained) ASP cytonemes that contacted the disc bnl-source received a significantly higher number of Bnlex puncta in comparison to the non-contacting cytonemes (Figure 3I,I’). These observations, together with the previous reports on the effect of loss of cytoneme contacts on pMAPK signaling in the ASP (Roy et al., 2014), provided substantial evidence that cytoneme-mediated Bnl exchange is contact-dependent.
 
+![Video 3.](https://cdn.elifesciences.org/articles/38137/elife-38137-video3.mp4.jpg)
+
+**Video 3.:** Cytoneme contact sites were marked by sybGRASP, a GFP-reconstitution method, where the ASP expressed CD4:GFP11 and the wing disc bnl-source expressed syb:GFP1-10; genotype: btl-Gal4, UAS-CD8:Cherry/LexO-syb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/+.
+
 Molecular reconstitution of split GFP between ASP cytonemes and source cells suggested that the signaling contacts between the cytoneme and source cell membranes juxtapose within a 20 nm gap distance (Kornberg and Roy, 2014). To directly visualize and resolve Bnl exchange at these cytoneme contacts, an αBnl EIF assay was combined with super-resolution imaging (see Materials and methods) of the tissues that had both the source and recipient ASP cells marked with distinct membrane-tagged proteins (Figure 3J). The images revealed that ASP cytonemes traverse along the surface of the source cells, with each cytoneme establishing contacts with multiple signal-producing cells. Although the producing cells occupy a large area, the externalized Bnl proteins were specifically enriched at the cytoneme contact sites. This observation suggests that the producing cells selectively release Bnl at these contact sites. These ASP cytonemes also localized Bnlex puncta on their shafts, suggesting that the signal might be transported from the contact sites to the ASP along the surface of the cytonemes. A similar retrograde movement of Dpp was previously observed through ASP cytonemes (Roy et al., 2014).
 
-## Cytoneme-mediated transport is essential for generation of the Bnl gradient
+### Cytoneme-mediated transport is essential for generation of the Bnl gradient
 
 To examine whether cytoneme-mediated reception of Bnl:GFP is essential for generating the long-range Bnl:GFP gradient in the ASP, we generated mosaics of marked cytoneme-deficient mutant clones within the ASP of bnl:gfpendo larvae by knocking down several known cytoneme-regulator genes such as diaphanous (dia), a formin homolog, neuroglian (nrg), an L1-cell adhesion molecule (Roy et al., 2014), and singed (sn), a Fascin homolog and a regulator of tracheal filopodia (Okenve-Ramos and Llimargas, 2014). To assess Bnl reception in the mutant clones, we compared Bnl:GFP levels within the mutant area (inside of the clone) with that in the wild-type (WT) neighboring areas at an equivalent position (outside of the clone) in the same ASP. The ratios of Bnl:GFP concentration outside to inside of the marked wild-type (WT) control clones were ~1, suggesting no significant differences in the signal uptake within the marked (inside) and unmarked (outside of the clone) WT areas (Figure 4A,E). However, knockdown of cytoneme-regulator genes in clones of cells significantly decreased Bnl:GFP levels in the mutant cells, but not in the neighboring WT cells (Figure 4B–E; Figure 4—figure supplement 1A). Consequently, the ratio of Bnl:GFP concentration outside (WT area) to inside (cytoneme deficient) of the mutant clones increased significantly compared to the WT control condition (Figure 4E). These results showed that cytonemes are essential for the ASP cells to receive Bnl:GFP from the wing disc source.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig4-v2.jpg)
+
+**Figure 4.:** (A-D) Representative images of Bnl:GFP uptake in CD4:mIFP-marked (red) clones in the ASP: (A) wt; (B) snRNAi, (C) diaRNAi; (D) nrgRNAi. (E) A box plot comparing the ratios of Bnl:GFP concentration outside (unmarked WT area) to inside (marked mutant area) of the CD4:mIFP-marked cytoneme-deficient mutant clones, expressing either diaRNAi (N = 3), nrgRNAi (N = 4), or snRNAi (N = 6) with that of the control marked WT clones (N = 3); P values, two-tailed t-test. (F,F’) Schematic models predicting differences expected in distribution patterns of EIF-stained Bnl:GFPex (red) on btl LOF clones (blue) either in diffusion-based (F’) or cytoneme-dependent (F) Bnl:GFP transport mechanism. Intracellular Bnl:GFP (green, Bnl:GFPin) level is expected to be reduced in both modes of signal transport. (G) Representative image showing autonomous loss of distribution of Bnl:GFPex (red, αGFP EIF-stained) in CD4:mIFP-marked (blue) btl LOF (btlRNAi) clone. (G’) Plot comparing relative Bnl:GFPex (red) density inside (mutant area) versus outside (WT area, control) of btl LOF clones (N = 3 independent ASPs); P values, two-tailed t-test. (H,H’) Representative image showing enrichment of αGFP EIF stained Bnl:GFPex (red) on long cytonemes (arrow) projected from btlGOF clones in the ASP stalk. Genotypes: hs-FLP/+; btl>y+>Gal4/+; UAS-CD4:mIFP, bnl:gfpendo/+ (A) or UAS-‘x’-RNAi (B–G) or UAS-btl (H’). Scale bars, 30 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Table showing numerical data of clonal analyses for dia, nrg, and sn knockdown within the ASP. (B) Bar graphs comparing relative Bnl:GFPex (red) density inside versus outside (WT control, blue) of four different clones overexpressing Btl (btl GOF) in the ASP stalk region; each clone is from an independent biological sample.
+
 The distribution profile of Bnl:GFP in btl-LOF clones further suggested that cytonemes are the only major routes for Bnl gradient formation. As illustrated in Figure 4F,F’, a cytoneme-mediated mechanism of dispersion, which is receptor-dependent, would create cell-autonomous loss of receptor-bound Bnl:GFPex on the surface of a btl-LOF clone. This predicted distribution pattern is different from that of a passive extracellular Bnl:GFP diffusion, which would be expected to result in unperturbed levels of the extracellular EIF-stained Bnl:GFPex on the receptor-LOF clone. Indeed, RNAi-mediated knockdown of btl in clones of ASP cells led to a significant reduction of Bnl:GFPex on the mutant clonal areas compared to the WT neighboring cells (Figure 4G,G’). Clearly, the distribution pattern of Bnl:GFPex was consistent with a cytoneme-dependent mechanism of gradient formation. Note that an autonomous reduction in intracellular Bnl:GFP (non-EIF stained) was also observed in the mutant clones, but such reduction in intracellular Bnl:GFP levels was expected irrespective of the mechanism of signal dispersion, and did not affect our conclusions. Furthermore, in the ASP stalk, where normal levels of Btl are low, generation of btl overexpressing (btl-GOF, gain of function) clones induced extension of long polarized cytonemes that projected toward the underlying disc bnl-source. These cytonemes were enriched with EIF-stained Bnl:GFPex on their surfaces (Figure 4H,H’) and the mutant clones had a higher concentration of Bnl:GFPex than their neighbors (Figure 4—figure supplement 1B). This result provided direct evidence that the induction of cytonemes in ASP cells increased cell-autonomous contact-dependent Bnl:GFP uptake.
 
-## Signaling through a graded number of cytonemes generates the Bnl:GFP gradient in the ASP
+### Signaling through a graded number of cytonemes generates the Bnl:GFP gradient in the ASP
 
 How might cytoneme-mediated local signaling in each ASP cell generate a long-range signal gradient across the entire ASP epithelium? One possibility is that tracheal cells, relative to their distances from the bnl-source, produce different numbers of Bnl-specific cytonemes and/or establish variable numbers of signaling contacts with the disc bnl-source. To examine this possibility, we live imaged randomly generated CD8:GFP-marked clones in different positions of the ASP and analyzed the orientation and number of cytonemes with different lengths they extend (Figure 5A–A”). In addition, to compare the frequency of signaling contacts among cytonemes emanating from different regions of the ASP, we devised a mosaic analysis method for generation of clonal syb-GRASP. We expressed syb-GFP1-10 in the bnl-source and induced small (~1–4 cells) randomly localized CD8:RFP-marked clones across the ASP epithelium that also expressed CD4:GFP11 (Figure 5D,D’; see Materials and methods). In this technique, when cytonemes emanating from the clones in different parts of the ASP established contact with the disc bnl-source, GFP was reconstituted at their contact sites. For assessing the steady-state number of contacts established by different parts of the ASP with the signal source, ASPs containing only 1–2 small clones were considered.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig5-v2.jpg)
+
+**Figure 5.:** (A-C) Live images of ASPs showing variability in the number of long, oriented cytonemes emanating from the CD8:GFP-marked clones located in different ASP zones: (A) proximal stalk (>7th cells from distal tip of 12 cell long D-P axis); (A’) mid-region (4th-7th cells along the D-P axis); (A’’) distal tip (1st-3rd cells along D-P axis); red, btl>RFPmoe; lower panels, drawing showing approximate location of the clones and the corresponding cytoneme patterns, dashed line, bnl-source; (B) graphs comparing the number of long (>15 μm) and short (<15 μm) cytonemes from clones in the distal tip (N = 8), mid (N = 5), and proximal (N = 6) regions in the ASP; (C) rose plots comparing number and orientation of cytonemes of different lengths emanated from CD8:GFP-marked clones at distal tip-to-mid region (1st-7th cell along D-P; N = 7) and proximal stalk (>7 cells away from distal tip along D-P axis; N = 11) of the ASP; genotype: hs-FLP/+; UAS-mCD8:GFP/+; btl>y+>Gal4, btl-mRFP1moe/+. (D-D’’) Clones of cells expressing CD8:RFP and CD4:GFP11 from tip-, mid-, and stalk- region of the ASP established variable number of contacts with sybGFP1-10 expressing disc bnl-source; green puncta, GFP-reconstitution signal representing contact sites between the ASP cells and the source; (D’’) plots comparing the number of contacts established by cells from different regions of the ASP with the disc bnl source; blue, phalloidin-Alexa 647; genotype: hs-FLP/+; btl>y+>Gal4/lexO-nsyb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/UAS-CD8:RFP. All panels except D-D’’, live imaging. Scale bars, 30 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A-A’’) Representative examples of clonal sybGRASP analyses to assess the number of contact sites (green) established by different parts (A, proximal; A’, mid; A’’, distal tip) of the ASP with the disc bnl-source; red, randomly localized ASP clones co-expressing CD8:RFP and CD4:GFP11; bnl-source expressing nsyb:GFP1-10 (hs-FLP/+; btl>y+>Gal4/lexO-nsyb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/UAS-CD8:RFP). (B) Frequency of cytoneme-mediated contacts established by upper and lower layers of the ASP with the bnl-source; genotype: btl-Gal4, UAS-CD8:Cherry/LexO-syb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/+ (see Videos 3 and 5). Scale bars, 30 μm.
+
 These experiments showed that the stalk region of a third instar larval ASP, beyond 7 cell-distances along the D-P axis (~12 cells long) from the ASP tip (Figure 1A”), produced only randomly oriented short cytonemes. These cytonemes rarely contacted the bnl-source (Figures 5A,B,C,D–D”). This region also received lower levels of Bnl:GFP (Figure 1A”,E). The number of long polarized cytonemes that oriented toward the bnl-source and established direct contacts with the source increased gradually in the mid (4th-7th cells from the ASP tip along the D-P axis) and the distal tip cells (1–3 cells from the tip along the D-P axis) (Figure 5A’,A”,B,C,D',D"; Figure 5—figure supplement 1A–A’’). Thus, long oriented cytonemes that could establish contacts with the Bnl source were produced in a graded fashion across the length of the ASP. A similar gradient in the number of signaling contacts was also observed from cytonemes produced across the vertical axis of the tubular tissue. In a syb-GRASP experiment between the disc and ASP, ASP cells in the lower layer that is proximal to the bnl-source had a higher frequency of cytoneme contacts compared to the upper cell layer (Figure 5—figure supplement 1B; Videos 3, 4 and 5). These results suggested that differential levels of signal uptake through a graded number of cytonemes give rise to the tissue-specific shapes of the Bnl:GFP gradient.
 
-## Bnl induces concentration-dependent differential gene expression in the ASP
+![Video 4.](https://cdn.elifesciences.org/articles/38137/elife-38137-video4.mp4.jpg)
+
+**Video 4.:** GFP-reconstitution indicated physical contacts between the wing disc source and the clonal part of the ASP; genotype: hs-FLP/+; btl>y+>Gal4/lexO-nsyb:GFP1-10, UAS-CD4:GFP11; bnl-LexA/UAS-CD8:RFP.
+
+![Video 5.](https://cdn.elifesciences.org/articles/38137/elife-38137-video5.mp4.jpg)
+
+### Bnl induces concentration-dependent differential gene expression in the ASP
 
 How does a steady state pattern of cytonemes across the ASP epithelium develop? The gradient of numbers of Bnl-receiving cytonemes correlated with the spatial gradient of Bnl (Figures 5A–B;1E,I; 2D). Thus, the zones of variable numbers of ASP cytonemes might reflect differential target gene activities in response to the Bnl gradient. Therefore, we examined the correlation of the Bnl:GFP gradient with the spatial expression domains of several known Bnl target genes, including pntP1 and sprouty (sty) (Hacohen et al., 1998; Ohshiro et al., 2002). We also examined expression of the Ets family transcriptional repressor yan, which is suppressed by Ras/MAPK signaling (Ohshiro et al., 2002), and of cut, a homeodomain transcription repressor. Although cut is not known to be a target of Ras/MAPK signaling, this gene was shown to be expressed in the larval spiracular branch and in the ASP (Ohshiro et al., 2002; Pitsouli and Perrimon, 2013; Rao et al., 2015).
 
 The D-P axis of a third instar larval ASP consists of ~12 cells. We found that ASP cells within a three-cell diameter domain from the distal tip along the D-P axis, which received the highest concentration of Bnl:GFP, expressed sty (Figure 6A,E; Figure 6—figure supplement 1A; Figure 6—figure supplement 2A,B). A broader zone of ~6–7 cell-diameters from the tip along the D-P axis received high-to-moderate levels of Bnl:GFP and induced pntP1 (Figure 6B,E; Figure 6—figure supplement 1A; Figure 6—figure supplement 2C, D). In contrast, the proximal stalk of the ASP from the 7th to 12th cell away from the tip along the D-P axis received negligible levels of Bnl:GFP. In this ASP domain, cut and yan expression gradually increased with increasing distance from the source (Figure 6C–E; Figure 6—figure supplement 1A; Figure 6—figure supplement 2E-H). Thus, the gradients of cut and yan expression had the exact opposite pattern as the pntP1 and Bnl:GFP gradients. This concentration-dependent activity was also observed across the Z-axis (Figure 1A”). ASP cells in the lower Z-sections that are proximal to the underlying bnl-source expressed higher levels of sty and pntP1 relative to the upper layer cells situated away from the disc source (Figure 6F; Figure 6—figure supplement 1B,C). Thus, across the recipient ASP epithelium, high levels of Bnl:GFP correlated with sty expression, and gradually decreasing levels of Bnl:GFP further away from the source correlated with the expression zones of pntP1, cut, and yan, respectively (Figure 6E,F). Similar spatial patterning in the gene-expression zones of sty and different ETS family proteins is known to be induced by the vertebrate FGF8 morphogen in mouse neuroectoderm (Toyoda et al., 2010).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig6-v2.jpg)
+
+**Figure 6.:** (A-D) Representative images showing correlation of the Bnl:GFP gradient with spatial expression domains (red) of sty (A; sty-lacZ), pntP1 (B; pntP1-lacZ), cut (C; αCut), and yan (D; αYan); lower panels, intensity plots along the D-P axis of the ASP. (E) Drawing depicting the expression domains of sty, pntP1, cut, and yan within 1st-3rd, 1st-7th, 7th-14th, and 11th-14th cells, respectively, from the distal tip of a 14 cell long D-P axis of ASP including TC (2 cell wide). (F) Drawing of a sagittal section of an ASP depicting relative gene expression domains in Z axis (see Figure 6—figure supplement 1C). (G) Correlation of spatial range of endogenous Bnl:GFP gradient with induction of pMAPK signaling (α-dpERK, blue) and Cut expression (α-Cut, red). (H–I) Overexpression of Bnl:GFP from the disc bnl-source (arrowhead) expanded the range of Bnl:GFP and pMAPK signaling (H,H’) to the ASP stalk, suppressing/retracting the cut (H, arrow) and yan (I, arrow) domains to the farthest part that received little or no Bnl:GFP (arrow; red). (J) A hypothetical expression pattern (solid lines) of PntP1 (orange) and Cut (blue) induced by an ectopic Bnl:GFP (green) expressing clone in the ASP stalk; dashed lines, original native Bnl, PntP1, and Cut expression pattern. (K,L) Small Bnl:GFP overexpressing clones (green) at the ASP stalk non-autonomously suppressed cut (L; red; arrow), induced pntP1 (K; red; arrow), and organized the surrounding cells to induce ectopic branch (dashed outlines); genetic crosses: hs-FLP; btl>y+>Gal4, btl-mRFP1moe X UAS-Bnl:GFP (L), or UAS-Bnl:GFP; pntP1-lacZ/TM6 (K). (M–P) Cut and PntP1 reciprocally antagonized each other’s expression (red); GOF/LOF, Gain/Loss of function; (M,N) hs-FLP; UAS-mCD8GFP; btl>y+>Gal4,btl-mRFP1moe X UAS-pntRNAi (M), or UAS-PntP1 (N); (O) hs-FLP; btl>y+>Gal4,btl-mRFP1moe X UAS-Cut, UAS-CD8:GFP; pntP1-lacZ/TM6; (P) hs-FLP; UAS-mCD8GFP; btl >y+>Gal4, btl-mRFP1moe X UAS-cutRNAi, pntP1-lacZ/TM6. (M,O) ASP tip/mid-region; (N,P) ASP stalk/TC region; LOF, RNAi-mediated knockdown; arrows, the intended GOF/LOF clones. (A–P) white dashed line, ASP or clone outlines. (C,G,H,H’,L,M,N) αCut; (A,B,K,O,P) anti-βGal for pntP1-lacZ (B,K,O,P) and sty-lacZ (A). Genotypes, see Materials and methods. Scale bars, 30 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Domains of sty, pntP1, cut, and yan expression in the ASP; cell numbers were determined along the longest D-P axis of the Z-projected ASP images. (B) Differential levels of expression of sty and pntP1 in the upper and lower Z sections of the ASP. (C) Schematic drawing explaining the results in B. (D) Small Bnl overexpressing clones (green, arrow) at the ASP stalk non-autonomously induced sty (red, sty-lacZ); genetic cross: hs-FLP; UAS-mCD8:GFP; btl>y+>Gal4, btl-mRFP1moe X UAS-Bnl; sty-lacZ/TM6. (E) Btl overexpression clones (white, pseudocolored) induced dpERK (red) signaling autonomously; genetic cross: hs-FLP; btl>y+>Gal4; UAS-CD4:mIFP, bnl:gfpendo X UAS-Btl. Scale bars, 30 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A-H) Examples from two independent biological samples showing correlation of the Bnl:GFP gradient with spatial expression domains (red) of sty (A,B; sty-lacZ), pntP1 (C,D; pntP1-lacZ), cut (E,F; αCut), and yan (G,H; αYan); lower panels, corresponding intensity plots along the D-P axis of the ASPs shown. Scale bars, 30 μm.
+
 Previously Bnl was considered to be a chemoattractant (Lebreton and Casanova, 2016; Ochoa-Espinosa and Affolter, 2012), which can only elicit a binary signaling response. In contrast, our results suggested that Bnl activated multiple target genes at its various concentrations similar to a morphogen. To further examine whether the target genes were differentially expressed in response to different Bnl concentrations, we overexpressed cDNA-derived Bnl constructs either from the wing disc bnl-source or from small clones of cells within the recipient ASP. Remarkably, even while highly expressed from the wing disc source, Bnl:GFP moved only target-specifically from the disc source to the ASP (Figure 6H,H’). In comparison to the normal range of endogenous Bnl:GFP distribution and Bnl (pMAPK) signaling (Figure 6G), the spatial range of the overexpressed signal and the signaling expanded to all parts of the ASP, including the stalk (Figure 6H). The expanded range of signal led to retraction of the Cut and Yan expressing zone from within the stalk to only the farthest region in the TC, which received little or no Bnl:GFP from the disc source (Figure 6H–I). Moreover, ectopic clones of either Bnl:GFP or Bnl in the ASP stalk non-autonomously induced sty and pntP1 and suppressed cut in the surrounding cells (Figure 6J,K,L; Figure 6—figure supplement 1D). These results showed that Bnl acts as a morphogen to induce concentration-dependent expression of different genes.
 
 It was previously reported that PntP1 and Yan antagonize each other’s expression (Ohshiro et al., 2002). To examine whether Cut and PntP1 also antagonize each other, we induced ectopic pntP1 and cut mutant clones in the ASP. Reduction of PntP1 levels in the mutant pntP1 LOF (pntP1 RNAi) clones in the ASP tip autonomously upregulated Cut expression within the clones, whereas overexpression of PntP1 in the ectopic pntP1 GOF clones in the ASP stalk suppressed cut in the mutant cells (Figure 6M,N). On the other hand, ectopic cut GOF clones in the ASP tip suppressed pntP1 and cut LOF clones (cut RNAi) in the proximal ASP stalk induced pntP1 within the mutant cells (Figure 6O,P). Thus, PntP1 and Cut reciprocally inhibit each other’s expression. Notably, although PntP1 is a known inducer of btl, pntP1 GOF/LOF clones showed only cell-autonomous effects on cut. The btl GOF clones in the ASP showed a similar autonomous signaling effect (Figure 6—figure supplement 1E). In contrast, each Bnl:GFP GOF clone in the ASP induced non-autonomous effects and organized the surrounding cells to form a new branch (N = 35; Figure 6K,L). All these results provided evidence that Bnl acts as a classical morphogen to induce sty at a high level and pntP1, cut, and yan gradually at lower levels in the ASP (Figure 6E,F).
 
-## Target genes of Bnl signaling differentially feedback regulate cytoneme numbers
+### Target genes of Bnl signaling differentially feedback regulate cytoneme numbers
 
 To examine whether the different target genes of Bnl signaling may regulate cytoneme formation, we focused on pntP1 and cut, the two transcription factors that formed counteracting gradients from two opposing poles of the ASP and antagonized each other’s expression (Figures 6B,C,E,M–P). When we induced ectopic cut GOF clones in the distal tip/mid-ASP regions, the mutant cells produced significantly fewer long and oriented cytonemes compared to the wt clones at an equivalent position (Figure 7A,A’ versus Figure 5A’’,C). This cytoneme deficiency in the cut GOF clones correlated with the autonomous reduction of Bnl:GFP uptake in the mutant clones from the mid/tip of the ASP (Figure 7A–B’). On the other hand, the orientation and number of cytonemes from the ASP stalk cells, which generally had high levels of Cut and produced randomly oriented short cytonemes, remained unaffected by cut GOF (Figure 7A’). Thus, high levels of Cut negatively regulate the formation of cytonemes that orient specifically toward the bnl-source. In addition to this finding, Cut was also known to be a suppressor of btl in the larval spiracular branch (Pitsouli and Perrimon, 2013). Therefore, high levels of Cut elicit negative feedback on Bnl signaling by suppressing both the Bnl-receiving cytonemes and Btl synthesis (Figure 8A,A’). A similar inhibitory effect on cytonemes was observed for Yan, which was a known antagonist for PntP1 and embryonic tracheal filopodia formation (Okenve-Ramos and Llimargas, 2014) (Figure 7—supplement figure 1A-B’; Figure 8A’). Collectively, these results showed that cut and yan, the two genes that are expressed in the ASP stalk in response to lower Bnl levels, suppress cytoneme-formation and Btl expression.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig7-v2.jpg)
+
+**Figure 7.:** (A,A’) CD8:GFP-marked cut-GOF clones at the ASP tip suppressed long oriented cytoneme (arrow) formation; A’, rose plots showing number and orientation of cytonemes of different lengths from distal tip (N = 12) and proximal stalk (N = 6) regions of the ASP. (B,B’) A cut-GOF clone (red, CD4:mIFP) suppressed Bnl:GFP uptake cell-autonomously; B’, A graph comparing Bnl:GFP concentration in cut-GOF clones and corresponding neighboring control area in the ASP (N = 6); p value, two-tailed t-test. (C,C’) pntP1-GOF clones induced long oriented cytonemes (arrow) at the ASP stalk; C’, rose plots showing number and orientation of cytonemes of different lengths from proximal (N = 5) and distal tip (N = 8) clones in the ASP. (D,D’) pntP1-LOF clones suppressed long oriented cytonemes (arrow) at the ASP tip; D’, rose plots showing number and orientation of cytonemes of different lengths from proximal stalk (N = 6) and distal tip (N = 11) clones in the ASP. (A,A’,C,C’,D,D’) see control in Figure 5A–C. (E,E’) A CD4:mIFP-marked pntP1-LOF clone at the ASP tip suppressed Bnl:GFP uptake; E’, plot comparing Bnl:GFP uptake in the pntP1 LOF clone and corresponding neighboring control area in the ASP (N = 4). (F) pnt-P1 GOF clones in the ASP stalk showed higher levels of Bnl:GFP in the clones compared to the WT neighboring area. (G) αGFP EIF showed high Bnl:GFPex on cytonemes and the clonal cell body on pnt-P1 GOF clones in the ASP stalk; (F,G) *, wt neighboring area. (H) A graph showing fold difference of Bnl:GFP and Bnl:GFPex density inside to outside (WT control area) of the pntP1 GOF clones (N = 5 each). (I) pntP1 GOF clones induced btl:cherryendo expression and polarized graded organization of Btl:Cherry molecules. Genotypes: (A,A’,C-D’) hs-FLP/+; UAS-mCD8:GFP/+; btl>y+>Gal4, btl-mRFP1moe/UAS-cut or -pntP1 or -pntRNAi; (B,B’,E-H) hs-FLP/+; btl>y+>Gal4/+; UAS-CD4:mIFP, bnl:gfpendo/UAS-cut or -pntRNAi or pntP1; (I) hs-FLP/+; btl>y+>Gal4/+; btl:cherryendo/UAS-pntP1, UAS-mCD8:GFP. Scale bars, 30 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A-B’) Examples of cytonemes from CD8:GFP-marked yan GOF clone at the tip (A) and the stalk (B) of the ASP; (A’,B’) respective R-plots indicating number and orientation of cytonemes of different lengths from the yan GOF clones. Genotype: hs-FLP/+; UAS-mCD8:GFP/+; btl>y+>Gal4, btl-mRFP1moe/UAS-yan. Scale bars, 30 μm unless otherwise labeled.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/38137/elife-38137-fig8-v2.jpg)
 
@@ -93,11 +187,11 @@ Generally, high-to-mid levels of Bnl signaling induced pntP1 in the distal tip-m
 
 ## Discussion
 
-## Dynamic, recipient tissue-specific shapes of an FGF morphogen gradient
+### Dynamic, recipient tissue-specific shapes of an FGF morphogen gradient
 
 Prior to this study, branching morphogenesis of tissues such as vertebrate lung or vasculature was proposed to be induced by exogenous, diffusible signal gradients. For instance, a mesenchymal FGF10 gradient induces branching in the vertebrate lung, and a Vascular Endothelial Growth Factor/VEGF gradient induces vascular sprouting (Affolter et al., 2009; Spurlin and Nelson, 2017). Although the paracrine functions of these signals were well characterized, our demonstration and detailed characterization of the Bnl gradient represents the first example of an inductive gradient for branching morphogenesis. In contrast to the traditional idea of a preexisting diffusible gradient, we showed that the shapes of the inductive Bnl gradient are dynamic, adaptable, and form only in a receptor-bound state within the recipient tissue. Moreover, we showed that the Bnl gradient self-generates its variable recipient branch-specific shapes by regulating its cytoneme-mediated transport. Self-generation of tissue-specific gradients may be a common and essential strategy for sustaining the robust, yet variable gradient shapes in dynamically migrating tissues. Consistent with this view, the chemokine Cxcl12a also forms a self-generating gradient to regulate dynamic migration of the Zebrafish lateral line (Donà et al., 2013). Notably, inductive signals such as Bnl or VEGF were previously thought to induce chemotactic migration by inducing binary signaling responses in the recipient cells (Ochoa-Espinosa and Affolter, 2012). Therefore, identification of an organizer-like morphogenetic role of Bnl brings a critical shift to our understanding of branching morphogenesis.
 
-## Cytoneme-mediated, tissue-specific Bnl dispersion
+### Cytoneme-mediated, tissue-specific Bnl dispersion
 
 Several earlier reports, including biophysical analyses of vertebrate FGF8 and its distribution patterns in tissues, proposed a free or restricted diffusion-based dispersion mechanism for gradient formation (Bökel and Brand, 2013; Toyoda et al., 2010; Yu et al., 2009). An alternative model proposed that the FGF8 morphogen gradient is also formed by gradual decay of fgf8 mRNA and its translation in a growing vertebrate embryo (Dubrulle and Pourquié, 2004). In contrast, all of our genetic analyses and direct imaging results show that the Bnl gradient is formed by cytoneme-mediated direct transport. An earlier study showed that ASP cells project Btl-containing cytonemes to establish contact with the disc Bnl source, and fail to induce pMAPK signaling without these cytoneme-mediated contacts (Roy et al., 2014). In this study we extended those initial findings. By generating endo-tagged Bnl:GFP and Btl:Cherry constructs expressed at physiological levels, utilizing an EIF assay to detect externalized Bnl molecules, and by applying high resolution visualization techniques, we obtained reliable and unbiased evidence for Bnl dispersion via cytonemes. We showed that ASP cytonemes receive Bnl molecules by establishing direct membrane synapses with the signal producing cells. Super-resolution imaging of membrane-marked ASP and source cells documented these synaptic sites and showed a selective enrichment of externalized Bnl molecules only at these signaling contacts (Figure 3J). At this point, we do not know why and how Bnl is released from producing cells only at cytoneme-source membrane contact sites. Understanding the mechanisms underlying this process is an important new direction for future investigations.
 
@@ -105,7 +199,7 @@ Antibody-based EIF analysis under detergent-free conditions and super-resolution
 
 Contact-dependent Bnl exchange implies that the ASP cells can interpret the direction from where (and from whom) they receive the Bnl signal, in addition to its levels. We do not know how ASP cytonemes find the bnl-source and establish the signaling contacts. A recent study had shown an important regulatory role of the components of the extracellular matrix, which interact with the signal-specific cytonemes and stabilize their directionality (Huang and Kornberg, 2016). Another possible mechanism could be that the cells in the disc Bnl source extend Bnl-containing cytonemes to establish an initial contact with the recipient cytonemes to provide them the necessary pathfinding information. In fact, Hh is known to be delivered by the source cytonemes to the recipient cytonemes in Drosophila wing disc and vertebrate limb buds (Chen et al., 2017; González-Méndez et al., 2017; Sanders et al., 2013). However, the imaging conditions used in this study could not detect Bnl-containing source cytonemes. Future live imaging analyses are required to elucidate the mechanisms of cytoneme pathfinding.
 
-## A self-regulatory mechanism for gradient formation
+### A self-regulatory mechanism for gradient formation
 
 How morphogen gradients are produced in tissues is a long-standing central question. Based on our experimental results, we propose a model for the mechanism by which cytonemes can create and maintain a morphogen gradient (Figure 8A’). We uncovered that ASP epithelial cells extend a graded number of cytonemes that reach out and contact the disc bnl source to receive the signal (Figure 5A–D’’). Recipient cells close to the source have many long polarized cytonemes, but their numbers gradually reduced as the distance from the source increases. Clonal GFP-reconstitution analyses suggested that the number of cytoneme-contacts an ASP cell makes is inversely proportional to its distance from the signal source (Figure 5D–D”). Since reception of Bnl is contact-dependent (Figure 3I,I’), these features of patterned cytoneme formation in the recipient ASP explain how cytoneme-mediated signal reception can generate the recipient tissue-specific shapes of the gradient. These observations led us to address a very important question: how are the cytoneme patterns developed and maintained in the tissue? Answering this question was expected to provide the basis by which cytonemes create and regulate gradient shapes and tissue patterns.
 
@@ -117,7 +211,773 @@ This mechanism implies an interesting systemic feedback where the gradient shape
 
 ## Materials and methods
 
-## CRISPR/Cas9-based genome-editing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or Resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Discs large</td>
+      <td>DSHB</td>
+      <td>DSHB:4F3 RRID:AB_528203</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-dpERK (Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) Rabbit mAb</td>
+      <td>Cell signaling Technology</td>
+      <td>Cell signaling Technology:4370 RRID:AB_11207064</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Cut</td>
+      <td>DSHB</td>
+      <td>DSHB:2B10 RRID:AB_528186</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti- beta-galactosidase</td>
+      <td>DSHB</td>
+      <td>DSHB:40-1a RRID:AB_528100</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Rab5</td>
+      <td>Abcam</td>
+      <td>Abcam:ab31261 RRID:AB_882240</td>
+      <td>IHC (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Rab7</td>
+      <td>(Tanaka and Nakamura, 2008)</td>
+      <td>N/A</td>
+      <td>IHC (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Rab11</td>
+      <td>(Tanaka and Nakamura, 2008)</td>
+      <td>N/A</td>
+      <td>IHC (1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Lamp1</td>
+      <td>Abcam</td>
+      <td>Abcam:ab30687 RRID:AB_775973</td>
+      <td>IHC (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Yan</td>
+      <td>DSHB</td>
+      <td>DSHB:8B12H9 RRID:AB_531807</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Bnl</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>IHC (1:1000), EIF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-GFP</td>
+      <td>Abcam</td>
+      <td>Abcam:ab6556 RRID:AB_305564</td>
+      <td>EIF (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A22287 RRID:AB_2620155</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>{nos-Cas9}ZH-2A</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_54591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-CD8:GFP</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_5137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-nlsGFP</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_4776</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>UAS-CD8:RFP</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_32218</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-CD4:mIFP</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_64182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>lexO-nsyb:GFP1-10, UAS-CD4:GFP11</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_64315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-BtlDN</td>
+      <td>(Reichman-Fried and Shilo, 1995)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-bnlRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_34572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-pntRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_35038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-cutRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_33967</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-btlRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_40871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-diaRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_33424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-nrgRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_37496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-snRNAi</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_42615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>pnt-lacZ[07825]</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_11724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>sty-lacZ</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_11735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>bnl-LexA</td>
+      <td>(Du et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>bnl-Gal4</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>RRID:BDSC_112825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>btl-Gal4</td>
+      <td>(Sato and Kornberg, 2002)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>btl-LHG</td>
+      <td>(Roy et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Btl</td>
+      <td>(Roy et al., 2011a)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-CD8:Cherry</td>
+      <td>(Roy et al., 2011a)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>lexO-CD2:GFP</td>
+      <td>(Yagi et al., 2010)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>hs-FLP; btl&gt;y+&gt;Gal4,  btl-mRFP1moe</td>
+      <td>(Cabernard and Affolter, 2005)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>hs-FLP; btl&gt;y+&gt;Gal4;  btl-mRFP1moe</td>
+      <td>(Cabernard and Affolter, 2005)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>bnl:gfpendo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Functional genomic knock-in allele by CRISPR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>btl:cherryendo</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Functional genomic knock-in allele by CRISPR</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila  melanogaster)</td>
+      <td>UAS-secGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Secreted GFP overexpression construct</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCGGGG CCAATCGCGTCAAGCA-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-1 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AAACTGCT TGACGCGATTGGCCC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-1 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCGATAT TAGCAGTAGCCTTAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-2 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AAACCTAA GGCTACTGCTAATAT-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-2 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCGCAT CACGGAGACGGTGCCGC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-3 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AAACGCGG CACCGTCTCCGTGATG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-3 for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCGAGG TGTACTGATATCTAAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-1 for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AAACCTTA GATATCAGTACACCT-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-1 for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCGCGG CATCGAAAGGTCCAGAT-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-2 for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AAACATCT GGACCTTTCGATGCCG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Guide RNA-2 for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CGTATGGG ATTCCGATTGTGTG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify N fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CAGCTCCT CGCCCTTGGACATAGTG TTGCTGCTGCAATGTGGCGG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify N fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CCGCCACA TTGCAGCAGCAACACTA TGTCCAAGGGCGAGGAGCT-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify mid fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTGCTGA TGCTGCTGCTGCTGCCAC TCTTGTACAGCTCATC CATGCCCAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify mid fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTGGGCA TGGATGAGCTGTACAAG AGTGGCAGCAGCAGCA GCATCAGCAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify C fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GGCTTGA GAGGTTCTTATAAAA TACTCGAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify C fragment of HDR donor for bnl:gfpendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTCAACTT CACCGTGACGAATGAC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify N fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTTTCTCC ATGCGCTGACCCGT AATCAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify N fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTGATTAC GGGTCAGCGCATG GAGAAAC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify mid fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GGAATTCT TTTTGGTCTCCTTAT ACTACGAA-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify mid fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-TTCGTAGT ATAAGGAGACCAAA AAGAATTCC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify C fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GGTTCCTC TTCCATCCAAGGTTG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to amplify C fragment of HDR donor for btl:cherryendo</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-TTTTGGG GCCAATCGTGTGAAGC ACGGCGTGCGG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-1 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CCGCACG CCGTGCTTCACACGAT TGGCCCCAAAA-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-1 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CCATATTA GCAGTAGTCTGAGCGG TAGCAGTAAC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-2 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTTACTGC TACCGCTCAGACTACT GCTAATATGG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-2 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GGAGACG GTGCCGCAAGAGCGG GTCGAGCAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-3 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTGCTCG ACCCGCTCTTGCGGC ACCGTCTCC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at bnl-gRNA-3 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CCGGGAA ACGTCCCCGCTGAGGT ATCAGTACACCTATAAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at btl-gRNA-1 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTTATAGG TGTACTGATACCTCAG CGGGGACGTTTCCCGG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at btl-gRNA-1 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>5’-GTAGCAAT CCAAACGATGCGTAT CTGGACCTTTCGATGC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at btl-gRNA-2 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GCATCGA AAGGTCCAGATACGCA TCGTTTGGATTGCTAC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer to introduce synonymous mutation at btl-gRNA-2 recognition site in HDR donor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCCTGTT TAGGGGCGATAAGTGG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for bnl:gfpendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTGTTGCG TAAGGTTAGGGCTTCG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for bnl:gfpendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GAAGCAG CACGATTTCTTCAAGAGCG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for bnl:gfpendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CGCTCTTG AAGAAATCGTGCTGCTTC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for bnl:gfpendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CGCCAGC CAGGCAAT-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for bnl:gfpendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCCTCAA GAATGCCTCCTTGGAC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for btl:cherryendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTCTATGA TACCTCTGACAGCTTC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for btl:cherryendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CTTCCCC GAGGGCTTCAAGTG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for btl:cherryendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CACTTGAA GCCCTCGGGGAAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for btl:cherryendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GTTTCTCC ATGCGCTGACCCG TAATCAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for btl:cherryendo HDR screening and sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-AATTCGAG CTCGGTACAGATCTA TGCGAAGAAACCTGCGC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for UAS-SPBnl-sfGFP cloning</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-CCTCGCCC TTGGACATCATCGCA GATACAAGGCCCC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for UAS-SPBnl-sfGFP cloning</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GGCCTTGT ATCTGCGATGATGTC CAAGGGCGAGGAG-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for UAS-SPBnl-sfGFP cloning</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-GCCAAGC TTGCATGCCGGTACCT TACTTGTACAGCTC ATCCATGCCC-3’</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Primer for UAS-SPBnl-sfGFP cloning</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC19</td>
+      <td>Addgene</td>
+      <td>Addgene:50005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST</td>
+      <td>Drosophila Genomics Resource center</td>
+      <td>DGRC:1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3</td>
+      <td>(Port et al., 2014)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-bnl_gRNA-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of bnl_gRNA-1 flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-bnl_gRNA-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of bnl_gRNA-2 flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-bnl_gRNA-3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of bnl_gRNA-3 flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-btl_gRNA-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of btl_gRNA-1 flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-btl_gRNA-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of btl_gRNA-2 flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO -bnl:GFP-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HDR donor for making bnl:gfpendo flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO -bnl:GFP-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HDR donor for making bnl:gfpendo flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO -bnl:GFP-3</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HDR donor for making bnl:gfpendo flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO- btl:Cherry-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HDR donor for making btl:cherryendo flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR4Blunt-TOPO -btl:Cherry-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HDR donor for making btl:cherryendo flies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-SPBnl-sfGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Plasmid for generation of UAS-secGFP flies</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ v2.0)</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop</td>
+      <td>Adobe</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>Microsoft</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene</td>
+      <td>snapgene.com</td>
+      <td>RRID:SCR_015052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VassarStats</td>
+      <td>vassarstats.net</td>
+      <td>RRID:SCR_010263</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>r-project.org</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### CRISPR/Cas9-based genome-editing
 
 The bnl:gfpendo and btl:cherryendo alleles were generated following CRISPR/Cas9 based genome editing method described earlier (Du et al., 2017) (Figures 1B and 2A; Figure 1—figure supplement 1A–C; Figure 2—figure supplement 1A–C). The bnl:gfpendo knock-in allele expressed a chimeric Bnl:GFP protein containing a superfolder-GFP (sfGFP) fused in-frame at ~53 amino acid downstream to the conserved FGF domain (247 to 376 amino-acid) (Figure 1B). Due to its high solubility and efficient folding kinetics in extracellular environment (Pédelacq et al., 2006), we selected sfGFP for tagging Bnl. The btl:cherryendo knock-in allele expressed Btl:Cherry containing in-frame C-terminal fusion of mCherry (Figure 2A).
 
@@ -139,11 +999,11 @@ Transgenic flies harboring gRNA vectors at the attP40 landing site (y1 v1 nos-ph
 
 Amplification products obtained using PCR primers fwd1-rev2 and fwd2-rev1 confirmed knock-in positive lines, whereas amplification by the M13F and rev3 primers indicated unintended ‘ends-in’ HDR. Finally, a correct sized PCR product obtained using primers fwd1-rev1 confirmed the ends-out HDR (Figure 1—figure supplement 1A–B’’’; Figure 2—figure supplement 1A–B’’’). All GFP or mCherry positive, sequence verified lines were outcrossed to remove unintended mutations (if any), and any putative non-specific off-target sites were further sequence confirmed to be free of genome-editing. The homozygous btl:cherryendo, and bnl:gfpendo fly lines with accurate genomic sequences had a normal tissue morphology, and expected expression/distribution patterns (Figure 1C–D’, Figure 1—figure supplement 1C; Figure 2B; Figure 2—figure supplement 1C). We used one BnlGFP_gRNA-3 (c26-9), and a Btl:Cherry_gRNA-1 (a21-10) line for all analyses.
 
-## Molecular cloning
+### Molecular cloning
 
 For secGFP, the N-terminal 32 amino-acid (96 nucleotides) long signal peptide sequence of Bnl was cloned in-frame upstream of a sfgfp sequence into pUC19 using Gibson Assembly (Key resources table). The product was sub-cloned into the BglII, Acc651 sites of the pUAST for P-element mediated germline transformation in Drosophila. A transgenic fly was generated that harbored an overexpression UAS-Bnl:GFP construct derived from bnl cDNA (DGRC).
 
-## Genetic crosses
+### Genetic crosses
 
 All crosses were incubated at 25°C unless specified otherwise.
 
@@ -151,26 +1011,26 @@ For nsybGRASP labeling of cytoneme contacts (Figure 3I,I’; Videos 3 and 5): bt
 
 Flip-out clones of specific genotype were generated by 8–15 min 37°C heat shock of the early 3rd instar larvae followed by 25°C incubation until they reached the late 3rd instar stages (~24 hr).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 A standard immunostaining protocol was used following (Du et al., 2017; Roy et al., 2014). To detect the surface exposed/localized Bnl:GFPex or Bnlex, standard detergent-free live immunostaining protocol (EIF) was used following (Schwank et al., 2011; Strigini and Cohen, 2000), except the live tissues were incubated with αBnl or αGFP antibody in optimized WM1 medium (Du et al., 2017). Alexa Fluor-conjugated secondary antibodies (1:1000 from Molecular Probes) were used for immunofluorescence detection.
 
-## Generation of anti-Bnl antibody
+### Generation of anti-Bnl antibody
 
 Affinity-purified rabbit anti-Bnl antibody was generated from YenZym Antibodies, LLC against a peptide containing amino acid residues from 699 to 717 region of the Bnl protein.
 
-## Microscopic imaging
+### Microscopic imaging
 
 For live imaging, wing imaginal discs and their associated trachea were prepared following (Roy et al., 2014). The imaging systems used in this study included Leica SP5X confocal microscope equipped with an ultrasensitive Hybrid Detector, an Andor spinning disc confocal equipped with iXon 897 EMCCD camera, Perkin Elmer UltraVIEW Vox with an EMCCD camera, and a ZeissLSM 800 with Airyscan. Super-resolution images of the Airyscan detector resolved poorly fluorescent and densely populated Bnl:GFP nano-puncta on the ASP/disc cell surface (Figure 3F–F’’; Figure 3—figure supplement 2). The images were processed and analyzed with Fiji. For 3D-rendering, Andor iQ3 software was used. To visualize the faint signals, brightness/intensities of the images were digitally increased following (Roy et al., 2014; Roy et al., 2011b). For most images, maximum intensity projections of at least 30 optical sections were shown.
 
-## Quantitative analysis of signal gradient
+### Quantitative analysis of signal gradient
 
 The Intensity profiles of Bnl:GFP, Btl:Cherry, pntP1, cut, sty and yan gradients were derived from the maximum intensity projections along the D-P axis of the ASPs. For Figure 1I–I’’, Figure 1—figure supplement 2D–E”, the intensity profiles were derived across the entire digitally straightened epithelium following (Long et al., 2009). A ~ 40 pixels wide line was fitted following the curved tracheal/ASP epithelium. For quantification of Bnl:GFP and Bnl:GFPex uptake in mutant clones, total GFP or EIF (red, anti-GFP) intensities were measured from selected areas in mutant clones and neighboring wt cells and normalized with the selected area (Figure 4; Figure 4—figure supplement 1; Figure 7B,B’,E–H).
 
-## Quantitative analyses of number and orientation of cytonemes
+### Quantitative analyses of number and orientation of cytonemes
 
 For Figure 5A–C, Figure 7A,A’,C–D’, Figure 7—figure supplement 1, cytonemes were manually counted and were grouped by length (<15 μm, 15–30 μm, and >30 μm) as reported in (Roy et al., 2011b). Cytonemes emanating from each clone were captured over ~30–40 μm Z-sections with 0.35 μm step size. The R program was used to generate R plots from at least five preparations of each genotype to analyze cytoneme orientation and number.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical significance was determined with a two-tailed t-test (Figure 3I'; 4E,G’; 7B’,E’), or a one-way ANOVA (Figure 5B,D’’) followed by Tukey honestly significant different (HSD) test. For all the numerical data analyses, the amount of variation from the mean is indicated by the standard deviation.

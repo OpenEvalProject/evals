@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Molecular Biology and Genetics, Weill Institute for Cell and Molecular Biology, Cornell University Ithaca United States
+1. Department of Molecular Biology and Genetics, Weill Institute for Cell and Molecular Biology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
 
 † Corresponding author
 
@@ -25,11 +25,164 @@ This laboratory has previously analyzed and imaged the transport of budding yeas
 
 In this study we were able to image secretory vesicle biogenesis, with the arrival at the trans Golgi network of the Rab GEF Sec2, the Rab Sec4, and its effector the myosin-V motor Myo2. During transport, the secretory vesicle recruits the exocyst, the Sec4-effector complex necessary for vesicle tethering. During tethering, Rho3 is recruited, followed by Sro7, and then very briefly by the SM protein complex, Sec1/Mso1. Perturbation experiments show that this time-line is remarkably robust to levels of these and other components. Finally, we show that the associated Sec1 and Mso1 have redundant membrane-recruitment domains that aid its surprisingly fleeting participation during exocytosis. This time-line, together with an estimation of the number of molecules of each component involved and their known functions (Table 1), provides a framework to better understand biogenesis of secretory vesicles and their consumption at the plasma membrane.
 
+**Table 1.**
+ Proteins discussed in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Brief Description</th>
+      <th>Interactions Relevant to this Work</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ypt31/32</td>
+      <td>Paralogous Rab proteins which localize to late Golgi to facilitate TGN transport by Myo2 and help drive vesicle formation.</td>
+      <td>Sec2, Myo2, Exocyst (Sec15)</td>
+    </tr>
+    <tr>
+      <td>Sec4</td>
+      <td>The secretory vesicle Rab protein which recruits effectors critical to exocytosis.</td>
+      <td>Sec2, Myo2, Msb3/4, Exocyst (Sec15), Sro7</td>
+    </tr>
+    <tr>
+      <td>Sec2</td>
+      <td>GEF (Guanine-nucleotide Exchange Factor) for Sec4.</td>
+      <td>Ypt31/32, Sec4, Exocyst (Sec15)</td>
+    </tr>
+    <tr>
+      <td>Msb3/4</td>
+      <td>Redundant GAPs (GTPase Accelerating Proteins) for Sec4.</td>
+      <td>Sec4</td>
+    </tr>
+    <tr>
+      <td>Myo2</td>
+      <td>Class V Myosin motor protein responsible for transporting secretory vesicles (among other cargo) to the growing bud. Effector of Ypt31 and Sec4.</td>
+      <td>Sec4, Exocyst (Sec15), Ypt31/32</td>
+    </tr>
+    <tr>
+      <td>Smy1</td>
+      <td>Kinesin-related protein which increases Myo2 affinity for Sec4. Does not function as a typical kinesin.</td>
+      <td>Myo2</td>
+    </tr>
+    <tr>
+      <td>Exocyst</td>
+      <td>The hetero-octameric secretory vesicle tethering complex.</td>
+      <td>See below:</td>
+    </tr>
+    <tr>
+      <td>Sec3</td>
+      <td>Aids in plasma membrane binding, SNARE assembly. Exocyst component.</td>
+      <td>Rho1, Cdc42, Sso1/2, PI(4,5)P2</td>
+    </tr>
+    <tr>
+      <td>Sec5</td>
+      <td>Exocyst component.</td>
+      <td>N/a</td>
+    </tr>
+    <tr>
+      <td>Sec6</td>
+      <td>Aids in SNARE assembly. Exocyst component.</td>
+      <td>Snc1/2, Sec1, Sec9</td>
+    </tr>
+    <tr>
+      <td>Sec8</td>
+      <td>Exocyst component.</td>
+      <td>N/a</td>
+    </tr>
+    <tr>
+      <td>Sec10</td>
+      <td>Exocyst component.</td>
+      <td>N/a</td>
+    </tr>
+    <tr>
+      <td>Sec15</td>
+      <td>Directs the exocyst to secretory vesicles. Exocyst component.</td>
+      <td>Ypt31/32, Sec2, Sec4, Myo2</td>
+    </tr>
+    <tr>
+      <td>Exo70</td>
+      <td>Aids in initial plasma membrane binding. Exocyst component.</td>
+      <td>Rho3, Cdc42, PI(4,5)P2</td>
+    </tr>
+    <tr>
+      <td>Exo84</td>
+      <td>Aids in SNARE assembly. Exocyst component.</td>
+      <td>Sro7</td>
+    </tr>
+    <tr>
+      <td>Rho3</td>
+      <td>Polarity regulating Rho-GTPase. Helps “activate” the exocyst through Exo70.</td>
+      <td>Exocyst (Exo70)</td>
+    </tr>
+    <tr>
+      <td>Cdc42</td>
+      <td>Polarity regulating Rho-GTPase.</td>
+      <td>Exocyst (Sec3, Exo70)</td>
+    </tr>
+    <tr>
+      <td>Snc1/2</td>
+      <td>Secretory vesicle resident SNARE proteins.</td>
+      <td>Sso1/2, Sec9, Sec1, Mso1</td>
+    </tr>
+    <tr>
+      <td>Sso1/2</td>
+      <td>Plasma membrane resident SNARE proteins.</td>
+      <td>Snc1/2, Sec9, Sec1, Mso1</td>
+    </tr>
+    <tr>
+      <td>Sec9</td>
+      <td>Cytosolic SNARE protein.</td>
+      <td>Snc1/2, Sso1/2, Sro7, Sec6, Sec1, Mso1</td>
+    </tr>
+    <tr>
+      <td>Sro7/77</td>
+      <td>Lgl/Tomosyn homologs and effectors of Sec4. Aids in vesicle tethering and Sec9 regulation.</td>
+      <td>Sec4, Exocyst (Exo84), Sec9</td>
+    </tr>
+    <tr>
+      <td>Sec1</td>
+      <td>Sec1-Munc18 Family protein essential for secretory vesicle fusion with the plasma membrane.</td>
+      <td>Snc1/2, Sso1/2, Sec9, Mso1</td>
+    </tr>
+    <tr>
+      <td>Mso1</td>
+      <td>Small fungal Sec1 accessory which is thought to aid in SNARE assembly. Reported Sec4 effector.</td>
+      <td>Sec1, Sec4</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Secretory vesicle formation and transport from the trans-Golgi network (TGN)
+### Secretory vesicle formation and transport from the trans-Golgi network (TGN)
 
 To capture secretory vesicle formation at the Golgi, we needed a marker for the trans-Golgi network (TGN). At the TGN, a GTPase cascade results in the generation of secretory vesicles (Novick, 2016). The Arf-GEF Sec7 activates Arf1, which in turn recruits Pik1-Frq1 (the phosphatidylinositol 4-kinase complex) and the TRAPPII Rab-GEF complex. TRAPPII then recruits Ypt31/32 (Rab11 homologs), which recruits another Rab-GEF Sec2, which finally activates and recruits the secretory vesicle Rab, Sec4 (Thomas et al., 2019; Thomas and Fromme, 2016; Walch-Solimena et al., 1997). Ypt31/32 and Sec7 have frequently been used as interchangeable TGN markers; however, Ypt31/32 level has recently been shown to peak on compartments a full eight seconds after Sec7 (Highland et al., 2021). While endogenously tagged Sec7-mNeonGreen occasionally appears to fragment into small compartments or vesicles, most Sec7 appears to dissipate around the time of fragmentation, leaving resulting vesicles difficult to identify (Figure 1—figure supplement 1). By contrast, mNeonGreen(mNG)-tagged Ypt31 can be followed through vesiculation and appears to remain on vesicles through fusion with the plasma membrane (Figure 1A). The population of Ypt31 which appears to remain on the plasma membrane is most likely an artifact of the fluorescent tag, though this was not probed further. For this reason, we assessed the timing of recruitment of Sec2, Sec4, and a Myo2-marker (see Figure 1—figure supplement 2 for construction) to mScarlet-Ypt31 marked compartments.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-v2.jpg)
+
+**Figure 1.:** (A) An example of mNG-Ypt31 TGN vesiculation in a diploid cell. Colored arrowheads follow successive fragmentation of an initial compartment. Black arrows highlight aberrant mNG-Ypt31 on the plasma membrane. (B) Timeseries example of Sec2-mNG recruitment to and budding from an mScarlet-Ypt31-marked compartment in a diploid cell. Single plane video. (C) Timeseries example of GFP-Sec4 recruitment to and budding from an mScarlet-Ypt31-marked compartment in a diploid cell. Single plane video. (D) Timeseries example of an mNG- Myo2-marker being recruited to and budding from an mScarlet-Ypt31-marked compartment in a diploid cell. Single plane video. (E) Order of recruitment to Ypt31 TGN compartments aligned by apparent separation of signal from the compartment. Budded vesicles were generally transported linearly towards the bud in under a second. Median ±95% CI. n≥10. *, p≤0.05; ***, p≤0.001. (F) Localization of mNG-tagged exocyst components in haploid cells. Sum projection of a 1.5 μm vertical volume surrounding the bud neck. Arrowheads indicate a single vesicle approaching the bud neck in each. All scaled equally; Bar on Exo84, 2 μm. (G) Additional example of mNG-Sec3 localizing to puncta approaching the bud neck in homozygously-tagged diploid cells. (H) Fluorescence Loss in Photobleaching (FLIP) experiment comparing the recycling of Sec3 or Sec5 from the bud. Mean curve ± SD, n≥18. (I) Exocyst-3x-mNG faintly localizes to vesicles earlier in the mother. Compare the moving signals identified by green arrows to any punctum within in the bud. All bars, 2 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) One copy of endogenous Myo2 tagged with mNG in a diploid cell (left) shows no clear punctate localization due to the relatively high cytosolic background, however, one copy of Smy1-mNG (right) permits identification of clear vesicles. (B) mNeonGreen or one copy of Tomato were tagged to a portion of the coiled coil domain of mouse myosin 5b of similar length to the Myo2 coiled coil, to facilitate dimerization of the marker without hetero- dimerizing with endogenous Myo2. This was fused to the C-terminal cargo-binding domain of Myo2 to maintain normal Myo2 cargo recognition. (C) an example of mNG-mCC-Myo2(CBD) localization in a diploid cell.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Overview and highlight of two large, non-vesicular GFP-Sec4-positive compartments in the bud of a vps1∆ haploid cell. (B) A large GFP-Sec4 compartment in a vps1∆ haploid cell aberrantly fusing with the plasma membrane in the mother. Sum Projections. See Videos 3 and 4.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Replication of Sec2/Sec4 separation from Ypt32-positive TGN compartments. n≥10. *, p≤0.05. (B) Example of Ypt31/32 localization, highlighting more Ypt31-dominant compartments in the mother and Ypt32-rich compartments in the bud. (C and D) quantification of arbitraryYpt32/Ypt31 fluorescence intensity ratio for compartments in the mother and bud for mNG-Ypt31 mScarlet-Ypt32 (C) or mScarlet-Ypt31 mNG-Ypt32 (D). Compared via paired students t-test. *, p≤0.05; ***, p≤0.001.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Exocyst-3x-tag construction. (B) Colocalization example of Exocyst-3x-mScarlet with Myo2-Marker. Single Plane. (C) Colocalization example of Exocyst-3x-mScarlet with GFP-Sec4 on a vesicle in the mother cell. Single Plane.
 
 All three components appeared to briefly colocalize with Ypt31 before breaking-off as a nascent secretory vesicle from the remaining portion of Ypt31, then moving diffusively, and finally being transported linearly towards the bud (Figure 1A–E). Sec2 first appeared on the Ypt31-containing TGN approximately 2 s prior to separation, whereas Sec4 and the Myo2-marker appeared approximately 1 s before separation, and, presumably, about one second after Sec2 (Figure 1B–E). The close temporal proximity of Sec4 and Myo2 arrival suggests that Myo2 is likely the first effector of Sec4 recruited to secretory vesicles. This early recruitment relative to other exocytic factors is probably aided by the fact that Myo2 is also a direct effector of Ypt31 (Lipatova et al., 2008). While Sec4, Sec2, and Myo2 were all found to be rapidly directed towards the bud following separation from the TGN—generally in under half a second—only compartments marked with Sec2 or Sec4 appeared capable of moving diffusely for up to several seconds, suggesting that at least some vesicles can separate from the TGN without first acquiring Myo2.
 
@@ -43,13 +196,29 @@ In this study, each exocyst component, including Sec3, was individually tagged w
 
 Localization of the exocyst to moving vesicles in the mother only became slightly more apparent upon multiply-tagging the complex with one copy of mNeonGreen on each of three subunits (Exocyst-3x-mNG; Figure 1I, Figure 1—figure supplement 5A and B). Within the mother, few examples of Sec4-Exocyst colocalization could be found, though the clearer examples occurred on vesicles which moved in a diffusive manner briefly before polarized movement (Figure 1—figure supplement 5C). While this further supports that our exocyst marker was identifying moving secretory vesicles, this rare observation stands in stark contrast to Sec4 or Sec2 which could be readily observed on vesicles at all points within the mother, indicating that exocyst association with vesicles generally occurs well after vesicle biogenesis and during transport.
 
-## Improved techniques for the imaging of yeast exocytosis
+### Improved techniques for the imaging of yeast exocytosis
 
 Our previous study to examine secretory vesicle tethering utilized standard spinning disk confocal imaging of the cellular volume surrounding the bud neck of haploid GFP-Sec4 cells (Donovan and Bretscher, 2015a). As most of the Sec4 in the cell is vesicle bound and in the bud, all the GFP signal in the bud was initially bleached and then incoming GFP-positive secretory vesicles were followed. An average of 22 vesicles enter the bud per minute (Figure 2A). The previous technique of intentionally photobleaching the bud thus necessarily relied on fortuitously timed secretory vesicle formation and transport from the mother and for that vesicle to then tether within the small vertical observation window centered around the bud neck. This technique confined critical information on vesicle tethering to the lowest resolution domain, the z-axis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig2-v2.jpg)
+
+**Figure 2.:** (A) Approximately 22 vesicles enter the bud per minute. n=55 cells. Mean ± SD. (B) Schematic diagram of improved volumetric imaging technique used in this study. See Video 1 for example. (C) Collected data of all timed GFP-Sec4 tethering events in wildtype GFP-Sec4/Sec4 cells as well as homozygously-tagged diploids and GFP-Sec4 haploids Means ±95% CI. GFP- Sec4/Sec4 Mean: 5.02 s, n=180 events, others n>50. ***, p≤0.001. (D) Example of GFP-Sec4 vesicle tethering and fusion from a GFP-Sec4 heterozygously-tagged diploid. Sum projection. See Video 2. (E) GFP-Sec4 fluorescence intensity is roughly constant through tethering. Local weighted regression (LOWESS; green) and linear regression curves (during tethering; black) added for visual interpretation. (F) Apparent tethering time of vesicles marked carrying Sec3-mNG (Mean: 4.55 s) or Sec15-mNG (Mean: 4.77 s) is similar to tethering time of vesicles marked by GFP-Sec4. Mean ±95% CI.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Example of multiple vesicle tethering events within a single bud. Colored arrows follow single events. (B) Collected timings of events shown in A.
 
 To overcome this limitation, we adjusted the imaged volume to the region of the cell proximal to the coverslip so that the majority of information regarding vesicle position was shifted into the higher resolution x- and y-axes (Figure 2B). Instead of photobleaching, we utilized the larger volume and plasma membrane surface area of mid-sized diploid buds to identify individual vesicles that tethered, fused, and could be confidently discerned from nearby vesicles. This three-dimensional capture was performed by streaming EM-CCD frames to RAM from a very small optically centered field of view, using short exposures (between 10 and 50ms), constant laser excitation, and continuous vertical movement of the stage. Additional discussion of the rationale for the imaging set-up used is provided in the Methods Section. By removing the need for discrete stage stepping, camera-shuttering, and laser firing this drove down the capture time per frame, resulting in typical captures of 175ms per stack of six planes for brighter signals from more abundant proteins, and less than a third of a second for very low abundance proteins. This is far faster than the capture of five planes in 1.5 s used in our earlier studies.
 
 With these adjustments and careful analysis of these videos in 3D projections (Video 1), we were able to identify far more unambiguous tethering and fusion events than previously possible (Figure 2C, Video 2) and could even identify many events per cell in some captures (Figure 2—figure supplement 1). Here, we defined tethering as the first frame where a Sec4 vesicle came to a full stop at a location not more than one apparent vesicle diameter from where it eventually fused with the plasma membrane. Similarly, fusion was assumed to occur at the last frame in which signal could be positively identified at the tethering location. Although a fluorescent marker capable of visualizing cargo release would be ideal for this task, to this date no such tool has been successfully developed. Analyzing many such events resulted in diploids resulted in a tether-to-fusion time of approximately five seconds (Figure 2D). Interestingly, we found early on in this study that the presence of the GFP-tag on Sec4 itself affects Sec4 function. A significant increase in tether-to-fusion time was seen when no untagged Sec4 was available (such as in a GFP-Sec4/GFP-Sec4 diploid or GFP-Sec4 haploid; Figure 2C). This difference indicated that the heterozygous diploid GFP-Sec4/Sec4 strain would be the most physiological framework in which to explore secretory vesicle tethering. By measuring the average intensity of GFP-Sec4 signal on tethered vesicles in the diploids, we found that GFP-Sec4 signal on the vesicle remains constant throughout the duration of tethering, only rapidly disappearing after several seconds, suggesting that Sec4 is not extracted from the vesicle during tethering (Figure 2E).
+
+![Video 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-video1.mp4.jpg)
+
+**Video 1.:** Six planes were captured with 25ms exposures during continuous stage movement, resulting in 176ms per stack or ‘timepoint’. Several vesicle fusion events, defined as rapid loss of GFP-Sec4 signal from stationary puncta, are highlighted with green arrows. Video is played back at 2 x capture speed.
+
+![Video 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-video2.mp4.jpg)
+
+**Video 2.:** Video is played back at 2 x capture speed.
 
 Next, we determined the time that exocyst components Sec3-mNG and Sec15-mNG associate with tethered vesicles. Both Sec3-mNG and Sec15-mNG remain on tethered vesicles for about the same time as the tether-to-fusion time of GFP-Sec4, although both consistently appeared slightly shorter (Figure 2F). Although this difference is not statistically significant, it is consistent with reports showing that the mammalian exocyst remains associated with exocytic vesicles roughly until fusion. Sec3 and Sec15 represent constituent components of the two putative exocyst sub-assemblies (Sec3, 5, 6, 8 vs 10, 15, Exo70, Exo84) and we do not see a significant difference in the residence timing of the two sub-complexes, as has been reported in mammalian cells, though this discrepancy could be a matter of confidence and sample size and underlying differences may be probed further in future exocyst-specific studies (Ahmed et al., 2018).
 
@@ -59,7 +228,11 @@ Earlier studies employing haploid GFP-Sec4 strains reported a longer tethering t
 
 **Figure 3.:** (A) Sequentially tethering vesicles may appear as long-lived events in captures with low spatiotemporal resolution, especially when considering the elongated tethering time in cells with no untagged Sec4 (as in Figure 2C). Images were captured at 176ms per frame. Inset time-lapse shown with 10 x lower time resolution. (B) Additional example of “hot-spot” tethering shows 3 vesicles arriving and tethering in rapid succession at one un-resolvable location (see Video 3). Although they tether at separate times, they appear to fuse at roughly the same time. Asterisk marks signal from a bright vesicle that passed the observed position. (C) Secretory vesicle formation continues even in the absence of actin cables. (D) Disruption of actin cables with LatrunculinB (LatB) immediately results in elongated GFP-Sec4 vesicle tether-to-fusion time. ***, p≤0.001 by t-test. (E) Several examples of clustered GFP-Sec4 secretory vesicle localization in diploid cells not treated with LatB and examples of more dispersed vesicle tethering locations in cells 1 min after LatB treatment. Sum projection of cell bottom. (F) Boi2 patches are longer lived than individual vesicles or even Bni1 patches, suggesting a potential explanation for the observation of tethering ‘hot-spots’. (G) Exocyst-3x-mScarlet frequently colocalizes with Boi2-mNG puncta on the plasma membrane. Arrowheads indicate vesicles colocalized with Boi2, arrow indicates a tethered vesicle not colocalized with Boi2.
 
-## Modulation of tethering by Sec4-GTP state
+![Video 3.](https://cdn.elifesciences.org/articles/78750/elife-78750-video3.mp4.jpg)
+
+**Video 3.:** Green circle illustrates the region from which intensity data was extracted in Figure 3B. Video is played back at approximately 3 x capture speed.
+
+### Modulation of tethering by Sec4-GTP state
 
 Sec4 GTP-hydrolysis, as promoted by the genetically redundant Rab-GAPs Msb3 and Msb4, is believed to be important for maintaining proper tether-to-fusion time (Donovan and Bretscher, 2015a). Homozygous deletion of msb4 with heterozygous deletion of msb3 (msb3∆/MSB3 msb4∆/msb4∆) leads to a modest but significant increase in tether-to-fusion time, while the opposite (msb3∆/msb3∆ msb4∆/MSB4) results in much greater increase in tether-to-fusion time. A similar effect on tethering can be seen when one copy of Sec4 in a diploid is replaced with the constitutively active Sec4(Q79L) allele (Figure 4A). Excess active Sec4 is seen on the plasma membrane of msb3∆/msb3∆ cells (Figure 4B). Thus, the longer tethering times observed could be directly due to delayed hydrolysis of Sec4-GTP on the vesicle, or indirectly due to excess active Sec4 on the plasma membrane which may be sequestering secretory effectors, limiting their availability for tethered vesicles, and thereby elongating tethering time. To distinguish between these, we expressed a constitutively active mScarlet-Sec4(Q79L)-Ist2tail (aka. mScarlet-Sec4(Q79L)-PM) which embeds into the plasma membrane (Figure 4C, left). Notably, there was no difference in vesicle tether-to-fusion time with expression of the constitutively active, plasma membrane-bound Sec4 (Figure 4C, right). Thus, delayed hydrolysis of vesicle-bound Sec4-GTP elongates tethering time. These results also highlight the inherent context-dependent regulation of exocytic factors and supports the idea that local coincidence detection mechanisms are important for the function of Sec4 effectors.
 
@@ -69,11 +242,23 @@ Sec4 GTP-hydrolysis, as promoted by the genetically redundant Rab-GAPs Msb3 and 
 
 Limitation of GDI availability by heterozygous deletion of Gdi1 also had no significant effect on vesicle tether-to-fusion time despite also resulting in accumulated Sec4 on the plasma membrane (Figure 4D and E). In addition to further supporting the conclusion that accumulated Sec4 on the plasma membrane does not interfere or elongate tether-to-fusion time, the fact that Sec4 can be retained in this way strongly supports that the rapid loss of Sec4 signal from a tethered vesicle is representative of fusion.
 
-## Defining the location and timing of components individually
+### Defining the location and timing of components individually
 
 We next sought to examine how long other components involved in exocytosis were associated with tethered vesicles. To prevent potential perturbation of tethering by over-expression, single components were homozygously tagged in the genome and expressed exclusively under their own promoters. Components that were observed to reside on vesicles during transport were timed, much like with Sec4 itself, from the moment of tethering until punctate signal was lost. Components that appeared to only form stable punctate structures at the plasma membrane (i.e. not on moving vesicles) were timed from the first frame the punctum appeared to the last frame it was visible.
 
 Unlike Sec4 and the exocyst complex, Sec2 and Smy1 appear to dissociate from secretory vesicles shortly after tethering (Figure 5A). Sec2 is the first protein observed to depart the vesicle, with Sec2-mNG puncta lasting on average 2.8 s after becoming stationary at the plasma membrane. Smy1, which associates with vesicle-bound Myo2 and resides on vesicles through transport (Lillie and Brown, 1994; Lillie and Brown, 1992; Lwin et al., 2016), only remains associated with the vesicle for an average of 3 s after tethering. Since tagged wildtype Myo2 cannot be observed due to a high cytoplasmic background of unactivated Myo2, Smy1 likely parallels Myo2 behavior. Indeed, assessing the time of punctate signal loss of the Tomato-Myo2-marker supports that Smy1 and Myo2 dissociate around the same time in vesicle tethering (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig5-v2.jpg)
+
+**Figure 5.:** (A) Independent timing from tether to disappearance for components residing on vesicles (Smy1-mNG, Sec2-mNG) and timing of punctum appearance to disappearance for components apparently residing on the plasma membrane (Sro7- mNG, Sec1-mNG, Mso1-mNG). All imaged in homozygously-tagged diploids in a manner as in Figure 2B. **, p≤0.005; ***, p≤0.001. See Figure 5—figure supplement 2 for combined statistics. (B) Sro7, a Sec4 effector, does not localize directly to vesicles and instead appears in short-lived puncta at the plasma membrane. Sum projection. Bar, 2 μm. (C) Disruption of secretory vesicle tethering via sec6-4 does not result in Sro7 accumulation on cytosolic vesicles, but instead accumulation at the plasma membrane. Mitochondrial autofluorescence is apparent due to the low signal intensity of Sro7-mNG. Bar, 2 μm. (D) Averaging multiple events shows that the timing of arrival and departure for Sro7 is roughly symmetrical. (E) Time-lapse of several Sec1-mNG puncta within the bud. Sum Projection. Captured as in Figure 2B. ~300ms per frame. Bar, 2 μm. (F) Averaging several Sec1-mNG localization events shows faster signal dissipation than accumulation. This is different from what is observed for another PM-localized protein Sro7 in (C). (G) Collected data of number of molecules per vesicle of various components measured both in this study and other studies from our lab. *, p≤0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Tomato-Myo2 marker can be seen on GFP-Sec4 marked vesicles in both the mother and bud. (B) Myo2 departs secretory vesicles just over 2 s before vesicle fusion on average, but this time varies widely.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** All n≥50 events, analyzed blind. To minimize the number of comparisons performed, these data were tested for differences among the group via Kruskal-Wallis and only the indicated post-hoc tests were performed, with corrections. See methods for additional details. **, p≤0.005; ***, p≤0.001.
 
 Three additional exocytic components, Sro7, Mso1, and Sec1, were found to exclusively localize to puncta at the plasma membrane. Sro7 is a nonessential protein involved in polarity maintenance and secretion that directly binds and regulates the soluble SNAP-25 homolog, Sec9 (Hattendorf et al., 2007; Lehman et al., 1999). Earlier studies have suggested that Sro7 localizes broadly to the plasma membrane, however, this was shown via immunofluorescence following 2µ overexpression (Lehman et al., 1999). Imaging of Sro7-mNG expressed from its own promoter, shows that Sro7 does, indeed, localize to the plasma membrane, however, it does so in a polarized and punctate pattern similar to tethered vesicle localization (Figure 5B). The median longevity of Sro7 puncta was approximately 3.4 s (mean, 3.8 s; Figure 5A).
 
@@ -81,13 +266,27 @@ None of the Sro7 signal appeared to localize to diffusive or actively transporte
 
 Sec1, the SM (Sec1-Munc18) family protein responsible for directing secretory vesicle SNARE assembly, has primarily been visualized at low spatiotemporal resolution or via BiFC (Carr et al., 1999; Kustermann et al., 2017; Weber et al., 2010). Here, we visualized Sec1-mNG (Figure 5E, Video 4) and found the shortest localization timing of any exocytic component examined, with Sec1 puncta longevity having a median time of 2.1 s (mean, 2.3 s; Figure 5A). Interestingly, unlike Sro7, Sec1 arrival and departure times were different, with the accumulation of signal taking slightly longer than its dissipation following peak intensity (Figure 5F). This is potentially consistent with Sec1 functioning at the end of vesicle tethering, rapidly disappearing around the moment of membrane fusion. Mso1, a small nonessential protein tightly associated with Sec1 and suggested to be an effector of Sec4, was found to have a similarly short lifetime, not significantly different from Sec1 (median 2.5 s, mean 2.6 s; Figure 5A; Weber et al., 2010; Weber-Boyvat et al., 2013).
 
+![Video 4.](https://cdn.elifesciences.org/articles/78750/elife-78750-video4.mp4.jpg)
+
+**Video 4.:** Six planes were captured with 50ms exposure times, resulting in 350ms per timepoint. For ease of visibility, video is shown using a two-frame rolling signal average. Video is played back at 4 x capture speed.
+
 To estimate the relative number of molecules associated with secretory vesicles, we determined the maximum fluorescence intensity, compared with the known standard Cse4-mNG (Lawrimore et al., 2011), of several components which had not been previously quantified, and added it to data from previous publications (Figure 5G). The exocyst complex has previously been reported to localize with approximately 15 complexes per vesicle (Picco et al., 2017) and this analysis, while done utilizing a different technique and different fluorescent tags, showed roughly similar results (26±9 and 33±11 respectively). About 23±9 molecules of Sec2 could be seen on vesicles during transport. Finally, few copies of Sro7 (20±8) and Sec1 (14±5) were found to localize to their respective membrane puncta in the bud.
 
-## Constructing a timeline
+### Constructing a timeline
 
 Having measured the timing of various components individually, we next sought to correlate these timings into a cohesive timeline of events from initial tethering to fusion. This endeavor was a complex one. Most of the proteins examined have a low number of molecules associated with each tethering event, so ensuring sufficient fluorescent intensity for meaningful detection of multiple markers, each expressed at endogenous levels, while maintaining a reasonable imaging frequency, was challenging. This was further complicated by synthetic negative genetic interactions encountered between some fluorescently-tagged protein pairs (such as diminished growth or perturbed protein localizations compared to singly-tagged strains), potentially due to induced steric clashes. Additionally, even the most abundant vesicular protein, Sec4, was not bright enough for our experiments when tagged heterozygously with mScarlet, the brightest currently available red fluorescent protein.
 
 Unfortunately, GFP-Sec4 paired poorly with our best red vesicle marker Exocyst-3x-mScarlet, with tethering time as measured by GFP-Sec4 alone in this strain being somewhat elongated (Figure 6—figure supplement 1). However, even in this strain we can see that Sec4 and the exocyst depart from exocytic sites around the same time (Figure 6A). Fortunately, Exocyst-3x-mScarlet was able to be successfully utilized in combination with several other tagged components with minimal detriment. Further, since several components (Sec2, Myo2, Smy1, and the exocyst itself) are transported to the tethering site on the vesicle, alignment of loss of these components to the moment of tethering is easy, for example tracking the loss of a Tomato-Myo2-marker compared to GFP-Sec4, confirms that Myo2 begins dissociating shortly after the start of tethering (Figure 6B; Figure 5—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig6-v2.jpg)
+
+**Figure 6.:** (A) Single example of vesicle fusion showing near simultaneous loss of Sec4 signal and the exocyst in GFP-Sec4/Sec4 Exocyst-3x- mScarlet. (B) Averaging of several Sec4 vesicle tethering events shows that on average Myo2 begins dissociating from the vesicle around the start of tethering. (C) Internally tagged Rho3-imNG on the plasma membrane concentrates briefly after Exocyst-3x-mScarlet vesicle tethering. (D) Averaging several vesicle tethering events as in C illustrates that Rho3-imNG membrane intensity rises with Exocyst-3x-mScarlet arrival and peaks ~1 s after vesicle tethering. Aligned by visual start of tethering. (E) Averaging several Exocyst-3x-mScarlet vesicle tethering events shows that Sro7-mNG localization to vesicles peaks 3–4 s after tethering. Aligned by visual start of tethering. (F) Not all Sro7-mNG puncta clearly colocalize with exocyst- marked secretory vesicles. The fraction of Sro7-mNG puncta visually colocalized with the exocyst in still images was manually counted for >10 cells across three biological replicates. Mean ± SD. (G) Averaging of several vesicle tethering events shows colocalization of Sec1-mNG and Exoycst-3x-mScarlet with Sec1 signal peaking around the moment of exocyst loss. Aligned by moment of peak Sec1 intensity. (H) The start of Smy1- mScarlet loss from vesicles occurs approximately 5 s before Sec1-mNG peak. Aligned by moment of peak Sec1 intensity. (I) Timeline of events from secretory vesicle formation to plasma membrane fusion. Timing of appearance and disappearance of proteins in this timeline is based on the individual component data (where available) and aligned with the dual component imaging data.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Arrowheads indicate transient patches/puncta of increased Rho3 intensity.
 
 One of the first non-vesicular components to colocalize with tethered vesicles after their arrival to the plasma membrane is Rho3. Although Rho3 plays an integral role in vesicle tethering, it has not been shown to be present on constitutive secretory vesicles themselves (Forsmark et al., 2011; Robinson et al., 1999). Rather, in wildtype cells, Rho3 is broadly resident on the plasma membrane with transient bud-localized patches of increased concentration (Figure 6—figure supplement 2). Rho3 was visualized with a recently developed internal-mNG (imNG) tag and compared to the arrival of vesicles marked by Exocyst-3x-mScarlet (Figure 6C; Gingras et al., 2020). Alignment of multiple such events illustrates that Rho3 peaks at sites of tethered vesicles about 1.5 s after tethering (Figure 6D).
 
@@ -97,11 +296,19 @@ Alignment of several Sec1 puncta co-imaged with Exocyst-3x-mScarlet showed that 
 
 Together, we can generate a timeline of events from initial secretory vesicle arrival and tethering to terminal fusion with the plasma-membrane (Figure 6I). The data paint a picture where secretory vesicles are delivered to the bud tip along actin cables and tethering is aided by the directive force of Myo2 as loss of actin cables extends tethering time. Shortly after arrival, the Sec4 GEF, Sec2, dissociates from the vesicle, followed closely by release of Myo2 and its cofactor Smy1. During this period, Rho3 on the plasma-membrane begins to associate with the tethered vesicle, likely enforcing tethering through its interactions with exocyst (Adamo et al., 1999; Robinson et al., 1999). Once the exocyst is activated and adopts an “open” conformation thanks to interactions with Rho proteins and the membrane itself (Rossi et al., 2020), Sro7 is recruited to the putative site of exocytosis by interactions with newly unoccupied Sec4:GTP molecules on the vesicle and the exocyst itself. Finally, with the chaperoned recruitment of Sec9 by Sro7, Sec1/Mso1 begins to concentrate around the vesicle, aided by direct interactions with Sec6 of the exocyst (Morgera et al., 2012). Sec1 then templates and stabilizes trans-SNARE complex assembly before rapid fusion, dissociation of the exocyst, and eventual extraction of Sec4 from the plasma membrane.
 
-## Tether to fusion time is remarkably robust
+### Tether to fusion time is remarkably robust
 
 With a newly defined timing from secretory vesicle tethering to fusion, we wished to identify which components regulated this timing by examining how the reduction or over-expression of various components affected tethering time. To accomplish this, individual components were either overexpressed via multicopy 2µ plasmids or deleted from the genome (heterozygously for essential proteins, homozygously for nonessential). Surprisingly, limitation or overexpression of few proteins appeared to significantly alter vesicle tether-to-fusion time.
 
 The mechanics of vesicle fusion is driven by the SNARE proteins, schematically shown in Figure 7A, so we first examined the effect of varying their levels on tethering time. Loss of the plasma membrane SNAREs Sso2 or heterozygous reduction in the functionally redundant Sso1, resulted in a longer tethering time, as did the heterozygous reduction of Sec9. Heterozygous reduction in the vesicle SNARE Snc2, which is functionally redundant with Snc1, had little effect (homozygous loss of Snc2 results in vesicle accumulation which precluded measurement of tethering time). While SNARE limitation had a clear detrimental effect on tether-to-fusion time, over-expression of either Snc2, Sec9, or Sso2 had a consistently minor, but not significant, effect of lowering tether-to-fusion time (Figure 7B). Thus, the role of SNAREs appears to be largely regulated by mass action, with their wildtype levels in modest excess.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig7-v2.jpg)
+
+**Figure 7.:** (A) Expanded summary diagram of exocytic SNARE localization. The cytosolic SNARE Sec9 is shown bound to Sro7. (B) SNARE limitation significantly elongates vesicle tether-to-fusion time, while overexpression has the minimal, but statistically insignificant effect of decreasing tether-to-fusion time. Median ±95%CI. (C) Overexpression of Sec2, Msb3 (or heterozygous deletion of Sec2) has no significant effect on secretory vesicle tether-to-fusion time. Mean ±95% CI. (D) In msb3∆∆ msb4∆ diploid cells, all components measured, except Sec2, remain significantly longer on tethered vesicles/plasma- membrane. All but Sec4 were homozygously tagged with mNG. Individual comparisons performed via Mann- Whitney test. Median ±95% CI. (E) Overexpression or heterozygous deletion of Rho3 has no significant effect on secretory vesicle tether-to-fusion time in the bud, however, aberrant, longer lived vesicle tethering events could be found in the mother cell when Rho3 was overexpressed. Mean ±95%CI. (F) Overexpression of Sro7 significantly elongates vesicle tether-to-fusion time. Mean ±95% CI. All panels: Wildype(+EV) shown for visual clarity. All overexpressions were compared to a relevant empty vector control, while deletions were compared the prior wildtype vesicle tethering data. See Figure 7—figure supplement 1 for complete data and methods for more details. *, p≤0.05; **, p≤0.005; ***, p≤0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** All n>40 events (average n=72 events) analyzed blind. To minimize the number of comparisons performed, these data were tested for differences among the shown groups via Kruskal-Wallis tests and then corrected post-hoc tests were performed comparing each experimental condition to the indicated control. Only significant results are indicated. All Median ±95% CI. Dotted vertical line from each Wildtype/control shown. See Materials and methods for additional details. *, p≤0.05; **, p≤0.005; ***, p≤0.001.
 
 Next, we examined proteins that regulate the level of active Sec4, the vesicle-bound Rab GEF Sec2, and the plasma membrane bound Rab GAP Msb3. While Msb3 deletion was shown to elongate vesicle tethering time (see Figure 4A), its overexpression had no such clear effect. Neither did overexpression nor heterozygous reduction of Sec2 (Figure 7C). It is surprising that over-expression of Sec2, which should elevate Sec4:GTP on vesicles, has no effect on tethering, whereas loss of Msb3 (msb3∆/msb3∆), that should also elevate Sec4:GTP, elongates tethering. To see where in the time-line this extension of tethering occurred, we examined the duration of individual components in msb3∆/msb3∆ cells compared with wildtype. This reveals that the rapid release of Sec2 from secretory vesicles after tethering is unchanged, whereas loss of Myo2 and the exocyst is delayed and the duration of Sro7 and Sec1 is extended (Figure 7D). Thus, reducing the hydrolysis rate of Sec4:GTP is uncoupled from the release of Sec2, but affects all downstream events.
 
@@ -109,9 +316,23 @@ Rho3, which likely plays an important role in the initial establishment of tethe
 
 Overexpression of another key Rho protein, Cdc42, as well as other regulatory components also had no significant effect on tethering time (Figure 7—figure supplement 1B, C). Notably, under the stringent statistical tests required for the many comparisons made in this study, the only protein for which overexpression resulted in a statistically significant lower vesicle tether-to-fusion time was Myo2. Together with the observation that loss of actin cables lengthens tethering times (Figure 3C), this result suggests that F-actin and Myo2 participate in the establishment of productive tethering (Figure 7—figure supplement 1B).
 
-## Mso1 works with Sec1 to aid Sec1 localization and facilitate efficient exocytosis
+### Mso1 works with Sec1 to aid Sec1 localization and facilitate efficient exocytosis
 
 Overexpression of Sec1 resulted in a slightly elongated tether-to-fusion time (Figure 8A). The underlying mechanism of this increase may be similar to that of the response to Sro7 overexpression: Sec1 has little to no affinity for single SNAREs and binary SNARE complexes under normal conditions, but excess Sec1 may stabilize non-productive Sec1-SNARE complexes (Carr et al., 1999; Hashizume et al., 2009; Togneri et al., 2006). Heterozygous deletion of Sec1 had no clear effect on tether-to-fusion time. Unsurprisingly, overexpression of the nonessential Mso1 protein also had no measurable effect, however, a strain lacking this same protein exhibited one of the largest observed increases in tether-to-fusion time (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig8-v2.jpg)
+
+**Figure 8.:** (A) Sec1 overexpression and deletion of mso1 significantly elongate vesicle tether-to-fusion time, while heterozygous deletion of Sec1 has little effect. *, p≤0.05; ***, p≤0.001. (B) Two potential models for elongation of vesicle tethering induced by loss of mso1. Mean ±95%CI. (C) Sec1-mNG puncta have similar longevity to wildtype in mso1∆ cells. Mean ± SD. (D) The number of Sec1 molecules per membrane punctum is unchanged in mso1∆ cells. One-tailed unpaired t-test, n≥10, p=0.1. (E) Broad plasma-membrane association of Sec1 is diminished in mid-sized mso1∆ cells. (F) Schematic diagram of Mso1 N-terminal amphipathic helix and Sec1-Binding Motif (SBM) and the sequence of a portion of the Sec1 C-terminal tail. (G) The amphipathic alpha-helical N- terminus of Mso1 (aa1-37) and the C-terminus of Sec1 (aa670-724) both aid in plasma membrane localization. (H) Tetrad dissections show that loss of both the Mso1 N-terminus (aa1-37) and the last 20 residues of the Sec1 C-terminus is synthetically lethal. Five representative dissections are shown. See Figure 8—figure supplement 1 for controls. (I) With initial localization aid via Mso1, Sec1 templates the assembly of trans-SNARE complexes. A theoretical, but likely, intermediate state with Sec1 simultaneously bound to Sso1/2 and Snc1/2 is shown (Baker et al., 2015). Mso1’s N-terminus binds to the plasma membrane and interacts with Sec1 through its Sec1-binding motif (*) while Sec1 also interacts directly with the plasma membrane through its poly-basic tail. Loss of both of these PM-binding motifs is lethal. Mso1 may also contribute through reported interactions with the SNAREs and its C-terminus (C’) may interact with Sec4 to aid in recruitment of the complex to tethered vesicles (Weber et al., 2010; Weber-Boyvat et al., 2011).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Positively charged residues (blue) are highly concentrated in the Sec1-tail and (B) shown in the context of the entire alignment.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/78750/elife-78750-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) The Sec1-binding region represents the primary conserved motif of Mso1 proteins while the rest of the protein (B) varies more between species.
 
 As Mso1 forms a tight complex with Sec1 to aid Sec1 in SNARE assembly, we considered two models for how the loss of Mso1 could affect Sec1 and, in turn, vesicle fusion (Figure 8B). In one scenario, loss of Mso1 may delay the arrival of Sec1 to the tethered vesicle but, once recruited, Sec1 may take the same amount of time to perform its essential functions. In the second scenario, if Mso1 participates in Sec1’s essential function, its absence could cause Sec1 to be prolonged at the tethered vesicle, thereby delaying fusion. A defining feature of these two models is the longevity of Sec1 puncta on the plasma membrane. When we examined the longevity of Sec1-mNG in an mso1 null, we saw no such change in the time from Sec1 punctum appearance to disappearance (Figure 8C). Nor were there any apparent changes in the number of Sec1 molecules per punctum in the mso1 null strain (Figure 8D). We did, however, find that broad plasma membrane localization of Sec1 (outside of discrete puncta) was diminished in the mso1∆ strain, especially for cells with midsized buds, in which vesicle tethering times were normally measured (Figure 8E).
 
@@ -155,40 +376,40 @@ Our timeline and relative abundance of participating components involved in the 
 
 ## Materials and methods
 
-## Yeast strains, growth, and transformation
+### Yeast strains, growth, and transformation
 
 Yeast strains used in this study are listed in Supplementary file 1. Standard media and techniques for yeast growing and transformation were used. Gene deletion and C-terminal chromosomal tagging was performed using common PCR-mediated techniques (Longtine et al., 1998). See Supplementary file 1 for oligos used for amplification of integration cassettes. Tetrad dissections were performed using an MSM-400 dissection scope (Singer Instruments, Somerset, United Kingdom) with 25 µm needle following a one-week incubation at 26 °C in standard sporulation media (1% yeast extract, 1% potassium acetate, and 0.05% glucose). Strains are available upon request to the corresponding authors.
 
-## DNA constructs
+### DNA constructs
 
 Plasmids used in this study are listed in Supplementary file 1. The integrating plasmid pRS306-GFP-Sec4 used to tag Sec4 has been previously described (Donovan and Bretscher, 2012). The Rho3-imNG constructs as well as the yeast codon optimized mScarlet were described previously (Gingras et al., 2020). N-terminal tags of Ypt31 and Ypt32 were amplified from plasmids containing a selectable marker, the relevant promoter, and associated tag via oligos containing additional genomic homology and then integrated via transformation. For construction of pRS415-pCYC100-Tomato-mouseCC-Myo2(Cargo Binding Domain)-tCYC, first codon-optimized sequence (See Supplementary file 1) coding for 156 residues of the coiled-coil region of Mouse Myosin 5b was synthesized by IDT (Coralville, Iowa). This fragment was then amplified with oligos (RMG744/745) containing homology to the sequence flanking the endogenous Myo2 coiled-coil and recombined into a plasmid containing the Myo2 locus. From this intermediate plasmid, the coiled-coil through the Myo2 cargo-binding domain was amplified (oligos RMG761/762), one copy of Tomato was amplified (RMG759/760), and both were Gibson cloned into a linearized pRS415-pCYC100-(MCS)-tCYC. Tomato was later replaced with mNG via recombination (oligos RMG870/871) and the whole cassette was restriction cloned into pRS303 for genomic insertion into the His3 locus. All plasmid sequences are available upon request to the corresponding authors.
 
-## Construction of Exocyst-3x-mNG/mScarlet strains
+### Construction of Exocyst-3x-mNG/mScarlet strains
 
 During the initial planning of the Exocyst-3x-tag strains, Sec10 and Sec15 were chosen first. For issues of sterics, we initially excluded Sec5 and Exo70 from a multi-tag complex. Sec6 was cautiously excluded due to important interactions with SNAREs and Sec1 which occur on the C-terminal portion of the protein (the exact residues required for these interactions is unknown). Exo84 became our third tagged protein, although it is possible that Sec3 or Sec8 could have worked equally as good while also providing a marker for the other exocyst subassembly. As the goal of these strains was to provide an additional marker suitable two-color imaging, we did not feel this was necessary to take into consideration.
 
 Haploid cells containing C-terminal endogenously tagged Exo84-mNG::Ura3 and Sec15-mNG::Ura3 were mated and sporulated to obtain a strain with both tags. The Exo84-mNG::Ura3 Sec15-mNG::Ura3 haploid was then mated with Sec10-mNG::Ura3 and sporulated to obtain a strain with all three tags. A guide RNA was created to target the mNG sequence 20 bps from the linker region with BplI cut sites at both 5’ and 3’ ends. After ligating the gDNA oligos, the guide was digested with BplI and cloned into the CRISPR-Cas9 vector bRA90 which expressed this gRNA and the CRISPR machinery (Anand et al., 2017). A separate repair mScarlet::NatMX was made with 40bps homologous sequences to the linker region and the beginning of mNG and the last 40bps of homology to Ura3. The bRA90 vector (200 ng) and the repair (1 ug) was transformed into the Exo84-mNG::Ura3 Sec15-mNG::Ura3 Sec10-mNG::Ura3 haploid cells. Cells were plated on NatMX -LEU MSG plates and grown at 26 °C for 1 week. Transformants were screened for red fluorescence and absence of green and positive clones were selected for further experiments. The bRA90 plasmid was eliminated from the cells by repeatedly plating them on NatMX plates until the LEU plasmid was lost. See Supplementary file 1 for oligos used for gRNA and template creation.
 
-## Microscopy techniques
+### Microscopy techniques
 
 Most micrographs in this study were acquired on a CSU-X spinning-disk confocal microscopy system (Yokogawa, Tokyo, Japan; 3i Intelligent Imaging Innovations, Denver, Colorado) with a DMI6000B microscope (Leica Microsystems, Wetzlar, Germany), 100×1.45 NA objective (Leica), and an Evolve 512Delta EM-CCD (Teledyne Photometrics, Tucson, Arizona) with a 2×magnifying lens (Yokogawa) resulting in 0.084 µm/pixel. A few images (Supplement 2.1 and Figure 3B) were captured instead on a Flash 4.0v2 CMOS (Hamamatsu, Hamamatsu City, Japan) with a final resolution of 0.065 µm/pixel. For live-cell imaging, cells in mid–log phase were adhered to a glass-bottomed dish (CellVis, Mountain View, California) coated with concanavalin A (EY laboratories, San Mateo, California) and washed with the respective dropout or complete cell medium. Unless otherwise stated, imaging of single-channel fluorescence was performed via SlideBook 6.0 ‘Rapid 4D’ capture, with sustained laser intensity, constant piezo stage movement, and video frames streamed to RAM, with 25–50ms exposure per plane. As these videos were captured with the bottom plane of the volume coincident with the bottom of the cell, the result was a 6-plane, 1.5 µm volume of the bud, captured with 175–333ms per time-point. For two-channel microscopy, single planes focused on the bottom or center of the cell were captured in rapid alternation with 75–100ms exposure per channel. Simultaneous capture of two colors was not possible on our system, as we lack a beam splitter. These alternating images were later aligned for display in figures.
 
 The ‘Rapid 4D’ live cell imaging, described above, was performed with the EM-CCD, despite the need to use a 2 x magnifier to compensate for the large pixel size of the detector. The EM-CCD used provides a global shutter and thus simultaneous capture of the field to be imaged. With a continuously moving stage, this means each subsequent image on this camera represents a discrete position along the vertical axis which could subsequently be assembled into a 3D volume with the knowledge of stage position at each timepoint (recorded as piezo voltage during capture). As our CMOS utilizes a rolling shutter (with pixels first being read linearly from the center of the image outward) an image taken with continuous stage movement would result in single frames containing information from several vertical positions, significantly complicating volumetric reconstruction.
 
-## Video and image analysis
+### Video and image analysis
 
 Molecule counting was performed by comparison to Cse4-mNG puncta intensity at anaphase, as described previously (Donovan and Bretscher, 2012). All timings were performed on blinded image data with file names randomized with a freely available Perl script (Salter, 2016). All blinded tethering and longevity captures were analyzed using 3D projection in SlideBook 6.0 when possible. About 50 events (from videos captured on at least three separate days) were quantified per component or genotype. Generally, videos were played in reverse to identify events that concluded within the capture time then, once single events were confidently identified (based on lack of nearby fluorescence or component movement), the tethering start point was determined. Tethering start was defined as the first frame in which a GFP-Sec4 vesicle (or another component residing on a vesicle) came to a full stop at a location not more than one apparent vesicle diameter from where it eventually fused (or signal disappeared). Fusion (or disappearance) was defined as the last frame in which signal could be positively identified at the tethering location.
 
 Plots of signal over time for Sro7 and Sec1 (Figure 5D and F) were generated by extracting punctum intensity of events from sum projections of the bottom half of buds in FIJI (captured as in Figure 2B, videos blinded). After measuring the intensity over time for many puncta, several events were grouped with apparent lengths of one standard deviation of the mean longevity (of the events measured this way). These intensity profiles were then aligned manually by apparent moment of peak intensity, normalized to peak, and averaged in Prism 9 (GraphPad Software, San Diego, California). The dual channel intensity plots in Figure 6 were similarly generated, except the source videos were single plane captures (described above) and alignment of similarly timed events was performed based on either the apparent start of tethering (for combinations with Sec4 or Exocyst) or peak Sec1 intensity.
 
-## Latrunculin B (LatB) experiment
+### Latrunculin B (LatB) experiment
 
 Experiments assessing the effects of actin cable loss on tethering were performed with addition of latrunculin directly to a dish containing a small volume of cells on the microscope stage to permit rapid imaging of subsequent timepoints. Briefly, 50 µL of LatB in ethanol (Cayman Chemical, Ann Arbor, Michigan) was evaporated under nitrogen and resuspended in an equivalent volume of synthetic complete media. To facilitate rapid diffusion, 8 µL of this resuspension was added directly to 92 µL of cells attached to a dish as above, for a final concentration of 100 µM LatB. Under these conditions most actin cables are lost within the first minute.
 
-## Fluorescence loss in photobleaching (FLIP) experiment
+### Fluorescence loss in photobleaching (FLIP) experiment
 
 For the FLIP experiment with Sec3 and Sec5, since individual vesicles did not need to be distinguishable GFP-fusions were chosen. FLIPs were performed essentially as done in prior studies (Donovan and Bretscher, 2015b). Briefly, using a 3i Vector photobleaching system, the back half of the mother cell was photobleached once every 2 s with simultaneous monitoring of bud intensity. Pre-photobleach intensity of signal within the bud was set to 1.0, with background fluorescence subtraction, and further photobleaching normalization to a nearby non-targeted cell. These measurements were later averaged and depicted ± SD.
 
-## Statistics and presentation
+### Statistics and presentation
 
 Graphs and statistical analyses were generated in Prism 9. Except where stated, non-parametric tests were used due to non-normality of some data sets. Paired t-tests were used to compare the relative Ypt32/Ypt31 TGN intensities between mother cells and buds (Figure 1—figure supplement 4C, D). For all single component timings (compiled in Figure 5—figure supplement 2), general differences were first assessed via Kruskal-Wallace non-parametric ANOVA, followed by the select Dunn’s corrected post-hoc tests shown. Similarly, vesicle tether-to-fusion timings in deletions and overexpressions were grouped (as shown in Figure 7—figure supplement 1), with deletions being compared to the wildtype vesicle tether-to-fusion times first shown in Figure 2C, and each overexpression being compared to the relevant 2 µm empty vector control. In this case, corrected post-hoc tests were performed between the relevant control and each experimental condition only (not between any independent overexpression or deletion conditions). Due to non-normality, comparisons for individual component timings in wildtype versus in msb3∆ cells were performed via Mann-Whitney test (Figure 7D). Exact sample sizes for all measurements not otherwise explicitly stated in figures are shown in Supplementary file 1e, values measured are shown in Supplementary file 1f. Fungal Sec1 and Mso1 sequences were gathered from UniProt (Bateman et al., 2021), aligned via Clustal Omega (Sievers et al., 2011), and colorized with JalviewJS hosted on MyHits (Pagni et al., 2007; Waterhouse et al., 2009). Figures were assembled in Illustrator (Adobe).

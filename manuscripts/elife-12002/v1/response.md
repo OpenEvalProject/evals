@@ -60,13 +60,9 @@ We show that the regimen of 4EGI-1 administration (10 μg, i.t. daily for 3 days
 
 Reviewer #1:[…] I am not clear why inflammation or capsaicin induced thermal and mechanical sensitivity were not tested, or indeed a neuropathic or surgical pain model.
 
-We have tested both chronic inflammation-induced pain (in CFA model), and neuropathic pain (in CCI model) in Eif4ebp1-/- mice (Author response image 1, Author response image 2).10.7554/eLife.12002.012Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.12002.012
+We have tested both chronic inflammation-induced pain (in CFA model), and neuropathic pain (in CCI model) in Eif4ebp1-/- mice (Author response image 1, Author response image 2).10.7554/eLife.12002.012Author response image 1.
 
-DOI: http://dx.doi.org/10.7554/eLife.12002.012
-
-Our data show no differences in thermal hyperalgesia in CFA model. In CFA and neuropathic CCI models, both WT and Eif4ebp1-/- mice develop mechanical allodynia, however since at the baseline prior to CFA injection or surgeries the mechanical sensitivity is greatly increased in Eif4ebp1-/- mice, we feel that this constitutes a confounding factor that greatly complicates making meaningful conclusions regarding inflammation/injury-induced allodynia. Therefore, we hesitate to include these data in the manuscript. However, if the editor and reviewers deem it necessary to include these results, we will incorporate them into the new version with the caveat described above.10.7554/eLife.12002.013Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.12002.013
-
-DOI: http://dx.doi.org/10.7554/eLife.12002.013
+Our data show no differences in thermal hyperalgesia in CFA model. In CFA and neuropathic CCI models, both WT and Eif4ebp1-/- mice develop mechanical allodynia, however since at the baseline prior to CFA injection or surgeries the mechanical sensitivity is greatly increased in Eif4ebp1-/- mice, we feel that this constitutes a confounding factor that greatly complicates making meaningful conclusions regarding inflammation/injury-induced allodynia. Therefore, we hesitate to include these data in the manuscript. However, if the editor and reviewers deem it necessary to include these results, we will incorporate them into the new version with the caveat described above.10.7554/eLife.12002.013Author response image 2.
 
 There are also notable omissions in the reference list.
 

@@ -33,7 +33,7 @@ While further characterising the two-step secretion mechanism of the Aat system,
 
 ## Results
 
-## Distribution of the Aat system
+### Distribution of the Aat system
 
 The Aat system was first identified in EAEC, where it corresponds to the molecular probe (CVD432) used to define this E. coli pathovar (Baudry et al., 1990; Nishi et al., 2003). In order to determine whether the Aat system was more widespread, each of the Aat proteins from ETEC H0407 was used to search the non-redundant protein sequence database using repetitive iterations of the PSI-BLAST algorithm. The full Aat system and an Aap or CexE homolog was identified in 826 separate nucleotide accessions (Supplementary file 1). This revealed that the Aat system is distributed more widely than initially anticipated and is encoded in pathogens with diverse mechanisms of virulence such as ETEC, EAEC, enteropathogenic E. coli, Shiga-toxin producing E. coli, Shigella sp., Salmonella enterica, Citrobacter rodentium, Providencia alcalifaciens, and Yersinia entercolitica (Crossman et al., 2010; Petty et al., 2010; Rivas et al., 2020).
 
@@ -41,33 +41,63 @@ To understand the conservation of the Aat system, the organisation of the aat op
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig1-v2.jpg)
 
-**Figure 1.:** Unique Aat amino acid sequences were detected using PSI-BLAST. These sequences were used to identify the strains that encoded them in the NCBI identical protein groups. As the aat genes were present on contigs of whole genome sequencing projects, it was not possible to assess if a strain encoded a gene on the chromosome or plasmid. Instead, contigs were used to identify the complete Aat system. This analysis does not include strains that might encode the aat genes or aap/cexE on a separate genomic element. However, a total of 827 complete Aat systems were identified in the same nucleotide accession. The positions of these genes were used to assess the organisation of the aat operon. From this assessment five different classes of aat operon organisation were defined.  Figure 1—source data 1.aatA gene positions.  Figure 1—source data 2.aatB gene positions.  Figure 1—source data 3.aatC gene positions.  Figure 1—source data 4.aatD gene positions.  Figure 1—source data 5.aatP gene positions.  Figure 1—source data 6.aap or cexE gene positions.  Figure 1—source data 7.  Figure 1—source data 8.
+**Figure 1.:** Unique Aat amino acid sequences were detected using PSI-BLAST. These sequences were used to identify the strains that encoded them in the NCBI identical protein groups. As the aat genes were present on contigs of whole genome sequencing projects, it was not possible to assess if a strain encoded a gene on the chromosome or plasmid. Instead, contigs were used to identify the complete Aat system. This analysis does not include strains that might encode the aat genes or aap/cexE on a separate genomic element. However, a total of 827 complete Aat systems were identified in the same nucleotide accession. The positions of these genes were used to assess the organisation of the aat operon. From this assessment five different classes of aat operon organisation were defined.
 
-## Aat-dependent secretion of CexE
+### Aat-dependent secretion of CexE
 
 To test whether all of the aat genes are required for CexE secretion, we constructed single gene deletion mutants of cexE and each aat gene in ETEC H10407 pCfaD. The pCfaD plasmid encodes the CfaD transcriptional activator under the control of an arabinose inducible promoter allowing constitutive expression of the CfaD-dependent cexE and the aat genes in the presence of arabinose (Hodson et al., 2017; Pilonieta et al., 2007). SDS-PAGE analysis of culture supernatant fractions collected from ETEC H10407 pCfaD revealed a protein with an apparent molecular mass of 11.8 kDa that could be detected by western blotting with CexE-specific polyclonal antibodies (Figure 2A). In contradistinction to the parent strain, no protein was detected in the culture supernatant fractions derived from cultures of the ETEC H10407 pCfaD aat or cexE mutants (Figure 2A). However, to ensure that the lack of CexE in the culture supernatant was not due to the lack of CexE production, but rather a result of an inability to secrete CexE, the presence of CexE in whole-cell lysates was determined (Figure 2B). CexE was detected by western blotting with CexE-specific antibodies in whole-cell lysates of ETEC H10407 pCfaD and all aat mutants. In contrast, CexE could not be detected in the cexE null mutant (Figure 2). From these data we conclude that the Aat system is essential for CexE secretion.
 
-## Post-translational modification of Aat substrate molecules
+![Figure 2.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig2-v2.jpg)
+
+**Figure 2.:** (A) Culture supernatant of ETEC H10407 and aat mutants harbouring pCfaD grown in lysogeny broth (LB) supplemented with L-arabinose. Cells were removed from the culture supernatant and remaining protein precipitated with trichloroacetic acid. Protein samples were separated by Tris-tricine SDS-PAGE and stained with Coomassie or transferred to nitrocellulose for western blotting with polyclonal antibodies against CexE. (B) Whole-cell lysates of the aat mutants and parental strain separated by Tris-tricine SDS-PAGE. (C) Whole-cell lysates of ETEC H10407 grown in LB with or without azide. (D) Whole-cell lysates of EAEC 042, aap, aatD, and aatD complemented strains grown in DMEM (Dulbecco's Modified Eagle Medium) high glucose. The positions of uCexE, mCexE, uAap, mAap, and preCexE are indicated as appropriate. CexE and Aap were detected by western blotting (α-CexE and α-Aap, respectively) and RNA polymerase (α-RNAP) was included as a loading control where appropriate.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig2-figsupp1-v2.jpg)
+
+### Post-translational modification of Aat substrate molecules
 
 Unexpectedly, when the whole-cell lysates of ETEC H10407 pCfaD and its isogenic aat mutants were examined by western blotting, CexE appeared as two bands in the parental strain and each of the aat mutants except for aatD (Figure 2B). The apparent molecular mass of the two CexE subtypes was determined from the migration of the different protein species on an SDS-PAGE gel relative to the molecular weight ladder (Figure 2—figure supplement 1). The upper band had an apparent molecular mass of 12.7 kDa (uCexE), while the lower band (mCexE) had an apparent molecular mass of 11.8 kDa, which is consistent with the secreted form of CexE recovered from the supernatant fractions. As CexE is predicted to be exported into the periplasm by the Sec pathway (Pilonieta et al., 2007), the inefficient cleavage of a signal peptide could be responsible for the difference in the molecular mass of uCexE compared to mCexE. To investigate this, ETEC H10407 pCfaD was grown in the presence of sodium azide. Sodium azide inhibits SecA to prevent translocation of proteins across the inner membrane and subsequent cleavage of the signal peptide (Huie and Silhavy, 1995; Oliver et al., 1990). In the absence of sodium azide, the mCexE and uCexE forms could be detected in whole-cell lysates as observed previously (Figure 2B and C). However, in the presence of sodium azide, a protein (preCexE) with an apparent molecular mass of 13.2 kDa was detected (Figure 2C). These observations suggest that the difference in molecular mass between uCexE and mCexE was not due to inefficient cleavage of the signal peptide but was due to a post-translational event mediated by AatD.
 
 A size change in the CexE homolog Aap has not been reported before despite numerous investigations of the Aat system. To determine whether the migration of Aap was altered by AatD, the effect of an aatD deletion on the apparent size of Aap was investigated in EAEC 042. EAEC 042, an aap mutant, an aatD mutant, and an aatD mutant complemented with pJNW were grown in DMEM-high glucose (HG); the pJNW plasmid encodes the complete aat operon from EAEC 042. Whole-cell lysates of each strain were analysed by SDS-PAGE. As noted above for CexE, the deletion of aatD in EAEC 042 resulted in an apparent increase in size of Aap (Figure 2D). The size change of Aap in the aatD mutant could be restored to the wild-type size by complementation with the pJNW plasmid. From these data we conclude that AatD can modify Aap and CexE post-translationally and that this modification is required for secretion of the mature substrate molecule to the extracellular milieu.
 
-## Predicted functions of Aat components
+### Predicted functions of Aat components
 
 To assist our understanding of the contribution of each Aat component to the secretion of CexE, we constructed hidden Markov models (HMM) for individual Aat proteins. These were used to search the Uniprot database for distant homologs. In agreement with previous publications, AatA is a homolog of the trimeric OMP TolC (Figure 3—figure supplement 1) and AatB is a PAP (Figure 3—figure supplement 2), components associated with T1SS and drug efflux pumps (Nishi et al., 2003). In contrast, AatD was not homologous to any T1SS or efflux-associated proteins. Instead, AatD was homologous to apolipoprotein N-acyltransferase (Lnt), which is a member of the carbon-nitrogen hydrolase (C-N hydrolase) family (PF00795) required for bacterial lipoprotein acylation and transport via the Lol system (Figure 3A). Comparison of the C-N hydrolase domain of AatD with other members of PF00795 revealed that AatD forms a clade with Lnt suggesting that they are functionally related. The ATPase domain of AatC is part of a clade containing the ATPase domains of LolD, the ATPase subunit of the LolCDE lipoprotein transporter (Figure 3B). Similarly, AatP is more closely related to LolC and LolE than typical ABC transporters of the T1SS, such as HlyB (Figure 3C). The homology of AatP, AatC, and AatD to proteins of the Lol pathway suggests that the Aat system is a composite system of a T1SS and the Lol lipoprotein trafficking system.
 
-## AatD-mediated acylation of mCexE
+![Figure 3.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig3-v2.jpg)
+
+**Figure 3.:** Sequences were aligned using Clustal omega and the tree was calculated using RAxML. (A) The carbon-nitrogen(C-N) hydrolase domains of C-N hydrolase family seed sequences were aligned to the C-N hydrolase domains of AatD sequences from ETEC H10407, EAEC 042, Citrobacter rodentium ICC168, and Escherichia coli KTE75. (B) Phylogram of the ATPase domains of the pfam ABC transporters (PF00005) and AatC sequences. (C) Phylogram of type I secretion system (T1SS) ABC transporters, Lol ABC transporters, and AatP sequences.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The hidden Markov model (HMM) of AatA proteins was used to confirm AatA as a homolog of TolC and OMP proteins. Representative sequences of secretion-associated OMPs (AprF, CyaE, and TolC) and efflux-associated OMPs (CusC, OprM, CmeC, and NodT) were used to construct a phylogram. AatA is more closely related to the secretion-associated OMPs AprF and CyaE than the efflux-associated OMPs. TolC is a promiscuous protein that functions as the OMP for secretion and efflux systems. All phylograms were constructed using RAxML and drawn using iTOL.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The AatB hidden Markov model (HMM) identified it as a homolog of the PAPs. Representative sequences of PAPs involved in T1SS and efflux were used to construct a phylogenetic tree using RAxML. The resulting tree was drawn in iTOL. AatB clades with the T1SS PAP HlyD which is involved in haemolysin secretion instead of the efflux-associated PAPs of EmrA, MacA, AcrA, and CusB.
+
+### AatD-mediated acylation of mCexE
 
 As AatD is a homolog of the Lnt acyltransferase, we hypothesised that mCexE represents an acylated form of CexE. To test this hypothesis, we used 17-ODYA, an 18-carbon alkyne fatty acid that can be conjugated to an azide linked fluorescent molecule by a copper(I)-catalysed azide-alkyne cycloaddition (CuAAC) reaction to investigate CexE lipidation. The cexE gene was introduced into a cexE mutant or a cexE aatD double mutant on a plasmid termed pACYC-cexE-6His, which encodes cexE under the transcriptional control of its native promoter. This allowed the production of a C-terminally His-tagged variant of CexE. Both strains harbouring pACYC-cexE-6His were grown in the presence or absence of 17-ODYA. The bacterial lipoprotein YraP was included as a positive control. CexE and YraP were isolated from each culture by virtue of their C-terminal 6xHis-tag by using nickel affinity chromatography. The purified proteins were then linked to an azide derivative of Alexa Fluor 488 using a CuAAC reaction. After the CuAAC reaction, the CexE and YraP samples were separated by SDS-PAGE and fluorescence was measured (Figure 4). In the presence of AatD and 17-ODYA, CexE was fluorescently labelled; in the absence of either 17-ODYA or AatD, no fluorescence was observed. Moreover, only mCexE was labelled indicating that uCexE is an unacylated form of CexE; counterintuitively, the acylated form (mCexE) migrates faster on SDS-PAGE than the unacylated uCexE. Furthermore, only the acylated versions of Aap and CexE were present in the culture supernatant (Figure 4—figure supplement 1). As acylated proteins associate with membranes, we examined the cellular compartmentalisation of mCexE. ETEC H10407 pCfaD and isogenic aat mutants were grown in lysogeny broth (LB) supplemented with L-arabinose. Subsequently, cells were collected by centrifugation, lysed and the total membrane fraction was harvested by centrifugation. After separation by SDS-PAGE, only mCexE was detectable by western blotting in the membrane fraction of the parent strain and the aatPABC mutants; no mCexE could be detected in the membranes recovered from the aatD mutant (Figure 4—figure supplement 2). In contrast, both mCexE and uCexE could be detected in whole-cell lysates of ETEC H10407 pCfaD and only uCexE could be detected in whole-cell lysates of the aatD mutant. These data suggest that AatD is an acyltransferase that mediates post-translational modification of CexE by the addition of one or more acyl chains.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig4-v2.jpg)
+
+**Figure 4.:** His-tagged CexE was isolated from cexE or cexE aatD double mutants harbouring pACYC-cexE-6His grown in the presence or absence of 17-ODYA and separated by SDS-PAGE. An azide linked Alexa Fluor 488 was conjugated to the alkyne moiety present in 17-ODYA by CuAAC. The incorporation of 17-ODYA into the target protein was detected by fluorescence (green bands) and the image was overlaid on the image of the SDS-PAGE gel. A known lipoprotein YraP was used as a positive control.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** EAEC 042 and ETEC H10407 were grown in DMEM-high glucose (HG) or IMDM, respectively. After 2 hr of growth, 17-ODYA or an equal volume of DMSO was added. Cultures were grown for a further 3 hr. Triton X-100 was added to each culture to a final concentration of 0.1% for a final hour of growth. The culture supernatant was separated by centrifugation and filtered prior to TCA precipitation. Precipitated proteins were resuspended in 2% SDS. The incorporation of 17-ODYA into Aap and CexE was detected by CuAAC.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The membrane fraction of ETEC H10407 and aat mutant harbouring pCfaD were separated by SDS-PAGE. Transferred to nitrocellulose and probed for the cytoplasmic protein RNAP, lipoprotein NlpE, and CexE using protein-specific antibodies.
 
 To further determine whether AatD was necessary to mediate the acylation of mCexE, plasmids encoding AatD and CexE were introduced into the laboratory strain E. coli BL21(DE3), which does not encode any of the Aat proteins or Aap/CexE. E. coli BL21 was transformed with pET26b-cexE and pACYC-aatD or their respective empty vector controls pET26b and pACYCDuet-1. These strains were grown in LB and the production of AatD and CexE was induced by IPTG. The production of CexE was monitored via western blotting (Figure 5). CexE was not detected in strains that contained pET26b. uCexE was produced in the absence of AatD at the size expected for the unmodified form after cleavage of the signal sequence. However, when CexE and AatD were produced together, mCexE migrated further (Figure 5). These data suggest AatD was necessary for the modification of CexE.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig5-v2.jpg)
 
-**Figure 5.:** E. coli BL21(DE3). E. coli BL21(DE3) was transformed with pET26b, or pET26b-cexE and pACYCDuet-1 or pACYC-aatD. Cultures were grown in lysogeny broth (LB) and protein production was stimulated with isopropyl β-D-1-thiogalactopyranoside (IPTG). Whole-cell lysate samples were taken and separated by Tris-tricine SDS-PAGE. CexE was detected using a polyclonal antibody. RNAP was used as a loading control. The position of mCexE and uCexE is indicated.
+**Figure 5.:** E. coli BL21(DE3) was transformed with pET26b, or pET26b-cexE and pACYCDuet-1 or pACYC-aatD. Cultures were grown in lysogeny broth (LB) and protein production was stimulated with isopropyl β-D-1-thiogalactopyranoside (IPTG). Whole-cell lysate samples were taken and separated by Tris-tricine SDS-PAGE. CexE was detected using a polyclonal antibody. RNAP was used as a loading control. The position of mCexE and uCexE is indicated.
 
-## Catalytic residues of AatD
+### Catalytic residues of AatD
 
 The C-N hydrolase family of proteins have a known conserved catalytic triad, which in the case of Lnt is E267, K335, and C387. Another Lnt residue E343 helps to stabilise the catalytic site (Vidal-Ingigliardi et al., 2007). Mutation of any of these residues to alanine results in a loss of Lnt function (Gélis-Jeanvoine et al., 2015). To assess the conservation of the catalytic residues, the AatD sequence of EAEC 042 and ETEC H10407 and Lnt from E. coli MG1655 were aligned using Clustal Omega. Each of the residues associated with the catalytic site was conserved in both versions of AatD (Figure 6A). The C-N hydrolase catalytic triad is conserved in AatD: E217, K278, and C325. Also, Lnt E343 is conserved at position E286 in AatD. Further AatD sequences were identified using PSI-BLAST. These sequences were aligned and a WebLogo was produced for the regions flanking each of the catalytic residues; the four residues were 100% conserved in all AatD sequences identified. In addition, when a structure of AatD predicted by Phyre2 (Kelley et al., 2015) was compared to Lnt (PDB: 5N6L) (Wiktor et al., 2017), the four AatD residues (E217, K278, E286, and C325) were superimposed on the Lnt catalytic triad suggesting that these residues were required for acylation of CexE (Figure 6B and C). To test this hypothesis, pACYC-aatD derivatives encoding mutant derivatives of AatD with alanine substitutions at the conserved E217, K276, E286, or C325 were introduced into E. coli BL21(DE3) pET26b-cexE. Expression of AatD and CexE was induced by the addition of isopropyl β-D-1-thiogalactopyranoside (IPTG) during growth in LB. AatD production was detected via a C-terminal 6 His tag (Figure 6D) and the level of production was similar for the wild-type and mutant derivatives. As expected, mCexE was only present in the strain encoding the wild-type aatD sequence, whereas only unmodified uCexE was detected in mutants harbouring the E217A, K276A, E286A, or C325A (Figure 6D). These observations suggest that the mechanism of protein acylation by AatD and Lnt is similar and that AatD is necessary for the acylation event.
 
@@ -75,27 +105,39 @@ The C-N hydrolase family of proteins have a known conserved catalytic triad, whi
 
 **Figure 6.:** (A) AatD from EAEC 042 and ETEC H10407 were aligned with Lnt from Escherichia coli MG1655. AatD sequences identified by PSI-BLAST were aligned and used to create a WebLogo. The catalytic residues of the carbon-nitrogen (C-N) hydrolase family are highlighted. (B) The structure of Lnt compared to the predicted structure of ETEC H10407 AatD. The catalytic residues of Lnt and AatD are highlighted in orange. (C) Magnified view of the catalytic site of Lnt with the predicted structure of AatD superimposed. Residues are numbered as they appear in Lnt. (D) WCL of E. coli BL21(DE3) expressing CexE in the presence of AatD and each of the four single site substitution derivatives of AatD. CexE was detected using an anti-CexE polyclonal antibody, AatD was detected with an anti-His tag antibody, and RNAP was used as a loading control.
 
-## An N-terminal glycine is required for acylation
+### An N-terminal glycine is required for acylation
 
 Due to the homology and functional similarity between AatD and Lnt, a likely site for acylation of CexE is the N-terminal amino acid immediately after the signal sequence. SignalP predictions suggested that CexE possesses a Sec-dependent signal sequence cleaved by signal peptidase I between alanine at position 19 and glycine at position 20 (Figure 7A and Supplementary file 2). N-terminal amino acid sequencing of uCexE revealed the amino acid sequence GGGNS confirming that glycine at position 20 formed the N-terminal amino acid of the processed protein. However, bioinformatic analyses of the amino acid sequences of 224 distinct CexE homologs failed to identify in their signal sequences the presence of a ‘lipobox’ (Figure 7—figure supplement 1); lipoboxes are required for recognition of lipoproteins by the Lol system and thus acylation by Lnt (Babu et al., 2006). Further analyses revealed limited sequence identity between the signal sequences of the 224 CexE homologs indicating that an alternative lipobox is not present. Moreover, neither CexE nor any other homolog possessed a cysteine residue adjacent to the signal sequence; for bacterial lipoproteins, the N-terminal cysteine of the mature protein is the target of Lnt mediated acylation. Since CexE does not contain features of a typical bacterial lipoprotein, it must be recognised and acylated by AatD in a manner different to the acylation of lipoproteins by Lnt.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig7-v2.jpg)
+
+**Figure 7.:** (A) SignalP result of CexE sequence from ETEC H10407 (E3PPH2_ECOH1) (B) WebLogo of the 5 N-terminal residues of Aap and CexE sequences post Sec signal sequence cleavage. (C) ETEC H10407 cexE mutants transformed with pACYC184 (ΔcexE) or pACYC-cexE-6His with either the wild-type sequence (WT cexE) or one of the first five amino acids mutated to glutamic acid. CexE was detected by polyclonal antibodies and RNAP was used as a loading control. The percentage of mCexE was determined from three biological replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Aap and CexE sequences were aligned using ClustalO. The alignment was then placed into WebLogo.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Enterotoxigenic Escherichia coli (ETEC) H10407ΔcexE pCfaD was transformed with pACYC184, pACYC-cexE, or pACYC-cexE G20E. A double mutant of cexE and aatD harbouring pCfaD was transformed with pACYC-cexE. Both WCL and culture supernatant samples of these strains grown in the presence of arabinose were taken. Supernatant proteins were isolated by TCA precipitation after removal of cells by centrifugation and filtration. Protein samples were separated by SDS-PAGE and transferred to nitrocellulose for western blotting for RNAP and CexE.
+
 Further scrutiny of the amino acid sequences of all CexE homologs revealed that for all CexE and Aap proteins, the first five amino acids immediately after the signal peptide cleavage site are a conserved mix of glycine and serine residues (Figure 7B). The presence of an invariant N-terminal glycine residue immediately downstream of the predicted signal sequence suggested that this might be the site of acylation. To test this hypothesis, we mutated each of the N-terminal residues of CexE to glutamic acid and observed the effect on acylation by western blotting. The amount of total fluorescence of the secondary antibody bound to primary polyclonal anti-CexE antibody was measured and compared for each mutant. The percentage of acylated mCexE was calculated for each mutant. The migration of the G20E mutant was similar to uCexE indicating that the change to glutamic acid completely abolished acylation (Figure 7C). In addition, the acylation of the G21E mutant was significantly reduced (p-value=0.0013). However, there was no significant reduction in acylation of the G22E, N23E, or S24E mutants (Figure 7C). Moreover, CexE was no longer secreted without the acylation at G20 (Figure 7—figure supplement 2). These data indicate that the acylation of CexE is highly dependent on the N-terminal glycine at position 20 and to a lesser extent on the second glycine at position 21.
 
-## Mass spectrometric analysis of CexE acylation
+### Mass spectrometric analysis of CexE acylation
 
 Mutation of the conserved N-terminal glycine can abolish acylation of CexE, and Lnt acylates the N-terminal amine of the signal peptidase processed lipoprotein, therefore we hypothesised that AatD would acylate the N-terminal amine of G20. To test this, we first purified His-tagged mCexE and uCexE. mCexE was solubilised from the membrane fraction of ETEC H10407 pCfaD pACYC-cexE-6His using Triton X-100 while uCexE was purified from the soluble fraction of the cell lysate of ETEC H10407ΔaatD pCfaD pACYC-cexE-6His. Both mCexE and uCexE were then purified by nickel affinity chromatography. Both forms of CexE were subjected to trypsin digestion followed by LC-MS/MS. A peak was observed in the HLPC trace of mCexE that was not present in uCexE (Figure 8A). The mass spectrometry of that peptide identified the five N-terminal residues of CexE with an addition of 238 Da, which is equal to that expected to a single 16 carbon fatty acid addition (Figure 8B) confirming the modification of CexE by the addition of an acyl chain onto the N-terminal glycine.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig8-v2.jpg)
 
-**Figure 8.:** (A) CexE-6His was isolated from a cexE mutant and a cexE aatD double mutant and subjected to LC-MS/MS. CexE and pro-CexE were trypsinated and separated by HPLC. (B) The indicated peak was subjected to MS/MS to identify the amino acid sequence.  Figure 8—source data 1.  Figure 8—source data 2.  Figure 8—source data 3.
+**Figure 8.:** (A) CexE-6His was isolated from a cexE mutant and a cexE aatD double mutant and subjected to LC-MS/MS. CexE and pro-CexE were trypsinated and separated by HPLC. (B) The indicated peak was subjected to MS/MS to identify the amino acid sequence.
 
-## Heterologous acylation by AatD
+### Heterologous acylation by AatD
 
 Other domains of CexE might be responsible for interacting with AatD other than the N-terminus. Therefore, we fused the N-terminus of mCherry with the signal sequence of CexE and an increasing number of glycine residues to a maximum of three. These constructs were transformed into ETEC H10407ΔcexE pCfaD and the production of the mCherry fusions was induced in culture media supplemented with 17-ODYA. The mCherry constructs with N-terminal glycine residues were isolated using the incorporated C-terminal 8 His tag. The purified proteins were subjected to CuAAC with azide-Cy5. The incorporation of 17-ODYA into the mCherry fusions was observed by detecting fluorescence of the Cy5 dye. The signal sequence alone did not cause an incorporation of 17-ODYA (Figure 9). However, a single glycine at the N-terminus was sufficient for mCherry acylation, but the addition of further glycine residues to the N-terminus increased the fluorescence signal, indicating an increase of AatD activity proportional with increase in the number of glycine residues present (Figure 9). The minimum required for AatD-mediated acylation is a glycine at the N-terminus of the protein post signal sequence. However, an increase in the number of glycine residues appears to increase the efficiency of the reaction.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/63762/elife-63762-fig9-v2.jpg)
 
-**Figure 9.:** Plasmid encoding mCherry with the CexE signal sequence followed by none, one (G), two (GG), or three (GGG) glycine residues post signal sequence was produced in an ETEC H10407 cexE mutant grown in the presence of 17-ODYA. The mCherry proteins were isolated using a C-terminal 8 His tag and azide linked Cy5 was incorporated into mCherry proteins using CuAAC. The acylation of mCherry was detected using fluorescence.  Figure 9—source data 1.
+**Figure 9.:** Plasmid encoding mCherry with the CexE signal sequence followed by none, one (G), two (GG), or three (GGG) glycine residues post signal sequence was produced in an ETEC H10407 cexE mutant grown in the presence of 17-ODYA. The mCherry proteins were isolated using a C-terminal 8 His tag and azide linked Cy5 was incorporated into mCherry proteins using CuAAC. The acylation of mCherry was detected using fluorescence.
 
 ## Discussion
 
@@ -119,44 +161,145 @@ Due to increasing levels of antibiotic resistance in pathogenic organisms, there
 
 ## Materials and methods
 
-## Bacterial cultivation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>H10407</td>
+      <td>Evans and Evans (1973)</td>
+      <td></td>
+      <td>Prototypical ETEC strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>042</td>
+      <td>Evans and Evans (1973)</td>
+      <td></td>
+      <td>Prototypical EAEC strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α</td>
+      <td>New England Bioscience</td>
+      <td>C2987I</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Invitrogen</td>
+      <td>EC0114</td>
+      <td>Protein production strain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKD46</td>
+      <td>Datsenko and Wanner, 2000</td>
+      <td></td>
+      <td>Plasmid encoding λ Red recombinase genes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCP20</td>
+      <td>Datsenko and Wanner, 2000</td>
+      <td></td>
+      <td>Plasmid encoding Flp recombinase gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET26b</td>
+      <td>Novagen</td>
+      <td></td>
+      <td>T7 expression vector with C-terminal 6 His tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACYC184</td>
+      <td>Chang and Cohen, 1978</td>
+      <td></td>
+      <td>Plasmid with p15A origin of replication</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACYCDuet-1</td>
+      <td>Novagen</td>
+      <td></td>
+      <td>Plasmid with p15A origin of replication and two T7 promoters</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CexE (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His Tag (mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>Cat# A00186, RRID:AB_914704</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti E. coli RNA polymerase beta antibody (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat# 663903, RRID:AB_2564524</td>
+      <td>WB (1:10000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial cultivation
 
 Supplementary file 3 contains the bacterial strains used in this study. Bacterial strains were regularly cultivated in LB which consisted of 10 g/l tryptone, 5 g/l yeast extract, and 10 g/l NaCl. Bacterial strains were routinely grown on LB supplemented with 1.25% agar (LBA), and a single colony was used to inoculate liquid cultures for overnight growth at 37℃ with aeration. Overnight cultures were used to inoculate Erlenmeyer flasks containing a fifth of their total volume of LB supplemented with the relevant antibiotics and grown at 37℃ with aeration. Antibiotics were used at the following final concentrations: kanamycin 100 µg/ml, carbenicillin 100 µg/ml, and chloramphenicol 35 µg/ml. For the induction of CexE in ETEC H10407, cultures harbouring pCfaD were grown for 90 min in LB, supplemented with carbenicillin, at 37℃ with aeration. Expression of cfaD was induced with 0.2% L-arabinose for 2 hr at 37℃ with aeration. Aap was induced by growing EAEC 042 in DMEM-HG with aeration at 37℃.
 
-## Molecular techniques
+### Molecular techniques
 
 Primers for PCR can be found in Supplementary file 4. Plasmids used in this study are detailed in Supplementary file 5. Unless otherwise stated, all primers were used at a concertation of 10 µM. Q5 High-Fidelity 2X Master Mix (NEB) was used for cloning or mutagenesis. MyTaq Red Mix (Bioline) was used in all other cases. The cexE gene from ETEC H10407 was amplified using CcexE-F and CcexE-R primers. Both the vector, pET26b(+) (Novagen), and the insert were cut with NdeI (NEB) and XhoI (NEB) using the CutSmart (NEB) protocol. The digested vector was treated with Antarctic Phosphatase (NEB). T4 DNA Ligase (NEB) was used to ligate the insert DNA to the vector DNA. The ligation mixture was transformed into NEB 5-alpha Competent E. coli (High Efficiency). Recovered cells were plated on LBA supplemented with 100 µg/ml kanamycin and incubated at 37°C overnight. The cexE gene and 573 bp upstream of the cexE gene, which included the two CfaD binding sites (Pilonieta et al., 2007), were amplified by PCR. The reverse primer included a 6His tag. The resulting amplified DNA was digested with SphI and BamHI and ligated into pACYC184. Successful ligations were selected for as described above on LBA supplemented with 35 µg/ml chloramphenicol. Point mutations were constructed using the QuickChange II method (Aglient). The aat genes and cexE were disrupted in ETEC H10407 as previously described (Datsenko and Wanner, 2000). The plasmid pDOC-K was used as the source of the kanamycin resistance cassette (Lee et al., 2009). The cexE-mCherry fusion and the aatD gene from ETEC H10407 were synthesised by GenScript. Deletions of the cexE gene from the plasmid encoding the CexE-mCherry fusion were constructed as previously described (Moore and Prevelige,, 2002). Plasmid sequences were confirmed by Sanger sequencing.
 
-## Bioinformatic analysis of the Aat system
+### Bioinformatic analysis of the Aat system
 
 The protein sequences of the Aat proteins from ETEC H10407 were used to search the NCBI non-redundant protein sequence database using PSI-BLAST (Altschul et al., 1997). Strains encoding a complete Aat system on the same nucleotide accession were used to assess the distance between aat genes. Distant homologs of the Aat proteins were identified using HMMER (Finn et al., 2011). An HMM was created for each Aat protein using the Aat protein sequences identified by PSI-BLAST. These models were used to search the UniprotKB or Swissprot databases (UniProt Consortium, 2019). Protein sequences were aligned using Clustal Omega (Madeira et al., 2019). RAxML was used for the construction of phylogenetic trees (Stamatakis, 2014). Trees were drawn using iTOL (Letunic and Bork, 2019).
 
-## CexE purification for antibody production
+### CexE purification for antibody production
 
 BL21(DE3) was transformed with pET26b-cexE. An overnight culture of BL21(DE3) pET26b-cexE was used to inoculate 2 l of LB supplemented with 100 µg/ml kanamycin. The culture was grown at 37℃ with aeration to an OD600 of 0.4. The culture was moved to 20℃ incubator for 30 min prior to induction. CexE production was induced with 50 µM IPTG (Sigma) and incubated overnight at 20℃ with aeration. After overnight growth, cells were harvested by centrifugation at 6000 x g for 10 min at 4°C. The cell pellet was resuspended in ice-cold binding buffer (50 mM NaP [77:33 ratio of Na2HPO4 to NaH2PO4], 500 mM NaCl, 20 mM imidazole, 0.5 mM TCEP at pH 7.3). Cells were lysed using EmulsiFlex-C3 (Avestin). Cellular debris and intact cells were removed by centrifugation at 10,000 × g for 10 min at 4°C. The cellular membrane components were removed by centrifugation at 75,000 × g for 1 hr at 10°C. The supernatant was applied to a HisTrap HP 5 ml column (GE Healthcare Life Sciences) overnight at 4℃. The column was washed with five column volumes of binding buffer, then the protein was eluted in 5 ml fractions with elution buffer (50 mM NaP, 500 mM NaCl, 500 mM imidazole, 0.5 mM TCEP at pH 7.3). Samples containing purified protein were concentrated using Vivaspin 6 5000 MWCO columns (Sartorius Stedim). Protein was buffer exchanged using membrane filtration into 50 mM NaP, 250 mM NaCl, and 0.5 mM TCEP at pH 7.3. Purified CexE protein was used to produce primary antibodies by Eurogentec using the 28-day speedy protocol. Polyclonal antibodies against CexE were concentrated prior to use for the detection of CexE.
 
-## Tris-tricine SDS-PAGE and western blotting
+### Tris-tricine SDS-PAGE and western blotting
 
 Protein samples were separated using Tris-tricine SDS-PAGE as previously described (Schägger, 2006). In brief, protein samples were mixed with sample buffer (4% SDS, 2.5% 2-mercaptoethanol, 7.5% glycerol, 0.01% bromophenol blue, 35 mM Tris [pH 7.0]) and separated on 10% Tris-tricine SDS-PAGE gels. Gels were stained with Coomassie brilliant blue or transferred to nitrocellulose for western blotting. Nitrocellulose membranes were covered in 2% BSA (20 g BSA, 2.42 g Tris-base [pH 8.4], 8 g NaCl per litre). The primary antibody was diluted in 2% BSA at the following concentrations: Aap 1 in 5000 (Sheikh et al., 2002); CexE 1 in 2000 (this study); and β subunit of RNAP 1 in 10,000 (E. coli RNA Polymerase beta Monoclonal Antibody, BioLegend). Primary antibodies were incubated overnight at 4℃ with agitation. Membranes were washed three times in TBST (2.42 g Tris-base, 8 g NaCl, 0.1% Tween-20, pH 8.4 in 1 l) for 5 min at room temperature with agitation prior to incubation with secondary antibody. Anti-rabbit (IRDye 800CW goat anti-rabbit IgG, Li-Cor) or anti-mouse (IRDye 680LT goat anti-mouse IgG, Li-Cor) secondary antibodies were used to detect primary antibody binding. Secondary antibodies were diluted 1 in 15,000 in 2% BSA and incubated for a minimum of 1 hr at room temperature with agitation. Membranes were washed four times with TBST for 5 min at room temperature with agitation. Secondary antibody fluorescence was detected using the Odessy CLx imaging system.
 
-## Inhibition of SecA by sodium azide
+### Inhibition of SecA by sodium azide
 
 Two cultures of ETEC H10407 pCfaD were inoculated from the same overnight culture. The cells were both grown at 37℃ for 90 min with aeration. WCL samples of each culture were taken. L-arabinose was added to both cultures to a final concentration of 0.2%. Sodium azide was added to a final concentration of 3 mM to one of the cultures. Both cultures were grown for 2 hr at 37℃ with aeration. WCL samples of each culture were taken and separated by Tris-tricine SDS-PAGE. CexE was detected by western blotting.
 
-## Proteomic analysis
+### Proteomic analysis
 
 ETEC H10407 and EAEC 042 were grown in IMDM and DMEM HG, respectively. In initial experiments, CexE and Aap supernatant fractions were harvested with buffer containing Triton X-100 as previously described by Sheikh et al., 2002. Subsequently, supernatant proteins from ETEC H10407 pCfaD cultures were isolated using a modification of the protocol described by Sheikh et al., 2002 where Triton X-100 was excluded, as it proved to be unnecessary. In brief, cells were separated from the culture supernatant by centrifugation at 8000 × g for 10 min at 4°C. The culture supernatant was filtered using Millex-GP Syringe Filter Unit, 0.22 µm, polyethersulfone (Merck), then cooled on ice. Ice-cold 100% TCA was added to a final concentration of 20%. Samples were incubated on ice for 30 min. Proteins were pelleted by centrifugation. The supernatant was removed and discarded from the sample. The pellet was washed twice with 1 ml ice-cold 100% methanol, proteins were collected with centrifugation at 21,000 × g for 15 min at 4°C between each wash. The supernatant was removed, and residual methanol was evaporated by incubating the sample at 60°C for 10 min. The pellet was resuspended in 50 µl Tris-tricine sample buffer. If a colour change to yellow occurred, saturated Tris-base was added until the original colour returned. Samples were analysed by Tris-tricine SDS-PAGE.
 
 Membranes were extracted from 50 ml of cells grown under the conditions required for CexE production. Cells were collected by centrifugation and resuspended in 20 ml of 10 mM Tris (pH 8.0), 1 mM phenylmethylsulfonyl fluoride (PMSF). Cells were lysed using EmulsiFlex-C3 (Avestin). Unlysed cells were collected by centrifugation at 5000 × g for 10 min at 4℃. The supernatant was separated. The membranes were collected by centrifugation at 50,000 × g for 60 min at 4℃. The resulting membrane pellet was washed twice with ice-cold 10 mM Tris (pH 8.0). The final pellet was resuspended in 100 µl 10 mM Tris (pH 8.0). The samples were normalised by protein concentration. The membrane samples were separated by Tris-tricine SDS-PAGE.
 
-## CuAAC
+### CuAAC
 
 Overnight cultures harbouring plasmids encoding His-tagged proteins of interest to be labelled were used to inoculate 25 ml LB supplemented with the relevant antibiotics to an OD600 of 0.05. Cultures were grown for 1.5 hr at 37°C. 17-ODYA dissolved in DMSO was added to a final concentration of 20 µM and protein production induced. An equal volume of DMSO was added as a negative control. Cells were collected by centrifugation and resuspended in 600 µl of 50 mM NaP (pH 7.0), 150 mM NaCl, 0.1% Triton X-100, and 1 mM PMSF. Cells were lysed by sonication for 15 min using the bioruptor on a 30 s on, 30 s off cycles. Insoluble material was removed by centrifugation and the supernatant was retained. His-tagged proteins were isolated from the supernatant using Dynabeads His-Tag Isolation and Pulldown (Invitrogen) as per the manufacturer’s instructions. Imidazole was removed by dialysis. Protein sample concentrations were measured with Pierce BCA Protein Assay Kit (Thermo Scientific). A master mix was prepared of 0.2 mM Cy5-azide (Sigma-Aldrich) or Alexa Fluor 488 azide (Invitrogen), 0.2 mM Tris[(1-benzyl-1H-1,2,3-triazol-4-yl)methyl]amine (TBTA), and 2 mM freshly prepared CuSO4. This was made to 50 µl in H2O and 5 µl of the master mix was added to 40 µl each normalised protein sample. Sodium ascorbate was added to a final concentration of 5 mM. Samples were incubated at 37°C for 1 hr with agitation. Protein was precipitated using chloroform-methanol extraction. To each sample, 400 µl MeOH, 150 µl chloroform, and 300 µl H2O were added and vortexed for 30 s. Samples were centrifuged at max speed for 2 min. The top layer was removed and 400 µl MeOH was added and samples were centrifuged again at max speed for 2 min. The supernatant was removed, and the pellet was washed twice with 400 µl MeOH, then dried. Pellets were resuspended in 20 µl 1× Tris-tricine sample buffer and separated by Tris-tricine SDS-PAGE. Gels were incubated in fixative (10% acetic acid, 50% methanol) prior to fluorescence detection, then stained with Coomassie brilliant blue.
 
-## Heterologous protein acylation
+### Heterologous protein acylation
 
 ETEC H10407 pCfaD was transformed with pRSF-GGG-mCherry, pRSF-GG-mCherry, pRSF-G-mCherry, or pRSF-SS-mCherry. Cultures were grown as previously described for cfaD induction. At the same time as cfaD was induced, 17-ODYA was added to a final concentration of 20 µM. Cells were grown for 2 hr and harvested by centrifugation. 17-ODYA incorporation was detected as described above.
 
-## Mass spectrometric analysis of CexE acylation
+### Mass spectrometric analysis of CexE acylation
 
 CexE with a 6 His tag was isolated from a cexE mutant and a cexE aatD double mutant of ETEC H10407 pCfaD. The isolated CexE proteins were separated on a Tris-tricine gel and stained with Coomassie brilliant blue. The bands corresponding to uCexE and mCexE were excised and subjected to trypsin-LysC digestion. The tryptic peptide extracts were analysed by nanoHPLC/MS MS/MS on an Eksigent, Ekspert nano LC400 uHPLC (SCIEX, Canada) coupled to a triple TOF 6600 mass spectrometer (SCIEX, Canada) equipped with a PicoView nanoflow (New Objective) ion source; 5 µl of each extract was injected onto a 5 mm × 300 μm, C18 3 μm trap column (SGE, Australia) for 5 min at 10 μl/min. The trapped tryptic peptide extracts were then washed onto the analytical 75 μm × 150 mm ChromXP C18 CL 3 μm column (SCIEX, Canada) at 400 nl/min and a column temperature of 45℃. Solvent A consisted of 0.1% formic acid in water and solvent B contained 0.1% formic acid in acetonitrile. Linear gradients of 2–40% solvent B over 60 min at 400 nl/min flow rate, followed by a steeper gradient from 40% to 90% solvent B in 5 min, then 90% solvent B for 5 min, were used for peptide elution. The gradient was then returned to 2% solvent B for equilibration prior to the next sample injection. The ionspray voltage was set to 2600 V, declustering potential 80 V, curtain gas flow 30, nebuliser gas 1 (GS1) 30, interface heater at 150℃. The mass spectrometer acquired 50 ms full-scan TOF-MS data followed by up to thirty 100 ms full-scan product ion data, with a rolling collision energy, in an information-dependant acquisition mode for protein identification and peptide library production. Full-scan TOF-MS data was acquired over the mass range of 350–1800 and for product ion MS/MS 100–1500. Ions observed in the TOF-MS scan exceeding a threshold of 200 counts and a charge state of +2 to +5 were set to trigger the acquisition of product ion, MS/MS spectra of the resultant 30 most intense ions. The data was acquired and processed using Analyst TF 1.7 software (ABSCIEX, Canada). Protein identification was carried out using Protein Pilot 5.0 for database searching.

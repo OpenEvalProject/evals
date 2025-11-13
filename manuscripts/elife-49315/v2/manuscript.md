@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.49315.001 Dopamine neurons respond to errors in predicting value-neutral sensory information. These data, combined with causal evidence that dopamine transients support sensory-based associative learning, suggest that the dopamine system signals a multidimensional prediction error. Yet such complexity is not evident in the activity of individual neurons or population averages. How then do downstream areas know what to learn in response to these signals? One possibility is that information about content is contained in the pattern of firing across many dopamine neurons. Consistent with this, here we show that the pattern of firing across a small group of dopamine neurons recorded in rats signals the identity of a mis-predicted sensory event. Further, this same information is reflected in the BOLD response elicited by sensory prediction errors in human midbrain. These data provide evidence that ensembles of dopamine neurons provide highly specific teaching signals, opening new possibilities for how this system might contribute to learning.
+Dopamine neurons respond to errors in predicting value-neutral sensory information. These data, combined with causal evidence that dopamine transients support sensory-based associative learning, suggest that the dopamine system signals a multidimensional prediction error. Yet such complexity is not evident in the activity of individual neurons or population averages. How then do downstream areas know what to learn in response to these signals? One possibility is that information about content is contained in the pattern of firing across many dopamine neurons. Consistent with this, here we show that the pattern of firing across a small group of dopamine neurons recorded in rats signals the identity of a mis-predicted sensory event. Further, this same information is reflected in the BOLD response elicited by sensory prediction errors in human midbrain. These data provide evidence that ensembles of dopamine neurons provide highly specific teaching signals, opening new possibilities for how this system might contribute to learning.
 
 ## Introduction
 
@@ -46,6 +46,49 @@ Using waveform characteristics and firing in response to reward, as in previous 
 ![Figure 2.](https://cdn.elifesciences.org/articles/49315/elife-49315-fig2-v2.jpg)
 
 **Figure 2.:** Plots show firing rates of dopamine neurons in response to transitions in number of reward drops (omission or delivery; a–c) and flavor (grape or tropical punch; d–f). Changes in firing rate in response to omission (negative errors) and delivery (positive errors) were readily distinguishable (a; t29 = 4.0, p<10−3), inversely correlated across neurons (b), and firing rates were markedly different after the transition (c; t29 = 5.2, p<10−4). The same neurons exhibited increased firing rates in response to transitions in the expected flavor of reward (d); t29 = 2.1, p<0.05), but the increases to the two flavors were indistinguishable (t29 = −1.95, ns), positively correlated across neurons (e), and firing rates after the transition also did not distinguish the two flavor errors (f; t29 = 0.13, ns).
+
+**Table 1.**
+ Numbers of putative dopamine neurons recorded in each subject (subjects without dopamine neurons are not listed).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rat ID</th>
+      <th># Dopamine Neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AA01</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>AA05</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>AA06</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AA07</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>AA09</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>AA10</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AA12</td>
+      <td>6</td>
+    </tr>
+  </tbody>
+</table>
 
 In addition, however, the same neurons also responded with elevated firing across transitions in which there was a change in reward flavor, combining both the third transition, presented previously (Takahashi et al., 2017 in Supplemental Figure 2), and the more selective fourth transition, included here. These changes in firing occurred even though the rats’ behavior – both in the task and in separate preference testing (Figure 1b–d) – indicated no difference in the subjective value of the two flavors, even for individual subjects. The dopamine neurons increased firing to changes in flavor, and the size of these increases were positively correlated between the two flavor errors (Figure 2d and e). Further, individual neurons showed very little difference between initial firing rates in response to the two different flavor errors (Figure 2f). Thus, the activity of these neurons, individually or on average, signaled that something unexpected had happened, but it did not distinguish details of that event (e.g. if grape was switched for tropical punch or vice versa).
 
@@ -81,33 +124,33 @@ Finally it is worth noting that the demonstration here mirrors advances in the c
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Subjects
+#### Subjects
 
 Ten male Long-Evans rats (Charles River Labs, Wilmington, MA), aged approximately 3 months at the start of the experiment and single-housed once the experiment began, were used in this study. Rats were tested at the NIDA-IRP in accordance with NIH guidelines determined by the Animal Care and Use Committee.
 
-## Surgical procedures
+#### Surgical procedures
 
 All surgical procedures adhered to guidelines for aseptic technique. For electrode implantation, a drivable bundle of eight 25 um diameter NiCr/Formvar wires (A-M Systems, Sequim, WA) chronically implanted dorsal to VTA in the left or right hemisphere at 5.2 mm posterior to bregma, 0.7 mm laterally, and 7.5 mm ventral to the brain surface at an angle of 5° toward the midline from vertical. Wires were cut with surgical scissors to extend ~2.0 mm beyond the cannula and electroplated with platinum (H2PtCl6, Aldrich, Milwaukee, WI) to an impedance of 800–1000 kOhms. Cephalexin (15 mg/kg p.o.) was administered twice daily for two weeks post-operatively.
 
-## Histology
+#### Histology
 
 All rats were perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (Santa Cruz Biotechnology Inc, CA). Brains were cut in 40 µm sections and stained with thionin and then examined to determine electrode placement.
 
-## Behavioral task
+#### Behavioral task
 
 Training and recording was conducted in aluminum chambers approximately 18’ on each side with sloping walls narrowing to an area of 12’ x 12’ at the bottom. A central odor port consisting of a small hemicylinder accessible by nose-poke was located about 2 cm above two fluid wells, and higher up on the same wall were mounted two lights. The odor port was connected to an airflow dilution olfactometer to allow the rapid delivery of olfactory cues, which were chosen from compounds obtained from International Flavors and Fragrances (New York, NY). Trial availability was signaled by illumination of the panel lights inside the box. When these lights were on, a nosepoke into the odor port resulted in delivery of the odor cue for 500 ms. One of two different odors was delivered to the port on each trial in a pseudorandom order such that in each 50 trials there were 25 of each, and the same odor was never presented for more than three consecutive trials. At odor offset, the rat had 3 s to make a response at one of the two fluid wells. One odor indicated that reward would be available at the left well, while the other indicated it would be available at the right well; errors resulted in no reward delivery and the lights turning off (errors occurred on about 5% of trials across all recording sessions; see Figure 1b). On correct trials, lights turned off once rats had finished licking at the well; the intertrial interval was ~2–3 s before the light turned on once again. Once the rats were shaped to respond accurately (at least ~75%) on both odors, we introduced trial-blocks in which the number and flavor of reward drops (one or three drops of Grape or Tropical Punch Kool-Aid solution) were constant within a block but changed between blocks according to the schedule summarized in Figure 1a. The drop volume was ~0.05 ml and multiple drops were delivered 1000 ms apart. For each recording session, wells were randomly designated such that in the first trial-block, correct responses at one well resulted in delivery of 3 drops of grape solution while correct responses at the other well resulted in 3 drops of tropical punch solution. In the second trial-block, the number of drops available on both sides changed from three to one, with the flavor remaining the same. In the third trial-block, the number of drops available on both sides changed from one back to three, again with the flavor remaining the same. On the fourth trial-block, the flavor of all three drops on each side were switched to the other flavor. Finally, in the fifth trial-block, the flavor of the second drop on each side was switched to the opposite flavor, with the other two on both sides remaining the same. Thus, in each session, there was one number downshift transition (drop omission), one number upshift transition (new drop deliveries), one flavor transition across all three drops, and one flavor transition occurring at only the second drop. In each of the two flavor transitions, one side went from grape to tropical punch, while the other did the opposite.
 
-## Flavor preference testing
+#### Flavor preference testing
 
 After the completion of all recording sessions, we conducted two-bottle consumption tests of the Kool-Aid solutions two times over two days for nine of the ten rats. These tests were run in a housing cage different from home-cages and experimental chambers. Tests were 2 min in duration and the location of the bottles was swapped roughly every 20 s to equate time on each side. The flavor and the initial location of the bottles were randomized in rats and swapped between the 1st and 2nd tests.
 
-## Single-unit recording
+#### Single-unit recording
 
 Wires were screened for activity daily; if no isolable single-unit activity was detected, the rat was removed and the electrode assembly was advanced 40 or 80 µm. Otherwise active wires were selected to be recorded, a session was conducted, and the electrode was advanced at the end of the session. Neural activity was recorded using Plexon Multichannel Acquisition Processor systems (Dallas, TX). Signals from the electrode wires were amplified 20X by an op-amp headstage (Plexon Inc, HST/8o50-G20-GR), located on the electrode array. Immediately outside the training chamber, the signals were passed through a differential pre-amplifier (Plexon Inc, PBX2/16sp-r-G50/16fp-G50), where the single unit signals were amplified 50X and filtered at 150–9000 Hz. The single unit signals were then sent to the Multichannel Acquisition Processor box, where they were further filtered at 250–8000 Hz, digitized at 40 kHz and amplified at 1-32X. Waveforms (>2.5:1 signal-to-noise) were extracted from active channels and recorded to disk by an associated workstation.
 
-## Measures and statistical analyses
+#### Measures and statistical analyses
 
 Average percent correct and choice latency (defined as the time from the end of odor delivery to withdrawal from the odor port on trials resulting in a correct response) were calculated by trial-type (3-drop, 1-drop, grape, tropical punch) across all trials. The flavor of the reward was defined as that of the first drop.
 
@@ -123,17 +166,17 @@ The decoding analysis shown in Figure 3d was similar to that described above, ex
 
 We tested the latency of flavor decoding in the first ten trials of blocks 4 and 5 combined by advancing a 200 ms sliding epoch from the time of new flavor drop delivery until significance (by permutation test, p<0.05) was reached and maintained for at least five consecutive bins. We identified the latency as the end of the first significant epoch.
 
-## Experiment 2
+### Experiment 2
 
-## Subjects
+#### Subjects
 
 Twenty three human participants (nine male, ages 19–34, mean ± SD = 25.5±4.1 years) with no history of psychiatric illness gave informed written consent to participate in this study. The study protocol was approved by the Northwestern University Institutional Review Board.
 
-## Odor stimuli and presentation
+#### Odor stimuli and presentation
 
 Eight food odors, including four sweet (strawberry, caramel, cupcake, gingerbread) and four savory (potato chips, pot roast, sautéed onions, garlic), were provided by International Flavors and Fragrances (New York, NY). For all experimental tasks, odors were delivered directly to participants’ noses using a custom-built computer-controlled olfactometer.
 
-## Odor selection and task familiarization
+#### Odor selection and task familiarization
 
 In an initial behavioral testing session, hungry participants (fasted for at least 6 hr) first provided pleasantness ratings of the eight food odors. Based on these ratings, one sweet odor and one savory odor were chosen such that they were matched as closely as possible in pleasantness. Next, we acquired pleasantness ratings for the two selected odors across a range of odor concentrations, diluted to varying degrees with odorless air. Based on these ratings, we selected two concentrations for each odor, such that the two low-concentration odors had the same pleasantness and the two high-concentration odors had the same pleasantness.
 
@@ -141,19 +184,19 @@ Participants next completed 84 trials of the instrumental reversal learning task
 
 Across the 84 trials, the choice task was covertly subdivided into 8 blocks of trials delineated by the specific CS-US associations predetermined for that block. Each block consisted of either 9 or 12 trials, and the length of blocks across the session was pseudorandomized. Within a given block, one of the CS’s was paired deterministically with the high concentration of one odor identity (e.g., sweet high: SWH), while the other CS was paired deterministically with the low concentration of the same odor identity (e.g., sweet low: SWL). After each block, the CS-US associations were changed without warning, and new blocks always began with two forced choice trials (one for each CS). In the case of flavor reversals, the flavor of the US was changed for both CS’s while leaving CS-value associations the same. In the case of reward value reversals, the CS-value association was swapped between the two CS’s, while leaving flavor unchanged. Reversals alternated between flavor and value, and there were seven total reversals across the 84-trial task.
 
-## Choice task during fMRI scanning
+#### Choice task during fMRI scanning
 
 The fMRI scanning session was conducted within ~10 days (mean ± SD = 10.0±4.4 days) of the initial behavioral session. During scanning, hungry participants (fasted for at least 6 hr) completed 3 runs of the 84-trial reversal learning task described above. Each run lasted ~21 min, and the sequence of alternating flavor and value reversals was counterbalanced across subjects.
 
-## fMRI data acquisition
+#### fMRI data acquisition
 
 MRI data were acquired on a Siemens 3T PRISMA system equipped with a 64-channel head-neck coil. Echo-Planar Imaging (EPI) volumes were acquired with a parallel imaging sequence with the following parameters: repetition time, 2 s; echo time, 22 ms; flip angle, 90°; multi-band acceleration factor, 2; slice thickness, 2 mm; no gap; number of slices, 58; interleaved slice acquisition order; matrix size, 104 × 96 voxels; field of view 208 mm x 192 mm. The functional scanning window was tilted ~30° from axial to minimize susceptibility artifacts in OFC (Weiskopf et al., 2006). Each fMRI run consisted of 640 EPI volumes covering all but the dorsal portion of the parietal lobes. To aid in co-registration and normalization of the functional scans, we also acquired 10 EPI volumes for each participant covering the entire brain, with the same parameters as described above except 95 slices and a repetition time of 5.25 s. A 1 mm isotropic T1-weighted structural scan was also acquired for each participant. This image was used for spatial normalization.
 
-## fMRI data preprocessing
+#### fMRI data preprocessing
 
 All image preprocessing and general linear modeling was done using SPM12 software (www.fil.ion.ucl.ac.uk/spm/). To correct for head motion during scanning, for each subject all functional EPI images across the 3 fMRI runs were aligned to the first acquired image. The motion-corrected images were smoothed with a Gaussian kernel at native scan resolution (2 × 2×2 mm) to reduce noise but retain potential information content (Gardumi et al., 2016). For reverse normalization of midbrain regions of interest to participant-specific native space, each participant’s T1-scan was normalized to Montreal Neurological Institute (MNI) space using the 6-tissue probability map provided by SPM12. The inverse deformation field resulting from this normalization step was then applied for each participant to a region of interest in MNI space defined by spheres of 4-voxel radius centering on the two midbrain coordinates reported to show a significant univariate response to flavor prediction errors (left: x=-16, y=-14, z=-12; right: x = 6, y=-14, z=-14) (Howard and Kahnt, 2018).
 
-## General linear modeling and MVPA analyses
+#### General linear modeling and MVPA analyses
 
 For the decoding analysis, we constructed independent subject-level event-related general linear models (GLMs) for each fMRI run using finite impulse response (FIR) functions specified over 12 time bins time-locked to the onset of each trial. Nuisance regressors included: normalized respiratory activity traces (measured by MR-safe breathing belts affixed around the torso); the six realignment parameters calculated for each scanned image during motion-correction; the derivative, square, and square of the derivative of each realignment regressor; the absolute signal difference between even and odd slices, and the variance across slices, in each functional volume; additional regressors as needed to censor individual volumes in which particularly strong head motion occurred. Odor onsets corresponding to 13 conditions were specified in each GLM: SV→SW reversals, SW→SV reversals, SW and SV 1, 2, 3, and four trials after reversals, SW and SV on the trial immediately preceding reversals, and all other trials. The resulting parameter estimates within a region of interest (ROI) defined by the intersection of an un-normalized anatomical mask of the midbrain and the un-normalized spherical mask described above were extracted for each subject, fMRI run, and condition at the time bin corresponding most closely to odor delivery given hemodynamic lag. Prior to decoding, voxels within each subject’s midbrain ROI were sorted according to the difference in responses to flavor transitions on the error trial (combined across SV→SW and SW→SV) and responses on the trial preceding error trials (combined across SW and SV).
 

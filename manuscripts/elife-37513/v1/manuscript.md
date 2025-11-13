@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.37513.001 Changes in DNA methylation are involved in development, disease, and the response to environmental conditions. However, not all regulatory elements are functionally methylation-dependent (MD). Here, we report a method, mSTARR-seq, that assesses the causal effects of DNA methylation on regulatory activity at hundreds of thousands of fragments (millions of CpG sites) simultaneously. Using mSTARR-seq, we identify thousands of MD regulatory elements in the human genome. MD activity is partially predictable using sequence and chromatin state information, and distinct transcription factors are associated with higher activity in unmethylated versus methylated DNA. Further, pioneer TFs linked to higher activity in the methylated state appear to drive demethylation of experimentally methylated sites. MD regulatory elements also predict methylation-gene expression relationships across individuals, where they are 1.6x enriched among sites with strong negative correlations. mSTARR-seq thus provides a map of MD regulatory activity in the human genome and facilitates interpretation of differential methylation studies.
+Changes in DNA methylation are involved in development, disease, and the response to environmental conditions. However, not all regulatory elements are functionally methylation-dependent (MD). Here, we report a method, mSTARR-seq, that assesses the causal effects of DNA methylation on regulatory activity at hundreds of thousands of fragments (millions of CpG sites) simultaneously. Using mSTARR-seq, we identify thousands of MD regulatory elements in the human genome. MD activity is partially predictable using sequence and chromatin state information, and distinct transcription factors are associated with higher activity in unmethylated versus methylated DNA. Further, pioneer TFs linked to higher activity in the methylated state appear to drive demethylation of experimentally methylated sites. MD regulatory elements also predict methylation-gene expression relationships across individuals, where they are 1.6x enriched among sites with strong negative correlations. mSTARR-seq thus provides a map of MD regulatory activity in the human genome and facilitates interpretation of differential methylation studies.
 
 ## Introduction
 
@@ -33,11 +33,116 @@ DNA methylation—the covalent addition of methyl groups to nucleotide bases, mo
 
 If differential DNA methylation is mechanistically important in trait variation, it should also have downstream consequences for gene regulation. However, while a functional relationship between differential methylation and gene expression levels is often assumed, experimental studies have shown that it does not always hold. For example, targeted demethylation of CpG sites within the human HBB promoter using TALE-TET1 fusion proteins revealed that demethylation of some CpG sites causally alters gene transcription (Maeder et al., 2013). At other CpG sites in the same promoter, however, demethylation had no effect on HBB expression. Mapping methylation-dependent (MD) regulatory activity on a genome-wide scale is therefore essential for both sifting through the growing number of DNA methylation-trait associations and for understanding the basic biology of epigenetic gene regulation. However, current approaches for assaying MD activity are limited, as they either do not provide locus-specific information (Christman, 2002) or can only assay a single locus per experiment (Rivenbark et al., 2012; Maeder et al., 2013; Liu et al., 2016) (Table 1). Large-scale analyses to date have thus been restricted to in vitro assays performed on sheared or synthesized DNA (Hu et al., 2013; Mann et al., 2013; O'Malley et al., 2016; Zuo et al., 2017). These studies suggest widespread differential TF sensitivity to DNA methylation levels (Hu et al., 2013; O'Malley et al., 2016; Yin et al., 2017; Zuo et al., 2017), but leave open whether and to what degree differential sensitivity translates to differences in gene expression itself.
 
+**Table 1.**
+ Current methods for testing the causal relationship between DNA methylation and gene regulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Approach</th>
+      <th>Method</th>
+      <th>Throughput</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Episomal reporter</td>
+      <td>mSTARR-seq</td>
+      <td>Genome-scale (105–106 query fragments)</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Luciferase reporter assay (Klug and Rehli, 2006)</td>
+      <td>Single locus</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td>Endogenous editing</td>
+      <td>TALE fusion to TET1 or DNMT3a effector domains (Maeder et al., 2013; Bernstein et al., 2015)</td>
+      <td>Single locus</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CRISPR-dCas9 fusion to TET1 or DNMT3a effector domains (Liu et al., 2016; Vojta et al., 2016)</td>
+      <td>Single locus</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ZF domain fusion to DMNT3a or DNA glyocosylase effector (Rivenbark et al., 2012)</td>
+      <td>Single locus</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Inducible overexpression of an artificial ZF-DNMT3A fusion protein (Ford et al., 2017)*</td>
+      <td>Genome-scale (104 query fragments)</td>
+      <td>Expression</td>
+    </tr>
+    <tr>
+      <td>In vitro TF binding</td>
+      <td>Electrophoretic mobility shift assay</td>
+      <td>Single locus</td>
+      <td>TF binding</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Protein-binding microarray (Mann et al., 2013)</td>
+      <td>Genome-scale (104–105 query fragments)</td>
+      <td>TF binding</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DNA affinity purification sequencing (DAP-seq) (O'Malley et al., 2016)</td>
+      <td>Genome-scale (105–106 query fragments)</td>
+      <td>TF binding</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Methylation sensitive and bisulfite-SELEX (Yin et al., 2017)</td>
+      <td>Genome-scale (104 query fragments)</td>
+      <td>TF binding</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Methyl-Spec-seq (Zuo et al., 2017)</td>
+      <td>Genome-scale (102–103 query fragments)</td>
+      <td>TF binding</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This method is currently limited to testing off-target effects in the MCF-7 cell line, which contains an inducible artificial ZF-DNMT3A fusion protein._
+
 To address this limitation, we developed a new method, ‘methyl-STARR-seq’ (mSTARR-seq), that can be used to assay the causal relationship between initial differences in DNA methylation and subsequent regulatory activity in high-throughput, within the cellular environment. mSTARR-seq relies on a newly engineered reporter vector, similar in setup to those used in other massively parallel reporter assays (Arnold et al., 2013; Arnold et al., 2014; Vanhille et al., 2015; Vockley et al., 2015; Vockley et al., 2016), but designed to eliminate all CpG sites and potential targets of bacterial methylation. mSTARR-seq then combines high-throughput cloning of hundreds of thousands of query fragments (containing millions of CpG sites) with enzymatic manipulation of DNA methylation using the enzyme M.SssI (Figure 1). Using this novel approach, we map MD regulatory activity across the human genome in the K562 immortalized human cell line. Further, we test whether regions with MD activity can be reliably predicted using information about CpG site density, endogenous chromatin state, and TF binding, and we identify both known and candidate novel TFs involved in DNA methylation-mediated gene regulation and active demethylation. Finally, we demonstrate the relevance of mSTARR-seq to data from real populations by showing that inter-individual variation in DNA methylation is more tightly coupled to inter-individual variation in gene expression for CpG sites within MD regulatory elements than sites in methylation-insensitive (non-MD) regulatory elements. Our findings indicate that a minority of CpG sites in the genome have MD regulatory activity. Thus, the functional importance of DNA methylation for gene expression at any given site should be tested empirically and not assumed as a default.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig1-v1.jpg)
+
+**Figure 1.:** (A) The CpG-free pmSTARRseq1 vector is designed so that functional regulatory elements self-transcribe to produce a processed mRNA transcript, including a transcribed region (dark blue) that spans a synthetic intron (teal) and the sequence of the regulatory element itself (green). (B) GM12878 DNA was fragmented through random shearing or Msp1 digest, which recognizes the sequence CCGG. The resulting fragments were mixed in a 2:1 ratio, and (C) cloned into pmSTARRseq1 in high-throughput. We subjected the resulting library to either experimental methylation (M.SssI treatment) or a sham treatment, and transfected each pool into the K562 cell line (n = 6 replicates per condition). After a 48 hr incubation period, plasmid DNA and plasmid-derived mRNA were extracted and the variable insert regions were sequenced. (D) Inserts were of mean size 321 bp ± 107 bp s.d. (E) Bisulfite sequencing of pre- and post-transfection plasmid DNA confirmed that M.SssI treatment successfully methylates CpG sites introduced into pmSTARRseq1 and that methylation status is not substantially perturbed by transfection (y-axis: mean CpG methylation level per experimental replicate, based on CpG sites in the region used for Gibson assembly, and therefore present on every plasmid). Whiskers on boxplots represent the values for the third and first quartiles, plus or minus 1.5 × the interquartile range, respectively. Evidence for lack of confounding by a transfection-induced type I interferon response is shown in Figure 1—figure supplement 1. An analysis of fragment diversity levels in mSTARR-seq DNA-seq and RNA-seq libraries is shown in Figure 1—figure supplement 2. A comparison of fragment diversity between this experiment and other high-throughput reporter assays, as well as the effect of repeated library transformation on diversity is shown in Figure 1—figure supplement 3. mSTARR-seq coverage by genomic compartment and ENCODE chromatin state annotations is shown in Figure 1—figure supplement 4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** qPCR-based assessment (following (Muerdter et al., 2018)) of mRNA induction of six IFN-I response genes after transient transfection. These genes were chosen because they were initially used to identify a type I interferon response in STARR-seq data by Muerdter et al. (2018), and because each is a key player in cGAS/STING signaling, the primary avenue through which mammalian cells sense cytoplasmic DNA. Results are shown for experiments conducted using total RNA derived from K562 cells transfected with methylated or unmethylated pmSTARRseq1 plasmid pools (containing human DNA inserts). The y-axis represents the fold change in mRNA expression levels (on a log2 scale) between cells transfected with plasmid DNA (+DNA) relative to the mean levels observed for the same gene in untransfected cells (-DNA). Whiskers on boxplots represent the values for the third and first quartiles, plus or minus 1.5 × the interquartile range, respectively. Log2-fold changes did not significantly differ from 0 (one-sided Wilcoxon-signed rank test, p > 0.05) except for OAS3 (p = 0.047), and none of the genes was significantly affected after multiple hypothesis test correction. This result agrees with ENCODE RNA-seq data for K562s indicating inactivity of the cGAS/STING pathway.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) As previously observed in STARR-seq experiments (Arnold et al., 2013), plasmid DNA libraries extracted from transfected K562 cells are more diverse than mRNA-derived libraries (y-axis: proportion of all sequenced fragments that had a unique start and end coordinate within a given replicate, for methylated and unmethylated DNA-seq and mRNA-seq libraries). Whiskers on boxplots represent the values for the third and first quartiles, plus or minus 1.5 × the interquartile range, respectively. (B) Most fragments that appear in DNA-seq libraries but not RNA-seq libraries were at low abundance in the plasmid DNA pool. Y-axis: the proportion of 200 bp regions with zero counts from all mRNA-seq libraries, binned by quantile of normalized mean DNA-seq coverage across all input libraries (x-axis). (C–D) For fragments that had zero counts from all mRNA-seq libraries, the proportion of regions that overlap chromatin states (C) lacking H3K4me1 and H3K27ac (indicating inactive regions) and (D) marked by H3K4me1 and H3K27ac (indicating active regions). Proportions are binned by quantile of normalized mean DNA-seq coverage across all input libraries (x-axis). DNA fragments that were input into the experiment at high abundance, but for which no mRNAs were observed, were more likely to come from endogenously inactive regions and less likely to come from endogenously active regions. This pattern suggests that lower fragment diversity in mRNA-seq libraries relative to DNA-seq libraries is not purely technical, but also influenced by the fragment’s regulatory potential. In B-D, results are shown for the unmethylated condition for simplicity (parallel analyses for the methylated condition yielded similar results).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Y-axis depicts the number of unique plasmid-derived mRNA fragments reported in a given STARR-seq (Arnold et al., 2013; Arnold et al., 2014; Zabidi et al., 2015), MPRA (Melnikov et al., 2012; Patwardhan et al., 2012; Tewhey et al., 2016), or CAP-STARR (Vanhille et al., 2015; Verfaillie et al., 2016) experiment. Each dot represents a replicate transfection (in cases where data on individual replicates were available). Published STARR-seq, MPRA, or CAP-STARR experiments that did not report the number of unique plasmid-derived mRNA fragments per replicate are not included. (B) Retransforming a given plasmid pool results in almost no loss in diversity. We retransformed a small amount (<300 ng) of the plasmid pool described in the main text into 300 ul of electrocompetent GT115 E. coli, and sequenced the inserts from the retransformed sample. For a given number of sampled fragments (x-axis), the retransformed sample and the post-transfection DNA-seq plasmid libraries from the main experiment have a comparable number of unique fragments (defined as uniquely mapped fragments with unique start and end positions). Each solid line represents an individual replicate, and the dashed line shows the line where x = y. The retransformed plasmid DNA library appears slightly more diverse than the methylated and unmethylated condition libraries, presumably because (i) the methylated and unmethylated condition libraries were sequenced post-transfection (which likely results in some loss of diversity) and (ii) the retransformed plasmid was supercoiled DNA rather than ligation product, likely resulting in a more efficient transfection. Importantly, almost all (98.17%) of fragments observed in the retransformed library are also present in methylated and unmethylated condition libraries.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The proportion of gene bodies (defined as the transcription start site (TSS) to the transcription end site) and promoters (defined as the 2 kb region upstream of the TSS) in the human genome that overlap mSTARR-seq fragments, compared to an in silico-generated reduced representation bisulfite sequencing (RRBS) library. A gene or promoter was considered to be ‘covered’ by a given data set if >1 bp overlapped a fragment from the data set. mSTARR-seq fragments provide similar coverage of genic regions relative to an RRBS library, and 57% of fragments expected from an in silico RRBS library are also found in our K562 mSTARR-seq experiments (93% of expected RRBS fragments are actually represented in the mSTARR-seq plasmid input library; those that are not represented in the final experimental analysis are therefore located in regions that are not consistently expressed in K562s: see also Figure 1—figure supplement 2). (B) The proportion of regions annotated in a given K562 ENCODE chromatin state that overlap mSTARR-seq fragments (y-axis and overlap are defined as in A).
 
 ## Results
 
-## Description of the mSTARR-seq method
+### Description of the mSTARR-seq method
 
 mSTARR-seq is inspired by the self-transcribing active regulatory region sequencing (STARR-seq) protocol developed by Arnold et al. (2013). However, the original STARR-seq vector is not appropriate for isolating the effects of DNA methylation on gene expression because it contains over 300 CpG sites in the backbone, as well as potential targets of bacterial methylation. To eliminate these confounds, we therefore engineered a novel CpG-free vector (pmSTARRseq1) that eliminates the possibility of bacterial Dam or Dcm-mediated methylation (Figure 1A; Materials and methods). As in STARR-seq, the pmSTARRseq1 vector enables a diverse library of query fragments to be inserted in the 3’ untranslated region of a constitutively expressed reporter gene, such that fragments with regulatory activity drive their own transcription when transfected into a cell type of interest (Arnold et al., 2013). Prior to transfection, an aliquot of the plasmid input library is treated with the methyltransferase M.SssI, which methylates all CpG sites (following the single locus method of (Klug and Rehli, 2006)). A second aliquot is treated only with M.SssI buffer, producing a sham treatment in which all query fragment CpG sites are left completely unmethylated. The regulatory activity of unmethylated versus methylated fragments can then be compared using high-throughput sequencing to quantify their relative abundances in reporter gene-derived mRNA. In total, this approach allows us to obtain a functional, quantitative readout of enhancer activity across the genome, and to compare the activity levels of the same regulatory element in a methylated versus unmethylated state.
 
@@ -47,13 +152,45 @@ Using mSTARR-seq, we assayed ~750,000 unique DNA fragments (mean ± SD = 75
 
 Among regions with evidence for enhancer activity, 2969 exhibited significant methylation-dependent (MD) activity (15% of analyzed regions; linear model, FDR < 10%). Eighty-six percent of these MD enhancers were more active when unmethylated and 14% were more active when methylated (Figure 3A; Supplementary file 4). Only 4 of the 325 CpG-free regions in the analysis set were inferred to have MD activity, consistent with an overall low false discovery rate (Figure 3B).
 
-## Validation against low-throughput reporter assays and comparison with endogenous measures of regulatory function
+![Figure 2.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig2-v1.jpg)
+
+**Figure 2.:** (A) Regions with significant regulatory activity are enriched for enhancer chromatin states in K562 cells (blue). Y-axis shows the two-sided Fisher’s Exact Test log2(odds) for enrichment/depletion of mSTARR-seq enhancers in 15 K562-annotated chromatin states (p<0.05 for all tests except ‘Weak promoter’). Inset: mSTARR-seq effect size for regions in enhancer chromatin states versus other chromatin states, for regions with significant activity only. (B) Binning regions with significant mSTARR-seq enhancer activity by fragment length reveals that larger fragments are more strongly enriched for ENCODE-annotated ‘strong enhancers’. The y-axis depicts the log2(odds) from a two-sided Fisher’s exact test for enrichment of mSTARR-seq enhancers (binned by deciles of fragment length) in either of the two ‘strong enhancer’ chromatin states (p<0.05 for all tests). (C) Agreement between conventional CpG-free luciferase reporter assays (Klug and Rehli, 2006) and enhancer activity (left) and MD-dependent activity (right) estimated from mSTARR-seq for 18 candidate regulatory elements (Supplementary file 3). mSTARR-seq activity explains 86.0% and 76.1% (p < 10−15) of variance in normalized luciferase activity, respectively (linear mixed model controlling for batch and assay fragment length). The dynamic range for mSTARR-seq enhancer detection is shown in Figure 2—figure supplement 1. The effects of sample size and sequencing effort on coverage, regions analyzed, and CpG sites analyzed are shown in Figure 2—figure supplement 2. Sensitivity versus specificity of enhancer detection as a function of fragment length is shown in Figure 2—figure supplement 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distributions of the mean log2 ratio of normalized plasmid mRNA gene expression levels to plasmid DNA input counts, for regions that exhibited significant (dark lines) versus non-significant (light lines) regulatory activity. Normalization was conducted using limma, and regulatory activity was assessed using linear models (as described in Materials and methods). Separate distributions are shown for methylated and unmethylated condition samples, respectively. (B) X-axis as in panel A, plotted against the proportion of regions that are called as significant enhancers as a function of effect size, for both methylated and unmethylated condition samples.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Using our main data set on MD regulatory activity, we randomly removed samples and reads to create new data sets with different properties. Data sets with a total of n = 6 and n = 10 samples include n = 3 and 5 replicates in each experimental condition, respectively, each with a fixed numbers of reads sampled for each mRNA-seq library (x-axis in A-C). As a function of RNA-seq reads generated (subsampled), we show: (A) the number of analyzable 200 bp regions based on the criteria reported in the main text (regions must be covered in >50% of both DNA and RNA samples in the data set); this has the effect of imposing a stricter threshold on larger data sets; (B) the median coverage in mRNA libraries for each CpG site included in analyzed regions; and (C) the total number of CpG sites included in analyzed regions. Each point shows the mean value across five random read subsets of the depth shown on the x-axis. As expected, more regions and CpGs are retained for analysis with increasing sequencing depth, but more regions are analyzed in a smaller data set (n = 6 versus 10 replicates), because of our requirement for a region to be covered in >50% of samples. However, smaller data sets suffer from reduced power. (D) The number of enhancers identified from a linear model (FDR < 10%) when we randomly remove replicates from our main data set; the dot at n = 11 is the number of identified enhancers reported in the main text.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Lines show the trade-off between the false positive (x-axis) and true positive (y-axis) rates, for detecting ENCODE-annotated enhancers found on fragments of different lengths in unmethylated condition mSTARR-seq samples. Each line represents one quartile of the distribution of fragment lengths observed in our experiments: progressively better performance is obtained with progressively larger fragment sizes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig3-v1.jpg)
+
+**Figure 3.:** (A) The distribution of differences in normalized mRNA transcript abundance between the unmethylated and methylated conditions for all significant MD enhancers. (B) CpG-free MD enhancers occur at a 9.5-fold lower rate than CpG-free windows with no MD enhancer activity. (C) Distribution of fragment CpG density for regions identified as MD versus non-MD enhancers. (D) CpG-dense mSTARR-seq enhancers tend to be repressed by DNA methylation (positive y-axis value; Spearman’s rho = 0.284, p<10−15; n = 19,703 regions with mSTARR-seq regulatory activity). (E) The proportion of non-MD and MD enhancers that were accurately classified via a random forests (RF) classifier. (F) Features that distinguish MD and non-MD enhancers in the RF classifier (10% FDR; note that the feature set [Supplementary file 6] includes some repeated ChIP-seq experiments for the same TF). X-axis: mean decrease in predictive accuracy when permuting the focal variable. Blue: positive prediction of non-MD enhancers; gray: positive prediction of MD enhancers. Mean decrease in accuracy is calculated as the mean difference in accuracy between 1000 models in which the focal variable is permuted and one where it is not, normalized by the standard deviation of these difference values; it is thus analogous to a standardized effect size. Statistical calibration and dynamic range of detection for models used to detect MD activity are shown in Figure 3—figure supplement 1. Effect of varying the threshold used to predict MD versus non-MD enhancers is shown in Figure 3—figure supplement 2. Motifs for TFs that are significant predictors of MD enhancer activity are shown in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) QQ-plot comparing the distribution of -log10 p-values from a linear model for detecting MD enhancers (as described in Materials and methods) versus a uniform distribution expected under the null. Points are colored by their false discovery rate, assigned using qvalue. The plot highlights that many regions that do not pass our genome-wide significance threshold (FDR > 0.1), nevertheless, have low p-values and deviate from a uniform distribution, suggesting that there are many small effect size MD enhancers that we are unable to detect. (B) QQ-plot comparing the distribution of -log10 p-values for a uniform distribution versus the empirical null for the linear model used to identify MD enhancers (as described in Materials and methods). The empirical null was obtained by permuting the condition label for each sample (unmethylated/methylated) ten times, and extracting the p-values associated with the interaction effect used to detect MD enhancers. The empirical null and expected uniform distribution are very similar, with the empirical null slightly under-enriched for low p-values (KS test: D = 0.015915, p=0.003606). (C) Proportion of regions identified as MD enhancers, as a function of the mean log2 ratio of normalized plasmid mRNA from the unmethylated versus methylated conditions. Normalization was conducted using limma (as described in Materials and methods).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** In the main text, we report the proportion of regions that was correctly assigned by our random forests analysis as MD enhancers or non-MD enhancers. Each iteration of the random forest (n = 1000 iterations total) assigns a given region to a given outcome class, and we considered a given region to be assigned to a given outcome overall if the majority (>50%) of trees ‘voted’ for this class. Here, we show the false positive (x-axis) and true positive (y-axis) rates for the RF analysis if a threshold above 50% is used for assignment.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** TFs enriched in the (A) non-MD class and (B) MD class are shown. All motifs were downloaded from JASPAR (Khan et al., 2018).
+
+### Validation against low-throughput reporter assays and comparison with endogenous measures of regulatory function
 
 To validate mSTARR-seq’s performance, we compared it to luciferase reporter assays designed to test for regulatory activity or DNA methylation-dependent regulatory activity at a single locus (Klug and Rehli, 2006). We assayed 18 candidate regulatory elements spanning a range of enhancer activities and MD enhancer activities inferred from our mSTARR-seq experiments (including loci with no detectable MD enhancer activity; Supplementary file 5). In both cases, we observed strong agreement between the conventional low-throughput method and results from mSTARR-seq: enhancer activity inferred from unmethylated plasmids was strongly correlated between mSTARR-seq and single locus assays (linear model, R2 = 0.86, p < 10−15, Figure 2C), as was MD enhancer activity (based on comparisons between unmethylated and methylated plasmids; linear model, R2 = 0.76, p < 10−15, Figure 2C). These results indicate that mSTARR-seq reliably scales previous methods for assessing MD regulatory activity—in this case, by five orders of magnitude—without loss of reliability.
 
 To further validate mSTARR-seq, we also investigated concordance between our results and endogenous enhancer annotations for K562 cells. As expected, the set of regions capable of enhancer activity was highly enriched for ‘weak enhancer’, ‘strong enhancer’, and ‘active promoter’ ENCODE chromatin states (Dunham et al., 2012) (two-sided Fisher’s exact test, log2(odds) = 0.219–2.60, all p < 10−7; Figure 2A), and regions annotated as ‘strong enhancer’ contained the largest proportion of mSTARR-seq-identified regulatory elements (31% of those tested). Further, regions with mSTARR-seq enhancer activity that fell in enhancer or active promoter chromatin states consistently displayed larger effect sizes than those found in other chromatin states (linear model, R2 = 0.11, p < 10−15; Figure 2A). Hence, consistent with findings from previous massively parallel reporter assays (Arnold et al., 2013), mSTARR-seq can identify both endogenously active regulatory elements and additional loci with latent regulatory potential. Notably, power to detect enhancer activity increased with larger query fragment sizes (Figure 2B) and the trade-off between sensitivity and specificity also improved (Figure 2—figure supplement 3), possibly because short fragments eliminate binding sites key to enhancer activity. Thus, while we used a mean fragment size typical for STARR-seq experiments in this analysis (Arnold et al., 2013; Arnold et al., 2014; Zabidi et al., 2015) (but larger than most synthesized fragments in MPRA experiments: (Melnikov et al., 2012; Patwardhan et al., 2012; Tewhey et al., 2016)), additional increases in fragment size would likely further increase assay sensitivity. Indeed, our results indicate that the current data set is more sensitive to strong enhancers than weak enhancers (Figure 3A), and that we likely miss some true weak and/or weakly MD enhancers, after FDR correction for multiple testing (Figure 2—figure supplement 1; Figure 3—figure supplement 1).
 
-## Determinants of methylation-dependent (MD) regulatory activity
+### Determinants of methylation-dependent (MD) regulatory activity
 
 Our results allowed us to investigate the properties that predict MD regulatory activity and the transcription factors associated with MD enhancers. Overall, we found that MD enhancers have higher CpG densities and contain more CpG sites than non-MD enhancers (two-sided Wilcoxon-signed rank test, p < 10−15; Figure 3C). However, CpG density explained only a small amount of variation in the magnitude of methylation dependence, suggesting that other characteristics also contribute to quantitative variation in MD activity (Spearman’s rho = 0.284, p < 10−15; Figure 3D).
 
@@ -61,13 +198,29 @@ To identify these characteristics, we used a random forests (RF) classifier to e
 
 Consistent with these results, many TFs are thought to be sensitive to DNA methylation levels in or near their binding motifs (Hu et al., 2013; O'Malley et al., 2016; Yin et al., 2017). This ability to ‘read’ epigenetic modifications to DNA sequence could contribute to variation in MD regulatory activity in our data set. To test this possibility, we therefore investigated TF binding motif enrichment within mSTARR-seq identified MD enhancers, using motifs defined in the HOMER database (Heinz et al., 2010). Among the 2543 MD enhancers in which DNA methylation suppresses activity, we identified 32 significantly enriched TF-binding motifs (relative to all regions with mSTARR-seq regulatory activity, FDR < 1%; Figure 4A and Supplementary file 7). These results agree with known cases of methylation-dependent binding for well-studied classes of TFs (e.g. ETS family TFs, some of which are known to be methylation-sensitive (Polansky et al., 2010; Cooper et al., 2015; Stephens and Poon, 2016)). Additionally, they are significantly correlated with estimates of methylation-dependent TF binding to naked DNA using a completely orthogonal method (Yin et al., 2017). Specifically, when we compared estimates of motif enrichment from mSTARR-seq-identified MD enhancers versus estimates of affinity for methylated DNA in SELEX experiments, we found significant agreement for both TFs that preferentially bound unmethylated (linear model, R2 = 0.342; p = 1.33 × 10−6) and TFs that preferentially bound methylated DNA (linear model, R2 = 0.113, p = 0.028; Figure 5A–B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig4-v1.jpg)
+
+**Figure 4.:** (A) Transcription factor motifs enriched in MD enhancers that are more active when unmethylated, colored by TF family. (B) TF motifs enriched in MD enhancers that are more active when methylated. (C) DNase hypersensitive sites (DHS) specific to murine stem cells that lack DNA methylation (DNMT triple knock-outs: TKO) are strongly enriched for ETS family binding sites relative to wild-type cells with intact DNA methylation. In contrast, DHSs specific to wild-type cells are enriched for GATA family binding sites relative to triple knock-outs. DHS data are from22. X-axis: % knockout-specific DHSs that contain a given TF-binding motif (n = 1251 motifs). Y-axis: Ratio of knockout versus wild-type specific DHSs containing a given TF-binding site motif. Colored dots circled in black show significant enrichment for an ETS or GATA family TF (10% FDR, hypergeometric test). Evidence for CpG site and TFBS-dependent convergence to endogenous K562 methylation levels for some tested sites is shown in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The absolute difference between the mSTARR-seq experimental methylation levels and endogenous methylation levels from whole genome bisulfite sequencing of K562 cells (y-axis) is shown for all measured CpG sites, as well as CpG sites in specific TFBS, pre- and post-transfection. Red points on the y-axis represent mean values, and comparisons are shown for methylated condition (A) and unmethylated condition (B) replicates seperately. TFs plotted are those associated with the strongest evidence for demethylation (A) or induction of methylation (B) post-transfection. The pre-transfection experimental methylation level for all CpG sites was estimated from CpG sites introduced during Gibson assembly (as these sites are almost never the targets of post-transfection methylation changes); post-transfection experimental methylation levels were estimated from locus-specific bisulfite sequencing data.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig5-v1.jpg)
+
+**Figure 5.:** (A–B) Comparison of motif enrichment for mSTARR-seq-identified MD enhancers (x-axis) versus affinity for methylated DNA in SELEX experiments (y-axis: higher values represent preferential binding to methylated DNA). Results are plotted for each TF tested in both mSTARR-seq and in Yin et al. (2017) (A) TFs enriched for MD enhancers that were more active when unmethylated. (B) TFs enriched for MD enhancers that were more active when methylated. Each TF is colored by whether its binding motif was significantly enriched in the given MD enhancer set in mSTARR-seq. (C) CDF of the effect of CpG methylation levels on gene expression levels (rho) for 32,843 gene pairs measured in 1202 human monocyte samples (Reynolds et al., 2014). The mean correlation between CpG methylation levels and the expression of the closest gene is near zero. Inset shows the same distribution plotted as a histogram. (D) Enrichment (Log2 odds ratio from a Fisher’s exact test) of CpG sites with significant DNA methylation-gene expression correlations (FDR < 10%) in MD enhancers relative to non-MD enhancers. Bars show (i) enrichment versus all CpG sites measured in both mSTARR-seq and the monocyte dataset; (ii) enrichment in the subset of CpG sites with negative DNA methylation-gene expression correlations (of any magnitude); and (iii) enrichment in the subset of CpG sites with negative DNA methylation-gene expression correlations located in gene promoters. Error bars represent 95% confidence intervals. Evidence that major environmental perturbations to gene expression (IFNA challenge) leads to correlated changes in DNA methylation is shown in Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37513/elife-37513-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Y-axis: correlation coefficent for the relationship between IFNA-induced changes in enhancer activity and IFNA-induced changes in plasmid methylation levels. Correlations were estimated for the entire data set (n = 2678 200 bp regions), and for regions with progressively stronger evidence for IFNA-mediated induction of enhancer activity. Regions with larger IFNA effect sizes on enhancer activity (gene expression) also are more tightly correlated with mean changes in IFNA-induced DNA methylation levels: for the top 6.67% of effect sizes, rho = 0.125. Mean changes in IFNA-induced DNA methylation levels were estimated across all CpG sites measured in a given 200 bp region. (B) Data underlying the most extreme correlation estimate in A (rho = 0.125), when CpG sites in the 179 most IFNA-responsive regulatory elements are analyzed. Sites that lose DNA methylation after IFNA treatment tend to be located on fragments that specifically increase enhancer activity after IFNA treatment. (C) Same analysis and vizualisation as in panel A, but correlations were estimated between IFNA effect sizes on enhancer activity and changes in IFNA-induced DNA methylation levels for each CpG site individually (n = 7010 CpG sites; largest rho = 0.139).
+
 Among the 13 TF motifs associated with increased enhancer activity when DNA was methylated, we identified a strong overrepresentation of TFs from the GATA subfamily of zinc finger TFs (15.9x enrichment, hypergeometric test p=1.74×10−8; Figure 4B and Supplementary file 8). This observation is consistent with reports that GATA3 and GATA4 can bind to methylated DNA outside the cellular context (Hu et al., 2013). We therefore compared our findings to published chromatin accessibility data for wild-type murine stem cells, which contain normal patterns of DNA methylation, and triple knockouts for DNMT1, DNMT3a, and DNMT3b, in which DNA methylation is abolished (Domcke et al., 2015). For five of ten tested GATA family TFs, open chromatin regions specific to wild type (i.e. those absent in the triple knockouts) were significantly enriched for their cognate-binding sites (Figure 4C), in support of the idea that GATA family TFs preferentially bind methylated DNA as part of their ‘pioneer’ factor activity (Zhu et al., 2016). In contrast, ETS family TF binding sites were almost universally (38 of 41 tested) enriched in DNMT knockout-specific open chromatin regions.
 
 Because the treatment condition—methylated versus unmethylated—is the only exogenous variable in mSTARR-seq, all signals of MD activity we detect depend on the original treatment status. In this respect, mSTARR-seq is conservative: rapid demethylation of the methylated treatment or de novo methylation of the unmethylated treatment would attenuate or eliminate any MD signal, as the two treatments would effectively become identical. However, methylation-dependent TF binding could also lead to subsequent changes in DNA methylation, as some TFs are associated with demethylating activity (Suzuki et al., 2017). To test this possibility, we generated an additional locus-specific bisulfite sequencing data set on fragments extracted 48 hr post-transfection. As in our previous experiments (Figure 1E), introduced CpG sites in the fragment-backbone linker retained their experimentally-induced methylation status (mean CpG methylation levels = 1.6% and 95.1% in the unmethylated and methylated condition, respectively). However, CpG sites in fragments that mapped to the human genome partially converged towards endogenous levels in K562s, for both unmethylated (rho = 0.476, p<10−16) and methylated replicates (rho = 0.223, p<10−16; Figure 4—figure supplement 1). Specifically, 23.1% of sites in the unmethylated condition became methylated, while 15.7% of sites in the methylated condition lost methyl marks.
 
 This effect was driven in part by altered methylation levels at specific transcription factor binding sites. We observed the strongest evidence for post-transfection demethylation at K562 ChIP-seq-identified binding sites for ZNF274 and GATA2 (loss of a mean of 35.9% and 26.5% methylation, respectively), and for post-transfection de novo methylation at ChIP-seq-identified binding sites for POL2 and KAP1 (gain of a mean 26.0%, and 18.6% methylation, respectively; Supplementary file 9). However, GATA family TFs showed some of the most consistent evidence for demethylation overall: among the top 20 TFs ranked by mean loss of methylation (in the methylated condition), GATA family TFs were enriched 6.7-fold relative to chance expectations (p=3.60×10−4). Our data are thus consistent with both methylation-dependent binding and subsequent demethylating activity at GATA-bound TFBS (Zhu et al., 2016; Suzuki et al., 2017), and support the argument that sequence alone provides important information about cell-typic DNA methylation levels (Schübeler, 2015). They also suggest that, while not the original motivation for the method, mSTARR-seq could be applied to screen for TFs associated with active demethylation.
 
-## mSTARR-seq explains site-to-site heterogeneity in the strength of DNA methylation level-gene expression level correlations in vivo
+### mSTARR-seq explains site-to-site heterogeneity in the strength of DNA methylation level-gene expression level correlations in vivo
 
 Our mSTARR-seq results indicate that, at many CpG sites, DNA methylation may be functionally silent (i.e. it has no effect on regulatory activity). This result may explain the observation that, in population data sets, inter-individual variation in DNA methylation levels is a good predictor of inter-individual variation in gene expression levels at some CpG sites, but not others (Lam et al., 2012; Reynolds et al., 2014). Specifically, DNA methylation-gene expression correlations are expected to be stronger at CpG sites where DNA methylation causally affects gene expression than at sites where DNA methylation is functionally silent.
 
@@ -85,7 +238,59 @@ Finally, mSTARR-seq results can be used to identify the CpG sites for which inte
 
 ## Materials and methods
 
-## pmSTARRseq1 design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>ATCC CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmSTARRseq1</td>
+      <td>Addgene</td>
+      <td>Plasmid #96945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IFN-α</td>
+      <td>Abcam</td>
+      <td>ab48750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemically competent E. coli cells</td>
+      <td>GT115 strain</td>
+      <td>Invivogen</td>
+      <td>ChemiComp GT115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Electrically competent E. coli cells</td>
+      <td>GT115 strain</td>
+      <td>Intact Genomics</td>
+      <td></td>
+      <td>Custom order to grow Invivogen's ChemiComp GT115 strain and prepare cells for electroporation</td>
+    </tr>
+  </tbody>
+</table>
+
+### pmSTARRseq1 design
 
 We constructed a self-transcribing CpG-free vector that was built from Invivogen’s pCpGfree-promoter-Lucia plasmid, which contains an R6Kγ origin of replication and a Zeocin resistance gene. Specifically, we replaced the region between the NsiI and NheI digest sites of the pCpGfree-promoter-Lucia plasmid with the following sequence:
 
@@ -93,7 +298,7 @@ ATGCATAGGGAGAAGAGCATGCTTGAGGGCTGAGTGCCCCTCAGTGGGCAGAGAGCACATGGCCCACAGTCCCTGAGAAG
 
 This introduced sequence contains the following elements: a CpG-free EF1 promoter (Invivogen), a CpG-free version of a synthetic intron (pIRESpuro3, Clontech), an ORF (the CpG-free CFP::Sh gene from Invivogen), and a cluster of MluI digest sites for screening. The MluI cluster is flanked by restriction enzyme digest sites for SpeI and NcoI to enable high-throughput replacement of this sequence with candidate regulatory elements. To avoid any potential for bacterial methylation, we designed the plasmid to be devoid of Dam methyltransferase targets (GATC), and we only replicated plasmids in a Dcm methyltransferase-deficient bacterial strain (GT115, Invivogen).
 
-## Generation of plasmid libraries for mSTARR-seq
+### Generation of plasmid libraries for mSTARR-seq
 
 As input for our experiments with pmSTARRseq1, we isolated genomic DNA from the GM12878 cell line (QIAGEN, Blood and Cell Culture DNA Mini Kit) and fragmented the genomic DNA via sonication (Bioruptor Standard, Diagenode) or MspI digest. We size-selected both the sheared and MspI-digested DNA to a size range of ~300–700 bp, and used the NEBNext DNA Library Prep Master Mix Set for Illumina kit to create libraries from 1 to 2 ug of either sheared or MspI-digested DNA (completing 3–4 replicate library preps for input type). We followed the manufacturer’s instructions except for the final PCR amplification step, during which we used the following primers to facilitate directional high-throughput cloning (F: actaaagtctagagcttgtaACACTCTTTCCCTACACG, R: gaagtggctggctgaattccGTGACTGGAGTTCAGACG).
 
@@ -105,13 +310,13 @@ This 1:2 mixture (a total of 720 ug of plasmid DNA) was used to perform 6 ‘met
 
 For the additional set of experiments in which K562 cells were challenged or mock treated with IFNA, we used the same pool of post-transformation, extracted plasmid DNA (consisting of a mixture of Msp1-digested and sheared genomic DNA fragment inserts) described above. Using this pool, we performed an additional set of 2 ‘unmethylated condition’ and 6 ‘methylated condition’ methyltransferase reactions using the incubation and purification conditions described above.
 
-## Cell culture, plasmid transfection, and cell harvesting
+### Cell culture, plasmid transfection, and cell harvesting
 
 K562 cells were cultured in RPMI 1640 media (Gibco) supplemented with 10% FBS (Sigma Aldrich) and 1% Penicillin/Streptomycin solution (Sigma Aldrich) and maintained at 37°C in a 5% CO2 incubator. All transfections were performed with Lipofectamine 3000 (ThermoFisher Scientific) following the manufacturer’s instructions, with reagent quantities scaled as follows per replicate: 20 million cells, 40 ug of DNA, 110 ul of Lipofectamine 3000, and 100 ul of P3000. We transfected six unmethylated condition and six methylated condition replicates for the primary data set on mapping MD regulatory activity. For the additional experiments focusing on the IFNA response, we transfected an additional 2 and 6 replicates with unmethylated and methylated DNA, respectively, and added 2000 U/mL IFNA (ThermoFisher Scientific) to 3 of the methylated replicates 38 hr post-transfection. At the same time, we added an equivalent volume of water as a negative control to the remaining methylated and unmethylated replicates (total number of replicates: n = 3 methylated, IFNA+, n = 3 methylated, IFNA-, n = 2 unmethylated, IFNA-).
 
 Total RNA and plasmid DNA was isolated from each K562 replicate cell population 48 hr post-transfection. Prior to cell lysis, each replicate was collected via centrifugation. Pelleted cells were washed with 1X PBS and then incubated at 37°C for 5–10 min in 3 mL RPMI 1640 containing 1 mL of Turbo DNase (Ambion) per 36 mL. Cells were then pelleted and washed with 1X PBS, and an aliquot of ~10% unlysed cells per replicate was set aside for later plasmid extraction. The remaining cells were pelleted and lysed in 2 mL of Buffer RLT (QIAGEN).
 
-## Isolation and preparation of plasmid-derived mRNA and plasmid DNA libraries
+### Isolation and preparation of plasmid-derived mRNA and plasmid DNA libraries
 
 Total RNA was extracted from each replicate (n = 12 from the main experiment, n = 8 from the IFNA experiment) using the QIAGEN RNeasy Midi kit, and the polyA +RNA fraction was isolated from up to 75 ug of total RNA using Dynabeads Oligo dT25 (Invitrogen) and eluted in 25 ul of 10 mM Tris-HCl. Each isolated mRNA sample was then DNase-treated by adding 1 ul of Turbo DNase, 3 ul of Turbo DNase buffer, and 1 ul of water, followed by a 30-min incubation at 37°C and purification using the RNeasy MiniElute Cleanup Kit (QIAGEN). Purified mRNA was eluted in 25 ul of RNase free water, after which reverse transcription was performed using Super Script III Reverse Transcriptase (Invitrogen) following the manufacturer’s recommended protocol for higher yield. First strand cDNA synthesis was performed with a primer specific to the mSTARR-seq reporter plasmid (CAAACTCATCAATGTATCTTATCATG), including the optional RNase H step. cDNA from each replicate was purified and concentrated using a 2X Agencourt AMPure XP bead cleanup. Each sample was eluted in 20 ul of nuclease free water.
 
@@ -121,7 +326,7 @@ The entire purified PCR product (20 ul) from each reaction (n = 12 from the ma
 
 To measure the relative abundance of each DNA fragment in the input plasmid libraries, we created DNA-seq libraries from plasmid DNA extracted from each replicate 48 hr post transfection. 10 ng of plasmid DNA was used as the input for 50 ul PCRs each containing 25 ul of NEBNext High-Fidelity 2X PCR Master Mix, 2.5 ul of universal primer, and 2.5 ul of an indexed primer (NEBNext Multiplex Oligos for Illumina). Cycling conditions were as described above (using 10 cycles) and PCR products were purified using a 1X Agencourt AMPure XP bead cleanup. All final DNA-seq and mRNA-seq libraries were quantified on an Agilent DNA High Sensitivity Chip and sequenced on the Illumina 4000 platform using 100 bp PE reads (see Supplementary file 1 for sample-specific read depths).
 
-## Generation and low-level processing of bisulfite sequencing libraries
+### Generation and low-level processing of bisulfite sequencing libraries
 
 To confirm the DNA methylation status of plasmids in the main experiment (testing for MD activity across six unmethylated and six methylated condition replicates), we used 200 ng of plasmid DNA extracted from each K562 replicate cell population as the input for multiplexed bisulfite sequencing (Meissner et al., 2008; Gu et al., 2011; Boyle et al., 2012). To do so, we first fragmented plasmid DNA by overnight incubation (at 37°C) with 1 ul BfaI, 1 ul HindIII, 1 ul HpaI, and 3 ul Cutsmart buffer (New England BioLabs) in a total reaction volume of 30 ul. Approximately 1 ng of unmethylated phage DNA (Sigma Aldrich) was spiked in with each sample for downstream assessment of the bisulfite conversion efficiency. We performed end repair, A-tailing, and adapter ligation following previously published protocols (Boyle et al., 2012). After adapter ligation, all samples (n = 12) were pooled together and subjected to two rounds of sodium bisulfite conversion using the EpiTect Bisulfite Conversion kit (QIAGEN). Libraries were then PCR amplified and purified as in Boyle et al. (2012), quantified on a Agilent DNA High Sensitivity Chip (Agilent Bioanalyzer 2100), and sequenced on the Illumina MiSeq platform (see Supplementary file 1 for sample-specific read depths).
 
@@ -129,19 +334,31 @@ We processed each bisulfite sequencing library as follows. First, we removed ada
 
 For plasmid DNA extracted from the IFNA experimental replicates (n = 3 methylated, IFNA+, n = 3 methylated, IFNA-, n = 2 unmethylated, IFNA-), we aimed to generate higher coverage bisulfite-sequencing libraries to facilitate locus-specific analysis. To do so, we digested the plasmid DNA extracted from each replicate with BfaI using the conditions described above. We ran the digestion products on a 2% agarose gel and extracted the 250–650 bp region containing human DNA inserts as well as digested plasmid backbone (QIAquick Gel Extraction Kit, QIAGEN). Two of the eight replicates (n = 1 methylated, IFNA +replicate and one methylated, IFNA- replicate) did not yield detectable amounts of gel-extracted, size-selected DNA and were dropped from further library preparation. The remaining samples (ranging from 25 to 46 ng total), were each spiked with a small amount of unmethylated phage DNA, and this mixture was used as input for bisulfite-sequencing library preparation. To accommodate the low input, we used the NEXTflex Bisulfite-Seq Kit (Bioo Scientific) according to the manufacturer’s instructions. Sequencing output (from a HiSeq 4000 instead of a MiSeq, due to the need for increased coverage) from these six libraries were processed as described above with the following exceptions: (i) we only analyzed reads that showed evidence of proper BfaI digestion and that started with the plasmid sequence we expected to precede the cloning site for human insert fragments; (ii) we trimmed the plasmid sequence from the human insert fragments prior to mapping; and (iii) we mapped to a combined reference that included the human genome (hg38), the pmSTARRseq1 plasmid sequence, and the unmethylated phage genome.
 
-## Low-level data processing of mRNA-seq and DNA-seq libraries
+### Low-level data processing of mRNA-seq and DNA-seq libraries
 
 Following sequencing, we removed adapter contamination and low-quality bases from each library using cutadapt. We mapped the trimmed reads to the human reference genome (hg38) using BWA (Li and Durbin, 2009), and retained only uniquely mapped reads. We estimated the number of unique fragments assayed in our experiments by counting the number of RNA fragments with unique start and end positions within each replicate (Supplementary file 1; note that we excluded mRNA and DNA-seq data for one replicate from all analyses because of low sequencing depth).
 
 For all analyses, we focused on counts of the number of mapped reads in each library that overlapped 200 bp non-overlapping genomic intervals created with the BEDtools function ‘makewindows’ (Quinlan and Hall, 2010). Pileups were determined with the ‘coverage’ function. For the main experiment (i.e. excluding IFNA experiment samples; n = 11 DNA-seq and 11 mRNA-seq libraries), we removed 200 bp regions that had zero mRNA counts in three or more replicates per condition, as well as regions that had low stability and repeatability of DNA counts. Specifically, to identify high variability regions, we first normalized the filtered DNA library count matrix using the function ‘voomWithQualityWeights’ from the R package ‘limma’ (Law et al., 2014). We then computed the distribution of pairwise differences in abundance between all pairs of DNA replicates. Next, we removed regions from our analysis if >25% of pairs fell outside the central 90th percentile of this distribution. This filtering approach resulted in 262,829 200 bp regions.
 
-## Identification of enhancers and methylation dependent (MD) enhancers
+### Identification of enhancers and methylation dependent (MD) enhancers
 
-Using the set of 262,829 200 bp analyzable regions from our main dataset, we first identified regions that exhibited self-transcribing regulatory activity (more mRNA relative to DNA input). Specifically, for each 200 bp region, we ran a nested model on the normalized values that estimated differences between mRNA and input DNA abundance within each condition:(1)yi= μ+tiβ1*Ici=0+tiβ2*Ici=1+εiwhere yi is the normalized count value for sample i, ti is the sample type (input DNA or mRNA), and I is an indicator variable for condition (where ci=0 or ci=1 indicates a sample from the unmethylated or methylated condition, respectively). β1 and β2 are thus estimates of the strength of the differences between mRNA and input DNA abundance in the unmethylated and methylated conditions, respectively, where beta values > 0 indicate that mRNA abundance is greater than input DNA abundance. μ is the model intercept and εi denotes model error. We extracted the p-values associated with β1 and β2 from each model, and corrected for multiple hypothesis testing using the R function ‘qvalue’ (Dabney and Storey, 2015). We considered a region to have enhancer activity if β1, β2, or both were greater than 0 and had an FDR-corrected p-value less than 0.1 (Supplementary file 3).
+Using the set of 262,829 200 bp analyzable regions from our main dataset, we first identified regions that exhibited self-transcribing regulatory activity (more mRNA relative to DNA input). Specifically, for each 200 bp region, we ran a nested model on the normalized values that estimated differences between mRNA and input DNA abundance within each condition:
 
-Using these criteria, we identified 19,703 (7.5%) regions with enhancer activity. We next tested for methylation dependent (MD) activity within this set of enhancers by adding an interaction term between condition (unmethylated or methylated) and sample type (input DNA or mRNA):(2)yi= μ+tiβt+ciβc+(ti x ci)βtxc+εiwhere yi, ti, ci and εi are defined as in equation 1. βt is the effect of sample type (input DNA or mRNA), βc is the effect of condition (unmethylated or methylated), and βtxc is the estimate of the interaction between the two variables (ti x ci). We extracted the p-value associated with βtxc from each model, and corrected for multiple hypothesis testing using the R function ‘qvalue’ (Dabney and Storey, 2015). We considered a region to have methylation-dependent enhancer activity if the estimate for βtxc passed an FDR threshold of 10% (Supplementary file 4; see also Q-Q plot in Figure 3—figure supplement 1).
+$$
+y_{i}=\mu+t_{i}\beta_{1}*Ic_{i}=0+t_{i}\beta_{2}*Ic_{i}=1+\epsilon_{i}
+$$
 
-## Testing for type I interferon response
+where $y_{i}$ is the normalized count value for sample $i$, $t_{i}$ is the sample type (input DNA or mRNA), and $I$ is an indicator variable for condition (where $c_{i}=0$ or $c_{i}=1$ indicates a sample from the unmethylated or methylated condition, respectively). $\beta_{1}$ and $\beta_{2}$ are thus estimates of the strength of the differences between mRNA and input DNA abundance in the unmethylated and methylated conditions, respectively, where beta values > 0 indicate that mRNA abundance is greater than input DNA abundance. $\mu$ is the model intercept and $\epsilon_{i}$ denotes model error. We extracted the p-values associated with $\beta_{1}$ and $\beta_{2}$ from each model, and corrected for multiple hypothesis testing using the R function ‘qvalue’ (Dabney and Storey, 2015). We considered a region to have enhancer activity if $\beta_{1}$, $\beta_{2}$, or both were greater than 0 and had an FDR-corrected p-value less than 0.1 (Supplementary file 3).
+
+Using these criteria, we identified 19,703 (7.5%) regions with enhancer activity. We next tested for methylation dependent (MD) activity within this set of enhancers by adding an interaction term between condition (unmethylated or methylated) and sample type (input DNA or mRNA):
+
+$$
+y_{i}=\mu+t_{i}\beta_{t}+c_{i}\beta_{c}+(t_{i}xc_{i})\beta_{txc}+\epsilon_{i}
+$$
+
+where $y_{i}$, $t_{i}$, $c_{i}$ and $\epsilon_{i}$ are defined as in equation 1. $\beta_{t}$ is the effect of sample type (input DNA or mRNA), $\beta_{c}$ is the effect of condition (unmethylated or methylated), and $\beta_{txc}$ is the estimate of the interaction between the two variables $(t_{i}xc_{i})$. We extracted the p-value associated with $\beta_{txc}$ from each model, and corrected for multiple hypothesis testing using the R function ‘qvalue’ (Dabney and Storey, 2015). We considered a region to have methylation-dependent enhancer activity if the estimate for $\beta_{txc}$ passed an FDR threshold of 10% (Supplementary file 4; see also Q-Q plot in Figure 3—figure supplement 1).
+
+### Testing for type I interferon response
 
 Recent work (Muerdter et al., 2018) has shown that reporter assays that rely on plasmid transfection into human cells may be affected by two technical sources of error: (i) the bacterial plasmid origin-of-replication (ORI) can serve as a conflicting promoter that competes with the plasmid’s eukaryotic promoter and (ii) transfection of plasmid DNA into the cell may activate its type I interferon (IFN-I) response. Problem (i) is unlikely to be an issue for mSTARR-seq because the pmSTARRseq1 plasmid contains the R6Kγ origin of replication, unlike typical plasmids used for high-throughput reporter assays (e.g. STARR-seq (Arnold et al., 2013) and MPRAs (Melnikov et al., 2012)), which are built from the popular pGL3/4 family of plasmids. Importantly, when we applied a computational algorithm for prediction of eukaryotic PolII promoters (Knudsen, 1999) to pGL3 and pmSTARRseq1, a transcription start site was predicted within the pGL3 origin of replication but not within the pmSTARRseq1 origin of replication.
 
@@ -149,7 +366,7 @@ Problem (ii) is also unlikely to affect our mSTARR-seq experiments because K562s
 
 In agreement with previous work, we found little evidence that plasmid transfection induced an IFN-I response in the K562 cell line (two-sided Wilcoxon signed-rank test comparing RNA abundance in untransfected versus transfected cells: p>0.05 for all genes tested except OAS3, where p=0.047; Figure 1—figure supplement 4). In addition, we used Gene Ontology (GO) annotations and the program PANTHER (Mi et al., 2016) to ask whether regions with significant mSTARR-seq activity in the unmethylated condition were more likely to fall near (within 100 kb of the transcription start or end site) genes involved in the IFN-I response or other immune-related pathways, compared to the background set of all genes near a region analyzed in our K562 data set. We also asked whether the strongest unmethylated condition enhancers (top decile) were more likely to fall near genes involved in particular GO categories compared to the background set of all genes near significant mSTARR-seq enhancers. No GO categories associated with the IFN-I response or immune processes were observed.
 
-## Luciferase reporter assays
+### Luciferase reporter assays
 
 We chose 18 candidate regions that spanned a range of mSTARR-seq activity patterns (Supplementary file 5A). For each region, we synthesized the human hg38 DNA sequence flanked by 15 base pairs complementary to the 5’ and 3’ ends of the pCpGL backbone (following linearization of the pCpGL plasmid with PstI [New England BioLabs] and purification using a 1.5X Agencourt AMPure XP bead cleanup [Beckman Coulter]). We ligated each synthesized fragment to the linearized pCpGL backbone using Gibson assembly (Gibson Assembly Master Mix, New England BioLabs). Each ligation reaction was purified using a 1.5X Agencourt AMPure XP bead cleanup (Beckman Coulter), and the resulting reactions were chemically transformed into competent E. coli GT115 cells (InvivoGen), selected and grown on LB agar plates in the presence of Zeocin, and purified using the QIAprep Spin Miniprep Kit (QIAGEN).
 
@@ -159,7 +376,7 @@ We transfected each methylated or unmethylated plasmid construct into the K562 l
 
 We quantified enhancer activity by first normalizing firefly luciferase activity against renilla luciferase activity to control for variation in transfection efficiency or cell number. We then asked whether human DNA fragments with strong enhancer activity in the unmethylated condition in mSTARR-seq also displayed strong enhancer activity in our validation experiments (specifically, in the ‘sham’ condition where the sequence was unmethylated). To do so, we used linear mixed effects models to predict log2 normalized luciferase activity as a function of the synthesized fragment length (because larger query fragments tend to have stronger activity), the estimate of enhancer strength in the unmethylated condition from mSTARR-seq (provided in Supplementary file 3), and a random effect of assay batch. To ask whether fragments with MD enhancer activity in mSTARR-seq also displayed MD enhancer activity in our validation experiments, we used a similar modeling approach with log2 normalized luciferase activity in the unmethylated condition divided by log2 normalized luciferase activity in the methylated condition as the outcome variable. In this case, our model included the synthesized fragment length, the estimate of MD activity from mSTARR-seq (provided in Supplementary file 4), and a random effect of assay batch.
 
-## Annotation of analyzed mSTARR-seq fragments
+### Annotation of analyzed mSTARR-seq fragments
 
 Each 200 bp region was originally assayed on one or more ~300 bp fragments. Thus, focusing our annotations on the 200 bp analyzed window alone could miss adjacent genomic features that are responsible for observed enhancer or MD enhancer activity. Therefore, for all annotations, we focused on the window between the start and end position of each assayed DNA fragment that contained a given 200 bp region. In cases where multiple overlapping DNA fragments contained a given 200 bp region, we used the genomic coordinates of the most downstream and most upstream start and end position, respectively.
 
@@ -167,21 +384,21 @@ Using these start and end coordinates for each 200 bp region covered in our expe
 
 To perform our random forests prediction, we gathered the following data for each fragment window associated with each analyzed 200 bp region:
 
-## Random forests classification
+### Random forests classification
 
 To determine whether MD activity could be reliably predicted from a set of sequence and functional genomic feature annotations for each 200 bp region (Supplementary file 6), we conducted random forest analyses using our main data set on detecting MD regulatory elements. We compared MD enhancers with greater activity when unmethylated against enhancers with no evidence for methylation dependence in the K562 cell line (FDR > 50% in the test for MD activity). Because random forests require a complete data set, we removed regions with missing values for any of the predictive features, resulting in a data set of n = 2317 MD enhancers and n = 2657 non-MD enhancers. We did not attempt a parallel analysis using MD enhancers with greater activity when methylated because of the relatively small data set of sequences that exhibited this pattern.
 
 We then used the R package ‘randomForest’ (Liaw and Wiener, 2002) to iteratively construct training sets comprised of approximately 2/3 of the original data, and test sets comprised of the remaining enhancers in the data set (the ‘out of bag’ set). We grew 1000 classification trees and evaluated predictive accuracy using the out of bag test sets (note that although the set of regions used as the training versus test set differ in each iteration, for any given run, the test set were completely held out during model training). We then assigned a given region to a given predicted outcome class if the majority (>50%) of trees ‘voted’ for this class (see Figure 3—figure supplement 2 for true positive/false positive trade-offs using alternative thresholds). To estimate the predictive value of individual features, we calculated the mean decrease in accuracy and the Gini coefficient, and estimated the significance of these contributions via comparison to the results of permutation analyses (1000 permutations of MD versus non-MD classification) implemented in the R package ‘rfPermute’ (Archer, 2015). We considered a variable to be significant if the mean decrease in accuracy and Gini coefficient estimates both passed a 10% empirical FDR (see Figure 3 for significant variables; see Supplementary file 6 for information on all features). We note that these importance measures do not account for correlations between features (e.g., CpG number, CpG density, and methylation level). None of our variables are perfectly collinear, however, and our results in Figure 3 indicate that all significantly predictive features contain some independent information (otherwise the accuracy of the RF would not drop when one feature was removed).
 
-## Transcription factor binding motif enrichment analyses
+### Transcription factor binding motif enrichment analyses
 
 To ask whether binding sites for certain TFs were consistently associated with windows with MD enhancer activity, we used the ‘findMotifsGenome.pl’ script in the motif analysis program HOMER (Heinz et al., 2010) to test for enrichment of 364 known vertebrate binding motifs relative to the background set of fragment windows associated with all mSTARR-seq enhancers. We performed this analysis twice, focusing on test sets of fragment windows associated with MD enhancers that were more active when unmethylated and more active when methylated, respectively. We considered a TF-binding motif to be significantly enriched in each of the test sets if the motif was found on >10% of fragments in the background set and the motif passed a 1% FDR threshold (Benjamini and Hochberg, 1995). Results from our motif enrichment analyses are provided in Figure 4 and Supplementary file 7–8. To test for enrichment of specific TF families among the set of significant motifs identified in the K562 data set, we used hypergeometric tests to compare the proportion of significant motifs belonging to a particular TF family (e.g. ETS, GATA) to the proportion of all tested motifs that belong to that family.
 
-## Analysis of locus-specific DNA methylation data
+### Analysis of locus-specific DNA methylation data
 
 We generated bisulfite sequencing libraries across six replicates from our IFNA experiments (n = 2 unmethylated, IFNA-; n = 2 methylated, IFNA+; n = 2 methylated, IFNA-). Using data from the IFNA- samples, we estimated mean methylation levels for the plasmid backbone (where we expect no methylation) and human insert fragments separately. To ask whether the endogenous methylation level of a given CpG site affects the likelihood of that site gaining or losing DNA methylation marks post-transfection, we used ENCODE whole genome bisulfite sequencing data for K562s (NCBI GEO accession GSM958729). Specifically, for IFNA- unmethylated and methylated replicates separately, we calculated the Spearman correlation between the mean post-transfection methylation level of each CpG site sequenced at ≥1 x coverage in at least one mSTARR sample and its endogenous methylation level in K562s (for CpG sites sequenced at >5 x coverage in the ENCODE dataset; n = 201,524 and 91,103 sites analyzed for the unmethylated and methylated replicates, respectively). To understand whether CpGs in certain TFBS were more likely to gain or lose methylation post-transfection, we estimated the mean methylation level of all CpGs in binding sites identified from K562 ChIP-seq data, for 127 TFs separately (see item (v) in Annotation of analyzed mSTARR-seq fragments). We excluded TFs from this analysis if we did not cover at least 100 CpGs in binding sites for the focal TF, leaving us with 123 and 121 analyzable TFs for unmethylated and methylated samples, respectively. Finally, we used hypergeometric tests to investigate enrichment of individual TF families among the top 20 TFs associated with the greatest change in DNA methylation post-transfection (increase in methylation in the unmethylated condition or demethylation in the methylated condition), using TF family annotations from HOMER (Heinz et al., 2010).
 
-## Correlations between DNA methylation and gene expression levels in primary cells and after IFNA treatment
+### Correlations between DNA methylation and gene expression levels in primary cells and after IFNA treatment
 
 To understand whether mSTARR-seq data explains heterogeneity in in vivo DNA methylation-gene expression correlations across individuals, in primary cells, we used a publicly available data set on 1202 monocyte samples (Reynolds et al., 2014). We downloaded paired genome-wide DNA methylation data (measured on the Illumina HumanMethylation450 BeadChip) and gene expression data (measured on the Illumina HumanHT-12 v4 Expression BeadChip) for each sample. DNA methylation data were provided as continuously varying, unbounded M-values (Du et al., 2010) and expression data were provided as raw signal intensity values, which we normalized using the voom function in the limma R package (Law et al., 2014)).
 
@@ -189,10 +406,10 @@ We filtered the DNA methylation data and expression data to remove probes with m
 
 Finally, to confirm that DNA methylation-gene expression correlations arise following major environmental perturbations to gene expression, we generated mRNA-seq, DNA-seq, and BS-seq data from K562s transfected with methylated libraries and treated with either IFNA (IFNA+) or water (the control condition: IFNA-). After confirming there were no systematic differences in plasmid DNA input between replicates (all R2 >0.98, linear models comparing limma-normalized counts between all pairs of replicates), we used the mRNA-seq data to estimate IFNA effects on enhancer activity. Specifically, we calculated the mean difference in limma-normalized counts between IFNA + and IFNA - samples for each 200 bp region captured in at least one replicate per condition (n = 217,439 regions). To estimate IFNA effects on plasmid DNA methylation levels, we calculated the mean difference in post-transfection methylation levels between IFNA + and IFNA - samples, for CpGs covered by at least one replicate per condition and that also overlapped the set of 217,439 analyzable 200 bp regions (n = 7010 CpG sites from 2678 200 bp regions). We then calculated the Spearman correlation between the effect of the IFNA challenge on enhancer activity and the effect of IFNA on mean plasmid methylation levels, for all 200 bp regions and for 200 bp regions that showed progressively more strongly induced enhancer activity (Figure 5—figure supplement 1). Finally, we used logistic regression to test whether IFNA-induced changes in enhancer activity predicted the probability of demethylation after IFNA treatment, where sites were categorized into those that either retained (0) or lost (1) their initial, M.SssI-induced methylation status.
 
-## Cell lines
+### Cell lines
 
 All experiments described here used the K562 cell line (ATCC CCL-243). Cells were obtained from Duke University’s Cell Culture Facility and were tested by the facility for mycoplasm contamination and cell line identity (through STR profiling).
 
-## Data availability
+### Data availability
 
 Accession numbers and links for publicly available data sets used for analyses are provided in the Materials and methods. All sequencing data generated as part of this work are available through NCBI’s Short Read Archive (SRP120556). The mSTARR-seq protocol is available online at www.tung-lab.org/protocols-and-software.html. The DNA input library described here is available on request from the authors, and the pmSTARRseq1 vector is available through AddGene.

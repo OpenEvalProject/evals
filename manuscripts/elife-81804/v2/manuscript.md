@@ -18,20 +18,20 @@
 
 ### Affiliations
 
-1. https://ror.org/001bbwj30 Azienda Unità Sanitaria Locale - IRCCS di Reggio Emilia Reggio Emilia Italy
-2. https://ror.org/0018xw886 Azienda Unità Sanitaria Locale Di Modena Modena Italy
+1. Azienda Unità Sanitaria Locale - IRCCS di Reggio Emilia Reggio Emilia Italy ([ROR:001bbwj30](https://ror.org/001bbwj30))
+2. Azienda Unità Sanitaria Locale Di Modena Modena Italy ([ROR:0018xw886](https://ror.org/0018xw886))
 3. Istituto per lo Studio, la Prevenzione e la Rete Oncologica (ISPRO) Florence Italy
 4. Registro Tumori del Veneto, Azienda Zero Padua Italy
-5. https://ror.org/001f7a930 Centro di Prevenzione Oncologica, Azienda Ospedaliero-Universitaria Città della Salute e della Scienza di Torino Turin Italy
+5. Centro di Prevenzione Oncologica, Azienda Ospedaliero-Universitaria Città della Salute e della Scienza di Torino Turin Italy ([ROR:001f7a930](https://ror.org/001f7a930))
 6. Servizio Prevenzione Collettiva e Sanità Pubblica, Direzione Generale Cura della Persona, Salute e Welfare, Regione Emilia-Romagna Bologna Italy
-7. https://ror.org/02hssy432 Istituto Superiore di Sanita Rome Italy
+7. Istituto Superiore di Sanita Rome Italy ([ROR:02hssy432](https://ror.org/02hssy432))
 8. Osservatorio Nazionale Screening Florence Italy
 
 † Corresponding author
 
 ## Abstract
 
-In Italy, regions have the mandate to implement population-based screening programs for breast, cervical, and colorectal cancer. From March to May 2020, a severe lockdown was imposed due to the COVID-19 pandemic by the Italian Ministry of Health, with the suspension of screening programs. This paper describes the impact of the pandemic on Italian screening activities and test coverage in 2020 overall and by socioeconomic characteristics. The regional number of subjects invited and of screening tests performed in 2020 were compared with those in 2019. Invitation and examination coverage were also calculated. PASSI surveillance system, through telephone interviews, collects information about screening test uptake by test provider (public screening and private opportunistic). Test coverage and test uptake in the last year were computed by educational attainment, perceived economic difficulties, and citizenship. A reduction of subjects invited and tests performed, with differences between periods and geographical macro areas, was observed in 2020 vs. 2019. The reduction in examination coverage was larger than that in invitation coverage for all screening programs. From the second half of 2020, the trend for test coverage showed a decrease in all the macro areas for all the screening programs. Compared with the pre-pandemic period, there was a greater difference according to the level of education in the odds of having had a test last year vs. never having been screened or not being up to date with screening tests. The lockdown and the ongoing COVID-19 emergency caused an important delay in screening activities. This increased the preexisting individual and geographical inequalities in access. The opportunistic screening did not mitigate the impact of the pandemic. This study was partially supported by Italian Ministry of Health – Ricerca Corrente Annual Program 2023 and by the Emilian Region DGR 839/22.
+Background:In Italy, regions have the mandate to implement population-based screening programs for breast, cervical, and colorectal cancer. From March to May 2020, a severe lockdown was imposed due to the COVID-19 pandemic by the Italian Ministry of Health, with the suspension of screening programs. This paper describes the impact of the pandemic on Italian screening activities and test coverage in 2020 overall and by socioeconomic characteristics.Methods:The regional number of subjects invited and of screening tests performed in 2020 were compared with those in 2019. Invitation and examination coverage were also calculated. PASSI surveillance system, through telephone interviews, collects information about screening test uptake by test provider (public screening and private opportunistic). Test coverage and test uptake in the last year were computed by educational attainment, perceived economic difficulties, and citizenship.Results:A reduction of subjects invited and tests performed, with differences between periods and geographical macro areas, was observed in 2020 vs. 2019. The reduction in examination coverage was larger than that in invitation coverage for all screening programs. From the second half of 2020, the trend for test coverage showed a decrease in all the macro areas for all the screening programs. Compared with the pre-pandemic period, there was a greater difference according to the level of education in the odds of having had a test last year vs. never having been screened or not being up to date with screening tests.Conclusions:The lockdown and the ongoing COVID-19 emergency caused an important delay in screening activities. This increased the preexisting individual and geographical inequalities in access. The opportunistic screening did not mitigate the impact of the pandemic.Funding:This study was partially supported by Italian Ministry of Health – Ricerca Corrente Annual Program 2023 and by the Emilian Region DGR 839/22.
 
 ## Introduction
 
@@ -40,6 +40,41 @@ Since early 2020, the COVID-19 pandemic and the measures taken by most governmen
 Cancer screening tests are nonurgent services, and thus they were among the first suspended activities during the first pandemic wave in most European countries (Figueroa et al., 2021). On the other hand, organized screening programs actively invite the target population. The active invitation allows to accurately plan the workload, which represented an opportunity for organized screening programs to resume post-lockdown activities in a rational way according to accurate prioritization, aiming to minimize the impact of the pandemic on cancer diagnosis delays (Castanon et al., 2021, Campbell et al., 2021). Thus, the presence of a structured and well-organized program has been recognized as a possible element favoring the resilience of health services to the pandemic disruption (Mangone et al., 2022).
 
 In Italy, a national law included organized screening programs for breast, cervical, and colorectal cancers among the public health interventions that all the regions must carry out (Decreto del Presidente del Consiglio dei Ministri, 12 gennaio, 2017). The target population, the test, and the intervals used are reported in Table 1. Before the COVID-19 pandemic, the invitation coverage was almost complete for all screening programs in Central Italy, and for breast cancer in Northern Italy, while for colorectal cancer screening, there were still areas, especially in Southern Italy, where large parts of the target population were not actively invited. There are large differences in participation in all three screening programs among regions, with the northern regions achieving higher participation rates than the southern ones. Routine statistics on activity and performance indicators are produced by the National Screening Monitoring Center (ONS), which is a technical network appointed by the Italian Ministry of Health to monitor regional screening campaigns, and they are available at https://www.osservatorionazionalescreening.it/.
+
+**Table 1.**
+ Italian Ministry of Health recommendations for cancer screening programs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Target population</th>
+      <th>Test</th>
+      <th>Interval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cervical cancer</td>
+      <td>Women 25–64 years</td>
+      <td>Pap test (25 to 29/34 years)HPV test (30/35–64 years)</td>
+      <td>3 years after negative Pap5 years after negative HPV</td>
+    </tr>
+    <tr>
+      <td>Breast cancer</td>
+      <td>To be implemented:Women 50–69 yearsSuggested:Women 45–49 yearsWomen 70–74 years</td>
+      <td>Mammography</td>
+      <td>2 years for women 50–741 year for women 45–49</td>
+    </tr>
+    <tr>
+      <td>Colorectal cancer</td>
+      <td>To be implemented:Women and men 50–69 yearsSuggested:Women and men 70–74 years</td>
+      <td>Fecal immunochemical test (FIT) orSigmoidoscopy at 58/60 years</td>
+      <td>2 years after negative FITOnce in a life sigmoidoscopy</td>
+    </tr>
+  </tbody>
+</table>
 
 Across the country, opportunistic screening – offered by both private and public providers – is common and does not have a specific informative flow for reporting and monitoring. In 2010–13 in Italy, test coverage in the target population that reaches 75, 80, and 48% for breast, cervical, and colorectal cancers, respectively. The contribution of opportunistic screening to coverage differed across the three screening programs with about one fourth, one third, and one sixth of the coverage attributable to opportunistic testing for breast, cervical, and colorectal cancer screening test coverage, respectively (Carrozzi et al., 2015).
 
@@ -53,7 +88,7 @@ The aim of this paper is to describe the impact of the pandemic and infection co
 
 ## Methods
 
-## Setting and description of the infection control measures
+### Setting and description of the infection control measures
 
 In Italy, breast, cervical, and colorectal cancer screenings are recommended, and regional health systems are in charge of implementing them according to the recommendations of the European Commission and of the Italian Ministry of Health. The target ages, intervals, and test modalities recommended in Italy are reported in Table 1; Ministero della Salute e Osservatorio Nazionale Screening, 2006, Ronco et al., 2012.
 
@@ -61,7 +96,7 @@ After the first COVID-19 case was diagnosed on February 20, apparently, small cl
 
 The strict lockdown, that is, the 'stay at home' period in which only essential activities were allowed, ended at the beginning of May 2020, but the restrictions were gradually removed until the beginning of June 2020, when only physical distancing and wearing face masks remained mandatory (Marziano et al., 2021). During the summer, COVID-19 incidence remained relatively low throughout the country, but in October it increased rapidly and new restrictions were introduced (Manica et al., 2021). Regions or provinces were classified as white, yellow, orange, and red according to a set of indicators measuring the quality of data reporting, the testing capacity, the incidence trend (the Rt), the adequacy of contact tracing, and the pressure on the health system (Riccardo et al., 2022). Each color code corresponded to a set of mandatory restrictions that the regional government should implement and eventually integrate with local measures. Among these measures, none was directed to reduce nonurgent health services and, in several regions, cancer screening had been included among the services, which had to be maintained. Nevertheless, in many areas, the pressure on hospitals became so strong that it became necessary to reduce nonurgent activities in order to redirect health professionals to COVID-19-related activities. Furthermore, in orange and red zones there were restrictions on moving from one municipality to another (even if these did not apply for medical checks/reasons) and restrictions on public transport. Figure 1 summarizes the COVID-19 incidence and mortality in Italy by geographical area during the first and the second waves in 2020.
 
-## Study design
+### Study design
 
 This study presents the results of two national surveys. The first collected the screening activities, in terms of invitations and first-level tests performed, of the public, organized screening programs during 2020 and the first five months of 2021, compared with the same activities in performed 2019. The second survey is the PASSI’s survey (one of the two Italian National Health Interviews), which collects information on screening uptake by the target population, both in organized screening and in opportunistic screening.
 
@@ -69,7 +104,7 @@ From the first survey, we can assess how much the screening activities were slow
 
 From the second survey, we measure the impact of the pandemic on test coverage in the target population, and the proportion of the target population who had a test in the last year. From this source, we can distinguish the tests performed in public programs and in private opportunistic screening, and we can also measure the coverage by socioeconomic characteristics of the target population.
 
-## Data sources
+### Data sources
 
 The National Screening Monitoring Center (ONS) monitors regional screening performances and trends, and a summary report is regularly published (https://www.osservatorionazionalescreening.it/content/rapporto-ons-2020). In October 2020, the ONS promoted an additional survey to monitor the impact of the pandemic on screening programs (Mantellini et al., 2020; Battisti et al., 2022).
 
@@ -83,7 +118,7 @@ In this study, the analyzed data were collected by PASSI between 2017 and 2020, 
 
 PASSI provides information on test coverage in the target population, including both the share of tests performed within the organized screening programs and those performed outside (spontaneous screening). PASSI provides data on the differences in the execution of screening tests also with respect to socio-demographic characteristics. The exact number of interviews included in the analyses for each question is reported in Supplementary file 7.
 
-## Outcomes definition
+### Outcomes definition
 
 Based on the ONS survey, we report the number of invitations sent during the investigation period and the number of screening examinations performed in the study period. Invitation (percentage of citizens who were sent an invitation to a screening during the analyzed period compared to the population to be invited in the period in order to reach all the target population in the screening interval, excluding undelivered invitations and noneligible subjects) and examination (percentage of citizens who performed the test compared to the population to be tested in the period in order to reach all the target population in the screening interval, excluding those with specific exclusion criteria) coverage relatively to 2017–2019 is also reported.
 
@@ -93,7 +128,7 @@ Based on the date of the last test before the PASSI interview and the reported p
 
 We also only considered the tests performed in the last year as an outcome for each screening test.
 
-## Statistical analysis
+### Statistical analysis
 
 For the ONS surveys, only descriptive analyses are presented.
 
@@ -107,7 +142,7 @@ The statistical package Stata 16 software (StataCorp LP) was used to analyze the
 
 ## Results
 
-## Impact on screening programs
+### Impact on screening programs
 
 In total, 21 regions out of 21 participated in the survey. In one region, Calabria, only data from three out of five provinces were available; the data from Basilicata refer to the whole period of the study, thus it is excluded from sub-period analyses; the colorectal cancer screening data from Umbria refer to the 50–74-year-old target population rather than 50–69.
 
@@ -129,7 +164,107 @@ Compared to 2017–2019, in 2020 the reduction in examination coverage was large
 
 The delay accumulated until May 2021 in screening the target population differs by macro area, and it is larger for Southern Italy and smaller for Central Italy for the three programs. Even though the efforts in restarting invitations were dissimilar, the difference in delay between breast and cervical cancer was only 1.2 months. Ranges between regions within macro areas are important. In fact, in Northern and Central Italy one or more regions cumulated a negligible delay of fewer than 45 days, while some regions cumulated about 1 year of delay in all programs (Table 2).
 
-## Impact on overall screening test coverage
+**Table 2.**
+ Cumulative reduction of tests performed in Italian screening programs and average cumulated delay in testing, with ranges between regions, by geographical macro area.January 2020 to May 2021. Data from ONS survey.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Cervix</th>
+      <th colspan="4">Breast</th>
+      <th colspan="4">Colorectal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Macro area</td>
+      <td rowspan="2">Test cumulative reduction Jan 2020–May 2021</td>
+      <td rowspan="2">Average delay in months</td>
+      <td colspan="2">Range between regions</td>
+      <td rowspan="2">Test cumulative reduction Jan 2020–May 2021</td>
+      <td rowspan="2">Average delay in months</td>
+      <td colspan="2">Range between regions</td>
+      <td rowspan="2">Test cumulative reduction Jan 2020–May 2021</td>
+      <td rowspan="2">Average delay in months</td>
+      <td colspan="2">Range between regions</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Minimum</td>
+      <td>Maximum</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
+      <td>Minimum</td>
+      <td>Maximum</td>
+    </tr>
+    <tr>
+      <td>North</td>
+      <td>–409,092</td>
+      <td>–6.4</td>
+      <td>–12.1</td>
+      <td>+7.5</td>
+      <td>–438,744</td>
+      <td>–4.5</td>
+      <td>–10.1</td>
+      <td>–0.9</td>
+      <td>–800,101</td>
+      <td>–5.9</td>
+      <td>–14</td>
+      <td>+2.7</td>
+    </tr>
+    <tr>
+      <td>Center</td>
+      <td>–136,393</td>
+      <td>–4.2</td>
+      <td>–6.6</td>
+      <td>–0.5</td>
+      <td>–154,783</td>
+      <td>–4.0</td>
+      <td>–6.0</td>
+      <td>–1.4</td>
+      <td>–213,418</td>
+      <td>–4.4</td>
+      <td>–6.3</td>
+      <td>–0.8</td>
+    </tr>
+    <tr>
+      <td>South and Islands</td>
+      <td>–239,275</td>
+      <td>–7.2</td>
+      <td>–12.7</td>
+      <td>–5.6</td>
+      <td>–223,439</td>
+      <td>–6.9</td>
+      <td>–11.2</td>
+      <td>–5.8</td>
+      <td>–182,468</td>
+      <td>–8.4</td>
+      <td>–13.4</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>–784,760</td>
+      <td>–6.0</td>
+      <td></td>
+      <td></td>
+      <td>–816,966</td>
+      <td>–4.8</td>
+      <td></td>
+      <td></td>
+      <td>–1,195,987</td>
+      <td>–5.8</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_ONS: National Screening Monitoring Centre._
+
+### Impact on overall screening test coverage
 
 The trend for test coverage as reported by PASSI showed a clear decrease in all the macro areas for the mammographic and colorectal screenings starting from the second half of 2020 (Figure 4). Also, for coverage with Pap tests or HPV tests, the decrease is appreciable, but the magnitude is smaller. It is also appreciable that in 2020 we had an inversion in a long-term trend, with a decrease in opportunistic screening in favor of organized screening for cervical cancer (Figure 5).
 
@@ -157,6 +292,901 @@ The decrease in test coverage is steeper in people with a lower level of educati
 
 Multivariate Poisson models show that the probability of having a test in the last year was lower even when adjusting for all other variables (Table 3). Furthermore, stratifying the Poisson models by period, in 2020, the probability of having had a test in the last year showed larger differences according to the level of education than in the pre-pandemic period for the three screenings (Table 4); nevertheless, the differences could be due to random fluctuations. Furthermore, in 2020, for breast cancer screening only foreigners had a lower probability of having had a test than Italians, inverting what was observed in the pre-pandemic period (Table 3). The differences by age and economic difficulties remained substantially unchanged in the pandemic compared with the pre-pandemic period.
 
+**Table 3.**
+ Multivariable Poisson regression models comparing the prevalence of having had a test in the last year by age, sex, familial status, socioeconomic characteristics, citizenship, and pre-pandemic and pandemic period for cervical, breast, and colorectal cancer screening in Italy.PRR: Prevalence Rate Ratio.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Cervix</th>
+      <th colspan="3">Breast</th>
+      <th colspan="3">Colorectal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>25–34</td>
+      <td>1.06</td>
+      <td>1.01</td>
+      <td>1.11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>35–49</td>
+      <td>1.10</td>
+      <td>1.06</td>
+      <td>1.14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50–64</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.13</td>
+      <td>1.08</td>
+      <td>1.18</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>1.15</td>
+      <td>1.10</td>
+      <td>1.20</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.99</td>
+      <td>0.95</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>Familial status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Married or with partner</td>
+      <td>1.09</td>
+      <td>1.05</td>
+      <td>1.13</td>
+      <td>1.03</td>
+      <td>0.99</td>
+      <td>1.08</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alone</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Educational level</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No title/elementary</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Middle school</td>
+      <td>1.27</td>
+      <td>1.14</td>
+      <td>1.42</td>
+      <td>1.14</td>
+      <td>1.05</td>
+      <td>1.24</td>
+      <td>1.12</td>
+      <td>1.03</td>
+      <td>1.22</td>
+    </tr>
+    <tr>
+      <td>High school</td>
+      <td>1.46</td>
+      <td>1.31</td>
+      <td>1.63</td>
+      <td>1.21</td>
+      <td>1.12</td>
+      <td>1.32</td>
+      <td>1.20</td>
+      <td>1.10</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <td>Degree</td>
+      <td>1.65</td>
+      <td>1.47</td>
+      <td>1.84</td>
+      <td>1.27</td>
+      <td>1.16</td>
+      <td>1.39</td>
+      <td>1.12</td>
+      <td>1.01</td>
+      <td>1.23</td>
+    </tr>
+    <tr>
+      <td>Economic difficulties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Many</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Some</td>
+      <td>1.05</td>
+      <td>0.99</td>
+      <td>1.12</td>
+      <td>1.08</td>
+      <td>1.00</td>
+      <td>1.16</td>
+      <td>1.27</td>
+      <td>1.16</td>
+      <td>1.38</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>1.20</td>
+      <td>1.12</td>
+      <td>1.28</td>
+      <td>1.27</td>
+      <td>1.18</td>
+      <td>1.37</td>
+      <td>1.74</td>
+      <td>1.59</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <td>Citizenship</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Italian</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Foreigner</td>
+      <td>0.95</td>
+      <td>0.89</td>
+      <td>1.01</td>
+      <td>0.81</td>
+      <td>0.73</td>
+      <td>0.90</td>
+      <td>0.99</td>
+      <td>0.87</td>
+      <td>1.12</td>
+    </tr>
+    <tr>
+      <td>Period</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2017–2019</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>0.76</td>
+      <td>0.73</td>
+      <td>0.80</td>
+      <td>0.83</td>
+      <td>0.78</td>
+      <td>0.89</td>
+      <td>0.74</td>
+      <td>0.69</td>
+      <td>0.79</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Multivariable Poisson regression models comparing the prevalence of having had a test in the last year by age, sex, familial status, socioeconomic characteristics, and citizenship in the pandemic and pre-pandemic period for cervical, breast, and colorectal cancer screening in Italy.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="6">Cervix</th>
+      <th colspan="6">Breast</th>
+      <th colspan="6">Colorectal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">2017–2019</td>
+      <td colspan="3">2020</td>
+      <td colspan="3">2017–2019</td>
+      <td colspan="3">2020</td>
+      <td colspan="3">2017–2019</td>
+      <td colspan="3">2020</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+      <td>PRR</td>
+      <td colspan="2">95% CI</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>25–34</td>
+      <td>1.05</td>
+      <td>1.00</td>
+      <td>1.10</td>
+      <td>1.11</td>
+      <td>0.96</td>
+      <td>1.27</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>35–49</td>
+      <td>1.10</td>
+      <td>1.06</td>
+      <td>1.14</td>
+      <td>1.10</td>
+      <td>0.98</td>
+      <td>1.24</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50–64</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>50–59</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.13</td>
+      <td>1.08</td>
+      <td>1.18</td>
+      <td>1.14</td>
+      <td>1.00</td>
+      <td>1.29</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>60–69</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>1.15</td>
+      <td>1.10</td>
+      <td>1.20</td>
+      <td>1.15</td>
+      <td>1.01</td>
+      <td>1.31</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.98</td>
+      <td>0.94</td>
+      <td>1.02</td>
+      <td>1.01</td>
+      <td>0.89</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Familial status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Married or with partner</td>
+      <td>1.09</td>
+      <td>1.05</td>
+      <td>1.13</td>
+      <td>1.10</td>
+      <td>0.99</td>
+      <td>1.22</td>
+      <td>1.04</td>
+      <td>0.99</td>
+      <td>1.09</td>
+      <td>1.01</td>
+      <td>0.88</td>
+      <td>1.15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alone</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Educational level</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No title/elementary</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Middle school</td>
+      <td>1.24</td>
+      <td>1.11</td>
+      <td>1.39</td>
+      <td>1.56</td>
+      <td>0.98</td>
+      <td>2.49</td>
+      <td>1.10</td>
+      <td>1.02</td>
+      <td>1.20</td>
+      <td>1.52</td>
+      <td>1.14</td>
+      <td>2.02</td>
+      <td>1.10</td>
+      <td>1.01</td>
+      <td>1.20</td>
+      <td>1.29</td>
+      <td>0.94</td>
+      <td>1.77</td>
+    </tr>
+    <tr>
+      <td>High school</td>
+      <td>1.41</td>
+      <td>1.26</td>
+      <td>1.58</td>
+      <td>1.89</td>
+      <td>1.19</td>
+      <td>3.00</td>
+      <td>1.17</td>
+      <td>1.08</td>
+      <td>1.27</td>
+      <td>1.62</td>
+      <td>1.21</td>
+      <td>2.17</td>
+      <td>1.18</td>
+      <td>1.08</td>
+      <td>1.29</td>
+      <td>1.37</td>
+      <td>1.00</td>
+      <td>1.89</td>
+    </tr>
+    <tr>
+      <td>Degree</td>
+      <td>1.58</td>
+      <td>1.41</td>
+      <td>1.77</td>
+      <td>2.21</td>
+      <td>1.38</td>
+      <td>3.54</td>
+      <td>1.23</td>
+      <td>1.12</td>
+      <td>1.36</td>
+      <td>1.61</td>
+      <td>1.18</td>
+      <td>2.21</td>
+      <td>1.06</td>
+      <td>0.96</td>
+      <td>1.17</td>
+      <td>1.47</td>
+      <td>1.04</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <td>Economic difficulties</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Many</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Some</td>
+      <td>1.06</td>
+      <td>1.00</td>
+      <td>1.13</td>
+      <td>1.03</td>
+      <td>0.82</td>
+      <td>1.29</td>
+      <td>1.08</td>
+      <td>1.00</td>
+      <td>1.17</td>
+      <td>1.04</td>
+      <td>0.81</td>
+      <td>1.34</td>
+      <td>1.27</td>
+      <td>1.16</td>
+      <td>1.39</td>
+      <td>1.27</td>
+      <td>0.95</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <td>None</td>
+      <td>1.20</td>
+      <td>1.13</td>
+      <td>1.28</td>
+      <td>1.18</td>
+      <td>0.94</td>
+      <td>1.47</td>
+      <td>1.27</td>
+      <td>1.17</td>
+      <td>1.37</td>
+      <td>1.29</td>
+      <td>1.00</td>
+      <td>1.67</td>
+      <td>1.72</td>
+      <td>1.58</td>
+      <td>1.88</td>
+      <td>1.83</td>
+      <td>1.38</td>
+      <td>2.42</td>
+    </tr>
+    <tr>
+      <td>Citizenship</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Italian</td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+      <td>ref.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Foreigner</td>
+      <td>0.93</td>
+      <td>0.87</td>
+      <td>0.99</td>
+      <td>1.06</td>
+      <td>0.88</td>
+      <td>1.27</td>
+      <td>0.83</td>
+      <td>0.74</td>
+      <td>0.92</td>
+      <td>0.72</td>
+      <td>0.52</td>
+      <td>1.01</td>
+      <td>0.93</td>
+      <td>0.82</td>
+      <td>1.05</td>
+      <td>1.31</td>
+      <td>0.94</td>
+      <td>1.82</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
 The interruption of screening programs during lockdown over March–May 2020, as well as the reduction in their activity in the following months, caused, on average, a delay of at least 6 months for cervical cancer, 5 months for breast cervical, and 6 months for colorectal cancer screening. There are large differences in the cumulated delay between macro areas and, within macro areas, between regions (Table 2) and local health authorities (Mangone et al., 2022; Gathani et al., 2021). The largest delays are observed in those areas where screening programs had historical problems in extending invitations to the whole target population and participation was already low before the pandemic – particularly in Southern Italy but also in some areas of Northern Italy – where cervical cancer screening was recently implemented and coverage relied largely on opportunistic screening (Petrelli et al., 2018; Giorgi Rossi et al., 2019; Giorgi Rossi et al., 2018). Northern Italy was also the most affected area by the pandemic.
@@ -173,10 +1203,10 @@ The reported data show large differences across countries in the screening progr
 
 Therefore, individual inequalities are also going to increase. In fact, the difference by educational level seems to be stronger in 2020 than in previous years. Furthermore, in breast cancer screening differences disadvantaging immigrants – that were small in previous years – became larger in 2020. Even if this difference could be due to chance, it may also reflect that immigrants rely mostly on organized screening and scarcely on opportunistic screening for mammography, which is a relatively expensive test. Studies from the US also showed increased inequalities consequent to the screening program interruption, with a larger impact in the decrease of screening uptake in rural areas and for beneficiaries of public insurance or those who are not insured at all (Monsivais et al., 2022, Amram et al., 2022).
 
-## Possible impact
+### Possible impact
 
 Many studies from Italy and other countries reported a delay in diagnoses for many cancer sites (Vanni et al., 2020, Gathani et al., 2021). In some studies, a shift to more advanced stages and different initial therapeutic approaches have been observed for breast cancer and colorectal cancers (Toss et al., 2021; Vanni et al., 2021; Vives et al., 2022; Blay et al., 2021; Longcroft-Wheaton et al., 2021). Investigating the impact on the cancer stage is out of the scope of this study. Nevertheless, computing the expected delay cumulated up to now can give an estimate of the impact on mortality and, for cervical and colorectal cancer, on incidence. In fact, several mathematical models have been adapted precisely for this scope. For breast and colorectal cancer, in England, a model assuming a 12-month suspension of screening and early diagnosis pathways and reallocating all diagnoses to symptomatic diagnosis estimated an excess of about 300 breast cancer deaths (8–10% increase) and 1500 colorectal cancer deaths (15–17%) in the next 5 years (Maringe et al., 2020). The expected health impact of the disruption may be larger for clinical than for screening services. The results of simulation models focused on the analysis of the impact of screening programs disruption are suggesting that we can expect a relative increase in breast and colorectal cancer-specific mortality ranging between 1% and 3% over the next 10–30 years, depending on the duration of the disruption and on the catch-up strategies adopted. More than half of the excess deaths are expected to occur during the first 5–10 years following disruption and the health impact might be larger for older people and disadvantaged population subgroups. For cervical cancer, it has been estimated that a delay of 6 months national screening program would lead to about 600 more cancers in England that would occur in the next screening round in the absence of catch-up strategies (Castanon et al., 2021, Castanon et al., 2022). We can expect a similar impact of screening disruption in Italy, where we observed a wide variability in the length of disruption, with a 6-month average delay in the invitations (Kregting et al., 2021; de Jonge et al., 2021; Duffy et al., 2022).
 
-## Conclusions
+### Conclusions
 
 The lockdown and the ongoing COVID-19 emergency caused an important delay in screening activities. Catch-up of backlog was different across regions, and differences cannot be explained by the severity of the pandemic in different areas. The resilience of the screening programs seems to reflect the historical robustness of the organization with areas that were able to reach higher invitation and test coverage reacting more promptly to the COVID-19 crisis. The delay of screening programs increased the preexisting individual and geographical inequalities in access. The opportunistic screening did not mitigate the pandemic impact.

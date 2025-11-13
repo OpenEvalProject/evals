@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.24063.001 Passive mechanisms of mate guarding are used by males to promote sperm precedence with little cost, but these tactics can be disadvantageous for their mates and other males. Mated females of the plant bug Lygus hesperus are rendered temporarily unattractive by seminal fluids containing myristyl acetate and geranylgeranyl acetate. These antiaphrodisiac pheromones are gradually released from the female’s gonopore, declining until they no longer suppress male courtship. Because starting quantities of these compounds can vary widely, the repellant signal becomes less reliable over time. Evidence was found of a complimentary mechanism that more accurately conveys female mating status. Once inside the female, geranylgeranyl acetate is progressively converted to geranylgeraniol then externalized. Geranylgeraniol counteracts the antiaphrodisiac effect despite having no inherent attractant properties of its own. This is the first evidence for such an anti-antiaphrodisiac pheromone, adding a new element to the communication mechanisms regulating reproductive behaviors. DOI: http://dx.doi.org/10.7554/eLife.24063.001
+Passive mechanisms of mate guarding are used by males to promote sperm precedence with little cost, but these tactics can be disadvantageous for their mates and other males. Mated females of the plant bug Lygus hesperus are rendered temporarily unattractive by seminal fluids containing myristyl acetate and geranylgeranyl acetate. These antiaphrodisiac pheromones are gradually released from the female’s gonopore, declining until they no longer suppress male courtship. Because starting quantities of these compounds can vary widely, the repellant signal becomes less reliable over time. Evidence was found of a complimentary mechanism that more accurately conveys female mating status. Once inside the female, geranylgeranyl acetate is progressively converted to geranylgeraniol then externalized. Geranylgeraniol counteracts the antiaphrodisiac effect despite having no inherent attractant properties of its own. This is the first evidence for such an anti-antiaphrodisiac pheromone, adding a new element to the communication mechanisms regulating reproductive behaviors.
 
 ## Introduction
 
@@ -30,45 +30,45 @@ Here, we undertook a detailed analysis of the composition of L. hesperus spermat
 
 ## Results
 
-## Persistence of antiaphrodisiac effect
+### Persistence of antiaphrodisiac effect
 
-Mated females are less likely to be courted by a male than virgin females on the first day after mating (χ
+Mated females are less likely to be courted by a male than virgin females on the first day after mating (χ2 = 19.309, df = 1, p<0.001). However, this effect only persists for a few days and does not appear to influence the behavior of all potential mates (Figure 1). Over time the rate of courtship increases so that by five days after mating those females are as likely to be courted as virgins (χ2 = 0.004, df = 1, p=0.953). The variability and gradual increase in courtship observed may be the effect of changing levels of antiaphrodisiac being emitted by the female.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig1-v1.jpg)
 
-**Figure 1.:** L. hesperus females courted by virgin males at different intervals after insemination relative to courtship rates for similarly aged virgin females.Numbers above bars indicate sample sizes. Rates of courtship differs significantly between mated and virgin females for each of the initial four days (2 × 2 χ2-tests, p<0.05).DOI: http://dx.doi.org/10.7554/eLife.24063.003
+**Figure 1.:** Numbers above bars indicate sample sizes. Rates of courtship differs significantly between mated and virgin females for each of the initial four days (2 × 2 χ2-tests, p<0.05).
 
-## Odorant components of spermatophore
+### Odorant components of spermatophore
 
-GC-MS was used to identify and quantify three compounds that are found in the male accessory glands and in spermatophores dissected from females at various dates after mating (an example chromatogram of a spermatophore measured two days after mating is provided in
+GC-MS was used to identify and quantify three compounds that are found in the male accessory glands and in spermatophores dissected from females at various dates after mating (an example chromatogram of a spermatophore measured two days after mating is provided in Figure 2). We confirmed the presence of the previously identified antiaphrodisiac (Brent and Byers, 2011) myristyl acetate (MA), and also found two diterpenes, geranylgeranyl acetate (GGA) and geranylgeraniol (GGOH). The first two are found in high concentrations (tens of ng) in the male accessory glands, but GGOH is observed there only in trace quantities (Figure 3). When the spermatophore is sampled shortly after mating, the concentration of GGOH begins to increase, peaking two days later and subsequently declining. MA and GGA decline over this same period but the decrease in GGA is much more precipitous, likely as a result of the combined effects of externalization and conversion to GGOH. GC-MS analysis of the headspace of mated females over the same post-mating span indicated that these compounds were externalized in concentrations proportional to the amount found in the spermatophores, although by four days after mating the concentrations were too low to be accurately quantified (Figure 4).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig2-v1.jpg)
 
-**Figure 2.:** A) the three standards, and (B) a hexane extract of five pooled spermatophores excised from females two days after mating.Highlighted by arrows are peaks with matching retention times for myristyl acetate (MA), geranylgeranyl acetate (GGA) and geranylgeraniol (GGOH). Also shown are the mass spectra and chemical structures for each of the three compounds: (C) MA, (D) GGA, and (E) GGOH.DOI: http://dx.doi.org/10.7554/eLife.24063.004
+**Figure 2.:** Highlighted by arrows are peaks with matching retention times for myristyl acetate (MA), geranylgeranyl acetate (GGA) and geranylgeraniol (GGOH). Also shown are the mass spectra and chemical structures for each of the three compounds: (C) MA, (D) GGA, and (E) GGOH.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig3-v1.jpg)
 
-**Figure 3.:** GC-MS was used to quantify ten samples consisting of five pooled spermatophores for each interval.DOI: http://dx.doi.org/10.7554/eLife.24063.00510.7554/eLife.24063.006Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.24063.006
+**Figure 3.:** GC-MS was used to quantify ten samples consisting of five pooled spermatophores for each interval.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig4-v1.jpg)
 
-**Figure 4.:** Data is shown for calculated individual female emittance.DOI: http://dx.doi.org/10.7554/eLife.24063.00710.7554/eLife.24063.008Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.24063.008
+**Figure 4.:** Data is shown for calculated individual female emittance.
 
-## Male responses to spermatophore components
+### Male responses to spermatophore components
 
-Male responses to the three compounds were tested using synthetic versions (500 ng in 1 µl of ethanol) applied topically to virgin females. The results varied significantly across the treatments (χ
+Male responses to the three compounds were tested using synthetic versions (500 ng in 1 µl of ethanol) applied topically to virgin females. The results varied significantly across the treatments (χ2 = 25.993, df = 7, p<0.001). Males exhibited less interest in courting MA-treated females relative to controls (Figure 5; 2 × 2 χ2 = 5.762, df = 1, p=0.016). The male response to MA appears to be dosage dependent (Figure 6; χ2 = 37.466, df = 4, p<0.001). Males courted treated females as often as controls when the topical application concentration was 5 × 10−10 g µl−1 (χ2 = 0.004, df = 1, p=0.953), but any amount of MA above that elicited a similarly significant suppression of courtship (p<0.01) suggesting an activation threshold rather than a gradient response (Figure 6). Unlike MA, applications of either GGA (χ2 = 0.686, df = 1, p=0.407) or GGOH (χ2 = 0.041, df = 1, p=0.839) at the same dosage did not significantly change courtship behavior compared to ethanol (Figure 5). Courtship rates did not change when GGA was combined with MA (χ2 = 0.018, df = 1, p=0.894) or GGOH (χ2 = 0.041, df = 1, p=0.840) relative to individual applications of these compounds. In contrast, combining GGOH with MA counteracted the antiaphrodisiac effect of the latter so that courtship rates were as high as the control (χ2 = 0.168, df = 1, p=0.682). Topical application of 1 or 10 ng GGOH to newly mated females was also able to overcome the natural antiaphrodisiac effect of the full suite of seminal constituents (Figure 7; χ2 = 16.506, df = 3, p<0.001). However, applying GGOH in combination with both MA and GGA did not prevent females from becoming as unattractive to males as females treated with just MA (Figure 5; χ2 = 6.994, df = 1, p=0.008), potentially indicating a synergistic effect of GGA with MA to reduce female attractiveness.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig5-v1.jpg)
 
-**Figure 5.:** Treatments with an asterisk over them differed significantly in frequency from the EtOH control (2 × 2 χ2-tests, p<0.05). For all treatments, n = 50.DOI: http://dx.doi.org/10.7554/eLife.24063.009
+**Figure 5.:** Treatments with an asterisk over them differed significantly in frequency from the EtOH control (2 × 2 χ2-tests, p<0.05). For all treatments, n = 50.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig6-v1.jpg)
 
-**Figure 6.:** An asterisk indicates a treatment that evoked significantly fewer courtships than the ethanol control (2 × 2 χ2-tests, p<0.05).DOI: http://dx.doi.org/10.7554/eLife.24063.010
+**Figure 6.:** An asterisk indicates a treatment that evoked significantly fewer courtships than the ethanol control (2 × 2 χ2-tests, p<0.05).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24063/elife-24063-fig7-v1.jpg)
 
-**Figure 7.:** The females were virgins or newly mated and treated topically with ethanol, or mated and treated with 1 or 10 ng GGOH in ethanol (n = 100 each). Only ethanol treated mated females were courted less often than control virgins (χ2 =12.654, df = 1, p<0.001), indicating that GGOH can counter the full antiaphrodisiac blend of a mated female at biologically relevant doses.DOI: http://dx.doi.org/10.7554/eLife.24063.011
+**Figure 7.:** The females were virgins or newly mated and treated topically with ethanol, or mated and treated with 1 or 10 ng GGOH in ethanol (n = 100 each). Only ethanol treated mated females were courted less often than control virgins (χ2 =12.654, df = 1, p<0.001), indicating that GGOH can counter the full antiaphrodisiac blend of a mated female at biologically relevant doses.
 
 ## Discussion
 
@@ -88,15 +88,15 @@ Although this is the first recorded instance of a pheromone being utilized as an
 
 ## Materials and methods
 
-## Insects
+### Insects
 
 L. hesperus were obtained from an established colony at the USDA-ARS Arid Land Agricultural Research Center (Maricopa, AZ, USA). Colony health and genetic diversity were maintained by periodic outbreeding with locally-caught conspecifics. Insects were reared at 27°C, 20% relative humidity, under a 14:10 hr (L:D) photoperiod. Adults were produced from groups of mixed-sex nymphs reared in waxed paper containers covered with nylon mesh to ensure adequate ventilation and light exposure. Each container was provisioned with approximately 20 g of fresh green bean pods (Phaseolus vulgaris L.) and 12 g of artificial diet (Debolt, 1982) packaged in Parafilm M (Pechiney Plastic Packaging, Chicago, IL, USA) (Patana, 1982). Provisions were replaced every 48 hr. Daily monitoring allowed adults to be collected within 24 hr of emergence. Cohorts of same-aged adults were separated by gender and reared under conditions similar to those for nymphs, with the exception that the artificial diet was replaced with raw sunflower seeds (Helianthus annuus L.).
 
-## Temporal degradation of antiaphrodisiac effect
+### Temporal degradation of antiaphrodisiac effect
 
 A no-choice behavioral assay was used to test male courtship response to females after different time intervals subsequent to their being mated. All males were aged 7–9 days post-eclosion to ensure they were sexually mature and willing to copulate (Brent, 2010a). They were isolated from the opposite gender throughout adulthood to prevent their behavior towards prospective mates from being influenced by post-mating refractoriness (Strong et al., 1970; Brent, 2010b), and to guarantee the males were naïve with regard to the odor associated with mated and unreceptive females (Brent, 2010b). A large cohort of 7d old virgin females were housed with similarly aged virgin males and allowed to mate for six hours. A group of 300 mated females were selected from this pool based on the presence of a visible spermatophore just below the surface of the cuticle (Cooper, 2012). The attractiveness of these mated females to males was determined at 1, 2, 3, 4 or 5 days after mating. Due to mortality over the test period, daily sample sizes ranged from 47 to 58. Females and males were only used once. During the interval between mating and testing, females were held in isolation in clean 1.5 × 5.0 cm covered glass Petri dishes with a 1 inch section of green bean and two sunflower seeds, which were changed out every other day. To determine post-mating attractiveness, a male was introduced to a female’s dish and the pair was observed for 1 hr during which all instances of courtship were recorded. Courtships were distinguished from incidental approaches by characteristic male behaviors indicating the intent to mate (Strong et al., 1970). Females were dissected after each trial to ensure they had previously mated, as indicated by the presence of a spermatophore (Brent, 2010b).
 
-## GC-MS of spermatophore components
+### GC-MS of spermatophore components
 
 The identification of myristyl acetate in the spermatophore using GC-MS was previously described (Brent and Byers, 2011). The same approach was used to identify geranylgeraniol and geranylgeranyl acetate as components of the spermatophore. GGA and GGOH identities were confirmed by additional comparisons of retention times and mass spectra of male Lygus accessory gland extracts and authentic standards.
 
@@ -104,15 +104,15 @@ To determine if there are temporal changes to male-derived pheromonal components
 
 Samples were analyzed using a 7890A Series GC (Agilent Technologies, Sanata Clara, CA, USA) equipped with a 30 m x 0.25 mm Zebron ZB-WAX column (Phenomenex, Torrance, CA, USA) coupled to a 5975 C inert mass selective detector (Agilent Technologies). The helium carrier gas was programmed for constant flow of 1.2 ml min−1. Samples were manually injected into the GC port at 250°C using the splitless mode. The oven/column temperature was initially held at 60°C for 1 min, and then increased at a rate of 20 °C min−1 to 240°C, where it was held for 35 min. Samples were analyzed using the MS SIM mode using set m/z values for MA (55, 69, 83, 97), GGA and GGOH (69, 81, 93, 107). Total abundance was quantified against standard curves for each compound. The detection limit of the assay is approximately 0.5 pg.
 
-## Syntheses
+### Syntheses
 
 Hydroxyl groups of 1-tetradecanol (Acros Organics, Geel, Belgium), and geranylgeraniol (Toronto Research Chemicals, Toronto, Canada) were acetylated by acetic anhydride and pyridine to obtain the corresponding acetates (Zada et al., 2004). Myristyl acetate was purified by vacuum distillation using glass oven Kugelrohr (Buchi, Flawil, Switzerland) at 115°C/1 mm, 90% yield, >98% purity. Geranylgeranyl acetate was purified by column chromatography (SiO2/ether:hexane 95:5) 80% yield, 96% purity. Purity was determined by GC (Agilent 6890) with FID detector.
 
-## Head space measurements
+### Head space measurements
 
 Head space samples were collected from four groups of mated females. For each group, thirty females, aged 8–10 days, were mated to virgin males of the same age over a three hour period. Female mating status was confirmed by observation of the spermatophore through the abdominal cuticle (Cooper, 2012). For each test, 20 females were randomly selected from those mated and were still alive on the day of data collection. Females were placed in a 50 mL volumetric flask stoppered with a rubber septum through which was inserted a solid-phase microextraction fiber (SPME) with an 85 μm Polyacrylate coating (Sigma). Prior to collection, the SPME fibers were preconditioned by heating within the GC injector (250°C) for one hour. Sample collection occurred over a two hour period, either within three hours of mating (Day 0) or every 24 hr thereafter through four days. Samples were immediately analyzed as described above by direct insertion of the SPME into the injection port of the GC-MS. Fibers were kept in the injector port throughout the run. Mating status of the sampled females was subsequently confirmed by dissection. A total of four samples were run for each time period using the same groups of mated females.
 
-## Pheromone effects on courtship
+### Pheromone effects on courtship
 
 The same behavioral assay as described for testing the attractiveness of mated females was used to test for a dose-dependent effect of myristyl acetate on male courtship. Virgin 7 day old females were topically treated with 1 µl of ethanol (95%) containing myristyl acetate diluted at each of four concentrations (0.5, 5, 50 and 500 ng µl−1), or 1 µl of an ethanol control. Males were introduced to the dishes for one hour and instances of courtship recorded. A total of 111 trials were conducted during which all five treatments were run concurrently in separate dishes. Dishes were cleaned between trials.
 
@@ -120,6 +120,6 @@ The same approach was used to determine male courtship responses to virgin femal
 
 The efficacy of GGOH as an anti-antiaphrodisiac was also demonstrated by topical treatments and recording male responses. As above, males were exposed to virgin females treated with ethanol, or to newly mated females treated with ethanol or GGOH at concentration of 1 or 10 ng µl−1. A total of 100 trials using females of the same cohort were conducted with all four treatments run concurrently in separate dishes.
 
-## Statistical analysis
+### Statistical analysis
 
 The effect of the topical applications on the attractiveness of females to males was determined by n x 2 χ2-tests comparing the proportion of males exhibiting courtship behavior across all treatments and when significance was indicated individual comparisons between treatments were conducted using 2 × 2 χ2-tests. To reduce the incidence of false negatives, comparisons were made only between treatments and the virgin female control group, not between all treatments. The Dunn-Šidák correction was used to adjust the significance level for multiple comparisons. Analyses were conducted using Sigmaplot 13.0 (Systat Software, Point Richmond, CA, USA). Overall, no data points were excluded as outliers. Biological but not technical replicates were used. Appropriate minimum sample sizes were determined by power analysis for multiple pairwise comparisons, using π = 0.80 with both α and β set to 0.05. Preliminary experiments provided anticipated rates of courtship for mated and virgin females at 15% and 45% respectively.

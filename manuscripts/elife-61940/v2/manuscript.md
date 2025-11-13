@@ -13,7 +13,7 @@
 
 ## Abstract
 
-Cholinergic fast time-scale modulation of cortical physiology is critical for cognition, but direct local measurement of neuromodulators in vivo is challenging. Choline oxidase (ChOx)-based electrochemical biosensors have been used to capture fast cholinergic signals in behaving animals. However, these transients might be biased by local field potential and O 2 -evoked enzymatic responses. Using a novel Tetrode-based Amperometric ChOx (TACO) sensor, we performed highly sensitive and selective simultaneous measurement of ChOx activity (COA) and O 2 . In vitro and in vivo experiments, supported by mathematical modeling, revealed that non-steady-state enzyme responses to O 2 give rise to phasic COA dynamics. This mechanism accounts for most of COA transients in the hippocampus, including those following locomotion bouts and sharp-wave/ripples. Our results suggest that it is unfeasible to probe phasic cholinergic signals under most behavioral paradigms with current ChOx biosensors. This confound is generalizable to any oxidase-based biosensor, entailing rigorous controls and new biosensor designs.
+Cholinergic fast time-scale modulation of cortical physiology is critical for cognition, but direct local measurement of neuromodulators in vivo is challenging. Choline oxidase (ChOx)-based electrochemical biosensors have been used to capture fast cholinergic signals in behaving animals. However, these transients might be biased by local field potential and O2-evoked enzymatic responses. Using a novel Tetrode-based Amperometric ChOx (TACO) sensor, we performed highly sensitive and selective simultaneous measurement of ChOx activity (COA) and O2. In vitro and in vivo experiments, supported by mathematical modeling, revealed that non-steady-state enzyme responses to O2 give rise to phasic COA dynamics. This mechanism accounts for most of COA transients in the hippocampus, including those following locomotion bouts and sharp-wave/ripples. Our results suggest that it is unfeasible to probe phasic cholinergic signals under most behavioral paradigms with current ChOx biosensors. This confound is generalizable to any oxidase-based biosensor, entailing rigorous controls and new biosensor designs.
 
 ## Introduction
 
@@ -35,15 +35,96 @@ We show that the TACO sensor provides a highly selective and sensitive measureme
 
 ## Results
 
-## The TACO sensor provides a highly selective differential measurement of COA
+### The TACO sensor provides a highly selective differential measurement of COA
 
 The TACO sensor is built around Pt/Ir wire tetrode, providing four disc-shaped recording sites with 17 μm diameter in close proximity, resulting in an entire sensor diameter of approximately 60 μm (Figure 1A). Such spatial density of recording sites is ideal for common-mode rejection of LFP-related currents and neurochemical dynamics. At this spatial scale, diffusional crosstalk would preclude the use of sentinel sites by differential coatings, as done in conventional biosensors, including our previous ChOx biosensor design (Burmeister et al., 2003; Santos et al., 2015). Instead, we created pseudo-sentinel and Ch-sensing sites by differentially plating the tetrode wires, modifying their electrocatalytic response toward H2O2. This step was followed by coating the tetrode surface with a common matrix containing ChOx entrapped in chitosan (Santos et al., 2015; Figure 1A). As for the initial plating steps, all tetrode sites were first mildly plated with gold, which marginally increased the electrode surface area, as inferred from impedances at 1 kHz (419 ± 33 kΩ, n = 28 before vs. 370 ± 16 kΩ, n = 44 after gold plating). Despite the slight decrease in impedance, gold-plating significantly decreased the electrocatalysis of H2O2 reduction/oxidation at the metal surface. In enzyme-coated electrodes, gold-plated sites exhibited a nearly fivefold smaller H2O2 sensitivity than an unplated Pt/Ir surface (Figure 1—figure supplement 1). Remarkably, following this first step, gold-plated sites could be rendered H2O2-sensitive upon mild platinization. In enzyme-coated electrodes, there was a nearly 10-fold difference in H2O2 oxidation currents between Au and Au/Pt sites at 0.4–0.6 V vs. Ag/AgCl (Figure 1B). The increase in Au sites’ response to H2O2 above +0.7 V is in agreement with the electrochemical behavior of a pure Au electrode and probably results from the formation of surface oxides (Burke and Nugent, 1997; O'Neill et al., 2004). Interestingly, the response of Au/Pt electrodes to H2O2 was higher than that of unplated electrodes (Figure 1—figure supplement 1), possibly reflecting an increase in the electrode surface area and/or an electrocatalytic effect caused by the deposition of nanostructured platinum over the gold surface (Burke and Buckley, 1996; Domínguez-Domínguez et al., 2008). Even when using common-mode rejection, decreasing the magnitude of interferences in individual sites is desirable. Thus, after plating and coating the tetrode, we electropolymerized m-PD in two of the recording sites, in order to reduce responses to electroactive compounds larger than H2O2 (e.g. ascorbate or dopamine) (Hascup et al., 2013; Santos et al., 2008). The final TACO sensor configuration consisted of all possible combinations of Pt and m-PD modifications of Au-plated recording sites (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematics depicting the multichannel biosensor design, including the assembly used in in vitro and head-fixed recordings (bottom). HS: head-stage. (B) Voltammogram showing H2O2 sensitivities of gold-plated and platinized sites upon amperometric calibrations at different DC potentials (n = 10). Prior to calibrations, tetrodes were coated with a matrix of chitosan/ChOx. (C) Top shows a representative calibration of a sensor showing the response of different types of sites to step additions of Ch, H2O2, dopamine (DA). and ascorbate (AA). Bottom shows an example of current responses to a sinusoidal 12 mV AC voltage at 0.2 Hz overlaid on top of +0.6 V vs. Ag/AgCl DC voltage. (D) Sensitivities of different sites toward Ch (n = 10 biosensors). Unlike m-PD electropolymerization, platinization significantly increased sensitivity (p<0.0001 and F1,33 = 115 for platinization effect and p=0.87 and F1,33 = 0.03 for m-PD, by two-way ANOVA for unbalanced data). (E) Normalized responses of each tetrode site to Ch, interferent molecules and AC voltage, presented as impedance at 0.2 Hz (n = 5–10). Magnitudes significantly depended on the site modification and on the factor tested (p<0.0001 and F1,113 = 22 for platinization, F1,113 = 109 for m-PD and F3,113 = 12.9 for factors, by three-way ANOVA for unbalanced data). Platinization selectively increased responses to Ch (p<0.0001) while m-PD decreased responses only to DA and AA (p<0.0001). Impedances did not significantly differ across different types of electrode modifications (p>0.99). The rightmost column shows COA signal responses computed from the difference between Au/Pt/m-PD and Au/m-PD sites. Groups were compared by three-way ANOVA followed by Tukey-Kramer post-hoc tests. Data are represented as mean ± CI.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Normalized H2O2 sensitivity of Pt/Ir disc electrodes (n = 6, data from our previous sensor design [Santos et al., 2015]), gold-plated Pt/Ir tetrode sites (n = 7) and gold/platinum-plated tetrode sites (n = 6). All electrode surfaces were coated with chitosan/ChOx matrices. All group pairwise comparisons were statistically significant (p=0.041 for None vs. Au, p=0.0015 for None vs. Au/Pt and p<0.0001 for Au vs. Au/Pt, by one-way ANOVA for unbalanced data followed by Tukey-Kramer post-hoc test). *p<0.05, **p<0.01, ***p<0.001.
+
 The responses of TACO sensors’ sites to Ch, H2O2 and to compounds that can potentially interfere during in vivo measurements were tested by step additions in the beaker at +0.6V vs. Ag/AgCl (Figure 1C, top). In accordance with the voltammograms of H2O2 sensitivities (Figure 1B), the responses of TACO sensors’ gold-plated sites to Ch and H2O2 were much lower than those of platinized sites. On average, like for H2O2, this difference was about 10-fold for Ch, regardless of m-PD electropolymerization (Figure 1D). Contrasting with its lack of effect on Ch sensitivity, m-PD dramatically decreased responses to ascorbate and dopamine, regardless of the site’s metal composition (Figure 1E). In addition, we have also calibrated the impedance of recording sites at low frequency by applying a low-amplitude 0.2 Hz AC voltage on top of the DC offset. This low frequency is of particular relevance, as it overlaps with putative phasic cholinergic dynamics previously reported by us and other groups in anesthetized and freely moving rodents (Howe et al., 2017; Parikh et al., 2007; Santos et al., 2015; Teles-Grilo Ruivo et al., 2017). Impedances calculated from the current oscillations generated by the AC voltage (Figure 1C, bottom) were comparable across all sites (Figure 1E). Collectively, the results summarized in Figure 1E and Table 1 validate the gold-plating approach to produce pseudo-sentinel sites, as it selectively reduces electrode’s response to H2O2. The COA signal most consistently used throughout this study was computed from the differential of m-PD-electropolymerized sites, to exploit the advantages of both differential platings and m-PD electropolymerization, resulting in a high selectivity for Ch (or changes in COA) (Figure 1E and Table 1). As compared to our previous stereotrode design using 50 μm diameter wires, these sensors keep the same Ch response performance, with a limit of detection (LOD) in the low nanomolar range, remarkable for such small electrode surfaces. The TACO sensor response is stable, without significant drop upon in vivo head-fixed recordings (2.45 ± 1.11 pA/μM before and 2.46 ± 0.80 pA/μM after implantation, n = 8, p=0.99, paired t-test), shows high linearity within the physiological range and a T50 response time around 1.5 s (Table 1). Noteworthy, though the response of our sensors is expected to be mostly shaped by Ch diffusion in the coating (Santos et al., 2015), the presented response times are in fact slightly overestimated due to a delay caused by mixing of the analyte in the stirred calibration buffer. Additionally, while m-PD abrogates the response of electropolymerized sites to large electroactive molecules, the differential site modifications provide further information on the signal identity. As the Au site (without m-PD) is more responsive to interferents than to Ch, the neurochemical confounds (NCC) signal (please see Materials and methods section) enables to further infer contaminations by neurochemical confounds in vivo. The differential sites’ responses to different factors can potentially be further exploited by multivariate methods of analysis, and the electrochemical tetrode design employed in TACO sensor can be generalized to other types of sensors in the future.
 
-## Freely moving recordings validate the TACO sensor suppression of current-generating artifacts and suggest a potential O2 modulation of COA in vivo
+**Table 1.**
+ Analytical properties of TACO sensors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">Individual sites’ analytical properties</th>
+    </tr>
+    <tr>
+      <th>Channel type</th>
+      <th>Ch sensitivity (pA/µM)</th>
+      <th>Ch sensitivity (nA µM−1 cm−2)</th>
+      <th>H2O2 sensitivity (pA/µM)</th>
+      <th>DA sensitivity (pA/µM)</th>
+      <th>AA sensitivity (pA/µM)</th>
+      <th>Impedance (GΩ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Au/Pt/m-PD</td>
+      <td>2.45 ± 0.70 (n = 10)</td>
+      <td>1081 ± 309 (n = 10)</td>
+      <td>2.48 ± 0.93 (n = 8)</td>
+      <td>0.15 ± 0.23(n = 10)</td>
+      <td>0.02 ± 0.013(n = 10)</td>
+      <td>2.90 ± 0.48 (n = 5)</td>
+    </tr>
+    <tr>
+      <td>Au/Pt</td>
+      <td>2.54 ± 0.64 (n = 8)</td>
+      <td>1118 ± 283 (n = 8)</td>
+      <td>2.86 ± 1.10 (n = 6)</td>
+      <td>7.48 ± 1.86(n = 8)</td>
+      <td>0.22 ± 0.20(n = 8)</td>
+      <td>3.38 ± 0.56 (n = 5)</td>
+    </tr>
+    <tr>
+      <td>Au/m-PD</td>
+      <td>0.27 ± 0.12 (n = 10)</td>
+      <td>118.2 ± 53 (n = 10)</td>
+      <td>0.22 ± 0.16 (n = 8)</td>
+      <td>0.13 ± 0.23 (n = 10)</td>
+      <td>0.007 ± 0.004 (n = 10)</td>
+      <td>3.11 ± 0.77 (n = 5)</td>
+    </tr>
+    <tr>
+      <td>Au</td>
+      <td>0.25 ± 0.086 (n = 9)</td>
+      <td>111.5 ± 38 (n = 10)</td>
+      <td>0.29 ± 0.08 (n = 7)</td>
+      <td>8.24 ± 1.84 (n = 9)</td>
+      <td>0.19 ± 0.16 (n = 9)</td>
+      <td>3.65 ± 0.59 (n = 5)</td>
+    </tr>
+  </tbody>
+</table>
+
+_The data are given as the mean ± CI (95%).The number of sensors tested is given in parentheses. Data were collected from calibrations on the day after m-PD electropolymerization._
+
+### Freely moving recordings validate the TACO sensor suppression of current-generating artifacts and suggest a potential O2 modulation of COA in vivo
 
 In order to test whether the TACO sensor can measure fast COA transients devoid of artifacts that directly generate electrode currents in behaving animals (regardless of a possibly underlying O2 modulation of COA), we have first performed recordings in freely moving animals. We simultaneously recoded from the CA1 pyramidal layer using the TACO sensor and LFP across hippocampal depth using a 32-channel linear silicon probe implanted in the proximity of the biosensor (Figure 2A). Extracellular electrophysiology allowed us to directly validate the amperometric measurement of high-frequency LFP (Figure 2—figure supplement 1). The COA signal was cleaned by subtraction of the m-PD-electropolymerized pseudo-sentinel from the Ch-sensing sites’ signal, upon frequency-domain correction of the pseudo-sentinel amplitude and phase (please see Materials and methods) (Santos et al., 2015). This procedure led to substantial removal of fast current fluctuations ascribed to LFP (example recording in Figure 2B, top). Accordingly, the median spectral power at ~1–20 Hz of the signal derived from the Au/Pt/m-PD site during both NREM sleep and wake periods decreased more than two orders of magnitude after the signal cleaning procedure (Figure 2B, bottom). The cleaned COA signal tonically changed across different brain states reaching higher values during active wakefulness and REM sleep than during NREM sleep (Figure 2—figure supplement 2). This dynamics is compatible with expected brain state-dependent ACh changes (Hasselmo and McGaughy, 2004; Marrosu et al., 1995), but remarkably, COA also fluctuated on the time-scale of seconds within brain states.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left panel shows a simplified diagram of the electronic circuits in freely moving recordings. The amperometric measurement (one channel for simplicity) was based on a voltage clamp circuit. Rf: feedback resistor (1 GOhm); A1, A2: OP amps; Vcmd: command voltage; Im: measured current (acquired as analog voltage signal). Vcmd is set on the MHS-BR4-VA box and sent to the head-stage. Its output is acquired by an Open-Ephys system. Electrophysiological setup is depicted in bottom. Vm: measured voltage output. The amplified LFP signal is acquired by the Neuralynx system. Right panel depicts the arrangement of a TACO sensor and a 32-channel silicon probe chronically implanted in the hippocampus of a rat. Both probes were attached to microdrives. (B) Top, segment of NREM sleep recording, a raw signal (low-pass filtered at 1 Hz), cleaned COA and confound components. Bottom, spectrum of the raw and clean COA signal during wake (n = 10) and NREM sleep periods (n = 19). Data shown as medians ± CI. (C) Average low frequency (1 Hz low-pass filtered) biosensor signals and high frequency power spectrograms triggered to SWRs detected from a silicon probe channel in CA1 pyramidal layer (top quartile of all ripples sorted by power, n = 2019). Average raw (top), cleaned (middle) COA responses and LFP spectrogram triggered on SWRs (bottom). (D) Average raw (top) cleaned COA responses (middle), average speed (middle) and LFP spectrogram (bottom) triggered to peaks in rat speed in an open-field arena (n = 127). Data are represented as mean ± CI, except in B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative power spectrogram from high-frequency range of electrophysiology and amperometry derived LFP signals in the CA1 pyramidal layer during NREM sleep. Arrows indicate timings of SWRs detected from LFP. High-frequency bursts captured with both modalities typically coincided in time and exhibited similar spectral features. (B) Comodugram showing high correlation between LFP power, recorded during NREM sleep, from a silicon probe’s site in CA1 pyramidal layer and the power of the amperometric signal from a biosensor site, targeted to the same hippocampal layer. (C) Normalized power spectra triggered to SWRs highlighting the similarity of profiles gathered using both modalities. (D) Cross-correlogram of SWR timings detected using amperometry and electrophysiology, emphasizing the high co-occurrence of these events (n = 8074 for electrophysiology and n = 8085 for amperometry).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative recording across multiple brain states showing power spectrogram from a silicon probe site at hippocampal fissure (top), rat speed (middle) and clean ChOx signal (bottom). (B) Change in tonic putative Ch levels following transitions from NREM sleep to wake (n = 3) or REM sleep (n = 9). Both groups were significantly different from zero (p=0.046 for NREM to Wake and p<0.0001 for NREM to REM, inferred from one-way anova followed by Tukey-Kramer post-hoc analysis). An outlier was excluded from the NREM to REM group (1.64, exceeding three median absolute deviations away from median).
 
 Hippocampal SWRs and arousal-related locomotion bouts are discrete events associated with major phasic changes in hippocampal network activity, occurring during sleep or wakefulness respectively (Buzsáki, 2002; Buzsáki, 2015; Sirota et al., 2003). Thus, we tested whether these events could correlate with phasic COA dynamics. Hippocampal SWRs were detected from a silicon probe site in the CA1 pyramidal layer during NREM sleep. Average raw biosensor signals triggered on the peak of SWRs showed a prominent peak in all TACO sensor’s sites (Figure 2C, top). The similarity of peak amplitudes suggests an LFP-related origin of these currents, which was virtually absent in the cleaned signals (Figure, 2C, middle), and reflects the slow dynamics of the sharp wave. The high magnitude of this LFP artifact emphasizes the importance of the common-mode rejection approach in revealing COA dynamics that would otherwise be masked. Interestingly, regardless of m-PD electropolymerization, the cleaned COA signal showed a peak lagging the SWR by ~3 s. Importantly, the slow and small amplitude dip in the neurochemical confounds signal excludes the role of interferents (e.g. ascorbate or a monoamine) in the COA transient (Figure 2C, middle).
 
@@ -51,9 +132,21 @@ Bouts in locomotion, detected as peaks in the rat running speed, were associated
 
 These results highlight the usefulness of our multichannel pseudo-sentinel approach to discriminate between authentic changes in COA and different sorts of current-inducing interferents, including LFP- and movement-related artifacts and neurochemical dynamics. Nevertheless, it is noteworthy that phasic changes in COA were associated with the most salient sources of non-stationarity in hippocampus, namely arousal/locomotion and SWRs (Buzsáki, 2002; Buzsáki, 2015; Sirota et al., 2003). These phenomena can potentially correlate with changes in both ChOx substrates, Ch (Norimoto et al., 2012; Vandecasteele et al., 2014; Hasselmo and McGaughy, 2004; Marrosu et al., 1995; Reimer et al., 2016; Teles-Grilo Ruivo and Mellor, 2013) and O2 (Zhang et al., 2019; Ramirez-Villegas et al., 2015), leading to transient modulation of COA. Thus, our freely moving results further emphasized the need for a detailed investigation of the O2 effect on the COA signal.
 
-## Biosensor’s COA responses to oxygen have tonic and phasic components
+### Biosensor’s COA responses to oxygen have tonic and phasic components
 
 Since O2 is a co-substrate of oxidases, physiological O2 variations potentially affect the response of oxidase-based biosensors. However, this issue has not been thoroughly addressed in previous studies (Baker et al., 2015; Chatard et al., 2018; Dixon et al., 2002; McMahon et al., 2007; Santos et al., 2015). Here, we sought a detailed investigation of the biosensor O2-dependence in vitro, enabling the assessment of O2 effect on COA at multiple time scales (i.e. tonic and phasic dynamics). In these experiments, we took advantage of the TACO sensor configuration to sample COA and O2 dynamics from the same spot, necessary for accurate evaluation of O2-dependence of the COA signal. These recordings were performed using a new customized head-stage allowing independent control of the potential applied on each recording site. Oxygen measurement was achieved at a negative potential by O2 reduction on a gold-plated site, which was typically maximal at −0.4 V vs. Ag/AgCl (Figure 3A). In these experiments, clean COA and O2 signals were obtained by subtraction of Au/Pt/m-PD (at +0.6 V) and Au (at −0.2 V) by the pseudo-sentinel m-PD site, respectively.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig3-v2.jpg)
+
+**Figure 3.:** (A) The voltammogram shows the DC voltage-related sensitivity of gold-plated sites toward H2O2 (n = 10) and O2 (n = 5). (B) An example of an in vitro O2 calibration. Upon removal of O2 from PBS containing 5 μM Ch, 5 μM O2 additions (arrows) were performed until the tonic sensor response saturated. (C) Representative cumulative tonic and phasic responses as a function of O2 baseline after each addition. Tonic data were fitted with Michaelis-Menten equation, resulting in a KmO2app of 0.97 μM (CI = 0.818–1.126 μM) and Imax = 13.2 pA (CI = 13.04–13.37 pA), with RMSE = 0.08 pA. Phasic responses were fitted to the Hill equation, yielding K0.5O2 = 8.6 μM (CI = 7.58–9.62 μM), Hill coefficient n = 2.31 (CI = 1.74–2.88) and Imax = 22.4 pA (CI = 20.6–24.1), with rmse = 0.50 pA. (D) K0.5O2app values of tonic and phasic components from all biosensors (n = 14). Averages and error bars are medians and CIs. Groups were significantly different (sign test, p<0.0005). (E) T90 rise times of O2 steps and COA peaks following O2 additions (n = 72–95). Bars and error bars represent medians and 95% CIs, groups were significantly different (p<0.0001, Wilcoxon rank sum test). (F) Biosensor efficiency (Ch/H2O2 sensitivity ratio) as a function of KmO2app (n = 6). For illustrative purposes, data were fitted with an exponential function. Spearman correlation between variables was −0.9 (p=0.028). (G) Maximal phasic response to O2 (from each biosensor calibration) as a function of KmO2app (n = 14, rspearman = −0.86, p<0.0001). Data were fitted with an exponential decay curve (decay constant k = 0.4 μM−1, CI = 0.031–0.78 μM−1, rmse = 0.68 μM). (H) Amplitudes of phasic ChOx responses divided into low and high-KmO2app groups (n = 7 per group) following O2 additions. Control phasic O2 using the same algorithm is plotted for the same groups (n = 6 for high-KmO2app and n = 4 for low-KmO2app). Low-KmO2app COA transients were higher than those from the high-KmO2app group (p<0.0001) and the amplitudes from both COA groups were higher than any O2 group (p<0.005). Oxygen transients from low-KmO2app vs. high-KmO2app groups did not significantly differ (p=0.998). Group comparisons by two-way ANOVA for unbalanced data followed by Tukey-Kramer post-hoc tests. Data are means ± CI. (I) T50 decay of transients from low- and high-KmO2app groups as a function of cumulative O2. The decay of peaks at 10 μM O2 was the longest (p<0.0005, two-way ANOVA for unbalanced data followed by Tukey-Kramer post-hoc tests). Data are means ± CI. (J) Hill coefficient from the fits of cumulative COA phasic component vs. cumulative O2 (as in C) as a function of KmO2app (n = 14). The two variables negatively correlate (rspearman = −0.64, p=0.015), showing an exponential-like relationship (fitted initial amplitude of 1.27 ± 0.75, decay constant of 0.33 ± 0.62 μM−1 and offset of 0.97 ± 0.67). ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Example of a switch of the potential applied to the Au site in vivo from the normally used +0.6 V vs. Ag/AgCl in sentinel mode to −0.2 V vs. Ag/AgCl used for O2 measurement. No change was observed in the COA signal upon switching the polarity of the signal.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Amplitude of phasic response (color) as a function of cumulative O2 after each addition, sorted by sensor’s tonic KmO2app. Amplitudes were calculated as Ch concentration, based on sensors’ response to 5 μM Ch.
 
 The in vitro tests were based on step additions of known O2 concentrations in the presence of a background Ch concentration (5 μM) representative of average brain extracellular Ch tonic levels (Brehm et al., 1987; Garguilo and Michael, 1996; Parikh et al., 2004). Importantly, unlike previous studies, this allowed us to distinguish and probe the contribution of phasic and steady-state (tonic) COA responses to O2.
 
@@ -65,11 +158,23 @@ In order to further detail on the effect of O2 baseline on non-stationary COA, w
 
 In summary, we show that, under a physiological Ch background, ChOx biosensors respond to O2 with a transient increase in enzyme activity before reaching a steady-state. Importantly, phasic and tonic components were apparently mutually exclusive and their relative magnitude was sensitive to the properties of the enzyme coating, namely enzyme loading. Sensors with high enzyme loading have a low tonic O2-dependence but show large phasic responses whose amplitude is modulated by the O2 baseline.
 
-## Modeling in vitro biosensor responses reveals the mechanisms underlying tonic and phasic oxygen-dependence
+### Modeling in vitro biosensor responses reveals the mechanisms underlying tonic and phasic oxygen-dependence
 
 In order to provide a theoretical ground for our in vitro observations and further understand the mechanisms underlying tonic and phasic COA responses to O2, we have simulated the behavior of biosensors in calibration conditions. We numerically solved a system of partial differential equations describing the diffusion of Ch and O2 in the coating and their interaction with the enzyme, leading to H2O2 generation.
 
 To mimic our experimental calibrations, we simulated sensor responses to 5 μM step increases in O2 (starting from zero) under a constant level of 5 μM Ch in the bulk solution. Remarkably, in line with our experimental findings, the model predicted phasic and tonic components of sensor response to O2 whose magnitude depended on O2 baseline (Figure 4A). Sensors with high enzyme loading showed higher phasic peaks and tonic responses that saturate at lower O2 baselines than sensors with a low enzyme amount (Figure 4A). To get a more resolved characterization of biosensor’s O2 dependence, we next generated response curves at 1 μM O2 steps, until saturation of enzymatic H2O2 generation was nearly reached (see Materials and methods). By simulating a range of coating thicknesses and enzyme concentrations, we found that both parameters decreased KmO2app of tonic responses (Figure 4B) and increased the magnitude of phasic peaks (Figure 4C). Interestingly, our model predicts that particular combinations of coating thickness and enzyme concentration can be used to optimize sensor sensitivity to Ch (at saturating O2 levels) (Figure 4—figure supplement 1A). Yet, such a strategy is not expected to concomitantly reduce phasic and tonic O2 dependence, which seem to be mutually exclusive. In agreement with the experimental data, our model anticipated that sensors with the lowest KmO2app exhibit the highest transient responses to O2 (Figure 4B–D). Across the simulated coatings, the highest phasic peaks occurred when sensor cumulative tonic responses were close to maximal and progressively decreased in sensor tonic saturation level as a function of tonic KmO2app (Figure 4D). This observation is in agreement with our experimental observation of highest phasic peaks at a 10 μM O2 baseline (Figure 3H–J).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig4-v2.jpg)
+
+**Figure 4.:** (A) Simulated calibrations of biosensors with different enzyme concentrations in the coating (coating thickness of 30 μm). Choline in bulk solution was kept constant at 5 μM and O2 was incremented in 5 μM steps from zero to 30 μM (arrows). (B) KmO2app of tonic responses as a function of coating thickness and enzyme concentration in the coating. (C) Normalized maximal phasic responses of sensors with different coating thicknesses and enzyme concentrations. Magnitudes refer to the highest phasic response divided by the maximal cumulative tonic response (Imax) from the respective simulated sensor calibration. (D) Blue trace represents the normalized maximal phasic response vs. tonic KmO2app and the orange trace refers to the level of saturation of the sensor's tonic response at which the maximal phasic peak occurs. Data were obtained from all combinations of coating thickness and enzyme concentration in B and C. (E) Concentration dynamics of Ch in the sensor coating as a function of distance from the electrode surface during a simulated calibration of a high enzyme-loaded sensor (coating thickness of 30 μm and enzyme concentration of 560 μM, same as the blue in A). Arrows indicate 5 μM O2 step increments in solution. (F) and (G) show time-courses of Ch and O2 concentration, respectively, at the electrode surface of sensors with different enzyme concentrations during simulated calibrations. Arrows indicate 5 μM O2 increments in solution. (H) Normalized profiles of phasic and tonic sensor responses as well as of concentrations of enzyme substrates and total reduced enzyme-bound complexes at the electrode surface as a function of O2 in solution. Data are from a simulated calibration of a sensor with a 30 μm coating and an enzyme concentration of 560 μM, upon 1 μM O2 step increases in solution. The ΔO2 is the initial rise in O2 following each O2 increment in solution (at a lag of 0.3 s).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Maximal cumulative tonic sensor responses as a function of coating thickness and enzyme concentration in the coating. (B) Left shows simulated concentration dynamics of total reduced enzyme-bound intermediates (EredBA+EredGB) in the sensor coating as a function of distance from the electrode surface during a simulated calibration of a high enzyme-loaded sensor (coating thickness of 30 μm and enzyme concentration of 560 μM). Right shows the dynamics of total and individual enzyme-bound intermediates at 10 μm from the electrode surface (dashed line in left panel). Arrows indicate 5 μM O2 step increments in solution.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (E) Free enzyme, (ECh) enzyme-bound Ch, (Ered) enzyme with reduced FAD co-factor, (Eox) enzyme with oxidized FAD co-factor, (BA) betaine aldehyde, (GB) glycine betaine.
 
 To get further clues into the factors shaping sensors’ O2-evoked responses, we analyzed the concentration dynamics of Ch and O2 in the coatings during simulated calibrations. We observed that, under high enzyme loading, Ch is rapidly depleted in the coating as O2 levels in solution increase (Figure 4E). This effect is less pronounced in sensors with low enzyme loading (Figure 4F). Interestingly, significant O2 consumption, observed mainly in coatings highly loaded with enzyme, was stronger for low O2 levels before reaching saturation of the sensor tonic response (Figure 4G). These observations suggest that depletion of Ch in the enzyme coating is the limiting factor that shapes sensors’ tonic responses to O2.
 
@@ -77,7 +182,7 @@ To further investigate phasic responses under high enzyme loading, in addition t
 
 Overall, our biosensor simulations corroborate the in vitro results, firstly converging toward the notion that Ch consumption in the coating is a major factor governing sensor tonic O2 dependence. Secondly, the results suggest that non-steady state phasic responses depend on the relative concentrations of Ch, reduced intermediate enzyme complexes and O2 in the coating. This biochemical mechanism is expected to convert physiological O2 changes into spurious COA phasic signals and calls for careful investigation of the O2 modulation of COA dynamics in vivo.
 
-## Phasic COA during locomotion bouts correlates with oxygen transients
+### Phasic COA during locomotion bouts correlates with oxygen transients
 
 The TACO sensor offers the opportunity to probe the activity of immobilized ChOx, as a putative index of cholinergic tone, with unprecedented spatial resolution and selectivity in behaving animals. However, our in vitro data and mathematical simulations hint toward a possible confounding effect of a phasic biosensor O2-dependence on fast time-scale measurements of Ch in vivo. To directly address this question in the brain of behaving rodents, we have exploited the advantages of the tetrode configuration, ideally suited to measure multiple electroactive compounds at the same brain spot. In vivo recordings were performed using the same electrode configuration as previously described in vitro (Figure 5A, top). In this case, clean COA and O2 signals were obtained by frequency-domain-corrected subtraction of Au/Pt/m-PD (at +0.6 V) and Au (at −0.2 V) by the pseudo-sentinel m-PD site, respectively, as described in Materials and methods section.
 
@@ -89,19 +194,35 @@ In order to obtain more controlled experimental conditions and overcome technica
 
 In summary, these results indicate a strong correlation between phasic COA and O2 in the hippocampus of head-fixed mice following locomotion bouts.
 
-## Phasic COA and oxygen signals follow clusters of sharp-wave/ripples during immobility
+### Phasic COA and oxygen signals follow clusters of sharp-wave/ripples during immobility
 
 Hippocampal SWRs are critical for memory consolidation and their occurrence has been proposed to be anti-correlated with cholinergic activity in the hippocampus (Hasselmo and McGaughy, 2004; Norimoto et al., 2012; Vandecasteele et al., 2014). However, our freely moving data showing COA transients following SWRs contradicts this prediction, posing questions on the factors driving the biosensor response during these events. Thus, we investigated whether the SWR-related response of immobilized ChOx was correlated with extracellular O2 in head-fixed mice during periods of quiescence.
 
 Remarkably, on average, SWR events were followed by fast transients in both COA and O2 (Figure 6A). Both COA and O2 peak amplitudes correlated best with ripple power integrated over a period of ~2 s lagging them by 3–4 s (Figure 6B and C). Similarly, both SWR count and summed ripple power integrated in a 2 s window positively correlated with the delayed amplitude of both COA and O2 transients (Figure 6D–E and Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig6-v2.jpg)
+
+**Figure 6.:** (A) Average COA and O2 dynamics triggered on hippocampal SWRs (n = 1067, top) and average LFP spectrogram (bottom) from a recording session in the head-fixed setup. (B) Pseudo-color-coded Spearman correlation between COA (top) or O2 (bottom) amplitude at different time lags from SWRs (y-axis) and integrated ripple band power computed in windows of varying size (x-axis) for a representative session. White areas represent non-significant correlations (p>0.05). (C) Normalized peak correlations, obtained from the difference between maximal and minimal correlations for each integration time in B, between integrated ripple power and COA or O2. Colors represent recording sessions in different mice. (D) Average COA, O2 and ripple power dynamics triggered to SWRs bursts containing variable number of SWRs (1-3) in a 2 s window (n = 34–591 SWRs in each group, respectively from one representative session). Data are represented as median ± CI. (E) Peak amplitude of COA or O2 transients as a function of SWR burst size (as shown in D) sorted by different percentile ranges of summed ripple power. Both SWR count and total ripple power significantly affected the amplitude of COA and O2 (two-way ANOVA for unbalanced data following ART, p<0.0001 and F2,803 > 12 for both factors in COA and O2 data). (F) Amplitude of COA vs. O2 transients following SWRs from one recording session (rspearman = 0.53, p<0.0001, n = 1067). (G) Group statistics on the lags of COA and O2 peaks relative to SWRs. Each dot is the average from one recording. Bars represent means ± CI. (H) Lags of COA peaks as a function of O2 peak lags relative to SWRs. The parameters were significantly correlated (rspearman = 0.56, p<0.0001, n = 1067). (I) Summary of correlations between sensor signals and ripples. Each point represents one recording session, and error bars are CIs computed using bootstrap. Data were obtained from three recording sessions in three mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Amplitude of ChOx activity and O2 transients as a function of SWR count in a 2 s time window, sorted by different percentile ranges of summed ripple power. The data was collected from three recording sessions. Statistic tests were performed by two-way ANOVA for unbalanced data following ART to account for non-gaussian distributions. In recording session 1, both SWR count and total ripple power significantly affected the amplitude of ChOx and O2 (p<0.0001 for count and F2,762 = 10.2 for count, p<0.001 and F2,762 = 8.24 for power in COA data; p<0.001 and F2,762 = 9.98 for count, p=0.004 and F2,762 for power in O2 data). The same applied for recording 2 (p<0.0001 and F2,803 = 14.35 for count, p<0.0001 and F2,803 = 12.3 for power in COA data; p<0.0001 and F2,803 = 16.9 for count, p<0.0001 and F2,803 = 12.1 for power in O2 data). As for recording session 3, the SWR count effect was significant for both sensor signals (p<0.0001 and F2,618 = 11.3 for COA; p=0.032 and F2,618 = 3.47 for O2) and the summed ripple power significantly affected O2 (p=0.016 and F2,618 = 4.14), but was not consistently related to ChOx transients amplitude (p=0.07, F2,618=2.71).
+
 These findings might indicate the contribution of a time-constant related to the sensor response and/or to a relatively slow physiological process by which SWRs recruit cholinergic activity or a local hemodynamic response leading to O2 increase. Indeed, functional MRI has reported SWR-triggered increases in BOLD signal in the primate hippocampus, reflecting a local tissue hemodynamic response at a time-scale matching O2 transients observed here (Ramirez-Villegas et al., 2015). Importantly, the amplitudes of SWR-associated COA and O2 phasic transients were consistently correlated within all recordings (n = 3, p<0.001, Figure 6F). Similarly, lags of these transients to SWR were significantly correlated (Figure 6G,H,I).
 
 Together, the data indicate correlated phasic changes in COA and extracellular O2 in response to SWRs (Figure 6I), especially when they happen in clusters. As in the case of locomotion bouts, at this stage one could not rule out the contribution of neither phasic Ch nor O2 as the trigger for the peaks in COA. The putative cholinergic origin of this response would, nevertheless, be surprising given the suppressive effect of ACh on SWR occurrence (Norimoto et al., 2012; Vandecasteele et al., 2014). Thus, in light of the O2 transients that accompany the rise in COA and of our in vitro findings of the phasic O2 dependence in this type of biosensors, these observations cast doubt on the validity of the putative SWR-triggered cholinergic response.
 
-## Interactions between COA and oxygen are not sensitive to ongoing hippocampal dynamics and depend on the time-scale
+### Interactions between COA and oxygen are not sensitive to ongoing hippocampal dynamics and depend on the time-scale
 
 The correlation between COA and O2 following locomotion and SWRs may reflect interaction between the two signals or result from the coincident recruitment of cholinergic and hemodynamic responses. While a consistent relationship between the two variables is expected in the first case, irrespective of ongoing network dynamics, the same may not happen in the latter. To get insights into this question, we analyzed an additional category of events, consisting of fast O2 transients detected outside the time-windows surrounding SWRs and peaks in locomotion. Remarkably, virtually all (>95%) of these events had an associated COA transient. The dynamics of COA and O2 were typically similar (Figure 7A), with COA peaks lagging, on average, from −0.09 s to 0.48 s (n = 3 recordings) relative to O2. Signal amplitudes were significantly correlated both when pooling together all events (p<0.0001, Figure 7B) or within all individual sessions (p<0.006). The amplitude correlation coefficients were in the range of those obtained for O2 peaks associated with locomotion and SWRs (Figure 7C), but the average amplitudes of O2 and corresponding COA signals were in the sub-micromolar range, comparable to those associated with SWRs (Figure 7D). Overall, although the amplitude range of locomotion-related peaks was wider, it is notable that the whole data fit to a COA/O2 relationship that seems to follow the same model across recordings and event types (Figure 7D). These observations are therefore compatible with an interaction between COA and O2, although contribution of third-party factors could not be definitely excluded at this stage.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig7-v2.jpg)
+
+**Figure 7.:** (A) Average COA and O2 dynamics triggered to fast O2 transients (duration ~5 s) detected outside periods when SWRs or locomotion bouts occurred. Data is from one recording session (n = 42 events). (B) Relationship between amplitudes of O2 and associated COA transients outside SWRs/locomotion bouts. Colors represent different recording sessions (n = 10–45 from three recordings, rspearman = 0.58, p<0.0001). (C) Group summary of COA vs. O2 amplitude correlations under different behavioral and/or electrophysiological contexts. (D) COA vs. O2 amplitude across animals and states. Each point represents the median of events from a recording session (error bars are CIs). Data were fitted to the Michaelis-Menten equation (Vmax = 1.58, Km = 4.84). (E) Lag of COA peaks relative to O2 peaks (red) and slope of COA vs. O2 amplitude (blue) for O2 transients with varying rise time for a single session; medians with CIs (left). Right shows the relationship between amplitudes of O2 and associated COA transients for the O2 rise time corresponding to largest slope marked with * on the left panel. (F) Group statistics on maximal COA lags, lags at maximal COA/O2 slope and lags associated with longest O2 transients (ANOVA, F2,12 = 15.22, with post-hoc Tukey test, p=0.51 for max COA lag vs. lag at max COA/O2, p=0.0006 for max COA lag vs. lag at max O2 rise and p=0.0038 for lag at maximal COA/O2 slope vs. lag at max O2 rise). (G) Group statistics on O2 rise times corresponding to maximal COA lags and COA/O2 slope in (E). Values from both groups were significantly lower than the longest O2 rise time observed in a given recording (p<0.0001, one-sample t-test). (H) Group statistics on the slopes of COA vs. O2 amplitude at its maximum value and at maximum O2 rise. Differences between groups were significant (p=0.002, paired t-test). ***p<0.001, **p<0.01. Data were obtained from five recording sessions in three mice and are represented as mean ± CI, except in D.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) plots display the same statistics as in an example on Figure 5E, but for all recordings (A) Lag of ChOx activity peaks relative to O2 for changes in O2 detected with varying rise time (from whole recordings, n = 5). Colors represent data from different recording sessions shown as medians ± CIs. (B) Slope of COA response vs. O2 amplitude for O2 transients detected with a varying rise time. Colors represent data from different recording sessions shown as medians ± CIs. (C) z-scored amplitude of detected O2 peaks as a function of O2 rise time. Each trace represents medians from each recording. (D) z-scored amplitude of COA transients peaks associated with O2 transients as a function of O2 rise time. Each trace represents medians from each recording.
 
 Besides the amplitude of O2 transients, the temporal profile of O2 rise might influence the shape and amplitude of associated ChOx responses and thus provide further hints on the causality and directionality of COA-O2 interactions. This analysis is of particular relevance in light of the phasic component of biosensor’s O2 dependence that we have uncovered by our in vitro tests and mathematical modeling. In vivo we detected spontaneous O2 peaks at different frequency bands (ignoring their correlation with SWRs or speed), resulting in a spectrum of O2 rise times from less than 2 to 14 s (please see Materials and methods section for details). Across all recording sessions, we consistently observed that the COA peak anticipated O2 (negative lag) as O2 rise time increased (Figure 7E,F and Figure 7—figure supplement 1A). Maximal COA lags averaged 0.38 ± 0.42 s and were associated with fast O2 rises, lasting 1.4–2.6 s (Figure 7F and G). Furthermore, the slope of COA vs. O2 amplitudes was time-scale dependent, peaking for O2 transients that took 2.3 to 6.2 s to rise (Figure 7E,G and Figure 7—figure supplement 1B) and progressively decreasing for longer O2 rises (Figure 7E,H and Figure 7—figure supplement 1B). The time-scale dependence of the COA vs. O2 slope is apparently related to the non-linear interaction between COA and O2, as a function of O2 rise time. Contrasting with the approximately linear increase in O2 amplitude as a function of O2 rise (Figure 7—figure supplement 1C), the amplitude of corresponding COA peaks was, on average, nearly time-scale independent for O2 rise times in the range of 3–14 s (Figure 7—figure supplement 1D).
 
@@ -109,11 +230,19 @@ These results provide important insights into the interaction between COA and ex
 
 Together, these results converge to the hypothesis that the observed changes in COA are mainly caused by phasic non-steady-state responses of ChOx to O2 fluctuations in vivo.
 
-## Exogenous oxygen transients in the hippocampus elicit phasic COA responses
+### Exogenous oxygen transients in the hippocampus elicit phasic COA responses
 
 Our correlational analysis in vivo, supported by in vitro characterization of biosensor O2 dependence and mathematical modeling of the biosensor, points toward an effect of O2 transients on phasic COA when recording from the hippocampus. We tested the causality of this interaction first by evoking changes in O2 by local application of small volumes of O2-saturated saline through a glass micropipette, positioned at a few hundred microns from the biosensor tip. To evoke different O2 dynamics, we varied ejection parameters such as time and pressure.
 
 Remarkably, immobilized ChOx exhibited robust phasic responses to exogenous O2 transients, regardless of the time-scale of O2 change (Figure 8A and Figure 8—figure supplement 1A). Amplitudes of COA and O2 were significantly correlated (p<0.0001, Figure 8B). However, similarly to spontaneous dynamics, the COA/O2 amplitude ratio of single events (equivalent to COA/O2 slope in spontaneous data) significantly decreased with O2 rise time in all experiments (negative correlation, p<0.05, Figure 8C). The decrease in COA amplitude was accompanied by the advancement of its peak relative to O2 (p<0.001 in all recordings, Figure 8D). Thus, these results qualitatively recapitulate our observations for the spontaneous COA-O2 interactions, reinforcing the putative O2-COA directionality.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig8-v2.jpg)
+
+**Figure 8.:** (A) Representative examples of slow and fast O2 transients and associated COA responses evoked by local application of exogenous O2 from a glass micropipette. (B) Amplitudes of COA vs. locally evoked O2 transients. Data are from three recordings (color-coded, n = 13–40 per session). Amplitudes were significantly correlated when pooling all data (rspearman = 0.81, p<0.0001) and within two sessions (p=0.0017 and p<0.0001, analysis not performed in one session due to the narrow range of O2 amplitudes covered). (C) Ratio of COA vs. evoked O2 peak amplitudes as a function of O2 signal rise time. Colors denote recording sessions and trendlines are linear fits performed on data from each session. In all cases, the variables were negatively correlated (p=0.037, p<0.0001, and p<0.001 for each session). (D) Lag of COA relative to locally evoked O2 transient peaks as a function of O2 rise time. Lags significantly decreased with O2 rise time in all sessions (rspearman for each recording ranged from −0.76 to −0.88, p<0.001). (E) Representative traces showing slow and fast transients evoked by O2 inhalation. E-H plots are analogous to A-D, but for O2-inhalation-induced O2 transients. (F) Amplitudes of COA vs. O2 transients. Data were obtained from three recordings (color-coded, n = 8–40 per session). Whole data as well as data from individual experiments were significantly correlated (p<0.0001 and p<0.0005, respectively). (G) Amplitude ratio of COA vs. O2 transients as a function of O2 rise time. Variables were negatively correlated (red and yellow sessions, with rspearman of −0.66 and −0.86 respectively, p<0.0001 and p=0.011). (H) Lags of COA relative to O2 peaks significantly decreased as a function of O2 rise time (red and yellow sessions, rspearman of −0.58 and −0.90 respectively, p<0.0001 and p=0.0046). Analysis in F-H not performed in one session (blue dots) due to insufficient coverage of O2 amplitudes and rise times. (I) Summary of amplitude and COA-O2 lags correlations for COA and O2 transients evoked by local O2 application and O2 inhalation. Data were obtained from six recording sessions in five mice and are presented as means ± CIs.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61940/elife-61940-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Normalized O2 and COA transients evoked by local O2 application, sorted by O2 rise time. Events were obtained from three recording sessions (n = 13–40 per session). (B) Normalized O2 and COA transients evoked by O2 inhalation, sorted by O2 rise time. Events were obtained from three recording sessions (n = 8–40 per session).
 
 Next, we manipulated hippocampal O2 levels non-invasively, through inhalation, to further confirm O2 causality. We exposed mice to a pure O2 stream during variable periods (4–30 s) in order to generate different O2 transients. Like in the case of local O2 delivery, we observed reproducible changes in COA in response to exogenous O2 (Figure 8E and Figure 8—figure supplement 1). The data showed a significant correlation between peak amplitudes (p<0.0001, Figure 8F). Importantly, both the COA/O2 amplitude ratio and COA peak lag significantly decreased as a function of O2 rise time (p<0.05), corroborating the conclusions from local O2 manipulation.
 
@@ -141,17 +270,104 @@ Our conclusions, supported by a generic mathematical modeling, can be generalize
 
 ## Materials and methods
 
-## Chemicals and solutions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chitosan</td>
+      <td>Sigma-Aldrich</td>
+      <td>448869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroplatinic acid hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>520896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Choline chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Choline oxidase from Alcaligenes sp.</td>
+      <td>Sigma-Aldrich</td>
+      <td>C5896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dopamine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>H8502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gold chloride solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>HT1004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydrogen peroxide</td>
+      <td>Sigma-Aldrich</td>
+      <td>216763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>m-Phenylenediamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P23954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>p-Benzoquinone</td>
+      <td>Sigma-Aldrich</td>
+      <td>B10358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium-L-Ascorbate</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7631</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemicals and solutions
 
 All chemicals were of analytical grade, purchased from Sigma-Aldrich and used as received. Solutions were prepared in ultra-pure deionized water (≥18 MΩ.cm) from a Milli-Q water purification system.
 
-## Tetrode fabrication and platings
+### Tetrode fabrication and platings
 
 The microelectrode support material was a 17 μm diameter Platinum/Iridium (90/10) wire insulated by a polyimide coating (California Fine Wire Company). Tetrodes were fabricated using standard methods (Gray et al., 1995). Briefly, four wires were twisted together and heated to melt the insulation, creating a stiff bundle of twisted wires with a total diameter of approximately 60 μm. The wires’ insulation at the untwisted ending of the tetrode was then removed and the tetrode was inserted in a silica tube (150 μm inner diameter), which was glued to a holder that allowed easy manipulation of the tetrode. Next, the untwisted endings of the tetrode wires were soldered to the pins of an adapter fixed to the tetrode holder, allowing connection to the potentiostat’s head-stage. Finally, the twisted ending of the tetrode was cut using micro-serrated stainless-steel scissors, leaving 1–2 cm of tetrode wire protruding out of the silica tube.
 
 Tetrode surface treatments and platings were performed with a portable potentiostat (EmStat 3, PalmSens BV), using a freshly prepared Ag/AgCl wire (125 μm diameter, WPI inc) as pseudo-reference electrode. Prior to platings, electrode surfaces were cleaned by swirling the tetrode tip in isopropanol followed by an electrochemical treatment in PBS. For that purpose, we applied 70 cycles of a square wave with a first step at +1.2 V for 20 s followed by a 4 s step at −0.7 V. All tetrode sites were then gold-plated in a 3.76 μM aqueous solution of tetrachloroauric acid by applying 20 cycles of a square wave that alternated between +0.6 V for 10 s and −1.0 V for 10 s. Sites’ impedances were checked after gold-plating using a nanoZ impedance tester (Multichannel Systems, GmbH). The pair of sites with the highest impedance was then platinized in a 10 mM chloroplatinic acid solution in 0.1 M sulfuric acid by DC amperometry at −0.1 V, until a current of −30 nA was reached.
 
-## TACO sensor coatings
+### TACO sensor coatings
 
 Choline oxidase immobilization was performed as previously described (Santos et al., 2015). Briefly, a 0.5% (w/v) chitosan stock solution was solubilized in saline (0.9% NaCl) under stirring at pH 4–5, adjusted by addition of HCl. After solubilisation, the pH was set to 5–5.6 by stepwise addition of NaOH.
 
@@ -159,7 +375,7 @@ To form a chitosan/ChOx cross-linked matrix, 1.5 mg of p-benzoquinone was added 
 
 Following enzyme immobilization, tetrode site’s response to Ch was tested and meta-phenylenediamine (m-PD) was electropolymerized on the pair of sites with the highest sensitivity (please see Biosensor calibrations sub-section). Electropolymerization was performed in a nitrogen bubbled oxygen-free PBS solution of 5 mM m-PD by DC amperometry at +0.6 V during 1500s. The biosensors were stored in air and calibrated on the day after m-PD electropolymerization.
 
-## Biosensor calibrations
+### Biosensor calibrations
 
 All in vitro tests were done in a stirred calibration buffer kept at 37°C using a circulating water pump (Gaymar heating/cooling pump, Braintree Scientific, Inc, USA) connected to the calibration beaker. Routine calibrations after enzyme immobilization and m-PD electropolymerization steps were performed by amperometry at a DC potential of +0.6 V vs. Ag/AgCl pseudo-reference electrode. After stabilization of background current in PBS, sensors were calibrated by three consecutive additions of 10 µM Ch followed by 4.9 µM H2O2. In the case of complete (m-PD polymerized) biosensors, the response to 1 µM DA and 100 µM AA was also tested. Voltammograms of H2O2 were done by consecutive additions of 4.9 µM H2O2 at different applied DC voltages.
 
@@ -167,17 +383,17 @@ In vitro O2 tests were carried out in a sealed beaker. After addition of 5 µM C
 
 Sensor response times to Ch and O2 were estimated using the above-mentioned calibration setups.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Freely moving recordings were performed on a 6 months old Long-Evans rat and head-fixed recordings were done in a total of six 3–7 month old C57BL/6J mice. Variability from posthoc characterization of the sensor performance, as well as from inferred electrode localization made sample size predetermination unreliable. We set a minimal biological sample size of 3 for any analyzed parameter, which was found to be appropriate given the consistency of the in vivo data. Additionally, we performed a large sample study in vitro. All experimental procedures were established, and have been approved in accordance with the stipulations of the German animal welfare law (Tierschutzgesetz)(ROB-55.2–2532.Vet_02-16-170).
 
-## Surgeries
+### Surgeries
 
 For freely moving recordings, we chronically implanted a tetrode biosensor and a 32-channel linear silicon probe array (A1 × 32-7mm-100–1250 H32, NeuroNexus Technologies, Inc) in the rat brain. The general procedures for chronic implantations of electrode arrays have been described in detail (Vandecasteele et al., 2012). Prior to surgery, the tetrode biosensor and the silicon probe array were attached to home-made microdrives. Silicon probe’s sites were then gold-plated until impedances at 1 kHz decreased below 200 kΩ (Ferguson et al., 2009). Anesthesia was induced with a mixture of Fentanyl 0.005 mg/kg, Midazolam 2 mg/kg and Medetomidine 0.15 mg/kg (MMF), administered intramuscularly. The rat was continuously monitored for the depth of anesthesia (MouseStat, Kent Scientific Corporation, Inc). After the MMF effect washed out, anesthesia was maintained with 0.5–2% isoflurane via a mask, and metamizol was then subcutaneously administered (110 mg/kg) for analgesia. The tetrode biosensor was implanted in the cortex above the right dorsal hippocampus (AP −3.7 mm, ML −2.5 mm, DV −1.2 mm, relative to bregma) and the silicon probe array was implanted at 0.8 mm posterior from it, spanning most cortical and hippocampal layers (AP −4.5, ML −2.4, DV −3.4). The microdrives were secured to the skull with a prosthetic resin (Paladur, Kulzer GmbH). An Ag/AgCl (125 µm thick) silver wire coated with Nafion (Hashemi et al., 2011) was inserted in the cerebellum and served as the pseudo-reference electrode for electrochemical recordings. The ground for electrophysiology was a stainless-steel screw implanted at the surface of the cerebellum. To reduce line noise, this Ag/AgCl wire was shorted with the electrophysiology ground at the input of the electrochemical head-stage.
 
 Mice used in head-fixed recordings were implanted with a head-post. Anesthesia followed the same procedures as in rats. A mixture of 0.05 mg/kg Fentanyl, 5 mg/kg Midazolam, and 0.5 mg/kg Medetomidine was administered intraperitoneally to induce anesthesia, which was later maintained with isoflurane and Metamizol (200 mg/kg). A craniotomy was made above the dorsal hippocampus and a Nafion-coated Ag/AgCl wire was implanted in the cerebellum. Depending on the head-post configuration, it was cemented either to the back of the skull above the cerebellum or above the hemisphere contralateral to the craniotomy, using UV-curing dental cement (Tetric EvoFlow, Ivoclar Vivadent AG). Finally, the craniotomy and surrounding skull were covered with a silicone elastomer (KWIK-CAST, World Precision Instruments Inc).
 
-## Electrochemical and electrophysiological equipment and recordings
+### Electrochemical and electrophysiological equipment and recordings
 
 Amperometric measurements were performed using either a four-channel (MHS-BR4-VA) or a 8-channel (MBR08-VA) potentiostat connected to four- or eight-channel miniature head-stages, respectively (npi electronic GmbH, Germany). In addition to providing a higher channel count, the MBR08-VA allowed independent control of the potential applied to each channel. This feature enabled simultaneous measurement of the biosensor signal, arising from ChOx, and O2. The DC analog signal from the head-stage was amplified and digitized at 30 kHz and stored for offline processing using the Open Ephys acquisition board and GUI (Siegle et al., 2017).
 
@@ -185,41 +401,63 @@ Freely moving electrochemical recordings were done using the MHS-BR4-VA potenti
 
 Head-fixed recordings in mice were performed using the MBR08-VA potentiostat and respective head-stage. After fixing the mouse, the layer of silicone elastomer protecting the craniotomy was removed. The dura matter above the target brain region was removed and the tetrode biosensor was slowly inserted through the cortex until the hippocampal CA1 pyramidal layer was reached. Accurate targeting was assessed according to brain atlas coordinates and/or by the online identification of hippocampal ripples in the recording. In 5 out of 10 recording sessions mice were head-fixed on a cylindrical treadmill. Movement was quantified based on the video optical flow arising from treadmill rotation using Bonsai (Lopes et al., 2015). In the remaining sessions, mice were head-fixed on a rotating disc which encoded its turns. The analog signal from the disc encoder was fed into the Open Ephys acquisition board and used to quantify mice locomotion.
 
-## Data analysis
+### Data analysis
 
 Raw recordings were preprocessed by low-pass filtering and resampling at 1 kHz. All data analysis was done in Matlab using custom-made functions (MathWorks).
 
-## In vitro sensor responses
+#### In vitro sensor responses
 
 In vitro analysis of biosensor responses was performed on 10 Hz downsampled data, low-pass filtered at 1 Hz. Sensitivities to Ch and O2 were determined by linear-regression of the responses to the first three analyte additions, whereas the sensitivities to H2O2 and interferents were estimated from a single addition. Following pseudo-sentinel subtraction (Au/Pt/m-PD - Au/m-PD sites), selectivity ratios for the COA measurement were estimated by dividing the mean of Ch sensitivity by the mean of interferent responses. The biosensors’ limit of detection (LOD) for Ch, extracted from the COA signal, was calculated as the Ch concentration corresponding to three times the baseline standard deviation (SD). The T50 and T90 response times were defined as the time between the onset of current increase in response to analyte and 50% or 90% of the maximum current, respectively.
 
-## Artifact cancellation by common-mode rejection
+#### Artifact cancellation by common-mode rejection
 
-In vivo electrochemical signals from sites sensitive to COA were cleaned by subtraction of the respective 1 kHz data by the corresponding pseudo-sentinel channel upon a frequency-domain correction. The latter procedure has been described in detail and optimizes common-mode rejection by correcting phase and amplitude mismatches between channels arising from slight frequency-dependent variations in impedance (Santos et al., 2015), a procedure conceptually analogous to orthogonalization of the EEG signals (Hipp et al., 2012). This correction was based on the estimation of a transfer coefficient (T) describing the transfer function from the currents derived from the pseudo-sentinel to the COA-sensitive channel in the frequency domain, according to the following equation:(1)COAmPD=iFFT(Au/Pt/mPD(jw)−T(jw)Au/mPD(jw)),where jw is a complex value at frequency w and COAmPD is the clean COA signal obtained from sites with m-PD (note that COAmPD was used as the measure of COA dynamics throughout this study).
+In vivo electrochemical signals from sites sensitive to COA were cleaned by subtraction of the respective 1 kHz data by the corresponding pseudo-sentinel channel upon a frequency-domain correction. The latter procedure has been described in detail and optimizes common-mode rejection by correcting phase and amplitude mismatches between channels arising from slight frequency-dependent variations in impedance (Santos et al., 2015), a procedure conceptually analogous to orthogonalization of the EEG signals (Hipp et al., 2012). This correction was based on the estimation of a transfer coefficient (T) describing the transfer function from the currents derived from the pseudo-sentinel to the COA-sensitive channel in the frequency domain, according to the following equation:
 
-Upon applying a fast Fourier transformation (FFT), each signal can be described by its amplitude and a phase across a range of frequencies. The amplitude of T for each FFT frequency bin was then estimated from the square root of ratio between the power of the platinized channel carrying the COA signal and the pseudo-sentinel channel. The phase of T was estimated from the phase shift of the cross-spectrum, reflecting the difference between the phases of the two signals at each frequency, during time-windows with high phase-locking (>0.9) in each frequency bin (corresponding to periods of high consistency of phase-shift values). These estimates were computed for each biosensor used in vivo from average spectra obtained from multiple slow-wave periods devoid of movement artifacts. In the low-frequency range (<0.3 Hz), due to COA contribution to power in the platinized channel, the estimation of the amplitude of T was done by linear extrapolation considering the trend at contiguous higher frequencies. The cleaned COA signal was obtained by inverse FFT of the corrected subtraction in the frequency domain. Cleaned O2 signals were obtained following the same logic:(2)O2=iFFT(Au−0.2V(jw)−T(jw)Au/mPD(jw)),where Au-0.2V represents the O2 measuring channel polarized at −0.2 V vs. Ag/AgCl whereas the Au/mPD channel (at +0.6 V vs. Ag/AgCl) was used as the pseudo-sentinel. To substantiate the validation of the in vivo COA measurement, two additional cleaned signals were computed:(3)COAnon−mPD=iFFT(Au/Pt(jw)−T(jw)Au(jw)),(4)NCC=iFFT(Au(jw)−T(jw)Au/mPD(jw)),
+$$
+COA_{mPD}=iFFT(Au/Pt/mPD(jw)−T(jw)Au/mPD(jw)),
+$$
+
+where jw is a complex value at frequency w and COAmPD is the clean COA signal obtained from sites with m-PD (note that COAmPD was used as the measure of COA dynamics throughout this study).
+
+Upon applying a fast Fourier transformation (FFT), each signal can be described by its amplitude and a phase across a range of frequencies. The amplitude of T for each FFT frequency bin was then estimated from the square root of ratio between the power of the platinized channel carrying the COA signal and the pseudo-sentinel channel. The phase of T was estimated from the phase shift of the cross-spectrum, reflecting the difference between the phases of the two signals at each frequency, during time-windows with high phase-locking (>0.9) in each frequency bin (corresponding to periods of high consistency of phase-shift values). These estimates were computed for each biosensor used in vivo from average spectra obtained from multiple slow-wave periods devoid of movement artifacts. In the low-frequency range (<0.3 Hz), due to COA contribution to power in the platinized channel, the estimation of the amplitude of T was done by linear extrapolation considering the trend at contiguous higher frequencies. The cleaned COA signal was obtained by inverse FFT of the corrected subtraction in the frequency domain. Cleaned O2 signals were obtained following the same logic:
+
+$$
+O_{2}=iFFT(Au_{−0.2V}(jw)−T(jw)Au/mPD(jw)),
+$$
+
+where Au-0.2V represents the O2 measuring channel polarized at −0.2 V vs. Ag/AgCl whereas the Au/mPD channel (at +0.6 V vs. Ag/AgCl) was used as the pseudo-sentinel. To substantiate the validation of the in vivo COA measurement, two additional cleaned signals were computed:
+
+$$
+COA_{non−mPD}=iFFT(Au/Pt(jw)−T(jw)Au(jw)),
+$$
+
+
+
+$$
+NCC=iFFT(Au(jw)−T(jw)Au/mPD(jw)),
+$$
 
 The COAnon-mPD signal results from the pair of sites lacking m-PD, whereas the neurochemical confounds signal (NCC) represents the dynamics of the mixed contribution of neurochemical confounds (e.g. ascorbate, dopamine) picked-up by the Au site.
 
 The cleaned signals (Equations 1-4) were then low-pass filtered at 1 Hz and downsampled to 10 Hz for most of the analysis excluding time lags, which were computed on 100 Hz downsampled data.
 
-## Brain state separation
+#### Brain state separation
 
 Local-field potential-related power spectrograms were computed using custom-made Matlab functions based on multi-taper analysis methods (Mitra and Pesaran, 1999). Separation of brain states in freely moving recordings was based on LFP spectral features and behavior. Active wake states were defined as periods when the animal moved vigorously and continuously (>30 s) and showed a prominent LFP spectral peak in theta range (6–10 Hz). Quiet wakefulness or immobility was defined as a period without prominent theta and with occasional movements (<30 s between movement bouts). Long periods (>1 min) without movement and without prominent theta, rather showing high delta power (1–4 Hz) were ascribed to NREM sleep. Rapid eye movement sleep was detected as periods showing a sustained theta band (>30 s) and negligible movement.
 
-## Sharp-wave/ripples and related biosensor signals
+#### Sharp-wave/ripples and related biosensor signals
 
 To detect SWRs, the wide-band electrochemical or electrophysiological signal was band-pass filtered (120–200 Hz), squared and smoothed with a 4.2 ms standard deviation and 42 ms wide Gaussian kernel. The square root of this trace was then used as the power envelope to detect oscillatory bursts. The events exceeding the 98th percentile of the power envelope distribution, having at least five cycles and lasting less than 200 ms were detected as ripples. For the analysis of correlations between integrated ripple power and SWR-triggered sensor signals, a ripple power envelope was obtained upon Hilbert-transforming the band-pass filtered electrochemical signal (ripple band, 120–200 Hz). Different ripple integration times were obtained by smoothing the power envelope with moving average windows of different lengths. Correlations were then computed between smoothed ripple power envelopes at SWR times and the corresponding changes in COA or O2 (relative to their baseline value 1 s prior to SWRs) at different lags from SWRs.
 
 The amplitudes of SWR-related COA and O2 were obtained from the difference between the values at SWR lags corresponding to peaks and onsets, extracted from average SWR-triggered traces.
 
-## Locomotion bouts
+#### Locomotion bouts
 
 To detect locomotion bouts in freely moving recordings, speed was computed from the derivative of low-pass filtered position (0.5 Hz). Speed was then band-pass filtered (0.02–0.2 Hz) and locomotion bouts were detected as peaks in speed that exceeded a manually set threshold. In head-fixed recordings on the disc, mouse locomotion was derived from its rotation in 1 s bins. When head-fixed on the treadmill, mouse locomotion was quantified based on the optic flow from a recorded video, choosing a region of interest that covered only a moving part of the treadmill. The signal was resampled to 1 Hz in order to match the sampling rate of locomotion on the rotating disc. Locomotion bouts were detected as peaks on the band-pass filtered speed (0.02–0.2 Hz) that exceeded a manually defined threshold.
 
 The amplitude of locomotion-bout-associated COA and O2 signal transients was calculated based on the difference between the values at manually determined times of transient onsets and peaks, associated with each event. Likewise, the times of locomotion bout onsets (used to calculate speed change) and the associated peaks in theta power were manually defined based on visual inspection of speed time courses and LFP spectrograms, respectively.
 
-## Oxygen-related ChOx transient signals analysis
+#### Oxygen-related ChOx transient signals analysis
 
 The amplitude of broad-band spontaneous and exogenously induced O2 transients and COA transients associated with them was calculated, for each event, as the difference between the peak value and that at semi-automatically defined time of the transient’s onset. For the detection of spontaneous O2 transients occurring outside periods with SWRs and locomotion, the O2 peaks occurring within −5 s to +1 s from SWRs or within −14 s to + 4 s from peaks in speed were excluded.
 
@@ -227,35 +465,144 @@ To capture and separately analyze spontaneous COA and O2 transients of highly va
 
 The transient onsets and peaks of exogenously induced changes in O2 and COA were manually detected.
 
-## Modeling biosensor responses in vitro
+### Modeling biosensor responses in vitro
 
 We simulated biosensor responses in vitro by numerically solving a system of partial differential equations that describe the diffusion of the substrates Ch and O2 in the enzyme coating and their interaction with the enzyme, leading to product formation.
 
-The buffer solution where the biosensor was placed for calibration is a free-flow environment, in which the concentrations of Ch and O2 are constant over time. Therefore, considering R is the coating thickness, at the boundary between the biosensor coating and the calibration buffer Ch is kept constant at 5 μM during the calibration.(5)Ch(R,t)=5and∂Ch∂t|R=0
+The buffer solution where the biosensor was placed for calibration is a free-flow environment, in which the concentrations of Ch and O2 are constant over time. Therefore, considering R is the coating thickness, at the boundary between the biosensor coating and the calibration buffer Ch is kept constant at 5 μM during the calibration.
 
-Oxygen is changed in steps (x), starting from 0, during the calibration, so between O2 step increases we have:(6)O2(R,t)=xand∂O2∂t|R=0
+$$
+Ch(R,t)=5and\frac{∂Ch}{∂t}|_{R}=0
+$$
 
-Enzyme substrates (Ch and O2) diffuse from the bulk solution into the enzyme layer, eventually reaching the electrode site, whereas H2O2 is locally generated and diffuses within the coating. As the size of our recording sites is very small, this process is better described by a spherical diffusion equation:(7)Difs=∂[S]∂t=Ds1r2∂∂r(r2∂[S]∂r)where S represents substrates or H2O2 concentration, DS is the respective diffusion coefficient, and r is the distance to the electrode surface.
+Oxygen is changed in steps (x), starting from 0, during the calibration, so between O2 step increases we have:
+
+$$
+O_{2}(R,t)=xand\frac{∂O_{2}}{∂t}|_{R}=0
+$$
+
+Enzyme substrates (Ch and O2) diffuse from the bulk solution into the enzyme layer, eventually reaching the electrode site, whereas H2O2 is locally generated and diffuses within the coating. As the size of our recording sites is very small, this process is better described by a spherical diffusion equation:
+
+$$
+Difs=\frac{∂[S]}{∂t}=D_{s}\frac{1}{r^{2}}\frac{∂}{∂r}(r^{2}\frac{∂[S]}{∂r})
+$$
+
+where S represents substrates or H2O2 concentration, DS is the respective diffusion coefficient, and r is the distance to the electrode surface.
 
 In order to simulate realistic two-substrate biosensor responses, we modeled the formation of enzyme intermediate complexes resulting from Ch binding to the enzyme and O2 oxidation reactions, which have been described in detail (Fan and Gadda, 2005; Figure 4—figure supplement 2). Briefly, enzyme-bound Ch (ECh), which is in equilibrium with the free reactant species (E and Ch), undergoes a chemical step leading to the reduction of the FAD enzyme prosthetic group. In this nearly irreversible step, Ch is converted to betaine aldehyde, which remains mostly enzyme-bound (EredBA). The first step in which H2O2 is produced results from the oxidation of FADred by O2 (EoxBA) followed by a second chemical step in which FADox is reduced by betaine aldehyde. The resulting enzyme-bound glycine betaine (EredGB) is then oxidized by O2, producing H2O2. The reaction cycle is completed with release of glycine betaine bound to FAD-oxidized enzyme (EoxGB).
 
-The instantaneous change in the concentration of enzyme substrates, free enzyme, enzyme-bound intermediate complexes and reaction products can then be described by the following system of partial differential equations:(8)∂E∂t=−kf[E][Ch]+kr[ECh]+k5[EoxGB]∂[Ch]∂t=DifCh−kf[E][Ch]+kr[ECh]∂[ECh]∂t=kf[E][Ch]−kr[ECh]−k1[ECh]∂[O2]∂t=DifO2−k2[EredBA][O2]−k4[EredGB][O2]∂[EredBA]∂t=k1[ECh]−k2[EredBA][O2]∂[EoxBA]∂t=k2[EredBA][O2]−k3[EoxBA]∂[EredGB]∂t=k3[EoxBA]−k4[EredGB][O2]∂[EoxGB]∂t=−k5[EoxGB]+k4[EredGB][O2]∂[H2O2]∂t=DifH202+k2[EredBA][O2]+k4[EredGB][O2]
+The instantaneous change in the concentration of enzyme substrates, free enzyme, enzyme-bound intermediate complexes and reaction products can then be described by the following system of partial differential equations:
+
+$$
+\frac{∂E}{∂t}=−kf[E][Ch]+kr[ECh]+k_{5}[E_{ox}GB]\frac{∂[Ch]}{∂t}=Dif_{Ch}−kf[E][Ch]+kr[ECh]\frac{∂[ECh]}{∂t}=kf[E][Ch]−kr[ECh]−k_{1}[ECh]\frac{∂[O_{2}]}{∂t}=DifO_{2}−k_{2}[E_{red}BA][O_{2}]−k_{4}[E_{red}GB][O_{2}]\frac{∂[E_{red}BA]}{∂t}=k_{1}[ECh]−k_{2}[E_{red}BA][O_{2}]\frac{∂[E_{ox}BA]}{∂t}=k_{2}[E_{red}BA][O_{2}]−k_{3}[E_{ox}BA]\frac{∂[E_{red}GB]}{∂t}=k_{3}[E_{ox}BA]−k_{4}[E_{red}GB][O_{2}]\frac{∂[E_{ox}GB]}{∂t}=−k_{5}[E_{ox}GB]+k_{4}[E_{red}GB][O_{2}]\frac{∂[H_{2}O_{2}]}{∂t}=Dif_{H_{2}0_{2}}+k_{2}[E_{red}BA][O_{2}]+k_{4}[E_{red}GB][O_{2}]
+$$
 
 Note that we ignored the kinetics of glycine betaine formation, as it is not relevant regarding the sensor signal transduction and it would not affect the concentrations of any reaction species.
 
-In the beginning of the simulated calibration, there is no Ch in the coating, so all enzyme molecules are free, at a concentration that equals the total enzyme concentration ([E]0).(9)[E](r,t0)=[E]0r=r1,...,R.
+In the beginning of the simulated calibration, there is no Ch in the coating, so all enzyme molecules are free, at a concentration that equals the total enzyme concentration ([E]0).
 
-In turn, in the same conditions, there are no enzyme-bound species and no product formed.(10)[ECh](r,t0)=[EredBA](r,t0)=[EoxBA](r,t0)=[EredGB](r,t0)=[EoxGB](r,t0)=[H2O2](r,t0)=0,r=r1,...,R.
+$$
+[E](r,t_{0})=[E]_{0}r=r_{1},...,R.
+$$
 
-At the electrode surface, there is zero flux of substrates and H2O2 is rapidly oxidized, whereas at the boundary between the coating and bulk solution it is rapidly washed away.(11)∂Ch∂t|r1=0,∂O2∂t|r1=0, [H2O2](r1)=0and[H2O2](R)=0.
+In turn, in the same conditions, there are no enzyme-bound species and no product formed.
 
-The sensor response current is then given by the charge of two-electrons per each oxidized H2O2 molecule times the flux of H2O2 at the electrode surface.(12)I=2F(πre2)JH2O2,JH2O2=DH2O2∂H2O2∂r|r1,where F is the Faraday’s constant and πre2 is the electrode surface area.
+$$
+[ECh](r,t_{0})=[E_{red}BA](r,t_{0})=[E_{ox}BA](r,t_{0})=[E_{red}GB](r,t_{0})=[E_{ox}GB](r,t_{0})=[H_{2}O_{2}](r,t_{0})=0,r=r_{1},...,R.
+$$
+
+At the electrode surface, there is zero flux of substrates and H2O2 is rapidly oxidized, whereas at the boundary between the coating and bulk solution it is rapidly washed away.
+
+$$
+\frac{∂Ch}{∂t}|_{r_{1}}=0,\frac{∂O_{2}}{∂t}|_{r_{1}}=0, [H_{2}O_{2}](r_{1})=0and[H_{2}O_{2}](R)=0.
+$$
+
+The sensor response current is then given by the charge of two-electrons per each oxidized H2O2 molecule times the flux of H2O2 at the electrode surface.
+
+$$
+I=2F(\pir_{e}^{2})J_{H_{2}O_{2}},J_{H_{2}O_{2}}=D_{H_{2}O_{2}}\frac{∂H_{2}O_{2}}{∂r}|_{r_{1}},
+$$
+
+where F is the Faraday’s constant and πre2 is the electrode surface area.
 
 Considering the initial conditions described above the system of partial differential equations was numerically solved by discretization in space and time (time and space steps dt = 0.1 ms and dr = 1 μm, respectively) using the finite difference approximation method (Baronas et al., 2009).
 
 The values ascribed to the variables used in the model are summarized in Table 2. The rate constants corresponding to the reaction mechanism in Figure 4—figure supplement 2 were extracted from the corresponding literature (Fan and Gadda, 2005). An enzyme concentration in the coating of 263 uM was estimated from its concentration in the mixture used for coatings, ignoring drying effects upon coating. Variations in enzyme concentration were simulated around that value. We estimated the diffusion coefficients of enzyme substrates and H2O2 in the coating taking into account the free diffusion coefficients in solution multiplied by a hindrance factor α. The latter was set at 0.8, considering the expected effect of macromolecular crowding on diffusion, for protein concentrations in the range of those used in our simulations (Lamers-Lemmers et al., 2000; Santos et al., 2011).
 
-## Statistical analysis
+**Table 2.**
+ Values of constants used in the biosensor model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Constant</th>
+      <th>Value</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>kf*</td>
+      <td>2 × 106 M−1 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>kr*</td>
+      <td>580 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>k1</td>
+      <td>93 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>k2</td>
+      <td>8.64 × 104 M−1 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>k3</td>
+      <td>135 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>k4</td>
+      <td>5.34 × 104 M−1 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>k5</td>
+      <td>200 s−1</td>
+      <td>Fan and Gadda, 2005</td>
+    </tr>
+    <tr>
+      <td>DCh†</td>
+      <td>1197 μm2 s−1</td>
+      <td>Valencia and González, 2012</td>
+    </tr>
+    <tr>
+      <td>DO2‡</td>
+      <td>2500 μm2 s−1</td>
+      <td>Santos et al., 2011</td>
+    </tr>
+    <tr>
+      <td>DH2O2</td>
+      <td>1830 μm2 s−1</td>
+      <td>van Stroe-Biezen et al., 1993</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>0.8</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Estimated based on Kd, Kcat and Km values of ChOx for choline.†Estimated using the Stokes−Einstein Gierer-Wirtz Estimation method.‡Extrapolated from room temperature to 37°C using a factor of 2.6% per degree (Han and Bartels, 1996)._
+
+### Statistical analysis
 
 All statistical tests were performed using Matlab. Prior to statistical comparisons, the normality of the data was tested by a Anderson-Darling test. In the case of non-normal distributions, comparisons between two groups were performed using a non-parametric two-sided sign test (signtest, Matlab). To test the effect of two factors on non-normal data (effect of ripple count and power on COA or O2 transients), an aligned-rank-transformation (Wobbrock et al., 2011) was applied followed by two-way ANOVA for unbalanced data (nanova, Matlab). Whenever normality could not be discarded, two-sided two-sample t-tests (paired or unpaired) were used to compare two groups. Two-sided one-sample t-tests were used to test deviations from the null hypothesis (zero). Multiple comparisons were done by one-way ANOVA for unbalanced data. The effect of two or more factors was accounted for by two- or three-way ANOVA for unbalanced data.
 

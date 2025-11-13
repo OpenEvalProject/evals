@@ -19,39 +19,106 @@
 
 ## Abstract
 
-10.7554/eLife.24901.001 Impairments in metacognition, the ability to accurately report one’s performance, are common in patients with psychiatric disorders, where a putative neuromodulatory dysregulation provides the rationale for pharmacological interventions. Previously, we have shown how unexpected arousal modulates metacognition (Allen et al., 2016). Here, we report a double-blind, placebo-controlled, study that examined specific effects of noradrenaline and dopamine on both metacognition and perceptual decision making. Signal theoretic analysis of a global motion discrimination task with adaptive performance staircasing revealed that noradrenergic blockade (40 mg propranolol) significantly increased metacognitive performance (type-II area under the curve, AUROC2), but had no impact on perceptual decision making performance. Blockade of dopamine D2/3 receptors (400 mg amisulpride) had no effect on either metacognition or perceptual decision making. Our study is the first to show a pharmacological enhancement of metacognitive performance, in the absence of any effect on perceptual decision making. This enhancement points to a regulatory role for noradrenergic neurotransmission in perceptual metacognition. DOI: http://dx.doi.org/10.7554/eLife.24901.001
+Impairments in metacognition, the ability to accurately report one’s performance, are common in patients with psychiatric disorders, where a putative neuromodulatory dysregulation provides the rationale for pharmacological interventions. Previously, we have shown how unexpected arousal modulates metacognition (Allen et al., 2016). Here, we report a double-blind, placebo-controlled, study that examined specific effects of noradrenaline and dopamine on both metacognition and perceptual decision making. Signal theoretic analysis of a global motion discrimination task with adaptive performance staircasing revealed that noradrenergic blockade (40 mg propranolol) significantly increased metacognitive performance (type-II area under the curve, AUROC2), but had no impact on perceptual decision making performance. Blockade of dopamine D2/3 receptors (400 mg amisulpride) had no effect on either metacognition or perceptual decision making. Our study is the first to show a pharmacological enhancement of metacognitive performance, in the absence of any effect on perceptual decision making. This enhancement points to a regulatory role for noradrenergic neurotransmission in perceptual metacognition.
 
 ## Results
 
-## Noradrenaline blockade modulates metacognition
+### Noradrenaline blockade modulates metacognition
 
-To examine effects of noradrenaline and dopamine (versus placebo) on metacognition we performed a double-blind, between-subjects, placebo-controlled study. Each of the three groups consisted of 20 subjects matched for gender, age, affect (
+To examine effects of noradrenaline and dopamine (versus placebo) on metacognition we performed a double-blind, between-subjects, placebo-controlled study. Each of the three groups consisted of 20 subjects matched for gender, age, affect (Watson et al., 1988), and intellectual abilities (Wechsler, 1999) (Table 1). Due to differences in their pharmacokinetic properties we administered active drugs orally at two different time points. The dopamine group received 400 mg of amisulpride (selective D2/3 antagonist) 110 min prior to a metacognition task and an additional placebo 30 min after the amisulpride administration (Figure 1A). The noradrenaline group received a placebo at 110 min prior to the task and then 40 mg of propranolol (non-selective β-adrenoceptor antagonist) 30 min after placebo administration. The placebo group received placebo at the both time points to match the administration schedules of the other groups. A post-experiment evaluation revealed that subjects were not aware of whether and which drug they received (χ2(4)=1.26, p=0.868; missing data from two subjects). There were no effects of drug on mood (PANAS; Watson et al., 1988) ratings (main effect of drug: F(2,57)=.16, p=0.852; time x drug: F(2,57)=.19, p=0.827; time x affect x drug: F(2,57)=2.17, p=0.124).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24901/elife-24901-fig1-v1.jpg)
 
-**Figure 1.:** (A) After filling out a baseline mood questionnaire (PANAS pre), subjects received two different drugs 110 and 80 min prior to the metacognition task. A dopamine subject group first received 400 mg amisulpride (dopamine D2/3 receptor antagonist) and subsequently placebo, whereas the noradrenaline group first received placebo and then 40 mg propranolol (β-adrenoceptor antagonist). Subjects of a placebo group received placebo at both times. Eighty minutes after the second drug administration, subjects filled out a second mood questionnaire (PANAS post) and then performed a metacognition task. (B) To assess subjects’ metacognitive abilities, we used a global motion discrimination task with subsequent confidence judgements. After a fixation period, subjects saw 1100 dots moving randomly with an average motion pointing either to the left or right. After 250 ms, subjects had to indicate the overall direction of the moving dots by using keyboard arrows. Subsequently, they indicated their confidence about their decision using a sliding visual analogue scale. Subjects were instructed to use the full width of the scale by indicating high confidence on the right and low confidence on the left side of the scale.DOI: http://dx.doi.org/10.7554/eLife.24901.002
+**Figure 1.:** (A) After filling out a baseline mood questionnaire (PANAS pre), subjects received two different drugs 110 and 80 min prior to the metacognition task. A dopamine subject group first received 400 mg amisulpride (dopamine D2/3 receptor antagonist) and subsequently placebo, whereas the noradrenaline group first received placebo and then 40 mg propranolol (β-adrenoceptor antagonist). Subjects of a placebo group received placebo at both times. Eighty minutes after the second drug administration, subjects filled out a second mood questionnaire (PANAS post) and then performed a metacognition task. (B) To assess subjects’ metacognitive abilities, we used a global motion discrimination task with subsequent confidence judgements. After a fixation period, subjects saw 1100 dots moving randomly with an average motion pointing either to the left or right. After 250 ms, subjects had to indicate the overall direction of the moving dots by using keyboard arrows. Subsequently, they indicated their confidence about their decision using a sliding visual analogue scale. Subjects were instructed to use the full width of the scale by indicating high confidence on the right and low confidence on the left side of the scale.
+
+**Table 1.**
+ Group characteristics. The three groups did not differ in their gender, age, intellectual abilities (IQ) (Wechsler, 1999) and their positive and negative affective states before and after drug administration. PANAS: positive and negative affective schedule (Watson et al., 1988), PA: positive affect, NA: negative affect, pre: before drug administration, post: after drug administration (mean±SD).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Placebo</th>
+      <th>Propranolol</th>
+      <th>Amisulpride</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gender (f/m)</td>
+      <td>10/10</td>
+      <td>10/10</td>
+      <td>10/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>age</td>
+      <td>24.50 ± 4.16</td>
+      <td>23.15 ± 4.31</td>
+      <td>22.35 ± 2.21</td>
+      <td>F(2,57)=1.74, p=0.185</td>
+    </tr>
+    <tr>
+      <td>IQ</td>
+      <td>112.45 ± 12.22</td>
+      <td>118.75 ± 8.55</td>
+      <td>114.60 ± 11.77</td>
+      <td>F(2,57)=1.70, p=0.191</td>
+    </tr>
+    <tr>
+      <td>PANAS PA pre</td>
+      <td>31.15 ± 10.08</td>
+      <td>27.70 ± 8.28</td>
+      <td>28.90 ± 6.60</td>
+      <td>F(2,57)=0.86, p=0.428</td>
+    </tr>
+    <tr>
+      <td>PANAS NA pre</td>
+      <td>11.70 ± 2.23</td>
+      <td>13.55 ± 5.48</td>
+      <td>13.10 ± 3.23</td>
+      <td>F(2,57)=1.23, p=0.300</td>
+    </tr>
+    <tr>
+      <td>PANAS PA post</td>
+      <td>29.22 ± 10.47</td>
+      <td>27.15 ± 7.75</td>
+      <td>27.80 ± 8.12</td>
+      <td>F(2,57)=0.286, p=0.752</td>
+    </tr>
+    <tr>
+      <td>PANAS NA post</td>
+      <td>11.45 ± 2.37</td>
+      <td>11.95 ± 4.87</td>
+      <td>11.25 ± 1.92</td>
+      <td>F(2,57)=0.236, p=0.790</td>
+    </tr>
+  </tbody>
+</table>
 
 Eighty minutes after the second drug administration, subjects performed a visual global motion discrimination task that included confidence judgements (Figure 1B). Subjects decided whether the overall motion of a short burst of randomly moving dots was directed to the left or right of the vertex. Subsequently, and in the absence of feedback on whether they were correct or not, they indicated confidence in their decision on that trial using a sliding visual analogue scale. To control for potential drug effects on perceptual performance, we matched the subjects’ decision accuracy by continuously adapting the global motion orientation using a staircase procedure (Cornsweet, 1962).
 
-To examine metacognitive abilities, we analysed type-II performance as derived from signal detection theory (
+To examine metacognitive abilities, we analysed type-II performance as derived from signal detection theory (Green and Swets, 1966; Galvin et al., 2003). This measures subjects’ awareness into their own performance by assessing how well their confidence ratings match their true accuracy (i.e., ‘how much more confident am I if I make a correct vs incorrect decision’). We calculated type-II area under the receiver-operating-characteristics curve (AUROC2) (Fleming et al., 2010, 2012; Weil et al., 2013; Allen et al., 2017) for each subject and then compared this metric between groups using an ANOVA with drug group as a between-subjects factor. The analysis revealed a significant effect of drug on AUROC2 (Figure 2, F(2,55)=5.192, p=0.009, η²=0.16), with follow up t-tests showing the propranolol group performed significantly better than a placebo group (t(38)=4.00, p<0.001, d = 1.26). The propranolol group also performed marginally better than an amisulpride group (t(36)=2.02, p=0.051, d = 0.65) with the latter having an equal performance as the placebo group (t(36)=.74, p=0.465, d = 0.23). To evaluate evidence for this null effect in the amisulpride group, we additionally performed a Bayesian two-sample t-test comparing the placebo and amisulpride groups (Rouder et al., 2009; Dienes, 2014). This analysis revealed a Bayes Factor of 3.31, corresponding to moderate evidence for the null hypothesis. These results indicate that inhibition of noradrenergic function improves metacognitive insight, in the absence of any effect of amisulpride.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24901/elife-24901-fig2-v1.jpg)
 
-**Figure 2.:** (A) Signal detection theoretic analysis revealed a significantly increased metacognitive ability, as measured by the type-II area under the ROC curve (AUROC2). (B) A highly significant effect of propranolol compared to placebo shows that propranolol increases metacognitive abilities. The difference between propranolol and amisulpride suggests that this performance increase might be specific to an influence on noradrenaline but not dopamine function. (C) Individual AUROC2 metrics show that most subjects in the propranolol group perform above the median metacognitive performance (dotted line), while perceptual decision making performance was relatively stable across all groups. mean ±1 SEM; fat line: ANOVA; square brackets: t-tests.DOI: http://dx.doi.org/10.7554/eLife.24901.00410.7554/eLife.24901.005Figure 2—source data 1.Figures 2 and 3.File containing data to reproduce Figure 2 and 3 and main data analysis.DOI: http://dx.doi.org/10.7554/eLife.24901.005
+**Figure 2.:** (A) Signal detection theoretic analysis revealed a significantly increased metacognitive ability, as measured by the type-II area under the ROC curve (AUROC2). (B) A highly significant effect of propranolol compared to placebo shows that propranolol increases metacognitive abilities. The difference between propranolol and amisulpride suggests that this performance increase might be specific to an influence on noradrenaline but not dopamine function. (C) Individual AUROC2 metrics show that most subjects in the propranolol group perform above the median metacognitive performance (dotted line), while perceptual decision making performance was relatively stable across all groups. mean ±1 SEM; fat line: ANOVA; square brackets: t-tests.
 
-## Improved metacognition mainly driven by confidence on error trials
+### Improved metacognition mainly driven by confidence on error trials
 
 To further understand the noradrenaline-induced metacognitive enhancement, we compared median confidence ratings for correct and incorrect trials between the propranolol and placebo group. A significant group-by-correctness interaction (F(1,38)=8.66, p=0.006, η²=0.19) in the absence of a group main effect (F(1,38)=1.83, p=0.185, η²=0.05) suggests that a confidence rating difference between correct and incorrect trials underlies the observed group differences. Subsequent t-tests demonstrated that this effect was primarily driven by error trials (error trials: t(38)=2.17, p=0.036, d = 0.69, correct trials: t(38)=-.193, p=0.848, d = 0.06), suggesting that the propranolol group exhibited lower confidence for error trials.
 
-## Metacognitive differences are not explained by perceptual performance
+### Metacognitive differences are not explained by perceptual performance
 
-Metacognitive measures, as used here, can be influenced by differences in perceptual performance (
+Metacognitive measures, as used here, can be influenced by differences in perceptual performance (Fleming and Lau, 2014). We deliberately used a staircase procedure to keep performance equivalent between groups (mean accuracy: F(2,55)=1.60, p=0.212, η²=0.05, cf. Figure 2C). A signal-detection theoretic analysis confirmed these findings, revealing the absence of any significant differences in either perceptual sensitivity d’ (Figure 3C, F(2,55)=1.69, p=0.194, η²=0.07) or response bias c (F(2,55)=2.29, p=0.112, η²=0.08) (Green and Swets, 1966). To additionally ensure that differences in AUROC2 were not influenced by any of these measures, we also compared AUROC2 using an ANCOVA with d’, response bias c, and stimulus signal strength (mean orientation) as covariates, revealing the same group difference for AUROC2 after controlling for these potential biases (F(2,51)=4.99, p=0.010, η²=0.17).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24901/elife-24901-fig3-v1.jpg)
 
-**Figure 3.:** No drug effects were observed on the signal strength (A, stimulus motion orientation) or the response speed (B). In line with no difference in accuracy, perceptual sensitivity d’ did not differ between groups (C). Median confidence ratings (D) showed no difference revealing that there was no bias in the average rating behaviour between groups. These findings suggest that noradrenaline blockade selectively boosts metacognitive sensitivity in the absence of any effect on perceptual decision making. mean ±1 SEM; n.s. p>0.10.DOI: http://dx.doi.org/10.7554/eLife.24901.006
+**Figure 3.:** No drug effects were observed on the signal strength (A, stimulus motion orientation) or the response speed (B). In line with no difference in accuracy, perceptual sensitivity d’ did not differ between groups (C). Median confidence ratings (D) showed no difference revealing that there was no bias in the average rating behaviour between groups. These findings suggest that noradrenaline blockade selectively boosts metacognitive sensitivity in the absence of any effect on perceptual decision making. mean ±1 SEM; n.s. p>0.10.
 
-## No drug effect on perceptual decision making
+### No drug effect on perceptual decision making
 
 To test whether perceptual decision making was affected by our drug interventions, we analysed whether stimulus strength, measured by mean stimulus motion orientation, differed between groups. There was no significant difference in stimulus strength (Figure 3A, F(2,55)=1.16, p=0.321, η²=0.04), indicating perceptual performance was not significantly affected by the drug manipulations. Likewise, there was no drug effect on reaction times (Figure 3B, F(2,55)=.87, p=0.424, η²=0.03). Lastly, to test whether there were baseline differences in how the groups were utilising the confidence scale, we examined the median confidence ratings, but found no difference (Figure 3D, F(2,55)=.38, p=0.684, η²=0.01), supporting the result that an enhanced metacognitive ability under propranolol is not due to a bias in use of the confidence rating scale.
 
@@ -71,27 +138,31 @@ In conclusion, using a double-blind, placebo-controlled drug manipulation we sho
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Sixty subjects participated in this double-blind, placebo-controlled, between-subjects study. Each subject was randomly allocated to one of three drug groups, controlling for an equal gender balance in all groups. Candidate subjects with a history of neurological or psychiatric disorders, current health issues, regular medications (except contraceptives), or prior allergic reactions to drugs were excluded from the study. Subjects had normal or corrected-to-normal vision. The groups were matched for age, mood (PANAS; before and after drug administration) (Watson et al., 1988) and intellectual abilities (WASI abbreviated version) (Wechsler, 1999) (Table 1). Subjects were reimbursed for their participation on an hourly basis. The study was approved by the UCL research ethics committee and all subjects gave written informed consent.
 
-## Drug manipulation and procedures
+### Drug manipulation and procedures
 
 To attenuate noradrenergic function we administered 40 mg of propranolol, a non-selective β-adrenoceptor antagonist. To attenuate dopamine function we administered 400 mg of amisulpride, a selective D2/3 antagonist. These drugs were chosen because of their selective high affinity effects on either one or the other of these two neuromodulators, enabling a specific dissociation of their contribution to metacognitive ability. The dosage and timing of both propranolol and amisulpride were based on previous studies that have investigated their effects on cognition (e.g., Ramaekers et al., 1999; Strange et al., 2003; Silver et al., 2004; Strange and Dolan, 2004; Hurlemann et al., 2005; Alexander et al., 2007; Gibbs et al., 2007; De Martino et al., 2008; Kahnt et al., 2015; Kahnt and Tobler, 2017).
 
 Prior to the task the drugs were administered at two different time points, based upon pharmacokinetic considerations (Figure 1A). The first drug was administered 110 min prior to the metacognition task. At that time, the dopamine group received amisulpride while the other groups received placebo. After 30 min, subjects consumed a second drug. This time, the noradrenaline group received propranolol, while the dopamine and placebo group consumed a placebo. A placebo group received placebo at both times. The task was performed 80 min after the second drug administration.
 
-## Experimental paradigm
+### Experimental paradigm
 
 To measure metacognitive ability we applied an adaptive visual global motion detection paradigm, similar to the version in our previous study (Allen et al., 2016), implemented using Psychtoolbox-3 (www.psychtoolbox.org) for MATLAB (R2010a). On every trial, subjects viewed a brief burst of motion (250 ms), followed by a forced choice to determine if the overall motion direction was to the left or right of vertical. Subjects then rated their subjective confidence using a continuous sliding scale marked at four equal intervals by horizontal lines. To prevent response preparation, the starting point of the confidence marker was jittered up to 12% to the left or right of scale midpoint on each trial. Subjects had up to 1500 ms to make their motion choice, and 2500 ms to report their confidence.
 
 At the start of the experiment, each subject was instructed that the goal of the task was to measure their perceptual and metacognitive sensitivity. This was operationally defined as their ability to detect motion direction and how accurately their confidence ratings reflected their actual detection performance. Subjects first completed a short training session of 140 detection-only trials to establish motion thresholds. All subjects achieved staircase stabilization before continuing to the main experiment (the motion direction threshold reached in the final staircase of training was used as the starting point for main task). Subjects were encouraged to use the entire scale to report their subjective feeling of confidence, and to carefully reflect on each trial on the decision they had just made. Confidence reports were then binned into six equally sized bins for further analysis similar to previous reports (Fleming et al., 2010, 2012; Allen et al., 2017; Hauser et al., 2017).
 
-On each trial subjects viewed a cloud of 1100 moving black dots of 0.08 degrees visual angle (DVA), presented for 250 ms within a 15.69 DVA circular array at random starting positions and advancing at a speed of 0.06 DVA per frame. Dots which moved beyond the stimulus aperture were replaced at the opposite edge to maintain constant dot density. To prevent fixation on local motion directions, all dots had a randomized limited lifetime of maximum 93% (14 frames). Each motion stimulus was defined by a global motion direction (‘orientation’) to the left or right of vertical. Following experiments investigating confidence with global motion stimuli, dot mean and variance were manipulated independently of one another (Allen et al., 2016; Spence et al., 2016). To this end, all dots were ‘signal’ dots and the standard deviation of the mean direction was adjusted across conditions. On each trial the motion signal was thus calculated using the formula:Dotdirection=(LeftvsRight)∗MeanOrientation+GaussianNoise∗StandardDeviation
+On each trial subjects viewed a cloud of 1100 moving black dots of 0.08 degrees visual angle (DVA), presented for 250 ms within a 15.69 DVA circular array at random starting positions and advancing at a speed of 0.06 DVA per frame. Dots which moved beyond the stimulus aperture were replaced at the opposite edge to maintain constant dot density. To prevent fixation on local motion directions, all dots had a randomized limited lifetime of maximum 93% (14 frames). Each motion stimulus was defined by a global motion direction (‘orientation’) to the left or right of vertical. Following experiments investigating confidence with global motion stimuli, dot mean and variance were manipulated independently of one another (Allen et al., 2016; Spence et al., 2016). To this end, all dots were ‘signal’ dots and the standard deviation of the mean direction was adjusted across conditions. On each trial the motion signal was thus calculated using the formula:
+
+$$
+Dotdirection=(LeftvsRight)∗MeanOrientation+GaussianNoise∗StandardDeviation
+$$
 
 To control task difficulty and thus ensure an unbiased estimate of metacognitive sensitivity (Fleming and Lau, 2014), the mean direction of motion was continuously adapted for each subject using a 2-up-1 down staircase, which converges at the limit on a 71% detection accuracy. To render the staircase opaque to subjects, and maximize confidence variability, we deployed two separate staircase conditions with a fixed motion variance equal to either 20 or 30 degrees standard deviation. Subjects completed a total of 144 trials (72 high variance, 72 low variance) divided evenly between four blocks.
 
-## Statistical analysis and metacognition modelling
+### Statistical analysis and metacognition modelling
 
 The goal of our analyses were two-fold: First, we wanted to ensure all groups expressed equivalent perceptual decision making performance, as performance differences can influence estimates of metacognitive ability (Fleming and Lau, 2014). Second, we wanted to test for differences in metacognition using signal detection theory (SDT), examining the metacognitive detection performance using an area under the curve for a type-II receiver-operating-characteristics (ROC) (AUROC2) metric (Fleming et al., 2010, 2012).
 
@@ -99,10 +170,24 @@ To ensure homogeneous performance across all subjects, we excluded two outlier s
 
 To examine subjects’ metacognitive abilities, we assessed the type-II performance using SDT. In this framework, metacognition can be modelled as the sensitivity of subjective confidence to underlying ground truth discrimination performance. By defining metacognitive ‘hits’ (i.e., high confidence for correct detections) and ‘misses’ (high confidence for incorrect detections), metacognitive sensitivity can be expressed as the area under a type-II receiver-operating-characteristics curve (AUROC2). In contrast to classical measures of metacognition (e.g., the correlation of confidence and accuracy), AUROC2 is unbiased by a subject's overall level of confidence (or metacognitive bias/criterion) if detection performance is held constant across subjects (Fleming and Lau, 2014). Further, being nonparametric, AUROC2 is not susceptible to issues such as non-normal confidence distributions.
 
-AUROC2 was calculated using the same metric as in Fleming et al. (2010), Kornbrot (2006):(1.1)AUROC2=14∑k=112i([hk+1−fk]2−[hk−fk+1]2)+14∑k=12ii([hk+1−fk]2−[hk−fk+1]2)
+AUROC2 was calculated using the same metric as in Fleming et al. (2010), Kornbrot (2006):
 
-where i indicates the six confidence rating bins, h depicts the relative frequency of this rating for correct choices (hi=p(confidence==i|correct)) and f describes the counterpart for incorrect responses (fi=p(confidence==i|incorrect)).
+$$
+AUROC2=\frac{1}{4}\sumk=1\frac{1}{2}i([h_{k+1}−f_{k}]^{2}−[h_{k}−f_{k+1}]^{2})+\frac{1}{4}\sumk=\frac{1}{2}ii([h_{k+1}−f_{k}]^{2}−[h_{k}−f_{k+1}]^{2})
+$$
 
-To ensure that the groups did not differ in their type-I detection performance (d‘) or response bias (c), we additionally examined these metrics (Green and Swets, 1966; Fleming et al., 2010):(1.2)d′=12(z(H)−z(FA))(1.3)c=−.5(z(H)−z(FA))
+where i indicates the six confidence rating bins, h depicts the relative frequency of this rating for correct choices ($h_{i}=p(confidence==i|correct)$) and f describes the counterpart for incorrect responses ($f_{i}=p(confidence==i|incorrect)$).
+
+To ensure that the groups did not differ in their type-I detection performance (d‘) or response bias (c), we additionally examined these metrics (Green and Swets, 1966; Fleming et al., 2010):
+
+$$
+d^{′}=\frac{1}{\sqrt{2}}(z(H)−z(FA))
+$$
+
+
+
+$$
+c=−.5(z(H)−z(FA))
+$$
 
 where z describes the inverse of a cumulative normal distribution, H is the correct hits and FA the false alarms for two-alternative forced choice tasks.

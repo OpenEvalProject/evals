@@ -28,37 +28,89 @@ In the current study, we introduced a third-odor test, in which flies were given
 
 ## Results
 
-## Single-trial training produces aversive LTMs to both CS+ and CS–
+### Single-trial training produces aversive LTMs to both CS+ and CS–
 
 We first plotted the memory retention curve at various time points after training (Figure 1A). Consistent with previous reports (Davis and Zhong, 2017; Shuai et al., 2010; Tully et al., 1994), flies exposed to single-trial conditioning rapidly lost their ability to discriminate CS+ and CS– within 1 day. However, when trained flies were instead tested between either CS+ and a novel odor, or CS– and a novel odor, they gradually exhibited significant avoidances of both CS+ and CS– from 12 hr to more than 7 days after training (Figure 1B). Consistently, testing CS+ or CS– versus air also revealed training-induced long-lasting avoidances of CS+ and CS– (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig1-v2.jpg)
+
+**Figure 1.:** (A) Single-trial differential conditioning induced discriminative memory that was forgotten within 1 day (n = 6–8). (B) Conditioned flies exhibited long-lasting avoidances of both CS+ and CS– (n = 8–10). (C) Cycloheximide (CXM) treatment abolished 1 day avoidances of CS+ and CS– (n = 6). (D) The 1 day avoidances were tested after cold-shock anesthesia at different time points following training. Aversive memory to CS+ and CS– requires a multi-hour consolidation process (n = 6–8). All data shown are presented as mean ± SEM. *p < 0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Multi-trial spaced training (six trials of training with 15 min interval) induced 24 hr aversive memory to conditioned stimulus (CS+) and approach memory to non-conditioned stimulus (CS–) (n = 6–8). All data shown are presented as mean ± SEM. *p < 0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Odor avoidances of 3-octanol (OCT) and 4-methylcyclohexanol (MCH) were significantly increased when they were used as CS+ or CS– during training (n = 8). All data shown are presented as mean ± SEM. *p < 0.05.
+
 Based on these observations, we wondered whether such aversive LTMs require new protein synthesis to consolidate. Results show that such avoidances resulted from the formation of protein synthesis-dependent LTMCS+ and LTMCS– because the administration of cycloheximide (CXM), a protein synthesis inhibitor, prevented the avoidances of both CS+ and CS– after 1 day (Figure 1C). The time course of the consolidation of such LTMs could be revealed by cold-shock treatment, which is known to abolish labile memories but leave consolidated LTM intact (Krashes and Waddell, 2008; Li et al., 2016; Tully et al., 1994). As shown in Figure 1D, it takes more than 3 hr for consolidation to be completed.
 
-## The long-term avoidances of CS+ and CS– seem to be derived from the same mLTM
+### The long-term avoidances of CS+ and CS– seem to be derived from the same mLTM
 
 The above results prompted us to investigate whether LTMCS+ and LTMCS– are based on two parallel LTMs of the same valence, or the same LTM that can be retrieved by either odor. Two lines of evidence suggested that LTMCS+ and LTMCS– are derived from the same memory component.
 
 First, LTMCS+ and LTMCS– were both extinguished by the re-exposure to either CS+ or CS– alone (Figure 2A). Trained flies were re-exposed to three cycles of either CS+ or CS– for 1 min with 1 min inter-trial intervals immediately before testing. Such treatment significantly reduced both LTMCS+ and LTMCS–, as compared to those re-exposed to air, suggesting the LTMCS+ and LTMCS– are both retrievable for either one of CS+ and CS–.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig2-v2.jpg)
+
+**Figure 2.:** (A) Three trials of re-exposure to either CS+ or CS– alone can impair both CS+ avoidance and CS– avoidance 1 day after training (n = 6). (B) Prolonging the inter-trial interval (ITI) between CS+ and CS– to more than 5 min significantly impaired 1 day avoidances (n = 6–8). (C) Changing the sequence of CS+ and CS– during training did not affect 1 day avoidances (n = 6). All data shown are presented as mean ± SEM. *p < 0.05. NS, non-significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Training without conditioned stimulus (CS+) or non-conditioned stimulus (CS–) abolished the 24 hr avoidance to CS– or CS+ (n = 6–8). All data shown are presented as mean ± SEM. *p < 0.05.
+
 Second, LTMCS+ and LTMCS– were both abolished when the temporal interval between CS+ and CS– during training was prolonged to more than 5 min (Figure 2B), suggesting that the formation of LTMCS+ and LTMCS– depends on the contiguity of two shock-paired CS+ and CS– exposures, instead of temporally separated exposures. In addition, changing the sequence of exposure to CS+ and CS– did not affect either LTMCS+ or LTMCS– (Figure 2C), but training with CS+ or CS– alone failed to induce the LTMCS+ or LTMCS– (Figure 2—figure supplement 1).
 
 Together, these results strongly suggest that, instead of two parallel LTMs, observed LTMCS+ and LTMCS– are more likely to be derived from the same memory component. Since it was observable after two separated memory curves (CS+ and CS–) merged over time, we termed it as mLTM.
 
-## The encoding of mLTM requires aversive-reinforcing DANs
+### The encoding of mLTM requires aversive-reinforcing DANs
 
 Then we further investigated the neural network mechanisms underlying such mLTM. In Drosophila, associative olfactory memories are mainly encoded by the DANs (Aso and Rubin, 2016; Claridge-Chang et al., 2009; Cognigni et al., 2018) through alterations of the connections between KCs and MBONs (Aso et al., 2014a; Aso et al., 2014b; Cognigni et al., 2018; Dubnau and Chiang, 2013; Modi et al., 2020; Pascual and Préat, 2001; Plaçais et al., 2012). We therefore tested whether DANs involve in mLTM encoding by comparing 24 hr memory in control flies with that in flies whose synaptic outputs from different clusters of DANs were blocked during training. For this purpose, we expressed the dominant-negative temperature-sensitive UAS-Shibirets1 (Shits)-encoded dynamin (Kitamoto, 2001) driven by R58E02-Gal4, which labels the protocerebral anterior medial (PAM) cluster of DANs, and R52H03-Gal4 and TH-Gal4, which both label PPL1 DANs (Figure 3—figure supplement 1A,B and C). We specifically blocked output from DANs during training by raising the temperature of flies from 23°C to 32°C. Flies were then returned to 23°C and later tested for 1 day memory. The results showed that blocking the release of neurotransmitter from PPL1 DANs, but not PAM DANs, during training impaired mLTM (Figure 3A), suggesting that the neuromodulation of PPL1 DANs is necessary for mLTM formation.
 
-## Retrieval of mLTM requires output of αβ KCs
+![Figure 3.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig3-v2.jpg)
+
+**Figure 3.:** (A) Blocking paired posterior lateral 1 (PPL1) dopaminergic neurons (DANs) (R52H03-Gal4 or TH-Gal4) but not protocerebral anterior medial (PAM) DANs (R58E02-Gal4) during training significantly impaired mLTM (n = 6–8). (B) Blocking mushroom body (MB) during testing using R13F02-Gal4>UAS-Shits impaired the mLTM (n = 6–8). (C) The mLTM was impaired by blocking αβ KCs (C739-Gal4), but not that of α’β’ KCs (VT30604-Gal4) or γ KCs (5-HT1B-Gal4) (n = 6–8). All data shown are presented as mean ± SEM. *p < 0.05.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Panels show GFP expression driven by the relevant GAL4 (green) and general neuropil stained with an antibody to the presynaptic marker nc82 (gray). (A) R58E02-Gal4 labels all protocerebral anterior medial (PAM) dopaminergic neurons (DANs). (B) R52H03-Gal4 labels all paired posterior lateral 1 (PPL1) DANs. (C) TH-Gal4 broadly labels all PPL1 DANs. (D) R13F02-Gal4 labels all Kenyon cells (KCs) in mushroom body (MB). (E) C739-Gal4 labels αβ KCs. (F) VT20604-Gal4 labels α’β’ KCs. (G) 5-HT1B-Gal4 labels γ KCs.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Blocking PAM DANs did not affect the 3 min avoidance to CS+ but induced a significant avoidance to CS–, whereas blocking PPL1 DANs abolished the 3 min avoidance to CS+ but increases the 3 min approach to CS– (n = 6–8). All data shown are presented as mean ± SEM. *p < 0.05.
+
+### Retrieval of mLTM requires output of αβ KCs
 
 We then examined the role of KCs in mLTM retrieval. We imposed the block by raising temperature to 32°C from 23°C, 15 min before the test. Inhibition of the synaptic output of all KCs (R13F02-Gal4>UAS-Shits) through exposure to a restrictive temperature during the test abolished mLTM (Figure 3B and Figure 3—figure supplement 1D). We further tested the effects of blocking three distinct subgroups of KCs (Figure 3C), namely, those located within the MB αβ lobe (αβ KCs), which were labeled with C739-Gal4; those located within the α’β’ lobe (α’β’ KCs), which were labeled with VT30604-Gal4; and those located within the γ lobe (γ KCs), which were labeled with 5-HT1B-Gal4 (Figure 3—figure supplement 1E-G). The results showed that mLTM did not express when the synaptic output of αβ KCs was blocked, whereas inhibition of α’β’ KCs and γ KCs had no significant effect (Figure 3C).
 
-## The α2sc cluster of MBONs is required for mLTM expression
+### The α2sc cluster of MBONs is required for mLTM expression
 
 Then we further tried to identify which cluster of MBONs from αβ lobe of MB is required for mLTM. Prior studies on the structure of MB network have uncovered that the PPL1 DANs mainly integrate to the α2 and α3 compartments of the vertical α lobe of MB, and corresponding MBONs (α2sc and α3 clusters) have been reported to be important to aversive spaced training-induced LTM expression (Aso et al., 2014a; Aso et al., 2014b; Bouzaiane et al., 2015; Dubnau and Chiang, 2013; Jacob and Waddell, 2020; Modi et al., 2020; Pascual and Préat, 2001; Plaçais et al., 2012; Schwaerzel et al., 2003). We therefore attempted to block α2sc MBONs (R71D08-Gal4) and α3 MBONs (G0239-Gal4) during testing, respectively (Figure 4—figure supplement 1A,B). Results showed that mLTM expression was significantly impaired by blocking α2sc MBONs, but not α3 MBONs (Figure 4A,B). This conclusion was further strengthened by the result that inhibiting the neural activity of α2sc MBONs using heat-inducible expression of the potassium channel Kir2.1 decreased the mLTM retrieval (Figure 4—figure supplement 2). Thus, these results suggest that retrieving mLTM specifically relies on the output of α2sc MBONs.
 
-## Differential conditioning induces long-lasting depression of CS+ and CS– odor-evoked responses in α2sc
+![Figure 4.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig4-v2.jpg)
+
+**Figure 4.:** (A) Blocking α2sc MBONs using R71D08-Gal4>UAS-Shits impaired mLTM expression (n = 6–10). (B) Blocking α3 MBONs using G0239-Gal4>UAS-Shits did not affect mLTM expression (n = 6). All data shown are presented as mean ± SEM. *p < 0.05. NS, non-significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Panels show GFP expression driven by the relevant GAL4 (green) and general neuropil stained with an antibody to the presynaptic marker nc82 (gray). (A) R71E08-Gal4 labels α2sc mushroom body output neurons (MBONs). (B) G0239-Gal4 labels α3 MBONs.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Blocking the neural activity of α2sc MBONs using R71D08-Gal4>UAS-Kir2.1;tub-gal80ts abolished the mLTM expression (n = 6). Flies were moved to high temperature (32°C) 5 days before training for the induction of Kir2.1. All data shown are presented as mean ± SEM. *p < 0.05.
+
+### Differential conditioning induces long-lasting depression of CS+ and CS– odor-evoked responses in α2sc
 
 We then imaged odor-evoked calcium responses in the dendritic field of α2sc MBONs to CS+ and CS– through expressing jGCamP7f, a calcium-sensitive fluorescent protein (Dana et al., 2019), driven by R71D08-Gal4. To account for variance between different odors, the responses of trained flies were calibrated to the average responses of naïve flies to corresponding odors. Consistent with results of the behavioral assay, 1 day after training, odor-evoked calcium responses of α2sc MBONs to CS+ and CS– were both significantly reduced when compared to responses to the novel odor (Figure 5A,B). Moreover, such depression of CS+ and CS– odor-evoked responses can be abolished by prolonging the temporal interval between CS+ and CS– to 10 min during training (Figure 5C), which is consistent with the result of behavioral assay (Figure 2B). Interestingly, when we recorded the calcium responses immediately after training, the depressed responses to CS+ and CS– were observed, suggesting the mLTM should be encoded during training (Figure 5—figure supplement 1). Together, our data showed that the aversion to CS+ and CS– are both linked to the neural plasticity conferred by the same MBON.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig5-v2.jpg)
+
+**Figure 5.:** (A) Left: training and imaging protocols. The imaging plane for α2sc MBONs is shown. The novel odor-evoked response, conditioned stimulus (CS+) odor-evoked response, and non-conditioned stimulus (CS–) odor-evoked response were calibrated to the average responses of corresponding odors in naïve flies. Right: the mLTM can be recorded as depressed odor-specific responses in α2sc MBONs (n = 9). (B) Prolonging the inter-trial interval (ITI) between CS+ and CS– during training abolished the depressed odor-specific responses (n = 8). All data shown are presented as mean ± SEM. *p < 0.05. NS, non-significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66499/elife-66499-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top: training and imaging protocols. The odor-evoked responses of novel odor, conditioned stimulus (CS+), and non-conditioned stimulus (CS–) were sequentially recorded before and after training. Down: the depressed CS+ and CS– odor-evoked responses were recorded immediately after training (n = 9). All post-training responses were calibrated to the average responses of corresponding in same flies before training. (B) Model of memory components induced by single-trial differential conditioning. After training, two categories of memories are formed: the short-lasting discriminative memory guiding avoidance to CS+ and approach to CS–; and the long-lasting merged memory guiding avoidance to both CS+ and CS–. All data shown are presented as mean ± SEM. *p < 0.05.
 
 ## Discussion
 
@@ -72,11 +124,11 @@ Moreover, the differences between single-trial training-induced mLTM and multi-t
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 All flies (Drosophila melanogaster) were raised on standard cornmeal medium at 23°C and 60% relative humidity under a 12 hr light-dark cycle as described (Shuai et al., 2010). The control strain was w1118(isoCJ1). UAS-Shibirets1 and UAS-Kir2.1;tub-gal80ts were extant stocks in the laboratory. Gal4 lines used have been described previously: TH-Gal4 (Friggi-Grelin et al., 2003), C739-Gal4 (McGuire et al., 2001), R58E02-Gal4, R52H03-Gal4, R13F02-Gal4, and R71D08-Gal4 (Jenett et al., 2012), 5HT1b-Gal4 (Yuan et al., 2005), G0239-Gal4 (Pai et al., 2013), and VT30604-Gal4 (#200228) (Wu et al., 2013). UAS-GCaMP7f was a gift from Yi Sun, Westlake University.
 
-## Behavioral assays
+### Behavioral assays
 
 All flies were raised at 23°C and mixed-sex populations of 2- to 5-day-old flies were used in all experiments. The Pavlovian olfactory aversive conditioning procedure was performed as described previously in a behavioral room at 23°C and 60% relative humidity described (Shuai et al., 2010).
 
@@ -94,16 +146,16 @@ For neural inactivation experiments using UAS-Shits, crosses were reared at 23°
 
 For odor re-exposure, flies were exposed to three cycles of conditioned odor (either CS+ or CS–) for 1 min with 1 min interval as described previously (Wang et al., 2019). All mentioned re-exposure treatments were performed immediately before testing.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Flies were quickly anesthetized on ice and whole brains were dissected in ice-cold PBS within 5 min, then stained as described (Shuai et al., 2010). Brains were fixed in 4% paraformaldehyde in PBS for 30 min on ice. Brains were incubated for at least 72 hr with the primary antibodies anti-GFP (chicken, 1:2000; Abcam, Cambridge, UK), anti-nc82 (mouse, 1:10; Developmental Studies Hybridoma Bank, Iowa City, IA), and anti-DsRed (rabbit, 1:500; Takara Bio, Kyoto, Japan). Brains were washed three times again in PBS with 0.2% Triton X-100 and transferred into secondary antibody solution (anti-chicken Alexa Fluor 488, 1:200; anti-mouse Alexa Fluor 647, 1:200; anti-rabbit Alexa Fluor 647, 1:200; Molecular Probes, Eugene, OR) and incubated for 48 hr at 4°C. Images were obtained using a Zeiss LSM710 confocal microscope (Carl Zeiss AG, Oberkochen, Germany).
 
-## In vivo two-photon calcium imaging
+### In vivo two-photon calcium imaging
 
 Two- to five-day-old female flies were used. After anesthetized in a plastic vial on ice for 15–20 s, flies were then gently inserted into a hole of a thin plastic rectangular plate and stabilized in the hole by glue. In a saline bath, the area surrounding the region of interest was surgically removed to expose the dorsal side of the brain. Fat and air sacs were gently removed to give a clear view of the brain. For calcium response imaging, the 40× water immersion objective lens (NA=1.0; Zeiss) were lowered near the exposed brain.
 
 Imaging was performed on a Zeiss LSM 7MP two-photon laser scanning microscope with an imaging wavelength at 910 nm (Carl Zeiss AG). The 512 × 512 pixel images were acquired at 2.6 Hz. In each trial, 10 s of baseline was recorded, followed by an odor-evoked response recording. Two to three minutes of rest were given in between trials when multiple trials were applied. GCaMP responses and the average value within 10 s before and during stimulus were quantified using custom software written in MatLab (MathWorks, Natick, MA). For the brain region of interest during the experimental period, the average fluorescence value, Fave, was then converted to ΔF/F0 using the formula ΔF/F0 = (Fave-F0)/F0, where F0 is the baseline fluorescence value, measured as the average of 10 s before the stimulus. Flies were trained using CS+ (OCT, 10 µl in 10 ml mineral oil) and CS– (MCH 10 µl in 10 ml mineral oil), and IA (10 µl in 10 ml mineral oil) was used as novel odor. To gain the calibrated calcium responses of trained flies, the ratios of ΔF/F0 to different odors of trained and naïve flies were calculated. Specifically, all odor-evoked responses after training were divided to the mean responses to the same odors of same number naïve flies. Thus, a calibrated ΔF/F0 of 1.0 indicated no difference in the odor-evoked responses to the correspondence odor between trained and naïve group.
 
-## Statistics
+### Statistics
 
 Statistics were performed with GraphPad Prism software (version 7; GraphPad Software, San Diego, CA). All data satisfied the assumption of normal distribution (one-sample Kolmogorov–Smirnov test). Comparisons between two groups were performed using two-tailed t-tests. Comparisons of multiple groups were performed using one-way or two-way analysis of variance (ANOVA) tests followed by Bonferroni correction for multiple comparisons. p-Values less than 0.05 were considered statistically significant and are marked with an asterisk in figures; NS indicates non-significant differences (p > 0.05).

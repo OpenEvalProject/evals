@@ -40,11 +40,23 @@ Here we show that mature OLG bordering a demyelinated lesion limit lesion extens
 
 ## Results
 
-## Demyelination triggers Ndst1 up-regulation by OLG and creates a transient N-sulfated belt around the lesion
+### Demyelination triggers Ndst1 up-regulation by OLG and creates a transient N-sulfated belt around the lesion
 
 To identify candidates that could regulate interactions between progenitors and the injured environment, a microarray analysis was performed to compare gene expression in purified oligodendroglia from adult healthy and demyelinated animals (Cayre et al., 2013). One of the most robustly and significantly up-regulated genes after demyelination was Ndst1, a key enzyme of HS proteoglycan synthesis (fold increase of 48.9 and 14.0 in two different trials; p≤0.001; microarray data are available at GEO with accession number GSE47486). This up-regulation of Ndst1 was confirmed in vivo at 21 days in mice exposed to EAE by in situ hybridization combined with Olig2 labeling, a pan OLG marker. While Ndst1 was not detected in the corpus callosum of control brains (Figure 1—figure supplement 1A), it was highly expressed by the Olig2+ population after EAE in the corpus callosum (Figure 1—figure supplement 1B–C) in close proximity to lesion sites (Figure 1—figure supplement 1C).
 
 To characterize the up-regulation of Ndst1 after demyelination, we used LPC to trigger focal demyelination lesions in the mouse corpus callosum (Figure 1A). In this model, demyelination is not T cell driven, and demyelination and remyelination proceed in a stereotypic sequence: demyelination occurs within few days, endogenous progenitor mobilization peaks at eight dpi and is followed by OPC differentiation (El Waly et al., 2014). Production of new myelin is then observed after 2 weeks. Demyelination of the corpus callosum is clearly visible after LPC injection in a reporter mouse where myelin fluoresces green (plp-GFP) (Spassky et al., 2001; Le Bras et al., 2005) by the total loss of GFP signal around the injection site (Figure 1—figure supplement 2). The lesion is also characterized by a strong increase in cell density (due to glia proliferation and to microglia/macrophage infiltration) observed by Hoechst staining (Figure 1—figure supplement 2) that strictly coincides with loss of GFP fluorescence.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig1-v2.jpg)
+
+**Figure 1.:** (A) Scheme showing the site of LPC injection (red point) in the adult corpus callosum and the location of picture shown in C (red rectangle). (B) Ndst1 expression levels (RT-qPCR) in the corpus callosum of healthy or demyelinated mice, contralateral (contra) and ipsilateral (ipsi) to the lesion site showing the Ndst1 up-regulation in the ipsilateral side. Tissues from five mice were pooled in each condition. Error bars represent S.E.M. *p<0.05, non-parametric ANOVA followed by Kruskal-Wallis test (independent two group comparisons). (C–H) Ndst1 in situ hybridization performed at 5 (C-F, n = 4), 8 (G, n = 4) and 14 (H, n = 4) dpi illustrating the Ndst1 expression pattern at different time points of demyelination (C–F) and remyelination (G–H). (D–E) Enlarged views of the CC in (C) corresponding to contralateral side (D) and positive cells at the margin of the demyelinated area at the site of LPC injection (E). CC, corpus callosum; Cx, cortex; SVZ, sub-ventricular zone; V, ventricle (structures are delineated by brown dotted lines, lesion with white dotted lines). Scale bars: 50 µm in F, G and H; 20 µm in D, F, H; 10 µm in D and E Asterisk in G indicates the site of injection since the demyelinated lesion is no longer visible at 14 dpi.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ndst1 is not expressed in control brain (A) (n = 2) while it is up-regulated by Olig2+ cells after experimental autoimmune encephalomyelitis induction (B) (n = 3) in close proximity to lesions in the corpus callosum (C). Enlarged views correspond to boxed region. CC, corpus callosum. Scale bars: 50 µm in A-B; 20 µm in C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Demyelination was clearly visible in the corpus callosum around the injection site by the lack of GFP fluorescence (B, E). Hoechst staining shows a high cell density (C, F) correlating with the loss of myelin (A, D). CC, corpus callosum, Cx, cortex, V, ventricle, St, Striatum. Scale bars: 100 µm.
 
 We first evaluated Ndst1 expression levels by performing RT-qPCR analysis using the corpus callosum of healthy or demyelinated mice on the ipsi- and contralateral sides to the LPC injection, 8 days post injection (dpi). We quantified a mean 41% increase in the Ndst1 expression level in the demyelinated corpus callosum compared to healthy corpus callosum (Figure 1B; p=0.05). Ndst1 transcripts were found up-regulated in demyelinated corpus callosum by in situ hybridization at five dpi during demyelination (Figure 1C–F), eight dpi (Figure 1G), and 14 dpi (Figure 1H). At days 5 and 8 dpi, Ndst1 expressing cells delimited a belt around the lesion site. Weak staining was observed distal to the lesion, in the contralateral side of the corpus callosum and at the core of the lesion (Figure 1C–D). Thus, the induction of demyelination in the corpus callosum triggers Ndst1 up-regulation, and this change is sustained throughout the phases of demyelination and remyelination.
 
@@ -58,19 +70,27 @@ The phenotype of Ndst1 expressing cells around the demyelinated lesion was exami
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig3-v2.jpg)
 
-**Figure 3.:** (A–B) Ndst1 in situ hybridization successively combined with Olig2 immunostaining (A) or Plp in situ hybridization (B) labeling, two OLG markers, illustrating Ndst1 up-regulation in oligodendroglia lineage cells surrounding the lesion site at five dpi (n = 3). (C–D) Representative images of Ndst1/PDGFRα (C) and Ndst1/CC1 (D) co-labeling illustrating that both OPC (C) and mature OLG (D) up-regulate Ndst1 after demyelination at five dpi (n = 4). Inserts in (A–D) illustrate boxed regions at high magnification. Scale bars: 20 µm.  Figure 3—source data 1.
+**Figure 3.:** (A–B) Ndst1 in situ hybridization successively combined with Olig2 immunostaining (A) or Plp in situ hybridization (B) labeling, two OLG markers, illustrating Ndst1 up-regulation in oligodendroglia lineage cells surrounding the lesion site at five dpi (n = 3). (C–D) Representative images of Ndst1/PDGFRα (C) and Ndst1/CC1 (D) co-labeling illustrating that both OPC (C) and mature OLG (D) up-regulate Ndst1 after demyelination at five dpi (n = 4). Inserts in (A–D) illustrate boxed regions at high magnification. Scale bars: 20 µm.
 
 Of note, in the belt delimitated by Ndst1 staining surrounding the lesion, only half of the Olig2+ cells expressed Ndst1 (45.8 ± 3.4%). This may indicate that not all stages of oligodendroglial maturation or not all oligodendrocytes respond equally to the lesion. We observed that, 8.5 ± 3.2% of PDGFRα+ cells and 48.9 ± 8.5% of CC1+ cells surrounding the lesion co-labeled with Ndst1. Our data indicate that the majority of Ndst1+ cells around the lesion are mature OLG which are more prone than OPC to activate Ndst1 expression in response to demyelination.
 
-## Deletion of Ndst1 in the Olig2+ population transiently worsens the extent of demyelination and modifies OPC reactivity after LPC injection
+### Deletion of Ndst1 in the Olig2+ population transiently worsens the extent of demyelination and modifies OPC reactivity after LPC injection
 
 To test if Ndst1 activity in oligodendroglia controls demyelination and/or remyelination, we generated transgenic mice with a conditional deletion of Ndst1 in Olig2+ cells, by breeding Olig2-Cre+/- mice and Ndst1 Flox/Flox mice (Grobe, 2005; Dessaud et al., 2007). The efficiency of inactivation of Ndst1 expression in Olig2 cells was monitored by in situ hybridization in the context of LPC-induced demyelinating lesion, revealing a drastic decrease in Ndst1 expression in lesioned mutants compared to control (Figure 4A–F). As revealed by immunostaining using the anti-HS antibody, a significant reduction of 53% of the staining in N-sulfated HS positive puncta around the demyelination lesion was also observed in mutant compared to control (Figure 4G–I; p=0.05). In healthy mice, quantitative analysis of myelin content (Figure 4—figure supplement 1A–C; p=0.2), astrocyte density (Figure 4—figure supplement 1D–F; p=0.4) and oligodendroglial lineage cell density (Figure 4—figure supplement 1G–L; p=0.6, 0.2 and 0.2 for Olig2, CC1 and PDGFRα cell density respectively) revealed no difference between control (Olig2-Cre+/-) and mutant (Olig2-Cre+/-; Ndst1 Flox/Flox) adult mice, thus indicating that conditional deletion of Ndst1 in the Olig2+ cell population does not interfere with brain development and with subsequent myelin maturation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Representative images of the lesion site (delineated by white dashed lines) in the corpus callosum of control (A) (n = 2) and mutant (B) (n = 2) mice at eight dpi illustrating the enlargement of the lesion size in mutant mice compared to control mice. Olig2 (in red) is used to label oligodendrocyte lineage cells. In situ hybridization revealed a marked reduction in Ndst1 expression surrounding the lesion site in mice with conditional inactivation in the oligodendroglial lineage cells (B, D, F) compared to control mice (A, C, E). C and D are high magnifications of the squares in A and B respectively. E and F are high magnifications of the squares in C and D respectively. Representative images of 10E4 immunostaining at the lesion site (delineated by white dashed lines. 8dpi) in the corpus callosum of control (G) and mutant (H) mice showing a strong reduction of heparan sulfate labeling in absence of Ndst1 in oligodendrocytes. (I) Quantitative analysis of heparan sulfate labeling area fraction in control and Mutant conditions (n = 4 mice per condition). Error bars represent S.E.M. *p<0.05, non-parametric Mann-Whitney test (independent two group comparisons). CC, corpus callosum, V, ventricle, St, Striatum. Scale bars: 100 µm in A-; 20 µm in C-D. 30 µm in G-H. Source files of the quantitative analyses are available in the Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Representative images of the myelin content in the corpus callosum of control (A) and Olig2-Cre; Ndst1 Flox/Flox (B) mice. (C) Quantitative analysis of the myelin content by double blind scoring of PLP staining in control (n = 3) and mutant mice (n = 3). Results are expressed in percentage of the control. (D–E) Astrocyte labeling by GFAP immunofluorescence in the corpus callosum of control (D) (n = 2) and mutant (n = 3) mouse brain (E). (G–H, J–K) Phenotype of oligodendroglia in the corpus callosum of control (G, J) (n = 5) and mutant (H, K) (n = 5) mice by triple immunostaining for Olig2/PDGFRα/CC1. (F, I) Quantification of mean cell density of astrocytes (GFAP+ cells) (n = 2 and 3) (F) and oligodendroglia (Olig2+ cells) (I) in the corpus callosum of control and mutant mice (n = 5 in each group). (L) Quantitative analysis of the percentage of Olig2+/CC1+ and Olig2+/PDGFRα+ in the corpus callosum of control and mutant mice (n = 3). No significant difference was observed between the two groups using non-parametric Mann-Whitney test (independent two group comparisons). Error bars represent S.E.M. Scale bars: 10 µm. Source files of the quantitative analyses are available in the Figure 4—figure supplement 1—source data 1.
 
 We first performed LPC-induced demyelination of the corpus callosum in control and mutant mice and measured the size of the lesion at 4, 8 and 14 dpi. As before, lesions were identified based on the high density of nuclei at the injection point (Figure 1—figure supplement 2). While no difference was detected at four dpi (0.226 ± 0.036 vs. 0.159±0.033 mm³ in control and mutant mice, respectively; p=0.23), a significant two-fold increase in lesion size was observed in mutant compared to control mice at eight dpi (0.199 ± 0.032 vs. 0.097±0.022 mm³, p=0.023) (Figure 5A–C). During the remyelination phase (between 8 and 14 dpi), the lesion area decreased in both groups reaching comparable sizes at 14 dpi (0.033 ± 0.02 vs. 0.028±0.012 mm³ in control and mutant mice, respectively; p=0.97) (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig5-v2.jpg)
 
-**Figure 5.:** Ndst1 in Olig2+ cells affects lesion size and OPC mobilization after LPC-induced demyelination of the corpus callosum.(A–B) Representative images of the lesion site (delineated by white dashed lines) in the corpus callosum of control (A) and mutant (B) mice at eight dpi illustrating the enlargement of the lesion size in mutant mice compared to control mice. (C) Quantitative analysis of the lesion size at 4, 8 and 14 dpi (n = 8,9,4 control and n = 9,12,6 mutant mice respectively). (D–E) Oligodendroglia labeled by Olig2 staining within the demyelinated area at eight dpi (E) compared to control mice (D). (F) Olig2 mean cell density in healthy (CTL) or demyelinated control and mutant mice at 4, 8, 14 dpi. (G–H) Mature OLG co-labeled by Olig2/CC1 within the demyelinated lesion at eight dpi in control (G) and mutant (H) mice. (I) Quantification of mean cell density of Olig2+/CC1+ cells within the demyelination lesion in healthy (CTL) or demyelinated control and mutant mice at 4, 8, 14 dpi. (J–K) Ki67+ immunolabeling shows the proliferation status of cells within the lesion 8dpi in control (J) and mutant (K) mouse. (L) Graph represents the cell proliferation (Ki67+ cells) in mutant relative to control mice at 4 and 8 dpi (n = 9,12 control and n = 8,16 mutant mice respectively). (M–N) Co-immunolabelling of Olig2 and Ki67 showing OPC proliferation in control (M) and mutant (N) mouse 8dpi. (I) Quantification of proliferating OPC (Ki67+/olig2+ cells) in lesion sites at 4 and 8 dpi (n = 6,11 control and n = 7,13 mutant mice respectively). Error bars represent S.E.M. *p<0.05, ***p<0.001, non-parametric Mann-Whitney test (independent two group comparisons). Scale bars: 50 µm in A, B, D, E and 10 µm in, G, H, J, K, M and N. Source files of quantitative analyses are available in the Figure 4—source data 1.  Figure 5—source data 1.
+**Figure 5.:** (A–B) Representative images of the lesion site (delineated by white dashed lines) in the corpus callosum of control (A) and mutant (B) mice at eight dpi illustrating the enlargement of the lesion size in mutant mice compared to control mice. (C) Quantitative analysis of the lesion size at 4, 8 and 14 dpi (n = 8,9,4 control and n = 9,12,6 mutant mice respectively). (D–E) Oligodendroglia labeled by Olig2 staining within the demyelinated area at eight dpi (E) compared to control mice (D). (F) Olig2 mean cell density in healthy (CTL) or demyelinated control and mutant mice at 4, 8, 14 dpi. (G–H) Mature OLG co-labeled by Olig2/CC1 within the demyelinated lesion at eight dpi in control (G) and mutant (H) mice. (I) Quantification of mean cell density of Olig2+/CC1+ cells within the demyelination lesion in healthy (CTL) or demyelinated control and mutant mice at 4, 8, 14 dpi. (J–K) Ki67+ immunolabeling shows the proliferation status of cells within the lesion 8dpi in control (J) and mutant (K) mouse. (L) Graph represents the cell proliferation (Ki67+ cells) in mutant relative to control mice at 4 and 8 dpi (n = 9,12 control and n = 8,16 mutant mice respectively). (M–N) Co-immunolabelling of Olig2 and Ki67 showing OPC proliferation in control (M) and mutant (N) mouse 8dpi. (I) Quantification of proliferating OPC (Ki67+/olig2+ cells) in lesion sites at 4 and 8 dpi (n = 6,11 control and n = 7,13 mutant mice respectively). Error bars represent S.E.M. *p<0.05, ***p<0.001, non-parametric Mann-Whitney test (independent two group comparisons). Scale bars: 50 µm in A, B, D, E and 10 µm in, G, H, J, K, M and N. Source files of quantitative analyses are available in the Figure 4—source data 1.
 
 We examined how these changes in the local environment in these mutant mice affect OPC mobilization during remyelination by analyzing Olig2+ cells density (Figure 5D–F), maturation status (Figure 5G–I) and proliferation (Figure 5J–O). In accordance with demyelination, there was a marked decrease in Olig2+ cell density within the demyelinated area compared to healthy corpus callosum in both groups at four dpi (55.5 ± 3.3% and 57.3 ± 3.9% decrease in control and mutant mice respectively, p=0.03 and p=0.001) (Figure 5F), reflecting the loss of oligodendrocytes. We observe that in both conditions the density of Olig2+ cells returned to uninjected control values at 14 dpi. Quantification of mean cell densities of mature OLG (CC1+) (Figure 5G–I) within the lesion throughout the time course revealed no significant difference between the two groups indicating that cell differentiation is not affected by Ndst1 inactivation.
 
@@ -78,31 +98,248 @@ We observed that the density of Ki67+ proliferating cells within the lesion area
 
 Together, these results suggest that Ndst1 expression in the Olig2+ population has no effect on initial demyelination (equivalent lesion size at four dpi) but protects the lesion from enlarging and participates in the control of OPC mobilization.
 
-## Deletion of Ndst1 in the Olig2+ population modulates microglia/macrophage activation
+### Deletion of Ndst1 in the Olig2+ population modulates microglia/macrophage activation
 
 While the total number of proliferating cells within the lesion area was strongly increased in Ndst1 mutant mice compared to control mice at eight dpi (Figure 5J–L), the percentage of OPC among these cells represent only 7.6% in the mutant. These data suggest that Ndst1 loss in the Olig2 population indirectly modulates proliferation of surrounding cell types in the context of a demyelinating lesion. To address this, we evaluated the proliferation and activation states of the macrophage/microglia participating in demyelination-remyelination in this acute demyelination model. We found a robust increase in proliferation of CD68+ cells in mutant compared to control mice at eight dpi (166.4 ± 24.3 vs. 79.3 ± 20.6 CD68+/Ki67+ cells per mm² in mutant and control mice, respectively, p=0.026) (Figure 6A–C). Upon CNS insult, microglia/macrophages are quickly activated, changing their shape from ramified to rhomboid. Rhomboid versus ramified polarization of total or activated microglia/macrophages was examined using respectively Iba1 (Figure 6D–E) and CD68 (Figure 6F–H) immunostaining. We observed a switch of the microglia/macrophage polarization among the whole Iba1 and CD68 population in favor of the rhomboid phenotype in mutant mice compared to control at eight dpi. This effect was quantified for activated microglia (ratio of rhomboid/ramified CD68+ cells of 0.28 ± 0.05 in control vs. 0.66 ± 0.1 in mutant mice, p=0.038) (Figure 6H). While the activation phenotype tended to decrease between 4 and 8 dpi in control mice, it tended to increase in mutant animals. We then evaluated the expression level of Cox2, a marker of pro-inflammatory (M1) microglia/macrophage (Chhor et al., 2017) and observed a significant 77% increase in the number of Cox2+ microglial cells in mutant mice compared to control (p=0.01), indicating a delay in the pro-inflammatory (M1) to pro-regenerative (M2) switch in the absence of Ndst1 in oligodendroglia (Figure 6I–K). These results demonstrate that Ndst1 deletion in the Olig2 population is sufficient to enhance microglia/macrophage proliferation and activation at the lesion site at the onset of remyelination.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig6-v2.jpg)
 
-**Figure 6.:** Ndst1 deletion on microglia/macrophage activation.(A–B) CD68+/Ki67+ co-immunolabeling shows the proliferation status of activated microglia/macrophages. (C) Quantification of proliferating microglia/macrophages (Ki67+/CD68+ cells) in lesion sites at 4 and 8 dpi (n = 3,7 control and n = 3,7 mutant mice respectively). Iba1 (D–E) and CD68 immunolabeling (F–G) shows the increase in rhomboid-polarized microglia/macrophages in the demyelinated area of mutant mice at eight dpi. (H) Quantification of the ratio of rhomboid/branched CD68+ cells in lesion sites at 4 and 8 dpi (n = 3,4 control and n = 3,6 mutant mice respectively) showing a switch of the microglia/macrophage polarization in favor of the rhomboid phenotype in mutant mice at eight dpi. (I–J) Cox2 immunolabeling shows an increase in this M1 phenotype marker at 8dpi in mutant mice. (K) Quantification of Cox2+ cells in lesion sites at 8dpi (n = 4 control and n = 5 mutant mice). Error bars represent S.E.M. *p≤0.05, non-parametric Mann-Whitney test (independent two group comparisons). Scale bars: 50 µm in I-J and 10 µm in A-B, D-E, F-G. Source file of quantitative analyses are available in the Figure 5—source data 1.  Figure 6—source data 1.
+**Figure 6.:** (A–B) CD68+/Ki67+ co-immunolabeling shows the proliferation status of activated microglia/macrophages. (C) Quantification of proliferating microglia/macrophages (Ki67+/CD68+ cells) in lesion sites at 4 and 8 dpi (n = 3,7 control and n = 3,7 mutant mice respectively). Iba1 (D–E) and CD68 immunolabeling (F–G) shows the increase in rhomboid-polarized microglia/macrophages in the demyelinated area of mutant mice at eight dpi. (H) Quantification of the ratio of rhomboid/branched CD68+ cells in lesion sites at 4 and 8 dpi (n = 3,4 control and n = 3,6 mutant mice respectively) showing a switch of the microglia/macrophage polarization in favor of the rhomboid phenotype in mutant mice at eight dpi. (I–J) Cox2 immunolabeling shows an increase in this M1 phenotype marker at 8dpi in mutant mice. (K) Quantification of Cox2+ cells in lesion sites at 8dpi (n = 4 control and n = 5 mutant mice). Error bars represent S.E.M. *p≤0.05, non-parametric Mann-Whitney test (independent two group comparisons). Scale bars: 50 µm in I-J and 10 µm in A-B, D-E, F-G. Source file of quantitative analyses are available in the Figure 5—source data 1.
 
-## Shh binds to HS around the focal LPC-induced demyelinated lesion in the corpus callosum
+### Shh binds to HS around the focal LPC-induced demyelinated lesion in the corpus callosum
 
 As previously mentioned, HSPGs form a scaffold that shapes the distribution and activity of numerous growth factors and morphogens during development and provide environmental support for regenerative responses following CNS injury. Among several known HSPG-binding morphogens, Shh was previously identified as a positive regulator for myelin repair (Ferent et al., 2013; Zakaria et al., 2019). In order to determine whether lesion-induced HS enrichment around the lesion site could influence Shh distribution (hence signaling), we used an Alkaline Phosphatase (AP) tagged version of Shh (AP-SHH) to directly assay its binding capacity in demyelinating context. Knowing that the CW sequence serves as a major HS-binding site for Shh (Carrasco et al., 2005; Rubin et al., 2002), we also used AP-SHH recombinant proteins deleted for the CW sequence (AP-SHH-CWdeleted), as a control. Probes were incubated on fresh brain sections obtained 4 days after LPC injections. AP-Shh binding was observed in the cortex in healthy conditions (data not shown) and after lesion (Figure 7B,B’). While no AP-Shh binding was observed in healthy or uninjured contralateral corpus callosum, AP-Shh binding delimited a clear belt surrounding the lesion site in the corpus callosum after LPC injection (Figure 7B–B’). In contrast, AP-Shh-CWdeleted did not bind around the same lesion on adjacent sections (Figure 7C–D). As AP-Shh binding depends on the integrity of its HS-binding motif, this indicates that endogenous Shh localization and concentration may be controlled by HS production by peri-lesional OLG.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig7-v2.jpg)
 
-**Figure 7.:** Representative images of adjacent serial coronal sections derived from control mice 4 days after LPC injection and incubated with the fusion proteins AP-Shh-WT (A–B’) or AP-Shh-CW in which the CW sequence responsible for HS binding is absent (C–D) (n = 4). The lesion site is delineated by dashed lines. Staining using B-gal is clearly visible around the lesion after AP-Shh incubation (B–B’), while no staining is observed when the AP-Shh-CW deleted protein is used (D). These data show that Shh is concentrated around the lesion and that this distribution depends on the integrity of the HS binding motif. (E) Quantification of Ptch1 expression at 8dpi in control and mutant mice reported in number of dots per cell (n = 4 control and n = 5 mutant mice, p=0.07). (F–G) Illustration of Ptch1 expression in peri-lesional areas in control (F) and mutant (G) mice after labeling as detected by RNAscope technology. CC, corpus callosum; Cx, cortex. Scale bars: 100 µm in A-D. 10 µm in F and G. Source file of quantitative analysis is available in the Figure 6—source data 1.  Figure 7—source data 1.
+**Figure 7.:** Representative images of adjacent serial coronal sections derived from control mice 4 days after LPC injection and incubated with the fusion proteins AP-Shh-WT (A–B’) or AP-Shh-CW in which the CW sequence responsible for HS binding is absent (C–D) (n = 4). The lesion site is delineated by dashed lines. Staining using B-gal is clearly visible around the lesion after AP-Shh incubation (B–B’), while no staining is observed when the AP-Shh-CW deleted protein is used (D). These data show that Shh is concentrated around the lesion and that this distribution depends on the integrity of the HS binding motif. (E) Quantification of Ptch1 expression at 8dpi in control and mutant mice reported in number of dots per cell (n = 4 control and n = 5 mutant mice, p=0.07). (F–G) Illustration of Ptch1 expression in peri-lesional areas in control (F) and mutant (G) mice after labeling as detected by RNAscope technology. CC, corpus callosum; Cx, cortex. Scale bars: 100 µm in A-D. 10 µm in F and G. Source file of quantitative analysis is available in the Figure 6—source data 1.
 
 In order to assess whether SHH signaling was indeed reduced in Ndst1 mutant mice compared to control mice, we quantified Ptch1 (the main SHH receptor) expression around LPC-induced demyelination lesions at eight dpi using RNAscope (Figure 7E–G). Ndst1 mutant mice exhibited 38% decrease in Ptch1 expression compared to control mice (8.6 ± 0.7 vs 13.8 ± 3.0 dots/cells in mutant and control mice respectively, n = 5 mice/group) although it did not quite reach significance (p=0.07) (Figure 7E). Altogether these results suggest that lack of NDST1 in OLG lineage attenuates SHH signaling following demyelination insult.
 
-## NDST1 is expressed by oligodendroglia in multiple sclerosis lesions and correlates with lesion size and remyelination
+### NDST1 is expressed by oligodendroglia in multiple sclerosis lesions and correlates with lesion size and remyelination
 
 To examine the relevance of our findings for multiple sclerosis (MS) physiopathology, we examined Ndst1 expression in MS tissue. We first probed the snRNAseq data provided by Jakel et al work (Jäkel et al., 2019), and observed that few cells express Ndst1 in both control and MS tissues but when the oligodendrocytes that express Ndst1 are compared, there is a trend to increased expression in MS tissue (Figure 8—figure supplement 1). Because such approach identifies around 15% only of nuclear RNA, we then directly examined the expression pattern of NDST1 protein in MS patient brain sections. Normal appearing white matter (WM), remyelinating, active, chronic active or chronic inactive lesions were analyzed. While NDST1 staining was very weak in control WM (without MS), we observed a significant increase of NDST1 labeling in MS patients WM (Figure 8A–B). Comparison of healthy control, MS normal appearing WM and MS lesions showed that there is a significant increase of NDST1 staining in multiple sclerosis lesions vs. control (p=0.0014) (Figure 8C). Comparison of each MS lesion with its surrounding normal appearing WM using a paired t test, revealed that there is significantly more NDST1 labeling in MS lesions compared to their surrounding normal appearing WM (paired two-tailed t test, t9 = 3.39, p=0.0095). However, NDST1+ cells were distributed evenly throughout the lesion, rather than forming a delimiting band (Figure 8—figure supplement 2D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig8-v2.jpg)
+
+**Figure 8.:** (A–B) Representative images of NDST1 staining in control (A) and MS (B) WM. (C) Quantification of NDST1 labeling shows a significant over-expression of NDST1 in MS lesions (n = 9) compared to control tissue (n = 4) (Kruskal-Wallis test, H = 13.09, n = 4,9,9, p<0.01, means plus standard deviation). The colors represent paired samples from the same patients. (D–G) Representative images of immunostaining against NDST1 successively co-labeled with OLIG2+ for oligodendroglia (D), GFAP+ for astrocytes (E), NEUN+ for neurons (F), and IBA1+ for microglia/macrophages (G). (H) Quantification of the proportions of different NDST1+ cell types in normal appearing WM and various MS lesions shows that NDST1 expressing cells are mainly oligodendroglia. (I) The proportion of OLIG2+ cells which is NDST1+ is significantly increased in active lesions compared to control (Kruskal-Wallis test, H = 13.92, n = 7,21,4,14,14 p<0.05). Overall, the majority of OLIG2+ cells are NDST1+ in MS lesions and NAWM while this is not true in control brain tissue. (J) The number of oligodendroglia expressing NDST1 is inversely correlated to lesion size. (K) NDST1+ cell numbers positively correlate with the remyelination score assigned to each patient, summing all lesions within blocks from the same MS patients (see Materials and methods). NAWM, normal appearing white matter; RM, remyelinated lesion; A, active lesion; CA, chronic active lesion; CI, chronic inactive lesion. Scale bars represent 50 µm (A–B) or 10 µm (D–G). Source files of quantitative analyses are available in the Figure 7—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Data extracted from snRNA seq (Carrasco et al., 2005).
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/51735/elife-51735-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Staining with NDST1 antibody in MS WM (B) There is no staining of MS WM with NDST1 antibody in in the presence of human recombinant NDST1. (C) LFB stain of MS tissue with the lesion delineated in red. (D) Representative NDST1+ staining in lesion (delineated with red line) shows uniform NDST1+ cell distribution. Scale bars: 100 µm.
 
 We then performed double-labeling immunohistochemistry to characterize NDST1-positive cells in various types of lesions and normal appearing WM, using OLIG2 for oligodendroglia (Figure 8D), GFAP for astrocytes (Figure 8E), NEUN for neurons (Figure 8F) and IBA1 for microglia/macrophages (Figure 8G). Quantitative analysis showed that the majority of NDST1 cells were oligodendroglia in all types of lesions (remyelinated, active, chronic active, chronic inactive) and in normal appearing WM (Figure 8H).
 
 The vast majority of OLIG2+ cells in the lesions expressed NDST1, with a gradual reduction in the proportion of OLIG2+NDST1+ cells as lesions become more chronic, and with significantly fewer in control tissue (Figure 8I; p=0.016). The number of NDST1+ oligodendroglia in each lesion was inversely correlated with the lesion’s size (Figure 8J). As blocks of MS tissue contained multiple lesions and sometimes we had multiple blocks from the same patient (see Table 1), we gave each patient an overall remyelination ability score corresponding to how many lesions in the blocks from that patient were remyelinated, or likely to remyelinate if the patient had survived. Here, we were aiming to see whether patients considered being ‘good remyelinators’ using this score express more NDST1. A lesion was given a score of 3 points (complete remyelination), two points (active - likely to remyelinate), one point (chronic active less likely to remyelinate) and 0 points (chronic inactive -unlikely to remyelinate). The total score of all the lesions per patient was then divided by the number of lesions per patient, to allow comparisons. We showed that NDST1+ cell density positively correlated with patient’s score of remyelination ability (Figure 8K). These data reveal that MS tissues with a higher repair potential (containing most active and remyelinated lesions) display a high number of NDST1+ cells therefore suggesting that higher numbers of NDST1+ cells in a lesion may provide a positive environmental support for myelin repair.
+
+**Table 1.**
+ Classification and characteristic of human post-mortem samples.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Patient</th>
+      <th>Sex</th>
+      <th>Age (years)</th>
+      <th>MS type</th>
+      <th>Disease duration (years)</th>
+      <th>Time to post mortem (h)</th>
+      <th>Number of lesions</th>
+      <th>Active</th>
+      <th>Chronic active</th>
+      <th>Chronic inactive</th>
+      <th>Remyeli-nating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="9">MS</td>
+      <td>MS100</td>
+      <td>M</td>
+      <td>46</td>
+      <td>SP</td>
+      <td>8</td>
+      <td>7</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>MS121</td>
+      <td>F</td>
+      <td>49</td>
+      <td>SP</td>
+      <td>14</td>
+      <td>24</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MS122</td>
+      <td>M</td>
+      <td>44</td>
+      <td>SP</td>
+      <td>10</td>
+      <td>16</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>MS136</td>
+      <td>M</td>
+      <td>40</td>
+      <td>SP</td>
+      <td>9</td>
+      <td>10</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>MS154</td>
+      <td>F</td>
+      <td>34</td>
+      <td>SP</td>
+      <td>21</td>
+      <td>12</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>MS176</td>
+      <td>M</td>
+      <td>37</td>
+      <td>PP</td>
+      <td>27</td>
+      <td>12</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>MS187</td>
+      <td>F</td>
+      <td>57</td>
+      <td>SP</td>
+      <td>27</td>
+      <td>13</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>MS207</td>
+      <td>F</td>
+      <td>46</td>
+      <td>SP</td>
+      <td>25</td>
+      <td>10</td>
+      <td>8</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>MS230</td>
+      <td>F</td>
+      <td>42</td>
+      <td>SP</td>
+      <td>19</td>
+      <td>31</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Control</td>
+      <td>CO14</td>
+      <td>M</td>
+      <td>64</td>
+      <td>-</td>
+      <td>-</td>
+      <td>26</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CO25</td>
+      <td>M</td>
+      <td>35</td>
+      <td>-</td>
+      <td>-</td>
+      <td>22</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CO28</td>
+      <td>F</td>
+      <td>60</td>
+      <td>-</td>
+      <td>-</td>
+      <td>13</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CO39</td>
+      <td>M</td>
+      <td>82</td>
+      <td>-</td>
+      <td>-</td>
+      <td>21</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td colspan="6"></td>
+      <td>46</td>
+      <td>7</td>
+      <td>4</td>
+      <td>14</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -126,35 +363,353 @@ Overall, our results in mouse and human tissues suggest that NDST1/HS levels are
 
 ## Materials and methods
 
-## Animals and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Olig2Cre</td>
+      <td>PMID:18046410</td>
+      <td></td>
+      <td>B6D2F1J/Rj genetic background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ndst1flox/flox</td>
+      <td>PMID:16020517</td>
+      <td></td>
+      <td>Dr. Kay Grobe (University of Münster, Münster, Germany)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Plpgfp</td>
+      <td>PMID:15906234 PMID:11756747</td>
+      <td></td>
+      <td>Dr. Bernard Zalc (University of Sorbonne, Paris, France)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (H. sapiens)</td>
+      <td>Brain tissue from 9 MS patients</td>
+      <td>UK Multiple Sclerosis Tissue Bank (MREC/02/2/39)</td>
+      <td></td>
+      <td>Postmortem unfixed frozen</td>
+    </tr>
+    <tr>
+      <td>Biological sample (H. sapiens)</td>
+      <td>Brain tissue from 4 Control patients</td>
+      <td>UK Multiple Sclerosis Tissue Bank (MREC/02/2/39)</td>
+      <td></td>
+      <td>Postmortem unfixed frozen</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T HEK</td>
+      <td>ATCC</td>
+      <td>CRL3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pWiz-AP-SHH</td>
+      <td>PMID:16020517</td>
+      <td></td>
+      <td>Production of AP-tagged SHH recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pWiz-AP-SHH-CWdeleted</td>
+      <td>PMID:11959830</td>
+      <td></td>
+      <td>Production of AP-tagged deleted SHH recombinant protein</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-OLIG2</td>
+      <td>Millipore</td>
+      <td>AB9610</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-OLIG2</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA003254</td>
+      <td>IF (1/100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-APC (clone CC1)</td>
+      <td>Calbiochem</td>
+      <td>OP-80</td>
+      <td>IF (1/400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-PDGFRa (clone APA5)</td>
+      <td>Millipore</td>
+      <td>CBL1366</td>
+      <td>IF (1/250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-MBP</td>
+      <td>Millipore</td>
+      <td>MAB384</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Ki67</td>
+      <td>BD Pharmingen</td>
+      <td>556003</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Caspase 3</td>
+      <td>Cell Signalling</td>
+      <td>9661</td>
+      <td>IF (1/200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GFAP</td>
+      <td>Dako</td>
+      <td>Z0334</td>
+      <td>IF (1/400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-IBA1</td>
+      <td>Abcam</td>
+      <td>Ab5076</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IBA1</td>
+      <td>Wako Chemicals</td>
+      <td>019–19741</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal Anti-CD68</td>
+      <td>Abcam</td>
+      <td>Ab53444</td>
+      <td>IF (1/400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-COX2</td>
+      <td>Abcam</td>
+      <td>Ab15191</td>
+      <td>IF (1/400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal IgM anti-N-sulfated motifs on HS chains (clone10E4)</td>
+      <td>Amsbio</td>
+      <td>370255–1</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-NDST1</td>
+      <td>Abcam</td>
+      <td>ab55296</td>
+      <td>IF (1/50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NeuN</td>
+      <td>Abcam</td>
+      <td>Ab104225</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ndst1_F</td>
+      <td>Eurofins Genomics</td>
+      <td>RT-qPCR primers</td>
+      <td>gctggacaagatcatcaatgg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ndst1_R</td>
+      <td>Eurofins Genomics</td>
+      <td>RT-qPCR primers</td>
+      <td>acacagtacttctacgactatcc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_F</td>
+      <td>Eurofins Genomics</td>
+      <td>RT-qPCR primers</td>
+      <td>gggttcctataaatacggactgc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh_R</td>
+      <td>Eurofins Genomics</td>
+      <td>RT-qPCR primers</td>
+      <td>ctggcactgcacaagaagat</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>plp/dm20</td>
+      <td>PMID:9373029</td>
+      <td></td>
+      <td>Probe for ISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ndst1</td>
+      <td>PMID:16020517</td>
+      <td></td>
+      <td>Probe for ISH</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ptch1</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>402811-C2</td>
+      <td>Probe for RNAScope</td>
+    </tr>
+    <tr>
+      <td>Peptide, Recombinant Protein</td>
+      <td>Human NDST1</td>
+      <td>Abcam</td>
+      <td>ab116875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent kit</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>323133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAB Peroxidase (HRP) Substrate Kit (with Nickel)</td>
+      <td>Vector Laboratories</td>
+      <td>SK-4100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VECTOR Blue AP Substrate Kit</td>
+      <td>Vector Laboratories</td>
+      <td>SK-5300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPRESS-AP Anti-Rabbit IgG Polymer Detection Kit</td>
+      <td>Vector Laboratories</td>
+      <td>MP-5401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPRESS HRP Anti-Mouse IgG Polymer Detection Kit</td>
+      <td>Vector Laboratories</td>
+      <td>MP-7402</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysolecithin</td>
+      <td>Sigma-Aldrich-Merck</td>
+      <td>L1381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparinase</td>
+      <td>Amsbio</td>
+      <td>100700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668–030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vector Bloxall</td>
+      <td>Vector Laboratories</td>
+      <td>SP-6000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen two lite</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>https://graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and treatments
 
 All experimental and surgical protocols were performed following the guidelines established by the French Ministry of Agriculture (Animal Rights Division). The architecture and functioning rules of our animal house, as well as our experimental procedures have been approved by the ‘‘Direction Départementale des Services Vétérinaires’’ and the ethic committee (ID numbers F1305521 and 2016071112151400 for animal house and research project, respectively). Surgery and perfusions were performed under ketamine (100 mg/kg, MERIAL, Lyon, France))/xylazine (10 mg/kg, BAYER, Puteaux, France) anesthesia. C57BL/6 wild-type and transgenic mice were successively used to characterize post-lesional expression of Ndst1 and HS after demyelination and to investigate the impact of conditional deletion of Ndst1 in the Olig2-positive cell population. Heterozygous Olig2-Cre+/- (from B6D2F1J/Rj genetic background) (Dessaud et al., 2007) and double transgenic Olig2-Cre+/-; Ndst1 Flox/Flox mice (Grobe, 2005; Dessaud et al., 2007) will be referred below as control and mutant mice, respectively. Mice expressing GFP under the control of the proteolipid protein (plp, a protein largely present in myelin) promoter were used in some experiments to better observe demyelination lesions (called thereafter plpGFP mice). Animals were housed under standard conditions with enrichment and access to water and food ad libitum on a normal 12 hr light/dark cycle.
 
-## Human postmortem samples
+### Human postmortem samples
 
 Postmortem unfixed frozen tissues were obtained from the UK Multiple Sclerosis Tissue Bank via a UK prospective donor scheme with full ethical approval (MREC/02/2/39). Luxol fast blue (LFB) (staining myelin; Figure 8—figure supplement 2C) and Oil Red O (staining lipids phagocytosed by macrophages) were performed to characterize and classify the lesion types (Boyd et al., 2013). Active lesions have indistinct borders on LFB and lipid-laden macrophages/microglia. Chronic active lesions have a ring of lipid-laden macrophages/microglia and a core with few immune cells. Chronic inactive lesions have a distinct border on LFB and few immune cells. Finally, shadow plaques, thought to represent remyelination, have less intense staining on LFB. This classification was done by two independent researchers for a previous publication (Boyd et al., 2013). In this study, we used active (n = 7), chronic active (n = 4), chronic inactive (n = 14) and remyelinated (shadow) MS plaques (n = 21) from 14 blocks of brain tissue from 9 MS patients and 4 blocks of brain tissue from four controls with no neurological disease (Table 1).
 
-## Focal demyelination in the corpus callosum and tissue processing
+### Focal demyelination in the corpus callosum and tissue processing
 
 Focal demyelination was performed by stereotactic injection of Lysolecithin (LPC) (SIGMA-ALDRICH, St Louis, USA) as described previously (Cayre et al., 2013; Magalon et al., 2007). The corpus callosum from healthy or demyelinated mice, from the ipsilateral and contralateral side to the LPC-induced lesion, were dissected 7 days post injection (dpi) from 1 mm thick coronal slices in cold Hank's Balanced Salt Solution (GIBCO by life technologie, Paisley, UK) and processed for RT-qPCR analysis (Ndst1 primers : exon 6 (forward, 5′-gctggacaagatcatcaatgg-3′) and exon 7 (reverse, 5′-acacagtacttctacgactatcc-3′); for Gapdh: exon1 (forward, 5’-gggttcctataaatacggactgc-3’) and exon2 (reverse 5’-ctggcactgcacaagaagat-3’). Primers from EUROFINS GENOMICS, Ebersberg, GERMANY). For histological analysis, mice were anesthetized and perfused with ice-cold 4% paraformaldehyde (FISHER SCIENTIFIC, Loughborough Leics, UK) in PBS (GIBCO by life technologie, Paisley, UK). Brains were post-fixed overnight in 4% paraformaldehyde in PBS and cut on a vibratome (Leica) in 4 series of coronal sections (50 µm thick) for immunofluorescence, or cryopreserved and cut with cryostat (20 µm thick) for in situ hybridization.
 
-## In situ hybridization and immunohistochemistry
+### In situ hybridization and immunohistochemistry
 
 In situ hybridization was performed using plp/dm20 (Peyron et al., 1997) and Ndst1 probes (Grobe, 2005) as described in Virard et al., 2006. RNAscope Multiplex Fluorescent kit (323133; Advanced Cell Diagnostics) was used to detect Ptch1 mouse mRNA. Briefly cryosections were baked for 30 min at 60°C and dehydrated, incubated for 30 min at 40°C with protease III before incubation with RNAScope probe Ptch1 (402811-C2) for 2 hr at 40°C. Immunohistochemistry was performed as described in Cayre et al., 2013. The following primary antibodies were used: rabbit anti-Olig2 (AB9610; 1/1000, Millipore, USA), mouse anti-APC (CC1) (1/400; Calbiochem, USA), and rat anti-PDGFRα (CBL1366; 1/250; Millipore, USA) for oligodendroglial lineage cells; anti-MBP (mouse, 1/500, Chemicon, Millipore S.A.) for myelin sheaths; mouse anti-Ki67 (556003; 1/500; BD Pharmingen) for proliferating cells; rabbit anti-caspase 3 (9661; 1/200; Cell Signaling) for apoptotic cells, rabbit anti-GFAP (1/400) for astrocytes; goat anti-Iba1 (1/500, Abcam) for microglia and macrophages; rat anti-CD68 (1/400, Abcam) for activated microglia and macrophages; rabbit anti-Cox2 (1/400, Abcam) for proinflammatory M1 microglia/macrophage; mouse IgM anti-N-sulfated motifs on HS chains (10E4 antibody, 1/500; Seikagaku, Japan). For Olig2 and Ki67 immunofluorescence, antigen unmasking was performed by 20 min incubation in boiling citrate buffer (10mM pH6). For N-sulfated motifs labeling, floating sections from PFA perfused-brain were incubated for 2 hr 30 at 37°C in buffer (100 mM Sodium Chloride, 1 mM Calcium Chloride, 50 mM Hepes 5 µg, BSA pH 7) with or without Heparinase (3.3 mU from Flavobacterium heparinum, Seikagaku Kogyo Co. # 100700, Japan) (David et al., 1992) before permeabilization. Secondary antibodies coupled to alexa 488, 555 and 647 (1/500, Invitrogen Molecular Probes) were applied for 2 hr 30 at RT in a humid chamber. Sections were counterstained with Hoechst 33342 (1/500, Sigma).
 
-## AP-Shh recombinant protein binding test in mice
+### AP-Shh recombinant protein binding test in mice
 
 Plasmids containing sequences for AP-tagged N-terminal WT or deleted Shh were produced by PCR and ligated into pWIZ vector as described in Grobe, 2005; Rubin et al., 2002. Briefly, plasmids were transiently transfected into HEK cells using lipofectamine 2000 (Invitrogen). Transfection proceeded for 3 hr. Culture supernatants were collected after 60 hr and filtered through 0.45 µm filters (Corning Incorporated, Durham, USA). Hepes 10mM pH7 was added to increase stability. Shh concentration was then evaluated measuring AP activity in culture supernatants. Preparations from mock-transfected HEK cells were generated and used as vehicle controls. The AP-Shh binding test was performed as described in Rubin et al., 2002.
 
 Fresh frozen brain sections were post-fixed with ice-cooled methanol for 8 min. After rinsing with phosphate-buffered saline containing 4 mM MgCl2 and blocking with 1% Bovine Serum Albumin (SIGMA-ALDRICH, St Louis, MO, USA) 1 hr at RT, frozen adjacent sections from healthy or demyelinated C57BL/6 mice were incubated with 5 nM of two AP tagged versions of Shh: AP-Shh recombinant proteins carrying the N-terminal CW sequence (AP-SHH), the main HS-binding site for Shh (Rubin et al., 2002; Carrasco et al., 2005), or lacking this motif (AP-SHH-CWdeleted). Sections were then washed with PBS to dissociate any low affinity interaction and endogenous phosphatases were inactivated by heating at 65°C for 2 hr. AP was revealed by incubating overnight in NBT (100 mg/ml)/BCIP (50 mg/ml) in 100 mM Tris pH 9,5 with 100 mM NaCl and 50 mM MgCl2.
 
-## Immunohistochemistry on human post-mortem tissue
+### Immunohistochemistry on human post-mortem tissue
 
 Tissue was fixed in 4% paraformaldehyde in PBS for 30 min. Endogenous peroxidase and AP activity was blocked by 10 min incubation with Vector Bloxall (Vector, SP-6000 VECTOR LABORATORIES, Burlingame, USA). Slides were blocked with ready-to-use 2.5% normal horse serum from Vector secondary antibody kits for at least 20 min. Primary antibodies were incubated overnight in antibody diluent (Spring Bioscience, ADS-125) at 4°C. Primary antibodies used: mouse anti-NDST1 (1/50; Abcam, ab55296), rabbit anti-NeuN (1/500; Abcam, ab104225), rabbit anti-IBA1 (1/500; Wako chemicals, 019–19741), rabbit anti-Olig2 (1/100; Sigma, HPA003254). HS staining with the mouse IgM anti-N-sulfated motifs on HS chains (10E4 antibody, Seikagaku, Japan) did not give any signal on human tissue. NDST1 intensity was evaluated after a short exposition (exactly 2 min). All other stainings were fully developed. To ensure antibody specificity, the NDST1 antibody was pre-absorbed with human NDST1 recombinant protein (Abcam, ab116875), and added to tissue sections, with no staining seen (Figure 8—figure supplement 2A–B).
 
 Secondary antibodies were incubated at RT for 1 hr. Staining was developed with a DAB Peroxidase (HRP) Substrate Kit (with Nickel), 3,3’-diaminobenzidine (Vector, SK-4100) and a VECTOR Blue AP Substrate Kit (Vector, SK-5300) as per manufacturer’s guidelines. Secondary antibodies used: ImmPRESS-AP Anti-Rabbit IgG Polymer Detection Kit (Vector, MP-5401) and ImmPRESS HRP Anti-Mouse IgG Polymer Detection Kit, made in Horse (Vector, MP-7402). PBS washes were performed between each treatment.
 
-## Microscopy and quantification
+### Microscopy and quantification
 
 For mouse tissue analysis, imaging was performed with the Apotome system (Zeiss). The demyelinated area and cell counts were evaluated using Zen software (Zeiss). Immunofluorescent or in situ hybridization positive cells were counted in every fourth section through the whole demyelinated lesion per mouse and averaged for each mouse. Cell counts are presented as the mean of at least three mice. For RNAscope ISH, each punctate dot signal was counted around lesion (by using ROI and analyze particule Fiji Plugins) and reported to total nuclei number. For Heparan sulfate labeling quantification, 10E4-mmunopositive area was analyses on five sections per mouse. A constant exposure time was applied to all sections and for image acquisition, and the area occupied by 10E4+ labeling was quantified using ImageJ software. Lesion size was quantified by measuring the area of high density of nuclei in every fourth section through the whole demyelinated lesion per mouse. In this analysis, high density of nuclei was correlated with myelin loss visualized by MBP staining or by loss of fluorescence in plpGFP mice (Figure 1—figure supplement 2).
 
@@ -162,10 +717,10 @@ For the human post-mortem tissue analysis, slides were imaged using a ZEISS Axio
 
 Myelin content was evaluated by double blind scoring of images taken from Plp immunostaining on brain sections (three photos per section and three sections per brain). Score of 4 was attributed to maximum myelination down to 0 for absence of myelin. The mean score for the control group was considered as 100%.
 
-## Gene expression profile of demyelinated versus healthy mouse progenitors
+### Gene expression profile of demyelinated versus healthy mouse progenitors
 
 This protocol is fully described in Cayre et al., 2013. Briefly, OPC from eight mice induced for experimental autoimmune encephalomyelitis (EAE mice) at the peak of paralytic symptoms and from eight adult healthy mice as controls were purified using magnetic cell sorting (Miltenyi Biotec). This experiment was replicated in an independent similar experiment. cDNAs were prepared and used (250 ng) as template for Cy3 and Cy5, combined and hybridized to Agilent Whole Mouse Genome Oligo Microarrays 4 Å~44K. Agilent Feature Extraction Software (FES) determines feature intensities and ratios (including background subtraction and normalization), rejects outliers and calculates statistical confidences (P-values). We obtained a gene list with all normalized Cy5/Cy3 log10 ratios, Cy5/Cy3 fold changes, sequence description and P-values. Microarray data are available at GEO with accession number GSE47486.
 
-## Statistical analysis
+### Statistical analysis
 
 All the presented values in mice are means ± S.E.M unless otherwise stated. Data were statistically processed with the non-parametric Mann-Whitney test (independent two group comparisons). p<0.05 was considered significant and p<0.01 highly significant. All measurements and subsequent evaluations were performed blind to the experimental group to which the animals belonged. For the human post-mortem tissue analysis, a d'Agostino and Pearson omnibus normality test was used to test whether the data fit a normal distribution and a parametric test were done only if all compared data sets passed the normality test. The NDST1+ cells in control versus multiple sclerosis WM was compared using a two-tailed Mann Whitney U test. Multiple sclerosis lesions and their surrounding WM were compared using a paired two-tailed t test. The absolute numbers of NDST1+ cells and double positive NDST1+ OLIG2+ cells in individual lesions/normal appearing WM were compared by Kruskal-Wallis test. As MS tissue blocks contained more than one lesion, and we had several blocks from the same patients, we gave each patient an overall remyelination ability score corresponding to how many lesions in the blocks from that patient were remyelinated, or likely to remyelinate if the patient had survived. Remyelinated lesions received an arbitrary three points, active lesions two points, chronic active lesions one point and chronic inactive lesions 0 points. This was divided by the number of lesions counted for each patient, to allow comparisons.

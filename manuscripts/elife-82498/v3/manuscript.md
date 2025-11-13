@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/002pd6e78 Department of Surgery, Harvard Medical School, Massachusetts General Hospital Boston Canada
-2. https://ror.org/052gg0110 Computational Statistics and Machine Learning Group, Department of Statistics, University of Oxford Oxford United Kingdom
-3. https://ror.org/03dbr7087 Department of Computer Science, University of Toronto Toronto Canada
-4. https://ror.org/03v6a2j28 Institute for Better Health, Trillium Health Partners Ontario Canada
+1. Department of Surgery, Harvard Medical School, Massachusetts General Hospital Boston Canada ([ROR:002pd6e78](https://ror.org/002pd6e78))
+2. Computational Statistics and Machine Learning Group, Department of Statistics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+3. Department of Computer Science, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+4. Institute for Better Health, Trillium Health Partners Ontario Canada ([ROR:03v6a2j28](https://ror.org/03v6a2j28))
 
 † Corresponding author
 
@@ -27,43 +27,97 @@ Focusing on the translation of clinical studies into practice, we capitalize on 
 
 ## Results
 
-## What fraction of the published literature is eventually cited in point-of-care resources?
+### What fraction of the published literature is eventually cited in point-of-care resources?
 
 Among the 18 specialties included in our analysis, neurology had the highest citation rate; of the 85,843 research articles published in clinical neurology journals during our sampling window, 2057 (2.4%) were eventually cited at least once in UpToDate. Rheumatology (1442 cited of 62,681 published; 2.3%), hematology (2506 of 110,055; 2.3%), and pediatrics (2678 of 119,486; 2.2%) had similar citation rates. Three specialties had sub-percent citation rates: radiology (1214 cited of 165,985 published; 0.7%), geriatrics (64 of 9781; 0.6%), and pathology (317 of 69,343; 0.4%). All remaining specialties, including internal medicine, had between 1 and 2% of all published research eventually cited in UpToDate.
 
 The proportion of citations also varied substantially by article type (Figure 1). Practice guidelines represented the most likely article type to be cited, with 9 of the 18 specialties citing >13% (interquartile range [IQR] of 5.1–14.5%) of all practice guidelines published in their respective journals. Although clinical trials (especially phase III trials) were the second most likely article type to be cited (9 of 18 specialties citing >9.5% of all phase III clinical trials published during our sampling window [IQR 3.0–13.0%]), it was also the most variable (SD of 8.7%). In 9 of the 18 specialties, we observed that less than 1 in 10 phase III clinical trials were ever cited at the point-of-care (Figure 1). Of the top-performing specialties, the citation rate of clinical trials was distinctly high in internal medicine (299 cited of 822 phase III clinical trials published; 36.3%), pediatrics (8 of 48; 16.7%), and infectious diseases (15 of 99; 15.1%). Notably, no equivalence trial, among the 43 published across all 18 specialties, was ever cited. Comparatively, pragmatic clinical trials were only cited in 5 of the 18 specialties: oncology (50% of published pragmatic clinical trials cited), internal medicine (20.3%), endocrinology (11.1%), cardiology (8.0%), and pediatrics (7.7%). The remaining 13 specialties had a 0% citation rate for pragmatic clinical trials. Similarly, case reports were also unlikely to be cited at the point-of-care across all specialties, with only 3111 case reports (0.8%) cited of the 403,043 published in specialty journals during our sampling window.
 
-## Which are the predominant article types cited in point-of-care resources?
+![Figure 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig1-v3.jpg)
+
+**Figure 1.:** (A) Stacked barplot of the absolute number of citations in UpToDate over the past decade as a function of article type, grouped by specialty (inset: zoomed plot to permit comparison of non-medicine specialties). (B) Barplot of the % proportion of articles cited (defined as number of particular article type cited/total number of articles cited in UpToDate) ×100, grouped by medical specialty. (NB:) Totals in panel A may differ slightly from the totals described in the text as some article may have more than one classification and some references are unclassified.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig1-figsupp1-v3.jpg)
+
+### Which are the predominant article types cited in point-of-care resources?
 
 Despite a cumulative citation rate of <1%, case reports still represented the most common article type of those cited in 2 of the 18 specialties (Figure 1). Among the 1506 citations added from dermatology journals over the past decade, 501 (32.0%) were case reports. Similarly, of the 317 citations from pathology journals, 49 (15.5%) were case reports. Strikingly, case reports were also consistently among the three most commonly cited article types across all but six specialties (median of 7.1% of added citations were case reports; IQR 5.6–12.3%). By comparison, phase III clinical trials represented less than 1.0% of added citations in 9 of 18 specialties (IQR 0.2–1.9%). Of the 18 specialties, anesthesiology, cardiac and cardiovascular systems, critical care, geriatrics, internal medicine, and oncology tended to favor higher-quality evidence (Figure 1); reviews/systematic reviews, practice-guidelines, and meta-analyses represented the three most cited article types among five of these six specialties. Oncology was relatively unique in that it was the only specialty where phase III clinical trials ranked among the most commonly cited article types; we counted 411 phase III clinical trials among the 3071 references added during our sampling window from oncology journals.
 
-## What is the time-to-citation by specialty and article type?
+### What is the time-to-citation by specialty and article type?
 
 Time-to-citation did not vary meaningfully between specialties; 50% of articles were cited within a year of publication (IQR 0–4 years). There were significant differences, however, between article types (Figure 1—figure supplement 1). Phase III clinical trials had the shortest time-to-citation, with 75% cited within the year of publication (IQR 0–1 year). Meta-analyses, practice guidelines, and systematic reviews followed a similar, albeit slightly slower, trend. Case reports had the longest time-to-citation (median 3 years; IQR 1–9 years). Across all specialties, higher quality of evidence correlated with a shorter time-to-citation (Figure 1—figure supplement 1).
 
-## Is journal impact factor predictive of either proportion of articles cited or time-to-citation in point-of-care resources?
+### Is journal impact factor predictive of either proportion of articles cited or time-to-citation in point-of-care resources?
 
 For 12 of the 18 medical specialties, journal impact factor was significantly correlated with the proportion of articles cited (Figure 2). In descending order, impact factor was significantly correlated with citation rate in: rheumatology (Spearman’s rho = 0.86, p=1.4 × 10–6), infectious diseases (rho = 0.79, p=7.7 × 10–5), hematology (rho = 0.69, p=8.1 × 10–5), pediatrics (rho = 0.66, p=0.0001), gastroenterology and hepatology (rho = 0.53, p=3.6 × 10–5), cardiac and cardiovascular systems (rho = 0.55, p=1.2 × 10–6), internal medicine (rho = 0.49, p=2.3 × 10–6), neurology (rho = 0.43, p=0.0086), dermatology (rho = 0.39, p=0.02), urology and nephrology (rho = 0.37, p=0.007), endocrinology and metabolism (rho = 0.32, p=0.02), and oncology (rho = 0.29, p=0.01). In other words, in these 12 specialties, journals with higher impact factors tended to have a larger fraction of their published articles cited at the point-of-care. Figure 2 visualizes the respective scatterplots labeled by journal. For the remaining six specialties, the relationship between impact factor and portion of cited articles was not significant (p>0.05).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig2-v3.jpg)
+
+**Figure 2.:** Scatterplot of proportion of articles cited, defined as the number of citations/total number of articles published by a specific journal, as a function of the journal’s 5 year impact factor for (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging,’ (Q) rheumatology, and (R) urology and nephrology.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Scatterplot of median time-to-citation as a function of the journal’s 5 year impact factor, for (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging’, (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or Unified Medical Language System (UMLS) concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.
 
 Analogously, journal impact factor was significantly and negatively correlated with time-to-citation for 10 of 18 specialties: infectious diseases (Spearman’s rho = –0.51, p=0.03), internal medicine (rho = –0.408, p=0.0001), hematology (rho = –0.407, p=0.03), pediatrics (rho = –0.40, p=0.03), dermatology (rho = –0.406, p=0.02), pathology (rho = –0.45, p=0.04), neurology (Spearman’s rho = –0.37, p=0.03), urology and nephrology (rho = –0.34, p=0.02), cardiac and cardiovascular systems (rho = –0.36, p=0.002), and oncology (rho = –0.31, p=0.006). In other words, articles from higher impact specialty journals tended to have a quicker time to citation (Figure 2—figure supplement 1).
 
 While the impact factor appears able to (partially) prioritize journals with greater (or quicker) than expected contributions to clinical practice, we sought to better quantify the impact of the journal on clinical practice using two previously introduced new indices (see Materials and methods): the clinical relevancy index (CRI) and the clinical immediacy index (CII). We calculated these indices for all journals in the 18 medical specialties discussed here in Supplementary file 1.
 
-## What topics are over-(or under-)represented in abstracts cited in point-of-care resources, compared to uncited literature?
+### What topics are over-(or under-)represented in abstracts cited in point-of-care resources, compared to uncited literature?
 
-## Do these topics explain variation in time-to-citation?
+#### Do these topics explain variation in time-to-citation?
 
 Abstract contents (as assessed using Unified Medical Language System [UMLS] concepts or terms) can significantly explain citation (versus not) in point-of-care resources, as well as variation in time-to-citation among cited abstracts (Figure 3 and Figure 3—figure supplements 1–4). While results for all 18 specialties are fascinating and informative, the Appendix 1 focuses on two specialties (cardiac and cardiovascular systems and endocrinology and metabolism).
 
-## What is the influence of department-specific NIH funding on the absolute number of citations and time-to-citation?
+![Figure 3.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-v3.jpg)
 
-## What is the impact of cumulative NIH funding?
+**Figure 3.:** Word cloud plots with size of word proportional to the strength of the association for (A) Unified Medical Language System (UMLS) concepts significantly overrepresented in articles cited from cardiac and cardiovascular systems (i.e. ‘cardiology’ journals); (B) UMLS concepts significantly overrepresented in articles cited from endocrinology and metabolism journals.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly overrepresented in articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging,’ (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Word cloud plots with size of word proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly underrepresented in articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging,’ (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly associated a shorter time-to-citation among articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging,’ (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** Word cloud plots with size of term proportional to the strength of the association for Unified Medical Language System (UMLS) concepts significantly associated a longer time-to-citation among articles cited from: (A) anesthesiology, (B) cardiac and cardiovascular systems, (C) clinical neurology, (D) critical care medicine, (E) dermatology, (F) emergency medicine, (G) endocrinology and metabolism, (H) gastroenterology and hepatology, (I) geriatrics and gerontology, (J) hematology, (K) infectious diseases, (L) medicine (general and internal), (M) oncology, (N) pathology, (O) pediatrics, (P) ‘radiology, nuclear medicine and medical imaging,’ (Q) rheumatology, and (R) urology and nephrology. An empty plot panel denotes no term, or UMLS concept was significant after multiple testing adjustment, and a blank placeholder was placed to explicitly confirm this.
+
+### What is the influence of department-specific NIH funding on the absolute number of citations and time-to-citation?
+
+#### What is the impact of cumulative NIH funding?
 
 As we previously noted in curation of our dataset, it is often difficult to disentangle hospitals, medical schools, and affiliated research institutions. As such, to explore the role and impact of NIH funding, we use city (rather than individual institutions or hospitals) as the unit of analysis. Our analysis primarily focused on the United States for two reasons. Firstly, 35% of references from the 18 medical specialties cited in UpToDate were from the United States; by way of comparison, in 2019, 39% of all publications in PubMed were from the United States. Thus, our data was well powered for our funding analyses. Secondly, the NIH publicly releases its funding information with sufficient granularity and standardized specialty labels to enable the analysis.
 
 Our department-specific analysis combined eight specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology) under the ‘general and internal medicine’ specialty label because a large portion of the funding for these specialties occurs through the NIH department combining name of ‘internal medicine/medicine’ (i.e. there was no specific department labels for these subset of specialties).
 
 Average annual department-specific NIH funding correlated strongly with the absolute number of total citations, in the past decade, across all specialties (Figures 4 and 5): pathology (Spearman’s rho = 0.73, p=1.2 × 10–10), neurology (rho = 0.70, p<2.2 × 10–16), pediatrics (rho = 0.67, p<2.2 × 10–16), radiology (rho = 0.64, p=4.8 × 10–12), internal medicine (rho = 0.60, p<2.2 × 10–16), dermatology (rho = 0.57, p=1.2 × 10–9), urology and nephrology (rho = 0.57, p=3.0 × 10–13), emergency medicine (rho = 0.52, p=2.1 × 10–7), anesthesiology (rho = 0.48, p=9.0 × 10–6), and infectious diseases (rho = 0.41, p=0.006). Figure 5 depicts city-labeled scatterplots that highlight, both, American cities (and institutions) that were successful at translating research back to the practice and cities that were particularly efficient. Figure 4 illustrates the cumulative correlation of NIH funding, across all medical and surgical specialties. In sharp contrast, to both the department specific and cumulative funding associations with number of citations, NIH funding did not correlate with time-to-citation in any specialty (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig4-v3.jpg)
+
+**Figure 4.:** It is important to note that this includes all NIH departments (including all medical and surgical specialties, as well as more translational/basic funding departments).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Scatterplots of median time-to-citation, per city, as a function of the average 10 year department-specific NIH funding, for (A) anesthesiology, (B) clinical neurology, (C) dermatology, (D) emergency medicine, (E) infectious diseases, (F) medicine (general and internal), (G) pathology, (H) pediatrics, (I) ‘radiology, nuclear medicine and medical imaging,’ and (J) urology and nephrology. (NB:) The ‘medicine, general and internal’ plot, in panel F, combines the results for nine specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology – in addition to ‘general and internal medicine’) because a large portion of the funding for these eight specialties occurs through the NIH department combining name of ‘internal medicine/medicine’ (i.e. there was no specific department labels for these subset of specialties).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-v3.jpg)
+
+**Figure 5.:** Scatterplots of absolute number of articles cited, per city, as a function of the average 10 year department-specific NIH funding, for (A) anesthesiology, (B) clinical neurology, (C) dermatology, (D) emergency medicine, (E) infectious diseases, (F) medicine (general and internal), (G) pathology, (H) pediatrics, (I) ‘radiology, nuclear medicine and medical imaging,’ and (J) urology and nephrology. (NB:) The ‘medicine, general and internal’ plot, in panel F, combines the results for nine specialties (cardiac and cardiovascular systems, critical care medicine, endocrinology and metabolism, gastroenterology and hepatology, geriatrics and gerontology, hematology, rheumatology, and oncology – in addition to ‘general and internal medicine’) because a large portion of the funding for these eight specialties occurs through the NIH department combining name of ‘internal medicine/medicine’ (i.e. there was no specific department labels for these subset of specialties). It is also important to note that relevant funding may come from other NIH departments (e.g. ‘cell biology’), and this is reflected in Figure 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Barplot summarizing the proportion of articles cited from (A) all countries with at least 10 articles cited over the past decade from the 18 medical specialties; and (B) all American cities with at least 10 articles cited over the past decade from the 18 medical specialties, organized in alphabetical order. Approximately 18% of articles had no primary affiliation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82498/elife-82498-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Density world map illustrating the primary affiliation of articles in cited in UpToDate for all 18 medical subspecialties. (B) Density map of the United States illustrating the primary affiliation of articles in cited in UpToDate for all 18 medical subspecialties.
 
 Given the strength of correlation of NIH funding with the absolute number of citations across all medical specialties, we also sought to quantify the cost of one new added citation to the point-of-care (i.e. the slope) using a simple linear model. More concretely, we defined the model as a linear function between the average number of UpToDate citations from each city over the past 10 years and the average annual NIH department-specific funding between 2011 and 2020. This estimate may be interpreted as the approximate (indirect) cost of bringing clinical research to the bedside in NIH funding dollars, with the intercept being proportional to the initial investment ‘set-up’ cost. In descending order, a new citation at the point-of-care costs: $48,086.18 per new point-of-care UpToDate citation from urology and nephrology journals (± SE of $7410.68 and an intercept of $470,546.67), $34,529.29 dollars from dermatology journals (± $4043.66 and an intercept = $251,133.85), $13,286.72 from general and internal medicine specialty journals (± $746.58 and an intercept = $673,780.86), $10,655.93 dollars in emergency medicine (± $2795.21 and an intercept = $265,336.27), $6,832.46 dollars from pediatrics journals (± $756.08 and an intercept = $325,662.10), $6482.30 dollars from anesthesiology journals (± $1393.98 and intercept = $206,374.57), $6,227.91 dollars from radiology journals (± $1019.13 and intercept = $254,528.95), $6106.92 dollars from neurology journals (± $607.81 and intercept = $261,566.15), and $874.85 dollars from pathology journals (± $229.67 and an intercept = $174,163.00). The model was not significant for infectious diseases.
 
@@ -79,7 +133,7 @@ Reassuringly, a subset of specialties (e.g. ‘cardiac and cardiovascular system
 
 Exploring over- and under-represented topics provided a fascinating perspective on how specialties prioritized particular topics, treatment paradigms, and clinical discoveries over the past decade. While a more thorough investigation is warranted, our preliminary study revealed that some specialties demonstrated a clear bias toward particular disease topics and treatment paradigms (e.g. cardiac and cardiovascular systems and oncology), while others were far more diverse (e.g. endocrinology and metabolism). The strong correlation of number of citations with NIH funding (both department specific and cumulatively) suggests that funding may, in part, dictate the research focus and, thus, which references are ultimately successful in making it back to the point-of-care.
 
-## Limitations
+### Limitations
 
 There are many possible reasons for the low rate of citation of published research noted in our analysis (e.g. it is possible that some of the published research does not adequately answer a particular clinical question). It is also quite likely that the problem is at least partly one of translation. Both practice guidelines and clinical trials have a low-citation rate despite their design and implementation requiring uncertainty or equipoise surrounding two or more care options (i.e. they are designed to help clinicians choose one treatment or diagnostic approach over another). Thus, the low rate of citation rate of clinical trials, practice guidelines, and other high-quality evidence (e.g. systematic reviews) itself suggests a translational block. To address this limitation of various factors causing the low-citation rate, we explicitly investigate the rate of citation of various article types (as well as analyze topic distributions of these article types) separately and cumulatively to delineate the quality of evidence independently of the global citation rate.
 
@@ -91,7 +145,7 @@ Importantly, strengthening our conclusions, UpToDate does serve as a reliable so
 
 Our division of the literature (and medical journals) into subspecialties using Clarivate’s Journal Citation Reports admittedly does not capture the overlap/nuance of the boundaries between specialties (and journals); however, we believe it made our analyses much clearer and easier to understand. Where appropriate (e.g. citation rates of article types and cumulative NIH funding models), we analyzed all specialties together to enable us to retain a bird’s eye view on global trends across all 18 medical specialties.
 
-## Conclusions
+### Conclusions
 
 Tracing the path of clinical research into medical practice reveals substantial variation in how specialties prioritize and adopt clinical research into practice. The success of a subset of specialties in incorporating a larger proportion of published research, as well as high(er) quality of evidence, demonstrates the existence of translational strategies that should be applied more broadly. While the findings are largely descriptive and exploratory, the dataset and method described here are designed to generate hypotheses regarding the translation of biomedical research into practice. In designing the dataset, we sought to provide a baseline for monitoring the efficiency of research investments and ultimately lead to the development of mechanisms for weighing the efficacy of reforms to the biomedical scientific enterprise (e.g. quantifying impact at point-of-care rather than number of publications or citations).
 
@@ -105,6 +159,14 @@ For this manuscript, we subsequently filtered the references to those published 
 
 For all analyses, summary statistics were generated using base functions in R v4.1. Where appropriate, p-values were corrected for multiple testing using Benjamini-Hochberg.
 
-For all 887 journals, we also calculate two new indices: the CRI and the CII. Unlike the impact factor, these metrics exclusively quantify citations in point-of-care resources (i.e. UpToDate), rather than overall number of citations in other research publications and thus indirectly assess the presumed impact of any given journal on clinical practice. The CRI captures the long-standing impact of the journal over the past decade using a fraction of articles from the journal cited at least once in UpToDate and is defined as:.CRIdecade=Articles Cited in UpToDate in past decadeTotal Articles Ever Published past decade
+For all 887 journals, we also calculate two new indices: the CRI and the CII. Unlike the impact factor, these metrics exclusively quantify citations in point-of-care resources (i.e. UpToDate), rather than overall number of citations in other research publications and thus indirectly assess the presumed impact of any given journal on clinical practice. The CRI captures the long-standing impact of the journal over the past decade using a fraction of articles from the journal cited at least once in UpToDate and is defined as:
 
-Similarly, by using median time-to-citation, the CII captures journal specific trends in time-to-clinical-adoption (i.e. a measure of latency for each journal) that is distinct from the overall impact of the journal, defined as:.CIIdecade=median(date of added citations in past decade−date of publication)
+$$
+CRI_{decade}=\frac{Articles Cited in UpToDate in past decade}{Total Articles Ever Published past decade}
+$$
+
+Similarly, by using median time-to-citation, the CII captures journal specific trends in time-to-clinical-adoption (i.e. a measure of latency for each journal) that is distinct from the overall impact of the journal, defined as:
+
+$$
+CII_{decade}=median(date of added citations in past decade−date of publication)
+$$

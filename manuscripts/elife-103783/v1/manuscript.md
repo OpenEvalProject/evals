@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/019tgvf94 Université Côte d'Azur, CNRS, INSERM, iBV Nice France
+1. Université Côte d'Azur, CNRS, INSERM, iBV Nice France ([ROR:019tgvf94](https://ror.org/019tgvf94))
 
 † Corresponding author
 
@@ -37,29 +37,53 @@ In this study, we show that NR2F2 is expressed in interstitial progenitors of co
 
 ## Results
 
-## NR2F2 is expressed in steroidogenic progenitors of the developing testis
+### NR2F2 is expressed in steroidogenic progenitors of the developing testis
 
 We analyzed the spatiotemporal distribution of NR2F2 in the developing testis by immunofluorescence. At E11.5 (18–21 tail somites [ts]), NR2F2 was detected in both the coelomic epithelium and the mesonephric mesenchyme adjacent to the gonads, two tissues that contribute to the population of interstitial steroidogenic progenitors (Ademi et al., 2022; Karl and Capel, 1998; Kumar and DeFalco, 2018; Figure 1A and C). The majority of mesenchymal cells in the gonad expressed the transcription factor RUNX1 (RUNX1+) (Nicol et al., 2019), indicating that most of the gonadal somatic cells at this stage belong to the supporting lineage (Figure 1A and D). Nevertheless, NR2F2+ RUNX1- cells were observed, revealing that interstitial progenitors were already present at this stage (Figure 1A). NR2F2+ cells were either GATA4+ or GATA4-, suggesting that interstitial progenitors of coelomic and mesonephric origins, respectively, were both present (Figure 1A–C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig1-v1.jpg)
+
+**Figure 1.:** (A–D) Immunodetection of NR2F2, RUNX1, and GATA4 on embryonic day 11.5 (E11.5) (18 tail somites) XY gonad. NR2F2 is detected in coelomic epithelium (ce), mesonephros (me), and RUNX1 negative cells that are either GATA4 positive (arrows in A–C) or GATA4 negative (arrowheads in A–C). (E–H) Immunodetection of NR2F2 and ARX on E12.5 XY gonad. NR2F2 is co-expressed with ARX in the coelomic epithelium (ce, dotted lines in F–H) and in interstitial cells between the testis cords (arrows in F–H). (I,J) Immunodetection of NR2F2 and PDGFRA on E14.5 XY gonad. NR2F2 is detected in PDGFRA positive cells, including interstitial progenitors (arrowheads in J), peritubular myoid cell surrounding testis cords (arrows in J), and cells of the future tunica albuginea (yellow arrow in J). (K,L) Immunodetection of NR2F2, NESTIN, and PECAM-1 on E14.5 XY gonad. NR2F2 is detected in NESTIN positive interstitial progenitors, including perivascular cells (arrowheads in L) and peritubular myoid cells (arrow in L). (M–P) Immunodetection of NR2F2 and HSD3B on E14.5 XY gonad. NR2F2 is absent from the majority of HSD3B positive fetal Leydig cells (arrowheads in N–P) and is only detected at low levels in a few HSD3B positive elongated cells (arrows in N–P). Data are representative of triplicate biological replicates. Scale bar = 50 µm in A–D, F–H, J, L, and N–P. Scale bar = 100 µm in E, I, K, M.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Immunodetection of NR2F2 and SOX9 on embryonic day 12.5 (E12.5) XY gonad (outlined by dotted lines in A). NR2F2 is detected in interstitial cells outside the testis cords (arrows in B and C). (E–H) Immunodetection of NR2F2 and Ki67 on E12.5 XY gonad (outlined by dotted lines in E). NR2F2 positive cells are proliferating (arrows in F–H). (I–L) Immunodetection of NR2F2 and HSD3B on E12.5 XY gonad. NR2F2 is detected at low levels in HSD3B positive elongated cells (arrows in J–L). (M–P) Immunodetection of NR2F2 and LAMA1 on E14.5 XY gonad. NR2F2 is expressed in peritubular myoid cells lining the basement membrane outside the testis cords (arrow in N–P). Data are representative of triplicate biological replicates. Scale bar = 50 µm in B–D, F–H, J–L, and N–P. Scale bar = 100 µm in A, E, I, M.
 
 In E12.5 testes, NR2F2+ cells were detected in the coelomic epithelium and in the interstitial space outside the developing testis cords (Figure 1E–H, Figure 1—figure supplement 1A–D). NR2F2+ cells co-expressed the steroidogenic progenitor marker ARX (Ademi et al., 2022; Miyabayashi et al., 2013) and were actively proliferating (Figure 1E–H, Figure 1—figure supplement 1E–H). At E14.5, NR2F2 expression was maintained in interstitial cells co-expressing PDGFRA (Brennan et al., 2003), as well as in the PTM lining the testis cords and in the cells beneath the surface of the testis that will contribute to the future tunica albuginea (Figure 1I and J, Figure 1—figure supplement 1M–P). NR2F2 expression was also found in NESTIN-expressing perivascular cells that correspond to the mesonephros-derived steroidogenic progenitors (Kumar and DeFalco, 2018; Figure 1K and L). In contrast, NR2F2 protein was either absent or detected at very low levels in FLC marked by the expression of the steroidogenic enzyme HSD3B (Figure 1M–P, Figure 1—figure supplement 1I–L).
 
 Together, our results show that NR2F2 is expressed in the coelomic epithelium and the mesonephros, as well as in the interstitial progenitors derived from both sources, and is downregulated upon FLC differentiation in the developing testis.
 
-## NR2F2 is required for fetal testicular morphogenesis and FLC development
+### NR2F2 is required for fetal testicular morphogenesis and FLC development
 
 In order to investigate the function of NR2F2 in the developing mouse testis, we used an Nr2f2flox conditional allele (Hutson et al., 2015), and a knock-in Wt1CreERT2 line, in which tamoxifen-inducible CreERT2 is produced by Wt1-expressing cells (Shima and Morohashi, 2017; Figure 2A). Wt1 is expressed from E9.5 in the coelomic epithelium of the gonadal ridge and in the adjacent mesonephros (Armstrong et al., 1993), and Wt1CreERT2-mediated recombination can be induced in all somatic gonadal cells upon tamoxifen administration at E9.5 and E10.5 (Manuylov et al., 2008; Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig2-v1.jpg)
+
+**Figure 2.:** (A) Generation of Wt1CreERT2; Nr2f2flox/flox mutants. Tamoxifen was administered at embryonic day 9.5 (E9.5) and E10.5, and embryos were recovered at E12.5, E14.5, and E16.5. (B,C) Immunodetection of NR2F2 and SOX9 on E12.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes (outlined by dotted lines) after tamoxifen treatment at E9.5 and E10.5. NR2F2 is efficiently deleted in the gonad and mesonephros. (D,E) Immunodetection of NR2F2 and NESTIN on E14.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes. NR2F2 is efficiently deleted in NESTIN1 positive cells. (F,G) Immunodetection of ARX on E12.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes (outlined by dotted lines). Interstitial cells are generated in Wt1CreERT2; Nr2f2flox/flox mutants. (H,I) Macroscopic view of the urogenital tract of XY E16.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes dissected after tamoxifen treatment at E9.5 and E10.5. Testes (t) and kidneys (k) are hypoplastic in Wt1CreERT2; Nr2f2flox/flox mutants. bl: bladder. vd: vas deferens. (J,K) Immunodetection of HSD3B on E12.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes (outlined by dotted lines). ad: adrenal. (L,M) Immunodetection of HSD3B on E14.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes. ad: adrenal. (N) Quantification of the number of HSD3B positive cells per surface unit and of the number of SOX9 positive cells per surface unit in control (wild-type or Nr2f2flox/+) and Wt1CreERT2; Nr2f2flox/flox testes. Each triangle represents the mean number of HSD3B or SOX9 positive cells per surface unit of one individual measured on at least two sections per gonad. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (O) Quantification of Cyp11a1, Cyp17a1, Insl3, and Sox9 transcripts in Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes treated with tamoxifen at E9.5 and E10.5 and dissected at E14.5 after normalization to Sdha and Tbp by RT-qPCR. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. Immunodetection data are representative of triplicate biological replicates. Scale bar = 100 µm in B–G, J–M. Scale bar = 500 µm in H, I.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunodetection of NR2F2 and GFP on embryonic day 14.5 (E14.5) XY Wt1CreERT2;mT/mG gonad after tamoxifen was administered at E9.5 and E10.5. Upon Cre-mediated recombination, GFP is expressed in all somatic cells of the gonad, including NR2F2 positive cells (arrows). (B) Quantification of Nr2f2 transcripts after normalization to Sdha and Tbp by RT-qPCR in Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes dissected at E12.5 and E14.5 after tamoxifen treatment at E9.5 and E10.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (C–F) Immunodetection of NR2F2 and WT1 on E11.5 XY gonad. NR2F2 is co-expressed with WT1 in the coelomic epithelium (ce), in the mesonephros (me), and in interstitial steroidogenic progenitors (arrows). (G,H) Immunodetection of ACTA2 on E14.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes. The expression in the future tunica albuginea (arrow in G) is impaired in Wt1CreERT2; Nr2f2flox/flox mutants. (I,J) Immunodetection of WT1 and COL4A1 on E14.5 Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes. Testis cords are enlarged and abnormally shaped in Wt1CreERT2; Nr2f2flox/flox mutants. (K) Quantification of Dhh, Pdgfa, and Amh transcripts in Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes treated with tamoxifen at E9.5 and E10.5 and dissected at E14.5 after normalization to Sdha and Tbp by RT-qPCR. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (L) Quantification of Cyp11a1, Cyp17a1, Dhh, Pdgfa, and Amh transcripts in Nr2f2+/+ and Wt1CreERT2/+ testes treated with tamoxifen at E9.5 and E10.5 and dissected at E14.5 after normalization to Sdha and Tbp by RT-qPCR. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (M) Quantification of the testis cord area in control testes (n=60 testis cords from 2 Nr2f21 and 1 Nr2f2flox/+ embryos, average testis cord number per embryo = 21) and Wt1CreERT2; Nr2f2flox/flox testes (n=26 testis cords from 3 embryos, average testis cord number per embryo = 9) dissected at E14 after tamoxifen treatment at E9.5 and E10.5. Testis cords were identified on sections by immunodetection with anti-SOX9 antibodies. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05. Immunodetection data are representative of triplicate biological replicates. Scale bar = 50 µm in D–F. Scale bar = 100 µm in A, C, G–J.
 
 NR2F2 is co-expressed with WT1 in the gonadal coelomic epithelium, in the mesonephros, and in interstitial cells (Yu et al., 2012; Figure 2—figure supplement 1C–F). Tamoxifen treatment at E9.5 and E10.5 triggered an efficient NR2F2 deletion in gonadal and mesonephric tissues of Wt1CreERT2; Nr2f2flox/flox embryos analyzed at E12.5 and E14.5 (Figure 2A–E, Figure 2—figure supplement 1B). NR2F2 expression was completely absent in gonadal interstitial cells, including NESTIN+ cells, demonstrating that all interstitial steroidogenic progenitors were targeted in Wt1CreERT2; Nr2f2flox/flox embryos (Figure 2D and E). Morphological examination of the urogenital system of E16.5 Wt1CreERT2; Nr2f2flox/flox embryos revealed hypoplastic undescended testes, as well as hypoplastic kidneys (Figure 2H and I), indicating that NR2F2 function is required for testicular and kidney development.
 
 Sertoli cells expressing SOX9 (Figure 2B and C) and interstitial progenitors marked by ARX (Figure 2F and G) were present in Wt1CreERT2; Nr2f2flox/flox embryos at E12.5. However, differentiated steroidogenic FLC (marked by HSD3B expression) were almost completely absent in the mutant gonads (Figure 2J, K, and N). This phenotype was not due to a delay in the initiation of FLC differentiation, as the number of HSD3B positive cells remained strongly reduced in Wt1CreERT2; Nr2f2flox/flox mutant gonads at E14.5 (60% reduction, Figure 2L–N). In addition, the transcripts of Cyp11a1 and Cyp17a1, two genes encoding steroidogenic enzymes expressed in FLC, and of Insl3 were strongly reduced (Figure 2O), providing a possible explanation for the observed undescended testes phenotype (Figure 2—figure supplement 1G and H). The mutant gonads showed fewer testis cords that were enlarged and exhibited irregular shapes at E14.5 (Figure 2E, Figure 2—figure supplement 1J and M). Moreover, the expression of ACTA2 was strongly reduced both in the periphery of the gonad and in cells lining the testis cords, indicating that tunica cell and PTM development were impaired in Wt1CreERT2; Nr2f2flox/flox mutants (Figure 2—figure supplement 1G and H). Together, these results demonstrate that NR2F2 function is not essential for the initial specification of the interstitial and supporting cells of the testis but is required for testicular morphogenesis and for FLC development.
 
-## Sertoli cell development is impaired in Wt1CreERT2; Nr2f2flox/flox testes
+### Sertoli cell development is impaired in Wt1CreERT2; Nr2f2flox/flox testes
 
 FLC differentiation relies on signals produced by Sertoli cells such as DHH and PDGFA acting on interstitial cells (Rotgers et al., 2018; Wen et al., 2016). The number of Sertoli cells expressing SOX9 and the levels of Sox9 transcripts were not altered in Wt1CreERT2; Nr2f2flox/flox mutants at E14.5 (Figure 2N and O). However, the expression of Dhh, Pdgfa, and Amh, another marker of differentiated Sertoli cells, was reduced in Wt1CreERT2; Nr2f2flox/flox mutants compared to Nr2f2flox/+ control gonads (Figure 2—figure supplement 1K), indicating that Sertoli cell differentiation is abnormal in Wt1CreERT2; Nr2f2flox/flox gonads. WT1 is required for Sertoli cell development (Gao et al., 2006), and previous work suggested that Wt1 heterozygosity in Wt1CreERT2/+ gonads results in delayed testicular development (Carré et al., 2018). To discriminate between the effects of Nr2f2 loss of function and Wt1 heterozygosity in the phenotype of Wt1CreERT2; Nr2f2flox/flox mutants, we analyzed gene expression in Wt1CreERT2/+ testes compared to wild-type littermates. We found that the expression of the FLC markers Cyp11a1 and Cyp17a1 was not significantly different in Wt1CreERT2/+ testes compared to wild-type littermates (Figure 2—figure supplement 1L). In contrast, transcript levels of Dhh, Pdgfa, and Amh were significantly reduced (Figure 2—figure supplement 1L). While these results indicate that impaired FLC development in Wt1CreERT2; Nr2f2flox/flox mutants is associated with the loss of Nr2f2 function, the potential contribution of Sertoli cell defects caused by Wt1 heterozygosity to the FLC phenotype cannot be ruled out in this model.
 
-## NR2F2 is required in the steroidogenic lineage for FLC development
+### NR2F2 is required in the steroidogenic lineage for FLC development
 
 In order to elucidate the specific function of NR2F2 in the steroidogenic lineage for FLC development, we used the transgenic Nr5a1-Cre line which drives robust recombination in somatic gonadal cells from E11.5, after the supporting and steroidogenic lineages have been specified (Figure 3A, Figure 3—figure supplement 1A and B; Bingham et al., 2006; Manuylov et al., 2011).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig3-v1.jpg)
+
+**Figure 3.:** (A) Generation of Nr5a1-Cre; Nr2f2flox/flox mutants. (B,C) Immunodetection of NR2F2 and SOX9 on embryonic day 12.5 (E12.5) Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes (outlined by dotted lines). NR2F2 is deleted in interstitial cells but is still present in the outermost layer of the testis. (D,E) Immunodetection of NR2F2 and NESTIN on E14.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. NR2F2 is still detected in NESTIN1 positive cells. (F,G) Immunodetection of ARX on E12.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes (outlined by dotted lines). Interstitial cells are generated in Nr5a1-Cre; Nr2f2flox/flox mutants. (H) Quantification of Sox9, Dhh, Pdgfa, and Amh transcripts after normalization to Sdha and Tbp in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox by RT-qPCR at E14.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (I,J) Immunodetection of HSD3B on E12.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes (outlined by dotted lines). ad: adrenal. (K,L) Immunodetection of HSD3B on E14.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (M) Quantification of the number of HSD3B positive cells per surface unit in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes at E12.5 and E14.5. Each circle represents the mean number of HSD3B positive cells per surface unit of one individual measured on at least two sections per gonad. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (N) Quantification of Cyp11a1, Cyp17a1, and Insl3 after normalization to Sdha and Tbp in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox by RT-qPCR at E14.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (O,P) Macroscopic view of the urogenital tract of XY P3 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox mutants. The testes are in abdominal position in Nr5a1-Cre; Nr2f2flox/flox mutants. k: kidney, t: testis, bl: bladder. vd: vas deferens. Immunodetection data are representative of triplicate biological replicates. Scale bar = 100 µm in B–G, I–L. Scale bar = 500 µm in O, P.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A,B) Immunodetection of NR2F2 and GFP on embryonic day 14.5 (E14.5) XY Nr5a1-Cre;mT/mG gonad. Upon Cre-mediated recombination, GFP is expressed in somatic cells of the gonad including NR2F2 positive cells (arrows); however, the outermost layer and some interstitial NR2F2 positive cells (arrowheads) do not express GFP. (C) Quantification of Nr2f2 transcripts after normalization to Sdha and Tbp by RT-qPCR in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes dissected at E12.5 and E14.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05. (D–G) Immunodetection of NR2F2 and NR5A1 on E11.5 XY gonad. NR2F2 is co-expressed with NR5A1 in the coelomic epithelium (ce) and in interstitial steroidogenic progenitors (arrows). NR2F2 positive cells that do not express NR5A1 are likely steroidogenic progenitors of mesonephric (me) origin (arrowheads). (H,I) Immunodetection of NESTIN on E14.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. Images corresponding to the samples shown in Figure 3D and E. (J,K) Immunodetection of ACTA2 on E14.5 Nr2f2flox/flox and Nr5a1-Cre; Nr2f2flox/flox testes. White arrows indicate cells that will form the tunica albuginea. (L,M) Immunodetection of CYP11A1 (arrows) on E14.5 Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (N) Quantification of Sox9, Dhh, Gli1, and Amh transcripts after normalization to Sdha and Tbp by RT-qPCR in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes at E12.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. ns indicates p-value>0.05. (O) Quantification of the number of SOX9 positive cells per surface unit in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes at E14.5. Each circle represents the mean number of SOX9 positive cells per surface unit of one individual measured on at least two sections per gonad. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. ns indicates p-value>0.05. (P) Anogenital distance (distance between the anus and the external genitalia measured with an electronic caliper) in control females (wild-type or Nr2f2flox/+, inverted triangles), control males (wild-type or Nr2f2flox/+, black circles), and Nr5a1-Cre; Nr2f2flox/flox males (red circles) measured at P0 (solid symbols) and P1 (open symbols). Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05. Immunodetection data are representative of triplicate biological replicates. Scale bar = 50 µm in B, E–G. Scale bar = 100 µm in A, D, H–M.
 
 At E11.5, NR5A1 is co-expressed with NR2F2 in the gonadal coelomic epithelium and in interstitial cells, but is absent from the mesonephros and mesonephros-derived cells (Stévant et al., 2018; Kumar and DeFalco, 2018; Figure 3—figure supplement 1D–G). Nr5a1-Cre; Nr2f2flox/flox mutants show efficient Nr2f2 deletion in gonadal interstitial cells at E12.5 and E14.5 (Figure 3B–E, Figure 3—figure supplement 1C). Consistent with previous reports on the activity of Nr5a1-Cre (Manuylov et al., 2011), NR2F2 was still detected in the coelomic epithelium layer and in interstitial cells just beneath it, particularly in the anterior part of the gonad of Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 3B–E). NESTIN+ NR2F2+ cells were still present, confirming that steroidogenic progenitors of mesonephric origin were not targeted by Nr5a1-Cre (Figure 3D and E, Figure 3—figure supplement 1H and I; Kumar and DeFalco, 2018). Together, these results demonstrate that in Nr5a1-Cre; Nr2f2flox/flox mutants, NR2F2 is deleted after E11.5 in interstitial cells derived from the coelomic epithelium, except in the outermost layer of the testis.
 
@@ -67,15 +91,23 @@ Nr2f2 deletion by Nr5a1-Cre did not affect the initial formation of the supporti
 
 In agreement with reduced Insl3 expression, the testes of Nr5a1-Cre; Nr2f2flox/flox embryos were undescended and exhibited an abnormal abdominal position at postnatal day (P) 3 (Figure 3O and P). In addition, the anogenital distance, a readout for androgen levels (Schwartz et al., 2019), was reduced in P0 and P1 Nr5a1-Cre; Nr2f2flox/flox males when compared to male controls (Figure 3—figure supplement 1P), consistent with the reduced expression of steroidogenic enzymes in the mutant testes. We conclude that defective FLC development in Nr2f2 mutants results in cryptorchidism and impaired masculinization of the external genitalia.
 
-## NR2F2 is required for the initiation of FLC differentiation
+### NR2F2 is required for the initiation of FLC differentiation
 
 FLCs differentiate from proliferating interstitial progenitors that progressively lose their mitotic ability, downregulate the transcription factors ARX and NR2F2, upregulate the master regulator of steroidogenesis NR5A1, and activate the expression of steroidogenesis-related genes (Inoue et al., 2016; Ademi et al., 2022; Miyabayashi et al., 2013). We wanted to determine which of these steps of FLC differentiation are NR2F2 dependent.
 
 The transcription factor ARX is required in the pool of proliferating interstitial progenitors for FLC development (Miyabayashi et al., 2013). We first examined whether NR2F2 regulates the survival, proliferation, or identity of the ARX+ cell population. We found that the expression of Arx mRNA was not modified in Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 4—figure supplement 1A). The total number of gonadal cells, the percentage of ARX+ cells among the total number of gonadal cells, and the fraction of proliferating cells among the ARX+ population were similar to controls at E12.5 and E14.5 (Figure 4A, B, and E, Figure 4—figure supplement 1B–E). In addition, we did not find evidence of increased cell death in Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 4—figure supplement 1F–H). Together, these results indicate that ARX+ steroidogenic progenitor cells are present and proliferate at normal rates in Nr5a1-Cre; Nr2f2flox/flox mutants.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig4-v1.jpg)
+
+**Figure 4.:** (A,B) Immunodetection of ARX and BrdU (arrows) on embryonic day 14.5 (E14.5) XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (C,D) Immunodetection of NR5A1 on E14.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. Arrows indicate strong expression of NR5A1 positive FLC. (E) Quantification of the percentage of ARX positive cells (number of ARX positive nuclei relative to the total number of nuclei labeled by DAPI), of the percentage of ARX positive cells labeled by BrdU (number of nuclei positive for ARX and BrdU relative to the number of ARX positive nuclei) and of the number of NR5A1 positive cells per surface unit in E14.5 XY control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes. Each circle represents the mean percentage of ARX+ or ARX+/BrdU+ or NR5A1+ cells per surface unit of one individual measured on at least two sections per gonad. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (F) Quantification of Gli1, Pdgfra, Pdgfb, and Sgpl1 transcripts after normalization to Sdha and Tbp in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox by RT-qPCR at E14.5. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (G,H) In situ hybridization detection of Gli1 transcripts and immunodetection of HSD3B protein on E14.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (I,J) Immunodetection of PDGFRA on E14.5 XY Nr2f2flox/flox and Nr5a1-Cre; Nr2f2flox/flox testes. (K,L) Immunodetection of PECAM-1 and NR2F2 on E12.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. PECAM-1 is expressed in germ cells and in endothelial cells (white arrows). (M) Quantification of Cdh5, Notch2, Heyl, and Hes1 transcripts after normalization to Sdha and Tbp in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox by RT-qPCR at E14.5. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. Immunodetection data are representative of triplicate biological replicates. Scale bar = 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of Arx transcripts after normalization to Sdha and Tbp by RT-qPCR at embryonic day 14.5 (E14.5) and E12.5. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (B) Quantification of the total number of gonadal cells labeled by DAPI per gonadal section on E14.5 and E12.5 XY control (wild-type or Nr2f2flox/+), and Nr5a1-Cre; Nr2f2flox/flox testes. Each circle represents the mean percentage of gonadal cells of one individual measured on at least two sections per gonad. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (C,D) Immunodetection of ARX and BrdU (arrows) on E12.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (E) Quantification of the percentage of ARX positive cells (number of ARX positive nuclei relative to the total number of nuclei labeled by DAPI) and of the percentage of ARX positive cells labeled by BrdU (number of nuclei positive for ARX and BrdU relative to the number of ARX positive nuclei) on E12.5 XY control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes. Each circle represents the mean percentage of ARX+ or ARX+/BrdU+ cells per surface unit of one individual measured on at least two sections per gonad. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (F,G) Immunodetection of activated caspase 3 (arrow in F) and AMH on E14.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (H) Quantification of the number of caspase 3 positive cells per 100,000 µm2 of interstitial area (area outside the testis cords) on E14.5 XY control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes. Each circle represents the mean number of activated caspase 3 positive cells per surface unit of one individual measured on at least two sections per gonad. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. ns indicates p-value>0.05. (I,J) Immunodetection of NR5A1 on E12.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. ad: adrenal. Immunodetection data are representative of triplicate biological replicates. Scale bar = 100 µm.
+
 As the ARX+ steroidogenic progenitors adopt an FLC identity, NR2F2 is progressively lost, and the nuclear receptor NR5A1 is strongly upregulated (Inoue et al., 2016; Ademi et al., 2022; van den Driesche et al., 2012). NR5A1 directs FLC differentiation by regulating the expression of genes associated with cholesterol metabolism and steroidogenesis (Morohashi et al., 2020; Shima et al., 2018; Jeyasuria et al., 2004; Buaas et al., 2012). In Nr5a1-Cre; Nr2f2flox/flox mutants, the cells expressing high levels of NR5A1+ in the interstitial compartment were reduced compared to controls (Figure 4C–E, Figure 4—figure supplement 1I and J). This observation indicates that NR2F2 function is required for NR5A1 upregulation at the initial step of steroidogenic cell differentiation.
 
-## DHH, PDGFRA, and NOTCH pathways are not impaired in Nr5a1-Cre; Nr2f2flox/flox mutants
+### DHH, PDGFRA, and NOTCH pathways are not impaired in Nr5a1-Cre; Nr2f2flox/flox mutants
 
 We next investigated the impact of Nr5a1-Cre; Nr2f2 flox/flox mutation on the activation of the signaling pathways involved in FLC differentiation. DHH secreted by Sertoli cells binds to its receptor PTCH1 expressed in interstitial progenitors and activates its target genes, including Gli1, to promote FLC differentiation (Yao et al., 2002; Barsoum and Yao, 2011). The expression levels of Dhh and of its target Gli1, a readout of Hedgehog pathway activation, were not modified in Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 3H, Figure 4F, Figure 3—figure supplement 1N). Gli1 transcripts exhibited a similar distribution in interstitial cells of control and Nr5a1-Cre; Nr2f2flox/flox mutants at E14.5 (Figure 4G and H). PDGFA produced by Sertoli cells binds to the PDGFRA receptor expressed in interstitial progenitors to activate downstream signaling required for FLC development (Brennan et al., 2003; Schmahl et al., 2008). The expression levels of Pdgfa and Pdgfb, coding for two PDGFRA ligands expressed in developing testes (Brennan et al., 2003), were not altered in Nr5a1-Cre; Nr2f2flox/flox mutants (Figures 3H and 4F). Transcript levels of Pdgfra were unchanged in Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 4F), and PDGFRA protein was detected at the plasma membrane of interstitial cells in both control and Nr5a1-Cre; Nr2f2flox/flox mutant testes at E14.5 (Figure 4I and J). In addition, the expression of Sgpl1, a PDGFRA signaling target involved in steroidogenic differentiation (Schmahl et al., 2008), was not reduced in Nr5a1-Cre; Nr2f2flox/flox mutants (Figure 4F). These observations indicate that the activities of Hedgehog and PDGFRA signaling, two pathways that positively regulate FLC differentiation, are not impaired in Nr5a1-Cre; Nr2f2flox/flox mutants.
 
@@ -83,11 +115,19 @@ In addition to the positive signals, FLC differentiation is also negatively modu
 
 Together, these results indicate that NR2F2 deficiency does not impact the activity of the signaling pathways known to induce or repress FLC formation, suggesting that NR2F2 acts downstream or in parallel to these pathways to regulate FLC differentiation from interstitial progenitors.
 
-## NR2F2 is required for FLC maturation
+### NR2F2 is required for FLC maturation
 
 A small fraction of HSD3B positive cells formed in the absence of NR2F2 function, even in the case of Wt1CreERT2; Nr2f2flox/flox mutant gonads that exhibit widespread NR2F2 deletion in steroidogenic progenitors of coelomic and mesonephric origin. One possibility is that these cells are ALCs that have prematurely differentiated in Nr2f2 mutant fetal testes. Bhmt (Betaine-homocysteine methyltransferase) is specifically expressed in ALC and absent in FLC (Sararols et al., 2021). Bhmt transcripts were not detected in control or Nr2f2 mutant testes by RT-qPCR at E14.5, while they were present in adult testes (Figure 5—figure supplement 1A), indicating that the steroidogenic cells of the mutants do not have adult characteristics.
 
 To evaluate the steroidogenic capacities of the remaining FLC in Nr2f2 mutant gonads, we analyzed the transcript levels of Cyp11a1 and Cyp17a1 normalized to the FLC number as quantified by HSD3B immunofluorescence (Figure 2N, Figure 3M; Kothandapani et al., 2020). Normalized data showed reduced steroidogenic gene expression in Nr5a1-Cre; Nr2f2flox/flox and in Wt1CreERT2; Nr2f2flox/flox mutant testes (Figure 5A and B), in agreement with the reduced HSD3B expression levels detected by immunofluorescence in Nr2f2 mutant testes (Figures 2J–M–3I–L). These observations suggest that FLC formed in the mutant testes have reduced steroidogenic function.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig5-v1.jpg)
+
+**Figure 5.:** (A) RT-qPCR quantification of Cyp11a1 and Cyp17a1 transcripts in control (wild-type or Nr2f2flox/+) and Nr5a1-Cre; Nr2f2flox/flox testes after normalization to Sdha and Tbp and to the number of FLC as quantified by HSD3B immunofluorescence at embryonic day 14.5 (E14.5). Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (B) RT-qPCR quantification of Cyp11a1 and Cyp17a1 transcripts in Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox gonads after normalization to Sdha and Tbp and to the number of FLC as quantified by HSD3B immunofluorescence at E14.5. Data are shown as means ± SEM. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (C,D) Immunodetection of HSD3B on E14.5 XY Nr2f2flox/+ and Nr5a1-Cre; Nr2f2flox/flox testes. (E,F) Immunodetection of HSD3B on E14.5 XY Nr2f2flox/+ and Wt1CreERT2; Nr2f2flox/flox testes after tamoxifen was administered at E9.5 and E10.5. (G) Quantification of the area and circularity of HSD3B positive cells in two E14.5 control (wild-type or Nr2f2flox/+, 737 cells, gray violin plot) and three Nr5a1-Cre; Nr2f2flox/flox (486 cells, red violin plot) testes. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (H) Quantification of the area and circularity of HSD3B positive cells in three E14.5 control (wild-type or Nr2f2flox/+, 1485 cells, gray violin plot) and three Wt1CreERT2; Nr2f2flox/flox (474 cells, blue violin plot) testes. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05. (I) Summary figure: NR2F2 is expressed in spindle-shaped interstitial steroidogenic progenitors together with ARX and is progressively downregulated upon FLC differentiation. NR2F2 is required for the initiation of FLC differentiation (marked by the upregulation of NR5A1) and for FLC maturation (characterized by the increase in cytoplasmic volume and the high expression of steroidogenic enzymes and Insl3). Immunodetection data are representative of triplicate biological replicates. Scale bar = 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103783/elife-103783-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of Bhmt transcripts after normalization to Sdha and Tbp by RT-qPCR at embryonic day 14.5 (E14.5) in XY control (wild-type or Nr2f2flox/+), and Nr5a1-Cre; Nr2f2flox/flox testes and in wild-type adult testes. (B) Quantification of the circularity and area of HSD3B positive cells in two E14.5 control (wild-type or Nr2f2flox/+, 737 cells, black open circles) and three Nr5a1-Cre; Nr2f2flox/flox (486 cells, red open triangles) testes. (C) Quantification of the circularity and area of HSD3B positive cells in three E14.5 control (wild-type or Nr2f2flox/+, 1485 cells, black open circles) and three Wt1CreERT2; Nr2f2flox/flox (474 cells, blue open triangles) testes.
 
 FLC differentiation is accompanied by a change in cell shape from spindle-shaped progenitors to round-shaped FLC and an increase in cytoplasmic volume (van den Driesche et al., 2012; Haider, 2004). HSD3B positive FLC present in Nr5a1-Cre; Nr2f2flox/flox and in Wt1CreERT2; Nr2f2flox/flox mutants were smaller and more elongated than those in control littermates (Figure 5C–H, Figure 5—figure supplement 1). These cellular characteristics have been associated with immature FLC at the initial stages of FLC differentiation before the formation of large and round testosterone-producing FLC (van den Driesche et al., 2012; Haider, 2004).
 
@@ -115,23 +155,285 @@ Pathogenic variants in NR2F2 have been associated with congenital malformations,
 
 ## Materials and methods
 
-## Mouse strains and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Nr2f2</td>
+      <td>MGI</td>
+      <td>MGI:1352452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Nr2f2tm1Vc</td>
+      <td>Dr. M. Vasseur-Cognet</td>
+      <td>MGI:3578106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Wt1tm2(cre/ERT2)Wtp</td>
+      <td>Dr. William T Pu</td>
+      <td>MGI:7528785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tg(Nr5a1-cre)2Klp</td>
+      <td>Dr. Keith L Parker</td>
+      <td>MGI:5493455</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5648</td>
+      <td>200 mg/kg body weight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>5-Bromo-2'-deoxy-uridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>B5002</td>
+      <td>50 mg/kg body weight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Paraformaldehyde</td>
+      <td>EMS</td>
+      <td>15710-S</td>
+      <td>4% in PBS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTA2 (Mouse monoclonal)</td>
+      <td>Gift from Dr. Chaponnier</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Activated Caspase 3 (Rabbit polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF835 (RRID:AB_2243952)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- AMH (Mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>MCA2246 (RRID:AB_2226471)</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- ARX (Rabbit polyclonal)</td>
+      <td>Gift from Pr. Morohashi and Dr. Inoue</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COL4A1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab19808 (RRID:AB_445160)</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CYP11A1 (Rabbit polyclonal)</td>
+      <td>Gift from Dr. Wilhelm</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA4 (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-1237 (RRID:AB_2108747)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab13970 (RRID:AB_300798)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSD3B (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-30820 (RRID:AB_2279878)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSD3B (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>PA5-76669 (RRID:AB_2720396)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Spring Bioscience</td>
+      <td>M3062 (RRID:AB_11219741)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMA1 (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>L9393 (RRID:AB_477163)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NESTIN (Rabbit)</td>
+      <td>BioLegend</td>
+      <td>839801 (RRID:AB_2565443)</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NR2F2 (Mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>PP-H7147-00 (RRID:AB_2155627)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NR5A1 (Rabbit polyclonal)</td>
+      <td>Cosmo Bio</td>
+      <td>KO611(RRID:AB_2861370)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PDGFRA (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-338 (RRID:AB_631064)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PECAM-1 (Goat polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Sc-1506 (RRID:AB_2161037)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RUNX1 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab92336 (RRID:AB_2049267)</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX9 (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>HPA001758 (RRID:AB_1080067)</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-WT1 (Goat polyclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF5729 (RRID:AB_2216239)</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BrdU detection kit</td>
+      <td>Roche</td>
+      <td>11 296 736 001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscopeMultiplex Fluorescent Reagent Kit v2</td>
+      <td>Bio-Techne</td>
+      <td>323110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gli1 probe</td>
+      <td>Bio-Techne</td>
+      <td>311001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>QIAGEN</td>
+      <td>74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>04887352001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RefFinder</td>
+      <td>https://www.ciidirsinaloa.com.mx/RefFinder-master/?type=reference</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OMERO</td>
+      <td>https://www.openmicroscopy.org/omero/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphpadSoftware,Inc, La Jolla,CA, USA</td>
+      <td>GraphPad Prism 10.2.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse strains and genotyping
 
 The experiments described herein were carried out in compliance with the guidelines of the French Regulations for Animal Care and with the approval of the local Ethical Committee (APAFIS APAFIS#12789-2017121515109323 v1 and APAFIS#44072-2023061915491990 v5). Mouse lines were kept on a mixed background B6CBAF1/JRj. The Nr2f2tm1Vc line where Nr2f2 exon 1 sequences (encoding the DNA binding domain) are deleted upon CRE-mediated recombination (referred to as Nr2f2flox), the knock-in Wt1tm2(cre/ERT2)Wtp line where tamoxifen-inducible CreERT2 is produced by WT1 expressing cells (referred to as Wt1CreERT2), and the transgenic Tg(Nr5a1-cre)2Klp line where Cre expression is driven by Nr5a1 regulatory sequences (referred to as Nr5a1-Cre) were genotyped as previously described (Bardoux et al., 2005; Zhou et al., 2008; Bingham et al., 2006). Wt1CreERT2; Nr2f2flox/+ or Nr5a1-Cretg/0; Nr2f2flox/+ males were crossed with Nr2f2flox/+ females to obtain mutant embryos at different stages. Embryos were named controls (Nr2f2+/+ or Nr2f2flox/+) or mutants (Wt1CreERT2; Nr2f2flox/flox or Nr5a1-Cretg/0; Nr2f2flox/flox). Genotypes of mice and embryos were determined using PCR assays on lysates from ear biopsies or tail tips. Genotyping primers are listed in Appendix 1. To activate the CreERT2 recombinase in embryos, tamoxifen (TAM, T5648, Sigma-Aldrich) was directly diluted in corn oil to a concentration of 40 mg/mL, and two TAM treatments (200 mg/kg body weight) were administered to pregnant females by oral gavage at E9.5 and E10.5. For proliferation assays, 5-bromo-2'-deoxy-uridine (BrdU) (B5002, Sigma-Aldrich) diluted to a concentration of 10 mg/mL in sterile H2O was administered to the pregnant females (50 mg/kg body weight) by intraperitoneal injection, and pregnant females and their embryos were humanely killed after 3 hr and 30 min. The day when a vaginal plug was found was designated as E0.5. E11.5–E12.5 embryos were staged by counting the number of ts with 18 ts corresponding to E11.5.
 
-## Immunofluorescence staining and in situ hybridization
+### Immunofluorescence staining and in situ hybridization
 
 Embryos were fixed in 4% (wt/vol) paraformaldehyde (PFA, 15,710-S, EMS) overnight, processed for paraffin embedding, and sectioned into 5-µm-thick sections. Immunofluorescence and DAPI staining were performed as described in Tang et al., 2020. Proliferation analysis was performed by using a BrdU detection kit (11 296 736 001, Roche). Gli1 mRNA was detected with the RNAscope technology (probe 311001) according to Advanced Cell’s instructions using the RNAscope Multiplex Fluorescent Reagent Kit v2 Assay. Images were obtained on a motorized Axio Imager Z1 microscope (Zeiss) coupled with an AxioCam MRm camera (Zeiss) and processed with Fiji (Bethesda, MD, USA). The DAPI staining marking the nuclei was adjusted to visualize the tissues and may vary between samples. However, for the immunofluorescence analysis, the exposure time of the acquisition of the fluorescent signal was identical in the same experiment to allow comparison between controls and mutants. Images were assembled using the open-source software platform OMERO (https://www.openmicroscopy.org/omero/). Antibodies are listed in the Key resources table. At least three embryos of each genotype were analyzed for each marker.
 
-## Cell quantifications
+### Cell quantifications
 
 The gonadal area for each section was measured by creating a gonadal region of interest (ROI) drawn manually in Fiji. The number of HSD3B positive cells (2–493 cells per section depending on the stages and genotypes), SOX9 positive cells (231–882 cells per section depending on the stages and genotypes), NR5A1 positive cells (3–256 cells per section depending on the stages and genotypes), ARX positive cells (666–2487 cells per section depending on the stages and genotypes), ARX positive cells that had incorporated BrdU (232–656 cells per section depending on the stages and genotypes), activated caspase 3 positive cells (0–6 cells per section depending on the stages and genotypes), or the number of nuclei labeled by DAPI (1582–4279 cells per section depending on the stages and genotypes) were counted manually in the entire gonadal section using the Cell Counter Plugin from Fiji. For each genotype, gonads of three or four biological replicates were analyzed. Two to three coronal sections spaced by at least 30 µm in the medial regions of the gonads were analyzed for each individual. Statistical significance was assessed by Mann-Whitney U two-tailed test. * indicates p-value≤0.05; ns indicates p-value>0.05.
 
-## Quantification of area and circularity of HSD3B positive cells
+### Quantification of area and circularity of HSD3B positive cells
 
 Gonadal (ROI) was drawn manually, and HSD3B positive cells were segmented using the Stardist Deep Learning plugin of Fiji with a minimum area of 20 µm2 to remove small particles. The area and circularity of each segmented cell were measured with Fiji. Circularity = 4π*area/perimeter^2. A value of 1.0 indicates a perfect circle. As the value approaches 0.0, it indicates an increasingly elongated shape. For each genotype, two to three biological replicates were analyzed. The data are shown as violin plots (with median and quartiles) for control and mutant samples.
 
-## RNA extraction and quantitative PCR analysis
+### RNA extraction and quantitative PCR analysis
 
 Individual gonads were dissected from the mesonephros in PBS, snap-frozen in liquid nitrogen, and kept at −80°C. RNA was extracted by RNeasy Micro Kit (74004, QIAGEN) and reverse-transcribed by M-MLV reverse transcriptase (M170A, Promega). The cDNA was used as a template for quantitative PCR analysis using the SYBR Green I Master (04887352001, Roche) and a LightCycler 480 System (Roche). Primer sequences are listed in Appendix 1.
 

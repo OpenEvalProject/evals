@@ -25,6 +25,72 @@ Aging is a multifactorial process that results in increased risk of a myriad of 
 
 Maintaining genome stability is a continuous process. Deoxyribonucleic acids are chemically unstable under physiological conditions (aqueous, oxygen-rich, and pH 7.4) (Lindahl, 1993). DNA is also vulnerable to chemical attack by electrophiles and free radicals. While exogenous sources of genotoxic stress can be quite potent, endogenous threats are constant and relentless (Table 1). The most common DNA lesion is hydrolytic cleavage of the glycosidic bond between the DNA base and sugar phosphate group, leading to abasic sites. Hydrolytic deamination of the DNA bases is also common. Products of normal cellular metabolism can cause oxidation, nitrosylation, and alkylation of the DNA bases (De Bont and van Larebeke, 2004). Breaks in the phosphate deoxyribose backbone arise as a consequence of high energy radiation or during DNA metabolism (replication, decatenation). Spontaneous DNA damage occurs on the order of 104–105 events per cell per day (Lindahl, 1993; De Bont and van Larebeke, 2004).
 
+**Table 1.**
+ Estimated frequencies of DNA lesions caused by endogenous and common environmental sources of DNA damage.Adapted from Friedberg, 2006; Lindahl, 1993; Sander et al., 2005; Sears and Turchi, 2012; Mouret et al., 2006.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="10">Endogenous DNA adducts</td>
+    </tr>
+    <tr>
+      <td>DSB</td>
+      <td>Cytosine deamination</td>
+      <td>Cyclopurine adducts</td>
+      <td>Depyrimidination</td>
+      <td>8-oxoG</td>
+      <td>Malondialdehyde adducts</td>
+      <td>Alkylation adducts</td>
+      <td>Depurination</td>
+      <td>SSB</td>
+      <td>DNA lesion</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td>102</td>
+      <td>102</td>
+      <td>102</td>
+      <td>103</td>
+      <td>103</td>
+      <td>103</td>
+      <td>104</td>
+      <td>104</td>
+      <td>Frequency per cell per day</td>
+    </tr>
+    <tr>
+      <td colspan="8">DNA adducts caused by environmental exposures</td>
+    </tr>
+    <tr>
+      <td>Sunlight</td>
+      <td colspan="3">Background radiation</td>
+      <td colspan="2">Ionizing radiation therapy</td>
+      <td>Oxaliplatin cancer therapy</td>
+      <td>Genotoxin</td>
+    </tr>
+    <tr>
+      <td>Photodimers</td>
+      <td>Damaged bases</td>
+      <td>SSB</td>
+      <td>DSB</td>
+      <td>Damaged bases</td>
+      <td>SSB</td>
+      <td>Intra- and interstrand crosslinks</td>
+      <td>Lesion</td>
+    </tr>
+    <tr>
+      <td>102 in skin cells only</td>
+      <td>10</td>
+      <td>2–5</td>
+      <td>0.25</td>
+      <td>103</td>
+      <td>103</td>
+      <td>103</td>
+      <td>Frequency per cell per day</td>
+    </tr>
+  </tbody>
+</table>
+
 DNA is also susceptible to damage by environmental factors such as ultraviolet (UV), ionizing radiation, and alkylating agents used to treat proliferative disorders like cancer (Table 1). Notably, even when exogenous genotoxin exposure is instigated with the purpose of driving cell death (e.g., in cancer therapy) adduct burdens are well below the incidence of endogenous damage (Jackson and Loeb, 2001). Fortunately, all organisms have robust mechanisms to sense all types of DNA damage, delay genome replication (if needed), signal for repair, and correct or tolerate the large number of genomic insults that occur on a daily basis (Hoeijmakers, 2009). DNA damage that is not repaired in a timely manner or is too egregious to be repaired induces signaling events that lead to one of many cell fates, one of which, senescence, plays a causal role in aging.
 
 ## Conceptually, could DNA damage drive aging?
@@ -54,6 +120,122 @@ Cellular senescence plays a critical role in preventing tumorigenesis, tissue re
 ## Accelerated aging in genome instability syndromes
 
 The mammalian genome encodes over 150 proteins directly responsible for safeguarding its integrity (Friedberg, 2006; Wood et al., 2005). These gene products constantly monitor the quality and repair the nuclear genome (Sancar et al., 2004). Distinct DNA repair pathways cope with different types of DNA lesions: BER for small covalent additions to DNA bases, NER for bulky adducts that disrupt the DNA helix, interstrand crosslink (ICL) repair to remove covalent links between the two strands of DNA, NHEJ to ligate broken DNA ends, mismatch repair to correct replication errors, homologous recombination to manage replication stress and DSBs not readily ligated. Inherited defects in each of the DNA repair pathways are linked to distinct genome instability syndromes (Table 2). Broadly, the syndromes are characterized by developmental defects, increased incidence of cancer and features of accelerated aging (Cleaver, 1968; Menck and Munford, 2014; Wood, 2018). Progeroid syndromes are diseases of dramatically accelerated aging and include Hutchinson-Gilford, Werner, and Cockayne syndromes (CS), as well as XFE progeroid syndrome, all of which are linked to genome instability (de Magalhães, 2005; Martin and Oshima, 2000; Burla et al., 2018). The syndromes provide an elegant yet tragic glimpse into the impact that DNA damage can have on human health. Most syndromes were described well before DNA had been discovered or mechanisms of repair described.
+
+**Table 2.**
+ Human genome instability diseases with age-associated symptoms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease</th>
+      <th>Affected genome stability pathway</th>
+      <th>Mutated genes</th>
+      <th>Aging-associated symptoms</th>
+      <th>Ref(s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hutchinson-Guilford progeria syndrome</td>
+      <td>Chromatin organization</td>
+      <td>LMNA</td>
+      <td>Alopecia, atherosclerosis, arthritis, cardiovascular disease, lipodystrophy, osteoporosis, skin aging and atrophy</td>
+      <td>Kudlow et al., 2007; Liu et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Nestor-Guillermo progeria syndrome</td>
+      <td>Chromatin organization</td>
+      <td>BANF1</td>
+      <td>Alopecia, atherosclerosis, arthritis, cardiovascular disease, lipodystrophy, osteoporosis, and pulmonary hypertension</td>
+      <td>Cabanillas et al., 2011; Loi et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Werner syndrome</td>
+      <td>Telomeric maintenance and replication stress</td>
+      <td>WRN</td>
+      <td>Alopecia, atherosclerosis, arthritis, cardiovascular disease, cataracts, diabetes, sarcopenia, and increased risk of cancer</td>
+      <td>Kudlow et al., 2007; Sugimoto, 2014</td>
+    </tr>
+    <tr>
+      <td>Rothmund-Thomson syndrome</td>
+      <td>DNA replication initiation</td>
+      <td>RECQL4</td>
+      <td>Alopecia, cataracts, osteoporosis, skin atrophy, and increased risk of cancer</td>
+      <td>Croteau et al., 2012; Ghosh et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Bloom syndrome</td>
+      <td>DNA replication and recombination</td>
+      <td>BLM</td>
+      <td>Diabetes, pulmonary disease, increased risk of cancer</td>
+      <td>Hanada and Hickson, 2007; de Renty and Ellis, 2017</td>
+    </tr>
+    <tr>
+      <td>XFE progeroid syndrome</td>
+      <td>NER, ICL, and DSB repair</td>
+      <td>ERCC4</td>
+      <td>Anemia, cardiovascular disease, kidney disease, neurodegeneration, osteoporosis, sarcopenia, sensory loss, and skin atrophy</td>
+      <td>Niedernhofer et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Xeroderma pigmentosum</td>
+      <td>NER and translesion DNA synthesis</td>
+      <td>XPA-G, XPV</td>
+      <td>Premature skin photoaging, neurodegeneration, and increased incidence of skin cancer</td>
+      <td>Lehmann et al., 2011; Kraemer and DiGiovanna, 2015</td>
+    </tr>
+    <tr>
+      <td>Cockayne syndrome</td>
+      <td>Transcription-coupled NER</td>
+      <td>CSA, CSB, XPB, XPD, XPG</td>
+      <td>Ataxia, cataracts, muscle atrophy, and neurodegeneration</td>
+      <td>Nance and Berry, 1992; Wilson et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Trichothiodystrophy</td>
+      <td>Transcription-coupled NER</td>
+      <td>TTDA, TTDN1, XPB, XPD</td>
+      <td>Premature bone marrow exhaustion and increased risk of cancer</td>
+      <td>Faghri et al., 2008; de Boer et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Fanconi anemia</td>
+      <td>ICL repair</td>
+      <td>FANCA-FANCW</td>
+      <td>Premature bone marrow exhaustion and increased risk of cancer</td>
+      <td>Ceccaldi et al., 2016; Nalepa and Clapp, 2018</td>
+    </tr>
+    <tr>
+      <td>Ataxia telangiectasia</td>
+      <td>DNA damage response</td>
+      <td>ATM</td>
+      <td>Premature bone marrow exhaustion, diabetes, and neurodegeneration</td>
+      <td>Rothblum-Oviatt et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Mandibular hypoplasia, deafness, progeroid features, lipodystrophy syndrome</td>
+      <td>Post-replication repair and translesion DNA synthesis</td>
+      <td>POLD1</td>
+      <td>Diabetes, lipodystrophy, osteoporosis, steatosis, sensory loss</td>
+      <td>Weedon et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Ruijs-Aalfs syndrome</td>
+      <td>Protein-DNA crosslink repair</td>
+      <td>SPRTN</td>
+      <td>Alopecia, atherosclerosis, cataracts, diabetes, premature graying of hair, osteoporosis, sarcopenia, and increased risk of cancer</td>
+      <td>Lessel et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Alpers-Huttenlocher syndrome</td>
+      <td>Mitochondrial DNA replication and repair</td>
+      <td>POLG1</td>
+      <td>Progressive neurodegeneration and liver disease</td>
+      <td>Nguyen et al., 2006</td>
+    </tr>
+  </tbody>
+</table>
 
 Children with Hutchinson-Gilford progeroid syndrome (HGPS) develop many features of premature aging in the first decade of life including alopecia, atherosclerosis, osteolysis, and lipodystrophy among others (Hennekam, 2006). The genetic cause for HGPS are mutations in the LMNA gene, which encodes critical components of the nuclear lamina (Eriksson et al., 2003; De Sandre-Giovannoli et al., 2003) causing pernicious alterations in nuclear architecture resulting in genome instability (Kudlow et al., 2007). Nestor-Guillermo progeroid syndrome, caused by mutations in the nuclear lamina gene BANF1, has characteristics of accelerated aging due to impaired chromatin organization (Cabanillas et al., 2011; Loi et al., 2016).
 

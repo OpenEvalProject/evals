@@ -12,18 +12,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Graduate Program in Neuroscience, Western University London Canada
-2. https://ror.org/02grkyz14 Department of Mathematics, Western University London Canada
-3. https://ror.org/02grkyz14 Brain and Mind Institute, Western University London Canada
-4. https://ror.org/02grkyz14 Department of Anatomy and Cell Biology, Schulich School of Medicine and Dentistry, Western University London Canada
-5. https://ror.org/02grkyz14 Robarts Research Institute, Western University London Canada
-6. https://ror.org/02grkyz14 Department of Physiology and Pharmacology, Schulich School of Medicine and Dentistry, Western University London Canada
+1. Graduate Program in Neuroscience, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. Department of Mathematics, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+3. Brain and Mind Institute, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+4. Department of Anatomy and Cell Biology, Schulich School of Medicine and Dentistry, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+5. Robarts Research Institute, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+6. Department of Physiology and Pharmacology, Schulich School of Medicine and Dentistry, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
 ## Abstract
 
-The stress response necessitates an immediate boost in vital physiological functions from their homeostatic operation to an elevated emergency response. However, the neural mechanisms underlying this state-dependent change remain largely unknown. Using a combination of in vivo and ex vivo electrophysiology with computational modeling, we report that corticotropin releasing hormone (CRH) neurons in the paraventricular nucleus of the hypothalamus (PVN), the effector neurons of hormonal stress response, rapidly transition between distinct activity states through recurrent inhibition. Specifically, in vivo optrode recording shows that under non-stress conditions, CRH PVN neurons often fire with rhythmic brief bursts (RB), which, somewhat counterintuitively, constrains firing rate due to long (~2 s) interburst intervals. Stressful stimuli rapidly switch RB to continuous single spiking (SS), permitting a large increase in firing rate. A spiking network model shows that recurrent inhibition can control this activity-state switch, and more broadly the gain of spiking responses to excitatory inputs. In biological CRH PVN neurons ex vivo, the injection of whole-cell currents derived from our computational model recreates the in vivo-like switch between RB and SS, providing direct evidence that physiologically relevant network inputs enable state-dependent computation in single neurons. Together, we present a novel mechanism for state-dependent activity dynamics in CRH PVN neurons.
+The stress response necessitates an immediate boost in vital physiological functions from their homeostatic operation to an elevated emergency response. However, the neural mechanisms underlying this state-dependent change remain largely unknown. Using a combination of in vivo and ex vivo electrophysiology with computational modeling, we report that corticotropin releasing hormone (CRH) neurons in the paraventricular nucleus of the hypothalamus (PVN), the effector neurons of hormonal stress response, rapidly transition between distinct activity states through recurrent inhibition. Specifically, in vivo optrode recording shows that under non-stress conditions, CRHPVN neurons often fire with rhythmic brief bursts (RB), which, somewhat counterintuitively, constrains firing rate due to long (~2 s) interburst intervals. Stressful stimuli rapidly switch RB to continuous single spiking (SS), permitting a large increase in firing rate. A spiking network model shows that recurrent inhibition can control this activity-state switch, and more broadly the gain of spiking responses to excitatory inputs. In biological CRHPVN neurons ex vivo, the injection of whole-cell currents derived from our computational model recreates the in vivo-like switch between RB and SS, providing direct evidence that physiologically relevant network inputs enable state-dependent computation in single neurons. Together, we present a novel mechanism for state-dependent activity dynamics in CRHPVN neurons.
 
 ## Introduction
 
@@ -37,35 +37,168 @@ Here we have implemented in vivo single-unit extracellular recording of optogene
 
 ## Results
 
-## Identifying CRH neurons in vivo
+### Identifying CRH neurons in vivo
 
 To examine firing patterns of individual CRHPVN neurons in vivo, we used optrode recording (Lima et al., 2009). Briefly, we first ‘tagged’ CRH neurons by expressing an excitatory opsin channelrhodopsin2 (ChR2) using adeno-associated virus (AAV) carrying a cre-dependent promoter construct injected into the PVN of CRH-Ires-Cre mice crossed with Ai14 td-tomato reporter line (Wamsteeker Cusulin et al., 2013). This resulted in ChR2-EYFP expression in CRHPVN neurons that express td-tomato (Figure 1A), similar to recent studies using the same approach (Bittar et al., 2019; Füzesi et al., 2016; Kim et al., 2019a; Wamsteeker Cusulin et al., 2013; Yuan et al., 2019). Important for the desired PVN neuron identification, these ChR2-expressing neurons could now be detected on the basis of their light-induced spike firing. We isolated 36 single units in the PVN area from 10 adult male mice under urethane anaesthesia. Among these preisolated single units, 18 neurons (from 10 mice) were ‘light-responsive’; i.e., they fired action potentials in response to pulses of blue light (5 ms, λ=465 nm) with short latency (7.2 ± 2.6 ms, n=18; Figure 1B and C). This responsiveness to light had a binary effect (Figure 1D): the light-responsive neurons reliably increased their probability of firing (7.1 ± 6.3% preonset to 66.3 ± 21.3% postonset, n=18), whereas the light-non-responsive neurons did not (3.3 ± 3.1% preonset to 2.0 ± 2.8% postonset, n=18). Furthermore, in response to longer light pulses (50 ms), the light-responsive neurons fired a train of action potential with frequency adaptation (Figure 1E and F). Consequently, these light-responsive neurons were defined as CRHPVN neurons.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig1-v2.jpg)
 
-**Figure 1.:** PVN neuron single-unit.(A) Electrode tract (purple), TdTomato-expressing CRHPVN neurons (red) and ChR2-EYFP (green) expression. (B) An example for an isolated single-unit (blue) that also responded to light (cyan). (C) Raster plot (top) and peristimulus time histogram (PSTH, bottom) in response to 5 ms blue light from a representative unit. (D) A summary graph for the probability of firing before (−20–0 ms) and after blue light illumination (0–20 ms). Light-responsive units in black (n=18) and non-responsive units in gray (n=18). (E) Raster plot (top) and PSTH (bottom) for a representative single-unit responding to 50 ms blue light. (F) Summary of firing rate time course following 5 ms (tick) and 50 ms (open circle) blue light. n=18. SD is represented as error bars.Figure 1—source data 1.
+**Figure 1.:** (A) Electrode tract (purple), TdTomato-expressing CRHPVN neurons (red) and ChR2-EYFP (green) expression. (B) An example for an isolated single-unit (blue) that also responded to light (cyan). (C) Raster plot (top) and peristimulus time histogram (PSTH, bottom) in response to 5 ms blue light from a representative unit. (D) A summary graph for the probability of firing before (−20–0 ms) and after blue light illumination (0–20 ms). Light-responsive units in black (n=18) and non-responsive units in gray (n=18). (E) Raster plot (top) and PSTH (bottom) for a representative single-unit responding to 50 ms blue light. (F) Summary of firing rate time course following 5 ms (tick) and 50 ms (open circle) blue light. n=18. SD is represented as error bars.
 
-## CRHPVN neurons can fire in two distinct modes
+### CRHPVN neurons can fire in two distinct modes
 
 We found that, under the baseline (non-stress) conditions, many CRHPVN neurons occasionally fired in a distinct brief train of high-frequency (>100 Hz) bursts, in addition to spikes with variable interspike intervals (ISI, Figure 2A). Figure 2B shows an ISI histogram of a representative neuron that demonstrated a bimodal distribution with a sharp peak around 2–10 ms (burst) and another wider peak around 100 ms (SS). Burst trains typically showed the shortest ISI at the start and followed by a few spikes with slightly increased ISIs. Thus, to quantify these brief burst firing, we set a criterion for burst detection with ISI ≤ 6 ms for the start of a burst, and subsequent spikes were considered part of the burst train as long as ISI remained below 20 ms. Using this burst-detection criterion, we found that the majority of CRHPVN neurons fired a brief burst at least once during the baseline (16 out of 18), but the burst rate was variable among CRHPVN neurons (Figure 2C). Figure 2—figure supplement 1 shows ISI histograms for all units. For the analysis of burst properties below, we used neurons that showed at least 60 bursts during 10 min baseline recording (>0.1 bursts/s, purple circles in Figure 2C, n=10). Among these bursting CRHPVN neurons, each individual burst episode was brief, on average 3.1 ± 0.5 spikes, ranging between 2 and 6 spikes (Figure 2D). These brief bursts occurred at slow rhythms (rhythmic brief burst, RB), intervened by long, mostly silent, interburst intervals (IBI, 1.8 ± 0.6 s, n=10, Figure 2E).
 
-## CRHPVN neurons are constrained to low activity during rhythmic bursting
+![Figure 2.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig2-v2.jpg)
+
+**Figure 2.:** (A) Two distinct spike patterns in a representative single-unit (top: single spikes; bottom: bursts indicated by arrow). (B) Interspike interval (ISI) distribution for the representative single-unit shown in A. (C) A summary plot for burst rates among CRHPVN neurons during non-stress baseline recordings. The criterion for burst firing neurons (purple) was set as 0.1 burst/s. A horizontal bar indicates the average. (D) A summary graph for burst length distribution (n=10). (E) Summary interburst interval (IBI) distribution (n=10). Standard deviation is represented in the graphs as the error bars (D) and dotted line (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Burst rate (BR) is indicated on the top-right corner of individual histograms. Unit 18 and 30 did not fire bursts and are shown in gray.
+
+### CRHPVN neurons are constrained to low activity during rhythmic bursting
 
 In many neurons, burst firing is postulated to carry behaviorally relevant information, representing specific network states different from that represented by SS of variable frequencies (Krahe and Gabbiani, 2004; Steriade et al., 1993). The classic role of CRHPVN neurons is to respond to stress stimuli with an increase in firing activity, driving the neuroendocrine release of CRH (Ulrich-Lai and Herman, 2009). Thus, we examined potential roles of RB in CRHPVN neurons’ response to stress. To this end, we used electric stimulation of the sciatic nerve to model noxious sensory stimuli, as this approach has been shown to effectively elicit time-locked firing responses in median eminence-projecting parvocellular PVN neurons (Day et al., 1985; Hamamura et al., 1986; Kannan et al., 1987; Saphier, 1989; Saphier and Feldman, 1985; Saphier and Feldman, 1991) as well as to increase the circulating ACTH levels, indicative of HPA axis activation (Feldman et al., 1981), in anesthetized rats. For this experiment, we recorded 13 CRHPVN neurons (among 18 neurons recorded for the baseline firing analysis described above) that remained stable until the end of nerve stimulation session (see Experimental Design in Materials & Methods). Consistent with the earlier ‘blinded’ recordings (Day et al., 1985; Hamamura et al., 1986; Kannan et al., 1987; Saphier, 1989; Saphier and Feldman, 1985; Saphier and Feldman, 1991), sciatic nerve stimulation (1.6 mA) increased the firing rate (time averaged spike number) of CRHPVN neurons (BL 3.063 ± 1.646 Hz vs NS 4.900 ± 1.962 Hz, paired t-test, p=0.0108, n=13; Figure 3A, B and G). Somewhat counter-intuitively, however, this activity increase was paralleled by a striking loss of RB (BL 0.1406 ± 0.1375 Hz vs NS 0.0474 ± 0.0410 Hz, paired t-test, p=0.0167, n=13, Figure 3C, E and H), and the firing rate increased due to SS (BL 2.702 ± 1.428 Hz vs NS 4.782 ± 1.987 Hz, paired t-test, p=0.0025, n=13; Figure 3D, F). In a representative case, we found that the firing pattern change lasted longer with higher intensity stimulation. Figure 3—figure supplement 1 shows that, with the highest intensity stimulation (2 mA), the firing activity change did not completely return to the baseline within the trial duration of 15 s, resulting in continuous decrease of RB and increase of SS during the stimulation period. This finding suggests that RB paradoxically informs a certain ‘low activity state’ of CRHPVN neurons, whereas the ‘high activity state’, induced by stress, is due to SS at high rates.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig3-v2.jpg)
+
+**Figure 3.:** (A) Peristimulus time histogram (PSTH) for a representative single-unit responding to sciatic nerve stimulation (1.5 mA, 0.5 ms × 5 pulses at 20 Hz, red line). (B–D) Raster plots for the unit shown in A for all spikes (B), bursts (C) and single spikes (SS) (D). (E, F) Summary time course for bursts (E) and SS (F). n=13. (G–I) Summary changes in all spikes (G, paired t-test, n=13, p=0.0108), bursts (H, paired t-test, n=13, p=0.0167) and SS (I, paired t-test, n=13, p=0.0025) before (baseline, BL) and after sciatic nerve stimulation (NS). (J, K) Time course of firing rate (J) and interspike interval (ISI) (K) for a representative single-unit during baseline recording. Gray lines are the running average (30 s) of firing rate. (L) The relationship between burst rate and total firing rate for the representative single-unit shown in J and K. For each time bin (10 s), total spike rate was plotted against burst rate. (M) Pooled data for all units (n=18).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Raster plots of a representative single unit responding to different intensities of sciatic nerve stimulations. (A–C) 0.5 mA, (D–F) 1.0 mA, (G–I) 1.5 mA, and (J–L) 2.0 mA. Raster plots for all spikes (A, D, G, J), burst firing (B, E, H, K) and single spikes (C, F, I, L). Note that the highest intensity stimulation (2.0 mA) caused persistent decrease of burst firing and increase of single spiking across trial durations compared to lower intensity (0.5–1.5 mA) stimulations.
+
 Under baseline conditions, CRHPVN neurons showed spontaneous low-level firing activities; an observation in line with recent in vivo two-photon Ca2+ imaging of CRH neurons in zebra fish larvae (Vom Berg-Maurer et al., 2016). We also found that some of CRHPVN neurons show time-dependent fluctuations in their firing rate with spontaneous and transient increase (Figure 3J). Thus, we next asked whether spontaneous ‘high activity state’ is also due to an increase in SS paralleled by a loss of RB. Figure 3J plots the running average firing rate (10 s bins) of one representative neuron showing spontaneous emergence of high activity states. We next overlaid the time course of individual spike’s ISI to visualize the temporal relationship between the overall activity states (i.e. firing rate) and specific firing patterns (i.e. RB vs SS). Similar to the stress-induced activity increase, a loss of RB temporally correlated with the emergence of the high activity state (Figure 3K). On the other hand, when CRHPVN neurons fired mainly with RB, their overall firing rate remained at relatively low levels. Intuitively, this is because of the brevity of burst episodes with mostly silent IBIs (Figure 2A and E), precluding the high rate of SS. Figure 3L and M plot the relationship between burst and total spike rate for every 10 s time bin for this unit, as well as for all units pooled (n=18), respectively. This analysis revealed that high levels of total spike rate only emerged when burst rate was at or near zero. Thus, our data suggest that a loss of RB permits CRHPVN neurons to increase firing rate with high rate of SS. In other words, the network activity state that drives RB constrains the activity of CRHPVN neurons at low levels.
 
-## Prolonged silent periods precede burst firing
+### Prolonged silent periods precede burst firing
 
 Given that the RB firing reflects a specific, low-activity state of CRHPVN neurons, a question emerged: How do CRHPVN neurons fire in these distinct, short burst trains? To address this, we examined the temporal properties of the burst spike trains by adopting the analysis used by Harris et al., 2001. Figure 4A illustrates the relationship between ISIs preceding and proceeding individual spikes of the same representative unit shown in Figure 2A and B. A cluster of spikes in the lower-left correspond with the spikes in the middle of bursts (i.e. both preceding and proceeding ISI are short). On the other hand, the lower-right cluster represents the initial spike of bursts (long preceding ISI and short proceeding ISI). Notably, the lack of spikes between these two clusters along the X-axis indicate that bursts preferentially start after a long silence period (i.e. preceding ISI >500 ms). By contrast, spikes with short preceding ISI on the left spread along the Y-axis, indicating that the end of bursts are followed by proceeding ISI of variable durations (i.e. not followed by an abrupt start of postburst silence). To express these features more explicitly, we plotted the probability of burst-range firing (i.e. proceeding ISI <6 ms) against the preceding ISI for individual units, and then averaged for all bursting units (Figure 4B). The graph shows that a burst train seldom initiates without a preceding silent period (i.e. ISI) of at least 200 ms, and that the likelihood of burst firing substantially increases when preceded by a silence period longer than 500 ms. In Figure 4C, which plots the probability of burst-range firing (i.e. preceding ISI <20ms) against proceeding ISI, there was a higher probability of bursting with longer proceeding silences, but the relationship was less prominent than the ‘preceding ISI analysis’: this likely reflects that burst trains end with gradual prolongation of ISI (i.e. frequency adaptation). We also found that burst firing, regardless of its length, was accompanied by longer preceding silences than SS (0.33 ± 0.16 s, 0.80 ± 0.31 s, 0.89 ± 0.32 s, 1.04 ± 0.43 s, for burst lengths of single, 2, 3, and 4+, respectively; One-way ANOVA, p<0.0001; Tukey’s multiple comparisons test, p<0.0001, p=0.0001, p=0.0004 for single vs 2, 3, 4+, respectively. Figure 4D). On the other hand, we did not observe these predictive trends in the ‘silence’ following SS or bursts. Furthermore, the bursts tended to have longer proceeding silences (0.59 ± 0.36 s, 0.57 ± 0.33 s, 0.51 ± 0.40 s, for burst lengths of 2, 3, and 4+, respectively) than SS (0.37 ± 0.18 s; One-way ANOVA, p=0.0131; Tukey’s multiple comparisons test, p=0.0573, P=0.0437, p=0.2885 for single vs 2, 3, 4+, respectively. Figure 4E), which resulted in significant difference only between SS and bursts with three spikes. Again, these data reflect the fact that bursts end with gradual prolongation of ISI and are not followed by an abrupt start of a silent period. These characteristics of burst generation suggest that a prolonged silent period is followed by a brief high-frequency spike trains, which in turn are followed by a prolonged silent period, leading to RB.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig4-v2.jpg)
 
-**Figure 4.:** (A) Preceding and proceeding interspike interval (ISI) plotted for individual spikes recorded from a representative single-unit. Blue rectangle indicates spikes with proceeding ISI <6 ms. Red rectangle indicates spikes with preceding ISI <20 ms. Left. An example of a burst episode. (B) Summary of probability of burst firing relative to preceding silence (ISI). (C) Summary of probability of burst firing relative to proceeding silence (ISI). (D) Mean preceding silence as a function of event length. One-way ANOVA, p<0.0001; Tukey’s multiple comparisons test, single vs 2 (p<0.0001), 3 (p=0.0001), ≥ 4 (p=0.0004) (E) Mean proceeding silence as a function of event length. One-way ANOVA, p=0.0131; Tukey’s multiple comparisons test, single vs 2 (p=0.0573), 3 (p=0.0437), ≥ 4 (p=0.2885) SD is represented in the graphs as dotted lines (B, C) and the error bars (D, E).Figure 4—source data 1.
+**Figure 4.:** (A) Preceding and proceeding interspike interval (ISI) plotted for individual spikes recorded from a representative single-unit. Blue rectangle indicates spikes with proceeding ISI <6 ms. Red rectangle indicates spikes with preceding ISI <20 ms. Left. An example of a burst episode. (B) Summary of probability of burst firing relative to preceding silence (ISI). (C) Summary of probability of burst firing relative to proceeding silence (ISI). (D) Mean preceding silence as a function of event length. One-way ANOVA, p<0.0001; Tukey’s multiple comparisons test, single vs 2 (p<0.0001), 3 (p=0.0001), ≥ 4 (p=0.0004) (E) Mean proceeding silence as a function of event length. One-way ANOVA, p=0.0131; Tukey’s multiple comparisons test, single vs 2 (p=0.0573), 3 (p=0.0437), ≥ 4 (p=0.2885) SD is represented in the graphs as dotted lines (B, C) and the error bars (D, E).
 
-## Recurrent inhibitory circuits underlie burst firing
+### Recurrent inhibitory circuits underlie burst firing
 
 What are the mechanisms generating RB in CRHPVN neurons? Burst firing is known to rely on the intricate interactions between intrinsic neuronal properties, synaptic inputs and network characteristics (Krahe and Gabbiani, 2004). Indeed, when studied ex vivo in slice recordings, in which network inputs are substantially lost, CRHPVN neurons do not show overt bursting properties (Bittar et al., 2019; Jiang et al., 2019; Khan et al., 2011; Luther et al., 2002; Matovic et al., 2020; Sarkar et al., 2011; Wamsteeker Cusulin et al., 2013). In the present study, we confirmed this lack of ex vivo burst firing phenotype using whole-cell patch-clamp recordings in acute slices. As shown in Figure 5A (red traces), in response to depolarizing (monotonic) current steps, CRHPVN neurons fired with a gradual increase in frequency with a moderate adaptation and they did not generate in vivo-like high-frequency bursts. When considering more complex network inputs that dynamically interact with the intrinsic properties of CRHPVN neurons and enable RB firing, our in vivo burst firing pattern predicts the following: (1) the intrinsic properties of CRHPVN neurons favor high-frequency burst firing after a prolonged silence period, and (2) network inputs that cause the prolonged silence contribute to the slow ‘rhythms’' of bursting. Taken together, these features are indicative of an inhibitory-driven recurrent network burst mechanism (McCormick and Feeser, 1990; Sherman, 2001; Steriade et al., 1993). Supporting this idea, early in vivo recordings of PVN neurons predicted the existence of recurrent inhibitory circuits based on inhibition following antidromically elicited action potentials (Saphier and Feldman, 1985). More recent studies identified a group of local GABAergic interneurons that form recurrent inhibitory circuits (Jiang et al., 2018; Jiang et al., 2019; Ramot et al., 2017). Thus, we hypothesized that recurrent inhibitory circuits underlie the RB of CRHPVN neurons. To test this, we computationally studied the dynamics of single CRHPVN neurons within a network by using a spiking network of adaptive-exponential (AdEx) neuron models (Brette and Gerstner, 2005; Gerstner and Naud, 2009; Izhikevich, 2003; Markram et al., 2015). First, the single neuron AdEx models (Brette and Gerstner, 2005) were fit to slice patch-clamp recordings of CRHPVN neurons (Figure 5A and Table 1). We evaluated the performance of the model by quantifying the mean squared difference in the subthreshold traces (Figure 5A) and the frequency-current (F-I) curve (Figure 5B) between the model and experimental data (Brette and Gerstner, 2005). Our simulations show that the single neuron models can capture a rapid spike adaptation that follows the first few spikes, timing of repetitive spike firing and the F-I relationship for a series of square pulse depolarizing current injections (Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig5-v2.jpg)
+
+**Figure 5.:** (A) CRH model neuron in silico (black) fitted to current-clamp recordings of CRHPVN neurons ex vivo (red). (B) F-I curves for in silico (black) and ex vivo (red) neurons. (C) Network model diagram. (D) Time course of interspike interval (ISI) for a representative model CRH neuron. Gray line is the running average firing rate. (E) Summary burst length distribution for model simulations (n=283 for burst rate >0.1 Hz). (F) Summary IBI distribution for model simulations (n=283 for burst rate >0.1 Hz). (G) An example ISI time course before and after a drop of GABA release (Pr 0.8 → 0.1) from 200 s. Gray line is the running average firing rate. (H–J) Summary changes in all spikes (H, paired t-test, p<0.0001, n=500), bursts (I, paired t-test, p<0.0001, n=500) and single spikes (SS) (J, paired t-test, p<0.0001, n=500) before (BL) and after the GABA release drop. (K) An example ISI time course before and after a drop of GABA release (Pr 0.8 → 0.1) combined with an increase in spike-triggered adaptation current from 200 s. Gray line is the running average firing rate. (L–N) Summary changes in all spikes (L, paired t-test, p<0.0001, n=500), bursts (M, paired t-test, p<0.0001, n=500) and SS (N, paired t-test, p<0.0001, n=500) before (BL) and after combined removal of GABA release and increased spike-triggered adaptation current. (O) An example ISI time course before and after EPSP frequency increase (30 Hz → 60 Hz) from 200 s. Gray line is the running average firing rate. (P) An example ISI time course before and after the combined change in GABA release and spike-triggered adaptation current, followed by an increase in EPSP frequency (30 Hz → 60 Hz) from 400 s. (Q) Summary graph for changes in firing rate before (30 Hz) and after EPSP frequency increase (60 Hz) with (white) and without recurrent inhibition (pink). Two-way ANOVA (EPSP × Recurrent inhibition interaction, p<0.0001; Tukey’s multiple comparisons test, BL-30 Hz 2.942 ± 2.220 Hz vs BL-60 Hz 3.895 ± 3.252 Hz, p<0.0001; ↓GABA+↑Ad. Curr.-30 Hz 7.548 ± 2.068 Hz vs ↓GABA+↑Ad. Curr.-60 Hz 10.630 ± 3.387 Hz, p<0.0001). SD is represented in the graphs as the error bars.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overlay of simulated membrane voltage (Vm; red) of representative traces of burst firing from model neurons (nneurons = 5; nbursts = 10). Note that spikes are truncated to 0 mV in this example. (B) The incoming excitatory conductance (Ge; green). (C) The incoming inhibitory conductance (Gi; blue). (D) The spike-triggered adaptation (w; pink). (E) The representative current (I total; black) that each neuron receives. The representative current is the proportional sum of the above network and intrinsic inputs (Ge, Gi, and w). Representative traces were selected based on an initial interspike interval lower than 6 ms and a preceding interburst interval (IBI) of 200–220 ms. Traces are aligned to the second burst.
+
+**Table 1.**
+ Parameters for spiking network model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron parameters</th>
+      <th>Mean</th>
+      <th>S</th>
+      <th>Synapse parameters</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of neurons</td>
+      <td>1000</td>
+      <td></td>
+      <td>Ee (mV)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Number of CRH neurons</td>
+      <td>500</td>
+      <td></td>
+      <td>Ei (mV)</td>
+      <td>–80</td>
+    </tr>
+    <tr>
+      <td>Number of GABA neurons</td>
+      <td>500</td>
+      <td></td>
+      <td>τe (ms)</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>Capacitance (pF)</td>
+      <td>22.0</td>
+      <td>2.6</td>
+      <td>τCRH (ms)</td>
+      <td>232.6</td>
+    </tr>
+    <tr>
+      <td>τm (ms)</td>
+      <td>26.0</td>
+      <td>2.5</td>
+      <td>τi (ms)</td>
+      <td>20.4</td>
+    </tr>
+    <tr>
+      <td>gL (nS)</td>
+      <td>0.9</td>
+      <td>0.19</td>
+      <td>we (nS)</td>
+      <td>3.9</td>
+    </tr>
+    <tr>
+      <td>∆T (mV)</td>
+      <td>12.1</td>
+      <td>2.0</td>
+      <td>wCRH (nS)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>EL (mV)</td>
+      <td>–67.9</td>
+      <td>2.9</td>
+      <td>wi (nS)</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>VT (mV)</td>
+      <td>–47.2</td>
+      <td>6.5</td>
+      <td>τbr (s)</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>VR (mV)</td>
+      <td>–58.8</td>
+      <td>2.5</td>
+      <td>τp (s)</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>τw (ms)</td>
+      <td>98.2</td>
+      <td>54.3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a (nS)</td>
+      <td>0.082</td>
+      <td>0.13</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>b (pA)</td>
+      <td>17.9</td>
+      <td>9.8</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Next, the fitted single-neuron models were integrated into a spiking network model to test whether the CRH-GABA neuron network generates rhythmic bursting. We have constructed a network model of the PVN that contains 500 CRH neurons and 500 GABA neurons (Figure 5C). The excitatory CRH neurons send a sparse projection to the inhibitory GABA population (2% connection probability), and the GABA population projects back to the CRH neurons with a similar, sparse projection (2%) (Destexhe, 2009). CRH neurons also receive noisy random synaptic inputs (30 Hz fast EPSPs), approximated by an instantaneous rise and exponential decay (Rothman and Silver, 2014). GABAergic neurons, in turn, receive excitatory CRHergic inputs that have slow rise and decay time constant (~200 ms), modeled as single time constant alpha synapse (Destexhe et al., 1994), reflecting the slow CRHR1 mediated excitation (Jiang et al., 2018; Ramot et al., 2017). The putative network construction was then optimized to fit our in vivo observations. In brief, from a representative unit (shown in Figure 3K), temporal subsections were isolated as representative RB and SS firing patterns. Then, in the network model, several rounds of a genetic algorithm were used to optimize the synaptic network parameters; simulations were evaluated using the earth movers’ distance (EMD) between the log ISI distributions of the representative spike train and simulated spike trains (Materials and Methods). In this optimized network setting, we found that model CRH neurons generated RB (Figure 5D). In the model CRH neurons, the recurrent inhibitory inputs were critical for the long, mostly silent IBI, and the loss of inhibitory inputs (i.e. disinhibition) underlay the timing when excitatory inputs generated depolarization sufficient to trigger burst firing (Figure 5—figure supplement 1). In addition to the inhibitory and excitatory synaptic inputs, the spike-triggered adaptation current (Izhikevich, 2003) prevented the action potential firing of CRH neurons after the burst firing. However, its influence was less important. This was because its time constant (τw=98.2 ms, Table 1) was substantially shorter than the time constant of CRHergic excitation (τCRH = 232.6 ms, Table 1) and ensuing prolonged feedback inhibition. The model CRH neurons, which have heterogeneity in their intrinsic properties obtained in ex vivo recordings (Table 1), showed heterogeneity in their burst rates (0.1456 ± 0.1072 bursts/s, n=500). By further characterizing burst firing properties of these bursting model CRH neurons, we found that our network model recapitulated several in vivo features, including burst length and IBI (Figure 5E and F). Consistent with these features, RB in the model also constrained the overall firing rate at low levels (~2 Hz, Figure 5D gray line). These data show that CRHPVN neurons (which are not intrinsically bursting) fire in RB within a recurrent inhibitory network.
 
@@ -73,9 +206,9 @@ Next, to test the causal roles of recurrent inhibition in constraining firing ra
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76832/elife-76832-fig6-v2.jpg)
 
-**Figure 6.:** (A) Diagram of ‘network clamp’ experiment. (B–D) Time course of interspike interval (ISI) for a representative model CRH neurons (B), a biological CRHPVN neuron injected with network current (C) and overlay (D). (E) Correlation coefficient between the time series of model neuron spike train in silico, a biological CRHPVN neurons’ spike train ex vivo, and a shuffled spike train consisting of the model spike train with ISI’s shuffled (n=5). (F, G) Spike firing patterns in response to network current (F) and depolarizing current step (G) in a biological CRHPVN neuron. (H) ISI distribution of spikes generated by network current (red) and steps of current (purple). Note that spikes with ISI smaller than 30 ms were used for comparison. (I, J) Network currents of variable length (I) and corresponding membrane voltage changes in CRHPVN neurons (J). (K) Summary graph for the shortest ISI triggered by network currents of variable lengths. SD is represented in the graph as the error bars. (L) CRHPVN neuron’s firing response to network current with (blue) and without tetrodotoxin (TTX, 1 µM, red). (M) Firing of CRHPVN neuron (orange) and magnocellular neuron (brown) in response to an identical network current (black). (N) Summary of ISI triggered by network current in CRHPVN and magnocellular neurons. (O–Q) A representative ISI time course for the transition between rhythmic burst and single spiking in a model CRH neuron (O), a biological CRHPVN neuron injected with the network current of the model neuron shown in O, and overlay (Q).Figure 6—source data 1.
+**Figure 6.:** (A) Diagram of ‘network clamp’ experiment. (B–D) Time course of interspike interval (ISI) for a representative model CRH neurons (B), a biological CRHPVN neuron injected with network current (C) and overlay (D). (E) Correlation coefficient between the time series of model neuron spike train in silico, a biological CRHPVN neurons’ spike train ex vivo, and a shuffled spike train consisting of the model spike train with ISI’s shuffled (n=5). (F, G) Spike firing patterns in response to network current (F) and depolarizing current step (G) in a biological CRHPVN neuron. (H) ISI distribution of spikes generated by network current (red) and steps of current (purple). Note that spikes with ISI smaller than 30 ms were used for comparison. (I, J) Network currents of variable length (I) and corresponding membrane voltage changes in CRHPVN neurons (J). (K) Summary graph for the shortest ISI triggered by network currents of variable lengths. SD is represented in the graph as the error bars. (L) CRHPVN neuron’s firing response to network current with (blue) and without tetrodotoxin (TTX, 1 µM, red). (M) Firing of CRHPVN neuron (orange) and magnocellular neuron (brown) in response to an identical network current (black). (N) Summary of ISI triggered by network current in CRHPVN and magnocellular neurons. (O–Q) A representative ISI time course for the transition between rhythmic burst and single spiking in a model CRH neuron (O), a biological CRHPVN neuron injected with the network current of the model neuron shown in O, and overlay (Q).
 
-## Recurrent inhibition generates burst firing in single CRHPVN neurons
+### Recurrent inhibition generates burst firing in single CRHPVN neurons
 
 Our model simulation predicted that recurrent inhibition is sufficient and necessary for RB and constrains the firing rate of CRHPVN neurons. However, it remains unknown whether our single neuron model, while grounded in direct physiological measurements (Figure 5AB, Table 1), captures essential biophysical properties required for in vivo-like firing patterns. To directly test this, we went back to ex vivo slice patch clamp electrophysiology and asked if an injection of whole-cell (somatic) currents that mimic the recurrent network inputs of the spiking network model is sufficient to drive RB firing in biological CRHPVN neurons (Figure 6A). To this end, we first selected a model CRHPVN neuron that showed representative RB firing (Figure 6B), and then extracted the ‘network currents’ that this model neuron receives within the network model (see Materials and Methods). We then injected these ‘network currents’ into biological CRHPVN neurons in slices using current-clamp electrophysiology (Figure 6C). We found a remarkable similarity between the RB firing patterns of a model neuron and a biological CRHPVN neuron that received the ‘network currents’ (Figure 6D and E). Notably, in response to square pulse depolarization, biological CRHPVN neurons in acute slices fire in regular spiking patterns (Figure 6F and H) with the lowest ISI > 10 ms. The same neurons, however, readily generated burst range high-frequency firing (ISI < 6 ms) in response to complex network current injections derived from the network model (Figure 6G and H). A closer examination of the network inputs indicated that high-frequency excitatory inputs drove burst firing (Figure 6G). Importantly, however, the high-frequency inputs alone were not sufficient to elicit burst firing, and preceding network inputs were also important. Figure 6I–K show that truncated current injection only containing the high-frequency inputs failed to elicit burst firing, and that preceding noisy network inputs (which caused subthreshold membrane potential fluctuations) were necessary to drive the burst firing. These results corroborate with in vivo data that burst firing almost exclusively occurred after a prolonged (>200 ms) silent period (Figure 4C), indicating the importance of dynamic interactions between network synaptic inputs (that generate subthreshold membrane potential changes) and intrinsic properties. The burst firing triggered by network synaptic currents were abolished in the presence of voltage-gated Na+ channel blocker tetrodotoxin (TTX, 1 µM, Figure 6L), confirming that they were indeed action potentials. Moreover, we found that in magnocellular (non-CRH) neuroendocrine neurons of the PVN, which are known to have ex vivo intrinsic properties (Luther et al., 2002) and in vivo firing patterns (Leng and MacGregor, 2018) different from CRHPVN neurons, the identical network current failed to trigger the RB (Figure 6M and N). Lastly, Figure 6O shows an example of model neurons capturing in vivo-like alternations of RB and SS using a transient change in the recurrent inhibition and adaptation current (see in vivo data in Figure 4J). The injection of the network currents effectively elicited a similar transition of firing pattern in biological CRHPVN neurons in ex vivo (Figure 6P and Q).
 
@@ -83,7 +216,7 @@ Our model simulation predicted that recurrent inhibition is sufficient and neces
 
 Here, we report single-unit activities of identified CRHPVN neurons in vivo for the first time. We show that CRHPVN neurons, within intact circuits, can fire distinct brief, high-frequency (>100 Hz) bursts, a firing pattern that has not been observed in ex vivo slice electrophysiology (Bittar et al., 2019; Jiang et al., 2019; Khan et al., 2011; Luther et al., 2002; Matovic et al., 2020; Sarkar et al., 2011; Wamsteeker Cusulin et al., 2013) (but see Yuan et al., 2019 for slower [<100 Hz] bursts). Guided by the in vivo firing patterns, we have developed a computational model and showed that the RB firing mode reflects critical roles of recurrent inhibition in constraining the overall firing rate of CRH neurons. More generally, the recurrent inhibition controls the gain of CRH neurons’ response to excitatory inputs. In biological CRHPVN neurons ex vivo, the injection of whole-cell currents derived from our network model effectively triggered the in vivo-like RB and recapitulated the transition from RB to SS, thus providing direct evidence that intrinsic properties of CRHPVN neurons, which do not overtly fire in burst in slices, are capable of firing in vivo-like RB by interacting with complex inputs reflecting network characteristics. In summary, using a combination of experimental and computational approaches, we demonstrate a novel circuit mechanism that controls state-dependent activity switch of CRHPVN neurons between the baseline and stress.
 
-## CRHPVN neurons fire brief bursts with long interburst intervals
+### CRHPVN neurons fire brief bursts with long interburst intervals
 
 Pioneering studies in 1980s used antidromic activation of the median eminence and reported single-unit recordings from parvocellular neuroendocrine neurons of the PVN, a class of neurons that include CRH and several other hormone-releasing neurons, in anesthetized rats (Day et al., 1985; Hamamura et al., 1986; Kannan et al., 1987; Saphier, 1989; Saphier and Feldman, 1985). Here, using the optrode technique (Lima et al., 2009), we report firing activities of identified CRHPVN neurons in anesthetized mice. Overall, our results from CRHPVN neurons agree with the early results from parvocellular neurons in that both populations show spontaneous firing at low rates, and that majority of them increased firing rates in response to stress-mimicking peripheral nerve stimulation.
 
@@ -91,7 +224,7 @@ A key new finding of our study is that CRHPVN neurons fire distinct bursts chara
 
 The brief bursts were intervened with mostly silent IBIs of its median length around 2 s during the RB state. Consequently, despite the high frequency (>100 Hz) burst firing, the time-averaged firing rate of the RB state remained low (3–5 Hz). Furthermore, during non-stress conditions, the RB state dynamically shifted to a non-bursting, SS state where CRHPVN neurons increased their firing rate (10–20 Hz) due to continuous single spiking. A similar shift from RB to continuous SS was evident when CRHPVN neurons increase their firing rate in response to stress-mimicking sciatic nerve stimulations. When considering hormonal CRH levels, the drive for the hormone release is likely to be coded by firing rate over the time scale of seconds and longer, rather than millisecond precisions of firing patterns. Thus, we speculate that persistent SS firing and ensuing elevation of spike rate play a major role in the hormonal CRH release.
 
-## A computational model predicts a novel disinhibition mechanism of CRHPVN neurons
+### A computational model predicts a novel disinhibition mechanism of CRHPVN neurons
 
 Decades of research has established that, under no-stress conditions, the excitability of CRHPVN neurons is tonically constrained by powerful GABAergic synaptic inhibition, and that a release from this tonic inhibition, or disinhibition, is one dominant mechanism for the activation of these neurons, and consequently the HPA axis (Bains et al., 2015; Cole and Sawchenko, 2002; Cullinan et al., 2008; Inoue and Bains, 2014; Levy and Tasker, 2012; Roland and Sawchenko, 1993; Ulrich-Lai and Herman, 2009). Multiple disinhibitory mechanisms have been identified, likely reflecting diverse and overlapping neural and hormonal pathways controlling the activities of the HPA axis (Joëls and Baram, 2009; Ulrich-Lai and Herman, 2009). These include the inhibition of the presynaptic GABAergic neurons (Anthony et al., 2014; Johnson et al., 2019), depression of GABAergic synaptic terminals (Ferri and Ferguson, 2005; Han et al., 2002; Hewitt and Bains, 2006; Khazaeipool et al., 2018) and a depolarizing shift in the equilibrium potential of GABAA receptor in the postsynaptic CRHPVN neurons (Hewitt et al., 2009; Sarkar et al., 2011). However, it remained unknown how GABAergic inhibition controls the firing activities of CRHPVN neurons in vivo. In this study, we developed a simple computational model, which was guided by distinct brief burst firing in vivo, and revealed previously underappreciated contribution of recurrent inhibition to the tonic inhibition of CRHPVN neurons. Specifically, the feedback inhibition effectively prevented continuous firing and created a lasting (~2 s) silent periods in between brief bursts, and consequently constrained the time-averaged firing rate low (~3 Hz). Strikingly, a decrease of recurrent inhibition, with no additional change in the excitatory inputs, profoundly increased the overall firing rate of CRHPVN neurons. In other words, (a loss of) the recurrent inhibition alone partially recapitulates the disinhibitory mechanisms of CRHPVN neurons. That said, there is more to consider regarding the activity of CRHPVN neurons, as the removal of recurrent inhibition alone results in continuous burst-range high frequency firing, which does not typically occur during stress-induced firing increase in vivo (Figure 3A–F). Thus, our model predicts that the in vivo-like transition from RB to SS requires an increase in spike-triggered adaptation current (Brette and Gerstner, 2005), pointing to single-neuron intrinsic properties underlying burst generation. For example, the spike-triggered adaptation current can represent after-hyperpolarization, (a loss of) after-depolarization, or both (Brette and Gerstner, 2005).
 
@@ -99,7 +232,7 @@ It should be noted that our model for the recurrent excitatory-inhibitory circui
 
 So, what are the identities of the GABAergic neurons that form recurrent connectivity with CRHPVN neurons? Indeed, the recurrent inhibitory circuits for CRHPVN neurons has been first suggested by an early in vivo electrophysiology recordings of parvocellular neurons in rats based on an inhibition following action potentials antidromically activated from the median eminence (Saphier and Feldman, 1985). Recent studies have revealed local recurrent circuits within the PVN, where CRHPVN neurons excite CRHR1-expressing GABAergic interneurons, which in turn send GABAergic inputs to CRHPVN neurons (Jiang et al., 2018). CRHPVN neurons excite CRHR1-expressing neurons via slow metabotropic actions with little, if any, fast (glutamatergic) excitatory synaptic transmission (Jiang et al., 2018; Ramot et al., 2017). Notably, our network model found that the long IBI (~2 s) of brief bursts require slow excitatory EPSPs consistent with metabotropic signaling (τCRH >200 ms) rather than fast ionotropic EPSPs (τe <20 ms). In addition to this intra-PVN microcircuit, it is possible that CRHPVN neurons form additional recurrent inhibitory circuits. Indeed, there is growing appreciation that CRHPVN neurons send projections within the brain besides their well established projections to the median eminence (for hormonal CRH release) (Füzesi et al., 2016; Jiang et al., 2018; Jiang et al., 2019; Kim et al., 2019a; Li et al., 2020; Ono et al., 2020; Ramot et al., 2017; Rho and Swanson, 1989; Yuan et al., 2019). For example, the perifornical area (Füzesi et al., 2016; Rho and Swanson, 1989) and the lateral hypothalamus (Li et al., 2020; Ono et al., 2020) receive direct synaptic inputs from CRHPVN neurons: these brain areas in turn send direct GABAergic inputs to CRHPVN neurons (Boudaba et al., 1996; Cullinan et al., 2008; Roland and Sawchenko, 1993; Ulrich-Lai and Herman, 2009).
 
-## Synaptic activity underlies flexible firing patterns of CRHPVN neurons in vivo
+### Synaptic activity underlies flexible firing patterns of CRHPVN neurons in vivo
 
 In acute slices ex vivo, CRHPVN neurons typically show a SS electrophysiological phenotype, or ‘regular’ spiking, with up to around 50 Hz of spike-to-spike frequency in response to steps of intracellular current injections in mice and rats (Bittar et al., 2019; Jiang et al., 2019; Khan et al., 2011; Luther et al., 2002; Matovic et al., 2020; Sarkar et al., 2011; Wamsteeker Cusulin et al., 2013). Thus, our in vivo recordings of the RB (>100 Hz spike-to-spike frequency) revealed a previously underappreciated repertoire of the firing patterns of CRHPVN neurons. In this regard, CRHPVN neurons are different from thalamic relay neurons that have been extensively studied for their properties to switch between bursting and single (tonic) spiking modes both in vivo and ex vivo (McCormick and Pape, 1990; Sherman, 2001; Steriade et al., 1993). The difference can be partly explained by the fact that CRHPVN neurons express only modest levels of T-type currents (Luther et al., 2002) and little, if any, H-currents (see Figure 5A): these intrinsic properties play crucial roles in the generation of rhythmic burst firing, and switch between burst and single spiking modes in thalamic relay neurons (McCormick and Pape, 1990; Sherman, 2001; Steriade et al., 1993).
 
@@ -111,104 +244,144 @@ Our computational modeling addressed the potential interplay between in vivo-lik
 
 These results point to future applications of the ‘network clamp’ in order to examine specific biophysical mechanisms that interact with network inputs to generate in vivo-like firing patterns in other brain areas. It is well known that neurons in slice differ in their response properties from intact in vivo preparations (Destexhe and Paré, 1999; Destexhe et al., 2003) and that injection of noise approximating the inputs from the large number of synaptic contacts in intact preparations can recreate firing conditions observed in vivo (Destexhe and Rudolph-Lilith, 2012; Destexhe et al., 2003; Rudolph and Destexhe, 2003; Rudolph and Destexhe, 2006). Advanced techniques have been developed to measure neuronal firing rate responses under injection of theoretically motivated noise processes (Zerlaut et al., 2016). In this work, however, we have focused on injecting the time-varying inputs from a single cell in the network model to a biological neuron, so that we can directly compare the activity patterns evoked in the biological and simulated cells. We find that computationally generated inputs can recreate the specific burst firing mode we have reported in this work. In this way, this injection protocol bears some similarity to the ‘iteratively constructed network (ICN)’ developed by Reyes, 2003 to provide a direct test of whether biological cells can propagate synchrony without some of the caveats that can be imposed by computational simulations (Rudolph and Destexhe, 2007). We suggest that this ‘network clamp’ protocol has more general applicability; however, for validating spiking network models of neural circuits. In this work, the spiking network model provided a testable prediction: initially, biological neurons recorded ex vivo did not exhibit bursting behavior when stimulated with step current pulses, but would they burst when driven with network-generated input? In this case, the biological neuron in this ‘network clamp’ paradigm exhibited behavior consistent with this prediction, strengthening confidence that our spiking network model captures a meaningful underlying mechanism in this system. Because this paradigm allows to test multiple model predictions in a single setup (for conventional patch-clamp electrophysiology), and because it also opens the possibilities for testing how neuronal firing and response patterns may change with neuromodulation applied in the slice, we suggest that the model-experiment protocol developed and tested in this work may be able to distinguish between multiple models that can account for a single dataset in isolation (Marder and Goaillard, 2006).
 
-## Limitations of the study
+### Limitations of the study
 
 Our in vivo recordings were performed under urethane anesthesia, as was the case for the majority of previous studies using in vivo recordings from the PVN in anesthetized rats (Hamamura et al., 1986; Kannan et al., 1987; Saphier, 1989; Saphier and Feldman, 1985; Saphier and Feldman, 1988; Saphier and Feldman, 1990). Urethane produces a long-lasting steady level of surgical anesthesia, and preserves the subcortical and peripheral neural functions (Maggi and Meli, 1986), making it suitable for long electrophysiological recordings from the hypothalamus. For example, under urethane anesthesia in rabbits, hypothalamic neurons have been shown to readily respond to varieties of stress stimuli including hypoxia, hypercapnia, loud noise, and pain (Cross and Silver, 1963). Of particular relevance to our study, sciatic nerve stimulation (under urethane anesthesia) has been shown to effectively elevate blood ACTH levels (Hamamura et al., 1986), validating that the stress-responsiveness of the HPA axis is preserved. However, it should be noted that urethane has also been shown to enhance autonomic (Shimokawa et al., 1998a) and HPA axis activity (Hamstra et al., 1984), likely by enhancing adrenergic inputs to the PVN (Shimokawa et al., 1998b). Considering that (nor)adrenaline has both excitatory and inhibitory effects on PVN neurons (Han et al., 2002; Itoi et al., 1994; Saphier and Feldman, 1991) and that it can potently influence state-switch between bursting and single spiking (Pape and McCormick, 1989), urethane may have affected the baseline firing activities and burst firing properties of CRHPVN neurons in general. Future studies using awake animal recordings are warranted.
 
-## Ideas and speculations
+### Ideas and speculations
 
 Our study found brief, high-frequency burst firing of CRHPVN neurons in vivo. This unexpected finding led us to propose, using a tight combination of experimental and computational approaches, that recurrent inhibition can generate the brief bursts and constrain prolonged firing activities of CRHPVN neurons leading to hormonal release. Then, what is the advantage of a RB mechanism during periods when CRH neuron activity is not required for the hormone release? Does RB firing encode and convey specific information? One possibility is that burst firing facilitates the self-maintenance of the RB firing state. That is, a brief burst enables high-fidelity synaptic transmission (Lisman, 1997) and efficiently excites GABAergic neurons that return recurrent inhibition to CRHPVN neurons: this feedback inhibition, in turn, facilitates subsequent burst firing. Notably, our spiking network model found that recurrent inhibition works as a gain regulator at CRH neurons (Figure 5). Thus, our model prediction offers a new circuit mechanism for the experimental data that disinhibition, more so than increasing excitatory inputs, is crucial for the activation of CRHPVN neurons for hormonal release (Cole and Sawchenko, 2002; Hewitt et al., 2009; Kovács et al., 2004; Sarkar et al., 2011). Beyond constraining hormonal release of CRH, the idea that CRHPVN neurons use brief bursts for high-fidelity synaptic transmission, without triggering massive HPA axis activation, raises an intriguing possibility in light of emerging new roles of CRHPVN neurons that are independent of hormone release. Recent studies showed that CRHPVN neurons are involved in controlling wakefulness (Ono et al., 2020), valence encoding (Kim et al., 2019a), reward processing (Kim et al., 2019a; Yuan et al., 2019), and defensive behavior control (Daviu et al., 2020; Füzesi et al., 2016) under non-stress and stress conditions. We propose that brief intermittent bursts of activity are ideally suited to drive rapid behavioral and emotional changes independently of systemic and long-lasting hormonal response.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experimental procedures were performed in accordance with the Canadian Council on Animal Care guidelines and approved by the University of Western Ontario Animal Use Subcommittee (AUP: 2018–130). Homozygous Crh-IRES-Cre (B6(Cg)-Crhtm1(cre)Zjh/J) mice (Stock No: 012704, the Jackson Laboratory) were crossed with homozygous Cre-reporter Ai14 (B6.Cg-Gt(ROSA)26Sortm14(CAG-TdTomato)Hze/J) mice (Stock No: 007908, the Jackson Laboratory) to produce CRH-TdTomato reporter offspring. The specificity of cre-expression in the PVN in these mice has been characterized in previous studies (Chen et al., 2015; Wamsteeker Cusulin et al., 2013). 10 adult male mice (>60 days old) were used for viral injections and recordings. Animals were group-housed (2–4 per cage) in standard shoebox mouse cages with ad libitum access to food and water. Animals were housed on a 12 hr dark/12 hr light cycle (lights on from 07:00 to 19:00) in a temperature-controlled room (23 ± 1°C).
 
-## Viral injection
+### Viral injection
 
 To express channelrhodopsin-2 (ChR2) in CRHPVN neurons, we used an AAV carrying the EF1α promoter and the double-floxed inverted ChR2(H134R)-EYFP coding sequence that is inverted and turned on by cre-recombination (AAV2/5- EF1α-DIO-ChR2(H134R)-EYFP). The plasmid was a gift from Dr. Karl Deisseroth http://n2t.net/addgene:20298; RRID:Addgene_20298. The AAV preparation was obtained from the Neurophotonics Centre (5 × 1013 GC/ml, Laval University, Canada).
 
 For AAV injection, the animal was anesthetized under isoflurane (2%) using a low flow gas anesthesia system, (Kent Scientific Corporation) and placed in a stereotaxic apparatus on a heating pad. A finely pulled glass capillary was loaded with the virus and slowly lowered into the brain of animals, targeting the PVN on each side of the brain (A/P: –0.70 mm, M/L:±0.25 mm, and D/V:−4.75 mm from bregma). A total of ~240 nL (41.4 nL × 6 at 23 nL/s) was pressure-injected on each side using the Nanoject II (Drummond Scientific Company). The pipette was held in place for 5 min after injection to allow diffusion before being slowly retracted from the brain. The incision was closed by suturing and the animals were injected with analgesic (buphrenorphone 0.1 mg/kg, s.c.) at the end of surgery. Animals were allowed to recover for at least 6 weeks for optimal ChR2 expression before electrophysiological recordings.
 
-## Electrophysiology
+### Electrophysiology
 
 Animals were initially anesthetized under isoflurane (1–2%) and urethane (1.5 g/kg in 0.9% saline, intraperitoneal) to perform surgery for sciatic nerve isolation and a craniotomy/durotomy for insertion of the recording probe into the brain. We first isolated the sciatic nerve (see details in Sciatic nerve stimulation), and then the probe was lowered into the brain. Thereafter, the animal was taken off isoflurane. The probe was vertically inserted above the PVN (A/P: –0.70 mm from bregma, M/L:±0.25 mm from bregma) and slowly lowered ventrally to the PVN (target D/V: –4.5 mm from cortical surface, photo-tagged units (see details in Optogenetic identification of CRH neurons) were found between –4.20 mm and –4.80 mm from cortical surface).
 
 Extracellular neural signals were recorded using a single shank, 32-channel (8 rows × 4 columns) silicon probe, with recording sites spanning 60 µm in depth (Cambridge NeuroTech). An optic fiber (100 µm core diameter, 0.37 NA, A45; Doric Lenses) was attached by the manufacturer parallel to the electrode shank with a vertical offset of 250 µm, constituting an optrode. The electrode was connected to a digital headstage (ZD ZIF-Clip; Tucker-Davis Technologies) with an internal Intan amplifier chip. The digitized signals were sent to the amplifier (PZ5; Tucker-Davis Technologies), which in turn connects out to the processing unit (RZ5D, Tucker-Davis Technologies) via a fiber optic cable. Broadband signals were sampled at 25 kHz and bandpass filtered between 300 and 3000 Hz. The threshold for spike detection was a minimum three SDs above the noise floor. The waveforms for detected spikes were sorted offline (Offline Sorter, Plexon) using manual and automatic clustering (T-Distribution E-M). To ensure the quality of single-unit isolation, only discrete clusters with L-ratios <0.05 (in 2D or 3D spaces) was included for single-unit analysis.
 
-## Optogenetic identification of CRH neurons
+### Optogenetic identification of CRH neurons
 
 Transistor-transistor logic (TTL) signals to trigger optogenetics light stimulation were sent from the signal processing and acquisition software Synapse (Tucker-Davis Technologies) to a LED driver (PlexBright LD-1 Single Channel LED Driver, Plexon). The LED driver controlled the intensity of light emitted from the LED module (PlexBright Table-Top LED Module Blue 465 nm, Plexon) which was coupled to an optic patch cable (200 µm core, PlexBright Optical Patch Cable, Plexon). The patch cable connected via a plastic sleeve to the optic fiber of the optrode.
 
 For each electrode location, 5 ms and 50 ms single light pulses were delivered at 2 mW. Following offline sorting of waveforms, ChR2-expressing CRH single units were identified by their time-locked responses to light (see details in Data analyses and statistics: Identification of light-evoked spikes). Specifically, we clustered all waveforms (both spontaneous and light-evoked in a blinded manner) for single unit isolation (L-ratios <0.05). Thereafter, single units clustered with the light-evoked waveforms were considered as light responsive and thus CRH neurons, and other single units simultaneously recorded with light responsive neurons but did not respond to the light were considered as light non-responsive, which includes both non-CRH neurons and CRH neurons with insufficient ChR2 expression and/or light exposure.
 
-## Sciatic nerve stimulation
+### Sciatic nerve stimulation
 
 Under isoflurane anaesthesia, a small incision was made into the hind limb of the animal and the sciatic nerve was isolated from surrounding tissue. A bipolar tungsten stimulating electrode was gently placed on the nerve and the nerve was kept hydrated with periodic applications of sterile saline. The contralateral nerve to the recording site was stimulated with 1.6 mA negative pulses at 20 Hz (5 × 0.5 ms) using a pulse stimulation unit (S88, GRASS Instrument Co) connected to a stimulus isolation unit (Model PSIU6, GRASS Instrument Co) triggered via TTL signals.
 
-## Histology
+### Histology
 
 At the end of recording, animals were euthanized with an overdose of pentobarbital sodium (150 mg/kg, i.p.) and transcardially perfused with 0.9% saline and 4% paraformaldehyde (PFA). The brain was collected and left to postfix in 4% PFA at 4°C overnight. The brain was washed in phosphate buffer saline (PBS) solution and sliced into 40 µm coronal sections and counter stained with 4,6-diamidino-2-phenylindole (DAPI). The slices were mounted and verified for CRH expression (tdTomato), ChR2 expression (eYFP), and the dye-painted electrode tract (Vybrant DiD, Thermo Fisher V22889).
 
-## Experimental design
+### Experimental design
 
 Each recording started with the baseline recordings of spontaneous firing without any intentional sensory stimulation for at least 10 min. This was followed by light stimulation for CRH neuron identification, then subsequently sciatic nerve stimulation (minimum 3 min between light stimulation and sciatic nerve stimulation).
 
-## Data analyses and statistics
+### Data analyses and statistics
 
 Data analyses were carried out using built-in and custom-built software in MATLAB (MathWorks). Data analysis codes are available on GitHub, copy archived at swh:1:rev:d4d153e44882a0c2a7d0a1ef11193347aa5d6c96 (Ichiyama and Mestern, 2022). Graphs were made and statistical analysis were conducted using Prism 8 (GraphPad).
 
-## Identification of light-evoked spikes
+#### Identification of light-evoked spikes
 
 Time-locked response to light stimulation was tested by an increase in spiking activity to a 5 ms pulse of blue light (25 trials). The response was plotted on a peristimulus time histogram (PSTH) aligned to the onset of light. Peristimulus frequency before and after light onset (20 ms windows) was compared by a trial-by-trial paired t-test: a significant increase was defined as light-responsive. The event probability before and after light (20 ms windows) was calculated as the number of trials that had at least 1 event within the response window, divided by the total number of trials.
 
-## Spike pattern analysis
+#### Spike pattern analysis
 
 For each single-unit, spike activity was classified into bursts and SS. Bursts were detected as series of two or more spikes starting with the initial ISI less than 6 ms and subsequent ISIs less than 20 ms. Although rare, to prevent contamination of bursts by high-firing SS which gradually speed up (i.e. shortening ISIs) into the burst range, we adopted a secondary criterion for bursts to be preceded by an ISI >25 ms. Spikes not associated with bursts were defined as SS. For analyses involving burst rates (i.e. burst rate, burst index, IBI), each burst was counted as a single event regardless of burst length (the number of spikes per burst). IBI distribution was first calculated for each cell (100 ms bins, plotted by upper limit of bin), and then the group distribution was generated by plotting the mean and standard deviation. Similarly, the distribution of burst length (the number of spikes per burst) was first calculated for each cell, and then the group distribution was generated by plotting the mean and SD.
 
 To examine spiking dynamics that may influence burst activity, the probability of burst initiation (ISI(i)<6 ms) as a function of preceding silence (ISI(i-1)) was plotted for each cell. To do this, spikes were binned by ISI(i-1) (10 ms and 500 ms bins for periods <500 ms and ≥500 ms, respectively), and the probability of ISI(i)<6 ms was calculated for each bin for each cell. Then, the group average was plotted with the mean and SD. To examine the influence of preceding silence on burst length, spikes were binned by event length, and the mean preceding silence was calculated for each cell. Then, the group average was plotted with the mean and SD. The silent period analysis was repeated for proceeding silent periods. In this case, the probability of burst (ISI(i)<6 ms) as a function of the proceeding silence (ISI(i+1)) was plotted. Finally, the mean proceeding silence was compared by event lengths.
 
-## Firing rate analysis
+#### Firing rate analysis
 
 The average baseline firing rates were calculated as the total number of spikes divided by total time during the spontaneous baseline recording (10 min). The firing rate time course was calculated as the number of spikes in every 10 s bins. The running average firing rate represents a moving average of five consecutive bins (bin[i-2]+bin[i-1]+bin[i]+bin[i+1]+bin[i+2]/5) and was used to visualize spontaneous fluctuations of firing rate. These fluctuations in firing rate were then overlaid onto ISIs plotted across time to visualize the relationship between firing rate to firing patterns. To examine the relationship between burst rate and total spike rate, for every 10 s bin in individual units, total spike rate was plotted against burst rates of 0.1, 0.2, 0.3, 0.4, 0.5, or ≥ 0.6 bursts/s. The relationship was plotted for individual unit (Figure 3L), as well as pooled across units (Figure 3M, n=18).
 
-## Sciatic nerve stimulation
+#### Sciatic nerve stimulation
 
 The response to sciatic nerve stimulation was plotted on PSTHs aligned to the onset of stimulation (the first of the 5-pulse train). A paired t-test was performed between the average post-onset firing rates (2 s across 30–60 trials) and the baseline firing for each cell. Responses to sciatic nerve stimulation was analyzed in three categories: all spikes regardless of spiking pattern, SS only, and bursts only (each burst train counted as a single event regardless of the burst length).
 
-## Recurrent inhibitory network model
+### Recurrent inhibitory network model
 
-## Single neuron model fit
+#### Single neuron model fit
 
-Single neurons were modeled using the Adaptive Exponential Integrate and Fire (AdEx) model (Brette and Gerstner, 2005).(1)Cdvdt=gLEL-v+gLΔTexp⁡v-VthΔT+geEe-v+giEi-v-w + I(2)v→vrw→w+b
+Single neurons were modeled using the Adaptive Exponential Integrate and Fire (AdEx) model (Brette and Gerstner, 2005).
 
-Here, C is the membrane capacitance, w is an adaptation variable, I is the applied current, gL is the leak conductance, EL is the resting membrane potential, ΔT is the slope factor, and Vth is the threshold potential. The slope factor determines the sharpness of the threshold. The membrane potential v is modeled as a sum of these conductance parameters (Equation 1). When the membrane potential v exceeds the threshold Vth the neuron emits a spike, and the neuron is reset according to Equation 2. w is computed as a function of the subthreshold, and spike-triggered adaptations, respectively (Equation 3)(3)τwdwdt = av - EL - w
+$$
+C\frac{dv}{dt}=g_{L}E_{L}-v+g_{L}Δ_{T}exp⁡\frac{v-V_{th}}{Δ_{T}}+g_{e}E_{e}-v+g_{i}E_{i}-v-w + I
+$$
 
-where τw is the time constant and a is subthreshold adaptation conductance.
+
+
+$$
+v→v_{r}w→w+b
+$$
+
+Here, $C$ is the membrane capacitance, $w$ is an adaptation variable, $I$ is the applied current, $g_{L}$ is the leak conductance, $E_{L}$ is the resting membrane potential, $Δ_{T}$ is the slope factor, and $V_{th}$ is the threshold potential. The slope factor determines the sharpness of the threshold. The membrane potential $v$ is modeled as a sum of these conductance parameters (Equation 1). When the membrane potential $v$ exceeds the threshold $V_{th}$ the neuron emits a spike, and the neuron is reset according to Equation 2. w is computed as a function of the subthreshold, and spike-triggered adaptations, respectively (Equation 3)
+
+$$
+\tau_{w}\frac{dw}{dt} = av - E_{L} - w
+$$
+
+where $\tau_{w}$ is the time constant and $a$ is subthreshold adaptation conductance.
 
 To refine the model to capture the behavior of CRHPVN neurons, we fit the model with whole-cell patch-clamp recordings of CRHPVN neurons in acute brain slices (n=33, 5 mice) using methods detailed in Matovic et al., 2020. Recordings consisted of 14 trials containing a hyperpolarizing (–20 pA for 200 ms) pulse followed by a stepped depolarizing current pulse (10 pA steps for 500 ms). The same stimulus was used in subsequent model simulations. First, the firing rate-current (F-I) curve for the model was simulated across a large parameter space. Then, the posterior distribution for the parameter space was fit using the Sequential Neural Posterior Estimation (SNPE) method as previously described (Gonçalves et al., 2020). Second, for each reference cell, the F-I curve was used to draw a restricted parameter space from the previously fit posterior. Then, 200 rounds of evolutionary optimization were used to refine the model (Lynch and Houghton, 2015). The penalty (or evaluation of fit) was calculated as the sum of the mean squared error (MSE) between the subthreshold voltage of the model and reference, and the log MSE between the F-I curve of the model and reference. Models that produced an MSE above 5 mV (for the subthreshold voltage) and above 10 Hz (for the F-I curve) were considered poor fits, and were discarded. To produce a robust general model, the average of the parameter fit for all reference traces was used in the network model (Table 1).
 
-## Network model
+#### Network model
 
-To construct the network model, we utilized a simplified recurrent network template with two distinct populations of AdEx neurons (Destexhe, 2009). These neurons consisted of a modified AdEx model with added excitatory and inhibitory synaptic parameters (Equation 1).(4)ge→ge+wegi→gi+wi(5)τe dgedt=−geτi dgidt=−gi
+To construct the network model, we utilized a simplified recurrent network template with two distinct populations of AdEx neurons (Destexhe, 2009). These neurons consisted of a modified AdEx model with added excitatory and inhibitory synaptic parameters (Equation 1).
 
-Here, ge & τe and gi & τi represent the inhibitory and excitatory conductance and time constant, respectively. Following a presynaptic spike, the inhibitory and excitatory conductance were incremented according to Equation 4, followed by a loss of conductance via a simple exponential decay (Equation 5).
+$$
+g_{e}→g_{e}+w_{e}g_{i}→g_{i}+w_{i}
+$$
 
-Both populations were interconnected, with one population presenting as excitatory and one as inhibitory. For simplicity, only the excitatory neurons received external input. First, we constrained the excitatory portion (n=500) of the network to our biologically realistic CRHPVN neurons. To do so, we used previously fit parameters from the single neuron model as described in Single neuron model fit. Next, the remaining inhibitory population was constrained with parameters, reflecting the tonic spiking GABAergic neurons of the thalamus (Destexhe, 2009). Changes in adaptation current b were modeled with instantaneous increment followed by an exponential decay function (Equation 6), reflecting the slow change in intracellular parameters.(6)τbbinc=−bincb→bintial+binc
 
-For each synapse, the probability of release p was modelled by the logistic differential equation(7)dpdt=pτp(1−p)p → 0.1
 
-Based on previous literature, the excitatory input of CRHPVN neurons to the GABAergic population was modeled to be mediated by the CRHR1 receptor (Jiang et al., 2018; Jiang et al., 2019; Ramot et al., 2017). Therefore, this synapse was modeled by a slow-growing alpha function, a common model of neuromodulator function (Destexhe et al., 1994):(8)d[CRH]dt=y−wCRHτCRHdydt=−yτCRHy→[CRH]+wCRH
+$$
+\tau_{e} \frac{dg_{e}}{dt}=−g_{e}\tau_{i} \frac{dg_{i}}{dt}=−g_{i}
+$$
 
-The remaining free parameters we , wi , τe , τi , τCRH , and the EPSP input frequency were tuned with respect to the observed extracellular spike trains in vivo. To begin with, we selected a representative opto-tagged CRH neuron baseline recording as reference (Figure 2B). Next, we selected two characteristic (50 s) sections of the reference spike train that reflected bursting and single spiking independently. Then, several rounds of evolutionary algorithms were used to tune the parameters. For each round, the network was simulated with the given parameters with an increased adaptation current (2 × 50 s). Then, the distance between simulated and reference data was computed as the earth mover’s distance (Wasserstein metric) between the log-scaled ISI distributions (Olkin and Pukelsheim, 1982). The total distance was taken as the sum of the smallest 100 distances between each simulated unit and the reference. The standard adaptation current and the increased adaptation current simulations were compared to the bursting and tonic references, respectively.
+Here, $g_{e}$ & $\tau_{e}$ and $g_{i}$ & $\tau_{i}$ represent the inhibitory and excitatory conductance and time constant, respectively. Following a presynaptic spike, the inhibitory and excitatory conductance were incremented according to Equation 4, followed by a loss of conductance via a simple exponential decay (Equation 5).
 
-## Generation of network clamp input for ex vivo experiments
+Both populations were interconnected, with one population presenting as excitatory and one as inhibitory. For simplicity, only the excitatory neurons received external input. First, we constrained the excitatory portion (n=500) of the network to our biologically realistic CRHPVN neurons. To do so, we used previously fit parameters from the single neuron model as described in Single neuron model fit. Next, the remaining inhibitory population was constrained with parameters, reflecting the tonic spiking GABAergic neurons of the thalamus (Destexhe, 2009). Changes in adaptation current $b$ were modeled with instantaneous increment followed by an exponential decay function (Equation 6), reflecting the slow change in intracellular parameters.
 
-To investigate the ability of our model to induce burst in biological neurons ex vivo, we extracted the input currents from a model neuron in the network. First, a model neuron, isolated within the network, had its initial resting membrane potential VmØ and leak reversal EL constrained to the mean resting membrane potential of the CRHPVN neurons in our recording conditions ex vivo (–67.9 mV, Table 1). Then, the model was simulated for 50 s, and the model neuron was allowed to respond to the incoming input freely. Every time-step (100 µs), the sum of the incoming excitatory, inhibitory, and adaptation currents were extracted following Equation 9:(9)I(t)=getEe-vt+gitEi-vt-wt
+$$
+\tau_{b}b_{inc}=−b_{inc}b→b_{intial}+b_{inc}
+$$
 
-where ge , gi , v, and w are extracted from the values of the individual neuron found in Equation 1 at given time step t. In essence, this formulation allowed observation of the model neuron state without intervention. We theorized that inclusion of the computed leak current: gLEL-v , was unnecessary as the ex vivo neurons express this intrinsically. Our network model generated very large synaptic currents (~500 pA), which is unlikely to reflect realistic inputs to CRHPVN neurons observed in ex vivo preparation (Salter et al., 2018; Sterley et al., 2018; Wamsteeker Cusulin et al., 2013). Thus, we capped the maximum amplitude of PSCs to ±200 pA without changing the timings of PSPs.
+For each synapse, the probability of release $p$ was modelled by the logistic differential equation
 
-## Software
+$$
+\frac{dp}{dt}=\frac{p}{\tau_{p}}(1−p)p → 0.1
+$$
+
+Based on previous literature, the excitatory input of CRHPVN neurons to the GABAergic population was modeled to be mediated by the CRHR1 receptor (Jiang et al., 2018; Jiang et al., 2019; Ramot et al., 2017). Therefore, this synapse was modeled by a slow-growing alpha function, a common model of neuromodulator function (Destexhe et al., 1994):
+
+$$
+\frac{d[CRH]}{dt}=\frac{y−w_{CRH}}{\tau_{CRH}}\frac{dy}{dt}=\frac{−y}{\tau_{CRH}}y→[CRH]+w_{CRH}
+$$
+
+The remaining free parameters $w_{e}$ , $w_{i}$ , $\tau_{e}$ , $\tau_{i}$ , $\tau_{CRH}$ , and the EPSP input frequency were tuned with respect to the observed extracellular spike trains in vivo. To begin with, we selected a representative opto-tagged CRH neuron baseline recording as reference (Figure 2B). Next, we selected two characteristic (50 s) sections of the reference spike train that reflected bursting and single spiking independently. Then, several rounds of evolutionary algorithms were used to tune the parameters. For each round, the network was simulated with the given parameters with an increased adaptation current (2 × 50 s). Then, the distance between simulated and reference data was computed as the earth mover’s distance (Wasserstein metric) between the log-scaled ISI distributions (Olkin and Pukelsheim, 1982). The total distance was taken as the sum of the smallest 100 distances between each simulated unit and the reference. The standard adaptation current and the increased adaptation current simulations were compared to the bursting and tonic references, respectively.
+
+#### Generation of network clamp input for ex vivo experiments
+
+To investigate the ability of our model to induce burst in biological neurons ex vivo, we extracted the input currents from a model neuron in the network. First, a model neuron, isolated within the network, had its initial resting membrane potential VmØ and leak reversal EL constrained to the mean resting membrane potential of the CRHPVN neurons in our recording conditions ex vivo (–67.9 mV, Table 1). Then, the model was simulated for 50 s, and the model neuron was allowed to respond to the incoming input freely. Every time-step (100 µs), the sum of the incoming excitatory, inhibitory, and adaptation currents were extracted following Equation 9:
+
+$$
+I(t)=g_{e}tE_{e}-vt+g_{i}tE_{i}-vt-wt
+$$
+
+where $g_{e}$ , $g_{i}$ , $v$, and $w$ are extracted from the values of the individual neuron found in Equation 1 at given time step $t$. In essence, this formulation allowed observation of the model neuron state without intervention. We theorized that inclusion of the computed leak current: $g_{L}E_{L}-v$ , was unnecessary as the ex vivo neurons express this intrinsically. Our network model generated very large synaptic currents (~500 pA), which is unlikely to reflect realistic inputs to CRHPVN neurons observed in ex vivo preparation (Salter et al., 2018; Sterley et al., 2018; Wamsteeker Cusulin et al., 2013). Thus, we capped the maximum amplitude of PSCs to ±200 pA without changing the timings of PSPs.
+
+#### Software
 
 Simulations and modeling were completed using software packages within the Python 3.5 ecosystem. Single neuron and network simulations were completed using the Brian 2 (2.4) package (Stimberg et al., 2019). MSE, EMD, and other mathematical operations were computed using modified implementations of the functions available in NumPy (1.20.1) and SciPy (1.6.0) software packages (Harris et al., 2020; Virtanen et al., 2020). Backend probability inference was completed using the sbi (0.16.0) package (Gonçalves et al., 2020). Optimization of fits was performed using the nevergrad (0.4.3) package (Liu et al., 2020). Specifically, we utilized a custom portfolio consisting of two-points differential evolution (two-points DE), covariance matrix adaptation evolutionary strategy (CMA-ES), and a random search using scrambled Hammersley sequence (SCR-Hammersly). Axon binary file (ABF) recordings were imported to python using the pyABF package (Harden, 2020). Extraction of single-neuron action potentials and other electrophysiological features from intracellular recordings was performed using the ipfx (0.1.1) package (Gouwens et al., 2019). A generalized formulation of the fitting code, including the interface between Brian 2, nevergrad, and sbi are publicly available on GitHub (Ichiyama and Mestern, 2022). This includes the methodology for comparing EMD between spike trains in 1D and 2D using a sliced Wasserstein implementation.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Quiescence is a reversible G 0 state essential for differentiation, regeneration, stem-cell renewal, and immune cell activation. Necessary for long-term survival, quiescent chromatin is compact, hypoacetylated, and transcriptionally inactive. How transcription activates upon cell-cycle re-entry is undefined. Here we report robust, widespread transcription within the first minutes of quiescence exit. During quiescence, the chromatin-remodeling enzyme RSC was already bound to the genes induced upon quiescence exit. RSC depletion caused severe quiescence exit defects: a global decrease in RNA polymerase II (Pol II) loading, Pol II accumulation at transcription start sites, initiation from ectopic upstream loci, and aberrant antisense transcription. These phenomena were due to a combination of highly robust Pol II transcription and severe chromatin defects in the promoter regions and gene bodies. Together, these results uncovered multiple mechanisms by which RSC facilitates initiation and maintenance of large-scale, rapid gene expression despite a globally repressive chromatin state.
+Quiescence is a reversible G0 state essential for differentiation, regeneration, stem-cell renewal, and immune cell activation. Necessary for long-term survival, quiescent chromatin is compact, hypoacetylated, and transcriptionally inactive. How transcription activates upon cell-cycle re-entry is undefined. Here we report robust, widespread transcription within the first minutes of quiescence exit. During quiescence, the chromatin-remodeling enzyme RSC was already bound to the genes induced upon quiescence exit. RSC depletion caused severe quiescence exit defects: a global decrease in RNA polymerase II (Pol II) loading, Pol II accumulation at transcription start sites, initiation from ectopic upstream loci, and aberrant antisense transcription. These phenomena were due to a combination of highly robust Pol II transcription and severe chromatin defects in the promoter regions and gene bodies. Together, these results uncovered multiple mechanisms by which RSC facilitates initiation and maintenance of large-scale, rapid gene expression despite a globally repressive chromatin state.
 
 ## Introduction
 
@@ -31,13 +31,25 @@ In this study, we investigated how genes are transcribed during the first minute
 
 ## Results
 
-## Hypertranscription occurs within minutes of nutrient repletion post-quiescence
+### Hypertranscription occurs within minutes of nutrient repletion post-quiescence
 
 To determine the earliest time at which transcription reactivates during quiescence exit, we fed purified quiescent cells YPD medium and took time points to determine the kinetics of Pol II C-terminal domain (CTD) phosphorylation by western blot analysis (Figure 1A). Unexpectedly, Pol II CTD phosphorylation occurred within 3 min (Figure 1A, compare lanes 1 and 2), which was our physical limit of isolating cells during this time course. To determine which transcripts were generated during these early quiescence exit events, we performed nascent RNA-seq using 4-thiouracil (4tU) to metabolically label new transcripts (Miller et al., 2011; Duffy et al., 2015). In agreement with the western blot analysis, we observed a high level of transcriptional activation within a few minutes of nutrient repletion (Figure 1B). Based on our western blot result, the highest Pol II CTD phosphorylation is observed ~10 min after refeeding. Consistent with this result, we observed the highest level of nascent transcripts at the 10 min time point, where 3202 RNAs (~50% of annotated loci) were statistically significantly increased by twofold compared to the 0 min time point (Figure 1B, Figure 1—figure supplement 1A). Given how quickly Pol II was phosphorylated and transcripts were generated, we sought to determine whether high levels of Pol II were already bound to the early exit genes in the quiescent state, as was observed previously in a heterogenous population of stationary phase cells (Radonjic et al., 2005). To this end, we performed spike-in-normalized ChIP-seq analysis of Pol II in quiescent cells and at several time points following refeeding (Figure 1C, Figure 1—figure supplement 1B). Low Pol II occupancy levels (compare heatmaps 1 and 5) were detected in quiescent cells, which agrees with our western blot and RNA-seq analyses and previously published literature (McKnight et al., 2015; Young et al., 2017; Swygert et al., 2019). This implied that Pol II is not paused (Figure 1C, compare heatmaps 1 and 2) in quiescent cells and suggested that Pol II needs to be recruited de novo for rapid initiation and elongation. In support of this conclusion, we detected only low levels of the pre-initiation complex subunit TFIIB bound to genes in quiescent cells, which increased approximately threefold by 5 min of exit (Figure 1—figure supplement 1C), despite no changes in the abundance of the protein (Figure 1—figure supplement 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig1-v2.jpg)
+
+**Figure 1.:** (A) Western blots were probed with antibodies to detect Ser5p and Ser2p of the CTD of Rpb1 subunit of Pol II. An antibody against the Rpb3 subunit of Pol II was used as a loading control. (B) Nascent RNA-seq analysis. (C) Pol II ChIP-seq analysis. Heatmaps show k-means clusters of 6030 genes. Genes are linked across the heatmaps. (D) Metaplots of ChIP-seq data shown in (C) without k-means clustering.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Volcano plot of nascent transcripts comparing significant changes in expression using a two-fold cutoff. (B) Boxplots illustrating the difference in Pol II ChIP-seq signals across genes. Log2 ratio values were subtracted (ex: Q log2 values were subtracted from 10 min log2 values). (C) TFIIB ChIP-seq analysis in Q cells and exit time points. Genes are linked across the time points and are aligned to TSS. (D) Western blot of flag-tagged Sua7 in Q and log cells with H3 as a loading control. (E) DNA content FACS analysis indicating cell-cycle progress during Q exit.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Gene Ontology (GO) analysis of genes within each cluster from k-means clustering shown in Figure 1C. The top five GO terms are presented per cluster and shown is the Fold-Enrichment of GO terms using an false discovery rate cutoff of <0.05.
+
 Highlighting the high level of transcription occurring in the first 10 min of quiescence exit, we observed a drop-off in Pol II occupancy levels around the first G2/M phase (240 min) (Figure 1C,D, Figure 1—figure supplement 1E). Indeed, when the data were sorted into k-means clusters across the time course, we noticed that many of the genes expressed in the 240 min time point were similar, but still not identical, to those expressed in log cells, suggesting a recovery to log-like gene expression profile takes hours post refeeding (Figure 1C, compare columns 4 and 5, Figure 1D). There was a ~1.7-fold increase in overall Pol II occupancy in the 10 min time point relative to that of log cells (Figure 1D, Figure 1—figure supplement 1B). Genes within each cluster had some enriched Gene Ontology (GO) terms, particularly in cluster 1, where rRNA processing and translation-associated genes were well represented (Figure 1—figure supplement 2). Together, these results demonstrate that transcription activates extremely rapidly and robustly in response to nutrient repletion.
 
-## Chromatin bears hallmarks of repression during early quiescent exit time points
+### Chromatin bears hallmarks of repression during early quiescent exit time points
 
 Given the exceptionally high transcriptional response during the first 10 min of quiescence exit, we wondered whether chromatin changes reflected hypertranscription. To this end, we performed ChIP-seq analysis of H3 to measure nucleosome occupancy levels genome wide over time. Global H3 patterns during the early exit time points, especially at the 5 min time point, were more similar to that of the quiescent state than to the 240 min time point (Figure 2A, compare columns 1–3), despite higher transcription levels. The most striking changes in histone occupancy during the early time points were within NDRs, where the pattern at the 10 min time point resembles the 240 min time point (Figure 2A,B). However, the H3 profiles outside of NDRs (Figure 2A, compare column 1–3 and 4 to the right of NDR, and Figure 2B) remain similar to that of quiescent state during the early stage of quiescent exit. In addition to nucleosome occupancy, we tested nucleosome positioning using MNase-seq analysis where nucleosomes with 80% of the digested chromatin is represented by mononucleosomes. Globally, nucleosome positions were stable across the early exit time points (Figure 2C).
 
@@ -49,9 +61,25 @@ We next tested if a burst of histone acetylation occurred during these early exi
 
 To assess a biological readout of the repressive chromatin environment, we turned to phenotypic analysis of TFIIS disruption. TFIIS is a general elongation factor that rescues stalled Pol II, and nucleosomal barriers have been shown to increase stalled Pol II (Noe Gonzalez et al., 2021). Given that Pol II stalling is common across the genome (Churchman and Weissman, 2011), it is paradoxical that the gene encoding TFIIS is not essential for viability in actively dividing cells, and its deletion does not cause strong growth defects (Hubert et al., 1983). Since Pol II must achieve a high level of transcription in the repressive chromatin environment during early quiescence exit, we hypothesized that TFIIS may play more critical roles during this period than during log culture. Indeed, in the absence of TFIIS (dst1∆), quiescent yeast cells exhibited defects in cell-cycle re-entry, where cells lacking TFIIS stall at the first G1 during exit, which is not the case during the mitotic cell cycle (Figure 2F). These results collectively revealed that the chromatin environment remains repressive during early quiescence exit.
 
-## In quiescence, RSC re-localizes to NDRs of genes expressed in exit
+### In quiescence, RSC re-localizes to NDRs of genes expressed in exit
 
 Given the modest changes in chromatin at most genes during the early stage of quiescence exit (Figure 2), we wondered whether MNase-sensitive or ‘fragile’ nucleosomes were present at the promoters of rapidly induced genes in quiescence and were removed in early exit. Thus, we performed a weaker (low) MNase digestion (10% mononucleosomes) (Figure 3A) and compared it to the stronger (high) MNase digestion (80% mononucleosomes) (Figure 3B). Supporting our hypothesis, comparing the weaker MNase digest to the stronger MNase digest revealed that genes in the top two quarters of the NDR width have MNase-sensitive fragments in quiescent cells, which are reduced during exit (Figure 3A, Figure 3—figure supplement 1A). H3 occupancy levels as measured by ChIP-seq analysis were reduced across all four quartiles, with a greater change occurring in the top quartile (Figure 3—figure supplement 1B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig3-v2.jpg)
+
+**Figure 3.:** (A) MNase-digested chromatin to 10% mononucleosomes (low digestion). (B) Metaplot of MNase-digested chromatin to 80% mononucleosomes (high digestion) in Q and 10 min time points. (C, D) ChIP-seq of the catalytic RSC subunit in quiescent and log cells at Pol II-transcribed genes. (E) ChIP-seq analysis of RSC shown across quartiles based on MNase-seq determined NDR width. (F) ChIP-seq of RSC at tRNA genes. (G) ChIP-seq of RSC and Pol II comparing RSC movement with Pol II into gene bodies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) MNase-digested chromatin to 10% mononucleosomes (5 U) or 80% mononucleosomes (50 U) in Q (dark blue line) and 10 min time points (light blue line). (B) ChIP-seq of H3 in quiescent cells (dark blue line) and 10 min of exit (light blue line). All panels show quartiles based on NDR width as described in the Materials and methods section.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Sth1 ChIP-seq from Q cells sorted into k-means clusters based on Sth1 occupancy. (B) MNase-seq data sorted into clusters shown in (A). Both low (5 U) and high (50 U) digests are shown on the graph for both Q and 10 min time points.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) ChIP-seq analysis of RSC and Pol II using antibodies against Flag-tagged Sth1 and Rpb3, respectively. Genes are sorted into k-means clustered and are linked across the different ChIPs. (B) Western blot analysis of RSC depletion. Both Sth1 and Sfh1 contain C-terminal HSV and AID tags for detection and depletion using IAA. Western blot was probed with an antibody recognizing the HSV epitope tag and Rpb3 (Pol II subunit) as a loading control. The addition of IAA is indicated by − or +.
 
 It has been recently suggested that the ATP-dependent chromatin remodeler RSC can remove MNase-sensitive particles or fragile nucleosomes from promoters to activate transcription (Kubik et al., 2018). Additionally, it was proposed that RSC-bound nucleosomes are remodeling intermediates that render such nucleosomes more MNase sensitive (Brahma and Henikoff, 2019). Thus, RSC was a strong candidate for regulating rapid transcription activation during quiescence exit. We performed ChIP-seq analysis of the RSC catalytic subunit Sth1 in quiescent cells (Figure 3E, Figure 3—figure supplement 2A). In quiescence, Sth1 exhibited a striking difference in binding pattern compared to log cells (Figure 3C,D). Sth1 bound to the majority of NDRs at gene promoters in quiescent cells as judged by ChIP signal down the heatmap (Figure 3E, Figure 3—figure supplement 3A). This result was distinct from log cells, where RSC was reported to occupy the widest NDRs but otherwise bind the −1, +1, and +2 nucleosomes for most highly expressed genes (Figure 3C; Yen et al., 2012; Kubik et al., 2018; Brahma and Henikoff, 2019). Consistent with previous literature, the clusters containing more RSC ChIP signals also had MNase-sensitive fragments at NDRs (Figure 3—figure supplement 2B, cluster 1).
 
@@ -59,33 +87,57 @@ The RSC binding pattern in quiescent cells instead mirrored a recently described
 
 We next sought to gain insight into how quiescent RSC occupancy patterns might predict Pol II occupancy during exit. To this end, we compared localization of RSC and Pol II in quiescence and exit. We first found that the presence of RSC at NDRs in quiescent cells and strong transcription in exiting cells co-localized (Figure 3—figure supplement 3A). Next, we examined RSC occupancy changes during quiescence exit at Pol II-transcribed genes. During quiescence exit, RSC began to move out of NDRs and into gene bodies as transcription increased (Figure 3G). These results suggested that RSC facilitates transcriptional activation upon exit and raised the possibility that RSC binding in NDRs may be a mechanism for cells to prepare for quiescence exit.
 
-## RSC depletion causes quiescent exit defects and global Pol II occupancy reduction during quiescence exit
+### RSC depletion causes quiescent exit defects and global Pol II occupancy reduction during quiescence exit
 
 To test the requirement of RSC in quiescence exit, we simultaneously depleted two essential subunits of the RSC complex, Sth1 and Sfh1, using the auxin degron system (Nishimura and Kanemaki, 2014), during quiescence entry (see Materials and methods; Figure 3—figure supplement 3B). Depletion of these subunits throughout the exit process (hereafter ‘-RSC’) caused a dramatic defect in cell-cycle progression upon quiescence exit, where the cells exhibited strong delays in exiting the first G1 stage (Figure 4A). This result contrasted with that in cycling cells, where rsc mutants or conditional alleles cause G2/M arrest (Tsuchiya et al., 1992).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig4-v2.jpg)
+
+**Figure 4.:** (A) DNA content FACS analysis indicating cell-cycle progression during Q exit in the presence (+) or absence (−) of RSC. (B) ChIP-seq analysis of Pol II across time in the presence or absence of RSC. Genes are sorted in the same fashion for all heatmaps. (C) Example tracks of data shown in (B) with RSC ChIP-seq in Q cells added. (D) H3 ChIP-seq sorted by NDR width (as determined by MNase-seq experiments).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) TFIIB ChIP-seq sorted into k-means clusters as in Figure 1C. (B) Pol II ChIP-seq sorted into k-means clusters as in Figure 1C. (C) MNase-seq of lowly digest (5 U) and highly (50 U) digested chromatin and H3 ChIP-seq at the 10 min time point with (blue line) and without (magenta line) RSC sorted into k-means clusters as in Figure 1C. (D) RSC (Sth1) ChIP-seq sorted into k-means clusters as in Figure 1C.
 
 To determine the impact of RSC depletion on hypertranscription during quiescence exit, we performed Pol II ChIP-seq analysis on cells exiting quiescence. In the presence of RSC, Pol II levels peaked at 10 min and substantially decreased at 30 min after the exit (Figure 4B, compare columns 3 and 4). As is the case in log cultures (Parnell et al., 2008; Kubik et al., 2019; Klein-Brill et al., 2019), Pol II occupancy decreased in the absence of an intact RSC complex in Q cells and upon nutrient repletion thereafter (Figure 4B). Pol II occupancy did eventually increase over time in the RSC-depleted samples. However, even after 30 min, Pol II did not reach the peak level of occupancy seen at the 10 min mark in the +RSC condition (Figure 4B, compare heatmaps 3 and 8, and Figure 4C). This suggests that the defect in Pol II occupancy during quiescence exit was not solely due to slower kinetics during the initial exit stage.
 
 As shown earlier in Figure 3G, we observed RSC leaving the NDRs and moving into gene bodies during quiescence exit. Therefore, we examined the impact of RSC depletion on nucleosome occupancy and positioning. H3 ChIP-seq showed that RSC is required for removal of histones within NDRs (Figure 4D), which is consistent with RSC’s role as the ‘NDR creator’ (Hartley and Madhani, 2009). We then plotted the data into the same k-means clusters shown in Figure 1C and cross compared TFIIB and RSC occupancy with RSC depletion on Pol II, nucleosome positions, and H3 occupancy at these sites (Figure 4—figure supplement 1). Genes across all clusters showed decreased Pol II occupancy, indicating Pol II loading defects shown in Figure 4B. However, genes that had high TFIIB levels and were strongly expressed (clusters 1 and 2) still exhibited detectable Pol II occupancy when RSC was depleted (Figure 4—figure supplement 1B). This coincided with a reduction in MNase-sensitive nucleosomes even in the absence of RSC. While H3 levels increased at clusters 1 and 2, these genes had the lowest H3 occupancy even in the absence of RSC (Figure 4—figure supplement 1C). Together, these data suggest that chromatin regulation by RSC is the key contributor to Pol II occupancy defects during quiescence exit when RSC is depleted. We, however, note that transcriptional defects upon RSC depletion, rather than the loss of RSC itself, can be at least partly responsible for chromatin defects observed upon RSC depletion.
 
-## RSC is required for Pol II passage through gene bodies
+### RSC is required for Pol II passage through gene bodies
 
 Given that RSC moves from NDRs into gene bodies during quiescence exit (Figure 3G), we next tested whether RSC could aid transcription after initiation. To this end, we selected ~2000 genes where RSC moved toward gene bodies and examined RSC localization at the 10 min time point of quiescent exit. This analysis showed uniform movement of RSC from NDR into gene bodies (Figure 5A). We next tested whether this RSC movement is dependent on Pol II transcription. To this end, we performed Sth1 ChIP-seq analyses during quiescence exit in the presence of a transcription inhibitor 1,10-phenanthroline (Figure 5B, Pol II control in Figure 5—figure supplement 1A). We once again utilized the clusters shown in Figure 1C to examine changes in localization at these sites. We note that at clusters 1 and 2, where Pol II normally is highly active, RSC is dramatically sequestered in the NDR (Figure 5—figure supplement 1B). This experiment demonstrated that the movement of RSC from NDRs into gene bodies was strongly inhibited by 1,10-phenanthroline, establishing that RSC re-localization during quiescent exit is dependent on Pol II transcription.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig5-v2.jpg)
+
+**Figure 5.:** (A) ChIP-seq of RSC in Q and 10 min time points. Genes are linked. (B) ChIP-seq of RSC at 10 min of exit in the presence and absence of the transcription inhibitor 1,10-phenanthroline. (C, D) ChIP-seq of RSC and Pol II during exit. (E, F) H3 ChIP-seq in quiescence and during exit in the presence and absence of RSC.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) ChIP-seq analysis of Pol II in the absence and presence of the transcription inhibitor 1,10-phenanthroline. (B) MNase-seq analysis assessing differences in MNase sensitivity in Q and 10 min for cells with and without RSC. The +2 nucleosome MNase-digestion differences are highlighted by the pink arrows.
+
 Co-transcriptional movement of RSC into gene bodies suggested a possibility that RSC may help Pol II passage through gene bodies. To test this, we determined the effects of RSC depletion on Pol II localization during early time points of quiescence exit. Figure 5C,D show that RSC depletion affects Pol II localization in at least two ways during early quiescence exit. First, consistent with Figure 4B, the robust increase in the amount of Pol II over genes is strongly decreased upon RSC depletion. In addition, upon RSC depletion, Pol II sharply accumulates at transcription start sites (TSSs) at the 5 min mark, which continued to the 10 min mark. In sharp contrast, PoI II accumulates at slightly more downstream at the 5 min mark and moves mostly to downstream regions at the 10 min time point in the presence of RSC. At these loci, NDRs are relatively shallow in quiescence but histone density rapidly decreases upon quiescence exit in the presence of RSC (Figure 5E). In the absence of RSC at these sites, however, histone density is unexpectedly lower at NDRs in quiescence but does not change during quiescence exit (Figure 5F), suggesting defective chromatin structure at and downstream of the NDR. Together, these results are consistent with the notion that co-transcriptional movement of RSC facilitates passage of Pol II through nucleosomes immediately downstream of TSSs through chromatin regulation.
 
-## RSC suppresses abnormal upstream transcription initiation
+### RSC suppresses abnormal upstream transcription initiation
 
 The fact that Pol II accumulated upstream of TSSs at the 5 min mark upon RSC depletion (Figure 5C) suggested possible defects in TSS selection. To test this possibility, we examined the 4tU-seq profiles in which there appeared to be an enrichment of RNA signal directly upstream and downstream of TSSs. We took the log2 ratio of RNA signal in the depleted condition versus the non-depleted condition at the 10 min time point. We sorted the genes using k-means clusters and found 864 targets in which upstream transcription was present (Figure 6A, three clusters shown in Figure 6—figure supplement 1, and an example of a representative locus in Figure 6B). At these sites, we observed RSC ChIP-seq signals at NDRs in quiescence and then spreading during exit (Figure 6C). Indeed, at PTP3, we observe opening of the NDR in the +RSC condition and the NDR remaining absent when RSC was depleted (Figure 6B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig6-v2.jpg)
+
+**Figure 6.:** (A) Heatmap showing the log2 ratio of nascent sense transcripts in RSC-depleted versus non-depleted cells. Shown are 864 genes that have upregulated transcripts upstream of genes in the sense direction and have RSC ChIP signals. (B) Example gene of aberrant upstream transcript. Arrows direct to defects: blue arrow points to loss of NDR, yellow arrow points to gain of NDR, and pink arrow points to upstream RNA signal. (C) Heatmaps and metaplots of RSC ChIP-seq during Q and exit at genes shown in (A). (D) Heatmaps and metaplots of MNase-seq in exit at the genes shown in (A).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Heatmap showing the log2 ratio of nascent sense transcripts in RSC-depleted versus non-depleted cells. Genes were clustered using k-means clustering based on nascent RNA signal. (B) ChIP-seq of RSC sorted in the same order as (A). (C) ChIP-seq of Pol II sorted in the same order as in (A). (D) MNase-seq of chromatin digested to 80% mononucleosomes (50 U) sorted into the same order as in (A). Note cluster III is the cluster chosen for the main Figure 6.
+
 This analysis revealed that upon RSC depletion, a large number of genes (864) exhibited increased nascent sense-strand RNA signals starting upstream of their normal TSSs, demonstrating widespread defects in TSS selection. Canonical NDRs at these sites were severely reduced in the absence of RSC (Figure 6D; Figure 6—figure supplement 1D). Examination of individual loci revealed that, in addition to filling of an NDR at the normal TSSs, an NDR is created upstream, which overlaps with ectopic transcription observed at an upstream TSS (see Figure 6B for an example). These results suggest that RSC facilitates selection of accurate transcription initiation sites through proper NDR formation upstream of protein coding genes during the burst of transcription during quiescence exit. This is likely a quiescence-specific function of RSC, or a result of the robust hypertranscription event during exit, as depletion of Sth1 in cycling cells mostly repressed transcription initiation with relatively few new upstream TSSs (Kubik et al., 2019; Klein-Brill et al., 2019).
 
-## RSC is required for suppression of antisense transcripts during quiescence exit
+### RSC is required for suppression of antisense transcripts during quiescence exit
 
 Given the robust transcriptional response during the early minutes of quiescence exit (Figure 1), we examined whether aberrant transcripts might also arise at RSC target loci during quiescence exit when RSC was depleted. We sorted the ratio of antisense transcript levels with and without RSC depletion into five k-means clusters (Figure 7A). We found antisense transcripts arising in the absence of RSC, particularly at clusters I and IV. RSC signals were observed at NDRs upstream of sense transcripts in all clusters, with cluster II having the lowest levels of RSC (Figure 7B) and the highest levels of sense transcription (Figure 7A). Most genes had RSC bound at the promoters of the sense genes in quiescence, with highest RSC binding in the cluster I genes (Figure 7B). Strikingly, nucleosome positioning and occupancy were heavily impacted in the cluster I and IV genes upon RSC depletion in the sense direction, where NDRs became more resistant to MNase and nucleosomes in gene bodies were shifted toward the 5′-ends of genes (Figure 7C,D). This was in contrast to genes in clusters II and V where NDRs were largely open (Figure 7C,D). These results collectively showed that chromatin structure at the cluster I and IV genes is especially dependent on RSC. In both clusters of genes, RSC signals and RSC-dependent chromatin changes are not apparent around the start sites of antisense transcripts. Therefore, suppression of antisense transcripts is unlikely to be a direct role for RSC. Instead, it is likely that these genes have an intrinsic property to allow antisense transcription to occur when not properly regulated, and RSC is targeted to them to ensure sense transcription takes place through formation of proper NDRs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/67033/elife-67033-fig7-v2.jpg)
 
-**Figure 7.:** (A) Heatmaps of the log2 ratio of nascent RNAs that are RSC targets and give rise to antisense transcripts. Data are sorted into 5 k-means clusters based on the antisense transcripts. All data in this figure are sorted in the same fashion. (B) ChIP-seq of RSC in quiescent cells and during exit. (C) H3 ChIP-seq at the 10 min time point with and without RSC. (D) MNase-seq at the 10 min time point with and without RSC.Figure 7—source data 1.
+**Figure 7.:** (A) Heatmaps of the log2 ratio of nascent RNAs that are RSC targets and give rise to antisense transcripts. Data are sorted into 5 k-means clusters based on the antisense transcripts. All data in this figure are sorted in the same fashion. (B) ChIP-seq of RSC in quiescent cells and during exit. (C) H3 ChIP-seq at the 10 min time point with and without RSC. (D) MNase-seq at the 10 min time point with and without RSC.
 
 ## Discussion
 
@@ -109,40 +161,225 @@ The transcriptional response during quiescent exit was dampened by depleting the
 
 ## Materials and methods
 
-## Yeast strains, yeast growth media, quiescent cell purification, and exit time courses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>WT; prototroph</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT5781</td>
+      <td>MATa RAD5+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>WT; prototroph</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT5782</td>
+      <td>MATa RAD5+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Sth1 and Sfh1 degrons</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT7222</td>
+      <td>MATa can1-100 RAD5 + Sth1-3HSV-IAA1-T10-KanMX Sfh1-3HSV-IAA1-T10-Hyg</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Sth1 and Sfh1 degrons</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT7224</td>
+      <td>MATa can1-100 RAD5 + Sth1-3HSV-IAA1-T10-KanMX Sfh1-3HSV-IAA1-T10-Hyg</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>dst1∆</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT7308</td>
+      <td>MATa RAD5 + dst1∆::KanMX</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>dst1∆</td>
+      <td>Tsukiyama Lab</td>
+      <td>YTT7309</td>
+      <td>MATa RAD5 + dst1∆::KanMX</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indole-3-acetic acid (IAA)</td>
+      <td>Sigma</td>
+      <td>I3750-5G-A</td>
+      <td>1 mg/mL powder added to culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rpb3 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>665003</td>
+      <td>WB: (1:1000) dilution ChIP: (2 μL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ser5p (rat monoclonal)</td>
+      <td>Active Motif</td>
+      <td>61085</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ser2p (rat monoclonal)</td>
+      <td>Active Motif</td>
+      <td>61083</td>
+      <td>WB: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSV (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>H6030-200UG</td>
+      <td>WB: (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>1791</td>
+      <td>WB: (1:1000) ChIP: (1 μL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Flag (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>F1804</td>
+      <td>ChIP: (2 μL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G magnetic</td>
+      <td>Invitrogen</td>
+      <td>10004D</td>
+      <td>ChIP: (20 μL)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Zymolyase 100T</td>
+      <td>AMSBIO</td>
+      <td>120493–1</td>
+      <td>MNase-seq; 10 mg per 100 units OD660 cells</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Micrococcal nuclease</td>
+      <td>Worthington</td>
+      <td>LS004798</td>
+      <td>MNase-seq 50U (high digests) 5U (low digests)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AMPure XP</td>
+      <td>Beckman</td>
+      <td>A63880</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (K. lactis)</td>
+      <td>Spike-in control strain</td>
+      <td>Nathan Clark Lab</td>
+      <td>NRRL Y-1140</td>
+      <td>100:1 cell mixture (S. cerevisiae: K. lactis)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Thiouracil</td>
+      <td>Sigma</td>
+      <td>440736–1G</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboPure Yeast Kit</td>
+      <td>Thermo Fisher</td>
+      <td>AM1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MTSEA biotin-XX</td>
+      <td>Biotium</td>
+      <td>90066</td>
+      <td>16.4 μM in 20 mM HEPES pH 7.4 1 mM EDTA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin beads</td>
+      <td>Invitrogen</td>
+      <td>65001</td>
+      <td>(40 μL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNeasy kit</td>
+      <td>Qiagen</td>
+      <td>217084</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ovation SoLo kit; custom AnyDeplete</td>
+      <td>NuGEN/Tecan</td>
+      <td>Contact rep for custom reagent (yeast rRNA depletion)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains, yeast growth media, quiescent cell purification, and exit time courses
 
 The S. cerevisiae strains used in this study are listed in the Key Resources Table and are isogenic to the strain W303-1a with a correction for the mutant rad5 allele in the original W303-1a (Thomas and Rothstein, 1989). Yeast transformations were performed as previously described (Ausubel FM et al., 1988). All cells were grown in YPD medium (2% Bacto Peptone, 1% yeast extract, 2% glucose). We note that quiescent (Q) yeast need to be grown in YPD using ‘fresh’ (within ~3 months) yeast extract as a source. To purify Q cells, liquid YPD cultures were inoculated with a single colony into liquid cultures (colonies were no older than 1 week). Yeast cells were grown in Erlenmeyer flasks 10 times the liquid volume for 7 days at 30°C and shaking at 180 RPM. Q cells were purified by percoll gradient centrifugation as previously described (Allen et al., 2006). Briefly, percoll was diluted 9:1 with 1.5 M NaCl into 25 mL Kimble tubes and centrifuged at 10,000 RPM for 15 min at 4°C. Seven-day cultures were pelleted, washed with ddH2O, resuspended in 1 mL of ddH2O, and gently pipetted over a pre-mixed percoll gradient. Four hundred OD660 were pipetted onto a 25 mL gradient. Gradients with loaded cells were centrifuged for one hour at 1000 RPM, 4°C. The upper, non-quiescent cell population and the middle, ~8 mL fraction, were carefully discarded via pipetting. The remaining volume was washed twice with ddH2O in a 50 mL conical tube at 3000 RPM, 10 min each.
 
 Q exit experiments were performed as follows: Q cells were harvested and added to YPD to 1 OD660/mL. Cells were grown at 25°C to slow the kinetics for feasibility. For ChIP-seq and MNase-seq experiments, cells were grown to the appropriate time and then crosslinked for 20 min (described in more detail in the sections below).
 
-## Depletion of RSC subunits, Sth1 and Sfh1
+### Depletion of RSC subunits, Sth1 and Sfh1
 
 The yeast strains YTT 7222 and 7224 were grown in 5 mL overnight YPD cultures, back diluted for four doublings, and inoculated to 0.002 OD660 into the appropriate YPD volume for a given experiment. Cells were grown for 16 hr and monitored for glucose exhaustion using glucose strips. Six hours after glucose exhaustion, 1 mg/mL of indole-3-acetic acid (IAA) (Sigma, I3750-5G-A) was added, in powder form, to the culture. IAA remained in the culture for 7 days before harvesting Q cells. Q cells were purified as described above, and depletion efficiency was determined by western blot analysis (Figure 3—figure supplement 1B).
 
-## Western blot analysis
+### Western blot analysis
 
 Yeast cells were lysed by bead beating in trichloroacetic acid, as previously described (Cox et al., 1997). Proteins were resolved on 8% polyacrylamide gels and transferred to nitrocellulose membranes. Membranes were incubated with primary antibodies: anti-Rpb3 (Biolegend, 665003 1:1000 dilution), anti-Ser5p (Active Motif, 61085 1:1000 dilution), anti-Ser2p (Active Motif, 61083, 1:1000 dilution), and anti-HSV (Sigma, 1:500). Following primary incubation, membranes were incubated with either anti-mouse or anti-rabbit secondary antibodies (Licor, 1:10,000). Protein signals were visualized by the Odyssey CLx scanner.
 
-## ChIP-seq
+### ChIP-seq
 
 One hundred OD660 U of cells were crosslinked and sonicated in biological duplicate using the protocol described in Rodriguez et al., 2014. Proteins were immunoprecipated from 1 μg chromatin and 1 μL of anti-H3 (Abcam, 1791) conjugated to 20 μL protein G magnetic beads (Invitrogen, 10004D) per reaction. For Pol II ChIPs, we used an antibody against the Rpb3 subunit (2 μL per reaction, Biolegend 665004) conjugated to 20 μL protein G magnetic beads (Invitrogen, 10004D). For Sth1 ChIP experiments, we used an antibody against the Flag-epitope tag, FLAG M2 mouse monoclonal (Sigma Aldrich, F1804) and conjugated to 20 μL protein G beads (Invitrogen, 10004D). Libraries were generated using the Ovation Ultralow v2 kit (NuGEN/Tecan, 0344) and subjected to 50 bp single-end sequencing on an Illumina HiSeq 2500 at the Fred Hutchinson Cancer Research Center genomics facility.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 We used bowtie2 to align raw reads to the sacCer3 reference genome (Langmead and Salzberg, 2012). Reads were then filtered using SAMtools (Li et al., 2009). Bigwig files of input-normalized ChIP-seq data were generated from the filtered bam files using deepTools2 (Ramírez et al., 2014) and dividing the IP data by the input data. All ChIP-seq IP data were normalized to RPKM and the corresponding input samples. Pol II ChIP-seq data were both input normalized and spike-in normalized. Matrices for metaplots were generated in deepTools2 using the annotation file from Xu et al., 2017. Clustering was performed using the k-means function in deepTools2. For GO analysis, the lists of genes within each cluster were entered into http://geneontology.org/ database and the first five GO terms with an false discovery rate of <0.05 are shown in Figure 1—figure supplement 2.
 
-## MNase-seq
+### MNase-seq
 
 Cell growth and crosslinking were done in the same fashion as in ChIP-seq experiments. Generally, we followed the protocol in Rodriguez et al., 2014, with changes described here. Cells were spheroplasted using 10 mg zymolyase (100T, AMSBIO, 120493–1) per 100 OD660 cells. For Q cells, zymolyase treatment could take up to 2 hr. We monitored the cells via microscopy and stopped the spheroplasting step when ~80% of the cells were spheroplasted. MNase digestion was performed as described in Rodriguez et al., 2014. High digests (80% mononucleosomes) required 50 U of MNase (Worthington, LS004798), and for the low digests, chromatin was treated with 10 U of MNase. From this step, chromatin was reverse crosslinked as described in Rodriguez et al., 2014. Following reverse crosslinking, RNase, and proteinase-K digestion, DNA was phenochloroform extracted. Any large, uncut genomic DNA species was separated out using Ampure beads (Beckman). Sequencing libraries were generated from the purified DNA using the Ovation Ultralow v2 kit (NuGEN, 0344). Libraries were subjected to 50 bp paired-end sequencing on an Illumina HiSeq 2500 at the Fred Hutchinson Cancer Research Center genomics facility.
 
-## MNase-seq analysis
+### MNase-seq analysis
 
 We used bowtie2 to align raw reads to the sacCer3 genome and filtered reads using SAMtools as described above for ChIP-seq analysis. Bigwig files of input-normalized ChIP-seq data were similarly generated from the filtered bam files using deepTools2 and the MNase option to center the reads around nucleosome dyads. Data represented in the paper were filtered to mononucleosome sizes using deepTools2. Mapped reads were normalized by RPKM. For NDR-width quartiles shown in Figure 3, NDRs were sorted into decreasing width and then divided by four. Each cluster is 25% of the NDRs.
 
-## Nascent RNA-seq
+### Nascent RNA-seq
 
 Generally, nascent RNA-seq experiments were performed as described in Bonnet et al., 2014; Duffy et al., 2015. For the 0 min and 5 min samples, we added 100 and 50 OD660 of Q cells, respectively, to YPD containing 5 mM 4-thiouracil (Sigma, 440736–1G). Cells were incubated with 4tU for 5 min before pelleting (1 min, 3500 RPM) and flash frozen in liquid nitrogen. For the 10 min time points, 50 OD units of quiescent cells were released into YPD for 5 min before an additional 5 min incubation with 4tU at a final concentration of 5 mM. All time points were labeled with 4tU for a total of 5 min before pelleting and freezing. Total RNA was isolated using Ambion’s RiboPure Yeast Kit (Thermo, AM1926). S. cerevisiae cells were lysed in the presence of Kluvomyces lactis (K. lactis) cells in a 100:1 mixture. RNA was treated with DNAseI according to the TURBO DNase kit (Thermo, AM2238). Forty microgram RNA was then biotinylated with MTSEA biotin-XX (diluted in 20% DMF) at a final concentration of 16.4 µM in 20 mM HEPES pH 7.4 and 1 mM EDTA at room temperature for 30 min. Unreacted MTS-biotin was removed from samples by phenol:chloroform:isoamyl-alcohol extraction and resuspended in 100 µL nuclease-free water. Strepavidin beads (Invitrogen 65001) were washed with high-salt wash buffer (100 mM Tris, 10 mM EDTA, 1 M NaCl, 0.05% Tween-20) and blocked for 1 hr in high-salt wash buffer containing 40 ng/µL glycogen. Forty microliters of streptavidin beads were added to the RNA samples and incubated for 15 min at room temperature. Beads were washed three times in 1 mL high-salt wash buffer and eluted for 15 min at room temperature in 50 µL streptavidin elution buffer (100 mM DTT, 20 mM HEPES, 2.7, 1 mM EDTA, 100 mM NaCl, 0.05% Tween-20). The resulting RNA was then purified and concentrated using the Qiagen miRNeasy kit (#217084). Libraries were prepared from 5 ng of RNA using the Ovation SoLo kit (NuGEN/Tecan, custom AnyDeplete; contact Tecan for ordering this kit for yeast). Libraries were subjected to 50 bp paired-end sequencing on an Illumina HiSeq 2500 at the Fred Hutchinson Cancer Research Center genomics facility.
 
-## Nascent RNA-seq analysis
+### Nascent RNA-seq analysis
 
 We used bowtie2 to align raw reads to the sacCer3 and K. lactis (Ensembl ASM251v1) genomes and filtered reads using SAMtools as described above for ChIP-seq analysis. Reads were normalized to the spike-in control and RPKM. Differential expression analysis was performed using DESeq2 (Love et al., 2014). For Figure 6, sense transcripts from log2 ratio data (−RSC/+RSC) were sorted into three k-means clusters. The cluster containing enriched upstream transcripts was used for further analysis and is shown in Figure 6. Clustering information is also provided in the source data files.

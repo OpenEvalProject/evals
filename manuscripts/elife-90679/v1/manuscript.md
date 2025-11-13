@@ -17,16 +17,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02ymw8z06 Department of Medical Pharmacology & Physiology, University of Missouri Columbia United States
-2. https://ror.org/02ymw8z06 Bioinformatics and Analytics Core, Division of Research, Innovation and Impact, University of Missouri Columbia United States
-3. https://ror.org/04vmvtb21 Department of Pharmacology, Tulane University New Orleans United States
-4. https://ror.org/01800zd49 Smooth Muscle Research Centre, Dundalk Institute of Technology Dundalk Ireland
+1. Department of Medical Pharmacology & Physiology, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
+2. Bioinformatics and Analytics Core, Division of Research, Innovation and Impact, University of Missouri Columbia United States ([ROR:02ymw8z06](https://ror.org/02ymw8z06))
+3. Department of Pharmacology, Tulane University New Orleans United States ([ROR:04vmvtb21](https://ror.org/04vmvtb21))
+4. Smooth Muscle Research Centre, Dundalk Institute of Technology Dundalk Ireland ([ROR:01800zd49](https://ror.org/01800zd49))
 
 † Corresponding author
 
 ## Abstract
 
-Collecting lymphatic vessels (cLVs) exhibit spontaneous contractions with a pressure-dependent frequency, but the identity of the lymphatic pacemaker cell is still debated. Here, we combined immunofluorescence and scRNAseq analyses with electrophysiological methods to examine the cellular constituents of the mouse cLV wall and assess whether any cell type exhibited morphological and functional processes characteristic of pacemaker cells. We employed inducible Cre mouse models to target-specific cell populations including CkitCreER T2 to target interstitial cells of Cajal-like cells, PdgfrβCreER T2 to target pericyte-like cells; PdgfrαCreER TM to target CD34 + adventitial cells; and Myh11CreER T2 to target lymphatic muscle cells (LMCs) directly. These inducible Cre lines were crossed to the fluorescent reporter Rosa26 , the genetically encoded Ca mTmG 2+ sensor GCaMP6f, and the light-activated cation channel rhodopsin2 (ChR2). Only LMCs consistently, but heterogeneously, displayed spontaneous Ca 2+ events during the diastolic period of the contraction cycle, and whose frequency was modulated in a pressure-dependent manner. Further, optogenetic depolarization with ChR2 induced propagated contractions only in LMCs. Membrane potential recordings in LMCs demonstrated that the rate of diastolic depolarization significantly correlated with contraction frequency. These findings support the conclusion that LMCs, or a subset of LMCs, are responsible for mouse cLV pacemaking.
+Collecting lymphatic vessels (cLVs) exhibit spontaneous contractions with a pressure-dependent frequency, but the identity of the lymphatic pacemaker cell is still debated. Here, we combined immunofluorescence and scRNAseq analyses with electrophysiological methods to examine the cellular constituents of the mouse cLV wall and assess whether any cell type exhibited morphological and functional processes characteristic of pacemaker cells. We employed inducible Cre mouse models to target-specific cell populations including CkitCreERT2 to target interstitial cells of Cajal-like cells, PdgfrβCreERT2 to target pericyte-like cells; PdgfrαCreERTM to target CD34+ adventitial cells; and Myh11CreERT2 to target lymphatic muscle cells (LMCs) directly. These inducible Cre lines were crossed to the fluorescent reporter Rosa26mTmG, the genetically encoded Ca2+ sensor GCaMP6f, and the light-activated cation channel rhodopsin2 (ChR2). Only LMCs consistently, but heterogeneously, displayed spontaneous Ca2+ events during the diastolic period of the contraction cycle, and whose frequency was modulated in a pressure-dependent manner. Further, optogenetic depolarization with ChR2 induced propagated contractions only in LMCs. Membrane potential recordings in LMCs demonstrated that the rate of diastolic depolarization significantly correlated with contraction frequency. These findings support the conclusion that LMCs, or a subset of LMCs, are responsible for mouse cLV pacemaking.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Presently, no investigations have clearly identified the cellular identities of 
 
 ## Results
 
-## Methylene blue staining reveals a minor population of cells in mouse cLVs
+### Methylene blue staining reveals a minor population of cells in mouse cLVs
 
 Methylene blue staining was used to identify an ICLC population in the human lymphatic thoracic duct (Briggs Boedtkjer et al., 2013). In our isolated and cleaned lymphatic inguinal axillary collecting vessels (IALVs), methylene blue stained a significant number of cells with variable density along the length of the IALV and heterogeneous cell morphologies (Figure 1A–C). A significant portion of the stained cells resembled lymphatic vessel-associated macrophages with an elongated shape, while other cells were smaller and circular (Figure 1D–F). Methylene blue also appeared to stain mast cells as there were large ovoid cells with intracellular granules on the adventitial surface of the vessel. In addition, methylene blue stained a minor population of cells that exhibited long and thin axon-like extensions which appeared to have a slight helical orientation, with a small central body and nucleus (Figure 1C). None of these cell populations were aligned with the longitudinal axis of the vessel that would permit efficient coupling or regulation across the circumferential layer of LMCs required for coordinated propagation along the length of the vessel.
 
@@ -46,51 +46,127 @@ Methylene blue staining was used to identify an ICLC population in the human lym
 
 **Figure 1.:** Representative image of an isolated and cleaned IALV after methylene blue staining which revealed cells of various morphology (A). (B) is the zoomed-in image of the yellow dotted box in A which contained large ovoid cells with granular staining (B, yellow asterisks). Fine cellular extensions (red asterisks) stained by methylene blue in some cells were visualized with color channel separation and division (C). (D, E) Similar to B and C, but in a separate vessel which stained with a higher density of methylene blue stained cells, some of which had limited cellular processes. (F) Focal reconstruction from imaging a methylene blue stained IALV using an upright microscope and immersion objective. Methylene blue staining was performed in IALVs isolated from five mice (n = 5).
 
-## Immunofluorescence Imaging of IALVs Stained for ICLC, LEC, and LMC Markers
+### Immunofluorescence Imaging of IALVs Stained for ICLC, LEC, and LMC Markers
 
 We next stained IALVs for the putative telocyte/ICLC markers CKIT, CD34, and the intermediate filament VIMENTIN, which have been previously utilized for ICLC identification in human and sheep lymphatic tissues (McCloskey et al., 2002; Briggs Boedtkjer et al., 2013). Additionally, an antibody to the intermediate filament DESMIN was used to label muscle cells (McCloskey et al., 2002). IALVs stained for cKIT (Figure 2B) showed robust signal in large ovoid cells with a non-segmented circular nucleus (Figure 2A), characteristic of mast cells that were in the outer part of the adventitia. Similarly, CKIT-stained populations of elongated cells as well as circular cells with variable densities were observed throughout the IALV wall, similar to methylene blue+ cell populations (Figure 2B, J). Staining for CD34 revealed a large population of cells that were seemingly contiguous along the length of the vessel. The CD34+ cells generally had multiple lobular processes and a ‘oak leaf’-like appearance, typically a characteristic of fibroblasts, though some contained short, thin dendrite-like extensions (Figure 2C, G, K). The CD34+ cells were negative for DESMIN (Figure 2H), which primarily stained the circumferential LMCs (Figure 2F). Note that the largely non-circumferential cell organization in this region is typical for a lymphatic endothelial valve site (Bridenbaugh et al., 2013a). Furthermore, CD34+ and cKIT+ cells were separate populations (Figure 2D, L). A VIMENTIN antibody labeled lymphatic endothelial cells (LECs) which exhibited a horizontal cobblestone morphology in parallel with the vessel axis (Figure 2E, I), while also co-labeling the majority of the CD34+ cells (Figure 2H) and CKIT+ cells (Figure 2L). Videos of the half vessel z-stacks are provided (Figure 2—video 1; Figure 2—video 2; Figure 2—video 3 for Figure 2D, H, L, respectively).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig2-v1.jpg)
+
+**Figure 2.:** Representative immunofluorescent max projections of half vessel confocal image stacks imaged from mouse IALVs stained for ICLC markers. DAPI (A), cKIT (B), and CD34 (C) and their merged image (D). Representative max projections of the intermediate filament VIMENTIN (E), the intermediate filament DESMIN (F), CD34 (G), and their merged image (H). Representative max projection of VIMENTIN (I), CKIT (J), CD34 (K), and their merged image (L). Scale bar = 100 µm for all images.
+
 Of the cells stained in Figure 2, the CD34+ population was intriguing due to its high density and distribution throughout the length of the IALV, which potentially would be conducive to effective regulation of LMC excitability. In addition to CD34 and VIMENTIN, PDGFRα staining is also commonly ascribed to both telocytes (Vannucchi et al., 2013; Xiao et al., 2013; Zhou et al., 2015) as well as fibroblasts (Kimura et al., 2021; Clayton et al., 2022). We performed immunofluorescence imaging for PGDFRα counterstained with CD34 and markers for LMCs, LECs, and pericytes. As noted in Figure 2, CD34+ cells (Figure 3A) did not co-label LMCs (Figure 3D), which were smooth muscle actin+ (ACTA2, Figure 3B) and CALPONIN+ (Figure 3C). However, nearly all CD34+ (Figure 3E) cells were also PDGFRα+ (Figure 3F, H). Occasionally, some overlap of PDGFRα and ACTA2 signal was noted (Figure 3G, H). LECs staining with PECAM1 (Figure 3I) revealed the expected rectangular elongated cobblestone morphology that was distinct from the PDGFRα+ cells (Figure 3J, L). Staining for CALPONIN also specifically labeled LMCs (Figure 3K) but not PDGFRα+ cells (Figure 3L). Lastly, we stained for PDGFRα, CD34, and the commonly used pericyte marker PDGFRβ (Figure 3M–P). As above, CD34 and PDGFRα were highly colocalized (Figure 3Q, R, T), and many of the CD34+ and PDGFRα+ cells were also PDGFRβ+ (Figure 3P). PDGFRβ also stained some circumferential LMCs (Figure 3Q). During the imaging of mouse IALVs for these markers, we also observed that the lymphatic secondary endothelial valves were populated by elongated cells that stretched the length of the valve leaflet and were positive for CD34, PDGFRα, and PDGFRβ, with varying intensities. These cells could be observed in most, if not all, the valves we assessed and found within both leaflets of the valve (Figure 3R, S). These cells had long, thin extensions that were branched, along with apparent dendrite-like extensions with a morphology that closely resembled those described for pericytes or telocytes (Popescu and Faussone‐Pellegrini, 2010). PDGFRα+ or CD34+ cells with this morphology were only observed in the valve leaflets, and thus seemed insufficient to regulate pacemaking as normal contractions are observed in isolated cLVs without secondary valves (van Helden, 1993; Gashev et al., 2002). Representative z-stacks demonstrating these valve-located ‘telocyte’ shaped cells (Figure 3R, S) are provided in Figure 3—videos 1 and 2.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig3-v1.jpg)
+
+**Figure 3.:** We stained isolated mouse IALVs with cellular markers used to differentiate various cell types observed in collecting lymphatic vessels (cLVs). Half vessel image stacks were taken with confocal microscopy and the resulting representative max projections are shown. (A) CD34 stained cells and LMC staining with ACTA2 (B) and CALPONIN (C) and the corresponding merged (D) image. There was significant overlap in (E) CD34 staining along with the fibroblast marker PDGFRα (F) compared to LMC staining with ACTA2 (G) and the merged (H) image. The endothelial marker PECAM1 (I) to delineate LECs with PDGFRα staining (J), and the LMC marker CALPONIN (K) with the merged image (L) revealed three separate populations of cells. PDGFRβ (O) stained many cells that were CD34 (M) and PDGFRα (N) positive, as seen in the merge imaged (P), in addition to PDGFRβ signal detected in the LMC layer (Q). Max projections of only the luminal frames of a z-stack at lymphatic valve locations revealed PDGFRβ, CD34, and PDGFRα labeling in bipolar shaped cells with long extensions that traveled throughout the valve leaflets (R, S). Control IALV (T) stained only with secondary antibody. Scale bar = 100 µm for all images.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative max projections and their corresponding threshold adjusted image for colocalization analysis for PDGFRα (A), CD34 (B), and their colocalized signal (C) and for comparison, we tested MYH11 (D) and PDGFRα (E) colocalization (F) using the FIJI BIOP-JACoP colocalization plugin on the z-stacks acquired by confocal microscopy. Pearson’s coefficient (G) and Mander’s coefficients (H) were calculated from n = 3 separate stained IALVS, each from a separate mouse for CD34 and PDGFRα and n = 4 for MYH11 and PDGFRα. Magnification for A–C ×40 and ×25 for D–F. Significant differences in colocalization below 0.05 are signified by the overhead lines.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Max projection of confocal imaging of an IALV stained for lymphatic endothelial cells (LECs) with PECAM1 (A), lymphatic muscle cells (LMCs) with MYH11 (B), and for PDGFRα (C) with the corresponding merge file (D). Orthogonal views of the z-stack with (E) showing a single slice in the z stack and E’ and E” the orthogonal views. White dotted boxes outline locations where PDGFRα signal is observed between LMC and LEC layers. Scale bar is 100 µm in (D) and 50 µm in (E).
 
 We next determined the degree of colocalization between the CD34 and PDGFRα signal given the significant overlap in their staining profile. Colocalization analysis of PDGFRα (Figure 3—figure supplement 1A) and CD34 (Figure 3—figure supplement 1B) and their colocalization (Figure 3—figure supplement 1C) was determined with the FIJI BIOP-JACoP tool. The Pearson’s coefficient was 0.83 (Figure 3—figure supplement 1D) and Mander’s coefficient of overlap was 0.80 for the PDGFRα+ signal and 0.87 for the CD34 signal (Figure 3—figure supplement 1E). Colocalization between MYH11 and PDGFRα was significantly lower (Figure 3—figure supplement 1D–F) with a Pearson’s coefficient of 0.30 (Figure 3—figure supplement 1G), whereas the Mander’s coefficient for MYH11 overlap with PDGFRα was 0.077 and 0.043 for PDGFRα signal overlap with MYH11 (Figure 3—figure supplement 1H). The high degree of colocalization of CD34 and PDGFRα signal informed our use of the commercially available transgenic PdgfrαCreERTM mouse model to target these cells. The vast majority of the PDGFRα+ cells were located in the adventitial layer (Figure 3—figure supplement 2A–D), which varied between 1 and 3 PDGFRα+ cells thick (Figure 3—figure supplement 2E). Under this layer, we observed only a single layer of largely circumferential LMCs stained by MYH11 (Figure 3—figure supplement 2B) sitting atop a single layer of PECAM1+ LECs (Figure 3—figure supplement 2A). We also observed occasional PDGFRα+ cells or their extensions located in the sub-endothelial space (Figure 3—figure supplement 2E’, E”) positioned between the LECs and the LMCs.
 
-## Use of inducible Cre-mediated recombination of Rosa26mTmG to delineate and characterize specific IALV cell types
+### Use of inducible Cre-mediated recombination of Rosa26mTmG to delineate and characterize specific IALV cell types
 
 After confirming the presence of VIMENTIN+, cKIT+, and CD34+ PDGFRα+ positive cells within the mouse IALV, we sought to further investigate these cell populations by using constitutive and inducible Cre recombinase expressing mouse lines. IALVs from the constitutively active PdgfrαCre-Rosa26mTmG and Cspg4Cre-Rosa26mTmG mice had GFP fluorescence in the majority of LMCs as well as in the fibroblast-shaped cells found within the IALV wall (Figure 4A, B). While informative of expression of the LMC progenitor cells, neither constitutive Cre would be useful in delineating cell types. In contrast to the constitutively active PdgfrαCre, the tamoxifen-inducible PdgfrαCreERTM line drove significant recombination in only the fibroblast-shaped cells previously stained for CD34 and PDGFRα but not in LMCs or LECs (Figure 4C). PdgfrβCreERT2, commonly used to label pericytes, drove recombination in both a minor population of the LMCs and the fibroblast-shaped cells. CkitCreERT2, which capably drives recombination in the ICCs of the GI tract (Baker et al., 2016), drove recombination only in a small population of irregularly spaced, large ovoid cells on the surface of the IALV (Figure 4E), although recombination in one or two LECs could occasionally be detected (not shown). Finally, Myh11CreERT2 drove recombination in nearly all LMCs, which were largely circumferentially oriented with dendrite-like, cell-cell contacts visible between them and without significant GFP fluorescence in either LECs or the fibroblast-shaped CD34+ PDGFRα+ cell population (Figure 4F). Additionally, some LMCs maintained the bipolar shape but had secondary extensions forming a ‘Y’ shape in which an adjacent LMC typically filled the inner void. A very minor population of recombined cells in the Myh11CreERT2-Rosa26mTmG IALVs was smaller and irregularly patterned with multiple fine axon-like projections or ruffled edges (Figure 4F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig4-v1.jpg)
 
-**Figure 4.:** Rosa26 labeling and fidelity to target putative pacemaker cell populations.mTmGStitched montages of serial max projections of GFP and tdTomato signal from live IALVs isolated from PdgfrαCre-Rosa26 (mTmGA), Cspg4Cre-Rosa26 (mTmGB), PdgfrαCreERTM-Rosa26 (mTmGC), PdgfrβCreERT2-Rosa26 (mTmGD), CkitCreERT2-Rosa26 (mTmGE), and Myh11CreERT2-Rosa26 (mTmGF). IALVs were digested into single cells and GFP+ cells were purified via FACS from Prox1-eGFP (G), Myh11CreERT2-Rosa26 (mTmGH), PdgfrαCreERTM-Rosa26 (mTmGI), and PdgfrβCreERT2-Rosa26 (mTmGJ) mice. Representative gels demonstrating RT-PCR products corresponding to the respective genes used in the promoter of each specific transgene employed to drive either eGFP or Cre-mediated recombination of Rosa26 from each GFPmTmG+-sorted population (K–N) to assess fidelity. Images are representative of IALVs from at least three separate mice (n = 3). FACS and RT-PCR were repeated at least three times (n = 3 mice).Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4 without markup.
+**Figure 4.:** Stitched montages of serial max projections of GFP and tdTomato signal from live IALVs isolated from PdgfrαCre-Rosa26mTmG (A), Cspg4Cre-Rosa26mTmG (B), PdgfrαCreERTM-Rosa26mTmG (C), PdgfrβCreERT2-Rosa26mTmG (D), CkitCreERT2-Rosa26mTmG (E), and Myh11CreERT2-Rosa26mTmG (F). IALVs were digested into single cells and GFP+ cells were purified via FACS from Prox1-eGFP (G), Myh11CreERT2-Rosa26mTmG (H), PdgfrαCreERTM-Rosa26mTmG (I), and PdgfrβCreERT2-Rosa26mTmG (J) mice. Representative gels demonstrating RT-PCR products corresponding to the respective genes used in the promoter of each specific transgene employed to drive either eGFP or Cre-mediated recombination of Rosa26mTmG from each GFP+-sorted population (K–N) to assess fidelity. Images are representative of IALVs from at least three separate mice (n = 3). FACS and RT-PCR were repeated at least three times (n = 3 mice).
 
 To complement the morphological and cell density findings obtained with confocal microscopy, we digested IALVs from the inducible Cre-Rosa26mTmG lines, and the Prox1-eGFP line as a control, into single-cell suspensions and sorted the respective GFP+ populations (Figure 4G–J) for RT-PCR profiling (Figure 4K). We first focused on determining the molecular fidelity of the sorted cells based on the gene promoters used to drive each inducible Cre model to discern cellular overlap. In agreement with the confocal images, sorted GFP+ cells from PdgfrβCreERT2-Rosa26mTmG IALVs expressed Pdgfrb but also Myh11 and Pdgfra. In contrast, GFP-sorted cells from PdgfrαCreERTM IALVs expressed Pdgfra and Pdgfrb, but with no detectable expression of Myh11. GFP+ cells from sorted Myh11CreERT2-Rosa26mTmG IALVs had high expression for Myh11 as well as Pdgfrb, but did not express Pdgfra. IALVs from CkitCreERT2-Rosa26mTmG mice were not pursued for FACS due to the exceptionally sparse recombination observed along the IALV.
 
-## Characterization of the cellular components of the mouse IALVs by scRNAseq and FACS–RT-PCR
+### Characterization of the cellular components of the mouse IALVs by scRNAseq and FACS–RT-PCR
 
 The results from the immunofluorescence staining, Rosa26mTmG reporter imaging, and FACS–RT-PCR experiments suggested that both LMCs and AdvCs can express Pdgfrb. To provide further clarity and detail to the cellular populations within the mouse cLV wall and potential subsets within those broad cell types, we performed scRNAseq on isolated and cleaned inguinal axillary cLVs from male and female mice. The resulting uniform manifold approximation and projection (UMAP) (Figure 5A) revealed a host of cell types which had three main clusters corresponding to LECs, LMCs, and AdvCs (Figure 5A). We assessed the expression of genes that correspond to the markers from our earlier immunofluorescence staining as well as cell identification markers commonly used within the literature to identify each cell cluster (Figure 5B). Cell identity was confirmed by commonly used markers (Figure 5B) and the top differentially expressed genes (Figure 5—figure supplement 1A). Feature plots for the LEC markers Prox1 (Figure 5C) and Flt4 (Figure 5D), LMC markers Myh11 (Figure 5E) and Cnn1 (Figure 5F), and the AdvCs markers Pdgfra (Figure 5G) and Lumican (Figure 5H) were quite specific for labeling their respective cell clusters. Very few Kit (Figure 5I) expressing cells were observed in accordance with our imaging results. Pdgfrb was observed in both LMC and AdvC clusters (Figure 5J) while the remaining cell clusters were of immune origin as they expressed the gene Ptprc encoding the hematopoietic marker CD45 (Figure 5K). Notably, the previous genes suggested to identify LMCs in a previous scRNASeq study (Kenney et al., 2022), Dpt, Pi16, and Ackr3, were largely absent in LMCs and instead were expressed in a minor population of AdvCs (Figure 5—figure supplement 1B). We provide a further sub-clustering breakdown of the LECs (Figure 5—figure supplement 2), LMCs (Figure 5—figure supplement 3), AdvCs (Figure 5—figure supplement 4), and a detailed expression profile of the immune cell clusters (Figure 5—figure supplement 5). Further assessment of the LEC subcluster included a putative lymphatic endothelial ‘up valve’ cell population in subcluster 8 which expressed high levels of Prox1, Cldn11, Itga9, Gja4, and Neo1 and ‘down-valve’ population in cluster 6 which expressed Clu, Adm, Gja4, and Lypd6 (Figure 5—figure supplement 2C) which mapped well to previous RNAseq datasets (González-Loyola et al., 2021; Petkova et al., 2023; Yoon et al., 2024; Takeda et al., 2019). The top differentially expressed genes in the putative up-valve population in cluster 8 included Irx3, Neo1, Tub, Ano4, and Fxyd2, and we noted Cacna1e, Fgf14, and Irf1 in the down-valve cluster 6. Analysis of the LMC subclusters did not reveal any significant differences in the expression of known pacemaking-associated genes Ano1 or Itpr1 at our initial conditions of Log2FC of 0.5. However, we provide an overview of the typical ion channel families expressed in LMCs in Figure 5—figure supplement 3B–I. The AdvC cells could be further subclustered into multiple populations (Figure 5—figure supplement 4A and C) with little evidence of LMC gene contamination as these cells lacked Myh11, Kcnma1, and Tagln despite expression of Cacna1c, Ano1, and Gjc1. Over 75% of AdvCs expressed Pdgfra (Figure 5—figure supplement 4D) and 65% of the total AdvCs co-expressed both Pdgfra and Cd34. Our immunofluorescent colocalization of PDGFRα and CD34 staining was also supported as 72% of AdvCs expressing either Cd34 or Pdgfra co-expressed both genes (Figure 5—figure supplement 5D). The vast majority of AdvCs expressing Pdgfrb (Figure 5—figure supplement 4E) or Cspg4 (Figure 5—figure supplement 4F) also expressed Pdgfra. Expression of Ano1, Gjc1, and Cacna1c was also observed in some of the AdvCs, and most of those cells also co-expressed Pdgfra, supporting further use of the PdgfrαCreERTM line (Figure 5—figure supplement 4G–I).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-v1.jpg)
+
+**Figure 5.:** IALVs were cleaned and isolated from 10 Rosa26mTmG mice and digested into a single-cell suspension for scRNAseq analysis with the 10X platform. (A) Uniform manifold approximation and projection (UMAP) of the various cell populations that compromise the mouse IALV, though some mammary epithelia contamination was present (populations 18 and 19). (B) Heatmap of commonly used genes for cell identification for each of the cell clusters. Feature plots to assess cell cluster expression of the genes shown in Figure 4 inlcuding the lymphatic endothelial cell (LEC) markers Prox1 (C) and Flt4 (D), lymphatic muscle cell (LMC) markers Myh11 (E) and Calponin 1 (F, Cnn1), fibroblast markers Pdgfra (G) and Lum (H, Lumican), ICC marker Kit (I), the pericyte and smooth muscle precursor marker (Pdgfrb) (J), and the hematopoietic marker Ptprc (K).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Heatmap of top 4–5 differentially expressed genes, based on p value, for each major cell cluster identified. Lymphatic endothelial cells (LECs) (clusters 0, 1, 2, 11), lymphatic muscle cells (LMCs) (clusters 5, 6), and IALV adventitial cells (AdvC, 3, 7, 8, 9, 10, 13) were comprised of multiple clusters. (B) Bubble plot of common identification genes reveals that the previously reported LMC transcriptome markers Dpt, Pi16, and Ackr3 are specific for a subpopulation of the AdvCs and not LMCs.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The LECs were further subclustered to reveal 10 putative LEC subclusters (0–9) as shown in the uniform manifold approximation and projection (UMAP) (A) and the top differentially expressed genes amongst those subclusters are provided in the adjacent heatmap (B). (C) Bubble plot showing subcluster 8 was significantly enriched for previously documented LEC up-valve genes including Itga9, Cldn11, and Neo1 and cluster 6 had down-valve gene signature including Clu and Adm. The top 30 differentially expressed genes in cluster 8, both positive and negative fold change regulated, are labeled in the volcano plot(D).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The LMCs could be subclustered into four putative subclusters (0–3) as shown in the uniform manifold approximation and projection (UMAP) (A). We profiled these subclusters based on their expression of the typical smooth muscle markers (B), SR-associated genes (C), voltage-gated Ca2+ channels (D), voltage-gated Na+ channels and Na+ transporters implicated in lymphatic pacemaking (E), voltage-gated K+ channels (F), Ca2+-activated K+ channels (G), inward-rectifying K+ channels and two-pore domain K+ channels (H), and Cl− channels (I).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** AdvCs could also be further subclustered into multiple populations as shown in the uniform manifold approximation and projection (UMAP) (A). Bubble plot of genes used as Cre drivers and genes associated with pacemaking revealed subcluster 10 had expression of Ano1, Gjc1, and Cacna1c but with only minimal evidence of LMC contamination as indicated by muscle signature genes Myh11, Kcnma1, and Tagln (B). (C) Heatmap of the top differentially expressed genes among each of the subclusters. We assessed co-expression of Pdgfra with Cd34 (D) to confirm our immunofluorescence imaging (Figure 3—figure supplement 1) and assessed the co-expression of Pdgfra with the pericyte markers Pdgfrb (E) and Cspg4 (F). We further assessed co-expression of Pdgfra and the genes linked with contractile dysfunction Ano1 (G), Gcj1 (H), and Cacna1c (I) to ensure PdgfrαCreER would target the AdvCs expressing these genes. The cyan-colored slice of the pie chart indicates the minor population of cells expressing these genes that did not express Pdgfra.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Lymphatic vessels are host to numerous immune cell populations, including monocyte, macrophage, and dendritic cell populations revealed by immunofluorescent staining for eGFP in the ‘Macgreen’ (Csf1r-eGFP) reporter mice (A). Staining for PDGFRα (B) demonstrates that AdvCs are distinct from the Csf1r-eGFP + cells, nor do they stain for the hematopoietic marker PTPRC (also known as CD45) (C, D). Bubble plot of our scRNASeq analysis of IALVs revealed macrophages (cluster 4), moDCs and cDC2 (cluster 14), and cDC1 cells (cluster 17) based off identifying gene markers (B). (C) Bubble plot of T-cell markers revealed multiple populations of T cells including naive double-negative T-cells (Yang et al., 2021) and naive Cd4+ and Cd8+ T-cells. A bubble plot for B-cell markers showed that cluster 15 had an expression profile for immature and mature B2 B-cells (D) (Luo et al., 2022a).
+
 While scRNAseq highlighted the depth of heterogeneity of the cellular composition of the mouse cLV, we wanted to validate the actual recombined cell populations from the inducible Cre-Rosa26mTmG lines. We profiled each inducible Cre-driven recombination of Rosa26mTmG via FACS-purified cells and RT-PCR for common markers for endothelial cells, muscle cells, and pericytes. Nos3 (eNOS) expression was observed only in the Prox1-eGFP sorted cells, and LECs also expressed Vim, Mcam, and had weak but detectable signal for Cd34 (Figure 6A). Myh11CreERT2 sorted cells showed expression of smooth muscle actin (Acta2), the alpha subunit of the L-type voltage-gated Ca2+ channel Cacna1c (Cav1.2), Desmin (Des), Mcam, and Vimentin (Vim, Figure 6B). In addition to the genes expressed in Myh11CreERT2 recombined cells, Cdh5, Cd34, and Cspg4 (also known as Ng2) were also detected in cells sorted from PdgfrβCreERT2 IALVs (Figure 6C). As expected, the GFP+ cells sorted from PdgfrαCreERTM IALVs expressed mRNA for Cd34, weak signal for Cspg4, and Vimentin, but not Desmin, Acta2, nor the pericyte marker Mcam (Figure 6D). Cacna1c was expressed in cells FACS purified from both PdgfrβCreERT2 and Myh11CreERT2 IALVs and sorted cells from PdgfrαCreERTM IALVs without any evidence that Myh11-expressing muscle cells contaminated the latter. These findings confirmed the separate cell populations achieved with PdgfrαCreER- and Myh11CreERT2-mediated recombination, at least as it pertains to the Rosa26mTmG reporter. These findings were largely validated by our scRNASeq dataset. Cdh5 (Figure 6E) and Nos3 (Figure 6F) were almost exclusively expressed in the LEC clusters, while Acta2 (Figure 6G) was highly expressed in the LMC cluster. We also observed that Cacna1c was highly expressed in the LMCs (Figure 6H) and some AdvCs. Cd34 was widely expressed in AdvCs matching our immunofluorescence data. Cd34 expression was also seen in LECs (Figure 6I) although we did not observe a signal in LECs in our earlier immunofluorescence staining (Figure 3). Cspg4 was observed in a minor population of AdvCs (Figure 6J). The intermediate filament Vim (Figure 6K) was ubiquitously expressed across all clusters expressed, but Des was primarily expressed in LMCs and some subsets of AdvCs (Figure 6K, L). The endothelial and pericyte marker Mcam (also referred to as Cd146) was expressed in LECs and LMCs but was largely absent in AdvCs (Figure 6M). We followed up the identification of Cacna1c expression in the PdgfrαCreERTM sorted cell population by assessing the expression of other genes involved in either electrical conduction (Gjc1) (Figure 6N) or pacemaking (Ano1) (Figure 6O) of IALVs. Expression of Ano1 and Gjc1 was observed in PdgfrαCreERTM Rosa26mTmG FACS-purified cells (Figure 6P).
 
-## Inducible deletion of either Cacna1c, Ano1, or Gjc1 with PdgfrαCreERTM did not affect cLV pacemaking
+![Figure 6.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig6-v1.jpg)
+
+**Figure 6.:** Expanded RT-PCR profiling of genes to discriminate lymphatic endothelial cells (LECs), lymphatic muscle cells (LMCs), and other cell types in our GFP+ sorted cells from Prox1-eGFP (A), Myh11CreERT2-Rosa26mTmG (B), PdgfrβCreERT2-Rosa26mTmG (C), and PdgfrαCreERTM-Rosa26mTmG (D). Feature plots for the genes assessed in A-D in our IALV scRNAseq analysis confirmed those results (E-M). In addition to a population of AdvCs expressing Cacna1c, we also noted expression of Gjc1 (N), which was also observed in LECs, and Ano1 (O) in the AdvC clusters. We confirmed this expression using GFP+ cells sorted from PdgfrαCreERTM-Rosa26mTmG IALVs for RT-PCR (P) and ruled out hematopoietic or LEC contamination. All RT-PCRs were performed two to four times for each gene over each sorted cell population collected from different mice.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative RT-PCR results profiling purified GFP+ cells purified from IALVs isolated from PdgfrαCreERTM-Rosa26mTmG via FACS. PDGFRα cells expressed the multipotent markers Klf4, Ly6a, Gli1, Itgb1, Eng, and Cd44 (A) with total brain cDNA serving as a positive control (B). Representative RT-PCR results showing lack of expression of some of these markers in the GFP+ cells purified from Myh11CreERT2-Rosa26mTmG (C) or Prox1-eGFP mice, in contrast to the RFP+ population from Myh11CreERT2-Rosa26mTmG mice (D). RT-PCRs were repeated at least two times from separate purified cell populations from different mice. Feature plots of only the AdvCs cluster highlight populations of cells that express genes associated with multipotency such as Ly6a (E), Klf4 (F), Gli1 (G), Itgb1 (H), Eng (I), Cd44 (J). Expression of LY6A protein was confirmed with immunofluorescence. Representative max projections of IALVs stained for LY6A (K), PDGFRα (L), MYH11 (M), and the corresponding merged file (N). Scale bar is 100 µm.
+
+### Inducible deletion of either Cacna1c, Ano1, or Gjc1 with PdgfrαCreERTM did not affect cLV pacemaking
 
 The expression of the genes critically involved in cLV function—Cacna1c, Ano1, and Gjc1—in the PdgfrαCreERTM-Rosa26mTmG purified cells and scRNAseq data prompted us to generate PdgfrαCreERTM-Ano1fl/fl, PdgfrαCreERTM-Gjc1fl/fl, and PdgfrαCreERTM-Cacna1cfl/fl mice for contractile tests. We isolated popliteal cLVs and tested their pacemaker and contractile function in response to a physiological pressure range of 0.5–10 cmH2O, under normal conditions. However, we did not detect any significant differences in pacemaking or contractile function as assessed by contraction frequency, ejection fraction, and vessel tone in popliteal cLVs studied from PdgfrαCreERTM-Ano1fl/fl mice (Figure 7A–C) or PdgfrαCreERTM-Gjc1fl/fl mice (Figure 7D–F). There was no difference in contraction frequency of cLVs from PdgfrαCreERTM-Cacna1cfl/fl mice compared to floxed control mice; however, we noted a mild but statistically significant increase in ejection fraction at the lowest pressure, 0.5 cmH2O (Figure 7H). Additionally, vessels isolated from PdgfrαCreERTM-Cacna1cfl/fl mice also had a statistically significant increase in vessel tone (Figure 7I) noted at the two-way level although we did not resolve significance at any specific pressure with this sample. No differences in normalized contraction amplitude, fractional pump flow, or diastolic diameter were observed (Figure 7—figure supplement 1). In total, despite the presence of transcript for these critical genes in Pdgfra expresing cells, PdgfrαCreERTM-mediated deletion of Gjc1, Cacna1c, or Ano1 failed to recapitulate previous reports of the significant contractile defects using the Myh11CreERT2 line to delete the same genes (Castorena-Gonzalez et al., 2018b; Zawieja et al., 2019; To et al., 2020; Davis et al., 2022).
 
-## PDGFRα+ adventitial fibroblasts express markers associated with multipotency
+![Figure 7.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig7-v1.jpg)
+
+**Figure 7.:** Summary of the contractile parameters recorded from popliteal cLVs in PdgfrαCreERTM-Ano1fl/fl, PdgfrαCreERTM-Gjc1fl/fl mice, PdgfrαCreERTM-Cacna1cfl/fl mice. Contraction frequency (A, D, G), ejection fraction (B, E, H), and vessel tone (C, F, I) were assessed. No statistically significant differences were observed in cLVs isolated from PdgfrαCreERTM-Ano1fl/fl and PdgfrαCreERTM-Gjc1fl/fl mice across these three parameters. Mean and SEM shown, n = 6 popliteal vessels from three mice PdgfrαCreERTM-Ano1fl/fl mice and n = 9 popliteal vessels from six mice Ano1fl/fl mice. Mean and SEM shown, n = 5 popliteal vessels from three mice PdgfrαCreERTM-GJC1fl/fl mice and n = 11 popliteal vessels from eight mice GJC1fl/fl mice. Mean and SEM shown, n = 6 popliteal vessels from three mice PdgfrαCreERTM-Cacna1cfl/fl mice and n = 8 popliteal vessels from eight mice Cacna1cfl/fl mice. The contractile data from control Cacna1cfl/fl vessels is a subset of previously published data that was separated by sex (Davis et al., 2022) while they are combined here. * denotes significance at p < 0.05 which 0.10 > p > 0.05 are reported as text. Normalized contraction amplitude, fractional pump flow, end diastolic diameter can be found in Figure 7—figure supplement 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Summary of the contractile parameters recorded from popliteal cLVs in PdgfrαCreERTM-Ano1fl/fl, PdgfrαCreERTM-Gjc1fl/fl mice, PdgfrαCreERTM-Cacna1cfl/fl mice. No differences in normalized contraction amplitude (A, D, G), fractional pump flow (B, E, H), or end diastolic diameter (C, F, J) were observed. The contractile data from control Cacna1cfl/fl vessels is a subset of previously published data that was separated by sex (Davis et al., 2022) while they are combined here. Mean and SEM shown, n = 6 popliteal vessels from three mice PdgfrαCreERTM-Ano1fl/fl mice and n = 9 popliteal vessels from six mice Ano1fl/fl mice. Mean and SEM shown, n = 5 popliteal vessels from three mice PdgfrαCreERTM-GJC1fl/fl mice and n = 11 popliteal vessels from eight mice Gjc1fl/fl mice. Mean and SEM shown, n = 6 popliteal vessels from three mice PdgfrαCreERTM-Cacna1cfl/fl mice and n = 8 popliteal vessels from eight mice Cacna1cfl/fl mice.
+
+### PDGFRα+ adventitial fibroblasts express markers associated with multipotency
 
 Despite the lack of cLV pacemaking deficits in the PdgfrαCreERTM genetic knockout lines, we were curious to discern further insight into the role or function of the PDGFRα+ CD34+ cells since they comprise a significant portion of the lymphatic cLV wall. We performed RT-PCR on FACS-purified cells from Prox1-eGFP, Myh11CreERT2-Rosa26mTmG, and PdgfrαCreERTM-Rosa26mTmG IALVs for multipotency markers including Krüppel-like factor 4 (Klf4), lymphocyte antigen 6 family member A (Ly6a) (also referred to as stem cell antigen 1, Sca1), and Gli1, with Cd34 and Pdgfra used to assess purity. Recombined (GFP+) cells from Myh11CreERT2-Rosa26mTmG had weak expression of Klf4 and Gli1 but were negative for Ly6a (Figure 6—figure supplement 1A). PdgfrαCreERTM recombined cells strongly expressed Klf4, Ly6a, and Gli1 (Figure 6—figure supplement 1A). LECs sorted from Prox1-eGFP IALVs were positive for Klf4, weak for Ly6a, and positive for Cd34 but negative for Gli1 and Pdgfra (Figure 6—figure supplement 1B). The unrecombined population (tdTomato+) cells in the Myh11CreERT2- Rosa26mTmG IALVs (Figure 6—figure supplement 1B) showed expression for all the markers as expected. PdgfrαCreERTM recombined cells also expressed the mesenchymal stromal cell markers Itgb1, Eng, and Cd44 (Figure 6—figure supplement 1C, positive control in 9D). However, expression of these genes was not homogenous across all the AdvCs population based on our scRNAseq analysis (Figure 6—figure supplement 1E–J). We performed immunofluorescence staining for one of these multipotent markers, LY6A (Figure 6—figure supplement 1K) in the adventitial cells with PDGFRα (Figure 6—figure supplement 1L) and counter staining for LMCs with MYH11 (Figure 6—figure supplement 1M). The morphology and staining pattern of LY6A overlapped significantly with PDGFRα staining and not MYH11 staining (Figure 6—figure supplement 1N, Figure 6—video 1).
 
-## Optogenetic stimulation of inducible Cre-driven channel rhodopsin 2
+### Optogenetic stimulation of inducible Cre-driven channel rhodopsin 2
 
 We next used optogenetic methods to test whether the cell populations recombined by either CkitCreERT2, PdgfrαCreERTM, or Myh11CreERT2 could elicit a coordinated contraction. The ChR2-tdTomato construct appeared more sensitive to recombination than Rosa26mTmG, in some cases resulting in LMC expression of ChR2-tdTomato in PdgfrαCreERTM and CkitCreERT2 popliteal cLVs based on cell morphology. Care was taken to image each vessel for tdTomato (Figure 8A, C, E) prior to stimulation at its respective sites under brightfield conditions for diameter tracking (Figure 8B, D, F) to ensure fidelity of the cell types and morphologies observed in Figures 3 and 4. As with Rosa26mTmG, CkitCreERT2 drove the ChR2-tdTomato expression primarily in large ovoid cells found on the adventitia of the vessel. Cells were stimulated by positioning an optical laser fiber (tip diameter 2–3 μm) near a ChR2+ cell, with an illumination field of 10–50 μm. Localized photo-stimulation of these cells did not initiate coordinated contractions (Figure 8G–J, S). Similarly, photo-stimulation of ChR2-tdTomato expressing cells driven by PdgfrαCreERTM failed to initiate a coordinated contraction (Figure 8K–N, T). In contrast, localized photo-stimulation of LMCs, using Myh11CreERT2 to express Chr2-tdTomato, resulted in a propagated contraction in the popliteal vessel (Figure 8O–R, U). In total, only 3.25% of photo-stimulation events for CkitCreERT2-ChR2-TdTomato and 3.03% of photo-stimulation events for PdgfrαCreERTM-ChR2-tdTomato were associated with a contraction, while 88.5% of photo-stimulation events for Myh11CreERT2-ChR2-tdTomato induced contractions (Figure 8V). The optogenetic triggering of contractions observed in PdgfrαCreERTM-ChR2-tdTomato and CkitCreERT2-ChR2-TdTomato vessels is likely due to the happenstance of spontaneous contractions occurring during the time and proximity of optogenetic stimulation (see Methods). As a control, we also used non-induced (no tamoxifen) Myh11CreERT2-ChR2-tdTomato cLVs and contractions were associated with only 7% of photo-stimulation events, in line with the PdgfrαCreERTM and CkitCreERT2 results (Figure 8V). As mast cells are not ascribed to any tissue-specific pacemaking behavior, these similar low percentages observed between these three groups are suggestive of random coincidence. Brightfield videos of the photo-stimulation and representative traces for CkitCreERT2-ChR2-TdTomato, PdgfrαCreERTM-ChR2-tdTomato, and Myh11CreERT2-ChR2-tdTomato are provided in Figure 8—video 1; Figure 8—video 2; Figure 8—video 3.
 
-## Confocal Ca2+ imaging of GCaMP6f expression driven by CkitCreERT2, PdgfrαCreERTM, and Myh11CreERT2 over the lymphatic contraction cycle
+![Figure 8.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig8-v1.jpg)
+
+**Figure 8.:** Representative max projections of tdTomato-ChR2 signal in popliteal collecting lymphatic vessels (cLVs) isolated from CkitCreERT2-ChR2-tdTomato (A), PdgfrαCreERTM-ChR2-tdTomato (C), and Myh11CreERT2-ChR2-tdTomato (E) with their corresponding brightfield image (B, D, F), respectively. Time-lapse brightfield images every 0.5 s starting at stimulation t = 0 for CkitCreERT2-ChR2-tdTomato (G–J), PdgfrαCreERTM-ChR2-tdTomato (K–N), and Myh11CreERT2-ChR2-tdTomato (O–R). The I bar denotes the inner diameter at t = 0 over time, and white asterisks denote the contraction. Representative diameter trace for the popliteal cLV demonstrates spontaneous contractions with the dotted boxes indicating the optical stimulation event in the respective brightfield images of the time lapse images. Isolated cLVs from CkitCreERT2-ChR2-tdTomato (S), PdgfrαCreERTM-ChR2-tdTomato (T), and Myh11CreERT2-ChR2-tdTomato (U) were stimulated with light pulses (red dashed lines) and the summation of contraction triggering for each genotype (V). Mean and SEM are shown, **** denotes p < 0.0001. Contraction recorded from at least six popliteal cLVs from 3 mice per genotype.
+
+### Confocal Ca2+ imaging of GCaMP6f expression driven by CkitCreERT2, PdgfrαCreERTM, and Myh11CreERT2 over the lymphatic contraction cycle
 
 Subcellular calcium transients are observed in many pacemaker cells. We imaged IALVs from CkitCreERT2-GCaMP6f mice, which primarily resulted in expression of GCaMP6f in the large ovoid cells in the adventitia (Figure 9A), although we occasionally observed GCaMP6f expression in both LEC and LMCs (Figure 9A) as depicted in the maximum projection of the acquisition period (Figure 9—video 1) and the spatio-temporal maps (STMs). The aberrant expressions of GCaMP6f in cells that demonstrated the typical cobblestone morphology of LECs or the circumferential LMCs that exhibited Ca2+ flashes and diastolic Ca2+ transients (Figure 9D, E, green arrows) prior to contraction were not included in the CkitCreERT2-GCaMP6f analysis. Of 39 CkitCreERT2-GCaMP6f cells analyzed, only 1 CkitCreERT2-GCaMP6f cell exhibited a spontaneous Ca2+ transient during the recording period (Figure 9B, C, Cell 7). However, the Ca2+ transient in that cell did not align temporally with the ‘Ca2+ flash’ of the LMC with incidental GCaMP6f expression (Figure 9C, D). Despite the lack of Ca2+ transients under the baseline conditions throughout the IALV contraction cycle, many CkitCreERT2-GCaMP6f cells exhibited a robust and prolonged Ca2+ event in response to stimulation with the mast cell activator compound 48–80 (Figure 9F–H). Notably, the Ca2+ events in the ovoid cells elicited by administration of compound 48–80 did not acutely alter the LMC Ca2+ activity (Figure 9I, J). Similarly, the majority of PdgfrαCreERTM-GCaMP6f expressing cells also largely lacked Ca2+ transients and resulted in incidental LMC GCaMP6f expression (Figure 10B, Figure 10—video 1). Some cells exhibited high basal Ca2+ levels (Figure 10A, D) sustained throughout the recording, but without oscillations (Figure 10B, C). In contrast, spurious GCaMP6f expression in a circumferentially oriented LMC displayed Ca2+ flashes associated with contraction (Figure 10B, C). Of the 21 PdgfrαCreERTM -GCaMP6f cells assessed, only 3 exhibited Ca2+ transients, and those were singular events contained within a single cell within the 20-s imaging period (Figure 10E, F). The lack of either global or consistent Ca2+ transients within either CkitCreERT2-GCaMP6f or PdgfrαCreERTM-GCaMP6f IALVs was in stark contrast to Ca2+ imaging of Myh11CreERT2-GCaMP6f IALVs. Myh11CreERT2 drove GCaMP6f expression in nearly all circumferential LMCs (Figure 11A), which exhibited global and nearly synchronous Ca2+ flashes in 100% of the analyzed cells (Figure 11B, C). Additionally, non-synchronous stochastic and localized Ca2+ transients were commonly observed in the LMCs during diastole (Figure 11D, E, Figure 11—video 1). Many LMCs exhibited Ca2+ transients during each diastolic period while other LMCs displayed few Ca2+ transients or lacked diastolic Ca2+ transients during the recording period (Figure 11B). In aggregate, only 1 of 39 CkitCreERT2-GCaMP6f cells and 3 of 21 PdgfrαCreERTM-GCaMP6f cells displayed a Ca2+ transient during recording, while 20 of 43 LMCs displayed at least one diastolic transient apart from 43 of 43 LMCs with global Ca2+ flashes.
 
-## Pressure dependency of subcellular Ca2+ transients in LMCs
+![Figure 9.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig9-v1.jpg)
+
+**Figure 9.:** Representative max projection (A) of GCaMP6f signal over time in an IALV isolated from a CkitCreERT2-GCaMP6f mouse with ROI indicated around individual cells, primarily large ovoid cells, but also including a circumferential lymphatic muscle cell (LMC) (cell 10) and a horizontal lymphatic endothelial cell (LEC) (cell 11). Of cells 1–9, only cell 7 had any Ca2+ activity (red arrows) during the recording time as indicated by the spatio-temporal maps (STMs) from each ROI (B) and their normalized F/F0 plots in (C). In contrast, the LMC in ROI 10 had both rhythmic global Ca2+ events (D) that spanned the cell axis (vertical axis) in the STM (E) in addition to localized Ca2+ events intervening the time between global events (green arrows). Representative max projection of GCaMP6f signal over time after stimulation with C48–80 (F) with many large ovoid cells displaying long-lasting global Ca2+ events (G, H) while not immediately affecting the LMC Ca2+ dynamics (I). Calcium recordings were made in n = 6 IALVs from four mice.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig10-v1.jpg)
+
+**Figure 10.:** Representative max projections of GCaMP6f signal over time in IALVs isolated from PdgfrαCreERTM-GCaMP6f mice (A, D). ROIs were made around cells and GCaMP6f recorded over time to generate the corresponding spatio-temporal maps (STMs) (B, E) for each cell and plots (C, F), respectively. Once again, incidental recombination occurred in a lymphatic muscle cell (LMC) which displayed rhythmic Ca2+ flashes (C) while the slight undulation in the other cells is due to movement artifact (B). Red arrows indicate the limited local Ca2+ activity observed in two cells from a PdgfrαCreERTM-GCaMP6f IALV. Calcium recordings were made in n = 6 IALVs from four mice.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig11-v1.jpg)
+
+**Figure 11.:** Representative max projections of GCaMP6f signal over time in an IALVs isolated from Myh11CreERT2-GCaMP6f mice (A). LMCs were outlined with ROIs to assess GCaMp6F signal over time. Rhythmic global flashes (B) were entrained across all the LMCs in the FOV (C) with many cells exhibiting diastolic Ca2+ release events. Cells exhibiting at least one diastolic Ca2+ event, within the context of our focal plane constraints, over the recorded time were denoted by the red asterisks. The plot in (D) magnifies the first diastolic period, seconds 1–3 of C, to assist in visualizing the lack of coordination of the diastolic events. (E) Max projection of the pseudo-linescan analysis across the axis of the vessel to highlight diastolic Ca2+ transients in all cells in the field of view and their lack of coordination across the cells (x-axis). The white dotted box shows the first diastolic period plotted in (D). Representative images from calcium recordings from n = 4 IALVs from four mice.
+
+### Pressure dependency of subcellular Ca2+ transients in LMCs
 
 We next sought to test whether diastolic Ca2+ transients were pressure-dependent, given that cLVs exhibit pressure-dependent chronotropy (Zawieja et al., 2019). GCaMP6f-expressing LMCs were studied at intraluminal pressures of 0.5–5 cmH2O in the presence of nifedipine, which blocked the Ca2+ flashes but not local Ca2+ transients (Figure 12A). As intra-luminal pressure was increased, there was a marked increase in the occurrence of Ca2+ transients (Figure 12B, Figure 12—videos 1–3). These calcium transients were converted into particles (PTCLs) for further analysis as previously described (Drumm et al., 2019b). Activity maps of Ca2+ PTCL activity were generated (Figure 12C) and PTCL area (Figure 12D) and frequency were determined at each pressure (Figure 12E). The maps show that as pressure increased, the area of the LMC layer displaying a Ca2+ transient increased (as evident by the increase in PTCL area) as did the distribution of Ca2+ PTCLs across the LMC layer (Figure 12C). Across 11 experiments, the area of the field of view activated by PTCLs/frame increased from 73.2 ± 17.7 µm2/frame at 0.5 cmH2O to 108.6 ± 20.5 µm2/frame at 2 cmH2O and was further enhanced to 139.2 ± 26.9 µm2/frame at 5 cmH2O (Figure 12F). The number of PTCLs per frame also increased with pressure, from 2.9 ± 0.4 at 0.5 cmH2O to 4.1 ± 0.5 and 5.2 ± 0.6 PTCL/frame at 2 and 5 cmH2O, respectively (Figure 12G).
 
-## Contraction frequency is set by the diastolic depolarization rate
+![Figure 12.](https://cdn.elifesciences.org/articles/90679/elife-90679-fig12-v1.jpg)
+
+**Figure 12.:** Representative max projection of GCaMP6f signal over 20 s in an IALVs isolated from Myh11CreERT2-GCaMP6f mice in the presence of the L-type blocker nifedipine (1 μM) (A) and pressurized to 0.5, 2, and 5 cmH2O. The local diastolic Ca2+ transients persist in the presence of nifedipine and increase with increasing pressure as demonstrated in the whole vessel spatio-temporal maps (STMs) (B). Particle occurrence maps highlight the Ca2+ activity in each LMC as pressure is raised (C). Representative particle analysis plots for particle area (D) and particle counts/frame at each pressure (E). Summary files for particle area (F) and count/frame (G). * denotes p < 0.05, Mean and SEM shown with n = 12 separate IALVs from 8 Myh11CreERT2-GCaMP6f.
+
+### Contraction frequency is set by the diastolic depolarization rate
 
 To assess how pressure regulates LMC membrane potential, we first recorded membrane potential in cells exhibiting action potentials (APs) using a microelectrode filled with biocytin-AF488 to label the impaled cell. In each case (n = 3 IALVs), the labeled cell was an LMC wrapping circumferentially around the vessel (Figure 13A, B), and as these recordings were made over the course of many minutes, the direct neighboring circumferential LMCs also exhibited fluorescence, albeit weaker in intensity, as expected for cells coupled by gap junctions (Figure 13A). In all the recorded cells exhibiting APs, we noted a diastolic depolarization preceding the sharp upstroke achieved once threshold was met at each pressure (Figure 13C). The AP frequency and rate of the diastolic depolarization increased with pressure (Figure 13D, E). Linear regression of a plot of each AP frequency and diastolic depolarization rate at each pressure demonstrated a tight association between the two parameters. However, we did not observe a significant effect of pressure on minimum membrane potential (Figure 13G), threshold potential (Figure 13H), AP upstroke (Figure 13I), AP peak potential (Figure 13J), plateau potential (Figure 13K), or the time spent over threshold (Figure 13L).
 
@@ -102,15 +178,15 @@ To assess how pressure regulates LMC membrane potential, we first recorded membr
 
 The identification of the cellular origin and signaling mechanisms underlying cLV pacemaking will reveal novel targets for pharmacological intervention in treating lymphedema and the associated lymphatic contractile dysfunction. In this study, we tested proposed pacemaker cell types based on three parameters: (1) that the pacemaker cells are located along the entire length of the cLV, to accommodate spontaneous contractions and coordinated electrical conduction; (2) that depolarization of the pacemaker cell can drive a coordinated and propagated contraction of the vessel; and (3) that the presence of Ca2+ transients precedes or coincides with contraction, as commonly observed in other pacemaker cells. We used confocal microscopy and a combination of immunofluorescence and fluorescent reporters under the control of various inducible Cres to identify and target both muscle and non-muscle cells, previously labeled as ICLCs, which co-stain for the markers CD34 and PDGFRα. Our cell characterizations were supplemented by scRNAseq analysis of isolated and cleaned mouse IALVs which supported our finding of three major cell types including LECs, LMCs, and AdvCs, each of which could be further subclustered into transcriptionally unique populations. From our initial fluorescence imaging studies, a role for intrinsic pacemaking by LMCs (van Helden, 1993; von der Weid et al., 2008), or by a novel population of CD34+ lymphatic ICLCs (McCloskey et al., 2002; Briggs Boedtkjer et al., 2013), also referred to as telocytes, was further examined . We utilized PdgfrαCreERTM to further test whether these cells exhibited pacemaker capabilities. However, these PDGFRα+ cells had minimal Ca2+ activity despite ongoing contractions, and optogenetic stimulation of ChR2 in these cells failed to drive a spontaneous contraction. In contrast, photo-stimulation of LMCs expressing ChR2 elicited robust, propagated contractions with similar characteristics and propagation to spontaneous contractions in the same vessels. Furthermore, Ca2+ imaging in LMCs revealed diastolic Ca2+ transients in diastole that increased in frequency and spatial spread as pressure was elevated. We also demonstrated that the primary component of the AP driving the frequency change with pressure is diastolic depolarization, which we have previously reported to be dependent on ANO1 (Zawieja et al., 2019) and IP3R1 (Zawieja et al., 2023). Notably, we recently reported that diastolic Ca2+ transients are abrogated in IALVs from Myh11CreERT2-Itpr1 inducible knockout mice, supporting an IP3R1-ANO1 axis as the pressure-dependent pacemaker mechanism in LMCs. These results, in addition to the recent findings using targeted deletion of Gjc1 (Castorena-Gonzalez et al., 2018b) or Cacna1c (To et al., 2020; Davis et al., 2022) in lymphatic muscle, support the model of LMCs as the intrinsic pacemaker, as has been previously proposed (van Helden, 1993; Helden and Crowe, 1996; van Helden and Zhao, 2000).
 
-## Pacemaking in smooth muscle
+### Pacemaking in smooth muscle
 
 In many smooth muscle organs, regulation of a coordinated contraction is a complex and multicellular phenomenon. Multiple cell types integrate physical and biological information into electrical activity to be transmitted to the force-producing smooth muscle cells, sometimes across great distances relative to cell size, to regulate Ca2+ influx by voltage-dependent Ca2+ channels required for contraction. The intestine is one such documented tissue in which cKIT+ ICCs and PDGFRα+ interstitial cells form an electrical syncytium to regulate intestinal motility (Sanders et al., 1999; Sanders et al., 2014). The pacemaking function of intestinal ICCs relies heavily on ANO1, a Ca2+-activated Cl- channel, which is required for slow wave activity in the ICCs. Both cKIT and ANO1 can be used as a marker for ICCs in the intestine (Hwang et al., 2009; Cobine et al., 2017; Malysz et al., 2017), cKIT+ and VIMENTIN+ ICLCs have been observed in sheep lymphatic vessels (McCloskey et al., 2002), yet these cell populations did not form gap junctions with the smooth muscle to form electrical connections (Briggs Boedtkjer et al., 2013) as occurs in the intestinal ICCs. Our cKIT staining and CkitCreERT2-Rosa26mTmG reporter studies on mouse IALVs revealed a sparse population of large ovoid cells previously classified as mast cells (Chatterjee and Gashev, 2012; Zawieja et al., 2019). Their identity as mast cells was further supported by a sustained global Ca2+ event after stimulation with the mast cell degranulating agent compound 48–80. However, both VIMENTIN and CD34 showed robust staining throughout the mouse lymphatic vessel wall. LECs stained for VIMENTIN, as did non-muscle stellate-shaped cells, with many co-expressing CD34. Other smaller circular cells, some of which were also cKIT+ as well and some whose morphology was similar to that of the macrophage staining profile of the GFP+ cells in IALVs from MacGreen mice, were also VIMENTIN+, consistent with previous reports of macrophage staining in cLVs (Bridenbaugh et al., 2013b; Chakraborty et al., 2015; Zawieja et al., 2016). While VIMENTIN+ cells had a perinuclear staining profile, CD34 demarcated the cell membrane and was useful for assessing the morphology of these cells. Of particular interest, the VIMENTIN+CD34+ cells densely populated the length of the mouse IALV, with a majority displaying a flattened stellate morphology characterized by a classic rounded oak-leaf appearance, although some displayed fine dendrite-like extensions. Contrasting with the previous findings in the human thoracic duct (Briggs Boedtkjer et al., 2013), we did not observe a significant population of CD34+ cells with a bipolar morphology oriented axially along the vessel. However, z-stack reconstructions of sections of the mouse IALV that included the secondary valves revealed interstitial CD34+PDGFRα+ cells that resembled those bipolar cells with multiple axon-like extensions throughout the endothelial leaflets; these were similar to interstitial cells that were previously reported in collecting vessel valves (Leak and Burke, 1968) and lymphovenous valves (Geng et al., 2016). While these cells have not been frequently described in the valves of peripheral cLVs, we observed them in each of the valve regions imaged and, in addition, they were labeled with other Cre drivers, including Cspg4Cre-Rosa26mTmG and PdgfrβCreERT2-Rosa26mTmG (data not shown). Whether these cells regulate leaflet extracellular matrix deposition or lymphatic valve integrity is unknown, but a possible role as a critical pacemaker can be excluded as vessel segments without valves display normal contractile behavior (van Helden, 1993; Gashev et al., 2002). Instead, the majority of the CD34+PDGFRα+ cells were found in the adventitia, in two to three layers, overtop the LMCs, and they were consistently observed in high density along the IALV. Some CD34+PDGFRα+ cells or their extensions were present between the lymphatic endothelial and muscle layers, as had been previously reported with electron microscopy of human lymphatic vessels (Briggs Boedtkjer et al., 2013). Thus, while some of these AdvCs may be contained within the extracellular matrix that retracts onto the vessel during microdissection, many others are intimately dispersed within the vessel wall.
 
-## PDGFRα+CD34+ cells are not involved in cLV pacemaking under physiological conditions
+### PDGFRα+CD34+ cells are not involved in cLV pacemaking under physiological conditions
 
 Co-staining of CD34 and PDGFRα has recently been ascribed as a delineating feature of telocytes, although PDGFRα routinely labels fibroblasts and specific interstitial cells in the GI tract involved in purinergic neurotransmission in the GI tract (Kurahashi et al., 2011; Kurahashi et al., 2013; Clayton et al., 2022). Cd34 expression is also ascribed to some multipotent cell populations of various origins (Sidney et al., 2014). For example, PDGFRα+ fibroblasts appear to be progenitors of the smooth muscle fibers associated with the lacteal, the lymphatic capillary in the villus (Sanketi et al., 2024). It remains controversial to what extent telocytes are distinct from or are components/subtypes of either cell type and morphological discrimination between the populations typically requires electron microscopy imaging (Clayton et al., 2022). Mesenchymal stromal cells (Andrzejewska et al., 2019) and fibroblasts (Muhl et al., 2020; Buechler et al., 2021; Forte et al., 2022) are not monolithic in their expression patterns displaying both organ-directed transcriptional patterns as well as intra-organ heterogeneity (Lendahl et al., 2022) as readily demonstrated by recent single-cell RNA sequencing studies that provided immense detail about the subtypes and activation spectrum within these cells and their plasticity (Luo et al., 2022b). We were able to distinguish up to 10 subclusters of AdvCs, the majority of which expressed or co-expressed Cd34 and Pdgfra. These cells were consistently negative for smooth muscle markers such as Des, Cnn1, Acta2, Myh11, or the pericyte marker Mcam. However, Pgfrb expression was noted in our scRNAseq analysis and in our RT-PCR of sorted PdgfrαCreERTM-Rosa26mTmG cells. PDGFRβ protein expression was confirmed with variable immunofluorescence staining amongst the PDGFRα stained cells as well as LMCs. The PdgfrβCreERT2Rosa26mTmG mice had only modest recombination in both the LMC and PDGFRα+ cell populations, but potentially highlighted a myofibroblast-like cell subpopulation, cells that might lie on the spectrum of differentiation from lymphatic muscle and PDGFRα+ cells, or perhaps a cell with pacemaker activity as PDGFRβ is widely used as a pericyte marker and some pericytes display pacemaker activity (Hashitani et al., 2015). Adding to this intrigue, the PdgfrαCreERTM sorted cells expressed transcripts for Cacna1c, the voltage-gated L-type Ca2+ channel critical for lymphatic contractions (Zawieja et al., 2018a; To et al., 2020); Ano1, the ion channel underlying pressure-dependent chronotropy (Mohanakumar et al., 2018; Zawieja et al., 2019); and Gjc1, the primary connexin mediating electrical conduction in mouse lymphatic collecting vessels (Castorena-Gonzalez et al., 2018b; Hald et al., 2018). Expression of these genes in certain subpopulations of the AdvCs was also apparent in our scRNAseq analysis. Thus, the presence of those gene transcripts does not appear to be due to muscle cell contamination or incidental recombination in LMCs, as we did not detect LMC markers in the RT-PCR profiling of the sorted PDGFRα+ cells, nor were GFP-expressing cells with an LMC morphology observed in imaging of PdgfrαCreERTM-Rosa26mTmG vessels. Critically, however, deletion of Cacna1c, Gjc1, or Ano1 through PdgfrαCreERTM-mediated recombination neither recapitulated the previous phenotypes achieved with Myh11CreERT2 (Castorena-Gonzalez et al., 2018b; Zawieja et al., 2019; To et al., 2020; Davis et al., 2022) nor significantly affected pacemaking in mouse popliteal cLVs. This finding is in stark contrast to the complete lack of contractions observed in Myh11CreERT2-Cacna1c fl/fl vessels (To et al., 2020; Davis et al., 2023b) or the vessels from vascular muscle specific Itga8CreERT2-Cacna1cfl/fl mice (Davis et al., 2022; Warthi et al., 2023), and the significant loss in pressure-induced chronotropic modulation of pacemaker function in IALVs with Myh11CreERT2-mediated deletion of Ano1 that we have previously reported (Zawieja et al., 2019). While a subpopulation of CD34+PDGFRα+ cells may share expression of critical pacemaker genes identified in the LMCs, they do not appear to be involved in cLV pacemaking or contractile function under physiological states. Instead, CD34+PDGFRα+ cells co-stained significantly with LY6A+, suggesting they may be primed to act as resident multipotent cells (Song et al., 2020; Kimura et al., 2021). To this point, the PdgfrαCreERTM FACS-purified cells also expressed markers associated with ‘stemness’such as Cd34, Klf4, Gli1, Itgb1, Eng, Cd44, and Vimentin, in addition to Ly6a, and it is likely that the PdgfrαCreERTM population includes various distinct subpopulations (Jolly et al., 2022) expressing these markers. These cells may play a role in rebuilding the lymphatic collecting vessel vasculature following collecting vessel damage or lymph node resection, and further studies are required to assess their functional multipotency.
 
-## SR Ca2+ cycling in pacemaking
+### SR Ca2+ cycling in pacemaking
 
 The use of the mouse IALV model, in addition to the simplicity of the vessel architecture, provided the use of genetic tools that previously had been instrumental in identifying the cKIT+ ICC as the pacemaker cells of the GI tract (Ward et al., 1994; Huizinga et al., 1995; Torihashi et al., 1995). Through the use of the respective PdgfrαCreERTM and Myh11CreERT2 drivers, we were able to specifically image Ca2+ in each respective cell type in pressurized, contracting vessels. Pacemaking initiating cells have an inherently unstable membrane potential, oftentimes utilizing the oscillatory nature of Ca2+ release from the sarcoendoplasmic reticulum coupled to Ca2+-sensitive electrogenic exchangers or ion channels to drive depolarization (van Helden, 1993; Hashitani et al., 2015; Baker et al., 2021b; Sanders et al., 2022). One such example is the pacemaker ICC in the gastric corpus which exhibits abundant Ca2+ transients that couple to ANO1-mediated chloride currents in both the intervening period between slow waves as well as the plateau phase of the slow wave (Baker et al., 2021a); however, such activity is not characteristic of all pacemaker ICC types. The identification of a Ca2+-activated chloride current in LMCs (van Helden, 1993; Toland et al., 2000) and its correspondence with subcellular Ca2+ transients (van Helden, 1993; Ferrusi et al., 2004; von der Weid et al., 2008) led Van Helden to postulate that LMCs had intrinsic pacemaking capability (van Helden, 1993; Helden and Crowe, 1996). We have previously reported that mouse LMCs in pressurized vessels routinely display subcellular Ca2+ release events that reflect the kinetics and characteristics of Ca2+ puffs and waves in addition to the coordinated global Ca2+ flash associated with Ca2+ influx during an AP (Castorena-Gonzalez et al., 2018b; Zawieja et al., 2018a; Zawieja et al., 2019). Here we confirmed the consistent presence of subcellular Ca2+ transients only in LMCs with GCaMP6f driven by Myh11CreERT2 but not in the cells with GCaMP6f driven by PdgfrαCreERTM. Critically, we also demonstrated that the Ca2+ transients increased in both frequency and spatial spread as pressure was elevated in the vessel, as would be expected to account for the pressure-dependent chronotropy observed in lymphatic collecting vessels. This underscores the finding that genetic deletion of Ano1 in the LMCs dramatically reduced contraction frequency and abolished pressure-dependent chronotropy in those vessels (Zawieja et al., 2019). This phenotype was largely replicated with a similar reduction in frequency and loss of pressure-dependent chronotropy in our recent study utilizing Myh11CreERT2 to drive deletion of IP3R1 from LMCs (Zawieja et al., 2023) in which these diastolic Ca2+ transients were absent. This fits with the central role of IP3R and subcellular Ca2+ release as critical components of intrinsic LMC pacemaking (Helden and Crowe, 1996; von der Weid et al., 2008). In addition to the transcriptional heterogeneity identified by scRNASeq, we also noted heterogeneity in the propensity of LMCs to display diastolic Ca2+ transients under control conditions or show the sustained Ca2+ oscillations that occur in the presence of nifedipine. We did not detect any significant difference in the expression of Itpr1, the gene encoding the IP3R1, across our LMCs subclusters. However, when using less stringent conditions, we identified that the LMC cluster “0” had significantly increased expression of Itprid2 (Log2FC of 0.26), which encodes the Kras-induced actin-interacting protein (KRAP). KRAP has recently been implicated in IP3R1 immobilization and licensing and was required for IP3R1-mediated Ca2+ puffs (Thillaiappan et al., 2021; Atakpa-Adaji et al., 2024). Whether the higher expression of KRAP results in a greater probability of these LMCs to display IP3R1-dependent Ca2+ oscillations in LMCs requires further investigation. Of note, LMCs also express the components for store-operated calcium entry including Stim1, Stim2, Orai1, Orai3, Saraf, and Stimate, which may be involved in maintaining IP3R1-dependent SR Ca2+ release oscillations.
 
@@ -118,11 +194,11 @@ The membrane potential recordings made in this study suggest that the regulation
 
 A pacemaker cell would be expected to be electrically coupled to the LMC layer to permit the nearly synchronous conduction velocity of the contraction wave (Zawieja et al., 1993; Castorena-Gonzalez et al., 2018b; Hald et al., 2018) and to transmit depolarization into coupled LMCs to activate the voltage-dependent Ca2+ channels that are responsible for lymphatic muscle APs. Connexins are the molecular constituents of gap junctions and, as stated above, we detected Gjc1 expression in PdgfrαCreERTM sorted cells. However, we did not detect any impairment in pacemaking, nor were contraction conduction speed deficits or multiple pacemakers noted in the PdgfrαCreERTM -Gjc1fl/fl popliteal cLVs, in contrast to the development of multiple pacemaker sites and the lack of entrainment that characterize cLVs from Myh11CreERT2-Gjc1fl/fl mice (Castorena-Gonzalez et al., 2018b). Admittedly, we did not perform an exhaustive assessment of the connexin expression profile of the CD34+PDGFRα+ cells, and Gjc1 may not be the dominant connexin expressed in the CD34+PDGFRα+ cells, or heterotypic connexons could exist (Koval et al., 2014). However, electron microscopy studies of the putative ICLC in the human thoracic duct did not detect any gap junctions, although peg-and-socket connections were observed (Briggs Boedtkjer et al., 2013). We utilized optogenetics to directly depolarize the specific cell populations in both the PdgfrαCreERTM and Myh11CreERT2 mouse models in an attempt to drive contractions. Local photo-stimulation of the PDGFRα cells failed to initiate contraction, while the stimulation of Myh11CreERT2 recombined cells resulted in contractions that were indistinguishable from the spontaneously occurring contractions. These results give functional credence to the lack of hetero-cellular coupling via gap junctions that was previously reported (Briggs Boedtkjer et al., 2013). Just as critically, our results also highlight the regenerative nature of the lymphatic muscle AP. Local, optogenetic-initiated depolarization of either a single or a few LMCs to threshold was sufficient to drive a coordinated contraction along the vessel demonstrating conducted activity at the tissue level.
 
-## Conclusions
+### Conclusions
 
 Our present findings lend further support to the hypothesis that the LMCs are intrinsic pacemakers (van Helden et al., 2006; Mitsui and Hashitani, 2020) and that mouse cLVs do not require an ICC-like cell network to drive propagated contractions. These findings also underscore the significance of lymphatic muscle Ca2+ handling as the driver of lymphatic pacemaking, which can be compromised in disease states leading to impaired lymphatic contractile activity (Stolarz et al., 2019; Lee et al., 2020; Van et al., 2021). Further studies delineating the specific SR Ca2+ release and influx pathways, and the contributions of Ca2+ sensitive ion channels are required to develop sophisticated in silico models and identify potential therapeutic targets to rescue lymphatic pacemaking in lymphedema patients (Olszewski, 2002; Olszewski, 2008).
 
-## Limitations
+### Limitations
 
 One fundamental assumption underlying our conclusions is that there is a conserved pacemaking pathway and cell type regulating lymphatic collecting vessel contractions across species, specifically pertaining to the capability of lymphatic muscle to maintain pacemaking and coordination despite changes in tissue complexity and cLV wall thickness. It is worth noting that lymphatic collecting vessels in mice have similar pressure-dependent chronotropy and contraction conduction velocity as recorded in rats and human vessels (Castorena-Gonzalez et al., 2018b). These similarities exist despite the fact that mouse lymphatic collecting vessels are typically encircled by a single layer of lymphatic muscle, while larger species may have multiple layers of LMCs in the wall. It is possible that vessels with multiple layers of LMCs need a network of ICLC to coordinate their activity. The simplicity in the makeup of the mouse cLV and the use of cell targeting Cre models provides great control over experimental variables, but other cell types may be required for coordination of LMC pacemaking in other species where the lymphatic cLV walls are larger and thicker and contain multiple muscle cell layers. Our scRNAseq analysis also is likely biased using Rosa26mTmG mice with FACS purification to remove debris and concentrate specific cell types from these pooled small vessels. Larger and more complex cells, with attributes that can be ascribed to ICCs, are more likely to be lost in this methodology (e.g., depending on the FACS gating parameters), and this procedure can also elicit a stress response in the transcriptome of the analyzed cells. However, we also did not observe long and complex cells, aside from the circumferential LMCs, in our immunofluorescence and recombination reporter imaging experiments. Immediate and early gene expression motifs driven by a stress response may be a component of the differences in subclusters that were identified. Future scRNAseq or snRNAseq studies with deeper sequencing will be required to ensure that the full transcriptomic heterogeneity is accounted for under different cellular stress conditions.
 
@@ -130,70 +206,518 @@ Our data demonstrate that limited staining of a few cell markers alone is insuff
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 Wild-type male mice (25–35 g) on the C57BL/6J background, Rosa26mTmG reporter (Muzumdar et al., 2007) (Strain#007676), transgenic PdgfrαCre (Strain#013148), CSFR1-EGFP (MacGreen) (Sasmono et al., 2003) (Strain#018549), genetically encoded Ca2+ sensor GCaMP6f (Chen et al., 2013) (Strain#028865), transgenic PdgfrαCreERTM (Kang et al., 2010) (Strain#018280), Cspg4-Cre (Strain #:008533) (Zhu et al., 2008), and ChR2/tdTomato fusion mice (Madisen et al., 2012) (Strain#012567) were purchased from The Jackson Laboratory (Bar Harbor, MA, USA). PdgfrβCreERT2 (Gerl et al., 2015) mice were a gift from Ralf Adams (Mac Planck Institute) and kindly provided by Lorin Olson (Oklahoma Medical Research Foundation) and are currently available at Jax (Strain#029684). The Myh11CreERT2 mice (Wirth et al., 2008) were a gift from Stefan Offermanns, Max-Planck-Intstitut für Herz- und Lungendforschung, Bad Nauheim, Germany, and are currently available at Jax (Strain #019079, Y-Linked). CkitCreERT2 mice (Heger et al., 2014) were a gift from Dieter Saur (Technical University of Munich). Prox1-eGFP mice (Choi et al., 2011) were a gift from Young-Kwon Hong (University of Southern California). For genotyping, we isolated genomic DNA from mouse tail clips using the HotSHOT method (Truett et al., 2000). Specific mouse genotypes were confirmed via PCR using 2x PCR Super Master Polymerase Mix (Catalog # B46019, Bimake, Houston, TX) performed as specified by the provider. Mice used for this study were 3–12 months of age. All animal protocols were approved by the University of Missouri Animal Care and Use Committee (Protocol 53461 and 41500) and conformed to the US Public Health Service policy for the humane care and use of laboratory animals (PHS Policy, 1996).
 
-## Inducible Cre tamoxifen induction
+### Inducible Cre tamoxifen induction
 
 Mice harboring PdgfrαCreERTM, PdgfrβCreERT2, Myh11CreERT2, and CkitCreERT2 were crossed with Rosa26mTmG mice to generate PdgfrαCreERTM-Rosa26mTmG, PdgfrβCreERT2-Rosa26mTmG, Myh11CreERT2-Rosa26mTmG, and CkitCreERT2-Rosa26mTmG mice, respectively. The resulting inducible Cre-Rosa26mTmG mice were induced with tamoxifen 2–4 weeks after weaning for confocal imaging. Mice aged 2–6 months were injected with tamoxifen for contraction studies, FACS analysis, GCaMP6f imaging, and Chr2 induction. Tamoxifen induction was performed via consecutive 100 μl i.p. injections of tamoxifen ranging from 1 to 5 days at concentrations ranging from 0.2 to 10 mg/ml in safflower oil, using a titrated induction protocol to determine the extent of recombination in specific cell populations. We used our maximal induction protocol, 100 μl of tamoxifen at 10 mg/ml over 5 consecutive days, for CkitCreERT2-GCaMP6f, Myh11CreERT2-GCaMP6f, and PdgfrαCreERTM -GCaMP6f mice. Due to the paucity of recombined cells in the CkitCreERT2-Rosa26mTmG reporter mice, we used our maximal tamoxifen induction protocol for CkitCreERT2-ChR2/tdTomato mice as this still resulted in the ability to excite single recombined cells. Myh11CreERT2-ChR2/tdTomato mice were induced with one 100 μl i.p. injection of tamoxifen at 0.2 mg/ml while PdgfrαCreERTM-ChR2/tdTomato mice were induced with 1 injection at 0.4 mg/ml tamoxifen to get mosaic induction sufficient for single-cell stimulation. All mice, regardless of induction duration, were given at least 2 weeks to recover following tamoxifen injection.
 
-## Lymphatic vessel isolation
+### Lymphatic vessel isolation
 
 We utilized both popliteal and inguinal-axillary lymphatic collecting vessels (IALVs) in this study, which were isolated as described previously (Zawieja et al., 2018a). In brief, mice were anesthetized with a cocktail of 100/10 mg/ml ketamine/xylazine and shaved along the flank or the legs for IALVs and popliteal cLVs, respectively. The IALV (also referred to as the flank cLV) is located adjacent to the thoracoepigastric vein and connects the inguinal and axillary lymph nodes. A cut was made along the dorsal midline, and the skin was retracted and pinned out to reveal the thoracoepigastric vascular bed. The thoracoepigastric vascular bed and connected perivascular adipose containing the IALV vessels was dissected out and pinned onto a Sylgard-coated dish in Krebs buffer. Popliteal lymphatic vessels were exposed through a superficial incision in the leg, removed, and transferred to the Krebs-albumin filled dissection chamber. After removal, the vessel was carefully cleaned of adipocytes and excess matrix using fine forceps and scissors through micro-dissection. For immunofluorescence, sections containing two to three valves were isolated, while shorter IALV sections consisting of one to two valves were isolated for GCaMP6f Ca2+ imaging. Similarly, popliteal cLVs were isolated (Castorena-Gonzalez et al., 2018a) following an incision along the skin overlying the saphenous, removed, and transferred to the Krebs-albumin filled dissection chamber; these vessels were used for ChR2 optogenetic depolarization experiments.
 
-## Lymphatic vessel isobaric function
+### Lymphatic vessel isobaric function
 
 PdgfrαCreERTM mice were crossed with Ano1fl/fl, Gjc1fl/fl, and Cacna1cfl/fl mice to generate PdgfrαCreERTM-Ano1fl/fl, PdgfrαCreERTM-Gjc1fl/fl, and PdgfrαCreERTM-Cacna1cfl/fl mice. These mice and their respective ‘fl/fl’ controls were injected with tamoxifen as described above for 5 days and given 2 weeks to recover. The popliteal vessels were isolated, cleaned, and prepared for isobaric contractile tests as previously reported (Davis et al., 2023a). Once equilibrated, inner diameter was tracked over a physiological pressure range (stepped from 3 to 2, 1, 0.5, 3, 5, 8, and 10 cmH2O) with 2 min of recording at each pressure. Following the pressure step protocol, the vessels were equilibrated in Ca2+-free Krebs buffer (3 mM EGTA), and diameter at each pressure recorded under passive conditions (DMAX). The contractile parameters end diastolic diameter (EDD), end systolic diameter (ESD), and contraction frequency (FREQ) were assessed from the diameter trace using LabVIEW:
 
-## Methylene blue staining
+### Methylene blue staining
 
 Isolated IALVs sections were transferred into a Krebs-BSA buffer filled 3 ml observation chamber, with a cover slip bottom, and cannulated onto two glass micropipettes (30–80 μm, outer diameter) held in place by pipette holders on a Burg-style V-track mounting system. The pipette holders were attached to a three-way valve stopcock with polyethylene tubing filled with Krebs-BSA buffer. Vessels were pressurized to approximately 5 cmH2O by raising the three-way valve and the vessels were stretched to remove any slack. For methylene blue (Sigma, M9140) staining, IALVs from wild-type C57Bl6 mice were stained with 50 μM methylene blue in Krebs-BSA buffer for 2 hr at room temperature and covered in foil to limit light-induced phototoxicity. After the staining period, the vessel chambers were washed three times with Ca2+-free PSS to remove methylene blue. Brightfield images and manual Z-stack videos were collected on an inverted Leica DMi1 ×4 or ×20 air objective, or a Leica DMi8 with a ×25 water objective or an inverted DMi8 using a Leica Flexacam C1 color camera for image acquisition. Some methylene blue images were also collected using a color Nikon DS-Fi3 camera. The collected z-stacks were analyzed using ImageJ and the ‘Stack Focuser’ plugin (https://imagej.nih.gov/ij/plugins/stack-focuser.html). To accentuate the methylene blue-stained cells, the color image stack was split into red, green, and blue channel stacks. The blue channel stack was then divided by the green channel stack using the ‘Image Calculator’ function. The resulting 32-bit image was then converted into a 16-bit image to permit the use of the Stack Focuser plugin with the ‘n kernel value’ set to 11.
 
-## Fluorescence confocal imaging
+### Fluorescence confocal imaging
 
 IALV vessels from each respective inducible Cre-Rosa26mTmG mouse were prepared in a similar manner (excluding the addition of methylene blue). We performed confocal imaging to acquire z-stacks of 7–10 overlapping regions of interest to allow for manual stitching, with 1 μm z-steps at (20Χ) or 0.5 μm steps at 40X. We imaged through to the midpoint of the vessel except when imaging the valve interstitial cells, in which case the vessel lumen was imaged. Max projections were made using FIJI. Following live imaging, the vessels were pressurized to 5 cmH2O and fixed with 4% paraformaldehyde for 30 min at room temperature. IALVs were then washed with PBS containing 0.1% Triton X-100 (PBST) 3 times and blocked for a minimum of 2 hr with Blockaid (B-10710, Thermo Fisher Scientific). IALVs were then stained with the corresponding primary antibodies in BlockAid Solution: anti-smooth muscle actin (ACTA2) 1:500 (Sigma, A2547), anti-GFP 1:200 (Thermo Fisher, A11122), anti-cKIT 1:100 (Cell Signaling, 3074), anti-VIMENTIN 1:100 (Thermo Fisher, OMA1-06001), anti-desmin 1:200 (Invitrogen, PA5-16705), anti-GFP 1:200 (Abcam, ab13970), anti-CD34 1:200 (Invitrogen, 14-0341-82), anti-PDGFRΑ 1:200 (R&D Systems, AF1062), anti-PDGFRβ 1:200 (eBiosciences, 14-1402-82), anti-calponin 1:500 (Abcam, AB46794), anti-MYH11 1:500 (Abcam, AB124679), anti-LY6A 1:200 (Biolegend, 108101). IALVs were then washed in PBS and incubated overnight with the corresponding donkey secondary antibodies (Thermo Fisher) at 1:200. After a final wash, IALVs were re-cannulated and pressurized for imaging using the spinning disk confocal microscope and Hamamatsu Orca Flash4 camera using a 20X air objective (Olympus UplanApo, 0.75) or 40X (Olympus UApo A340, 1.15) water objective. Images were taken as described above, and the resulting stacks were turned into a max projection using FIJI. Colocalization analysis of the max projections of CD34 and PDGFRα was performed using the BIOP JACoP colocalization plugin (Bolte and Cordelières, 2006) with both Pearson’s and Mander’s coefficients reported.
 
-## LMC dissociation and FACS collection
+### LMC dissociation and FACS collection
 
 IALVs vessels PdgfrαCreERTM-Rosa26mTmG, PdgfrβCreERT2-Rosa26mTmG, Myh11CreERT2-Rosa26mTmG, Macgreen, and Prox1-eGFP mice were dissected and cleaned of excess adventitia and adipose tissue in Krebs buffer. Isolated vessels were then transferred into a low Ca2+ PSS solution supplemented with 0.1 mg/ml bovine serum albumin (BSA, Amersham Life Science, Arlington Heights, IL). Primary LMCs were collected by enzymatic dissociation of IALVs. The dissected vessels were cleaned in room temperature Krebs-BSA buffer and then transferred into a 1-ml tube of low-Ca2+ PSS on ice, washed, and equilibrated for 10 min. Vessels were then digested in low-Ca2+ PSS with 26 U/ml papain (Sigma, P4762) and 1 mg/ml dithioerythritol for 30 min at 37°C with gentle agitation every few minutes. This solution was then decanted and replaced with low-Ca2+ PSS containing 1.95 collagenase H (U/ml, Sigma), 1.8 mg/ml collagenase F (Sigma), and 1 mg/ml elastase (Worthington LS00635) and incubated for 3–5 min at 37°C. The mixture was then spun down at 1000 rpm for 4 min, the digestion buffer removed, and replaced with low-Ca2+ PS. This process was repeated twice to remove residual digestion buffer. The vessel was then triturated with a fire-polished Pasteur pipette to dissociate the cells into a single-cell suspension, passed through a Falcon cap strainer (35 μm), and resuspended in ice-cold low-Ca2+ PSS for sorting. For inducible Cre-Rosa26mTmG mice, GFP+RFP- cells or GFP+ cells from Macgreen and Prox1-eGFP mice were then FACS-purified straight into RNA isolation buffer for RT-PCR analysis. FACS was performed with a Beckman-Coulter MoFlo XDP instrument using an excitation laser (488 nm) and emission filter (530/40 nm). Sorting was performed using 70 µm nozzle at a sheath pressure of 45 psi and sort rate of 100 events/s and with an efficiency of >90%. To maximize cell yield, we isolated both the left and right full-length IALV vessels from two mice for digestions and subsequent FACS collection. For Myh11CreERT2-Rosa26mTmG and PdgfrαCreERTM-Rosa26mTmG, the yield averaged 1000–2000 cells per mouse. For Prox1-eGFP mice, LEC yield was typically 1500–2000 cells per mouse.
 
-## RT-PCR profiling of FACS-purified cells
+### RT-PCR profiling of FACS-purified cells
 
 Total RNA was extracted from FACS-purified GFP+ cells from the isolated IALVs vessels using the Arcturus PicoPure RNA isolation kit (Thermo Fisher Scientific, Waltham, MA) per the listed instructions. Prior to elution in 20 μl of water, on-column DNase digestion (QIAGEN, Valencia, CA) was performed to ensure removal of genomic DNA contaminants. RNA was converted into cDNA using SuperScript III First-Strand Synthesis System (Thermo Fisher Scientific, Waltham, MA) using oligo (dT) and random hexamer priming following the manufacturer’s protocol. Each RT reaction used approximately 50–100 cells worth of RNA based on the sorted cells count number. Our PCR reaction mixture contained first-strand cDNA as the template, 2 mM MgCl2, 0.25 μM primers, 0.2 mM deoxynucleotide triphosphates, and GoTaq Flexi DNA polymerase (Promega, Madison, WI). The PCR program comprised an initial denaturation step at 95°C for 4 min; followed by 35 repetitions of the following cycle: denaturation (94°C, 30 s), annealing (58°C, 30 s), and extension (72°C, 30 s). This was followed by a final elongation step for 5 min at 72°C. PCR amplification products were separated on a 2% agarose gel by electrophoresis, stained with SYBR-Safe (Thermo Fisher Scientific, Waltham, MA), and visualized by UV trans-illumination. All primers were designed to amplify an intron-spanning region. Endpoint RT-PCR Primer sequences, amplicon size, accession numbers, and source are listed in Table 1.
 
-## scRNAseq analysis of mouse IALVs
+**Table 1.**
+ Primer list for RT-PCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Strand</th>
+      <th>Accession #</th>
+      <th>Sequence (5'–3')</th>
+      <th>Size</th>
+      <th>Exon</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Prox1</td>
+      <td>s</td>
+      <td>NM_008937</td>
+      <td>GTA AGA CAT CAC CGC GTG C</td>
+      <td>218</td>
+      <td>1</td>
+      <td>NIH Primer Tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TCA TGG TCA GGC ATC ACT GG</td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Itgam(Cd11b)</td>
+      <td>s</td>
+      <td>NM_008401</td>
+      <td>ATG GAC GCT GAT GGC AAT ACC</td>
+      <td>203</td>
+      <td>13</td>
+      <td>MGH Primer BankID 668048a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TCC CCA TTC ACG TCT CCC A</td>
+      <td></td>
+      <td>14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pdgfra</td>
+      <td>s</td>
+      <td>NM_011058</td>
+      <td>AGA GTT ACA CGT TTG AGC TGT C</td>
+      <td>252</td>
+      <td>8</td>
+      <td>MGH Primer Bank26349287a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GTC CCT CCA CGG TAC TCC T</td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Myh11</td>
+      <td>s</td>
+      <td>NM_013607</td>
+      <td>AAG CTG CGG CTA GAG GTC A</td>
+      <td>238</td>
+      <td>33</td>
+      <td>MGH Primer BankID 7305295a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CCC TCC CTT TGA TGG CTG AG</td>
+      <td></td>
+      <td>34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">cKit(Cd117)</td>
+      <td>s</td>
+      <td>NM_021099</td>
+      <td>CGC CTG CCG AAA TGT ATG ACG</td>
+      <td>162</td>
+      <td>21</td>
+      <td>Drumm et al., 2018</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGT TCT CTG GGT TGG GGT TGC</td>
+      <td></td>
+      <td>23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pdgfrb</td>
+      <td>s</td>
+      <td>NM_008809</td>
+      <td>AGC TAC ATG GCC CCT TAT GA</td>
+      <td>367</td>
+      <td>16</td>
+      <td>Basciani et al., 2004</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGA TCC CAA AAG ACC AGA CA</td>
+      <td></td>
+      <td>19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cdh5(Cadherin, VE-cadherin)</td>
+      <td>s</td>
+      <td>NM_009868</td>
+      <td>CTT CCT TAC TGC CCT CAT TGT</td>
+      <td>313</td>
+      <td>3</td>
+      <td>IDT Primer Quest</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CTG TTT CTC TCG GTC CAA GTT</td>
+      <td></td>
+      <td>5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nos3(eNOS)</td>
+      <td>s</td>
+      <td>NM_008713</td>
+      <td>CTG CCA CCT GAT CCT AAC TTG</td>
+      <td>143</td>
+      <td>22</td>
+      <td>IDT Real time primer tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CAG CCA AAC ACC AAA GTC ATG</td>
+      <td></td>
+      <td>23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Acta2(Smooth Muscle Actin)</td>
+      <td>s</td>
+      <td>NM_007392</td>
+      <td>GAG CTA CGA ACT GCC TGA C</td>
+      <td>129</td>
+      <td>7</td>
+      <td>IDT TaqMan Mm.PT.58.16320644</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CTG TTA TAG GTG GTT TCG TGG A</td>
+      <td></td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cacna1c exon1b</td>
+      <td>s</td>
+      <td>NM_001159533</td>
+      <td>ATG GTC AAT GAA AAC ACG AGG ATG</td>
+      <td></td>
+      <td>1</td>
+      <td>Cheng et al., 2007</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGA ACT GAC GGT AGA GAT GGT TGC</td>
+      <td>234</td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd34</td>
+      <td>as</td>
+      <td>NM_133654</td>
+      <td>GGT ACA GGA GAA TGC AGG TC</td>
+      <td>119</td>
+      <td>1</td>
+      <td>IDT Mm.PT.58.8626728</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td></td>
+      <td>CGT GGT AGC AGA AGT CAA GT</td>
+      <td></td>
+      <td>2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cspg4(Ng2)</td>
+      <td>as</td>
+      <td>NM_139001</td>
+      <td>CTT CAC GAT CAC CAT CCT TCC</td>
+      <td>132</td>
+      <td>5</td>
+      <td>IDT Mm.PT.58.29461721</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td></td>
+      <td>CCC GAA TCA TTG TCT GTT CCC</td>
+      <td></td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Vimentin</td>
+      <td>s</td>
+      <td>NM_011701</td>
+      <td>CTG TAC GAG GAG GAG ATG CG</td>
+      <td>249</td>
+      <td>1</td>
+      <td>Li et al., 2016</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>AAT TTC TTC CTG CAA GGA TT</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Desmin</td>
+      <td>s</td>
+      <td>NM_010043</td>
+      <td>GTG GAT GCA GCC ACT CTA GC</td>
+      <td>218</td>
+      <td>3</td>
+      <td>MGH Primer BankID 33563250a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TTA GCC GCG ATG GTC TCA TAC</td>
+      <td></td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Mcam(Cd146)</td>
+      <td>s</td>
+      <td>NM_023061</td>
+      <td>CCC AAA CTG GTG TGC GTC TT</td>
+      <td>220</td>
+      <td>1</td>
+      <td>MGH Primer Bank10566955a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGA AAA TCA GTA TCT GCC TCT CC</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Klf4</td>
+      <td>s</td>
+      <td>NM_010637</td>
+      <td>ATT AAT GAG GCA GCC ACC TG</td>
+      <td>400</td>
+      <td>1</td>
+      <td>Majesky et al., 2017</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGA AGA CGA GGA TGA AGC TG</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ly6a(Sca1)</td>
+      <td>s</td>
+      <td>NM_001271416</td>
+      <td>CTC TGA GGA TGG ACA CTT CT</td>
+      <td>400</td>
+      <td>2</td>
+      <td>Majesky et al., 2017</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGT CTG CAG GAG GAC TGA GC</td>
+      <td></td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gli1</td>
+      <td>s</td>
+      <td>NM_01029</td>
+      <td>ATC ACC TGT TGG GGA TGC TGG AT</td>
+      <td>316</td>
+      <td>8</td>
+      <td>Kramann et al., 2015</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CGT GAA TAG GAC TTC CGA CAG</td>
+      <td></td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Itgb1(Cd29)</td>
+      <td>s</td>
+      <td>NM_010578</td>
+      <td>TCG ATC CTG TGA CCC ATT GC</td>
+      <td>170</td>
+      <td>14</td>
+      <td>NIH Primer Tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>AAC AAT TCC AGC AAC CAC GC</td>
+      <td></td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Endoglin(Eng, Cd105)</td>
+      <td>s</td>
+      <td>NM_007932</td>
+      <td>TGA GCG TGT CTC CAT TGA CC</td>
+      <td>416</td>
+      <td>11</td>
+      <td>NIH Primer Tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>GGG GCC ACG TGT GTG AGA A</td>
+      <td></td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cd44</td>
+      <td>s</td>
+      <td>NM_009851</td>
+      <td>CAC CAT TTC CTG AGA CTT GCT</td>
+      <td>148</td>
+      <td>18</td>
+      <td>IDT Mm.PT.58.12084136</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TCT GAT TCT TGC CGT CTG C</td>
+      <td></td>
+      <td>19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Pecam1(Cd31)</td>
+      <td>s</td>
+      <td>NM_008816</td>
+      <td>CTG CCA GTC CGA AAA TGG AAC</td>
+      <td>218</td>
+      <td>7</td>
+      <td>MGH Primer BankID 6679273a1</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>CTT CAT CCA CTG GGG CTA TC</td>
+      <td></td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Gjc1(Connexin 45)</td>
+      <td>s</td>
+      <td>NM_008122</td>
+      <td>GGT AAC AGG AGT TCT GGT GAA</td>
+      <td>140</td>
+      <td>2</td>
+      <td>IDT Mm.PT.58.8383900</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TCG AAA GAC AAT CAG CAC AGT</td>
+      <td></td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Anoctamin 1(TMEM16A)</td>
+      <td>s</td>
+      <td>NM_178642</td>
+      <td>GGC ATT TGT CAT TGT CTT CCA G</td>
+      <td>141</td>
+      <td>25</td>
+      <td>IDT Real time primer tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TCC TCA CGC ATA AAC AGC TC</td>
+      <td></td>
+      <td>26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ptprc(Cd45)</td>
+      <td>s</td>
+      <td>NM_001111316</td>
+      <td>ATG CAT CCA TCC TCG TCC AC</td>
+      <td>225</td>
+      <td>29</td>
+      <td>NIH Primer Tool</td>
+    </tr>
+    <tr>
+      <td>as</td>
+      <td></td>
+      <td>TGA CTT GTC CAT TCT GGG CG</td>
+      <td></td>
+      <td>31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="7">MGH Harvard Primer Bank (Wang and Seed, 2003; Spandidos et al., 2008; Spandidos et al., 2010).</td>
+    </tr>
+  </tbody>
+</table>
+
+### scRNAseq analysis of mouse IALVs
 
 For scRNAseq analyses of isolated IALVs we used a total of 10 Rosa26mTmG mice, without Cre expression and without tamoxifen treatment, with equivalent representation of sex (five males and five females with ages between 10 and 12 months). Full-length IALVs from both the left and right sides of each Rosa26mTmG mouse were isolated and cleaned of excessive matrix and adipose tissue. Isolated vessels were digested into single-cell suspensions as described above, and the cells were kept on ice following single-cell suspension until all the tissues had been processed. Cells from all vessels were combined and sorted for tdTomato expression to remove debris and concentrate the cells for downstream single-cell 3′ RNA-Seq libraries creation with 10x Genomics Chromium Chip and Chromium Next GEM Single Cell 3′ RNA-Seq reagents. Samples were sequenced with the NovaSeq 6000 S4-PE100 flow cell.
 
 Mus musculus genome GRCm39 and annotation GTF (v106) from Ensembl (https://useast.ensembl.org/Mus_musculus/Info/Index) were used to build the reference index and the reads were processed using Cell Ranger (v7.0.1; Zheng et al., 2017) with default parameters. The quality control and filtering steps were performed using R (v4.2.1; https://www.r-project.org/) as outlined in the Seurat pre-processing steps (Hao et al., 2021; Hao et al., 2024). Ambient RNA was removed from the Cell Ranger output with SoupX (Young and Behjati, 2020). Doublet score for each cell was estimated using scDBlFinder (v1.12.0; Germain et al., 2021). Non-expressed genes (sum zero across all samples) and low-quality cells (>10% mitochondrial genes, <500 genes, <1000 UMIs per cell and doublet score <0.5) were excluded from analysis. Of 10,188 cells, 7435 passed our inclusion criteria and included three dominant clusters including LECs (2962 cells), LMCs (978 cells), and fibroblasts (2261 cells) with the remaining cells comprising immune cells (1147 cells) and some mammary epithelial cell contamination (87 cells). Cells passing filtering were normalized/scaled (SCTransformation), dimensionally reduced (t-distributed stochastic neighbor embedding) and UMAP clustered, and hierarchically analyzed with Seurat (Hao et al., 2021; Hao et al., 2024) with default parameters. To select the optimal cluster resolution, we used Clustree with various resolutions. We examined the resulting tree to identify a resolution where the clusters were well separated and biologically meaningful, ensuring minimal merging or splitting at higher resolutions. Our goal was to find a resolution that captured relevant cell subpopulations while maintaining distinct clusters without excessive fragmentation. Initial clustering of the entire population of cells was done at a resolution of 0.8 and 18 PCs to achieve the UMAP of 0–19 cell clusters as shown in Figure 5a. We used a resolution of 0.5 for sub-clustering LMCs (original groups 5 and 6), 0.87 for LECs (original groups 0, 1, 2, and 11), and 1.0 for fibroblasts (3, 7, 8, 9, 10, and 13). Marker gene expression profile on cell clusters and gene co-expression was visualized using Seurat and ShinyCell R application (Ouyang et al., 2021). The full scRNAseq raw dataset has been uploaded to the NIH GEO under the accession number GSE277843. Differential gene expression within subclusters of LECs, LMCs, and AdvCs was performed using Seurat’s ‘Find Markers’ function and with a minimum of either 40% or 50% cell expression and average log fold change (Log2FC) minimum of 0.5 or 1. When assessing the LMC IP3 receptor genes Itpr1-3 and Itprid2, a percent cell expression of 40% and Log2FC of 0.25 was used. In the volcano plot for LEC subcluster 8 differential gene expression, listed genes had a cutoff of a Log2FC of 2 or –2 to be displayed on the plot.
 
-## Ex vivo Ca2+ imaging with the genetically encoded GCaMP6f indicator
+### Ex vivo Ca2+ imaging with the genetically encoded GCaMP6f indicator
 
 CkitCreERT2, Myh11CreERT2, and PdgfrαCreERTM mice were crossed with GCaMP6f mice in a similar manner as described for Rosa26mTmG. CkitCreERT2-GCaMP6f, PdgfrαCreERTM-GCaMP6f, and Myh11CreERT2-GCaMP6f were induced with tamoxifen (10 mg/ml) for 5 consecutive days by i.p. injection. IALVs isolated from CkitCreERT2-GCaMP6f, PdgfrαCreERTM-GCaMP6f, and Myh11CreERT2-GCaMP6f were cannulated as described above. The cannulated vessel, with micropipette holders, observation chamber, and V-track mounting system, was transferred to the stage of the spinning disk confocal with a Prime95B scMOS camera (Photometrics), a Cascade II EMCCD (Photometrics), or an Ixon888 EMCCD camera (Andor) for Ca2+ imaging (Castorena-Gonzalez et al., 2018b). Pressures for the input and output cannula were connected to a T-junction which was set briefly to 8 cmH2O and the vessel lengthened to remove axial slack. A peristaltic pump maintained constant perfusion of the observation chamber with Krebs buffer at a rate of 0.5 ml/min while the vessel equilibrated at 37°C for 30–60 min with pressures set to 3 cmH2O. Spontaneous contractions were allowed to stabilize over a period of 30 min to verify normal function and then were blunted with 2 μM wortmannin to limit movement associated with contractions during Ca2+ imaging. A Windows-based computer was used to digitize the pressure transducer signals and video image of the vessel from a firewire camera at 30–40 Hz (Davis et al., 2012). Real-time inner diameter tracking was made with LabVIEW (National Instruments; Austin, TX) (Davis, 2005). Once contractions were <5 µm in amplitude, Ca2+ recordings were made at 20 FPS for 20–40 s.
 
-## Ca2+ imaging and analysis in IALVs over the contraction cycle
+### Ca2+ imaging and analysis in IALVs over the contraction cycle
 
 Background noise was determined by using the histogram feature of FIJI in a rectangle in a region of the field of view without sample. This value was subtracted from the entire field of view. In some cases, the vessel movement due to contraction was offset with video stabilization with the FIJI plugin Image Stabilizer. A max projection was used to create non-overlapping ROIs of GCaMP6f+ cells for each inducible Cre-GCaMP6f IALV. From these cell ROIs, the ‘reslice z’ function was used to create pseudo-linescan STMs, which were divided by their baseline values to obtain F/F0 values for each individual cell. At least three cells, except in the case of 1 CkitCreERT2-GCaMP6f IALV, in which only two cells were observed, were analyzed in this manner for each vessel segment. Max projections of the image stack were then used to create non-overlapping cell masks of 3–5 muscle cells per field of view of one vessel. Ca2+ traces for those cells contained 5–10 contraction cycles and Ca2+ transients and were characterized for peak intensity (expressed as a baseline-referenced ratio, F/F0), frequency, and duration in seconds.
 
-## Analysis of subcellular Ca2+ transients in Myh11CreERT2-GCaMP6f IALVs
+### Analysis of subcellular Ca2+ transients in Myh11CreERT2-GCaMP6f IALVs
 
 For Myh11CreERT2, we performed Ca2+ imaging as above in the presence of 1 µM nifedipine to stop the ‘Ca2+ flashes’ associated with APs (Zawieja et al., 2018a) and focus on the subcellular activity at three different experimental pressures of 0.5, 2, and 5 cmH2O. For this protocol, we used a particle analysis approach to analyze all Ca2+ transients in the field of view. Ca2+ transients in intact vessels were quantified by particle analysis using Volumetry software (version G8d) as previously described (Drumm et al., 2017; Drumm et al., 2019a). Movies of Ca2+ transients in intact vessels were imported into Volumetry software (version G8d) and background subtracted. Movies were smoothed using a Gaussian filter: 1.5 × 1.5 mM, StdDev 1.0. Raw Ca2+ transients were converted to Ca2+ particles (PTCLs) using a flood-fill algorithm as previously described (Drumm et al., 2017; Drumm et al., 2019a). PTCLs <10 µM2 were rejected to facilitate the removal of noise, and then the total PTCL area and PTCL count could be tabulated for each recording.
 
-## Membrane potential recordings in IALVs
+### Membrane potential recordings in IALVs
 
 Mouse IALVs were isolated and cleaned as described above. IALVs were pressurized in our isobaric myography apparatus and allowed to equilibrate to ensure typical contractile activity was evident. A bolus of wortmannin at 2 µM was then applied to the bath to blunt contraction amplitude below 5 µm. Intracellular recordings of lymphatic muscle were made with microelectrodes (250–300 MΩ) filled with 1 M KCl and an SEC-05x amplifier (NPI) connected to a Grass S48 stimulator, viewed with a Tektronix TDS3052 digital oscilloscope. Membrane potential and diameter were simultaneously recorded using LabVIEW. Membrane potential and APS were allowed to stabilize and then pressure was slowly raised from 0.5 to 2 cmH2O and then 5 cmH2O. In some cases, the electrode dislodged due to the intrinsic contractions of the vessel or wall displacement as pressure was modulated. In these situations, we attempted to re-impale the cell or one of the neighboring cells. Only vessels in which a recording with a minimum of three stable APs was successfully recorded at two of the three experimental pressures were used for subsequent analysis.
 
 We also confirmed LMC impalement using microelectrode filled with 1 M KCl and (100 µg/ml) Biocytin-AF488 (A12924, Thermo Fisher) to label impaled cells that displayed APs, over a 10-min recording period. Following the impalement and loading with Biocytin-AF488, the vessel was transferred to our imaging apparatus for confocal imaging and 3D reconstruction using the Andor Dragonfly 200 and IMARIS. Image stacks were taken with a 25x water objective at 0.5 micron intervals throughout the diameter of the vessel.
 
-## Light activation of ChR2 to stimulate popliteal cLV contractions
+### Light activation of ChR2 to stimulate popliteal cLV contractions
 
 As the IALV has a nearly continuous contractile cycle, we utilized the popliteal vessel for its much slower contraction frequency in the experiments testing our ability to trigger a propagated contraction upon stimulation of the enforced expression of ChR2. Popliteal vessels were isolated from CkitCreERT2-ChR2/tdTomato, PdgfrαCreERTM -ChR2/tdTomato, or Myh11CreERT2-ChR2/tdTomato mice (3–9 months of age) as previously described (Scallan and Davis, 2013), although we intentionally retained some connective tissue and adipose tissue to ensure we had a sufficient population of recombined cells to test in the adventitia layer of the vessel. Contractions were allowed to stabilize over a 30-min equilibration period with pressure set to 3 cmH2O. If basal contraction frequency was too high, we applied pinacidil to the bath in 100 nM increments, without exceeding 600 nM, to further slow contraction frequency to around 6 contractions per minute. Pinacidil at sub 1 µM doses can slow contraction frequency without causing overt hyperpolarization of membrane potential (Davis et al., 2020). Supplemental 100 nM doses of pinacidil were applied throughout the experiment to maintain a spontaneous contraction frequency below 6 per minute to allow ample diastolic time for ChR2 stimulation. Throughout this protocol, the popliteal was allowed to contract spontaneously to ensure we had not overly inhibited APs by the pacemaking cells with pinacidil. Occasionally, spontaneous contractions occurred just prior to light-evoked contractions, resulting in a potential false positive, so we performed multiple stimulations over a period of 5–10 min, typically waiting at least 3 s after any spontaneous contraction before stimulating. Care was made to align the light fiber in such a way that only part of the vessel would be directly illuminated and so target cells of interest would be directly activated by 473 nm light using a Laser diode (Doric LD Fiber Light Source, Quebec, Canada), through an optical probe with a 10-µm tip (Doric, OPT_200_0.22.010). To further limit the excitation field, the optical probe was coated with black acrylic paint using an eyelash brush so that the uncoated opening was ~2–3 µm. With the probe positioned within 5 µm of one side of the vessel wall, the spread of light covered an area ~10–100 µm wide on the back side of the vessel (depending on the diode amplitude setting). Light pulses, 200 ms in length, were triggered by a Grass S9 stimulator (Harvard Apparatus, Holliston, MA) connected to the external TTL input of the laser diode. Pulse amplitude was adjusted between 40 and 90 mA using the Laser Diode Module Driver (Doric). A contraction was considered to be triggered if it occurred within 50ms of stimulation. We performed photo-stimulation from 2 to 4 sites within each vessel, with 6–14 stimulations per site. If a photo-stimulation was triggered incidentally after the initiation of a ‘spontaneous contraction’, it was discarded from the analysis. For Myh11CreERT2-ChR2-tdTomato, six vessels from three separate mice were tested. For PdgfrαCreERTM-ChR2-tdTomato, six vessels from four separate mice were tested with a max of two vessels per mouse. For CkitCreERT2-ChR2-tdTomato, seven vessels from three separate mice were assessed. Diameter was recorded to align photo-activation with the contraction cycle using LabVIEW.
 
-## Solutions and chemicals
+### Solutions and chemicals
 
 Krebs buffer was composed of (in mM): 146.9 NaCl, 4.7 KCl, 2 CaCl2, 1.2 MgSO4, 1.2 NaH2PO4·H2O, 3 NaHCO3, 1.5 NaHEPES, and 5 d-glucose (pH = 7.4 at 37°C). Krebs-BSA buffer was prepared with the addition of 0.5% (wt/vol) BSA while Krebs Ca2+-free replaced CaCl2 with 3 mM EGTA. Tamoxifen was dissolved to 10 mg/ml in a Safflower Oil-Ethanol (95–5% vol/vol) solution with rocking agitation, separated into aliquots, and stored at –20°C. Wortmannin was dissolved in DMSO to a stock solution of 1 mM. Pinacidil was dissolved in DMSO to a stock concentration of 1 µM. Nifedipine was dissolved in DMSO to a stock concentration of 1 mM. All chemicals were obtained from Sigma (St. Louis, MO), except for BSA (US Biochemicals; Cleveland, OH), MgSO4, and NaHEPES (Fisher Scientific; Pittsburgh, PA).
 
-## Statistical tests
+### Statistical tests
 
 Statistical differences in the isobaric contractile tests for popliteal cLVs isolated from PdgfrαCreERTM-Ano1fl/fl, PdgfrαCreERTM-Gjc1fl/fl, and PdgfrαCreERTM-Cacna1cfl/fl mice over the various contractile parameters were assessed via (1) repeated measures two-way ANOVAs with Sidak’s multiple comparison tests performed using Prism9 (Graphpad). Data are plotted as mean ± SEM and significance determined at p < 0.05 and 0.10> p > 0.05 were reported. Cre negative mice were used for controls, and experiment order was not randomized aside from random mouse selection from cages housing both Cre+ or Cre− mice. Experimental sample size was determined by the results from our previous experiments assessing Gjc1, Ano1, Cacna1c with Myh11CreERT2 mice. Data from cLVs in which a negative tone value was recorded at any pressure, which typically indicated incomplete relaxation or occluding bubbles in the cannula, were not included in the tone analysis. Vessels that failed to contract at a given pressure had no value recorded for ejection fraction or normalized amplitude, and REML mixed effects model was used in place of repeated measures two-way ANOVA. We used a categorical Chi-squared statistical test for the experiments assessing our ability to trigger a contraction with activation of ChR2+ cells. Ca2+ particle area and frequency were compared using one-way ANOVA with Tukey’s post hoc test. Significance was determined at p < 0.05. A mixed effects analysis with Tukey’s multiple comparison post hoc test was used to compare AP parameters across pressure using Prism9 (GraphPad).

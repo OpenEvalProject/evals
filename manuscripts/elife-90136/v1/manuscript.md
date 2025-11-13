@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/006w34k90 Institute of Neuroscience, Howard Hughes Medical Institute, University of Oregon Eugene United States
-2. https://ror.org/01nfmeh72 Menzies Institute for Medical Research, University of Tasmania Hobart Australia
+1. Institute of Neuroscience, Howard Hughes Medical Institute, University of Oregon Eugene United States ([ROR:006w34k90](https://ror.org/006w34k90))
+2. Menzies Institute for Medical Research, University of Tasmania Hobart Australia ([ROR:01nfmeh72](https://ror.org/01nfmeh72))
 
 † Corresponding author
 
 ## Abstract
 
-Notch signaling is an evolutionarily conserved pathway for specifying binary neuronal fates, yet how it specifies different fates in different contexts remains elusive. In our accompanying paper, using the Drosophila lamina neuron types (L1-L5) as a model, we show that the primary homeodomain transcription factor (HDTF) Bsh activates secondary HDTFs Ap (L4) and Pdm3 (L5) and specifies L4/L5 neuronal fates. Here we test the hypothesis that Notch signaling enables Bsh to differentially specify L4 and L5 fates. We show asymmetric Notch signaling between newborn L4 and L5 neurons, but they are not siblings; rather, Notch signaling in L4 is due to Delta expression in adjacent L1 neurons. While Notch signaling and Bsh expression are mutually independent, Notch is necessary and sufficient for Bsh to specify L4 fate over L5. The Notch ON L4, compared to Notch OFF L5, has a distinct open chromatin landscape which allows Bsh to bind distinct genomic loci, leading to L4-specific identity gene transcription. We propose a novel model in which Notch signaling is integrated with the primary HDTF activity to diversify neuron types by directly or indirectly generating a distinct open chromatin landscape that constrains the pool of genes that a primary HDTF can activate.
+Notch signaling is an evolutionarily conserved pathway for specifying binary neuronal fates, yet how it specifies different fates in different contexts remains elusive. In our accompanying paper, using the Drosophila lamina neuron types (L1-L5) as a model, we show that the primary homeodomain transcription factor (HDTF) Bsh activates secondary HDTFs Ap (L4) and Pdm3 (L5) and specifies L4/L5 neuronal fates. Here we test the hypothesis that Notch signaling enables Bsh to differentially specify L4 and L5 fates. We show asymmetric Notch signaling between newborn L4 and L5 neurons, but they are not siblings; rather, Notch signaling in L4 is due to Delta expression in adjacent L1 neurons. While Notch signaling and Bsh expression are mutually independent, Notch is necessary and sufficient for Bsh to specify L4 fate over L5. The NotchON L4, compared to NotchOFF L5, has a distinct open chromatin landscape which allows Bsh to bind distinct genomic loci, leading to L4-specific identity gene transcription. We propose a novel model in which Notch signaling is integrated with the primary HDTF activity to diversify neuron types by directly or indirectly generating a distinct open chromatin landscape that constrains the pool of genes that a primary HDTF can activate.
 
 ## Introduction
 
@@ -28,33 +28,77 @@ Here, we elucidate the role of Notch and the primary HDTF Bsh in specifying L4 a
 
 ## Results
 
-## Notch signaling is activated in newborn L4 neurons but not L5
+### Notch signaling is activated in newborn L4 neurons but not L5
 
 Binding of a Notch ligand in one cell to Notch in an adjacent cell results in the translocation of the Notch intracellular domain (N-ICD) into the nucleus and the subsequent transcription of Notch target genes, including Hey (Monastirioti et al., 2010; Figure 1A). To test whether Notch signaling is activated in newborn lamina neurons, we stained for Hey as a reporter of active Notch signaling. We found that Hey is colocalized with Bsh+ L4 newborn neurons but not Bsh+ L5 neurons (Figure 1B–B’’ and D). We also examined the expression of another Notch target gene, E(spl)-mγ (Almeida and Bray, 2005), and found that it was not expressed in lamina neurons (Figure 1—figure supplement 1). The primary HDTF Bsh activates the secondary HDTFs Ap and Pdm3 in L4 and L5, respectively (Xu et al., 2023). Here, we show that Notch signaling is activated prior to the initiation of these secondary HDTFs, suggesting a potential causal relationship between asymmetric Notch signaling and differential secondary HDTF activation in L4 and L5 neurons (Figure 1C–D). Together, we conclude that there is differential Notch activity, with newborn L4, but not L5, expressing the Notch reporter Hey.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of Notch signaling pathway. (B-B”) Hey as a reporter of active Notch signaling is only expressed in newborn L4 neurons but no other lamina neurons at 15 hr APF. Here and below, scale bar: 10 µm, n≥5 brains. Dashed line delineates the boundary between Bsh+ L4 and Bsh+ L5 neurons. (C, D) Hey is expressed prior to the activation of the secondary HDTFs Ap and Pdm3 at 15 hr APF. The dashed line delineates the boundary between Bsh+ L4 and Bsh+ L5 neurons. (E–H) Using twin-spot MARCM, two sibling neurons generated by one progenitor are traced. RFP and GFP cells are either both L4 neurons (Bsh+Pdm3-) or both L5 neurons (Bsh+Pdm3+). N=4. The dashed line outlines RFP+ and GFP+ cell bodies.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A-A”) E(spl)-mγ-GFP is expressed in the LPC region but not in lamina neurons. Erm labels L3; Svp labels L1; Bsh labels Bsh+ LPCs, L4 and L5. A solid white line outlines the LPC region.
+
 In most regions of the central nervous system, ganglion mother cells (GMCs) undergo asymmetric terminal divisions to make NotchON/NotchOFF sibling neurons with distinct cell fates (Lee et al., 2020; Li et al., 2013; Mark et al., 2021). To test whether L4 and L5 are NotchON/NotchOFF siblings, we used twin-spot MARCM (Yu et al., 2009) to trace two sibling neurons, which are divided from a single LPC cell, as a GFP and RFP pair. If L4 and L5 neurons are siblings generated from an LPC asymmetric division, we predict L4 and L5 to be an invariant RFP and GFP pair. In contrast, we found the GFP and RFP pair are either both L4 neurons or both L5 neurons (Figure 1E–H). This rules out an obligate asymmetric division to produce L4/L5 siblings and suggests that differential Hey expression is due to differential contact with an extrinsic Notch ligand.
 
-## L1 neurons express Delta and activate Notch signaling in adjacent L4 neurons
+### L1 neurons express Delta and activate Notch signaling in adjacent L4 neurons
 
 We tested the possibility that the asymmetric Notch signaling between L4 and L5 is due to an extrinsic exposure of L4 to Delta expression, one of the two Notch ligands in Drosophila (Muskavitch, 1994). We found that during lamina neurogenesis, Delta is specifically expressed in L1 neurons which are adjacent to L4 neurons but not L5 (Figure 2A–B). Furthermore, we found that Delta is also expressed in the Tailless+ (Tll+) LPCs in the same row as the L1 neurons, suggesting that LPCs may be more heterogeneous than previously thought (Apitz and Salecker, 2014; Huang et al., 1998; Figure 2C–D). To test whether the L1-specific transcription factor Svp is required to activate or maintain Delta expression in L1, we knocked down Svp expression in the lamina. We found that Svp expression is indeed almost gone following Svp-knockdown (Svp-KD), yet Delta and Hey expression remains unaffected (Figure 2—figure supplement 1), suggesting that Delta expression in L1 neurons might be inherited from Delta-expressing LPCs instead of being activated by Svp. Together, we found that L1 neurons and a subset of LPCs express Delta, and Delta expression in L1 neurons does not depend on Svp.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig2-v1.jpg)
+
+**Figure 2.:** (A, A’) Svp+Zfh1+L1 neurons are adjacent to both newborn L3 and L4 neurons. Newborn L3 neurons (Erm+) are localized strictly above (distal to) L1 neurons (Svp+Zfh1+), and L1 neurons are localized strictly above (distal to) L4 neurons. Here and below, scale bar: 10 µm, n≥5 brains. The dashed line delineates the boundary between L1 (Svp+Zfh1+) and L4 (Bsh+) cell bodies. (B, B’) Delta is expressed in Zfh1+ L1 neurons which are adjacent to Bsh+ L4 neurons. The dashed line delineates the boundary between L1 (Zfh1+) and L4 (Bsh+) cell bodies. (C-C”) Delta is also expressed in a subset of LPCs (Tll+). The dashed line highlights Delta+ cell bodies. (D) Summary of A-C data; triangles represent Delta expression. (E-F”) Delta-KD (27G05-Gal4, tubP-GAL80[ts], UAS-Delta-RNAi) results in loss of Delta and Hey expression in lamina. HRP labels the axons of the photoreceptors, which represent the lamina column. A solid white line outlines the lamina and a dashed line delineates the boundary between Delta+ cells and Hey+ cells. (G) Summary.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) In Svp-KD (27G05-Gal4>UAS-Svp-RNAi), there is a loss of Svp while Hey expression remains unaffected at 19 hr APF. (C–D) Quantification (single optical section). Here and below, scale bar, 10 µm, n≥5 brains. (E–G) In Svp-KD (27G05-Gal4>UAS-Svp-RNAi), Delta expression remains unaffected at 19 hr APF. (G) Quantification (single optical section). Data are presented as mean ± SEM. Each dot represents each brain. n=5 brains in (C) and (D). n=6 brains for control and n=5 brains for Svp-KD in (G). ***p<0.001, ns = not significant, unpaired t-test.
+
 Next, we asked whether Delta expression in L1 neurons is required to activate Notch signaling in adjacent newborn L4 neurons. We knocked down Delta expression in lamina using the LPC driver 27G05-Gal4 and Delta-RNAi. Indeed, Delta-KD shows the absence of Delta expression in the lamina (Figure 2E’ and F’). Importantly, reduced Delta expression abolished Hey expression in the newborn L4, showing that Delta expression in L1 neurons is required for activating Notch in L4 (Figure 2E–F”). Taken together, we conclude that Delta expressed in L1 neurons activates Notch signaling in L4 but not L5 neurons, making the Delta-Notch pathway a strong candidate for acting together with Bsh activity to differentially specify L4 and L5 fates (Figure 2G).
 
-## Bsh without Notch signaling activates Pdm3 and specifies L5 neuronal fate
+### Bsh without Notch signaling activates Pdm3 and specifies L5 neuronal fate
 
 To test whether the asymmetric Notch signaling between newborn L4 and L5 enables Bsh to differentially specify distinct L4 and L5 fates, we first performed Notch loss of function in the lamina using 27G05-Gal4 and UAS-Notch-RNAi. We found that this genotype caused embryonic lethality, so to preserve Notch function during early development, we performed conditional Notch-KD (N-KD) using Gal80ts. We inactivated the Gal80ts activity, which abrogates the suppression of 27G05-Gal4, from the beginning of the third instar stage to ensure the N-KD during lamina neurogenesis. During lamina neurogenesis, in controls, the Notch reporter Hey is expressed in newborn L4 neurons, followed by Bsh activation of Ap and Pdm3 and specification of L4 and L5 fates, respectively (Xu et al., 2023; Figure 3A–B, Figure 3—figure supplement 1B–B”). In contrast, in N-KD, Hey expression becomes absent, and Bsh now activates Pdm3 but not Ap and specifies L5 fate (Figure 3C–D, Figure 3—figure supplement 1B–C”). During late pupal stages after the completion of lamina neurogenesis, control Bsh+ lamina neurons include both Ap+ L4 neurons and Pdm3+ L5 neurons (Figure 3E–F). In N-KD, however, Bsh+ lamina neurons are mainly Pdm3+ L5 neurons, although the number of Bsh+ lamina neurons remains unaffected, suggesting that more L5 neurons are generated at the expense of L4 in N-KD (Figure 3E–J). Interestingly, Bsh+ cell bodies in N-KD settle together to mix in a single layer, in contrast to Bsh+ cell bodies in controls segregating into two distinct layers with L4 distal to L5 (Figure 3E–H). This suggests that L4 and L5 cell bodies in controls might express different cell surface molecules to achieve their neuron-type-specific settling layer.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig3-v1.jpg)
+
+**Figure 3.:** (A–D) N-KD in lamina (27G05-Gal4, tubP-GAL80[ts], UAS-Notch-RNAi) shows Hey expression is absent, and Bsh only activates Pdm3 and specifies L5 neuronal fate during lamina neurogenesis (19 hr APF). Here and below, scale bar, 10 µm, n≥5 brains. (E–J) N-KD in lamina shows Bsh+ lamina neurons are mainly Pdm3+ L5 neurons, though the number of Bsh+ lamina neurons remains unaffected at 3-4d APF. (I–J) Quantification (single optical section). (K) Summary Data are presented as mean ± SEM. Each dot represents each brain. n=6 brains in (I), (J). ***p<0.001, ns = not significant, unpaired t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic of 27G05-Gal4 insertion site in between two Notch target genes (E(spl)m4-BFM and E(spl)m5-HLH). (B-C”) Bsh without Notch signaling activates Pdm3 and specifies L5 morphology. In N-KD (27G05-Gal4, tubP-GAL80[ts], UAS-Notch-RNAi), Bsh activates Pdm3 but not Ap and specifies L5 neuronal fate during lamina neurogenesis (19 hr APF). The white line outlines Bsh+ lamina cells. Scale bar, 10 µm, n≥5 brains.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C) Delta-KD (27G05-Gal4, tubP-GAL80[ts], UAS-Delta-RNAi) in lamina shows the increase of Pdm3+ L5 neurons at the expense of L4 at 3-4d APF. (C) Quantification (single optical section). Scale bar, 10 µm. Data are presented as mean ± SEM. Each dot represents each brain. n=5 brains. **p<0.01, ns = not significant, unpaired t-test.
+
 Similarly, Delta-KD results in more L5 neurons generated at the expense of L4 (Figure 3—figure supplement 2). Note that ectopic Ap expression in L5 is caused by the 27G05-Gal4 line alone (Figure 3E–G”, Figure 3—figure supplement 2A–B”), probably due to its genome insertion site in the Notch target gene E(spl)m4-BFM (Figure 3—figure supplement 1A), but this does not affect our conclusion that Bsh without Notch signaling activates Pdm3 and specifies L5 fate. Taken together, we conclude that in the absence of Notch signaling, the primary HDTF Bsh activates the secondary HDTF Pdm3 and specifies L5 neuronal fate (Figure 3K).
 
-## Bsh with Notch signaling activates Ap and specifies L4 neuronal fate
+### Bsh with Notch signaling activates Ap and specifies L4 neuronal fate
 
 To test whether Notch signaling is sufficient for Bsh to activate Ap and specify L4 neuronal fate, we first performed Notch gain of function broadly in the LPCs and lamina neurons. We used 27G05-Gal4 and Gal80ts to express the Notch intracellular domain (N-ICD; a constitutively active form of Notch) from the middle of lamina neurogenesis at 0 hr APF (Figure 4—figure supplement 1A). Following Notch misexpression, we observed ectopic Hey expression in newborn L5 neurons generated after 0 hr APF, showing that Notch signaling was active in L5 neurons (Figure 4—figure supplement 1B–C”). Furthermore, Notch misexpression results in ectopic Bsh+ Pdm3- L4 neurons and a loss of Bsh+ Pdm3+ L5 neurons (Figure 4—figure supplement 1D–G). Thus, broad activation of Notch signaling in lamina is sufficient for Bsh to activate Ap and specify L4 neuronal fate at the expense of L5 neuronal fate.
 
 Next, we wanted to activate Notch signaling precisely in newborn L5 neurons using Bsh-Gal4. We confirmed that Bsh-Gal4 is turned on in newborn L5 and prior to Pdm3 initiation, making it the perfect driver for Notch gain of function in newborn L5 (Figure 4—figure supplement 2A–B”). In controls, newborn L4 neurons express Hey followed by Ap, whereas newborn L5 neurons lack Hey expression and subsequently express Pdm3 (Xu et al., 2023; Figure 4A–B, Figure 4—figure supplement 2C–C”). In contrast, expression of N-ICD in newborn ‘L5 neurons’ resulted in ectopic expression of Hey followed by expression of the L4 marker Ap (Figure 4C–D, Figure 4—figure supplement 1D-D”). During late pupal stages after the completion of lamina neurogenesis, control Bsh+ lamina neurons include both Ap+ L4 neurons and Pdm3+ L5 neurons (Figure 4E–F). In N-ICD, however, Bsh+ lamina neurons are mainly Ap+ L4 neurons, though the number of Bsh+ lamina neurons remains unaffected, suggesting that more L4 neurons are generated at the expense of L5 in N-ICD (Figure 4E–J). These data support our conclusion that Notch signaling in newborn neurons is sufficient for Bsh to specify L4 neuronal fate at the expense of L5 neuronal fate (Figure 4K).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Ectopic expression of N-ICD in newborn L5 neurons (Bsh-Gal4 >UAS-N-ICD) results in ectopic Hey and Ap activation and an increased number of L4 neurons at 19 hr APF. Here and below, scale bar, 10 µm, n≥5 brains. (E–J) N-ICD shows Bsh+ lamina neurons are mainly Ap+ L4 neurons, though the number of Bsh+ lamina neurons remains unaffected at 3-4d APF. (I–J) Quantification (single optical section). (K) Summary. Data are presented as mean ± SEM. Each dot represents each brain. n=6 brains in (I), (J). ***p<0.001, ns = not significant, unpaired t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic of the genetics for temporally restricted activation of Notch signaling. (B-C”) Activation of Notch signaling from 0 hr APF (affected region circled) results in ectopic Hey expression at 19 hr APF. Here and below, scale bar, 10 µm, n≥5 brains. (D–G) Activation of Notch signaling from 0 hr APF (affected region circled) results in no change to Bsh expression, loss of Pdm3+ L5 neurons, and gain of Ap+Pdm3 L4 neurons at 3-4d APF. (F and G) Quantification (single optical section). Data are presented as mean ± SEM. Each dot represents each brain. ***p<0.001, ns = not significant, unpaired t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A-B”) Bsh-Gal4 is expressed in newborn L5 neurons. (A-A”) GFP+ cells (white line circle; Bsh-Gal4 >UAS-myrGFP) label L5 neurons which are in the bottom (proximal) row of Bsh+ cells during lamina neurogenesis (13 hr APF). Here and below, scale bar, 10 µm, n≥5 brains. (B-B”) GFP+ cells (white line circle; Bsh-Gal4 >UAS-myrGFP) label Pdm3+ newborn L5 and early-born L5 neurons during lamina neurogenesis (16 hr APF). (C-D”) Bsh does not activate L5 marker Pdm3 when Notch signaling is activated in newborn L5 by Bsh-Gal4 and UAS-N-ICD. Pdm3 expression is initiated in L5 neurons in control but not in N-ICD (Bsh-Gal4 >UAS-N-ICD).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic of the genetics used to trace the morphology and presynaptic site (Brp) of Hey+ neurons. (B–E) In controls, Tomato+ neurons in lamina have L4 morphology and presynaptic sites labeled by Brp-V5. In Bsh-KD, Tomato+ cells, which trace the endogenous and ectopic Hey+ neurons, have L4-like morphology and presynaptic sites labeled by Brp-V5 in the lamina. Scale bar, 10 µm. n≥5 brains.
+
 To test whether Bsh with Notch signaling specifies L4 morphology and connectivity, we took advantage of a Hey-ORF-Flp transgene (Mark et al., 2021) to trace the morphology of Hey+ neurons with myristoylated Tomato and the Hey+ neuron presynaptic sites with Bruchpilot (Brp) using the STaR method (Chen et al., 2014; Xu et al., 2019; Figure 4—figure supplement 3A). L4 neurons are the only lamina neurons that express Hey (Figure 1B’). Indeed, in controls, Tomato + neurons, which trace Hey+ neurons, exhibit L4-specific morphology and connectivity in lamina: neurites and presynaptic Brp in the proximal lamina (Figure 4—figure supplement 3B–C). Following N-ICD misexpression in newborn L5, Tomato+ neurons, which trace the endogenous and ectopic Hey+ neurons, have L4-like morphology and connectivity: neurites and presynaptic Brp in the proximal lamina (Figure 4—figure supplement 3D–E). The slight deviations from control L4 morphology following N-ICD misexpression in newborn L5 might be due to a higher Notch signaling level in N-ICD misexpression compared to control. Taken together, we conclude that in the presence of Notch signaling, the primary HDTF Bsh activates the secondary HDTF Ap and specifies L4 TF marker, morphology, and connectivity (Figure 4K).
 
-## Notch signaling and Bsh expression are mutually independent
+### Notch signaling and Bsh expression are mutually independent
 
 Notch signaling is widely used in newborn neurons to specify binary neuronal fates, and HDTFs are broadly expressed in neurons (Hobert, 2021; Jukam and Desplan, 2010; Louvi and Artavanis-Tsakonas, 2006; Spana and Doe, 1996), yet the relationship between Notch signaling and HDTF expression has remained elusive. Here, we find that the secondary HDTFs Ap and Pdm3 are activated in a Notch-dependent manner: Notch signaling upregulates Ap expression and downregulates Pdm3 expression (Figures 3 and 4). To test the relationship between Notch signaling and the primary HDTF Bsh expression, we performed conditional N-KD during lamina neurogenesis. This knockdown was highly effective, with Hey becoming undetectable, yet the number of Bsh+ cells remains unaffected (Figure 5A–C). Thus, Bsh expression is independent of Notch signaling. Conversely, we used 27G05-Gal4 and Bsh-RNAi to knock down Bsh in LPCs. This resulted in Bsh becoming undetectable, yet Hey expression was unaffected (Figure 5D–F). Thus, Notch signaling and Bsh expression are independent. Taken together, we conclude that while the expression of the secondary HDTFs depends on Notch signaling, the expression of primary HDTF Bsh and Notch signaling are mutually independent.
 
@@ -62,7 +106,7 @@ Notch signaling is widely used in newborn neurons to specify binary neuronal fat
 
 **Figure 5.:** (A–F) Notch activation and Bsh expression are mutually independent. (A–C) N-KD in lamina (27G05-Gal4, tubP-GAL80[ts], UAS-Notch-RNAi) results in loss of Hey expression without affecting Bsh expression. (C) Quantification (single optical section). Here and below, scale bar, 10 µm, n≥5 brains. (D–F) Bsh-KD in lamina (27G05-Gal4>UAS-Bsh-RNAi) results in loss of Bsh expression without affecting Hey expression. (F) Quantification (single optical section). (G–L) Notch signaling without Bsh specifies L3 neuron type. (G) Schematic of the genetics used to trace the morphology of Hey+ lamina neurons. (H, I) In controls, GFP+ neurons express the L4 marker Bsh (white arrowhead) at 19 hr APF. In Bsh-KD, Bsh expression becomes absent in lamina and GFP+ cells now express L3 markers Zfh1 and Erm (white arrowhead). (J–L) In controls, GFP + cells express the L4 marker Ap (white arrowhead) and have L4 morphology (asterisk) at 2.5d APF. In Bsh-KD, GFP+ cells express L3 marker Erm (white arrowhead) and adopt L3 morphology (asterisk). (L) Quantification for (J) and (K) (single optical section). (M–O) (M) Schematic of the genetics used to trace the morphology and presynaptic sites of Hey+ neurons. (N, O) In controls, Tomato+ neurons have L4 morphology and presynaptic sites (Brp) in the lamina. In Bsh-KD, Tomato+ neurons adopt L3 morphology and connectivity, which lacks presynaptic localization in the lamina (Xu et al., 2019). (P) Summary. Data are presented as mean ± SEM. Each dot represents each brain. n=5 brains in (C), (F), and (L). ***p<0.001, ns = not significant, unpaired t-test.
 
-## Notch signaling without Bsh specifies L3 neuron type
+### Notch signaling without Bsh specifies L3 neuron type
 
 Our observation that Notch signaling remains unaffected following the loss of Bsh raises an interesting question: what is the identity of the Hey+ neurons in the absence of Bsh? To address this question, we used genetic methods (schematic in Figure 5G) to trace Hey+ lamina neurons with myristoylated GFP. L4 neurons are the only lamina neurons expressing Hey. Indeed, in controls, GFP + cells, which trace Hey+ neurons, express the L4 marker Bsh but not L3 markers Zfh1 or Erm (Figure 5H–H''). In Bsh-KD, Bsh expression is lost, and GFP+ cells instead express the L3 markers Zfh1 and Erm (Figure 5I–I''). Zfh1 is required for L1 and L3 fates, and Bsh suppresses Zfh1 to inhibit ectopic L1 and L3 fates (Xu et al., 2023). Together, we conclude that in the absence of Bsh, Notch signaling with ectopic Zfh1 specifies L3 neuronal fate.
 
@@ -70,9 +114,21 @@ We next tested whether Hey+ neurons in Bsh-KD adopt L3 morphology. In controls, 
 
 To test whether Hey+ neurons in Bsh-KD adopt L3 connectivity, we examined the location of presynaptic sites of Hey+ neurons. We took advantage of Hey-ORF-Flp (Mark et al., 2021) to label the presynaptic marker Brp of Hey+ neurons with the STaR method (Chen et al., 2014; Xu et al., 2019) (schematic in Figure 5M). In controls, Tomato+ neurons in lamina exhibit L4-specific morphology and connectivity, with neurites and presynaptic Brp in the proximal lamina (Figure 5N). In contrast, following Bsh-KD, the Tomato+ neurons adopt L3-specific morphology and connectivity: comb-like neurites in lamina and no significant Brp in lamina (Xu et al., 2019; Figure 5O). Taken together, we conclude that in the absence of Bsh, Notch signaling with ectopic Zfh1 specifies L3 TF marker, morphology, and connectivity (Figure 5P).
 
-## The NotchON L4 has correlated open chromatin, Bsh-bound loci, and transcription profile that is distinct from the NotchOFF L5
+### The NotchON L4 has correlated open chromatin, Bsh-bound loci, and transcription profile that is distinct from the NotchOFF L5
 
 Bsh specifies two distinct neuron types: NotchON L4 and NotchOFF L5. How are Notch signaling and Bsh activity integrated to specify L4 neuron type over L5? Bsh binds numerous L4 feature genes: ion channels, synaptic organizers, cytoskeleton regulators, synaptic recognition molecules, neuropeptide/receptor, and neurotransmitter/receptor (Xu et al., 2023). This raises the hypothesis that Notch signaling might generate an L4-distinct open chromatin landscape which determines the accessibility of Bsh target genes, resulting in L4-specific Bsh-dependent gene transcription. To determine if L4 and L5 have differing open chromatin regions and Bsh genome-binding sites, we used Targeted DamID (TaDa) (Marshall et al., 2016; Southall et al., 2013) to profile both open chromatin (Dam-alone binding; Aughey et al., 2018) and Bsh genome-binding loci (Dam:Bsh binding; Figure 6A). We performed these experiments with precise spatial and temporal control: only in L4 neurons (using L4-Gal4), which we reported in our accompanying paper (Xu et al., 2023) or L5 neurons (using L5-Gal4; Luo et al., 2020; Nern et al., 2008) at the time of synapse formation (46–76 hr APF; Figure 6—figure supplement 1A–B”). We confirmed the function of the Bsh:Dam fusion protein previously (Xu et al., 2023). Here for L5 neurons, we performed three biological replicates, which had high reproducibility (Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic of the Targeted DamID method. Upon GAL4 induction, low levels of either Dam or Bsh:Dam are expressed, allowing genome-wide open chromatin and Bsh binding targets to be identified. (B) L4 and L5 neurons show distinct open chromatin regions (yellow), and L4-specific transcribed genes (red) are enriched in L4-distinct open chromatin regions. (C) L4 and L5 neurons show distinct Bsh-bound loci (yellow), and L4-specific transcribed genes (red) are enriched in L4-distinct Bsh-bound loci. p Values from Fisher’s exact test; odds ratios (OR) expressed as L4/L5 in all cases. (D) Model.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic of the genetics used to perform targeted Dam ID experiments (see Figure 6). (B-B”) 6–60 Gal4, which is expressed at 46–76 hr APF, drives GFP expression in all Pdm3+ L5 neurons and weak GFP expression in some Ap+ L4 neurons. Scale bar, 10 µm. n≥5 brains. (C) Both Dam and Bsh:Dam show high Pearson correlation coefficients among their three biological replicates, with lower Pearson correlation coefficients between Dam and Bsh:Dam. Heat map is generated using the multiBamSummary and plotCorrelation functions of deepTools.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/90136/elife-90136-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) L4 and L5 neurons show distinct open chromatin regions (yellow), and the Su(H) binding motif (blue) is more likely to be present in L4-distinct open chromatin regions. (B) L4 and L5 neurons show distinct open chromatin regions (yellow), and L5-specific transcribed genes (red) are enriched in L5-distinct open chromatin regions. (C) L4 and L5 neurons show distinct Bsh-bound loci (yellow); L5-specific transcribed genes (red) and L5-distinct Bsh-bound loci do not show correlation. p Values from Fisher’s exact test; odds ratios (OR) expressed as L4/L5 in all cases.
 
 Our data show that the NotchON L4 neurons, compared to the NotchOFF L5, have distinct open chromatin regions, which is consistent with the known role of Notch signaling driving histone acetylation, a marker of active enhancers, in cultured Drosophila and mammalian cells (Oswald et al., 2001; Skalska et al., 2015; Wang et al., 2014; Figure 6B, Supplementary file 1). Indeed, we found the canonical binding motif of Suppressor of Hairless (Su(H)), the DNA-binding partner of Notch (Bray and Furriols, 2001), is more likely to be enriched in L4-distinct open chromatin regions (Figure 6—figure supplement 2A). To test whether L4-distinct open chromatin regions result in L4-specific gene transcription, we took advantage of recently published lamina neuron single-cell RNA sequencing (scRNA-seq) data from the same developmental stage (GEO: GSE190714; Jain et al., 2022). Indeed, our data show the significant enrichment of L4-specific transcribed genes in L4-distinct open chromatin regions (Figure 6B, Supplementary file 2). Similarly, we found that L5-specific transcribed genes are enriched in L5-distinct open chromatin regions (Figure 6—figure supplement 2B, Supplementary file 3). Together, our data suggest that Notch signaling directly or indirectly generates an L4-distinct open chromatin landscape which correlates with L4-specific gene transcription (Figure 6D).
 
@@ -92,23 +148,544 @@ It is well known that Notch signaling controls binary cell fates. Yet, its mecha
 
 Our brain function depends on the vast diversity of neuron types. The role of TFs in specifying neuron types has been well-studied. For example, each temporal transcription factor (TTF) acts transiently in progenitors to generate specific neuron types during its expression window (Doe, 2017; Isshiki et al., 2001; Li et al., 2013). While most TTFs are not maintained in neurons, their function is likely maintained by another TF, for example HDTF, which is persistently expressed in neurons. Indeed, HDTFs function as terminal selectors and control the expression of neuronal identity genes (Cros and Hobert, 2022; Hobert, 2021; Howell et al., 2015; Reilly et al., 2022; Reilly et al., 2020). The primary HDTF Bsh specifies L4 and L5 neuronal fates (Xu et al., 2023). However, the role of open chromatin in specifying neuron type is less well characterized. In vitro, during the programming of mouse embryonic stem cells to neurons, proneural factors Ascl1 and Neurogenin2 establish distinct chromatin landscapes, resulting in induced neurons with different subtype identities (Aydin et al., 2019; Wapinski et al., 2013). Here, we found that Bsh with Notch signaling specifies L4 fate, while Bsh alone specifies L5 fate. The NotchON L4, compared to NotchOFF L5, has a distinct open chromatin landscape which allows Bsh to bind distinct genomic loci, leading to L4-specific identity gene transcription. Furthermore, in Bsh-KD, L3 and L1 are ectopically generated at the expense of L4 and L5, respectively (Figure 7). This elegant one-to-one fate switch (L4 >L3; L5 >L1) raises an open question: would newborn L4 and L3 share the open chromatin landscape, which is distinct from the one shared by newborn L5 and L1? Our findings provide a testable model that the unique combination of the primary HDTF and open chromatin landscape specifies distinct neuron types.
 
-## Data availability
+### Data availability
 
 All resources will be provided upon request. DamID data in this publication have been deposited in NCBI’s GEO and are accessible through GEO Series accession number GSE247239. All original code has been deposited on GitHub (https://github.com/marshall-lab/Xu_et_al_2023, copy archived at Marshall lab, 2023).
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>10xUAS-IVS- myristoylated-GFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_32199</td>
+      <td>w[1118]; P{y[+t7.7] w[+mC]=10XUAS-IVS-myr::GFP}su(Hw)attP5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>R27G05GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_48073</td>
+      <td>w[1118]; P{y[+t7.7] w[+mC]=GMR27 G05-GAL4}attP2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Bsh-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_29336</td>
+      <td>y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.JF02498}attP2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>yw; UAS-mCD8-GFP, UAS-rCD2i, FRT40A/CyO; TM3, Sb/TM6B, Tb</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_56185</td>
+      <td>y[1] w[*]; P{y[+t7.7] w[+mC]=UAS-mCD8.GFP.UAS-rCD2i}attP40 P{ry[+t7.2]=neoFRT}40 A/CyO; TM3, Sb[1]/TM6B, Tb[1]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>yw, hsFlp122; frt40a, UAS-CD2-RFP, UAS-GFP-miRNA</td>
+      <td>Gift from Claude Desplan Lab</td>
+      <td></td>
+      <td>yw, hsFLP; uas-CD2::RFP, UAS-GFP-miRNA/cyo; tm2/tm6b,tb</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Notch-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_33611</td>
+      <td>y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.HMS00001}attP2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Notch-ICD</td>
+      <td>Struhl and Greenwald, 2001</td>
+      <td></td>
+      <td>;UAS-Notch-ICD; +/+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Hey-ORF-T2A-FlpD5</td>
+      <td>Mark et al., 2021</td>
+      <td></td>
+      <td>w; Hey-ORF-T2A-FLP(RFP+)/cyo, wg-LacZ; +/+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-FRT-STOP-FRT-myrGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_55810</td>
+      <td>w[1118]; P{y[+t7.7] w[+mC]=10XUAS(FRT.stop)GFP.Myr}su(Hw)attP5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w; Brp-FRT-STOP-FRT-smGdP-v5-T2A-LexA; LexAop-Tomato</td>
+      <td>Peng et al., 2018; Xu et al., 2019</td>
+      <td></td>
+      <td>w; Brp-FRT-STOP-FRT-smGdP-v5-T2A-LexA/cyo; LexAop-myrtdTomato/tm6b</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Svp-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_28689</td>
+      <td>y[1] v[1]; P{y[+t7.7] v[+t1.8]=TRiP.JF03105}attP2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>6–60 Gal4</td>
+      <td>Gift from Lawrence Zipursky</td>
+      <td></td>
+      <td>W; Bl/cyo; 6–60 Gal4/tm6b</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Bsh-L-Gal4</td>
+      <td>Gift from Makoto Sato</td>
+      <td></td>
+      <td>;Bsh-L-Gal4/cyo; +/+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>tubP-GAL80[ts]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_7017</td>
+      <td>w[*]; P{w[+mC]=tubP-GAL80[ts]}2/TM2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>UAS-Zfh1-RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 103205</td>
+      <td>P{KK109931}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>31C06-Gal4, UAS-myristoylated-tdTomato</td>
+      <td>Gift from Lawrence Zipursky</td>
+      <td></td>
+      <td>;Bl/cyo; 31c06-Gal4, UAS- myristoylated-tdTomato/tm6b</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>E(spl)-mγ-GFP</td>
+      <td>Gift from Sarah Bray (Almeida and Bray, 2005)</td>
+      <td></td>
+      <td>w; +/+; E(spl)mγ-GFP/tm6b</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>VALIUM20-mCherry</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_35785</td>
+      <td>y[1] sc[*] v[1] sev[21]; P{y[+t7.7] v[+t1.8]=VALIUM20-mCherry}attP2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Bsh-ORF-3XHA (86Fb)</td>
+      <td>FlyORF Webshop</td>
+      <td>Cat#F000054</td>
+      <td>M{UAS-bsh.ORF.3xHA.GW}ZH-86Fb</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>flyORF-TaDa</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_91637</td>
+      <td>w[1118]; M{RFP[3xP3.PB] w[+mC]=FlyORF-TaDa}ZH-86Fb</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>hs-FlpD5; FlyORF-TaDa</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID: BDSC_91638</td>
+      <td>w[1118]; P{y[+t7.7] w[+mC]=hs-FLPD5}attP40; M{RFP[3xP3.PB] w[+mC]=FlyORF-TaDa}ZH-86Fb</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>Bsh-TaDa</td>
+      <td>Xu et al., 2023</td>
+      <td></td>
+      <td>w; +/CyO; UAS-GFP-Bsh-DAM/tm6b</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat#ab13970,RRID_300798</td>
+      <td>Anti-GFP (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Medical &amp; Biological Laboratories Co.</td>
+      <td>Code#PM005</td>
+      <td>Anti-RFP (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Gift from Claude Desplan(Özel et al., 2021)</td>
+      <td></td>
+      <td>Anti-Bsh (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal</td>
+      <td>Gift from Lawrence Zipursky (Tan et al., 2015) &amp; Makoto Soto</td>
+      <td></td>
+      <td>Anti-Bsh (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal</td>
+      <td>This study</td>
+      <td></td>
+      <td>Anti-Bsh (1:750); see methods section- generating Bsh antibody</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Gift from Markus Affolter(Bieli et al., 2015)</td>
+      <td></td>
+      <td>Anti-Apterous (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal</td>
+      <td>Gift from Cheng-Ting Chien (Chen et al., 2012)</td>
+      <td></td>
+      <td>Anti-Pdm3 (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Gift from Cheng-Yu Lee (Janssens et al., 2014)</td>
+      <td></td>
+      <td>Anti-Erm (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal</td>
+      <td>Gift from Jing Peng (Santiago et al., 2021)</td>
+      <td></td>
+      <td>Anti-Erm (1:70)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat#Seven-up D2D3, RRID_2618079</td>
+      <td>Anti-Svp (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Gift from James Skeath (Tian et al., 2004)</td>
+      <td></td>
+      <td>Anti-Zfh1 (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal</td>
+      <td>Asian Distribution Center for Segmentation Antibodies</td>
+      <td>Code#812</td>
+      <td>Anti-Tailless (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat#Elav-9F8A9,RRID: AB_528217</td>
+      <td>Anti-Elav (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>Bio-Rad Laboratories</td>
+      <td>Cat#MCA1360A647,RRID: AB_770156</td>
+      <td>Anti-V5-TAG:Alexa Fluor 647 (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat#nc-82,RRID: AB_2314866</td>
+      <td>Anti-Brp (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat#C594.9B,RRID: AB_528194</td>
+      <td>Anti-Delta (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal</td>
+      <td>TaKaRa</td>
+      <td>Cat#632543</td>
+      <td>Anti-Cherry (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat# 711-475-152AB_2340616</td>
+      <td>DyLight 405 anti-rabbit (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#703-545-155, RRID: AB_2340375</td>
+      <td>Alexa Fluor 488 anti-chicken (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#706-545-148, RRID: AB_2340472</td>
+      <td>Alexa Fluor 488 anti-guinea pig (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#711-545-152, RRID: AB_2313584</td>
+      <td>Alexa Fluor 488 anti-rabbit (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#715-545-150, RRID: AB_2340846</td>
+      <td>Alexa Fluor 488 anti-mouse (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#715-295-151, RRID: AB_2340832</td>
+      <td>Rhodamine Red-X anti-mouse (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#712-295-153, RRID: AB_2340676</td>
+      <td>Rhodamine Red-X anti-rat (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#711-295-152, RRID: AB_2340613</td>
+      <td>Rhodamine Red-X anti-rabbit (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#706-295-148, RRID: AB_2340468</td>
+      <td>Rhodamine Red-X donkey anti-guinea pig (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#711-605-152, RRID: AB_2492288</td>
+      <td>Alexa Fluor 647 donkey anti-rabbit (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#715-605-151, RRID: AB_2340863</td>
+      <td>Alexa Fluor 647 donkey anti-mouse (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#706-605-148, RRID: AB_2340476</td>
+      <td>Alexa Fluor 647 anti-guinea pig (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey polyclonal</td>
+      <td>Jackson ImmunoResearch Lab</td>
+      <td>Cat#712-605-153, RRID: AB_2340694</td>
+      <td>Alexa Fluor 647 anti-rat (1:400)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucloetide</td>
+      <td>Integrated DNA technologies</td>
+      <td></td>
+      <td>DamID Adaptor (top strand): CTAATACGACTCACTATAGGGCAGCGTGGTCGCGGCCGAGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucloetide</td>
+      <td>Integrated DNA technologies</td>
+      <td></td>
+      <td>DamID Adaptor (bottom strand): TCCTCGGCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Oligonucloetide</td>
+      <td>Integrated DNA technologies</td>
+      <td></td>
+      <td>DamID Primer for PCR: GGTCGCGGCCGAGGATC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAamp DNA Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#56304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E6758</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DpnI and CutSmart buffer</td>
+      <td>NEB</td>
+      <td>Cat#R0176S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DpnII and DpnII buffer</td>
+      <td>NEB</td>
+      <td>Cat#R0543S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MyTaq HS DNA Polymerase</td>
+      <td>Bioline</td>
+      <td>Cat#BIO-21112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlwI</td>
+      <td>NEB</td>
+      <td>Cat#R0513S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNase A (DNase free)</td>
+      <td>Roche</td>
+      <td>Cat#11119915001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>T4 DNA ligase and 10 x buffer</td>
+      <td>NEB</td>
+      <td>Cat#M0202S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC (v0.11.9)</td>
+      <td>The Babraham Bioinformatics group</td>
+      <td>https://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>damidseq_pipeline</td>
+      <td>Marshall and Brand, 2015</td>
+      <td>https://owenjm.github.io/damidseq_pipeline/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 (v2.4.5)</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td>http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGV (v.2.13.2)</td>
+      <td>Robinson et al., 2011</td>
+      <td>https://software.broadinstitute.org/software/igv/download</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAMtools (v1.15.1)</td>
+      <td>Li et al., 2009</td>
+      <td>http://www.htslib.org/download/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>deepTools (v3.5.1)</td>
+      <td>Ramírez et al., 2016</td>
+      <td>https://deeptools.readthedocs.io/en/develop/content/installation.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Find_peaks</td>
+      <td>Marshall et al., 2016</td>
+      <td>https://github.com/owenjm/find_peaks; (Marshall, 2016)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact Chundi Xu (cxu3@uoregon.edu) or Chris Doe (cdoe@uoregon.edu).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 All flies were reared at 25 °C on standard cornmeal fly food, unless otherwise stated.
 
-## Method details
+### Method details
 
-## Animal collections
+#### Animal collections
 
 For all RNAi knockdown experiments without tubP-GAL80[ts], crosses were kept at 25 °C and the progeny were kept at 27.5 °C with 16:8 hours light-dark cycle from the embryo stage until dissection.
 
@@ -122,19 +699,19 @@ For twin-spot MARCM, the crosses (virgin: hsFlp122; frt40a, UAS-CD2-RFP, UAS-GFP
 
 Progenies at 0 hr APF were heat shocked at 34 °C for 2 min and 50 s and dissected 24 hr after heat shock.
 
-## Generating Bsh antibody
+#### Generating Bsh antibody
 
 Bsh protein and antibody were made by GenScript (Piscataway, NJ) in guinea pigs, and immunized with the following portion of the Bsh open reading frame:
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Fly brains were dissected in Schneider’s medium and fixed in 4% paraformaldehyde in phosphate buffered saline (PBS) for 25 min. After fixation, brains were quickly washed with PBS with 0.5% Triton X-100 (PBT) and incubated in PBT for at least 2 hr at room temperature. Next, samples were incubated in blocking buffer (10% normal donkey serum, 0.5% Triton X-100 in PBS) overnight at 4 °C. Brains were then incubated in primary antibody (diluted in blocking buffer) at 4 °C for at least two nights. Following primary antibody incubation, brains were washed with PBT. Next, brains were incubated in secondary antibody (diluted in blocking buffer) at 4 °C for at least 1 day. Following secondary antibody incubation, brains were washed with PBT and mounted in SlowFade Gold antifade reagent (Thermo Fisher Scientific, Waltham, MA). Images were acquired using a Zeiss 800 confocal and processed with Image J, Adobe Illustrator (San Jose, CA) and Adobe Photoshop (San Jose, CA).
 
-## TaDa in L4 and L5 neurons at the time of synapse formation
+### TaDa in L4 and L5 neurons at the time of synapse formation
 
 For TaDa in L4, homozygous tubP-GAL80[ts]; 31C06-Gal4, UAS-myristoylated-tdTomato males were crossed to homozygous virgin females (FlyORF-TaDa line for Dam; Bsh-TaDa line for Bsh:Dam). For TaDa in L5, homozygous tubP-GAL80[ts]; 6–60 Gal4 UAS-myristoylated-tdTomato males were crossed to homozygous virgin females (FlyORF-TaDa line for Dam; Bsh-TaDa line for Bsh:Dam). Crosses were reared at 18 °C. To perform TaDa in L4 and L5 neurons during the synapse formation window, we collected pupae with the age of 46 hr APF and moved them to 29 °C to activate 31C06-Gal4 (L4) or 6–60 Gal4 (L5) for 24 hr (Figure 6—figure supplement 1). Then lamina were dissected (age equivalent at 25 °C: 76 hr APF) in cold PBS within one hour and stored at –20 °C immediately until sufficient laminae were collected for each group—about 70 lamina from 35 pupae. The published (Marshall et al., 2016) TaDa experimental pipeline was followed with a few modifications. Briefly, DNA was extracted using a QIAamp DNA Micro Kit (Qiagen, Germantown, MD) digested with DpnI (NEB, Ipswich, MA) overnight, and cleaned up using Qiagen PCR purification columns. DamID adaptors were ligated using T4 DNA ligase (NEB, Ipswich, MA) followed by DpnII (NEB, Ipswich, MA) digestion for 2 hr and PCR amplification using MyTaq HS DNA polymerase (Bioline, Memphis, Tennessee). The samples were sequenced on the NovaSeq at 118 base pairs and 27–33 million single-end reads per sample.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 DamID-seq NGS sequencing reads were processed using damidseq_pipeline v1.5.3 (Marshall and Brand, 2015). For generating Bsh binding profile bedGraphs, the default settings were used. For generating Dam-alone coverage bedGraphs, the pipeline was run on the Dam-alone sequencing files with the --just_coverage setting. For both datasets (Bsh binding and Dam-alone), peaks were identified using find_peaks (Marshall et al., 2016) on separate replicates.
 
@@ -146,6 +723,6 @@ Tests for enrichment were conducted using Fisher’s exact test, with contingenc
 
 Motif searches were conducted using the core YGTGRGAAM motif, obtained as a PWM from CisBP (Weirauch et al., 2014) (Motif ID: M10415_2.00), using the R Biostrings package (Pagès et al., 2023). For motif searches, open chromatin regions were limited to a maximum size of 1 kb around the center of the region. Motifs with a match score ≥ 85% were counted as a match.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistics were performed using either Microsoft Excel or Prism (GraphPad, San Diego, California) software. Unpaired t-test was used, unless otherwise noted. Data are presented as mean ± SEM unless otherwise noted. A 95% confidence interval was used to define the level of significance. *p<0.05, **p<0.01, ***p<0.001, ns = not significant. All other relevant statistical information can be found in the figure legends.

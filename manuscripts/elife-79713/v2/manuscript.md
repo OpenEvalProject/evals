@@ -21,20 +21,20 @@
 
 ### Affiliations
 
-1. https://ror.org/01ggsp920 Molecular Genetics Thalassaemia Department, The Cyprus Institute of Neurology and Genetics Nicosia Cyprus
-2. https://ror.org/05xvt9f17 Leiden University Medical Center Leiden Netherlands
+1. Molecular Genetics Thalassaemia Department, The Cyprus Institute of Neurology and Genetics Nicosia Cyprus ([ROR:01ggsp920](https://ror.org/01ggsp920))
+2. Leiden University Medical Center Leiden Netherlands ([ROR:05xvt9f17](https://ror.org/05xvt9f17))
 3. Centro Hospitalar e Universitário de Coimbra Coimbra Portugal
-4. https://ror.org/04gnjpq42 Laboratory of Medical Genetics, National and Kapodistrian University of Athens Athens Greece
-5. https://ror.org/04gnjpq42 Division of Endocrinology, Metabolism and Diabetes, First Department of Pediatrics, National and Kapodistrian University of Athens Athens Greece
-6. https://ror.org/03bpc5f92 Haematology Unit, Cancer Research Centre, Institute for Medical Research, National Health of Institutes (NIH), Ministry of Health Malaysia Selangor Malaysia
-7. https://ror.org/02rgb2k63 Malaysian Node of the Human Variome Project, School of Medical Sciences, Health Campus, Universiti Sains Malaysia Kelantan Malaysia
-8. https://ror.org/02rgb2k63 Human Genome Centre, School of Medical Sciences, Health Campus, Universiti Sains Malaysia Kelantan Malaysia
+4. Laboratory of Medical Genetics, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+5. Division of Endocrinology, Metabolism and Diabetes, First Department of Pediatrics, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+6. Haematology Unit, Cancer Research Centre, Institute for Medical Research, National Health of Institutes (NIH), Ministry of Health Malaysia Selangor Malaysia ([ROR:03bpc5f92](https://ror.org/03bpc5f92))
+7. Malaysian Node of the Human Variome Project, School of Medical Sciences, Health Campus, Universiti Sains Malaysia Kelantan Malaysia ([ROR:02rgb2k63](https://ror.org/02rgb2k63))
+8. Human Genome Centre, School of Medical Sciences, Health Campus, Universiti Sains Malaysia Kelantan Malaysia ([ROR:02rgb2k63](https://ror.org/02rgb2k63))
 
 † Corresponding author
 
 ## Abstract
 
-Haemoglobinopathies are the commonest monogenic diseases worldwide and are caused by variants in the globin gene clusters. With over 2400 variants detected to date, their interpretation using the American College of Medical Genetics and Genomics (ACMG)/Association for Molecular Pathology (AMP) guidelines is challenging and computational evidence can provide valuable input about their functional annotation. While many in silico predictors have already been developed, their performance varies for different genes and diseases. In this study, we evaluate 31 in silico predictors using a dataset of 1627 variants in HBA1 , HBA2, and HBB . By varying the decision threshold for each tool, we analyse their performance (a) as binary classifiers of pathogenicity and (b) by using different non-overlapping pathogenic and benign thresholds for their optimal use in the ACMG/AMP framework. Our results show that CADD, Eigen-PC, and REVEL are the overall top performers, with the former reaching moderate strength level for pathogenic prediction. Eigen-PC and REVEL achieve the highest accuracies for missense variants, while CADD is also a reliable predictor of non-missense variants. Moreover, SpliceAI is the top performing splicing predictor, reaching strong level of evidence, while GERP++ and phyloP are the most accurate conservation tools. This study provides evidence about the optimal use of computational tools in globin gene clusters under the ACMG/AMP framework.
+Haemoglobinopathies are the commonest monogenic diseases worldwide and are caused by variants in the globin gene clusters. With over 2400 variants detected to date, their interpretation using the American College of Medical Genetics and Genomics (ACMG)/Association for Molecular Pathology (AMP) guidelines is challenging and computational evidence can provide valuable input about their functional annotation. While many in silico predictors have already been developed, their performance varies for different genes and diseases. In this study, we evaluate 31 in silico predictors using a dataset of 1627 variants in HBA1, HBA2, and HBB. By varying the decision threshold for each tool, we analyse their performance (a) as binary classifiers of pathogenicity and (b) by using different non-overlapping pathogenic and benign thresholds for their optimal use in the ACMG/AMP framework. Our results show that CADD, Eigen-PC, and REVEL are the overall top performers, with the former reaching moderate strength level for pathogenic prediction. Eigen-PC and REVEL achieve the highest accuracies for missense variants, while CADD is also a reliable predictor of non-missense variants. Moreover, SpliceAI is the top performing splicing predictor, reaching strong level of evidence, while GERP++ and phyloP are the most accurate conservation tools. This study provides evidence about the optimal use of computational tools in globin gene clusters under the ACMG/AMP framework.
 
 ## Introduction
 
@@ -52,7 +52,11 @@ The main purpose of this study is to compare the performance of various in silic
 
 We selected 31 in silico predictors, including those recommended by ClinGen (Rehm et al., 2015) and linked in the Variant Curation Interface (VCI) (Preston et al., 2022), along with additional tools described in literature. A total of 1627 SNVs were retrieved from the IthaGenes database (Kountouris et al., 2017; Kountouris et al., 2014) and were annotated using a Delphi approach with respect to their pathogenicity by experts (co-authoring this study) involved in haemoglobinopathy molecular diagnosis in five different countries. The annotated pathogenicity of each SNV was then used to evaluate its predicted pathogenicity provided by in silico tools. A detailed description of the overall methodology is provided in Materials and methods and illustrated in Figure 1.
 
-## Descriptive analysis
+![Figure 1.](https://cdn.elifesciences.org/articles/79713/elife-79713-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79713/elife-79713-fig1-figsupp1-v2.jpg)
+
+### Descriptive analysis
 
 Initially, we performed a descriptive analysis of the full dataset, including variants annotated as variants of uncertain significance (VUS), which comprised 1627 SNVs. In terms of the annotated pathogenicity, 194 (11.9%) SNVs classified as benign/likely benign (B/LB), 832 (51.1%) as pathogenic/likely pathogenic (P/LP), and 601 (36.9%) as VUS. The distribution per globin gene is the following: 553 P/LP, 77 B/LB, and 403 VUS for HBB (total: 1033 SNVs; 63.5%), 173 P/LP, 66 B/LB, and 111 VUS for HBA2 (total: 350 SNVs; 21.5%), and 106 P/LP, 51 B/LB, and 87 VUS for HBA1 (total: 245 SNVs; 15%). Figure 2 illustrates the distribution of variants on each globin gene based on their annotated pathogenicity and demonstrates the highest fraction of P/LP variant in protein coding regions and in canonical splice sites. Increased numbers of P/LP variants are also observed in specific noncoding regions of the globin genes, such as polyadenylation regions and the promoter and 5’ UTR for HBB.
 
@@ -68,23 +72,965 @@ Figure 3 summarises the distribution of SNVs in the dataset according to their e
 
 Moreover, the dataset comprises SNVs causing structural haemoglobinopathies (986 SNVs), thalassaemia (445 SNVs), and both thalassaemia and structural haemoglobinopathies (128 SNVs). The thalassaemia phenotype group describes the allele phenotype and includes HBA1 and HBA2 variants (α+/α0 and α+; total: 146 SNVs) and HBB variants (β0, β0/β+, β+, β++ (silent) and β++; total: 289 SNVs). Here, we observed that most variants have allele phenotype of α+ (130 SNVs) and β0 (184 SNVs). The category of Hb stability is further divided into hyperunstable (39 SNVs) and unstable (299 SNVs), while the Hb O2 affinity group is divided into increased O2 affinity (212 SNVs) and decreased O2 affinity (88 SNVs). The main molecular mechanisms disrupted are alterations of the secondary structure (84 SNVs), heme pocket (57 SNVs), and α1β1 interface (46 SNVs). The disruption of the molecular mechanisms has been associated with clinical phenotypes, such as haemolytic anaemia, reticulocytosis, erythrocytosis, and cyanosis (Thom et al., 2013).
 
-## Evaluation of in silico tools as binary predictors
+### Evaluation of in silico tools as binary predictors
 
 Table 1 shows a comparison of all in silico predictors used in this study as binary classifiers of pathogenicity, against the consensus dataset with VUS removed. For each tool, we varied the decision threshold for the whole range of possible prediction scores and calculated all statistical measures in each step (Supplementary file 2). For binary pathogenicity classification, we selected the threshold that maximised the Matthews correlation coefficient (MCC) for each tool. Accuracy ranged from 51% (FATHMM) to 84% (CADD) with a median value of 76%. The sensitivity ranged from 41% (FATHMM) to 100% (fitCons) with a median of 82.5%, while specificity ranged from 1% (fitCons) to 81% (BayesDel) with a median of 54%. High sensitivity and low specificity indicate that most predictors correctly predict the P/LP variants but misclassify the B/LB ones. MCC values ranged from 0.04 (fitCons), indicating almost random prediction, to 0.49 (CADD) with a median value of 0.32. CADD achieved the highest accuracy and MCC among all in silico tools tested, using the threshold maximising the MCC (>10.44 for pathogenic prediction), indicating good performance as a binary classifier for globin gene variants. However, this threshold is not optimal for predicting benign variants, with the achieved specificity (0.47) being below the median, hence misclassifying 101 out of 192 B/LB SNVs. Eigen-PC achieved the second highest MCC (0.44), sensitivity of 0.79, and specificity of 0.7, with decision threshold of 1.87.
+
+**Table 1.**
+ Results and performance comparison of in silico predictors with the optimal threshold based on MCC.#PV: number of predicted variants; Ac: accuracy; Se: sensitivity; Sp: specificity; MCC: Matthews correlation coefficient; LR+: positive likelihood ratio; LR-: negative likelihood ratio; 95% CI: 95% confidence interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Decision threshold</th>
+      <th>#PV</th>
+      <th>TP</th>
+      <th>FN</th>
+      <th>FP</th>
+      <th>TN</th>
+      <th>Ac</th>
+      <th>Se</th>
+      <th>Sp</th>
+      <th>MCC</th>
+      <th>LR+</th>
+      <th>LR +95% CI</th>
+      <th>LR-</th>
+      <th>LR- 95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BayesDel_addAF</td>
+      <td>≥0.39</td>
+      <td>531</td>
+      <td>250</td>
+      <td>164</td>
+      <td>22</td>
+      <td>95</td>
+      <td>0.65</td>
+      <td>0.6</td>
+      <td>0.81</td>
+      <td>0.34</td>
+      <td>3.21</td>
+      <td>[2.19, 4.72]</td>
+      <td>0.49</td>
+      <td>[0.42, 0.57]</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;10.44</td>
+      <td>886</td>
+      <td>655</td>
+      <td>39</td>
+      <td>101</td>
+      <td>91</td>
+      <td>0.84</td>
+      <td>0.94</td>
+      <td>0.47</td>
+      <td>0.49</td>
+      <td>1.79</td>
+      <td>[1.57, 2.05]</td>
+      <td>0.12</td>
+      <td>[0.08, 0.17]</td>
+    </tr>
+    <tr>
+      <td>ClinPred</td>
+      <td>&gt;0.95</td>
+      <td>481</td>
+      <td>265</td>
+      <td>99</td>
+      <td>43</td>
+      <td>74</td>
+      <td>0.7</td>
+      <td>0.73</td>
+      <td>0.63</td>
+      <td>0.32</td>
+      <td>1.98</td>
+      <td>[1.55, 2.53]</td>
+      <td>0.43</td>
+      <td>[0.35, 0.53]</td>
+    </tr>
+    <tr>
+      <td>Condel</td>
+      <td>&gt;0.3</td>
+      <td>481</td>
+      <td>331</td>
+      <td>33</td>
+      <td>76</td>
+      <td>41</td>
+      <td>0.77</td>
+      <td>0.91</td>
+      <td>0.35</td>
+      <td>0.31</td>
+      <td>1.4</td>
+      <td>[1.22, 1.61]</td>
+      <td>0.26</td>
+      <td>[0.17, 0.39]</td>
+    </tr>
+    <tr>
+      <td>DANN</td>
+      <td>&gt;0.96</td>
+      <td>531</td>
+      <td>372</td>
+      <td>42</td>
+      <td>71</td>
+      <td>46</td>
+      <td>0.79</td>
+      <td>0.9</td>
+      <td>0.39</td>
+      <td>0.33</td>
+      <td>1.48</td>
+      <td>[1.28, 1.72]</td>
+      <td>0.26</td>
+      <td>[0.18, 0.37]</td>
+    </tr>
+    <tr>
+      <td>Eigen-PC</td>
+      <td>&gt;1.87</td>
+      <td>531</td>
+      <td>329</td>
+      <td>85</td>
+      <td>35</td>
+      <td>82</td>
+      <td>0.77</td>
+      <td>0.79</td>
+      <td>0.7</td>
+      <td>0.44</td>
+      <td>2.66</td>
+      <td>[2, 3.52]</td>
+      <td>0.29</td>
+      <td>[0.23, 0.37]</td>
+    </tr>
+    <tr>
+      <td>FATHMM</td>
+      <td>≤–3.39</td>
+      <td>481</td>
+      <td>150</td>
+      <td>214</td>
+      <td>23</td>
+      <td>94</td>
+      <td>0.51</td>
+      <td>0.41</td>
+      <td>0.8</td>
+      <td>0.19</td>
+      <td>2.1</td>
+      <td>[1.42, 3.08]</td>
+      <td>0.73</td>
+      <td>[0.65, 0.83]</td>
+    </tr>
+    <tr>
+      <td>fathmm-MKL</td>
+      <td>&gt;0.7</td>
+      <td>531</td>
+      <td>328</td>
+      <td>86</td>
+      <td>39</td>
+      <td>78</td>
+      <td>0.76</td>
+      <td>0.79</td>
+      <td>0.67</td>
+      <td>0.41</td>
+      <td>2.38</td>
+      <td>[1.83, 3.09]</td>
+      <td>0.31</td>
+      <td>[0.25, 0.39]</td>
+    </tr>
+    <tr>
+      <td>GERP++</td>
+      <td>&gt;3.49</td>
+      <td>531</td>
+      <td>248</td>
+      <td>166</td>
+      <td>26</td>
+      <td>91</td>
+      <td>0.64</td>
+      <td>0.6</td>
+      <td>0.78</td>
+      <td>0.31</td>
+      <td>2.7</td>
+      <td>[1.9, 3.82]</td>
+      <td>0.52</td>
+      <td>[0.44, 0.6]</td>
+    </tr>
+    <tr>
+      <td>integrated_fitCons</td>
+      <td>&gt;0.05</td>
+      <td>531</td>
+      <td>414</td>
+      <td>1</td>
+      <td>117</td>
+      <td>1</td>
+      <td>0.78</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>0.04</td>
+      <td>1.01</td>
+      <td>[0.99, 1.02]</td>
+      <td>0.28</td>
+      <td>[0.02, 4.51]</td>
+    </tr>
+    <tr>
+      <td>LIST-S2</td>
+      <td>≥0.75</td>
+      <td>344</td>
+      <td>246</td>
+      <td>28</td>
+      <td>39</td>
+      <td>31</td>
+      <td>0.81</td>
+      <td>0.9</td>
+      <td>0.44</td>
+      <td>0.36</td>
+      <td>1.61</td>
+      <td>[1.3, 1.99]</td>
+      <td>0.23</td>
+      <td>[0.15, 0.36]</td>
+    </tr>
+    <tr>
+      <td>LRT</td>
+      <td>&lt;0.3</td>
+      <td>270</td>
+      <td>169</td>
+      <td>7</td>
+      <td>84</td>
+      <td>10</td>
+      <td>0.66</td>
+      <td>0.96</td>
+      <td>0.11</td>
+      <td>0.13</td>
+      <td>1.07</td>
+      <td>[1, 1.16]</td>
+      <td>0.37</td>
+      <td>[0.15, 0.95]</td>
+    </tr>
+    <tr>
+      <td>MetaLR_score</td>
+      <td>&gt;0.8</td>
+      <td>481</td>
+      <td>251</td>
+      <td>113</td>
+      <td>42</td>
+      <td>75</td>
+      <td>0.68</td>
+      <td>0.69</td>
+      <td>0.64</td>
+      <td>0.29</td>
+      <td>1.92</td>
+      <td>[1.49, 2.47]</td>
+      <td>0.48</td>
+      <td>[0.39, 0.59]</td>
+    </tr>
+    <tr>
+      <td>MetaSVM_score</td>
+      <td>&gt;0.6</td>
+      <td>481</td>
+      <td>260</td>
+      <td>104</td>
+      <td>39</td>
+      <td>78</td>
+      <td>0.7</td>
+      <td>0.71</td>
+      <td>0.67</td>
+      <td>0.34</td>
+      <td>2.14</td>
+      <td>[1.65, 2.79]</td>
+      <td>0.43</td>
+      <td>[0.35, 0.53]</td>
+    </tr>
+    <tr>
+      <td>MutationAssessor</td>
+      <td>&gt;2.53</td>
+      <td>359</td>
+      <td>249</td>
+      <td>36</td>
+      <td>41</td>
+      <td>33</td>
+      <td>0.79</td>
+      <td>0.87</td>
+      <td>0.45</td>
+      <td>0.33</td>
+      <td>1.58</td>
+      <td>[1.28, 1.94]</td>
+      <td>0.28</td>
+      <td>[0.19, 0.42]</td>
+    </tr>
+    <tr>
+      <td>MutationTaster</td>
+      <td>&gt;0.95</td>
+      <td>531</td>
+      <td>386</td>
+      <td>28</td>
+      <td>102</td>
+      <td>15</td>
+      <td>0.76</td>
+      <td>0.93</td>
+      <td>0.13</td>
+      <td>0.09</td>
+      <td>1.07</td>
+      <td>[0.99, 1.15]</td>
+      <td>0.53</td>
+      <td>[0.29, 0.95]</td>
+    </tr>
+    <tr>
+      <td>MutPred</td>
+      <td>&gt;0.5</td>
+      <td>467</td>
+      <td>343</td>
+      <td>12</td>
+      <td>96</td>
+      <td>16</td>
+      <td>0.77</td>
+      <td>0.97</td>
+      <td>0.14</td>
+      <td>0.2</td>
+      <td>1.13</td>
+      <td>[1.04, 1.22]</td>
+      <td>0.24</td>
+      <td>[0.12, 0.49]</td>
+    </tr>
+    <tr>
+      <td>phastCons17way</td>
+      <td>&gt;0.17</td>
+      <td>531</td>
+      <td>357</td>
+      <td>57</td>
+      <td>57</td>
+      <td>60</td>
+      <td>0.79</td>
+      <td>0.86</td>
+      <td>0.51</td>
+      <td>0.38</td>
+      <td>1.77</td>
+      <td>[1.46, 2.14]</td>
+      <td>0.27</td>
+      <td>[0.2, 0.36]</td>
+    </tr>
+    <tr>
+      <td>phastCons30way</td>
+      <td>&gt;0.28</td>
+      <td>531</td>
+      <td>329</td>
+      <td>85</td>
+      <td>51</td>
+      <td>66</td>
+      <td>0.74</td>
+      <td>0.79</td>
+      <td>0.56</td>
+      <td>0.33</td>
+      <td>1.82</td>
+      <td>[1.48, 2.25]</td>
+      <td>0.36</td>
+      <td>[0.28, 0.47]</td>
+    </tr>
+    <tr>
+      <td>phyloP100way</td>
+      <td>&gt;0.42</td>
+      <td>531</td>
+      <td>349</td>
+      <td>65</td>
+      <td>56</td>
+      <td>61</td>
+      <td>0.77</td>
+      <td>0.84</td>
+      <td>0.52</td>
+      <td>0.35</td>
+      <td>1.76</td>
+      <td>[1.45, 2.14]</td>
+      <td>0.3</td>
+      <td>[0.23, 0.4]</td>
+    </tr>
+    <tr>
+      <td>phyloP30way</td>
+      <td>&gt;0.51</td>
+      <td>531</td>
+      <td>307</td>
+      <td>107</td>
+      <td>63</td>
+      <td>54</td>
+      <td>0.68</td>
+      <td>0.74</td>
+      <td>0.46</td>
+      <td>0.18</td>
+      <td>1.38</td>
+      <td>[1.15, 1.64]</td>
+      <td>0.56</td>
+      <td>[0.43, 0.72]</td>
+    </tr>
+    <tr>
+      <td>PolyPhen-2</td>
+      <td>&gt;0.65</td>
+      <td>481</td>
+      <td>243</td>
+      <td>121</td>
+      <td>37</td>
+      <td>80</td>
+      <td>0.67</td>
+      <td>0.67</td>
+      <td>0.68</td>
+      <td>0.31</td>
+      <td>2.11</td>
+      <td>[1.6, 2.78]</td>
+      <td>0.49</td>
+      <td>[0.4, 0.59]</td>
+    </tr>
+    <tr>
+      <td>PROVEAN</td>
+      <td>≤–1.03</td>
+      <td>481</td>
+      <td>358</td>
+      <td>6</td>
+      <td>106</td>
+      <td>11</td>
+      <td>0.77</td>
+      <td>0.98</td>
+      <td>0.09</td>
+      <td>0.18</td>
+      <td>1.09</td>
+      <td>[1.02, 1.15]</td>
+      <td>0.18</td>
+      <td>[0.07, 0.46]</td>
+    </tr>
+    <tr>
+      <td>REVEL</td>
+      <td>&gt;0.65</td>
+      <td>481</td>
+      <td>294</td>
+      <td>70</td>
+      <td>46</td>
+      <td>71</td>
+      <td>0.76</td>
+      <td>0.81</td>
+      <td>0.61</td>
+      <td>0.39</td>
+      <td>2.05</td>
+      <td>[1.63, 2.59]</td>
+      <td>0.32</td>
+      <td>[0.25, 0.41]</td>
+    </tr>
+    <tr>
+      <td>SIFT</td>
+      <td>&lt;0.1</td>
+      <td>481</td>
+      <td>325</td>
+      <td>39</td>
+      <td>74</td>
+      <td>43</td>
+      <td>0.77</td>
+      <td>0.89</td>
+      <td>0.37</td>
+      <td>0.3</td>
+      <td>1.41</td>
+      <td>[1.22, 1.63]</td>
+      <td>0.29</td>
+      <td>[0.2, 0.43]</td>
+    </tr>
+    <tr>
+      <td>SiPhy_29way</td>
+      <td>&gt;10.62</td>
+      <td>531</td>
+      <td>233</td>
+      <td>181</td>
+      <td>33</td>
+      <td>84</td>
+      <td>0.6</td>
+      <td>0.56</td>
+      <td>0.72</td>
+      <td>0.23</td>
+      <td>2</td>
+      <td>[1.48, 2.7]</td>
+      <td>0.61</td>
+      <td>[0.52, 0.71]</td>
+    </tr>
+    <tr>
+      <td>VEST4</td>
+      <td>&gt;0.7</td>
+      <td>531</td>
+      <td>273</td>
+      <td>141</td>
+      <td>33</td>
+      <td>84</td>
+      <td>0.67</td>
+      <td>0.66</td>
+      <td>0.72</td>
+      <td>0.32</td>
+      <td>2.34</td>
+      <td>[1.74, 3.15]</td>
+      <td>0.47</td>
+      <td>[0.4, 0.57]</td>
+    </tr>
+    <tr>
+      <td colspan="15">Splicing prediction</td>
+    </tr>
+    <tr>
+      <td>ada</td>
+      <td>&gt;0.5</td>
+      <td>56</td>
+      <td>47</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0.93</td>
+      <td>0.94</td>
+      <td>0.83</td>
+      <td>0.68</td>
+      <td>5.64</td>
+      <td>[0.94, 33.8]</td>
+      <td>0.07</td>
+      <td>[0.02, 0.23]</td>
+    </tr>
+    <tr>
+      <td>MaxEntScan</td>
+      <td>Diff &gt;2 and Per &gt;5</td>
+      <td>54</td>
+      <td>50</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0.95</td>
+      <td>0.96</td>
+      <td>0.67</td>
+      <td>0.55</td>
+      <td>2.88</td>
+      <td>[0.58, 14.31]</td>
+      <td>0.06</td>
+      <td>[0.01, 0.28]</td>
+    </tr>
+    <tr>
+      <td>rf</td>
+      <td>&gt;0.6</td>
+      <td>56</td>
+      <td>47</td>
+      <td>3</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0.93</td>
+      <td>0.94</td>
+      <td>0.83</td>
+      <td>0.68</td>
+      <td>5.64</td>
+      <td>[0.94, 33.8]</td>
+      <td>0.07</td>
+      <td>[0.02, 0.23]</td>
+    </tr>
+    <tr>
+      <td>SpliceAI</td>
+      <td>&gt;0.65</td>
+      <td>663</td>
+      <td>35</td>
+      <td>23</td>
+      <td>1</td>
+      <td>604</td>
+      <td>0.96</td>
+      <td>0.6</td>
+      <td>1</td>
+      <td>0.75</td>
+      <td>365.09</td>
+      <td>[50.94, 2616.41]</td>
+      <td>0.4</td>
+      <td>[0.29, 0.55]</td>
+    </tr>
+  </tbody>
+</table>
 
 When used as binary predictors, the in silico tools were unable to reach the strength level required by the Bayesian framework (Tavtigian et al., 2018) to provide supporting evidence for variant classification. Although four tools (Eigen-PC, fathmm-MKL, VEST4, MetaSVM) achieved positive likelihood ratio (LR+) higher than 2.08 and negative likelihood ratio (LR-) lower than 0.48, required for supporting evidence strength for pathogenic and benign classification, respectively, their 95% confidence intervals (95% CI) extended beyond the above thresholds and, therefore, are not recommended alone for variant interpretation. Figure 4 shows a heatmap illustrating the extent of concordance among 27 in silico tools (excluding splicing tools) and clustering of the tools based on their concordance, using the thresholds that maximised the MCC (Table 1). Notably, we observe a high degree of concordance for P/LP variants in HBB (top of the heatmap), while there is a lower degree of concordance for variants in HBA1 and HBA2 (middle of the heatmap). The bottom part of the heatmap illustrates a higher discordance for B/LB variants in HBA1 and HBA2.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79713/elife-79713-fig4-v2.jpg)
 
-**Figure 4.:** Table 1.
-
-## Performance of splicing predictors
+### Performance of splicing predictors
 
 Table 1 summarises the performance of in silico splicing tools using the threshold that maximised the MCC. With most SNVs affecting splicing regions of the globin genes annotated as P/LP, the performance of splicing tools cannot be compared reliably because of the limited number of negative examples in the dataset, that is, B/LB SVNs in splicing regions. Out of the four in silico tools tested, only SpliceAI provides a prediction score for variants that are not located near the canonical splicing sites. All splicing effect predictors displayed high accuracy, ranging from 93% (ada and rf) to 96% (SpliceAI), moderate to high sensitivity, ranging from 0.6 (SpliceAI) to 0.96 (MaxEntScan), and moderate to high specificity ranging from 0.67 (MaxEntScan) to 1 (SpliceAI). The MCC values ranged from 0.55 (MaxEntScan) to 0.75 (SpliceAI). SpliceAI achieved a high LR+ indicating strong performance in predicting SNVs disrupting splicing. The low number (≤5) of TN, FP, and FN in the predictions make the calculation of LRs for the remaining tools unreliable.
 
-## Evaluation with different pathogenic and benign thresholds
+### Evaluation with different pathogenic and benign thresholds
 
 We subsequently calibrated separate non-overlapping thresholds for pathogenic and benign prediction for each in silico tool to maximise both the percentage of variants correctly predicted by the selected threshold pairs that meet at least the supporting strength LR thresholds as defined by the Bayesian framework. More specifically, we filtered tools that achieved a lower bound 95% CI LR+ of 2.08 or higher for pathogenic prediction and an upper bound 95% CI LR- of 0.48 or lower for benign prediction. Figure 5A illustrates the changing LR values for the nine tools that reached these thresholds, while varying the decision thresholds. For these tools, we further finetuned the decision thresholds using smaller steps for the varying thresholds to maximise the number of correctly predicted SNVs. Furthermore, we tested the performance of all tools in different subsets of the dataset, including missense-only, non-missense, HBB, HBA2, and HBA1 variants. Table 2 shows all threshold pairs that reach at least supporting level of evidence for both pathogenic and benign prediction in different SNV subsets. The full analysis for all thresholds and subsets is available in the Supplementary file 2 and the finetuning of the selected tools is available in Supplementary file 3.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79713/elife-79713-fig5-v2.jpg)
+
+**Figure 5.:** (A) Likelihood ratios of the top performing in silico tools with variable threshold. Vertical dashed lines indicate the optimal threshold based on the highest Matthews correlation coefficient (MCC). (B) Concordant pathogenic/likely pathogenic (P/LP) calls by any given combination of in silico tools (among top performing tools) for pathogenic variants. (C) Concordant benign/likely benign (B/LB) calls by any given combination of in silico tools (among top performing tools) for benign variants. For Panels B and C, the concordance rate (i.e., variant assertion for all tools in the combination matches the expert annotation) is provided as text annotation on the bar chart. Only the first top 10 tool combinations based on concordance rate are shown, with the top three shown in blue.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79713/elife-79713-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Heatmap illustrating the concordance and clustering of the top performing in silico tools with respect to the variant type and globin gene, using the separate non-overlapping thresholds for pathogenic and benign prediction, as shown in Table 2. (B) Prediction of variants of uncertain significance (VUS) using thresholds for the full dataset (at supporting strength).
+
+**Table 2.**
+ In silico tools with pairs of non-overlapping thresholds that reach at least supporting evidence strength for both pathogenic and benign prediction.LR: likelihood ratio; CI: confidence interval; PV: predicted variants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="5">Pathogenic prediction</th>
+      <th colspan="5">Benign Prediction</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tool</td>
+      <td>Pathogenic threshold</td>
+      <td>Sensitivity</td>
+      <td>LR+</td>
+      <td>LR+ 95% CI</td>
+      <td>Strength (pathogenic)</td>
+      <td>Benign threshold</td>
+      <td>Specificity</td>
+      <td>LR-</td>
+      <td>LR- 95% CI</td>
+      <td>Strength (benign)</td>
+      <td>Correctly PV</td>
+      <td>% of correctly PV</td>
+    </tr>
+    <tr>
+      <td colspan="13">All SNVs</td>
+    </tr>
+    <tr>
+      <td>BayesDel_addAF</td>
+      <td>≥0.39</td>
+      <td>0.6</td>
+      <td>3.21</td>
+      <td>[2.19, 4.72]</td>
+      <td>Supporting</td>
+      <td>&lt;0.23</td>
+      <td>0.44</td>
+      <td>0.35</td>
+      <td>[0.26, 0.47]</td>
+      <td>Supporting</td>
+      <td>302</td>
+      <td>56.87</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;25</td>
+      <td>0.39</td>
+      <td>8.27</td>
+      <td>[4.34, 15.75]</td>
+      <td>Moderate</td>
+      <td>≤21.75</td>
+      <td>0.78</td>
+      <td>0.42</td>
+      <td>[0.37, 0.48]</td>
+      <td>Supporting</td>
+      <td>418</td>
+      <td>47.18</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;16.3</td>
+      <td>0.82</td>
+      <td>2.59</td>
+      <td>[2.1, 3.2]</td>
+      <td>Supporting</td>
+      <td>≤16.3</td>
+      <td>0.68</td>
+      <td>0.26</td>
+      <td>[0.21, 0.31]</td>
+      <td>Supporting</td>
+      <td>703</td>
+      <td>79.35</td>
+    </tr>
+    <tr>
+      <td>Eigen-PC</td>
+      <td>&gt;1.9</td>
+      <td>0.79</td>
+      <td>3</td>
+      <td>[2.21, 4.07]</td>
+      <td>Supporting</td>
+      <td>≤1.9</td>
+      <td>0.74</td>
+      <td>0.28</td>
+      <td>[0.22, 0.35]</td>
+      <td>Supporting</td>
+      <td>415</td>
+      <td>78.15</td>
+    </tr>
+    <tr>
+      <td>GERP++</td>
+      <td>&gt;4.22</td>
+      <td>0.44</td>
+      <td>4.33</td>
+      <td>[2.51, 7.49]</td>
+      <td>Supporting</td>
+      <td>≤0.15</td>
+      <td>0.35</td>
+      <td>0.32</td>
+      <td>[0.22, 0.46]</td>
+      <td>Supporting</td>
+      <td>225</td>
+      <td>42.37</td>
+    </tr>
+    <tr>
+      <td>MetaSVM</td>
+      <td>&gt;0.81</td>
+      <td>0.55</td>
+      <td>3.25</td>
+      <td>[2.16, 4.89]</td>
+      <td>Supporting</td>
+      <td>≤0.46</td>
+      <td>0.6</td>
+      <td>0.38</td>
+      <td>[0.3, 0.48]</td>
+      <td>Supporting</td>
+      <td>272</td>
+      <td>56.55</td>
+    </tr>
+    <tr>
+      <td>phyloP100way</td>
+      <td>&gt;7.32</td>
+      <td>0.15</td>
+      <td>17.8</td>
+      <td>[2.5, 127]</td>
+      <td>Supporting</td>
+      <td>≤0.8</td>
+      <td>0.57</td>
+      <td>0.36</td>
+      <td>[0.28, 0.46]</td>
+      <td>Supporting</td>
+      <td>130</td>
+      <td>24.48</td>
+    </tr>
+    <tr>
+      <td>REVEL</td>
+      <td>&gt;0.77</td>
+      <td>0.63</td>
+      <td>3.05</td>
+      <td>[2.12, 4.4]</td>
+      <td>Supporting</td>
+      <td>≤0.7</td>
+      <td>0.69</td>
+      <td>0.38</td>
+      <td>[0.31, 0.47]</td>
+      <td>Supporting</td>
+      <td>309</td>
+      <td>64.24</td>
+    </tr>
+    <tr>
+      <td>SpliceAI</td>
+      <td>&gt;0.3</td>
+      <td>0.67</td>
+      <td>58.12</td>
+      <td>[27.23, 124.03]</td>
+      <td>Strong</td>
+      <td>≤0.3</td>
+      <td>0.99</td>
+      <td>0.33</td>
+      <td>[0.23, 0.48]</td>
+      <td>Supporting</td>
+      <td>637</td>
+      <td>96.08</td>
+    </tr>
+    <tr>
+      <td colspan="13">Missense only</td>
+    </tr>
+    <tr>
+      <td>BayesDel_addAF</td>
+      <td>≥0.41</td>
+      <td>0.54</td>
+      <td>3.35</td>
+      <td>[2.2, 5.12]</td>
+      <td>Supporting</td>
+      <td>&lt;0.22</td>
+      <td>0.44</td>
+      <td>0.32</td>
+      <td>[0.23, 0.45]</td>
+      <td>Supporting</td>
+      <td>241</td>
+      <td>51.72</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;23.25</td>
+      <td>0.6</td>
+      <td>3.19</td>
+      <td>[2.17, 4.69]</td>
+      <td>Supporting</td>
+      <td>≤20.9</td>
+      <td>0.62</td>
+      <td>0.36</td>
+      <td>[0.28, 0.46]</td>
+      <td>Supporting</td>
+      <td>283</td>
+      <td>60.6</td>
+    </tr>
+    <tr>
+      <td>Eigen-PC</td>
+      <td>&gt;1.9</td>
+      <td>0.78</td>
+      <td>2.93</td>
+      <td>[2.16, 3.98]</td>
+      <td>Supporting</td>
+      <td>≤1.9</td>
+      <td>0.74</td>
+      <td>0.3</td>
+      <td>[0.24, 0.38]</td>
+      <td>Supporting</td>
+      <td>357</td>
+      <td>76.61</td>
+    </tr>
+    <tr>
+      <td>GERP++</td>
+      <td>&gt;4.22</td>
+      <td>0.44</td>
+      <td>4.27</td>
+      <td>[2.47, 7.4]</td>
+      <td>Supporting</td>
+      <td>≤–0.87</td>
+      <td>0.29</td>
+      <td>0.31</td>
+      <td>[0.2, 0.47]</td>
+      <td>Supporting</td>
+      <td>187</td>
+      <td>40.13</td>
+    </tr>
+    <tr>
+      <td>MetaSVM</td>
+      <td>&gt;0.8</td>
+      <td>0.58</td>
+      <td>3.08</td>
+      <td>[2.09, 4.53]</td>
+      <td>Supporting</td>
+      <td>≤0.39</td>
+      <td>0.56</td>
+      <td>0.37</td>
+      <td>[0.29, 0.48]</td>
+      <td>Supporting</td>
+      <td>267</td>
+      <td>57.3</td>
+    </tr>
+    <tr>
+      <td>phastCons30way</td>
+      <td>&gt;0.94</td>
+      <td>0.52</td>
+      <td>3.19</td>
+      <td>[2.09, 4.88]</td>
+      <td>Supporting</td>
+      <td>≤0.41</td>
+      <td>0.61</td>
+      <td>0.36</td>
+      <td>[0.28, 0.46]</td>
+      <td>Supporting</td>
+      <td>252</td>
+      <td>54.08</td>
+    </tr>
+    <tr>
+      <td>phyloP100way</td>
+      <td>&gt;7.32</td>
+      <td>0.16</td>
+      <td>19.11</td>
+      <td>[2.68, 136.47]</td>
+      <td>Supporting</td>
+      <td>≤0.56</td>
+      <td>0.53</td>
+      <td>0.35</td>
+      <td>[0.27, 0.46]</td>
+      <td>Supporting</td>
+      <td>119</td>
+      <td>25.54</td>
+    </tr>
+    <tr>
+      <td>REVEL</td>
+      <td>&gt;0.77</td>
+      <td>0.62</td>
+      <td>3.02</td>
+      <td>[2.09, 4.35]</td>
+      <td>Supporting</td>
+      <td>≤0.7</td>
+      <td>0.69</td>
+      <td>0.39</td>
+      <td>[0.32, 0.48]</td>
+      <td>Supporting</td>
+      <td>297</td>
+      <td>63.73</td>
+    </tr>
+    <tr>
+      <td colspan="13">Non-missense only</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;11.5</td>
+      <td>0.93</td>
+      <td>8.62</td>
+      <td>[3.42, 21.77]</td>
+      <td>Supporting</td>
+      <td>≤11.5</td>
+      <td>0.89</td>
+      <td>0.08</td>
+      <td>[0.05, 0.11]</td>
+      <td>Supporting</td>
+      <td>350</td>
+      <td>92.84</td>
+    </tr>
+    <tr>
+      <td colspan="13">SNVs in HBB</td>
+    </tr>
+    <tr>
+      <td>BayesDel_addAF</td>
+      <td>≥0.31</td>
+      <td>0.8</td>
+      <td>6.43</td>
+      <td>[2.23, 18.58]</td>
+      <td>Supporting</td>
+      <td>&lt;0.31</td>
+      <td>0.88</td>
+      <td>0.22</td>
+      <td>[0.17, 0.3]</td>
+      <td>Supporting</td>
+      <td>210</td>
+      <td>81.08</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;25.25</td>
+      <td>0.42</td>
+      <td>31.64</td>
+      <td>[4.5, 222.38]</td>
+      <td>Moderate</td>
+      <td>≤22.65</td>
+      <td>0.92</td>
+      <td>0.42</td>
+      <td>[0.37, 0.48]</td>
+      <td>Supporting</td>
+      <td>264</td>
+      <td>48.71</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;10.8</td>
+      <td>0.94</td>
+      <td>3.26</td>
+      <td>[2.29, 4.64]</td>
+      <td>Supporting</td>
+      <td>≤10.8</td>
+      <td>0.71</td>
+      <td>0.08</td>
+      <td>[0.05, 0.12]</td>
+      <td>Supporting</td>
+      <td>494</td>
+      <td>91.14</td>
+    </tr>
+    <tr>
+      <td colspan="13">SNVs in HBA1</td>
+    </tr>
+    <tr>
+      <td>CADD</td>
+      <td>&gt;22.95</td>
+      <td>0.59</td>
+      <td>4.94</td>
+      <td>[2.29, 10.68]</td>
+      <td>Supporting</td>
+      <td>≤17</td>
+      <td>0.66</td>
+      <td>0.3</td>
+      <td>[0.19, 0.48]</td>
+      <td>Supporting</td>
+      <td>84</td>
+      <td>61.76</td>
+    </tr>
+  </tbody>
+</table>
 
 Notably, CADD is the only tool that reached a moderate level of evidence (LR+ lower bound 95% CI ≥4.33) for prediction of pathogenic variants (threshold >25), while BayesDel, Eigen-PC, GERP++, REVEL, MetaSVM, phyloP100way and CADD (with a lower threshold of 16.3) have also reached the supporting evidence strength. Importantly, CADD (at supporting strength), Eigen-PC and REVEL correctly predict the highest number of SNVs with 79.35%, 78.15%, and 64.24%, respectively. In addition, CADD and Eigen-PC achieve the highest sensitivity for pathogenic prediction with 0.82 (CADD threshold >16.3) and 0.79, respectively, as well as the highest specificity for benign prediction with 0.78 (CADD threshold ≤21.75) and 0.74, respectively. Moreover, SpliceAI reached strong level of evidence for splicing prediction (threshold >0.3), correctly predicting 96.08% of all variants, with a sensitivity of 0.67 and a specificity of 0.99.
 
@@ -112,13 +1058,13 @@ This study provides evidence for the selection of the most suitable in silico to
 
 ## Materials and methods
 
-## Dataset
+### Dataset
 
 Figure 1 shows a schematic representation of the main steps of our methodology. SNVs were retrieved from the IthaGenes database of the ITHANET portal (Kountouris et al., 2017; Kountouris et al., 2014). The dataset includes all SNVs (≤50 bp) curated in IthaGenes (access date: 05/02/2021) located in HBA1, HBA2, and HBB, excluding (a) disease-modifying variants, (b) complex variants with multiple DNA changes found in cis, and (c) variants whose genomic location is unclear, such as α-chain variants identified by protein studies without identifying the affected α-globin gene.
 
 Additionally, we queried ClinVar (access date: 05/02/2021) (Landrum et al., 2018) for SNVs with a two-star review status and gnomAD (access date: 05/02/2021) (Karczewski et al., 2020) for benign/likely benign SNVs using PopMax Filtering Allele Frequency greater than 1% in HBA1, HBA2, and HBB. Any missing SNVs were added to both IthaGenes and the dataset of this study. The final dataset included 1627 distinct SNVs. Finally, the dataset was further processed using the batch service of Variant Validator (Freeman et al., 2018) to validate the HGVS names and correct any annotation errors.
 
-## Annotated variant pathogenicity
+### Annotated variant pathogenicity
 
 To enable the evaluation of in silico predictions, we subsequently annotated the pathogenicity of each SNV and compared it to the results of in silico predictors. Specifically, we used existing curated information on IthaGenes and further collected available evidence in scientific literature for each SNV in the dataset. The pathogenicity for each SNV was annotated using the following criteria:
 
@@ -128,11 +1074,11 @@ For the evaluation of tools predicting the impact of variants on splicing, we fu
 
 For SpliceAI, we selected the highest of the four Delta Scores provided as output, while for MaxEntScan we used two different thresholds as follows: (a) the absolute difference between the reference and alternative allele (denoted as Diff), and (b) the absolute percentage of change between the reference and alternative allele (denoted as Per) (Tey and Ng, 2019).
 
-## In silico prediction tools
+### In silico prediction tools
 
 Thirty-one in silico predictors were compared in this study, as follows: ada (Jian et al., 2014), BayesDel (Feng, 2017), CADD (Kircher et al., 2014), ClinPred (Alirezaie et al., 2018), CONDEL (González-Pérez and López-Bigas, 2011), DANN (Quang et al., 2015), EIGEN-PC (Ionita-Laza et al., 2016), FATHMM (Shihab et al., 2013), FATHMM-MKL (Shihab et al., 2015), fitCons (Gulko et al., 2015), GERP++ (Davydov et al., 2010), LIST-S2 (Malhis et al., 2020), LRT (Chun and Fay, 2009), MaxEntScan (Yeo and Burge, 2004), Meta-SVM (Kim et al., 2017), MetaLR (Dong et al., 2015), MutationAssessor (Reva et al., 2011), MutationTaster (Schwarz et al., 2014), MutPred2 (Pejaver et al., 2020), PolyPhen-2 (Adzhubei et al., 2010), PROVEAN (Choi et al., 2012), REVEL (Ioannidis et al., 2016), rf (Jian et al., 2014), SIFT (Ng and Henikoff, 2003), SpliceAI (Jaganathan et al., 2019), VEST4 (Carter et al., 2013), phastCons (phastCons17way and phastCons30way) (Ramani et al., 2019), phyloP (phyloP100way and phyloP30way) (Ramani et al., 2019), and SiPhy_29way (Garber et al., 2009). Four of the tools are focused on predicting the splicing impact of a variant (ada, MaxEntScan, rf, and SpliceAI), while six tools produce conservation scores (GERP++, phastCons17way, phastCons30way, phyloP100way, phyloP30way, and SiPhy_29way). We selected in silico tools recommended by ClinGen and available in the ClinGen VCI (Preston et al., 2022), as well as additional established tools used in previous studies. We employed the online version of the Ensembl VEP (McLaren et al., 2016) and its dbNSFP (Liu et al., 2020) plugin (version 4.2a) to obtain the prediction scores of the variants in our dataset.
 
-## Predictive performance assessment
+### Predictive performance assessment
 
 Commonly used scalar measures were employed to compare the prediction accuracy of in silico tools, including specificity, sensitivity, and accuracy. All of them can be derived from two or more of the following quantities: (a) true positives (TP), the number of correctly predicted P/LP variants; (b) true negatives (TN), the number of correctly predicted B/LB variants; (c) false positives (FP), the number of B/LB variants incorrectly predicted as P/LP; (d) false negatives (FN), the number of P/LP variants incorrectly predicted as B/LB. Specificity is defined as the fraction of correctly predicted B/LB variants, sensitivity is the fraction of correctly predicted P/LP variants, and accuracy is the ratio of correct predictions versus the total number of predictions (Hassan et al., 2019).
 
@@ -140,11 +1086,11 @@ Moreover, we used the MCC (Matthews, 1975) to compare the performance of in sili
 
 Following the guidelines of a Bayesian variant classification framework (Tavtigian et al., 2018), LRs for pathogenic (LR+) and benign (LR-) outcomes were calculated for each tool to evaluate the evidence strength of their pathogenicity prediction using the odds of pathogenicity (OddsP) in the Bayesian framework. According to the Bayesian framework, the strength of OddsP for each evidence level was set as follows: ‘Very Strong’ (350:1), ‘Strong’ (18.7:1), ‘Moderate’ (4.33:1), and ‘Supporting’ (2.08:1).
 
-## Comparative analysis
+### Comparative analysis
 
 The analysis was separated into three parts. First, we performed descriptive analysis of the dataset, including variants annotated as VUS, based on the variant type, the variant effect on gene/protein function, the haemoglobinopathy disease group, thalassemia phenotype, molecular mechanism, and annotated pathogenicity. Subsequently, we removed variants annotated as VUS and we compared the 31 in silico tools as binary predictors of variant pathogenicity by selecting the threshold that maximised the MCC for each tool. For predictors whose output scores ranged from 0 to 1, we used thresholds with intervals of 0.05, whereas for predictors with scores falling outside this range, we set custom ranges based on the observed minimum and maximum scores in our dataset. Finally, we identified separate non-overlapping thresholds for prediction of pathogenic and benign effect as recommended by the Bayesian framework for variant interpretation (Tavtigian et al., 2018), by selecting thresholds passing the recommended LR+ and LR- thresholds, while maximising the percentage of correctly predicted variants for each tool. For tools passing the LR thresholds, we further finetuned the decision thresholds using smaller steps to optimise the prediction accuracy. Statistical analysis and visualisation of the results were performed using custom R scripts and the epiR package.
 
-## Data availability statement
+### Data availability statement
 
 All data generated or analysed during this study are included in Supporting File 2 and Supporting File 3. Supporting File 2 provides the full dataset and subsets used as input in the analysis (sheet names starting with ‘Input’) as well as the results of the analysis (sheets starting with ‘On’). Supporting File 3 includes the finetuning analysis for specific tools and data subsets, as described in the manuscript.
 

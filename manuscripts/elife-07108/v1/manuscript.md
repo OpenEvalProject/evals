@@ -14,4 +14,4 @@
 
 ## Abstract
 
-Gene conversion has a central role in the evolutionary fine-tuning of regulatory elements in the fruit fly Drosophila miranda .
+Gene conversion has a central role in the evolutionary fine-tuning of regulatory elements in the fruit fly Drosophila miranda.

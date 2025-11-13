@@ -40,7 +40,7 @@ A total of 35 participants performed two perceptual decision-making tasks while 
 
 **Figure 1.:** Perceptual decisions were reported using the right index and middle fingers, and confidence ratings were reported using the left thumb. (A) In discrimination blocks, participants indicated the orientation of a visual grating (clockwise or anticlockwise). (B) In detection blocks, participants indicated whether a grating was embedded in the random noise, or not (yes or no). Confidence ratings were made by varying the size and color of a circle, with 6 options ranging from small and red to big and blue. For half of the subjects, high confidence was mapped to a small, red circle. For the other half, high confidence was mapped to a big, blue circle. The initial size and color of the circle was determined randomly at the beginning of the confidence rating phase. Participants performed 10 interleaved 40-trial detection and discrimination blocks inside a 3T MRI scanner.
 
-## Behavioral results
+### Behavioral results
 
 Task performance was similar for detection (75% accuracy, d’=1.48) and discrimination blocks (76% accuracy, d’=1.50). Repeated measures t-tests failed to detect a difference between tasks both in mean accuracy (t(34) = −0.90, p=0.37, BF01 = 5.15), and d’ ( t(34) = −0.30, p=0.76, BF01=7.29), indicating that performance was well matched. Responses were also balanced for the two tasks. The probability of responding yes (target present) in the detection task was 0.49 ± 0.11, and not significantly different from 0.5 (t(34) = −0.39, p=0.70, BF01=7.07). The probability of responding clockwise in the discrimination task was 0.50 ± 0.08, and not significantly different from 0.5 (t(34) = 0.22, p=0.83, BF01=7.43).
 
@@ -54,9 +54,9 @@ Metacognitive sensitivity, quantified as the area under the type-II ROC curve, w
 
 Response times were faster on average for correct responses (849 ± 79 milliseconds) compared to incorrect responses (938 ± 95 milliseconds; t(34)=10.59, p<10-11 for a paired t-test on the log-transformed response times). Within the detection task, yes responses were significantly faster than no responses (850 ± 90 milliseconds and 896 ± 103 milliseconds, respectively; t(34)=3.16, p<0.005 for a paired t-test on the log-transformed response times).
 
-## Imaging results
+### Imaging results
 
-## Parametric effect of confidence
+#### Parametric effect of confidence
 
 We next turned to our fMRI data to ask whether confidence-related responses were similar or distinct across tasks (detection/discrimination) and response (target present: yes/target absent: no). We first established the presence of linear confidence-related effects in our a priori ROIs, both across tasks and response types and across correct and incorrect responses, in line with previous findings of ‘generic’ or task-invariant confidence signals in these regions (Morales et al., 2018). Specifically, higher confidence ratings were associated with increased activation in the ventromedial prefrontal cortex (vmPFC), the ventral striatum, and the precuneus. Conversely, activations in the posterior medial frontal cortex (pMFC) were negatively correlated with confidence (see Figure 3). For the confidence effect pattern obtained from the Global-Confidence Design Matrix (GC-DM), see Appendix 3—figure 1.
 
@@ -64,11 +64,11 @@ We next turned to our fMRI data to ask whether confidence-related responses were
 
 **Figure 3.:** (a) Glass brain visualization of global effect of confidence, thresholded at the single voxel level for visualization (p<0.001, uncorrected). Negative confidence effect appears in blue, and positive effect in red. (b) Whole brain contrast between confidence in ‘target present’ (yes) and ‘target absent’ (no) detection responses, corrected for family-wise error rate at the cluster level (p<0.05) with a cluster defining threshold of p<0.001, uncorrected. (c) Upper panel: BOLD signal in the rTPJ cluster from panel b as a function of response and confidence. lower panel: mean coefficients of response- and subject-specific multiple linear regression models, predicting rTPJ activation as a linear and quadratic function of confidence. * - p<0.05; uncorrected for multiple comparisons across the four tests. Comparison lines above and below the x axis indicate main effect of response and task, respectively.
 
-## Interaction of linear confidence effects with task and response
+#### Interaction of linear confidence effects with task and response
 
 We next asked whether the linear parametric relationship between confidence and BOLD activity differed as a function of task (discrimination vs. detection) and response type (yes vs. no in detection). In the pMFC, vmPFC, ventral striatum and precuneus ROIs, the parametric effect of confidence failed to show a significant difference between the two tasks (all p-values>0.3), between the two discrimination responses (all p-values>0.24), or between the two detection responses (all p-values>0.09). Similarly, no cluster within the pre-specified frontopolar ROI showed a differential effect of confidence as a function of task or response. We show below that this absence of a linear interaction should not be taken as evidence of absence of differences between detection and discrimination, due to the presence of nonlinear interaction effects. In the next section we first explain the analysis steps we took to uncover nonlinear effects of confidence.
 
-## Interaction of nonlinear confidence effects with task and response
+#### Interaction of nonlinear confidence effects with task and response
 
 An exploratory whole brain analysis (p<0.05, corrected for multiple comparisons at the cluster-level) revealed no differential confidence effect as a function of task anywhere in the brain. However, within detection, whole-brain analysis revealed that the linear effect of confidence was significantly more negative for no compared to yes responses in the right temporo-parietal junction (rTPJ: 101 voxels, peak voxel: [54,-46, 26], z = 5.10). To further characterize the nature of the interaction between confidence and response in the rTPJ, we fitted a new design matrix for each task (Categorical-Confidence Design Matrices (post-hoc analysis; CC-DM)) where confidence was represented as a categorical variable with 6 levels instead of one parametric modulator. In contrast to our original design matrix (Main Design Matrix (DM-1)) that assumed a linear effect of confidence, this analysis is agnostic as to the functional form of the confidence effect. We then plotted the mean activation level for each combination of response and confidence level in the rTPJ cluster (see Figure 3, panel c).
 
@@ -88,7 +88,7 @@ Finally, to test for similar quadratic effects of confidence at the whole-brain 
 
 To visualize activity patterns in these regions, we extracted the mean coefficients from the categorical model for these three clusters, and fitted a second-order polynomial separately to each response estimate (see Figure 5). In addition to the effect of task on the quadratic effect of confidence in all three clusters, the linear effect of confidence in the right frontopolar cluster was significantly more negative for detection, compared to discrimination (t(34)=-3.13, d = −0.53, p<0.005). For both tasks, inter-subject variability in metacognitive efficiency (measured as meta-d’/d’; Maniscalco and Lau, 2012) was not reliably correlated with linear or quadratic parametric effect of confidence in any of the three regions (see Appendix 7).
 
-## Computational models
+### Computational models
 
 We next considered alternative computational-level explanations for the detection-specific quadratic activation profile. Specifically, we evaluated how latent model variables or belief states change non-linearly as a function of confidence in three candidate model architectures (see Figure 6): a static ‘Signal Detection’ model, a ‘Dynamic Criterion’ model where policy changes as a function of previous perceptual samples, and an ‘Attention Monitoring’ model in which beliefs about fluctuations in attention inform decisions and confidence judgments. A detailed formal description of the three models is available in the appendix (sections 9, 10 and 11).
 
@@ -96,7 +96,7 @@ We next considered alternative computational-level explanations for the detectio
 
 **Figure 6.:** Top panel: In Signal Detection Theory, perceptual decisions and confidence ratings are generated by comparing the sensory evidence to a fixed set of criteria. In detection the ’signal’ distribution is assumed to have higher variance. Plotting the absolute value of the log likelihood ratio as a function of decision and confidence results in a linear curve for discrimination, and a pronounced quadratic effect for yes responses in detection, an effect that is specific to unequal-variance SDT. Middle panel: In a Dynamic Criterion model beliefs about the mean and variance of the perceptual distributions are updated as a function of incoming samples (plotted as circles) and the decision criterion is shifted accordingly. Plotting the absolute change in criterion placement as a function of decision and confidence results in a quadratic effect of confidence for detection responses only. Bottom: In the Attention Monitoring model, beliefs about overall attentiveness (’onTask’ node) probabilistically reflect sensory precision. Plotting beliefs about overall attentiveness as a function of decision and confidence results in an overall quadratic effect of confidence, and an interaction between yes and no responses in detection. For a detailed specification of all three models see appendix sections 9, 10 and 11.
 
-First, we consider the static Signal Detection Theory (SDT) model. In SDT models of confidence formation, the log likelihood-ratio between the two competing hypotheses (L⁢L⁢R=log⁡p⁢(x|S1)p⁢(x|S2)) is a useful measure for determining the certainty with which one should commit to a choice. The mapping between the perceptual sample x and the LLR is linear for equal-variance SDT, which is often used to model discrimination, but quadratic for unequal-variance SDT, which is often used to model detection. It then follows that if confidence is proportional to the distance of the sample x from the decision criterion, neuronal populations that represent the relative likelihood of a choice being correct (be it LLR or an analogue quantity) will show a quadratic tuning function of confidence in detection and a linear tuning function in discrimination, similar to that observed in FPC, pre-SMA and STS. However, LLR is also expected to scale more strongly with confidence in yes responses (see simulation results in Figure 6, upper panel), which was not observed in these brain regions. This model also predicts a stronger quadratic effect of confidence in participants for which the variance ratio between the signal and noise distributions is particularly high. However, the variance ratio was not significantly correlated with the quadratic effect of confidence in any of these regions, as would be expected if they were representing LLR or a similar quantity (see Appendix 6—figure 1).
+First, we consider the static Signal Detection Theory (SDT) model. In SDT models of confidence formation, the log likelihood-ratio between the two competing hypotheses ($L⁢L⁢R=log⁡\frac{p⁢(x|S_{1})}{p⁢(x|S_{2})}$) is a useful measure for determining the certainty with which one should commit to a choice. The mapping between the perceptual sample $x$ and the LLR is linear for equal-variance SDT, which is often used to model discrimination, but quadratic for unequal-variance SDT, which is often used to model detection. It then follows that if confidence is proportional to the distance of the sample $x$ from the decision criterion, neuronal populations that represent the relative likelihood of a choice being correct (be it LLR or an analogue quantity) will show a quadratic tuning function of confidence in detection and a linear tuning function in discrimination, similar to that observed in FPC, pre-SMA and STS. However, LLR is also expected to scale more strongly with confidence in yes responses (see simulation results in Figure 6, upper panel), which was not observed in these brain regions. This model also predicts a stronger quadratic effect of confidence in participants for which the variance ratio between the signal and noise distributions is particularly high. However, the variance ratio was not significantly correlated with the quadratic effect of confidence in any of these regions, as would be expected if they were representing LLR or a similar quantity (see Appendix 6—figure 1).
 
 For the next two models, confidence was assumed to be directly proportional to the LLR, with the measured signal representing internal beliefs about hidden model parameters. In the ‘Dynamic Criterion’ model, we considered whether a quadratic effect of confidence in detection may reflect the active tuning of decision policy in the absence of explicit feedback (Guggenmos et al., 2016; Ko and Lau, 2012). In the model, beliefs about the underlying distributions are updated on a trial-to-trial basis, and in turn affect the placement of decision criterion (for a formal description of the model, see Appendix section 10). The Dynamic Criterion model predicts that the magnitude of shift in decision criterion will display a positive quadratic relation to confidence (LLR) in detection but not discrimination (see simulation results in Figure 6, middle panel). This is because the problem is asymmetric in detection, and decision policy should depend on beliefs about both sensory precision (or the relative variance of the noise and signal distribution) and expected signal strength (mean of the signal distribution), which is not the case for a symmetric discrimination problem.
 
@@ -128,11 +128,11 @@ To conclude, we find a quadratic effect of confidence in detection judgments in 
 
 All design and analysis details were pre-registered before data acquisition and time-locked using pre-RNG randomization (Mazor et al., 2019). The time-locked protocol folder is available at https://github.com/matanmazor/detectionVsDiscrimination_fMRI (Mazor, 2020; copy archived at https://github.com/elifesciences-publications/detectionVsDiscrimination_fMRI). The entire set of pre-registered analyses results is available at https://osf.io/98mv4/.
 
-## Participants
+### Participants
 
 46 participants took part in the study (ages 18–36, mean = 24 ± 4; 29 females). 35 participants met our pre-specified inclusion criteria (ages 18–36, mean = 24 ± 4; 20 females). After applying our run-wise exclusion criteria to the data of the remaining 35 participants, our dataset consisted of 5 usable experimental runs from 15 participants, 4 usable experimental runs from 14 participants, 3 usable experimental runs from 5 participants, and 2 usable experimental runs from one participant. We pre-specified a sample-size of 35, balancing statistical power and resource considerations.
 
-## Design and procedure
+### Design and procedure
 
 After a temporally jittered rest period of 500–4000 milliseconds, each trial started with a fixation cross (500 milliseconds), followed by a presentation of a target for 33 milliseconds. In discrimination trials, the target was a circle of diameter 3° containing randomly generated white noise, merged with a sinusoidal grating (2 cycles per degree; oriented 45° or −45°). In half of the detection trials, targets did not contain a sinusoidal grating and consisted of random noise only. After stimulus offset, participants used their right-hand index and middle fingers to make a perceptual decision about the orientation of the grating (discrimination blocks), or about the presence or absence of a grating (detection blocks). The response mapping was counterbalanced between blocks, such that an index finger press was used to indicate a clockwise tilt on half of the trials, and an anticlockwise tilt on the other half. Similarly, in half of the detection trials the index finger was mapped to a yes (‘target present’) response, and on the other half to a no (‘target absent’) response.
 
@@ -142,72 +142,178 @@ Participants were acquainted with the task in a preceding behavioral session. Du
 
 To avoid stimulus-driven fluctuations in confidence, grating SNR was fixed within each experimental block. Nevertheless, following experimental blocks with markedly bad (≤ 52.5%) or good (≥ 85%) accuracy, grating SNR was adjusted for the next block of the same task (SNR level was divided or multiplied by a factor of 0.9 for bad and good performance, respectively). Finally, grating SNR was adjusted for both tasks following runs in which the difference in performance between the two tasks exceeded 16.25% (SNR level was multiplied by the square root of 0.9 for the easier task and divided by the square root of 0.9 for the more difficult task).
 
-To incentivize participants to do their best at the task and rate their confidence accurately, we offered a bonus payment according to the following payment schedule: bonus = £a⁢c⁢c⁢u⁢r⁢a⁢c⁢y→⋅c⁢o⁢n⁢f⁢i⁢d⁢e⁢n⁢c⁢e→200 Where a⁢c⁢c⁢u⁢r⁢a⁢c⁢y→ is a vector of 1 and −1 for correct and incorrect responses, and c⁢o⁢n⁢f⁢i⁢d⁢e⁢n⁢c⁢e→ is a vector of integers in the range of 1 to 6, representing confidence reports for all trials. We explained the payment structure to participants in the preceding behavioral session. Specifically, we advised participants that to maximize their bonus they should do their best at the main task, rate the confidence higher when they believe they are correct, and rate their confidence lower when they believe they might be wrong.
+To incentivize participants to do their best at the task and rate their confidence accurately, we offered a bonus payment according to the following payment schedule: bonus = £$\frac{a⁢c⁢c⁢u⁢r⁢a⁢c⁢y→⋅c⁢o⁢n⁢f⁢i⁢d⁢e⁢n⁢c⁢e→}{200}$ Where $a⁢c⁢c⁢u⁢r⁢a⁢c⁢y→$ is a vector of 1 and −1 for correct and incorrect responses, and $c⁢o⁢n⁢f⁢i⁢d⁢e⁢n⁢c⁢e→$ is a vector of integers in the range of 1 to 6, representing confidence reports for all trials. We explained the payment structure to participants in the preceding behavioral session. Specifically, we advised participants that to maximize their bonus they should do their best at the main task, rate the confidence higher when they believe they are correct, and rate their confidence lower when they believe they might be wrong.
 
-## Scanning parameters
+### Scanning parameters
 
 Scanning took place at the Wellcome Centre for Human Neuroimaging, London, using a 3 Tesla Siemens Prisma MRI scanner with a 64-channel head coil. We acquired structural images using an MPRAGE sequence (1×1×1 mm voxels, 176 slices, in plane FoV = 256×256 mm2), followed by a double-echo FLASH (gradient echo) sequence with TE1 = 10 ms and TE2 = 12.46 ms (64 slices, slice thickness = 2 mm, gap = 1 mm, in plane FoV = 192 × 192 mm2, resolution = 3 × 3 mm2) that was later used for field inhomogeneity correction. Functional scans were acquired using a 2D EPI sequence, optimized for regions near the orbito-frontal cortex (3×3×3 mm voxels, TR = 3.36 s, TE = 30 ms, 48 slices tilted by −30 degrees with respect to the T > C axis, matrix size = 64×72, Z-shim = −1.4).
 
-## Analysis
+### Analysis
 
 The preregistered objectives of this study were to:
 
-## Exclusion criteria
+### Exclusion criteria
 
 Subjects were excluded from all analyses for any of the following pre-specified reasons: missing more than 20% of the trials, performing one of the tasks with accuracy below 60%, exceeding the 4 mm affine motion cutoff criterion in more than 2 experimental runs, and showing a consistent response bias (i.e. using the same response in more than 75% of the trials) in at least one task. Individual scan runs were excluded from all analyses if the participant exceeded the affine motion cutoff, if more than 20% of trials were missed, if mean accuracy was below 60% or if the response bias for one of the tasks exceeded 80%.
 
 In addition, we applied a confidence-related exclusion criterion: participants were excluded if they used the same confidence level in more than 80% of all trials globally or for a particular response, and individual scan runs were excluded if the same confidence level was used in more than 95% of the trials, either globally or for particular response types. Our preregistration document specified that the confidence exclusion criterion will be used to exclude participants from confidence-related analyses only, but we subsequently revised this plan in order to use identical design matrices for all participants.
 
-## Behavioral analysis
+### Behavioral analysis
 
-## Response conditional type-II ROC curves
+#### Response conditional type-II ROC curves
 
 Response conditional type-II ROC (Receiver Operating Characteristic) curves were extracted for the two discrimination and two detection responses. This was done by plotting the cumulative distribution of confidence levels in correct responses against the cumulative distribution of confidence levels in incorrect responses. As a measure of response-specific metacognitive sensitivity, we extracted the area under these curves (AUROC2). The expected AUROC2 for no metacognitive insight (i.e., the confidence distributions are identical for correct and incorrect responses) is 0.5. Perfect metacognitive insight (i.e., confidence in all correct responses is higher than confidence in all incorrect responses) will result in an AUROC2 of 1.
 
-## Imaging analysis
+### Imaging analysis
 
-## fMRI data preprocessing
+#### fMRI data preprocessing
 
 Data preprocessing followed the procedure described in Morales et al. (2018): 'Imaging analysis was performed using SPM12 (Statistical Parametric Mapping; www.fil.ion.ucl.ac.uk/spm). The first five volumes of each run were discarded to allow for T1 stabilization. Functional images were realigned and unwarped using local field maps (Andersson et al., 2001) and then slice-time corrected (Sladky et al., 2011). Each participant’s structural image was segmented into gray matter, white matter, CSF, bone, soft tissue, and air/background images using a nonlinear deformation field to map it onto template tissue probability maps (Ashburner and Friston, 2005). This mapping was applied to both structural and functional images to create normalized images in Montreal Neurological Institute (MNI) space. Normalized images were spatially smoothed using a Gaussian kernel (6 mm FWHM). We set a within-run 4 mm affine motion cutoff criterion'.
 
 Preprocessing and construction of first- and second-level models used standardized pipelines and scripts available at https://github.com/metacoglab/MetaLabCore/.
 
-## Regions of interest
+### Regions of interest
 
 In addition to an exploratory whole-brain analysis (corrected for multiple comparisons at the cluster level), our analysis focused on the following a priori regions of interest, largely following the ROIs used by Fleming et al. (2018):
 
 For the general FPC ROI, small-volume correction was applied to individual voxels within the ROI for all univariate contrasts. For the multivariate analysis, we used a searchlight approach to scan for spatial patterns within the ROI, followed by a correction for multiple comparisons. For all other ROIs, a GLM was fitted to the mean time course of voxels within the region, and multivariate analysis was performed on all voxels within the ROI. While our pre-registered analysis defined the frontopolar cortex as a single region, we subsequently decided to separately analyze its 3 separate anatomical subregions identified by Neubert et al. (2014) (FPl, FPm and BA46). The decision to separate the FPC ROI to its subcomponents was made after data collection and these anatomical subregions should not be taken as a priori ROIs.
 
-## Univariate analysis
+### Univariate analysis
 
 Univariate analysis was based on a design matrix in which different trial types are modeled by different regressors (main design matrix, below). Additionally, to examine the global effect of confidence across trial types, a simpler design matrix was fitted to the data as a first step (global confidence design matrix, below). Experimental runs for each subject were temporally concatenated before estimating the GLM coefficients. This was done in order to maximize sensitivity to response- and task-specific modulations of confidence, given the limited and varying number of trials within each experimental run.
 
-## Main design matrix (DM-1)
+#### Main design matrix (DM-1)
 
 The main design matrix for the univariate GLM analysis consisted of 16 regressors of interest. There was a regressor for each of the eight combinations of task x condition x response: For example, a regressor for detection trials where a signal was present and the subject reported seeing a signal with a yes response (present and present, P_P). The relevant trials were modeled by a boxcar regressor with nonzero entries at the interval starting at the offset of the stimulus and ending immediately after the confidence rating phase, convolved with the canonical hemodynamic response function (HRF). The duration of this interval was 4300 milliseconds, and not 4000 milliseconds as mistakenly indicated in the preregistration document. Each of these primary regressors was accompanied by a linear parametric modulation of the confidence reported for each trial. Together, the design matrix included 16 regressors of interest (see Table 1).
 
+**Table 1.**
+ List of regressors in the main design matrix (DM-1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Task</th>
+      <th>Stimulus</th>
+      <th>Response</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>CW_CW</td>
+      <td rowspan="2">Discrimination</td>
+      <td rowspan="2">Clockwise</td>
+      <td rowspan="2">Clockwise</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>CW_CW_conf</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>CW_ACW</td>
+      <td rowspan="2">Discrimination</td>
+      <td rowspan="2">Clockwise</td>
+      <td rowspan="2">Anticlockwise</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>CW_ACW_conf</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>ACW_CW</td>
+      <td rowspan="2">Discrimination</td>
+      <td rowspan="2">Anticlockwise</td>
+      <td rowspan="2">Clockwise</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>ACW_CW_conf</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>ACW_ACW</td>
+      <td rowspan="2">Discrimination</td>
+      <td rowspan="2">Anticlockwise</td>
+      <td rowspan="2">Anticlockwise</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>ACW_ACW_conf</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>P_P</td>
+      <td rowspan="2">Detection</td>
+      <td rowspan="2">Present</td>
+      <td rowspan="2">Present</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>P_P_conf</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>P_A</td>
+      <td rowspan="2">Detection</td>
+      <td rowspan="2">Present</td>
+      <td rowspan="2">Absent</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>P_A_conf</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>A_P</td>
+      <td rowspan="2">Detection</td>
+      <td rowspan="2">Absent</td>
+      <td rowspan="2">Present</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>A_P_conf</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>A_A</td>
+      <td rowspan="2">Detection</td>
+      <td rowspan="2">Absent</td>
+      <td rowspan="2">Absent</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>A_A_conf</td>
+    </tr>
+  </tbody>
+</table>
+
 Trials in which the participant did not respond within the 1500 millisecond time frame were modeled by a separate regressor. The design matrix also include a run-wise constant term regressor, an instruction-screen regressor for the beginning of each block, motion regressors (the 6 motion parameters and their first derivatives as extracted by SPM in the head motion correction preprocessing phase) and regressors for physiological measures. Button presses were modeled as stick functions, convolved with the canonical HRF, in three regressors: two regressors for the right and left right-hand buttons, and one regressor for both up and down left-hand presses. We decided to have one regressor for both types of left-hand presses due to the strong positive correlation of the final confidence rating with the number of ‘increase confidence’ button presses, and the strong negative correlation with the number of ‘decrease confidence’ button presses.
 
-## Global confidence design matrix (GC-DM)
+#### Global confidence design matrix (GC-DM)
 
 The global confidence design matrix consisted of 4 regressors of interest. The first two primary regressors were ’correct trials’ (trials in which the participant was correct, across tasks and responses) and ’incorrect trials’ (trials in which the participant was incorrect, across tasks and responses). Single events were modeled by a boxcar regressor with nonzero entries at the 4300 millisecond interval starting at the offset of the stimulus and ending immediately after the confidence rating phase, convolved with the canonical hemodynamic response function (HRF). Additionally, the design matrix included a confidence parametric modulator for each of the first two regressors. The construction of the regressors and the additional nuisance regressors was handled similarly to the main design.
 
-## Quadratic-Confidence design matrix (post-hoc analysis; QC-DM)
+#### Quadratic-Confidence design matrix (post-hoc analysis; QC-DM)
 
 The quadratic-confidence design matrix for the univariate GLM analysis consisted of 12 regressors of interest. There was a regressor for each of the four responses: yes, no, clockwise and anticlockwise. Similar to the main design matrix, the relevant trials were modeled by a boxcar regressor with nonzero entries at the 4300 millisecond interval starting at the offset of the stimulus and ending immediately after the confidence rating phase, convolved with the canonical hemodynamic response function (HRF). Each of these primary regressors was accompanied by two parametric modulators, representing the linear and quadratic effects of confidence. Together, the design matrix included 12 regressors (4 responses + 4 linear confidence regressors + 4 quadratic confidence regressors). The QC-DM included the same set of nuisance regressors as the main design matrix.
 
-## Categorical-Confidence design matrices (post-hoc analysis; CC-DM)
+#### Categorical-Confidence design matrices (post-hoc analysis; CC-DM)
 
 In order to better understand the nature of the linear interaction between confidence in yes and no responses, we specified a pair of design matrices—one for each task—in which confidence level was modeled as a categorical variable. Instead of the 8 primary regressors in the main design matrix, this design matrix consisted of only one regressor of interest for all trials, modeled by a boxcar with nonzero entries at the 4300 millisecond interval starting at the offset of the stimulus and ending immediately after the confidence rating phase, convolved with the canonical hemodynamic response function (HRF). This regressor was in turn modulated by a series of 12 dummy (0/1) parametric modulators - one for every response (yes and no for detection and clockwise and anticlockwise for discrimination) and confidence rating (1–6 for both tasks). Using two design matrices instead of one allowed us to set discrimination trials to be the baseline category for detection, and detection trials as the baseline for discrimination. These design matrices included the same set of nuisance regressors as the main design matrix.
 
 For each participant, we used the beta-estimates from the categorical-confidence design matrices as the input to four response-specific multiple linear regression models, with linear confidence and quadratic confidence as predictors, in addition to an intercept term. The subject-specific coefficients were then subjected to ordinary least squares group-level inference, to compare linear and quadratic effects of confidence between responses. The rationale for choosing this two-step approach was its indifference to the confidence distributions for the four responses, that may bias the estimation of the quadratic and linear terms.
 
-## Multivariate analysis
+### Multivariate analysis
 
 Multi-voxel pattern analysis (Norman et al., 2006) was used to test for consistent spatial patterns in the fMRI data. We used The Decoding Toolbox (Hebart et al., 2015) and followed the procedures described by Morales et al. (2018). In order to identify brain regions that are implicated in inference about presence and absence, we trained and tested a linear classifier on detection decisions. We classified hits and correct rejections, instead of hits and misses as originally planned, due to an insufficient number of detection misses in some experimental blocks. We then compared the resulting classification accuracy with the cross-classification accuracy of training on detection responses and testing on discrimination confidence and vice versa. The purpose of this comparison was to isolate neural correlates of inference about stimulus absence or presence that should be specific to detection from more general neural correlates of stimulus visibility, that are also expected to affect confidence in discrimination judgements (see Appendix 8—figure 1).
 
 The other prespecified multivariate tests were designed to find universal and response-specific spatially multivariate representations of confidence. After conducting this analysis we came to realize that our experimental design was not appropriate for estimating the degree to which the representation of confidence is ‘response-general’. In our experimental design, confidence is confounded with visual feedback during the confidence-rating phase, such that ‘response-general’ representations of confidence could appear if the spatial pattern of activation was sensitive to the visual feedback in the confidence rating. For completeness, we include the results of this analysis in the osf project page, but do not interpret them further.
 
-## Statistical inference
+### Statistical inference
 
 T-test and anova Bayes factors use a Jeffrey-Zellner-Siow Prior for the null distribution, with a unit prior scale (Rouder et al., 2009; Rouder et al., 2012). Whole-brain fMRI significance was corrected for family-wise error rate at the cluster level (p<0.05), with a cluster defining threshold of p<0.001.

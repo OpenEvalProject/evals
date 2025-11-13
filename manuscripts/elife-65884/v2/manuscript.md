@@ -26,15 +26,23 @@ Although each Mendelian Disorder of the Epigenetic Machinery (MDEM) has a differ
 
 ## Introduction
 
-## Mapping causal disease-associated epigenetic variation
+### Mapping causal disease-associated epigenetic variation
 
 A long-standing and fundamental problem in epigenetics is the identification of specific epigenetic changes that causally mediate phenotypes through the alteration of transcriptional states. While statistical associations between many diseases/traits and epigenetic changes have been detected, it is typically extremely challenging to rule out the influence of confounders such as the environment, and to determine whether these associations are primary causes vs. secondary consequences (Rakyan et al., 2011; Lappalainen and Greally, 2017). As a result, to date there are surprisingly few examples of causal relationships between epigenetic alterations and specific phenotypes; notable exceptions include disorders of genomic imprinting (Barlow and Bartolomei, 2014), disorders caused by repeat-expansion-induced aberrant promoter hypermethylation (Sutcliffe et al., 1992; LaCroix et al., 2019), predisposition to some tumor types (Sakatani et al., 2005; Rainier et al., 1993; Ogawa et al., 1993; Gazzoli et al., 2002), and – in mice – phenotypes caused by metastable epialleles (Bertozzi and Ferguson-Smith, 2020; Rakyan et al., 2002).
 
 The recent advent and widespread clinical use of exome sequencing has led to the emergence of a novel class of Mendelian disorders, termed the Mendelian Disorders of the Epigenetic Machinery (MDEMs) (Fahrner and Bjornsson, 2019). MDEMs are caused by coding variants disrupting genes encoding for epigenetic regulators, which are generally very intolerant to loss-of-function variation (Boukas et al., 2019). This implies the following causal chain underlying MDEM pathogenesis: a coding variant disrupts an epigenetic regulator, leading to downstream epigenomic abnormalities, which in turn give rise to the phenotype, likely by perturbing the transcriptome (Figure 1A). As a result, MDEMs may provide a unique lens into the causal relationship between epigenetic/transcriptomic variation and disease. Indeed, studies of Kabuki syndrome type 1 (KS1) – one of the most extensively studied MDEMs to date – have begun unraveling the underpinnings of the neural (Carosso et al., 2019), growth (Fahrner et al., 2019), cardiac (Ang et al., 2016), and immune defects (Pilarowski et al., 2020; Zhang et al., 2015; Ortega-Molina et al., 2015) seen in this disorder.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig1-v2.jpg)
+
+**Figure 1.:** (A) The causal chain of Mendelian Disorder of the Epigenetic Machinery (MDEM) pathogenesis: the genetic disruption of an epigenetic regulator leads to epigenetic and transcriptomic alterations, which ultimately determine the phenotype. (B) We hypothesize that the shared phenotypic features between MDEMs occur because of shared epigenetic and transcriptomic alterations downstream of the genetic disruption of distinct genes. The Venn diagram depicts two MDEMs for convenience, but our approach can be applied to an arbitrary number of MDEMs with shared phenotypes. (C) Our approach is designed to derive a list of abnormalities with high probability of causal relevance, by jointly comparing multiple MDEMs. Shown for two MDEMs for convenience. (D) Experimental design and workflow for sample generation in our present study. Created with BioRender.com. (E) The sample size of our study (number of mice). The ATAC- and RNA-seq samples were generated in parallel (see Materials and methods for details).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** See Materials and methods for details. Panel (A) corresponds to two experiments, and panel (B) corresponds to three experiments. The distributions were derived after 1000 simulations.
+
 Here, we leverage MDEMs to design an approach for discovering functionally relevant epigenetic variation, which overcomes limitations such as confounding effects from the environment and reverse causality from the disease process. Our approach is based on a cardinal and thus far unexploited feature of MDEMs, namely their overlapping phenotypic features, despite the causative genetic variants disrupting distinct genes. Such common MDEM features include intellectual disability, growth defects, and immune dysfunction (Fahrner and Bjornsson, 2019). We hypothesize that these shared phenotypes arise because the different primary genetic defects lead to shared downstream epigenomic alterations, which in turn create shared transcriptomic alterations (Figure 1B). This hypothesis of a convergent pathogenesis motivates a joint analysis of more than one MDEM, and suggests a simple filter to identify the causal variation at the epigenetic/transcriptomic level: true, disease-driving signals should be detectable in multiple disorders (Figure 1C).
 
-## Proof-of-principle: Kabuki syndrome types 1 & 2 and Rubinstein-Taybi syndrome type 1
+### Proof-of-principle: Kabuki syndrome types 1 & 2 and Rubinstein-Taybi syndrome type 1
 
 As proof-of-principle, we implement our proposed approach using mouse models of three MDEMs: two that were clinically indistinguishable prior to the discovery of the underlying genes (Kabuki syndrome types 1 and 2 [KS1 and KS2], caused by haploinsufficiency in histone methyltransferases KMT2D and KDM6A, respectively), and one that shares phenotypes but is clinically distinct (Rubinstein-Taybi type 1 [RT1], caused by haploinsufficiency in histone acetyltransferase CREBBP). Importantly, using mice allows us to: (a) eliminate multiple confounders such as the environment, genetic background, age, and sex, and (b) maintain a consistent sampling of disease-relevant cell types between individuals.
 
@@ -44,15 +52,27 @@ Given this potential overlap, we chose to profile positively selected B cells (C
 
 ## Results
 
-## Joint analysis of multiple MDEMs to identify causally relevant epigenetic and transcriptomic variation
+### Joint analysis of multiple MDEMs to identify causally relevant epigenetic and transcriptomic variation
 
 The key element of our approach is the joint analysis of the different MDEMs, in order to detect shared molecular (epigenomic/transcriptomic) alterations between them. The simplest statistical methodology for this task would be to perform differential accessibility and expression analyses separately for each disorder, and then obtain a list of the overlapping differential hits. However, this suffers from the major shortcoming that in order to be labeled as differential, a given locus must exceed an arbitrary significance threshold (or rank). When multiple MDEMs are studied, this requirement can lead to severe loss of power and erroneous underestimation of the size of the overlap among the differential hits (Figure 1—figure supplement 1; Materials and methods). To avoid this, we recast the problem as testing whether evidence that a set of loci/genes are differential in a given MDEM is informative about the state (null or differential) of the same loci/genes in another MDEM. We show (Materials and methods) that with this formulation, we can use conditional p-value distributions to: (a) estimate the size of the set of overlapping abnormalities and test if it is greater than expected by chance, (b) identify a set of genes that belong to this overlap, and (c) decouple (a) from (b), so that only the identification of specific genes is affected by the multiple testing burden.
 
-## Genome-wide chromatin accessibility profiling reveals extensive overlap between the epigenetic alterations of the three MDEMs
+### Genome-wide chromatin accessibility profiling reveals extensive overlap between the epigenetic alterations of the three MDEMs
 
 Given that reductions in enzyme activity of KMT2D, KDM6A, and CREBBP are known to alter normal histone modification patterns, we first set out to profile genome-wide chromatin accessibility using ATAC-seq, employing a modified FastATAC protocol (Materials and methods) (Corces et al., 2016; Buenrostro et al., 2013). We chose to limit the age range to 2.5–3.5 months as this is the age range we know most about this KS1 model, and this is when the IgA deficiency first manifests in KS1 mice (Pilarowski et al., 2020). Starting with a differential accessibility analysis of 7 KS1 vs. 12 wild-type mice (Materials and methods), we discovered 3938 ATAC peaks differentially accessible at the 10% FDR level. Of these, 1062 (27%) overlapped promoters (defined as ±2 kb from the TSS), and 2876 (73%) were in distal regulatory elements (defined as ATAC peaks outside of promoters).
 
 We then compared KS1 to KS2, focusing on promoters first. We used our new approach in order to detect peaks with shared accessibility disruption. Briefly, we first obtained the 1062 differential promoter peaks from the KS1 vs. WT analysis. Then, we used the distribution of the p-values for these peaks from the KS2 vs. WT analysis to estimate the percentage of shared differential peaks, and individually label each peak as shared or not at the 10% FDR threshold (see Materials and methods for details). We found that 68.5% of promoter peaks differentially accessible in KS1 are also differential in KS2 (Figure 2A; p < 2.2e-16, 5 KS2 vs. 12 wild-type mice); at the 10% FDR level, we identified 733 such peaks. For 724 of the 733 (98.8%), accessibility is altered in the same direction in the two syndromes (Figure 2B; Figure 2—source data 1). Out of these 724 promoter peaks disrupted in both KS1 and KS2, we discovered that approximately 67% are differential in RT1 as well (Figure 2C; p < 2.2e-16, 5 RT1 vs. 7 wild-type mice), again with highly concordant effect sizes (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig2-v2.jpg)
+
+**Figure 2.:** (A) The distribution of p-values from the KS2 vs. wild-type differential accessibility analysis for promoter peaks, stratified according to whether the same promoter peaks are significantly differentially accessible in the KS1 vs. wild-type analysis (FDR < 0.1; red curve), or not (FDR ≥ 0.1; blue curve). (B) Scatterplot of log2(fold changes) from the KS1 vs. wild-type (x-axis) promoter peak differential accessibility analysis against the corresponding log2(fold changes) from the KS2 vs. wild-type analysis (y-axis). Each point corresponds to a peak. Shown are only peaks that are differentially accessible in KS1 (FDR < 0.1). (C) The distribution of p-values from the RT1 vs. wild-type differential accessibility analysis for promoter peaks, stratified according to whether the same promoter peaks are shared differentially accessible between KS1 and KS2 (FDR < 0.1, see Materials and methods; red curve), or not (blue curve). (D) Scatterplot of log2(fold changes) from the RT1 vs. WT (x-axis) differential accessibility analysis, against the mean log2(fold change) from the KS1 vs. wild-type and KS2 vs. wild-type analyses. Each point corresponds to a peak. Shown are only shared differentially accessible promoter peaks between KS1 and KS2 (FDR < 0.1). (E) Principal component analysis plot using only the 420 promoter peaks identified as shared differentially accessible between the three Mendelian Disorders of the Epigenetic Machinery (MDEMs). Each point corresponds to a mouse. (F) The proportion of differentially accessible promoter peaks that show increased accessibility in the mutant vs. the wild-type mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each point corresponds to a mouse. The black points correspond to wild-type mice from the Kabuki cohorts, and the gray points correspond to wild-type mice from the Rubinstein-Taybi cohort.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The distribution of p-values from the KS2 vs. wild-type differential accessibility analysis for peaks at distal regulatory elements (defined as peaks not within ±2 kb from the TSS), stratified according to whether the same elements are significantly differentially accessible in KS1 (FDR < 0.1; red curve), or not (FDR ≥ 0.1; blue curve). (B) Scatterplot of log2(fold changes) from the KS1 vs. wild-type (x-axis) distal regulatory element differential accessibility analysis against the corresponding log2(fold changes) from the KS2 vs. wild-type analysis (y-axis). Each point corresponds to a peak. Shown are only peaks that are differentially accessible in KS1 (FDR < 0.1). (C) The distribution of p-values from the RT1 vs. wild-type differential accessibility analysis for distal regulatory element peaks, stratified according to whether the same peaks are shared differentially accessible between KS1 and KS2 (FDR < 0.1, see Materials and methods; red curve), or not (blue curve). (D) Scatterplot of log2(fold changes) from the RT1 vs. wild-type (x-axis) differential accessibility analysis, against the mean log2(fold change) from the KS1 vs. wild-type and KS2 vs. wild-type analyses. Each point corresponds to a peak. Shown are only peaks that are shared differentially accessible between KS1 and KS2 (FDR < 0.1). (E) The pairwise overlap between the differentially accessible peaks (promoters or distal regulatory elements) in the three Mendelian Disorders of the Epigenetic Machinery (MDEMs). (F) The proportion of differentially accessible distal regulatory elements that show increased accessibility in the mutant vs. the wild-type mice.
 
 In total, we identified 420 promoter peaks that show disruption in all three disorders at the 10% FDR level with concordant effect sizes (Figure 2—source data 2). This is >4 times more shared peaks than we find if we perform separate differential analyses and compute the intersection of the resulting differential hits (100 peaks), highlighting that our new approach provides substantial gain in empirical power, as suggested by our simulations. A principal component analysis (PCA) shows that the accessibility signal of these shared disrupted promoter peaks separates each of the three mutant genotypes from their wild-type littermates (Figure 2e; Figure 2—figure supplement 1). The KS1 mice cluster close to RT1, while KS1 and KS2 cluster separately from each other, with KS2 being closer than KS1 to wild-type, indicating smaller effect sizes of the accessibility alterations. This KS1/2 separation is surprising, since patients have such strong phenotypic overlap that the two syndromes were not considered distinct prior to discovery of the causative genes. However, it should be noted here that, since Kdm6a is on the X chromosome, the KS2 female mice are expected to be mosaic with respect to Kdm6a knockout, and this may explain the smaller magnitude of their accessibility defects.
 
@@ -60,33 +80,240 @@ Next, we applied the same approach to peaks corresponding to distal regulatory e
 
 Finally, comparing the three MDEMs in a pairwise fashion, we observed that KS1 and KS2 share a greater proportion of their abnormalities than either KS1 or KS2 compared to RT1 (Figure 2—figure supplement 2), and verified that this is not driven by the fact that the KS1 and KS2 mice were compared against the same wild-type group (Materials and methods).
 
-## Shared disrupted promoters, but not distal regulatory elements, show bias toward increased accessibility in KS1 and KS2
+### Shared disrupted promoters, but not distal regulatory elements, show bias toward increased accessibility in KS1 and KS2
 
 We explored the direction in which the accessibility of the disrupted peaks changes in mutants compared to wild-type. We found that, at promoters, both the KS1 and KS2 mutants exhibit a substantial shift toward increased accessibility (83.5% and 91.2%, respectively, of significantly disrupted promoter peaks; Figure 2F). The same shift is observed at the promoter peaks with shared disruption across the MDEMs (Figure 2F), even though in the RT1 mutants the majority (62.2%) of differentially accessible promoter peaks show the opposite pattern, with a shift toward decreased accessibility (Figure 2F). In contrast to promoters, disrupted distal regulatory elements in all cases are more evenly split: the percentage with increased accessibility is 41.6% in KS1, 39.3% in KS2, and 60% in RT1 (Figure 2—figure supplement 2).
 
-## Transcriptome profiling reveals many expression alterations at genes downstream of promoters with disrupted accessibility
+### Transcriptome profiling reveals many expression alterations at genes downstream of promoters with disrupted accessibility
 
 We next interrogated the transcriptome using RNA-seq (Materials and methods) to: (a) test whether the identified epigenetic aberrations in each disorder have direct transcriptional consequences and characterize the latter, and (b) identify the shared expression aberrations across the three disorders, and assess the extent to which these result from shared accessibility aberrations at the associated promoters. To capture both chromatin and transcriptional status at a single time point, we generated the RNA-seq samples in parallel with the samples used for ATAC-seq, from a subset of the same individual mice (Materials and methods). Specifically, we performed RNA-seq on five KS1 mice, five KS2 mice, five RT1 mice, and five and seven wild-type mice from the Kabuki and Rubinstein-Taybi cohorts, respectively.
 
 First, for each disorder, we determined the top differential promoter peaks as ranked by p-value, and estimated the percentage of genes downstream of these promoters that show differential expression; we repeated this by sliding the rank threshold for determining the top peaks from 1000 to 5000. When considering the top 1000 promoter peaks, the percentage of differentially expressed downstream genes is 45.4% in KS1, 42% in KS2, and 40% in RT1 (Materials and methods; Figure 3—source data 1 contains such genes detected at the 10% FDR level). In all three syndromes, this percentage gradually drops substantially as the cutoff for labeling a promoter as differentially accessible becomes less stringent (Figure 3A), indicating a clear relationship between abnormal promoter accessibility and downstream gene expression dysregulation (with the relationship being noisier in RT1). Emphasizing this relationship, we discovered strong concordance between the direction of abnormal changes at the disrupted promoter-gene pairs: increased or decreased promoter accessibility correlates with increased or decreased gene expression, respectively (Figure 3B, C and D; Pearson correlation between promoter accessibility logFC and gene expression logFC = 0.78 for KS1, 0.84 for KS2, and 0.82 for RT1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig3-v2.jpg)
+
+**Figure 3.:** (A) The proportion of promoters with differentially expressed downstream genes in Kabuki type 1 (KS1), Kabuki type 2 (KS2), and Rubinstein-Taybi type 1 (RT1) syndromes, estimated for the top ranked differentially accessible promoter peaks. The estimation was repeated for different thresholds for determining the top ranked list. For each MDEM, each point corresponds to a different threshold. Thresholds were slid from 1000 to 5000, in steps of 250. (B) Scatterplot of the accessibility log2(fold changes) of differentially accessible promoter peaks, against the expression log2(fold changes) of differentially expressed downstream genes, for each of the three MDEMs. Shown are only pairs where the promoter peak was within the top 1000 differentially accessible promoter peaks (ranked based on p-value), and the downstream gene was differentially expressed (10% FDR; Materials and methods). Each point corresponds to a gene-promoter pair. In cases where more than one peak in the same promoter was within the top 1000 differentially accessible peaks, the median(log2(fold change)) across all such peaks was calculated. (C) and (D) An example locus (Pard3b) with concordant changes in promoter peak accessibility and downstream gene expression in all three MDEMs. (E) The proportion of promoters with differentially expressed downstream genes in KS1, KS2, and RT1, estimated separately for the top uniquely differentially accessible promoters in each MDEM (see Materials and methods), vs. the same proportion estimated for the genes downstream of the 420 shared differentially accessible promoter peaks.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The horizontal lines correspond to the estimated proportion of non-differential genes (see Materials and methods). For Kabuki type 1 (KS1) syndrome, both the proportion estimated with the bootstrap (orange line) and the smoother (pink dashed line) procedure are depicted.
+
 Finally, we compared the proportion of differentially expressed genes downstream of the shared disrupted promoter peaks, to the same proportion of genes downstream of the top disrupted promoter peaks unique for each disorder (Materials and methods). We invariably found the genes downstream of the shared disrupted peaks to have a higher chance of dysregulated expression (Figure 3E; Figure 3—figure supplement 1), supporting our hypothesis that the chromatin alterations at these peaks are more likely to have functional impact.
 
-## A substantial proportion of the shared expression alterations among the three MDEMs arise without concomitant disruption of promoter accessibility
+### A substantial proportion of the shared expression alterations among the three MDEMs arise without concomitant disruption of promoter accessibility
 
 To further dissect the relationship between the shared expression and chromatin abnormalities in the three MDEMs, we sought to define a set of genes with shared expression alterations, without utilizing prior information about the accessibility of their promoter peaks.
 
 Utilizing our method, we discovered high overlap between KS1 and KS2, mirroring the findings at the chromatin level (Figure 4A, B). Specifically, we found 397 differentially expressed genes shared between them with concordant direction of effect (10% FDR; Figure 4—source data 1). We then estimated 78.8% of these to be differential in RT1 (Figure 4), resulting in 264 genes shared across the three disorders (10% FDR), with a preponderance of downregulated genes (Figure 4E,F; Figure 4—figure supplement 1; Figure 4—source data 2; 175 downregulated vs. 89 upregulated genes).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig4-v2.jpg)
+
+**Figure 4.:** (A) The distribution of p-values from the KS2 vs. wild-type differential expression analysis, stratified according to whether the same genes are significantly differentially expressed in KS1 (FDR < 0.1; red curve), or not (FDR ≥ 0.1; blue curve). (B) Scatterplot of log2(fold changes) from the KS1 vs. wild-type differential expression analysis (x-axis), against the corresponding log2(fold changes) from the KS2 vs. wild-type analysis (y-axis). Each point corresponds to a gene. Shown are only genes that are differentially expressed in KS1 (FDR < 0.1). (C) The distribution of p-values from the RT1 vs. wild-type differential expression analysis, stratified according to whether the same genes are shared differentially expressed between KS1 and KS2 (FDR < 0.1, see Materials and methods; red curve), or not (blue curve). (D) Scatterplot of log2(fold changes) from the RT1 vs. WT (x-axis) differential expression analysis, against the mean log2(fold change) from the KS1 vs. wild-type and KS2 vs. wild-type analyses. Each point corresponds to a gene. Shown are only genes that are shared differentially expressed between KS1 and KS2 (FDR < 0.1). (E) Principal component analysis plots using only the 264 genes identified as shared differentially expressed between the three Mendelian Disorders of the Epigenetic Machinery (MDEMs). Each point corresponds to a mouse. (F) The proportion of differentially expressed genes that show increased expression in the mutant vs. the wild-type mice. (G) The proportion of genes with differentially accessible promoter peaks in KS1, KS2, and RT1, estimated for the top ranked differentially expressed genes. The estimation was repeated for different thresholds for inclusion into the top ranked list. For each MDEM, each point corresponds to a different threshold. Thresholds were varied from 1000 to 5000, in steps of 250.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each point corresponds to a mouse. The black points correspond to wild-type mice from the Kabuki cohorts, and the gray points correspond to wild-type mice from the Rubinstein-Taybi cohort.
+
 While these 264 genes are significantly enriched in the set of genes with shared disruption of promoter accessibility (p = 0.0001), the magnitude of this enrichment is modest (29 genes in the intersection; odds ratio = 2.37, Table 1). The number of genes in the intersection increases to 99 when we also include those harboring shared disrupted regulatory elements nearby (±1 Mb from their promoter peaks). Taken together, these results indicate that there is convergent dysregulation of gene expression in these three MDEMs, which is not always a direct downstream consequence of the shared epigenetic alterations. Nevertheless, in KS1 and KS2 – but not in RT1 – the top differentially expressed genes are more likely to have disrupted promoters than genes further down the differential list (Figure 4G).
 
-## Integration of transcription factor motifs with chromatin and expression alterations highlights some potentially disrupted regulatory connections
+**Table 1.**
+ Shared differentially expressed genes with shared differentially accessible promoters in Kabuki type 1, Kabuki type 2, and Rubinstein-Taybi syndromes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Gene expression</th>
+      <th>Promoter accessibility</th>
+      <th>Gene function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pard3b</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Cell division and cell polarization processes</td>
+    </tr>
+    <tr>
+      <td>Pbx1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Transcription factor</td>
+    </tr>
+    <tr>
+      <td>Epm2a</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Serine/threonine/tyrosine phosphatase</td>
+    </tr>
+    <tr>
+      <td>Zfp365</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Transcription factor</td>
+    </tr>
+    <tr>
+      <td>Ccdc88a</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Actin binding protein</td>
+    </tr>
+    <tr>
+      <td>Tanc2</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Synaptic scaffolding protein</td>
+    </tr>
+    <tr>
+      <td>Dip2c</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Protein interacting with transcription factors</td>
+    </tr>
+    <tr>
+      <td>Kif13a</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Microtubule-based motor protein</td>
+    </tr>
+    <tr>
+      <td>Spry2</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Inhibitory activity on receptor tyrosine kinase signaling proteins</td>
+    </tr>
+    <tr>
+      <td>Ndrg1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>N-myc downregulated gene family member</td>
+    </tr>
+    <tr>
+      <td>Ebi3</td>
+      <td>Down</td>
+      <td>Down</td>
+      <td>Interleukin subunit</td>
+    </tr>
+    <tr>
+      <td>Ppdpf</td>
+      <td>Down</td>
+      <td>Down</td>
+      <td>Regulator of exocrine pancreas development</td>
+    </tr>
+    <tr>
+      <td>Golim4</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Golgi protein</td>
+    </tr>
+    <tr>
+      <td>Reln</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Secreted extracellular matrix protein</td>
+    </tr>
+    <tr>
+      <td>Amz1</td>
+      <td>Down</td>
+      <td>Down</td>
+      <td>Zinc metalloproteinase</td>
+    </tr>
+    <tr>
+      <td>Slc29a4</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Monoamine transporter</td>
+    </tr>
+    <tr>
+      <td>Bicd1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Role in intracellular cargo transport</td>
+    </tr>
+    <tr>
+      <td>Slc25a4</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Member of the mitochondrial carrier subfamily</td>
+    </tr>
+    <tr>
+      <td>Nr3c2</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Mineralocorticoid receptor</td>
+    </tr>
+    <tr>
+      <td>Zfp827</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Transcription factor</td>
+    </tr>
+    <tr>
+      <td>Slc36a4</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Amino acid transporter</td>
+    </tr>
+    <tr>
+      <td>Arhgef12</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Guanine exchange factor</td>
+    </tr>
+    <tr>
+      <td>Tbc1d2b</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>GTP-ase activating protein</td>
+    </tr>
+    <tr>
+      <td>Cask</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Calcium-calmodulin-dependent serine protein kinase</td>
+    </tr>
+    <tr>
+      <td>Dmd</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Connects cytoskeleton and the extracellular matrix</td>
+    </tr>
+    <tr>
+      <td>Maged1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>p75 neurotrophin receptor mediated program</td>
+    </tr>
+    <tr>
+      <td>Chic1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Cysteine-rich hydrophobic (CHIC) domain containing protein</td>
+    </tr>
+    <tr>
+      <td>Gprasp1</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>G protein-coupled receptor interacting protein</td>
+    </tr>
+    <tr>
+      <td>Col4a5</td>
+      <td>Up</td>
+      <td>Up</td>
+      <td>Major collagen of basement membrane</td>
+    </tr>
+  </tbody>
+</table>
+
+### Integration of transcription factor motifs with chromatin and expression alterations highlights some potentially disrupted regulatory connections
 
 It is well appreciated that chromatin accessibility is intimately linked to transcription factor binding. Accessibility patterns are often established subsequently to recruitment of epigenetic regulators by transcription factors at specific genomic locations (Voss and Hager, 2014), while other transcription factors can only bind their cognate motifs if these reside within pre-accessible sites (John et al., 2011; Guertin and Lis, 2010). We therefore investigated the transcription factor motifs encoded within the differentially accessible peaks in the three disorders, using a set of 233 non-redundant motifs (Materials and methods). We focused on differentially accessible peaks within promoters of differentially expressed genes, reasoning that these are more likely to reveal potentially disrupted regulatory connections with functional relevance. In all three syndromes, we observed only modest enrichments (Figure 4—source data 3).
 
 Regulatory wiring disruption can occur not only because of altered motif accessibility, but also theoretically because of abnormal expression of the cognate transcription factors themselves. We thus also performed a search for motif enrichment in promoter peaks corresponding to differentially expressed genes, regardless of whether these peaks are differentially accessible or not. Notable among the significant hits (Figure 4—source data 3) are motifs recognized by transcription factors of the NF-kB pathway, which appears affected at the expression level in the three disorders. However, the enrichment effect sizes are again small. Overall, this analysis indicates that the regulatory network disruption in the three MDEMs does not converge to a few dominant transcription factors.
 
-## The collective effect of individually subtle alterations in multiple genes is likely responsible for perturbed IgA production and abnormal B-cell maturation
+### The collective effect of individually subtle alterations in multiple genes is likely responsible for perturbed IgA production and abnormal B-cell maturation
 
 Our results establish the existence of widespread epigenetic and transcriptional aberrations that are largely shared across the three disorders, suggesting functional relevance. We therefore asked whether these aberrations can explain some specific aspects of the immune dysfunction. We first performed a pathway analysis of the shared disrupted genes (either at the expression or promoter accessibility level; Materials and methods). This yielded several potentially affected pathways (Figure 5—source data 1 and Figure 5—source data 2). However, most of these were of general relevance and did not pinpoint very specific pathologies.
 
@@ -94,7 +321,7 @@ We then reasoned that we might gain more insight by focusing on two of the speci
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65884/elife-65884-fig5-v2.jpg)
 
-**Figure 5.:** (A) The Wilcoxon rank-sum test statistic (red vertical line) computed after assembling a list of genes encoding TFs expressed in B cells (Materials and methods), and comparing the distribution of their differential expression p-values to the p-value distribution of the rest of the genes included in the differential expression analysis. The blue distribution corresponds to the same statistic computed after randomly sampling gene sets of the same size as TFs, and comparing their p-value distribution to the p-values for the rest of the genes. The resampling was performed 10,000 times. (B) Same as (A), but for genes known to individually contribute to IgA deficiency (Materials and methods). (C) The percentage of TF genes that belong to the top 25% differentially expressed TFs in Kabuki type 1 syndrome (KS1) (orange dots), and Kabuki type 2 syndrome (KS2) (green dots), stratified according to their p-value quartile in Rubinstein-Taybi type 1 syndrome (RT1). (D) Same as (C), but for IgA deficiency genes compared in KS1 and RT1. (E) Serum IgA levels in KS1, KS2, and wild-type mice.Figure 5—source data 1.Figure 5—source data 2.Figure 5—source data 3.
+**Figure 5.:** (A) The Wilcoxon rank-sum test statistic (red vertical line) computed after assembling a list of genes encoding TFs expressed in B cells (Materials and methods), and comparing the distribution of their differential expression p-values to the p-value distribution of the rest of the genes included in the differential expression analysis. The blue distribution corresponds to the same statistic computed after randomly sampling gene sets of the same size as TFs, and comparing their p-value distribution to the p-values for the rest of the genes. The resampling was performed 10,000 times. (B) Same as (A), but for genes known to individually contribute to IgA deficiency (Materials and methods). (C) The percentage of TF genes that belong to the top 25% differentially expressed TFs in Kabuki type 1 syndrome (KS1) (orange dots), and Kabuki type 2 syndrome (KS2) (green dots), stratified according to their p-value quartile in Rubinstein-Taybi type 1 syndrome (RT1). (D) Same as (C), but for IgA deficiency genes compared in KS1 and RT1. (E) Serum IgA levels in KS1, KS2, and wild-type mice.
 
 Turning our attention to KS2 and RT1, we observed similar results for transcription factors, with substantial contribution from a set of transcription factors dysregulated in all three MDEMs (Figure 5A, C). However, when assessing the IgA deficiency genes, we only observed the signal in RT1, and not in KS2 (Figure 5B,D). This was surprising, given the high phenotypic similarity between KS1 and KS2, and prompted us to measure serum IgA in the KS1/2 and wild-type mice (Materials and methods). In agreement with the collective behavior of IgA-related genes, we found no difference in IgA levels between the KS2 and wild-type, while we recapitulated our previous result of IgA deficiency in KS1 mice (Pilarowski et al., 2020; Figure 5E; p = 0.8 for KS2 vs. WT, p = 0.0008 for KS1 vs. WT, Figure 5—source data 3).
 
@@ -118,7 +345,274 @@ In summary, we propose the study of the MDEMs as a principled approach for syste
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Reagent type (species) or resource</td>
+      <td>Designation</td>
+      <td>Source or reference</td>
+      <td>Identifiers</td>
+      <td>Additional information</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>Kmt2d+/βGeo mice (fully backcrossed to C57BL/6J)</td>
+      <td>Originally from Bay Genomics and described in PMID:2527309625273096.</td>
+      <td>Kmt2d+/βGeo,Mll2Gt(RRt024)BygRRID:MGI:5829565</td>
+      <td>A previously characterized mouse model of Kabuki syndrome (type 1).</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, females only)</td>
+      <td>Kdm6a± mice (fully backcrossed to C57BL/6J, observed male lethality)</td>
+      <td>Ordered from EMMA (European Mouse Mutant Archive)</td>
+      <td>Kdm6a+/, Kdm6atm1d(EUCOMM)WtsiMGI:4434460</td>
+      <td>A previously characterized mouse model of Kabuki syndrome (type 2). Transition from Kdm6atm1a(EUCOMM)Wtsi to Kdm6atm1d(EUCOMM)Wtsi performed in Bjornsson laboratory.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>Crebbp±mice (fully backcrossed to C57BL/6J)</td>
+      <td>Ordered from Jackson laboratory and described in PMID:10673499</td>
+      <td>Crebbp+/-Crebbptm1Dli, RRID:MGI:2175793</td>
+      <td>A previously characterized mouse model of Rubinstein-Taybi syndrome (type 1).</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>βGeo F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAATGGCGATTACCGTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>βGeo R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCCCAGTCATAGCCGAATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tcrd (control) F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAATGTTGCTTGTCTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tcrd (control) R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTCAGTCGAGTGCACAGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kdm6aTm1c F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAGGCGCATAACGATACCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kdm6aTm1c, Floxed LR</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTGATGGCGAGCTCAGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tcrd (control) F-</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAATGTTGCTTGTCTGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tcrd (control) R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTCAGTCGAGTGCACAGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CrebbpR-T F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAAGCAGCAGCATCCTTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CrebbpR-T_WT</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTGACAATGTGTCATGTGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CrebbpR_T_MUT R:</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATGCTCCAGACTGCCTTGGGA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IgA ELISA kit</td>
+      <td>Thermo</td>
+      <td>Catalog # EMIGA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CD19 positive selection</td>
+      <td>Miltenyi</td>
+      <td>130-052-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tagmentation</td>
+      <td>IlluminaNextera</td>
+      <td>FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Digitonin</td>
+      <td>Promega</td>
+      <td>G9441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA clean and concentration kit</td>
+      <td>Zymo</td>
+      <td>D4013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Select A size purification</td>
+      <td>Zymo</td>
+      <td>D4080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA high sensitivity</td>
+      <td>Agilent</td>
+      <td>5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS</td>
+      <td>Thermo</td>
+      <td>Q32851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA microprep</td>
+      <td>Zymo</td>
+      <td>R2060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT RiboGreen</td>
+      <td>Thermo</td>
+      <td>R11490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA HS Assay kit</td>
+      <td>Thermo</td>
+      <td>Q32852</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA 6000 Pico</td>
+      <td>Agilent</td>
+      <td>5067–1513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Poly(A) mRNA isolation module</td>
+      <td>New England Biolabs</td>
+      <td>E7490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Directional RNA Library Prep kit</td>
+      <td>New England Biolabs</td>
+      <td>E7760/E7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA library Quantification kit</td>
+      <td>KAPA</td>
+      <td>KK4824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BowTie2</td>
+      <td>PMID:22388286</td>
+      <td>RRID:SCR_016368</td>
+      <td>Default parameters</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>PMID:19505943</td>
+      <td>RRID:SCR_002105</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2</td>
+      <td>PMID:18798982</td>
+      <td>RRID:SCR_013291</td>
+      <td>Keep-dup = all</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Surrogate Variable Analysis</td>
+      <td>PMID:17907809</td>
+      <td>RRID:SCR_012836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salmon</td>
+      <td>PMID:28263959</td>
+      <td>V0.10RRID:SCR_017036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GEO submission of all data</td>
+      <td>Accession GSE162181</td>
+      <td>RRID:SCR_005012</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 We performed all mouse experiments in accordance with the National Institutes of Health Guide for the Care and Use of Laboratory Animals and all were approved by the Animal Care and Use Committee of the Johns Hopkins University (protocol number: MO18M112). For all comparisons, we used wild-type littermates as controls for each batch, although we did pool wild-type animals in some analyses. Numbers, outcome measures, and statistical testing are described throughout the text as well as in the transparent reporting form.
 
@@ -138,47 +632,61 @@ Primers:
 
 For this study, multiple mating pairs of wild-type mice crossed with heterozygous mutants were used. The resulting litters from these mate pairs were a mix of mutant and wild-type offspring, all sharing the same genetic background. The wild-type controls that we use in our differential analyses are therefore either siblings to the mutants or cousins (because we have many litters of mice) within each disease model cohort. This ensures our study is not confounded by systematic differences in genetic background between wild-type and mutants.
 
-## Sex disaggregation
+### Sex disaggregation
 
 We performed all experiments in female mice to enable a comparison between all three disease models, as Kdm6a (KS2 model) is present on the X chromosome, and its full knockout is in our experience uniformly lethal in male mice. Therefore, we are unable to present sex-disaggregated data.
 
-## Testing for statistically significant overlap between two lists of differential features and identifying the common hits
+### Testing for statistically significant overlap between two lists of differential features and identifying the common hits
 
 Our problem is cast in the following setting. Assume we have performed two experiments, each of which involves measuring multiple features (e.g. genes or peaks) in two conditions and performing a differential analysis. The two experiments measure the same set of features. Because the two experiments investigate different biological systems, we do not expect the set of (true) differential features to be identical. But we are interested in the extent of the overlap between the two sets of features, specifically: (a) Is there statistically significant overlap between the two sets of differential features and how big is it? (b) Which features are differential in both lists?
 
 Our approach to these questions is a conditional approach: we ask, does information about the result in experiment 1 affect our interpretation of experiment 2?
 
-We first (arbitrarily) designate one of the two experiments as experiment 1. We test m features, and for each feature i, we let Xi be a factor with values in {0,1} expressing whether the feature was significantly differential in experiment 1 (Xi=1), or not (Xi=0). We are interested in whether the variable X=X1,…,Xm is an informative covariate for experiment 2, using terminology from recent work in covariate-powered multiple hypothesis testing (Ignatiadis et al., 2016; Chen et al., 2021).
+We first (arbitrarily) designate one of the two experiments as experiment 1. We test $m$ features, and for each feature $i$, we let $X_{i}$ be a factor with values in {0,1} expressing whether the feature was significantly differential in experiment 1 ($X_{i}=1$), or not ($X_{i}=0$). We are interested in whether the variable $X=X_{1},…,X_{m}$ is an informative covariate for experiment 2, using terminology from recent work in covariate-powered multiple hypothesis testing (Ignatiadis et al., 2016; Chen et al., 2021).
 
-We now consider experiment 2. We split the features into two groups, conditional on the results in experiment 1. Group 1 consists of the features which were found to be differential in experiment 1 (the size of group 1 is n) and group 0 consists of the features which were not differential in experiment 1 (of which we have m-n). We let each group have its own proportion of differential features, that is, we introduce parameters π1|0 and π1|1 . Let Yi be the indicator whether the ith feature is differential in experiment 2 or not. ThenP(Yi=1)=P(Yi=1|Xi=0)P(Xi=0)+P(Yi=1|Xi=1)P(Xi=1)π1|0P(Xi=0)+π1|1P(Xi=1)
+We now consider experiment 2. We split the features into two groups, conditional on the results in experiment 1. Group 1 consists of the features which were found to be differential in experiment 1 (the size of group 1 is $n$) and group 0 consists of the features which were not differential in experiment 1 (of which we have $m-n$). We let each group have its own proportion of differential features, that is, we introduce parameters $\pi_{1|0}$ and $\pi_{1|1}$ . Let $Y_{i}$ be the indicator whether the $i$th feature is differential in experiment 2 or not. Then
 
-Our null hypothesis is that experiment 1 is not informative about experiment 2, or in other wordsH0:π1|0=π1|1
+$$
+P(Y_{i}=1)=P(Y_{i}=1|X_{i}=0)P(X_{i}=0)+P(Y_{i}=1|X_{i}=1)P(X_{i}=1)
+$$
 
-Under this null hypothesis P(Yi=1)=π1|1 . Furthermore, an estimate of π1|1 should have the same distribution as the proportion of significant features in a random sample of n features from experiment 2, which we term π^1(n) .
 
-This gives us the following method for testing H0 :
 
-In practice, we can estimate π1|1^ and π^1(n) using a number of different methods that produce estimates of the proportion of true null hypotheses (and thus, of the proportion of false null hypotheses, our statistic of interest here) among a set of hypotheses tested. We here used Storey’s method as implemented in the qvalue package in R (Storey, 2003a; Storey and Tibshirani, 2003b), with the ‘pi0.method’ parameter set to ‘bootstrap’. This tells us the size of the overlap and the extent to which it is significantly greater than what expected by chance. To estimate which features are in the overlap, we use the qvalue() function on the features which are significant in the analysis of experiment 1, with the FDR level set to 10%.
+$$
+\pi_{1|0}P(X_{i}=0)+\pi_{1|1}P(X_{i}=1)
+$$
 
-## Simulation study
+Our null hypothesis is that experiment 1 is not informative about experiment 2, or in other words
+
+$$
+H_{0}:\pi_{1|0}=\pi_{1|1}
+$$
+
+Under this null hypothesis $P(Y_{i}=1)=\pi_{1|1}$ . Furthermore, an estimate of $\pi_{1|1}$ should have the same distribution as the proportion of significant features in a random sample of $n$ features from experiment 2, which we term $\pi^_{1}^{(n)}$ .
+
+This gives us the following method for testing $H_{0}$ :
+
+In practice, we can estimate $\pi_{1|1}^$ and $\pi^_{1}^{(n)}$ using a number of different methods that produce estimates of the proportion of true null hypotheses (and thus, of the proportion of false null hypotheses, our statistic of interest here) among a set of hypotheses tested. We here used Storey’s method as implemented in the qvalue package in R (Storey, 2003a; Storey and Tibshirani, 2003b), with the ‘pi0.method’ parameter set to ‘bootstrap’. This tells us the size of the overlap and the extent to which it is significantly greater than what expected by chance. To estimate which features are in the overlap, we use the qvalue() function on the features which are significant in the analysis of experiment 1, with the FDR level set to 10%.
+
+### Simulation study
 
 We performed a simple simulation study, to test if our method leads to increased ability to detect overlap between lists of differential features, in a setup with known ground truth. We simulated three experiments as follows. Each experiment consisted of testing 10,000 features between two groups. Of these 10,000 features, there were 2000 true differential features and 8000 true null features. There were 1400 true shared differential features between the first two experiments, and 1000 shared true differential features between all three experiments. For each experiment, the null features were simulated from a normal distribution with mean = 0 and variance = 1, for both groups. The differential features were simulated from a normal distribution with mean = 0 and variance = 1 in one group, and mean = 0.5 and variance = 1 in the other. The sample size was always fixed at 75. For each feature, we performed a two-sample t-test, using the col_t_welch() function from the matrixTests R package.
 
 We then estimated the overlap between the experiments using either our method (as described in the previous section) or the standard approach, which consisted of separately identifying significant features at the 10% FDR level in each experiment, and then counting the number of features in the intersection across experiments. We repeated the simulation 1000 times. Our results confirmed that our method provides substantially greater ability to estimate the size of the overlap (Figure 1—figure supplement 1). In addition, our method had an average proportion of false discoveries (i.e. features labeled as belonging to the overlap that were not truly differential across the experiments) equal to 10.9%, very close to the nominal FDR of 10%.
 
-## Blood cell isolation
+### Blood cell isolation
 
 We obtained peripheral blood from 2.5- to 3.5-month-old female mice by facial vein bleed. 150–250 µL blood was collected in K2EDTA blood collection tubes (BD Microtainer 365974) and red blood cells were lysed for 7–15 min at room temperature in 2 mL red blood cell lysis solution (15.5 mM NH4Cl, 1 mM KHCO3, 0.01 mM EDTA). We diluted lysed blood with excess balanced salt solution (Gey’s or 1× PBS), manually removed large clots using pipet tip, and spun at 500 g for 10 min 4’. Second lysis at room temperature was performed for samples with large amounts of remaining red blood cells then spun. We isolated CD19+ B cells by positive selection using CD19+ microbeads for mouse (Miltenyi 130-052-201) following manufacturer’s protocols, then counted and aliquoted samples on ice to further process for ATAC-seq and RNA-seq. We note that each RNA-seq sample was an aliquot of the same cell harvest as the ATAC-seq sample from the same mouse (though for some mice we only performed ATAC-seq and not RNA-seq).
 
-## ATAC-seq
+### ATAC-seq
 
 We performed ATAC-seq using a modified FastATAC protocol (Corces et al., 2016; Buenrostro et al., 2013). Specifically, we resuspended 5k cells per reaction in 1× PBS and quickly spun to remove residual EDTA from isolation steps, and then resuspended in tagmentation reaction mix for 30 min (2.5 µL TD1, 1× TD Buffer, Illumina Nextera DNA, FC-121–1030; 0.25 µL 1% digitonin, Promega G9441; 1× PBS;) gently shaking (300 rpm on Eppendorf thermomixer) at 37’. We purified reactions using Zymo DNA Clean and Concentrator-5 kit (Zymo D4013) following manufacturer’s protocols and eluted with 10.5 µL water to recover 10 µL. Each reaction was then amplified and indexed as described (Corces et al., 2016); total sample amplification cycles range from 6 to 10 cycles. After indexing and amplification, we purified samples using Select-A-Size purification columns (Zymo D4080) with a cutoff of 150 bp to remove adapter dimers to allow for efficient sequencing on patterned flow cells, checked library size on BioAnalyzer using DNA High Sensitivity reagents (Agilent 5067–4626) and determined concentration using Qubit dsDNA HS Assay Kit (ThermoFisher Q32851). We pooled and sequenced on Illumina HiSeq4000 using PE flow cells with 100-8-8-100 read length using standard manufacturer’s protocols. Samples were clustered to aim for 60 M reads per sample Samples were demultiplexed using Illumina pipeline bcl2fastq2 v2.20 with all defaults except --use-bases-mask Y100n, I8, I8, Y100n.
 
-## ATAC-seq mapping and peak calling
+### ATAC-seq mapping and peak calling
 
 We mapped the ATAC-seq reads to the mm10 mouse assembly using bowtie2 (Langmead and Salzberg, 2012), with default parameters. We removed duplicate reads with the ‘MarkDuplicates’ function from Picard (RRID:SCR_006525; version 2.23.8;http://broadinstitute.github.io/picard/), and subsequently also removed mitochondrial reads using samtools (Li et al., 2009). We then created genotype-specific meta-samples, by merging all the individual bam files corresponding to samples from mice of a given genotype. This yielded one meta-sample for KS1, one for KS2, and one for RT1. For wild-type mice, we created two such meta-samples, one from the wild-type littermates of the KS1 and KS2 cohorts (to which the KS1 and KS2 mutant mice were compared to), and one for the wild-type littermates of the RT1 cohort (to which the RT1 mutant mice were compared to). For each of the five resulting meta-samples, we then called peaks using MACS2 (Zhang et al., 2008), with the ‘keep-dup’ parameter equal to ‘all’.
 
-## ATAC-seq differential analysis
+### ATAC-seq differential analysis
 
 We first defined the set of features to be tested as differential, by unionizing the peaks from all meta-samples. After excluding intervals overlapping ENCODE blacklisted regions (Amemiya et al., 2019), we obtained 78,193 genomic intervals (median size = 690 bp, 95th percentile = 1774, range = 151–11,363). To verify that these intervals are not likely to be false positives, we compared them to publicly available DNase Hypersensitivity Sites in B cells (CD19+) from the ENCODE project (https://www.encodeproject.org/experiments/ENCSR000CMM/). We converted the DHS coordinates from mm9 to mm10 using liftOver. We then unionized the intervals from the two DHS replicates to create a common set of 112,728 DHSs. We found that 78,101 of our 78,193 regions (99.88%) overlapped DHSs, providing strong orthogonal evidence that they represent true B-cell regulatory regions.
 
@@ -186,23 +694,23 @@ We then counted the number of reads from each sample that map to each of the 78,
 
 To derive the list of features overlapping promoters, we first obtained promoter coordinates with the promoters() function from the EnsDb.Mmusculus.v79 R package, with the parameters ‘upstream’ and ‘downstream’ both equal to 2000. We subsequently restricted to protein-coding transcripts, using the ‘tx_biotype’ filter. The overlapping features were then obtained using the findOverlaps() function from the GenomicRanges R package.
 
-## RNA-seq
+### RNA-seq
 
 We spun approximately 100–500k cells at 300–500 g for 5 min at 4’, homogenized in Trizol (Invitrogen 15596018) and stored at –80°C until extraction. We extracted and isolated RNA by phase separation using standard protocols followed by purification using the Direct-zol RNA microprep kit (Zymo R2060) with an on-column DNAse step per manufacturer’s directions. Once purified, we quantified RNA using Quant-iT RiboGreen RNA Assay Kit (ThermoFisher R11490) or Qubit RNA HS Assay Kit (ThermoFisher Q32852), and checked quality by Bioanalyzer with RNA 6000 Pico Kit (Agilent 5067–1513). All samples show high-quality RNA with RIN >9. We used 20 ng RNA per KS1 and KS2 and matched wild-type sample and 100 ng per RT and matched wild-type sample as input to capture mRNA (NEBNext Poly(A) mRNA Magnetic Isolation Module; NEB #E7490) followed by library generation using NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (NEB E7760/E7765) per manufacturer’s protocols. We determined library size and quality using BioAnalyzer with DNA High Sensitivity reagents (Agilent 5067–4626), and determined concentration using Qubit dsDNA HS Assay Kit (ThermoFisher Q32851) and KAPA Library Quantification Kit for qPCR (KAPA KK4824). We pooled samples and sequenced on Illumina HiSeq4000 using PE flow cells with 100-8-8-100 read length using standard manufacturer’s protocols. Samples were clustered to aim for 60 M reads per sample. Samples were demultiplexed using Illumina pipeline bcl2fastq2 v2.20.
 
-## RNA-seq mapping and differential analysis
+### RNA-seq mapping and differential analysis
 
 We first obtained a FASTA file (Mus_musculus.GRCm38.cdna.all.fa.gz) containing all mouse cDNA sequences from Ensembl (http://uswest.ensembl.org/Mus_musculus/Info/Index, version 91, downloaded January 2018). We used this file to build an index and pseudo-map the RNA-seq reads with Salmon (v0.10) (Patro et al., 2017). We subsequently imported the resulting transcript quantifications into R to get gene-level counts, using the tximport R package (Soneson et al., 2016). The differential analysis was then performed with DESeq2, following the same steps as with ATAC-seq. The exclusion of genes with median count across samples ≤10 resulted in 12,566 genes tested in the KS1 vs. wild-type analysis, 12,529 genes tested in the KS2 vs. wild-type analysis, and 12,537 genes tested in the RT1 vs. wild-type analysis.
 
-## Principal component analysis
+### Principal component analysis
 
 All PCA plots were generated as follows. We first applied a variance stabilizing transformation to the count matrices (either genes-by-samples or genomic-intervals-by-samples), as implemented in the vst() function from DESeq2. We then used the resulting matrix to perform the PCA with the plotPCA() function.
 
-## Pairwise comparisons between the disorders
+### Pairwise comparisons between the disorders
 
 We identified greater overlap between the differentially accessible regions identified in KS1 and KS2, than between the differentially accessible regions identified in either of KS1 or KS2 and RT1. To verify that this is not driven by the fact that KS1 and KS2 were compared against the same wild-type group, we re-estimated the overlap, after first conducting differential analyses where KS1 and KS2 mice were compared to separate wild-type cohorts (eight wild-type mice for the KS1 cohort and four mice for the KS2 cohort, respectively). This again revealed the same picture: 73.8% of differentially accessible regions (promoters or distal regulatory elements) in KS1 are estimated to be differential in KS2 as well, whereas only 23.1% of differentially accessible regions (promoters or distal regulatory elements) in RT1 are estimated as differential in KS2.
 
-## Identification of differentially expressed genes with differentially accessible promoter peaks
+### Identification of differentially expressed genes with differentially accessible promoter peaks
 
 For Figure 3B, we first selected the genes downstream of the top 1000 differentially accessible promoter peaks, the latter being ranked based on their p-values in each disorder. Out of these genes, we retained those differentially expressed using the qvalue() function from the qvalue R package, with the gene p-values as input and the ‘fdr.level’ parameter set to 0.1. In cases where there were more than one peak in the same promoter, we calculated the median logFC across these peaks. For Figure 3A, we slid the rank threshold for determining the top differentially accessible promoter peaks in each disorder from 1000 to 5000, and estimated that the proportion of differentially expressed downstream genes used the pi0est() function from the qvalue R package with the ‘pi0.method’ parameter set to ‘bootstrap’.
 
@@ -214,28 +722,28 @@ In the case of KS2 and RT1, the estimates from both the bootstrap and smoother p
 
 Finally, for Figure 4G, we employed the analogous procedure to Figure 3A in order to estimate the proportion of differentially accessible peaks in promoters of differentially expressed genes for different thresholds.
 
-## Reactome pathway analysis
+### Reactome pathway analysis
 
 We used the goseq R package (Young et al., 2010) to perform pathway analyses for the shared disrupted genes, based on Reactome pathways (Jassal et al., 2020). As our assayed gene set, we used the set of all genes included in all three differential expression analyses, or the set of all genes that had at least one promoter peak included in all three differential accessibility analysis. As our differential gene set, we used the set of genes differentially expressed in all of the three MDEMs, or the set of genes with at least one differentially accessible promoter peak in all of the three MDEMs. The top 20 enriched pathways are provided in Figure 5 — source data 1 and 2 respectively.
 
-## Transcription factor motifs
+### Transcription factor motifs
 
 We obtained a bed file (mm10.archetype_motifs.v1.0.bed) containing the genomic positions of 233 non-redundant transcription factor motifs, from https://www.vierstra.org/resources/motif_clustering (Vierstra et al., 2020). We then restricted to motifs that had at least one base overlapping our set of unionized B-cell peaks (see sections ATAC-seq mapping and peak calling and ATAC-seq differential analysis). Subsequently, we tested each motif for enrichment using the fisher.test() function in R. The differentially accessible peaks at promoters of differentially expressed genes were identified as described in the Identification of differentially expressed genes with differentially accessible promoter peaks section.
 
-## Gene catalogs
+### Gene catalogs
 
-## Transcription factors
+#### Transcription factors
 
 We obtained a list of 1254 genes encoding for human transcription factors from Barrera et al., 2016. We then used the biomaRt R package to obtain the mouse orthologs of these transcription factor genes, with the ENSEMBL IDs as our filter. We only retained high-confidence orthologs (‘mmusculus_homolog_orthology_confidence’ equal to 1). Finally, we restricted to transcription factors included in all three differential analyses (KS1 vs. WT, KS2 vs. WT, and RT1 vs. WT).
 
-## IgA deficiency genes
+#### IgA deficiency genes
 
 We used the Mammalian Phenotype Browser on the Mouse Genome Informatics database (Leek and Storey, 2007) to obtain a catalog of genes known to lead to IgA deficiency when individually knocked out. Specifically, we used ‘decreased IgA level’ as the phenotype term and then obtained all the resulting genes, regardless of the genetic background. In cases of double knockouts, we included both genes.
 
-## ELISA for serum IgA levels
+### ELISA for serum IgA levels
 
 We performed ELISAs on serum IgA from peripheral blood samples as previously described (Pilarowski et al., 2020).
 
-## Code availability
+### Code availability
 
 All code for the analyses in this manuscript is available at https://github.com/hansenlab/mdem_overlap (copy archived at swh:1:rev:eec9ad39114cf70fd1d313bd99588520a11e7b04, Leandros, 2021).

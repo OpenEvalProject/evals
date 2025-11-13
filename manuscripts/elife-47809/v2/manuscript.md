@@ -29,9 +29,25 @@ The interplay between intron retention and neuronal RNA localization has been st
 
 ## Results
 
-## Experimental design and validation
+### Experimental design and validation
 
 To physically separate cellular projections from cell bodies, we cultured dissociated primary rat hippocampal cells on membranes with 1 μm diameter pores (Poon et al., 2006). These cultures are a mixture of neuronal and glial cells; we add a DNA replication inhibitor to block cell division and prevent dividing glia from overgrowing post-mitotic neurons. We refer to the projections as ‘neuro-glial’ projections because both neuronal (Map2-immunopositive) and non-neuronal (Gfap/Vimentin-immunopositive) projections extend through the pores and continue growing on the underside of the membrane, whereas cell bodies and nuclei are restricted to the top surface (Figure 1A and Figure 1—figure supplement 1). Lysates prepared by scraping the underside are highly enriched for projections (‘projection’ samples), while lysates prepared from the top surface comprise whole cells with nuclei and projections (‘whole cell’ samples).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig1-v2.jpg)
+
+**Figure 1.:** (A) Imaging of MAP2 protein immunostaining (neuronal marker, green) and DAPI fluorescence (nuclear marker, blue) confirms that the bottom surface of neuronal cultures on a semipermeable membrane (cartoon, top) consists only of neuro-glial projections. Total RNAseq and polyA site RNAseq (PASseq) datasets were generated from the top surface (‘whole cell’) and bottom surface (‘projection’) lysates. (B) Standard plate cultures, fractionated to remove nuclei, were used to prepare ribosome profiling and cytoplasmic polyA+ RNAseq datasets. (C) Genome browser plots of read densities (sum of three replicates) and sequence conservation (PhyloP scores on 20 aligned vertebrate genomes, Pollard et al., 2010) for a projection-localized mRNA and a nuclear noncoding RNA (RPM = Reads per million mapped).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) GFAP and Vimentin (VIM) immunopositive projections pass through the semipermeable membrane and are visible on the bottom surface by immunofluorescence imaging. (B) Percentage of total RNAseq reads from whole-cells and projections aligning to various genomic regions. A majority of reads from projection RNAseq data align to the mitochondrial genome. (C) Genome browser plot of read densities and sequence conservation for Srsf5, an mRNA with a known detained intron (highlighted in pink).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Microcapillary electrophoresis of total RNA (Bioanalyzer RNA pico assay) from whole cells and projections of three biological replicates. Only RNAs >~150 nt were sequenced for this study. In projections, the band at ~100 nt was striking. By sequencing RNAs within 20–150 nt size range, we found that they were mostly full length and fragmented tRNAs (unpublished data).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Data analysis workflow for sequence alignments and RNA abundance quantitation. Files provided as supplementary data or available at GSE129924 are in red text.
 
 To capture both adenylated (polyA+) and non-adenylated (polyA-) long RNAs in our lysates, we prepared rRNA-depleted total RNAseq libraries (mean insert size ~200 nt) from five biological replicates (ten samples total). The RNAseq libraries were subjected to paired-end sequencing (100–125 nt reads) on the Illumina platform to obtain 30–80 million mate pairs per sample.
 
@@ -41,21 +57,61 @@ For preliminary characterization of these data, we aligned RNAseq reads to the r
 
 To qualitatively assess our success in separating projections from whole cells, we aligned filtered reads to the rat genome with TopHat2 (Kim et al., 2013) and visualized read density tracks of known nuclear and projection localized RNAs on a rat genome browser (Robinson et al., 2011). Known nuclear-localized RNAs such as the noncoding RNA Xist (Brown et al., 1992) and Srsf5 mRNA (which contains a detained intron) (Boutz et al., 2015) were depleted from projections relative to whole cells (Figure 1C and Figure 1—figure supplement 1). Conversely, the known projection-localized Pabpc1 mRNA (Poon et al., 2006) was enriched in projection data.
 
-## RNAs enriched in projections
+### RNAs enriched in projections
 
 To comprehensively and quantitatively evaluate how well our datasets distinguish known localized RNAs, we employed Kallisto and Sleuth (Bray et al., 2016; Pimentel et al., 2017) for differential expression analysis of annotated RNA transcripts in projections versus whole cells. RNA abundances (in TPM, Transcripts Per Million) of biological replicates were well correlated (Spearman’s correlation coefficient ≥ 0.83 in projection samples, ≥ 0.88 in whole cell) (Figure 2—figure supplement 1), but comparisons between projection and whole cell datasets showed substantial differences (Figure 2A; Figure 2—source data 1). As expected, known nuclear noncoding RNAs, including Xist, Malat1, Meg3, snoRNAs, and scaRNAs, were among the 1486 genes significantly depleted (>1.5 fold and q-value <0.01) from projections. In contrast, 1440 transcripts were significantly enriched in projections, including known projection-localized mRNAs such as Pabpc1, Map2, Dlg4 (neuronal), and Gfap (glial) (Poon et al., 2006; Garner et al., 1988; Cajigas et al., 2012; Sarthy et al., 1989). Gene ontology analysis showed that the set of projection-enriched mRNAs were significantly enriched for genes involved in mitochondrial functions (cytochrome-c oxidase activity) as well as nearly the entire set of ribosomal protein encoding mRNAs (RP mRNAs) (Figure 2—figure supplement 2). Indeed, seventy annotated RP mRNA isoforms were enriched more than two-fold in projections (black dots in Figure 2A). RP mRNA enrichment in projections is puzzling because ribosomal proteins are imported into the nucleus for ribosome assembly but their enrichment in distal cellular locations has been made consistently in other RNA localization studies (for e.g., most recently, Shigeoka et al., 2018 studied RP mRNA enrichment in Xenopus retinal cell axons), and we discuss it later.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scatter plot comparing log mean read counts and log fold difference in projections versus whole cells, for 19,815 RNA transcripts with non-zero read counts. 1440 (orange dots) are significantly enriched (q-value < 0.01 and fold-change > 1.5) in projections, 1486 (blue dots) are enriched in whole cells, and 16,899 (gray dots) show no significant enrichment in either sample. Ribosomal protein encoding RNAs are shown as black dots; rhombi enclose labeled RNAs. (B–G) smFISH validation of examples of projection-localized (B) versus projection-depleted (C), and low (D), medium (E), high (F), and higher (G) abundance mRNAs. Upper left corner shows gene name, lower right corner shows projection:whole cell TPM. Scale bars = 20 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation between biological replicates (TPM values) of whole cell and projection RNAseq datasets. The color gradient corresponds to the value of Spearman’s correlation coefficient shown in each cell of the heatmap.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Gene ontology classes significantly represented by genes enriched in projections or whole cells. CC = Cellular Component sub-ontology classification.
 
 To test the accuracy of our RNAseq abundance measurements, we performed single-molecule fluorescence in situ hybridization (smFISH) on example RNAs. Using exon-hybridizing RNAScope probe sets, we probed for six different mRNAs spanning a range of TPM values and projection:whole cell ratios (Polr2a, 2:4; Ppib, 43:50; Ubc, 162:146; Pabpc1, 40:12; Srsf5, 18:37; Rpl4, 297:96) (Figure 2B–G; Figure 2—source data 2). Consistent with their RNAseq projection:whole cell TPM ratios, Polr2a, Ppib, and Ubc mRNAs exhibited predominantly cytoplasmic localization, with a strong gradient in spot density highest in cell bodies tapering off into the projections. Srsf5 mRNA was almost entirely confined to the cell bodies, and consistent with the presence of a detained intron (Boutz et al., 2015), Srsf5 mRNA spots were also visible in the nucleus. In contrast, Pabpc1 and Rpl4 mRNA spots exhibited a nearly uniform distribution throughout cell bodies and projections, with relatively few discernible spots in nuclei.
 
 We concluded from these and other analyses that our RNAseq datasets reliably detect and quantify projection-localized RNAs in primary rat hippocampal cultures. We then turned to our main interest in localization of intron sequences.
 
-## Intron regions enriched in projections
+### Intron regions enriched in projections
 
 Because of alternative splicing, transcribed genomic regions cannot be easily separated into introns and exons. To facilitate a comprehensive analysis, we define an ‘intron region’ as a genomic interval that is annotated as intronic (and not exonic) in all annotated transcript isoforms that span it (Ensembl release 81, Rnor_6.0, annotation downloaded on July 24, 2015) (Figure 3A and Figure 3—figure supplement 1). Out of a total of 190,180 such intron regions, we considered 57,432 to have reliable coverage (at least one read in each of the five biological replicates, with mean read density > 0.005 mapped reads/intron region length) in the whole cell libraries, but only 1632 met these criteria in projections (Figure 3B - inset; Figure 3—source data 1). For the 33 intron regions that we considered reliably covered in projections but not in whole cells, individual examination showed that all had coverage in the whole cell libraries but had just missed the cut.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon illustrating how we define intron regions as the intersection of all annotated introns. For two mock alternatively spliced isoforms, black rectangles are exons, lines are introns; vertical dotted lines mark the intron region boundaries. (B) Inset: Venn diagram showing the number of intron regions that we consider to show reliable read coverage (at least one read in each replicate and mean read density > 0.005 reads/nucleotide). Scatter plot comparing mean mapped reads per intron region (+1 pseudocount) from five biological replicates of projections versus whole cell RNAseq data. Out of 190,180 intron regions (gray), 57,432 pass the detectability threshold in whole cell (blue overlay) and 1632 in projection (red overlay) libraries. Rhombi enclose labeled RNAs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data analysis workflow to count reads on intron regions. Files provided as supplementary data or available at GSE129924 are in red text.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) In Buckley et al. (2011), 27 genes with cytoplasmic intron retaining sequences (CIRTs) were reported. All introns (n = 436, black dots) of genes containing CIRTs (n = 25) are overlaid on the scatter plot from Figure 3. Six intron regions pass the detection threshold in our projection RNAseq data and are labeled. (B) Genome browser plots for introns labeled in (A) with the relevant intron highlighted in pink. A retained intron in the 3’ UTR of Stx1b was also observed by Yap et al. (2012). Gabbr1 has multiple annotated isoforms, of which only one is shown. RNAseq reads on Map2-i4 (not shown here) come from an unannotated exon.
 
 Introns are expected to be spliced and degraded in the nucleus and thus strongly depleted from projections, but a scatter plot of intron region abundance in projections versus whole cells (Figure 3B) shows a bimodal distribution. Intron regions that show coverage in projections define a subpopulation that has similar read coverage in projections and whole cells. This population is interesting because of the restrictive way that we define ‘intron regions’: no annotated transcript isoform of a given gene shows these regions as exonic, but their abundance in projections suggests that they are either unspliced, excised but stable, or independent transcripts. They include, for example, known (but unannotated) neuron-specific retained introns, such as in Calm2 (homolog of mouse Calm3; Sharangdhar et al., 2017).
 
 As we looked at randomly selected examples of the 1632 intron regions in the rat genome browser, we found, unsurprisingly, that many cases simply represented an unannotated alternative splicing event (i.e., alternative 5’ or 3’ splice site) or an unannotated transcription start site (TSS) or polyadenylation site (PAS) within an annotated intron. We found it useful to distinguish them into classes depending on the presence or absence of reads spanning the unspliced 5’ or 3’ splice sites (5’ exon-intron and intron-3’ exon reads, EI and IE) and spliced exon-exon junctions (EE) (Figure 4A,B and Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig4-v2.jpg)
+
+**Figure 4.:** (A) Description of symbols used to show annotated gene structure and types of read alignments. Rectangles represent annotated (black) or inferred (or unannotated, red) coding (ORF, Open Reading Frame) and noncoding (UTR, UnTranslated Region) exons. Lines represent introns and arrows point in the 5’ to 3’ direction of the transcript. Uninterrupted read alignments are shown as lines whereas arcs depict split reads connecting spliced exon-exon junctions. (B) Scatter plot of mean read coverage (+0.1 pseudocount) of 50 nt exon-intron (EI) versus intron-exon (IE) boundary regions in projection RNAseq samples. Dashed lines indicate thresholds set to EI = 1 and IE = 1 that divide introns into four quadrants (i-iv). Representative sketches depicting the situations within each quadrant are shown. n shows the number of intron regions in each quadrant. (C) Genome browser views of read coverage (sum of three biological replicates) and phyloP conservation for a free (Creld1-intron 5) and retained intron (Sept3 - 3’ terminal intron). RPM = reads per million mapped.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The intron reported to undergo splicing in dendrites is highlighted in pink, and red bars indicate the genomic locus targeted by ISH probes in the study by Bell et al. (2010).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Creld1 free intron (green) is detectable in distal neuronal projections and does not appear to colocalize with Creld1 exons (red). The chromosomal coordinates of the intron and exon regions targeted by smFISH probes are shown along the left margin of the images. Scale bars = 20µ m. (B) Retained intron (green; left) of Sept3 is detectable in neuronal projections whereas detained intron (green; right) of Srsf5 is predominantly detectable in the nucleus. Constitutively spliced introns (regular intron; white) of both genes are detectable only in the nucleus whereas exons (red) can be observed in the cytoplasm/projections. Scale bars = 10µ m. Chromosomal coordinates and sequences of regions targeted by smFISH probes are provided in Figure 2—source data 2.
 
 Intron regions with high EI reads but few IE reads (Figure 4B–(i) upper left; n = 385 regions) correspond to unannotated alternative 5’ splice sites (e.g., Aplp1) or unannotated alternative polyadenylation sites (e.g., Cxadr). Conversely, regions with high IE but few EI reads (Figure 4B-(iii) lower right; n = 320 regions) correspond to unannotated alternative 3’ splice sites (e.g., Mtss1l) or unannotated alternative transcriptional start sites (e.g., Nell2).
 
@@ -65,11 +121,19 @@ We looked specifically at Kcnma1 intron 23, which has previously been reported t
 
 A fourth class of intron regions in projections had both low EI and IE reads (Figure 4B-(iv) lower left; n = 499 regions). Some of these regions proved to harbor a gene transcribed from the same strand and contained within the intron of a different gene, such as Cox6a1 within the last intron of Gatc (Figure 4—figure supplement 1). Others corresponded to unannotated alternative terminal exons, as in Map4 (Figure 4—figure supplement 1). We used the presence of intronic polyadenylation sites from our PASseq data to identify these two cases (n = 96 combined). Another subset corresponded to unannotated alternative cassette exons, as in Abi2 (Figure 4—figure supplement 1), which we identified using evidence of ribosome occupancy (mean ribosome profiling reads ≥5 per replicate; n = 221). The remaining 278 regions showed no evidence of ribosome occupancy in our ribosome profiling data, nor of polyadenylation sites in our PASseq data, and thus they appeared to correspond to nonpolyadenylated noncoding RNAs – possibly free introns or other genes within an intron – and we looked into them further.
 
-## Circular introns with noncanonical branchpoints in projections
+### Circular introns with noncanonical branchpoints in projections
 
 We validated the localization of a detained intron (Srsf5-intron5), retained intron (Sept3-intron10), and free intron (Creld1-intron4) by smFISH (Figure 4—figure supplement 4). As a negative control, we examined the localization of constitutively spliced introns in Srsf5 and Sept3 by smFISH. As expected, the constitutively spliced introns in Srsf5 and Sept3 were observed only in the nucleus, as was the detained intron albeit at a higher copy number. The retained intron of Sept3 could be detected in the projections. Dual color smFISH with probes targeting the exons or retained intron of Sept3 shows close proximity of the signal from the exons and introns. In the case of the free intron from Creld1, the intron signal could be detected in both nuclei and distal projections. Outside the nucleus, no colocalization was observed between free intron and exon signal from Creld1.
 
 One explanation for detecting ‘free’ intron regions in projection samples is that they could correspond to intron-encoded small RNAs such as small nucleolar RNAs (snoRNAs) or small Cajal body RNAs (scaRNAs) that are nuclear-localized yet abundant enough that we detect reads in both projection and whole cell data. We plotted relative enrichment (log ratio in projections/whole cells) versus average abundance of each of the 278 intron regions (Figure 5). This showed that most regions are indeed depleted in projection data, and we found that many do correspond to known snoRNAs and scaRNAs. Projection-depleted regions also included known detained (unspliced and nuclear-localized) introns of highly expressed genes, including Srsf5 and Clk1. We attribute their low EI and IE read counts in projection data to statistical fluctuation around our thresholds; in whole cell data, we see high EI and IE read counts for these abundant nuclear-localized introns.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig5-v2.jpg)
+
+**Figure 5.:** Scatter plot of log ratio of mean read density per intron region in projections versus whole cells, and read density averaged across all replicates of projections and whole cells. Examples of previously known detained introns and intronic snoRNAs/scaRNAs are labeled in black. Introns with circularly permuted reads and without known functional annotation are labeled in red.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Genome browser plots of projection-localized free introns with circularly permuted reads are shown. The total number of circularly permuted reads, ‘n’, in projection libraries as well as the distance of the branchpoint from the 3’ splice site, ‘l’ are shown below each intron. RPM = Reads per million mapped. More details about circularly permuted read alignments are provided in Figure 6—source data 1.
 
 However, many other intron regions were both abundant and enriched in projections (Figure 5). These have features indicative of a previously described class of RNAs called ‘stable intronic sequence RNAs’ (sisRNAs; Gardner et al., 2012). SisRNAs are circular lariat products of splicing (i.e., free introns) that are inefficiently debranched in the nucleus and exported to the cytoplasm via an NXF1/NXT1-dependent mechanism (Talhouarne and Gall, 2018). The most prominent examples in our projection libraries, such as Creld1 (Figure 4C and Figure 5), Zc3h18, and Mov10, were devoid of exon-intron and intron-exon reads, with higher read density on the intron than on the flanking exons. Further, these species were not detected in polyA+ RNAseq and ribosome profiling data. We also observed a lack of read coverage over a 20–30 nt region at the 3’ end of the intron (Figure 5—figure supplement 1).
 
@@ -77,7 +141,7 @@ Spliceosome-mediated intron excision from pre-mRNA releases a lariat molecule in
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/47809/elife-47809-fig6-v2.jpg)
 
-**Figure 6.:** (A) Projection RNAseq read density for linearly mapped (orange) and circularly permuted (gray) reads across Creld1 - intron5. Alignment mismatches at the junction of circularly permuted reads are colored. Individual circularly permuted read alignments are shown as horizontal gray bars, with each bar representing one read. (B) Schematic of circularly permuted read alignment and sequence composition at 5’ splice sites, branch sites (the branchpoint nucleotide is underlined), and 3’ splice sites of five example introns. (C) Cumulative distribution function plots for phyloP sequence conservation showing lack of conservation in projection-enriched free introns relative to exons, or even to retained introns. x-axis represents median phyloP score over a 50 nt sliding window with 10 nt step size. (D) Inferred molecular structure of projection-localized free circular introns.Figure 6—source data 1.
+**Figure 6.:** (A) Projection RNAseq read density for linearly mapped (orange) and circularly permuted (gray) reads across Creld1 - intron5. Alignment mismatches at the junction of circularly permuted reads are colored. Individual circularly permuted read alignments are shown as horizontal gray bars, with each bar representing one read. (B) Schematic of circularly permuted read alignment and sequence composition at 5’ splice sites, branch sites (the branchpoint nucleotide is underlined), and 3’ splice sites of five example introns. (C) Cumulative distribution function plots for phyloP sequence conservation showing lack of conservation in projection-enriched free introns relative to exons, or even to retained introns. x-axis represents median phyloP score over a 50 nt sliding window with 10 nt step size. (D) Inferred molecular structure of projection-localized free circular introns.
 
 We asked if these 14 introns had any other unusual sequence features. We derived sequence logos centered at their aligned 5’ splice sites, branchpoints, and 3’ splice sites. Their 5’ and 3’ splice sites conform to the standard consensus sequences, but their branchpoint follows a CC consensus 17–49 nucleotides upstream of 3’ splice site (Figure 6B; Figure 6—source data 1). Mismatches in read alignments at the branchpoint and the relative scarcity of circularly permuted reads versus linear reads were consistent with the existence of a 2’−5’ linkage that the reverse transcriptase traverses with lower efficiency and accuracy. Other than conservation of 5’ and 3’ splice site sequences, none of the 14 free introns showed notable phylogenetic sequence conservation (Figure 6C). Although we hypothesize that the C branch site is an essential feature in stabilizing these projection-localized free introns, C branchpoints were not notably conserved across multi-species alignments of these introns, indicating little evolutionary pressure to conserve this feature.
 
@@ -95,19 +159,19 @@ This hypothesis has implications for another long-standing puzzle in neuronal RN
 
 ## Materials and methods
 
-## Primary hippocampal neuron culture
+### Primary hippocampal neuron culture
 
 Animals were handled in accordance with protocols approved by the Institutional Animal Care and Use Committee at University of Massachusetts Medical School and Harvard University. All experiments were performed on primary hippocampal neurons of embryonic day 19 rat fetuses. Pregnant Sprague Dawley rats purchased from Charles River Laboratories at 19 days of gestation were euthanized by carbon dioxide asphyxiation immediately followed by diaphragm puncture to ensure death of the animal prior to surgical removal of fetuses. Fetuses were transferred to pre-cooled dishes and placed on ice. Fetal brains were gently extracted under sterile conditions and submerged in ice-cold sterile HBSS (Hank’s Balanced Salt Solution, Gibco 14185052) for transport to the tissue-culture laboratory. The brains were transferred to ice-cold Hibernate E (BrainBits) for microdissection of the hippocampi in a sterile tissue culture hood. Isolated hippocampi were transferred to freshly prepared, pre-warmed pre-dissociation solution (comprising Hibernate E, EBSS, Papain and DNase from Worthington LK003176) and incubated at 37°C for 30 min. Pre-dissociation solution was replaced by 2 ml MEM complete media (containing 50 ml 10x MEM (Invitrogen 11430–030), 15 ml 20% glucose, 15 ml 7.5% sodium bicarbonate, 2 ml 1N HCl, 400 ml water, 5 ml 200 mM glutamax (Gibco 35050061), 50 ml heat inactivated horse serum, 5 ml penicillin-streptomycin (Gibco 15140122)) and the hippocampi were dissociated by gentle trituration, first with a regular and then a fire-polished (with reduced tip diameter) glass pipette. Additional MEM complete media was added to the dissociated cells. Cells were counted using a hemocytometer and plated at optimized densities on poly-D-lysine hydrobromide (Sigma #P0899) coated plates/surfaces. Two hours after plating, MEM complete media was replaced with Neurobasal media (500 ml Neurobasal (Invitrogen 21102–049), 1.3 mL 200 mM glutamax, 1X antibiotic/antimycotic (Gibco 15240062), 1x B27 (Gibco 17504001)). We obtained ~13 embryos per rat and ~1 million cells per embryo.
 
 Mature neurons are post-mitotic but glial cells divide. To prevent glial cells from crowding out the neurons, we treated the culture with a DNA replication inhibitor, Cytosine β-D-arabinofuranoside (Sigma-Aldrich #C1768), on the third day in vitro (DIV). Half of the neurobasal media was replaced with fresh media on DIV = 6, and then on DIV = 12. Cells were harvested on DIV = 14.
 
-## Physical separation of neuro-glial projections from cell bodies
+### Physical separation of neuro-glial projections from cell bodies
 
 To separate neuro-glial projections from cell bodies, primary neurons were cultured on Falcon Permeable Support with Polyethylene Terephthalate (PET) membranes (Corning Life Sciences #C353102) that have 1 µm pores such that the cell bodies remain on top of the membrane, but cellular projections (axons, dendrites, and glial projections) can grow through the pores to the underside of the membrane (Poon et al., 2006). Lysate collected from the top surface of the membranes comprises whole cells (cell bodies and projections) whereas lysate from the underside of the membranes comprises neuro-glial projections and some cytoplasmic blebs.
 
 Primary hippocampal neurons were cultured at a density of 0.2 x 106 per well on Falcon Permeable Support designed to fit 6-well tissue culture plates (Corning Life Sciences #C353102). The plating density was optimized to ensure healthy neuronal cultures for harvesting on DIV = 14. Before setting up the neuronal culture, membranes were immersed in poly-D-lysine hydrobromide solution (0.1 mg/ml in 0.05 M sodium borate pH 8.5) overnight at 37°C. Before plating neurons, membranes were rinsed three times with sterile water and incubated at 37°C for at least 2 hr while immersed in MEM complete media. Neuronal health was assessed for every biological replicate by immunofluorescence imaging using a dendritic marker, MAP2, to visually inspect cell morphology.
 
-## RNA isolation from neurons cultured on semipermeable membranes
+### RNA isolation from neurons cultured on semipermeable membranes
 
 To extract RNA from neuro-glial projections, we removed media from the Falcon Permeable Support, turned it upside-down with the projections-side of the membrane facing upward, applied 200 µl of TRIzol reagent (ThermoFisher #15596018) to the membrane, quickly scraped the surface with one stroke using a cell-scraper, tilted the membrane and gently collected the lysate from the edge of the membrane with a pipette. Lysate was similarly collected from the cell body side of the membrane by applying 500 µl of TRIzol reagent.
 
@@ -115,17 +179,17 @@ RNA was extracted following the steps recommended by TRIzol reagent manual with 
 
 Typical RNA yield from neuronal cultures on 8 × 6 well plates with the semipermeable membrane inserts was ~5 µg from the projections lysate for every ~50 µg from the whole cell lysate. The quality and quantity of RNA was assessed by Nanodrop UV spectrophotometer (A260/A280 measurements) and Bioanalyzer Pico RNA microcapillary electrophoresis (Figure 1—figure supplement 2).
 
-## rRNA-depleted total RNAseq library preparation
+### rRNA-depleted total RNAseq library preparation
 
 RNAseq libraries were prepared following the protocol published in Zhang et al. (2012). Briefly, 5 µg of RNA from each sample was treated with TURBO DNase (ThermoFisher AM2238) followed by clean-up and enrichment of RNA > ~150 nt using RNA clean and concentrator (Zymo Research #R1013). DNase activity was tested beforehand to ensure DNA digestion. Total RNA was depleted of rRNA using the Ribo-Zero rRNA removal kit (Illumina #MRZH11124), following manufacturer’s protocol. RNA was hydrolyzed using 5X first strand buffer (provided with Superscript III reverse transcriptase, ThermoFisher #18080044) at 94°C for 4 min and 50 s and immediately moved to ice. The fragmented RNA was reverse transcribed using random hexamers (ThermoFisher #N8080127) and Superscript III to make single-stranded cDNA. To make strand specific libraries, the second strand complementary to the cDNA was transcribed with DNA polymerase I (New England Biolabs #M0209S) using dUTP instead of dTTP. Illumina sequencing adapters were ligated to the double stranded cDNA. The dUTP-containing strand was degraded using Uracil-DNA Glycosylase (New England Biolabs #M0280S). The resulting single-stranded cDNA was amplified with 13 or 15 PCR cycles followed by size-selection using Pippin Prep (Sage Science) to select for reads with cDNA inserts of 150–450 nt length. Before subjecting to Illumina sequencing, the RNAseq library quality was assessed by running the samples on the Bioanalyzer and Sanger sequencing a subset of TOPO-TA cloned products. Only those libraries with sufficient final concentration (>12 nM), a product of appropriate size range (mode 300 nt size), and comprising expected RNA sequences (for instance, exon regions of abundant mRNAs) were selected for Illumina sequencing.
 
 A total of five biological replicates were sequenced over a span of 2 years, replicates 1–3 (paired-end 100) in 2014 and replicates 4,5 (paired-end 125) in 2016.
 
-## PolyA site sequencing
+### PolyA site sequencing
 
 PolyA site sequencing (PASseq) libraries were prepared following the protocol in Ashar-Patel et al. (2017) and Heyer et al. (2015). 2–5 µg of total RNA from each sample (three biological replicates of projection and whole-cell lysates) was treated with DNase and fragmented as described above. The RNA was reverse transcribed with Superscript III using an anchored oligo-dT primer containing Illumina sequencing adapters and a unique barcode for each sample. Single-stranded RNA was degraded with RNaseI. The cDNA was denatured (65°C for 5 min) and resolved by electrophoresis on a 10% polyacrylamide gel to select 160–210 nt sized fragments (for a 50–100 nt expected insert size sans the adapter sequences). To extract cDNA from the gel, a piece of the gel containing the cDNA was cut at the appropriate location, crushed, and nutated overnight in a solution of 300 mM sodium chloride and 10 mM EDTA. The solution was recovered from gel pieces by centrifugation in Corning Costar Spin-X columns (#07200386) at 10,000 x g for 3 min. cDNA was precipitated using isopropanol, followed by washes in 70% ethanol. The cDNA was then circularized using CircLigase (EpiCentre BioTechnologies #CL4115K) and amplified with 12–14 PCR cycles. The amplified DNA library was further enriched for a product of size 180–280 nt to exclude insert-less product (150 nt) using Pippin Prep.
 
-## Ribosome profiling and polyA+ RNAseq from the cytoplasmic fraction
+### Ribosome profiling and polyA+ RNAseq from the cytoplasmic fraction
 
 Ribosome profiling and corresponding RNAseq libraries were prepared from fractionated cytoplasmic lysate of primary hippocampal neurons following the protocol in Ricci et al. (2014) and Heyer et al. (2015).
 
@@ -141,21 +205,21 @@ To prepare cDNA libraries from ribosome occupied RNA fragments and from RNA frag
 
 Ribosome profiling libraries were amplified with 8 PCR cycles whereas polyA+ RNAseq libraries were amplified with 13 PCR cycles and sequenced on Illumina HiSeq sequencers for 50 nt single reads.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells were cultured either on semipermeable membrane inserts or Thermo Scientific Lab-Tek II chamber slides as described in previous sections. At DIV = 14, media was removed, the cells were rinsed two times with phosphate buffered saline (PBS, pH = 7.4) and subsequently treated with fixative (4% paraformaldehyde) for 10 min at room temperature. The fixative was removed and the cells were rinsed three times with PBS followed by permeabilization with 0.1% Triton X-100 for 5 min. Cells were then rinsed three times with PBS and quenched with 50 mM ammonium chloride (in double-distilled water) for 10–15 min, followed by three more rinses with PBS. The fixed and permeabilized cells were then incubated with 10% normal goat serum in PBS (blocking solution) for 30 min at room temperature. For cells grown on membranes, the membranes were cut out of their plastic support system using a sharp blade and transferred to small chambers for the next steps. The samples were kept moist at all times during the protocol.
 
 The membranes or slides were incubated overnight at 4°C with primary antibody diluted in blocking solution then rinsed three times with PBS. Fluorescently-labeled secondary antibody was applied for 1 hr in the dark at room temperature and rinsed by three washes with PBS. The membranes were cut in half and placed on glass slides with either the whole cell or the projection side on top. ProLong Gold antifade media with DAPI was applied to the membranes before covering them with a 0.16–0.19 mm thick cover glass. The edges of cover glass were sealed with transparent nail-polish and allowed to set overnight in the dark at room temperature. The samples were imaged on DeltaVision or Zeiss Cell Discoverer microscopes.
 
-## smFISH
+### smFISH
 
 smFISH was performed following ACDBio protocol. Briefly, cells were cultured on Ibidi poly-D-lysine coated chambered coverslips. At DIV = 14, media was removed, cells were rinsed two times with PBS, fixed for 30 min at room temperature, then rinsed three times with PBS. The cells were dehydrated by incubating them in sequentially higher concentrations of ethanol (50%, 70%, and 100%, respectively) for 5 min each and a final immersion in 100% ethanol for at least 10 min at room temperature. The dehydration was then reversed by incubation in 70% ethanol for 2 min, 50% ethanol for 10 min, and rinsing with PBS at room temperature. They were then treated with Protease III (ACD Bio) for 10 min at room temperature. smFISH probes were hybridized following manufacturer’s instructions. In the end, the cells were counterstained with DAPI and mounted with ProLong Glass Antifade Mountant (P36980). Probes were multiplexed to image up to three different targets in the same sample. The samples with imaged on Zeiss Cell Discoverer at the Harvard Center for Biological Imaging. Regions targeted by smFISH probes are listed in Figure 2—source data 2.
 
-## Computational analysis
+### Computational analysis
 
 An outline for the data analysis workflow is shown in Figure 1—figure supplement 3 and Figure 3—figure supplement 1. Code and intermediate data files for reproducing and extending these analyses are available as a tar archive at http://eddylab.org/publications/Saini19/Saini19-supplement.tar.gz. Descriptive placeholder input and output filenames (enclosed in <>) are used in the commands shown. If reusing these commands, please replace placeholder filenames with appropriate ones and omit enclosing ‘<' and ‘>'.
 
-## rRNA-depleted, total RNAseq genome alignment
+### rRNA-depleted, total RNAseq genome alignment
 
 Paired-end reads from five biological replicates (10 samples total) of projection and whole cell RNAseq are provided in the fastq format at GSE129924. Reads from replicates 1–3 are 2 × 100 nt, whereas replicates 4 and 5 are 2 × 125 nt long. Replicates 4 and 5 also contain ERCC RNA spike-in. Reads from all 10 samples were aligned to ERCC, rRNA, repeat elements cataloged by RepeatMasker (Jurka, 2000), 7SL or SRP (the RNA component of signal recognition particle), and the mitochondrial genome, serially in that order, using bowtie2 version 2.2.3 (Langmead and Salzberg, 2012). Unaligned reads after each step were passed on for the next alignment. The following parameters were used for each alignment:$ bowtie2-2.2.3/bowtie2 -p 2 -N 1 --no-unal \\
 --un-conc <unaligned.fastq> --al-conc <aligned.fastq> \\
@@ -168,7 +232,7 @@ Unaligned or filtered reads were then mapped to the rat genome (Ensembl release 
 
 High quality read alignments were selected (using SAMtools version 1.4.1) for visualization on the rat genome browser.$ samtools view -bh -q 10 <alignment.bam> > <alignment.q10.bam>
 
-## PolyA site identification from PASseq data
+### PolyA site identification from PASseq data
 
 Six samples (three from whole cell and three from projection lysates) were barcoded and sequenced in one lane on NextSeq 500 with 150 cycles. The barcoded reads were parsed using Illumina’s bcl2fastq version 1.8.4 conversion software.$ bcl2fastq --barcode-mismatches 1 -R <run_directory> \\
 -o <output_directory> --use-bases-mask I5y*n 2 > <output.log>
@@ -208,13 +272,13 @@ $ awk ’{if ($1 == "chrY") print $0} ’ <*.bed> > <*.chrY.bed>
 
 polyA sites were then identified using cleanUpdTSeq (Sheppard et al., 2013). Genomic loci with a high probability of being a true polyadenylation site (p-value < 0.001) were selected for further analysis or visualization on the rat genome browser.
 
-## Cytoplasmic polyA+ RNAseq and ribosome profiling genome alignment
+### Cytoplasmic polyA+ RNAseq and ribosome profiling genome alignment
 
 The adapter was trimmed from fastq files, and only reads longer than 24 nt were kept. Reads were filtered for rRNA, tRNA, repeat elements, and mitochondrial genome following the steps described in the PASseq methods section. Reads were aligned to the genome with TopHat using RefSeq annotation (RGSC 6.0/rn6, Jul. 2014, downloaded on July 7, 2016) as a reference. The alignment is reported in bam file format.$ tophat/2.0.14/tophat -p 4 --library-type fr-secondstrand \\
 --b2-sensitive -g 10 --keep-tmp -G <genes.gtf> \\ 
 -o <output_directory> <genome_index_base> <filtered_reads.fastq>
 
-## Differential expression analysis
+### Differential expression analysis
 
 To quantify annotated transcript abundance, we used Kallisto version 0.44.0 (Bray et al., 2016) with the following parameters:$ kallisto quant -i genes.fa.idx -o ./kallisto_output \\ 
 -b 100 --rf-stranded <read1.fastq.gz> <read2.fastq.gz>
@@ -223,11 +287,11 @@ Reference sequences (fasta format) of protein coding and noncoding RNAs were dow
 
 To identify RNAs enriched in projections, we compared transcript abundances in projections to whole cells using Sleuth version 0.30.0 (Pimentel et al., 2017). The output is provided in Figure 2—source data 1.
 
-## Gene ontology analysis
+### Gene ontology analysis
 
 To identify gene families enriched in projections or whole cells, we used GeneCodis http://genecodis.cnb.csic.es/ (accessed on November 5, 2018) (Carmona-Saez et al., 2007) with default parameters, focusing on the cellular component for gene ontology classification. RNAs enriched in projections (n = 1,440) or whole cells (n = 1,297) were selected using a q-value cutoff of < 0.01 and loge mean read counts across all libraries >1 and compared against a background comprising all RNAs that had loge mean read counts > 1 (n = 19,461).
 
-## Intron quantification
+### Intron quantification
 
 To define intron regions, we first extracted the genomic coordinates of all annotated exons in any isoform of a gene as a .gff file using dexseq_prepare_annotation.py from DEXSeq (Anders et al., 2012). Intron regions were defined as the non-exon regions of each gene. Intron region coordinates were derived from exons using a program written by Alejandro Reyes (ORCID: 0000-0001-8717-66) copied from http://seqanswers.com/forums/showpost.php?p=137918&postcount=4.
 
@@ -235,7 +299,7 @@ To count the number of reads aligning to intron regions, exon-intron (EI) bounda
 
 The intron reference file was first converted from .gff to .bed file format using BEDOPS (Neph et al., 2012). EI and IE regions span 50 nt, 25 nt from the exon and 25 nt from the intron. The EE region coordinates include the intron region and 50 nt of each flanking exon. To count reads crossing the EE junction, only those read alignments that started and ended at the EE coordinates were considered. Since EE regions are longer than 100 nt because they include the intron, the only way a 100 nt long read would start and end at the EE coordinates is if the alignment splits. In case of ribosome profiling and polyA+ RNAseq data, where the minimum read length is 24 nt, the EE regions included the intron region and 12 nt of each flanking exon. The commands used to align the reads to the rat genome, define regions of interest, and count reads on them are shown in Figure 1—figure supplement 3 and Figure 3—figure supplement 1.
 
-## Circularly permuted read alignments
+### Circularly permuted read alignments
 
 To align reads allowing circular permutation, we used find_circ.py version 1.2 (Memczak et al., 2013) following instructions provided on the github repository https://github.com/marvin-jens/find_circ. Reads that failed to align to the rat genome using TopHat (see above) were used to search for circularly permuted alignments. The following commands were executed:$ unmapped2anchors.py <unmappedreads.bam> > <unmapped_anchors.qfa>
 $ bowtie2 -p 8 --score-min=C,-15,0 --reorder --mm -q \\ 
@@ -243,7 +307,7 @@ $ bowtie2 -p 8 --score-min=C,-15,0 --reorder --mm -q \\
 find_circ.py -G <genome.fa> -B <anchors.bam> --noncanonical \\ 
 -R <spliced_reads.txt> -s <stats.txt> > <circs.txt>
 
-## Sequence conservation
+### Sequence conservation
 
 To assess sequence conservation of regions of interest (free intron regions enriched in and depleted from projections, retained introns in projections, and all annotated exons), we used the PhyloP sequence conservation scores from 20 aligned vertebrate genomes (Pollard et al., 2010) downloaded from the UCSC database (Kent et al., 2002). Each nucleotide has a PhyloP conservation score. For every region of interest, we calculated the average PhyloP score across 50 nt windows with a 10 nt interval (using bigWigAverageOverBed version two from Kent et al., 2010) and took the median score across all windows in the region.$ bedtools makewindows -w 50 -s 10 -b <region.bed> \\ 
 -i srcwinnum > <windows.bed>

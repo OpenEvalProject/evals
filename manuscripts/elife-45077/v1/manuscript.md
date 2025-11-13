@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.45077.001 Tissue light scatter limits the visualization of the microvascular network deep inside the living mammal. The transparency of the mammalian eye provides a noninvasive view of the microvessels of the retina, a part of the central nervous system. Despite its clarity, imperfections in the optics of the eye blur microscopic retinal capillaries, and single blood cells flowing within. This limits early evaluation of microvascular diseases that originate in capillaries. To break this barrier, we use 15 kHz adaptive optics imaging to noninvasively measure single-cell blood flow, in one of the most widely used research animals: the C57BL/6J mouse. Measured flow ranged four orders of magnitude (0.0002–1.55 µL min –1 ) across the full spectrum of retinal vessel diameters (3.2–45.8 µm), without requiring surgery or contrast dye. Here, we describe the ultrafast imaging, analysis pipeline and automated measurement of millions of blood cell speeds.
+Tissue light scatter limits the visualization of the microvascular network deep inside the living mammal. The transparency of the mammalian eye provides a noninvasive view of the microvessels of the retina, a part of the central nervous system. Despite its clarity, imperfections in the optics of the eye blur microscopic retinal capillaries, and single blood cells flowing within. This limits early evaluation of microvascular diseases that originate in capillaries. To break this barrier, we use 15 kHz adaptive optics imaging to noninvasively measure single-cell blood flow, in one of the most widely used research animals: the C57BL/6J mouse. Measured flow ranged four orders of magnitude (0.0002–1.55 µL min–1) across the full spectrum of retinal vessel diameters (3.2–45.8 µm), without requiring surgery or contrast dye. Here, we describe the ultrafast imaging, analysis pipeline and automated measurement of millions of blood cell speeds.
 
 ## Introduction
 
@@ -33,9 +33,17 @@ In this study, we innovate imaging strategies as well as deploy custom algorithm
 
 ## Results
 
-## Performance, visualization, confirmation and limits of single blood cell velocity determination
+### Performance, visualization, confirmation and limits of single blood cell velocity determination
 
 Single blood cells were directly imaged using the confocal mode of AOSLO (Figure 1). 2D raster video captured at 25 frames per second revealed movement of a dense array of tightly packed RBCs traveling in vessels without requiring contrast agents (Video 1). Sequentially capturing 1D line-scans across the same vessel produced a space-time image of moving blood cells with a line resolution of 15 kHz (Figure 1D, Figure 2). Single cells produce an increase in backscatter providing positive contrast streaks which represent the displacement over time of each cell. Based on the shallowest angle of beam intersection, the maximum velocity that could be measured using this technique was 1275 mm s–1, which far exceeds the possible velocities of blood cells in the retinal circulation. Given the liberal range of angles we searched, the velocity bandwidth of the measurements ranged from 0.03 to 1275 mm s–1. The Radon transform was able to measure the slope of blood cell streaks within a dense array of overlapping regions of interest (ROIs) in a space-time image (Figure 3A). ROIs with dominant streak orientations (Figure 3B) produced strong peaks in the Radon sinugram (Figure 3C). The angle corresponding to the maximum Radon standard deviation gave the velocity of the cells in the ROI (Figure 3D, Equation. (1). As empirical proof of detection accuracy, the measured slope was superimposed on data from a single ROI (Figure 3B). While this step is not required, it provided augmented visual feedback to the user which assists in velocity determination and provides a visual confirmation step. The context of velocity as a color code could be understood from naïve users and experts alike. From our data, we observed velocities of up to ~100 mm s–1 which represents the upper limit of blood velocity in the eye corresponding to center-line flow of the largest vessels. The lowest velocity was bounded by the motion correction algorithm which adjusted for small eye motion artifacts. Without motion correction, the lowest velocity observed was 0 mm s–1 (corresponding to stuck or stationary blood cells). Quality of data was often improved when static features such as the vessel wall and other retinal tissue were removed through a running background subtraction of 10 ms (Figure 2), which improved signal detection of blood cells. Even with this motion registration step, the lower velocity bound was still <0.03 mm s –1.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig1-v1.jpg)
+
+**Figure 1.:** (A) 2D scan pattern of an adaptive optics scanning light ophthalmoscope (AOSLO) that produces a conventional Cartesian or XY image, shown in B. Two orthogonal scanners raster scan the point spread function (PSF) to produce a video (frame rate = 25 Hz, defined by the slow scan rate). (B) A Cartesian image of a first generation arteriole emerging from the optic disk, imaged with 796∆17 nm direct backscatter. The arteriole (intersected by red arrow) is surrounded by nerve fiber bundles. Typically, 250 frames (10 s) of such a video are recorded (Video 1) and averaged to produce the image shown. The scanning field of view was 4.80° x 3.73°. For visualization only, image brightness has been increased by 20–40% in figures of this paper. No brightness or contrast modifications were done for data analysis. Scale bar: vertical = 20 µm (C) To directly image all blood cells without aliasing, the scan pattern was modified to freeze the slow scan at a preferred location intersecting the vessel, shown by the red arrow in B. The PSF is now scanned repeatedly in a 1D path at 15 kHz, enabling high temporal resolution and direct quantitative imaging of all biologically possible blood cell speeds in any vessel size in the mouse retina. (D) Successive 1D scans are stacked horizontally to produce a space-time or XT image, a small snapshot of which is shown. The white streaks are single blood cells in motion, imaged label–free. The slope of these streaks gives the velocity of the cells along the 1D (fast) scan direction. Correcting for the angle of intersection between the 1D scan and the vessel gives the absolute velocity of the individual blood cells (equation in bottom right is Equation 1 in text). Visual inspection of the slopes shows that there are fast moving blood cells at the center of the blood column, and slower cells at the edge. ‘Stationary’ objects, like the nerve fiber bundles, vessel wall or other retinal tissues, manifest as near horizontal features, with near-zero velocity (removed in post-processing by background subtraction, Figure 2). Scale bars: horizontal = 5 ms, vertical = 20 µm. Note: In Figure 1—figure supplement 1, example of capillary flux imaging is shown, with 1D scan placed orthogonal to the capillary to image individual blood cells and determine exact counts of number of cells passing per unit time.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cartesian image showing imaged capillary in yellow box. Imaged with 796∆17 nm split-detection AOSLO imaging. Scale bar: vertical = 30 µm (B) Zoomed-in version of yellow box in A, rotated by 90°, clearly showing imaged capillary. Red double-arrow shows line-scan location, similar to Figure 1B. 1D line-scan is placed orthogonal to capillary to image blood cell flux, unlike the oblique scanning shown in Figure 1B when imaging velocity in larger vessels. Scale bar: vertical = 4 µm (C) Space-time image collected at 15 kHz 1D scan rate shows individual blood cells imaged label-free. Scale bars: horizontal = 10 ms, vertical = 4 µm. Please refer to our detailed study on label-free measurement of cell flux in mouse retinal capillaries in Guevara-Torres et al. (2016).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig2-v1.jpg)
 
@@ -45,9 +53,29 @@ Single blood cells were directly imaged using the confocal mode of AOSLO (Figure
 
 **Figure 3.:** (A) A 110 ms long space-time image of a 23.3 µm arteriole scanned obliquely, with static features removed, as described in Figure 2. Solid yellow box shows a square ROI of side 157 pixels (~15 µm x 10 ms) used to inspect single-cell velocity. Dashed green boxes show typical 75% overlap of inspection ROIs. (B) Zoomed-in version of solid yellow box in A. The ROI is circularly cropped to make the interpretation of the Radon transform easier. (C) Radon transform of the ROI in B. Local maxima in pixel intensity correspond to individual blood cell streaks in the single ROI in B. (D) Normalized standard deviation (SD) of pixel values of Radon image in C plotted as a function of orientation angle. The horizontal axis is shown both in angle space and corresponding velocity space (angle to velocity mapping given by Equation 1). Angle corresponding to peak of variance profile in D gives dominant orientation and velocity of streaks in single ROI in B. Measured cell orientation is overlaid as magenta line in B. The cell was moving at 22.3 mm s–1. To determine strength/believability of velocity measurement, a custom signal-to-noise-ratio (SNR) metric is defined as the peak standard deviation (SD) divided by the mean SD. (E) Space-time image in A with measured cell orientations in each ROI overlaid using straight lines. For visualization, only a subset of ROIs are displayed, with no overlap. Magenta lines represent ROIs which passed the custom defined SNR threshold (SNR >2.5). Notice that the magenta lines consistently report a tight range of orientation angles, as expected from normal physiology in such a small time epic. Meanwhile, cyan lines often correspond to measured orientations which seem to incorrectly report actual cell orientations, thus showing that the SNR threshold does a good job separating signal from noise. Such dense reporting of single-cell velocity enables measuring subtle fluctuations in velocity due to laminar profile and cardiac pressure wave. Velocities corresponding to measured cell orientations are displayed on a colormap, as shown in Figure 4.
 
+![Video 1.](https://cdn.elifesciences.org/articles/45077/elife-45077-video1.mp4.jpg)
+
+**Video 1.:** The fast-scan (15 kHz) is in the horizontal direction and slow (25 Hz) in the vertical direction. Direct backscatter is imaged using a 796∆17 nm super-luminescent diode (~500 µW). Single blood cells can be seen passing as bright streaks within the lumen of the vessel. However, frame-rate of 25 Hz is too slow to quantify the velocity of these fast moving blood cells without aliasing or missing cells. To overcome this problem, 1D scanning is performed at the vessel at 15 kHz to form space-time images of blood cell motion, as shown in Figure 1 . The video is 10 s long and has dimensions of 4.80° x 3.73° (163.2 × 126.8 µm). The video has been corrected for eye motion as described in the paper. The 250 frames in this video were averaged to form the high SNR image of the same vessel shown in Figure 1B.
+
 The algorithm performed favourably to report only the velocities inside the vessel lumen. While analysis was enabled on the entire image (including portions inside and outside the vessel), only velocities inside the vessel met the SNR calculation (Equation 3). By way of SNR calculation, Figure 3E shows strong rejection of data outside of the vessel, whereas data inside the vessel provides a strong velocity signature. Similarly, the velocity color map in Figure 4 shows a clear boundary condition where blood cell velocity is only found inside the boundaries of the vessel lumen. The SNR threshold that matched human performance was at SNR ~ 2.5, meaning a fairly strict criterion measured only the strongest data. Empirically, these confirmation steps provided visual feedback that the algorithm was performing in accordance with subjective observations which is the current standard for such measurements (Zhong et al., 2008). Our custom MATLAB code completed automated analysis of a typical space-time image (Figure 4) at a rate of ~23.4 ROIs per second (on a 3.7 GHz Intel i7-4820K processor, 16 GB RAM, 64-bit Windows 7). With sparse spatio-temporal sampling, a typical 1 s long space-time image was analyzed in 1.78 min, while still being able to detect pulsatile flow. With dense sampling (high overlap), like that shown in Figure 4C and Video 2, analysis was completed in 28.25 min for a 1 s long image, with 39,664 ROIs analyzed, providing detailed laminar profile variation with cardiac phase shown in Video 3.
 
-## Pulsatile flow measured in all branches of the retinal microcirculation
+![Figure 4.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cartesian image of an arteriole. Dark red arrow marks position of fast 1D oblique scanning. Scale bar: 20 µm. (B) Space-time image showing single blood cells, imaged with 796 nm direct backscatter. White arrows show slower blood cells near vessel wall. For visualization only, image contrast increased by 40%. (C) Automatically measured slopes of cell streaks overlaid on space-time image from B. Color shows absolute cell velocity. Algorithm successfully measured local variations in velocity, including slower cells near vessel wall, marked by white arrows in B. Scale bars: vertical = 20 µm, horizontal = 5 ms. (D) Zooming out: space-time image showing ~711 ms of data in the same vessel, with velocity overlaid in color, spanning ~3 cardiac cycles. Time epoch in C is marked with purple box in D. Scale bars: space: 100 µm, time: 25 ms. (E) Further zooming out: space-time image showing 10 s of data in same vessel. Time epoch in D is marked with dark blue box in E. Several cardiac pulses can be seen (n = 35). Automated algorithm measured single-cell velocity in 123,761 overlapping analysis regions (ROIs). Videos 2 and 3 show all ROIs across 10 s with single-cell detail. Scale bars: space: 50.5 µm, time: 1 s. (F) Instantaneous velocity vs time: cell velocity data was binned across all space and over a 15 ms time window. Putative systolic (green) and diastolic (orange) points shown. (G) High SNR ‘average’ cardiac cycle, which shows highly repetitive pulse waveform, with an asymmetry in time (n = 35 cardiac cycles). Averaging window shown with red boxes in F. Shaded region represents mean ± SD. Figure 4—figure supplement 1 compares this plot to the average cardiac cycle of a similar sized venule. (H) Cross-sectional velocity profile at systolic and diastolic cardiac phases, marked by green and orange time points in G. A blunted parabolic profile is observed, different from prediction of Poiseuille/parabolic flow (vessel lumen diameter = 25.3 µm). Bluntness index of velocity profile changed with cardiac phase (Bsystolic = 1.67, Bdiastolic = 1.39). Shaded regions represent mean ± SD. (I) Population histogram of all the raw velocity data in E, from 123761 ROIs (in black). Overlaid in color are normalized histogram of cell velocities in all diastolic (orange) and systolic (green) phases.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cardiac waveform from averaging n = 35 cardiac cycles of a 25.3 µm first-generation arteriole (as shown in parent Figure 4G). Pulsatility index (PI) = 0.67 and asymmetry index (AI) = 2.8. (B) Cardiac waveform from averaging n = 29 cycles of a 33.5 µm first-generation venule, shown in the same scale as in A. PI = 0.18 and AI = 1.75. (C) Zoomed-in version of B showing difference in temporal asymmetry of cardiac waveform in venule compared to that of arteriole in A. All shaded regions in plots represent mean ± SD.
+
+![Video 2.](https://cdn.elifesciences.org/articles/45077/elife-45077-video2.mp4.jpg)
+
+**Video 2.:** Top: Raw space-time image. Bottom: Cell slopes and velocity overlaid on the original space-time image. N = 35 unique cardiac cycles shown. Scale bars: 4 ms (horizontal), 20 µm (vertical).
+
+![Video 3.](https://cdn.elifesciences.org/articles/45077/elife-45077-video3.mp4.jpg)
+
+**Video 3.:** Top: Space-time image (10 s) of the 25.3 µm arteriole shown in Figure 4. Image is overlaid with measured absolute single-cell velocity, as described in the paper. Scale bars: 300 ms (horizontal), 60 µm (vertical). Middle: Zoom-in of purple box, showing a single representative cardiac pulse in the space time image. Scale bars: 10 ms (horizontal), 25 µm (vertical). Bottom-left: A ~ 12 ms window of the space-time image (red box) is shown in both raw form (showing single blood cell streaks) and in velocity overlaid form. Scale bars: 3 ms (horizontal), 10 µm (vertical). Bottom right: The first plot shows an average cardiac cycle computed from n = 35 cycles, same as Figure 4G. The second plot shows the velocity (spatial) profile as a function of cardiac phase. Figure 4H had only shown the diastolic and systolic phases. The bluntness and height of the profile can be observed to change with cardiac phase. Bluntness index (B) and relative height of profile edges (β) were quantified using Equation 7 in the paper. Bsystolic = 1.67, Bdiastolic = 1.39, βsystolic = 0.34, βdiastolic = 0.46. Shaded regions in both plots show mean ± SD.
+
+### Pulsatile flow measured in all branches of the retinal microcirculation
 
 Data from continuous recordings lasting 1–10 s showed strong modulations corresponding to the cardiac cycle, representing pulsatile flow (shown for a 25.3 µm arteriole in Figure 4D–F, Videos 2 and 3). The influence of cardiac pulsatility is seen across the vessel lumen, with an average periodicity of the cardiac cycles of 218 beats per minute (bpm) (Figure 4F). Pulsatile velocity was observed in all 33 arterioles and venules imaged. Contrary to conventional thought, pulsatile flow was also routinely observed in capillaries (Guevara-Torres et al., 2016). Measured heart rate ranged from 186 to 302 bpm across all mice imaged, consistent with the reported range for the anesthetized mouse. To rule out the possibility that heart-rate-induced eye motion contaminated the measures, we tracked the eye motion, in Figure 5, from the same vessel shown in Figure 2 and Figure 4. The velocity of the largest eye motion was at least 23 times smaller than the velocity of blood cells (Figure 5A). Moreover, the frequency and phase eye motion did not match the pulsatile velocity modulations (Figure 5B).
 
@@ -57,11 +85,11 @@ Data from continuous recordings lasting 1–10 s showed strong modulations corre
 
 Together, these findings rule out that the velocity signal is an artifact of either respiration or cardiac cycle related eye motion. We confirmed measurements of heart rate with external paw-clip pulse oximetry (PhysioSuite, Kent Scientific Corp., Connecticut, USA) in a subset of vessels. The retinal-vessel measurement of heart rate and an alternate recording performed with the paw-clip pulse oximeter showed strong correlation with correspondence slope of 0.99 (Figure 5C, linear fit with forced zero intercept, R2 = 0.89). The lack of perfect fit may arise from running-average of the pulse oximeter measurement, whereas our measurement was nearly instantaneous between adjacent beats.
 
-## Vessel-specific differences in pulsatile flow
+### Vessel-specific differences in pulsatile flow
 
 While pulsatile flow was observed in retinal blood vessels of all sizes including arterioles, capillaries and venules, there were waveform differences in these branches. Generally, arterioles had a steep leading edge of the velocity waveform whereas venules had a dampened waveform, due to vascular compliance and network hemodynamics upstream and downstream the imaged vessel. Waveforms were analyzed by identifying the peak and trough of the velocity time course corresponding roughly to the systolic and diastolic component of the pressure wave. These control points (Figure 4F) served as a phase reference to produce an ‘average cardiac cycle’ for each vessel, corresponding to 10 s of data. The average pulsatile waveform showed a high degree of repeatability. This is shown by way of example in the small error bars in Figure 4G which represents n = 35 cycles averaged in a single arteriole. Using vascular indices described by Equations 4–6 above, we found that in an arteriole and venule of the same vessel generation, the arteriole had a much higher pulsatility index (PI) consistent with physiology of the cardiovascular system (Figure 4—figure supplement 1, PI = 0.67 for 25.3 µm arteriole vs PI = 0.18 for 33.5 µm venule). Such functional difference between arterioles and venules can also be visually observed in Figure 9C, where vessels A1 and V1 have similar mean velocity, but markedly different PIs. Furthermore, arterioles routinely showed a temporally asymmetric waveform indicating a bolus pressure wave followed by relaxation of vascular compliance (Figure 4G, arteriole asymmetry index (AI) = 2.8). This waveform is contrasted to what is seen in a venule in Figure 4—figure supplement 1 (venular AI = 1.75).
 
-## Measurement of velocity profile across vessel cross-section
+### Measurement of velocity profile across vessel cross-section
 
 Unlike models of Newtonian/laminar flow, the RBC velocity profile was poorly fit with a parabolic model that is bounded by zero velocity at the lumen surface (Figure 6). While often modeled in this way for bulk flow, single RBCs themselves are not expected to be stationary at the vessel wall. A small cell-free zone combined with the vascular glycocalyx represented prevents cell contact with the vascular lumen at the microscopic scale. To quantify the true RBC velocity profile, we fit the data using Equation 7 (blue line, Figure 6B). The R2 of the fit was 0.97, bluntness index B = 1.51 (95% confidence bounds: 1.33, 1.69) and scale factor β = 0.44 (0.38, 0.50). By comparison, a parabolic profile (red line) would have B = 2 and β = 0. An assumption of parabolic flow (Vmax/Vmean = 2) leads to a 39% underestimation in mean flow rate in the vessel shown. While we did not measure plasma velocity, we did model plasma flow between the RBC column and vascular inner wall by assuming linear decline of plasma velocity and enforcing the no-slip boundary condition that may apply to plasma as it contacts the glycocalyx (yellow line, Figure 6B). Based on velocity measures above, we observed a gap of 1.8 µm between the position of the most lateral RBCs and the vascular wall.
 
@@ -71,7 +99,7 @@ Unlike models of Newtonian/laminar flow, the RBC velocity profile was poorly fit
 
 With dense spatio-temporal sampling, bell-shaped velocity profiles were observed across different cardiac phases (Figure 4H and Video 3). Video 3 shows all 20 cardiac phases analyzed. Strongest modulations were observed in the center-line with diminishing modulations closer to the boundary of the vessel. The velocity at center showed the most amount of modulation (Figure 4H, 90.5% increase in velocity from diastolic to systolic phase). The velocity modulation at the edge had lower amplitude (71.1% increase in velocity in right lumen edge, from diastolic to systolic phase). Using Equation 7, the profile bluntness was observed to change across the cardiac cycle from systolic to diastolic (Bsystolic = 1.67, Bdiastolic = 1.39). Combined, the AOSLO measure of blood velocity provides fewer assumptions and populates more free parameters to more accurately model flow in the lumen as a function of space and time.
 
-## Label-free microscopic imaging of lumen diameter
+### Label-free microscopic imaging of lumen diameter
 
 Vessel lumen and vessel walls were clearly visualized using label-free split-detection (SD) imaging (Figure 7A&D). The motion contrast images, produced by computing pixel grayscale variance over time, revealed regions of moving blood cells within the vessel (Figure 7B&E). The split detection intensity image of the vessel shown revealed a lumen width of 24.9 µm (Figure 7G). The motion contrast generated by RBCs revealed a lumen width of 24.8 µm (Figure 7H). The simultaneously acquired fluorescein image confirmed a similar lumen diameter of 25.6 µm (Figure 7I). The multi-modal images, captured simultaneously, show only a small difference in diameter measurement of +3.1%. These small discrepancies are likely real as there is an expected larger diameter measured from plasma fluorescence, spanning the entire lumen, whereas RBCs are absent near the vessel wall due to the known cell-free zone and glycocalyx. Moreover, differences at this scale are small compared to the optical resolution limit of the AOSLO system (~1 µm lateral resolution). Simultaneous label-free split detection and fluorescein imaging confirm that the label-free approach is a valid marker for vessel lumen width, which is important for clinical imaging as it does not require injected dye. Across all 123 vessels imaged, measured lumen diameter ranged from 3.2 to 45.8 µm, representing the entire range of vessel sizes in the mouse retina. For the 33 arterioles and venules, lumen diameter ranged 8.6–45.8 µm.
 
@@ -79,7 +107,7 @@ Vessel lumen and vessel walls were clearly visualized using label-free split-det
 
 **Figure 7.:** (A) Average intensity image of an arteriole using label-free split detection modality. (B) Motion contrast image (temporal standard deviation of pixel values) obtained from eye-motion corrected video from A. Bright pixels show regions of blood cell motion, clearly outlining the lumen of these tiny microvessels. (C) Flourescien image of same vessel collected simultaneously. (D–F) Zoomed-in images corresponding to yellow box in A, all at the same scale. Radon transform was used to accurately rotate the vessel with its length (and therefore, flow direction) vertical. The vascular wall is clearly seen in D. The side bands in E likely correspond to uncorrected/residual motion of the vascular wall corresponding to respiration/cardiac motion. (G–I) 1D intensity profiles in the three modalities computed in a 5 µm slice (shown by black rectangle in D. The lumen boundaries are marked with red circles in G–I and red bars in D–F. Details of these objective measurements are given in manuscript’s text. Lumen diameters match across modalities, with errors within 3%. The slightly larger fluorescein diameter is likely attributed to fluorescein representing true lumen width while split-detection motion contrast represents the RBC column width, not including the cell-free zone near vessel walls.
 
-## Flow in the largest vessels radiating from the optic disk
+### Flow in the largest vessels radiating from the optic disk
 
 By combining velocity and vessel diameter data above, flow rate was computed. In primary vessels emerging from the optic disk, within a ~170–300 µm radius from the center of the optic disk, the mean flow rate ranged from 0.22 to 1.55 µL min–1 in arterioles (mean (SD) = 0.52 (0.36) across n = 11 vessels), and 0.24 to 1.30 µL min–1 in venules (mean (SD) = 0.57 (0.42) across n = 7 vessels). In Figure 8B, mean flow rate, in one mouse, is shown overlaid on structural AOSLO images of these vessels around the optic disk. Assuming 3–7 primary arterioles and venules per mouse retina, we estimated the range for total blood flow to the normal mouse retina to lie between 1.56–3.64 µL min–1 (arteriolar system) and 1.71–3.99 µL min–1 (venular system). This matched range indicates conservation of flow of the source and return flow, further corroborating the precision of the measurement.
 
@@ -87,7 +115,7 @@ By combining velocity and vessel diameter data above, flow rate was computed. In
 
 **Figure 8.:** (A) Montage of fluorescein images. (B) Montage of infrared reflectance images at same retinal location. Green star marks center of optic disk. Lumen diameter and mean flow rate are reported for each analyzed vessel. Arrows point towards direction of flow. Red color represents arterioles and blue, venules.
 
-## Change in hemodynamics with progression along vascular tree
+### Change in hemodynamics with progression along vascular tree
 
 Several hemodynamic biomarkers were observed to change with vessel generation. In Figure 9A, a montage of structural AOSLO images is shown, with a first-generation arteriole branching off to lower order arterioles, and a first-generation venule, adjacent to the arteriole branch, flowing back into the optic disk. Measured instantaneous velocity and flow rates as a function of time show distinct characteristics of these vessels (Figure 9C&D). The mean flow rate decreased with increasing vessel order. Despite being twice as wide as A1, V1 has very similar mean velocity compared to A1, and a much lower pulsatility index. This shows vascular signatures that would be missed by studying only mean velocity or flow, and without temporally gating the measurement with the cardiac cycle. In a different comparison, A1 and A2 have very similar lumen diameters, in apparent contradiction to that predicted by Murray’s Law for diameters of parent-daughter vessels. However, a closer inspection shows that flow conservation is not violated: A2 has a lower mean velocity and therefore lower mean flow, necessitated by the two small vessels branching out between A1 and A2. In summary, a functional map across five vessels generations in the same mouse is shown, showing temporal dynamics of microvascular blood flow.
 
@@ -95,11 +123,11 @@ Several hemodynamic biomarkers were observed to change with vessel generation. I
 
 **Figure 9.:** (A) Montage of multiple AOSLO imaging fields showing structure of the mouse retinal vascular tree. The center of the optic disk is marked with a green star. Arterioles in which flow was studied in this mouse are shown with red arrows: A1 (2nd gen), A2 (4th gen.), A3 (5th gen.) and A4 (5th gen.). Blue arrow shows a 1st gen. venule (V1) adjacent to this arteriolar branch. All arrows point toward direction of blood flow. (B) Quantification of conservation of flow at a branch point, in the vessels A2, A3 and A4. Flow is conserved within a < 8.9% error, validating our technique’s measurement accuracy in these independent measures made within minutes of each other. (C) Instantaneous velocity vs time plots for the vessels labelled in A. (D) Instantaneous flow rate vs time profiles, derived by multiplying each profile in B with the lumen diameter of the vessel. In summary, a functional map across five vessels generations in the same mouse is shown, showing temporal dynamics of microvascular blood flow.
 
-## Conservation of flow and measurement precision
+### Conservation of flow and measurement precision
 
 At a branch point (Figure 9A), sum of the measured mean flow rates in the two daughter vessels was found to be 0.098 µL min–1, while the measured mean flow rate in the parent vessel was 0.090 µL min–1(Figure 9B). Like the measures of total blood flow in the retina in venular-arterial system, the <8.9% error in these independent measures indicates the precision of the measurement technique. The error may be due to sequential measurements in these vessels, imaged seconds to minutes apart.
 
-## Velocity and flow rate in complete range of retinal vessel sizes
+### Velocity and flow rate in complete range of retinal vessel sizes
 
 Measured mean flow rate in the complete range of vessel sizes in the retina is shown in Figure 10B (123 vessels: 25 arterioles, 8 venules and 90 capillaries across 19 mice. One second of data analyzed for each vessel). A large range of mean velocities (0.5–23.1 mm s–1) and mean flow rates were measured (0.0002–1.55 µL min–1) across the smallest to largest retinal vessels in the mouse retina, thus giving a functional map of the complete vascular network of an intact organ in its native environment. Importantly, mean velocity was observed to be heterogenous across vessel diameters (Figure 10A for arbitrary linear fits, arterioles: R2 = 0.31, venules: R2 = 0.43, capillaries: R2 = 0.21). This shows that diameter alone cannot precisely predict the velocity and related hemodynamic parameters of a vessel, in the entire retinal vascular tree. The calculation of flow requires including the square of the measured diameter (Equation 9). Murray’s theoretical model for blood vessels predicts a cubic relationship between flow rate and diameter (Murray, 1926; Sherman, 1981). In close agreement, mean flow rate was observed to have a near cubic relation with lumen diameter for medium and large mouse retinal vessels (for power fit, arterioles: exponent = 2.56, R2 = 0.86, venules: exponent = 2.49, R2 = 0.96). Wide heterogeneity was observed in velocity (Figure 10C) and flow rate (Figure 10D) in capillaries, which have single file flow, supplementing our observation of heterogenous flux across capillary lumen diameters (Figure 10E, Figure 1—figure supplement 1) (Guevara-Torres et al., 2016). (For arbitrary linear fit, velocity vs diameter: R2 = 0.21, flow vs diameter: R2 = 0.61). When plotting cell flux against flow rate for capillaries, (Figure 10F, linear fit, R2 = 0.79), the spread in the data represented variations in discharge hematocrit due to plasma skimming. Thus in capillaries, which have single-file-flow, measurement of velocity and flow alone gives an incomplete picture of nutrient delivery; cell flux gives a more accurate representation of the same.
 
@@ -109,7 +137,7 @@ Measured mean flow rate in the complete range of vessel sizes in the retina is s
 
 ## Discussion
 
-## Summary
+### Summary
 
 Seminal work studying blood flow in the human retina using adaptive optics space-time images (Tam et al., 2011b; Zhong et al., 2008) used manual determination of cell velocity, which could take hours to days of analysis time due to the problem of scale (hundreds of thousands of blood cell measurements required per vessel for even a few seconds of collected data). Lengthy analysis times preclude the use of such techniques in a clinical setting. In this study, we report single-cell velocity and flow rate in the smallest to largest vessels in the living mouse retina. This was enabled by AOSLO imaging with ultrafast camera capture to noninvasively image blood cells without foreign contrast agents. Pairing this novel imaging paradigm with an automated analysis workflow enabled high-throughput velocity measurement of hundreds of thousands of blood cells per second. Together, these developments provide a new, automated and label-free way of determining vascular perfusion and flow dynamics in the mammal retina, in conditions of health and disease.
 
@@ -117,11 +145,298 @@ For the first time, a functional map of the complete arteriolar tree and venular
 
 The mouse model, with a completely sequenced genome, has become a widely used tool in medical research in the last two decades. Despite this, there is a paucity of retinal blood flow studies in the mouse, as we detail in Table 1. Our imaging technique allows recovery of mice after anesthesia, allowing them to be returned to their cages, enabling longitudinal in vivo imaging in the same mouse without the need for sacrificing it. Vascular maps obtained during imaging provide the ability to track the same retinal location in the same animal over weeks to months, critical for diagnosing progression and treatment efficacy in mouse models of diseases like diabetes. Moreover, measurements were performed using safe infrared light levels, to which the eye is insensitive, setting the stage for translation to clinical evaluation. Toward this end, we have shown pilot data of the same technique applied to humans with automated velocity measurements performed in retinal vessels of intermediate size (Joseph et al., 2018).
 
-## Velocity measurement algorithm and its key assumptions
+**Table 1.**
+ Previous studies of vessel diameter, mean velocity and mean flow rate in first-generation retinal blood vessels radiating out of optic disk in normal mice.Wide disparity in measured values is observed across studies. Figure 11 graphically summarizes differences across studies. Abbreviations: Nm: number of mice, Nv: number of vessels, D: Mean diameter of vessels, Vm: Mean velocity per vessel, Fm: Mean flow rate per vessel, TRBF: total retinal blood flow per mouse (calculated by summing flow from all primary arterioles/venules around optic disk), A: primary arterioles, V: primary venules, SD: standard deviation, NOD: Non-obese diabetic. Special markers: ^ Assuming 3–7 primary arterioles and venules each per mouse retina. * SD represents variation across mice and not across vessels. An average arteriolar and venular value was calculated first for each mouse. # values represent mean ± standard error of mean. Variation is across mice and not across vessels. a: Values are mean ± SD, where SD represents variation across vessels, and not mice. Value ranges mentioned in brackets. Measurements in the current study were performed on primary retinal arterioles and venules radiating out of optic disk, at locations within a ~170–300 µm radius from the center of the optic disk. a1: Estimated by multiplying the measured Fm per vessel with the number of vessels per retina. Assumed 3–7 primary arterioles and venules per retina. b: Mean velocities are not reported here as it is unclear if the velocities reported in that study represent the mean or the sum of the individual vessel velocities per retina. c: Variation in Fm per vessel represents variation (SD) across six vessels. Variation in total flow represents variation across three independent measurements. d: Numbers correspond to diameter measurements only. For velocity measurements, Nm = 5–13, Nv = 27–71.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Technique</th>
+      <th>Species</th>
+      <th>Class</th>
+      <th>Nm</th>
+      <th>Nv</th>
+      <th>D (µm)</th>
+      <th>Vm (mm s–1)</th>
+      <th>Fm per vessel (µL min–1)</th>
+      <th>TRBF (µL min−1retina−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Current study</td>
+      <td rowspan="2">Adaptive optics line-scan</td>
+      <td rowspan="2">15–73 week old C57BL/6J mice</td>
+      <td>A</td>
+      <td>7</td>
+      <td>11</td>
+      <td>25.9 ± 4.6 a (20.1–37.7)</td>
+      <td>15.0 ± 4.0 a (9.9–23.1)</td>
+      <td>0.52 ± 0.36 a (0.22–1.55)</td>
+      <td>1.56–3.64 a1</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>6</td>
+      <td>7</td>
+      <td>30.6 ± 8.4 a (22.8–45.8)</td>
+      <td>11.4 ± 3.0 a (8.6–17.0)</td>
+      <td>0.57 ± 0.42 a (0.24–1.30)</td>
+      <td>1.71–3.99 a1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Liu et al., 2017</td>
+      <td rowspan="2">Dual ring scanning Doppler vis-OCT</td>
+      <td rowspan="2">13 week old non-diabetic TSP1-/- mice</td>
+      <td>A</td>
+      <td>7</td>
+      <td>21–49 ^</td>
+      <td>40.1 ± 1.8 *</td>
+      <td>- b</td>
+      <td>-</td>
+      <td>1.86 ± 0.24 *</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>7</td>
+      <td>21–49 ^</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Blair et al., 2016</td>
+      <td rowspan="2">Slit lamp biomicroscope</td>
+      <td rowspan="2">24 week old C57BL/6J mice</td>
+      <td>A</td>
+      <td>10</td>
+      <td>30–70 ^</td>
+      <td>26 ± 2 *</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>10</td>
+      <td>30–70 ^</td>
+      <td>29 ± 3 *</td>
+      <td>8 ± 1 *</td>
+      <td>-</td>
+      <td>1.9 ± 0.5 *</td>
+    </tr>
+    <tr>
+      <td>Zhi et al., 2014</td>
+      <td>En face Doppler OCT/OMAG</td>
+      <td>BTBR wild-type mice</td>
+      <td>A/V</td>
+      <td>10</td>
+      <td>30–70 ^</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>3.05 ± 0.20 #</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wright et al., 2012</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">30–31 week old male C57BL/6J mice</td>
+      <td>A</td>
+      <td>9</td>
+      <td>45</td>
+      <td>57.3 ± 1.1 #</td>
+      <td>25.3 ± 1.3 #</td>
+      <td>4.02 ± 0.28 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>9</td>
+      <td>45</td>
+      <td>62.5 ± 2.4 #</td>
+      <td>23.2 ± 1.1 #</td>
+      <td>4.83 ± 0.41 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Zhi et al., 2012</td>
+      <td rowspan="2">En face Doppler OCT/OMAG</td>
+      <td rowspan="2">22 week old female BTBR mice</td>
+      <td>A</td>
+      <td>1</td>
+      <td>6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.47 ± 0.05 c</td>
+      <td>2.82 ± 0.30 c</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>1</td>
+      <td>6</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.55 ± 0.10 c</td>
+      <td>3.27 ± 0.28 c</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Yadav and Harris, 2011</td>
+      <td rowspan="2">Intravital Microscopy</td>
+      <td rowspan="2">16 week old male C57BL/6 mice</td>
+      <td>A</td>
+      <td>12</td>
+      <td>36–84 ^</td>
+      <td>60.0 ± 1.3 #</td>
+      <td>30.2 ± 1.4 #</td>
+      <td>5.29 ± 0.34 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>12</td>
+      <td>36–84 ^</td>
+      <td>67.6 ± 1.6 #</td>
+      <td>28.0 ± 1.2 #</td>
+      <td>6.39 ± 0.31 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wang et al., 2011</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">13 week old male C57BL/6 mice</td>
+      <td>A</td>
+      <td>7</td>
+      <td>21–49 ^</td>
+      <td>56.0 ± 1.1 #</td>
+      <td>29.0 ± 0.8 #</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>7</td>
+      <td>21–49 ^</td>
+      <td>66.4 ± 2.8 #</td>
+      <td>25.1 ± 0.7 #</td>
+      <td>-</td>
+      <td>25.08 ± 1.92 #</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wang et al., 2010</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">13–14 week old male C57BL/6 mice</td>
+      <td>A</td>
+      <td>6</td>
+      <td>30–42</td>
+      <td>54.7 ± 1.0 #</td>
+      <td>20.9 ± 0.7 #</td>
+      <td>2.98 ± 0.14 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>6</td>
+      <td>30–42</td>
+      <td>60.8 ± 2.7 #</td>
+      <td>21.0 ± 0.7 #</td>
+      <td>3.86 ± 0.36 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wright et al., 2009</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">15–16 week old male C57BL/6 mice</td>
+      <td>A</td>
+      <td>7–8</td>
+      <td>28–49</td>
+      <td>59.4 ± 0.9 #</td>
+      <td>28.3 ± 1.4 #</td>
+      <td>-</td>
+      <td>26.34 ± 2.52 #</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>7–8</td>
+      <td>28–49</td>
+      <td>69.5 ± 1.4 #</td>
+      <td>26.3 ± 1.2 #</td>
+      <td>-</td>
+      <td>31.80 ± 2.40 #</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lee and Harris, 2008</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">16–30 week old female euglycemic NOD mice</td>
+      <td>A</td>
+      <td>5</td>
+      <td>9–13</td>
+      <td>61.0 ± 1.5 #</td>
+      <td>-</td>
+      <td>3.36 ± 0.18 #</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wright and Harris, 2008</td>
+      <td rowspan="2">Intravital microscopy</td>
+      <td rowspan="2">16 week old C57BL/6 mice</td>
+      <td>A</td>
+      <td>7–9 d</td>
+      <td>41–50 d</td>
+      <td>60.4 ± 1.1 #</td>
+      <td>23.0 ± 0.5 #</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>7–9 d</td>
+      <td>37–49 d</td>
+      <td>71.4 ± 2.9 #</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ninomiya and Inomata, 2006</td>
+      <td rowspan="2">Scanning electron microscopy (ex vivo)</td>
+      <td rowspan="2">16 week old male mice</td>
+      <td>A</td>
+      <td>10</td>
+      <td>80</td>
+      <td>&lt;28</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Velocity measurement algorithm and its key assumptions
 
 The custom Radon transform algorithm enabled precise, automated and objective measurements of absolute blood cell velocity from space-time images, including subtle spatio-temporal modulations in velocity which may be missed by subjective evaluation with the unaided human eye. To augment such modulations, that reveal vascular physiology, the algorithm displayed a colored overlay of measured cell slopes, enabling visual comparison to actual slope orientations, and providing visual feedback on measured velocities using a color scale. The small size and dense sampling of the analysis ROIs ensured single-cell measurement of blood velocity, and its subtle modulations due to cardiac pressure wave and cross-sectional flow profile. The non-linear mapping of search angles and velocity ensured that only physiologically relevant angles were searched by the algorithm, reducing computation time while not sacrificing on measurement precision. Thus, while slow moving blood cells were coarsely sampled, fast moving blood cells were sampled finely enough to not miss subtle fluctuations in velocity. Each analysis ROI contains some axial contributions from slower moving blood cells above and below the interrogation beam, as previous studies in humans using similar adaptive optics scanning techniques have rightly identified (Zhong et al., 2008). This was mitigated in our study due to two reasons: First, the ~2x NA of the mouse eye gives a ~4x improvement in axial resolution compared to the human eye (Geng, 2011). Second, and more importantly, in a given ROI, the velocity reported by our Radon transform analysis is dominated by features with the highest contrast, i.e. the cells at the focal plane. The focal plane bisected the vessel at its widest point.
 
-## Utility of measuring particulate flow
+### Utility of measuring particulate flow
 
 Why measure blood flow at a single-cell level? Measuring flow in vessels whose size is of the order of the size of a red blood cell necessitates measuring cellular scale or particulate flow. The average undeformed size of an RBC is around 6.7 µm in mice (Gulliver, 1875) and around 8.0 µm in humans (Benga et al., 2000; Jay, 1975), and retinal vessel lumen sizes vary from ~3–46 µm in mice (this study) and ~4–200 µm in humans. In vessels this small, the flow dynamics deviate from simple Newtonian or Poiseuille flow. Our direct cell-by-cell measurement of particulate blood flow opens new possibilities to study flow dynamics in the full range of retinal vessels sizes, enabling detailed study of laminar flow in the larger vessels and the complex nature of non-Newtonian and single blood cell rheology at the level of small capillaries. At the capillary level, this direct measurement is critical as simple diameter-resistance models poorly represent the particulate nature of single-cell blood flow. At this level, the vessels lumen is often the size, if not smaller than the undeformed red blood cell (Skalak and Branemark, 1969).
 
@@ -131,15 +446,15 @@ To put the above in the context of our measurements because our measurements are
 
 We measured particulate flow in the retinal vascular tree in two modalities. In vessels with >7 µm diameter, we measured velocity and flow with oblique scanning. In vessels with single file flow (capillaries with <7 µm diameter), we measured flux, velocity and flow, with orthogonal scanning (Figure 1—figure supplement 1). Compared to flow rate (µL min–1), flux (cells s–1) gives a more complete description of nutrient delivery at the level of capillaries, which have heterogenous local hematocrit.
 
-## Cross-sectional blood-cell velocity profile measured for first time in mouse retina
+### Cross-sectional blood-cell velocity profile measured for first time in mouse retina
 
 By measuring particulate flow, we quantified hemodynamic metrics never before measured in the mouse. Mouse retinal vessels are small- the inner diameter of even the largest of them is only about a quarter of that of the largest human retinal vessels. To our knowledge, blood-cell velocity profiles have never been measured in the mouse retina, in any vessel size, because of limitations of imaging resolution. For the same reason, it has always been difficult to quantitatively measure such a profile in small retinal microvessels, in any species. Investigators have used adaptive optics to report velocity profile as a function of cardiac phase in vessels as small as a 72 µm artery in the human retina (Zhong et al., 2011). We report the first measurement of velocity profile as a function of cardiac phase in a mammalian retinal vessel as small as 25 µm. This is important since such functional changes become harder to detect as the ratio of vessel lumen to RBC diameter decreases. Furthermore, while the definition of a profile becomes less clear as the vessel diameter approaches that of blood cells, we measured decreased velocity at the edge compared to the vessel center in a vessel as small as 10.2 µm. Measured profiles, even in the largest mouse retinal vessels, were blunted and not parabolic, consistent with a thin cell-depleted layer and the Fåhræus and Fåhræus-Lindqvist effects in the microcirculation.
 
-## Pulsatile blood-cell flow measured for first time in mouse retinal arterioles and venules
+### Pulsatile blood-cell flow measured for first time in mouse retinal arterioles and venules
 
 Beyond spatial dynamics (velocity profile), we measured temporal dynamics in small vessels of the retinal microcirculation. Pulsatility indices in the microcirculation can be biomarkers of diseases like atherosclerosis, hypertension and diabetes. Multiple investigators have measured pulsatile flow in the human retinal microcirculation using adaptive optics, including pulsatile leukocyte velocity in human capillaries (Martin and Roorda, 2009; Tam et al., 2011a; Tam et al., 2011b), pulsatile erythrocyte velocity in human capillaries (de Castro et al., 2016; Gu et al., 2018), and pulsatile erythrocyte velocity in medium-sized human arterioles/venules (Zhong et al., 2012; Zhong et al., 2008; Zhong et al., 2011). Our previous report of pulsatile erythrocyte flux in a 3.6 µm mouse capillary (Guevara-Torres et al., 2016) was the first measurement of pulsatile cell flow in a mouse retinal vessel. In the current study, we report pulsatile cell velocity in medium and large mouse retinal vessels for the first time, with much reduced pulsatility index measured in venules, thus connecting the dots and demonstrating direct measurement of pulsatile flow in the complete retinal vascular tree. The lack of observed pulsatile flow in venules (Feke et al., 1989; Riva et al., 1985) and capillaries could be explained by limitations of previous approaches that lacked sensitivity to subtle velocity fluctuations in small vessels. Measurement of pulsatility biomarkers using our approach enables early detection of functional changes in these tiny vessels in microvascular diseases.
 
-## Beyond total retinal blood flow - studying complete range of vessel sizes
+### Beyond total retinal blood flow - studying complete range of vessel sizes
 
 In the mouse, the total retinal blood flow (that is, the total supply to the inner retina, obtained by summing the mean flows from all primary arterioles or venules) has been a popular biomarker for evaluating the healthy and diseased retina (Table 1). While the total blood supply to the retina is one biomarker of vascular health, changes happening in lower vascular branches in disease may be missed. This particularly becomes a problem when early pathological changes in smaller vessels do not result in changes in bulk flow rate in larger parent vessels, due to either vessel anastomosis or individual changes cancelling out.
 
@@ -147,15 +462,15 @@ In an interconnected vascular network, a disruption in flow at any point can aff
 
 Our approach addresses some of these challenges by using the same imaging instrument to get measures of absolute single–cell blood flow in the smallest to largest retinal vessels in the living retina. This was made possible by using a high bandwidth measurement technique (measurable particle velocities: 0.03 to 1275 mm s–1). Imaging techniques with a temporal resolution of even a few hundred frames per second (Gu et al., 2018) are insufficient to track velocity in medium and large retinal vessels. We provide the first normative database of mean velocity and flow rate in vessels other than first generation vessels in the mouse. Investigation of both mean flow rate and spatio-temporal dynamics in multiple vessels generations (Figure 9 and 10) sets the stage for longitudinal study of the progression of ‘slow’ diseases like diabetes across the complete retinal vascular tree.
 
-## Discrepancy in mouse literature in velocity and diameter measurements in first-generation vessels
+### Discrepancy in mouse literature in velocity and diameter measurements in first-generation vessels
 
 The flow through a vessel varies as the square of the inner lumen diameter (Equation 9), underlining the need for careful measurement of the vessel lumen diameter to get accurate values of flow rate. While investigating the mouse literature for normative values of diameter, velocity and flow in retinal vessels, we found, first, that there is a paucity of such studies. To the best of our knowledge, we have counted all of 15 journal papers which measure retinal blood velocity and/or flow in the living mouse eye (Blair et al., 2016; Harris et al., 2013; Lee and Harris, 2008; Liu et al., 2017; Muir et al., 2012; Wang et al., 2010; Wang et al., 2011; Watts et al., 2013; Wright and Harris, 2008; Wright et al., 2009; Wright et al., 2012; Yadav and Harris, 2011; Zawadzki et al., 2015; Zhi et al., 2014; Zhi et al., 2012). As stated earlier, all these studies measure velocity/flow only in the primary (first generation) vessels emerging from the optic disk. Studies with objectively reportable values are summarized in Table 1 (except for Watts et al., 2013). A graphical summary, classified by imaging technique, is given in Figure 11. In our literature survey, some important points were observed. There is disagreement across previous studies in the values of measured dimeter, velocity and flow of first-generation vessels in the mouse retina. In particular, about half of the studies, which use intravital microscopy, report vessels diameters that are ~2 times greater, mean velocities that are ~2 times greater and mean flow rates that are ~8 times greater than that of all other techniques, including our own (Figure 11). Our values of mean diameter of primary vessels matches that of the in vivo slit lamp biomicroscope study (Blair et al., 2016) and is within the range reported by ex vivo scanning electron microscopy (Ninomiya and Inomata, 2006). Our values of mean flow rate matches that reported by en face Doppler OCT/OMAG studies (Zhi et al., 2014; Zhi et al., 2012). Comparing cited values for the total blood flow rate to the retina shows the island of values formed by all studies in the range of 1.56–3.99 µL min–1, in contrast to the range of 25.08–31.80 µL min–1 reported by intravital microscopy (Figure 11). Early signs of these inconsistencies in the mouse literature was first reported in 2014 by Bernabeu et al. (2014) (in a table in their publication). We do not know exactly why such inconsistency exists. While the mouse strain, age and gender differences across studies could contribute to variability, it is unlikely to be the only cause of the large differences in measured values. Using incorrect image magnification on the mouse retina is one possible source of the disparity in measured diameters. Secondly, for mean velocities in primary vessels, intravital microscopy studies used fluorescent microspheres or labelled RBCs, with 10–30 measurements from sparse fluorescent streaks pooled to average out effects of pulsatile and cross-sectional profile variability. The sparse and too few measurements have the potential to under or overestimate the true mean velocity, by either being biased toward particular cardiac phases, or if the incompressible microspheres travel in preferred radial locations in the vessel lumen. Additionally, imaging techniques with insufficient axial resolution can misrepresent diameter, velocity, and flow due to contamination of signal from deeper vessels of the stratified retinal vascular layers. In our study, with ~1 µm in vivo lateral resolution and ~10 µm axial resolution, sub-micron correction of eye motion blur, and sampling of all cardiac phases with extremely fast (15 kHz) scanning, we were able to report true mean velocities in these microvessels. Our reported mean velocities in primary vessels were averaged from ~39,000 to 274,000 imaged cells per second.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/45077/elife-45077-fig11-v1.jpg)
 
-**Figure 11.:** Table 1.Previous studies of retinal blood vessel diameter, mean velocity and mean flow in first-generation (or ‘primary’) vessels radiating out of optic disk in normal mice. Wide disparity is observed across studies. (Note: Values for Intravital Microscopy are averaged from Wright et al., 2012; Yadav and Harris, 2011; Wang et al., 2011; Wang et al., 2010; Wright et al., 2009; Lee and Harris, 2008) and Wright and Harris, 2008).
+**Figure 11.:** Previous studies of retinal blood vessel diameter, mean velocity and mean flow in first-generation (or ‘primary’) vessels radiating out of optic disk in normal mice. Wide disparity is observed across studies. (Note: Values for Intravital Microscopy are averaged from Wright et al., 2012; Yadav and Harris, 2011; Wang et al., 2011; Wang et al., 2010; Wright et al., 2009; Lee and Harris, 2008) and Wright and Harris, 2008).
 
-## Error quantification, limitations and remaining challenges of our study
+### Error quantification, limitations and remaining challenges of our study
 
 Our technique measures the component of blood velocity parallel to the en face imaging plane. Near the optic nerve head, vessels which are not parallel to the imaging plane can cause errors in flow measurement. This concern is mitigated by restricting our imaging to retinal locations > 170 µm (>5° field of view) from the center of the optic disk. First to nth generation vessels are largely in plane at these locations. For any remaining non-parallelism at these retinal eccentricities, we provide the following error quantification. For a diving vessel which forms angle γ with the focal plane, there will be an underestimation of velocity, by a factor of |1 – cos(γ)|. This error is small for small values of angle γ. For example, for γ = 5°, measured velocity will be underestimated by 0.38% of the actual value. For reference, the error is <1% for angles (γ) up to 8.1°. Because the architecture of retinal vessels is predominantly planar (Paques et al., 2003), we believe that our technique is well suited to study the complete retinal network, with a potentially lower measurement error.
 
@@ -163,7 +478,7 @@ A limitation of our study is the requirement to sequentially track flow in each 
 
 Finally, we have demonstrated that eye motion minimally impacts our blood velocity measurements in the anesthetized mouse. However, rapid and saccadic eye motion in both the awake behaving mouse and the human being will pose a challenge to our line-scan technique. Such a challenge can be mitigated by restricting the analysis window to epics of relatively low eye motion (gating out saccades/blinks). Only a few seconds of such line-scan data is needed from each vessel to get a reliable measurement of an array of hemodynamic biomarkers. Even 2–4 s of contiguous data will cover multiple cardiac cycles in the human, and our automated algorithm will be able to report velocities from hundreds of thousands of cells.
 
-## Conclusions and future directions
+### Conclusions and future directions
 
 This study has shown that we can noninvasively study an array of functional biomarkers in mouse retinal blood vessels of size 3–46 µm, without using exogenous fluorophores. These microscopic vessels impart a large fraction of the total resistance to blood flow in the body. Therefore, they are often implicated in many a vascular disease, but their small size, tissue scattering properties and aberrations have made them difficult to study in vivo.
 
@@ -173,92 +488,171 @@ The eye may also serve as a window to systemic microvascular health. Vascular di
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J mice</td>
+      <td>The Jackson Laboratory, Bar Harbor, Maine, USA. https://www.jax.org/strain/000664</td>
+      <td>RRID:IMSR_JAX:000664, JAX stock #000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>AK-FLUOR 10% (100 mg mL–1)</td>
+      <td>Akorn, Lake Forest, Illinois, USA</td>
+      <td>NDC: 17478-253-10</td>
+      <td>IP injection of 0.1 mL of 2.5% weight/volume</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Nineteen normal C57BL/6J mice (The Jackson Laboratory stock 000664, Bar Harbor, Maine, USA) with ages ranging from 13 to 73 weeks old were used in this study (11 males, 4 females and four undocumented, weight = 31.7 ± 8.1 g (mean ± SD)). In this study of normal mice, a broad age and sex range were intentionally chosen, to cover the extent of the viable blood flow. Mice were housed in standard cages in a vivarium with 12–hour light/dark cycles. Mice were fed standard chow and water ad libitum. All guidelines of University Committee on Animal Resources at the University of Rochester, Rochester, New York, USA, were followed. Mice were treated according to the Association for Research in Vision and Ophthalmology Statement for the Use of Animals in Ophthalmic and Vision Research.
 
-## Animal preparation for imaging
+### Animal preparation for imaging
 
 Mice were anesthetized in two stages, first with an intraperitoneal injection (IP) of ketamine/xylazine (100 mg kg–1 ketamine, 10 mg kg–1 xylazine), and second with a gas mixture of 0.8–1% (v/v) isoflurane. Supplemental oxygen was delivered through a nose cone to maintain anesthesia throughout the imaging session, which typically spanned ~2 hr. Body temperature was maintained at 37°C using a supplemental heat pad. The pupils were dilated with a drop of 2.5% phenylephrine (Akorn, Lake Forest, Illinois, USA) and 1% tropicamide (Sandoz, Basel, Switzerland). A custom rigid contact lens with +10 D correction and a base curve of 1.6 mm (Advanced Vision Technologies, Lakewood, Colorado, USA) was used in combination with ophthalmic lubricant (GenTeal, Alcon Laboratories, Inc, Fort Worth, Texas, USA) to maintain corneal hydration during in vivo imaging. Mice were stabilized on a stereotaxic stage with a bite bar (Bioptigen, Research Triangle Park, North Carolina, USA). In vivo imaging could be performed for extended periods of time (typically ~2 hr, with a maximum of ~3 hr). Animals were allowed to recover from anesthesia after imaging and subsequently returned to their cages for use in future experiments. The imaging instrument was in free space, meaning it had no physical contact with the mouse eye or the contact lens. This was critical to maintain normal pressure dynamics of the eye. The three translational degrees of freedom of the stereotaxic stage were used to align the mouse pupil with the exit pupil of the imaging system. Two rotational degrees of freedom were used to navigate to different retinal locations. A third rotational degree of freedom allowed rotating the mouse head along the optical axis, thus enabling rotating the view of the retina at a given retinal location. In a subset of experiments, blood plasma was labelled with an IP injection of 0.1 mL of 2.5% weight/volume of sodium fluorescein (AK-FLUOR 10% (100 mg mL–1), Akorn, Lake Forest, Illinois, USA) to confirm lumen diameter of microvessels made with label–free phase-contrast approaches described below.
 
-## AOSLO imaging system
+### AOSLO imaging system
 
 The Rochester mouse AOSLO (adaptive optics scanning light ophthalmoscope) has been described in detail in earlier publications (Geng et al., 2012; Guevara-Torres et al., 2016). Briefly, the custom-built retinal imaging system has three light sources. A 904 nm laser diode (QFLD-905–10S, QPhotonics, Ann Arbor, Michigan, USA) was used as the wavefront sensing beacon. A 796∆17 nm super luminescent diode (S790-G-I-15, Superlum, Ireland) was used for near infrared reflectance imaging. A 488 nm laser diode (iChrome MLE, Toptica Photonics, Farmington, New York, USA) was used as the excitation source for sodium fluorescein (collected emission: 520∆35 nm; FF01-520/35-25, Semrock, Rochester, New York, USA). The light sources were combined into a common light path using appropriate dichroic mirrors and relayed to the eye using reflective optics through a series of five 4-f afocal telescopes. An AOSLO images in en face view. At two of the pupil planes in this relay system, a slow 25 Hz galvometric scanner (VM2500+, General Scanning, GSI Group Corp., Massachusetts, USA) and a fast 15 kHz resonant scanner (SC30: 15K, Electro--Optical Products Corp., Glendale, New York, USA) scanned the illumination point spread function (PSF) in orthogonal directions, forming an en face rectangular imaging raster on the retinal image plane. The field of view in the two orthogonal directions could be independently changed to vary between 0.5 and 6.2 degrees, and all images were digitized into 640 × 480 pixels with 8–bit grayscale depth. A third pupil plane consisted of a large-stroke high-speed deformable mirror (DM97-15, ALPAO, Montbonnot-Saint-Martin, France) which corrected for low and high order monochromatic aberrations of the eye in real time, measured by a Hartmann-Shack wavefront sensor. The deformable mirror also provided programmable defocus control which enabled focusing the imaging beam on a vascular layer of interest in the retina without using additional optics. The light reflected from the retina followed a similar path as the light into it, and in the detection arm was spectrally split into a near infrared and visible channel to be finally imaged onto photomultiplier tubes (PMTs) (H7422–40 and H7422–50, Hamamatsu, Shizuoka-Ken, Japan) through confocal pinholes (size given below).
 
-## In vivo lateral and axial resolution
+### In vivo lateral and axial resolution
 
 The confocality of our imaging system provided tight axial sectioning of the retina by rejecting out of focus light, enabling tight focusing on only the retinal vascular layer of interest (superficial, intermediate or deep) (Schallek et al., 2013a). The large numerical aperture (NA) of the mouse eye further improved axial sectioning (mouse: NA = 0.49 for 2 mm dilated pupil, human: NA = 0.24 for 8 mm dilated pupil) (Geng, 2011). The imaging resolution of this system has been characterized by a previous publication from our lab (Geng et al., 2012). Adapting their measured results by linearly scaling for our imaging wavelengths, the measured in vivo lateral resolution of our system is 1.2 µm (for 796 nm reflectance imaging) and 0.77 µm (for 520 nm fluorescence emission), giving near diffraction limited imaging in vivo. The measured axial resolution is 16.1 µm (for 796 nm reflectance imaging) and 10.5 µm (for 520 nm fluorescence emission). A pinhole of size 2.1 and 4.9 Airy disk diameters in the infrared and visible channels optimized the trade-off between light collected and axial sectioning achieved. The optical point spread function (PSF) size is smaller than the 6.7 µm average size of an undeformed mouse RBC (Gulliver, 1875). Combined, these imaging capabilities enabled single blood cell resolution as they flowed in both tight and sparsely packed formations inside microvessels (Guevara-Torres et al., 2016). All flowing cells were imaged noninvasively with near infrared backscatter, without the need for foreign dye injections. Furthermore, this detailed resolution enabled sub-micrometer precision when measuring the lumen diameters of retinal vessels.
 
-## Types of blood vessels studied
+### Types of blood vessels studied
 
 In total, 123 vessels in 19 mice were studied. Of these, 18 were primary vessels emerging from optic disk (1st generation vessels), 15 were vessels spanning generations of 2nd to 5th branch order in the retina and 90 were single file flow capillaries. A lumen diameter less than 7 µm was used to categorize a vessel as a capillary, as vessels with lumen diameter below the 6.7 µm undeformed size of a mouse RBC (Gulliver, 1875) are expected to have single-file flow and facilitate cell deformation that is characteristic of capillary exchange vessels. Using this criterion, lumen diameters of capillaries ranged from 3.2 to 6.5 µm. Of the vessels > 7 µm, 25 were arterioles and eight were venules. Arterioles and venules were identified by inspecting their space-time images to determine direction of flow to or away from the optic disk, as described in detail later. Their lumen diameters ranged from 8.6 to 45.8 µm. Taken together, the range of vessel diameters spanned 3.2–45.8 µm, comprising the smallest to largest vessels in the mouse retinal circulation. Capillaries studied belonged to one of three retinal vascular layers. Arterioles and venules studied were predominantly restricted to the superficial vascular layer. In arterioles and venules, lumen diameter, pulsatile velocity and flow were measured using oblique angle scanning (described below). In capillaries, average cell velocity and average flow rate was measured using orthogonal scanning (Figure 1—figure supplement 1, and described later), supplementing the lumen diameter and cell flux reported in single-file-flow capillaries in our previous publication (Guevara-Torres et al., 2016).
 
 For the mouse, we define ‘large’ vessels as first generation vessels near the optic disk, that is vessels that have not yet branched in the retinal plane (diameters: 45.8 to 20.1 µm). We define ‘medium-sized’ vessels as vessels from second generation and higher, which do not contain single-file-flow (diameters: 20.1 to 7 µm). Small vessels are defined as vessels which have single-file-flow, that is capillaries (diameters: 7 to 3 µm) (Guevara-Torres et al., 2016). The average undeformed size of a mouse RBC (6.7 µm) is used as a bio-inspired threshold to identify single-file-flow vessels from others. Conceptually, the above definitions also hold true for the human retina, though the largest human retinal vessels are about four times larger than the largest mouse retinal vessels, to accommodate perfusion for a much greater retinal area. By these definitions, seminal laser Doppler and Doppler OCT studies have measured mean velocity down to ‘medium-sized’ vessels in the human retina (Riva et al., 1985; Wang et al., 2007).
 
-## 2D raster imaging for vessel geometry
+### 2D raster imaging for vessel geometry
 
 AOSLO retinal imaging was performed using near infrared illumination (796∆17 nm, 200–500 µW at cornea) and detection of backscattered/reflected light. The two-dimensional (2D) en face imaging spanned 0.5–5.9° field of view, depending on vessel size. The plane of focus was adjusted to axially bisect the widest portion of the vessel, thus ensuring maximum luminal width was investigated based on cylindrical shape of perfused vessels. Most retinal vessels are perpendicular to the imaging optical axis, making them suitable to study using our en face imaging system. The largest retinal vessels, however, dive into the optic disk. Therefore, when imaging primary arterioles and venules emerging from the optic disk, imaging location was between ~170 and 300 µm from the center of the optic disk. A 4 to 20 s video (25 Hz, Video 1) was recorded. The average 2D image from the same video was used for analysis of vessel geometry w.r.t. fast scan (angle ϕ in Figure 1B and Equation 1), and to create a map of the vascular tree. Correction of eye motion and creation of averaged 2D images are described in subsequent sections.
 
-## Fast 1D line-scan imaging with oblique scanning
+### Fast 1D line-scan imaging with oblique scanning
 
 To enable high bandwidth velocity measurement, the scan pattern was changed to increase the temporal resolution (Kleinfeld et al., 1998; Zhong et al., 2008). Briefly, the slow galvometric scanner was stopped at a position such that only the fast one-dimensional (1D) scan imaged the vessel at 15 kHz (Figure 1). This 1D scan was placed oblique to the vessel of interest, to determine single-cell velocity in the smallest to largest arterioles and venules in the mouse retina. The mouse head was rotated such that the 1D line passed beyond edge to edge of the obliquely oriented vessel, and such that the angle of intersection between 1D scan and vessel axis was between 6 and 43° (angle ϕ in Figure 1B and Equation 1). This angle was positioned manually by the experimental operator and was quantitatively confirmed in post processing using a custom angle determination algorithm based on the Radon transform (strategy discussed in detail below). The plane of focus was kept at the same focus as the 2D scan. The 1D field of view was positioned to traverse the entire luminal diameter whereby least two-thirds of the imaging field covered the vessel (Figure 1B). The 1D line ranged from 1.2 to 6.2 ° of visual angle (corresponding to 40.8–210.8 µm on the retina). To determine conversion of pixels to physical retinal coordinates, we used a Ronchi ruling with known grating period and a conversion of 34 µm per degree field of view in the mouse retina (Schmucker and Schaeffel, 2004).
 
-## De-warping, correction of eye motion and background removal in retinal images
+### De-warping, correction of eye motion and background removal in retinal images
 
 Both 1D and 2D data were non-linearly distorted in the fast scan direction due to the sinusoidal nature of the 15 kHz resonant scanner. Video frames were de-warped (or de-sinusoided) in real time using previously published technique (Yang et al., 2015). 2D retinal motion was corrected in post-processing using image cross-correlation. Such an approach has been described previously (Dubra and Harvey, 2010). The registered video stack was averaged, giving a high signal-to-noise 2D raster image (Figure 1B). Only motion in the direction of the fast scanner could be corrected in 1D images as there was no structural information in the orthogonal dimension. In each line-scan sequence lasting 1–10 s, the space-time image was parsed into single time strips ~ 40 ms each. Eye motion in the anesthetized mouse has been previously confirmed to be small in this time regime, relative to blood cell motion (Guevara-Torres et al., 2016). A reference strip was manually selected based on vessel centration and lack of motion. For continuous eye motion detection, normalized cross correlation was performed between a reference strip and overalpping target strips, each 40 ms wide, separated by one pixel each (66 µs). The positional shift of each continuous 40 ms time epoch provided a registration signal in the fast scan axis (Figure 2). Static features such as the vascular wall are manifest as ‘horizontal’ lines in space-time images which represent zero velocity. To remove this signal which could confound blood cell analysis, an intensity moving average of the space-time image was computed in the time dimension with a large time window of ~10 ms. This strategy is a high-pass temporal filter, where velocities slower than 0.03 mm s –1 are removed via running background subtraction.
 
-## Velocity measurement from 1D line-scan data (oblique scanning)
+### Velocity measurement from 1D line-scan data (oblique scanning)
 
-1D scanning data was recorded for 1–10 s per vessel to capture multiple cardiac cycles. Repeat 1D scans were stacked sequentially to produce a space-time image (Figure 1D). RBCs appeared as bright diagonal streaks in such an image as they show their progressive position across the oblique imaging line. The slope of a streak therefore represents an objective measurement of the absolute velocity of each cell according to the equation:(1)velocitycell = ΔxΔt∗sec⁡ϕ= k∗cot⁡θ∗sec⁡ϕwhere, velocitycell is the local single-cell velocity (mm s–1) along the direction of vessel flow, ∆x (mm) and ∆t (s) are the respective spatial and temporal displacements of blood cells, whose ratio is given by the slope of the cell streak, ϕ is the angle of intersection between flow direction and 1D scan, k is equal to the fast scanner frequency (Hz) multiplied by the number of millimeters of retinal tissue per pixel, and θ is angle of the cell streak with respect to the space axis in the space-time image. The automated determination of the slope of cell streaks (cot θ) is further described in the following section. In our orientation convention; the more ‘vertical’ the streak, the faster the cell velocity. The quadrant of θ (0–90° or 90–180°) gave the direction of flow to or away from the optic disk, enabling categorization of each vessel as arteriole or venule. A 1D scan rate of 15 kHz was used to have a high velocity measurement bandwidth, covering all biologically possible velocities in the largest to smallest vessels in the mammalian retina. The velocity measurement bandwidth was calculated using the relationship:(2)velocitymax,   measurable=12*δxδt*sec ϕwhere δx = sampling density in space, δt = sampling density in time (or pixel dwell time) and ϕ is the angle of intersection between flow direction and 1D scan (Drew et al., 2010). For a typical case with a ~ 5° field of view: δx ≈ 0.28 µm pixel–1, δt ≈ 0.11 µs pixel–1. The velocity bandwidth was therefore 0.03–1275 mm s–1.
+1D scanning data was recorded for 1–10 s per vessel to capture multiple cardiac cycles. Repeat 1D scans were stacked sequentially to produce a space-time image (Figure 1D). RBCs appeared as bright diagonal streaks in such an image as they show their progressive position across the oblique imaging line. The slope of a streak therefore represents an objective measurement of the absolute velocity of each cell according to the equation:
 
-## Focal analysis windows (ROIs)
+$$
+velocity_{cell} = \frac{Δx}{Δt}∗sec⁡ϕ= k∗cot⁡\theta∗sec⁡ϕ
+$$
+
+where, velocitycell is the local single-cell velocity (mm s–1) along the direction of vessel flow, ∆x (mm) and ∆t (s) are the respective spatial and temporal displacements of blood cells, whose ratio is given by the slope of the cell streak, ϕ is the angle of intersection between flow direction and 1D scan, k is equal to the fast scanner frequency (Hz) multiplied by the number of millimeters of retinal tissue per pixel, and θ is angle of the cell streak with respect to the space axis in the space-time image. The automated determination of the slope of cell streaks (cot θ) is further described in the following section. In our orientation convention; the more ‘vertical’ the streak, the faster the cell velocity. The quadrant of θ (0–90° or 90–180°) gave the direction of flow to or away from the optic disk, enabling categorization of each vessel as arteriole or venule. A 1D scan rate of 15 kHz was used to have a high velocity measurement bandwidth, covering all biologically possible velocities in the largest to smallest vessels in the mammalian retina. The velocity measurement bandwidth was calculated using the relationship:
+
+$$
+velocity_{max,measurable}=\frac{1}{2}*\frac{\deltax}{\deltat}*secϕ
+$$
+
+where δx = sampling density in space, δt = sampling density in time (or pixel dwell time) and ϕ is the angle of intersection between flow direction and 1D scan (Drew et al., 2010). For a typical case with a ~ 5° field of view: δx ≈ 0.28 µm pixel–1, δt ≈ 0.11 µs pixel–1. The velocity bandwidth was therefore 0.03–1275 mm s–1.
+
+### Focal analysis windows (ROIs)
 
 To automatically quantify single-cell velocity, the 1–10 s long space-time image of each vessel was divided into small overlapping regions of interest (ROIs). A single velocity was assigned to each ROI. Figure 3A shows a space-time image with a sample ROI size (orange box). For the 33 vessels analyzed with oblique scanning (lumen diameters: 8.6–45.8 µm), the field of view of their space-time images ranged from 1.2 to 6.2° in the space dimension (i.e. 40.8–210.8 µm). The ROI size in these images ranged from 9 to 15 µm in the space dimension. The ROIs were square in pixel space (25–141 pixels) to facilitate a rotationally symmetric Radon sinugram. ROI size was selected to encompass the ‘longest’ RBC streak seen in space-time images (undeformed size of a mouse RBC of 6.7 µm [Gulliver, 1875]). ROIs were advanced with 75% overlap to capture a continuous measurement of local velocity (Figure 3A, green boxes). The ROIs were centered every 2–4 µm across the space dimension corresponding to a measurement every 0.25–1.6 µm perpendicular to the vessel lumen when factoring the oblique angle of beam intersection (secϕ factor in Equation 1). In the time dimension, ROI size ranged from 1.6 to 9.4 ms, with a measurement provided every 0.4–2.3 ms.
 
-## Automated measurement of blood cell velocity using Radon transform
+### Automated measurement of blood cell velocity using Radon transform
 
 To quantify cellular-level velocity, the slope of cell streaks in each ROI was determined automatically using a custom algorithm using the Radon transform (MATLAB R2017a, Version 9.2, (with Image Processing Toolbox), MathWorks, Massachusetts, USA; source code provided: Joseph (2019) https://github.com/abyjoseph1991/single_cell_blood_flow c3b5f94 (copy archived at https://github.com/elifesciences-publications/single_cell_blood_flow). The Radon transform rotates the input image ROI through a given set of angles and computes the 1D intensity projection of the image for each rotation (Deans, 2007; Drew et al., 2010; Bedggood and Metha, 2014; Deneux et al., 2011; Deneux et al., 2012; Chhatbar and Kara, 2013). The set of 1D projections is compiled as a 2D sinugram image, where each column in the image is a 1D projection at a given angle (Figure 3B&C). Each square ROI was cropped circularly before computing its Radon transform, to give equal weight to each possible cell orientation angle. To solve the angle that describes cell slope (∆x/∆t), the standard deviation of pixel values in each 1D intensity projection was computed. The projection angle showing maximum intensity standard deviation corresponded the dominant orientation describing cell velocity in Equation 1 (Figure 3D).
 
 The rotational increment for the Radon transform was chosen to sample a biological range of blood cell velocities with high precision. A linear velocity search space of 0 to 100 mm s–1, with a velocity resolution of 0.1 mm s–1 was used by mapping a trigonometrically scaled angle search space for the Radon transform, using Equation 1.
 
-## Determination of strength of velocity signal in each analysis window
+### Determination of strength of velocity signal in each analysis window
 
-For each ROI (analysis window), a signal-to-noise ratio (SNR) was determined to avoid reporting velocities in noise–filled analysis windows. The SNR value was defined as the ratio of the maximum column standard deviation divided by the mean column standard deviation of the sinogram image (Figure 3D, Equation 3).(3)SNR= SD θmax∑θ=0°180°SD θwhere, SNR is the signal to noise metric of each ROI, SDθ is the standard deviation of the Radon transform at a given search angle θ and SDθmax is the maximum standard deviation observed across all search angles. We empirically chose a strict threshold of 2.5 to determine whether a streak angle measurement was reliable, based on visual inspection of training data sets. This value is similar to those reported in other studies which use a similar strategy (Drew et al., 2009). Analysis windows that contained SNR <2.5 were ruled as containing insufficient signal and were not included in subsequent analysis.
+For each ROI (analysis window), a signal-to-noise ratio (SNR) was determined to avoid reporting velocities in noise–filled analysis windows. The SNR value was defined as the ratio of the maximum column standard deviation divided by the mean column standard deviation of the sinogram image (Figure 3D, Equation 3).
 
-## Augmented logic gates to prevent spurious measurements
+$$
+SNR=\frac{SD_{\theta_{max}}}{\sum\theta=0°180°SD_{\theta}}
+$$
+
+where, SNR is the signal to noise metric of each ROI, SDθ is the standard deviation of the Radon transform at a given search angle θ and SDθmax is the maximum standard deviation observed across all search angles. We empirically chose a strict threshold of 2.5 to determine whether a streak angle measurement was reliable, based on visual inspection of training data sets. This value is similar to those reported in other studies which use a similar strategy (Drew et al., 2009). Analysis windows that contained SNR <2.5 were ruled as containing insufficient signal and were not included in subsequent analysis.
+
+### Augmented logic gates to prevent spurious measurements
 
 While the SNR alone provides strong rejection of noise-related data, we applied secondary logic gates to further remove false-positives in the space and time dimensions. In the time dimension, a local window spanning twice the length of an ROI in time was measured for mean and variance of each cell velocity reported in that window (n = 9 samples). Velocities which deviated beyond one standard deviation of the mean velocity were ignored. This logic gate is valid as such intervals in time are too small to include significant fluctuations in time that are physiologically relevant (3.2–18.7 ms, or less than 6% of a cardiac cycle). In the space dimension, a logic gate limited velocity reporting to only the position across the lumen that provided a sufficient number of measurements relative to the total– positions that met the SNR criteria for fewer than 2% of the total valid SNR hits were rejected. Combined, the three criteria including SNR (Equation 3) and the space and time logic gates focused the analysis to between 3% and 46% of the total searched ROIs. While this percentage may appear low, it still represents thousands of independent measurements in a single vessel. This range indicates a strict and conservative reporting strategy that limits observations to only the conditions of strongest signal. Figure 4B&C and Videos 2 and 3 provide a visual comparison of raw space-time data and measured cell orientations after applying the SNR criterion and the first logic gate. As justified by the mathematical basis above, the visual representation matches subjective determination of blood flow locations in a vessel.
 
-## Graphical visualization of analyzed data
+### Graphical visualization of analyzed data
 
 To augment visual feedback to the user, space-time images were superimposed with lines oriented at determined cell angles (Figure 3E). The length of these lines represents the ROI size. The color indicates one of two metrics: SNR or velocity. In the case of SNR, line color indicates ROIs that passed (magenta) or failed the SNR criterion (cyan) (Figure 3E). When reporting velocity, color indicates jet colormap encoding velocity (Figure 4C–E). To report mean velocity and flow rate (33 arterioles and venules in Figure 10A&B), 1 s of space-time image data was analyzed and velocities from 499 to 25210 ROIs were reported. To report the average cardiac cycle and velocity profile as a function of cardiac phase for the arteriole in Figures 4 and 10 s of data was analyzed, and velocities from 123,761 ROIs reported.
 
-## Measurement of pulsatile flow and vascular indices
+### Measurement of pulsatile flow and vascular indices
 
-All measures performed at the same point in time were averaged to reveal attributes such as cardiac cycle. The time binning window was chosen to span 15 ms, to sample each cardiac cycle 10–27 times for an expected heart rate range of 150–400 beats per minute, thus sampling well above the Nyquist limit. The binned velocities were plotted as a function of time (Figure 4F). After peaks and troughs of each cardiac cycle were identified, all cardiac cycles were phase-matched and averaged to produce a high signal-to-noise average cardiac cycle (Figure 4G). The heart rate was measured reporting the inverse of the average cardiac cycle time period. The maximum, minimum and mean velocities of the average cardiac cycle (vmax, vmin and vmean respectively) were used to compute vascular indices of pulsatility and resistivity according to the formulae:(4)Pulsatility index PI= vmax-vminvmean(5)Resistivity index RI= vmax-vminvmax
+All measures performed at the same point in time were averaged to reveal attributes such as cardiac cycle. The time binning window was chosen to span 15 ms, to sample each cardiac cycle 10–27 times for an expected heart rate range of 150–400 beats per minute, thus sampling well above the Nyquist limit. The binned velocities were plotted as a function of time (Figure 4F). After peaks and troughs of each cardiac cycle were identified, all cardiac cycles were phase-matched and averaged to produce a high signal-to-noise average cardiac cycle (Figure 4G). The heart rate was measured reporting the inverse of the average cardiac cycle time period. The maximum, minimum and mean velocities of the average cardiac cycle (vmax, vmin and vmean respectively) were used to compute vascular indices of pulsatility and resistivity according to the formulae:
 
-The time positions of the maximum and two minimum velocities (tmax, tmin1 and tmin2 respectively, orange and green points in Figure 4G) were used to compute a custom metric of asymmetry in the profile of the average cardiac cycle:(6)Asymmetry index (AI)= tmin2−tmaxtmax−tmin1
+$$
+PulsatilityindexPI=\frac{v_{max}-v_{min}}{v_{mean}}
+$$
 
-## Measurement of cross-sectional velocity profile
+
+
+$$
+ResistivityindexRI=\frac{v_{max}-v_{min}}{v_{max}}
+$$
+
+The time positions of the maximum and two minimum velocities (tmax, tmin1 and tmin2 respectively, orange and green points in Figure 4G) were used to compute a custom metric of asymmetry in the profile of the average cardiac cycle:
+
+$$
+Asymmetry index (AI)= \frac{t_{min2}−t_{max}}{t_{max}−t_{min1}}
+$$
+
+### Measurement of cross-sectional velocity profile
 
 Measured velocities in a single vessel were reported as a function of position along the vessel lumen (velocity profile) by averaging, across time, all measures performed at a specific radial location. The spatial binning window was chosen to be 4 µm, which corresponds to intervals of 0.77 µm across the vessel lumen when factoring vessel angle (Figure 4H and Figure 6). Additionally, instantaneous velocity profiles were phase locked to the cardiac cycle to reveal dependence of the profile on cardiac phase (Figure 4H and Video 3).
 
-The measured profiles were fit with several models of blood flow (Figure 6B). Symmetric flow was assumed in all models by constraining the fit to the position of maximum measured velocity, and an equal number of data points to each side of it. The RBC flow profile was modelled as described by Zhong et al. (2011).(7)V(r)= Vmax1-1-β.rRBwhere, V(r) is velocity at radial position r in a vessel, R is the maximum radial position (half of measured lumen diameter), Vmax is the maximum velocity (or centerline velocity, assuming symmetric flow), β is a custom factor that is proportional to the normalized extrapolated RBC velocity at the lumen edges, and B is a custom bluntness index. Additionally, the plasma velocity profile was modeled assuming zero velocity at the lumen edges, to satisfy the no-slip boundary condition (Figure 6B).
+The measured profiles were fit with several models of blood flow (Figure 6B). Symmetric flow was assumed in all models by constraining the fit to the position of maximum measured velocity, and an equal number of data points to each side of it. The RBC flow profile was modelled as described by Zhong et al. (2011).
 
-## Orthogonal 1D scan to measure velocity in single-file flow capillaries
+$$
+V(r)=V_{max}1-1-\beta.\frac{r}{R}^{B}
+$$
 
-In a previous publication, we reported label-free measurement of single-cell flux (cells s–1) in capillaries with single-file flow (Guevara-Torres et al., 2016) (Figure 1—figure supplement 1). To compare those measurements with flow rate (µL min–1) measurements of larger vessels in this current study, we measured the average cell velocity from 1 s long space-time images of 90 capillaries captured with split detection phase contrast (Figure 10C). To determine cell velocity, cell locations were marked and were phase registered to produce an ‘average cell’. The temporal width of this average cell was used to report average capillary velocity using the equation reported by us previously (Guevara-Torres et al., 2016).(8)velocitymean= d∆twhere ∆t is the temporal width of the average cell, and d is the average length of RBCs along the direction of flow. RBCs deform during single-file flow, with a typical long-to-short axis ratio of 2:1. Considering this deformation and a mean plasma layer of ~0.5 µm, mean RBC lengths ranging from 4.5 to 10 µm were reported in a capillary glass tube study (Hochmuth et al., 1970) across a variety of capillary inner diameters. A value of 7.25 µm was assumed for ‘d’ in this publication, for all capillaries studied (lumen diameter range: 3.2–6.5 µm).
+where, V(r) is velocity at radial position r in a vessel, R is the maximum radial position (half of measured lumen diameter), Vmax is the maximum velocity (or centerline velocity, assuming symmetric flow), β is a custom factor that is proportional to the normalized extrapolated RBC velocity at the lumen edges, and B is a custom bluntness index. Additionally, the plasma velocity profile was modeled assuming zero velocity at the lumen edges, to satisfy the no-slip boundary condition (Figure 6B).
 
-## Lumen diameter measurement
+### Orthogonal 1D scan to measure velocity in single-file flow capillaries
+
+In a previous publication, we reported label-free measurement of single-cell flux (cells s–1) in capillaries with single-file flow (Guevara-Torres et al., 2016) (Figure 1—figure supplement 1). To compare those measurements with flow rate (µL min–1) measurements of larger vessels in this current study, we measured the average cell velocity from 1 s long space-time images of 90 capillaries captured with split detection phase contrast (Figure 10C). To determine cell velocity, cell locations were marked and were phase registered to produce an ‘average cell’. The temporal width of this average cell was used to report average capillary velocity using the equation reported by us previously (Guevara-Torres et al., 2016).
+
+$$
+velocity_{mean}=\frac{d}{\Deltat}
+$$
+
+where ∆t is the temporal width of the average cell, and d is the average length of RBCs along the direction of flow. RBCs deform during single-file flow, with a typical long-to-short axis ratio of 2:1. Considering this deformation and a mean plasma layer of ~0.5 µm, mean RBC lengths ranging from 4.5 to 10 µm were reported in a capillary glass tube study (Hochmuth et al., 1970) across a variety of capillary inner diameters. A value of 7.25 µm was assumed for ‘d’ in this publication, for all capillaries studied (lumen diameter range: 3.2–6.5 µm).
+
+### Lumen diameter measurement
 
 Lumen diameter was measured using 796 nm backscatter in the split-detection modality (Figure 7A), (Chui et al., 2014; Chui et al., 2012; Guevara-Torres et al., 2016; Sulai et al., 2014). The 2D raster videos were registered for eye motion and then used to compute the temporal standard deviation or motion contrast image (Chui et al., 2014; Sulai et al., 2014) (Figure 7B). To confirm the label free measurement represented the true lumen diameter of the arterioles and venules, diameter was also measured simultaneously using conventional fluorescein contrast (Figure 7C,~50 µW of 488 nm excitation, 520∆35 nm emission). For diameter measurement, the vessel axis orientation was determined using the Radon transform. Multiple 5 µm strips orthogonal to the length of the vessel were analyzed for diameter (Figure 7D–F). For arterioles and venules, the average diameter was reported from 2 to 31 five-micron strips along the length of the vessel. Lumen diameter measured distance between vascular walls in split detection images, corresponding to half-height points in the split-detection intensity image (Figure 7G). Independently, the standard deviation (SD) image that computes pixel variance over time revealed the erythrocyte column by way of motion contrast. Lumen edges were measured as the inner boundary of the motion contrast image (Figure 7H). For lumen measures using sodium fluorescein, lumen edges were identified as the half-height points, using the peak intensity of the profile as reference (Figure 7I). Lumen diameters for all 90 capillaries were measured in our previous publication (Guevara-Torres et al., 2016) using split-detection contrast to measure inner wall to inner wall distance.
 
-## Calculation of mean flow rate per vessel
+### Calculation of mean flow rate per vessel
 
-The mean RBC velocity (over 1 s of space-time data) and lumen diameter for each arteriole and venule were combined to give its mean flow rate (in µL min–1) according to Poiseuille’s equation (Figure 10B):(9)Bloodflowrate=Velocitymean×π×Diameter24
+The mean RBC velocity (over 1 s of space-time data) and lumen diameter for each arteriole and venule were combined to give its mean flow rate (in µL min–1) according to Poiseuille’s equation (Figure 10B):
+
+$$
+Bloodflowrate=Velocity_{mean}\times\frac{\pi\timesDiameter^{2}}{4}
+$$
 
 Flow rate in capillaries was also measured their average cell velocity and cross-sectional area in the above equation (Figure 10D). Our previous publication had reported flux (cell s–1) in these capillaries (Figure 10E) (Guevara-Torres et al., 2016).
 
-## Statistics
+### Statistics
 
 Data are reported as mean (standard deviation) unless otherwise mentioned. Shaded regions in plots represent the mean ±1 SD, unless otherwise mentioned. The number of samples used in variation is given wherever possible. All analyses were performed using MATLAB R2017a (The MathWorks, Inc, Massachusetts, USA).

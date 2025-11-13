@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.10559.001 Understanding how our use of antimicrobial drugs shapes future levels of drug resistance is crucial. Recently, there has been debate over whether an aggressive (i.e., high dose) or more moderate (i.e., lower dose) treatment of individuals will most limit the emergence and spread of resistant bacteria. In this study, we demonstrate how one can understand and resolve these apparently contradictory conclusions. We show that a key determinant of which treatment strategy will perform best at the individual level is the extent of effective competition between resistant and sensitive pathogens within a host. We extend our analysis to the community level, exploring the spectrum between strict inter-strain competition and strain independence. From this perspective as well, we find that the magnitude of effective competition between resistant and sensitive strains determines whether an aggressive approach or moderate approach minimizes the burden of resistance in the population. DOI: http://dx.doi.org/10.7554/eLife.10559.001
+Understanding how our use of antimicrobial drugs shapes future levels of drug resistance is crucial. Recently, there has been debate over whether an aggressive (i.e., high dose) or more moderate (i.e., lower dose) treatment of individuals will most limit the emergence and spread of resistant bacteria. In this study, we demonstrate how one can understand and resolve these apparently contradictory conclusions. We show that a key determinant of which treatment strategy will perform best at the individual level is the extent of effective competition between resistant and sensitive pathogens within a host. We extend our analysis to the community level, exploring the spectrum between strict inter-strain competition and strain independence. From this perspective as well, we find that the magnitude of effective competition between resistant and sensitive strains determines whether an aggressive approach or moderate approach minimizes the burden of resistance in the population.
 
 ## Introduction
 
@@ -30,29 +30,236 @@ Here, we provide a modeling framework that unifies the individual-level and popu
 
 ## Materials and methods
 
-## Within-host model
+### Within-host model
 
 We describe two populations of bacteria within a single host using a model based on Ankomah and Levin (2014). The model includes both wild-type (drug-sensitive; DS) bacteria and drug-resistant (DR) bacteria which arise by some presumably rare mechanism from the drug-sensitive type. This mechanism could be single-point mutation, acquisition of resistance genes through horizontal gene transfer, or another mechanism (Lipsitch and Samore, 2002; zur Wiesch et al., 2011). While we do not explictly model these differences, we note that the mechanisms of resistance and their probabilities affect the relative importance of de novo resistance compared to pre-existing resistance circulating in a population (Lipsitch and Samore, 2002). In our model, each strain initiates an immune response which follows density-dependent kinetics. Bacteria grow in a resource-dependent manner and have a death rate which increases under higher antibiotic concentrations. Antibiotics enter the system and degrade at a constant rate. The DR strain, by definition, has a higher minimum inhibitory concentration (MIC) than the DS strain and is assumed to have a slower growth rate reflecting fitness costs associated with mutation or acquisition of resistance genes. The phrase ‘minimum inhibitory concentration’ parallels the language in Ankomah and Levin (2014); the MIC is the value of antibiotic A at which the growth rate with the drug is half its baseline value (when A = 0). The strain interactions in the model are complex: strains compete for resources, and each strain can suppress the other by triggering a host immune response. Thus, we expect the strains to be under fairly strong competition. However, the DS strain also benefits the DR strain as DR is generated from the DS population through acquired resistance.
 
-The equations are:(1)dBsdt=GsBs−kpPBs−kiIBs−μBsdBrdt=GrBr−kpPBr−kiIBr+μBsdIdt=αIBs+BrBs+Br+σi−uiIdPdt=η(Pmax−P)Bs+BrBs+Br+σp−γPdRdt=w(CR−R)−e(GsBs+GrBr)dAdt=Ain−(d+w)A.
+The equations are:
 
-The variables are the densities of DS and DR bacteria (Bs, Br in cells/ml) and the adaptive and innate immune cells (I, P in cells/ml), and the concentration of the resource R (μmg/ml) and the antibiotic A (μmg/ml). Bacterial growth is resource dependent (Ankomah and Levin, 2014) with growth rate λs=ΛsRk+R and similarly for λr, where Λs and Λr are the maximum growth rates of the two strains when the resource is not limiting. The net growth rate Gs is Gs = λs − (us + δs(A)) and Gr = λr − (ur + δr(A)), capturing death and the bactericidal effect of the antibiotic. We adopt the assumption that recruitment of activated effector cells of the innate system (P) is dependent on the density of the pathogen population (Bs + Br) and σp > 0 is a saturation constant. Similarly, we assume that the expansion of specific adaptive immune response I is dependent upon the density of the pathogen population, the maximal expansion rate α and σi, the pathogen density at which the increase in the adaptive immune response is half maximal. The resource is replenished at rate wCR and depleted at rate wR. In our baseline results we assume, as in previous work (Ankomah and Levin, 2014), that it is the net growth Gs and Gr that determine the extent of the depletion of resources. This means that if the net growth is negative, lysis of cells can replenish the resource. We assess the sensitivity of our findings to this assumption in Appendix 1 and find that the model's inter-strain dynamics and their dependence on the parameters are unaltered when the lysis effect is removed (in which case the resource equation in (1) reads dR/dt = w(CR − R) − e(ΛsBs + ΛrBr)). To incorporate the possibility of stochastic die-off of the DR population when its density is very low, the growth rate is 0 when the density is less than 30 cells/ml. Not allowing for stochastic die-off might allow resistant strains to enjoy an unrealistic advantage in the model due to its deterministic nature. Here, 30 cells/ml is approximately 10−8 times the maximum bacterial load, though this varies with the parameter choice. Antibiotic concentration A speeds the death of bacteria according to a saturating mechanism δs(A)=λsA/MsA/Ms+1, and similarly for R, where Ms and Mr are the minimum inhibiting concentrations of antibiotic for the DS and DR strains, respectively. A is introduced through dosage Ain and is removed at rate d + w (Ankomah and Levin, 2014).
+$$
+\frac{dB_{s}}{dt}=G_{s}B_{s}−k_{p}PB_{s}−k_{i}IB_{s}−\muB_{s}\frac{dB_{r}}{dt}=G_{r}B_{r}−k_{p}PB_{r}−k_{i}IB_{r}+\muB_{s}\frac{dI}{dt}=\alphaI\frac{B_{s}+B_{r}}{B_{s}+B_{r}+\sigma_{i}}−u_{i}I\frac{dP}{dt}=η(P_{max}−P)\frac{B_{s}+B_{r}}{B_{s}+B_{r}+\sigma_{p}}−\gammaP\frac{dR}{dt}=w(C_{R}−R)−e(G_{s}B_{s}+G_{r}B_{r})\frac{dA}{dt}=A_{in}−(d+w)A.
+$$
 
-To explore these complex interactions, we drew 60,000 sets of parameters from ranges containing the values used previously (Ankomah and Levin, 2014) (see Table 1), spanning a range of strengths of the immune system (ki, kp, η, α), relative overall fitness of the DR strain (Λr, Mr), pre-existing DR bacilli, the growth rate of the DS strain (Λs), and the mutation parameter μ. Each parameter was chosen uniformly at random from the ranges given in Table 1. All were held fixed, and the model was simulated under multiple dosages. This gave us an understanding of how treatment affected resistance at each set of parameters. We captured the relationship between increasing Ain and the maximum and total (integrated over time in the simulations) DR at each randomly drawn set of parameters.10.7554/eLife.10559.009Table 1.Parameters and rangesDOI: http://dx.doi.org/10.7554/eLife.10559.009SymbolDescriptionRangeUnitWithin-host model ΛsMax growth rate (DS)0.4–0.8hr−1 ΛrMax growth rate (DR)(0.6–1) × Λshr−1 kHill coeffient in bacterial growth0.5–50.5μg/ml us, urDeath rates DS, DR0.2hr−1 mSMIC (DS)1μg/ml mRMIC (DR)1–8μg/ml kpRate of innate immune clearance10−7 − 10−5hr−1 kiRate of adaptive immune clearance10−5 − 10−3hr−1 μRate of DR mutation5 × 10−9 − 5 × 10−7#/division αRecruitment of adaptive immunity0.002–0.02hr−1 σi, σpHill parameter in I, P dynamics1000, 10,000cells/ml uiLoss rate of I5 × 10−5 − 5 × 10−4hr−1 γLoss rate of P5 × 10−4 − 5 × 10−3hr−1 ηRecruitment of innate immunity10−5 − 9 × 10−4hr−1 wWashout rate0.2hr−1 CRResource reservoir concentration300–700μg/ml eUse of resource per unit growth5 × 10−7μg/cell AinAntibiotic treatment0–2.5μg/(ml × 24 hr) dLoss rate of antibiotic0.1hr−1Between-host model βxTransmission parameter (DS)1–4months−1 βyTransmission parameter (DR)1 − βxmonths−1 κPartial immunity coefficient1none κtTreatment protection from DS1 − 0.3Tnone cSimilarity coefficient0–1none uDS clearance without treatment13βx − 23βxmonths−1 uyDR clearanceβy/R01 − βymonths−1 TIntensity of treatment0–1none rRelease of DS through treatment0–0.1months−1 umaxMax clearance DS under treatment1.05 βxmonths−1Ranges are indicated with a − separating lower and upper values. Where a single value is given the parameter was fixed. Within-host parameter ranges contain the values used in Ankomah and Levin (2014). The relative growth of the resistant and sensitive strains (without treatment) can be modified either through k or Λ. We have chosen to vary the Λ parameters as the effect on relative fitness is linear. In the between-host model the value of u was chosen such that the DS strain has a basic reproductive number in Bonhoeffer et al. (1997) and Ankomah and Levin (2014). Similarly, uy was chosen so that R02 ranges from 1 to R01, to ensure that the DR strain has a smaller maximum growth rate than the DS strain.
+The variables are the densities of DS and DR bacteria (Bs, Br in cells/ml) and the adaptive and innate immune cells (I, P in cells/ml), and the concentration of the resource R (μmg/ml) and the antibiotic A (μmg/ml). Bacterial growth is resource dependent (Ankomah and Levin, 2014) with growth rate $\lambda_{s}=Λ_{s}\frac{R}{k+R}$ and similarly for λr, where Λs and Λr are the maximum growth rates of the two strains when the resource is not limiting. The net growth rate Gs is Gs = λs − (us + δs(A)) and Gr = λr − (ur + δr(A)), capturing death and the bactericidal effect of the antibiotic. We adopt the assumption that recruitment of activated effector cells of the innate system (P) is dependent on the density of the pathogen population (Bs + Br) and σp > 0 is a saturation constant. Similarly, we assume that the expansion of specific adaptive immune response I is dependent upon the density of the pathogen population, the maximal expansion rate α and σi, the pathogen density at which the increase in the adaptive immune response is half maximal. The resource is replenished at rate wCR and depleted at rate wR. In our baseline results we assume, as in previous work (Ankomah and Levin, 2014), that it is the net growth Gs and Gr that determine the extent of the depletion of resources. This means that if the net growth is negative, lysis of cells can replenish the resource. We assess the sensitivity of our findings to this assumption in Appendix 1 and find that the model's inter-strain dynamics and their dependence on the parameters are unaltered when the lysis effect is removed (in which case the resource equation in (1) reads dR/dt = w(CR − R) − e(ΛsBs + ΛrBr)). To incorporate the possibility of stochastic die-off of the DR population when its density is very low, the growth rate is 0 when the density is less than 30 cells/ml. Not allowing for stochastic die-off might allow resistant strains to enjoy an unrealistic advantage in the model due to its deterministic nature. Here, 30 cells/ml is approximately 10−8 times the maximum bacterial load, though this varies with the parameter choice. Antibiotic concentration A speeds the death of bacteria according to a saturating mechanism $\delta_{s}(A)=\lambda_{s}\frac{A/M_{s}}{A/M_{s}+1}$, and similarly for R, where Ms and Mr are the minimum inhibiting concentrations of antibiotic for the DS and DR strains, respectively. A is introduced through dosage Ain and is removed at rate d + w (Ankomah and Levin, 2014).
+
+To explore these complex interactions, we drew 60,000 sets of parameters from ranges containing the values used previously (Ankomah and Levin, 2014) (see Table 1), spanning a range of strengths of the immune system (ki, kp, η, α), relative overall fitness of the DR strain (Λr, Mr), pre-existing DR bacilli, the growth rate of the DS strain (Λs), and the mutation parameter μ. Each parameter was chosen uniformly at random from the ranges given in Table 1. All were held fixed, and the model was simulated under multiple dosages. This gave us an understanding of how treatment affected resistance at each set of parameters. We captured the relationship between increasing Ain and the maximum and total (integrated over time in the simulations) DR at each randomly drawn set of parameters.
+
+**Table 1.**
+ Parameters and ranges
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Description</th>
+      <th>Range</th>
+      <th>Unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Within-host model</td>
+    </tr>
+    <tr>
+      <td>Λs</td>
+      <td>Max growth rate (DS)</td>
+      <td>0.4–0.8</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>Λr</td>
+      <td>Max growth rate (DR)</td>
+      <td>(0.6–1) × Λs</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>k</td>
+      <td>Hill coeffient in bacterial growth</td>
+      <td>0.5–50.5</td>
+      <td>μg/ml</td>
+    </tr>
+    <tr>
+      <td>us, ur</td>
+      <td>Death rates DS, DR</td>
+      <td>0.2</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>mS</td>
+      <td>MIC (DS)</td>
+      <td>1</td>
+      <td>μg/ml</td>
+    </tr>
+    <tr>
+      <td>mR</td>
+      <td>MIC (DR)</td>
+      <td>1–8</td>
+      <td>μg/ml</td>
+    </tr>
+    <tr>
+      <td>kp</td>
+      <td>Rate of innate immune clearance</td>
+      <td>10−7 − 10−5</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>ki</td>
+      <td>Rate of adaptive immune clearance</td>
+      <td>10−5 − 10−3</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>Rate of DR mutation</td>
+      <td>5 × 10−9 − 5 × 10−7</td>
+      <td>#/division</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>Recruitment of adaptive immunity</td>
+      <td>0.002–0.02</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>σi, σp</td>
+      <td>Hill parameter in I, P dynamics</td>
+      <td>1000, 10,000</td>
+      <td>cells/ml</td>
+    </tr>
+    <tr>
+      <td>ui</td>
+      <td>Loss rate of I</td>
+      <td>5 × 10−5 − 5 × 10−4</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>Loss rate of P</td>
+      <td>5 × 10−4 − 5 × 10−3</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>η</td>
+      <td>Recruitment of innate immunity</td>
+      <td>10−5 − 9 × 10−4</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>Washout rate</td>
+      <td>0.2</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td>CR</td>
+      <td>Resource reservoir concentration</td>
+      <td>300–700</td>
+      <td>μg/ml</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Use of resource per unit growth</td>
+      <td>5 × 10−7</td>
+      <td>μg/cell</td>
+    </tr>
+    <tr>
+      <td>Ain</td>
+      <td>Antibiotic treatment</td>
+      <td>0–2.5</td>
+      <td>μg/(ml × 24 hr)</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>Loss rate of antibiotic</td>
+      <td>0.1</td>
+      <td>hr−1</td>
+    </tr>
+    <tr>
+      <td colspan="4">Between-host model</td>
+    </tr>
+    <tr>
+      <td>βx</td>
+      <td>Transmission parameter (DS)</td>
+      <td>1–4</td>
+      <td>months−1</td>
+    </tr>
+    <tr>
+      <td>βy</td>
+      <td>Transmission parameter (DR)</td>
+      <td>1 − βx</td>
+      <td>months−1</td>
+    </tr>
+    <tr>
+      <td>κ</td>
+      <td>Partial immunity coefficient</td>
+      <td>1</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>κt</td>
+      <td>Treatment protection from DS</td>
+      <td>1 − 0.3T</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Similarity coefficient</td>
+      <td>0–1</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>DS clearance without treatment</td>
+      <td>13βx − 23βx</td>
+      <td>months−1</td>
+    </tr>
+    <tr>
+      <td>uy</td>
+      <td>DR clearance</td>
+      <td>βy/R01 − βy</td>
+      <td>months−1</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>Intensity of treatment</td>
+      <td>0–1</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Release of DS through treatment</td>
+      <td>0–0.1</td>
+      <td>months−1</td>
+    </tr>
+    <tr>
+      <td>umax</td>
+      <td>Max clearance DS under treatment</td>
+      <td>1.05 βx</td>
+      <td>months−1</td>
+    </tr>
+  </tbody>
+</table>
+
+_Ranges are indicated with a − separating lower and upper values. Where a single value is given the parameter was fixed. Within-host parameter ranges contain the values used in Ankomah and Levin (2014). The relative growth of the resistant and sensitive strains (without treatment) can be modified either through k or Λ. We have chosen to vary the Λ parameters as the effect on relative fitness is linear. In the between-host model the value of u was chosen such that the DS strain has a basic reproductive number in Bonhoeffer et al. (1997) and Ankomah and Levin (2014). Similarly, uy was chosen so that R02 ranges from 1 to R01, to ensure that the DR strain has a smaller maximum growth rate than the DS strain._
 
 We determined whether ‘aggressive’ or ‘moderate’ therapy was the best approach according to which one minimized the overall (maximum and total) levels of resistance. If treatment is negatively correlated with resistance, then more treatment results in less resistance and an aggressive approach is best. Conversely, if the correlation is positive, then treatment drives increases in resistance, and a moderate approach is best (from a resistance standpoint). Accordingly, parameter sets in which resistance levels were negatively (S < −0.7) or positively (S > 0.7) correlated with antibiotic dosage as determined by the Spearman correlation S were classed as ‘aggressive is best’ or ‘moderate is best’; other results were classed as neutral. We removed parameter sets in which treatment does not succeed to avoid unfair inclusion of those parameter sets in which the long-term selective pressure of unsuccessful treatment drives resistance. In the main analyses, we assume that the threshold for successful treatment is defined as causing a >80% reduction in the maximum DS population; in sensitivity analyses, we vary this threshold and provide results from the full set of simulations in which such a threshold is not imposed (see Appendix 1).
 
-## Between-host model
+### Between-host model
 
-To explore a wide range of inter-strain interactions at the population level, we developed a model with four host compartments: susceptible, infected with DS (
+To explore a wide range of inter-strain interactions at the population level, we developed a model with four host compartments: susceptible, infected with DS (X), infected with DR (Y) and dually infected (D). We envision a continuum of inter-strain interactions that in principle describe co-circulating pathogens. At one of the continuum, we posit that distinct pathogens may be entirely independent of each other, not interacting directly or indirectly (e.g., through immune modulation or resource competition). In this case, infection with one strain does not affect infection or recovery with the other strain. At the other end of the continuum, very similar strains of the same pathogen are likely to be competing for hosts. Figure 1 illustrates two models, one with strict competition and one with independence.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig1-v3.jpg)
 
-**Figure 1.:** In the competing model (top row), decreasing the DS strain (X) paves the way for an increase in resistance (Y) by removing the DR strain's competitor, despite the fact that decreasing DS also removes a source of resistance. The bifurcation analysis illustrates competitive exclusion: whichever strain has the higher R0 excludes the other. In both cases, some resistance is present when the sensitive strain is present, due to acquisition of resistance, for example, through mutation. Consequently, the ‘1-only’ region of the plot has some strain 2 at very low prevalence. In contrast, if the strains are not competing (bottom row), including not competing for hosts, hosts must be able to harbor both infections (duals, D). In this case, reducing DS reduces DR by reducing a source of resistance. The bifurcation plot where strains are independent illustrates that strain 1 is present if R01 > 1, strain 2 is present if R02 > 1 and both are present if they are both >1. Our between-host model incorporates competition and independence, parameterized by a ‘similarity coefficient’ that smoothly moves from one to the other (see Appendix 1 for details).DOI: http://dx.doi.org/10.7554/eLife.10559.010
+**Figure 1.:** In the competing model (top row), decreasing the DS strain (X) paves the way for an increase in resistance (Y) by removing the DR strain's competitor, despite the fact that decreasing DS also removes a source of resistance. The bifurcation analysis illustrates competitive exclusion: whichever strain has the higher R0 excludes the other. In both cases, some resistance is present when the sensitive strain is present, due to acquisition of resistance, for example, through mutation. Consequently, the ‘1-only’ region of the plot has some strain 2 at very low prevalence. In contrast, if the strains are not competing (bottom row), including not competing for hosts, hosts must be able to harbor both infections (duals, D). In this case, reducing DS reduces DR by reducing a source of resistance. The bifurcation plot where strains are independent illustrates that strain 1 is present if R01 > 1, strain 2 is present if R02 > 1 and both are present if they are both >1. Our between-host model incorporates competition and independence, parameterized by a ‘similarity coefficient’ that smoothly moves from one to the other (see Appendix 1 for details).
 
 We have previously described ‘neutral null’ models (Lipsitch et al., 2009), in which biologically indistinguishable strains have sensible dynamics in models (i.e., outcomes do not depend on which strain a host has). Our model spans this continuum, which is parameterized by a ‘similarity coefficient’ c. When c = 1 the strains are highly similar and neutral in the sense of Lipsitch et al. (2009) if they are identical. When c = 0, the two strains act independently; infection with one does not affect the spread of the other. See Appendix 1 for more details and a proof of these statements.
 
-The model equations are:(2)dXdt=FxS−κFyX+12κtcFxD−uxX+(1−c)uyD−(μ+Tr)XdYdt=FyS−κtκFxY+12κtcFyD−uyY+(1−c)uxD+12TrD+(μ+Tr)XdDdt=κFyX+κtκFxY−12κtc(Fx+Fy)D−(1−c)(ux+uy)D−12TrD−12c(ux+uy)Dux=u+(umax−u)T, Fx=βxX+(1−12c)D, Fy=βyY+(1−12c)D.
+The model equations are:
+
+$$
+\frac{dX}{dt}=F_{x}S−κF_{y}X+\frac{1}{2}κ_{t}cF_{x}D−u_{x}X+(1−c)u_{y}D−(\mu+Tr)X\frac{dY}{dt}=F_{y}S−κ_{t}κF_{x}Y+\frac{1}{2}κ_{t}cF_{y}D−u_{y}Y+(1−c)u_{x}D+\frac{1}{2}TrD+(\mu+Tr)X\frac{dD}{dt}=κF_{y}X+κ_{t}κF_{x}Y−\frac{1}{2}κ_{t}c(F_{x}+F_{y})D−(1−c)(u_{x}+u_{y})D−\frac{1}{2}TrD−\frac{1}{2}c(u_{x}+u_{y})Du_{x}=u+(u_{max}−u)T, F_{x}=\beta_{x}X+(1−\frac{1}{2}c)D, F_{y}=\beta_{y}Y+(1−\frac{1}{2}c)D.
+$$
 
 In this model, hosts may become infected with both strains and enter the dually infected class (D); the chance of this may be reduced by cross-immunity, which we assume is symmetric between resistant and sensitive strains (κ). In models where dual infection cannot occur, there is an implicit assumption of very strong competition between strains. Dually infected individuals may also be again re-infected with a single strain (Lipsitch et al., 2009). Clearance terms (with recovery ux and uy) are modulated with the similarity coefficient, c, to ensure that the model has independent interactions when c = 0 and neutral null dynamics when c = 1 (see Appendix 1). Transmission rates are βx and βy, recovery rates are ux and uy, and we assume that over the time frame of the simulation the population does not change; we scale it to 1 so that S = 1 − X − Y − D. The forces of infection Fx and Fy contain a contribution from both singly and dually infected hosts such that when the strains are different, dually infected hosts contribute as much as singly infected ones, and when they are very similar, each strain contributes half what a singly infected host would (Lipsitch et al., 2009). Treatment T ranges from 0 to 1 (where the DS strain is eliminated) and has several effects. Primarily, it cures the sensitive strain by reducing its duration of infection 1/ux. Individuals with a resistant strain (Y) who are given treatment are partially protected (κt) from re-infection with the sensitive strain. Dually infected individuals given treatment have the drug-sensitive portion of their infection cured at an increased rate ux due to treatment, but their resistant infection is not cured.
 
@@ -62,33 +269,33 @@ We use a range of parameters such that the basic reproductive numbers (β/u) of 
 
 The between-host model admits three possible steady states (equilibria): a disease-free equilibrium (X = Y = D = 0 stable when R01 and R02 are both less than 1), a resistance-only steady state (X = D = 0, Y = 1 − uy/βy), and a steady state with X, Y, and D positive whose explicit form is not available. If there were no acquisition of resistance (μ = 0) and no ‘competitive release’ term (transition from X to Y), there would be an additional equilibrium with Y = D = 0 and X = 1 − ux/βx. We carried out an invasion analysis to determine the point at which the resistance-only equilibrium loses local stability as βx increases. When the two strains are independent, X should be prevalent if and only if R01 ≥ 1. But if they are not, the values of the strain Y parameters (and its prevalence) affect the prevalence of X. We performed the invasion analysis as follows: we computed the Jacobian of model (2) and evaluated it at the resistance-only steady state for a given set of parameters including βy. We used matlab's nonlinear solver, fsolve, to determine the value of βx at which the resistance-only steady state loses stability. We repeated this for a range of values of βy to produce the colored lines in Figure 5C.
 
-## Determining the role of parameters in defining whether treatment increases or decreases resistance
+### Determining the role of parameters in defining whether treatment increases or decreases resistance
 
-We took several approaches to understand how the parameters of each model relate to whether aggressive or moderate treatment minimizes resistance. The most direct approach is simply to choose a set of parameters, vary the dosage, and examine how resistance changes (
+We took several approaches to understand how the parameters of each model relate to whether aggressive or moderate treatment minimizes resistance. The most direct approach is simply to choose a set of parameters, vary the dosage, and examine how resistance changes (Figure 2). Naturally, the result depends strongly on the parameter choice. We also vary one parameter at a time, keeping others fixed, and examine the trajectories (Appendix figures 2, 3). The next approach is to examine, over all simulations simultaneously, how the outcome depends on each parameter by stratifying the outcomes (Figure 3). Using heatmaps or scatter plots, it is also possible to explore how pairs of parameters determine an outcome (Figure 4). We take the same approach in the between-host model, with Figure 5 showing demonstrative trajectories under varying treatment strength, Appendix figure 4 showing a sensitivity analysis varying one parameter at a time, and Figures 6, 7 showing the stratified dependence of the outcome on single and paired parameters while other parameters are allowed to vary.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig2-v3.jpg)
 
-**Figure 2.:** Parameters are (A) Λ = 0.5, Λs = 0.45, rm = 2.8 and (RB) Λ = 0.6, Λs = 0.53, rm = 3.4. Other parameters are Rk = 48, k = 2.2pe−6, k = 7.2ie−4, μ = 4e−7, α = 0.018, σ = 1000, iσ = 10000, pγ = 0.001, and the remainder are as in pTable 1.DOI: http://dx.doi.org/10.7554/eLife.10559.003
+**Figure 2.:** Parameters are (A) Λs = 0.5, Λr = 0.45, mR = 2.8 and (B) Λs = 0.6, Λr = 0.53, mR = 3.4. Other parameters are k = 48, kp = 2.2e−6, ki = 7.2e−4, μ = 4e−7, α = 0.018, σi = 1000, σp = 10000, γp = 0.001, and the remainder are as in Table 1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig3-v3.jpg)
 
-**Figure 3.:** An aggressive policy (dark blue) is deemed best if the Spearman correlation S between treatment and resistance is S < −0.7, moderate (light blue) is deemed best if S > 0.7 and the classification is neutral (medium blue) otherwise. When the DR strain has a lower growth rate (LamR), an aggressive policy is more likely best because more of the DR strain's population arises through resistance acquisition from the DS population. In this case, reducing the DS strain also reduces DR. Conversely, when Λ (LamR) is high the DR strain is a more robust competitor and a moderate policy is more frequently best. Similarly, when the DR strain has a low MIC (mR), it is a less robust competitor. In this case, an aggressive policy is more frequently best than when mR is high (second panel). The third panel shows that when the immune system is strong (high Rk), an aggressive policy is more frequently best, because again more of the DR population increases are driven by acquisition from DS, due to immune suppression of DR growth. A plot with pη on the horizontal axis is very similar to this one. Finally, the right plot shows that when the DS growth rate (LamS) is low, an aggressive strategy is more often best to minimize resistance; this depends on the ability of therapy to prevent the emergence of resistance.DOI: http://dx.doi.org/10.7554/eLife.10559.004
+**Figure 3.:** An aggressive policy (dark blue) is deemed best if the Spearman correlation S between treatment and resistance is S < −0.7, moderate (light blue) is deemed best if S > 0.7 and the classification is neutral (medium blue) otherwise. When the DR strain has a lower growth rate (LamR), an aggressive policy is more likely best because more of the DR strain's population arises through resistance acquisition from the DS population. In this case, reducing the DS strain also reduces DR. Conversely, when ΛR (LamR) is high the DR strain is a more robust competitor and a moderate policy is more frequently best. Similarly, when the DR strain has a low MIC (mR), it is a less robust competitor. In this case, an aggressive policy is more frequently best than when mR is high (second panel). The third panel shows that when the immune system is strong (high kp), an aggressive policy is more frequently best, because again more of the DR population increases are driven by acquisition from DS, due to immune suppression of DR growth. A plot with η on the horizontal axis is very similar to this one. Finally, the right plot shows that when the DS growth rate (LamS) is low, an aggressive strategy is more often best to minimize resistance; this depends on the ability of therapy to prevent the emergence of resistance.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig4-v3.jpg)
 
-**Figure 4.:** Color indicates the policy that minimizes resistance. Yellow: aggressive; green: neutral; blue: moderate. When the growth rate Λ (LamR) is high, a moderate policy is more frequently best, but a strong immune system (high Rk) can compensate by reducing DR growth. When the DR strain is a strong competitor, a moderate policy is frequently best; this can be achieved by peither a high Λ or a high DR MIC (mR) (top left). Either a high Rk or a high pη can compensate (bottom right), reducing the growth potential of the DR strain and leading to either a neutral outcome or an aggressive policy being best.DOI: http://dx.doi.org/10.7554/eLife.10559.005
+**Figure 4.:** Color indicates the policy that minimizes resistance. Yellow: aggressive; green: neutral; blue: moderate. When the growth rate ΛR (LamR) is high, a moderate policy is more frequently best, but a strong immune system (high kp) can compensate by reducing DR growth. When the DR strain is a strong competitor, a moderate policy is frequently best; this can be achieved by either a high ΛR or a high DR MIC (mR) (top left). Either a high kp or a high η can compensate (bottom right), reducing the growth potential of the DR strain and leading to either a neutral outcome or an aggressive policy being best.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig5-v3.jpg)
 
-**Figure 5.:** Treatment is introduced at 5 years. (Left) Parameters are β = 1.5, xβ = 1.04, yc = 0.05, r = 0, μ = 0.001. (Middle) Parameters are β = 2, xβ = 1.1, yc = 0.3, r = 0.05, μ = 0.0001. (Right) Invasion analysis (bifurcation) plot. The plot shows regions of stability of the disease-free equilibrium (both R0 values less than one), the DR-only equilibrium (top left region), and the equilibrium with both (primarily DS, with low-level DR due to acquisition). The diagonal lines show the boundary at which the DR-only equilibrium loses stability. Lines move to the right as the similarity coefficient increases from 0 (light blue vertical line) to 1 (pink). When it reaches 1, the line is R01 = R02.DOI: http://dx.doi.org/10.7554/eLife.10559.006
+**Figure 5.:** Treatment is introduced at 5 years. (Left) Parameters are βx = 1.5, βy = 1.04, c = 0.05, r = 0, μ = 0.001. (Middle) Parameters are βx = 2, βy = 1.1, c = 0.3, r = 0.05, μ = 0.0001. (Right) Invasion analysis (bifurcation) plot. The plot shows regions of stability of the disease-free equilibrium (both R0 values less than one), the DR-only equilibrium (top left region), and the equilibrium with both (primarily DS, with low-level DR due to acquisition). The diagonal lines show the boundary at which the DR-only equilibrium loses stability. Lines move to the right as the similarity coefficient increases from 0 (light blue vertical line) to 1 (pink). When it reaches 1, the line is R01 = R02.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig6-v3.jpg)
 
-**Figure 6.:** Light blue corresponds to Spearman correlation greater than 0.7, dark corresponds to less than −0.7 and mid-range blue corresponds to all values in between. An aggressive policy is best when the DR strain is relatively unfit (low R0 value; left panel). When the acquisition rate is high, treatment-driven reductions in DS decrease the DR prevalence (second panel). When the two strains are more independent (low similarity coefficient), competition is reduced, so that reductions in the DS strain do not much benefit the DR strain, leading to the aggressive policy being preferred (third panel). When R01 is high, a moderate outcome results, because inter-strain competition is more effective. Vertical axes (‘count’) are the fraction of simulations in each category.DOI: http://dx.doi.org/10.7554/eLife.10559.007
+**Figure 6.:** Light blue corresponds to Spearman correlation greater than 0.7, dark corresponds to less than −0.7 and mid-range blue corresponds to all values in between. An aggressive policy is best when the DR strain is relatively unfit (low R0 value; left panel). When the acquisition rate is high, treatment-driven reductions in DS decrease the DR prevalence (second panel). When the two strains are more independent (low similarity coefficient), competition is reduced, so that reductions in the DS strain do not much benefit the DR strain, leading to the aggressive policy being preferred (third panel). When R01 is high, a moderate outcome results, because inter-strain competition is more effective. Vertical axes (‘count’) are the fraction of simulations in each category.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10559/elife-10559-fig7-v3.jpg)
 
-**Figure 7.:** A moderate-is-best (blue) outcome occurs when R01 and the similarity coefficient are high, because the strains are competing (left panel). When the DR strain is relatively unfit (low R02), an aggressive policy is likely best (second and third panels); we restricted R02 to be lower for the DR strain than the DS one. A high rate of acquisition can counter-balance a low R02 (second panel). When the strains are more independent (low similarity coefficient), an aggressive policy is more often best even over a much wider range of R02 (third panel).DOI: http://dx.doi.org/10.7554/eLife.10559.008
+**Figure 7.:** A moderate-is-best (blue) outcome occurs when R01 and the similarity coefficient are high, because the strains are competing (left panel). When the DR strain is relatively unfit (low R02), an aggressive policy is likely best (second and third panels); we restricted R02 to be lower for the DR strain than the DS one. A high rate of acquisition can counter-balance a low R02 (second panel). When the strains are more independent (low similarity coefficient), an aggressive policy is more often best even over a much wider range of R02 (third panel).
 
 However, we cannot expect any one or two parameters to entirely determine which approach minimizes resistance. We used discriminant analysis of principal components (DAPC, in the adegenet package in R [Jombart and Ahmed, 2011]) to systematically identify which parameters contribute to each outcome (Jombart et al., 2010). DAPC is related to principal component analysis (PCA) but instead of finding combinations of parameters to account for the variability in data (as PCA does), DAPC finds combinations of parameters that best account for variability between groups. Here, we used whether aggressive or moderate treatment minimizes resistance to define the groups (aggressive, neutral or moderate as above) and used DAPC to find combinations of parameters that separate these groups from each other.
 
@@ -96,7 +303,7 @@ However, we cannot expect any one or two parameters to entirely determine which 
 
 The best policy for reducing the amount of resistance in both models can be either aggressive or moderate despite the fact that both models capture potentially strong competition and the acquisition of de novo resistance. The choice of best approach depends on the combined effect of the complex set of inter-strain interactions, and typically, one of these approaches is the clear winner (see Appendix figure 5).
 
-## Within-host model
+### Within-host model
 
 Figure 2 illustrates how treatment dosage may affect the level of resistance in the in-host model. Whether treatment increases or decreases resistance over the course of infection depends on many of the parameters in the model. We performed a sensitivity analysis to determine how the relationship between resistance and dosage changes with each parameter when the others are held fixed (Appendix figures 2, 3). We found that the relationship is relatively robust to variation in each parameter alone, but that small changes in several parameters can have a radical effect. In Appendix figure 2, increasing the dosage does not increase resistance and this result is fairly robust to variation in each parameter alone; Appendix figure 3 shows the contrasting robust scenario (increased dosage increases resistance). The difference is that the baseline parameters in Appendix figure 3 have somewhat higher growth Λs and Λr of both strains and the resistant strain has a higher MIC.
 
@@ -114,7 +321,7 @@ To understand which policy minimizes resistance, one must be able to characteriz
 
 Effective competition can be described as the net extent to which a decrease in one strain benefits the other. This should capture both direct and indirect effects. Quantifying effective competition is challenging because either strain may affect the other over short or long time frames and because different ways to decrease one strain have different effects. From the second equation of (1), the direct effect of a decrease in Bs on the immediate growth of the resistant strain is simply the change in the acquisition term (μBs). If the other terms are small, this term can make the difference between net growth and net decline of resistant cells. The indirect effects are more difficult to determine; a decrease in Bs will mean more available resource and reduced recruitment of immune cells which will have onward effects. We made a step towards quantifying effective competition as follows. We numerically solved the system, obtaining values of each variable through time. We decreased Bs and computed the predicted value of Br two time steps later, using Euler's method, the derivatives in (1) and the time steps defined by the adaptive ODE solver. We did this (separately) at each time point and averaged the fractional change in Br due to a 5% change in Bs over the portion of the trajectory where Bs > 105. We do this only in the untreated case, for each value of the parameters we sampled. This captures only the immediate indirect effects (occurring in the next two small time steps) and the intervention we made (reducing Bs when dosage is 0) is not the same as treatment. Nevertheless, this formulation of effective competition is a good predictor of whether treatment, when added, increases resistance. We used it to classify whether treatment would increase or decrease resistance, and found that the classification worked well, with an area under the receiver–operator characteristic curve (AUC) of 0.94 (the theoretical maximum is 1, and a classifier that guesses randomly has AUC of 0.5). See Appendix figure 10.
 
-## Between-host model
+### Between-host model
 
 Figure 5 illustrates the behavior of the between-host model at two demonstrative parameter sets, one illustrating resistance decreasing with treatment due to the dominant effect of acquisition of DR from the DS strain, and the other illustrating resistance increasing with treatment as a result of inter-strain competition. Appendix figure 4 shows the relationship between resistance and strength of treatment and its sensitivity to variation in single parameters. No one parameter defines whether treatment increases or decreases resistance.
 

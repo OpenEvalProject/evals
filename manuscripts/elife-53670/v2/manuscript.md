@@ -24,11 +24,17 @@
 
 ## Abstract
 
-The many variants of human Ca 2+ /calmodulin-dependent protein kinase II (CaMKII) differ in the lengths and sequences of disordered linkers connecting the kinase domains to the oligomeric hubs of the holoenzyme. CaMKII activity depends on the balance between activating and inhibitory autophosphorylation (on Thr 286 and Thr 305/306, respectively, in the human α isoform). Variation in the linkers could alter transphosphorylation rates within a holoenzyme and the balance of autophosphorylation outcomes. We show, using mammalian cell expression and a single-molecule assay, that the balance of autophosphorylation is flipped between CaMKII variants with longer and shorter linkers. For the principal isoforms in the brain, CaMKII-α, with a ~30 residue linker, readily acquires activating autophosphorylation, while CaMKII-β, with a ~200 residue linker, is biased towards inhibitory autophosphorylation. Our results show how the responsiveness of CaMKII holoenzymes to calcium signals can be tuned by varying the relative levels of isoforms with long and short linkers.
+The many variants of human Ca2+/calmodulin-dependent protein kinase II (CaMKII) differ in the lengths and sequences of disordered linkers connecting the kinase domains to the oligomeric hubs of the holoenzyme. CaMKII activity depends on the balance between activating and inhibitory autophosphorylation (on Thr 286 and Thr 305/306, respectively, in the human α isoform). Variation in the linkers could alter transphosphorylation rates within a holoenzyme and the balance of autophosphorylation outcomes. We show, using mammalian cell expression and a single-molecule assay, that the balance of autophosphorylation is flipped between CaMKII variants with longer and shorter linkers. For the principal isoforms in the brain, CaMKII-α, with a ~30 residue linker, readily acquires activating autophosphorylation, while CaMKII-β, with a ~200 residue linker, is biased towards inhibitory autophosphorylation. Our results show how the responsiveness of CaMKII holoenzymes to calcium signals can be tuned by varying the relative levels of isoforms with long and short linkers.
 
 ## Introduction
 
 A characteristic feature of signaling by protein kinases is that the kinases are themselves regulated by phosphorylation. For most kinases, this involves the phosphorylation of one or more residues in the activation loop, a regulatory element located at the active site of the kinase (Huse and Kuriyan, 2002; Johnson et al., 1996; Nolen et al., 2004). An exception is provided by Ca2+/calmodulin-dependent protein kinase II (CaMKII), an enzyme that has crucial roles in animal-cell signaling, particularly in the brain and in cardiac tissue (Bayer and Schulman, 2019; Bhattacharyya et al., 2019; Griffith, 2004; Hudmon and Schulman, 2002; Kennedy, 2013; Lisman et al., 2012; Stratton et al., 2013). CaMKII has no phosphorylation sites within its activation loop. Instead, the activity of CaMKII is modulated by autophosphorylation on two sites, Thr 286 and Thr 305/306 (residue numbering corresponds to the sequence of human CaMKII-α), both located in a regulatory segment that immediately follows the kinase domain (Figure 1a,d).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig1-v2.jpg)
+
+**Figure 1.:** (a) CaMKII is organized as a holoenzyme with kinase domains connected to a central dodecameric/tetradecameric hub by a regulatory segment and a flexible linker, referred to as the kinase-hub linker. All the domains are labeled and this color scheme used will be maintained throughout. The kinase-hub linker is the principle difference between the four CaMKII isoforms: α/β/γ/δ. (b) Crystal structure of the autoinhibited kinase domain from human CaMKII-δ (PDB ID: 2VN9) (Rellos et al., 2010). The regulatory segment places Thr 306 optimally for cis-phosphorylation, while Thr 286, at the base of the kinase can only be phosphorylated in trans. (c) Schematic diagram showing the design principle for all the constructs used in this study. (d) Depiction of the four possible phosphorylation states of CaMKII.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig1-figsupp1-v2.jpg)
 
 Phosphorylation of Thr 286 confers Ca2+/calmodulin-independent activity, referred to as autonomy (Lai et al., 1986; Lou et al., 1986; Miller et al., 1988; Miller and Kennedy, 1986; Saitoh and Schwartz, 1985; Schworer et al., 1986). We refer to Thr 286 phosphorylation as activating phosphorylation, since it prolongs the active state. In contrast, phosphorylation on Thr 305/306 is inhibitory, because it blocks the binding of Ca2+/CaM (Colbran, 1993; Hanson and Schulman, 1992; Hashimoto et al., 1987; Lou and Schulman, 1989; Patton et al., 1990). Mutation of these autophosphorylation sites results in profound alterations in learning and memory (Elgersma et al., 2002; Giese et al., 1998; Giese and Mizuno, 2013; Küry et al., 2017; Silva et al., 1992).
 
@@ -38,13 +44,21 @@ Our current understanding of the autoregulation of CaMKII is based on studies th
 
 We developed a single-molecule assay to measure the phosphorylation status of CaMKII expressed in mammalian cells. In this assay, CaMKII is fused to an N-terminal fluorescent protein (a monomeric variant of enhanced GFP, mEGFP, Cormack et al., 1996; Zacharias et al., 2002) and to a biotin tag, enabling the capture and visualization, by total internal reflection fluorescence (TIRF) microscopy, of individual CaMKII holoenzymes on a glass slide coated with streptavidin (Figure 2a). Since CaMKII is captured directly from the cell lysate, this procedure avoids difficulties in expressing and purifying various isoforms of CaMKII, particularly those with longer linkers. In addition, the use of a flow cell allows CaMKII holoenzymes to be activated under different reaction conditions after immobilization on glass. Site-specific antibodies that recognize phosphorylated Thr 286 (pThr 286) or phosphorylated Thr 305/Thr 306 (pThr 305/306) can be used to probe the extent of phosphorylation on activating and inhibitory sites on individual holoenzymes (Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic diagram showing the experimental setup. Biotinylated mEGFP-CaMKII overexpressed in HEK 293T cells was pulled down directly from diluted cell lysate, allowing visualization at a single-molecule resolution. The immobilization onto glass substrates functionalized with streptavidin relies on the interaction between biotinylated CaMKII and streptavidin. Autophosphorylation status of CaMKII holoenzymes can be measured using phosphospecific primary antibodies and Alexa-labeled secondary antibodies. (b) Representative single-molecule TIRF images showing mEGFP-CaMKII holoenzymes (green dots), phosphorylation at Thr 286 (red dots) and phosphorylation at Thr 305/306 (purple dots) from left to right. A 3-color merge of these images reports on the fraction of CaMKII holoenzymes that are phosphorylated at Thr 286 and/or Thr 305/306. (c) Fraction of CaMKII-α that shows detectable phosphorylation at Thr 286 is plotted for different Ca2+/CaM concentrations ranging from 0.02 μM to 5 μM. The cartoon at the bottom depicts two extreme cases, where only a few holoenzymes are phosphorylated or where most holoenzymes are phosphorylated. (d) Distribution of intensity for pThr 286 (561 nm), at different Ca2+/CaM concentrations, for CaMKII-α holoenzymes with detectable phosphorylation (see Materials and methods for details of normalization). The cartoon at the bottom shows that a right-shift in the peak value of the intensity histogram represents a higher extent of phosphorylation within a CaMKII holoenzyme.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mutation/deletion of epitopes for pThr 286 (left) and pThr 305/306 (right)-specific antibodies leads to no detection of phosphosignal at the respective sites.
+
 Using this assay, we discovered that activation of CaMKII-α, which has a 31-residue kinase-hub linker, results in robust autophosphorylation on the activating site (Thr 286), with relatively little inhibitory phosphorylation on Thr 305/306. This is consistent with expectation (Baucum et al., 2015). Unexpectedly, CaMKII-β, with a longer ~200 residue linker, undergoes robust inhibitory autophosphorylation on Thr 305/306, with less activating phosphorylation on Thr 286. We also monitored autophosphorylation for an artificial construct of CaMKII that is identical to CaMKII-α, except that the kinase-hub linker is replaced by a 218-residue linker from CaMKII-β (Figure 1c). The autophosphorylation pattern for this construct resembles that of CaMKII-β, showing that the difference in activating and inhibitory autophosphorylation between the two isoforms is due entirely to differences in the kinase-hub linkers.
 
 When CaMKII is inactivated after activation, by removing Ca2+/CaM and ATP, we found that the dephosphorylation by phosphatases of activating phosphorylation at Thr 286 is much slower than dephosphorylation of inhibitory phosphorylation at Thr 305/306, which is fast. The protection of activating phosphorylation and the rapid reversal of inhibitory phosphorylation by phosphatases allows CaMKII to act as an integrator of Ca2+ pulses in cells. CaMKII-α and CaMKII-β can assemble to form mixed holoenzymes, with the balance between activating and inhibitory autophosphorylation determined by the ratio of the two isoforms. Thus, the calcium responsiveness of CaMKII holoenzymes can be tuned by varying the relative levels of the two isoforms.
 
 ## Results and discussion
 
-## A single-molecule assay for measuring CaMKII autophosphorylation
+### A single-molecule assay for measuring CaMKII autophosphorylation
 
 We designed a single-molecule assay to measure autophosphorylation of CaMKII, relying on immediate capture of the holoenzyme after lysis of mammalian cells overexpressing CaMKII (see Materials and methods) (Figure 2a). This procedure is based on a general single-molecule immunofluorescence assay reported previously (Jain et al., 2011). Our assay enables the rapid isolation of CaMKII for single-molecule analysis while minimizing heterogeneity that can result from proteolysis or aggregation during conventional purification. In this assay, GFP-CaMKII holoenzymes, whether or not phosphorylated, are detected with 488 nm laser excitation (green channel). The phosphorylation levels on Thr 286 and Thr 305/306 are monitored using phosphospecific antibodies labeled with Alexa-594 or Alexa-647, detected with 561 nm (red channel) or 640 nm laser excitation (purple channel), respectively (Figure 2a); see Materials and methods. Representative three-color TIRF images from these experiments are shown in Figure 2b.
 
@@ -54,11 +68,27 @@ We used this assay to measure autophosphorylation levels for CaMKII upon activat
 
 A limitation of this assay is that the integrated intensity values cannot be used to determine the absolute number of phosphate groups within each holoenzyme, because we do not know whether every phosphate group necessarily has an antibody bound to it when the maximum signal is obtained. Detection of phosphorylation may be less than complete because of steric interference between antibodies, or interference with the glass support. Due to this limitation, we use the values of the integrated antibody fluorescence intensities to provide a relative, rather than an absolute, measure of the extent of phosphorylation.
 
-## CaMKII-β, with a long kinase-hub linker, acquires inhibitory autophosphorylation more readily than CaMKII-α
+### CaMKII-β, with a long kinase-hub linker, acquires inhibitory autophosphorylation more readily than CaMKII-α
 
 We used the single-molecule assay to compare the levels of phosphorylation at the activating (Thr 286) and inhibitory (Thr 305/306) sites in CaMKII-α and CaMKII-β. We expressed CaMKII-α and CaMKII-β separately in HEK 293T cells and, in parallel experiments, captured the CaMKII isoforms on glass, followed by activation with high concentrations of Ca2+/CaM (5 μM) and 500 μM ATP.
 
 These experiments reveal clear differences in the extent of autophosphorylation at the inhibitory sites in CaMKII-α and CaMKII-β. Whereas 95% of the CaMKII-β holoenzymes show detectable phosphorylation at Thr 305/306, only 30% of the CaMKII-α holoenzymes do so (Figure 3a-right, inset). The mean value of the integrated intensity for Thr 305/306 phosphorylation per holoenzyme is 5-fold higher for CaMKII-β than for CaMKII-α (Figure 3a-right). The α and β isoforms also differ in the extent of activating phosphorylation on Thr 286, with CaMKII-α showing more Thr 286 phosphorylation than CaMKII-β (Figure 3a-left).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-v2.jpg)
+
+**Figure 3.:** (a) Comparison of the extent of autophosphorylation (intensity histogram) within CaMKII-α and CaMKII-β holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-α and CaMKII-β. (b) Comparison of the extent of autophosphorylation (intensity histograms) between CaMKII-α and CaMKII-β* holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-α and CaMKII-β* (see Materials and methods for details of normalization). (c) Autophosphorylation status of CaMKII after activation in HEK 293T cells using ionomycin. Fractions of CaMKII-α and CaMKII-β* that show detectable phosphorylation at Thr 286 are plotted for different conditions. (d) Fractions of CaMKII-α and CaMKII-β* that show detectable phosphorylation at Thr 305/306 are plotted for different conditions. + / - depicts the presence or absence of ionomycin and/or phosphatase inhibitors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer. The pre-activated CaMKII (species A) is then treated with Mg2+-ATP for 30 min to generate species B. (b) Fraction of CaMKII-α holoenzymes with detectable phosphorylation at Thr 305/306 is plotted for each species. (c) Intensity distribution of pThr 305/306 (640 nm) for species A and species B with detectable phosphorylation . The area under each intensity histogram is scaled by the fraction of holoenzymes that show no detectable phosphorylation under that condition (see Materials and methods for details of normalization).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Comparison of the extent of autophosphorylation (intensity histogram) among CaMKII-γ*, CaMKII-δ*, CaMKII-α, and CaMKII-β* holoenzymes at the activating site (Thr 286) (left panel) and the inhibitory site (Thr 305/306) (right panel). The insets show the fraction of holoenzymes that exhibit any detectable phosphorylation for the corresponding phosphosite in CaMKII-γ* and CaMKII-δ* (see Materials and methods for details of normalization).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-β and CaMKII-β’E holoenzymes with detectable phosphorylation. (b) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-β and CaMKII-β’E* holoenzymes with detectable phosphorylation. (c) Comparison of the extent of phosphorylation at the activating site (left panel) and the inhibitory site (right panel) for CaMKII-α, CaMKII-β and CaMKII-α* holoenzymes with detectable phosphorylation (see Materials and methods for details of normalization).
 
 We verified that the reduced levels of pThr 305/306 seen for CaMKII-α are not due to an intrinsic inability to phosphorylate this site. We first activated CaMKII-α on glass, as before, and then washed away the Ca2+/CaM. This was followed by the addition of ATP to the flow cell. ATP treatment of pre-activated CaMKII led to robust phosphorylation of CaMKII-α on Thr 305/306, at levels comparable to that for CaMKII-β (Figure 3—figure supplement 1 (a-c)).
 
@@ -76,21 +106,29 @@ CaMKII-α and CaMKII-β can assemble into mixed holoenzymes containing both isof
 
 **Figure 4.:** (a) Schematic diagram showing that co-expression of GFP-CaMKII-α and mCherry-CaMKII-β* leads to the formation of heterooligomers. (b) Bar graph showing the fraction of holoenzymes that show detectable phosphorylation at the inhibitory site (Thr 305/306), which increases as the ratio of CaMKII-β* increases. (c) Intensity histogram for the homooligomers and heterooligomers. As the ratio of CaMKII-β* increases, there is a right-shift in the peak value of the intensity histogram (see Materials and methods for details of normalization).
 
-## The altered balance of phosphorylation in CaMKII-α and CaMKII-β may arise due to differences in the rates of cis and trans autophosphorylation in the two isoforms
+### The altered balance of phosphorylation in CaMKII-α and CaMKII-β may arise due to differences in the rates of cis and trans autophosphorylation in the two isoforms
 
 To understand how changes in the length of the kinase-hub linker can alter the balance of autophosphorylation, we analyzed a simple kinetic model for CaMKII activation in which the holoenzyme contains only two kinase domains (see Appendix). A kinetic model for the activation of a dodecameric CaMKII holoenzyme requires the specification of an extremely large number of intermediate states, and we have not pursued this. In our simple kinetic model, we assume that Thr 286 can only be phosphorylated in trans, because it is located too far from the active site of the kinase (Figure 1b, and see Figure 5). We assume that Thr 305/306 can either be phosphorylated in cis, as suggested by crystal structures (Rellos et al., 2010), or in trans.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig5-v2.jpg)
+
+**Figure 5.:** While Thr 305/306 can get phosphorylated both in cis in the absence of Ca2+/CaM or in trans in the presence of Ca2+/CaM, autophosphorylation of Thr 286 can only happen in trans in the presence of Ca2+/CaM. Ca2+/CaM shows a rapid association and dissociation until CaMKII gets phosphorylated at Thr 286, when its affinity for Ca2+/CaM increases by about 1000-fold. A detailed description of all the different reactions and conditions that form the basis of our kinetic model is provided in the Appendix.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Plot showing the production of all species bearing pThr 286 or pThr 305/306 over simulation time, when (a) the linker-length is short with faster rates of trans-autophosphorylation and when (b) the linker-length is long and the rates of trans-autophosphorylation are 10-fold slower.
 
 For trans-phosphorylation of either Thr 286 or Thr 305/306, the kinase acting as the enzyme has to have Ca2+/CaM bound to it, otherwise the active site of the enzyme will be blocked. For trans-phosphorylation of Thr 286, the kinase acting as the substrate must also have Ca2+/CaM bound to it, otherwise the Thr 286 is not accessible for phosphorylation (Rich and Schulman, 1998). Autophosphorylation of Thr 305/306 can only occur in the absence of Ca2+/CaM binding to the substrate kinase, because otherwise Thr 305 and Thr 306 would be covered by Ca2+/CaM. A key idea behind this model is that we assume that the longer linker in CaMKII-β slows down the rates of trans-phosphorylation reactions within a holoenzyme when compared to CaMKII-α, but that the rates of cis-phosphorylation are the same in the two isoforms (Sørensen and Kjaergaard, 2019).
 
 We analyzed the predicted autophosphorylation kinetics for the CaMKII dimer model using reasonable estimates for the rate constants in the model (see Appendix). Our results show that when the rate of trans-phosphorylation decreases relative to the rate of cis-phosphorylation, as is expected to occur with longer kinase-hub linkers, then there is a switch from Thr 286 phosphorylation dominating to Thr 305/306 phosphorylation dominating (Figure 5—figure supplement 1a–b, see Appendix). If Thr 286 is phosphorylated, the affinity for Ca2+/CaM increases ~1000 fold, a phenomenon referred to as the calmodulin-trapping (Meyer et al., 1992; Tse et al., 2007). Since Ca2+/CaM covers the inhibitory site (Thr 305/306), phosphorylation at this site is suppressed (Figure 5). The situation is reversed when the linker is long, and cis-phosphorylation is faster than trans-phosphorylation (Figure 5—figure supplement 1b). In this case, activating phosphorylation is suppressed, because Ca2+/CaM binding is blocked.
 
-## The balance between inhibitory and activating autophosphorylation is maintained upon activation of CaMKII in HEK 293T cells
+### The balance between inhibitory and activating autophosphorylation is maintained upon activation of CaMKII in HEK 293T cells
 
 We tested whether the balance between activating and inhibitory autophosphorylation is maintained when the enzyme is activated in cells. We overexpressed CaMKII-α or CaMKII-β* in HEK 293T cells, along with calmodulin, followed by ionomycin treatment to increase intracellular Ca2+ levels. The cells were then lysed and CaMKII holoenzymes were captured and assayed as before, without any further treatment.
 
 Phosphorylation at Thr 286 increases upon treatment with 10 μM ionomycin for both CaMKII-α and CaMKII-β*, as expected (Baucum et al., 2015; Figure 3c). CaMKII-α shows higher phosphorylation at Thr 286 as compared to CaMKII-β*, in agreement with our in vitro results (Figure 3c). However, no phosphorylation at Thr 305/306 is detected for either CaMKII-α or CaMKII-β* in this experiment (Figure 3d), which is consistent with previous reports (Baucum et al., 2015). There is depletion of ATP levels upon cell lysis, which could result in reduced kinase activity in the presence of phosphatase activity. We therefore incubated cells with okadaic acid and cyclosporin A (250 nM each), which are inhibitors of PP1 and calcineurin, respectively, for 45–60 min before activation. This treatment led to detectable levels of phosphorylation at Thr 305/306 for ~30% of the CaMKII-β* holoenzymes, but not for CaMKII-α (Figure 3d). This is consistent with the increased levels of Thr 305/306 phosphorylation seen for CaMKII-β* using the single-molecule assay.
 
-## Activating autophosphorylation at Thr 286 is relatively resistant to dephosphorylation
+### Activating autophosphorylation at Thr 286 is relatively resistant to dephosphorylation
 
 We incubated CaMKII-α and CaMKII-β* with Ca2+/CaM and ATP on glass, while including increasing amounts of λ-phosphatase, a potent non-specific phosphatase (Zhuo et al., 1993), in the activation buffer (Figure 6a). Active CaMKII-α is efficient at maintaining phosphorylation on Thr 286 in the face of competing phosphatase activity, while CaMKII-β* is less so (Figure 6b,d). For CaMKII-β*, high levels of inhibitory phosphorylation at Thr 305/306 are maintained in the presence of phosphatase (Figure 6c,e). In contrast, phosphorylation at Thr 305/306 is completely removed by the phosphatase for CaMKII-α (Figure 6c,e). Thus, the conclusion that CaMKII-α and CaMKII-β/β* more readily gain activating and inhibitory phosphorylation, respectively, holds true in the presence of phosphatases during activation.
 
@@ -100,15 +138,39 @@ We incubated CaMKII-α and CaMKII-β* with Ca2+/CaM and ATP on glass, while incl
 
 We next investigated how efficiently the phosphatase can dephosphorylate the activating and inhibitory sites when the kinase activity is switched off, as would happen after a calcium pulse. We first activated CaMKII on glass, and then washed away Ca2+/CaM and ATP (see Materials and methods, Figure 7a). In the previous experiments, we determined the concentration of phosphatase that results in the maximum reduction of phosphorylation levels during activation – we refer to this concentration of phosphatase as a ‘saturating’ concentration. With the kinase activity switched off, we initiated dephosphorylation reactions by adding a saturating concentration of λ-phosphatase to the phosphorylated CaMKII. The dephosphorylation reaction was then stopped by washing away the phosphatase at defined time points. The extent of phosphorylation at Thr 286 and Thr 305/306 was then measured as before (Figure 7a).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-v2.jpg)
+
+**Figure 7.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer, and then saturating amounts of λ-phosphatase/PP1α (400–800 units) were added for 0, 3, 15, or 30 min. (b) Plot showing the fraction of α and β* holoenzymes that exhibits detectable phosphorylation at the inhibitory site (Thr 305/306) upon treatment with λ-phosphatase for defined time-points. The fractions at 3, 15, or 30 min for α and β* are normalized by the corresponding activated version that has not been exposed to any λ-phosphatase (0 min time-point, whose value is set to 1.0). (c) Same as (b) but for the activating site (Thr 286). (d) Intensity distribution for pThr 286 (561 nm) for CaMKII-α (left panel) and CaMKII-β* (right panel) holoenzymes with detectable phosphorylation after 0, 3, 15, or 30 min of λ-phosphatase treatment (see Materials and methods for details of normalization).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Fraction of CaMKII-α/β* holoenzymes with detectable phosphorylation at Thr 305/306 (left) and Thr 286 (right) after 0, 3, 15, or 30 min of treatment with λ-phosphatase, when the kinase activity is switched off. (b) Same as (a), but PP1α phosphatase was used. (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-α (left panel) and CaMKII-β* (right panel) holoenzymes with detectable phosphorylation at Thr 286 after 0, 3, 15, or 30 min of PP1α treatment (see Materials and methods for details of normalization).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (a) Schematic diagram depicting the experimental design to measure dephosphorylation kinetics in-solution using λ-phosphatase. (b) Fraction of CaMKII-α/β* holoenzymes with detectable phosphorylation at Thr 305/306 (left) and Thr 286 (right) after 0, 3, 15, or 30 min of treatment with λ-phosphatase in-solution, when the kinase activity is switched off by staurosporine. (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-α (left panel) and CaMKII-β* (right panel) holoenzymes with detectable phosphorylation at Thr 286 after 0, 3, 15, or 30 min of λ-phosphatase treatment (see Materials and methods for details of normalization).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Fraction of CaMKII-α/β* holoenzymes with detectable phosphorylation at Thr 286 (left) and Thr 305/306 (right) after 60 min of treatment with the activation buffer (see Materials and methods) in the absence and presence of 100 μM staurosporine.
+
 In the absence of competing kinase activity, pThr 305/306 is rapidly dephosphorylated for both CaMKII-α and CaMKII-β* (Figure 7b, Figure 7—figure supplement 1a). In contrast, the rate of dephosphorylation of pThr 286 is slow, with complete dephosphorylation taking more than 30 min for both isoforms (Figure 7c–d, Figure 7—figure supplement 1a). We also measured the dephosphorylation kinetics of CaMKII-α and CaMKII-β* using the catalytic subunit of protein phosphatase 1α (PP1α), an endogenous phosphatase for CaMKII. Slower rates of dephosphorylation at pThr 286 and rapid dephosphorylation at pThr 305/306 are observed for CaMKII-α and CaMKII-β* using PP1α, as for λ-phosphatase (Figure 7—figure supplement 1b–c).
 
 To rule out that the resistance of pThr 286 towards rapid dephosphorylation is a consequence of on-glass treatments, we performed experiments in solution using diluted HEK 293T cell lysate (see Materials and methods) (Figure 7—figure supplement 2a). CaMKII-α and CaMKII-β* were first activated in the diluted cell lysate and then treated with a high concentration of staurosporine (100 μM), which inhibits kinase activity (Figure 7—figure supplement 3). We then inactivated calmodulin by chelating Ca2+ by EGTA (1 mM), followed by the addition of saturating amounts of λ-phosphatase. Samples were pulled down from this reaction mixture at defined time points, and the phosphorylation at Thr 286 and Thr 305/306 was measured using the single-molecule assay. These experiments also showed slower rates of dephosphorylation at Thr 286 when compared to Thr 305/306 (Figure 7—figure supplement 2b–c).
 
 The observed resistance of pThr 286 towards rapid dephosphorylation suggests that this site may be less accessible to phosphatases compared to pThr 305/306. Unexpectedly, we found that the addition of Ca2+/CaM to phosphorylated CaMKII enhances the rate of dephosphorylation at Thr 286 by about 4-fold for both CaMKII-α and CaMKII-β* (Figure 8a–c, Figure 8—figure supplement 1). When Ca2+/CaM is present, the pThr 286 signal is reduced at a rate that is comparable to the dephosphorylation rate of pThr 305/306. This effect does not require the addition of ATP, that is it is independent of kinase activity. The slower rates of dephosphorylation at Thr 286 is also noted for CaMKII-β, with the addition of Ca2+/CaM reversing the protection (data not shown).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig8-v2.jpg)
+
+**Figure 8.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by wash to remove the components of the activation buffer and then saturating amounts of λ-phosphatase were added for 3, 15, or 30 min, in the presence and absence of Ca2+/CaM. (b) Plot showing the fraction of CaMKII-α holoenzymes with detectable phosphorylation at the activating site (Thr 286, right panel) after 0 min (activated control) and 3, 15, or 30 min of treatment with saturating amounts of λ-phosphatase in the absence (green trace) and presence (pink trace) of Ca2+/CaM. The fractions at 3, 15, or 30 min are normalized with respect to activated CaMKII that has not been exposed to any λ-phosphatase (0 min, whose value is set to 1.0). (c) Intensity distribution for pThr 286 (561 nm) for CaMKII-α holoenzymes with detectable phosphorylation, upon 0, 3, 15, or 30 min of λ-phosphatase treatment in the presence of 5 μM Ca2+/CaM (see Materials and methods for details of normalization).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Fraction of CaMKII-β* holoenzymes with detectable phosphorylation at Thr 286, upon 3 min of λ-phosphatase treatment in the absence and presence of 5 μM Ca2+/CaM. (b) Intensity distribution of pThr 286 (561 nm) for CaMKII-β* holoenzymes with detectable phosphorylation, under the same conditions as in (a) (see Materials and methods for details of normalization).
+
 The addition of Ca2+/CaM has no effect on the rate of dephosphorylation of pThr 305/306, indicating that Ca2+/CaM does not increase the activity of the phosphatase. These data suggest that, in the absence of Ca2+/CaM, the calmodulin-binding element of CaMKII plays a role in sequestering pThr 286 from phosphatases. The mechanism underlying this protection remains to be understood.
 
-## Slower dephosphorylation at the activating site primes CaMKII for activation by subthreshold concentrations of Ca2+/CaM
+### Slower dephosphorylation at the activating site primes CaMKII for activation by subthreshold concentrations of Ca2+/CaM
 
 The slower rates of dephosphorylation at Thr 286 might ensure that at least some subunits in a CaMKII holoenzyme retain Ca2+/CaM-independent activity after a calcium pulse has subsided. CaMKII subunits that are phosphorylated on Thr 286 have increased affinity for Ca2+/CaM, which can allow a subthreshold Ca2+-pulse to cooperatively spread Thr 286 phosphorylation within the primed holoenzyme (De Koninck and Schulman, 1998; Meyer et al., 1992; Tse et al., 2007). We tested this by generating a population of CaMKII holoenzymes in which only a small number of subunits are phosphorylated at Thr 286, to determine if they are primed for a response to Ca2+/CaM.
 
@@ -116,11 +178,11 @@ Treatment of activated CaMKII-α with λ-phosphatase for 3–5 min generated a p
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/53670/elife-53670-fig9-v2.jpg)
 
-**Figure 9.:** 2+/CaM.(a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer and then saturating amounts of λ-phosphatase were added for 3–5 min. The sample was then washed to remove the λ-phosphatase, followed by further treatment with subthreshold concentrations of Ca2+/CaM (25 nM) for 30 min and the autophosphorylation status was measured. (b) Cartoon representation of the different species generated after each treatment. Each species is color-coded and the color schemes are maintained throughout the plots. (c) Fraction of CaMKII-α holoenzymes with detectable phosphorylation at Thr 286 is plotted for each species. (d) Intensity distribution of pThr 286 (561 nm) for only those CaMKII-α holoenzymes that show any detectable Thr 286 phosphorylation, for the different species of interest as described in (b).
+**Figure 9.:** (a) Schematic diagram showing the experimental set up. CaMKII was activated, followed by a wash to remove the components of the activation buffer and then saturating amounts of λ-phosphatase were added for 3–5 min. The sample was then washed to remove the λ-phosphatase, followed by further treatment with subthreshold concentrations of Ca2+/CaM (25 nM) for 30 min and the autophosphorylation status was measured. (b) Cartoon representation of the different species generated after each treatment. Each species is color-coded and the color schemes are maintained throughout the plots. (c) Fraction of CaMKII-α holoenzymes with detectable phosphorylation at Thr 286 is plotted for each species. (d) Intensity distribution of pThr 286 (561 nm) for only those CaMKII-α holoenzymes that show any detectable Thr 286 phosphorylation, for the different species of interest as described in (b).
 
 A similar experiment using CaMKII-β* yields very different results. Here, phosphatase treatment results in substantial reduction in pThr 286 levels. Subsequent treatment with 25 nM Ca2+/CaM and ATP does not result in a marked increase in the extent of Thr 286 phosphorylation per holoenzyme. In contrast, ~40% of CaMKII-β* holoenzymes show detectable phosphorylation at Thr 305/306 after treatment with sub-saturating Ca2+/CaM, compared to ~2% before (data not shown). Thus, in contrast to CaMKII-α holoenzymes, CaMKII-β holoenzymes tend to become inactivated when subjected to subthreshold levels of Ca2+/CaM, rather than undergoing priming for further activation.
 
-## Concluding remarks
+### Concluding remarks
 
 CaMKII is unusual among protein kinases because it is assembled into a large holoenzyme with twelve to fourteen subunits. Analysis of the phosphorylation status of the enzyme using bulk assays, such as Western blots, has been challenging due to difficulties in purifying the holoenzymes, particularly for isoforms with longer kinase-hub linkers. In addition, bulk measurements do not provide a window into the extent of phosphorylation per holoenzyme. To overcome these limitations, we designed a single-molecule TIRF microscopy assay that relies on the capture from mammalian cell lysates of CaMKII holoenzymes tagged with fluorescent proteins. Immobilization of the captured holoenzymes in a flow-cell apparatus allows activation and dephosphorylation of CaMKII to be carried out readily, followed by measurement of the phosphorylation status using fluorescently labeled site-specific antibodies. Using this assay, we discovered that CaMKII-α and CaMKII-β, the two major isoforms in the brain, differ in the balance of activating and inhibitory phosphorylation. CaMKII-α, with a shorter linker, readily acquires activating phosphorylation, while CaMKII-β, with a longer linker, is biased towards inhibitory phosphorylation. We also tested the effects on autophosphorylation of the kinase-hub linkers from CaMKII-γ (110 residues) and CaMKII-δ (31 residues). The shorter CaMKII-δ linker behaves like that of CaMKII-α in terms of autophosphorylation outcome. The outcome for the longer CaMKII-γ linker is closer to that seen with the CaMKII-β linker.
 
@@ -136,59 +198,265 @@ There are differences in the expression levels of CaMKII-α and CaMKII-β in neu
 
 ## Materials and methods
 
-## Preparation of plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CaMKII-α</td>
+      <td></td>
+      <td>Uniprot_ID: Q9UQM7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CaMKII-β</td>
+      <td></td>
+      <td>Uniprot_ID: Q13554</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CaMKII-β’E</td>
+      <td></td>
+      <td>Uniprot_ID: Q13554-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CaMKII-γ</td>
+      <td></td>
+      <td>Uniprot_ID: Q13555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (human)</td>
+      <td>CaMKII-δ</td>
+      <td></td>
+      <td>Uniprot_ID: Q13557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET21a-BirA</td>
+      <td>Addgene</td>
+      <td>plasmid # 20857</td>
+      <td>for biotinylation of the AVI tag in HEK 293T cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EYFP-CaM</td>
+      <td>Addgene</td>
+      <td>plasmid # 47603</td>
+      <td>coexpressed for in cell activation of CaMKII</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1 (plasmid)</td>
+      <td>Clontech, Mountain View, CA</td>
+      <td></td>
+      <td>vector backbone for inserting the CaMKII genes</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSNAPf (plasmid)</td>
+      <td>New England Biolabs, MA</td>
+      <td>N9183S</td>
+      <td>vector backbone</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK 293T</td>
+      <td>UC Berkeley cell culture facility</td>
+      <td></td>
+      <td>authenticated using STR profiling and tested negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CaMKII (phospho T286); mouse monoclonal</td>
+      <td>Abcam</td>
+      <td>ab171095</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CaMKII (phospho T306); rabbit polyclonal</td>
+      <td>PhosphoSolutions</td>
+      <td>p1005-306</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Poly-L-lysine PEG (PLL:PEG)</td>
+      <td>SuSoS, Dübendorf, Switzerland</td>
+      <td>PLL(20)-g[3.5]- PEG(2)</td>
+      <td>preparation of flow chambers</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>streptavidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>S0677</td>
+      <td>functionalize the glass substrates for capturing biotinylated CaMKII</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>calmodulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4874</td>
+      <td>activation of CaMKII</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>λ-phosphatase</td>
+      <td>New England Biolabs, MA</td>
+      <td>P0753L</td>
+      <td>phosphatase</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PP1α</td>
+      <td>EMD Millipore, Burlington, MA</td>
+      <td>14–595</td>
+      <td>phosphatase</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG-Biotin</td>
+      <td>SuSoS, Dübendorf, Switzerland</td>
+      <td>PLL(20)-g[3.5]- PEG(2)/PEG(3.4)- biotin(50%)</td>
+      <td>preparation of flow chambers</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1% protease inhibitor cocktail</td>
+      <td>Sigma</td>
+      <td>P8340</td>
+      <td>protease inhibitor cocktail for lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.5% phosphatase inhibitor cocktail 2 and 3</td>
+      <td>Sigma</td>
+      <td>P0044 and P5726</td>
+      <td>phosphatase inhibitor cocktails for lysis buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>staurosporine</td>
+      <td>Abcam</td>
+      <td>ab120056</td>
+      <td>kinase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cyclosporin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>30024</td>
+      <td>phosphatase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>okadaic acid</td>
+      <td>Abcam</td>
+      <td>ab141831</td>
+      <td>phosphatase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>open access software, see https://imagej.net/Fiji/Downloads</td>
+      <td></td>
+      <td>image processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>in-house Matlab codes</td>
+      <td>open access, see Source code 1</td>
+      <td></td>
+      <td>image processing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sticky-Slide VI 0.4</td>
+      <td>Ibidi</td>
+      <td>80608</td>
+      <td>flow chambers</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>glass coverslips</td>
+      <td>Ibidi</td>
+      <td>10812</td>
+      <td>functionalized substrates</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of plasmids
 
 Human CaMKII-α (Uniprot_ID: Q9UQM7) and human CaMKII-β (Uniprot_ID: Q13554) were cloned into the pEGFP-C1 vector backbone (Clontech, Mountain View, CA), after modifying the vector to contain a biotinylation sequence (Avitag, GLNDIFEAQKIEWHE) followed by a linker (GASGASGASGAS) at the N-terminus of mEGFP. CaMKII-α or CaMKII-β was cloned at the C-terminus of mEGFP, with a linker sequence (PreScission protease site: LEVLFQGP) separating the mEGFP tag from the coding sequence of CaMKII-α/CaMKII-β (i.e., the final construct is organized as Avitag-linker-mEGFP-linker-CaMKII-α/CaMKII-β). These constructs were then used as a template to produce the other CaMKII-variants. The splice-variant of CaMKII-β (CaMKII-β’E) was produced by deleting 155 residues the β-isoform (Uniprot_ID: Q13554-3). CaMKII-β*, CaMKII-γ*, CaMKII-δ*, and CaMKII-β’E* were produced by replacing the linker in CaMKII-α with that from CaMKII-β (Uniprot_ID: Q13554), CaMKII-γ (Uniprot_ID: Q13555), CaMKII-δ (Uniprot_ID: Q13557), and CaMKII-β’E, respectively (Figure 1—figure supplement 1). mCherry-tagged variants were generated by replacing the mEGFP tag with mCherry in these constructs. pET21a-BirA was a gift from Alice Ting (Addgene plasmid # 20857). BirA was cloned into the pSNAPf vector (New England Biolabs, MA) after modifying the vector backbone to remove the SNAP-tag. EYFP-CaM was a gift from Emanuel Strehler (Addgene plasmid # 47603). The EYFP tag was removed from this vector to generate the mammalian expression construct for calmodulin. All constructs with large domain insertions and deletions were made using standard protocols for Gibson assembly (New England Biolabs, MA). All point mutants used were generated using the standard Quikchange protocols (Agilent Technologies, Santa Clara, CA).
 
-## Tissue culture and DNA transfection
+### Tissue culture and DNA transfection
 
 HEK 293T cells were obtained from the UC Berkeley cell culture facility (authenticated using STR profiling and tested negative for mycoplasma). These cells were grown in Dulbecco's Modified Eagle Medium + GlutaMaX (DMEM, Gibco, Thermo Fisher) that is supplemented with 10% FBS (Avantor Seradigm, VWR, Radnor, Pennsylvania), Antibiotic-Antimycotic (AA, Thermo Fisher) at 100X dilution and 20 mM HEPES buffer and maintained at 37°C under 5% CO2. Transient transfection of CaMKII variants were done using the standard calcium phosphate protocol (Wigler et al., 1977). Briefly, CaMKII plasmids (200 ng/400 ng/800 ng depending on the construct) were mixed with 6 μg of empty pcDNA3.1 vector and 1 μg of BirA. This DNA mix was then diluted with ddH2O (10X), 250 mM CaCl2 was added and the mixture was allowed to sit for 15 min at room temperature. Following this incubation, 2X HBS buffer (50 mM HEPES, 280 mM NaCl, 1.5 mM Na2HPO4, pH 7.1) was added to it dropwise and mixed thoroughly by reverse pipetting. This mixture was then added to the HEK 293T cells and the cells were allowed to express the protein for 18–20 hours before harvesting.
 
-## Preparation of flow cells for single-molecule microscopy
+### Preparation of flow cells for single-molecule microscopy
 
 All single-molecule experiments were performed in flow chambers (sticky-Slide VI 0.4, Ibidi, Planegg, Germany) that were assembled with functionalized glass substrates (Ibidi glass coverslips, bottom thickness 170 µm+/–5 µm). The glass substrates were first cleaned using 2% Hellmanex III solution (Hellma Analytics) for 30 min, followed by a 30 min sonication in 1:1 mixture (vol/vol) of isopropanol:water. The glass substrates were then dried with nitrogen and cleaned for another 5 min in a plasma cleaner (Harrick Plasma PDC-32 G, Ithaca, NY). These cleaned glass substrates were used to assemble the flow chambers immediately after plasma cleaning. After assembly, the glass substrates were treated with a mixture of Poly-L-lysine PEG and PEG-Biotin (1000:1, both at 1 mg/mL) for 30 min (SuSoS, Dübendorf, Switzerland). The glass substrates were then washed with 2 mL of Dulbecco’s phosphate-buffered saline (DPBS, Gibco, Thermo Fisher). Streptavidin (Sigma-Aldrich, S0677) was added to these glass substrates at a final concentration of 0.1 mg/mL and incubated for 30 min. Following incubation, excess streptavidin was washed away using 2 mL of DPBS and these assembled flow chambers with streptavidin-coated glass substrates were used for all our single-molecule experiments.
 
-## Cell lysis and pulldown of biotinylated CaMKII in flow chambers
+### Cell lysis and pulldown of biotinylated CaMKII in flow chambers
 
 CaMKII variants were allowed to express for 18–20 hours before they were harvested. The co-expression of the E. coli biotin ligase, BirA, with the CaMKII variants bearing an Avitag, results in the biotinylation of CaMKII in HEK 293T cells. After harvesting, the cells were lysed in a lysis buffer containing 25 mM Tris at pH 8, 150 mM KCl, 1.5 mM TCEP-HCl, 1% protease inhibitor cocktail (P8340, Sigma), 0.5% phosphatase inhibitor cocktail 2 (P0044, Sigma) and 3 (P5726, Sigma), 50 mM NaF, 15 μg/ml benzamidine, 0.1 mM phenylmethanesulfonyl fluoride and 1% NP-40 (Thermo Fisher). The cell lysate was then diluted 100–200 times in DPBS and 100 μL of this diluted cell lysate was added to a well in the flow chamber for 1 min, before washing it out with 1 mL of DPBS. During this incubation, the biotinylated mEGFP-CaMKII variants were immobilized on the surface of the functionalized glass substrates, owing to the streptavidin-biotin interaction. A buffer exchange was then done in the flow chamber to replace the DPBS with the gel filtration buffer (25 mM Tris, 150 mM KCl, 1.5 mM TCEP, pH 8).
 
-## Activation of CaMKII on glass substrates
+### Activation of CaMKII on glass substrates
 
 The glass-immobilized CaMKII holoenzymes were activated by flowing in an activation buffer (with a final concentration of 100 μM CaCl2, 10 mM MgCl2, 500 μM ATP in the gel filtration buffer and the CaM concentration varies between 0.02–5 μM CaM (Sigma-Aldrich, C4874) depending on the experiment) into the flow chambers for 60 min. Following this incubation, the activation buffer was washed out using 2 mL of the gel filtration buffer. All experiments have been replicated at least 3–5 times using samples prepared over different days.
 
-## Activation of CaMKII in HEK 293T cells
+### Activation of CaMKII in HEK 293T cells
 
 HEK 293T cells overexpressing CaMKII and CaM were washed with HBSS buffer (Gibco, Thermo Fisher, 14170112) plus 25 mM HEPES and incubated at room temperature for 5–10 min. The cells were then treated with 10 μM ionomycin (Sigma-Aldrich, 407953) and 3 mM CaCl2 (final concentration) for 10–15 min, activating CaMKII within the cell. Unactivated samples were obtained from cells treated with HBSS buffer alone for the same amount of time. The cells were then lysed, and activated or unactivated CaMKII was pulled down on functionalized glass substrates without further treatment. For experiments that involved incubation with phosphatase inhibitors, 250 nM cyclosporin A (Sigma-Aldrich, 30024) and 250 nM okadaic acid (Abcam, ab141831) were added to the cells for 60 min prior to the activation of CaMKII. The same procedure as above was then followed to activate CaMKII in cells and pull down activated or unactivated CaMKII directly from the cell lysates.
 
-## Immunofluorescence assay with phosphospecific antibodies
+### Immunofluorescence assay with phosphospecific antibodies
 
 The autophosphorylation status of the CaMKII holoenzyme at the activating (Thr 286) and the inhibitory (Thr 305/306) sites was estimated using phosphospecific antibodies for pThr 286 (Abcam: ab171095) and pThr 305/306 (PhosphoSolutions: p1005-306). The immobilized, activated and unactivated CaMKII holoenzyme was incubated with a mixture of these two phosphospecific primary antibodies (in a 1:1 ratio using a 1:500 dilution in 5% (w/v) BSA) for 45 min. Subsequently, excess primary antibodies were washed out with 3 mL DPBS. This was followed by a 30 min incubation with a 1:1 mix of Alexa-labeled secondary antibodies (1:1000 dilution in 5% BSA), that are complementary to the primary antibodies used. Anti-mouse secondary antibody labeled with Alexa-594 (Cell Signaling Technology) was used for pThr 286-specific primary antibody; anti-rabbit secondary antibody labeled with Alexa-647 (Cell Signaling Technology, Danvers, MA) was used for the pThr 305/306-specific primary antibody. After incubation with the secondary antibody, the flow chambers were washed again using 3 mL of DPBS and the samples were imaged using Total Internal Reflection Fluorescence (TIRF) microscopy.
 
-## Validation of the primary antibodies
+### Validation of the primary antibodies
 
 The two primary antibodies for pThr 286 and pThr 305/306 do not cross-react with each other’s target sites, as shown by mutations in their respective epitopes (T286 is mutated to A286 and the epitope for the Thr 305/306 primary antibody is changed from T305T306MLATRNFS to A305V306I) in CaMKII-α (Figure 2—figure supplement 1). These primary antibodies also do not show any reactivity with the unactivated forms of CaMKII-α or CaMKII-β, as pulled down from the cell lysate and before any treatment with activation buffer (data not shown). Additionally, the primary antibody incubation time was optimized so that the phosphosites were nearly saturated by their respective antibodies and we chose the incubation time to be 45 min in all our assays (data not shown).
 
-## Phosphatase assay when the kinase is active
+### Phosphatase assay when the kinase is active
 
 To test how the presence of phosphatase affects the phosphorylation status of CaMKII when the kinase is active, increasing amounts of λ-phosphatase (200–800 units, New England Biolabs) and 1 mM MnCl2 was added to samples of glass-immobilized CaMKII, in the presence of activation buffer containing 5 μM Ca2+/CaM. 1 unit of λ-phosphatase is defined as the amount of enzyme that hydrolyzes 1 nmol of p-nitrophenyl phosphate in 1 min at 30°C (New England Biolabs). After 45 min of incubation, the flow chambers were washed with 2 mL DPBS to remove the λ-phosphatase and the activation buffer. The phosphorylation of Thr 286 and Thr 305/306 was then examined using the immunofluorescence assay described above. No further reduction in phosphorylation was observed upon adding more than 400 units of λ-phosphatase and this is considered as a saturating amount of phosphatase.
 
-## Phosphatase assay when the kinase activity is switched off
+### Phosphatase assay when the kinase activity is switched off
 
 To test the sensitivity of the two autophosphorylation sites to phosphatases in the absence of kinase activity, activated CaMKII was treated with two different phosphatases, λ-phosphatase (New England Biolabs) and PP1α (EMD Millipore, Burlington, MA). A phosphatase buffer that contains 1 mM MnCl2 and 400–800 units of λ-phosphatase or 800 units of PP1α was added to the flow chambers displaying activated CaMKII, after the activation buffer had been washed out. 1 unit of PP1α is defined as the amount of enzyme that releases 1 nmol phosphate per minute from the phosphorylated substrate DiFMUP (6,8-difluoro-4-methylumbelliferyl phosphate) (EMD Millipore). The dephosphorylation reactions were carried out for defined periods of time (3, 15, or 30 min), following which the phosphatase buffer was washed away with 2 mL DPBS and the autophosphorylation states were examined using the immunofluorescence assay described above.
 
-## Phosphatase assay in solution
+### Phosphatase assay in solution
 
 The HEK 293T cell lysate was diluted by 1:100–200. CaMKII was activated in this diluted lysate (in solution) by adding an activation buffer containing 5 μM Ca2+/CaM and 5 mM Tris-buffered TCEP (Sigma-Aldrich). After activation for 45 min, 100 μM staurosporine (Abcam, ab120056) was added to this reaction mix to inhibit the kinase activity. After inhibiting CaMKII for 10 min, saturating amounts of λ-phosphatase (400 units) was added to the solution. Samples were pulled down after 3 or 15 min of incubation and the phosphorylation status on Thr 286 and Thr 305/306 was measured. We verified that 100 μM staurosporine was efficient in switching off kinase activity by activating CaMKII-α/β* in the presence of the inhibitor. This treatment completely abolished any autophosphorylation of Thr 286 or Thr 305/306 (Figure 7—figure supplement 3).
 
-## Thr 286-phosphorylation recovery assay for CaMKII priming
+### Thr 286-phosphorylation recovery assay for CaMKII priming
 
 Activated samples of glass-immobilized CaMKII were treated with saturating amounts of λ-phosphatase and 1 mM MnCl2 for 3–5 min, followed by washing away of the phosphatase buffer with 2 mL of DPBS. This sample was then incubated with an activation buffer (see details above) containing subthreshold concentrations of 25 nM Ca2+/CaM for 30 min. The activation buffer was aspirated out with 2 mL DPBS and the phosphorylation status at the activating and inhibitory sites were measured.
 
-## Single-molecule total internal reflection fluorescence (TIRF) microscopy
+### Single-molecule total internal reflection fluorescence (TIRF) microscopy
 
 Single-particle total internal reflection fluorescence images were acquired on a Nikon Eclipse Ti-inverted microscope equipped with a Nikon 100 × 1.49 numerical aperture oil-immersion TIRF objective, a TIRF illuminator, a Perfect Focus system, and a motorized stage. Images were recorded using an Andor iXon electron-multiplying charge-coupled device camera. The sample was illuminated using the LU-N4 laser unit (Nikon, Tokyo, Japan) with solid state lasers for the 488 nm, 561 nm and 640 nm channels. Lasers were controlled using a built-in acousto-optic tunable filter (AOTF). The 405/488/561/638 nm Quad TIRF filter set (Chroma Technology Corp., Rockingham, Vermont) was used along with supplementary emission filters of 525/50 m, 600/50 m, 700/75 m for 488 nm, 561 nm, 640 nm channel, respectively. 3-color image acquisition was performed by computer-controlled change of illumination and filter sets at 42 different positions from an initial reference frame, so as to capture multiple non-overlapping images. Image acquisition was done using the Nikon NIS-Elements software. mEGFP-CaMKII, Alexa-594-labeled anti-Thr 286 antibody, and Alexa-647-labeled anti-Thr 305/306 antibody were imaged by illuminating 488 nm laser set to 5.2 mW, 561 nm laser set to 6.9 mW, and 640 nm laser set to 7.8 mW, respectively. The laser power was measured with the field aperture fully opened. Images were acquired using an exposure time of 80 milliseconds for 488 nm and 561 nm, and an exposure time of 100 milliseconds for 640 nm. The only exception was for acquiring mCherry single-molecule images, where an exposure of 200 milliseconds was used. Epifluorescence images were also acquired using a Nikon Eclipse Ti-inverted microscope with a Nikon 20x objective and an Andor iXon electron-multiplying charge-coupled device camera. A mercury arc lamp (Lumencor Tech., Beaverton, OR) was used for epifluorescence illumination at 488 and 561 nm.
 
-## Analyses of single-molecule TIRF data
+### Analyses of single-molecule TIRF data
 
 Individual single particles in all three channels were detected and localized using the single particle tracking plugin TrackMate in ImageJ (Jaqaman et al., 2008; Schindelin et al., 2012). The particles were localized with the Difference of Gaussian (DoG) detector with an initial diameter set to six pixels, typically leading to the detection of 25000–50000 particles per sample. The detection threshold value in TrackMate is set to 12 or 15 depending on the wavelength at which the image is acquired. The particles outside the center area of 350 × 350 pixel2 were excluded due to heterogeneous TIRF illumination. No further filtering processes was applied in TrackMate.
 

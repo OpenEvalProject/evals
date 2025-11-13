@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.45205.001 Maintenance of epigenetic modifiers is of utmost importance to preserve the epigenome and consequently appropriate cellular functioning. Here, we analyzed Polycomb group protein (PcG) complex integrity in response to heat shock (HS). Upon HS, various Polycomb Repressive Complex (PRC)1 and PRC2 subunits, including CBX proteins, but also other chromatin regulators, are found to accumulate in the nucleolus. In parallel, binding of PRC1/2 to target genes is strongly reduced, coinciding with a dramatic loss of H2AK119ub and H3K27me3 marks. Nucleolar-accumulated CBX proteins are immobile, but remarkably both CBX protein accumulation and loss of PRC1/2 epigenetic marks are reversible. This post-heat shock recovery of pan-nuclear CBX protein localization and reinstallation of epigenetic marks is HSP70 dependent. Our findings demonstrate that the nucleolus is an essential protein quality control center, which is indispensable for recovery of epigenetic regulators and maintenance of the epigenome after heat shock.
+Maintenance of epigenetic modifiers is of utmost importance to preserve the epigenome and consequently appropriate cellular functioning. Here, we analyzed Polycomb group protein (PcG) complex integrity in response to heat shock (HS). Upon HS, various Polycomb Repressive Complex (PRC)1 and PRC2 subunits, including CBX proteins, but also other chromatin regulators, are found to accumulate in the nucleolus. In parallel, binding of PRC1/2 to target genes is strongly reduced, coinciding with a dramatic loss of H2AK119ub and H3K27me3 marks. Nucleolar-accumulated CBX proteins are immobile, but remarkably both CBX protein accumulation and loss of PRC1/2 epigenetic marks are reversible. This post-heat shock recovery of pan-nuclear CBX protein localization and reinstallation of epigenetic marks is HSP70 dependent. Our findings demonstrate that the nucleolus is an essential protein quality control center, which is indispensable for recovery of epigenetic regulators and maintenance of the epigenome after heat shock.
 
 ## Introduction
 
@@ -43,13 +43,29 @@ In this study, we specifically investigated the effects of HS on the epigenetic 
 
 ## Results
 
-## Heat shock induces nucleolar localization of CBX proteins
+### Heat shock induces nucleolar localization of CBX proteins
 
 To investigate the effects of thermal stress on the epigenetic machinery, we analyzed the localization of PRC1 subunits in response to heat shock (HS). We transduced cord blood CD34+ stem/progenitor cells using a GFP-CBX2 lentiviral vector (Figure 1A). Importantly, GFP pull out experiments in K562 GFP-CBX2 cells confirmed that GFP-CBX2 was properly incorporated in the PRC1 complex (Figure 1—figure supplement 1A) and ChIP-seq experiments in K562 GFP-CBX2 and K562 wild-type cells showed that GFP-CBX2 target genes largely overlapped with endogenous CBX2 target genes (based on ENCODE/Broad Institute data) and H2AK119ub enriched genes (van den Boom et al., 2016). These data underline that the GFP-CBX2 fusion protein is incorporated into a fully functional PRC1 complex. Next, we studied the localization of GFP-CBX2 in untreated and heat shocked cord blood CD34+ cells. Whereas GFP-CBX2 was homogenously distributed throughout the nucleus in untreated cells, cells that received a HS (30 min, 44°C) displayed strong accumulations of GFP-CBX2 in subnuclear domains, both in cells that were fixed after HS (Figure 1B) and living cells (Figure 1C). Similarly, K562 leukemic cells also showed HS-induced relocalization of GFP-CBX2 to subnuclear domains (Figure 1—figure supplement 2A). Transmission images suggested that HS induces relocalization of GFP-CBX2 to nucleoli, which was confirmed by immunofluorescence analyses using antibodies against the nucleolar proteins NPM1 and Fibrillarin (Figure 1D and Figure 1—figure supplement 2B–D). GFP-CBX2 localized directly around Fibrillarin, which is confined to the dense fibrillar component (DFC) of the nucleolus, and partially colocalized with the granular component (GC) protein NPM1. Taken together, these data suggest that GFP-CBX2 is most enriched in the granular component of the nucleolus (Boisvert et al., 2007). The kinetics of HS-induced nucleolar accumulation of GFP-CBX2 were both dependent on the duration and temperature of the HS (Figure 1E and Figure 1—figure supplement 2E–F). Cells exposed to a temperature of 42°C also displayed nucleolar localization of GFP-CBX2 albeit with slower kinetics.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig1-v1.jpg)
+
+**Figure 1.:** (A) Graphical representation of the pRRL SFFV GFP-CBX2 lentiviral vector that was used in this study. (B) GFP-CBX2 localization in fixed untreated or heat shocked (30 min, 44°C) cord blood (CB) CD34+ cells. (C) GFP-CBX2 localization in live K562 GFP-CBX2 cells directly after HS. (D) Confocal images of untreated and heat shocked K562 GFP-CBX2 cells that were fixed and stained with either anti-NPM1 or anti-Fibrillarin antibodies. Scale bar represents 10 μm. (E) Percentage of cells with nucleolar accumulation of GFP-CBX2 at continuous exposure at 42°C or 44°C. Error bars indicate the mean ± SD calculated from independent microscopical images (n = 4; total cell number 70–220). Similar results were obtained in independent experiments. (F) GFP-CBX4, GFP-CBX6, GFP-CBX7 and GFP-CBX8 localization in K562 cells in untreated or heat shocked (30 min, 44°C) cells. Scale bar represents 25 μm. (G) Quantification of percentage of cells with nucleolar accumulations in designated K562 cell lines after HS (30 min or 2 hr, 44°C). Error bars indicate the mean ± SD calculated from independent microscopical images (n = 3; total cell number 70–100). Statistical analysis was performed using Student’s t-test, **p<0.01 and ***p<0.001. (H) Confocal images of untreated and heat shocked K562 cells that were fixed and stained with anti-CBX4 and anti-NPM1. Scale bar represents 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western analysis of GFP pull-outs performed on K562 GFP and K562 GFP-CBX2 cells showing co-preciptation of endogenous RING1B and BMI1 with GFP-CBX2. (B) Venn diagram showing overlap between identified target genes based on peak calling on tracks for GFP-CBX2 (K562 GFP-CBX2 cells, this paper), endogenous CBX2 (K562 cells, ENCODE/Broad) and H2AK119ub (K562 cells, described in van den Boom et al., 2016.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) GFP-CBX2 localization in untreated and heat shocked (30 min, 44°C) K562 cells. (B) Confocal images of untreated and heat shocked K562 cells stained with antibodies directed against NPM1 and Fibrillarin. Scale bar represents 10 μm. (C) Immunofluorescence analysis of untreated and heat shocked K562 GFP-CBX2 cells that were fixed and stained with an anti-Fibrillarin antibody. Scale bar represents 10 μm. (D) Representative images of heat shocked K562 GFP-CBX2 cells stained with an anti-Fibrillarin antibody that were subjected to line scan analysis. (E) Representative images of K562 GFP-CBX2 cell continuously exposed to 44°C and fixed at the indicated time points. (F) Representative images of K562 GFP-CBX2 cell continuously exposed to 42°C and fixed at the indicated time points. (G) Confocal images of untreated and heat shocked (1 hr, 44°C) HL60 cells stained with anti-CBX4 and anti-NPM1. Scale bar represents 10 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic representation of full length GFP-CBX2 and GFP-CBX8 and generated truncated GFP-fusion constructs. (B) Representative images of K562 cells stably expressing GFP-CBX2 (2–96), GFP-CBX2 (2–63), GFP-CBX8 (2–96), or GFP-CBX8 (2–62) that are either untreated or exposed to a 30 min or 2 hr HS at 44°C.
+
 To investigate whether HS-induced nucleolar relocalization is common to all PRC1-associated CBX paralogs, K562 cell lines were generated expressing GFP-CBX4, GFP-CBX6, GFP-CBX7 or GFP-CBX8. Indeed, all these CBX paralogs displayed HS-induced nucleolar accumulation (Figure 1F and G). Importantly, using immunofluorescence, we also observed nucleolar accumulation of endogenous CBX4 upon HS, both in K562 and HL60 cells (Figure 1H and Figure 1—figure supplement 2G). Based on these data, we hypothesized that a common domain in these proteins is sufficient for HS-induced nucleolar accumulation. Since the homology between these various CBX proteins is confined to the chromodomain (N-terminus) and Pc box (C-terminus), we generated GFP-CBX2 and GFP-CBX8 fusions only containing the chromobox (GFP-CBX2 [2-63]) or the chromobox and AT hook (GFP-CBX2 [2-96]) (Figure 1—figure supplement 3A). Strikingly, all generated truncated GFP-CBX fusion proteins displayed nucleolar localization after HS, suggesting the presence of the chromodomain is sufficient to induce nucleolar localization after HS (Figure 1—figure supplement 3B). The kinetics of HS-induced relocalization of truncated CBX proteins were slightly slower, suggesting that also non-homologous peptide stretches in CBX proteins contribute to nucleolar relocalization.
 
-## HS induces large-scale changes in the nucleolar proteome
+### HS induces large-scale changes in the nucleolar proteome
 
 To verify the HS-induced accumulation of PcG proteins in the nucleolus, we isolated nucleoli from heat shocked and untreated GFP-CBX8 expressing K562 cells (Figure 2A). Microscopic analysis of unfixed isolated nucleoli followed by image analysis showed a robust increase in GFP-CBX8 signal in nucleoli isolated for cells directly after HS (Figure 2B and C). This observation was confirmed by fixing nucleoli and subsequent counterstaining with DAPI (Figure 2D). Next, we performed western blot analysis on isolated cytoplasmic, nucleoplasmic and nucleoli fractions from GFP-CBX8 cells, which confirmed the presence of the nucleolar marker Fibrillarin in the nucleoli fraction and clearly showed an increase of GFP-CBX8 in the nucleolar fraction after HS (Figure 2E). To analyze changes in the localization of endogenous PRC1 subunits, we isolated nucleoli from wild-type K562 cells and similarly performed western analysis of the cytoplasmic, nucleoplasmic and nucleoli fractions (Figure 2F). Also here Fibrillarin was prominently found in the nucleolar fraction and beta-actin was confined to the cytoplasmic fraction. Clearly, both endogenous CBX4 and CBX8 were enriched in the nucleolar fraction after HS. In addition, also endogenous RING1B levels were slightly elevated in the nucleolar fraction after HS. To validate these results in an independent cell line, we analyzed cellular fractions isolated from HL60 cells (Figure 2G). Also here, we observed a robust shift of endogenous CBX4, CBX8 and RING1B to the nucleolus after HS.
 
@@ -61,17 +77,45 @@ What could be the physiological relevance of such a shift of proteins regulating
 
 Next, we performed label-free quantification on the nucleolar proteome in untreated and heat shocked K562 cells by LC/MS-MS analyses. In total, we identified 1279 proteins, and the nucleolar proteins NPM1 and Fibrillarin were among the most abundant proteins (Figure 3—figure supplement 1A). GO term analysis of the top ten percent identified proteins based of LFQ values showed strong enrichment for GO terms related to ribosome biogenesis and rRNA processing (Figure 3—figure supplement 1B). Subsequently, we analyzed proteins that were up or down in the nucleolus after HS. MaxQuant-based label-free quantification of two independent experiments measured in triplicate resulted in the identification of 153 significantly enriched proteins in the nucleolus after HS and six depleted proteins (Figure 3A, Figure 3—figure supplement 2A, Supplementary files 1–2). Nucleolar proteins like Fibrillarin and NPM1 were not affected by HS (Figure 3—figure supplement 2A). Interestingly, proteins enriched in the nucleolus after HS associated with GO terms related to chromatin modification, gene expression, DNA repair, histone ubiquitination and protein refolding (Figure 3B). Consistent with our IF and biochemical fractionation data, various PRC1 subunits, including CBX2, RING1A, RING1B and PHC2 were significantly enriched in the nucleolus upon HS (Figure 3C and Figure 3—figure supplement 2B). Intriguingly, we also found that PRC2 subunits EZH2, SUZ12 and EED were enriched (Figure 3C and Figure 3—figure supplement 2B) and this HS-induced nucleolar accumulation of EZH2 and SUZ12 was confirmed using western blot analysis on nucleolar fractions isolated from K562 or HL60 cells (Figure 3D). HS-induced nucleolar accumulation of EZH2 was independently confirmed using immunofluorescence analyses in K562 cells, HL60 cells, and primary non-transformed CD34+mobilized peripheral blood stem cells (mPBSCs) (Figure 3—figure supplement 3A–C). Intra-nucleolar levels of H3K27me3 and H2AK119ub were not increased in heat shocked cells versus untreated cells, suggesting that PcG proteins are not involved in Polycomb-mediated silencing of nucleolar chromatin (Figure 3E). In addition to these PcG proteins, many other chromatin and transcription regulating proteins were found to be enriched in the nucleolus after HS, including members of the chromodomain helicase DNA-binding (CHD) family and the FACT chromatin remodeling complex that both can remodel chromatin (Marfella and Imbalzano, 2007; Winkler and Luger, 2011), and the PAF complex, which regulates release of RNAPII into processive elongation (Van Oss et al., 2017) (Figure 3F and Figure 3—figure supplement 2C). In addition, accumulation of BRD proteins and JMJD6 was observed in the nucleolus after HS (Figure 3G and Figure 3—figure supplement 2D). BRD4 and JMJD6 are co-bound to enhancers and regulate promoter-proximal pause-release of RNAPII (Liu et al., 2013). Taken together, these data show that HS induces strong shifts of various chromatin and transcription regulators toward the nucleolus.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig3-v1.jpg)
+
+**Figure 3.:** (A) Venn diagrams showing overlap of significantly enriched/depleted proteins in nucleoli after HS (1 hr, 44°C) as identified in two independent experiments. Nucleolar fractionations were performed on K562 cells (untreated, HS) and samples were analyzed using liquid chromatography-tandem mass spectrometry (LC-MS/MS) in triplicates, followed by data analysis using MaxQuant and Perseus software. (B) Gene ontology (GO) analysis of overlapping proteins that were significantly enriched in the nucleolus after HS. (C) Volcano plot showing nucleolar proteins in untreated and heat shocked K562 cells and highlighting enriched PRC1 and PRC2 subunits. Statistical analysis was performed using Student’s t-test (false discovery rate (FDR) < 0.01; fold change (FC) > 2). Significantly changed proteins are marked in red. (D) Western blot analyses of cytoplasmic, nucleoplasmic and nucleoli fractions from untreated and heat-shocked K562 and HL60 cells stained with anti-EZH2 and anti-SUZ12 antibodies. (E) Western blot analyses of cytoplasmic, nucleoplasmic and nucleoli fractions from untreated and heat-shocked K562 cells stained with antibodies directed against histone H3, H3K27me3 and H2AK119ub. (F) Volcano plot showing (significantly) enriched subunits of the PAF and FACT complex and CHD proteins. (G) Volcano plot displaying significantly enriched BRD family members and the JMJD6 protein. (H) Volcano plot showing (significantly) enriched HSP70 and DNAJ heat shock proteins. (I) Volcano plot highlighting all (significantly) enriched proteasomal subunits.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Ranking of proteins based on LFQ value shows that classical nucelolar proteins like NPM1 and Fibrillarin (both indicated in green) are among the top enriched proteins in nucleoli. (B) GO analysis of the top ten percent (based on LFQ value) of identified proteins, shows enrichment for nucleolus-related processes like ribosome biogenesis and rRNA processing.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Scatter plots from two independent experiments showing average LFQ values, based on triplicate measurements, for each identified protein in nucleoli isolated from untreated or heat shocked K562 cells. Red circles indicate all significantly changed proteins after HS. NPM1 and Fibrillarin are indicated in green. (B) Volcano plot showing nucleolar proteins in untreated and heat shocked K562 cells and highlighting PRC1 and PRC2 subunits that were detected. Statistical analysis was performed using Student’s t-test (false discovery rate (FDR) < 0.01; fold change (FC) > 2). Significantly changed proteins are marked in red. (C) Volcano plot highlighting (significantly) enrichedsubunits of the PAF and FACT complex and CHD proteins. (D) Volcano plot showing (significantly) enriched BRD family members and the JMJD6 protein. (E) Volcano plot displaying (significantly) enriched HSP70 and DNAJ heat shock proteins. (F) Volcano plot highlighting all (significantly) enriched proteasomal subunits.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A–C) Confocal images of immunofluorescence staining of endogenous EZH2 and NPM1 in untreated and heat shocked (44°C) HL60 (A), K562 (B) and mobilized peripheral blood stem cells (mPBSCs; C). Scale bar represents 10 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Volcano plot from nucleolar proteomes from untreated and heat shocked K562 GFP-CBX8 cells highlighting PRC1 and PRC2 subunits that were detected in the isolated nucleoli. Statistical analysis was performed using Student’s t-test (false discovery rate (FDR) < 0.01; fold change (FC) > 2). Significantly changed proteins are marked in red. (B) Volcano plot highlighting (significantly) enriched subunits of the PAF and FACT complex and CHD proteins. (C) Volcano plot showing (significantly) enriched BRD family members and the JMJD6 protein. (D) Volcano plot displaying (significantly) enriched HSP70 and DNAJ heat shock proteins. (E) Volcano plot highlighting all (significantly) enriched proteasomal subunits.
+
 In line with our western analysis of cellular fractions, our proteomic analyses showed several chaperone proteins to be enriched in the nucleolus after HS. These included members of the HSP70 chaperone family (HSPA1A/B), DNAJB1, DNAJC7 and the small heat shock protein HSPB1 (Figure 3H and Figure 3—figure supplement 2E). Strikingly, many other chaperones, including members of the HSP90 family were not or weakly enriched in the nucleolus after HS showing the response is specific and suggesting that this subset of HSPs may somehow have functional implications in this response. In addition to the HSPs, we also observed a strong accumulation of 26S proteasome subunits in the nucleolus after HS (Figure 3I and Figure 3—figure supplement 2F). It is possible that post-HS proteasomal degradation of damaged proteins occurs in the nucleolus. This is consistent with observations using model proteins, which are targeted to the nucleolus for post-stress degradation (Park et al., 2013).
 
 Independent LC-MS/MS analysis with K562 GFP-CBX8 cells confirmed these findings, implying that HS-induced nucleolar accumulation of various chromatin regulators, protein chaperones and proteasomal subunits is a conserved biological phenomenon (Figure 3—figure supplement 4A–E, Supplementary file 3). Our data suggests that upon HS many chromatin remodelers and transcriptional regulators accumulate in the nucleolus which may become a hot spot for protein quality control.
 
-## HS alters polycomb complex binding and the epigenetic state at target genes
+### HS alters polycomb complex binding and the epigenetic state at target genes
 
 In Drosophila, nucleolar accumulation of Pc has been suggested to contribute to the generalized silencing of most of the genome observed in heat shocked cells (Li et al., 2015). Combined with our observations that many chromatin remodeling and transcription regulatory proteins accumulate in the nucleolus after HS, these data prompted us to speculate that such HS-induced redistributions may severely impact on the chromatin bound fraction of various epigenetic regulators. To analyze changes in PRC1 complex chromatin binding upon HS we performed ChIP-qPCRs in K562 cells expressing PcG GFP-fusion proteins and validated PRC1 binding to PcG target genes. Indeed, upon HS (1 hr, 44°C) we observed a strong reduction in chromatin binding of GFP-CBX2, BMI1-GFP, MEL18-GFP and, to a lesser extent, GFP-RING1B (Figure 4A). To investigate how HS impacts on chromatin binding of endogenous PRC1 subunits, we performed ChIPs using an antibody directed against endogenous CBX8, and also here we observed a quick reduction in CBX8 binding to Polycomb target genes after HS (Figure 4B). Moreover, in line with our LC-MS/MS data, ChIP analysis using an antibody directed against the PRC2 subunit EZH2 also clearly showed a loss of endogenous EZH2 binding from target genes after HS, confirming that both PRC1 and PRC2 show strongly reduced chromatin binding after HS (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig4-v1.jpg)
+
+**Figure 4.:** (A) ChIP-qPCR analyses of GFP-CBX2, BMI1-GFP, MEL18-GFP and GFP-RING1B binding to Polycomb target genes in untreated and heat shocked (1 hr, 44°C) cells. ChIP reactions were performed using an anti-GFP antibody on cells expressing the respective GFP-fusion protein. Error bars represent mean ±range (n = 2, independent replicates, statistical analysis was performed using Student’s t-test, *p<0.05 and **p<0.01). (B) ChIP-qPCR analyses of Polycomb target genes using an antibody directed against endogenous CBX8 in untreated and heat shocked (1 hr, 44°C) K562 cells. Error bars represent mean ±range (n = 2 independent replicates, *p<0.05). (C) ChIP-qPCR analyses of Polycomb target genes using an antibody directed against endogenous EZH2 in untreated and heat shocked (1 hr, 44°C) K562 cells. Error bars represent mean ± SD (n = 4 independent replicates, *p<0.05, **p<0.01 and ***p<0.001). (D) ChIP-qPCR analyses of H2AK119ub levels at Polycomb target genes in untreated and heat shocked (1 hr, 44°C) K562 cells. Error bars represent mean ± SD (n = 3 independent replicates, *p<0.05 and ***p<0.001). (E) ChIP-qPCR analyses of H3K27me3 levels at Polycomb target genes in untreated and heat shocked (1 hr, 44°C) K562 cells. Error bars represent mean ± SD (n = 3 independent replicates, *p<0.05). (F) ChIP-seq heatmap of endogenous CBX8 peaks (K562) and GFP-CBX2 peaks (K562 GFP-CBX2) and surrounding regions (−5 to + 5 kb) as identified in untreated cells and the respective signal in heat shocked cells (1 hr, 44°C). (G) Band plots showing the median CBX8 and GFP-CBX2 signal (relative read counts) in untreated and heat shocked cells. (H) GO analyses of genes associated with endogenous CBX8 of GFP-CBX2 peaks in untreated cells show enrichment for developmental processes. (I) Characteristic examples of loci that show reduced binding of CBX8 and GFP-CBX2 upon HS. (J) ChIP-qPCR analyses of H2AK119ub, H3K27me3, H3K27Ac, H3K4me3 and H3K4me1 levels in untreated and heat shocked (1 hr, 44°C) K562 cells. Error bars represent mean ± SD (technical triplicates, *p<0.05, **p<0.01 and ***p<0.001). qPCR analyses of the expression of Polycomb target genes in wild type K562 cells (untreated and in time after HS [1 hr, 44°C]). Error bars represent mean ± SD (n = 3 independent replicates, *p<0.05 and **p<0.01).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Analysis of CBX8 and GFP-CBX2 peak distance from transcription start sites (TSS) in kilobase (kb) using GREAT (McLean et al., 2010). (B) ChIP-seq heatmap of TSS-associated endogenous CBX8 peaks (K562) and GFP-CBX2 peaks (K562 GFP-CBX2) and surrounding regions (−5 to + 5 kb) as identified in untreated cells and the respective signal in heat shocked cells (1 hr, 44°C). (C) Band plots showing the median TSS-associated CBX8 and GFP-CBX2 signals (relative read counts) in untreated and heat shocked cells.
+
 To investigate how this may functionally impact on PRC1/2-deposited epigenetic marks, we analyzed H2AK119ub and H3K27me3 levels at PcG target genes. Previous studies have shown that HS induces a rapid but reversible loss of ubiquitinated histones (Carlson et al., 1987; Mimnaugh et al., 1997). Indeed, we also observed a strong decrease in H2AK119ub levels after HS (Figure 4D). In addition, H3K27me3 levels were also significantly reduced in heat-shocked cells vs. control cells (Figure 4E). These data show that HS not only causes displacement of PRC1/2 complexes but also leads to a reduction of their respective epimarks. To assay HS-induced loss of PRC1 chromatin binding in a genome-wide manner, we performed ChIP-seq of both endogenous CBX8 (K562 cells) and GFP-CBX2 (K562 GFP-CBX2 cells) in untreated cells or after HS. Heat maps and band plots of CBX8 and GFP-CBX2 peaks clearly showed a loss of CBX8 and GFP-CBX2 chromatin binding after HS (Figure 4F and G, Supplementary files 4–5). In line with our previous observations concerning PRC1 chromatin occupancy, many CBX8 and GFP-CBX2 peaks were found to be intergenic (van den Boom et al., 2016) (Figure 4—figure supplement 1A). To investigate HS-induced reduction of CBX8 and GFP-CBX2 at gene promoters, we generated heat maps and band plots of transcription start site (TSS)-associated peaks (Figure 4—figure supplement 1B–C). Clearly, also here a loss of CBX8 and GFP-CBX2 chromatin association is observed upon HS. TSS-localized peaks are associated to genes enriched for development-related GO terms, confirming that these are Polycomb target genes (Figure 4H). Typical examples of chromatin regions that show a reduction of CBX8 or GFP-CBX2 chromatin binding are shown in Figure 4I. Next, we analyzed HS-induced changes of other epigenetic modifications. Here we find that, in addition to loss of H2AK119ub and H3K27me3, after HS (1 hr, 44°C) also H3K4me3 levels are reduced, and, likely as a consequence of H3K4me3 loss, H3K4me1 levels are increased (Figure 4J). The increase in H3K4me1 levels argues that loss of epimarks is not a mere consequence of decreased nucleosome occupancy but truly a consequence of changes in the epigenetic marking of the chromatin. Finally, we investigated whether the HS-induced loss of PRC1/2-associated epimarks also resulted in loss of silencing of Polycomb target genes. Indeed, we found that the expression of various Polycomb target genes was increased 3 hr after HS, and recovered to pre-HS levels afterwards (Figure 4K). Taken together, these data show that, in parallel to the reallocation of chromatin remodelers and transcriptional regulators to the nucleolus, HS induces a quick reduction in PRC1 and PRC2 chromatin binding and changes in the epigenetic profile of PcG target genes with consequences for the transcriptional state of these genes.
 
-## Altered GFP-CBX2 protein dynamics in the nucleolus upon HS
+### Altered GFP-CBX2 protein dynamics in the nucleolus upon HS
 
 Next, we aimed to determine the physical-dynamic properties of PcG in the nucleoli of heat shocked cells. To achieve this, we stably expressed GFP-CBX2 in HeLa cells and determined GFP-CBX2 dynamics between the nucleolus and the nucleoplasm by photobleaching GFP-CBX2 in the nucleoli and analyzing the fluorescent recovery after photobleaching (FRAP) in time (Figure 5A). Strikingly, whereas the kinetics of nucleolar GFP-CBX2 in untreated cells were very quick, nucleolar GFP-CBX2 was highly immobile in heat shocked cells (Figure 5B and C) with limited to no dynamic exchange between the nucleolus and the nucleoplasm.
 
@@ -81,9 +125,21 @@ Next, we aimed to determine the physical-dynamic properties of PcG in the nucleo
 
 The nucleolus is a membrane-less nuclear body with liquid-like properties; its formation depends on liquid-liquid phase transition (Brangwynne et al., 2011; Marko, 2012). Analysis of the intra-nucleolar dynamics of GFP-CBX2 in heat shocked cells using FRAP/FLIP (fluorescence loss in photobleaching) analysis (Figure 5A), revealed that there was very little fluorescence recovery in the bleached region and fluorescence loss in the adjacent nucleolar region (Figure 5D and E), indicating that GFP-CBX2 might be present in these nucleoli in a more solid-like state. Proteins in similar solid states have been shown to be aggregated (Patel et al., 2015). To discriminate between a liquid-like or solid state of CBX protein accumulations, we exposed heat shocked K562 GFP-CBX2 and K562 GFP-CBX8 cells to 1,6-hexanediol, an aliphatic alcohol that disturbs weak hydrophobic interactions (Kroschwald et al., 2015; Patel et al., 2007). Clearly, both GFP-CBX2 and GFP-CBX8 nucleolar accumulations were 1,6-hexanediol insensitive (Figure 5F and G), in line with a more solid, aggregation-like state.
 
-## Heat-shock proteins modulate CBX protein recovery
+### Heat-shock proteins modulate CBX protein recovery
 
 We next asked whether the HS-induced allocation of PcG proteins to nucleoli serves to allow for a quick recovery of the epigenetic modifiers to restore chromatin binding of epigenetic regulators and associated changes in the epigenetic landscape after heat shock. In addition, we argued that the co-appearance of HSPs in these nucleoli may be required to recover these regulators from their solid-like, aggregated state. Certain mammalian HSPs have been demonstrated to be able to disentangle protein aggregates (Mogk et al., 2018; Nillegoda et al., 2018), including the HSPs (DNAJB1 and HSP70) that we identified as part of the nucleolar proteome after heat shock (Figure 3H). To test the reversibility of nucleolar GFP-CBX2 accumulations after HS, we treated K562 GFP-CBX2 cells with a HS (30 min, 44°C) and monitored GFP-CBX2 localization at 37°C afterwards. Clearly, within 3 hr after HS the GFP-CBX2 nucleolar accumulations dispersed and GFP-CBX2 regained its original pan-nuclear distribution (Figure 6A), showing that nucleolar accumulations of PcG proteins are readily reversible. Similarly, and in line with our cellular fraction data and LC-MS/MS data, we also observed a reversible HS-induced nucleolar accumulation of DNAJB1 (Figure 6—figure supplement 1A). In addition, also HSP70 showed post-HS nuclear translocation, and localized to the nucleolus in a reversible fashion (Figure 6—figure supplement 1B). Accumulation of HSP70 in the nucleolus was not as prominent as observed for DNAJB1, which is in line with our LC-MS/MS data, and may be a consequence of other nuclear activities of HSP70. Next, we investigated whether drug-induced inhibition of the HSP70 machinery using the HSP70 inhibitor VER-155008 would impact on the relocalization of PcG proteins to the nucleolus or would delay recovery of GFP-CBX2 from the nucleolus after HS. Clearly, post-HS nucleolar accumulation was not impaired upon HSP70 inhibition, suggesting that the HSP70 machinery is not involved in chaperoning PcG proteins to the nucleolus after HS (Figure 6B). However, HSP70 inhibition led to a clear delay in recovery of GFP-CBX2 from the nucleoli suggesting that HSP70 activity is required to resolve the nucleolar accumulation of GFP-CBX2 (Figure 6B and C). Similarly, a partial knockdown of HSPA1A, an abundant heat-inducible HSP70 family member in human cells and identical to HSPA1B at the protein level, resulted in a significant delay of GFP-CBX2 recovery from the nucleoli in HEK293T GFP-CBX2 cells (Figure 6—figure supplement 1C–E). Next, we investigated whether induction of endogenous HSPs accelerates GFP-CBX2 recovery after HS. K562 GFP-CBX2 cells were treated with two consecutive HSs with a 3-hr interval (Figure 6D). HS is known to induce HSP expression (including several HSP70s), resulting in a period of increased thermotolerance. This cellular property allowed us to compare the kinetics of GFP-CBX2 recovery in the presence of basal or HS-induced HSP levels. Indeed, whereas recovery of GFP-CBX2 after the first HS required almost 3 hr, recovery after the second HS was almost completed within 30 min (Figure 6E and F). Importantly, the amount of GFP-CBX2 that initially accumulated during the first or second HS did not change dramatically (Figure 6E and F). This implies that increased HSP levels specifically affect the recovery of GFP-CBX2 proteins from the solid phase within the nucleolus. Next, we tested whether the kinetics of recovery of GFP-CBX2 from the nucleolus and epigenetic recovery after HS were similar. Indeed, we found that H2AK119ub was completely recovered at 4 hr after HS, whereas H3K27me3 recovery was slightly delayed (Figure 6G). At later time points after HS we observed a complete recovery of GFP-CBX2 and various epigenetic modifications (Figure 6—figure supplement 2A). Interestingly, H2AK119ub recovery was strongly dependent on HSP protein expression. Thermotolerant cells that received a second HS displayed a much faster recovery of H2AK119ub compared to cells after the first HS (Figure 6H). In line with our ChIP-qPCR data, H3K27me3 was also reduced albeit with slower kinetics. Both HSP70 and DNAJB1 were strongly induced upon the first HS, whereas EZH2 and CBX8 protein levels were rather stable or slightly reduced. Next, we investigated whether post-HS H2AK119ub recovery is dependent on Polycomb proteins that are recovered from the nucleolus and not merely on newly translated Polycomb proteins. Therefore, we pre-treated K562 cells for 1 hr with cycloheximide or DMSO and studied H2AK119ub recovery after HS. Importantly, H2AK119ub recovery did not depend on de novo protein synthesis as H2AK119ub levels also recovered in cycloheximide-treated cells (Figure 6—figure supplement 2B). Taken together, these data show that molecular chaperones are crucial for recovery of GFP-CBX2 from the nucleolus and that this activity is essential for epigenetic recovery after HS (Figure 6I).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig6-v1.jpg)
+
+**Figure 6.:** (A) Percentage of cells with nucleolar accumulation of GFP-CBX2 during recovery at 37°C after HS (30 min, 44°C). Error bars indicate the mean ± range calculated from independent microscopical images (n = 2; total cell number 100–170) (B) Representative images of fixed K562 GFP-CBX2 cultured at 37°C after HS (30 min, 44°C) for indicated time intervals in the presence of 5 μM VER-155088 or DMSO. Scale bar represents 25 μm. (C) Percentage of K562 GFP-CBX2 cells with nucleolar accumulations. Cells are cultured at 37°C after HS (30 min, 44°C) in the presence of 5 μM VER-155088 or DMSO. Error bars indicate the mean ± range calculated from independent microscopical images (n = 2; total cell number 50–90). Statistical analysis was performed using Student’s t-test, *p<0.05, **p<0.01. Similar results were obtained in independent experiments. (D) Experimental design of thermotolerance experiment. (E) Representative images of K562 GFP-CBX2 cells fixed at indicated time points according to panel D. Scale bar represents 25 μm. (F) Quantification of percentage of K562 GFP-CBX2 cells with nucleolar accumulations at time points according to panel D. Error bars indicate the mean ± SD calculated from independent microscopical images (n = 5; total cell number 230–350). (G) ChIP-qPCR analyses of H2AK119ub, H3K27me3, GFP-CBX2 and endogenous EZH2 levels at the TCF21 locus in K562 GFP-CBX2 cells, either untreated or cross-linked at indicated time-points after a heat shock (30 min, 44°C). Error bars represent mean ± range (n = 2, independent replicates, *p<0.05 and **p<0.01). (H) Western blot analysis of H2AK119ub, H3K27me3, HSP70, DNAJB1, EZH2, CBX8 and β-ACTIN levels in K562 GFP-CBX2 cells samples isolated at indicated time points according to panel D. (I) Schematic representation of the effects of heat shock on PRC1/2 chromatin binding and epigenetic marks. Protein quality control in the nucleolus leads to refolding of Polycomb proteins, resulting in reinstallation of epigenetic modifications at Polycomb target genes.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal images of K562 GFP-CBX2 cells (untreated, directly after HS [1 hr, 44°C], or 3 hr after HS) stained with anti-DNAJB1. White arrows indicate the nucleoli. Scale bar represents 10 μm. (B) Confocal images of K562 GFP-CBX2 cells (untreated, directly after HS [1 hr, 44°C], or 3 hr after HS) stained with anti-HSP70. White arrows indicate the nucleoli. Scale bar represents 10 μm. (C) Fluorescent images of HEK293T GFP-CBX2 cells, either untreated, directly after HS (30’, 44°C), 1 hr after HS, or 3 hr after HS. Scale bar represents 25 μm. (D) Quantification of post-HS (30’, 44°C) GFP-CBX2 recovery in control and HSP70 siRNA transfected HEK293T GFP-CBX2 cells. Error bars indicate the mean ± SD calculated from independent microscopical images (n = 5; total cell number 175–460). Statistical analysis was performed using Student’s t-test, *p<0.05, **p<0.01. (E) Western analysis of HEK293T GFP-CBX2 cells, transfected with control or HSP70 siRNAs, both untreated and 3 hr after HS (30’, 44°C), using HSPA1A/HSP70 and GAPDH antibodies.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45205/elife-45205-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) ChIP-qPCR analyses of GFP-CBX2, H2AK119ub, H3K27me3, H3K4me3 and H3K4me1 levels in untreated, heat shocked (1 hr, 44°C), and 24 hr post-HS K562 cells. Error bars are calculated on the basis of technical replicates. Error bars represent mean ± SD. (B) Western analysis of H2AK119ub, H3K27me3, and β-ACTIN in untreated and heat-shocked K562 cells (30 min, 44°C) treated with DMSO or 10 μg/ml cycloheximide (CHX; 1 hr pretreatment before HS). Heat-shocked cells were isolated at the indicated time points.
 
 ## Discussion
 
@@ -103,78 +159,431 @@ We propose a model where HS leads to loss of chromatin binding and nucleolar acc
 
 ## Materials and methods
 
-## Primary cell isolation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>CCL-243 RRID:CVCL_0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HL60</td>
+      <td>ATCC</td>
+      <td>CCL-240 RRID:CVCL_0002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2 RRID:CVCL_0030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216 RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pRRL SFFV GFP-CBX2</td>
+      <td>van den Boom et al., 2016; PMID: 26748712</td>
+      <td></td>
+      <td>Lentivirally transduced in K562, HeLa and HEK293T, stable cell lines</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>PC182 GFP-CBX4</td>
+      <td>Vandamme et al. (2011); PMID: 21282530</td>
+      <td></td>
+      <td>Retrovirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>PC182 GFP-CBX6</td>
+      <td>Vandamme et al. (2011); PMID: 21282530</td>
+      <td></td>
+      <td>Retrovirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>PC182 GFP-CBX7</td>
+      <td>Vandamme et al. (2011); PMID: 21282530</td>
+      <td></td>
+      <td>Retrovirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>PC182 GFP-CBX8</td>
+      <td>Vandamme et al. (2011); PMID: 21282530</td>
+      <td></td>
+      <td>Retrovirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pRRL SFFV GFP-CBX2 (aa2-63)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lentivirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pRRL SFFV GFP-CBX2 (aa2-96)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lentivirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pRRL SFFV GFP-CBX8 (aa2-62)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lentivirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pRRL SFFV GFP-CBX8 (aa2-96)</td>
+      <td>This study</td>
+      <td></td>
+      <td>Lentivirally transduced, stable cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP</td>
+      <td>Abcam</td>
+      <td>Cat# ab290 RRID:AB_303395</td>
+      <td>WB (1:1000); ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EZH2</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 5246 (D2C9) RRID:AB_2797901</td>
+      <td>WB (1:1000);IF (1:200); ChIP 5 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SUZ12</td>
+      <td>Abcam</td>
+      <td>Cat# ab12073 RRID:AB_442939</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CBX4</td>
+      <td>Merck</td>
+      <td>Cat# 09–029 RRID:AB_1977084</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CBX4</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 30559 (E6L7X) RRID:AB_2798991</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CBX8</td>
+      <td>Diagenode</td>
+      <td>Cat# C15410333 RRID:AB_2801424</td>
+      <td>ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CBX8</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 14696 (D2O8C) RRID:AB_2687589</td>
+      <td>WB (1:1000); IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BMI1</td>
+      <td>Merck</td>
+      <td>Cat# 05–637 RRID:AB_309865</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RING1B</td>
+      <td>Abcam</td>
+      <td>Cat# ab181140 (EPR12245) RRID:AB_2801425</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fibrillarin</td>
+      <td>Abcam</td>
+      <td>Cat# ab5821 RRID:AB_2105785</td>
+      <td>WB (1:1000), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NPM1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 32–5200 (FC-61991) RRID:AB_2533084</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DNAJB1</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-SPA-450 RRID:AB_10621843</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DNAJB1</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-SPA-400 RRID:AB_10631418</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP70</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-SPA-810 RRID:AB_10616513</td>
+      <td>WB (1:5000); IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP70</td>
+      <td>StressMarq</td>
+      <td>Cat# C92F3A-5 RRID:AB_2570713</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4me3</td>
+      <td>Diagenode</td>
+      <td>Cat# C15410003 RRID:AB_2616052</td>
+      <td>ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K4me1</td>
+      <td>Diagenode</td>
+      <td>Cat# C15410194 RRID:AB_2637078</td>
+      <td>ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27me3</td>
+      <td>Diagenode</td>
+      <td>Cat# C15410195 RRID:AB_2753161</td>
+      <td>WB (1:1000); ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3K27Ac</td>
+      <td>Diagenode</td>
+      <td>Cat# C15410196 RRID:AB_2637079</td>
+      <td>ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H2AK119ub</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat# 8240 (D27C4) RRID:AB_10891618</td>
+      <td>WB (1:1000); ChIP 2 μg</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3</td>
+      <td>Abcam</td>
+      <td>Cat# ab1791 RRID:AB_302613</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-47778 (C4) RRID:AB_2714189</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH</td>
+      <td>Fitzgerald Industries International</td>
+      <td>Cat# 10R-G109A RRID:AB_1285808</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat-anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21244 RRID:AB_2535812</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 goat-anti-mouse</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21235 RRID:AB_2535804</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat-anti-rabbit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11008 RRID:AB_143165</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat-anti-mouse</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11001 RRID:AB_2534069</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit Immunoglobulins/HRP</td>
+      <td>Agilent Dako</td>
+      <td>Cat# P044801-2 RRID:AB_2617138</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit Anti-Mouse Immunoglobulins/HRP</td>
+      <td>Agilent Dako</td>
+      <td>Cat# P026002-2 RRID:AB_2801427</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>HSPA1A siRNAs</td>
+      <td>Dharmacon</td>
+      <td>Cat# M-005168–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VER-155008</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SML0271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 7.02</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>MaxQuant (http://www.biochem.mpg.de/5111795/maxquant)</td>
+      <td>RRID:SCR_014485</td>
+      <td>Version 1.5.2.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus</td>
+      <td>Perseus (http://www.perseus-framework.org)</td>
+      <td>RRID:SCR_015753</td>
+      <td>Version 1.5.8.5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary cell isolation
 
 Cord blood (CB) and mobilized peripheral blood stem cells (mPBSCs) were obtained from healthy full-term pregnancies and allogeneic blood stem cell donors respectively after informed consent in accordance with the Declaration of Helsinki at the obstetrics departments at the Martini Hospital and University Medical Center Groningen. This study was approved by the UMCG Medical Ethical Committee. CB CD34+ cells were isolated as previously described (Schuringa et al., 2004).
 
-## Lenti- and retroviral transductions
+### Lenti- and retroviral transductions
 
 CB CD34+ cells, K562, HeLa, and HEK293T cells were transduced as described previously (Horton et al., 2013; Schuringa et al., 2004; van den Boom et al., 2013). One round of lentiviral transduction was performed and cells were harvested at day 2 after transduction. For retroviral transductions virus was produced transiently in HEK293T cells by transfection of the appropriate PC182 GFP-fusion vector and pCL-Ampho at day 1. At day 2 the medium on the HEK293T cells was changed to RPMI (incl. 10% FCS and 1% P/S) and at day 3 the supernatant was harvested, filtered and used for infection of cells. To generate stable cell lines GFP-positive cells were sorted out 3 days after transduction.
 
-## Cell culture
+### Cell culture
 
 The (human) erythromyeloblastoid leukemia cell line K562 and HL60 cells were cultured in RPMI 1640 (containing L-glutamine) supplemented with 10% FCS and 1% penicillin/streptomycin (PAA Laboratories). CB CD34+ cells were cultured in IMDM, supplemented with 20% FCS, 1% penicillin/streptomycin, 20 ng/ml SCF, and 20 ng/ml IL-3. HeLa cells and HEK293T cells were cultured in DMEM supplemented with 10% FCS and 1% penicillin/streptomycin. Cell lines were all tested mycoplasma-free using a PCR-based assay. For VER-155008 treatment cells were pre-treated with VER-155008 at a concentration of 5 μM for 48 hr. Cycloheximide treatments were performed at a concentration of 10 μg/ml.
 
-## GFP-fusion constructs
+### GFP-fusion constructs
 
 The lentiviral pRRL SFFV GFP-fusion vector for CBX2 was generated as described previously (van den Boom et al., 2013). Other GFP-CBX fusion proteins (PC182 GFP-CBX4, GFP-CBX6, GFP-CBX7 and GFP-CBX8) were expressed from retroviral vectors that were previously described (Vandamme et al., 2011). pRRL SFFV GFP-CBX2 (aa2-63), pRRL SFFV GFP-CBX2 (aa2-96), pRRL SFFV GFP-CBX8 (aa2-62), and pRRL SFFV GFP-CBX8 (aa2-96) were generated by PCR amplification of the indicated fragment of the CBX2/8 protein using pRRL SFFV GFP-CBX2 and PC182 GFP-CBX8 as templates, followed by subcloning into the pJet1.2/blunt vector (Thermofisher). After sequence validation, these fragments were excised using BsrGI and subcloned into pRRL SFFV GFP-CBX2 where CBX2 was excised using BsrGI.
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 For immunofluorescence microscopy, cells were cytospinned on glass slides and subsequently fixed using 4% paraformaldehyde in PBS. Subsequently, cells were permeabilized using PBS containing 0.1% Triton X-100. Primary antibodies include anti-Fibrillarin (ab5821, Abcam), anti-NPM1 (FC-61991, Thermo Fisher Scientific), anti-CBX4 (E6L7X, Cell Signalling Technology) and anti-EZH2 (D2C9, Cell Signalling Technology) followed by secondary antibody staining using Alexa Fluor 488 goat-anti-rabbit (Thermo Fisher Scientific, A-11008), Alexa Fluor 488 goat-anti-mouse (Thermo Fisher Scientific, A-11001), Alexa Fluor 647 goat-anti-rabbit (Thermo Fisher Scientific, A-21244), or Alexa Fluor 647 goat-anti-mouse (Thermo Fisher Scientific, A-21235). Images were acquired on a Leica DM6000B microscope using a 40x dry objective (HCX PL FLUOTAR, numerical aperture: 0.75) or a 63x immersion objective (PL S-APO, numerical aperture: 1.30) using LAS-AF software (Leica). Confocal images were acquired on a Leica TCS SP8 confocal laser-scanning microscope using a HC PL APO CS2 63x/1.4 oil objective, and excitation with 488 nm (20 mW) and 633 nm (30 mW) laser lines.
 
-## FRAP/FLIP analysis
+### FRAP/FLIP analysis
 
 For FRAP experiments, a confocal laser-scanning microscope (Zeiss LSM780 NLO; Carl Zeiss Microcopy) was used. HeLa GFP-CBX2 cells were seeded in a 35 mm dishes, no. 15 coverslip, 14 mm diameter (MatTek). To measure protein mobility after HS, cells were first heat shocked (30 min, 44°C), followed by FRAP analysis at 37°C. To perform FRAP experiments first the subnuclear location of nucleoli was identified using a transmission image. Next, a region of interest covering the whole nucleolus (in the case of FRAP experiments), or half the nucleolus (FRAP/FLIP) was defined. For FRAP/FLIP experiments the opposite side of the nucleolus was selected to measure the FLIP signal. The FRAP region was bleached for five iterations at the highest intensity of the 488 nm line of a 25 mW argon laser focused by a EC Plan-Neofluar 40x/1.30 Oil DIC M27 lens (Carl Zeiss Microcopy). Recovery of fluorescence was monitored at 1 s intervals at 0.5% of the laser intensity used for bleaching. For generation of FRAP and FLIP curves the background signal was subtracted from the measured fluorescent intensities and subsequently normalized to prebleach levels. Finally, the mean and standard deviation were plotted.
 
-## siRNA-mediated HSP70 knockdown
+### siRNA-mediated HSP70 knockdown
 
 For HSPA1A/HSP70 knockdown, HEK293T GFP-CBX2 cells were seeded on poly-L-lysine coated coverslips, and the next day mock or HSPA1A/HSP70 siRNAs were transfected using Lipofectamine 2000 (Thermo Fisher Scientific). Two days after transfection, cells were heat shocked and fixed at the indicated time points.
 
-## Western blotting
+### Western blotting
 
 Western blot analysis was performed as published previously (van den Boom et al., 2013). The following antibodies were used: anti-GFP (ab290, Abcam), anti-EZH2 (D2C9, Cell Signaling Technology), anti-SUZ12, anti-CBX4 (09–029, Merck), anti-CBX8 (C15410333, Diagenode), anti-RING1B (ab181140, Abcam), anti-BMI1 (F6, Merck), anti-DNAJB1 (SPA-400, Enzo Life Sciences), anti-HSP70 (SPA-810, Enzo Life Sciences), anti-Fibrillarin (ab5821, Abcam), anti-H3K27me3 (07–449, Merck), anti-H2AK119ub (D27C4, Cell Signaling Technology), anti-H3K4me3 (ab8580, Abcam), and anti-β-Actin (C4, Santa Cruz).
 
-## Cellular fractionation and nucleoli isolation
+### Cellular fractionation and nucleoli isolation
 
 Cellular fractionation and nucleoli isolation was essentially performed as described (Andersen et al., 2002 and http://www.lamondlab.com). Briefly, 1 × 108 K562 or HL60 cells were spun down and washed using PBS. Subsequently, cell pellets were resuspended in 2 ml ice-cold buffer A (10 mM Hepes pH 7.9, 1.5 mM MgCl2, 10 mM KCl, 0.5 mM DTT, and protease inhibitors. Cells were incubated on ice for five minutes and subsequently broken open using a 2 ml dounce homogenizer (10 strokes using a tight pestle). Dounced cells were spun down at 4°C and the supernatant (cytoplasmic fraction) was stored. The pellet was resuspended in 1.2 ml buffer S1 (0.25 M Sucrose, 10 mM MgCl2, and protease inhibitors) and layered on 1.2 ml buffer S2 (0.35M Sucrose, 0.5 mM MgCl2, and protease inhibitors). The nuclei were spun though the sucrose cushion for 5 min at 1475 x g. Next, the nuclei were resuspended in 1.2 ml buffer S2 and sonicated 6 × 10 s on ice using a probe sonicator (Soniprep 150, MSE). The sonicated nuclei were layered on 1.2 ml buffer S3 (0.88M Sucrose, 0.5 mM MgCl2, and protease inhibitors) and centrifuged for 10 min at 2889 x g. The supernatant (nucleoplasmic fraction) was stored and the pellet was washed using 0.5 ml buffer S2 and finally resuspended in 80 microliter buffer S2. Subsequently, 20 microliter 5x Laemmli sample buffer was added and samples were boiled for 5 min.
 
-## In gel trypsin digestion
+### In gel trypsin digestion
 
 Nucleoli samples were loaded on a 4–12% pre-cast NuPAGE gel (Invitrogen), and shortly ran into the gel. Gel staining was performed using Coomassie dye R-250 (Thermo Scientific) followed by destaining with ultrapure water. Coomassie-stained samples were excised in one gel slice that were further cut into small pieces and destained using 70% 50 mM NH4HCO3 and 30% acetonitrile. Reduction was performed using 10 mM DTT dissolved in 50 mM NH4HCO3 for 30 min at 55°C. Next the samples were alkylated using 55 mM iodoacetamide in 50 mM NH4HCO3 for 30 min at room temperature and protected from light. Subsequently, samples were washed for 10 min with 50 mM NH4HCO3 and for 30 min with 100% acetonitrile. Remaining fluid was removed and gel pieces were dried for 15 min. at 55°C. Tryptic digest was performed by addition of sequencing-grade modified trypsin (10 ng/µl in 50 mM NH4HCO3) and overnight incubation at 37°C. Peptides were extracted using 5% formic acid followed by a second elution with 5% formic acid in 75% acetonitrile. Samples were dried in a SpeedVac centrifuge and dissolved in 5% formic acid.
 
-## LC-MS/MS analysis
+### LC-MS/MS analysis
 
 Online chromatography of peptides was performed with an Ultimate 3000 nano-HPLC system (Thermo Fisher Scientific) coupled online to a Q-Exactive-Plus mass spectrometer with a NanoFlex source (Thermo Fisher Scientific) equipped with a stainless steel emitter. Tryptic digests were loaded onto a 5 mm × 300 μm i.d. trapping micro column packed with PepMAP100 5 μm particles (Dionex) in 0.1% FA at the flow rate of 20 μL/min. After loading and washing for 3 min, peptides were forward-flush eluted onto a 50 cm × 75 μm i.d. nanocolumn, packed with Acclaim C18 PepMAP100 2 μm particles (Dionex). The following mobile phase gradient was delivered at the flow rate of 300 nL/min: 3–50% of solvent B in 90 min; 50–80% B in 1 min; 80% B during 9 min, and back to 3% B in 1 min and held at 3% B for 19 min. Solvent A was 100:0 H2O/acetonitrile (v/v) with 0.1% formic acid and solvent B was 0:100 H2O/acetonitrile (v/v) with 0.1% formic acid. MS data were acquired using a data-dependent top-10 method dynamically choosing the most abundant not-yet-sequenced precursor ions from the survey scans (300–1650 Th) with a dynamic exclusion of 20 s. Sequencing was performed via higher energy collisional dissociation fragmentation with a target value of 1e5 ions determined with predictive automatic gain control. Isolation of precursors was performed with a window of 1.8 Da. Survey scans were acquired at a resolution of 70,000 at m/z 200. Resolution for HCD spectra was set to 17,500 at m/z 200 with a maximum ion injection time of 50 ms. Normalized collision energy was set at 28. Furthermore, the S-lens RF level was set at 60 and the capillary temperature was set at 250degr. C. Precursor ions with single, unassigned, or six and higher charge states were excluded from fragmentation selection.
 
-## Data analysis
+### Data analysis
 
 Raw mass spectrometry data were analyzed using MaxQuant version, 1.5.2.8 (Cox and Mann, 2008), using default settings and LFQ/iBAQ enabled, and searched against the Human Uniprot/Swissprot database (downloaded June 26, 2016, 20197 entries). The data was further processed using Perseus software, version 1.5.8.5 (Tyanova et al., 2016).
 
-## RNA isolation and qPCR
+### RNA isolation and qPCR
 
 Total RNA was isolated using the RNeasy Mini Kit (QIAGEN), and cDNA was generated using the iScript cDNA synthesis kit (Bio-Rad). For quantitative RT-PCR, cDNA was amplified using SsoAdvanced SYBR Green Supermix (Bio-Rad) on a MyIQ thermocycler (Bio-Rad). Primer sequences can be found in Supplementary file 6.
 
-## ChIP-qPCR
+### ChIP-qPCR
 
 ChIP analysis was essentially performed as described previously (Frank et al., 2001). ChIP reactions were performed using the following antibodies: anti-GFP (ab290, Abcam), anti-CBX8 (C15410333, Diagenode), anti-EZH2 (D2C9, Cell Signaling), anti-H2AK119ub (D27C4, Cell Signaling), anti-H3K27me3 (C15410195, Diagenode), anti-H3K27Ac (C15410196, Diagenode), anti-H3K4me1 (C15410194, Diagenode), and anti-H3K4me3 (C15410003, Diagenode). ChIP efficiencies were assessed using qPCR. Primer sequences can be found in Supplementary file 6.
 
-## ChIP-seq
+### ChIP-seq
 
 Sequencing samples were prepared according to the manufacturer's protocol (Illumina). End repair was performed using the precipitated DNA using Klenow and T4 PNK. A 3’ protruding A base was generated using Taq polymerase and adapters were ligated. The DNA was loaded on gel and a band corresponding to ~ 300 bp (ChIP fragment + adapters) was excised. The DNA was isolated, amplified by PCR and used for cluster generation on the Illumina NextSeq 500 genome analyzer. The 50 bp tags were mapped to the human genome HG19 using BWA (Li and Durbin, 2009). For processing and manipulation of SAM/BAM files SAMtools was used (Li et al., 2009). For each base pair in the genome, the number of overlapping sequence reads was determined and averaged over a 10 bp window and visualized in the UCSC genome browser (Kent et al., 2002).
 
-## Detection of enriched regions
+### Detection of enriched regions
 
 Peak calling algorithm MACS was used to detect the binding sites at a q-value cut off for peak detection of 0.01. ChIP-seq tracks were visualized using UCSC genome browser (Kent et al., 2002). Identification of genes associated to detected peaks was performed using GREAT (McLean et al., 2010). The accession number the ChIP-seq data in this paper is GEO: GSE121182.
 
-## Tag counting
+### Tag counting
 
 Tags within a given region were counted and adjusted to represent the number of tags within a 1 kb region. Subsequently, the percentage of these tags as a measure of the total number of sequenced tags of the sample was calculated.
 
-## Generation of profiles and heatmaps
+### Generation of profiles and heatmaps
 
 Heatmaps and bandplot profiles were generated using fluff (Georgiou and van Heeringen, 2016).
 
-## GO analysis
+### GO analysis
 
 Gene ontology (GO) analysis was performed using BiNGO (Maere et al., 2005).

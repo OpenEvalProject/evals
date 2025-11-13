@@ -9,14 +9,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02ks53214 Max-Planck-Institute for Chemical Ecology, Department of Evolutionary Neuroethology Jena Germany
-2. https://ror.org/03jh4jw93 CSIRO Health and Biosecurity Dutton Park Queensland Australia
+1. Max-Planck-Institute for Chemical Ecology, Department of Evolutionary Neuroethology Jena Germany ([ROR:02ks53214](https://ror.org/02ks53214))
+2. CSIRO Health and Biosecurity Dutton Park Queensland Australia ([ROR:03jh4jw93](https://ror.org/03jh4jw93))
 
 † Corresponding author
 
 ## Abstract
 
-The sense of smell is pivotal for nocturnal moths to locate feeding and oviposition sites. However, these crucial resources are often rare and their bouquets are intermingled with volatiles emanating from surrounding ‘background’ plants. Here, we asked if the olfactory system of female hawkmoths, Manduca sexta , could differentiate between crucial and background cues. To answer this question, we collected nocturnal headspaces of numerous plants in a natural habitat of M. sexta . We analyzed the chemical composition of these headspaces and used them as stimuli in physiological experiments at the antenna and in the brain. The intense odors of floral nectar sources evoked strong responses in virgin and mated female moths, most likely enabling the localization of profitable flowers at a distance. Bouquets of larval host plants and most background plants, in contrast, were subtle, thus potentially complicating host identification. However, despite being subtle, antennal responses and brain activation patterns evoked by the smell of larval host plants were clearly different from those evoked by other plants. Interestingly, this difference was even more pronounced in the antennal lobe of mated females, revealing a status-dependent tuning of their olfactory system towards oviposition sites. Our study suggests that female moths possess unique neural coding strategies to find not only conspicuous floral cues but also inconspicuous bouquets of larval host plants within a complex olfactory landscape.
+The sense of smell is pivotal for nocturnal moths to locate feeding and oviposition sites. However, these crucial resources are often rare and their bouquets are intermingled with volatiles emanating from surrounding ‘background’ plants. Here, we asked if the olfactory system of female hawkmoths, Manduca sexta, could differentiate between crucial and background cues. To answer this question, we collected nocturnal headspaces of numerous plants in a natural habitat of M. sexta. We analyzed the chemical composition of these headspaces and used them as stimuli in physiological experiments at the antenna and in the brain. The intense odors of floral nectar sources evoked strong responses in virgin and mated female moths, most likely enabling the localization of profitable flowers at a distance. Bouquets of larval host plants and most background plants, in contrast, were subtle, thus potentially complicating host identification. However, despite being subtle, antennal responses and brain activation patterns evoked by the smell of larval host plants were clearly different from those evoked by other plants. Interestingly, this difference was even more pronounced in the antennal lobe of mated females, revealing a status-dependent tuning of their olfactory system towards oviposition sites. Our study suggests that female moths possess unique neural coding strategies to find not only conspicuous floral cues but also inconspicuous bouquets of larval host plants within a complex olfactory landscape.
 
 ## Introduction
 
@@ -26,41 +26,357 @@ In our study, we collected headspaces of focal plants and background vegetation 
 
 The primary nectar sources for M. sexta in the Southwestern United States are flowers of Agave palmeri and Datura wrightii. Volatile emissions of these two species are strong but very different from each other (Raguso, 2004; Raguso et al., 2003a; Riffell et al., 2008), and their pollen together account for 90% of the pollen load on the proboscis of M. sexta (Alarcón et al., 2008), a measurement that can be used as a proxy for flower visitation. Presence of pollen from Mirabilis longiflora and Mimosa dysocarpa on the moth’s proboscis and nighttime observations reveal that these plants are additional secondary nectar sources in the same habitat (Alarcón et al., 2008; Grant and Grant, 1983). Datura, in addition to being a valuable nectar source for M. sexta, is one of its two larval host plants in the area. Datura plants thus have to interact with an insect that is at the same time an important pollinator and a damaging herbivore (Bronstein et al., 2009), enabling the moth to find an oviposition site by navigating towards the scent of nectar-providing flowers emitted by the same plant (Reisenman et al., 2010). The other local host plant of M. sexta larvae is Proboscidea spp., the only known host belonging to a non-solanaceous family (Mechaber and Hildebrand, 2000). Flowers of Proboscidea, however, are not visited by foraging hawkmoths, that is, Proboscidea plants are suffering from leaf consumption by M. sexta larvae but do not profit from pollination by ovipositing moths. Furthermore, we sampled odors from another 11 native, frequent plants in the direct neighborhood of M. sexta’s focal plants. These background plants have no documented relevance for M. sexta; they included flowering herbaceous plants, nonflowering woody shrubs or trees and tufts of grass. Three of the background plants, the desert willow Chilopsis linearis, the sunflower Helianthus annuus, and the wild grape Vitis arizonica, are larval hosts of other sympatric hawkmoth species (Table 1).
 
+**Table 1.**
+ Headspace collections from plants at the Santa Rita Experimental Range in Arizona (US).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plant species (plant family), common name</th>
+      <th colspan="2">Type of sample</th>
+      <th>Nectar source for adult M. sexta</th>
+      <th>Host plant for M. sexta larvae</th>
+      <th>Larval host plant for sympatric hawkmoths</th>
+      <th>Nocturnal pollination</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Agave palmeri (Asparagaceae), Palmer’s century plant</td>
+      <td colspan="2">Flower</td>
+      <td>X</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Datura wrightii (Solanaceae), Sacred datura</td>
+      <td>Flower</td>
+      <td>Branch</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X*</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Mimosa dysocarpa (Fabaceae), Velvetpod</td>
+      <td colspan="2">Flowering branch</td>
+      <td>X</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Mirabilis longiflora (Nyctaginaceae), Sweet four o'clock</td>
+      <td colspan="2">Flowering branch</td>
+      <td>X</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Proboscidea parviflora (Martyniaceae), Devil’s claw</td>
+      <td colspan="2">Flowering plant</td>
+      <td>−</td>
+      <td>X</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Chilopsis linearis (Bignoniaceae), Desert willow</td>
+      <td colspan="2">Branch with seeds</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X†</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Helianthus annuus (Asteraceae), Common sunflower</td>
+      <td colspan="2">Flowering plant</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X‡</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>Vitis arizonica (Vitaceae), Wild grape</td>
+      <td colspan="2">Branch</td>
+      <td>−</td>
+      <td>−</td>
+      <td>X§</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Amaranthus palmeri (Amaranthaceae), Carelessweed</td>
+      <td colspan="2">Flowering plant</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Argemone pleiacantha (Papaveraceae), Prickly poppy</td>
+      <td colspan="2">Flowering branch</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Baccharis salicifolia (Asteraceae), Seepwillow</td>
+      <td colspan="2">Branch with buds</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Gutierrezia sarothrae (Asteraceae), Snakeweed</td>
+      <td colspan="2">Flowering plant</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Poaceae spp,, Grass</td>
+      <td colspan="2">Tuft of grass</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Prosopis velutina (Fabaceae), Velvet mesquite</td>
+      <td colspan="2">Branch</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Quercus emoryi (Fagaceae), Emory oak</td>
+      <td colspan="2">Branch</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Senna hirsuta v glaberrima (Fabaceae), Woolly Senna</td>
+      <td colspan="2">Flowering plant</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*M. quinquemaculata.†M. rustica, M. florestan.‡M. muscosa.§Eumorpha achemon._
+
 After collecting all nocturnal plant headspaces in situ in the field, we proceeded to analyze this comprehensive chemical database. We then used the plants’ headspaces as stimuli in physiological experiments with female M. sexta. Specifically, we investigated which components of the volatile blends the moth’s antenna can detect, and how the glomerular array of the antennal lobe is coding these complex odor bouquets. An insect’s reaction to olfactory cues is known to be plastic in relation to its physiological condition and experience (Gadenne et al., 2016). The moths tested in our study were laboratory-reared on artificial diet, naïve to plant odors, not fed, and tested only once, as we were interested in the insects’ innate neuronal responses. However, M. sexta has been demonstrated to differentially respond to plant odors depending on its mating status (Mechaber et al., 2002). Underlying this differential response is a state-dependent modulation of the olfactory system, which may take place at the level of the antenna, the brain, or at both levels (Gadenne et al., 2016; Saveer et al., 2012). Therefore, we investigated the peripheral detection of plant headspace and the central representation of this olfactory information in both virgin and mated M. sexta females.
 
 Our results revealed that the olfactory system of female moths responds strongly to odors related to nectar sources. Suitable oviposition substrates elicited much weaker but specific responses, a specificity that was most pronounced in gravid females. Evolution thus seems to have shaped an olfactory system that allows efficient feeding at all stages and that enables the mated female to pinpoint an optimal home for her offspring.
 
 ## Results
 
-## Nocturnal emissions of plants in the habitat of M. sexta
+### Nocturnal emissions of plants in the habitat of M. sexta
 
 We collected the nocturnal headspaces of 17 plant species at the Santa Rita Experimental Range, our study site in Southern Arizona (Figure 1A, Table 1). Headspace samples were analyzed chemically by gas chromatography coupled with mass spectrometry (GC-MS). We first evaluated the number of GC-peaks per sample as a proxy for the number of volatile compounds present. In 10 of the 17 plant samples, the number of emitted compounds was in the range of blank control collections (Figure 1B, gray area). The richest volatile bouquets, on the other hand, were emitted by the sunflower Helianthus, and by M. sexta’s nectar sources Datura flower, Agave flower, and Mirabilis. When we considered not only the number of GC-peaks but also their chemical identity, the same four bouquets revealed distinct chemical profiles. Headspaces of the remaining plants were statistically distinctive but largely overlapping due to low emission rates and shared volatiles, which were also present in the blank control samples (Figure 1C; one-way ANOSIM, R = 0.67, p<0.0001; Bray–Curtis similarity index).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/77429/elife-77429-fig1-v1.jpg)
 
-**Figure 1.:** M. sexta in Southern Arizona.(A) Representative photographs (left) and chromatographs (right) of each headspace collection. x-axis of chromatographs, retention time; y-axis, abundance, same scale for all headspaces, maximum abundance indicated in Datura flower headspace; gray bar, internal standard (5 ng 1-bromodecane). (B) Number of GC-peaks. Squares, average values of 3–5 individual plant samples; whiskers, range; dotted line and gray area, average and range of control values obtained from nocturnal collections in the same habitat with empty bags (n = 2), and with unused filter material (n = 1); open squares, within control range; filled squares, outside control range. (C) Non-metric multidimensional scaling plot (Bray–Curtis, 2D stress: 0.09) based on a nontargeted analysis (https://xcmsonline.scripps.edu; Tautenhahn et al., 2012) of 69 chromatograms (Figure 1—source data 1). Color code of plant samples as in (B).Figure 1—source data 1.Figure 1C.XCMS analysis of 69 headspaces.
+**Figure 1.:** (A) Representative photographs (left) and chromatographs (right) of each headspace collection. x-axis of chromatographs, retention time; y-axis, abundance, same scale for all headspaces, maximum abundance indicated in Datura flower headspace; gray bar, internal standard (5 ng 1-bromodecane). (B) Number of GC-peaks. Squares, average values of 3–5 individual plant samples; whiskers, range; dotted line and gray area, average and range of control values obtained from nocturnal collections in the same habitat with empty bags (n = 2), and with unused filter material (n = 1); open squares, within control range; filled squares, outside control range. (C) Non-metric multidimensional scaling plot (Bray–Curtis, 2D stress: 0.09) based on a nontargeted analysis (https://xcmsonline.scripps.edu; Tautenhahn et al., 2012) of 69 chromatograms (Figure 1—source data 1). Color code of plant samples as in (B).
 
-## What does the moth detect?
+### What does the moth detect?
 
 So far, our analysis considered the chemistry of nocturnal plant emissions. However, M. sexta might still be able to detect plant volatiles occurring only in trace amounts but having a high biological significance, for example, to identify an appropriate oviposition site. Therefore, we performed GC-coupled electro-antennographic detection (GC-EAD) using the antennae of female M. sexta as biological detectors. This technique allows successive presentation of headspace compounds in naturally occurring concentrations to the moth antenna and, in parallel, recording of the pooled response of all antennal olfactory sensory neurons (Figure 2A). We first evaluated the number of EAD-active fractions in the effluent of the GC for each sample type (Figure 2B). With the exception of two background plants (Argemone, Gutierrezia), all plant bouquets contained EAD-active fractions. The nectar sources Agave flower and Datura flower emitted the highest number of compounds (on average, 20 and 17 active fractions, respectively), followed by the bouquets of host plants of sympatric hawkmoths (Chilopsis, Helianthus, Vitis) and a background tree (Prosopis) (11–14 active fractions). The two larval host plants of M. sexta, on the other hand, contained only 4–7 active compounds.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/77429/elife-77429-fig2-v1.jpg)
 
-**Figure 2.:** M. sexta females to nocturnal headspaces of plants.(A) Examples of gas chromatography-coupled electro-antennographic detection (GC-EAD) recordings after stimulation with four plant headspaces representing nectar sources (Agave flower), host plants (Proboscidea), host plants of sympatric hawkmoths (Vitis), and background plants (Prosopis). Upper traces, gas chromatograph-coupled flame ionization detection (GC-FID); lower traces, electro-antennographic detection (EAD) of female M. sexta. Letters indicate EAD-active GC-peaks (labeled in C) that evoked a response in at least three animals. Arrows, internal standard: 5 ng 1-bromodecane; in Agave flower, the internal standard co-eluted with GC-peak ‘z,’ and GC-peaks ‘v’ and ‘x’ are cropped. (B) Number of EAD-active GC-peaks per plant species. We stimulated the antennae (4–7 moths/headspace) with the same representative sample per headspace type. Filled squares, average values; whiskers, range; open squares, no active GC-peaks detected in three moths. Each moth was tested only once. (C) Antennal responses towards GC-peaks (rows) present in headspace (columns). Each cell in the heat map represents the median EAD amplitude of on average five moths (range: 4–7) per headspace. Rows are sorted by EAD amplitude (Figure 2—source data 1); magnitude of response is coded by shades of gray (see inset at top); empty cells, no response/GC fraction not present. Color code of compounds according to chemical class (see inset at bottom). Numbers next to ethyl sorbate and propyl sorbate label different enantiomers present in Agave flower and depict their order by retention time; DMNT, (E)–4,8-dimethyl-1,4,7-nonatriene. Numbers to the right of the heat map depict how often a given compound was present; rows without numbers indicate compounds found only in one headspace. (D) Effectiveness of the strongest antennal stimulants. x-axis, concentration of compounds derived from their peak area (logarithmic scale); y-axis, median EAD amplitudes ≥ 1 mV; gray vertical bar, range of peak areas of the internal standard 1-bromodecane (5 ng). For compounds present in more than one plant species, the lowest concentration eliciting a median EAD amplitude ≥ 1 mV was chosen; letters indicate compounds as in (C); *α-copaene; #(E)-β-farnesene. Peak area of ethyl sorbate2 (‘v’) shows lower limit of concentration as the GC seemed overloaded with this odor.Figure 2—source data 1.Figure 2C.Gas chromatography-coupled electro-antennographic detection (GC-EAD) results from 80 antennae.
+**Figure 2.:** (A) Examples of gas chromatography-coupled electro-antennographic detection (GC-EAD) recordings after stimulation with four plant headspaces representing nectar sources (Agave flower), host plants (Proboscidea), host plants of sympatric hawkmoths (Vitis), and background plants (Prosopis). Upper traces, gas chromatograph-coupled flame ionization detection (GC-FID); lower traces, electro-antennographic detection (EAD) of female M. sexta. Letters indicate EAD-active GC-peaks (labeled in C) that evoked a response in at least three animals. Arrows, internal standard: 5 ng 1-bromodecane; in Agave flower, the internal standard co-eluted with GC-peak ‘z,’ and GC-peaks ‘v’ and ‘x’ are cropped. (B) Number of EAD-active GC-peaks per plant species. We stimulated the antennae (4–7 moths/headspace) with the same representative sample per headspace type. Filled squares, average values; whiskers, range; open squares, no active GC-peaks detected in three moths. Each moth was tested only once. (C) Antennal responses towards GC-peaks (rows) present in headspace (columns). Each cell in the heat map represents the median EAD amplitude of on average five moths (range: 4–7) per headspace. Rows are sorted by EAD amplitude (Figure 2—source data 1); magnitude of response is coded by shades of gray (see inset at top); empty cells, no response/GC fraction not present. Color code of compounds according to chemical class (see inset at bottom). Numbers next to ethyl sorbate and propyl sorbate label different enantiomers present in Agave flower and depict their order by retention time; DMNT, (E)–4,8-dimethyl-1,4,7-nonatriene. Numbers to the right of the heat map depict how often a given compound was present; rows without numbers indicate compounds found only in one headspace. (D) Effectiveness of the strongest antennal stimulants. x-axis, concentration of compounds derived from their peak area (logarithmic scale); y-axis, median EAD amplitudes ≥ 1 mV; gray vertical bar, range of peak areas of the internal standard 1-bromodecane (5 ng). For compounds present in more than one plant species, the lowest concentration eliciting a median EAD amplitude ≥ 1 mV was chosen; letters indicate compounds as in (C); *α-copaene; #(E)-β-farnesene. Peak area of ethyl sorbate2 (‘v’) shows lower limit of concentration as the GC seemed overloaded with this odor.
 
 Across all headspaces, we found 77 EAD-active compounds (Figure 2C) and could tentatively identify 69 of them. These compounds mainly belonged to three chemical classes: terpenes, aliphatic esters, and aromatics. The most potent antennal stimulants (n = 16) elicited median EAD amplitudes > 1.0 mV. Eight of these strongly activating odors were aliphatic esters present exclusively in the bouquet of Agave flowers; three more odors were present in the headspace of nectar sources (Agave flower, Datura flower, and/or Mirabilis) but not in other sample types. The remaining strongly activating odors each occurred in at least five plant species from all sample types and included the most common volatiles in our collections: (Z)-3-hexenyl acetate (11 plants) and β-ocimene (10 plants). When we plotted the concentration of the most activating GC fractions versus the EAD amplitude they evoked, we found that α-copaene, (Z)-3-hexenyl acetate, and β-ocimene were the most active odors at concentrations below 5 ng in 12 hr of odor collection (Figure 2D).
 
 The antenna of M. sexta was in addition reacting with a weaker response towards many more plant-released volatiles in a species-specific manner. Furthermore, two-thirds of all EAD-active GC fractions (51 out of 77) were restricted to one of the plant species (Figure 2C). Thus, beyond the impression received from the chemical analysis (Figure 1C), the moths’ antennae seemed to be well suited to distinguish between plant bouquets even when they had low volatile concentrations and inconspicuous chemical profiles, like the two larval host plants of M. sexta and most background plants. The mating status of the moth had no impact on its detection capabilities at the level of the antenna (two-way ANOSIM, mating status: R = −0.06, p=0.756, plant species: R = 0.97, p<0.0001; Bray–Curtis similarity index).
 
-## How is plant headspace represented in the moth’s antennal lobe?
+### How is plant headspace represented in the moth’s antennal lobe?
 
 In in vivo calcium imaging experiments, we successively stimulated the antennae of female M. sexta with puffs of the plant bouquets collected in Arizona and recorded the odor-evoked neural activity among the olfactory glomeruli of their antennal lobe. Olfactory glomeruli are functional subunits occurring in species-specific numbers. Female M. sexta possess 70 glomeruli arranged in a monolayer around a central neuropil (Grosse-Wilde et al., 2011). Activity patterns of glomeruli in the dorsal-frontal part of the antennal lobe can be monitored using in vivo calcium imaging (Hansson et al., 2003; Sachse et al., 1999). To enable comparison of headspace-evoked activation patterns among different animals, we identified 23 glomeruli in each moth using diagnostic, monomolecular odorants (Figure 3A and B, Bisch-Knaden et al., 2018). We found that plant headspace activated these 23 identified glomeruli (Figure 3C). However, two glomeruli (22 and 23) responded exceptionally weak. They are tuned to acids and amines (Bisch-Knaden et al., 2018), chemical classes that were functionally absent in the tested plant bouquets (Figure 2C). Next, we tested which responses were true headspace-evoked responses, that is, which responses were different from the response towards stimulations with the eluent dichloromethane (Figure 3D), and normalized the fluorescent signals of headspace-evoked responses for each glomerulus and animal (Figure 3E).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/77429/elife-77429-fig3-v1.jpg)
 
-**Figure 3.:** M. sexta.(A) Schematic of 23 olfactory glomeruli at the dorsal surface of the right antennal lobe. Entrance of the antennal nerve is in the upper-left corner. Numbers, glomeruli identification as in Bisch-Knaden et al., 2018. (B) Examples of in vivo calcium imaging recordings after stimulation with plant headspaces representing nectar sources (Agave flower, Datura flower), host plants (Datura foliage, Proboscidea), host plants of sympatric hawkmoths (Vitis), background plants (Prosopis), and the eluent dichloromethane (first and second stimulations at the beginning and end of the experiment). False-color-coded imaging results of the right antennal lobe in a virgin (left column) and a mated female (right column) normalized to their highest response (see color bar). Top row, schematic of individual antennal lobes, colors as in (A). (C) Maximum increase of fluorescence in 23 identified glomeruli. Graph depicts for each glomerulus (color code as in A) the average maximum responses (bars) and 1 standard deviation (whiskers) of 10 virgin and 10 mated females after stimulation with plant headspaces. In 69% of 460 cases (20 maximum values in 23 glomeruli), Datura flower was the headspace eliciting the maximum response, and in 17% it was Agave flower. (D) Number of activated glomeruli in the antennal lobe depending on female mating status. A glomerulus was scored as activated if its headspace-evoked response was different from the averaged response to the two stimulations with the eluent dichloromethane (p<0.01, Friedman test with Dunn’s multiple-comparisons test). For the identity of glomeruli activated by each plant headspace, see Table 2. (E) Activity levels evoked by plant headspace in individual glomeruli in the antennal lobe. Colored dots represent median normalized responses of activated glomeruli in 10 virgin (top) and 10 mated (bottom) females; color code of glomeruli as in (A). Only values of activated glomeruli are shown (small circles, p<0.01, large circles, p<0.001, Friedman test with Dunn’s multiple comparisons test, Figure 3—source data 1).Figure 3—source code 1.Figure 3—source data 1.Figure 3E).
+**Figure 3.:** (A) Schematic of 23 olfactory glomeruli at the dorsal surface of the right antennal lobe. Entrance of the antennal nerve is in the upper-left corner. Numbers, glomeruli identification as in Bisch-Knaden et al., 2018. (B) Examples of in vivo calcium imaging recordings after stimulation with plant headspaces representing nectar sources (Agave flower, Datura flower), host plants (Datura foliage, Proboscidea), host plants of sympatric hawkmoths (Vitis), background plants (Prosopis), and the eluent dichloromethane (first and second stimulations at the beginning and end of the experiment). False-color-coded imaging results of the right antennal lobe in a virgin (left column) and a mated female (right column) normalized to their highest response (see color bar). Top row, schematic of individual antennal lobes, colors as in (A). (C) Maximum increase of fluorescence in 23 identified glomeruli. Graph depicts for each glomerulus (color code as in A) the average maximum responses (bars) and 1 standard deviation (whiskers) of 10 virgin and 10 mated females after stimulation with plant headspaces. In 69% of 460 cases (20 maximum values in 23 glomeruli), Datura flower was the headspace eliciting the maximum response, and in 17% it was Agave flower. (D) Number of activated glomeruli in the antennal lobe depending on female mating status. A glomerulus was scored as activated if its headspace-evoked response was different from the averaged response to the two stimulations with the eluent dichloromethane (p<0.01, Friedman test with Dunn’s multiple-comparisons test). For the identity of glomeruli activated by each plant headspace, see Table 2. (E) Activity levels evoked by plant headspace in individual glomeruli in the antennal lobe. Colored dots represent median normalized responses of activated glomeruli in 10 virgin (top) and 10 mated (bottom) females; color code of glomeruli as in (A). Only values of activated glomeruli are shown (small circles, p<0.01, large circles, p<0.001, Friedman test with Dunn’s multiple comparisons test, Figure 3—source data 1).
 
 Consistent with the results from GC-EAD experiments, Datura and Agave bouquets were again unique regarding not only the number of activated glomeruli (Figure 3D) but also the strength of response (Figure 3E). Datura flower scent evoked the maximal response recorded in all but two glomeruli in virgin females (glomeruli 12 and 21), and in all but one glomerulus in mated females (glomerulus 12). Agave flower scent was the best activator for these remaining glomeruli. Apart from the weak activation levels of glomeruli 22 and 23, this exceptional representation of M. sexta’s two primary nectar sources was independent of the females’ mating status (Table 2), at least among the 23 glomeruli imaged in this study.
+
+**Table 2.**
+ Headspace-activated glomeruli independent and dependent of mating status.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Glomerulus</th>
+      <th>Response independent of mating status</th>
+      <th>Response only before mating</th>
+      <th>Response only after mating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1*</td>
+      <td>Agave, Datura</td>
+      <td>Mirabilis, Helianthus, Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Agave, Datura, Mirabilis, Helianthus</td>
+      <td>Mimosa, Vitis, Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Agave, Datura, Mirabilis, Helianthus</td>
+      <td>Mimosa, Chilopsis, Vitis, Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>4*</td>
+      <td>Agave, Datura, Mimosa, Mirabilis, Datura foliage, Chilopsis, Helianthus, Vitis</td>
+      <td>Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Agave, Datura, Helianthus, Vitis</td>
+      <td>Mimosa, Chilopsis, Gutierrezia, Prosopis</td>
+      <td>Mirabilis</td>
+    </tr>
+    <tr>
+      <td>6*</td>
+      <td>Agave, Datura, Mimosa, Mirabilis, Chilopsis, Helianthus, Vitis</td>
+      <td>Gutierrezia, Prosopis</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Agave, Datura, Helianthus</td>
+      <td>Mimosa, Vitis, Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Agave, Datura, Mimosa, Chilopsis, Helianthus, Vitis</td>
+      <td>Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Agave, Datura, Mimosa, Helianthus, Vitis</td>
+      <td>Chilopsis, Gutierrezia</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Agave, Datura</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Agave, Datura</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12*</td>
+      <td>Agave, Datura, Mimosa</td>
+      <td>Amaranthus</td>
+      <td>Mirabilis, Proboscidea, Chilopsis, Helianthus, Vitis</td>
+    </tr>
+    <tr>
+      <td>13*</td>
+      <td>Agave, Datura, Mimosa</td>
+      <td>Prosopis</td>
+      <td>Mirabilis, Chilopsis, Helianthus, Vitis</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Agave, Datura, Mimosa, Amaranthus</td>
+      <td>Prosopis, Senna</td>
+      <td>Chilopsis, Helianthus</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Agave, Datura, Mimosa, Chilopsis, Helianthus, Vitis, Prosopis, Senna</td>
+      <td>Proboscidea, Amaranthus</td>
+      <td>Mirabilis</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Agave, Datura, Mimosa, Chilopsis, Helianthus, Prosopis</td>
+      <td>Amaranthus, Baccharis</td>
+      <td>Vitis</td>
+    </tr>
+    <tr>
+      <td>17*</td>
+      <td>Agave, Datura, Mimosa, Helianthus, Vitis, Senna</td>
+      <td>Prosopis</td>
+      <td>Mirabilis, Chilopsis</td>
+    </tr>
+    <tr>
+      <td>18*</td>
+      <td>Agave, Datura, Mimosa</td>
+      <td></td>
+      <td>Chilopsis, Helianthus</td>
+    </tr>
+    <tr>
+      <td>19*</td>
+      <td>Agave, Datura, Mimosa, Helianthus</td>
+      <td>Prosopis</td>
+      <td>Chilopsis, Vitis</td>
+    </tr>
+    <tr>
+      <td>20*</td>
+      <td>Agave, Datura</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>21*</td>
+      <td>Agave, Datura</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td></td>
+      <td>Agave</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td></td>
+      <td></td>
+      <td>Datura</td>
+    </tr>
+  </tbody>
+</table>
+
+_Font format depicts type of plant headspace: nectar source of M. sexta, host plant of M. sexta, host plant of sympatric hawk moths, background plant.*Glomerulus whose activation level is positively correlated with odor-guided behavior of virgin females in wind tunnel experiments (Bisch-Knaden et al., 2018)._
 
 Volatiles emitted by M. sexta’s larval host plants each activated only a single glomerulus out of the 23 imaged in the antennal lobe of females (Figure 3D). Glomerulus 4 responded to the bouquet of Datura foliage irrespective of the female’s mating status; Proboscidea headspace, however, activated a different single glomerulus in virgin (glomerulus 15) than in mated females (glomerulus 12) (Figure 3E, Table 2). Furthermore, we observed a notable effect of the mating status on the representation of plants that are oviposition sites of sympatric hawkmoths (Chilopsis, Helianthus, Vitis). These plants evoked a major response in the antennal lobe of virgin M. sexta females (8–13 activated glomeruli) and an even stronger response in mated females (11–16 activated glomeruli) (Figure 3D and E). In contrast, females became almost anosmic towards the headspace of background plants following mating as these plants activated on average 3.1 glomeruli (range: 0–9) in virgin, but only 0.6 glomeruli (range: 0–2) in mated females (Figure 3D). The few glomeruli still responding towards background bouquets were different from the two host plant-activated glomeruli (Figure 3E, Table 2).
 
@@ -104,48 +420,48 @@ By using ecologically relevant odors collected in the actual habitat of our mode
 
 ## Materials and methods
 
-## Headspace collection in the field
+### Headspace collection in the field
 
 We collected the headspace of plants in a habitat of M. sexta at the Santa Rita Experimental Range, 40 km south of Tucson, Arizona, at the foot of the Santa Rita Mountains (31°78′ N, 110°82′ W). All plant species sampled (Table 1) are native to the habitat and belong to the regular desert grassland vegetation at Santa Rita Experimental Range (Medina, 2003). We sampled from flowering plants or flowering branches if the respective plant was blooming during the experimental nights. Otherwise, nonflowering branches were sampled (Table 1). Agave is a succulent plant with a basal rosette of sharp-edged leaves, each with a length of c. 1 m and long spines at the tip. These leaves did not fit in our collection bags (see below). We therefore only collected headspace from Agave flowers, which appear in umbels at the end of a long bloom stalk without leaves (about 5–6 m above the basal rosette of leaves). In the case of Datura, the flower is a valuable nectar source and the leaves are an oviposition substrate for M. sexta. We therefore tested flowers and leaves of Datura separately.
 
 At sunset, we carefully enclosed plants in polyethylene terephthalate bags (Toppits, Germany). Charcoal-filtered, environmental air was pumped into the bag through a silicone tube connected to a custom-made portable pump. Air was pumped out of the bag through a second silicone tube passing a volatile collection trap (Porapak-Q 25 mg, https://www.volatilecollectiontrap.com). Shortly after sunrise, we unpacked the plants, removed the volatile collection traps, and stored them at −20°C. We collected the headspaces of plants on nine consecutive nights (August 19–27, 2018). In the first and last nights, we made a control collection with an empty bag placed on the ground close to the collection sites of plant headspaces. One volatile collection trap not used but treated in the same way as headspace-collecting traps served as a handling control. In Jena, Germany, all volatile collection traps were eluted with 4 × 100 µl dichloromethane containing 5 ng/µl bromodecane as an internal standard.
 
-## Chemical analysis
+### Chemical analysis
 
 Headspace samples were analyzed by GC-MS (7890B GC System, 5977A MSD, Agilent Technologies, https://www.agilent.com) equipped with a polar column (HP-INNOWAX, 30 m long, 0.25 mm inner diameter, 25 µm film thickness; Agilent) with helium as carrier gas. The inlet temperature was set to 240°C. The temperature of the GC oven was held at 40°C for 3 min, and then increased by 10°C per min to 260°C. This final temperature was held for 15 min. The MS transferline was held at 260°C, the MS source at 230°C, and the MS quad at 150°C. Mass spectra were taken in electron ionization mode (70 eV) in the range from m/z 29 to 350. GC-MS data were processed with the MDS-ChemStation Enhanced Data Analysis software (Agilent).
 
-## Breeding of M. sexta
+### Breeding of M. sexta
 
 M. sexta larvae were reared in the laboratory on artiﬁcial diet (Grosse-Wilde et al., 2011). Female pupae were kept in a climate chamber (25°C, 70% relative humidity) with a reversed light cycle (8 hr dark/16 hr light), and moths were tested during their scotophase on days 2–4 after hatching (GC-EAD), or at day 3 after hatching (calcium imaging). Moths were unfed and had no experience with plant-derived volatiles. To obtain mated females, we placed them in a cage with an equal number of males 1 day before an experiment was planned. We checked the cage 3–4 hr later and removed all animals that were not mating.
 
-## GC-EAD recordings
+### GC-EAD recordings
 
 We used GC with flame-ionization detection (GC-FID) coupled with electro-antennographic detection (EAD) to identify compounds in headspace collections that can be sensed by M. sexta. One antenna of a female moth (virgin and mated in equal numbers), age 2–4 days, was cut and connected to two glass electrodes filled with physiological saline solution (Christensen and Hildebrand, 1987). The reference electrode was inserted into the basal segment of the antenna, and the recording electrode was brought in contact with the tip of the antennae. The EAD signal (transferred via Ag-AgCl wires) was pre-amplified (10×) with a probe connected to a high-impedance DC amplifier (EAG-probe, Syntech, https://www.syntech.nl) and digitally converted (IDAC-4 USB, Syntech), visualized, and recorded on a PC using the software Autospike (Syntech). For each run, 2 µl of a headspace sample (a lower amount of 1 µl for Agave flower and Datura flower) was injected into a GC-FID (6890N, Agilent) equipped with a polar column (HP-INNOWAX, 30 m long, 0.32 mm inner diameter, 0.25 µm film thickness, Agilent) with helium as carrier gas. The inlet temperature was set to 250°C. The temperature of the GC oven was held at 40°C for 2 min, and then increased by 10°C per min to 260°C. This final temperature was held for 10 min. The GC was equipped with an effluent splitter (Gerstel) at the end of the analytical column, with a GC:antenna split ratio of 1:10 and helium as carrier gas. One arm was connected with the FID of the GC, and the other arm entered a heated (270°C) GC-EAD interface (Syntech) that was connected to a bent glass tube (diameter: 12 mm). The antenna-directed GC effluent was mixed with a humidified, charcoal-filtered air stream (1 l/min) to cool the effluent down and guide it to the antenna. Signals from the moth’s antenna and the FID were recorded simultaneously. Sample size was 4–7 antenna per sample type; if a given sample type did not elicit a single response in three different animals, it was not tested any further (Argemone, Gutierrezia, empty bag). A GC-peak was scored as EAD-active if it induced a response at the same retention time in at least three antennae and if this GC fraction was present in at least one other headspace of the same type.
 
-## Identiﬁcation of compounds
+### Identiﬁcation of compounds
 
 On both GC instruments (GC-MS and GC-FID), we ran a series of 20 n-alkanes and matched retention times of EAD-active peaks and peaks obtained with the GC-MS using their Kovats retention indices. EAD-active peaks were tentatively identified by comparison of their mass spectra and Kovats retention indices with those from a reference library (National Institute of Standards and Technologies), and a database built in our laboratory with synthetic standards using the same GC-MS instrument. Compounds yielding a match of mass spectra above 90% were rated as tentatively identified. The fragmentation pattern of some EAD-active peaks could not be clearly matched to any library compound and was labeled as unidentified (see Figure 2C).
 
-## Preparation for calcium imaging experiments
+### Preparation for calcium imaging experiments
 
 Female moths were tested; they were either virgin or mated on day 1 after emergence. On day 2, moths were positioned in a 15 ml plastic tube with the tip cut open. The head was protruding at the narrow end and was fixed in this position with dental wax. Labial palps and proboscis were also fixed with wax to reduce movement artifacts during the experiments. A window was cut in the head capsule between the compound eyes, and the tissue covering the brain was removed until the antennal lobes were visible. We added 50 µl Pluronic F-127 (Invitrogen) to 50 μg of the membrane-permeant form of a fluorescent calcium indicator (Calcium Green-1 AM, Invitrogen) and sonicated the solution for 10 min. Then, we added 800 µl physiological saline solution (Christensen and Hildebrand, 1987) and sonicated again for 10 min. Then, 20 µl of this dye solution was applied to the exposed brain, and the preparation was incubated in a humid chamber for 45 min at room temperature. Then, we rinsed the brain several times with physiological saline solution to remove excess dye and stored the moths at 4°C overnight to calm them down and reduce their movements. Imaging experiments were performed the following day (day 3 after emergence).
 
-## Calcium imaging
+### Calcium imaging
 
 The imaging setup consisted of a CCD camera (Olympus U-CMAD3) mounted to an upright microscope (Olympus BX51WI) equipped with a water immersion objective (Olympus, 10×/0.30). Calcium green-1 AM was excited at 475 nm (500 nm shortpass optical filter; xenon arc lamp, Polychrome V, Till Photonics), and fluorescence was detected at 490/515 nm (dichroic longpass/longpass). The setup was controlled by the software Tillvision version 4.6 (Till Photonics). Fourfold symmetrical binning resulted in image sizes of 344 × 260 pixels, with one pixel corresponding to an area of 4 µm × 4 µm.
 
-## Odor stimulation
+### Odor stimulation
 
 To create a functional map of glomeruli in the antennal lobe, we first tested 19 diagnostic odors (Bisch-Knaden et al., 2018) in each animal. Then, we tested 17 headspaces of plants (Table 1) and 1 collection with an empty bag. The same samples as in GC-EAD experiments were used. Then, 10 µl of a diagnostic odor or an eluted headspace were applied onto a circular piece of filter paper (diameter: 12 mm, Whatman) that was inserted in a glass pipette; 10 µl of the solvent mineral oil (diagnostic odors) or the eluent dichloromethane (headspace) served as control stimuli. A pipet tip sealed with dental wax closed the pipettes until the start of the experiment. As dichloromethane alone evoked a response in the antennal lobe (Figure 3B), pipettes with headspace samples and two pipettes with dichloromethane were left open for 3–5 min before sealing them to allow evaporation of the eluent. Filter papers were renewed every experimental day (diagnostic odors) or the pipettes were stored at –20°C and used on up to three experimental days (headspace). The immobilized moth was placed upright under the microscope. A glass tube (diameter: 5 mm) was directed perpendicular to one antenna and delivered a constant stream of charcoal-filtered, moistened air (0.5 l/min). Two glass pipettes were inserted through small holes in the tube. One pipette (inserted 5.5 cm from end of tube) was empty and added clean air to the continuous airstream (0.5 l/min). This airstream could automatically be switched (Syntech Stimulus Controller CS-55) to the second pipette (inserted 3.5 cm from the end of tube) that contained an odor-laden filter paper. By this procedure, the airstream reaching the antenna was not altered during odor stimulation, thus reducing mechanical disturbances. One odor stimulation experiment lasted 10 s and was recorded with a sampling rate of 4 Hz corresponding to 40 frames. The time course of an odorant stimulation experiment was as follows: 2 s clean airstream (frames 1–8), 2 s odorous airstream (frames 9–16), and 6 s clean airstream (frames 17–40). Odors were presented with at least 1 min interstimulus interval to avoid adaptation. The sequence of headspace stimulations changed from animal to animal, and a control stimulus with dichloromethane was presented at the beginning and end of this sequence.
 
-## Processing of calcium imaging data
+### Processing of calcium imaging data
 
 Stimulation experiments resulted in a series of 40 consecutive frames that were analyzed with custom-written software (IDL, L3Harris Geospatial; Figure 3—source code 1). Several processing steps were applied to enhance the signal-to-noise ratio: (1) background correction: background activity was defined as the average fluorescence (F) of frames 3–7 (i.e., before stimulus onset) and was subtracted from the fluorescence of each frame. This background-corrected value (deltaF) was divided by the background fluorescence to get the relative changes of fluorescence over background fluorescence for each frame (deltaF/F). (2) Bleaching correction: the fluorescent dye bleached slowly during the exposure to light, and therefore, we subtracted from each frame an exponential decay curve that was estimated from the bleaching course of frames 3–7 and frames 26–40 (i.e., before and after stimulus and response). (3) Median filtering: a spatial median filter with a width of 7 pixels was applied to remove outliers. (4) Movement correction: possible shifts of the antennal lobe from one stimulation experiment to the next one were corrected by aligning frame 20 of each experiment to frame 20 of the median experiment in a given animal. The outline of the antennal lobe and remains of tracheae served as guides for this movement correction procedure. Increased neural activity, indicated as an increase of the intracellular calcium concentration after stimulation with the diagnostic odors, was leading to spatially restricted spots of increased fluorescence in the antennal lobe. In the center of each activity spot, the average deltaF/F was recorded in an area of the size of a small- to medium-sized glomerulus (60 µm × 60 µm). Time traces of deltaF/F were averaged over three successive frames for each activity spot. In these smoothed time traces, the maximum deltaF/F after stimulus onset was determined. The average of the maximum value and the value before and after the maximum were calculated and were defined as the response of the animal to the odor stimulation at the given activity spot.
 
-## Analysis of response to headspace stimulation
+### Analysis of response to headspace stimulation
 
 Activation patterns evoked by the diagnostic odors helped to establish an individual schematic of 23 putative glomeruli for each animal (Figure 3). Then, responses in these 23 glomeruli were calculated for stimulations with headspaces and dichloromethane. To identify headspace-activated glomeruli, we tested for each glomerulus if its mean response towards the two control stimulations with dichloromethane was clearly different from the response to the headspaces (p<0.01, Friedman test with Dunn’s multiple-comparisons test). We then normalized responses for each glomerulus in a given animal according to its response to headspaces and dichloromethane (lowest response = 0, highest response = 100) to balance for variability between individuals.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes and statistical tests used are given in the text and figure legends. Statistical tests were performed with PAST (version 3.26, http://folk.uio.no/ohammer/past/) and GraphPad InStat (version 3.10, GraphPad Software, San Diego, CA, https://www.graphpad.com).

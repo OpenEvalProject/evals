@@ -30,11 +30,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01p5m7v59 The Sixth Laboratory, National Vaccine and Serum Institute (NVSI) Beijing China
+1. The Sixth Laboratory, National Vaccine and Serum Institute (NVSI) Beijing China ([ROR:01p5m7v59](https://ror.org/01p5m7v59))
 2. National Engineering Center for New Vaccine Research Beijing China
 3. Beijing Institute of Biological Products Company Limited Beijing China
-4. https://ror.org/04b1sh213 National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention (China CDC) Beijing China
-5. https://ror.org/041rdq190 National Institutes for Food and Drug Control (NIFDC) Beijing China
+4. National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention (China CDC) Beijing China ([ROR:04b1sh213](https://ror.org/04b1sh213))
+5. National Institutes for Food and Drug Control (NIFDC) Beijing China ([ROR:041rdq190](https://ror.org/041rdq190))
 
 † Corresponding author
 
@@ -52,27 +52,83 @@ Guided by structural and computational analyses of S protein RBD, we have develo
 
 ## Results
 
-## Design of the mos-tri-RBD based on the RBDs from SARS-CoV-2 Omicron and other variants
+### Design of the mos-tri-RBD based on the RBDs from SARS-CoV-2 Omicron and other variants
 
 RBD forms a relatively compacted and isolated domain in the structure of spike (S) protein, and the beta-sheets in the core as well as the existence of four disulfide bonds stabilizes the tertiary structure of the domain. The N- and C-termini of RBD are close together, and there exist long loops in both termini. These structural features inspired our construction of a trimeric form of RBD (tri-RBD) through an end-to-end connection of three RBDs into a single chain, in which their own long loops at the N- and C-termini serve as the linkers. The designed tri-RBD enables the accommodation of three RBDs in one immunogen, which can be extended to include Omicron RBD into the immunogen.
 
 In this study, mos-tri-RBD was designed targeting Omicron as well as other emerging variants with distinct immune evasion capability. Mos-tri-RBD also consisted of three RBDs, one of which was derived from Omicron and the other two were artificially designed to carry the key mutations appearing in SARS-CoV-2 variants. These key mutations integrated into mos-tri-RBD were selected as those appearing in SARS-CoV-2 VOCs or VOIs and simultaneously being ranked in the top ten most frequently occurring mutations in RBD as counted by Wei group (https://weilab.math.msu.edu/MutationAnalyzer/). According to this criterion, a total of eight mutations were chosen and introduced into the two artificially designed RBDs (The details on these mutations were provided in Table 1), where one RBD contained the mutations of K417N, L452R, T478K, F490S and N501Y, and the other included K417T, S477N and E484K (Figure 1A). Many pieces of evidence have indicated that these mutations largely contribute to the immune escape of the related variants. We sought to integrate these key mutations into a single immunogen to elicit cross-neutralization against not only SARS-CoV-2 Omicron but also other circulating variants. To facilitate the self-trimerization of mos-tri-RBD, for each RBD the residues 319–537 were truncated from the S protein to retain the long loops at both termini, as shown in Figure 1A. Our previous studies have shown that the RBDs with this truncation scheme can correctly fold and co-assemble into a trimeric structure (Liang et al., 2022).
 
+**Table 1.**
+ The details on the eight selected mutations integrated into the two artificially designed RBDs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutations</th>
+      <th>Rank of the observed frequency</th>
+      <th>VOCs and VOIs carrying the mutations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>L452R</td>
+      <td>1</td>
+      <td>Delta</td>
+    </tr>
+    <tr>
+      <td>T478K</td>
+      <td>2</td>
+      <td>Delta, Omicron</td>
+    </tr>
+    <tr>
+      <td>N501Y</td>
+      <td>3</td>
+      <td>Alpha, Beta, Gamma, Omicron, Mu</td>
+    </tr>
+    <tr>
+      <td>E484K</td>
+      <td>4</td>
+      <td>Beta, Gamma, Mu</td>
+    </tr>
+    <tr>
+      <td>K417T</td>
+      <td>5</td>
+      <td>Gamma</td>
+    </tr>
+    <tr>
+      <td>S477N</td>
+      <td>6</td>
+      <td>Omicron</td>
+    </tr>
+    <tr>
+      <td>K417N</td>
+      <td>8</td>
+      <td>Beta, Omicron</td>
+    </tr>
+    <tr>
+      <td>F490S</td>
+      <td>10</td>
+      <td>Lambda</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/78633/elife-78633-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic illustration of the designed mos-tri-RBD. In mos-tri-RBD, three heterologous RBDs were connected end to end into a single chain and co-assembled into a trimeric structure. For the three RBDs, one was derived from the Omicron (BA.1) variant (green color), and the other two were artificially designed harboring the key immune-evasion-related mutations that emerged in SARS-CoV-2 variants, in which one contained the mutations of K417N, L452R, T478K, F490S, and N501Y (cyan color), and the other one contained K417T, S477N, and E484K (blue color). These mutations are highlighted in the red ball-and-stick model in the figure. Each RBD subunit in mos-tri-RBD was composed of the residues 319–537 from the spike protein. The dotted curves in the figure represent the direct connection between the C-terminus of the former RBD and the N-terminus of the latter RBD. The schematic structure of mos-tri-RBD was drawn by Chimera software (Pettersen et al., 2004) based on the PDB file with accession number 6zgi. (B) SDS-PAGE analysis of the recombinant mos-tri-RBD. (C) Concentration-dependent binding ability of mos-tri-RBD with an RBD-specific monoclonal neutralizing antibody MM117 tested using ELISA. (D) Binding avidity of mos-tri-RBD with the receptor hACE2 measured using SPR assay. In this figure, different curves represent different concentrations of analyte (top to bottom: 263.70 ng/ml, 131.85 ng/ml, 65.93 ng/ml, 32.96 ng/ml, and 16.48 ng/ml). Both the original (color curves) and fitted (black curves) data are displayed.Figure 1—source data 1.Figure 1—source data 2.
+**Figure 1.:** (A) Schematic illustration of the designed mos-tri-RBD. In mos-tri-RBD, three heterologous RBDs were connected end to end into a single chain and co-assembled into a trimeric structure. For the three RBDs, one was derived from the Omicron (BA.1) variant (green color), and the other two were artificially designed harboring the key immune-evasion-related mutations that emerged in SARS-CoV-2 variants, in which one contained the mutations of K417N, L452R, T478K, F490S, and N501Y (cyan color), and the other one contained K417T, S477N, and E484K (blue color). These mutations are highlighted in the red ball-and-stick model in the figure. Each RBD subunit in mos-tri-RBD was composed of the residues 319–537 from the spike protein. The dotted curves in the figure represent the direct connection between the C-terminus of the former RBD and the N-terminus of the latter RBD. The schematic structure of mos-tri-RBD was drawn by Chimera software (Pettersen et al., 2004) based on the PDB file with accession number 6zgi. (B) SDS-PAGE analysis of the recombinant mos-tri-RBD. (C) Concentration-dependent binding ability of mos-tri-RBD with an RBD-specific monoclonal neutralizing antibody MM117 tested using ELISA. (D) Binding avidity of mos-tri-RBD with the receptor hACE2 measured using SPR assay. In this figure, different curves represent different concentrations of analyte (top to bottom: 263.70 ng/ml, 131.85 ng/ml, 65.93 ng/ml, 32.96 ng/ml, and 16.48 ng/ml). Both the original (color curves) and fitted (black curves) data are displayed.
 
-## Expression, identification, and characterization of the recombinant mos-tri-RBD protein
+### Expression, identification, and characterization of the recombinant mos-tri-RBD protein
 
-The recombinant mos-tri-RBD was expressed using CHO cells, and then purified by chromatography and ultrafiltration as described previously (Liang et al., 2022). Based on the sequence of the designed mos-tri-RBD, the theoretically calculated mass of each RBD was about 24–25 kDa, and that of the entire mos-tri-RBD was approximately 74 kDa. SDS-PAGE analysis displayed an obvious band corresponding to the molecular mass of about 92 kDa (Figure 1B), implying the formation of the trimeric RBD. The measured mass was larger than the theoretical value calculated by the sequence, which was attributed to the heavy glycosylation of the protein as discussed in our previous studies (Liang et al., 2022). To determine the biological function of the recombinant mos-tri-RBD, its binding ability to an RBD-specific monoclonal neutralizing antibody MM117 was tested using enzyme-linked immunosorbent assay (ELISA). MM117 has been proved to be able to bind specifically with the RBDs of SARS-CoV-2 prototype, Omicron and Delta strains. Protein concentration-dependent binding activity was observed for MM117, suggesting the formation of native conformation of the RBDs in mos-tri-RBD (Figure 1C). Furthermore, the binding avidity of mos-tri-RBD with the receptor human angiotensin converting enzyme 2 (hACE2) was also measured using surface plasmon resonance (SPR) assay. The association rate constant (ka) and dissociation rate constant (kd) were quantified to be 3.87×107 M-1s-1 and 2.59×10-4 s-1 , respectively, and thus the apparent dissociation constant KD was determined to be 6.69×10-3 nM (Figure 1D). Many studies have revealed that the dissociation constant for the prototype monomeric RBD binding to hACE2 was in the range of 2.66-26.34 nM, and those for the Beta and Omicron monomeric RBDs were 1.75-13.83 nM and 2.48-31.40 nM, respectively (Routhu et al., 2021; Laffeber et al., 2021; Xu et al., 2022a; Xu et al., 2022b; Lan et al., 2022; Han et al., 2022). The studies of Routhu et al. demonstrated that the hACE2 binding avidity of the RBD trimer was about 500-fold higher than that of the RBD monomer (Routhu et al., 2021). Our previous studies showed that the apparent dissociation constant for another designed trimeric RBD protein, which is composed of three RBDs derived respectively from the prototype, Beta and Kappa viruses, binding to hACE2 was 3.20×10-3 nM (Liang et al., 2022). The SPR detection results for the designed mos-tri-RBD were consistent with our previous studies (Liang et al., 2022) and the results reported by Routhu et al. (Routhu et al., 2021). The results of SPR assay verified the functionality of the designed mos-tri-RBD and the correct folding of each RBD into its native conformation. All these results suggested that the designed mos-tri-RBD assembled into a trimeric form and each RBD subunit correctly folded into its native structure.
+The recombinant mos-tri-RBD was expressed using CHO cells, and then purified by chromatography and ultrafiltration as described previously (Liang et al., 2022). Based on the sequence of the designed mos-tri-RBD, the theoretically calculated mass of each RBD was about 24–25 kDa, and that of the entire mos-tri-RBD was approximately 74 kDa. SDS-PAGE analysis displayed an obvious band corresponding to the molecular mass of about 92 kDa (Figure 1B), implying the formation of the trimeric RBD. The measured mass was larger than the theoretical value calculated by the sequence, which was attributed to the heavy glycosylation of the protein as discussed in our previous studies (Liang et al., 2022). To determine the biological function of the recombinant mos-tri-RBD, its binding ability to an RBD-specific monoclonal neutralizing antibody MM117 was tested using enzyme-linked immunosorbent assay (ELISA). MM117 has been proved to be able to bind specifically with the RBDs of SARS-CoV-2 prototype, Omicron and Delta strains. Protein concentration-dependent binding activity was observed for MM117, suggesting the formation of native conformation of the RBDs in mos-tri-RBD (Figure 1C). Furthermore, the binding avidity of mos-tri-RBD with the receptor human angiotensin converting enzyme 2 (hACE2) was also measured using surface plasmon resonance (SPR) assay. The association rate constant (ka) and dissociation rate constant (kd) were quantified to be $3.87\times10^{7} M^{-1}s^{-1}$ and $2.59\times10^{-4} s^{-1}$ , respectively, and thus the apparent dissociation constant KD was determined to be $6.69\times10^{-3} nM$ (Figure 1D). Many studies have revealed that the dissociation constant for the prototype monomeric RBD binding to hACE2 was in the range of $2.66-26.34 nM$, and those for the Beta and Omicron monomeric RBDs were $1.75-13.83 nM$ and $2.48-31.40 nM$, respectively (Routhu et al., 2021; Laffeber et al., 2021; Xu et al., 2022a; Xu et al., 2022b; Lan et al., 2022; Han et al., 2022). The studies of Routhu et al. demonstrated that the hACE2 binding avidity of the RBD trimer was about 500-fold higher than that of the RBD monomer (Routhu et al., 2021). Our previous studies showed that the apparent dissociation constant for another designed trimeric RBD protein, which is composed of three RBDs derived respectively from the prototype, Beta and Kappa viruses, binding to hACE2 was $3.20\times10^{-3} nM$ (Liang et al., 2022). The SPR detection results for the designed mos-tri-RBD were consistent with our previous studies (Liang et al., 2022) and the results reported by Routhu et al. (Routhu et al., 2021). The results of SPR assay verified the functionality of the designed mos-tri-RBD and the correct folding of each RBD into its native conformation. All these results suggested that the designed mos-tri-RBD assembled into a trimeric form and each RBD subunit correctly folded into its native structure.
 
-## Mos-tri-RBD induced potent cross-reactive neutralizing response against the live viruses of SARS-CoV-2 Omicron and other immune-evasive variants
+### Mos-tri-RBD induced potent cross-reactive neutralizing response against the live viruses of SARS-CoV-2 Omicron and other immune-evasive variants
 
 To evaluate the cross-reactive immunogenicity of the designed mos-tri-RBD, we intramuscularly immunized rats using two doses of mos-tri-RBD mixed with Aluminum adjuvant three weeks apart. Another three groups of rats received two doses of homo-tri-RBD, BBIBP-CorV or adjuvant, respectively, with the same immunization regimen were used for comparison. Sera from the immunized rats were collected on day 7 after the last vaccination (Figure 2A). Neutralizing ID50 titers in the sera against multiple SARS-CoV-2 strains, including prototype, Omicron (BA.1.1), Beta and Delta strains, were detected using live-virus neutralization assay.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/78633/elife-78633-fig2-v2.jpg)
 
-**Figure 2.:** (A) Timeline of rat immunization and serum collections. A group of Wistar rats (n=10 with half male and half female) were immunized intramuscularly with two doses of mos-tri-RBD with three weeks apart. Another three groups of rats received two doses of homo-tri-RBD, BBIBP-CorV and adjuvant, respectively, were used for comparison (n=10 rats per group with half male and half female). Sera from all the immunized rats were collected on day 7 after the last vaccination. (B) The reciprocal neutralizing ID50 titers in the sera elicited by mos-tri-RBD compared with those elicited by homo-tri-RBD and BBIBP-CorV against the live-viruses of SARS-CoV-2 prototype strain, and Omicron, Beta, and Delta variants. The quantification limit of the live-virus neutralization assay was 20, and the ID50 titers below the limit of quantification (LOQ) were set to 20. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.Figure 2—source data 1.
+**Figure 2.:** (A) Timeline of rat immunization and serum collections. A group of Wistar rats (n=10 with half male and half female) were immunized intramuscularly with two doses of mos-tri-RBD with three weeks apart. Another three groups of rats received two doses of homo-tri-RBD, BBIBP-CorV and adjuvant, respectively, were used for comparison (n=10 rats per group with half male and half female). Sera from all the immunized rats were collected on day 7 after the last vaccination. (B) The reciprocal neutralizing ID50 titers in the sera elicited by mos-tri-RBD compared with those elicited by homo-tri-RBD and BBIBP-CorV against the live-viruses of SARS-CoV-2 prototype strain, and Omicron, Beta, and Delta variants. The quantification limit of the live-virus neutralization assay was 20, and the ID50 titers below the limit of quantification (LOQ) were set to 20. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.
 
 Live-virus neutralization assay showed that compared with the prototype virus, the Omicron variant exhibits substantially less susceptibility to neutralization elicited by two doses of BBIBP-CorV vaccination. The geometric mean titer (GMT) of neutralizing antibodies against prototype strain was 699, whereas the Omicron-specific neutralizing ID50 in half of the rats was less than the detectable limit of the assay (Figure 2B), suggesting substantial evasion of Omicron variant from the immunity elicited by BBIBP-CorV. The result was consistent with the findings of other studies that Omicron exhibited significant immune escape capability (Zhang et al., 2022; Liu et al., 2022; Cele et al., 2022; Rössler et al., 2021; Cao et al., 2022). Compared with BBIBP-CorV, homo-tri-RBD vaccination significantly improved the neutralizing antibody GMT against Omicron virus from <31 to 1077, with a more than 34.7-fold increase. Furthermore, remarkably enhanced neutralizing ID50 titers against Omicron were elicited by mos-tri-RBD vaccination, in which the neutralizing GMT reached 2876, with 2.7-fold and >92.8-fold increases in comparison to the homo-tri-RBD and BBIBP-CorV vaccinations, respectively (Figure 2B). Statistical analysis showed that the anti-Omicron neutralizing antibody response elicited by mos-tri-RBD was significantly higher than that of homo-tri-RBD (p=0.0057) and the neutralization elicited by homo-tri-RBD was also significantly higher than that of BBIBP-CorV (p<0.0001). Our study demonstrated that the designed mos-tri-RBD exhibited much higher immunogenicity against Omicron variant than homo-tri-RBD and BBIBP-CorV. Mos-tri-RBD may serve as an effective vaccine candidate in fighting against Omicron variant.
 
@@ -80,13 +136,13 @@ Similar results were also observed for Beta and Delta variants. In the rats immu
 
 In summary, live-virus neutralization assays demonstrated that the designed mos-tri-RBD, which integrated key residues from Omicron and other circulating SARS-CoV-2 variants into a single antigen, could serve as a broad-spectrum COVID-19 vaccine candidate against not only Omicron variant but also other SARS-CoV-2 variants. However, it should be noted that due to the absence of wild-type RBD in the mosaic antigen, the neutralizing antibody response against SARS-CoV-2 prototype strain stimulated by mos-tri-RBD was lower than that by homo-tri-RBD, but still comparable to that by BBIBP-CorV (Figure 2B).
 
-## Mos-tri-RBD as a booster dose induced cross-neutralization against the pseudo-typed SARS-CoV-2 Omicron as well as other VOCs and VOIs
+### Mos-tri-RBD as a booster dose induced cross-neutralization against the pseudo-typed SARS-CoV-2 Omicron as well as other VOCs and VOIs
 
 Given that large-scale populations worldwide have received the primary series of vaccination, the immunogenicity of the designed mos-tri-RBD as a booster dose was mainly evaluated in this study. Rats were primed with a dose of BBIBP-CorV, and successively boosted with a dose of mos-tri-RBD (‘BBIBP-CorV +mos-tri-RBD’ group), homo-tri-RBD (‘BBIBP-CorV +homo-tri-RBD’ group), or BBIBP-CorV (‘BBIBP-CorV +BBIBP-CorV’ group), as shown in Figure 3A. Another group of rats received two doses of adjuvant was served as a control. On day 7 post-boost, the sera from the immunized rats were collected, and the neutralizing response against various SARS-CoV-2 strains was tested using pseudo-virus neutralization assays.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78633/elife-78633-fig3-v2.jpg)
 
-**Figure 3.:** (A) Timeline of rat immunization and serum collections. Three groups of Wistar rats (n=10 rats per group with half male and half female) were primed with a dose of BBIBP-CorV and boosted by mos-tri-RBD, homo-tri-RBD or BBIBP-CorV with three weeks apart. Another group of rats (n=10 with half male and half female) vaccinated with two doses of adjuvant served as control. The sera of all the immunized rats were collected on day 7 post-boosting immunization. (B) The reciprocal neutralizing ID50 titers in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ vaccination compared with those elicited by ‘BBIBP-CorV +homo-tri-RBD’ and ‘BBIBP-CorV +BBIBP-Corv’ vaccinations against the pseudo-viruses of SARS-CoV-2 Omicron as well as other VOCs and VOIs. The quantification limit of the pseudo-virus neutralization assay was 40, and the ID50 titers below the LOQ were set to 40. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.Figure 3—source data 1.
+**Figure 3.:** (A) Timeline of rat immunization and serum collections. Three groups of Wistar rats (n=10 rats per group with half male and half female) were primed with a dose of BBIBP-CorV and boosted by mos-tri-RBD, homo-tri-RBD or BBIBP-CorV with three weeks apart. Another group of rats (n=10 with half male and half female) vaccinated with two doses of adjuvant served as control. The sera of all the immunized rats were collected on day 7 post-boosting immunization. (B) The reciprocal neutralizing ID50 titers in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ vaccination compared with those elicited by ‘BBIBP-CorV +homo-tri-RBD’ and ‘BBIBP-CorV +BBIBP-Corv’ vaccinations against the pseudo-viruses of SARS-CoV-2 Omicron as well as other VOCs and VOIs. The quantification limit of the pseudo-virus neutralization assay was 40, and the ID50 titers below the LOQ were set to 40. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.
 
 Pseudo-virus neutralization assay demonstrated that all the three prime-boosting vaccinations induced elevated neutralizing antibodies in comparison to the adjuvant control group against the pseudo-virus of SARS-CoV-2 prototype strain. Although mos-tri-RBD did not contain the prototype RBD, the neutralizing ID50 titers against prototype strain in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ were no less than those elicited by ‘BBIBP-CorV +homo-tri-RBD’, both of which were significantly higher than those induced by ‘BBIBP-CorV +BBIBP-CorV’ vaccinations (Figure 3B). Our results indicated that mos-tri-RBD was highly immunogenic as a booster dose against the prototype SARS-CoV-2 strain.
 
@@ -94,7 +150,7 @@ Compared with the prototype pseudo-virus, the neutralizing antibody GMTs against
 
 Considering that mos-tri-RBD also contains the key mutations from other SARS-CoV-2 variants with potential immune evasion ability, we then evaluate whether the mos-tri-RBD booster induced higher neutralizing responses than homo-tri-RBD and BBIBP-CorV against other pseudo-typed SARS-CoV-2 VOCs and VOIs, including Alpha, Beta, Delta, Gamma, Lambda, and Mu variants. Pseudo-virus neutralization assays showed that for most of the tested variants, the neutralizing ID50 titers in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ vaccination were higher than those by ‘BBIBP-CorV +mos-tri-RBD’ and ‘BBIBP-CorV +BBIBP-CorV’. Especially, for Beta, Gamma, Delta, Lambda, and Mu variants, the neutralizing antibody GMTs were increased 8.1-fold, 5.1-fold, 9.1-fold, 9.1-fold, and 5.6-fold, respectively, for ‘BBIBP-CorV +mos-tri-RBD’ vaccination compared to ‘BBIBP-CorV +BBIBP-CorV’ vaccination, and 4.5-fold, 2.6-fold, 2.4-fold, 2.4-fold, and 3.2-fold, respectively, compared to ‘BBIBP-CorV +homo-tri-RBD’ vaccination (Figure 3B). These results indicated that mos-tri-RBD as a booster dose significantly improved the immunogenicity against not only Omicron variant but also other potentially immune-evasive SARS-CoV-2 variants. Mos-tri-RBD may act as a booster vaccine with broad-neutralization activities.
 
-## Mos-tri-RBD as a booster dose induced cross-neutralization against the live viruses of SARS-CoV-2 prototype, Omicron, Beta and Delta strains
+### Mos-tri-RBD as a booster dose induced cross-neutralization against the live viruses of SARS-CoV-2 prototype, Omicron, Beta and Delta strains
 
 The significantly higher neutralizing activities boosted by mos-tri-RBD against multiple SARS-CoV-2 variants, including Omicron (BA.1.1), Beta and Delta, were further verified by using live virus neutralization assays. As a comparison, the neutralizing response against prototype strain was also tested.
 
@@ -102,7 +158,7 @@ Regarding the prototype strain, live virus neutralization assays showed that boo
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78633/elife-78633-fig4-v2.jpg)
 
-**Figure 4.:** The reciprocal neutralizing ID50 titers in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ vaccination compared with those elicited by ‘BBIBP-CorV +homo-tri-RBD’ and ‘BBIBP-CorV +BBIBP-Corv’ vaccinations against the live-viruses of SARS-CoV-2 Omicron as well as other immune-evasive variants. The quantification limit of the live-virus neutralization assay was 20, and the ID50 titers below the LOQ were set to 20. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.Figure 4—source data 1.
+**Figure 4.:** The reciprocal neutralizing ID50 titers in the sera elicited by ‘BBIBP-CorV +mos-tri-RBD’ vaccination compared with those elicited by ‘BBIBP-CorV +homo-tri-RBD’ and ‘BBIBP-CorV +BBIBP-Corv’ vaccinations against the live-viruses of SARS-CoV-2 Omicron as well as other immune-evasive variants. The quantification limit of the live-virus neutralization assay was 20, and the ID50 titers below the LOQ were set to 20. Data are presented as mean ± SEM. One-way ANOVA followed by the LSD t-test was used for the comparison of data between different groups. *p<0.05, **p<0.01, ****p<0.0001. GMT values are displayed in the lower part of the figure.
 
 The neutralizing antibody response against Omicron variant boosted by BBIBP-CorV was dramatically reduced compared with that against prototype virus, suggesting significant immune evasion of Omicron from the homologous BBIBP-CorV booster vaccination. Compared with ‘BBIBP-CorV +BBIBP-CorV’ vaccination, the neutralizing antibody GMT against Omicron variant in the ‘BBIBP-CorV +homo-tri-RBD’ immunization group was increased from <85 to 194, however, the value was also significantly lower than that against the prototype strain. Furthermore, similar to the results of pseudo-virus neutralization assay, ‘BBIBP-CorV +mos-tri-RBD’ vaccination elicited remarkably improved live-virus neutralizing antibodies with a GMT value of 731 (Figure 4). Compared to booster vaccinations of BBIBP-CorV and homo-tri-RBD, boosting with mos-tri-RBD induced >8.6-fold and 3.8-fold higher Omicron-specific neutralizing antibodies, respectively, which provides an effective booster vaccine against Omicron variant. Similar results were also observed for Beta and Delta variants. In ‘BBIBP-CorV +BBIBP-CorV’ vaccination groups, both Beta and Delta variants exhibited less sensitivity to neutralization by the sera from the immunized rats. While, the neutralizing antibody GMT against Beta variant elicited by ‘BBIBP-CorV +homo-tri-RBD’ was increased from 229 to 532 (2.3-fold), and further improved to 1568 (6.8-fold) by ‘BBIBP-CorV +mos-tri-RBD’ vaccination (Figure 4). For Delta variant, the neutralizing antibody GMT boosted by mos-tri-RBD and homo-tri-RBD was 5.5-fold and 10.3-fold, respectively, higher than that boosted by BBIBP-CorV (Figure 4). These results implied that mos-tri-RBD was immunologically superior to homo-tri-RBD and BBIBP-CorV as a booster dose against Omicron and other immune-evasive SARS-CoV-2 variants.
 
@@ -114,46 +170,210 @@ Several studies indicated that Omicron variant might lead to less severe disease
 
 A commonly used strategy for the development of broad-spectrum vaccines is to produce polyvalent vaccines that contain multiple strain-specific monovalent components. Considering the potential immune escape capability of Beta variant, several studies have designed the Beta-specific COVID-19 vaccines and applied combining with the anti-prototype ones to broaden immune response (Wu et al., 2021a; Callaway and Ledford, 2021; Logue et al., 2021). Targeting the Omicron strain with stronger immune evasion ability, several vaccine manufacturers have announced the update of the composition of their COVID-19 vaccines to provide effective protection against Omicron (Cohen, 2021). In the present work, we provided another strategy for the development of broad-spectrum vaccines against SARS-CoV-2, that is, the construction of mosaic-type vaccines which incorporate multiple antigens and key mutations derived from different variants into a single hybrid immunogen. The mosaic strategy has been successfully applied to the development of broad-spectrum vaccines for HIV, coronaviruses and influenza (Barouch et al., 2010; Cohen et al., 2021; Kanekiyo et al., 2019), and several studies have demonstrated that mosaic-type immunogen elicited superior B cell responses both in quantity and quality compared to the homotypic immunogens (Kanekiyo et al., 2019). Our results also showed that the constructed mos-tri-RBD not only strengthens but also broadens neutralizing response against SARS-CoV-2.
 
-SARS-CoV-2 virus continuously evolves, and the mutation rate was estimated to be 1.12×10-3 mutations per site-year (Koyama et al., 2020; Amicone et al., 2022). Therefore, it is believed that the virus may acquire new mutations, and new variants will continue to emerge. Our mosaic-type vaccine can be easily modified to incorporate new residue mutations to fight against the possible emerging variants in the future.
+SARS-CoV-2 virus continuously evolves, and the mutation rate was estimated to be $1.12\times10^{-3}$ mutations per site-year (Koyama et al., 2020; Amicone et al., 2022). Therefore, it is believed that the virus may acquire new mutations, and new variants will continue to emerge. Our mosaic-type vaccine can be easily modified to incorporate new residue mutations to fight against the possible emerging variants in the future.
 
 The construction of mosaic-type immunogen, which combines the key mutations relevant to immune evasion into a single molecule, provides an effective strategy to achieve broad-spectrum neutralization in a single-component vaccine. The mosaic strategy may also be used in the developments of mRNA- and DNA-based COVID-19 vaccines.
 
 ## Materials and methods
 
-## Cells and viruses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2 virus)</td>
+      <td>Live SARS-CoV-2 prototype virus (QD-01 strain)</td>
+      <td>National Institute for Viral Disease Control and Prevention, China CDC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2 virus)</td>
+      <td>Live SARS-CoV-2 Omicron virus (NPRC 2.192100005 strain)</td>
+      <td>National Institute for Viral Disease Control and Prevention, China CDC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2 virus)</td>
+      <td>Live SARS-CoV-2 Beta virus (GD84 strain)</td>
+      <td>National Institute for Viral Disease Control and Prevention, China CDC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2 virus)</td>
+      <td>Live SARS-CoV-2 Delta virus (GD96 strain)</td>
+      <td>National Institute for Viral Disease Control and Prevention, China CDC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2 pseudo-virus)</td>
+      <td>SARS-CoV-2 prototype, Omicron (BA.1), Omicron (BA.2), Omicron (BA.3), Alpha, Beta, Delta, Gamma, Lambda and Mu pseudo-viruses</td>
+      <td>Wang et al., 2021; Li et al., 2021; Zhang et al., 2021; Nie et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (CHO)</td>
+      <td>CHO-K1 cell line</td>
+      <td>ATCC</td>
+      <td>Cat#CCL-61, RRID:CVCL_0214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Huh-7 cells</td>
+      <td>JCRB</td>
+      <td>Cat#JCRB0403; RRID: CVCL_0336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Chlorocebus sabaeus)</td>
+      <td>Vero cells</td>
+      <td>National Institute for Food and Drug Control (NIFDC), Beijing, China</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Wistar rats)</td>
+      <td>Serum samples from immunized Wistar rats</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Freshly isolated from immunized rats</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-RBD</td>
+      <td>Sino Biological Inc, China</td>
+      <td>Cat#40592-MM117</td>
+      <td>ELISA (1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG-HRP</td>
+      <td>ZSGB-BIO</td>
+      <td>Cat#ZB-2305; RRID: AB_2747415</td>
+      <td>ELISA (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid-SARS-CoV-2-mos-tri-RBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Reference to “protein expression and purification” section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mos-tri-RBD protein (mammalian cell-expressed)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Reference to “protein expression and purification” section</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant monomeric his-tagged RBD of the prototype SARS-CoV-2 strain (Baculovirus-insect cell-expressed)</td>
+      <td>Sino Biological Inc, China</td>
+      <td>Cat#40592-V08B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant monomeric his-tagged RBD of the Omicron (B.1.1.529) SARS-CoV-2 strain (HEK 293 cell-expressed)</td>
+      <td>Sino Biological Inc, China</td>
+      <td>Cat#40592-V08H121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant hACE2 protein (mammalian cell-expressed)</td>
+      <td>Sino Biological Inc, China</td>
+      <td>Cat#10108-H08H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SPR</td>
+      <td>BIAcore 8 k, GE Healthcare</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aluminum hydroxide adjuvant</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Produced by the reaction of aluminum chloride and sodium hydroxide</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Chimera team at University of California</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BIAcore Insight Evaluation Software</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism version 8</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and viruses
 
 All cell lines tested negative for mycoplasma. CHO-K1 cells were from ATCC (Cat: CCL-61) and tested using isoenzyme analysis method. Huh-7 cells were from the Japanese Collection of Research Bioresources (Cat: JCRB0403) and authenticated using STR profiling method. Huh-7 cells were grown in Dulbecco’s modified Eagle medium (DMEM) supplied with 100  U/mL of Penicillin-Streptomycin solution, 20 mM N-2-hydroxyethylpiperazine-N-2-ethane sulfonic acid (HEPES) and 10% fetal bovine serum (FBS), at 37  °C and in a 5% CO2 environment. Vero cells were from National Institute for Food and Drug Control (NIFDC) of China and authenticated using STR profiling method. Vero cells were cultured in Medium 199 containing 5% FBS, at 37 °C and in 5% CO2. The live viruses of SARS-CoV-2 prototype, Omicron, Beta, and Delta strains were isolated by the National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention (China CDC). The SARS-CoV-2 viruses were grown in Vero cells.
 
-## Protein expression and purification
+### Protein expression and purification
 
 The mosaic-type trimeric RBD (mos-tri-RBD) protein was constructed through connecting three heterologous RBDs (amino acid 319–537 in S proteins) into a single chain, which co-assembled into a trimeric structure. The designed protein was transiently expressed in CHO cells and purified by chromatography combined with ultrafiltration, as described in our previous paper (Liang et al., 2022). Briefly, the sequence of the designed mos-tri-RBD was codon-optimized and synthesized. After adding signal peptide and Kozak sequences to N terminus, the construct was cloned into the PTT5 plasmid vector via the Hin dIII and Not I restriction sites. The generated plasmid was validated by gene sequencing and then transfected into the CHO cells. After culture of 10–12 days, the supernatant was collected. Then, protein sample was purified by using ion-exchange chromatography and hydrophobic chromatography, followed by ultrafiltration. During purification, the samples from the eluted peaks were analyzed by SDS-PAGE and size exclusion-high-performance liquid chromatography (SEC-HPLC). The homo-tri-RBD used in this study was stably expressed by CHO cells and purified following the similar processes described above.
 
-## SPR assay
+### SPR assay
 
 Surface plasmon resonance (SPR) assay was performed to quantify the binding avidity of the recombinant mos-tri-RBD to the receptor hACE2 using BIAcore 8 K (GE Healthcare) with NTA chips. Firstly, the His-tagged hACE2 protein was immobilized onto the chip surface. Then, the purified mos-tri-RBD protein sample was serially diluted in HBS-T buffer (HBS buffer and 0.05% Tween20). The diluted samples were injected at a flow rate of 30 µL/min for 120 s, and then the HBS-T buffer was flowed over the chip surface to facilitate dissociation of the bound protein for an additional 120 s. Subsequently, the sensor chip surface was regenerated by injecting 350 mM EDTA solution with a flow rate of 30 µL/min for 120 s. The SPR signal response was monitored as a function of time. BIAcoreTM Insight Evaluation software was used to analyze the experimental data. The binding kinetics between mos-tri-RBD and hACE2 was calculated using the software, and then the association and dissociation rate constants, that is, ka and kd, as well as the apparent dissociation constant KD were obtained.
 
-## Rat immunization
+### Rat immunization
 
 To test the immunogenicity of mos-tri-RBD, 10 Wistar rats with half male and half female (purchased from Beijing Vital River Laboratory Animal Technology Co., Ltd., China) were immunized intramuscularly by two doses, three weeks apart, of mos-tri-RBD (10 μg per dose) mixed with 300 μg aluminum hydroxide adjuvant. Another three groups of rats received two doses of homo-tri-RBD, BBIBP-CorV or adjuvant, respectively, with the same immunization regimen were used for comparison. On day 7 after full vaccination, sera from the immunized rats were collected.
 
 To evaluate the immune efficacy of mos-tri-RBD as a booster dose, a total of 30 Wistar rats, half male and half female, were intramuscularly primed with a dose (4 μg/dose) of the inactivated vaccine BBIBP-CorV. After 3 weeks, 10 rats were boosted with 10 μg mos-tri-RBD mixed with 300 μg aluminum hydroxide adjuvant. The other 20 rats were boosted with a dose of homo-tri-RBD (10 μg antigen mixed with 300 μg aluminum hydroxide) or BBIBP-CorV (4 μg/dose), for comparison. Another 10 rats were vaccinated with two doses of adjuvant with the same immunization interval as control. The sera of all the immunized rats were collected on day 7 post-boosting immunization.
 
-## ELISA
+### ELISA
 
 To verify the functionality of the recombinant protein mos-tri-RBD, enzyme-linked immunosorbent assay (ELISA) was employed to measure its binding activity with an RBD-specific monoclonal neutralizing antibody MM117 (purchased from Sino Biological Inc, China, Cat#40592-MM117) and the binding activities of the his-tagged monomeric prototype and Omicron RBDs with MM117 were also evaluated as control. Protein samples were prepared with the starting concentration of 1 µg/mL in carbonate buffer, and subjected to three-fold serial dilutions. The diluted samples were then pipetted into the wells of the ELISA plates with 100 µL per well followed by incubation at 2–8°C overnight. After removing the coating solution and washing the plate three times with PBS containing 0.05% Tween 20 (PBST), the remaining protein-binding sites were blocked by blocking buffer at 37 °C for 2 hr and the plate was again washed three times with PBST. The neutralizing antibody MM117 was prepared with the working concentration of 1 µg/mL, which was added to the plate with 100 µL per well and incubated at 37 °C for 1 hr. After washing three times with PBST, the plate was incubated with HRP-conjugated goat anti-mouse IgG antibody at 37 °C for 1 hr. Then, color reaction was developed with 50 µL tetramethylbenzidine (TMB) and 50 µL hydrogen peroxide solutions. After 5 min, color reactions were stopped with sulfuric acidic solution, and the optical density (OD) was measured both at 450 nm and 630 nm using the microplate reader. The difference in OD values at 450 nm and 630 nm, i.e. OD450/630nm, was obtained to evaluate the specific binding activity of mos-tri-RBD with the neutralizing antibody MM117.
 
-## Pseudo-virus neutralization assay
+### Pseudo-virus neutralization assay
 
 Neutralizing antibody levels in the sera from the immunized rats were detected by using pseudo-virus neutralization assay as described previously (Liang et al., 2022). In order to assess the cross-neutralization activities elicited by the vaccine candidate, we conducted neutralization assays against 10 pseudo-typed SARS-CoV-2 viruses, including prototype, Omicron (BA.1), Omicron (BA.2), Omicron (BA.3), Alpha, Beta, Delta, Gamma, Lambda and Mu strains. The pseudo-viruses were prepared by using the methods described in the previously published studies (Zhang et al., 2022; Li et al., 2021; Zhang et al., 2021; Nie et al., 2020). In short, the gene sequences of the S protein of SARS-CoV-2 variants were codon-optimized and synthesized, which were then cloned into pcDNA3.1 plasmid vector. The constructed plasmids encoding the S protein of SARS-CoV-2 variants were transfected into HEK293T cells, which were simultaneously infected with G*ΔG-VSV. After 24 hr, the culture supernatants were collected and filtered with 0.45 μm membrane filters to obtain the VSV-based pseudo-typed SARS-CoV-2 variants. The TICD50 of the pseudo-viruses was determined by using Huh-7 cells.
 
 To evaluate the pseudo-virus neutralization activities of the serum samples, the sera were firstly 1:40 diluted, followed by a fivefold serial dilution with the cell culture medium. The pseudo-typed SARS-CoV-2 strains were also diluted to the titer of 1.3×104 TCID50 per mL. Then, 50 µL diluted serum was mixed with an equal volume of pseudo-virus in the well of the plates, and incubated at 37 ℃ and 5% CO2 for 1 hr. Fifty µL culture medium mixed with 50 µL pseudo-virus was used as a control, and 100 µL per well medium without adding pseudo-virus served as a blank control. Subsequently, 100 µL trypsin-treated Huh-7 cells with the density of 2×105 per mL were added into the well of the plates, and incubated at 37 °C and 5% CO2 for 20~24 hr. After that, the cells were lysed and the luminescence signals were detected by microplate luminometer using luciferase substrate. The neutralizing antibody titer was determined as the reciprocal of the serum dilution causing 50% reduction (ID50) in relative light units (RLUs), which was calculated using the Reed-Muench method. The ID50 for the serum below the limit of quantification (LOQ) was set to the quantification limit, that is, 40 in this assay.
 
-## Live virus neutralization assay
+### Live virus neutralization assay
 
 All the viruses used in the live virus neutralization assay, including the prototype, Beta, Delta and Omicron strains, were obtained from the National Institute for Viral Disease Control and Prevention, Chinese Center for Disease Control and Prevention (China CDC), Beijing, China. The prototype (QD-01 strain) virus was isolated from Qingdao, and the Beta (GD84 strain) and Delta (GD96 strain) viruses were isolated from Guangdong. All these three viruses infect Vero cells well. For the Omicron virus, multiple strains isolated from different places, including Hong Kong, Shanghai, Tianjin and Changchun, were screened. It was found that not all the strains infect Vero cells well. After serial passages in Vero cells, the Omicron strain (BA.1.1, a sublineage of BA.1; No. NPRC 2.192100005) isolated from Shanghai was selected, which adapted to and propagated well in Vero cells. Typical cytopathic changes of Vero cells caused by Omicron infection can be observed after 5–7 days of culture. The genome of this Omicron BA.1.1 strain after passages was sequenced. Appendix 1—figure 1 shows the gene sequence of the spike region of the screened Omicron BA.1.1 virus. The corresponding amino acid sequence of the spike protein was aligned with that of the prototype virus, as shown in Appendix 1—figure 2. The alignment result shows that there are 40 residue mutations, deletions or insertions in the spike region compared to that of the prototype virus. All these mutations are commonly occurred in BA.1.1 sub-lineage with >70% prevalence according to the analysis by the Lineage Comparison Tool of the outbreak.info web server (https://outbreak.info/compare-lineages). BLAST search against the sequences collected in GISAID showed that many Omicron BA.1.1 spike gene sequences with 100% identity to our sequence have been reported (https://www.epicov.org/epi3/frontend#2ccaab).
 
 The live virus neutralization assay was performed in the BSL3 facility of the National Institute for Viral Disease Control and Prevention, China CDC, Beijing, China. The neutralization assay adopted in our study was based on the inhibition of the cytopathic effect (CPE). In the assay, serum samples were heat-inactivated at 56 °C for 30 min, and diluted 1:20 using cell culture medium 199 (M199). Then, the sera were two-fold serially diluted in 96-well plate with 50 μL per well. An equal volume of SARS-CoV-2 solution containing 100 TCID50 of live virus was added to the well and mixed with the serum. The serum-virus mixed solution was cultured 2 hr in the incubator maintaining a consistent temperature of 37 °C and 5% carbon dioxide (CO2). After incubation, Vero cell suspension, with a density of (1.5–2)×105 per mL, in the medium M199 that contains 5% FBS was added into the mixture with 100 μL per well. Both negative serum and positive reference serum (obtained from the National Institute for Food and Drug Control of China) were included in the plate as controls. Cell control (no virus and no tested serum) was also included. The titer of the virus was also titrated as a comparison in the assay. Subsequently, the plates were incubated at 37 ℃ for 5–7 days in the incubator maintaining a consistent temperature of 37 °C and 5% CO2. Then, the cellular changes caused by CPE were observed under the microscope, and the wells with cytopathic changes were recorded. Neutralizing antibody titer was reported as the reciprocal of the highest serum dilution that could inhibit 50% CPE (ID50), which was calculated by the Karber method. The ID50 for the serum below the LOQ of 20 in the assay was set to 20.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 One-way ANOVA with the LSD t-test method was used for the comparison of data from multiple groups, and Student’s t-test was used for statistical analysis between two groups. *p<0.05, **p<0.01, ***p<0.001, ****<0.0001. Details can be found in the figure legend.

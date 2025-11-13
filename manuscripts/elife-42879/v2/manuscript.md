@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.42879.001 Kinetochores are macromolecular protein complexes at centromeres that ensure accurate chromosome segregation by attaching chromosomes to spindle microtubules and integrating safeguard mechanisms. The inner kinetochore is assembled on CENP-A nucleosomes and has been implicated in establishing a kinetochore-associated pool of Aurora B kinase, a chromosomal passenger complex (CPC) subunit, which is essential for chromosome biorientation. By performing crosslink-guided in vitro reconstitution of budding yeast kinetochore complexes we showed that the Ame1/Okp1 CENP-U/Q heterodimer, which forms the COMA complex with Ctf19/Mcm21 CENP-P/O , selectively bound Cse4 CENP-A nucleosomes through the Cse4 N-terminus. The Sli15/Ipl1 INCENP/Aurora-B core-CPC interacted with COMA in vitro through the Ctf19 C-terminus whose deletion affected chromosome segregation fidelity in Sli15 wild-type cells. Tethering Sli15 to Ame1/Okp1 rescued synthetic lethality upon Ctf19 depletion in a Sli15 centromere-targeting deficient mutant. This study shows molecular characteristics of the point-centromere kinetochore architecture and suggests a role for the Ctf19 C-terminus in mediating CPC-binding and accurate chromosome segregation.
+Kinetochores are macromolecular protein complexes at centromeres that ensure accurate chromosome segregation by attaching chromosomes to spindle microtubules and integrating safeguard mechanisms. The inner kinetochore is assembled on CENP-A nucleosomes and has been implicated in establishing a kinetochore-associated pool of Aurora B kinase, a chromosomal passenger complex (CPC) subunit, which is essential for chromosome biorientation. By performing crosslink-guided in vitro reconstitution of budding yeast kinetochore complexes we showed that the Ame1/Okp1CENP-U/Q heterodimer, which forms the COMA complex with Ctf19/Mcm21CENP-P/O, selectively bound Cse4CENP-A nucleosomes through the Cse4 N-terminus. The Sli15/Ipl1INCENP/Aurora-B core-CPC interacted with COMA in vitro through the Ctf19 C-terminus whose deletion affected chromosome segregation fidelity in Sli15 wild-type cells. Tethering Sli15 to Ame1/Okp1 rescued synthetic lethality upon Ctf19 depletion in a Sli15 centromere-targeting deficient mutant. This study shows molecular characteristics of the point-centromere kinetochore architecture and suggests a role for the Ctf19 C-terminus in mediating CPC-binding and accurate chromosome segregation.
 
 ## Introduction
 
@@ -47,9 +47,17 @@ We describe here the use of chemical crosslinking and mass spectrometry (XLMS) (
 
 ## Results
 
-## The Ame1/Okp1 heterodimer selectively binds Cse4 containing nucleosomes
+### The Ame1/Okp1 heterodimer selectively binds Cse4 containing nucleosomes
 
 To screen for direct interaction partners of Cse4-NCPs we reconstituted the individual CTF19cCCAN subcomplexes (Mif2, Ame1/Okp1, Ctf19/Mcm21, Chl4/Iml3, Mcm16/Ctf3/Mcm22, Cnn1/Wip1, Nkp1/Nkp2, Mhf1/Mhf2) with Cse4- or H3-NCPs in vitro. The CTF19cCCAN complexes were purified either from bacteria or insect cells as homogenous and nearly stoichiometric complexes (Figure 1B). Consistent with a recent study (Xiao et al., 2017), using electrophoretic mobility shift assays (EMSA), we observed that Mif2 selectively interacted with Cse4-NCPs and not with H3-NCPs (Figure 1A). We also found that Ame1/Okp1 bound specifically to Cse4-NCPs (Figure 1A). The lack of interaction with H3-NCPs, which were reconstituted using the same 601 DNA sequence (Tachiwana et al., 2011), suggests that Ame1/Okp1 directly and selectively binds Cse4 and that the interaction does not require AT-rich DNA sequences as previously proposed (Hornung et al., 2014). In contrast to the EMSA titration of human CCAN complexes with CENP-A-NCP (Weir et al., 2016) using 10 nM NCP mixed with up to 20-fold excess of the respective subcomplexes, we could not detect Cse4-NCP band shifts with Chl4/Iml3, the orthologs of human CENP-NL, and with Mcm16/Ctf3/Mcm22, the orthologs of human CENP-HIK (no S. cerevisiae ortholog of CENP-M has been identified) using 500 nM NCP incubated with a twofold excess of the complexes. Ctf19/Mcm21, Cnn1/Wip1, Nkp1/Nkp2 and Mhf1/Mhf2 did also not form distinct complexes with either Cse4- or H3-NCPs in the EMSA indicating that Mif2 and Ame1/Okp1 possess a higher relative binding affinity to Cse4-NCPs than the other CTF19c subcomplexes (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig1-v2.jpg)
+
+**Figure 1.:** (A) Electrophoretic mobility shift assays (EMSAs) of the indicated CTF19cCCAN subunits and subcomplexes mixed in a 2:1 molar ratio with either Cse4- or H3-NCPs. DNA/protein complexes were separated on a 6% native polyacrylamide gel. The DNA is visualized by SYBR Gold staining. (B) Coomassie stained gel of the individual inner kinetochore components, recombinantly purified from E. coli, used in the EMSA in (A). (C) XLMS analysis of the in vitro reconstituted Cse4-NCP:Mif2:COMA:Chl4/Iml3:MTW1c complex. Proteins are represented as bars indicating annotated domains (Supplementary file 3) according to the color scheme in the legend. Subunits of a complex are represented in the same color and protein lengths and cross-link sites are scaled to the amino acid sequence.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Proteins were mixed in an equimolar ratio, incubated on ice for 1 hr and run on a Superose 6 increase 3.2/300 column. Eluted proteins were visualized by SDS-PAGE and Coomassie staining. For the XLMS analysis shown in Figure 1C the pre-incubated complex was cross-linked prior to SEC, and elution fractions 12 and 13 corresponding to the non-cross-linked complex were pooled and digested for mass spectrometric analysis.
 
 To identify the binding interfaces of the Ame1/Okp1:Cse4-NCP complex we performed XLMS analysis. We reconstituted a complex on Cse4-NCP composed of Ame1/Okp1, Mif2, Ctf19/Mcm21, Chl4/Iml3 and the MTW1c which links the KMN network to the inner kinetochore receptors Ame1 and Mif2 (Przewloka et al., 2011; Screpanti et al., 2011; Hornung et al., 2014). Size-exclusion chromatography (SEC) analysis showed that MTW1c forms a complex with Ame1/Okp1, Mif2, Ctf19/Mcm21 and Chl4/Iml3 and the peak fraction shifted to a higher molecular weight upon addition of Cse4-NCPs depicting nearly stoichiometric protein levels of all subunits (Figure 1—figure supplement 1). In all in vitro reconstitution and XLMS experiments we used wild-type MTW1c lacking the phosphorylation mimicking mutations of Dsn1 S240 and S250, which have been shown to stabilize the interaction with Mif2CENP-C and Ame1CENP-U (Akiyoshi et al., 2013; Dimitrova et al., 2016), but were not required for complex formation on SEC columns (Figure 2C, Figure 1—figure supplement 1). In total 349 inter-subunit crosslinks between the fifteen proteins were identified (Figure 1C, Supplementary file 1). The majority of the crosslinks detected within the different subcomplexes MTW1c, COMA, Chl4/Iml3, and Cse4-NCP are in agreement with previous studies validating our crosslink map (De Wulf et al., 2003; Hinshaw and Harrison, 2013; Hornung et al., 2014). Moreover, crosslinks from the Mif2 N-terminus to the MTW1c (Przewloka et al., 2011; Screpanti et al., 2011), from the Mif2 Chl4/Iml3-binding domain to Chl4 (Hinshaw and Harrison, 2013), and from the Mif2 signature motif to the Cse4 C-terminus (Figure 1C, Supplementary file 1) (Kato et al., 2013) are consistent with previously described interfaces. Crosslinks between Ame1/Okp1 and Cse4 occur exclusively between Okp1 and Cse4, suggesting that Okp1 is the direct binding partner of Cse4. Furthermore, Okp1 was the only COMA subunit that crosslinked to the three canonical histones H2A, H2B and H4 with the exception of one crosslink between Ame1 and H2A. Our analysis indicated a close association between Chl4/Iml3 and all COMA subunits. A direct interaction between COMA and Chl4 was reported previously and the Ctf19/Mcm21 heterodimer was found to be required for the kinetochore localization of Chl4 and Iml3 (Schmitzberger et al., 2017).
 
@@ -57,7 +65,7 @@ To identify the binding interfaces of the Ame1/Okp1:Cse4-NCP complex we performe
 
 **Figure 2.:** (A) Multiple sequence alignment of Cse4CENP-A proteins. Yeast protein sequences with the highest similarities to S. cerevisiae Cse4, three mammalian and the S. pombe homologous CENP-A protein sequences were included in the alignment. The amino acid (aa) patch, conserved in interrelated yeasts, is highlighted in pink (S. cerevisiae Cse4 aa 34–61). The RG motif in the mammalian sequences is indicated by arrowheads. Amino acid residues are colored and annotated according to the ClustalW color and annotation codes (S.: Schizosaccharomyces, C.: Candida, Z.: Zygosaccharomyces, L.: Lachancea). Residues that are identical among aligned protein sequences (*), conserved substitutions (:), and semiconserved substitutions (.) are indicated. (B) Scheme of the deletion mutants within the Cse4 N-terminus used in the SEC experiments in (C) and (D) and in the cell viability assays in (E). The conserved region (aa 34–61) is highlighted in pink. (C) SEC analysis of the indicated mixtures of recombinant Ame1/Okp1 (AO) and MTW1c and reconstituted H3-, Cse4-, Cse4Δ2–30- or Cse4Δ31–60-NCPs. Ame1/Okp1, MTW1c and the Cse4 proteins were mixed equimolar. Eluted proteins were visualized by SDS-PAGE and Coomassie staining. (D) SEC analysis of Ame1/Okp1 (AO) preincubated with Cse4Δ34–46- or Cse4Δ48–61-NCPs. Eluted complexes were analyzed by SDS-PAGE and Coomassie staining. (E) Left panel: Cell growth assay of Cse4 mutants in budding yeast using the anchor-away system. The Cse4 wild-type and indicated mutant proteins were ectopically expressed in a Cse4 anchor-away strain (Cse4-FRB) and cell growth was monitored by plating 1:10 serial dilutions on YPD medium at 30°C in the absence or presence of 1 µg/ml rapamycin. Right panel: Western blot analysis of the ectopically expressed Cse4 wild-type and mutant protein levels in the yeast strains shown on the left. Pgk1 levels are shown as loading control.
 
-## The essential N-terminal domain of Cse4 is required for Okp1 binding
+### The essential N-terminal domain of Cse4 is required for Okp1 binding
 
 To further characterize the interaction between Ame1/Okp1 and Cse4-NCPs we aimed to identify the binding interface of the Ame1/Okp1:Cse4-NCP complex. Two crosslinks were detected between Okp1 and the essential Cse4 N-terminus (Figure 1C, Supplementary file 1). A multiple sequence alignment (MSA) of Cse4CENP-A protein sequences (Figure 2A) detected a conserved region (ScCse4 aa 34–61), unique to Cse4 proteins of interrelated yeasts, which is almost identical to the so-called ‘essential N-terminal domain’ (END), aa 28–60, shown to be required for the essential function of the Cse4 N-terminus and for recruiting the ‘Mcm21p/Ctf19p/Okp1p complex’ to minichromosomes (Keith et al., 1999; Ortiz et al., 1999; Chen et al., 2000).
 
@@ -65,11 +73,19 @@ To assess whether the Cse4 END mediates the interaction with Ame1/Okp1 we tested
 
 The crosslink-derived distance restraints as well as SEC analysis identified a conserved Cse4 peptide motif of amino acids 34–46 which is necessary for Ame1/Okp1 interaction. To test whether this motif is essential for cell viability, we depleted endogenous Cse4 from the nucleus using the anchor-away technique and performed rescue experiments by ectopically expressing the Cse4 mutants Cse4∆34–46 and Cse4∆48–61. Indeed, deletion of amino acids 34–46 was lethal, whereas the Cse4Δ48–61 mutant displayed wild-type growth rates (Figure 2E). The observation that deletion of the minimal Ame1/Okp1 interacting Cse4 motif (aa 34–46) correlates with the loss of cell viability, whereas the C-terminal half of the END (aa 48–61) is neither essential for viability nor required for Ame1/Okp1 association suggests that binding of the Ame1/Okp1 heterodimer to Cse4 residues 34–46 is essential for yeast growth. The Mif2 signature motif (Xiao et al., 2017) and Ame1/Okp1 recognize distinct motifs at the Cse4 C- and N-terminus (Figure 1C), respectively, and both are essential for viability (Hornung et al., 2014).
 
-## The Okp1 core domain interacts with Cse4
+### The Okp1 core domain interacts with Cse4
 
 To characterize the Cse4 binding site in Okp1 we applied crosslink-derived restraints to narrow down the putative interface to amino acids 95–202 of Okp1 (Figure 1C, Supplementary file 1). Based on MSA analysis of Okp1 sequences, this region harbors a conserved stretch (aa 127–184), including part of the previously described Okp1 core domain (aa 166–211) which is essential for cell growth and whose function is still elusive (Schmitzberger et al., 2017) (Figure 3A). Furthermore, a secondary structure analysis predicted two alpha helices within the conserved domain (helix1 aa 130–140, helix2 aa 156–188) (Figure 3A). Thus, we designed three deletion mutants (Okp1Δ123–147, Okp1Δ140–170, Okp1Δ163–187) and purified all Okp1 mutant proteins in complex with Ame1 from E. coli. In EMSAs Ame1/Okp1Δ123–147 bound to Cse4-NCPs as well as did the wild-type Ame1/Okp1 complex, whereas Ame1/Okp1Δ140–170 associated only weakly and Ame1/Okp1Δ163–187 failed to associate with Cse4-NCPs (Figure 3B). These results are consistent with monitoring protein complex formation by SEC (Figure 3—figure supplement 1). In addition, analysis of the Okp1 deletion mutants Δ123–147 and Δ163–187 in cell viability assays showed a tight correlation between their requirement for the interaction with Cse4 and being essential for yeast growth (Figure 3C) (Schmitzberger et al., 2017). This finding further supports the notion that the recognition of the Cse4 nucleosome by Ame1/Okp1 is essential in budding yeast.
 
-## The COMA complex interacts with Sli15/Ipl1 through the Ctf19 C-terminus
+![Figure 3.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig3-v2.jpg)
+
+**Figure 3.:** (A) Multiple sequence alignment of Okp1 amino acid sequences from related yeast species. Amino acid residues of the conserved region are colored and annotated according to the ClustalW color and annotation codes. Green bars above the alignment represent alpha helical regions predicted by Jpred (Drozdetskiy et al., 2015). Lines below the alignment indicate the overlapping Okp1 deletion mutants analysed in (B) and (C). Residues that are identical among aligned protein sequences (*), conserved substitutions (:), and semiconserved substitutions (.) are indicated. (B) EMSA assessing complex formation of Cse4-NCPs with Ame1/Okp1 including wild-type (wt) Okp1 and the indicated Okp1 deletion mutants. Recombinant Ame1/Okp1 complexes were tested in a 1:1 (1) and 2:1 (2) molar ratio with Cse4-NCPs. The DNA is visualized by SYBR Gold staining. (C) Cell viability assay of Okp1 deletion mutants using the anchor away (aa) technique. Yeast growth of either the untransformed (-) Okp1 anchor-away strain (Okp1-FRB) or of strains transformed with the indicated Okp1 rescue alleles was tested in 1:10 serial dilutions on YPD medium in the absence or presence of 1 µg/ml rapamycin for 72 hr at 30°C.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Multiple sequence alignment of Okp1 amino acid sequences from related yeast species. Amino acid residues of the conserved region are colored and annotated according to the ClustalW color and annotation codes. Green bars above the alignment represent alpha helical regions predicted by Jpred (Drozdetskiy et al., 2015). Lines below the alignment indicate the overlapping Okp1 deletion mutants analysed in (B). (B) Size exclusion chromatography (SEC) analysis of equimolar mixtures of reconstituted Cse4-NCPs with recombinant wild-type Ame1/Okp1, Ame1/Okp1Δ123–147, Ame1/Okp1Δ140–170 or Ame1/Okp1Δ163–187 mutant complexes. Eluted proteins were visualized by SDS-PAGE and Coomassie staining.
+
+### The COMA complex interacts with Sli15/Ipl1 through the Ctf19 C-terminus
 
 The COMA complex is composed of two essential, Ame1/Okp1, and two non-essential, Ctf19/Mcm21, subunits (Ortiz et al., 1999; Cheeseman et al., 2002). Both, Ctf19 and Mcm21 contain C-terminal tandem-RWD (RING finger and WD repeat containing proteins and DEAD-like helicases) domains forming a rigid heterodimeric Y-shaped scaffold whose respective N-terminal RWDs of the tandems pack together as shown by a crystal structure of the K. lactis complex (Schmitzberger and Harrison, 2012). The ctf19Δ or mcm21Δ mutants become synthetically lethal in a sli15ΔN background (Campbell and Desai, 2013). Furthermore, Ame1 has been suggested to have a role in Sli15 localization close to kinetochores independently of Bir1 (Knockleby and Vogel, 2009). To investigate whether Sli15/Ipl1 associates with the COMA complex, in vitro reconstitution and XLMS analysis detected 98 inter-protein and 69 intra-protein crosslinks (Figure 4A, Supplementary file 2). In particular, there were 10 crosslinks from the C-terminal RWD (RWD-C) domain of Ctf19 and 4 crosslinks from the Mcm21 RWD-C domain to the microtubule binding domain of Sli15 (aa 229–565) (Figure 4A, Supplementary file 2, 3). In the Ame1/Okp1 heterodimer, we identified crosslinks from Sli15 to Okp1 and from Ipl1 to Ame1. The crosslink detected to lysine 366 of Okp1 is located near the identified Ctf19/Mcm21 binding site within Okp1 (‘segment 1’ aa 321–329) (Schmitzberger et al., 2017) and thus is close to the RWD-C domains of Ctf19 and Mcm21. We verified the interaction of Sli15 and the Ctf19 RWD-C domain by in vitro binding assays. Sli15-2xStrep/Ipl1 was immobilized on Streptavidin beads and incubated with a 2-fold molar excess of either Ame1/Okp1 and Ctf19/Mcm21 using wild-type Ctf19 protein or a C-terminal deletion mutant Ctf19Δ270–369 (Ctf19ΔC). Ame1/Okp1 and Ctf19/Mcm21 were both pulled down with Sli15/Ipl1 either as individual complexes or in combination (Figure 4B). In agreement with previous findings (Schmitzberger et al., 2017), recombinant Ctf19ΔC formed a stoichiometric complex with Mcm21, but lost its ability to bind Sli15/Ipl1 indicating that the RWD-C of Ctf19 is required for Sli15/Ipl1 interaction in vitro (Figure 4C). Autophosphorylation of Sli15/Ipl1 abrogated its interaction with Ame1/Okp1 and Ctf19/Mcm21 indicating that like the phosphorylation-regulated binding to microtubules, phosphorylation of Sli15 by Ipl1 may prevent and regulate its binding to the COMA complex (Figure 4B).
 
@@ -79,7 +95,7 @@ The COMA complex is composed of two essential, Ame1/Okp1, and two non-essential,
 
 In summary, crosslink-derived restraints identified the Ctf19 RWD-C domain as a Sli15/Ipl1 docking site within the COMA complex, a conclusion supported by the loss of interaction upon deletion of the Ctf19 C-terminus in vitro.
 
-## Tethering Sli15ΔN selectively to COMA rescues the synthetic lethality of a sli15ΔN mutant upon Ctf19 depletion
+### Tethering Sli15ΔN selectively to COMA rescues the synthetic lethality of a sli15ΔN mutant upon Ctf19 depletion
 
 As deletions of Ctf19 or Mcm21 were synthetically lethal in a sli15ΔN background (Campbell and Desai, 2013) and Sli15 associated with the Ctf19 RWD-C in vitro (Figure 4), we investigated the relevance of this interaction by performing yeast viability assays. First, we reproduced the reported synthetic lethality by anchoring-away Ctf19-FRB in a yeast strain, in which the endogenous SLI15 copy was replaced by sli15ΔN (Haruki et al., 2008). We found that in the presence of Ctf19-FRB, cells expressing Sli15ΔN are viable, but display synthetic lethality on rapamycin containing medium, consistent with previous findings (Campbell and Desai, 2013) (Figure 5A).
 
@@ -93,29 +109,41 @@ If the synthetic effect is associated with the loss of interaction between Sli15
 
 We further tested whether the rescue of synthetic lethality depended on the Sli15 single alpha helix domain (SAH, aa 516–575) (Samejima et al., 2015; van der Horst et al., 2015; Fink et al., 2017) and the Ipl1 binding domain (IN-box, aa 626–698) (Adams et al., 2000; Kang et al., 2001). Both domains are essential for cell growth in the Sli15 wild-type or the sli15ΔN background (Figure 5C) (Kang et al., 2001). Cells ectopically expressing the Sli15∆N mutant protein grew like wild-type, but displayed sensitivity to 15 µg/ml benomyl which contrasted the previous observation that cells carrying the endogenous sli15ΔN allele were not sensitive to 12.5 µg/ml benomyl (Campbell and Desai, 2013). These deviating observations may be a result of different experimental conditions. To distinguish the requirement of one domain from that of the other in the context of inner kinetochore-localized Sli15/Ipl1, we generated Ame1- and Okp1-Sli15ΔN fusion constructs in which either the IN-box or the SAH domain of Sli15ΔN had been deleted. While expression of Ame1- or Okp1-Sli15∆N∆SAH proteins rescued cell growth in the sli15ΔN background upon Ctf19 depletion, Ame1- and Okp1-Sli15∆N∆IN fusions did not, indicating that Ipl1 kinase activity is required (Figure 5D). Since the ectopically expressed fusion proteins were tested in the sli15ΔN background, the result indicates that Ipl1 activity associated with endogenous Sli15ΔN could not rescue synthetic lethality and that tethering Ipl1 activity to COMA subunits is crucial. In contrast, deletion of the SAH domain in Ame1- and Okp1-Sli15∆N∆SAH fusions was not lethal and was presumably rescued by the SAH domain of the endogenous Sli15ΔN protein (Figure 5D) suggesting that the SAH domain is not required for the function of the inner kinetochore-localized CPC pool.
 
-## Ame1- or Okp1-Ctf19 fusion proteins require the Ctf19 RWD-C domain to rescue synthetic lethality of a sli15ΔN mutant strain upon Ctf19 depletion
+### Ame1- or Okp1-Ctf19 fusion proteins require the Ctf19 RWD-C domain to rescue synthetic lethality of a sli15ΔN mutant strain upon Ctf19 depletion
 
 Since the RWD-C domain of Ctf19 was required for association with Sli15/Ipl1 in vitro (Figure 4C), we asked whether its deletion would cause synthetic lethality with sli15ΔN. As recently described, the Ctf19 C-terminus is involved in formation of the COMA complex through binding to Okp1 (Schmitzberger et al., 2017) and consequently, its deletion abrogates kinetochore localization of Ctf19 (Figure 6—figure supplement 1). To circumvent loss of Ctf19 from kinetochores, we tested whether Ame1 or Okp1 fusions to wild-type Ctf19 or Ctf19∆C were able to rescue synthetic lethality in the sli15ΔN/CTF19-FRB background. Fusions to both, the N- or C-terminus, of wild-type Ctf19 restored viability, whereas fusions to Ctf19∆C resulted in synthetic lethality (Figure 6A) suggesting that recruitment of Ipl1 activity to the inner kinetochore mediated by the Ctf19 C-terminus is important for CPC function.
 
-## Deletion of the Ctf19 RWD-C domain causes a chromosome segregation defect in the Sli15 wild-type background
+![Figure 6.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig6-v2.jpg)
+
+**Figure 6.:** (A) Left panel: Growth assay of the sli15ΔN/CTF19-FRB strain expressing Ame1-Ctf19, Ame1-Ctf19∆C, Okp1-Ctf19, Okp1-Ctf19∆C, Ctf19-Okp1 and Ctf19∆C-Okp1 fusion proteins from the rescue plasmid. Right panel: Western blot analysis visualizing the levels of the ectopically expressed, C-terminally 7xFLAG-tagged fusion proteins. Pgk1 levels are shown as loading control. (aa: Anchor-away) (B) Minichromosome loss assay. Chromosome segregation fidelity was determined in the Ctf19 anchor-away (SLI15/CTF19-FRB) strain, containing a minichromosome, either untransformed (-) or transformed with the indicated rescue constructs in the absence or presence of 1 µg/ml rapamycin. The percentage and standard error of red/red sectored colonies to the total colony number (white plus red/red sectored) of three biological replicates is shown. The results of 100% red colonies may be indicative of non-optimal conditions for the chromosome loss assay in combination with the anchor-away technique. (C) Localisation of ectopically expressed Ctf19-Okp1-GFP and Ctf19∆C-Okp1-GFP fusion proteins in the Ctf19 anchor-away strain (SLI15/CTF19-FRB) in the presence of 1 µg/ml rapamycin. Live cell fluorescence microscopy was performed 3 hr after rapamycin addition. Ndc80-mCherry was used as kinetochore marker. Merged mCherry and GFP signals are shown on the right. (BF: brightfield).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Live cell microscopy of non-synchronized cells grown in synthetic medium expressing either Ctf19-GFP or Ctf19∆C-GFP and Nuf2-mCherry as kinetochore marker. Merged mCherry and GFP signals are shown on the right.BF: Brightfield.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/42879/elife-42879-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The loss of minichromosomes was assessed in the Ctf19 anchor-away (SLI15/CTF19-FRB) strain either untransformed (-) or transformed with the indicated rescue constructs in the absence or presence of 1 µg/ml rapamycin. The percentage and standard error of red/red sectored colonies to the total colony number (white plus red/red sectored) of three biological replicates is shown.
+
+### Deletion of the Ctf19 RWD-C domain causes a chromosome segregation defect in the Sli15 wild-type background
 
 Since Ctf19 mutants display normal growth, but have chromosome segregation defects (Hyland et al., 1999), we tested whether the Ctf19 C-terminus is important for this function using the minichromosome loss assay (Hieter et al., 1985). The Ctf19 anchor-away strain was transformed simultaneously with the various Ctf19 rescue constructs and a centromeric plasmid carrying the SUP11 gene as a marker which indicated loss of the minichromosome by red pigmentation (Hieter et al., 1985). Depletion of Ctf19 from the nucleus resulted in a severe chromosome segregation defect that was not observed by growing cells on medium lacking rapamycin which showed 4% red/sectored colonies (Figure 6B). Ectopic expression of the Ctf19 wild-type protein decreased the segregation defect to 19% red/sectored colonies (Figure 6B, Figure 6B—source data 1) and fusion of Okp1 to the C-terminus of wild-type Ctf19 reduced the red/sectored colonies to 32%. But the fusion of Okp1 to the Ctf19 N-terminus (Okp1-Ctf19 and Okp1-Ctf19∆C) did not rescue the segregation defect (Figure 6—figure supplement 2, Figure 6B—source data 1), indicating that the function of the Ctf19 N-terminus is compromised by fusing it to Okp1 (Figure 6B, Figure 6B—source data 1). Thus, the Ctf19-Okp1 fusion rescued the segregation defect, albeit to a slightly lesser extent than the Ctf19 wild-type protein. In contrast, Ctf19∆C-Okp1, which was localized at the kinetochore (Figure 6C), was unable to rescue the segregation defect (Figure 6B, Figure 6B—source data 1) suggesting that the Ctf19 C-terminus has a role in mediating accurate chromosome segregation.
 
 ## Discussion
 
-## The Ame1/Okp1 heterodimer directly links Cse4 nucleosomes to the outer kinetochore
+### The Ame1/Okp1 heterodimer directly links Cse4 nucleosomes to the outer kinetochore
 
 We investigated the subunit connectivity of the inner kinetochore assembled at budding yeast point centromeres at the domain level using in vitro reconstitution and XLMS. We found that in addition to Mif2 (Xiao et al., 2017), the Ame1/Okp1 heterodimer of the COMA complex is a direct and selective interactor of Cse4-NCPs. We identified the conserved motifs aa 163–187 of the Okp1 core domain (Figure 3B,C) (Schmitzberger et al., 2017) and aa 34–46 (Figure 2D,E) of the Cse4 END to establish the interaction. Although, we did not address whether the Cse4 residues 34–46 are required for the Ame1/Okp1 kinetochore recruitment, the notion that the essential function of the Cse4 N-terminus and the binding interface for Ame1/Okp1 are mediated by the same 13 amino acid motif (Figure 2) suggests that Ame1/Okp1 is an essential link between centromeric nucleosomes and the outer kinetochore (Hornung et al., 2014).
 
 Recent studies have identified the same Cse4 region to interact with Ame1/Okp1 (Anedchenko et al., 2019; Hinshaw and Harrison, 2019). Anedchenko et al. found that the affinity of Cse4 N-terminal peptides to Ame1/Okp1 increases with the peptide length up to the low nanomolar range and that methylation of Cse4 R37 and acetylation of Cse4 K49 significantly reduces the binding affinity. Similarly, this region is regulated by Ipl1 phosphorylation in vivo and phosphorylation-mimicking mutants have been found to suppress temperature-sensitive Ipl1 and phosphorylation-deficient Dam1 und Ndc80 mutations (Boeckmann et al., 2013), and to decrease the affinity of a Cse4 peptide to Ame1/Okp1 (Hinshaw and Harrison, 2019). This observation has interesting implications on the regulation of kinetochore assembly by Ipl1 destabilizing the Cse4-Ame1/Okp1 interaction in a cell cycle regulated manner. Moreover, weakening the interaction of Ame1/Okp1 with Cse4 may have a role in the tension sensing and error correction mechanisms (Boeckmann et al., 2013).
 
-## Dual recognition of Cse4 at point centromeres by a CTF19cCCAN architecture distinct from vertebrate regional centromeres
+### Dual recognition of Cse4 at point centromeres by a CTF19cCCAN architecture distinct from vertebrate regional centromeres
 
 In vertebrates, CENP-NL and CENP-C, interact directly and specifically with CENP-A. CENP-C binds divergent hydrophobic residues at the CENP-A C-terminus, whereas CENP-N associates with the CENP-A CATD (Carroll et al., 2009; Carroll et al., 2010; Guse et al., 2011; Kato et al., 2013; Weir et al., 2016; Pentakota et al., 2017). Recently, electron microscopy reconstructions of human CENP-A nucleosomes in complex with CENP-N/L identified the RG motif in the L1 loops of the CATD (Zhou et al., 2011) as the CENP-N interaction site in CENP-A (Pentakota et al., 2017; Chittori et al., 2018; Tian et al., 2018). We did not detect complex formation of Chl4/Iml3 with Cse4-NCPs in our EMSA (Figure 1A). Whether this observation can be attributed to the lack of conservation of the RG motif in the corresponding Cse4 sequences in related budding yeasts (Figure 2A), and whether this reflects a different role of Chl4/Iml3 in Cse4 recognition and kinetochore assembly remains to be determined. Our crosslink-derived restraints are also in good agreement with a recent cryo-electron microscopy structure of a 13-subunit budding yeast inner kinetochore complex lacking the Cse4-NCP and Mif2 (Hinshaw and Harrison, 2019) showing for instance crosslinks between the C-terminal domain of Chl4 and central regions of Ctf19 and Mcm21.
 
 Similarly in humans, recruitment of the CENP-OPQRU complex to kinetochores requires a joint interface formed by CENP-HIKM and CENP-LN (Foltz et al., 2006; Okada et al., 2006; Pesenti et al., 2018), but loss of the complex does not affect localization of other inner kinetochore proteins. Differences between vertebrate and budding yeast inner kinetochores are reflected by the physiological importance of the involved proteins, as Ame1/Okp1 together with Mif2 are the essential CTF19cCCAN proteins in budding yeast, whereas knockouts of CENP-U/Q in DT40 cells are viable (Hori et al., 2008).
 
-## The Ctf19 C-terminus is required for Sli15/Ipl1 binding in vitro and has a role in accurate chromosome segregation
+### The Ctf19 C-terminus is required for Sli15/Ipl1 binding in vitro and has a role in accurate chromosome segregation
 
 Although the Ctf19/Mcm21 heterodimer is not essential, ctf19∆ and mcm21∆ mutants have chromosome segregation and cohesion defects (Hyland et al., 1999; Ortiz et al., 1999; Poddar et al., 1999; Fernius and Marston, 2009; Hinshaw et al., 2017). Moreover, Ctf19 and Mcm21 become essential when centromere-targeting of the CPC is lost in a sli15ΔN mutant. This observation has led to the hypothesis that centromere-targeted Sli15 might be involved in cohesin loading or in cohesion maintenance (Campbell and Desai, 2013). An alternative model posits that COMA is required for the localization and positioning of Sli15/Ipl1 at the kinetochore (Knockleby and Vogel, 2009).
 
@@ -135,7 +163,269 @@ In the spatial separation model the CPC is anchored at the centromere and substr
 
 ## Materials and methods
 
-## Chemical cross-linking and mass spectrometry of kinetochore complexes
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>See Supplementary file 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>S288c</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>C2527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH10Bac</td>
+      <td>ThermoFisher</td>
+      <td>10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (S. frugiperda)</td>
+      <td>SF21; Spodoptera frugiperda</td>
+      <td>ThermoFisher</td>
+      <td>11497013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>High five; Trichoplusia ni</td>
+      <td>ThermoFisher</td>
+      <td>B85502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>See Supplementary file 5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F1804 RRID:AB_262044</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGK1 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>22C5D8 RRID:AB_2532235</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-mouse IgG-HRP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-2005 RRID:AB_631736</td>
+      <td>1:10000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>See Supplementary file 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>3xFLAG peptide</td>
+      <td>Ontores</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>lambda phosphatase</td>
+      <td>New England Biolabs</td>
+      <td>P0753S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0552S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BS3-H12/D12 cross-linker</td>
+      <td>Creative Molecules</td>
+      <td>001SS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodoacetamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>I6125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysyl Endopeptidase</td>
+      <td>FUJIFILM Wako Pure Chemical Corporation</td>
+      <td>125–05061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin Sequencing Grade Modified</td>
+      <td>Promega</td>
+      <td>V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYBR Gold</td>
+      <td>ThermoFisher</td>
+      <td>S11494</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMP-PNP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>CAS 72957-42-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Invitrogen</td>
+      <td>PHZ1235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Concanavalin A from Canavalia ensiformis</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD Transfection Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete ULTRA EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>5892953001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ni-NTA Agarose</td>
+      <td>Qiagen</td>
+      <td>30210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Strep-Tactin Superflow Plus Agarose</td>
+      <td>Qiagen</td>
+      <td>30004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>M2 anti-FLAG agarose</td>
+      <td>Sigma-Aldrich</td>
+      <td>A4596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sep-Pak tC18 cartridges</td>
+      <td>Waters</td>
+      <td>WAT054960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PD-10 Desalting Columns</td>
+      <td>GE Healthcare</td>
+      <td>17085101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>µ-Slide 8 Well</td>
+      <td>Ibidi</td>
+      <td>80826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xQuest</td>
+      <td>(Walzthoeni et al., 2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>xVis</td>
+      <td>(Grimm et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>(Sievers et al., 2011)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoftWoRx</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Chemical cross-linking and mass spectrometry of kinetochore complexes
 
 The complex containing Cse4-NCP, Mif2, Ame1/Okp1, Ctf19/Mcm21, Chl4/Iml3 and MTW1c was assembled in solution. It was cross-linked using an equimolar mixture of isotopically light (hydrogen) and heavy (deuterium) labeled bis[sulfosuccinimidyl]suberate (BS3, H12/D12) (Creative Molecules) at a final concentration of 0.25–0.5 mM at 10°C for 30 min. The reaction was quenched by adding ammonium bicarbonate to a final concentration of 100 mM for 10 min at 10 °C. The sample was subjected to SEC on a Superose 6 Increase 10/300 GL column (GE Healthcare) and the fractions corresponding to the cross-linked complex were selected for the subsequent protein digest and mass spectrometry (see below).
 
@@ -143,15 +433,15 @@ The complex of Sli15-2xStrep-HA-6xHis/Ipl1 with Ame1/Okp1 and Ctf19/Mcm21 was as
 
 Cross-linked samples were denatured by adding two sample volumes of 8 M urea, reduced with 5 mM TCEP (ThermoFisher) and alkylated by the addition of 10 mM iodoacetamide (Sigma-Aldrich) for 40 min at RT in the dark. Proteins were digested with Lys-C (1:50 (w/w), FUJIFILM Wako Pure Chemical Corporation) at 35°C for 2 hr, diluted with 50 mM ammonium bicarbonate, and digested with trypsin (1:50 w/w, Promega) overnight. Peptides were acidified with trifluoroacetic acid (TFA) at a final concentration of 1% and purified by reversed phase chromatography using C18 cartridges (Sep-Pak, Waters). Cross-linked peptides were enriched on a Superdex Peptide PC 3.2/30 column using water/acetonitrile/TFA (75/25/0.1, v/v/v) as mobile phase at a flow rate of 50 μl/min and were analyzed by liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) using an Orbitrap Elite instrument (ThermoFisher). Fragment ion spectra were searched and cross-links were identified by the dedicated software xQuest (Walzthoeni et al., 2012). The results were filtered according to the following parameters: Δscore ≤ 0.85, MS1 tolerance window of −4 to 4 ppm and score ≥ 22. The quality of all cross-link spectra passing the filter was manually validated and cross-links were visualized as network plots using the webserver xVis (Grimm et al., 2015).
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 Reconstituted nucleosomes (0.5 µM) were mixed in a 1:2 molar ratio with the respective protein complexes in a buffer containing 20 mM Hepes (pH 7.5) and incubated for 1 hr on ice. The interaction was analyzed by electrophoresis at 130 V for 70–90 min on a 6% native polyacrylamide gel in a buffer containing 25 mM Tris and 25 mM boric acid. After electrophoresis, gels were stained with SYBR Gold (ThermoFisher).
 
-## Analytical size exclusion chromatography for interaction studies
+### Analytical size exclusion chromatography for interaction studies
 
 Analytical SEC experiments were performed on a Superdex 200 Increase 3.2/300 or a Superose 6 Increase 3.2/300 column (GE Healthcare). To detect the formation of a complex, proteins were mixed at equimolar ratios and incubated for 1 hr on ice before SEC. All samples were eluted under isocratic conditions at 4°C in SEC buffer [50 mM HEPES (pH 7.5), 150 mM NaCl, 5% glycerol]. Elution of proteins was monitored by absorbance at 280 nm. 100 µl fractions were collected and analyzed by SDS-PAGE and Coomassie staining.
 
-## In vitro protein binding assay of Sli15/Ipl1 to Ame1/Okp1 and/or Ctf19/Mcm21
+### In vitro protein binding assay of Sli15/Ipl1 to Ame1/Okp1 and/or Ctf19/Mcm21
 
 Phosphorylated or non-phosphorylated wild-type or mutant Sli15-2xStrep-HA-6xHis/Ipl1 was immobilized on Strep-Tactin Superflow agarose (Qiagen). For prephosphorylation, Sli15/Ipl1 was incubated at 30°C for 30 min in the presence of 3 mM MgCl2 and 3 mM ATP. Samples for non-phosphorylated Sli15/Ipl1 were treated the same way, but instead of 3 mM ATP the non-hydrolysable analog AMP-PNP (Santa Cruz Biotechnology) was applied. To remove basal phosphorylation, Sli15/Ipl1 was treated with lambda phosphatase (New England Biolabs) at 30°C for 30 min. Subsequently, non-phosphorylated as well as phosphorylated or dephosphorylated Sli15/Ipl1 complexes were washed three times with binding buffer [50 mM NaH2PO4(pH 8), 120 mM NaCl, 5% glycerol].
 
@@ -159,11 +449,11 @@ Testing of binding between Ame1/Okp1, Ctf19/Mcm21 and Sli15/Ipl1 was performed i
 
 To quantify the ratios of bound proteins to the bait protein SDS page band intensities were analyzed by using the Fiji software (Schindelin et al., 2012).
 
-## Amino acid sequence alignment
+### Amino acid sequence alignment
 
 Multiple sequence alignment of Cse4 or Okp1 protein sequences from interrelated budding yeast species was conducted with Clustal Omega (Sievers et al., 2011). Only protein sequences with the highest similarity to S. cerevisiae Cse4 or S. cerevisiae Okp1 as determined by a protein BLAST search were included in the search. In addition three mammalian and the Schizosaccharomyces pombe homologous CENP-A protein sequences were included in the Cse4 alignment.
 
-## Yeast strains and methods
+### Yeast strains and methods
 
 All plasmids and yeast strains used in this study are listed in Supplementary file 4 and Supplementary file 5, respectively. Yeast strains were created in the S288c background. The generation of yeast strains and yeast methods were performed by standard procedures. The anchor-away technique was performed as previously described (Haruki et al., 2008).
 
@@ -171,19 +461,19 @@ For anchor-away rescue experiments, the respective promoters and coding sequence
 
 The individual deletion mutants were generated using the Q5 site-directed mutagenesis kit (New England Biolabs). The rescue constructs were transformed into Cse4-, Ctf19-, Okp1-, or Sli15 anchor-away strains (Supplementary file 5) and cell growth was tested in 1:10 serial dilutions on YPD plates in the absence or presence of rapamycin (1 µg/ml) at 30°C for 3 days.
 
-## Minichromosome loss assay
+### Minichromosome loss assay
 
 The Ctf19 anchor-away strain containing a minichromosome (pYCF1/CEN3.L) (Spencer et al., 1990) and the Ctf19 anchor-away strains containing a minichromosome (pYCF1/CEN3.L) and the respective rescue plasmid were grown overnight in selective medium (-Ura selecting for the minichromosome, or –His/-Ura selecting for the rescue plasmid and the minichromosome) and then diluted into YPD medium and cultured for 4 hr. The yeast cultures were then plated onto synthetic medium containing rapamycin (1 µg/ml) and low (6 µg/ml) adenine to enhance the red pigmentation (Hieter et al., 1985) and incubated for 3 days at 30°C. Colonies retaining the minichromosome are white, and loss events result in the formation of red/red sectored colonies. The minichromosome loss frequency was quantified by determining the percentage of red/red sectored colonies in relation to the total colony number (white and red/red sectored) of three biological replicates.
 
-## Western blot analysis
+### Western blot analysis
 
 For western blot analysis an equivalent of 10 OD600 of cells logarithmically grown in liquid culture was collected by centrifugation at 3140 x g for 5 min at RT and the pellet was washed once with aqua dest. For protein extraction, the pellet was resuspended in 1 ml ice-cold 10% trichloroacetic acid and incubated on ice for 1 hr. Samples were pelleted at 20000x g for 10 min, 4°C and washed twice with ice-cold 95% ethanol. Pellets were air-dried and resuspended in 100 µl 1x SDS-PAGE sample buffer containing 75 mM Tris (pH 8.8). Samples were boiled (10 min, 95°C) and centrifuged at 10800 x g for 3 min at RT and supernatants were separated on 10% or 15% (Cse4 containing samples) SDS-PAGE gels. Immunoblotting was performed with the following antibodies: Anti-FLAG M2 (Sigma-Aldrich), Anti-PGK1 (ThermoFisher) and visualized by HRP-conjugated anti-mouse secondary antibodies (Santa Cruz).
 
-## Live cell microscopy
+### Live cell microscopy
 
 For localisation analysis of endogenously tagged Ctf19-GFP and Ctf19∆C-GFP proteins, cells were grown in synthetic medium without tryptophan at 30°C. For localisation analysis of ectopically expressed Ctf19-Okp1-GFP and Ctf19∆C-Okp1-GFP proteins in the Ctf19-anchor-away (Ctf19-FRB) strain, cells were grown in selective medium (–His/-Trp) until OD600 ~0.4, then rapamycin (1 µg/ml) was added and cells were grown for another 3 hr at 30°C. For imaging cells were immobilized on concanavalin-A (Sigma-Aldrich) coated slides (Ibidi). Microscopy was performed using a DeltaVision microscopy system (Applied precision) with a Olympus IX71 microscope controlled by softWoRx software (GE Healthcare). Images were processed using Fiji (Schindelin et al., 2012).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Expression constructs for 6xHis-Chl4/Iml3, 6xHis-Cnn1/Wip1-1xFlag, 6xHis-Nkp1/Nkp2 and Mhf1/Mhf2-1xStrep were created by amplification of genomic DNA and cloned into pETDuet-1 vector (Novagen). Expression was performed in BL21 (DE3) cells (New England Biolabs). Cells were grown at 37°C until OD600 0.6, followed by induction with 0.5 mM IPTG for Chl4/Iml3 or 0.2 mM IPTG for all other protein expressions. Protein expression was induced overnight at 18°C, or for 3 hr at 23°C, respectively.
 
@@ -191,15 +481,15 @@ Cells were lysed using a French Press in lysis buffer [50 mM Hepes (pH 7.5), 400
 
 Buffer exchange into a buffer containing 50 mM Hepes (pH 7.5), 150 mM NaCl and 5% glycerol was performed using a Superdex 200 HiLoad 16/60 column (GE Healthcare) for Chl4/Iml3 and Cnn1/Wip1 or using a PD10 desalting column (GE Healthcare) for Nkp1/2 and Mhf1/2 protein complexes.
 
-## Ame1/Okp1 expression and purification
+### Ame1/Okp1 expression and purification
 
 Ame1-6xHis/Okp1 wild-type and mutant protein expression and purification in E. coli was performed as described previously (Hornung et al., 2014).
 
-## In vitro reconstitution of Cse4- and H3-NCPs
+### In vitro reconstitution of Cse4- and H3-NCPs
 
 Octameric Cse4 and H3 containing nucleosomes were in vitro reconstituted from budding yeast histones which were recombinantly expressed in E. coli BL21 (DE3) and assembled on 167 bp of the 'Widom 601' nucleosome positioning sequence according to a modified protocol (Turco et al., 2015).
 
-## Affinity-purification of recombinant protein complexes from insect cells
+### Affinity-purification of recombinant protein complexes from insect cells
 
 C-terminal 6xHis-6xFLAG-tags on Mcm21, Mif2, Dsn1, Mcm16 and C-terminal 2xStrep- tags on Sli15 were used to affinity-purify Ctf19/Mcm21, Mif2, MTW1c, CTF3c and Sli15/Ipl1 complexes. Open reading frames encoding the respective subunits were amplified from yeast genomic DNA and cloned into the pBIG1/2 vectors according to the biGBac system (Weissmann et al., 2016). The pBIG1/2 constructs were used to generate recombinant baculoviral genomes by Tn7 transposition into the DH10Bac E. coli strain (ThermoFisher) (Vijayachandran et al., 2011). Viruses were generated by transfection of Sf21 insect cells (ThermoFisher) with the recombinant baculoviral genome using FuGENE HD transfection reagent (Promega). Viruses were amplified by adding transfection supernatant to Sf21 suspension cultures. Protein complexes were expressed in High Fiveinsect cell (ThermoFisher) suspension cultures.
 

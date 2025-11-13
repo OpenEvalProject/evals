@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Fungal Hülle cells with nuclear storage and developmental backup functions are reminiscent of multipotent stem cells. In the soil, Hülle cells nurse the overwintering fruiting bodies of Aspergillus nidulans . The genome of A. nidulans harbors genes for the biosynthesis of xanthones. We show that enzymes and metabolites of this biosynthetic pathway accumulate in Hülle cells under the control of the regulatory velvet complex, which coordinates development and secondary metabolism. Deletion strains blocked in the conversion of anthraquinones to xanthones accumulate emodins and are delayed in maturation and growth of fruiting bodies. Emodin represses fruiting body and resting structure formation in other fungi. Xanthones are not required for sexual development but exert antifeedant effects on fungivorous animals such as springtails and woodlice. Our findings reveal a novel role of Hülle cells in establishing secure niches for A. nidulans by accumulating metabolites with antifeedant activity that protect reproductive structures from animal predators.
+Fungal Hülle cells with nuclear storage and developmental backup functions are reminiscent of multipotent stem cells. In the soil, Hülle cells nurse the overwintering fruiting bodies of Aspergillus nidulans. The genome of A. nidulans harbors genes for the biosynthesis of xanthones. We show that enzymes and metabolites of this biosynthetic pathway accumulate in Hülle cells under the control of the regulatory velvet complex, which coordinates development and secondary metabolism. Deletion strains blocked in the conversion of anthraquinones to xanthones accumulate emodins and are delayed in maturation and growth of fruiting bodies. Emodin represses fruiting body and resting structure formation in other fungi. Xanthones are not required for sexual development but exert antifeedant effects on fungivorous animals such as springtails and woodlice. Our findings reveal a novel role of Hülle cells in establishing secure niches for A. nidulans by accumulating metabolites with antifeedant activity that protect reproductive structures from animal predators.
 
 ## Introduction
 
@@ -38,13 +38,130 @@ Here, we investigated the localization of mdp/xpt-encoded proteins and their SM 
 
 ## Results
 
-## Proteins encoded by the mdp/xpt cluster are located in Hülle cells and sexual mycelia in A. nidulans
+### Proteins encoded by the mdp/xpt cluster are located in Hülle cells and sexual mycelia in A. nidulans
 
 Most of the mdp/xpt genes in A. nidulans are expressed during sexual development (Bayram et al., 2016). A comparative proteome study on protein extracts of whole sexual tissues as well as enriched Hülle cells from wildtype A4 was conducted (Figure 1—figure supplement 2 and Proteomic MS analysis data). Vegetative and asexual mycelia were used as controls. Vegetative mycelia were cultivated 20 hr in liquid medium and asexual and sexual tissues as well as Hülle cells were harvested 3, 5, and 7 days after inoculation on plates. An LC-MS analysis revealed that 24 proteins were present exclusively in both sexual mycelia and enriched Hülle cells but were not identified from vegetative or asexual tissues (Supplementary file 1). Among them, five proteins encoded by the mdp/xpt cluster were identified, MdpG, MdpL, MdpH, XptB, and XptC (Table 1). To verify the localization of these proteins, the final enzyme in the biosynthesis of epi-/shamixanthone, XptC, was selected as an example and C-terminally fused to GFP for fluorescence microscopy. The fusion protein XptC-GFP was exclusively detected in 3-day-old sexual hyphae as well as in enriched Hülle cells but not in 20-hr-old vegetative hyphae (Figure 1). The stability of the fusion protein XptC-GFP was verified by applying an α-GFP antibody in Western analysis (Figure 1b). These results suggest that at least five members of the mdp/xpt cluster, MdpG, MdpL, MdpH, XptB, and XptC, are specifically localized to Hülle cells as well as sexual hyphae. Members of the Mdp/Xpt proteins can be detected from 3 to 7 days of sexual development.
 
-## The mdp/xpt cluster metabolites change over time with fruiting body development
+**Table 1.**
+ Five Mdp/Xpt proteins are found in sexual mycelia and Hülle cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene ID (protein)</th>
+      <th>Putative function (Szwalbe et al., 2019)</th>
+      <th colspan="2">3 days</th>
+      <th colspan="2">5 days</th>
+      <th colspan="2">7 days</th>
+      <th>20 hr</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Sexual mycelia</th>
+      <th>Hülle cells</th>
+      <th>Sexual mycelia</th>
+      <th>Hülle cells</th>
+      <th>Sexual mycelia</th>
+      <th>Hülle cells</th>
+      <th>Vegetative mycelia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AN10023 (MdpL)</td>
+      <td>Baeyer-Villiger monooxygenase</td>
+      <td>121</td>
+      <td>25</td>
+      <td>98</td>
+      <td>–</td>
+      <td>34</td>
+      <td>42</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>AN7998 (XptC)</td>
+      <td>Reductase</td>
+      <td>54</td>
+      <td>7</td>
+      <td>48</td>
+      <td>6</td>
+      <td>26</td>
+      <td>–</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AN12402 (XptB)</td>
+      <td>Prenyltransferase</td>
+      <td>52</td>
+      <td>5</td>
+      <td>19</td>
+      <td>–</td>
+      <td>–</td>
+      <td>8</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>AN10022 (MdpH)</td>
+      <td>Anthrone oxidase, decarboxylase</td>
+      <td>27</td>
+      <td>–</td>
+      <td>2</td>
+      <td>5</td>
+      <td>27</td>
+      <td>6</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>AN0150 (MdpG)</td>
+      <td>Polyketide synthase</td>
+      <td>12</td>
+      <td>4</td>
+      <td>–</td>
+      <td>3</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig1-v1.jpg)
+
+**Figure 1.:** (a) Fluorescence microscopy of sexual mycelia, Hülle cells (after 3 days of incubation), and vegetative mycelium after 20 hr of incubation from xptC:gfp strain. A. nidulans wildtype (wt, AGB552) and constitutively expressed GFP strain (OEgfp, AGB596) were used as controls. Red arrows indicate Hülle cells. Scale bar = 20 µm. The fusion protein XptC-GFP is undetectable in vegetative mycelia. (b) Western hybridization of sexual (sex) tissues harvested 3 days after inoculation. α-GFP antibody was used. The fusion protein XptC-GFP was detected at approximately 95 kDa. A strain expressing GFP constitutively (OEgfp, AGB596) and wildtype (wt, AGB552) served as controls. Ponceau S staining was used as sample loading control.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The 12 mdp genes are clustered and located on chromosome VIII. The gene xptA is located on chromosome I, whereas xptB and xptC are located on chromosome II.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Venn diagram with 1525 identified proteins from different tissues (vegetative, asexual, sexual mycelia, and enriched Hülle cells) of A. nidulans A4. Vegetative mycelia were cultivated for 20 hr in liquid medium. Asexual and sexual cultures were grown for 3, 5, and 7 days on solid plates. Hülle cells were enriched from sexual tissues. Proteins that could be identified in two or more biological replicates and with two or more peptides per protein by LC-MS were used for the analysis. The dashed, red circle represents the 24 proteins (Supplementary file 1) that were exclusively identified from sexual mycelium and Hülle cell extracts.
+
+### The mdp/xpt cluster metabolites change over time with fruiting body development
 
 Under laboratory conditions, A. nidulans wildtype (AGB552), harboring ∆nkuA for improved homologous gene replacements, forms young sexual fruiting bodies (cleistothecia) that are surrounded by Hülle cells after 3 days of sexual growth in the absence of light. At this stage, all mdp/xpt genes are expressed (Figure 2—figure supplement 1). After 5 days, the cleistothecia are mature with a dark pigmented shell (Figure 2—figure supplement 2). Timing and localization of mdp/xpt metabolite production were monitored during sexual development and their roles in cleistothecia formation were examined. Different time points were selected for SM analysis (Figure 2—figure supplement 2): prior to the development of cleistothecia or Hülle cells (day 2), young cleistothecia with Hülle cells (day 3) and mature cleistothecia with Hülle cells (day 5), as well as late stages with mature cleistothecia (days 7 and 10). The different SM intermediates were addressed by a genetic approach. The pathway was disturbed by deleting mdpG and mdpF (early biosynthetic steps), mdpC and mdpL (intermediate biosynthetic steps), and mdpD, xptA, xptB, and xptC (late biosynthetic steps) separately (Figure 2A). A. nidulans wildtype and mdp/xpt deletion strains were grown under sexual conditions for 2, 3, 5, 7, and 10 days and the extra- and intracellular metabolites were extracted with ethyl acetate and subjected to LC-MS analysis. The identified mdp/xpt cluster products were categorized into four groups according to their molecular structures (anthraquinones in orange, benzophenones in blue, xanthones in green, arugosins in black, Figure 2a).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig2-v1.jpg)
+
+**Figure 2.:** (a) Simplified biosynthetic pathway of epi-/shamixanthone in A. nidulans (Chiang et al., 2010; Pockrandt et al., 2012; Sanchez et al., 2011). Black enzymes are localized at the early steps of the biosynthetic pathway. Orange enzymes are localized at the middle of the biosynthetic pathway. Blue enzymes are localized at the late steps of the biosynthetic pathway. The cluster products are classified as four groups: anthraquinones are orange, benzophenones are blue, xanthones are green, arugosin A is black. (b) Chromatograms of secondary metabolites (SMs) of A. nidulans wildtype (wt, AGB552) and mdp/xpt deletion strains (∆). Conidia of A. nidulans wt and mdp/xpt mutant strains were point-inoculated on minimal medium (MM) and grown under conditions inducing the sexual cycle for 3 and 10 days. Extra- and intracellular metabolites were extracted and detected by LC-MS with a charged aerosol detector (CAD) in three independent experiments. Only CAD-detectable and identified SMs are shown with numbers: (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone; (5) 2,ω-dihydroxyemodin; (6) ω-hydroxyemodin; (7) emodin; (8) chrysophanol; (9) paeciloxanthone; (10) variecoxanthone A. ‡ marks unidentified compounds.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Aspergillus nidulans wildtype AGB552 conidia were point-inoculated on minimal medium (MM) agar plates and cultivated for 3 days under sexual conditions. RNA samples were harvested from three biological replicates and transcribed to cDNA. PCR was performed. AN0153 and AN10039 represent the genes localized at the border of the mdp cluster on chromosome VIII and were used as control. M = 1 kb DNA ladder (Thermo Fisher Scientific, SM0311).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Conidia of A. nidulans AGB552 were point-inoculated on minimal medium (MM) agar plates and cultivated under sexual conditions. After 2 days, only conidiophores (Co) but no cleistothecia (Cl) or Hülle cells (Hc) were present. Young cleistothecia and Hülle cells were visible after 3 days and mature cleistothecia after 5 days. Scale bar = 200 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Conidia of A. nidulans wildtype AGB552 and mdp/xpt deletion strains were point-inoculated on minimal medium (MM) agar plates and grown under sexual-inducing conditions for 2, 5, and 7 days. Extra- and intracellular metabolites were extracted and detected by LC-MS with a charged aerosol detector (CAD). Only CAD-detectable and identified SMs are shown with numbers: (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone; (5) 2,ω-dihydroxyemodin; (6) ω-hydroxyemodin; (7) emodin; (8) chrysophanol; (9) paeciloxanthone; (10) variecoxanthone A. ‡ marks unidentified compounds.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Conidia of A. nidulans wildtype AGB552 and mdp/xpt deletion strains were point-inoculated on minimal medium (MM) agar plates and grown under sexual-inducing conditions for 3 days. Extracellular metabolites were extracted and detected by LC-MS with a charged aerosol detector (CAD). Only CAD-detectable and identified SMs are shown with numbers: (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone; (5) 2,ω-dihydroxyemodin; (6) ω-hydroxyemodin; (7) emodin; (8) chrysophanol; (9) paeciloxanthone; (10) variecoxanthone.
 
 After 2 days of sexual development, wildtype and deletion strains did not produce any mdp/xpt metabolites (Figure 2—figure supplement 3). After 3 and 5 days, wildtype produced arugosin A (1) and the final xanthones emericellin (2), shamixanthone (3), and epishamixanthone (4) (Figure 2b, Figure 2—figure supplement 3, Supplementary file 2). As expected, loss of the first two enzymes of the biosynthesis MdpG and MdpF completely abolished the production of cluster metabolites. Deletion of the intermediate enzyme encoding genes mdpC and mdpL led to a loss of 1–4 but to the accumulation of the anthraquinones 2,ω-dihydroxyemodin (5), ω-hydroxyemodin (6) and emodin (7) in both strains and chrysophanol (8) in ΔmdpL. Deleting the biosynthetically final enzyme encoding genes mdpD, xptA, and xptB abolished the production of 1–4. ΔmdpD and ΔxptA accumulate the xanthones paeciloxanthone (9) and variecoxanthone A (10), respectively. ΔxptB accumulates the anthraquinone 5. In addition, these three strains accumulate some unidentified compounds. Deletion of xptC led to a loss of the final xanthones 3 and 4 but an increased accumulation of 2. After 7 and 10 days of sexual development, the accumulated emodins 5–7 of the deletion strains were decreased or even disappeared (Figure 2b, Figure 2—figure supplement 3), whereas the abundance of 8 increased and the xanthones 2–4 and 10 were still detectable in similar amounts as after 3 and 5 days.
 
@@ -52,33 +169,57 @@ In summary, the SMs of the mdp/xpt cluster are produced as soon as the first sex
 
 The medium from 3-day-old sexual mycelium of different strains was analyzed after removing the fungal colony to determine whether the identified metabolites were located exclusively within Hülle cells. LC-MS analysis revealed that the metabolites were also secreted to the medium, and thus may be secreted into the environment in natural habitats (Figure 2—figure supplement 4).
 
-## The mdp/xpt cluster metabolites are enriched in Hülle cells of A. nidulans
+### The mdp/xpt cluster metabolites are enriched in Hülle cells of A. nidulans
 
 The colors of the mdp/xpt cluster metabolites mostly are yellow or orange in pure powder form (Chiang et al., 2010). This enabled us to trace the localization of the metabolites in the fungus. A. nidulans wildtype forms a colony with green conidiospores and light yellow Hülle cells after 3 days of sexual growth (Figure 3a and b). All mdp/xpt deletion strains showed no change in green conidiospore production but the color of the Hülle cells changed. Whereas ΔmdpD, ΔxptA, ΔxptB, and ΔxptC showed no color difference to wildtype, the deletion strains of the early biosynthetic genes mdpG and mdpF, which have lost mdp/xpt metabolite synthesis (Figure 2b), produced colorless Hülle cells. ΔmdpC, which accumulates the brown (5) and yellow (6, 7) emodins and yellow chrysophanol (8), produced dark yellow Hülle cells (Figure 3a and b). This indicates that the mdp/xpt metabolites are enriched inside the Hülle cells. The SMs have no obvious effect on Hülle cell shape (Figure 3c) but the accumulation of epi-/shamixanthone precursors in ΔmdpC, ΔmdpL, ΔmdpD, ΔxptA, and ΔxptB decreased the Hülle cell size (Figure 3d). The strains with the smallest Hülle cells, ΔmdpC and ΔmdpL, were tested for their Hülle cell germination ability. 39–56% of tested Hülle cells of wildtype and ΔmdpG germinated, whereas the small Hülle cells of ΔmdpC and ΔmdpL displayed a germination ability of only 2–6% (Figure 3e). The precursors accumulating in the deletion strains might inhibit the growth and germination of Hülle cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig3-v1.jpg)
 
-**Figure 3.:** mdp/xpt cluster metabolites are localized in Hülle cells.(a) Colony phenotypes of Aspergillus nidulans wildtype (wt, AGB552) and mdp/xpt deletion strains (∆). Conidia were point-inoculated on minimal medium (MM) agar plates and cultivated 3 days under sexual conditions. (b) Photomicrographs of Hülle cells after 5 days. Scale bar = 50 µm. (c) Morphology of Hülle cells after 5 days. Red arrows indicate examples of Hülle cells. Scale bar = 25 µm. (d) Box plot of Hülle cells size after 5 days of sexual development (n ≥ 150). (e) Germination rate of Hülle cells. Detached Hülle cells were collected from cleistothecia surface after 5 days of sexual development and placed on fresh MM agar plates. The germination was monitored after 48 hr at 37°C. n = 40 (±1) with two biological replicates. All significance tests are in comparison to wildtype (wt), ***/**p < 0.005/0.05, two-tailed t-test.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** (a) Colony phenotypes of Aspergillus nidulans wildtype (wt, AGB552) and mdp/xpt deletion strains (∆). Conidia were point-inoculated on minimal medium (MM) agar plates and cultivated 3 days under sexual conditions. (b) Photomicrographs of Hülle cells after 5 days. Scale bar = 50 µm. (c) Morphology of Hülle cells after 5 days. Red arrows indicate examples of Hülle cells. Scale bar = 25 µm. (d) Box plot of Hülle cells size after 5 days of sexual development (n ≥ 150). (e) Germination rate of Hülle cells. Detached Hülle cells were collected from cleistothecia surface after 5 days of sexual development and placed on fresh MM agar plates. The germination was monitored after 48 hr at 37°C. n = 40 (±1) with two biological replicates. All significance tests are in comparison to wildtype (wt), ***/**p < 0.005/0.05, two-tailed t-test.
 
-## The velvet complex regulates the mdp/xpt cluster metabolite production in A. nidulans
+### The velvet complex regulates the mdp/xpt cluster metabolite production in A. nidulans
 
 Velvet proteins, such as VeA and VelB, are fungal DNA-binding proteins with a similar structural fold as the mammalian NF-κB inflammation and infection regulators (Ahmed et al., 2013). In A. nidulans, velvet proteins physically interact with epigenetic methyltransferases like LaeA (Sarikaya-Bayram et al., 2014; Sarikaya-Bayram et al., 2015). The heterotrimeric velvet complex VelB-VeA-LaeA coordinates sexual development and secondary metabolism (Bayram et al., 2008). VelB-VeA enters the nucleus to initiate sexual development and physically interacts with the epigenetic master regulator of secondary metabolism LaeA. To analyze the impact of the velvet complex on mdp/xpt SM production, extra- and intracellular metabolites of wildtype, ∆veA, ∆velB, and ∆laeA, were analyzed by LC-MS after 5 days of sexual development (Figure 4). The production of the final mdp/xpt products, arugosin A (1) and the xanthones emericellin (2), shamixanthone (3), and epishamixanthone (4), was abolished in ∆veA and ∆velB and was reduced in ∆laeA. This indicates that the velvet complex VelB-VeA-LaeA regulates the cluster metabolite production, whereby VelB and VeA are prerequisites for the mdp/xpt metabolite production.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig4-v1.jpg)
 
-**Figure 4.:** mdp/xpt cluster metabolites.(a) Chromatograms of secondary metabolites (SMs) of Aspergillus nidulans wildtype (wt, AGB552) and velvet complex gene deletion strains (∆). Conidia of A. nidulans strains were point-inoculated on minimal medium (MM) and sexually grown for 5 days. Extra- and intracellular metabolites were extracted and detected by LC-MS with a charged aerosol detector (CAD). Only CAD-detectable SMs of the mdp/xpt cluster are shown with numbers and were identified with MS and UV/VIS. (b) EICs (extracted ion chromatograms) of the compounds detected by CAD. m/z of 1 was detected in negative mode. m/z of 2, 3, and 4 was detected in positive mode. ID (compound number in this study): (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone.
+**Figure 4.:** (a) Chromatograms of secondary metabolites (SMs) of Aspergillus nidulans wildtype (wt, AGB552) and velvet complex gene deletion strains (∆). Conidia of A. nidulans strains were point-inoculated on minimal medium (MM) and sexually grown for 5 days. Extra- and intracellular metabolites were extracted and detected by LC-MS with a charged aerosol detector (CAD). Only CAD-detectable SMs of the mdp/xpt cluster are shown with numbers and were identified with MS and UV/VIS. (b) EICs (extracted ion chromatograms) of the compounds detected by CAD. m/z of 1 was detected in negative mode. m/z of 2, 3, and 4 was detected in positive mode. ID (compound number in this study): (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone.
 
-## Accumulation of anthraquinone intermediates in mdp/xpt mutants impairs sexual development
+### Accumulation of anthraquinone intermediates in mdp/xpt mutants impairs sexual development
 
 Grown under conditions inducing the sexual cycle for 3 days, wildtype A. nidulans forms young, unpigmented cleistothecia covered with a high number of Hülle cells. Cleistothecia shells become pigmented after 4 days, and cleistothecia mature with a dark pigmented shell after 5 days (Figure 5a). The development of sexual structures was monitored over time in the wildtype and mdp/xpt deletion strains in order to reveal the role of metabolites encoded by the mdp/xpt cluster in sexual development. Deletion strains of mdpG and mdpF, which have not produced any mdp/xpt metabolites (Figure 2b), developed wildtype-like cleistothecia, indicating that xanthones and arugosin A produced by the mdp/xpt pathway are not required for sexual development. In contrast, ΔmdpC and ΔmdpL, which both accumulate the emodins 5–7, were strongly delayed in cleistothecia development. After 3 days of sexual development, they formed pigmented Hülle cells without any cleistothecia. After 5 days, young, immature cleistothecia with soft and barely pigmented shells were formed. Cleistothecia were fully pigmented after 10 days (Figure 5a) but they exhibited reduced size (Figure 5b) and diminished number of ascospores (Figure 5c), which were viable (Figure 5—figure supplement 1). Even after 25 days, cleistothecia of ΔmdpC and ΔmdpL mutants were still significantly smaller than cleistothecia of the wildtype (Figure 5—figure supplement 2). The mutant ΔmdpL formed significantly more cleistothecia after 10 days as compared to all other strains (Figure 5d). The deletion strains of mdpD, xptA, and xptB exhibited a moderate delay of cleistothecia development (Figure 5a). After 4 days of sexual development, they formed young, only barely pigmented cleistothecia, but after 5 days the development was rescued and the cleistothecia turned wildtype-like. In addition, for ΔxptB, cleistothecia diameter (Figure 5b and Figure 5—figure supplement 2) as well as ascospore amount (Figure 5c) were diminished, but the spores were viable (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig5-v1.jpg)
+
+**Figure 5.:** (a) Photomicrographs of sexual structures of wildtype (wt, AGB552) and mdp/xpt deletion strains at different developmental stages. Scale bar = 100 µm. (b) Box plot of cleistothecia diameter after 10 days of sexual development (n ≥ 650). (c) Ascospore quantification after 10 days. Ten cleistothecia were broken in 100 µl 0.02% Tween buffer and released ascospores were quantified. Error bar indicates standard deviation with three biological and three technical replicates. (d) Cleistothecia quantification after 10 days. Error bar indicates standard deviation with five biological replicates; amount of cleistothecia of wt was set to 100%. (e) Box plot of cleistothecia diameter of A. nidulans wt grown on paper discs loaded with extracted secondary metabolites (SMs) of wt and mdp/xpt deletion strains. Strains were sexually grown for 5 days. SMs were extracted, solved in MeOH, and loaded on paper discs separately (pure MeOH was used as blank control). Paper discs were placed on agar plates inoculated with 1 × 105 conidia of A. nidulans wt. Cleistothecia on the paper discs were collected after 5 days of sexual growth (n ≥ 65). All significance tests are in comparison to wt, ***/**p < 0.005/0.05, two-tailed t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Cleistothecia of Aspergillus nidulans wildtype AGB552, ΔmdpC and ΔxptB were harvested after 10 days of sexual development. (a) Manually opened cleistothecia and released ascospores. Scale bar = 20 µm. (b) One mature cleistothecium of each strain was opened manually in 100 µl Tween/NaCl solution and cultivated on an minimal medium (MM) agar plate for 3 days in light.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Conidia of Aspergillus nidulans wildtype (wt) AGB552 and mdp/xpt deletion strains were point-inoculated on minimal medium (MM) agar plates and sexually grown for 25 days. Cleistothecia were collected and the diameters were measured. n ≥ 750, ***p < 0.005 (referenced to wt), two-tailed t-test.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** A. nidulans wildtype (wt) AGB552 and mdp/xpt deletion strains were sexually grown for 5 days. SMs were extracted, solved in MeOH, and loaded onto filter discs. Pure MeOH was used as blank control. Filter discs were placed on agar plates inoculated with 1 × 105 conidia of A. nidulans wildtype. After 5 days of sexual development, the cleistothecia on each paper disc were monitored. Scale bars = 200 µm.
+
 The effect of metabolites extracted from mdp/xpt deletion strains on cleistothecia development of A. nidulans wildtype was examined. Metabolites of wildtype and mdp/xpt deletion strains were extracted after 5 days of sexual development, dissolved in methanol, and loaded onto paper discs. SM-loaded paper discs were placed on an agar plate inoculated with A. nidulans wildtype spores. Pure methanol served as control. After 5 days of sexual incubation, the cleistothecia development on each paper disc was monitored. Metabolites of the wildtype and ΔmdpG, ΔmdpF, ΔmdpL, ΔmdpD, ΔxptA, ΔxptB, and ΔxptC displayed no effect on cleistothecia development. Metabolites of ΔmdpC exhibited marked effects on the development of wildtype cleistothecia, which were significantly smaller and remained immature (Figure 5e and Figure 5—figure supplement 3). This indicates that the metabolites of ΔmdpC 2,ω-dihydroxyemodin (5), ω-hydroxyemodin (6), and emodin (7) or at least one of them inhibited the development of cleistothecia. The wildtype AGB552 does not accumulate these intermediates under laboratory conditions, therefore it is unlikely that these SMs play any role in the ecology of A. nidulans. In summary, the disruption of the epi-/shamixanthone biosynthetic pathway causing the accumulation of intermediates, in particular emodins, resulted in a delay of cleistothecia maturation and a decrease in cleistothecial size. Another potential mechanism how the mdp/xpt pathway may affect sexual development is that it reduces the concentration of precursors, which might otherwise inhibit sexual development.
 
-## Precursors of epi-/shamixanthone in A. nidulans but not the final products of the mdp/xpt pathway repress fruiting body and resting structure formation in other fungi
+### Precursors of epi-/shamixanthone in A. nidulans but not the final products of the mdp/xpt pathway repress fruiting body and resting structure formation in other fungi
 
 The soil fungus A. nidulans forms cleistothecia as overwintering structures to survive in harsh environments until its favorable growth conditions return. Epi-/shamixanthone precursors enriched in mdp/xpt deletion strains repressed cleistothecia development of A. nidulans. We analyzed the effect of the mdp/xpt metabolites on sexual reproduction or resting structures formation in other fungi. Sordaria macrospora, which lacks an asexual reproduction cycle, and two asexually reproducing Verticillium spp., which produce melanized resting structures, were investigated. SMs extracted from A. nidulans wildtype and mdp/xpt deletion strains were loaded onto paper discs and placed on agar plates inoculated with fungal spores.
 
 S. macrospora produces flask-shaped, pigmented sexual fruiting bodies (perithecia) after 7 days of surface cultivation (Teichert et al., 2020). Exposure of S. macrospora to metabolites secreted by the wildtype of A. nidulans did not affect perithecia formation. When S. macrospora was exposed to SMs of A. nidulans ΔmdpC, ΔmdpL, and ΔmdpD, perithecia formation was repressed, resulting in a halo surrounding the SM-loaded paper disc. The biggest halo was observed for ∆mdpC metabolites (Figure 6, Figure 6—figure supplement 1a). Verticillium dahliae and Verticillium longisporum form melanized hyphal aggregates called microsclerotia as resting structures to survive in the soil for decades (Zeise and Tiedemann, 2001). Exposed to the SMs of A. nidulans ΔmdpC, ΔmdpL, and ΔmdpD, V. dahliae and V. longisporum produced fewer microsclerotia under the paper discs and its surrounding area. Especially under the paper disc with SMs of ∆mdpC, Verticillium spp. cannot produce any microsclerotia (Figure 6). These results show that the precursors of epi-/shamixanthone accumulated by ΔmdpC, ΔmdpL, and ΔmdpD strains repressed sexual reproduction and resting structure formation in S. macrospora and Verticillium spp. The strongest effect was observed for ΔmdpC, which produced the emodins 5, 6, and 7.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig6-v1.jpg)
+
+**Figure 6.:** Microphotographs of fungal reproduction and resting structures exposed to extracted secondary metabolites (SMs) of Aspergillus nidulans wildtype (wt) and mdp/xpt deletion strains. Conidia of A. nidulans strains were point-inoculated on minimal medium (MM) and sexually grown for 5 days. SMs were extracted, solved in MeOH, and loaded onto paper discs (MeOH solvent served as control). Paper discs were placed on agar plates inoculated with spores of the tested fungi. For Sordaria macrospora, BMM agar plates were inoculated with 2 × 105 spores and cultivated 7 days at 27°C. White bar = 1 cm. For Verticillium spp., simulated xylem medium (SXM) agar plates were inoculated with 1 × 105 Verticillium dahliae or Verticillium longisporum spores and cultivated 10 days at 25°C. The upper panel shows pictures taken from the back of the paper disc and the lower panel shows the agar under the paper disc. Black bar = 1 mm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Conidia of Aspergillus nidulans wildtype (wt) AGB552, ΔmdpC, ΔmdpL, and ΔmdpD were point-inoculated on minimal medium (MM) agar plates and sexually grown for 5 days. SMs were extracted and loaded onto filter discs. Filter discs were placed on BMM agar plates inoculated with spores of S. macrospora. Repression halo of S. macrospora perithecia formation was measured after 7 days of incubation at 27°C. Error bar indicates standard deviation with two technical and biological replicates. **p < 0.05 (referenced to wt), two-tailed t-test. (b) Race tube experiments with S. macrospora on BMM medium. SM extracts of Aspergillus nidulans AGB552 and ΔmdpC diluted in MeOH were used. As control only methanol (MeOH) was used. Growth rates were determined in cm/day. Experiment was carried out for 7 days at 27°C. *p < 0.05, two-tailed t-test. ns means not significant. Error bar indicates standard deviation with three biological replicates.
 
 In order to identify the metabolites responsible for the effects, commercially available pure chemicals were tested; 75 µg of ω-hydroxyemodin (6), emodin (7), and chrysophanol (8) were loaded separately onto paper discs and placed on agar plates inoculated with A. nidulans, S. macrospora, V. dahliae, and V. longisporum wildtypes (Figure 7). 75 µg emodin corresponds to the amount extracted from approximately 6–7 point-inoculated A. nidulans ΔmdpC colonies after 3 days of growth. S. macrospora, V. dahliae, and V. longisporum produced fewer fruiting bodies or resting structures, respectively, when exposed to emodin (7) in comparison to the MeOH control, ω-hydroxyemodin (6), and chrysophanol (8). None of the metabolites affected the sexual fruiting body of A. nidulans. This effect seems to be specific to developmental structures because SMs produced by the ΔmdpC strain did not significantly affect the vegetative growth of S. macrospora hyphae (Figure 6—figure supplement 1b).
 
@@ -86,11 +227,27 @@ In order to identify the metabolites responsible for the effects, commercially a
 
 **Figure 7.:** Pure emodin, ω-hydroxyemodin, and chrysophanol were dissolved in MeOH and loaded onto paper discs (final amount 75 µg per disc). MeOH served as blank control. Paper discs were placed on agar plates inoculated with spores of the tested fungi. For Sordaria macrospora, BMM agar plates were inoculated with 2 × 105 spores and cultivated 7 days at 27°C. For Verticillium spp., simulated xylem medium (SXM) agar plates were inoculated with 1 × 105 spores and cultivated 10 days at 25°C. Microsclerotia were monitored under the paper disc and at its back. Black bar = 1 mm. For Aspergillus nidulans, 1 × 105 conidia of wildtype were inoculated on minimal medium (MM) agar plates and sexually incubated for 5 days at 37°C. White bar = 200 µm.
 
-## The metabolite products of the mdp/xpt cluster in A. nidulans protect overwintering structures from animal predators
+### The metabolite products of the mdp/xpt cluster in A. nidulans protect overwintering structures from animal predators
 
 Besides competition with other microorganisms in soil, fungi face the risk of predation by fungivores. Therefore, we examined whether metabolites from the mdp/xpt cluster protected A. nidulans from predators. The mdpC and mdpG complementation strains (mdpC com, mdpG com), which produced all mdp/xpt metabolites as the wildtype (Figure 8—figure supplement 1), the non-producing strain ∆mdpG as well as the emodins-accumulating strain ∆mdpC were offered to animal predators in a food choice experiment (Figure 8—figure supplement 2). Animals representing distant arthropod lineages were selected: the mealworm larvae Tenebrio molitor (insect), the collembolan Folsomia candida (primitive arthropod), and the woodlouse Trichorhina tomentosa (crustacean). Two fungal cultures were placed onto opposite sides of a Petri dish, and active animals were placed onto the center area. The animals feeding on each fungal culture were counted at time intervals.
 
 T. molitor showed no obvious food preference for mdp/xpt metabolites (Figure 8—figure supplement 2a). F. candida and T. tomentosa strongly avoided A. nidulans producing the final products including epi-/shamixanthone (Figure 8—figure supplement 2b,c). The springtails and isopods gradually gathered on fungal cultures not producing the final products, where they remained over 24 hr, indicating that the final products deterred the animals from feeding. Emodins, which accumulated in ∆mdpC, have not affected animal grazing. A similar number of animals were found on ∆mdpC as on ∆mdpG cultures. In an additional experiment, the feeding behavior of the animals was analyzed. F. candida and T. tomentosa were placed on agar pieces with 5-day-old sexual mycelia of the wildtype, the ΔmdpG, and the ΔmdpC strain. Fungal cultures were incubated for 6 days with the predators. Only cultures of the mutant strains showed large areas of mycelium consumed by both animal species (Figure 8a–b), indicating that the animals preferred feeding on mycelium without mdp/xpt xanthones. This result raised the question whether the observed protection was limited to the mycelium or also included the cleistothecia. The question was addressed by exposing 4-day-old cleistothecia with Hülle cells of the wildtype and the ΔmdpG strain to T. tomentosa and F. candida on agar plates. The mdpC deletion strain could not be included because of its incapability to produce cleistothecia in 4 days. Only a few cleistothecia were consumed by T. tomentosa (less than 10% for the wildtype and ΔmdpG), regardless of the strain. No differences in the feeding behavior of T. tomentosa on cleistothecia of the wildtype and the ΔmdpG strain were observed. In contrast, F. candida showed a significant feeding preference for cleistothecia of the ΔmdpG strain in comparison to the wildtype (Figure 8c). The results showed that metabolites produced by the mdp/xpt pathway protected sexual mycelium as well as cleistothecia from predators.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig8-v1.jpg)
+
+**Figure 8.:** Approximately 30 springtail animals of Folsomia candida were placed on agar pieces covered with mycelium of fungal strains induced for 5 days under sexual conditions. Agar pieces with animals were incubated for 6 days at 22°C. For the two A. nidulans mutant strains ΔmdpG and ΔmdpC, mycelium-free areas could be observed (areas are indicated by red arrows). None of the agar pieces with mycelium of the wildtype showed large areas without mycelium. Two independent experiments were carried out. Each experiment contains at least six agar pieces from two different plates. (b) The same experimental setup as in (a) was used with the isopod Trichorhina tomentosa. Five animals were put on each agar piece. After 6 days, mycelium-free areas larger than 1% of the area of the agar piece were quantified using ImageJ software. Red arrows show mycelium-free areas. White arrows point on single T. tomentosa animals on the agar pieces. (c) Ten cleistothecia with Hülle cells of the indicated strains obtained from mycelium incubated for 4 days under sexual-inducing conditions were placed on water-agar plates and incubated with T. tomentosa (five animals) or F. candida (approximately 30 animals). Cleistothecia remaining after 24 hr were counted. Two biological replicates with T. tomentosa and four biological replicates with F. candida were performed. Each biological replicate contained six technical replicates. Statistical significance was determined using two-tailed t-test with *p < 0.05, ***p < 0.005 (referenced to wt). Error bar indicates the standard deviation.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The production of the mdp/xpt metabolites and the colony phenotype of (a) mdpG complementation (mdpGcom) and (b) mdpC complementation (mdpCcom) were restored to wildtype. Aspergillus nidulans conidiospores were point-inoculated on minimal medium (MM) agar plates and cultivated under sexual conditions for 3 days. Extra- and intracellular metabolites were extracted and detected by LC-MS. EICs (extracted ion chromatograms) of compounds are shown. m/z of 1, 5, 6, and 7 was detected in negative ion mode. m/z of 2, 3, and 4 was detected in positive ion mode. ID (compound number in this study): (1) arugosin A; (2) emericellin; (3) shamixanthone; (4) epishamixanthone; (5) 2,ω-dihydroxyemodin; (6) ω-hydroxyemodin; (7) emodin.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Food preference test for Tenebrio molitor larvae (a), Folsomia candida (b), and Trichorhina tomentosa (c). Aspergillus nidulans spores were point-inoculated on minimal medium (MM) agar plates and incubated for 5 days under sexual conditions. A piece of the colony was cut out and used for animal feeding. Animals were placed into the center of the Petri dish containing fungal agar pieces on opposite sides. The number of animals on each side was counted. For T. molitor, 10 animals per plate were used. The experiment was performed with three biological and nine technical replicates and medians were calculated (the medians for the number of animals of ∆mdpG and mdpGcom were identical). For F. candida, approximately 20 animals per plate were used. For T. tomentosa, eight animals per plate were used. These experiments were performed with three biological and four technical replicates. Error bars represent 95% confidence interval; orange = ∆mdpC; black = ∆mdpG; green = complementation strains.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Toxicity test of Folsomia candida (a) and Trichorhina tomentosa (b) fed with food containing secondary metabolites from the wildtype (AGB552), the ΔmdpG and the ΔmdpC strain. Food without secondary metabolites were used as control. (a) Left figure shows the survival rate of F. candida. Right images are photos from the toxicity assay after 5 days. (b) Same as (a) but for T. tomentosa. No significance could be observed in the survival rate of the wt in comparison to the mutant strains for both animals. T. tomentosa even shows a survival rate of 100% for all feeding conditions. Significance was calculated using the two-tailed t-test with p < 0.05 (referenced to wt). ns stands for not significant. Red arrows shows individual animals of F. candida (a) and T. tomentosa (b).
 
 Toxicity of the metabolites emericellin, shamixanthone, or epishamixanthone to arthropods was examined as potential cause for feeding suppression of animal predators on cultures of the wildtype strain. F. candida and T. tomentosa were fed with metabolite extracts of the wildtype, ΔmdpG or ΔmdpC strains. Mortality rates in T. tomentosa and F. candida fed on metabolites of the wildtype and mutant strains were indistinguishable, showing that xanthones produced by the mdp/xpt pathway are not toxic to animals (Figure 8—figure supplement 3). Taken together, metabolites produced by the mdp/xpt pathway in A. nidulans are nontoxic antifeedants preventing predators F. candida and T. tomentosa from grazing.
 
@@ -112,11 +269,252 @@ In conclusion, our results suggest that the mdp/xpt pathway in A. nidulans was r
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/68058/elife-68058-fig9-v1.jpg)
 
-**Figure 9.:** mdp/xpt cluster metabolites establish a secure niche for Aspergillus nidulans.The velvet complex VelB-VeA-LaeA regulates sexual development of A. nidulans and the expression of mdp/xpt genes. The resulting metabolites are accumulated in the sexual fruiting body (Cl) nursing Hülle cells (Hc). The final products arugosin A (1) and epi-/shamixanthone (4/3) protect sexual fruiting bodies from the animal predators Folsomia candida and Trichorhina tomentosa.
+**Figure 9.:** The velvet complex VelB-VeA-LaeA regulates sexual development of A. nidulans and the expression of mdp/xpt genes. The resulting metabolites are accumulated in the sexual fruiting body (Cl) nursing Hülle cells (Hc). The final products arugosin A (1) and epi-/shamixanthone (4/3) protect sexual fruiting bodies from the animal predators Folsomia candida and Trichorhina tomentosa.
 
 ## Materials and methods
 
-## Strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>FGSC A4</td>
+      <td>FGSC</td>
+      <td></td>
+      <td>Wildtype isolate (veA+)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB552</td>
+      <td>Bayram et al., 2012a</td>
+      <td></td>
+      <td>pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB596</td>
+      <td>Bayram and Braus, 2012b</td>
+      <td></td>
+      <td>pgpdA:sgfp:phleoR; pabaA1; yA2; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1073</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆laeA::six; pabaA1; ∆nkuA::argB, veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1088</td>
+      <td>This paper</td>
+      <td></td>
+      <td>xptC:gfp; pabaA1; yA2;ΔnkuA::argB, veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1236</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpG::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1237</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpF::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1238</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpC::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1239</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpL::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1240</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpD::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1241</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆xptA::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1242</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆xptB::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1243</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆xptC::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1248</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpG::six, mdpG:six::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1249</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆mdpC::six, mdpC:six::six; pabaA1; ∆nkuA::argB; veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1310</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆veA::six; pabaA1; ∆nkuA::argB</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Aspergillus nidulans)</td>
+      <td>AGB1311</td>
+      <td>This paper</td>
+      <td></td>
+      <td>∆velB::six; pabaA1; ∆nkuA::argB, veA+</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sordaria macrospora)</td>
+      <td>Taxid5147</td>
+      <td>Nowrousian et al., 2010</td>
+      <td></td>
+      <td>Wildtype isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Verticillium longisporum)</td>
+      <td>VL43</td>
+      <td>Zeise and Tiedemann, 2001</td>
+      <td></td>
+      <td>Wildtype isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Verticillium dahliae)</td>
+      <td>JR2</td>
+      <td>Fradin et al., 2009</td>
+      <td></td>
+      <td>Wildtype isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Trichorhina tomentosa)</td>
+      <td></td>
+      <td>b.t.b.e. Insektenzucht GmbH</td>
+      <td></td>
+      <td>Wildtype</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Folsomia candida)</td>
+      <td></td>
+      <td>Institute of Zoology (University of Göttingen, Germany)</td>
+      <td></td>
+      <td>Wildtype</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Tenebrio molitor)</td>
+      <td></td>
+      <td>Zoo &amp; Co. Zoo-Busch</td>
+      <td></td>
+      <td>Wildtype</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneArt Seamless Cloning and Assembly Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A13288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GeneArt Seamless Cloning and Assembly Enzyme Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A14606</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plant Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. No./ID: 74,904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. No./ID: 205,311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-GFP antibody sc-9996</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_627695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Mouse antibody G21234</td>
+      <td>Invitrogen AG</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer 1.4</td>
+      <td>Thermo Scientific</td>
+      <td>RRID:SCR_014477</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur (FreeStyle 1.4)</td>
+      <td>Thermo Scientific</td>
+      <td>RRID:SCR_014593</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and culture conditions
 
 The Escherichia coli strain DH5α (Woodcock et al., 1989) was used for expression of recombinant plasmids in this study. The culture medium was Lysogeny Broth (LB) medium (Bertani, 1951), containing 1% bacto tryptone, 1% NaCl, and 0.5% yeast extract, pH 7.5, at 37°C. The solid LB medium was added 2% agar additionally; 100 µg/ml of ampicillin was added as selective agent. A. nidulans strains were cultivated in minimal medium (MM) (AspA (70 mM NaNO3, 11.2 mM KH2PO4, 7 mM KCl, pH 5.5), 1% (w/v) glucose, 0.1% (v/v) Hutner’s trace elements) (Käfer, 1977); 2% agar was added for the solid MM plates. For selection of A. nidulans transformants, phleomycin (80 µg/ml) was added. A. nidulans FGSC A4 was used for proteome analysis. A. nidulans AGB552 (Bayram et al., 2012a) was used for the construction of A. nidulans mutants. Cultivation of strains based on AGB552 required the addition of 0.0001% 4-aminobenzoic acid.
 
@@ -124,7 +522,7 @@ For vegetative growth, A. nidulans spores were inoculated and shaken 20 hr in li
 
 S. macrospora was cultivated on cornmeal malt fructification medium (BMM) agar plates at 27°C (Dirschnabel et al., 2014). Verticillium spp. were cultivated on simulated xylem medium (SXM) agar plates at 25°C (Hollensteiner et al., 2016). All fungal strains are listed in Supplementary file 3.
 
-## Plasmid and A. nidulans strain construction
+### Plasmid and A. nidulans strain construction
 
 The GeneArt Seamless Cloning and Assembly Enzyme Mix (Thermo Fisher Scientific, Waltham, MA) or the GeneArt Seamless Cloning and Assembly Kit (Thermo Fisher Scientific) was used for the assembly of DNA fragments with the backbone. For DNA amplification, gDNA from A. nidulans AGB552 strain was used. The constructed and used plasmids in this study are present in Supplementary file 4. The used primers are present in Supplementary file 5.
 
@@ -140,51 +538,51 @@ For the construction of AGB1310, the veA deletion cassette was excised from pME4
 
 For the construction of pME4636, 2.3 kb of laeA 5’ flanking region was amplified with primers BD45/BD46 and 2.1 kb of laeA 3’ flanking region was amplified with primers BD47/BD48. The fragments were inserted into pME4319. The laeA deletion cassette was excised with PmeI from pME4636 and integrated into AGB552, resulting in AGB1073.
 
-## Transformation of E. coli and A. nidulans
+### Transformation of E. coli and A. nidulans
 
 E. coli transformation was performed using the heat-shock method (Inoue et al., 1990). A. nidulans transformation was performed using the polyethylene glycol-mediated protoplast fusion method (Punt and van den Hondel, 1992). Successful transformation was further verified by Southern, 1975, hybridization. The recyclable marker cassette was eliminated from the genome by culturing the fungus on 1% xylose MM plate (Hartmann et al., 2010).
 
-## Semi-quantitative reverse-transcriptase polymerase chain reaction
+### Semi-quantitative reverse-transcriptase polymerase chain reaction
 
 Fungal tissues were harvested from cultures, which were incubated under conditions inducing the sexual cycle, after 3 days of incubation and ground with a table mill in powder. The RNA isolation was performed according to the instruction of the RNeasy Plant Miniprep Kit (Qiagen, Hilden, Germany). Approximately 0.8 µg of RNA was used for cDNA synthesis according to manufacturer’s instructions of the QuantiTect Reverse Transcription Kit (Qiagen); 1 µl of cDNA was used for semi-quantitative reverse-transcriptase polymerase chain reaction. The used primers are listed in the Supplementary file 6. Measurements were conducted in three independent biological replicates.
 
-## Protein extraction of A. nidulans
+### Protein extraction of A. nidulans
 
 Asexual and sexual mycelia of A. nidulans wildtype (FGSC A4, veA+) were harvested from solid agar plate cultures after 3, 5, and 7 days. Vegetative mycelia were harvested from 20 hr of liquid culture. Mycelia samples were frozen in liquid nitrogen and ground with a table mill. Protein extraction was carried out as described (Bayram et al., 2012c). Hülle cells were collected from 3-, 5-, and 7-day-old cleistothecia, grown under conditions inducing the sexual cycle, by rolling cleistothecia on an agar plate surface. Hülle cells were sonicated for cell disruption repeatedly (60% of sonication power for 60 s, in between centrifugation for 30 s at 4°C) and centrifuged for 10 min (13,000 rpm, 4°C). The supernatant-containing proteins was harvested for further experiments. For each sample, three biological replicates were prepared.
 
-## Protein digestion with trypsin and LC-MS analysis
+### Protein digestion with trypsin and LC-MS analysis
 
 Approximately 80 μg of protein were separated by SDS-PAGE for 60 min at 200 V. The gel was stained (Neuhoff et al., 1988) and the lanes were excised and subjected to tryptic digestion (Shevchenko et al., 1996). Digested peptides were desalted by using C18 stage tips (Rappsilber et al., 2007). The peptides were resuspended in 20 μl sample buffer (2% [v/v] acetonitrile and 0.1% [v/v] formic acid). LC-MS was performed by using a Velos Pro Hybrid Ion Trap-Orbitrap mass spectrometer (MS) coupled to a Dionex Ultimate 3000 HPLC (Thermo Fisher Scientific) (Schmitt et al., 2017). Proteomics raw data were searched with SEQUEST and Mascot algorithms present in Proteome Discoverer 1.4 using the A. nidulans genome database (AspGD) (Cerqueira et al., 2014; Eng et al., 1994; Koenig et al., 2008). The search parameter for the algorithms were: 10 ppm of precursor ion mass tolerance; 0.6 Da of fragment ion mass tolerance; two maximum of missed cleavage sites; variable modification by methionine oxidation; fixed cysteine static modification by carboxyamidomethylation. Results filter settings: high peptide confidence; minimal number of two peptides per protein.
 
-## Fluorescence microscopy of fusion proteins
+### Fluorescence microscopy of fusion proteins
 
 Vegetative mycelia (20 hr) as well as 3-day-old sexual mycelia and Hülle cells were transferred to an object slide. Fluorescence microphotographs were taken with a confocal light microscope (Zeiss Axiolab-Zeiss AG) equipped with a QUAN-TEM: S12SC (Photometrics) digital camera and the software package SlideBook 6 (Intelligent Imaging Innovations GmbH, Göttingen, Germany).
 
-## Immunoblotting
+### Immunoblotting
 
 Extracted proteins of 3-day-old sexual fungal tissues were separated by PAGE and transferred onto a nitrocellulose membrane (GE Healthcare, Wauwatosa, WI) as described (Schinke et al., 2016). Ponceau staining was used as sample loading control. After blocking in 5% skim milk powder dissolved in TBS-T buffer, the first antibody ⍺-GFP antibody (sc-9996, Santa Cruz Biotechnology Inc, Santa Cruz, CA) was diluted 1:1000 in blocking solution and the second ⍺-mouse antibody (G21234, Invitrogen AG) was diluted 1:2000 in blocking solution. The result was visualized on a Fusion-SL7 (Vilber Lourmat, Collégien, France) system. The experiments were carried out with three biological replicates.
 
-## Extraction of SMs and LC-MS analysis
+### Extraction of SMs and LC-MS analysis
 
 Four microliter containing approximately 1000 conidia were point-inoculated on MM agar plates and sexually grown for 2, 3, 5, 7, and 10 days. A 5.7 cm2 agar piece of the colonies was cut into small pieces and covered with 5 ml of ethyl acetate in 50 ml tube. Tubes were shaken at 200 rpm at room temperature for 30 min followed by 10 min highest level ultra-sonication in a Bandelin Sonorex Digital 10 P ultrasonic bath (Bandelin Electronic GmbH & Co. KG, Berlin, Germany); 3 ml of ethyl acetate phase was transferred to a glass tube and evaporated. In a similar procedure, the secreted metabolites were extracted, with small modifications. The fungal colony of each strain was removed using a scalpel. Afterward, a 5.7 cm2 piece of agar of the region where the colony was grown was cut and used for extraction as mentioned above. For this experiment, mycelium was grown under sexual-inducing conditions for 3 days.
 
 SM sample was suspended in 700 µl methanol (500 µl for the extracts received from the secretion experiments) and centrifuged for 10 min (13,000 g, 4°C) to remove particles; 500 µl (400 µl for secretion extracts) of supernatant was transferred into the LC-MS vial. LC-MS was performed by using a Q Exactive Focus orbitrap mass spectrometer coupled to a Dionex Ultimate 3000 HPLC (Thermo Fisher Scientific); 5 µl of SM sample was injected into the HPLC column (Acclaim 120, C18, 5 µm, 120 Å, 4.6 × 100 mm). The running phase was set as a linear gradient from 5% to 95% (v/v) acetonitrile/0.1 formic acid in 20 min, plus 10 min with 95% (v/v) acetonitrile/0.1 formic acid with a flow rate of 0.8 ml/min at 30°C in addition. The measurements were performed in positive and negative modes with a mass range of m/z 70–1050 . FreeStyle 1.4 (Thermo Fisher Scientific) was used for data analysis.
 
-## Monitoring of sexual development
+### Monitoring of sexual development
 
 Approximately 1000 conidia of A. nidulans strains were point-inoculated on MM agar plates and cultivated under sexual conditions. Sexual fruiting body development of each strain was monitored at 2, 3, 4, 5, 7, and 10 days. The development status of the cleistothecia at the colony center was recorded over time with photomicrographs. Matured cleistothecia were collected and counted, and their diameters were measured by a microscope with the software cellSens Dimension (Olympus Europa SE & Co. KG, Hamburg, Germany). Cleistothecia were broken in 100 µl 0.02% Tween buffer for ascospore quantification (n = 10). This was performed with three biological and three technical replicates. Hülle cells were detached from 5-day-old cleistothecia by rolling the fruiting bodies on agar surface. The diameter of Hülle cells was measured as described for the cleistothecia. Two independent experiments were carried out.
 
-## Analysis of germination of Hülle cells
+### Analysis of germination of Hülle cells
 
 Hülle cells were collected from 5-day-old cleistothecia of AGB552, ∆mdpG, ∆mdpC, and ∆mdpL separately. Hülle cells were picked with an MSM System 300 micromanipulator (Singer Instruments) and placed on separate fresh MM plates (n = 40 (±1)). For germination experiments, plates were incubated for 2 days under light conditions at 37°C. The germination rate of detached Hülle cells was calculated from the visible colonies after 48 hr. This was performed in two biological replicates.
 
-## Effect of secondary metabolite on fungi
+### Effect of secondary metabolite on fungi
 
 SMs of mdp/xpt gene deletion strains and A. nidulans wildtype AGB552, extracted from nine point-inoculated colonies, were dissolved in 450 µl of methanol; 30 µl of mixed solution was loaded on the filter paper disc (Φ = 9 mm) individually, 30 µl of pure methanol was used as a blank control, 75 µg of pure ω-hydroxyemodin (ChemFaces, Wuhan, China), emodin (VWR, Darmstadt, Germany) and chrysophanol (VWR) were dissolved in methanol and loaded on the paper disc for following tests. 75 µg emodin roughly correlates with the amount received from 6 to 7 A. nidulans ΔmdpC colonies after 3 days of growth.
 
 Loaded paper discs were placed on plates inoculated with spores of the tested fungi. For A. nidulans wildtype AGB552, 1 × 105 fresh conidia were spread on 80 ml MM agar plates and incubated under sexual growth-inducing conditions for 5 days. The size and amount of cleistothecia on each paper disc were monitored. For S. macrospora, 2 × 105 spores were spread on cornmeal malt fructification medium (BMM) agar plates and grown for 7 days at 27°C. For Verticillium spp., 1 × 105 spores were separated completely on SXM agar plates and grown for 10 days at 25°C. Race tube experiments were carried out as follows: 20 ml BMM agar were supplemented with 2 mg total extracts of the wildtype AGB552 and the ΔmdpC strain (diluted in 140 µl methanol). As control 140 µl methanol was used. Small agar pieces of S. macrospora wildtype was put in the race tubes and pre-incubated for 3 days. Starting on the third day, the growth rate was measured in the race tubes for 7 days. The complete experiment was carried out in the presence of light at 27°C. Three biological replicates with at least two technical replicates were used. Three biological replicates were used for the methanol control.
 
-## Animal food preference
+### Animal food preference
 
 T. molitor larvae were purchased from Zoo & Co. Zoo-Busch (Göttingen, Germany). F. candida was provided by the Institute of Zoology (University of Göttingen, Germany), and was kept on the plaster Petri dishes (gypsum plaster: charcoal [9:1]) (Xu et al., 2019). T. tomentosa was purchased from b.t.b.e. Insektenzucht GmbH (Schnürpflingen, Germany). A. nidulans spores were point-inoculated on 50 ml MM agar plates and incubated for 5 days of sexual growth.
 
@@ -198,6 +596,6 @@ To analyze the feeding behavior of the animal predators, 1 × 106 spores of the 
 
 Cleistothecia experiments were carried out as follows: Cleistothecia were isolated with Hülle cells from mycelium induced under sexual conditions for 4 days and were put on a water/agar plates without any additional compounds. Each water/agar plate contained 10 cleistothecia. In total, six agar plates (n = 60 cleistothecia) were used for each experiment. Two independent experiments were carried out with T. tomentosa (five animals per plate) and four independent experiments with F. candida (approximately 20 animals per plate). After 24 hr the remaining cleistothecia were counted.
 
-## Toxicity test
+### Toxicity test
 
 SMs were extracted from plates which were incubated for 4 days under conditions inducing the sexual cycle. Received extracts were solved in methanol; 100 µg SMs per mg animal food were used. The amounts of metabolites were determined using an LC-MS Q Exactive Focus orbitrap mass spectrometer coupled to a Dionex Ultimate 3000 HPLC (Thermo Fisher Scientific). CAD was used as detector. As standard, para-aminobenzoic acid was added to the samples in a final concentration of 0.002%. For quantification, the FreeStyle software version 1.6 (Thermo Fisher Scientific) was used. The wildtype extract contains approximately 75 µg/mg emericellin/shamixanthone and 32.5 µg/mg epishamixanthone. Animal food was dried for 3 days to evaporate the methanol. As control, food was mixed with methanol without SMs and dried as well. Animals were fed with the prepared food for 5 days; 100 µg total extracts per mg food was used for the experiments. Experiments were carried out on 24-well plates at 22°C. Before feeding the animals were starved for 20 hr. Petri dishes were sealed with parafilm. For T. tomentosa oat flakes and for F. candida dried yeast were used as food. For T. tomentosa four animals were used per strain. For F. candida six different experiments were carried out except for ΔmdpG with five independent experiments. Each experiment contains 1–12 animals. Total number of animals were n = 22 for the control, n = 26 for ΔmdpG, n = 44 for wildtype, and n = 43 for ΔmdpC. The survival rate was determined after 5 days. Significance was calculated using the two-tailed t-test with p < 0.05.

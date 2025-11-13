@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04k51q396 Departments of Biomedicine and Neurology, Basel University Hospital Basel Switzerland
-2. https://ror.org/01swzsf04 Department of Cell Physiology and Metabolism, University of Geneva Geneva Switzerland
-3. https://ror.org/02s6k3f65 Proteomics Core Facility, Biozentrum, Basel University Basel Switzerland
-4. https://ror.org/041zkgm14 Department of Life Science and Biotechnology, University of Ferrara Ferrara Italy
+1. Departments of Biomedicine and Neurology, Basel University Hospital Basel Switzerland ([ROR:04k51q396](https://ror.org/04k51q396))
+2. Department of Cell Physiology and Metabolism, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+3. Proteomics Core Facility, Biozentrum, Basel University Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+4. Department of Life Science and Biotechnology, University of Ferrara Ferrara Italy ([ROR:041zkgm14](https://ror.org/041zkgm14))
 
 † Corresponding author
 
 ## Abstract
 
-Skeletal muscles are a highly structured tissue responsible for movement and metabolic regulation, which can be broadly subdivided into fast and slow twitch muscles with each type expressing common as well as specific sets of proteins. Congenital myopathies are a group of muscle diseases leading to a weak muscle phenotype caused by mutations in a number of genes including RYR1 . Patients carrying recessive RYR1 mutations usually present from birth and are generally more severely affected, showing preferential involvement of fast twitch muscles as well as extraocular and facial muscles. In order to gain more insight into the pathophysiology of recessive RYR1 -congential myopathies, we performed relative and absolute quantitative proteomic analysis of skeletal muscles from wild-type and transgenic mice carrying p.Q1970fsX16 and p.A4329D RyR1 mutations which were identified in a child with a severe congenital myopathy. Our in-depth proteomic analysis shows that recessive RYR1 mutations not only decrease the content of RyR1 protein in muscle, but change the expression of 1130, 753, and 967 proteins EDL, soleus and extraocular muscles, respectively. Specifically, recessive RYR1 mutations affect the expression level of proteins involved in calcium signaling, extracellular matrix, metabolism and ER protein quality control. This study also reveals the stoichiometry of major proteins involved in excitation contraction coupling and identifies novel potential pharmacological targets to treat RyR1-related congenital myopathies.
+Skeletal muscles are a highly structured tissue responsible for movement and metabolic regulation, which can be broadly subdivided into fast and slow twitch muscles with each type expressing common as well as specific sets of proteins. Congenital myopathies are a group of muscle diseases leading to a weak muscle phenotype caused by mutations in a number of genes including RYR1. Patients carrying recessive RYR1 mutations usually present from birth and are generally more severely affected, showing preferential involvement of fast twitch muscles as well as extraocular and facial muscles. In order to gain more insight into the pathophysiology of recessive RYR1-congential myopathies, we performed relative and absolute quantitative proteomic analysis of skeletal muscles from wild-type and transgenic mice carrying p.Q1970fsX16 and p.A4329D RyR1 mutations which were identified in a child with a severe congenital myopathy. Our in-depth proteomic analysis shows that recessive RYR1 mutations not only decrease the content of RyR1 protein in muscle, but change the expression of 1130, 753, and 967 proteins EDL, soleus and extraocular muscles, respectively. Specifically, recessive RYR1 mutations affect the expression level of proteins involved in calcium signaling, extracellular matrix, metabolism and ER protein quality control. This study also reveals the stoichiometry of major proteins involved in excitation contraction coupling and identifies novel potential pharmacological targets to treat RyR1-related congenital myopathies.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Figure 1 shows a diagram of our experimental workflow: three muscle types were i
 
 **Figure 1.:** (A) Skeletal muscles from 12 weeks old WT (5 mice) and dHT littermates (5 mice) were isolated and flash frozen. Three different types of muscles were isolated per mouse, namely EDL, soleus and EOMs. On the day of the experiment, muscles were solubilized and processed for LC-MS. (B) For absolute protein quantification, synthetic peptides of RyR1, Cav1.1, Stim1 and Orai1 were used. (C) Protein content in different muscle types and in the different mouse genotypes were analyzed and compared.
 
-## Comparison of the proteome of EDL, soleus and EOM muscles from WT mice
+### Comparison of the proteome of EDL, soleus and EOM muscles from WT mice
 
 In order to perform their specific physiological functions, different muscle types express different protein isoforms or different amounts of specific proteins. For example, slow twitch muscles contain large amounts of the oxygen binding protein myoglobin and of carbonic anhydrase III the enzyme catalyzing the conversion of CO2 to H2CO3 and HCO3- (Garry et al., 1996; Dowling et al., 2021), while fast twitch muscles express large amounts of the calcium buffer protein parvalbumin (Celio and Heizmann, 1982) additionally, each muscle type contains specific isoforms of contractile and sarcomeric proteins (Schiaffino and Reggiani, 2011). Our first aim was to analyze the proteomes of WT mouse EDL, soleus and EOM muscles to establish their most important qualitative differences (Figure 2).
 
@@ -62,23 +62,998 @@ A similar approach was used to compare the relative content of specific proteins
 
 Altogether, the results of the mass spectrometry analysis not only confirm known differences between muscle types (Schiaffino and Reggiani, 2011; Porter et al., 1995; Fischer et al., 2002; Celio and Heizmann, 1982; Luff and Atwood, 1971) but also reveal new molecular signatures of EDL, soleus and EOMs. In this context, it is worth mentioning that more than 10 heat shock proteins are more abundant in soleus muscles and EOMs compared to EDL muscles, including Hspb6 (16-fold higher in soleus compared to EDL) and Hspa12a (7-fold higher in EOM vs soleus). Hspb6 has been implicated in protection against atrophy, ischemia, hypertensive stress, and metabolic dysfunction (Dreiza et al., 2010). Importantly, a great deal of data has shown that muscles from patients with several neuromuscular disorders including those caused by RYR1 mutations show fiber type 1 predominance (Jungbluth et al., 2005; Lawal et al., 2018) and heat shock proteins have been suggested to have a protective effect against muscle damage caused by calcium dysregulation and uncoupling of mitochondrial respiratory chain (Maglara et al., 2003) as well as protective effects against ischemic injury in cardiomyocytes (Martin et al., 1997). Interestingly, the content of Mitsugumin 53 (encoded by Trim72), a protein involved in muscle membrane repair (Cai et al., 2009) is 2.8-fold higher in slow twitch muscles compared to fast twitch muscles. Thus, on the basis these observations we cannot exclude the possibility that increased expression of Mitsugumin 53, along with a set of heat shock proteins (Dreiza et al., 2010; Maglara et al., 2003; Martin et al., 1997; Larkins et al., 2012), might be relevant in preventing muscle fiber type 1 damage associated with the presence of recessive RYR1 mutations or with other type of stressing events. To directly verify this hypothesis, we examined the proteome of fast and slow twitch muscles in a mouse model (RyR1 dHT) of congenital muscle disorders carrying the p.Q1970fsX16 mutation in one allele and the mis-sense p.A4329D mutation in the other allele (Elbaz et al., 2019).
 
-## Comparison of muscles isolated from WT and RyR1 dHT mice
+### Comparison of muscles isolated from WT and RyR1 dHT mice
 
 In the next experiments, the proteome of three different muscles from dHT mice vs those of WT mice were compared. Figure 3A and B shows that in EDL muscles a total of 848 proteins are significantly (q<0.05) mis-regulated in dHT mice; in particular, 529 and 319 proteins are up- or downregulated only in the EDLs of dHT mice compared to WT mice, respectively. Reactome pathway (Figure 3—figure supplement 1A) analysis revealed that proteins involved in homeostasis of the extracellular matrix, including collagen assembly and chain formation, collagen degradation, ECM organization and integrin interaction, are up-regulated in EDLs from WT compared to dHT mice. We also compared the proteome of soleus muscles from WT and dHT mice. Figure 3C and D show that the overall number of proteins showing significant changes in their relative content between dHT and WT mice, is smaller than that observed in EDL muscles. In particular, we found that 339 and 170 proteins are up- or downregulated only in the soleus muscles of dHT mice compared to those from WT mice, respectively. Contrary to EDL muscles, Reactome pathway analysis failed to identify a preferentially affected cellular pathway.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83618/elife-83618-fig3-v2.jpg)
+
+**Figure 3.:** (A, C and E) Hierarchically clustered heatmaps of the relative abundance of proteins in EDL (A), soleus muscles (C) and EOMs (E) from three to five mice. Blue blocks represent proteins which are increased in content, yellow blocks proteins which are decreased in content in WT (columns 1–5 in A and E; 1–3 in C) versus dHT (5–10 in A and E; 4–8 in C). Right pie chart shows overall number of increased (purple) and decreased (yellow) proteins. Areas are relative to their numbers. (B, D and F) Volcano plots of total quantified proteins showing significant increased (blue) and decreased (yellow) content in dHT (condition 2) versus WT (condition 1) EDL (B), soleus (D) and EOMs (F). The horizontal coordinate is the difference multiple (logarithmic transformation at the base of 2), and the vertical coordinate is the significant difference p value (logarithmic transformation at the base of 10). The proteins showing major change in content are abbreviated. A q-value of equal or less than 0.05 was used to filter significant changes prior to the pathway analyses. An additional filter was applied to the Heatmaps and Piecharts and only proteins showing a significant change ≥0.2-fold are included.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83618/elife-83618-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A q-value of equal or less than 0.05 and showing a significant change ≥0.2 fold was used to filter significant changes prior to the pathway analyses.
 
 Since ophthalmoplegia is a common clinical sign observed in patients affect by congenital myopathies linked to recessive RYR1 mutations (Lawal et al., 2018; Amburgey et al., 2013; Jungbluth et al., 2018), we also investigated the proteome of EOMs from dHT and WT mice. Figure 3E and F shows that 560 and 117 proteins are up- or downregulated only in the EOM of dHT mice compared to WT mice, respectively. Interestingly, Reactome pathway analysis indicated that genes encoding proteins involved in the citric acid cycle and electron transport chain, ATP synthesis and uncoupling protein complexes linked to heat formation are upregulated in dHT vs WT EOMs (Figure 3—figure supplement 1B).
 
 The Venn diagram (Figure 4) shows that the three muscle types from the dHT mice share a number of proteins whose content increases or decreases. It also shows that there are a number of proteins whose content increases or decreases in a specific muscle type only, namely 848 proteins in EDL, 677 proteins in soleus and 509 proteins in EOMs. We analyzed these proteins to verify whether they were annotated to specific cellular pathways but the results were not sufficiently informative as far as skeletal muscle function, ECC and calcium homeostasis are concerned. In fact, GO analysis showed that the genes encoding the proteins that were downregulated or upregulated specifically in dHT EDL, soleus and EOM were annotated to the Biological processes category, specifically: biological cellular processes, response to stimulus and multicellular organismal process (downregulated) and metabolic process, response to stimulus and positive regulation of biological process (upregulated) in EDL muscles from dHT mice (Figure 4—figure supplement 1A and D), cellular process, biological regulation and metabolic process (downregulated) and cellular process, metabolic process and organic substance metabolic process (upregulated) in soleus muscles from dHT mice (Figure 4—figure supplement 1B and E) and cellular process, cellular metabolic process and oxidation reaction process (downregulated) and cellular process, primary metabolic process and regulation of biological quality (upregulated) in EOM muscles from dHT mice (Figure 4—figure supplement 1C and F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83618/elife-83618-fig4-v2.jpg)
+
+**Figure 4.:** (A) Venn diagram showing significantly decreased proteins (left) and increased proteins (right) in the three muscle types. (B) GO biological process analysis of common proteins that are downregulated and (C) upregulated in muscle from dHT mice. Left panels, common proteins showing significant changes in content in both EDL and soleus muscles. Central panels, common proteins showing significant changes in content in EDL and EOMs; right panels, common proteins showing significant changes in content in EOM and soleus muscles. (D) List of the 39 proteins whose content is increased in EDL, soleus and EOMs in dHT mice. (E) GO analysis annotated to Biological processes of the 39 proteins that are increased in muscles from dHT mice.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83618/elife-83618-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) and (C) Downregulated genes and (D, E) and (F) upregulated genes in EDL (A and C), soleus (B and E) and EOM (C and F) muscles. The N° of genes annotated to each category is indicated on the Y-axis. Only proteins showing a q-value equal to or less than 0.05 and showing a significant change ≥0.2 fold were included in the pathway analyses.
+
 Thus, we selected and analyzed protein families playing a role in skeletal muscle ECC, muscle contraction, collagen and ECM, heat shock response/chaperones, protein synthesis and calcium-dependent regulatory functions that exhibit a significantly different (q<0.05) content between the two mouse genotypes. Table 1 shows that several proteins involved in skeletal muscle ECC are down-regulated in EDLs from dHT mice, including the RyR1 (60% decrease) as well as its stabilizing binding protein FKBP12, DHPRα1 and junctophillin 1 whose relative content decreases by more than 30%, 23%, and 40%, respectively. The content of Asph which encodes different proteins including junctin, junctate, humbug and aspartyl-ß-hydroxylase (Treves et al., 2000) increases almost twofold, whereas SRP-35 (Dhrs7c) increases 1.34-fold in EDLs from dHT mice. Additionally, the expression of type 2 fibers is impacted since MyHC 2 X and 2B as well asα-actinin 3 (which is preferentially expressed in type 2 fibers) (Schiaffino and Reggiani, 2011) are decreased in the EDLs of dHT mice. The decrease of the fast isoforms of MyHC in dHT EDL muscles is accompanied by a decrease of many collagen isoforms. On the other hand, the content of several heat shock proteins as well as the content of 60 S and 40 S ribosomal proteins is increased in fast twitch fibers from the dHT. In addition, we found that the calcium/CaM-dependent protein kinases 1, 2α 2β and 2δ are increased in EDL from dHT mice.
+
+**Table 1.**
+ Relative change in the content of selected proteins in EDL muscles isolated from WT (baseline) and dHT mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gene name</th>
+      <th>Protein*</th>
+      <th>Relative content</th>
+      <th>q value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">ECC</td>
+      <td>Ryr1</td>
+      <td>Ryanodine receptor 1 (RyR1)</td>
+      <td>0.40</td>
+      <td>3.97x10–5</td>
+    </tr>
+    <tr>
+      <td>Jph1</td>
+      <td>Junctophillin-1</td>
+      <td>0.64</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Cacna1s</td>
+      <td>Voltage dependent L type calcium channel subunit a1s (DHPR α1s)</td>
+      <td>0.73</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Dhrs7c</td>
+      <td>Dehydrogenase/reductase SDR family member 7 C (SRP-35)</td>
+      <td>1.34</td>
+      <td>0.0045</td>
+    </tr>
+    <tr>
+      <td>Asph</td>
+      <td>Aspartyl/asparaginyl ß-hydroxylase (junctin/junctate/asp-ß-hydroxylase)</td>
+      <td>1.84</td>
+      <td>0.00095</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Contractile proteins</td>
+      <td>Myh13</td>
+      <td>MyHC-EO</td>
+      <td>0.35</td>
+      <td>0.0063</td>
+    </tr>
+    <tr>
+      <td>Myh1</td>
+      <td>Myosin-1 (MyHC-2x)</td>
+      <td>0.61</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>Myh4</td>
+      <td>Myosin-4 (MyHC 2b)</td>
+      <td>0.71</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Actn3</td>
+      <td>α-actinin 3</td>
+      <td>0.74</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Collagen and ECM proteins</td>
+      <td>Col2a1</td>
+      <td>Collagen (II)α–1 chain</td>
+      <td>0.18</td>
+      <td>0.0043</td>
+    </tr>
+    <tr>
+      <td>Col1a2</td>
+      <td>Collagen (I) α –2 chain</td>
+      <td>0.25</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>Col11a1</td>
+      <td>Collagen (XI) α –1 chain</td>
+      <td>0.35</td>
+      <td>0.0047</td>
+    </tr>
+    <tr>
+      <td>Col5a2</td>
+      <td>Collagen (V)α –2 chain</td>
+      <td>0.37</td>
+      <td>0.00059</td>
+    </tr>
+    <tr>
+      <td>Col5a1</td>
+      <td>Collagen (V) aα –1 chain</td>
+      <td>0.50</td>
+      <td>0.00156</td>
+    </tr>
+    <tr>
+      <td>Col16a1</td>
+      <td>Collagen (XVI) α –1 chain</td>
+      <td>0.53</td>
+      <td>0.00154</td>
+    </tr>
+    <tr>
+      <td>Col4a2</td>
+      <td>Collagen (IV) α –2 chain</td>
+      <td>0.7</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Itgav</td>
+      <td>Integrin α -V</td>
+      <td>0.77</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>Itgb1bp2</td>
+      <td>Integrin ß–1- binding protein 2</td>
+      <td>1.3</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Heat shock proteins</td>
+      <td>Hspb3</td>
+      <td>Hsp ß–3</td>
+      <td>0.73</td>
+      <td>0.00376</td>
+    </tr>
+    <tr>
+      <td>Hspb8</td>
+      <td>Hsp ß–8 (a-crystallin C chain)</td>
+      <td>0.75</td>
+      <td>0.0160</td>
+    </tr>
+    <tr>
+      <td>Hspa2</td>
+      <td>Heat shock related 70 kDa protein (Hsp70-2)</td>
+      <td>0.77</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Hspd1</td>
+      <td>60 kDa Hsp, mitochondrial (Chaperonin 60)</td>
+      <td>1.30</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Hspa5</td>
+      <td>Heat Shock Protein Family A (Hsp70) Member 5 (BiP)</td>
+      <td>1.41</td>
+      <td>0.00928</td>
+    </tr>
+    <tr>
+      <td>Hsph1</td>
+      <td>Hsp 105 kDa (Hsp105, Hsp110)</td>
+      <td>1.47</td>
+      <td>0.0155</td>
+    </tr>
+    <tr>
+      <td>Hspb6</td>
+      <td>Hsp ß–6 (HspB6)</td>
+      <td>1.5</td>
+      <td>0.0259</td>
+    </tr>
+    <tr>
+      <td>Hspbp1</td>
+      <td>Hsp 70-binding protein</td>
+      <td>1.8</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td rowspan="29">Ribosomal proteins</td>
+      <td>Rpl23</td>
+      <td>60 S Ribosomal protein L23</td>
+      <td>0.433</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Mrpl1</td>
+      <td>39 S ribosomal protein L1, mitochondrial</td>
+      <td>0.526</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Mrpl46</td>
+      <td>39 S ribosomal protein L46, mitochondrial</td>
+      <td>0.592</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Rpl34</td>
+      <td>60 S ribosomal protein L34</td>
+      <td>0.659</td>
+      <td>0.0042</td>
+    </tr>
+    <tr>
+      <td>Rps15a</td>
+      <td>40 S ribosomal protein S15a</td>
+      <td>0.659</td>
+      <td>0.0056</td>
+    </tr>
+    <tr>
+      <td>Mrpl43</td>
+      <td>39 S ribosomal protein L43, mitochondrial</td>
+      <td>0.684</td>
+      <td>0.029</td>
+    </tr>
+    <tr>
+      <td>Mrps5</td>
+      <td>28 S ribosomal protein S5, mitochondrial</td>
+      <td>0.74</td>
+      <td>0.0021</td>
+    </tr>
+    <tr>
+      <td>Rpl11</td>
+      <td>60 S ribosomal protein L11</td>
+      <td>1.265</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Rpl6</td>
+      <td>60 S ribosomal protein L6</td>
+      <td>1.273</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Rpl35</td>
+      <td>60 S ribosomal protein L35</td>
+      <td>1.290</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td>Mrpl19</td>
+      <td>39 S ribosomal protein L19, mitochondrial</td>
+      <td>1.346</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td>Rps25</td>
+      <td>40 S ribosomal protein S25</td>
+      <td>1.35</td>
+      <td>0.0076</td>
+    </tr>
+    <tr>
+      <td>Rpl27a</td>
+      <td>60 S ribosomal protein L27a</td>
+      <td>1.365</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Rpl27</td>
+      <td>60 S ribosomal protein L27</td>
+      <td>1.374</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>Rpl9</td>
+      <td>60 S ribosomal protein L9</td>
+      <td>1.374</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Rps2</td>
+      <td>40 S ribosomal protein S2</td>
+      <td>1.39</td>
+      <td>0.0065</td>
+    </tr>
+    <tr>
+      <td>Rps8</td>
+      <td>40 S ribosomal protein S8</td>
+      <td>1.39</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Rplp2</td>
+      <td>60 S acidic ribosomal protein P2</td>
+      <td>1.403</td>
+      <td>0.0087</td>
+    </tr>
+    <tr>
+      <td>Rps10</td>
+      <td>40 S ribosomal protein S10</td>
+      <td>1.41</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Rpl38</td>
+      <td>60 S ribosomal protein L38</td>
+      <td>1.431</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Rpl23a</td>
+      <td>60 S ribosomal protein L23a</td>
+      <td>1.459</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Rps12</td>
+      <td>40 S ribosomal protein S12</td>
+      <td>1.473</td>
+      <td>0.0128</td>
+    </tr>
+    <tr>
+      <td>Rps9</td>
+      <td>40 S ribosomal protein S9</td>
+      <td>1.50</td>
+      <td>0.0278</td>
+    </tr>
+    <tr>
+      <td>Rpl18</td>
+      <td>60 S ribosomal protein L18</td>
+      <td>1.491</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Mrps7</td>
+      <td>28 S ribosomal protein S7, mitochondrial</td>
+      <td>1.567</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Rpl10a</td>
+      <td>60 S ribosomal protein L10a</td>
+      <td>1.591</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Rpl22</td>
+      <td>60 S ribosomal protein L22</td>
+      <td>1.651</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Rps17</td>
+      <td>40 S ribosomal protein S17</td>
+      <td>1.661</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>Rps16</td>
+      <td>40 S ribosomal protein S16</td>
+      <td>1.82</td>
+      <td>0.0020</td>
+    </tr>
+    <tr>
+      <td rowspan="3">FK506 binding proteins</td>
+      <td>Fkbp1a</td>
+      <td>Peptidyl-prolyl cis-trans isomerase FKBP1A (FKBP12; calstabin-1)</td>
+      <td>0.64</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>Fkbp8</td>
+      <td>Peptidyl-prolyl cis-trans isomerase FKBP8 (38 kDa FKBP)</td>
+      <td>1.30</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Fkbp9</td>
+      <td>Peptidyl-prolyl cis-trans isomerase FKBP9 (63 kDa FK506-binding protein)</td>
+      <td>1.60</td>
+      <td>0.0057</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Calcium-dependent protein kinases</td>
+      <td>Camk1</td>
+      <td>Calcium/Calmodulin-dependent protein kinase type 1 (CaM kinase I)</td>
+      <td>1.32</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Camk2a</td>
+      <td>Calcium/calmodulin-dependent protein kinase type II subunit α</td>
+      <td>1.40</td>
+      <td>0.0189</td>
+    </tr>
+    <tr>
+      <td>Camk2b</td>
+      <td>Calcium/calmodulin-dependent protein kinase type II subunit ß</td>
+      <td>1.46</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>Camk2d</td>
+      <td>Calcium/calmodulin-dependent protein kinase type II subunit δ</td>
+      <td>2.24</td>
+      <td>0.00025</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Varia</td>
+      <td>Psmd7</td>
+      <td>26 S proteasome non-ATPase regulatory subunit 7</td>
+      <td>0.58</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>Psmg2</td>
+      <td>Proteasome assembly chaperone 2</td>
+      <td>1.66</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>Fth1</td>
+      <td>Ferritin</td>
+      <td>1.69</td>
+      <td>0.0033</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The nomenclature of Proteins is based on that of the UniProtKB database._
 
 We applied a similar approach as described above (i.e. proteins showing significantly different (q<0.05)≥0.2-fold change in content between the two mouse genotypes) to identify important components differing between dHT and WT soleus muscles (Table 2). In the ECC protein category, RyR1, DHPRα1s, and Junctophillin 1 are significantly decreased, as is triadin, whereas junctin/junctate/ß-hydroxylase and SERCA2 are increased in muscles from dHT mice. In the contractile protein group, significant changes are only observed for Troponin 3 whose content decreases by about 30%. Similar to what was observed in EDL muscles, we found that the content of calcium/calmodulin-dependent protein kinases IIδ and γ is increased. In addition, S100A1, a calcium binding protein which binds to and regulates RyR1 activity (Treves et al., 1997; Prosser et al., 2011), is significantly increased in soleus muscles from dHT mice. Finally, proteins constituting the 60 S and 40 S ribosomal subunits are increased in soleus muscles from dHT mice compared to WT.
 
+**Table 2.**
+ Relative change in the content of selected proteins in soleus muscles isolated from WT (baseline) and dHT mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gene name</th>
+      <th>Protein*</th>
+      <th>Relative content</th>
+      <th>q value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">ECC</td>
+      <td>Ryr1</td>
+      <td>Ryanodine receptor 1 (RyR1)</td>
+      <td>0.66</td>
+      <td>0.0080</td>
+    </tr>
+    <tr>
+      <td>Jph1</td>
+      <td>Junctophillin 1</td>
+      <td>0.73</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Cacna1s</td>
+      <td>Voltage-dependent L type calcium channel subunit α1s (DHPR α1s)</td>
+      <td>0.67</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Trdn</td>
+      <td>Triadin</td>
+      <td>0.69</td>
+      <td>0.0352</td>
+    </tr>
+    <tr>
+      <td>Asph</td>
+      <td>Aspartyl/asparaginyl ß-hydroxylase (junctin/junctate/aspß-hydroxylase)</td>
+      <td>1.31</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td>ATP2a2</td>
+      <td>Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)</td>
+      <td>1.65</td>
+      <td>0.0256</td>
+    </tr>
+    <tr>
+      <td>Contractile proteins</td>
+      <td>Tnnt3</td>
+      <td>Troponin 3 (fast skeletal muscle type)</td>
+      <td>0.69</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Calcium binding proteins</td>
+      <td>S100a1</td>
+      <td>Protein S100 A1</td>
+      <td>1.69</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Camk2d</td>
+      <td>Calcium/calmodulin-dependent protein kinase type II subunit δ</td>
+      <td>1.23</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Camk2g</td>
+      <td>Calcium/calmodulin-dependent protein kinase type II subunitγ</td>
+      <td>1.43</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Ion Pumps</td>
+      <td>Atp1b1</td>
+      <td>Na+/K+ATPase ß1</td>
+      <td>0.77</td>
+      <td>0.047</td>
+    </tr>
+    <tr>
+      <td>Atp1a1</td>
+      <td>Na+/K+ATPase α 1</td>
+      <td>1.41</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Collagen and ECM proteins</td>
+      <td>Col11a1</td>
+      <td>Collagen (XI) α –1 chain</td>
+      <td>1.63</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>Itgb5</td>
+      <td>Integrin a V/ß–5</td>
+      <td>11.95</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td rowspan="15">Ribosomal proteins</td>
+      <td>Rpl36a</td>
+      <td>60 S ribosomal protein L36a</td>
+      <td>0.263</td>
+      <td>0.0021</td>
+    </tr>
+    <tr>
+      <td>Mrpl10</td>
+      <td>39 S ribosomal protein L10, mitochondrial</td>
+      <td>0.577</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Rpl8</td>
+      <td>60 S ribosomal protein L8</td>
+      <td>0.661</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Rpl26</td>
+      <td>60 S ribosomal protein L26</td>
+      <td>0.695</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Mrpl42</td>
+      <td>39 S ribosomal protein L42, mitochondrial</td>
+      <td>0.788</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Rpl30</td>
+      <td>60 S ribosomal protein L30</td>
+      <td>1.259</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Rpl19</td>
+      <td>60 S ribosomal protein L19</td>
+      <td>1.260</td>
+      <td>0.050</td>
+    </tr>
+    <tr>
+      <td>Mrpl41</td>
+      <td>39 S ribosomal protein L41, mitochondrial</td>
+      <td>1.289</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Rpl11</td>
+      <td>60 S ribosomal protein L11</td>
+      <td>1.325</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Rpl10</td>
+      <td>60 S ribosomal protein L10</td>
+      <td>1.432</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Rpl22</td>
+      <td>60 S ribosomal protein L22</td>
+      <td>1.436</td>
+      <td>0.017</td>
+    </tr>
+    <tr>
+      <td>Rplp2</td>
+      <td>60 S acidic ribosomal protein P2</td>
+      <td>1.473</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Rpl35</td>
+      <td>60 S ribosomal protein L35</td>
+      <td>1.533</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>Rpl23a</td>
+      <td>60 S ribosomal protein L23a</td>
+      <td>1.612</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Rpl23</td>
+      <td>60 S ribosomal protein L23</td>
+      <td>1.638</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Varia</td>
+      <td>Psmg1</td>
+      <td>Proteasome Assembly Chaperone 1</td>
+      <td>0.488</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>Dnajb6</td>
+      <td>DnaJ homolog subfamily B member 6 (Hsp J-2)</td>
+      <td>1.45</td>
+      <td>0.033</td>
+    </tr>
+    <tr>
+      <td>Psma2</td>
+      <td>Proteasome 20 S Subunit α 2</td>
+      <td>1.51</td>
+      <td>0.011</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The nomenclature of Proteins is based on that of the UniProtKB database._
+
 In EOMs, the proteins showing the greatest fold change (aside those involved in ECC and muscle contraction), are heat shock proteins, ribosomal proteins and proteins of the ECM, a variety of heat shock proteins and calcium/calmodulin-dependent protein kinases IIβ and IIδ and S100 family proteins (Table 3).
+
+**Table 3.**
+ Relative change in the content of selected proteins in EOM isolated from WT and dHT mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Gene name</th>
+      <th>Protein*</th>
+      <th>Relative content</th>
+      <th>q value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">ECC</td>
+      <td>Ryr1</td>
+      <td>Ryanodine receptor 1 (RyR1)</td>
+      <td>0.42</td>
+      <td>1.73x10–6</td>
+    </tr>
+    <tr>
+      <td>Asph</td>
+      <td>Aspartyl/asparaginyl ß-hydroxylase (junctin/junctate/aspß-hydroxylase)</td>
+      <td>1.35</td>
+      <td>0.00028</td>
+    </tr>
+    <tr>
+      <td>Casq2</td>
+      <td>Calsequestrin-2</td>
+      <td>1.45</td>
+      <td>0.00031</td>
+    </tr>
+    <tr>
+      <td>Casq1</td>
+      <td>Calsequestrin-1</td>
+      <td>1.55</td>
+      <td>0.0063</td>
+    </tr>
+    <tr>
+      <td>ATP2a2</td>
+      <td>Sarcoplasmic/endoplasmic reticulum calcium ATPase 2 (SERCA2)</td>
+      <td>1.55</td>
+      <td>0.00052</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Contractile proteins</td>
+      <td>Myh13</td>
+      <td>MyHC-EO</td>
+      <td>0.27</td>
+      <td>1.01x10–5</td>
+    </tr>
+    <tr>
+      <td>Actn2</td>
+      <td>α -actinin 2</td>
+      <td>1.36</td>
+      <td>0.0047</td>
+    </tr>
+    <tr>
+      <td>Myh7b</td>
+      <td>Myosin-7B (MyH7B, cardiac musle ß isoform, MyHC14)</td>
+      <td>1.44</td>
+      <td>0.0038</td>
+    </tr>
+    <tr>
+      <td>Actn1</td>
+      <td>α -actinin 1</td>
+      <td>1.45</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Tnnt2</td>
+      <td>Troponin T, cardiac isoform</td>
+      <td>1.45</td>
+      <td>0.0037</td>
+    </tr>
+    <tr>
+      <td>Myot</td>
+      <td>Myotilin</td>
+      <td>1.61</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>Tnnt1</td>
+      <td>Troponin T slow, skeletal muscle (TnTs)</td>
+      <td>1.85</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Myoz3</td>
+      <td>Myozenin 3</td>
+      <td>2.03</td>
+      <td>1.29x10–5</td>
+    </tr>
+    <tr>
+      <td>Myh6</td>
+      <td>Myosin 6 (MyHC cardiac muscle α-isoform)</td>
+      <td>2.22</td>
+      <td>1.01x10–5</td>
+    </tr>
+    <tr>
+      <td>Tnnc1</td>
+      <td>Troponin C, slow skeletal and cardiac (TN-C)</td>
+      <td>2.61</td>
+      <td>8.1x10–5</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Collagen and ECM proteins</td>
+      <td>Itga7</td>
+      <td>Integrin α 7</td>
+      <td>1.29</td>
+      <td>0.000191</td>
+    </tr>
+    <tr>
+      <td>Col6a5</td>
+      <td>Collagen (VI) α –5 chain</td>
+      <td>1.32</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>Col6a6</td>
+      <td>Collagen (VI) α –6 chain</td>
+      <td>1.32</td>
+      <td>0.0087</td>
+    </tr>
+    <tr>
+      <td>Col12a1</td>
+      <td>Collagen (XII) α –1 chain</td>
+      <td>1.34</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Col14a1</td>
+      <td>Collagen (XIV) α –1 chain</td>
+      <td>1.61</td>
+      <td>0.00072</td>
+    </tr>
+    <tr>
+      <td>Col11a2</td>
+      <td>Collagen (XI) α –2 chain</td>
+      <td>4.46</td>
+      <td>1.27x10–5</td>
+    </tr>
+    <tr>
+      <td rowspan="11">Heat shock proteins</td>
+      <td>Hspa9</td>
+      <td>Mitochondrial, stress-70 protein</td>
+      <td>0.78</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>Hsp90b1</td>
+      <td>Hsp 90b1 (GRP-94; 90 kDa glucose regulated protein)</td>
+      <td>1.26</td>
+      <td>0.0052</td>
+    </tr>
+    <tr>
+      <td>Hspb3</td>
+      <td>Hsp ß- 3</td>
+      <td>1.27</td>
+      <td>0.0056</td>
+    </tr>
+    <tr>
+      <td>Dnaja1</td>
+      <td>Dnaj homolog subfamily A member 1 (Hsp 40 kDa protein 4)</td>
+      <td>1.28</td>
+      <td>0.0067</td>
+    </tr>
+    <tr>
+      <td>Hspb1</td>
+      <td>Hsp ß–1 (Hsp25)</td>
+      <td>1.29</td>
+      <td>0.00029</td>
+    </tr>
+    <tr>
+      <td>Hspa5</td>
+      <td>Heat Shock Protein Family A (Hsp70) Member 5 (BiP)</td>
+      <td>1.32</td>
+      <td>0.00033</td>
+    </tr>
+    <tr>
+      <td>Hspa1a</td>
+      <td>Heat shock 70 kDa protein 1 A</td>
+      <td>1.33</td>
+      <td>0.0069</td>
+    </tr>
+    <tr>
+      <td>Hsp90aa1</td>
+      <td>Hsp 90 a</td>
+      <td>1.40</td>
+      <td>0.00094</td>
+    </tr>
+    <tr>
+      <td>Dnajb1</td>
+      <td>Dnaj homolog subfamily B member 1 (Hsp40)</td>
+      <td>1.46</td>
+      <td>0.00021</td>
+    </tr>
+    <tr>
+      <td>Dnajb4</td>
+      <td>DnaJ homolog subfamily B member 4 (Hsp40)</td>
+      <td>1.54</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Hspb6</td>
+      <td>Hsp ß- 6</td>
+      <td>1.61</td>
+      <td>4.05x10–5</td>
+    </tr>
+    <tr>
+      <td rowspan="12">Ribosomal Proteins</td>
+      <td>Rps2</td>
+      <td>40 S ribosomal protein S2</td>
+      <td>1.260</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Rpsa</td>
+      <td>40 S ribosomal protein SA</td>
+      <td>1.276</td>
+      <td>0.0035</td>
+    </tr>
+    <tr>
+      <td>Rps11</td>
+      <td>40 S ribosomal protein S11</td>
+      <td>1.321</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>Rps20</td>
+      <td>40 S ribosomal protein S20</td>
+      <td>1.324</td>
+      <td>0.0007</td>
+    </tr>
+    <tr>
+      <td>Rpl10</td>
+      <td>60 S ribosomal protein L10</td>
+      <td>1.332</td>
+      <td>0.0035</td>
+    </tr>
+    <tr>
+      <td>Rplp2</td>
+      <td>60 S acidic ribosomal protein P2</td>
+      <td>1.332</td>
+      <td>0.00048</td>
+    </tr>
+    <tr>
+      <td>Rpl11</td>
+      <td>60 S ribosomal protein L11</td>
+      <td>1.335</td>
+      <td>0.0077</td>
+    </tr>
+    <tr>
+      <td>Rps28</td>
+      <td>40 S ribosomal protein S28</td>
+      <td>1.346</td>
+      <td>0.0041</td>
+    </tr>
+    <tr>
+      <td>Rpl3</td>
+      <td>60 S ribosomal protein L13</td>
+      <td>1.385</td>
+      <td>1.42x10–5</td>
+    </tr>
+    <tr>
+      <td>Rps7</td>
+      <td>40 S ribosomal protein S7</td>
+      <td>1.396</td>
+      <td>0.0125</td>
+    </tr>
+    <tr>
+      <td>Rpl27a</td>
+      <td>60 S ribosomal protein L27a</td>
+      <td>1.461</td>
+      <td>0.00034</td>
+    </tr>
+    <tr>
+      <td>Rps27a</td>
+      <td>40 S ribosomal protein S27a</td>
+      <td>1.570</td>
+      <td>0.038</td>
+    </tr>
+    <tr>
+      <td>FK506 binding proteins</td>
+      <td>Fkbp1a</td>
+      <td>Peptidyl-prolyl cis-trans isomerase FKBP1A (FKBP12; calstabin-1)</td>
+      <td>0.79</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Calcium-dependent protein kinases</td>
+      <td>Camk2b</td>
+      <td>Calcium/Calmodulin-Dependent Protein Kinase IIß</td>
+      <td>1.30</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>Camk2d</td>
+      <td>Calcium/Calmodulin-Dependent Protein Kinase IIδ</td>
+      <td>2.32</td>
+      <td>8.35x10–6</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Calcium binding proteins</td>
+      <td>S100a16</td>
+      <td>S100 A16</td>
+      <td>1.29</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>S100a1</td>
+      <td>S100 A1</td>
+      <td>1.30</td>
+      <td>0.029</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The nomenclature of Proteins is based on that of the UniProtKB database._
 
 Of note, the overall changes caused by Ryr1 mutations on the protein composition of muscles is more prominent in fast twitch muscles such as EOMs and EDLs compared to the slow twitch soleus muscle and the proteomic approach revealed that the content of many proteins differs between dHT and WT EDL, soleus and EOM muscles. We next refined our analysis and searched for protein whose content variation is most strongly associated with the dHT genotype. In particular, we searched for proteins which show significant changes in content in all three muscle types, namely EDL, Sol, and EOM. The Venn diagram (Figure 4) shows that the three muscle types from the dHT mice share a number of proteins whose content increases or decreases. The downregulation of RyR1 appears to be a unique a signature of the dHT phenotype, since its decrease is the only change shared between all muscle types investigated (Figure 4A). Biological process GO analysis revealed that the content of genes annotated to intracellular organelles, cytoplasm and ER (Figure 4B left panel, downregulated) and cellular process, metabolic process and organic substance metabolic process (Figure 4C left panel, upregulated) amongst others is changed in both EDL and soleus muscles from dHT mice. On the other hand, the content of genes annotated to supramolecular fiber, extrinsic component of membrane and myofibril (Figure 4B middle panel, downregulated), biological regulation, regulation of cellular process and organic substance metabolic process (Figure 4C middle panel, upregulated) amongst others is changed in both EDL and EOMs from dHT mice. While the content of genes annotated to cytoplasm, organelle membrane and mitochondrial membrane (Figure 4B right panel, downregulated) and cellular process, metabolic process and organonitrogen compound metabolic process (Figure 4C right panel, upregulated) amongst others is changed in both soleus and EOMs from dHT mice. Two heat shock proteins Hsp70 (BiP) and Hsp family B small member 6 (Hspb6) are increased only in EDL and EOMs. Interestingly, the content of 39 proteins including Kelch-like protein 41, two annotated to calcium signaling such as calmodulin kinase 2δ and aspartyl-ß -hydroxylase are increased in all three muscle types from dHT mice (Figure 4A and D), as are several proteins associated with the 40 S and 60 S ribosomal subunits. GO analysis of biological process revealed that the content of genes annotated to cellular process, cellular component organization or biogenesis and cellular component organization amongst others are upregulated in the three muscle types in dHT mice (Figure 4E).
 
-## Quantification and stoichiometry of ECC proteins in WT and dHT muscles
+### Quantification and stoichiometry of ECC proteins in WT and dHT muscles
 
 Skeletal muscle ECC relies on the highly ordered architecture of two intracellular membrane compartments, namely the transverse tubules which are invaginations of the plasma membrane containing the DHPR macromolecular complex and the sarcoplasmic reticulum containing the RyR1 macromolecular complex, as well as other proteins involved in calcium homeostasis and accessory structural proteins (Treves et al., 2009; Franzini-Armstrong and Jorgensen, 1994). The relative content of many of these proteins has been determined, nevertheless few studies have established their stoichiometry in relation to particular muscle types (Franzini-Armstrong and Jorgensen, 1994; Smith et al., 2013; Leberer and Pette, 1986). Within a total muscle homogenate, sarcoplasmic reticulum membrane proteins are of low abundance, thus, to quantify these proteins we performed high-resolution TMT mass spectrometry by using spiked-in labeled peptides from major protein involved in key steps of ECC calcium signaling to build a standard calibration curve. In particular, we used peptides from RyR1 and DHPRα1s, and Stim1 and Orai1, proteins which are involved in calcium release from the SR and in calcium entry across sarcolemma, respectively. The obtained protein concentrations showed a high correlation (R2=0.96; Figure 5) with the MS abundance estimates determined from the global proteomics analysis. Therefore, we used this curve to extrapolate the absolute amounts and stoichiometry of proteins whose values fall within the linear domain of the curve, namely, JP-45, triadin, junctophilin 1, Stac3 in addition to RyR1, DHPRα1s, Stim1 and Orai1. The content of the RyR1 protomer in WT fast twitch EDL muscles is 1.29±0.07 μmol/kg wet weight, whereby the calculated RyR1 tetrameric complex is 0.32 μmol/kg wet weight (Table 4) a value which is threefold lower compared to that determined in total muscle homogenates by[3H]-ryanodine equilibrium binding by Bers et al. (Bers and Stiffel, 1993). On the other hand, our RyR1 quantification results in mouse total muscle homogenates obtained by TMT mass spectrometry using labeled peptides is approximately fivefold higher compared to those obtained in rabbit and frog whole skeletal muscle homogenate preparations by Anderson et al., 1994 and by Margreth et al., 1993. Our results also show that the RyR1 concentration (in μmol/Kg) in soleus and EOM muscles from WT mice is approximately 38% and 46% of that found in EDL muscles of WT mice, respectively (Table 4). We found that the content of DHPRα1s in EDL muscles is 0.56±0.03 mol/kg wet weight, a value approx. 2.5-fold higher compared to that of soleus muscles (0.18±0.01 μmol/kg wet weight) and of EOMs (0.21±0.01 mol/kg wet weight). Thus, the calculated RyR1 tetramer to DHPRα1s ratio in EDL muscles from WT and dHT mice is 0.571 and 0.429, respectively (Table 5). Such a value appears to be slightly higher both in soleus and EOM muscles (0.667 and 0.625 in WT and dHT soleus muscles and 0.714 and 0.474 in WT and dHT EOMs, respectively, Table 5). The Stac3 content correlates with that of DHPRα1s, namely EDL is the muscle which is most enriched in Stac3 (0.62±0.07 μmol/kg wet weight); soleus and EOMs contain approximately one-third of the Stac 3 present in the EDL, namely 0.22±0.02 mol/kg wet weight and 0.17±0.01 mol/kg wet weight in soleus and EOMs, respectively. Stac3 content in muscles from dHT is similar to that of WT littermates. Interestingly, the content of Stim1 depends on the muscles type. Mass spectrometry quantification revealed that EOMs contain the highest amounts of Stim1 (1.35±0.03 μmol/kg wet weight) compared to soleus (0.55±0.03 μmol/kg wet weight) and EDL (0.46±0.02 μmol/kg wet weight). Western blot analysis of total muscle homogenates from WT mice confirmed that EOMs contain four times more Stim1 than EDL muscles Figure 6 and Supplementary file 1b and that equal proportions of Stim1 and Stim1L are present in the three muscle groups, with no preferential expression of the long isoform in any of the muscles investigated. As to WT EDL and soleus, we found no major differences in Stim1 expression, confirming previous data by Cully et al., 2016. The expression of Stim1 is accompanied by the expression of Orai1 in EDL and EOMs but not in soleus muscles. Indeed, mouse EOMs contain the highest amount of Orai1 monomer (0.16±0.03 μmol/kg wet weight) and EDLs contained approximately 68% of that (0.11±0.01 μmol/kg wet weight). To our surprise in soleus muscles, the content of Orai1 is below the detection level of mass spectrometry measurement, indicating that slow twitch (soleus) muscles express very little, if any, Orai1 compared to fast twitch EDL and EOMs.
 
@@ -86,35 +1061,202 @@ Skeletal muscle ECC relies on the highly ordered architecture of two intracellul
 
 **Figure 5.:** Error bars are indicated for the y-axis, but for the x-axis, due to their low scale (range from 0.058 to 0.086), they are not shown by the software PRISM, GraphPad Software, (v9). The simple linear regression results obtained by PRISM GraphPad Software, (v9) are shown on the right.
 
+**Table 4.**
+ Concentration µmol/Kg (mean ± SD) of proteins involved in ECC in EDL, soleus and EOM muscles from WT (n=5 mice) and dHT (n=5 mice) using the peptide 4 point calibration curve.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene name</th>
+      <th colspan="2">EDL</th>
+      <th colspan="2">soleus</th>
+      <th colspan="2">EOM</th>
+    </tr>
+    <tr>
+      <th>WT</th>
+      <th>dHT</th>
+      <th>WT</th>
+      <th>dHT</th>
+      <th>WT</th>
+      <th>dHT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ryr1 monomers(terameric channel)</td>
+      <td>1.29±0.07(0.32)</td>
+      <td>0.86±0.01(0.21)</td>
+      <td>0.49±0.02(0.12)</td>
+      <td>0.40±0.002(0.10)</td>
+      <td>0.59±0.02(0.15)</td>
+      <td>0.35±0.01(0.09)</td>
+    </tr>
+    <tr>
+      <td>Cacna1s</td>
+      <td>0.56±0.03</td>
+      <td>0.49±0.01</td>
+      <td>0.18±0.01</td>
+      <td>0.16±0.002</td>
+      <td>0.21±0.01</td>
+      <td>0.19±0.004</td>
+    </tr>
+    <tr>
+      <td>Stac3</td>
+      <td>0.62±0.07</td>
+      <td>0.53±0.06</td>
+      <td>0.22±0.02</td>
+      <td>0.20±0.01</td>
+      <td>0.17±0.01</td>
+      <td>0.15±0.01</td>
+    </tr>
+    <tr>
+      <td>Jsrp1</td>
+      <td>0.42±0.03</td>
+      <td>0.40±0.01</td>
+      <td>0.32±0.01</td>
+      <td>0.29±0.03</td>
+      <td>0.35±0.01</td>
+      <td>0.35±0.02</td>
+    </tr>
+    <tr>
+      <td>Asph</td>
+      <td>0.21±0.01</td>
+      <td>0.26±0.01</td>
+      <td>0.30±0.02</td>
+      <td>0.35±0.03</td>
+      <td>0.82±0.03</td>
+      <td>1.00±0.03</td>
+    </tr>
+    <tr>
+      <td>Trdn</td>
+      <td>0.96±0.18</td>
+      <td>0.79±0.06</td>
+      <td>0.16±0.03</td>
+      <td>0.13±0.01</td>
+      <td>0.23±0.01</td>
+      <td>0.22±0.01</td>
+    </tr>
+    <tr>
+      <td>Jph1</td>
+      <td>0.71±0.09</td>
+      <td>0.58±0.04</td>
+      <td>0.29±0.02</td>
+      <td>0.25±0.01</td>
+      <td>0.24±0.01</td>
+      <td>0.23±0.01</td>
+    </tr>
+    <tr>
+      <td>Stim1</td>
+      <td>0.46±0.02</td>
+      <td>0.48±0.03</td>
+      <td>0.55±0.03</td>
+      <td>0.56±0.03</td>
+      <td>1.35±0.03</td>
+      <td>1.42±0.09</td>
+    </tr>
+    <tr>
+      <td>Orai1 monomers(6-subunt complex)</td>
+      <td>0.11±0.01(0.02)</td>
+      <td>0.13±0.02(0.02)</td>
+      <td>Not detected</td>
+      <td>Not detected</td>
+      <td>0.16±0.03(0.03)</td>
+      <td>0.17±0.01(0.03)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Calculated ratio values.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Gene name</th>
+      <th colspan="2">EDL</th>
+      <th colspan="2">soleus</th>
+      <th colspan="2">EOM</th>
+    </tr>
+    <tr>
+      <th>WT</th>
+      <th>dHT</th>
+      <th>WT</th>
+      <th>dHT</th>
+      <th>WT</th>
+      <th>dHT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ryr1 complex/Cacna1s</td>
+      <td>0.571</td>
+      <td>0.429</td>
+      <td>0.667</td>
+      <td>0.625</td>
+      <td>0.714</td>
+      <td>0.474</td>
+    </tr>
+    <tr>
+      <td>Stac3/Cacna1s</td>
+      <td>1.11</td>
+      <td>1.08</td>
+      <td>1.22</td>
+      <td>1.25</td>
+      <td>1.67</td>
+      <td>1.84</td>
+    </tr>
+    <tr>
+      <td>Jsrp1/Cacna1s</td>
+      <td>0.75</td>
+      <td>0.82</td>
+      <td>1.78</td>
+      <td>1.81</td>
+      <td>0.95</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>Stim1/Orai1 complex</td>
+      <td>23.0</td>
+      <td>24.0</td>
+      <td>-</td>
+      <td>-</td>
+      <td>45.0</td>
+      <td>47.3</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/83618/elife-83618-fig6-v2.jpg)
 
-**Figure 6.:** (A) Representative western blots showing Stim1 and Stim1L immunopositive bands. Forty and eighty micrograms of total homogenates from EOM, soleus, and EDL muscles isolated from WT mice were loaded onto a 7.5% SDS PAGE. Proteins were blotted onto nitrocellulose, probed with an antibody recognizing Stim1 and Stim1L, followed by incubation with an anti-rabbit IgG HRP-linked antibody. Bands were visualized by chemiluminescence. Blots were subsequently stripped and probed with anti-MyHC (all) for loading normalization (bottom panel). (B) Relative content of Stim1 in the three muscle types examined. Each symbol represents the value of a single mouse. *** p<0.001.Figure 6—source data 1.Figure 6A.TOP: Original uncropped western blots showing immunoreactivity of STIM1L and STIM1 in EDL, Soleus and EOM muscles from WT mouse N° 5. BOTTOM: same blot re-probed with anti-MyHC recognizing all isoforms (loading normalization).Figure 6—source data 2.Figure 6B.Original uncropped western blots showing immunoreactivity of STIM1L, STIM1 and MyHC in EDL, Soleus and EOM muscles from WT mouse N° 1, 2, 3 (TOP) and WT mouse N° 4 (BOTTOM).
+**Figure 6.:** (A) Representative western blots showing Stim1 and Stim1L immunopositive bands. Forty and eighty micrograms of total homogenates from EOM, soleus, and EDL muscles isolated from WT mice were loaded onto a 7.5% SDS PAGE. Proteins were blotted onto nitrocellulose, probed with an antibody recognizing Stim1 and Stim1L, followed by incubation with an anti-rabbit IgG HRP-linked antibody. Bands were visualized by chemiluminescence. Blots were subsequently stripped and probed with anti-MyHC (all) for loading normalization (bottom panel). (B) Relative content of Stim1 in the three muscle types examined. Each symbol represents the value of a single mouse. *** p<0.001.
 
 ## Discussion
 
 To understand in greater detail the changes in skeletal muscle function in congenital myopathies caused by recessive RYR1 mutations, we performed an in-depth qualitative and quantitative analysis of protein content and abundance in EDL, soleus and EOMs from WT and dHT mice. The results of the proteomic analysis reveal that, asides the drastic reduction in RyR1 content, profound changes occur in the content of many proteins particularly in fast-, slow-twitch and EOM muscles. Namely, we found that recessive Ryr1 mutations lead to an increase content aspartyl-ß-hydroxylase (Asph), some ribosomal proteins and calmodulin kinase 2 delta. EDL and EOMs that are more severely affected, also share changes in the content of other proteins, including collagens, heat shock proteins, and CamK2b as well as additional ribosomal proteins. We believe that the reduced RyR1 calcium channel content has a domino effect leading to changes in content of many proteins, particularly in EDL and EOMs.
 
-## Stoichiometry of ECC molecular complex in health and diseased muscles
+### Stoichiometry of ECC molecular complex in health and diseased muscles
 
 In this study we used spiked-in labelled peptides for isobaric TMT mass spectrometry measurements to quantify the major protein components of the ECC molecular complex in EDL, soleus and EOM from WT and dHT mice and established the absolute content of low abundant ECC-molecular complex proteins, including RyR1, DHPRα1s, Stim1, Orai1. The calculated values for RyR1 and DHPRα1s that we obtained are of the same order of magnitude as those previously determined by equilibrium ligand binding (Anderson et al., 1994; Margreth et al., 1993; Cully et al., 2016), confirming the reliability of this approach. In addition, we also provide for the first time the absolute quantification of Stim1 and Ora1, two crucial proteins involved in Store Operated Calcium Entry (SOCE). Our results are interesting because of the widespread attention gained by SOCE in skeletal muscle, not only because mutations in STIM1 and ORAI1 are the underlying feature of several genetic diseases associated with muscle weakness (Böhm et al., 2013; Lacruz and Feske, 2015), but also because experimental evidence has shown that Stim1 and Orai1 play an important role in refilling intracellular calcium stores in fast and slow twitch muscles (Cully et al., 2016; Wei-Lapierre et al., 2013; Carrell et al., 2016). Quantitative isobaric TMT mass spectrometry revealed important differences in the content of Stim1, Stim2 and Orai1 among different muscle types. We are confident of our results because the data relative to Stim1 content were validated by staining western blots of total muscle homogenates with Stim1-specific antibodies. Our data show that EOMs contain the highest levels of Stim1, and, in agreement with previous data by Cully et al., 2016, we found no major differences in Stim1 content between fast and slow twitch muscles. The Stim1 to Orai1 ratio in EOMs is 45, a value approximately 1.9-fold higher compared to that of EDLs. This higher content of Stim1 and Orai1 supports the idea that SOCE is a robust component of calcium signaling in EOMs mediating the constant calcium entry necessary to replenish sarcoplasmic reticulum stores needed to support the continuous fast muscle contraction unique to EOMs, compared to other striated muscles. A mind-boggling result emerging from the quantitative analysis of Stim1 and Orai1 is that slow twitch muscles such a soleus contain very low levels of Orai1 protein which could not be quantified by LC-MS. This raises the important question as to the nature of the molecular component(s) interacting with Stim1 in order to operate SOCE in slow twitch muscles. At this point in time, we cannot exclude the possibility that in slow twitch muscles, Stim1 interacts with a molecular partner different from Orai1, or that SOCE might be operated by an Orai1 variant having a much higher divalent cation conductance compared to the ‘classical’ Orai1 isoform expressed in EDL and EOM. Nevertheless, such a question is beyond the scope of the present investigation and cannot be answered by the data presented here.
 
 STAC3 mutations have been linked to Native American Myopathy (NAM), a severe congenital myopathy resulting in muscle weakness and skeleton alteration (Horstick et al., 2013). Such mutations cause a decrease of the interaction between Stac3 with DHPRα1s resulting in a functional deficit of EC coupling (Wong King Yuen et al., 2017). On the basis the quantitative data we obtained using the LC-MS standard curve generated by spiked-in peptides, the Stac3 to Cacna1s stoichiometry ratio is 1.11, 1.22, and 1.67 in EDL, soleus and EOM respectively, and no differences were observed between WT and dHT mice. Stac3 interacts via its SH3 domain with a Kd ranging between 2 and 10 µM, with a binding site within the cytosolic II-III loop of the DHPRα1s (Rufenach et al., 2020; Polster et al., 2018). Here we show that the molar content of Stac3 in EDL, soleus and EOMs is between 2.5- and 10- fold lower than its Kd for the DHPRα1s II-III loop binding site (Wong King Yuen et al., 2017; Rufenach et al., 2020). Thus, the fractional occupancy of the DHPRα1s binding site by Stac3 is lower than 50%, a value which is still sufficient to support normal EC coupling. Nevertheless, the extent of the fractional occupancy depends on the fiber type. In particular, if the Kd of the DHPRα1s binding site for Stac3 is identical in EDL, soleus and EOM, then the fractional occupancy of the DHPRα1s binding site for Stac3 in soleus and EOMs is lower than of EDL muscles, because the molar content of Stac3 in soleus and EOMs is three-fold lower compared to that of EDL (Table 4). STAC3 mutations linked to NAM decrease the Kd of the SH3 domain of Stac3 for the cytosolic II-III loop of DHPRα1s (Rufenach et al., 2020) further lowering the fractional occupancy of Stac3 binding site of DHPRα1s to a low level close to zero, a condition that would disrupt EC coupling in NAM patients (Horstick et al., 2013).
 
-## Recessive Ryr1 mutations affect the expression of extracellular matrix
+### Recessive Ryr1 mutations affect the expression of extracellular matrix
 
 ‘Reactome’ interaction pathway analysis revealed that the major pathways affected by the presence of compound heterozygous Ryr1 mutations in EDL muscles includes proteins involved in organization and degradation of the extracellular matrix (ECM) and indeed the content of collagen I, II, IV, V, and XI was significantly reduced. The ECM plays an important role in muscle force transmission, maintenance and repair and collagen fibers account for 1–10% muscle dry weight, forming a highly ordered network surrounding individual muscle fibers and muscle bundles (Trotter and Purslow, 1992; Gillies and Lieber, 2011). Exactly how defects in the collagen network impact muscle function is not clear, nevertheless patients bearing mutations in Collagen VI (COL6A1, COL6A2 and COL6A3) suffer from Ulrich and Bethlem myopathies (Bethlem and Wijngaarden, 1976) and exhibit muscle contractures involving elbows and ankles, a clinical sign that has been also described in patients suffering of congenital myopathies linked to recessive RYR1 mutations (Monnier et al., 2008; Klein et al., 2012). In addition, a frequent common feature of patients with congenital myopathies carrying recessive RYR1 mutations is the appearance of a number of skeletal abnormalities at birth, including scoliosis and congenital dislocation of the hip, kyphosis, clubfoot, flattening of the arch of the foot (or an abnormally high arch of the foot). Patients also exhibit joint laxity that may lead to dislocation of the patella, or, more rarely abnormal tightening of certain joints, resulting in contractures especially of the Achilles tendon (Jungbluth, 2007) and such features may also be related to the changes in collagen composition of the muscle fibers, as observed in dHT mice.
 
-## Recessive Ryr1 mutations affect the expression of proteins involved in ER protein quality control and protein synthesis
+### Recessive Ryr1 mutations affect the expression of proteins involved in ER protein quality control and protein synthesis
 
 Muscles from the dHT did not show upregulation of proteins related to ER stress such as PERK, IRE1a, ATF6, although the content of BiP as well as that of several heat shock proteins was significantly increased in EDL and EOM muscles. Heat shock proteins are molecular chaperones that participate in the safeguard of cell integrity, playing numerous functions including protection from heat insults, prevention of aggregation and facilitation of protein folding. There are different categories of heat shock proteins, including small HSPs (HSPB1-10) that are involved in protein folding, prevention of aggregation. In skeletal muscle, these small proteins have been shown to be involved in the maintenance of the cytoskeletal network and contractile elements and play a role in myogenic differentiation (Dreiza et al., 2010; Maglara et al., 2003; Martin et al., 1997). Large HSP are present in many subcellular locations including mitochondria, nucleus, sarcoplasmic reticulum and myoplasm where they facilitate protein folding and re-folding, facilitate protein transport into the SR and mitochondria and prevent aggregate formation. Interestingly, intensive resistance training increases heat shock protein levels in muscle (Murlasits et al., 2006) whereas aging is associated with a decrease in HSP70 response in muscles following muscle contraction (Vasilaki et al., 2002; Murgia et al., 2017; Brinkmeier and Ohlendieck, 2014). Proteomic profiling has shown that muscle diseases including dysferlinopathies, myofibrillar myopathies, spinal muscular atrophy, Duchenne muscular dystrophy and others are associated with upregulation of distinct HSP (for review see 51). These results together with our findings suggest that altered muscle function caused by genetic mutations are accompanied by adaptive cellular responses aimed at counterbalancing muscle damage and/or restoring proper function. Of note, in soleus muscles from the dHT mice, HSP are not up-regulated; this may be due to the fact that soleus muscles are less damaged/stressed or because the content of HSPs in soleus muscles is constitutively higher than in EDL muscles. In particular, the expression of HSP70 is fivefold higher in WT soleus compared to WT EDL muscles. The high expression of HSP70 might thus protect slow twitch muscles from extensive damage linked to the expression of mutant RyR1s, an event which may ultimately account for the fiber type I predominance observed in patients with congenital myopathies linked to RYR1 mutations.
 
 An interesting observation of the present study is that the content of ribosomal proteins constituting the 40 S and 60 S subunits is significantly increased in the three muscle types from the dHT compared to WT. In skeletal muscle, up-regulation of ribosomal proteins accompanies hypertrophy and training, whereas ribosomal proteins decrease with age (Ubadia-Mohien et al., 2019). Thus, our results indicate that the presence of Ryr1 mutations evoke a global adaptive response aimed at (i) preserving the integrity of intracellular protein compartments and (ii) increasing muscle protein turnover.
 
-## Differentially expressed proteins shared by EDL, soleus, and EOM from dHT mice
+### Differentially expressed proteins shared by EDL, soleus, and EOM from dHT mice
 
 We postulated that some of the skeletal muscle phenotypic features of dHT might be linked to changes in protein expression shared by the three muscles types we analyzed. We found that RyR1 is the only shared downregulated protein, while 39 proteins are upregulated, including calmodulin kinase 2δ, aspartyl-ß-hydroxylase and Kelch like protein 41. Mutations in the Kelch like protein 41 (KLH41) have been identified in patients with nemaline myopathy (Gupta et al., 2013) and it has been suggested that this Kelch like protein regulates muscle protein homeostasis through its interaction with the muscle-specific E3 ubiquitin ligase MuRF 1. Furthermore, KLH41 appears to be activated in response to muscle damage suggesting that it may play a role in muscle adaptation and repair (Gupta et al., 2013).
 
-## Conclusions
+### Conclusions
 
 Multiplexed proteomic analysis is a powerful approach for the quantitative proteomic analysis of a variety of biological samples. In particular, absolute quantification can be achieved by measuring the content of a protein relative to a spiked-in peptide with known absolute concentration. A limitation of the multiplexed isobaric mass tag-based protein quantification is the reliable detection of very low abundant proteins, such as transcriptional factors and other molecules involved in cellular signaling. Because of this intrinsic hurdle of multiplex isobaric mass tag spectrometry, in this study we missed nuclear proteins in addition to protein components of signaling pathways. An additional drawback of this study is that it gives a static image of muscle protein content in young adult mice without conveying information about the dynamics of protein changes or changes in post-translational modifications occurring during muscle disease.
 
@@ -122,11 +1264,11 @@ In summary, our quantitative proteomic study, shows that recessive Ryr1 mutation
 
 ## Materials and methods
 
-## Compliance with ethical standards
+### Compliance with ethical standards
 
 All experiments involving animals were carried out on 12 weeks old male WT and dHT mice littermates. Experimental procedures were approved by the Cantonal Veterinary Authority of Basel Stadt (BS Kantonales Veterinäramt Permit numbers 1728). All experiments were performed in accordance with relevant guidelines and regulations.
 
-## Proteomics analysis using tandem mass tags
+### Proteomics analysis using tandem mass tags
 
 EDL, soleus and EOM muscles from 5 male WT and 5 male dHT, 12 weeks old mice were excised, weighed, snap frozen in liquid nitrogen and mechanically grinded. Approximately 10 mg of EDL, 8 mg for of Soleus and 6 mg of EOM muscle tissue was grinded and subsequently lysed in 200 µl of lysis buffer containing 100 mM TRIS, 1% sodium deoxycholate (SDC), 10 mM TCEP and 15 mM chloroacetamide, followed by sonication (Bioruptor, 20 cycles, 30 s on/off, Diagenode, Belgium) and heating to 95 °C for 10 min. After cooling, protein samples were digested by incubated overnight at 37 °C with sequencing-grade modified trypsin (1/50, w/w; Promega, Madison, Wisconsin). Samples were acidified using 5% TFA and peptides cleaned up using the Phoenix 96 x kit (PreOmics, Martinsried, Germany) following the manufacturer’s instructions. After drying the peptides in a SpeedVac, samples were stored at –80 °C.
 
@@ -136,16 +1278,16 @@ The generated 12 peptide samples fractions were analyzed by LC-MS as described p
 
 The acquired raw-files were searched against a protein database containing sequences of the predicted SwissProt entries of Mus musculus (https://www.ebi.ac.uk/, release date 2019/03/27), Myh2 and Myh13 from Trembl, the six calibration mix proteins (Ahrné et al., 2016) and commonly observed contaminants (in total 17,414 sequences) using the SpectroMine software (Biognosys, version 1.0.20235.13.16424) and the TMT 10-plex default settings. In brief, the precursor ion tolerance was set to 10 ppm and fragment ion tolerance was set to 0.02 Da. The search criteria were set as follows: full tryptic specificity was required (cleavage after lysine or arginine residues unless followed by proline), 3 missed cleavages were allowed, carbamidomethylation (C), TMT6plex (K and peptide n-terminus) were set as fixed modification and oxidation (M) as a variable modification. The false identification rate was set to 1% by the software based on the number of decoy hits. Proteins that contained similar peptides and could not be differentiated based on MS/MS analysis alone were grouped to satisfy the principles of parsimony. Proteins sharing significant peptide evidence were grouped into clusters. Acquired reporter ion intensities in the experiments were employed for automated quantification and statistically analyzed using a modified version of our in-house developed SafeQuant R script (v2.3)(Ahrné et al., 2016). This analysis included adjustment of reporter ion intensities, global data normalization by equalizing the total reporter ion intensity across all channels, summation of reporter ion intensities per protein and channel, calculation of protein abundance ratios and testing for differential abundance using empirical Bayes moderated t-statistics. Finally, the calculated p-values were corrected for multiple testing using the Benjamini−Hochberg method.
 
-## Targeted PRM-LC-MS analysis of RyR1 and DHPRα1s, Stim1 and Orai1
+### Targeted PRM-LC-MS analysis of RyR1 and DHPRα1s, Stim1 and Orai1
 
 In a first step, parallel reaction-monitoring (PRM) assays (Kulyyassov et al., 2021) were generated from a mixture containing 50 fmol of each proteotypic heavy reference peptide of the target proteins (AIWAEYDPEAK, GEGIPTTAK, TGGLFGQVDNFLER (for DHPRα1s); AGDVQSGGSDQER, GPHLVGPSR, SNQDLITENLLPGR, TLLWTFIK, VVAEEEQLR (for Ryr1); LISVEDLWK, AIDTVIFGPPIITR, ITEPQIGIGSQR, LSFEAVR, YAEEEIEQVR (for Stim1); QFQELNELAEFAR, IQDQIDHR, SLVSHK (for Orai1); JPT Peptide Technologies GmbH) plus iRT peptides (Biognosys, Schlieren, Switzerland). Peptides were subjected to LC–MS/MS analysis using a Q Exactive Plus mass spectrometer fitted with an EASY-nLC 1000 (both Thermo Fisher Scientific) and a custom-made column heater set to 60 °C. Peptides were resolved using a RP-HPLC column (75 μm×30 cm) packed in-house with C18 resin (ReproSil-Pur C18–AQ, 1.9 μm resin; Dr. Maisch GmbH) at a flow rate of 0.2 μLmin-1. A linear gradient ranging from 5% buffer B to 45% buffer B over 60 min was used for peptide separation. Buffer A was 0.1% formic acid in water and buffer B was 80% acetonitrile, 0.1% formic acid in water. The mass spectrometer was operated in DDA mode with a total cycle time of approximately 1 s. Each MS1 scan was followed by high-collision-dissociation (HCD) of the 20 most abundant precursor ions with dynamic exclusion set to 5 seconds. For MS1, 3e6 ions were accumulated in the Orbitrap over a maximum time of 254ms and scanned at a resolution of 70,000 FWHM (at 200 m/z). MS2 scans were acquired at a target setting of 1e5 ions, maximum accumulation time of 110ms and a resolution of 35,000 FWHM (at 200 m/z). Singly charged ions, ions with charge state ≥6 and ions with unassigned charge state were excluded from triggering MS2 events. The normalized collision energy was set to 27%, the mass isolation window was set to 1.4 m/z and one microscan was acquired for each spectrum. The acquired raw-files were searched using the MaxQuant software (Version 1.6.2.3) against the same protein sequence database as described above using default parameters except protein, peptide and site FDR were set to 1 and Lys8 and Arg10 were added as variable modifications. The best 6 transitions for each peptide were selected automatically using an in-house software tool and imported into SpectroDive (version 8, Biognosys, Schlieren). A scheduled (window width 12 min) mass isolation list containing the iRT peptides was exported form SpectroDive and imported into the Q Exactive plus operating software for PRM analysis.
 
 Peptide samples for PRM analysis were resuspended in 0.1% aqueous formic acid, spiked with iRT peptides and the heavy reference peptide mix at a concentration of 10 fmol of heavy reference peptides per 1 µg of total endogenous peptide mass and subjected to LC–MS/MS analysis on the same LC-MS system described above using the following settings: The resolution of the orbitrap was set to 140,000 FWHM (at 200 m/z), the fill time was set to 500ms to reach an AGC target of 3e6, the normalized collision energy was set to 27%, ion isolation window was set to 0.4 m/z and the first mass was fixed to 100 m/z. A MS1 scan at 35,000 resolution (FWHM at 200 m/z), AGC target 3e6 and fill time of 50ms was included in each MS cycle. All raw-files were imported into SpectroDive for protein / peptide quantification. To control for variation in injected sample amounts, the total ion chromatogram (only comprising ions with two to five charges) of each sample was determined and used for normalization. To this end, the generated raw files were imported into the Progenesis QI software (Nonlinear Dynamics (Waters), Version 2.0), the intensity of all precursor ions with a charge of +2 to+5 were extracted, summed for each sample and used for normalization. Normalized ratios were transformed from the linear to the log-scale, normalized relative to the control condition and the median ratio among peptides corresponding to one protein was used for protein quantification.
 
-## Western blot analysis of Stim1 and Stim1L
+### Western blot analysis of Stim1 and Stim1L
 
 Total homogenates of EDL, soleus and EOM muscles from WT mice were prepared in cracking buffer as previously described (Elbaz et al., 2019; Eckhardt et al., 2020). Proteins were separated on a 7.5% SDS-PAG, blotted onto nitrocellulose and probed with an antibody recognizing Stim1 and Stim1L (1/2000 anti-STIM1, Millipore, #AB9870), followed by incubation with an anti-rabbit IgG HRP-linked antibody (1/6000, Cell Signaling Technology, #7074). Bands were visualized by chemiluminescence. Blots were subsequently stripped and probed with anti-MyHC (all) (1/5000, DSHB, #MF20) for loading normalization as previously described (Elbaz et al., 2019; Eckhardt et al., 2020). Statistical analysis was performed using a one-way ANOVA test.
 
-## Data-analyses
+### Data-analyses
 
 Matlab 2021b (Mathworks) (Darik, 2022) was used to process the proteomics data and to generate heatmap, volcano plots and Venn diagrams. ‘Reactome’ is based on ‘multiple proteins’ or ‘Proteins with Values/Ranks’ string analyses (https://string-db.org/; Version 11.5).

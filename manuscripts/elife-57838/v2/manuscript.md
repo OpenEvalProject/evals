@@ -33,31 +33,233 @@ Here, we investigate whether pleiotropic ‘win-win’ mutations directly benefi
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig1-v2.jpg)
 
-**Figure 1.:** (A) CoSMO (Cooperation that is Synthetic and Mutually Obligatory) consists of two non-mating cross-feeding yeast strains, each engineered to overproduce a metabolite required by the partner strain. Metabolite overproduction is due to a mutation that renders the first enzyme of the biosynthetic pathway resistant to end-product inhibition (Armitt and Woods, 1970; Feller et al., 1999). Hypoxanthine and lysine are released by live L and live -H+H cells at a per cell rate of -L+r and Hr, respectively (LHart et al., 2019a), and are consumed by the partner at a per cell amount of c and Hc, respectively. The two strains can be distinguished by different fluorescent markers. (LB) Win-win mutation. A pleiotropic win-win mutation confers a self-serving phenotype (orange) and a partner-serving phenotype (lavender).
+**Figure 1.:** (A) CoSMO (Cooperation that is Synthetic and Mutually Obligatory) consists of two non-mating cross-feeding yeast strains, each engineered to overproduce a metabolite required by the partner strain. Metabolite overproduction is due to a mutation that renders the first enzyme of the biosynthetic pathway resistant to end-product inhibition (Armitt and Woods, 1970; Feller et al., 1999). Hypoxanthine and lysine are released by live L-H+ and live H-L+ cells at a per cell rate of rH and rL, respectively (Hart et al., 2019a), and are consumed by the partner at a per cell amount of cH and cL, respectively. The two strains can be distinguished by different fluorescent markers. (B) Win-win mutation. A pleiotropic win-win mutation confers a self-serving phenotype (orange) and a partner-serving phenotype (lavender).
 
 In our previous work, we allowed nine independent lines of CoSMO to evolve for over 100 generations in a well-mixed environment by performing periodic dilutions (Hart et al., 2019a; Shou et al., 2007). Throughout evolution, the two cooperating strains coexisted due to their metabolic co-dependence (Momeni et al., 2013b; Shou et al., 2007). In a well-mixed environment, since partner-supplied benefits are uniformly distributed and equally available to all individuals, a self-serving mutation will be favored regardless of how it affects the partner. Indeed, all characterized mutants isolated from CoSMO displayed self-serving phenotypic changes (e.g. improved affinity for partner-supplied metabolites; Waite and Shou, 2012; Hart et al., 2019a; Hart et al., 2019b), outcompeting their ancestor in community-like environments. Here, we report the identification of a pleiotropic win-win mutation which is both self-serving and partner-serving. This win-win mutation also arose in the absence of the cooperative partner. Thus, cooperation-promoting win-win mutations can arise in a community without any evolutionary history of cooperation and in environments unfavorable to cooperation. Our work suggests the possibility that pre-existing pleiotropy can stabilize nascent cooperation in natural communities.
 
 ## Results
 
-## Criteria of a win-win mutation
+### Criteria of a win-win mutation
 
 A win-win mutation is defined as a single mutation (e.g., a point mutation, a translocation, a chromosome duplication) that directly promotes the fitness of self (self-serving) and the fitness of partner (partner-serving). To define ‘direct’ here, we adapt the framework from Chapter 10 of Peters et al., 2017: A mutation in genotype A exerts a direct fitness effect on genotype B if the mutation can alter the growth rate of B even if the biomass of A is fixed (Hart et al., 2019b).
 
-For L-H+, a self-serving mutation should improve the growth rate of self by, for example, increasing cell’s affinity for lysine (Figure 1B, orange). A self-serving mutation allows the mutant to outcompete a non-mutant. A partner-serving mutation should improve the growth rate of partner at a fixed self biomass. Since the partner requires hypoxanthine, a partner-serving mutation in L-H+ should increase the hypoxanthine supply rate per L-H+ biomass. Since the biomass of L-H+ is linked to lysine consumption, the partner-serving phenotype of L-H+ translates to hypoxanthine supply rate per lysine consumption, or equivalently, hypoxanthine release rate per cell (rH) normalized by the amount of lysine consumed to make a cell (cL) (Hart et al., 2019b). We call this ratio rH/cL 'H-L exchange ratio' (Figure 1B, purple), which can be interpreted as the yield coefficient while converting lysine consumption to hypoxanthine release. Note that a partner-serving mutation will eventually feedback to promote self-growth. Indeed, after an initial lag, the growth rate of partner, of self, and of the entire community reach the same steady state growth rate rHcLrLcH , where rL (lysine release rate per cell) and cH (hypoxanthine consumption amount per cell) are phenotypes of H-L+ (Hart et al., 2019b).
+For L-H+, a self-serving mutation should improve the growth rate of self by, for example, increasing cell’s affinity for lysine (Figure 1B, orange). A self-serving mutation allows the mutant to outcompete a non-mutant. A partner-serving mutation should improve the growth rate of partner at a fixed self biomass. Since the partner requires hypoxanthine, a partner-serving mutation in L-H+ should increase the hypoxanthine supply rate per L-H+ biomass. Since the biomass of L-H+ is linked to lysine consumption, the partner-serving phenotype of L-H+ translates to hypoxanthine supply rate per lysine consumption, or equivalently, hypoxanthine release rate per cell (rH) normalized by the amount of lysine consumed to make a cell (cL) (Hart et al., 2019b). We call this ratio rH/cL 'H-L exchange ratio' (Figure 1B, purple), which can be interpreted as the yield coefficient while converting lysine consumption to hypoxanthine release. Note that a partner-serving mutation will eventually feedback to promote self-growth. Indeed, after an initial lag, the growth rate of partner, of self, and of the entire community reach the same steady state growth rate $\sqrt{\frac{r_{H}}{c_{L}}\frac{r_{L}}{c_{H}}}$, where rL (lysine release rate per cell) and cH (hypoxanthine consumption amount per cell) are phenotypes of H-L+ (Hart et al., 2019b).
 
-## Community and monoculture evolution share similar mutations
+### Community and monoculture evolution share similar mutations
 
 We randomly isolated evolved L-H+ colonies from CoSMO and subjected them to whole-genome sequencing. Nearly every sequenced clone harbored one or more of the following mutations: ecm21, rsp5, and duplication of chromosome 14 (DISOMY14) (Table 1, top), consistent with our earlier studies (Waite and Shou, 2012; Hart et al., 2019a; Hart et al., 2019b; Green et al., 2020). Mutations in RSP5, an essential gene, mostly involved point mutations (e.g., rsp5(P772L)), while mutations in ECM21 mostly involved premature stop codons and frameshift mutations (Table 1, top; Figure 2—figure supplement 1). Similar mutations also repeatedly arose when L-H+ evolved as a monoculture in lysine-limited chemostats (Table 1, bottom), suggesting that these mutations emerged independently of the partner.
 
-## Self-serving mutations increase the abundance of metabolite permease on cell surface
+**Table 1.**
+ Mutations that repeatedly arose in independent lines.Single-nucleotide polymorphisms (SNPs) and chromosomal duplications from Illumina re-sequencing of L-H+ from Cooperation that is Synthetic and Mutually Obligatory (CoSMO) communities (top) and lysine-limited chemostats (bottom). All clones except for two (WY1592 and WY1593 of line B3 at Generation 14) had either an ecm21 or an rsp5 mutation, often in conjunction with chromosome 14 duplication. Note that the RM11 strain background in this study differed from the S288C strain background used in our earlier study (Waite and Shou, 2012). This could explain, for example, why mutations in DOA4 were repeatedly observed in the earlier study (Waite and Shou, 2012) but not here. For a schematic diagram of the locations of mutations with respect to protein functional domains in ecm21 and rsp5, see Figure 2—figure supplement 1. For other mutations, see Table 1—source data 1.Table 1—source data 1.Summary of mutations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>L-H+</th>
+      <th>Line</th>
+      <th>Generation</th>
+      <th>ecm21</th>
+      <th>rsp5</th>
+      <th>Chromosome duplicated</th>
+      <th>Strain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="14">CoSMO comm.</td>
+      <td rowspan="4">A1</td>
+      <td rowspan="2">24</td>
+      <td>Glu316 -&gt; Stop</td>
+      <td>–</td>
+      <td>11, 14</td>
+      <td>WY1588</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Pro772 -&gt; Leu</td>
+      <td>11</td>
+      <td>WY1589</td>
+    </tr>
+    <tr>
+      <td rowspan="2">151</td>
+      <td>–</td>
+      <td>Pro772 -&gt; Leu</td>
+      <td>–</td>
+      <td>WY1590</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Pro772 -&gt; Leu</td>
+      <td>11, 14, 16</td>
+      <td>WY1591</td>
+    </tr>
+    <tr>
+      <td rowspan="5">B1</td>
+      <td>25</td>
+      <td>Leu812-&gt;Stop</td>
+      <td>–</td>
+      <td>14</td>
+      <td>WY1584</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>–</td>
+      <td>Gly689 -&gt; Cys</td>
+      <td>14</td>
+      <td>WY1585</td>
+    </tr>
+    <tr>
+      <td rowspan="3">76</td>
+      <td>–</td>
+      <td>Gly689 -&gt; Cys</td>
+      <td>–</td>
+      <td>WY1586</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gly689 -&gt; Cys</td>
+      <td>14</td>
+      <td>WY2467</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>Gly689 -&gt; Cys</td>
+      <td>14</td>
+      <td>WY1587</td>
+    </tr>
+    <tr>
+      <td rowspan="5">B3</td>
+      <td rowspan="2">14</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>WY1592</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td>14</td>
+      <td>WY1593</td>
+    </tr>
+    <tr>
+      <td rowspan="2">34</td>
+      <td>Arg742 -&gt; Stop</td>
+      <td>–</td>
+      <td>14, 16</td>
+      <td>WY1594</td>
+    </tr>
+    <tr>
+      <td>Arg742 -&gt; Stop</td>
+      <td>–</td>
+      <td>14, 16</td>
+      <td>WY1595</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Arg742 -&gt; Stop</td>
+      <td>Arg742 -&gt; His</td>
+      <td>12, 14</td>
+      <td>WY1596</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Lysine-limited chemostat mono-culture</td>
+      <td rowspan="2">7.Line1</td>
+      <td rowspan="2">30</td>
+      <td>Asp652 frameshift</td>
+      <td></td>
+      <td>14</td>
+      <td>WY1601</td>
+    </tr>
+    <tr>
+      <td>Glu216 -&gt; Stop</td>
+      <td></td>
+      <td>14</td>
+      <td>WY1602</td>
+    </tr>
+    <tr>
+      <td>7.Line2</td>
+      <td>30</td>
+      <td>Pro886 -&gt; Ser</td>
+      <td></td>
+      <td>11, 14, 16</td>
+      <td>WY1603</td>
+    </tr>
+    <tr>
+      <td rowspan="2">7.Line3</td>
+      <td rowspan="2">30</td>
+      <td>Thr586 frameshift</td>
+      <td></td>
+      <td>14</td>
+      <td>WY1604</td>
+    </tr>
+    <tr>
+      <td>Thr586 frameshift</td>
+      <td></td>
+      <td>14</td>
+      <td>WY1605</td>
+    </tr>
+    <tr>
+      <td rowspan="2">11.Line1</td>
+      <td rowspan="2">19</td>
+      <td>Glu688 -&gt; Stop</td>
+      <td></td>
+      <td>14, 16</td>
+      <td>WY1606</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>G(−281) -&gt;A</td>
+      <td>–</td>
+      <td>WY1608</td>
+    </tr>
+    <tr>
+      <td rowspan="2">11.Line2</td>
+      <td>19</td>
+      <td></td>
+      <td>A(−304) -&gt; G</td>
+      <td>–</td>
+      <td>WY1607</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Glu793 frameshift</td>
+      <td></td>
+      <td>14</td>
+      <td>WY1609</td>
+    </tr>
+  </tbody>
+</table>
+
+### Self-serving mutations increase the abundance of metabolite permease on cell surface
 
 Evolved L-H+ clones are known to display a self-serving phenotype: they could form microcolonies on low-lysine plates where the ancestor failed to grow (Waite and Shou, 2012; Hart et al., 2019b). To quantify this self-serving phenotype, we used a fluorescence microscopy assay (Hart et al., 2019c) to measure the growth rates of ancestral and evolved L-H+ in various concentrations of lysine. Under lysine limitation characteristic of the CoSMO environment (Figure 2A, ‘Comm. environ.'), evolved L-H+ clones containing an ecm21 or rsp5 mutation grew faster than a DISOMY14 strain which, as we showed previously, grew faster than the ancestor (Hart et al., 2019b). An engineered ecm21Δ or rsp5(P772L) mutation was sufficient to confer the self-serving phenotype (Figure 2A). In competition experiments in lysine-limited chemostats (8 hr doubling time), ecm21Δ rapidly outcompeted ancestral cells since ecm21Δ grew 4.4 times as fast as the ancestor (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig2-v2.jpg)
+
+**Figure 2.:** (A) Recurrent mutations are self-serving. We measured growth rates of mutant and ancestral strains in minimal SD medium with various lysine concentrations, using a calibrated fluorescence microscopy assay (Hart et al., 2019c). Briefly, for each sample, total fluorescence intensity of image frames was tracked over time, and the maximal positive slope of ln(fluorescence intensity) against time was used as the growth rate. Evolved strains grew faster than the ancestor in community environment (the gray dotted line corresponds to the lysine level supporting a growth rate of 0.1/hr as observed in ancestral Cooperation that is Synthetic and Mutually Obligatory [CoSMO] Hart et al., 2019a). Measurements performed on independent days (≥3 trials) were pooled and the average growth rate is plotted. Fit lines are based on Moser’s equation $b(L)=b_{max}L^{n}/(K_{L}^{n}+L^{n})$, where b(L) is the cell birth rate at metabolite concentration L, bmax is the maximum birth rate in excess lysine, KL is the lysine concentration at which half maximum birth rate is achieved, and n is the cooperitivity cooefficient describing the sigmoidal shape of the curve (Hart et al., 2019c). Evolved strains are marked with evo; engineered or backcrossed mutants are marked with the genotype. Data for DISOMY14 are reproduced from Hart et al., 2019b as a comparison. Data can be found in Figure 2—source data 1. (B) Self-serving mutations stabilize Lyp1 localization on cell membrane. We fluorescently tagged Lyp1 with GFP (green fluorescent protein) in ancestor (WY1620), ecm21Δ (WY2355), and rsp5(P772L) (WY2356) to observe Lyp1 localization. We imaged each strain in a high lysine concentration (164 µM) as well as after 4 and 10 hr incubation in low lysine (1 µM). Note that low lysine was not consumed during incubation (Hart et al., 2019c). During prolonged lysine limitation, Lyp1 was stabilized to cell membrane in both mutants compared to the ancestor. Images contain samples from several fields of view so that more cells can be visualized.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mutations and their locations are marked with respect to the functional domains of the proteins. Numbers indicate amino acid positions, except in non-coding regions. Domain structures are obtained from the ‘protein’ tab of SGD (https://www.yeastgenome.org/locus/S000000927/protein; https://www.yeastgenome.org/locus/S000000197/protein). HECT domain is found in ubiquitin-protein ligases. WW domain can bind proteins with particular proline-motifs such as the PPxY motif. Arrestin C-terminal-like domain is involved in signaling and endocytosis of receptors. For ECM21, mutating the three poly-proline-tyrosine (PY) motifs after amino acid 884 inhibited the stress-induced endocytosis of the manganese transporter Smf1 (Nikko et al., 2008). Most ecm21 mutations we recovered introduced premature stop codons before the PY motifs. In RSP5, the region including and upstream of -470 is required for RSP5 function (Hein et al., 1995). Mutations from coculture and monoculture isolates are marked above and below the gene, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** We competed ancestor (expressing the mCherry fluorescent protein) and ecm21Δ (expressing the blue fluorescent protein) in four independent lysine-limited chemostats (represented by different symbols). Minimal medium containing 20 µM lysine is pumped in to achieve an 8-hr doubling time (similar to Cooperation that is Synthetic and Mutually Obligatory [CoSMO] doubling time). Periodically, we measured strain ratio using flow cytometry (Methods, 'Quantification methods'). The fitness advantage of ecm21Δ over ancestor is 0.315±0.014/hr (calculated from the slope using all data except the last time point when ecm21Δ had risen to be the majority). Since ancestor’s growth rate is ln(2)/8=0.0866/hr, ecm21Δ grows 4.7 times as fast as the ancestor. This is consistent with Figure 2A: The ancestor achieves a doubling time of 8 hr at 1.38 μM lysine, and at this concentration, ecm21Δ grows at 0.38/hr, 4.4 times as fast as the ancestor. Data can be found in Figure 2—figure supplement 2—source data 1.
+
 A parsimonious explanation for ecm21’s self-serving phenotype is that during lysine limitation, the high-affinity lysine permease Lyp1 is stabilized on cell surface in the mutant. We have previously shown that duplication of the LYP1 gene, which resides on chromosome 14, is necessary and sufficient for the self-serving phenotype of DISOMY14 (Hart et al., 2019b). Rsp5, an E3 ubiquitin ligase, is recruited by various ‘adaptor’ proteins to ubiquitinate and target membrane transporters, including Lyp1, for endocytosis and vacuolar degradation (Lin et al., 2008). In high lysine, Lyp1-GFP was localized to both cell membrane and vacuole in ancestral and ecm21 cells, but localized to the cell membrane in rsp5 cells (Figure 2B, top row). Thus, Lyp1 localization was normal in ecm21 but not in rsp5, consistent with the notion that at high lysine concentrations, Lyp1 is targeted for ubiquitination by Rsp5 through the Art1 instead of the Ecm21 adaptor (Lin et al., 2008). When ancestral L-H+ was incubated in low lysine, Lyp1-GFP was initially localized on the cell membrane to facilitate lysine uptake, but later targeted to the vacuole for degradation and recycling (Jones et al., 2012; Figure 2B, left column middle and bottom panels). However, in both ecm21Δ and rsp5(P772L) mutants, Lyp1-GFP was stabilized on cell membrane during prolonged lysine limitation (Figure 2B, center and right columns bottom panels). This could allow mutants to grow faster than the ancestor during lysine limitation.
 
-## ecm21 mutation is partner-serving
+### ecm21 mutation is partner-serving
 
-The partner-serving phenotype of L-H+ (i.e., hypoxanthine release rate per lysine consumption; exchange ratio rH/cL) can be measured in lysine-limited chemostats. In chemostats, fresh medium containing lysine was supplied at a fixed slow flow rate (mimicking the slow lysine supply by partner), and culture overflow exited the culture vessel at the same flow rate (Skelding et al., 2018). After an initial lag, live and dead population densities reached a steady state (Figure 3—figure supplement 1), and therefore, the net growth rate must be equal to the chemostat dilution rate dil (flow rate/culture volume). The released hypoxanthine also reached a steady state (Figure 3A). The H-L exchange ratio can be quantified as dil∗Hss/L0 (Hart et al., 2019b), where dil is the chemostat dilution rate, Hss is the steady state hypoxantine concentration in the culture vessel, and L0 is the lysine concentration in the inflow medium (which was fixed across all experiments). Note that this measure at the population level (dil∗Hss/L0) is mathematically identical to an alternative measure at the individual level (hypoxanthine release rate per cell/lysine consumption amount per cell or rH/cL) (Hart et al., 2019b).
+The partner-serving phenotype of L-H+ (i.e., hypoxanthine release rate per lysine consumption; exchange ratio rH/cL) can be measured in lysine-limited chemostats. In chemostats, fresh medium containing lysine was supplied at a fixed slow flow rate (mimicking the slow lysine supply by partner), and culture overflow exited the culture vessel at the same flow rate (Skelding et al., 2018). After an initial lag, live and dead population densities reached a steady state (Figure 3—figure supplement 1), and therefore, the net growth rate must be equal to the chemostat dilution rate dil (flow rate/culture volume). The released hypoxanthine also reached a steady state (Figure 3A). The H-L exchange ratio can be quantified as $dil∗H_{ss}/L_{0}$ (Hart et al., 2019b), where dil is the chemostat dilution rate, Hss is the steady state hypoxantine concentration in the culture vessel, and L0 is the lysine concentration in the inflow medium (which was fixed across all experiments). Note that this measure at the population level ($dil∗H_{ss}/L_{0}$) is mathematically identical to an alternative measure at the individual level (hypoxanthine release rate per cell/lysine consumption amount per cell or rH/cL) (Hart et al., 2019b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig3-v2.jpg)
+
+**Figure 3.:** (A) Hypoxanthine accumulates to a higher level in ecm21Δ chemostats than in ancestor chemostats. We cultured individual strains in lysine-limited chemostats (20 µM input lysine) at 6 hr doubling time (similar to Cooperation that is Synthetic and Mutually Obligatory [CoSMO] doubling time). Periodically, we quantified live and dead cell densities using flow cytometry (Figure 3—figure supplement 1), and hypoxanthine concentration in filtered supernatant using a yield-based bioassay (Hart et al., 2019a). The steady state hypoxanthine concentration created by the ancestor (WY1335) was lower than ecm21Δ (WY2226), and slightly higher than rsp5(P772L) (WY2475). DISOMY14 (WY2349) was indistinguishable from the ancestor, similar to our previous report (Hart et al., 2019b). (B) ecm21Δ has a higher hypoxanthine-lysine exchange ratio than the ancestor. Cells were cultured in lysine-limited chemostats that spanned the range of CoSMO environments. In all tested doubling times, the exchange ratios of ecm21Δ were significantly higher than those of the ancestor. The exchange ratios of rsp5(P772L) were similar to or lower than those of the ancestor. Mean and two standard deviations from four to five experiments are plotted. p-values are from two-tailed t-test assuming either unequal variance (4 hr doubling) or equal variance (6 and 8 hr doublings; verified by F-test). Data and p-value calculations can be found in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** We cultured ancestor and mutant strains in lysine-limited chemostats (20 µM input lysine) at 6 hr doubling time (similar to Cooperation that is Synthetic and Mutually Obligatory [CoSMO] doubling time). Periodically, we measured live and dead cell densities using flow cytometry (Hart et al., 2019a). After a lag, live and dead cell densities reached a steady state. Data can be found in Figure 3—source data 1.
 
 Compared to the ancestor, ecm21∆ but not DISOMY14 (Hart et al., 2019b) or rsp5(P772L) exhibited increased H-L exchange ratio. Specifically, at the same dilution rate (corresponding to 6 hr doubling), the steady state hypoxanthine concentration was the highest in ecm21∆, and lower in the ancestor, DISOMY14 (Hart et al., 2019b), and rsp5(P772L) (Figure 3A). Although exchange ratio depends on growth rate ( = dil), exchange ratios of ecm21∆ consistently outperformed those of the ancestor across doubling times typically found in CoSMO (Figure 3B). Thus, compared to the ancestor, ecm21∆ has a higher hypoxanthine release rate per lysine consumption. This can be interpreted as improved metabolic efficiency in the sense of turning a fixed amount of lysine into a higher hypoxanthine release rate.
 
@@ -65,15 +267,15 @@ To test whether ecm21∆ can promote partner growth rate, we quantified the stea
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57838/elife-57838-fig4-v2.jpg)
 
-**Figure 4.:** ecm21Δ increases the growth rate of community and of partner.To prevent rapid evolution, we grew CoSMO containing ancestral H and ancestral or -L+ecm21Δ L in a spatially structured environment on agarose pads, and periodically measured the absolute abundance of the two strains using flow cytometry (-H+Hart et al., 2019a). (A) Growth dynamics. After an initial lag, CoSMO achieved a steady state growth rate (slope of dotted line). (B) ecm21Δ increases the growth rate of CoSMO and of partner. Steady state growth rates of the entire community (left) and of partner H (right) were measured (n ≥ 6), and the average and two standard deviations are plotted. -L+p-values are from two-tailed t-test with equal variance (verified by F-test). The full data set and outcomes of statistical tests can be found in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** To prevent rapid evolution, we grew CoSMO containing ancestral H-L+ and ancestral or ecm21Δ L-H+ in a spatially structured environment on agarose pads, and periodically measured the absolute abundance of the two strains using flow cytometry (Hart et al., 2019a). (A) Growth dynamics. After an initial lag, CoSMO achieved a steady state growth rate (slope of dotted line). (B) ecm21Δ increases the growth rate of CoSMO and of partner. Steady state growth rates of the entire community (left) and of partner H-L+ (right) were measured (n ≥ 6), and the average and two standard deviations are plotted. p-values are from two-tailed t-test with equal variance (verified by F-test). The full data set and outcomes of statistical tests can be found in Figure 4—source data 1.
 
-The partner-serving phenotype of ecm21∆ can be explained by the increased hypoxanthine release rate per lysine consumption, rather than the evolution of any new metabolic interactions. Specifically, the growth rate of partner H-L+ (and of community) is approximately the geometric mean of the two strains’ exchange ratios, or rHcLrLcH  (Hart et al., 2019a; Hart et al., 2019b). Here, the ancestral partner’s exchange ratio (rLcH) is fixed, while the exchange ratio of L-H+ (rHcL) is ~1.6-fold increased in ecm21∆ compared to the ancestor (at doubling times of 6–8 hr; Figure 3B). Thus, ecm21∆ is predicted to increase partner growth rate by 1.6-1 = 26% (95% confidence interval: 12–38%; Figure 3—source data 1). In experiments, ecm21∆ increased partner growth rate by ~21% (Figure 4B; Figure 4—source data 1).
+The partner-serving phenotype of ecm21∆ can be explained by the increased hypoxanthine release rate per lysine consumption, rather than the evolution of any new metabolic interactions. Specifically, the growth rate of partner H-L+ (and of community) is approximately the geometric mean of the two strains’ exchange ratios, or $\sqrt{\frac{r_{H}}{c_{L}}\frac{r_{L}}{c_{H}}}$ (Hart et al., 2019a; Hart et al., 2019b). Here, the ancestral partner’s exchange ratio ($\frac{r_{L}}{c_{H}}$) is fixed, while the exchange ratio of L-H+ ($\frac{r_{H}}{c_{L}}$) is ~1.6-fold increased in ecm21∆ compared to the ancestor (at doubling times of 6–8 hr; Figure 3B). Thus, ecm21∆ is predicted to increase partner growth rate by $\sqrt{1.6}-1$ = 26% (95% confidence interval: 12–38%; Figure 3—source data 1). In experiments, ecm21∆ increased partner growth rate by ~21% (Figure 4B; Figure 4—source data 1).
 
 In conclusion, when L-H+ evolved in nascent mutualistic communities and in chemostat monocultures in a well-mixed environment, win-win ecm21 mutations repeatedly arose (Table 1). Thus, pleiotropic win-win mutations can emerge in the absence of any prior history of cooperation, and in environments unfavorable for cooperation.
 
 ## Discussion
 
-## The evolution of win-win mutations
+### The evolution of win-win mutations
 
 Here, we have demonstrated that pleiotropic win-win mutations can rapidly arise. As expected, all evolved L-H+ clones displayed self-serving phenotypes, achieving a higher growth rate than the ancestor in low lysine presumably by stabilizing the lysine permease Lyp1 on cell membrane (Figure 2; Hart et al., 2019b). Surprisingly, ecm21 mutants also displayed partner-serving phenotypes, promoting the steady state growth rate of partner H-L+ and of community (Figure 4) via increasing the hypoxanthine release rate per lysine consumption (Figure 3).
 
@@ -83,7 +285,7 @@ How might ecm21 mutants achieve higher hypoxanthine release rate per lysine cons
 
 The win-win effect of ecm21 is with respect to the ancestor. ecm21 may disappear from a population due to competition with fitter mutants. If ecm21 is fixed in L-H+, then a new state of faster community growth (Figure 4B) will be established. An interesting future direction would be to investigate whether during long-term evolution of CoSMO, other win-win mutations can occur in the ecm21 background or in backgrounds that can outcompete ecm21, or in the partner strain.
 
-## How might nascent cooperation be stabilized?
+### How might nascent cooperation be stabilized?
 
 A spatially structured environment is known to facilitate the origin and maintenance of cooperation (Sachs et al., 2004; Chao and Levin, 1981; Momeni et al., 2013a; Harcombe, 2010; Nowak, 2006; Pande et al., 2016; Harcombe et al., 2018). Here, we discuss three additional mechanisms that can stabilize nascent cooperation without partner choice capability, even when the environment is well mixed.
 
@@ -93,7 +295,7 @@ Second, nascent cooperation can be stabilized by self-benefiting changes that, t
 
 Third, nascent cooperation can be stabilized by pleiotropic win-win mutations which directly promote self-fitness (by increasing competitiveness against non-mutants) and directly promote partner fitness (by increasing benefit supply rate per intake benefit). In this study, win-win mutations in ecm21 rapidly evolved in a well-mixed environment, even in the absence of cooperative partner or any evolutionary history of cooperation.
 
-## Pleiotropy and cooperation
+### Pleiotropy and cooperation
 
 Pleiotropic linkage between a self-serving trait and a partner-serving trait arises when both traits are controlled by the same gene (co-regulated) (Dos Santos et al., 2018). For example, the quorum sensing network of Pseudomonas aeruginosa ties together a cell’s ability to make ‘public goods’ (such as extracellular proteases that provide a benefit to the local population) with the cell’s ability to make ‘private goods’ (such as intracellular enzymes involved in metabolism) (Dandekar et al., 2012). Consequently, LasR mutants that ‘cheat’ by not secreting protease also fail to metabolize adenosine for themselves (Dandekar et al., 2012).
 
@@ -103,13 +305,13 @@ In known examples of pleiotropic linkages between self-serving and partner-servi
 
 ## Materials and methods
 
-## Strains
+### Strains
 
 Our nomenclature of yeast genes, proteins, and mutations follows literature convention. For example, the wild-type ECM21 gene encodes the Ecm21 protein; ecm21 represents a reduction-of-function or loss-of-function mutation. Our S. cerevisiae strains are of the RM11-1a background. Both L-H+ (WY1335) and H-L+ (WY1340) are of the same mating type (MATa) and harbor the ste3Δ mutation to prevent mating between the two strains (Table 1—source data 1). All evolved or engineered strains used in this article are summarized in Table 1 and Supplementary file 1.
 
 Growth medium and strain culturing have been previously discussed (Hart et al., 2019b).
 
-## Experimental evolution
+### Experimental evolution
 
 CoSMO evolution has been described in detail in Hart et al., 2019b. Briefly, exponentially growing L-H+ (WY1335) and H-L+ (WY1340) were washed free of supplements, counted using a Coulter counter, and mixed at 1000:1 (Line A), 1:1 (Line B), or 1:1000 (Line C) at a total density of 5 × 105/ml. Three 3 ml community replicates (replicates 1, 2, and 3) per initial ratio were initiated, thus constituting nine independent lines. Since the evolutionary outcomes of the nine lines were similar, they could be treated as a single group. Communities were grown at 30°C in glass tubes on a rotator to ensure well mixing. Community turbidity was tracked by measuring the optical density (OD600) in a spectrophotometer once to twice every day. In this study, 1 OD was found to be 2–4×107 cells/ml. We diluted communities periodically to maintain OD at below 0.5 to avoid additional selections due to limitations of nutrients other than adenine or lysine. The fold-dilution was controlled to within 10- to 20-folds to minimize introducing severe population bottlenecks. Coculture generation was calculated from accumulative population density by multiplying OD with total fold-dilutions. Samples were periodically frozen down at −80°C. To isolate clones, a sample of frozen community was plated on rich medium YPD and clones from the two strains were distinguished by their fluorescence colors or drug resistance markers.
 
@@ -117,7 +319,7 @@ For chemostat evolution of L-H+, device fabrication and setup are described in d
 
 Whole-genome sequencing of evolved clones and data analysis were described in detail in Hart et al., 2019b.
 
-## Quantification methods
+### Quantification methods
 
 Microscopy quantification of L-H+ growth rates at various lysine concentrations was described in Hart et al., 2019a; Hart et al., 2019c. Briefly, cells were diluted into flat-bottom microtiter plates to low densities to minimize metabolite depletion during measurements. Microtiter plates were imaged periodically (every 0.5–2 hr) under a 10x objective in a temperature-controlled Nikon Eclipse TE-2000U inverted fluorescence microscope. Time-lapse images were analyzed using an ImageJ plugin Bioact (Hart et al., 2019c). We normalized total fluorescence intensity against that at time zero, calculated the slope of ln(normalized total fluorescence intensity) over three to four consecutive time points, and chose the maximal value as the growth rate corresponding to the input lysine concentration. For validation of this method, see Hart et al., 2019c.
 
@@ -129,10 +331,10 @@ Chemical concentration measurement was performed via a yield-based bioassay (Har
 
 Quantification of CoSMO growth rate was described in Hart et al., 2019a. Briefly, we used the ‘spot’ setting where a 15 µl drop of CoSMO community (1:1 strain ratio; ~4×104 total cells/patch) was placed in a 4 mm inoculum radius in the center of a 1/6 Petri-dish agarose sector. During periodic sampling, we cut out the agarose patch containing cells, submerged it in water, vortexed for a few seconds, and discarded agarose. We then subjected the cell suspension to flow cytometry.
 
-## Imaging of GFP localization
+### Imaging of GFP localization
 
 Cells were grown to exponential phase in SD plus 164 µM lysine. A sample was washed with and resuspended in SD. Cells were diluted into wells of a Nunc 96-well Optical Bottom Plate (Fisher Scientific, 165305) containing 300 µl SD supplemented with 164 µM or 1 µM lysine. Images were acquired under a 40× oil immersion objective in a Nikon Eclipse TE2000-U inverted fluorescence microscope equipped with a temperature-controlled chamber set at 300°C. GFP was imaged using an ET-EYFP filter cube (Exciter: ET500/20x, Emitter: ET535/30 m, Dichroic: T515LP). Identical exposure times (500 ms) were used for both evolved and ancestral cells.
 
-## Introducing mutations into the essential gene RSP5
+### Introducing mutations into the essential gene RSP5
 
 Since RSP5 is an essential gene, the method of deleting the gene with a drug resistance marker and then replacing the marker with a mutant gene cannot be applied. We therefore modified a two-step strategy (Toulmay and Schneiter, 2006) to introduce a point mutation found in an evolved clone into the ancestral L-H+ strain. First, a loxP-kanMX-loxP drug resistance cassette was introduced into ~300 bp after the stop codon of the mutant rsp5 to avoid accidentally disrupting the remaining function in rsp5. Second, a region spanning from ~250 bp upstream of the point mutation [C(2315)→T] to immediately after the loxP-kanMX-loxP drug resistance cassette was PCR-amplified. The PCR fragment was transformed into a wild-type strain lacking kanMX. G418-resistant colonies were selected and PCR-verified for correct integration (11 out of 11 correct). The homologous region during transformation is large, and thus recombination can occur in such a way that the transformant got the KanMX marker but not the mutation. We therefore Sanger-sequenced the region, found that 1 out of 11 had the correct mutation, and proceeded with that strain.

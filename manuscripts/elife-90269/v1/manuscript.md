@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03prydq77 Brain and Language Lab, Vienna Cognitive Science Hub, University of Vienna Vienna Austria
-2. https://ror.org/03prydq77 Department of Behavioral and Cognitive Biology, Faculty of Life Sciences, University of Vienna Vienna Austria
-3. https://ror.org/02r3e0967 Department of Diagnostic Imaging, St Jude Children's Research Hospital Memphis United States
-4. https://ror.org/01swzsf04 Brain and Language Lab, Department of Psychology, Faculty of Psychology and Educational Sciences, University of Geneva Geneva Switzerland
-5. https://ror.org/01swzsf04 Department of Basic Neuroscience, University of Geneva Geneva Switzerland
-6. https://ror.org/02crff812 Zurich Linguistics Centre, University of Zurich Zurich Switzerland
-7. https://ror.org/035xkbk20 Aix Marseille University, CNRS, CRPN Marseille France
-8. https://ror.org/02jx3x895 Experimental Psychology, University College London London United Kingdom
-9. https://ror.org/02704qw51 Wellcome Trust Centre for Neuroimaging, University College London London United Kingdom
+1. Brain and Language Lab, Vienna Cognitive Science Hub, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+2. Department of Behavioral and Cognitive Biology, Faculty of Life Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+3. Department of Diagnostic Imaging, St Jude Children's Research Hospital Memphis United States ([ROR:02r3e0967](https://ror.org/02r3e0967))
+4. Brain and Language Lab, Department of Psychology, Faculty of Psychology and Educational Sciences, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+5. Department of Basic Neuroscience, University of Geneva Geneva Switzerland ([ROR:01swzsf04](https://ror.org/01swzsf04))
+6. Zurich Linguistics Centre, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
+7. Aix Marseille University, CNRS, CRPN Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+8. Experimental Psychology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+9. Wellcome Trust Centre for Neuroimaging, University College London London United Kingdom ([ROR:02704qw51](https://ror.org/02704qw51))
 
 † Corresponding author
 
@@ -49,49 +49,163 @@ Our analyses aimed at a fine localization of the structural effects of multiling
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-## Main sample
+#### Main sample
 
 The full sample consisted of N=146 participants, with n=136 complete cases (Mage = 35.79, SD = 15.77; 85 females; 31 monolinguals) exposed to up to 7 languages (2.65 languages on average). Replication sample. The replication sample consisted of N = 69 participants, with n = 68 complete cases (Mage = 32.04, SD = 11.68; 38 females; 29 monolinguals) exposed to up to 5 languages (2.44 languages on average). In both cases data were excluded only if any of the dependent or independent variables were missing. Table 1 breaks down the samples according to how many languages were spoken by which number of participants; further information on participants’ language background (languages spoken by each participant) is included in Appendix 1—table 1. Study approval was obtained by the Joint Ethics Committee of the Institute of Neurology (University College London, London, UK) and National Hospital for Neurology and Neurosurgery (National Health Service Trust, London, UK) under protocol number 00N032 (Study Title: The Neural Basis of Language and Object Recognition).
 
-## Language experience
+**Table 1.**
+ Breakdown of participants by number of languages they spoke.
 
-To describe the diverse language background of our participants, we expressed AoA of different languages in a continuous quantitative measure. First, AoA of individual languages was log-transformed to minimize differences between values for languages learned later in life, and the values were inverted to express early AoAs as the highest values; a constant value of 1 was added to the index before log-transformation and after inverting the values, each time to avoid values equal to zero. Next, the AoAs of participants’ different languages were combined into one ‘language experience’ index per participant. It was computed using Shannon’s entropy equation (Shannon’s, 1948):H=−∑i=0npilog2⁡pi
+
+<table>
+  <thead>
+    <tr>
+      <th>Main sample</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of languages</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Number of participants</td>
+      <td>29</td>
+      <td>40</td>
+      <td>36</td>
+      <td>18</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Replication sample</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of languages</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Number of participants</td>
+      <td>30</td>
+      <td>4</td>
+      <td>16</td>
+      <td>14</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Language experience
+
+To describe the diverse language background of our participants, we expressed AoA of different languages in a continuous quantitative measure. First, AoA of individual languages was log-transformed to minimize differences between values for languages learned later in life, and the values were inverted to express early AoAs as the highest values; a constant value of 1 was added to the index before log-transformation and after inverting the values, each time to avoid values equal to zero. Next, the AoAs of participants’ different languages were combined into one ‘language experience’ index per participant. It was computed using Shannon’s entropy equation (Shannon’s, 1948):
+
+$$
+H=−\sumi=0np_{i}log_{2}⁡p_{i}
+$$
 
 where, n stands for the total number of languages a participant has been exposed to and pi is the AoA index calculated as above. High entropy values indicated more diverse language experience.
 
-## Typological distance measures
+### Typological distance measures
 
 Across the two samples, the participants spoke a total of N = 36 different languages (n = 34 in the main sample, and n = 20 in the replication sample): Arabic, Bengali, Cantonese, Creole (Antiguan), Czech, Danish, Dutch, English, Farsi, Finnish, French, German, Greek, Gujarati, Hakka, Hebrew, Hindi, Hokkien, Hungarian, Irish, Italian, Japanese, Korean, Luxembourgish, Malay, Mandarin, Portuguese, Punjabi, Russian, Sindhi, Spanish, Swahili, Swedish, Swiss German, Urdu, and Vietnamese. The PHOIBLE database (Moran and McCloy, 2019) and open-source software (Dediu and Moisik, 2016) were used to construct three measures of typological distance between the languages: distances between the distinctive phonological features describing the phonemes of each phonological inventory, distances between the sets of phonemes of the phonological inventories, and similarity in counts of phonological classes that share certain features, as detailed below. Appendix 1—figure 2 provides a visual representation of the three distance matrices between all the languages. The three distance measures were all related to each other, as evidenced by low to moderate positive correlations between them, see Table 2. Appendix 1—figure 3 shows the distribution of values for each of the distance measures.
 
-## Acoustic and articulatory features
+**Table 2.**
+ Pearson correlations between the three phonological distance measures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Features distances</th>
+      <th>Phoneme distances</th>
+      <th>Phonological classes distances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Features distances</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phoneme distances</td>
+      <td>0.42</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Phonological classes distances</td>
+      <td>0.24</td>
+      <td>0.51</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Acoustic and articulatory features
 
 For each documented phonological inventory, PHOIBLE includes their phonemes (see section ‘Phonemes’ below) and the lower-level distinctive acoustic and articulatory features describing the phonemes. These features offer a qualitative description of differences between discrete sound categories, and are based on articulatory phonology (Hayes, 2011). Every phoneme in every language is described by the following 37 binary features: tone, stress, syllabic, short, long, consonantal, sonorant, continuant, delayed release, approximant, tap, trill, nasal, lateral, labial, round, labiodental, coronal, anterior, distributed, strident, dorsal, high, low, front, back, tense, retracted tongue root, advanced tongue root, periodic glottal source, epilaryngeal source, spread glottis, constricted glottis, fortis, raised larynx ejective, lowered larynx implosive, click. Individual languages were described in terms of presence or absence of these features across all phonemes belonging to the given phonological inventory, and represented as vectors. For a given pair of language feature vectors, a pairwise distance was computed as cosine distance using the scipy.spatial.distance function in Python.
 
-## Phonemes
+#### Phonemes
 
-Phonemes are individual speech sounds such as vowels and consonants, representing the smallest units of sound that can change the meaning of a word when substituted. Lists of phonemes belonging to each of the languages represented in the database were exported from PHOIBLE (Moran and McCloy, 2019) and represented as strings. For a given pair of languages A and B, a pairwise string distance between phonemes of both languages was computed with the Jaccard distance method:1−J(A,B)=|A∩B||A∪B|
+Phonemes are individual speech sounds such as vowels and consonants, representing the smallest units of sound that can change the meaning of a word when substituted. Lists of phonemes belonging to each of the languages represented in the database were exported from PHOIBLE (Moran and McCloy, 2019) and represented as strings. For a given pair of languages A and B, a pairwise string distance between phonemes of both languages was computed with the Jaccard distance method:
+
+$$
+1−J(A,B)=\frac{|A∩B|}{|A∪B|}
+$$
 
 representing the inverse of the ratio between the size of the intersection and the size of the union of the two sets of phonemes, and varying between 0 (both languages having exactly the same phonemes) and 1 (no phonemes in common).
 
 In addition, using the language-specific phoneme-level information, we constructed a cross-linguistic description of individual languages and used it to compute a measure of cumulative phoneme inventory for each participant. We counted how many unique phonemes each participant was exposed to across all their languages (i.e. phonemes that overlapped between languages were counted only once). For example, the cumulative phoneme inventory of a participant who was exposed only to English was equal to 40, while an English-French bilingual’s cumulative phoneme inventory would be equal to 64 (both English and French have 40 unique phonemes [Stanford Phonology Archive, 2019a; Stanford Phonology Archive, 2019b], with 16 phonemes overlapping across the two inventories).
 
-## Counts of phonological classes
+#### Counts of phonological classes
 
 Both the lists of phonemes and phonological features describing them can be used to derive a more abstract, higher-level description of individual languages in terms of which and how many phonological classes their phonological inventories contain. Using the PHOIBLE inventories and feature system, Dediu and Moisik, 2016, proposed a comprehensive list of 167 phonological classes, along with a method for selecting a language’s phonemes belonging to given classes and computing their counts. The system describes how many ‘segments’, ‘consonants’, ‘vowels’, ‘diphthongs’, etc. a given language has, and counts segments belonging to classes that share certain features (e.g. ‘bilabial consonants’, ‘front vowels’, ‘clicks’, see Appendix 1 –[Phonological classes as defined by Dediu and Moisik, 2016 for the full list]). Per language, we created a vector representing the counts of all 167 phonological classes, and computed pairwise distances between the languages spoken by the participants in our database with cosine distance (as above).
 
-## Combining typology and language experience (indexed by AoA)
+### Combining typology and language experience (indexed by AoA)
 
 Quantifying diverse language experience with Shannon’s entropy equation does not account for similarities and differences between the languages. Therefore, using Rao’s quadratic entropy equation (QE) (Bello et al., 2007; Pavoine and Bonsall, 2011; Rao, 1982), the language experience index was combined with each of the above typological distance measures, separately, to generate weighted measures accounting for the three different types of cross-linguistic phonological distances. The summed phonological distances (feature-level, phoneme-level, or based on counts of phonological classes) between all language pairs were weighted by the log-transformed and inverted AoA index for each language, as follows:
 
 For a similar methodology, but applied to lexical distance measures, see Kepinska et al., 2023. In sum, apart from the language experience index not accounting for typological features (‘Language experience – no typology’), three measures combining typology and language experience were constructed: (1) ‘Language experience – features’, (2) ‘Language experience – phonemes’, and (3) ‘Language experience – phonological classes’.
 
-## Neuroimaging data acquisition and processing
+### Neuroimaging data acquisition and processing
 
 For all participants, structural MRIs with 176 sagittal slices were acquired using a T1-weighted three-dimensional (3D) Modified Driven Equilibrium Fourier Transform (MDEFT) sequence. The resulting images had a matrix size of 256×224, yielding a final resolution (voxel size) of 1×1×1 mm3. Repetition time (TR)/echo time (TE)/inversion time (TI) was: [12.24/3.56/530 ms] for the main sample (from a 1.5 T Siemens Sonata scanner), and 7.92/2.48/910 ms for the replication sample (from a 3 T Siemens Trio scanner). The T1 images were denoised using the spatially adaptive non-local means filter (SANLM; Manjón et al., 2010) in MATLAB within the CAT12 toolbox. The images were then processed with FreeSurfer’s (version 7.2) brain structural pipeline (Fischl et al., 2004), which consists of motion correction, intensity normalization, skull stripping, and reconstruction of the volume’s voxels into white and pial surfaces.
 
-## Parcellation of the auditory regions
+### Parcellation of the auditory regions
 
 The reconstructed surfaces were parcellated into regions using an atlas-based procedure (Destrieux et al., 2010). The auditory regions were delineated using the following labels from the Destrieux atlas: planum polare of the superior temporal gyrus (G_temp_sup-Plan_polar; PP), anterior transverse temporal gyrus (of Heschl) (G_temp_sup-G_T_transv; referring to HG, or to the anterior-most TTG), transverse temporal sulcus (S_temporal_transverse; HS), planum temporale, or temporal plane of the superior temporal gyrus (G_temp_sup-Plan_tempo; PT), superior temporal sulcus (parallel sulcus) (S_temporal_sup; STS), and lateral aspect of the superior temporal gyrus (G_temp_sup-Lateral; STG). The STG and the STS labels were further divided into smaller regions using FreeSurfer’s freeview software and FreeSurfer command line tools. For this, on the inflated surface of the fsaverage template, we first drew additional ROIs, dividing the STG into anterior and posterior parts, with the transverse temporal sulcus as the dividing landmark (Hamilton et al., 2021). We further divided the STS into anterior, middle, and posterior parts. The anterior versus mid-STS were divided by again aligning the boundary with the posterior border of the anterior TTG, and the mid- versus posterior STS were divided by aligning the boundary with the posterior border of STG. Appendix 1—figure 4 shows an example of the parcellation in the native space of one of the participants. Next, we transformed the new ROIs into the participants native space (using mri_surf2surf), and intersected them with individual subjects’ unaltered STG and STS labels. Cortical volume, surface area, and average thickness were computed and extracted from the final labels (with mris_anatomical_stats), and were used in the linear mixed models reported in section ‘Auditory cortex and language experience’.
 
@@ -101,15 +215,202 @@ For analysis on the TTG along the superior temporal plane (i.e. on the superior 
 
 Table 3 provides an overview of the performed analyses and of results.
 
-## Auditory cortex and language experience
+**Table 3.**
+ Overview of the performed analyses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Regions(s)</th>
+      <th>Measures(s)</th>
+      <th>Motivation</th>
+      <th>Results</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Language experience and auditory regions (section ‘Auditory cortex and language experience’)</td>
+      <td>Auditory regions segmented by FreeSurfer (anterior STG, posterior STG, anterior STS, posterior STS, HG, HS, PT, and PP)</td>
+      <td>Cortical volume, surface area, and thickness</td>
+      <td>Exploratory first step</td>
+      <td>Relationship between the average thickness of the PT (bilaterally) and language experience (p=0.01)</td>
+    </tr>
+    <tr>
+      <td>Language experience and TTG (section ‘Superior temporal plane and language experience’)</td>
+      <td>Transverse temporal gyri segmented by TASH</td>
+      <td>Cortical volume, surface area, and thickness and number of gyri</td>
+      <td>To elucidate above exploratory results</td>
+      <td>Relationship between the average thickness of the second TTG (bilaterally) and language experience (p=0.01)</td>
+    </tr>
+    <tr>
+      <td>Vertex-wise analysis (section ‘Superior temporal plane and language experience’)</td>
+      <td>Whole-brain</td>
+      <td>Cortical thickness</td>
+      <td>To confirm above exploratory results</td>
+      <td>Cluster of vertices negatively related to participants’ language experience at p&lt;0.0001 (uncorrected), located in the superior aspect of the left STG, corresponding to the location of the second TTG</td>
+    </tr>
+    <tr>
+      <td>Effects of language proficiency (section ‘Superior temporal plane and language experience’)</td>
+      <td>Second TTG</td>
+      <td>Cortical thickness</td>
+      <td>To confirm the results obtained from AoA-based language experience index</td>
+      <td>Relationship between the average thickness of the second TTG (bilaterally) is confirmed using a different metric to calculate language experience (p=0.018 for left, and p=0.065 for right hemisphere)</td>
+    </tr>
+    <tr>
+      <td>Language typology and second TTG (section ‘Second transverse temporal gyrus and effects of language typology’)</td>
+      <td>Second TTG</td>
+      <td>Cortical thickness</td>
+      <td>To assess the effect of language typology within the identified region</td>
+      <td>Quantifying the distance between languages based on phoneme-level information explains the most variance in the average thickness of the bilateral second TTG</td>
+    </tr>
+    <tr>
+      <td>Language experience expressed as 'cumulative phoneme inventory' (section ‘Second transverse temporal gyrus and effects of language typology’)</td>
+      <td>Second TTG</td>
+      <td>Cortical thickness</td>
+      <td>To account for language experience in participants with different L1s</td>
+      <td>Relationship between the thickness of the left second TTG and the specific characteristics of languages at the phoneme-level of their phonological inventories (p=0.004)</td>
+    </tr>
+    <tr>
+      <td>Language experience in participants with a single TTG (section ‘Language experience in participants with a single TTG’)</td>
+      <td>Right HG (first TTG) and right PT</td>
+      <td>Cortical thickness</td>
+      <td>To assess the effect of language experience in participants without multiple TTGs</td>
+      <td>Positive relationship between the thickness of right HG and language experience (p=0.007); no relationship between the thickness of right PT and language experience (p=0.81)</td>
+    </tr>
+    <tr>
+      <td>Replication analysis (section ‘Replication analysis’)</td>
+      <td>Second TTG</td>
+      <td>Cortical thickness</td>
+      <td>To replicate the main result (analysis ‘Language experience and TTG’ and ’Language typology and second TTG’) in an independent sample</td>
+      <td>Relationship between the average thickness of the second TTG and language experience partially replicated (for left hemisphere, p=0.047)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Auditory cortex and language experience
 
 In a first, exploratory analysis, we investigated relationships between the composite language experience measure (‘Language experience – no typology’) and the volume, surface area, and average thickness of the following auditory subregions: STG, STS, HG, HS, PT, and PP, as parcellated by FreeSurfer (Destrieux et al., 2010). Given the large size of STG and STS, we refined their segmentations by dividing the STG into anterior and posterior part, and the STS into anterior, middle, and posterior parts (see Materials and methods, section ‘Parcellation of the auditory regions’ for details). Using the lme4 R package (Bates et al., 2015), we fit three linear mixed models to the extracted anatomical measures (volume, surface area, average thickness), with participants modeled as random effects, language experience, region of interest (ROI), and hemisphere as fixed effects, controlling for the covariates of age, sex and whole-brain volume, area, or mean thickness. Interaction terms for language experience, ROI, and hemisphere were included in the models to determine whether language experience would differentially affect any of the segmented regions. Significance was calculated using the lmerTest package (Kuznetsova et al., 2017), which applies Satterthwaite’s method to estimate degrees of freedom and generate p-values for mixed models. Out of all investigated cortical measures, only average thickness of the PT, bilaterally, was related to participants’ language experience at p=0.01, see Table 2. Specifically, participants with more extensive and diverse language experience had a significantly thinner PT.
 
-## Superior temporal plane and language experience
+### Superior temporal plane and language experience
 
 Given that full TTG duplications, triplications, etc. by definition belong to the PT, and that previous work has shown relationships between TTG duplications patterns and language aptitude (Turker et al., 2017), we wanted to better pinpoint the location of the above effects within PT subregions. To this end, and to gain more detailed insight into the localization of the relationship between the thickness of the PT and participants’ language experience, we ran three follow-up analyses, an ROI-based one, a vertex-wise based one, as well as an analysis investigating the effect of language proficiency.
 
 First, we used an automatic toolbox (TASH; Dalboni da Rocha et al., 2020) to segment gyri along the superior temporal plane (HG, or first TTG, and additional TTG(s), when present), and to extract their cortical thickness, surface area, and volume. Note that FreeSurfer does not segment additional TTGs specifically, but provides measures for the PT as a whole. We included HG in these follow-up analyses (i.e. even though we had included the FreeSurfer HG ROI in the above, broader analyses), given that the default FreeSurfer pipeline is not fine-tuned for the segmentation of this small and variable region, and is thus error-prone for this ROI (Dalboni da Rocha et al., 2020). As expected from previous work, the TTG showed large individual variability in overall duplication patterns in the sample. Segmentations revealed different numbers of gyri across hemispheres and participants, ranging from a single gyrus to four identified TTGs, see Table 4. On average, participants had 2.375 gyri in the left hemisphere (SD = 0.63), and 1.84 in the right (SD = 0.64). The number of gyri was not related to participants’ language experience, either in the left (β = 0.10, t = 0.97, p=0.335), or in the right hemisphere (β = – 0.01, t = – 0.13, p=0.90), according to a linear model with number of gyri as dependent and language experience as independent variables (controlling for participants’ age and sex).
+
+**Table 4.**
+ Number of participants, their demographic and language experience characteristics displaying different overall shapes of the transverse temporal gyrus (TTG) (i.e. total number of identified gyri in the left and right hemisphere).Last column lists whole sample’s descriptive statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Left</th>
+      <th colspan="4">Right</th>
+      <th>Whole sample:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number of gyri:</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>6</td>
+      <td>78</td>
+      <td>47</td>
+      <td>5</td>
+      <td>40</td>
+      <td>78</td>
+      <td>18</td>
+      <td>0</td>
+      <td>136</td>
+    </tr>
+    <tr>
+      <td>Male/female</td>
+      <td>0/6</td>
+      <td>28/50</td>
+      <td>23/24</td>
+      <td>3/2</td>
+      <td>10/30</td>
+      <td>33/45</td>
+      <td>11/7</td>
+      <td>–</td>
+      <td>54/82</td>
+    </tr>
+    <tr>
+      <td>Proportion male/proportion female</td>
+      <td>0/0.07</td>
+      <td>0.61/0.51</td>
+      <td>0.29/0.42</td>
+      <td>0.05/0.02</td>
+      <td>0.18/0.37</td>
+      <td>0.61/0.55</td>
+      <td>0.20/0.09</td>
+      <td>–</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (mean)</td>
+      <td>42.95</td>
+      <td>35.95</td>
+      <td>36.29</td>
+      <td>28.48</td>
+      <td>35.12</td>
+      <td>36.49</td>
+      <td>36.63</td>
+      <td>–</td>
+      <td>36.11</td>
+    </tr>
+    <tr>
+      <td>Language experience – no typology (mean)</td>
+      <td>0.69</td>
+      <td>0.79</td>
+      <td>0.83</td>
+      <td>0.93</td>
+      <td>0.85</td>
+      <td>0.80</td>
+      <td>0.76</td>
+      <td>–</td>
+      <td>0.807</td>
+    </tr>
+    <tr>
+      <td>Language experience – no typology (min)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>–</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <td>Language experience – no typology (max)</td>
+      <td>1.09</td>
+      <td>1.89</td>
+      <td>1.76</td>
+      <td>1.56</td>
+      <td>1.76</td>
+      <td>1.89</td>
+      <td>1.34</td>
+      <td>–</td>
+      <td>1.893</td>
+    </tr>
+  </tbody>
+</table>
 
 To localize the effect of language experience on the cortical thickness of the segmented gyri, we fit another linear mixed model with participants modeled as random effects, language experience (‘Language experience – no typology’), gyrus (first, second, third), and hemisphere as fixed effects, controlling for the covariates of age, sex, and mean thickness (including interaction terms for language experience, gyrus, and hemisphere). We also ran two additional models on the volume and surface area values of the segmented regions, to confirm that the results were specific to the average thickness values, as in the model above (including all auditory regions, see section ‘Auditory cortex and language experience’). Out of all investigated cortical measures, only average thickness of the second TTG (bilaterally) was related to participants’ language experience at p<0.01, see Appendix 1—table 3.
 
@@ -117,11 +418,284 @@ Second, to confirm the above result, we also ran a whole-brain vertex-wise analy
 
 We also explored whether the proficiency attained in the spoken languages was related to the thickness of the second TTG. Analyses calculating cumulative language experience based on the participants’ proficiency instead of AoA yielded similar results as above, with a significant negative relationship between the proficiency-based cumulative language experience index and the thickness of the left second TTG, and a trend toward significance for the right second TTG (see Appendix 1 – (Effects of language proficiency)).
 
-## Second TTG and effects of language typology
+### Second TTG and effects of language typology
 
-Building on the above result, we investigated whether the thickness of participants’ second TTG was related to cross-linguistic phonological information describing the languages they spoke, above and beyond being related to mere experience of speaking several languages. The analysis below was therefore performed on a sub-sample of participants who had multiple TTGs (n =130 in the left and n = 96 in the right hemisphere). We constructed three indices of language experience accounting for different typological relations between languages (see Kepinska et al., 2023, for a similar approach applied to lexical distances): (1) ‘Language experience – features’, (2) ‘Language experience – phonemes’, and (3) ‘Language experience – phonological classes’. We used these indices as dependent variables in a set of multiple regression analyses fit to the average thickness values of the left and right second TTG, and performed a model comparison procedure to gauge which of the typological measure was most related to the thickness of the second TTG. Model comparison was performed by computing differences in explained variance (ΔR2 Adjusted) compared to the baseline model (i.e. with language experience without typological information), and using the Bayesian information criterion (BIC) (Schwarz, 1978), where the difference between two BICs was converted into a Bayes factor using the below equation, following Wagenmakers, 2007:BF10=expΔBIC012
+Building on the above result, we investigated whether the thickness of participants’ second TTG was related to cross-linguistic phonological information describing the languages they spoke, above and beyond being related to mere experience of speaking several languages. The analysis below was therefore performed on a sub-sample of participants who had multiple TTGs (n =130 in the left and n = 96 in the right hemisphere). We constructed three indices of language experience accounting for different typological relations between languages (see Kepinska et al., 2023, for a similar approach applied to lexical distances): (1) ‘Language experience – features’, (2) ‘Language experience – phonemes’, and (3) ‘Language experience – phonological classes’. We used these indices as dependent variables in a set of multiple regression analyses fit to the average thickness values of the left and right second TTG, and performed a model comparison procedure to gauge which of the typological measure was most related to the thickness of the second TTG. Model comparison was performed by computing differences in explained variance (ΔR2 Adjusted) compared to the baseline model (i.e. with language experience without typological information), and using the Bayesian information criterion (BIC) (Schwarz, 1978), where the difference between two BICs was converted into a Bayes factor using the below equation, following Wagenmakers, 2007:
+
+$$
+BF_{10}=exp\frac{ΔBIC_{01}}{2}
+$$
 
 The model without typological information (‘Language experience – no typology’) served as baseline for the comparisons. The analyses showed that out of the three language experience indices – (1) ‘Language experience – features’, (2) ‘Language experience – phonemes’, and (3) ‘Language experience – phonological classes’ – the model containing phoneme level information explained the most variance in the average thickness of the bilateral second TTG. It also outperformed the model containing the language experience index not accounting for any typological information (‘Language experience – no typology’), see Table 5. None of the other phonological distance measures combined with language experience performed better than language experience alone. The direction of the relationship between language experience weighted by typological distance was negative, and had a small effect size (β = – 0.35, t = – 2.96, p=0.004, f2 = 0.07 and β = – 0.26, t = – 1.98, p=0.05, f2 = 0.04 for left and right hemisphere, respectively), showing that the more extensive one’s language experience, and the more varied at the phoneme level one’s languages are, the thinner the second TTG cortex (see Figure 2). The statistics for the overall regression models are presented in Appendix 1 – (Second TTG and effects of language typology).
+
+**Table 5.**
+ Left and right second transverse temporal gyri (TTGs) and language experience.Multiple regression model parameters (parameter estimates and standard errors, in brackets; p-values are listed according to the coding presented underneath the table) for the average cortical thickness values of the second TTG, as predicted by the four language experience indices: (1) the cumulative language experience measure not accounting for typology, and cumulative language experience weighted by overlaps between languages at the level of (2) acoustic/articulatory features, (3) phonemes, and (4) counts of phonological classes. Last two rows present model comparison results (additional variance explained and BF10 values). NB. All models including typological information were compared against the ‘No typology’ model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="4">Left</th>
+      <th colspan="4">Right</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Language experiencemodels:</td>
+      <td>No typology</td>
+      <td>Features</td>
+      <td>Phonemes</td>
+      <td>Phonological classes</td>
+      <td>No typology</td>
+      <td>Features</td>
+      <td>Phonemes</td>
+      <td>Phonological classes</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>β</td>
+      <td>0.00</td>
+      <td>–0.01</td>
+      <td>0.00</td>
+      <td>–0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.03)</td>
+      <td>(0.03)</td>
+      <td>(0.03)</td>
+      <td>(0.03)</td>
+      <td>(0.03)</td>
+      <td>(0.04)</td>
+      <td>(0.03)</td>
+      <td>(0.03)</td>
+    </tr>
+    <tr>
+      <td>Language experience</td>
+      <td>β</td>
+      <td>–0.12**</td>
+      <td>–0.33</td>
+      <td>–0.35**</td>
+      <td>–0.60*</td>
+      <td>–0.10+</td>
+      <td>–0.25</td>
+      <td>–0.26+</td>
+      <td>–0.44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.05)</td>
+      <td>(0.23)</td>
+      <td>(0.12)</td>
+      <td>(0.29)</td>
+      <td>(0.05)</td>
+      <td>(0.27)</td>
+      <td>(0.13)</td>
+      <td>(0.33)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>β</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+    </tr>
+    <tr>
+      <td>Mean thickness (left/right)</td>
+      <td>β</td>
+      <td>1.40***</td>
+      <td>1.41***</td>
+      <td>1.37***</td>
+      <td>1.41***</td>
+      <td>0.94*</td>
+      <td>0.99*</td>
+      <td>0.92*</td>
+      <td>0.99**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.30)</td>
+      <td>(0.31)</td>
+      <td>(0.30)</td>
+      <td>(0.30)</td>
+      <td>(0.37)</td>
+      <td>(0.38)</td>
+      <td>(0.37)</td>
+      <td>(0.37)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>β</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>–0.01</td>
+      <td>–0.01</td>
+      <td>–0.01</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+      <td>(0.05)</td>
+    </tr>
+    <tr>
+      <td>Num.Obs.</td>
+      <td></td>
+      <td>130</td>
+      <td>130</td>
+      <td>130</td>
+      <td>130</td>
+      <td>96</td>
+      <td>96</td>
+      <td>96</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td></td>
+      <td>0.20</td>
+      <td>0.17</td>
+      <td>0.21</td>
+      <td>0.18</td>
+      <td>0.16</td>
+      <td>0.13</td>
+      <td>0.16</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>R2 Adj.</td>
+      <td></td>
+      <td>0.17</td>
+      <td>0.14</td>
+      <td>0.18</td>
+      <td>0.16</td>
+      <td>0.12</td>
+      <td>0.09</td>
+      <td>0.12</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>AIC</td>
+      <td></td>
+      <td>18.5</td>
+      <td>23.5</td>
+      <td>16.9</td>
+      <td>21.2</td>
+      <td>11.9</td>
+      <td>14.9</td>
+      <td>11.8</td>
+      <td>14.0</td>
+    </tr>
+    <tr>
+      <td>BIC</td>
+      <td></td>
+      <td>35.7</td>
+      <td>40.7</td>
+      <td>34.1</td>
+      <td>38.4</td>
+      <td>27.3</td>
+      <td>30.3</td>
+      <td>27.2</td>
+      <td>29.4</td>
+    </tr>
+    <tr>
+      <td>Log.Lik.</td>
+      <td></td>
+      <td>–3.23</td>
+      <td>–5.75</td>
+      <td>–2.43</td>
+      <td>–4.62</td>
+      <td>0.04</td>
+      <td>–1.47</td>
+      <td>0.10</td>
+      <td>–0.99</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td></td>
+      <td>7.80</td>
+      <td>6.32</td>
+      <td>8.29</td>
+      <td>6.98</td>
+      <td>4.30</td>
+      <td>3.46</td>
+      <td>4.33</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>RMSE</td>
+      <td></td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.24</td>
+      <td>0.25</td>
+      <td>0.24</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>ΔR2 Adjusted</td>
+      <td></td>
+      <td>–</td>
+      <td>–0.03</td>
+      <td>0.01</td>
+      <td>–0.02</td>
+      <td>–</td>
+      <td>–0.03</td>
+      <td>0.00</td>
+      <td>–0.02</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td></td>
+      <td>–</td>
+      <td>0.08</td>
+      <td>2.23</td>
+      <td>0.25</td>
+      <td>–</td>
+      <td>0.22</td>
+      <td>1.08</td>
+      <td>0.36</td>
+    </tr>
+  </tbody>
+</table>
+
+_.p<0.1, +p = 0.05, *p<0.05, **p<0.01, ***p<0.001._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90269/elife-90269-fig2-v1.jpg)
 
@@ -131,21 +705,314 @@ To further establish that our results reflected the relationship between TTG str
 
 To further probe how cross-linguistic sound inventories may modulate the effect of language experience on the brain, and to account for language experience in participants with different mother tongues (L1s), we constructed a cross-linguistic description of individual languages (see Materials and methods, section ‘Phonemes’) and used it to calculate a measure of cumulative phoneme inventory for each participant. Here, we counted how many unique phonemes each participant was exposed to across all their languages (i.e. phonemes that overlapped between languages were counted only once), irrespective of when these languages were acquired. We used this measure as an independent variable in another linear model fit to the average thickness values of the second TTG (controlling for age, sex, hemispheric thickness, and accounting for language experience irrespective of language typology) (see section ‘Phonemes’, Appendix 1– (Cumulative phoneme inventory and the second TTG) and Appendix 1—table 4). In the left hemisphere, this measure explained variance in the thickness of the second TTG above and beyond language experience (β = – 0.004, t = – 2.910, p=0.004), with a small effect size (f2 = 0.06). In the right hemisphere, the thickness of the second TTG was not significantly related to the ‘cumulative phoneme inventory’ measure (p=0.76), when also accounting for overall language experience irrespective of typology. This result shows that the thickness of the left second TTG in these participants was related to the specific characteristics of languages at the phoneme level of their phonological inventories, irrespective of when these languages were acquired, while the thickness of the right second TTG was relatively more related to when and how many languages were learned (even though the typological distance information did improve the model fit, see Table 5), see Appendix 1—figure 6 and Appendix 1—table 4, and Appendix 1 – (Second TTG and effects of language typology).
 
-## Language experience in participants with a single TTG
+### Language experience in participants with a single TTG
 
 So far, we revealed associations between phonological language experience and the cortical thickness of the second TTG bilaterally in multilinguals. Yet, 40 participants out of 136 (29.4%) had a single TTG (HG) in the right hemisphere (versus only 6 participants, i.e., 4.4% in the left; see Table 4). We therefore repeated the above analysis in the 40 participants with a single TTG in the right hemisphere in order to investigate the relationship between TTG anatomy and language experience in this sample. The analysis revealed that in participants without posterior TTGs in the right hemisphere, the thickness of the first TTG was indeed related to their language experience. The nature of this relation proved however to be different than that for multilingual participants with multiple TTGs. First, the language experience index accounting for most variance in the thickness of the first TTG was the index not accounting for typological relations between multilinguals’ languages (‘Language experience – no typology’), see Appendix 1—table 5. Second, the direction of this effect was inverse to that found for participants with multiple TTGs: the more extensive one’s language experience, the thicker the HG (β=0.15, t=2.89, p=0.007; medium effect size: f2=0.237), see Figure 3. Of note, we did not find any significant relationship between the thickness of the PT and language experience in this sub-group of participants (β=0.02, t=2.43, p=0.81). In addition, for PT thickness, compared to a model including only covariates of no-interest, the model including the language experience index offered moderate evidence against it (BF10 = 0.16), suggesting that the observed effects between cortical thickness and language experience in the superior temporal plane are specific to gyri only, see Appendix 1—table 5 and Appendix 1 – (Language experience in participants with a single TTG).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90269/elife-90269-fig3-v1.jpg)
 
-**Figure 3.:** n = 40).Average thickness of Heschl’s gyrus (HG) in the right hemisphere was positively related to the amount of multilingual experience, irrespective of typological relations between languages (β = 0.15, t = 2.89, p=0.007) (left panel). The average thickness of the right PT was not related to language experience (β = 0.02, t = 2.43, p=0.81) (right panel). Plots show residuals, controlling for age, sex, and mean hemispheric thickness.
+**Figure 3.:** Average thickness of Heschl’s gyrus (HG) in the right hemisphere was positively related to the amount of multilingual experience, irrespective of typological relations between languages (β = 0.15, t = 2.89, p=0.007) (left panel). The average thickness of the right PT was not related to language experience (β = 0.02, t = 2.43, p=0.81) (right panel). Plots show residuals, controlling for age, sex, and mean hemispheric thickness.
 
-## Replication analysis
+### Replication analysis
 
 In an effort to strengthen the inferences that can be made from the above results, we tested whether the relationship between multilingual language experience and thickness of the second TTG could be replicated in an independent sample of 68 participants. Note that too few participants presented single gyri in the left (n = 7) and the right hemisphere (n = 14), therefore the replication analysis focused on the second TTG results only. Using linear regression, we fit models to the average thickness values of participants’ left and right second TTG. As in the analyses on the original sample, we first fit a model using the language experience index irrespective of typology (‘Language experience – no typology’), and then we fit models that additionally accounted for the three types of typological relations between languages (features, phonemes, and counts of phonological classes), controlling for covariates of age, sex, scanner model, and mean hemispheric thickness. We again observed that language experience (‘Language experience – no typology’) did significantly predict the average thickness of the second TTG, but only in the right hemisphere (β = – 0.13, t = – 2.05, p=0.046; small effect size: f2 = 0.087), see Table 6. Furthermore, similarly to the analysis on the main sample (see section ‘Second TTG and effects of language typology’), the language experience index weighted by phonological information at the phoneme level (‘Language experience – phonemes’) showed a better fit than the model without typological information, explaining 3% of additional variance in the average thickness of the right second TTG. In contrast to the results of the main sample, however, this time the model including phonological feature-level information (‘Language experience – features’) had a better fit to the thickness data and explained an additional 14% of the variance (11% more variance than the model with language experience weighted by phoneme-level distances), see Table 6 and Figure 4C. No language experience indices were significantly related to the average thickness values of second TTG in the left hemisphere (β = – 0.03, t = – 0.53, p=0.60, and β = – 0.09, t = – 0.58, p=0.57, for language experience index without and with typological phoneme-level information, respectively), see Figure 4 and Table 6.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90269/elife-90269-fig4-v1.jpg)
 
 **Figure 4.:** (A) Average thickness of the left second TTG (n = 61) was not significantly related to the language experience index (β = – 0.09, t = – 0.58, p=0.57); average thickness of the right second TTG (n = 54) was significantly related to the language experience indices accounting for phoneme-level phonological overlaps between multilinguals' languages (β = – 0.38, t = – 2.48, p=0.02) (B) and feature-level information (β = – 1.02, t = – 3.77, p=0.0005) (C). The model including phonological feature-level information presented in panel (C) had the best fit to the average thickness data of the right second TTG.
+
+**Table 6.**
+ Thickness of left and right second transverse temporal gyri (TTGs) and language experience in an independent sample of participants.Multiple regression model parameters (parameter estimates and standard errors, in brackets; p-values are listed according to the coding presented underneath the table) for the average cortical thickness of the second TTG, as predicted by the four language experience indices: (1) the cumulative language experience measure not accounting for typology, and cumulative language experience weighted by overlaps between languages at the level of (2) features, (3) phonemes, and (4) counts of phonological classes. The last two rows present model comparison results (additional variance explained and BF10 values). NB. All models including typological information were compared against the ‘No typology’ model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="4">Left</th>
+      <th colspan="4">Right</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Language experiencemodels:</td>
+      <td>No typology</td>
+      <td>Features</td>
+      <td>Phonemes</td>
+      <td>Phonological classes</td>
+      <td>No typology</td>
+      <td>Features</td>
+      <td>Phonemes</td>
+      <td>Phonological classes</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>β</td>
+      <td>1.00</td>
+      <td>1.12</td>
+      <td>0.99</td>
+      <td>1.24</td>
+      <td>–1.85</td>
+      <td>–2.20.</td>
+      <td>–2.09</td>
+      <td>–1.21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(1.14)</td>
+      <td>(1.10)</td>
+      <td>(1.13)</td>
+      <td>(1.09)</td>
+      <td>(1.34)</td>
+      <td>(1.21)</td>
+      <td>(1.33)</td>
+      <td>(1.30)</td>
+    </tr>
+    <tr>
+      <td>Language Experience</td>
+      <td>β</td>
+      <td>–0.03</td>
+      <td>–0.09</td>
+      <td>–0.09</td>
+      <td>0.32</td>
+      <td>–0.13*</td>
+      <td>–1.02***</td>
+      <td>–0.38*</td>
+      <td>–0.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.06)</td>
+      <td>(0.28)</td>
+      <td>(0.15)</td>
+      <td>(0.49)</td>
+      <td>(0.06)</td>
+      <td>(0.27)</td>
+      <td>(0.15)</td>
+      <td>(0.49)</td>
+    </tr>
+    <tr>
+      <td>Scanner</td>
+      <td>β</td>
+      <td>–0.08</td>
+      <td>–0.09</td>
+      <td>–0.08</td>
+      <td>–0.09</td>
+      <td>0.10</td>
+      <td>0.09</td>
+      <td>0.11</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.08)</td>
+      <td>(0.07)</td>
+      <td>(0.08)</td>
+      <td>(0.08)</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>β</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.00</td>
+      <td>0.01</td>
+      <td>0.01*</td>
+      <td>0.01**</td>
+      <td>0.01*</td>
+      <td>0.01*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+      <td>(0.00)</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td>β</td>
+      <td>0.09</td>
+      <td>0.09</td>
+      <td>0.09</td>
+      <td>0.07</td>
+      <td>0.00</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>–0.02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+      <td>(0.06)</td>
+      <td>(0.07)</td>
+      <td>(0.07)</td>
+    </tr>
+    <tr>
+      <td>Mean thickness (left/right)</td>
+      <td>β</td>
+      <td>0.57</td>
+      <td>0.52</td>
+      <td>0.58</td>
+      <td>0.42</td>
+      <td>1.72**</td>
+      <td>1.86***</td>
+      <td>1.81***</td>
+      <td>1.52**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SE</td>
+      <td>(0.44)</td>
+      <td>(0.42)</td>
+      <td>(0.44)</td>
+      <td>(0.42)</td>
+      <td>(0.52)</td>
+      <td>(0.46)</td>
+      <td>(0.51)</td>
+      <td>(0.50)</td>
+    </tr>
+    <tr>
+      <td>Num.Obs.</td>
+      <td></td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>61</td>
+      <td>54</td>
+      <td>54</td>
+      <td>54</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>R2</td>
+      <td></td>
+      <td>0.092</td>
+      <td>0.089</td>
+      <td>0.092</td>
+      <td>0.094</td>
+      <td>0.225</td>
+      <td>0.350</td>
+      <td>0.253</td>
+      <td>0.196</td>
+    </tr>
+    <tr>
+      <td>R2 Adj.</td>
+      <td></td>
+      <td>0.009</td>
+      <td>0.006</td>
+      <td>0.010</td>
+      <td>0.012</td>
+      <td>0.144</td>
+      <td>0.282</td>
+      <td>0.175</td>
+      <td>0.112</td>
+    </tr>
+    <tr>
+      <td>AIC</td>
+      <td></td>
+      <td>13.9</td>
+      <td>14.1</td>
+      <td>13.8</td>
+      <td>13.7</td>
+      <td>7.6</td>
+      <td>–1.9</td>
+      <td>5.6</td>
+      <td>9.5</td>
+    </tr>
+    <tr>
+      <td>BIC</td>
+      <td></td>
+      <td>28.7</td>
+      <td>28.9</td>
+      <td>28.6</td>
+      <td>28.5</td>
+      <td>21.5</td>
+      <td>12.0</td>
+      <td>19.5</td>
+      <td>23.5</td>
+    </tr>
+    <tr>
+      <td>Log.Lik.</td>
+      <td></td>
+      <td>0.047</td>
+      <td>–0.046</td>
+      <td>0.077</td>
+      <td>0.130</td>
+      <td>3.205</td>
+      <td>7.947</td>
+      <td>4.196</td>
+      <td>2.229</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td></td>
+      <td>1.109</td>
+      <td>1.072</td>
+      <td>1.120</td>
+      <td>1.142</td>
+      <td>2.781</td>
+      <td>5.158</td>
+      <td>3.244</td>
+      <td>2.342</td>
+    </tr>
+    <tr>
+      <td>RMSE</td>
+      <td></td>
+      <td>0.24</td>
+      <td>0.24</td>
+      <td>0.24</td>
+      <td>0.24</td>
+      <td>0.23</td>
+      <td>0.21</td>
+      <td>0.22</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>ΔR2 Adjusted</td>
+      <td></td>
+      <td>–</td>
+      <td>&gt;–0.01</td>
+      <td>&lt;0.01</td>
+      <td>&lt;0.01</td>
+      <td>–</td>
+      <td>0.14</td>
+      <td>0.03</td>
+      <td>–0.03</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td></td>
+      <td>–</td>
+      <td>0.91</td>
+      <td>1.03</td>
+      <td>1.09</td>
+      <td>–</td>
+      <td>114.68</td>
+      <td>2.70</td>
+      <td>0.38</td>
+    </tr>
+  </tbody>
+</table>
+
+_.p<0.1, +p = 0.05, *p<0.05, **p<0.01, ***p<0.001._
 
 ## Discussion
 

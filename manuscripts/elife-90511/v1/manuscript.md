@@ -11,15 +11,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Organismic and Evolutionary Biology, Harvard University Cambridge United States
-2. https://ror.org/03vek6s52 Center for Brain Science, Harvard University, Cambridge Cambridge United States
-3. https://ror.org/042nb2s44 McGovern Institute, MIT Cambridge United States
-4. https://ror.org/042nb2s44 MIT Media Lab, MIT Cambridge United States
-5. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
-6. https://ror.org/042nb2s44 Department of Biological Engineering, MIT Cambridge United States
-7. https://ror.org/042nb2s44 Koch Institute, Department of Biology, MIT Cambridge United States
-8. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase United States
-9. https://ror.org/042nb2s44 Department of Brain and Cognitive Sciences, MIT Cambridge United States
+1. Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Center for Brain Science, Harvard University, Cambridge Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. McGovern Institute, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+4. MIT Media Lab, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+5. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+6. Department of Biological Engineering, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+7. Koch Institute, Department of Biology, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+8. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))
+9. Department of Brain and Cognitive Sciences, MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
 
 † Corresponding author
 
@@ -33,6 +33,50 @@ Individuality is a fundamental aspect of behavior that is observed even among ge
 
 Olfaction in the fruit fly Drosophila melanogaster is an amenable sensory system for identifying loci of individuality as (1) individual odor preferences can be recorded readily, (2) neural representations of odors can be measured via calcium imaging, (3) the circuit elements of the pathway are well-established, and (4) a deep genetic toolkit enables mechanism-probing experiments. The neuroanatomy of the olfactory system, from the antenna through its first central-brain processing neuropil, the antennal lobe (AL), is broadly stereotyped across individuals (Couto et al., 2005; Grabe et al., 2015; Wilson et al., 2004). The AL features ~50 anatomically identifiable microcircuits called glomeruli (Figure 1A). Each glomerulus represents an odor-coding channel and receives axon inputs from olfactory receptor neurons (ORNs) expressing the same olfactory receptor gene (de Bruyne et al., 2001). Uniglomerular projection neurons (PNs) carry odor information from each glomerulus deeper into the brain (Jeanne and Wilson, 2015). AL-intrinsic local neurons (LNs) project among glomeruli (Chou et al., 2010) and modulate odor representations (Wilson and Laurent, 2005). Glomerular organization is a key stereotype of the AL; using glomeruli as landmarks, one can identify comparable ORN axons and PNs across individuals.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-v1.jpg)
+
+**Figure 1.:** (A) Olfactory circuit schematic. Olfactory receptor neurons (ORNs, peach outline) and projection neurons (PNs, plum outline) are comprised of ~51 classes corresponding to odor receptor response channels. ORNs (gray shading) sense odors in the antennae and synapse on dendrites of PNs of the same class in ball-shaped structures called glomeruli located in the antennal lobe (AL). Local neurons (LNs, green outline) mediate interglomerular cross-talk and presynaptic inhibition, amongst other roles (Olsen and Wilson, 2008; Yaksi and Wilson, 2010). Odor signals are normalized and whitened in the AL before being sent to the mushroom body and lateral horn for further processing. Schematic adapted from Figure 2C of Honegger et al., 2020. (B) Experiment outline. (C) Odor preference behavior tracking setup (reproduced from Figure 1B of Honegger et al., 2020) and example individual fly ethograms. OCT (green) and MCH (magenta) were presented for 3 minutes. (D) Head-fixed two-photon calcium imaging and odor delivery setup (reproduced from Figure 2A of Honegger et al., 2020). (E) Orco and GH146 driver expression profiles (left) and example segmentation masks (right) extracted from two-photon calcium images for a single fly expressing Orco>GCaMP6m (top, expressed in a subset of all ORN classes) or GH146>GCaMP6m (bottom, expressed in a subset of all PN classes). (F) Time-dependent Δf/f for glomerular odor responses in ORNs (peach) and PNs (plum) averaged across all individuals: DC2 to OCT (upper left), DM2 to OCT (upper right), DC2 to MCH (lower left), and DM2 to OCT (lower right). Shaded error bars represent S.E.M. (G) Peak Δf/f for each glomerulus-odor pair averaged across all flies. (H) Individual neural responses measured in ORNs (left) or PNs (right) for 50 flies each. Columns represent the average of up to four odor responses from a single fly. Each row represents one glomerulus-odor response pair. Odors are the same as in panel (G). (I) Principal component analysis of individual neural responses. Fraction of variance explained vs. principal component number (left). Trial 1 and trial 2 of ORN (middle) and PN (right) responses for 20 individuals (unique colors) embedded in PC 1–2 space. (J) Euclidean distances between glomerulus-odor responses within and across flies measured in ORNs (n = 65 flies) and PNs (n = 122 flies). Distances calculated without PCA compression. (K) Bootstrapped R2 of OCT-MCH preference prediction from each of the first five principal components of neural activity measured in ORNs (top, all data) or PNs (bottom, training set). (L) Measured OCT-MCH preference vs. preference predicted from PC 1 of ORN activity (n = 35 flies). (M) Measured OCT-MCH preference vs. preference predicted from PC 2 of PN activity in n = 69 flies using a model trained on a training set of n = 47 flies (see Figure 2—figure supplement 1C and D for train/test flies analyzed separately). Shaded regions in (L, M) are the 95% CIs of the fit estimated by bootstrapping. In (J, K), points represent the median value, boxes represent the interquartile range, and whiskers the range of the data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Behavioral measurement apparatus (adapted from Figure 1A of Honegger et al., 2020). (B) Odor preference persistence over 3 hours for flies given a choice between 3-octanol and air (n = 34 flies). (C) Odor preference persistence over 24 hours for flies given a choice between 3-octanol and air (n = 97 flies). (D) Odor preference persistence over 3 hours for flies given a choice between 3-octanol and 4-methylcyclohexanol (n = 51 flies). (E) Odor preference persistence over 24 hours for flies given a choice between 3-octanol and 4-methylcyclohexanol (n = 49 flies).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Time-dependent responses of each glomerulus identified in our study to the 13 odors in our odor panel. Data represents the average across flies (olfactory receptor neuron [ORN], peach curves, n = 65 flies; projection neuron [PN], plum curves, n = 122 flies). Shaded error bars represent S.E.M.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Idiosyncratic odor coding measured in olfactory receptor neurons (ORNs) (left, 208 recordings across 65 flies) and projection neurons (PNs) (right, 406 trials across 122 flies). Each column represents the response (max Δf/f attained over the odor trial) in a single recording from either the left or right lobe of a single fly. Below each heatmap, markers are grouped by individual fly (fly order is arbitrary, markers of adjacent flies alternate in height). Green markers correspond to left lobes, blue markers right lobes. Each row represents a glomerulus-odor response pair. Missing data are indicated in gray.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Scatter plots of max Δf/f attained over an odor presentation in a left-lobe recording vs. a right-lobe recording in the same fly (same data as presented in Figure 1—figure supplement 3). Plum points are projection neuron (PN) responses and peach points olfactory receptor neurons (ORNs). ρ is Spearman’s rank correlation coefficient, points correspond to fly-odor-trial combinations, and n indicates the number of points within each subplot. (B) As in (A), for responses across two trials within the same lobe of the same fly. Points correspond to fly-odor-lobe combinations.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Glomerulus odor responses measured in projection neurons (PNs) vs. those measured in olfactory receptor neurons (ORNs) (n = 65 flies). Points correspond to the odorants listed in Figure 1G. (B) Cross-odor trial correlation matrix between glomerular odor responses in ORNs and PNs. (C) Peak calcium responses for each glomerulus-odor pair measured in this study plotted against those recorded in the DoOR dataset (Münch and Galizia, 2016). (D) Peak calcium responses for each individual glomerulus plotted against those recorded in the DoOR dataset.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Logistic regression classifier accuracy of decoding individual identity from individual odor panel peak responses. PCA was performed on population responses and the specified fraction of variance (x-axis) was retained. Individual identity can be better decoded from PN responses (n = 122 flies) than ORN responses (n = 65 flies) in all cases. (B) Individual trial-to-trial glomerulus-odor responses embedded in PC 1–2 space. Responses for the same flies as Figure 1I are shown. Each linked color represents one fly. Trial 1 and trial 2 responses are shown for ORN left lobe (upper left), ORN right lobe (upper right), PN left lobe (lower left), and PN right lobe (lower right). (C) Distance in the full glomerulus-odor response space between recordings within a lobe (trial-to-trial), across lobes (within fly), and across flies for ORNs and PNs. Points represent the median value, boxes represent the interquartile range, and whiskers the range of the data.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Correlation between calcium response dimensions across flies measured in olfactory receptor neurons (ORNs, n = 65 flies) (top) and projection neurons (PNs, n = 122 flies) (bottom). Glomerulus-odor responses are correlated at the level of glomeruli in both cell types. Inter-glomerulus correlations are more prominent in ORNs than PNs, consistent with known antennal lobe (AL) transformations that result in decorrelated PN activity (Bhandawat et al., 2007; Luo et al., 2010).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** (A, B) First 10 principal component loadings measured from calcium responses in olfactory receptor neurons (ORNs) (A, n = 65 flies) and projection neurons (PNs) (B, n = 122 flies). Loadings are grouped by glomerulus, with each loading within a glomerulus representing the response of that glomerulus to one odor in the odor panel. Odors are the same as those listed in Figure 1G. (C, D) The same 10 principal component loadings as those shown in panels (A, B) grouped by odor rather than glomerulus. Glomeruli within each odor block are given in the order of panels (A) and (B).
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Schematic of inference approach to estimate the correlation between latent calcium (c) and behavioral (b) states (R2latent). This method can be applied identically to infer R2latent between Brp measurements and behavior. (B) Demonstration of R2latent inference for olfactory receptor neuron (ORN) vs. 4-methylcyclohexanol (MCH) model presented in Figure 1M: Projection neuron (PN) calcium PC 2 from trained model applied to train+test data. Bottom subplot: bootstrap distribution of calcium–behavior R2c,b (dashed line: R2c,b = 0.20 for the N = 69 flies). Top left subplot: simulated R2c,b values. Black line indicates median R2c,b among the 10,000 simulations for each R2latent, shaded areas (from lightest to darkest to lightest) indicate 5–15th, 15–25th, …, 85–95th percentile R2c,b. Right subplot: inferred distribution for R2latent, estimated by adding marginal distributions over R2latent for R2c,b values sampled from the bootstrap R2c,b distribution. The median R2latent is 0.46 (dashed line), with 90% CI 0.06–0.90 estimated by the 5th–95th percentiles of the marginal distribution (dot-dashed lines).
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** (A) Bootstrapped R2 of OCT-AIR preference prediction from each of the first five principal components of neural activity measured in olfactory receptor neurons (ORNs) (top, all data) or projection neurons (PNs) (bottom, training set). Points represent the median value, boxes represent the interquartile range, and whiskers the range of the data. (B) Measured OCT-AIR preference vs. preference predicted from PC 1 of ORN activity (n = 30 flies). (C) PC 1 loadings of ORN activity for flies in (B). (D) Interpreted ORN PC 1 loadings. (E) Measured OCT-AIR preference vs. preference predicted by the average peak response across all ORN coding dimensions (n = 30 flies). (F) Measured OCT-AIR preference vs. preference predicted from PC 1 of PN activity in n = 53 flies using a model trained on a training set of n = 18 flies (see Figure 2—figure supplement 1A and B for train/test flies analyzed separately). (G) PC 2 loadings of PN activity for flies in (F). (H) Interpreted PN PC2 loadings. (I) Measured OCT-MCH preference vs. preference predicted by the average peak PN response in DM2 minus DC2 across all odors (n = 69 flies).
+
 Individual flies differ in their PN calcium responses to identical odor stimuli, as well as their odor-vs.-odor preference choices (Honegger et al., 2020). Several possible determinants of individual odor preference can already be hypothesized for the fly olfactory circuit (Rihani and Sachse, 2022). The extent of preference variability depends on dopamine and serotonergic modulation (Honegger et al., 2020). Neuromodulation clearly plays a role in the regulation of behavioral individuality (Maloney, 2021), but its effects vary by modulator and behavior (de Bivort et al., 2022; Kain et al., 2012). With respect to wiring variation, the number of ORNs and PNs innervating a given glomerulus varies within hemispheres (Tobin et al., 2017) and across individuals (Grabe et al., 2016; Schlegel et al., 2020), as does the glomerulus-innervation pattern of individual LNs (Chou et al., 2010). Subpopulations of LNs and PNs express variable serotonin receptors (Sizemore and Dacks, 2016), so the effects of neuromodulation and wiring may interact to influence individuality. Little is known about possible molecular or nanoscale correlates of individual behavioral bias. Thus, individual odor preference could have its origins in many potential mechanisms, ranging from circuit wiring to modulation to neuronal intrinsic properties.
 
 Outside the olfactory system, there are a few examples in which microscale circuit variation predicts individual behavioral preference. Wiring asymmetry in an individual fly’s dorsal cluster neurons is predictive of the straightness of its object-oriented walking behavior (Linneweber et al., 2020), and left-right asymmetry in the density of presynaptic sites of protocerebral bridge to lateral accessory lobe-projecting neurons predicts an individual fly’s idiosyncratic turning bias (Skutt-Kakaria et al., 2019). The number of synaptic connections from the pC2l to pIP10 neurons correlates with male song rate during courtship (Lillvis et al., 2022), and the presence of ectopic branches in neurons of the T2 hemilineage predicts delayed spontaneous flight initiation (Mellert et al., 2016).
@@ -41,13 +85,21 @@ In this work, we sought to identify loci of individuality by measuring odor pref
 
 ## Results
 
-## Individual flies encode odors idiosyncratically
+### Individual flies encode odors idiosyncratically
 
 Focusing on behavioral variation within a genotype, we used isogenic animals expressing the fluorescent calcium reporter GCaMP6m (Chen et al., 2013) in either of the two most peripheral neural subpopulations of the Drosophila olfactory circuit, ORNs or PNs (Figure 1E). We performed head-fixed two-photon calcium imaging after measuring odor preference in an untethered assay (Honegger et al., 2020; Figure 1B–D, Figure 1—figure supplement 1A; Videos 1 and 2). Individual odor preferences are stable over timescales longer than this experiment (Figure 1—figure supplement 1B–E).
 
+![Video 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-video1.mp4.jpg)
+
+**Video 1.:** The recent positions of each fly (green line) are shown in different colors. Red bar indicates when the odor stream is turned on.
+
+![Video 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-video2.mp4.jpg)
+
+**Video 2.:** The recent positions of each fly (green line) are shown in different colors. Magenta and green bars at right indicate when MCH and OCT are respectively flowing into the top and bottom halves of each arena.
+
 We measured volumetric calcium responses in the AL, where ORNs synapse onto PNs in ~50 discrete microcircuits called glomeruli (Figure 1A; Couto et al., 2005; Grabe et al., 2015). Flies were stimulated with a panel of 12 odors plus air (Figure 1D, Figure 1—figure supplement 2) and k-means clustering was used to automatically segment the voxels of five glomeruli from the resulting 4-D calcium image stacks (Figure 1E, Figure 1—figure supplement 5, ‘Materials and methods’; Couto et al., 2005). Both ORN and PN odor responses were roughly stereotyped across individuals (Figure 1G and H), but also idiosyncratic (Honegger et al., 2020). Responses in PNs appeared to be more idiosyncratic than ORNs (Figure 1J); a logistic linear classifier decoding fly identity from glomerular responses was more accurate when trained on PN than ORN responses (Figure 1—figure supplement 6A). While the responses of single ORNs are known to vary more than those of single PNs (Wilson, 2013), our recordings capture the total response of all ORNs or PNs in a glomerulus. This might explain our observation that ORNs exhibited less idiosyncrasy than PNs. PN responses were more variable within flies, as measured across the left and right hemisphere ALs, compared to ORN responses (Figure 1—figure supplement 6C; p<2 × 10–5, Mann–Whitney U test), suggesting that odor representations become more divergent farther from the sensory periphery.
 
-## PN, but not ORN, responses predict odor-vs.-odor preference
+### PN, but not ORN, responses predict odor-vs.-odor preference
 
 Next we analyzed the relationship of idiosyncratic coding to odor preference, by asking in which neurons (if any) did calcium responses predict individual preferences of flies choosing between two aversive monomolecular odors: 3-octanol (OCT) and 4-methylcyclohexanol (MCH). Because we could potentially predict preference (a single value) using numerous glomerular-odor predictors and had a limited number of observations (dozens), we used dimensionality reduction to hold down the number of comparisons we made. We computed the principal components (PCs) of the glomerulus-odor responses (in either ORNs or PNs) across individuals (Figure 1G–I, Figure 1—figure supplements 3 and 8) and fit linear models to predict the behavior of individual flies from their values on the odor response PCs. No PCs of ORN neural activity could linearly predict OCT-MCH preference beyond the level of shuffled controls (n = 35 flies) (Figure 1K and L). The best ORN PC model only predicted odor-vs.-odor behavior with a nominal R2 of 0.031. In contrast, PC 2 of PN activity was a statistically significant predictor of odor preference, accounting for 15% of preference variance in a training set of 47 flies (p=0.0063; Figure 2—figure supplement 1C) and 31% of preference variance on test data of flies (p=0.0069; Figure 2—figure supplement 1D). These p-values remain significant at α=0.05 following a Bonferroni correction for five comparisons. Combined train/test statistics (R2 = 0.20; p=0.0001) are presented in Figure 1K and M. Thus, idiosyncratic PN calcium predicts odor vs. odor preference.
 
@@ -57,25 +109,257 @@ We additionally assessed the extent to which idiosyncratic calcium responses in 
 
 We next sought a biological understanding of the models associating calcium responses with odor preference. The loadings of the ORN and PN PCs indicate that variation across individuals was correlated at the level of glomeruli much more strongly than odorant (Figure 1H, Figure 1—figure supplements 3 and 8). This suggests that stochastic variation in the olfactory circuit results in individual-level fluctuations in the responses of glomeruli-specific rather than odor-specific responses. In the odor-vs.-odor preference model, the loadings of PC2 of PN calcium responses contrast the responses of the DM2 and DC2 glomeruli with opposing weights (Figure 2A), suggesting that the activation of DM2 relative to DC2 predicts the likelihood of a fly preferring OCT to MCH. Indeed, a linear model constructed from the average DM2 minus average DC2 PN response (Figure 2B) showed a statistically significant correlation with preference for OCT vs. MCH (R2 = 0.12; p=0.0035; Figure 2C). The model slope coefficient was negative (Table 1), indicating that greater activation of DM2 vs. DC2 correlates with preference for MCH. With respect to odor-vs.-odor behavior, we conclude that the relative responses of DM2 vs. DC2 in PNs compactly predict an individual’s preference.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig2-v1.jpg)
+
+**Figure 2.:** (A) PC 2 loadings of projection neuron (PN) activity for flies tested for OCT-MCH preference (n = 69 flies). (B) Interpreted PN PC 2 loadings. (C) Measured OCT-MCH preference vs. preference predicted by the average peak PN response in DM2 minus DC2 across all odors (n = 69 flies). (D) Yoked-control experiment outline and example behavior traces. Experimental flies are free to move about tunnels permeated with steady-state OCT and MCH flowing into either end. Yoked-control flies are delivered the same odor at both ends of the tunnel that matches the odor experienced at the nose of the experimental fly at each moment in time. (E) Imposed odor experience vs. the odor experience predicted from PC 2 of PN activity (n = 27 flies) evaluated on the model trained from data in Figure 1M. Shaded regions in (C, E) are the 95% CIs of the fit estimated by bootstrapping.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Measured OCT-AIR preference vs. preference predicted from PC 1 of PN activity in a training set (n = 18 flies). (B) Measured OCT-AIR preference vs. preference predicted from PC 1 on PN activity in a test set (n = 35 flies) evaluated on a model trained on data from panel (A). (C) Measured OCT-MCH preference vs. preference predicted from PC 2 of PN activity in a training set (n = 47 flies). (D) Measured OCT-MCH preference vs. preference predicted from PC 2 on PN activity in a test set (n = 22 flies) evaluated on a model trained on data from panel (C).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) R2 of odor-vs.-air preference predicted by PC 1 of projection neuron (PN) activity as a function of time across trials (n = 53 flies). (B) R2 of odor-vs.-air preference predicted by PC 1 of olfactory receptor neuron (ORN) activity as a function of time across trials (n = 30 flies). (C) R2 of odor-vs.-odor preference predicted by PC 2 of PN activity (solid plum, n = 69 flies) or PC 1 of ORN activity (dashed peach, n = 35 flies) as a function of time across trials. (D) Logistic regression classifier accuracy of decoding odor identity from 5 glomerular responses as a function of time. Dashed curves indicate performance on shuffled data.
+
+**Table 1.**
+ Calcium and Brp-Short – behavior model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Behavior neasured</th>
+      <th>Neural predictor</th>
+      <th>Figure panel</th>
+      <th>n</th>
+      <th>β0</th>
+      <th>β1</th>
+      <th>R2</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OCT vs. AIR</td>
+      <td>PN calcium PC 1</td>
+      <td>Figure 2—figure supplement 1A</td>
+      <td>18</td>
+      <td>–0.26</td>
+      <td>–0.079</td>
+      <td>0.16</td>
+      <td>0.099</td>
+    </tr>
+    <tr>
+      <td>OCT vs. AIR</td>
+      <td>PN calcium average all dimensions</td>
+      <td>Figure 1—figure supplement 10I</td>
+      <td>53</td>
+      <td>–0.051</td>
+      <td>–0.38</td>
+      <td>0.098</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>OCT vs. AIR</td>
+      <td>ORN calcium PC 1</td>
+      <td>Figure 1—figure supplement 10B</td>
+      <td>30</td>
+      <td>–0.29</td>
+      <td>–0.053</td>
+      <td>0.23</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>OCT vs. AIR</td>
+      <td>ORN calcium average all dimensions</td>
+      <td>Figure 1—figure supplement 10E</td>
+      <td>30</td>
+      <td>–0.032</td>
+      <td>–0.71</td>
+      <td>0.25</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>OCT vs. MCH</td>
+      <td>PN calcium PC 2</td>
+      <td>Figure 2—figure supplement 1C</td>
+      <td>47</td>
+      <td>–0.058</td>
+      <td>–0.081</td>
+      <td>0.15</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>OCT vs. MCH</td>
+      <td>PN calcium DM2–DC2 (% difference)</td>
+      <td>Figure 2I</td>
+      <td>69</td>
+      <td>–0.032</td>
+      <td>–0.0018</td>
+      <td>0.12</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>OCT vs. MCH</td>
+      <td>ORN calcium PC 1</td>
+      <td>Figure 1L</td>
+      <td>35</td>
+      <td>–0.14</td>
+      <td>–0.027</td>
+      <td>0.031</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>OCT vs. MCH</td>
+      <td>ORN Brp-Short PC 2 (train data only)</td>
+      <td>Figure 3—figure supplement 1I</td>
+      <td>22</td>
+      <td>–0.087</td>
+      <td>0.017</td>
+      <td>0.22</td>
+      <td>0.028</td>
+    </tr>
+    <tr>
+      <td>OCT vs. MCH</td>
+      <td>ORN Brp-Short PC 2 (all data)</td>
+      <td>Figure 3F</td>
+      <td>53</td>
+      <td>–0.019</td>
+      <td>0.012</td>
+      <td>0.088</td>
+      <td>0.031</td>
+    </tr>
+  </tbody>
+</table>
+
+_MCH, 4-methylcyclohexanol; OCT, 3-octanol; ORN, olfactory receptor neuron; PC, principal component; PN, projection neuron._
+
 Odor experience has been shown to modulate subsequent AL responses (Golovin and Broadie, 2016; Iyengar et al., 2010; Sachse et al., 2007). This raises the possibility that our models were actually predicting individual flies’ past odor experiences (i.e., the specific pattern of odor stimulation flies received in the behavioral assay) rather than their preferences. To address this, we imposed the specific odor experiences of previously tracked flies (in the odor-vs.-odor assay) on naive ‘yoked’ control flies (Figure 2D) and measured PN odor responses of the yoked flies. Applying the PN PC 2 model to the yoked calcium responses did not predict flies’ odor experience (R2 = 0.019, p=0.49; Figure 2E). This is consistent with PN calcium responses predicting odor preference rather than odor experience.
 
 Mazor and Laurent, 2005 found that PN response transients, rather than fixed points, contain more odor identity information. We therefore asked at which times during odor presentation an individual’s neural responses could best predict odor preference. Applying our calcium-to-behavior models (PN PC2-odor-vs.-odor, as well as ORN PC1-odor-vs.-air, PN PC1-odor-vs.-air) to the time-varying calcium signals, we found that in all cases behavior prediction rose during odor delivery (Figure 2—figure supplement 2). In ORNs, the predictive accuracy remained high after odor offset, whereas in PNs it declined. The times during which calcium responses predicted individual behavior generally aligned to the times during which a linear classifier could decode odor identity from neuronal responses (Figure 2—figure supplement 2D), suggesting that idiosyncrasies in odor encoding predict individual preferences.
 
-## Variation in a presynaptic scaffolding protein predicts odor preference
+### Variation in a presynaptic scaffolding protein predicts odor preference
 
 We next investigated how structural variation in the nervous system might relate to idiosyncratic behavior. Because PN, but not ORN, calcium responses predicted odor-vs.-odor preference, we hypothesized that a circuit element between ORNs to PNs could confer onto PNs behaviorally relevant physiological idiosyncrasies absent in ORNs. We therefore imaged presynaptic T-bar density in ORNs using transgenic mStrawberry-tagged Brp-Short, immunohistochemistry and confocal microscopy (Mosca and Luo, 2014) after measuring individual preference for OCT vs. MCH (Figure 3A). Brp-Short density was quantified as total fluorescence intensity/glomerulus volume for four of the five focus glomeruli (Figure 3B, Figure 3—figure supplement 1A–F; DL5 was not readily segmentable in our confocal samples). We chose this metric as we found it could be used to predict individual behavioral biases in a previous study (Skutt-Kakaria et al., 2019). This measure was consistent across hemispheres (Figure 3—figure supplement 1C), while also showing variation among individuals, like calcium responses.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experiment outline. (B) Example slice from a z-stack of the antennal lobe expressing Orco>Brp-Short (green) with DC2 and DM2 visible (white dashed outline). nc82 counterstain (magenta). (C) Example glomerulus segmentation masks extracted from an individual z-stack. (D) Bootstrapped R2 of OCT-MCH preference prediction from each of the first four principal components of Brp-Short density measured in olfactory receptor neurons (ORNs) (training set, n = 22 flies). Points represent the median value, boxes represent the interquartile range, and whiskers the range of the data. (E) PC 2 loadings of Brp-Short density. (F) Measured OCT-MCH preference vs. preference predicted from PC 2 of ORN Brp-Short density in n = 53 flies using a model trained on a training set of n = 22 flies (see Figure 3—figure supplement 1 for train/test flies analyzed separately).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Right vs. left glomerulus properties measured from z-stacks of stained Orco>Brp-Short samples from a training set of flies (n = 22): (A) Volume, (B) total Brp-Short fluorescence, and (C) Brp-Short fluorescence density. (D–F) Same data as panels (A–C) represented in violin plots (kernel density estimated). (G) Principal component loadings of Brp-Short density calculated using only training data (n = 22 flies). (H) Principal component loadings of Brp-Short density calculated using all data (n = 53 flies). (I) Measured OCT-MCH preference vs. preference predicted from PC 2 of ORN Brp-Short density in a training set (n = 22 flies). (J) Measured OCT-MCH preference vs. preference predicted from PC 2 on ORN Brp-Short density in a test set (n = 31 flies) evaluated on a model trained on data from panel (I). (K) Example expanded antennal lobe (AL) expressing Or13a>Brp-Short (left) and Imaris-identified puncta from that sample (right). (L) OCT-MCH preference score plotted against Brp-Short puncta density in expanded Or13a>Brp-Short samples (n = 8 flies). (M) OCT-MCH preference score plotted against Brp-Short median puncta volume in expanded Or13a>Brp-Short samples (n = 8 flies). Shaded regions in (I, J, L, M) are the 95%CI of the fit estimated by bootstrapping.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Histogram of average projection neuron (PN) Δf/f across all coding dimensions in flies in which OCT-AIR preference was measured (top) and OCT-AIR preference vs. average PN Δf/f (n = 53 flies) (bottom). (B) Similar to (A) for ORN Δf/f and OCT-AIR preference (n = 30 flies). (C) Similar to (A) for Δf/f difference between DM2 and DC2 PN responses and OCT-MCH preference (n = 69 flies). (D) Similar to (A) for % Brp-Short density difference between DM2 and DC2 ORNs and OCT-MCH (n = 53 flies).
+
 To relate presynaptic structural variation and behavior, we used the same analytical approach as we had for calcium responses. PCs 1 and 2 of Brp-Short density had notable similarities to those of the calcium responses: PC 1 was positive across glomeruli and PC 2 exhibited a sign contrast between DC2 loadings and all other glomerulus loadings (Figure 3—figure supplement 1G). As in the PN calcium response models, PC 2 of Brp-Short density was the best predictor of odor-vs.-odor preferences in training data (Figure 3D and E, Figure 3—figure supplement 1I, R2 = 0.22, n = 22 flies, p=0.028) and for test data (Figure 3—figure supplement 1J, R2 = 0.078, n = 31 flies, p=0.13; statistics from combined train and test data: R2 = 0.088, n = 53 flies, p=0.031; Figure 3F; median R2latent 0.15, 90% CI 0.00–0.74). To better understand the microstructural basis of our Brp-Short density metric, we performed paired behavior and expansion microscopy (Asano et al., 2018; Gao et al., 2019) in flies expressing Brp-Short specifically in DC2-projecting ORNs (Video 3). Expansion yielded an approximately fourfold increase in linear resolution, allowing imaging of individual Brp-Short puncta (Figure 3—figure supplement 1K). While the sample size (n = 8) of this imaging pipeline was insufficient for a formal statistical analysis, the trend between Brp-Short density in DC2 (measured as individual puncta/glomerular volume) and odor-vs.-odor preference was more suggestive of a correlation than other metrics, such as median puncta volume (Figure 3—figure supplement 1L and M).
+
+![Video 3.](https://cdn.elifesciences.org/articles/90511/elife-90511-video3.mp4.jpg)
+
+**Video 3.:** Magenta is nc82 stain, green is Or13a>Brp-Short. Frames are z-slices spaced at 0.54 µm. Image height corresponds to a post-expansion field of view of 107 × 90 µm (~2.5× linear expansion factor).
 
 The best presynaptic density models are less predictive of behavior than the best calcium response models (R2 = 0.088 vs. R2 = 0.22; R2latent 0.15 and 0.46, respectively; Figure 2—figure supplement 1C and D vs. Figure 3—figure supplement 1I and J), suggesting that presynaptic density variation is not the full explanation of calcium response variability. Nevertheless, differences in presynaptic inputs to PNs may contribute to variation in the calcium dynamics of those neurons, in turn giving rise to individual preferences for OCT vs. MCH.
 
-## Developmental stochasticity in a simulated AL recapitulates empirical PN response variation
+### Developmental stochasticity in a simulated AL recapitulates empirical PN response variation
 
 Finally, we sought an integrative understanding of how synaptic variation plays out across the olfactory circuit to produce behaviorally relevant physiological variation. We developed a leaky-integrate-and-fire model of the entire AL, comprising 3062 spiking neurons and synaptic connectivity taken directly from the Drosophila hemibrain connectome (Scheffer et al., 2020). After tuning the model to perform canonical AL computations, we introduced different kinds of stochastic variations to the circuit and determined which (if any) produce the patterns of idiosyncratic PN response variation observed in our calcium imaging experiments (Figure 4A). This approach assesses potential mechanisms linking developmental variation in synapses to physiological variation that apparently drives behavioral individuality.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-v1.jpg)
+
+**Figure 4.:** (A) Antennal lobe (AL) modeling analysis outline. (B) Leaky-integrator dynamics of each simulated neuron. When a neuron’s voltage reaches its firing threshold, a templated action potential is inserted, and downstream neurons receive a postsynaptic current. See ‘Antennal lobe modeling’ in ‘Materials and methods’. (C) Synaptic weight connectivity matrix, derived from the hemibrain connectome (Scheffer et al., 2020). (D) Spike raster for randomly selected example neurons from each AL cell type. Colors indicate olfactory receptor neuron (ORN)/projection neuron (PN) glomerular identity and LN polarity (i = inhibitory, e = excitatory). (E) Schematic illustrating sources of developmental stochasticity as implemented in the simulated AL framework. See Video 4 for the effects of these resampling methods on the synaptic weight connectivity matrix. (F) PN glomerulus-odor response vectors for eight idiosyncratic ALs subject to Input spike Poisson timing variation, PN input synapse density resampling, and ORN and LN population bootstrapping. (G) Loadings of the principal components of PN glomerulus-odor responses as observed across experimental flies (top). Dotted outlines highlight loadings selective for the DC2 and DM2 glomerular responses, which underlie predictions of individual behavioral preference. (H–K) As in (G) for simulated PN glomerulus-odor responses subject to Input spike Poisson timing variation, PN input synapse density resampling, and ORN and LN population bootstrapping. See Figure 4—figure supplement 5 for additional combinations of idiosyncrasy methods. In (F–K) the sequence of odors within each glomerular block is: OCT, 1-hexanol, ethyl-lactate, 2-heptanone, 1-pentanol, ethanol, geranyl acetate, hexyl acetate, MCH, pentyl acetate, and butanol.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Action potential raster plot of olfactory receptor neurons (ORNs) in the baseline simulated AL. Rows are individual ORNs, black ticks indicate action potentials. Random shades of gold at left indicate blocks of ORN rows projecting to the same glomerulus. (B) The remaining neurons in the model. Shades of green indicate excitatory vs. inhibitory local neurons (LNs) and shades of purple indicate PNs with dendrites in the same glomeruli.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Distributions of model neuron firing rates by cell type across odors (transparent black points are individual neuron-odor combinations). Black lozenge symbols indicate the mean firing rate of the points to the right. Yellow stars indicate the comparable experimental values reported in Chou et al., 2010; de Bruyne et al., 2001; Nagel et al., 2015; Wilson et al., 2004. (B) Scatter plots of average projection neuron (PN) firing rate vs. olfactory receptor neuron (ORN) firing rate during odor stimuli in the model vs. experimental values (Bhandawat et al., 2007). Points are odors, colors are glomeruli. (C) Histograms of ON odor minus OFF odor glomerulus-average PN and ORN firing rates in the model vs experimental values (Bhandawat et al., 2007), showing flatter distributions in PNs. (D) Odor representations in the first two PCs of glomerulus-average ORN responses and PN responses in the model and experimental results (Bhandawat et al., 2007). Points are odors. Pairwise distances between PN representations are more uniform than in ORNs in both the model and experimental data. Panels (B–D) use glomerulus-average PN and ORN firing rates from six of the seven glomeruli in Bhandawat et al., 2007, as VM2 is significantly truncated in the hemibrain (Scheffer et al., 2020). Literature features in panels (B–D) were extracted from Bhandawat et al., 2007 using WebPlotDigitizer (Rohatgi, 2021).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Left, blue to red colormap: magnitude of parameter manipulation. Center, dark blue to yellow colormap: mean glomerular firing rate (Hz) responses of projection neurons (PNs) (DL1, DM1, DM2, DM3, DM4, VA2) to 11 odors (order within each glomerulus (colored bands at top): 3-octanol, 1-hexanol, ethyl lactate, 2-heptanone, 1-pentanol, ethanol, geranyl acetate, hexyl acetate, 4-methylcyclohexanol, pentyl acetate, 1-butanol, 3-octanol). Right, pink to green colormap: manipulation effect size on mean PN-odor responses (Cohen’s d). Top: baseline parameter set. Middle: single-parameter manipulations from 1/4× to 4×. Bottom: multiple-parameter manipulations. For further detail, see ‘AL model tuning’ in ‘Materials and methods’. No manipulations yielded effect sizes larger than 0.9; aPN is the most sensitive parameter.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Left: scatter plot of total projection neuron (PN) input synapses within a glomerulus vs. that glomerulus’ volume from the hemibrain dataset. Solid line represents the maximum likelihood-fit mean synapse count vs. glomerular volume, and dashed lines the fit ±1 SD. Middle: As (left) but for a single sample from the parameterized distribution of PN input synapses vs. glomerular volume. Right: As in previous for a single bootstrap resample of PNs. Color-highlighted glomeruli illustrate that when PNs within a glomerulus have highly asymmetrical synapse counts, bootstrapping them alone can result in apparent synapse densities that lie outside the empirical distribution (left). (B) As in (A) but on log-log axes, showing the linear relationship between synapse density and glomerular volume after this transformation, and bootstrapped densities falling outside this distribution at right.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Loadings of the principal components of PN glomerulus-odor responses as simulated across antennal lobe (AL) models where Gaussian noise with an SD equal to 0, 20, 50, and 100% of each synapse weight was added to each synaptic weight in the hemibrain data set. (B) Circuit variation coming from bootstrapping of each major AL cell type or all three simultaneously. (C) Circuit variation coming from bootstrap resampling of different cell-type combinations in addition to PN input synapse density resampling as illustrated in Figure 4—figure supplement 4. Each PCA was performed on the outputs of ~1,000 AL simulations.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/90511/elife-90511-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Simulated projection neuron (PN) odor-glomerulus firing rates projected into their first three principal components. Individual points represent single runs of resampled antennal lobe (AL) models, under four different sources of idiosyncratic variation. PN responses in all odor-glomerulus dimensions were used to calculate simulated behavior scores for each resampled AL by applying the PN calcium-odor-vs.-odor linear model (Figure 2A). Magenta points represent flies with simulated preference for MCH in the top 50%, and green OCT preference. % Misclassification refers to 100% – the accuracy of a linear classifier trained on MCH-vs.-OCT preference in the space of the first three PCs. This measures how much of the variance along the PN calcium-odor-vs.-odor linear model lies outside the first three PCs of simulated PN variation.
+
 The biophysical properties of neurons in our model (Figure 4B, Table 2) were determined by published electrophysiological studies (see ‘Voltage model’ in ‘Materials and methods’) and were similar to those used in previous fly models (Kakaria and de Bivort, 2017; Pisokas et al., 2020). The polarity of neurons was determined largely by their cell type (ORNs are excitatory, PNs predominantly excitatory, and LNs predominantly inhibitory – explained further in ‘Materials and methods’). The strength of synaptic connections between any pair of AL neurons was given by the hemibrain connectome (Scheffer et al., 2020; Figure 4C). Odor inputs were simulated by injecting current into ORNs to produce spikes in those neurons at rates that match published ORN-odor recordings (Münch and Galizia, 2016), and the output of the system was recorded as the firing rates of PNs during odor stimulation (Figure 4D). At this point, there remained only four free parameters in our model, the relative sensitivity (postsynaptic current per upstream action potential) of each AL cell type (ORNs, PNs, excitatory LNs, and inhibitory LNs). We explored this parameter space manually and identified a configuration in which AL simulation (Figure 4—figure supplement 1) recapitulated four canonical properties seen experimentally (Figure 4—figure supplement 2): (1) typical firing rates at baseline and during odor stimulation (Bhandawat et al., 2007; Dubin and Harris, 1997; Jeanne and Wilson, 2015; Seki et al., 2010), (2) a more uniform distribution of PN firing rates compared to ORN rates (Bhandawat et al., 2007), (3) greater separation of PN odor representations compared to ORN representations (Bhandawat et al., 2007), and (4) a sublinear transfer function between ORNs and PNs (Bhandawat et al., 2007). Thus, our simulated AL appeared to perform the fundamental computations of real ALs, providing a baseline for assessing the effects of idiosyncratic variation.
 
+**Table 2.**
+ Typical electrophysiology features of antennal lobe cell types, used as model parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Olfactory receptor neurons</th>
+      <th>Local neurons</th>
+      <th>Projection neurons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Membrane resting potential</td>
+      <td>–70 mV (Dubin and Harris, 1997)</td>
+      <td>–50 mV (Seki et al., 2010)</td>
+      <td>–55 mV (Jeanne and Wilson, 2015)</td>
+    </tr>
+    <tr>
+      <td>Action potential threshold</td>
+      <td>–50 mV (Dubin and Harris, 1997)</td>
+      <td>–40 mV (Seki et al., 2010)</td>
+      <td>–40 mV (Jeanne and Wilson, 2015)</td>
+    </tr>
+    <tr>
+      <td>Action potential minimum</td>
+      <td>–70 mV (Cao et al., 2016)</td>
+      <td>–60 mV (Seki et al., 2010)</td>
+      <td>–55 mV (Jeanne and Wilson, 2015)</td>
+    </tr>
+    <tr>
+      <td>Action potential maximum</td>
+      <td>0 mV (Dubin and Harris, 1997)</td>
+      <td>0 mV (Seki et al., 2010)</td>
+      <td>–30 mV (Wilson and Laurent, 2005)</td>
+    </tr>
+    <tr>
+      <td>Action potential duration</td>
+      <td>2 ms (Jeanne and Wilson, 2015)</td>
+      <td>4 ms (Seki et al., 2010)</td>
+      <td>2 ms (Jeanne and Wilson, 2015)</td>
+    </tr>
+    <tr>
+      <td>Membrane capacitance</td>
+      <td>73 pF (assumed = projection neurons)</td>
+      <td>64 pF (Huang et al., 2018)</td>
+      <td>73 pF (Huang et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Membrane resistance</td>
+      <td>1.8 GOhm (Dubin and Harris, 1997)</td>
+      <td>1 GOhm (Seki et al., 2010)</td>
+      <td>0.3 GOhm (Jeanne and Wilson, 2015)</td>
+    </tr>
+  </tbody>
+</table>
+
 We simulated stochastic individuality in the AL circuit in two ways (Figure 4E): (1) glomerular-level variation in PN input-synapse density (reflecting a statistical relationship observed between glomerular volume and synapse density in the hemibrain, Figure 4—figure supplement 4), and (2) bootstrapping of neuronal compositions within cell types (reflecting variety in developmental program outcomes for ORNs, PNs, etc.). Video 4 shows the diverse connectivity matrices attained under these resampling approaches. We simulated odor responses in thousands of ALs made idiosyncratic by these sources of variation, and in each, recorded the firing rates of PNs when stimulated by the 12 odors from our experimental panel (Figure 4F, Figure 4—figure supplement 1).
+
+![Video 4.](https://cdn.elifesciences.org/articles/90511/elife-90511-video4.mp4.jpg)
+
+**Video 4.:** Left: glomerular density resampling. Each frame corresponds to the hemibrain connectome synaptic weights, rescaled according to a sample from the relationship between synapse count and volume parameterized in Figure 4—figure supplement 4. Middle: olfactory receptor neuron (ORN) bootstrapping. Each frame corresponds to the hemibrain connectome synaptic weights, but with the population of ORNs projecting to each glomerulus resampled with replacement. Right: local neuron (LN) bootstrapping. Each frame corresponds to the hemibrain connectome synaptic weights, but with the population of LNs resampled with replacement.
 
 To determine which sources of variation produced patterns of PN coding variation consistent with our empirical measurements, we compared principal components of PN responses from real idiosyncratic flies to those of simulated idiosyncratic ALs. Empirical PN responses are strongly correlated at the level of glomeruli (Figure 4G; Figure 1—figure supplement 8). As a positive control that the model can recapitulate this empirical structure, we resampled PN input-synapse density across glomeruli, producing PN response correlations strongly organized by glomerulus (Figure 4I). As a negative control, variation in PN responses due solely to Poisson timing of ORN input spikes (i.e., absent any circuit idiosyncrasy) was not organized at the glomerular level (Figure 4H). Strikingly, bootstrapping ORN population compositions yielded a strong glomerular organization in PN responses (Figure 4J). The loadings of the top PCs under ORN bootstrapping are dominated by responses of a single glomerulus to all odors, including DM2 and DC2. This is reminiscent of PC2 of PN calcium responses, with prominent (opposite sign) loadings for DM2 and DC2. Bootstrapping LNs, in contrast, produced much less glomerular organization (Figure 4K), with little resemblance to the loadings of the empirical calcium PCs. The PCA loadings for simulated PN responses under all combinations of cell type bootstrapping and PN input-synapse density resampling are given in Figure 4—figure supplement 5.
 
@@ -97,39 +381,245 @@ The flies used in our experiments were isogenic and reared in standardized labor
 
 ## Materials and methods
 
-## Fly rearing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>P{20XUAS-IVS-GCaMP6m}attP40</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_42748</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[*]; P{w[+mC]=Or13a-GAL4.F}40.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_9945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[*]; P{w[+mC]=Or19a-GAL4.F}61.1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_9947</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[*]; P{w[+mC]=Or22a-GAL4.7.717}14.2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_9951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w[*]; P{w[+mC]=Orco-GAL4.W}11.17; TM2/TM6B, Tb[1]</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_26818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>isokh11 isogenic line</td>
+      <td>https://doi.org/10.1073/pnas.1901623116</td>
+      <td></td>
+      <td>Honegger et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>GH146-Gal4</td>
+      <td>https://doi.org/10.1073/pnas.1901623116</td>
+      <td></td>
+      <td>Gift of Y. Zhong (Honegger et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w; UAS-Brp-Short-mStrawberry; UAS-mCD8-GFP; +</td>
+      <td>https://doi.org/10.7554/eLife.03726</td>
+      <td></td>
+      <td>Gift of T. Mosca (Mosca and Luo, 2014)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nc82 (mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB:nc82; RRID:AB_2314866</td>
+      <td>(1:40)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves Labs</td>
+      <td>Aves Labs:GFP-1020; RRID:AB_10000240</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mStrawberry (rabbit polyclonal)</td>
+      <td>biorbyt</td>
+      <td>Biorbyt:orb256074</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Atto 647N-conjugated anti-mouse (goat polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Sigma-Aldrich:50185; RRID:AB_1137661</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568-conjugated anti-rabbit (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher Scientific:A-11011; RRID:AB_143157</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated anti-chicken (goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Thermo Fisher Scientific:A-11039; RRID:AB_2534096</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Heptanone</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #110-43-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Pentanol</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #71-41-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Octanol</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #589-98-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexyl-acetate</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #142-92-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylcyclohexanol</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #589-91-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentyl acetate</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #628-63-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Butanol</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #71-36-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl lactate</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #97-64-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geranyl acetate</td>
+      <td>Millipore Sigma</td>
+      <td>CAS #105-87-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Hexanol</td>
+      <td>MilliporeSigma</td>
+      <td>CAS #111-27-34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Citronella java essential oil</td>
+      <td>Aura Cacia</td>
+      <td>Aura Cacia:191112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python (version 3.6)</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td></td>
+      <td>MathWorks, MATLAB pca documentation, 2018</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly rearing
 
 Experimental flies were reared in a Drosophila incubator (Percival Scientific DR-36VL) at 22°C, 40% relative humidity, and 12:12 hour light:dark cycle. Flies were fed cornmeal/dextrose medium, as previously described (Honegger et al., 2020). Mated female flies aged 3 days post-eclosion were used for behavioral persistence experiments. Mated female flies aged 7–15 days post-eclosion were used for all paired behavior-calcium imaging and immunohistochemistry experiments.
 
-## Fly stocks
+### Fly stocks
 
 The following stocks were obtained from the Bloomington Drosophila Stock Center: P{20XUAS-IVS-GCaMP6m}attP40 (BDSC #42748), w[*]; P{w[+mC]=Or13a-GAL4.F}40.1 (BDSC #9945), w[*]; P{w[+mC]=Or19a-GAL4.F}61.1 (BDSC #9947), w[*]; P{w[+mC]=Or22a-GAL4.7.717}14.2 (BDSC #9951), w[*]; P{w[+mC]=Orco-GAL4.W}11.17; TM2/TM6B, Tb[1] (BDSC #26818). Transgenic lines were outcrossed to the isogenic line isokh11 (Honegger et al., 2020) for at least five generations prior to being used in any experiments. GH146-Gal4 was a gift provided by Y. Zhong (Honegger et al., 2020). w; UAS-Brp-Short-mStrawberry; UAS-mCD8-GFP;+ was a gift of Timothy Mosca and was not outcrossed to the isokh11 background (Mosca and Luo, 2014).
 
-## Odor delivery
+### Odor delivery
 
 Odor delivery during behavioral tracking and neural activity imaging was controlled with isolation valve solenoids (NResearch Inc) (Honegger et al., 2020). Saturated headspace from 40 ml vials containing 5 ml pure odorant were serially diluted via carbon-filtered air to generate a variably (10–25%) saturated airstream controlled by digital flow controllers (Alicat Scientific) and presented to flies at total flow rates of ~100 ml/min. Dilution on the order of 10% is typical of other odor tunnel assays, as in Claridge-Chang et al., 2009. To yield the greatest signal of individual odor preference, dilution factors for odorants were adjusted on a week-by-week basis to ensure that the mean preference was approximately 50%. The odor panel used for imaging was comprised of the following odorants: 2-heptanone (CAS #110-43-0, MilliporeSigma), 1-pentanol (CAS #71-41-0, MilliporeSigma), 3-octanol (CAS #589-98-0, MilliporeSigma), hexyl-acetate (CAS #142-92-7, MilliporeSigma), 4-methylcyclohexanol (CAS #589-91-3, MilliporeSigma), pentyl acetate (CAS #628-63-7, MilliporeSigma), 1-butanol (CAS #71-36-3, MilliporeSigma), ethyl lactate (CAS #97-64-3, MilliporeSigma), geranyl acetate (CAS #105-87-3, MilliporeSigma), 1-hexanol (CAS #111-27-34, MilliporeSigma), citronella java essential oil (191112, Aura Cacia), and 200 proof ethanol (V1001, Decon Labs).
 
-## Odor preference behavior
+### Odor preference behavior
 
 Odor preference was measured at 25°C and 20% relative humidity. As previously described (Honegger et al., 2020), individual flies confined to custom-fabricated tunnels were illuminated with infrared light and behavior was recorded with a digital camera (Basler) and zoom lens (Pentax). The odor choice tunnels were 50 mm long, 5 mm wide, and 1.3 mm tall. Custom real-time tracking software written in MATLAB was used to track centroid, velocity, and principal body axis angle throughout the behavioral experiment, as previously described (Honegger et al., 2020). After a 3-minute acclimation period, odorants were delivered to either end of the tunnel array for 3 minutes. Odor preference score was calculated as the fraction of time spent in the reference side of the tunnel during odor-on period minus the time spent in the reference side of the tunnel during the pre-odor acclimation period.
 
-## Behavioral preference persistence measurements
+### Behavioral preference persistence measurements
 
 After measuring odor preference, flies were stored in individual housing fly plates (modified 96-well plates; FlySorter, LLC) on standard food, temperature, humidity, and lighting conditions. Odor preference of the same individuals was measured 3 and/or 24 hours later. In some cases, fly tunnel position was randomized between measurements. Tunnel position had no apparent effect on preference persistence.
 
-## Calcium imaging
+### Calcium imaging
 
 Flies expressing GCaMP6m in defined neural subpopulations were imaged using a custom-built two-photon microscope and ultrafast Ti:Sapphire laser (Spectra-Physics Mai Tai) tuned to 930 nm, at a power of 20 mW out of the objective (Olympus XLUMPlanFL N ×20/1.00 W). For paired behavior and imaging experiments, the time elapsed between behavior measurement and imaging ranged from 15 minutes to 3 hours. Flies were anesthetized on ice and immobilized in an aluminum sheet with a female-fly-sized hole cut in it. The head cuticle between the antennae and ocelli was removed along with the tracheae to expose the ALs from the dorsal side. Volume scanning was performed using a piezoelectric objective mount (Physik Instrumente). ScanImage 2013 software (Vidrio Technologies) was used to coordinate galvanometer laser scanning and image acquisition. Custom MATLAB (MathWorks) scripts were used to coordinate image acquisition and control odor delivery. 256 × 192 (x–y) pixel 16-bit tiff images were recorded. The piezo travel distance was adjusted between 70 and 90 μm so as to cover most of the AL. The number of z-sections in a given odor panel delivery varied between 7 and 12 yielding a volume acquisition rate of 0.833 Hz. Odor delivery occurred from 6 to 9.6 s of each recording.
 
 Each fly experienced up to four deliveries of the odor panel. The AL being recorded (left or right) was alternated after each successful completion of an odor panel. Odors were delivered in randomized order. In cases where baseline fluorescence was very weak or no obvious odor responses were visible, not all four panels were delivered.
 
-## Glomerulus segmentation and labeling
+### Glomerulus segmentation and labeling
 
 Glomerular segmentation masks were extracted from raw image stacks using a k-means clustering algorithm based on time-varying voxel fluorescence intensities, as previously described (Honegger et al., 2020). Each image stack, corresponding to a single odor panel delivery, was processed individually. Time-varying voxel fluorescence values for each odor delivery were concatenated to yield a voxel-by-time matrix consisting of each voxel’s recorded value during the course of all 13 odor deliveries of the odor panel. After z-scoring, principal component analysis was performed on this matrix and 75% of the variance was retained. Next, k-means (k = 80, 50 replicates with random starting seeds) was performed to produce 50 distinct voxel cluster assignment maps that we next used to calculate a consensus map. This approach was more accurate than clustering based on a single k-means seed.
 
 Of the 50 generated voxel cluster assignment maps, the top 5 were selected by choosing those maps with the lowest average within-cluster sum of distances, selecting for compact glomeruli. The remaining maps were discarded. Next, all isolated voxel islands in each of the top 5 maps were identified and pruned based on size (minimum size = 100 voxels, maximum size = 10,000 voxels). Finally, consensus clusters were calculated by finding voxel islands with significant overlap across all five of the pruned maps. Voxels that fell within a given cluster across all five pruned maps were added to the consensus cluster. This process was repeated for all clusters until the single consensus cluster map was complete. In some cases we found by manual inspection that some individual glomeruli were clearly split into two discrete clusters. These splits were remedied by automatically merging all consensus clusters whose centroids were separated by a physical distance of less than 30 voxels and whose peak odor response Spearman correlation was greater than 0.8. Finally, glomeruli were manually labeled based on anatomical position, morphology, and size (Grabe et al., 2015). We focused our analysis on five glomeruli (DM1, DM2, DM3, DL5, and DC2), which were the only glomeruli that could be observed in all paired behavior-calcium datasets. However, not all five glomeruli were identified in all recordings (Figure 1—figure supplement 3). Missing glomerular data was later mean-imputed. Using alternating least squares to impute data (running the pca function with option ‘als’ to infill missing values 1000 times and taking the mean infilled matrix – see Figure 1—figure supplement 5 of Werkhoven et al., 2021) had negligible effect on the fitted slope and predictive capacity of the PN PC2 OCT-MCH model compared to mean-infilling.
 
-## Calcium image data analysis
+### Calcium image data analysis
 
 All data was processed and analyzed in MATLAB pca documentation, 2018 (MathWorks). Calcium responses for each voxel were calculated as Δf/f = [f(t) - F]/F, where f(t) and F are the instantaneous and average fluorescence, respectively. Each glomerulus' time-dependent calcium response was calculated as the mean Δf/f across all voxels falling within the glomerulus’ automatically-generated segmentation mask during a single volume acquisition. Time-varying odor responses were normalized to baseline by subtracting the median of pre-odor Δf/f from each trace. Peak odor response was calculated as the maximum fluorescence signal from 7.2s to 10.8s (images 6–9) of the recording.
 
@@ -145,7 +635,7 @@ To decode individual identity from neural responses, we first performed PCA on i
 
 To decode odor identity from neural responses, each of the five recorded glomeruli were used as features, and the calcium response of each glomerulus to a specific odor at a specified time point were used as observations (PNs, n = 5317 odor deliveries; ORNs, n = 2704 odor deliveries). A linear logistic classifier was trained to predict the known odor identity using twofold cross-validation. That is, a model was trained on half the data and evaluated on the remaining half, and then this process was repeated with the train and test half reversed. The decoding accuracy was quantified as the fraction of odor deliveries in which the predicted odor was correct.
 
-## Inference of correlation between latent calcium and behavior states
+### Inference of correlation between latent calcium and behavior states
 
 We performed a simulation-based analysis to infer the strength of the correlation between latent calcium (Brp) and behavior states, given the R2 of a given linear model. Figure 1—figure supplement 9 is a schematic of a possible data generation process that underlies our observed data. We assume that the ‘true’ behavioral and calcium values of the animal are captured by unobserved latent states Xc and Xb, respectively, such that the R2 between Xc and Xb is the biological signal captured by the model, having adjusted for the noise associated with actually measuring behavior and calcium (R2latent). Our calcium and odor preference scores are subject to measurement error and temporal instability (behavior and neural activity were measured 1–3 hours apart). These effects are both noise with respect to estimating the linear relationship between calcium and behavior. Their magnitude can be estimated using the empirical repeatability of behavior and calcium experiments respectively. Thus, our overall approach was to assume true latent behavior and calcium signals that are correlated by the level set at R2latent, add noise commensurate with the repeatability of these measures to simulate measured behavior and calcium, and record the simulated empirical R2 between these measured signals. This was done many times to estimate distributions of empirical R2 given R2latent. These distributions could finally be used in the inverse direction to infer R2latent given the actual model R2 values computed in our study.
 
@@ -157,55 +647,63 @@ We varied rlatent from 0 to 1 in increments of 0.01, and for each rlatent and bo
 
 The procedure outlined above was done analogously for models using Brp-Short relative fluorescence intensity, performing the PCA-based calcium response repeatability step with PCA on the multidimensional Brp-Short relative fluorescence intensity (which yielded R2brp,brp = 0.78).
 
-## DoOR data
+### DoOR data
 
 DoOR data for the glomeruli and odors relevant to our study was downloaded from http://neuro.uni-konstanz.de/DoOR/default.html (Münch and Galizia, 2016).
 
-## Yoked odor experience experiments
+### Yoked odor experience experiments
 
 We selected six flies for which both odor preference and neural activity were recorded to serve as the basis for imposed odor experiences for yoked control flies. The experimental flies were chosen to represent a diversity of preference scores. Each experimental fly’s odor experience was binned into discrete odor bouts to represent experience of either MCH or OCT based on its location in the tunnel as a function of time (Figure 2D). Odor bouts lasting less than 100 ms were omitted due to limitations on odor-switching capabilities of the odor delivery apparatus. To deliver a given experimental fly’s odor experience to yoked controls, we set both odor streams (on either end of the tunnel apparatus) to deliver the same odor experienced by the experimental fly at that moment during the odor-on period. No odor was delivered to yoked controls during time points in which the experimental fly resided in the tunnel choice zone (central 5 mm). See Figure 2D for an example pair of experimental fly and yoked control behavior and odor experience.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After measuring odor preference behavior, 7–15-day-old flies were anesthetized on ice and brains were dissected in phosphate-buffered saline (PBS). Dissection and immunohistochemistry were carried out as previously reported (Wu and Luo, 2006). The experimenter was blind to the behavioral scores of all individuals throughout dissection, imaging, and analysis. Individual identities were maintained by fixing, washing, and staining each brain in an individual 0.2 ml PCR tube using fluid volumes of 100 ul per brain (Fisher Scientific). Primary incubation solution contained mouse anti-nc82 (1:40, DSHB), chicken anti-GFP (1:1000, Aves Labs), rabbit anti-mStrawberry (1:1000, biorbyt), and 5% normal goat serum (NGS, Invitrogen) in PBT (0.5% Triton X-100 in PBS). Secondary incubation solution contained Atto 647N-conjugated goat anti-mouse (1:250, MilliporeSigma), Alexa Fluor 568-conjugated goat anti-rabbit (1:250), Alexa Fluor 488-conjugated goat anti-chicken (1:250, Thermo Fisher), and 5% NGS in PBT. Primary and secondary incubation times were two and three overnights, respectively, at 4°C. Stained samples were mounted and cleared in Vectashield (H-1000, Vector Laboratories) between two coverslips (12-568B, Fisher Scientific). Two reinforcement labels (5720, Avery) were stacked to create a 0.15 mm spacer.
 
-## Expansion microscopy
+### Expansion microscopy
 
 Immunohistochemistry for expansion microscopy was carried out as described above, with the exception that antibody concentrations were modified as follows: mouse anti-nc82 (1:40), chicken anti-GFP (1:200), rabbit anti-mStrawberry (1:200), Atto 647N-conjugated goat anti-mouse (1:100), Alexa Fluor 568-conjugated goat anti-rabbit (1:100), and Alexa Fluor 488-conjugated goat anti-chicken (1:100). Expansion of stained samples was performed as previously described (Asano et al., 2018; Gao et al., 2019). Expanded samples were mounted in coverslip-bottom Petri dishes (MatTek Corporation) and anchored by treating the coverslip with poly-l-lysine solution (MilliporeSigma) as previously described (Asano et al., 2018).
 
-## Confocal imaging
+### Confocal imaging
 
 All confocal imaging was carried out at the Harvard Center for Biological Imaging. Unexpanded samples were imaged on an LSM700 (Zeiss) inverted confocal microscope equipped with a ×40 oil-immersion objective (1.3 NA, EC Plan Neofluar, Zeiss). Expanded samples were imaged on an LSM880 (Zeiss) inverted confocal microscope equipped with a ×40 water-immersion objective (1.1 NA, LD C-Apochromat, Zeiss). Acquisition of z-stacks was automated with Zen Black software (Zeiss).
 
-## Standard confocal image analysis
+### Standard confocal image analysis
 
 We used custom semi-automated code to generate glomerular segmentation masks from confocal z-stacks of unexpanded Orco>Brp-Short brains. Using MATLAB, each image channel was median filtered (σx, σy, σz = 11, 11, 1 pixels) and downsampled in x and y by a factor of 11. Next, an ORN mask was generated by multiplying and thresholding the Orco>mCD8 and Orco>Brp-Short channels. Next, a locally normalized nc82 and Orco>mCD8 image stack were multiplied and thresholded, and the ORN mask was applied to remove background and other undesired brain structures. This pipeline resulted in a binary image stack that maximized the contrast of the glomerular structure of the AL. We then applied a binary distance transform and watershed transform to generate discrete subregions that aimed to represent segmentation masks for each glomerulus tagged by Orco-Gal4.
 
 However, this procedure generally resulted in some degree of under-segmentation; that is, some glomerular segmentation masks were merged. To split each merged segmentation mask, we convolved a ball (whose radius was proportional to the cube root of the volume of the segmentation mask in question) across the mask and thresholded the resulting image. The rationale of this procedure was that two merged glomeruli would exhibit a mask shape resembling two touching spheres, and convolving a similarly sized sphere across this volume followed by thresholding would split the merged object. After ball convolution, we repeated the distance and watershed transform to once more generate discrete subregions representing glomerular segmentation masks. This second watershed step generally resulted in over-segmentation; that is, by visual inspection it was apparent that many glomeruli were split into multiple subregions. Therefore, we finally manually agglomerated the over-segmented subregions to generate single segmentation masks for each glomerulus of interest. We used a published atlas to aid manual identification of glomeruli (Grabe et al., 2015). The total Brp-Short fluorescence signal within each glomerulus was determined and divided by the volume of the glomerulus’ segmentation mask to calculate Brp-Short density values.
 
-## Expansion microscopy image analysis
+### Expansion microscopy image analysis
 
 The spots function in Imaris 9.0 (Bitplane) was used to identify individual Brp-Short puncta in expanded sample image stacks of Or13a>Brp-Short samples (Mosca and Luo, 2014). The spot size was set to 0.5 um, background subtraction and region-growing were enabled, and the default spot quality threshold was used for each image stack. Identified spots were used to mask the Brp-Short channel and the resultant image was saved as a new stack. In MATLAB, a glomerular mask was generated by smoothing (σx, σy, σz = 40, 40, 8 pixels) and thresholding (92.5th percentile) the raw Brp-Short image stack. The mask was then applied to the spot image stack to remove background spots. Finally, the masked spot image stack was binarized and spot number and properties were quantified.
 
-## Antennal lobe modeling
+### Antennal lobe modeling
 
 We constructed a model of the AL to test the effect of circuit variation on PN activity variation across individuals. Our general approach to producing realistic circuit activity with the AL model was (1) using experimentally measured parameters whenever possible (principally the connectome wiring diagram and biophysical parameters measured electrophysiologically), (2) associating free parameters only with biologically plausible categories of elements, while minimizing their number, and (3) tuning the model using those free parameters so that it reproduced high-level patterns of activity considered in the field to represent the canonical operations of the AL. Simulations were run in Python (version 3.6) (Rossum and Drake, 2011), and model outputs were analyzed using Jupyter notebooks (Kluyver et al., 2016) and Python and MATLAB scripts.
 
-## AL model neurons
+### AL model neurons
 
 Release 1.2 of the hemibrain connectomics dataset (Scheffer et al., 2020) was used to set the connections in the model. Hemibrain body IDs for ORNs, LNs, and PNs were obtained via the lists of neurons supplied in the supplementary tables in Schlegel et al., 2020. ORNs and PNs of non-olfactory glomeruli (VP1d, VP1l, VP1m, VP2, VP3, VP4, VP5) were ignored, leaving 51 glomeruli. Synaptic connections between the remaining 2574 ORNs, 197 LNs, 166 mPNs, and 130 uPNs were queried using the neuprint-python API (Plaza et al., 2022). All ORNs were assigned to be excitatory (Wilson, 2013). Polarities were assigned to PNs based on the neurotransmitter assignments in Bates et al., 2020. mPNs without neurotransmitter information were randomly assigned an excitatory polarity with probability equal to the fraction of neurotransmitter-identified mPNs that are cholinergic; the same process was performed for uPNs. After confirming that the model’s output was qualitatively robust to which mPNs and uPNs were randomly chosen, this random assignment was performed once and then frozen for subsequent analyses.
 
 Of the 197 LNs, we assigned 31 to be excitatory, based on the estimated 1:5.4 ratio of eLNs to iLNs in the AL (Tsai et al., 2018). To account for observations that eLNs broadly innervate the AL (Shang et al., 2007), all LNs were ranked by the number of innervated glomeruli, and the 31 eLNs were chosen uniformly at random from the top 50% of LNs in the list. This produced a distribution of glomerular innervations in eLNs qualitatively similar to that of krasavietz LNs in Supplementary Figure 6 of Chou et al., 2010.
 
-## Voltage model
+### Voltage model
 
-We used a single-compartment leaky-integrate-and-fire voltage model for all neurons as in Kakaria and de Bivort, 2017, in which each neuron had a voltage Vi(t) and current Ii(t). When the voltage of neuron i was beneath its threshold Vi, thr, the following dynamics were obeyed:CidVidt=Vi,0−Vi(t)Ri+Ii,odor(t)+∑j=1NaiWjiIj(t)
+We used a single-compartment leaky-integrate-and-fire voltage model for all neurons as in Kakaria and de Bivort, 2017, in which each neuron had a voltage Vi(t) and current Ii(t). When the voltage of neuron i was beneath its threshold Vi, thr, the following dynamics were obeyed:
+
+$$
+C_{i}\frac{dV_{i}}{dt}=\frac{V_{i,0}−V_{i}(t)}{R_{i}}+I_{i,odor}(t)+\sumj=1Na_{i}W_{ji}I_{j}(t)
+$$
 
 Each neuron i had electrical properties: membrane capacitance Ci, resistance Ri, and resting membrane potential Vi,0 with values from electrophysiology measurements (Table 2).
 
 When the voltage of a neuron exceeded the threshold Vi, thr, a templated action potential was filled into its voltage time trace, and a templated postsynaptic current was added to all downstream neurons, following the definitions in Kakaria and de Bivort, 2017.
 
-Odor stimuli were simulated by triggering ORNs to spike at frequencies matching known olfactory receptor responses to the desired odor. The timing of odor-evoked spikes was given by a Poisson process, with firing rate FR for ORNs of a given glomerulus governed byFRglom,odor(t)=FRmaxDglom,odor(fa+(1−fa)e−t/ta)
+Odor stimuli were simulated by triggering ORNs to spike at frequencies matching known olfactory receptor responses to the desired odor. The timing of odor-evoked spikes was given by a Poisson process, with firing rate FR for ORNs of a given glomerulus governed by
+
+$$
+FR_{glom,odor}(t)=FR_{max}D_{glom,odor}(f_{a}+(1−f_{a})e^{−t/t_{a}})
+$$
 
 FRmax, the maximum ORN firing rate, was set to 400 Hz. Dglom, odor is a value between 0 and 1 from the DoOR database, representing the response of an odorant receptor/glomerulus to an odor, estimated from electrophysiology and/or fluorescence data (Münch and Galizia, 2016). ORNs display adaptation to odor stimuli (Wilson, 2013), captured by the final term with timescale ta = 110 ms to 75% of the initial value, as done in Kao and Lo, 2020. Thus, the functional maximum firing rate of an ORN was 75% of 400 Hz = 300 Hz, matching the highest ORN firing rates observed experimentally (Hallem et al., 2004). After determining the times of ORN spikes according to this firing-rate rule, spikes were induced by the addition of 106 picoamps in a single time step. This reliably triggered an action potential in the ORN, regardless of currents from other neurons. In the absence of odors, spike times for ORNs were drawn by a Poisson process at 10 Hz, to match reported spontaneous firing rates (de Bruyne et al., 2001).
 
@@ -213,7 +711,7 @@ For odor-glomeruli combinations with missing DoOR values (40% of the dataset), w
 
 A neuron j presynaptic to i supplies its current Ij(t) scaled by the synapse strength Wji, the number of synapses in the hemibrain dataset from neuron j to i. Rows in W corresponding to neurons with inhibitory polarity (i.e., GABAergic PNs or LNs) were set negative. Finally, postsynaptic neurons (columns of the connectivity matrix) have a class-specific multiplier ai, a hand-tuned value, described below.
 
-## AL model tuning
+### AL model tuning
 
 Class-specific multiplier current multipliers (ai) were tuned using the panel of 18 odors from Bhandawat et al., 2007 (our source for several experimental observations of high-level AL function): benzaldehyde, butyric acid, 2,3-butanedione, 1-butanol, cyclohexanone, Z3-hexenol, ethyl butyrate, ethyl acetate, geranyl acetate, isopentyl acetate, isoamyl acetate, 4-methylphenol, methyl salicylate, 3-methylthio-1-propanol, octanal, 2-octanone, pentyl acetate, E2-hexenal, trans-2-hexenal, and gamma-valerolactone. Odors were ‘administered’ for 400 ms each, with 300 ms odor-free pauses between odor stimuli.
 
@@ -225,16 +723,20 @@ We analyzed the sensitivity of the model’s parameters around their baseline va
 
 Notable ways in which the model behavior deviates from experimental recordings (and thus caveats on the interpretation of the model) include (1) model LNs appear to have more heterogeneous firing rates than real LNs, with many LNs inactive for this panel of odor stimuli. This likely reflects a lack of plastic/homeostatic mechanisms in the model to regularize LN firing rates given their variable synaptic connectivity (Chou et al., 2010). (2) Some PNs had off-odor rates that are high compared to real PNs, resulting in a distribution of ON-OFF responses that had a lower limit than in real recordings. Qualitatively close matches were achieved between the model and experimental data in the distributions of odor representations in ORN vs. PN spaces and the nonlinearity of the ORN-PN transfer function.
 
-## AL model circuit variation generation
+### AL model circuit variation generation
 
 We generated AL circuit variability in two ways: cell-type bootstrapping and synapse density resampling. These methods assume that the distribution of circuit configurations across individual ALs can be generated by resampling circuit components within a single individual’s AL (neurons and glomerular synaptic densities, respectively, from the hemibrain EM volume).
 
 To test the effect of developmental variation in the complement of neurons of particular types, we bootstrapped populations of interest from the list of hemibrain neurons. Resampling with replacement of ORNs was performed glomerulus-by-glomerulus, that is, separately among each pool of ORNs expressing a particular Odorant receptor gene. The same was done for PNs. For LNs, all 197 LNs were treated as a single pool; there was no finer operation based on LN subtypes or glomerular innervations. This choice reflects the high developmental variability of LNs (Chou et al., 2010). The number of synapses between a pair of bootstrapped neurons was equal to the synapse count between those neurons in the hemibrain connectivity matrix.
 
-In some glomeruli, bootstrapping PNs produced unreasonably high variance in the total PN synapse count. For instance, DP1m, DC4, and DM3 each harbor PNs that differ in total synapse count by a factor of ~10. Since these glomeruli have between two to three PNs each, in a sizable proportion of bootstrap samples, all-highly connected (or all-lowly) connected PNs are chosen in such glomeruli. To remedy this biologically unrealistic outcome, we examined the relationship between total input PN synapses within a glomerulus and glomerular volume (Figure 4—figure supplement 4). In the ‘synapse density resampling’ method, we required that the number of PN input synapses within a glomerulus reflect a draw from the empirical relationship between total input PN synapses and glomerular volume as present in the hemibrain dataset. This was achieved by, for each glomerulus, sampling from the following distribution that depends on glomerular volume, then multiplying the number of PN input synapses by a scalar to match that sampled value:log⁡Sg=log⁡(aVgd)+εg,εg∼N(0,σ2)
+In some glomeruli, bootstrapping PNs produced unreasonably high variance in the total PN synapse count. For instance, DP1m, DC4, and DM3 each harbor PNs that differ in total synapse count by a factor of ~10. Since these glomeruli have between two to three PNs each, in a sizable proportion of bootstrap samples, all-highly connected (or all-lowly) connected PNs are chosen in such glomeruli. To remedy this biologically unrealistic outcome, we examined the relationship between total input PN synapses within a glomerulus and glomerular volume (Figure 4—figure supplement 4). In the ‘synapse density resampling’ method, we required that the number of PN input synapses within a glomerulus reflect a draw from the empirical relationship between total input PN synapses and glomerular volume as present in the hemibrain dataset. This was achieved by, for each glomerulus, sampling from the following distribution that depends on glomerular volume, then multiplying the number of PN input synapses by a scalar to match that sampled value:
+
+$$
+log⁡S_{g}=log⁡(aV_{g}^{d})+\epsilon_{g},\epsilon_{g}∼N(0,\sigma^{2})
+$$
 
 Here, Sg is the PN input synapse count for glomerulus g, Vg is the volume of glomerulus g (in cubic microns), ε is a Gaussian noise variable with SD σ, and a, d are the scaling factor and exponent of the volume term, respectively. The values of these parameters (a = 8.98, d = 0.73, σ = 0.38) were fit using maximum likelihood.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All fly behavior and calcium data was processed and analyzed in MATLAB pca documentation, 2018 (MathWorks). AL simulations were run in Python (version 3.6) (Rossum and Drake, 2011), and model outputs were analyzed using Jupyter notebooks (Kluyver et al., 2016) and Python scripts. We performed a power analysis prior to the study to determine that recording calcium activity in 20–40 flies would be sufficient to identify moderate calcium–behavior correlations. Sample sizes for expansion microscopy were smaller, as the experimental procedure was more involved – therefore, we did not conduct a formal statistical analysis. Linear models were fit using the fitlm MATLAB function (https://www.mathworks.com/help/stats/fitlm.html); coefficients and p values of models between measured preferences and predicted preferences are listed in Table 1. 95% CIs around model regression lines were estimated as ±2 SDs of the value of the regression line at each x-position across 2000 bootstrap replicates (resampling flies). Boxplots depict the median value (points), interquartile range (boxes), and range of the data (whiskers).

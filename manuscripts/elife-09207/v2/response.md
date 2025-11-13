@@ -72,9 +72,7 @@ Minor comments [abridged]:
 
 1) The authors conclude that phosphorylation of ATR is not affected by SPOP mutations, but the blots in Figure 3–figure supplement 1F and H are discordant in this sense. Please repeat with several biological replicates to define this issue.
 
-The results presented originally were representative of at least three biological replicates (Author response image 1). We found ATR phosphorylation in this experiment to be highly variable, especially in the 22Rv1 cell line – however, there was no consistent effect of SPOP siRNA or ectopic expression of wt or mutant SPOP on ATR phosphorylation.10.7554/eLife.09207.027Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.09207.027
-
-DOI: http://dx.doi.org/10.7554/eLife.09207.027
+The results presented originally were representative of at least three biological replicates (Author response image 1). We found ATR phosphorylation in this experiment to be highly variable, especially in the 22Rv1 cell line – however, there was no consistent effect of SPOP siRNA or ectopic expression of wt or mutant SPOP on ATR phosphorylation.10.7554/eLife.09207.027Author response image 1.
 
 2) In the zebrafish experiments, SPOP knockdown leads to cell death concurrently with induction of p53 mRNA and induced expression of the p53 target genes MDM2 and CCNG1. The authors should comment on this, acknowledging that cell death could be due to p53 activation in this setting.
 
@@ -84,6 +82,4 @@ The reviewers correctly note that SPOP knockdown triggered a transcriptional res
 
 The reviewers pose an excellent question – mutual exclusivity between SPOP mutations and BRCA2 and ATM mutations described in the SU2C/PCF cohort (Robinson et al., Cell 2015) of CRPC samples would support a continued role of SPOP mutation in compromised DNA repair in CRPC.
 
-As shown below (Author response image 2), no CRPC samples harbor both SPOP mutation and ATM mutations. Two cancers showed both SPOP mutation and BRCA2 mutation, and one sample had both an ATM mutation and BRCA2 mutation. The sample size (n=150 total) and event rates preclude meaningful statistical analysis (all p-values non significant for analysis (all p-values non significant for analysis mutual exclusivity). We have added this analysis to Figure 2–figure supplement 4B.10.7554/eLife.09207.028Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.09207.028
-
-DOI: http://dx.doi.org/10.7554/eLife.09207.028
+As shown below (Author response image 2), no CRPC samples harbor both SPOP mutation and ATM mutations. Two cancers showed both SPOP mutation and BRCA2 mutation, and one sample had both an ATM mutation and BRCA2 mutation. The sample size (n=150 total) and event rates preclude meaningful statistical analysis (all p-values non significant for analysis (all p-values non significant for analysis mutual exclusivity). We have added this analysis to Figure 2–figure supplement 4B.10.7554/eLife.09207.028Author response image 2.

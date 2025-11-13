@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.36572.001 Under chronic or severe liver injury, liver progenitor cells (LPCs) of biliary origin are known to expand and contribute to the regeneration of hepatocytes and cholangiocytes. This regeneration process is called ductular reaction (DR), which is accompanied by dynamic remodeling of biliary tissue. Although the DR shows apparently distinct mode of biliary extension depending on the type of liver injury, the key regulatory mechanism remains poorly understood. Here, we show that Lutheran (Lu)/Basal cell adhesion molecule (BCAM) regulates the morphogenesis of DR depending on liver disease models. Lu + and Lu - biliary cells isolated from injured liver exhibit opposite phenotypes in cell motility and duct formation capacities in vitro. By overexpression of Lu, Lu - biliary cells acquire the phenotype of Lu + biliary cells. Lu-deficient mice showed severe defects in DR. Our findings reveal a critical role of Lu in the control of phenotypic heterogeneity of DR in distinct liver disease models.
+Under chronic or severe liver injury, liver progenitor cells (LPCs) of biliary origin are known to expand and contribute to the regeneration of hepatocytes and cholangiocytes. This regeneration process is called ductular reaction (DR), which is accompanied by dynamic remodeling of biliary tissue. Although the DR shows apparently distinct mode of biliary extension depending on the type of liver injury, the key regulatory mechanism remains poorly understood. Here, we show that Lutheran (Lu)/Basal cell adhesion molecule (BCAM) regulates the morphogenesis of DR depending on liver disease models. Lu+ and Lu- biliary cells isolated from injured liver exhibit opposite phenotypes in cell motility and duct formation capacities in vitro. By overexpression of Lu, Lu- biliary cells acquire the phenotype of Lu+ biliary cells. Lu-deficient mice showed severe defects in DR. Our findings reveal a critical role of Lu in the control of phenotypic heterogeneity of DR in distinct liver disease models.
 
 ## Introduction
 
@@ -42,43 +42,103 @@ In the present study, we identified Lutheran blood group glycoprotein (Lu) as a 
 
 ## Results
 
-## Lutheran is differentially expressed in CDE- and DDC-induced DR
+### Lutheran is differentially expressed in CDE- and DDC-induced DR
 
 We have previously identified Epithelial cell adhesion molecule (EpCAM) as a marker for murine LPC/BEC (Okabe et al., 2009). To investigate the difference in DRs between the CDE and DDC models, immunohistochemical analysis of EpCAM was performed. Both protocols of feeding CDE and DDC diet for 3 weeks induced robust DR accompanied by biliary cell expansion. However, the appearance of propagating ducts exhibited strikingly distinct features between two models; CDE-induced biliary cells displayed primitive capillary-like morphology, invading into the parenchymal area extensively, while DDC-induced biliary cells exhibited remarkable duct-like structure, remaining around the periportal area (Figure 1A). Similarly, immunostaining of CK19, another LPC marker, showed a pattern similar to that of EpCAM (Figure 1—figure supplement 1). Because most known LPC markers are uniformly expressed in both types of DR, these molecules may not account for the heterogeneity of LPC. Therefore, we examined the expression profile of Lu in both injury models, because we have identified Lu as a marker for hepatoblasts, a fetal type LPC during liver development. Co-staining of liver sections using anti-EpCAM and anti-Lu antibodies revealed that Lu was detected in extending biliary cells of the CDE-fed liver, whereas we could not find such signals in biliary cells of DDC-fed liver except intense signal in EpCAM- ducts (Figure 1B). As reported by the previous paper that Lu is stained in hepatic arteries and portal vein of adult human liver (Parsons et al., 1995), co-staining of Lu and platelet endothelial cell adhesion molecule (PECAM), an endothelial marker, in the DDC-fed liver revealed that the EpCAM- duct with strong fluorescence is hepatic artery (Figure 1—figure supplement 2). Next, to compare the expression level of Lu in biliary cells, we performed flow cytometric (FCM) analysis using anti-EpCAM and anti-Lu antibodies. In untreated normal liver, FCM and immunohistochemical analyses demonstrated that most EpCAM+ biliary cells showed moderate expression of Lu (Figure 1C and Figure 1—figure supplement 3). By contrast, approximately 35% of EpCAM+ cells in CDE-fed liver showed high expression of Lu, whereas nearly half of EpCAM+ cells in DDC-fed liver exhibited low or negative expression of Lu (Figure 1C). These opposing expression profiles of Lu in the CDE and DDC models led us to hypothesize that Lu might regulate the morphological heterogeneity of expanding biliary cells between these distinct injury models.
 
-## Isolation of biliary cells with a distinct level of Lu from chronically injured liver
+![Figure 1.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunohistochemical analysis of CDE-fed and DDC-fed mouse liver sections for EpCAM. (B) Co-localization of EpCAM and Lu in CDE-fed and DDC-fed mouse liver sections. (C) Comparison of Lu expression level in EpCAM+ cells among normal diet-fed, CDE-fed and DDC-fed mouse livers by flow cytometric analysis. PV: portal vein. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The LPCs in the CDE model exhibit spindle like shape forming primitive ductules, while those in the DDC model show obvious duct structure. Scale bar: 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Co-staining of PECAM and Lu was performed in liver sections of normal diet- and DDC-fed mouse liver. Arrows show a doubly stained hepatic artery. PV: portal vein. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Arrows and arrowheads point to hepatic arteries and bile ducts, respectively. The fluorescence signal of Lu is weakly detected in EpCAM+ bile ducts, while it is saturated in EpCAM- hepatic arteries in this setting of exposure. PV: portal vein. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Ba/F3 cell, a murine pro B-cell line, was transduced with retroviral vector containing cDNA encoding mouse Lu and green fluorescent protein (GFP). By FCM analysis, the only GPF-positive cells that express Lu shift with anti-Lu antibody.
+
+### Isolation of biliary cells with a distinct level of Lu from chronically injured liver
 
 To uncover the role of Lu in regulating biliary cell morphology, we isolated Luhigh and Lu-/low biliary cell fractions from CDE-injured livers by FACS, and then cultured each population. Although Lu is highly expressed in endothelial cells, we confirmed that a contamination of such cells in EpCAM+ gating is highly unlikely as shown in Figure 2—figure supplement 1. We refer to these cultured biliary cells as Lu+ BC and Lu- BC in the following studies. Interestingly, similar to the morphological characteristics of DR in vivo, Lu+ BC displayed spindle-like shape while Lu- BC showed epithelial-like morphology even after several passages (Figure 2A). Fluorescent staining using Phalloidin demonstrated that the actin fibers and pseudopods are formed in the atypical cell body of Lu+ BC while F-actin accumulates in the periphery of round-shaped cell body of Lu- BC (Figure 2B). By contrast, when freshly isolated EpCAM+ cholangiocytes from untreated normal liver were cultured on the dish, the attached cells exhibited a mixture of round and indefinite morphology (Figure 2—figure supplement 2). Furthermore, FCM analysis of cultured Lu+ BC and Lu- BC revealed that the expression profile of Lu was maintained in each cell; Luhigh-derived biliary cells continued to express Lu at a high level, while Lu-/low-derived biliary cells hardly expressed Lu (Figure 2D). By contrast, several stem cell markers such as CD24 and CD44 were expressed similarly between Lu+ BC and Lu- BC, suggesting that these cells are closely related, but distinct homogeneous populations.
 
-## Comparison of cell motility and cyst forming capacity between Lu+ BC and Lu- BC
+![Figure 2.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative images of Lu+ BC and Lu- BC by bright field microscopy. (B) Immunocytochemistry for F-actin in cultured Lu+ BC and Lu- BC. Arrowhead indicates pseudopod. (C) Flow cytometric analysis of Lu, Sca1, CD24, CD44, and CD71 expression levels in Lu+ BC and Lu- BC. The cultured Lu+ BC and Lu- BC were used for analysis after 6 passages. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** NPCs were analyzed by flow cytometry after triple staining with anti-EpCAM, anti-Lu and anti-PECAM antibodies. (A) FCM analysis of EpCAM, Lu and PECAM expression. EpCAM+ fraction is clearly distinguished from PECAM+ fraction by FACS. (B) Gating strategy for the isolation of EpCAM+ cells by FACS. There is no contamination of PECAM+ cells in the gate of EpCAM+Lu+ biliary cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The image was acquired 7 days after primary culture. The attached cells showed a mixture of round and indefinite shape. Scale bar: 100 μm.
+
+### Comparison of cell motility and cyst forming capacity between Lu+ BC and Lu- BC
 
 Considering that biliary cell with high expression of Lu in the CDE model exhibits an invasive phenotype in vivo, Lu+ BC is expected to have a higher capacity for cell motility than Lu- BC. To compare the capacity for cell motility between Lu+ BC and Lu- BC, we performed an in vitro scratch assay, by which the moving distance was evaluated after creating a scratch on the dish. As expected, Lu+ BC showed significantly higher motility capacity than Lu- BC (Figure 3A), suggesting that there is a causal link between Lu expression level and cell motility.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig3-v2.jpg)
 
-**Figure 3.:** - BC and Lu+ BC characteristics by scratch assay and cyst formation assay.(A) Scratch assay using Lu- BC or Lu+ BC. Representative images of day 0, day 1, and day 2 after scratch are shown. Quantitative data of cell moving distance at day 1 are plotted in a graph with mean and standard deviation. n = 4 biological replicates. Dotted line indicates cell front of scratched gap. (B) Schematic diagram of three-dimensional culture and cyst generation. (C) Bright field microscopic image of three-dimensionally cultured Lu+ BC and Lu- BC at culture day 4 or day 6. Arrows and arrowheads point to cysts and cell aggregates, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.10.7554/eLife.36572.012Figure 3—source data 1.Figure 3A: Numerical data for measurements of migrating distance in the scratch assay using Lu- BC and Lu+ BC.Figure 3C: Numerical data for the details of formed cyst in the 3D culture using Lu- BC and Lu+ BC.
+**Figure 3.:** (A) Scratch assay using Lu- BC or Lu+ BC. Representative images of day 0, day 1, and day 2 after scratch are shown. Quantitative data of cell moving distance at day 1 are plotted in a graph with mean and standard deviation. n = 4 biological replicates. Dotted line indicates cell front of scratched gap. (B) Schematic diagram of three-dimensional culture and cyst generation. (C) Bright field microscopic image of three-dimensionally cultured Lu+ BC and Lu- BC at culture day 4 or day 6. Arrows and arrowheads point to cysts and cell aggregates, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.
 
 On the other hand, biliary cells with low or no expression of Lu in the DDC model exhibited an obvious luminal structure around the portal vein in vivo, suggesting that Lu- BC has higher capacity for duct formation than Lu+ BC. As previously reported, LPCs are able to form cyst-like luminal structures with biliary epithelial polarity in a three-dimensional (3D) organoid culture (Tanimizu et al., 2007). We thereby compared the cyst-forming capacity between Lu- BC and Lu+ BC in the 3D culture system (Figure 3B). After 6 days of culture, Lu- BC formed a large number of cystic structures, while Lu+ BC formed only small cell aggregates, demonstrating that Lu- BC has higher duct-forming capacity than Lu+ BC (Figure 3C). Thus, Lu+ BC and Lu- BC showed distinct features of cell motility and cyst formation in vitro. These results suggest that Lu may play a crucial role in the cell kinetics of biliary cell.
 
-## Lu- BC acquires the characteristics of Lu+ BC by overexpression of Lu
+### Lu- BC acquires the characteristics of Lu+ BC by overexpression of Lu
 
 To investigate whether Lu expression is responsible for the characteristics of biliary cells, cDNA encoding either mouse Lu (mLu) and green fluorescent protein (GFP) or only GFP as a control was transduced into Lu- BC by retroviral vector. The mLu-transduced Lu- BC (Lu- BC-mLu) showed morphological change into a spindle-like shape, while GFP-transduced control (Lu- BC-GFP) retained a round shape (Figure 4A). In the scratch assay, Lu- BC-mLu showed higher mobility than Lu- BC-GFP (Figure 4B). In contrast, the cyst formation assay demonstrated the reduced cyst-forming capacity of Lu- BC-mLu, resulting in the formation of numerous small aggregates (Figure 4C). These results strongly suggested that Lu- BC acquired the Lu+ BC-like phenotype after Lu expression, and that Lu might endow biliary cells with characteristics of spindle shape morphology and enhanced motility.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic description for generating Lu- BC-mLu or Lu- BC-GFP by using retrovirus vector. Flow cytometric analyses show expression level of Lu and GFP. Bright field microscopic images show morphological change in Lu- BC-mLu. (B) Scratch assay using Lu- BC-GFP or Lu- BC-mLu. Representative images of day 0, day 1, and day 2 after scratch are shown. Quantitative data of cell moving distance at day 1 are plotted in a graph with mean and standard deviation. n = 5 biological replicates. Dotted line indicates cell front of scratched gap. (C) Bright field microscopic image of three-dimensionally cultured Lu- BC-GFP or Lu- BC-mLu at culture day 6. Arrows and arrowheads point to cysts and cell aggregates, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.10.7554/eLife.36572.014Figure 4—source data 1.Figure 4B: Numerical data for measurements of migrating distance in the scratch assay using Lu- BC-GFP and Lu- BC-mLu.Figure 4C: Numerical data for the details of formed cyst in the 3D culture using Lu- BC-GFP and Lu- BC-mLu.
+**Figure 4.:** (A) Schematic description for generating Lu- BC-mLu or Lu- BC-GFP by using retrovirus vector. Flow cytometric analyses show expression level of Lu and GFP. Bright field microscopic images show morphological change in Lu- BC-mLu. (B) Scratch assay using Lu- BC-GFP or Lu- BC-mLu. Representative images of day 0, day 1, and day 2 after scratch are shown. Quantitative data of cell moving distance at day 1 are plotted in a graph with mean and standard deviation. n = 5 biological replicates. Dotted line indicates cell front of scratched gap. (C) Bright field microscopic image of three-dimensionally cultured Lu- BC-GFP or Lu- BC-mLu at culture day 6. Arrows and arrowheads point to cysts and cell aggregates, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.
 
-## Constitutive association of Lama5 with DR in chronically injured livers
+### Constitutive association of Lama5 with DR in chronically injured livers
 
 Although the differential expression profile of Lu is likely to be relevant to the phenotypic heterogeneity of DR, the molecular mechanism by Lu remains unclear. Because Lu is known to be a receptor for Lama5 and bind to Laminin-511 and -521, we next investigated the expression of Lama5 in CDE- and DDC-injured livers. Intriguingly, double staining of EpCAM and Lama5 revealed that most expanding biliary cells are fully surrounded by Lama5 in both liver injury models (Figure 5A). Considering the accumulation of Lama5 in the vicinity of biliary cells, it is plausible that Lama5 may be secreted from biliary cell itself rather than the environmental niche cell. Indeed, the expression of Lama5 mRNA was verified in both EpCAM+ biliary cells isolated from CDE- and DDC-injured livers (Figure 5B), implying the involvement of Laminins in Lu-driven regulation. While Lu is capable of binding to Laminin-511/521 via Lama5, these laminins are also known as a ligand for Integrinα3β1/α6β1 (Kikkawa et al., 2007). It has been reported that Lu binds to Lama5 competitively with Integrinα3β1/α6β1 and promotes tumor cell migration by modulating Integrin-mediated cell attachment to Laminin-511 protein (Kikkawa et al., 2013). Taking these evidences into account, Lu may regulate the morphogenesis of DR via an Integrin-mediated manner. Given that Lu plays a role in the competitive inhibition against Laminin-511/521 and Integrinα3β1/6β1 axis in biliary cell as shown in Figure 5—figure supplement 1, high expression of Lu would be reproduced by inhibition of integrinβ1 (Itgb1) signaling. To address this possibility, we first investigated the expression of Integrinα3 (Itga3), Integrinα6 (Itga6) and Itgb1 in Lu- BC and Lu+ BC. As shown in Figure 5—figure supplement 2, all integrin components were expressed in Lu- BC and Lu+ BC, indicating that Lu- BC and Lu+ BC are potentially competent to cell signaling via Integrinα3β1/α6β1-Laminin-511/521 axis. We next examined the effect of neutralizing antibody against Itgb1 on the motility and duct formation capacity of Lu- BC in vitro. Although the inhibition of Itgb1 signaling did not affect the expression of Lu (Figure 5—figure supplement 3), it dramatically changed Lu- BC to Lu+ BC-like phenotype in both scratch assay and cyst formation assay (Figure 5C and D). Conversely, we investigated the effect of Itgb1 activation on Lu+ BC. Because TS2/16 antibody has been reported to activate Itgb1 signaling (Rozo et al., 2016), we added it to the 3D culture of Lu+ BC. As a result, Lu+ BC acquired cyst formation capacity by the activation of Itgb1 (Figure 5—figure supplement 4). These data strongly suggested that Lu regulates the characteristic of DR by modulating the Itgb1 signaling.
 
-## Bcam KO mice show a key role for Lu in DR in CDE-induced liver injury
+![Figure 5.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig5-v2.jpg)
+
+**Figure 5.:** (A) Expression analysis for Lama5 in injured liver. Co-staining of EpCAM and Lama5 was performed in liver sections of CDE-fed mouse and DDC-fed mouse. (B) Evaluation of Lama5 gene expression in EpCAM+ cells isolated from CDE-fed and DDC-fed mouse livers by quantitative RT-PCR. Data are plotted in a graph with mean and standard deviation. n = 4 biological replicates. n.s.: not significance. (C) Scratch assay using Lu- BC in the presence or absence of Itgb1 neutralizing antibody. Hamster IgM was used as control. Representative images of day 0, day 1, and day 2 after scratch are shown. Dotted line indicates cell front of scratched gap. Quantitative data of cell moving distance at day 1 are plotted in a graph with mean and standard deviation. n = 4 biological replicates. (D) Bright field microscopic image of three-dimensionally cultured Lu- BC-GFP at culture day 12 in the presence of Itgb1 neutralizing antibody or control IgM. Arrows and arrowheads point to cysts and cell aggregates, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Lama5-containing laminins are able to bind to both Lutheran and Integrinα3β1/α6β1. High expression of Lutheran in LPC inhibits β1 Integrin signaling mediated by Laminin-511/521 competitively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Relative expression level is plotted in a graph with mean and standard deviation (n = 4). n.s.: not significance.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Lu- BC cultured in the presence or absence of neutralizing anti-Itgb1 antibody was analyzed by quantitative RT-PCR. Lu+ BC was used as a positive control. Relative expression level is plotted in a graph with mean and standard deviation (n = 4). n.d.: not detected.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Representative images of cultured Lu+ BC at culture day 6 are shown. Arrow and arrowhead point to a cyst and a cell aggregate, respectively. The details of formed cysts are shown below. The cell cluster devoid of luminal structure was regarded as ‘Cell aggregate’. Scale bar: 100 μm.
+
+### Bcam KO mice show a key role for Lu in DR in CDE-induced liver injury
 
 To verify the role of Lu/Bcam in DR in vivo, we generated Bcam knockout (KO) mice, in which the 11 bp deletion within a signal sequence-coding region of exon1 resulted in the frame shift of the Bcam gene (Figure 6A and Figure 6—figure supplement 1). The Bcam KO mice were healthy, showing no obvious developmental abnormality as reported previously (Rahuel et al., 2008). To compare the phenotype of DR between Wild-type (WT) and Bcam KO mice, mice were fed a CDE or DDC diet for 3 weeks and then their livers were analyzed by immunohistochemistry for EpCAM. When mice were fed the CDE diet, the proliferation of biliary cells occurred in both WT and Bcam KO mouse livers (Figure 6B). The loss of Lu protein in KO mouse was confirmed by immunostaining for Lu (Figure 6C). To our surprise, Lu-deficient biliary cells failed to spread outwards from the portal vein while WT biliary cells extended into the parenchymal area. The migrating distance of biliary cells from the portal vein was significantly shorter in Bcam KO mice than WT mice (Figure 6D).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic diagram of experiments using Bcam KO mouse. (B) Co-staining of EpCAM and Ki67 in WT and Bcam KO mouse liver sections in the CDE model. The ratio of Ki67+ cell per EpCAM+ cell is plotted in a graph with mean and standard deviation. n = 4 biological replicates. n.s.: not significance. (C) Co-staining of EpCAM and Lu in CDE-fed WT and Bcam KO mouse liver sections. (D) Quantitative analysis for the distance from portal vein to distal biliary cells in the CDE and DDC models. Data are plotted in a graph with mean and standard deviation. Statistical significance among groups is determined using one-way ANOVA. n = 5 biological replicates. (E) Immunostaining of EpCAM in WT and Bcam KO mouse liver sections in the DDC model. (F) Magnified immunohistochemical image of DR in CDE-fed and DDC-fed Bcam KO mouse liver. (G) Morphological image of EpCAM+ cells sorted from WT and Bcam KO mouse fed a CDE diet for 3 weeks. The cells were directly stained with Phalloidin to visualize F-actin 72 hr after plating on culture dish. Arrowhead points to pseudopod. Scale bar: 100 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36572/elife-36572-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Schematic illustration of the mouse Lu/Bcam gene structure and sequences around the targeted allele. Blue and red letters stand for an initiation ATG codon and the deleted sequence (11 bp) in KO mouse, respectively. The sequence for gRNA and protospacer-adjacent motif (PAM) are underlined. Genomic PCR of WT and Bcam KO mice using a set of Primer 1 and Primer 2 yields amplicon corresponding to 201 and 190 bp, respectively. Information on Source data.
+
 By contrast, in the DDC model, the migrating distance of biliary cells from the portal vein showed no significant difference between WT and Bcam KO mice (Figure 6D and E). However, a slight hyperplasia of duct-like structures was observed in Bcam KO mice in both DDC and CDE models (Figure 6F). Moreover, freshly isolated EpCAM+ biliary cells from WT CDE-fed mouse livers showed spindle-like shape and pseudopods on the dish, while those from Bcam KO mice predominantly exhibited rounder morphology resembling Lu- BC (Figure 6G). These results suggested that Lu plays a critical role in the definition of morphological heterogeneity of DR in vivo.
 
-## CD239 is expressed in DR in human liver disease
+### CD239 is expressed in DR in human liver disease
 
 To investigate the expression of Lu/BCAM (CD239) in human liver disease, we performed immunostaining of CD239 for a few resected samples obtained from the surgery to remove liver cancer. Intriguingly, CD239 was stained in DR in patients of chronic liver disease including non-alcoholic steatohepatitis, hepatitis B virus and hepatitis C virus (Figure 7), suggesting that the expression profile of Lu is conserved in humans.
 
@@ -106,58 +166,208 @@ In conclusion, the present study demonstrates that the expression profile of Lu 
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EpCAM (rat monoclonal)</td>
+      <td>PMID: 19429791</td>
+      <td></td>
+      <td>(1:100–500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EpCAM (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab71916; RRID:AB_1603782</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lutheran (rat monoclonal)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sca1 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>BioLegend:108107; RRID:AB_313344</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD24 (rat monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>MB:130-102-731; RRID:AB_2656573</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD71 (rat monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>MB:130-109-632; RRID:AB_2659126</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD44 (rat monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>MB:130-110-117; RRID:AB_2658152</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FcR (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>BioLegend:101320; RRID:AB_1574975 and BioLegend:101302; RRID:AB_312801</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CK19 (rabbit polyclonal)</td>
+      <td>PMID:12665558</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Lama5 (rabbit polyclonal)</td>
+      <td>PMID:9151674</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rat monoclonal)</td>
+      <td>ThermoFisher</td>
+      <td>ThermoFisher:14-5698-80; RRID:AB_10853185</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PECAM (rat monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD:553373; RRID:AB_394819</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD31 (rabbit polyclonal)</td>
+      <td>Novus</td>
+      <td>NB:NB100-2284; RRID:AB_10002513</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD239 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:2994–1; RRID:AB_2065309</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD29 (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD:555002; RRID:AB_395636</td>
+      <td>5 μg/mL for 3D culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD29 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Biolegend:303010; RRID:AB_314326</td>
+      <td>50 μg/mL for 3D culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hamster IgM, λ1 isotype (hamster monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>BD:553957; RRID:AB_479639</td>
+      <td>5 μg/mL for 3D culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1, κsotype (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>BioLegend:401404</td>
+      <td>50 μg/mL for 3D culture</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Plat-E (Platinum-E)</td>
+      <td>PMID: 10871756</td>
+      <td>RRID:CVCL_B488</td>
+      <td>Cell line established in T. Kitamura lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 C57BL/6J mice were purchased from Clea-Japan, Inc. (Tokyo, Japan). All animals were maintained in a standard Specific-Pathogen-Free (SPF) room at the institutional animal facility. All animal experiments were performed according to institutional guidelines and approved by the Animal Care and Use committee of the Institute of Molecular and Cellular Biosciences, The University of Tokyo (approval numbers 2501, 2501–1, 2609, 2706, and 3004), Kumatomo University (approval number A27-092), Hyogo College of Medicine (approval number 16–043, 16–046), and National Center for Global Health and Medicine Research Institute (approval numbers 15080, 16023, 17086 and 18069). To induce liver injury, a diet containing 0.1% DDC (Clea-Japan Inc. Tokyo, Japan) or the choline-deficient, ethionine-supplemented diet (MP Biomedicals, CA, USA) was fed to 6-week-old mice for 3 weeks.
 
-## Study approval for human samples
+### Study approval for human samples
 
 The study using human samples was approved by the Kanazawa University Ethics Committee (approval number 305–4), and all of the analyzed samples are derived from patients who provided informed written consent for the use of their tissue samples in research.
 
-## Antibodies
+### Antibodies
 
 The information about antibodies used for FACS and immunohistochemistry is described in Key resources table. The rat anti-EpCAM monoclonal antibody was generated as described previously (Okabe et al., 2009). The rabbit anti-CK19 polyclonal antibody was generated as described previously (Tanimizu et al., 2003). The rat anti-Lutheran monoclonal antibody used in this study was generated by immunization of a rat with mouse fetal hepatic cells as described previously (Suzuki et al., 2008b), and biotinylated for FACS using ECL Protein Biotinylation Module (GE Healthcare UK Ltd, UK). The specific reactivity against mouse Lu was validated by flow cytometric (FCM) analysis of Ba/F3 cells transfected with Bcam cDNA by a retroviral vector, pMxs/IRES-GFP (Kitamura et al., 2003) (Figure 1—figure supplement 4). The anti-Lutheran monoclonal antibody (D295-3) and anti-EpCAM monoclonal antibody (D269-3) are commercially available from MBL International Corporation, MA, USA.
 
-## Liver perfusion and cell sorting
+### Liver perfusion and cell sorting
 
 Cells were isolated from murine livers as described previously (Okabe et al., 2009). Briefly, liver cells were dissociated by perfusion of collagenase solution. Non-parenchymal cells (NPCs) were prepared by removal of hepatocytes with repeated centrifugation at 100 g for 2 min. Then, NPCs were incubated with anti-FcR antibody for blocking non-specific binding, followed by with fluorescein isothiocyanate (FITC)-conjugated anti-EpCAM monoclonal antibody for 30 min on ice. After incubation with anti-FITC microbeads (1:10–100 dilution, Miltenyi Biotec, Bergisch Gladbach, Germany), EpCAM+ cells were enriched by autoMACS pro (Miltenyi Biotec). After MACS, cells were incubated with biotin-conjugated anti-Lutheran monoclonal antibody for 30 min on ice. After wash, cells were incubated with allophycocyanin (APC)-conjugated streptavidin (1:100–500 dilution, BD bioscience, NJ, USA) for 20 min on ice and analyzed or purified by fluorescence-activated cell sorting (FACS) using Moflo XDP (Beckman-Coulter, CA, USA) and BD FACSCanto II (BD bioscience). Dead cells were excluded by propidium iodide (Sigma-Aldrich, MO, USA) staining.
 
-## Cell culture
+### Cell culture
 
 Sorted EpCAM+ cells from CDE-fed mouse liver were cultured with modified William’s-E medium as previously reported (Okabe et al., 2009). For in vitro assay, the cells expanded at 3 to 6 passages were used. For cytoskeleton staining, Alexa Fluor 488 Phalloidin (1:500 dilution, Thermo Fisher Scientific, MA, USA) was used.
 
-## Scratch assay
+### Scratch assay
 
 The cells were seeded in a 24-well plate at a confluency of 90–95% the day before scratch assay. After 12 to 24 hr of culture, the medium was removed and fresh medium with 10 μg/mL Mitomycin C (Wako Pure Chemical Industries) was added to fully confluent cells to inhibit further proliferation. The treated cells were incubated continuously for 150 min at 37°C. After incubation, the cell layer was scratched crosswise with a micropipette tip. Each well was washed twice with PBS to prevent detached cells from re-adhering. After creating the scratch, the cells were continuously cultured without cytokines. The moving distance was calculated by subtracting the half of gap length at Day 1 from that at Day 0. For experiments of antibody administration, Hamster anti-rat CD29 (555002, BD Pharmingen) or Hamster IgM (553957, BD Pharmingen) was added in the culture at a final concentration of 1 μg/mL.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The resected left lobe of liver was embedded into OCT compound (Sakura Finetek Japan), and frozen by liquid nitrogen. The frozen block was cut into 8 μm slices by Microtome Cryostat HM 525 (Thermo Fisher Scientific). Fixation was performed by using 4% paraformaldehyde (Wako Pure Chemical Industries, Osaka, Japan) or cold acetone (Wako Pure Chemical Industries). For blocking buffer, 5–10% skim milk (BD bioscience) or 3% FBS (Thermo Fisher Scientific) was used. Primary antibodies used for immunohistochemistry were rabbit anti-CK19 polyclonal antibody, rat anti-EpCAM monoclonal antibody, rabbit anti-EpCAM polyclonal antibody, rabbit polyclonal anti-Laminin α5 antibody (a kind gift from Dr. Jeffrey H. Miner), rabbit anti-PECAM polyclonal antibody, rat anti-Ki67 monoclonal antibody and rat anti-Lutheran monoclonal antibody. The information about antibodies is described in Key resources table. All images were captured using KEYENCE BZ-X710:BZ-X Viewer, Zeiss Axio observer z1: AxioCamHR3 or Olympus FV3000. The ratio of Ki67+ cell per EpCAM+ cell was calculated using Hybrid Cell Count function in the Dual Signal Extraction mode of BZ-X Analyzer. An average value of three random images per mouse was treated as a representative value for the mouse. Quantification of the distance of biliary cell cluster/cell from the center of the portal vein was performed using a previously reported method (Best et al., 2016). Briefly, the distance from the center of the portal vein to the most distal EpCAM-stained cell was measured, and then the mean diameter of the portal vein was subtracted from this value to eliminate the influence of the size of the portal vein. An average value of six to fourteen random images of portal region per mouse was treated as a representative value for the mouse.
 
-## Three-dimensional culture
+### Three-dimensional culture
 
 For three-dimensional culture, Cellmatrix Type I-A (Nitta Gelatin, Osaka, Japan) and Matrigel with Growth Factor Reduced (Corning, MA, USA) were used for gel components. Chilled cellmatrix and Matrigel were mixed at 1:9 ratio and used to coat the surface of the culture dish. After solidification of the coating layer by incubating at 37°C, the mixture of cell suspension and gel at 1:1 ratio was added. After 30 min of incubation at 37°C in 5% CO2 chamber, culture medium was loaded on top of the double-layered gel. The top layer of medium was changed twice a week. All images were captured using DS-Fi2-L3 (Nikon Corporation, Tokyo, Japan) under a phase-contrast microscope (Nikon ECLIPSE TS100, Nikon Corporation) after 6–12 days of culture. For the experiments using neutralizing and activating antibodies against Itgb1, Hamster anti-rat CD29 (555002, BD Biosciences) and TS2/16 (303010, Biolegend) were added in the culture at a final concentration of 5 μg/mL and 50 μg/mL, respectively. For each control, Hamster IgM, λ1 isotype control (553957, BD Pharmingen) or Mouse IgG1, κ isotype control (401404, Biolegend) were used. For quantification of the size and formation efficiency of cyst, 50 cells were cultured in individual wells of a 96-well plate. After 6 days of culture, the image was captured by a phase-contrast microscope. All visible cell clusters were counted according to the diameter of lumen. The cell cluster devoid of luminal structure was counted as ‘Cell aggregate’.
 
-## Establishment of Lu-expressing Lu- BC by retroviral vector
+### Establishment of Lu-expressing Lu- BC by retroviral vector
 
 For overexpression of mouse Lu (mLu) in Lu- BC, Bcam cDNA was amplified with two primers 3’- CTCGAGTCACTGCCGCCACTGCAG −5’ and 3’- GTCGACTTACATTCCCTGGAGGAAG −5’ by RT-PCR and inserted into the EcoRI and XhoI restriction enzyme sites of pMxs-IG plasmid vector (kindly provided by Dr. Kitamura) was used. For the production of retrovirus, pMxs-mLu-IG or pMxs-IG was transfected into the packaging cell line Platinum-E (Morita et al., 2000) by using lipofectamine 2000 (Invitrogen). The culture supernatant was centrifuged at 6000 g at 4°C overnight to recover virus particles. The precipitated virus particles were dissolved in culture medium and used to infect Lu- BC. After 16–24 hr, the culture media was replaced with fresh media and the culture was continued overnight. The cells expressing both mLu and GFP or only GFP were sorted by FACS and named as Lu- BC-mLu or Lu- BC-GFP, respectively.
 
-## RNA extraction and reverse transcription
+### RNA extraction and reverse transcription
 
 RNA extraction was performed using ISOSPIN Cell and Tissue RNA (NIPPON GENE, Toyama, Japan) according to the manufacturer’s instruction. For tissue homogenization, FastPrep-24 (MP Biomedicals) was used. Reverse transcription from RNA to cDNA was performed by PrimeScript RT Master Mix (Takara-bio, Shiga, Japan).
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Quantitative RT-PCR was performed using LightCycler480 (Roche, Basel, Switzerland) with the Universal Probe Library system. The sequence of used primers is (5’ to 3’) EpCAM-Forward: AGAATACTGTCATTTGCTCCAAACT, EpCAM-Reverse: GTTCTGGATCGCCCCTTC, Lama5-Forward: GGCCTGGAGTACAATGAGGT, Lama5-Reverse: CACATAGGCCACATGGAACA, ITGB1-Forward: TCAACATGGAGAACAAGACCA, ITGB1-Reverse: CCAACCACAGCTCAATCTCA, ITGA3-Forward: TCAACATGGAGAACAAGACCA, ITGA3-Reverse: CCAACCACAGCTCAATCTCA, ITGA6-Forward: GCGGCTACTTTCACTAAGGACT, and ITGA6-Reverse: TTCTTTTGTTCTACACGGACGA.
 
-## Generation of Bcam/Lu Deficient Mice
+### Generation of Bcam/Lu Deficient Mice
 
 pT7-sgRNA and pT7-hCas9 plasmid were kindly provided from Dr. Ikawa (Osaka University, Japan) (Mashiko et al., 2013). After digestion with EcoRI, Bcam mRNA synthesis was performed using an in vitro RNA transcription kit (mMESSAGE mMACHINE T7 Ultra Kit, Thermo Fisher Scientific), according to the manufacturer’s instructions. A pair of oligos targeting Bcam gene was annealed and inserted into the BbsI site of the pT7-sgRNA vector. The sequences of the oligos were as follows: Bcam/Lu (5’- AAC CCC CTG ACG CCC GCG CA −3’), which is located at exon 1 of Bcam/Lu gene. After digestion with XbaI, gRNAs were synthesized using the MEGAshortscript Kit (Thermo Fisher Scientific). The precipitated RNA was dissolved in Opti-MEM I (Thermo Fisher Scientific) at 0.4 μg/μL. C57BL/6N female mice (Clea-Japan Inc.) were used in this study. IVF was performed according to the Center for Animal Resources and Development’s (at Kumamoto University, Japan) protocol (http://card.medic.kumamoto-u.ac.jp/card/english/sigen/manual/onlinemanual.html). Electroporated embryos were cultured in KSOM medium, and transferred the next day to the oviducts of pseudo-pregnant females on the day of vaginal plug detection. Genome Editor electroporator and LF501PT1-10 platinum plate electrode (BEX Co.Ltd., Tokyo, Japan) were used for electroporation. 50 embryos prepared were subjected to electroporation. The collected embryos cultured in KSOM medium were placed in the electrode gap filled with 5 μl of Opti-MEM I containing sgRNA and hCas9 mRNA. The electroporation conditions were 25V, five times. The eggs were then cultured in KSOM medium at 37°C and 5% CO2 in an incubator until the two-cell stage.
 
-## Human tissue and immunohistochemistry
+### Human tissue and immunohistochemistry
 
 Three individual surgical specimens of cirrhotic liver were obtained from the patients with hepatocellular carcinoma. The deparaffinized and rehydrated sections were microwaved in EDTA buffer (pH 9.0) for 20 min in a microwave oven. Following endogenous peroxidase blocking, these sections were incubated at 4˚C overnight with rabbit anti-CD239 monoclonal antibody against human Lutheran/BCAM (1:100 dilution, Epitomics, CA, USA) and then at RT for 1 hr with goat anti-rabbit immunoglobulins conjugated to peroxidase labeled-dextran polymer (K4003, Envision, Dako, Tokyo, Japan). After benzidine reaction, sections were lightly counterstained with hematoxylin.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses and the determination of p value were performed using GraphPad Prism software. Statistical significance between two groups was evaluated using Mann-Whitney U test and considered for p<0.05. For comparison of four groups, one-way analysis of variance (ANOVA) was applied, and once F-test was significant, multiple comparisons between each group were conducted by Tukey’s multiple comparisons. Statistical significance was set at two-tailed p values < 0.05. Values derived from at least four biological replicates were plotted in a graph with mean and standard deviation. The exact number of biological samples was described in each figure legend and source data. There was no exclusion of outliers in all experiments. Group allocation was performed without any bias. A statistical method of sample size calculation was not used during study design.

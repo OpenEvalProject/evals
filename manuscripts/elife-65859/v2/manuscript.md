@@ -27,35 +27,174 @@ The most expensive component of the head gear is the recording probe (from $1000
 
 Currently available headgear systems are typically large, reducing the ability to record from multiple brain structures in mice. In contrast to recent progress in recording electrodes, the development of implantation techniques such as the Flexdrive, Shuttledrive, DMCdrive and the Hyperdrive (Voigts et al., 2013; Voigts et al., 2020; Kim et al., 2020; Lu et al., 2018) has lagged behind. Electrodes are either fixed in brain tissue or attached to a microdrive to allow the advancement of the electrode after implantation (Chung et al., 2017; Fee and Leonardo, 2001; Korshunov, 2006; Vandecasteele et al., 2012; Wilson and McNaughton, 1993; Yamamoto and Wilson, 2008). Microdrives and accompanying head gear protection and shielding inevitably add extra weight (weight = 0.12 g - 1 g, drives designed for mice) and volume (skull surface area = 7.68–252 mm2, drives designed for mice) to the implant (Table 1). The weight, volume and footprint of the microdrive can limit comfortable movement of small rodents and can prevent flexible multiregional recordings in mice (Headley et al., 2015). Yet, chronic recordings from freely behaving subjects are essential in many experiments, where the relationship between neuronal activity and movement, perception, learning and memory, decision making, and other forms of cognition are studied to disambiguate overt behavior and hidden variables (Juavinett et al., 2019; Jun et al., 2017; Steinmetz, 2020). An ideal microdrive should have high precision movement, mechanical stability, minimal size, low weight, and the ability for flexible customization. Commercially available microdrives are expensive and hard to customize. Disposable 3-D printed customized drives and head gear have reduced costs (Headley et al., 2015; Chung et al., 2017; Allen et al., 2020). Most importantly, recovery and reimplantation of recording probes are limited with currently available headgears.
 
+**Table 1.**
+ Summary of microdrive designs used in mice.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study/Company</th>
+      <th>Width (mm)</th>
+      <th>Length (mm)</th>
+      <th>Height (mm)</th>
+      <th>Footprint (mm2)</th>
+      <th>Weight (g)</th>
+      <th>Travel distance (mm)</th>
+      <th>Easy recovery</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vandecasteele et al., 2012</td>
+      <td>4.3</td>
+      <td>6.4</td>
+      <td>13</td>
+      <td>27.52</td>
+      <td>0.6</td>
+      <td>8–12</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Janelia Research Campus</td>
+      <td>3.5</td>
+      <td>3.8</td>
+      <td>9</td>
+      <td>13.3</td>
+      <td>0.8</td>
+      <td>5</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Janelia Research Campus</td>
+      <td>2.5</td>
+      <td>3.8</td>
+      <td>10</td>
+      <td>9.5</td>
+      <td>0.5</td>
+      <td>5</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Cambridge Neurotech</td>
+      <td>2.5</td>
+      <td>4</td>
+      <td>9</td>
+      <td>10</td>
+      <td>0.54</td>
+      <td>5</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Neuronexus</td>
+      <td>12.5</td>
+      <td>11.5</td>
+      <td>8.5</td>
+      <td>143.75</td>
+      <td>0.36</td>
+      <td>1</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>NeuroNex MINT</td>
+      <td>3.2</td>
+      <td>7.5</td>
+      <td>16</td>
+      <td>24</td>
+      <td>0.67</td>
+      <td>4.8</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Chung et al., 2017</td>
+      <td>6.26</td>
+      <td>5.26</td>
+      <td>9</td>
+      <td>32.93</td>
+      <td>0.4</td>
+      <td>2</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Juavinett et al., 2019</td>
+      <td>18</td>
+      <td>14</td>
+      <td>20</td>
+      <td>252</td>
+      <td>1</td>
+      <td>-</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Voroslakos et. al.</td>
+      <td>3.1</td>
+      <td>5</td>
+      <td>15.3</td>
+      <td>15.5</td>
+      <td>0.87</td>
+      <td>7</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
 Below, we report the design and testing of an integrated 3D printed headgear system (including microdrives and protective head cap) that is adaptable for multiple recording devices for both mice and rats. Our design reduces surgery time substantially and the small footprint of the metal Microdrive allows targeting multiple brain structures. The fast and reliable recovery of the probe and reuse of the same system in multiple animals decreases costs and experimenter effort.
 
 ## Results
 
-## Recoverable metal microdrive
+### Recoverable metal microdrive
 
 3D printing has taken science and industries by the storm, offering in-house design customization, fast iterative development, and cheap production using professional printers based on filament extrusion (e.g., MakerBot Industries, New York, NY) and liquid resin (e.g., Form three by Formlabs, Sommerville, MA). Yet, plastic prints have limitations mostly due to the low strength of the materials. Repeated use of plastic threads results in rapid deterioration, which can be prevented by metal-to-metal connection (Figure 1—figure supplement 1). Recently, metal printing has become affordable offering increased strength, with options for printing in aluminum, stainless steel and even titanium with similar printing resolution to plastics. Here, we have taken advantage of this and constructed a 3D printed microdrive from stainless steel (stainless steel 316L, 20 μm resolution), which offers superior strength and form factor compared to plastic prints (Young's modulus of stainless steel: ~180 GPa vs plastic: ~2 GPa). The metal printing allows reuse of the drives with minimal wear, driving the effective cost down.
 
 The microdrive is composed of three metal parts: an arm, a body, and a base (Figure 1A and B) and has a footprint of 15.5 mm2 (width: 3.1 mm, length: 5 mm, height: 15.3 mm). The detachable base allows for easy recovery of probes. The arm/shuttle is mounted on a screw to the drive body, allowing it to move linearly along the vertical axis simply by turning the screw (270 µm/ turn). The constructed microdrive has a total travel distance of 6 mm (maximum distance between arm and bottom of the drive body), allowing one to record from multiple brain regions across days and weeks. Due to its small form factor, multiple probes can be implanted in the same animal (Figure 1C). The drives come with a stereotaxic implantation tool, printed in plastic (clear v4 resin from FormLabs), for user-friendly and reliable implantations and probe recovery (Figure 1—figure supplement 2), consisting of a stereotactic manipulator attachment and a microdrive holder (Figure 1D and E, Figure 1—video 1 and 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig1-v2.jpg)
+
+**Figure 1.:** (A) The metal microdrive consists of three main parts: a drive body, a movable arm/shuttle, and a removable base. All components are 3D printed in stainless steel. Additional necessary components are a 00–90, 1/2 ‘brass screw, a 00–90 brass hex nut, a 000–120, 1/8’ stainless steel screw fixing the drive to the base, and a male header pin. (B) The assembled drive with dimensions. (C) Schematic showing three microdrives, with silicon probes attached, implanted in a rat to target hippocampus, medial and lateral entorhinal cortices. 3D printed resin head cap is shown in purple. (D) 3D printed stereotaxic attachment and drive holder together with assembly pieces: male header pin, four 00–90 brass hex nuts, three 00–90, 1/4’ and a 3/16’ stainless steel screw. (E) Stereotaxic attachment with the metal drive assembled, and a probe attached, ready for implantation (red circle highlights the temporary soldering joint for the Omnetics connector). The backend of the silicon probe is attached to the arm using cyanoacrylate glue.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note that the shell component is 50% transparent to aid better visibility of the drive body and shell component connection. All microdrives were printed using Form2 resin-based 3D printer (resin type: clear v4, 50 um layer resolution, Formlabs, MA, USA). (A) Design by Chung et al., 2017. (B) Design by Hiroyuki Miyawaki (https://github.com/Mizuseki-Lab/microdrive). (C) Added nut to arm (reduced metal-to-plastic erosion). (D) Updated shell component to (1) improve stability and (2) reduce footprint from 5.2 × 7.5 mm to 3.2 × 7.5 mm. This enabled bilateral silicon probe implantation in the CA1 region of the hippocampus of rats (Rogers et al., 2021). Reduced weight allowed us to use the same drive in mice (Valero et al., 2021) and rats. (Note, that the shorter mouse microdrive is not supported anymore). (E) Added second male header pin to drive body (further improved stability). (F) Increased thickness of the bottom part of the drive. Drive body became sturdier, less prone to bending. (G) Improved arm design to overcome limitations of resin 3D printing. Most of the arms were not at 90-degree angles. (H) Metal prototype printed in plastic. The small footprint enables double silicon probe implantation in the mouse. Nut is moved from the bottom of the drive to the top. This creates a flat surface at the bottom of the drive body making the shell-drive connection more stable.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) User feedback based on four criteria: ease of building, ease of implantation, size, ease of recovery (1 to 10 rating scale). The 3D printed microdrive surpasses the manually built drive (Vandecasteele et al., 2012) on every parameter except the size. (B) 24 silicon probes were used with the recoverable plastic microdrive. On average each probe was recovered two times. Out of these 48 recovery attempts five failed only. There were two total losses during recovery and in three cases different number of shanks broke during the recovery process making the recovery partially successful. One major limitation of reusability is the sudden increase in impedance over time (we have to discard 30% of the successfully recovered probes due this reason). Researchers in our lab spend on average 30 min to recover a silicon probe.
+
 The fully assembled steel microdrive weighs 0.87 g (base: 0.23 g, shuttle/arm with nut: 0.16 g, drive body with screw and metal bar: 0.49 g). This weight and dimensions are similar to other commercially available or custom-made electrode microdrives (Table 1). The design files for the microdrive can be submitted to commercial 3D printing companies (e.g., Proto Labs, Maple Plain, MN, https://www.protolabs.com/) allowing for high-quality printing and fast production. The printing costs of the three components can be as low as $170 (base: $50, body: $60, arm: $55), a highly competitive price compared to commercial microdrives.
 
-## Inclusion criteria: microdrive systems that used silicon probes in freely moving mice
+### Inclusion criteria: microdrive systems that used silicon probes in freely moving mice
 
-## Mouse cap
+#### Mouse cap
 
 To reuse silicon probes in multiple experiments, both the microdrive and the head cap have to be sturdy, easy to disassemble and reassemble. The mouse cap is composed of three parts: a base, a left-side wall, and a right-side wall (Figure 2A). The cap-base is attached to the skull of the animal during anesthesia using a ring of Metabond cement, serving as a base for the rest of the cap. There is no need for skull support screws, making the head cap minimally invasive. The cap has a large internal window shaped as an elongated octagon, following the outer ridge of the skull, giving wide access for various surgical needs (Figure 2B). The sidewalls provide structural support, electrical shielding (by acting as a Faraday cage), and physical protection of the silicon probes, hardware, and electronics. The internal volume allows for great flexibility and can fit two Omnetics preamplifier-connectors, as well as optic fibers. The sidewalls attach to the base using a rail and with three support screws (Figure 2—video 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig2-v2.jpg)
+
+**Figure 2.:** (A) The mouse cap consists of three main 3D printed parts: a base, and two side walls. The pieces are assembled with three 000–120, 1/8’ steel screws, six male header pins, and copper mesh. (B) The base with the left side wall attached. Copper mesh was attached in three pieces to the wall, and a male header pin was soldered across the top of the wall. (C) The fully assembled mouse cap. (D) The implanted headgear with preamplifier and recording cable attached. (E) Wide-band extracellular traces recorded from the prelimbic cortex of the implanted mouse shown in (D) using a multi-shank silicon probe during food pellet chasing exploration (sh-1 and sh-2 denote shank 1 and shank 2 of the silicon probe). (F) Well-isolated single units can be recorded in the anterior cingulate cortex using the mouse cap system and microdrive (n = 31 putative single units with a 4-shank probe; same session as in E). The location of the maximum waveform amplitude of each neuron is shown (0 μm corresponds to the location of the topmost channel of the shank). (G) The average spike waveform for each neuron. (H) Distribution of the spike amplitude across the recorded neurons (n = 31).
+
 The entire cap weighs 2.2 g (base: 0.19 g, walls with male header pins and copper mesh: 0.98 g each, and 000–120 screws: 0.05 g; Figure 2C). A chronically implanted mouse can carry this cap with one (or more) implanted silicon probe and with a custom connector for electrical stimulation (Figure 2D). High-quality electrophysiological signals can be collected from freely moving mice for weeks (Figure 2E and F). The system can be customized as needed, using our CAD files (see Methods section). We recommend printing the cap system on the Formlabs Form 2/3 resin printer or a comparable 3D printer (requires 25–50 µm resolution).
 
-## Rat cap
+#### Rat cap
 
 The typical Long-Evans rat is approximately ten times heavier than the mouse (~400 g), and requires a sturdier cap system, capable of withstanding forceful impacts and provide increased protection of the electronics and hardware. The rat cap is composed of four parts: a base, a left-side wall, a right-side wall, and a top cover (Figure 3A). The octagon-shaped base aligns with the outer rim of the rat’s dorsal skull surface and is attached with Metabond cement, with no need for skull support screws, making it minimally invasive (Figure 3—figure supplement 1A). The two side walls are attached to the base with a single rotation-axis located in the front of the base, attached with a long screw (Figure 3B, top part). The walls are held in place on the base, using a rail and two screws in the back. The sidewalls have two sets of male header pins for soldering standard Omnetics probe connectors (see Surgical Instructions). The lid can be locked with a thumb screw and has holes for air ventilation (Figure 3B bottom part, Figure 3—video 1). High-quality electrophysiological signals can be collected from freely moving rats for weeks either using silicon probes (Figure 3C and D) or Neuropixels probes (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig3-v2.jpg)
+
+**Figure 3.:** (A) The rat cap consists of four main 3D printed plastic parts: a base, two side walls, and a lid. To assemble the components, an M2 nut, M2 thumb screw, a 00–80, 1’ screw, a 00–80 insert, and two 00–80, 5/32’ screws are also needed. (B) The assembled rat cap is shown with sidewalls in an open position (top image), closed configuration without (bottom left) and with the lid in place (bottom right). (C) A Long-Evans rat in its home cage with the rat cap, connected to preamplifier and cable. (D) Extracellular traces recorded on post-op day 18 from the same animal.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Rat cap base with dimensions (left) and on top of a rat skull (right). Black lines indicate the sutures of the skull. 3D printed resin base is shown in purple. (B) The base/cap system can be modified to increase the available skull surface (note, that the skull surface was increased to 183.16 mm2 from 154.6 mm2). This modified base is held in place by bone screws implanted in the temporal bone and covered with dental cement (right part). (C) Increasing the inner volume of the cap system and customizing the metal recoverable microdrives enable multiprobe implantations. Schematic showing three microdrives, with silicon probes attached, implanted in a rat to target hippocampus (drive - II), medial and lateral entorhinal cortices (drive - III and I, respectively). Note, the different arm/shuttle designs (right part).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The base of the rat cap is attached to the skull. Reference (ref) and ground (gnd) screws are placed over the cerebellum. Neuropixels probe is mounted on a metal microdrive. The microdrive is held by the drive holder and attached to a stereotax arm using the stereotax attachment. For more details, see video: Neuropixels_attachment.mp4. (B) Once the probe is inserted to its final depth (left), the base of the microdrive is cemented to the skull (zoomed in photograph on the right). (C) The surface of the brain is kept wet using saline during probe insertion and during cementing the base of the microdrive. (D) After the base is cemented, the craniotomy is sealed with bone wax. (E) Releasing the drive from the drive holder. Once it is released the stereotax arm is moved upwards. (F) Neuropixels headstage is removed from the male header of the stereotax attachment (soldering joint) and placed on the animals back. (G) The walls of the cap system are attached to the base. Ground and reference wires are soldered to the probe (not shown). (H) The male header of the headstage is secured to the walls. The headstage and its cable are oriented to allow easy access to the screw head of the microdrive. Note, that there is enough room for custom connectors inside the rat cap.
 
 For more complex experiments, the cap system can be modified to increase the available skull surface (Figure 3—figure supplement 1A and B). This modified base is held by bone screws implanted in the temporal bone and covered with dental cement (Figure 3—figure supplement 1B right part). Increasing the inner volume of the cap system and using metal recoverable microdrives enable multiprobe implantations (Figure 3—figure supplement 1C).
 
 The entire design weighs 11.03 g (base: 1.04 g, right wall with male header pins and copper tape: 3.48 g, left wall with male header pins and copper tape: 3.68 g, top with thumb screw: 2.35 g and 00–80 screws: 0.48 g; Figure 3B bottom, right).
 
-## Surgical advantages using the head cap systems
+### Surgical advantages using the head cap systems
 
 The modular system decreases the duration of the surgery and allows for faster post-operative recovery of the animal, due to four important modifications. 1. The head cap is prepared before surgery and can be reused easily. 2. The cap does not need support screws, reducing the invasiveness of the surgery and accelerating the animal’s recovery. 3. The 3D printed cap-base is secured with a single step, by attaching it to the dorsal surface of the skull with Metabond cement. This ensures alignment precision relative to the brain surface, easier probe recovery, and reusability. 4. The electric shielding and structural support is implemented in the reusable head cap, decreasing extra manual steps for the construction of the protective cap from copper mesh, male header pins and grip cement during surgery (Vandecasteele et al., 2012).
 
@@ -63,13 +202,17 @@ These steps offer a time savings from 40 to 90 min (Figure 3—videos 2 and 3), 
 
 Further, the modular cap system substantially increases flexibility during an implantation procedure. Because the sides can easily be disassembled and reassembled, complex surgical procedures can be split into multiple sessions when needed. In the first session the skull is prepared, and the base of the cap is attached to the skull. After recovery, the craniotomy and implantation are performed in a second surgery. This double-step procedure results in a speedy recovery of the animal and reduces the likelihood of human error during extended procedures. Additionally, subsequent troubleshooting can be performed through the course of long chronic experiments with minimal disruption to the animal and the implanted components.
 
-## Probe recovery
+### Probe recovery
 
 To recover the probe at the end of a chronic experiment, the drive holder is aligned with the drive using the stereotactic frame. Once the position is aligned in the x-y plane, the drive holder is moved downwards (Figure 4A, step 1). Next, the top of the drive is secured with the screw located on the side of the drive holder (Figure 4A, step 2). The 000–120 screw is removed from the base (Figure 4B, step 1) and the drive is moved upwards carefully (Figure 4B step two and C). We recommend to carefully monitor the shanks of the probe under a microscope during the entire recovery procedure and, if any unexpected movement of the probe is observed, return to the previous step to make sure that everything is secured properly (Figure 4—videos 1 and 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65859/elife-65859-fig4-v2.jpg)
+
+**Figure 4.:** (A) The stereotaxic probe holder is attached to the microdrive (step 1) and is fixed with the black screw (step 2). Precise alignment is critical to avoid tissue damage and to prevent breaking the shanks when retracting the probe. (B) The microdrive is detached from the drive-base by removing the 000–120 steel screw (step 1) and moved upwards (step 2). Camera angle rotated 90o. (C) The drive with the attached probe after retracting it from the brain. The drive-base can be reused by cleaning it in chloroform or acetone.
+
 The removed silicon probe (NeuroNexus, Cambridge Neurotech, Diagnostic Biochips products; Neuropixels) is cleaned by initially rinsing it in distilled water, then contact lens solution (containing protease) and distilled water again; each washing step should last for at least 12 hr. Soak the silicon shanks only (avoid soaking the backend area). If extra tissue or debris is detected between the shanks, it can be carefully removed by a fine needle (26 gauge or smaller) under a microscope. After recovering Neuropixels 1.0 probes, the probe shank should be soaked in 1% tergazyme (Alconox) for 24–48 hr, then rinse in distilled water and isopropyl alcohol (Luo et al., 2020).
 
-## Quantification of single unit quality measures
+### Quantification of single unit quality measures
 
 Microdrives allow experimenters to record from novel sets of neurons in successive sessions, surveying thousands of neurons from the same structure in a single animal (Girardeau et al., 2017). With the recoverable metal microdrive, we recorded across several days from the same animal while adjusting the implantation depth (500 µm to 780 µm) across days (Figure 5A–F). Across days of recordings, while the probe was moved to record from different depths, the unit yield increased (Figure 5H), the waveform amplitude increased (Figure 5E) while the relative noise level decreased (Figure 5F), suggesting either that the distance between the electrode sites and neuron bodies decreased or that large size neurons were recorded.
 
@@ -77,7 +220,7 @@ Microdrives allow experimenters to record from novel sets of neurons in successi
 
 **Figure 5.:** (A) Recordings from the prefrontal cortex at multiple depths across 12 days with a four-shank silicon probe in a mouse (128 channel probe from Diagnostic biochip; P128-5). Individual shanks are displayed as rows across days to better visualize the cells across days. The probe was moved in 70 µm steps to record from a new population of cells across days. Colored dots: position of single cells determined by spike amplitude trilateration. Grey dots: electrode sites. (B) Left: Histogram and boxplots of the distribution of recorded neurons as a function of cortical depth (µm) for each session shown in A. Each colored histogram and corresponding box-plot correspond to the same days shown in A. Right: Probe layout (shanks now shown in a horizontal layout) with the shanks shown with the depth for day 8–10; shanks are spaced by 150 µm. (C) Number of isolated single units across days after the first implantation (black) and after reimplantation of the probe (blue). (D–F) Firing rate (D), waveform amplitude (E; trough-to-peak) and relative noise level (F; waveform std divided by the waveform amplitude). (G–I) Comparison with other control mice and rats (n = 10 subjects), implanted with custom built drives (Vandecasteele et al., 2012), comparing waveform amplitude (G), number of cells/recording site (H) and relative noise level (I; same definition as in panel F). Lines refer to different animal subjects. Thick black line: rat with the metal drive; thick blue line: rat with reimplanted silicon probe mounted on metal drive (panel A-F). Days relative to the first recording session from each animal. (J–L) Neuropixels probe recording, where the same putative interneuron was tracked across four days. (J) Average waveforms (bandpass filtered 300–10000 Hz) of a putative interneuron recorded on16 channels across 4 days (left). The average waveforms recorded at the site with the largest amplitude waveform is highlighted on the right (waveforms are color-coded by recording days). Autocorrelation histograms (K) and spike amplitudes (L; from Kilosort) for the same single unit, color-coded by recording day.
 
-## Effect of head gear type on behavior
+### Effect of head gear type on behavior
 
 Finally, we compared the behavioral effect of the 3D printed head cap system with manually built headmounts. To this end, we compared the running speed of rats and mice between subject implanted with the 3D printed and manually built headgears. Rats and mice were water deprived and had to collect water reward on a linear track or figure-eight circular maze. We observed no significant difference between the median running speed of the two rat groups (Kolmogorov-Smirnov test (KS-test); p=0.35) or the 95 percentiles (KS-test; p=0.95). We also performed the same test on mice and found a significant difference between the median running speed of the two groups (KS-test; p=0.045G) but no significant difference between the 95 percentile speeds (KS-test; p=0.24; Figure 6H).
 
@@ -99,27 +242,485 @@ To facilitate wide use of the 3D printed designs, we share all necessary details
 
 ## Materials and methods
 
-## Microdrive assembly instructions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Recoverable drive (base)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>Base_v7.step</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recoverable drive (drive)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>drive_v7.step</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recoverable drive (arm)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>arm_v7_50 um.step</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 nut</td>
+      <td>McMaster</td>
+      <td>92736A112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 screw 1/2’</td>
+      <td>McMaster</td>
+      <td>92482A235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–120 screw 1/8’</td>
+      <td>McMaster</td>
+      <td>96710A009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Male header pin</td>
+      <td>DigiKey</td>
+      <td>SAM1067-40-ND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T1 and T2 screwdriver</td>
+      <td>McMaster</td>
+      <td>52995A31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 tap</td>
+      <td>McMaster</td>
+      <td>2504A14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>000–120 tap</td>
+      <td>McMaster</td>
+      <td>2504A15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>stereotax_attachment_metal</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>stereotax_attachment_metal_v7.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 nut</td>
+      <td>McMaster</td>
+      <td>92736A112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 screw 1/4’</td>
+      <td>McMaster</td>
+      <td>93701A005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Male header pin</td>
+      <td>DigiKey</td>
+      <td>SAM1067-40-ND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>drive_holder_metal</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>drive_holder_metal_v7.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3 × 00–90 nut</td>
+      <td>McMaster</td>
+      <td>92736A112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 × 00–90 screw 1/4’</td>
+      <td>McMaster</td>
+      <td>93701A005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–90 screw 3/16’</td>
+      <td>McMaster</td>
+      <td>93701A003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed mouse cap (left wall)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>left_wall_v12_L11.5 mm_W10.00mm.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed mouse cap (right wall)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>right_wall_v12_L11.5 mm_W10.00mm.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed mouse cap (base)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>mouse_base_v12_L11.5 mm_W10.00mm.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed mouse cap (cut out)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>mouse_hat_copper Mesh_cutOut_v02.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3 × 000–120 screw 1/8’</td>
+      <td>McMaster</td>
+      <td>96710A001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Male header pin</td>
+      <td>DigiKey</td>
+      <td>SAM1067-40-ND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Copper mesh</td>
+      <td>Dexmet</td>
+      <td>3CU6-050FA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T1 screwdriver</td>
+      <td>McMaster</td>
+      <td>52995A31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>000–120 tap</td>
+      <td>McMaster</td>
+      <td>2504A15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed rat cap (left wall)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>rat_cap_left_wall_v8.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed rat cap (right wall)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>rat_cap_right _wall_v8.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed rat cap (base)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>rat_cap_base_v8.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed rat cap (top)</td>
+      <td>‘This paper’ – Github repository</td>
+      <td>rat_cap_top_v8.stl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–80 screw 1’</td>
+      <td>McMaster</td>
+      <td>92196A060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–80 brass insert</td>
+      <td>McMaster</td>
+      <td>92395A109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2 × 00–80 screw 5/32’</td>
+      <td>McMaster</td>
+      <td>92196A053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Male header pin</td>
+      <td>DigiKey</td>
+      <td>SAM1067-40-ND</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Copper tape</td>
+      <td>McMaster</td>
+      <td>76555A724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M2 × 0.4 thumb screw</td>
+      <td>McMaster</td>
+      <td>99607A256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M2 × 0.4 thin nut</td>
+      <td>McMaster</td>
+      <td>93935A305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>00–80 tap</td>
+      <td>McMaster</td>
+      <td>2523A461</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0.05’ hex key</td>
+      <td>McMaster</td>
+      <td>5497A22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printer</td>
+      <td>Formlabs</td>
+      <td>Form2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Clear resin</td>
+      <td>Formlabs</td>
+      <td>RS-F2-GPCL-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cotton swabs</td>
+      <td>Fisher Scientific</td>
+      <td>19-062-616</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Kimwipes</td>
+      <td>Kimtech</td>
+      <td>34120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gelfoam</td>
+      <td>Fisher Scientific</td>
+      <td>NC1861013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Screwdriver</td>
+      <td>Amazon</td>
+      <td>B0058ECJIE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>000–120 screw 1/16’</td>
+      <td>Antrin Miniature Specialties</td>
+      <td>AMS120/1B-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Burrs for micro drill 0.7 mm</td>
+      <td>Fine Science Tools</td>
+      <td>19008–07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C and B Metabond Base 10 ml</td>
+      <td>Parkell</td>
+      <td>P16-0116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C and B Gold Catalyst</td>
+      <td>Parkell</td>
+      <td>P16-0052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>C and B Metabond Clear Powder</td>
+      <td>Parkell</td>
+      <td>P16-0121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Unifast Trad Powder Ivory</td>
+      <td>Pearson Dental</td>
+      <td>G05-1224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Unifast Trad Liquid</td>
+      <td>Pearson Dental</td>
+      <td>G05-1226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Unifast 1:2 Package A2</td>
+      <td>Pearson Dental</td>
+      <td>G05-0037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental LED Light</td>
+      <td>Aphrodite</td>
+      <td>AP-016B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanoacrylate</td>
+      <td>Loctite</td>
+      <td>45208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ground/reference wire</td>
+      <td>Surplus Sales</td>
+      <td>(WHS) LW-12/36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ground/reference wire</td>
+      <td>Phoenix Wire Inc</td>
+      <td>36744MHW - PTFE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ultrazyme Enzymatic Cleaner Tablets</td>
+      <td>Ultrazyme</td>
+      <td>B000LM0ZYS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dieffenbach Vessel Clips Straight (rats)</td>
+      <td>Harvard Apparatus</td>
+      <td>ST2 72–8815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intan USB Eval board</td>
+      <td>Intan Technologies LLC</td>
+      <td>C3100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intan headstage</td>
+      <td>Intan Technologies LLC</td>
+      <td>C3324 and C3325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intan cable</td>
+      <td>Intan Technologies LLC</td>
+      <td>C3216</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Microdrive assembly instructions
 
 The base of the microdrive anchors the body of the microdrive via a tapped hole in the back (000–120 tap) and four rectangular holes inside the base (0.5 × 0.5 mm2). Thin walls around the base prevent cement flowing between the base and the body during surgery (Figure 1A). Glue a nut inside the arm (referred to as ‘arm nut’; 00–90 brass nut) before attaching it to the body. The body has an opening in the top part of the back where a nut can fit inside (‘top nut’; 00–90 brass nut). Insert the ‘top nut’ from the back, then insert the arm from the front and introduce a screw (00–90, 1/2’, brass screw) through the ‘top nut’ and the ‘arm nut’. Tighten the screw completely and release it a quarter-turn (or less). Fix the ‘top nut’ and the screw together using solder so the arm can be moved linearly relative to the body by turning this screw. Attach the body-arm complex to the base using a screw in the back (000–120, 1/8’, stainless steel screw). Finally, insert a male header pin into the body and secure it using dental acrylic cement (Unifast Trad). This can be used as a soldering joint during surgery. Finally, attach the backend of the silicon probe to the arm using cyanoacrylate glue and solder the Omnetics connector (Omnetics Connector Corporation) of the probe to the male header pin of the drive holder. The fully assembled microdrive weighs 0.87 g (base: 0.225 g, arm with nut: 0.159 g, body with screw and metal bar: 0.486 g).
 
-## Implantation/recovery tool assembly instructions
+### Implantation/recovery tool assembly instructions
 
 Insert and glue one nut (00–90, brass nut) and a male header pin into the stereotactic attachment using cyanoacrylate glue. Insert a 00–90, 1/4’ stainless steel screw into the nut. Tightening this screw will secure this piece to the electrode holder of the stereotactic arm (Model 1770, Kopf Instruments). The male header pin should be used as a temporary soldering joint for the Omnetics connector of the silicon probe. Insert and glue two nuts (00–90, brass nut) into the bottom of the drive holder and one nut (00–90, brass nut) into the body of the drive holder. Insert a 00–90, 3/16’ stainless steel screw through this latter nut. This screw should be used to secure the top part of the body of the drive to the drive holder. Attach the stereotaxic attachment to the drive holder using 00–90 screws (00–90, 1/4’, T2 screw).
 
 Assembly_instructions_implantation_tool_metal_v7.pdf contains instructions with pictures.
 
-## Mouse cap assembly instructions
+### Mouse cap assembly instructions
 
 The base has a rectangular hole for a male header pin (0.8 × 0.8 mm2) for fixing the left and right walls temporarily during surgery (Figure 2B). This can help to open the cap using a fine pair of tweezers. The tip of the tweezer is squeezed between the rectangle and the walls. Pushing the tweezer against this rectangle readily opens the walls. The right wall has one tapped hole in the front and one in the lower part of the back (000–120 thread, 1.9 mm length). In addition, it has a hole in the upper part of the back (1 mm in diameter, 1.4 mm length). The left wall has one hole in the front and one in the lower side of the back (1 mm in diameter, 1.4 mm length) and a tapped hole in the upper side of the back (000–120 thread, 1.9 mm length). In addition, there are two rectangular holes in each wall (0.8 × 0.8 mm2) in which male header pins are glued with cyanoacrylate glue to serve as soldering points for the Omnetics connector and for the shielding copper mesh. To reduce weight, walls are perforated and covered with light copper mesh by gluing it with dental acrylic (Unifast Trad). The walls are closed using two screws in the back and one screw in the front (000–120, 1/8’ stainless steel pan head torx screws).
 
-## Rat cap assembly instructions
+### Rat cap assembly instructions
 
 The base has a hole for a brass screw-to-expand insert (00–80 thread size, 1/8’ installed length) and serves to hold together the left and right walls. It has a rectangular protrusion in the back (3 × 1.5 × 1.67 mm3) to help opening of the cap using a fine tweezer. The right and left walls have a front hole (diameter 1.8 mm) in which a screw can be passed (00–80, 1’ 18–8 stainless steel socket head screw) for fixing the walls to the metal insert of the base. In addition, there is a rail on each wall at the bottom part that grabs onto the base piece (1.2 mm height and 1 mm deep).
 
 During surgery, the walls are kept open with the screw loosely tightened (Figure 3B, top part). After all the connectors are attached to the male header pins, the walls are closed, and the front screw is tightened. The right wall has a hole in the upper side of the back (1.8 mm, 2 mm length) and a tapped hole in the lower side of the back (00-80 thread, 2 mm length). The left wall has a hole in the lower side of the back (diameter 1.8 mm, 2 mm length) and a tapped hole in the upper side of the back (00-80 thread, 2 mm length). The walls are closed in the back using two screws (18-8 stainless steel socket head screw, diameter 0-80, 5/32” length). The left wall also has an insert in the upper part of the back side for a nut (18-8 stainless steel thin hex nut, M2.5 × 0.45 mm thread). This latter nut serves as a locking mechanism for the top cover. There are four rectangular through-holes in each wall (0.8 × 0.8 mm) in which male header pins are glued with epoxy (Araldite Standard Epoxy) and serve as soldering points. The locations of the holes can be modified according to user specifications to adapt different connector placements. To protect the implanted electrodes, the rat cap is covered by either self-adherent wrap (3M Coban) or the plastic top cover. The edge is extruded on the outer surface on top of the walls to provide extra surface for better adhesion. The plastic cover is attached to the walls using the front slide-in slot and the back screw (stainless steel flared-collar knurled-head thumb screw, M2 × 0.40 mm thread size, 4 mm long). To protect the neuronal signal from environmental electromagnetic interference noise, conductive copper coil electrical tape is glued to the walls by cyanoacrylate glue (copper tape: 1" wide, McMaster product number: 76555A724) and connected to the ground.
 
-## 3D designing and printing parts
+### 3D designing and printing parts
 
 All parts were designed in Autodesk Fusion 360 (https://www.autodesk.com/products/fusion-360). We tested and printed cap designs on a Form two printer from Formlabs with 50 µm resolution using their standard resins. The metal microdrive prints were produced by Proto Labs (https://www.protolabs.com/services/3d-printing/direct-metal-laser-sintering). All designs are available from our GitHub repository https://github.com/buzsakilab/3d_print_designs (copy archived at swh:1:rev:a073716d89c32f13eb76a5ac5e7fa6f7fa11e18a; Vöröslakos, 2021).
 
@@ -127,47 +728,47 @@ All parts were designed in Autodesk Fusion 360 (https://www.autodesk.com/product
 
 Proto Labs (Proto Labs, Inc, MN, USA) currently charges 250$ for a single print but substantial savings are available for larger print orders. Coordination of orders across laboratories therefore can reduce the price.
 
-## Subjects
+### Subjects
 
 Rats (adult male Long-Evans, 250–450 g, 3–6 months old, n = 11) and mice (adult male C57BL/6JxFVB mice, 32–40 g, n = 6) were kept in a vivarium on a 12 hr light/dark cycle and were housed two per cage before surgery and individually after it. All experiments were approved by the Institutional Animal Care and Use Committee at New York University Medical Center. Animals were handled daily and accommodated to the experimenter before the surgery and behavioral recording.
 
-## Surgery instructions
+### Surgery instructions
 
 The following instructions cover surgeries in both rats and mice, with differences highlighted. Prior to surgery, prepare the 3D printed cap, the microdrive(s), the implantation tool and attach a silicon probe to the microdrive (as described above).
 
 We recommend measuring the impedance of the silicon probe before implantation using the RHD USB interface board from Intan (Intan Technologies LLC, CA, USA). Lower the probe into 0.9% saline and ground the saline to the recording preamplifier ground. Connect the probe to an Intan preamplifier headstage (RHD 32- or 64-channel recording headstages) and to the main Intan board to perform the impedance test measurement at 1 kHz frequency. This measurement provides a quick and rough estimate about the quality of the recording sites. If higher precision is required, users can perform impedance measurement with a nanoZ device following the manufacturers recommendation (nanoZ Impedance Tester, Plexon Inc, TX, USA).
 
-## Prepare the stereotaxic apparatus and tools
+#### Prepare the stereotaxic apparatus and tools
 
-## Surgery
+#### Surgery
 
-## Anesthesia and pre-incision preparations
+##### Anesthesia and pre-incision preparations
 
-## Incision and skull cleaning
+##### Incision and skull cleaning
 
-## Attaching the base to the skull
+##### Attaching the base to the skull
 
-## Craniotomy marking and screw placement
+##### Craniotomy marking and screw placement
 
-## Craniotomy
+##### Craniotomy
 
-## Probe implantation
+##### Probe implantation
 
-## Post-operative care
+##### Post-operative care
 
-## General notes
+##### General notes
 
-## Additional implantation information
+### Additional implantation information
 
 Rats and mice were implanted with silicon probes to record local field potential and spikes from the CA1 pyramidal layer in rats and from the prelimbic cortex from mice. Silicon probes (NeuroNexus, Ann-Arbor, MI and Cambridge Neurotech, Cambridge, UK) were implanted in the dorsal hippocampus (rats: antero-posterior (AP) −3.5 mm from Bregma and 2.5 mm from the midline along the medial-lateral axis (ML); mice: antero-posterior (AP) +1.75 mm from Bregma and 0.75 mm from the midline, 10 degree relative to the sagittal axis). The probes were mounted on the recoverable metal microdrive and previous design iterations made in plastic (unpublished work; stl files and instructions are available at our GitHub repository https://github.com/buzsakilab/3d_print_designs/tree/master/Microdrives/Plastic_recoverable), allowing for precise vertical movement after implantation and implanted by attaching the base of the micro-drives to the skull with dental cement (Supplementary file 1). The small footprint of the metal microdrive enables researchers to perform more than one silicon probe implantation in freely moving mice. For this purpose, larger mice (>35 g) were selected.
 
 After the post-surgical recovery, we moved the probes gradually in 50 µm to 150 µm steps until the tips reached the pyramidal layer of the CA1 region of the hippocampus. The pyramidal layer of the CA1 region was identified by physiological markers: increased unit activity and the presence of ripple oscillations (Mizuseki et al., 2011). In mice, the probe was implanted 500 µm below the surface of the brain and recordings were performed each day. The probe was moved 70 µm after each recording day. Data was collected daily. The implanted animals were single housed, and they do not carry the headstage while in the vivarium. During recordings, the headstage is attached and a counterbalanced pulley system ensures that the animal is not carrying the extra weight of the headstage and cable.
 
-## Electrophysiology data
+### Electrophysiology data
 
 Electrophysiological recordings were amplified using an Intan recording system: RHD2000 interface board with Intan 32 and 64 channel preamplifiers sampled at 20 kHz (Intan Technologies). All data is available from https://buzsakilab.com/wp/database/ (Petersen et al., 2020a).
 
-## Behavioral data
+### Behavioral data
 
 Rats were trained to run on a 2.3 m linear track, or a 120 cm diameter circular track with a diagonal path allowing the animals to run in a figure-eight pattern (n = 3 rats implanted with the 3D printed head gear, n = 13 sessions, and n = 4 control subjects with manually built headgear, n = 22 sessions). In both behavioral paradigms, rats were water deprived and had to collect water reward (~0.02 ml).
 
@@ -177,6 +778,6 @@ The linear tracks had ‘reward areas’ on each end where water reward was deli
 
 The behavior of the animals was recorded using the Optitrack camera system (NaturalPoint, Inc, OR, USA).
 
-## Spike sorting and data processing
+### Spike sorting and data processing
 
 Spike sorting was performed semi-automatically with KiloSort (Pachitariu, 2016) https://github.com/cortex-lab/KiloSort, using our pipeline KilosortWrapper (a wrapper for KiloSort, https://github.com/petersenpeter/KilosortWrapper) (Petersen et al., 2020b), followed by manual curation using the software Phy (https://github.com/kwikteam/phy) and our own designed plugins for phy (https://github.com/petersenpeter/phy-plugins). Finally, we processed the manually curated spike sorted data with CellExplorer (Petersen and Buzsáki, 2020) and performed further analysis with custom Matlab code.

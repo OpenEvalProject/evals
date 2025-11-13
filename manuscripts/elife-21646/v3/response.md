@@ -62,9 +62,7 @@ We have also changed the wording regarding G46S being insoluble to now read:
 
 “G46S variants were excluded due to poor yields from E. coli that render solution or structural information intractable for the isolated G46S variant (see Methods).”
 
-In regards to CD/thermofluor analysis, we have done thermofluor analysis of WT, G80R and G46S:G80R (see Author response image 1). G46S:G80R actually is significantly more thermostable, which may contribute to the longer photocycle, where G46S:G80R demonstrates a higher Tm (66.0 °C) than WT and G80R (both 62.5 °C). Notably, all Tm’s are considerably outside the range of biological relevance.10.7554/eLife.21646.024Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.21646.024
-
-DOI: http://dx.doi.org/10.7554/eLife.21646.024
+In regards to CD/thermofluor analysis, we have done thermofluor analysis of WT, G80R and G46S:G80R (see Author response image 1). G46S:G80R actually is significantly more thermostable, which may contribute to the longer photocycle, where G46S:G80R demonstrates a higher Tm (66.0 °C) than WT and G80R (both 62.5 °C). Notably, all Tm’s are considerably outside the range of biological relevance.10.7554/eLife.21646.024Author response image 1.
 
 We also note that the temperature (Arrhenius/Eyring) data of ZTL variants also addresses the reviewer’s concerns. We have looked at WT, G80R and G46S:G80R and confirmed that all three demonstrate linear Arrhenius dependency within biologically relevant temperatures (16-40 °C). Further, they all demonstrate the same enthalpy of activation. This is consistent with no gross perturbation of structure/stability throughout biologically relevant temperature ranges.
 

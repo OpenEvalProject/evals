@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.29510.001 Numerous loci of large effect have been shown to underlie phenotypic variation between species. However, loci with subtle effects are presumably more frequently involved in microevolutionary processes but have rarely been discovered. We explore the genetic basis of shape variation in the first upper molar of hybrid mice between Mus musculus musculus and M. m. domesticus . We performed the first genome-wide association study for molar shape and used 3D surface morphometrics to quantify subtle variation between individuals. We show that many loci of small effect underlie phenotypic variation, and identify five genomic regions associated with tooth shape; one region contained the gene microphthalmia-associated transcription factor Mitf that has previously been associated with tooth malformations. Using a panel of five mutant laboratory strains, we show the effect of the Mitf gene on tooth shape. This is the first report of a gene causing subtle but consistent variation in tooth shape resembling variation in nature.
+Numerous loci of large effect have been shown to underlie phenotypic variation between species. However, loci with subtle effects are presumably more frequently involved in microevolutionary processes but have rarely been discovered. We explore the genetic basis of shape variation in the first upper molar of hybrid mice between Mus musculus musculus and M. m. domesticus. We performed the first genome-wide association study for molar shape and used 3D surface morphometrics to quantify subtle variation between individuals. We show that many loci of small effect underlie phenotypic variation, and identify five genomic regions associated with tooth shape; one region contained the gene microphthalmia-associated transcription factor Mitf that has previously been associated with tooth malformations. Using a panel of five mutant laboratory strains, we show the effect of the Mitf gene on tooth shape. This is the first report of a gene causing subtle but consistent variation in tooth shape resembling variation in nature.
 
 ## Introduction
 
@@ -35,11 +35,11 @@ In this study, we focused on the first upper molar and used mice derived from a 
 
 ## Materials and methods
 
-## Samples used in the mapping
+### Samples used in the mapping
 
 The mice used in this study are laboratory-bred first-generation offspring of matings between wild hybrid mice caught in the Bavarian hybrid zone between Mus musculus musculus and Mus musculus domesticus (Turner et al., 2012). See Turner et al. (2012) for details on animal experiments and ethics. Further details were provided in previous mapping studies of skull and mandible shape (Pallares et al., 2014), and male sterility phenotypes (Turner and Harr, 2014). All mice were raised under controlled laboratory conditions and are males between 9 and 12 weeks old; the sample used here includes siblings and half-siblings.
 
-## 3D surface morphometrics
+### 3D surface morphometrics
 
 Mice heads were scanned at a cubic resolution of 0.021 mm using a vivaCT 40 micro-computer tomograph (Scanco, Bruettisellen, Switzerland) (Pallares et al., 2014). Three-dimensional (3D) virtual surfaces of the left first upper molar (UM1) were generated for all specimens using a semi-automatic segmentation in Avizo software (v8.1 - Visualization Sciences Group, FEI Company). The connections between the tooth and the surrounding materials (i.e. second upper molar and maxillary bone) were manually closed.
 
@@ -57,11 +57,11 @@ The relationship between shape and age was investigated using a multivariate reg
 
 Centroid size (CS), estimated as the square root of the summed squared distance between each semi-landmark and the centroid, was used as indicator of tooth size.
 
-## Genotypes
+### Genotypes
 
 SNP genotypes for the 183 mice used in the mapping were obtained from Turner and Harr, 2014a. Details on SNP quality control can be found in Turner and Harr, 2014a. In short, 584 729 SNPs were genotyped using the Mouse Diversity Genotyping Array (Affymetrix, Santa Clara, CA) (Yang et al., 2009). SNPs with heterozygosity >0.9, with >5% missing data, or minor allele frequency <5% were removed. SNPs in perfect linkage disequilibrium (LD) with other SNPs were filtered, resulting in 145 378 SNPs used for association mapping. The full set of SNPs previous to LD pruning was obtained from Pallares and Harr, 2014.
 
-## Association mapping
+### Association mapping
 
 183 mice, 145 378 SNPs, and 18 PCs, each representing more than 1% of shape variation were used to map loci associated with shape variation of the first upper molar. Each PC was analyzed separately, and therefore, the approach used here corresponds to a univariate mapping of shape variables (PCs). This approach was used in order to implement a linear mixed-model (LMM) to control for family structure (see below); however, it should be noted that mapping PCs might not identify genetic associations that are not strongly aligned with single PCs but that are spread across multiple PCs. CS was used to find associations with size variation. The PC scores and CS data used for the mapping are available as Figure 4—source data 1.
 
@@ -71,19 +71,87 @@ The linkage disequilibrium (LD) between the significant SNPs and neighboring SNP
 
 The effect of the significant QTLs on the phenotype was calculated based on Procrustes distances as the coefficient of determination (r2) between the 18 PCs and the genotype of the best SNP per region. In this way, the effect size of an SNP is relative to total phenotypic variation, and not to the individual PC it was associated with in the mapping. It should be kept in mind that given that siblings and half-siblings were used for mapping, the coefficient of determination could result in an overestimation of the effect size.
 
-## SNP heritability
+### SNP heritability
 
 SNP heritability is the amount of phenotypic variation explained by the additive effect of all SNPs used in the mapping (Wray et al., 2013). This value is a proxy for the amount of additive genetic variance in the sample. We estimated SNP heritability for each PC under the linear mixed-model (LMM) in GEMMA (‘pve’ - percentage of variance explained) (Zhou and Stephens, 2012); the weighted sum of the PCs heritability was used as a proxy for the total SNP heritability of molar shape in this population of mice. The weight was given by the percentage of phenotypic variation represented by each PC. Here, we have opted for estimating heritability as a scalar value (Monteiro et al., 2002; Monteiro et al., 2003). In this way, we are able to estimate the contribution of genetic variance to overall shape variation in this sample, and to make this value comparable to other studies.
 
 To estimate the proportion of phenotypic variation explained by each chromosome, we used the restricted maximum-likelihood (REML) analysis implemented in GCTA (Yang et al., 2011). Due to the small sample size in this study, each chromosome was analyzed separately including the first 10 PCs of the kinship matrix as covariates (option–reml–grm–qcovar). As a result of not fitting all chromosomes at the same time, values for individual chromosomes were inflated resulting in a larger SNP heritability than the one calculated with all SNPs at the same time (see above). Therefore, throughout the manuscript, we used the relative contribution of each chromosome to the phenotype, instead of the absolute value.
 
-## Samples used to functionally evaluate Mitf
+### Samples used to functionally evaluate Mitf
 
 To further explore the role of the candidate gene microphthalmia (Mitf) in molar shape variation, we took advantage of four existing laboratory mouse strains carrying mutant alleles, including Mitfmi-vga9, Mitfmi-enu22(398), MitfMi-wh, and Mitfmi. Details about each mutant allele and associated phenotypes are reported in Table 1. All mice were raised at the University of Iceland, BioMedical Center, under permit number 2013-03-01 from the Committee on Experimental Animals (Tilraunadýranefnd).
 
+**Table 1.**
+ Mitf alleles used in this study.The effect on gene expression as well as the organismal phenotype associated with each allele is shown. All mutants are on C57Bl/6J background.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Phenotype</th>
+      <th colspan="2"></th>
+    </tr>
+    <tr>
+      <th>Allele</th>
+      <th>Symbol</th>
+      <th>Mode of induction</th>
+      <th>Lesion</th>
+      <th>Effect</th>
+      <th>Heterozygote</th>
+      <th>Homozygote</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>micropthalmia</td>
+      <td>Mitfmi</td>
+      <td>X-irradiation</td>
+      <td>3 bp deletion in basic domain</td>
+      <td>Affects Mitf DNA binding affinity</td>
+      <td>Iris pigment less than in wild type; spots on belly, head and tail</td>
+      <td colspan="2">White coat, eyes small and red; deficiency of mast cells, basophils, and natural killer cells; spinal ganglia, adrenal medulla, and dermis smaller than normal; incisors fail to erupt, osteopetrosis; inner ear defects</td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td>MitfMi-wh</td>
+      <td>Spontaneous or X-irradiation</td>
+      <td>I212N</td>
+      <td>Affects Mitf DNA binding affinity</td>
+      <td>Coat color lighter than dilute (d/d); eyes dark ruby; spots on feet, tail and belly; inner ear defects</td>
+      <td colspan="2">White coat; eyes small and slightly pigmented; spinal ganglia, adrenal medulla, and dermis smaller than normal; inner ear defects; reduced fertility</td>
+    </tr>
+    <tr>
+      <td>VGA-9</td>
+      <td>Mitfmi-vga9</td>
+      <td>Transgene insertion</td>
+      <td>Transgene insertion and 882 bp deletion</td>
+      <td>Loss-of-function</td>
+      <td>Normal</td>
+      <td colspan="2">White coat, eyes red and small; inner ear defects</td>
+    </tr>
+    <tr>
+      <td>enu-22(398)</td>
+      <td>Mitfmi-enu22(398)</td>
+      <td>Ethylnitroso-urea</td>
+      <td>C205T, Q26STOP in exon 2A,</td>
+      <td>Affects splicing</td>
+      <td>Normal</td>
+      <td colspan="2">Normal eyes, white belly and large unpigmented spots in coat</td>
+    </tr>
+  </tbody>
+</table>
+
+_This table was modified from Steingrimsson et al. (2004). Information for the allele enu-22(398) comes from Bauer et al. (2009)._
+
 Homozygous, heterozygous, and wild-type mice were collected to test for differences in molar shape. The total sample size consisted of 36 mice: five Mitfmi-vga9/+, five Mitfmi-vga9/Mitfmi-vga9, 10 Mitfmi-enu22(398)/Mitfmi-enu22(398), two MitfMi-wh/+, four MitfMi-wh/MitfMi-wh, and five compound heterozygotes MitfMi-wh/Mitfmi. All these mutations are on C57Bl/6J (B6) background, and therefore five B6 mice were used as the wild-type control. Heterozygous and homozygous mice for the MitfMi-wh allele were siblings, as well as mice with the Mitfmi-vga9 allele. The mutant mice were male and female ranging from 5 to 10 weeks. Due to the small sample size per group, it was not possible to test for sexual dimorphism in molar shape; however, it has been shown that sex has very small effect, if at all, on tooth shape in mice (e.g. Valenzuela-Lamas et al., 2011; Renaud et al., 2017). To control for age and related wear effects, the heads were scanned and phenotyped as described above using the wear-free template.
 
-## Functional evaluation of the candidate gene Mitf
+### Functional evaluation of the candidate gene Mitf
 
 A PCA including all Mitf mutant and wild-type mice was performed to explore and visualize shape variation. However, to test for significant effects of each mutation on molar shape, a PCA was performed with pair of groups involving a mutant genotype at a time and the wild-type B6 mice. Heterozygous and homozygous mice for the same allele were tested independently against wild-type B6 group. The first two PCs of each PCA were used in a Hotelling T2-test to assess the significance of mean shape differences between the mutant groups and WT mice (R function hotelling.test). Since there are only two MitfMi-wh/+ mice, they were not included in this analysis. p-Values were corrected for multiple testing using the Holm-Bonferroni method in R.
 
@@ -99,7 +167,7 @@ The mice used in this study were derived from wild-caught hybrid mice between M.
 
 **Figure 1.:** (a) Multivariate regression of molar shape on the degree of hybridization (M.m.musculus ancestry per individual was obtained from Turner et al. (2012)). (b) Shape variation in the sample depicted on the first two principal axes of a PCA. (c) Transition in molar shape from M.m.domesticus to M.m.musculus. All shape data were obtained from the wear-free template.
 
-## Tooth shape, mouse age and wear
+### Tooth shape, mouse age and wear
 
 Once erupted, tooth shape does not change except by the effect of wear, but the degree of wear is correlated with the age of the mice, that in this study ranges from 9 to 12 weeks. The effect of age and wear on molar tooth shape was explored using the first 18 PCs derived from each of the two approaches: complete template and wear-free template. Age differences have a small but significant effect on molar shape variation when using the complete template (p-value=5.4×10−5, r²=0.01), and this is reflected in the significant correlation between age and some PCs (r2(PC1) = 2.1%, p-value=0.027; r2(PC4) = 2.2%, p-value=0.025; r2(PC5) = 3.3%, p-value=0.008; r2(PC14) = 1.8%, p-value=0.04; r2(PC18) = 4.9%, p-value=0.002). More importantly, a qualitative assessment indicates that wear-like patterns are present already in the first axis of variation (PC1) (Figure 2-a).
 
@@ -109,9 +177,173 @@ Once erupted, tooth shape does not change except by the effect of wear, but the 
 
 Although age correlates with wear patterns, there are other factors, such as diet and behavior that also influence tooth morphology through wear (Renaud and Ledevin, 2017). The wear-free template lacks the tip of the cusps, mimicking the same level of wear in all individuals (Figure 2-b), and therefore addressing wear in all its complexity, being this related to age or any other factors. The effect of age on overall shape variation using this template was still significant but explained very little variance (p-value=0.01, r²=0.01). Only two PCs kept a very small age-related signal (r2(PC3) = 4.6%, p-value=0.002; r2(PC18) = 3.5, p-value=0.007).
 
-## Heritability
+### Heritability
 
 The heritability values estimated in this study correspond to the effect that all SNPs used in the mapping have on the phenotype; this value is also known as SNP or chip heritability, and it serves as a proxy of the additive genetic variance underlying phenotypic variation. Substantial genetic variance was found in all PCs (Table 2). A weighted average of all PCs genetic variance was used to summarize the total heritability of molar shape (see Materials and methods). This resulted in a value of 65.5%, indicating that more than half of shape variation is accounted for by additive genetic effects.
+
+**Table 2.**
+ SNP heritability estimates per principal component axis.The standard error of the estimate derived from LMM in GEMMA is shown. The heritability of molar shape is a weighted sum of the heritability per PC, the weights being the percentage of total variation represented by each PC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PC</th>
+      <th>%var</th>
+      <th>Heritability per PC</th>
+      <th>Error</th>
+      <th>Molar herit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>18.9</td>
+      <td>0.83</td>
+      <td>0.09</td>
+      <td>15.8</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>15.4</td>
+      <td>0.95</td>
+      <td>0.08</td>
+      <td>14.7</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>9.9</td>
+      <td>0.78</td>
+      <td>0.10</td>
+      <td>7.7</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>7.1</td>
+      <td>0.62</td>
+      <td>0.14</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>5.9</td>
+      <td>0.49</td>
+      <td>0.12</td>
+      <td>2.9</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>5.1</td>
+      <td>0.83</td>
+      <td>0.10</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>3.9</td>
+      <td>0.53</td>
+      <td>0.12</td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>3.2</td>
+      <td>0.89</td>
+      <td>0.11</td>
+      <td>2.8</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>2.8</td>
+      <td>0.89</td>
+      <td>0.09</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>2.5</td>
+      <td>0.86</td>
+      <td>0.13</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2.1</td>
+      <td>0.72</td>
+      <td>0.14</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1.8</td>
+      <td>0.60</td>
+      <td>0.15</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1.7</td>
+      <td>0.68</td>
+      <td>0.13</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>1.5</td>
+      <td>0.56</td>
+      <td>0.16</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>1.4</td>
+      <td>0.53</td>
+      <td>0.15</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1.3</td>
+      <td>0.26</td>
+      <td>0.16</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>1.2</td>
+      <td>0.14</td>
+      <td>0.20</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>1</td>
+      <td>0.51</td>
+      <td>0.14</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Total Var</td>
+      <td>86.7%</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td colspan="2">pve for molar shape</td>
+      <td>65.50</td>
+    </tr>
+  </tbody>
+</table>
 
 When exploring heritability from a chromosomal point of view (Figure 3), instead of individual associations between SNPs and phenotype, a positive correlation is evident between the amount of phenotypic variation explained by each chromosome and chromosomal length (r = 0.67, p-value=0.001). This is the expected pattern when the effect of individual SNPs is small, and such SNPs are many and homogeneously distributed along the genome.
 
@@ -119,7 +351,7 @@ When exploring heritability from a chromosomal point of view (Figure 3), instead
 
 **Figure 3.:** The correlation between length and effect size of the 19 autosomes is shown (p=0.001, r = 0.67).
 
-## Mapping of loci associated with molar shape variation
+### Mapping of loci associated with molar shape variation
 
 We decomposed variation in molar tooth shape in PCs. The mapping was performed using 183 mice and ~145,000 SNPs. Centroid size was used as proxy for tooth size, however, no genomic regions were significantly associated with size variation.
 
@@ -129,9 +361,80 @@ These five loci are found in chromosomes 1, 5, 6, and X, and were associated wit
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29510/elife-29510-fig4-v2.jpg)
 
-**Figure 4.:** (a) Manhattan plot showing SNPs associated with molar shape variation. The blue line indicates the genome-wide significance threshold (1 × 10−6). However, to determine significance, a threshold was derived by permutations for each PC, and independently for autosomes and X chromosome (see Materials and methods). (b) Molar shape variation associated with the most significant SNP within each locus, estimated as the shape difference between the two homozygous SNP states. Warm colors indicate expansion and cold colors indicate compression of tissue relative to the mean shape. The SNP associated with the gene Mitf shows stronger localized effects. The raw phenotypic data used for the association mapping can be found as Source Data 1.10.7554/eLife.29510.008Figure 4—source data 1.The dimensionality of the molar shape data was reduced using a PCA. The centroid size and PC scores for the first 18 PCs for each mouse are shown. These PC scores were used as phenotypes in the association mapping implemented in GEMMAX.
+**Figure 4.:** (a) Manhattan plot showing SNPs associated with molar shape variation. The blue line indicates the genome-wide significance threshold (1 × 10−6). However, to determine significance, a threshold was derived by permutations for each PC, and independently for autosomes and X chromosome (see Materials and methods). (b) Molar shape variation associated with the most significant SNP within each locus, estimated as the shape difference between the two homozygous SNP states. Warm colors indicate expansion and cold colors indicate compression of tissue relative to the mean shape. The SNP associated with the gene Mitf shows stronger localized effects. The raw phenotypic data used for the association mapping can be found as Source Data 1.
 
-## Mitf gene affects molar shape in mice
+**Table 3.**
+ Association mapping of molar shape variation.The name of each significant region is defined by Mo (molar) and chromosomal location. The SNP with lowest p-value, its position in the genome, and p-value are shown. Effect size is calculated as the percentage of molar shape variation explained by the SNP. *All protein coding genes in the significant regions are shown, except for region Mo.X.2 where only genes relevant to the discussion are included; in total it contains 306 protein-coding genes. **Only this region was associated with more than one SNP. The five significantly associated SNPs spam a 55 Mb region (ChrX:104533418–15959832).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>QTL</th>
+      <th>Chr</th>
+      <th>Position</th>
+      <th>Best SNP</th>
+      <th>p-value</th>
+      <th>Effect size</th>
+      <th>PC axis</th>
+      <th>Genes*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mo.1</td>
+      <td>chr1</td>
+      <td>84306638</td>
+      <td>JAX00006079</td>
+      <td>5.11E-07</td>
+      <td>1.1%</td>
+      <td>PC11</td>
+      <td>Pid1, Dner</td>
+    </tr>
+    <tr>
+      <td>Mo.5</td>
+      <td>chr5</td>
+      <td>36723779</td>
+      <td>JAX00128837</td>
+      <td>5.79E-07</td>
+      <td>3.2%</td>
+      <td>PC18</td>
+      <td>Psapl1, Tada2b, Ccdc96, Grpel1, Tbc1d14, D5Ertd579e, Sorcs2</td>
+    </tr>
+    <tr>
+      <td>Mo.6</td>
+      <td>chr6</td>
+      <td>97980057</td>
+      <td>JAX00619074</td>
+      <td>2.71E-08</td>
+      <td>2.8%</td>
+      <td>PC7</td>
+      <td>Gm765, Mitf</td>
+    </tr>
+    <tr>
+      <td>Mo.X.1</td>
+      <td>chrX</td>
+      <td>92638616</td>
+      <td>JAX00715960</td>
+      <td>1.18E-07</td>
+      <td>1.6%</td>
+      <td>PC16</td>
+      <td>Fam123b, Zc4h2, Asb12, Arhgef9</td>
+    </tr>
+    <tr>
+      <td>Mo.X.2**</td>
+      <td>chrX</td>
+      <td>104533418</td>
+      <td>JAX00183055</td>
+      <td>1.28E-10</td>
+      <td>2.2%</td>
+      <td>PC7</td>
+      <td>Rps6ka3, Dach2, Ap1s2, Itm2a and 301 other genes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mitf gene affects molar shape in mice
 
 From the genes located in the QTL regions, two have been reported to affect tooth development directly or indirectly (MGI database queried 22.03.16), namely Rps6ka3 (Laugel-Haushalter et al., 2014) and the microphthalmia-associated transcription factor Mitf (Al-Douri and Johnson, 1987). The Rps6ka3 gene is located in Mo.X.2 that contains 305 additional genes, making it difficult to assess its relevance. However, Mitf is one of two genes found in Mo.6, and since many different mutations are known in this gene, it is possible to determine its relevance in tooth development.
 
@@ -145,7 +448,7 @@ As shown in Figure 5, all Mitf alleles affected the shape of the upper first mol
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/29510/elife-29510-fig5-v2.jpg)
 
-**Figure 5.:** Mitf mutant alleles on the shape of the upper first molar.(a) Differentiation of the mutants from the wild-type (B6) in a morphospace (first two axes of a PCA on molar shape descriptors). (b–g) Mean phenotypic effect of each mutation relative to the mean shape of wild-type (C57Bl/J6) mice. The same color scale was used for all shape reconstructions. Warm colors indicate expansion and cold colors compression. (h) Correlation between various effects on tooth shape. Grey dots: pairwise correlations between PCs used for the mapping. They provide a proxy for the expected correlation between orthogonal directions of change. Blue dots: comparison between PCs used for the mapping and the effect of the SNP associated with Mitf -JAX00619074 SNP (most significant SNP in Mo.6 region). Only PC7, associated with Mo.6 in the mapping, resembles the shape effect of the Mitf-associated SNP. Red dots: comparison of the effect of Mitf alleles with the JAX00619074 SNP. Most Mitf mutants display an effect on tooth shape correlated with the effect of Mo.6. (i) Tooth shape variation in the hybrid mice used in the GWAS, and shape variation in the Mitf mutants. Each point corresponds to the Procrustes distance between a mouse tooth and a consensus shape. For hybrid mice the consensus shape is the mean tooth shape of all hybrids; for mutant mice it corresponds to the mean shape of wild-type mice. Within the hybrid group, blue diamonds and red triangles represent individuals with more than 80% alleles from M.m.musculus or M.m.domesticus, respectively. The Mitf mutations studied here generate shape changes in the range of magnitude (Procrustes distance) of natural variation observed within wild hybrids.
+**Figure 5.:** (a) Differentiation of the mutants from the wild-type (B6) in a morphospace (first two axes of a PCA on molar shape descriptors). (b–g) Mean phenotypic effect of each mutation relative to the mean shape of wild-type (C57Bl/J6) mice. The same color scale was used for all shape reconstructions. Warm colors indicate expansion and cold colors compression. (h) Correlation between various effects on tooth shape. Grey dots: pairwise correlations between PCs used for the mapping. They provide a proxy for the expected correlation between orthogonal directions of change. Blue dots: comparison between PCs used for the mapping and the effect of the SNP associated with Mitf -JAX00619074 SNP (most significant SNP in Mo.6 region). Only PC7, associated with Mo.6 in the mapping, resembles the shape effect of the Mitf-associated SNP. Red dots: comparison of the effect of Mitf alleles with the JAX00619074 SNP. Most Mitf mutants display an effect on tooth shape correlated with the effect of Mo.6. (i) Tooth shape variation in the hybrid mice used in the GWAS, and shape variation in the Mitf mutants. Each point corresponds to the Procrustes distance between a mouse tooth and a consensus shape. For hybrid mice the consensus shape is the mean tooth shape of all hybrids; for mutant mice it corresponds to the mean shape of wild-type mice. Within the hybrid group, blue diamonds and red triangles represent individuals with more than 80% alleles from M.m.musculus or M.m.domesticus, respectively. The Mitf mutations studied here generate shape changes in the range of magnitude (Procrustes distance) of natural variation observed within wild hybrids.
 
 MitfMi-wh/Mitfmi compound heterozygotes have a similar molar shape as MitfMi-wh/+ heterozygotes, suggesting that the Mitfmi allele alone has no additional effect on molar shape (Figure 5d,g). Interestingly, in homozygous condition, Mitfmi does result in severe pigmentation and eye phenotypes (Steingrimsson et al., 2004). However, given that Mitfmi/+ mice were not examined in this study, we are not able to rule out the role of this allele in tooth shape. The molar shape generated by Mitfmi-vga9/+ is very similar to MitfMi-wh/MitfMi-wh, although the intensity of the effect seems stronger in the latter (Figure 5b,e). For the Mitfmi-vga9 and MitfMi-wh alleles, three genetic combinations were available. The Mitfmi-vga9 mutation behaves additively regarding molar shape (Figure 5). This contrasts with reports on other phenotypes where its effect is clearly recessive (Hodgkinson et al., 1993).
 
@@ -159,13 +462,13 @@ The mapping population and the phenotyping approach used here played a definitiv
 
 The phenotyping approach used here made use of 3D surface morphometrics, allowing us to quantify additional dimensions of variation compared to the two-dimensional approach (Workman et al., 2002; Shimizu et al., 2004). By measuring the surface of the tooth, this approach captures variation generated by differential wear between individuals, a confounding factor that is not present in 2D studies. Following Ledevin et al. (2016), we used a wear-free template that allowed us to preserve the additional shape information captured by 3D methods and exclude wear-related variation. In this way, we were able to identify genetic loci associated with shape variation that otherwise would have been obscured by strong wear effects (see Results). Our findings are, however, a subset of the possible associations between molar shape and genomic regions. Between-individual differences in cusp shape remain to be explored at the genomic level.
 
-## Genetic architecture
+### Genetic architecture
 
 We have shown that more than half of the molar shape variation can be attributed to additive genetic effects, and that its genetic architecture is indeed polygenic, with many loci of small-to-moderate effect fine-tuning the phenotype within species. The same architecture has been reported for skull and mandible shape, traits that differ from teeth in their origin and time of development (Pallares et al., 2014; Pallares et al., 2015). The only study, up to now, addressing the genetic basis of molar shape variation in mice identified 18 QTL for 2D molar row shape using a F2 cross between LG/J and SM/J inbred mouse lines (Workman et al., 2002). This result points toward the polygenicity of molar shape determination. However, the focal trait (molar row) and low mapping resolution limit the comparisons with our findings. Using a modeling approach, Salazar-Ciudad and Jernvall (2010) have suggested that population-level variation in molar shape might have a simple genetic basis since they are able to recreate it by tuning a small number of parameters in the model. However, it cannot be excluded that such parameters are essentially polygenic, and therefore, even when the model provides valuable insights into covariation of molar traits, it may not be adequate to decipher the genetic architecture of the trait (Urdy et al., 2016).
 
 Despite the significant amount of genetic variation underlying phenotypic variation, we were only able to identify five genomic regions significantly associated with four (of 18) PCs. Together these loci explain around 10% of the total phenotypic variation, hence there are additional contributing loci yet to be identified. This is expected for a highly polygenic trait; increasing sample size and implementing multivariate mapping of shape traits will likely identify additional genes contributing to natural variation in molar shape.
 
-## Mitf and molar shape variation
+### Mitf and molar shape variation
 
 Mutations in several genes have been shown to affect cusp patterning in mice, most of them generating large changes in teeth morphology (reviewed in Jernvall and Thesleff, 2012 and Bei, 2009). In contrast, to our knowledge, there are no reports of loci generating variation in molar shape of similar magnitude to variation observed in the wild, where shape differences between individuals are small. Here, we report that the transcription factor Mitf, a candidate gene identified by association mapping, affects the shape of the upper first molar in mice. All Mitf mutant alleles that were studied here had a significant effect on molar shape, regardless of severity of the mutation. Interestingly, even mice heterozygous for the mutant alleles showed consistent shape changes. The consistency in direction and magnitude of the phenotypic effect of each mutation (see Figure 5) suggests that the shape changes are indeed caused by the mutant allele, and are not the product of noise in the development of the tooth or associated tissues. In the latter case, we might have expected mice with the same mutant allele to exhibit non-consistent tooth shape changes. Although all mutations affect the phenotype, MitfMi-wh in homozygous state, most closely resembles the molar shape associated with Mo.6, the QTL where Mitf is found.
 
@@ -175,6 +478,6 @@ Some differences exist between the effects of Mitf on molar shape and previously
 
 The evidence presented here for effect of Mitf on molar shape comes from mutations in a mouse laboratory strain, and it is therefore not equivalent to comparing the effect of naturally occurring alleles. This is evident from the large phenotypic effect of each Mitf mutant compared to within-population molar shape variation (Figure 5i). However, at least nine missense variants of Mitf segregate in wild mouse populations (Harr et al., 2016) (Supplementary file 1B). Whether such naturally occurring variants are associated with tooth shape variation remains to be tested. If this is indeed the case, the next step will be to explore how this gene is integrated into the already known pathways controlling tooth morphogenesis. Moreover, it will need to be assessed whether polymorphism in this gene is the result of neutral processes or the result of natural selection. Given the importance of Mitf in various pathways, e.g. pigmentation and ossification, the subtle molar shape variation generated at the intraspecific level might be a byproduct of a polymorphism maintained by its role on other phenotypes, not directly on tooth shape. This type of pleiotropic effects on molar teeth has been proposed elsewhere regarding conspicuous morphological changes (Rodrigues et al., 2013).
 
-## Concluding remarks
+### Concluding remarks
 
 We have shown that subtle phenotypic variation at the micro-evolutionary level (i.e within-species) has a strong additive genetic basis. Such variation in molar shape is due to many small effect loci, but identification of loci and validation of causative genes is feasible. We report that the candidate gene, Mitf, has subtle but consistent effects on molar shape. We expect the results presented here to serve as a framework to further explore the way in which small effect loci act together to generate a functional, but still variable morphological shape.

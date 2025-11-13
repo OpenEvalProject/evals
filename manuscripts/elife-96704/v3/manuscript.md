@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0153tk833 Department of Molecular Physiology and Biological Physics, University of Virginia School of Medicine Charlottesville United States
-2. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase United States
+1. Department of Molecular Physiology and Biological Physics, University of Virginia School of Medicine Charlottesville United States ([ROR:0153tk833](https://ror.org/0153tk833))
+2. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -33,47 +33,79 @@ To analyze the oligomerization and function of primary cell wall CesAs, we recom
 
 ## Results
 
-## Primary cell wall CesAs purify as high and low molecular weight species
+### Primary cell wall CesAs purify as high and low molecular weight species
 
 We selected a set of G. max (Gm) CesA isoforms that phylogenetically cluster with Arabidopsis thaliana CesA1, CesA3 and CesA6, respectively, and that are widely and strongly expressed in unlignified soybean tissues (Figure 1, Figure 1—figure supplement 1A and B). Existing co-expression data from ATTED-II https://atted.jp/ (Obayashi et al., 2022) indicate that the enzymes are co-expressed with other primary cell wall genes implicated in pectin, arabinogalactan, and galactoglucomannan biosynthesis (Figure 1). We therefore conclude that the selected CesAs indeed represent primary cell wall CesAs.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig1-v3.jpg)
+
+**Figure 1.:** Left: Maximum-likelihood phylogeny of CesA protein sequences from soy, Arabidopsis, cotton, poplar, tomato, Physcomitrium and Amborella. For alignment, the Pfam-defined 'Cellulose synthase' domain was extracted from each sequence using HMMER. The final phylogeny was calculated using RAxML with 100 rapid bootstrap pseudo-replicates. Arrowheads mark the positions of GmCesA1, GmCesA3, and GmCesA6 within the tree; structurally characterized proteins (PttCesA8 and GhCesA7) and Arabidopsis sequences are also labelled. Branch lengths correspond to average number of substitutions per site (relative to scale bar); branch labels report bootstrap successes for each split. Right: Co-expressed gene networks for GmCesA1, GmCesA3, and GmCesA6 from ATTED-II v11 (https://atted.jp). Relevant functional annotations for co-expressed cell wall genes are labelled by color (cellulose synthesis: yellow; pectin synthesis: orange; β-galactoglucomannan synthesis: violet; arabinogalactan proteins: purple).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequences were aligned in Clustal Omega (Larkin et al., 2007) and visualized in Jalview (Waterhouse et al., 2009) showing sequence identity from dark blue (high) to white (low). (B) Gene expression profiles of soybean GmCesA1: Glyma.06G069600, GmCesA3: Glyma.12G237000, and GmCesA6: Glyma.02G080900 from the soybean eFP Browser (https://bar.utoronto.ca/efpsoybean/cgi-bin/efpWeb.cgi). (C) In vitro Michaelis Menten kinetic analysis of GmCesA1 and GmCesA3 by titrating UDP-Glc and quantifying the generated UDP using an UDP-Glo assay kit. The data is normalized to the highest activity of GmCesA1. The activity of GmCesA6 was too weak to be analyzed by this method. Error bars represent the standard deviations from the means of three technical replicas.
 
 To biochemically and structurally characterize the GmCesAs, we followed a similar heterologous expression protocol as established previously for hybrid aspen CesA8 (PttCesA8) (Purushotham et al., 2020). In short, the GmCesAs were expressed with N-terminal poly-histidine tags in Sf9 insect cells and purified by metal affinity and size exclusion chromatography in the detergent glyco-diosgenin (GDN; Materials and methods). Size exclusion chromatography separated all GmCesA isoforms into high and low molecular weight species (Figure 2A–C). Cryogenic and negative stain EM analyses identified these species as GmCesA trimers and monomers, respectively (see below). Of note, compared to GmCesA1 and GmCesA3, the yield of trimeric GmCesA6 was more variable, with some preparations producing primarily monomeric species. This suggests that GmCesA6 is less stable in a detergent-solubilized state compared with the other isoforms.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig2-v3.jpg)
 
-**Figure 2.:** Glycine max primary cell wall CesAs.From (A–C) analytical size exclusion chromatography (Superose 6 Increase) of GmCesA1 (A), GmCesA3 (B), and GmCesA6 (C). Void volume (Vo) and trimer and monomer peaks are marked. A rerun of the trimer fraction for each species is shown as a dashed profile. Inset: Coomassie-stained SDS-polyacrylamide gel electrophoresis of the indicated elution volumes. The molecular weights of the protein marker bands are indicated in panel A and apply to all panels. (D) Catalytic activity of the purified GmCesAs. 3H-labeled cellulose synthesized by trimeric and monomeric species was degraded with cellulase, followed by quantification by scintillation counting. (DS) and (PS) indicate cellulase treatments during and after the synthesis reaction, respectively. DPM: disintegrations per minute. (E) pH optima for catalytic activity of GmCesA1, GmCesA3, and GmCesA6. Activities are normalized to the highest activity for each isoform. (F) UDP inhibits CesAs. Cellulose biosynthesis was performed in the presence of 1.4, 0.5, and 2.3 mM UDP-Glc for GmCesA1, GmCesA3, and GmCesA6, respectively, as well as the indicated increasing concentrations of UDP. Product yields in the absence of UDP were set as 100%. Error bars in panels D–F represent deviations from the means of at least three replicas.
+**Figure 2.:** From (A–C) analytical size exclusion chromatography (Superose 6 Increase) of GmCesA1 (A), GmCesA3 (B), and GmCesA6 (C). Void volume (Vo) and trimer and monomer peaks are marked. A rerun of the trimer fraction for each species is shown as a dashed profile. Inset: Coomassie-stained SDS-polyacrylamide gel electrophoresis of the indicated elution volumes. The molecular weights of the protein marker bands are indicated in panel A and apply to all panels. (D) Catalytic activity of the purified GmCesAs. 3H-labeled cellulose synthesized by trimeric and monomeric species was degraded with cellulase, followed by quantification by scintillation counting. (DS) and (PS) indicate cellulase treatments during and after the synthesis reaction, respectively. DPM: disintegrations per minute. (E) pH optima for catalytic activity of GmCesA1, GmCesA3, and GmCesA6. Activities are normalized to the highest activity for each isoform. (F) UDP inhibits CesAs. Cellulose biosynthesis was performed in the presence of 1.4, 0.5, and 2.3 mM UDP-Glc for GmCesA1, GmCesA3, and GmCesA6, respectively, as well as the indicated increasing concentrations of UDP. Product yields in the absence of UDP were set as 100%. Error bars in panels D–F represent deviations from the means of at least three replicas.
 
 To test whether the detergent-solubilized GmCesA trimers dissociate into monomers over time, the purified GmCesA trimers were reinjected onto the size exclusion chromatography column after an overnight incubation on ice. For all species, the reinjected material eluted as a trimeric complex, indicating that assembled trimers are stable and do not interconvert with monomers within this timeframe (Figure 2A–C). The co-purifying monomers likely arise from incompletely assembled trimers or oligomer dissociation during purification.
 
-## In vitro cellulose biosynthesis
+### In vitro cellulose biosynthesis
 
 Cellulose biosynthetic activity of the purified CesAs was quantified by measuring the incorporation of 3H-labeled glucose into insoluble cellulose, followed by scintillation counting, as previously described (Purushotham et al., 2016). As shown in Figure 2D, the relative activities of the monomeric and trimeric GmCesA fractions are comparable for each isoform, demonstrating that both species are catalytically active in vitro. Between the different isoforms, GmCesA1 exhibits greatest product accumulation (Figure 2D). In all cases, the in vitro synthesized polymer is readily degraded by a cellulase, indicating the formation of authentic cellulose. No product was obtained in the presence of EDTA, in agreement with previous observations (Purushotham et al., 2016).
 
 To further assess catalytic differences between the GmCesA isoforms, we determined their pH optima for catalytic activity (Figure 2E). All GmCesA isoforms show greatest catalytic activity at neutral to mild-alkaline pH. GmCesA3 exhibits an activity optimum at pH 7 with a sharp decline at pH 8 and 9. In contrast, the activities of GmCesA1 and GmCesA6 peak at pH 8, with a slight decline at pH 9 (Figure 2E). Quantifying the release of UDP during biosynthesis reactions using a ‘UDP-Glo’ glycosyltransferase assay (Das et al., 2016) reveals Michaelis–Menten constants for GmCesA1 and GmCesA3 with respect to UDP-Glc of 0.44 mM and 0.18 mM, respectively. The apparent Vmax value is ~eightfold higher for GmCesA1 compared to GmCesA3 (Figure 1—figure supplement 1C). The activity of GmCesA6 was too weak to be analyzed by this method. Further, we analyzed inhibition of the isoforms by UDP, which competitively inhibits PttCesA8 and related GT-2 enzymes (Gow and Selitrennikoff, 1984; Omadjela et al., 2013; Purushotham et al., 2016; Tlapak-Simmons et al., 2004). GmCesA1’s apparent IC50 for UDP is about 0.8 mM, whereas this concentration is increased to about 1.3–1.5 mM for GmCesA6 and GmCesA3, respectively (Figure 2F).
 
-## Homotrimer assembly
+### Homotrimer assembly
 
 Cryo-EM analyses of the high molecular weight GmCesA fractions (Figure 2A–C) revealed their organization into homotrimeric complexes (Figure 3A, Figure 3—figure supplements 1 and 2, and Supplementary file 1). For all isoforms, two-dimensional classification identified trimeric particles similar to PttCesA8 and cotton CesA7 (GhCesA7) (Purushotham et al., 2020; Zhang et al., 2021a). Particle classification in three dimensions followed by non-uniform refinement with applied C3 symmetry and local refinement generated cryo-EM maps ranging in resolution from about 3.0–3.3 Å.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig3-v3.jpg)
+
+**Figure 3.:** (A) CryoEM maps of the GmCesA homotrimers contoured at 4.5–5.6 σ. One subunit is shown in color, the others are shown in light and dark gray. The gray background indicates the estimated membrane boundaries. (B) Cartoon representation of a GmCesA6 protomer. The transmembrane region is shown in green and dark pink, interface helices (IF) are shown in orange, and the catalytic domain is colored gray. The PCR and CSR regions are shown in blue and yellow, respectively. (C) Comparison of GmCesA6 and PttCesA8. GmCesA6 is shown as a cartoon that is overlaid with a semitransparent surface of PttCesA8 (surface, PDB: 6WLB). Transmembrane helix 7 is colored light and dark pink for PttCesA8 and GmCesA6, respectively. The black triangle indicates the threefold symmetry axis of the homotrimer. Zoom views: Surface representations of GmCesA6 (left) and PttCesA8 (right) highlighting the lateral window. TM7b refers to TM helix 7 of another protomer. The view is from the threefold symmetry axis towards a CesA protomer. The dashed blue line indicates the cellulose secretion channel. (D) CryoEM map of the GmCesA1 trimer shown at a low contour level (1.4 σ). The GmCesA1 structure is shown as a cartoon with one protomer colored yellow. The resolved CSR N- and C-terminal helical regions are colored blue and red, respectively. (E) Sequence alignment of the CSR regions of GmCesA1, GmCesA3, and GmCesA6 generated in Clustal Omega (Larkin et al., 2007).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** All steps were performed in CryoSparc v4 (Punjani et al., 2017).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Selected helical segments of GmCesA1, GmCesA3, and GmCesA6. TM helix 7 was excluded from the GmCesA3 model due to limiting map quality. (B) Close-up views of the unidentified ligands coordinated by the PCR domains of the homotrimers.
 
 Overall, the CesAs contain a cytosolic catalytic domain that interacts with the channel-forming TM region via three amphipathic IF helices (Figure 3B). The helices surround the entrance to the TM channel with the Trp residue of the QxxRW motif at its portal. As previously described for hybrid aspen PttCesA8 and GhCesA7, the CesA trimers are stabilized by the PCR domain that is inserted into CesA’s catalytic domain. (Purushotham et al., 2020; Zhang et al., 2021a).
 
 The triangular PCR arrangement in a CesA complex positions the side chains of conserved Lys and Arg residues towards the threefold symmetry axis. These residues include Arg449, Lys452, and Arg453 in GmCesA6 and coordinate unidentified ligand(s) on the membrane distal and proximal side of the PCR triangle. For all three CesA isoforms, the ligands’ shapes are similar, suggesting that they represent the same small molecule (Figure 3—figure supplement 2B). On the membrane proximal side, the density extends by about 9 Å towards the membrane, perhaps representing a nucleotide bound in different poses, as previously suggested for PttCesA8 (Purushotham et al., 2020).
 
-## A transmembrane channel with a large lateral opening
+### A transmembrane channel with a large lateral opening
 
 CesAs contain seven TM helices of which helices 1–6 create a cellulose conducting channel. In the previously described PttCesA8 and GhCesA7 complexes, TM helix 7 of one protomer packs against TM helices 5 and 6 of a neighboring CesA subunit (Figure 3C). In new soybean CesA structures, however, this helix is more flexible, as evidenced by weaker map quality (Figure 3—figure supplement 2A), and shifted to the periphery of the trimer. In the new position, the helix primarily mediates contacts with TM helix 5 and the C-terminal segment of TM helix 3 of the same CesA protomer (Figure 3B and C). The helix has been modeled for GmCesA1 and GmCesA6, while its density is detectable at a similar position but too discontinuous for modeling in the GmCesA3 map.
 
 The displacement of TM helix 7 away from the TM channel of the neighboring subunit opens a lateral lipid-exposed window in the neighboring subunit’s channel architecture (Figure 3C). The window is formed by the N-terminal region of IF helix 3 and TM helices 4 and 6. About midway across the membrane, the opening is roughly 6 Å wide, for example between the side chains of Ile901 in TM helix 4 and Trp1018 in TM helix 6 (Figure 3C). The lateral window likely exposes the translocating nascent cellulose polymer to the hydrophobicity of the lipid bilayer. A similar lipid exposed polysaccharide translocation pathway has recently been described for hyaluronan synthase (Maloney et al., 2022).
 
-## The CSR forms a hook-shaped extension of the catalytic domain
+### The CSR forms a hook-shaped extension of the catalytic domain
 
 Plant CesAs contain two structurally and functionally unresolved domains, which are the N-terminal domain (NTD) and the CSR. The NTD has been resolved at lower resolution for PttCesA8, where it forms a helical stalk extending from the catalytic domains into the cytosol (Purushotham et al., 2020). We observe a similar stalk-like extension in some of the trimeric GmCesA3 particles (Figure 3—figure supplement 1). However, the NTD is only resolved for a small subset of GmCesA3 particles and not resolved at all for the other GmCesAs. This suggests that it can adopt multiple conformations, with the stalk being one of them.
 
 The CSR has been proposed to be intrinsically disordered (Scavuzzo-Duggan et al., 2018) and only its short N- and C-terminal helical segments are visible in the cryo-EM maps. For GmCesA1, however, at lower contour levels, additional CSR density is evident, extending from corners of the catalytic domains of the GmCesA1 trimer (Figure 3D). Viewed from the cytosol, the extra density resembles a hook extending by about 20 Å clockwise and tangentially along the trimer’s corners at the water-lipid interface. At this position, the CSR’s N-terminal conserved cysteine residue(s) postulated to be acylated (Kumar et al., 2016) reside near the membrane interface (Figure 3D and E).
 
-## Homotrimers of different GmCesA isoforms interact
+### Homotrimers of different GmCesA isoforms interact
 
 We next tested whether GmCesA homotrimers of different isoforms would interact in vitro. To this end, we individually expressed and purified trimers of poly-His tagged GmCesA1 and GmCesA6 (His-CesA1 and His-CesA6) and TwinStrep-tagged GmCesA1 and GmCesA3 (Strep-CesA1 and Strep-CesA3) (Figure 4). Cross-isoform interactions were tested by tandem purifications over Ni-NTA and Strep-Tactin affinity matrices. His-CesA1 can be distinguished from Strep-GmCesA3 by Coomassie stained SDS-PAGE due to size differences, whereas all other species comigrate. Therefore, western blotting together with Coomassiestained SDS-PAGE was performed to evaluate the co-purification results.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig4-v3.jpg)
+
+**Figure 4.:** Tandem pull-down experiments using Ni-NTA and Strep-Tactin resin. Experiments were performed with homotrimers of the indicated GmCesA isoforms tagged N-terminally either with His- or TwinStrep-tags. Material eluted from the Ni-NTA resin was loaded onto the Strep-Tactin beads. Top panels: Coomassie stained SDS-PAGE, bottom panels: Western blots using anti penta-His or anti-Strep primary antibodies. (A–C) Trimer-trimer interaction between GmCesA1 and GmCesA3, GmCesA6 and GmCesA3, and GmCesA6 and GmCesA1, respectively. (D) Differently tagged homotrimers of the same isoform do not interact. Tandem purification of a mixture of His- and TwinStrep-tagged GmCesA1. (E–H) Control binding of His-tagged CesAs to StrepTactin beads and Strep-tagged GmCesAs to Ni-NTA resin. F, W, E: Flow through, wash, and eluted fractions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Tandem purifications of combinations of His- and Strep-tagged CesA3 or CesA6 (A and B) together with the non-specific binding controls (C and D). (E and F) Interactions of monomers of different CesA isoforms. (E) Monomeric versions of His-tagged CesA1 and Strep-tagged CesA3 were subjected to tandem purification starting either with Ni-NTA resin or Strep-Tactin beads. (F) Controls to account for non-specific interactions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** GmCesA1, GmCesA3, and GmCesA6 were co-expressed in Sf9 cells and purified by sequential affinity chromatography. (A) Material eluted (Elu) from a Ni-NTA column was purified over Strep-Tactin affinity resin. (B) The Elu fraction from the Strep-Tactin resin was loaded onto a Superose-6 size exclusion chromatography column (SEC). The inset shows a Coomassie-stained SDS-PAGE of the indicated fractions. (C) The peak fraction from (B) was loaded onto an anti-Flag affinity matrix, washed (W), and eluted. (D) Western blot analysis of eluting (Elu), flow through (Ft), and SEC (4, 5) fractions from all steps shows the presence of all GmCesA species, alongside significant loss in all Ft fractions.
 
 An equimolar mixture (based on UV absorbance) of His-CesA1 and Strep-CesA3 was incubated for 180 min on ice and sequentially purified using (1) Ni-NTA resin and (2) Strep-Tactin beads (Figure 4A). The Coomassie stained SDS-PAGE resolved both GmCesA species in the initial mixture, after elution from the Ni-NTA resin, as well as upon elution from the Strep-Tactin beads. The identity of the bands as His-CesA1 and Strep-CesA3 was confirmed by western blotting. We observed no non-specific binding of His-CesA1 to Strep-Tactin beads or Strep-CesA3 to Ni-NTA resin (Figure 4E).
 
@@ -83,7 +115,7 @@ As an additional control, we analyzed whether differently tagged homotrimers of 
 
 Similar tandem purification experiments were also performed with the monomeric CesA fractions obtained from size exclusion chromatography (Figure 2A–C). As observed for the homotrimeric complexes, monomeric His-CesA1 co-purifies with monomeric Strep-CesA3, demonstrating that trimeric assemblies are not necessary for the observed interactions (Figure 4—figure supplement 1E and F).
 
-## Only the CSR is required for isoform interaction
+### Only the CSR is required for isoform interaction
 
 The biological functions of CesA’s NTD and CSR are currently unknown. The NTD’s RING-like domain has been shown to form dimers and trimers in vitro (Kurek et al., 2002; Purushotham et al., 2020), raising the possibility that it could form inter-trimer complexes accounting for the observed isoform interactions.
 
@@ -91,17 +123,17 @@ To test this hypothesis, N-terminally truncated constructs of GmCesA1 and GmCesA
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig5-v3.jpg)
 
-**Figure 5.:** Isoform interactions are independent of the NTD. (A) Activity comparison of full-length and N-terminally truncated GmCesA isoforms. DPM: disintegrations per minute. Error bars represent deviations from the means of at least three replicates. (B) Tandem pull-down experiments as in Figure 4 but with N-terminally truncated homotrimers of GmCesA1 and GmCesA3. Top panel: SDS-PAGE, bottom panel: Western blots using anti-His and anti-Strep primary antibodies. (C) Control binding of His-ΔNCesA1 to Strep-Tactin beads and Strep-ΔNCesA3 to Ni-NTA resin. L, Ft, W, E: Load, Flow through, Wash, and Eluted fractions. (D) AlphaFold predicted model of N-terminally truncated GmCesA1 with the CSR replaced by a loop shown as an orange backbone (left), and negative stain images of the NTD- and CSR-truncated GmCesA1 trimer. (E) Tandem purification of NTD and CSR truncated GmCesA1 and GmCesA3. (F) Affinity purification of His-tagged full-length GmCesA1 and Strep-tagged NTD- and CSR-truncated GmCesA3. Shown is an SDS-PAGE after Coomassie staining.Figure 5—source data 1.Figure 5B, C, E and F.Figure 5—source data 2.Figure 5B, C, E and F.
+**Figure 5.:** Isoform interactions are independent of the NTD. (A) Activity comparison of full-length and N-terminally truncated GmCesA isoforms. DPM: disintegrations per minute. Error bars represent deviations from the means of at least three replicates. (B) Tandem pull-down experiments as in Figure 4 but with N-terminally truncated homotrimers of GmCesA1 and GmCesA3. Top panel: SDS-PAGE, bottom panel: Western blots using anti-His and anti-Strep primary antibodies. (C) Control binding of His-ΔNCesA1 to Strep-Tactin beads and Strep-ΔNCesA3 to Ni-NTA resin. L, Ft, W, E: Load, Flow through, Wash, and Eluted fractions. (D) AlphaFold predicted model of N-terminally truncated GmCesA1 with the CSR replaced by a loop shown as an orange backbone (left), and negative stain images of the NTD- and CSR-truncated GmCesA1 trimer. (E) Tandem purification of NTD and CSR truncated GmCesA1 and GmCesA3. (F) Affinity purification of His-tagged full-length GmCesA1 and Strep-tagged NTD- and CSR-truncated GmCesA3. Shown is an SDS-PAGE after Coomassie staining.
 
 To test whether the CSR is involved in isoform interaction, the domain was replaced in the N-terminally truncated GmCesA1 and GmCesA3 constructs with a flexible loop of 20 residues (see Materials and methods), thereby generating GmCesA constructs devoid of the NTD as well as the CSR (Figure 5D). Negative stain EM of the purified truncated GmCesA1 particles demonstrates their trimeric assembly, as observed for the full-length and NTD truncated versions (Figure 5D). Upon deletion of the CSR, the GmCesA1 and GmCesA3 isoforms no longer co-purify in vitro, suggesting that the region is indeed required for inter-isoform interaction (Figure 5E). Further, an N-terminally and CSR truncated GmCesA3 construct shows only minor, most likely non-specific, interaction with full-length GmCesA1, suggesting that GmCesA isoforms interact primarily via their CSR domains (Figure 5F).
 
-## Clustering of homotrimers of different GmCesA isoforms
+### Clustering of homotrimers of different GmCesA isoforms
 
 Negative stain electron microscopy analyses of the individual GmCesA homotrimers revealed monodisperse particle distributions (Figure 6A–C). The size and shape of the particles is consistent with the GmCesA homotrimers observed by cryo-EM and remains unchanged over a course of a week when incubated on ice.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig6-v3.jpg)
 
-**Figure 6.:** GmCesA homotrimers and a dimer of trimer.(A–C) Uranyl formate-stained EM images of homotrimers of purified GmCesA1 (A), GmCesA3 (B) and GmCesA6 (C). The proteins were incubated overnight on ice prior to grid preparation. (D) The same for an equimolar mixture of all three GmCesA isoforms, incubated overnight, separated from individual trimers by size exclusion chromatography, and imaged by negative stain EM. Selected clusters are encircled. Scale bar: 100 nm. (E) Purified trimers of GmCesA1 and GmCesA3 were combined and used for cryo-EM analysis. Shown are 2D class averages of dimers of trimers. (F and G) Manually assembled GmCesA1 trimer volumes (F) were used to calculate 2D class average templates (G) for comparison with the experimentally obtained dimers of trimers shown in panel (E).
+**Figure 6.:** (A–C) Uranyl formate-stained EM images of homotrimers of purified GmCesA1 (A), GmCesA3 (B) and GmCesA6 (C). The proteins were incubated overnight on ice prior to grid preparation. (D) The same for an equimolar mixture of all three GmCesA isoforms, incubated overnight, separated from individual trimers by size exclusion chromatography, and imaged by negative stain EM. Selected clusters are encircled. Scale bar: 100 nm. (E) Purified trimers of GmCesA1 and GmCesA3 were combined and used for cryo-EM analysis. Shown are 2D class averages of dimers of trimers. (F and G) Manually assembled GmCesA1 trimer volumes (F) were used to calculate 2D class average templates (G) for comparison with the experimentally obtained dimers of trimers shown in panel (E).
 
 To visualize the interaction of the isoforms, all three homotrimeric isoforms were combined at equal molar ratio and subjected to size exclusion chromatography after incubation overnight on ice. Negative stain EM analysis of high molecular weight fractions eluting after the void volume revealed GmCesA clusters of varying stoichiometries, ranging from 2 to >10 particles (Figure 6D). The clusters likely arise from trimer-trimer interactions in different orientations and vary in diameter from about 50–100 nm. No clustering was observed for any of the individual GmCesA isoforms alone, even after prolonged incubations on ice.
 
@@ -109,9 +141,25 @@ Further, cryo-EM was used to analyze a mixture of individually purified GmCesA1 
 
 To support this interpretation, two cryo-EM volumes of a GmCesA1 trimer were manually arranged side-by-side but in inverted orientations. The individual volumes were placed such that the CSR densities of two CesA subunits of each trimer would contact each other. The obtained dimer-of-trimer volume was then used to calculate two-dimensional projections for comparison with the experimentally obtained 2D class averages. Indeed, the generated ‘upside down and side-by-side’ arrangement of GmCesA trimer volumes resembles the experimental class averages (Figure 6F and G). Steric interferences of the micelle-embedded TM regions likely prevent the physiological parallel arrangement of two GmCesA trimers under the experimental conditions.
 
-## Synergistic cellulose biosynthesis
+### Synergistic cellulose biosynthesis
 
 We investigated whether the cross-isoform interaction of GmCesA trimers affects their in vitro catalytic activities. To this end, in vitro cellulose biosynthesis was quantified radiometrically from reactions containing one GmCesA isoform at a constant concentration (20 µM) and increasing concentrations of a different Gmdifferent CesA (1–20 µM). As a reference, cellulose biosynthetic activities were also determined for each isoform alone at the concentrations used in the combined assays. As shown in Figure 7A–F, for all isoform combinations, the measured activities exceed the theoretical activities (calculated by adding the individually measured activities) at least one to two-fold, depending on the isoform combination. This suggests synergistic cellulose biosynthesis in the presence of two CesA isoforms. Performing the titration experiment with samples of the same isoform does not reveal any synergy, consistent with the lack of interaction between trimers of the same CesA isoforms (Figures 7G and 4D and Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig7-v3.jpg)
+
+**Figure 7.:** Cellulose biosynthesis from mixtures of GmCesA isoform homotrimers. The formation of 3H-labeled cellulose was quantified by scintillation counting for reaction mixtures containing one GmCesA isoform at 20 µM concentration and another isoform at the indicated increasing concentrations. Blue, magenta and green columns represent activities measured for the individual single isoforms alone. Gray columns represent the calculated theoretical activities for the isoform mixtures by adding the individually determined activities. Red columns represent the experimentally determined activities for the isoform mixtures. (A and B) CesA120 μM + CesA31- 20 μM and CesA320 μM + CesA11- 20 μM; (C and D) CesA320 μM + CesA61- 20 μM and CesA620 μM + CesA31- 20 μM; and (E and F) CesA120 μM + CesA61- 20 μM and CesA620 μM + CesA11- 20 μM, respectively. (G) The same as for panel (A) but titrating the same GmCesA isoform (CesA120 μM + CesA11- 20 μM). (H) The same as for panels A-F but for a combination of all three GmCesA isoforms. Individual and combined activities were determined at a concentration of 6.6 µM for each GmCesA isoform. DPM, disintegrations per minute. In all panels, error bars represent deviations from the means of at least three replicates.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) GmCesA320 μM + GmCesA31- 20 μM, (B) GmCesA620 μM + GmCesA61- 20 μM. Gray columns indicate calculated theoretical activities from individual measurements, red columns are experimentally determined activities. DPM: Disintegrations per minute. In both panels,error bars represent deviations from the means of at least three replicates.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A–C) Co-purification of catalytically active GmCesA homotrimers with tetrathionate inactivated GmCesA homotrimers (indicated by a.T extension). The indicated combinations of CesAs were purified over Ni-NTA beads. Results were analyzed by Coomassie stained SDS-PAGE (top panels) and Western blotting (bottom panels). (D–F) Control binding experiments of Strep-tagged GmCesAs and Ni-NTA resin. (G) Catalytic activity of tetrathionate treated GmCesA3. Error bars represent standard deviations from the means of three technical replicates.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/96704/elife-96704-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A–F) Inactivated GmCesA trimers (indicated by a ‘.T’ extension) at a constant concentration were incubated with increasing concentrations of wild type GmCesAs of a different isoform. Background activities of the inactivated GmCesAs range from ~200–400 DPM. Calculated total theoretical activities are shown as gray columns, experimentally determined activities are shown as red columns. DPM: disintegrations per minute. In all panels, error bars represent deviations from the means of at least three replicates.
 
 Additionally, comparing the measured and additive activities obtained after combining all three GmCesA isoforms (at 6.6 µM each) reveals an experimental activity about threefold above the additive value. This activity level may arise from different dimeric arrangements of GmCesA trimers (1+3, 1+6, and 3+6) and/or the formation of larger complexes of different isoform trimers (1+3 + 6; Figure 7H).
 
@@ -145,21 +193,21 @@ Lastly, the biological functions of the different CesA isoforms are currently un
 
 ## Materials and methods
 
-## Molecular phylogeny
+### Molecular phylogeny
 
 A pre-computed cluster of loose CesA homologues (HOM05D000074) was downloaded from Dicots PLAZA 5.0 (Van Bel et al., 2022), from which soy (Glycine max), Arabidopsis, cotton (Gossypium hirsutum), poplar (Populus trichocarpa), tomato (Solanum lycopersicum), Physcomitrium, and Amborella protein sequences were isolated. The sequence of CesA8 from Populus tremula x tremuloides (PttCesA8) was also added at this stage for later reference. A region corresponding to the Pfam 'Cellulose synthase' domain HMM profile (PF03552) was then extracted using HMMER (Eddy, 2011) with an E-value cutoff of 1×10−80 and a bespoke Python script. The extracted sequences were aligned using MAFFT v7.490 (Katoh and Standley, 2013) before an initial near-maximum likelihood phylogeny using FastTree under default settings. This tree was used to extract bona fide CesA sequences from Csl sequences using Figtree. The corresponding rows of the alignment were then extracted alongside A. thaliana CslD5, which was used as an outgroup in the following analysis. Model selection was carried out using ProtTest version 3.4.2 (Darriba et al., 2011) before calculating the final maximum-likelihood phylogeny using RAxML version 8.2.12 (Stamatakis, 2014) under a JTT + I + Γ model with 100 rapid bootstrap pseudo-replicates. The tree was rendered in Figtree with subsequent labelling in Inkscape.
 
-## Cloning
+### Cloning
 
 The primary cell wall CesA1, CesA3 and CesA6 genes from soybean (Glyma.06G069600, Glyma.12G237000, and Glyma.02G080900) were synthesized (Gene Universal) with an N-terminal 12 x His-tag coding sequence and cloned into NotI and HindIII restriction sites in the pACEBac1 vector. The N-terminally TwinStrep-tagged GmCesA1 and GmCesA3 constructs were generated by QuikChange mutagenesis from the pACEBac1-12xHisCesA vectors. The N-terminally deleted GmCesA constructs (ΔNCesAs) were generated by PIPE cloning from the full-length constructs, resulting in plasmids pACEBac1-ΔNCesA1R260, pACEBac1-ΔNCesA3V243, and pACEBac1-ΔNCesA6M248. The CSR regions of GmCesA1 (residues 654–713) and GmCesA3 (residues 648–709) were replaced with the sequence ASGAGGSEGGGSEGGTSGAT (Baytshtok et al., 2017) in the -ΔNCesA1R260 and -ΔNCesA3V243 backgrounds by gene synthesis.
 
 A-multi GmCesA expression cassette was generated for the co-expression of 12xHis-GmCesA1, TwinStrep-GmCesA3 and 3xFlag-GmCesA6 using homing endonuclease/BstXI multiplication according to the protocol detailed in the MultiBac Multi-Protein Expression in Insect Cells manual (Geneva Biotech). Briefly, the TwinStrep-GmCesA3-pACEBac1 vector (acceptor) was single restriction digested with BstXI. The His-GmCesA1-pACEBac1vector was double restriction digested with I-CeuI and BstXI to excise the promoter and terminator containing His-GmCesA1 (donor). The resulting fragment was inserted into the BstXI-digested TwinStrep-GmCesA3-pACEBac1 vector to generate the TwinStrep-GmCesA3_His-GmCesA1-pACEBac1 construct. The above cloning procedure was repeated one more time to insert the 3xFlag-GmCesA6 (donor) into the GmCesA1 and GmCesA3 containing vector (acceptor) to generate the multi-GmCesA expression construct TwinStrep-CesA3_His-GmCesA1_3xFlag-GmCesA6-pACEBac1.
 
-## Virus generation
+### Virus generation
 
 An aliquot of 3 μL of 100 ng/μL pACEBac1-GmCesA plasmid was used for transformation into 50 μL chemically competent DH10MultiBacTurbo E. coli cells. Bacmids were isolated from white colonies on a Bluo-Gal agar plate and transfected into Spodoptera frugiperda 9 (SF9) cells. P0, P1, and P2 baculovirus was generated according to the Joint Centre for Innovative Membrane Protein Technologies (JCIMPT) protocol.
 
-## Protein expression and purification
+### Protein expression and purification
 
 For GmCesA expression, Sf9 insect cells were infected with 15 mL P2 baculovirus per 400 mL at a density of 3×10−6 cells per mL and grown at 27 °C for 48–72 hr in an orbital shaker. Cells were then harvested by centrifugation at 5,000×g for 10 min at 4 °C. Cell pellets were resuspended in buffer A (20 mM Tris-HCl, pH 7.5, 100 mM NaCl, 5 mM sodium phosphate, 5 mM sodium citrate, and 1 mM TCEP) supplemented with 1% lauryl maltose neopentyl glycol (LMNG, Anatrace), 0.2% cholesteryl hemisuccinate (CHS, Anatrace), and protease inhibitors PIC (0.4 mM AEBSF, 2 μM aprotinin, 30 μM pepstatin, 7.5 μM pepstatin, 40 μM bestatin, 35 μM E-64, and 4.5 mM benzamidine hydrochloride) and lysed in a glass dounce homogenizer  (~30 strokes). The lysate was solubilized at 4 °C for 1 hr on a rocker. After separation of insoluble material by centrifugation at 200,000×g for 45 min, 5 mL of Ni-NTA resin (HisPur Ni-NTA Resin, Thermo scientific) and 20 mM imidazole was added to the supernatant and incubated for 1 hr at 4 °C on a rocker. After batch binding, the resin was packed into a gravity flow column and then sequentially washed twice with ten column volumes each of buffer A containing 40 mM imidazole, 0.02% glyco-diosgenin (GDN, Anatrace) and PIC, followed by ten column volumes of buffer A containing 1 M NaCl and 0.02% GDN (wash 3) and PIC. The final wash step (wash 4) was with ten column volumes of buffer A containing 0.02% GDN, PIC and 60 mM imidazole. The GmCesAs were eluted with six column volumes of buffer A containing 0.02% GDN, PIC and 400 mM imidazole.
 
@@ -167,7 +215,7 @@ The TwinStrep-tagged GmCesAs were affinity purified by incubating the membrane e
 
 His- and TwinStrep-tagged GmCesAs were further purified by size-exclusion chromatography (SEC) using Superose 6 Increase 10/300 GL column (Cytiva) equilibrated in buffer A containing 0.02% GDN without any protease inhibitors. The purified GmCesA trimers and monomers were immediately used for activity assays and pulldown experiments or flash-frozen in liquid nitrogen and stored at –80 °C.
 
-## CesA-CesA pull-down assays
+### CesA-CesA pull-down assays
 
 After SEC, either the trimeric or monomeric fractions of His-GmCesA and TwinStrep-GmCesA were pooled and used for tandem affinity chromatography using Ni-NTA and Strep-Tactin sepharose beads. His-CesA1 and TwinStrep-CesA3 trimers were mixed at 150 μg/mL concentration and incubated at 4 °C for 3 hr. The mixture was first loaded onto 200 μL bed volume Ni-NTA beads for 1 hr at 4 °C in the presence of 20 mM imidazole. After collecting the flowthrough, the beads were washed with 10 bed volumes of buffer A containing 0.02% GDN and 20 mM imidazole for three washes followed by elution in 5 bed volumes of buffer A containing 0.02% GDN and 400 mM imidazole.
 
@@ -175,11 +223,11 @@ The Ni-NTA eluted material was next bound to 200 μL Strep-Tactin sepharose bead
 
 The same protocol was used to study the interactions of GmCesA1 and GmCesA6 or GmCesA3 and GmCesA6 using Strep-tagged GmCesA1 and His-tagged GmCesA6, Strep-tagged GmCesA3 and His-tagged GmCesA6, respectively. Control binding experiments were performed by loading the His-tagged GmCesA species onto Strep-Tactin sepharose beads and the Strep-tagged GmCesAs onto the Ni-NTA beads. In each case, the beads were washed as described above.
 
-## Inactivation of GmCesA
+### Inactivation of GmCesA
 
 GmCesA was inactivated by treating GmCesA trimers with 10 mM sodium tetrathionate overnight at room temperature (24 °C). The treated sample was purified over a size exclusion column to remove the excess sodium tetrathionate. Binding experiments with inactivated and untreated CesAs were performed using Ni-NTA beads as described above.
 
-## GmCesA activity assay
+### GmCesA activity assay
 
 Freshly purified or aliquots of flash-frozen enzyme thawed on ice were used for activity assays. In general, activity assays were performed as described earlier (Purushotham et al., 2020). Radiometric quantification of in vitro synthesized cellulose was performed by combining 5 μM GmCesA, 5 mM UDP-glucose (UDP-Glc), and 0.34 μM (12.5 mCi/L) UDP-[3H]-Glc in buffer containing 20 mM Tris-HCl, pH 7.5, 100 mM NaCl, 20 mM MgCl2, 5 mM sodium phosphate, 5 mM sodium citrate, and 1 mM TCEP. The reaction mixtures were incubated for 45min at 37°C. After incubation, the entire reaction mixture was spotted on Whatman Grade 3 MM chromatography paper. Free substrate was removed by descending paper chromatography in 60% ethanol. The radioactivity retained at the origin was quantified by scintillation counting.
 
@@ -189,15 +237,15 @@ Cellulase digestions were performed by adding 5 U of endo-β–1,4-glucanase (Tr
 
 Steady-state kinetic analyses were performed in triplicate using the UDP-Glo glycosyltransferase Assay kit (Promega) to monitor the released UDP according to the manufacturer’s instructions. For measuring enzyme kinetics, the reaction mixtures containing 0.33 and 3.3 nM trimeric GmCesA1 or GmCesA3, respectively, and 0–1 mM UltraPure UDP-Glc (Promega) were added to 20 mM Tris-HCl buffer, pH 7.5, 100 mM NaCl, 5 mM sodium phosphate, 5 mM sodium citrate, 20 mM MgCl2, 1 mM TCEP, and 0.02% GDN and incubated in a final volume of 25μL for 1 h at 30 °C. Afterwards, the reaction mixture was mixed with an equal amount of UDP-Glo reagent (Promega) in a 96-well Nunclon Delta-Treated flat-bottom microplate (Thermo Fisher Scientific) and incubated for 1 h at room temperature before measuring luminescence using a GloMax Explorer plate reader (Promega). A standard curve was used for quantification of the UDP produced. Kinetic values were obtained using the nonlinear regression function in GraphPad Prism.
 
-## GmCesA UDP inhibition assays
+### GmCesA UDP inhibition assays
 
 UDP inhibition was analyzed using radiometric quantification of in vitro synthesized cellulose, as described above by titrating 0.01–7.5 mM UDP in the reaction. Substrate concentrations for the individual reactions were 1.4 mM, 0.5 mM, and 2.3 mM for GmCesA1, GmCesA3, and GmCesA6, respectively. Inhibition constants (IC50) for each GmCesA were obtained by data analysis in GraphPad Prism.
 
-## Synergistic cellulose biosynthesis
+### Synergistic cellulose biosynthesis
 
 Activity synergism between different GmCesA isoform trimers were studied by mixing two GmCesA isoforms, one at a constant concentration of 20 μM and one at increasing concentrations from 1 to 20 μM. The activities of the individual isoforms at the respective concentrations were also measured. In vitro synthesized cellulose was quantified by scintillation counting, as described above.
 
-## EM grid preparation and data collection
+### EM grid preparation and data collection
 
 After size exclusion chromatography, the freshly purified protein fractions were pooled. The protein quality was monitored by negative stain EM. The proteins were diluted to 0.01 mg/mL and 4 μL was applied to a glow discharged Formvar/Carbon grid (Electron Microscopy Sciences) for 30 s, followed by 2 x washes with 4 μL H2O. The grid was negatively stained with 4 μL 0.75% Uranyl Formate (UF) in H2O for 30 s. Excess UF was removed by blotting with filter paper and the grid was air dried. Images were taken on a Tecnai F20 at the Macromolecular Electron Microscopy Core (MEMC) facility at the University of Virginia.
 
@@ -205,10 +253,10 @@ For cryo grid preparation, the protein samples were concentrated until NanoDrop 
 
 Cryo-EM data were collected at the MEMC at the University of Virginia on a Titan Krios microscope operated at 300 keV and equipped with a Gatan K3 direct electron detector positioned post a Gatan Quantum energy filter. On average, a total of ~6000 movies were collected from one or two grids in counting mode at a magnification of 81 K, pixel size of 1.08 Å, and defocus range from –2.2 to –1.2 µm with step size of 0.2 µm. The total dose was 50 e-/Å2. Movies with 40 frames were collected at 5.17 s/movie rate.
 
-## Cryo-EM data processing
+### Cryo-EM data processing
 
 Cryo-EM data processing was done in cryoSPARC v4 (Punjani et al., 2017). The general workflow is described as supplemental information, Figure 3—figure supplement 1. Based on improved map qualities, all volumes were generated imposing threefold symmetry (C3). Maps generated without symmetry assignment (C1) were used to visualize the unidentified ligand coordinated by the PCR domains at the particle’s symmetry axis. Initial protein models were generated in AlphaFold and manually adjusted in Chimera and Coot (Emsley and Cowtan, 2004; Pettersen et al., 2004). Models were refined in Phenix.refine (Afonine et al., 2012). The following regions were omitted from the constructs due to weak or missing map density: GmCesA1:1–260 (NTD), 654–717 (CSR), 954–978 (gating loop), 1064–1078 (C term); GmCesA3: 1–251 (NTD), 648–712 (CSR), 948–974 (gating loop), 1029–1079 (C term and TM 7); and GmCesA6: 1–248 (NTD), 646–712 (CSR), 952–971 (gating loop), 1060–1078 (C term). Cellobiose was modeled at the acceptor positions of GmCesA3 and GmCesA6. The corresponding density in the GmCesA1 map was too weak for interpretation. Structural representations were generated in ChimeraX or Pymol (Pettersen et al., 2021; PYMOL, 2025).
 
-## Materials availability
+### Materials availability
 
 CesA containing expression constructs are available upon request.

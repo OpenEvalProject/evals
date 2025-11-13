@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.19804.001 Hepcidin is the master regulator of systemic iron homeostasis. Derived primarily from the liver, it inhibits the iron exporter ferroportin in the gut and spleen, the sites of iron absorption and recycling respectively. Recently, we demonstrated that ferroportin is also found in cardiomyocytes, and that its cardiac-specific deletion leads to fatal cardiac iron overload. Hepcidin is also expressed in cardiomyocytes, where its function remains unknown. To define the function of cardiomyocyte hepcidin, we generated mice with cardiomyocyte-specific deletion of hepcidin, or knock-in of hepcidin-resistant ferroportin. We find that while both models maintain normal systemic iron homeostasis, they nonetheless develop fatal contractile and metabolic dysfunction as a consequence of cardiomyocyte iron deficiency. These findings are the first demonstration of a cell-autonomous role for hepcidin in iron homeostasis. They raise the possibility that such function may also be important in other tissues that express both hepcidin and ferroportin, such as the kidney and the brain. DOI: http://dx.doi.org/10.7554/eLife.19804.001
+Hepcidin is the master regulator of systemic iron homeostasis. Derived primarily from the liver, it inhibits the iron exporter ferroportin in the gut and spleen, the sites of iron absorption and recycling respectively. Recently, we demonstrated that ferroportin is also found in cardiomyocytes, and that its cardiac-specific deletion leads to fatal cardiac iron overload. Hepcidin is also expressed in cardiomyocytes, where its function remains unknown. To define the function of cardiomyocyte hepcidin, we generated mice with cardiomyocyte-specific deletion of hepcidin, or knock-in of hepcidin-resistant ferroportin. We find that while both models maintain normal systemic iron homeostasis, they nonetheless develop fatal contractile and metabolic dysfunction as a consequence of cardiomyocyte iron deficiency. These findings are the first demonstration of a cell-autonomous role for hepcidin in iron homeostasis. They raise the possibility that such function may also be important in other tissues that express both hepcidin and ferroportin, such as the kidney and the brain.
 
 ## Introduction
 
@@ -41,37 +41,37 @@ Currently, there is considerable clinical interest in strategies that target the
 
 ## Results
 
-## Hamp expression and regulation in the heart
+### Hamp expression and regulation in the heart
 
-Hamp mRNA levels were approximately 30 fold lower in the adult mouse heart than in the liver (
+Hamp mRNA levels were approximately 30 fold lower in the adult mouse heart than in the liver (Figure 1A). Next, we examined the regulation of cardiac Hamp mRNA and HAMP protein in response to dietary iron manipulation, having first established that this dietary manipulation altered cardiac and liver iron levels (Figure 1—figure supplement 1). In both tissues, Hamp mRNA levels were decreased by the iron-deficient diet (Fe 2–5 ppm) and increased by the iron-loaded diet (Fe 5000 ppm) (Figure 1A). At the protein level, while changes in hepatic HAMP protein mirrored changes in its mRNA levels, cardiac HAMP protein was increased by the iron-deficient diet and unaffected by the iron-loaded diet (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-v2.jpg)
 
-**Figure 1.:** (A) Relative Hamp mRNA expression in heart and liver of adult C57BL/6 mice, under control conditions and after provision of low or high iron diets. *p=0.047, 0.001 respectively relative to control hearts, †p = 0.006, 0.019 respectively relative to control livers. (B) Corresponding immunohistochemical staining for HAMP in heart and liver. (C) Relative Hamp mRNA expression in primary adult mouse cardiomyocytes cultured under control conditions or in presence of FAC or DFO. *p=0.023, 0.001 and 0.014 respectively relative to control. †p = 0.024, 0.037, 0.016 and 0.037 respectively relative to control at the same timepoint. (D) Corresponding HAMP protein levels in supernatants of primary cardiomyocytes. DFO treatment was carried alone (DFO) or presence of Furin inhibitor (DFO+CMK). *p=0.002, 0.020, 0.028, 0.014, 0.015 respectively relative to control at the same timepoint. (E) Relative Hamp expression in heart and liver of 3 month old Hamp and fl/flHamp mice. *p=0.018 relative to cardiac fl/fl;Myh6.Cre+Hamp in Hamp controls. (fl/flF) Corresponding immunohistochemical staining for HAMP in heart and liver. All values are plotted as mean ± SEM. Scale bar = 20 µm. n = 3 per group unless otherwise stated.DOI: http://dx.doi.org/10.7554/eLife.19804.003
+**Figure 1.:** (A) Relative Hamp mRNA expression in heart and liver of adult C57BL/6 mice, under control conditions and after provision of low or high iron diets. *p=0.047, 0.001 respectively relative to control hearts, †p = 0.006, 0.019 respectively relative to control livers. (B) Corresponding immunohistochemical staining for HAMP in heart and liver. (C) Relative Hamp mRNA expression in primary adult mouse cardiomyocytes cultured under control conditions or in presence of FAC or DFO. *p=0.023, 0.001 and 0.014 respectively relative to control. †p = 0.024, 0.037, 0.016 and 0.037 respectively relative to control at the same timepoint. (D) Corresponding HAMP protein levels in supernatants of primary cardiomyocytes. DFO treatment was carried alone (DFO) or presence of Furin inhibitor (DFO+CMK). *p=0.002, 0.020, 0.028, 0.014, 0.015 respectively relative to control at the same timepoint. (E) Relative Hamp expression in heart and liver of 3 month old Hampfl/fl and Hampfl/fl;Myh6.Cre+ mice. *p=0.018 relative to cardiac Hamp in Hampfl/fl controls. (F) Corresponding immunohistochemical staining for HAMP in heart and liver. All values are plotted as mean ± SEM. Scale bar = 20 µm. n = 3 per group unless otherwise stated.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Total elemental iron levels in heart and liver of C57BL/6 mice, under control conditions and after provision of low (Fe 5 ppm) or high iron (Fe 5000 ppm) diets from weaning for six weeks. *p=0.037 and 0.033 respectively relative to control heart, †p = 0.010 and 0.005 relative to control liver. n = 3. Data are represented as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.19804.004
+**Figure 1—figure supplement 1.:** Total elemental iron levels in heart and liver of C57BL/6 mice, under control conditions and after provision of low (Fe 5 ppm) or high iron (Fe 5000 ppm) diets from weaning for six weeks. *p=0.037 and 0.033 respectively relative to control heart, †p = 0.010 and 0.005 relative to control liver. n = 3. Data are represented as mean ± SEM.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Relative Furin mRNA in primary adult mouse cardiomyocytes under control conditions and following treatment with DFO or FAC. *p=0.004, 0.001 and 0.001 respectively relative to control at the respective timepoint. (B) Relative Furin mRNA in hearts of mice provided control diet or iron-deficient diet (2–5 ppm) or iron-loaded diet (5000 ppm) from weaning for six weeks. *p=0.015 relative to control diet. n = 3. Data are plotted as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.19804.005
+**Figure 1—figure supplement 2.:** (A) Relative Furin mRNA in primary adult mouse cardiomyocytes under control conditions and following treatment with DFO or FAC. *p=0.004, 0.001 and 0.001 respectively relative to control at the respective timepoint. (B) Relative Furin mRNA in hearts of mice provided control diet or iron-deficient diet (2–5 ppm) or iron-loaded diet (5000 ppm) from weaning for six weeks. *p=0.015 relative to control diet. n = 3. Data are plotted as mean ± SEM.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Hamp mRNA expression in cardiomyocytes following treatment with Furin inhibitor CMK.Relative Hamp mRNA expression in primary adult mouse cardiomyocytes under control conditions and following treatment with DFO or FAC, in presence or absence of Furin inhibitor CMK. n = 3. Data are plotted as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.19804.006
+**Figure 1—figure supplement 3.:** Relative Hamp mRNA expression in primary adult mouse cardiomyocytes under control conditions and following treatment with DFO or FAC, in presence or absence of Furin inhibitor CMK. n = 3. Data are plotted as mean ± SEM.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** HAMP protein was measured by ELISA in supernatants of primary adult cardiomyocytes, derived from Hamp  or fl/flHamp  mice and cultured under control conditions or in presence of FAC or DFO. n = 3. Data are plotted as mean ± SEM.fl/fl;Myh6.Cre+DOI: http://dx.doi.org/10.7554/eLife.19804.007
+**Figure 1—figure supplement 4.:** HAMP protein was measured by ELISA in supernatants of primary adult cardiomyocytes, derived from Hamp fl/fl or Hamp fl/fl;Myh6.Cre+ mice and cultured under control conditions or in presence of FAC or DFO. n = 3. Data are plotted as mean ± SEM.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** (A) Staining with HAMP antibody (Abcam ab30760) in liver and heart of C57BL/6 mice is completely abrogated by co-incubation with hepcidin-25 blocking peptide (Abcam ab31875). Scale bar = 20 µm. (B) Loss of HAMP staining in Hamp;fl/fl;Myh6.Cre+ hearts (Figure 1F) is consistent with the antibody detecting HAMP1 and not HAMP2, because Hamp2 mRNA expression is not altered in Hamp mice relative to fl/fl;Myh6.Cre+Hamp controls, either with control diet or iron-deficient diet (six weeks from weaning). *p=0.007 and 0.047 relative to fl/flHamp control under respective diet. n = 3 per group. Values are plotted as mean ± SEM. N.S=not significant.fl/flDOI: http://dx.doi.org/10.7554/eLife.19804.008
+**Figure 1—figure supplement 5.:** (A) Staining with HAMP antibody (Abcam ab30760) in liver and heart of C57BL/6 mice is completely abrogated by co-incubation with hepcidin-25 blocking peptide (Abcam ab31875). Scale bar = 20 µm. (B) Loss of HAMP staining in Hampfl/fl;;Myh6.Cre+ hearts (Figure 1F) is consistent with the antibody detecting HAMP1 and not HAMP2, because Hamp2 mRNA expression is not altered in Hampfl/fl;Myh6.Cre+ mice relative to Hampfl/fl controls, either with control diet or iron-deficient diet (six weeks from weaning). *p=0.007 and 0.047 relative to Hampfl/fl control under respective diet. n = 3 per group. Values are plotted as mean ± SEM. N.S=not significant.
 
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig1-figsupp6-v2.jpg)
 
-**Figure 1—figure supplement 6.:** HAMP standard from mouse hepcidin ELISA (E91979Mu, Uscn) was diluted either in the kit’s own standard diluent, or in unconditioned growth medium alone, or containing 100 µmol/L DFO or 500 µmol/L FAC. ELISA was performed as per manufacturer’s instructions.DOI: http://dx.doi.org/10.7554/eLife.19804.009
+**Figure 1—figure supplement 6.:** HAMP standard from mouse hepcidin ELISA (E91979Mu, Uscn) was diluted either in the kit’s own standard diluent, or in unconditioned growth medium alone, or containing 100 µmol/L DFO or 500 µmol/L FAC. ELISA was performed as per manufacturer’s instructions.
 
 To explore further the regulation of cardiac hepcidin by iron, we isolated primary adult cardiomyocytes from mice, then carried out a timecourse treatment with the iron chelator desferroxamine DFO, or with ferric citrate FAC. Under control conditions, Hamp mRNA was upregulated following addition of fresh cardiomyocyte culture medium (cardiomyocytes are cultured for 2 hr in serum-free medium prior to this). Relative to control cardiomyocytes at the respective timepoint, Hamp mRNA was increased by FAC from 4 hr of treatment, and decreased by DFO at 4, 8 and 16 hr of treatment (Figure 1C). HAMP protein, measured by ELISA in supernatants was also increased following addition of fresh medium. Relative to control cardiomyocytes at the respective timepoint, HAMP protein in supernatants was increased by DFO as early as 2 hr, but remained unchanged by FAC at all timepoints (Figure 1D). Thus, the direction of response of the Hamp mRNA and HAMP protein to iron levels in vitro mirrored the responses seen in vivo.
 
@@ -79,49 +79,290 @@ Next, we aimed to understand the mechanisms underlying increased HAMP secretion 
 
 Having established that hepcidin is found in cardiomyocytes, we then aimed to define its function. To this end, we generated cardiomyocyte-specific Hamp knockout mice Hampfl/fl;Myh6.Cre+ by crossing in-house conditional Hamp floxed (fl) mice with mice transgenic for Cre recombinase under the control of cardiomyocyte-specific promoter Myosin Heavy Chain 6 (Myh6.Cre+). Hamp mRNA (Figure 1E) and HAMP protein (Figure 1F) in the hearts of Hampfl/fl;Myh6.Cre+ mice were significantly reduced compared to the hearts of Hampfl/fl controls. Furthermore, compared to Hampfl/fl cardiomyocytes, levels of HAMP protein in the supernatants of cardiomyocytes from Hampfl/fl;Myh6.Cre+ mice were either greatly reduced or undetectable, both under baseline conditions and following treatment with DFO or FAC (Figure 1—figure supplement 4). Near complete ablation of the cardiac Hamp mRNA and HAMP protein in Hampfl/fl;Myh6.Cre+ mice confirmed that cardiomyocytes were the primary site of hepcidin expression in the heart. Liver Hamp mRNA (Figure 1E) and HAMP protein (Figure 1F) were not different between Hampfl/fl;Myh6.Cre+ and Hampfl/fl controls, consistent with the cardiac-specific nature of Hamp gene deletion.
 
-Also consistent with this cardiac-specific deletion, Hampfl/fl;Myh6.Cre+ mice had normal levels of liver iron stores and circulating markers of iron homeostasis when compared to Hampfl/fl controls, demonstrating that loss of cardiac hepcidin did not affect systemic iron homeostasis. In addition, circulating HAMP levels were not reduced in the serum of Hampfl/fl;Myh6.Cre+ mice, suggesting that cardiac hepcidin does not contribute significantly to circulating HAMP levels (Table 1).10.7554/eLife.19804.010Table 1.Indices of systemic iron in six month old Hampfl/fl and Hampfl/fl;Myh6.Cre+ mice.n = 6 per group. All values are shown as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.19804.010Hampfl/fl Hampfl/fl;Myh6.Cre+ liver total elemental iron (ng/mg tissue)96.3 ± 12.2 88.7 ± 19.2 liver ferritin (µg/mg total protein)0.65 ± 0.04 0.64 ± 0.05 serum iron (µmol/L)28.60 ± 7.20 31.50 ± 8.40 serum ferritin (mg/L)1.81 ± 0.04 1.88 ± 0.29 hemoglobin (g/L)122.7 ± 11.5 116.0 ± 11.9 serum hepcidin (µg/L)23.5 ± 7.6 23.9 ± 10.40
+Also consistent with this cardiac-specific deletion, Hampfl/fl;Myh6.Cre+ mice had normal levels of liver iron stores and circulating markers of iron homeostasis when compared to Hampfl/fl controls, demonstrating that loss of cardiac hepcidin did not affect systemic iron homeostasis. In addition, circulating HAMP levels were not reduced in the serum of Hampfl/fl;Myh6.Cre+ mice, suggesting that cardiac hepcidin does not contribute significantly to circulating HAMP levels (Table 1).
 
-## Fatal cardiac abnormalities in Hampfl/fl;Myh6.Cre+ mice
+**Table 1.**
+ Indices of systemic iron in six month old Hampfl/fl and Hampfl/fl;Myh6.Cre+ mice.n = 6 per group. All values are shown as mean ± SEM.
 
-To determine the effects of loss of cardiac hepcidin, we first assessed the cumulative survival of
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hampfl/fl</th>
+      <th>Hampfl/fl;Myh6.Cre+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>liver total elemental iron (ng/mg tissue)</td>
+      <td>96.3 ± 12.2</td>
+      <td>88.7 ± 19.2</td>
+    </tr>
+    <tr>
+      <td>liver ferritin (µg/mg total protein)</td>
+      <td>0.65 ± 0.04</td>
+      <td>0.64 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>serum iron (µmol/L)</td>
+      <td>28.60 ± 7.20</td>
+      <td>31.50 ± 8.40</td>
+    </tr>
+    <tr>
+      <td>serum ferritin (mg/L)</td>
+      <td>1.81 ± 0.04</td>
+      <td>1.88 ± 0.29</td>
+    </tr>
+    <tr>
+      <td>hemoglobin (g/L)</td>
+      <td>122.7 ± 11.5</td>
+      <td>116.0 ± 11.9</td>
+    </tr>
+    <tr>
+      <td>serum hepcidin (µg/L)</td>
+      <td>23.5 ± 7.6</td>
+      <td>23.9 ± 10.40</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fatal cardiac abnormalities in Hampfl/fl;Myh6.Cre+ mice
+
+To determine the effects of loss of cardiac hepcidin, we first assessed the cumulative survival of Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls over a period of 52 weeks. Significantly greater mortality was observed amongst Hampfl/fl;Myh6.Cre+ mice, with only 29% of animals surviving to 52 weeks, compared with 90% of Hampfl/fl controls. The median survival of Hampfl/fl;Myh6.Cre+ mice was 28 weeks, whereas the majority of Hampfl/fl controls were still alive at 52 weeks (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig2-v2.jpg)
 
-**Figure 2.:** Hamp;fl/flMyh6.Cre+ mice.(A) Cumulative survival of Hamp mice (n = 50) and fl/fl;Myh6.Cre+Hamp littermate controls (n = 47) over 52 weeks. (fl/flB) Representative H and E longitudinal heart sections from a six month old Hamp mouse and fl/fl;Myh6.Cre+Hamp littermate control. (fl/flC) Representative WGA cardiac staining from a six month old Hamp mouse and fl/fl;Myh6.Cre+Hamp littermate control. (fl/flD) Quantitation of cardiomyocyte size based on WGA staining in six month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. *p=0.001 relative to fl/flHamp littermate controls. (fl/flE) Relative expression of the hypertrophic gene markers Myh7 and Nppb in hearts of 6 month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. *p=0.001, 0.047 for the respective gene relative to fl/flHamp littermate controls. (fl/flF) Representative cardiac in-situ TUNEL staining from a six month old Hamp mouse and fl/fl;Myh6.Cre+Hamp littermate control. (fl/flG) Quantitation of percentage of apoptotic cardiomyocytes based on in-situ TUNEL staining in six month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls *p=0.001 relative to fl/flHamp littermate controls. (fl/flH) Representative midventricular Cine MR images of hearts from Hamp mice and fl/fl;Myh6.Cre+Hamp controls at 3, 6 and 9 months of age. (fl/flI–K) Cine MRI measurements of LV lumen, at end-systole (LVES), end-diastole (LVED), and of ejection fraction (LVEF) in Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls at three months (n = 8 per group), six months (n = 11 per group, *p=0.043 for LVES, 0.047 for LVED and 0.020 for LVEF) and nine months (n = 5 per group, *p=0.044 for LVES, 0.042 for LVED and 0.034 for LVEF). p values are relative to fl/flHamp controls of the respective age. All Values are plotted as mean ± SEM. n = 3 per group unless otherwise stated. Scale bar = 50 µm.fl/flDOI: http://dx.doi.org/10.7554/eLife.19804.01110.7554/eLife.19804.012Figure 2—source data 1.Figure 2I,J and K.DOI: http://dx.doi.org/10.7554/eLife.19804.012
+**Figure 2.:** (A) Cumulative survival of Hampfl/fl;Myh6.Cre+ mice (n = 50) and Hampfl/fl littermate controls (n = 47) over 52 weeks. (B) Representative H and E longitudinal heart sections from a six month old Hampfl/fl;Myh6.Cre+ mouse and Hampfl/fl littermate control. (C) Representative WGA cardiac staining from a six month old Hampfl/fl;Myh6.Cre+ mouse and Hampfl/fl littermate control. (D) Quantitation of cardiomyocyte size based on WGA staining in six month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. *p=0.001 relative to Hampfl/fl littermate controls. (E) Relative expression of the hypertrophic gene markers Myh7 and Nppb in hearts of 6 month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. *p=0.001, 0.047 for the respective gene relative to Hampfl/fl littermate controls. (F) Representative cardiac in-situ TUNEL staining from a six month old Hampfl/fl;Myh6.Cre+ mouse and Hampfl/fl littermate control. (G) Quantitation of percentage of apoptotic cardiomyocytes based on in-situ TUNEL staining in six month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls *p=0.001 relative to Hampfl/fl littermate controls. (H) Representative midventricular Cine MR images of hearts from Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl controls at 3, 6 and 9 months of age. (I–K) Cine MRI measurements of LV lumen, at end-systole (LVES), end-diastole (LVED), and of ejection fraction (LVEF) in Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls at three months (n = 8 per group), six months (n = 11 per group, *p=0.043 for LVES, 0.047 for LVED and 0.020 for LVEF) and nine months (n = 5 per group, *p=0.044 for LVES, 0.042 for LVED and 0.034 for LVEF). p values are relative to Hampfl/fl controls of the respective age. All Values are plotted as mean ± SEM. n = 3 per group unless otherwise stated. Scale bar = 50 µm.
 
 Six-month old mice were sacrificed for assessment of cardiac morphology, which showed gross enlargement of the left ventricle (LV) in Hampfl/fl;Myh6.Cre+ hearts compared to Hampfl/fl controls (Figure 2B). Assessment of cardiomyocyte size by wheat germ agglutinin (WGA) staining confirmed that Hampfl/fl;Myh6.Cre+ cardiomyocytes were hypertrophied (Figure 2C–D). This was accompanied by upregulation of expression of hypertrophic gene markers myosin heavy chain (Myh7) and natriuretic peptide precursor (Nppb) (Figure 2E). TUNEL staining for in-situ detection of cell death also showed significantly greater apoptosis in the hearts of Hampfl/fl;Myh6.Cre+ mice than in Hampfl/fl controls (Figure 2F–G).
 
-To characterise further the phenotype caused by loss of cardiac hepcidin, we used cine MRI in anaesthetised Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls at 3, 6 and 9 months of age. Mid-ventricular cine MR images showed no differences between the two genotypes at 3 months of age. At 6 and 9 months of age, cine MR images showed marked enlargement of the LV in Hampfl/fl;Myh6.Cre+ mice compared to Hampfl/fl controls (Figure 2H). Formal quantitation of cardiac parameters by cine MRI confirmed enlargement of the LV lumen in Hampfl/fl;Myh6.Cre+ mice, both at end-systole (LVES) (Figure 2I) and at end-diastole (LVED) (Figure 2J), accompanied by a decrease in LV ejection fraction (LVEF) from 62% to 42% (Figure 2K). Other parameters of cardiac performance were not significantly altered between mice from the two genotypes (Table 2). Taken together, histological examination of the hearts and cine MRI studies indicated that Hampfl/fl;Myh6.Cre+ mice developed fatal LV dysfunction with reduced LVEF.10.7554/eLife.19804.013Table 2.Non-LV parameters of cardiac function are not altered between Hampfl/fl and Hampfl/fl;;Myh6.Cre+ mice.Cine MRI measurements of cardiac function in Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl controls at three months (n = 8 per group), six months (n = 11 per group) and nine months (n = 5 per group) of age. Values are shown as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.19804.013 3 months6 months9 monthsHamp fl/fl Hamp fl/fl;Myh6.Cre+ Hamp fl/fl Hamp fl/fl;Myh6.Cre+ Hamp fl/fl Hamp fl/fl;Myh6.Cre+ Average mass (mg)70.51 ± 7.47 70.38 ± 5.33 72.59 ± 5.38 82.54 ± 11.32 78.30 ± 4.92 83.07 ± 5.44 RVED lumen (µl)31.37 ± 2.55 26.81 ± 2.30 33.12 ± 3.19 30.63 ± 2.35 38.39 ± 3.88 39.95 ± 3.00 RVES lumen (µl)7.43 ± 0.79 5.23 ± 0.67 8.70 ± 1.22 8.34 ± 1.06 13.36 ± 2.21 15.51 ± 2.47 RVEF (%)76.42 ± 1.32 79.88 ± 2.80 73.66 ± 2.50 73.42 ± 2.22 65.20 ± 4.36 61.95 ± 3.53 Stroke volume (µl)25.47 ± 1.99 22.73 ± 2.11 25.70 ± 2.70 23.76 ± 1.85 29.79 ± 2.30 29.84 ± 1.59 Cardiac output (ml/min)10.34 ± 1.06 9.62 ± 0.90 10.72 ± 1.07 10.53 ± 1.05 11.46 ± 1.15 11.99 ± 1.38 Heart Rate (bpm)404.07 ± 18.69 426.90 ± 17.94 419.64 ± 19.05 436.14 ± 14.30 384.84 ± 28.55 400.97 ± 41.20 Heart/body weight ratio x10002.80 ± 0.18 3.09 ± 0.26 2.51 ± 0.23 2.98 ± 0.37 2.36 ± 0.28 2.88 ± 0.27
+To characterise further the phenotype caused by loss of cardiac hepcidin, we used cine MRI in anaesthetised Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls at 3, 6 and 9 months of age. Mid-ventricular cine MR images showed no differences between the two genotypes at 3 months of age. At 6 and 9 months of age, cine MR images showed marked enlargement of the LV in Hampfl/fl;Myh6.Cre+ mice compared to Hampfl/fl controls (Figure 2H). Formal quantitation of cardiac parameters by cine MRI confirmed enlargement of the LV lumen in Hampfl/fl;Myh6.Cre+ mice, both at end-systole (LVES) (Figure 2I) and at end-diastole (LVED) (Figure 2J), accompanied by a decrease in LV ejection fraction (LVEF) from 62% to 42% (Figure 2K). Other parameters of cardiac performance were not significantly altered between mice from the two genotypes (Table 2). Taken together, histological examination of the hearts and cine MRI studies indicated that Hampfl/fl;Myh6.Cre+ mice developed fatal LV dysfunction with reduced LVEF.
+
+**Table 2.**
+ Non-LV parameters of cardiac function are not altered between Hampfl/fl and Hampfl/fl;;Myh6.Cre+ mice.Cine MRI measurements of cardiac function in Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl controls at three months (n = 8 per group), six months (n = 11 per group) and nine months (n = 5 per group) of age. Values are shown as mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">3 months</th>
+      <th colspan="2">6 months</th>
+      <th colspan="2">9 months</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Hamp fl/fl</td>
+      <td>Hamp fl/fl;Myh6.Cre+</td>
+      <td>Hamp fl/fl</td>
+      <td>Hamp fl/fl;Myh6.Cre+</td>
+      <td>Hamp fl/fl</td>
+      <td>Hamp fl/fl;Myh6.Cre+</td>
+    </tr>
+    <tr>
+      <td>Average mass (mg)</td>
+      <td>70.51 ± 7.47</td>
+      <td>70.38 ± 5.33</td>
+      <td>72.59 ± 5.38</td>
+      <td>82.54 ± 11.32</td>
+      <td>78.30 ± 4.92</td>
+      <td>83.07 ± 5.44</td>
+    </tr>
+    <tr>
+      <td>RVED lumen (µl)</td>
+      <td>31.37 ± 2.55</td>
+      <td>26.81 ± 2.30</td>
+      <td>33.12 ± 3.19</td>
+      <td>30.63 ± 2.35</td>
+      <td>38.39 ± 3.88</td>
+      <td>39.95 ± 3.00</td>
+    </tr>
+    <tr>
+      <td>RVES lumen (µl)</td>
+      <td>7.43 ± 0.79</td>
+      <td>5.23 ± 0.67</td>
+      <td>8.70 ± 1.22</td>
+      <td>8.34 ± 1.06</td>
+      <td>13.36 ± 2.21</td>
+      <td>15.51 ± 2.47</td>
+    </tr>
+    <tr>
+      <td>RVEF (%)</td>
+      <td>76.42 ± 1.32</td>
+      <td>79.88 ± 2.80</td>
+      <td>73.66 ± 2.50</td>
+      <td>73.42 ± 2.22</td>
+      <td>65.20 ± 4.36</td>
+      <td>61.95 ± 3.53</td>
+    </tr>
+    <tr>
+      <td>Stroke volume (µl)</td>
+      <td>25.47 ± 1.99</td>
+      <td>22.73 ± 2.11</td>
+      <td>25.70 ± 2.70</td>
+      <td>23.76 ± 1.85</td>
+      <td>29.79 ± 2.30</td>
+      <td>29.84 ± 1.59</td>
+    </tr>
+    <tr>
+      <td>Cardiac output (ml/min)</td>
+      <td>10.34 ± 1.06</td>
+      <td>9.62 ± 0.90</td>
+      <td>10.72 ± 1.07</td>
+      <td>10.53 ± 1.05</td>
+      <td>11.46 ± 1.15</td>
+      <td>11.99 ± 1.38</td>
+    </tr>
+    <tr>
+      <td>Heart Rate (bpm)</td>
+      <td>404.07 ± 18.69</td>
+      <td>426.90 ± 17.94</td>
+      <td>419.64 ± 19.05</td>
+      <td>436.14 ± 14.30</td>
+      <td>384.84 ± 28.55</td>
+      <td>400.97 ± 41.20</td>
+    </tr>
+    <tr>
+      <td>Heart/body weight ratio x1000</td>
+      <td>2.80 ± 0.18</td>
+      <td>3.09 ± 0.26</td>
+      <td>2.51 ± 0.23</td>
+      <td>2.98 ± 0.37</td>
+      <td>2.36 ± 0.28</td>
+      <td>2.88 ± 0.27</td>
+    </tr>
+  </tbody>
+</table>
 
 Such changes in cardiac performance could not be attributed to Cre recombinase toxicity in the heart as we have previously shown that Myh6.Cre+ mice have normal cardiac function compared to wild type littermate controls (Lakhal-Littleton et al., 2015).
 
-## The role of cardiomyocyte FPN in the phenotype of Hampfl/fl;Myh6.Cre+ mice
+### The role of cardiomyocyte FPN in the phenotype of Hampfl/fl;Myh6.Cre+ mice
 
-We examined FPN protein in the hearts of
+We examined FPN protein in the hearts of Hampfl/fl;Myh6.Cre+ mice, and found that FPN protein was markedly upregulated compared to Hampfl/fl controls (Figure 3A), consistent with the idea that loss of cardiac HAMP was acting through upregulation of cardiomyocyte FPN. In order to test whether cardiac dysfunction arose from upregulation of cardiomyocyte FPN, we engineered mice where the Slc40a1 gene harbours a conditional cardiac-specific C326Y point mutation, which confers HAMP-resistance while conserving the iron export function of FPN (Schimanski et al., 2005; Drakesmith et al., 2005). We confirmed that the Slc40a1 C326Y fl allele produced the C326Y transcript specifically in the heart (Figure 3—figure supplement 1) and that Slc40a1 C326Yfl/fl;Myh6.Cre+ mice did not exhibit changes in systemic iron indices (Table 3). As seen in Hampfl/fl;Myh6.Cre+ mice, cardiomyocyte FPN was indeed upregulated in Slc40a1 C326Yfl/fl;Myh6.Cre+ mice (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig3-v2.jpg)
 
-**Figure 3.:** (A–B) Immunohistochemical staining for FPN in the hearts of three month old Hamp, fl/fl;Myh6.Cre+Slc40a1 C326Y mice and respective controls. (fl/fl;Myh6.Cre+C) Cumulative survival of Slc40a1 C326Y mice (n = 36) and fl/fl;Myh6.Cre+Slc40a1 C326Y littermate controls (n = 31) over 52 weeks. (fl/flD) Representative H and E-stained longitudinal heart sections from a six month old Slc40a1 C326Y mouse and a fl/fl;Myh6.Cre+Slc40a1 C326Y control. (fl/flE) Representative WGA cardiac staining from a six month old Slc40a1 C326Y mouse and fl/fl;Myh6.Cre+Slc40a1 C326Y control. (fl/flF) Quantitation of cardiomyocyte size based on WGA staining. n = 3 per group. *p=0.001 relative to Slc40a1 C326Y controls. (fl/flG) Relative expression of Myh7 and Nppb in hearts of 6 month old Slc40a1 C326Y mice and fl/fl;Myh6.Cre+Slc40a1 C326Y controls. n = 3 per group. *p=0.032, 0.044 for the respective gene relative to fl/flSlc40a1 C326Y controls. (fl/flH) Representative cardiac TUNEL staining from a six month old Slc40a1 C326Y mouse and fl/fl;Myh6.Cre+Slc40a1 C326Y control. (fl/flI) Quantitation of percentage of apoptotic cardiomyocytes based on TUNEL staining, n = 3 per group. *p=0.0003 relative to Slc40a1 C326Y controls. (fl/flJ–L) Cine MRI measurements of LVES, LVED and LVEF in Slc40a1 C326Y mice and fl/fl;Myh6.Cre+Slc40a1 C326Y controls at three months (n = 6 per group), six months (n = 6 per group, *p=0.003 for LVES, 0.043 for LVED and 0.001 for LVEF) and nine months (n = 5 per group, *p=0.033 for LVES, 0.047 for LVED and 0.023 for LVEF). P values are relative to fl/flSlc40a1 C326Y controls of the same age. (fl/flM) Percentage Fe55 efflux in cardiomyocytes from Hamp mice, fl/fl;Myh6.Cre+Slc40a1 C326Y mice and respective controls, in presence or absence of HAMP peptide. *p=0.018, 0.006 and 0.007 respectively (fl/fl;Myh6.Cre+N) Elemental iron levels in cardiomyocyte fractions (CF) from the hearts of Hamp mice, fl/fl;Myh6.Cre+Slc40a1 C326Y mice and their respective controls. n = 4 per group. *p=0.032, 0.044, 0.047 and 0.031 respectively. (fl/fl;Myh6.Cre+O–P) Relative TfR1 (*p=0.038, 0.001) and Fpn (*p=0.039, 0.047) expression in hearts of 3 month old Hamp mice, fl/fl;Myh6.Cre+Slc40a1 C326Y mice and their respective controls. All values are plotted as mean ± SEM. Scale bar = 50 µm.fl/fl;Myh6.Cre+DOI: http://dx.doi.org/10.7554/eLife.19804.01410.7554/eLife.19804.015Figure 3—source data 1.Figure 3JK and L.DOI: http://dx.doi.org/10.7554/eLife.19804.015
+**Figure 3.:** (A–B) Immunohistochemical staining for FPN in the hearts of three month old Hampfl/fl;Myh6.Cre+, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and respective controls. (C) Cumulative survival of Slc40a1 C326Yfl/fl;Myh6.Cre+ mice (n = 36) and Slc40a1 C326Yfl/fl littermate controls (n = 31) over 52 weeks. (D) Representative H and E-stained longitudinal heart sections from a six month old Slc40a1 C326Yfl/fl;Myh6.Cre+ mouse and a Slc40a1 C326Yfl/fl control. (E) Representative WGA cardiac staining from a six month old Slc40a1 C326Yfl/fl;Myh6.Cre+ mouse and Slc40a1 C326Yfl/fl control. (F) Quantitation of cardiomyocyte size based on WGA staining. n = 3 per group. *p=0.001 relative to Slc40a1 C326Yfl/fl controls. (G) Relative expression of Myh7 and Nppb in hearts of 6 month old Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and Slc40a1 C326Yfl/fl controls. n = 3 per group. *p=0.032, 0.044 for the respective gene relative to Slc40a1 C326Yfl/fl controls. (H) Representative cardiac TUNEL staining from a six month old Slc40a1 C326Yfl/fl;Myh6.Cre+ mouse and Slc40a1 C326Yfl/fl control. (I) Quantitation of percentage of apoptotic cardiomyocytes based on TUNEL staining, n = 3 per group. *p=0.0003 relative to Slc40a1 C326Yfl/fl controls. (J–L) Cine MRI measurements of LVES, LVED and LVEF in Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and Slc40a1 C326Yfl/fl controls at three months (n = 6 per group), six months (n = 6 per group, *p=0.003 for LVES, 0.043 for LVED and 0.001 for LVEF) and nine months (n = 5 per group, *p=0.033 for LVES, 0.047 for LVED and 0.023 for LVEF). P values are relative to Slc40a1 C326Yfl/fl controls of the same age. (M) Percentage Fe55 efflux in cardiomyocytes from Hampfl/fl;Myh6.Cre+ mice, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and respective controls, in presence or absence of HAMP peptide. *p=0.018, 0.006 and 0.007 respectively (N) Elemental iron levels in cardiomyocyte fractions (CF) from the hearts of Hampfl/fl;Myh6.Cre+ mice, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and their respective controls. n = 4 per group. *p=0.032, 0.044, 0.047 and 0.031 respectively. (O–P) Relative TfR1 (*p=0.038, 0.001) and Fpn (*p=0.039, 0.047) expression in hearts of 3 month old Hampfl/fl;Myh6.Cre+ mice, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and their respective controls. All values are plotted as mean ± SEM. Scale bar = 50 µm.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Slc40a1 C326Y;fl/flMyh6.Cre+ mice.Total mRNA was extracted from the liver and heart of an adult a Slc40a1 C326Y mouse, reverse transcribed using primers for exon 7 of the fl/+;Myh6.Cre+Slc40a1 mRNA transcript. Products were sequenced to confirm successful heterozygous expression of the C326Y transcript in the heart but not in the liver.DOI: http://dx.doi.org/10.7554/eLife.19804.016
+**Figure 3—figure supplement 1.:** Total mRNA was extracted from the liver and heart of an adult a Slc40a1 C326Yfl/+;Myh6.Cre+ mouse, reverse transcribed using primers for exon 7 of the Slc40a1 mRNA transcript. Products were sequenced to confirm successful heterozygous expression of the C326Y transcript in the heart but not in the liver.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Hampfl/fl;Myh6.Cre+ mice, Slc40a1 C326Y mice and their respective controls at three months and 6 months of age. n = 4 per group. Data are plotted as mean ± SEM.fl/fl;Myh6.Cre+DOI: http://dx.doi.org/10.7554/eLife.19804.017
+**Figure 3—figure supplement 2.:** Cre+ mice, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice and their respective controls at three months and 6 months of age. n = 4 per group. Data are plotted as mean ± SEM.
+
+**Table 3.**
+ Characterisation of Slc40a1 C326Yfl/fl;Myh6.Cre+ mice.Indices of iron status in Slc40a1 C326Yfl/fl and Slc40a1 C326Yfl/fl;Myh6.Cre+ mice at six months of age (n = 4 per group). Values are shown as mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Slc40a1 C326Yfl/fl</th>
+      <th>Slc40a1 C326Y fl/fl; Myh6.Cre+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>liver total elemental iron (ng/mg tissue)</td>
+      <td>92.77 ± 21.30</td>
+      <td>84.00 ± 26.00</td>
+    </tr>
+    <tr>
+      <td>liver ferritin (µg/mg total protein)</td>
+      <td>0.87 ± 0.06</td>
+      <td>0.92 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>serum iron (µmol/L)</td>
+      <td>27.30 ± 5.20</td>
+      <td>29.60 ± 7.20</td>
+    </tr>
+    <tr>
+      <td>serum ferritin (mg/L)</td>
+      <td>2.10 ± 0.04</td>
+      <td>2.20 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>hemoglobin (g/L)</td>
+      <td>125.70 ± 8.80</td>
+      <td>126.00 ± 12.30</td>
+    </tr>
+    <tr>
+      <td>serum hepcidin (µg/L)</td>
+      <td>25.90 ± 11.60</td>
+      <td>27.50 ± 8.40</td>
+    </tr>
+  </tbody>
+</table>
 
 Like Hampfl/fl;Myh6.Cre+ mice, Slc40a1 C326Yfl/fl;Myh6.Cre+ mice also had increased mortality relative to their littermate controls (Figure 3C). We then determined whether Slc40a1 C326Yfl/fl;Myh6.Cre+ mice developed the same phenotype of cardiac dysfunction as Hampfl/fl;Myh6.Cre+ mice. Histologically, Slc40a1 C326Yfl/fl;Myh6.Cre+ hearts from six month old mice also showed LV enlargement (Figure 3D), hypertrophied cardiomyocytes (Figure 3E–F), upregulation of hypertrophy markers Myh7 and Nppb (Figure 3G) and a greater degree of apoptosis compared to Slc40a1 C326Yfl/fl controls (Figure 3H–I). When we measured cardiac performance by cine MRI, we found that Slc40a1 C326Yfl/fl;Myh6.Cre+ mice also developed LV dysfunction by 6 months of age, with a reduction in LVEF from 73% to 55% (Figure 3J–L).
 
 The similarity between Hampfl/fl;Myh6.Cre+ and Slc40a1 C326Yfl/fl;Myh6.Cre+ mice in terms of the nature and time course of cardiac dysfunction suggests a common mechanism of cardiac dysfunction involving upregulation of cardiomyocyte FPN. Therefore, we tested whether this upregulation of FPN resulted in increased iron efflux from cardiomyocytes. Iron Fe55 efflux was indeed significantly greater in cardiomyocytes isolated from Hampfl/fl;Myh6.Cre+ and Slc40a1 C326Yfl/fl;Myh6.Cre+ hearts than in cardiomyocytes isolated from their respective controls (Figure 3M). Addition of exogenous mouse HAMP in the efflux medium inhibited the increase in Fe55 efflux from Hampfl/fl;Myh6.Cre+ cardiomyocytes but not from Slc40a1 C326Yfl/fl;Myh6.Cre+ cardiomyocytes, consistent with the HAMP-resistant mutation in Slc40a1 C326Yfl/fl;Myh6.Cre+ cardiomyocytes. We hypothesised that upregulation of cardiac FPN and iron export in Hampfl/fl;Myh6.Cre+ and Slc40a1 C326Yfl/fl;Myh6.Cre+ hearts caused cardiomyocyte iron depletion. To test this hypothesis, we quantified iron levels both in total hearts and in the isolated cardiomyocyte fractions at 3 months and 6 months of age. While iron levels in total hearts were not significantly different between any of the genotypes (Figure 3—figure supplement 2), the iron content of the cardiomyocyte fraction was significantly lower in Hampfl/fl;Myh6.Cre+ and in Slc40a1 C326Yfl/fl;Myh6.Cre+ mice than in their respective controls (Figure 3N). Furthermore, expression of TfR1 mRNA was upregulated (Figure 3O) and Slc40a1 mRNA was downregulated (Figure 3P) in Hampfl/fl;Myh6.Cre+ and Slc40a1 C326Yfl/fl;Myh6.Cre+ hearts relative to their respective controls, consistent with a transcriptional response to intracellular iron deficiency (Rouault and Klausner, 1997; Rouault, 2006; Ward and Kaplan, 1823). Together these results demonstrate that loss of either cardiac hepcidin or hepcidin responsiveness in the heart results in upregulation of cardiomyocyte FPN, and that cardiomyocytes of Hampfl/fl;Myh6.Cre+ and Slc40a1 C326Yfl/fl;Myh6.Cre+ hearts are iron deficient as a result of upregulation of FPN-mediated iron export.
 
-## The role of cardiomyocyte iron deficiency and metabolic derangement in cardiac dysfunction
+### The role of cardiomyocyte iron deficiency and metabolic derangement in cardiac dysfunction
 
-As cardiomyocyte iron deficiency preceded the development of cardiac dysfunction, we hypothesised it is the cause of the cardiac phenotype in
+As cardiomyocyte iron deficiency preceded the development of cardiac dysfunction, we hypothesised it is the cause of the cardiac phenotype in Hampfl/fl;Myh6.Cre+ mice. To test this hypothesis, we treated Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl controls with fortnightly intravenous injections of ferric carboxymaltose solution containing 0.5 mg iron from three months of age, and confirmed the effects of this treatment on cardiac and systemic iron indices at 6 months of age (Table 4). At this timepoint, we performed cine MRI and found that the LV enlargement and the reduced LVEF, seen in untreated Hampfl/fl;Myh6.Cre+ mice, were prevented in iron-treated Hampfl/fl;Myh6.Cre+ mice (Figure 4A–C). The transcriptional response to intracellular iron deficiency in untreated Hampfl/fl;Myh6.Cre+ mice (upregulation of TfR1 mRNA and downregulation of Slc40a1 mRNA relative to Hampfl/fl controls), was absent in iron-treated Hampfl/fl;Myh6.Cre+ mice, consistent with correction of cardiomyocyte iron deficiency (Figure 4D–E). Prevention of cardiac dysfunction in Hampfl/fl;Myh6.Cre+ mice by intravenous iron treatment confirms the causal relationship between cardiomyocyte iron deficiency and cardiac dysfunction in this setting.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig4-v2.jpg)
 
-**Figure 4.:** (A–C) Cine MRI measurements of LV lumen, at end-systole (LVES, *p=0.048), end-diastole (LVED, *p=0.031), and of ejection fraction (LVEF, *p=0.004) in 6-month old untreated (-iron) and I.V iron-treated (+iron) Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. n = 5 per group. (fl/flD–E) Relative TfR1 (*p=0.001) and Fpn (*p=0.002) expression in hearts of 6-month old untreated (-iron) and I.V iron-treated (+iron) Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. n = 4 per group. (fl/flF–H) Enzymatic activities of Aconitase I (*p=0.035, 0.041), Complex I (*p=0.004, 0.030) and Complex IV (*p=0.003, 0.026) in untreated (-iron) 3-month and 6-month old and in I.V iron-treated (+iron) 6-month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. n = 4 per group. (fl/flI) Representative EM micrographs of hearts from untreated (-iron) 3-month and 6-month old and I.V iron-treated (+iron) 6-month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. Scale bar = 2 µm. (fl/flJ–L) Relative Hk2 (*p=0.010, 0.002), Eno (*p=0.014, 0.021) and Ldha (*p=0.003, 0.001) expression levels in hearts of untreated (-iron) 3-month and 6-month old and in I.V iron-treated (+iron) 6-month old Hamp mice and fl/fl;Myh6.Cre+Hamp littermate controls. n = 4 per group. NS=not significant. All values are plotted as mean ± SEM.fl/flDOI: http://dx.doi.org/10.7554/eLife.19804.01910.7554/eLife.19804.020Figure 4—source data 1.Figure 4A,B and C.DOI: http://dx.doi.org/10.7554/eLife.19804.020
+**Figure 4.:** (A–C) Cine MRI measurements of LV lumen, at end-systole (LVES, *p=0.048), end-diastole (LVED, *p=0.031), and of ejection fraction (LVEF, *p=0.004) in 6-month old untreated (-iron) and I.V iron-treated (+iron) Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. n = 5 per group. (D–E) Relative TfR1 (*p=0.001) and Fpn (*p=0.002) expression in hearts of 6-month old untreated (-iron) and I.V iron-treated (+iron) Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. n = 4 per group. (F–H) Enzymatic activities of Aconitase I (*p=0.035, 0.041), Complex I (*p=0.004, 0.030) and Complex IV (*p=0.003, 0.026) in untreated (-iron) 3-month and 6-month old and in I.V iron-treated (+iron) 6-month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. n = 4 per group. (I) Representative EM micrographs of hearts from untreated (-iron) 3-month and 6-month old and I.V iron-treated (+iron) 6-month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. Scale bar = 2 µm. (J–L) Relative Hk2 (*p=0.010, 0.002), Eno (*p=0.014, 0.021) and Ldha (*p=0.003, 0.001) expression levels in hearts of untreated (-iron) 3-month and 6-month old and in I.V iron-treated (+iron) 6-month old Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. n = 4 per group. NS=not significant. All values are plotted as mean ± SEM.
+
+**Table 4.**
+ Effect of intravenous iron treatment on iron indices.Total cardiac and liver elemental iron, serum iron and circulating HAMP in 6-month old untreated and I.V iron-treated Hampfl/fl;Myh6.Cre+ mice and Hampfl/fl littermate controls. Treated mice were injected with 0.5 mg iron fortnighly from the age of 3 months. Tissues and serum were harvested 12 hr after the final injection. n = 5 per group. *p<0.05 relative to untreated Hampfl/fl mice. †p < 0.05 relative to untreated Hampfl/fl;Myh6.Cre+. Values are shown as mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Hampfl/fl</th>
+      <th colspan="2">Hamp fl/fl;Myh6.Cre+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>untreated</td>
+      <td>treated with I.V iron</td>
+      <td>untreated</td>
+      <td>treated with I.V iron</td>
+    </tr>
+    <tr>
+      <td>cardiac total elemental iron (ng/mg tissue)</td>
+      <td>82.2 ± 16.9</td>
+      <td>331.3 ± 21.5*</td>
+      <td>74.9 ± 7</td>
+      <td>399.8 ± 68.5†</td>
+    </tr>
+    <tr>
+      <td>liver total elemental iron (ng/mg tissue)</td>
+      <td>100.4 ± 11</td>
+      <td>2527.6 ± 27.63*</td>
+      <td>96.3 ± 14</td>
+      <td>2258.2 ± 239.9†</td>
+    </tr>
+    <tr>
+      <td>serum iron (µmol/L)</td>
+      <td>30.09 ± 6.37</td>
+      <td>74.48 ± 17.96*</td>
+      <td>31.5 ± 6.9</td>
+      <td>80.12 ± 24.9†</td>
+    </tr>
+    <tr>
+      <td>serum hepcidin (µg/L)</td>
+      <td>27.41 ± 6.7</td>
+      <td>237.3 ± 16.7*</td>
+      <td>28.9 ± 9.4</td>
+      <td>209.8 ± 38.8†</td>
+    </tr>
+  </tbody>
+</table>
 
 Having confirmed a causal relationship between cardiomyocyte iron deficiency and cardiac dysfunction, we aimed to understand the mechanisms linking the two. Iron is a cofactor for several enzymes involved in metabolism (Meyer, 2008; Sono et al., 1996; Solomon et al., 2003), and metabolic derangement is a well-recognized precursor to cardiac dysfunction (Belke et al., 2000; Kakinuma et al., 2000; Ashrafian et al., 2007). Iron deficiency has been reported to reduce the levels and/or activities of key metabolic iron-containing enzymes, in cell lines, in the hearts of mice with impaired cardiac iron uptake (cardiac-specific TfR1 knockouts) and in the hearts of mice fed an iron-deficient diet (Dallman, 1986; Dhur et al., 1989; Xu et al., 2015; Oexle et al., 1999). Based on those studies, we postulated that iron deficiency in the cardiomyocytes of Hampfl/fl;Myh6.Cre+ mice would also result in reduction in the activities of key metabolic iron-containing enzymes. To test this hypothesis, we measured the activities of the iron-sulphur containing enzyme Aconitase I as well as electron transport chain (ETC) complexes in cardiac lysates from Hampfl/fl;Myh6.Cre+ hearts at 3 months and 6 months of age. We found that Aconitase I, Complex I and Complex IV activities were significantly reduced in Hampfl/fl;Myh6.Cre+ hearts compared to Hampfl/fl controls at 3 months and 6 months of age, and that this reduction in activity was prevented in iron-treated 6-month old mice (Figure 4F–H). As ETC activity is essential to mitochondrial function, we examined whether Hampfl/fl;Myh6.Cre+ hearts had signs of mitochondrial failure, and whether such mitochondrial failure was prevented by intravenous iron supplementation. By electron microscopy (EM), dilation of mitochondrial cristae was seen in Hampfl/fl;Myh6.Cre+ hearts as early as 3 months of age and progressed further at 6 months of age. However, this was prevented in iron-treated Hampfl/fl;Myh6.Cre+ mice, which had healthy-looking mitochondria at 6 months of age (Figure 4I). Similar changes in mitochondrial morphology were seen in the hearts of 3 month old Slc40a1 C326Yfl/fl;Myh6.Cre+ mice (data not shown).
 
@@ -137,11 +378,11 @@ Surprisingly, we found that, both in vitro and in vivo, cardiac HAMP protein res
 
 The upregulation of cardiac HAMP in mice fed an iron-deficient diet raises the possibility that it may be involved in protecting the heart in the setting of systemic iron deficiency. This hypothesis is supported by the finding that, when provided an iron-deficient diet, Hampfl/fl;Myh6.Cre+ mice exhibited a greater cardiac hypertrophic response than their Hampfl/fl littermate controls (Appendix 1—figure 2).
 
-Intracellular iron levels are dependent both on cellular homeostatic pathways and on systemic iron availability in plasma. Therefore, the interplay between the cardiac and the systemic HAMP/FPN axes is important in determining cardiomyocyte iron levels. Some insight into this interplay is gained from comparing systemic and cardiac mouse models of disrupted iron homeostasis. It is interesting that ubiquitous
+Intracellular iron levels are dependent both on cellular homeostatic pathways and on systemic iron availability in plasma. Therefore, the interplay between the cardiac and the systemic HAMP/FPN axes is important in determining cardiomyocyte iron levels. Some insight into this interplay is gained from comparing systemic and cardiac mouse models of disrupted iron homeostasis. It is interesting that ubiquitous Hamp knockout (Lakhal-Littleton et al., 2015) and ubiquitous Slc40a1 C326Y knock-in mice (Appendix 1—figure 3), both models of systemic iron overload, do not develop the cardiac dysfunction seen in cardiomyocyte-specific Hamp knockout and cardiomyocyte-specific Slc40a1 C326Y knock-in mice. This suggests that, while upregulation of cardiomyocyte FPN under conditions of normal iron availability (cardiac-specific models described in this study) is detrimental to cardiac function, it is protective under conditions of increased systemic iron availability (systemic models). Previously, we also showed that deletion of cardiomyocyte FPN resulted in fatal cardiomyocyte iron overload, preventable by dietary iron restriction (Lakhal-Littleton et al., 2015). Together, our studies demonstrate that iron levels within cardiomyocytes are a balance between cellular iron efflux which is regulated by the cardiac HAMP/FPN axis, and systemic iron availability which is regulated by the systemic HAMP/FPN axis (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19804/elife-19804-fig5-v2.jpg)
 
-**Figure 5.:** Cardiomyocyte iron content is determined by both systemic iron availability, which is regulated by liver HAMP, and by the cardiac HAMP/FPN axis, which regulates cardiomyocyte iron efflux. In the wild type heart, cardiac HAMP regulates the levels of cardiac FPN and iron release from cardiomyocytes. In this study, we have demonstrated that loss of cardiac HAMP (cardiac Hamp KO) or loss of cardiac HAMP responsiveness (cardiac Slc40a1 C326Y KI) result in cardiomyocyte iron deficiency due to increased cardiomyocyte FPN and iron release. Previously, we also demonstrated that loss of cardiomyocyte FPN caused cardiomyocyte iron overload. In these two sets of conditions, cardiomyocyte iron deficiency and cardiomyocyte iron overload cause cardiac dysfunction. We have also shown that upregulation of cardiac FPN occurs as a result of loss of either systemic HAMP or systemic HAMP responsiveness, and is protective against the otherwise detrimental effects of systemic iron overload.DOI: http://dx.doi.org/10.7554/eLife.19804.022
+**Figure 5.:** Cardiomyocyte iron content is determined by both systemic iron availability, which is regulated by liver HAMP, and by the cardiac HAMP/FPN axis, which regulates cardiomyocyte iron efflux. In the wild type heart, cardiac HAMP regulates the levels of cardiac FPN and iron release from cardiomyocytes. In this study, we have demonstrated that loss of cardiac HAMP (cardiac Hamp KO) or loss of cardiac HAMP responsiveness (cardiac Slc40a1 C326Y KI) result in cardiomyocyte iron deficiency due to increased cardiomyocyte FPN and iron release. Previously, we also demonstrated that loss of cardiomyocyte FPN caused cardiomyocyte iron overload. In these two sets of conditions, cardiomyocyte iron deficiency and cardiomyocyte iron overload cause cardiac dysfunction. We have also shown that upregulation of cardiac FPN occurs as a result of loss of either systemic HAMP or systemic HAMP responsiveness, and is protective against the otherwise detrimental effects of systemic iron overload.
 
 Iron overload is detrimental to cardiac health, as demonstrated by iron overload cardiomyopathy in hemochromatosis and thalassemia major patients (Gulati et al., 2014). Our model of cardiac iron homeostasis implies that the cardiac HAMP/FPN axis may have a modifying effect on the severity of iron-overload cardiomyopathy. Thus, it would be interesting to explore whether differences in the levels of cardiac FPN and HAMP, possibly due to different local stimulatory and suppressive signals (e.g local inflammation, local ischemia), explain the reported lack of concordance between the degrees of cardiac iron overload and liver iron overload in a significant proportion of hemochromatosis and thalassemia major patients (Anderson et al., 2001; Noetzli et al., 2008).
 
@@ -153,7 +394,7 @@ Currently, there is considerable interest in targeting the HAMP/FPN axis for the
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All animal procedures were compliant with and approved under the UK Home Office Animals (Scientific Procedures) Act 1986. Both males and females were used in experiments, with the respective littermate control being of a matching sex.
 
@@ -161,54 +402,54 @@ The strategy for generating cardiac Hamp knockout mice is outlined in Appendix 1
 
 The strategy for generating Cardiac Slc40a1 C326Y knock-in mice is outlined in Appendix 1—figure 5, and further details are provided in the Appendix.
 
-## Cine MRI
+### Cine MRI
 
 Mice were anaesthetized with 2% isofluorane in O2 and positioned supine in a purpose-built cradle. ECG electrodes were inserted into the forepaws, a respiration loop was taped across the chest and heart and respiration signals were monitored using a custom-built physiological motion gating device. The cradle was lowered into a vertical-bore, 11.7 T MR system with a 40 mm birdcage coil (Rapid Biomedical, Würzburg, Germany) and visualised using a Bruker console running Paravision 2.1.1. A stack of contiguous 1 mm thick true short-axis ECG and respiration-gated cine-FLASH images were acquired. The entire in vivo imaging protocol was performed in approximately 60 min. Image analysis was performed using ImageJ (NIH Image, Bethesda, MD). Left ventricular volumes and ejection fractions were calculated from the stack of cine images as described (Lakhal-Littleton et al., 2015).
 
-## Dietary iron content
+### Dietary iron content
 
 Unless otherwise stated, animals were provided with a standard rodent chow diet containing 200 ppm iron. In iron manipulation experiments, mice were given an iron-deficient diet (2–5 ppm iron; Teklad TD.99397; Harlan Laboratories), or an iron-loaded diet (5000 ppm iron; Teklad TD.140464) or a matched control diet (200 ppm iron; Teklad TD.08713) from weaning for six weeks.
 
-## Isolation of primary adult mouse cardiomyocytes and in vitro treatment
+### Isolation of primary adult mouse cardiomyocytes and in vitro treatment
 
 Adult primary cardiomyocytes were isolated from eight week old C57BL/6 mice. Hearts were cannulated and mounted on a langendorff apparatus, then perfused using a liberase solution for 10 min. After filtration through a 400 µm gauze, cells were cultured in MEM medium containing Hanks salts, L-glutamine and antibiotics. Within 2 hr of cardiomyocyte culture, supernatants were replaced with fresh medium containing 10% Fetal calf serum, with 0.5 mmol/L ferric citrate (FAC) (F3388, Sigma Aldrich) or 100 µmol/L desferroxamine (D9533, Sigma Aldrich) for 8 hr. The Furin inhibitor decanoyl-Arg-Val-Lys-Arg-chloromethylketone (CMK) (N1505, Bachem) was added at a concentration of 50 µmol/L for the duration of DFO and FAC treatment.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Total RNA extraction and cDNA synthesis were carried out as previously described (Lakhal-Littleton et al., 2015). Gene expression was measured using Applied Biosystems Taqman gene expression assay probes for Slc40a1, Hamp, TfR1, Myh7, Nppb, Ldha, Hk2, Eno and house-keeping gene β-Actin (Life Technologies, Carlsbad, CA). The CT value for the gene of interest was first normalised by deducting CT value for β-Actin to obtain a delta CT value. Delta CT values of test samples were further normalised to the average of the delta CT values for control samples to obtain delta delta CT values. Relative gene expression levels were then calculated as 2-delta deltaCT.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Tissues were prepared as described previously (Lakhal-Littleton et al., 2015) and stained with rabbit polyclonal anti-mouse HAMP antibody (ab30760, Abcam, RRID:AB_2115844) at 1/40 dilution, or rabbit polyclonal anti-mouse FPN antibody (MTP11-A, Alpha Diagnostics, RRID:AB_1619475) at 1/200 dilution. Results of control experiments confirming the specificity of the HAMP antibody are shown in Figure 1—figure supplement 5.
 
-## HAMP enzyme-linked immunosorbent assay (ELISA)
+### HAMP enzyme-linked immunosorbent assay (ELISA)
 
 HAMP was measured in mouse sera and in cardiomyocyte supernatants using a HAMP ELISA kit (E91979Mu, USCN) according to the manufacturer’s instructions. Results of control experiments confirming that in vitro treatments did not affect HAMP peptide detection by this ELISA kit are shown in Figure 1—figure supplement 6.
 
-## DAB-enhanced perls stain
+### DAB-enhanced perls stain
 
 Formalin-fixed paraffin-embedded tissue sections were deparaffinised using Xylene, then rehydrated in ethanol. Slides were then stained for 1 hr with 1% potassium ferricyanide in 0.1 mol/L HCl buffer. Endogenous peroxidase activity was quenched, then slides were stained with DAB chromogen substrate and counterstained with haematoxylin. They were visualised using a standard brightfield microscope.
 
-## Electron microscopy (EM)
+### Electron microscopy (EM)
 
 Hearts were dissected and 0.5–1 mm3 slices were fixed by immersion for 2 hr in 2.5% glutaraldehyde in 0.1 mol/L cacodylate buffer and prepared for electron microscopy by standard methods. Briefly, cells were post-fixed in osmium tetroxide (1% w/v in 0.1 mol/L phosphate buffer), stained with uranyl acetate (2% w/v in distilled water), dehydrated through increasing concentrations of ethanol (70–100%) and acetone and embedded in TAAB resin (TAAB, Aldermaston, UK). Ultrathin sections (50–80 nm) were prepared using a Reichert ultracut S microtome and mounted on 200 mesh nickel grids. Sections were lightly counterstained with lead citrate and uranyl acetate and examined with a Jeol transmission electron microscope (JEM-1010, JEOL, Peabody MA).
 
-## Fe55 efflux in primary adult cardiomyocytes
+### Fe55 efflux in primary adult cardiomyocytes
 
 Adult cardiomyocytes were isolated from mice of the desired genotype at 9 weeks of age as described above. Cardiomyocytes were then cultured in 24-well plates at equal densities for 16 hr before the efflux experiment was performed as described (McKie et al., 2000). Briefly, after washing with three times PBS, cells were incubated for 30 min in 200 µl uptake solution (98 mmol/L NaCl, 2.0 mmol/L KCl, 0.6 mmol/L CaCl2, 1.0 mmol/L MgCl2, 1.0 mmol/L ascorbic acid, 10 mmol/L HEPES [pH 6.0] with Tris base, 50 μmol/L Fe55 [NEN, Boston, MA]), then washed three times with PBS and incubated for 30 min with efflux solution (98 mmol/L NaCl, 2.0 mmol/L KCl, 0.6 mmol/L CaCl2, 1.0 mmol/L MgCl2, 10 mmol/L HEPES [pH 7.4] with Tris base, 300 U/ml bovine ceruloplasmin (cp) (Sigma) and 40 μg/ml human apotransferrin (tf) [Sigma]),in the absence or presence of 0.5 µmol/L mouse HAMP peptide (Peptides International). The efflux medium was then removed, the cells washed three times in ice-cold PBS and disrupted by incubation in 100 µl of 10% SDS solution for 10 min.The efflux solution and cell lysates were then transferred into scintillation vials for Fe55 counting. Where Furin inhibition was carried out, CMK was added to the culture medium at 50 µmol/L 2 hr before the efflux experiment was carried out.
 
-## Iron quantitation
+### Iron quantitation
 
 Ferritin concentration in serum and in liver lysates was determined using the ferritin ELISA kit (ICL, Inc. Portland). Serum iron levels were determined using the ABX-Pentra system (Horiba Medical, CA). Determination of total elemental iron in the heart was carried out by inductively coupled plasma mass spectrometry (ICP-MS) as described previously (Lakhal-Littleton et al., 2015). Calibration was achieved using the process of standard additions, where spikes of 0 ng/g, 0,5 ng/g, 1 ng/g, 10 ng/g, 20 ng/g and 100 ng/g iron were added to replicates of a selected sample. An external iron standard (High Purity Standards ICP-MS-68-A solution) was diluted and measured to confirm the validity of the calibration. Rhodium was also spiked onto each blank, standard and sample as an internal standard at a concentration of 1 ng/g. Concentrations from ICP-MS were normalised to starting tissue weight.
 
-## Isolation of cardiomyocyte and non-cardiomyocyte fractions for iron quantitation
+### Isolation of cardiomyocyte and non-cardiomyocyte fractions for iron quantitation
 
 Following cardiac perfusion, hearts were dissected into small pieces in ice-cold Hanks buffer, and subject to collagenase P digestion at 37C for 1 hr (11213857001, Roche Diagnostics). Following lysis of red blood cells, cell suspensions were passed through a 70 µm sieve, before being labelled using cardiomyocyte isolation kit (130-100-825, Miltenyi Biotec). Separation of cardiomyocyte and non-cardiomyocyte fractions was carried out using MACS magnetic separation system according to the manufacturer’s instructions. Cardiac fractions were lysed immediately for ICP-MS analysis.
 
-## Activity assays for aconitase I and electron transport chain (ETC) complexes
+### Activity assays for aconitase I and electron transport chain (ETC) complexes
 
 Approximately 10 mg of frozen, crushed tissues were suspended in 200 µl of ice-cold KME buffer (100 mmol/L KCl, 50 mmol/L Mops, 0.5 mmol/L EGTA, pH 7.4), then homogenized by rupturing with a TissueRuptor (Qiagen, UK) over ice. In a plastic cuvette, the cardiac lysate is mixed with assay buffer and slotted into a spectrophotometer. Details of assay buffers and of reaction procedure for each enzyme are detailed in the Appendix.
 
-## Statistics
+### Statistics
 
 Values are shown as mean ± standard error of the mean (SEM). Comparison of iron indices, enzyme activities and parameters of cardiac function between groups was performed using Student’s T test. p values < 0.05 were deemed as indicating significant differences between groups. Where significant, exact p values for a figure panel are stated in the corresponding figure legend. No explicit power analysis was performed prior to the experiments to determine sample size, since we had no means to reliably estimate the size and variability of the effects of deleting hepcidin on parameters of cardiac function. For Cine MRI assessment of cardiac function, typically 5–11 animals of each genotype were used, with a matching number of littermate controls. For gene expression, iron quantitation and enzyme activity assays from mouse tissues, typically, 3–6 independent biological replicates and matching littermate controls were analysed. Since significant results were obtained from these set of experiments, no further animals were sacrificed. All 'n' values reported refer to independent biological replicates.

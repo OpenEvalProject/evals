@@ -40,15 +40,273 @@ While the catch bonding of αE-catenin and vinculin to actin is established, to 
 
 ## Results
 
-## Structure of αE-catenin ABD bound to F-actin
+### Structure of αE-catenin ABD bound to F-actin
 
 To understand the αE-catenin-actin filament interaction in molecular detail, we obtained a three-dimensional cryo-EM reconstruction of ADP-actin filaments bound to a truncated αE-catenin ABD (residues 671–906) at 3.6 Å resolution (Figure 2, Figure 2—figure supplement 1, Table 1), which we reported at lower resolution previously (Hansen et al., 2013). This construct deletes the first half of, and thereby destabilizes, the short H0, and binds 4.5x more strongly than the complete ABD (residues 666–906) (Table 2, Figure 2—figure supplement 2; Ishiyama et al., 2018). Consistent with the previously described cooperative binding by this construct observed in TIRF and cryo-EM (Hansen et al., 2013), we observed either bare actin filaments or stretches of filaments continuously bound by αE-ABD added at 10 μM (Figure 2—figure supplement 1A). At the same concentration, we were unable to observe binding of the complete ABD to actin filaments in the electron microscope (Figure 2—figure supplement 1B). Given the KD values of these two constructs (Table 2), small changes in concentration likely have a large effect on actin decoration. Indeed, a comparable structure using an ABD construct spanning residues 664–906 was produced using 20 μM ABD (Mei et al., 2020).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cryo-EM map of the actin-ABD structure. The segmented ABDs are shown in magenta. The (-) end of the filament is shown at the top, and the (+) end at the bottom. (B) Molecular model of a section of an actin filament bound to αE-catenin ABDs, same orientation as (A) and with transparent density map overlaid. Actin protomers are colored according to their long-pitch helix in blue and yellow. The bound ABDs are shown in magenta and pink. (C, D) Closeups of model and cryo-EM map showing residues on H4 (panel C) and the CTE (panel D) that have been studied by site-directed mutagenesis. The ABD is shown in red, and two monomers of actin in different shades of blue. In (D), a neighboring copy of the ABD along the filament is shown in pink. Actin residue labels are italicized.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Representative micrographs of actin filaments in the presence of truncated 671–906 ABD (A) and full-length ABD (B). Segments recognized as bare are marked with red dots, segments recognized as having ABD bound are marked with cyan dots. Scale bars are 50 nm. (C) Local resolution analysis. (D) Fourier Shell Correlation (FSC) curves using two reconstructions independently derived from two halves of the data. The 0.143 FSC cutoff used for estimating the resolution is indicated as a dashed line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Pellets of actin co-sedimentation assays with (+A) and without (-A) F-actin are shown. * Indicates the actin band and the arrow indicates the ABD band.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Colors are as shown in Figure 2. Hydrogen bonds are shown as dashed lines, and van der Waals contacts as solid lines. (A) Interactions of the αE-catenin CTE. (B) Interaction of αE-catenin K842 actin residues H87 and Y91. (C) αE-catenin K797 salt bridge with actin E334.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Pellets of actin co-sedimentation assays with (+A) and without (-A) F-actin are shown. * Indicates the actin band and the arrow indicates the ABD band.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Residues that contact actin are shown in stick representation and colored in dark and light blue according to which actin protomer they contact, as shown Figure 2. The hydrophobic cluster residues W705, Y837 and W859 are shown in light orange. (B) ABD sequence alignments. The secondary structure elements of the unbound ABD and the actin-bound ABD are shown above the alignments. Residues that contact actin and the hydrophobic cluster residues are highlighted in the colors used in panel A. Residues in grey form the interface between H1 and H2/H5. The sequence alignment was done in Geneious 10.2.2 (www.geneious.com). The figure was prepared with ENDscript (Robert and Gouet, 2014) and UCSF Chimera (Pettersen et al., 2004). Abbreviations used M.mus.-Mus musculus D.rer. - Danio rerio, D.mel. – Drosopila melanogaster, C. ele. - Caenorhabditis elegans N.vec. - Nematostella vectensis.
+
+**Table 1.**
+ Cryo-EM data collection and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection</th>
+    </tr>
+    <tr>
+      <th>Microscope</th>
+      <th>Titan Krios</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Voltage [kV]</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Falcon II</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>75,000</td>
+    </tr>
+    <tr>
+      <td>Exposure parameters</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total dose [e-/Å2]</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Exposure time [s]</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size [Å]</td>
+      <td>1.035</td>
+    </tr>
+    <tr>
+      <td>Defocus range [μm]</td>
+      <td>−0.8 to −2.8</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data processing</td>
+    </tr>
+    <tr>
+      <td>Images used</td>
+      <td>4769</td>
+    </tr>
+    <tr>
+      <td>Initial segments</td>
+      <td>728,331</td>
+    </tr>
+    <tr>
+      <td>Final segments</td>
+      <td>422,822</td>
+    </tr>
+    <tr>
+      <td>Helical symmetry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rise [Å]</td>
+      <td>27.4</td>
+    </tr>
+    <tr>
+      <td>Twist [°]</td>
+      <td>−166.9</td>
+    </tr>
+    <tr>
+      <td>Resolution [Å]</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Sharpening B-factor [Å2]</td>
+      <td>−96</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Initial models [PDB IDs]</td>
+      <td>6djo, 6dv1</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>25,248</td>
+    </tr>
+    <tr>
+      <td>Model resolution [Å]</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths [Å]</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Bond angles [°]</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers [%]</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Mean B-factor [Å2]</td>
+      <td>70.4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>Molprobity score</td>
+      <td>2.08</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>6.28</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored [%]</td>
+      <td>96.3</td>
+    </tr>
+    <tr>
+      <td>Allowed [%]</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Disallowed [%]</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>CC (mask)</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>CC (volume)</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>EMringer score</td>
+      <td>2.29</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Affinities of αE-catenin ABD constructs for actin, determined by co-sedimentation.KD values and standard deviations for αE-catenin 666–906, 671–906, and 692–906 are the average of three replicate measurements. KD values for the other constructs are the average of two measurements. For αE-catenin 671–906 W859A binding did not reach saturation and therefore only a lower limit for the KD is given. N.D., no detectable binding. Representative binding curves and corresponding gels are shown in Figure 2—figure supplements 2 and 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>αE-catenin ABD variant</th>
+      <th>KD (μM) (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>666–906 (full length)</td>
+      <td>8.5 (0.7)</td>
+    </tr>
+    <tr>
+      <td>671–906</td>
+      <td>2.0 (0.3)</td>
+    </tr>
+    <tr>
+      <td>692–906</td>
+      <td>0.7 (0.3)</td>
+    </tr>
+    <tr>
+      <td>696–906</td>
+      <td>0.4 (0.05)</td>
+    </tr>
+    <tr>
+      <td>699–906</td>
+      <td>0.5 (0.1)</td>
+    </tr>
+    <tr>
+      <td>671–872</td>
+      <td>5.0 (0.1)</td>
+    </tr>
+    <tr>
+      <td>671–868</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>671–864</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>699–868</td>
+      <td>2.8 (0.1)</td>
+    </tr>
+    <tr>
+      <td>671–906 W859A</td>
+      <td>&gt;35</td>
+    </tr>
+  </tbody>
+</table>
 
 The cryo-EM reconstruction allowed us to build an atomic model of the complex (Figure 2), using the structures of bare ADP actin filaments (Chou and Pollard, 2019) and the αE-ABD crystal structure (Ishiyama et al., 2018) as starting points. The EM map was poor in the αE-catenin CTE, and we were able to correct a sequence registration error in our first model based on the coordinates of the 3.2 Å resolution structure reported by Mei et al., 2020 provided by Dr. G Alushin. Only the first three and last residues of actin could not be placed with confidence. For the αE-catenin ABD, there was no detectable density for residues 671–698, or from 872 to 906. In addition, six residues in the loop connecting H4 and H5 could not be modeled. Local resolution analysis shows that the most well-defined region is within the actin filament core and gradually falls off toward larger radii (Figure 2—figure supplement 1C). Importantly, the interface of the ABD and F-actin is well defined in the cryo-EM map, as is the conformation of the helical bundle.
 
 The helical rise (27.4 Å) and twist (−166.9°) of F-actin in the reconstruction are practically identical to those of bare F-actin (Chou and Pollard, 2019; Merino et al., 2018), indicating that the ABD does not induce any major changes into the filament. Consequently, the root-mean square deviation between bare ADP actin filaments and actin with the ABD bound is low (0.76 Å, Cα deviations). The most notable difference is in the conformation of the subdomain two loop (D-loop), a region implicated in changes associated with the ATP hydrolysis cycle (Chou and Pollard, 2019; Merino et al., 2018), stiffness and stability (Kang et al., 2012; Pospich et al., 2017), and in filament disassembly (Grintsevich et al., 2017). In the present structure, this region is in a ‘closed’ conformation similar to that observed in the bare ADP-bound F-actin structures (Chou and Pollard, 2019; Merino et al., 2018). Modeling suggests that the alternative ‘open’ D-loop conformation that occurs in equilibrium with the ‘closed’ conformation in other nucleotide states (Merino et al., 2020) may clash with the bound αE-catenin. Relative to the bare ADP-actin structure, however, D-loop residues 45–50 move significantly, with M47 showing the largest displacement of about 5 Å. This region contacts the αE-catenin ABD. It has been noted that tensile forces imposed on actin by the thin ice needed for cryo-EM imaging may affect the D-loop (Galkin et al., 2012), and we have previously observed similar differences at low resolution upon αE-catenin binding (Hansen et al., 2013), but whether tension has any role in the conformation observed here is unclear given the direct contacts with the ABD. Moreover, the refinement procedure used to generate high-resolution structures from cryo-EM images selects and enforces a single conformation (see Methods), so it is likely that in order to achieve the highest resolution reconstruction possible, other information content including alternative conformations, was lost.
 
 In contrast to the local changes in F-actin, the ABD undergoes large structural rearrangements upon complex formation. Compared to the unbound ABD crystal structure, the N-terminus through the last turn of H1 is disordered (Figure 3A). We note that an F-actin-bound αE-catenin ABD structure has been reported recently for the complete ABD (664-906) (Mei et al., 2020), and the same residues are disordered, demonstrating that the truncation of H0 in our construct has no influence on the actin-bound structure. The remaining four helices rearrange to bind to the filament. A key part of this change involves the long loop that connects H4 and H5, where the first strand of a β-hairpin becomes a two-turn extension of H4 (residues 795–801) that forms contacts with actin (Figures 2C and 3A,B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig3-v2.jpg)
+
+**Figure 3.:** Comparison of the unbound ABD crystal structure (PDB 6dv1; light orange) with the ABD in the actin-bound state (magenta). (A) Overall comparison; the orientation is rotated approximately 180° from that shown in Figure 1c. (B) Top view of H0 packing interactions lost upon its removal, and rearrangements of helices 2–5. The left panel depicts packing interactions of H0 residues I672, M673 and L676 with H5 residues V809, G811 and A815 (all highlighted in orange), and the right panel overlay shows the resulting changes in H4 and H5.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In the actin-bound state, the aromatic cluster of W705 in H1, Y837 in H5, and W859 in the CTE repacks due to the shift in position of the remaining turn of H1, which pulls W705 away from Y837 and W859 and is replaced by M861 of the CTE. Colors are the same as in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The orientations are the same as in Figure 3A. (A) The free vinculin (slate blue; PDB 1qkr Bakolitsa et al., 1999) and αE-catenin (light orange; PDB 6dv1 Ishiyama et al., 2018) ABDs superimpose with an RMSD of 1.2 Å. (B) The actin-bound vinculin (grey; PDB 3jb1 Kim et al., 2016) and αE-catenin (magenta) ABDs superimpose with an RMSD of 1.3 Å. (C) Superposition of the free (slate blue) and actin-bound vinculin (grey) ABDs, RMSD = 1.5 Å.
 
 In addition to the changes in the helical bundle, the remaining turn of H1 moves up from the bottom of the rest of the helical bundle (Figure 3 and Figure 3—figure supplement 1). This moves W705 (H1) away from an aromatic cluster formed with Y837 (H5), and W859 (CTE), and shifts the CTE upward such that M861 of the CTE now packs with Y837 and W859 (Figure 3—figure supplement 1). The CTE past 862, which is disordered in the isolated structure, forms an extended peptide that interacts with actin (Figure 2D). The backbone carbonyl oxygens of αE-catenin K862 and P864 form hydrogen bonds with actin residues R28 and R95 (Figure 2—figure supplement 3A). αE-catenin K866 forms salt bridges with actin D24 and D25, K867 forms a hydrogen bond with the backbone carbonyl of R28 and contacts V30, and L869 packs against actin residues A26, P27, E334 and Y337 (Figure 2—figure supplement 3A). The importance of the change in the CTE and formation of contacts with F-actin is highlighted by the effect of mutating W859 to alanine, which lowers the affinity for actin approximately 10-fold (Table 2, Figure 2—figure supplement 4). Finally, we note that the CTE sits between actin and the next ABD along the long pitch of the filament, and V870 packs against V800 at the top of H4 of the neighboring ABD. This interaction may contribute to the cooperative binding of the ABD to actin (Hansen et al., 2013).
 
@@ -58,7 +316,7 @@ Deletion of the C-terminal αE-catenin residues 865–906 compromises actin bind
 
 The structural changes and interactions with actin observed here appear to be conserved throughout the α-catenin/vinculin family. Specifically, the residues that mediate the interactions with actin are strongly conserved throughout the α-catenin sequences (Figure 2—figure supplement 5). Moreover, although relatively few of the actin-contacting residues are conserved in vinculin (notably, those in the C-terminal portion of H4), the vinculin ABD undergoes a similar structural transition upon binding to actin (Figure 3—figure supplement 2; Kim et al., 2016; Mei et al., 2020).
 
-## H0 and H1 regulate actin affinity
+### H0 and H1 regulate actin affinity
 
 Despite the large changes between the free and F-actin-bound ABD structures, we see no evidence for multiple conformations of the ABD when bound to F-actin, suggesting that the four-helix state is the stably bound one. To assess whether the rearranged state is significantly populated in solution, we compared the proteolytic sensitivity of the H0-deleted ABD used in the EM structure (671-906) in the presence and absence of F-actin, using the protease elastase. We found that in isolation the domain was resistant to digestion, whereas binding to F-actin led to the appearance of smaller, protease-resistant fragments (Figure 4A). N-terminal sequencing of the SDS-PAGE bands corresponding to these fragments revealed cleavage of H1 at residues A689 and S703 (Figure 4B). The cleavage at S703 is consistent with the very weak cryo-EM density observed between residues 699 and 702, which likely indicates that this turn of helix is flexible. Moreover, the cleavage at 689 suggests that H1 becomes unstructured and flexible when dissociated from the H2-5 bundle. The resistance of H1 to protease in the absence of F-actin implies that its association with the H2 and H5 surface is strongly favored in solution. Helix 1 of the vinculin actin-binding domain, which forms a similar four helix bundle when bound to actin (Figure 3—figure supplement 2; Kim et al., 2016; Mei et al., 2020), also becomes proteolytically sensitive upon binding to actin (Bakolitsa et al., 1999). The proteolysis data from both αE-catenin and vinculin suggest that the free energy of binding to actin drives the structural rearrangement of the ABD.
 
@@ -70,9 +328,17 @@ If the association of H0 and H1 with the four-helix bundle inhibits the rearrang
 
 Sequence features of the ABD support the idea that the free energy of binding to actin drives dissociation of H0 and H1 and rearrangement of the remaining helices. H0 has three conserved hydrophobic residues (I672, M673 and L676) that pack against three residues at the N-terminal region of H5 (Figure 3B), two of which (V809 and G811) are poorly ordered in the actin-bound structure. H1 binds to the outer face of the H2–H5 four helix bundle, interacting with a surface formed by H2 and H5. Several hydrophobic H1 residues (I684, V688, F691 and L698) are buried in this interface (Figure 4B), which would disfavor dissociation of H1. However, the H1 interaction surface formed by H2 and H5 is not strongly hydrophobic, comprising four methionine residues (M723, M724, M816 and M826), C720, T727, I819, A822 and the aliphatic portion of K823 (Figure 4B), which suggests that there would not be a large destabilization of the four-helix bundle upon removing H1 from this surface. Indeed, the construct starting at 699, which deletes all of the H1 sequence missing in the EM structure, is well behaved in solution (it is monomeric as assayed by size exclusion chromatography-coupled multi-angle light scattering; data not shown), consistent with the idea that exposure of this surface is not energetically disfavored. Notably, the mildly hydrophobic character of this H2/H5 surface is strongly conserved throughout the α-catenin family (Figure 2—figure supplement 5).
 
-## Insights into catch bond mechanism
+### Insights into catch bond mechanism
 
 Our structural and biochemical data indicate that removal of H0 and H1 enable the structural transition of the C-terminal half of H4 and movement of the CTE (Figure 3), which result in additional contacts with F-actin and stable binding (Figures 2 and 5). Given that the vinculin ABD lacks H0 but its structure bound to actin shows the same four-helix, rearranged bundle relative to vinculin in solution (Mei et al., 2020), and that the crystal structure of the αN-catenin ABD lacking H0 retains the five-helix bundle architecture of the full ABD (PDB 6duw, 6duy) (Ishiyama et al., 2018), it is clear that removal of H1 is the major determinant in achieving the high-affinity actin-binding state. The binding data in solution, that is, in the absence of applied force, demonstrate that the free energy of binding to actin drives this transition. Optical trap data from both αE-catenin and vinculin indicate that force enhances the stability (specifically, the bound lifetime) of the ABD-actin interaction (Abore et al., 2020; Buckley et al., 2014; Huang et al., 2017). Modeling of the optical trap data indicated that the major effect of force is to prevent the transition from a strongly bound to a weakly bound state (Buckley et al., 2014; Huang et al., 2017). Force also promotes the transition to a strongly bound state, although this is a smaller effect (Buckley et al., 2014; Huang et al., 2017) that is consistent with the binding energy to actin driving the rearrangement to the strong state. Thus, while force is not needed to stably bind actin, it enhances the strength of the ABD-actin interaction by shifting the equilibrium between weakly and strongly bound states toward the strong state.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig5-v2.jpg)
+
+**Figure 5.:** (A) Superposition of the isolated αE-catenin ABD on the actin-bound structure reveals no major clashes with F-actin (left panel). When the ABD is bound to F-actin, H0 and H1 dissociate from the H2-5 bundle, which results in the extension and shift of the C-terminal part of H4 as well as ordering and repositioning of the CTE to bind to actin. (B) Schematic diagram of αE-catenin ABD conformational states when unbound, weakly bound, and strongly bound to actin. Cooperative binding of the ABD, as observed in the cryo-EM structure, is illustrated for the strong state. Note that in the strong state, the H0 and H1 regions are drawn as helices when dissociated from the H2-5 bundle, but it is likely that they are unstructured in this case (see text for details).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The isolated ABD structure (light orange; PDB 6dv1) was superimposed on the actin-bound structure (magenta). Actin is shown in blue. αE-catenin residues K683 (H1), E799 (H4-H5 connector), and D813 and M816 (H5) clash with actin residues K328, I330 and P333. Comparison with the actin-bound ABD shows that small movements associated with at least partial removal of H1 would relieve these clashes.
 
 To gain structural insight into how force affects the weak and strong actin-binding states of the ABD, we superimposed the isolated αE-catenin ABD structure (PDB 6dv1) on the actin-bound version (Figure 5A, Figure 5—figure supplement 1). This revealed clashes of actin residues K328, I330 and P333 (Figure 5—figure supplement 1) with ABD residues D813 and M816 in the first turn of H5, as well as E799 in the H4-H5 connection and K683 of H1. Modeling indicates that a few other minor clashes can be alleviated by changes of side chain rotamers. Given the proteolytic digestion data suggesting that H1 dynamically associates with the H2-H5 region (Figure 4) and that crystal structures of the αE- and αN-catenin ABDs in isolation show variability in the H4-H5 connection (Ishiyama et al., 2018), it seems likely that small changes (on the order of 1 Å) in this region could accommodate the actin surface without the wholesale conformational changes that produce the four-helix conformation. Moreover, as the N-terminal half of H4 and almost all of H5 of the isolated and actin-bound ABD structures superimpose closely (Figure 5A, middle), it is likely that in the five-helix conformation these regions could form interactions similar to those visualized in the EM structure. However, key interactions made by the C-terminal part of H4, including those of I792 and V796 (Figure 2C), would not form. These observations suggest that with small changes of H1 and the first turn of H5, the five-helix conformation could bind F-actin weakly, and we propose that this conformation represents the weak binding state observed in the optical trap (Figure 5B).
 
@@ -81,6 +347,14 @@ Assuming that the four-helix conformation observed in the complex with F-actin r
 ![Figure 6.](https://cdn.elifesciences.org/articles/60878/elife-60878-fig6-v2.jpg)
 
 **Figure 6.:** Actin and the αE-catenin ABD in the strong and weak states are illustrated as in Figure 5B. The N-terminus of the ABD is shown tethered to a stationary point, that is, as part of the cadherin/β-catenin/α-catenin complex. The grey arrows indicate the direction of force. (A) Tension applied to the bound strong state prevents re-binding of H0/H1 to the H2-H5 bundle. Force applied in the (-) direction will move the H1 sequence away from the H2-H5 bundle and place this region in an unfavorable orientation for rebinding, whereas force directed in the (+) direction will place the H1 sequence closer to and in a more favorable orientation for rebinding. See Video 1 for an animated version. (B) Tension applied to the bound weak state will remove H0/H1 from the H2-H5 bundle. Force applied in the (-) direction will tend to pull H0/H1 away from the H2-H5 bundle, whereas force in the (+) direction is predicted to have a smaller effect on H0/H1 dissociation. See Video 2 for an animated version.
+
+![Video 1.](https://cdn.elifesciences.org/articles/60878/elife-60878-video1.mp4.jpg)
+
+**Video 1.:** Animation illustrating changes in the αE-catenin ABD going from the strong to weak actin-bound state. The first half of the movie shows force is applied in the (-) direction, and the second half shows force in the (+) direction, highlighting the difference in distance for reassociation of H0 and H1 in the two directions.
+
+![Video 2.](https://cdn.elifesciences.org/articles/60878/elife-60878-video2.mp4.jpg)
+
+**Video 2.:** Animation illustrating changes in the αE-catenin ABD in going from the weak to strong actin-bound state. The first half of the movie shows force is applied in the (-) direction, and the second half shows force in the (+) direction, highlighting the difference in distance for reassociation of H0 and H1 in the two directions.
 
 ## Discussion
 
@@ -98,21 +372,150 @@ The catch bonds formed by αE-catenin, vinculin and their ABDs with actin show a
 
 ## Materials and methods
 
-## Expression and purification of αE-catenin ABD constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-TEV</td>
+      <td>Choi et al., 2012 https://doi.org/10.1074/jbc.M511338200</td>
+      <td></td>
+      <td>Ampicillin resistance; expression in bacterial cultures; pGEX-KG plasmid (ATCC) with a new TEV protease site Contact Weis lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-4T-3</td>
+      <td>GE Healthcare</td>
+      <td>28-9545-52</td>
+      <td>Vector for thrombin-cleavable GST fusion protein expression in bacteria</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3) Codon-Plus RIL</td>
+      <td>Agilent</td>
+      <td>230245</td>
+      <td>Strain for expressing recombinant proteins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION3 3.0.8</td>
+      <td>He and Scheres, 2017 https://doi.org/10.1016/j.jsb.2017.02.003 Scheres, 2012https://doi.org/10.1016/j.jmb.2011.11.010 Zivanov et al., 2018https://doi.org/10.7554/eLife.42166</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2 1.3.0</td>
+      <td>Zheng et al., 2017 https://doi.org/10.1038/nmeth.4193</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf 1.06</td>
+      <td>Zhang, 2016 https://doi.org/10.1016/j.jsb.2015.11.003</td>
+      <td>RRID:SCR_016500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4 4.1.5</td>
+      <td>Rohou and Grigorieff, 2015https://doi.org/10.1016/j.jsb.2015.08.008</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyCoAn 0.3.0</td>
+      <td>Volkmann and Hanein, 1999 https://doi.org/10.1006/jsbi.1998.4074</td>
+      <td>Revision 1419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix 1.17.1</td>
+      <td>Afonine et al., 2018https://doi.org/10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot 0.8.9</td>
+      <td>Emsley et al., 2010https://doi.org/10.1107/S0907444910007493</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMRinger</td>
+      <td>Barad et al., 2015 https://doi.org/10.1038/nmeth.3541</td>
+      <td>Via Phenix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MolProbity</td>
+      <td>Chen et al., 2010 https://doi.org/10.1107/S0907444909042073</td>
+      <td>RRID:SCR_014226 Via Phenix</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ResMap 1.14</td>
+      <td>Kucukelbir et al., 2014 https://doi.org/10.1038/nmeth.2727</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SBGrid</td>
+      <td>Morin et al., 2013https://doi.org/10.7554/eLife.01456</td>
+      <td>RRID:SCR_003511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera 1.14</td>
+      <td>Pettersen et al., 2004https://doi.org/10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8.0.2</td>
+      <td>GraphPad Software, Inc</td>
+      <td>Version 263 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of αE-catenin ABD constructs
 
 αE-catenin ABD constructs were cloned into a pGEX-4T-3 or pGEX-TEV bacterial expression vector; the latter is a modified pGEX-KG vector with a tobacco etch virus (TEV) protease recognition site inserted after the GST-tag and the thrombin cleavage site. There are four additional amino acids are left at the N-terminus after Thrombin or TEV cleavage (GSPN in case of the pGEX-4T3 vector and GGIL in case of the pGEX-TEV vector). N-terminal GST-fusion proteins were expressed in E. coli BL21cells. Cells were grown at 37°C to an OD600 of 0.8–1.0 and induced overnight at 18°C with 0.5 mM isopropyl-1-thio-β-d-galactopyranoside. Cells were harvested by centrifugation and pellets were resuspended in 20 mM Tris pH 8.0, 200 mM NaCl and 1 mM DTT. Before lysis in an Emusliflex (Avastin), protease inhibitor cocktail (Mixture Set V, Calbiochem) and DNase (Sigma) were added. After centrifugation at 38,500 × g for 30 min, the lysate was incubated with glutathione-agarose beads for 1 hr at 4°C. After washing the beads with PBS containing 1 M NaCl and 1 mM DTT, the beads were equilibrated with either 20 mM Tris pH 8.5, 150 mM NaCl, 1 mM DTT for thrombin cleavage or 20 mM Tris pH 8.0, 150 mM NaCl, 1 mM DTT, 1 mM EDTA, 10% glycerol for TEV cleavage. The protein was cleaved for 2 hr at room temp with thrombin or overnight at 4°C with TEV. Cleaved protein was eluted from the beads and further purified on a cation exchange column (Mono S 10/100, GE Healthcare) in MES pH 6.5, 1 mM DTT buffer with a 0–500 mM NaCl gradient, followed by size exclusion chromatography (Superdex S200, GE Healthcare) in 20 mM HEPES pH 8.0, 150 mM NaCl, 1 mM DTT.
 
-## Actin-binding assay
+### Actin-binding assay
 
 G-actin prepared from rabbit muscle (Spudich and Watt, 1971) was stored in 40 μM aliquots at −80°C. Frozen aliquots were thawed on ice and centrifuged for 20 min at 140,717 x g in a Beckman TLA 100 rotor. After centrifugation, the concentration was determined by UV absorbance at 290 nm and G-actin was polymerized by addition of 10x F-buffer (100 mM pH 7.5 Tris, 500 mM KCl, 20 mM MgCl2, 10 mM ATP) and incubation for 1 hr at room temperature. Aliquots from the same batch of actin were used for all polymerization assays, and efficient polymerization was confirmed by pelleting at 20 min at 140,717 x g and analysis of the supernatant and pellet by SDS page. F-actin was stored for up to 2 weeks at 4°C. For sedimentation assays, F-actin was diluted to 4 μM with buffer A (20 mM HEPES pH 8.0, 150 mM NaCl, 1 mM DTT, 2 mM MgCl2, 0.5 mM ATP, 1 mM EDTA). A dilution series of purified αE-catenin ABD in 20 mM HEPES pH 8.0, 150 mM NaCl and 1 mM DTT was set up and an equal volume of 4 μM F-actin or buffer A was added. The mixture was incubated for 30 min at room temperature. Samples were centrifuged in a Beckman TLA100 rotor at 140717 x g for 20 min at 4°C. The supernatant was carefully removed and the pellet resuspended in reducing Laemmli buffer. Samples were run on SDS PAGE. Coomassie-stained bands were scanned and quantified on a LI-COR Odyssey scanner (LI-COR Biosciences). To extrapolate concentration from band intensity a dilution series of αE-catenin ABD was run in parallel for each assay and stained and destained under the same conditions as the assay itself. To correct for SDS-PAGE loading errors, for each concentration of αE-catenin, its band intensity was normalized by the ratio of the actin band intensity at that point and the average actin band intensity calculated over all concentration points. The data were analyzed in the program GraphPad Prism (GraphPad Software, La Jolla, CA,) and fitted with a ‘single binding with Hill coefficient’ model, with the exception of the αE-catenin 671–906 W859A mutant. In that case, the curves did not reach saturation, and fitting with a Hill coefficient was not possible, so a 'One site-specific binding’ model was used to obtain KD estimates. In this case the binding is sufficiently weak that we report a lower limit on the KD rather than a specific value (Table 2).
 
-## Electron cryo-microscopy sample preparation
+### Electron cryo-microscopy sample preparation
 
 Rabbit skeletal actin was prepared as described (Kang et al., 2012; Spudich and Watt, 1971) and was used within 1 week of preparation. Fresh complete (residues 666–906) or truncated αE-catenin-ABD (residues 671–906) were used within 1–2 days of preparation. Both filamentous actin and the respective αE-catenin ABD construct were diluted into KMEI buffer (10 mM Imidazole pH 7, 50 mM KCI 2 mM MgCI2, 1 mM EGTA, 0.2 mM ATP, 2 mM DTT) at 0.125 mg/ml actin and 0.25 mg/ml ABD, corresponding to an ABD concentration of 10 μM. After 10 min of incubation, 5 or 4 μl from the final 1:2 (wt/wt) mixture was applied to plasma cleaned C-flat copper grids 2/1 or 2/2 (Protochips Inc), respectively. After 1 min of incubation in a humidified chamber, excess liquid was manually blotted, and the samples were plunge-frozen in liquid nitrogen-cooled liquefied ethane using an in-house designed cryo-plunger.
 
 Screening for the best sample mixture ratios and blotting conditions was performed on a Tecnai Spirit T12 electron microscope (ThermoFisher Scientific) equipped with Eagle CMOS imaging device (ThermoFisher Scientific), operated at a voltage of 120 kV and a defocus between −1.5 and −2.5 μm. Micrographs were visually inspected for quality of filaments, filament density, background, and the presence of bound ABD. The choice of samples for data collection was based on evaluation of these parameters. Data sets were acquired on Titan Krios electron microscope (ThermoFisher Scientific) equipped with an XFEG and operated at a voltage of 300 kV. Although the sample preparation protocol was optimized, we had to screen for usable grids and grid squares manually. Images were recorded on a Falcon II direct detection camera (ThermoFisher Scientific) under minimal dose conditions using the automatic data collection software EPU (ThermoFisher Scientific). Within each selected grid hole, two positions were imaged, each with a total exposure of 1 s. A total of 5573 dose-fractionated image stacks with seven frames each were collected with a 1.035 Å pixel size at defoci ranging from −0.8 µm to −2.8 µm in four separate, independent imaging sessions.
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 Dose weighting and motion correction were applied using MotionCor2 version 1.4.0 (Li et al., 2013) using anisotropic motion correction with 5 × 5 patches. The initial defocus was estimated either using Gctf 1.06 (Zhang, 2016) or CTFFIND4 version 4.1.5 (Rohou and Grigorieff, 2015), depending on the imaging session. 804 images were discarded during real-time screening at data collection time for excessive drift, strong astigmatism, and low visibility of Thon rings. The remainder was processed with the helical reconstruction routines in RELION3 version 3.0.8 (He and Scheres, 2017; Scheres, 2012; Zivanov et al., 2018). Briefly, the helices were divided into overlapping boxes that were essentially treated as individual, independent particles (with modified Bayesian prior accounting for constraints implied by helicity) to allow sorting of the segments into different conformations and selecting the most well-defined of the conformations present in the sample, a prerequisite for reaching high resolution. For the truncated αE-catenin ABD (671-906) bound to rabbit actin, a total of 728,331 filament segments were extracted using a box size of 200 × 200 pixels from 63,480 manually picked filaments. Two-dimensional reference-free classification for the data set was carried out in RELION3 to eliminate bad segments and segments that showed no evidence for bound ABD, reducing the number of segments from 728,331 to 422,822. An in-house rabbit skeletal actin filament reconstruction filtered to 40 Å resolution was used for an initial model. After several rounds of 3D classification and refinement followed by manual removal of bad particles and further enrichment of segments showing clear decoration, the estimated resolution of the reconstruction, using the 0.143 FSC cutoff gold-standard procedure implemented in RELION3, reached 3.6 Å after postprocessing. The helical rise of the reconstruction was 27.4 Å with a helical twist of −166.9°. The postprocessing included RELION3-based CTF refinement, B-factor sharpening, and application of a soft-edged mask generated in RELION3 corrected for helical edge effects using pyCoAn 0.3.0, an extended python version of CoAn (Volkmann and Hanein, 1999). Additional sharpening was applied using pyCoAn. The reconstruction was then symmetrized within pyCoAn using the refined helical parameters. Local resolution estimates were calculated with ResMap 1.1.4 (Kucukelbir et al., 2014) and RELION3.
 
@@ -120,6 +523,6 @@ A molecular model was produced starting from a structure of bare ADP actin filam
 
 The coordinates and cryo-EM map of the αE-catenin–F-actin complex have been deposited in the Protein Data Bank, identifiers 6WVT and EMD-21925, respectively.
 
-## Limited proteolysis
+### Limited proteolysis
 
 Limited proteolysis of αE-catenin 671–906 was performed with elastase (Worthington Biochemical). αE-catenin ABD (8 μM) was incubated in the presence or absence of 8 μM F-actin for 1 hr at room temperature in 5 mM Tris pH 8.0, 50 mM potassium chloride, 2 mM magnesium chloride and 0.5 mM DTT. After addition of elastase to a final concentration of 0.009 mg/ml, aliquots were removed after 5’, 15’, 30’, 1 hr, 2 hr, 4 hr and the proteolysis reaction was stopped by addition of SDS sample buffer and boiling. Samples were run on SDS–PAGE and gels were stained with Coomassie Blue. For N-terminal sequencing, bands were transferred on a PVDF membrane. Bands of ~24 and~26 kDa found only in the presence of F-actin were excised and submitted for N-terminal (Edman) protein sequencing.

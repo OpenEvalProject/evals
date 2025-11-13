@@ -40,7 +40,7 @@
 
 ## Abstract
 
-In post-industrial settings, apolipoprotein E4 ( APOE4 ) is associated with increased cardiovascular and neurological disease risk. However, the majority of human evolutionary history occurred in environments with higher pathogenic diversity and low cardiovascular risk. We hypothesize that in high-pathogen and energy-limited contexts, the APOE4 allele confers benefits by reducing innate inflammation when uninfected, while maintaining higher lipid levels that buffer costs of immune activation during infection. Among Tsimane forager-farmers of Bolivia ( N = 1266, 50% female), APOE4 is associated with 30% lower C-reactive protein, and higher total cholesterol and oxidized LDL. Blood lipids were either not associated, or negatively associated with inflammatory biomarkers, except for associations of oxidized LDL and inflammation which were limited to obese adults. Further, APOE4 carriers maintain higher levels of total and LDL cholesterol at low body mass indices (BMIs). These results suggest that the relationship between APOE4 and lipids may be beneficial for pathogen-driven immune responses and unlikely to increase cardiovascular risk in an active subsistence population.
+In post-industrial settings, apolipoprotein E4 (APOE4) is associated with increased cardiovascular and neurological disease risk. However, the majority of human evolutionary history occurred in environments with higher pathogenic diversity and low cardiovascular risk. We hypothesize that in high-pathogen and energy-limited contexts, the APOE4 allele confers benefits by reducing innate inflammation when uninfected, while maintaining higher lipid levels that buffer costs of immune activation during infection. Among Tsimane forager-farmers of Bolivia (N = 1266, 50% female), APOE4 is associated with 30% lower C-reactive protein, and higher total cholesterol and oxidized LDL. Blood lipids were either not associated, or negatively associated with inflammatory biomarkers, except for associations of oxidized LDL and inflammation which were limited to obese adults. Further, APOE4 carriers maintain higher levels of total and LDL cholesterol at low body mass indices (BMIs). These results suggest that the relationship between APOE4 and lipids may be beneficial for pathogen-driven immune responses and unlikely to increase cardiovascular risk in an active subsistence population.
 
 ## Introduction
 
@@ -50,7 +50,7 @@ APOE, lipids, and immune function may interact differently in contemporary obeso
 
 These findings suggest that interactive influences of APOE4, lipids, and immune function on disease risks may be environmentally moderated. However, this is difficult to test because most biomedical research is conducted in controlled laboratory settings using animal models, or in post-industrial populations with low-pathogen burden and high obesity prevalence (Gurven and Lieberman, 2020). Here, we begin to fill this gap by evaluating both immune and lipid profiles of individuals with APOE3/3 and APOE4+ genotypes living in a pathogenically diverse, energy-limited environment.
 
-## APOE, cholesterols, and immune function
+### APOE, cholesterols, and immune function
 
 APOE has three functionally polymorphic allelic variants: E4, E3, and E2 (Demarchi et al., 2005; Safieh et al., 2019). The most prevalent, APOE3, arose ~200K years ago from a single nucleotide polymorphism (SNP) (C → T) at locus 19q13 from the ancestral APOE4 (Fullerton et al., 2000). The evolutionary success of APOE3 has been attributed to its greater plasticity in response to environmental changes compared to the ancestral APOE4 allele (Huebbe and Rimbach, 2017). However, APOE4 is maintained at frequencies up to 40%, such as those in some central African populations.
 
@@ -66,13 +66,13 @@ Experimental studies also showed the associations of APOE4 with heightened innat
 
 In energy-limited, pathogenically diverse environments, APOE4+ carriers may thus be better able to tolerate energetic costs imposed by infection by having higher concentrations of circulating lipids to fuel immune responses, while also minimizing damage from exposure to generalized systemic inflammation through downregulation of innate immune function. By contrast, in post-industrialized contexts, without the moderating influences of parasites on both cholesterol and immune functions, non-pathogenic stimuli (e.g. obesity) may be more likely to trigger systemic low-grade inflammatory pathways and, in the absence of a brake, lead to arterial and vascular damage and disease. Thus, the link between APOE4 and inflammatory diseases in post-industrialized contexts may in part be due to an environmental mismatch.
 
-## Hypothesis and aims
+### Hypothesis and aims
 
 In pathogenically diverse environments, innate immune defenses are likely to be activated owing to more frequent encounters with novel pathogens. This more diverse pathogenic setting may increase selective pressure to favor stronger immune regulation. We hypothesize that in such a context, an APOE4 variant is less harmful because it (a) minimizes damage caused by chronic innate inflammation and (b) maintains higher circulating cholesterol levels, which buffer energetic costs of pathogen-driven innate immune activation. In post-industrial contexts, where there is a relative absence of diverse pathogens and thus reduced pathogen-mediated lipid regulation, coupled with an overabundance of calories, the effect of APOE4 on circulating lipids may instead incur a cost. Lifestyle factors that promote obesity and excessive circulating lipids may lead to sterile endogenous inflammation (Trumble and Finch, 2019) that overshadows any potentially positive effects of APOE4 on immune function. Thus, the APOE4 variant has greater potential to lead to hyperlipidemia and coincide with related inflammatory diseases in high-calorie, low-pathogen, environments (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig1-v1.jpg)
 
-**Figure 1.:** E4 (APOE4) allele influences lipid processing, immune regulation and disease risk in post-industrialized and non-industrialized contexts.In both contexts, the APOE4 allele leads to increased levels of circulating lipids; however, in post-industrialized contexts (a), lipid levels can reach dangerously high levels due to obesogenic diets, and an absence of moderation by parasites and pathogen-driven immune activation. Immune activation by non-pathogenic elements triggers damage-associated molecular pattern pathways, which generates a proinflammatory ‘sterile’ immune response. Obesity and hyperlipidemia can simultaneously fuel sterile inflammation and promote oxidization of cholesterols, which, due to their lack of function, cause further tissue damage associated with cardiovascular and neurodegenerative disease risk. In energetically limited, pathogenically diverse contexts (b), the pathway between APOE4 and disease risk is considerably more complex. Briefly, immune responses to parasites and microbes require cholesterol, and there are both direct and indirect effects of different species of parasites which further regulate cholesterol production and utilization. In addition, anti-inflammatory immune responses are generated by ox-LDL (e.g. in response to bacteria and protozoal infections), and helminthic parasites, which balance the immune system’s overall response. It is possible that in contexts where there is higher pathogen diversity, an APOE4 phenotype may be less harmful because it minimizes the damage caused by upregulated innate immune function, while also maintaining higher cholesterol levels which would buffer the cost of innate immune activation due to infection. Whereas in high-calorie, low-pathogen environments, the utility of having an APOE4 allele may be muted, and the costs more severe. Image created with BioRender.com.
+**Figure 1.:** In both contexts, the APOE4 allele leads to increased levels of circulating lipids; however, in post-industrialized contexts (a), lipid levels can reach dangerously high levels due to obesogenic diets, and an absence of moderation by parasites and pathogen-driven immune activation. Immune activation by non-pathogenic elements triggers damage-associated molecular pattern pathways, which generates a proinflammatory ‘sterile’ immune response. Obesity and hyperlipidemia can simultaneously fuel sterile inflammation and promote oxidization of cholesterols, which, due to their lack of function, cause further tissue damage associated with cardiovascular and neurodegenerative disease risk. In energetically limited, pathogenically diverse contexts (b), the pathway between APOE4 and disease risk is considerably more complex. Briefly, immune responses to parasites and microbes require cholesterol, and there are both direct and indirect effects of different species of parasites which further regulate cholesterol production and utilization. In addition, anti-inflammatory immune responses are generated by ox-LDL (e.g. in response to bacteria and protozoal infections), and helminthic parasites, which balance the immune system’s overall response. It is possible that in contexts where there is higher pathogen diversity, an APOE4 phenotype may be less harmful because it minimizes the damage caused by upregulated innate immune function, while also maintaining higher cholesterol levels which would buffer the cost of innate immune activation due to infection. Whereas in high-calorie, low-pathogen environments, the utility of having an APOE4 allele may be muted, and the costs more severe. Image created with BioRender.com.
 
 This study describes the immunophenotypes and lipid profiles of individuals with APOE3/3 and APOE4+ genotypes living in a pathogenically diverse, energy-limited environment. For the purpose of hypothesis testing, we focus on testing genotype-related differences in components of innate immunity (CRP, neutrophils, eosinophils, and erythrocyte sedimentation rate [ESR]) and blood lipids linked to inflammation (total cholesterol, LDL, and oxidized LDL [ox-LDL]). We evaluate the extent to which body mass index (BMI) moderates the association between lipids and innate inflammation (CRP, neutrophils, ESR). Finally, we test whether the APOE4 allele has a moderating effect on the relationship between BMI and lipids to evaluate the role of APOE4 in the maintenance of stable lipid levels under energetic restriction.
 
@@ -82,29 +82,390 @@ This research focused on the Tsimane, an Amerindian population in the Bolivian t
 
 Data include APOE genotype and multiple measurements of BMI, lipids, and immune markers in 1266 Tsimane adults. Mixed effects multiple regression models were used to accommodate for multiple measurements per individual for some biomarkers, as well as community-level differences in pathogen exposures. Leveraging multiple observations per individual over time should better capture individuals’ average levels, and minimize the potential of single or few outliers driving results. Models also include covariates which adjust for age, sex, seasonality, and current infection (WBC >12 × 109/L) (see Materials and methods for details). The sample is 50% female and includes individuals from 80 villages. The mean ± SD age of the sample is 54 ± 11 years (range: 21–93). Mean ± SD BMI is 24 ± 3 for both sexes; Tsimane adults are relatively short (women: 150.5 ± 4.8 cm; men: 161.7 ± 5.3 cm) with low body fat (median body fat percentage for men and women is 18% and 26%, respectively). Prevalence of obesity is relatively low (10%). In general, blood immune biomarkers vary significantly across adult ages (Supplementary file 1; Figure 2). Table 1 provides a full description of lipid and immune levels of individuals by APOE genotype.
 
+**Table 1.**
+ Description of immune and lipid measures for homozygous APOE3/3 and APOE4+ carriers for whom age and sex are available.Values are reported as mean (standard deviation). Linear mixed effects models fit by REML were used to test for differences between groups, controlling for age, sex, current immune activation, and seasonality, with random effects for community and individual ID. Model to test age differences includes only a random effect for individual ID. Multiple test correction was conducted for models used for hypothesis-testing; False Discovery Rate (FDR) adjusted p-values are reported for these models. No. of observations is reported as: total number of observations for the main biomarker (number of unique individuals) in each model. T-statistics use Satterthwaite's method. Due to skewness of biomarkers, statistical models use transformed and scaled data for normalization, as such, estimates are reported as standardized betas (b) with standard errors (SE). Full models with covariates and 95% confidence intervals can be found in Tables 2-3 in the Supplement. See methods for transformations for each marker.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>APOE 3/3</th>
+      <th>Apoe4+</th>
+      <th>No. observations per model</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>t-value</th>
+      <th>p-value</th>
+      <th>FDR adj p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>998</td>
+      <td>268</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>% female</td>
+      <td>51%</td>
+      <td>48%</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Age (in years)</td>
+      <td>54 (11.5)</td>
+      <td>54 (11.2)</td>
+      <td>6615 (1268)</td>
+      <td>0.007</td>
+      <td>0.07</td>
+      <td>0.106</td>
+      <td>0.915</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>BMI (kg/m2)</td>
+      <td>23.9 (3.4)</td>
+      <td>24.6 (3.7)</td>
+      <td>6224 (1263)</td>
+      <td>0.15</td>
+      <td>0.06</td>
+      <td>2.421</td>
+      <td>0.016*</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>C-reactive protein (mg/L)</td>
+      <td>3.7 (3.3)</td>
+      <td>2.9 (2.6)</td>
+      <td>1032 (907)</td>
+      <td>-0.29</td>
+      <td>0.08</td>
+      <td>-3.731</td>
+      <td>&lt;0.001***</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Eosinophil (mm3)</td>
+      <td>1617 (1060)</td>
+      <td>1375 (910)</td>
+      <td>6129 (1259)</td>
+      <td>-0.16</td>
+      <td>0.04</td>
+      <td>-3.871</td>
+      <td>&lt;0.001***</td>
+      <td>&lt;0.001***</td>
+    </tr>
+    <tr>
+      <td>Neutrophil (mm3)</td>
+      <td>5044 (1803)</td>
+      <td>4816 (1697)</td>
+      <td>6144 (1259)</td>
+      <td>-0.03</td>
+      <td>0.03</td>
+      <td>-0.816</td>
+      <td>0.415</td>
+      <td>0.435</td>
+    </tr>
+    <tr>
+      <td>Sed Rate (mm/hr)</td>
+      <td>29.4 (19.5)</td>
+      <td>29.7 (19.2)</td>
+      <td>5987 (1253)</td>
+      <td>0.06</td>
+      <td>0.04</td>
+      <td>1.334</td>
+      <td>0.182</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td>Eosin : Lymph ratio</td>
+      <td>0.36 (0.14)</td>
+      <td>0.33 (0.14)</td>
+      <td>6121 (1260)</td>
+      <td>-0.14</td>
+      <td>0.04</td>
+      <td>-3.197</td>
+      <td>0.001**</td>
+      <td>–---</td>
+    </tr>
+    <tr>
+      <td>Leukocytes (1000/mm3)</td>
+      <td>9.3 (2.5)</td>
+      <td>8.8 (2.4)</td>
+      <td>6229 (1266)</td>
+      <td>-0.08</td>
+      <td>0.03</td>
+      <td>-2.281</td>
+      <td>0.023*</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (mm3)</td>
+      <td>2590 (832)</td>
+      <td>2565 (852)</td>
+      <td>6136 (1260)</td>
+      <td>0</td>
+      <td>0.04</td>
+      <td>0.104</td>
+      <td>0.917</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin (g/dL)</td>
+      <td>13.2 (1.5)</td>
+      <td>13.2 (1.4)</td>
+      <td>6195 (1263)</td>
+      <td>-0.04</td>
+      <td>0.05</td>
+      <td>-0.805</td>
+      <td>0.421</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Triglycerides (mg/dL)</td>
+      <td>107 (51)</td>
+      <td>114 (61)</td>
+      <td>2633 (1174)</td>
+      <td>0.07</td>
+      <td>0.06</td>
+      <td>1.157</td>
+      <td>0.248</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Total cholesterol (mg/dL)</td>
+      <td>144 (32)</td>
+      <td>148 (33)</td>
+      <td>2581 (1168)</td>
+      <td>0.15</td>
+      <td>0.06</td>
+      <td>2.594</td>
+      <td>0.010**</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>HDL cholesterol (mg/dL)</td>
+      <td>38 (9)</td>
+      <td>38 (9)</td>
+      <td>2477 (1167)</td>
+      <td>0.05</td>
+      <td>0.06</td>
+      <td>0.83</td>
+      <td>0.407</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol (mg/dL)</td>
+      <td>90 (32)</td>
+      <td>93 (32)</td>
+      <td>2390 (1154)</td>
+      <td>0.08</td>
+      <td>0.06</td>
+      <td>1.307</td>
+      <td>0.192</td>
+      <td>0.217</td>
+    </tr>
+    <tr>
+      <td>Oxidized LDL (U/L)</td>
+      <td>76 (24)</td>
+      <td>79 (23)</td>
+      <td>1033 (907)</td>
+      <td>0.16</td>
+      <td>0.08</td>
+      <td>1.947</td>
+      <td>0.052*</td>
+      <td>0.090t</td>
+    </tr>
+  </tbody>
+</table>
+
+_Statistical significance is denoted as: t p<0.10; * p<0.05; ** p<0.01; *** p<0.001._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig2-v1.jpg)
 
-**Figure 2.:** E4 (APOE) genotype.Slopes were taken from mixed effects linear regression models and represent estimates of the interactive effects of APOE genotype and age on each immune marker. Models adjust for sex, season, and current illness (Supplementary file 1). Erythrocyte sedimentation rate is abbreviated as ‘Sed Rate’.
+**Figure 2.:** Slopes were taken from mixed effects linear regression models and represent estimates of the interactive effects of APOE genotype and age on each immune marker. Models adjust for sex, season, and current illness (Supplementary file 1). Erythrocyte sedimentation rate is abbreviated as ‘Sed Rate’.
 
 In our sample, 21.2% have at least one APOE4 allele; 245 individuals are heterozygous 3/4, and 23 are homozygous 4/4. The remaining 78.8% (n = 998) are homozygous for APOE3/3. Overall frequency of the APOE4 allele is 11.5%. The APOE2 allele was absent. Throughout the rest of the paper, APOE genotype is defined categorically, binning individuals as homozygous APOE3 (E3/3) or as APOE4+ carriers (if they had at least one copy of the APOE4 allele). Heterozygous and APOE4 homozygotes were binned together due to the small number of homozygotes (1.8% of total sample, and thus too small of a group for adequately powered statistical tests).
 
-## Characterization of lipid and immune profiles by APOE genotype
+### Characterization of lipid and immune profiles by APOE genotype
 
 Relative to APOE3/3 homozygotes, APOE4 carriers have higher BMI (β = 0.15 [CI: 0.02–0.28], p = 0.02), total cholesterol (β = 0.15 [CI: 0.04, 0.27], p = 0.009), and oxidized LDL (β = 0.16 [CI: –0.00, 0.32], p = 0.05), yet lower levels of innate immune blood biomarkers: CRP (β = –0.29 [CI: −0.44,–0.14], p < 0.001), eosinophils (β = –0.16 [CI: −0.24,–0.08], p < 0.001) (Table 1, Figure 3). Similarly, in constrained models that excluded all individuals with CRP >10 mg/L and >5 mg/L, APOE4 carriers maintained lower levels of CRP relative to APOE3/3 homozygotes (β = –0.23 [CI: −0.38,–0.09], p < 0.001; β = –0.22 [CI: −0.36,–0.08], p = 0.002, respectively). Adjusting for multiple testing, CRP (FDR adj. p < 0.001) and eosinophils (FDR adj. p < 0.001) remain significantly different between APOE genotypes. APOE4 is also associated with a lower eosinophil to lymphocyte ratio (β = –0.14 [CI: −0.23,–0.05], p = 0.001) and lower total leukocytes (β = –0.08 [CI: −0.15,–0.01], p = 0.02), but not with LDL, high-density lipoprotein (HDL), or triglycerides (Figure 3—figure supplement 1). Full models shown in Supplementary file 1b-e.
 
-## Does BMI moderate the association between lipids and inflammation?
+![Figure 3.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig3-v1.jpg)
+
+**Figure 3.:** All plots include estimated means (horizontal lines) and standard errors (crossbars) per genotype, derived from mixed effects linear regression models that adjust for age, sex, season, and current illness. For full models with covariates, see Supplementary file 1b, c and e. Erythrocyte sedimentation rate is abbreviated as ‘Sed Rate’. See Figure 3—figure supplement 1 for additional plots comparing of biomarkers by APOE genotype. Statistical significance is denoted as: *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** All plots include estimated means (horizontal lines) and standard errors (crossbars) per genotype, derived from mixed effects linear regression models that adjust for age, sex, season, and current illness. For full models with covariates, see Supplementary file 1b, c and e.
+
+### Does BMI moderate the association between lipids and inflammation?
 
 For Tsimane with higher (>28) BMI, total cholesterol and LDL did not associate with CRP; however, for individuals with median (21 ≤ BMI ≤ 28) or low (<21) BMI, higher total cholesterol and LDL associate with lower CRP (Figure 4). When considered as a continuous variable, BMI significantly moderates these associations (total cholesterol: β = 0.15 [CI: 0.08, 0.21], p < 0.001; LDL: β = 0.16 [CI: 0.10, 0.22], p < 0.001). BMI also interacts with ox-LDL (β = 0.14 [CI: 0.08, 0.19], p < 0.001) in predicting CRP; however, this relationship is distinct from the other lipids tested. For Tsimane with high BMI, ox-LDL positively associates with CRP, while for those with low BMI the inverse is true (Figure 3C). For ESR, total cholesterol (β = 0.05 [CI: 0.01, 0.08], p = 0.008) and LDL (β = 0.03 [CI: –0.00, 0.07], p = 0.07) positively associate with ESR only among Tsimane with higher BMIs. After adjusting for multiple testing, relationships between cholesterols and CRP all remain significant (all FDR adj. p < 0.001), as does the relationship between total cholesterol and ESR (FDR adj. p = 0.02).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig4-v1.jpg)
+
+**Figure 4.:** Panels A-C show interaction effects between BMI and (A) total cholesterol, (B) LDL, and (C) oxidized LDL. For total and LDL cholesterol, among those with low (purple line) and mean (lime green line) BMI, cholesterol is negatively associated with CRP. Oxidized LDL is only associated with higher CRP among individuals with high BMI (turquoise line). Lines are predicted from mixed effects linear regressions that adjust for age, sex, seasonality, with random effects for individual and community residence (Supplementary file 1f-h). Data points are raw values, color-coded based on BMI level. Variables are transformed and centered. See Figure 4—figure supplement 1 for independent associations between BMI and cholesterols with markers of inflammation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig4-figsupp1-v1.jpg)
+
 Concerning independent relationships, there are no direct relationship between ox-LDL and CRP, whereas higher total cholesterol and LDL are associated with lower CRP (total cholesterol: β = –0.13 [CI: −0.20,–0.05], p < 0.001; LDL: β = –0.11 [CI: −0.18,–0.03], p = 0.006) (Figure 4—figure supplement 1). Total cholesterol is also negatively associated with ESR (β = –0.06 [CI: −0.10,–0.02], p = 0.002). There are no independent or interactive relationships between BMI, cholesterols, and neutrophils. For full models, see Supplementary file 1f-h.
 
-## Does APOE genotype moderate the association between BMI and lipids?
+### Does APOE genotype moderate the association between BMI and lipids?
 
 Finally, we assess whether APOE genotypes differentially moderate associations between cholesterol and BMI for lean and high BMI individuals. To evaluate the effects of the APOE4 allele on lipid levels across the range of BMI, we added an interaction term between BMI and APOE genotype to the mixed effects linear regression models assessing relationships between BMI and lipids (Table 2). These analyses show that APOE4 carriers maintain similar levels of total cholesterol and LDL across BMIs (cholesterol: β = –0.08 [CI: −0.18,–0.02], p = 0.11; LDL: β = –0.09 [CI: –0.19, 0.00], p = 0.06), whereas APOE3/3 homozygotes show higher cholesterol with BMI. Specifically, APOE4 carriers maintain higher levels of total and LDL cholesterol at lower BMIs, but have lower levels of both at higher BMIs, relative to individuals that are homozygous APOE3/3 (Figure 5). However, neither of these associations are significant. Ox-LDL, HDL, and triglycerides do not vary by APOE alleles across BMIs. For full models, see Supplementary file 1.
 
+**Table 2.**
+ Models evaluating the moderating effects of APOE genotype on associations between BMI and cholesterols.Results are fixed effects estimates from mixed effects linear regressions, which include random effects for ID and community residence. In addition to age, sex, and season, a dummy variable was used as a proxy for current illness (leukocytes > 12 mm3). Results are reported as standardized betas; CI is the 95% confidence interval. All dependent variables were transformed and centered prior to analyses. APOE genotype is coded as a categorical variable, binned as individuals that are homozygous E3 (E3) versus those that have at least one copy of the E4 allele (E4).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Predictors</th>
+      <th colspan="3">Total cholesterol</th>
+      <th colspan="3">LDL</th>
+      <th colspan="3">Oxidized LDL</th>
+    </tr>
+    <tr>
+      <th>β</th>
+      <th>CI</th>
+      <th>p</th>
+      <th>β</th>
+      <th>CI</th>
+      <th>p</th>
+      <th>β</th>
+      <th>CI</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E4 * BMI</td>
+      <td>−0.08</td>
+      <td>−0.18–0.02</td>
+      <td>0.111</td>
+      <td>−0.09</td>
+      <td>−0.19–0.00</td>
+      <td>0.061</td>
+      <td>0.02</td>
+      <td>−0.13–0.17</td>
+      <td>0.786</td>
+    </tr>
+    <tr>
+      <td>APOE [E4]</td>
+      <td>0.14</td>
+      <td>0.03–0.26</td>
+      <td>0.013</td>
+      <td>0.07</td>
+      <td>−0.04–0.18</td>
+      <td>0.221</td>
+      <td>0.13</td>
+      <td>−0.03–0.29</td>
+      <td>0.112</td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>0.18</td>
+      <td>0.14–0.23</td>
+      <td>&lt;0.001</td>
+      <td>0.2</td>
+      <td>0.15–0.25</td>
+      <td>&lt;0.001</td>
+      <td>0.21</td>
+      <td>0.14–0.28</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sex [women]</td>
+      <td>0.15</td>
+      <td>0.06–0.24</td>
+      <td>0.001</td>
+      <td>0.2</td>
+      <td>0.11–0.28</td>
+      <td>&lt;0.001</td>
+      <td>0.09</td>
+      <td>−0.03–0.21</td>
+      <td>0.158</td>
+    </tr>
+    <tr>
+      <td>Age [in years]</td>
+      <td>0.01</td>
+      <td>0.01–0.01</td>
+      <td>&lt;0.001</td>
+      <td>0.01</td>
+      <td>0.01–0.02</td>
+      <td>&lt;0.001</td>
+      <td>0</td>
+      <td>−0.01–0.01</td>
+      <td>0.869</td>
+    </tr>
+    <tr>
+      <td>Currently ill</td>
+      <td>0.02</td>
+      <td>−0.13–0.17</td>
+      <td>0.773</td>
+      <td>−0.03</td>
+      <td>−0.18–0.13</td>
+      <td>0.744</td>
+      <td>0.15</td>
+      <td>−0.09–0.39</td>
+      <td>0.229</td>
+    </tr>
+    <tr>
+      <td>Season [wet]</td>
+      <td>−0.12</td>
+      <td>−0.20–−0.04</td>
+      <td>0.004</td>
+      <td>−0.29</td>
+      <td>−0.38–−0.21</td>
+      <td>&lt;0.001</td>
+      <td>-0.28</td>
+      <td>−0.44–−0.13</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>−0.7</td>
+      <td>−0.94–−0.46</td>
+      <td>&lt;0.001</td>
+      <td>−0.71</td>
+      <td>−0.95–−0.47</td>
+      <td>&lt;0.001</td>
+      <td>0.09</td>
+      <td>−0.28–0.46</td>
+      <td>0.626</td>
+    </tr>
+    <tr>
+      <td>Observations</td>
+      <td colspan="3">2581</td>
+      <td colspan="3">2390</td>
+      <td colspan="3">1032</td>
+    </tr>
+    <tr>
+      <td>Marginal R2</td>
+      <td colspan="3">0.049</td>
+      <td colspan="3">0.074</td>
+      <td colspan="3">0.07</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/68231/elife-68231-fig5-v1.jpg)
 
-**Figure 5.:** APOE genotype on associations between body mass index (BMI) and cholesterols (see Table 2 in the manuscript for models).Dotted vertical lines represent cutoffs for low (<21) and high (>28) BMI. For the primary cholesterols utilized during an immune response to pathogens – total cholesterol (A) and LDL (B) – individuals with an E4 allele maintain slightly higher levels of those cholesterols at low BMIs, compared to homozygous E3. Plotted lines are derived from mixed effects linear regressions that include age, sex, season, and current infection as covariates, as well as random effects for individual and community residence. Data points are raw values, color-coded by APOE genotype.
+**Figure 5.:** Dotted vertical lines represent cutoffs for low (<21) and high (>28) BMI. For the primary cholesterols utilized during an immune response to pathogens – total cholesterol (A) and LDL (B) – individuals with an E4 allele maintain slightly higher levels of those cholesterols at low BMIs, compared to homozygous E3. Plotted lines are derived from mixed effects linear regressions that include age, sex, season, and current infection as covariates, as well as random effects for individual and community residence. Data points are raw values, color-coded by APOE genotype.
 
 ## Discussion
 
@@ -122,7 +483,7 @@ Finally, nearly one-fourth of individuals in the sample had at least one copy of
 
 The commonly reported associations between APOE4 and disease risk in post-industrialized societies may differ from subsistence populations due to environmental mismatch (Trotter et al., 2010). In an environment where calories are limited, and one’s innate immune system is already primed by multiple pathogens, the benefit of having an APOE4 allele – which facilitates upregulated lipids (sufficient for mounting immune responses) and downregulates innate immune function – may be amplified. Such a phenotype could be beneficial particularly if downregulated immune function did not compromise responses to immunological threats. Further, in such an environment, this phenotype may be energetically conservative, maintaining resources to fuel other systems, such as cognitive functioning (Trumble and Finch, 2019). Indeed, there is some evidence that APOE4 carriers may be better able to buffer the negative effects of infection. An APOE4 polymorphism in Brazilian children with a history of infection (measured by bouts of diarrhea in infancy) predicted better scores on cognitive exams (Oria et al., 2011). Among Tsimane infected with parasites, only APOE4 carriers performed better on cognitive tests (Trumble et al., 2017). However, in hygienic post-industrialized contexts, the risk of helminthic and protozoal infection is low, and most pathogens can be quickly treated with medication. Thus, the potential benefits of the APOE4 allele are muted, and the costs of higher lipids are much more severe in these obesogenic environments.
 
-## Limitations
+### Limitations
 
 Though our findings draw from a large sample size and are robust to various controls and model specifications, there are several limitations. First, our findings are correlative and limit causal inference. Because these findings may be important for furthering evolutionary (i.e. why the APOE4 allele may be maintained) and clinical (i.e. the role of APOE in disease pathogenesis) understanding, they require replication and warrant experimental testing. The central thesis presented here – that persistent exposure to pathogens and obesogenic diets moderate the relationship between blood lipids and inflammation – is amenable to experimental manipulation under lab conditions. Specifically, a mammalian model system could be split into two treatments: those raised under sterile conditions versus regimented exposure to non-lethal pathogens. These treatments may then be crossed with dietary or physical activity conditions that produce differential levels of adiposity. Our hypothesis predicts that both decreased adiposity and increased life course pathogen exposure will reduce or even eliminate positive associations between blood lipids and chronic inflammation. Importantly, inflammatory biomarkers can be measured at more frequent intervals in lab conditions to assess long-term differences in the function of both pro- and anti-inflammatory pathways between experimental treatments.
 
@@ -132,25 +493,25 @@ Third, proxies for energy availability and pathogen exposures are imperfect. BMI
 
 Finally, we were not able to fully adjust for the time of day that samples were collected for the biomarkers used in this paper. Given that peripheral levels of most immune biomarkers vary diurnally to some extent, it is possible that not adjusting for exact time of day may have introduced some noise into analyses. However, CRP (which the main findings centered around) does not appear to follow a circadian rhythm in healthy individuals (Meier-Ewert et al., 2001). Further, the largest differences in levels (peak to trough amplitudes) tend to coincide with sleep and wake cycles (Labrecque and Cermakian, 2015). Because blood draws routinely occur in the morning, samples are constrained to a narrow window, and thus we are not comparing values across the full range of diurnal variation.
 
-## Conclusion
+### Conclusion
 
 In post-industrial settings, APOE4 is generally considered a purely deleterious allele, increasing inflammation and lipids, and escalating CVD and neurological disease risk. Yet, in a high-pathogen environment with minimal obesity, we find that APOE4 is associated with lower levels of innate inflammation. While APOE4 carriers do have higher lipid levels, these may be beneficial for immune response and child survival, and unlikely to increase CVD risk in a population without other cardiometabolic risk factors.
 
 ## Materials and methods
 
-## Population and sampling design
+### Population and sampling design
 
 The Tsimane are an Amerindian population that live in the tropical lowlands of Bolivia. As of 2015, the Tsimane Health and Life History Project (THLHP) census estimated a total population size of about 16,000 individuals living across 90+ villages (Gurven et al., 2017). Data come from the THLHP, a longitudinal study of health and behavior that has run continuously since 2002 (Gurven et al., 2017).
 
-## Sampling design
+### Sampling design
 
 Biomarker data used in this paper were collected by the THLHP between 2004 and 2015 (see Gurven et al., 2017; Kraft et al., 2020 for details). A Bolivian and Tsimane mobile medical team travel annually or biannually among study communities conducting clinical health assessments and collecting biochemical and anthropometric information from community members that want to participate. This sample includes all data from individuals for whom we have APOE genotyping and measurements of age, sex, and BMI – which is the base criteria for this study. Sample size varies by biomarker and over time for several reasons: sampling strategy varies by data type, absent or sick team personnel needed to collect data, the number of study villages and thus enrolled participants has increased over time, and the data types collected have changed over time (see Kraft et al., 2020). There are also fewer repeat measurements for a subset of biomarkers (i.e. CRP and ox-LDL) that were assayed in the United States, due to them being analyzed as part of a prior project. Specific sample sizes are reported in Table 1, and full tables report sample size for each model.
 
-## APOE genotyping
+### APOE genotyping
 
 Whole blood samples were stored in cryovials (Nalgene, Rochester, NY) and frozen in liquid nitrogen before transfer on dry ice to the University of California-Santa Barbara, where they were stored at –80°C until genotyping. SNP genotyping was used to identify APOE allelic variants in blood samples. Samples were shipped on dry ice to University of Southern California (2010 and 2013) and University of Texas-Houston (2016), where DNA was extracted, quantified, and haplotype-coded for APO- E2, E3, and E4 alleles using the TaqMan Allelic Discrimination system (Thermo Fisher Scientific, Carlsbad, CA). Determination of the APOE2/E3/E4 alleles in the Tsimane derived from two SNPs of 20–30 bp oligonucleotides surrounding the polymorphic site (Cys112Arg/rs429358 and Cys158Arg/rs7412) (Trumble et al., 2017; Vasunilashorn et al., 2011).
 
-## Measurement of blood lipids and immune function
+### Measurement of blood lipids and immune function
 
 Biomarkers were assayed either in the field at the time of collection or in the Human Biodemography laboratory at UC Santa Barbara in 2016.
 
@@ -158,13 +519,13 @@ Blood was collected by venipuncture in a heparin-coated vacutainer. Immediately 
 
 Serum was separated and frozen in liquid nitrogen before transfer to the University of California-Santa Barbara where a commercial immunoassay was used to measure ox-LDL (Mercodia Cat# 10-1143-01, Winston Salem, NC). Serum high sensitivity C-reactive protein (hs-CRP) was assessed via immunoassay (Brindle et al., 2010) and was cross-validated by the University of Washington laboratory, using the protocols utilized for the National Health and Nutrition Evaluation Survey (NHANES) (Meridian Life Sciences Cat# M86005M, RRID:AB_150654). Ox-LDL and hs-CRP assays use materials from the same lot across all measures. Total and LDL cholesterol levels from serum samples were measured (Stat Fax 1908, Awareness Technology, Palm City, FL) in the THLHP laboratory in San Borja, Beni, Bolivia.
 
-## Age estimation and anthropometrics
+### Age estimation and anthropometrics
 
 Birth years were assigned based on a combination of methods including using known ages from written records, relative age lists, dated events, photo comparisons of people with known ages, and cross-validation of information from independent interviews of kin (Gurven et al., 2007). Each method provides an independent estimate of age, and when estimates yielded a date of birth within a 3-year range, the average was used. Individuals for whom reliable ages could not be ascertained are not included in analyses.
 
 Weight and height were measured in the field by a member of the THLHP medical team, using a basic digital scale (Tanita, Arlington Heights, IL) and stadiometer to the nearest 0.1 cm. BMI was calculated as weight (kg)/height2 (m2).
 
-## Statistical analysis
+### Statistical analysis
 
 Mixed effects linear regressions with restricted maximum likelihood estimation are used for all analyses. Models adjust for age, sex, seasonality, and current infection (leukocyte count >12,000 cells per microliter of blood) (McKenzie and Williams, 2010), with random intercept effects for individual ID and community. Because Tsimane villages vary in sanitation infrastructure, including access to soap and other hygienic products, and potentially prevalence by pathogen type (e.g. some living very close to the river versus farther out in the forest), individuals were clustered by community to account for variation in such community-level factors. Household-level variation (e.g. cohabitating individuals may have similar exposures) was also tested by including a random household ID as a random variable. However, because inclusion of household ID as a random effect did not alter parameter estimates or p-values, and fit (measured by AIC) was not substantially improved across any model, it was omitted from final analyses. To model moderation effects (sections Does BMI moderate the association between lipids and inflammation? and Does APOE genotype moderate the association between BMI and lipids?) interaction terms are included between the main predictor and moderator.
 

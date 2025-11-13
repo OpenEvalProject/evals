@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012gwbh42 Instituto Cajal, CSIC Madrid Spain
-2. https://ror.org/01cby8j38 Grupo de Neurocomputación Biológica (GNB), Universidad Autónoma de Madrid Madrid Spain
+1. Instituto Cajal, CSIC Madrid Spain ([ROR:012gwbh42](https://ror.org/012gwbh42))
+2. Grupo de Neurocomputación Biológica (GNB), Universidad Autónoma de Madrid Madrid Spain ([ROR:01cby8j38](https://ror.org/01cby8j38))
 
 † Corresponding author
 
@@ -29,9 +29,17 @@ Here, we exploit the extraordinary capability of convolutional neural networks (
 
 ## Results
 
-## Artificial neural network architecture and operation
+### Artificial neural network architecture and operation
 
 Inspired by You-Only-Look-Once (YOLO) networks for real-time object recognition (Redmon et al., 2015), we adapted a CNN architecture to search for SWR in the dorsal hippocampus of awake head-fixed mice. LFP signals acquired with high-density 8-channel silicon probes provide detailed information about the underlying CA1 microcircuit (Figure 1A; Mizuseki et al., 2011; Navas-Olive et al., 2020). The goal of the artificial network operating over 8-channel input signals (down-sampled at 1250 Hz) was to provide a single-output probability for the occurrence of an SWR event in a given temporal window (Figure 1A, bottom trace). Therefore, the input ‘object’ is equivalent to a stream of pixels (×1 number of data samples) with 8-channels instead of colors.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig1-v2.jpg)
+
+**Figure 1.:** (A) Example of a sharp-wave ripple (SWR) event recorded with 8-channel silicon probes in the dorsal CA1 hippocampus of head-fixed awake mice. Vertical lines mark the analysis window (32 ms). The probability of SWR event from each window is shown at bottom. (B) Example of L1 kernel operation and calculation of the kernel activation (KA) signal. (C) Network architecture consists of seven blocks of one Convolutional layer+one BatchNorm layer+one Leaky ReLU layer each (layers 1–21). Dense layer 22 provides the CNN output as the SWR probability. (D) Examples of KA for layers 1–4 resulting from the SWR event shown in A. Note how the 8-channel local field potential (LFP) input is progressively transformed to capture different features of the event. (E) Example of the CNN output (i.e. KA of layer 22) at 32 ms resolution. A probability threshold can be used to identify SWR events. Note that some events can be predicted well in advance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Preliminary evaluation of two different architectures, convolutional neural network (CNN), and long short-term memory (LSTM) networks, as well as different learning rates, number of kernels factor, and batch sizes. The resulting 10-best networks exhibited performance F1>0.65 (green scale) at 32 ms resolution. Arrowheads indicate CNN32. Worst performance networks are shown in gray. (B) Evolution of the loss value during training of the 10-best networks shown in A. CNN32 exhibited the lowest and more stable learning curve (arrowhead). (C) Evolution of the loss function error across epochs for the training and test subsets, excluding overfitting issues. (D) Evaluation of the parameters of the Butterworth filter exhibiting performance F1>0.65 (green values), similar to the CNN. The chosen parameters (100–300 Hz bandwidth and order 2) are indicated by arrowheads. We found no effect on the number of channels used for the filter (1, 4, and 8 channels), and chose that with the higher ripple power. (E) Extended hyper-parameter search for different optimization algorithms (Adam and AMSGrad), regularizing strategies, and the learning rate decay (781 parameter combinations). F1 values of the 30-best networks are shown (green values). Worst performance networks are in gray. Arrowheads indicate the chosen model. (F) Scheme of the experimental setup for online detection. CNN operated in real time at the interface between the Intan recording system and the controller of an opto-electrode probe. A sharp-wave ripple (SWR) event (right) illustrates detection over threshold. Detection was implemented using a plugin designed to incorporate TensorFlow into the OE (Siegle et al., 2017) Graphic User Interface https://github.com/PridaLab/CNNRippleDetectorOEPlugin. (G) Example of an online closed-loop intervention (blue shadow) in a PV-cre mouse injected with AAV-DIO-ChR2 to optogenetically modulate SWR.
 
 Convolutional layers search for particular features in the input data by using kernels. The kernels of the first layer (L1) have dimensions of 8-channels × length, with length reflecting the number of data samples. They advance along the temporal axis moving forward a similar number of non-overlapping samples defined by the stride (Figure 1B). The result of this operation is the kernel activation (KA) signal, which reflects the presence of some input features. L1 kernel length should be defined by considering the desired output resolution of the network. To ease subsequent online applications, we chose either 32 ms (CNN32, L1 kernel length 5) or 12.8 ms resolution (CNN12, L1 kernel length 2).
 
@@ -39,7 +47,7 @@ Our CNN operates by receiving the 8-channels input into each of the four kernels
 
 We defined a suitable number of blocks that optimized the input (8 channels) and output features (1 channel output at 32 ms or 12.8 resolution), resulting in seven blocks for a total of 21 layers (Figure 1C). The final layer (L22) is a Dense layer with a sigmoidal activation function, so that the CNN output (between 0 and 1) can be interpreted as the SWR probability. An SWR event can be detected using an adjustable probability threshold (Figure 1E). Note that our CNN network operates along all streamed LFP data without any specification of the ongoing oscillatory state (i.e. theta or non-theta segments accompanying running and immobility periods, respectively).
 
-## CNN training and performance offline and online
+### CNN training and performance offline and online
 
 Having defined the main network architecture, we used a dataset manually tagged by an expert for training and initial validation (1794 events, two sessions from two mice; Supplementary file 1). An important decision we made was manually annotating the start and the end of SWR events so that the CNN could learn their onset.
 
@@ -53,7 +61,7 @@ We assessed the offline performance of the chosen CNN, as compared to the Butter
 
 The offline analysis presented above was possible because the ground truth was already known. In real case scenarios, the experimenter has to rely in relatively arbitrary threshold settings. To evaluate this further, we performed a new set of experiments for real-time detection in the Open Ephys (OE) environment (Siegle et al., 2017) (eight sessions from five mice). To this purpose, we developed a plugin designed to incorporate TensorFlow, an open-source library for machine learning applications, into the OE graphic user interface (Figure 1—figure supplement 1F, G; Supplementary file 1). To be consistent with detection standards (Fernández-Ruiz et al., 2019), the online filter was applied to the channel with maximal ripple power and an additional non-ripple channel was used to veto detection of common artifacts. We found better online performance of the CNN at 12.8 ms resolution as compared with the filter (Figure 2C; per session p=0.0047; per mice p=0.033). When it came to the ability to anticipate SWR events online, the CNN slightly overtook the Butterworth filter (time-to-SWR-peak for CNN12: –7.01±2.05 ms; Butterworth filter: –4.66±2.87 ms; paired t-test, p=0.048). A post hoc offline evaluation of online sessions confirmed better performance of the CNN versus the filter, for all normalized thresholds (Figure 2D).
 
-## Detection limits of SWR and their influences on CNN operation
+### Detection limits of SWR and their influences on CNN operation
 
 Are there any practical detection limit for SWR? How good is CNN performance and how much is it determined by the expert heuristics?
 
@@ -69,7 +77,7 @@ To evaluate this point further, and to test for the capability of the CNN to gen
 
 Altogether, our analyses indicate that detection limits of SWR may be determined by the expert’s criteria. CNN performance improves when confronted with the consolidated ground truth, supporting that shared community tagging may help to advance our understanding of SWR definition. Importantly, a CNN trained in data from head-fixed mice was able to generalize to freely moving rats.
 
-## Unveiling SWR latent features
+### Unveiling SWR latent features
 
 Interpretability is a major issue in modern machine learning (Mahendran and Vedaldi, 2014; Richards et al., 2019). To better understand and validate CNN operation, we looked for methods to visualize the kernel features that had better explained the network ability to recognize SWR events. We exploited a standard procedure from CNN image recognition (Simonyan et al., 2013) consisting on maximizing the KA using gradient ascent in the input space (Figure 4A, top). To this purpose, a noisy LFP input is progressively updated until the KA is maximal, using different initialization values (Figure 4A, bottom). The resulting signal is equivalent to a saliency map reflecting the latent preferred features by each CNN kernel. This approach is similar to infer visual receptive fields using noise stimulation.
 
@@ -87,11 +95,19 @@ To quantify these observations, we evaluated how much the output of L22K1 salien
 
 This analysis confirms that the CNN has the ability to identify SWR events by relying on feature-based kernel operation. Moreover, some ambiguous predictions according to the current definition of SWR may identify different forms of population firing and oscillatory activities associated to sharp waves, supporting the network ability to generalize beyond the particular expert’s ground truth.
 
-## Interpreting and explaining CNN operation
+### Interpreting and explaining CNN operation
 
 As shown above, the CNN ability relies on feature extraction by the different kernels. To gain explanatory power on how this applies to SWR detection, we sought to visualize and quantify the CNN kernel operation.
 
 First, we examined the weights of the first layer kernels, which act directly over high-density LFP inputs. We noted that their profiles were especially suited for assessing critical LFP features, such as the laminar organization of activity. For example, L1K1 acted along the spatial scale by differentially weighting LFP channels along the somatodendritic axis and deep-superficial layers (Figure 6A), consistent with the saliency map shown above. In contrast, weights from L1K2 likely operated in the temporal scale with major differences along the kernel length (Figure 6A). In this case, by positively weighting upper channels at later samples this filter may be anticipating some SWR motifs, as shown before. Interestingly, opposing trends between top and bottom channels suggest some spatial effect as well. L1K3 and L1K4 provided less obvious integration across the spatial and temporal scales. In spite of the complexity of the resulting convolution along the entire event, visualization of KA reflects detection of ripples as well as the slow and fast deflections of the associated sharp wave (see L1 outputs in Figure 1D for CNN32; Figure 6—figure supplement 1A,B for CNN12).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig6-v2.jpg)
+
+**Figure 6.:** (A) Examples of kernel weights from different layers of CNN32. Note different distribution of positive and negative weights. In layer 1, the four different kernels act to transform the 8-channels input into a single channel output by differently weighting contribution across the spatial (upper and lower local field potential [LFP] channels; vertical arrows in L1K1 and L1K2) and temporal scales (horizontal arrow in L1K2). See the resulting kernel activation for the example sharp-wave ripple (SWR) event in Figure 1D. (B) Feature map from the example SWR event (100 ms window; gray) built by concatenating the kernel activation signals from all layers into a single vector. The feature map of a randomly selected LFP epoch without annotated SWR is shown at bottom (black). (C) Two-dimensional reduced visualization of CNN32 feature maps using Uniform Manifold Approximation and Projection (UMAP) shows clear segregation between similar number of SWRs (ground truth [GT]) and randomly chosen LFP epochs (Rand) (7491 events, sampled from 17 sessions, seven mice). Note distribution of SWR probability at right consistent with the ground truth. (D) Distribution of True Positive, True Negative, False Positive, and False Negative events in the UMAP cloud. (E) Distribution of the False Positive events previously validated in Figure 4F. Note that they all lay over the ground truth region.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Examples of CNN12 kernel activations for layers 1–4 resulting from the example sharp-wave ripple (SWR) event. Note how the 8-channel local field potential (LFP) input is progressively transformed to capture different features of the event at a higher resolution as compared with CNN32 (see Figure 1D). (B) Examples of CNN12 kernel weights. As for CNN32 (Figure 6A), note different distribution of positive and negative weights across the spatial and temporal scales. (C) Uniform Manifold Approximation and Projection (UMAP) plot of the CNN12 feature maps shows clear segregation between similar number of SWRs (ground truth [GT]) and randomly chosen LFP epochs (Rand) (7491 events from 17 sessions, seven mice). The distribution of SWR probability is shown next, as well as the distribution of all detected events by categories. (D) Performance (F1) evaluated for each CNN layer at both temporal resolutions (data from 17 sessions, seven mice).
 
 The same reasoning applies to the next layers. However, since CNN acts to transform an LFP ‘object’ into a probability value, the spatial and temporal features of SWR events become increasingly abstract. Notwithstanding, their main features are still recognized. For example, L4K1 and L4K2 outputs likely reflected the spatiotemporal organization of the input SWR event, in particular the slower components and uneven distribution of ripples (see Figure 1D and Figure 6—figure supplement 1A).
 
@@ -103,9 +119,17 @@ We labeled each LFP event in UMAP coordinates as True Positive (detected ground 
 
 Altogether, these analyses permitted us to understand how the CNN operates to detect SWR events. Our study suggests that a CNN relying on feature-based detection allows to capture a large diversity of SWR events. The new method, in combination with community tagging efforts and optimized filters, could potentially facilitate discovery and interpretation of the complex neurophysiological processes underlying SWR.
 
-## Leveraging CNN capabilities to interpret SWR dynamics
+### Leveraging CNN capabilities to interpret SWR dynamics
 
 Equipped with this tool we sought to understand the dynamics of SWR across the entire hippocampus. To this purpose, we obtained Neuropixels recordings from different rostro-caudal penetrations in head-fixed mice (Figure 7A; n=4 sessions, four mice; Supplementary file 1). Detailed post hoc histological analysis validated the probe tracks passing through a diversity of brain regions, including several thalamic nuclei as well as the dorsal and ventral hippocampus (Figure 7B, Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig7-v2.jpg)
+
+**Figure 7.:** (A) Neuropixels probes were used to obtain ultra-dense local field potential (LFP) recordings across the entire hippocampus. Offline detection was applied over continuous simulated penetrations (8-channels). Detection performance is evaluated across brain regions and hippocampal layers using the CNN trained with a different electrode type. See Methods for the list of acronyms. (B) Histological validation of one of the experiments shown in A (red arrowhead). Scale bar corresponds to 350 µm. (C) Performance of CNN32 across hippocampal layers (96 dorsal simulated penetrations, four mice). The results of an independent one-way ANOVA for P, R, and F1 is shown separately. ***, p<0.001. (D) Dorsoventral differences of CNN32 performance across layers. P, R, and F1 values from dorsal and ventral detection were compared pairwise (55 dorsal and 55 ventral simulated penetrations, four mice). *, p<0.05; **, p<0.01; ***, p<0.001. (E) Example of an SWR detected across several layers (black arrowhead). Note ripple oscillations all along the SR and SLM. A SWR event which was only detected at SP dorsal and ventral is shown at right (open arrowhead). (F) Mean LFP and current-source density (CSD) signals from the events detected at different layers of the dorsal hippocampus of mouse Npx-Thy160620 (top). Bottom plots show the SWR-triggered average responses of pyramidal cells and interneurons. Cells are sorted by their timing during SWR events detected at SP. (G) Quantification of the magnitude of the SR sink and SLM source for events detected at SO, SR, and SLM, as compared against SP detection. One-way ANOVA SR CSD: F(2)=9.13, p=0.0004; SLM CSD: F(2)=9.64, p=0.0003; **, p<0.01; ***, p<0.001. (H) Quantification of changes of firing rate and timing of pyramidal cells during SWR detected at different layers. Firing rate: F(3) = 28.68, p<0.0001; *, p<0.05; ***, p<0.001. Timing: F(2) = 10.18, p<0.0001; ***, p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77772/elife-77772-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Detailed post hoc histological analysis with SHARP-Track (Shamash et al., 2018) allowed identifying a diversity of brain regions pierced by the Neuropixels probe. The different brain regions were annotated and confronted with the Paxinos atlas. (B) Distribution of True Positive events detected by CNN32 across layers and regions of the four different mice. (C) Mean local field potential (LFP) of True Positive events detected by CNN32 at SO, SR, and SLM of the examples shown in Figure 7F. Note that sharp waves and ripples are differentially visible at these layers. (D) Detection performance of the Butterworth filter across hippocampal layers for mouse Npx-Cal280720. See the same session analyzed by CNN32 at the rightmost plot of Figure 7A. (E) Detection performance of RippleNET across hippocampal layers for mouse Npx-Cal280720. Same session as in D and at the rightmost plot of Figure 7A. (F) Quantification of changes of the firing rate and timing of putative GABAergic interneurons during SWR detected at different layers. Firing rate: F(3) = 3.89, p=0.011; *, p<0.05. Timing: not significant.
 
 By exploiting the ultra-dense configuration of Neuropixels, we simulated consecutive penetrations covering the entire dorsoventral axis (Figure 7A). We run offline detection using eight neighboring Neuropixels channels as the inputs, then move four channels downward/upward and repeat detection again, up to the end of the probe. We used the original CNN32 without retraining, the Butterworth filter and RippleNET, to evaluate detection performance against the ground truth.
 
@@ -135,13 +159,13 @@ Understanding how the brain encodes for memory is challenging. Recent data sugge
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All protocols and procedures were performed according to the Spanish legislation (RD 1201/2005 and L.32/2007) and the European Communities Council Directive 2003 (2003/65/CE). Experiments were approved by the Ethics Committee of the Instituto Cajal and the Spanish Research Council.
 
 In this work, we used different mouse lines aimed to target different cell-type-specific populations for optogenetic and imaging experiments. Experiments included in this paper follow the principle of reduction, to minimize the number of animals used and this is the reason why we obtained data from different mouse lines. Animals and sessions used are summarized in Supplementary file 1. Animals were maintained in a 12 hr light-dark cycle (7 a.m. to 7 p.m.) with access to food and drink ad libitum.
 
-## Head-fixed preparation
+### Head-fixed preparation
 
 Mice were implanted with fixation bars under isoflurane (1.5–2%; 30% oxygen) anesthesia. Bars and ground/reference screws (over the cerebellum) were fixed with light-curing acrylic resins (OptiBond and UNIFAST LC). After surgery, mice were treated with buprenorphine during 2 days. For optogenetic experiments, mice from different promotor-specific Cre lines were previously injected with AAV5-DIO-EF1a-hChR2-EYFP (1 µl; titer 4.5 × 1012 vg/ml; provided by UNC Vector core, Deisseroth lab) targeting the dorsal CA1 region (−1.9  mm AP; 1.25 mm ML and 1 mm depth). Transgenic Thy1-ChR2-YFP and Thy1-GCaMP7 mice were directly implanted with fixation bars.
 
@@ -149,7 +173,7 @@ Two days after surgery, mice were habituated to head-fixed conditions (10–14 d
 
 Once habituated, mice were anesthetized with isoflurane and a craniotomy was practiced for electrophysiological recordings (antero-posterior: −3.9 to −6 mm from Bregma; medio-lateral: 2–5 mm). The craniotomy was sealed with Kwik-Cast silicone elastomer and mice returned to their home cage. Recording sessions started the day after craniotomy.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 LFP recordings were obtained with integrated µLED optoelectrodes (32 channels, 4 shanks of 8-channels, and 3 µLED each) originally provided by Euisik Yoon under the NSF-funded NeuroNex project and later purchased from NeuroLight Technologies, LLC, N1-A0-036/18 and Plexon. Wideband (1 Hz–5 KHz) LFP signals were recorded at 30 KHz sampling rate with an RHD2000 Intan USB Board running under OE. Optoelectrode recordings targeted the dorsal CA1 region, using characteristic features such as the laminar profile of theta and SWRs, as well as unit activity to infer position within the hippocampus.
 
@@ -159,7 +183,7 @@ After completing experiments, mice were perfused with 4% paraformaldehyde and 15
 
 Sections from Neuropixels recording were analyzed with SHARP-Track, a tool to localize regions going through electrode tracks (Shamash et al., 2018) (https://github.com/petersaj/AP_histology Peters, 2022). Acronyms in Figure 7 correspond to the following: corpus callosum (cc); primary visual cortex (V1); stratum oriens (SO); stratum piramidale (SP); stratum radiatum (SR); stratum lacunosum moleculare (SLM); molecular layer dentate gyrus (ML); granular layer dentate gyrus (GCL); hilus (HIL); hippocampal fissure (fiss); basolateral amygdala (BLA); amygdalopiriform transition area (APir); lateral posterior medial rostral thalamus (LPMR); posterior thalamus (Po); ventro posterior medial thalamus (VPM); ventro posterior lateral thalamus (VPL); lemniscus (Lemn); ventro medial thalamus (VM); zona incerta, dorsal part (ZID); zona incerta, ventral part (ZIV).
 
-## Neural network specifications
+### Neural network specifications
 
 We used Python 3.7.9 with libraries Numpy 1.18.5, Scipy 1.5.4, Pandas 1.1.4, and H5Py 2.10.0 for programming different routines. To build, train, and test the network, we use the Tensorflow 2.3.1 library, with its built-in Keras 2.4.0 application programming interface (API). Training and offline validation of the CNN was performed over the Artemisa high-performance computing infrastructure (https://artemisa.ific.uv.es/web/content/nvidia-tesla-volta-v100-sxm2). It consisted in 23 machines equipped with four NVIDIA Volta V100 GPUs. Analyses were conducted on personal computers (Intel Xeon E3 v5 processor with 64 GB RAM and Ubuntu v.20.04).
 
@@ -173,11 +197,11 @@ The number of kernels and kernel regularizers were selected after performing an 
 
 We selected our CNN32 as that with the lower and more stable training evolution (see below) from the 10-best networks in the initial parameter search (out of 107; Supplementary file 1B). CNN32+LSTM networks exhibited similar performance, but took substantially more time for training. A more thorough parametric search was conducted over a larger set of parameters (initial learning rate, number of kernels factor, batch size, optimizer, optimizer epsilon, regularizer, regularizer value, and decay; Figure 1—figure supplement 1E) for both types of architectures. The initially selected CNN32 was among the 30-best networks of the extended parameter search, also exhibiting fast training and high loss evolution stability (out of 781). Based on parametric searches, we chose the Adam algorithm as the optimizer (Kingma and Ba, 2015) with an initial learning rate of 0.001, beta_1=0.9, beta_2=0.999, and epsilon = 1e-07. Batch size was set at 16 and the number of kernels for Convolutional layers 1, 4, 7, 10, 13, 16, and 19 was set at 4, 2, 8, 4, 16, 8, and 32, respectively. A L2 regularization method (Tikhonov and Arsenin, 1977) with a 0.0005 value was employed to avoid overfitting. No additional learning rate decay was used.
 
-## Ground truth and data annotation
+### Ground truth and data annotation
 
 A MATLAB R2019b tool was designed to annotate and validate data by an expert electrophysiologist (original expert). All data was visually inspected and SWR events annotated. An important decision we made was to manually annotate the start and the end of SWR events so that the network could learn anticipating events in advance. The start of the event was defined near the first ripple or the sharp-wave onset. The end of the event was defined at the latest ripple or when sharp-wave resumed. While there was some level of ambiguity on these definitions, we opted for including these marks in order to facilitate transition to ground truth detection. An additional expert (new expert) tagged SWR independently using a subset of sessions from the offline validation and online pool, to allow for comparisons between experts in the same lab.
 
-## Data preparation
+### Data preparation
 
 Datasets used for training and development of the CNN were created by loading a number of experimental sessions and storing them in two different three-dimensional matrices, X and Y.
 
@@ -187,9 +211,13 @@ Matrix Y contained the annotated labels for each temporal window (32 or 12.8 ms)
 
 Finally, the whole dataset (both X and Y matrices) was separated into the training set, used to fit the model, and the development set, used to evaluate the performance of the trained model with different data than those used for training while still tuning the network hyper-parameters. Train set took 70% of the data and development set the remaining 30%.
 
-## CNN training, development, and testing
+### CNN training, development, and testing
 
-Two sessions from two different mice were used as the training set (Supplementary file 1). Training was run for 3000 epochs using the binary cross-entropy as loss function:Hp(q)=−1N∑i=1Nyi⋅log(p(yi))+(1−yi)⋅log(1−p(yi))
+Two sessions from two different mice were used as the training set (Supplementary file 1). Training was run for 3000 epochs using the binary cross-entropy as loss function:
+
+$$
+H_{p}(q)=−\frac{1}{N}\sumi=1Ny_{i}⋅log(p(y_{i}))+(1−y_{i})⋅log(1−p(y_{i}))
+$$
 
 where N is the number of windows, yi is the label of window I, and p(yi) is the probability predicted for window i.
 
@@ -197,15 +225,31 @@ In order to evaluate the network performance, two different datasets were used: 
 
 To detect SWR event, we set a probability threshold to identify windows with positive and negative predictions. Accordingly, predictions were classified in four categories: True Positive (TP) when the prediction was positive and the ground truth window did contain an SWR event; False Positive (FP) when the prediction was positive in a window that did not contain any SWR; False Negative (FN) when the prediction is negative but the window contained a SWR; and True Negative (TN) when the prediction was negative and the window did not contain any SWR event.
 
-Intersection over Union (IOU) methodology was employed to classify predictions into those four categories. It was calculated by dividing the intersection (overlapping) of two windows by the union of them:IoU=window1∩window2window1∪window2
+Intersection over Union (IOU) methodology was employed to classify predictions into those four categories. It was calculated by dividing the intersection (overlapping) of two windows by the union of them:
+
+$$
+IoU=\frac{window_{1}∩window_{2}}{window_{1}∪window_{2}}
+$$
 
 Two windows were considered to match if their IOU was equal to or greater than 0.1. If a positive prediction had a match with any window containing a ripple it was considered a TP, or it was classified as FP otherwise. All true events that did not have any matching positive prediction were considered FN. Negative predictions with no matching true events windows were TN.
 
-With predicted and true events classified into those four categories there are three measures than can be used to evaluate the performance of the model. Precision (P), which was computed as the total number of TPs divided by TPs and FPs, represents the percentage of predictions that were correct.Precision=TPTP+FP
+With predicted and true events classified into those four categories there are three measures than can be used to evaluate the performance of the model. Precision (P), which was computed as the total number of TPs divided by TPs and FPs, represents the percentage of predictions that were correct.
 
-Recall (R), which was calculated as TPs divided by TPs and FNs, represents that percentage of true events that were correctly predicted.Recall=TPTP+FN
+$$
+Precision=\frac{TP}{TP+FP}
+$$
 
-Finally, the F1 score, calculated as the harmonic mean of Precision and Recall, represents the network performance.F1=2*Precision*RecallPrecision+Recall
+Recall (R), which was calculated as TPs divided by TPs and FNs, represents that percentage of true events that were correctly predicted.
+
+$$
+Recall=\frac{TP}{TP+FN}
+$$
+
+Finally, the F1 score, calculated as the harmonic mean of Precision and Recall, represents the network performance.
+
+$$
+F1=\frac{2*Precision*Recall}{Precision+Recall}
+$$
 
 As mentioned before, a prediction was considered positive when its probability surpassed a specified threshold. During offline detection, a first threshold was used to indicate the potential onset of the SWR event, followed by a second confirmatory higher threshold, which identifies the event itself. In order to select the best thresholds for offline validation, all combinations were compared and the one that yielded the best F1 score was chosen. Possible values for the first threshold were 0.80, 0.75, 0.70, 0.65, 0.60, 0.55, 0.50, 0.45, 0.40, 0.35, 0.30, 0.25, 0.20, 0.15, and 0.10, while for the second threshold were 0.80, 0.70, 0.60, 0.50, 0.40, 0.30, 0.20, and 0.10. Note that only the higher threshold is the one that defines detection, which is reported in figures. For online detection, only one threshold was used and it was adjusted manually at the beginning of the experiment based on the expert criteria.
 
@@ -213,17 +257,21 @@ To estimate delay between prediction and SWR events, the temporal relation betwe
 
 The trained model is accessible at the Github repository for both Python: https://github.com/PridaLab/cnn-ripple, (copy archived at swh:1:rev:9dcc5b6a8267b89eb86a2813dbbcb74a621a701b; Amaducci and Navas-Olive, 2021) and MATLAB: https://github.com/PridaLab/cnn-matlab (copy archived at swh:1:rev:060b2ff6e4b6c5eacb9799addd5123ad06eaaf33; Navas-Olive and Esparza, 2022). Code visualization and detection is shown in an interactive notebook https://colab.research.google.com/github/PridaLab/cnn-ripple/blob/main/src/notebooks/cnn-example.ipynb.
 
-## Offline detection of SWR events with Butterworth filters
+### Offline detection of SWR events with Butterworth filters
 
 Standard ripple detection tools are based on spectral filters. In order to compare online and offline performance, we adopted the OE bandpass (100–300 Hz passband) second-order Butterworth filter as the gold standard. We confirmed that the choosen filter parameters provided optimal performance when tested with the same training set used for the CNN. Offline filter detection was computed in MATLAB R2019b, using the Butterworth filter (100–300 Hz passband) and a non-casual filter filtfilt to avoid phase lags. In order to compute the envelope, the filtered signal was amplified twice, filtered by a fourth-order Savitzky-Golay filter, and then smoothed by two consecutive movmean sliding windows (2.3 and 6.7 ms). A detection had to fulfill two conditions: the envelope had to surpass a first threshold, which will define the ripple beginning and end, and a second threshold to be considered a detection. Detections closer than 15 ms were merged. Performance of ripple detection methods is very sensitive to the chosen threshold. To look for the fairest comparison, we made predictions for all possible combinations of the first threshold being 1, 1.5, 2, 2.5 times the envelope standard deviation, and the second threshold being 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10 times the envelope standard deviation (giving a total of 60 threshold combinations). We then chose the one that scored the maximum F1. This was done separately for each session.
 
 Online detections were defined whenever the filtered signal was above a single threshold (see next section). To exclude for artifacts and to cope with detection standards (Fernández-Ruiz et al., 2019), an additional non-ripple channel was used to veto high-frequency noise detections.
 
-## Characterization of SWRs
+### Characterization of SWRs
 
-Ripple properties were computed using a 100 ms window around the center of the event of the pyramidal channel of the raw LFP. Preferred frequency was computed first by calculating the power spectrum of the 100 ms interval using the enlarged bandpass filter 70 and 400 Hz, and then looking for the frequency of the maximum power. In order to account for the exponential power decay in higher frequencies, we subtracted a fitted exponential curve (‘fitnlm’ from MATLAB toolbox) before looking for the preferred frequency. The <100 Hz contribution was computed as the sum of the power values for all frequencies lower than 100 Hz normalized by the sum of all power values for all frequencies (of note, no subtraction was applied to this power spectrum). The entropy was computed using a normalized power spectrum (divided by the sum of all power values along all frequencies) as:Entropy=-∑Powerf⋅log2Powerf
+Ripple properties were computed using a 100 ms window around the center of the event of the pyramidal channel of the raw LFP. Preferred frequency was computed first by calculating the power spectrum of the 100 ms interval using the enlarged bandpass filter 70 and 400 Hz, and then looking for the frequency of the maximum power. In order to account for the exponential power decay in higher frequencies, we subtracted a fitted exponential curve (‘fitnlm’ from MATLAB toolbox) before looking for the preferred frequency. The <100 Hz contribution was computed as the sum of the power values for all frequencies lower than 100 Hz normalized by the sum of all power values for all frequencies (of note, no subtraction was applied to this power spectrum). The entropy was computed using a normalized power spectrum (divided by the sum of all power values along all frequencies) as:
 
-## OE custom plugins for online detection
+$$
+Entropy=-\sumPowerf⋅log_{2}Powerf
+$$
+
+### OE custom plugins for online detection
 
 Two custom plugins were developed using OE GUI 0.4.6 software in a personal computer. The first plugin was designed to detect when a signal crossed a determined amplitude threshold, defined as the signal standard deviation multiplied by some number. It was used in combination with the Bandpass Filter plugin, which implements a Butterworth filter, so the input for the crossing detector was a filtered signal. In order to avoid artifacts, we use a second input channel from a separate region defined by the experimenter. Events detected in both channels were discarded.
 
@@ -231,15 +279,15 @@ The second plugin was developed to operate the CNN and it used the Tensorflow 2.
 
 Both plugins normalized the input data using z-score normalization. They require a short calibration time (about 1 min) to calculate the mean and standard deviation of the signals. The user could establish the detection thresholds and when an event is found a signal is sent through a selected output channel. For OE simulated experiments we used the same setup but the data was read from a file instead of streamed directly from the experiment. Events in simulated experiments were detected similarly as real-time experiments. Detection plugin: https://github.com/PridaLab/CNNRippleDetectorOEPlugin (copy archived at swh:1:rev:52b182d1fba732a0bc3ad69ce9453c6fe96ae190; Esparza, 2022).
 
-## Closed-loop optogenetic experiments
+### Closed-loop optogenetic experiments
 
 For closed-loop experiments, the output channel from the OE plugin was fed into an Arduino board (Nano ATmega328) using an USB 3.0 connection. Optogenetic stimulation was performed with integrated µLED optoelectrodes using the OSC1Lite driver from NeuroLight Technologies controlled by the Arduino. Microwatt blue light stimulation at 10–20 µW was used to activate cell-type-specific ChR2. Specificity of viral expression and localization of probe tracks were histologically assessed after experiments.
 
-## Computing the kernel saliency maps
+### Computing the kernel saliency maps
 
 During training, kernels weights are updated so each of them specializes in detecting a particular feature of SWR input data. In order to interpret these features, we adapted a methodology used in two-dimensional CNNs for image processing (Simonyan et al., 2013). First, we created an input 8×40 LFP signal with random values (standard normal distribution, with 0 mean and 0.01 standard deviation). Then, for each kernel we updated this input signal applying a stochastic gradient optimizer (tf.keras.optimizers.SGD) with a learning rate of 0.1, momentum 0.1, and a loss function equal to minus the normalized KA that produced such input (therefore making it gradient ascent). We repeated this optimization process until the mean squared error between the previous input and the optimized input was less than 10–9, or after 2000 iterations, whatever came first. The resulting input signal would be one that the chosen kernel is maximally responsive to. Code example for this process applied to the ResNet50V2 model of the ImageNet dataset (https://www.image-net.org/) can be found at the Keras documentation: https://keras.io/examples/vision/visualizing_what_convnets_learn/.
 
-## Uniform Manifold Approximation and Projection
+### Uniform Manifold Approximation and Projection
 
 UMAP is a dimensional reduction technique commonly used for visualization of multi-dimensional data in a two- or three-dimensional embedding (McInnes et al., 2018). The embedding is found by searching a low dimensional projection with the closest equivalent fuzzy topological structure to that of the hyper-dimensional input data. We run UMAP version 0.5.1 (https://umap-learn.readthedocs.io/en/latest/) in Python 3.7 Anaconda.
 
@@ -247,17 +295,17 @@ We applied UMAP to decode CNN operation using the network feature maps in respon
 
 We computed the UMAP embedding of the feature map of the CNN using 7491 SWR events and 7491 random events and projected them in a color scale reflecting the different labels. Two-dimensional UMAP embeddings were evaluated for different parameter combinations of the number of neighbors and the minimal distance. After noticing no major differences, we choose their default values.
 
-## Pattern matching
+### Pattern matching
 
 Pattern matching between saliency maps from the different kernels and the LFP windows was computed using matchTemplate from CV2 package (version 4.5.1), OpenCV library for python, with the TM_CCORR template matching operation. It slides a template (saliency map) along the whole signal (LFP window) and outputs a measure on their similarity for each slide. LFP windows provided were 100 ms 8-channel (8×125) z-scored windows around all true positive events, same number of true negative events, and all true positive and false positive events for both the training and validations sets. Windows were centered on the LFP minimum of the pyramidal channel closest to the maximum of the SWR envelope within a 10 ms window (envelope computed as described above).
 
-## Simulated penetrations along Neuropixels probe
+### Simulated penetrations along Neuropixels probe
 
 Simulated penetrations were obtained choosing Neuropixel electrodes with a relative distance similar to the μLED optoelectrode probe. To this purpose, we chose Neuropixel external electrodes (64 μm horizontal separation versus 70 μm for the μLED probe), alternating left and right for each row, so the vertical distance was 20 μm (same as in μLED probes). Therefore, a simulated penetration always consisted of eight neighboring electrodes (e.g. [1 4 5 8 9 12 13 16]). To evaluate changes across layers and regions, the simulated penetration was moved all along the Neuropixels probe in 93 steps (downward/upward) thus providing a continuous mapping of LFP signals. For example, the following penetration sequence spanned along the brain: [1 4 5 8 9 12 13 16], [5 8 9 12 13 16 17 20], [9 12 13 16 17 20 21 24], and so on.
 
 For CSD analysis we proceeded similarly, but choosing LFP channels every 100 µm to mimic a 16-channel silicon probe. CSD signals were calculated from the second spatial derivative. Smoothing was applied to CSD signals for visualization purposes only. Tissue conductivity was considered isotropic across layers.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical analysis was performed with Python 3.8.5 and/or MATLAB R2019b. No statistical method was used to predetermine sample sizes, which were similar to those reported elsewhere. Normality and homoscedasticity were confirmed with the Kolmogorov-Smirnov and Levene’s tests, respectively. The number of replications is detailed in the text and figures.
 

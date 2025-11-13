@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Department of Pharmacology, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/00tw3jy02 MRC Laboratory of Molecular Biology Cambridge United Kingdom
+1. Department of Pharmacology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. MRC Laboratory of Molecular Biology Cambridge United Kingdom ([ROR:00tw3jy02](https://ror.org/00tw3jy02))
 
 † Corresponding author
 
@@ -33,11 +33,19 @@ We evaluated this approach in primary mouse fibroblast-like synoviocytes (FLS), 
 
 ## Results
 
-## A microplate assay for longitudinal monitoring of subgenomic- and IRES-driven transgene expression and cell number
+### A microplate assay for longitudinal monitoring of subgenomic- and IRES-driven transgene expression and cell number
 
 Because saRNA can shut down cap-dependent translation and induce cytotoxicity, we developed a microplate-based assay to simultaneously monitor subgenomic (cap-dependent) and IRES-mediated (cap-independent) transgene expression, together with cell number. Detailed assay development—including correction for spectral overlap and validation of BioTracker NIR680 as a cell number proxy—is provided in Appendix 1. To distinguish between translation initiation mechanisms, we designed dual-fluorescence saRNA reporter constructs (Figure 1a): mScarlet3 was expressed from the subgenomic RNA via cap-dependent initiation, while EGFP was expressed from an encephalomyocarditis virus (EMCV) IRES via cap-independent initiation. This assay permits repeated, non-destructive measurement of saRNA-driven transgene expression and cell number in primary mouse FLS, enabling longitudinal analysis of the effects of embedding inhibitors of innate immune pathways within saRNA.
 
-## Design of saRNA constructs for inhibiting multiple dsRNA-sensing pathways
+![Figure 1.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of saRNA constructs co-expressing fluorescent reporters and dsRNA-sensing pathway inhibitors. nSP1–4 encodes the saRNA replicase. mScarlet3 indicates cap-dependent transgene expression and is expressed from subgenomic RNA (angled arrow denotes subgenomic promoter). EGFP indicates cap-independent transgene expression and is expressed from an IRES. A second IRES expresses varying levels of dsRNA-sensing pathway inhibition: ‘Conventional saRNA’ expresses moxBFP (control). ‘E3’ expresses vaccinia virus E3 (dsRNA-binding protein). ‘E3-NSs-L*’ expresses E3 plus Toscana virus NSs (ubiquitin ligase targeting PKR [protein kinase R]) and Theiler’s virus L* (RNase L inhibitor). saRNA was transfected into mouse primary fibroblast-like synoviocytes (FLS), labeled with BioTracker to indicate cell number. (b) Representative composite images of microplate wells showing EGFP (green) and mScarlet3 (red). (c) Representative images of microplate wells showing BioTracker. (d) Longitudinal quantification of EGFP (n=11). E3 provided the highest expression, while E3-NSs-L* expressed at intermediate levels. (e) Longitudinal quantification of mScarlet3 (n=11). E3 provided the highest expression, while E3-NSs-L* expressed at intermediate levels. (f) Longitudinal quantification of BioTracker (n=11). Conventional saRNA led to immediate and long-term reductions in signal. E3 initially maintained signal, but it gradually decreased over time. E3-NSs-L* preserved signal throughout the time course. For panels (b–c): Scale bar = 5 mm. For panels (d–f): Data are normalized to starting cell number (pre-transfection BioTracker signal). Statistical significance relative to mock transfection was assessed using two-way repeated-measures (RM) ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Data are presented as mean ± standard error of the mean (SEM). The mock transfection control data is also presented in Figure 5c–e.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Area under the curve (AUC) analysis of BioTracker data shown in Figure 1f, integrating effects over 3 weeks (n=11). Signal preservation increased stepwise with greater dsRNA-sensing pathway inhibition. Statistical analysis was performed on AUC values using one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test to compare all groups. Mock transfection data is also presented in Figure 5—figure supplement 1a. (b) CellTag, a cell number normalization dye, quantified day 2 post-transfection (n=29). Signal preservation increased stepwise with greater dsRNA-sensing pathway inhibition. Data were normalized to mock transfection. Statistical analysis was performed using one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test to compare all groups. Data in this panel were pooled from in-cell western assays, incorporating data presented in Figure 3, Figure 3—figure supplement 1c, Figure 6, and additional data not shown elsewhere. (c) Calcein AM, a viability dye, quantified one day after mock or conventional saRNA transfection, with or without the replicase inhibitor ML336 (n=4). Conventional saRNA reduced cell viability, an effect prevented by ML336. Data were normalized to pre-transfection levels. Statistical analysis was performed using two-way RM ANOVA with Greenhouse-Geisser correction, followed by Dunnett’s multiple comparisons test relative to the mock-transfected, vehicle-treated group. For all statistical reporting, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Data are presented as mean ± SEM.
+
+### Design of saRNA constructs for inhibiting multiple dsRNA-sensing pathways
 
 To attenuate saRNA-induced innate immune responses, we designed constructs that inhibit dsRNA-sensing pathways. Cells detect cytosolic dsRNA through several pathways, including RIG-I (Rehwinkel and Gack, 2020), melanoma differentiation-associated protein 5 (MDA-5) (Dias Junior et al., 2019), protein kinase R (PKR) (Gal-Ben-Ari et al., 2018), and oligoadenylate synthase (OAS)/RNase L pathways (Silverman, 2007). To broadly inhibit these pathways, we designed an saRNA construct, referred to as ‘E3’, that co-expresses the vaccinia virus E3 protein (Figure 1a). E3 protein is a pleiotropic inhibitor that binds and sequesters dsRNA, effectively blocking multiple dsRNA-sensing pathways (Szczerba et al., 2022).
 
@@ -47,17 +55,17 @@ Because translation shutdown is one of the major cellular responses to saRNA rep
 
 As a control, we designed a conventional saRNA construct that expresses a blue fluorescent protein (moxBFP) as a visual marker of IRES functionality in place of inhibitors of dsRNA-sensing pathways. Importantly, moxBFP expression did not overlap spectrally with the EGFP or mScarlet3 channels (Appendix 1—figure 3b).
 
-## Moderate dsRNA-sensing pathway inhibition enables high transgene expression at the cost of cell loss, while strong inhibition preserves cell number at lower expression levels
+### Moderate dsRNA-sensing pathway inhibition enables high transgene expression at the cost of cell loss, while strong inhibition preserves cell number at lower expression levels
 
 Following transfection of saRNA constructs, we monitored BioTracker, EGFP, and mScarlet3 fluorescence over 3 weeks (Figure 1b and c). Inhibiting dsRNA-sensing pathways with viral proteins significantly enhanced saRNA transgene expression (Figure 1d and e). Interestingly, the E3 construct produced the highest levels of EGFP and mScarlet3 expression, surpassing both conventional saRNA and the E3-NSs-L* construct. Conventional saRNA yielded low levels of transgene expression, while E3-NSs-L* showed intermediate expression.
 
 Achieving durable transgene expression requires not only high expression but also preservation of cell viability, as constructs that induce cell death undermine this goal. Transfection of FLS with conventional saRNA caused both immediate and long-term reductions in cell number, as indicated by BioTracker (Figure 1f). While the E3 construct initially maintained cell number, it gradually diminished over time. In contrast, the E3-NSs-L* construct provided sustained protection against this decline. A time-integrated analysis of these data (Figure 1—figure supplement 1a) and CellTag-based normalization assays on day 2 post-transfection (Figure 1—figure supplement 1b) further supported these results, revealing a stepwise increase in protection against cell loss with greater dsRNA-sensing pathway inhibition across the three constructs. Together, these results indicate that while the E3 construct enhances saRNA transgene expression, it also induces cell loss, underscoring the advantage of E3-NSs-L* for applications requiring sustained, non-cytotoxic gene expression.
 
-## Inhibiting saRNA replication mitigates saRNA-induced cytotoxicity
+### Inhibiting saRNA replication mitigates saRNA-induced cytotoxicity
 
 In vitro transcription of saRNA often generates dsRNA byproducts, which can activate innate immune pathways and contribute to cytotoxicity (Zhong et al., 2021; Baiersdörfer et al., 2019). It remains unclear whether saRNA-induced cell loss arises primarily from these byproducts or from cytosolic dsRNA generated during saRNA replication. To investigate this, FLS were mock transfected or transfected with conventional saRNA in the presence or absence of 10 μM ML336, a potent inhibitor of the Venezuelan equine encephalitis virus (VEEV) RdRp that mediates self-amplification (Chung et al., 2010). Without ML336, conventional saRNA-transfected cultures exhibited reduced viability as measured by calcein AM—a viability dye that live cells convert into a fluorescent signal (Bratosin et al., 2005). In contrast, blocking saRNA replication with ML336 restored cell viability to levels comparable to mock transfection (Figure 1—figure supplement 1c). These findings suggest that saRNA-induced cell loss is primarily driven by dsRNA generated during replication, rather than by dsRNA byproducts formed during in vitro transcription.
 
-## Inhibiting dsRNA-sensing pathways reduces saRNA-induced cytotoxicity and improves cell viability
+### Inhibiting dsRNA-sensing pathways reduces saRNA-induced cytotoxicity and improves cell viability
 
 saRNA is known to induce programmed cell death (Frolov and Schlesinger, 1994; Li et al., 2020; Mastrangelo et al., 2000), which often leads to cell detachment (Costigan et al., 2023). Reductions in BioTracker signal are likely indicative of this process. However, since BioTracker is a lipophilic membrane dye, the reduction in signal may not necessarily correlate with cell viability or cytotoxicity. In addition to long-term cell tracking, lipophilic membrane dyes like BioTracker are often used to stain extracellular vesicles, which bud off from the plasma membrane (Liu et al., 2022). During cellular stress, increased production of extracellular vesicles (Chiaradia et al., 2021) could deplete the membrane-associated BioTracker dye from cells, resulting in a lower detectable signal. Therefore, the observed reduction in BioTracker signal could reflect enhanced extracellular vesicle production rather than cell death.
 
@@ -65,19 +73,27 @@ To provide more definitive evidence that inhibiting dsRNA-sensing pathways prote
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig2-v1.jpg)
 
-**Figure 2.:** (a) Representative cropped microplate well images of Annexin V-CF800, indicating phosphatidylserine exposure or loss of membrane integrity. FLS were transfected with saRNA or treated with staurosporine, an apoptosis inducer. (b) Representative cropped microplate well images of calcein AM. Cultures are the same as in panel (a). (c) Quantification of Annexin V positive area, determined using Li thresholding and normalized to average mock transfection values (n=6). Annexin V positive area was increased by staurosporine, conventional saRNA, and E3—but not by E3-NSs-L*. Statistical significance relative to mock transfection was determined using two-way RM ANOVA with Bonferroni’s multiple comparisons test. Data are presented as mean ± SEM. (d) Quantification of calcein AM (n=6). Conventional saRNA and E3 reduced signal, an effect not observed with E3-NSs-L*. Data are normalized to starting cell number (pre-transfection BioTracker signal). Statistical significance was determined by one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test comparing all groups. All groups differed significantly from staurosporine (significance indicators omitted for clarity). Connecting lines indicate responses from the same biological replicate. For panels (a–b): Scale bar = 1.5 mm. For panels (c–d): *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (a) Representative cropped microplate well images of Annexin V-CF800, indicating phosphatidylserine exposure or loss of membrane integrity. FLS were transfected with saRNA or treated with staurosporine, an apoptosis inducer. (b) Representative cropped microplate well images of calcein AM. Cultures are the same as in panel (a). (c) Quantification of Annexin V positive area, determined using Li thresholding and normalized to average mock transfection values (n=6). Annexin V positive area was increased by staurosporine, conventional saRNA, and E3—but not by E3-NSs-L*. Statistical significance relative to mock transfection was determined using two-way RM ANOVA with Bonferroni’s multiple comparisons test. Data are presented as mean ± SEM. (d) Quantification of calcein AM (n=6). Conventional saRNA and E3 reduced signal, an effect not observed with E3-NSs-L*. Data are normalized to starting cell number (pre-transfection BioTracker signal). Statistical significance was determined by one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test comparing all groups. All groups differed significantly from staurosporine (significance indicators omitted for clarity). Connecting lines indicate responses from the same biological replicate. For panels (a–b): Scale bar = 1.5 mm. For panels (c–d): *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001.
 
 The apoptosis-inducing agent staurosporine caused a transient increase in annexin V staining that decreased after the first day (Figure 2c), along with a marked reduction in calcein AM fluorescence compared to mock transfection (Figure 2d), consistent with extracellular phosphatidylserine translocation and/or increased membrane permeability, followed by cell detachment. Similarly, conventional saRNA induced a temporary increase in annexin V staining during the first 2 days post-transfection (Figure 2c) accompanied by reduced calcein AM staining (Figure 2d). Co-expression of E3 prevented the initial increase in annexin V staining but elevated it from day 2 onward and also resulted in significantly reduced calcein AM intensity (Figure 2c and d). In contrast, E3-NSs-L* had no significant effect on annexin V or calcein AM staining compared to mock transfection, supporting the idea that broader inhibition of dsRNA-sensing pathways, achieved by combining E3, NSs, and L*, is more effective than E3 alone in preventing saRNA-induced cell death and preserving cell viability.
 
-## dsRNA-sensing pathway inhibition prevents eIF2α phosphorylation, but fails to affect saRNA-induced reductions in eIF4E phosphorylation levels
+### dsRNA-sensing pathway inhibition prevents eIF2α phosphorylation, but fails to affect saRNA-induced reductions in eIF4E phosphorylation levels
 
 After establishing the effects of moderate and strong inhibition of dsRNA-sensing pathways on cytotoxicity and transgene expression, we next investigated how modulating these pathways influences translational control at the molecular level. Eukaryotic translation initiation factor (eIF)2α is a central regulator of translation initiation; its phosphorylation serves as a cellular stress response to limit cellular cap-dependent protein synthesis (Baird and Wek, 2012). Using in-cell western assays, we found that conventional saRNA increased eIF2α phosphorylation, but both E3 and E3-NSs-L* effectively blocked this phosphorylation (Figure 3a), consistent with previous reports of vaccinia virus E3’s inhibitory effect on eIF2α phosphorylation (Beissert et al., 2017; Xue et al., 2024). Interestingly, E3-NSs-L* also increased total eIF2α levels, an effect not observed with the E3 construct (Figure 3b).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig3-v1.jpg)
+
+**Figure 3.:** (a) Phosphorylated eIF2α levels examined by in-cell western (n=6). Conventional saRNA increased eIF2α phosphorylation, while E3 and E3-NSs-L* did not. Data are normalized to total eIF2α and presented as fold-change relative to mock transfection. (b) Total eIF2α levels examined by in-cell western (n=5). E3-NSs-L* increased total eIF2α. Data are normalized to CellTag and presented as fold-change relative to mock transfection. (c) Phosphorylated eIF4E levels, normalized to total eIF4E, examined by in-cell western (n=6). All constructs reduced eIF4E phosphorylation. (d) Total eIF4E levels, normalized to CellTag, examined by in-cell western (n=6). No significant differences were revealed (F(3,15) = 1.207, p=0.3410). For all panels: Statistical significance was determined by one-way RM ANOVA and Tukey’s multiple comparison test. *p<0.05, **p<0.01, ***p<0.001. The mock transfection control data are also used in Figure 6a–d. Connecting lines indicate responses from the same biological replicate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) PKR levels examined by in-cell western (n=4). E3-NSs-L* inhibits PKR upregulation. Data are normalized to CellTag and presented as fold-change relative to mock transfection. (b) rRNA integrity assessed from total RNA using the RNA Integrity Number (RIN) algorithm (n=5). E3-transfected cells demonstrate lower RIN than E3-NSs-L*–transfected cells. Data are shown as a Gardner-Altman comparison plot, with the mean effect size ± 95% confidence interval (CI) illustrated on the right subpanel. Dotted lines indicate group means. Statistical significance was determined using a paired t-test (p=0.0054). (c) Protein translation rates measured by puromycin incorporation, normalized to CellTag (n=5). Conventional saRNA or E3 reduced protein synthesis rates, an effect not observed with E3-NSs-L*. For panels (a,c): Statistical significance was determined by one-way RM ANOVA with Tukey’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Connecting lines indicate responses from the same biological replicate.
 
 We next examined the impact of saRNA on eIF4E, another key regulator of translation initiation (Mars et al., 2024). Unlike eIF2α phosphorylation—which was inhibited by the E3 and E3-NSs-L* constructs—phosphorylation of eIF4E was reduced by all saRNA constructs (Figure 3c), including those targeting dsRNA-sensing pathways, while total eIF4E levels remained unchanged (Figure 3d). These results indicate that inhibiting dsRNA-sensing pathways does not prevent the saRNA-induced reduction in eIF4E phosphorylation.
 
 Given that PKR phosphorylates eIF2α upon activation by dsRNA (Gorchakov et al., 2004), we next assessed PKR levels following saRNA transfection. Consistent with previous reports (Gong et al., 2024), transfection with conventional saRNA led to increased PKR levels (Figure 3—figure supplement 1a). The E3 construct produced a similar increase, whereas co-expression of E3-NSs-L* mitigated this effect. This finding aligns with the established role of the Toscana virus NSs protein as a ubiquitin ligase that targets PKR for degradation (Kalveram and Ikegami, 2013).
 
-## Host mRNA degradation contributes to enhanced transgene expression under moderate dsRNA-sensing pathway inhibition
+### Host mRNA degradation contributes to enhanced transgene expression under moderate dsRNA-sensing pathway inhibition
 
 The increased transgene expression observed with the E3 construct compared to E3-NSs-L* cannot be attributed to differences in eIF2α or eIF4E-mediated translational control. Phosphorylation levels of both factors were comparable between the two constructs (Figure 3a and c), indicating that the enhanced transgene expression associated with the E3 construct arises from alternative mechanisms.
 
@@ -91,49 +107,73 @@ We further evaluated global protein synthesis using surface sensing of translati
 
 Together, these findings support a model in which RNase L activation by the E3 construct enhances transgene expression through selective depletion of host mRNA, thereby reducing competition for the ribosomal pool. Conversely, E3-NSs-L* suppresses RNase L activity, preserving host mRNA and limiting the availability of ribosomes for transgene expression.
 
-## dsRNA-sensing pathway inhibition suppresses secretion of select antiviral cytokines while enhancing others
+### dsRNA-sensing pathway inhibition suppresses secretion of select antiviral cytokines while enhancing others
 
 For therapeutic applications beyond vaccines and cancer immunotherapy, prolonged transgene expression is ideally achieved without triggering immune activation. While our data show that inhibition of dsRNA-sensing pathways can mitigate key saRNA-induced adverse effects, including cell death, translation shutdown, and host mRNA degradation, it remains unclear whether this strategy also attenuates cytokine secretion. To investigate this, we measured the concentrations of 13 antiviral cytokines in FLS culture supernatants using a multiplex bead-based immunoassay (Figure 4a, Figure 4—figure supplement 1). Transfection with conventional saRNA elicited a broad cytokine response. Inhibition of dsRNA-sensing pathways selectively suppressed production of certain cytokines: Both E3 and E3-NSs-L* significantly reduced interferon (IFN)-α and IFN-β, while E3-NSs-L* significantly reduced tumor necrosis factor (TNF). Notably, the production of some cytokines was elevated: E3 significantly increased macrophage chemoattractant protein-1, and E3-NSs-L* significantly increased granulocyte-macrophage colony-stimulating factor, relative to mock-transfected controls. These findings indicate that even strong inhibition of dsRNA-sensing pathways only partially attenuates the cytokine response to saRNA. Further strategies are needed to reduce saRNA-induced cytokine secretion to levels acceptable for non-immunotherapeutic applications.
 
-## Design of saRNA constructs for inhibiting multiple inflammatory signaling pathways
+![Figure 4.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig4-v1.jpg)
+
+**Figure 4.:** (a) Antiviral cytokine response quantified by multiplex bead-based immunoassay (n=6). Inhibition of dsRNA-sensing pathways reduced some cytokine responses while enhancing others. Cytokine levels were normalized to pre-transfection cell number (indicated by BioTracker), scaled within each biological replicate with the highest value set to 100%, and shown as a heatmap of group means. Plots of unscaled data are presented in Figure 4—figure supplement 1. Statistical significance was assessed on unscaled data by one-way repeated-measures ANOVA for each cytokine. Treatment effect was significant for all cytokines after controlling for multiple comparisons using the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli (FDR = 5%). Tukey’s multiple comparisons test identified between-group differences. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 vs. mock transfection; #p<0.05, ##p<0.01, ###p<0.001 vs. conventional saRNA. The mock transfection control is shared with panel (c). (b) Schematic of saRNA constructs designed for inhibiting inflammatory signaling. dsRNA-sensing pathway inhibitors and EGFP are expressed via an IRES. A second IRES expresses variable amounts of inflammatory signaling pathway inhibition: ‘moxBFP’ expresses moxBFP (control). ‘srIκBα’ expresses srIκBα (inhibiting NF-κB). ‘srIκBα-Smad7-SOCS1’ expresses srIκBα plus Smad7 (inhibiting TGF-β) and SOCS1 (inhibiting IFN). (c) Antiviral cytokine response quantified by multiplex bead-based immunoassay (n=6). srIκBα and srIκBα-Smad7-SOCS1 broadly suppressed cytokine secretion. Data normalization, visualization, and statistical analysis were performed as described in panel (a), but scaling was applied independently to account for the different constructs tested. Plots of unscaled data are presented in Figure 4—figure supplement 2. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 vs. mock transfection; #p<0.05, ##p<0.01, ###p<0.001, ####p<0.0001 vs. moxBFP. The mock transfection control is shared with panel (a). Abbreviations: srIκBα, super repressor inhibitor of κBα; Smad7, mothers against decapentaplegic homolog 7; SOCS1, suppressor of cytokine signaling 1; IFN, interferon; CXCL, C-X-C motif chemokine ligand; TNF, tumor necrosis factor; MCP-1, monocyte chemoattractant protein-1; IL, interleukin; CCL5, chemokine ligand 5; GM-CSF, granulocyte-macrophage colony-stimulating factor.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a–m) Unscaled data underlying the heatmap in Figure 4a, showing individual cytokine responses (n=6). Conventional saRNA triggered robust secretion of antiviral cytokines. E3 and E3-NSs-L*reduced IFN-α and IFN-β. E3-NSs-L* additionally suppressed TNF. However, E3 increased MCP-1, and E3-NSs-L* increased GM-CSF relative to conventional saRNA. Data were normalized to starting cell number (indicated by pre-transfection BioTracker signal). Statistical significance was assessed using one-way repeated-measures ANOVA for each cytokine. Multiple comparisons were controlled using the Benjamini-Krieger-Yekutieli false discovery rate (FDR) procedure (Q=5%). All cytokines passed the discovery threshold. Treatment effects were analyzed using Tukey’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Connecting line indicates responses from the same biological replicate. Mock transfection controls are shared with Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a–m) Unscaled data underlying the heatmap in Figure 4c, showing individual cytokine responses (n=6). moxBFP significantly increased all cytokines relative to mock transfection. Cytokine responses were broadly suppressed by both srIκBα and srIκBα-Smad7-SOCS1. Data were normalized to starting cell number (indicated by pre-transfection BioTracker signal). Statistical significance was assessed using one-way repeated-measures ANOVA for each cytokine. Multiple comparisons were controlled using the Benjamini-Krieger-Yekutieli false discovery rate (FDR) procedure (Q=5%). All cytokines passed the discovery threshold. Treatment effects were analyzed using Tukey’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. Connecting line indicates responses from the same biological replicate. Mock transfection controls are shared with Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Antiviral and proinflammatory transcripts quantified by qPCR (n=3). Conventional saRNA upregulated antiviral and proinflammatory transcripts. E3 and srIκBα-Smad7-SOCS1 elicited less upregulation, with the latter showing the greatest suppression. Statistical comparisons were performed on ΔCT values normalized to 18S rRNA using one-way ANOVA with multiple comparisons controlled using the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutieli (FDR = 5%). All investigated transcripts passed significance thresholds for discovery. Treatment effects were analyzed using Holm-Šídák’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001 vs. mock transfection; #p<0.05 vs. conventional saRNA. Mean –ΔΔCT values normalized to mock transfection are shown on the heatmap (larger values indicate higher expression). (b) EGFP, encoded on all saRNA constructs, quantified by qPCR (n=3). srIκBα-Smad7-SOCS1 demonstrated higher ΔCT values (indicating lower EGFP transcript levels) compared to conventional saRNA or E3. Expression was normalized to 18S rRNA, and data are shown as ΔCT values. Statistical comparisons were performed on ΔCT values using one-way ANOVA with Tukey’s multiple comparisons test. (c) In vitro transcribed saRNA constructs were resolved by denaturing gel electrophoresis. Conventional saRNA (11,181 nt), E3 (11,030 nt), and E3-NSs-L* (12,562 nt) migrated as single bands corresponding to their expected sizes. In contrast, the moxBFP (13,282 nt), srIκBα (13,614 nt), and srIκBα-Smad7-SOCS1 (15,664 nt) constructs each exhibited two bands: one at the expected size and a smaller lower intensity band of consistent size across all three constructs, suggestive of a common truncated transcript. (d) Band intensity plots of moxBFP, srIκBα, and srIκBα-Smad7-SOCS1 derived from the gel shown in panel (c).
+
+### Design of saRNA constructs for inhibiting multiple inflammatory signaling pathways
 
 To further inhibit saRNA-induced cytokine release, we designed additional saRNA constructs that co-express cellular inhibitors of inflammatory signaling. In these constructs, dsRNA pathway inhibitors (vaccinia virus E3, Toscana virus NSs, Theiler’s virus L*) and EGFP were expressed from a single IRES (Figure 4b). A second IRES was then used to express inflammatory signaling inhibitors.
 
 Given that activation of nuclear factor-κB (NF-κB) is a hallmark of viral infection and a master regulator of cytokine and chemokine induction (Mitchell and Carmody, 2018; Santoro et al., 2003), we prioritized its inhibition using super repressor inhibitor of κBα (srIκBα). This dominant-active variant cannot be phosphorylated and thus resists ubiquitination and degradation, forming a stable cytoplasmic pool of IκBα that prevents NF-κB nuclear translocation and downstream signaling (Brown et al., 1995; Lee et al., 2009). We generated one construct expressing srIκBα alone (named ‘srIκBα’) and another expressing srIκBα in combination with Smad7 and suppressor of cytokine signaling 1 (SOCS1) using nonidentical 2A peptides (named ‘srIκBα-Smad7-SOCS1’). Smad7 negatively regulates both transforming growth factor-β (TGF-β) and NF-κB signaling pathways (Yan et al., 2009), while SOCS1 inhibits type I, II, and III IFN pathways, as well as NF-κB signaling (Dimitriou et al., 2008; Blumer et al., 2017; Sobah et al., 2021). Additionally, a control construct (‘moxBFP’) was generated that lacks inflammatory signaling inhibitors and instead expresses a blue fluorescent protein.
 
-## Inhibiting NF-κB signaling broadly attenuates saRNA-induced antiviral cytokine secretion
+### Inhibiting NF-κB signaling broadly attenuates saRNA-induced antiviral cytokine secretion
 
 Transfection with the moxBFP construct, which lacks inflammatory signaling inhibitors, led to a significant increase in the secretion of all measured cytokines (Figure 4c, Figure 4—figure supplement 2). In contrast, co-expression of srIκBα broadly reduced cytokine levels, significantly reducing the secretion of all cytokines except TNF, IFN-α, and interleukin (IL)-6. The srIκBα-Smad7-SOCS1 construct did not further enhance suppression relative to srIκBα alone, with the exception of IL-6, which was significantly reduced only by srIκBα-Smad7-SOCS1. These results indicate that NF-κB is a key driver of saRNA-induced cytokine production, and that co-expression of srIκBα is an effective strategy for attenuating this response.
 
-## Reduced antiviral gene expression and replicon activity observed with co-expression of inflammatory signaling inhibitors
+### Reduced antiviral gene expression and replicon activity observed with co-expression of inflammatory signaling inhibitors
 
 To evaluate whether co-expression of inflammatory signaling inhibitors could attenuate saRNA-induced induction of antiviral transcripts, we performed an RT-qPCR array on mock-transfected cells and cells transfected with conventional saRNA, E3, or srIκBα-Smad7-SOCS1 (Figure 4—figure supplement 3a). Transfection with conventional saRNA led to marked upregulation of several antiviral and proinflammatory mRNA transcripts, including Adar, Isg20, Rigi, Ifih1, Tlr3, Eif2ak2, Zc3hav1, and Il6. In contrast, both the E3 and srIκBα-Smad7-SOCS1 constructs attenuated the induction of these transcripts, with srIκBα-Smad7-SOCS1 exhibiting broader suppression across the panel.
 
 Because all saRNA constructs in this study encode EGFP, we quantified its transcript levels as a proxy for replicon amplification, although we note that this interpretation assumes a consistent genomic-to-subgenomic transcript ratio across constructs. FLS transfected with srIκBα-Smad7-SOCS1 exhibited significantly lower EGFP transcript levels than those transfected with conventional saRNA or E3 (Figure 4—figure supplement 3b). This apparent reduction in replicon activity is likely multifactorial. For one, physical characteristics of the transcripts contribute: the srIκBα-Smad7-SOCS1 construct is ~40% longer, resulting in a lower molar input when transfected at equal RNA mass. Its greater length is also expected to increase replication time, potentially altering replication dynamics. For another, the moxBFP, srIκBα, and srIκBα-Smad7-SOCS1 constructs share a common truncated byproduct (Figure 4—figure supplement 3c and d). This byproduct is expected to be replication-incompetent, as it lacks the conserved sequence element in the 3’ untranslated region necessary for negative-strand synthesis (Hyde et al., 2015), thus further reducing the effective molar input of functional saRNA. And finally, biological effects of the co-expressed proteins may also limit replicon activity. For example, inhibition of RNase L by L* could increase competition for cellular resources and thereby reduce RdRp production.
 
-## Co-expression of Smad7 and SOCS1 rescues srIκBα-induced cell loss and enhances transgene expression
+### Co-expression of Smad7 and SOCS1 rescues srIκBα-induced cell loss and enhances transgene expression
 
 We then examined the impact of inhibiting inflammatory signaling on cell number and transgene expression (Figure 5a and b). Interestingly, the srIκBα construct caused both immediate and sustained reductions in cell number, as quantified by BioTracker signal, whereas the srIκBα-Smad7-SOCS1 construct maintained cell number comparable to mock transfection throughout the experiment (Figure 5c). AUC analysis of the BioTracker data confirmed that srIκBα-Smad7-SOCS1 significantly mitigated the srIκBα-induced reduction in integrated BioTracker signal (Figure 5—figure supplement 1a). Additional experiments using CellTag and calcein AM staining corroborated these findings, showing that srIκBα negatively impacted both cell number (Figure 5—figure supplement 1b) and viability (Figure 5—figure supplement 1c), effects that were prevented by co-expression of Smad7 and SOCS1.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig5-v1.jpg)
+
+**Figure 5.:** (a) Representative images of microplate wells showing BioTracker. (b) Representative composite images of microplate wells showing EGFP (green) and mScarlet3 (red). (c) Longitudinal quantification of BioTracker (n=11). srIκBα reduces signal, an effect not observed with srIκBα-Smad7-SOCS1.(d) Longitudinal quantification of EGFP (n=11). Expression was low across constructs. (e) Longitudinal quantification of mScarlet3 (n=11). srIκBα-Smad7-SOCS1 produced 2–3 times greater fluorescence than other constructs. For panels (a–b): Scale bar = 5 mm. For panels (c–e): Data are normalized to starting cell number (pre-transfection BioTracker signal). A dotted line shows the response to conventional saRNA (for reference). Statistical significance of treatment effects at each time point compared to mock transfection was determined by two-way RM ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Data are presented as mean ± SEM. The mock transfection control data used in this figure is also presented in Figure 1d–f.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) AUC analysis of BioTracker fluorescence data shown in Figure 5c, integrating effects over 3 weeks (n=11). srIκBα reduces integrated signal, while srIκBα-Smad7-SOCS1 preserves it. Statistical analysis was performed on AUC values using one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test. Mock transfection data is also presented in Figure 1—figure supplement 1a. (b) CellTag signal on day 2 post-transfection, normalized to mock transfection (n=20). srIκBα reduces signal, an effect not observed with srIκBα-Smad7-SOCS1. Statistical significance was determined by one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test. Data in this panel were pooled from in-cell western assays, incorporating data presented in Figures 3 and 6, as well as additional data not shown elsewhere. ***p<0.001. (c) Calcein AM signal, 3 days post-transfection, normalized to moxBFP (n=4). The signal reduction observed with srIκBα is not seen with srIκBα-Smad7-SOCS1. Statistical significance was determined by a paired t-test. For all statistical reporting, *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. Data are presented as mean ± SEM or individual values with connecting lines indicating responses from the same biological replicate.
+
 All three constructs produced low levels of EGFP expression (Figure 5d), which was expected given that EGFP is the fourth cistron in a 2A-linked polyprotein (Figure 4b). Previous studies have established that protein expression decreases significantly for downstream positions in such 2A-linked configurations (Liu et al., 2017a). Notably, the srIκBα-Smad7-SOCS1 construct produced two- to threefold higher mScarlet3 fluorescence than either the moxBFP or srIκBα constructs (Figure 5e), demonstrating that the srIκBα-Smad7-SOCS1 construct supports robust transgene expression despite its multi-cistronic configuration.
 
-## Smad7 and SOCS1 co-expression prevents srIκBα-induced alterations in translational control
+### Smad7 and SOCS1 co-expression prevents srIκBα-induced alterations in translational control
 
 We next investigated the molecular mechanisms by which srIκBα and srIκBα-Smad7-SOCS1 modulate translational control. Interestingly, srIκBα expression led to reductions in eIF2α phosphorylation, a change that was prevented by co-expression of Smad7 and SOCS1 (Figure 6a). While neither construct affected total eIF2α levels or eIF4E phosphorylation compared to the moxBFP construct (Figure 6b and c), srIκBα caused a significant reduction in total eIF4E levels (Figure 6d). Given the critical role of eIF4E in cap-dependent translation, its depletion likely contributes to the poor transgene expression observed with srIκBα (Figure 5e). Importantly, Smad7 and SOCS1 co-expression preserved eIF4E levels, counteracting the disruption of cap-dependent translation caused by srIκBα.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig6-v1.jpg)
 
-**Figure 6.:** (a) Phosphorylated eIF2α levels examined by in-cell western, normalized to total eIF2α levels (n=6). Phosphorylation was reduced by srIκBα but unchanged by srIκBα-Smad7-SOCS1. (b) Total eIF2α levels examined by in-cell western, normalized to CellTag (n=5). No significant differences were revealed (F(2,8) = 3.683, p=0.0735). (c) Phosphorylated eIF4E levels examined by in-cell western, normalized to total eIF4E levels (n=6). No significant differences were revealed (F(2,10) = 1.336, p=0.3059). (d) Total eIF4E levels examined by in-cell western, normalized to CellTag (n=6). srIκBα reduced total eIF4E, while srIκBα-Smad7-SOCS1 had no effect. For all panels: Data are presented as fold change relative to mock transfection. Statistical significance was determined by one-way RM ANOVA and Holm-Šídák’s multiple comparisons test to compare all groups. *p<0.05, **p<0.01, and ***p<0.001. Connecting lines indicate responses from the same biological replicate. Mock transfection data used for normalization are the same as in Figure 3.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (a) Phosphorylated eIF2α levels examined by in-cell western, normalized to total eIF2α levels (n=6). Phosphorylation was reduced by srIκBα but unchanged by srIκBα-Smad7-SOCS1. (b) Total eIF2α levels examined by in-cell western, normalized to CellTag (n=5). No significant differences were revealed (F(2,8) = 3.683, p=0.0735). (c) Phosphorylated eIF4E levels examined by in-cell western, normalized to total eIF4E levels (n=6). No significant differences were revealed (F(2,10) = 1.336, p=0.3059). (d) Total eIF4E levels examined by in-cell western, normalized to CellTag (n=6). srIκBα reduced total eIF4E, while srIκBα-Smad7-SOCS1 had no effect. For all panels: Data are presented as fold change relative to mock transfection. Statistical significance was determined by one-way RM ANOVA and Holm-Šídák’s multiple comparisons test to compare all groups. *p<0.05, **p<0.01, and ***p<0.001. Connecting lines indicate responses from the same biological replicate. Mock transfection data used for normalization are the same as in Figure 3.
 
-## Prolonged expression of moxBFP does not activate FLS, and srIκBα co-expression reduces basal activation
+### Prolonged expression of moxBFP does not activate FLS, and srIκBα co-expression reduces basal activation
 
 Fibroblast activation protein-α (FAP-α) is a serine protease expressed on the surface of FLS that contributes to extracellular matrix degradation and tissue remodeling (Bauer et al., 2006; Zhang et al., 2019). Its expression is minimal in normal adult FLS but increases significantly following inflammatory activation, such as in rheumatoid arthritis and osteoarthritis (Croft et al., 2019; Fan et al., 2023). Since viral infections can induce fibroblast activation (Boyd et al., 2020; Krausgruber et al., 2020), we hypothesized that prolonged saRNA expression might similarly trigger FLS activation. To test this, we measured FAP-α levels using an in-cell western assay 11 days post-transfection. FLS transfected with moxBFP showed FAP-α levels comparable to mock-transfected controls, whereas cells transfected with srIκBα and srIκBα-Smad7-SOCS1 exhibited significantly lower FAP-α levels (Figure 7a and b). These findings suggest that prolonged saRNA expression from constructs encoding inhibitors of dsRNA-sensing pathways does not overtly trigger fibroblast activation, whereas co-expression of inhibitors of inflammatory signaling may reduce basal activation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig7-v1.jpg)
 
-**Figure 7.:** (a) Representative in-cell western images showing FAP-α, a marker of fibroblast activation, on day 11 post-transfection. Columns show different biological replicates, and rows show different treatments. The tiled composite on the right shows FAP-α signal normalized to CellTag signal (FAP-α/CellTag). (b) Quantification of FAP-α, normalized to CellTag (n=8). Both srIκBα and srIκBα-Smad7-SOCS1 significantly reduce FAP-α levels versus mock transfection, while moxBFP shows no significant difference. Statistical significance was determined by one-way RM ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test to compare groups to mock transfection. Connecting lines indicate responses from the same biological replicate. **p<0.01.Figure 7—source data 1.Figure 7.
+**Figure 7.:** (a) Representative in-cell western images showing FAP-α, a marker of fibroblast activation, on day 11 post-transfection. Columns show different biological replicates, and rows show different treatments. The tiled composite on the right shows FAP-α signal normalized to CellTag signal (FAP-α/CellTag). (b) Quantification of FAP-α, normalized to CellTag (n=8). Both srIκBα and srIκBα-Smad7-SOCS1 significantly reduce FAP-α levels versus mock transfection, while moxBFP shows no significant difference. Statistical significance was determined by one-way RM ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test to compare groups to mock transfection. Connecting lines indicate responses from the same biological replicate. **p<0.01.
 
-## Reversible and irreversible external control of immune-evasive saRNA
+### Reversible and irreversible external control of immune-evasive saRNA
 
 The srIκBα-Smad7-SOCS1 construct represents a promising immune-evasive saRNA platform for gene therapy and other non-immunotherapeutic applications. It includes the E3-NSs-L* polyprotein, which protects against saRNA-induced cytotoxicity (Figure 1f; Figure 3—figure supplement 1a and b; Figure 2b and d), translation shutdown (Figure 1e; Figure 3a), and host mRNA degradation (Figure 3—figure supplement 1b and c). In parallel, co-expression of srIκBα attenuates saRNA-induced cytokine responses (Figure 4c), while Smad7 and SOCS1 mitigate srIκBα-associated reductions in cell viability (Figure 5c; Figure 5—figure supplement 1a–c) and eIF4E levels (Figure 6d). These combined features enable sustained cap-dependent transgene expression (Figure 5e) without triggering fibroblast activation (Figure 7b).
 
@@ -141,7 +181,7 @@ To improve safety and flexibility, we next explored whether transgene expression
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/105978/elife-105978-fig8-v1.jpg)
 
-**Figure 8.:** Panels (a–b) show the effect of ML336, a small-molecule replicase inhibitor, applied at the time of transfection with srIκBα-Smad7-SOCS1. (a) ML336 concentration–response curve for inhibiting mScarlet3 expression, measured 2 days post-transfection (n=5). IC50 = 8.5 nM (95% CI: 6.1–11.9 nM). Data are normalized to vehicle-treated controls and fit to a variable-slope sigmoidal curve. (b) Reversibility of ML336-mediated inhibition of mScarlet3 expression determined by measuring fluorescence recovery, one day after compound washout from cultures in panel (a). mScarlet3 inhibition is reversible at intermediate concentrations (10 nM–1 μM) but irreversible at high concentrations (>1 μM). Data are normalized to each biological replicate’s maximum recovery and fit to a bell-shaped concentration–response curve.Panels (c–g) show the effect of ML336 on an established srIκBα-Smad7-SOCS1 replicon. FLS were continously treated (indicated by shading) with vehicle or 1 μM ML336, starting 1 day post-transfection. (c) Representative composite images of microplate wells showing EGFP (green) and mScarlet3 (red). Scale bar = 5 mm. (d) Representative images of microplate wells showing calcein AM at end of time course. Scale bar = 5 mm. (e) Quantification of EGFP (n=6). By day 7, EGFP signal is reduced by ML336. (f) Quantification of mScarlet3 (n=6). By day 3, mScarlet3 signal is reduced by ML336. (g) Quantification of calcein AM (n=6). Vehicle, but not ML336 treatment, reduced calcein AM signal relative to mock transfection. Statistical significance was assessed by one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test. **p<0.01, ***p<0.001. All fluorescence data were normalized to pre-transfection cell number indicated by BioTracker signal. Connecting lines indicate responses from the same biological replicate. For panels (e−f): Statistical significance relative to vehicle-treated cells was determined by two-way RM ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test. #p<0.05, ##p<0.01, ###p<0.001. Data are presented as mean ± SEM.Figure 8—source data 1.Figure 8.
+**Figure 8.:** Panels (a–b) show the effect of ML336, a small-molecule replicase inhibitor, applied at the time of transfection with srIκBα-Smad7-SOCS1. (a) ML336 concentration–response curve for inhibiting mScarlet3 expression, measured 2 days post-transfection (n=5). IC50 = 8.5 nM (95% CI: 6.1–11.9 nM). Data are normalized to vehicle-treated controls and fit to a variable-slope sigmoidal curve. (b) Reversibility of ML336-mediated inhibition of mScarlet3 expression determined by measuring fluorescence recovery, one day after compound washout from cultures in panel (a). mScarlet3 inhibition is reversible at intermediate concentrations (10 nM–1 μM) but irreversible at high concentrations (>1 μM). Data are normalized to each biological replicate’s maximum recovery and fit to a bell-shaped concentration–response curve.Panels (c–g) show the effect of ML336 on an established srIκBα-Smad7-SOCS1 replicon. FLS were continously treated (indicated by shading) with vehicle or 1 μM ML336, starting 1 day post-transfection. (c) Representative composite images of microplate wells showing EGFP (green) and mScarlet3 (red). Scale bar = 5 mm. (d) Representative images of microplate wells showing calcein AM at end of time course. Scale bar = 5 mm. (e) Quantification of EGFP (n=6). By day 7, EGFP signal is reduced by ML336. (f) Quantification of mScarlet3 (n=6). By day 3, mScarlet3 signal is reduced by ML336. (g) Quantification of calcein AM (n=6). Vehicle, but not ML336 treatment, reduced calcein AM signal relative to mock transfection. Statistical significance was assessed by one-way RM ANOVA with Greenhouse-Geisser correction and Tukey’s multiple comparisons test. **p<0.01, ***p<0.001. All fluorescence data were normalized to pre-transfection cell number indicated by BioTracker signal. Connecting lines indicate responses from the same biological replicate. For panels (e−f): Statistical significance relative to vehicle-treated cells was determined by two-way RM ANOVA with Greenhouse-Geisser correction and Dunnett’s multiple comparisons test. #p<0.05, ##p<0.01, ###p<0.001. Data are presented as mean ± SEM.
 
 We then investigated whether this inhibition was reversible or tied to permanent loss of replicon activity. In a washout experiment, cultures from the initial concentration–response assay were washed 2 days post-transfection, and mScarlet3 fluorescence was quantified the following day. Recovery of mScarlet3 expression occurred at intermediate ML336 concentrations (10 nM–1 μM), peaking at 100 nM (Figure 8b), a range that likely reflects conditions where genomic RNA replication persists at low levels but subgenomic RNA synthesis is curtailed. In contrast, recovery did not occur at concentrations above 1 μM. This suggests that inhibition of transgene expression is reversible at intermediate ML336 concentrations, while sustained replicase inhibition at higher concentrations leads to irreversible replicon loss and permanent termination of transgene expression.
 
@@ -183,7 +223,549 @@ Our findings present a fully saRNA-based approach that addresses a key barrier t
 
 ## Materials and methods
 
-## Plasmid cloning and construct design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TagGFP2 Simplicon Plasmid (E3L)</td>
+      <td>Merck-Millipore</td>
+      <td>SCR725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIRES2-EGFP</td>
+      <td>Clontech</td>
+      <td>6029-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDx_mScarlet3</td>
+      <td>Addgene</td>
+      <td>189754 (RRID:Addgene_189754)</td>
+      <td>A gift from Dorus Gadella</td>
+    </tr>
+    <tr>
+      <td>Gene (Engineered fluorescent protein)</td>
+      <td>moxBFP</td>
+      <td>FPbase</td>
+      <td>SSTDU</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Engineered fluorescent protein)</td>
+      <td>mEGFP</td>
+      <td>FPbase</td>
+      <td>QKFJN</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Orthopoxvirus vaccinia—Strain: Western Reserve)</td>
+      <td>Vaccinia Virus E3 protein</td>
+      <td>UniProt</td>
+      <td>P21605-1 [1991-05-01 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Phlebovirus toscanaense)</td>
+      <td>Toscana virus NSs protein</td>
+      <td>UniProt</td>
+      <td>P21699 [1991-05-01 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Cardiovirus theileri—Strain: DA)</td>
+      <td>Theiler’s virus L* protein</td>
+      <td>UniProt</td>
+      <td>P0DJX4 [2013-07-24 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Alphapermutotetravirus thoseae)</td>
+      <td>T2A</td>
+      <td>UniProt</td>
+      <td>Q9YK87 (139–156) [1999-05-01 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Teschovirus asilesi)</td>
+      <td>P2A</td>
+      <td>UniProt</td>
+      <td>A0A077CZU0 (977–995) [2014-10-29 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Aphthovirus burrowsi)</td>
+      <td>E2A</td>
+      <td>UniProt</td>
+      <td>K9MZ26 (991–1010) [2013-03-06 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>IκBα</td>
+      <td>UniProt</td>
+      <td>Q9Z1E3 [2004-10-25 v2]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Engineered mouse protein)</td>
+      <td>srIκBα</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Substituted serines 32 and 36 with alanines</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Smad7</td>
+      <td>UniProt</td>
+      <td>O35253-1 [1998-01-01 v1]</td>
+      <td>Amino acid sequence</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>SOCS1</td>
+      <td>UniProt</td>
+      <td>O35716 [1998-01-01 v1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenSmart</td>
+      <td>GenScript</td>
+      <td>RRID:SCR_026296</td>
+      <td>Used to codon optimize amino acid sequences for mouse expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-EGFP-IRES-moxBFP</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242407</td>
+      <td>Deposited with Addgene: 242407</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Conventional saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-EGFP-IRES-moxBFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-EGFP-IRES-E3</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242408</td>
+      <td>Deposited with Addgene: 242408</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>E3 saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-EGFP-IRES-E3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-EGFP-IRES-E3-NSs-L*</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242409</td>
+      <td>Deposited with Addgene: 242409</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>E3-NSs-L* saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-EGFP-IRES-E3-NSs-L*</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES-moxBFP</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242410</td>
+      <td>Deposited with Addgene: 242410</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>moxBFP saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES-moxBFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES- srIκBα</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242411</td>
+      <td>Deposited with Addgene: 242411</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>srIκBα saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES- srIκBα</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES- srIκBα-Smad7-SOCS1</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242412</td>
+      <td>Deposited with Addgene: 242412</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>srIκBα-Smad7-SOCS1 saRNA construct</td>
+      <td>This paper</td>
+      <td></td>
+      <td>saRNA transcribed from VEE-mScarlet3-IRES-E3-NSs-L*-EGFP-IRES- srIκBα-Smad7-SOCS1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-mScarlet3-IRES-PuroR</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242415</td>
+      <td>Deposited with Addgene: 242415</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-EGFP-IRES-PuroR</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242414</td>
+      <td>Deposited with Addgene: 242414</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VEE-moxBFP-IRES-PuroR</td>
+      <td>This paper</td>
+      <td>RRID:Addgene_242413</td>
+      <td>Deposited with Addgene: 242413</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Phusion High-Fidelity DNA Polymerase</td>
+      <td>Thermo Scientific</td>
+      <td>F530S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBuilder HiFi DNA Assembly Cloning Kit</td>
+      <td>NEB</td>
+      <td>E5520S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>5-alpha Competent E. coli (High Efficiency)</td>
+      <td>NEB</td>
+      <td>C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>T7 RiboMAX Large Scale RNA Production System</td>
+      <td>Promega</td>
+      <td>P1300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>PureLink HiPure Plasmid FP Maxiprep kit</td>
+      <td>Invitrogen</td>
+      <td>K210027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Vaccinia Capping System</td>
+      <td>NEB</td>
+      <td>M2080S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mRNA Cap 2´-O-Methyltransferase</td>
+      <td>NEB</td>
+      <td>M0366S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Antarctic Phosphatase</td>
+      <td>NEB</td>
+      <td>M0289S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NorthernMax-Gly Sample Loading Dye</td>
+      <td>Invitrogen</td>
+      <td>AM8551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine MessengerMAX Transfection Reagent</td>
+      <td>Invitrogen</td>
+      <td>LMRNA001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Envigo</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>tSA201</td>
+      <td>ECACC</td>
+      <td>96121229 (RRID:CVCL_2737)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BioTracker NIR680</td>
+      <td>Merck</td>
+      <td>SCT112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ML336</td>
+      <td>Cayman Chemical</td>
+      <td>9001920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Thermo Scientific</td>
+      <td>J67236.XF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6-well black glass bottom plate</td>
+      <td>CellVis</td>
+      <td>P06-1.5H-N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>24-well black glass bottom plate</td>
+      <td>Grenier Bio-One</td>
+      <td>662892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Live Cell Imaging Solution</td>
+      <td>Invitrogen</td>
+      <td>A59688DJ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Poly-D-lysine–coated glass-bottom 35 mm dishes</td>
+      <td>MatTek</td>
+      <td>P35GC-1.5-14-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Linear unmixing script for Odyssey M images</td>
+      <td>This paper; Ferguson, 2025</td>
+      <td></td>
+      <td>Available at https://github.com/lariferg/spectral_unmixing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Annexin V-CF800</td>
+      <td>Biotium</td>
+      <td>29078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cadherin-11 rabbit polyclonal</td>
+      <td>Affinity Biosciences</td>
+      <td>DF3523 (RRID:AB_2835743)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-eIF2α (Ser51) rabbit monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>3398 (RRID:AB_2096481)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eIF2α mouse monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>2103 (RRID:AB_836874)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PKR rabbit polyclonal</td>
+      <td>Proteintech</td>
+      <td>18244-1-AP (RRID:AB_2246451)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-eIF4E (S209) rabbit monoclonal</td>
+      <td>Abcam</td>
+      <td>ab76256 (RRID:AB_1523534)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eIF4E mouse monoclonal</td>
+      <td>Invitrogen</td>
+      <td>MA1-089 (RRID:AB_2536738)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibroblast activation protein mouse monoclonal</td>
+      <td>InVivoMAb</td>
+      <td>BE0374 (RRID:AB_2927511)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-puromycin mouse monoclonal</td>
+      <td>Absolute Antibody</td>
+      <td>3RH11 (RRID:AB_2620162)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IRDye 800CW secondary</td>
+      <td>LI-COR</td>
+      <td>926-32210 (RRID:AB_621842)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit IRDye 800CW secondary</td>
+      <td>LI-COR</td>
+      <td>926-32213 (RRID:AB_621848)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-mouse IRDye 680RD secondary</td>
+      <td>LI-COR</td>
+      <td>926-68072 (RRID:AB_10953628)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTag 700</td>
+      <td>LI-COR</td>
+      <td>926-41090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DyLight Antibody Labeling Kit</td>
+      <td>Thermo Scientific</td>
+      <td>53062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Empiria Studio</td>
+      <td>LI-COR</td>
+      <td>RRID:SCR_014281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>LEGENDplex Mouse Anti-Virus Response Panel</td>
+      <td>BioLegend</td>
+      <td>740621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Qognit</td>
+      <td>BioLegend</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3D printed vacuum manifold for LEGENDplex filter plates</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available at the NIH 3D Print Exchange under accession number 3DPX-021388</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan Fast Advanced Cells-to-CT Kit</td>
+      <td>Invitrogen</td>
+      <td>A35377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan array plates</td>
+      <td>Invitrogen</td>
+      <td>4413261</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StepOne Software</td>
+      <td>Life Technologies</td>
+      <td>RRID:SCR_014281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid cloning and construct design
 
 The commercially available TagGFP2 E3L Simplicon vector (SCR725, Merck) served as the saRNA backbone in this study. After removal of the TagGFP2-IRES-E3 sequence, various constructs were generated by combining different elements using restriction digests (FastDigest, Thermo Scientific), overlap extension PCR (Phusion, Thermo Scientific), and HiFi assembly (NEBuilder, New England Biolabs).
 
@@ -193,19 +775,19 @@ Custom gene synthesis (GeneArt, Thermo Scientific) was used to produce IRES-moxB
 
 Plasmids were cloned in DH5α competent Escherichia coli (High Efficiency, New England Biolabs) and purified by maxiprep (PureLink HiPure, Invitrogen). All plasmid sequences were verified using nanopore whole-plasmid sequencing (Plasmidsaurus).
 
-## RNA synthesis
+### RNA synthesis
 
 Plasmids were linearized with XbaI (FastDigest, Thermo Scientific) at 37°C for 3 hr. The linear plasmids were purified by phenol-chloroform extraction followed by sodium acetate-ethanol precipitation. Uncapped RNA was synthesized in vitro using the T7 RiboMAX Large Scale RNA Production System (Promega) at 37°C for 2 hr. After purification by ammonium acetate precipitation, the RNA was denatured by heating to 65°C for 5 min before rapidly cooling on ice. Cap-1 structures were then generated using the Vaccinia Capping System in conjunction with mRNA cap 2'-O-methyltransferase (both from New England Biolabs) for 45 min at 37°C. Following another round of ammonium acetate precipitation, the RNA was treated with Antarctic phosphatase (New England Biolabs) for 30 min at 37°C. After a final ammonium acetate precipitation, RNA was resuspended in THE RNA Storage Solution (Invitrogen). RNA concentration was quantified using an N60 NanoPhotometer (Implen) and adjusted to a final concentration of 0.5 μg/μL. RNA was aliquoted and stored at –80°C until further use.
 
 The integrity of the in vitro transcribed RNA was assessed by denaturing agarose gel electrophoresis (Figure 4—figure supplement 3c). Constructs designed to inhibit dsRNA-sensing pathways (conventional saRNA, E3, and E3-NSs-L*) produced a single band at the expected size. In contrast, constructs targeting inflammatory signaling (moxBFP, srIκBα, and srIκBα-Smad7-SOCS1) displayed two bands: one corresponding to the full-length transcript and a smaller, low-intensity band of consistent size across all three constructs (Figure 4—figure supplement 3d). The presence of this truncated species likely reflects premature termination at a cryptic terminator introduced during construct assembly.
 
-## Denaturing RNA gel electrophoresis
+### Denaturing RNA gel electrophoresis
 
 In vitro transcribed RNA (1 μg) was mixed with 5 μL of NorthernMax-Gly Sample Loading Dye (Invitrogen) and 5 μL of nuclease-free water for glyoxal-based denaturation. The RNA ladder (RiboRuler High Range RNA Ladder, Thermo Scientific) was prepared by combining 2 μL of ladder, 3 μL of water, and 5 μL of loading dye. A loading dye-only control was also prepared using 5 μL of water and 5 μL of loading dye. All samples were incubated at 50°C for 30 min, then cooled on ice (Floor, 2019; Rio, 2015).
 
 Samples were then loaded onto a 0.8% agarose gel prepared with diethyl pyrocarbonate-treated electrophoresis buffer consisting of 100 mM PIPES, 300 mM Bis-Tris, and 10 mM EDTA. Electrophoresis was performed at 5V/cm, and gels were imaged using an Odyssey Fc imager (LI-COR) with acquisition in the 600 nm channel over 10 min.
 
-## Primary mouse FLS culture
+### Primary mouse FLS culture
 
 Mouse tissue collection was conducted in accordance with Schedule 1 of the Animals (Scientific Procedures) Act 1986 Amendment Regulations 2012 and under Project Licence PP5814995 (granted to Ewan St. John Smith by the UK Home Office), with approval from the University of Cambridge Animal Welfare Ethical Review Body.
 
@@ -219,11 +801,11 @@ FLS outgrowth typically reached ~70% confluence by around 10 days in culture. At
 
 For downstream assays, cells from each animal were divided across multiple wells of 6-well or 24-well plates to permit within-animal, repeated-measures analysis. In cases where individual yields were insufficient, cells from multiple animals were pooled prior to plating. Media was refreshed every 2–3 days following plating.
 
-## tSA201 culture
+### tSA201 culture
 
 tSA201 cells (96121229, ECACC) were cultured in media consisting of DMEM (Invitrogen) supplemented with 10% fetal bovine serum (Sigma), 1× nonessential amino acids (Gibco), 1 mM sodium pyruvate (Gibco), 1× GlutaMAX (Gibco), and 100 μg/mL normocin (InvivoGen). Adherent cultures were incubated in a humidified incubator at 37°C with 5% CO2. Cultures were confirmed to be free of mycoplasma (MycoStrip, Invivogen).
 
-## Immunocytochemistry and confocal microscopy
+### Immunocytochemistry and confocal microscopy
 
 Cells were plated on poly-D-lysine-coated glass-bottom 35 mm dishes (P35GC-1.5-14-C, MatTek) and fixed with 4% paraformaldehyde for 10 min at room temperature without permeabilization. After fixation, cells were washed twice with PBS, followed by blocking with 10% normal goat serum in PBS for 1 hr at room temperature.
 
@@ -231,27 +813,27 @@ Cells were then incubated overnight at 4°C in blocking buffer, either without p
 
 After four additional PBS washes, cells were imaged in PBS using a Leica Stellaris 5 confocal microscope equipped with a ×40 oil immersion objective. Tile-scanned images were stitched using Las X microscopy software (Leica) to generate high-resolution panoramic images.
 
-## BioTracker staining
+### BioTracker staining
 
 BioTracker NIR680 was diluted 1:2000 in unsupplemented DMEM/F-12. T25 flasks containing FLS were washed once with HBSS (with calcium and magnesium; Gibco), then incubated with the diluted dye for 30 min at 37°C. After incubation, the flasks were washed three times with FLS media, with each wash lasting 10 min at 37°C. FLS were then dissociated using Versene and plated onto 6- or 24-well plates.
 
-## FLS transfection
+### FLS transfection
 
 For transfection in six-well plates, the medium was removed and replaced with 1 mL of Opti-MEM I (Gibco). In a microcentrifuge tube, 500 ng of saRNA was diluted in 200 μL of Opti-MEM I. In a separate tube, 3 μL of Lipofectamine MessengerMAX (Invitrogen) was diluted in 100 μL of Opti-MEM I. After gentle mixing, the solutions were combined and incubated at room temperature for 5 min, then added dropwise to the cells. The cells were incubated with the complexes for 2 hr at 37°C, after which the medium was removed and replaced with fresh FLS media. For transfection in 24-well plates, all volumes and amounts of saRNA were reduced fivefold.
 
-## Microplate imaging
+### Microplate imaging
 
 Black glass-bottom 6-well plates (P06-1.5H-N, Cellvis) or 24-well plates (662892, Greiner Bio-One) were used for microplate imaging. Prior to imaging, the FLS media was replaced with Live Cell Imaging Solution (Invitrogen). Imaging was performed using an Odyssey M laser scanner (LI-COR), using LI-COR acquisition software, a plate offset of +1.45 mm, and 100 μm resolution.
 
 EGFP, mScarlet3, and BioTracker NIR680 were imaged using the 488, 520, and 700 channels, respectively. Spectral cross-excitation between EGFP and mScarlet3 in the 488 and 520 channels was corrected through linear unmixing analysis, as described below. Fluorescence intensity was quantified in ImageJ by measuring the integrated density within equal-area regions of interest for each well. Fluorescence values (EGFP, mScarlet3, and BioTracker) were normalized to the day 0 BioTracker signal measured before transfection to account for variations in starting cell number.
 
-## Linear unmixing analysis
+### Linear unmixing analysis
 
 saRNA constructs encoding individual fluorescent proteins (moxBFP, EGFP, or mScarlet3) were designed to assess cross-excitation among the fluorescent proteins used in this study. tSA201 cells were seeded in black glass-bottom six-well plates coated with poly-D-lysine (Sigma) and transfected with the respective saRNA constructs. Cells were imaged the following day using an Odyssey M laser scanner, with fluorescence captured through the 488 and 520 channels.
 
 Expression of moxBFP was undetectable in both the 488 and 520 channels, and therefore it was excluded from further analysis. Bleed-through of EGFP into the 520 channel and mScarlet3 into the 488 channel was quantified using ImageJ, with cross-excitation determined to be 11.32% and 0.94%, respectively. The emission signals were assumed to be linearly proportional to the sum of the intensities of each fluorophore, and the unmixed EGFP and mScarlet3 signals were calculated using Python.
 
-## Annexin V assay
+### Annexin V assay
 
 FLS were stained with BioTracker NIR680 and plated on black glass-bottom 24-well plates (Sensoplate, Greiner Bio-One). Cells were transfected with saRNA or treated with 0.5 μM staurosporine (Cayman Chemical) as a positive control.
 
@@ -259,7 +841,7 @@ Annexin V-CF800 conjugate (Biotium) was diluted to 250 ng/mL in Live Cell Imagin
 
 Image analysis was performed using ImageJ. To correct for unidirectional spectral bleed-through of BioTracker NIR680 into the 800-channel, subtractive compensation was applied by dividing the 700-channel image by a factor of 800 and then subtracting it from the 800-channel image. Due to the presence of a small number of high-intensity speckles in the 800-channel image, area rather than fluorescence intensity was quantified. The display range of the 800-channel image was set between 0.25 and 2.5, and the image was thresholded using the method of Li (Li and Lee, 1993). The area of thresholded pixels within each well was then quantified and adjusted based on the BioTracker signal before transfection to account for variations in cell number. Data were then normalized to the average of the mock transfection condition.
 
-## Calcein AM staining
+### Calcein AM staining
 
 Calcein AM (Invitrogen) staining was performed according to the manufacturer’s protocol. Briefly, cells were washed with HBSS and incubated with 2 μM calcein AM (diluted in HBSS) at 37°C for 30 min. Following three washes, cells were imaged in Live Cell Imaging Solution, and the 488-channel image was captured using an Odyssey M imager.
 
@@ -267,7 +849,7 @@ Although calcein AM and EGFP have overlapping spectra, calcein AM fluorescence w
 
 Fluorescence intensity was quantified using ImageJ. In experiments where BioTracker was used, fluorescence values were corrected by the pre-transfection BioTracker signal to account for differences in starting cell number.
 
-## In-cell western assay
+### In-cell western assay
 
 Cells were plated on black, glass-bottom 24-well plates. Alongside mock and saRNA transfections, one well was reserved for background subtraction, which received no treatment. Unless specified otherwise, experiments were conducted on day 2 post-transfection. Cells were fixed with 4% paraformaldehyde for 10 min at room temperature, followed by two washes with Tris-buffered saline (TBS). Permeabilization was then performed using 0.1% Triton X-100 in TBS for 10 min, followed by two additional TBS washes. After permeabilization, cells were blocked with Intercept TBS Blocking Buffer (LI-COR) for 1 hr at room temperature with gentle agitation.
 
@@ -275,27 +857,27 @@ Primary antibodies were diluted in Intercept Blocking Buffer and incubated with 
 
 After washing the wells four times with TBS supplemented with 0.1% Tween 20 (TBST), cells were incubated for 1 hr at room temperature with the appropriate secondary antibodies or normalization stain, with gentle agitation. The secondary antibodies used were goat anti-mouse IRDye 800CW (1:800), donkey anti-rabbit IRDye 800CW (1:800), donkey anti-mouse IRDye 680RD (1:800), and CellTag 700 (1:500), all from LI-COR. The background subtraction well received secondary antibody but no CellTag. Following four additional washes with TBST, the plate was inverted and gently tapped on absorbent paper to remove excess liquid. The plate was then imaged using the Odyssey M imager with LI-COR Acquisition software using a plate offset of +1.45 and 100 μm resolution. Signal quantification was carried out using Empiria Studio software (LI-COR).
 
-## SUnSET assay
+### SUnSET assay
 
 FLS were plated in black, glass-bottom 24-well plates, with one well reserved for background subtraction (no treatment). Two days post-transfection, cells were treated with 1 μM puromycin (Sigma) for 30 min at 37 °C. The background control well did not receive puromycin. Following incubation, cells were washed twice with HBSS and fixed in 5% neutral-buffered formalin (in PBS) for 20 min at room temperature. Cells were then washed three times with PBS, permeabilized with 0.2% Triton X-100 for 10 min, and blocked with Intercept Blocking Buffer for 1 hr at room temperature.
 
 Anti-puromycin antibody (3RH11, Absolute Antibody) was diluted 1:250 in blocking buffer and incubated with cells overnight at 4 °C. The following day, cells were washed four times with TBST, then incubated with goat anti-mouse IRDye 800CW (1:800) and CellTag 700 (1:500) diluted in blocking buffer. The background subtraction well did not receive CellTag. After four additional washes with TBST, plates were inverted, tapped dry on absorbent paper, and imaged using the Odyssey M imager. Signal quantification was performed using Empiria Studio software.
 
-## rRNA integrity analysis
+### rRNA integrity analysis
 
 FLS were plated in six-well plates and either transfected with saRNA or subjected to mock transfection. After 26–30 hr (allowing for saRNA replication but before substantial cell loss), cells were harvested by scraping in 350 μL RLT buffer (QIAGEN) supplemented with 10 μL/mL β-mercaptoethanol (Sigma). Cell lysates were homogenized using QIAshredder columns (QIAGEN), and total RNA was extracted using the RNeasy Mini Kit (QIAGEN) according to the manufacturer’s instructions. RNA quantity and quality were initially assessed using a N60 nanophotometer (Implen). Samples were aliquoted and stored at –80°C until further analysis. For detailed quality assessment, samples were transported on dry ice and analyzed using the RNA Pico Kit on the 2100 Bioanalyzer System (Agilent), performed by Cambridge Genomic Services. RIN values were determined for each sample.
 
-## Multiplex bead-based immunoassay
+### Multiplex bead-based immunoassay
 
 FLS were stained with BioTracker and seeded onto six-well plates. After transfection, the saRNA-lipofectamine complexes were replaced with 2 mL of fresh FLS media. Two days later, supernatants were collected and stored at –80°C until analysis. On the day of analysis, the supernatant was thawed on ice, and levels of 13 cytokines (IFN-γ, CXCL1, TNF-α, MCP-1, IL-12p70, CCL5, IL-1β, CXCL10, GM-CSF, IL-10, IFN-β, IFN-α, and IL-6) were measured using the LEGENDplex Mouse Anti-Virus Response Panel (740621, BioLegend) following the manufacturer’s protocol. Samples were run in duplicate. A custom 3D-printed PETG vacuum manifold (designed with Fusion 360) was used for vacuum filtration, and beads were analyzed using a CytoFLEX LX flow cytometer (Beckman Coulter). Data analysis was performed with the LEGENDplex Qognit Data Analysis Suite (BioLegend). To account for differences in cell number between wells, cytokine levels were normalized to the BioTracker signal before transfection.
 
-## ML336 experiments
+### ML336 experiments
 
 ML336 (Cayman Chemical) was dissolved in DMSO (Sigma) to a stock concentration of 10 mM and stored in aliquots at –20°C. ML336 was added to cell cultures at the indicated final concentrations. Vehicle controls received either 0.01% or 0.1% DMSO, corresponding to the maximum DMSO concentrations used in the respective ML336-treated conditions.
 
 In concentration–response experiments, ML336 was applied during transfection. mScarlet3 fluorescence was measured on day 2 post-transfection. Data were fit to a variable-slope sigmoidal model, and a single data point was excluded due to pipetting error. In washout experiments, media was replaced 3 times on day 2 post-transfection and mScarlet3 signal was measured the following day. In these experiments, data were fit to a bell-shaped concentration–response curve.
 
-## RT-qPCR experiments
+### RT-qPCR experiments
 
 FLS were seeded in 96-well plates, and transfections were performed using a 30-fold downscaling of the volumes used in six-well formats. At 2 days post-transfection, cDNA was synthesized directly from cell lysates using the TaqMan Fast Advanced Cells-to-CT Kit (Invitrogen), according to the manufacturer’s protocol and stored at –80 °C until analysis. For each biological replicate, a single well that received no treatment and was processed without reverse transcriptase (RT) served as a shared no-RT control.
 
@@ -305,10 +887,10 @@ Each array included the following TaqMan Gene Expression Assays: 18S (Hs99999901
 
 Reactions were run for 40 cycles on a StepOnePlus Real-Time PCR System (Applied Biosystems), using manufacturer-recommended conditions. A consistent ΔRn threshold was applied across all plates and replicates. ΔCT values were calculated relative to 18S. Transcripts not detected in all samples were excluded from analysis, with the exception of EGFP. These excluded transcripts included Oas1e, Ifnb1, Ifna2, Ifng, and Tnf. Statistical significance was evaluated using ΔCT values, and mean –ΔΔCT values relative to the mock condition are shown as a heatmap for visualization.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses and curve fitting were conducted using GraphPad Prism 9, with specific tests detailed in the corresponding figure legends. All statistical tests were two-sided tests.
 
-## Materials availability statement
+### Materials availability statement
 
 All key plasmids generated in this study have been deposited with the Addgene repository. Accession numbers have been provided in the Key Resources Table.

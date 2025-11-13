@@ -37,13 +37,41 @@ In this work, we investigate the potential effects of Ocr on the host transcript
 
 ## Results
 
-## Ocr interacts with RNAP with high affinity
+### Ocr interacts with RNAP with high affinity
 
 An early study by Ratner (1974) showed that upon T7 infection, Ocr protein was detected in pull-down experiments using host RNAP as bait, suggesting that Ocr could associate with the host transcriptional machinery. To assess if Ocr can engage with RNAP directly, we carried out in vitro interaction studies using purified components (Figure 1, Figure 1—figure supplement 1). We observed that purified Ocr co-eluted with RNAP in gel filtration experiments, suggesting a tight interaction of RNAP and Ocr sufficient to withstand the lengthy elution time of the complex during chromatography (Figure 1A–C). The complex persisted for the order of minutes during chromatography, suggesting a stable complex. To quantify the interactions, we carried out binding experiments between RNAP and Ocr using microscale thermophoresis (MST). Our results show the binding affinity (dissociation constant, Kd) is in the order of 10 nM, similar to that of RNAP with sigma factors (Figure 1D–F). These results thus confirm the basis for the RNAP-Ocr interaction originally observed (Ratner, 1974). Our observed affinity of Ocr for RNAP is about three orders of magnitude lower than the values reported for the association of Ocr with the EcoKI type I restriction modification enzyme (Atanasiu et al., 2002) as would be expected if the type I RM enzyme was the primary target for Ocr.
 
-## Structures of Ocr in complex with RNAP
+![Figure 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig1-v2.jpg)
+
+**Figure 1.:** (A) Gel filtration chromatography profiles of RNAP (green), Ocr (blue) and RNAP-Ocr complex (orange). Two peaks correspond to RNAP-Ocr complexes (B) SDS-PAGE of the corresponding fractions from (A) as indicated by coloured dashed lines in (A) and the purified RNAP and Ocr as comparison, the same below in (C). (C) Western blotting of samples from RNAP-Ocr gel filtration fractions to verify the presence of Ocr co-eluting with RNAP, here only Ocr is his-tagged. Two fractions under each peak (as coloured dash arrows shows) in gel-filtration is loaded. (D–F). MST experiments measure the dissociation constants (Kd) of Ocr, σ70 and σ54 with RNAP. These Kd values represent maximum values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quality of proteins used in this study as judged by SDS-PAGE gels. (B–C) RNAP-σ70 and RNAP-σ54 holoenzymes are formed and purified by gel filtration chromatography and assessed by SDS-PAGE.
+
+### Structures of Ocr in complex with RNAP
 
 In order to understand how Ocr interacts with RNAP, we subjected the purified complex from size-exclusion chromatography to cryo electron microscopy (cryoEM) single particle analysis. After several rounds of 2D classification, which allowed us to remove ice contaminations, very large particles or particles much smaller than RNAP, the remaining particles were subject to 3D classifications using the structure of the RNAP filtered to 60 Å as an initial model (PDB code 6GH5, Figure 2—figure supplement 1). Two classes with clear density for Ocr were refined to a global resolution 3.7 and 3.8 Å respectively although the quality is not uniform in the reconstruction, as demonstrated in the resolution distribution. Two resolution zones seem to be evident, around 3–4 Å and around 7–8 Å, reflecting the structural features of the complex (some domains are mobile) and partly due to preferential orientations of the particles (Figure 2, Figure 2—figure supplement 2 and Figure 2—figure supplement 3). The electron density for RNAP is clearly resolved and two distinct structural models of RNAP (taken from PDB code 6GH6 and 6GH5) can be readily fitted into the two reconstructions (Figure 2 and Figure 2—figure supplement 3A). The remaining density region that is not accounted for by RNAP can accommodate an Ocr dimer (Figure 2—figure supplement 3A). The density for Ocr is of sufficient quality that allows accurate positioning of the Ocr atomic structure (PDB code 1S7Z) (Figure 2—figure supplement 3B–3C). The regions with the highest resolution within the reconstruction are in the RNAP core (Figure 2—figure supplement 2), where density for many side chains is clearly visible (Figure 2—figure supplement 3C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-v2.jpg)
+
+**Figure 2.:** (A) ‘wide-clamp’ mode. (B) ‘narrow-clamp’ mode. RNAP and σ70 were shown as surface, Ocr shows as cartoon. The colour key is below the figure. α-grey, β-pale cyan, β’-wheat, ω-slate, σ70-palegreen, Ocr–magenta (proximal subunit) and yellow (distal subunit), non-template strand DNA(NT)-sky blue, template strand DNA (T)-black. (C) RNAP-σ70 open promoter complex (PDB code 6CA0).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Included are a typical micrograph, representative 2D classes and image processing flowchart, and the two distinct RNAP-Ocr complexes obtained.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) ‘Wide-clamp’ (B) ‘narrow-clamp’. (A and B) Local resolution maps in surface view and cut-through views (separated by resolution indicator), and angular distribution of particles (the extreme right panel of (A) and (B)). (C) The corresponding FSC curves of wide-clamp and narrow-clamp structures including corrected, unmasked, masked and phase randomized masked maps). (D) Plots showing the spread of the directional resolutions (+/- 1 s.d., green dotted lines) from the global FSC (red line) and the histogram of directional resolutions (blue bars). Labels on the left Y-axis refer to directional FSC histograms. Labels on the right axis refer to global FSC. The grey dotted line indicates when FSC = 0.143. (E) FSC curves of model vs the two half maps. The model is only refined against half map 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Overall fit of the atomic structural models into the corresponding reconstructions. Maps are filtered to local resolutions. left panel - wide clamp conformation (global resolution at 3.7 Å), right panels - narrow clamp conformation (global resolution at 3.8 Å). (B) Views showing structural models of Ocr fitted into the electron density map and the surrounding RNAP. (C) Well defined regions showing clear density of RNAP and Ocr including side chains.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The structures are aligned on one Ocr monomer.
 
 During 3D classification, it is clear that a number of different conformational and structural classes exist within the dataset and two distinct classes were identified due to their widely differing RNAP clamp conformations (Figure 2—figure supplement 1). Bacterial RNAP consists of five subunits forming a crab claw shape with the two large subunits β and β’ forming the claws (or clamp) which enclose the RNAP channel that accommodates the transcription bubble and downstream double-stranded (ds) DNA. The RNAP clamp is highly dynamic and single-molecule Forster Resonant Energy Transfer data have shown that the RNAP clamp adapts a range of conformations from closed to open involving more than 20 Å movement and 20o rotation of the clamp (Chakraborty et al., 2012). Our recent structural work showed that specific clamp conformations are associated with distinct RNAP functional states with the widely opened clamp conformation associated with the DNA loading intermediate state (Glyde et al., 2018).
 
@@ -61,9 +89,21 @@ In the narrow clamp mode, the proximal Ocr subunit interacts with the β’ clam
 
 **Figure 4.:** (A) Two orthogonal views of RNAP-Ocr narrow-clamp structure (RNAP shows as surface and Ocr shows as cartoon (magenta and yellow), overlaid with σ70 open complex structure (PDB code 6CA0). (B) Surface charge distribution of RNAP showing positively charged surfaces in the cleft where Ocr binds. Magenta ellipse – where Ocr binds. (C) Surface charge distribution of Ocr facing the bottom of the cleft including β’ jaw domain. Magenta ellipse – area of Ocr that is inside the cleft showing both negative and positively charged areas. Blue – positively charged, red – negatively charged.
 
-## Ocr inhibits transcription in vitro and in cells
+### Ocr inhibits transcription in vitro and in cells
 
 In order to understand the significance of Ocr binding to RNAP, we investigated the effects of Ocr on in vitro transcription using short-primed RNA (spRNA) assays performed on various promoter DNAs (see Materials and methods). To determine the effect of Ocr on RNAP-σ70 transcription activity we performed in vitro transcription assays using different promoters and promoter variants such as linear σ70 promoter, or lacUV5 promoter (Cámara et al., 2010) as well as a T7A1 supercoiled promoter (Figure 5A–B, Figure 5—figure supplement 1). Our data reveal that adding 5 μM Ocr decreased activity of RNAP-σ70 on the different promoters in the range of 70–10%. On the linear promoter in the presence of 5 μM Ocr the amount of spRNA was significantly reduced (to 10–30%) when Ocr was added prior to or after the holoenzyme formation but before DNA was added (Figure 5A-B I-II). However, the effect of Ocr after DNA was added was less pronounced (Figure 5A–B III). Ocr did not abolish transcription on the supercoiled T7A1 promoter at the same extent as on the linear promoters, indicating a role for DNA topology and perhaps the energy barriers of DNA opening in open complex formation and the promoter sensitivity to Ocr (Figure 5—figure supplement 1C I-III).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-v2.jpg)
+
+**Figure 5.:** (A-B) spRNA experiments on σ70 using two different promoter DNAs. Reaction schematics are shown with I, II, III representing experiments when Ocr is added during different stages of transcription initiation reaction. A control lane without Ocr is also shown. (C-D) using a reporter assay, we show that over-express of Ocr in E. coli cells inhibits cell growth (C) and β-galactosidase activities (D). At least three independent experiments were performed, each with 3–5 technical replicates.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Reaction schematics are shown with I, II, III, IV representing experiments when Ocr is added during different stages of transcription initiation reaction. A control lane without Ocr is also shown. Data here show that Ocr can inhibit σ54 and σ70-dependent transcription during different stages of initiation and independent of promoters. At least three independent experiments were performed, each with 3–5 technical replicates.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) β-galactosidase activity and (B) lacZ mRNA levels at 15 hr post-induction in the presence and absence of Ocr. At least three independent experiments were performed, each with 3–5 technical replicates.
 
 The effect of Ocr on the major variant RNAP-σ54 dependent transcription was also assessed using different variants of Sinorhizobium meliloti nifH promoter including linear and supercoiled DNA (Chaney and Buck, 1999; Glyde et al., 2018), (Figure 5—figure supplement 1A,B). The phage shock protein F (PspF1-275) was used as an activator of RNAP-σ54 transcription to promote open complex formation (see Materials and methods). Again, on both linear and supercoiled nifH promoters the RNAP-σ54 complexes were sensitive to Ocr (Figure 5—figure supplement 1).
 
@@ -71,11 +111,19 @@ Our results show that Ocr can efficiently inhibit transcription in vitro. We nex
 
 An Ocr-mediated growth inhibition effect was indeed observed in minimal modified M9 media (Figure 5C). The effects were further assessed using the chromosomal β-galactosidase gene as a reporter. During the 5 hr period following induction with IPTG, a ~ 10 fold decrease of normalised β-galactosidase activity was observed in E. coli cells expressing Ocr compared to cells that do not express Ocr (Figure 5D). Moreover, at 15 hr post-induction, upon induction, there was a 4-fold increase of normalised β-galactosidase activity in cells not expressing Ocr, while the β-galactosidase activity in cells expressing Ocr was lower overall and the observed increase upon induction was less than 2-fold (Figure 5—figure supplement 2A). Subsequent measurements of lacZ mRNA using reverse transcription followed by quantitative polymerase chain reaction (RT-qPCR) showed that the observed β-galactosidase activity is concomitant with lacZ mRNA levels (Figure 5—figure supplement 2B), confirming that Ocr was inhibitory for transcription in cells.
 
-## Ocr inhibits RNAP recruitment and open complex formation but does not disrupt pre-formed open complexes
+### Ocr inhibits RNAP recruitment and open complex formation but does not disrupt pre-formed open complexes
 
 Since Ocr interfered with transcription, we wanted to investigate whether it does so through interfering with RNAP recruitment by sigma and/or other processes required for transcription. Specifically, we probed the ability of Ocr in interfering with RNAP- σ holoenzyme and holoenzyme-promoter complex formation (recruitment) and pre-formed open complex, which is competent for transcription, thus allowing us to assess the effects on elongation.
 
 Using purified components and gel mobility shift assays, Ocr was observed to inhibit RNAP-σ70 holoenzyme formation in a concentration dependent fashion and irrespective of whether Ocr is added before or after σ (Figure 6A and B, comparing lane 6 with 7–10). Direct competition experiments with pre-formed RNAP-σ70 holoenzyme show that appearance of a RNAP-Ocr complex accompanies the disappearance of the RNAP-σ70 holoenzyme, (Figure 6A and B, comparing lane 6 with lanes 11–12). Indeed, MST experiment of Ocr binding to RNAP-σ70 revealed that Ocr can displace σ70 with an apparent Kd of ~20 nM (Figure 6—figure supplement 1C). This is also consistent with data showing that RNAP has similar affinities for Ocr and σ (Figure 1D–F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig6-v2.jpg)
+
+**Figure 6.:** (A and B) Native PAGE shows Ocr can inhibit and disrupt RNAP-σ70 holoenzyme formation. Coomassie blue staining (A) and Western blots against His-tagged σ70 (B). (A and B) reaction schemes are indicated above. E represents RNAP core enzyme; I, II, III indicate the point when Ocr was added during the reactions. In Reaction III, holoenzyme was preformed and purified by size exclusion chromatography first. Protein concentrations are shown in the reaction schemes. In lanes 7, 9, 11, a 1:1 molar ratio of Ocr to σ was used, whereas in lane 8, 10, 12, a 4:1 molar ratio of Ocr to σ was used. The exact Ocr concentrations are labelled above each lane. (C and D) σ70 open complex formation with different promoter DNA as assayed by native-PAGE gels and stained for DNA. Reaction schemes are indicated above. I, II, III indicate the point when Ocr was added during the reactions. The same experimental conditions were used as in vitro transcription assays in Figure 5, with either 0.4 µM or 5 µM final concentration Ocr added for each reaction, as indicated in each lane. Reaction in the absence of Ocr (w/o Ocr) was used as a control. All reactions include 100 µg/ml heparin to ensure only open complexes are captured.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52125/elife-52125-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Native PAGE gels. (A) Western blots against His-tagged σ54 (B) Coomassie blue staining. Reaction schemes are indicated above. E represents core enzyme RNAP; I, II, III indicate the point when Ocr was added during the reactions. Proteins and DNA concentrations are shown. In lanes 7, 9, 11. a 1:1 molar ratio of Ocr to σ was used, whereas in lane 8, 10, 12, a 4:1 molar ratio of Ocr to σ was used. (C) Microscale thermophoresis (MST) experiment of Ocr binding to the RNAP-σ70 holoenzyme, supporting that Ocr competes with sigma in RNAP binding. (D) MST experiment of RNAP-σ70 and RNAP-σ54 binding to promoter DNA with high affinity. The bindings are too tight to give a reliable Kd.
 
 We next assessed the ability of Ocr in inhibiting recruitment to the promoter DNA by monitoring the amount of DNA bound holoenzymes using two different promoters (Figure 6C–D). Ocr clearly inhibits the formation of a RNAP-σ70-DNA complex in a concentration dependent manner. Adding 5 μM Ocr either before or after σ addition resulted in ~30% promoter complex formation (Figure 6C–D,I–II). Adding Ocr after DNA has only limited effects (Figure 6C–D III). This is consistent with the higher binding affinity between RNAP-σ and DNA (0.1 nM for σ70 and 3 nM σ54) (Figure 6—figure supplement 1) compared to RNAP-Ocr (Figure 1D). These results are in excellent agreement with those in vitro transcription assay (Figure 5).
 
@@ -85,7 +133,7 @@ Together our binding experiments and in vitro transcription assays support the p
 
 ## Discussion
 
-## Ocr is a bifunctional protein
+### Ocr is a bifunctional protein
 
 Our data here characterise a new activity for Ocr in inhibiting the host transcriptional machinery in addition to its established role in inhibiting the type I RM systems of the host. Thus, Ocr is a bifunctional DNA mimic protein.
 
@@ -99,13 +147,13 @@ Our data suggest an answer to the puzzle of why Ocr is so abundantly overexpress
 
 The bifunctionality observed in Ocr may also be shared by other DNA mimic proteins. For example, the phage T4 Arn protein targeting the McrBC restriction enzyme also has weak interaction with histone-like protein H-NS (Ho et al., 2014). Arn is very similar in shape to Ocr but since T4 requires the host RNAP throughout its life cycle it is unlikely to target RNAP as strongly as Ocr. Additional functions may also exist for other DNA mimics like phage λ Gam protein (Wilkinson et al., 2016) and the recently discovered anti-CRISPR proteins (Wang et al., 2018). How the multifunctionality of these proteins are utilised by phage is an interesting topic for further study.
 
-## Comparisons with other RNAP inhibiting bacteriophage proteins
+### Comparisons with other RNAP inhibiting bacteriophage proteins
 
 Several other bacteriophage proteins inhibit transcription. These include T7 gp2 and gp5.7, which inhibits E. coli RNAP, and P23-45 gp39 and gp76, which inhibit T. thermophilus transcription. Structural and biochemical studies show that gp2 specifically inhibits σ70-dependent transcription through the interactions and stabilisation of the position of the inhibitory region 1.1 of σ70, between the β and β’ clamps at the rim of the downstream DNA binding channel (Figure 7B; Bae et al., 2013). Gp39 binds at region 4 of σA and restricts its conformation so that it is unable to bind to −35 promoter regions (Figure 7C; Tagami et al., 2014). Gp76 on the other hand, binds deeply in the RNAP cleft, preventing open complex formation as well as transcription elongation (Figure 7D; Ooi et al., 2018). However, the binding site of gp76 is adjacent to, but not overlapping the σ70 region σ3.2, thus gp76 does not inhibit holoenzyme formation (Figure 7D).
 
 In all the cases above, the bacteriophage proteins do not inhibit holoenzyme formation. Ocr on the other hand, inhibits holoenzyme formation per se and can disrupt a pre-formed holoenzyme (Figure 6A–B, Figure 6—figure supplement 1, Figure 7A). In addition, Ocr can also inhibit open complex formation but is unable to effectively disrupt pre-formed open complex (Figure 6).
 
-## Unique features of Ocr defines its ability in specific DNA processing systems
+### Unique features of Ocr defines its ability in specific DNA processing systems
 
 Ocr was shown to mimic a dsDNA in both shape and charge distribution (Walkinshaw et al., 2002) and an Ocr dimer mimics a slightly bent B-form DNA. Ocr has been shown to occupy the DNA binding grooves of type I RM enzymes through specific interactions, thus preventing viral DNA from being degraded or modified by the host RM system (Atanasiu et al., 2002; Kennaway et al., 2009).
 
@@ -117,33 +165,179 @@ The interactions and structures of Ocr with RNAP observed here suggest that Ocr 
 
 ## Materials and methods
 
-## RNAP-Ocr complex formation
+### RNAP-Ocr complex formation
 
 E. coli RNA polymerase was purified as previously reported (Yang et al., 2015). As well as being purified as previously described (Sturrock et al., 2001), Ocr was ligated into pOPINF vector with a N-terminal His-tag. Three purification steps (Ni-NTA affinity, Heparin, and Gel filtration chromatography) were employed, which generated homogeneous Ocr protein as judged by SDS-PAGE gel. The RNAP-Ocr complex was purified by gel filtration chromatography. Initially RNAP (final concentration 14.5 µM) and Ocr (all Ocr concentrations are for the dimeric form, final concentration 58.0 µM) were mixed at a 1:4 molar ratio in a 150 µl reaction volume and the mixture (150 µl) was incubated on ice for 30 mins before being loaded onto the gel filtration column with a flowrate of 0.3 ml/min (Superose 6 10/300, GE Healthcare) and eluted in buffer containing 20 mM Tris pH8.0, 150 mM NaCl, 1 mM TCEP, 5 mM MgCl2. The fractions were run on SDS-PAGE and the presence of Ocr was confirmed by Western blot against the His-tag. The same amount and concentration of RNAP and Ocr alone were also loaded on a Superose 6 10/300 column separately as a control .
 
-## Microscale thermophoresis (MST)
+### Microscale thermophoresis (MST)
 
 All MST experiments were performed using a Monolith NT.115 instrument (NanoTemper Technologies, Germany) at 22 °C. PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4) supplemented with 0.05% Tween-20 was used as MST-binding buffer for all experiments. In all cases hydrophobic treated capillaries were used. σ54, σ54-R336A and σ70 were purified to homogeneity similarly as described previously (Nechaev and Severinov, 1999; Yang et al., 2015). σ54-R336A and σ70 holoenyzme were individually produced with gel filtration chromatography by mixing RNAP and σ with 1:4 molar ratio and incubating on ice for half an hour before loading to superpose 6 10/300 column.
 
 Ocr, σ54, and σ70, σ54-R336A -RNAP holoenzyme and σ70-RNAP holoenzyme were all His tagged and labelled with the kit (Monolith His-Tag Labeling Kit RED-tris-NTA 2nd Generation) separately. The labelled Ocr and sigma factors were diluted to a concentration of 50 nM and mixed with an equal volume of a serial dilution series of RNAP incubated at room temperature for 20 min before loading into MST capillaries thus giving a final concentration of 25 nM for Ocr and the sigma factors in the direct titration of RNAP. For Ocr competitive binding with σ70 holoenzyme, 50 nM of his-labeled σ70 holoenzyme, diluted in MST-binding buffer, was mixed with equal volumes of a dilution series of Ocr in MST-binding buffer. For DNA with holoenzyme binding affinity, linear promoter DNA (Zuo and Steitz, 2015) was used σ70 and a nifH promoter with mismatch DNA between -10 and -1 (Glyde et al., 2018) was used. 40 nm of his-tagged holoenzyme was mixed with equal volumes of a dilution series of DNA in MST-binding buffer. MST experiments were performed using 70–100% LED power and 40–60% MST power with a wait time of 5 s, laser on time of 30 s and a back-diffusion time of 5 s. For all the binding experiments (Ocr or σ with RNAP, or DNA with holoenzyme), MST data were analysed using Grafit 3.0 (Erithacus Software) and the data were fitted with a quadratic tight binding equation with the concentration of the constituent being titrated kept constant in the fitting process. The dissociation constants obtained are maximum values and the real values are likely to be rather smaller. This is due to the concentration of the protein being titrated being larger than the dissociation constant. In the competitive binding experiment with Ocr and σ70-RNAP holoenzyme, the data were fitted using the tight binding equation to determine the apparent dissociation constant. Each experiment was repeated at least three times.
 
-## CryoEM sample preparation
+### CryoEM sample preparation
 
 For structural studies using cryoEM, the His-tag of Ocr was cleaved and the purification procedure was as previously reported (Sturrock et al., 2001). The complex was formed as described above. The RNAP-Ocr complex sample was concentrated to 0.6 mg/ml and 3.5 µl of the complex was applied to R2/2 holey carbon grids (Quantifoil). The vitrification process was performed using a Vitrobot Mark IV (FEI) at 4°C and 95% humidity, blotted for 1.5 s with blotting force −6. The grid was then flash frozen in liquid ethane and stored in the liquid nitrogen before data collection.
 
-## Electron microscopy data collection
+### Electron microscopy data collection
 
 The cryoEM data were collected at eBIC (Diamond Light Source, UK) on a Titan Krios using EPU (FEI) operated at 300 kV and a K2 summit direct electron detector (Gatan). The data were collected with a defocus (underfocus) range between 1.5 µm to 3.5 µm. A total of 3543 micrographs were collected at pixel size of 1.06 Å/pixel and a dose of 50 e-/Å2 and each micrograph was fractioned into 41 frames (1.21 e-/Å2/frame).
 
-## Image processing
+### Image processing
 
 The procedure of data processing is summarised in Figure 2—figure supplement 1. Frame alignment and dose weighting were carried out with MotionCor2 (Zheng et al., 2017) before estimating CTF parameters using Gctf (Zhang, 2016) and particle picking using Gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/) without a template. The picked particles were then extracted into boxes of 256 × 256 pixels. Initial 2D classification of the data was carried out in Cryosparc (Punjani et al., 2017) to remove junk particles due to ice contamination or other defects on the grids. Subsequent image processing was carried out in Relion 2.1 (Scheres, 2012). Briefly, the particles were separated using 3D classification. Three out of five classes were subsequently refined using the RNAP from the closed complex RPc (EMD-3695) filtered to 60 Å as the initial reference map. The remaining two classes were discarded due to their lack of clear structural features, probably derived from particles that are of poor quality. After combining the remaining three classes and refinement, one more round of focused 3D classification by applying a mask was carried out to separate different complexes or conformations. To generate the mask, structural models of RNAP and Ocr were first fitted into the refined 3D reconstruction. Ocr and the surrounding RNAP clamp regions were then used to calculate a volume in Chimera. Two classes with clearly different conformations of RNAP and both with Ocr bound, were refined, polished and post-processed (with masking and sharpening), resulting in the final reconstructions at 3.7 Å (for the wide clamp RNAP-Ocr) and 3.8 Å (for the narrow clamp RNAP-Ocr) based on the gold-standard Fourier shell correlation (FSC) at 0.143 criterion. The directional FSC analysis and histogram of directional resolution were performed using the 3D-FSC server (3dfsc.salk.edu) (Tan et al., 2017).
 
-## Model building, refinement and structural analysis
+### Model building, refinement and structural analysis
 
 The RNAP from RPo (PDB code: 6GH5) and RPip (PDB code: 6GH6) was used as an initial model for the model building of narrow clamp and wide clamp reconstructions, respectively. Briefly, the RNAP was first fitted into the RNAP-Ocr density map in Chimera (Goddard et al., 2007). Subsequently the RNAP structure was subject to flexible fitting using MDFF (Trabuco et al., 2009). The Ocr crystal structure (PDB code: 1S7Z) was manually fitted into the extra density of the RNAP-Ocr map in Coot (Emsley et al., 2010). Jelly body refinement in Refmac (Murshudov et al., 2011) and real space refinement in Phenix (Afonine et al., 2012) were used to improve the model quality. The final statistics of the model are in Table 1. The figures used for structure analysis and comparison were produced in Pymol (The PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC) and UCSF Chimera (Goddard et al., 2007).
 
-## Native gel mobility assay and western blotting
+**Table 1.**
+ Cryo-EM data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RNAP-Ocr</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>47393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total micrographs</td>
+      <td>3543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Movie frames</td>
+      <td>41</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>−1.2 to −3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Electron dose (e-/Å−2)</td>
+      <td>49.53</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total particles</td>
+      <td>753783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Reconstruction (RELION)</td>
+      <td>Wide clamp</td>
+      <td>Narrow clamp</td>
+    </tr>
+    <tr>
+      <td>Particles</td>
+      <td>33646</td>
+      <td>27312</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.7</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.7</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.003</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.816</td>
+      <td>0.865</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored regions (%)</td>
+      <td>91.88</td>
+      <td>91.05</td>
+    </tr>
+    <tr>
+      <td>Allowed regions (%)</td>
+      <td>8.06</td>
+      <td>8.69</td>
+    </tr>
+    <tr>
+      <td>Outlier</td>
+      <td>0.06</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All-atom clashscore</td>
+      <td>4.63</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.15</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>C-beta deviations</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Native gel mobility assay and western blotting
 
 σ54 as well as σ70 were purified to homogeneity as described previously (Nechaev and Severinov, 1999; Yang et al., 2015). All the reactions were carried out in the binding buffer (20 mM Tris-HCl pH8.0, 200 mM KCl, 5 mM MgCl2,1 mM DTT, 5% glycerol) at room temperature, for the sequentially addition of different components in each step, the incubation time was approximately15-20 min and all the gels used were polyacrylamide. To test the effects of Ocr on holoenzyme formation for both σ54 and σ70, all the reactions were carried out in 20 µl at room temperature. The order of addition, final concentrations and molar ratio of different components are listed in corresponding figures. For each 20 µl reaction, 10 µl was taken out and loaded into one polyacrylamide gel (4.5%) and the remaining 10 µl of each sample was loaded to another identical gel (4.5%) and run in parallel for 160 mins at 80 volts at 4°C cold room. One gel was then stained with Coomassie blue and visualised, whilst the other gel was used for western blotting against the His-tagged protein of either σ54 or σ70, following the standard western blotting protocol (iBlot 2 Dry Blotting System, Thermo Fisher Scientific).
 
@@ -151,18 +345,18 @@ To test the effects of Ocr on the formation σ70 open complexes, DNA probes used
 
 All the experiments were repeated at least once and the results are consistent with each other.
 
-## Small primed RNA assays
+### Small primed RNA assays
 
 All reactions were performed in 10 µl final volumes containing: STA buffer (Burrows et al., 2010), 100 nM holoenzyme (1:4 ratio of RNAP:σ54), 20 nM promoter DNA probe (for σ54 dependent transcription open complex formation, 4 mM dATP and 5 mM PspF1-275 were also present) and incubated at room temperature. The sp RNA synthesis was initiated by adding 0.5 mM dinucleotide primer (ApG, ApA, CpA or UpG), 0.2 mCi/ml [α-32P] GTP (3000 Ci/mmol) or 0.2 mCi/ml [α-32P] UTP (3000 Ci/mmol). The reaction mixtures were quenched by addition of 4 µl of denaturing formamide loading buffer and run on a 20% denaturing gel and visualised using a Fuji FLA-5000 Phosphorimager. At least three independent experiments were carried out and values were within 5% of the relative % values measured.
 
-## Bacterial growth curves
+### Bacterial growth curves
 
 Growth of E. coli MG1655 cells not expressing Ocr (WT/pBAD18cm) and expressing Ocr (WT/pBAD18cm[ocr]) was monitored for 20 hr using a FLUOstar Omega plate reader (BMG LABTECH). Starting cultures of 0.1 OD600 were inoculated in four different media, Luria-Bertani Broth (LB) with low (5 g/L) and high (10 g/L) salt concentration, nutrient broth (Oxoid) and modified M9 medium (Teknova), at two different temperatures, 37°C and 25°C. Expression of Ocr was induced using two different concentration of arabinose, 0.02%(w/v) and 0.2%(w/v).
 
-## Beta-galactosidase assays
+### Beta-galactosidase assays
 
 Gene expression levels of beta-galactosidase in E. coli MG1655 cells not expressing Ocr (WT/pBAD18cm) and expressing Ocr (WT/pBAD18cm[ocr]) were assessed using 0.002 mg/ml fluorescein di(beta-D-galactopyranoside) (FDG; Sigma-Aldrich). FDG results in fluorescence signals, which are proportional to the enzymatic activities after being hydrolysed to fluorescein by beta-galactosidase. Beta-galactosidase expression was induced by 1 mM IPTG 5 hr post-inoculation.
 
-## RNA extraction, DNase digestion, reverse transcription and quantitative polymerase chain reaction (RT-qPCR)
+### RNA extraction, DNase digestion, reverse transcription and quantitative polymerase chain reaction (RT-qPCR)
 
 Following the beta-galactosidase assays, total bacterial RNA was extracted from E. coli MG1655 cells using the RNeasy Mini Kit (Qiagen) according to the manufacturer’s instructions. Residual DNA was digested by DNase I (Promega) and cDNA synthesis was performed using 500 ng of RNA and the SuperScript IV reverse transcriptase (Invitrogen) according to the manufacturer’s instructions. Quantitation of the beta-galactosidase mRNA levels was performed using the specific oligonucleotide primers 5’-ATG GGT AAC AGT CTT GGC GG-3’ and 5’-GGC GTA TCG CCA AAA TCA CC-3’, the Power SYBR Green PCR Master Mix (Applied Biosystems) and the relative standard curve quantitation method as implemented by the OneStep Plus Real-Time qPCR System (Applied Biosystems).

@@ -68,15 +68,31 @@ The current study grew out of an effort to find papillomaviruses (small circular
 
 ## Results
 
-## Virion enrichment, genome sequencing, and annotation
+### Virion enrichment, genome sequencing, and annotation
 
 We have previously developed methods for discovery of new polyomavirus and papillomavirus species in skin swabs and complex tissue specimens (Peretti et al., 2015). Nuclease-resistant DNA from purified virions was amplified by random-primed rolling circle amplification (RCA) and subjected to deep-sequencing. Reads were de novo assembled into contigs and analyzed with a bioinformatics pipeline, Cenote-Taker (a portmanteau of cenote, a naturally occurring circular water pool, and note-taker), to identify and annotate de novo-assembled contigs with terminal direct repeats consistent with circular DNA molecules. In this pipeline, putative-closed circular sequences of greater than 1000 nucleotides (nt) were queried against GenBank’s nucleotide database using BLASTN to remove circles with extensive nucleotide identity (>90% across any 500 nt window) to known sequences. Sequences with >90% identity to previously reported viral sequences represented less than 1.5% of circular contigs and are not included in further analysis. Approximate taxonomy was determined by BLASTX to a protein database derived from RefSeq virus proteins and GenBank plasmid proteins (only hits better than 1 × 10−5 were considered). Open reading frames (ORFs) from remaining unidentified circular DNA sequences > 240 nucleotides (nt) in length were translated and used for RPS-BLAST queries of GenBank’s Conserved Domain Database (CDD). ORFs that did not yield E values better than 1 × 10−4 in RPS-BLAST were subjected to BLASTP searches of viral sequences in GenBank’s nr database (Altschul et al., 1990; Marchler-Bauer and Bryant, 2004; Marchler-Bauer et al., 2015). For ORFs that were not confidently identified in BLAST searches, HHBlits (Remmert et al., 2012) was used to search the CDD, Pfam (El-Gebali et al., 2019), Uniprot (UniProt Consortium, 2019), Scop (Chandonia et al., 2019), and PDB (Burley et al., 2017) databases. The results were used to annotate and name each sequence in a human-readable genome map as well as a format suitable for submission to GenBank. After checking the Cenote-Taker output of each genome, minor revisions were made, as needed, and files were submitted to GenBank (BioProject Accessions PRJNA393166 and PRJNA396064). All annotations meet or exceed recently proposed standards for uncultivated virus genomes (Roux et al., 2019a). Plasmid sequences were frequently detected and were discarded. Circular sequences were considered to be plasmid-like if they: 1) had a best BLASTX hit to a plasmid and 2) had no detectable virion structural genes.
 
 Viral enrichment of the analyzed samples (based on ViromeQC [Zolfo et al., 2019], with alignment to prokaryotic single-copy housekeeping genes) was typically high (Supplementary file 1). However, even in the samples where enrichment was low, quality viral genomes could still be identified based on the bioinformatic analyses.
 
-## Discovery of 2514 DNA viruses in animal metagenomes
+### Discovery of 2514 DNA viruses in animal metagenomes
 
 Of the novel circular sequences detected in the survey, 1844 encode genes with similarity to proteins of ssDNA viruses and 55 encode genes with similarity to dsDNA viral proteins (Figure 1A). The large majority of genomes from this study are highly divergent from RefSeq entries (Figure 1—figure supplement 1). We discovered 868 genomes that had similarity to unclassified eukaryotic viruses known as circular replication-associated protein (Rep)-encoding single-stranded DNA (CRESS) viruses. The group is defined by the presence of a characteristic rolling circle endonuclease/superfamily three helicase gene (Rep) (Zhao et al., 2019; Kazlauskas et al., 2019), but has not been assigned to families by the ICTV or RefSeq. We estimate that 199 non-redundant unclassified CRESS virus genomes had been previously deposited in GenBank, and 85 are curated in RefSeq (Figure 1B). Also abundant was the viral family Microviridae, a class of small bacteriophages, with 670 complete genomes. This represents a substantial expansion beyond the 459 non-redundant microvirus genomes previously listed in GenBank (of which 44 were curated in the RefSeq database). Other genomes that were uncovered represent Anelloviridae (n = 170), Inoviridae (n = 70), Genomoviridae (n = 58), Siphoviridae (n = 18), unclassified phage (n = 14), Podoviridae (n = 10), Myoviridae (n = 7) unclassified virus (n = 6), Papillomaviridae (n = 4), Circoviridae (n = 3), unclassified Caudovirales (n = 3), Bacilladnaviridae (n = 2), Smacoviridae (n = 2), and CrAssphage-like (n = 2) (Figure 1B, Supplementary file 2). Viral families were found in association with 23 different animal species (Figure 1C). It was not surprising to find bacterial viruses, as all animals are presumed to have microbial communities and our sampling included tissues where these communities reside.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig1-v1.jpg)
+
+**Figure 1.:** Gross characterization of viruses discovered in this project compared to NCBI RefSeq virus database entries. (A) Pie chart representing the number of viral genomes in broad categories. (B) Bar graph showing the number of new representatives of known viral families or unclassified groups. (C) Heatmap reporting number of genomes found associated with each animal species. Number of samples per species in brackets. Note that genomes in this study were assigned taxonomy based on at least one region with a BLASTX hit with an E value <1 × 10−5, suggesting commonality with a known viral family. Some genomes may ultimately be characterized as being basal to the assigned family.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** BLASTX summary of each circular DNA molecule recovered from virus-enriched samples. Sequences were queried against a database of viral and plasmid sequences. Only hits with E values < 10−5 were plotted. Here, BLASTX only reports the most significant stretch of amino acid sequence from each circular contig, and, therefore, other regions of each contig can be assumed to be equally or less conserved.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Length, in nucleotides, of circular DNA sequences representing putative viral genomes from this study.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Quality-trimmed reads were aligned with Bowtie2 to reference genomes from RefSeq and this study. Genomes were masked for low-complexity regions.
 
 It is difficult to assign a host to most of the viruses from this study due to their divergence from known viral sequences. However, we searched the CRISPR database at (https://crispr.i2bc.paris-saclay.fr/crispr/BLAST/CRISPRsBlast.php), and three viruses had exact matches to CRISPR spacers in bacterial genomes (Siphoviridae sp. ctcj11:Shewanella sp. W3-18-1, Inoviridae sp. ctce6:Shewanella baltica OS195, Microviridae sp. ctbe523:Paludibacter propionicigenes WB4) and one virus had an exact match to the CRISPR spacer of an archaeon (Caudovirales sp. cthg227:Methanobrevibacter sp. AbM4), implying that these organisms are infected by these viruses. Further, the 142 anelloviruses found in human blood samples (Supplementary file 2) are almost certain to be bona fide human viruses based on their relatedness to known human anelloviruses.
 
@@ -90,15 +106,27 @@ It has recently become apparent that certain nucleic acid extraction reagents ar
 
 Given the stringent requirements for sequences to be considered as belonging to a complete viral genome, as well as the largely unexplored nucleotide space of the virome, it is unsurprising that, in most samples, most reads did not align to the genomes reported in this study or virus genomes from RefSeq (Figure 1—figure supplement 3) (Supplementary file 5).
 
-## Assignment of hallmark genes to networks shows expansion of virus sequence space
+### Assignment of hallmark genes to networks shows expansion of virus sequence space
 
 Single stranded DNA viruses, in general, have vital genes encoding proteins that mediate genome replication, provide virion structure, and, in some cases, facilitate packaging of viral nucleic acid into the virion. Being structurally conserved, these genes also tend to be important for evolutionary comparisons and can serve as important ‘hallmark genes’ for virus discovery and characterization. However, even structurally conserved proteins sometimes do not have enough sequence conservation as to be amenable to high confidence BLASTP searches. We therefore set out to catalog hallmark ssDNA virus genes based using protein structural prediction. Structures of hallmark genes of exemplar isolates from most established ssDNA virus families have been solved and deposited in publicly available databases such as PDB (Protein Data Bank) (Burley et al., 2017). Using bioinformatic tools, such as HHpred, one can assign structural matches for a given gene based on the predicted potential folds of a given amino acid sequence. HHpred has been extensively tested and validated for computational structural modeling by the structural biology community (Meier and Söding, 2015; Huang et al., 2014). The method proves especially useful for protein sequences from highly divergent viral genomes that have little similarity to annotated sequences in current databases.
 
 We extracted protein sequences from our dataset and compiled nonredundant proteins from circular ssDNA viruses in GenBank and used them as queries in HHpred searches against the PDB, PFam, and CDD databases. We then grouped structurally identifiable sequences into hallmark gene categories and aligned them pairwise (each sequence was compared to all other sequences) using EFI-EST (Gerlt et al., 2015). The resulting sequence similarity networks (SSNs) were visualized with Cytoscape (Su et al., 2014), with each node representing an predicted protein sequence (Figures 2–3, Figure 2—figure supplement 1). Nodes (sequences) with significant amino acid similarity are connected with lines representing BLAST similarity scores better than a threshold E value. Sequence similarity network analyses, it has been proposed (Iranzo et al., 2017), represent relationships between viral sequences better than phylogenetic trees. Further, SSNs have previously been used for viral protein and genome cluster comparison (Bolduc et al., 2017; Lima-Mendez et al., 2008; Lefeuvre et al., 2019; Kazlauskas et al., 2019) and can be used to display related groups of viral genes in two dimensions (Bin Jang et al., 2019). These clusters were also used to guide the construction of meaningful phylogenetic trees (Figure 2A–B, Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig2-v1.jpg)
+
+**Figure 2.:** EFI-EST was used to conduct pairwise alignments of amino acid sequences from this study and GenBank with predicted structural similarity to CRESS virus capsid proteins. The E value cutoff for the analysis was 10−5. (A) Cluster consisting of proteins with predicted structural similarity to geminivirus-like capsids and/or STNV-like capsids. The phylogenetic tree was made from all sequences in this cluster. (B) A cluster consisting of sequences with predicted structural similarity to Circovirus capsid proteins. The phylogenetic tree was made from all sequences in this cluster. (C) Assorted clusters and singletons from unclassified CRESS virus proteins that were modeled to be capsids. (D) Nanovirus capsids. (E) Gyrovirus capsids.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Depiction of additional viral hallmark genes from this study and GenBank as sequence similarity networks. E value cutoff = 10−5. See Figure 2 and Materials and methods.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sequences were aligned with PROMALS3D using structure guidance when possible. Trees were drawn using IQ-Tree with automatic determination of substitution model. See Materials and methods. Branches are labeled with bootstrap percent support after 1000 ultrafast bootstrapping events. (A) Microviridae major capsid protein. (B) Inoviridae zonular occludens toxin. (C) CRESS virus Rep. (D) Anelloviridae ORF1 (E) Microviridae/Inoviridae Replication-associated protein I. (F) Microviridae/Inoviridae Replication-associated protein II. (G) Microviridae/Inoviridae Replication-associated protein III.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig3-v1.jpg)
 
-**Figure 3.:** EFI-EST was used to conduct pairwise alignments of amino acid sequences from this study and. GenBank that were structurally modeled to be a rolling-circle replicase (Rep). The analysis used an E value cutoff of 10−60 to divide the data into family-level clusters.Figure 3—source data 1.Figure 3.
+**Figure 3.:** EFI-EST was used to conduct pairwise alignments of amino acid sequences from this study and. GenBank that were structurally modeled to be a rolling-circle replicase (Rep). The analysis used an E value cutoff of 10−60 to divide the data into family-level clusters.
 
 In Figure 2, sequences that showed a structural match to a known eukaryotic circular ssDNA virus capsid protein are displayed as a network. This general capsid type features a single beta-jellyroll fold and assembles into T = 1 virions of 20–30 nm in diameter. The network shows that sequences from this study expand and link smaller disconnected clusters of sequences found in GenBank entries (Figure 2A–C). Perhaps more importantly a number of previously unknown clusters were identified, providing insight into highly divergent hallmark sequences and making this capsid sequence space amenable to BLAST searches in GenBank (Figure 2C). Although the satellite tobacco necrosis virus (STNV) capsid protein encapsidates an RNA molecule, it has previously been noted that its structure is highly similar to the capsid proteins of geminiviruses and other ssDNA viruses (Koonin et al., 2015; Kraberger et al., 2015; Krupovic et al., 2009; Hipp et al., 2017; Bottcher et al., 2004; Zhang et al., 2001) and was included as a model for populating this network.
 
@@ -106,7 +134,7 @@ A similar pattern can be seen in sequence similarity networks for the Rep genes 
 
 Cytoscape files of sequence similarity networks and phylogenetic trees can be found at https://ccrod.cancer.gov/confluence/display/LCOTF/DarkMatter.
 
-## New classes of large CRESS viruses feature unconventional structural genes
+### New classes of large CRESS viruses feature unconventional structural genes
 
 Although no single family of viruses accounts for the majority of genomes in this study, these results expand the knowledge of the vast diversity of CRESS viruses, which appear to be ubiquitous among eukaryotes (Krupovic et al., 2016; Zerbini et al., 2017; Rosario et al., 2017; Varsani and Krupovic, 2018) and are likely to also infect archaea (Díez-Villaseñor and Rodriguez-Valera, 2019; Kazlauskas et al., 2019). Characterized CRESS viruses have small icosahedral virions (20–30 nm in diameter) with a simple T = 1 geometry (Khayat et al., 2011). This capsid architecture likely limits genome size, as nearly all previously reported CRESS virus genomes and genome segments are under 3.5 kb. Exceptions to this size rule are bacilladnaviruses, which have 4.5–6 kb genomes (Tomaru et al., 2011) and cruciviruses, which have 3.5–5.5 kb genomes (Quaiser et al., 2016). Interestingly, the genomes of these larger CRESS viruses encode capsid genes that appear to have been acquired horizontally from RNA viruses (Kazlauskas et al., 2017). In our dataset, eight CRESS-like circular genomes exceed 6 kb in length (Figure 4—figure supplement 1). Further, this study's large CRESS genomes are apparently attributable to several independent acquisitions of capsid genes from other taxa and/or capsid gene duplication events.
 
@@ -118,19 +146,43 @@ Two related large CRESS viruses (ctdb796 and ctce741) encode capsid proteins sim
 
 Two other CRESS virus genomes (isolates ctca5 and ctgh4) encode capsid genes that show amino acid similarity to distinct groups of icosahedral T = 3 ssRNA virus capsids (Makino et al., 2013) (tombus- and tombus-like viruses), but not to cruciviruses or bacilladnaviruses (Figure 4, Figure 4—figure supplement 1D,J, Figure 4—figure supplement 2A). Further, a 6.6 kb CRESS virus (isolate ctbd466) (Figure 4—figure supplement 1L) was found to encode a gene with some similarity to the capsid region of the polyprotein of two newly described ssRNA viruses (ciliovirus and brinovirus (Figure 4—figure supplement 2B) (Makino et al., 2013; Greninger and DeRisi, 2015). Protein fold predictor Phyre2 (Kelley et al., 2015) showed a top hit (58% confidence) for the capsid protein of a norovirus (ssRNA virus with T = 3 icosahedral capsid) for isolate ctbd466 (see GenBank: AXH73946).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig4-v1.jpg)
+
+**Figure 4.:** Sequence similarity network generated with EFI-EST (E value cutoff of 10−5) showing capsid protein sequences of select ssRNA viruses (Nodaviridae, Tombusviridae, tombus-like viruses) and ssDNA viruses (Bacilladnaviridae and crucivirus) together with protein sequences from DNA virus genomes observed in the present study with predicted structural similarity to an RNA virus capsid protein domain (PDB: 2IZW). Predicted capsid proteins for CRESS virus ctca5 and CRESS virus ctgh4 have no detectable similarity to any known DNA virus sequences. On the left, a phylogenetic tree representing the large cluster is displayed. Collapsed branches consist of Tombusviridae, tombus-like viruses, and Nodaviridae capsid genes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Predicted CRESS Rep-like genes are displayed in orange, virion structural genes shown in green, other identifiable viral genes shown in pink, other genes in gray. GenBank accession numbers are displayed above the virus name.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) First order neighbors for Crucian-associated CRESS virus ctgh4 capsid protein were extracted from the network shown in Figure 5 and aligned using Muscle. (B) The same approach was applied to CRESS virus ctbd466 capsid protein. (C) A visualization (Integrative Genomics Viewer) of a read alignment to CRESS virus isolate ctca5. The visualization shows no evidence of artifactual chimerization in the contig assembly process.
+
 Two CRESS genomes (ctbe30 and ctbc27) from separate Rhesus macaque stool samples combine Rep genes specific to CRESS viruses with several genes specific to inoviruses, including inovirus-like capsid genes, which encode proteins that form a filamentous virion (Figure 4—figure supplement 1F,N). The bacteriophage families Inoviridae and Microviridae are ssDNA viruses that replicate via the rolling circle mechanism, but they are not considered conventional CRESS viruses because they exclusively infect prokaryotes and do not encode Rep genes with CRESS-like sequences. Other inovirus-like genes encoded in the ctbe30 and ctbc27 genomes include homologs of zonular occludens toxin (ZOT, a packaging ATPase) and RstB (a DNA-binding protein required for host genome integration) (Falero et al., 2009) (Figure 4—figure supplement 1F,N). TBLASTX searches using ctbe30 and ctbc27 sequences yielded large segments of similarity to various bacterial chromosomes (e.g., GenBank accession numbers AP012044 and AP018536), presumably representing integrated prophages. This suggests that ctbb30 and ctbc27 represent a previously undescribed bacteria-tropic branch of the CRESS virus supergroup.
 
 Viral genomes discussed in this section were validated by aligning individual reads back to the contigs followed by visual inspection. No disjunctions were detected, indicating that illegitimate recombinations are not evident (see Figure 4—figure supplement 2C for an example).
 
-## Network analysis of genetic ‘dark matter’ demonstrates conservation of gene sequence and genome structure
+### Network analysis of genetic ‘dark matter’ demonstrates conservation of gene sequence and genome structure
 
 We defined potential viral ‘dark matter’ in the survey as circular contigs with no hits with E values < 1 × 10−5 in BLASTX searches of a database of viral and plasmid proteins. We posited that leveraging sequence similarity networks would be useful both for analyzing groups of gene homologs and for discerning which gene combinations tended to be present on related circular genomes. To categorize the 609 dark matter elements based on their predicted proteins, we used pairwise comparison with EFI-EST. A majority of translated gene sequences could be categorized into dark matter protein clusters (DMPCs) containing four or more members (Figure 5A). Further, groups of related dark matter elements (i.e. dark matter genome groups (DMGGs)), much like viral families, could be delineated by the presence of a conserved, group-specific marker gene. For example, DMPC1 can be thought of as the marker gene for DMGG1. Certain DMPCs tend to co-occur on the same DMGG. For instance, DMPC7 and DMPC17 ORFs are always observed in genomes with a DMPC1 ORF (i.e., DMGG1) (Figure 5B). This pro tempore categorization method is useful for visualizing the data, but we stress that is not necessarily taxonomically definitive.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig5-v1.jpg)
+
+**Figure 5.:** (A) Sequence similarity network analysis for genes from dark matter circular sequences (minimum cluster size = 4). Clusters are colored based on assigned dark matter genome group (DMGG). Structural predictions from HHpred are indicated (>85% probability). Rep = rolling circle replicases typical of CRESS viruses or ssDNA plasmids. Capsid = single jellyroll capsid protein. Attachment = cell attachment proteins typical of inoviruses. DNA-Binding = DNA binding domain. PLA2 = phospholipase A2. FtsL = FtsL like cell division protein. Clusters that contain a representative protein that was successfully expressed as a virus-like particle are outlined by a dashed rectangle (See Figure 6). (B) Maps of three examples of DMGG1 with DMPCs labeled (linearized for display). (C) DMGG1 iVireons 'structure' score summary by protein cluster. Scores range from −1 (unlikely to be a virion structural protein) to 1 (likely to be a virion structural protein). Additional iVireons score summaries can be found in Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Contigs of over 1000 nts from each sample were subject to iterative BLAST searches. First, BLASTN was performed against the RefSeq database. Contigs without hits were then queried by BLASTX against all of GenBank ‘nr’ database. Contigs without hits were then queried by BLASTX against a database of proteins from genomes reported in this study. The proportion of total reads mapping to each contig was calculated and used for this plot. Individual inspection of contigs shows that most hits in the ‘Translated AA alignment to GenBank’ nr’ ‘Bacteria’’ were likely plasmid or prophage proteins. The proportions of hits in each category are sensitive to stringency settings and to which databases are chosen for the analysis. The key aims of the figure are to display the proportion of reads the current survey rendered classifiable and the fraction of remaining dark matter reads in various samples.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/51971/elife-51971-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Box-and-whisker plots of iVireons ‘Structural' scores for individual DMPCs (numbers on x-axes) grouped by DMGG. Scores (y-axes) range from −1 (unlikely to be a virion structural protein) to 1 (likely to be a virion structural protein). DMGG2 and DMGG3 have been combined due to inferred chimerism.
 
 HHpred, was again employed to make structural predictions for these data (Zimmermann et al., 2018). Instead of querying individual sequences, alignments were prepared using MAFFT (Katoh and Standley, 2013) for each major DMPC to identify conserved residues and increase sensitivity. Then, each alignment was used for an HHpred query. The results indicate that ten DMPCs are likely viral capsid proteins and 11 are rolling circle replicases (Figure 5A).
 
 While most of the circular dark matter in the survey could be characterized using these methods, dark matter contigs represent a small remaining fraction in some samples (Figure 5—figure supplement 1).
 
-## Cell culture expression of candidate ‘dark matter’ capsids yields particles
+### Cell culture expression of candidate ‘dark matter’ capsids yields particles
 
 In contrast to viral genes such as Rep, with conserved enzymatic functions, sequences of the capsid genes are often poorly conserved, even within a given viral family (Buck et al., 2016). Moreover, it appears that capsid proteins have arisen repeatedly through capture and modification of different host cell proteins (Krupovic and Koonin, 2017). This makes it challenging to detect highly divergent capsid proteins using alignment-based approaches or even structural modeling. We therefore turned to an alignment-independent approach known as iVireons, an artificial neural network trained by comparing alignment-independent variables between a large set of known viral structural proteins and known non-structural proteins (Seguritan et al., 2012) (https://vdm.sdsu.edu/ivireons/). As an example of the approach, iVireons scores for DMPCs associated with DMGG1 are shown in Figure 5C. Other sets of iVireons scores can be seen in Figure 5—figure supplement 2.
 
@@ -160,13 +212,149 @@ It is likely that some dark matter sequences detected in this study share a comm
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>T7 Express lysY/Iq E. coli</td>
+      <td>NEB</td>
+      <td>Cat#: C3013I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293TT cells</td>
+      <td>https://dtp.cancer.gov/repositories/</td>
+      <td>NCI-293TT</td>
+      <td>Deposition to ATCC in progress</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Dark matter capsid expression plasmids</td>
+      <td>Generated here</td>
+      <td>Lead contact</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TempliPhi 100 Amplification Kit</td>
+      <td>Sigma</td>
+      <td>Cat#: GE25-6400-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Optiprep Density Medium</td>
+      <td>Sigma</td>
+      <td>Cat#: D1556-250ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sepharose 4B beads</td>
+      <td>Sigma</td>
+      <td>Cat#: 4B200-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cenote-Taker</td>
+      <td>http://www.cyverse.org/discovery-environment</td>
+      <td>Cenote-Taker 1.0.0</td>
+      <td>github: https://github.com/mtisza1/Cenote-Taker</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EFI-EST</td>
+      <td>https://efi.igb.illinois.edu/efi-est/</td>
+      <td>EFI-EST</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI BLAST</td>
+      <td>NCBI</td>
+      <td>RRID:SCR_004870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPAdes assembler</td>
+      <td>http://cab.spbu.ru/software/spades/</td>
+      <td>RRID:SCR_000131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>A Perfect Circle (APC)</td>
+      <td>https://github.com/mtisza1/Cenote-Taker/blob/master/apc_ct1.pl</td>
+      <td>APC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMBOSS suite (getorf)</td>
+      <td>http://emboss.sourceforge.net/</td>
+      <td>RRID:SCR_008493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circlator</td>
+      <td>http://sanger-pathogens.github.io/circlator/</td>
+      <td>RRID:SCR_016058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HHSuite</td>
+      <td>https://directory.fsf.org/wiki/Hhsuite</td>
+      <td>RRID:SCR_016133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tbl2asn</td>
+      <td>https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/</td>
+      <td>RRID:SCR_016636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MacVector</td>
+      <td>http://macvector.com</td>
+      <td>RRID:SCR_015700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bandage</td>
+      <td>https://rrwick.github.io/Bandage/</td>
+      <td>Bandage</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Chris Buck (buckc@mail.nih.gov).
 
-## Method details
+### Method details
 
-## Sample collection and sequencing
+#### Sample collection and sequencing
 
 De-identified human swabs and tissue specimens were collected under the approval of various Institutional Review Boards (Supplementary file 2). Animal tissue samples were collected under the guidance of various Animal Care and Use Committees.
 
@@ -180,13 +368,13 @@ Samples were then restored to ambient temperature. Then, samples were spun for 1
 
 DNA from individually collected fractions of the gradient was amplified by RCA using phi29 polymerase (TempliPhi, Sigma) per manufacturer’s instructions. While we expected most viral particles to travel to the middle of the gradient based on previous experiments, RCA was conducted on individual fractions spanning the gradient, in an attempt to detect viruses with different biophysical properties (Kauffman et al., 2018). Pooled, amplified fractions were prepared for Illumina sequencing with Nextera XT kits. Then libraries were sequenced with Illumina technology on either MiSeq or NextSeq500 sequencers. Contigs were assembled using SPAdes with the ‘plasmid’ setting. Circularity was confirmed by assessing assembly graphs using Bandage (Wick et al., 2015).
 
-## Analysis of brain samples
+#### Analysis of brain samples
 
 Brain samples were initially analyzed by Optiprep gradient purification, RCA amplification, and deep sequencing, as described above. JC polyomavirus, which has previously been reported in brain samples (Chalkias et al., 2018), can display high buoyancy in Optiprep gradients (Geoghegan et al., 2017). Fractions from near the top of the Optiprep gradient were subjected to an alternative method of virion enrichment using microcentrifuge columns (Pierce) packed with 2 ml of Sepharose 4B Bead suspension (Sigma) exchanged into PBS. Fractions were clarified at 5000 x g for 1 min, and 200 µl of clarified extract was loaded onto the gel bed. The column was spun at 735 x g and the eluate was digested with proteinase K, ethanol-precipitated, and subjected to RCA. No additional viral sequences were detected by this method.
 
 The brain samples were also subjected to confirmatory analysis by RNA sequencing. RNA was extracted from brain tissues with Qiagen Lipid Tissue RNeasy Mini Kit and subjected to human ribosomal RNA depletion with Thermo RiboMinus. The library was prepared with NEBNext Ultra II Directional RNA Library Prep Kit for Illumina and subjected to massive parallel sequencing on the Illumina HiSeq platform (see BioProject PRJNA513058).
 
-## Cenote-Taker, Virus Discovery and Annotation Pipeline
+#### Cenote-Taker, Virus Discovery and Annotation Pipeline
 
 Cenote-Taker, a bioinformatics pipeline written for this project and fully publicly available on CyVerse, was used for collection and detailed annotation of each circular sequence. The flow of the program can be described as follows:
 
@@ -196,54 +384,54 @@ This work utilized the computational resources of the NIH HPC Biowulf cluster. (
 
 Genome maps were drawn, and multiple sequence alignments were computed and visualized using MacVector 16.
 
-## Anelloviruses
+#### Anelloviruses
 
 Analysis of linear contigs in the survey found many instances of recognizable viral sequences. Anelloviruses are the main examples, where many contigs terminated near the GC-rich stem-loop structure that is thought to serve as the origin of replication. This segment of the anellovirus genome is presumably incompatible with the short read deep sequencing technologies used in this study. Nearly complete anellovirus genomes, defined as having a complete ORF1 gene and at least 10-fold depth of coverage, were also deposited in GenBank (Supplementary file 2).
 
-## GenBank sequences
+#### GenBank sequences
 
 Amino Acid sequences from ssDNA viruses were downloaded in June 2018 based on categories in the NCBI taxonomy browser. As many sequences in GenBank are from identical/closely related isolates, all sequences were clustered at 95% AA ID using CD-HIT (Fu et al., 2012).
 
-## Sequence Similarity Networks
+#### Sequence Similarity Networks
 
 Amino acid sequences from GenBank (see above) and this study were used as queries for HHsearch (the command-line iteration of HHpred) against PDB, PFam, and CDD. Sequences that had hits in these databases of 80% probability or greater were kept for further analyses. Note that capsid protein models for some known CRESS virus families have little, if any, similarity to other capsid sequences and have not been determined (e.g. Genomoviridae and Smacoviridae) and were therefore not displayed in networks. Models used: (CRESS virus capsids network:5MJF_V, 3R0R_A, 5MJF_Ba, 4V4M_R, 4BCU_A, PF04162.11, 5J37_A, 5J09_C, 3JCI_A, cd00259, PF04660.11, PF03898.12, PF02443.14, pfam00844); (CRESS virus Rep network:4PP4_A, 4ZO0_A, 1M55_A, 1UUT_A, 1U0J_A, 1S9H_A, 4R94_A, 4KW3_B, 2HWT_A, 1L2M_A, 2HW0_A, PF08724.9, PF17530.1, PF00799.19, PF02407.15, pfam08283, PF12475.7, PF08283.10, PF01057.16, pfam00799); (Microviridae/Inoviridae replication-associated protein: 4CIJ_B, 4CIJ_C, PF05155.14, PF01446.16, PF11726.7, PF02486.18, PF05144.13, PF05840.12); (Microviridae capsid: 1M06_F, 1KVP_A, PF02305.16); (Anelloviridae ORF1: PF02956.13); (Inoviridae ZOT: 2R2A_A, PF05707.11).
 
-## Phylogenetic trees
+#### Phylogenetic trees
 
 Sequences from this study and GenBank were grouped by structural prediction using HHpred. Then, sequences were compared by EFI-EST to generate clusters with a cut-off of 1 × 10−5. Sequences from these clusters were then extracted and aligned with PROMALS3D (Pei and Grishin, 2014) using structure guidance, when possible. Structures used: (Microviridae MCP: 1KVP); (CRESS virus capsid STNV-like: 4V4M); (CRESS virus capsid circo-like: 3JCI); (Inoviridae ZOT: 2R2A); (CRESS virus Rep: 2HW0) (CRESS virus/RNA virus S Domain capsid: 2IZW). The resulting alignments were used to build trees with IQ-Tree with automatic determination of the substitution model and 1000 ultrafast bootstraps (Nguyen et al., 2015). Models used: (Microviridae MCP: Blosum62+F+G4); (Microviridae Rep I: Blosum62+I+G4); (Microviridae Rep II: LG+I+G4); (Microviridae Rep III: VT+I+G4); (CRESS virus/RNA virus S Domain capsid: Blosum62+F+G4); (Circoviridae capsid: VT+F+G4); (CRESS virus capsid STNV-like: VT+F+G4); (Inoviridae ZOT: VT+I+G4); (Anelloviridae ORF1: VT+F+G4). Trees were visualized with FigTree (http://tree.bio.ed.ac.uk/software/figtree/) and iTOL (Letunic and Bork, 2019).
 
-## Expressing potential viral structural proteins in human 293TT cells
+#### Expressing potential viral structural proteins in human 293TT cells
 
 293TT cells were transfected with potential viral structural protein expression constructs for roughly 48 hr. Cells were lysed in a small volume of PBS with 0.5% Triton X-100 or Brij-58 and Benzonase (Sigma). After several hours of maturation at neutral pH, the lysate was clarified at 5000 x g for 10 min. The clarified lysate was loaded onto a 27-33–39% Optiprep gradient in PBS with 0.8 M NaCl. Gradient fractions were collected by bottom puncture of the tube and screened by PicoGreen nucleic acid stain (Invitrogen), BCA, and SDS-PAGE analysis. Electron microscopic analysis was then performed. Expression in 293TT cells of some ‘dark matter’ virus capsids was attempted but not successful in any case. 293TT cells were generated in-house for the previous paper (Buck et al., 2004), and passages from original stocks were used. Mycoplasma testing is conducted annually using MycoScope PCR Mycoplasma Detection Kit from Genlantis. Validation testing was not conducted at the time of experimentation, but the process of validation and deposition into the ATCC database is ongoing using STR profiling to authenticate human cells.
 
-## Expressing potential viral structural proteins in E. coli
+#### Expressing potential viral structural proteins in E. coli
 
 Several genes that were identified by iVireons as being potential viral structural proteins were cloned into plasmids with a T7 polymerase-responsive promoter. Plasmids were transfected into T7 Express lysY/Iq E. coli, which express T7 polymerase under the induction of IPTG. Bacteria were grown at 37°C in LB broth until OD600 = 0.5. Flasks were cooled to room temperature, IPTG was added to 1 mM, and cultures were shaken at room temperature for approximately 16 hr. Cells were then pelleted for immediate processing.
 
 Total protein was extracted with a BPER (Pierce) and nuclease solution. Then, virion-sized particles were enriched from the clarified lysate using size exclusion chromatography with 2% agarose beads https://ccrod.cancer.gov/confluence/display/LCOTF/GelFiltration. Fractions were analyzed using Coomassie-stained SDS-PAGE gels for presence of a unique band corresponding to the expressed protein. Fractions of interest were analyzed using negative stain electron microscopy.
 
-## Electron microscopy
+#### Electron microscopy
 
 Five µl samples were adsorbed onto a carbon-deposited copper grid for one minute. Sample was then washed 5 times on water droplets then stained with 0.5% uranyl acetate for 1 s. The negatively stained samples were examined on a FEI Tecnai T12 transmission electron microscope.
 
-## ViromeQC
+#### ViromeQC
 
 ViromeQC was run on reads from each sample corresponding to an SRA run. The 'human' setting was used, and the diamond alignment to ' 31 prokaryotic single-copy markers' was reported.
 
-## Mapping reads to reference genomes
+#### Mapping reads to reference genomes
 
 Viral genomes from RefSeq were downloaded from NCBI. On RefSeq and 'This study' genomes, RepeatMasker was used with '-noint' and '-hmmer' settings to mask low-complexity regions to prevent nonspecific mapping. However, this likely led to some degree of under-mapping. Reads were trimmed with fastp and aligned with Bowtie2 using default settings.
 
-## Sequencing
+#### Sequencing
 
 Illumina sequencing was conducted at the CCR Genomics Core at the National Cancer Institute, NIH, Bethesda, MD 20892.
 
-## Data and code availability
+### Data and code availability
 
 All reads and annotated genomes associated with this manuscript can be found on NCBI BioProject Accessions PRJNA393166 and PRJNA396064.
 
 Cenote-Taker, the viral genome annotation pipeline, can be used by interested parties on the Cyverse infrastructure: http://www.cyverse.org/discovery-environment.
 
-## Additional resources
+### Additional resources
 
 Relevant protocols on lab website: https://ccrod.cancer.gov/confluence/display/LCOTF/Virome.

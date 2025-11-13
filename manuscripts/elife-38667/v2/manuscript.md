@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.38667.001 A recurrent theme in viral immune evasion is the sabotage of MHC-I antigen presentation, which brings virus the concomitant issue of ‘missing-self’ recognition by NK cells that use inhibitory receptors to detect surface MHC-I proteins. Here, we report that rodent herpesvirus Peru (RHVP) encodes a Qa-1 like protein (pQa-1) via RNA splicing to counteract NK activation. While pQa-1 surface expression is stabilized by the same canonical peptides presented by murine Qa-1, pQa-1 is GPI-anchored and resistant to the activity of RHVP pK3, a ubiquitin ligase that targets MHC-I for degradation. pQa-1 tetramer staining indicates that it recognizes CD94/NKG2A receptors. Consistently, pQa-1 selectively inhibits NKG2A + NK cells and expression of pQa-1 can protect tumor cells from NK control in vivo. Collectively, these findings reveal an innovative NK evasion strategy wherein RHVP encodes a modified Qa-1 mimic refractory to MHC-I sabotage and capable of specifically engaging inhibitory receptors to circumvent NK activation.
+A recurrent theme in viral immune evasion is the sabotage of MHC-I antigen presentation, which brings virus the concomitant issue of ‘missing-self’ recognition by NK cells that use inhibitory receptors to detect surface MHC-I proteins. Here, we report that rodent herpesvirus Peru (RHVP) encodes a Qa-1 like protein (pQa-1) via RNA splicing to counteract NK activation. While pQa-1 surface expression is stabilized by the same canonical peptides presented by murine Qa-1, pQa-1 is GPI-anchored and resistant to the activity of RHVP pK3, a ubiquitin ligase that targets MHC-I for degradation. pQa-1 tetramer staining indicates that it recognizes CD94/NKG2A receptors. Consistently, pQa-1 selectively inhibits NKG2A+ NK cells and expression of pQa-1 can protect tumor cells from NK control in vivo. Collectively, these findings reveal an innovative NK evasion strategy wherein RHVP encodes a modified Qa-1 mimic refractory to MHC-I sabotage and capable of specifically engaging inhibitory receptors to circumvent NK activation.
 
 ## Introduction
 
@@ -45,11 +45,23 @@ In this paper, we report the discovery and characterization of an RHVP encoded Q
 
 ## Results
 
-## RHVP encodes a Qa-1-like protein that requires RNA splicing for expression
+### RHVP encodes a Qa-1-like protein that requires RNA splicing for expression
 
 Our previous findings that pK3 of RHVP potently downregulates surface MHC-I to ablate antigen presentation to CTL (Herr et al., 2012) raised the question for how RHVP evades ‘missing self’ attack by NK cells. With this in mind, we were intrigued to find that the 5’ end of the RHVP genome (1383 to 236 nucleotides in reverse direction) contains a cluster of three previously annotated ORFs (R3, R2 and R1) with high similarity to MHC-I α1, α2 and α3 domains, respectively (Loh et al., 2011). More strikingly, two putative introns that flank consensus splicing donor/acceptor sites (Keller and Noon, 1984) were detected in between the putative α1 and α2, as well as the α2 and α3 coding sequences (Figure 1A, upper panel). To test whether the genomic sequence 1383 to 236 nucleotides could be processed by RNA splicing into one mature mRNA encoding a complete MHC-I-like protein, total RNA was prepared from RHVP-infected IFNαβγR-/-mouse embryonic fibroblast (MEF) cells 24 hr post-infection, from which the first strand cDNA pool was then obtained by RT-PCR using oligo dT. The sequences amplified by PCR from the cDNA pool using a forward primer to the 5' end of R3 and a reverse primer to the 3' end of R1 was consistent with predicted splicing events (Figure 1—figure supplement 1–1A and S1B). In these splicing events, the two introns containing 88 and 82 nucleotides, respectively, were excised (Figure 1A, upper panel). This organization of exons and introns is analogous to mammalian MHC-I genes as exemplified by the mouse Qa-1 gene (Figure 1A, lower panel), suggesting that this ORF (here annotated as pQa-1) originated as a horizontal transfer from the host to the virus. Notably, the pK3 coding sequence was also concurrently amplified from the cDNA pool using primers specific to the ORF of pK3, suggesting the two proteins are co-expressed within 24 hr post-infection (Figure 1—figure supplement 1–1C).
 
-## The Qa-1-like protein is associated with β2m and expressed on the cell surface as a GPI anchored protein
+![Figure 1.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic comparison of the regions encoding RHVP pQa-1 and mouse H2-Qa-1. The genomic sequence is represented by a black line (solid for mouse and dotted for virus), and genome coordinates are indicated below. The exons of the translated regions of the RHVP genome and the mouse Qa-1 gene (NC_000083.6) are represented by dotted and solid black block, respectively. (B) Unrooted phylogenetic tree of the proteins, including RT-BM1: rat MHC-Ib-S3 (NP_001008886.2); H2-T11: mouse H2-T11 (NP_001257934); H2-Qa1(a), -Qa1(c), -Qa1(b) and -Qa1(d): mouse Qa-1a (XP_003945787), Qa-1c (AAD12244.1), Qa-1b (NP_034528) and Qa-1d (AAD31381); HLA-E: human HLA-E (NP_005507.3); HLA-B: human HLA-B7 (AAA91229); HLA-C: human HLA-Cw0702 (CAA05125); HLA-A: human HLA-A2 (ASA47534); H2-Kd: mouse H2-Kd (P01902.1); H2-Ld: mouse H2-Ld (P01897.2); H2-Dd: mouse H2-Dd (P01900.1); RT1-A1: rat MHC-Ia-A1 (NP_001008827.1); RT1-A2: rat MHC-Ia-A2 (NP_001008829); RT1-A3: rat MHC-Ia-A3 (NP_001008830); RT1-M3: rat MHC-Ib-M3 (NP_075210.2); H2-M3: mouse H2-M3 (AAA39597), was created using PHYLIP Neighbor Joining algorithm (http://evolution.genetics.washington.edu/phylip/phylipweb.html). Horizontal branch lengths reflect the number of nucleotide substitutions per site.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic depiction of RHVP ORFs and the RNA splicing events. The genomic sequence is represented by a dotted black line. Previously annotated ORFs are represented by pattern-filled block arrows. The translated regions in the RHVP genome verified by RT-PCR and DNA sequencing are represented by black blocks. (B) Nucleotide alignment of the sequencing result to the viral genome. Total RNA was prepared from RHVP-infected IFNαβγR-/- mouse embryonic fibroblasts 24 hr post-infection, from which a first strand cDNA pool was obtained by RT-PCR using oligo dT. The DNA sequences amplified by PCR from the cDNA pool (using primers highlighted in yellow) were aligned with the viral genomic sequence of R1-R3 in reverse direction using EMBOSS Needle. The splice donor and acceptor site borders are highlighted in red and are reminiscent of the consensus splice sites in mammals. (C) Agarose gel image showing the PCR amplicons of the cDNA obtained from RHVP-infected MEFs using primers specific to pQa-1 and pK3. The following primers were used: RHVP-R3/F1 5'-atgcacctcttagacattttgttacttgct; RHVP-R3/F2 5'-ctgatggtcccagtcctggccaggctaggg; RHVP-R1/R 5'-cgaccctatctttaacgcaaacatgatcatg; RHVP-R12 (pK3)/F 5'-atggctttgcaggaggctg; PHVP-R12 (pK3)/R 5'-tataaacaaactgtcctactgc.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The pQa-1 ectodomain amino acid sequences are compared to closely related MHC-I proteins using ESPript3 (Robert and Gouet, 2014). The secondary structure of mouse Qa-1 is depicted above the alignment and comes from the available crystal structure (PDB:3VJ6). The residues that distinguish Qa-1 from classical MHC-I in the F pocket of peptide binding are indicated by arrows. RT-BM1: rat MHC-Ib-S3 (NP_001008886.2); H2-T11: mouse H2-T11 (NP_001257934); H2-Qa-1(a), -Qa-1(c), -Qa-1(b) and -Qa-1(d): mouse Qa-1a (XP_003945787), Qa-1c (AAD12244.1), Qa-1b (NP_034528) and Qa-1d (AAD31381); HLA-E: human HLA-E (NP_005507.3); HLA-B: human HLA-B7 (AAA91229); HLA-C: human HLA-Cw0702 (CAA05125); HLA-A: human HLA-A2 (ASA47534); H2-Kd: mouse H2-Kd (P01902.1); H2-Ld: mouse H2-Ld (P01897.2); H2-Dd: mouse H2-Dd (P01900.1); RT1-A1: rat MHC-Ia-A1 (NP_001008827.1); RT1-A2: rat MHC-Ia-A2 (NP_001008829); RT1-A3: rat MHC-Ia-A3 (NP_001008830); RT1-M3: rat MHC-Ib-M3 (NP_075210.2); H2-M3: mouse H2-M3 (AAA39597). Conserved cysteine residues involved in disulfide bond formation are marked with green numerals (1 or 2) under the sequence alignment.
+
+### The Qa-1-like protein is associated with β2m and expressed on the cell surface as a GPI anchored protein
 
 Sequence comparisons using the putative mature viral protein after signal peptide cleavage (residues 1–280 corresponding to the α1–3 ectodomains) yielded strong similarity to Qa-1 proteins (>56% identity) from mouse, rat, hamster and vole and slightly less strong similarity to some classical MHC-I proteins from human, monkey, panda, wild boar and harbor seal (54–52% identity) (Supplementary file 1). Furthermore, phylogenetic analysis revealed that this viral MHC-I-like protein shares more similarity with rat and mouse Qa-1 than human HLA-E or mouse/human classical MHC-I (Figure 1B). Similar to Qa-1, it contains substitutions of Ser and Leu at the Thr143 and Trp147 residues that contribute to peptide binding in the F pocket of classical MHC-I (Figure 1—figure supplement 1–2). We therefore designated this RHVP-encoded protein as pQa-1 and speculated that it may be a mimic of Qa-1 capable of interacting with CD94/NKG2 receptors. However, it should be noted that distinct from Qa-1, pQa-1 was not predicted to have a canonical TM region or a C-terminal cytoplasmic tail. Instead, it was predicted by GPI-SOM (Fankhauser and Mäser, 2005) to potentially be GPI anchored at residue 290 (Figure 1A, upper panel).
 
@@ -57,21 +69,21 @@ Because multivalent surface expression is expected to be needed for signaling vi
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic depiction of the pQa-1 expression constructs used in the study. The C-terminal 26aa containing predicted GPI attachment site (marked by red star) is shown under the C-terminus of the last construct. (B) Mouse embryonic fibroblast (MEF) and human 293 T cells were stably transduced with the vector only or pQa-1-HA construct depicted in (A). Surface expression of pQa-1 on these cells was analyzed by flow cytometry using anti-HA antibody. (C) Left panel: cells were treated with (blue) or without (red) 0.069 U/ml phosphatidylinositol-specific phospholipase C (PI-PLC) at 37°C for 45 min before staining with anti-HA or anti-Ld (30-5-7). MEFs expressing vector only served as background staining (solid gray). The representative of two independent experiments is shown. Right panel: following incubation with indicated concentration of PI-PLC, MEF cells expressing Ld-pQa-1 or Thy1.1 were examined. Here endogenous MHC-I (H2–K) serves as a negative control protein; its level of surface expression was unaffected by PI-PLC. (bD) Following a 30-min pulse with 35S-Cys/Met, pQa-1 transduced MEF cells were lysed with 1% NP-40 and immunoprecipitated for pQa-1 using anti-HA. The precipitated proteins were resolved on SDS-PAGE and visualized by autoradiography (left) or immunoblotted with the indicated antibodies (right). The representative of two independent experiments is shown. (E) MHC-Ia- and β2m-deficient MEFs (H2-K; 3KO) or 3KO+β2m cells transduced with pQa-1-HA or vector control were examined for surface pQa-1 expression using anti-HA. The representative of two analyses is shown.b-/- H2-Db-/- B2m-/-
+**Figure 2.:** (A) Schematic depiction of the pQa-1 expression constructs used in the study. The C-terminal 26aa containing predicted GPI attachment site (marked by red star) is shown under the C-terminus of the last construct. (B) Mouse embryonic fibroblast (MEF) and human 293 T cells were stably transduced with the vector only or pQa-1-HA construct depicted in (A). Surface expression of pQa-1 on these cells was analyzed by flow cytometry using anti-HA antibody. (C) Left panel: cells were treated with (blue) or without (red) 0.069 U/ml phosphatidylinositol-specific phospholipase C (PI-PLC) at 37°C for 45 min before staining with anti-HA or anti-Ld (30-5-7). MEFs expressing vector only served as background staining (solid gray). The representative of two independent experiments is shown. Right panel: following incubation with indicated concentration of PI-PLC, MEF cells expressing Ld-pQa-1 or Thy1.1 were examined. Here endogenous MHC-I (H2–Kb) serves as a negative control protein; its level of surface expression was unaffected by PI-PLC. (D) Following a 30-min pulse with 35S-Cys/Met, pQa-1 transduced MEF cells were lysed with 1% NP-40 and immunoprecipitated for pQa-1 using anti-HA. The precipitated proteins were resolved on SDS-PAGE and visualized by autoradiography (left) or immunoblotted with the indicated antibodies (right). The representative of two independent experiments is shown. (E) MHC-Ia- and β2m-deficient MEFs (H2-Kb-/- H2-Db-/- B2m-/-; 3KO) or 3KO+β2m cells transduced with pQa-1-HA or vector control were examined for surface pQa-1 expression using anti-HA. The representative of two analyses is shown.
 
-## Qdm or Qdm-like peptides stabilize pQa-1 in a manner similar to mouse Qa-1
+### Qdm or Qdm-like peptides stabilize pQa-1 in a manner similar to mouse Qa-1
 
 One of the hallmarks of Qa-1 is its propensity to preferentially bind the peptide AMAPRTLLL (also called Qa-1 determinant modifier or Qdm) derived from the leader sequence of H2-D or H2-L in a TAP-dependent manner (DeCloux et al., 1997; Bai et al., 1998). NK cytotoxicity can be inhibited by the engagement of CD94/NKG2A with its ligand Qa-1 and this inhibitory effect is highly dependent on Qa-1 being loaded with the Qdm peptide (Kraft et al., 2000). Based on this and sequence similarity of pQa-1 to Qa-1, we tested whether pQa-1 also binds Qdm or Qdm-like peptides. To assess binding, we performed surface stabilization assays using pQa-1-expressing cells cultured with either Qdm or a control H2-Kb binding peptide (ovalbumin residues 257–264, OVA). A modest but significant enhancement in pQa-1 levels was observed when co-cultured with Qdm but not the OVA peptide at 37°C for 4 hr, although the OVA peptide enhanced the level of surface Kb on the same cells as reported (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig3-v2.jpg)
 
-**Figure 3.:** (A) Following incubation of MEF-pQa-1cells with 100 μM Qdm (AMAPRTLLL) or OVA257-264 (SIINFEKL) peptide at 37°C for 4 hr, surface pQa-1 and H2-Kb were analyzed by flow cytometry for comparison. (B) MEF-pQa-1were incubated with the indicated peptide (100 μM) at 27°C for 4 hr before staining for surface pQa-1. (C) Surface pQa-1 was FACS analyzed after incubation with 100 U/ml IFNγ for 24 hr. (D) Surface pQa-1 in a stably transduced TAP1-deficient (Tap1) fibroblast line was detected by FACS after incubation with or without 100 U/ml IFNγ for 40 hr. Representative of two analyses with mean ±SD of duplicates is shown. Bars in the figures represent mean ±SEM of two (-/-C) or three (A and B) independent analyses using unpaired t test or one-way ANOVA, Dunnett's multiple comparisons test to compare with no peptide controls (*=p < 0.05; **=p < 0.01; ***=p < 0.001; ****=p < 0.0001; ns = not significant). Endogenous MHC-I Kb in these cells served as positive control.
+**Figure 3.:** (A) Following incubation of MEF-pQa-1cells with 100 μM Qdm (AMAPRTLLL) or OVA257-264 (SIINFEKL) peptide at 37°C for 4 hr, surface pQa-1 and H2-Kb were analyzed by flow cytometry for comparison. (B) MEF-pQa-1were incubated with the indicated peptide (100 μM) at 27°C for 4 hr before staining for surface pQa-1. (C) Surface pQa-1 was FACS analyzed after incubation with 100 U/ml IFNγ for 24 hr. (D) Surface pQa-1 in a stably transduced TAP1-deficient (Tap1-/-) fibroblast line was detected by FACS after incubation with or without 100 U/ml IFNγ for 40 hr. Representative of two analyses with mean ±SD of duplicates is shown. Bars in the figures represent mean ±SEM of two (C) or three (A and B) independent analyses using unpaired t test or one-way ANOVA, Dunnett's multiple comparisons test to compare with no peptide controls (*=p < 0.05; **=p < 0.01; ***=p < 0.001; ****=p < 0.0001; ns = not significant). Endogenous MHC-I Kb in these cells served as positive control.
 
 RHVP was first isolated from a pygmy rice rat trapped in Peru (Loh et al., 2011). Since the distribution of additional hosts is unknown, we attempted to identify a binding peptide for pQa-1 from a group of Qa-1-like candidates found in the MHC-I of different species or in some viral proteins (Supplementary file 2). Surface levels of pQa-1 were significantly enhanced when cells were cultured at 27°C for 4 hr with Qdm or with the Qdm-like nonamers that have one residue difference at the P1, P2 or P3 position compared to no peptide added (Figure 3B). In contrast to the nonamers, an octameric peptide that lacks the P1 residue of Qdm did not increase surface pQa-1. This analysis suggests that pQa-1 prefers to bind a Qdm-like nonamer and tolerates certain variations in peptide sequence. This is very similar to the observations made with mouse Qa-1 where single substitution with G/A at P1 and P3 or K at P1 in Qdm did not appear to impact peptide binding (Kurepa and Forman, 1997; Kraft et al., 2000). These data indicate that pQa-1 maintains similar peptide-binding properties as Qa-1.
 
 It is noteworthy that surface pQa-1 in stably transduced cells increased after IFNγ treatment (Figure 3C). Since expression of transduced pQa-1 was not controlled by an MHC-I promoter, this enhancement could not be explained by IFNγ promoted MHC-I production. Instead, it may be an indirect consequence of IFNγ-induced increase in β2m or/and source of stabilizing peptides. We also examined whether pQa-1 is expressed on the surface of TAP-deficient cells. We found, similar to what we had observed with wildtype MEF cells, that TAP1-deficient fibroblasts stably transduced with pQa-1 express a low level on the cell surface, and this level can be enhanced by IFNγ treatment (Figure 3D). Given the role peptide loading is known to play in MHC-I quality control, we would not expect pQa-1 to be efficiently released from the ER to the surface or to survive long at the cell surface without first being loaded with peptide. Thus, expression of pQa-1 on TAP-deficient cells suggests pQa-1 can load peptide independently of TAP as has been seen for Qa-1 and HLA-E (Lampen et al., 2013; Oliveira et al., 2010). Thus, during RHVP infection, surface pQa-1 levels could be correlated with the infection-induced IFNγ production even when TAP function is impaired.
 
-## pQa-1 is resistant to RHVP pK3-induced degradation
+### pQa-1 is resistant to RHVP pK3-induced degradation
 
 We previously demonstrated that pK3, a MARCH family E3 ligase encoded by RHVP, efficiently downregulates surface MHC-I by targeting newly synthesized MHC-I in the ER for rapid, ubiquitination-mediated degradation (so called ER-associated degradation, ERAD) (Herr et al., 2012). In contrast to mK3 of γHV68 that directly interacts with TAP to capture TAP-associated MHC-I, pK3 targets MHC-I through direct interaction with the TM region of MHC-I proteins. Newly synthesized pQa-1 includes a hydrophobic tail that is thought to be transiently embedded in the membrane before cleavage and GPI-linkage to the newly generated C terminus (Udenfriend and Kodukula, 1995). While the initial hydrophobic tail of pQa-1 does not have any appreciable sequence similarity to either Qa-1 or MHC-I proteins, we nevertheless sought to examine whether it might be resistant to pK3-mediated degradation. To test this, MEF cells expressing Qa-1 or pQa-1 were co-transduced with either wildtype pK3 (pK3 WT) or a pK3 RING mutant (pK3 RM) that loses ligase activity while retaining the ability to associate with the target. Indeed, in the presence of pK3 WT, Qa-1 was significantly down regulated, like classical MHC-I, even though Qa-1 was not as well expressed as pQa-1 in these experiments (Figure 4A, lower panel). Downregulation of Qa-1 by pK3 was more evident with higher baseline expression of endogenous Qa-1 in RMA cells (Figure 4B). In contrast, surface pQa-1 remained unchanged in the presence of pK3 (Figure 4A, upper panel). Importantly, downregulation of MHC-I and Qa-1 was not observed in the presence of the catalytically inactive pK3 RM, demonstrating that E3 ubiquitin ligase activity was required. In addition, the GPI anchored classical MHC-I chimera, Ld-pQa-1, was resistant to pK3, whereas the reciprocal chimera with α1-α2 domains of pQa-1 and α3-TM-cytoplasmic tail of Ld (pQa-1-Ld) remained as sensitive to pK3 as wild type Ld (Figure 4C), supporting the conclusion that pQa-1 resistance to pK3 is associated with its unique C-terminal tail. Based on these observations we speculate that pQa-1 evolved to counteract NK activation caused by the MHC-I downregulation by pK3.
 
@@ -79,29 +91,61 @@ We previously demonstrated that pK3, a MARCH family E3 ligase encoded by RHVP, e
 
 **Figure 4.:** (A) MEF-pQa-1 (upper panel) or MEF-Qa-1 (lower panel) cells were transduced with vector, pK3 or pK3 RING mutant (pK3 RM). Surface pQa-1/Qa-1 levels were determined by anti-HA/anti-Qa-1 staining. Surface expression of endogenous MHC-I Kb on these cells served as a positive control of pK3 function. (B) Surface expression of endogenous Qa-1 on RMA cells in the presence of vector, pK3 or pK3 RM were analyzed similarly. (C) Surface levels of classical MHC-I Ld, chimeric Ld-pQa-1 or chimeric pQa-1-Ld (as depicted by cartoons) on MER cells in the presence of vector or pK3 were analyzed. Quantification of median fluorescence intensity (MFI) in (A and B) or relative surface levels in (C) from two to four analyses are shown as bars with mean ±SEM. Unpaired t test or one-way ANOVA Dunnett's multiple comparisons test was used (*=p < 0.05; **=p < 0.01; ***=p < 0.001; ****=p < 0.0001; ns = not significant).
 
-## The CD94/NKG2A receptor specifically detects pQa-1/Qdm complexes
+### The CD94/NKG2A receptor specifically detects pQa-1/Qdm complexes
 
 The sequence similarity and peptide-binding similarities of pQa-1 with Qa-1 suggest that it may be a ligand for CD94/NKG2 receptors on NK cells. Intriguingly, the CD94/NKG2 family consists of the inhibitory receptor CD94/NKG2A as well as activating receptors CD94/NKG2C and CD94/NKG2E. All these heterodimeric receptors have the same ligand, Qa-1 (HLA-E in humans). Antibodies that are capable of distinguishing different forms of NKG2 receptors are currently unavailable, thus the relative distribution and expression of the inhibitory versus activating NKG2 receptors remains poorly characterized. Nevertheless under normal circumstances expression of NKG2C or NKG2E at the mRNA level is much lower than NKG2A (Vance et al., 1999) and in NKG2A-/- mice, surface NKG2C is undetectable (Rapaport et al., 2015). With this background, we first tested whether recombinant pQa-1 tetramers detect CD94/NKG2 positive cells. To circumvent difficulties encountered in production of soluble pQa-1 proteins due to instability of peptide/pQa-1/β2m complexes, we expressed Qdm-β2m-pQa-1 as a single chain trimer (pQa-1-SCT) either GPI anchored or soluble with a biotin label at the C terminus (depicted in Figure 5—figure supplement 5–1A). To secure the Qdm peptide in the binding groove, we also engineered a disulfide trap between the first linker G2C and residue Y84C of the pQa-1 (pQa-1-dtSCT). As we previously observed with classical MHC-I (Mitaksov et al., 2007; Truscott et al., 2007), the pQa-1-SCT appeared to be more stable than pQa-1. The surface levels of GPI anchored pQa-1-SCT and pQa-1-dtSCT were 6–8 folds higher than pQa-1 expressed alone (Figure 5—figure supplement 5–1A); and their thermostabilities as measured by circular dichroism melting analysis were comparable to those reported for classical MHC-I Kb-SCT (Figure 5—figure supplement 5–1B and Mitaksov et al., 2007). Using soluble pQa-1-dtSCT, we next generated tetramers to stain mouse spleen cells. These pQa-1-dtSCT tetramers stained the same population recognized by the NKG2A/C/E antibody (Figure 5). This population consisted of about 40% of NK cells and 2% of CD8+ T cells in the splenocytes isolated from wildtype C57BL/6 mice. Also similar to the level of anti-NKG2A/C/E antibody staining, the median fluorescence intensity (MFI) of tetramer+ CD8+ cells was lower than NK cells. Furthermore, in contrast to the wildtype mice, NK and CD8+ cells from NKG2A-/- mice were not stained by pQa-1-dtSCT tetramer or the NKG2A/C/E antibody (Figure 5). Thus, pQa-1 is able to selectively engage CD94/NKG2 receptors on murine cytotoxic cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig5-v2.jpg)
+
+**Figure 5.:** (A) Spleen lymphocytes isolated from wildtype C57BL/6 or NKG2A-/- knockout mice were stained with PE-labeled pQa-1-dtSCT tetramer (PE-pQa-1 Tet), or PE-labeled streptavidin (PE-SA) as negative control, at room temperature for 1 hr followed by staining with a mixture of fluorochrome labeled antibodies containing either anti-NKG2A/C/E (20D5) or isotype control for 30 min. The stained cells were acquired by BD Canto II and data were analyzed with FlowJo software. Representative data of four (wildtype) and two (NKG2A-/-) independent experiments are shown. NK cells were defined as the live NK1.1+CD3-CD19- population, while CD8 T cells were gated on the live CD19- CD3+CD8+ population.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic depiction of pQa-1-SCT. A disulfide-trapped version (dtSCT) was made by substitutions of Linker1 G2C and pQa-1 Y84C. Surface expression of pQa-1-SCT on CHO cells was compared with pQa-1 (left) or with pQa-1-dtSCT (right) by FACS analysis. (B) Thermostability of pQa-1-SCT or pQa-1-dtSCT was measured by circular dichroism (CD) as described (Mitaksov et al., 2007). The increase in the CD signal at 220 nm as a function of temperature was normalized on a scale of 0 to 100. The Tm for each protein is denoted in the legend. For these thermal denaturation studies, purified pQa-1-SCT proteins were dialyzed against buffer containing 10 mM K2HPO4/KHPO4pH = 7.5 and 150 mM NaCl, and diluted to 475 nM in buffer containing 20 mM K2HPO4/KHPO4pH = 7.5 and 150 mM NaCl. Circular dichroism (CD) spectra at 10°C were collected between 260 and 200 nm at 0.5 nm increments on a Jasco-810 instrument (Jasco Inc., Easton MD) equipped with a Peltier temperature controller. The thermal denaturation profiles were monitored by the change in CD signal at 220 nm as a function of temperature. Thermal scan data were collected at 1.0°C intervals from 10°C to 70°C with a temperature ramp rate of 50 °C/hour. Thermal denaturation curves were scaled from 0% to 100% to provide plots of the percent of signal change versus temperature. The Tm is the temperature at which the CD signal change is half of the total signal change. All measurements were made at least four times and averaged.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic depiction of the constructs for expression of CD94, CD94/NKG2C or CD94/NKG2A. (B) Mouse T lymphoma cell line BWZ.36 expressing CD94 alone indicated by GFP could not be detected by surface anti-CD94 staining. (C) BWZ.36-CD94 cells in (B) co-expressing NKG2C and DAP12 or NKG2A and DAP12 were stained by pQa-1-dtSCT tetramer, anti-NKG2A/C/E or anti-CD94, respectively. Parental BWZ.36 cells served as background (shaded peak). The data shown in (B) and (C) had been observed repeatedly.
+
 To further determine whether pQa-1 differentially interacts with inhibitory and activating NKG2 receptors, we evaluated cells co-expressing CD94 and either the NKG2A or NKG2C ectodomain with the TM and cytoplasmic regions of NKG2C (Figure 5—figure supplement 5–2A). Since expression of CD94 alone indicated by appearance of GFP was not detected by CD94 antibody in flow cytometry (Figure 5—figure supplement 2B), we used CD94 staining to monitor the level of the heterodimeric receptors on the cells. Using this system, we found that both the NKG2A/C/E antibody and pQa-1-dtSCT tetramer strongly stained the cells expressing CD94/NKG2A, but both reagents poorly stained cells expressing CD94/NKG2C. Nevertheless, reasonable levels of CD94 were detected in both lines (Figure 5—figure supplement 2C). While it is possible that pQa-1-dtSCT preferentially binds the inhibitory CD94/NKG2A rather than activating CD94/NKG2C receptor, the low level of NKG2A/C/E antibody staining of CD94/NKG2C expressing cells does not support this conclusion.
 
-## pQa-1 expression inhibits NK cells by engagement of the CD94/NKG2A receptor
+### pQa-1 expression inhibits NK cells by engagement of the CD94/NKG2A receptor
 
 We next examined the effect of pQa-1 surface expression on NK activation ex vivo. Murine C57BL/6 splenocytes were isolated and co-cultured with CHO cells expressing vector only (CHO-V), Qa-1 or pQa-1, either wildtype (CHO-pQa-1) or pQa-1-SCT (CHO-pQa-1-SCT) (Figure 6—figure supplement 6–1A). CHO cells are prototypic targets of C57BL/6 NK cells and can stimulate NK cells to release cytotoxic granules and cytokines through the Ly49D activation receptor (Idris et al., 1999). Of note, lysosomal-associated membrane protein-1 (LAMP-1, CD107a) is a membrane component of cytotoxic granules that was recently described as a functional marker for NK degranulation, a critical step in target cell lysis (Alter et al., 2004). Thus, to distinguish activity of NKG2A+ NK cells from NKG2A- NK cells, IFNγ and CD107a expression was analyzed using flow cytometry in the two NK populations after incubation with the indicated CHO cells.
 
 A dose-dependent effect was observed in both types of NK cells upon incubation with increasing number of CHO cells, but the ratio of NK activation of NKG2A+ to NKG2A- was stable with different amounts of offered CHO cells. A one to one ratio was therefore used to analyze the effect of Qa-1 or pQa-1 on NKG2A+ NK activation. When cultured with CHO-pQa-1 cells in the presence of Qdm or Qdm-k peptide, but not a peptide that cannot stabilize surface pQa-1, mouse spleen NKG2A+ NK cells showed less IFNγ production than NKG2A- cells, which was not the case upon culture with control CHO-V cells (Figure 6A and B). A similar decrease in IFNγ production was observed when NK cells were incubated with CHO cells expressing the natural NKG2A ligand Qa-1 (Figure 6A and B), suggesting that an inhibitory effect comparable to mouse Qa-1 on NK activity was mediated by the expression of viral pQa-1. In addition, like Qa-1, this suppressive effect could be reversed by the NKG2A/C/E blocking antibodies but not by an isotype control, demonstrating that pQa-1 exerts its effect specifically through the NKG2A receptor (Figure 6C). Furthermore, compared with the inhibitory effect mediated by CHO-pQa-1 or CHO-Qa-1 cells, CHO cells expressing pQa-1-SCT showed significantly stronger suppression on NKG2A+ NK cells in IFNγ production as well as CD107a expression, which again could be blocked by the NKG2A/C/E-specific antibody (Figure 6D and E). This inhibitory effect could not be altered by the addition of Qdm peptide since Qdm is tethered to Qa-1 in the SCT format. Thus, pQa-1-SCT is functionally potent in inducing NKG2A-mediated NK cell inhibition which correlates well with its increased surface expression and thermostability (Figure 5—figure supplement 5–1). These findings are in agreement with the binding specificity of pQa-1 determined using pQa-1-dtSCT tetramer (Figure 5). To further assess whether inhibition of NKG2A+ NK cells is mediated by pQa-1, CHO-V and CHO-pQa-1-SCT cells were treated with or without PI-PLC before co-culture with mouse spleen cells. We observed increased NKG2A+ NK cell activation, as measured by IFNγ production and CD107a degranulation, when CHO-pQa-1-SCT was cleaved off the cell surface (Figure 6F and Figure 6—figure supplement 6–1A). Taken together, these data demonstrate that pQa-1 can functionally mimic Qa-1 to mediate inhibition of NK cells by specific engagement of the inhibitory receptor CD94/NKG2A.
 
-## pQa-1 does not mimic antigen presentation to a Qa-1-restricted CD8+ T cell clone
+![Figure 6.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig6-v2.jpg)
+
+**Figure 6.:** C57BL/6 splenocytes were co-cultured with CHO cells expressing the indicated constructs and the NK cells were subsequently analyzed by flow cytometry (A–F). The ratio of IFNγ production between NKG2A+ and NKG2A- NK cells is shown in the bar graphs. (A) Representative dot plots of NK cell IFNγ production upon stimulation with CHO cells expressing vector, pQa-1, or Qa-1 in the presence of Qdm-k peptide (AMVPRTLLL). (B) Splenocytes were co-cultured with indicated CHO cells in the presence of Qdm-k or control peptide. (C) Co-cultures were performed as in (B) in the presence of isotype or 20D5 (anti-NKG2A/C/E) antibody. (D) IFNγ and (E) CD107a expression by NK cells in response to CHO cells expressing pQa-1 single chain trimer (pQa-1-SCT) was performed as in (C). (F) Same experiment as in (D) and (E) was conducted after CHO-pQa-1-SCT and CHO-V cells were treated with or without 0.5 U/ml PI-PLC. (A–F) Representative experiments are shown from two to three independent experiments per panel. Bars in the figures represent mean ±SEM of duplicates. (G) 5000 Qa-1-restricted Ln12 T cells were co-cultured overnight with titrating amounts of human T2 cells (TAP-deficient cells) expressing vector, Qa-1, or pQa-1. The amount of IFNγ in the supernatants was determined by ELISA. EC7.1-Qa-1, a mouse TAP- and MHC-Ia-deficient lymphoma cell line transduced to express Qa-1 served as a positive control. Mean ±SD of triplicates is shown. (H) Lung metastasis formation 14 days after intravenous injection B16F10 melanoma cells expressing pQa-dtSCT or vector control (B16-pQa-1 or B16-V). Dots over each bar represent individual mice, cumulative data from two independent experiments. Two-tailed unpaired t test was used (*=p < 0.05; **=p < 0.01).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cells used in Figure 6A–F. Surface pQa-1 and pQa-1-SCT but not Qa-1 molecules were susceptible to PI-PLC treatment (0.5 U/ml for 1 hr). (B) Cells used in Figure 6G. (C) Cells used in Figure 6H. Representative of two or three analyses is shown in (A and B) and mean ±SD of triplicates with unpaired t test (n = 3) is shown in (C).
+
+### pQa-1 does not mimic antigen presentation to a Qa-1-restricted CD8+ T cell clone
 
 Recent reports suggest that HLA-E/Qa-1 can activate HLA-E/Qa-1 restricted CD8+ T cells by presenting pathogen-derived or unconventional self-peptides (Hansen et al., 2016; Bian et al., 2017; Oliveira et al., 2010), which likely occurs when canonical MHC-I antigen presentation is impaired (Oliveira et al., 2010; Nagarajan et al., 2012; Lampen et al., 2013). Given this potential, we examined whether pQa-1 might ‘unintentionally’ activate Qa-1-restricted CD8+ T cells. For this purpose, we used a well-characterized Qa-1-restricted CD8+ T cell clone, Ln12 (Doorduijn et al., 2018). Co-culturing T2-Qa-1 cells, the TAP-deficient cell line transduced to express Qa-1 (Figure 6—figure supplement 6–1B) with Ln12 cells resulted in significant IFNγ production in a dose-dependent manner. However, under the same conditions, using T2 cells expressing pQa-1 (Figure 6—figure supplement 6–1B) we observed no T-cell activation (Figure 6G). Thus, it appears that in contrast to its mimicry of Qa-1 in CD94/NKG2A interactions, viral pQa-1 may not conserve antigen presentation properties with Qa-1.
 
-## pQa-1 expression can protect cells from NK killing in vivo
+### pQa-1 expression can protect cells from NK killing in vivo
 
 The capacity of pQa-1 to provide protection in vivo was assessed in a murine melanoma metastasis model. B16F10 melanoma cells, which can establish metastasis in the lungs of C57BL/6 mice when NK control is subverted (Takeda et al., 2011), were transduced to express either empty vector alone (B16-V) or pQa-1-dtSCT (B16-pQa-1-dtSCT) (Figure 6—figure supplement 6–1C). The two resulting cell lines displayed no difference in proliferation in vitro. In vivo, B16F10 metastasis formation was prevented by NK cells as NK cell depletion with anti-NK1.1 resulted in high numbers of metastatic lesions 2 weeks after intravenous injection of the tumor cells (Figure 6H, compare B16-V to B16-V + anti-NK1.1). Consistent with the inhibitory effect of pQa-1 on NK cell activation in vitro, challenge of C57BL/6 mice with B16F10-pQa-1-dtSCT cells resulted in at least two-fold more lung metastases compared to mice challenged with B16F10 cells expressing empty vector (Figure 6H). These data thus demonstrate that pQa-1 has the capacity to protect cells from NK control in vivo.
 
-## Downregulation of MHC-I by pK3 increases cell susceptibility to NK killing that can be subverted by pQa-1 co-expression
+### Downregulation of MHC-I by pK3 increases cell susceptibility to NK killing that can be subverted by pQa-1 co-expression
 
 To experimentally assess if pK3-induced downregulation of MHC-I and Qa-1 can lead to NK activation and that pQa-1 functions to counteract these effects on NK cells, we transduced RMA cells with either pK3 or the pK3 RING mutant. As expected, expression of pK3, but not pK3 RM induced dramatic reduction of surface classical MHC-I molecules as well as Qa-1 (Figure 4B and Figure 7—figure supplement 7–1). When cultured with syngeneic NK cells from mouse spleen, a significantly higher percentage of cells expressing pK3 were killed than cells expressing the pK3 RING mutant, demonstrating that a decrease of surface MHC-I induced by pK3 rendered cells susceptible to NK killing (Figure 7A). Moreover, in comparison to cells expressing only pK3, cells co-expressing pQa-1 with pK3 showed reduced susceptibility to NK cell killing. This reduction was not evident when NK cells from NKG2A-/- mice were used, indicating the protection provided by expression of pQa-1 is mediated by engagement of CD94/NKG2A (Figure 7A). Consistently, a small decrease in pQa-1 surface expression on target cells after PI-PLC treatment was found to correlate with a modest increase in NK killing (Figure 7—figure supplement 7–2). Together these data indicate that resistance of pQa-1 to pK3 is functionally important and suggest that RHVP has evolved a mechanism for thwarting ‘missing self’ recognition by NK cells. Collectively, our findings allow us to propose a model for how RHVP expresses two proteins that work in concert to evade CTL and NK killing (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig7-v2.jpg)
+
+**Figure 7.:** (A) The GFP+ target cells (RMA cells expressing pK3 or pK3 RM by IRES-GFP vector or co-expressing pK3 and pQa-1) were mixed with the effectors (NK cells isolated from wildtype C57BL/6 or NKG2A-/- mice and activated by IL-2 for 6 days) at indicated E:T ratio and cultured at 37°C for 4 hr before stained with propidium iodide (PI) and analyzed by flow cytometry. NK killing%=[PI+ target %/(PI+ target%+PI- target%)*100]. Bars represent mean ±SD of four replicates. Dunnett's multiple comparisons test is used. (B) Working model for how RHVP-encoded pK3 and pQa-1 work in concert to evade CTL and NK killing. In normal circumstances, cytotoxic lymphocytes can survey foreign antigen through TCR recognition of MHC-I/peptide complexes at the cell surface, and NK cells can sense defects in antigen presentation and processing via engagement of HLA-E/Qa-1 by the inhibitory receptor CD94/NKG2A (left panel). In RHVP-infected cells, pK3 induces rapid degradation of MHC-I in the ER thus preventing CTL activation and clearance of infected cells; On the other hand, pQa-1 lacks an MHC-I like TM region and is thus resistant to pK3, which allows its cell surface expression and CD94/NKG2A engagement thus undermining ‘missing self’ recognition by NK cells (right panel).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Because pK3 or pK3 RM was transduced into RMA cells using an IRES.GFP vector, GFP signal in the cells served as indicator of pK3 or pK3 RM expression. These cells were used as target of syngeneic NK killing in Figure 7.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/38667/elife-38667-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** NK cytotoxicity assay was conducted as described in Figure 7 after treatment of RMA cells co-expressing pK3 and pQa-1 (RMA-pK3 +pQa-1) with 0.5 U/ml PI-PLC at 37°C for 1 hr. PI-PLC treatment led to a slight decrease in surface pQa-1 protein as detected using an HA-tag-specific antibody (left). A moderate increase in NK killing was evident with PI-PLC-treated cells compared with untreated cells (right). This analysis was done in triplicate.
 
 ## Discussion
 
@@ -121,40 +165,323 @@ In addition to its function in innate immunity, HLA-E/Qa-1 has been reported to 
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Klrc1-/-</td>
+      <td>PMID: 26680205</td>
+      <td></td>
+      <td>Dr. Marco Colonna laboratory (Washington University School of Medicine)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6NCr</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain code: 556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>B6/WT-3</td>
+      <td>Dr. Stephen R Jennings (Louisiana State University Health Sciences Center); PMID: 6316651</td>
+      <td></td>
+      <td>an SV-40 transformed, C57BL/6 murine embryo fibroblasts line</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>BWZ.36</td>
+      <td>Dr. Nilabh Shastri (University of California, Berkeley); PMID:8186188</td>
+      <td></td>
+      <td>a mouse T lymphoma line</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>FT1- (Tap1-/-)</td>
+      <td>Dr. Michael Edidin (Johns Hopkin University); PMID:10485658</td>
+      <td></td>
+      <td>a fibroblast line derived from Tap1 knockout mice</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>3KO (H2-K-/-, H2-D-/-, B2m-/- murine embryo fibroblast line)</td>
+      <td>Dr. Ted H. Hansen laboratory; PMID:12530981</td>
+      <td></td>
+      <td>3KO mice were derived by breeding H2-Kb/-Db doubly deficient mice (PMID:10229092) with B2m-/- mice (Jackson Laboratories)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>T2 (174 x CEM.T2)</td>
+      <td>American Type Culture Collection</td>
+      <td>ATCC CRL-1992, RRID:CVCL_2211</td>
+      <td>a TAP deficient T-B lymphoblast hybrid (PMID: 3522223)</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>RMA</td>
+      <td>PMID: 3877776</td>
+      <td>RRID:CVCL_J385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>B16-F10</td>
+      <td>American Type Culture Collection</td>
+      <td>ATCC CRL-6475, RRID:CVCL_0159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO</td>
+      <td>Dr. Pamela Stanley laboratory (Albert Einstein College of Medicine)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293F (FreeStyle 293 F Cells)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R79007, RRID:CVCL_D603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T (HEK 293T)</td>
+      <td>American Type Culture Collection</td>
+      <td>ATCC CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC labeled anti-mouse NKG2A/C/E</td>
+      <td>eBioscience</td>
+      <td>cat# 11-5896-82</td>
+      <td>clone: 20D5 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC labeled isotype control (RatIgG2a)</td>
+      <td>eBioscience</td>
+      <td>cat# 11-4321-85</td>
+      <td>clone: eBR2a (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor 660 labeled anti-mouse CD107a</td>
+      <td>eBioscience</td>
+      <td>cat# 50-1071-82</td>
+      <td>clone: eBio1D4B (1:1000 in culture)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-eFluor labeled anti-mouse CD19</td>
+      <td>eBioscience</td>
+      <td>cat# 47-0193-82</td>
+      <td>clone: eBio 1D3 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 labeled anti-mouse CD19</td>
+      <td>eBioscience</td>
+      <td>cat# 25-0193-82</td>
+      <td>clone: eBio1D3 (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-eFluor 780 labled anti-mouse CD3e</td>
+      <td>eBioscience</td>
+      <td>cat# 47-0031-82</td>
+      <td>clone: 145–2 C11 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue labeled anti-mouse CD3e</td>
+      <td>Biolegend</td>
+      <td>cat# 100214</td>
+      <td>clone: 17A2 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-eFluor 610 labeled anti-mouse CD8a</td>
+      <td>eBioscience</td>
+      <td>cat# 61-0081-80</td>
+      <td>clone: 53–6.7 (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE labeled anti-mouse CD94</td>
+      <td>eBioscience</td>
+      <td>cat# 12-0941-82</td>
+      <td>clone: 18D3 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-HA tag</td>
+      <td>Covance</td>
+      <td>cat# MMS-101P</td>
+      <td>clone: 16B12 (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor 450 labeled anti-mouse IFNg</td>
+      <td>eBioscience</td>
+      <td>cat# 48-7311-82</td>
+      <td>clone: XMG1.2 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 labeled anti-mouse NK1.1</td>
+      <td>eBioscience</td>
+      <td>cat# 25-5941-82</td>
+      <td>clone: PK136 (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCp Cy5.5 labeled anti-mouse NK1.1</td>
+      <td>eBioscience</td>
+      <td>cat# 45-5941-82</td>
+      <td>clone: PK136 (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-labeled anti-mouse Thy1.1</td>
+      <td>BD PharMingen</td>
+      <td>cat# 551401</td>
+      <td>clone: OX-7 (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotin labeled anti-mouse Qa-1</td>
+      <td>BD PharMingen</td>
+      <td>cat# 559829</td>
+      <td>clone: 6A8.6F10.1A6 (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIG_pQa-1-HA</td>
+      <td>current study</td>
+      <td></td>
+      <td>Schematic depiction is shown in Figure 2A</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIN_pQa-1-HA</td>
+      <td>current study</td>
+      <td></td>
+      <td>pMSCV.IRES.neo (pMIN) was described previously (PMID:15280476)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIG_pK3</td>
+      <td>PMID:22403403</td>
+      <td></td>
+      <td>Dr. Ted H Hansen laboratory</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIN_Qa-1</td>
+      <td>current study</td>
+      <td></td>
+      <td>DNA sequence encoding Qa-1b (NM_034528) was subcloned into pMIN vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMIG_pQa-1-SCT</td>
+      <td>current study</td>
+      <td></td>
+      <td>Schematic depiction is shown in Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFM1.2R_pQa- 1-SCT-BirA</td>
+      <td>current study</td>
+      <td></td>
+      <td>Described in the DAN constructs section in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>pQa-1-SCT</td>
+      <td>current study</td>
+      <td></td>
+      <td>Described in the Production of pQa-1-SCT Proteins and Tetramers section in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep mouse NK cell isolation kit</td>
+      <td>StemCell Tecknologies</td>
+      <td>cat# 19815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PI-PLC (phosphatidylinositol -specific phospholipase C)</td>
+      <td>Sigma</td>
+      <td>P8804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHYLIP Neighbor Joining algorithm</td>
+      <td>http://evolution.genetics.washington.edu/phylip/phylipweb.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>rodent herpesvirus Peru (RHVP)</td>
+      <td>PMID: 21209105</td>
+      <td></td>
+      <td>Dr. Herbert W. Virgin laboratory in Washington University School of Medicine</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 Two retroviral expression vectors, pMSCV.IRES.GFP (pMIG) and pMSCV.IRES.neo (pMIN) used for stable expression of pK3, Qa-1 and pQa-1-HA were described previously (Lybarger et al., 2003; Wang et al., 2004). The pQa-1 sequence was obtained from RHVP-infected MEF cells by RT-PCR. An HA tag was engineered in between the putative α3 domain and the last 26 amino acids (aa) (Figure 2A). The Ld-pQa-1 chimeric construct was made by fusing the sequence of H2-Ld α1–3 to the C-terminal 26aa of pQa-1. The pQa-1-SCT construct consists of, beginning at the N terminus, the signal peptide of pQa-1, the Qdm peptide (AMAPRTLLL), linker1 (GGGASGGGGSGGGGS), the mature mouse β2m, linker2 ((GGGGS)4) and the mature pQa-1-HA or the mature pQa-1 lacking the last 26aa followed by the BirA recognition peptide (GSTGLNDIFEAQKIEWHE). The HA-tagged pQa-1-SCT was expressed from the pMIG vector for surface expression in mammalian cells while the BirA-peptide-tagged version of pQa-1-SCT was produced from the pFM1.2R vector in 293F cells for biotin labeling (Nelson et al., 2014). All the constructs were confirmed by DNA sequencing.
 
-## Cell lines and mice
+### Cell lines and mice
 
 Murine embryonic fibroblast B6/WT-3 (MEF), β2m-deficient cells (B2m-/-), TAP1-deficient cells (Tap1-/-, FT1-) and triple knockout fibroblasts (H2-Kb-/- H2-Db-/- β2m-/-; 3KO) were previously described (Lybarger et al., 2003) and of C57BL/6 (H-2b) origin. Mouse RMA cells, B16F10, 293T and 293F were obtained from ATCC or Thermo Fisher Scientific. The BWZ.36 line was kindly provided by Dr. Nilabh Shastri (UC, Berkeley). CHO cell line is a gift from Dr. Pamela Stanley (Albert Einstein College of Medicine, NY). All cell lines have been assessed as mycoplasma negative. The pK3, pQa-1 and β2m were stably expressed in the indicated cells by pMIG or pMIN and were enriched or selected for GFP expression or neomycin resistance, respectively. 293F cells were cultured in FreeStyle 293F expression medium (Gibco). All the other cells were cultured in complete RPMI1640 or DMEM (supplemented with 100 Unit/ml Penicillin–Streptomycin, 2 mM L-glutamine, 10 mM Hepes and 10% FBS) in a 5% CO2 atmosphere at 37°C. C57BL/6 mice were purchased from Charles River laboratories, NKG2A-/- (Klrc1-/-) mice (Rapaport et al., 2015) bred and housed in specific pathogen-free conditions in the accredited animal facilities at Washington University were a gift of Dr. Marco Colonna.
 
-## Peptide-binding assay and peptides
+### Peptide-binding assay and peptides
 
 MEF-pQa-1 cells were seeded in culture plates at 5 × 105 cells/ml. After overnight incubation at 37°C, peptides were added into the culture to a final concentration of 100 μM and incubated at 27°C, a condition known to promote peptide binding to classical MHC-I molecules (Hansen and Myers, 2003). Four hours later the cells were subjected to flow cytometric analysis. The OVA-derived peptide (SIINFEKL) (Carbone and Bevan, 1989), Qdm peptide (AMAPRTLLL), and others used for peptide binding (Supplementary file 2) were synthesized by GenScript (Piscataway, NJ).
 
-## Production of pQa-1-SCT proteins and tetramers
+### Production of pQa-1-SCT proteins and tetramers
 
 Biotinylated soluble pQa-1-SCT or pQa-1-dtSCT monomer was produced by transient transfection of 293 F cells with the corresponding plasmid DNA as previously described (Nelson et al., 2014). The secreted protein containing a C-terminal 6His tag was purified from culture medium using Ni-agarose beads (Qiagen) followed by size-exclusion chromatography on a HiLoaD 26/60 Superdex 200 pg column (GE Healthcare). The proteins were biotin labeled on an included BirA-peptide-tag with enzyme in vitro following the manufacture's protocol (Avidity). The labeled protein was tested for biotinylation by ELISA using HRP conjugated streptavidin (Invitrogen), and then tetramerized through addition of phycoerythrin (PE)-labeled streptavidin (SA) (BD Biosciences) at a molar ratio of 4 molecules of SCT monomers to 1 molecule of PE-SA.
 
-## Antibodies and flow cytometry analysis
+### Antibodies and flow cytometry analysis
 
 Fluorescence-labeled antibodies including anti-NK1.1 (PK136), anti-NKG2A/C/E (20D5), anti-CD3 (145–2 C11), anti-CD19 (1D3), anti-CD8a (53–6.7), anti-CD107a (1D4B), anti-IFNγ (XMG1.2), anti-Thy-1.1 (OX-7), and isotype control were purchased from either eBioscience or BD Pharmingen. Unconjugated antibodies anti-H2-Kb (B8-24-3) and anti-H2-Ld (30-5-7) were described (Lybarger et al., 2003), anti-HA (16B12) and biotin-labeled anti-Qa-1 (6A8.6F10.1A6) were obtained from Covance and BD Pharmingen, respectively.
 
 Spleen cells were first stained with fixable viability stain 660 (BD Horizon) or fixable viability dye eFluor 506 (eBioscience), followed by surface staining with directly conjugated antibodies diluted in Fc block (2.4G2) or with unconjugated/biotinylated antibodies in two steps using fluorescence conjugated secondary antibodies or streptavidin (BD Pharmingen), respectively. When intracellular staining was involved, the above surface staining was followed by fixation, permeabilization and directly conjugated antibody staining using Cytofix/Cytoperm kit (BD Biosciences) according to manufacturer’s protocol. Stained samples were analyzed by flow cytometry using BD FACS Calibur, BD FACS Canto II or BD LSRFORTESSA X-20 and the data were analyzed with FlowJo software (Tree Star). The pQa-1-dtSCT tetramer staining was conducted at room temperature for 1 hr prior to the antibody staining. NK cells were defined as viable, NK1.1+CD3-CD19-.
 
-## NK stimulation assay
+### NK stimulation assay
 
 Co-cultures of 4 × 106 C57BL/6 splenocytes and 1 × 105 CHO cells expressing vector only, pQa-1, Qa-1, or pQa-1-SCT in the presence of 30 μM Qdm-k (AMVPRTLLL) peptide where indicated were incubated under 5% CO2 atmosphere at 37°C. Where indicated 10 μg/ml isotype or 20D5 (anti-NKG2A/C/E) FITC-conjugated antibody was added to block the NKG2A-Qa-1 interaction. After 1 hr of 1x monensin (eBioscience) treatment in culture, 0.2 μg/ml fluorescent anti-CD107a antibody was added for an additional 5–8 hr. Cells were subsequently stained with fluorescent antibodies and analyzed by flow cytometry as described above.
 
-## Experimental lung metastasis
+### Experimental lung metastasis
 
 A total of 3 × 105/mouse B16F10 cells transduced to express either empty vector or pQa-1-dtSCT were suspended in endotoxin-free PBS prior to i.v. injection into C57BL/6 mice. For NK-depletion controls, mice were administered i.p. with 200 μg anti-NK1.1 mAb, 2 days before and 2 days after B16F10 cell inoculation. After 14 days, the lungs were removed, PBS perfused and fixed with Feteke’s solution (Overwijk and Restifo, 2001). The lung samples were blinded and the number of lung tumor metastatic colonies was counted under a dissecting microscope.
 
-## NK cytotoxicity assay
+### NK cytotoxicity assay
 
 NK cells were enriched from spleen cells of the indicated mice by negative selection using EasySep mouse NK Iso kit (StemCell Tech) according to manufacturer’s instructions. After incubation in complete DMEM supplemented with 800 Units IL-2 and 2 × 10−5 M 2-mercaptoethanol in 5% CO2 atmosphere at 37°C for 6–9 days, the adherent cells (NK purity >95%) were collected and co-cultured with the indicated GFP+ target cells at an E:T ratio of 2-6:1 for 4 hr. All the cells were then stained with propidium iodide (PI) 2–4 min before analysis by flow cytometry. Target killing%=[PI+ target%/(PI+ target%+PI- target%)*100].
 
-## Statistics
+### Statistics
 
 Statistical significance compared with a control group was calculated using ANOVA with Dunnett's multiple comparisons test, or unpaired t test, and annotated as *=p < 0.05; **=p < 0.01; ***=p < 0.001; ****=p < 0.0001.

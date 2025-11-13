@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.07072.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by replicating selected results from a substantial number of high-profile papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘BET bromodomain inhibition as a therapeutic strategy to target c-Myc’ by Delmore and colleagues, published in Cell in 2011 ( Delmore et al., 2011 ). The key experiments that will be replicated are those reported in Figures 3B and 7C-E. Delmore and colleagues demonstrated that treatment with JQ1, a small molecular inhibitor targeting BET bromodomains, resulted in the transcriptional down-regulation of the c-Myc oncogene in vitro (Figure 3B; Delmore et al., 2011 ). To assess the therapeutic efficacy of JQ1 in vivo, mice bearing multiple myeloma (MM) lesions were treated with JQ1 before evaluation for tumor burden and overall survival. JQ1 treatment significantly reduced disease burden and increased survival time (Figure 7C-E; Delmore et al., 2011 ). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife . DOI: http://dx.doi.org/10.7554/eLife.07072.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by replicating selected results from a substantial number of high-profile papers in the field of cancer biology published between 2010 and 2012. This Registered report describes the proposed replication plan of key experiments from ‘BET bromodomain inhibition as a therapeutic strategy to target c-Myc’ by Delmore and colleagues, published in Cell in 2011 (Delmore et al., 2011). The key experiments that will be replicated are those reported in Figures 3B and 7C-E. Delmore and colleagues demonstrated that treatment with JQ1, a small molecular inhibitor targeting BET bromodomains, resulted in the transcriptional down-regulation of the c-Myc oncogene in vitro (Figure 3B; Delmore et al., 2011). To assess the therapeutic efficacy of JQ1 in vivo, mice bearing multiple myeloma (MM) lesions were treated with JQ1 before evaluation for tumor burden and overall survival. JQ1 treatment significantly reduced disease burden and increased survival time (Figure 7C-E; Delmore et al., 2011). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange and the results of the replications will be published in eLife.
 
 ## Introduction
 
@@ -32,71 +32,319 @@ In Figure 7C, 7D and 7E, the efficacy of JQ1 treatment was tested in mice harbor
 
 ## Materials and methods
 
-## Protocol 1: evaluation of MYC expression in JQ1-treated MM.1S cells
+### Protocol 1: evaluation of MYC expression in JQ1-treated MM.1S cells
 
 This experiment analyzes the expression of endogenous MYC during pharmacological inhibition of BET bromodomains with JQ1. This is a replication of the data presented in Figure 3B and assesses the levels of MYC by quantitative RT-PCR.
 
-## Sampling
+#### Sampling
 
 ■ Each experiment has 9 conditions:◯ qRT-PCR of MYC (and GAPDH) 0 hr after (+)-JQ1 treatment.◯ qRT-PCR of MYC (and GAPDH) 1 hr after (+)-JQ1 treatment.◯ qRT-PCR of MYC (and GAPDH) 8 hr after (+)-JQ1 treatment.◯ qRT-PCR of MYC (and GAPDH) 0 hr after (−)-JQ1 treatment [additional].◯ qRT-PCR of MYC (and GAPDH) 1 hr after (−)-JQ1 treatment [additional].◯ qRT-PCR of MYC (and GAPDH) 8 hr after (−)-JQ1 treatment [additional].◯ qRT-PCR of MYC (and GAPDH) 0 hr after vehicle treatment [additional].◯ qRT-PCR of MYC (and GAPDH) 1 hr after vehicle treatment [additional].◯ qRT-PCR of MYC (and GAPDH) 8 hr after vehicle treatment [additional].■ Experiment will be performed five times with each run using three technical replicates, for a total power of ≥91%.◯ See ‘Power calculations’ section for details.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsMM.1S-LucNeoCell lineOriginal authorsN/AEngineered to express luciferaseRPMI 1640 mediumCell cultureSigma–AldrichR8758With 2 mM L-glutamine. Original brand not specifiedFetal bovine serum (FBS)Cell cultureSigma–AldrichF0392Original brand not specified100× Penicillin/streptomycinCell cultureSigma–AldrichP4333Original brand not specifiedPBS, without MgCl2 and CaCl2BufferSigma–AldrichD8537Originally not specified0.05% trypsin/0.48 mM EDTACell cultureSigma–AldrichT3924Originally not specified35-mm tissue culture dishesLabwareCorning430165Originally not specified(+)-JQ1 enantiomerChemicalEMD Millipore500586Original made by authors(−)-JQ1 enantiomerChemicalDMSOChemicalSigma–AldrichD8418Original brand not specifiedTRI reagentChemicalSigma–AldrichT9424Replaces TRIzol from Invitrogen (Cat #15596-026)First-Strand cDNA Synthesis kitNucleic acidGE Healthcare (Sigma–Aldrich)GE27-9261-01–Real-time PCR systemInstrumentApplied Biosystems7900HTReplaces 7500 modelTaqMan Gene Expression Master MixNucleic acidLife Technologies4369016Replaces a real-time PCR kit from Applied Biosystems (Cat #N15597), which is discontinuedTaq-Man probe (MYC)Nucleic acidApplied BiosystemsHs00905030_m1–Taq-Man probe (Gapdh)Nucleic acidApplied BiosystemsHs02758991_g1–
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MM.1S-LucNeo</td>
+      <td>Cell line</td>
+      <td>Original authors</td>
+      <td>N/A</td>
+      <td>Engineered to express luciferase</td>
+    </tr>
+    <tr>
+      <td>RPMI 1640 medium</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>R8758</td>
+      <td>With 2 mM L-glutamine. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>F0392</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>100× Penicillin/streptomycin</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>P4333</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>PBS, without MgCl2 and CaCl2</td>
+      <td>Buffer</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8537</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>0.05% trypsin/0.48 mM EDTA</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>T3924</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>35-mm tissue culture dishes</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>430165</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1 enantiomer</td>
+      <td>Chemical</td>
+      <td rowspan="2">EMD Millipore</td>
+      <td rowspan="2">500586</td>
+      <td rowspan="2">Original made by authors</td>
+    </tr>
+    <tr>
+      <td>(−)-JQ1 enantiomer</td>
+      <td>Chemical</td>
+    </tr>
+    <tr>
+      <td>DMSO</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8418</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>TRI reagent</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>T9424</td>
+      <td>Replaces TRIzol from Invitrogen (Cat #15596-026)</td>
+    </tr>
+    <tr>
+      <td>First-Strand cDNA Synthesis kit</td>
+      <td>Nucleic acid</td>
+      <td>GE Healthcare (Sigma–Aldrich)</td>
+      <td>GE27-9261-01</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Real-time PCR system</td>
+      <td>Instrument</td>
+      <td>Applied Biosystems</td>
+      <td>7900HT</td>
+      <td>Replaces 7500 model</td>
+    </tr>
+    <tr>
+      <td>TaqMan Gene Expression Master Mix</td>
+      <td>Nucleic acid</td>
+      <td>Life Technologies</td>
+      <td>4369016</td>
+      <td>Replaces a real-time PCR kit from Applied Biosystems (Cat #N15597), which is discontinued</td>
+    </tr>
+    <tr>
+      <td>Taq-Man probe (MYC)</td>
+      <td>Nucleic acid</td>
+      <td>Applied Biosystems</td>
+      <td>Hs00905030_m1</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Taq-Man probe (Gapdh)</td>
+      <td>Nucleic acid</td>
+      <td>Applied Biosystems</td>
+      <td>Hs02758991_g1</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
-## Notes
+##### Notes
 
 All cells will be sent for mycoplasma testing and STR profiling.Cells maintained in RPMI 1640 with 2 mM L-glutamine supplemented with 10% FBS, 100 U/ml penicillin, and 50 µg/ml streptomycin at 37°C in a humidified atmosphere at 5% CO2.Seed 8 × 105 MM.1S-LucNeo cells into three 35-mm tissue culture dishes.The next day treat the dishes of cells with 2 ml of media with a final concentration of 500 nM (+)-JQ1, 500 nM (−)-JQ1, or an equivalent volume of DMSO.a. Make 10 mM stock of (+)-JQ1 and (−)-JQ1 by diluting in DMSO.Isolate RNA from dishes at the following time points after treatment using TRI Reagent following manufacturer's instructions.a. 0 hr (immediately).b. 1 hr.c. 8 hr.Reverse transcribe total RNA to cDNA with reverse transcription kit following manufacturer's instructions.a. Record RNA concentration and purity.b. Use 1 µg of RNA per 50 µl reaction.c. Use random hexamers for first-strand synthesis.Perform qPCR to assess MYC expression levels using a real-time PCR system with a real-time PCR kit following manufacturer's instructions. Perform triplicate technical replicates for each biological replicate.a. Use 5 µl of undiluted cDNA mixture per 50 µl reaction.b. Use TaqMan probes for MYC (Hs00905030_m1) and Gapdh (Hs02758991_g1).Analyze and compute ΔΔCT values.a. The first qRT-PCR assay will be analyzed to ensure conditions are appropriate for proper quantitation. If it is determined that conditions need to be adjusted, such as input volume, the conditions will be adjusted and the reaction will be repeated. Once optimized, the conditions will be used for all subsequent reactions.i. All details and data associated with this process will be recorded.Repeat steps 1–6 independently four additional times.
 
-## Deliverables
+##### Deliverables
 
 ■ Data to be collected:◯ Purity (A260/280 ratio) and concentration of isolated total RNA from cells.◯ Assay conditions used initially and, if necessary, modified, to ensure conditions are appropriate for proper quantitation.◯ Raw qRT-PCR values, as well as analyzed ΔΔCT values.◯ Bar graph of MYC mRNA levels normalized to 0 hr after (+)-JQ1 treatment. (Compare to Figure 3B).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the following statistical analysis listed below.■ Statistical analysis:◯ Repeated measures ANOVA of normalized MYC mRNA levels in MM.1S cells treated with (+)-JQ1, (−)-JQ1, or DMSO.Paired t-tests with the Bonferroni correction:MM.1S cells harvested 8 hr after (+)-JQ1 treatment compared to cells 0 hr after (+)-JQ1 treatment.MM.1S cells harvested 1 hr after (+)-JQ1 treatment compared to cells 0 hr after (+)-JQ1 treatment.■ Additional exploratory statistical Analysis:◯ Two-way ANOVA of normalized MYC mRNA levels in MM.1S cells treated with (+)-JQ1, (−)-JQ1, or DMSO.Planned comparisons with the Bonferroni correction:MM.1S cells harvested 8 hr after (+)-JQ1 treatment compared to cells 0 hr after (+)-JQ1 treatment.MM.1S cells harvested 1 hr after (+)-JQ1 treatment compared to cells 0 hr after (+)-JQ1 treatment.■ Meta-analysis of effect sizes:◯ Compute the effect sizes of each comparison, compare them against the effect size in the original paper and use a random effects meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The replication experiment will not include the full time course treatment with (+)-JQ1, but will only include the 0 hr, 1 hr, and 8 hr treatments. The replication experiment will also include six additional conditions; MM.1S cells harvested 0 hr, 1 hr, and 8 hr after treatment with (−)-JQ1 or DMSO. The original report was unclear if the cells used for this experiment were MM.1S or MM.1S-LucNeo cells. This replication attempt will use MM.1S-LucNeo cells since this is the same cell line used in protocol 2 to assess the efficacy of JQ1 treatment in mice. The original details for the reverse transcription and qRT-PCR reactions were not known, thus the details used here are manufacturer recommended with the use of random hexamers to generate cDNA that are more representative of all regions of the transcripts. Following the first reaction, conditions will be adjusted if necessary to ensure proper quantitation. All known differences of materials and reagents are listed in the ‛Materials and reagents’ section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm their identity and will be sent for mycoplasma testing to ensure there is no contamination. The sample purity (A260/280 and A260/230 ratios) of the isolated RNA from each sample will be reported. The first qRT-PCR reaction will be analyzed to determine if the assay conditions are appropriate for proper quantitation. This would be apparent after the first qRT-PCR assay, and the assay would then be repeated adjusting parameters. After conditions that allow for proper quantitation are achieved, then the number of pre-determined replicates will be completed under those same conditions. All assay details, adjustments, and data will be recorded and made available during this optimization process. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access data set available on the Open Science Framework project page for this study (https://osf.io/7zqxp/).
 
-## Protocol 2: JQ1 treatment in orthotopic xenograft model
+### Protocol 2: JQ1 treatment in orthotopic xenograft model
 
 This experiment tests the efficacy of JQ1 treatment in mice harboring bioluminescent MM lesions. This is a replication of the data presented in Figures 7C, 7D, and 7E and assesses tumor burden by whole-body bioluminescent imaging and monitors overall survival with daily treatment of JQ1.
 
-## Sampling
+#### Sampling
 
 ■ Each experiment has 3 cohorts:◯ Cohort 1: Vehicle (D5W) treatment.◯ Cohort 2: (+)-JQ1 treatment.◯ Cohort 3: (−)-JQ1 treatment [additional].■ Experiment will analyze at least eight mice per cohort for a minimum of 80% power.◯ See ‘Power calculations’ section for details.■ To account for unexpected euthanasia of mice before the end of the experiment or exclusion of mice before treatment, the sample size was increased by ∼ 30%.◯ A total of 33 mice will be injected with MM.1S-LucNeo cells.
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsMM.1S-LucNeoCell lineOriginal authorsN/AEngineered to express luciferaseRPMI 1640 mediumCell cultureSigma–AldrichR8758With 2 mM L-glutamine. Original brand not specifiedFetal bovine serum (FBS)Cell cultureSigma–AldrichF0392Original brand not specified100× penicillin/streptomycinCell cultureSigma–AldrichP4333Original brand not specifiedPBS, without MgCl2 and CaCl2BufferSigma–AldrichD8537Originally not specified0.05% trypsin/0.48 mM EDTACell cultureSigma–AldrichT3924Originally not specifiedT150 tissue culture flasksLabwareCorning430825Originally not specified5 week old female Fox Chase SCID Beige (CB17.Cg-PrkdcscidLystbg-J/Crl)Animal modelCharles River LabsStrain 250–30½G needleLabwareSigma–AldrichZ192341Originally not specified27½G needleLabwareSigma–AldrichZ192384Originally not specified1 ml syringeLabwareSigma–AldrichZ192090Originally not specifiedVivoGlo luciferinReporter assayPromegaP1042Original catalog # not specifiedXenogen IVIS SpectrumInstrumentCaliper Life SciencesSpectrum–Living ImagesSoftwareCaliper Life SciencesVersion used will be recorded and included in the Replication Study(+)-JQ1 enantiomerChemicalEMD Millipore500586Original made by authors(−)-JQ1 enantiomerChemicalDextrose (D-(+)-glucose)ChemicalSigma–AldrichG8270Original brand not specified
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MM.1S-LucNeo</td>
+      <td>Cell line</td>
+      <td>Original authors</td>
+      <td>N/A</td>
+      <td>Engineered to express luciferase</td>
+    </tr>
+    <tr>
+      <td>RPMI 1640 medium</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>R8758</td>
+      <td>With 2 mM L-glutamine. Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>F0392</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>100× penicillin/streptomycin</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>P4333</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>PBS, without MgCl2 and CaCl2</td>
+      <td>Buffer</td>
+      <td>Sigma–Aldrich</td>
+      <td>D8537</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>0.05% trypsin/0.48 mM EDTA</td>
+      <td>Cell culture</td>
+      <td>Sigma–Aldrich</td>
+      <td>T3924</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>T150 tissue culture flasks</td>
+      <td>Labware</td>
+      <td>Corning</td>
+      <td>430825</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>5 week old female Fox Chase SCID Beige (CB17.Cg-PrkdcscidLystbg-J/Crl)</td>
+      <td>Animal model</td>
+      <td>Charles River Labs</td>
+      <td>Strain 250</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>30½G needle</td>
+      <td>Labware</td>
+      <td>Sigma–Aldrich</td>
+      <td>Z192341</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>27½G needle</td>
+      <td>Labware</td>
+      <td>Sigma–Aldrich</td>
+      <td>Z192384</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>1 ml syringe</td>
+      <td>Labware</td>
+      <td>Sigma–Aldrich</td>
+      <td>Z192090</td>
+      <td>Originally not specified</td>
+    </tr>
+    <tr>
+      <td>VivoGlo luciferin</td>
+      <td>Reporter assay</td>
+      <td>Promega</td>
+      <td>P1042</td>
+      <td>Original catalog # not specified</td>
+    </tr>
+    <tr>
+      <td>Xenogen IVIS Spectrum</td>
+      <td>Instrument</td>
+      <td>Caliper Life Sciences</td>
+      <td>Spectrum</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Living Images</td>
+      <td>Software</td>
+      <td>Caliper Life Sciences</td>
+      <td colspan="2">Version used will be recorded and included in the Replication Study</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1 enantiomer</td>
+      <td>Chemical</td>
+      <td rowspan="2">EMD Millipore</td>
+      <td rowspan="2">500586</td>
+      <td rowspan="2">Original made by authors</td>
+    </tr>
+    <tr>
+      <td>(−)-JQ1 enantiomer</td>
+      <td>Chemical</td>
+    </tr>
+    <tr>
+      <td>Dextrose (D-(+)-glucose)</td>
+      <td>Chemical</td>
+      <td>Sigma–Aldrich</td>
+      <td>G8270</td>
+      <td>Original brand not specified</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
-## Notes
+##### Notes
 
 All cells will be sent for mycoplasma testing and STR profiling, as well as screened against a Rodent Pathogen Panel.Cells maintained in RPMI 1640 with 2 mM L-glutamine supplemented with 10% FBS, 100 U/ml penicillin, and 50 µg/ml streptomycin at 37°C in a humidified atmosphere at 5% CO2.MM.1S-LucNeo cells stably express a luciferase construct.After 1 week of acclimation, intravenously inject 2 × 106 MM.1S-LucNeo cells suspended in 200 µl PBS into 6-week old female SCID-beige mice using a 30½G needle via the lateral tail vein.8 days later, inject mice intraperitoneally with 75 mg/kg of D-luciferin in 0.1 ml using a 27½G needle. Anesthetize mice and image using a Xenogen IVIS Spectrum using the Living Images software package.a. Record weight of mice.b. Anesthetize with isoflurane.c. Image mice 20 min post injection.5 days later, inject mice with 75 mg/kg of D-luciferin as described in step 2 and image using a Xenogen IVIS Spectrum using the Living Images software package.a. Record weight of mice.b. Determine difference between bioluminescence of first imaging and second imaging.For mice with established disease, randomly divide into three cohorts.a. Established disease is defined as detection of MM.1S-LucNeo lesions diffusely engrafted in the skeleton with an increase in bioluminescence between the first and second images.b. Exclude any mice with no detectable disease or no increase in bioluminescence. If over 30 mice are present with detectable disease, exclude mice with lowest disease burden to obtain 30 mice for randomization and treatment.i. Original report saw 90–95% engraftment.c. Animals are ranked according to disease burden (difference between bioluminescence of first imaging and second imaging), to balance groups for baseline tumor characteristics, and assigned to group 1, group 2, or group 3 using an alternating serpentine method. (rank 1 = group 1, rank 2 = group 2, rank 3 = group 3, rank 4 = group 3, rank 5 = group 2, rank 6 = group 1, rank 7 = group 1, etc).i. Designation of Vehicle, (+)-JQ1, or (−)-JQ1 treatments as group 1, group 2, or group 3 will be determined by randomly assigning the three treatments into one block using www.randomization.com.ii. Record seed number.After imaging and randomization, treat mice daily with either (+)-JQ1 at 50 mg/kg, (−)-JQ1 at 50 mg/kg, or vehicle (5% dextrose in water) control by intraperitoneal injection with a 27½G needle.a. Inject 10 ml/kg body weight of a 5 mg/ml solution to give a final dose of 50 mg/kg.i. (+)-JQ1 and (−)-JQ1 solutions are prepared in 5% dextrose in water.b. Record weight of mice.6, 14, and 21 days after the start of treatment IP injections, assess tumor burden by bioluminescence imaging after IP injection of 75 mg/kg of D-luciferin as described in step 2 above.a. Record weight of mice.Continue to treat mice with daily injections of (+)-JQ1, (−)-JQ1, or vehicle control until mice are euthanized according to IACUC guidelines or until end of experiment (5 weeks total treatment).a. In this model, mice are euthanized when they develop hind limb paralysis.
 
-## Deliverables
+##### Deliverables
 
 ■ Data to be collected:◯ Mouse health records (including number of mice with established disease and reason for euthanasia, weight at time of each injection).◯ All images of mice in vivo to detect established disease and tumor burden (compare to Figure 7C).◯ Raw photon flux measurements of each mouse and graph of bioluminescence vs day of treatment of cohorts (compare to Figure 7D).◯ Raw survival data and Kaplan–Meier curves generated for percent survival (compare to Figure 7E).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the following statistical analyses listed below.■ Statistical analysis:◯ Tumor burden:One-way ANOVA test on day 22 data points with the following planned comparisons using Fisher's LSD correction:i. (+)-JQ1 treatment to vehicle treatment.ii. (+)-JQ1 treatment to (−)-JQ1 treatment.One-way ANCOVA test of the area under the curve (AUC) measurements (determined from day 1, 7, 15, and 22 data for each mouse) with the AUC pre-treatment measurements (determined from day −4 and 1 for each mouse) as the covariate, with the following planned comparisons with the Bonferroni correction:i. (+)-JQ1 treatment to vehicle treatment.ii. (+)-JQ1 treatment to (−)-JQ1 treatment.Note: This is an additional test not originally performed, which analyzes all data points opposed to just day 22 data points.◯ Kaplan–Meier curves:Log-rank Mantel–Cox test on the following comparisons with the Bonferroni correction:i. (+)-JQ1 treatment to vehicle treatment.ii. (+)-JQ1 treatment to (−)-JQ1 treatment.■ Meta-analysis of effect sizes:◯ Compute the effect sizes of each comparison, compare them against the effect size in the original paper and use a random effects meta-analytic approach to combine the original and replication effects, which will be presented as a forest plot.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 The replication experiment will include an additional cohort receiving treatment with the inactive (−)-JQ1 enantiomer, which was not included in the original study. All known differences of materials and reagents are listed in the ‘Materials and reagents’ section above with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell lines used in this experiment will undergo STR profiling to confirm their identity and will be sent for mycoplasma testing to ensure there is no contamination. Additionally, cells used for xenograft injection will be screened against a Rodent Pathogen Panel to ensure no contamination prior to injection. The bioluminescence images and measurements will be reported for all mice when determining the inclusion based on detection of lesions diffusely engrafted in the skeleton. Mice will be randomly assigned to treatment group with disease burden balanced among groups with the seed number recorded to reproduce the plan. All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access data set available on the Open Science Framework project page for this study (https://osf.io/7zqxp/).
 
@@ -104,72 +352,519 @@ The cell lines used in this experiment will undergo STR profiling to confirm the
 
 For additional details on power calculations, please see analysis scripts and associated files on the Open Science Framework:■ https://osf.io/bjrpc/.
 
-## Protocol 1
+### Protocol 1
 
-Summary of original data presented in Figure 3B (estimated from graph).Dataset being analyzedNMeanSDMM.1S cells treated with (+)-JQ1–0 hr2*1.00.375MM.1S cells treated with (+)-JQ1–1 hr2*0.068750.00625MM.1S cells treated with (+)-JQ1–8 hr2*0.08750.05*This is the number of biological replicates reported for this experiment.
+Summary of original data presented in Figure 3B (estimated from graph).
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset being analyzed</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MM.1S cells treated with (+)-JQ1–0 hr</td>
+      <td>2*</td>
+      <td>1.0</td>
+      <td>0.375</td>
+    </tr>
+    <tr>
+      <td>MM.1S cells treated with (+)-JQ1–1 hr</td>
+      <td>2*</td>
+      <td>0.06875</td>
+      <td>0.00625</td>
+    </tr>
+    <tr>
+      <td>MM.1S cells treated with (+)-JQ1–8 hr</td>
+      <td>2*</td>
+      <td>0.0875</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This is the number of biological replicates reported for this experiment._
 
 We are including the following groups in the replication study: (−)-JQ1 and vehicle treatment. We performed these calculations with the assumption that (−)-JQ1–0 hr, 1 hr, and 8 hr, and vehicle–0 hr, 1 hr, and 8 hr will have similar values as (+)-JQ1–0 hr.
 
-## Analysis with samples paired
+#### Analysis with samples paired
 
-## Test family
+##### Test family
 
-■ ANOVA: Repeated measures, within factors, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).◯ The correlation among repeated measures was assumed to be 0 and the nonsphericity correction was assumed to be 1.TimeGroupsDetectable effect size fA priori powerTotal sample size0 hr, 1 hr, and 8 hr(+)-JQ1, (−)-JQ1*, vehicle*0.41611†80.0%†15‡ (3 groups, 3 measurments)*(−)-JQ1 and vehicle values were the same as (+)-JQ1–0 hr values for this calculation.†This is the effect size detectable with 80% power and the indicated sample size.‡A total sample size of 15 will be used based on the paired t-test planned comparison calculations.
+■ ANOVA: Repeated measures, within factors, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).◯ The correlation among repeated measures was assumed to be 0 and the nonsphericity correction was assumed to be 1.
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Groups</th>
+      <th>Detectable effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 hr, 1 hr, and 8 hr</td>
+      <td>(+)-JQ1, (−)-JQ1*, vehicle*</td>
+      <td>0.41611†</td>
+      <td>80.0%†</td>
+      <td>15‡ (3 groups, 3 measurments)</td>
+    </tr>
+  </tbody>
+</table>
 
-2 tailed t test, difference between two dependent means (matched pairs): Bonferroni's correction: alpha error = 0.025.■ Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).◯ Correlation between groups was assumed to be 0.Group 1Group 2Effect size dzA priori powerTotal sample size(+)-JQ1–0 hr(+)-JQ1–8 hr2.4119990.8%5(+)-JQ1–0 hr(+)-JQ1–1 hr2.4829992.3%5
+_*(−)-JQ1 and vehicle values were the same as (+)-JQ1–0 hr values for this calculation.†This is the effect size detectable with 80% power and the indicated sample size.‡A total sample size of 15 will be used based on the paired t-test planned comparison calculations._
 
-## Analysis with samples unpaired
+##### Test family
 
-## Test family
+2 tailed t test, difference between two dependent means (matched pairs): Bonferroni's correction: alpha error = 0.025.■ Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).◯ Correlation between groups was assumed to be 0.
 
-■ Two-way ANOVA: Fixed effects, special, main effects and interactions, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANOVA F statistic calculated with R software 3.1.2 (Team RC, 2014).F test statistic (interaction) calculated from Cohen (2002).Partial η2 calculated from Lakens (2013).TimeGroupsF test statisticPartial η2Effect size fA priori powerTotal sample size0 hr, 1 hr, and 8 hr(+)-JQ1, (−)-JQ1*, vehicle*F(4,9) = 1.7228 (interaction)0.43360.8750382.4%†23† (9 groups)*(−)-JQ1 and vehicle values were the same as (+)-JQ1–0 hr values for this calculation.†A total sample size of 45 will be used based on the paired t-test planned comparison calculations making the power 99.7%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size dz</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1–0 hr</td>
+      <td>(+)-JQ1–8 hr</td>
+      <td>2.41199</td>
+      <td>90.8%</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1–0 hr</td>
+      <td>(+)-JQ1–1 hr</td>
+      <td>2.48299</td>
+      <td>92.3%</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### Analysis with samples unpaired
+
+##### Test family
+
+■ Two-way ANOVA: Fixed effects, special, main effects and interactions, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANOVA F statistic calculated with R software 3.1.2 (Team RC, 2014).F test statistic (interaction) calculated from Cohen (2002).Partial η2 calculated from Lakens (2013).
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Groups</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 hr, 1 hr, and 8 hr</td>
+      <td>(+)-JQ1, (−)-JQ1*, vehicle*</td>
+      <td>F(4,9) = 1.7228 (interaction)</td>
+      <td>0.4336</td>
+      <td>0.87503</td>
+      <td>82.4%†</td>
+      <td>23† (9 groups)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*(−)-JQ1 and vehicle values were the same as (+)-JQ1–0 hr values for this calculation.†A total sample size of 45 will be used based on the paired t-test planned comparison calculations making the power 99.7%._
+
+##### Test family
 
 2 tailed t test, difference between two independent means: Bonferroni's correction: alpha error = 0.025.
 
-Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample size(+)-JQ1–0 hr(+)-JQ1–8 hr3.4110793.3%*4*4*(+)-JQ1–0 hr(+)-JQ1–1 hr3.5114895.5%†4†4†*5 per group will be used based on the paired t-test planned comparisons making the power 98.7%.†5 per group will be used based on the paired t-test planned comparisons making the power 99.1%.
+Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-## Protocol 2
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1–0 hr</td>
+      <td>(+)-JQ1–8 hr</td>
+      <td>3.41107</td>
+      <td>93.3%*</td>
+      <td>4*</td>
+      <td>4*</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1–0 hr</td>
+      <td>(+)-JQ1–1 hr</td>
+      <td>3.51148</td>
+      <td>95.5%†</td>
+      <td>4†</td>
+      <td>4†</td>
+    </tr>
+  </tbody>
+</table>
 
-## Tumor burden as determined by bioluminescence
+_*5 per group will be used based on the paired t-test planned comparisons making the power 98.7%.†5 per group will be used based on the paired t-test planned comparisons making the power 99.1%._
 
-Summary of original data presented in Figure 7D (provided by authors).Dataset being analyzedDayNMeanSDVehicle-treated mice−4102.14 × 1069.38 × 1051101.06 × 1077.63 × 1067102.37 × 1087.98 × 10715106.40 × 1093.13 × 10922101.85 × 10101.01 × 1010(+)-JQ1-treated mice−491.59 × 1062.84 × 105198.10 × 1063.31 × 106795.78 × 1072.84 × 1071591.10 × 1095.70 × 1082295.52 × 1092.25 × 109
+### Protocol 2
+
+#### Tumor burden as determined by bioluminescence
+
+Summary of original data presented in Figure 7D (provided by authors).
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset being analyzed</th>
+      <th>Day</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Vehicle-treated mice</td>
+      <td>−4</td>
+      <td>10</td>
+      <td>2.14 × 106</td>
+      <td>9.38 × 105</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>10</td>
+      <td>1.06 × 107</td>
+      <td>7.63 × 106</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>10</td>
+      <td>2.37 × 108</td>
+      <td>7.98 × 107</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>10</td>
+      <td>6.40 × 109</td>
+      <td>3.13 × 109</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>10</td>
+      <td>1.85 × 1010</td>
+      <td>1.01 × 1010</td>
+    </tr>
+    <tr>
+      <td rowspan="5">(+)-JQ1-treated mice</td>
+      <td>−4</td>
+      <td>9</td>
+      <td>1.59 × 106</td>
+      <td>2.84 × 105</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>9</td>
+      <td>8.10 × 106</td>
+      <td>3.31 × 106</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>9</td>
+      <td>5.78 × 107</td>
+      <td>2.84 × 107</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>9</td>
+      <td>1.10 × 109</td>
+      <td>5.70 × 108</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>9</td>
+      <td>5.52 × 109</td>
+      <td>2.25 × 109</td>
+    </tr>
+  </tbody>
+</table>
 
 Area under the curve (AUC) calculations from estimated values from graph in Figure 7D.
 
-Calculations performed with R software 3.1.2 (Team RC, 2014).Data set being analyzedDaysNMeanSDVehicle-treated mice−4 to 1103.02 × 1072.30 × 1071 to 22101.14 × 10115.08 × 1010(+)-JQ1-treated mice−4 to 1102.51 × 1079.46 × 1061 to 22102.80 × 10108.72 × 109
+Calculations performed with R software 3.1.2 (Team RC, 2014).
+
+<table>
+  <thead>
+    <tr>
+      <th>Data set being analyzed</th>
+      <th>Days</th>
+      <th>N</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Vehicle-treated mice</td>
+      <td>−4 to 1</td>
+      <td>10</td>
+      <td>3.02 × 107</td>
+      <td>2.30 × 107</td>
+    </tr>
+    <tr>
+      <td>1 to 22</td>
+      <td>10</td>
+      <td>1.14 × 1011</td>
+      <td>5.08 × 1010</td>
+    </tr>
+    <tr>
+      <td rowspan="2">(+)-JQ1-treated mice</td>
+      <td>−4 to 1</td>
+      <td>10</td>
+      <td>2.51 × 107</td>
+      <td>9.46 × 106</td>
+    </tr>
+    <tr>
+      <td>1 to 22</td>
+      <td>10</td>
+      <td>2.80 × 1010</td>
+      <td>8.72 × 109</td>
+    </tr>
+  </tbody>
+</table>
 
 We are including the following group in the replication study: (−)-JQ1-treated mice. We performed these calculations with the assumption that (−)-JQ1-treated mice will have similar values as vehicle-treated mice.
 
-## Day 22 values
+#### Day 22 values
 
-## Test family
+##### Test family
 
-■ F test: ANOVA: Fixed effects, omnibus, one-way, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANOVA F test statistic calculated with R software 3.1.2 (Team RC, 2014).F test statistic (interaction) calculated from Cohen (2002).Partial η2 calculated from Lakens (2013).GroupsDataF test statisticPartial η2Effect size fA priori powerTotal sample size(+)-JQ1, (−)-JQ1*, vehicle22 daysF(2,26) = 7.21140.356800.7448080.8%†21† (3 groups)*(−)-JQ1 values were the same as vehicle values for this calculation.†8 per group (24 total) will be used based on the planned comparisons making the power 86.8%.
+■ F test: ANOVA: Fixed effects, omnibus, one-way, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANOVA F test statistic calculated with R software 3.1.2 (Team RC, 2014).F test statistic (interaction) calculated from Cohen (2002).Partial η2 calculated from Lakens (2013).
 
-## Test family
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>Data</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1, (−)-JQ1*, vehicle</td>
+      <td>22 days</td>
+      <td>F(2,26) = 7.2114</td>
+      <td>0.35680</td>
+      <td>0.74480</td>
+      <td>80.8%†</td>
+      <td>21† (3 groups)</td>
+    </tr>
+  </tbody>
+</table>
 
-■ 2 tailed t test: Means: Difference between two independent means: Fisher's LSD correction: alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 2Effect size dA priori powerGroup 1 sample sizeGroup 2 sample size(+)-JQ1Vehicle1.5243780.9%88(+)-JQ1(−)-JQ11.5243780.9%88
+_*(−)-JQ1 values were the same as vehicle values for this calculation.†8 per group (24 total) will be used based on the planned comparisons making the power 86.8%._
 
-## AUC values
+##### Test family
 
-## Test family
+■ 2 tailed t test: Means: Difference between two independent means: Fisher's LSD correction: alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
 
-■ F test: ANCOVA: Fixed effects, main effects and interactions, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANCOVA F test statistic calculated with R software 3.1.2 (Team RC, 2014).Partial η2 calculated from Lakens (2013).GroupsDataF test statisticPartial η2Effect size fA priori powerTotal sample size(+)-JQ1, (−)-JQ1*, vehicleAUC†F(2,25) = 36.0510.742541.6982698.3%‡11‡ (3 groups)*(−)-JQ1 values were the same as vehicle values for this calculation.†One covariate was used (days −4 to 1 AUC) for this calculation.‡8 per group (24 total) will be used based on the day 22 calculations making the power 99.9%.
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>Vehicle</td>
+      <td>1.52437</td>
+      <td>80.9%</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>(−)-JQ1</td>
+      <td>1.52437</td>
+      <td>80.9%</td>
+      <td>8</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
-## Test family
+#### AUC values
 
-■ 2 tailed t test: Means: Difference between two independent means: Bonferroni correction: alpha error = 0.025.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).Group 1Group 1 adjusted meanGroup 2Group 2 adjusted meanEffect size dA priori powerGroup 1 sample sizeGroup 2 sample size(+)-JQ11.12 × 1011Vehicle3.45 × 10103.4352293.6%*4*4*(+)-JQ11.12 × 1011(−)-JQ13.45 × 10103.4352293.6%*4*4**8 per group will be used based on the day 22 calculations making the power 99.9%.
+##### Test family
 
-## Survival data
+■ F test: ANCOVA: Fixed effects, main effects and interactions, alpha error = 0.05.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).ANCOVA F test statistic calculated with R software 3.1.2 (Team RC, 2014).Partial η2 calculated from Lakens (2013).
 
-Summary of original data presented in Figure 7E (provided by authors).Dataset being analyzedMedian survivalHazard ratio (to vehicle control)NVehicle-treated mice22 daysNA10JQ1-treated mice35 days0.0385659**Only 9 animals were analyzed in this group.
+<table>
+  <thead>
+    <tr>
+      <th>Groups</th>
+      <th>Data</th>
+      <th>F test statistic</th>
+      <th>Partial η2</th>
+      <th>Effect size f</th>
+      <th>A priori power</th>
+      <th>Total sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1, (−)-JQ1*, vehicle</td>
+      <td>AUC†</td>
+      <td>F(2,25) = 36.051</td>
+      <td>0.74254</td>
+      <td>1.69826</td>
+      <td>98.3%‡</td>
+      <td>11‡ (3 groups)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*(−)-JQ1 values were the same as vehicle values for this calculation.†One covariate was used (days −4 to 1 AUC) for this calculation.‡8 per group (24 total) will be used based on the day 22 calculations making the power 99.9%._
+
+##### Test family
+
+■ 2 tailed t test: Means: Difference between two independent means: Bonferroni correction: alpha error = 0.025.Power calculations performed with G*Power software, version 3.1.7 (Faul et al., 2007).
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 1 adjusted mean</th>
+      <th>Group 2</th>
+      <th>Group 2 adjusted mean</th>
+      <th>Effect size d</th>
+      <th>A priori power</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>1.12 × 1011</td>
+      <td>Vehicle</td>
+      <td>3.45 × 1010</td>
+      <td>3.43522</td>
+      <td>93.6%*</td>
+      <td>4*</td>
+      <td>4*</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>1.12 × 1011</td>
+      <td>(−)-JQ1</td>
+      <td>3.45 × 1010</td>
+      <td>3.43522</td>
+      <td>93.6%*</td>
+      <td>4*</td>
+      <td>4*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*8 per group will be used based on the day 22 calculations making the power 99.9%._
+
+#### Survival data
+
+Summary of original data presented in Figure 7E (provided by authors).
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset being analyzed</th>
+      <th>Median survival</th>
+      <th>Hazard ratio (to vehicle control)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vehicle-treated mice</td>
+      <td>22 days</td>
+      <td>NA</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>JQ1-treated mice</td>
+      <td>35 days</td>
+      <td>0.038565</td>
+      <td>9*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Only 9 animals were analyzed in this group._
 
 We are including the following comparisons in the replication study: (+)-JQ1-treated mice to (−)-JQ1-treated mice. We performed these calculations with the assumption that (−)-JQ1-treated mice will have similar values as vehicle-treated mice.
 
-## Test family
+##### Test family
 
-■ Log-rank (Mantel–Cox) test: Bonferroni correction: alpha error = 0.025.Power calculations performed with the Sample Size Calculator (Schoenfeld, 1983).Group 1Group 2Experiment durationA priori powerTotal events neededGroup 1 sample sizeGroup 2 sample size(+)-JQ1Vehicle40 days80%4*5*5*(+)-JQ1(−)-JQ140 days80%4*5*5**7 per group will be used based on the bioluminescence analysis making the power 94%.
+■ Log-rank (Mantel–Cox) test: Bonferroni correction: alpha error = 0.025.Power calculations performed with the Sample Size Calculator (Schoenfeld, 1983).
+
+<table>
+  <thead>
+    <tr>
+      <th>Group 1</th>
+      <th>Group 2</th>
+      <th>Experiment duration</th>
+      <th>A priori power</th>
+      <th>Total events needed</th>
+      <th>Group 1 sample size</th>
+      <th>Group 2 sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>Vehicle</td>
+      <td>40 days</td>
+      <td>80%</td>
+      <td>4*</td>
+      <td>5*</td>
+      <td>5*</td>
+    </tr>
+    <tr>
+      <td>(+)-JQ1</td>
+      <td>(−)-JQ1</td>
+      <td>40 days</td>
+      <td>80%</td>
+      <td>4*</td>
+      <td>5*</td>
+      <td>5*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*7 per group will be used based on the bioluminescence analysis making the power 94%._

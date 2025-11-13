@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.45241.001 In many vertebrates, establishment of Left-Right (LR) asymmetry results from the activity of a ciliated organ functioning as the LR Organizer (LRO). While regulation of the formation of this structure by major signaling pathways has been described, the transcriptional control of LRO formation is poorly understood. Using the zebrafish model, we show that the transcription factors and cofactors mediating or regulating the transcriptional outcome of the Hippo signaling pathway play a pivotal role in controlling the expression of genes essential to the formation of the LRO including ligands and receptors of signaling pathways involved in this process and most genes required for motile ciliogenesis. Moreover, the transcription cofactor, Vgll4l regulates epigenetic programming in LRO progenitors by controlling the expression of writers and readers of DNA methylation marks. Altogether, our study uncovers a novel and essential role for the transcriptional effectors and regulators of the Hippo pathway in establishing LR asymmetry.
+In many vertebrates, establishment of Left-Right (LR) asymmetry results from the activity of a ciliated organ functioning as the LR Organizer (LRO). While regulation of the formation of this structure by major signaling pathways has been described, the transcriptional control of LRO formation is poorly understood. Using the zebrafish model, we show that the transcription factors and cofactors mediating or regulating the transcriptional outcome of the Hippo signaling pathway play a pivotal role in controlling the expression of genes essential to the formation of the LRO including ligands and receptors of signaling pathways involved in this process and most genes required for motile ciliogenesis. Moreover, the transcription cofactor, Vgll4l regulates epigenetic programming in LRO progenitors by controlling the expression of writers and readers of DNA methylation marks. Altogether, our study uncovers a novel and essential role for the transcriptional effectors and regulators of the Hippo pathway in establishing LR asymmetry.
 
 ## Introduction
 
@@ -31,9 +31,25 @@ The regulation of the organogenesis of the LRO, from the specification of its pr
 
 ## Results
 
-## Hippo TFs/TcoFs are required for the establishment of LR asymmetry
+### Hippo TFs/TcoFs are required for the establishment of LR asymmetry
 
 To identify novel factors involved in the transcriptional regulation of the formation of the LRO we screened the zebrafish gene expression patterns database (http://zfin.org/) for TFs or TcoFs specifically expressed in the KV and/or in its progenitors. By this approach, we identified Vgll4l, a TcoF member of the Vestigial like four family, which is strongly expressed at gastrula stage in LRO progenitors (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig1-v2.jpg)
+
+**Figure 1.:** (A) Whole-mount in situ hybridization for vgll4l, yap, taz, vgll4b and tead3a at gastrula and at the 6-somite stage. Vgll4l is expressed in DFCs at 60% (dorsal view), 80% (lateral view) and 90% epiboly (vegetal pole view) but is not expressed in the KV at the 6-somite stage (vegetal pole view). Yap and Taz are shown at 80% epiboly and at the 6-somite stage in vegetal pole view, Vgll4b at gastrula stage and Tead3a at the 6-somite stage in vegetal pole views. Tead1a that is constitutively expressed is not presented. White arrowheads point to DFCs, blue arrowheads point to the KV. (B) Cardiac jogging analyzed at 25 hr post fertilization (hpf). Graphs indicate the percentage of embryos with normal Left jog (L jog - yellow), Right jog (R jog – dark blue) or no jog (light blue), visualized by in situ hybridization (top, h: heart) with a myosin light chain 7 (myl7) probed at 25 hpf in: wild-type (WT) embryos; embryos injected with standard (std) MO or with Vgll4l, Vgll4b, Yap, Taz, Yap and Taz, Tead1a or Tead3a MOs; embryos injected with ASO; rescue experiments of morphant phenotypes by injection of MO insensitive RNA; incubation with 2.5 µM of Verteporfin, a Yap inhibitor. For each experiment the name of gene, name and amount of MO and/or RNA injected are indicated on the left. For double Yap/Taz MO-KD, 4 ng Yap MOsp and 4 ng Taz MOsp2 have been injected. DFC ‘name of the gene’ MO indicates DFC-targeted knockdown experiment (Wang et al., 2013). (MO + RNA) stands for rescue experiment of the indicated MO together with 100 ng of the corresponding, MO insensitive, mRNA. (C) Schematic of functional domains present in WT and in Vgll4l, Vgll4b, Yap, Taz and Tead3a mutants. nls: nuclear localization signal, PDZ: PDZ-binding motif, TA: transcription activation domain, TB: TEAD binding domain, TcoF-BD: transcription cofactor binding domain, TEA: DNA-binding TEA/ATTS domain, TDU: TONDU domain, WW: WW domain. Numbers indicate the position of the last amino-acid of each peptide. (D) Laterality defects of homozygous mutant embryos and of embryos homozygous mutant for Taz, heterozygous for Yap, analyzed as described in (B) for their cardiac jogging at 25 hpf. Numerical data for (B) and (D) are provided in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Yap protein is present in nuclei of dorsal marginal cells at 75% epiboly. (B) Double labeling for Yap and Sox17 identifying these cells to be DFCs. (C) Sox17 immunolabeling revealing the DFCs.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Graphs indicate the percentage of embryos with normal expression of lft1 in the left heart primordium and the left dorsal diencephalon (yellow), with abnormal bilateral lft1 expression in the two heart primordia and in left and right dorsal diencephalon (light blue) and with situs inversus with lft1 expression in the right heart primordium and in the right dorsal diencephalon (dark blue). n: number of embryos analyzed. Numerical data for (B) and (D) are provided in Figure 1—figure supplement 2—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–F) Side view of live WT embryo (A) and of embryos homozygous (-/-) mutant for vgll4l (B), vgll4b (C), yap (D), taz (E) and tead3a (F) at 2 days of development showing that the global morphology of the embryo is not affected by loss of function of these TFs/TcoFs. (G–L) Cardiac jogging at 25 hr post fertilization (hpf) in (G) WT (L jog: left jog) and in homozygous mutants visualized by in situ hybridization with myosin light chain 7 (myl7) probed at 25 hpf for vgll4l (H), vgll4b (I), yap (J), taz (K) and tead3a (L) mutants. Embryos with abnormal laterality (R jog - right jog or no jog) are presented. Embryos are in front view except in (L), R jog) presented in dorsal view.
 
 Vestigial like family members are TcoFs known to function mainly through the interaction with TEA domain DNA-binding family of transcription factors (TEAD) (Deng and Fang, 2018). TEADs are the DNA binding TFs to which the TcoFs that mediate the transcriptional outcome of the Hippo signaling pathway, Yap and Taz (also known as Wwtr1), bind to, to activate expression of their target genes. Interestingly, in various human cancer cell lines, Vgll4 was shown to negatively regulate the transcriptional outcome of Hippo signaling by competing with Yap and Taz for TEADs, therefore inhibiting their function (Zhang et al., 2014).
 
@@ -45,9 +61,21 @@ In the mouse embryo, partial redundancy of Yap and Taz has been proposed to expl
 
 Altogether, the analysis of loss of function of Hippo TFs/TcoFs using a variety of approaches allowed us to uncover a novel and essential role for Hippo TFs/TcoFs in establishing LR asymmetry.
 
-## Hippo TFs/TcoFs are required for the formation of the LRO
+### Hippo TFs/TcoFs are required for the formation of the LRO
 
 We then investigated whether the laterality phenotypes observed for the loss of function of these TFs/TcoFs resulted from defects in the formation and/or function of the LRO. Because Yap and Taz are partially redundant, we analyzed their function conjointly, using double Yap/Taz loss of function. First, using in situ hybridization for sox17, an early DFC marker, we found that DFC clusters are present at early gastrula stage for every Hippo TF/TcoF mutant/morphant tested (not shown), strongly supporting that these factors are not required for the specification of LRO progenitors. Conversely, lack of their activity has a dramatic effect on the formation of the KV (Figure 2A–D, Figure 2—figure supplement 1) with a strong decrease of its size (Figure 2E). In contrast, gain of Yap function through injection of its in vitro synthesized mRNA in a DFC specific manner (Esguerra et al., 2007; Matsui et al., 2011) results in an increase of the KV size associated with an increase in the number of KV cells (Figure 2—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Illustration of the strong decrease in the size of the KV at the 12-somite stage in loss-of-function conditions shown in brightfield for (A) a control embryo (Ctrl) and for (B) a TEAD1a morphant embryo (Tead1a-MO) and by in situ hybridization using a dand5 probe in (C) Ctrl and in (D) Vgll4b morphant embryo (Vgll4b-MO). (E–H) Effect of Vgll4l (V4l), Vgll4b (V4b), Tead1a (T1a), Tead3a (T3a) loss of function and of Yap/Taz (Y/T) double loss of function on: (E) the size of the KV (expressed as the area of the planar projection of its lumen), (F) the number of DFCs present at early gastrula stage (60% epiboly) and at the end of gastrulation (bud stage), (G) the proliferation of the DFCs measured as their mitotic index at 75% of epiboly, (H) the survival of DFCs measured as their apoptotic index at 90% epiboly. In all cases control (Ctrl) embryos were injected with 8 ng of Standard MO. Graph indicates the mean of each experiment, error bars indicate standard deviation and dots indicate the individual measurement for DFC groups or individual KV in control and loss of function conditions. Statistical significance between controls and the different loss-of-function conditions: two-tailed unpaired t-test. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. ns: not significant. Numerical data for (E–H) and details of statistical analysis are provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Dorsal view of the KV of the Tg(sox17:GFP)s870 line. KV cilia (red) are detected by immunolabelling using an anti-acetylated tubulin antibody in (A) WT embryo of the Tg(sox17:GFP)s870 line and in homozyous mutant (-/-) embryos of (B) vgll4lva1/va1; s870Tg, (C) vgll4bva2/va2; s870Tg, (D) yapva3/va3; s870Tg, (E) taz/wwtr1va4/va4 and (G) tead3asa14593/sa14593; s870Tg lines. Scale bars: 20 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Brightfield view of the KV in (A) WT and (B) an embryo overexpressing Yap in DFCs at the 12-somite stage (12 s). (C, D) Visualization of the KV (green) and of KV cilia (red – immunolabeling using an anti-acetylated tubulin antibody) at the 12-somite stage in (C) WT embryos of the Tg(sox17:GFP)s870 line and (D) embryo of the same line overexpressing Yap in DFCs. Scale bars 20 µm. (E–F) lateral view of (E) a WT embryo and (F) an embryo overexpressing Yap in the DFCs at the 18-somite stage (18 s). Arrows point to the KV. (G) Quantification of the size of the KV (expressed as the area of the planar projection of its lumen) in WT and in Yap gain of function. (H) Quantification of the number of cells present in the DFCs at early gastrula stage and in the KV at the 12-somite stage. Numerical data for (G–H) and details of statistical analysis are provided in Figure 2—figure supplements 2—source data 1.
 
 During gastrulation, inWT embryos, DFCs proliferate, their number increasing from ~20 at the onset of gastrulation to ~50 in the differentiated KV. While the initial number of DFCs at early gastrula (60% epiboly) in embryos lacking Hippo TFs/TcoFs function is similar to control, we found a significant reduction in the DFC number at the end of gastrulation for each loss of function analyzed (Figure 2F). We then investigated whether the decrease in DFC number resulted from defects in cell proliferation and/or in cell survival. Measurement of the mitotic index at late gastrula stage revealed a moderate effect in Vgll4l, Yap/Taz and Tead1a knockdowns, while the mitotic index of the DFCs was not significantly affected in Vgll4b and Tead3a (Figure 2G). We also observed that cell survival, analyzed by measuring the apoptotic index of DFCs at 80% epiboly, was affected in Hippo TFs/TcoFs loss-of-function embryos (Figure 2H).
 
@@ -55,13 +83,25 @@ Finally, because motile cilia are essential to the function of the LRO, we looke
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig3-v2.jpg)
 
-**Figure 3.:** (A–C) Visualization of KV cilia at the 10-somite stage using an anti-acetylated tubulin antibody in (A) control embryos of the WT Tg(dusp6:GFP) line showing both KV cells (green) and cilia (red) or (B) only cilia. (C) cilia in Vgll4b morphant. Scale bar: 40 µm. (D) Length of KV cilia in Control (Ctrl) embryos and in Vgll4l, Vgll4b, Yap/Taz, Tead1a and Tead3a morphant embryos. Control (Ctrl) embryos were injected with 8 ng of Standard MO. Graph indicates the mean of cilia length, error bars the standard deviation. Statistical significance between controls and different loss-of-function conditions: two-tailed unpaired t-test. ****p≤0.0001. Numerical data and details of statistical analysis are provided in Figure 3—source data 1.10.7554/eLife.45241.014Figure 3—source data 1.Figure 3D.
+**Figure 3.:** (A–C) Visualization of KV cilia at the 10-somite stage using an anti-acetylated tubulin antibody in (A) control embryos of the WT Tg(dusp6:GFP) line showing both KV cells (green) and cilia (red) or (B) only cilia. (C) cilia in Vgll4b morphant. Scale bar: 40 µm. (D) Length of KV cilia in Control (Ctrl) embryos and in Vgll4l, Vgll4b, Yap/Taz, Tead1a and Tead3a morphant embryos. Control (Ctrl) embryos were injected with 8 ng of Standard MO. Graph indicates the mean of cilia length, error bars the standard deviation. Statistical significance between controls and different loss-of-function conditions: two-tailed unpaired t-test. ****p≤0.0001. Numerical data and details of statistical analysis are provided in Figure 3—source data 1.
 
 There are contradictory reports on the role of Hippo signaling on ciliogenesis. In one study, Yap was described not to be involved in that process (Kim et al., 2014), whereas another study linked Yap to the formation of non-motile cilia during zebrafish kidney development (He et al., 2015). Our observations support the latter conclusion, implicating Yap in ciliogenesis and demonstrating that the canonical Hippo pathway is required for proper organization of motile cilia.
 
-## The TcoFs Yap/Taz and Vgll4l control the transcriptome of LRO progenitors
+### The TcoFs Yap/Taz and Vgll4l control the transcriptome of LRO progenitors
 
 Because Vgll4l and Yap/Taz are TcoFs, they are expected to function by regulating gene expression. In a first experiment, we examined the consequences of their loss of function by MO knockdown on the expression of the 78 DFC specific genes we previously identified in high throughput in situ hybridization screens (http://zfin.org/, gene expression section). Expression of 30% of tested candidates (24/78) was either strongly decreased or completely absent in Vgll4l depleted DFCs (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig4-v2.jpg)
+
+**Figure 4.:** Whole-mount in situ hybridization for genes that are expressed in DFCs at 70–90% epiboly in control (Ctrl) embryos and that are strongly downregulated in Vgll4l MO knockdown. Embryos are in dorsal view, animal pole to the top (A–L), in vegetal pole view dorsal to the right (M–W) and in lateral view anterior to the top dorsal to the right (X). Name of the genes probed is indicated in between control (top) and Vgll4l loss of function embryos (bottom).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** DFC specific MO knockdown for Vgll4l (Vgll4lDFC-MO, 8 ng Vgll4l MOsp), Yap (YapDFC-MO, 8 ng of Yap MOsp) and DFC targeted injection of control morpholino (ctrl, 8 ng std MO) analyzed by in situ hybridization for the expression of DFC specific genes. The name of the genes probed is indicated in the lower left corner of each panel. Embryos are in dorsal view animal pole to the top except dnmt3bb.1 and mbd3b that are in a vegetal pole view dorsal to the right.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Box plots of the expression of the genes presented in Figure 4 in Control embryos (Ctrl - gray), in Vgll4 (red) and in Yap/Taz (blue) loss-of-function conditions. Gene expression in control samples was normalized to one and the amount of transcripts (expressed as normalized counts) is indicated for the control. For Vgll4l loss of function the 24 genes analyzed are differentially expressed (|log2FoldChange| > 1, adjusted p-value<0.05). This is also the case for Yap/Taz loss-of-function except when mentioned otherwise: ns (not significant). Numerical data and adjusted p-value for all conditions are available is Supplementary file 1. Adjusted p-value is <0.0001 for all differentially downregulated genes in Vgll4l or Yap/Taz loss-of-function conditions. The box in box-plots indicates the first and third quantile and the black horizontal bar within the box illustrates the median (or second quantile). The ends of the whiskers are set at 1.5*Interquartile range (IQR) above the third quartile (Q3) and 1.5*IQR below the first quartile (Q1).
 
 Remarkably, 1/3 (8/24) of these genes are known to be required for the formation of the KV. They are involved in cilium assembly (cdc14aa, daw1, dnaaf4, ttc25), KV lumen expansion (cftr, cldn5a), proton transport (atp6ap1b) that has been shown to mediate DFC proliferation (Gokey et al., 2015), DNA methylation (dnmt3bb.1) or belong to the Nodal signaling pathway (ndr1). Similarly, we found that DFCs depleted for Yap/Taz display a clear decrease in expression for cdc14aa, tnfrsf21, dnaaf4, cftr or ndr1 (not shown). Therefore, in addition to their known function in regulating cell proliferation and survival, Vgll4l and Yap/Taz regulate, directly or indirectly, the expression of genes that are essential for a variety of processes involved in the formation and function of the KV.
 
@@ -81,7 +121,7 @@ To identify the biological function of DEGs for Vgll4l and Yap/Taz, we determin
 
 Amongst the 166 genes whose loss of function has been described resulting into phenotypic defects in DFCs or in KV (http://zfin.org/, phenotype section), we found 134 genes expressed in DFCs at late gastrula stage. Remarkably, 62% (83/134) and 50% (67/134) of these genes are respectively downregulated in loss of function of Vgll4l and Yap/Taz (Figure 5D, Supplementary file 3). This includes 75% (46/61) of genes involved in motile ciliogenesis and associated with defects of the KV function for Vgll4l depleted DFCs and 52% (32/61) for Yap/Taz loss of function (Supplementary file 4). Phenotypic analysis already revealed that these TcoFs are essential to proper formation of KV motile cilia (Figure 3). Altogether, our transcriptome analysis further reinforced the conclusion that these factors play a major role in the regulation of motile ciliogenesis during the formation of the LRO.
 
-## Yap/Taz and Vgll4l regulate the activity of signaling pathways involved in LRO formation
+### Yap/Taz and Vgll4l regulate the activity of signaling pathways involved in LRO formation
 
 The molecular and cellular processes leading to the formation of a functional LRO are known to be regulated by major signaling pathways including Nodal, FGF, non-canonical Wnt and Notch (reviewed in Matsui and Bessho, 2012). We investigated the impact of Vgll4l and Yap/Taz on the expression of essential components (ligands, receptors, signal transductors, regulators) of these different pathways in DFCs at late gastrula stage. We found a strong downregulation of nodal related 1 (ndr1) expression in both Vgll4l (Figures 4C and 6A) and Yap/Taz (Figure 6A) loss of function. In Vgll4l, this loss of Ndr1 transcripts is associated with a strong decrease of the expression of smad2a, a R-Smad known to transduce Nodal signaling and with a strong upregulation of the expression of two Nodal feedback antagonists, lefty1 (lft1) and lefty2 (lft2) (Agathon et al., 2001). Both the decrease in Smad2a transcripts and the upregulation of Lft1 and Lft2 expression may disrupt the Nodal positive autoregulatory loop that is essential for the maintenance of ndr1 transcription. In Yap/Taz loss of function, the strong decrease in ndr1 expression is associated with a decrease in Smad3a transcripts, another R-Smad transducing Nodal signaling, but we did not observe an upregulation of Lft1 or Lft2 expression (Figure 6A).
 
@@ -91,7 +131,7 @@ The molecular and cellular processes leading to the formation of a functional LR
 
 In addition to Nodal, the non-canonical Wnt, the FGF and the Notch pathways are also affected. We observed a strong downregulation of expression of ligand (Wnt11) and receptors (Fzd8a, Fzd10 for Vgll4l, Fzd10 for Yap/Taz) of the non-canonical Wnt pathway (Figure 6B). Expression of ligands (Fgf8a and Fgf1a for Vgll4l; Fgf1a for Yap/Taz) of the FGF signaling pathway is downregulated in both Vgll4l and Yap/Taz loss-of-function conditions and the amount of transcripts of the Fgf receptor, Fgfr1a, and of the positive Fgf feedback regulator, Cnpy1, is strongly decreased in DFCs lacking Vgll4l (Figure 6C). As well the expression of ligands (Dla, Jag2b) and receptors (Notch1a, Notch1b and Notch3) of the Notch signaling pathway (Figure 6D) is downregulated in DFCs lacking either Vgll4l or Yap/Taz. Altogether, these observations provide evidence that Vgll4l and Yap/Taz are essential upstream regulators of the major signaling pathways controlling the formation of the LRO.
 
-## Yap/Taz and Vgll4l control expression of TFs known to be required for LRO formation
+### Yap/Taz and Vgll4l control expression of TFs known to be required for LRO formation
 
 The precise temporal order by which TFs selectively activate gene expression during development is critical to ensure proper lineage commitment, cell fate determination, and ultimately organogenesis.So far, only a small number of TFs has been shown to be necessary for the formation of the LRO, either for the specification of its progenitors [Dharma (Fekany et al., 1999), Sox32 (Essner et al., 2005), Sox17 (Aamar and Dawid, 2010)] or for the formation and function of the KV [FoxJ1a (Yu et al., 2008), Tbx16 (Amack et al., 2007), Tbxta (Amack et al., 2007) and Rfx2 (Bisgrove et al., 2012)]. We investigated the impact of loss of function of Vgll4l or Yap/Taz on the expression in LRO progenitors of these TFs. Because dharma is not expressed in DFCs at gastrula stage it is therefore not regulated in these cells by Vgll4l or Yap/Taz. However, transcripts of sox32, sox17, tbxta, tbx16, foxj1a and rfx2 are expressed in DFCs during gastrulation and we found they are all significantly downregulated in Vgll4l and Yap/Taz loss of function (Figure 7). These observations strongly support that Vgll4l and Yap/Taz act upstream of the TFs known to be essential to the formation of the LRO and are involved in the regulation of their expression.
 
@@ -99,7 +139,7 @@ The precise temporal order by which TFs selectively activate gene expression dur
 
 **Figure 7.:** Transcripts of Sox32, Sox17, Tbxta, Tbx16, Foxj1a and Rfx2 are expressed in DFCs and are all significantly downregulated in Vgll4l and Yap/Taz morphants. The bar graphs depict the mean expression of genes in DFCs of control (gray), Vgll4l (red) and Yap/Taz (blue) loss of function expressed as normalized counts with error bars indicating standard deviation. Dots indicate the individual value of each biological replicate (n = 4). Statistical significance between controls and loss of function conditions: two-tailed unpaired t-test. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. ns: not significant (p>0.05 and/or |log2 fold change| < 1). Numerical data are available in Supplementary file 1.
 
-## Vgll4l regulates expression of writers and readers of DNA methylation marks in LRO progenitors
+### Vgll4l regulates expression of writers and readers of DNA methylation marks in LRO progenitors
 
 Lineage commitment, cell fate determination and ultimately organogenesis are also regulated by epigenetic mechanisms. Transcriptome analysis revealed that depletion of Vgll4l affects expression of genes involved in covalent chromatin modification (Figures 5C and 8). Indeed, in DFCs, Vgll4l loss of function leads to a strong downregulation of the expression of genes coding for writers of the DNA methylation marks: the de novo DNA methyltransferases Dnmt3ba, Dnmt3bb.1, Dnmt3bb.2 (Chédin, 2011) (Figures 4Q–R and 8) and the maintenance DNA methyltransferase Dnmt1 (Mohan and Chaillet, 2013) (Figure 8). In addition we found that Vgll4l also regulates the expression of the readers of DNA methylation marks, the Methyl-CpG-Binding Domain proteins: Mbd1b, Mbd2, Mbd3a (Figure 8), Mbd3b (Figures 4S, 8) (note that while in mammals the methyl binding domain of MBD3 harbors critical mutations - K30H and Y34F - preventing it to bind to methylated DNA (Saito and Ishikawa, 2002), the methyl binding domain of Mbd3 in lower vertebrates retains the K30 and Y34 amino acids and binds to methylated DNA (Bogdanović and Veenstra, 2011) and Mbd6 (Figure 8). The other Dnmts and Mbds encoded by the zebrafish genome are either not expressed or expressed at low level in DFCs at late gastrula stage (Supplementary file 1).
 
@@ -111,7 +151,7 @@ We investigated the possible role of these writers and readers of DNA methylatio
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig9-v2.jpg)
 
-**Figure 9.:** (A) Loss of function of writers (dnmt3s) and readers (mbds) of DNA methylation marks strongly disrupt embryo laterality, analyzed by examining cardiac jogging at 25 hpf. Graphs indicate the percentage of embryos with normal Left jog (L jog - yellow), Right jog (R jog – dark blue) or no jog (light blue), at 25 hpf in control embryos (injected with 8 ng Standard - Std - MO), MO KDs (8 ng each MO) or in homozygous mutant embryos (-/-). (B–F) Phenotype analysis of LRO defects in morphants. (B) Size of the KV expressed in surface area of the planar projection of its lumen, (C) number of DFCs at the end of gastrulation, (D) Mitotic index at 80% epiboly, (E) Apoptotic index at gastrulation and (F) Length of KV cilia in : control (Ctrl) embryos (gray), Vgll4l (red), Dnmt3bb.1 (green) or Mbd3b (blue) MO knockdowns. Statistical significance between controls and loss of function conditions: two-tailed unpaired t-test. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Numerical data (A–H) and details of statistical analysis for (B–F) are provided in Figure 9—source data 1. (G) Injection of 100 ng of in vitro synthesized Dnmt3bb.1 RNA partially rescues laterality defects of Vgll4l morphants (8 ng Vgll4l MO), scored on cardiac jogging at 25 hpf.10.7554/eLife.45241.023Figure 9—source data 1.Figure 9A, B, C, D, E, F and G.
+**Figure 9.:** (A) Loss of function of writers (dnmt3s) and readers (mbds) of DNA methylation marks strongly disrupt embryo laterality, analyzed by examining cardiac jogging at 25 hpf. Graphs indicate the percentage of embryos with normal Left jog (L jog - yellow), Right jog (R jog – dark blue) or no jog (light blue), at 25 hpf in control embryos (injected with 8 ng Standard - Std - MO), MO KDs (8 ng each MO) or in homozygous mutant embryos (-/-). (B–F) Phenotype analysis of LRO defects in morphants. (B) Size of the KV expressed in surface area of the planar projection of its lumen, (C) number of DFCs at the end of gastrulation, (D) Mitotic index at 80% epiboly, (E) Apoptotic index at gastrulation and (F) Length of KV cilia in : control (Ctrl) embryos (gray), Vgll4l (red), Dnmt3bb.1 (green) or Mbd3b (blue) MO knockdowns. Statistical significance between controls and loss of function conditions: two-tailed unpaired t-test. *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Numerical data (A–H) and details of statistical analysis for (B–F) are provided in Figure 9—source data 1. (G) Injection of 100 ng of in vitro synthesized Dnmt3bb.1 RNA partially rescues laterality defects of Vgll4l morphants (8 ng Vgll4l MO), scored on cardiac jogging at 25 hpf.
 
 Phenotypic analyses of KV formation in embryos depleted for one de novo Dnmt (Dnmt3bb.1) or for one Methyl-CpG-Binding Domain protein (Mbd3b) reveals striking similarities with Vgll4l loss-of-function phenotype: reduction of KV size (Figure 9B), decreased number of DFCs at late gastrulation (Figure 9C) associated with a moderate decrease of DFC mitotic index (Figure 9D), an increased apoptotic index (Figure 9E) as well as a significant reduction in length of KV motile cilia (Figure 9F).
 
@@ -121,7 +161,7 @@ Because Vgll4l is necessary for Dnmt3bs expression we predict that its loss of f
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/45241/elife-45241-fig10-v2.jpg)
 
-**Figure 10.:** (A–F) Immunolabeling of DFC nuclei of embryos of the Tg(Sox17:GFP) strain with antibodies to five methyl Cytosine (5meC) in (A–C) WT and (D–F) vgll4l homozygous mutant. Dotted lines delimit the DFC clusters. (G) Quantification of DNA methylation measured by immunofluorescence intensity. The values on the graph correspond to the mean of 5meC fluorescence intensity per nuclei (FI/nuclei) quantified with the ImageJ software on all nuclei of DFC clusters in morphants for Vgll4l and Dnmt3bb.1 and in embryos from a cross between two heterozygous Vgll4l mutants that have been individually genotyped after measurement of FI/nuclei of their DFCs. Fluorescence intensity per nuclei is expressed in relative units (R.U.). Statistical significance between controls (standard MO or vgll4l +/+) and loss of function conditions: two-tailed unpaired t-test. ns, not significant (p>0.05), *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Numerical data and details of statistical analysis for (G) are provided in Figure 10—source data 1.10.7554/eLife.45241.025Figure 10—source data 1.Figure 10G.
+**Figure 10.:** (A–F) Immunolabeling of DFC nuclei of embryos of the Tg(Sox17:GFP) strain with antibodies to five methyl Cytosine (5meC) in (A–C) WT and (D–F) vgll4l homozygous mutant. Dotted lines delimit the DFC clusters. (G) Quantification of DNA methylation measured by immunofluorescence intensity. The values on the graph correspond to the mean of 5meC fluorescence intensity per nuclei (FI/nuclei) quantified with the ImageJ software on all nuclei of DFC clusters in morphants for Vgll4l and Dnmt3bb.1 and in embryos from a cross between two heterozygous Vgll4l mutants that have been individually genotyped after measurement of FI/nuclei of their DFCs. Fluorescence intensity per nuclei is expressed in relative units (R.U.). Statistical significance between controls (standard MO or vgll4l +/+) and loss of function conditions: two-tailed unpaired t-test. ns, not significant (p>0.05), *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001. Numerical data and details of statistical analysis for (G) are provided in Figure 10—source data 1.
 
 ## Discussion
 
@@ -139,13 +179,13 @@ The role of DNA methylation in chromatin modifications associated with cell diff
 
 ## Materials and methods
 
-## Zebrafish line and husbandry
+### Zebrafish line and husbandry
 
 Zebrafish lines used in this study are the AB/Tü WT line, Tg(sox17:GFP)S870 (Chung and Stainier, 2008) and Tg(dusp6:GFP)pt19 (Wang et al., 2011). vgll4lva1 (an allele carrying a deletion of 7 nucleotides in the second exon resulting in a frame shift after amino-acid 36), vgll4bva2 (an allele carrying an INDEL - ∆4,+6 - resulting in a frame shift after amino-acid 109), yap1va3 (an allele of yap carrying a deletion of 8 nucleotides resulting in a frame shift after amino-acid 124), wwtr1va4 (an allele of taz carrying a deletion of 4 nucleotides resulting in a frame shift after amino-acid 85), dnmt3bb.1mk24 (an allele carrying a deletion of 6 nucleotides removing Ser 612 and Pro 613, two amino-acids of the catalytic site), dnmt3bb.2mk23 (an allele carrying an InDel - ∆5+13 – resulting in a frame shift after amino-acid 1237 and that lack the catalytic site) and dnmt3bamk26 (an allele carrying a 12 nucleotides deletion in the catalytic domain). Position and sequence of the different mutations are presented in Supplementary files 6–9.
 
 This study was carried out in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals and all steps were taken to minimize animal discomfort. The University of Virginia Institutional Animal Care and Use Committee approved all protocols.
 
-## In situ hybridization
+### In situ hybridization
 
 In situ hybridization on whole-mount embryos have been performed as described in Thisse and Thisse (2014); Thisse and Thisse (2008). Conditions for the synthesis of antisense RNA probes for the following cDNA clones : abcc6a (Li et al., 2010) ; atp6ap1b (MGC:103523) ; cdc14aa (MGC:63654) ; cldn5a (MGC:85723) ; daw1 (IMAGE:6904039) ; dhrs13a.1 (cb464) ; dnaaf4 (MGC:77853) ; dnmt3bb.1 (cb633) ; mbd3a (IMAGE:7139207), mbd3b (cb99) ; nme5 (MGC:92812) ; quo (cb9) ; rasgef1ba (MGC:66487) ; rassf7b (cb262) ; si:ch73-364h19 (cb911) ; slc35d1a (IMAGE:7156746) ; sox17 (MGC:91776) ; sypl2b (IMAGE:7136581) ; tead1a (MGC:63696) ; tead3a (CB882) ; tekt1 (MGC :101797) ; ttc25 (MGC:56362) ; vgll4l (cb747) and yap1 (cb194) are available at http://zfin.org/ in the gene expression section.
 
@@ -153,13 +193,178 @@ The cDNAs of ndr1 (Agathon et al., 2003) and dand5 were inserted in the pBS-IISK
 
 Representative images were acquired using a coolsnap camera on a Leica macroscope.
 
-## Morpholino knockdowns
+### Morpholino knockdowns
 
 Morpholinos (Gene Tools) were resuspended in sterile water as a 4 mM stock solution and diluted in 0.2% Phenol Red and 0.1M KCl before use to the appropriate concentration. Embryos were dechorionated at the one-cell stage using Pronase E and injected with 1 nl of morpholino solution, using an Eppendorf 5426 microinjector.
 
 For knockdowns in the whole embryo, morpholino solutions were injected in the yolk in a position close to the blastomeres at the 1- to 4 cell stages. For DFC specific knockdown, injections were performed in the yolk close to the blastomeres at the 256- to 1 K-cell stage as described in Wang et al. (2013). Names, sequences and amounts of MO injected in knockdowns and DFC specific knockdowns are provided in Table 1. In all experiments control embryos were injected with 8 ng of standard MO.
 
-## Antisense oligonucleotides (ASO) knockdowns
+**Table 1.**
+ Name, sequence and amount of MO used in knockdown and in DFC targeted knockdown.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>MO name</th>
+      <th>Sequence</th>
+      <th>References</th>
+      <th>Amounts injected for knockdown</th>
+      <th>Amounts injected for DFC targeted knockdown</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vgll4l MO1</td>
+      <td>TGTAGTGGAAATTAGTGACCGCCAT</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vgll4l MOsp</td>
+      <td>TTGGGCTGTCCTGTGAAAAGATGAG</td>
+      <td>This study</td>
+      <td>6 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vgll4b MO1</td>
+      <td>ACAGGTCCATTTTGGTAAAAAGCAT</td>
+      <td>(Melvin et al., 2013)</td>
+      <td>4 ng</td>
+      <td>8 ng</td>
+    </tr>
+    <tr>
+      <td>Vgll4b MO2</td>
+      <td>AATCGCAGAAAGAGCAGCTTCTCTT</td>
+      <td>This study</td>
+      <td>4 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yap MO1</td>
+      <td>CTCTTCTTTCTATCCAACAGAAACC</td>
+      <td>(Hu et al., 2013; Jiang et al., 2009)</td>
+      <td>6 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Yap MOsp</td>
+      <td>AGCAACATTAACAACTCACTTTAGG</td>
+      <td>(Skouloudaki et al., 2009)</td>
+      <td>4 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Taz MO1</td>
+      <td>CTGGAGAGGATTACCGCTCATGGTC</td>
+      <td>(Hong et al., 2005)</td>
+      <td></td>
+      <td>8 ng</td>
+    </tr>
+    <tr>
+      <td>Taz MOsp1</td>
+      <td>TGTATGTGTTTCACACTCACCCAGG</td>
+      <td>This study</td>
+      <td>6 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Taz MOsp2</td>
+      <td>ATGTGACTGCACAACAAACACAGAA</td>
+      <td>This study</td>
+      <td>6 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tead1a MO1</td>
+      <td>CATGGCAATGGATGTGATCTCAGAG</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tead1a MO2</td>
+      <td>TGAGCCTGGAGAACTCAAGGCACAC</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tead3a MO1</td>
+      <td>CGTCCATTCCGGTTTTGTCCATCCC</td>
+      <td>This study</td>
+      <td></td>
+      <td>2 ng</td>
+    </tr>
+    <tr>
+      <td>Tead3a MOsp1</td>
+      <td>CAGCTTTCTGTTACTCACCATACAT</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tead3a MOsp2</td>
+      <td>GGGTCTGAAATACTCACTCCTGAGA</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dnmt3bb.1 MO1</td>
+      <td>TTATTTCTTCCTTCCTCATCCTGTC</td>
+      <td>(Huang et al., 2013; Shimoda et al., 2005)</td>
+      <td>8 ng</td>
+      <td>8 ng</td>
+    </tr>
+    <tr>
+      <td>Dnmt3bb.1 MOsp</td>
+      <td>CTCTCATCTGAAAGAATAGCAGAGT</td>
+      <td>(Gore et al., 2016)</td>
+      <td>6 ng</td>
+      <td>6 ng</td>
+    </tr>
+    <tr>
+      <td>Dnmt3bb.2 MO1</td>
+      <td>CTCCGATCTTTACATCTGCCACCAT</td>
+      <td>(Huang et al., 2013; Shimoda et al., 2005)</td>
+      <td>6 ng</td>
+      <td>6 ng</td>
+    </tr>
+    <tr>
+      <td>Dnmt3bb.2 MOsp</td>
+      <td>GCACCTGAAAAAGTGTAAACACCAT</td>
+      <td>This study</td>
+      <td>6 ng</td>
+      <td>6 ng</td>
+    </tr>
+    <tr>
+      <td>Mbd3a MO</td>
+      <td>CCACCTTTTCCTCTCCATGATTTTC</td>
+      <td>(Huang et al., 2013)</td>
+      <td>8 ng</td>
+      <td>4 ng</td>
+    </tr>
+    <tr>
+      <td>Mbd3b MO</td>
+      <td>TCGTTTTTCTCCATCTCGCATTCTC</td>
+      <td>This study</td>
+      <td>8 ng</td>
+      <td>4 ng</td>
+    </tr>
+    <tr>
+      <td>Standard control MO</td>
+      <td>CCTCTTACCTCAGTTACAATTTATA</td>
+      <td>Gene tools</td>
+      <td>8 ng</td>
+      <td>8 ng</td>
+    </tr>
+  </tbody>
+</table>
+
+### Antisense oligonucleotides (ASO) knockdowns
 
 Two non overlapping 2' O-Methyl RNA antisense oligonucleotides targeting the 5’ end of Vgll4l coding sequence were synthesized by Integrated DNA Technologies.
 
@@ -169,36 +374,36 @@ Vgll4l 2’OMe ASO-2 : mC*mU*mG*mC*mU*C*A*T*C*C*T*G*G*T*T*mA*mU*mG*mU*mA mA,mU,m
 
 Knockdowns were performed as described in Pauli et al. (2015) by injection of 75 ng of each ASO into WT embryos at the 1- to 2 cell stage.
 
-## Sense RNA synthesis and injection
+### Sense RNA synthesis and injection
 
 PCR amplified fragments containing the complete open reading frame of Vgll4l, Vgll4b, Yap, Taz or Dnmt3bb.1 were cloned into the pCS2+ vector. For mRNA synthesis, constructs were linearized with NotI and transcribed using SP6 RNA polymerase using the mMESSAGE mMACHINE kit (Ambion). In vitro synthesized sense RNAs were injected either alone or in combination with MOs in rescue experiments. DFCs specific gain of function have been performed by injecting 0.4 µg of in vitro synthesized mRNA in the yolk of embryos at the 256–512 cell stages as described in Esguerra et al. (2007); Matsui et al. (2011).
 
-## Crispr/Cas9 mutagenesis
+### Crispr/Cas9 mutagenesis
 
 Target sequences for CRISPR/Cas9 were identified using the optimized CRISPR Design – MIT (http://crispr.mit.edu/). Complementary primers for the target sites were annealed and ligated into BSA1-cleaved pDR274 plasmid (Hwang et al., 2013) (plasmid # 42250 from Keith Joung, obtained from Addgene). Plasmids for sgRNAs were linearized using Dra1 enzyme and sgRNAs synthesized with the Maxiscript-T7 kit from Ambion. As described in Burger et al. (2016) RNP complexes were formed by incubating 900 ng/µl of Cas9 protein (New England Biolabs) with 150 ng/µl of sgRNA in 300 mM KCl for 5 min at 37°C. The complexes were then injected into 1 cell stage embryos. Adult F0 fish were outcrossed to WT fish. Then, genomic DNA was extracted from fin clips of adult F1 individuals (Meeker et al., 2007). Targeted region was amplified by PCR and analyzed for INDELs using an heteroduplex mobility assay (Ota et al., 2013). Sequence of oligonucleotides used is provided in Supplementary file 4. Position and sequence of mutants is provided in Supplementary files 6–9.
 
-## TALEN mutagenesis
+### TALEN mutagenesis
 
 TALEN sequences for mutagenesis of Dnmt3bb.1, Dnmt3bb.2 and Dnmt3ba were selected using Targeter 2.0 software (Doyle et al., 2012). TAL repeat assembly was achieved using the Golden Gate assembly method, and assembled repeats were integrated into the GoldyTALEN scaffold (Bedell et al., 2012; Cermak et al., 2011). Assembled vectors served as templates for in vitro mRNA transcription using the T3 mMessage mMachine kit (Ambion) according to manufacturer’s instructions. 50–100 pg mRNA was injected into WT embryos at the one-cell stage. Position and sequences of mutants is provided in Supplementary files 8 and 9.
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Embryos were fixed overnight at 4°C in 4% paraformaldehyde then washed 3 times for 20 min in a PBS medium containing 1% Triton X100 (PBS-1%Triton) for 20 min. Embryos were incubated for 1 hr in the blocking buffer (PBS-1%Triton, sheep serum 10%) then overnight at 4°C in a medium containing the primary antibody: anti-Acetylated Tubulin (Sigma-Aldrich T7451), anti Phospho Histone H3 (Ser10) (Cell Signaling, 9701) or anti Cleaved Caspase 3 (Asp175) (Cell Signaling, 9661) used at 1:400 dilution, anti Sox17 (Novus, NBP2-24568), anti Yap (Cell Signaling, 4912) used at 1:200 dilution and anti 5-methyl-cytosine (abcam, ab10805) used at 1:10,000 dilution in the blocking buffer. Embryos were then washed 3 × 20 min with PBS-1%Triton and incubated 2 hr at room temperature in a medium containing the secondary antibody: a goat anti-rabbit Alexa Fluor 488 (Thermofisher, A11008) or a goat anti-mouse Alexa Fluor 546 (Thermofisher, A11030) used at a 1:800 dilution in the blocking buffer, and 2% Hoechst 33342 (Sigma-Aldrich) to label the nuclei. After three final washes of 20 min in PBS-1%Triton, embryos were mounted in 2% low melting agarose. Representative images were acquired using a Leica TCS LSI confocal macroscope. Images were analyzed using Image J software.
 
-## Quantitative analysis of Kupffer’s vesicle size, cilia length and number of DFCs
+### Quantitative analysis of Kupffer’s vesicle size, cilia length and number of DFCs
 
 KV size, cilia length and DFCs were quantified as described in Gokey et al. (2015); Gokey et al. (2016). Embryos were observed in brightfield using a Leica macroscope and the area of the KV lumen was measured using the ImageJ software (NIH). For cilia, embryos immunostained with acetylated-tubulin antibodies were imaged using a Leica TCS LSI confocal macroscope and the length of cilia was measured using ImageJ software. The number of DFCs was determined using the Tg(sox17:GFP)S870 by manually counting the number of Hoechst 33342 labeled nuclei of GFP+ DFCs in a Z-series of images collected using a Leica TCS LSI confocal macroscope.
 
 For statistical analyses, P values were calculated with Graphpad prism eight software using two-tailed unpaired t-test. All raw data are available in Figure 2—source data 1, Figure 3—source data 1 and Figure 9—source data 1.
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 Verteporfin treatment: a 2 mg/ml stock solution of Verteporfin (SML0534, Sigma) was prepared in dimethylsulfoxide (DMSO). Embryos were incubated from the 1 cell stage to 24 hpf with verteporfin diluted in 0.3 x Danieau buffer at a final concentration of 2.5 µM.
 
-## RNA extraction, cDNA library preparation and RNA-Seq
+### RNA extraction, cDNA library preparation and RNA-Seq
 
 DFCs were dissected out in DMEM/F-12 medium (Gibco Dulbecco's Modified Eagle Medium: Nutrient Mixture F-12) from embryos of the Tg(sox17:GFP) line at the 90% epiboly stage injected at the 1 cell stage with 8 ng of standard MO (Control), 4 ng of Vgll4l MOsp or together with 4 ng of Yap MO1 and 4 ng of Taz MOsp1. Individual samples were transferred in a 0.5 ml Eppendorf tube with 2 µl of DMEM/F12. Total RNA was extracted and purified using SMART-Seq v4 Ultra Low Input RNA Kit for Sequencing from Clontech. Purified RNA samples were then reverse transcribed into cDNA and amplified. Libraries were constructed using a NEB DNA Ultra library construction kit (New England Biolabs), with standard TruSeq-type adapters. Libraries size and concentration were assessed using an Agilent 2100 Bioanalyzer. Libraries were multiplexed and 50 bp single-end were sequenced (Beijing Genomics Institute) on illumina Hiseq 2000 sequencer generating a minimum of 20 million reads per sample. Genome-wide transcriptome were produced from quadruplicate biological replicates.
 
-## Bioinformatics
+### Bioinformatics
 
 Bioinformatic analysis was performed by UVA bioinformatics core facility. Sequences alignment was done using STAR. Reads were mapped to GRCz10 Ensembl genes using the featureCounts software. DESeq2 Bioconductor package was used to normalize count data, estimate dispersion, and fit a negative binomial model for each gene. The Benjamini-Hochberg False Discovery Rate procedure was used to re-estimate the adjusted p-values for Ensembl gene IDs mapping to known genes. GO-term analysis was done in cytoscape 3.2.2 using the cluego plugin (Bindea et al., 2009). Heatmap was generated using heatmap.2 plugin in R.

@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Neurobiology, University of California, San Diego La Jolla United States
-2. https://ror.org/0168r3w48 National Center for Microscopy and Imaging Research, Center for Research in Biological Systems, University of California, San Diego La Jolla United States
+1. Department of Neurobiology, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. National Center for Microscopy and Imaging Research, Center for Research in Biological Systems, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
 ## Abstract
 
-Dendritic morphology is a defining characteristic of neuronal subtypes. In Drosophila , heterotypic olfactory receptor neurons (ORNs) expressing different receptors display diverse dendritic morphologies, but whether such diversity exists among homotypic ORNs remains unclear. Using serial block-face scanning electron microscopy on cryofixed tissues, we analyzed the majority of CO 2 -sensing neurons (ab1C) and their odor-sensing neighbors (ab1D) in the Drosophila melanogaster antenna. Surprisingly, ab1C neurons featured flattened, sheet-like dendrites—distinct from the cylindrical branches typical of odor-sensing neurons—and displayed remarkable diversity, ranging from plain sheets to tube-like structures that enclose several neighboring dendrites, forming ‘dendrite-within-dendrite’ structures. Similarly, ab1D dendrites varied from simple, unbranched forms to numerously branched morphologies. These findings suggest that morphological heterogeneity is common even among homotypic ORNs, potentially expanding their functional adaptability and ranges of sensory physiological properties.
+Dendritic morphology is a defining characteristic of neuronal subtypes. In Drosophila, heterotypic olfactory receptor neurons (ORNs) expressing different receptors display diverse dendritic morphologies, but whether such diversity exists among homotypic ORNs remains unclear. Using serial block-face scanning electron microscopy on cryofixed tissues, we analyzed the majority of CO2-sensing neurons (ab1C) and their odor-sensing neighbors (ab1D) in the Drosophila melanogaster antenna. Surprisingly, ab1C neurons featured flattened, sheet-like dendrites—distinct from the cylindrical branches typical of odor-sensing neurons—and displayed remarkable diversity, ranging from plain sheets to tube-like structures that enclose several neighboring dendrites, forming ‘dendrite-within-dendrite’ structures. Similarly, ab1D dendrites varied from simple, unbranched forms to numerously branched morphologies. These findings suggest that morphological heterogeneity is common even among homotypic ORNs, potentially expanding their functional adaptability and ranges of sensory physiological properties.
 
 ## Introduction
 
@@ -43,15 +43,31 @@ The primary olfactory organ in Drosophila is the antenna, which houses hundreds 
 
 To survey Drosophila CO2-sensing ab1C neurons at the population level, we first generated an SBEM volume covering the antennal region where ab1 sensilla are located, named the ab1 zone, on the proximal medial surface of the third antennal segment (Figure 1A, Figure 1—figure supplement 1A; de Bruyne et al., 2001; Grabe et al., 2016; Shanbhag et al., 1999). Notably, ab1 is the only antennal large basiconic sensillum type that houses four ORNs (Shanbhag et al., 1999), allowing us to unequivocally identify individual ab1 sensilla based on their relatively large size and distinctive set of four associated neurons without having to rely on genetic labeling.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig1-v1.jpg)
+
+**Figure 1.:** (A) Middle panels: Illustration of the antennal region sampled in the serial block-face scanning electron microscopy (SBEM) volume (pink) with the ab1 zone highlighted in pink. Left and right panels: 3D models of ab1 sensillum cuticles (dark gray) are shown on the imaged portion of the antenna (light gray). Scale bar: 15 μm. (B) 3D models and corresponding SBEM images of ab1 sensilla. Dashed lines indicate the approximate midpoint region of cuticles where the SBEM images were sampled. Sensilla are arranged from left to right in order of increasing dendritic branch counts, as indicated in parentheses. Dendrites are pseudocolored in white. Scale bars: 2 μm for 3D models and 1 μm for SBEM images. (C) Distribution of morphometric features (length, surface area, volume, and dendritic branch counts) from fully segmented ab1 sensillum cuticles. Mean ± SD and coefficients of variation (CVs) are shown above each graph (n=31–32). (D) Correlation analysis of ab1 dendritic branch counts as a function of sensillum midpoint cross-sectional areas (n=32). Also see Figure 1—source data 1 for ab1 sensillum morphometrics.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the Drosophila antenna, which houses hundreds of olfactory sensilla on the surface of its third segment. (B) Schematic of an olfactory sensillum, illustrating the multiporous cuticle and compartmentalized olfactory receptor neurons (ORNs). Each ORN consists of an outer dendrite, inner dendrite, soma, and axon. The inner and outer dendrites are separated by the ciliary constriction.
+
 Our survey of the antennal SBEM volume identified 39 ab1 sensilla, accounting for over 80% of the total ab1 population (48 sensilla), as previously documented (Shanbhag et al., 1999). Instead of being uniformly distributed within the ab1 zone, the ab1 sensilla were arranged in two clusters: a larger, more diffuse cluster on the proximal medial surface and a smaller cluster on the lateral side of the antennal surface (Figure 1A).
 
 Interestingly, we observed substantial variation in the number of dendritic branches in the ab1 sensilla, ranging from 65 to 295 branches across 32 sensilla with quality EM images that allowed for clear distinction of individual dendrites (Figure 1B and C). These numbers were estimated by counting dendrites around the midpoint of the sensilla, yielding an average of 136±29 branches (mean ± SD, n=32, representing 67% of the ab1 population). This result aligns with a previous transmission electron microscopy (TEM) study, which reported an average of 95±12 ab1 dendritic branches from images at unspecified positions along the longitudinal sensillum axis (Shanbhag et al., 1999). The wide range of dendritic branch counts, reflected by a coefficient of variation (CV) of 0.22, indicates considerable heterogeneity among ab1 sensilla.
 
 Does the heterogeneity in dendritic counts reflect variability in ab1 sensillum cuticle morphology? To address this question, we measured the length (L), surface area (SA), and volume (V) of 31 intact ab1 sensilla, excluding those with truncated structures. The ab1 cuticle morphometric features (L=9.50 ± 0.98 µm; SA = 93.75 ± 5.83 µm2; V=46.09 ± 3.91 µm3, n=31) were comparable to our published ab1 measurements from two independent SBEM volumes (L=10.80 ± 0.16 µm; SA = 70.70 ± 0.55 µm2; V=39.49 ± 2.12 µm3, n=5) (Nava Gonzales et al., 2021). Although these morphometric features also exhibited variation across the ab1 population, their CVs were markedly smaller (CVL = 0.10, CVSA = 0.06, CVV = 0.08) compared to that of dendritic branch counts (CVDC = 0.22) (Figure 1C). This analysis suggests that sensillum cuticle morphology is less variable than dendritic counts. Furthermore, sensilla with higher dendritic counts are not necessarily thicker than those with fewer branches (see Figure 1—source data 1 for ab1 sensillum morphometrics). Indeed, an analysis of midpoint dendritic number vs sensillum cuticle cross-sectional area revealed no correlation (R2 ≈ 0, Figure 1D), suggesting that cuticular morphology and ORN dendritic number are regulated independently.
 
-## ORNs in the ab1 sensillum
+### ORNs in the ab1 sensillum
 
 The ab1 sensillum houses four ORNs (Figure 2A), each expressing a specific receptor or receptor complex: Or42b (ab1A), Or92a (ab1B), Gr21a/Gr63a (ab1C), and Or10 (ab1D) (Couto et al., 2005; de Bruyne et al., 2001; Hallem et al., 2004; Jones et al., 2007; Kwon et al., 2007). These neurons exhibit distinct extracellular spike amplitudes (Figure 2A), with a relative size ratio of 5.2 (ab1A):4.5 (ab1B):2.3 (ab1C):1 (ab1D) (Zhang et al., 2019). Our published studies have shown that, within a sensillum, the rank order of ORN sizes reflects their relative extracellular spike amplitudes (Nava Gonzales et al., 2021; Tsang et al., 2018; Zhang et al., 2019). This allowed us to assign the cellular identities of ab1 ORNs based on their relative neuronal sizes without having to rely on genetic labeling.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig2-v1.jpg)
+
+**Figure 2.:** (A) 3D model and serial block-face scanning electron microscopy (SBEM) images of a fully reconstructed ab1 sensillum. Olfactory receptor neurons (ORNs) are pseudocolored to indicate neuronal identities: ab1A (blue), ab1B (orange), ab1C (yellow), and ab1D (white). Dashed lines mark the positions of corresponding SBEM images on the right: (1) sensillum lumen containing the outer dendrites; (2) proximal region of the outer dendrites; and (3) the inner dendrites surrounded by processes of the thecogen cell (Th). Arrows indicate the positions of ciliary constriction, which demarcates the inner and outer dendritic segments. Inset: a representative trace from single-sensillum recording showing the relative extracellular spike amplitudes of the ab1 ORNs. Scale bars: 2 μm for 3D models and 1 μm for SBEM images. (B) Combined surface areas of the ORN soma, inner dendrite (ID), and outer dendrites (OD). (C–F) 3D models and corresponding 2D projections of the outer dendritic branches of ab1A (C), ab1B (D), ab1C (E), and ab1D (F). (G–I) Spatial relationship between the dendritic branches ab1A and those of its neighboring neurons. Colored arrowheads indicate the primary branching points or flattening position. See also Figure 2—source data 1 for ab1 ORN morphometrics and Video 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) 3D model and serial block-face scanning electron microscopy (SBEM) images of a partially reconstructed ab1 sensillum from another SBEM volume. Olfactory receptor neurons (ORNs) are pseudocolored to indicate neuronal identities: ab1A (blue), ab1B (orange), ab1C (yellow), and ab1D (white). Dashed lines mark the positions of corresponding SBEM images on the right: (1) highly branched outer dendrites; (2) proximal outer dendrites; and (3) unbranched segments of outer dendrites. The somata and some inner dendrites were truncated during SBEM image acquisition. (B–E) 3D models and corresponding 2D projections of the outer dendritic branches of ab1A (B), ab1B (C), ab1C (D), and ab1D (E). Scale bars: 2 μm for 3D models and 1 μm for SBEM images.
 
 We successfully segmented all four ORNs from an ab1 sensillum (Figure 2A). As expected, the co-housed ORNs differed in size, and based on their sizes in descending order, we assigned neuronal identities as ab1A, B, C, and D (Figure 2B). Similar to the large-spike neurons in the other two large basiconic sensilla (ab2A and ab3A), both ab1A and ab1B displayed numerous dendritic branches, with total counts of 67 and 37, respectively. Given that the segmented ab1 sensillum had the fewest total dendritic branches, it is likely that other ab1A and ab1B neurons exhibit more numerous dendritic branches. As with other basiconic ORNs, the branching patterns of ab1A and ab1B were complex, featuring multiple branching points. From the base of the sensillum cuticle to its tip, the primary branches of ab1A or ab1B neurons bifurcated multiple times, generating secondary branches that further divide into tertiary, quaternary, or higher-order branches (Figure 2C and D). This complex branching pattern explains why the midpoint dendritic count of this sensillum (65 branches) was lower than the combined total of 104 branches for its ab1A and ab1B.
 
@@ -59,7 +75,11 @@ In contrast, the neighboring ab1C and ab1D neurons exhibited simpler branching p
 
 The outer (sensory) dendrites, starting at the ciliary constriction, comprised two distinct segments: an unbranched cylindrical segment located below the sensillum cuticle base and a branched (or flattened) segment situated within the sensillum lumen (Figure 2A). Of note, the outer dendrite of ab1A began branching more proximally near the cuticle base compared to the neighboring neurons (Figure 2G–I), unlike other types of co-housed basiconic ORNs, whose dendrites typically start branching at a similar level near the sensillum cuticle base (Nava Gonzales et al., 2021). Furthermore, the dendritic branches of ab1A appeared to envelop those of the neighboring neurons, occupying the circumference region of the sensillum lumen (Video 1). We observed similar dendritic branching features in another ab1 sensillum partially sampled from a previously generated antennal SBEM volume (Figure 2—figure supplement 1), suggesting that the described morphologies are representative of ab1 ORNs.
 
-## Morphological diversity across ab1C outer dendrites
+![Video 1.](https://cdn.elifesciences.org/articles/106389/elife-106389-video1.mp4.jpg)
+
+**Video 1.:** Color codes are as indicated in Figure 2.
+
+### Morphological diversity across ab1C outer dendrites
 
 To investigate the potential diversity in ab1C dendritic morphologies, we segmented the CO2-sensing neurons from all ab1 sensilla with high-quality images for 3D reconstruction. Indeed, our results revealed remarkable morphological heterogeneity among individual ab1C neurons. Specifically, dendritic flattening occurred at positions ranging from 13% to 53% of the cuticle length above the sensillum base, with an average position of 40%, while dendritic termination varied between 62% and 98% of the cuticle length, averaging 89%. In general, dendrites that began flattening closer to the base tended to terminate earlier before reaching the cuticle tip (Figure 3A). Furthermore, these diverse dendritic morphologies can be categorized into four types (Figure 3A, inset) as detailed below (also see Video 2).
 
@@ -67,33 +87,234 @@ To investigate the potential diversity in ab1C dendritic morphologies, we segmen
 
 **Figure 3.:** (A) Left panel: 3D model of an ab1C neuron (yellow) and its associated sensillum cuticle (gray). Arrow indicates ciliary constriction, marking the beginning of the outer (sensory) dendrite. White arrowhead marks the location where dendritic flattening occurs. Middle panel: Positions of the flattening point (FP) and dendritic terminus (DT) relative to the cuticle length. Filled gray circles represent the relative positions of individual ab1C neurons. Right panel: Similar to the middle panel, but with lines connecting data points from the same neurons. The cuticle base and tip are designated as 0 and 1, respectively. Horizontal bars indicate the mean positions (n=25). Inset: Pie chart illustrating the distribution of the four outer dendritic morphological categories across the ab1C population. (B–E) Representative 3D models, top-down clipped views, and corresponding cross-sectional EM images are shown for each of the four morphological categories: loosely curled (B), fully curled (C), split (D), and mixed (E). ab1C dendritic sheets are pseudocolored in yellow in sample EM images. See also Video 2.
 
-## Loosely curled category
+![Video 2.](https://cdn.elifesciences.org/articles/106389/elife-106389-video2.mp4.jpg)
+
+#### Loosely curled category
 
 The majority of ab1C dendritic sheets fell into the ‘loosely curled’ category, where the longitudinal edges of the flattened segment gently curved inward in a single intact structure. In EM cross-sections, these dendritic sheets typically exhibited a ‘C’-shaped profile (Figure 3B, Images 1 and 2). Some cross-sections resembled an inverted ‘U’, as if the dendritic sheet had folded along the longitudinal axis (Figure 3B, Image 3); or an ‘S’ profile when the two edges curled in opposite directions (Figure 3B, Image 4). In one instance, a central ridge extended along the sheet’s longitudinal axis to form a raised protrusion on the otherwise flat dendritic structure (Figure 3B, Image 5).
 
-## Fully curled category
+#### Fully curled category
 
 Surprisingly, a sizeable minority of ab1C dendritic sheets formed completely curled, ring-shaped, or tube-like structures that encircled several dendritic branches from neighboring neurons, forming a ‘dendrite-within-dendrite’ structure (Figure 3C). Within this category, the cross-sectional profiles of dendritic sheets varied from a completely enclosed ring (Figure 3C, Image 1) to a lasso-like shape (Figure 3C, Image 2), and even a more intricate ‘θ’-like configuration (Figure 3C, Image 3). Interestingly, similar ring-shaped or complex dendritic profiles were previously observed in TEM images of a large basiconic sensillum containing four neurons, although the neuronal identity was undetermined (Shanbhag et al., 1999).
 
-## Split category
+#### Split category
 
 Another subset of ab1C dendritic sheets split into two or more distinct parts (Figure 3D, also see Figure 2E). Within this category, the dendrites also exhibited remarkable morphological heterogeneity. For example, one dendrite split longitudinally into two parts, with one further bifurcating at the distal region (Figure 3D, Image 1). Another example displayed an uneven division, with a smaller rectangular sheetlet and a larger one resembling a loosely curled structure (Figure 3, Image 2). A third example demonstrated a complex morphology, with both sheetlets curling into a ‘U’ shape in opposite directions (Figure 3D, Image 3).
 
-## Mixed category
+#### Mixed category
 
 The fourth morphological type exhibited the most intricate structure and was classified as the ‘mixed’ category. These dendritic sheets combined features of both the ‘fully curled’ and ‘split’ categories (Figure 3E). In one instance, the dendritic sheet divided into two parts: one formed a fully enclosed tubular structure, while the other sheetlet wrapped around this tube (Figure 3E, Image 1). In another example, one dendritic sheetlet formed a fully enclosed, blind-ended tube at the distal end, whereas the other terminated prematurely with a slight bifurcation, extending only about one-third the length of the first sheetlet (Figure 3E, Image 2).
 
-## ab1C morphometrics
+### ab1C morphometrics
 
 How might dendritic flattening influence sensory function? To address this question, we compared the morphometric features of the cylindrical and flattened segments of ab1C outer dendrites (Figure 4, left panel, segments 1 and 2, respectively). The cylindrical segment extended from the ciliary constriction below the sensillum cuticle base to approximately 40% of the cuticle length above the base, where dendritic flattening occurred (Figure 3A). On average, the flattened segment was half as long as the cylindrical segment, with average lengths of 5.74 µm and 10.72 µm, respectively. Despite its shorter length, the surface area of the flattened segment was about 22% larger than the cylindrical counterpart. In contrast, the volume of the flattened segment was much smaller (1.03 µm3), only about 40% of the cylindrical counterpart (2.64 µm3, Figure 4A and Table 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig4-v1.jpg)
 
-**Figure 4.:** (A) Left panel: Illustration of an ab1C neuron. Arrow indicates the position of ciliary constriction. White arrowhead marks the location where dendritic flattening occurs. Segment #1: cylindrical outer dendrite; segment #2: flattened outer dendrite. Right panels: Distributions of length, surface area, and volume for the cylindrical (coral) or flattened (teal) outer dendritic segments across the ab1C population (n=25). (B–C) Quantitative comparisons of the volume per unit length (B) and surface area-to-volume ratio (C) for the cylindrical (coral) and flattened (teal) outer dendritic segments. Each filled circle represents data from an individual neuron, with horizontal bars indicating the mean values (n=25). Statistical significance was determined using paired two-tailed t-test. (D) Quantitative comparisons of morphometric features for ab1C flattened segments across different morphological categories. Each filled circle represents data from an individual ab1C neuron, with horizontal bars indicating the mean values. Statistical significance is determined by Kruskal-Wallis one-way ANOVA on ranks and denoted by different letters. For example, labels ‘a’ and ‘b’ indicate a significant difference between groups (p<0.05), whereas labels with identical or shared letters (e.g., ‘a’ and ‘a’, ‘a,b’ and ‘a’, or ‘a,b’ and ‘b’) indicate no significant difference. Also see Figure 4—source data 1 for ab1C dendrite morphometrics.Figure 4—source data 1.
+**Figure 4.:** (A) Left panel: Illustration of an ab1C neuron. Arrow indicates the position of ciliary constriction. White arrowhead marks the location where dendritic flattening occurs. Segment #1: cylindrical outer dendrite; segment #2: flattened outer dendrite. Right panels: Distributions of length, surface area, and volume for the cylindrical (coral) or flattened (teal) outer dendritic segments across the ab1C population (n=25). (B–C) Quantitative comparisons of the volume per unit length (B) and surface area-to-volume ratio (C) for the cylindrical (coral) and flattened (teal) outer dendritic segments. Each filled circle represents data from an individual neuron, with horizontal bars indicating the mean values (n=25). Statistical significance was determined using paired two-tailed t-test. (D) Quantitative comparisons of morphometric features for ab1C flattened segments across different morphological categories. Each filled circle represents data from an individual ab1C neuron, with horizontal bars indicating the mean values. Statistical significance is determined by Kruskal-Wallis one-way ANOVA on ranks and denoted by different letters. For example, labels ‘a’ and ‘b’ indicate a significant difference between groups (p<0.05), whereas labels with identical or shared letters (e.g., ‘a’ and ‘a’, ‘a,b’ and ‘a’, or ‘a,b’ and ‘b’) indicate no significant difference. Also see Figure 4—source data 1 for ab1C dendrite morphometrics.
+
+**Table 1.**
+ Morphometric data for the outer dendritic segments of ab1C and ab1D (mean ± SD).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ORN type</th>
+      <th colspan="3">Length (μm)</th>
+      <th colspan="3">Surface area (μm2)</th>
+      <th colspan="3">Volume (μm3)</th>
+      <th colspan="3">V/L</th>
+      <th colspan="3">S/V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ab1C</td>
+      <td>Proximal</td>
+      <td>Distal</td>
+      <td>Total</td>
+      <td>Proximal</td>
+      <td>Distal</td>
+      <td>Total</td>
+      <td>Proximal</td>
+      <td>Distal</td>
+      <td>Total</td>
+      <td>Proximal</td>
+      <td>Distal</td>
+      <td>Total</td>
+      <td>Proximal</td>
+      <td>Distal</td>
+      <td>Total</td>
+    </tr>
+    <tr>
+      <td>Loosely curled (n=13)</td>
+      <td>10.67±0.86</td>
+      <td>5.73±0.84</td>
+      <td>16.40±1.41</td>
+      <td>19.82±2.10</td>
+      <td>23.90±3.69</td>
+      <td>43.72±3.91</td>
+      <td>2.60±0.34</td>
+      <td>1.07±0.16</td>
+      <td>3.68±0.36</td>
+      <td>0.24±0.02</td>
+      <td>0.19±0.04</td>
+      <td>0.22±0.02</td>
+      <td>7.64±0.44</td>
+      <td>22.32±1.96</td>
+      <td>11.93±0.93</td>
+    </tr>
+    <tr>
+      <td>Fully curled (n=5)</td>
+      <td>11.62±0.88</td>
+      <td>5.64±0.62</td>
+      <td>17.27±0.78</td>
+      <td>20.86±2.03</td>
+      <td>24.66±5.03</td>
+      <td>45.52±4.37</td>
+      <td>2.73±0.26</td>
+      <td>0.91±0.35</td>
+      <td>3.64±0.43</td>
+      <td>0.24±0.03</td>
+      <td>0.16±0.06</td>
+      <td>0.21±0.03</td>
+      <td>7.67±0.72</td>
+      <td>28.61±5.80</td>
+      <td>12.56±1.07</td>
+    </tr>
+    <tr>
+      <td>Split (n=4)</td>
+      <td>10.76±0.59</td>
+      <td>4.78±0.71</td>
+      <td>15.54±0.48</td>
+      <td>20.33±2.61</td>
+      <td>21.00±6.12</td>
+      <td>41.33±7.32</td>
+      <td>2.80±0.49</td>
+      <td>0.91±0.23</td>
+      <td>3.71±0.66</td>
+      <td>0.26±0.03</td>
+      <td>0.20±0.07</td>
+      <td>0.24±0.05</td>
+      <td>7.32±0.48</td>
+      <td>22.88±3.82</td>
+      <td>11.21±1.60</td>
+    </tr>
+    <tr>
+      <td>Mixed (n=3)</td>
+      <td>9.38±0.68</td>
+      <td>7.26±0.33</td>
+      <td>16.64±0.93</td>
+      <td>18.07±1.43</td>
+      <td>28.92±7.44</td>
+      <td>47.00±6.73</td>
+      <td>2.40±0.16</td>
+      <td>1.21±0.45</td>
+      <td>3.61±0.30</td>
+      <td>0.26±0.03</td>
+      <td>0.17±0.07</td>
+      <td>0.19±0.02</td>
+      <td>7.54±0.66</td>
+      <td>24.58±2.51</td>
+      <td>12.99±0.84</td>
+    </tr>
+    <tr>
+      <td>Total (n=25)</td>
+      <td>10.72±0.97</td>
+      <td>5.74±0.95</td>
+      <td>16.47±1.19</td>
+      <td>19.90±2.09</td>
+      <td>24.19±4.89</td>
+      <td>44.09±4.81</td>
+      <td>2.64±0.33</td>
+      <td>1.03±0.25</td>
+      <td>3.67±0.39</td>
+      <td>0.25±0.03</td>
+      <td>0.18±0.05</td>
+      <td>0.22±0.03</td>
+      <td>7.58±0.50</td>
+      <td>23.94±3.93</td>
+      <td>12.07±1.11</td>
+    </tr>
+    <tr>
+      <td>ab1D</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unbranched (n=8)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>17.47±1.85</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>13.29±1.18</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.69±0.08</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.040±0.006</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>19.50±2.13</td>
+    </tr>
+    <tr>
+      <td>Branched (n=13)</td>
+      <td>8.94±1.11</td>
+      <td>29.09±10.25</td>
+      <td>38.83±10.05</td>
+      <td>8.97±1.72</td>
+      <td>10.77±3.30</td>
+      <td>19.74±4.12</td>
+      <td>0.60±0.10</td>
+      <td>0.30±0.10</td>
+      <td>0.90±0.20</td>
+      <td>0.068±0.014</td>
+      <td>0.010±0.003</td>
+      <td>0.025±0.006</td>
+      <td>15.03±1.63</td>
+      <td>37.51±4.18</td>
+      <td>22.25±2.65</td>
+    </tr>
+    <tr>
+      <td>Total (n=21)</td>
+      <td></td>
+      <td></td>
+      <td>30.20±12.78</td>
+      <td></td>
+      <td></td>
+      <td>17.28±4.57</td>
+      <td></td>
+      <td></td>
+      <td>0.82±0.18</td>
+      <td></td>
+      <td></td>
+      <td>0.030±0.010</td>
+      <td></td>
+      <td></td>
+      <td>21.20±2.81</td>
+    </tr>
+  </tbody>
+</table>
 
 These morphometric comparisons suggest that dendritic flattening increases the surface area-to-volume ratio. Indeed, the average volume per unit length (or cross-sectional area) of the flattened segment was about 28% smaller than that of the cylindrical segment (0.18 vs 0.25 µm2, Figure 4B, and Table 1), indicating modest tapering of the dendrite toward its tip. Strikingly, the surface area-to-volume ratio of the flattened segment was over 300% as high as the cylindrical segment (23.94 vs 7.58, Figure 4C, and Table 1). This could potentially enhance the dendrite’s capacity to detect CO2 and facilitate signal propagation as the increased surface area allows for more efficient passive spread of electrical signals along the dendrite. Notably, none of the morphometric features differ significantly among ab1C dendrites in different morphological categories (Figure 4D), implying that the morphological diversity may have evolved to serve additional functions. Overall, the marked increase in the surface area-to-volume ratio underscores the potential functional advantages of dendritic flattening in sensory processes.
 
-## Heterogeneity in ab1D branching patterns
+### Heterogeneity in ab1D branching patterns
 
 For comparison, we analyzed the neighboring odor-sensing ab1D, selected for its relatively low number of dendritic branches, making it suitable for systematic analysis. As previously noted, ab1D was identified based on its smallest soma and inner dendrite among the four ab1 ORNs (see Figure 2B for example). To investigate potential heterogeneity in ab1D dendritic morphologies, we focused on ab1 sensilla with high-quality images for further analysis.
 
@@ -105,35 +326,37 @@ We successfully generated 3D models for 21 ab1D neurons and found that their ave
 
 Interestingly, eight ab1D neurons had a simple, unbranched outer dendrite (Figure 5B), unlike most characterized basiconic ORNs, which typically have multiple dendritic branches (Nava Gonzales et al., 2021). In contrast, the remaining 13 ab1D neurons exhibited sparsely branched dendrites (Figure 5C). Notably, these neurons exhibited heterogeneity in both branching patterns and the number of branches, which ranged from two to seven (Figure 5D). This variability in dendritic branching patterns mirrors the morphological heterogeneity observed in ab1C dendrites, suggesting that both types of neurons may have evolved diverse structural features to support specialized sensory functions.
 
-## ab1D morphometrics
+### ab1D morphometrics
 
-## Unbranched vs branched ab1D neurons
+#### Unbranched vs branched ab1D neurons
 
 We then compared the morphometrics of unbranched outer dendrites with those of branched ones (Figure 6A–E, comparisons between two‘segment 1’). The summed measurements encompass the entire outer dendritic region where olfactory receptors are localized. The ab1D neurons with unbranched dendrites have an average outer dendritic length of 17.47 µm, sensory surface area of 13.29 µm2, and volume of 0.69 µm3. In comparison, ab1D with branched dendrites exhibited greater summed outer dendritic length (38.03 µm), surface area (19.74 µm2), and volume (0.89 µm3, Table 1). Notably, the dendritic surface area-to-volume ratio of neurons with branched dendrites was only about 14% higher than that of unbranched neurons (22.25 vs 19.50, Table 1). These comparisons suggest that within the ab1D neuronal population, branching markedly increases the total sensory surface area as much as 49% (19.74 µm2 vs 13.29 µm2), while providing only a modest enhancement in the overall surface area-to-volume ratio (Table 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig6-v1.jpg)
 
-**Figure 6.:** (A–E) Quantitative comparisons of outer dendrites morphometric properties, including total length (A), surface area (B), volume (C), volume per unit length (D), and surface area-to-volume ratio (E). Data are presented for the entire outer dendrite (summed morphometrics, segment 1 in mustard), proximal unbranched (segment 2 in coral), and distal branched segments (segment 3 in teal). For branched ab1D neurons, segment 3 represents the summed morphometric measurements of all dendritic branches above the primary branch point, while segment 1 includes the combined values of segments 2 and 3. Each filled circle represents data from an individual neuron, with horizontal bars indicating the mean values (n=8 for unbranched neurons; n=13 for branched neurons). Statistical significance was determined using Mann-Whitney rank sum test for comparisons between two ’segment 1’, and paired t-test for comparison between segments 2 and 3. *p<0.05; **p<0.01; ***p<0.005. (F–J) For branched ab1D dendrites, correlation analysis of the morphometric properties of the proximal outer dendrite (segment 2, coral) in relation to the number of dendritic branches. Parameters include the length (F), surface area (G), volume (H), volume per unit length (I), and surface area-to-volume ratio (J). (K–O) Similar to (F–J) but with the summed morphometric measurements of the distal outer dendritic segments (segment 3, teal). Linear fits are shown, with dashed lines indicating R2<0.4 and solid lines indicating R2>0.4. Also see Figure 6—source data 1 for ab1D dendrite morphometrics.Figure 6—source data 1.
+**Figure 6.:** (A–E) Quantitative comparisons of outer dendrites morphometric properties, including total length (A), surface area (B), volume (C), volume per unit length (D), and surface area-to-volume ratio (E). Data are presented for the entire outer dendrite (summed morphometrics, segment 1 in mustard), proximal unbranched (segment 2 in coral), and distal branched segments (segment 3 in teal). For branched ab1D neurons, segment 3 represents the summed morphometric measurements of all dendritic branches above the primary branch point, while segment 1 includes the combined values of segments 2 and 3. Each filled circle represents data from an individual neuron, with horizontal bars indicating the mean values (n=8 for unbranched neurons; n=13 for branched neurons). Statistical significance was determined using Mann-Whitney rank sum test for comparisons between two ’segment 1’, and paired t-test for comparison between segments 2 and 3. *p<0.05; **p<0.01; ***p<0.005. (F–J) For branched ab1D dendrites, correlation analysis of the morphometric properties of the proximal outer dendrite (segment 2, coral) in relation to the number of dendritic branches. Parameters include the length (F), surface area (G), volume (H), volume per unit length (I), and surface area-to-volume ratio (J). (K–O) Similar to (F–J) but with the summed morphometric measurements of the distal outer dendritic segments (segment 3, teal). Linear fits are shown, with dashed lines indicating R2<0.4 and solid lines indicating R2>0.4. Also see Figure 6—source data 1 for ab1D dendrite morphometrics.
 
-## Branched ab1D neurons: proximal vs distal outer dendrites
+#### Branched ab1D neurons: proximal vs distal outer dendrites
 
 For the branched ab1D neurons, we further compared the morphometrics of their proximal (unbranched) and distal (branched) outer dendritic segments (Figure 6A–E, comparisons between segments 2 and 3). Within a single neuron, the branched distal segment exhibited an average total length over 200% longer than the proximal unbranched segment, while showing a modest 20% increase in total surface area (Figure 6A and B). In addition, the distal segments had a significantly smaller total volume (distal/proximal ≈ 50%, Figure 6C), resulting in a much smaller average volume per unit length or cross-sectional area (distal/proximal ≈ 15%, Figure 6D). This indicates substantial narrowing of the branched outer dendrite, with the distal segment’s average diameter being approximately 40% of the proximal segment’s diameter. Consequently, the surface area-to-volume ratio of the distal branched segments was significantly higher—about 250% that of the proximal unbranched segments (Figure 6E and Table 1). In all, our analysis suggests that when comparing the distal and proximal dendritic segments for the same ab1D neuron, sparse branching (≤7 branches) has a modest impact on the overall sensory surface area but substantially increases the surface area-to-volume ratio in the outer dendritic region.
 
-## Impacts of branch number on proximal dendritic morphometrics
+#### Impacts of branch number on proximal dendritic morphometrics
 
 Our morphometric analysis of 13 sparsely branched ab1D neurons allowed us to determine how branch number influences the morphometric properties of outer dendrites in an ORN population. First, we examined whether the distal dendritic branch number affects the morphometrics of the proximal unbranched segment and found no significant impact (Figure 6F–J). These findings indicate that when the branch number is low, the morphometrics of the proximal ‘trunk’ region remain relatively consistent.
 
-## Impacts of branch number on distal dendritic morphometrics
+#### Impacts of branch number on distal dendritic morphometrics
 
 In contrast to the proximal dendritic morphometrics, we found that the total length, surface area, and volume of distal segments scaled with the number of dendritic branches (Figure 6K–M). Interestingly, the diameter of individual dendritic branches and the surface area-to-volume ratio remained relatively consistent (Figure 6N–O), suggesting that the dimensions of individual dendritic branch are conserved regardless of the branch number. The average dimensions of an ab1D distal dendritic branch are 6.00 µm in length, 2.22 µm2 in surface area, and 0.06 µm3 in volume. Therefore, increasing the number of dendritic branches expands the total sensory surface area without altering the surface area-to-volume ratio, thereby preserving the dendrite’s electrical signal propagation properties (see Discussion). Our analysis suggests that structural scaling in ab1D neurons may enhance sensory capacity while preserving the biophysical properties of dendrites.
 
-## Auxiliary cells in the ab1 sensillum
+### Auxiliary cells in the ab1 sensillum
 
 In addition to ORNs, each olfactory sensillum contains three types of auxiliary cells: thecogen, trichogen, and tormogen. In previous work, we characterized the 3D morphology of these cells in the ab4 and ac3 sensilla (Nava Gonzales et al., 2021). To determine whether auxiliary cells exhibit sensillum-type-specific morphologies, we extended our analysis to the ab1 sensillum (Figure 7A and Video 3).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/106389/elife-106389-fig7-v1.jpg)
 
 **Figure 7.:** (A) 3D model and serial block-face scanning electron microscopy (SBEM) images of an ab1 sensillum. Cells are pseudocolored to indicate identities: olfactory receptor neurons (ORNs) (gray), thecogen cell (pink, Th), trichogen cell (turquoise, Tr), tormogen cell (green, To). Dashed lines mark positions of the corresponding SBEM images: (1–2) outer dendritic region beneath the cuticle; (3) inner dendrites (asterisks); (4) ORN somas. (B) A longitudinal sensillum section rendered by IMOD. (C–E) 3D models of individual auxiliary cells: thecogen (C), trichogen (D), and tormogen (E). For simplicity, microlamellae of trichogen and tormogen cells were not segmented and thus not shown in 3D models. Scale bars: 2 μm for 3D models and 1 μm for SBEM images. See also Video 3.
+
+![Video 3.](https://cdn.elifesciences.org/articles/106389/elife-106389-video3.mp4.jpg)
 
 Similar to the ab4 and ac3 sensilla, the three auxiliary cells in the ab1 sensillum followed a conserved cellular organization. The thecogen cell exhibited an overall flat morphology, appearing to adhere closely to the ORNs. The cell formed a tight sleeve around the entire outer dendritic region beneath the cuticle base, as well as the inner dendrites and portions of the ORN somas. Notably, in the inner dendritic region, the thecogen cell separated individual ORNs from one another (Figure 7A–C). This differs from the ab4 sensillum, where the thecogen cell encloses both inner dendrites within a single bundle without separating them (Nava Gonzales et al., 2021).
 
@@ -155,13 +378,13 @@ Our morphometric analysis provides a wealth of data that paves the way for biolo
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 D. melanogaster flies were reared on standard cornmeal food containing molasses at 25°C, ∼60% humidity under a 12 hr light/dark cycle in an incubator. To facilitate comparison with our published ORN morphometrics data (Nava Gonzales et al., 2021), flies of the same genotype (Or7a-GAL4>10xUAS-myc-APEX2-Orco) were used to generate the antennal volume. The fly stock numbers are BDSC 91810 for Or7a-GAL4 (Lin et al., 2015), and BDSC 79214 for 10xUAS-myc-APEX2-Orco (Tsang et al., 2018). However, APEX2-mediated DAB staining was not applied in this study to label specific neurons. Experimental flies were collected upon eclosion, separated by sex, and co-housed in groups of 10. Female flies aged 6–8 days were used for experiments.
 
 Antenna dissection was performed as follows. A fly was first wedged into the narrow end of a truncated plastic 200 μl pipette tip to expose the antenna, which was subsequently stabilized between a tapered glass microcapillary and a coverslip covered with double-sided tape. To facilitate solution exchange during sample preparation, a sharp glass electrode was used to puncture the lateral side of the antenna, a region with a low density of the ab1 sensillum type. Finally, the third antennal segment was severed from the fly’s head by pinching the second segment with fine forceps.
 
-## Tissue preparation and SBEM volume acquisition
+### Tissue preparation and SBEM volume acquisition
 
 The SBEM volume of the D. melanogaster antenna was generated following the CryoChem protocol (Tsang et al., 2018). Briefly, dissected antennae were immediately subject to high-pressure freezing in a solution of 0.15 M sodium cacodylate and 20% BSA using a high-pressure freezing machine (Bal-Tec HPM 010). The frozen samples were then transferred to a freeze-substitution solution containing 0.2% glutaraldehyde (#18426, Ted Pella, CA, USA), 0.1% uranyl acetate (Electron Microscopy Sciences, USA), and 1% water in acetone (#AC326800010, ACROS Organics, USA) in a liquid nitrogen bath. Freeze substitution was performed in a Leica EM AFS2 device held at –90°C for 58 hr, from –90°C to –60°C for 15 hr, at –60°C for 15 hr, from –60°C to –30°C for 15 hr, and then at –30°C for 15 hr. During the final hour at –30°C, samples were washed three times (20 min each) in an acetone solution containing 0.2% glutaraldehyde and 1% water, before being transferred to ice for 1 hr prior to rehydration (see below).
 
@@ -177,46 +400,46 @@ Microcomputed X-ray tomography was used to determine the position and proper ori
 
 The antennal SBEM volume was acquired at 2.5 kV using a 30 μm aperture, with the electron gun set to analytic mode and the beam operating in high-current mode. Nitrogen gas was used for focal charge compensation to reduce charging artifacts. Imaging was performed with a dwell time of 1 μs, a pixel size of 5 nm, and a Z-step of 40 nm. The X and Y pixel numbers were 1909 and 2061, respectively, and there were a total of 2571 Z slices. After data collection, the images were converted to MRC format, and rigid alignment of the image slices was performed using cross-correlation in the IMOD image processing package (https://bio3d.colorado.edu/imod/). The SBEM volume is available in the Cell Image Library (https://www.cellimagelibrary.org/) with the accession numbers CIL:57519.
 
-## Image segmentation
+### Image segmentation
 
 In the fly antenna volume, the ab1 sensilla were identified based on their characteristic size and the presence of four neurons, as ab1 is the only large basiconic sensillum type housing four ORNs (Nava Gonzales et al., 2021; Shanbhag et al., 1999). Manual segmentation was conducted using IMOD’s drawing tools by placing closed contours around the structures of interest in serial sections (Kremer et al., 1996). The sensillum cuticle, ORN soma, and inner and outer dendritic segments were saved as distinct objects to facilitate morphometric measurement of individual structures. The ciliary constriction was used to define the boundary between the inner and outer dendrites (Shanbhag et al., 2000).
 
 For the subset of ab1C neurons featuring fully curled, tube-like outer dendrites, the enclosed dendritic regions were segmented into two separate objects: the hollow inner region and the membrane-bound outer region. Subsequently, all segmented objects were ‘meshed’ to connect adjacent contours, creating continuous 3D structures. Detailed information about ‘imodmesh’ and IMOD’s drawing tools is available in the IMOD user guide (https://bio3d.colorado.edu/imod/doc/man/imodmesh.html; https://bio3d.colorado.edu/imod/doc/3dmodHelp/plughelp/drawingtools.html). All 3D neuron models generated in this study are available in the NIH 3D repository (https://3d.nih.gov/) under the entry ID: 3DPX-021684.
 
-## SBEM image post-processing
+### SBEM image post-processing
 
 For representative SBEM images, image quality was enhanced using the DenoiseEM plug-in for ImageJ, which offers multiple denoising algorithm options. Briefly, TIFF images were first loaded into ImageJ and converted to a 16-bit file format. Multiple regions of interest within the sensillar lumen were sampled to train the denoising algorithms, and the optimal algorithm was selected based on the best signal-to-blur ratio or overall image quality. For the SBEM images presented in this study, the Gaussian algorithm was most frequently used. To further enhance the visibility of dendritic branches, the contrast and brightness of the denoised images were adjusted in ImageJ. The final images were then converted back to RGB format and exported as TIFF files. Detailed information about DenoiseEM is available in the DenoiseEM plug-in page (https://bioimagingcore.be/DenoisEM/).
 
-## 3D model videos
+### 3D model videos
 
 Movies for each 3D ORN model were created using IMOD’s ‘Movie Montage Control’ and ‘Movie Sequence Dialog’ functions. Briefly, ‘Movie Montage Control’ allows users to manipulate 3D models and record these manipulations or scenes as a series of images using the ‘Set Start’ and ‘Set End’ controls. IMOD then interpolates a user-specified number of frames between the two views to create a smooth transition. This workflow supports creating multiple scenes (e.g. zooming in/out, rotations, or displaying image planes) as a sequence using the ‘Movie Sequence Dialog’. Each scene in the sequence was exported as TIFF images. These images were then compiled into an image sequence in QuickTime and saved as a .mov file at 60 frames per second. Detailed information about IMOD’s movie and montage controls is available in the IMOD user guide (https://bio3d.colorado.edu/imod/doc/3dmodHelp/modelMovie.html).
 
-## Skeletonization
+### Skeletonization
 
 To visualize dendritic branching patterns, the 3D models of ORN dendrites in MOD format were first converted to VRML2 files using the command ‘imod2vrml2’ in IMOD. The VRML2 files were then imported into Amira (2020.2 version; Thermo Fisher Scientific, USA) and converted into a binary mesh, with the 3D model area colored in white and the background in black. The AutoSkeleton module in Amira was used to identify the center of mass within each mesh region and generate a 2D skeleton. The skeletons were then manually edited using the ‘Filament editor’ in Amira by overlaying them with ORN 3D models to correct errors such as extra loops or branches.
 
 These skeletons, in SWC format, were imported into neuTube software (https://www.neutracing.com/), where dendritic branches were manually spread onto a 2D plane. Briefly, a primary branch and all its downstream branches were first selected to allow all the branches to be edited and moved as a group. This process was repeated for secondary, tertiary, and higher-order branches until overlap between branches was minimized.
 
-## Morphometric analysis
+### Morphometric analysis
 
 For morphometric analysis, the sensillum cuticle, ORN soma, inner dendrite, and the proximal and distal outer dendritic segments were analyzed as separate objects.
 
-## Surface area and volume
+#### Surface area and volume
 
 The morphometric values were extracted from individual objects using the ‘imodinfo’ function in IMOD. Detailed information about ‘imodinfo’ is available in the IMOD user guide (https://bio3d.colorado.edu/imod/doc/man/imodinfo.html). Among the three volume measurement options in ‘imodinfo’, the ‘Volume Inside Mesh’ option was selected to measure ORN volumes. For enclosed tube-like structures in the ab1C outer dendrites, volume was calculated by subtracting the inner object volume from the outer object volume, while surface area was determined by summing the surface areas of the inner and outer objects. For the branched outer dendrites of ab1D, the total volume and surface area were obtained by summing the values from individual branches.
 
-## Absolute length
+#### Absolute length
 
 To calculate the absolute lengths of individual objects, these structures were first skeletonized using Amira. The resulting SWC files were imported into R, where pixel coordinates were scaled to micrometers using scaling factors derived from the ‘imodinfo’ command. The length of each component was then calculated using the Pythagorean theorem.
 
-## Relative position to sensillum cuticle
+#### Relative position to sensillum cuticle
 
 To calculate the relative positions of dendritic branching, flattening, or terminal points with respect to the cuticle, the previously mentioned SWC skeletons were first imported into Python. Branching points and dendritic termini were extracted using the PyNeuroML package (https://pyneuroml.readthedocs.io/en/development/). Each point of interest (e.g. ciliary constriction, branching or flattening point, and dendritic terminus) was projected onto the nearest point on the cuticle skeleton. The cuticle proportion of a point was defined as its relative position along the cuticle, scaled from 0 (cuticle base) to 1 (cuticle tip). For points below the cuticle base, the bottom segment of the cuticle skeleton was extrapolated, and the point was projected onto this segment. In such cases, the cuticle proportion was scaled from 0 (at the cuticle base) to negative infinity, with –1 representing one cuticle length down the extrapolated segment.
 
-## Total number of dendrites in ab1 sensilla
+#### Total number of dendrites in ab1 sensilla
 
 The dendritic branch count for each ab1 sensillum, as shown in Figure 1B, was estimated using an image slice taken at approximately the midpoint of the sensillum cuticle. This image plane was rotated to a perpendicular orientation relative to the long axis of the cuticle using IMOD’s slicer tool. In this orientation, the images were exported in TIFF format, denoised, and branches were manually counted. The sensillum cross-sectional area at the midpoint was measured by outlining the sensillar lumen with a contour and calculating its area using the ‘imodinfo’ command in IMOD. For more information about IMOD’s slicer tool, refer to the IMOD user guide (https://bio3d.colorado.edu/imod/doc/3dmodHelp/slicer.html).
 
-## Statistics
+### Statistics
 
 All values were presented as mean ± standard deviation (SD). Paired two-tailed t-tests were used for morphometric comparisons between neighboring ORNs within the same sensillum. For comparisons between non-neighboring neurons, rank sum tests or unpaired two-tailed t-tests (if the Shapiro-Wilk normality test was passed) were applied. A p-value of <0.05 was considered statistically significant.

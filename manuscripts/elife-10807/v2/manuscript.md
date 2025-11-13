@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.10807.001 RadA (also known as 'Sms') is a highly conserved protein, found in almost all eubacteria and plants, with sequence similarity to the RecA strand exchange protein and a role in homologous recombination. We investigate here the biochemical properties of the E. coli RadA protein and several mutant forms. RadA is a DNA-dependent ATPase, a DNA-binding protein and can stimulate the branch migration phase of RecA-mediated strand transfer reactions. RadA cannot mediate synaptic pairing between homologous DNA molecules but can drive branch migration to extend the region of heteroduplex DNA, even without RecA. Unlike other branch migration factors RecG and RuvAB, RadA stimulates branch migration within the context of the RecA filament, in the direction of RecA-mediated strand exchange. We propose that RadA-mediated branch migration aids recombination by allowing the 3’ invading strand to be incorporated into heteroduplex DNA and to be extended by DNA polymerases. DOI: http://dx.doi.org/10.7554/eLife.10807.001
+RadA (also known as 'Sms') is a highly conserved protein, found in almost all eubacteria and plants, with sequence similarity to the RecA strand exchange protein and a role in homologous recombination. We investigate here the biochemical properties of the E. coli RadA protein and several mutant forms. RadA is a DNA-dependent ATPase, a DNA-binding protein and can stimulate the branch migration phase of RecA-mediated strand transfer reactions. RadA cannot mediate synaptic pairing between homologous DNA molecules but can drive branch migration to extend the region of heteroduplex DNA, even without RecA. Unlike other branch migration factors RecG and RuvAB, RadA stimulates branch migration within the context of the RecA filament, in the direction of RecA-mediated strand exchange. We propose that RadA-mediated branch migration aids recombination by allowing the 3’ invading strand to be incorporated into heteroduplex DNA and to be extended by DNA polymerases.
 
 ## Introduction
 
@@ -34,115 +34,152 @@ To explore RadA function in E. coli, we purified wild type RadA as well as sever
 
 ## Results
 
-## Protein purification
+### Protein purification
 
 To elucidate RadA structure and function, we purified native wild-type RadA and several RadA domain mutants and then evaluated their biochemical activities, particularly those possessed by the RecA protein. Wild-type RadA was estimated to be more than 98% pure (Figure 1—figure supplement 1).
 
-## DNA binding
+### DNA binding
 
-Using an electrophoretic mobility shift assay (
+Using an electrophoretic mobility shift assay (Figure 1A), we examined the binding of purified RadA to poly(dT)30 in the presence of various nucleotide cofactors. RadA bound this oligonucleotide only in the presence of ADP. No binding was detected in the absence of nucleotide, with ATP or dATP or in the presence of poorly-hydrolyzable ATP analogs, ATPγS or AMP-PNP (Figure 1A). These observations suggest that ADP promotes the most stably DNA-bound RadA. This behavior contrasts to that of RecA, which requires ATP for binding to form the active, extended DNA filament and which dissociates in the presence of ADP. Poorly hydrolyzable nucleotide analogs such as ATPγS produce the most stable RecA binding (McEntee et al., 1981).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig1-v2.jpg)
 
-**Figure 1.:** (A) Nucleotide dependence of RadA binding to poly d(T)30. Reactions (10 µl) contained 100 fmol (molecule) of radio-labeled poly d(T)30, 3.3 pmol RadA and 1 mM nucleotide. After incubation at 37 °C for 20 min, binding was assessed using EMSA. (B) DNA substrate specificity of RadA Binding. Reactions containing 1 mM ADP, 3.3 pmol RadA, 100 fmol (molecule) of radio-labeled poly d(T)30 and unlabeled competitor DNA (circles-poly d(T)30, triangles- poly d(C)30, diamonds-poly d(G)30, squares poly d(A)33 were incubated at 37° for 20 min. The extent of binding was determined using scanned autoradiographs of EMSA gels processed with Image J-64.DOI: http://dx.doi.org/10.7554/eLife.10807.003
+**Figure 1.:** (A) Nucleotide dependence of RadA binding to poly d(T)30. Reactions (10 µl) contained 100 fmol (molecule) of radio-labeled poly d(T)30, 3.3 pmol RadA and 1 mM nucleotide. After incubation at 37 °C for 20 min, binding was assessed using EMSA. (B) DNA substrate specificity of RadA Binding. Reactions containing 1 mM ADP, 3.3 pmol RadA, 100 fmol (molecule) of radio-labeled poly d(T)30 and unlabeled competitor DNA (circles-poly d(T)30, triangles- poly d(C)30, diamonds-poly d(G)30, squares poly d(A)33 were incubated at 37° for 20 min. The extent of binding was determined using scanned autoradiographs of EMSA gels processed with Image J-64.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** 1. SDS PAGE Gel Showing Purification of RadA. Lane 1) MW Markers; Lane 2) Crude Lysate; Lane 3) Flowthrough; Lane 4) Wash; Lane 5) eXact peak fraction; Lane 6) MonoQ HP peak fraction.DOI: http://dx.doi.org/10.7554/eLife.10807.004
+**Figure 1—figure supplement 1.:** 1. SDS PAGE Gel Showing Purification of RadA. Lane 1) MW Markers; Lane 2) Crude Lysate; Lane 3) Flowthrough; Lane 4) Wash; Lane 5) eXact peak fraction; Lane 6) MonoQ HP peak fraction.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 30.Electrophoretic mobility shift assay for RadA binding to poly(dT)30, with RadA concentrations indicated.DOI: http://dx.doi.org/10.7554/eLife.10807.005
+**Figure 1—figure supplement 2.:** Electrophoretic mobility shift assay for RadA binding to poly(dT)30, with RadA concentrations indicated.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** 30.The autoradiographs from Figure 1—figure supplement 2 and a second gel were scanned and binding was quantitated using Image J 64. GraphPad Prism software was used to fit the data to a binding curve. The data from two replicates are shown. The apparent Kd derived from this curve is 110 nM ± 14 nM.DOI: http://dx.doi.org/10.7554/eLife.10807.006
+**Figure 1—figure supplement 3.:** The autoradiographs from Figure 1—figure supplement 2 and a second gel were scanned and binding was quantitated using Image J 64. GraphPad Prism software was used to fit the data to a binding curve. The data from two replicates are shown. The apparent Kd derived from this curve is 110 nM ± 14 nM.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Electrophoretic mobility shift assay for RadA binding. Substrate E2 has approximately 30 nucleotides on either side of a poly(dT) 30 core. Poly(dA) 30 was annealed to E2 before the binding reaction was initiated for the samples indicated. The * indicates the strand labeled with 32P.DOI: http://dx.doi.org/10.7554/eLife.10807.007
+**Figure 1—figure supplement 4.:** Electrophoretic mobility shift assay for RadA binding. Substrate E2 has approximately 30 nucleotides on either side of a poly(dT) 30 core. Poly(dA) 30 was annealed to E2 before the binding reaction was initiated for the samples indicated. The * indicates the strand labeled with 32P.
 
 Competition experiments (Figure 1B) with unlabeled poly(dA), poly(dC), poly(dG) and poly(dT) showed that only poly(dT) competes for RadA binding to labeled poly(dT), indicating a binding preference for by poly(dT). RecA protein also shows a preference for poly(dT) (Bugreeva et al., 2005; McEntee et al., 1981), which may be because poly(dT) assumes a more flexible structure (Mills et al., 1999). The apparent KD of RadA binding to poly(dT)30 is about 110 nM, with a Hill coefficient of 1.5 (Figure 1—figure supplement 2, Figure 1—figure supplement 3), indicative of cooperative binding. RadA was observed to bind poly(dT)30 when flanked on both 5’ and 3’ ends by 30 nucleotides of natural DNA sequence (substrate 'E2', Figure 1—figure supplement 4); this binding was inhibited if poly(dA)30 was allowed to anneal to the substrate, showing that RadA binds more poorly to duplex DNA.
 
-## DNA-stimulated ATPase
+### DNA-stimulated ATPase
 
-Using an NADH-coupled assay (
+Using an NADH-coupled assay (Table 1), we measured the ATPase activity of RadA, in the presence or absence of various DNA cofactors, circular ssDNA (φX174 virion) and dsDNA (φX174 RF DNA). Like RecA, RadA’s ATPase activity is strongly stimulated by ssDNA. However, RadA’s ATPase is also substantially stimulated by dsDNA whereas dsDNA stimulates RecA's ATPase only after a lag period (Kowalczykowski et al., 1987). RadA’s ATPase activity in the presence of ssDNA was measured to have a kcat of 29.4 min-1, comparable to that of RecA (Weinstock et al., 1981). Addition of single-strand DNA-binding (SSB) protein after incubation of RadA or RecA with ssDNA was observed to repress the ATPase activity of RadA, whereas it slightly stimulated the ATPase of RecA (Figure 2). This latter observation suggests that, although RecA exhibits stable binding to ssDNA when challenged by SSB, less stable binding by RadA allows for SSB competition and inhibition of its ATPase activity. RadA ATPase activity measured with a variety of different DNA structures formed by oligonucleotides, including forks, splays, and other branched structures, showed no significant difference from that with ssDNA (Figure 2—figure supplement 1). Although these DNA molecules are only very weakly bound by RadA in gel shift experiments (data not shown), they are sufficient to stimulate RadA’s ATPase activity, indicating some transient or unstable association.
+
+**Table 1.**
+ DNA dependence of RadA ATP hydrolysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>DNA substrate</th>
+      <th>Apparent kcat (ATP/RadA/min)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>None</td>
+      <td>2.9 +/- 0.2</td>
+    </tr>
+    <tr>
+      <td>Circular single-strand</td>
+      <td>29.4 +/- 0.4</td>
+    </tr>
+    <tr>
+      <td>Supercoiled double-strand</td>
+      <td>9.1 +/- 0.4</td>
+    </tr>
+    <tr>
+      <td>Linear double-strand</td>
+      <td>4.2 +/- 0.2</td>
+    </tr>
+    <tr>
+      <td>Nicked double-strand</td>
+      <td>15.2 +/- 0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_Reactions contained 1 mM ATP and 20.3 µM (nucleotide) φX174 DNA. The values shown are the average of two experiments, except for the circular single-strand value. It is the average of five experiments. Standard deviations are reported._
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig2-v2.jpg)
 
-**Figure 2.:** ATP hydrolysis was measured in reactions containing DNA and protein concentrations similar to those in recombination reactions and included 21 µM (nucleotide) single-strand circular DNA and 6.7 µM RecA, 1.9 µM SSB, and 630 nM RadA. RecA and/or RadA were pre-incubated with the single-strand DNA for 8 min at 37 °C before the reactions were initiated with ATP +/- SSB. Rate measurement started 5 min after the addition of ATP. Reactions included: SSB (closed purple circles), RadA (open red squares), RadA +SSB (closed dark red squares), RecA alone (blue inverted triangles), RecA+SSB (closed dark blue inverted triangles), RadA + RecA (open green diamonds), RadA+RecA+SSB (closed dark green diamonds). Error bars represent the 95% confidence interval of the linear fit of the data calculated using Prism Graph Pad.DOI: http://dx.doi.org/10.7554/eLife.10807.009
+**Figure 2.:** ATP hydrolysis was measured in reactions containing DNA and protein concentrations similar to those in recombination reactions and included 21 µM (nucleotide) single-strand circular DNA and 6.7 µM RecA, 1.9 µM SSB, and 630 nM RadA. RecA and/or RadA were pre-incubated with the single-strand DNA for 8 min at 37 °C before the reactions were initiated with ATP +/- SSB. Rate measurement started 5 min after the addition of ATP. Reactions included: SSB (closed purple circles), RadA (open red squares), RadA +SSB (closed dark red squares), RecA alone (blue inverted triangles), RecA+SSB (closed dark blue inverted triangles), RadA + RecA (open green diamonds), RadA+RecA+SSB (closed dark green diamonds). Error bars represent the 95% confidence interval of the linear fit of the data calculated using Prism Graph Pad.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** NADH coupled ATP hydrolysis assays were performed as described in the procedures. Reactions contained 0.3 μM (molecule) model forks and 0.63 μM RadA. Average rates from three experiments are shown. Error bars represent standard deviations. The sequences for the oligonucleotides used to make the forks are in Table 2.DOI: http://dx.doi.org/10.7554/eLife.10807.010
+**Figure 2—figure supplement 1.:** NADH coupled ATP hydrolysis assays were performed as described in the procedures. Reactions contained 0.3 μM (molecule) model forks and 0.63 μM RadA. Average rates from three experiments are shown. Error bars represent standard deviations. The sequences for the oligonucleotides used to make the forks are in Table 2.
 
-We purified several forms of RadA, mutated in its characteristic motifs: C28Y (Zn finger), K108R (Walker A box), K258A (KNRFG RadA motif) and S372A (putative Lon protease active site) (
+We purified several forms of RadA, mutated in its characteristic motifs: C28Y (Zn finger), K108R (Walker A box), K258A (KNRFG RadA motif) and S372A (putative Lon protease active site) (Figure 3A, Figure 3—figure supplement 1). These were analyzed for poly(dT)30 binding in the presence of ADP and ssDNA-dependent ATPase activity (using the more sensitive PEI TLC method) (Figure 3B,C). As expected, the K108R mutant in the Walker A box abolished ATPase activity; a defect in ATPase was exhibited by the K258A mutant as well. Both of these mutants were defective for DNA binding in the presence of ADP. RadA mutant C28Y retained the ATPase activity but was defective in DNA binding. RadA mutant S372A retained ATPase and DNA-binding activities.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of RadA Domains and Locations of Domain Mutants. (B) Binding of RadA Mutants to poly d(T)30. Reactions contained 100 fmol (molecule) of poly d(T)30, 3.3 pmol (mutant) RadA and 1 mM ADP. After incubation at 37 °C for 20 min, binding was assessed using EMSA. Binding relative to wild-type RadA is shown for two independent experiments. (C) ATP hydrolysis by RadA domain mutants. ATP hydrolysis was assessed using PEI TLC to visualize release of inorganic phosphate (Pi) as described in the procedures. Reactions contained either no or 10.5 µM (nucleotide) single-strand circular M13 DNA and 250 nM RadA or RadA mutant protein. Graph shows the mean ATP hydrolysis activity of RadA mutants from three independent experiments relative to the activity of wild-type RadA. Error bars represent the standard deviation of the mean.DOI: http://dx.doi.org/10.7554/eLife.10807.011
+**Figure 3.:** (A) Schematic of RadA Domains and Locations of Domain Mutants. (B) Binding of RadA Mutants to poly d(T)30. Reactions contained 100 fmol (molecule) of poly d(T)30, 3.3 pmol (mutant) RadA and 1 mM ADP. After incubation at 37 °C for 20 min, binding was assessed using EMSA. Binding relative to wild-type RadA is shown for two independent experiments. (C) ATP hydrolysis by RadA domain mutants. ATP hydrolysis was assessed using PEI TLC to visualize release of inorganic phosphate (Pi) as described in the procedures. Reactions contained either no or 10.5 µM (nucleotide) single-strand circular M13 DNA and 250 nM RadA or RadA mutant protein. Graph shows the mean ATP hydrolysis activity of RadA mutants from three independent experiments relative to the activity of wild-type RadA. Error bars represent the standard deviation of the mean.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** SDS-PAGE gel showing purified RadA mutant proteins.DOI: http://dx.doi.org/10.7554/eLife.10807.012
+**Figure 3—figure supplement 1.:** SDS-PAGE gel showing purified RadA mutant proteins.
 
-## Strand exchange reactions
+### Strand exchange reactions
 
-We examined standard RecA-mediated strand-exchange reactions between 5386 nucleotide circular φX174 ssDNA and linear duplex DNA in the presence of ATP and an ATP-regeneration system (
+We examined standard RecA-mediated strand-exchange reactions between 5386 nucleotide circular φX174 ssDNA and linear duplex DNA in the presence of ATP and an ATP-regeneration system (Figure 4A). Presynaptic filaments are formed by the incubation of RecA with ssDNA, linear dsDNA is then added and the reaction is initiated by the addition of ATP and SSB. Reactions are monitored by agarose gel electrophoresis. In this regimen, RecA catalyzes the formation of branched DNA molecules within 5 min, which are converted to the relaxed circular dsDNA final product by 18 min. Addition of RadA, at a 1:17 stoichiometry relative to RecA, accelerated final product formation, such that the reaction was complete by 5 min, with no detectable accumulation of branched intermediates (Figure 4B). Although RadA did not change the efficiency of the RecA strand-exchange reaction, RadA enhanced the branch migration phase of the reaction to yield the final product more quickly. This branch migration was directional in nature and drove the reaction forward to the nicked circular product rather than back to the linear substrate.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig4-v2.jpg)
 
-**Figure 4.:** (A) Diagram of thethree-strand recombination reaction. Single-strand circular φX-174 DNA (SCS) was mixed with double-strand φX174 DNA linearized with PstI (DLS) in the presence of RecA, SSB, ATP and an ATP regenerating system. When RadA was included in the reactions, it was added to achieve a RadA:RecA ratio of 1:17. Initially, branched Intermediates (INT) form between the singe-strand circular DNA and its complementary sequence. After continued incubation, nicked circular product (NP) and single-strand linear product (SLP) are formed. Note: The SLP is not usually visible. The standard order of addition for this reaction is: 1) Incubation at 37 °C for 8 min with buffer, ATP regenerating system, φX174 single-strand DNA, and RecA (and RadA when included). 2) Addition of double-strand linear φX174 and continued incubation for 5 min at 37°. 3) Addition of pre-mixed ATP and SSB to initiate the reaction. Incubation then continued for the times indicated. 4) Deproteinization of the reaction and separation of the products from substrates on a 0.8% agarose gel run in TAE. (B) Effect of RadA on Three-strand Recombination Reactions. Three-strand recombination reactions were performed as described above with either RecA and RadA or RecA alone in the first incubation step. In the third set of reactions, RadA was added to reactions containing RecA (split from the RecA alone reaction) five minutes after addition of SSB and ATP. (C) Effect of excess ADP on Three-strand Recombination Reactions. Recombination reactions were performed as described except for the following modifications. No regenerating system was included, but the ATP concentration was increased to 5 mM. ADP was added at the concentrations indicated. Finally, incubation at 37 °C was extended to 60 min.DOI: http://dx.doi.org/10.7554/eLife.10807.013
+**Figure 4.:** (A) Diagram of thethree-strand recombination reaction. Single-strand circular φX-174 DNA (SCS) was mixed with double-strand φX174 DNA linearized with PstI (DLS) in the presence of RecA, SSB, ATP and an ATP regenerating system. When RadA was included in the reactions, it was added to achieve a RadA:RecA ratio of 1:17. Initially, branched Intermediates (INT) form between the singe-strand circular DNA and its complementary sequence. After continued incubation, nicked circular product (NP) and single-strand linear product (SLP) are formed. Note: The SLP is not usually visible. The standard order of addition for this reaction is: 1) Incubation at 37 °C for 8 min with buffer, ATP regenerating system, φX174 single-strand DNA, and RecA (and RadA when included). 2) Addition of double-strand linear φX174 and continued incubation for 5 min at 37°. 3) Addition of pre-mixed ATP and SSB to initiate the reaction. Incubation then continued for the times indicated. 4) Deproteinization of the reaction and separation of the products from substrates on a 0.8% agarose gel run in TAE. (B) Effect of RadA on Three-strand Recombination Reactions. Three-strand recombination reactions were performed as described above with either RecA and RadA or RecA alone in the first incubation step. In the third set of reactions, RadA was added to reactions containing RecA (split from the RecA alone reaction) five minutes after addition of SSB and ATP. (C) Effect of excess ADP on Three-strand Recombination Reactions. Recombination reactions were performed as described except for the following modifications. No regenerating system was included, but the ATP concentration was increased to 5 mM. ADP was added at the concentrations indicated. Finally, incubation at 37 °C was extended to 60 min.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Components in the blue box were pre-incubated with buffer and the regenerating system for 8 min at 37 °C. Then, reaction components in the green box were added and pre-incubation was continued for 5 min. Recombination was initiated by the addition of components in the red box. The reactions were then incubated for the times indicated above the gel.DOI: http://dx.doi.org/10.7554/eLife.10807.014
+**Figure 4—figure supplement 1.:** Components in the blue box were pre-incubated with buffer and the regenerating system for 8 min at 37 °C. Then, reaction components in the green box were added and pre-incubation was continued for 5 min. Recombination was initiated by the addition of components in the red box. The reactions were then incubated for the times indicated above the gel.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** Intermediates (INT); Nicked Product (NP); Duplex Linear Substrate (DLS); and Single-strand Circular Substrate (SCS).DOI: http://dx.doi.org/10.7554/eLife.10807.015
+**Figure 4—figure supplement 2.:** Intermediates (INT); Nicked Product (NP); Duplex Linear Substrate (DLS); and Single-strand Circular Substrate (SCS).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Intermediates (INT); Nicked Product (NP); Duplex Linear Substrate (DLS); and Single-strand Circular Substrate (SCS).DOI: http://dx.doi.org/10.7554/eLife.10807.016
+**Figure 4—figure supplement 3.:** Intermediates (INT); Nicked Product (NP); Duplex Linear Substrate (DLS); and Single-strand Circular Substrate (SCS).
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Reactions were performed as described in the procedures except 4 μM RecA or Rad A was used.DOI: http://dx.doi.org/10.7554/eLife.10807.017
+**Figure 4—figure supplement 4.:** Reactions were performed as described in the procedures except 4 μM RecA or Rad A was used.
 
 The strand exchange reaction was also performed by initiating the reaction with RecA alone and adding RadA to the ongoing reaction after 5 min, when all the duplex linear DNA had been converted to branched intermediates (Figure 4B). In these reactions, final product is visible as early as 2.5 min after RadA addition, with the reaction complete after an additional 5 min. Therefore, RadA need not be present in the reaction during RecA presynaptic filament formation and can stimulate branch migration from RecA-promoted strand-exchange intermediates. Order-of-addition experiments (Figure 4—figure supplement 1) measuring RecA-mediated strand exchange, with and without RadA, showed that RadA strongly stimulated branch migration when added before SSB, but not when added after. In addition, RadA did not detectably stimulate RecA-strand exchange in the absence of SSB. RadA stimulated RecA-mediated strand exchange reactions when RecA concentrations were reduced to suboptimal levels but did not when RecA became limiting (Figure 4—figure supplement 2). When RecA was held at saturating concentration (6.7 µM) and RadA was titrated, the stimulation of branch migration was detectable at RadA:RecA stoichiometries of as little as 1:223 and reached the maximal detectable stimulation at 1:13 (Figure 4—figure supplement 3). In the RadA-stimulated reactions, the time of appearance of final product varied with RadA concentration.
 
 In the absence of an ATP-regeneration system, the addition of ADP to the 3-strand reaction inhibits strand exchange, primarily by destabilizing the RecA presynaptic filament (Kahn and Radding, 1984; Lee and Cox, 1990a; 1990b; Piechura et al., 2015; Wu et al., 1982). As an indication of how RadA might affect the RecA filament, we assayed ADP-inhibition of the standard RecA 3-strand reaction (lacking an ATP-regenerating system), at various concentrations relative to a fixed amount of ATP, 5 mM (Figure 4C). In 60 min reactions with RecA alone, ADP completely inhibited strand-exchange at 4 mM. In reactions containing both RecA and RadA, ADP inhibition of strand exchange was almost complete at 1 mM and complete at 2 mM. Furthermore, even without ADP addition, RadA inhibited RecA 3-strand transfer reactions that lack an ATP-regeneration system. We note that under these reaction conditions, which include SSB, RadA’s ATPase is inhibited (Figure 2), so this result is not simply due to a higher rate of ATP depletion by the mere addition of RadA. Under the conditions used for RecA presynaptic filament formation, addition of RadA at 1:17 RadA:RecA caused a slight reduction in the measured ATPase (Figure 2), which appears to be primarily due to RecA. This may indicate some removal and replacement of RecA with RadA on ssDNA, or alternatively, that RadA, at substoichiometric amounts, can inhibit RecA’s ATPase while bound to ssDNA. RadA did not promote RecA strand transfer or joint molecule formation when SSB was omitted from the reaction (Figure 4—figure supplement 1) indicating that RadA does not assist nucleation or filament extension under these conditions. Under no conditions examined did we find that RadA by itself could promote strand-pairing and exchange (for example, see Figure 4—figure supplement 4).
 
-To determine which properties of RecA are required for RadA-stimulation of strand exchange, we next examined strand-exchange catalyzed by RecA K72R, a mutant that can bind but not hydrolyze ATP (
+To determine which properties of RecA are required for RadA-stimulation of strand exchange, we next examined strand-exchange catalyzed by RecA K72R, a mutant that can bind but not hydrolyze ATP (Rehrauer and Kowalczykowski, 1993; Shan et al., 1996). These reactions substitute dATP for ATP, which promotes higher affinity of RecA for ssDNA, and lower Mg2+ concentrations. As reported previously, the RecA mutant readily catalyzes strand-pairing to form branched intermediates but is inefficient at branch migration to form the final relaxed circular dsDNA product. RadA did indeed accelerate branch migration in RecA K72R-mediated reactions, with final nicked circular product ('NP') visible at 30 min (Figure 5A). Therefore, RadA-acceleration of branch migration in RecA-promoted reactions does not require the ATPase of RecA.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig5-v2.jpg)
 
-**Figure 5.:** (A) Three-strand recombination reactions with RecA K72R and RadA. Recombination reactions with the mutant RecA K72R were performed as described except dATP replaced ATP and the Mg(OAc)2 concentration was decreased to 3 mM. (B) Three-strand recombination reactions with RadA domain mutants. The reactions were performed as described except with the indicated RadA mutant protein replacing wild-type RadA.DOI: http://dx.doi.org/10.7554/eLife.10807.018
+**Figure 5.:** (A) Three-strand recombination reactions with RecA K72R and RadA. Recombination reactions with the mutant RecA K72R were performed as described except dATP replaced ATP and the Mg(OAc)2 concentration was decreased to 3 mM. (B) Three-strand recombination reactions with RadA domain mutants. The reactions were performed as described except with the indicated RadA mutant protein replacing wild-type RadA.
 
 In the standard RecA 3-strand reaction, we examined the ability of RadA mutant proteins to accelerate branch migration, compared to reactions in parallel with wild-type RadA or lacking RadA altogether (Figure 5B). Interestingly, the RadA K258A mutant appeared to arrest branch migration, with the accumulation of slowly-migrating intermediate species. Final product formation was reduced, more so than reactions that lack RadA. RadA mutants C28Y and K108R also slowed the reactions and reduced the efficiency of strand exchange. In contrast, RadA S372A appeared fully wild-type in its ability to accelerate strand-exchange. These experiments show that RadA’s ATPase activity, negated in the K108R mutant, is required to stimulate branch migration. RadA K258A, a dominant-negative mutant in the 'RadA motif', not only did not accelerate branch migration but also interfered with RecA’s ability to branch migrate, suggesting it binds either to intermediate structures and/or RecA to block the reaction. RadA’s putative zinc finger, affected by the C28Y mutant, is also required to stimulate branch migration.
 
-To test whether RadA could promote branch migration in the absence of RecA, we performed standard RecA strand-exchange reactions for 12 min and purified the DNA from such reactions after proteinase K/SDS treatment to remove RecA. This DNA, enriched in branched strand-exchange intermediates, was then incubated with RadA alone in the presence of ATP. RadA caused loss of branched DNA and enhanced formation of relaxed circular dsDNA product, relative to the same substrate incubated without RadA (
+To test whether RadA could promote branch migration in the absence of RecA, we performed standard RecA strand-exchange reactions for 12 min and purified the DNA from such reactions after proteinase K/SDS treatment to remove RecA. This DNA, enriched in branched strand-exchange intermediates, was then incubated with RadA alone in the presence of ATP. RadA caused loss of branched DNA and enhanced formation of relaxed circular dsDNA product, relative to the same substrate incubated without RadA (Figure 6A, quantitated in Figure 6B). Interestingly, branch migration catalyzed by RadA under these conditions was directional in nature, with accumulation primarily of full strand exchange products (nicked circular dsDNA product, 'NP') rather than linear dsDNA ('DLS') (Figure 6A,B,D). In the presence of SSB, however, the directionality of RadA-mediated branch migration was lost, with accumulation of both linear and circular products (Figure 6A,C,D). The ability of RadA to catalyze branch migration in this assay required ATP (Figure 6E) and was not seen in reactions containing no nucleotide, ADP or ATPγS.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig6-v2.jpg)
 
-**Figure 6.:** (A) Branch Migration of intermediates Mediated by RadA. Three-strand recombination reactions were stopped after 12 min and deproteinized and purified as described in the procedures. Branch migration assays contained DNA intermediates (100 ng), 1 µM RadA, 3 mM ATP, and 2.4 µM SSB when indicated. After incubation for the times incubated, reactions were stopped and products were resolved on an 0.8% TAE agarose gel. The No protein sample includes DNA intermediate fractions and ATP and was incubated for 30 min at 37 °C without RadA or SSB. (B) Quantification of DNA Species in the Branch Migration Assay Formed by RadA. Amounts of each DNA species was determined from scanned digital photographs using ImageJ64 (Nicked Product (NP)-squares, Duplex Linear Substrate (DLS)-triangles, Single-strand Circular Substrates (SCS)-inverted triangles, and Intermediate Substrates (INT)-circles). (C) Quantification of DNA Species in the Branch Migration Assay Formed by RadA and SSB.* Amounts of each DNA species was determined from scanned digital photographs using ImageJ64. (Nicked Product (NP)-squares, Duplex Linear Substrate (DLS)-triangles, Single-strand Circular Substrates (SCS)-inverted triangles, and Intermediate Substrates (INT)-circles). (D) Quantification of the Nicked Product (NP) and Duplex Linear Substrate (DLS) Formed in Branch Migration Assays. Graph shows the mean and standard deviation of the relative amounts of NP and DLS formed in three independent branch migration experiments. Two different RadA preparations and three different DNA Intermediate preparations were used in these experiments. (E) Nucleotide Dependence of the Branch Migration Assay. Reactions were performed as above except 1mM of the nucleotide indicated replaced 3mM ATP. Incubation was for 30 min at 37 °C. (F) Model Depicting RadA Directionality. In the absence of SSB, RadA (illustrated by wedge shape) preferentially migrates DNA, displacing a 5’ ssDNA flap. In the presence of SSB, the directional bias of RadA branch migration is largely eliminated. * No correction for the difference in binding affinity of ethidium bromide for single-strand and double-strand DNA was made. Thus, the absolute amount of the DNA species containing single-strand DNA may be underestimated.DOI: http://dx.doi.org/10.7554/eLife.10807.019
+**Figure 6.:** (A) Branch Migration of intermediates Mediated by RadA. Three-strand recombination reactions were stopped after 12 min and deproteinized and purified as described in the procedures. Branch migration assays contained DNA intermediates (100 ng), 1 µM RadA, 3 mM ATP, and 2.4 µM SSB when indicated. After incubation for the times incubated, reactions were stopped and products were resolved on an 0.8% TAE agarose gel. The No protein sample includes DNA intermediate fractions and ATP and was incubated for 30 min at 37 °C without RadA or SSB. (B) Quantification of DNA Species in the Branch Migration Assay Formed by RadA. Amounts of each DNA species was determined from scanned digital photographs using ImageJ64 (Nicked Product (NP)-squares, Duplex Linear Substrate (DLS)-triangles, Single-strand Circular Substrates (SCS)-inverted triangles, and Intermediate Substrates (INT)-circles). (C) Quantification of DNA Species in the Branch Migration Assay Formed by RadA and SSB.* Amounts of each DNA species was determined from scanned digital photographs using ImageJ64. (Nicked Product (NP)-squares, Duplex Linear Substrate (DLS)-triangles, Single-strand Circular Substrates (SCS)-inverted triangles, and Intermediate Substrates (INT)-circles). (D) Quantification of the Nicked Product (NP) and Duplex Linear Substrate (DLS) Formed in Branch Migration Assays. Graph shows the mean and standard deviation of the relative amounts of NP and DLS formed in three independent branch migration experiments. Two different RadA preparations and three different DNA Intermediate preparations were used in these experiments. (E) Nucleotide Dependence of the Branch Migration Assay. Reactions were performed as above except 1mM of the nucleotide indicated replaced 3mM ATP. Incubation was for 30 min at 37 °C. (F) Model Depicting RadA Directionality. In the absence of SSB, RadA (illustrated by wedge shape) preferentially migrates DNA, displacing a 5’ ssDNA flap. In the presence of SSB, the directional bias of RadA branch migration is largely eliminated. * No correction for the difference in binding affinity of ethidium bromide for single-strand and double-strand DNA was made. Thus, the absolute amount of the DNA species containing single-strand DNA may be underestimated.
 
-The prior strand-exchange reactions involve three DNA strands, with one substrate and one product entirely single-stranded. RecA can also catalyze strand-exchange between two duplex molecules, provided that strand exchange is initiated at a short ssDNA gap in the substrate. These reactions produce full 4-strand Holliday junction intermediates, as opposed to the 3-strand junctions in the 3-strand reactions above (
+The prior strand-exchange reactions involve three DNA strands, with one substrate and one product entirely single-stranded. RecA can also catalyze strand-exchange between two duplex molecules, provided that strand exchange is initiated at a short ssDNA gap in the substrate. These reactions produce full 4-strand Holliday junction intermediates, as opposed to the 3-strand junctions in the 3-strand reactions above (Figure 7A). To determine if RadA could accelerate branch migration between 4 DNA strands involving true Holliday junctions, we performed RecA strand exchange reactions between linear dsDNA molecules and circular dsDNA with a 1346 nt ssDNA gap. All other conditions were identical to the 3-strand reactions above and the 3-strand reactions were performed in parallel to the 4-strand reactions (Figure 7B). Although RecA by itself efficiently promoted joint molecule formation in the 4-strand reaction, formation of the final branch-migrated product (nicked dsDNA circle, 'NP') was inefficient relative to the 3-strand reaction after 30 min, and most DNA was found in various branched intermediate forms. In the RecA RadA-coupled reaction, the final product was visible at the first time point, 10 min, and accumulation of intermediates was not observed. Therefore, RadA can stimulate branch migration of 4-strand Holliday junctions, as well as 3-strand junctions.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig7-v2.jpg)
 
-**Figure 7.:** (A) Diagram of the Four-strand Recombination Reaction. Gapped circular substrate (GS) prepared as described in the procedures was mixed with double-strand φX174 DNA linearized with PstI (DLS) in the presence of RecA, SSB, RadA, ATP and an ATP regenerating system. Complex, largely duplex DNA intermediates are formed first. The final products are nicked circular double-DNA (NP) and Duplex Linear DNA with Single-strand Tails (DLP). Note: The tailed linear product species is not well-resolved from the duplex linear substrate (DLS). (B) Comparison of 3-strand and 4-strand Recombination Mediated by RecA in the Presence and Absence of RadA. Recombination reactions between either single-strand circular φX174 DNA (SCS) and double-strand φX174 DNA linearized with PstI (DLS)-3-strand reactions or double-strand circular φX174 with a 1.3 kB single-strand gap (GS) and double-strand φX174 DNA linearized with PstI (DLS)-4-strand reactions were performed as described. At the times indicated, reactions were stopped and de-proteinated. Products were resolved using an 1.0% agarose gel in TAE buffer.DOI: http://dx.doi.org/10.7554/eLife.10807.020
+**Figure 7.:** (A) Diagram of the Four-strand Recombination Reaction. Gapped circular substrate (GS) prepared as described in the procedures was mixed with double-strand φX174 DNA linearized with PstI (DLS) in the presence of RecA, SSB, RadA, ATP and an ATP regenerating system. Complex, largely duplex DNA intermediates are formed first. The final products are nicked circular double-DNA (NP) and Duplex Linear DNA with Single-strand Tails (DLP). Note: The tailed linear product species is not well-resolved from the duplex linear substrate (DLS). (B) Comparison of 3-strand and 4-strand Recombination Mediated by RecA in the Presence and Absence of RadA. Recombination reactions between either single-strand circular φX174 DNA (SCS) and double-strand φX174 DNA linearized with PstI (DLS)-3-strand reactions or double-strand circular φX174 with a 1.3 kB single-strand gap (GS) and double-strand φX174 DNA linearized with PstI (DLS)-4-strand reactions were performed as described. At the times indicated, reactions were stopped and de-proteinated. Products were resolved using an 1.0% agarose gel in TAE buffer.
 
 ## Discussion
 
 RadA is a ubiquitous RecA-paralog protein found in eubacteria and plants. Genetic studies have implicated RadA in homologous recombination, particularly in the late steps of recombination intermediate processing. This work presented here provides a biochemical rationale for this role, showing that purified RadA protein can mediate branch migration of recombination intermediates, in the context of a RecA filament and in a direction 5’ to 3’ with respect to the initiating single-strand.
 
-In theory, branch migration can promote homologous recombination in several ways (
+In theory, branch migration can promote homologous recombination in several ways (Figure 8A). If strand exchange is initiated at a site removed from a 3’ end, branch migration can serve to engage the 3’ strand into the heteroduplex region, providing a paired 3’ end that can be extended by DNA polymerases. RadA’s directionality is consistent with this role. Furthermore, RadA's inhibition by SSB may prevent the reverse reaction, the dissolution of this heteroduplex. Branch migration also can extend the heteroduplex region formed between donor and recipient DNA strands, which may aid its stability. Therefore, we might expect RadA to aid the process known as 'break-induced replication' (Anand et al., 2013), during which a resected linear DNA fragment invades a homologous duplex region, and establishes a replication fork. Indeed, RadA is strongly required for exchange events believed to be associated with breakage of the replication fork in vivo (Lovett, 2006).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/10807/elife-10807-fig8-v2.jpg)
 
-**Figure 8.:** (A) Heteroduplex extension. In reactions between linear resected DNA and an intact chromosome, initial strand pairing and invasion may occur at a distance from the 3’ end. Branch migration of the D-loop (in direction of the arrow) allows the heteroduplex region to extend fully to the 3’ end, allowing it to be engaged by DNA polymerases. Branch migration also allows the D-loop to be extended, lengthening and stabilizing the region of heteroduplex and forming a 4-strand Holliday juntion. (B) Synthesis-dependent strand annealing (SDSA). After resection of a broken chromosome and strand invasion into a sister molecule, branch migration is required to dissolve the intermediate, allowing broken strands to anneal to one another and the break to be healed. Reactions contained 1 mM ATP and 20.3 µM (nucleotide) φX174 DNA. The values shown are the average of two experiments, except for the circular single-strand value. It is the average of five experiments. Standard deviations are reported.DOI: http://dx.doi.org/10.7554/eLife.10807.021
+**Figure 8.:** (A) Heteroduplex extension. In reactions between linear resected DNA and an intact chromosome, initial strand pairing and invasion may occur at a distance from the 3’ end. Branch migration of the D-loop (in direction of the arrow) allows the heteroduplex region to extend fully to the 3’ end, allowing it to be engaged by DNA polymerases. Branch migration also allows the D-loop to be extended, lengthening and stabilizing the region of heteroduplex and forming a 4-strand Holliday juntion. (B) Synthesis-dependent strand annealing (SDSA). After resection of a broken chromosome and strand invasion into a sister molecule, branch migration is required to dissolve the intermediate, allowing broken strands to anneal to one another and the break to be healed. Reactions contained 1 mM ATP and 20.3 µM (nucleotide) φX174 DNA. The values shown are the average of two experiments, except for the circular single-strand value. It is the average of five experiments. Standard deviations are reported.
 
 Branch migration also can dissociate recombination intermediates and is integral to a recombination reaction known as 'synthesis-dependent strand-annealing' (SDSA), a process that can heal double-strand breaks (DSBs) without crossing-over (Figure 7B). This mechanism underlies a number of repair events associated with DSBs, including transposon-mediated breaks in Drosophila (Nassif et al., 1994), mating-type switching in yeast (Haber et al., 2004) and radiation damage-repair in the bacterium Deinococcus radiodurans (Zahradka et al., 2006). Initial homologous strand-exchange allows DNA synthesis across the region of the break; subsequent branch migration dissolves the intermediate to allow the broken strand to anneal to itself and to be joined. In Deinococcus radiodurans, radA is required for the SDSA reactions that aid extreme radiation resistance in this organism (Slade et al., 2009). In this case, RadA protein appears to promote the initial joints that prime DNA synthesis but could, in theory, also participate in the subsequent branch migration that resolves such joints to allow annealing. Alternatively, this dissolution might be catalyzed by RecG, whose polarity seems suited for this role (Whitby et al., 1993). Catalysis of branch migration can also allow bypass of barriers such as DNA lesions or regions of non-homology that are sufficient to block spontaneous thermal branch migration.
 
@@ -166,48 +203,99 @@ Our study does not address the ability of RadA to form a filament or other oligo
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 Biochemicals were purchased from USB or Sigma unless noted. Wild-type RecA was a kind gift from Shelley Lusetti (New Mexico State University) or purchased from Epicentre Biotechnologies (Madison, WI). D72R Mutant RecA was generously provided by Michael Cox (University of Wisconsin-Madison). Single-strand DNA-binding Protein (SSB) was from Promega (Madison, WI) and T4 polynucleotide kinase and restriction enzymes were from New England Biolabs (Ipswich, MA). Regenerating system enzymes were from Sigma-Aldrich (St. Louis, MO). φX-174 and M13 RF and virion DNAs were purchased from NEB, pBS SK- was from Agilent Technologies (Santa Clara, CA) and pPAL7 was from Bio-Rad Laboratories (Hercules, CA). Oligonucleotides were purchased from Sigma-Aldrich.
 
-## Cloning of radA and site-directed mutagenesis
+### Cloning of radA and site-directed mutagenesis
 
-The wild-type RadA gene was amplified by PCR and cloned into the high copy vector pBS SK-. Site-directed mutants were made from this construct by PCR as described (Cooper et al., 2015). Subsequently for protein purification, wild type and mutant RadA DNA was amplified from the pBS SK- constructs using the eXact primers (Table 2) and then cloned into the vector pPAL7. All constructs were confirmed by sequencing.10.7554/eLife.10807.022Table 2.Oligonucleotides used in this study.DOI: http://dx.doi.org/10.7554/eLife.10807.022Oligonucleotide nameSequenceradAeXactFGGAAGCTTTGACTTCTGTGGCAAAAGCTCCAAAACGradAeXactRTTTGCGGCCGCTTATAAGTCGTCGAACACGCpolyd(N)33TTAGCGGCCGCATAGTCAAGATGACAATGTTCTSubstrate E2CGGTCAACGTGGGCATACAACGTGGCACTG(T)30ATGTCCTAGCAAAGCGTATGTGATCACTGGJxn1CCGCTACCAGTGATCACCAATGGATTGCTAGGACATCTTTGCCCACCTGCAGGTTCACCCJxn2TGGGTGAACCTGCAGGTGGGCAAAGATGTCCTAGCAATCCATTGTCTATGACGTCAAGCTJxn3AGCTTGACGTCATAJxn4GATCACTGGTAGCGGJxn5TGCCGATATTGACAAGACGGCAAAGATGTCCTAGCAATCCATTGGTGATCACTGGTAGCGG
+The wild-type RadA gene was amplified by PCR and cloned into the high copy vector pBS SK-. Site-directed mutants were made from this construct by PCR as described (Cooper et al., 2015). Subsequently for protein purification, wild type and mutant RadA DNA was amplified from the pBS SK- constructs using the eXact primers (Table 2) and then cloned into the vector pPAL7. All constructs were confirmed by sequencing.
 
-## RadA protein purification
+**Table 2.**
+ Oligonucleotides used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligonucleotide name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>radAeXactF</td>
+      <td>GGAAGCTTTGACTTCTGTGGCAAAAGCTCCAAAACG</td>
+    </tr>
+    <tr>
+      <td>radAeXactR</td>
+      <td>TTTGCGGCCGCTTATAAGTCGTCGAACACGC</td>
+    </tr>
+    <tr>
+      <td>polyd(N)33</td>
+      <td>TTAGCGGCCGCATAGTCAAGATGACAATGTTCT</td>
+    </tr>
+    <tr>
+      <td>Substrate E2</td>
+      <td>CGGTCAACGTGGGCATACAACGTGGCACTG(T)30ATGTCCTAGCAAAGCGTATGTGATCACTGG</td>
+    </tr>
+    <tr>
+      <td>Jxn1</td>
+      <td>CCGCTACCAGTGATCACCAATGGATTGCTAGGACATCTTTGCCCACCTGCAGGTTCACCC</td>
+    </tr>
+    <tr>
+      <td>Jxn2</td>
+      <td>TGGGTGAACCTGCAGGTGGGCAAAGATGTCCTAGCAATCCATTGTCTATGACGTCAAGCT</td>
+    </tr>
+    <tr>
+      <td>Jxn3</td>
+      <td>AGCTTGACGTCATA</td>
+    </tr>
+    <tr>
+      <td>Jxn4</td>
+      <td>GATCACTGGTAGCGG</td>
+    </tr>
+    <tr>
+      <td>Jxn5</td>
+      <td>TGCCGATATTGACAAGACGGCAAAGATGTCCTAGCAATCCATTGGTGATCACTGGTAGCGG</td>
+    </tr>
+  </tbody>
+</table>
+
+### RadA protein purification
 
 Wild-type or mutant eXact-tag constructs were transformed into BL21 Codon-Plus or BL21 AI (Agilent Technologies) deleted for endA::Km. Typically, the transformation mix was grown for 1 hr at 37 °C in SOC media (2% tryptone, 0.5% yeast extract, 20 mM glucose, 10 mM NaCl, 10 mM MgCl2, 2.5 mM KCl), diluted into 20 ml SOC supplemented with ampicillin ('Ap', 100 μg/ml) and then grown standing overnight. This culture was used as the inoculum for a 1 l LB (2% tryptone, 1% yeast extract, 0.5% NaCl) culture with Ap. Cultures were grown until the A590 reached approximately 0.8 at which time IPTG (Gold Biotechnology, St. Louis, MO) was added to 1 mM and arabinose was added to 0.2% (for BL21 AI strains). Growth was continued for 3–4 hr at 30 °C. For production of RadAC28Y and RadAK108A mutant protein, growth conditions were altered so that a 500 ml culture was grown from the initial 20 ml inoculum in LB supplemented with 0.2% glucose and 100 μg/ml ampicillin until the culture reached an A590 of 1.0. Cells were then diluted into LB with 0.4% arabinose, 1 mM IPTG and fresh ampicillin. Growth was continued 2 hr at 30 °C. After growth of all strains, cells were collected by centrifugation, and the resulting pellet was frozen and stored at -20 °C. RadA was purified with slight modifications from the Biorad eXact protocol. Cleavage of the N-terminal eXact tag produces a RadA protein with the addition of a 2 N-terminal amino acids, threonine serine, (necessary to facilitate efficient cleavage). Typically, pellets from 200 ml of wild type RadA culture were resuspended in 20 ml eXact buffer (100 mM sodium phosphate, pH 7.2, 10% glycerol, 10 mM beta-mercaptoethanol, 300 mM sodium acetate. (The final pH was adjusted to 7.2 if necessary). Cells were lysed by adding lysozyme (in eXact buffer) to 200 μg/ml and incubating for 45 min on ice. Lysis was completed by incubation at 37 °C for 2 min followed by homogenization using a Dounce Homogenizer on ice (5 passes with B, followed by 5 passes with A). The crude lysate was clarified by centrifugation at 17000 x g for 30 min at 4 °C. One third of the cleared lysate was applied to a 1 ml eXact pre-packed column equilibrated in eXact buffer at room temperature. The column was then washed with 15–20 ml eXact buffer. To cleave the eXact Tag from RadA, 2 ml cleavage buffer (eXact buffer + 100 mM NaF) was applied to the column, and the column was capped and incubated at room temperature for 45–60 min. RadA was then eluted from the column with eXact buffer + 100 mM NaF. Fractions containing RadA were pooled, diluted in small batches in Q buffer (20 mM Tris-HCl, pH 8.0, 0.5 mM EDTA, 15% (v/v) ethylene glycol, 10 mM beta-mercaptoethanol) without salt to give a conductivity of approximately 125 mS-1 and applied to a 1 ml Q HP column (GE Healthcare) equilibrated with125 mM NaCl Q buffer. After washing with 15 ml 125 mM NaCl Q Buffer, RadA was eluted with a linear gradient from 125 mM NaCl in Q buffer to 750 mM NaCl in Q buffer with 20% glycerol replacing the ethylene glycol. RadA eluted at a conductivity approximately 275 mS-1. To retain activity, fractions containing RadA were immediately flash-frozen in small aliquots and stored at -80 °C. Thawed aliquots were used within 24 hr. Purification from 200 ml of cells yielded approximately 0.75–1 mg of highly purified RadA Protein (Figure 1—figure supplement 1). For some experiments, purified RadA was concentrated using Q HP Sepharose beads (GE Healthcare, Chicago, IL). RadA protein concentration was spectrophotometrically determined using an extinction coefficient of 22,460 M-1 cm-1 (Gasteiger et al., 2005) or by the Bradford method (Bradford, 1976), which gave equivalent results.
 
-## ATPase assays
+### ATPase assays
 
 ATP hydrolysis activity of RadA mutants was tested either by measuring release of inorganic 32P from ATP (PerkinElmer, Waltham, MA) using thin layer chromatography (TLC) with polyethylenimine plates (PEI, Macherey-Nagel, Düren, Germany) as the solid phase and 0.5 M LiCl/ 4.3% formic acid as the mobile phase (Kornberg et al., 1978). Reactions were incubated at 37 °C for the times indicated and contained 10 mM Bis-Tris-Propane-HCl, pH 7.0, 10 mM MgCl2, 2 mM DTT, 1mM ATP. ATP hydrolysis by wild-type RadA protein was measured in reactions that included an ATP regenerating system and were coupled with NADH oxidation. Oxidation of NADH was monitored spectroscopically at 380 nm (Extinction coefficient = 12100 M-1cm-1) using a Synergy H1 Microplate Reader and Gen5 Data Collection and Analysis Software (Biotek, Winooski, VT). Reactions included 1 µg of φX174 single-strand circular DNA, 10 mM Bis-Tris-Propane-HCl, pH 7.0, 10 mM MgCl2, 2 mM DTT, 1mM ATP, 2 mM DTT, 3.5 mM phosphoenol pyruvate, 10 u/ml pyruvate kinase, 2 mM NADH, and 10 u/ml lactate dehydrogenase. For all reactions, ATP concentrations were determined at 260 nm using an extinction coefficient of 15400 M-1cm-1
 
-## DNA-binding experiments
+### DNA-binding experiments
 
 Oligonucleotides (Table 2) were 5’ end-labeled with 32P-ATP using T4 polynucleotide kinase and manufacturer’s conditions (New England Biolabs). Excess 32P-ATP was removed from the reaction using Sephadex G-50 columns (Roche, Basel, Switzerland). Double-strand substrates were made by heating two complementary oligonucleotides to 95 °C and then cooling to room temperature slowly. Standard DNA-binding reactions contained RadA as indicated, 100 fmol DNA, 50 mM Tris-HCl buffer, pH 7.5, 10 mM MgCl2, 0.1 mM EDTA, 75 mM NaCl, 5 mM dithiothreitol, 100 µg/ml bovine serum albumin and 1 mM nucleotide. Reactions were incubated at 37 °C for 30 min and then resolved on a 6% Tris-borate EDTA polyacrylamide gel (pre-run for 1 hr) at 100 V for 45 min at room temperature. Gels were then dried and binding was analyzed using ImageJ-64 software with scanned autoradiographs (HiBlot CL film-Denville Scientific, Holliston, MA).
 
-## Model-branched substrate formation
+### Model-branched substrate formation
 
 To form branched substrates, equimolar concentrations of oligonucleotides (Table 2) were mixed and heated to 100° for 5 min followed by slow cooling to room temperature in 10 mM Tris Acetate, pH 7.4, 10 mM Mg Acetate, and 50 mM K Acetate. The extent of branched molecules formation was assessed either by electrophoresis using 3% agarose gels in TAE followed by staining with ethidium bromide or by using oligo 2 radio-labeled with polynucleotide kinase and 32P-ATP to form branched molecules (in parallel reactions) followed by electrophoresis on 6% acrylamide gels in TBE and autoradiography. Contaminating structures were present at less than 5% of the total, except for the 3-strand fork when contaminating structures were between 5 and 10%. Annealed substrates were used without further purification. Fork 1 was made by annealing Jxn1 and Jxn 2 oligonucleotides. Fork 2 was made from Jxn1, Jxn 2, and Jxn3 oligonucleotides. Fork 3 was made by annealing Jxn1, Jxn2, and Jxn4 oligonucleotides. Fork 4 was the annealed product of Jxn1, Jxn2, Jxn 3, and Jxn 4 oligonucleotides. The 3-stranded fork was constructed from Jxn1, Jxn2, and Jxn 5. oligonucleotides. Figure 2—figure supplement 1 shows a diagram of each branched substrate structure.
 
-## Strand exchange reactions
+### Strand exchange reactions
 
-## Three-strand reactions
+#### Three-strand reactions
 
 Recombination between single-strand circular φX174 virion DNA and double-strand RF φX174 linearized with PstI (New England Biolabs) were performed as followed with exceptions noted in the figure legends. Reactions contained 20 mM Tris-acetate pH 7.4, 12.5 mM phosphocreatine, 10 u/ml creatine kinase, 3 mM ammonium glutamate, 1 mM dithiothreitol, 2% glycerol, 11 mM magnesium acetate. Under standard conditions, 6.7 μM RecA and RadA as indicated (most typically 400 nM) was incubated with 20.1 μM (in nucleotide) viral φX174 DNA for 8 min at 37 °C. Then, 20.1 μM linear double-strand φX174 DNA was added and incubation was continued for 5 min. The reactions were initiated by the addition of ATP to 3 mM and SSB to 2.1 μM. After incubation for the times indicated, reactions were quenched by addition of EDTA to 15 mM and SDS to 1.25%. Recombination products were separated on an 0.8% Tris-acetate EDTA (TAE) agarose gel run at 5.5 V/cm and then visualized by staining with ethidium bromide.
 
-## Four-strand reactions
+#### Four-strand reactions
 
 Reactions between a circular duplex φX174 DNA with a 1346 base single strand gap and duplex linear DNA were performed as for 3-strand reactions except products were analyzed on a 1% agarose (Biorad) gel in TAE. The PstI linear fragment shares homology with 836 bases on one end and 516 bases on the other end with the single-strand region of the gapped molecule. Product formation was quantified using ImageJ-64 software.
 
-## Gapped DNA molecule formation
+### Gapped DNA molecule formation
 
 φX174 double strand circular DNA was cleaved with BsaAI and the 4.1 kb fragment was purified from 0.7% low-melt agarose (USB, Cleveland, OH) using Gene Jet gel purification columns (Thermo-Fisher Scientific, Waltham, MA). Gapped molecules were made using a large-scale recombination reaction using conditions above (without RadA) with the BsaAI fragment replacing the full length linear fragment and incubation extended to 1.5–2.0 hr. The reaction mix was then extracted with phenol two times. After back-extracting the organic phase with 1 volume of 10 mM Tris-EDTA, all aqueous phases were combined and extracted with chloroform:isoamyl alcohol (24:1). Sodium acetate, pH 5.2 was added to 0.3 M and DNA was precipitated using 2.5 volumes of ethanol. DNA pellets were then washed with 70% ethanol and resuspended in 10 mM Tris-EDTA. Finally, gapped DNA was gel-purified as described above.
 
-## Recombination intermediate isolation and branch migration assays
+### Recombination intermediate isolation and branch migration assays
 
 Large-scale standard recombination reactions were stopped with after 12 min by addition of EDTA to 35 mM, SDS to 0.65%, and Proteinase K to 800 µg/ml and applied to a 3.5 ml Sepharose 4B-CL equilibrated in 20 mM Tris-acetate pH 7.4, 3 mM ammonium glutamate, 1 mM DTT, 2% glycerol, and 11 mM magnesium acetate. Fractions (150–200 µl) containing DNA were identified by staining with Picogreen.
 
-## Branch migration assay
+### Branch migration assay
 
 DNA fractions containing recombination intermediates were incubated at 37 °C in 20 mM Tris-acetate pH 7.4, 3 mM ammonium glutamate, 1 mM DTT, 2% glycerol, 11 mM magnesium acetate, and approximately 30 mM NaCl from the RadA protein with RadA (460 nM), 3 mM ATP, and, when included, SSB (2.1 µM). Reactions were stopped and analyzed as outlined above.

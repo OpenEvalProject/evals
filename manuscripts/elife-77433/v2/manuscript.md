@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0464eyp60 Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School Worcester United States
-2. https://ror.org/010cncq09 Novartis Institutes for Biomedical Research Emeryville United States
+1. Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+2. Novartis Institutes for Biomedical Research Emeryville United States ([ROR:010cncq09](https://ror.org/010cncq09))
 
 † Corresponding author
 
 ## Abstract
 
-With the continual evolution of new strains of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) that are more virulent, transmissible, and able to evade current vaccines, there is an urgent need for effective anti-viral drugs. The SARS-CoV-2 main protease (M pro ) is a leading target for drug design due to its conserved and indispensable role in the viral life cycle. Drugs targeting M pro appear promising but will elicit selection pressure for resistance. To understand resistance potential in M pro , we performed a comprehensive mutational scan of the protease that analyzed the function of all possible single amino acid changes. We developed three separate high throughput assays of M pro function in yeast, based on either the ability of M pro variants to cleave at a defined cut-site or on the toxicity of their expression to yeast. We used deep sequencing to quantify the functional effects of each variant in each screen. The protein fitness landscapes from all three screens were strongly correlated, indicating that they captured the biophysical properties critical to M pro function. The fitness landscapes revealed a non-active site location on the surface that is extremely sensitive to mutation, making it a favorable location to target with inhibitors. In addition, we found a network of critical amino acids that physically bridge the two active sites of the M pro dimer. The clinical variants of M pro were predominantly functional in our screens, indicating that M pro is under strong selection pressure in the human population. Our results provide predictions of mutations that will be readily accessible to M pro evolution and that are likely to contribute to drug resistance. This complete mutational guide of M pro can be used in the design of inhibitors with reduced potential of evolving viral resistance.
+With the continual evolution of new strains of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) that are more virulent, transmissible, and able to evade current vaccines, there is an urgent need for effective anti-viral drugs. The SARS-CoV-2 main protease (Mpro) is a leading target for drug design due to its conserved and indispensable role in the viral life cycle. Drugs targeting Mpro appear promising but will elicit selection pressure for resistance. To understand resistance potential in Mpro, we performed a comprehensive mutational scan of the protease that analyzed the function of all possible single amino acid changes. We developed three separate high throughput assays of Mpro function in yeast, based on either the ability of Mpro variants to cleave at a defined cut-site or on the toxicity of their expression to yeast. We used deep sequencing to quantify the functional effects of each variant in each screen. The protein fitness landscapes from all three screens were strongly correlated, indicating that they captured the biophysical properties critical to Mpro function. The fitness landscapes revealed a non-active site location on the surface that is extremely sensitive to mutation, making it a favorable location to target with inhibitors. In addition, we found a network of critical amino acids that physically bridge the two active sites of the Mpro dimer. The clinical variants of Mpro were predominantly functional in our screens, indicating that Mpro is under strong selection pressure in the human population. Our results provide predictions of mutations that will be readily accessible to Mpro evolution and that are likely to contribute to drug resistance. This complete mutational guide of Mpro can be used in the design of inhibitors with reduced potential of evolving viral resistance.
 
 ## Introduction
 
@@ -37,21 +37,29 @@ We performed comprehensive mutational analysis of SARS-CoV-2 Mpro to provide fun
 
 In this study, we used systematic mutational scanning to analyze the functional effects of every individual amino acid change in Mpro. We developed three orthogonal screens in yeast to separate Mpro variants based on function. The first screen measures Mpro activity via loss of fluorescence resonance energy transfer (FRET) from a genetically-encoded FRET pair linked by the Nsp4/5 cleavage sequence (Figure 1a). The second screen similarly measures cleavage of the Nsp4/5 cut site; however, in this screen Mpro cleavage leads to inactivation of a transcription factor (TF) driving GFP expression (Figure 1b). The final screen leverages the toxicity of wild-type (WT) Mpro to yeast that is likely due to cleavage of essential yeast proteins, and leads to depletion of active variants during growth (Figure 1c). Following selection in the three screens, populations were subjected to deep sequencing in order to quantify function based on the enrichment or depletion of each variant.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fluorescence resonance energy transfer (FRET)-based reporter screen. The Mpro variants were sorted based on their ability to cleave at the Mpro cut-site, separating the YFP-CFP FRET pair. Cells were separated by fluorescence-activated single cell sorting (FACS) into cleaved (low FRET) and uncleaved (high FRET) populations. (B) Split transcription factor screen. Mpro variants were sorted based on their ability to cleave at the Mpro cut-site, separating the DNA binding domain (DBD) and activation domain (AD) of the Gal4 transcription factor. The transcription factor drives GFP expression from a galactose promoter. Cells were separated by FACS into cleaved (low GFP expression) and uncleaved (high GFP expression) populations. (C) Growth screen. Yeast cells expressing functional Mpro variants that cleave essential yeast proteins grow slowly and are depleted in bulk culture, while yeast cells expressing non-functional Mpro variants are enriched. (D) Barcoding strategy to measure frequency of all individual mutations of Mpro in a single experiment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Yeast cells transformed with a plasmid expressing C145A Ub-Mpro-his6 under the LexA promoter were grown to exponential phase followed by the addition of 2 µM β-estradiol to induce expression for 8 hr. The Mpro levels were monitored by Western blot with an anti-his6 antibody and the correct size was measured against purified Mpro-his6 protein (control). (B) The plasmid expressing wild-type (WT) Ub-Mpro under control of the LexA promoter was transformed into cells expressing the split transcription factor. Cells were grown to exponential phase followed by addition of the indicated concentration of β-estradiol. Cell density was monitored based on absorbance at 600 nm at the times indicated (left panel). At the same time points, cells were washed, diluted to equal cell number, and GFP fluorescence was monitored at 525 nm (right panel). (C) Fluorescence-activated single cell sorting (FACS) analysis of cells expressing the CFP-MproCS-YFP FRET pair and either WT Ub-Mpro (left) or C145A Ub-Mpro (right). Cell samples were collected before and after induction of Mpro expression with 125 nM β-estradiol for 1.5 hr. (D) The FACS analysis of cells expressing the split transcription factor separated by the Mpro cut-site and either WT Ub-Mpro (left) or C145A Ub-Mpro (right). Cell samples were collected before and after induction of Mpro expression with 125 nM β-estradiol for 6 hr. (E) Distribution of number of barcodes associated with all Mpro variants. (F) Correlation between total counts of each variant in the Mpro plasmid library (plasmid count) and the total counts of that variant before Mpro induction (pre-induction count). (G) Mpro variants present at low frequency in the library showed a wider variance between plasmid library counts and counts in the pre-induction sample, consistent with lower sampling.
+
 We found that the functional scores between screens were correlated, indicating that they all captured key biophysical properties governing function. Our functional scores also correlated well with previously measured catalytic rates of purified individual mutants. Additionally, substitutions in Mpro from coronaviruses distantly related to SARS-CoV-2 consistently exhibited high function in our screens indicating that similar biophysical properties underlie the function of genetically diverse Mpro sequences. Our study revealed mutation-sensitive sites distal to the active site and dimerization interface. These sites reveal important communication networks that may be targeted by inhibitors. Our results provide a comprehensive dataset which can be used to design molecules with decreased vulnerability to resistance, by building drug-protein interactions at mutation-sensitive sites while avoiding mutation-tolerant residues.
 
 ## Results
 
-## Expression of mature WT Mpro in yeast
+### Expression of mature WT Mpro in yeast
 
 The Mpro of SARS-CoV-2 is produced by self-cleavage of polyproteins translated from the viral RNA genome, and its enzymatic activity is inhibited by the presence of additional N- and C-terminal amino acids (Xue et al., 2007). To express Mpro with its authentic N-terminal serine residue, we generated a ubiquitin (Ub)-Mpro fusion protein. In yeast and other eukaryotes, Ub fusion proteins are cleaved by Ub-specific proteases directly C-terminal to the Ub, revealing the N-terminal residue of the fused protein, regardless of sequence (Bachmair et al., 1986). Expression of functionally active Mpro is toxic to yeast cells (Alalam et al., 2021). To control the expression level of Mpro while limiting its toxic side effects, we placed Ub-Mpro under control of the inducible and engineered LexA-ER-AD TF (Ottoz et al., 2014). LexA-ER-AD is a fusion of the bacterial LexA DNA binding protein, the human estrogen receptor (ER) and the B112 activation domain (AD), and its activity is tightly and precisely regulated by the hormone β-estradiol. We inserted 4 lexA boxes recognized by the LexA DNA binding domain (DBD) upstream of Ub-Mpro to control its expression. The Western blot in Figure 1—figure supplement 1a illustrates both induction of Mpro by β-estradiol and successful removal of the Ub moiety, indicating that the protease is being expressed in its mature and functional form. We performed a titration curve with β-estradiol to determine the lowest concentration at which Mpro can be expressed without inhibiting yeast cell growth while still enabling measurement of substrate cleavage (Figure 1—figure supplement 1b).
 
-## Engineering of functional screens to monitor intracellular Mpro activity
+### Engineering of functional screens to monitor intracellular Mpro activity
 
 We developed three distinct yeast screens to characterize the effects of Mpro variants on function (Figure 1). The first screen utilized a FRET-based reporter of two fluorescent proteins, YPet and CyPet, fused together with the Nsp4/5 Mpro cleavage site engineered in the middle (YPet-MproCS-CyPet) (Figure 1a). The YPet-CyPet pair are derivatives of the YFP-CFP proteins that have been fluorescently optimized by directed evolution for intracellular FRET (Nguyen and Daugherty, 2005) and provide a 20-fold signal change upon cleavage. The linker between the two fluorescent proteins contains the Mpro cleavage site, TSAVLQ|SGFRK, the cut-site at the N-terminus of the Mpro. This is the most commonly used cut-site for in vitro cleavage assays, which allowed us to directly compare our mutational results to those that were previously published. One advantage of this assay is that the fluorescent readout directly reports on cleavage of a specific cut-site. The plasmid containing Ub-Mpro under the control of β-estradiol was transformed into yeast cells expressing a chromosomally integrated copy of YPet-MproCS-CyPet. Expression of WT Mpro led to a β-estradiol-dependent decrease in FRET signal as measured by fluorescence-activated single cell sorting (FACS). Mutation of the essential catalytic cysteine of Mpro to alanine (C145A) abolished this change in FRET signal indicating that the change in signal was dependent on the presence of functional Mpro (Figure 1—figure supplement 1c).
 
 The second screen utilized the DBD and AD of the Gal4 TF, separated by the Nsp4/5 cut site (Johnston et al., 1986; Murray et al., 1993). We used this engineered TF to drive GFP expression, enabling cells with varying levels of Mpro protease activity to be separated by FACS (Figure 1b). One benefit of this system is its signal amplification, as one cut TF can cause a reduction of more than one GFP molecule. However, due to this amplification, the fluorescent signal is indirectly related to cutting efficiency. Expression of Ub-Mpro in cells engineered with the split TF exhibited a β-estradiol-dependent decrease in GFP reporter activity that required the presence of catalytically functional Mpro protein (Figure 1—figure supplement 1d). The final screen leverages the toxicity of Mpro expression in yeast, which likely results from cleavage of essential yeast proteins by the protease (Alalam et al., 2021; Figure 1c). Increasing concentrations of β-estradiol correlates with a decrease in yeast growth rate that is dependent on the presence of catalytically functional Mpro (Figure 1—figure supplement 1b). At a high expression level induced with 2 µM of β-estradiol, yeast growth rate becomes tightly coupled to Mpro function and can be used as a readout of the function of the expressed Mpro variant. While the endogenous yeast substrates are unknown, this assay is likely reporting on Mpro cleavage of numerous cellular targets. Sampling of more than one cleavage site may better represent the physiological role of Mpro, which has 11 viral and numerous host cleavage sites.
 
-## Comprehensive deep mutational scanning of Mpro
+### Comprehensive deep mutational scanning of Mpro
 
 We integrated our three screens with a systematic mutational scanning approach to determine the impact of each single amino acid change in Mpro on its function (Figure 1d). A comprehensive Mpro single site variant library was purchased commercially (Twist Biosciences). Each position of Mpro was mutated to all other 19 amino acids plus a stop codon, using the preferred yeast codon for each substitution. We transferred the library to a plasmid under the LexA promoter. To efficiently track each variant of the library using deep sequencing, we employed a barcoding strategy that allowed us to track mutations across the gene using a short sequence readout. We engineered the barcoded library so that each mutant was represented by 20–40 unique barcodes and used PacBio sequencing to associate barcodes with Mpro mutations (Figure 1d). About 96% of library variants were linked to 10 or greater barcodes (Figure 1—figure supplement 1e). As a control, the library was doped with a small amount of WT Mpro linked to approximately 150 barcodes.
 
@@ -59,25 +67,57 @@ We transformed the plasmid library of Mpro mutations into yeast strains harborin
 
 To analyze the reproducibility of each screen, we performed biological replicates. For each biological replicate we separately transformed the library into yeast cells, and independently performed competition experiments and sequencing. Functional scores between replicates were strongly correlated (R2>0.98 for all three screens, Figure 2a) and we could clearly distinguish between functional scores for WT Mpro and those containing stop codons (Figure 2b). There was a narrow distribution of functional scores for stop codons in all the three screens across the Mpro sequence except at the last seven positions (amino acids 300–306) (Figure 2c), supporting previous experiments showing that these residues are dispensable for Mpro activity and the importance of residue Q299 for Mpro function (Lin et al., 2008). We categorized functional scores as WT-like, intermediate, or null-like based on the distribution of WT barcodes and stop codons in each screen (Figure 2d and Figure 2—figure supplement 1). Heatmap representations of the functional scores determined in replicate 1 of all three screens are shown in Figure 3 (FRET screen), Figure 3—figure supplement 1 (TF screen), and Figure 3—figure supplement 2 (growth screen).
 
-## Comparison between three screens
+![Figure 2.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig2-v2.jpg)
+
+**Figure 2.:** (A) Correlation between biological replicates of functional scores of all Mpro variants for each screen. Red line indicates best fit. (B) Distribution of functional scores for all variants (gray), stop codons (red), and wild-type (WT) barcodes (blue) in each screen. (C) The functional scores for all variants (gray) and stop codons (red) at each position of Mpro in the fluorescence resonance energy transfer (FRET) screen. (D) Distribution of all functional scores (gray) in each screen. Functional scores are categorized as WT-like, intermediate, or null based on the distribution of WT barcodes (blue) and stop codons (red) in each screen. See Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig2-figsupp1-v2.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig3-v2.jpg)
+
+**Figure 3.:** Arrows represent positions that form β-sheets, coils represent α-helices, and red triangles indicate the catalytic dyad residues H41 and C145.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Arrows represent positions that form beta sheets, coils represent α-helices, and red triangles indicate the catalytic dyad residues H41 and C145.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Arrows represent positions that form beta sheets, coils represent α-helices, and red triangles indicate the catalytic dyad residues H41 and C145.
+
+### Comparison between three screens
 
 Comparing the average functional score at each position (a measure of mutational sensitivity) between the three screens shows a strong correlation (Figure 4a–c). The principal differences lie in the sensitivity of the screens to mutation, with the average defective mutation in the growth screen being more exaggerated than that in the fluorescent-based screens (Figure 4c). The scores in the growth screen are likely integrating cutting efficiency over a diverse set of cleavages sites which may contribute to this screen’s increased sensitivity to mutation. Despite these differences, there are striking correlations in the mutational patterns of Mpro across all three screens as can be visualized in the heatmap of average scores per position and when mapped to Mpro’s structure (Figure 4a and b). These similarities indicate that the three screens are reporting the same fundamental biophysical and biochemical constraints of the protein.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig4-v2.jpg)
 
-**Figure 4.:** pro).(A) Heatmap representation of the average functional score at each position (excluding stops) in replicate 1 of each screen (see Figure 4—source data 1). (B) The average functional score at each position mapped to Mpro structure for each screen. The Nsp4/5 substrate peptide is shown in green (PDB 7T70). (C) The average functional score at each position compared between the three screens. The diagonal is indicated with a blue dashed line. (D) Comparison between relative catalytic rates measured independently in various studies and functional scores measured in each screen (see Figure 4—source data 2). Each graph is fit with a non-linear and linear regression with the best of the two fits represented with a black solid line and the worst fit represented with a red dashed line. The non-linear regression is fit to the equation Y = Ym − (Y0 – Ym) e−kx.Figure 4—source data 1.pro) in replicate 1 of each screen.Figure 4—source data 2.
+**Figure 4.:** (A) Heatmap representation of the average functional score at each position (excluding stops) in replicate 1 of each screen (see Figure 4—source data 1). (B) The average functional score at each position mapped to Mpro structure for each screen. The Nsp4/5 substrate peptide is shown in green (PDB 7T70). (C) The average functional score at each position compared between the three screens. The diagonal is indicated with a blue dashed line. (D) Comparison between relative catalytic rates measured independently in various studies and functional scores measured in each screen (see Figure 4—source data 2). Each graph is fit with a non-linear and linear regression with the best of the two fits represented with a black solid line and the worst fit represented with a red dashed line. The non-linear regression is fit to the equation Y = Ym − (Y0 – Ym) e−kx.
 
 Several lines of evidence indicate that the functional scores are biochemically and biologically relevant. First, we compared the scores to previously published studies of point mutations (Figure 4d and Figure 4—source data 2). For example, mutating the residues of the catalytic dyad, C145 and H41, inactivates the protease both in our screen and in in vitro biochemical assays as expected (Hegyi et al., 2002). Additionally, in vitro assays have shown that residues at the dimer interface including S10, G11, and E14 are essential for SARS-CoV-1 Mpro dimerization and function (Chen et al., 2008). Mutations at these residues are also deleterious to Mpro function in our screen. Because of the high sequence and functional similarities between SARS-CoV-1 and CoV-2 Mpro, we expect that the majority of the mutational analyses performed previously on SARS-CoV-1 Mpro will be valid for SARS-CoV-2 Mpro. We examined how the dynamic range of our screens relate to catalytic measurements. The growth screen measurements exhibited a linear pattern with relative catalytic rates previously reported for individual variants (Figure 4d). In contrast, the TF screen results showed a non-linear pattern, reminiscent of a binding equation. To assess these patterns in a systematic manner, we fit the graphs to both a linear equation and a non-linear binding equation with initial parameters of 1:1 for the linear fit, and an inflection point of 0.5 for the non-linear equation. Using this approach, we observed an apparent non-linear relationship between the functional scores measured in both the FRET and TF screens, and the relative catalytic activity of mutants measured independently for Mpro in vitro in various studies (R2=0.81 for non-linear fit to TF screen and R2=0.93 for non-linear fit to FRET screen) (Figure 4d). Compared to the fluorescent screens, there is a stronger linear relationship (R2=0.86) between the scores measured in our growth screen and the catalytic efficiencies of the individual mutants. These analyses indicate that the growth screen more fully captures the dynamic range of mutations with small functional defects that tend to appear WT-like in the FRET and TF screens. For the remainder of this paper, we will report the functional scores collected for the FRET and growth screens in the main figures, and the TF screen in the supplementary figures. The advantage of the functional scores for each mutant from the FRET screen is that they report direct cleavage of a defined substrate, with the drawback being that they exhibit less sensitivity to mutation. The advantage of the growth screen is that the functional scores show a more linear relationship with catalytic rate, while the drawback is that the screen reports cleavage of undefined substrates. Because of the correlation between all three screens, similar overall biophysical conclusions are supported by each screen.
 
-## Functional characterization of natural Mpro variants
+### Functional characterization of natural Mpro variants
 
 To further assess the scores from our screens, we examined the functional scores of the Mpro variants observed in clinical samples. Because Mpro is essential for viral replication, deleterious mutations should be purged from the circulating population. The CoV-Glue-Viz database archives all mutations observed in the GISAID human SARS-CoV-2 sequences sampled from the ongoing COVID-19 pandemic (Singer et al., 2020). We compared the frequency at which the clinical variants of the Mpro gene (ORF1ab/nsp5A-B) have been observed to their functional scores. The vast majority of the clinical isolates that have been sequenced to date have either 0 or 1 Mpro mutations with fewer than 0.4% having 2 or more mutations and thus we did not account for epistasis in our analysis. We found that the most abundant clinical variants are highly functional in our assays (Figure 5a [FRET and growth screens] and Figure 5—figure supplement 1a [TF screen]); however, lower frequency variants in clinical samples were found to have a wide range of Mpro function. Surprisingly, Mpro sequences among the clinical samples include premature stop codons that have been observed up to 100 times (out of over 5 million total isolates to date) (Figure 5a [FRET and growth screens] and Figure 5—figure supplement 1a [TF screen]). Because Mpro function is required for viral fitness, we assume that the frequency of stop codons observed in the data is an indication of sequencing error in the clinical samples. Accounting for this sequencing error, we examined the functional score of the 290 non-synonymous mutations in the Mpro gene that have been observed more than 100 times. The vast majority of these clinical variants exhibit WT-like function with only nine having a score below that of the WT distribution (see Figure 5a–c). This observed enrichment for variants with WT-like function in the circulating SARS-CoV-2 virus indicates that Mpro is undergoing strong purifying selection in the human population.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison of functional scores in the FRET screen (left panel) and growth screen (right panel) to the number of observations among clinical samples. All missense mutations excluding stops are indicated with black circles and stop codons are indicated with red x’s. (See Figure 5—source data 1) (B) The distribution of functional scores of all variants in the FRET and growth screens compared to the observed clinically-relevant Mpro variants (human SARS-CoV-2 variants, blue), 12 amino acid differences between SARS-CoV-2 and SARS-CoV-1 (green), and the different amino acids in a broad sample of Mpro SARS-CoV-2 homologs (natural variants, pink). Distributions are significantly different as measured by a two-sample Kolmogorov-Smirnov (KS) (All FRET vs. human SARS-CoV-2 variants: N = 6044, 289, p<0.0001, D = 0.3258; All FRET vs. SARS-CoV-1 variants: N=6044, 12, p=0.0398, D=0.4223; All FRET vs. natural variants: N = 6044, 1205, p<0.0001, D = 0.2984; All Growth vs. human SARS-CoV-2 variants: N = 6044, 289, p<0.0001, D = 0.3938; All growth vs. SARS-CoV-1 variants: N=6044, 12, p=0.0024, D=0.5533; All growth vs. natural variants: N=6044,1205, p<0.0001, D = 0.3462) (C) Histogram of functional scores of all variants (grey) compared to that of human SARS-CoV-2 variants (blue), SARS-CoV-1 variants (green), and natural variants (pink).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison of functional scores in the transcription factor (TF) screen to the number of observations among clinical samples. All missense mutations excluding stops are indicated with black circles and stop codons are indicated with red x’s. (See Figure 5—source data 1) (B) The distribution of functional scores of all variants in the TF screen compared to the observed clinically relevant Mpro variants (human severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) variants, blue), 12 amino acid differences between SARS-CoV-2 and SARS-CoV-1 (green), and the different amino acids in a broad sample of Mpro SARS-CoV-2 homologs (natural variants, pink). Distributions are significantly different as measured by a two-sample Kolmogorov-Smirnov (KS) (all TF vs human SARS-CoV-2 variants: N=6038, 289, p<0.0001, D=0.2845; all TF vs SARS-CoV-1 variants: N=6038, 12, p=0.0196, D=0.4589; all TF vs natural variants: N=6038, 1205, p<0.0001, D=0.2608).
+
 Additionally, we examined the experimental function of Mpro mutations compared with the diversity of Mpro in viruses related to SARS-CoV-2. There is a 96% sequence identity between the SARS-CoV-2 and the SARS-CoV-1 Mpro proteases, with only 12 amino acid differences. In our study, all of the amino acid differences in SARS-CoV-1 Mpro are WT-like in SARS-CoV-2, underscoring the credibility of the functional scores (Figure 5b [FRET and growth screens] and Figure 5—figure supplement 1b [TF screen]). We went on to analyze the diversity in 852 sequences across a set of Mpro homologs with an average homology of 47% from genetically diverse coronaviruses. We identified 1207 amino acid changes located at 263 positions of Mpro and examined the functional score of these variants in our data. Here again, we saw enrichment toward functional Mpro variants with only 6% (77 out of 1207) natural variants having functional scores in the FRET screen below the WT range (Figure 5b and Figure 5c [FRET and growth screens] and Figure 5—figure supplement 1b [TF screen]). Further analysis of these deleterious variants should provide insight into the role epistasis played in the historical evolution of Mpro, and these insights may have utility in the generation of future pan-coronavirus inhibitors.
 
-## Structural distribution of mutationally sensitive Mpro positions
+### Structural distribution of mutationally sensitive Mpro positions
 
 Invariant sites that are essential to Mpro function are promising targets for designing inhibitors. About 24 positions of Mpro exhibited low mutation tolerance, defined as 17 or more substitutions with null-like function: P9, S10, G11, E14, R40, H41, T111, S113, R131, C145, G146, S147, G149, F150, H163, G174, G179, G183, D187, D197, N203, D289, E290, and D295 (Figure 6a). Only four of these mutation-sensitive residues contact the substrate: H41 and C145 (the catalytic residues), as well as H163 and D187. H163 interacts with the invariable P1 Gln of the substrate and D187 forms a hydrogen bond with a catalytic water and a salt bridge with R40. A large body of work has previously shown that dimerization is indispensable to Mpro function (Chou et al., 2004; Hsu et al., 2005a, Chen et al., 2008; Cheng et al., 2010). Our study also supports the critical functional role of dimerization as we see prevalent mutation-sensitivity in residues at the dimer interface, including P9, S10, G11, E14, and E290, each of which cannot be altered without complete loss of function.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mpro positions that are intolerant of mutations with 17 or more substitutions having null-like function are represented by red spheres on chain A (shown in gray) and pink spheres on chain B (shown in white). The Nsp4/5 substrate peptide is shown in green (PDB 7T70). (B) Representation of a cluster of the mutation-intolerant positions (red spheres) at a site distal to the active site. (C) A cluster of mutation-intolerant residues (red spheres) appear to be part of a communication network between the active site and the dimerization interface. (D) Comparison of the average functional score of each position to conservation observed in a broad sample of severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) Mpro homologs. The 24 mutation-intolerant positions shown as red spheres in part A are highlighted in red. Positions exhibiting the strongest evolutionary conservation exhibit a broad range of experimental sensitivity to mutation while the most evolutionary variable positions are experimentally tolerant to mutations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig6-figsupp1-v2.jpg)
 
 Outside of these well-studied critical Mpro sites, there are additional clusters of mutation-intolerant residues. The R131, D197, N203, D289, and E290 lie at the interface of Domain II and Domain III sandwiched between dimers and make up part of a surface identified by structural modeling as a possible distal drug binding pocket (Bhat et al., 2021; Weng et al., 2021; Figure 6b). Within this cluster, a dynamic salt bridge is formed between R131 located on the loop of Domain II connecting β10–11 of the catalytic pocket, and D289 in the α-helical Domain III that has been reported to contribute to the flexibility and structural plasticity of Mpro (Bhat et al., 2021). The location of these residues at the interface of the two domains and the dimer interface, combined with the fact that they are critical to Mpro function suggests that they are part of a distal regulatory communication network. Our studies clearly indicate the critical function played by this network of residues providing motivation for further examination of their potential as a mutation-resistant target for inhibitor design.
 
@@ -85,9 +125,17 @@ A second cluster of mutation-intolerant residues appear to be part of an alloste
 
 All 24 of the identified mutation-intolerant residues are highly conserved among SARS-CoV-2 Mpro homologs (Figure 6d [FRET and growth screens] and Figure 6—figure supplement 1 [TF screen]). While functional hot spots accurately predict evolutionary conservation, conservation does not accurately predict functional hot spots. There are many residues in Mpro that are strongly conserved, but that can be mutated without strong impacts on function. This pattern has been widely observed for other proteins (Hietpas et al., 2011; Melamed et al., 2013; Roscoe et al., 2013; Starita et al., 2013; Mishra et al., 2016). While many features distinguish natural evolution and experimental studies of fitness (Boucher et al., 2019) one of the outstanding differences is the strength of selection. While functional hot spots can be defined by strong impacts on function that are experimentally measurable, small fitness changes that may be too small for experimental resolution can drive selection in natural evolution due to large population sizes and timescales (Ohta, 1973). Our functional screen captures the mutations that are critical to catalytic function while evolutionary conservation depicts a wide range of mutations including those that make more nuanced contributions to function. When designing drugs to disrupt Mpro function, we hypothesize that it will be important to focus on the functionally critical sites which are a subset of the evolutionarily conserved positions.
 
-## Functional variability at key substrate and inhibitor-contact positions
+### Functional variability at key substrate and inhibitor-contact positions
 
 Mpro function is essential for SARS-CoV-2 replication, making it a key drug target. To help further guide inhibitor design, we assessed the mutations that are compatible with function and that should be readily available to the evolution of drug resistance. We focused these analyses on the active site, which is the target binding site for most inhibitors that have been generated against Mpro (Cho et al., 2021). In Figure 7a and Figure 7—figure supplement 1a, we highlight all the Mpro residues that contact the Nsp4/5 peptide, either through hydrogen bonds or van der Waals interactions (Shaqra et al., 2022). In our functional screens, we found dramatic variability in mutational sensitivity at these substrate-contact positions. For example, residues G143, H163, D187, and Q192 were extremely sensitive to mutation, while residues M49, N142, E166, and Q189 were highly tolerant. Despite the diverse sequence variation amongst Mpro’s substrates, they occupy a conserved volume in the active site, known as the substrate envelope, and the interactions between Mpro’s residues and all of its substrates are highly conserved (Shaqra et al., 2022) indicating that our mutation results from the Nsp4/5 cut-site will likely translate to other cut-sites.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig7-v2.jpg)
+
+**Figure 7.:** (A) All main protease (Mpro) positions that contact the Nsp4/5 substrate peptide are represented in spheres and colored by their average fluorescence resonance energy transfer (FRET) functional score (left panel) and growth functional score (right panel; PDB 7T70). The Nsp4/5 peptide is shown in green. (B) Mpro positions that form hydrogen bonds with the Nsp4/5 substrate are shown in sticks and colored by their average FRET functional score (left panel) and growth functional score (right panel; PDB 7T70). Oxygens are shown in red and nitrogens in cyan. Water molecules are represented as red spheres and hydrogen bonds as yellow dashed lines. (C) Mpro positions shown to contact over 185 inhibitors in crystal structures (Cho et al., 2021) are shown in sticks and are colored by their average FRET functional score (left panel) and average growth functional score (right panel). Shown is a representative structure of Mpro bound to the N3 inhibitor (PDB 6LU7) (Jin et al., 2020). The N3 inhibitor is shown in green, oxygens in red, and nitrogens in cyan. (D) Mpro positions that form hydrogen bonds with the Pfizer inhibitor, PF-07321332, are represented by sticks and colored by their average FRET functional score (left panel) or growth functional score (right panel; PDB 7VH8) (Owen et al., 2021; Zhao et al., 2021). PF-07321332 is shown in green, oxygens in red, nitrogens in cyan, fluorines in pink. Hydrogen bonds less than 4 Å are represented with thick yellow dashed lines and greater than 4 Å with a thin yellow dashed line. The table below lists the mutations with highest potential for being resistant against PF-07321332.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/77433/elife-77433-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) All main protease (Mpro) positions that contact the Nsp4/5 substrate peptide are represented in spheres and colored by their average transcription factor (TF) functional score (PDB 7T70). The Nsp4/5 peptide is shown in green. (B) Mpro positions that form hydrogen bonds with the Nsp4/5 substrate are shown in sticks and colored by their average TF functional score (PDB 7T70). Oxygens are shown in red and nitrogens in cyan. Water molecules are represented as red spheres and hydrogen bonds as yellow dashed lines. (C) Mpro positions shown to contact over 185 inhibitors in crystal structures (Cho et al., 2021) are shown in sticks and are colored by their average TF functional score. Shown is a representative structure of Mpro bound to the N3 inhibitor (PDB 6LU7) (Jin et al., 2020). The N3 inhibitor is shown in green, oxygens in red, and nitrogens in cyan. (D) Heatmap representation of functional scores for the fluorescence resonance energy transfer (FRET) screen (left panel), TF screen (middle panel) and the growth screen (right panel) at key inhibitor-contact positions as illustrated in Figure 7c. (E) Mpro positions that form hydrogen bonds with the Pfizer inhibitor, PF-07321332, are represented by sticks and colored by their average TF functional score (PDB 7VH8) (Owen et al., 2021; Zhao et al., 2021). PF-07321332 is shown in green, oxygens in red, nitrogens in cyan. Hydrogen bonds less than 4 Å are represented with thick yellow dashed lines and greater than 4Å with a thin yellow dashed line.
 
 Even among residues whose side chains make direct hydrogen bonds with substrates are positions that are surprisingly tolerant to mutation, namely N142, E166, and Q189. N142 forms distinct hydrogen bonds with Nsp4/5 and Nsp8/9, which has been proposed as a mechanism of Mpro substrate recognition (MacDonald et al., 2021). Q189 is in a flexible loop that closes over the substrates, allowing accommodation of diverse cut-sites (Shaqra et al., 2022). In our screens, we find that these proposed substrate-recognition positions are very tolerant to mutation (Figure 7b [FRET and growth screens] and Figure 7—figure supplement 1b [TF screen]) and have high potential for developing inhibitor resistance. Our results indicate that mutations at N142, E166, and Q189 are compatible with function and are readily available to the evolution of drug resistance.
 
@@ -109,70 +157,248 @@ Our next steps involve developing efficient strategies for assaying Mpro fitness
 
 ## Materials and methods
 
-## Construction of WT Ub-Mpro vector (p416LexA_UbMpro(WT)_B112)
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(SARS-CoV-2)</td>
+      <td>ORF1ab/ nsp5A-B</td>
+      <td>NIH GenBank</td>
+      <td>NC_045512</td>
+      <td>Mpro</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (Saccharomyces cerevisiae)</td>
+      <td>W303</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>GenBank JRIU00000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-his tag HRP-labelled (Mouse monoclonal)</td>
+      <td>R&amp;D systems</td>
+      <td>CAT#: MAB050H</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Barcoded UbMpro plasmid library</td>
+      <td>This paper</td>
+      <td>p416LexA-UbMpro(lib)-N18</td>
+      <td>See Materials and Methods section “Generating mutant libraries”</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Barcoded WT UbMpro plasmid</td>
+      <td>This paper</td>
+      <td>p416LexA-UbMpro(WT)-N18</td>
+      <td>See Materials and Methods section “Construction of WT Ub-Mpro vector”</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>C145A-Mpro-his6 plasmid</td>
+      <td>This paper</td>
+      <td>p416LexA-UbMpro(C145A)-his</td>
+      <td>See Materials and Methods section “Analysis of Mpro expression”</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCyPet-His</td>
+      <td>Addgene</td>
+      <td>#14,040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pYPet-His</td>
+      <td>Addgene</td>
+      <td>#14,031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CyPet-MproCS-YPet fusion gene</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and Methods section “Generating FRET strain”</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDK-ATC</td>
+      <td>PMID:28660202</td>
+      <td></td>
+      <td>Integrative bidirectional plasmid with TEF and CUP promoters</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDK-ATG</td>
+      <td>PMID:28660202</td>
+      <td></td>
+      <td>Integrative bidirectional plasmid with TEF and GPD promoters</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>DBD-MproCS-AD fusion gene</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and Methods section “Generating split TF strain”</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA SYBR FAST qPCR Master Mix</td>
+      <td>Kapa Biosystems</td>
+      <td>KK4600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein assay kit</td>
+      <td>Pierce</td>
+      <td>CAT#23,225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Estradiol</td>
+      <td>Sigma Aldrich</td>
+      <td>E2768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scripts to tabulate variant counts</td>
+      <td>This paper</td>
+      <td>https://github.com/JuliaFlynn/BolonLab, (copy archived at swh:1:rev:b54d80818c2681fb89533ae330c18a3d39f32ab6)</td>
+      <td>See Materials and Methods section “Analysis of Illumina sequencing data”</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scripts to associate barcodes with variants</td>
+      <td>This paper</td>
+      <td>https://github.com/JuliaFlynn/PacBio_barcode_assocation, (copy archived at swh:1:rev:29eac92475a9ff8e24fb390986c865b504c03f51)</td>
+      <td>See Materials and Methods section “Barcode Association”</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 9</td>
+      <td>Graphpad.com</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo v.10.8.0</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol v. 2.5.2</td>
+      <td>Schrödinger</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatPlotLib</td>
+      <td>http://matplotlib.sourceforge.net</td>
+      <td>RRID:SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sequencing primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Site-directed mutagenesis primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of WT Ub-Mpro vector (p416LexA_UbMpro(WT)_B112)
 
 The Ub-Mpro gene fusion was constructed using overlapping PCR of the yeast Ub gene and SARS-CoV-2 Mpro gene (Jin et al., 2020), and was inserted into the pRS416 vector after digestion with SpeI and BamHI. Four LexA boxes were amplified from the LexAbox4_citrine plasmid (FRP793_insul-(lexA-box)4-PminCYC1-Citrine-TCYC1 was a gift from Joerg Stelling; Addgene plasmid # 58434; http://n2t.net/addgene:58434; Ottoz et al., 2014) and inserted between the SacI and SpeI sites upstream of the Ub-Mpro gene. The LexA_ER_B112 TF was amplified from Addgene_58437 (FRP880_PACT1(−1–520)-LexA-ER-haB112-TCYC1 was a gift from Joerg Stelling; Addgene plasmid # 58437; http://n2t.net/addgene:58437; Ottoz et al., 2014) and inserted into the KpnI site. The resulting vector is named (p416LexA-UbMpro(WT)-B112). A destination vector was generated by removing the Mpro sequence and replacing it with a restriction site for SphI.
 
-## Generating mutant libraries
+### Generating mutant libraries
 
 The SARS-CoV-2 Mpro (ORF1ab polyprotein residues 3264–3569, GenBank code: MN908947.3) single site variant library was synthesized by Twist Biosciences (twistbioscience.com) by massively parallel oligonucleotide synthesis. In the library, each amino acid position was modified to all 19 amino acid variants plus a premature termination encoded by a stop codon, using the preferred yeast codon for each substitution. All 306 amino acids of Mpro were modified yielding 6120 total variants. Due to challenges in construction, positions 27 and 28 were missing from the library. About 35 bp of sequence homologous to the destination vector was added to both termini of the library during synthesis to enable efficient cloning. The library was combined via Gibson assembly (NEB) with the destination vector. To avoid bottlenecking the library, sufficient transformations were performed to recover more than 50 independent transformants for each designed Mpro variant in the library. To improve efficiency and accuracy of deep sequencing steps during bulk competition, each variant of the library was tagged with a unique barcode. A pool of DNA constructs containing a randomized 18 bp barcode sequence (N18) was cloned into the NotI and AscI sites upstream of the LexA promoter sequence via restriction digestion, ligation and transformation into chemically competent Escherichia coli. These experiments were performed at a scale designed to have each Mpro variant represented by 10–20 unique barcodes. The resulting library is named p416LexA-UbMpro(lib)-B112.
 
-## Barcode association
+### Barcode association
 
 To associate barcodes with Mpro variants, we digested the p416-UbMpro(lib)-B112 plasmid upstream of the N18 sequence and downstream of the Mpro sequence with NotI and SalI enzymes (NEB). The resulting 1800 bp fragment containing the barcoded library was isolated by Blue Pippen selecting for a 1–4 kB range. Of note, we determined it was important to avoid PCR to prepare the DNA for PacBio sequencing, as PCR led to up to 25% of DNA strands recombining, leading to widespread mismatch between the barcode and Mpro variant. DNA was prepared for sequencing with the Sequel II Binding Kit v2.1 and the libraries were sequenced on a Pacific Biosciences Sequel II Instrument using a 15 hr data collection time, with a 0.4 hr pre-extension time (PacBio Core Enterprise, UMass Chan Medical School, Worcester, MA). PacBio circular consensus sequences were generated from the raw reads using SMRTLink v.10.1 and standard read-of-insert analysis parameters. After filtering low-quality reads (Phred scores<10), the data was organized by barcode sequence using custom analysis scripts that have been deposited on GitHub (https://github.com, see Key Resource Table). For each barcode that was read more than three times, we generated a consensus of the Mpro sequence that we compared to WT to call mutations.
 
 As a control for library experiments, the WT Ub-Mpro gene was also barcoded with approximately 150 unique barcode sequences. The randomized 18 bp barcode sequence (N18) was cloned between the NotI and AscI sites upstream of the LexA promoter sequence in the p416LexA-Ub-Mpro(WT)-B112 vector with the goal of the WT sequence being represented by approximately 100 barcodes. The barcoded region of the plasmid was amplified by PCR using the primers listed in Supplementary file 1 (for the WT barcoding it was not necessary to avoid strand recombination) and sequenced by EZ Amplicon deep sequencing (https://www.genewiz.com/).
 
-## Generating split TF strain
+### Generating split TF strain
 
 The GFP reporter strain was generated by integration of GFP driven by a Gal1 promoter together with a HIS3 marker into the HO genomic locus. The Gal4, Gal80 and Pdr5 genes were disrupted to create the following strain: W303 HO::Gal1-GFP-v5-His3; gal4::trp1; gal80::leu2 pdr5::natMX.
 
 The Gal4 DBD-MproCS-activation domain fusion gene (DBD-MproCS-AD) was generated by overlapping PCR. The Gal4 DBD was amplified by PCR with a forward primer containing the EcoRI site and a reverse primer containing the extending MproCS overhang sequence. The Gal4 AD was amplified by PCR with a forward primer containing the MproCS overhang sequence and a reverse primer containing the SacI site (SacI_R). The DBD-MproCS-AD fusion gene was generated using the overlapping DBD-MproCS and MproCS-AD products from above as templates and the EcoRI_F and SacI_R primers. The resulting DBD-MproCS-AD fusion gene was inserted between the EcoRI and SacI sites downstream of the CUP promoter in the integrative bidirectional pDK-ATC plasmid (kindly provided by D. Kaganovich; Amen and Kaganovich, 2017). The mCherry gene was subsequently cloned into the XhoI/BamHI sites downstream of the TEF promoter in the opposite orientation to create the plasmid pDK-CUP-DBD-MproCS-AD-TEF-mCherry. The fragment for genomic integration was generated by PCR with the primers listed in Supplementary file 1, was transformed into the reporter stain using LiAc/PEG transformation (Gietz et al., 1995), and successful integration of the module into the adenine biosynthesis gene was verified by PCR.
 
-## Bulk split TF competition experiment
+### Bulk split TF competition experiment
 
 Barcoded WT UbMpro (p416LexA-UbMpro(WT)-N18) plasmid was mixed with the barcoded UbMpro library (p416LexA-UbMpro(lib)-N18) at a ratio of 20-fold WT to the average library variant. The blended plasmid library was transformed using the lithium acetate procedure into the reporter strain (W303 ade::CUP-DBD-MproCS-AD-TEF-mCherry; ho::gal1-gfp-v5-his3; gal4::trp1; gal80::leu2; pdr5::natMX). Sufficient transformation reactions were performed to attain about 5 million independent yeast transformants representing a 50-fold sampling of the average barcode. Each biological replicate represents a separate transformation of the library. Following 12 hr of recovery in synthetic dextrose lacking adenine (SD-A), transformed cells were washed three times in synthetic dextrose lacking adenine and uracil (SD-A-U) media (SD-A-U to select for the presence of the Mpro variant plasmid) to remove extracellular DNA and grown in 500 mL SD-A-U media at 30°C for 48 hr with repeated dilution to maintain the cells in log phase of growth and to expand the library. At least 107 cells were passed for each dilution to avoid population bottlenecks. Subsequently, the library was diluted to early log phase in 100 mL of SD-A-U, grown for 2 hr, the culture was split in half, and 125 nM β-estradiol (from a 10 mM stock in 95% ethanol, Sigma-Aldirch) was added to one of the cultures to induce Ub-Mpro expression. Cultures with and without β-estradiol were grown with shaking at 180 rpm for 6 hr at which point samples of ~107 cells were collected for FACS analysis.
 
-## FACS sorting of TF screen yeast cells
+### FACS sorting of TF screen yeast cells
 
 A sample of 107 cells were washed three times with 500 µL of tris-buffered saline containing 0.1% Tween and 0.1% bovine serum albumin (TBST-BSA). Cells were diluted to 106 /mL and transferred to polystyrene FACS tubes. Samples were sorted for GFP and mCherry expression on a FACS Aria II cell sorter with all cells expressing cut TF (low GFP expression) in one population and uncut TF (high GFP expression) in a second population. To ensure adequate library coverage, we sorted at least 1.5 million cells of each population and collected them in SD-A-U media. For the first replicate, sorted yeast cells were amplified in 20 mL SD-U-A media for 10 hr at 30°C. These yeast samples were collected by centrifugation and cell pellets were stored at –80°C. It was observed that different populations of cells recovered at different rates during this amplification period, so in the second replicate cells were immediately spun down and stored at –80°C. Functional scores between the two replicates correlated well indicating that the amplification step was dispensable.
 
-## Generating FRET strain
+### Generating FRET strain
 
 The YPet-CyPet FRET pair is a YFP-CFP fluorescent protein pair that has been fluorescently optimized by directed evolution for intracellular FRET (Nguyen and Daugherty, 2005). The YPet- MproCS-CyPet fusion gene was generated by overlapping PCR as follows. The CyPet gene was amplified by PCR from the pCyPet-His vector (pCyPet-His was a gift from Patrick Daugherty; Addgene plasmid #14030; http://n2t.net/addgene:14030) with a forward primer containing the BamHI site (BamHI_F) and a reverse primer containing the extending MproCS overhang sequence. The YPet gene was amplified by PCR from the pYPet-His vector (pYPet-His was a gift from Patrick Daugherty; Addgene plasmid #14031; http://n2t.net/addgene:14031) with a forward primer containing the extending MproCS overhang sequence and a reverse primer containing the XhoI site (XhoI_R). The CyPet-MproCS-YPet fusion gene was generated using the overlapping CyPet-MproCS and MproCS-YPet products from above as templates and BamHI_F and XhoI_R primers. The resulting CyPet- MproCS-YPet gene was inserted between the BamHI and XhoI sites downstream of the TEF promoter in the integrative bidirectional pDK-ATG plasmid (kindly provided by D. Kaganovich; Amen and Kaganovich, 2017). The fragment for genomic integration was generated by PCR with the primers listed in Supplementary file 1, was transformed into W303 (leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1 his3-11,15) using LiAc/PEG transformation (Gietz et al., 1995), and successful integration of the module into the adenine biosynthesis gene was verified by PCR.
 
-## Bulk FRET competition experiment
+### Bulk FRET competition experiment
 
 The plasmid library including the barcoded WT plasmid was transformed as above using the lithium acetate procedure into W303 Ade::TEF-CyPet-MproCS-YPet cells. Sufficient transformation reactions were performed to attain about 5 million independent yeast transformants representing a 50-fold sampling of the average barcode. Cultures were grown and induced with β-estradiol as above for the TF screen with the exception that cells were induced for 1.5 hr. Samples of 107 cells were collected for FACS analysis.
 
-## FACS sorting of FRET screen yeast cells
+### FACS sorting of FRET screen yeast cells
 
 A sample of 107 cells were washed three times with 500 µL of TBST-BSA. Cells were diluted to 106 /mL and transferred to polystyrene FACS tubes. Samples were sorted for YFP and CFP expression on a FACS Aria II cell sorter with all cells expressing cut FRET pair (low FRET) in one population and uncut FRET pair (high FRET) in a second population. To ensure adequate library coverage, we sorted at least 3 million cells of each population and collected them in SD-A-U media. Yeast samples were collected by centrifugation and cell pellets were stored at –80°C.
 
-## Growth strain
+### Growth strain
 
 The plasmid library including the barcoded WT plasmid was transformed as above using the lithium acetate procedure into W303 cells. Sufficient transformation reactions were performed to attain about 5 million independent yeast transformants representing a 50-fold sampling of the average barcode. Each biological replicate represents a separate transformation of the library. Following 12 hr of recovery in synthetic dextrose (SD) media, transformed cells were washed three times in SD-U media (SD lacking uracil to select for the presence of the Mpro variant plasmid) to remove extracellular DNA and grown in 500 mL SD-U media at 30°C for 48 hr with repeated dilution to maintain the cells in log phase of growth (OD600 = 0.05 – 1) and to expand the library. At least 107 cells were passed for each dilution to avoid population bottlenecks. Subsequently, the library was diluted to early log phase (OD600 = 0.05) in 100 mL of SD-U, grown for 2 hr, the culture was split in half, and 2 µM β-estradiol (from a 10 mM stock in 95% ethanol) was added to one of the cultures to induce Ub-Mpro expression. Cultures with and without β-estradiol were grown with shaking at 180 rpm for 16 hr with dilution after 8 hr to maintain growth in exponential phase. Samples of ~108 cells were collected by centrifugation and cell pellets were stored at –80°C.
 
-## DNA preparation and sequencing
+### DNA preparation and sequencing
 
 We isolated plasmid DNA from each FACS cell population and the time points from the growth experiment as described (Jiang et al., 2013). Additionally, we sequenced the original barcoded plasmid library to evaluate the collateral effects on variants during the pre-selection library expansion stages. Purified plasmid DNA was linearized with AscI. Barcodes were amplified with 22 cycles of PCR using Phusion polymerase (NEB) and primers that add Illumina adapter sequences and a 6 bp identifier sequence used to distinguish cell populations. PCR products were purified two times over silica columns (Zymo Research) and quantified using the KAPA SYBR FAST qPCR Master Mix (Kapa Biosystems) on a Bio-Rad CFX machine. Samples were pooled and sequenced on an Illumina NextSeq instrument in single-end 75 bp mode.
 
-## Analysis of Illumina sequencing data
+### Analysis of Illumina sequencing data
 
 We analyzed the Illumina barcode reads using custom scripts that have been deposited on GitHub (https://github.com, see Key Resource Table). Illumina sequence reads were filtered for Phred scores>10 and strict matching of the sequence to the expected template and identifier sequence. Reads that passed these filters were parsed based on the identifier sequence. For each screen/cell population, each unique N18 read was counted. The unique N18 count file was then used to identify the frequency of each mutant using the variant-barcode association table. To generate a cumulative count for each codon and amino acid variant in the library, the counts of each associated barcode were summed.
 
-## Determination of functional scores
+### Determination of functional scores
 
 To determine the functional score for each variant in the two FACS-based screens, the fraction of each variant in the cut and uncut windows was first calculated by dividing the sequencing counts of each variant in a window by the total counts in that window. The functional score was then calculated as the fraction of the variant in the cut window divided by the sum of the fraction of the variant in the cut and uncut windows. The functional score for the growth screen was calculated by the fraction of the variant at the 0 hr time point divided by the sum of the fraction of the variant in the 0 and 16 hr time points. Functional scores were not calculated for variants with less than 100 total reads. The functional scores were normalized setting the score for the average WT Mpro barcode as 1 and the average stop codon as 0. Both the unnormalized and normalized scores are reported in Figure 2—source data 1. For comparison, the counts for the growth-based screen were fit to selection coefficients (slope of log2(variant/WT counts)). We chose to report the functional scores as opposed to the selection coefficients in this paper so they would be directly comparable to the TF and FRET functional scores.
 
-## Analysis of Mpro expression and Ub removal by Western blot
+### Analysis of Mpro expression and Ub removal by Western blot
 
 To facilitate analysis of expression levels of Mpro and examine effective removal of Ub, a his tag was fused to the C-terminus of Mpro to create the plasmid p416LexA-UbMpro-his6-B112. In addition, the C145A mutation was created by site-directed mutagenesis to ensure cleavage by Ub specific proteases and to reduce the toxicity caused by WT Mpro expression. W303 cells were transformed with the p416LexA-UbMpro(C145A)-his6 construct and the resulting yeast cells were grown to exponential phase in SD-U media at 30°C. 2 µM β-estradiol was added when indicated and cells were grown for an additional 8 hr. About 108 yeast cells were collected by centrifugation and frozen as pellets at −80°C. Cells were lysed by vortexing the thawed pellets with glass beads in lysis buffer (50 mM Tris-HCl pH 7.5, 5 mM EDTA and 10 mM PMSF), followed by addition of 2% sodium dodecyl sulfate (SDS). Lysed cells were centrifuged at 18,000 g for 1 min to remove debris, and the protein concentration of the supernatants was determined using a BCA protein assay kit (Pierce) compared to a bovine serum albumin (BSA) protein standard. Around 15 µg of total cellular protein was resolved by SDS-PAGE, transferred to a PVDF membrane, and probed using an anti-his HRP-conjugated antibody (R&D systems). Purified Mpro-his6 protein was a gift from the Schiffer laboratory. There is a slight size difference on the Western blot between the purified Mpro-his6 protein and the C145A Mpro-his6 in the yeast lysate. We do not completely understand the origin of this mobility shift, but possible causes are an abnormal gel shift due to the C145A mutation, a mobility difference due to buffer, nucleic acids or additional proteins in the lysate, or an unknown modification of Mpro in bacteria compared to yeast.
 
-## Sequence and structure analysis
+### Sequence and structure analysis
 
 Evolutionary conservation was calculated with an alignment of homologs from diverse species using the ConSurf server (Ashkenazy et al., 2016). The effects of single mutations on protein-ligand interactions were predicted by calculating the binding affinity changes using PremPLI (https://lilab.jysw.suda.edu.cn/research/PremPLI/; Sun et al., 2021). The figures were generated using Matplotlib (Hunter, 2007), PyMOL and GraphPad Prism version 9.3.1.
 
-## Identifying mutations in circulating SARS-COV-2 sequences
+### Identifying mutations in circulating SARS-COV-2 sequences
 
 The complete set of SARS-COV-2 isolate genome sequences was downloaded from the GISAID database. The SARS-COV-2 Mpro reference sequence (NCBI accession NC_045512.2) was used as a query in a tBLASTn search against the translated nucleotide sequences of these isolates to identify the Mpro region and its protein sequence for each isolate, if present. Mpro sequences were discarded if they contained 10 or more ambiguous ‘X’ amino acids or had amino acid length less than 290. A multiple sequence alignment was performed and for each of the twenty standard amino acids, the number of times it was observed at each position in the Mpro sequence was calculated.

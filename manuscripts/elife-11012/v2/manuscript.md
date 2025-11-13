@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.11012.001 Design of complex alpha-beta protein topologies poses a challenge because of the large number of alternative packing arrangements. A similar challenge presumably limited the emergence of large and complex protein topologies in evolution. Here, we demonstrate that protein topologies with six and seven-stranded beta sheets can be designed by insertion of one de novo designed beta sheet containing protein into another such that the two beta sheets are merged to form a single extended sheet, followed by amino acid sequence optimization at the newly formed strand-strand, strand-helix, and helix-helix interfaces. Crystal structures of two such designs closely match the computational design models. Searches for similar structures in the SCOP protein domain database yield only weak matches with different beta sheet connectivities. A similar beta sheet fusion mechanism may have contributed to the emergence of complex beta sheets during natural protein evolution. DOI: http://dx.doi.org/10.7554/eLife.11012.001
+Design of complex alpha-beta protein topologies poses a challenge because of the large number of alternative packing arrangements. A similar challenge presumably limited the emergence of large and complex protein topologies in evolution. Here, we demonstrate that protein topologies with six and seven-stranded beta sheets can be designed by insertion of one de novo designed beta sheet containing protein into another such that the two beta sheets are merged to form a single extended sheet, followed by amino acid sequence optimization at the newly formed strand-strand, strand-helix, and helix-helix interfaces. Crystal structures of two such designs closely match the computational design models. Searches for similar structures in the SCOP protein domain database yield only weak matches with different beta sheet connectivities. A similar beta sheet fusion mechanism may have contributed to the emergence of complex beta sheets during natural protein evolution.
 
 ## Introduction
 
@@ -34,47 +34,37 @@ One possible route to the large and complex beta sheet topologies found in many 
 
 ## Results
 
-A first extended sheet protein was created by inserting a designed ferredoxin domain into a beta turn of the designed TOP7 protein to create a half-barrel structure, with the two sheets fused into a single seven strand sheet flanked by four helices (
+A first extended sheet protein was created by inserting a designed ferredoxin domain into a beta turn of the designed TOP7 protein to create a half-barrel structure, with the two sheets fused into a single seven strand sheet flanked by four helices (Figure 1A). The CD spectra show both alpha and beta structures (Figure 2—figure supplement 1). Two crystal structures (NESG target OR327) were solved by molecular replacement and refined to 2.49 Å (PDB entry 4KYZ) and 2.96 Å (PDB entry 4KY3) resolutions. Further analysis refers only to the higher resolution structure (4KYZ). The structure shows excellent agreement with the design model (Figure 2A), particularly in low B-factor regions, with C-alpha RMSD ranging from 1.76 to 1.85 Å among the four protomers in the crystal. The relative orientation of the strands packed against the helices is close to that in the design model, and core sidechains at the designed interfaces are in very similar conformations in the design model and crystal (Figure 2B,C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig1-v2.jpg)
 
-**Figure 1.:** (A) Insertion of a ferrrodoxin domain (purple) into TOP7 (red). (B) Insertion of one ferrodoxin domain into another. In both cases, two beta strands from each partner (red and purple) are concatenated to form the central strand pair of the fusion protein (pink).DOI: http://dx.doi.org/10.7554/eLife.11012.003
+**Figure 1.:** (A) Insertion of a ferrrodoxin domain (purple) into TOP7 (red). (B) Insertion of one ferrodoxin domain into another. In both cases, two beta strands from each partner (red and purple) are concatenated to form the central strand pair of the fusion protein (pink).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig2-v2.jpg)
 
-**Figure 2.:** (A) Backbone superposition of the crystal structure of ferredoxin-TOP7 (4KYZ, chain A) with the design model. The backbones of the two proteins are nearly identical. () The core sidechain packing in the ferrodoxin-TOP7 fusion is very similar in the crystal structure and design model both in the insert (B, CB) and host (C) domains. The crystal structure is colored by B-factor and the design model is in gray.DOI: http://dx.doi.org/10.7554/eLife.11012.004
+**Figure 2.:** (A) Backbone superposition of the crystal structure of ferredoxin-TOP7 (4KYZ, chain A) with the design model. The backbones of the two proteins are nearly identical. (B, C) The core sidechain packing in the ferrodoxin-TOP7 fusion is very similar in the crystal structure and design model both in the insert (B) and host (C) domains. The crystal structure is colored by B-factor and the design model is in gray.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.11012.005
-
-A second extended sheet protein was created by inserting one designed ferredoxin domain into another to create a half-barrel structure with four alpha helices and six beta strands (
+A second extended sheet protein was created by inserting one designed ferredoxin domain into another to create a half-barrel structure with four alpha helices and six beta strands (Figure 1B). A beta turn segment between two beta strands of the host ferredoxin was removed and the resulting cut-points in the host beta strands were linked to two beta strand cut-points in the insert, fusing the two strand pairs into a single, longer pair at the center of a six-stranded beta sheet. CD spectra show that the protein contains both alpha and beta structures (Figure 3—figure supplement 1). Crystals were obtained which diffracted to 3.3Å resolution. Molecular replacement using the computational design models (DiMaio et al., 2013) yielded a solution for which the refinement statistics are shown in Supplementary file 1 (PDB entry 5CW9). Attempts to improve these statistics by rebuilding portions of the model proved unsuccessful, possibly due to a register shift or dynamic fluctuations in the structure (perhaps corresponding to slightly 'molten-globule'-like behavior) that are difficult to computationally model. However, unbiased low-resolution omit maps suggest that the overall topology is correct (Figure 3—figure supplement 2). In the model that displays the best refinement statistics, the protein backbone was similar to the design model with a C-alpha RMSD value of 2 Å (Figure 3A,B). The fused beta sheet aligns with the design model, while the inter-domain helices shift slightly to accommodate the inter-domain interface. The sidechain packing between the newly juxtaposed beta strands succeeded in anchoring the secondary structure elements in their intended orientations, but the low resolution of the crystal structure prevents evaluation of the atomic-level accuracy of the design (Figure 3—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig3-v2.jpg)
 
-**Figure 3.:** The crystal structure (5CW9) aligns well with the design model over both the helices (A) and the fused beta sheet (B).DOI: http://dx.doi.org/10.7554/eLife.11012.006
+**Figure 3.:** The crystal structure (5CW9) aligns well with the design model over both the helices (A) and the fused beta sheet (B).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.11012.007
-
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** A) and insert (B) domains.DOI: http://dx.doi.org/10.7554/eLife.11012.008
-
-To compare the folds of these designed proteins to those in the SCOP v.1.75 domain database (
+To compare the folds of these designed proteins to those in the SCOP v.1.75 domain database (Murzin et al., 1995), the TMalign structure-structure comparison method was used to search a 70% sequence non-redundant set of SCOP domains (Ben-Tal and Kolodny, 2014) for structure alignments containing a minimum 75% overlap with the designed proteins. The most similar SCOP domains had weak TM-align scores (0.54 and 0.51), and the sheets in these matched structures have different connectivities than those of the designs, suggesting that the two designed proteins have novel folds (Figure 4). While there are no domains with globally similar folds, both designed proteins are similar to a number of SCOP domains over the ferrodoxin-like substructure(s) (maps of the proteins to the domain network of Nepomnyachiy et al. (Ben-Tal and Kolodny, 2014) are shown in Figure 4—figure supplement 1). The mutations introduced at the redesign stage of the domain insertion design protocol are compatible with the parent fold structures with minimal perturbation of the protein backbone (Figure 4—figure supplement 2) suggesting the designed folds would have the potential to evolve from insertion followed by neutral mutational drift of the parent structures.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig4-v2.jpg)
 
-**Figure 4.:** A) and Fd-Fd (B) designed domain found in TM-align searches.Ribbon diagrams are shown on left, the strand connectivity, at the right. The beta strand connectivity is quite different in the designs than in these closest structural matches.DOI: http://dx.doi.org/10.7554/eLife.11012.009
+**Figure 4.:** Ribbon diagrams are shown on left, the strand connectivity, at the right. The beta strand connectivity is quite different in the designs than in these closest structural matches.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** A) and zoomed region (B) highlighting parent, designed, and first neighbor folds.DOI: http://dx.doi.org/10.7554/eLife.11012.010
-
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/11012/elife-11012-fig4-figsupp2-v2.jpg)
-
-**Figure 4—figure supplement 2.:** A) and ferredoxin-ferredoxin (B).DOI: http://dx.doi.org/10.7554/eLife.11012.011
 
 ## Discussion
 
@@ -88,6 +78,6 @@ Crystal structures were used to search for structural homologs in the SCOP datab
 
 The ferredoxin – TOP7 protein (NESF ID OR327) was expressed and purified following standard protocols developed by the NESG for production of selenomethionine-labeled protein samples (Xiao et al., 2010). Briefly, E. coli BL21 (DE3) pMGK cells, a rare-codon enhanced strain, were transformed with the DNA sequence-verified OR327-21.1 plasmid. A single isolate was cultured in MJ9 minimal media supplemented with selenomethionine, lysine, phenylalanine, threonine, isoleucine, leucine, and valine for the production of selenomethionine-labeled OR327. Initial growth was carried out at 37°C until the OD600 of the culture reached ∼0.8 units. The incubation temperature was then decreased to 17°C, and protein expression was induced by the addition of isopropyl-β-D-thiogalactopyranoside (IPTG) at a final concentration of 1 mM. Following overnight incubation at 17°C, the cells were harvested by centrifugation and resuspended in Lysis Buffer [50 mM Tris, pH 7.5, 500 mM NaCl, 1 mM tris (2-carboxyethyl)phosphine, 40 mM imidazole]. After sonication, the supernatant was collected by centrifugation for 40 min at 30,000 g. The supernatant was loaded first onto a Ni affinity column (HisTrap HP; GE Healthcare, Marlborough, MA) and the eluate loaded into a gel filtration column (Superdex 75 26/60; GE Healthcare). Yields were 60-–90 mg/L. The purified 6His-OR327 construct in buffer containing 10 mM Tris·HCl, 100 mM NaCl, 5 mM DTT, pH 7.5, was then concentrated to ∼10.6 mg/mL. The sample was flash-frozen in 50-μL aliquots using liquid nitrogen and stored at −80°C before crystallization trials. The sample purity (>98%), molecular weight, and oligomerization state were verified by SDS/PAGE, MALDI-TOF mass spectrometry, and analytic gel filtration followed by static light scattering, respectively. For static light scattering, selenomethionine-labeled ferredoxin – TOP7 protein (30 μL at 10 mM Tris·HCl, pH 7.5, 100 mM NaCl, 5 mM DTT) was injected onto an analytical gel filtration column (Shodex KW-802.5; Shodex, New York, NY) with the effluent monitored by refractive index (Optilab rEX; Wyatt Technology, Santa Barbara, CA) and 90° static light-scattering (miniDAWN TREOS; Wyatt Technology) detectors.
 
-## Accession codes
+### Accession codes
 
 Structures have been deposited in the Protein Data Bank as entries 5CW9, 4KYZ, and 4KY3.

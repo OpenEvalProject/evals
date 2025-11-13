@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00hx57361 Department of Molecular Biology, Princeton University Princeton United States
-2. https://ror.org/00hx57361 Princeton University Princeton United States
+1. Department of Molecular Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
+2. Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))
 
 † Corresponding author
 
@@ -32,9 +32,21 @@ We previously performed neuron-specific RNA-sequencing in young (Day 1) adult C.
 
 ## Results
 
-## Wild-type neurons lose their neuronal function and identity with age
+### Wild-type neurons lose their neuronal function and identity with age
 
 Previously, we found that cognitive abilities in C. elegans, including learning, short-term memory, and long-term memory, all decline with age (Kauffman et al., 2010). Moreover, neuronal morphology and regeneration ability are also impaired with age (Byrne et al., 2014; Pan et al., 2011; Tank et al., 2011; Toth et al., 2012). However, how these phenotypes are regulated at the molecular level in aging neurons remains to be systematically characterized. Therefore, we were interested in first identifying gene expression changes with age in wild-type neurons to characterize the normal physiological aging process. Before choosing timepoints to assess neuronal transcriptome changes, we carried out associative learning and short-term associative memory assays (Kauffman et al., 2010) as we have previously described (Kauffman et al., 2010; Kauffman et al., 2011; Stein and Murphy, 2012; Stein and Murphy, 2014). Briefly, well-fed worms are starved for 1 hr, then re-fed while exposed to the neutral odorant butanone for 1 hr; a choice assay between butanone and control immediately after training tests associative learning, while a choice assay after 1 hr of recovery on food-only plates tests short-term associative memory (Kauffman et al., 2010). Adult Day 1 worms are fully developed, young, and healthy, while wild-type Day 7–8 worms, although still in their mid-life, have completely lost their learning and short-term memory abilities already by Day 7 (Kauffman et al., 2010; Figure 1a), thus we consider them ‘aged’ for the purposes of understanding loss of cognitive ability. Therefore, we reasoned that a comparison of adult wild-type Day 1 neurons with wild-type neurons that are at least aged Day 7–8 should reveal changes with age that result in loss of cognitive function.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig1-v1.jpg)
+
+**Figure 1.:** (a) Wild-type learning and 1 hr memory results on Day 1 and Day 7. Learning and memory results are represented as learning index (LI). Details of the LI calculation are explained in the methods. Learning, n=10, memory, n=5. ****p<0.01. Student’s t-test. (b) PCA plot for Day 1 (orange) and Day 8 (blue) neuronal bulk RNA-seq samples. (c) Volcano plot comparing age-associated differentially-expressed genes in WT neurons. Genes downregulated with age (orange) and upregulated with age (blue) were obtained by neuron-specific RNA sequencing of adult wild-type animals with neuron-specific GFP expression. Adjusted p-value <0.001, log2(Fold-change) >2. n=6 biological replicates per age. 1146 genes were significantly downregulated with age (higher in young neurons) and 2016 genes were upregulated with age (higher in old neurons) (d) Tissue prediction scores for genes higher in young neurons. (e) Gene ontology (GO) terms of genes that decline with age in wild-type neurons. Synaptic and signaling GO terms are enriched in neuronal genes. p-value calculated using hypergeometric distribution probability. (f) Comparison of whole-body higher-in-young genes and neuronal higher-in-young genes. GO Terms and representative genes were performed using g:Profiler software. P-value of overlapping regions were calculated using a hypergeometric calculator. (g) Normalized reads of ins-6, unc-4, mec-7, folt-2, fbf-1, and madd-4, in Day 1 and Day 8 neurons in our dataset. p-adjusted values were calculated from DESeq2 software. Box plots: center line, median; box range, 25-75th percentiles; whiskers denote minimum-maximum values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a–b) FACS results of neuron isolation. Over 99.94% of the cells collected are GFP + neurons. 100,000 cells are collected for each biological replicate, six biological replicates for each condition. (c) Workflow of neuron isolation, library generation, and sequencing. The diagram was generated using Biorender, and published using a CC BY-NC-ND license with permission. (d) Number of genes detected in Day 1 and Day 8 wild-type neurons. Genes with log2(TPM) >0.5 are considered expressed. (e) Down-sampling analysis for N2 Day 1 vs Day 8 indicates downsampling 30% of the data will still yield good results, indicating sufficiency of sequencing depth. (f) Normalized reads of txt-12, flp-33, and srd-23 in Day 1 and Day 8 neurons. p-adjusted values were calculated from DESeq2 software.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Volcano plot of Day 1 vs Day 8 differentially-expressed genes during aging. 264 genes are expressed at higher levels in young worms, 1626 genes are higher in aged worms (log2[Fold-change (Day 1 /Day 8)]>2.0, p-adjusted <0.001). (b) Gene ontology (GO) terms of genes that are expressed at higher levels in young (wild-type) whole animals highlight collagen and metabolism. (c) GO terms of genes that are expressed at higher levels in aged (wild-type) whole animals. GO terms were generated using Wormcat 2.0. (d) Tissue query for whole-worm aged-related genes highlights the alimentary system. (e) Full image of comparison of top wild-type neuronal and whole-worm differentially expressed with age genes. Related to Figure 2D.
 
 To identify genes that regulate age-related morphological and functional decline in wild-type neurons, we performed neuron-specific transcriptomic analysis using our previous FACS neuronal isolation method (Kaletsky et al., 2016) on six biological replicates each of Day 1 and Day 8 adult wild-type worms, where 100,000 GFP + cells were collected for each sample (Figure 1—figure supplement 1a–c). Because we previously found that whole-worm analyses mask changes found specifically in neurons (Kaletsky et al., 2016), to complement our aging neuron studies, we also carried out RNA-sequencing analyses of aging whole worms (Figure 1—figure supplement 2a–e), which we found is dominated by changes in the extracellular matrix (Figure 1—figure supplement 2b), stress response/pathogen genes (Figure 1—figure supplement 2c) and the alimentary system (intestine) (Figure 1—figure supplement 2d), overshadowing neuronal changes.
 
@@ -54,11 +66,27 @@ One ongoing discussion about changes during aging is how to interpret an increas
 
 We found that 48 hr (L4-Day 2) of adult-only knockdown of utx-1 increases 1 hr and 2 hr memory (Figure 2d), the loss-of-function mutation of ins-19 increases both learning and memory (Figure 2f) and the adult-only knock-down of nmgp-1 extends memory at 2 hr (Figure 2h). That is, in each of these cases, reduction of these genes did not impair memory, as loss of a compensatory function would appear; rather, loss of these age-upregulated genes improved wild-type memory. These results indicate that at least some neuronal genes that increase with age can have a negative impact on learning and memory, as demonstrated by the improvement of memory when knocked down, even in young animals. While it is still possible that some upregulated genes may act in a compensatory manner, the simplest model is that at least some are actively deleterious for learning and memory. We previously observed that for genes that play a role in complex behaviors like learning and memory, the loss of single genes can have a large impact on these complex behaviors (Lakhina et al., 2015), unlike the additive roles of longevity-promoting genes (Murphy et al., 2003). Therefore, one mechanism by which wild-type worms lose their learning and memory functions with age is not just by loss of neuronal gene expression, as one might expect, but also by dysregulation of expression of genes that can negatively impact learning and memory.
 
-## daf-2 mutants maintain learning and memory with age
+#### daf-2 mutants maintain learning and memory with age
 
 We previously found that daf-2 animals have extended motility (Maximum Velocity) that correlates with and predicts their extension of lifespan (Hahm et al., 2015). Additionally, not only do young daf-2 worms have better memory than wild-type worms, but daf-2 mutants also maintain learning and memory better with age (Kauffman et al., 2010; Kaletsky et al., 2016). However, the duration of this improvement was unknown. To determine the proportion of life that worms can learn and remember, we tested wild-type, daf-2, and daf-16;daf-2 worms for their learning and associative memory ability every day until these functions were lost. We found that while wild-type worms lose their learning and short-term memory abilities by Day 7–8 (Figure 1a, Figure 3a and b), learning and memory span were significantly extended in daf-2 mutants (Figure 3a and b); thus, a comparison of daf-2 neurons with wild-type neurons at Day 8 should reveal differences relevant to cognitive aging. The extension of learning and memory is dependent on the FOXO transcription factor DAF-16 (Figure 3a); in fact, while daf-16;daf-2 mutants still have the ability to learn for a few days, these mutants are completely unable to carry out any memory ability, even on Day 1. Thus, learning ability, which is similar in wild-type and daf-2;daf-16 mutants, is mechanistically distinct from short-term memory ability (Stein and Murphy, 2014). daf-2 worms maintained learning ability until Day 19 and short-term (1 hr) memory ability until Day 15, more than twice the duration of wild-type worms, while daf-16;daf-2 worms exhibit no short-term memory ability, even on Day 1 of adulthood (Figure 3b). Our data suggest that the learning span-to-lifespan (Figure 3—figure supplement 1c) and memory span-to-lifespan ratios in daf-2 worms were similar to or slightly higher than that of wild-type worms (Figure 3c and d), indicating that daf-2 mutants maintain cognitive function for at least proportionally as long as wild-type worms do. Thus, daf-2 mutants maintain their higher cognitive quality of life longer than wild-type worms, while daf-16;daf-2 mutants spend their whole lives without memory ability (Figure 3d), in contrast to claims that daf-2 mutants are less healthy than wild-type or daf-16 worms (Bansal et al., 2015). Additionally, it should be noted that because our choice assays distinguish motility function from learning and memory function (Kauffman et al., 2011), the improvements in memory with age shown by daf-2 mutants relative to wild-type are distinct from daf-2’s improvements in motility that we previously showed (Hahm et al., 2015). Therefore, we are interested in these genes that might contribute to the extended cognitive function that daf-2 worms demonstrate.
 
-## Aging IIS/FOXO neurons express stress-resistance genes to maintain neuronal function with age
+![Figure 3.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig3-v1.jpg)
+
+**Figure 3.:** (a) daf-2 mutants show better learning maintenance with age compared to N2 and daf-16;daf-2 worms. n=10 plates in each condition. (b) daf-2 mutants show better memory maintenance with age compared to N2 worms. daf-16;daf-2 worms do not have 1 hr memory on Day 1 of adulthood. N=10 plates in each condition. (c–d) daf-2 mutants have a slightly larger learning span/lifespan ratio and memory span/lifespan ratio than N2 (wild-type). Lifespan shown in Figure 3—figure supplement 1c. (e) PCA plot of Day 8 N2, daf-2, and daf-16;daf-2 neuronal RNA sequencing results. (f) Volcano plot of neuronal daf-2-regulated, daf-16-dependent up- and downregulated genes on adult Day 8 (Adjusted p-value < 0.05, log2(Fold-change) >0.5, n=6 biological replicates per strain). 570 genes were significantly upregulated and 814 genes were downregulated in daf-2 neurons compared with daf-16;daf-2. (g) Volcano plot of whole-worm daf-2 vs daf-16;daf-2 differentially-expressed genes during aging. 3154 genes are higher in daf-2, 1289 genes are higher in daf-16;daf-2 (log2[Fold-change(daf-2 vs daf-16;daf-2)]>1.5, p-adjusted <0.01). (h) Comparison of neuronal and whole-worm Day 8 daf-2 differentially-expressed genes (overlap p=3.34E-63, hypergeometric test). Neuron-specific and shared daf-2 upregulated genes with the highest fold changes are labeled.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a–b) FACS results of neuron isolation. Over 99% of the cells collected are GFP + neurons. 100,000 cells are collected for each biological replicate, six replicates for each genotype. (c) Representative image of N2 and daf-2 lifespan. (d) Number graph of lifespan, learning, and memory function. Related to Figure 4C and D. (e) Number of genes detected in Day 8 N2, daf-2, and daf-16;daf-2 neurons. (f) Ribosomal RNA depletion during sequencing. We used the library generation protocol with C. elegans-specific ribosomal RNA depletion kit (Tecan Genomics) successfully depleted rRNA to less than 20% of total reads. (g–h) Downsampling analysis for daf-2 vs daf-16;daf-2 and daf-2 vs N2. Both shows sufficient depth.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a–b) Gene ontology (GO) term analysis of whole-worm daf-2-regulated genes shows enrichment in stress-resistant genes. (c) Comparison of neuronal and whole-worm Day 8 daf-2 differentially-expressed genes show high overlap (~30%), but also identify genes specific to neurons and to the whole body. Related to Figure 3h. (d) Comparison of neuronal Day 1 and Day 8 daf-2 differentially expressed genes identifies a set of consistent and sets of changed genes.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Volcano plot of daf-2 vs N2 differentially expressed genes during aging. 1036 genes are more highly expressed in daf-2 mutants, 1285 genes are higher in N2 (log2[Fold-change(daf-2 vs N2)]>0.5, p-adjusted <0.05). (b–c) Neuronal Day 8 daf-2 vs N2 differentially expressed GO Terms. (d) Tissue query for daf-2 vs daf-16;daf-2 differentially expressed genes. (e) Tissue query for daf-2 vs N2 differentially expressed genes. (f) Full image of comparison of neuronal Day 8 daf-2 vs daf-16;daf-2 and daf-2 vs N2 differentially expressed genes. Related to Figure 5B.
+
+#### Aging IIS/FOXO neurons express stress-resistance genes to maintain neuronal function with age
 
 To identify genes that may improve memory and slow cognitive aging in long-lived daf-2 mutants, we compared the transcriptional profiles of Day 8 FACS-isolated neurons from daf-2 animals with Day 8 FACS-isolated wild-type and daf-16;daf-2 neurons; by Day 8, wild-type and daf-16;daf-2 worms have already lost their learning and memory ability, but daf-2 worms still maintain their cognitive functions (Figure 3a and b). It should be noted that wild-type worms still have normal chemotaxis and motility at Day 8 (Kauffman et al., 2010), and there is a separation of several days between the loss of cognitive functions and the loss of motility (Kauffman et al., 2010); therefore, comparison of the neuronal transcriptomes of daf-2 with wild-type and daf-16;daf-2 at this age should specifically highlight genes that are required for learning and memory rather than other functions.
 
@@ -68,15 +96,275 @@ We identified 570 upregulated and 814 downregulated genes in Day 8 daf-2 neurons
 
 Many genes upregulated in Day 8 daf-2 neurons relative to daf-16;daf-2 are related to stress responses, including heat stress (e.g. hsp-12.6, hsp-12.3, F08H9.4/hsp), oxidative stress (e.g. sod-3), and metal stress genes (e.g. mtl-1); and proteolysis (e.g. cpi-1, cpr-2, and tep-1). The upregulation of these genes may perform neuroprotective functions, as their homologs in mammals have been shown to do (Table 1). Specifically, 36 of the top 100 upregulated genes have identified orthologs or identified domains with known functions, of which 32 of (89%) have functions in promoting neuronal health. These mammalian homologs protect neurons against protein aggregation and harmful metabolites (e.g. cpi-1, alh-2, ttr-41, gpx-5) (Gauthier et al., 2011; Carmichael et al., 2021; Li et al., 2011; Lee et al., 2020; Hambright et al., 2017), maintain synaptic organization and neuronal homeostasis (e.g. dod-24, ptr-19, plep-1) (González-Calvo et al., 2022; Ung et al., 2018; Perland et al., 2016), facilitate neuronal injury repair (e.g. F08H9.4, sod-3) (Huang et al., 2023; Flynn and Melov, 2013), and maintain normal neuronal function (e.g. lgc-28, slc-36.3, lin-42) (Koukouli and Changeux, 2020; Zeiger et al., 2008; Lautrup et al., 2019; Smies et al., 2022). Together, these genes may help maintain daf-2’s neuronal health and protect neurons from accumulation of environmental harm during aging.
 
+**Table 1.**
+ List of top daf-2 vs daf-16;daf-2 upregulated genes with orthologs that have neuroprotective functions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene name</th>
+      <th>Full name</th>
+      <th>log2(FC)</th>
+      <th>p-adj</th>
+      <th>Mammalian ortholog</th>
+      <th>Ortholog full name</th>
+      <th>Inferred function</th>
+    </tr>
+    <tr>
+      <th colspan="7">Neuroprotective against Neurodegenerative Diseases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cpi-1</td>
+      <td>Cysteine Protease Inhibitor 1</td>
+      <td>2.07</td>
+      <td>7.80E-19</td>
+      <td>CST3</td>
+      <td>Cystatin C</td>
+      <td>Protease inhibitor, suppresses AD pathology Gauthier et al., 2011</td>
+    </tr>
+    <tr>
+      <td>alh-2</td>
+      <td>ALdehyde deHydrogenase 2</td>
+      <td>1.83</td>
+      <td>2.65E-05</td>
+      <td>ALDH1A1</td>
+      <td>Aldehyde dehydrogenase 1</td>
+      <td>Expressed in dopaminergic neurons. Regulates dopamine release in Parkinson’s Disease Carmichael et al., 2021</td>
+    </tr>
+    <tr>
+      <td>ttr-41,45,2</td>
+      <td>TransThyretin-Related family domain 41,45,2</td>
+      <td>1.68</td>
+      <td>3.98E-06</td>
+      <td></td>
+      <td></td>
+      <td>Inhibits Aβ fibril formation, and suppresses the AD pathology Li et al., 2011</td>
+    </tr>
+    <tr>
+      <td>cyp-33B1</td>
+      <td>CYtochrome P450 family 33B1</td>
+      <td>1.34</td>
+      <td>2.04E-03</td>
+      <td>CYP2J2</td>
+      <td>Cytochrome P450 2J2</td>
+      <td>Protective against Parkinson’s Disease through altered metabolism Li et al., 2018; Ferguson and Tyndale, 2011</td>
+    </tr>
+    <tr>
+      <td>spin-2</td>
+      <td>SPINster (Dm lysosomal permease) homolog 2</td>
+      <td>1.27</td>
+      <td>6.20E-04</td>
+      <td>SPNS2</td>
+      <td>Spinster homolog 2</td>
+      <td>Sphingosine-1-phosphate Transporter, neuroprotective in AD Zhong et al., 2019</td>
+    </tr>
+    <tr>
+      <td>gpx-5</td>
+      <td>Glutathione PeroXidase 5</td>
+      <td>1.27</td>
+      <td>3.99E-04</td>
+      <td>GPX3,5,6</td>
+      <td>glutathione peroxidase 3,5,6</td>
+      <td>Protects again lipid peroxidation, protects against neurodegeneration Lee et al., 2020; Hambright et al., 2017</td>
+    </tr>
+    <tr>
+      <td>cpr-2</td>
+      <td>Cysteine PRotease related 2</td>
+      <td>1.25</td>
+      <td>5.01E-03</td>
+      <td>CTSB</td>
+      <td>Cathepsin B</td>
+      <td>Lysosomal Protease, Involved in Aβ and APP protein degradation Cermak et al., 2016</td>
+    </tr>
+    <tr>
+      <td>djr-1.2</td>
+      <td>DJ-1 (mammalian transcript’l regulator) Related 1.2</td>
+      <td>1.09</td>
+      <td>3.90E-03</td>
+      <td>PARK7</td>
+      <td>Parkinsonism associated deglycase</td>
+      <td>Neuroprotective against Parkinson’s Disease; Prevents accumulation of harmful metabolites Heremans et al., 2022</td>
+    </tr>
+    <tr>
+      <td colspan="7">Synaptic Organization Maintenance</td>
+    </tr>
+    <tr>
+      <td>dod-24</td>
+      <td>Downstream Of DAF-16 (regulated by DAF-16) 24</td>
+      <td>1.93</td>
+      <td>1.39E-07</td>
+      <td></td>
+      <td>Cub-like Domain Containing Protein</td>
+      <td>Clustering of neurotransmitter receptor proteins González-Calvo et al., 2022</td>
+    </tr>
+    <tr>
+      <td>ptr-19,15</td>
+      <td>PaTched Related family 19,15</td>
+      <td>1.21</td>
+      <td>1.72E-05</td>
+      <td>PTCHD1,3,4</td>
+      <td>Patched domain-containing 1,3,4</td>
+      <td>Synaptic organization, autism risk factor Ung et al., 2018; Pastore et al., 2022</td>
+    </tr>
+    <tr>
+      <td>hbl-1</td>
+      <td>HunchBack Like (fly gap gene-related) 1</td>
+      <td>1.16</td>
+      <td>6.47E-06</td>
+      <td>hb</td>
+      <td>Hunchback (fly)</td>
+      <td>Regulate synapse number and locomotor circuit function Lee et al., 2022</td>
+    </tr>
+    <tr>
+      <td>cutl-4</td>
+      <td>CUTiclin-Like 4</td>
+      <td>1.08</td>
+      <td>2.74E-02</td>
+      <td>pio</td>
+      <td>Piopio (fly)</td>
+      <td>ECM protein for axonal growth and synapse formation Broadie et al., 2011</td>
+    </tr>
+    <tr>
+      <td>lron-2</td>
+      <td>eLRR (extracellular Leucine-Rich Repeat) ONly 2</td>
+      <td>1.06</td>
+      <td>8.70E-05</td>
+      <td>LGI1,2</td>
+      <td>Leucine-Rich Glioma Inactivated protein 1</td>
+      <td>Modulation of trans-synaptic proteins. Protection against seizure Fels et al., 2021</td>
+    </tr>
+    <tr>
+      <td colspan="7">Neuronal Homeostasis Maintenance</td>
+    </tr>
+    <tr>
+      <td>mocs-1</td>
+      <td>MOlybdenum Cofactor Sulfurase 1</td>
+      <td>1.05</td>
+      <td>1.17E-04</td>
+      <td>MOCOS</td>
+      <td>Molybdenum cofactor sulfurase</td>
+      <td>Regulation of redox homeostasis and synaptogenesis. Down in ASD Rontani et al., 2021</td>
+    </tr>
+    <tr>
+      <td>plep-1</td>
+      <td>PLugged Excretory Pore 1</td>
+      <td>1.12</td>
+      <td>2.92E-03</td>
+      <td>MFSD11</td>
+      <td>Major facilitator superfamily domain 11</td>
+      <td>Putative SLC solute carrier protein, involved in brain energy homeostasis Perland et al., 2016</td>
+    </tr>
+    <tr>
+      <td>cky-1</td>
+      <td>CKY homolog 1</td>
+      <td>1.08</td>
+      <td>1.58E-04</td>
+      <td>NPAS4</td>
+      <td>Neuronal PAS Domain Protein 4</td>
+      <td>Calcium-dependent transcription factor, neuronal homeostasis maintenance Fu et al., 2020; Shan et al., 2018</td>
+    </tr>
+    <tr>
+      <td colspan="7">Neuronal Injury Repair facilitation</td>
+    </tr>
+    <tr>
+      <td>F08H9.4, hsp-12.3,12.6</td>
+      <td>small HSP domain-containing protein</td>
+      <td>1.94</td>
+      <td>7.33E-06</td>
+      <td>HSPB2</td>
+      <td>Heat-shock Protein Beta 2</td>
+      <td>Facilitates PNS injury regeneration, suppresses inflammation Huang et al., 2023</td>
+    </tr>
+    <tr>
+      <td>sod-3</td>
+      <td>SOD superoxide dismutase 3</td>
+      <td>1.66</td>
+      <td>3.05E-09</td>
+      <td>SOD2</td>
+      <td>superoxide dismutase2</td>
+      <td>Converts superoxide to the less reactive hydrogen peroxide (H2O2). Protects neurons from injury. Flynn and Melov, 2013</td>
+    </tr>
+    <tr>
+      <td colspan="7">Normal Neuronal Activity Maintenance</td>
+    </tr>
+    <tr>
+      <td>lgc-28</td>
+      <td>Ligand-Gated ion Channel 28</td>
+      <td>1.38</td>
+      <td>7.29E-04</td>
+      <td>CHRNA6,3</td>
+      <td>Neuronal acetylcholine receptor subunit alpha-6,3</td>
+      <td>Nicotinic receptor. Regulates cognitive functions and addiction Koukouli and Changeux, 2020; Zeiger et al., 2008</td>
+    </tr>
+    <tr>
+      <td>F22B7.9</td>
+      <td></td>
+      <td>1.33</td>
+      <td>8.91E-15</td>
+      <td>METTL23</td>
+      <td>methyltransferase like 23</td>
+      <td>Interacts with GABPA; disruption causes intellectual disability Bernkopf et al., 2014; Reiff et al., 2014</td>
+    </tr>
+    <tr>
+      <td>fat-5</td>
+      <td>FATty acid desaturase 5</td>
+      <td>1.31</td>
+      <td>3.40E-03</td>
+      <td>SCD5</td>
+      <td>StearoylCoA Desaturase-5</td>
+      <td>Neuronal Cell Proliferation and Differentiation Sinner et al., 2012</td>
+    </tr>
+    <tr>
+      <td>slc-36.3</td>
+      <td>SLC (SoLute Carrier) homolog 36.3</td>
+      <td>1.25</td>
+      <td>2.88E-03</td>
+      <td>SLC36A4</td>
+      <td>Solute Carrier Family36 Member4</td>
+      <td>amino acid transporter, transports Trp, involved in kynurenic acid pathway Lautrup et al., 2019</td>
+    </tr>
+    <tr>
+      <td>lin-42</td>
+      <td>abnormal cell LINeage 42</td>
+      <td>1.15</td>
+      <td>1.66E-04</td>
+      <td>PER1,2</td>
+      <td>Period 1,2</td>
+      <td>Phosphorylates CREB, modulates CREB-mediated memory consolidation Smies et al., 2022</td>
+    </tr>
+    <tr>
+      <td>ctsa-1.1</td>
+      <td>CaThepSin A homolog 1.1</td>
+      <td>1.07</td>
+      <td>4.97E-05</td>
+      <td>CTSA</td>
+      <td>Lysosomal Ser carboxy-peptidase Cathepsin A</td>
+      <td>Involved in normal neuronal development De Pasquale et al., 2020; Hsu et al., 2018;</td>
+    </tr>
+    <tr>
+      <td>gsnl-1</td>
+      <td>GelSoliN-Like 1</td>
+      <td>1.06</td>
+      <td>2.93E-04</td>
+      <td>AVIL</td>
+      <td>advillin</td>
+      <td>Facilitates somatosensory neuron axon regeneration Chuang et al., 2018</td>
+    </tr>
+  </tbody>
+</table>
+
 We found that about a third of the daf-2-upregulated genes were shared between the daf-2 vs daf-16;daf-2 analysis and the daf-2 vs N2 analysis (338 genes) (Figure 3—figure supplement 3). Of the unshared genes, the daf-2-maintained genes that are specific to the daf-2 vs N2 comparison are bZIP transcription factors, including zip-5, zip-4, atf-2, and proteasome components (Figure 3—figure supplement 3D). These results indicate that other transcription factors may participate in regulating daf-2 functions in aged neurons in addition to the daf-16/FOXO transcription factor.
 
-## IIS/FOXO transcriptomic changes are necessary for daf-2 mutant’s improved neuronal functions
+#### IIS/FOXO transcriptomic changes are necessary for daf-2 mutant’s improved neuronal functions
 
 We were interested not only in the genes that remained upregulated with age, but also in genes that might have increased with age in the high-performing daf-2 mutants. That is, are there genes that increase in expression in daf-2 mutants that are necessary or beneficial for their continued high performance with age? Some of the Day 8 daf-2 vs wild-type or daf-16;daf-2 upregulated genes are also Class 1 DAF-16-dependent genes (Murphy et al., 2003) (sod-3, hsp-12.3, fat-5, and mtl-1, hil-1, and dao-2). However, many more genes were differentially expressed in Day 8 daf-2 vs daf-16;daf-2 neurons from our Day 1 data (Kaletsky et al., 2016; Figure 4a, Figure 3—figure supplement 2d). Of the ‘new’ genes – that is, genes upregulated specifically in neurons of Day 8 vs Day 1 of daf-2 vs daf-16;daf-2 – many have mammalian homologs that have been shown to play neuroprotective roles, by protecting against aggregation proteins and harmful metabolites, maintaining synaptic organization, neuronal homoeostasis, or neuronal activity, or facilitating neuronal injury repair (see Table 1 for specific references).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig4-v1.jpg)
 
-**Figure 4.:** daf-2 worms.(a) Comparison of neuronal Day 1 and Day 8 daf-2 vs daf-16;daf-2 upregulated genes. All shared genes and top Day 8-specific daf-2 upregulated genes are labeled. (b) daf-2-regulated fold-change profile of candidate genes. All candidates are upregulated in daf-2 mutants. (c) Description of candidate genes. log2(Fold-change) and p-adjusted values from the daf-2 vs daf-16;daf-2 comparison unless stated otherwise. (d) Candidate gene knockdown effects on Day 6 adult daf-2 learning (0 hr after conditioning). Two candidate genes, dod-24 and F08H9.4, show a significant decrease in learning ability. N=5 plates in each condition, merged results of 3 biological repeats shown. (e) Candidate gene knockdown effects on Day 6 adult daf-2 short-term memory (1 hr after conditioning). C44B7.5, dod-24, F08H9.4, mtl-1, and alh-2 showed significant decreases in memory. n=5 plates in each condition, the representative image of three biological repeats shown. (d-e) RNAi was performed using a neuron-sensitized RNAi strain CQ745: daf-2(e1370) III; vIs69 [pCFJ90(Pmyo-2::mCherry +Punc-119::sid-1)] V.*p<0.05. **p<0.01. ***p<0.001. ****p<0.0001. One-way ANOVA with Dunnet’s post-hoc analysis. Box plots: center line, median; box range, 25-75th percentiles; whiskers denote minimum-maximum values.
+**Figure 4.:** (a) Comparison of neuronal Day 1 and Day 8 daf-2 vs daf-16;daf-2 upregulated genes. All shared genes and top Day 8-specific daf-2 upregulated genes are labeled. (b) daf-2-regulated fold-change profile of candidate genes. All candidates are upregulated in daf-2 mutants. (c) Description of candidate genes. log2(Fold-change) and p-adjusted values from the daf-2 vs daf-16;daf-2 comparison unless stated otherwise. (d) Candidate gene knockdown effects on Day 6 adult daf-2 learning (0 hr after conditioning). Two candidate genes, dod-24 and F08H9.4, show a significant decrease in learning ability. N=5 plates in each condition, merged results of 3 biological repeats shown. (e) Candidate gene knockdown effects on Day 6 adult daf-2 short-term memory (1 hr after conditioning). C44B7.5, dod-24, F08H9.4, mtl-1, and alh-2 showed significant decreases in memory. n=5 plates in each condition, the representative image of three biological repeats shown. (d-e) RNAi was performed using a neuron-sensitized RNAi strain CQ745: daf-2(e1370) III; vIs69 [pCFJ90(Pmyo-2::mCherry +Punc-119::sid-1)] V.*p<0.05. **p<0.01. ***p<0.001. ****p<0.0001. One-way ANOVA with Dunnet’s post-hoc analysis. Box plots: center line, median; box range, 25-75th percentiles; whiskers denote minimum-maximum values.
 
 If the upregulated genes in aged daf-2 neurons are responsible for the extended memory span of daf-2 mutants, knocking down those genes should block older daf-2 mutants’ memory functions. Therefore, we tested the effect of RNAi knockdown of the top fold-change candidate genes on daf-2’s memory in aged adults. We chose Day 6 for testing because by then, like on Day 8, wild-type worms have already lost their learning and most memory abilities, but daf-2 worms retain normal cognitive functions, and this time point avoids the increased naïve chemotaxis that we observe in older daf-2 animals. As shown in Figure 4b–c, we selected these significantly differentially expressed candidate genes based on their ranking in fold-change. Previously, we have found that the top significantly differentially-expressed genes (by fold-change) are most likely to have strong effects on function, while less differentially-changed genes have less of an effect (Murphy et al., 2003; Kaletsky et al., 2016; Lakhina et al., 2015), therefore, we prioritized genes that are significantly different and the most highly expressed in daf-2 mutants compared to daf-16;daf-2 mutants for subsequent testing (Figure 4c). daf-2 worms, including neurons, are susceptible to RNA interference (Kaletsky et al., 2016; Wang, 2004). Of the eight candidate genes we tested, the reduction of three of them (F08H9.4, mtl-1, and dod-24, originally classified as a Class II gene with proposed immune activity) significantly decreased daf-2’s learning ability on Day 6 (Figure 4d). Those genes plus reduction of two additional genes (C44B7.5 and alh-2) affected 1 hr memory (Figure 4e) in Day 6 daf-2 mutants. That is, knockdown of the heat shock-related gene F08H9.4, the innate immunity gene dod-24, aldehyde dehydrogenase alh-2, and previously uncharacterized gene C44B7.5 are required to some degree for daf-2’s extended memory ability. The reduction of the metal stress gene mtl-1, which is expressed in neurons as well as the rest of the body, had a slight effect on learning and memory.
 
@@ -88,6 +376,14 @@ Together, these data suggest that the specific genes that are differentially reg
 
 Although it has been shown previously that daf-2 worms maintain various functions with age, how long they can maintain learning and memory with age, and the genes that might be responsible for these extended neuronal functions, have not been previously explored. Here, we have found that daf-2 worms maintain learning and memory abilities proportional with (or even slightly beyond) their degree of lifespan extension, underscoring daf-2’s improved healthspan (Hahm et al., 2015). To understand how memory is lost with age and retained in insulin/IGF-1-like signaling mutants, we have characterized the neuronal transcriptomes of aged wild-type worms and IIS (daf-2) and IIS/FOXO (daf-16;daf-2) mutants (Figure 5). We found that wild-type neuronal aging is characterized by a downregulation of neuronal function genes and an upregulation of proteolysis genes and transcriptional and epigenetic regulators, which together may help explain the loss of neuronal identity and function with age. We also identified the transcriptomic profile accompanying daf-2’s extended learning and memory span. Specifically, daf-2 neurons maintain higher expression of stress response genes and predicted neuronal homeostasis functions (Table 1), which may help make them more resistant to environmental adversities and age-related decline. We also identified genes responsible for wild-type worms’ worsened learning and memory with age.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig5-v1.jpg)
+
+**Figure 5.:** During normal neuronal aging, neuron-specific genes decrease in expression, while proteolysis and epigenetic regulators are upregulated, resulting in neuron dysfunction and cognitive function loss. In aged daf-2 mutants, upregulation of neuroprotective genes including dod-24, F08H9.4, C44B7.5, alh-2, and mtl-1 contribute to daf-2’s improved cognitive function. The diagram was generated using Biorender, and published using a CC BY-NC-ND license with permission.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95621/elife-95621-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Comparison with CeNGEN (L4 stage) gene expression data (Taylor et al., 2021) shows a high correlation, with many genes only detected in our isolated neuron bulk-sequencing dataset (orange; wild-type Day 1 neuron sequencing data used in the comparison). Genes with an average log2(TPM) >0.5 are considered detected. (b) Venn diagram showing genes detected in this dataset (orange), CeNGEN dataset (brown) and both (gray); only wild-type Day 1 neuron sequencing data were used in the comparison. (c–d) Comparison with gene expression data from the age-matched neuron cells from the Roux et al., dataset (Roux et al., 2023) shows a high correlation, with many genes only detected in our bulk-sequencing dataset. (e–f) Venn diagram showing genes detected in this dataset (orange or blue), Roux et al., dataset (brown) and both (gray). Only age-matched neuron cells from the Roux et al., dataset was used for gene expression analysis. (g) Correlation between our whole-worm Day 8 daf-2 and daf-16;daf-2 sequencing and Class I and Class II gene rank from Tepper et al., 2013. High correlation indicates consistency between our isolated neuron RNA-sequencing results with former microarray results, despite the differences in approaches and ages. (h) Short-term associative memory (STAM) with and without 5’-fluorodeoxyuridine (FUdR) shows that 3 Days on FUdR does not affect learning and memory ability.
+
 By employing a FACS-based neuron-sorting technique, we selectively analyzed adult neuron-function-related genes and investigated their aging process, which is not easily discernible through whole-worm sequencing (Gao et al., 2023; Wang et al., 2022; Roux et al., 2023; Figure 5—figure supplement 1). Sequencing many biological repeats of aging neurons to high depth with ribosomal RNA depletion allowed us to detect a larger number of genes compared to other neuron-related bulk and single-cell sequencing profiles (Wang et al., 2022), providing a deep transcriptomic dataset of aged wild-type, IIS mutant, and IIS/FOXO mutant neurons. Our analysis allowed us to identify differentially expressed genes that are known to be expressed in at a small number of neurons, even for low-abundance genes. Notably, our sequencing results uncovered genes previously not known to be expressed in neurons that remained undetected in other datasets. Moreover, we revealed the involvement of known neuronal genes in the aging process, such as ins-6 and srd-23. We hope that this dataset will become a valuable resource for detecting new candidates in neuronal aging.
 
 For example, dod-24, which we observed to be upregulated in daf-2 neurons and required for daf-2’s extended memory, was downregulated in the daf-2 whole-worm transcriptome (Figure 3—figure supplement 2c). dod-24 has been traditionally classified as a Class II gene that is downregulated in daf-2 worms and upregulated by daf-16 RNAi treatment (Murphy et al., 2003; Tepper et al., 2013). Functionally, it has been shown to be an innate immunity gene upregulated during pathogen infection (Shapira et al., 2006; Eckl et al., 2017; Mack et al., 2022), and its whole-body reduction has been shown to extend the lifespan of wild-type animals (Murphy et al., 2003). However, here we find that dod-24 is beneficial in the nervous system and required for daf-2’s extended learning and memory in aged worms. This intriguing contrast between the whole-worm transcriptome and the neuron-specific transcriptome suggests that some genes may have distinct regulatory roles in the nervous system, necessitating a more precise approach beyond whole-worm transcriptomics.
@@ -98,35 +394,35 @@ In addition to examining aging in wild-type and IIS/FOXO mutants independently, 
 
 We found that the insulin-like peptide ins-19 was upregulated in aged neurons and was downregulated in aged daf-2 neurons, and its downregulation in wild-type worms extended memory span. Insulin-like peptides play crucial roles as receptor ligands (in both agonist and antagonist roles) for DAF-2, and we have found them to be downregulated in daf-2 mutants compared with daf-16;daf-2 mutants, possibly creating a feedback loop that dampens the insulin signaling pathway, as was previously shown for ins-7 and ins-18 (Murphy et al., 2003; Murphy et al., 2007). These peptides exhibit diverse functions in development, dauer formation, and longevity (Murphy et al., 2003; Murphy et al., 2007; Thomé-Duret et al., 1998; Kawano et al., 2000; Pierce et al., 2001; Li et al., 2003). Notably, certain insulin-like peptides have been linked to neuronal activities, such as the regulation of aversive learning by the two antagonistic peptides ins-6 and ins-7 (Chen et al., 2013), and reduced long-term learning and memory by ins-22 RNAi (Lakhina et al., 2015). In our study, the expression changes of ins-19 during wild-type aging and in daf-2 mutants provide an example of how longevity mutants can reverse wild-type transcriptional changes during aging, ultimately reducing behavioral and functional decline.
 
-## Summary of mechanistic insights
+### Summary of mechanistic insights
 
 Our analysis of transcriptomes from isolated aged Day 8 neurons of wild-type, daf-2, and daf-16;daf-16 mutants reveal several major mechanistic insights. Specifically, we found that wild-type neurons lose their neuronal identity through a combination of the loss of neuron-specific function genes with age, and the concomitant dysregulated increase in non-neuronal genes with age. Furthermore, at least a fraction of the top-upregulated genes with age can play deleterious roles; that is, they rise with age, and their knockdown improves function, even in young animals. This argues against the idea that all of these genes play a compensatory role with age.
 
 We also found that the knockdown of individual top-ranked genes that function in learning and memory can have a large impact - like removing a cog of a machine. This is in contrast to our earlier findings regarding gene reduction in lifespan, where most cellular longevity processes regulated by DAF-16 activity appear to be additive, and therefore loss of individual major genes downstream of DAF-2 and DAF-16 have at most a 5–10% impact (White et al., 1986; Murphy et al., 2003). Several of these genes we found to be required for daf-2’s age-related improvement in learning and memory - namely dod-24, F08H9.4, C44B7.5, and alh-2 – were previously not associated with memory function. Finally, these genes are distinct from the set of upregulated Day 1 daf-2 vs daf-16;daf-2 genes; how they each individually maintain neuronal function better with age will be interesting to dissect.
 
-## Conclusions
+### Conclusions
 
 Beyond our sequencing analysis, we have established links between genomics, function, and behavior. We also identified several new genes required for daf-2’s age-related improvement in learning and memory, shedding light on their neuron-specific roles. These additional findings further suggest that neuronal sequencing datasets can be used to identify functional candidates and pathways during the aging process. By bridging the gap between transcriptomic landscapes, genetic regulation, and functional outcomes, our study provides a greater understanding of the mechanisms underlying neuronal aging, providing insights into the development of aging interventions.
 
 ## Methods
 
-## Strains and worm cultivation
+### Strains and worm cultivation
 
 N2 (wild-type), OH441: otIs45(unc-119::GFP), CQ295: otIs45(unc-119::GFP);daf-2(e1370), CQ296: otIs45(unc-119::GFP);daf-16(mu86);daf-2(e1370), LC108: uIs69 (myo-2p::mCherry +unc-119p::sid-1), CQ705: daf-2(e1370) III, 3 X outcrossed, CQ745: daf-2(e1370) III; vIs69 [pCFJ90(Pmyo-2::mCherry +Punc-119::sid-1)] V, QL188: ins-19(tm5155) II, CX3695: kyIs140(str-2::GFP +lin-15(+)), CQ461: (daf-2(e1370);Pmec-4::mCherry), and CQ501: (daf-2 (e1370);zip-5(gk646);Pmec-4::mCherry). Strains were grown on high-growth media (HGM) plates seeded with E. coli OP50 bacteria using standard methods Brenner, 1974.
 
-## Tissue-specific isolation
+### Tissue-specific isolation
 
 For neuronal isolation, five plates of fully-grown worms from HG plates were synchronized by hypochlorite treatment, eggs spread on seeded plates to hatch, and at least five plates/replicate were grown to L4 on HGM plates until transferred to HGM plates with FUdR to avoid progeny contamination. This gives us ~6000 healthy Day 8 worms to sort. Neuron isolation and Fluorescent-activated cell sorting were carried out as previously described (Kaletsky et al., 2016; Kaletsky et al., 2018). Briefly, worms were treated with 1000 uL lysis buffer (200 mM DTT, 0.25% SDS, 20 mM HEPES pH 8.0, 3% sucrose) for 6.5 min to break the cuticle. Then worms were washed and resuspended in 500 uL 20 mg/mL pronase from Streptomyces griseus (Sigma-Aldrich). Worms were incubated at room temperature with mechanical disruption by pipetting until no whole-worm bodies were seen, and then ice-cold osmolarity-adjusted L-15 buffer(Gibco) with 2% Fetal Bovine Serum (Gibco) were added to stop the reaction. Prior to sorting, cell suspensions were filtered using a 5 um filter and sorted using a FACSVantage SE w/ DiVa (BD Biosciences; 488 nm excitation, 530/30 nm bandpass filter for GFP detection). Sorting gates were determined by comparing with age-matched, genotype-matched non-fluorescent cell suspension samples. Fluorescent neuron cells were directly sorted into Trizol LS. 100,000 GFP + cells were collected for each sample.
 
-## RNA extraction, library generation, and sequencing
+### RNA extraction, library generation, and sequencing
 
 We used the standard trizol-chloroform-isopropanol method to extract RNA, then performed RNA cleanup using RNeasy MinElute Cleanup Kit (Qiagen). RNA quality was assessed using the Agilent Bioanalyzer RNA Pico chip, and bioanalyzer RIN >6.0 samples were observed before library generation. 2 ng of RNA was used for library generation using Ovation SoLo RNA-Seq library preparation kit with AnyDeplete Probe Mix- C. elegans (Tecan Genomics) according to the manufacturer’s instructions (Barrett et al., 2021). Library quality and concentration was assessed using an Agilent Bioanalyzer DNA 12000 chip. Samples were multiplexed and sequencing were performed using NovaSeq S1 100nt Flowcell v1.5 (Illumina).
 
-## Data processing
+### Data processing
 
 FastQC was performed on each sample for quality control analysis. RNA STAR package was used for mapping paired-end reads to the C. elegans genome ce11 (UCSC Feb 2013) using the gene model ws245genes.gtf. Length of the genomic sequence around annotated junctions is chosen as read length –1. 50–70% of reads were uniquely mapped. Reads uniquely mapped to the genome were then counted using htseq-count (mode = union). DESeq2 analysis was then used for read normalization and differential expression analysis on counted reads (Love et al., 2014). Genes with a log10TPM >0.5 were considered as detected and genes with a log2(fold-change) >0.5 and p-adjusted <0.05 are considered differentially expressed in further analysis. Gene ontology analysis were performed using gprofiler (Raudvere et al., 2019) or WormCat 2.0 (Holdorf et al., 2020) and category 2 was selected to show. Tissue query was performed on the top 500 highest fold-change genes, using the worm tissue query website (https://www.worm.princeton.edu; Kaletsky et al., 2018), and only major systems were selected in the analysis.
 
-## Learning and memory experiments
+### Learning and memory experiments
 
 We performed Short-Term Associative Memory (STAM) experiments as previously described (Kauffman et al., 2010; Kauffman et al., 2011). Briefly, we used five plates of synchronized adult worms/samples to perform each experiment. One plate of worms was used to test the naïve chemotaxis assay without conditioning, while the other three plates were washed into M9, and washed three additional times to get rid of the bacteria. These worms are starved for 1 hr to prime them for food uptake. Then these worms are transferred to conditioning plates with NGM plates seeded with OP50 and 10% butanone stripes on the lid for 1 hr to perform conditioning. After conditioning, worms are either transferred from the conditioning plate directly to the chemotaxis plates to assess learning, or transferred to the holding plate for 1 hr or 2 hr to assess for memory. After staying on holding plates for 1 hr or 2 hr, worms are then transferred onto chemotaxis plates to assess for short-term memory. Chemotaxis assays were performed by transferring worms onto chemotaxis plates with 1 uL 10% butanone and 1 uL ethanol spots separated by 8 cm on a 10 cm NGM plate. Worms who have reached either the butanone spot or the ethanol spot are paralyzed by the 1 uL 7.5% NaN3 on these spots. For each timepoint, five chemotaxis plates are used to minimize the variation of the outcome. We performed this chemotaxis assay to butanone on naïve and appetitive-trained worms at different time points to assess change in preference to butanone.
 
@@ -136,10 +432,10 @@ Learning index is calculated by subtracting the trained chemotaxis index with na
 
 For learning and memory span assays, we obtained synchronized worms from hypochlorite-treated eggs. Synchronized worms were washed onto 5’-fluorodeoxyuridine (FUdR) at L4 and maintained on FUdR plates by transferring to new plates every 2 days. 1 Day Prior to experiments, worms are washed onto fresh HG plates without FUdR to avoid change in behavior caused by FUdR. To verify that FUdR has no effect on short-term memory, we compared worms with and without FUdR (Figure 5—figure supplement 1d), and found no differences. For utx-1 and nmgp-1 RNAi experiments, synchronized L4 neuron-RNAi sensitized worms were washed onto HGM plates with carbenicillin and IPTG and seeded with HT115 RNAi bacteria containing the RNAi constructs from the Ahringer Library. For daf-2 upregulated candidates’ RNAi experiments, synchronized L4 daf-2 neuron-RNAi-sensitized worms were washed onto HGM plates added with carbenicillin, FUdR, and isopropyl-b-D-thiogalactopyranoside (IPTG) and seeded with HT115 bacteria containing RNAi constructs generated from the Ahringer RNAi Library, then were transferred onto fresh RNAi plates every 2 days until Day 6. 1 Day Prior to experiments, worms are transferred onto plates without FUdR.
 
-## Quantitative and statistical analysis
+### Quantitative and statistical analysis
 
 All experimental analysis was performed using Prism 8 software. Two-way ANOVA with Tukey post-hoc tests were used to compare the learning curve between control and experimental groups. One-way ANOVA followed by Dunnet post-hoc tests for multiple comparisons was performed to compare learning or 2 hr memory between various treatment groups and control. Chi-square test was performed to compare the neuron morphology change between young and aged AWC neurons. All GO term analyses were performed using Wormcat 2.0 software with Bonferroni corrected adjusted p-values. Venn diagram overlaps were compared using the hypergeometric test. Differential expression analysis of RNA-seq were performed using DESeq2 algorithm and adjusted p-values were generated with Wald test using Benjamini and Hochberg method (BH-adjusted p-values). Additional statistical details of experiments, including sample size (with n representing the number of chemotaxis assays performed for behavior, RNA collections for RNA-seq, and the number of worms for microscopy), can be found in the methods and figure legends. Regression analyses were performed using sklearn packages. Correlations were calculated using the SciPy packages.
 
-## Materials availability
+### Materials availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by Coleen T. Murphy (ctmurphy@princeton.edu).

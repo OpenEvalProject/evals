@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02495e989 Institute for research in Psychology (IPSY) & Neuroscience (IoNS), Louvain Bionics, Crossmodal Perception and Plasticity Laboratory - University of Louvain (UCLouvain) Louvain-la-Neuve Belgium
-2. https://ror.org/05f950310 Department of Brain and Cognition, KU Leuven Leuven Belgium
-3. https://ror.org/05trd4x28 Center for Mind/Brain Studies, University of Trento Trento Italy
-4. https://ror.org/03r5zec51 School of Health Sciences, HES-SO Valais-Wallis Sion Switzerland
+1. Institute for research in Psychology (IPSY) & Neuroscience (IoNS), Louvain Bionics, Crossmodal Perception and Plasticity Laboratory - University of Louvain (UCLouvain) Louvain-la-Neuve Belgium ([ROR:02495e989](https://ror.org/02495e989))
+2. Department of Brain and Cognition, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Center for Mind/Brain Studies, University of Trento Trento Italy ([ROR:05trd4x28](https://ror.org/05trd4x28))
+4. School of Health Sciences, HES-SO Valais-Wallis Sion Switzerland ([ROR:03r5zec51](https://ror.org/03r5zec51))
 5. The Sense Innovation and Research Center, Lausanne and Sion Sion Switzerland
 
 † Corresponding author
@@ -40,9 +40,17 @@ The current study aimed to carry out a comprehensive uni- and multivariate chara
 
 ## Results
 
-## β’s extraction
+### β’s extraction
 
 We defined our regions of interest (ROIs) based on group differences of the univariate results (Figure 2 and Figure 2—figure supplement 1). However, in these univariate contrasts, we included the sounds from all the different categories. Is one of our four main categories (i.e. animal, human, manipulable objects, and big objects and places) driving these groups’ differences (Figure 1)?
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig2-v1.jpg)
+
+**Figure 2.:** (A) ROIs selected from groups’ contrasts at the univariate level. Note that, for illustration purpose, we report here the groups univariate contrasts including all subjects, but to avoid circular analyses we actually created ad hoc ROIs using a leave-one-subject-out approach (i.e. for each subject we excluded himself/herself from the univariate contrast). (B) β-Values from each group and ROIs for every main category (animal, human, manipulable, big objects and places) are reported in the red (temporal) and blue (occipital) rectangles. Black bars show standard error (sample size: Early Blind=16; Late Blind=15; Sighted Controls=20).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In the first row the results within each group (sighted, early blind, and late blind) for the contrast All Sound > Baseline are reported. In the second and third rows all the possible groups’ contrasts are reported.
 
 To address this point we extracted the β-values in each ROI from every subject for every main category (see Supplementary file 3 and Figure 2B) and we looked if there was a significant interaction Group*Category.
 
@@ -64,9 +72,19 @@ Interestingly, we did not find any significant interaction Group*Category, sugge
 
 Does this mean that all the categories are equally represented in our ROIs in sighted and in blind groups? To better address this point and to look at the categorical representation of the different sounds at a finer-grained scale in both sighted and blind individuals, we run a further set of multivariate fMRI analyses.
 
-## MVP eight-way classification
+### MVP eight-way classification
 
 MVPA results for the EB/SC groups are represented in Figure 3A (left panel). In the SC group the mean decoding accuracy (DA) of the eight categories is significantly different from chance level (12.5%) in the temporal (DA = 23.71%; p<0.001) but not in the occipital (DA = 12.21%; p=0.67) ROIs. In the EB group the mean decoding accuracy is significant in both temporal (DA = 20.94%; p<0.001) and occipital cortex (DA = 15.78%; p<0.001). Importantly, a permutation test also revealed a significant difference between groups in both regions. In the occipital cortex the decoding accuracy value is significantly higher in EB than the SC (p<0.001, Cohen’s d=1.25), while in the temporal ROI the accuracy value is significantly higher in SC than EB (p=0.01, Cohen’s d=0.79). Importantly, the adjusted rank transform test (ART) 2 Groups × 2 ROIs revealed a significant group by region interaction (F(1,34)=11.05; p=0.002).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig3-v1.jpg)
+
+**Figure 3.:** Eight-way decoding results from the early blind/sighted control (EB/SC) groups (left) and late blind (LB)/SC groups (right). Black bars show standard error (sample size: Early Blind=16; Late Blind=15; Sighted Controls=20).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** In the SCLB group the decoding accuracy is significant in the temporal (DA = 22.83%; p<0.001) but not in the occipital (DA = 13.11%; p=0.18) region of interest (ROI). In the LB group the decoding accuracy is significant in both temporal (DA = 17.89%; p<0.001) and occipital (DA = 14.39%; p=0.002) regions. A permutation test also revealed a significant difference between groups in both regions. In the occipital cortex the decoding accuracy value is significantly higher in LB than the SC (p=0.03, Cohen’s d=0.59), while in the temporal ROI the accuracy value is significantly higher in SC than LB (p=0.01, Cohen’s d=0.72). Importantly, the adjusted rank transform test (ART) 2 Groups × 2 ROIs revealed a significant group by region interaction (F(1,28)=4.23; p=0.04). The results are similar to the results we obtained from the LB/SC comparison (not age matched). Black bars show standard error (sample size: Late Blind=15; Sighted Controls=15).
 
 MVPA results for the LB/SC groups are represented in Figure 3A (right panel). In the SC group the decoding accuracy is significant in the temporal (DA = 25.75%; p<0.001) but not in the occipital (DA = 12.87%; p=0.31) ROI. In the LB group the decoding accuracy is significant in both occipital (DA = 15.56%; p<0.001) and temporal (DA = 20.75%; p<0.001) regions.
 
@@ -74,19 +92,35 @@ A permutation test also revealed a significant difference between groups in both
 
 In addition, we also report the same analysis performed with a searchlight approach (Figure 3—figure supplement 1) for each group vs. baseline (p<0.05 FWE) and for each groups’ comparison (p<0.005 unc) including the direct comparison of EB and LB. The results from this whole brain analysis support our ROI results. Indeed, we generally observed an enhanced decoding accuracy in the fronto-temporal areas in SC compared to blind groups (both EB and LB) and a decreased decoding accuracy in the occipito-parietal regions in SC compared to blind groups (both EB and LB).
 
-## Representational similarity analysis
+### Representational similarity analysis
 
-## RSA – correlation between the representational structure of occipital and temporal ROIs
+#### RSA – correlation between the representational structure of occipital and temporal ROIs
 
 The results of this analysis are represented in Figure 4A. We looked at whether the representation of the eight sound categories shares any similarity between the occipital and the temporal parcels within each blind and sighted subject, with particular interest at group differences. The permutation test revealed a significant correlation between the representational structure of occipital ROI and the representational structure of the temporal region only in blind groups (EB: r=0.12, p<0.01; LB: r=0.14, p<0.01), but not in SC group (r=0.02 in between both ROIs). When we look at the differences of correlations values between groups, we found a significant difference between the EB and the SC groups (p<0.01, FDR corrected), highlighting an increased similarity between the occipital and the temporal dissimilarity matrices (DSMs) in the EB when compared to the SC group (Figure 4A). The difference between the LB and the SC (Figure 4A) was also significant (p<0.001, FDR corrected), showing an increased similarity between the occipital and the temporal DSMs in the LB when compared to the SC group (Figure 4A).
 
-## Comparison between brain DSMs and different representational models based on our stimuli space
+![Figure 4.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig4-v1.jpg)
+
+**Figure 4.:** (A) Spearman’s correlation between occipital and temporal DSMs. (B) Spearman’s correlation between brain DSMs (occipital and temporal) and the human model. Black bars show standard error (sample size: Early Blind=16; Late Blind=15; Sighted Controls=20).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** As a supplemental information, we investigated whether there was a statistical difference between groups in the correlation with the behavioral model, both in occipital and in temporal regions of interest (ROIs). (Top panel) Representational similarity analysis (RSA) results with the behavioral model for the early blind/sighted control (EB/SC) groups. The permutation test did not reveal a significant different correlation between EB and SC nor in the occipital ROI (p=0.12), neither in the temporal ROI (p=0.2).Finally, adjusted rank transform test (ART) analysis 2 Groups × 2 ROIs did not reveal any significant effect of interaction group by region. (Bottom panel) RSA results with the behavioral model for the late blind (LB)/SC groups. The permutation test did not reveal a significant different correlation between LB and SC nor in the occipital ROI (p=0.6), neither in the temporal ROI (p=0.14). The ART analysis 2 Groups × 2 ROIs did not reveal any significant interaction between groups and regions. Black bars show standard error (sample size: Early Blind=16; Late Blind=15; Sighted Controls=20).
+
+#### Comparison between brain DSMs and different representational models based on our stimuli space
 
 Is there a specific feature that makes the structure of the occipital DSMs of blind closer to their temporal ROI DSMs?
 
 Based on which dimensions (high or low level) are the sounds represented in the temporal and in the occipital parcels in our groups? The RSA comparisons with representational models, based either on low-level acoustic properties of the sounds or on high-level representations, can give us some important information about which representational structure could drive the observed decoding and correlation results.
 
 The correlations’ results with representational models are represented in Figure 5C and D.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representation of the seven models. (B) Matrix including the linear correlations between each pair of models. Yellow indicates high correlations, blue indicates low correlation. (C) Correlations between temporal dissimilarity matrix (DSM) of each group and the seven representational models. (D) Correlation between occipital DSM of each group and the seven representational models. Bars show mean Spearman’s correlations across participants; error bars show standard error and each dot represents one participant (Sample size: Early Blind=16; Late Blind=15; Sighted Controls=20). Horizontal thick gray lines show the lower bound of the noise ceiling, which represents the reliability of the correlational patterns and provides an approximate bound of the observable correlations between representational models and neural data (Bracci and Op de Beeck, 2016; Nili et al., 2014). An asterisk below the bar indicates that correlations with that model were significantly higher than zero. Correlations with individual models are sorted from highest to lowest. Horizontal black lines above bars show significant differences between the correlations of the two end points (FDR corrected for multiple comparisons): we only reported the statistical difference between models showing a positive significant correlation and all other models.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** In the SCLB group the correlation is significant in the temporal (r=0.23; p<0.00001) but not in the occipital (r=0.08; p=0.11) region of interest (ROI). In the LB group the correlation is significant in both occipital (r=0.21; p<0.0001) and temporal (r=16.27; p<0.003) regions. In the occipital ROI, the permutation revealed a significant difference between LB and SC (p=0.03), while in the temporal ROI there was not a significant difference between LB and SC (p=0.14). The adjusted rank transform test (ART) analysis 2 Groups × 2 ROIs revealed a significant interaction between groups and regions (F(1,28)=4.4; p=0.04). Black bars show standard error (sample size: Late Blind=15; Sighted Controls=15).
 
 In Figure 5D we reported the ranked correlation between the occipital DSMs in each group and each of the seven representational models. The human model showed the highest correlation with the DSM of the occipital ROIs in the blind groups (EB: r=0.20, p=0.0012; LB: r=0.16, p<0.014). In the SC group, none of the models shows a significant correlation with the occipital DSM. The r values and the p-values for each model and group are reported in Supplementary file 4. See also Figure 5A and B to visualize the complete set of models and the correlation between them.
 
@@ -100,11 +134,15 @@ RSA results with the human model for the LB/SC groups are represented in Figure 
 
 To be sure that the behavioral model was not showing a similar trend as the human model, we perform an additional statistical analysis also for this model. With this supplemental analysis, we investigated whether there was a statistical difference between groups in the correlation with the behavioral model (see Figure 4—figure supplement 1). This analysis did not reveal any significant difference between groups nor an interaction Group*Region.
 
-## RSA – additional whole brain searchlight analyses
+#### RSA – additional whole brain searchlight analyses
 
 We performed these analyses to show empirically that our stimuli are at least partially independent from the representation of low-level auditory properties in the temporal cortex and that they are suitable for investigating categorical auditory representation.
 
 First, we used RSA with partial correlation to look whether we could segregate the representation of categorical vs. low-level auditory properties of our stimuli. In Figure 6 it is shown how we could segregate in every group the portion of the temporal cortex representing the pitch regressing out human coding (on the right Heschl gyrus), a specific portion of right STG coding for harmonicity-to-noise ratio (HNR) in the three groups also regressing out human coding and finally the representation of the human model regressing out both pitch and HNR (bilateral superior lateral temporal region).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig6-v1.jpg)
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79370/elife-79370-fig6-figsupp1-v1.jpg)
 
 Second, we also run a split-half analysis to show that our auditory stimuli produce a stable pattern of activity in the temporal cortex (see Figure 6—figure supplement 1). Our data show that in all the groups (i.e. SC, EB, and LB) a big portion of the temporal cortex (including the superior temporal gyrus [STG], part of the middle temporal gyrus, and the Heschl gyrus both in the left and in the right hemispheres) show a highly significant stability of the patterns, suggesting that these portions of the temporal cortex have a stable representation of the sounds we selected. Interestingly, we also observed that the split-half correlation is increased in the occipital cortex of both EB and LB groups compared to the SC and it is, concomitantly, decreased in the temporal cortex of both blind groups (EB and LB) when compared to sighted subjects. A result that goes in line with our main decoding results.
 
@@ -138,9 +176,9 @@ Could such a difference be driven by general factors like group differences in p
 
 To summarize, we discovered that in both EB and LB the enhanced coding of sound categories in occipital regions is coupled with lower coding in the temporal regions compared to sighted people. The brain representation of the voice category is the one mostly altered in both EB and LB when compared to sighted people. This brain reorganization in blind people is mostly explained by the categorical aspects of the voice category and not by their acoustic features (pitch or harmonicity). An intriguing possibility raised by our results is that visual deprivation may actually trigger a redeployment mechanism that would reallocate part of the processing typically tagging the preserved senses (i.e. the temporal cortex for the auditory stimulation) to the occipital cortex deprived of its most salient visual input.
 
-## Method
+### Method
 
-## Participants
+#### Participants
 
 Fifty-two participants involved in our auditory fMRI study: 17 EB (10 Female (F), 15 LB (4 F) and 20 SC 6 F).
 
@@ -156,19 +194,19 @@ All participants were blindfolded during the task. Participants received a monet
 
 Since this paper is submitted as a Research Advances format, it represents a substantial development that directly build upon a Research Article published previously by eLife (Mattioni et al., 2020). As for the journal recommendation, no extensive description of material and methods will appear when directly overlapping with our previous publication.
 
-## Stimuli
+### Stimuli
 
 A preliminary experiment was carried out to select the auditory stimuli. The detailed procedure is described in Mattioni et al., 2020.
 
 The final acoustic stimulus set included 24 sounds from eight different categories (human vocalization, human non-vocalization, birds, mammals, tools, graspable objects, environmental scenes, big mechanical objects) that could be reduced to four superordinate categories (human, animals, manipulable objects, big objects/places) (see Figure 1 and Supplementary file 2).
 
-## Procedure
+### Procedure
 
 Before entering the scanner, each participant was familiarized with the stimuli to ensure perfect recognition. In the fMRI experiment each trial consisted of the same stimulus repeated twice. Rarely (8% of the occurrences), a trial was made up of two different consecutive stimuli (catch trials). Only in this case, participants were asked to press a key with the right index finger if the second stimulus belonged to the living category and with their right middle finger if the second stimulus belonged to the non-living category. This procedure ensured that the participants attended and processed the stimuli. Each pair of stimuli lasted 4 s (2 s per stimulus) and the inter-stimulus interval between one pair and the next was 2 s long for a total of 6 s for each trial. Within the fMRI session, participants underwent five runs. Each run contained three repetitions of each of the 24 stimuli, eight catch trials and two 20-s-long periods (one in the middle and another at the end of the run). The total duration of each run was 8 min and 40 s. The presentation of trials was pseudo-randomized: two stimuli from the same category (i.e. animals, humans, manipulable objects, non-manipulable objects) were never presented in subsequent trials. The stimuli delivery was controlled using MATLAB R2016b (https://www.mathworks.com) Psychophysics toolbox (http://psychtoolbox.org).
 
-## fMRI data acquisition and analyses
+### fMRI data acquisition and analyses
 
-## fMRI data acquisition and pre-processing
+#### fMRI data acquisition and pre-processing
 
 We acquired our data on a 4T Bruker Biospin MedSpec equipped with an eight-channel birdcage head coil. Functional images were acquired with a T2*-weighted gradient-recalled echo-planar imaging (EPI) sequence (TR, 2000 ms; TE, 28 ms; flip angle, 73°; resolution, 3×3 mm; 30 transverses slices in interleaved ascending order; 3 mm slice thickness; field of view (FoV) 192×192 mm2). The four initial scans were discarded to allow for steady-state magnetization. Before each EPI run, we performed an additional scan to measure the point-spread function (PSF) of the acquired sequence, including fat saturation, which served for distortion correction that is expected with high-field imaging.
 
@@ -178,11 +216,11 @@ To correct for distortions in geometry and intensity in the EPI images, we appli
 
 To achieve maximal accuracy in the coregistration and normalization in a common volumetric space, we relied on the DARTEL (Diffeomorphic Anatomical Registration Through Exponentiated Lie Algebra; Ashburner, 2007) toolbox. DARTEL normalization takes the gray and white matter templates from each subject to create an averaged template based on our own sample that will be used for the normalization. The creation of a study-specific template using DARTEL was performed to reduce deformation errors that are more likely to arise when registering single subject images to an unusually shaped template (Ashburner, 2007). This is particularly relevant when comparing blind and sighted subjects given that blindness is associated with significant changes in the structure of the brain itself, particularly within the occipital cortex (Dormal et al., 2016; Jiang et al., 2009; Pan et al., 2007; Park et al., 2009).
 
-## General linear model
+#### General linear model
 
 The pre-processed images for each participant were analyzed using a general linear model (GLM). For each of the five runs we included 32 regressors: 24 regressors of interest (each stimulus), 1 regressor of no-interest for the target stimuli to be detected, 6 head-motion regressors of no-interest, and 1 constant. From the GLM analysis we obtained a β-image for each stimulus (i.e. 24 sounds) in each run, for a total of 120 (24 × 5) β-maps.
 
-## Regions of interest
+#### Regions of interest
 
 We used univariate analyses to select our ROIs.
 
@@ -196,11 +234,11 @@ Importantly, to avoid any form of circularity, we applied a leave-one-subject-ou
 
 Since the univariate analyses highlighted only a small portion of VOTC (i.e. part of the fusiform gyrus and the infero-temporal cortex) in the contrasts EB > SC and LB > SC, we decided to run a topographical univariate functional preference analysis, as a supplemental analysis, to have a more comprehensive view on the reorganization of the VOTC following blindness and the impact of blindness’s onset on such reorganization (see Appendix 1 for detailed description of this analysis).
 
-## β’s extraction
+#### β’s extraction
 
 Is one among our four main categories (i.e. animal, human, manipulable objects, and big objects and places) driving the group differences of the univariate results? To address this point we extracted the β-values in each ROI and group for every main category. Then, for each ROI we entered the β-values in a repeated measures ANOVA 2(Groups)*4(Categories). Note that in this analysis the groups’ difference is expected, since the ROIs have been selected based on that and we will not further interpret the main effect of Group. We run this analysis to see if there is a significant interaction Group*Category, which would highlight the role of one category among the others in explaining the groups’ differences.
 
-## MVP eight-way classification
+#### MVP eight-way classification
 
 MVP classification analysis was performed using the CoSMoMVPA (Oosterhof et al., 2016) toolbox, implemented in MATLAB R2016b (MathWorks). We tested the discriminability of patterns for the eight categories using a support vector machine analysis. We performed a leave-one-run-out cross-validation procedure using β-estimates from four runs in the training set, and the β-estimates from the remaining independent run to test the classifier, with iterations across all possible training and test sets. This procedure was implemented in our ROIs (defined with a leave-one-subject-out procedure): in each cross-validation fold, we first defined from the training data the 40 most discriminative voxels according to our eight categories (De Martino et al., 2008; Mitchell et al., 2004) and then we ran the MVP classification on this subset of voxels in the test data using the parameters described above.
 
@@ -214,13 +252,13 @@ To analyze the interaction between groups and regions, we also performed a non-p
 
 We performed two separate ART tests, one for each blind group. The first ART with regions (occipital and temporal) as within-subject factor and with SC and EB groups as between-subjects factor. The second ART with regions (occipital and temporal) as within-subject factor and with SC and LB groups as between-subjects factor.
 
-## RSA – brain DSM
+#### RSA – brain DSM
 
 We further investigated the functional profile of the ROIs using RSA. This analysis goes a step further compared to the decoding analysis revealing how each region represents the different stimuli categories and whether the results obtained in the decoding analyses are mostly driven by several categorical/high-level properties of the stimuli or by their low-level acoustic features such as pitch or harmonicity. RSA is based on the concept of DSM: a square matrix where the columns and rows correspond to the number of the conditions (8×8 in this experiment) and it is symmetrical about a diagonal of zeros. Each cell contains the dissimilarity index between two stimuli (Kriegeskorte and Kievit, 2013). This abstraction from the activity patterns themselves represents the main strength of RSA, allowing a direct comparison of the information carried by the representations in different brain regions, different groups, and even between brain and models (Kriegeskorte and Mur, 2012; Kriegeskorte et al., 2008b).
 
 First, we computed the brain DSMs for each ROI and in each subject. We extracted the DSM (Kriegeskorte et al., 2008a) in each ROI, computing the dissimilarity between the spatial patterns of activity for each pair of conditions. To do so, we first extracted in each participant and in every ROI the stimulus-specific BOLD estimates from the contrast images (i.e. SPM T-maps) for all the eight conditions separately. Then, we used Pearson’s correlation to compute the distance between each pair of patterns. Since the DSMs are symmetrical matrices, for all the RSA we use the upper triangular DSM (excluding the diagonal) to avoid inflating correlation values.
 
-## RSA – correlation between occipital and temporal ROIs in each subject and group
+#### RSA – correlation between occipital and temporal ROIs in each subject and group
 
 When the sounds of our eight categories are presented, brain regions create a representation of these sounds, considering some categories more similar and others more different. Would visual deprivation have an impact on the structure of representation for sound categories in the occipital and temporal regions? Our hypothesis was that the similarity between the representation of the eight sound categories between temporal and occipital regions was enhanced in blind individuals compared to their SC. To test this hypothesis, we compared the correlation between the DSMs of the occipital and temporal ROIs in each group.
 
@@ -228,7 +266,7 @@ In each individual, we computed the Spearman’s correlation between the occipit
 
 For statistical analysis, we followed the procedure suggested by Kriegeskorte et al., 2008a. For each group, the statistical difference from zero was determined using permutation test (10,000 iterations), building a null distribution for these correlation values by computing them after randomly shuffling the labels of the matrices. Similarly, the statistical difference between groups was assessed using permutation test (10,000 iterations) building a null distribution for these correlation values by computing them after randomly shuffling the group labels. The p-values are reported after FDR correction (Benjamini and Hochberg, 1995).
 
-## RSA – comparison between brain DSMs and representational models based on our stimuli space
+#### RSA – comparison between brain DSMs and representational models based on our stimuli space
 
 Based on which dimensions (high-level/categorical or low-level acoustic properties) are the eight sound categories represented in the temporal and in the occipital ROIs in our groups? To address this question, we compared the representation of the sound categories in the two ROIs in each group with different representational models based either on low-level acoustic properties of the sounds or on high-level representations. Which of these models would better describe the representation of the sound stimuli in each region and group? Would the winning model (i.e. the model eliciting the highest correlation) be the same in the occipital and in the temporal region in (EB and LB) blind and in sighted subjects?
 
@@ -248,7 +286,7 @@ The statistical difference between each group of blind (EB and LB) and the SC gr
 
 Similar to the MVP eight-way classification analysis, we performed the non-parametric ART to analyze the interaction between groups and regions (Leys and Schumann, 2010).
 
-## RSA – additional whole brain searchlight analyses
+#### RSA – additional whole brain searchlight analyses
 
 We run some further analyses to show empirically that our stimuli are suitable for investigating categorical auditory representation and that this categorical representation is at least partially independent from the representation of low-level auditory properties in the temporal cortex.
 

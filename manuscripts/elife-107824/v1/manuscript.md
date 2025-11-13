@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05vzafd60 Department of Biology, Georgetown University Washington, DC United States
+1. Department of Biology, Georgetown University Washington, DC United States ([ROR:05vzafd60](https://ror.org/05vzafd60))
 
 † Corresponding author
 

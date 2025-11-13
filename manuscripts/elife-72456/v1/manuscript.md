@@ -34,37 +34,81 @@ Here, we address this by using widefield and two-photon calcium imaging of spont
 
 ## Results
 
-## Spontaneous activity in inhibitory populations is modular and forms large-scale correlated networks prior to eye-opening
+### Spontaneous activity in inhibitory populations is modular and forms large-scale correlated networks prior to eye-opening
 
 Over the course of development, GABAergic signaling switches from exerting depolarizing effects to hyperpolarizing due to the maturation of intracellular chloride concentrations (Ben-Ari, 2002). In the ferret, functional GABAergic synapses have been shown to be present as early as postnatal day 20 (P20) (Dalva, 2010), but because these experiments utilized whole-cell recordings in cortical slices, it remains unclear whether these synapses exert an inhibitory effect at this age. To address this, we expressed GCaMP6s in excitatory neurons at P21–23 via AAV1.hSyn.GCaMP6s (Chen et al., 2013 Wilson et al., 2017) and performed widefield epifluorescent imaging of spontaneous activity in the primary visual cortex (Smith et al., 2018) prior to and following direct application of the GABA(A) antagonist bicuculline methiodide (BMI) to the cortex (Figure 2a–b). BMI resulted in a pronounced increase in the frequency (Figure 2c; p<0.001; baseline=0.030 [0.016–0.050] Hz; BMI=0.200 [0.129–0.271] Hz, n=4 animals; median, interquartile range [IQR], Wilcoxon rank-sum test) and amplitude of spontaneous events (Figure 2d; p<0.001; baseline=0.374 [0.190–0.535] ∆F/F, n [across four animals]=274 events; BMI=0.974 [0.470–1.220] ∆F/F, n=732 events; median, IQR, Wilcoxon rank-sum test), demonstrating that in vivo GABA exerts a strong net inhibitory action at this point of development.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig2-v1.jpg)
 
-**Figure 2.:** (a) Experimental schematic; Ferret kits were injected with syn.GCaMP6s at approximately P10, and spontaneous activity was imaged at P21–23 (n=4 animals) both before and after bath application of the GABA antagonist bicuculine (BMI). (Right) Field-of-view for widefield epifluorescent calcium imaging. (b) Average trace across region of interest (ROI) for baseline spontaneous activity (top) and activity after BMI application (bottom) shows clear disinhibition of cortical activity. (c) Event frequency after BMI application is significantly higher than baseline (p<0.001; baseline=0.030 [0.016–0.050 ] Hz; BMI=0.200 [0.129–0.271 ] Hz; median, interquartile range [IQR], Wilcoxon rank-sum test). (d). Average event amplitude of BMI events are significantly higher than baseline (p<0.001; baseline=0.374 [0.190–0.535] ∆F/F, n (across four animals)=274 events; BMI=0.974 [0.470–1.220] ∆F/F, n=732 events; median, IQR, Wilcoxon rank-sum test).Figure 2—source data 1.
+**Figure 2.:** (a) Experimental schematic; Ferret kits were injected with syn.GCaMP6s at approximately P10, and spontaneous activity was imaged at P21–23 (n=4 animals) both before and after bath application of the GABA antagonist bicuculine (BMI). (Right) Field-of-view for widefield epifluorescent calcium imaging. (b) Average trace across region of interest (ROI) for baseline spontaneous activity (top) and activity after BMI application (bottom) shows clear disinhibition of cortical activity. (c) Event frequency after BMI application is significantly higher than baseline (p<0.001; baseline=0.030 [0.016–0.050 ] Hz; BMI=0.200 [0.129–0.271 ] Hz; median, interquartile range [IQR], Wilcoxon rank-sum test). (d). Average event amplitude of BMI events are significantly higher than baseline (p<0.001; baseline=0.374 [0.190–0.535] ∆F/F, n (across four animals)=274 events; BMI=0.974 [0.470–1.220] ∆F/F, n=732 events; median, IQR, Wilcoxon rank-sum test).
 
 To examine the structure of inhibitory networks in early development, we performed a series of experiments in which GABAergic neurons were specifically labeled via virally mediated expression of GCaMP6s under control of the mDlx enhancer, which was previously shown to drive expression specifically in GABAergic cells (Dimidschstein et al., 2016; Wilson et al., 2017). Widefield imaging of spontaneous activity in the primary visual cortex was performed at postnatal days 23–29 (P23–29, n=7 animals), approximately 7 days before eye-opening (typically between P31 and P34), at a time when modular activity and millimeter-scale networks have been previously shown in excitatory cells (Smith et al., 2018; Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-v1.jpg)
+
+**Figure 3.:** (a) Experimental schematic; ferret kits were injected with inhibitory specific mDlx.GCaMP6s at around P10, and spontaneous activity was imaged prior to eye-opening. (b) Example mean trace of inhibitory spontaneous activity across field of view for one representative animal. Numbers correspond to events in (c). (c) Example single-frame bandpass filtered events. (d) Spontaneous correlation patterns for three different seed points. (e) Correlation values at maxima as a function of distance from the seed point, as compared to surrogate shuffled correlations for the experiment shown in (b–d, f). (f) Fractures in correlation patterns reveal regions of rapid transition in global correlation structure.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Viral expression is robust and homogenous across our imaging area. (a) Thirty-six randomly selected spontaneous inhibition events, bandpass filtered. (b) Field-of-view (FOV) of cranial window for widefield calcium imaging. (c) Average ΔF/F across all events. (d) Percent of events where pixels within ROI were active (>3 s.d. over mean pixel activity) across all events (n=111). (e) All pixels within ROI participated in at least 10% of events. ROI, region of interest.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Example correlation patterns showing rapid change in correlation structure between nearby seed points (blood vessels masked). (b). Similarity of correlations falls off rapidly as the seed point is moved along the black line in (a), reflected in a sharp peak in fracture strength (per μm). (c). Spatial distribution of fracture strength for all pixels in ROI, showing seed points used in (a, b). Fracture image is reproduced from Figure 3f. ROI, region of interest.
 
 Under light anesthesia, inhibitory neuron populations showed frequent spontaneous activity that exhibited a highly modular structure, with spontaneous events containing multiple distinct domains of activity distributed across the imaging field-of-view (FOV) and spanning several millimeters (Figure 3b–c, Figure 3—figure supplement 1). To determine if these modular patterns of activity reflect large-scale correlated inhibitory networks, we calculated the pixelwise Pearson’s correlation coefficient across all detected spontaneous events. We found that inhibitory neurons indeed exhibit a spatially extended correlation structure, with both strong positively and negatively correlated domains extending several millimeters from the reference seed point (Figure 3d). Peak values of positively correlated domains were statistically significant up to 2 mm away from the seed point (Figure 3e; p<0.01 vs. surrogate data, 6 of 7 individual animals, bootstrap test), demonstrating the large-scale nature of inhibitory networks in the developing visual cortex.
 
 In the mature cortex, orientation preference maps exhibit smooth variation, punctuated by abrupt discontinuities at orientation pinwheels and fractures (Bonhoeffer and Grinvald, 1991; Ohki et al., 2005), an organization shared by inhibitory neurons in the mature ferret (Wilson et al., 2017). Notably, prior work identified similar discontinuities in the patterns of distributed correlated activity (termed correlation fractures) in excitatory neurons early in development prior to the emergence of orientation maps (Smith et al., 2018). To determine if developing inhibitory networks exhibit similar fine-scale organization, we calculated the rate of change in correlation patterns for all pixels within our FOV (Figure 3—figure supplement 2). This analysis revealed the presence of spatially discrete fractures over which inhibitory correlation patterns exhibit abrupt changes in structure, demonstrating a precise local organization in the coupling to large-scale inhibitory networks in the developing primary visual cortex (Figure 3f).
 
-## Quantitative agreement between inhibitory and excitatory network structure in developing visual cortex
+### Quantitative agreement between inhibitory and excitatory network structure in developing visual cortex
 
 The presence of modular activity patterns, together with long-range correlations exhibiting precise local structure, suggests that inhibitory neurons may already be tightly integrated into functional networks with excitatory cells in the developing cortex. To begin to address this, we undertook a quantitative comparison of excitatory and inhibitory networks assessed through spontaneous activity. We performed widefield imaging in animals expressing either hSyn.GCaMP6s, which is excitatory-specific in ferret (Wilson et al., 2017), or the inhibitory-specific mDlx.GCaMP6s. Imaging inhibitory and excitatory activity in separate animals allowed us to compare the statistical properties of spontaneous activity using the same highly sensitive calcium indicator. We first quantified the size of modular active domains in spontaneous events by fitting a two-dimensional Gaussian ellipse to each active region within an event and calculating the full-width at tenth of maximum (FWTM). Domain size was similar between inhibitory and excitatory events (Figure 4a; minor axis: I: 412.06 μm [386.73–439.94], n=7 animals; E: 392.68 μm [371.46–397.49], n=7 animals; median [IQR]; p = 0.142, Wilcoxon rank-sum test), and scales together regardless of threshold (full-width half max: I: 226.08 μm [212.19–241.38], E: 215.45 [203.81–218.09], data not shown). Together this supports the idea that the modular domains of local inhibitory activity operate on the same scale as excitatory activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig4-v1.jpg)
+
+**Figure 4.:** (a, b) Similar domain size for excitatory and inhibitory events. (a) Example event showing FWTM of Gaussian fit of active inhibitory domain (top) and fits of FWTM for 200 randomly selected domains from individual inhibitory (I, purple) and excitatory (E, green) animals, rotated to align major axis (bottom). (b) Median domain size for each I and E animal. Circles: individual animals, lines: group median and IQR. (c) Correlation strength at 1.8–2.2 mm from seed point. Filled circles individually significant versus surrogate (p<0.01). (d, e) Correlation wavelength is similar between I and E networks. (d) (top) Correlation pattern averaged over all seed points in single animal with inhibitory GCaMP. (bottom) Correlation as function of distance. (e). Wavelength of the correlation pattern for I and E. Circles: individual animals, lines: group median and IQR. (f–g) Similar eccentricity of local correlation structure. (f) Examples for two seed points from the same inhibitory animal, numbers indicate measured eccentricity. (g) Median eccentricity for all seed points. Circles: individual animals, lines: group median and IQR. (h) Fracture strength is similar for I and E networks. (i, j) Spontaneous activity is moderately low-dimensional in both E and I networks. (i) Cumulative explained variance for principal components of spontaneous events (lines indicate individual animals). (j). Median dimensionality, calculated from event-matched (n=30 events, n=100 simulations) random subsampling of events. Circles: individual animals, lines: group median and IQR. IQR, interquartile range.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a, d) Example inhibitory (a) and excitatory (d) correlation patterns generated using large events that extend over at least 50% of the ROI area (left, n=106 events) compared to patterns computed from all frames with active pixels (>3 s.d, 0% area threshold) (right, n=461 events). (b, e) Correlation similarity map comparing network made of Large events and network including All events (Large vs. All), for inhibitory (b) and excitatory (e) examples. (c). Strength of correlation maxima found 2 mm away from seed point for both inhibitory (I, purple) and excitatory (E, green) networks is not sensitive to area threshold. (f). Median value of Large versus All correlation similarity maps for all animals. Both inhibitory and excitatory networks show highly similar Large versus All correlation similarities, though excitatory similarities are greater than inhibitory (I: 0.87 [0.80–0.90], n=7. E: 0.98 [0.97–0.98],n=7, p=0.0088, Wilcoxon rank-sum test). ROI, region of interest.
 
 Next, we quantitatively examined the correlation patterns for excitatory and inhibitory networks revealed by spontaneous activity. We find that correlations were similarly long-range, with equivalent strength 2 mm away from the seed point (Figure 4c; I: r=0.29 (0.25–0.31), E: r=0.24 [0.27–0.31]; p=0.848, Wilcoxon rank-sum test). Likewise, the wavelength estimated from the full angle-averaged correlation function was similar between inhibitory and excitatory networks (Figure 4d,e; I: 0.84 mm [0.70–0.96], E: 0.81 mm [0.77–0.901]; p=0.848, Wilcoxon rank-sum test), and approximately similar to the wavelength of orientation columns in the mature cortex (Bonhoeffer and Grinvald, 1993; White et al., 2001b; Kaschube et al., 2010). Additionally, correlations in inhibitory networks exhibited a strong local anisotropy, with local correlations around the seed point showing a high degree of eccentricity that was consistent with excitatory correlations (Figure 4f,g; I: 0.70 [0.66–0.73], E: 0.69 [0.67–0.71]; p=0.949, Wilcoxon rank-sum test). Finally, we found that the strength of correlation fractures was highly similar between excitatory and inhibitory networks, reflecting a similar degree of precision in fine-scale network organization (Figure 4h; I: 1.86*10–3 (per μm) [1.49*10–3 –2.13*10–3], E: 1.62*10–3 (per μm)[1.35*10–3–2.22*10–3]; p=0.655, Wilcoxon rank-sum test). Taken together, these results demonstrate a strong degree of quantitative similarity in the spatial structure of inhibitory and excitatory networks in the developing visual cortex.
 
 Prior work has shown that in locally heterogeneous network models that recapitulate the structure of developing excitatory networks, long-range correlations exhibiting both local anisotropy and pronounced fractures strongly coincide with spontaneous activity patterns that reside in a low-dimensional subspace (Smith et al., 2018). Given the similarities in both local and long-range correlation structure, as well as fracture strength between excitatory and inhibitory networks, we computed the dimensionality of inhibitory spontaneous events and compared them to the dimensionality of event-number-matched events in excitatory neurons. Here, dimensionality is a quantification of the effective number of principal components describing the data (Abbott et al., 2011), which can be used to estimate the amount of variation in the observed events. We found that across animals, inhibitory and excitatory events tended to reside in similarly low-dimensional subspaces (Figure 4i,j; I: 10.55 [9.60–11.78], E: 9.44 [8.44–10.01]; median [IQR]; p=0.142, Wilcoxon rank-sum test), further supporting the contribution of inhibition to local heterogeneous networks in the developing visual cortex.
 
-## Precise spatial alignment of inhibitory and excitatory networks across millimeters
+### Precise spatial alignment of inhibitory and excitatory networks across millimeters
 
 These results strongly suggest that excitatory and inhibitory neurons are tightly coupled into the same functional networks early in development. To address this directly, we performed widefield imaging of spontaneous activity of both excitatory and inhibitory neurons within the same animals (P25–26, n=3 animals; Figure 5—figure supplement 1a). Animals were injected with AAVs expressing GCaMP6s in inhibitory cells under control of the mDlx enhancer (Dimidschstein et al., 2016) and jRCaMP1a (Dana et al., 2016) in excitatory cells with hSyn (Wilson et al., 2017). Spontaneous activity was imaged using appropriate excitation and emission filters in interleaved blocks of 20 min. We observed similar patterns of modular spontaneous events in inhibitory and excitatory neurons, and individual events with corresponding patterns of activity could frequently be found in both excitatory and inhibitory data sets (Figure 5a, Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig5-v1.jpg)
+
+**Figure 5.:** (a) Example spontaneous inhibitory (mDlx.GCaMP6s, top) and excitatory (syn.jRCaMP1a, bottom) events recorded from same animal (I color axis: –2 to –2 z-score, E color axis: –1 to 1 z-score). Example events were chosen based on pattern similarity. (b) Highly similar correlation patterns in inhibitory and excitatory networks for corresponding seed points. (c) Quantification of I versus E correlation similarity for all seed points. Circles indicate seed points illustrated in (b). (d). Similarity for all seed points in (c) falls within 95% confidence intervals (CIs) of bootstrapped I versus I similarity. (e) Within animal comparison of correlation strength for E and I (median and IQR within animal). Filled circles individually significant versus surrogate (p<0.01). (f) Similarity of I versus E correlations is significantly greater than shuffle (median and IQR within animal). Brackets indicate IQR of bootstrapped I versus I similarity. (g) Long-range correlations show significant network similarity. I versus E correlation similarity remains significant versus surrogate (red, 95% CI of surrogate, averaged across animals) for increasingly distant regions (excluding correlations within 0.4–1.4 mm from the seed point).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Experimental schematic; I and E spontaneous activity imaged in interleaved 20 min blocks. (b) Sorted correlation matrix of inhibitory and excitatory events. Matrix shows not only clear clusters of repeating patterns within inhibitory and excitatory events, but also correlated patterns between inhibitory and excitatory events. Magenta and green circles indicate correlation value between example inhibitory and excitatory events in (c). (c) Example inhibitory and excitatory events with correlated spatial patterns.
+
 To compare the structure of excitatory and inhibitory networks, we computed pixelwise correlations separately for all excitatory and inhibitory events for each animal. When selecting the same seed point, the spatial patterns of correlated activity were highly similar across networks (Figure 5b), and exhibited equivalent strength extending across several millimeters (Figure 5e). To quantify this similarity, we computed second-order correlations between excitatory and inhibitory correlation matrices (see Materials and methods), which revealed high levels of correlation similarity across nearly all seed-points within the imaging window (Figure 5c), indicating highly similar large-scale networks. To determine if the level of similarity between networks was statistically significant, we compared it to both the distribution obtained from subsampling inhibitory events (I vs. I, thereby establishing an upper bound given measurement noise and finite event numbers), as well as to surrogate data. We find that excitatory and inhibitory correlation similarity is significantly greater than surrogate (p<0.01 for 3 of 3 individual animals, bootstrap test) and near the level of within inhibitory similarity (Figure 5d and f; colors correspond to data from three individual animals). Notably, excitatory and inhibitory networks exhibit strong similarity even in their long-range correlations, as similarity remained significantly greater than surrogate even when considering only correlations over 1.4 mm from the seed point (Figure 5g; p<0.01, I vs. E networks vs surrogate, bootstrap test). Taken together, these results demonstrate the presence of overlapping and co-aligned excitatory and inhibitory networks in the developing primary visual cortex.
 
-## Excitatory and inhibitory networks are tightly integrated at cellular scale
+### Excitatory and inhibitory networks are tightly integrated at cellular scale
 
 To assess whether the large-scale alignment of excitatory and inhibitory networks observed above extends to the cellular level, we performed simultaneous two-photon imaging of excitatory and inhibitory neurons (P23–26). We co-injected AAVs expressing hSyn.GCaMP6s (excitatory) and mDlx.GCaMP6s.P2A.NLS-tdTomato (inhibitory), allowing us to distinguish inhibitory neurons in vivo through tdTomato expression (Figure 6a, Figure 6—figure supplement 1). We observed highly modular spontaneous activity in both excitatory and inhibitory cells, with local populations showing tightly coordinated patterns of activity across cell types (Figure 6b, Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-v1.jpg)
+
+**Figure 6.:** (a) (Left): Example FOV showing GCaMP signal from excitatory and inhibitory neurons. (Middle/Right): Expanded images showing nuclear tdTomato signal specifically in inhibitory neurons (middle) and merged with GCaMP signal (right). (b) Traces of spontaneous activity for excitatory (E, green) and inhibitory (I, purple) neurons as indicated in (a). (c). Event amplitude for local (<75 µm) excitatory and inhibitory responses. For clarity when plotting, 5% of responses are shown for 2186 cells and 1231 events from 21 FOV in five animals, and responses are clipped at 12 z-units. (d). Example pairwise correlations between an inhibitory neuron (green) and all cells (left), excitatory cells (middle), and inhibitory cells (right). (e). Pairwise correlations as function of distance for an example FOV shown in (a–d) for E-E, I-I, and E-I pairs. (f) same as (e) averaged over 21 FOV from five animals. Scale bars: (a, d): 100 µm; (b): 30 s, 3 ∆F/F. FOV, field-of-view.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (From left to right) Confocal images of GCaMP6s (green), tdTomato (red), merged GCaMP6s and tdTomato, and glutamate decarboxylase 67 (GAD67, cyan). Arrows indicate individual cell bodies, showing co-labeling of GCaMP6s, nuclear tdTomato, and GAD67.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (a, b) Example FOV and activity traces for excitatory and inhibitory neurons are shown in (a) (replotted from Figure 4). (c). Cellular activity patterns for eight spontaneous events are indicated in (b). Scale bars: (a, c): 100 µm; (b): 30 s, 3 ∆F/F. FOV, field-of-view.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/72456/elife-72456-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (a) Top row: Pairwise correlations between an example inhibitory neuron and all cells (left), excitatory cells (middle), and inhibitory cells (right), replotted from Figure 4d. Middle and bottom row: additional example seed points (middle: excitatory neuron, bottom: inhibitory neuron) from same FOV. (b) same as (a), but for different animal. Scale bar: 100 μm. FOV, field-of-view.
 
 To quantify the relative balance of excitatory and inhibitory activity within local populations, we computed the average response of all cells of a given cell type within a 75-µm region around each neuron for all spontaneous events. We found the amplitude of events within these local populations was highly correlated between excitatory and inhibitory cells (r=0.86, 2186 cells and 1231 events from 21 FOV in five animals; Figure 6c), suggesting locally balanced activity. Both inhibitory and excitatory neurons exhibited spatially organized pairwise correlations across spontaneous events, with distributed patches of positively correlated cells located hundreds of microns away. Notably, the spatial structure of pairwise correlations for a given neuron (whether inhibitory or excitatory) with either inhibitory or excitatory cells was well aligned (p<0.001 vs. shuffle), irrespective of cell type (Figure 6d, Figure 6—figure supplement 3). Finally, examining correlation strength as a function of distance and cell type demonstrates that correlated excitatory and inhibitory networks exhibit a similar spatial scale at the cellular level (Figure 6e and f). Taken together, these results show that excitatory and inhibitory neurons are precisely organized in the developing visual cortex into the same spatially structured and locally correlated functional networks.
 
@@ -82,89 +126,131 @@ Large-scale distributed functional networks are a hallmark of mature cortical or
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All experimental procedures were approved by the University of Minnesota Institutional Animal Care and Use Committee and were performed in accordance with guidelines from the US National Institutes of Health. We obtained 20 male and female ferret kits from Marshall Farms and housed them with jills on a 16 h light/8 h dark cycle. No statistical methods were used to predetermine sample sizes, but our sample sizes are similar to those reported in previous publications.
 
-## Viral injection
+### Viral injection
 
 Viral injections were performed as previously described (Smith and Fitzpatrick, 2016) and were consistent with prior work (Smith et al., 2018). Injections targeted the primary visual cortex, defined as thalamo-recepient visual cortex. In the ferret, primary visual cortex includes both areas 17 and 18, which both receive direct thalamic innervation and exhibit columnar mapping of orientation (White et al., 1999; White et al., 2001a). Briefly, we expressed GCaMP6s (Chen et al., 2013) in inhibitory interneurons by microinjecting AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato (University of Minnesota Viral Vector and Cloning Core), based on the mDlx inhibitory specific enhancer (Dimidschstein et al., 2016), into layer 2/3 of the primary visual cortex at P10–15 approximately 10–15 days before imaging experiments. To image excitatory and inhibitory activity, animals used for widefield experiments were injected with a 1:1 ratio of AAV1.mDlx.GCaMP6s.P2A.NLS.tdTomato and AAV1.Syn.NES.jRCaMP1a.WPRE.SV40, and animals used for two-photon experiments were injected with a 1:1 ratio of AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato and AAV1.Syn.GCaMP6s.WPRE.SV40.
 
 Anesthesia was induced with isoflurane (3.5–4%) and maintained with isoflurane (1–1.5%). Buprenorphine (0.01 mg/kg) and either atropine (0.2 mg/kg) or glycopyrrolate (0.01 mg/kg) were administered, as well as 1:1 lidocaine/bupivacaine at the site of incision. Animal temperature was maintained at approximately 37°C with a water pump heat therapy pad (Adroit Medical HTP-1500, Parkland Scientific). Animals were also mechanically ventilated and both heart rate and end-tidal CO2 were monitored throughout the surgery. Using aseptic surgical technique, skin and muscle overlying visual cortex were retracted, and a small burr hole was made with a handheld drill (Fordom Electric Co.). Approximately 1 µl of virus contained in a pulled-glass pipette was pressure injected into the cortex at two depths (~200 µm and 400 µm below the surface) over 20 min using a Nanoject-II (World Precision Instruments). The craniotomy was filled with 2% agarose and sealed with a thin sterile plastic film to prevent dural adhesion.
 
-## Cranial window surgery
+### Cranial window surgery
 
 On the day of experimental imaging, ferrets were anesthetized with 3–4% isoflurane. Atropine was administered as in virus injection procedure. Animals were placed on a feedback-controlled heating pad to maintain an internal temperature of 37–38°C. Animals were intubated and ventilated, and isoflurane was delivered between 1% and 2% throughout the surgical procedure to maintain a surgical plane of anesthesia. An intraparietal catheter was placed to deliver fluids. EKG, end-tidal CO2, and internal temperature were continuously monitored during the procedure and subsequent imaging session. The scalp was retracted and a custom titanium headplate adhered to the skull using C&B Metabond (Parkell). A 6–7 mm craniotomy was performed at the viral injection site and the dura retracted to reveal the cortex. One 4 mm cover glass (round, #1.5 thickness, Electron Microscopy Sciences) was adhered to the bottom of a custom titanium insert and placed onto the brain to gently compress the underlying cortex and dampen biological motion during imaging. The cranial window was hermetically sealed using a stainless-steel retaining ring (5/16-in. internal retaining ring, McMaster-Carr). Upon completion of the surgical procedure, isoflurane was gradually reduced (0.6–0.9%) and then vecuronium bromide (0.4 mg/kg/hr) mixed in an LRS 5% Dextrose solution was delivered IP to reduce motion and prevent spontaneous respiration.
 
-## Widefield epifluorescence and two-photon imaging
+### Widefield epifluorescence and two-photon imaging
 
 Widefield epifluorescence imaging was performed with an sCMOS camera (Zyla 5.5, Andor; Prime BSI express, Teledyne) controlled by μManager (Edelstein et al., 2010). Images were acquired at 15 Hz with 4×4 binning to yield 640×540 pixels (Zyla) or 2×2 binning and additional offline 2×2 binning to yield 512×512 pixels (Prime BSI). Two-photon imaging was performed with a commercial microscope (Neurolabware) driven by an Insight X3 laser (Spectra Physics). Imaging was performed at 920 nm (GCaMP) and 1040 nm (tdTomato), and fluorescence was collected on separate PMTs using a 562-nm dichroic mirror and 510/84 nm (GCaMP) and 607/70 nm (tdTomato) emission filters (Semrock). Images were collected at 796×512 pixels at 30 Hz.
 
 Spontaneous activity was captured in 10-min imaging sessions, with the animal sitting in a darkened room facing an LCD monitor displaying a black screen. All imaging of spontaneous activity was done in young animals (P23–29) prior to eye-opening (~P31 to P35).
 
-## Immunostaining and imaging
+### Immunostaining and imaging
 
 To confirm that tdTomato expression from AAV1.mDLx.GCaMP6s.P2A.NLS.tdTomato was specific to inhibitory neurons as expected from previous work (Wilson et al., 2017), we performed immunostaining in a subset of animals. Following imaging, animals were euthanized and transcardially perfused with 0.9% heparinized saline and 4% paraformaldehyde. The brains were extracted, post-fixed overnight in 4% paraformaldehyde, and stored in 0.1 M phosphate buffer solution. Using a vibratome, brains were tangentially sectioned along the surface of the imaging window (50 μm steps). Slices were stained for GAD67 using Mouse anti- GAD67 (1:1000, Sigma-Aldrich, MAB5406) and Alexa 405 donkey anti-mouse (1:500, Abcam, AB175659) as described (Wilson et al., 2017). Imaging was performed on a confocal microscope (Nikon C2).
 
-## Bicuculline application
+### Bicuculline application
 
 To test whether GABAergic signaling exerted net inhibitory effects at the ages examined in this study, we bath applied the GABA(A) antagonist BMI directly to the cortex at P21–23 in animals expressing AAV1.Syn.GCaMP6s.WPRE.SV40. To apply BMI, the cannula covering the cranial window was removed and the exposed cortex was gently flushed with ACSF. After collecting 10 min of baseline spontaneous activity, 10 μM BMI in ACSF was bath applied to the cortex, and spontaneous activity was imaged for an additional 10 min.
 
-## Data analysis
+### Data analysis
 
-## Signal extraction for widefield epifluorescence imaging
+#### Signal extraction for widefield epifluorescence imaging
 
 Image series were motion corrected using rigid alignment and a region of interest (ROI) was manually drawn around the cortical region of GCaMP expression. Additionally, a ROI mask was manually drawn around blood vessels to remove vessel artifacts. The baseline fluorescence (F0) for each pixel was obtained by applying a rank-order filter to the raw fluorescence trace with a rank 70 samples (for excitatory data) or 190 samples (for inhibitory data) and a time window of 30 s (451 samples). The rank and time window were chosen such that the baseline faithfully followed the slow trend of the fluorescence activity. The baseline-corrected spontaneous activity was calculated as (F–F0)/F0=Δ F/F0.
 
-## Event detection
+#### Event detection
 
 Detection of spontaneously active events was performed essentially as described (Smith et al., 2018). Briefly, we first determined active pixels on each frame using a pixelwise threshold set to 3 s.d. above each pixel’s mean value across time. Active pixels not part of a contiguous active region of at least 0.01 mm2 were considered ‘inactive’ for the purpose of event detection. Active frames were taken as frames with a spatially extended pattern of activity (>50% of pixels were active). Our results were not sensitive to area threshold, as removing the area threshold requirement and including all frames with activity greater than 3 s.d resulted in correlation patterns with highly similar spatial structure for both inhibitory and excitatory networks. Furthermore, the strength of correlations 2 mm from the seed point for inhibitory and excitatory networks were equivalent for networks calculated from large events and all events (Figure 4—figure supplement 1). Consecutive active frames were combined into a single event starting with the first high-activity frame and then either ending with the last high-activity frame or, if present, an activity frame defining a local minimum in the fluorescence activity. To assess the spatial pattern of an event, we extracted the maximally active frame for each event, defined as the frame with the highest activity averaged across the ROI. While correlation patterns have been shown to be stable with as low as 10 events (Smith et al., 2018), datasets with fewer than 30 detected events were excluded from this study.
 
 Due to differences in signal-to-noise ratio in experiments using jRCaMP1a, we used a pixelwise threshold of 2 s.d to determine active pixels, and frames were >30% of the pixels were active were considered active frames.
 
-## Spontaneous correlation patterns
+#### Spontaneous correlation patterns
 
-Spontaneous correlation patters were calculated as previously described (Smith et al., 2018). Briefly, we applied a Gaussian spatial band-pass filter (sigmalow=26 µm and sigmahigh=195 µm) to the maximally active frame in each event and downsampled it to 160×135 (128×128, Prime BSI) pixels. The resulting patterns, named spontaneous patterns A in the following, were used to compute the spontaneous correlation patterns as the pairwise Pearson’s correlation between all locations x within the ROI and the seed point s:C(s,x)=1N−1∑i=1N(Ai(s)−⟨Ai(s)⟩)(Ai(x)−⟨Ai(x)⟩)σsσx
+Spontaneous correlation patters were calculated as previously described (Smith et al., 2018). Briefly, we applied a Gaussian spatial band-pass filter (sigmalow=26 µm and sigmahigh=195 µm) to the maximally active frame in each event and downsampled it to 160×135 (128×128, Prime BSI) pixels. The resulting patterns, named spontaneous patterns A in the following, were used to compute the spontaneous correlation patterns as the pairwise Pearson’s correlation between all locations x within the ROI and the seed point s:
+
+$$
+C(s,x)=\frac{1}{N−1}\sumi=1N\frac{(A_{i}(s)−⟨A_{i}(s)⟩)(A_{i}(x)−⟨A_{i}(x)⟩)}{\sigma_{s}\sigma_{x}}
+$$
 
 Here the brackets ⟨ ⟩ denote the average over all events and σx denotes the standard deviation of A over all N events i at location x.
 
-## Spontaneous fractures
+#### Spontaneous fractures
 
 Spontaneous fractures were computed as previously described (Smith et al., 2018). Fracture strength was defined as the rate by which the correlation pattern changes when moving the seed point location over adjacent pixels. We defined fracture magnitude as the difference in fracture strength averaged over the fracture lines, and its average in regions >130 µm apart from the nearest fracture line. Fracture lines were identified by first applying a spatial median filter with a window size of 78 µm to remove outliers. We then applied histogram normalization contrast enhancement using contrast-limited adaptive histogram equalization (CLAHE, clip limit=20, size of neighborhood 260×260 µm2 using ‘createCLAHE’ in Python OpenCV), and a spatial high-pass filter (Gaussian filter, s.d. sigmahigh=390 µm). The resulting values were binarized (threshold=0), and the resulting two-dimensional binary array eroded and then dilated (twice) to remove single noncontiguous pixels (Python, Multidimenisonal image processing library [scipy.ndimage]). We skeletonized this binary array to obtain the fracture lines (Python, Scikit-Image).
 
-## Event domain size
+#### Event domain size
 
-To estimate the size of active domains in spontaneous events, we first identified domains by taking the local maxima of each event after bandpass filtering. The local neighborhood of each domain (600 μm radius from maxima) was then fit with a two-dimensional Gaussian using nonlinear least squares:a=cos2θ2σx2+sin2θ2σy2b=-sin2θ4σx2+sin2θ4σy2c=sin2θ2σx2+cos2θ2σy2G=y0+He(−(a(x−x1)2+2b(x−x1)(y−y1)+c(y−y1)2))
+To estimate the size of active domains in spontaneous events, we first identified domains by taking the local maxima of each event after bandpass filtering. The local neighborhood of each domain (600 μm radius from maxima) was then fit with a two-dimensional Gaussian using nonlinear least squares:
 
-where H is the amplitude of the Gaussian, x1 (y1) is the x (y) center, σx (σy) is the standard deviation of the x (y) component, θ is the angular rotation of the Gaussian, and y0 is the offset. Domain size was calculated as the FWTM of the minor axis of fitted Gaussian:FWTMminor=σminor22ln(10)
+$$
+a=\frac{cos^{2}\theta}{2\sigma_{x}^{2}}+\frac{sin^{2}\theta}{2\sigma_{y}^{2}}
+$$
 
-## Strength of long-distance correlations
+
+
+$$
+b=\frac{-sin2\theta}{4\sigma_{x}^{2}}+\frac{sin2\theta}{4\sigma_{y}^{2}}
+$$
+
+
+
+$$
+c=\frac{sin^{2}\theta}{2\sigma_{x}^{2}}+\frac{cos^{2}\theta}{2\sigma_{y}^{2}}
+$$
+
+
+
+$$
+G=y_{0}+He^{(−(a(x−x_{1})^{2}+2b(x−x_{1})(y−y_{1})+c(y−y_{1})^{2}))}
+$$
+
+where H is the amplitude of the Gaussian, x1 (y1) is the x (y) center, σx (σy) is the standard deviation of the x (y) component, $\theta$ is the angular rotation of the Gaussian, and y0 is the offset. Domain size was calculated as the FWTM of the minor axis of fitted Gaussian:
+
+$$
+FWTM_{minor}=\sigma_{minor}2\sqrt{2ln(10)}
+$$
+
+#### Strength of long-distance correlations
 
 To determine the strength of correlations, we first identified local maxima (minimum separation between maxima: 800 µm) in the correlation pattern for each seed point. To assess the statistical significance of long-range correlations ~2 mm from the seed point, we compared the median correlation strength for maxima located 1.8–2.2 mm away against a distribution obtained from 100 surrogate correlation patterns. Surrogate correlation patterns control for correlations that arise from finite sampling by eliminating most of the spatial relationship between patterns (Smith et al., 2018). Surrogate correlation patterns were generated from spontaneous events that were randomly rotated (rotation angle drawn from a uniform distribution between 0° and 360° with a step size of 10°), translated (shifts drawn from a uniform distribution between ±450 µm in increments of 26 µm, independently for x and y directions) and reflected (with probability 0.5, independently at the x and y axes at the center of the ROI).
 
-## Correlation pattern wavelength
+#### Correlation pattern wavelength
 
 To find the wavelength of the correlation patterns, we first centered and averaged the local neighborhood (1500 μm radius) across all seed points. We then averaged over the angle to obtain the average correlation as a function of distance from the seed point and used spline interpolation to fit the data. The wavelength of the resulting spline interpolation was estimated as the distance to the first local maxima after 0.
 
-## Eccentricity of local correlation structure
+#### Eccentricity of local correlation structure
 
-To describe the shape of the local correlation pattern around a seed point, we fit an ellipse (least-square fit) with orientation Φ, major axis ς1 and minor axis ς2 to the contour line at correlation = 0.7 around the seed point. The eccentricity ε of the ellipse is defined as:ε=ς12-ς22ς1
+To describe the shape of the local correlation pattern around a seed point, we fit an ellipse (least-square fit) with orientation Φ, major axis ς1 and minor axis ς2 to the contour line at correlation = 0.7 around the seed point. The eccentricity ε of the ellipse is defined as:
+
+$$
+\epsilon=\frac{\sqrt{ς_{1}^{2}-ς_{2}^{2}}}{ς_{1}}
+$$
 
 Where ε=0 is a circle, and increasing values indicating greater elongation along the ellipse.
 
-## Dimensionality of spontaneous activity
+#### Dimensionality of spontaneous activity
 
-We estimated the dimensionality deff of the subspace spanned by spontaneous activity patterns by Abbott et al., 2011:deff=∑i=1Nλi2∑i=1Nλi2
+We estimated the dimensionality deff of the subspace spanned by spontaneous activity patterns by Abbott et al., 2011:
+
+$$
+d_{eff}=\frac{\sum_{i=1}^{N}\lambda_{i}^{2}}{\sum_{i=1}^{N}\lambda_{i}^{2}}
+$$
 
 where λi are the eigenvalues of the covariance matrix for the N pixels within the ROI. As the value of the dimensionality is sensitive to differences in detected event number, to estimate the distribution of the dimensionality for each animal we calculated the dimensionality of randomly sub-sampled events (n=30 events, matched across animals, 100 simulations) and took the median of the distribution.
 
-## Comparison of inhibitory and excitatory correlation similarity
+#### Comparison of inhibitory and excitatory correlation similarity
 
 To compare the similarity between inhibitory and excitatory correlation patterns within the same animal, we computed the second-order correlation between patterns. For each seed point, we calculated the second order Pearson’s correlation between corresponding correlation patterns, while excluding pixels within a 400-μm exclusion radius around the seed point to prevent local correlations from inflating the similarity between the two networks. To get an estimate the upper bound of similarity within inhibitory networks, given a finite sampling size, we randomly split the detected inhibitory events into two groups and separately computed correlations and the second-order correlations between the halves (n simulations=100.) To determine if the observed networks are more similar than chance, we calculated the similarity between the excitatory network and a surrogate inhibitory network (surrogate events calculated as above, with 100 simulations and surrogate similarity calculated as median and IQR across simulations). To determine if spontaneous correlations far from the seed point also maintain high degrees of similarity, we systematically increased the size of the exclusion radii, calculating similarity only using data far from the seed points. Exclusion radius size ranged from 400 to 1400 μm, in 200 μm steps.
 
-## Two-photon event detection and cellular correlations
+#### Two-photon event detection and cellular correlations
 
-Two-photon images were corrected for rigid in plane motion via a 2D cross-correlation. Cellular ROIs were drawn using custom software (Cell Magic Wand; Wilson et al., 2017) in ImageJ and imported into Matlab via MIJ (Sage and Prodanov, 2012, http://bigwww.epfl.ch/sage/soft/mij/). Cellular ROIs were then manually categorized as either being inhibitory or excitatory based on tdTomato expression. Fluorescence was averaged over all pixels in the ROI and traces were neuropil subtracted, where Fneuropil was taken as the average fluorescence within 30 µm excluding all cellular ROIs and α=0.6:Fcell=Fraw−αFneuropil
+Two-photon images were corrected for rigid in plane motion via a 2D cross-correlation. Cellular ROIs were drawn using custom software (Cell Magic Wand; Wilson et al., 2017) in ImageJ and imported into Matlab via MIJ (Sage and Prodanov, 2012, http://bigwww.epfl.ch/sage/soft/mij/). Cellular ROIs were then manually categorized as either being inhibitory or excitatory based on tdTomato expression. Fluorescence was averaged over all pixels in the ROI and traces were neuropil subtracted, where Fneuropil was taken as the average fluorescence within 30 µm excluding all cellular ROIs and α=0.6:
+
+$$
+F_{cell}=F_{raw}−\alphaF_{neuropil}
+$$
 
 Activity was taken as ∆F/F0, where F0 was the baseline fluorescence obtained by applying a 60-s median filter, followed by a first-order Butterworth high-pass filter with a cutoff time of 60 s. To compute spontaneous correlations, we first identified frames containing spontaneous events, which were defined as frames in which >10% of imaged neurons exhibited activity >2 s.d. above their mean. Cellular activity on all event frames was then z-scored using the mean and s.d. of each frame, and pairwise Pearson’s correlations were computed across all neurons over all active frames.
 
@@ -172,6 +258,6 @@ The similarity of cellular correlation patterns for inhibitory and excitatory ce
 
 To compare the amplitude of events within a local area, activity traces for each cell were smoothed with a three-sample median filter and z-scored across all frames. We then computed the average amplitude of all inhibitory (or excitatory) cells within a 75-µm radius for the maximally active frame of each event.
 
-## Quantification and statistical analysis
+#### Quantification and statistical analysis
 
 Nonparametric tests were used for statistical testing throughout the study. Bootstrapping was used to determine null distributions when indicated. Center and spread values are reported as median and IQR, unless otherwise noted. Statistical analyses were performed in MATLAB and Python, and significance was defined as p<0.05.

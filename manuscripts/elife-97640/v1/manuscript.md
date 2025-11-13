@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04fq9j139 Haptic Intelligence Department, Max Planck Institute for Intelligent Systems Stuttgart Germany
+1. Haptic Intelligence Department, Max Planck Institute for Intelligent Systems Stuttgart Germany ([ROR:04fq9j139](https://ror.org/04fq9j139))
 
 † Corresponding author
 

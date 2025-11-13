@@ -26,7 +26,7 @@ We recently demonstrated how the steering circuit could be adapted to ascent gra
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig1-v2.jpg)
 
-**Figure 1.:** Sun et al., 2020 and reapplied here to multimodal guidance.The upper-right panel depicts the two key brain areas modelled (MBs in red, central in green). The upper-left panel (red background) outlines the role of the MBs in measuring valence of odour (Wessnitzer et al., 2012) and visual (Ardin et al., 2016) cues. The lower panel (green background) introduces the four CX subcircuits integrated in the previous model. (1) The steering circuit proposed to exist in the CPU1 neurons of the CX that computes the turning angle that minimises the difference between the current heading (from the protocerebral bridge [PB]) and desired heading (from the CPU4 cells) (Stone et al., 2017). (2) The copy-and-shift mechanism creates a desired heading from non-directional cues by simply copying the current heading and shifting it in proportion to the change in sensory valance. (3) Ring attractor networks can automatically and optimally integrate orientation cues from disparate sources into a single readout. Our model uses RAs to integrate both compass and desired heading signals. (4) Context-dependent switches multiplex systems at a high level (e.g. when ‘lost’ engages visual homing [VH] but not route following [RF]). Images of the brain regions are adapted from the Insect Brain Database (Heinze et al., 2021; https://www.insectbraindb.org).
+**Figure 1.:** The upper-right panel depicts the two key brain areas modelled (MBs in red, central in green). The upper-left panel (red background) outlines the role of the MBs in measuring valence of odour (Wessnitzer et al., 2012) and visual (Ardin et al., 2016) cues. The lower panel (green background) introduces the four CX subcircuits integrated in the previous model. (1) The steering circuit proposed to exist in the CPU1 neurons of the CX that computes the turning angle that minimises the difference between the current heading (from the protocerebral bridge [PB]) and desired heading (from the CPU4 cells) (Stone et al., 2017). (2) The copy-and-shift mechanism creates a desired heading from non-directional cues by simply copying the current heading and shifting it in proportion to the change in sensory valance. (3) Ring attractor networks can automatically and optimally integrate orientation cues from disparate sources into a single readout. Our model uses RAs to integrate both compass and desired heading signals. (4) Context-dependent switches multiplex systems at a high level (e.g. when ‘lost’ engages visual homing [VH] but not route following [RF]). Images of the brain regions are adapted from the Insect Brain Database (Heinze et al., 2021; https://www.insectbraindb.org).
 
 We also demonstrated neural mechanisms that coordinate between different guidance strategies (Sun et al., 2020). Specifically we added a contextual-switching mechanism (see Figure 1) that triggers specific guidance strategies depending on the context, for example, switching from PI unfamiliar surroundings to visual route following in familiar terrain. As a final stage, we revealed how ring attractor (RA) circuits (Touretzky, 2005; Sun et al., 2018; see Figure 1) that we hypothesise exist in the FB provide an ideal substrate for optimally integrating cues that exist within a shared context (e.g. PI and visual homing [VH] in unfamiliar contexts). The ‘copy-and-shift’ mechanism again plays a crucial role in this capacity as it ‘transfers’ orientation outputs into a shared frame of reference. For example, when ascending gradients, temporal changes in visual familiarity are translated into heading commands relative to the head-direction system which then share a frame of reference with the PI system.
 
@@ -34,39 +34,71 @@ This biologically constrained model of the insect midbrain was shown to be capab
 
 ## Results
 
-## Core odour navigation behaviours using copy-and-shift
+### Core odour navigation behaviours using copy-and-shift
 
 Here we assess the ease with which our visual navigation model generalises olfactory navigation tasks.
 
-## Chemotaxis of odour gradients
+#### Chemotaxis of odour gradients
 
 Adult and larvae fruit flies readily climb rewarding odour gradients by modulating their heading direction in direct response to the temporal change in odour concentration (Gomez-Marin et al., 2010; Nagel and Wilson, 2011; Kim et al., 2011; Schulze et al., 2015; Jung et al., 2015) mirroring our model’s approach to VH. Moreover, the neural pathways of olfactory processing are well established and only differ from our model in their sensory origins (antennal lobe [AL] to the lateral horn [LH] [Gupta and Stopfer, 2012; Roussel et al., 2014] and MBs [Aso et al., 2014; Hulse et al., 2021]) before connecting to the CX through direct or indirect (hypothetically via superior medial protocerebrum [SMP]; Plath et al., 2017; Hulse et al., 2021; Li et al., 2020) neural pathways. Thus by simply changing the input from optic to ALs and the processing region from the MB to the LH and MB (see Figure 2A, left panel) our model is able to adapt its heading to align with the positive odour gradient over successive steps (see Figure 2B, left panel). Note that here we simply take the valence output of the MB as the odour concentration, buy any other equivalent measurement (such as the degree of attraction) could work along with the ‘copy-and-shift’ mechanism. Figure 2C (left panel) demonstrates the realistic chemotaxis behaviour generated by the model in a classic ‘volcano’ environment (Jung et al., 2015; Schulze et al., 2015). Figure 2—figure supplement 1 provides similarly realistic paths in other odour landscapes. It should be noted that there are neural pathways not included in the model that directly link odour input to motor outputs that may play a role in chemotactic guidance (Green et al., 2019; Rayshubskiy, 2020; Scaplen et al., 2021). Indeed while larvae possess MB and LH assemblies, they do not have a fully developed CX as modelled here (Gowda et al., 2021). Analysis of behavioural deficiencies in animals with CX knockouts would offer crucial insights into the role of the CX for chemotactic behaviours.
 
-## Anemotaxis in odour plumes
+![Figure 2.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic diagrams of the neural circuits generating current-desired heading pairings for chemotaxis and anemotaxis. The copy-and-shift mechanism is only different in how the shift is realised: for chemotaxis, the temporal change of the odour concentration produces turns of different magnitude in a predefined direction, which for anemotaxis the wedge projection neuron (WPN) provide both turning magnitude and direction to steer the animal upwind. The corresponding hypothesised functional map of larvae brain is inserted in the left panel, showing that the olfactory descending neurons LPM-DN may play similar role as the central complex (CX). (B) Schematic diagram explaining the model functions. For chemotaxis, decreasing odour concentration will shift the desired heading from current heading causing the steering circuit to initiate a turn. For anemotaxis, the WPNs subtract the activation of the antennal mechanosensory and motor centre (AMMC) projection neuron (APN) from that of B1 that directly shifts the desired heading to align with the upwind direction. Note that the two mechanisms share a frame of reference. (C) Example behaviours generated by the model. Realistic chemotaxis behaviour is shown (left) in a ‘volcano’ odour landscape. On the right, realistic anemotaxis (magenta path segment) are shown when odour is ‘ON’ vs. undirected motion (black and cyan path segments) when odour is ‘OFF’. Upwind speed and angular velocity of the example agent are shown on the right panel. Note the obvious higher upwind translational velocity and low angular velocity during the presence of the odour indicate surges upwind.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The odour field model and navigating trajectories are shown on the left whilst the perceived odour concentration and the temporal change of the highlighted agent are shown on the right.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Neural responses of the wind direction encoding neurons with different animal headings (0 and π∕2) and the wind direction stimuli is swept from 0 to π.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Trajectories of each agents (highlighted one corresponding to that shown in Figure 3), mean upwind speed, and angular velocity of 20 simulated agents are shown.
+
+#### Anemotaxis in odour plumes
 
 In moving airflows, adult fruit flies pinpoint olfactory sources by anemotaxis whereby individuals align with the upwind direction, allowing them to approach the hidden odour source (Kennedy and Marsh, 1974; Rutkowski et al., 2009; van Breugel and Dickinson, 2014). Insects sense wind direction through deflections of their antennae (Yorozu et al., 2009; Patella and Wilson, 2018; Okubo et al., 2020) with the wedge projection neurons (WPNs) converting their inputs (via antennal mechanosensory and motor centre [AMMC] pathway in Figure 2B, right panel) into a direction relative to the animal’s current heading (Suver et al., 2019; see Figure 2—figure supplement 2). The WPN output is then transmitted to the FB of the CX via the lateral accessory lobe (LAL) -> noduli (NO) pathway (Hulse et al., 2021; Matheson et al., 2021; Figure 2B, right panel). The ‘copy-and-shift’ mechanism again provides the ideal bridge between input signal and steering circuit. By simply driving the direction and magnitude of the ‘shift’ by the WPN response when a rewarding odour is detected (Figure 2A, right panel), the model turns the agent upwind (see Figure 2B, right panel). Figure 2C (right panel) shows an example path of a simulated fly navigating a classic laboratory environment with an odour plume into which rewarding odour is toggled ON and OFF (for a simulation of a group agents, see Figure 2—figure supplement 3), which demonstrates realistic odour-driven anemotaxis behaviour.
 
 Taken together the above data demonstrate the capacity of the model to generalise from visual to olfactory navigation without significant alteration.
 
-## Coordination of guidance behaviours by linking frames of reference
+### Coordination of guidance behaviours by linking frames of reference
 
 With the model shown to generalise from visual to olfactory navigation tasks, we now assess its ability to coordinate guidance strategies across sensory domains.
 
-## Contextual switching between olfactory guidance behaviours
+#### Contextual switching between olfactory guidance behaviours
 
 In reality insects utilise both the chemotaxis and anemotaxis strategies outlined above. Across species and environments (laminar odour gradient or turbulent odour plume), a distinct behavioural trigger is reported at the onset (ON response) or loss (OFF response) of sensory valence (moths [Kennedy and Marsh, 1974; Rutkowski et al., 2009], flying fruit flies [van Breugel and Dickinson, 2014], walking flies [Steck et al., 2012; Bell and Wilson, 2016; Álvarez-Salvado et al., 2018]). Specifically, in the presence of the attractive odour animals apply anemotaxis and surge upwind, but when the attractive odour is lost they engage in a chemotactic-like search to recover the plume. This problem is analogous with the contextual switching used in our previous model to select between ON- and OFF route navigation strategies (Wystrach et al., 2012). Figure 3A (left panel) depicts how the CX switching circuit can be easily reconfigured to be triggered by the instantaneous change of odour concentration fitting with the reported ON and OFF responses (Álvarez-Salvado et al., 2018). Note that we here assume that the ON and OFF responses are driven by the output neurons of the odour processing brain regions (i.e. MBON or LHON) that could compute the temporal changes of odour concentration (Dolan et al., 2018; Hulse et al., 2021; Matheson et al., 2021). Figure 3B (left panel) illustrates simulated ON and OFF responses that are supplied to the model and their behavioural consequence. Figure 3 (left panel) demonstrates realistic olfactory navigation behaviour similar to the behavioural data in Álvarez-Salvado et al., 2018. See also the simulation results of a 20-agent group demonstrating similar performance in Figure 3—figure supplement 1.
 
-## Optimally integrating navigation behaviours across sensory domains
+![Figure 3.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig3-v2.jpg)
 
-In barren salt pans, homing desert ants follow their path integrator to their nest area before relying on nest odour plumes for their final approach (Buehlmann et al., 2012). Ants bypass the nests of conspecifics that diffuse similar odours (C⁢O2) until reaching the nest locale (Buehlmann et al., 2012), indicating use of a sophisticated integration strategy beyond simple switching outlined above. Rather, ants instead appear to weigh their PI output relative to the home vector length in a similar fashion to their integration of PI and visual cues (Wystrach et al., 2015; Legge et al., 2014) as was realised in our previous model using ring attractor networks (Touretzky, 2005; Sun et al., 2018; Sun et al., 2020). Figure 3A (right panel) depicts the augmentation of our odour-gated anemotaxis model with a ring attractor circuit to optimally integrate PI and olfactory navigation outputs. These adaptations are in accordance with the olfactory navigation mechanisms (chemotaxis and anemotaxis) proposed to be used by ants by Wolf and Wehner, 2000; Wolf and Wehner, 2005. Note that the desired headings recommended by odour homing (OH, or chemotaxis) and upwind direction (UW, or odour-gated anemotaxis) are gated by the OFF and ON responses and weighted by the odour concentration signal prior to being injected into the ring attractor to be combined with PI. Figure 3B (right panel) illustrates how the various desired heading signals are optimally integrated by the ring attractor network before being sent as input to the steering circuit. Figure 3C shows homing paths generated by the model following simulated displacements left or right of the regular feeder which closely match those of real ants (Buehlmann et al., 2012). Note that there is an additional odour plume diffused by a simulated conspecific nest positioned near the release points which causes some distraction before the simulated ants continue to the real nest site. In the absence of the distractor, nest paths are much more direct (see Figure 3—figure supplement 1).
+**Figure 3.:** (A) Schematic diagrams of the integration circuits. Left: temporal change in odour concentration based ON and OFF responses drives the switching circuit to select between chemotaxis or anemotaxis strategies. Right: ring attractor network integrates multiple cues weighted by sensory valence. (B) Functional explanations of the model. Left: ON responses trigger upwind turns while OFF responses trigger chemotaxis, leading the animal back into the odour plume. Right: ring attractors serve as the optimal integration circuit to mediate between anemotaxis, chemotaxis, and path integration systems. (C) Example behaviours generated by the model in an anemotaxis and ant homing task. Left part of the left panel shows the trajectory of the one simulated fly, and the upwind speed and angular velocity of the agent are shown in the right part. The time at which ON and OFF responses are triggered are shown by purple dots and red stars, respectively. The left panel of the right-side data shows paths of simulated ants when guided by path integration (PI) and odour cues. Groups headings are also shown at t = 20 (early in the route when PI dominates) and t = 250 (later in the route when olfactory navigation begins to dominate as PI vector length is low).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The simulation results of 20 agents. Trajectories are shown on the left with the highlighted one corresponding to that of Figure 5; mean perceived odour concentration, upwind speed, and angular velocity are plotted on the right.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The instantaneous sensory value and neural activation of the highlighted agent in Figure 3C (right panel) during homing. From top to bottom, the value of perceived odour concentration, the activation of path integration (PI) memory neurons (CPU4), and the ring attractor excitation neurons. Note that the output of the ring attractor neurons combines injected cues as expected.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Left part draws the simulated ants’ homing paths, and the group mean headings at t = 20 (when path integration [PI] dominated) and t = 250 (when olfactory navigation should dominate the steering) are shown on the right. The instantaneous sensory value and neural activation of the highlighted agent in the left panel during homing are shown on the right-hand panel: from top to bottom, the value of perceived odour concentration, the activation of PI memory neurons (CPU4), and the ring attractor excitation neurons.
+
+#### Optimally integrating navigation behaviours across sensory domains
+
+In barren salt pans, homing desert ants follow their path integrator to their nest area before relying on nest odour plumes for their final approach (Buehlmann et al., 2012). Ants bypass the nests of conspecifics that diffuse similar odours ($C⁢O_{2}$) until reaching the nest locale (Buehlmann et al., 2012), indicating use of a sophisticated integration strategy beyond simple switching outlined above. Rather, ants instead appear to weigh their PI output relative to the home vector length in a similar fashion to their integration of PI and visual cues (Wystrach et al., 2015; Legge et al., 2014) as was realised in our previous model using ring attractor networks (Touretzky, 2005; Sun et al., 2018; Sun et al., 2020). Figure 3A (right panel) depicts the augmentation of our odour-gated anemotaxis model with a ring attractor circuit to optimally integrate PI and olfactory navigation outputs. These adaptations are in accordance with the olfactory navigation mechanisms (chemotaxis and anemotaxis) proposed to be used by ants by Wolf and Wehner, 2000; Wolf and Wehner, 2005. Note that the desired headings recommended by odour homing (OH, or chemotaxis) and upwind direction (UW, or odour-gated anemotaxis) are gated by the OFF and ON responses and weighted by the odour concentration signal prior to being injected into the ring attractor to be combined with PI. Figure 3B (right panel) illustrates how the various desired heading signals are optimally integrated by the ring attractor network before being sent as input to the steering circuit. Figure 3C shows homing paths generated by the model following simulated displacements left or right of the regular feeder which closely match those of real ants (Buehlmann et al., 2012). Note that there is an additional odour plume diffused by a simulated conspecific nest positioned near the release points which causes some distraction before the simulated ants continue to the real nest site. In the absence of the distractor, nest paths are much more direct (see Figure 3—figure supplement 1).
 
 Taken together these data demonstrate that the CX possess the neural mechanisms to flexibly coordinate the various guidance behaviours observed in insects across sensory domains, supporting its role as the navigation centre (Honkanen et al., 2019; Hulse et al., 2021).
 
-## A mechanism for transferring between orientation frames of reference
+### A mechanism for transferring between orientation frames of reference
 
 The optimal integration model detailed above is reliant on the copy-and-shift mechanism firstly ensuring that all orientation cues are presented in a shared frame of reference. Recall that the desired headings for PI, chemotaxis and anemotaxis are all defined in relation to the animal’s global head direction. In the following analysis, we assess whether this frame-changing capacity can also provide benefits for navigational robustness.
 
-## From egocentric wind direction to geocentric celestial compass
+#### From egocentric wind direction to geocentric celestial compass
 
 Desert ants travel to and from familiar feeder locations via visually guided routes (Kohler and Wehner, 2005; Mangan and Webb, 2012), but wind gusts can blow them off course. Wystrach and Schwarz, 2013 reported that in the instant prior to displacement ants assume a stereotypical ‘clutching’ pose during which they transfer their egocentric measure of wind direction (indicating the direction in which they are about to be blown) into a geocentric frame of reference given by their celestial compass. Displaced ants then utilise this celestial compass memory to guide their path directly towards their familiar route (Figure 4A, left panel). Such a strategy is easily accounted for by the ‘copy-and-shift’ mechanism as seen in Figure 4B (left panel). That is, during the clutch pose the celestial compass heading is copied and shifted by the activation of the WPN encoding the upwind direction relative to the animal’s heading to create a desired heading that points back along the direction of travel. This desired heading is maintained in a working memory during displacement before activation to guide the agent back to the familiar route region (see simulated navigating paths in Figure 4C, left panel).
 
@@ -74,7 +106,7 @@ Desert ants travel to and from familiar feeder locations via visually guided rou
 
 **Figure 4.:** (A) Wind compensation and backtracking behaviour of navigating ants. Left panel illustrates the wind compensation behaviour where ants reorientate to the direction from which they were blown off course but with respect to their celestial compass (Wystrach and Schwarz, 2013). Right subfigure shows backtracking behaviours whereby homing desert ants captured just before entering their nest and released in unfamiliar visual surroundings initially dash back along the celestial compass heading in which they were travelling (Wystrach et al., 2013). (B) The proposed neural mechanism showing how the behaviours in (A) could be recreated. Wind compensation is implemented by using copy-and-shift to copy their heading compass stored in the central complex (CX) when clutching and shift by an amount of degree determined by the activation of wedge projection neurons (WPNs) to form the working memory (desired heading) for later navigation. Backtracking is modelled in an identical way except that the shift is constant 180°. (C) The simulation results of our model. In each panel, the navigating trajectories and initial headings of the simulated ants are shown. Simulated ants guided by the model are all heading to the expected orientation as observed in real behavioural experiments (Wystrach and Schwarz, 2013; Wystrach and Schwarz, 2013).
 
-## From visual context to geocentric celestial compass
+#### From visual context to geocentric celestial compass
 
 Similarly, homing desert ants captured just before entering their nest and released in unfamiliar visual surroundings initially dash back along the celestial compass heading in which they were travelling (Wystrach et al., 2013; Figure 4A, right panel). Note that this differs from the behaviour of ants lacking PI cues and displaced from other locations along the route. Those ants have no preferred direction of travel following displacement according to the observation (Wystrach et al., 2013). This indicates that the sight of the nest surroundings could be considered a ‘special circumstance’ in a similar way to the ‘clutching’ pose mentioned above. Figure 4B (right panel) depicts how this behaviour could also arise from the ‘copy-and-shift’ mechanism. That is, when there is a significant drop of visual novelty (as might only be experienced after a displacement from the nest), the compass direction is again copied and shifted by a predetermined amount, this case 180°. This creates a new desired heading that can be stored in working memory that will cause the initial search to be focused in the direction from which the animals just travelled (Figure 4C , right panel).
 
@@ -88,7 +120,7 @@ The CX is as ancient as insects themselves (Homberg, 2008; Strausfeld, 2009) and
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/73077/elife-73077-fig5-v2.jpg)
 
-**Figure 5.:** Doyle and Csete, 2011) of biological control system.(A) The control systems of insect navigation (top) and mammalian decision-making (bottom) are epitomised by the ‘bowtie’ architecture, proposing that fixed brain circuitry constrains the format of the sensory input (fanning in to the knot) but decontrains the application domains of the output behaviours (fanning out of the bowtie). Photo of sweet bee Megalopta genalis is from Ajay Narendra. (B) The proposed mapping of the bowtie architecture to the central complex (CX) for insect navigation. Specially, the copy-and-shift mechanism (regarded as the knot of the bowtie, thus constrains the representation) is reused to generate different desired headings across sensory and task domains (deconstrains the motor pattern, thus allows for high diversity of behaviours).
+**Figure 5.:** (A) The control systems of insect navigation (top) and mammalian decision-making (bottom) are epitomised by the ‘bowtie’ architecture, proposing that fixed brain circuitry constrains the format of the sensory input (fanning in to the knot) but decontrains the application domains of the output behaviours (fanning out of the bowtie). Photo of sweet bee Megalopta genalis is from Ajay Narendra. (B) The proposed mapping of the bowtie architecture to the central complex (CX) for insect navigation. Specially, the copy-and-shift mechanism (regarded as the knot of the bowtie, thus constrains the representation) is reused to generate different desired headings across sensory and task domains (deconstrains the motor pattern, thus allows for high diversity of behaviours).
 
 This study has explored the behavioural consequences of the mechanisms using abstracted neural implementations, raising the question as to whether they can be realised in insect brains. Regarding the copy-and-shift mechanism, lateralised neural connections and synapse plasticity that shift the head-direction output relative to sensory input (i.e. nudge the activation ‘bump’ within a population of neurons) have already been mapped (Seelig and Jayaraman, 2015; Green et al., 2017; Kim et al., 2019; Fisher et al., 2019) and modelled (Cope et al., 2017), demonstrating the feasibility of such computation. More recently, Goulard et al., 2021 presented a CX-based navigation model that includes a biologically realistic neural pathway that is functionally similar to the copy-and-shift mechanism proposed here. The same study also outlined how a short-term memory of a desired heading could be maintained in the FB of the CX via synapse-weight modulation after the original guidance cue is removed that could support the wind compensation and backtracking behaviours described above. Our model hypothesises the existence of a ring attractor network to optimally integrate the desired heading cues which we suggest could be realised in the complex intra-connections within the FB and the NO (Hulse et al., 2021; Sayre et al., 2021). We also hypothesise that different populations of Protocerebral bridge - Fan-shaped body - Nodulus (PFN) neurons in the CX simultaneously store the distinct desired headings computed by the independent navigation systems (e.g. PI-based home vector is stored in CPU4 neurons [a subset of PFNs]; Stone et al., 2017; Hulse et al., 2021; Sayre et al., 2021). Further, the hypothetical context switching introduced could be achieved by the recently mapped FB-NOc neurons found in the bees (Sayre et al., 2021).
 
@@ -100,106 +132,327 @@ Despite growing agreement on the functional role of the CX in insect navigation 
 
 All simulations and network models were implemented by Python 3.5 and external libraries numpy, matplotlib, scipy, opencv, etc. The source code of the simulation and plotting figures is available via GitHub.
 
-## Odour field
+### Odour field
 
 As the basic sensory input, the spatial concentration distribution of the odour field is simulated simply and based on the scaled exponential functions, with required changes according to the wind dynamics.
 
-## Odour field without wind
+#### Odour field without wind
 
-For the simulations in the laminar odour environment (i.e. no wind) as that in Figure 3 (left panel), the landscape of the odour concentration C⁢O⁢No is modelled for ‘volcano’ shape:(1)CONo={keτ(r/2−d)ifd>r/2keτ(d−r/2)otherwise
+For the simulations in the laminar odour environment (i.e. no wind) as that in Figure 3 (left panel), the landscape of the odour concentration $C⁢O⁢N_{o}$ is modelled for ‘volcano’ shape:
 
-and for ‘linear’ shape:(2)CONo={keτ(r/2−d)ifd>r/2k−0.2eτ(d−r/2)otherwise
+$$
+CON_{o}={ke^{\tau(r/2−d)}ifd>r/2ke^{\tau(d−r/2)}otherwise
+$$
 
-where d is the distance from the position (x,y) to the odour source (xs,ys). Thus, d=(x−xs)2+(y−ys)2 is the scale factor, r is the radius of the odour source, and τ is the decay factor.
+and for ‘linear’ shape:
 
-## Odour field with wind
+$$
+CON_{o}={ke^{\tau(r/2−d)}ifd>r/2k−0.2e^{\tau(d−r/2)}otherwise
+$$
 
-To simplify the simulation of the odour plume dynamics, all the simulations in this study were conducted under the condition of constant wind speed u and wind direction θw, and we assume that the odour plume will ideally flow to the downwind area, that is, the odour concentration in the upwind area will always be zero. The source of the odour constantly emits at the rate q . Then the odour concentration at position (x,y) can be calculated by(3)CONo={quσxy2πe−d22πσxyifcos⁡θ>00otherwise
+where $d$ is the distance from the position $(x,y)$ to the odour source $(x_{s},y_{s})$. Thus, $d=\sqrt{(x−x_{s})^{2}+(y−y_{s})^{2}}$ is the scale factor, $r$ is the radius of the odour source, and $\tau$ is the decay factor.
 
-where d=(x-xs)2+(y-ys)2⁢sin⁡θ is the projected distance from the odour source. And σx⁢y is calculated by σx⁢y=Ks⁢d , where Ks∈[0.5,0.3,0.2,0.15,0.1] is the tuning factor determined by the stability of the odour. And θ is the angle between the vector pointing from the position to the source and the wind direction, so can be computed by(4)θ=arccos⁡(x-xs)⁢(u⁢cos⁡θw)+(y-ys)⁢(u⁢sin⁡θw)(x-xs)2+(y-ys)2⁢u
+#### Odour field with wind
 
-## Neural model
+To simplify the simulation of the odour plume dynamics, all the simulations in this study were conducted under the condition of constant wind speed $u$ and wind direction $\theta_{w}$, and we assume that the odour plume will ideally flow to the downwind area, that is, the odour concentration in the upwind area will always be zero. The source of the odour constantly emits at the rate $q$ . Then the odour concentration at position $(x,y)$ can be calculated by
 
-We use the simple firing rate to model the neurons in the proposed networks, where the output firing rate C is a sigmoid function of the input I if there is no special note. In the following descriptions and formulas, a subscript is used to represent the layers or name of the neuron while the superscript is used to represent the value at a specific time or with a specific index.
+$$
+CON_{o}={\frac{q}{u\sigma_{xy}\sqrt{2\pi}}e^{−\frac{d^{2}}{2\pi\sigma_{xy}}}ifcos⁡\theta>00otherwise
+$$
 
-## Current heading
+where $d=\sqrt{(x-x_{s})^{2}+(y-y_{s})^{2}}⁢sin⁡\theta$ is the projected distance from the odour source. And $\sigma_{x⁢y}$ is calculated by $\sigma_{x⁢y}=K_{s}⁢d$ , where $K_{s}\in[0.5,0.3,0.2,0.15,0.1]$ is the tuning factor determined by the stability of the odour. And $\theta$ is the angle between the vector pointing from the position to the source and the wind direction, so can be computed by
 
-In our previous model, there are two compass references derived from different sensory information (Sun et al., 2020), but in this paper, only the global compass (i.e. the activation of I-TB1/Δ⁢7 neuron) is used here because navigation behaviours reproduced in this study are all assumed using the global compass as the external direction reference. For the details of the modelling of global current heading (II-T⁢B⁢1t,j), see our previous paper (Sun et al., 2020).
+$$
+\theta=arccos⁡\frac{(x-x_{s})⁢(u⁢cos⁡\theta_{w})+(y-y_{s})⁢(u⁢sin⁡\theta_{w})}{\sqrt{(x-x_{s})^{2}+(y-y_{s})^{2}}⁢u}
+$$
 
-## Steering circuit
+### Neural model
 
-The steering neurons (the same as previous paper [Sun et al., 2020] but presented here for convenience), that is, CPU1 neurons (CC⁢P⁢U⁢1i,i=0,1,2⁢…⁢15) receive excitatory inputs from the desired heading (CD⁢Hi,i=0,1,2⁢…⁢15) and inhibitory inputs from the current heading (CC⁢H,i=0,1,2⁢…⁢15) to generate the turning signal:(5)CS⁢Ti=CD⁢Hi-CC⁢Hi  i=0,1,…⁢15
+We use the simple firing rate to model the neurons in the proposed networks, where the output firing rate $C$ is a sigmoid function of the input $I$ if there is no special note. In the following descriptions and formulas, a subscript is used to represent the layers or name of the neuron while the superscript is used to represent the value at a specific time or with a specific index.
 
-The turning angle is determined by the difference of the activation summations between left (i=0,1,2⁢…⁢7) and right (i=8,9,10⁢…⁢15) set of CPU1 neurons:(6)θM=km⁢o⁢t⁢o⁢r⁢(∑i=07CC⁢P⁢U⁢1-∑i=815CC⁢P⁢U⁢1)
+#### Current heading
 
-## Upwind direction encoding
+In our previous model, there are two compass references derived from different sensory information (Sun et al., 2020), but in this paper, only the global compass (i.e. the activation of I-TB1/$Δ⁢7$ neuron) is used here because navigation behaviours reproduced in this study are all assumed using the global compass as the external direction reference. For the details of the modelling of global current heading ($I_{I-T⁢B⁢1}^{t,j}$), see our previous paper (Sun et al., 2020).
 
-The upwind direction is decoded as the activation of UW neurons copied and shifted from heading neurons (I-TB1), and the value of this shifting is determined by the angular difference between the current heading (θh) and wind direction (θw) encoded by the firing rate of WPN. And the value of WPN is defined as the difference of the antennal deflection encoded by B1 and APNs as(7)CW⁢P⁢N=CA⁢P⁢N-CB⁢1=sin⁡(θw-θh+π)-sin⁡(-(θw-θh+π))
+#### Steering circuit
 
-Then population activation of upwind direction neurons (UW) can be calculated by(8)CU⁢W==CI-T⁢B⁢1j,j={i+o⁢f⁢f⁢s⁢e⁢ti⁢f i+o⁢f⁢f⁢s⁢e⁢t≤7i+o⁢f⁢f⁢s⁢e⁢t-7o⁢t⁢h⁢e⁢r⁢w⁢i⁢s⁢e
+The steering neurons (the same as previous paper [Sun et al., 2020] but presented here for convenience), that is, CPU1 neurons ($C_{C⁢P⁢U⁢1}^{i},i=0,1,2⁢…⁢15$) receive excitatory inputs from the desired heading ($C_{D⁢H}^{i},i=0,1,2⁢…⁢15$) and inhibitory inputs from the current heading ($C_{C⁢H},i=0,1,2⁢…⁢15$) to generate the turning signal:
 
-## Fly: ON and OFF responses-based switching circuit
+$$
+C_{S⁢T}^{i}=C_{D⁢H}^{i}-C_{C⁢H}^{i}  i=0,1,…⁢15
+$$
 
-Different navigation strategies will dominate the motor system according to the sensory inputs, that is, in this study, the change of perceived odour concentration. This coordination is modelled as a contextual switching that is very similar to the mechanism with SN1 and SN2 neuron involved in our previous model (Sun et al., 2020) to define the final output of odour navigation (CO⁢N):(9)CO⁢Ni={Cc⁢h⁢e⁢m⁢oii⁢f O⁢F⁢F⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢eCa⁢n⁢e⁢m⁢oii⁢f O⁢N⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢e
+The turning angle is determined by the difference of the activation summations between left ($i=0,1,2⁢…⁢7$) and right ($i=8,9,10⁢…⁢15$) set of CPU1 neurons:
+
+$$
+\theta_{M}=k_{m⁢o⁢t⁢o⁢r}⁢(\sumi=07C_{C⁢P⁢U⁢1}-\sumi=815C_{C⁢P⁢U⁢1})
+$$
+
+#### Upwind direction encoding
+
+The upwind direction is decoded as the activation of UW neurons copied and shifted from heading neurons (I-TB1), and the value of this shifting is determined by the angular difference between the current heading ($\theta_{h}$) and wind direction ($\theta_{w}$) encoded by the firing rate of WPN. And the value of WPN is defined as the difference of the antennal deflection encoded by B1 and APNs as
+
+$$
+C_{W⁢P⁢N}=C_{A⁢P⁢N}-C_{B⁢1}=sin⁡(\theta_{w}-\theta_{h}+\pi)-sin⁡(-(\theta_{w}-\theta_{h}+\pi))
+$$
+
+Then population activation of upwind direction neurons (UW) can be calculated by
+
+$$
+C_{U⁢W}==C_{I-T⁢B⁢1}^{j},j={i+o⁢f⁢f⁢s⁢e⁢ti⁢f i+o⁢f⁢f⁢s⁢e⁢t\leq7i+o⁢f⁢f⁢s⁢e⁢t-7o⁢t⁢h⁢e⁢r⁢w⁢i⁢s⁢e
+$$
+
+#### Fly: ON and OFF responses-based switching circuit
+
+Different navigation strategies will dominate the motor system according to the sensory inputs, that is, in this study, the change of perceived odour concentration. This coordination is modelled as a contextual switching that is very similar to the mechanism with SN1 and SN2 neuron involved in our previous model (Sun et al., 2020) to define the final output of odour navigation ($C_{O⁢N}$):
+
+$$
+C_{O⁢N}^{i}={C_{c⁢h⁢e⁢m⁢o}^{i}i⁢f O⁢F⁢F⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢eC_{a⁢n⁢e⁢m⁢o}^{i}i⁢f O⁢N⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢e
+$$
 
 And how the sensory information determines the response is shown in Table 1, where random means no reliable sensory input is available, and the agent will move forward to a random direction.
 
-## OFF response: Chemotaxis
+**Table 1.**
+ 'Truth table’ of the ON and OFF responses of the modelled fly odour navigation.Columns list the state of sensed odour concentration while rows indicate the state of the changing of odour concentration.
 
-The chemotaxis model is adapted from the previous VH model (Sun et al., 2020) by changing the change of visual familiarity signal from the MBON (Δ⁢CM⁢B⁢O⁢N) to the change of the odour concentration to determine the shifting value, thus the desired heading of chemotaxis is(10)Cc⁢h⁢e⁢m⁢oi=CI-T⁢B⁢1j,j={i+o⁢f⁢f⁢s⁢e⁢ti⁢f i+o⁢f⁢f⁢s⁢e⁢t≤7i+o⁢f⁢f⁢s⁢e⁢t-7o⁢t⁢h⁢e⁢r⁢w⁢i⁢s⁢e  i=0,1,…⁢7
 
-Note that in our previous visual navigation model (Sun et al., 2020) i,j both were integers for the ease of computing, thus, the shifting resolution is 45°, but here to more accurately model the desired heading and to achieve better performance, the shifting resolution was set to be 4.5° by interpolating neuron activation of I-TB1 from 8 to 80, then down-sampling to 8 to generate the shifted desired heading.
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>&lt;Throff</th>
+      <th>&gt;Throff&lt;Thron</th>
+      <th>&gt;Thron</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;Thro</td>
+      <td>Random</td>
+      <td>Random</td>
+      <td>ON</td>
+    </tr>
+    <tr>
+      <td>&gt;Thro</td>
+      <td>OFF</td>
+      <td>ON</td>
+      <td>ON</td>
+    </tr>
+  </tbody>
+</table>
 
-The relationship between Δ⁢Co and o⁢f⁢f⁢s⁢e⁢t is shown as follows:
+### OFF response: Chemotaxis
 
-offset={0ifΔCo<0min(⌊kchemoΔCo⌋,3)otherwise(11)
+The chemotaxis model is adapted from the previous VH model (Sun et al., 2020) by changing the change of visual familiarity signal from the MBON ($Δ⁢C_{M⁢B⁢O⁢N}$) to the change of the odour concentration to determine the shifting value, thus the desired heading of chemotaxis is
+
+$$
+C_{c⁢h⁢e⁢m⁢o}^{i}=C_{I-T⁢B⁢1}^{j},j={i+o⁢f⁢f⁢s⁢e⁢ti⁢f i+o⁢f⁢f⁢s⁢e⁢t\leq7i+o⁢f⁢f⁢s⁢e⁢t-7o⁢t⁢h⁢e⁢r⁢w⁢i⁢s⁢e  i=0,1,…⁢7
+$$
+
+Note that in our previous visual navigation model (Sun et al., 2020) $i,j$ both were integers for the ease of computing, thus, the shifting resolution is 45°, but here to more accurately model the desired heading and to achieve better performance, the shifting resolution was set to be 4.5° by interpolating neuron activation of I-TB1 from 8 to 80, then down-sampling to 8 to generate the shifted desired heading.
+
+The relationship between $Δ⁢C_{o}$ and $o⁢f⁢f⁢s⁢e⁢t$ is shown as follows:
+
+$offset={0ifΔC_{o}<0min(⌊k_{chemo}ΔC_{o}⌋,3)otherwise$(11)
 
 Then the desired heading of OH will be fed into the steering circuit to compare with the current heading to generate the motor command.
 
-## ON response: Odour-gated anemotaxis
+### ON response: Odour-gated anemotaxis
 
-As shown in Table 1, when the ON response is determined, the agent will follow the upwind direction, thus the desired heading input to steering circuit should be the upwind direction encoded by UM neuron (Equation 8):(12)Ca⁢n⁢e⁢m⁢oi=CU⁢Wi
+As shown in Table 1, when the ON response is determined, the agent will follow the upwind direction, thus the desired heading input to steering circuit should be the upwind direction encoded by UM neuron (Equation 8):
 
-## Ants: Integration with PI
+$$
+C_{a⁢n⁢e⁢m⁢o}^{i}=C_{U⁢W}^{i}
+$$
 
-The modelling of ants’ odour navigation integrated with PI can be regarded as the extension of the fly’s odour navigation and an application of the unified model. Specifically, the final output of olfactory navigation is determined by the ON and OFF responses (see Table 1), and then is integrated with PI via RA like that in the optimal integration of PI and VH:(13)τ⁢d⁢CI⁢Nd⁢t=-CI⁢N+g⁢(∑j=1nWE⁢2⁢Ej⁢i⁢CI⁢Nj+X1i+X2i+WI⁢2⁢E⁢CU⁢I)  i=0,1,…⁢7.
+#### Ants: Integration with PI
 
-where WE⁢2⁢Ej⁢i is the recurrent connections from jt⁢h neuron to it⁢h neuron, g⁢(x) is the activation function that provides the non-linear property of the neuron:(14)g⁢(c)=m⁢a⁢x⁢(0,ρ+c)
+The modelling of ants’ odour navigation integrated with PI can be regarded as the extension of the fly’s odour navigation and an application of the unified model. Specifically, the final output of olfactory navigation is determined by the ON and OFF responses (see Table 1), and then is integrated with PI via RA like that in the optimal integration of PI and VH:
 
-where ρ denotes the offset of the function. Thus X⁢1 should be(15)X1i=CP⁢Ii  i=0,1,…⁢7
+$$
+\tau⁢\frac{d⁢C_{I⁢N}}{d⁢t}=-C_{I⁢N}+g⁢(\sumj=1nW_{E⁢2⁢E}^{j⁢i}⁢C_{I⁢N}^{j}+X_{1}^{i}+X_{2}^{i}+W_{I⁢2⁢E}⁢C_{U⁢I})  i=0,1,…⁢7.
+$$
 
-and X⁢2 in Equation 12 should be(16)X2i={ko⁢C⁢O⁢No⁢CO⁢Hii⁢f O⁢F⁢F⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢eko⁢C⁢O⁢No⁢Ca⁢n⁢e⁢m⁢oii⁢f O⁢N⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢e
+where $W_{E⁢2⁢E}^{j⁢i}$ is the recurrent connections from $j^{t⁢h}$ neuron to $i^{t⁢h}$ neuron, $g⁢(x)$ is the activation function that provides the non-linear property of the neuron:
 
-Then the output of optimal integration (OI) of the RA acts as the only desired heading input to the steering circuit:(17){CD⁢H0-7=CO⁢I⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢LCD⁢H8-15=CO⁢I⁢WD⁢H⁢2⁢C⁢P⁢U⁢1⁢R
+$$
+g⁢(c)=m⁢a⁢x⁢(0,ρ+c)
+$$
 
-Only the global compass is needed in this study’s modelling. Thus the input of current heading will always be the excitation of the I-TB1 neuron:(18){CC⁢H0-7=CI-T⁢B⁢1CC⁢H8-15=CI-T⁢B⁢1
+where $ρ$ denotes the offset of the function. Thus $X⁢1$ should be
+
+$$
+X_{1}^{i}=C_{P⁢I}^{i}  i=0,1,…⁢7
+$$
+
+and $X⁢2$ in Equation 12 should be
+
+$$
+X_{2}^{i}={k_{o}⁢C⁢O⁢N_{o}⁢C_{O⁢H}^{i}i⁢f O⁢F⁢F⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢ek_{o}⁢C⁢O⁢N_{o}⁢C_{a⁢n⁢e⁢m⁢o}^{i}i⁢f O⁢N⁢r⁢e⁢s⁢p⁢o⁢n⁢s⁢e
+$$
+
+Then the output of optimal integration (OI) of the RA acts as the only desired heading input to the steering circuit:
+
+$$
+{C_{D⁢H}^{0-7}=C_{O⁢I}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢L}C_{D⁢H}^{8-15}=C_{O⁢I}⁢W_{D⁢H⁢2⁢C⁢P⁢U⁢1⁢R}
+$$
+
+Only the global compass is needed in this study’s modelling. Thus the input of current heading will always be the excitation of the I-TB1 neuron:
+
+$$
+{C_{C⁢H}^{0-7}=C_{I-T⁢B⁢1}C_{C⁢H}^{8-15}=C_{I-T⁢B⁢1}
+$$
 
 The output of the steering circuit (i.e. the summed activation of the left and right CPU1 neurons) is used to generate the turning command in the way that is same as Equation 6.
 
-## Simulations
+### Simulations
 
-In all simulations, at each time step, the simulated agent (walking fly or ant) will sense the odour sensory based on its current location and then update neural activation to generate the desired moving direction and finally move one step to that direction. Equation 6 gives the turning angle of the agent, thus the instantaneous ‘velocity’ (v) at every step can be computed by(19)vt=SL[cos⁡θMt,sin⁡θMt]
+In all simulations, at each time step, the simulated agent (walking fly or ant) will sense the odour sensory based on its current location and then update neural activation to generate the desired moving direction and finally move one step to that direction. Equation 6 gives the turning angle of the agent, thus the instantaneous ‘velocity’ ($v$) at every step can be computed by
 
-where SL is the step length in centimetres. Note that we have not defined the time accuracy for every step of the simulations, thus the unit of the velocity in this implementation is c⁢m/s⁢t⁢e⁢p rather than c⁢m/s. Then the position of agent Pt+1 in the Cartesian coordinates for the next time step is updated by(20)Pt+1=Pt+vt
+$$
+v^{t}=S_{L}[cos⁡\theta_{M}^{t},sin⁡\theta_{M}^{t}]
+$$
 
-The positions of odour sources in all simulations are all set to (0,0), that is, xs=0,ys=0. Other main parameters are listed in Table 2. Note that in each simulation the speed of agent is set constant.
+where $S_{L}$ is the step length in centimetres. Note that we have not defined the time accuracy for every step of the simulations, thus the unit of the velocity in this implementation is $c⁢m/s⁢t⁢e⁢p$ rather than $c⁢m/s$. Then the position of agent $P^{t+1}$ in the Cartesian coordinates for the next time step is updated by
 
-## Fly: Chemotaxis
+$$
+P^{t+1}=P^{t}+v^{t}
+$$
 
-To test the performances of the chemotaxis behaviour, five simulated agents with randomly generated heading direction start from five randomly generated locations in the zone of (−12<x<12,−12<y<12), and are then driven by the model for 1500 steps. Then we ran this simulation for four times in two different odour landscapes (‘volcano’ and ‘linear’) to get the results shown in Figure 3 (right panel) and Figure 4.
+The positions of odour sources in all simulations are all set to $(0,0)$, that is, $x_{s}=0,y_{s}=0$. Other main parameters are listed in Table 2. Note that in each simulation the speed of agent is set constant.
 
-## Fly: Anemotaxis
+**Table 2.**
+ The detailed parameter settings for the simulations in this study.
 
-To reproduce the behavioural data in Álvarez-Salvado et al., 2018, the odour was only set ON during the second a quarter of total time (e.g. if the agent is set to run 200 steps, then the odour ON time will be in 50–100 steps). Four agents with randomly generated heading start from randomly generated locations in the zone of (−1.5<x<1.5,−13<y<−5), and are then guided by the model to run 200 steps. The simulation was conducted for five times.
 
-## Fly: Integrated ON and OFF response
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th colspan="2">Fly – chemotaxis</th>
+      <th rowspan="2">Fly – anemotaxis</th>
+      <th rowspan="2">Fly – integrated</th>
+      <th rowspan="2">Ant – integrated</th>
+    </tr>
+    <tr>
+      <th>Volcano</th>
+      <th>Linear</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Odour</td>
+      <td>k</td>
+      <td>10</td>
+      <td>10</td>
+      <td rowspan="3" colspan="3">/</td>
+    </tr>
+    <tr>
+      <td>τ</td>
+      <td>0.1</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>/</td>
+      <td>/</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Wind</td>
+      <td>u</td>
+      <td rowspan="2" colspan="2">No wind</td>
+      <td>10.0</td>
+      <td>10.0</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>wθ</td>
+      <td>-π/2</td>
+      <td>-π/2</td>
+      <td>π</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Model and simulation</td>
+      <td>T⁢h⁢ro</td>
+      <td rowspan="4" colspan="2">/</td>
+      <td rowspan="4">/</td>
+      <td>0.001</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>T⁢h⁢ro⁢n</td>
+      <td>0.02</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>T⁢h⁢ro⁢f⁢f</td>
+      <td>-0.0002</td>
+      <td>-0.0002</td>
+    </tr>
+    <tr>
+      <td>ko</td>
+      <td>/</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>kc⁢h⁢e⁢m⁢o</td>
+      <td>100.0</td>
+      <td>100.0</td>
+      <td>/</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>km⁢o⁢t⁢o⁢r</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.5</td>
+      <td>1.5</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>SL</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.4</td>
+      <td>0.4</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Heading</td>
+      <td>Random</td>
+      <td>Random</td>
+      <td>Random</td>
+      <td>Random</td>
+      <td>0-2⁢π</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Fly: Chemotaxis
+
+To test the performances of the chemotaxis behaviour, five simulated agents with randomly generated heading direction start from five randomly generated locations in the zone of $(−12<x<12,−12<y<12)$, and are then driven by the model for 1500 steps. Then we ran this simulation for four times in two different odour landscapes (‘volcano’ and ‘linear’) to get the results shown in Figure 3 (right panel) and Figure 4.
+
+#### Fly: Anemotaxis
+
+To reproduce the behavioural data in Álvarez-Salvado et al., 2018, the odour was only set ON during the second a quarter of total time (e.g. if the agent is set to run 200 steps, then the odour ON time will be in 50–100 steps). Four agents with randomly generated heading start from randomly generated locations in the zone of $(−1.5<x<1.5,−13<y<−5)$, and are then guided by the model to run 200 steps. The simulation was conducted for five times.
+
+#### Fly: Integrated ON and OFF response
 
 The whole simulation settings are the same as that in the last section except for some model parameters listed in Table 2 as this simulation is conducted to verify the integrated model.
 
-## Ants: Odour navigation integrated with PI
+#### Ants: Odour navigation integrated with PI
 
-To reproduce the behavioural data in Buehlmann et al., 2012, we first generated PI memory encoding the home vector with 10 m length and π/2 direction. Then at each release point ((-1.5,-10) and (1.5,-10)), we released 10 simulated full-vector (10-m-long and pointing to π/2) ants with different initial headings sampled uniformly from 0-2⁢π (see also Table 2). Note that the simulation settings with/without additional odour plume diffused by conspecific nest are identical so the list as one column in Table 2.
+To reproduce the behavioural data in Buehlmann et al., 2012, we first generated PI memory encoding the home vector with 10 m length and $\pi/2$ direction. Then at each release point ($(-1.5,-10)$ and $(1.5,-10)$), we released 10 simulated full-vector (10-m-long and pointing to $\pi/2$) ants with different initial headings sampled uniformly from $0-2⁢\pi$ (see also Table 2). Note that the simulation settings with/without additional odour plume diffused by conspecific nest are identical so the list as one column in Table 2.
 
-## Ants: Wind compensation and backtracking
+#### Ants: Wind compensation and backtracking
 
-The quick implementations of using ‘copy-and-shift’ mechanism to model the wind compensation and backtracking behaviour follow the same step: first, generate the desired headings by shifting the current heading by the WPN activation for the wind compensation and by 180° for backtracking, respectively; second, release the simulated ant at the same releasing point but with random headings (uniform distribution in 0-2⁢π). Motion-related parameters are set identically as that of those mentioned in the section ‘Ants: odour navigation integrated with PI’.
+The quick implementations of using ‘copy-and-shift’ mechanism to model the wind compensation and backtracking behaviour follow the same step: first, generate the desired headings by shifting the current heading by the WPN activation for the wind compensation and by 180° for backtracking, respectively; second, release the simulated ant at the same releasing point but with random headings (uniform distribution in $0-2⁢\pi$). Motion-related parameters are set identically as that of those mentioned in the section ‘Ants: odour navigation integrated with PI’.

@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.18972.001 Ferritins are ubiquitous proteins that oxidise and store iron within a protein shell to protect cells from oxidative damage. We have characterized the structure and function of a new member of the ferritin superfamily that is sequestered within an encapsulin capsid. We show that this encapsulated ferritin (EncFtn) has two main alpha helices, which assemble in a metal dependent manner to form a ferroxidase center at a dimer interface. EncFtn adopts an open decameric structure that is topologically distinct from other ferritins. While EncFtn acts as a ferroxidase, it cannot mineralize iron. Conversely, the encapsulin shell associates with iron, but is not enzymatically active, and we demonstrate that EncFtn must be housed within the encapsulin for iron storage. This encapsulin nanocompartment is widely distributed in bacteria and archaea and represents a distinct class of iron storage system, where the oxidation and mineralization of iron are distributed between two proteins. DOI: http://dx.doi.org/10.7554/eLife.18972.001
+Ferritins are ubiquitous proteins that oxidise and store iron within a protein shell to protect cells from oxidative damage. We have characterized the structure and function of a new member of the ferritin superfamily that is sequestered within an encapsulin capsid. We show that this encapsulated ferritin (EncFtn) has two main alpha helices, which assemble in a metal dependent manner to form a ferroxidase center at a dimer interface. EncFtn adopts an open decameric structure that is topologically distinct from other ferritins. While EncFtn acts as a ferroxidase, it cannot mineralize iron. Conversely, the encapsulin shell associates with iron, but is not enzymatically active, and we demonstrate that EncFtn must be housed within the encapsulin for iron storage. This encapsulin nanocompartment is widely distributed in bacteria and archaea and represents a distinct class of iron storage system, where the oxidation and mineralization of iron are distributed between two proteins.
 
 ## Introduction
 
@@ -40,115 +40,415 @@ Here we investigate the structure and biochemistry of EncFtn in order to underst
 
 ## Results
 
-## Assembly of R. rubrum EncFtn encapsulin nanocompartments in E. coli
+### Assembly of R. rubrum EncFtn encapsulin nanocompartments in E. coli
 
-We produced recombinant
+We produced recombinant R. rubrum encapsulin nanocompartments in E. coli by co-expression of the encapsulin (Rru_A0974) and EncFtn (Rru_A0973) proteins, and purified these by sucrose gradient ultra-centrifugation (Figure 1A) (Sutter et al., 2008). TEM imaging of uranyl acetate-stained samples revealed that, when expressed in isolation, the encapsulin protein forms empty compartments with an average diameter of 24 nm (Figure 1B and Figure 1—figure supplement 1A/C), consistent with the appearance and size of the T. maritima encapsulin (Sutter et al., 2008). We were not able to resolve any higher-order structures of EncFtn by TEM. Protein purified from co-expression of the encapsulin and EncFtn resulted in 24 nm compartments with regions in the center that exclude stain, consistent with the presence of the EncFtn within the encapsulin shell (Figure 1C and Figure 1—figure supplement 1B/C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig1-v3.jpg)
 
-**Figure 1.:** R. rubrum encapsulin nanocompartments.(A) Recombinantly expressed encapsulin (Enc) and co-expressed EncFtn-Enc were purified by sucrose gradient ultracentrifugation from E. coli B834(DE3) grown in SeMet medium. Samples were resolved by 18% acrylamide SDS-PAGE; the position of the proteins found in the complexes as resolved on the gel are shown with arrows. (B/C) Negative stain TEM image of recombinant encapsulin and EncFtn-Enc nanocompartments. Samples were imaged at 143,000 x magnification, with scale bar shown as 25 nm. Representative encapsulin and EncFtn-Enc complexes are indicated with red arrows.DOI: http://dx.doi.org/10.7554/eLife.18972.003
+**Figure 1.:** (A) Recombinantly expressed encapsulin (Enc) and co-expressed EncFtn-Enc were purified by sucrose gradient ultracentrifugation from E. coli B834(DE3) grown in SeMet medium. Samples were resolved by 18% acrylamide SDS-PAGE; the position of the proteins found in the complexes as resolved on the gel are shown with arrows. (B/C) Negative stain TEM image of recombinant encapsulin and EncFtn-Enc nanocompartments. Samples were imaged at 143,000 x magnification, with scale bar shown as 25 nm. Representative encapsulin and EncFtn-Enc complexes are indicated with red arrows.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** R. rubrum nanocompartments.(A/B) Negative stain TEM image of recombinant R. rubrum encapsulin and EncFtn-Enc nanocompartments. All samples were imaged at 143,000 x magnification; the scale bar length corresponds to 50 nm. (C) Histogram showing the distribution of nanocompartment diameters. A model Gaussian nonlinear least square function was fitted to the data to obtain a mean diameter of 24.6 nm with a standard deviation of 2.0 nm for encapsulin (grey) and a mean value of 23.9 nm with a standard deviation of 2.2 nm for co-expressed EncFtn and encapsulin (EncFtn-Enc, black).DOI: http://dx.doi.org/10.7554/eLife.18972.004
+**Figure 1—figure supplement 1.:** (A/B) Negative stain TEM image of recombinant R. rubrum encapsulin and EncFtn-Enc nanocompartments. All samples were imaged at 143,000 x magnification; the scale bar length corresponds to 50 nm. (C) Histogram showing the distribution of nanocompartment diameters. A model Gaussian nonlinear least square function was fitted to the data to obtain a mean diameter of 24.6 nm with a standard deviation of 2.0 nm for encapsulin (grey) and a mean value of 23.9 nm with a standard deviation of 2.2 nm for co-expressed EncFtn and encapsulin (EncFtn-Enc, black).
 
-## R. rubrum EncFtn forms a metal-ion stabilized decamer in solution
+### R. rubrum EncFtn forms a metal-ion stabilized decamer in solution
 
-We purified recombinant
+We purified recombinant R. rubrum EncFtn as both the full-length sequence (140 amino acids) and a truncated C-terminal hexahistidine-tagged variant (amino acids 1–96 plus the tag; herein EncFtnsH). In both cases the elution profile from size-exclusion chromatography (SEC) displayed two peaks (Figure 2A). SDS-PAGE analysis of fractions from these peaks showed that the high molecular weight peak was partially resistant to SDS and heat-induced denaturation; in contrast, the low molecular weight peak was consistent with monomeric mass of 13 kDa (Figure 2B). MALDI peptide mass fingerprinting of these bands confirmed the identity of both as EncFtn. Inductively coupled plasma mass spectrometry (ICP-MS) analysis of the SEC fractions showed 100 times more iron in the oligomeric fraction than the monomer (Figure 2A, blue scatter points; Table 1), suggesting that EncFtn oligomerization is associated with iron binding. In order to determine the iron-loading stoichiometry in the EncFtn complex, further ICP-MS experiments were performed using selenomethionine (SeMet)-labelled protein EncFtn (Table 1). In these experiments, we observed sub-stoichiometric metal binding, which is in contrast to the classical ferritins (Le Brun et al., 2010). Size-exclusion chromatography with multi-angle laser light scattering (SEC-MALLS) analysis of samples taken from each peak gave calculated molecular weights consistent with a decamer for the high molecular weight peak and a monomer for the low molecular weight peak (Figure 2C, Table 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig2-v3.jpg)
 
-**Figure 2.:** R. rubrum EncFtnsH.(A) Recombinant SeMet-labeled EncFtnsH produced with 1 mM Fe(NH4)2(SO4)2 in the growth medium was purified by nickel affinity chromatography and size-exclusion chromatography using a Superdex 200 16/60 column (GE Healthcare). Chromatogram traces measured at 280 nm and 315 nm are shown with the results from ICP-MS analysis of the iron content of the fractions collected during the experiment. The peak around 73 ml corresponds to a molecular weight of around 130 kDa when compared to calibration standards; this is consistent with a decamer of EncFtnsH. The small peak at 85 ml corresponds to the 13 kDa monomer compared to the standards. Only the decamer peak contains significant amounts of iron as indicated by the ICP-MS analysis. (B) Peak fractions from the gel filtration run were resolved by 15% acrylamide SDS-PAGE and stained with Coomassie blue stain. The bands around 13 kDa and 26 kDa correspond to EncFtnsH, as identified by MALDI peptide mass fingerprinting. The band at 13 kDa is consistent with the monomer mass, while the band at 26 kDa is consistent with a dimer of EncFtnsH. The dimer species only appears in the decamer fractions. (C) SEC-MALLS analysis of EncFtnsH from decamer fractions and monomer fractions allows assignment of an average mass of 132 kDa to decamer fractions and 13 kDa to monomer fractions, consistent with decamer and monomer species (Table 2).DOI: http://dx.doi.org/10.7554/eLife.18972.005
+**Figure 2.:** (A) Recombinant SeMet-labeled EncFtnsH produced with 1 mM Fe(NH4)2(SO4)2 in the growth medium was purified by nickel affinity chromatography and size-exclusion chromatography using a Superdex 200 16/60 column (GE Healthcare). Chromatogram traces measured at 280 nm and 315 nm are shown with the results from ICP-MS analysis of the iron content of the fractions collected during the experiment. The peak around 73 ml corresponds to a molecular weight of around 130 kDa when compared to calibration standards; this is consistent with a decamer of EncFtnsH. The small peak at 85 ml corresponds to the 13 kDa monomer compared to the standards. Only the decamer peak contains significant amounts of iron as indicated by the ICP-MS analysis. (B) Peak fractions from the gel filtration run were resolved by 15% acrylamide SDS-PAGE and stained with Coomassie blue stain. The bands around 13 kDa and 26 kDa correspond to EncFtnsH, as identified by MALDI peptide mass fingerprinting. The band at 13 kDa is consistent with the monomer mass, while the band at 26 kDa is consistent with a dimer of EncFtnsH. The dimer species only appears in the decamer fractions. (C) SEC-MALLS analysis of EncFtnsH from decamer fractions and monomer fractions allows assignment of an average mass of 132 kDa to decamer fractions and 13 kDa to monomer fractions, consistent with decamer and monomer species (Table 2).
 
-We purified EncFtn
+**Table 1.**
+ Determination of the Fe/EncFtnsH protein ratio by ICP-MS. EncFtnsH was purified as a SeMet derivative from E. coli B834(DE3) cells grown in SeMet medium with 1 mM Fe(NH4)2(SO4)2. Fractions from SEC were collected, acidified and analysed by ICP-MS. EncFtnsH concentration was calculated based on the presence of two SeMet per mature monomer. Samples where the element was undetectable are labelled with n.d. These data were collected from EncFtnsH fractions from a single gel-filtration run.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Peak</th>
+      <th rowspan="2">EncFtnsH retention volume (ml)</th>
+      <th colspan="4">Element concentration (µM)</th>
+      <th rowspan="2">Derived EncFtnsHconcentration (µM)</th>
+      <th rowspan="2">Derived Fe/ EncFtnsH monomer</th>
+    </tr>
+    <tr>
+      <th>Ca</th>
+      <th>Fe</th>
+      <th>Zn</th>
+      <th>Se</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Decamer</td>
+      <td>66.5</td>
+      <td>n.d.</td>
+      <td>6.7</td>
+      <td>n.d.</td>
+      <td>24.6</td>
+      <td>12.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>68.3</td>
+      <td>n.d.</td>
+      <td>28.4</td>
+      <td>n.d</td>
+      <td>124.5</td>
+      <td>62.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>70.1</td>
+      <td>2.9</td>
+      <td>93.7</td>
+      <td>2.4</td>
+      <td>301.7</td>
+      <td>150.9</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>71.9</td>
+      <td>6.9</td>
+      <td>120.6</td>
+      <td>3.7</td>
+      <td>379.8</td>
+      <td>189.9</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>73.7</td>
+      <td>1.9</td>
+      <td>64.4</td>
+      <td>0.8</td>
+      <td>240.6</td>
+      <td>120.3</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>75.5</td>
+      <td>0.9</td>
+      <td>21.1</td>
+      <td>n.d.</td>
+      <td>101.7</td>
+      <td>50.8</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>77.3</td>
+      <td>n.d.</td>
+      <td>6.2</td>
+      <td>n.d.</td>
+      <td>42.6</td>
+      <td>21.3</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>79.1</td>
+      <td>0.1</td>
+      <td>2.4</td>
+      <td>n.d.</td>
+      <td>26.5</td>
+      <td>13.3</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>80.9</td>
+      <td>1.0</td>
+      <td>1.5</td>
+      <td>n.d.</td>
+      <td>22.3</td>
+      <td>11.2</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>82.7</td>
+      <td>n.d.</td>
+      <td>0.2</td>
+      <td>n.d.</td>
+      <td>29.2</td>
+      <td>14.6</td>
+      <td>n.d</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Monomer</td>
+      <td>84.5</td>
+      <td>n.d.</td>
+      <td>0.1</td>
+      <td>n.d.</td>
+      <td>34.9</td>
+      <td>17.5</td>
+      <td>n.d</td>
+    </tr>
+    <tr>
+      <td>86.3</td>
+      <td>n.d.</td>
+      <td>n.d</td>
+      <td>n.d.</td>
+      <td>28.9</td>
+      <td>14.4</td>
+      <td>n.d</td>
+    </tr>
+    <tr>
+      <td>88.1</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>17.4</td>
+      <td>8.7</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>89.9</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>5.5</td>
+      <td>2.8</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>91.7</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>0.1</td>
+      <td>0.07</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Estimates of EncFtnsH molecular weight from SEC-MALLS analysis. EncFtnsH was purified from E. coli BL21(DE3) grown in minimal medium (MM) by nickel affinity chromatography and size-exclusion chromatography. Fractions from two peaks (decamer and monomer) were pooled separately (Figure 1C) and analysed by SEC-MALLS using a Superdex 200 10/300 GL column (GE Healthcare) and Viscotek SEC-MALLS instruments (Malvern Instruments) (Figure 2C). The decamer and monomer peaks were both symmetric and monodisperse, allowing the estimation of the molecular weight of the species in these fractions (Folta-Stogniew, 2006). The molecular weights are quoted to the nearest kDa due to the resolution limit of the instrument. The proteins analyzed by SEC-MALLS came from single protein preparation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Molecular Weight (kDa)</th>
+      <th>Decamer peak</th>
+      <th>Monomer peak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Theoretical</td>
+      <td>133</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>EncFtnsH-decamer fractions</td>
+      <td>132</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>EncFtnsH-monomer fractions</td>
+      <td>126</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+We purified EncFtnsH from E. coli grown in MM with or without the addition of 1 mM Fe(NH4)2(SO4)2. The decamer to monomer ratio in the sample purified from cells grown in iron-supplemented media was 4.5, while that from the iron-free media was 0.11, suggesting that iron induces the oligomerization of EncFtnsH in vivo (Figure 3A, Table 3). To test the metal-dependent oligomerization of EncFtnsH in vitro, we incubated the protein with various metal cations and subjected samples to analytical SEC and non-denaturing PAGE. Of the metals tested, only Fe2+, Zn2+ and Co2+ induced the formation of significant amounts of the decamer (Figure 3B, Figure 3—figure supplement 1/2). While Fe2+ induces the multimerization of EncFtnsH, Fe3+ in the form of FeCl3 does not have this effect on the protein, highlighting the apparent preference this protein has for the ferrous form of iron. To determine if the oligomerization of EncFtnsH was concentration dependent we performed analytical SEC at 90 and 700 µM protein concentration (Figure 3C). At the higher concentration, no increase in the decameric form of EncFtn was observed; however, the shift in the major peak from the position of the monomer species indicated a tendency to dimerize at high concentration.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig3-v3.jpg)
 
-**Figure 3.:** 2+ and protein concentration on the oligomeric state of EncFtnsH in solution.(A) Recombinant EncFtnsH was purified by Gel filtration Superdex 200 chromatography from E. coli BL21(DE3) grown in MM or in MM supplemented with 1 mM Fe(NH4)2(SO4)2 (MM+Fe2+). A higher proportion of decamer (peak between 65 and 75 ml) is seen in the sample purified from MM+Fe2+ compared to EncFtnsH-MM, indicating that Fe2+ facilitates the multimerization of EncFtnsH in vivo. (B) EncFtnsH-monomer was incubated with one molar equivalent of Fe2+ salts for two hours prior to analytical gel-filtration using a Superdex 200 PC 3.2/30 column (GE Healthcare). Both Fe2+ salts tested induced the formation of decamer indicated by the peak between 1.2 and 1.6 ml. Monomeric and decameric samples of EncFtnsH are shown as controls. Peaks around 0.8 ml were seen as protein aggregation. (C) Analytical gel filtration of EncFtn monomer at different concentrations to illustrate the effect of protein concentration on multimerization. The major peak shows a shift towards a dimer species at high concentration of protein, but the ratio of this peak (1.5–1.8 ml) to the decamer peak (1.2–1.5 ml) does not change when compared to the low concentration sample.DOI: http://dx.doi.org/10.7554/eLife.18972.008
+**Figure 3.:** (A) Recombinant EncFtnsH was purified by Gel filtration Superdex 200 chromatography from E. coli BL21(DE3) grown in MM or in MM supplemented with 1 mM Fe(NH4)2(SO4)2 (MM+Fe2+). A higher proportion of decamer (peak between 65 and 75 ml) is seen in the sample purified from MM+Fe2+ compared to EncFtnsH-MM, indicating that Fe2+ facilitates the multimerization of EncFtnsH in vivo. (B) EncFtnsH-monomer was incubated with one molar equivalent of Fe2+ salts for two hours prior to analytical gel-filtration using a Superdex 200 PC 3.2/30 column (GE Healthcare). Both Fe2+ salts tested induced the formation of decamer indicated by the peak between 1.2 and 1.6 ml. Monomeric and decameric samples of EncFtnsH are shown as controls. Peaks around 0.8 ml were seen as protein aggregation. (C) Analytical gel filtration of EncFtn monomer at different concentrations to illustrate the effect of protein concentration on multimerization. The major peak shows a shift towards a dimer species at high concentration of protein, but the ratio of this peak (1.5–1.8 ml) to the decamer peak (1.2–1.5 ml) does not change when compared to the low concentration sample.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig3-figsupp1-v3.jpg)
 
-**Figure 3—figure supplement 1.:** sH in solution.(A/B) EncFtnsH-monomer was incubated with one mole equivalent of various metal salts for two hours prior to analytical gel-filtration using a Superdex 200 PC 3.2/30 column. Co2+ and Zn2+ induced the formation of the decameric form of EncFtnsH; while Mn2+, Mg2+ and Fe3+ did not significantly alter the oligomeric state of EncFtnsH.DOI: http://dx.doi.org/10.7554/eLife.18972.009
+**Figure 3—figure supplement 1.:** (A/B) EncFtnsH-monomer was incubated with one mole equivalent of various metal salts for two hours prior to analytical gel-filtration using a Superdex 200 PC 3.2/30 column. Co2+ and Zn2+ induced the formation of the decameric form of EncFtnsH; while Mn2+, Mg2+ and Fe3+ did not significantly alter the oligomeric state of EncFtnsH.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig3-figsupp2-v3.jpg)
 
-**Figure 3—figure supplement 2.:** sH.50 µM EncFtnsH monomer or decamer samples were mixed with equal molar metal ions including Fe2+, Co2+, Zn2+, Mn2+, Ca2+, Mg2+ and Fe3+, which were analyzed by Native PAGE alongside SDS-PAGE. (A) 10% Native PAGE analysis of EncFtnsH monomer fractions mixed with various metal solutions; (B) 10% Native PAGE analysis of EncFtnsH decamer fractions mixed with various metal solutions; (C) 15% SDS-PAGE analysis on the mixtures of EncFtnsH monomer fractions and metal solutions; (D) 15% SDS-PAGE analysis on the mixtures of EncFtnsH decamer fractions and metal solutions.DOI: http://dx.doi.org/10.7554/eLife.18972.010
+**Figure 3—figure supplement 2.:** 50 µM EncFtnsH monomer or decamer samples were mixed with equal molar metal ions including Fe2+, Co2+, Zn2+, Mn2+, Ca2+, Mg2+ and Fe3+, which were analyzed by Native PAGE alongside SDS-PAGE. (A) 10% Native PAGE analysis of EncFtnsH monomer fractions mixed with various metal solutions; (B) 10% Native PAGE analysis of EncFtnsH decamer fractions mixed with various metal solutions; (C) 15% SDS-PAGE analysis on the mixtures of EncFtnsH monomer fractions and metal solutions; (D) 15% SDS-PAGE analysis on the mixtures of EncFtnsH decamer fractions and metal solutions.
 
-## Crystal structure of EncFtnsH
+**Table 3.**
+ Gel-filtration peak area ratios for EncFtnsH decamer and monomer on addition of different metal ions. EncFtnsH was produced in E. coli BL21(DE3) cultured in MM and MM with 1 mM Fe(NH4)2(SO4)2 (MM+Fe2+) and purified by gel-filtration chromatography using an Superdex 200 16/60 column (GE Healthcare). Monomer fractions of EncFtnsH purified from MM were pooled and run in subsequent analytical gel-filtration runs over the course of three days. Samples of EncFtnsH monomer were incubated with one molar equivalent of metal ion salts at room temperature for two hours before analysis by analytical gel filtration chromatography (AGF) using a Superdex 200 10/300 GL column. The area for resulting protein peaks were calculated using the Unicorn software (GE Healthcare); peak ratios were calculated to quantify the propensity of EncFtnsH to multimerize in the presence of the different metal ions. The change in the ratios of monomer to decamer over the three days of experiments may be a consequence of experimental variability, or the propensity of this protein to equilibrate towards decamer over time. The increased decamer: monomer ratio seen in the presence of Fe2+, Co2+, and Zn2+ indicates that these metal ions facilitate multimerization of the EncFtnsH protein, while the other metal ions tested do not appear to induce multimerization. The analytical gel filtration experiment was repeated twice using two independent preparations of protein, of which values calculated from one sample are presented here.
 
-We determined the crystal structure of EncFtn
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Sample</th>
+      <th>Monomer area</th>
+      <th>Decamer area</th>
+      <th>Decamer/Monomer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Gel filtration Superdex 200 chromatography</td>
+      <td>EncFtnsH-MM</td>
+      <td>64.3</td>
+      <td>583.6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>EncFtnsH-MM+Fe2+</td>
+      <td>1938.4</td>
+      <td>426.4</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Analytical Gel filtration Day1</td>
+      <td>EncFtnsH-decamer fractions</td>
+      <td>20.2</td>
+      <td>1.8</td>
+      <td>11.2</td>
+    </tr>
+    <tr>
+      <td>EncFtnsH-monomer fractions</td>
+      <td>2.9</td>
+      <td>21.9</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>Fe(NH4)2(SO4)2/EncFtnsH-monomer</td>
+      <td>11.0</td>
+      <td>13.0</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>FeSO4-HCl/EncFtnsH-monomer</td>
+      <td>11.3</td>
+      <td>11.4</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Analytical Gel filtration Day2</td>
+      <td>EncFtnsH-monomer fractions</td>
+      <td>8.3</td>
+      <td>22.8</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>CoCl2/EncFtnsH-monomer</td>
+      <td>17.7</td>
+      <td>14.5</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>MnCl2/EncFtnsH-monomer</td>
+      <td>3.1</td>
+      <td>30.5</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>ZnSO4/EncFtnsH-monomer</td>
+      <td>20.4</td>
+      <td>9.0</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>FeCl3/EncFtnsH-monomer</td>
+      <td>3.9</td>
+      <td>28.6</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Analytical Gel filtration Day3</td>
+      <td>EncFtnsH-monomer fractions</td>
+      <td>6.3</td>
+      <td>23.4</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>MgSO4/EncFtnsH-monomer</td>
+      <td>5.8</td>
+      <td>30.2</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>Ca acetate/EncFtnsH-monomer</td>
+      <td>5.6</td>
+      <td>25.2</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Crystal structure of EncFtnsH
+
+We determined the crystal structure of EncFtnsH by molecular replacement to 2.0 Å resolution (see Table 1 for X-ray data collection and refinement statistics). The crystallographic asymmetric unit contained thirty monomers of EncFtn with visible electron density for residues 7 – 96 in each chain. The protein chains were arranged as three identical annular decamers, each with D5 symmetry. The decamer has a diameter of 7 nm and thickness of 4 nm (Figure 4A). The monomer of EncFtn has an N-terminal 310-helix that precedes two 4 nm long antiparallel α-helices arranged with their long axes at 25° to each other; these helices are followed by a shorter 1.4 nm helix projecting at 70° from α2 (Figure 4B). The C-terminal region of the crystallized construct extends from the outer circumference of the ring, indicating that the encapsulin localization sequence in the full-length protein is on the exterior of the ring and is thus free to interact with its binding site on the encapsulin shell protein (Sutter et al., 2008).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig4-v3.jpg)
 
-**Figure 4.:** sH.(A) Overall architecture of EncFtnsH. Transparent solvent accessible surface view with α-helices shown as tubes and bound metal ions as spheres. Alternating subunits are colored blue and green for clarity. The doughnut-like decamer is 7 nm in diameter and 4.5 nm thick. (B) Monomer of EncFtnsH shown as a secondary structure cartoon. (C/D) Dimer interfaces formed in the decameric ring of EncFtnsH. Subunits are shown as secondary structure cartoons and colored blue and green for clarity. Bound metal ions are shown as orange spheres for Fe3+ and grey and white spheres for Ca2+.DOI: http://dx.doi.org/10.7554/eLife.18972.012
+**Figure 4.:** (A) Overall architecture of EncFtnsH. Transparent solvent accessible surface view with α-helices shown as tubes and bound metal ions as spheres. Alternating subunits are colored blue and green for clarity. The doughnut-like decamer is 7 nm in diameter and 4.5 nm thick. (B) Monomer of EncFtnsH shown as a secondary structure cartoon. (C/D) Dimer interfaces formed in the decameric ring of EncFtnsH. Subunits are shown as secondary structure cartoons and colored blue and green for clarity. Bound metal ions are shown as orange spheres for Fe3+ and grey and white spheres for Ca2+.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig4-figsupp1-v3.jpg)
 
-**Figure 4—figure supplement 1.:** sH.The solvent accessible surface of EncFtnsH is shown, colored by electrostatic potential as calculated using the APBS plugin in PyMOL. Negatively charged regions are colored red and positive regions in blue, neutral regions in grey. (A) View of the surface of the EncFtnsH decamer looking down the central axis. (B) Orthogonal view of (A). (C) Cutaway view of (B) showing the charge distribution within the central cavity.DOI: http://dx.doi.org/10.7554/eLife.18972.013
+**Figure 4—figure supplement 1.:** The solvent accessible surface of EncFtnsH is shown, colored by electrostatic potential as calculated using the APBS plugin in PyMOL. Negatively charged regions are colored red and positive regions in blue, neutral regions in grey. (A) View of the surface of the EncFtnsH decamer looking down the central axis. (B) Orthogonal view of (A). (C) Cutaway view of (B) showing the charge distribution within the central cavity.
 
 The monomer of EncFtnsH forms two distinct dimer interfaces within the decamer (Figure 4 C/D). The first dimer is formed from two monomers arranged antiparallel to each other, with α1 from each monomer interacting along their lengths and α3 interdigitating with α2 and α3 of the partner chain. This interface buries one third of the surface area from each partner and is stabilized by thirty hydrogen bonds and fourteen salt bridges (Figure 4C). The second dimer interface forms an antiparallel four-helix bundle between helices 1 and 2 from each monomer (Figure 4D). This interface is less extensive than the first and is stabilized by twenty-one hydrogen bonds, six salt bridges, and a number of metal ions.
 
 The arrangement of ten monomers in alternating orientation forms the decamer of EncFtn, which assembles as a pentamer of dimers (Figure 4A). Each monomer lies at 45° relative to the vertical central-axis of the ring, with the N-termini of alternating subunits capping the center of the ring at each end, while the C-termini are arranged around the circumference. The central hole in the ring is 2.5 nm at its widest in the center of the complex, and 1.5 nm at its narrowest point near the outer surface, although it should be noted that a number of residues at the N-terminus are not visible in the crystallographic electron density and these may occupy the central channel. The surface of the decamer has distinct negatively charged patches, both within the central hole and on the outer circumference, which form spokes through the radius of the complex (Figure 4—figure supplement 1).
 
-## EncFtn ferroxidase center
+### EncFtn ferroxidase center
 
-The electron density maps of the initial EncFtn
+The electron density maps of the initial EncFtnsH model displayed significant positive peaks in the mFo-DFc map at the center of the 4-helix bundle dimer (Figure 5—figure supplement 1). Informed by the ICP-MS data indicating the presence of iron in the protein we collected diffraction data at the experimentally determined iron absorption edge (1.74 Å) and calculated an anomalous difference Fourier map using this data. Inspection of this map showed two 10-sigma peaks between residues Glu32, Glu62 and His65 of two adjacent chains, and a statistically smaller 5-sigma peak between residues Glu31 and Glu34 of the two chains. Modeling metal ions into these peaks and refinement of the anomalous scattering parameters allowed us to identify these as two iron ions and a calcium ion respectively (Figure 5A). An additional region of asymmetric electron density near the di-iron binding site in the mFo-DFc map was modeled as glycolic acid, presumably a breakdown product of the PEG 3350 used for crystallization. This di-iron center has an Fe-Fe distance of 3.5 Å, Fe-Glu-O distances between 2.3 and 2.5 Å, and Fe-His-N distances of 2.5 Å (Figure 5B). This coordination geometry is consistent with the di-nuclear ferroxidase center (FOC) found in ferritin (Bertini et al., 2012). It is interesting to note that although we did not add any additional iron to the crystallization trials, the FOC was fully occupied with iron in the final structure, implying that this site has a very high affinity for iron.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig5-v3.jpg)
 
-**Figure 5.:** sH metal binding sites.(A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH. Protein residues are shown as sticks with blue and green carbons for the different subunits, iron ions are shown as orange spheres and calcium as grey spheres, and the glycolic acid ligand is shown with yellow carbon atoms coordinated above the di-iron center. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ and the NCS-averaged anomalous difference map is shown as an orange mesh and contoured at 10 σ. (B) Iron coordination within the FOC including residues Glu32, Glu62, His65 and Tyr39 from two chains. Protein and metal ions are shown as in A. Coordination between the protein and iron ions is shown as yellow dashed lines with distances indicated. (C) Coordination of calcium within the dimer interface by four glutamic acid residues (E31 and E34 from two chains). The calcium ion is shown as a grey sphere and water molecules involved in the coordination of the calcium ion are shown as crosses. (D) Metal coordination site on the outer surface of EncFtnsH. The two calcium ions are coordinated by residues His57, Glu61 and Glu64 from the two chains of the FOC dimer, and are located at the outer surface of the complex, positioned 10 Å away from the FOC iron.DOI: http://dx.doi.org/10.7554/eLife.18972.014
+**Figure 5.:** (A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH. Protein residues are shown as sticks with blue and green carbons for the different subunits, iron ions are shown as orange spheres and calcium as grey spheres, and the glycolic acid ligand is shown with yellow carbon atoms coordinated above the di-iron center. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ and the NCS-averaged anomalous difference map is shown as an orange mesh and contoured at 10 σ. (B) Iron coordination within the FOC including residues Glu32, Glu62, His65 and Tyr39 from two chains. Protein and metal ions are shown as in A. Coordination between the protein and iron ions is shown as yellow dashed lines with distances indicated. (C) Coordination of calcium within the dimer interface by four glutamic acid residues (E31 and E34 from two chains). The calcium ion is shown as a grey sphere and water molecules involved in the coordination of the calcium ion are shown as crosses. (D) Metal coordination site on the outer surface of EncFtnsH. The two calcium ions are coordinated by residues His57, Glu61 and Glu64 from the two chains of the FOC dimer, and are located at the outer surface of the complex, positioned 10 Å away from the FOC iron.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig5-figsupp1-v3.jpg)
 
-**Figure 5—figure supplement 1.:** sH.(A) Wall-eyed stereo view of the dimer interface of EncFtn. Protein chains are shown as sticks, with 2mFo-DFc electron density shown in blue mesh and contoured at 1.5 σ and mFo-DFc shown in green mesh and contoured at 3 σ. (B) Wall-eyed stereo view of putative metal binding site at the external surface of EncFtnsH. Protein chains and electron density maps are shown as in (A).DOI: http://dx.doi.org/10.7554/eLife.18972.015
+**Figure 5—figure supplement 1.:** (A) Wall-eyed stereo view of the dimer interface of EncFtn. Protein chains are shown as sticks, with 2mFo-DFc electron density shown in blue mesh and contoured at 1.5 σ and mFo-DFc shown in green mesh and contoured at 3 σ. (B) Wall-eyed stereo view of putative metal binding site at the external surface of EncFtnsH. Protein chains and electron density maps are shown as in (A).
 
 The calcium ion coordinated by Glu31 and Glu34 adopts heptacoordinate geometry, with coordination distances of 2.5 Å between the metal ion and carboxylate oxygens of Glu31 and Glu34 (E31/34-site). A number of ordered solvent molecules are also coordinated to this metal ion at a distance of 2.5 Å. This heptacoordinate geometry is common in crystal structures with calcium ions (Figure 5C) (Katz et al., 1996). While ICP-MS indicated that there were negligible amounts of calcium in the purified protein, the presence of 140 mM calcium acetate in the crystallization mother liquor favors the coordination of calcium at this site. The fact that the protein does not multimerize in solution in the presence of Fe3+ may indicate that these metal binding sites have a lower affinity for the ferric form of iron, which is the product of the ferroxidase reaction. A number of additional metal-ions were present at the outer circumference of at least one decamer in the asymmetric unit (Figure 5D). These ions are coordinated by His57, Glu61 and Glu64 from both chains in the FOC dimer and are 4.5 Å apart; Fe-Glu-O distances are between 2.5 and 3.5 Å and the Fe-His-N distances are 4 and 4.5 Å.
 
-Structural alignment of the di-iron binding site of EncFtn
+Structural alignment of the di-iron binding site of EncFtnsH to the FOC of Pseudo-nitzschia multiseries ferritin (PmFtn, PDB ID: 4ITW) reveals a striking similarity between the metal binding sites of EncFtnsH and the classical ferritins (Pfaffen et al., 2013) (Figure 6A). The di-iron site of EncFtnsH is by necessity symmetrical, as it is formed through a dimer interface, while the FOC of ferritin does not have these constraints and varies in different species at a position equivalent to His65 of the second EncFtn monomer in the FOC interface (His65’) (Figure 6A). Structural superimposition of the FOCs of ferritin and EncFtn brings the four-helix bundle of the ferritin fold into close alignment with the EncFtn dimer, showing that the two families of proteins have essentially the same architecture around the di-iron center (Figure 6B). The linker connecting helices 2 and 3 of ferritin is congruent with the start of the C-terminal helix of one EncFtn monomer and the N-terminal 310 helix of the second monomer (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig6-v3.jpg)
 
-**Figure 6.:** sH and the ferritin FOC.(A) Structural alignment of the FOC residues in a dimer of EncFtnsH (green/blue) with a monomer of Pseudo-nitzschia multiseries ferritin (PmFtn) (PDBID: 4ITW) (orange) (Pfaffen et al., 2013). Iron ions are shown as orange spheres and a single calcium ion as a grey sphere. Residues within the FOC are conserved between EncFtn and ferritin PmFtn, with the exception of residues in the position equivalent to H65’ in the second subunit in the dimer (blue). The site in EncFtn with bound calcium is not present in other family members. (B) Secondary structure of aligned dimeric EncFtnsH and monomeric ferritin highlighting the conserved four-helix bundle. EncFtnsH monomers are shown in green and blue and aligned PmFtn monomer in orange as in A. (C) Cartoon of secondary structure elements in EncFtn dimer and ferritin. In the dimer of EncFtn that forms the FOC, the C-terminus of the first monomer (green) and N-terminus of the second monomer (blue) correspond to the position of the long linker between α2 and α3 in ferritin PmFtn.DOI: http://dx.doi.org/10.7554/eLife.18972.016
+**Figure 6.:** (A) Structural alignment of the FOC residues in a dimer of EncFtnsH (green/blue) with a monomer of Pseudo-nitzschia multiseries ferritin (PmFtn) (PDBID: 4ITW) (orange) (Pfaffen et al., 2013). Iron ions are shown as orange spheres and a single calcium ion as a grey sphere. Residues within the FOC are conserved between EncFtn and ferritin PmFtn, with the exception of residues in the position equivalent to H65’ in the second subunit in the dimer (blue). The site in EncFtn with bound calcium is not present in other family members. (B) Secondary structure of aligned dimeric EncFtnsH and monomeric ferritin highlighting the conserved four-helix bundle. EncFtnsH monomers are shown in green and blue and aligned PmFtn monomer in orange as in A. (C) Cartoon of secondary structure elements in EncFtn dimer and ferritin. In the dimer of EncFtn that forms the FOC, the C-terminus of the first monomer (green) and N-terminus of the second monomer (blue) correspond to the position of the long linker between α2 and α3 in ferritin PmFtn.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig6-figsupp1-v3.jpg)
 
-**Figure 6—figure supplement 1.:** sH and ferritin.(A) Aligned FOC of EncFtnsH and Pseudo-nitzschia multiseries ferritin (PmFtn) (Pfaffen et al., 2013). The metal binding site residues from two EncFtnsH chains are shown in green and blue, while the PmFtn is shown in orange. Fe2+ in the FOC is shown as orange spheres and Ca2+ in EncFtnsH is shown as a grey sphere. The two-fold symmetry axis of the EncFtn FOC is shown with a grey arrow (B) Cross-section surface view of quaternary structure of EncFtnsH and PmFtn as aligned in (A) (dashed black box). The central channel of EncFtnsH is spatially equivalent to the outer surface of ferritin and its outer surface corresponds to the mineralization surface within ferritin.DOI: http://dx.doi.org/10.7554/eLife.18972.017
+**Figure 6—figure supplement 1.:** (A) Aligned FOC of EncFtnsH and Pseudo-nitzschia multiseries ferritin (PmFtn) (Pfaffen et al., 2013). The metal binding site residues from two EncFtnsH chains are shown in green and blue, while the PmFtn is shown in orange. Fe2+ in the FOC is shown as orange spheres and Ca2+ in EncFtnsH is shown as a grey sphere. The two-fold symmetry axis of the EncFtn FOC is shown with a grey arrow (B) Cross-section surface view of quaternary structure of EncFtnsH and PmFtn as aligned in (A) (dashed black box). The central channel of EncFtnsH is spatially equivalent to the outer surface of ferritin and its outer surface corresponds to the mineralization surface within ferritin.
 
-## Mass spectrometry of the EncFtn assembly
+### Mass spectrometry of the EncFtn assembly
 
-In order to confirm the assignment of the oligomeric state of EncFtn
+In order to confirm the assignment of the oligomeric state of EncFtnsH and investigate further the Fe2+-dependent assembly, we used native nano-electrospray ionization (nESI) and ion-mobility mass spectrometry (IM-MS). As described above, by recombinant production of EncFtnsH in minimal media we were able to limit the bioavailability of iron. Native MS analysis of EncFtnsH produced in this way displayed a charge state distribution consistent with an EncFtnsH monomer (blue circles, Figure 7A1) with an average neutral mass of 13,194 Da, in agreement with the predicted mass of the EncFtnsH protein (13,194.53 Da). Under these conditions, no significant higher order assembly was observed and the protein did not have any coordinated metal ions. Titration with Fe2+ directly before native MS analysis resulted in the appearance of a new charge state distribution, consistent with an EncFtnsH decameric assembly (+22 to +26; 132.65 kDa) (Figure 7A2/3). After instrument optimization, the mass resolving power achieved was sufficient to assign iron-loading in the complex to between 10 and 15 Fe ions per decamer (Figure 7B, inset top right), consistent with the presence of 10 irons in the FOC and the coordination of iron in the Glu31/34-site occupied by calcium in the crystal structure (Δmass observed ~0.67 kDa). MS analysis of EncFtnsH after addition of further Fe2+ did not result in iron loading above this stoichiometry. Therefore, the extent of iron binding seen is limited to the FOC and Glu31/34 secondary metal binding site. These data suggest that the decameric assembly of EncFtnsH does not accrue iron in the same manner as classical ferritin, which is able to sequester around 4500 iron ions within its nanocage (Mann et al., 1986). Ion mobility analysis of the EncFtnsH decameric assembly, collected with minimal collisional activation, suggested that it consists of a single conformation with a collision cross section (CCS) of 58.2 nm2 (Figure 7B). This observation is in agreement with the calculated CCS of 58.7 nm2derived from our crystal structure of the EncFtnsH decamer (Marklund, 2015). By contrast, IM-MS measurements of the monomeric EncFtnsH at pH 8.0 under the same instrumental conditions revealed that the metal-free protein monomer exists in a wide range of charge states (+6 to +16) and adopts many conformations in the gas phase with collision cross sections ranging from 12 nm2 to 26 nm2 (Figure 7—figure supplement 1). These observations are indicative of an unstructured protein with little secondary or tertiary structure (Beveridge et al., 2014). Thus, IM-MS studies highlight that higher order structure in EncFtnsH is mediated/stabilized by metal binding, an observation that is in agreement with our solution studies. Taken together, these results suggest that di-iron binding, forming the FOC in EncFtnsH, is required to stabilize the 4-helix bundle dimer interface, essentially reconstructing the classical ferritin-like fold; once stabilized, these dimers readily associate as pentamers, and the overall assembly adopts the decameric ring arrangement observed in the crystal structure.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig7-v3.jpg)
 
-**Figure 7.:** sH.All spectra were acquired in 100 mM ammonium acetate, pH 8.0 with a protein concentration of 5 µM. (A) Native nanoelectrospray ionization (nESI) mass spectrometry of EncFtnsH at varying iron concentrations. A1, nESI spectrum of iron-free EncFtnsH displays a charge state distribution consistent with EncFtnsH monomer (blue circles, 13,194 Da). Addition of 100 µM (A2) and 300 µM (A3) Fe2+ results in the appearance of a second higher molecular weight charge state distribution consistent with a decameric assembly of EncFtnsH (green circles, 132.6 kDa). (B) Ion mobility (IM)-MS of the iron-bound holo-EncFtnsH decamer. Top, Peaks corresponding to the 22+ to 26+ charge states of a homo-decameric assembly of EncFtnsH are observed (132.6 kDa). Top Insert, Analysis of the 24+ charge state of the assembly at m/z 5528.2 Th. The theoretical average m/z of the 24+ charge state with no additional metals bound is marked by a red line (5498.7 Th); the observed m/z of the 24+ charge state indicates that the EncFtnsH assembly binds between 10 (green line, 5521.1 Th) and 15 Fe ions (blue line, 5532.4 Th) per decamer. Bottom, The arrival time distributions (ion mobility data) of all ions in the EncFtnsH charge state distribution displayed as a greyscale heat map (linear intensity scale). Bottom right, The arrival time distribution of the 24+ charge state (dashed blue box) has been extracted and plotted. The drift time for this ion is shown (ms), along with the calibrated collision cross section (CCS), Ω (nm2).DOI: http://dx.doi.org/10.7554/eLife.18972.018
+**Figure 7.:** All spectra were acquired in 100 mM ammonium acetate, pH 8.0 with a protein concentration of 5 µM. (A) Native nanoelectrospray ionization (nESI) mass spectrometry of EncFtnsH at varying iron concentrations. A1, nESI spectrum of iron-free EncFtnsH displays a charge state distribution consistent with EncFtnsH monomer (blue circles, 13,194 Da). Addition of 100 µM (A2) and 300 µM (A3) Fe2+ results in the appearance of a second higher molecular weight charge state distribution consistent with a decameric assembly of EncFtnsH (green circles, 132.6 kDa). (B) Ion mobility (IM)-MS of the iron-bound holo-EncFtnsH decamer. Top, Peaks corresponding to the 22+ to 26+ charge states of a homo-decameric assembly of EncFtnsH are observed (132.6 kDa). Top Insert, Analysis of the 24+ charge state of the assembly at m/z 5528.2 Th. The theoretical average m/z of the 24+ charge state with no additional metals bound is marked by a red line (5498.7 Th); the observed m/z of the 24+ charge state indicates that the EncFtnsH assembly binds between 10 (green line, 5521.1 Th) and 15 Fe ions (blue line, 5532.4 Th) per decamer. Bottom, The arrival time distributions (ion mobility data) of all ions in the EncFtnsH charge state distribution displayed as a greyscale heat map (linear intensity scale). Bottom right, The arrival time distribution of the 24+ charge state (dashed blue box) has been extracted and plotted. The drift time for this ion is shown (ms), along with the calibrated collision cross section (CCS), Ω (nm2).
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig7-figsupp1-v3.jpg)
 
-**Figure 7—figure supplement 1.:** sH monomer.(A) Mass spectrum of apo-EncFtnsH acquired from 100 mM ammonium acetate pH 8.0 under native MS conditions. The charge state distribution observed is bimodal, with peaks corresponding to the 6+ to 15+ charge states of apo-monomer EncFtnsH (neutral average mass 13,194.3 Da). (B) The arrival time distributions (ion mobility data) of all ions in the apo-EncFtnsH charge state distribution displayed as a greyscale heat map (linear intensity scale). (B) Right, the arrival time distribution of the 6+ (orange) and 7+ (green) charge state (dashed colored‐box) has been extracted and plotted; The arrival time distributions for these ion is shown (ms), along with the calibrated collision cross section, Ω (nm2). (C) The collision cross section of a single monomer unit from the crystal structure of the Fe-loaded EncFtnsH decamer was calculated to be 15.8 nm2 using IMPACT v. 0.9.1. The +8 to +15 protein charge states have observed CCS between 20–26 nm2, which is significantly higher than the calculated CCS for an EncFtnsH monomer taken from the decameric assembly crystal structure (15.8 nm2). The mobility of the +7 charge state displays broad drift-time distribution with maxima consistent with CCS of 15.9 and 17.9 nm2. Finally, the 6+ charge state of EncFtnsH has mobility consistent with a CCS of 12.3 nm2, indicating a more compact/collapsed structure. It is clear from this data that apo-EncFtnsH exists in several gas phase conformations. The range of charge states occupied by the protein (6+ to 15+) and the range of CCS in which the protein is observed (12.3 nm2 – 26 nm2) are both large. In addition, many of the charge states observed have higher charge than the theoretical maximal charge on spherical globular protein, as determined by the De La Mora relationship (ZR = 0.0778√m; for the EncFtnsH monomer ZR = 8.9) Fernandez (Fernandez de la Mora, 2000). As described by Beveridge et al., all these factors are indicative of a disordered protein (Beveridge et al., 2014).DOI: http://dx.doi.org/10.7554/eLife.18972.019
+**Figure 7—figure supplement 1.:** (A) Mass spectrum of apo-EncFtnsH acquired from 100 mM ammonium acetate pH 8.0 under native MS conditions. The charge state distribution observed is bimodal, with peaks corresponding to the 6+ to 15+ charge states of apo-monomer EncFtnsH (neutral average mass 13,194.3 Da). (B) The arrival time distributions (ion mobility data) of all ions in the apo-EncFtnsH charge state distribution displayed as a greyscale heat map (linear intensity scale). (B) Right, the arrival time distribution of the 6+ (orange) and 7+ (green) charge state (dashed colored‐box) has been extracted and plotted; The arrival time distributions for these ion is shown (ms), along with the calibrated collision cross section, Ω (nm2). (C) The collision cross section of a single monomer unit from the crystal structure of the Fe-loaded EncFtnsH decamer was calculated to be 15.8 nm2 using IMPACT v. 0.9.1. The +8 to +15 protein charge states have observed CCS between 20–26 nm2, which is significantly higher than the calculated CCS for an EncFtnsH monomer taken from the decameric assembly crystal structure (15.8 nm2). The mobility of the +7 charge state displays broad drift-time distribution with maxima consistent with CCS of 15.9 and 17.9 nm2. Finally, the 6+ charge state of EncFtnsH has mobility consistent with a CCS of 12.3 nm2, indicating a more compact/collapsed structure. It is clear from this data that apo-EncFtnsH exists in several gas phase conformations. The range of charge states occupied by the protein (6+ to 15+) and the range of CCS in which the protein is observed (12.3 nm2 – 26 nm2) are both large. In addition, many of the charge states observed have higher charge than the theoretical maximal charge on spherical globular protein, as determined by the De La Mora relationship (ZR = 0.0778$\sqrt$m; for the EncFtnsH monomer ZR = 8.9) Fernandez (Fernandez de la Mora, 2000). As described by Beveridge et al., all these factors are indicative of a disordered protein (Beveridge et al., 2014).
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig7-figsupp2-v3.jpg)
 
-**Figure 7—figure supplement 2.:** sH decameric assembly.The entire charge state distribution of the Fe-loaded holo- EncFtnsH assembly (green circles) was subject to collisional-induced dissociation (CID) by increasing the source cone voltage to 200 V and the trap voltage to 50 V. The resulting CID mass spectrum (A) revealed that dissociation of the holo- EncFtnsH decamer primarily occurred via ejection of a highly charged monomer (blue circles), leaving the ‘stripped’ complex (a 9mer; 118.7 kDa; yellow circles). The mass of the ejected-monomer is consistent with apo- EncFtnsH (13.2 kDa), suggesting unfolding of the monomer (and loss of Fe) occurs during ejection from the complex. This observation of asymmetric charge partitioning of the sub-complexes with respect to the mass of the complex is consistent with the 'typical' pathway of dissociation of protein assemblies by CID, as described by Hall et al. (2013). In addition, a third, lower abundance, charge state distribution is observed which overlaps the EncFtn ejected monomer charge state distribution; this region of the spectrum is highlighted in (B). This distribution is consistent with an ejected EncFtnsH dimer (orange circles). Interestingly, closer analysis of the individual charge state of this dimeric CID product shows that this sub-complex exists in three forms – displaying mass consistent with an EncFtnsH dimer binding 0, 1, and 2 Fe ions. This is highlighted in (C), where the 15+ charge state of the EncFtnsH dimer is shown; 3 peaks are observed with m/z 1760.5, 1763.8, and 1767.0 Th – the lowest peak corresponds to neutral masses of 26392.5 Da [predicted EncFtnsH dimer, (C572H884N172O185S2)2; 26388.6 Da]. The two further peaks have a delta-mass of ~+50 Da, consistent with Fe binding. We interpret these observations as partial ‘atypical’ CID fragmentation of the decameric complex – i.e. fragmentation of the initial complex with retention of subunit and ligand interactions. A schematic summary of these results is displayed in (D). We postulate the high stability of this iron-bound dimer sub-complex is due to the metal coordination at the dimer interface, increasing the strength of the dimer interface. Taken together, these observations support our findings that the topology of the decameric EncFtnsH assembly is arranged as a pentamer of dimers, with two Fe ions at each dimer interface.DOI: http://dx.doi.org/10.7554/eLife.18972.020
+**Figure 7—figure supplement 2.:** The entire charge state distribution of the Fe-loaded holo- EncFtnsH assembly (green circles) was subject to collisional-induced dissociation (CID) by increasing the source cone voltage to 200 V and the trap voltage to 50 V. The resulting CID mass spectrum (A) revealed that dissociation of the holo- EncFtnsH decamer primarily occurred via ejection of a highly charged monomer (blue circles), leaving the ‘stripped’ complex (a 9mer; 118.7 kDa; yellow circles). The mass of the ejected-monomer is consistent with apo- EncFtnsH (13.2 kDa), suggesting unfolding of the monomer (and loss of Fe) occurs during ejection from the complex. This observation of asymmetric charge partitioning of the sub-complexes with respect to the mass of the complex is consistent with the 'typical' pathway of dissociation of protein assemblies by CID, as described by Hall et al. (2013). In addition, a third, lower abundance, charge state distribution is observed which overlaps the EncFtn ejected monomer charge state distribution; this region of the spectrum is highlighted in (B). This distribution is consistent with an ejected EncFtnsH dimer (orange circles). Interestingly, closer analysis of the individual charge state of this dimeric CID product shows that this sub-complex exists in three forms – displaying mass consistent with an EncFtnsH dimer binding 0, 1, and 2 Fe ions. This is highlighted in (C), where the 15+ charge state of the EncFtnsH dimer is shown; 3 peaks are observed with m/z 1760.5, 1763.8, and 1767.0 Th – the lowest peak corresponds to neutral masses of 26392.5 Da [predicted EncFtnsH dimer, (C572H884N172O185S2)2; 26388.6 Da]. The two further peaks have a delta-mass of ~+50 Da, consistent with Fe binding. We interpret these observations as partial ‘atypical’ CID fragmentation of the decameric complex – i.e. fragmentation of the initial complex with retention of subunit and ligand interactions. A schematic summary of these results is displayed in (D). We postulate the high stability of this iron-bound dimer sub-complex is due to the metal coordination at the dimer interface, increasing the strength of the dimer interface. Taken together, these observations support our findings that the topology of the decameric EncFtnsH assembly is arranged as a pentamer of dimers, with two Fe ions at each dimer interface.
 
 We subsequently performed gas phase disassembly of the decameric EncFtnsH using collision-induced dissociation (CID) tandem mass spectrometry. Under the correct CID conditions, protein assemblies can dissociate with retention of subunit and ligand interactions, and thus provide structurally-informative evidence as to the topology of the original assembly; this has been termed ‘atypical’ dissociation (Hall et al., 2013). For EncFtnsH, this atypical dissociation pathway was clearly evident; CID of the EncFtnsH decamer resulted in the appearance of a dimeric EncFtnsH subcomplex containing 0, 1, or 2 iron ions (Figure 7—figure supplement 2). In light of the crystal structure, this observation can be rationalized as dissociation of the EncFtnsH decamer by disruption of the non-FOC interface with at least partial retention of the FOC interface and the FOC-Fe. Thus, this observation supports our crystallographic assignment of the overall topology of the EncFtnsH assembly as a pentameric assembly of dimers with two iron ions located at the FOC dimer interface. In addition, this analysis provides evidence that the overall architecture of the complex is consistent in the crystal, solution and gas phases.
 
-## Ferroxidase activity
+### Ferroxidase activity
 
-In light of the identification of an iron-loaded FOC in the crystal structure of EncFtn and our native mass spectrometry data, we performed ferroxidase and peroxidase assays to demonstrate the catalytic activity of this protein. In addition, we also assayed equine apoferritin, an example of a classical ferritin enzyme, as a positive control. Unlike the Dps family of ferritin-like proteins, EncFtn showed no peroxidase activity when assayed with the substrate
+In light of the identification of an iron-loaded FOC in the crystal structure of EncFtn and our native mass spectrometry data, we performed ferroxidase and peroxidase assays to demonstrate the catalytic activity of this protein. In addition, we also assayed equine apoferritin, an example of a classical ferritin enzyme, as a positive control. Unlike the Dps family of ferritin-like proteins, EncFtn showed no peroxidase activity when assayed with the substrate ortho-phenylenediamine (Pesek et al., 2011). The ferroxidase activity of EncFtnsH was measured by recording the progress curve of Fe2+ oxidation to Fe3+ at 315 nm after addition of 20 and 100 µM Fe2+ (2 and 10 times molar ratio Fe2+/FOC). In both experiments the rate of oxidation was faster than background oxidation of Fe2+ by molecular oxygen, and was highest for 100 µM Fe2+ (Figure 8A). These data show that recombinant EncFtnsH acts as an active ferroxidase enzyme. When compared to apoferritin, EncFtnsH oxidized Fe2+ at a slower rate and the reaction did not run to completion over the 1800 s of the experiment. Addition of higher quantities of iron resulted in the formation of a yellow/red precipitate at the end of the reaction. We also performed these assays on purified recombinant encapsulin; which, when assayed alone, did not display ferroxidase activity above background Fe2+ oxidation (Figure 8B). In contrast, complexes of the full EncFtn encapsulin nanocompartment (i.e. the EncFtn-Enc protein complex) displayed ferroxidase activity comparable to apoferritin without the formation of precipitates (Figure 8B).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig8-v3.jpg)
 
-**Figure 8.:** sH, encapsulin, and EncFtn-Enc.(A) Apoferritin (10 μM monomer concentration) and EncFtnsH decamer fractions (20 μM monomer concentration, 10 μM FOC concentration) were incubated with 20 and 100 μM iron (2 and 10 times molar equivalent Fe2+ per FOC) and progress curves of the oxidation of Fe2+ to Fe3+ at 315 nm were recorded in a spectrophotometer. The background oxidation of iron at 20 and 100 μM in enzyme-free controls are shown for reference. (B) Encapsulin and EncFtn-Enc complexes at 10 μM asymmetric unit concentration were incubated with Fe2+ at 20 and 100 μM and progress curves for iron oxidation at A315 were measured in a UV/visible spectrophotometer. Enzyme free controls for background oxidation of Fe2+ are shown for reference. (C) Histogram of the iron loading capacity per biological assembly of EncFtnsH, encapsulin, EncFtn-Enc and apoferritin. The results shown are for three technical replicates and represent the optimal iron loading by the complexes after three hours when incubated with Fe2+.DOI: http://dx.doi.org/10.7554/eLife.18972.021
+**Figure 8.:** (A) Apoferritin (10 μM monomer concentration) and EncFtnsH decamer fractions (20 μM monomer concentration, 10 μM FOC concentration) were incubated with 20 and 100 μM iron (2 and 10 times molar equivalent Fe2+ per FOC) and progress curves of the oxidation of Fe2+ to Fe3+ at 315 nm were recorded in a spectrophotometer. The background oxidation of iron at 20 and 100 μM in enzyme-free controls are shown for reference. (B) Encapsulin and EncFtn-Enc complexes at 10 μM asymmetric unit concentration were incubated with Fe2+ at 20 and 100 μM and progress curves for iron oxidation at A315 were measured in a UV/visible spectrophotometer. Enzyme free controls for background oxidation of Fe2+ are shown for reference. (C) Histogram of the iron loading capacity per biological assembly of EncFtnsH, encapsulin, EncFtn-Enc and apoferritin. The results shown are for three technical replicates and represent the optimal iron loading by the complexes after three hours when incubated with Fe2+.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig8-figsupp1-v3.jpg)
 
-**Figure 8—figure supplement 1.:** Decameric EncFtnsH, encapsulin, EncFtn-Enc and apoferritin, at 8.5 µM, were mixed with 147 µM, 1 mM, 1 mM and 215 µM acidic Fe(NH4)2(SO4)2, respectively. Protein mixtures were incubated at room temperature for 1 hr prior to TEM analysis with or without uranyl acetate stain. (A–D) Unstained EncFtnsH, encapsulin, EncFtn-Enc, apoferritin loaded with Fe2+, respectively, with 35,000 x magnification and scale bars indicate 100 nm. (E) Protein-free sample as a control. (F–I) Stained EncFtnsH, encapsulin, EncFtn-Enc, apoferritin loaded with Fe2+, respectively, with 140,000 x magnification and scale bars indicate 25 nm.DOI: http://dx.doi.org/10.7554/eLife.18972.022
+**Figure 8—figure supplement 1.:** Decameric EncFtnsH, encapsulin, EncFtn-Enc and apoferritin, at 8.5 µM, were mixed with 147 µM, 1 mM, 1 mM and 215 µM acidic Fe(NH4)2(SO4)2, respectively. Protein mixtures were incubated at room temperature for 1 hr prior to TEM analysis with or without uranyl acetate stain. (A–D) Unstained EncFtnsH, encapsulin, EncFtn-Enc, apoferritin loaded with Fe2+, respectively, with 35,000 x magnification and scale bars indicate 100 nm. (E) Protein-free sample as a control. (F–I) Stained EncFtnsH, encapsulin, EncFtn-Enc, apoferritin loaded with Fe2+, respectively, with 140,000 x magnification and scale bars indicate 25 nm.
 
 We attributed the precipitates observed in the EncFtnsH ferroxidase assay to the production of insoluble Fe3+ complexes, which led us to propose that EncFtn does not directly store Fe3+ in a mineral form. This observation agrees with native MS results, which indicates a maximum iron loading of 10–15 iron ions per decameric EncFtn; and the structure, which does not possess the enclosed iron-storage cavity characteristic of classical ferritins and Dps family proteins that can directly accrue mineralized Fe3+ within their nanocompartment structures.
 
 To analyze the products of these reactions and determine whether the EncFtn and encapsulin were able to store iron in a mineral form, we performed TEM on the reaction mixtures from the ferroxidase assay. The EncFtnsH reaction mixture showed the formation of large, irregular electron-dense precipitates (Figure 8—figure supplement 1A). A similar distribution of particles was observed after addition of Fe2+ to the encapsulin protein (Figure 8—figure supplement 1B). In contrast, addition of Fe2+ to the EncFtn-Enc nanocompartment resulted in small, highly regular, electron dense particles of approximately 5 nm in diameter (Figure 8—figure supplement 1C); we interpret these observations as controlled mineralization of iron within the nanocompartment. Addition of Fe2+ to apoferritin resulted in a mixture of large particles and small (~2 nm) particles consistent with partial mineralization by the ferritin and some background oxidation of the iron (Figure 8—figure supplement 1D). Negative stain TEM of these samples revealed that upon addition of iron, the EncFtnsH protein showed significant aggregation (Figure 8—figure supplement 1F); while the encapsulin, EncFtn-Enc system, and apoferritin are present as distinct nanocompartments without significant protein aggregation (Figure 8—figure supplement 1G–I).
 
-## Iron storage in encapsulin nanocompartments
+### Iron storage in encapsulin nanocompartments
 
 The results of the ferroxidase assay and micrographs of the reaction products suggest that the oxidation and mineralization function of the classical ferritins are split between the EncFtn and encapsulin proteins, with the EncFtn acting as a ferroxidase and the encapsulin shell providing an environment and template for iron mineralization and storage. To investigate this further, we added Fe2+ at various concentrations to samples of apo-ferritin, EncFtn, isolated encapsulin, and the EncFtn-Enc protein complex, and subjected these samples to a ferrozine assay to quantify the amount of iron associated with the proteins after three hours of incubation. The maximum iron loading capacity of these systems was calculated as the quantity of iron per biological assembly (Figure 8C). In this assay, the EncFtnsH decamer binds a maximum of around 48 iron ions before excess iron induces protein precipitation. The encapsulin shell protein can sequester about 2200 iron ions before significant protein loss occurs, and the reconstituted EncFtn-Enc nanocompartment sequestered about 4150 iron ions. This latter result is significantly more than the apoferritin used in our assay, which sequesters approximately 570 iron ions in this assay (Figure 8C, Table 5).
 
@@ -156,73 +456,569 @@ Consideration of the functional oligomeric states of these proteins, where EncFt
 
 Taken together, our data show that EncFtn can catalytically oxidize Fe2+ to Fe3+; however, iron binding in EncFtn is limited to the FOC and several surface metal binding sites. In contrast, the encapsulin protein displays no catalytic activity, but has the ability to bind a considerable amount of iron. Finally, the EncFtn-Enc nanocompartment complex retains the catalytic activity of EncFtn, and sequesters iron within the encapsulin shell at a higher level than the isolated components of the system, and at a significantly higher level than the classical ferritins (Andrews, 2010). Furthermore, our recombinant nanocompartments may not have the physiological subunit stoichiometry, and the iron-loading capacity of native nanocompartments is potentially much higher than the level we have observed.
 
-## Mutagenesis of the EncFtnsHferroxidase center
+### Mutagenesis of the EncFtnsHferroxidase center
 
-To investigate the structural and biochemical role played by the metal binding residues in the di-iron FOC of EncFtn
+To investigate the structural and biochemical role played by the metal binding residues in the di-iron FOC of EncFtnsH we produced alanine mutations in each of these residues: Glu32, Glu62, and His65. These EncFtnsH mutants were produced in E. coli cells grown in MM, both in the absence and presence of additional iron. The E32A and E62A mutants eluted from SEC at a volume consistent with the decameric form of EncFtnsH, with a small proportion of monomer; the H65A mutant eluted at a volume consistent with the monomeric form of EncFtnsH (Figure 9). For all of the mutants studied, no change in oligomerization state was apparent upon addition of Fe2+ in vitro.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig9-v3.jpg)
 
-**Figure 9.:** R. rubrum EncFtnsH FOC mutants.Single mutants E32A, E62A, and H65A of EncFtnsH produced from E. coli BL21(DE3) cells grown in MM and MM supplemented with iron were subjected to Superdex 200 size-exclusion chromatography. (A) Gel-filtration chromatogram of the E32A mutant form of EncFtnsH resulted in an elution profile with a majority of the protein eluting as the decameric form of the protein and a small proportion of monomer. (B) Gel-filtration chromatograhy of the E62A mutant form of EncFtnsH resulted in an elution profile with a single major decameric peak. (C) Gel-filtration chromatography of the H65A mutant form of EncFtnsH resulted in a single peak corresponding to the protein monomer.DOI: http://dx.doi.org/10.7554/eLife.18972.023
+**Figure 9.:** Single mutants E32A, E62A, and H65A of EncFtnsH produced from E. coli BL21(DE3) cells grown in MM and MM supplemented with iron were subjected to Superdex 200 size-exclusion chromatography. (A) Gel-filtration chromatogram of the E32A mutant form of EncFtnsH resulted in an elution profile with a majority of the protein eluting as the decameric form of the protein and a small proportion of monomer. (B) Gel-filtration chromatograhy of the E62A mutant form of EncFtnsH resulted in an elution profile with a single major decameric peak. (C) Gel-filtration chromatography of the H65A mutant form of EncFtnsH resulted in a single peak corresponding to the protein monomer.
 
-In addition to SEC studies, native mass spectrometry of the apo-EncFtn
+In addition to SEC studies, native mass spectrometry of the apo-EncFtnsH mutants was performed and compared with the wild-type apo-EncFtnsH protein (Figure 10). As described above, the apo-EncFtnsH has a charge state distribution consistent with an unstructured monomer, and decamer formation is only initiated upon addition of ferrous iron. Both the E32A mutant and E62A mutant displayed charge state distributions consistent with decamers, even in the absence of Fe2+. This gas-phase observation is consistent with SEC measurements, which indicate both of these variants were also decamers in solution. Thus it seems that these mutations allow the decamer to form in the absence of iron in the FOC. In contrast to the glutamic acid mutants, MS analysis of the H65A mutant is similar to wild-type apo-EncFtnsH and is present as a monomer; interestingly a minor population of dimeric H65A was also observed.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig10-v3.jpg)
 
-**Figure 10.:** sH mutants.All spectra were acquired in 100 mM ammonium acetate, pH 8.0 with a protein concentration of 5 µM. (A) Wild-type EncFtnsH in the absence of iron displays a charge state distribution consistent with a monomer (see also Figure 8). (B) E32A EncFtnsH displays a charge states consistent with a decamer (green circles); a minor species, consistent with the monomer of E32A mutant is also observed (blue circles). (C) E62A EncFtnsH displays charge states consistent with a decamer (green circles). (D) H65A EncFtnsH displays charge states consistent with both monomer (blue circles) and dimer (purple circles).DOI: http://dx.doi.org/10.7554/eLife.18972.024
+**Figure 10.:** All spectra were acquired in 100 mM ammonium acetate, pH 8.0 with a protein concentration of 5 µM. (A) Wild-type EncFtnsH in the absence of iron displays a charge state distribution consistent with a monomer (see also Figure 8). (B) E32A EncFtnsH displays a charge states consistent with a decamer (green circles); a minor species, consistent with the monomer of E32A mutant is also observed (blue circles). (C) E62A EncFtnsH displays charge states consistent with a decamer (green circles). (D) H65A EncFtnsH displays charge states consistent with both monomer (blue circles) and dimer (purple circles).
 
 We propose that the observed differences in the oligomerization state of the E32A and E62A mutants compared to wild-type are due to the changes in the electrostatic environment within the FOC. At neutral pH the glutamic acid residues are negatively charged, while the histidine residues are predominantly in their uncharged state. In the wild-type (WT) EncFtnsH this leads to electrostatic repulsion between subunits in the absence of iron. Coordination of Fe2+ in this site stabilizes the dimer and reconstitutes the active FOC. The geometric arrangement of Glu32 and Glu62 in the FOC explains their behavior in solution and the gas phase, where they both favor the formation of decamers due to the loss of a repulsive negative charge. The FOC in the H65A mutant is destabilized through the loss of this metal coordinating residue and potential positive charge carrier, thus favoring the monomer in solution and the gas phase.
 
-To understand the impact of the mutants on the organization and metal binding of the FOC, we determined the X-ray crystal structures of each of the EncFtnsH mutants (See Table 4 for data collection and refinement statistics). The crystal packing of all of the mutants in this study is essentially isomorphous to the EncFtnsH structure. All of the mutants display the same decameric arrangement in the crystals as the EncFtnsH structure, and the monomers superimpose with an average RMSDCα of less than 0.2 Å.10.7554/eLife.18972.025Table 4.Data collection and refinement statistics. Statistics for the highest-resolution shell are shown in parentheses. Friedel mates were averaged when calculating reflection numbers and statistics.DOI: http://dx.doi.org/10.7554/eLife.18972.025WTE32AE62AH65AData collectionWavelength (Å)1.741.731.731.74Resolution range (Å)49.63 - 2.06 (2.10 - 2.06)48.84 - 2.59 (2.683 - 2.59)48.87 - 2.21 (2.29 - 2.21)48.86 - 2.97 (3.08 - 2.97)Space groupP 1 21 1P 1 21 1P 1 21 1P 1 21 1Unit cell (Å) a  b   c  β (°)98.18 120.53 140.30 95.3697.78 120.28 140.53 95.4198.09 120.23 140.36 95.5098.03 120.29 140.43 95.39Total reflections1,264,922 (41,360)405,488 (36,186)1,069,345 (95,716)323,853 (32,120)Unique reflections197,873 (8,766)100,067 (9,735)162,379 (15,817)66,658 (6,553)Multiplicity6.4 (4.7)4.1 (3.7)6.6 (6.1)4.9 (4.9)Anomalous multiplicity3.2 (2.6)N/AN/AN/ACompleteness (%)99.2 (88.6)99.0 (97.0)100 (97.0)100 (99.0)Anomalous completeness (%)96.7 (77.2)N/AN/AN/AMean I/sigma(I)10.6 (1.60)8.46 (1.79)13.74 (1.80)8.09 (1.74)Wilson B-factor26.9840.1033.9752.20Rmerge0.123 (0.790)0.171 (0.792)0.0979 (1.009)0.177 (0.863)Rmeas0.147 (0.973)0.196 (0.923)0.1064 (1.107)0.199 (0.966)CC1/20.995 (0.469)0.985 (0.557)0.998 (0.642)0.989 (0.627)CC*0.999 (0.846)0.996 (0.846)0.999 (0.884)0.997 (0.878)Image DOI10.7488/ds/134210.7488/ds/141910.7488/ds/142010.7488/ds/1421RefinementRwork0.171 (0.318)0.183 (0.288)0.165 (0.299)0.186 (0.273)Rfree0.206 (0.345)0.225 (0351)0.216 (0.364)0.237 (0.325)Number of non-hydrogen atoms23,22222,36622,69122,145macromolecules22,27622,01921,96522,066ligands13882474water8083397025Protein residues2,7032,6862,6752,700RMS(bonds) (Å)0.0120.0050.0110.002RMS(angles) (°)1.260.581.020.40Ramachandran favored (%)1009910099Ramachandran allowed (%)0101Ramachandran outliers (%)0000Clash score1.421.421.790.97Average B-factor (Å2)33.9042.3141.3447.68macromolecules33.8042.3541.3147.60ligands40.4072.8065.5572.34solvent36.2038.9541.4633.85PDB ID5DA55L895L8B5L8G10.7554/eLife.18972.026Table 5.Iron loading capacity of EncFtn, encapsulin and ferritin. Protein samples (at 8.5 µM) including decameric EncFtnsH, encapsulin, EncFtn-Enc and apoferritin were mixed with Fe(NH4)2(SO4) (in 0.1% (v/v) HCl) of different concentrations in 50 mM Tris-HCl (pH 8.0), 150 mM NaCl buffer at room temperature for 3 hrs in the air. Protein-Fe mixtures were centrifuged at 13,000 x g to remove precipitated material and desalted prior to the Fe and protein content analysis by ferrozine assay and BCA microplate assay, respectively. Fe to protein ratio was calculated to indicate the Fe binding capacity of the protein. Protein stability was compromised at high iron concentrations; therefore, the highest iron loading with the least protein precipitation was used to derive the maximum iron loading capacity per biological assembly (underlined and highlighted in bold). The biological unit assemblies are a decamer for EncFtnsH, a 60mer for encapsulin, a 60mer of encapsulin loaded with 12 copies of decameric EncFtn in the complex, and 24mer for horse spleen apoferritin. Errors are quoted as the standard deviation of three technical repeats in both the ferrozine and BCA microplate assays. The proteins used in Fe loading experiment came from a single preparation.DOI: http://dx.doi.org/10.7554/eLife.18972.026Protein sampleFe(NH4)2(SO4)2 loading (µM)Fe detected by ferrozine assay (µM)Protein detected by BCA microplate assay (µM)Fe / monomeric proteinMaximum Fe loading per biological assembly unit8.46 µM EncFtnsH-10mer04.73 ± 2.325.26 ± 0.640.90 ± 0.4439.99.93 ± 1.205.36 ± 0.691.85 ± 0.228417.99 ± 2.014.96 ± 0.043.63 ± 0.4114721.09 ± 1.944.44 ± 0.214.75 ± 0.4448 ± 422428.68 ± 0.303.73 ± 0.537.68 ± 0.0830111.27 ± 1.102.50 ± 0.054.51 ± 0.448.50 µM Encapsulin0-1.02 ± 0.548.63 ± 0.17-0.12 ± 0.0622462.24 ± 2.4910.01 ± 0.586.22 ± 0.3530167.94 ± 3.158.69 ± 0.427.81 ± 0.36450107.96 ± 8.888.50 ± 0.6912.71 ± 1.0570097.51 ± 3.197.26 ± 0.2013.44 ± 0.441000308.63 ± 2.068.42 ± 0.3436.66 ± 0.242199 ± 15150057.09 ± 0.901.44 ± 0.2139.77 ± 0.6220009.2 ± 1.160.21 ± 0.1444.73 ± 5.638.70 µM EncFtn-Enc03.31 ± 1.576.85 ± 0.070.48 ± 0.23224116.27 ± 3.747.63 ± 0.1215.25 ± 0.49301132.86 ± 4.036.66 ± 0.3119.96 ± 0.61450220.57 ± 27.336.12 ± 1.0736.06 ± 4.47700344.03 ± 40.386.94 ± 0.1749.58 ± 5.821000496.00 ± 38.487.19 ± 0.0868.94 ± 5.354137 ± 3211500569.98 ± 73.635.73 ± 0.0399.44 ± 12.842000584.30 ± 28.334.88 ± 0.22119.62 ± 5.808.50 µM Apoferritin03.95 ± 2.269.37 ± 0.240.42 ± 0.2542.510.27 ± 1.128.27 ± 0.301.24 ± 0.18212.544.48 ± 2.767.85 ± 0.775.67 ± 0.83637.5160.93 ± 4.276.76 ± 0.8123.79 ± 3.12571 ± 751275114.92 ± 3.173.84 ± 0.3029.91 ± 2.95170091.40 ± 3.373.14 ± 0.3529.13 ± 3.86
+To understand the impact of the mutants on the organization and metal binding of the FOC, we determined the X-ray crystal structures of each of the EncFtnsH mutants (See Table 4 for data collection and refinement statistics). The crystal packing of all of the mutants in this study is essentially isomorphous to the EncFtnsH structure. All of the mutants display the same decameric arrangement in the crystals as the EncFtnsH structure, and the monomers superimpose with an average RMSDCα of less than 0.2 Å.
 
-Close inspection of the region of the protein around the FOC in each of the mutants highlights their effect on metal binding (
+**Table 4.**
+ Data collection and refinement statistics. Statistics for the highest-resolution shell are shown in parentheses. Friedel mates were averaged when calculating reflection numbers and statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT</th>
+      <th>E32A</th>
+      <th>E62A</th>
+      <th>H65A</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.74</td>
+      <td>1.73</td>
+      <td>1.73</td>
+      <td>1.74</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>49.63 - 2.06 (2.10 - 2.06)</td>
+      <td>48.84 - 2.59 (2.683 - 2.59)</td>
+      <td>48.87 - 2.21 (2.29 - 2.21)</td>
+      <td>48.86 - 2.97 (3.08 - 2.97)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 1 21 1</td>
+      <td>P 1 21 1</td>
+      <td>P 1 21 1</td>
+      <td>P 1 21 1</td>
+    </tr>
+    <tr>
+      <td>Unit cell (Å) a  b   c  β (°)</td>
+      <td>98.18 120.53 140.30 95.36</td>
+      <td>97.78 120.28 140.53 95.41</td>
+      <td>98.09 120.23 140.36 95.50</td>
+      <td>98.03 120.29 140.43 95.39</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>1,264,922 (41,360)</td>
+      <td>405,488 (36,186)</td>
+      <td>1,069,345 (95,716)</td>
+      <td>323,853 (32,120)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>197,873 (8,766)</td>
+      <td>100,067 (9,735)</td>
+      <td>162,379 (15,817)</td>
+      <td>66,658 (6,553)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.4 (4.7)</td>
+      <td>4.1 (3.7)</td>
+      <td>6.6 (6.1)</td>
+      <td>4.9 (4.9)</td>
+    </tr>
+    <tr>
+      <td>Anomalous multiplicity</td>
+      <td>3.2 (2.6)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.2 (88.6)</td>
+      <td>99.0 (97.0)</td>
+      <td>100 (97.0)</td>
+      <td>100 (99.0)</td>
+    </tr>
+    <tr>
+      <td>Anomalous completeness (%)</td>
+      <td>96.7 (77.2)</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>10.6 (1.60)</td>
+      <td>8.46 (1.79)</td>
+      <td>13.74 (1.80)</td>
+      <td>8.09 (1.74)</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>26.98</td>
+      <td>40.10</td>
+      <td>33.97</td>
+      <td>52.20</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.123 (0.790)</td>
+      <td>0.171 (0.792)</td>
+      <td>0.0979 (1.009)</td>
+      <td>0.177 (0.863)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.147 (0.973)</td>
+      <td>0.196 (0.923)</td>
+      <td>0.1064 (1.107)</td>
+      <td>0.199 (0.966)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.995 (0.469)</td>
+      <td>0.985 (0.557)</td>
+      <td>0.998 (0.642)</td>
+      <td>0.989 (0.627)</td>
+    </tr>
+    <tr>
+      <td>CC*</td>
+      <td>0.999 (0.846)</td>
+      <td>0.996 (0.846)</td>
+      <td>0.999 (0.884)</td>
+      <td>0.997 (0.878)</td>
+    </tr>
+    <tr>
+      <td>Image DOI</td>
+      <td>10.7488/ds/1342</td>
+      <td>10.7488/ds/1419</td>
+      <td>10.7488/ds/1420</td>
+      <td>10.7488/ds/1421</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.171 (0.318)</td>
+      <td>0.183 (0.288)</td>
+      <td>0.165 (0.299)</td>
+      <td>0.186 (0.273)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.206 (0.345)</td>
+      <td>0.225 (0351)</td>
+      <td>0.216 (0.364)</td>
+      <td>0.237 (0.325)</td>
+    </tr>
+    <tr>
+      <td>Number of non-hydrogen atoms</td>
+      <td>23,222</td>
+      <td>22,366</td>
+      <td>22,691</td>
+      <td>22,145</td>
+    </tr>
+    <tr>
+      <td>macromolecules</td>
+      <td>22,276</td>
+      <td>22,019</td>
+      <td>21,965</td>
+      <td>22,066</td>
+    </tr>
+    <tr>
+      <td>ligands</td>
+      <td>138</td>
+      <td>8</td>
+      <td>24</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>water</td>
+      <td>808</td>
+      <td>339</td>
+      <td>702</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2,703</td>
+      <td>2,686</td>
+      <td>2,675</td>
+      <td>2,700</td>
+    </tr>
+    <tr>
+      <td>RMS(bonds) (Å)</td>
+      <td>0.012</td>
+      <td>0.005</td>
+      <td>0.011</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RMS(angles) (°)</td>
+      <td>1.26</td>
+      <td>0.58</td>
+      <td>1.02</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>100</td>
+      <td>99</td>
+      <td>100</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>Ramachandran allowed (%)</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>1.42</td>
+      <td>1.42</td>
+      <td>1.79</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å2)</td>
+      <td>33.90</td>
+      <td>42.31</td>
+      <td>41.34</td>
+      <td>47.68</td>
+    </tr>
+    <tr>
+      <td>macromolecules</td>
+      <td>33.80</td>
+      <td>42.35</td>
+      <td>41.31</td>
+      <td>47.60</td>
+    </tr>
+    <tr>
+      <td>ligands</td>
+      <td>40.40</td>
+      <td>72.80</td>
+      <td>65.55</td>
+      <td>72.34</td>
+    </tr>
+    <tr>
+      <td>solvent</td>
+      <td>36.20</td>
+      <td>38.95</td>
+      <td>41.46</td>
+      <td>33.85</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>5DA5</td>
+      <td>5L89</td>
+      <td>5L8B</td>
+      <td>5L8G</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Iron loading capacity of EncFtn, encapsulin and ferritin. Protein samples (at 8.5 µM) including decameric EncFtnsH, encapsulin, EncFtn-Enc and apoferritin were mixed with Fe(NH4)2(SO4) (in 0.1% (v/v) HCl) of different concentrations in 50 mM Tris-HCl (pH 8.0), 150 mM NaCl buffer at room temperature for 3 hrs in the air. Protein-Fe mixtures were centrifuged at 13,000 x g to remove precipitated material and desalted prior to the Fe and protein content analysis by ferrozine assay and BCA microplate assay, respectively. Fe to protein ratio was calculated to indicate the Fe binding capacity of the protein. Protein stability was compromised at high iron concentrations; therefore, the highest iron loading with the least protein precipitation was used to derive the maximum iron loading capacity per biological assembly (underlined and highlighted in bold). The biological unit assemblies are a decamer for EncFtnsH, a 60mer for encapsulin, a 60mer of encapsulin loaded with 12 copies of decameric EncFtn in the complex, and 24mer for horse spleen apoferritin. Errors are quoted as the standard deviation of three technical repeats in both the ferrozine and BCA microplate assays. The proteins used in Fe loading experiment came from a single preparation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein sample</th>
+      <th>Fe(NH4)2(SO4)2 loading (µM)</th>
+      <th>Fe detected by ferrozine assay (µM)</th>
+      <th>Protein detected by BCA microplate assay (µM)</th>
+      <th>Fe / monomeric protein</th>
+      <th>Maximum Fe loading per biological assembly unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">8.46 µM EncFtnsH-10mer</td>
+      <td>0</td>
+      <td>4.73 ± 2.32</td>
+      <td>5.26 ± 0.64</td>
+      <td>0.90 ± 0.44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>39.9</td>
+      <td>9.93 ± 1.20</td>
+      <td>5.36 ± 0.69</td>
+      <td>1.85 ± 0.22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>17.99 ± 2.01</td>
+      <td>4.96 ± 0.04</td>
+      <td>3.63 ± 0.41</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>147</td>
+      <td>21.09 ± 1.94</td>
+      <td>4.44 ± 0.21</td>
+      <td>4.75 ± 0.44</td>
+      <td>48 ± 4</td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>28.68 ± 0.30</td>
+      <td>3.73 ± 0.53</td>
+      <td>7.68 ± 0.08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>11.27 ± 1.10</td>
+      <td>2.50 ± 0.05</td>
+      <td>4.51 ± 0.44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">8.50 µM Encapsulin</td>
+      <td>0</td>
+      <td>-1.02 ± 0.54</td>
+      <td>8.63 ± 0.17</td>
+      <td>-0.12 ± 0.06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>62.24 ± 2.49</td>
+      <td>10.01 ± 0.58</td>
+      <td>6.22 ± 0.35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>67.94 ± 3.15</td>
+      <td>8.69 ± 0.42</td>
+      <td>7.81 ± 0.36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>450</td>
+      <td>107.96 ± 8.88</td>
+      <td>8.50 ± 0.69</td>
+      <td>12.71 ± 1.05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>97.51 ± 3.19</td>
+      <td>7.26 ± 0.20</td>
+      <td>13.44 ± 0.44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>308.63 ± 2.06</td>
+      <td>8.42 ± 0.34</td>
+      <td>36.66 ± 0.24</td>
+      <td>2199 ± 15</td>
+    </tr>
+    <tr>
+      <td>1500</td>
+      <td>57.09 ± 0.90</td>
+      <td>1.44 ± 0.21</td>
+      <td>39.77 ± 0.62</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>9.2 ± 1.16</td>
+      <td>0.21 ± 0.14</td>
+      <td>44.73 ± 5.63</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">8.70 µM EncFtn-Enc</td>
+      <td>0</td>
+      <td>3.31 ± 1.57</td>
+      <td>6.85 ± 0.07</td>
+      <td>0.48 ± 0.23</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>224</td>
+      <td>116.27 ± 3.74</td>
+      <td>7.63 ± 0.12</td>
+      <td>15.25 ± 0.49</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>132.86 ± 4.03</td>
+      <td>6.66 ± 0.31</td>
+      <td>19.96 ± 0.61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>450</td>
+      <td>220.57 ± 27.33</td>
+      <td>6.12 ± 1.07</td>
+      <td>36.06 ± 4.47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>344.03 ± 40.38</td>
+      <td>6.94 ± 0.17</td>
+      <td>49.58 ± 5.82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1000</td>
+      <td>496.00 ± 38.48</td>
+      <td>7.19 ± 0.08</td>
+      <td>68.94 ± 5.35</td>
+      <td>4137 ± 321</td>
+    </tr>
+    <tr>
+      <td>1500</td>
+      <td>569.98 ± 73.63</td>
+      <td>5.73 ± 0.03</td>
+      <td>99.44 ± 12.84</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2000</td>
+      <td>584.30 ± 28.33</td>
+      <td>4.88 ± 0.22</td>
+      <td>119.62 ± 5.80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="6">8.50 µM Apoferritin</td>
+      <td>0</td>
+      <td>3.95 ± 2.26</td>
+      <td>9.37 ± 0.24</td>
+      <td>0.42 ± 0.25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>42.5</td>
+      <td>10.27 ± 1.12</td>
+      <td>8.27 ± 0.30</td>
+      <td>1.24 ± 0.18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>212.5</td>
+      <td>44.48 ± 2.76</td>
+      <td>7.85 ± 0.77</td>
+      <td>5.67 ± 0.83</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>637.5</td>
+      <td>160.93 ± 4.27</td>
+      <td>6.76 ± 0.81</td>
+      <td>23.79 ± 3.12</td>
+      <td>571 ± 75</td>
+    </tr>
+    <tr>
+      <td>1275</td>
+      <td>114.92 ± 3.17</td>
+      <td>3.84 ± 0.30</td>
+      <td>29.91 ± 2.95</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1700</td>
+      <td>91.40 ± 3.37</td>
+      <td>3.14 ± 0.35</td>
+      <td>29.13 ± 3.86</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+Close inspection of the region of the protein around the FOC in each of the mutants highlights their effect on metal binding (Figure 11 and Figure 11—figure supplement 1–3). In the E32A mutant the position of the side chains of the remaining iron coordinating residues in the FOC is essentially unchanged, but the absence of the axial-metal coordinating ligand provided by the Glu32 side chain abrogates metal binding in this site. The Glu31/34-site also lacks metal, with the side chain of Glu31 rotated by 180° at the Cβ in the absence of metal (Figure 11—figure supplement 1). The E62A mutant has a similar effect on the FOC to the E32A mutant, however the entry site still has a calcium ion coordinated between residues Glu31 and Glu34 (Figure 11—figure supplement 2). The H65A mutant diverges significantly from the wild type in the position of the residues Glu32 and Tyr39 in the FOC. E32 appears in either the original orientation as the wild type and coordinates Ca2+ in this position, or it is flipped by 180° at the Cβ, moving away from the coordinated calcium ion in the FOC. Tyr39 moves closer to Ca2+ compared to the wild-type and coordinates the calcium ion (Figure 11—figure supplement 3). A single calcium ion is present in the entry site of this mutant; however, Glu31 of one chain is rotated away from the metal ion and is not involved in coordination.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig11-v3.jpg)
 
-**Figure 11.:** sH FOC mutants vs wild type.The structures of the three EncFtnsH mutants were all determined by X-ray crystallography. The E32A, E62A and H65A mutants were crystallized in identical conditions to the wild type. EncFtnsH structure and were essentially isomorphous in terms of their unit cell dimensions. The FOC residues of the mutants and native EncFtnsH structures are shown as sticks with coordinated Fe2+ as orange and Ca2+ as grey spheres and are colored as follows: wild type, grey; E32A, pink; E62A, green; H65A, blue. Of the mutants, only H65A has any coordinated metal ions, which appear to be calcium ions from the crystallization condition. The overall organization of FOC residues is retained in the mutants, with almost no backbone movements. Significant differences center around Tyr39, which moves to coordinate the bound calcium ions in the H65A mutant; and Glu32, which moves away from the metal ions in this structure.DOI: http://dx.doi.org/10.7554/eLife.18972.027
+**Figure 11.:** The structures of the three EncFtnsH mutants were all determined by X-ray crystallography. The E32A, E62A and H65A mutants were crystallized in identical conditions to the wild type. EncFtnsH structure and were essentially isomorphous in terms of their unit cell dimensions. The FOC residues of the mutants and native EncFtnsH structures are shown as sticks with coordinated Fe2+ as orange and Ca2+ as grey spheres and are colored as follows: wild type, grey; E32A, pink; E62A, green; H65A, blue. Of the mutants, only H65A has any coordinated metal ions, which appear to be calcium ions from the crystallization condition. The overall organization of FOC residues is retained in the mutants, with almost no backbone movements. Significant differences center around Tyr39, which moves to coordinate the bound calcium ions in the H65A mutant; and Glu32, which moves away from the metal ions in this structure.
 
 ![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig11-figsupp1-v3.jpg)
 
-**Figure 11—figure supplement 1.:** sH-E32A mutant.(A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-E32A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. (B) Views of the FOC of the EncFtnsH-E32Amutant. Protein atoms shown as in (A).DOI: http://dx.doi.org/10.7554/eLife.18972.028
+**Figure 11—figure supplement 1.:** (A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-E32A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. (B) Views of the FOC of the EncFtnsH-E32Amutant. Protein atoms shown as in (A).
 
 ![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig11-figsupp2-v3.jpg)
 
-**Figure 11—figure supplement 2.:** sH-E62A mutant.(A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-E62A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. The single coordinated calcium ion is shown as a grey sphere. (B) Views of the FOC of the EncFtnsH-E62A mutant. Protein atoms shown as in (A).DOI: http://dx.doi.org/10.7554/eLife.18972.029
+**Figure 11—figure supplement 2.:** (A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-E62A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. The single coordinated calcium ion is shown as a grey sphere. (B) Views of the FOC of the EncFtnsH-E62A mutant. Protein atoms shown as in (A).
 
 ![Figure 11—figure supplement 3.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig11-figsupp3-v3.jpg)
 
-**Figure 11—figure supplement 3.:** sH-H65A mutant.(A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-H65A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. The coordinated calcium ions are shown as a grey spheres with coordination distances in the FOC highlighted with yellow dashed lines. (B) Views of the FOC of the EncFtnsH-H65A mutant. Protein atoms and metal ions shown as in (A).DOI: http://dx.doi.org/10.7554/eLife.18972.030
+**Figure 11—figure supplement 3.:** (A) Wall-eyed stereo view of the metal-binding dimerization interface of EncFtnsH-H65A. Protein residues are shown as sticks with blue and green carbons for the different subunits. The 2mFo-DFc electron density map is shown as a blue mesh contoured at 1.5 σ. The coordinated calcium ions are shown as a grey spheres with coordination distances in the FOC highlighted with yellow dashed lines. (B) Views of the FOC of the EncFtnsH-H65A mutant. Protein atoms and metal ions shown as in (A).
 
 Taken together the results of our data show that these changes to the FOC of EncFtn still permit the formation of the decameric form of the protein. While the proteins all appear decameric in crystals, their solution and gas-phase behavior differs considerably and the mutants no longer show metal-dependent oligomerization. These results highlight the importance of metal coordination in the FOC for the stability and assembly of the EncFtn protein.
 
-To address the question of how mutagenesis of the iron coordinating residues affects the enzymatic activity of the EncFtn
+To address the question of how mutagenesis of the iron coordinating residues affects the enzymatic activity of the EncFtnsH protein we recorded progress curves for the oxidation of Fe2+ to Fe3+ by the different mutants as before. Mutagenesis of E32A and H65A reduces the activity of EncFtnsH by about 40%-55%; the E62A mutant completely abrogates activity, presumably through the loss of the bridging coordination for the formation of the di-nuclear iron center of the FOC (Figure 12). Collectively, the effect of mutating these residues in the FOC confirms the importance of the iron coordinating residues for the ferroxidase activity of the EncFtnsH protein.
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig12-v3.jpg)
 
-**Figure 12.:** sH mutants.EncFtnsH, and the mutant forms E32A, E62A and H65A, each at 20 µM, were mixed with 100 µM acidic Fe(NH4)2(SO4)2. Ferroxidase activity of the mutant forms is determined by measuring the absorbance at 315 nm for 1800 s at 25 °C as an indication of Fe3+ formation. The relative ferroxidase activity of mutants is plotted as a proportion of the activity of the wild-type protein using the endpoint measurement of A315. Three technical repeats were performed and the plotted error bars represent the calculated standard deviations. The FOC mutants showed reduced ferroxidase activity to varied extents, among which E62A significantly abrogated the ferroxidase activity.DOI: http://dx.doi.org/10.7554/eLife.18972.031
+**Figure 12.:** EncFtnsH, and the mutant forms E32A, E62A and H65A, each at 20 µM, were mixed with 100 µM acidic Fe(NH4)2(SO4)2. Ferroxidase activity of the mutant forms is determined by measuring the absorbance at 315 nm for 1800 s at 25 °C as an indication of Fe3+ formation. The relative ferroxidase activity of mutants is plotted as a proportion of the activity of the wild-type protein using the endpoint measurement of A315. Three technical repeats were performed and the plotted error bars represent the calculated standard deviations. The FOC mutants showed reduced ferroxidase activity to varied extents, among which E62A significantly abrogated the ferroxidase activity.
 
 ![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig12-figsupp1-v3.jpg)
 
-**Figure 12—figure supplement 1.:** sH mutants. 20 µM wild-type EncFtnsH, E32A, E62A and H65A mutants were mixed with 20 µM or 100 µM acidic Fe(NH4)2(SO4)2, respectively.Absorbance at 315 nm was recorded for 1800 s at 25°C as an indication of Fe3+ formation. Protein free samples (dashed and dotted lines) were measured for Fe2+ background oxidation as controls. Assays were performed with three technical repeats. Error bars were showed in shadows behind each curves.DOI: http://dx.doi.org/10.7554/eLife.18972.032
+**Figure 12—figure supplement 1.:** Absorbance at 315 nm was recorded for 1800 s at 25°C as an indication of Fe3+ formation. Protein free samples (dashed and dotted lines) were measured for Fe2+ background oxidation as controls. Assays were performed with three technical repeats. Error bars were showed in shadows behind each curves.
 
 ## Discussion
 
-Our study reports on a new class of ferritin-like proteins (EncFtn), which are associated with bacterial encapsulin nanocompartments (Enc). By studying the EncFtn from
+Our study reports on a new class of ferritin-like proteins (EncFtn), which are associated with bacterial encapsulin nanocompartments (Enc). By studying the EncFtn from R. rubrum we demonstrate that iron binding results in assembly of EncFtn decamers, which display a unique annular architecture. Despite a radically different quaternary structure to the classical ferritins, the four-helical bundle scaffold and FOC of EncFtnsH are strikingly similar to ferritin (Figure 6A). A sequence-based phylogenetic tree for proteins in the ferritin family was constructed; in addition to the classical ferritins, bacterioferritins and Dps proteins, our analysis included the encapsulin-associated ferritin-like proteins (EncFtns) and a group related to these, but lacking the encapsulin sequence (Non-EncFtn). The analysis revealed that the EncFtn and Non-EncFtn proteins form groups distinct from the other clearly delineated groups of ferritins, and represent outliers in the tree (Figure 13). While it is difficult to infer ancestral lineages in protein families, the similarity seen in the active site scaffold of these proteins highlights a shared evolutionary relationship between EncFtn proteins and other members of the ferritin superfamily that has been noted in previous studies (Andrews, 2010; Lundin et al., 2012). From this analysis, we propose that the four-helical fold of the classical ferritins may have arisen through gene duplication of an ancestor of EncFtn. This gene duplication would result in the C-terminal region of one EncFtn monomer being linked to the N-terminus of another and thus stabilizing the four-helix bundle fold within a single polypeptide chain (Figure 6B). Linking the protein together in this way relaxes the requirement for the maintenance of a symmetrical FOC and thus provides a path to the diversity in active-site residues seen across the ferritin family (Figure 6A, residues Glu95, Gln128 and Glu131 in PmFtn, Supplementary file 1) (Andrews, 2010; Lundin et al., 2012).
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig13-v3.jpg)
 
-**Figure 13.:** The tree was built using the Neighbor-Joining method (Saitou and Nei, 1987) based on step-wise amino acid sequence alignment of the four-helical bundle portions of ferritin family proteins (Supplementary file 1). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree; the likely root of the tree is indicated by a red arrow. The evolutionary distances were computed using the p-distance method (Nei and Kumar, 2000) and are in the units of the number of amino acid differences per site. The rate variation among sites was modeled with a gamma distribution (shape parameter = 2.5). The analysis involved 104 amino acid sequences. All ambiguous positions were removed for each sequence pair. There were a total of 262 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 (McCoy et al., 2007)DOI: http://dx.doi.org/10.7554/eLife.18972.033
+**Figure 13.:** The tree was built using the Neighbor-Joining method (Saitou and Nei, 1987) based on step-wise amino acid sequence alignment of the four-helical bundle portions of ferritin family proteins (Supplementary file 1). The tree is drawn to scale, with branch lengths in the same units as those of the evolutionary distances used to infer the phylogenetic tree; the likely root of the tree is indicated by a red arrow. The evolutionary distances were computed using the p-distance method (Nei and Kumar, 2000) and are in the units of the number of amino acid differences per site. The rate variation among sites was modeled with a gamma distribution (shape parameter = 2.5). The analysis involved 104 amino acid sequences. All ambiguous positions were removed for each sequence pair. There were a total of 262 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 (McCoy et al., 2007)
 
-## Relationship between ferritin structure and activity
+### Relationship between ferritin structure and activity
 
 The quaternary arrangement of classical ferritins into an octahedral nanocage and Dps into a dodecamer is absolutely required for their function as iron storage compartments (Chasteen and Harrison, 1999). The oxidation and mineralization of iron must be spatially separated from the host cytosol to prevent the formation of damaging hydroxyl radicals in the Fenton and Haber-Weiss reactions (Honarmand Ebrahimi et al., 2012). This is achieved in all ferritins by confining the oxidation of iron to the interior of the protein complex, thus achieving sequestration of the Fe3+ mineralization product. A structural alignment of the FOC of EncFtn with the classical ferritin PmFtn shows that the central ring of EncFtn corresponds to the external surface of ferritin, while the outer circumference of EncFtn is congruent with the inner mineralization surface of ferritin (Figure 6—figure supplement 1A). This overlay highlights the fact that the ferroxidase center of EncFtn faces in the opposite direction relative to the classical ferritins and is essentially inside out regarding iron storage space (Figure 6—figure supplement 1B, boxed region). Analysis of each of the single mutations (E32A, E62A and H65A) made in the FOC highlights the importance of the iron-coordinating residues in the catalytic activity of EncFtn. Furthermore, the position of the calcium ion coordinated by Glu31 and Glu34 seen in the EncFtnsH structure suggests an entry site to channel metal ions into the FOC; we propose that this site binds hydrated iron ions in vivo and acts as a selectivity filter and gate for the FOC (Haldar et al., 2011). The constellation of charged residues on the outer circumference of EncFtn (His57, Glu61 and Glu64) could function in the same way as the residues lining the mineralization surface within the classical ferritin nanocage (Le Brun et al., 2010), and given their proximity to the FOC these sites may be the exit portal and mineralization site (Honarmand Ebrahimi et al., 2012).
 
 The absolute requirement for the spatial separation of oxidation and mineralization in ferritins suggests that the EncFtn family proteins are not capable of storing iron minerals due to the absence of an enclosed compartment in their structure (Figure 6—figure supplement 1B). Our biochemical characterization of EncFtn supports this hypothesis, indicating that while this protein is capable of oxidizing iron, it does not accrue mineralized iron in an analogous manner to classical ferritins. While EncFtn does not store iron itself, its association with the encapsulin nanocage suggests that mineralization occurs within the cavity of the encapsulin shell (McHugh et al., 2014). Our ferroxidase assay data on the recombinant EncFtn-Enc nanocompartments, which accrue over 4100 iron ions per complex and form regular nanoparticles, are consistent with the encapsulin protein acting as the store for iron oxidized by the EncFtn enzyme. TEM analysis of the reaction products shows the production of homogeneous iron nanoparticles only in the EncFtn-Enc nanocompartment (Figure 8—figure supplement 1).
 
-Docking the decamer structure of EncFtn
+Docking the decamer structure of EncFtnsH into the pentamer of the T. maritima encapsulin Tmari_0786 (PDB ID: 3DKT) (Sutter et al., 2008) shows that the position of the C-terminal extensions of our EncFtnsH structure are consistent with the localization sequences seen bound to the encapsulin protein (Figure 14A). Thus, it appears that the EncFtn decamer is the physiological state of this protein. This arrangement positions the central ring of EncFtn directly above the pore at the five-fold symmetry axis of the encapsulin shell and highlights a potential route for the entry of iron into the encapsulin and towards the active site of EncFtn. A comparison of the encapsulin nanocompartment and the ferritin nanocage highlights the size differential between the two complexes (Figure 14B) that allows the encapsulin to store significantly more iron. The presence of five FOCs per EncFtnsH decamer and the fact that the icosahedral encapsulin nanocage can hold up to twelve of decameric EncFtn between each of the internal five-fold vertices means that they can achieve a high rate of iron mineralization across the entire nanocompartment. This arrangement of multiple reaction centers in a single protein assembly is reminiscent of classical ferritins, which has 24 FOCs distributed around the nanocage.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/18972/elife-18972-fig14-v3.jpg)
 
-**Figure 14.:** (A) Model of EncFtnsH docking to the encapsulin shell. A single pentamer of the icosahedral T. maritima encapsulin structure (PDBID: 3DKT) (Sutter et al., 2008) is shown as a blue surface with the encapsulin localization sequence of EncFtn shown as a purple surface. The C-terminal regions of the EncFtn subunits correspond to the position of the localization sequences seen in 3DKT. Alignment of EncFtnsH with 3DKT positions the central channel directly above the pore in the 3DKT pentamer axis (shown as a grey pentagon). (B) Surface view of EncFtn within the encapsulin nanocompartment (grey and blue respectively). The lumen of the encapsulin nanocompartment is considerably larger than the interior of ferritin (shown in orange behind the encapsulin for reference) and thus allows the storage of significantly more iron. The proposed pathway for iron movement through the encapsulin shell and EncFtn FOC is shown with arrows. (C) Model ofiron oxidation within an encapsulin nanocompartment. As EncFtn is unable to mineralize iron on its surface directly, Fe2+ must pass through the encapsulin shell to access the first metal binding site within the central channel of EncFtnsH (entry site) prior to oxidation within the FOC and release as Fe3+ to the outer surface of the protein where it can be mineralized within the lumen of the encapsulin cage.DOI: http://dx.doi.org/10.7554/eLife.18972.034
+**Figure 14.:** (A) Model of EncFtnsH docking to the encapsulin shell. A single pentamer of the icosahedral T. maritima encapsulin structure (PDBID: 3DKT) (Sutter et al., 2008) is shown as a blue surface with the encapsulin localization sequence of EncFtn shown as a purple surface. The C-terminal regions of the EncFtn subunits correspond to the position of the localization sequences seen in 3DKT. Alignment of EncFtnsH with 3DKT positions the central channel directly above the pore in the 3DKT pentamer axis (shown as a grey pentagon). (B) Surface view of EncFtn within the encapsulin nanocompartment (grey and blue respectively). The lumen of the encapsulin nanocompartment is considerably larger than the interior of ferritin (shown in orange behind the encapsulin for reference) and thus allows the storage of significantly more iron. The proposed pathway for iron movement through the encapsulin shell and EncFtn FOC is shown with arrows. (C) Model ofiron oxidation within an encapsulin nanocompartment. As EncFtn is unable to mineralize iron on its surface directly, Fe2+ must pass through the encapsulin shell to access the first metal binding site within the central channel of EncFtnsH (entry site) prior to oxidation within the FOC and release as Fe3+ to the outer surface of the protein where it can be mineralized within the lumen of the encapsulin cage.
 
 Our structural data, coupled with biochemical and ICP-MS analysis, suggest a model for the activity of the encapsulin iron-megastore (Figure 14C). The crystal structure of the T. maritima encapsulin shell protein has a negatively charged pore positioned to allow the passage of Fe2+ into the encapsulin and directs the metal towards the central, negatively charged hole of the EncFtn ring (Figure 4—figure supplement 1). The five metal-binding sites on the interior of the ring (Glu31/34-sites) may select for the Fe2+ ion and direct it towards their cognate FOCs. We propose that the oxidation of Fe2+ to Fe3+ occurs within the FOC according to the model postulated by (Honarmand Ebrahimi et al., 2012) in which the FOC acts as a substrate site through which iron passes and is released on to weakly coordinating sites at the outer circumference of the protein (His57, Glu61 and Glu64), where it is able to form ferrihydrite minerals which can be safely deposited within the lumen of the encapsulin nanocompartment (Figure 14).
 
@@ -230,29 +1026,29 @@ Here we describe for the first time the structure and biochemistry of a new clas
 
 ## Materials and methods
 
-## Cloning
+### Cloning
 
 Genes of interest were amplified by PCR using R. rubrum ATCC 11,170 genomic DNA (DSMZ) as the template and KOD Hot Start DNA Polymerase (Novagen). Primers used in this study are listed in Supplementary file 2. PCR products were visualized in 0.8% agarose gel stained with SYBR Safe (Life Technologies, UK). Fragments of interest were purified by gel extraction (Qiagen, UK) before digestion by endonuclease restriction enzymes (Thermo Fisher Scientific, UK) at 37°C for 1 hr, followed by ligation with similarly digested vector pET-28a(+) or pACYCDuet-1 at room temperature for 1 hr. Ligation product was transformed into chemically competent Escherichia coli Top10 cells and screened against 50 ng/μl kanamycin for pET-28a(+) based constructs or 34 ng/μl chloramphenicol for pACYCDuet-1 based constructs. DNA insertion was confirmed through Sanger sequencing (Edinburgh Genomics, The University of Edinburgh, UK). Sequence verified constructs were transformed into E. coli BL21(DE3) or Tuner(DE3) for protein production. Alternatively, plasmids transformed into E. coli B834(DE3) cells were cultured in selenomethionine medium.
 
-## Protein production and purification
+### Protein production and purification
 
 A single colony of E. coli BL21(DE3) or Tuner(DE3) cells, transformed with protein expression plasmid, was transferred into 10 ml LB medium, or M9 minimal medium (MM), supplemented with appropriate antibiotic, and incubated overnight at 37 °C with 200 rpm shaking. The overnight pre-culture was then inoculated into 1 liter of LB medium and incubated at 37 °C with 200 rpm shaking. Recombinant protein production was induced at OD600= 0.6 by the addition of 1 mM IPTG and the incubation temperature was reduced to 18°C for overnight incubation. Cells were pelleted by centrifugation at 4000 g for 20 min at 4 °C, and resuspended 10-fold (volume per gram of cell pellet) in PBS to wash cells before a second centrifugation step. Cells were resuspended in 10-times (v/w) of appropriate lysis buffer for the purification method used (see details of buffers below) and lysed by sonication on ice, with ten cycles of 30-second burst of sonication at 10 µm amplitude and 30 s of cooling. Cell lysate was clarified by centrifugation at 20,000 x g, 30 min, 4 °C; followed by filtration using a 0.22 µM syringe filter (Millipore, UK).
 
 Selenomethionine labelled protein was produced by growing a single colony of E. coli B834 (DE3) cells transformed with protein expression plasmids in 100 ml LB medium supplemented with appropriate antibiotic overnight at 37 °C with shaking at 200 rpm. The overnight pre-culture was pelleted by centrifugation 3,000 x g, 4 °C, 15 min and washed twice with M9 minimal medium. The washed cells were transferred to 1 liter of SeMet medium, which contains M9 minimal medium, 40 mg/L of each L-amino acid (without methionine), 40 mg/L selenomethionine, 2 mM MgSO4, 0.4% (w/v) glucose and 1 mM Fe(NH4)2(SO4)2. Cells were incubated at 37 °C with 200 rpm shaking and recombinant protein production was induced at OD600= 0.6 by the addition of 1 mM IPTG and the incubation temperature was reduced to 18 °C for overnight incubation. Cells were harvested and lysed as above.
 
-## His-tagged protein purification
+### His-tagged protein purification
 
 Clarified cell lysate was loaded onto a 5 ml HisTrap column (GE Healthcare, UK) pre-equilibrated with HisA buffer (50 mM Tris-HCl, 500 mM NaCl and 50 mM imidazole, pH 8.0). Unbound proteins were washed from the column with HisA buffer. His-tagged proteins were then eluted by a step gradient of 50% HisA buffer and 50% HisB buffer (50 mM Tris-HCl, 500 mM NaCl and 500 mM imidazole, pH 8.0). Fractions containing the protein of interest, as determined by 15% (w/v) acrylamide SDS-PAGE, were pooled before loading onto a gel-filtration column (HiLoad 16/600 Superdex 200, GE Healthcare) equilibrated with GF buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl). Fractions were subjected to 15% SDS-PAGE and those containing the protein of interest were pooled for further analysis.
 
-## Sucrose gradient ultracentrifugation purification
+### Sucrose gradient ultracentrifugation purification
 
 Co-expressed encapsulin and EncFtn (EncFtn-Enc) and encapsulin protein were both purified according to the protocol used by M. Sutter (Sutter, 2008). Briefly, EncFtn-Enc or encapsulin was expressed based on pACYCDuet-1 vector. The E. coli cells were grown, induced, harvested and sonicated in a similar way as described above. GF buffer used in this purification contains 50 mM Tris-HCl, pH 8.0, and 150 mM NaCl. To remove RNA contamination, the lysate was supplemented with 50 μg/ml RNase A and rotated at 10 rpm and room temperature for 2 hrs, followed by centrifugation at 34,000 x g and 4 °C for 20 min and filtering through 0.22 µM syringe filter. Proteins were pelleted through 38% (w/v) sucrose cushion by ultracentrifugation at 100,000 x g and 4 °C for 21 hrs. 10% - 50% (w/v) sucrose gradient ultracentrifugation was applied to further separate the proteins at 100,000 x g and 4 °C for 17 hrs. Protein was dialyzed against GF buffer to remove sucrose before being used in chemical assays or TEM.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 TEM imaging was performed on purified encapsulin, EncFtn, and EncFtn-Enc and apoferritin. Purified protein at 0.1 mg/ml concentration was spotted on glow-discharged 300 mesh carbon-coated copper grids and excess liquid wicked off with filter paper (Whatman, UK). The grids were washed with distilled water and blotted with filter paper three times before staining with 0.2% uranyl acetate, blotting and air-drying. Grids were imaged using a JEM1400 transmission electron microscope and images were collected with a Gatan CCD camera. Images were analyzed using ImageJ (NIH, Bethesda, MD) and size-distribution histograms were plotted using Prism 6 (GraphPad software). To observe iron mineral formation by TEM, protein samples at 8.5 µM concentration including EncFtnsH, encapsulin, EncFtn-Enc and apoferritin were supplemented with acidic Fe(NH4)2(SO4)2 at their maximum iron loading ratio in room temperature for 1 hr. The mixtures were subjected to TEM analysis with or without uranyl acetate staining. TEM experiments without Fe loading were repeated three times, a representative set of images are presented here. Proteins loaded with Fe and imaged by TEM were from single preparation.
 
-## Protein crystallization and X-ray data collection
+### Protein crystallization and X-ray data collection
 
 EncFtnsH was purified by anion exchange and Superdex 200 size- exclusion chromatography and concentrated to 10 mg/ml (based on extinction coefficient calculation). Crystallization drops were set up using the hanging drop vapor diffusion method at 292 K. Glass coverslips were set up with 1–2 μl protein mixed with 1 μl well solution (0.14 M calcium acetate and 15% (w/v) PEG 3350) and sealed over 1 ml of well solution. Crystals appeared after 5 days and were harvested from the well using a LithoLoop (Molecular Dimensions Limited, UK), transferred briefly to a cryoprotection solution containing well solution supplemented with 1 mM FeSO4 (in 0.1% (v/v) HCl), 20% (v/v) PEG 200, and subsequently flash cooled in liquid nitrogen. Crystals of the EncFtnsHsingle mutations were produced in the same manner as for the EncFtnsH wild-type protein.
 
@@ -260,42 +1056,42 @@ All crystallographic datasets were collected on the macromolecular crystallograp
 
 The structure of EncFtnsH was determined by molecular replacement using PDB ID: 3K6C as the search model, modified to match the sequence of the target protein using Chainsaw (Stein, 2008). A single solution comprising three decamers in the asymmetric unit was found by molecular replacement using Phaser (McCoy et al., 2007). The initial model was rebuilt using Phenix.autobuild (Adams et al., 2010) followed by cycles of refinement with Phenix.refine (Afonine et al., 2012), with manual rebuilding and model inspection in Coot (Emsley et al., 2010). The final model was refined with isotropic B-factors, torsional NCS restraints, and with anomalous group refinement. The model was validated using MolProbity (Chen et al., 2010). Structural superimpositions were calculated using Coot. Crystallographic figures were generated with PyMOL. Multiple sequence alignment of EncFtn and ferritin family proteins was performed using Clustal Omega Sievers and Higgins, 2014 and displayed with Espript 3.0 (Gouet et al., 2003). Model refinement statistics are shown in Table 4. The final models and experimental data are deposited in the PDB and diffraction image files are available at the Edinburgh DataShare repository.
 
-## Horse spleen apoferritin preparation
+### Horse spleen apoferritin preparation
 
 Horse spleen apoferritin purchased from Sigma Aldrich (UK) was dissolved in deaerated MOPS buffer (100 mM MOPS, 100 mM NaCl, 3 g/100 ml Na2S2O4 and 0.5 M EDTA, pH 6.5) (Bauminger et al., 1991). Protein was dialyzed against 1 liter MOPS buffer in room temperature for two days before buffer exchanging to GF buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl) in a vivaspin column with 5 kDa cut-off (Sartorius, UK) for several times. Fe content of apoferritin was detected using ferrozine assay (Riemer et al., 2004). Protein concentration was determined using Pierce Microplate BCA Protein Assay Kit. Apoferritin containing less than 0.5 Fe per 24-mer was used in the ferroxidase assay. Apoferritin used in the Fe loading capacity experiment was prepared in the same way with 5–15 Fe per 24-mer.
 
-## Ferroxidase assay
+### Ferroxidase assay
 
 1 mM and 200 µM Fe(NH4)2(SO4)2 stock solutions were prepared in 0.1% (v/v) HCl anaerobically. Protein solutions with 20 µM FOC were diluted from ~10 mg/ml frozen stock in GF buffer (50 mM Tris-HCl, pH 8.0 and 150 mM NaCl) anaerobically. Ferroxidase activity was initiated by adding 450 μl protein to 50 μl of acidic Fe(NH4)2(SO4)2 at the final concentration of 100 µM and 20 µM in the air, respectively. The ferroxidase activity was measured by monitoring the Fe3+ formation which gives rise to the change of the absorbance at 315 nm (Bonomi et al., 1996). Absorbance at 315 nm was recorded every second over 1800 s using a quartz cuvette in a JASCO V-730 UV/VIS spectrophotometer (JASCO Inc., Easton, MD). In recombinantly coexpressed nanocompartments the ratio of EncFtn to Enc was assumed as 2 to 1, assuming each of the twelve pentameric vertices of the icosahedral encapsulin were occupied with decameric EncFtn. The data are presented as the mean of three technical replicates with error bars indicating one standard deviation from the mean. Proteins used here were from a single preparation.
 
-## Iron loading capacity of ferritins
+### Iron loading capacity of ferritins
 
 In order to determine the maximum iron loading capacity, around 8.5 µM proteins including decameric EncFtnsH, Encapsulin, EncFtn-Enc and apoferritin were loaded with various amount of acidic Fe(NH4)2(SO4)2 ranging from 0 to 1700 µM. Protein mixtures were incubated in room temperature for 3 hrs before desalting in Zebra spin desalting columns (7 kDa cut-off, Thermo Fisher Scientific, UK) to remove free iron ions. The protein concentration was determined using PierceMicroplate BCA assay kit (Thermo Fisher Scientific). The protein standard curve was plotted according to the manufacturer. The Fe content in the samples was determined using modified ferrozine assay (Riemer et al., 2004). Briefly speaking, 100 μl protein sample was mixed with 100 μl mixture of equal volume of 1.4 M HCl and 4.5% (w/v) KMnO4 and incubated at 60 °C for 2 hrs. 20 μl of the iron-detection reagent (6.5 mM ferrozine, 6.5 mM neocuproine, 2.5 M ammonium acetate, and 1 M ascorbic acid dissolved in H2O) was added to the cooled tubes. 30 min later, 200 μl of the solution was transferred into a well of 96-well plate and the absorbance at 562 nm was measured on the plate reader Spectramax M5 (Molecular Devices, UK). The standard curve was plotted using various concentrations of FeCl3 (in 10 mM HCl) diluted in the gel-filtration buffer. Three technical repeats were performed for both the ferrozine and microplate BCA assays. Samples analyzed by ICP-MS were prepared in the same way by mixing protein and ferrous ions and desalting. The proteins used in the Fe loading experiment came from a single preparation.
 
-## Peroxidase assay
+### Peroxidase assay
 
 The peroxidase activity of EncFtnsH was determined by measuring the oxidation of ortho-phenylenediamine (OP) by H2O2 Pesek et al. (2011). EncFtnsH decameric and monomeric fractions purified from MM were both used in the assay. Ortho-phenylenediamine was prepared as a 92.5 mM stock solution in 50 mM Tris-HCl (pH 8.0). 80, 70, 60, 50, 40, 30, 20 and 10 mM of OP were prepared by diluting the stock solution in the 50 mM Tris-HCl (pH 8.0). 100 μl of each diluted OP was added to a 96-well plate in 3 repeats. 1 μl of 32 µM protein was supplemented into each well to a final concentration of 160 nM, followed by the addition of 2 μl of 30% H2O2. After 15 min shaking in the dark, the reaction was stopped by adding 100 μl of 0.5 M H2SO4. The peroxidase activity was measured by monitoring the absorbance at 490 nm in the SpectraMax M5 Microplate Reader (Molecular Devices) (Pesek et al., 2011).
 
-## ICP-MS analysis
+### ICP-MS analysis
 
 Protein samples were diluted 50-fold into a solution of 2.5% HNO3 (Suprapur, Merck, UK) containing 20 µg/L Pt as internal standard. Matrix-matched elemental standards (containing analyte metal concentrations 0 – 1000 µg/L) were prepared by serial dilution from individual metal standard stocks (VWR) with identical solution compositions, including the internal standard. All standards and samples were analyzed by ICP-MS using a Thermo x-series instrument (Thermo Fisher Scientific) operating in collision cell mode (using 3.0 ml min-1 flow of 8% H2 in He as the collision gas). Isotopes 44Ca, 56Fe, 66Zn, 78Se, and 195Pt were monitored using the peak-jump method (100 sweeps, 25–30 ms dwell time on 5 channels per isotope, separated by 0.02 atomic mass units) in triplicate. The protein samples used in ICP-MS came from a single protein preparation.
 
-## Mass spectrometry analysis
+### Mass spectrometry analysis
 
 For native MS analysis, all protein samples were buffer exchanged into 100 mM ammonium acetate (pH 8.0; adjusted with dropwise addition of 1% ammonia solution) using Micro Biospin Chromatography Columns (Bio-Rad, UK) prior to analysis and the resulting protein samples were analyzed at a final concentration of ~5 µM (oligomer concentration). In order to obtain Fe-bound EncFtn, 100 µM or 300 µM of freshly prepared FeCl2 was added to apo-EncFtnsH (monomer peak) immediately prior to buffer exchange into 100 mM ammonium acetate (pH 8.0). Samples were analyzed on a quadrupole ion-mobility time of flight instrument (Synapt G2, Waters Corp., Manchester, UK), equipped with a nanomate nanoelectrospray infusion robot (Advion Biosciences, Ithaca, NY). Instrument parameters were tuned to preserve non-covalent protein complexes. After optimization, typical parameters were: nanoelectrospray voltage 1.54 kV; sample cone 50 V; extractor cone 0 V; trap collision voltage 4 V; source temperature 80°C; and source backing pressure 5.5 mbar. For improved mass resolution the sample cone was raised to 155 V. Ion mobility mass spectrometry (IM-MS) was performed using the travelling-wave mobility cell in the Synapt G2, employing nitrogen as the drift gas. Typically, the IMS wave velocity was set to 300 m/s; wave height to 15 V; and the IMS pressure was 1.8 mbar. All native MS experiments were performed on samples from two independent protein preparations. For collision cross section determination, IM-MS data was calibrated using denatured equine myoglobin and data was analyzed using Driftscope v2.5 and MassLynx v4.1 (Waters Corp., UK). Theoretical collision cross sections (CCS) were calculated from pdb files using IMPACT software v. 0.9.1 (Marklund, 2015). In order to obtain information on the topology of the EncFtnsH assembly, gas-phase dissociation of the Fe-associated EncFtnsH complex was achieved by increasing the sample cone and/or trap collision voltage prior to MS analysis.
 
-## SEC-MALLS
+### SEC-MALLS
 
 Size-exclusion chromatography (ÄKTA-Micro; GE Healthcare) coupled to UV, static light scattering and refractive index detection (Viscotec SEC-MALS 20 and Viscotec RI Detector:VE3580; Malvern Instruments, UK) were used to determine the molecular mass of fractions decamer and monomer of EncFtnsH in solution individually. Protein concentration was determined by measurement of absorbance at 280 nm and calculated using the extinction coefficient ε0.1%= 1.462 mg−1 ml-1 cm−1. 100 μl of 1.43 mgml-1 fractions of EncFtnsH decamer and 4.03 mg ml ﻿-1 fractions of EncFtnsH monomer were run individually on a Superdex 200 10/300 GL size-exclusion column pre-equilibrated in 50 mM Tris-HCl (pH 8.0), 150 mM NaCl at 22°C with a flow rate of 0.5 ml/min. Light scattering, refractive index (RI) and A280nm were analyzed by a homo-polymer model (OmniSEC software, v 5.1; Malvern Instruments) using the following parameters for fractions of decamer and monomer: the extinction coefficient (dA/dc) at 280 nm was 1.46 AU mg ml−1 and specific refractive index increment (dn/dc) was 0.185 ml g−1. The proteins analyzed by SEC-MALLS came from single protein preparation.
 
-## Metal binding analysis by PAGE
+### Metal binding analysis by PAGE
 
 Recombinant EncFtnsH fractions at 50 µM concentration were incubated with one molar equivalent of metal ions at room temperature for 2 hrs. Half of each sample was mixed with 5 x native loading buffer (65 mM Tris-HCl, pH 8.5, 20% glycerol and 0.01% bromophenol blue) and run on non-denaturing PAGE gels (10% acrylamide) and run in Tris/glycine buffer, 200 V, 4 °C for 50 min. The remaining samples were left for an additional three hours prior to SDS-PAGE (15% acrylamide) analysis. SDS-PAGE gels were run at room temperature at 200 V, room temperature for 50 min. Gels were stained with Coomassie Brilliant Blue R250 and scanned after de-staining in water. The proteins used in this experiment came from single protein preparation.
 
-## Analytical size-exclusion chromatography
+### Analytical size-exclusion chromatography
 
 For analysis of the multimeric state of EncFtn proteins by analytical size-exclusion gel-filtration chromatography (AGF) 25 μl of 90 µM protein was loaded into Superdex 200 PC 3.2/30 column (GE Healthcare) at 15 °C with GF buffer running at 0.05 ml/min and pressure limit 0.45 MPa. In order to use AGF to determine how metal ions influence the assembly of EncFtnsH, 90 µM EncFtnsH monomer fractions were mixed with equal molar concentrations of metal ion solutions including FeSO4 in 0.1% (v/v) HCl, Fe(NH4)2(SO4)2, FeCl3, CoCl2, calcium acetate (CaAc), ZnSO4 and MnCl2 at room temperature for 2 hrs prior to AGF analysis. Protein samples without metal titration were also analyzed as a control group. Both monomer and decamer fractions of EncFtnsH left at room temperature for 2 hrs, or overnight, were also analysed as controls to show the stability of the protein samples in the absence of additional metal ions. The AGF results have been repeated twice using two independent preparations of protein, of which only one representative trace is presented in the paper.
 
-## Accession codes and datasets
+### Accession codes and datasets
 
 Coordinates and structure factors for the structures presented in this paper have been deposited in the PDB under the following accession codes: EncFtnsH, 5DA5; EncFtnsH-E32A, 5L89; EncFtnsH-E62A, 5L8B; EncFtnsH-H65A, 5L8G (DOIs for X-ray diffraction image data are shown in Table 4). All MS datasets presented in this paper can be found, in the raw format at http://dx.doi.org/10.7488/ds/1449.

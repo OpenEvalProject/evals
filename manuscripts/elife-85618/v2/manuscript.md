@@ -19,20 +19,20 @@
 
 ### Affiliations
 
-1. https://ror.org/05vghhr25 Turku PET Centre, University of Turku and Turku University Hospital Turku Finland
-2. https://ror.org/00bq4rw46 Italian Hospital of Buenos Aires Buenos Aires Argentina
-3. https://ror.org/00qyh5r35 12 de Octubre University Hospital, Research Institute of Hospital 12 de Octubre (imas+12), Complutense University Madrid Spain
+1. Turku PET Centre, University of Turku and Turku University Hospital Turku Finland ([ROR:05vghhr25](https://ror.org/05vghhr25))
+2. Italian Hospital of Buenos Aires Buenos Aires Argentina ([ROR:00bq4rw46](https://ror.org/00bq4rw46))
+3. 12 de Octubre University Hospital, Research Institute of Hospital 12 de Octubre (imas+12), Complutense University Madrid Spain ([ROR:00qyh5r35](https://ror.org/00qyh5r35))
 4. Vélez Sarsfield Hospital Buenos Aires Argentina
 5. Hospital Municipal de Agudos Dr Leónidas Lucero Bahía Blanca Argentina
-6. https://ror.org/036b2ww28 Regional University Hospital of Málaga, Biomedical Research Institute of Málaga (IBIMA), University of Malaga Málaga Spain
-7. https://ror.org/05txkk980 Infanta Cristina University Hospital Madrid Spain
-8. https://ror.org/03prydq77 Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria
+6. Regional University Hospital of Málaga, Biomedical Research Institute of Málaga (IBIMA), University of Malaga Málaga Spain ([ROR:036b2ww28](https://ror.org/036b2ww28))
+7. Infanta Cristina University Hospital Madrid Spain ([ROR:05txkk980](https://ror.org/05txkk980))
+8. Division of Pharmacology & Toxicology, Department of Pharmaceutical Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 
 † Corresponding author
 
 ## Abstract
 
-The emergence of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measures for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission to intensive care units. There is an urgent need for easily implementable and clinically effective Early Warning Scores (EWSs) that can predict the risk of complications within the next 24–48 hr. Although EWSs have been used in the evaluation of COVID-19 patients, there are several clinical limitations to their use. Moreover, no models have been tested on geographically distinct populations or population groups with varying levels of immune protection. We developed and validated COVID-19 Early Warning Score (COEWS), an EWS that is automatically calculated solely from laboratory parameters that are widely available and affordable. We benchmarked COEWS against the widely used NEWS2. We also evaluated the predictive performance of vaccinated and unvaccinated patients. The variables of the COEWS predictive model were selected based on their predictive coefficients and on the wide availability of these laboratory variables. The final model included complete blood count, blood glucose, and oxygen saturation features. To make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature. The global score serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of mechanical ventilation or death within the next 48 hr. The discrimination in the external validation cohort was 0.743 (95% confidence interval [CI]: 0.703–0.784) for the COEWS score performed with coefficients and 0.700 (95% CI: 0.654–0.745) for the COEWS performed with scores. The area under the receiver operating characteristic curve (AUROC) was similar in vaccinated and unvaccinated patients. Additionally, we observed that the AUROC of the NEWS2 was 0.677 (95% CI: 0.601–0.752) in vaccinated patients and 0.648 (95% CI: 0.608–0.689) in unvaccinated patients. The COEWS score predicts death or MV within the next 48 hr based on routine and widely available laboratory measurements. The extensive external validation, its high performance, its ease of use, and its positive benchmark in comparison with the widely used NEWS2 position COEWS as a new reference tool for assisting clinical decisions and improving patient care in the upcoming pandemic waves. University of Vienna.
+Background:The emergence of new SARS-CoV-2 variants with significant immune-evasiveness, the relaxation of measures for reducing the number of infections, the waning of immune protection (particularly in high-risk population groups), and the low uptake of new vaccine boosters, forecast new waves of hospitalizations and admission to intensive care units. There is an urgent need for easily implementable and clinically effective Early Warning Scores (EWSs) that can predict the risk of complications within the next 24–48 hr. Although EWSs have been used in the evaluation of COVID-19 patients, there are several clinical limitations to their use. Moreover, no models have been tested on geographically distinct populations or population groups with varying levels of immune protection.Methods:We developed and validated COVID-19 Early Warning Score (COEWS), an EWS that is automatically calculated solely from laboratory parameters that are widely available and affordable. We benchmarked COEWS against the widely used NEWS2. We also evaluated the predictive performance of vaccinated and unvaccinated patients.Results:The variables of the COEWS predictive model were selected based on their predictive coefficients and on the wide availability of these laboratory variables. The final model included complete blood count, blood glucose, and oxygen saturation features. To make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature. The global score serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of mechanical ventilation or death within the next 48 hr.The discrimination in the external validation cohort was 0.743 (95% confidence interval [CI]: 0.703–0.784) for the COEWS score performed with coefficients and 0.700 (95% CI: 0.654–0.745) for the COEWS performed with scores. The area under the receiver operating characteristic curve (AUROC) was similar in vaccinated and unvaccinated patients. Additionally, we observed that the AUROC of the NEWS2 was 0.677 (95% CI: 0.601–0.752) in vaccinated patients and 0.648 (95% CI: 0.608–0.689) in unvaccinated patients.Conclusions:The COEWS score predicts death or MV within the next 48 hr based on routine and widely available laboratory measurements. The extensive external validation, its high performance, its ease of use, and its positive benchmark in comparison with the widely used NEWS2 position COEWS as a new reference tool for assisting clinical decisions and improving patient care in the upcoming pandemic waves.Funding:University of Vienna.
 
 ## Introduction
 
@@ -46,53 +46,301 @@ In this study, we developed and validated, in a multicontinental cohort, COVID-1
 
 ## Materials and methods
 
-## Source of data
+### Source of data
 
 For the development and validation of this predictive model, we used data from the Hospital 12 de Octubre (Madrid, Spain) and the Argentinian COVID-19 Network (Boietti et al., 2021; Casas-Rojo et al., 2020). These registries comprise patients hospitalized between January 2020 and March 2022, with demographic, clinical, and analytical data.
 
 The use of patient data in this study has received approval from the Clinical Research Ethics Committee of Hospital 12 de Octubre [reference 20/117]. Additionally, the Institutional Review Board of the Hospital Italiano de Buenos Aires approved the study for each participating site in the Argentinian COVID-19 Network (Approval Number: #5602). As the present study is a retrospective observational study, it does not involve any procedures or activities beyond the standard consultation and care provided to patients. It poses no additional risks to their health and incurs no extra costs for them or their healthcare coverage. Patient data will be assessed retrospectively through electronic medical records. Considering that this study involves minimal risk due to the handling of participant data, the corresponding ethics committees have granted an exemption from obtaining signed informed consent. This exemption is in accordance with Guideline 10: Modifications and Dispensations of Informed Consent outlined in the CIOMS 2019 guidelines.
 
-## Participants
+### Participants
 
 Patients hospitalized with a confirmed diagnosis of COVID-19 who received oxygen therapy were included. COVID infection was defined as a positive result of real-time reverse transcription-polymerase chain reaction for SARS-CoV-2 in nasopharyngeal swab specimens or sputum samples, also in the second and third waves, some patients were diagnosticated with the Panbio TM COVID-19 rapid test (Abbott) in the Spanish hospitals. We considered only the first hospitalization for COVID-19 for each patient during the study period. Patients were followed from hospital admission until death or hospital discharge.
 
-## Outcome and variables
+### Outcome and variables
 
 The aim of this study was the development of an EWS. Therefore, the outcome of the predictive model was death or mechanical ventilation (MV) in the next 48 hr. The potential predictors evaluated were: demographic data, admission vital signs (heart rate, temperature, systolic and diastolic blood pressure, and oxygen saturation), and blood test values (hemoglobin in g/dl, percentage lymphocytes, leukocytes in 10³/mm³, platelets in 10³/mm³, and glycemia mg/dl), vaccination status, and clinical variables that were present in all training and test cohorts. The percentage of missing values is listed in Table 1.
 
-## Missing data
+**Table 1.**
+ Demographic characteristics, with missing data for each variable for the training database.We also include the coefficients of each variable included in the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Values in training cohort</th>
+      <th>Missing, n (%)</th>
+      <th>Coefficient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex (female) – n (%)</td>
+      <td>3539 (47.1%)</td>
+      <td>0</td>
+      <td>0.067</td>
+    </tr>
+    <tr>
+      <td>Age in years – median (IQR)</td>
+      <td>62.5 (47.8–78.7)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Comorbidities</td>
+    </tr>
+    <tr>
+      <td>Cardiac insufficiency – n (%)</td>
+      <td>65 (0.8%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peripheral vascular disease – n (%)</td>
+      <td>365 (5.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Brain vascular disease – n (%)</td>
+      <td>332 (4.5%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dementia – n (%)</td>
+      <td>415 (5.5%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COPD – n (%)</td>
+      <td>592 (8.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asthma – n (%)</td>
+      <td>543 (7.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Diabetes – n (%)</td>
+      <td>1525 (20.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kidney disease – n (%)</td>
+      <td>81 (1.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Liver disease – n (%)</td>
+      <td>864 (11.5%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Solid tumor – n (%)</td>
+      <td>1312 (17.5%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HIV – n (%)</td>
+      <td>59 (0.7%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Active smoker – n (%)</td>
+      <td>521 (7.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Obesity – n (%)</td>
+      <td>1590 (21.0%)</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Clinical parameters at admission</td>
+    </tr>
+    <tr>
+      <td>Temperature – Md (IQR)</td>
+      <td>37.1 (36.5–37.9)</td>
+      <td>53 (0.71)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SBP– Md (IQR)</td>
+      <td>127 (113–142)</td>
+      <td>104 (1.39)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heart rate – Md (IQR)</td>
+      <td>93 (80–106)</td>
+      <td>76 (1.01)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Respiration rate – Md (IQR)</td>
+      <td>22 (18–28)</td>
+      <td>5103 (67.98)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>O2_saturation (%) – Md (IQR)</td>
+      <td>96 (93–98)</td>
+      <td>102 (1.36)</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td colspan="4">Laboratory parameters</td>
+    </tr>
+    <tr>
+      <td>Sodium (mmol/l) – Md (IQR)</td>
+      <td>137 (134–139)</td>
+      <td>264 (3.52)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Potassium (mmol/l) – Md (IQR)</td>
+      <td>4.12 (3.79–4.5)</td>
+      <td>272 (3.62)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glucose (mg/dl) – Md (IQR)</td>
+      <td>116 (101–142)</td>
+      <td>306 (4.08)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Leukocytes (×10³/mm³) – Md (IQR)</td>
+      <td>6.8 (5.1–9.3)</td>
+      <td>245 (3.26)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils (×10³/mm³) – Md (IQR)</td>
+      <td>4.9 (3.5–7.2)</td>
+      <td>245 (3.26)</td>
+      <td>0.068</td>
+    </tr>
+    <tr>
+      <td>Percentage of lymphocytes – Md (IQR)</td>
+      <td>15.6 (9.9–22.6)</td>
+      <td>245 (3.26)</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin (g/dl) – Md (IQR)</td>
+      <td>13.8 (12.4–15.1)</td>
+      <td>244 (3.26)</td>
+      <td>0.044</td>
+    </tr>
+    <tr>
+      <td>Platelets (×10³/mm³) – Md (IQR)</td>
+      <td>210 (161–272)</td>
+      <td>245 (3.26)</td>
+      <td>0.0006</td>
+    </tr>
+    <tr>
+      <td>Lactate (mmol/l) – Md (IQR)</td>
+      <td>1.5 (1.2–2.2)</td>
+      <td>7367 (98.14)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Creatinine (mg/dl) – Md (IQR)</td>
+      <td>0.9 (0.72–1.16)</td>
+      <td>342 (4.56)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LDH (U/l) – Md (IQR)</td>
+      <td>330 (266–419)</td>
+      <td>995 (13.2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GOT (U/l) – Md (IQR)</td>
+      <td>34 (25–51)</td>
+      <td>737 (9.82)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GPT (U/l) – Md (IQR)</td>
+      <td>27 (17–46)</td>
+      <td>453 (6.03)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bilirubine (mg/dl) – Md (IQR)</td>
+      <td>0.5 (0.3–0.7)</td>
+      <td>648 (8.63)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>aPTT – Md (IQR)</td>
+      <td>30 (28–33)</td>
+      <td>549 (7.31)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Prothrombin activity (%) – Md (IQR)</td>
+      <td>83 (74–93)</td>
+      <td>545 (7.26)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td></td>
+      <td></td>
+      <td>4.235</td>
+    </tr>
+  </tbody>
+</table>
+
+_Model calculation C = A0 + A1* × 1 + A2* × 2 +A3* × 3 + A4* × 4 + A5* × 5 + A6* × 6 + A7* × 7. Example 4.23588…+−0.05808…*7.5 +…−0.06734*1 = −0.280637. aPTT: Activated Partial Thromboplastin Time, COPD: Chronic Obstructive Pulmonary Disease, GOT: glutamic-oxaloacetic transaminase, GPT: Glutamic-Pyruvic Transaminase, HIV : Human Immunodeficiency Virus, IQR: Intercuartile range, LDH: Lactate Dehydrogenase, SBP: Systolic Blood Pressure._
+
+### Missing data
 
 The used databases had some level of missingness due to the medical overload during the COVID-19 pandemic. In the training and internal testing database, we used simple imputation with the median values of the training dataset. For the external validation, we consider this missing data as ‘Missing completely at random’ (MCAR) (without systematic differences between the missing values and the observed values, Sterne et al., 2009), Hence, we performed multiple imputations by the Chained Equations procedure. To reduce the sampling error due to the imputations, we set the number of 20 imputed datasets (White et al., 2011).
 
-## Sample size
+### Sample size
 
 To build a predictive model with approximately 10 estimated variables, we needed 10–20 outcome events per variable (Katz, 2011). We expected to include between 5 and 10 variables in the model, therefore we need at least 100–200 outcome events per database. Due to the fact that the number of outcomes (death and MV within 48 hr after hospital admission) in each database was higher than 200, we had enough sample size in the training and testing databases.
 
-## COEWS development
+### COEWS development
 
 The Spanish database was divided randomly into training (75%) and test (25%) datasets. COEWS was built using stable iterative variable selection (SIVS) (Mahmoudian et al., 2021) and linear regression with the least absolute shrinkage and selection operator (Lasso) regularization (Friedman et al., 2010). In model building, only the training cohort was used and models were built using 10-fold cross-validation. In the feature selection stage of SIVS, 100 models were built and for each model selected variables were recorded. To reduce the number of features to as few as possible (therefore, increasing the easiness of use of COEWS), we used the weighting function in SIVS (called variable importance scoring) with a threshold of 0.15. This method has been shown to be very efficient, especially when the ratio of positive and negative outcomes is imbalanced (Klén et al., 2019). Lasso models were built in R Development Core Team, 2010 (version 3.6.0) package glmnet (Friedman et al., 2010) (version 4.1–1). All predictions were blinded to the final clinical outcome. The Argentinian database was used for external validation.
 
-## Transformation of linear predictors to the score
+### Transformation of linear predictors to the score
 
 Based on the final linear Lasso model and clinical insights, the final COEWS score was created. The clinical insights was used to determine the normal range, which gives zero points in the COEWS score. The other scoring ranges with negative and positive points were determined using the coefficients of the final Lasso model by linear interpolation from the COEWS. Especially, the ranges per feature were defined by the magnitude of the corresponding coefficient, and larger absolute values of coefficients yielded shorter ranges.
 
-## Discrimination and calibration
+### Discrimination and calibration
 
 The performance of the developed models was evaluated using the area under the receiver operating characteristic curve (AUROC), and the model’s calibration was evaluated using the root mean square error. We also evaluate the calibration by comparing the prediction of the model with the observed proportion of the combined outcome, stratifying every patient according to the probability predicted by the model in deciles. We performed a graph with the average probability of the outcome predicted by the model (average of individual estimated probabilities) and the observed probability (proportion of nonattendance) within each decile stratum (Figure 1; Giunta et al., 2023).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85618/elife-85618-fig1-v2.jpg)
 
-**Figure 1.:** A) and calibration slopes for training and testing database (B).
-
 In order to account for the transformation of model coefficients into a score, we conducted additional evaluations to assess discrimination in each database using the score derived from the coefficients. Furthermore, we performed separate analyses for vaccinated and unvaccinated patients, as well as patients hospitalized before and after 2021, to investigate potential differences in predictive performance following changes in therapeutics. To determine the cutoff point for the analysis, we selected July 2021. This decision was based on the publication and implementation of the Recovery Trial indications, which introduced significant therapeutic changes during the pandemic (Horby et al., 2021). Lastly, we calculated the discrimination of the NEWS2 score to provide a comparative assessment with the COEWS score.
 
-## Role of the funding source
+### Role of the funding source
 
 The data collection for this article was supported by the Instituto de Salud Carlos III, the Ministry of Science and Innovation of Spain (COVID-19 COV20/00181) — co-financed by the European Development Regional Fund A way to achieve Europe and the Ministry of Health of Argentina (Becas Salud Investiga). The publication of this article was supported by the University of Vienna.
 
 ## Results
 
-## Participants
+### Participants
 
 Between January 2020 and February 2022, we included 15,903 hospital admissions of COVID-19 patients from the Spanish database (1009 patients) and the Argentinian database (5894 patients). The training database included 7507 patients and in the internal testing 2502 patients from the Hospital 12 de Octubre (Madrid, Spain). Of these, 471 (4.7%) were vaccinated with at least one COVID-19 vaccine dose (267 [2.7%] patients had a single dose, and 203 [2%] were fully vaccinated).
 
@@ -100,17 +348,226 @@ The external testing included 5894 patients from the Argentinian COVID-19 Networ
 
 The observed number of combined events (death and MV within 48 hr after admission) was 1477 (19.7%) in the training database, 452 (18.1%) in the test database, and 906 (15.4%) in the external validation database. In Table 1, we presented the demographic, laboratory, vital signs, and comorbidities of the training database.
 
-## COEWS development
+### COEWS development
 
 The variables of the COEWS predictive model were selected based on the coefficients but also based on the wide availability of these laboratory variables. Thus, the final model included features from the complete blood count, blood glucose, and oxygen saturation. We observed that the male sex, lower oxygen saturation, neutrophils, hemoglobin, platelets, lymphocytes, and glucose were positively correlated with death or MV in the next 48 hr. The coefficients of each variable included in the final model are presented in Table 1.
 
 In order to make COEWS more actionable in real clinical situations, we transformed the predictive coefficients of the COEWS model into individual scores for each selected feature (Table 2). The global score, obtained by summing the individual scores, serves as an easy-to-calculate measure indicating the risk of a patient developing the combined outcome of MV or death within the next 48 hr. We established the levels of risk in the final score based on the NEWS2 Scale: lower risk (less than 10%), moderate risk (10–20%), high risk (20– 30%), and critical risk (higher than 30%). Our aim was to categorize patients into different risk categories based on their likelihood of experiencing the combined outcome. To provide a comprehensive understanding of the outcome percentages for each risk level, we examined our cohort and found the following rates:
 
+**Table 2.**
+ Scores of the COVID-19 Early Warning Score (COEWS) predictive model. Green color means 0 points, yellow 1 point, ornge 2 points, and red 3 or more points.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>6</th>
+      <th>5</th>
+      <th>4</th>
+      <th>3</th>
+      <th>2</th>
+      <th>1</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th>6</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SpO2 (%)</td>
+      <td>&lt;85</td>
+      <td>85–86</td>
+      <td>87–88</td>
+      <td>89–90</td>
+      <td>91–92</td>
+      <td>93–95</td>
+      <td>&gt;95</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils (×10³/mm³)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;1.5</td>
+      <td>1.5–8.0</td>
+      <td>8.1–9.0</td>
+      <td>9.1–10.0</td>
+      <td>10.1–11.0</td>
+      <td>11.1–12.0</td>
+      <td>12.1–13.0</td>
+      <td>&gt;13</td>
+    </tr>
+    <tr>
+      <td>Hemoglobin (g/dl)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;9</td>
+      <td>10–11</td>
+      <td>12–17</td>
+      <td>18–19</td>
+      <td>&gt;19</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Platelets (×10³/mm³)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;150</td>
+      <td>150–400</td>
+      <td>&gt;400</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;8</td>
+      <td>8–20</td>
+      <td>&gt;20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glucose (mg/dl)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;90</td>
+      <td>90–140</td>
+      <td>141–187</td>
+      <td>188–234</td>
+      <td>235–280</td>
+      <td>&gt;280</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Male</td>
+      <td>Female</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="14">Global score</td>
+    </tr>
+    <tr>
+      <td colspan="14">Low risk 0–3</td>
+    </tr>
+    <tr>
+      <td colspan="14">Moderate risk 4–5</td>
+    </tr>
+    <tr>
+      <td colspan="14">High risk 6–7</td>
+    </tr>
+    <tr>
+      <td colspan="14">Critical risk &gt;7</td>
+    </tr>
+  </tbody>
+</table>
+
 These percentages illustrate the increasing likelihood of the outcome as the risk level escalates.
 
-## Calibration and discrimination
+### Calibration and discrimination
 
 The AUROC calculated for the training, testing, and external validation of the databases is presented in Table 3. The discrimination in the external validation cohort was 0.743 (0.703–0.784) for the COEWS score performed with coefficients and 0.700 (0.654–0.745) for the COEWS performed with the scores. Of note, the AUROC of vaccinated and non-vaccinated patients was similar. Additionally, we observed that the AUROC of the NEWS2 was 0.677 (0.601–0.752) in vaccinated patients and 0.648 (0.608–0.689) in unvaccinated patients (Table 3).
+
+**Table 3.**
+ Area under the receiver operating characteristic curve (AUROC) of the COVID-19 Early Warning Score (COEWS) predictive model calculated with the coefficients and with the score in vaccinated and unvaccinated patinetes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">AUROC (95% CI)</th>
+      <th colspan="2">Vaccinated</th>
+      <th colspan="2">Non-vaccinated</th>
+    </tr>
+    <tr>
+      <th>EWS LASSO</th>
+      <th>EWS score</th>
+      <th>EWS LASSO</th>
+      <th>EWS score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Training (Spanish data 75%)</td>
+      <td>0.753 (0.656–0.851)</td>
+      <td>0.748 (0.659–0.838)</td>
+      <td>0.721 (0.706–0.736)</td>
+      <td>0.723 (0.709–0.738)</td>
+    </tr>
+    <tr>
+      <td>Internal validation (Spanish data 25%)</td>
+      <td>0.712 (0.565–0.859)</td>
+      <td>0.684 (0.513–0.855)</td>
+      <td>0.704 (0.677–0.732)</td>
+      <td>0.711 (0.685–0.738)</td>
+    </tr>
+    <tr>
+      <td>External validation (Argentinian data)</td>
+      <td>0.743 (0.703–0.784)</td>
+      <td>0.700 (0.654–0.745)</td>
+      <td>0.767 (0.749–0.785)</td>
+      <td>0.741 (0.723–0.759)</td>
+    </tr>
+    <tr>
+      <td>NEWS2 in all databases</td>
+      <td colspan="2">0.677 (0.601–0.752)</td>
+      <td colspan="2">0.648 (0.608–0.689)</td>
+    </tr>
+    <tr>
+      <td>Patients hospitalized after July 2021</td>
+      <td>0.718 (0.569–0.867)</td>
+      <td>0.682 (0.508–0.856)</td>
+      <td>0.677 (0.612–0.742)</td>
+      <td>0.705 (0.646–0.764)</td>
+    </tr>
+  </tbody>
+</table>
 
 To account for changes in therapeutics, we performed an additional validation using patients hospitalized after July 2021. The model demonstrated similar discrimination ability, with an AUROC of 0.718 (0.569–0.867) for the COEWS score performed with coefficients in unvaccinated and 0.677 (0.612–0.742) for the COEWS score performed with coefficients in vaccinated (Table 3).
 

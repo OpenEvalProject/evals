@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.50848.001 Two crucial questions in neuroscience are how neurons establish individual identity in the developing nervous system and why only specific neuron subtypes are vulnerable to neurodegenerative diseases. In the central nervous system, spinal motor neurons serve as one of the best-characterized cell types for addressing these two questions. In this review, we dissect these questions by evaluating the emerging role of regulatory microRNAs in motor neuron generation in developing embryos and their potential contributions to neurodegenerative diseases such as spinal muscular atrophy (SMA). Given recent promising results from novel microRNA-based medicines, we discuss the potential applications of microRNAs for clinical assessments of SMA disease progression and treatment.
+Two crucial questions in neuroscience are how neurons establish individual identity in the developing nervous system and why only specific neuron subtypes are vulnerable to neurodegenerative diseases. In the central nervous system, spinal motor neurons serve as one of the best-characterized cell types for addressing these two questions. In this review, we dissect these questions by evaluating the emerging role of regulatory microRNAs in motor neuron generation in developing embryos and their potential contributions to neurodegenerative diseases such as spinal muscular atrophy (SMA). Given recent promising results from novel microRNA-based medicines, we discuss the potential applications of microRNAs for clinical assessments of SMA disease progression and treatment.
 
 ## Introduction
 
@@ -48,7 +48,7 @@ The patterning of the developing CNS relies on precise control of spatial and te
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50848/elife-50848-fig3-v1.jpg)
 
-**Figure 3.:** (A) In early embryonic stages (E8.5~E9), Nkx6.1 and Olig2 are co-expressed in a broad ventral domain spanning the prospective p3, pMN and part of the p2 domains. Subsequently, Nkx2.2 induced by sustained Shh signaling represses Olig2 in the p3 domain and miR-17–3p induced by Irx3 silences Olig2 in the p2 domain, forming the normal p2, pMN, and p3 progenitor domains. After MN generation, miR-218 acts as a downstream effector of the Isl1-Lhx3 complex to establish and maintain MN identity. Among MN subtypes, miR-9 seems to be involved in regulating MMC/LMC balance, whereas miR-17∼92 directly targets components of E3 ubiquitin ligases to impact subcellular localization of PTEN through monoubiquitination in the LMC-MNs. (B and C) Hoxa5 transcription in progenitor cells fluctuates, and translation of fluctuating transcripts at this time propagates noise, leading to strong stochastic variability. Two critical coherent forward loops involving miR-27 are capable of preventing precocious Hoxa5 protein expression, thereby maintaining the critically sharp boundary between Hoxa5 and Hoxc8 protein expression in embryonic spinal cords. Dicer nerualΔ: Sox1Cre, pMN: motor neuron progenitors, VZ: ventricular zone, IZ: intermediate zone, MZ: mantle zone. (+/-; Dicer floxedD) MN-miRNA working models: miR-218 is expressed in mature MNs to inhibit alternative neighboring genes. The potential miR-218-Slit-Robo autoregulatory loop is depicted. Subsequently, numbers of LMC motor neurons are reduced whereas MMC neurons are spared in Dicer  and MNΔmiR-17 ~92  spinal cords. Whereas surviving caudal brachial LMC motor neurons in MNΔDicer  mutants correctly express Hoxc6 and Hoxc8 factors, expression of motor pool markers (i.e. Pea3, Scip, and Nkx6.1) is significantly eroded, resulting in near absence of defined motor pool subtype identity. The miRNA candidates needed to maintain motor pool identity have yet to be identified. (MNΔE) Illustration of how miR-17∼92 controls PTEN subcellular localization in developing LMC-MNs. This miRNA-mediated regulation modulates both target expression and target subcellular localization, providing LMC-MNs with an intricate defensive mechanism that controls their survival.
+**Figure 3.:** (A) In early embryonic stages (E8.5~E9), Nkx6.1 and Olig2 are co-expressed in a broad ventral domain spanning the prospective p3, pMN and part of the p2 domains. Subsequently, Nkx2.2 induced by sustained Shh signaling represses Olig2 in the p3 domain and miR-17–3p induced by Irx3 silences Olig2 in the p2 domain, forming the normal p2, pMN, and p3 progenitor domains. After MN generation, miR-218 acts as a downstream effector of the Isl1-Lhx3 complex to establish and maintain MN identity. Among MN subtypes, miR-9 seems to be involved in regulating MMC/LMC balance, whereas miR-17∼92 directly targets components of E3 ubiquitin ligases to impact subcellular localization of PTEN through monoubiquitination in the LMC-MNs. (B and C) Hoxa5 transcription in progenitor cells fluctuates, and translation of fluctuating transcripts at this time propagates noise, leading to strong stochastic variability. Two critical coherent forward loops involving miR-27 are capable of preventing precocious Hoxa5 protein expression, thereby maintaining the critically sharp boundary between Hoxa5 and Hoxc8 protein expression in embryonic spinal cords. Dicer nerualΔ: Sox1Cre+/-; Dicer floxed, pMN: motor neuron progenitors, VZ: ventricular zone, IZ: intermediate zone, MZ: mantle zone. (D) MN-miRNA working models: miR-218 is expressed in mature MNs to inhibit alternative neighboring genes. The potential miR-218-Slit-Robo autoregulatory loop is depicted. Subsequently, numbers of LMC motor neurons are reduced whereas MMC neurons are spared in Dicer MNΔ and miR-17 ~92 MNΔ spinal cords. Whereas surviving caudal brachial LMC motor neurons in Dicer MNΔ mutants correctly express Hoxc6 and Hoxc8 factors, expression of motor pool markers (i.e. Pea3, Scip, and Nkx6.1) is significantly eroded, resulting in near absence of defined motor pool subtype identity. The miRNA candidates needed to maintain motor pool identity have yet to be identified. (E) Illustration of how miR-17∼92 controls PTEN subcellular localization in developing LMC-MNs. This miRNA-mediated regulation modulates both target expression and target subcellular localization, providing LMC-MNs with an intricate defensive mechanism that controls their survival.
 
 The developing spinal cord is an ideal system to uncover such subtle defects, as both the spatial and temporal boundaries that control cell specification in the ventral spinal cord, including for its spinal MNs, are well characterized (Figure 2). Therefore, miRNAs have been shown to play critical roles in the spinal cord, from neuronal progenitor patterning to cell fate specification and survival (Amin et al., 2015; Chen et al., 2011; Chen and Wichterle, 2012; Haramati et al., 2010; Hoye et al., 2017; Li et al., 2017; Thiebes et al., 2015; Tung et al., 2015). During DV patterning in the ventral spinal cord, the bistable switches of transcriptional cross-repressive genetic loops are particularly critical for resolving cell identity at progenitor domain boundaries (Balaskas et al., 2012; Jukam and Desplan, 2010). Interestingly, lineage tracing experiments in which Cre recombinase was knocked into the domain-specific patterning genes Olig1, Olig2 or Dbx1 (Chen et al., 2011; Dessaud et al., 2010; Dessaud et al., 2007; Wu et al., 2006) revealed that each of these factors is transiently expressed in a broad ventral spinal region spanning three or more neighboring progenitor domains. Thus, somewhat different to the transitional view of the static cross-repressive loop mentioned above (Figure 2A), the state of the cross-repressive genetic loops has to be malleable at the early developmental stage, and the initial broad expression of domain-specific determinants is then refined during development (Figure 3A). Repression of Olig2 in non-motor neuron progenitors appears to be partly achieved by temporal adaptation of spinal cells to Sonic hedgehog (Shh) signal. Clearance of Olig2 from the p3 domain (the most ventral neuronal progenitor domain) depends on induction of the repressor Nkx2.2 in response to sustained Shh signaling, whereas more passive loss of Olig2 expression in the p3 domain is proposed to be due to developmental de-sensitization of progenitors to the Shh signal (Dessaud et al., 2010; Dessaud et al., 2007; Wu et al., 2006). In contrast, the p2 domain (the third neuronal progenitor domain from dorsal to ventral) utilizes a TF-miRNA loop to consolidate its plastic state. By disrupting miRNA biogenesis during simulated DV patterning of differentiating ES cells both in cellulo and in vivo, it was revealed that miR-17–3p, a member of the miR-17 ~92 cluster, is required to silence transient Olig2 expression in p2 progenitors (Chen et al., 2011) (Figure 3A). Thus, miRNA-mediated regulation of transcriptional programs might play a more general role in the refinement and positioning of spatial boundaries in developing neural tissue.
 
@@ -58,9 +58,177 @@ In addition to the role of miRNAs during neural progenitor patterning, miRNAs al
 
 Do miRNAs also play a role in postmitotic MN subtype diversification? Postmitotic MNs are diversified along the RC axis of the spinal cord to innervate corresponding target muscles. This process primarily relies on a regulatory network of Hox-TFs that translate neuronal identity into patterns of connectivity. Foxp1 is a crucial determinant of MN diversification and connectivity, interpreting the Hox regulatory network to control the formation of a topographic neural map. Although Hox/Foxp1 TFs have been recognized as principal regulators of subtype specification, a role for posttranscriptional regulation is also recognized. For instance, miR-9 is transiently expressed in Foxp1on LMC regions. Overexpression or knockdown of miR-9 alters MN subtypes, switches columnar identities, and changes axonal innervations in developing chick spinal cords. miR-9 modifies spinal columnar organization by specifically regulating Foxp1 protein levels, which in turn determine distinct MN subtypes (Otaegi et al., 2011) (Figure 3A). Additionally, deletion of the enzyme Dicer from all MNs using Olig2-Cre (Dicer MNΔ ) revealed a preferential loss of many limb- and sympathetic ganglia-innervating spinal MNs (Chen and Wichterle, 2012). Furthermore, this disruption also led to defects in motor pool identity specification, yet the miRNA candidates to maintain motor pool identity have yet to be unveiled (Figure 3D). These results indicate that miRNAs are an integral part of the genetic program controlling MN survival and acquisition of subtype-specific properties. Subsequent study uncovered that the miR-17 ~92 cluster is highly enriched in LMC-MNs. Furthermore, conditional MN miR-17 ~92 deletion (mi-17 ~92 MNΔ ) resulted in selective cell death of LMC-MNs. Mechanistically, mir-17 ~92 not only suppresses PTEN expression, but also independently attenuates accumulation of nuclear PTEN, with this latter being a more potent apoptosis stimulator (Tung et al., 2015) (Figure 3E). Tellingly, reduced miR-17 ~92 is accompanied by elevated nuclear PTEN in the spinal MNs of presymptomatic SOD1G93A mice, that is the most common mouse strain used as an ALS disease model. Selective dysregulation of the miR-17 ~92/nuclear PTEN axis in degenerating SOD1G93A LMC-MNs has been demonstrated in a double-transgenic embryonic stem cell system and, moreover, was recapitulated in human SOD1+/L144F induced pluripotent stem cell (iPSC)-derived MNs. Furthermore, overexpression of miR-17 ~92 significantly rescues human SOD1+/L144F MNs, and intrathecal delivery of scAAV9 [self-complementary adeno-associated viral serotype 9]-miR-17 ~ 92 improves motor deficits and survival in SOD1G93A mice (Tung et al., 2019). Therefore, miR-17 ~92 either controls LMC-MN survival during embryonic development or confers MN subtype differential resistance to ALS-associated degeneration. Thus, similar to TFs, miRNAs contribute to neuronal progenitor patterning, cell fate specification, and long-term survival during MN differentiation (Table 1 and Figure 3).
 
+**Table 1.**
+ Proposed functions of microRNAs during spinal motor neuron (sMN) development
+
+
+<table>
+  <thead>
+    <tr>
+      <th>miRNA</th>
+      <th>Proposed roles in sMNs</th>
+      <th>Targets/interaction</th>
+      <th>Organism/cell models</th>
+      <th>Methods of genetic analyses</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>miR-9</td>
+      <td>miR-9 promotes the switch from early-born to late-born motor neuron populations as well as MMC/LMC subtypes</td>
+      <td>Foxp1</td>
+      <td>Chicken</td>
+      <td>transient decoy of miR-9 and overexpression of miR-9 in ovo</td>
+      <td>(Luxenhofer et al., 2014; Otaegi et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>miR-17 ~ 92</td>
+      <td>1. miR-17–3p carves p2/pMN boundary at progenitor stage 2. miR-17 ~ 92 governs LMC-MN survival during development and degeneration in ALS</td>
+      <td>Olig2 PTEN/Ndfip1/Nedd4-2</td>
+      <td>Mouse Mouse/human induced pluripotent stem cells</td>
+      <td>CAGGS:CreER; Dicer floxed and miR-17 ~ 92-/- embryos Olig2:Cre; miR-17 ~ 92 floxed embryos and miR-17 ~ 92 overexpression in human ALS-iPSC derived MNs</td>
+      <td>(Chen et al., 2011) (Tung et al., 2015; Tung et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>miR-27</td>
+      <td>miR-27 filters Hox temporal transcription noise to confer boundary formation in the spinal cord</td>
+      <td>Hoxa5</td>
+      <td>Mouse and chicken</td>
+      <td>Sox1:Cre; Dicer floxed, transient decoy of miR-27 in ovo, and mir-23 ~ 27 ~ 24-/- embryos</td>
+      <td>(Li et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>miR-196</td>
+      <td>miR-196 confines the rostrocaudal axis in the neural tube</td>
+      <td>Hoxb8</td>
+      <td>Chicken</td>
+      <td>Transient decoy of miR-196 in ovo</td>
+      <td>(Asli and Kessel, 2010)</td>
+    </tr>
+    <tr>
+      <td>miR-218</td>
+      <td>miR-218 defines a neuronal gene network that is selectively tuned down in MNs to prevent neuromuscular failure and neurodegeneration.</td>
+      <td>Progenitor genes (Sox21, Tead1, etc.) Neighboring genes (Slc6a1, Bcl11a, Foxp2, etc.)</td>
+      <td>Mouse and chicken</td>
+      <td>Transient decoy of miR-218 in ovo and miR-218-/- embryos</td>
+      <td>(Amin et al., 2015; Thiebes et al., 2015)</td>
+    </tr>
+  </tbody>
+</table>
+
 ## MicroRNAs during motor neuron degeneration in SMA
 
 Given by the versatile roles of miRNAs in regulating MN differentiation mentioned above, it is not surprising that miRNA dysregulation has been increasingly linked to MN-associated degeneration diseases, such as ALS and SMA. ALS-linked miRNAs have been intensively studied and elegantly reviewed elsewhere (Eitan and Hornstein, 2016; Emde et al., 2015). However, the role of miRNAs in SMA is just beginning to emerge. A detailed list of miRNAs implicated in SMA has been reviewed recently (Magri et al., 2018), which we summarize in Table 2. Here, we focus our discussion on some of the most recent studies linking specific miRNAs (i.e., miR-2, miR-146a, and miR-23a) to SMA pathogenesis and the potential of miRNAs as biomarkers and therapeutic targets.
+
+**Table 2.**
+ Proposed spinal muscular atrophy (SMA)-microRNA relationships
+
+
+<table>
+  <thead>
+    <tr>
+      <th>miRNA</th>
+      <th>Role in MN disease</th>
+      <th>Targets</th>
+      <th>Organism/cell models and expression profiles</th>
+      <th>Findings and proposed mechanism of SMA pathogenesis</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>miR-2</td>
+      <td>Neuronal development and function; correct NMJ functioning</td>
+      <td>CHRM2, m2R</td>
+      <td>C. elegans model, SMA mouse model. Decreased</td>
+      <td>Alters NMJ function</td>
+      <td>(O'Hern et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>miR-9 (1)</td>
+      <td>MN dendritic outgrowth and synaptic function</td>
+      <td>Neurofilament heavy subunit (NEFH), REST, Map1b, MCPIP1</td>
+      <td>Mouse, patient fibroblasts, patient serum. Decreased in spinal cord, but increased in skeletal muscle</td>
+      <td>Dysregulated expression in MNs differentiated from ESCs. Regulation of MN subtype determination (FOXP1). miR-9 can delay neurite outgrowth in vitro and impair radial neuronal migration in embryonic mouse neocortex in vivo.</td>
+      <td>(Catapano et al., 2016; Haramati et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>miR-23a</td>
+      <td>Neuroprotective properties; regulate axonal development; suppress skeletal muscle atrophy</td>
+      <td>Atrogin1, MuRF1 (maybe, no direct target experiment was verified by luciferase assay)</td>
+      <td>Patient induced pluripotent stem cells, SMA mouse model. Decreased</td>
+      <td>miR-23a can prevent the astrocyte-conditioned media-induced MN loss in vitro. In mice model, enhanced miR-23a expression via virus vector increased MN soma size and muscle fiber area, and reduced NMJ defects</td>
+      <td>(Kaifer et al., 2019)</td>
+    </tr>
+    <tr>
+      <td>miR-100–5p</td>
+      <td>Abnormal proliferation of neural progenitors; aberrant cell cycle</td>
+      <td>Potentially insulin-like growth factor one receptor (IGF1R)</td>
+      <td>SMN∆7 mouse neural stem cells from spinal cord. Decreased</td>
+      <td>Decreased miR-100–5p in SMAΔ7 mice neural stem cells induces high IGF1R, excessive proliferation of neural progenitors, and prevents appropriate exit of the cell cycle.</td>
+      <td>(Luchetti et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>miR-132 (possible)</td>
+      <td>Neuron dendritic outgrowth and synaptic plasticity; neovascularization, may cause ischemic pathology in both skeletal muscle and spinal cord of SMA model</td>
+      <td>Dysregulated expression due to TDP43 interaction with Dicer (amyotrophic lateral sclerosis data), p250GAP</td>
+      <td>SMA mice, patient serum. Decreased in spinal cord, but increased in skeletal muscle</td>
+      <td>Expression is dysregulated in TDP-43-deficient amyotrophic lateral sclerosis (ALS). Neuronal morphology and cognition in ALS. miR-132 can delay neurite outgrowth in vitro and impair radial neuronal migration in embryonic mouse neocortex in vivo. Involved in synaptic plasticity. Process of neovascularization. Recent reports have highlighted vascular defects in both skeletal muscle and spinal cord of SMA patients.</td>
+      <td>(Catapano et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>miR-146</td>
+      <td>MN loss caused by astrocyte-mediated pathology through NFκB signaling</td>
+      <td>GDNF, NOTCH2, GATA transcription factors</td>
+      <td>Patient induced pluripotent stem cells. Increased</td>
+      <td>miR-146 levels are influenced both directly and indirectly by SMN1 levels. SMN re-expression decreases miR-146a levels nearly to control levels. The NFκB pathway is an inducer of miR-146a.</td>
+      <td>(Sison et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>miR-183</td>
+      <td>Protein synthesis; axonal outgrowth</td>
+      <td>mTOR pathway</td>
+      <td>Mouse, cortical neurons, patient fibroblasts. Increased</td>
+      <td>Increased miR-183 and reduced local axonal translation of mTOR in SMN-deficient neurons.</td>
+      <td>(Kye et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>miR-206 (2) (muscle-specific)</td>
+      <td>Myofiber formation; satellite cell differentiation; neuroprotective role in re-innervation of muscle endplates after acute nerve injury</td>
+      <td>Axis of HDAC4-FGFBP1, Pola1, BDNF</td>
+      <td>SMA mouse, patient serum. Increased in both spinal cord and skeletal muscle</td>
+      <td>Endogenously increased miR-206, with HDAC4 protein reduction and increased FGFBP1 mRNA, activates neuroprotective mechanism in muscle cells to increase re-innervation of muscle endplates.</td>
+      <td>(Catapano et al., 2016; Valsecchi et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>miR-335–5p</td>
+      <td>Control of differentiation or self-renewal of mouse ESCs</td>
+      <td>MEST, OCT4, RB1</td>
+      <td>SMN∆7 mouse neural stem cells, human induced pluripotent stem cells. Decreased</td>
+      <td>Possible epigenetic regulation through methylation to affect cell differentiation.</td>
+      <td>(Luchetti et al., 2015; Murdocca et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>miR-375</td>
+      <td>Neurogenesis and protects neurons from apoptosis in response to DNA damage.</td>
+      <td>P53, PAX6, CCND2</td>
+      <td>Human neural progenitor cell cultures. Decreased</td>
+      <td>MNs from an SMA patient have shown reduced levels of miR-375, elevated p53 protein levels, and higher susceptibility to DNA damage-induced apoptosis.</td>
+      <td>(Bhinge et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>miR-431</td>
+      <td>Regulation of motor neuron axon neurite outgrowth</td>
+      <td>Chondrolectin (Chodl): a type one transmembrane protein and member of the c-type lectin domain-containing family</td>
+      <td>Mouse MN culture, patient fibroblasts/induced pluripotent stem cells. Increased</td>
+      <td>Increased miR-431 regulates motor neuron neurite length by targeting chondrolectin involved in motor neuron axon outgrowth.</td>
+      <td>(Wertz et al., 2016)</td>
+    </tr>
+  </tbody>
+</table>
+
+_1 miR-9/9* is another microRNA potentially implicated in motor neuron disease. It has been linked to the loss of spinal motor neurons that leads to SMA.2 Since miR-206 is required for efficient regeneration of neuromuscular synapses after acute nerve injury, this scenario probably accounts for its salutary effects in SMA._
 
 SMA is an autosomal recessive neurodegenerative disease characterized by devastating muscular atrophy attributable to progressive spinal MN degeneration. Although SMA is a relatively rare disease, with an estimated worldwide incidence of one in 6,000 ~ 10,000 newborns, it is notable that SMA is the second most common autosomal recessive disease after cystic fibrosis and is the most common monogenic defect leading to infant mortality (Lunn and Wang, 2008). SMA is caused by reduced levels of the 38 kDa Survival Motor Neuron (SMN) protein due to deletion or mutation of the Survival of Motor Neuron 1 (SMN1) gene. In humans, SMN protein is actually encoded by two genes: SMN1 and highly homologous SMN2, which essentially differs by one nucleotide (C→T) in exon 7. This critical difference results in preferential exclusion of exon seven from most SMN2 transcripts, termed SMN△7. As a consequence, SMN2 generates ~10% of full-length (FL) SMN mRNAs and their product-functional SMN proteins (Burghes and Beattie, 2009). As these FL-SMN2 transcripts can partially compensate for loss of SMN1, it is reasoned that the FL-SMN2 transcript copy number may determine phenotypic severity in SMA patients. Therefore, SMA is caused by loss of the SMN1 gene and disease manifestation is partially reflected by the degree of SMN2 gene compensation (Burghes and Beattie, 2009). However, recent studies have indicated that additional modifiers might also be involved in modulating SMA clinical severity (Crawford et al., 2012).
 
@@ -73,6 +241,75 @@ Despite this evidence of a role for miRNAs in SMA disease progression, it remain
 ![Figure 4.](https://cdn.elifesciences.org/articles/50848/elife-50848-fig4-v1.jpg)
 
 **Figure 4.:** During the first step of miRNA biogenesis in the nucleus, pri-miRNA is processed by a microprocessor complex comprising Drosha and DiGeorge syndrome chromosomal region 8 (DGCR8) to produce hairpin-shaped pre-miRNA. Pre-miRNA is then exported to the cytoplasm by exportin-5 and further cleaved by Dicer. During nuclear and cytoplasmic processing of primary and precursor levels of miRNA, several RBPs—including TAR DNA-Binding Protein 43 (TDP-43), fused sarcoma/translocated in liposarcoma (FUS/TLS), KH-type splicing regulatory protein (KSRP), and Fragile X mental retardation protein (FMRP)— are known to link the SMN complex to the Drosha/DGRC8 complex and/or Dicer. Subsequently, the miRNA duplex is unwound into a single strand that is then loaded into argonaute proteins (AGO) to form the RNA-induced silencing complex (RISC). The miRNA-RISC complex plays a crucial role in post-transcriptional repression of target mRNA expression. Notably, during maturation and action of functional miRNAs either in the cytoplasm or nucleus, the SMN complex is known to interact with several RBPs including FMRP, HuD, and insulin-like growth factor 2 mRNA-binding protein 1 (IMP1). However, it remains to be established if SMN-RBP is involved in miRNA-mediated silencing.
+
+**Table 3.**
+ Proposed SMN-associated RNA-binding proteins involved in microRNA pathways.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SMN-associated RBPs</th>
+      <th>RBP interaction assay</th>
+      <th>General functions in posttranscriptional regulation of mRNA</th>
+      <th>Proposed roles in miRNA metabolism/processing</th>
+      <th>Neuronal modeling mechanism</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TAR DNA-binding protein-43 (TDP-43)a,b</td>
+      <td>FLAG-Drosha or FLAG-TDP-43 interacts in nuclear extracts from HEK293T cells. Partial colocalization of TDP-43 and SMN in MNs.</td>
+      <td>Transcriptional regulation, pre-mRNA splicing, mRNA transport and translation</td>
+      <td>1. Integrating with the Dicer and Drosha complexes 2. Regulating pre-miRNA biogenesis</td>
+      <td>Neuron differentiation, neuronal plasticity, synapse formation, neurite outgrowth</td>
+      <td>(Kawahara and Mieda-Sato, 2012; Wang et al., 2002)</td>
+    </tr>
+    <tr>
+      <td>Fused sarcoma/translocated in liposarcoma (FUS/TLS)a,c</td>
+      <td>IP and GST pulldown SMN in HeLa nuclear extracts and mouse neuroblastoma (N2a) using FUS antibody.</td>
+      <td>Transcriptional regulation, pre-mRNA splicing, mRNA transport and translation</td>
+      <td>Recruiting the Drosha complex</td>
+      <td>Synapse formation, neuronal plasticity, neurite outgrowth, neuronal differentiation and proliferation</td>
+      <td>(Morlando et al., 2012; Sun et al., 2015; Yamazaki et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Fragile X mental retardation protein (FMRP)</td>
+      <td>IP and GST pulldown SMN complex in human neuroblastoma SH-SY5Y cells using FLAG-tagged FMRP antibody. IP antibodies specific to human FMRP were used to pull down Dicer and associated miRNAs in an EBV-transformed human B cell line. IP was performed from total HeLa cell lysates with a monoclonal antibody to eIF2C2.</td>
+      <td>mRNA stability, translation inhibition</td>
+      <td>Integrating with AGO and Dicer in RNA-induced silencing complex (RISC)d</td>
+      <td>Synapse formation, neuronal plasticity, neurite outgrowth, neuronal differentiation and proliferation</td>
+      <td>(Edbauer et al., 2010; Jin et al., 2004; Piazzon et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>KH-type splicing regulatory protein (KSRP)</td>
+      <td>Endogenous KSRP was IP from N2a cells with SMN Tudor domain. KSRP and SMN colocalize in neuronal processes foci</td>
+      <td>mRNA stability, translation inhibition</td>
+      <td>Interacting with Drosha and Dicer complexes to regulate miRNA maturation and mRNA decay</td>
+      <td>KSRP is expressed in the nervous system in both neurons and glia and plays a role in control of neuronal mRNA stability and rate of axonal outgrowth</td>
+      <td>(Amirouche et al., 2014; Tadesse et al., 2008; Trabucchi et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>HuD (ELAV-like protein 4)</td>
+      <td>SMN and the neuron-specific RBP HuD interact biochemically in cultured primary cortical neurons, MN1-cells, cultured mouse MNs, rat brain extracts. Genetic evidence from zebrafish embryos support that the interaction between SMN and HuD is critical for MN development.</td>
+      <td>mRNA stability, transport, translation, mTOR pathway</td>
+      <td>Interacting with RISCd to regulate miRNA function</td>
+      <td>Axon development, maintenance, and plasticity</td>
+      <td>(Fukao et al., 2014; Hao le et al., 2017; Loffreda et al., 2015; Sosanya et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>IMP1 (IGF2BP1; ZBP1), insulin-like growth factor 2 mRNA-binding protein 1</td>
+      <td>IP and GST pulldown SMN in brain lysates extracts using IMP1 antibody.</td>
+      <td>Promotes mRNA stability by preventing miRNA-mediated silencing</td>
+      <td>Interacting with AGO2 to regulate miRNA function</td>
+      <td>Axon development</td>
+      <td>(Fallini et al., 2014; Gardiner et al., 2015) (Degrauwe et al., 2016)</td>
+    </tr>
+  </tbody>
+</table>
+
+_a. TDP-43 and FUS/TLS proteins bind to pre-mRNA molecules and determine their fates by regulating splicing, transport, stability and translation.b. The RNA-binding protein, TDP43, biochemically interacts with the miRNA processing enzyme Drosha, raising the possibility that TDP-43 may play a role in miRNA processing.c. FUS/TLS promotes biogenesis of specific miRNAs, including miR-132, miR-134, and miR-9.d. Additional proteins associated with RISC include MOV10 and Hu-AntigenR._
 
 A series of studies has shown dysregulation of specific miRNAs in SMA, and several of these studies have proposed potential links between aberrant miRNA expression and SMA pathophysiology in a diverse array of SMA animal models and patient samples, including neurons from nematodes, neurons and muscles from mice, as well as fibroblasts and serum from human patients (Table 2). Furthermore, transcriptome profiling has uncovered a number of miRNAs associated with MN survival, synapse formation, ER stress, and ribosomal RNA binding in models of SMA (Kye and Gonçalves, 2014; Vanderweyde et al., 2013; Viswambharan et al., 2017). It remains under debate if dysregulated miRNAs and the corresponding miRNA-mediated target responses are cell-context dependent (i.e., specifically in MNs or in all neurons of the spinal cord), given that SMN is expressed ubiquitously and compromised expression of SMN may selectively affect miRNA homeostasis in different tissues (Magri et al., 2018). In this regard, a very recent study aimed to identify miRNAs that are differentially regulated in SMA from iPSC-derived MNs (Kaifer et al., 2019). In that study, Kaifer et al. only identified a subset of 16 miRNAs whose expression is significantly reduced more than 2-fold in SMA MNs when compared to control MNs. However, using a scAAV9 viral vector to reintroduce mir-23a into the Smn2B/- SMA mouse model increased MN size, reduced neuromuscular junction (NMJ) pathology, and extended survival. Although the detailed mechanisms underlying how miR-23a-mediated target pathways lead to SMA pathology have yet to be characterized, these findings suggest that only a cohort of miRNAs might cause the MN vulnerability in SMA and identification of those miRNA culprits and their targets could provide a new treatment strategy for SMA.
 

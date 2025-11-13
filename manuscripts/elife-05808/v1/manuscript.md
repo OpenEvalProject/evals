@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.05808.001 The great demand for long-wavelength and high signal-to-noise Ca 2+ indicators has led us to develop CaRuby-Nano, a new functionalizable red calcium indicator with nanomolar affinity for use in cell biology and neuroscience research. In addition, we generated CaRuby-Nano dextran conjugates and an AM-ester variant for bulk loading of tissue. We tested the new indicator using in vitro and in vivo experiments demonstrating the high sensitivity of CaRuby-Nano as well as its power in dual color imaging experiments. DOI: http://dx.doi.org/10.7554/eLife.05808.001
+The great demand for long-wavelength and high signal-to-noise Ca2+ indicators has led us to develop CaRuby-Nano, a new functionalizable red calcium indicator with nanomolar affinity for use in cell biology and neuroscience research. In addition, we generated CaRuby-Nano dextran conjugates and an AM-ester variant for bulk loading of tissue. We tested the new indicator using in vitro and in vivo experiments demonstrating the high sensitivity of CaRuby-Nano as well as its power in dual color imaging experiments.
 
 ## Introduction
 
@@ -35,53 +35,43 @@ We recently introduced a family of red emitting calcium indicators based on X-Rh
 
 ## Results
 
-To increase the affinity of CaRuby, we modified the structure of the probe (
+To increase the affinity of CaRuby, we modified the structure of the probe (Figure 1A), focusing on the Ca2+ chelating BAPTA moiety, as increasing the electron density of BAPTA lowers its KD for calcium (Tsien, 1980). We introduced an oxygen atom on one of the aromatic rings of BAPTA by a SNAr reaction. This oxygen also serves as a link for the azido side arm, which was repositioned in the new CaRuby variant (Figure 1—figure supplement 1). Additionally, the fluorophore, which is commonly placed para to the nitrogen of the BAPTA, has an affinity-lowering effect due to its electron withdrawing nature and was therefore placed at a meta position in order to reduce its effect on the ligating nitrogen. These modifications resulted in a CaRuby variant with sub-micromolar affinity (‘CaRuby-Nano’). In cuvette calibration experiments CaRuby-Nano was found to have a KD of 258 ± 8 nM, with a 50-fold (±2) increase of fluorescence on binding [Ca2+] (Figure 1B–C) and a maximum quantum yield of 0.45 (Figure 1—figure supplement 2,3). In addition to being suitable for single photon excitation, CaRuby-Nano also exhibits effective two-photon excitation over a large wavelength band (Figure 1—figure supplement 4).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-v1.jpg)
 
-**Figure 1.:** (A) Structure of CaRuby-Nano. Note the oxygen substituent and the positioning of the fluorophore-BAPTA bond. (B) [Ca2+]-dependent change in CaRuby-Nano fluorescence ([Ca2+]free: 0 nM, 17 nM, 38 nM, 65 nM, 100 nM, 150 nM, 225 nM, 351 nM, 602 nM, 1.35 µM, 39 µM). (C) The titration curve corresponding to the spectra in (B) using the same color code. (D–F): Climbing fiber evoked dendritic calcium signals in Purkinje cells in vitro. (D) Purkinje cell filled with 300 µM CaRuby-Nano dextran, with region of interest indicated by the white rectangle (scale bar = 20 µm). (E) Region of interest with points of interest indicated. Note that many spines can be readily distinguished (white arrow). Points 1–3 and 4–6 are on different spiny branchlets while points 7 and 8 are background (scale bar = 5 µm). (F) Ca2+ transients following climbing fiber activation recorded at 2.8 kHz (traces averaged over 26 trials and then averaged over the indicated spine numbers).DOI: http://dx.doi.org/10.7554/eLife.05808.003
+**Figure 1.:** (A) Structure of CaRuby-Nano. Note the oxygen substituent and the positioning of the fluorophore-BAPTA bond. (B) [Ca2+]-dependent change in CaRuby-Nano fluorescence ([Ca2+]free: 0 nM, 17 nM, 38 nM, 65 nM, 100 nM, 150 nM, 225 nM, 351 nM, 602 nM, 1.35 µM, 39 µM). (C) The titration curve corresponding to the spectra in (B) using the same color code. (D–F): Climbing fiber evoked dendritic calcium signals in Purkinje cells in vitro. (D) Purkinje cell filled with 300 µM CaRuby-Nano dextran, with region of interest indicated by the white rectangle (scale bar = 20 µm). (E) Region of interest with points of interest indicated. Note that many spines can be readily distinguished (white arrow). Points 1–3 and 4–6 are on different spiny branchlets while points 7 and 8 are background (scale bar = 5 µm). (F) Ca2+ transients following climbing fiber activation recorded at 2.8 kHz (traces averaged over 26 trials and then averaged over the indicated spine numbers).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.05808.004
-
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-figsupp2-v1.jpg)
-
-**Figure 1—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.05808.005
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** DOI: http://dx.doi.org/10.7554/eLife.05808.006
-
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-figsupp4-v1.jpg)
 
-**Figure 1—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.05808.007
-
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig1-figsupp5-v1.jpg)
-
-**Figure 1—figure supplement 5.:** DOI: http://dx.doi.org/10.7554/eLife.05808.008
 
 For verification of the new probe in biological tissue we used conjugates with 1.5 kD and 6 kD dextrans, which were obtained via click chemistry. As expected, this conjugation had only a small effect on the affinity of the indicator, increasing the KD from 258 nM in the free salt to 295 nM in the 6 kD dextran conjugate (Figure 1—figure supplement 5).
 
 We first tested if CaRuby-Nano performs comparably to commonly used green emitting [Ca2+] probes. For this, Purkinje cells in acute cerebellar brain slices were filled with CaRuby-Nano (1.5 kD dextran) via a patch-clamp microelectrode (Figure 1D). Climbing fiber stimulation evoked calcium signals were recorded from multiple spines (range: 4 to 14) at acquisition rates between 2.2 and 5.0 kHz (Figure 1E,F) using random access two-photon microscopy (Otsu et al., 2008). The rising phase time course (0.55 ms ± 0.13 ms; sigmoidal fit; n = 59 spines from 7 cells) was not significantly different from that found for Fluo-5F (0.40 ± 0.09 ms, n = 36 spines from 4 cells, p = 0.37) under the same conditions, suggesting that CaRuby-Nano has binding kinetics comparable to established small molecule Ca2+ indicators. These fast kinetics point to a high sensitivity of CaRuby-Nano for small and fast changes in [Ca2+], such as neuronal action potentials (Otsu et al., 2014).
 
-Thus, we next tested the sensitivity of CaRuby-Nano using in vivo patch-clamp recordings from neocortical layer 2/3 pyramidal neurons in anesthetized mice with simultaneous two-photon [Ca
+Thus, we next tested the sensitivity of CaRuby-Nano using in vivo patch-clamp recordings from neocortical layer 2/3 pyramidal neurons in anesthetized mice with simultaneous two-photon [Ca2+] imaging (Svoboda et al., 1997) (Figure 2A). We found that using CaRuby-Nano (6 kD dextran) even single spikes resulted in reliable, easily detected fluorescence transients (mean dR/R0 = 0.52 ± 0.19, n = 6 cells; Figure 2B). For increasing spike numbers the dR/R0 vs spike number relation quickly turns sublinear and saturates as expected for high affinity indicators (Figure 2C). Taken together these experiments demonstrate that CaRuby-Nano is a calcium indicator with a signal quality comparable to previously used high-affinity green emitting probes. Importantly, it is well suited for the detection of small [Ca2+] transients, setting it apart from the previous CaRuby versions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig2-v1.jpg)
 
-**Figure 2.:** (A) Measurement configuration (left) and maximum intensity projection of pyramidal neuron filled with 100 µM Alexa Fluor 488 and 200 µM CaRuby-Nano dextran (right, at rest the fluorescence is dominated by the green dye). The red line indicates region imaged in line scan. Scale bar: 20 µm. (B) Single trial calcium signals evoked by increasing number of spikes. The corresponding membrane voltage traces are shown below. Fluorescence traces are aligned to spike onset and color-coded to match the number of APs. (C) The peak amplitudes (red) and the area under the curve (blue) of the fluorescence trace were plotted against the number of action potentials. While the area increases linearly, the peak amplitude saturates. The shaded regions indicate the corresponding standard deviations.DOI: http://dx.doi.org/10.7554/eLife.05808.009
+**Figure 2.:** (A) Measurement configuration (left) and maximum intensity projection of pyramidal neuron filled with 100 µM Alexa Fluor 488 and 200 µM CaRuby-Nano dextran (right, at rest the fluorescence is dominated by the green dye). The red line indicates region imaged in line scan. Scale bar: 20 µm. (B) Single trial calcium signals evoked by increasing number of spikes. The corresponding membrane voltage traces are shown below. Fluorescence traces are aligned to spike onset and color-coded to match the number of APs. (C) The peak amplitudes (red) and the area under the curve (blue) of the fluorescence trace were plotted against the number of action potentials. While the area increases linearly, the peak amplitude saturates. The shaded regions indicate the corresponding standard deviations.
 
-Having verified the suitability of CaRuby-Nano for single cell imaging experiments in vitro and in vivo, we now set out to test CaRuby-Nano for imaging neuronal network activity when applying sensory stimulation. In the past decade calcium population imaging has commonly been performed using bulk loading (
+Having verified the suitability of CaRuby-Nano for single cell imaging experiments in vitro and in vivo, we now set out to test CaRuby-Nano for imaging neuronal network activity when applying sensory stimulation. In the past decade calcium population imaging has commonly been performed using bulk loading (Stosiek et al., 2003; Ohki et al., 2005) of calcium indicators in the AM-ester form (Tsien, 1981). We thus synthesized an AM-ester of CaRuby-Nano and used it to load cerebellar neurons in vivo (Figure 3A). We performed a series of three experiments. In all cases we found labeling identical to that commonly found in experiments using Oregon Green-488 BAPTA-1 AM (OGB-1 AM) to load cerebellar tissue in vivo (Figure 3B) (Sullivan et al., 2005; Ozden et al., 2009; Schultz et al., 2009). In all experiments fluorescence traces extracted from identified Purkinje cell dendrites (Figure 3C) showed clear complex spike activity with a good signal-to-noise ratio (Figure 3D,F). Both spontaneous activity and sensory evoked responses were again comparable to signals detected in experiments using OGB-1 AM (Sullivan et al., 2005; Ozden et al., 2009; Schultz et al., 2009). These results indicate that CaRuby-Nano AM is a powerful addition to the optophysiological toolbox.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig3-v1.jpg)
 
-**Figure 3.:** (A) Configuration of AM-ester injection and imaging. (B) Resulting staining of tissue 60 min after injection of indicator. Purkinje cells can be seen as vertical stripes with occasional brighter spots (corresponding to dendrites; scale bar = 20 µm). (C) Active Purkinje cell dendrites identified using a spatial PCA/ICA algorithm (Ozden et al., 2009). (D) Fluorescence traces from the identified dendrites, using the same color code as in (C). The timing of the sensory stimulus (foot shock) is indicated by the underlying grey bars. (E) Stimulus triggered averages of 20 stimulus presentations. Note that all cells except for the third (orange) show a stimulus-locked response.DOI: http://dx.doi.org/10.7554/eLife.05808.010
+**Figure 3.:** (A) Configuration of AM-ester injection and imaging. (B) Resulting staining of tissue 60 min after injection of indicator. Purkinje cells can be seen as vertical stripes with occasional brighter spots (corresponding to dendrites; scale bar = 20 µm). (C) Active Purkinje cell dendrites identified using a spatial PCA/ICA algorithm (Ozden et al., 2009). (D) Fluorescence traces from the identified dendrites, using the same color code as in (C). The timing of the sensory stimulus (foot shock) is indicated by the underlying grey bars. (E) Stimulus triggered averages of 20 stimulus presentations. Note that all cells except for the third (orange) show a stimulus-locked response.
 
-To demonstrate the full power of CaRuby-Nano, we made use of the strong two-photon excitation spectral overlap with eGFP to conduct a set of experiments which were not possible previously: simultaneous imaging of glutamate release onto Purkinje cells using iGluSnFR (a single-wavelength extracellular glutamate indicator constructed from the bacterial glutamate sensor Gltl and circularly permutated GFP [
+To demonstrate the full power of CaRuby-Nano, we made use of the strong two-photon excitation spectral overlap with eGFP to conduct a set of experiments which were not possible previously: simultaneous imaging of glutamate release onto Purkinje cells using iGluSnFR (a single-wavelength extracellular glutamate indicator constructed from the bacterial glutamate sensor Gltl and circularly permutated GFP [Marvin et al., 2013]) and the resulting post-synaptic [Ca2+] increase (using CaRuby-Nano). Visually identified Purkinje cells showing iGluSnFR expression (7–9 days after viral transfection) were filled with CaRuby-Nano via patch-clamp recording (6 kD dextran; Figure 4A). Activation of the glutamatergic climbing fiber input evoked clear fluorescence transients in both color channels (Figure 4B). Glutamate signals were confined to distinct subsections of the dendritic tree (i.e., limited to sites of synaptic glutamate release), whereas the resulting [Ca2+] transients were global, with similar amplitudes throughout different regions of the dendritic tree (Figure 4C) (Lev-Ram et al., 1992). The differential spatial distribution of the signals confirms that the two indicators can be spectrally isolated.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) Combined imaging of [glutamate] and [Ca2+] in vitro (A) A Purkinje cell expressing iGluSnFR was filled with 200 µM CaRuby-Nano dextran. The image shows the basal fluorescence of CaRuby-Nano (scale bar = 5 µm). (B) Double pulse stimulation of the climbing fiber triggers spatially distinct patterns of glutamate release and Ca2+ influx (maximum dF/F0 images; the inset at the top shows the two evoked complex spikes). Note the breaks between regions showing iGluSnFR activation (indicated by white arrows) (C) Fluorescence traces for CaRuby-Nano (red) and iGluSnFR (green) following single pulse climbing fiber stimulation (top inset). Traces were extracted from the corresponding regions outlined in white in (B). Note the absence of a fluorescent transient for iGluSnFR in the ‘Ca2+ only’ region. (D–F) Odor-evoked calcium responses in olfactory bulb glomeruli in vivo. (D) Juxtaglomerular neurons and mitral cell dendritic tufts expressing YFP demarcate glomeruli in a Kv3.1-eYFP mouse (Metzger et al, 2002). (E) Olfactory sensory neuron glutamatergic terminals, labeled with CaRuby-Nano dextran, clearly filled the inner boundaries of most glomeruli. (F) A 3 s application of 30% isoamyl acetate reliably triggered presynaptic calcium responses in several glomeruli.DOI: http://dx.doi.org/10.7554/eLife.05808.011
+**Figure 4.:** (A–C) Combined imaging of [glutamate] and [Ca2+] in vitro (A) A Purkinje cell expressing iGluSnFR was filled with 200 µM CaRuby-Nano dextran. The image shows the basal fluorescence of CaRuby-Nano (scale bar = 5 µm). (B) Double pulse stimulation of the climbing fiber triggers spatially distinct patterns of glutamate release and Ca2+ influx (maximum dF/F0 images; the inset at the top shows the two evoked complex spikes). Note the breaks between regions showing iGluSnFR activation (indicated by white arrows) (C) Fluorescence traces for CaRuby-Nano (red) and iGluSnFR (green) following single pulse climbing fiber stimulation (top inset). Traces were extracted from the corresponding regions outlined in white in (B). Note the absence of a fluorescent transient for iGluSnFR in the ‘Ca2+ only’ region. (D–F) Odor-evoked calcium responses in olfactory bulb glomeruli in vivo. (D) Juxtaglomerular neurons and mitral cell dendritic tufts expressing YFP demarcate glomeruli in a Kv3.1-eYFP mouse (Metzger et al, 2002). (E) Olfactory sensory neuron glutamatergic terminals, labeled with CaRuby-Nano dextran, clearly filled the inner boundaries of most glomeruli. (F) A 3 s application of 30% isoamyl acetate reliably triggered presynaptic calcium responses in several glomeruli.
 
 To demonstrate that dual color imaging is also possible in vivo we used CaRuby-Nano (6 kD dextran) to report presynaptic activity in anesthetized Kv3.1-eYFP adult mice (Metzger et al., 2002). In the olfactory bulb of these mice, mitral and tufted cells, as well as a population of periglomerular neurons, strongly express eYFP and their somata and processes clearly demarcate the external glomerular boundaries (Figure 4D). Olfactory sensory neuron (OSN) terminals, labeled with CaRuby-Nano, filled the inner glomerular boundaries (Figure 4E). In single glomeruli (n = 8 animals) we could record presynaptic calcium responses with excellent signal to noise ratio. Figure 4F shows a typical example in which presynaptic calcium responses were selectively evoked by odor presentation in a subset of glomeruli. These responses adapted strongly at this high odorant concentration, as reported previously (Lecoq et al., 2009). Taken together, these last two experiments demonstrate the potential of two-channel functional imaging—both in vitro and in vivo—with the red emission and high sensitivity of CaRuby-Nano being an ideal match for numerous other indicators emitting in the green-yellow spectral band.
 
@@ -93,21 +83,19 @@ CaRuby-Nano's sensitivity and potential for spectral multiplexing allows sophist
 
 ## Materials and methods
 
-## General chemical methods
+### General chemical methods
 
 All the solvents were of analytical grade. Chemicals were purchased from commercial sources. 1H-NMR and 13C-NMR were measured on a Bruker Avance III-300 MHz spectrometer (Bruker Biospin, The Woodlands, TX, USA) with chemical shifts reported in ppm (TMS as internal standard). Mass spectra were measured on a Focus GC/DSQ II spectrometer (ThermoScientific, Waltham, MA, USA) for IC and an API 3000 spectrometer (Applied Biosystems, PE Sciex) for ES. All pH measurements were made with a Mettler Toledo pH meter. Fluorescence spectra were recorded on a JASCO FP-8300 spectrofluorometer (JASCO, Easton, MD, USA). Absorption spectra were determined on a VARIAN CARY 300 Bio UV-Visible spectrophotometer. All measurements were done at a temperature of 25°C. The purity of the dyes were checked by RP-HPLC C-18, elutant: ACN 0.1% TFA/Water 0.1% TFA, method: 20/80 to 100/0 within 20 min then 100/0 for 10 min detection at λAbs = 254 nm. The apparent dissociation constant for calcium (KD Ca2+) was measured with a calcium calibration buffer kit from Invitrogen (Lifetechnologies, USA). All mass spectra, NMR spectra and chromatograms are included as supplemental data.
 
-## Design of CaRuby-Nano from the first generation CaRubies
+### Design of CaRuby-Nano from the first generation CaRubies
 
 In order to develop a high affinity CaRuby, three modifications were carried out based on the first generation CaRubies. First, an oxygen atom was introduced on one of the BAPTA's cycles in order to electronically enrich the latter. Then, this oxygen atom served as an anchor to a spacer terminated by an azide function for further functionalizations either by click chemistry or by reducing it into an amine for coupling with for example, a carboxylic acid. Finally, the fluorophore moiety, an extended rhodamine which is positively charged and therefore has an electron withdrawing effect, was moved from the para position of the aniline to the meta position. As expected, these modifications lead to a significant increase of affinity towards calcium, yielding a CaRuby with a dissociation constant of 258 ± 8 nM.
 
-## Synthesis of CaRuby-Nano
+### Synthesis of CaRuby-Nano
 
-The synthesis pathway is displayed in
+The synthesis pathway is displayed in Figure 5 along with the compound numbering. The NMR and mass spectra for both intermediate compounds and final products are contained in Supplementary file 1.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05808/elife-05808-fig5-v1.jpg)
-
-**Figure 5.:** DOI: http://dx.doi.org/10.7554/eLife.05808.012
 
 To a solution of de 5-fluoro-2-nitrophenol (14.90 g, 94.84 mmol) in DMF (75 ml) were added dibromoethane (40.90 ml, 472.2 mmol, 5 eq) and K2CO3 (26.30 g, 189.7 mmol, 2 eq), the mixture was allowed to stir at 70°C for 2 hr. The solvents were evaporated and the product was extracted with EtOAc washed with water (three times) and brine (two times). The organic phase was dried over MgSO4, filtered and evaporated to reach a volume of 200 ml. The symmetric dinitro compound crystallizes first and was filtered off. The filtrate was then allowed to crystallize to obtain 20.12 g of 1 (80%) as a yellow powder. 1H-NMR (300 MHz, DMSO-d6): δ 8.04 (dd, Ja-b = 9.1 Hz, Ja-F = 6.1 Hz, 1H, Ha), 7.37 (dd, Jc-F = 11.0 Hz, Jc-b = 2.6 Hz, 1H, Hc), 7.02 (ddd, Jb-a = 9.1, Jb-F = 7.8 Hz, Jb-c = 2.6 Hz, 1H, Hb), 4.56–4.53 (m, 2H, CH2O), 3.84−3.81 (m, 2H, CH2Br). 13C-NMR (75 MHz, DMSO-d6): δ 164.82 (d, 1JF-C = 251 Hz, CF), 152.81(d, 3JC-F = 12 Hz, CO), 136.17 (d, 4JF-C = 3 Hz, CNO2), 127.62 (d, 3JF-C = 11 Hz, Ca), 108.01 (d, 2JF-C = 23 Hz, Cb), 103.45 (d, 2JF-C = 27 Hz, Cc), 69.78 (CH2O), 30.39 (CH2Br). MS (CI), calculated for C8H11BrFN2O3 [M + NH4]+ 280.9, found 281.0.
 
@@ -131,7 +119,7 @@ To a solution of 8 (100 mg, 0.090 mmol) in methanol (6 ml) were added, KOH (504 
 
 To a solution of CaRuby-Nano (50 mg, ∼50 µmol) in chloroform were added bromomethyl acetate (80 µl, 500 µmol, 1 eq) and NEt3 (60 µl, 400 µmol, 8 eq). The solution was protected from light and allowed to stir at room temperature overnight. The reaction was monitored by TLC (DCM/MeOH, 9/1). The solvents were evaporated and the crude was purified by column chromatography on silica gel (gradient of 100% DCM to 9/1 DCM/Methanol) to obtain 30 mg of CaRuby-Nano AM esters (∼45%) as a purple solid after lyophilisation (dioxane/water, 1/1). Rf = 0.45 (DCM/MeOH, 9/1). MS (ES+), calcd for C65H76N7O20 [M]+ 1274.5, found 1274.5. HRMS (ES+), calcd for C65H76N7O20 [M]+ 1274.5140, found 1274.5128.
 
-## Synthesis of dextran conjugates
+### Synthesis of dextran conjugates
 
 Dextran 6000 MW (Sigma–Aldrich, ref: 31388) and dextran 1500 MW (Sigma–Aldrich, ref: 31394) were propargylated as described by Nielsen et al. (2010). The 1H-NMR showed that the functionalized dextrans were propargylated once by unit.
 
@@ -139,25 +127,25 @@ Final MW Dextran 6000: ∼9800 g.mol−1.
 
 Final MW Dextran 1500 : ∼2400 g.mol−1.
 
-## Conjugation of dextran 6000
+#### Conjugation of dextran 6000
 
 To a solution of propargylated dextran 6000 (30 mg, ∼3 µmol) in water (3 ml) was added 9 (8 mg, 8 µmol, 2.6 eq) in methanol (1 ml) and an heterogeneous solution of CuSO4·5H2O (4 mg, 16 µmol, 5.3 eq) and sodium ascorbate (4 mg, 20 µmol, 6.6 eq) in water (500 µl). The solution was allowed to stir in the dark at room temperature overnight. The solvents were evaporated and the crude was dissolved in 1 ml of EDTA solution (0.1 M) and passed through a G-25 column to give 24 mg of CaRu-Dextran 6000 conjugate (∼60% yield).
 
-## Conjugation of dextran 1500
+#### Conjugation of dextran 1500
 
 To a solution of propargylated dextran 1500 (30 mg, ∼12.5 µmol) in DMF (1 ml) was added 9 (4.5 mg, 4.5 µmol, 0.3 eq) in DMF (200 µl) and a heterogeneous solution of CuSO4·5H2O (4 mg, 16 µmol, 1.3 eq) and sodium ascorbate (4 mg, 20 µmol, 1.6 eq) in water (100 µl). The solution was allowed to stir in the dark at 50°C overnight. The solvents were evaporated and the crude was dissolved in 1 ml of EDTA solution (0.1 M) and passed through a G-25 column to give 20 mg of CaRu-Dextran 1500 conjugate (∼58% yield).
 
-## Animals
+### Animals
 
 All procedures were approved by the local ethical review committee and performed under license from the UK Home Office in accordance with the Animals (Scientific Procedures) Act 1986, and in accordance with the Institut National de la Santé et de la Recherche Médicale (INSERM) Animal Care and Use Committee Guidelines and with Centre National de la Recherche Scientifique (CNRS) animal experimentation guidelines and European laws and policies, as applicable.
 
-## Slicing
+### Slicing
 
 Parasagittal cerebellar slices (200 μm) were made using standard techniques (Davie et al., 2006) from C57BL6/J mice (Harlan, UK) at postnatal days 25–29. Artificial CSF (ACSF) for both slicing and recording contained the following (in mM): 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 25 glucose, 1 MgCl2, and 2 CaCl2, and was bubbled with 5% carbon dioxide, 95% oxygen. Slices were continuously superfused with ACSF during the experiment.
 
 For high speed imaging experiments, acute 260 µm thick slices were obtained from the cerebellar vermis of P60 CD1 mice and superfused with ACSF, as previously described (Dugue et al., 2009).
 
-## Electrophysiology and imaging in cerebellum and neocortex
+### Electrophysiology and imaging in cerebellum and neocortex
 
 Full frame and linescan two-photon imaging was performed using microscopes optimized for in vitro (Prairie Technologies, now Bruker Nano Surfaces, USA) or in vivo (MOM, Sutter, Novato, CA, USA) experiments. Two photon excitation was provided by a pulsed Ti:Sa laser (MaiTai HP, Spectra-Physics, Santa Clara, CA, USA), tuned to a central wavelength of 890–920 nm. The microscopes were controlled by ScanImage 3.5 and 3.7.1 (Pologruto et al., 2003) (now Vidrio Technologies, Arlington, VA, USA).
 
@@ -167,18 +155,18 @@ Patch-clamp pipettes were filled with an internal solution containing (in mM): K
 
 Climbing fiber stimulation-evoked transient [Ca2+] changes in Purkinje cell spines were recorded at high acquisition rate (>2 kHz) by two-photon random-access microscopy, a technique based on the use of acousto-optic deflectors (AODs), which enable selective scanning of defined points (Otsu et al., 2008). Purkinje cells were recorded in current-clamp mode, using 2–3 MΩ patch pipettes containing 300 μM CaRuby-Nano dextran. Recordings were obtained by use of a Multiclamp 700B (Molecular Devices). Following the dialysis of CaRuby-Nano, Purkinje cells in slices were imaged under a 25× Leica water immersion objective (HCX IRAPO L 25×/0.95, Leica Microsystems, Wetzlar, Germany). Two-photon excitation was produced by a pulsed Ti:Sa laser (Chameleon Vision Plus, Coherent, Santa Clara, CA, USA) coupled into the transmitted light pathway of the microscope by a dichroic filter (740dcsx, Chroma) and tuned to a central wavelength of 890 nm. A custom-made user interface based on National Instrument cards programmed under Labview (both National Instruments, Austin, TX, USA) was used to operate the AODs and coordinate the scanning protocols and signal acquisition. A multifunction card (NI-PCI-MIO 16 E-4) was used to pass all the triggers necessary to synchronize the imaging and the electrophysiology and to control the piezo-electric device that moves the objective in Z. Fluorescence photons were detected by cooled AsGaP photomultipliers (H7421-40, Hamamatsu, Hamamatsu, Japan) discriminated and counted on a fast digital card.
 
-## Virus injection
+### Virus injection
 
 Young (P19) C57BL6/J mice were anesthetized using isoflurane, an incision was made into the scalp and a small (∼0.5 mm) craniotomy was performed over lobule V of the cerebellar vermis. A wide bore (∼50 µm) micropipette containing viral suspension (AAV1.hSyn.iGluSnFr.WPRE.SV40, University of Pennsylvania Vector Core) was inserted through the craniotomy and carefully lowered 1.0 mm into the brain. Using application of low pressure 400–800 nl viral suspension were slowly injected (10–20 min). After the injection further 5–10 min were waited before retraction of the injection pipette. The scalp was glued and sutured and the mouse left to recover. At least 7 days incubation time were allowed prior to further experiments.
 
-## In vivo imaging of olfactory sensory neuron terminals
+### In vivo imaging of olfactory sensory neuron terminals
 
 Kv3.1-eYFP mice (Metzger et al., 2002) (8–10 week-old) were anesthetized with an intraperitoneal injection of ketamine (100 mg/kg) and xylazine (10 mg/kg). CaRuby-Nano dextran (6 kDa) was dissolved 2.5% wt/vol in a solution of aCSF (in mM: 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 1 MgCl2, 2 CaCl2 and 25 glucose) with 0.2% Triton X-100 (Sigma–Aldrich). 8 µl of this solution was injected in the mouse naris, and mice were left on their backs to recover from anesthesia (protocol adapted from [Wachowiak and Cohen, 2001; Lecoq et al., 2009]). 7 days later, an acute craniotomy was performed over the dorsal olfactory bulb and the brain stabilized with 3.5% agar for imaging. To activate olfactory sensory neurons (OSNs), odors were applied in a 1 ml/min flux of filtered, humidified air supplemented with 30% oxygen. eYFP and CaRuby-Nano fluorescence was collected in two separate channels (‘green’ and ‘red’, respectively) of a custom-built two-photon laser scanning microscope, with the femtosecond pulsed excitation beam set to 910 nm.
 
-## In vivo bulk loading and imaging
+### In vivo bulk loading and imaging
 
 Adult C57BL6 mice (6–9 weeks) were anesthetized with isoflurane, supplemented with 1 mg/kg chlorprothixene. A 1.5–2 mm craniotomy was performed over cerebellar lobule V. Care was taken to leave the dura mater intact. CaRuby-Nano-AM was prepared and injected using standard methods (Stosiek et al., 2003; Sullivan et al., 2005). A 50 µg aliquot was dissolved in 20% Pluronic-127 in DMSO (Invitrogen) and then diluted 1:10 in saline (150 mM NaCl, 2.5 mM KCl, 10 mM HEPES, pH 7.4). This solution was filtered and injected into the cerebellum under visual guidance using a patch-pipette and 500–750 mbar pressure for 1–3 min. After injection the preparation was left to incubate for up to 1.5 hr prior to imaging. This helped improve labeling and lower unspecific fluorescence.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Imaging data were analyzed using ImageJ (http://rsbweb.nih.gov/ij/). Extracted fluorescence traces, linescans and electrophysiological data were analyzed using in house routines programmed in Igor Pro versions 5 or 6.2 (Wavemetrics) and in pClamp 10 (Molecular Devices). Statistical analysis was performed in Matlab (MathWorks, Natick, MA, USA) or Igor Pro (Wavemetrics, Portland, OR, USA). Experimental groups were compared using a t-test and were assumed to be significantly different if the found p-values were <0.05.

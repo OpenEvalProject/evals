@@ -38,9 +38,17 @@ Here, we focus on the cues that specifically initiate the cell migration behavio
 
 ## Results
 
-## Tissue laceration induces a rapid and coordinated wound response
+### Tissue laceration induces a rapid and coordinated wound response
 
 A variety of wounding techniques have been used to observe the injury response in the zebrafish tailfin, including tail transection with a scalpel, laser wounding, and burn wounding (Gault et al., 2014; Miskolci et al., 2019; Yoo et al., 2012). We were specifically interested in the migratory response immediately following tissue damage, and so we developed a wounding technique—which we refer to as tissue laceration—which led to a strong and reproducible early migratory response to injury. In our laceration approach, a glass rod is pulled to a fine point, and the tissue is impaled with this needle at locations dorsal and ventral to the terminus of the notochord. The needle is dragged in a posterior direction through the surrounding tissue, tearing the tailfin (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of (i) bilayered larval zebrafish skin and (ii) laceration technique. (B) Lacerated tailfin over time from a larva 3 days post fertilization (dpf) expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP); Tg(hsp70:myl9-mApple)). mpw: minutes post wounding. (B–F) are all maximum-intensity Z-projections of spinning-disk confocal images. (C) Individual cell from 3 dpf larva expressing LifeAct-EGFP mosaically in basal cells (TgBAC(∆Np63:Gal4) larva injected with UAS:LifeAct-EGFP plasmid at the 1-cell stage). Wound was to the right approximately 1–2 min earlier. (D) Cells in a lacerated tailfin over time from 3 dpf larva expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP); Tg(hsp70:myl9-mApple)), approximately 1–2 min post wounding. Arrowheads: examples of individual actin-rich protrusions are followed over time. (E) Kymograph indicating the speed of basal cells at a given distance from the wound over time (N = 8 larvae). Line graphs show net displacement over space (right) and time (bottom) for each individual larva. See Methods and Figure 1—figure supplement 1 for details of motion tracking analysis. (F) Lacerated tailfin from larva expressing GCaMP6f in basal cells (TgBAC(∆Np63:Gal4) larvae injected with UAS:GCaMP6f-P2A-nls-dTomato plasmid at the 1 cell stage). mpw: minutes post wounding. Due to the large dynamic range in GCaMP intensity, these images were gamma-corrected with a gamma of 0.5 for display purposes. (G) Kymograph of GCaMP6f intensity, normalized by the coexpressed nuclearly localized dTomato intensity, and relative to the normalized intensity pre-wounding (F0) (N = 7 larvae). (H) Line graph of normalized profiles of the average speed and GCaMP intensity over time, averaged over 300 µm of tissue closest to the wound. To emphasize comparison of the temporal relationship, profiles are rescaled to lie between 0 and 1 (in arbitrary units).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative images from timelapse imaging of cellular response to laceration or tail transection. 3 dpf larvae expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP); Tg(hsp70:myl9-mApple)) were anesthetized with Tricaine and wounded by laceration or tail transection (see Methods) and imaged with spinning-disk confocal microscopy. Shown is Z-projections of the LifeAct signal from two representative larvae. (B) Average speed in tissue <300 µm from the wound for laceration or tail transection. Error bars are bootstrapped 95% confidence intervals of the mean. (C) Overview of procedure for tissue motion analysis. 1. Z-projection of LifeAct; myosin light-chain signal is also acquired but not shown. 2. Images of LifeAct are registered using the myosin light-chain signal to remove whole-larva drift not due to cell migration. 3. Thousands of feature points are detected throughout the tissue to use as fiducials for motion tracking from frame to frame (for clarity only 15% of the feature points detected in this frame are shown). 4. Feature points are tracked from frame to frame, reporting motion at different locations in the tissue over time. For clarity 10 randomly selected points are shown. 5. Motion is quantified at different positions in the tissue by averaging the movement of feature points across the tissue. Feature points are binned by their distance from the wound, projected along a line extending from the wound centroid anteriorly through the tail.
 
 We found that lacerated tissue rapidly reorganized and contracted around the wound site over a period of about 15–20 min (Figure 1B), consistent with wound closure observed with other methods mentioned above. A direct comparison with tail transection revealed similar spatial patterns of tissue rearrangement (Figure 1—figure supplement 1A). In timelapse videos of wounds from both techniques, laceration wounds induce a more pronounced migratory response within the first few minutes after wounding, suggesting that laceration wounds may be ideal for studying the early stages of the wound response (Figure 1—video 1). To determine whether this tissue reorganization was mediated at least in part by actin-based migration of cells in the basal layer, we investigated actin organization during wound closure using a basal cell-specific Gal4 driver fish crossed to a fish expressing LifeAct-EGFP from the UAS promoter.
 
@@ -52,9 +60,151 @@ We wondered if laceration might induce transient increases in cytoplasmic calciu
 
 Taken together, our observations of cell migration following laceration injury demonstrate a stronger migratory response in the first few minutes compared to tail transection, with overall tissue reorganization and calcium dynamics comparable to those induced by other wounding techniques. With the laceration method, we observed prominent actin-rich lamellipodia and waves of calcium and cell migration that propagated outward from the wound site at dramatically different rates.
 
-## The wound response is sensitive to external sodium chloride, independent of osmolarity
+### The wound response is sensitive to external sodium chloride, independent of osmolarity
 
 Next, we sought to determine how different physical cues might initiate the wound response in our laceration injury model. Previous work had shown that the wound response in zebrafish epidermis was inhibited by isosmotic environments (Gault et al., 2014). We confirmed this result by immersing larvae in typical freshwater medium (E3, osmolarity ~12 mOsmol/l) supplemented with sodium chloride to a final osmolarity of ~270 mOsmol/l, within the range of typical zebrafish interstitial fluid osmolarity (Gault et al., 2014; Kiener et al., 2008). Larvae wounded in isosmotic sodium chloride had a markedly reduced wound response compared to larvae in E3 (hypotonic treatment), as measured by average basal cell speed over time (Figure 2A, compare red with black trace).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig2-v2.jpg)
+
+**Figure 2.:** (A) Basal cell speed over time, averaged over 300 µm adjacent to the wound in each larva. 3 dpf larvae expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP); Tg(hsp70:myl9-mApple)) were incubated in E3 (Hypo) or E3 supplemented with 270 mOsmol/l of indicated osmolytes (Iso) and then the tailfin was lacerated and movement analyzed as described in Methods and Figure 1—figure supplement 1. N indicates the number of larvae in each condition. Error bars are bootstrapped 95% confidence intervals of the mean for each condition. (B) Speed trajectories for each larva were analyzed with PCA (see Figure 2—figure supplement 1A–C) and each trajectory’s score along the first principal component is plotted. Gray bars indicate the mean PC1 score for that condition. Letters a-d indicate statistically distinguishable (significantly different) means (p<0.001, one-way fixed-effects Welch’s ANOVA F(6, 19)=130.9, with Games-Howell post-hoc tests). See Table 1 for p-values from post-hoc tests. (C) (Top) Representative tailfins from unwounded larvae or larvae wounded in different media. Images shown from 5 min post wounding. (Bottom) Insets shown below each image. Arrowheads: examples of polarized LifeAct intensity, in the direction of the wound. (D) Schematic of computational procedure for analyzing changes in intensity, after warping image to account for cell/tissue deformation. See Methods for more detail. (E) Relative pixel-wise change in LifeAct intensity over time, averaged over 300 µm adjacent to the wound in each larva. Error bars are bootstrapped 95% confidence intervals of the mean. (F) (Top) Image displaying the device allowing for different media compositions around the tailfin or the rest of the larva. Sodium concentration was calibrated with a sodium-sensitive fluorescent dye. (Bottom) Graph indicates the average sodium concentration along a line across the middle of the image. (G) Relative tissue speed for larvae with different media around their anterior or posterior, as shown in the diagram. To account for residual whole-larva movement due to peristaltic flow, the average tissue speed >300 µm away from the wound was subtracted from the average speed <300 µm away from the wound. Error bars are bootstrapped 95% confidence intervals of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Variation along 1st (A) and 2nd (B) principal components of speed trajectories. PC1 captures overall amplitude of the migratory response, while PC2 captures the timing of the peak migratory response. The average trajectory across all conditions is shown in black, and the mean trajectory ±1 standard deviation along the principal component are shown in red and blue, respectively. (C) Percent variance explained by each of the first 10 principal components. (D) Speed trajectories projected onto the space spanned by the first two principal components. Each dot represents the speed trajectory from one larva. (E) Examples of non-rigid deformation approach to measure changes in actin intensity. Shown is a small region of the LifeAct signal in basal cells over time, either the original maximum-intensity projection (original), the image after non-rigid deformation (registered), or the relative change in fluorescence intensity in the registered image (∆F/F0). Green and magenta arrowhead show particular LifeAct-rich protrusions; filled arrowheads show the original position of the protrusion, while empty arrowheads show the corresponding position of the protrusion in subsequent frames—which differs due to cell and tissue movement. Registration by non-rigid deformation tracks protrusions and warps the image so all changes in intensity of a protrusion occur at the original location of the protrusion in the first frame. Changes in LifeAct intensity in these protrusions are captured in the ∆F/F0 image at their original position. (F) Average speed trajectories for larvae anesthetized with Tricaine or alpha-bungarotoxin. Data for larvae treated with Tricaine is the same as shown in Figure 2A. Spikes in the alpha-bungarotoxin condition are due to residual larval twitching due to incomplete muscle relaxation. Error bars are bootstrapped 95% confidence intervals of the mean. (G) Two-chamber device schematic. (i) Line drawing used in laser cutting pieces of acrylic to make the mold for the two-chamber device. Gray bar indicates the region that was etched rather than cut, to a depth of approximately 375 µm. (ii) Schematic of the final device made out of PDMS, with holes punched for fluid inlet. Larvae are immobilized in the device as shown with agar around the anterior part of the fish. (iii). Picture of the assembled acrylic mold, with metal bar to create a gap for holding the larvae and for fluid inlets. (iv) Photo of the assembled PDMS device cast from the mold, with inlet tubes added. (v) Photo of the device in a microscope stage insert with inlet and outlet tubes in place. (vi) zoom-in of the device showing the positioning of the inlet and outlet tubes for both chambers to allow independent media exchange in each chamber.
+
+**Table 1.**
+ p-values (rounded to two significant digits) and Cohen’s d for post-hoc Games-Powell statistical tests in Figure 2B.Cohen’s d is defined as the difference in means divided by the square root of the average of the sample variances from the two samples being compared.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>Hypo</th>
+      <th>Iso NaCl</th>
+      <th>Iso CholineCl</th>
+      <th>Iso NaGluconate</th>
+      <th>Iso KCl</th>
+      <th>Iso Sorbitol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Unwounded</td>
+      <td>p</td>
+      <td>0.0034</td>
+      <td>0.0027</td>
+      <td>0.0038</td>
+      <td>0.0038</td>
+      <td>0.0033</td>
+      <td>0.0035</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>−9.11</td>
+      <td>−6.39</td>
+      <td>−7.22</td>
+      <td>−7.61</td>
+      <td>−5.59</td>
+      <td>−4.46</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Hypo</td>
+      <td>p</td>
+      <td></td>
+      <td>0.0033</td>
+      <td>0.0026</td>
+      <td>0.0026</td>
+      <td>0.0025</td>
+      <td>0.0023</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td></td>
+      <td>7.57</td>
+      <td>3.29</td>
+      <td>3.54</td>
+      <td>4.49</td>
+      <td>3.28</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Iso NaCl</td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+      <td>0.0038</td>
+      <td>0.0037</td>
+      <td>0.0041</td>
+      <td>0.0068</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td></td>
+      <td></td>
+      <td>−5.05</td>
+      <td>−5.21</td>
+      <td>−3.35</td>
+      <td>−3.01</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Iso CholineCl</td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.0</td>
+      <td>0.17</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.195</td>
+      <td>1.41</td>
+      <td>0.506</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Iso NaGluconate</td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.25</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1.280</td>
+      <td>0.364</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Iso KCl</td>
+      <td>p</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−0.622</td>
+    </tr>
+  </tbody>
+</table>
 
 Since osmotic pressure is generated by any compounds with low membrane permeability (‘osmolytes’), the osmotic surveillance model for wound detection predicts that wound response should depend only on the external concentration of osmolytes and not on their chemical identity. To test this prediction, we compared isosmotic sodium chloride treatment with isosmotic treatments of choline chloride, sodium gluconate, potassium chloride, or sorbitol. We found that, although all isosmotic treatments did reduce average cell speed, sodium chloride had a uniquely strong inhibitory effect (Figure 2A, compare red with other traces; Figure 2—video 1). In contrast, the degree to which all other osmolytes inhibited a wound response was remarkably consistent with each other (Figure 2A, compare all other traces).
 
@@ -66,13 +216,13 @@ It is important to note that all of these experiments were done in the presence 
 
 Our findings are also robust to small variations in osmolarity: when solutions were deliberately prepared deviating from each other in osmolarity by 10% we found qualitatively similar responses in terms of migration and actin polarization (data not shown). This suggests that the unique effect of sodium chloride on the wound response is not due to small differences in osmotic strength between solutions with different ionic composition, but rather due to the actual chemical identities of the ions in solution.
 
-## Wound response is determined by local wound environment
+### Wound response is determined by local wound environment
 
 We next wished to determine whether the salt-specific role of sodium chloride in regulating actin reorganization during the wound response was due to local changes in sodium chloride in the wound vicinity or to global disruption of sodium chloride transport across the epidermis. Given the complex, ionocyte-mediated regulation of sodium chloride transport throughout the larval epidermis (Guh et al., 2015), it is possible that immersion of the entire fish in an isosmotic sodium chloride solution globally perturbs extracellular ionic composition throughout the larva. This pre-condition could lead to a general inhibition of a wound response, unrelated to location-specific cues that occur at the broken tissue barrier.
 
 To distinguish between this global inhibition model and a model of local sodium chloride inhibition, we developed a two-chamber larval incubation device in which the tailfin was immersed in one medium and the rest of the larva in another, with the distinct media compositions maintained by peristaltic flow (see Methods and Figure 2—figure supplement 1G). Control experiments using media with different sodium chloride concentrations and a sodium-sensitive fluorescent dye as a reporter of sodium concentration confirmed that a ~tenfold difference in sodium concentration could be maintained between the two chambers for many minutes (Figure 2F). When the same media was present in both chambers of the device, cell movement in response to a wound was similar to the uniform incubation conditions. When isosmotic sodium chloride media was present on only the tailfin, the wound response was identical to when the entire larva was immersed in that media (Figure 2G, compare red and pink traces). Moreover, when hyposmotic media was present only on the tailfin, the wound response was similar to that observed with uniformly applied hyposmotic media (Figure 2G, compare black and gray traces), suggesting that only the local ionic environment regulates the wound response.
 
-## Isosmotic solutions cause comparably low cell swelling regardless of composition
+### Isosmotic solutions cause comparably low cell swelling regardless of composition
 
 What is it about the chemical composition of these media that cause them to differentially induce actin polarization and cell movement? Although we ruled out differences in osmolarity, it is possible that these solutions differ in tonicity with respect to the basal cell membrane: if the cell membrane is differentially permeable to particular salts, identical concentrations of different salts may differentially induce water flow across the cell membrane. To determine whether differential swelling mediates the injury signal in different isosmotic environments, we directly measured the volume of cell clusters in each condition by mosaically expressing cytoplasmic mNeonGreen in basal cells within ~250 µm anterior of the tailfin. To measure volume, we obtained the projected area of the cluster and calculated the height at each pixel, and then integrated under this ‘height map’ to obtain an estimate of total cell volume.
 
@@ -80,15 +230,64 @@ We found that basal cells near the wound swelled dramatically within 90 s after 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig3-v2.jpg)
 
-**Figure 3.:** (A) Overview of volume measurement for cell clusters. Representative cluster of cells from three dpf larvae mosaically expressing cytoplasmic mNeonGreen in basal cells (TgBAC(∆Np63:Gal4) embryos injected with UAS:mNeonGreen-P2A-mRuby3-CAAX plasmid at the 1 cell stage). (Left) Z-projection of a representative cell cluster before and 90 s after wounding. (Center) side view at the position indicated by the yellow line. (Right) cell height measured at each pixel. (B) Average volume over time for cell clusters exposed to different media, relative to their volume before wounding. n: number of cell clusters. N: number of larvae. Error bars are 95% bootstrapped confidence intervals of the mean. (C) (Left) Absolute volume measurements for different cell clusters before and 90 s after wounding. *p<0.05, two-tailed t-test on the average paired difference from each larva. See Table 2 for exact p-values and Cohen’s d. (Right) mean paired difference of the measurements shown at left. Distributions are kernel density estimates. (D–E) Average tissue speed (D) and cell cluster volume (E) over time for larvae treated with different concentrations of sodium chloride. 5 and 135 mM speed data are the same as in Figure 2A; 5 and 135 mM volume data are the same as in (B). (F) Average cell cluster volume 90 s after wounding relative to pre-wounding volume, plotted against the average 1st principal component score for speed trajectories. Error bars are 95% bootstrapped confidence intervals of the mean. Linear regression of the Hypo and three NaCl conditions displayed with a dashed line (r = 0.95).2
+**Figure 3.:** (A) Overview of volume measurement for cell clusters. Representative cluster of cells from three dpf larvae mosaically expressing cytoplasmic mNeonGreen in basal cells (TgBAC(∆Np63:Gal4) embryos injected with UAS:mNeonGreen-P2A-mRuby3-CAAX plasmid at the 1 cell stage). (Left) Z-projection of a representative cell cluster before and 90 s after wounding. (Center) side view at the position indicated by the yellow line. (Right) cell height measured at each pixel. (B) Average volume over time for cell clusters exposed to different media, relative to their volume before wounding. n: number of cell clusters. N: number of larvae. Error bars are 95% bootstrapped confidence intervals of the mean. (C) (Left) Absolute volume measurements for different cell clusters before and 90 s after wounding. *p<0.05, two-tailed t-test on the average paired difference from each larva. See Table 2 for exact p-values and Cohen’s d. (Right) mean paired difference of the measurements shown at left. Distributions are kernel density estimates. (D–E) Average tissue speed (D) and cell cluster volume (E) over time for larvae treated with different concentrations of sodium chloride. 5 and 135 mM speed data are the same as in Figure 2A; 5 and 135 mM volume data are the same as in (B). (F) Average cell cluster volume 90 s after wounding relative to pre-wounding volume, plotted against the average 1st principal component score for speed trajectories. Error bars are 95% bootstrapped confidence intervals of the mean. Linear regression of the Hypo and three NaCl conditions displayed with a dashed line (r2 = 0.95).
+
+**Table 2.**
+ p-values for the two-tailed t-test on the paired differences in volume before and after wounding (Figure 3C), rounded to two significant digits, and Cohen’s d, defined as the mean paired difference divided by the standard deviation of the differences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>p-value</th>
+      <th>d</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Unwounded</td>
+      <td>0.30</td>
+      <td>–0.801</td>
+    </tr>
+    <tr>
+      <td>Hypo</td>
+      <td>0.021</td>
+      <td>2.24</td>
+    </tr>
+    <tr>
+      <td>Iso NaCl</td>
+      <td>0.20</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>Iso CholineCl</td>
+      <td>0.23</td>
+      <td>0.628</td>
+    </tr>
+    <tr>
+      <td>Iso NaGluconate</td>
+      <td>0.0079</td>
+      <td>2.20</td>
+    </tr>
+  </tbody>
+</table>
 
 We used a paired data estimation plot (Ho et al., 2019) to visualize the absolute change in volume from before wounding to 90 s post-wounding in different media conditions (Figure 3C). For isosmotic media containing sodium chloride or choline chloride, the cellular volume change over this time frame was not statistically significant, nor was the magnitude of volume change in these media statistically distinguishable from that for cells on unwounded fish (p<0.05, two-sided t-tests on the paired average volume difference from each larva). While the increase in volume in both hyposmotic medium and sodium gluconate was statistically significant, the effect size in sodium gluconate was small: the mean paired volume increase between pre- and post-wounding for clusters in sodium gluconate was 0.07 picoliters (pl), while the mean paired volume increase for clusters in hyposmotic media was about 0.40 pl (95% C.I. 0.29–0.59 pl).
 
 To test whether such slight swelling in isosmotic media other than sodium chloride was sufficient to explain the dramatic increase in actin polarization and migration in those media, we induced a limited degree of swelling in an orthogonal manner, by wounding larvae in intermediate concentrations of sodium chloride, and measured the degree of cell swelling and migration. As the concentration of sodium chloride decreased from isosmotic, we observed more cell migration (Figure 3D), but also more swelling immediately after wounding (Figure 3E). A linear relationship (r2 = 0.95) was observed between initial volume change and degree of cell migration for the four conditions in which the concentration of sodium chloride was varied (Figure 3F), while the conditions in which different salts were used did not follow this same linear relationship. Instead, cells exposed to isosmotic salts other than sodium chloride moved substantially more than would be expected based solely on their volume change.
 
-## Electric fields are sufficient to induce cell migration in the absence of wound stimuli
+### Electric fields are sufficient to induce cell migration in the absence of wound stimuli
 
 Having ruled out differential swelling as the cause for the specific effect of sodium chloride on the injury response, we next turned to other aspects of fish physiology that are specifically affected by sodium and chloride ions and that could lead to a differential wound response in isosmotic external concentrations of sodium chloride. One such physiological cue is the lateral electric fields generated during injury by disruption of the TEP—which itself is generated by the transport of sodium and chloride ions across the skin (Figure 4A; Dietz et al., 1967; McCaig et al., 2005; McCaig and Robinson, 1982; Potts, 1984; Reid et al., 2005).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig4-v2.jpg)
+
+**Figure 4.:** (A) (i) Schematic of the origin of the transepithelial potential (TEP) due to circulating flow of sodium ions. Other ions (such as chloride) may also be transported using energy derived from the sodium-potassium pump, and are not shown here for clarity. (ii) Unwounded tissue does not show an anterior-posterior TEP gradient. (iii) Wounding short-circuits TEP leading to an anterior-posterior TEP gradient and electric field. (B) (Left) Brightfield image of tailfin from 3 dpf larva expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP)), with electrodes inserted under the skin. (Right) Electrical stimulation circuit with variable DC voltage, current measurement, and switches to reverse current polarity in the larva. (C) Z-projections of LifeAct signal from larva shown in (B). (Top) electric field off; (Middle) electric field on with cathode at anterior electrode; (Bottom) electric field reversed with cathode at posterior electrode. Stills are from one continuous timelapse. Insets are shown, and displacement vectors from tissue motion tracking are shown in orange. Arrowheads: examples of polarized LifeAct intensity oriented toward the cathode. (D) Velocity kymograph from a representative timelapse. Color indicates horizontal velocity component from tissue motion tracking analysis. Blue circles and dashed lines indicate the position of the cathode when the electric field was turned on, roughly corresponding to the empty circles on the larva diagram. Numbers 1–4 indicate different phases of the timelapse. 1: electric field off; 2: electric field on, cathode anterior; 3: electric field on, cathode posterior; 4: electric field off. (E) Median horizontal velocity component from three different larva. Tissue velocity was averaged in the region between the two electrodes and then the median velocity during each phase 1–4 (described above) was plotted. For one larva (shown in green) the cathode was initially positioned at the posterior electrode and was then switched to the anterior electrode. (F) Average horizontal velocity component from stimulated or unstimulated larvae. In the stimulated condition, 3 dpf larvae expressing LifeAct-EGFP in basal cells (TgBAC(∆Np63:Gal4); Tg(UAS:LifeAct-EGFP); Tg(hsp70:myl9-mApple)) were impaled with one electrode, with the other electrode positioned immediately posterior to the tailfin. Larvae were then wounded and the electric field turned on, with the cathode positioned at the anterior electrode. Tissue motion between the cathode and the wound was analyzed. Thin lines represent velocity for each larva. Thick lines represent average over larvae. Unstimulated data is the same as in Figure 2A.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62386/elife-62386-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Equivalent circuit diagram for the stimulation setup. Electrical resistance comes from the electrodes (measured resistance of ~18.5 MΩ), the resistance to ion flow through the larva itself, and the resistance to flow through the external medium (‘shunt’ pathway of current that does not travel through the larva). Shunt and larval resistance are not directly measured. See Methods for discussion of these different parameters. (B) Estimate of current density in the larva. (Left) Maximum-intensity projection of a larva expressing hsp70:myl9-mApple, which labels all the cells. (Upper right) Cross section through the trunk suggests that the dimensions of the larva in the trunk can be approximated as ~80×130 µm. (Lower right) The larval cross-section is simplified as a rectangle for estimation purposes. Three different possible regions through which current could flow are depicted, and the current density resulting from a 1µA current flowing through each of these regions is shown below each region.
 
 To test whether the basal layer of the epidermis will respond to electric fields in vivo in the absence of other wound cues, we constructed an apparatus with which to electrically stimulate the larval epidermis, simultaneously measuring the current flowing through the epidermis and visualizing the response of basal cells with microscopy (Figure 4B; Figure 4—figure supplement 1A). To apply an electric field in the skin, we used glass microelectrodes with a combined resistance of 18.5 ± 1.0 MΩ (n = 3, s.e.m.) when filled and immersed in a solution of 135 mM NaCl (chosen to approximate the composition of interstitial fluid). Silver chloride wires inserted into the microelectrodes provided the connection to electrical equipment.
 
@@ -118,25 +317,161 @@ Electric fields are an attractive physical cue for wound detection because they 
 
 ## Materials and methods
 
-## Zebrafish husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>TAB5</td>
+      <td></td>
+      <td></td>
+      <td>WT background strain</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(∆Np63:Gal4)la213 ; Tg(UAS:LifeAct-EGFP)mu271</td>
+      <td>PMID:25589751</td>
+      <td>ZFIN: ZDB-FISH-200109–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(hsp70:myl9-mApple)</td>
+      <td>PMID:25918227</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UAS:GCaMP6f-P2A-nls-dTomato</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Zebrafish expression vector containing the coding sequence for GCaMP6f and nls-dTomato separated by a self-cleaving peptide sequence P2A. Generated using Gateway cloning with Tol2kit plasmid backbones and AAV-EF1a-DIO-GCaMP6f-P2A-nls-dTomato as a template [Addgene plasmid #51083].</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UAS:mNeonGreen-P2A-mRuby3-CAAX</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Zebrafish expression vector expressing cytoplasmic mNeonGreen and membrane localized mRuby3, separated by a P2A sequence. Generated with Gateway cloning with Tol2kit plasmid backbones.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmtb-t7-alpha-bungarotoxin</td>
+      <td>PMID:26244658</td>
+      <td>RRID:Addgene_69542</td>
+      <td>Vector for in vitro transcription of alpha-bungarotoxin mRNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for plasmid construction</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CoroNa Green</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen:C36675</td>
+      <td>Fluorescent sodium indicator dye</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Code used for image analysis</td>
+      <td>This paper (Kennard and Theriot, 2020)</td>
+      <td></td>
+      <td>The MATLAB and python code used for data analysis can be accessed at GitLab: https://gitlab.com/theriot_lab/fish-wound-healing-nacl</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td>RRID:SCR_001622</td>
+      <td>Version R2018b</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://fiji.sc</td>
+      <td>RRID:SCR_002285</td>
+      <td>version 1.53 c</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>https://www.python.org</td>
+      <td>RRID:SCR_008394</td>
+      <td>version 3.7.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>numpy</td>
+      <td>https://pypi.org/project/numpy/ PMID:32939066</td>
+      <td>RRID:SCR_008633</td>
+      <td>version 1.17.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-image</td>
+      <td>https://pypi.org/project/scikit-image/ PMID:25024921</td>
+      <td>RRID:SCR_008633</td>
+      <td>version 0.15.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tifffile</td>
+      <td>https://pypi.org/project/tifffile/</td>
+      <td></td>
+      <td>version 2018.11.28</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenCV Python bindings</td>
+      <td>https://pypi.org/project/opencv-python/</td>
+      <td></td>
+      <td>version 4.1.1.1, including non-free algorithms</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PIMS</td>
+      <td>Allan et al., 2015</td>
+      <td></td>
+      <td>version 0.4.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry
 
 Zebrafish (TAB5 background wildtype strain) were raised and embryos harvested according to standard procedures (Westerfield and Zon, 2007). Experiments were approved by University of Washington Institutional Animal Care and Use Committee (protocol 4427–01). Animals were reared on a 14 hr light, 10 hr dark cycle at 28.5 °C in 1 to 9 L polycarbonate tanks (Aquaneering). Animals were crossed through natural spawning, and embryos were collected within 1–2 hr after spawning and raised in 100 mm petri dishes with 30–50 other embryos. Embryos were reared at 28.5 °C in E3 medium without methylene blue (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, 0.33 mM MgSO4) (E3 medium, 2008). All experiments were performed on larvae 72–90 hr post-fertilization.
 
-## Transgenic zebrafish lines
+### Transgenic zebrafish lines
 
 The TgBAC(∆Np63:Gal4)la213; Tg(UAS:LifeAct-EGFP)mu271; Tg(hsp70:myl9-mApple) line was generated from a natural cross of the TgBAC(∆Np63:Gal4)la213; Tg(UAS:LifeAct-EGFP)mu271 line—a generous gift from Alvaro Sagasti (Helker et al., 2013; Rasmussen et al., 2015)—with the Tg(hsp70:myl9-mApple) line (Lou et al., 2015) by screening for fluorescence, and subsequently maintained through outcrosses to TAB5 WT fish.
 
-## Plasmid constructs and mRNA synthesis
+### Plasmid constructs and mRNA synthesis
 
 Plasmids for microinjection were generated using Gateway cloning into Tol2kit zebrafish expression vectors (Kwan et al., 2007). The UAS:GCaMP6f-P2A-nls-dTomato plasmid was generated by PCR amplification of a 2 kb fragment from AAV-EF1a-DIO-GCaMP6f-P2A-nls-dTomato, a gift from Jonathan Ting (Addgene plasmid #51083), using primers 1 and 2 (Supplementary file 1). This fragment was introduced into the Tol2kit plasmid pME (also known as pDONR221) using BP Clonase II and standard Gateway cloning procedures (Invitrogen). This pME plasmid was recombined with the Tol2kit plasmids p5E-UAS and p3E-polyA into Tol2kit expression vector pDestTol2CG2 to generate the final plasmid. All Tol2kit plasmids were a gift from C.-B. Chien.
 
 To construct the UAS:mNeonGreen-P2A-mRuby3-CAAX plasmid, mNeonGreen (Shaner et al., 2013) was amplified from an encoding plasmid with primers 3 and 4, while mRuby3 (Bajar et al., 2016) was amplified from an encoding plasmid with primers 5 and 6 (Supplementary file 1). Following Gateway recombination into pDONR221 (mNeonGreen) and pDONR P2r-P3 (mRuby3) to create middle entry (ME) and 3’-entry (3E) vectors, respectively, Q5 mutagenesis (NEB) was used to introduce a P2A self-cleavage site to the C-terminal end of pME-mNeonGreen using primers 7 and 8, and a CAAX membrane localization tag was added to the C-terminal end of p3E-mRuby3 using primers 9 and 10 (Supplementary file 1). These modified plasmids were then recombined along with Tol2kit plasmid p5E-UAS into Tol2kit expression vector pDestTol2CG2 to generate the final plasmid. Plasmids containing the cDNA for mNeonGreen and mRuby3 were generous gifts from Darren Gilmour and Michael Lin, respectively. mRNA was synthesized using the SP6 mMESSAGE mMACHINE reverse transcription kit (Invitrogen). Alpha-bungarotoxin mRNA was synthesized from the plasmid pmtb-t7-alpha-bungarotoxin, a gift from Sean Megason (Addgene plasmid #69542) (Swinburne et al., 2015). Tol2 transposase mRNA was synthesized from the Tol2kit plasmid pCS2FA-transposase, a gift from C.-B. Chien.
 
-## Microinjection
+### Microinjection
 
 Embryos were injected at the 1- to 2-cell stage, into the cell (rather than the yolk). Plasmids were injected at a concentration of 20 ng/µl, with 40 ng/µl of Tol2 mRNA—the volume of these drops was not calibrated. For alpha-bungarotoxin mRNA injections, drops were calibrated to ~2.3 nl and 60 pg of mRNA was injected into each embryo.
 
-## Preparation of larvae for imaging
+### Preparation of larvae for imaging
 
 Larvae were imaged at 3 days post-fertilization (3 dpf). One day prior to imaging, any larvae with the hsp70:myl9-mApple transgene were transferred from E3 at 28.5 °C into 20 ml scintillation vials of E3 pre-heated to 37 °C for 20 min before being returned to 28.5 °C.
 
@@ -144,13 +479,13 @@ Larvae were screened for transgenes of interest in the morning of 3 dpf. Larvae 
 
 E3 + Tricaine was the base for all experimental media. Additionally, isosmotic media was supplemented with 270 mOsmol/L of the indicated component.
 
-## Tissue wounding
+### Tissue wounding
 
 Solid borosilicate glass rods 1 mm in diameter (Sutter Instruments) were pulled into a needlepoint with a Brown-Flaming type micropipette puller (Sutter P-87). After the unwounded larva was imaged for several frames, timelapse acquisition was paused and the needle was maneuvered by hand to impale the larva at a position just dorsal (or ventral) to the posterior end of the notochord (see Figure 1A). The needle was then dragged posteriorly through the tailfin to tear the skin. This was repeated on the ventral (or dorsal) side of the notochord and then imaging was resumed. The entire procedure took 30 s – 1 min.
 
 For tail transection wounds the procedure was very similar, except a #10 blade scalpel was manually maneuvered to cut off the tail posterior to the notochord, perpendicular to the anterior-posterior axis.
 
-## Two-chamber device experiments
+### Two-chamber device experiments
 
 Two-chamber devices were made from polydimethylsiloxane (PDMS) cast in a mold fabricated from cut acrylic, inspired by previous work (Donoughe et al., 2018; Huemer et al., 2017). Device molds were cut from extruded acrylic (McMaster) using a Dremel LC-40 laser cutter and fused with acrylic cement. A 14 mm-long piece cut from the inner portion of a 22G spinal tap needle (Beckton Dickinson,~375 µm in diameter) was laid across the bottom of the mold to provide a channel for positioning the larva between the two chambers, and for fluid inlet into each chamber. A diagram of the device is shown in Figure 2—figure supplement 1G.
 
@@ -158,9 +493,9 @@ Prior to casting, the mold was pre-coated with 5% (w/v) Pluronic as a release ag
 
 Larvae were anesthetized in E3 + Tricaine and then immobilized within the device with 1.2% low-melt agarose. This agarose was carefully removed around the tail, keeping a plug of agarose around the larva in the anterior chamber for immobilization and to prevent convective fluid mixing. Tubing for peristaltic flow was positioned using custom-built equipment (Figure 2—figure supplement 1G v-vii). To maintain a stable concentration gradient, peristaltic flow was maintained in each chamber at a rate of approximately 0.3 ml/min.
 
-To measure the concentration gradient that can be maintained in this device, solutions of E3 + Tricaine and E3 + Tricaine + 135 mM sodium chloride were prepared and supplemented with 10 µM of CoroNa Green (Invitrogen Cat#C36675). A wildtype larva was mounted in the device as described above and confocal image stacks were collected over time as the two CoroNa Green containing media were flowed into either chamber of the device. From the moment at which CoroNa Green was first detectable in the field of view, it took about 12 min for the concentrations in both chambers to stabilize. The fluorescent intensity was converted into a sodium concentration by first background subtracting and flat-field correcting each Z-projection (Model and Blank, 2006), and then comparing pixel intensities to a fluorescence standard curve generated by imaging drops of E3 + Tricaine + 10 µM CoroNa Green + sodium chloride (at different concentrations) and subjecting those images to the same intensity correction procedure. The standard curve was fit to a binding curve of the form I= Imax[Na]Kd+[Na] using nonlinear regression (fitnlm in MATLAB). The fit value of Imax was 1.1529 (arbitrary units) and Kd was 138 mM.
+To measure the concentration gradient that can be maintained in this device, solutions of E3 + Tricaine and E3 + Tricaine + 135 mM sodium chloride were prepared and supplemented with 10 µM of CoroNa Green (Invitrogen Cat#C36675). A wildtype larva was mounted in the device as described above and confocal image stacks were collected over time as the two CoroNa Green containing media were flowed into either chamber of the device. From the moment at which CoroNa Green was first detectable in the field of view, it took about 12 min for the concentrations in both chambers to stabilize. The fluorescent intensity was converted into a sodium concentration by first background subtracting and flat-field correcting each Z-projection (Model and Blank, 2006), and then comparing pixel intensities to a fluorescence standard curve generated by imaging drops of E3 + Tricaine + 10 µM CoroNa Green + sodium chloride (at different concentrations) and subjecting those images to the same intensity correction procedure. The standard curve was fit to a binding curve of the form $I=\frac{I_{max}[Na]}{K_{d}+[Na]}$ using nonlinear regression (fitnlm in MATLAB). The fit value of Imax was 1.1529 (arbitrary units) and Kd was 138 mM.
 
-## Electrical stimulation
+### Electrical stimulation
 
 Microelectrodes were pulled from thin-walled borosilicate glass capillary tubes (1 mm O.D., 0.75 mm I.D., World Precision Instruments) with a Brown-Flaming type micropipette puller (Sutter P-87) and filled with 135 mM NaCl solution. The combined series resistance of both electrodes when immersed in the same solution was ~18.5 ± 1 MΩ (n = 3 independent electrode pairs, s.e.m.). Microelectrodes were connected into an electrical circuit using chlorided silver wires, with a variable DC power supply (PiezoDrive PD-200). Current was measured at 1 Hz sampling rate according to Ohm’s Law, by recording the voltage drop across a 100 kΩ resistor in series with the larva using a multimeter (Fluke 287).
 
@@ -172,7 +507,7 @@ The measurement of electrode resistance above (18.5 MΩ) is a lower bound on Rel
 
 For experiments combining electrical stimulation and wounding, one electrode was inserted into the larva and the other electrode was placed just outside and posterior to the larva. Tissue was lacerated as described above and the circuit was immediately turned on, with current manually maintained at approximately 1.5 µA.
 
-## Microscopy and image acquisition
+### Microscopy and image acquisition
 
 Images were acquired with one of two microscope setups. The first microscope used was a Leica DMI6000B inverted microscope equipped with a piezo-z stage (Ludl 96A600) a Yokogawa CSU-W1 spinning-disk confocal with Borealis attachment (Andor), a laser launch (Andor ILE) with 50 mW 488 nm and 50 mW 561 nm diode lasers (Coherent OBIS), 405/488/561/640/755 penta-band dichroic (Andor), and a 488/561 dual-band emission filter (Chroma ZET488/561m). A Plan Apo 20x NA 0.75 multi-immersion objective was used. On this Leica microscope, temperature was controlled with a closed forced-air temperature-controlled heating system to maintain temperature at 28–29°C.
 
@@ -182,11 +517,11 @@ On both systems, full-chip 16-bit 1024 × 1024 pixel images were acquired with a
 
 Two-channel z-stacks were acquired at 30 s intervals, switching laser line at each z-position before changing z-position.
 
-## Timelapse registration
+### Timelapse registration
 
 To correct for whole-body movement and drift of the tailfin, registration was performed on movies from TgBAC(∆Np63:Gal4)la213; Tg(UAS:LifeAct-EGFP)mu271; Tg(hsp70:myl9-mApple) embryos. The myosin light chain-mApple was ubiquitously expressed, and we observed that only the skin cells migrated in response to wounding. We therefore considered myosin light chain fluorescence originating from tissues other than the skin to be stationary, and corrected any drift using this signal as follows. Prior to maximum-intensity projection, the LifeAct intensity was thresholded and used as a mask to set corresponding regions of the myosin z-stack to 0 using custom MATLAB code; following maximum-intensity z-projection, regions in the myosin channel that did not overlap with basal cells were emphasized. These modified z-projections of the myosin channel were manually cropped to select a 512 × 512 pixel region for registration >300 µm away from the wound. These subimages were registered in time with custom Python code by detecting KAZE features (Lazebnik et al., 2012), matching these features between adjacent timepoints, and fitting a Euclidean transform (rotation + translation) to the feature displacement vectors using RANSAC (Fischler and Bolles, 1981). The calculated transformations were then converted to the coordinates of the LifeAct image and used to register those z-projections. Registration was performed using custom Python scripts including the following libraries: numpy (van der Walt et al., 2011), scikit-image (scikit-image contributors et al., 2014), Tifffile (Christoph Gohlke, University of California, Irvine), and the python bindings for OpenCV (Bradski and Dobbs, 2000). Code is available on a GitLab repository (Kennard and Theriot, 2020; copy archived at swh:1:rev:67bba3afe283ece6e1e1c3db3b8234217ac5332c).
 
-## Motion tracking and analysis
+### Motion tracking and analysis
 
 Registered LifeAct z-projections were manually aligned so the anterior-posterior axis was horizontal. Motion was tracked by detecting Shi-Tomasi corner points in each image (typically several thousand points per image) and tracking them from frame to frame using the Kanade-Lucas-Tomasi algorithm (Lucas and Kanade, 1981; Shi and Tomasi, 1994). These points correspond to areas of strong texture or curvature in the image, which make them straightforward to track. Due to high contrast and detail in the image, a majority of points could be tracked for the entire duration of a timelapse. Velocities could be calculated from the trajectories of these points.
 
@@ -196,29 +531,29 @@ For the two-chamber device experiments (Figure 2G), drift of the tailfin due to 
 
 For the electric field stimulation experiments without wounding (Figure 4D–E), the same motion tracking approach was used, but instead of averaging the speed (the magnitude of the 2D velocity of each point), the horizontal velocity component was averaged, so that positive and negative velocities indicated movement in the anterior or posterior direction, respectively.
 
-## GCaMP intensity tracking
+### GCaMP intensity tracking
 
-Maximum-intensity Z-projections were background-subtracted and manually rotated so the anterior-posterior axis was horizontal. The wound margin was manually traced, and the GCaMP6f and nls-dTomato intensities were each averaged in 10 µm increments based on the horizontal distance between each pixel and the wound centroid. To correct for variation in expression, the GCaMP6f intensity in each 10 µm increment was normalized to the nls-dTomato intensity in that increment, and then Ft(x)—the normalized GCaMP6f intensity at a horizontal position x and frame t —was further normalized to report relative changes in intensity over time, using the formula ΔFF0≡(Ft(x)−F0(x))/F0(x). This relative intensity in space and time was averaged over all fish to create a single intensity histogram.
+Maximum-intensity Z-projections were background-subtracted and manually rotated so the anterior-posterior axis was horizontal. The wound margin was manually traced, and the GCaMP6f and nls-dTomato intensities were each averaged in 10 µm increments based on the horizontal distance between each pixel and the wound centroid. To correct for variation in expression, the GCaMP6f intensity in each 10 µm increment was normalized to the nls-dTomato intensity in that increment, and then $F_{t}(x)$—the normalized GCaMP6f intensity at a horizontal position x and frame t —was further normalized to report relative changes in intensity over time, using the formula $\frac{ΔF}{F_{0}}≡(F_{t}(x)−F_{0}(x))/F_{0}(x)$. This relative intensity in space and time was averaged over all fish to create a single intensity histogram.
 
-## PCA of speed over time
+### PCA of speed over time
 
 Tissue speed within 300 µm of the wound centroid was averaged in each frame, and for each larva a track consisting of speed in the first 30 frames (15 min) was used for dimensionality reduction. The average speed for all 87 larvae over time was computed and subtracted from each track, and then PCA was performed on the 87 tracks in the 30-dimensional space.
 
-## Non-rigid deformation of LifeAct distributions
+### Non-rigid deformation of LifeAct distributions
 
-Maximum-intensity z-projections of LifeAct in wounded tailfins were registered to remove rigid movement of the entire tissue as described above. A non-rigid warping was applied to further align individual cells, which moved at slightly different speeds in different directions. More explicitly, the goal was to identify warped coordinates (x^,y^), so that the fluorescence image Ft+1(x^(x,y),y^(x,y)) was aligned pixel-by-pixel to the previous frame, Ftx,y. To do this, the displacement field Dt(x,y)=(x^,y^) was computed, and the frame t+1 was warped using those coordinates, so that Ft+1(Dtx,y)~Ft(x,y), where ~ indicates similarity in intensity on a pixel-by-pixel basis. The displacement field was computed with the Diffeomorphic Demons algorithm (imregdemons in MATLAB with default settings) (Vercauteren et al., 2009). Displacement fields were iteratively composed to register the intensity in each frame to the first frame.
+Maximum-intensity z-projections of LifeAct in wounded tailfins were registered to remove rigid movement of the entire tissue as described above. A non-rigid warping was applied to further align individual cells, which moved at slightly different speeds in different directions. More explicitly, the goal was to identify warped coordinates $(x^,y^)$, so that the fluorescence image $F_{t+1}(x^(x,y),y^(x,y))$ was aligned pixel-by-pixel to the previous frame, $F_{t}x,y$. To do this, the displacement field $D_{t}(x,y)=(x^,y^)$ was computed, and the frame t+1 was warped using those coordinates, so that $F_{t+1}(D_{t}x,y)~F_{t}(x,y)$, where ~ indicates similarity in intensity on a pixel-by-pixel basis. The displacement field was computed with the Diffeomorphic Demons algorithm (imregdemons in MATLAB with default settings) (Vercauteren et al., 2009). Displacement fields were iteratively composed to register the intensity in each frame to the first frame.
 
-Once movies had been warped to align with the first frame, each frame was smoothed with a Gaussian filter and the relative change in fluorescence intensity at each pixel was computed according to ΔF/F0=(Ft(x^,y^)−F0(x,y))/F0(x,y). The average value of ΔF/F0 was calculated for each frame, excluding the region approximately one cell diameter away from the wound edge. Then these traces of ΔF/F0 were averaged across all larvae.
+Once movies had been warped to align with the first frame, each frame was smoothed with a Gaussian filter and the relative change in fluorescence intensity at each pixel was computed according to $ΔF/F_{0}=(F_{t}(x^,y^)−F_{0}(x,y))/F_{0}(x,y)$. The average value of $ΔF/F_{0}$ was calculated for each frame, excluding the region approximately one cell diameter away from the wound edge. Then these traces of $ΔF/F_{0}$ were averaged across all larvae.
 
 Upon inspection, some movies used for motion tracking analysis were not suitable for this analysis of change in LifeAct intensity, due to flickering of illumination light, which led to large frame-to-frame fluctuations in image brightness. Based solely on changes in the background intensity, the following criteria were used to exclude movies used in Figure 2A from analysis for Figure 2E:
 
-## Cell volume measurement
+### Cell volume measurement
 
 Z-stacks were acquired every 45 s at 60x magnification. Subimages of individual cell clusters were manually cropped and deconvolved using the Richardson-Lucy algorithm with 20 iterations in DeconvolutionLab2, a plugin for ImageJ (Sage et al., 2017; Schindelin et al., 2012). A maximum-intensity z-projection of a cell cluster was thresholded to obtain an x-y mask of the cell cluster. To obtain the height of the cell cluster at every other pixel in the x-y mask, the 3D image stack of a cell cluster was smoothed with a 3D gaussian filter and then edges were enhanced with a 3D Sobel filter. Then for a given pixel in the mask, the height was computed by first identifying two peaks in the linescan of fluorescence intensity along the z direction, and then computing the distance between the two peaks. For sub-pixel accuracy in z, the linescans were fitted to gaussians in the vicinity of the peaks. To save on computation time, height was computed at every other pixel. Cell cluster height was spatially smoothed with a 2D median filter and then interpolated to generate a ‘height map', the height of the cell cluster as a function of every pixel in the mask of the cluster. The volume of the cell cluster was obtained by numerically integrating this height map using the function integral2 in MATLAB.
 
 The volume of each cell cluster over time was manually inspected for large discontinuities, and cell clusters for which the height maps had been obviously miscalculated—apparent by large frame-to-frame variations in cell volume over time, as well as visually obvious discontinuities in the height of the cell—were not included for further analysis.
 
-## Statistical details
+### Statistical details
 
 Each zebrafish larva was considered an independent biological replicate; there were no technical replicates in this work. When measurements were made on multiple cells in a single larva, those measurements were averaged to generate a single independent estimate per larva. Larvae were chosen for an experiment at random from a clutch of larvae.
 

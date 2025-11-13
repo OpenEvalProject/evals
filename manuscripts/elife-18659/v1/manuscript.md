@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.18659.001 Current optical microscope objectives of low magnification have low numerical aperture and therefore have too little depth resolution and discrimination to perform well in confocal and nonlinear microscopy. This is a serious limitation in important areas, including the phenotypic screening of human genes in transgenic mice by study of embryos undergoing advanced organogenesis. We have built an optical lens system for 3D imaging of objects up to 6 mm wide and 3 mm thick with depth resolution of only a few microns instead of the tens of microns currently attained, allowing sub-cellular detail to be resolved throughout the volume. We present this lens, called the Mesolens, with performance data and images from biological specimens including confocal images of whole fixed and intact fluorescently-stained 12.5-day old mouse embryos. DOI: http://dx.doi.org/10.7554/eLife.18659.001
+Current optical microscope objectives of low magnification have low numerical aperture and therefore have too little depth resolution and discrimination to perform well in confocal and nonlinear microscopy. This is a serious limitation in important areas, including the phenotypic screening of human genes in transgenic mice by study of embryos undergoing advanced organogenesis. We have built an optical lens system for 3D imaging of objects up to 6 mm wide and 3 mm thick with depth resolution of only a few microns instead of the tens of microns currently attained, allowing sub-cellular detail to be resolved throughout the volume. We present this lens, called the Mesolens, with performance data and images from biological specimens including confocal images of whole fixed and intact fluorescently-stained 12.5-day old mouse embryos.
 
 ## Introduction
 
@@ -28,23 +28,31 @@ More recently, methods to expand the tissue volume using synthetic polymers have
 
 ## Results
 
-The lens was developed from first principles with the aid of optical design software (Zemax), and optimizing for an imaging FOV of 6 mm and an N.A. as close as possible to 0.5. The FOV was chosen to match the diameter of a 12.5 day old mouse embryo specimen, and the value of N.A. was chosen based on the well-known equations (Pawley, 2006)(1)rlat=0.61λN.A.
+The lens was developed from first principles with the aid of optical design software (Zemax), and optimizing for an imaging FOV of 6 mm and an N.A. as close as possible to 0.5. The FOV was chosen to match the diameter of a 12.5 day old mouse embryo specimen, and the value of N.A. was chosen based on the well-known equations (Pawley, 2006)
 
-and(2)zmin=2nλ(N.A)2.
+$$
+r_{lat}=\frac{0.61\lambda}{N.A.}
+$$
 
-where
+and
+
+$$
+z_{min}=\frac{2n\lambda}{(N.A)^{2}.}
+$$
+
+where rlat is the radius of the first dark ring around the central disk of the Airy diffraction image, zmin is the distance of the centre of the three-dimensional diffraction pattern to the first axial minimum, n is refractive index and λ is wavelength. Since the depth of field (z resolution) is inversely proportional to the square of the numerical aperture, it rapidly becomes poor for low N.A. lenses. Below N.A.=0.45 the lateral resolution remains tolerable but the axial resolution is no longer sufficient for resolving sub-cellular details (Figure 1—figure supplement 1). Another important design parameter was the large working distance, to enable focusing through the embryo which, at 10 days old, is around 3 mm thick. This dictated that the lens elements should be physically large, to accommodate the wide collection angles for light originating at a large distance from the lens.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig1-v1.jpg)
 
-**Figure 1.:** BE=beam expander, ND= neutral density filter. Only one detection channel is shown here for ease of presentation. Inset: Illustration of the optical train of the Mesolens and scan lens. Also shown is the position of the compensator plates and camera when the Mesolens is used for wide-field epi-fluorescence imaging.DOI: http://dx.doi.org/10.7554/eLife.18659.003
+**Figure 1.:** BE=beam expander, ND= neutral density filter. Only one detection channel is shown here for ease of presentation. Inset: Illustration of the optical train of the Mesolens and scan lens. Also shown is the position of the compensator plates and camera when the Mesolens is used for wide-field epi-fluorescence imaging.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** for a wavelength of 500 nm, from Equations 1 and 2. (a) shows the full range of N.A. while (b) shows the higher N.A. range only. It is clear that below N.A.=0.45 the axial resolution becomes significantly poorer with decreasing N.A.DOI: http://dx.doi.org/10.7554/eLife.18659.004
+**Figure 1—figure supplement 1.:** for a wavelength of 500 nm, from Equations 1 and 2. (a) shows the full range of N.A. while (b) shows the higher N.A. range only. It is clear that below N.A.=0.45 the axial resolution becomes significantly poorer with decreasing N.A.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Zemax spot diagrams at wavelengths of 405, 436, 470, 705 and 800 nm and at distances of 0, 1.75 and 2.5 mm from the center of the field at the sample plane. The black circles are the Airy disk diameters calculated from the N.A. and wavelength.DOI: http://dx.doi.org/10.7554/eLife.18659.005
+**Figure 1—figure supplement 2.:** Zemax spot diagrams at wavelengths of 405, 436, 470, 705 and 800 nm and at distances of 0, 1.75 and 2.5 mm from the center of the field at the sample plane. The black circles are the Airy disk diameters calculated from the N.A. and wavelength.
 
 Because embryos may be examined in a variety of optically dissimilar fluids such as water, glycerol, oil and benzyl benzoate (such as for the clearing liquid BABB), it was necessary to make the lens suitable for use with different immersion fluids and mounting media. The Mesolens was designed for immersion into non-corrosive immersion media such as oil (Type DF), water and glycerol. We use BABB only as a mounting medium, and the specimen and BABB are separated from the immersion fluid by a type 1.5 coverslip. This meant providing means to shift lens element groups during use so that adequate correction for spherical and other aberrations could be obtained for the different liquids. In practice, the necessary shift was controlled by two knurled rings on the lens barrel, similarly to a standard microscope objective that corrects for the coverslip thickness or immersion fluid. In addition, a further interchangeable flat compensator plate was incorporated into the design to compensate for spherical aberrations introduced by the different immersion fluids, with a thickness specific to the immersion medium used. The main challenge in our lens design was to achieve the colour correction between 400 nm and 700 nm (see Figure 1—figure supplement 2). Also, the diverse glass types required all had to be tested for auto-fluorescence, and the precise refractive index of each selected sample had to be ascertained and the lens design adjusted to accommodate the small variations from one melt to another of nominally the same glass.
 
@@ -60,15 +68,65 @@ We note that with a 6 mm FOV the number of pixels required for a full Nyquist 
 
 To summarize, the lens specifications were a magnification of intermediate image of 4x, an N.A. of 0.47, with a working distance of 3.15 mm, 3.40 mm, and 3.74 mm for water, glycerol, and oil immersion media respectively. The distortion was designed to be <0.7% at the periphery of the field. The lens was colour-corrected over the full visible range to allow imaging of samples with multiple fluorescent labels. The flatness of field was designed to be <3 µm for wavelengths of 400–700 nm across the 6 mm FOV.
 
-## Measurements of optical performance
+### Measurements of optical performance
 
-For quantitative measurements of resolution, a special test target was prepared by electron beam lithography of a 75 nm thick nickel-chromium coating on glass (
+For quantitative measurements of resolution, a special test target was prepared by electron beam lithography of a 75 nm thick nickel-chromium coating on glass (Oldenbourg et al., 1993). The lateral image resolution was judged by the visibility of a series of gratings with periods of 2 µm, 1 µm, and 0.5 µm. In brightfield transmission mode using wide-field camera detection and in laser scanning confocal reflection mode using the 514 nm laser with photomultiplier tube (PMT) detection, the resolution was found to be better than 1 µm (Figure 2), with the 0.5 µm grating unresolved but the 1 µm grating clearly resolved.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig2-v1.jpg)
 
-**Figure 2.:** (a) shows an image of the specimen consisting of a series of gratings with periods of 2 µm, 1 µm, and 0.5 µm obtained with brightfield illumination and captured in wide-field mode using a camera. (b) and (c) show intensity linescan measurements of this region of the specimen obtained in (b) laser scanning confocal reflection mode using a 514 nm laser and (c) in camera mode. The intensity profiles in (b) and (c) are obtained from the region indicated by the dashed line in (a).DOI: http://dx.doi.org/10.7554/eLife.18659.006
+**Figure 2.:** (a) shows an image of the specimen consisting of a series of gratings with periods of 2 µm, 1 µm, and 0.5 µm obtained with brightfield illumination and captured in wide-field mode using a camera. (b) and (c) show intensity linescan measurements of this region of the specimen obtained in (b) laser scanning confocal reflection mode using a 514 nm laser and (c) in camera mode. The intensity profiles in (b) and (c) are obtained from the region indicated by the dashed line in (a).
 
-To evaluate the full point-spread function (PSF) we used yellow/green-emitting fluorescent beads. For comparison similar measurements were conducted with a conventional dry objective lens of similar magnification (5x/0.15 N.A HCX PL Fluotar, Leica Microsystems) mounted on an upright microscope. The results are presented in Table 1. The bead diameter (dbead) was deconvolved using(3)dmeasured=dbead2+dreal2.10.7554/eLife.18659.007Table 1.Measured and calculated values (µm) for the FWHM of the PSF in laser scanning confocal mode and wide-field epi-fluorescence mode for a conventional 5x/0.15 N.A. lens and the 4x/0.47 N.A. Mesolens used with oil immersion. We have assumed emission λ=550 nm for the calculations.DOI: http://dx.doi.org/10.7554/eLife.18659.0075x/0.15 N.A.Mesolens (4x/0.47 N.A.)TheoreticalMeasuredTheoreticalMeasuredXY FWHM, epi1.91.90.60.7Z FWHM, epi41516.37XY FWHM, confocal1.81.70.60.8Z FWHM, confocal25383.78
+To evaluate the full point-spread function (PSF) we used yellow/green-emitting fluorescent beads. For comparison similar measurements were conducted with a conventional dry objective lens of similar magnification (5x/0.15 N.A HCX PL Fluotar, Leica Microsystems) mounted on an upright microscope. The results are presented in Table 1. The bead diameter (dbead) was deconvolved using(3)dmeasured=dbead2+dreal2.
+
+**Table 1.**
+ Measured and calculated values (µm) for the FWHM of the PSF in laser scanning confocal mode and wide-field epi-fluorescence mode for a conventional 5x/0.15 N.A. lens and the 4x/0.47 N.A. Mesolens used with oil immersion. We have assumed emission λ=550 nm for the calculations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">5x/0.15 N.A.</th>
+      <th colspan="2">Mesolens (4x/0.47 N.A.)</th>
+    </tr>
+    <tr>
+      <th>Theoretical</th>
+      <th>Measured</th>
+      <th>Theoretical</th>
+      <th>Measured</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>XY FWHM, epi</td>
+      <td>1.9</td>
+      <td>1.9</td>
+      <td>0.6</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Z FWHM, epi</td>
+      <td>41</td>
+      <td>51</td>
+      <td>6.3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>XY FWHM, confocal</td>
+      <td>1.8</td>
+      <td>1.7</td>
+      <td>0.6</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Z FWHM, confocal</td>
+      <td>25</td>
+      <td>38</td>
+      <td>3.7</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
 
 The lower than theoretical diffraction-limited resolution in z for laser scanning confocal mode was likely due to residual (primarily astigmatic) aberrations from the scan lens or from inaccuracies in the scan-lens-to-Mesolens separation. The astigmatic error was visible at the edges of the FOV. Nevertheless, the z resolution is, as we will demonstrate below, sufficient to resolve sub-cellular detail, and far superior to a standard objective lens with comparable magnification.
 
@@ -76,35 +134,49 @@ To investigate whether the lower than theoretical diffraction-limited axial reso
 
 In order to make measurements of the relative optical throughput efficiency of the Mesolens as compared with a commercial low-magnification, low numerical aperture lens (4x/0.1 N.A. Plan, Nikon) a light-emitting diode (HLMP-2855, Broadcom) was used as a specimen of standard luminosity (Beach and Duling, 1993). The LED was driven at constant current and the intensity was monitored using a photodiode. The specimen was set up with the same CCD camera for the Mesolens in oil-immersion mode and the 4x/0.1 N.A. objective. Using the same exposure time the intensity with the Mesolens was found to be 25x that with the conventional objective, in good agreement with the 4.7 times higher N.A. available from the Mesolens. To measure the optical throughput we compared the laser power immediately after the beam splitter in the periscope (see Figure 1) with the laser power at the specimen plane at a wavelength of 488 nm, and we measured an on-axis transmission of 11%. A significant loss results from overfilling the top mirror in the periscope, which is required in order to achieve the flattest possible wavefront. There are also additional losses from the scanning mirrors and in the scan lens. Although the optical throughput of a standard microscope objective can be several tens of percent, the transmission of the complete system is more similar to what we measure here. We also note that the transmission value of the complete system is rarely given explicitly by microscope manufacturers but, based on the quoted power of the laser system (e.g. 50 mW for a Krypton-Argon laser operating at a wavelength of 488 nm) and measuring the maximum average power at the specimen plane (e.g. 3 mW after the objective lens), we measure a similar magnitude of optical loss with commercial confocal microscopes compared to the Mesolens. The good transmission of the Mesolens itself is also confirmed by our comparison of the transmission of the Mesolens with that of a 4x/0.1 N.A. lens in camera mode.
 
-## Imaging of biological specimens
+### Imaging of biological specimens
+
+Figure 3 and the Video 1 show wide-field epi-fluorescence data from an explant culture of rat embryonic brain as a colour merge of three camera images at the same focus position. In this preparation, the blue fluorescence is of nuclei stained for DNA with DAPI, neurones show green because of Alexa 488 conjugated to an antibody against beta-III tubulin and astrocytes are red because of Alexa 546 conjugated to anti-GFAP (glial fibrillary acid protein). A custom multiband reflector (Chroma) was used with a multiband barrier filter and, for each image, a different excitation waveband was selected from a mercury arc lamp. This image clearly shows the excellent chromatic correction of the lens with all three colours simultaneously in focus. Furthermore, the image demonstrates the possibility to view both the full large FOV and tiny details in the same image, using only (17x) software zoom.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig3-v1.jpg)
 
-**Figure 3.:** The blue fluorescence is of nuclei stained with DAPI, neurons show green because of Alexa 488 conjugated to an antibody against beta-III tubulin and astrocytes are red because of Alexa 546 conjugated to anti-GFAP. (a) Full FOV (b) Software zoom of the area indicated in (a) (Video 1) to visualize individual nuclei and neurons.DOI: http://dx.doi.org/10.7554/eLife.18659.008
+**Figure 3.:** The blue fluorescence is of nuclei stained with DAPI, neurons show green because of Alexa 488 conjugated to an antibody against beta-III tubulin and astrocytes are red because of Alexa 546 conjugated to anti-GFAP. (a) Full FOV (b) Software zoom of the area indicated in (a) (Video 1) to visualize individual nuclei and neurons.
 
-To demonstrate the superior sectioning capability of the Mesolens compared to a standard objective lens with comparable magnification, we imaged the same fixed, cleared and acridine orange-stained 10 day old mouse embryo with the Mesolens and with a dry objective lens of similar magnification (5x/0.15 N.A. HCX PL Fluotar, Leica Microsystems) mounted on an upright laser scanning microscope. The embryo was lying on its side so that XY scanning produced an optical section that was anatomically sagittal. The XZ images are displayed in
+![Video 1.](https://cdn.elifesciences.org/articles/18659/elife-18659-media1.mp4.jpg)
+
+**Video 1.:** The blue fluorescence is from nuclei stained with DAPI, neurones show green because of Alexa 488 conjugated to an antibody against beta-III tubulin and astrocytes are red because of Alexa 546 conjugated to anti-GFAP. The zoom is generated by software only. Halfway into the movie we have changed to a smaller format camera mounted on an image magnifier to achieve fine enough sampling. Note that this will not enhance the optical resolution of the image but was necessary to overcome the lack of a camera able to record hundreds of megapixels in a single image.
+
+To demonstrate the superior sectioning capability of the Mesolens compared to a standard objective lens with comparable magnification, we imaged the same fixed, cleared and acridine orange-stained 10 day old mouse embryo with the Mesolens and with a dry objective lens of similar magnification (5x/0.15 N.A. HCX PL Fluotar, Leica Microsystems) mounted on an upright laser scanning microscope. The embryo was lying on its side so that XY scanning produced an optical section that was anatomically sagittal. The XZ images are displayed in Figure 4a and b. Figure 4a was taken with a z-plane spacing of 1.5 µm and a line average of n=12 and Figure 4b has a plane spacing of 1 µm and no averaging. For both lenses, but acutely for the 5x/0.15 N.A. lens, this is much smaller than the size of the PSF. The Mesolens can image throughout the entire 2 mm thick embryo with sub-cellular resolution (we can see individual nuclei all the way through). This is in contrast to the image with the commercial low magnification, low N.A. objective, where the long needle-like vertical structures indicate a very poor z resolution. The lateral resolution also remains micron-sized throughout the embryo, as can been seen from Figure 4c, which presents an XY cross section midway through the same embryo. In Figure 4b the dark cavity within the midbrain on the left and the neural canal within the spinal cord on the right are imaged with good axial resolution even though they are deep within the embryo, which is equally-well resolved at the top and bottom of the z range. Although the larger cavities are also visible in the image taken with the 5x lens, finer details such as the dark extracellular spaces in the bright neural tube to the right of the image and the epithelial cell monolayer (upper right margin and left lower corner) are only visible in the Mesolens image (Figure 4b). In the XY section (Figure 4c) similar fine details including individual cell nuclei in all the tissues are clearly resolved. Structures within the embryo were identified by means of (Kaufman, 1992). The constant signal with increasing depth throughout the specimen arises from having a well-cleared specimen. We did not adjust the laser power or detector gain when imaging deeper into tissue.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig4-v1.jpg)
 
-**Figure 4.:** (a) is the embryo imaged in XZ using a dry objective lens of similarly low magnification to the Mesolens (5x/0.15 N.A., HCX PL Fluotar, Leica Microsystems). (b) is the same embryo imaged at the same region in XZ using the Mesolens with oil immersion. The Mesolens can image throughout the entire 2 mm thick embryo with sub-cellular resolution: individual nuclei can be observed all the way through. This is in contrast to the image with the commercial low magnification, low N.A. objective, where the long needle-like vertical structures indicate a very poor z resolution. Figure 4c shows an XY cross section at a depth of around 1 mm into the same specimen imaged using the Mesolens. Full resolution versions of (b) and (c) are available as Figure 4—figure supplements 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.18659.010
+**Figure 4.:** (a) is the embryo imaged in XZ using a dry objective lens of similarly low magnification to the Mesolens (5x/0.15 N.A., HCX PL Fluotar, Leica Microsystems). (b) is the same embryo imaged at the same region in XZ using the Mesolens with oil immersion. The Mesolens can image throughout the entire 2 mm thick embryo with sub-cellular resolution: individual nuclei can be observed all the way through. This is in contrast to the image with the commercial low magnification, low N.A. objective, where the long needle-like vertical structures indicate a very poor z resolution. Figure 4c shows an XY cross section at a depth of around 1 mm into the same specimen imaged using the Mesolens. Full resolution versions of (b) and (c) are available as Figure 4—figure supplements 1 and 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** XZ section. This is the high-resolution version of Figure 4b.DOI: http://dx.doi.org/10.7554/eLife.18659.011
+**Figure 4—figure supplement 1.:** XZ section. This is the high-resolution version of Figure 4b.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** XY cross section at a depth of around 1 mm. This is the high-resolution version of Figure 4c.DOI: http://dx.doi.org/10.7554/eLife.18659.012
+**Figure 4—figure supplement 2.:** XY cross section at a depth of around 1 mm. This is the high-resolution version of Figure 4c.
 
-To demonstrate the capability of the instrument as a two-channel detection system, and to illustrate the very large FOV, we imaged 12.5 day old embryos, which cover nearly the full 6 mm FOV. This embryo was stained with an antibody against axonal beta tubulin coupled to the fluorescent dye Alexa 594, to highlight nerve cells and with acridine orange, here used chiefly as a nuclear marker. A dual-colour single optical section of a 12.5 day embryo stained following this protocol is presented as
+To demonstrate the capability of the instrument as a two-channel detection system, and to illustrate the very large FOV, we imaged 12.5 day old embryos, which cover nearly the full 6 mm FOV. This embryo was stained with an antibody against axonal beta tubulin coupled to the fluorescent dye Alexa 594, to highlight nerve cells and with acridine orange, here used chiefly as a nuclear marker. A dual-colour single optical section of a 12.5 day embryo stained following this protocol is presented as Figure 5, with a 3D rendering around one of the eyes of the embryo shown as Video 2. A lower-quality, smaller version of the same data is available as Video 3. In the 3D rendering there are 60 images axially separated by 3.33 µm, imaging a total thickness of 200 µm and we used the fluorescence mode of our image reconstruction software (Volocity, Perkin Elmer) which applies a direct opacity rendering. We can clearly identify fine structures throughout the embryo such as the developing heart muscle fibers and fine details in the eye such as the corneal endothelium. The inset shows a blow-up of the eye region revealing the individual cell nuclei. We emphasize that this image is only a software zoom from the full scan range of the confocal Mesolens system, not a smaller scanned region. In the eye, the lens was visible as a slightly absorbing structure with a sharply defined outline, surrounded in turn by cells within the aqueous humour and then the strongly-stained retina. All these structures were enclosed in the corneal stroma, lined on the inside with the corneal endothelium and on the outside with the epithelial precursor of the conjunctiva.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig5-v1.jpg)
 
-**Figure 5.:** The neuronal axons are stained with Alexa 594 (cyan) and nuclei with acridine orange (red). Scale bar=1 mm. The inset shows a blow-up of the eye region revealing the individual cell nuclei. The image plane of this inset is located 36 µm closer to the specimen surface than in the full image shown. The scale bar on the inset image is 300 µm. We can clearly identify fine structures throughout the embryo such as the developing heart muscle fibers and fine details in the eye such as the corneal endothelium. The cyan streak in the lower right corner of the blow-up indicates a stained nerve. A z-stack of the same specimen is presented in Video 2.DOI: http://dx.doi.org/10.7554/eLife.18659.013
+**Figure 5.:** The neuronal axons are stained with Alexa 594 (cyan) and nuclei with acridine orange (red). Scale bar=1 mm. The inset shows a blow-up of the eye region revealing the individual cell nuclei. The image plane of this inset is located 36 µm closer to the specimen surface than in the full image shown. The scale bar on the inset image is 300 µm. We can clearly identify fine structures throughout the embryo such as the developing heart muscle fibers and fine details in the eye such as the corneal endothelium. The cyan streak in the lower right corner of the blow-up indicates a stained nerve. A z-stack of the same specimen is presented in Video 2.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18659/elife-18659-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (a) XZ section through 12.5 day old embryo detecting fluorescence from acridine orange. (b) The same XZ section detecting fluorescence from Alexa 594. Panels to the right show XY sections at different heights (indicated in the Fig. in microns). The dashed line in the central panel shows the location of the XZ plane. Scale bar = 1 mm.DOI: http://dx.doi.org/10.7554/eLife.18659.014
+**Figure 5—figure supplement 1.:** (a) XZ section through 12.5 day old embryo detecting fluorescence from acridine orange. (b) The same XZ section detecting fluorescence from Alexa 594. Panels to the right show XY sections at different heights (indicated in the Fig. in microns). The dashed line in the central panel shows the location of the XZ plane. Scale bar = 1 mm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/18659/elife-18659-media2.mp4.jpg)
+
+**Video 2.:** This embryo was stained with an antibody against axonal beta tubulin coupled to the fluorescent dye Alexa 594, to highlight nerve cells, and with acridine orange, here used chiefly as a nuclear marker. All frames in the rendering are from full 6 mm x 6 mm frames and only software zoom is used. The blow-up of the eye region reveals individual cell nuclei. The lens was visible as a slightly absorbing structure with a sharply defined outline, surrounded in turn by cells within the aqueous humour and then the strongly-stained retina. All these structures were enclosed in the corneal stroma, lined on the inside with the corneal endothelium and on the outside with the epithelial precursor of the conjunctiva.
+
+![Video 3.](https://cdn.elifesciences.org/articles/18659/elife-18659-media3.mp4.jpg)
+
+**Video 3.:** Video 3 has a much smaller file size for quick downloading and viewing.
 
 To demonstrate that an outstanding axial resolution is retained over the full FOV with only a small degradation at the edges of the image we performed a two-color XZ image of the 12.5 day old embryo. This is presented in Figure 5—figure supplement 1.
 
@@ -126,7 +198,7 @@ This development represents the most radical change in microscope objective desi
 
 ## Materials and methods
 
-## The Mesolens
+### The Mesolens
 
 The excitation and detection beam path for laser scanning confocal microscopy with the Mesolens is illustrated in Figure 1. The excitation light was provided by a fiber-coupled multi-line laser system (Laserbank, Cairn Research), comprising 405 nm, 488 nm, 514 nm, 532 nm, 561 nm and 637 nm wavelengths. The laser was expanded using an f=−25 mm lens (LC1054, Thorlabs) and an f=+125 mm lens (LA1986-A, Thorlabs), propagated through an f=+50 mm lens (LA1131-A) and directed towards the scanning system using a periscope. An 80/30 beamsplitter (PBSW-532, Thorlabs) formed the lower mirror of the 1 m periscope, and the top mirror (Thorlabs BB2-E02) steered the beam towards a large-aperture f=+1000 mm achromatic doublet lens (LA1779-A-ML, Thorlabs) to collimate the light before reaching the scan mirrors. The scanning mirrors directed the light through the scan lens and the Mesolens focused the light into the specimen.
 
@@ -134,7 +206,7 @@ The reflected light or fluorescence signal from the specimen was propagated back
 
 Images were digitized using a PCI-6110 (National Instruments) multifunction DAQ card with a 12 bit, 5 MHz, simultaneous sampling A/D converter and 16 bit, 4 MHz, D/A converter. For optimum scanning rate and stability, a sine wave scan waveform (max. 66 Hz), was used, with the first half of each cycle digitized and remapped to obtain a linear image field. The system was controlled using an in-house, laser scanning software package, ‘Mesoscan’, designed to handle 400 megapixel scanned images. Images were stored in the Open Microscopy Environment OME.TIFF format and analysed using ImageJ.
 
-## Resolution measurements
+### Resolution measurements
 
 The camera used to capture the bright field image in Figure 2 was a Nikon Ds-Qi1Mc mounted on top of an image magnifier with a 10x objective lens serving as the magnifying lens. Note that this will not enhance the optical resolution of the image but is a way around the lack of a camera with sub-micron pixel size as required for Nyquist sampling of the image. The same method is used for measuring the PSF using fluorescent beads in epi-fluorescence mode. The upright microscope used for comparing the resolution of the Mesolens to that of a low N.A. 5X lens was a Leica DM6000, with an SP5 scanning unit (Leica Microsystems).
 
@@ -142,11 +214,11 @@ Wide-field epi-fluorescence measurements were made by using 470 nm from a mercur
 
 The flatness of field was measured in epi-fluorescence in oil immersion mode using 6 µm fluorescent beads (18862, Polysciences Inc.) dried down on the surface of a mirror serving as a flat substrate. A camera with a 35 mm sensor chip (C3900-024, Hamamatsu) was placed directly on top of the Mesolens via an F-mount, and images were captured using the manufacturer’s software (HCImage, Hamamatsu).
 
-## Explant culture of rat brain, Figure 3, Video 1
+### Explant culture of rat brain, Figure 3, Video 1
 
 Explant cultures of embryonic rat brain were prepared and fixed with 2% paraformaldehyde and stained as follows: The nuclei were stained with DAPI, the neurons were stained with Alexa 488 conjugated to an antibody against beta-III tubulin and astrocytes were stained with Alexa 546 conjugated to anti-GFAP. For the fluorescence imaging with this specimen a mercury lamp was used for excitation, with custom filters designed for DAPI, Alexa 488 and Alexa 546 (Chroma). Two different cameras were used to image the same region (Figure 3, Video 1). A low-power image was made by recording the entire field of the Mesolens on a monochrome 35 mm CCD chip with 10 megapixels, each of 9 µm square (C3900-024, Hamamatsu). Three images, using UV, blue or green excitation from the mercury lamp were merged and coded blue, green and red respectively. A high-power image was made with a small format color camera Nikon DSL1 (used without a magnifier, in contrast to the resolution measurements described above), recording only a 2.2 mm x 1.6 mm portion of the Mesolens field with a square pixel size of 3.4 µm. The theoretical resolution of the Mesolens (0.6 µm) corresponds to 2.4 µm in image space in the camera, so neither camera allowed Nyquist sampling. In the Video 1, the wide-field epi-fluorescence image is first software-zoomed and then replaced by the image from the smaller format camera, which is further software zoomed and the view is software-panned around the region recorded in the small-format camera. This procedure was necessary to overcome the lack of a camera able to record hundreds of megapixels in a single image.
 
-## Protocols for staining embryos (Figures 4 and 5, Figure 4—figure supplements 1, 2 and Figure 5—figure supplement 1, Video 2 and Video 3)
+### Protocols for staining embryos (Figures 4 and 5, Figure 4—figure supplements 1, 2 and Figure 5—figure supplement 1, Video 2 and Video 3)
 
 For the 10 day old embryos in Figures 4, Figure 4—figure supplements 1 and 2, embryos were dissected from mouse uteri, fixed in ethanol: acetic acid 3:1 by volume overnight at 4°C and then transferred into aqueous media via a series of ethanol/water mixtures with decreasing ethanol content. The embryos were then stained overnight with acridine orange (0.05% in phosphate-buffered saline), rinsed overnight in PBS, dehydrated with ethanol solutions, cleared in xylene and mounted in Histomount (Fisher Scientific).
 
@@ -154,7 +226,7 @@ For the embryo presented in Figure 5 and Figure 5—figure supplement 1 embryos 
 
 For optical clearing, embryos were first dehydrated by removing half of the PBS and replacing with methanol for 5 min. They were then washed 3 times in methanol for 20 min per wash and then half of the methanol was removed and replaced with 1:2 benzyl alcohol:benzyl benzoate (BABB) for 5 min. Finally, embryos were cleared in 100% BABB overnight at 4°C and were stored in BABB at room temperature until re-staining with acridine orange. All the washing, staining and clearing steps were done with the sample on a rocker. The embryos were then stained with nuclear stain acridine Orange as follows. The embryos were transferred from BABB to PBS via a series of solvents. First, the embryo was transferred to xylene, and left to soak in several changes of xylene to remove the BABB over a period of days. It was then transferred from xylene to three changes of absolute ethanol, then 90% ethanol, 10% water by volume, then 75% ethanol, 50% ethanol and finally into distilled water (with at least 10 min in each change). Acridine orange powder was dissolved in PBS to a pale yellow solution. The embryo was left in the staining solution overnight with gentle rolling on a slow turntable. The embryo was then washed in two changes of PBS over an hour and passed through the same series of alcohols up to xylene and then rolled in BABB overnight. These embryos were imaged in BABB.
 
-## Imaging parameters for the embryos (Figures 4, 5, Figure 4—figure supplements 1, 2 and Video 2)
+### Imaging parameters for the embryos (Figures 4, 5, Figure 4—figure supplements 1, 2 and Video 2)
 
 The images in Figures 4b,c, Figure 4—figure supplements 1 and 2 were acquired using 488 nm excitation with a power of ca 100 µW at the sample plane and the signal was detected using a 525/39 nm band pass filter. For Figure 4b/Figure 4—figure supplement 1 we used a pixel size of 1 µm x 1 µm (XZ) a scan speed of 22 lines per second and no frame averaging. For Figure 4c/Figure 4—figure supplement 2 we used a pixel size of 0.5 µm x 0.5 µm (XY) a scan speed of 22 lines per second and a frame average of 4. The low line speed was necessitated by the low bandwidth of the PMT used for the images.
 

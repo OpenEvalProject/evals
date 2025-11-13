@@ -36,9 +36,21 @@ The nature of the proximal signal that facilitates displacement of the F99 gate 
 
 ## Results
 
-## Molecular dynamics simulations reveal sulfur-aromatic interactions involving the hydrophobic gate in activated states
+### Molecular dynamics simulations reveal sulfur-aromatic interactions involving the hydrophobic gate in activated states
 
 To better understand the molecular mechanisms underlying F99 gate opening, we began our studies by carefully mapping the movements of F99 in molecular dynamics (MD) simulations of gain-of-function (GOF) and loss-of-function (LOF) dOrai mutants (Figure 2). Although there are now several available structures of activating mutants (Hou et al., 2018; Liu et al., 2019), we performed simulations using the 3.35 Å crystal structure of Drosophila melanogaster Orai ([PDB ID:4HKR]; Hou et al., 2012) because it remains the most complete, highest-resolution structure and has been utilized in previous MD studies (Bonhenry et al., 2019; Dong et al., 2019). Further, given the high sequence identity between dOrai and human Orai1 (hOrai1) within the transmembrane domains, channel phenotypes identified using MD simulations in dOrai are likely to be translatable to electrophysiological results in hOrai1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Snapshots of WT, H206Y (hOrai1 H134Y), H206Q (hOrai1 H134Q) and H206C (hOrai1 H134C) dOrai mutants from the MD simulation runs showing positions of key residues in the TM1 and TM3 helices. F171 (hOrai1 F99, green), M173 (hOrai1 M101, blue), and F259 (hOrai1 F187, red) are represented as spheres. Insets: Enlarged views of the F171-M173-F259 locus (hOrai1 F99-M101-F187) with sulfur atoms of M173 shown in orange. (E–F) Distribution of distances between M173 with F171 (d1) and M173 with F259 (d2), respectively. Distances were measured from the sulfur of the methionine and the center of mass of the phenylalanine ring. The mean and standard error of mean of M173-F171 distances over simulation repeats are 7.4 ± 0.1 Å for WT, 6.4 ± 0.2 Å for H206C, 6.6 ± 0.1 Å for H206Q, and 7.9 ± 0.1 Å for H206Y. Compared to closed WT and H206Y channels, constitutively active dOrai mutants H206Q/C show a greater proportion of M173-F171 interactions within the sulfur-aromatic interaction distance of 3–7 Å. By contrast, M173-F259 distance was constant across the different dOrai variants. Black solid lines in (E) and (F) represents distances observed in the closed dOrai crystal structure 4HKR. (G–H) Area under the curve (AUC) of M173-F171 interaction distances within 7 Å in panel E plotted against pore helix rotation (G) and number of pore waters (H) (Pearson correlation coefficient of 0.98 and 0.99, respectively). (I–K) Scatter plots of the hexameric average of M173-F171 distances plotted against corresponding average pore helix rotation (I), pore hydration (J) and average pore diameter (K). The distributions of the x and y parameters are displayed on the periphery of the graphs. In general, shorter M173-F171 distances were associated with increased pore helix rotation, pore hydration and pore diameter across the Orai variants. These dynamical channel properties are anti-correlated within simulations of each system (Pearson correlation coefficient of −0.65 (WT), –0.68 (H206C), −0.72 (H206Q), and −0.17 (H206Y) for panel I). Similarly, these properties were anti-correlated across our mutational landscape (Pearson correlation coefficients of −0.79 (panel I), –0.39 (panel J), and −0.56 (panel K)). All analysis was done after the equilibration window of 100 ns.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Side and top views of TM2 H206 residue (hOrai1 H134) in a monomer in the dOrai crystal structure (PDB ID: 4HKR). Numbering hOrai1 is shown in parentheses. (B) Current densities of WT and H134Y/Q/C Orai1 mutants without and with STIM1 co-expression (Yeung et al., 2018). The Orai1 H134Y variant conducts smaller, non-selective currents in the presence of STIM1 compared with WT channels, and H134Q/C Orai1 channels are constitutively active at baseline. The current amplitude of H134C in the absence of STIM1 is significantly larger than that of H134Q.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Relative probability distributions of the axial position of Cα atoms for all pore-lining residues (human Orai1 numbering in brown). Average distribution of water oxygen atoms (B) and Na+ and Cl− ions (C) along the pore axis. The water occupancies of H206Q/C mutants deviate from those of WT and H206Y dOrai most significantly in the hydrophobic stretch (V102-L95) of the pore. Data in panels (A–C) have been previously reported (Yeung et al., 2018). (D) Molecular rendering of the geometric positions involved in computing pore helix rotation angles αF171 and αM173. These angles are computed between the center of mass of all TM1 helices (white sphere), the center of mass of each TM1 helix, and the Cα atom of the residue of interest, shown for F171 (green) and M173 (blue), respectively. Scatterplot of the hexameric average of pore helix rotation computed at position F171 with respect to pore helix rotation at position M173. The relationship between these variables is highly correlated (Pearson correlation coefficient of 0.88). The pore rotation angle of F171 (30.6°) and M173 (230.1°) measured from the crystal structure of dOrai (4HKR) is shown as a red dashed lines. (E–F) Distribution of distances between M173 with F171 (d3) and M173 with F259 (d4), respectively. Distances were measured from the Cβ of the methionine and the center of mass of the phenylalanine ring. The mean and standard error of mean of M173-F171 distances over simulation repeats are 6.5 ± 0.1 Å for WT, 7.0 ± 0.1 Å for H206Y, 6.0 ± 0.1 Å for H206Q, and 5.8 ± 0.2 Å for H206C. In (F), M173-F259 distances over simulation repeats are 6.1 ± 0.1 Å for WT, 5.8 ± 0.1 Å for H206Y, 6.6 ± 0.1 Å for H206Q, and 6.6 ± 0.1 Å for H206C. Compared to closed WT and H206Y channels, constitutively active dOrai mutants H206Q/C show a greater proportion of M173-F171 directed orientations. By contrast, M173-F259 distance reflected this trend in reverse. Black solid lines in (E) and (F) represent distances observed in the crystal structure (4HKR) of closed dOrai (d3 = 7.3 Å and d4 = 5.8 Å).
 
 For our simulations, we took advantage of mutations at a well-studied gating locus, H134 on TM2 (equivalent to dOrai H206), to model inactive, partially active, or fully active channels. The histidine side-chain of H134 faces the non-pore-lining surface of TM1 and has been suggested to stabilize the closed channel state by acting as a steric brake at the TM1-TM2/3 ring interface (Yeung et al., 2018; Figure 2—figure supplement 1A). Previous studies have described several interesting GOF or LOF mutations at hOrai1 H134 that either inhibit or constitutively activate Orai1 gating (Frischauf et al., 2017; Yeung et al., 2018). Compared to WT channels, the LOF mutant hOrai1 H134Y (dOrai H206Y) conducts small, non-selective Orai1 currents when co-expressed with STIM1, reflecting a defect in STIM1-mediated gating (Yeung et al., 2018). A second mutant, hOrai1 H134Q (dOrai H206Q), is modestly active at rest but can be further gated by STIM1. By contrast, a third mutant, hOrai1 H134C (dOrai H206C), is one of the most strongly active variants, displaying similar properties as STIM1-gated channels even without STIM1, including inward-rectifying, Ca2+-selective currents and displacement of the F99 gate (Bulla et al., 2019; Frischauf et al., 2017; Yeung et al., 2018). The channel activities of these mutants, as measured by electrophysiology (Figure 2—figure supplement 1B), correlate well with metrics such as the extent of pore helix rotation, outer pore dilation, and pore hydration observed in MD simulations (Figure 2—figure supplement 2B; [see also Yeung et al., 2018]).
 
@@ -50,9 +62,17 @@ By contrast, the distance between M173 and F171 showed much larger variability a
 
 While the Met-Phe interactions described above may be mediated by side-chain fluctuations, rigid body motions of the TM1 backbone may also contribute to these interactions. To assess this possibility, we quantified the distances between the Cβ of M173 and the center of the F171 and F259 rings in the different H206 mutants (Figure 2—figure supplement 2E,F). Compared to the sulfur atom distances, Cβ measurements are likely to be driven more by pore helix rotation because the M173 Cβ is closer to the center of the TM1 helix. In WT and H206Y channels, M173 is predominantly facing TM3 as part of the TM1-TM3 hydrophobic clamp, so that Cβ is closer to F259 and farther away from F171. However, in the activated states of the H206Q/C channels, the TM1 rotation angle distribution displayed an additional peak corresponding to distances closer to F171 and farther from F259 (Figure 2—figure supplement 2E,F). Interestingly, analysis of the M173 Cβ-F259 distances revealed clear differences between closed (WT and H206Y) and open (H206C and H206Q) channel states (Figure 2—figure supplement 2F). This result suggests that the TM1 helix is sufficiently mobile to display conformational alterations at the M173 Cβ position between open and closed states. By contrast, as already indicated above, no differences were seen in the distance measured from the sulfur atom to the F259 ring (Figure 2F), indicating that the M173 side-chain exhibits sufficient flexibility and that the sulfur atom is intrinsically drawn toward the F259 ring.
 
-## Enhancing the M101-F99 interaction boosts F99C/M101C Orai1 channel activity
+### Enhancing the M101-F99 interaction boosts F99C/M101C Orai1 channel activity
 
 The finding that M173-F171 (hOrai1 M101-F99) interactions are augmented in MD simulations of active channel states led us to consider whether artificially forcing an interaction between M101 and F99 in hOrai1 via a metal-ion bridge can directly activate the channel. Metal-ion bridges in double cysteine mutants have been exploited in many studies of ion channel gating to probe the conformational changes underlying gating and to stabilize channels in specific states (Holmgren et al., 1996; Li et al., 2010; Loussouarn et al., 2001; McNally et al., 2012; Puljung and Zagotta, 2011; Rulísek and Vondrásek, 1998). We therefore introduced cysteines at F99 and M101 in hOrai1 and examined the effects of applying the thiol-reactive divalent ion Cd2+ in F99C/M101C Orai1 channels overexpressed in HEK293-H cells without STIM1 (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic of proposed mechanism of action of Cd2+ on F99C/M101C channels. (B) Cd2+ (5 µM) has no effect on WT Orai1 channels gated by STIM1. (C) By contrast, the activity of the F99C/M101C Orai1 variant without STIM1 is significantly boosted by Cd2+ (5 µM) and can be reversed by BMS (5 mM). Inset shows the current-voltage relationships of F99C/M101C at the time points indicated by the arrowheads. (D) Summary of Cd2+ potentiation (5 µM) on F99C/M101C channels without and with STIM1. (E) Dose-dependence of Cd2+ potentiation on F99C/M101C channels (40 s of Cd2+ application). (F) Application of Cd2+ in 110 mM Ca2+-containing external solution significantly decreases the relative extent of current potentiation. Note the larger pre-Cd2+ baseline current amplitude in the 110 mM Ca2+ solution. Inset: Current-voltage relationships of F99C/M101C in 110 mM Ca2+ solution at the indicated time points. (G) Summary of the fold increase in current amplitude of F99C/M101C channels following Cd2+ application in 20 mM versus 110 mM Ca2+ external solutions. Black and red lines represent polynomial fits to the data to enable visualization of the overall trends. Less relative potentiation is seen in 110 mM Ca2+ solution, suggesting that permeating Ca2+can compete with Cd2+ for a binding site within the pore. Values are mean ± S.E.M. N = 4–11 cells *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) In addition to Cd2+, the transition metal-ion Zn2+ also interacts with cysteine residues. Like Cd2+, Zn2+ (50 µM) potentiates Orai1 F99C/M101C current. (B) Zn2+ (5 µM) inhibits M101C/F187C channels to a similar extent as an equivalent dose of Cd2+. Thus, the potentiation and inhibition effects observed are generalizable to other divalent ion bridges.
 
 F99C/M101C channels are partially open at baseline, producing non-selective CRAC currents (Vrev = −5.4 ± 2.7 mV) in line with previous results indicating that the F99C mutation disrupts the hydrophobic barrier in the pore (Yamashita et al., 2017). Strikingly, Cd2+ administration dramatically enhanced this F99C/M101C current with a slow time course over tens of seconds (Figure 3C,E,F). Over the 40 s application of 5 µM Cd2+, the non-selective F99C/M101C Orai1 current increased 12-fold over the baseline current (Figure 3C,D). Washout of Cd2+ by 20 mM Ca2+ Ringer’s solution caused an additional rapid increase in the current (Figure 3C,E,F). Previous reports have shown that application of Cd2+ to the single F99C mutant results in strong blockade of Orai1 currents when F99C residues are oriented in a pore-facing configuration (McNally et al., 2009; Yamashita et al., 2017). Thus, we reasoned that the rapid current increase in the F99C/M101C double mutant following washout of Cd2+ arises from the removal of Cd2+ block by the permeating Ca2+ ions. The Cd2+-mediated potentiation was stable and could only be reversed by reducing agent bis(2-mercaptoethylsulfone) (BMS) (Figure 3C,E,F), indicating that the trapping of Cd2+ between the introduced cysteine residues is destabilized only by directly disrupting the coordinating thiol groups.
 
@@ -62,27 +82,47 @@ Increasing the Cd2+ dose from 5 µM to 500 µM dramatically increased the extent
 
 To test whether the gating induced by Cd2+ is also seen with other thiol-reactive probes, we tested the effects of Zn2+, a slightly smaller metal ion that, like Cd2+, can also coordinate with thiol groups (Yellen et al., 1994). Administration of Zn2+ also elicited potentiation of Orai1 current (Figure 3—figure supplement 1), suggesting that the potentiation effect is not unique to Cd2+ but arises due to bridging of F99C to M101C via a thiol-reactive divalent ion. These results are consistent with the hypothesis that the M101-F99 interaction stabilizes the open state.
 
-## Stabilizing the M101-F187 interaction promotes pore closure in M101C/F187C Orai1 channels
+### Stabilizing the M101-F187 interaction promotes pore closure in M101C/F187C Orai1 channels
 
 If stabilizing a M101-F99 interaction augments channel activation, does facilitating the resting state interaction between M101 and F187 (as seen in the closed channel crystal structure) favor the closed state? We tested this idea using the hOrai1 M101C/F187C mutant. We have previously shown that Orai1 F187C is a Ca2+-selective, constitutively active mutant (Yeung et al., 2018). Similarly, the M101C/F187C double cysteine mutant was also constitutively active and highly Ca2+ selective (Figure 4B). Strikingly, when 5 μM Cd2+ was applied to M101C/F187C, the current was almost completely inhibited (Figure 4B). This current decrease was uniform across the voltage ramp (Vrev = 41.0 ± 6.3 mV without Cd2+ and Vrev = 35.8 ± 8.9 mV with 5 µM Cd2+; p=0.65), which suggests that it arises from channel inhibition rather than pore block. In addition, the reversibility of the effect by BMS is consistent with that of a cysteine-mediated mechanism (Figure 4B). The rapid Cd2+-induced inhibition was only seen in the double Cys mutants. Neither the single F187C nor double M101A/F187C and M101C/H134S mutants showed any effect with Cd2+ (Figure 4C), indicating that cysteines are required at both F187 and M101 for inducing channel closure.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig4-v2.jpg)
 
-**Figure 4.:** (A) Schematic of proposed mechanism of action of Cd2+ on M101C/F187C channels. The addition of Cd2+ induces a bridge between M101C and F187C which releases the F99 gate returning to the ‘closed’ orientation. (B) Cd2+ (5 µM) strongly inhibits the current of M101C/F187C channels, which can be reversed by BMS (5 mM). Inset: Current-voltage relationships of M101C/F187C at the time points indicated by the arrowheads. (C) Summary of Cd2+ inhibition (5 µM) on M101C/F187C channels without and with STIM1. Double mutants with only one cysteine at positions M101C or F187C do not exhibit block by Cd2+, indicating that the coordination of Cd2+ requires cysteines at both residues. (D) M101C/F187C channels display a dose-dependent increase in current inhibition (40 s of Cd2+ application). (E) Application of Cd2+ in 110 mM Ca2+-containing external solution does not notably affect the extent of current inhibition by Cd2+. (F) Summary of the fold increase in current amplitude of M101C/F187C channels following Cd2+ application in 20 mM versus 110 mM Ca2+ external solutions. The lack of difference in effect suggests that the Cd2+ binding site is not within the pore, and instead at the TM1-TM3 interface as implied by the crystal structure. Values are mean ± S.E.M. N = 4–8 cells for each point; *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 4—source data 1.Figure 4—source data 1.
+**Figure 4.:** (A) Schematic of proposed mechanism of action of Cd2+ on M101C/F187C channels. The addition of Cd2+ induces a bridge between M101C and F187C which releases the F99 gate returning to the ‘closed’ orientation. (B) Cd2+ (5 µM) strongly inhibits the current of M101C/F187C channels, which can be reversed by BMS (5 mM). Inset: Current-voltage relationships of M101C/F187C at the time points indicated by the arrowheads. (C) Summary of Cd2+ inhibition (5 µM) on M101C/F187C channels without and with STIM1. Double mutants with only one cysteine at positions M101C or F187C do not exhibit block by Cd2+, indicating that the coordination of Cd2+ requires cysteines at both residues. (D) M101C/F187C channels display a dose-dependent increase in current inhibition (40 s of Cd2+ application). (E) Application of Cd2+ in 110 mM Ca2+-containing external solution does not notably affect the extent of current inhibition by Cd2+. (F) Summary of the fold increase in current amplitude of M101C/F187C channels following Cd2+ application in 20 mM versus 110 mM Ca2+ external solutions. The lack of difference in effect suggests that the Cd2+ binding site is not within the pore, and instead at the TM1-TM3 interface as implied by the crystal structure. Values are mean ± S.E.M. N = 4–8 cells for each point; *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 4—source data 1.
 
 In contrast to the strong dependence on the permeant ion concentration seen for the Cd2+-mediated potentiation of F99C/M101C channels, Cd2+-induced channel closure in the M101C/F187C mutant was largely insensitive to the permeant ion concentration. Specifically, Cd2+ blockade in 110 mM Ca2+ Ringer’s was not notably different than that seen in 20 mM Ca2+ solution (Figure 4E,F), suggesting that the inhibition site is likely not in the pore. This conclusion is also supported by the strikingly different Cd2+ sensitivities of Cd2+ inhibition on M101C/F187C channels versus potentiation in F99C/M101C channels. Whereas inhibition in M101C/F187C channels quickly reached saturation with increasing Cd2+ with an apparent Kd of ~0.3 μM (Figure 4F), potentiation in the F99C/M101C channels did not reach saturation even at 500 µM Cd2+ (Figure 3G). The latter effect is likely due to a knockoff effect of the permeant Ca2+ ions on Cd2+ occupancy at the potentiation site between F99C and M101C. Application of Zn2+ also induced channel closure in M101C/F187C channels, suggesting that the inhibition effect is generalizable to other thiol-reactive metals (Figure 3—figure supplement 1). We conclude that stabilizing the resting interaction between M101 and F187 evokes pore closure, presumably by releasing the F99 gate into its pore-facing configuration (Figure 4A).
 
-## M101 is essential for STIM1-mediated Orai1 channel activation
+### M101 is essential for STIM1-mediated Orai1 channel activation
 
 If the sulfur-aromatic interaction is critical for gate opening, then mutations of M101 to other amino acids that cannot support sulfur-aromatic interactions should disrupt channel function. Consistent with this hypothesis, nearly every substitution that we tested, including M101G/A/S/T/C/V/L/I, yielded LOF channels that lost gating by STIM1 (Figure 5A,B). Notably, mutations of M101 to Leu or Ile, which have comparable or even greater hydrophobicity as the native Met, also produced channels that could not be activated by STIM1 (Figure 5A,B). The plasma membrane fluorescence of Orai1-YFP was similar across the mutants, indicating that reduced channel expression is not the cause of the smaller currents. Moreover, with the exception of some polar and charged substitutions (M101Q/N/D/K/E), no difference was seen in co-localization of the YFP-tagged Orai1 mutants with CFP-CAD nor in E-FRET between the two proteins (Figure 5—figure supplement 1), indicating that loss of gating was not due to gross changes in the ability of the Orai1 variants to interact with STIM1. Introduction of the M101L mutation into the constitutively active H134S and constitutively conducting V102C mutants also attenuated currents in these mutants (Figure 5—figure supplement 2). This latter result in V102C is not entirely unexpected since previous studies have indicated that the V102C mutant also shows greater spontaneous counter-clockwise fluctuations of the F99 gate region compared to WT channels, consistent with models showing that gate opening and pore hydration are intimately coupled in CRAC channels (Yamashita et al., 2017; Yeung et al., 2018).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig5-v2.jpg)
+
+**Figure 5.:** (A) Current densities of Orai1 M101 mutants in the presence of STIM1. The majority of M101 mutations, even those to large residues similar in hydrophobicity to the native Met, abolish Orai1 activation by STIM1. (B) Time course traces of LOF M101 mutants with co-expressed with STIM1. Unlike WT Orai1 channels, these mutants do not conduct current after store-depletion by 8 mM BAPTA in the internal solution. (C) M101F evokes a GOF effect. This mutant is constitutively active even in the absence of STIM1. The constitutively active M101F variant is blocked by La3+ (150 µM) and its current-voltage relationship indicates a highly Ca2+-selective current. Values are mean ± S.E.M. N = 4–9 cells *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) M101 mutants recruit CFP-CAD to the plasma membrane indicating robust binding between Orai1 and CAD. L273D, which cannot bind to STIM1 (Li et al., 2011), is shown as a negative control. Scale bars: 5 Å. (B) The loss-of-function M101 mutants exhibit normal levels of E-FRET between Orai1-YFP and CFP-CAD, comparable to WT Orai1. Values are mean ± S.E.M. N = 51–70 cells. M101 mutants bind STIM1 yet cannot be gated, underscoring the importance of the methionine at this position for channel gating. (C) Confocal images of Orai1-YFP M101D/K/Q showing that these mutants do not express to the plasma membrane. Scale bars:10 Å. Numerical data for this figure can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) The addition of M101 mutation to the strongly active H134S mutant significantly abrogates channel current amplitude without STIM1. (B) Similarly, M101L/V102C channels have significantly smaller current amplitudes compared to V102C alone. (C) M101F mutation partially rescues the LOF phenotype of the Orai1 H134W mutant. Values are mean ± S.E.M. N = 4–6 cells *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Current densities of F187 mutants in the absence of STIM1. Smaller substitutions such as F187G/A/S/C produced GOF channels whereas larger substitutions remained closes in the absence of TSIM1. The right plot shows the current-voltage relationships of the GOF mutants. Values are mean ± S.E.M. N = 4–6 cells *p<0.05 by Student’s T-test. Numerical data for this figure can be found in Figure 5—source data 1.
 
 The one exception to the LOF effect induced by mutations at M101 was the Phe mutant, which surprisingly produced a GOF phenotype. M101F was not only normally gated by STIM1 (Figure 5A), but was also modestly active and Ca2+-selective (Vrev = 44.9 ± 5.7 mV) at rest in the absence of STIM1 (Figure 5C). Interestingly, the M101F substitution was able to confer channel activity to LOF mutant H134W (Figure 5—figure supplement 2) which cannot be gated by STIM1 (Yeung et al., 2018), suggesting that the effect of M101F is directly on the F99 gate. As will be discussed further below, we postulate that the constitutive activity of M101F likely arises from interactions of the introduced Phe side-chain with F99 and F187 created by the introduced aromatic ring at M101. Collectively, these M101 mutants demonstrate that hydrophobicity alone is not enough for channel function and reaffirm the conclusion that the sulfur-containing Met residue at position 101 mediates a specialized function in Orai1 gating in addition to its role in the hydrophobic cluster.
 
 In contrast to the LOF Orai1 phenotypes of mutations at M101, mutation of F187 to smaller residues including Gly, Ala, Ser, and Cys produced GOF channels with inwardly rectifying CRAC channel-like current-voltage relationships. Large and hydrophobic F187 substitutions including Tyr and Trp, on the other hand, remained closed in the absence of STIM1 (Figure 5—figure supplement 3). Based on these results, we conclude that the large, hydrophobic side-chain of F187 on TM3 is required for stabilizing the closed state of the channel. However, because M101C channels are not constitutively open, we surmise that F187 may prevent spontaneous pore opening through mechanisms beyond its interaction with M101, potentially involving other residues of the TM1-TM3 hydrophobic stack. Without additional these interactions, the pore transitions into a Ca2+-selective state that is similar to the one evoked by STIM1 binding.
 
-## Loss of the gate latch prevents channel opening by stabilizing the gate in its closed position
+### Loss of the gate latch prevents channel opening by stabilizing the gate in its closed position
 
 The experimental results showing that loss of the sulfur-aromatic gate latch compromises channel gating led us to hypothesize that M101 LOF mutations stabilize the F99 gate in the closed pore-facing orientation, resulting in diminished pore hydration at the channel gate. To address this hypothesis, we performed MD simulations of dOrai M173L (LOF hOrai1 M101L) and dOrai M173F (GOF hOrai1 M101F) to investigate the effects of the mutations on pore hydration and orientation of the F99 gate. These simulations revealed that the M173L channel displayed significantly smaller spontaneous counter-clockwise pore helix rotations than the WT channel (Figure 6D), with the angular position of F171 shifted by 10 ± 1° for M173L channels and 17 ± 1° for WT channels as measured with respect to the crystallographic orientation of the F171 side-chain in our coordinate system (30.6°, [PDB ID:4HKR]; Hou et al., 2012). The decrease in pore helix rotation of M173L was accompanied by markedly lower hydration of the hydrophobic stretch of the pore (Figure 6B). By contrast, M173F channels, which are modestly active in the absence of STIM1 (Figure 5C), showed a statistically significant increase in the extent of pore helix rotation relative to WT (Figure 6D) and a similar level of pore hydration as WT channels (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig6-v2.jpg)
+
+**Figure 6.:** (A) Relative probability distributions of the axial position of Cα atoms for all pore-lining residues (hOrai1 numbering in brown). Average distribution of water oxygen atoms (B) and Na+ and Cl− ions (C) along the pore axis. The P values from a two-sided Welch’s t-test of mean water oxygen count at z = 15 Å across all simulation repeats indicate a significant difference with respect to WT for M173L (1.2 × 10−2, p<0.05) but not for M173F (1.1 × 10−1). (D) Relative distributions of the radial angle of residue 171 defined as the angle between the pore axis, the center of mass of the two helical turns centered at residue 171, and the Cα atom of residue 171 in the different mutants. The mean and standard error of mean of F171 radial angle over simulation repeats are 41 ± 1 ° for M173L and 48 ± 1 ° for M173F. The P values from a two-sided Welch’s t-test for each system indicate significant differences (p<0.05) between the mean of these distributions with respect to WT simulations (6.1 × 10−24, 5.2 × 10−3). The black solid line represents the angle observed in the closed dOrai crystal structure 4HKR. (E–F) Distribution of distances between M173 with F171 (d3) and M173 with F259 (d4), respectively. Distances were measured from the Cβ of the methionine and the center of mass of the phenylalanine ring. The mean and standard error of mean of M173-F171 distances over simulation repeats are 6.5 ± 0.1 Å for WT, 6.9 ± 0.1 Å for M173L, and 6.6 ± 0.1 Å for M173F. In (F), M173-F259 distances over simulation repeats are 6.1 ± 0.1 Å for WT, 6.0 ± 0.1 Å for M173L, and 5.8 ± 0.1 Å for M173F. Black solid lines in (A) and (B) represent distances observed in the crystal structure of closed dOrai (d3 = 7.3 Å and d4 = 5.8 Å). (G) Snapshot of the positions of M173L, F171, and F259 in the closed M173L mutant. M173L decreases pore hydration and pore helix rotation, thereby evoking closure of the F171 hydrophobic gate. (H) Snapshot of the positions of M173F, F171, and F259 in the constitutively active M173F mutant. Only TM1 and TM3 helices are shown in (G–H) for simplicity.
 
 Examination of the simulation trajectories showed that the introduced Leu, which is both shorter and more hydrophobic than the native Met, spends the majority of the simulation time in the hydrophobic cluster at the TM1-TM3 interface and away from F171, suggesting that it cannot interact with F171 to facilitate pore opening (Figure 6—video 1). Quantification of the M173L-F171 distance as measured from the Cβ atom of M173 indicated a subtle but clear shift towards larger distances in this variant. This shift was accompanied by an increase in the interaction propensity between M173L and F259 (Figure 6E,F and Figure 6—video 1). By contrast, in simulations of M173F channels, we observed that the Phe side-chain, which is shorter and less flexible than the native Met at position 173, results in a bridge between F171 and the TM3 residue F259, causing F171 to be displaced away from the pore and increasing pore helix rotation (Figure 6—video 2). We conclude that the M173L mutation stabilizes F99 in a pore-facing configuration, and that the resulting decrease in pore hydration relative to WT channels in the hydrophobic stretch contributes to the LOF phenotype of the M101L mutant.
 
@@ -102,11 +142,29 @@ To better estimate the contribution of the Met-Phe contacts to the gating equili
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60751/elife-60751-fig7-v2.jpg)
 
-**Figure 7.:** (A) A snapshot of the H206C dOrai GOF mutant showing two subunits in which the M173 latch is engaged with the F171 hydrophobic gate and F259 to evoke gate opening. hOrai1 numbering is shown in parentheses. (B) Top: M173-F171 distances for the various H206 mutants replotted from Figure 2E. The gray shaded area corresponding to d <7 Å represents the range of distances used to infer the occurrence of Met-Phe contact. Middle and bottom: The potential of mean-force (1W) for the M173-F171 distance for the mutants simulated as indicated in Figure 2. (C) Schematic of thermodynamic cycle associated with the M173-F171 interaction in closed and open channel states.
+**Figure 7.:** (A) A snapshot of the H206C dOrai GOF mutant showing two subunits in which the M173 latch is engaged with the F171 hydrophobic gate and F259 to evoke gate opening. hOrai1 numbering is shown in parentheses. (B) Top: M173-F171 distances for the various H206 mutants replotted from Figure 2E. The gray shaded area corresponding to d1 <7 Å represents the range of distances used to infer the occurrence of Met-Phe contact. Middle and bottom: The potential of mean-force (W) for the M173-F171 distance for the mutants simulated as indicated in Figure 2. (C) Schematic of thermodynamic cycle associated with the M173-F171 interaction in closed and open channel states.
 
 The energetic contribution of the interaction to channel opening (Figure 7C) can be quantified from the relative probability distributions of the M173-F171 distances (d1) in closed and open states. Using a distance of d = 7 Å as the cutoff (Gómez-Tamayo et al., 2016; Valley et al., 2012), we transformed these continuous probability profiles into discrete states corresponding to contact versus non-contact Met-Phe states. For the closed and open channels modeled by the above variants, the relative occupancy of the contact and non-contact states can be estimated from the ratio of the cumulative probabilities above and below the 7 Å cutoff. This ratio is ~0.8 for WT channels, ~0.5 for H206Y channels, ~2.2 for H206Q channels, and ~3 for H206C channels. Based on these ratios, the relative preference (Pcontact/Pnon-contact) for Met-Phe interactions is approximately 0.8:1 in the closed (WT) state and 3:1 in the open (H206C) state.
 
-Because free energy is conserved in the thermodynamic cycle in Figure 7C, it follows that:ΔG1+ΔG4−ΔG2−ΔG3=0where ΔG1, ΔG2, ΔG3, and ΔG4 are the free energy changes for the transitions defined in Figure 7C. Rearranging the terms leads to:ΔG2−ΔG1=ΔG4−ΔG3where ΔG2 – ΔG1 corresponds to the relative stabilization of the contact state upon channel opening, and ΔG4 – ΔG3 corresponds to the relative stabilization of the open state upon making contact. ΔG1 and ΔG2 in Figure 7C can be calculated from the relationship:ΔG=−RTln(PcontactPnon−contact)where Pcontact and Pnon-contact are the probabilities of the Met-Phe distances being smaller and larger than the 7 Å cutoff, respectively. Substituting values obtained in the previous analysis, we get 0.13 kcal/mol for ΔG1 and −0.65 kcal/mol for ΔG2. Therefore, the ΔΔG for stabilization of the open state by the gate latch contact is ~0.8 kcal/mol, a value that is commensurate with the magnitude of thermal energy at physiological temperatures. Assuming that the contributions of the individual Met-Phe interactions are additive, this analysis implies that the six Met-Phe interactions contribute approximately ~5 kcal/mol per channel. However, the 0.8 kcal/mol estimate could reflect in part cooperative interactions between multiple gate latch pairs rather than individual interactions, so that the actual energetic contribution to pore opening may be lower than this 5 kcal/mol estimate.
+Because free energy is conserved in the thermodynamic cycle in Figure 7C, it follows that:
+
+$$
+ΔG_{1}+ΔG_{4}−ΔG_{2}−ΔG_{3}=0
+$$
+
+where ΔG1, ΔG2, ΔG3, and ΔG4 are the free energy changes for the transitions defined in Figure 7C. Rearranging the terms leads to:
+
+$$
+ΔG_{2}−ΔG_{1}=ΔG_{4}−ΔG_{3}
+$$
+
+where ΔG2 – ΔG1 corresponds to the relative stabilization of the contact state upon channel opening, and ΔG4 – ΔG3 corresponds to the relative stabilization of the open state upon making contact. ΔG1 and ΔG2 in Figure 7C can be calculated from the relationship:
+
+$$
+ΔG=−RTln(\frac{P_{contact}}{P_{non−contact}})
+$$
+
+where Pcontact and Pnon-contact are the probabilities of the Met-Phe distances being smaller and larger than the 7 Å cutoff, respectively. Substituting values obtained in the previous analysis, we get 0.13 kcal/mol for ΔG1 and −0.65 kcal/mol for ΔG2. Therefore, the ΔΔG for stabilization of the open state by the gate latch contact is ~0.8 kcal/mol, a value that is commensurate with the magnitude of thermal energy at physiological temperatures. Assuming that the contributions of the individual Met-Phe interactions are additive, this analysis implies that the six Met-Phe interactions contribute approximately ~5 kcal/mol per channel. However, the 0.8 kcal/mol estimate could reflect in part cooperative interactions between multiple gate latch pairs rather than individual interactions, so that the actual energetic contribution to pore opening may be lower than this 5 kcal/mol estimate.
 
 How do these estimates compare to the overall free energy change required for Orai1 channel activation? Although we currently do not know the total free energy change associated with Orai1 gating, comparison with the estimated activation energies for the Shaker potassium channel (14 kcal/mol) (Chowdhury and Chanda, 2012) and the BK channel (24 kcal/mol) (Chowdhury and Chanda, 2013) suggests that this estimate of the M101-F99 interaction energy may be critical for the overall Orai1 gating process. Furthermore, because F99 is on the face of TM1 opposite to M101, the formation of the proposed latch interactions between neighboring TM1 helices would be expected to promote correlated TM1 helix rotations to induce cooperative opening of the channel gate. These considerations indicate that M101 is well positioned, with the suitable length and added sulfur group, to interact with F187 and F99 act as an effective gate latch to facilitate opening and closing of the F99 channel gate.
 
@@ -114,42 +172,295 @@ From a functional standpoint, the finding M101 that promotes pore opening by sta
 
 ## Materials and methods
 
-## Cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HEK293-H</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11631017</td>
+      <td>RRID:CVCL_6643</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange II XL Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>200522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Orai1-YFP</td>
+      <td>Clontech Navarro-Borelly et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>mCherry-STIM1</td>
+      <td>Richard Lewis (Stanford)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>CFP-CAD</td>
+      <td>Richard Lewis (Stanford)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cadmium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>202908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BMS, bis(2-mercaptoethylsulfone)</td>
+      <td>Calbiochem</td>
+      <td>145626-87-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F99C</td>
+      <td>IDT Yamashita et al., 2017</td>
+      <td></td>
+      <td>accatggcgcagccggagagcagagcc ggctctgctctccggctgcgccatggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101A</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccaccattgccaccgcggcgaagccggaga tctccggcttcgccgcggtggcaatggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101C</td>
+      <td>IDT McNally et al., 2009</td>
+      <td></td>
+      <td>ctccaccattgccacgcaggcgaagccggagag ctctccggcttcgcctgcgtggcaatggtggag</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101F</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccaccattgccacgaaggcgaagccggag ctccggcttcgccttcgtggcaatggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101G</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccaccattgccaccccggcgaagccggaga tctccggcttcgccggggtggcaatggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101I</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>accattgccactatggcgaagccggagag ctctccggcttcgccatagtggcaatggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101L</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>accattgccaccaaggcgaagccggag ctccggcttcgccttggtggcaatggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101S</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>tccaccattgccacgctggcgaagccggag ctccggcttcgccagcgtggcaatggtgga</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101T</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccattgccaccgtggcgaagccggag ctccggcttcgccacggtggcaatgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 M101V</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>accattgccaccacggcgaagccggag ctccggcttcgccgtggtggcaatggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 V102C</td>
+      <td>IDT McNally et al., 2012</td>
+      <td></td>
+      <td>gcacctccaccattgcgcacatggcgaagccggag ctccggcttcgccatgtgcgcaatggtggaggtgc</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 H134C</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>catgagcgcaaacaggcacacagccaccagcact agtgctggtggctgtgtgcctgtttgcgctcatg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 H134Q</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>atgagcgcaaacagctgcacagccaccag ctggtggctgtgcagctgtttgcgctcat</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 H134S</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>catgagcgcaaacaggctcacagccaccagcact agtgctggtggctgtgagcctgtttgcgctcatg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 H134W</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>gatcatgagcgcaaacagccacacagccaccagcactgt acagtgctggtggctgtgtggctgtttgcgctcatgatc</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 H134Y</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>atcatgagcgcaaacagatacacagccaccagcactg cagtgctggtggctgtgtatctgtttgcgctcatgat</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187A</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>ccacctcagctagggcgagcagcgtgccga tcggcacgctgctcgccctagctgaggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187C</td>
+      <td>IDT Yeung et al., 2018</td>
+      <td></td>
+      <td>cctcagctaggcagagcagcgtgccg cggcacgctgctctgcctagctgagg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187G</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccacctcagctaggccgagcagcgtgccga tcggcacgctgctcggcctagctgaggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187L</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>accacctcagctagtaagagcagcgtgcc ggcacgctgctcttactagctgaggtggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187S</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>ccacctcagctaggctgagcagcgtgccga tcggcacgctgctcagcctagctgaggtgg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187W</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>accacctcagctagccagagcagcgtgccg cggcacgctgctctggctagctgaggtggt</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 F187Y</td>
+      <td>IDT</td>
+      <td>This paper</td>
+      <td>caccacctcagctagatagagcagcgtgccga tcggcacgctgctctatctagctgaggtggtg</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>mutagenesis primers for Orai1 L273D</td>
+      <td>IDT Li et al., 2011</td>
+      <td></td>
+      <td>ccgccagctcgttgtcctcctggaactgtc gacagttccaggaggacaacgagctggcgg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells
 
 HEK293-H cells (Thermo Fisher Scientific) were maintained in suspension at 37°C with 5% CO2 in CD293 medium supplemented with 4 mM GlutaMAX (Invitrogen). The HEK293 cell line is a permanent line established from primary embryonic human kidney and transformed with sheared human adenovirus type 5 DNA. The E1A adenovirus gene is expressed in these cells to optimize protein production. HEK293-H cells were cloned from the original 293 cell line and adapted to CD293 serum-free medium for growth in suspension. Cell line identity has been authenticated by ThermoFisher Scientific, and cells were tested negative for mycoplasma by qPCR detection assay. For imaging and electrophysiology, cells were plated onto poly-L-lysine coated coverslips one day before transfection and grown in a medium containing 44% DMEM (Corning), 44% Ham’s F12 (Corning), 10% fetal bovine serum (HyClone), 2 mM glutamine, 50 U/ml penicillin and 50 µg/ml streptomycin.
 
-## Plasmids and transfections
+### Plasmids and transfections
 
 The Orai1 mutants employed for electrophysiology were engineered into a pEYFP-N1 vector (Clontech) to produce C-terminally tagged Orai1-YFP proteins (Navarro-Borelly et al., 2008). mCherry-STIM1 and CFP-CAD were kind gifts of Dr. R. Lewis (Stanford University, USA). All mutants were generated by the QuikChange Mutagenesis Kit (Agilent Technologies) and the mutations were confirmed by DNA sequencing. For electrophysiology, the indicated Orai1 constructs were transfected into HEK293-H cells either alone (200 ng DNA per coverslip) or together with STIM1 (100 ng Orai1 and 500 ng STIM1 DNA per coverslip). For FRET and confocal microscopy experiments, cells were transfected with Orai1-YFP alone (200 ng DNA per coverslip) or with CFP-CAD constructs (100 ng each per coverslip). All transfections were performed using Lipofectamine 2000 (Thermo Fisher Scientific) 24–48 hr prior to electrophysiology or imaging experiments.
 
-## Solutions and chemicals
+### Solutions and chemicals
 
 The standard extracellular Ringer’s solution used for electrophysiological experiments contained 130 mM NaCl, 4.5 mM KCl, 20 mM CaCl2, 10 mM tetraethylammonium chloride (TEA-Cl), 10 mM D-glucose, and 5 mM HEPES (pH 7.4 with NaOH). For the FRET and confocal imaging studies, the Ringer’s solution contained 2 mM CaCl2 and 150 mM NaCl with the other components as above. The 110 mM Ca2+ solution contained 110 mM CaCl2, 10 mM D-glucose, and 5 mM HEPES (pH 7.4 with NaOH). The DVF Ringer’s solution contained 150 mM NaCl, 10 mM HEDTA, 1 mM EDTA, 10 mM TEA-Cl and 5 mM HEPES (pH 7.4). The internal solution contained: 135 mM Cs aspartate, 8 mM MgCl2, 8 mM Cs-BAPTA, and 10 mM HEPES (pH 7.2 with CsOH).
 
-## Electrophysiology
+### Electrophysiology
 
 Currents were recorded in the standard whole-cell configuration at room temperature on an Axopatch 200B amplifier (Molecular Devices) interfaced to an ITC-18 input/output board (Instrutech). Routines developed by R. S. Lewis (Stanford) on the Igor Pro software (Wavemetrics) were employed for stimulation, data acquisition and analysis. Data are corrected for the liquid junction potential of the pipette solution relative to Ringer’s in the bath (−10 mV). The holding potential was +30 mV. The standard voltage stimulus consisted of a 100 ms step to –100 mV followed by a 100 ms ramp from –100 to +100 mV applied at 1 s intervals. ICRAC was typically activated by passive depletion of ER Ca2+ stores by intracellular dialysis of 8 mM BAPTA. All currents were acquired at 5 kHz and low pass filtered with a 1 kHz Bessel filter built into the amplifier. All data were corrected for leak currents collected in 100–200 µM LaCl3.
 
-## Data analysis
+### Data analysis
 
 Analysis of current amplitudes was typically performed by measuring the peak currents during the −100 mV pulse. Specific mutants were categorized as gain-of-function if their currents exceeded 2 pA/pF, which is more than ten times the current density of WT Orai1 without STIM1. Reversal potentials were measured from the average of several leak-subtracted sweeps in each cell. Fractional inhibition of current was quantified as: Inhibition=(1-Ib/ICtrl), where Ib is the Orai1 current in the presence of Cd2+, and ICtrl is the Orai1 current prior to application of the blocker (Cd2+).
 
-## FRET microscopy
+### FRET microscopy
 
 HEK293-H cells transfected with Orai1-YFP and CFP-CAD DNA constructs were imaged using wide-field epifluorescence microscopy on an IX71 inverted microscope (Olympus, Center Valley, PA). Cells were imaged with a 60X oil immersion objective (UPlanApo NA 1.40), a 175 W Xenon arc lamp (Sutter, Novatao, CA), and excitation and emission filter wheels (Sutter, Novato, CA). At each time point, three sets of images (CFP, YFP, and FRET) were captured on a cooled EM-CCD camera (Hamamatsu, Bridgewater, NJ) using optical filters specific for the three images as previously described. Image acquisition and analysis was performed with SlideBook software (Imaging Innovations Inc, Denver, CO). Images were captured at exposures of 100–500 ms with 1 × 1 binning. Lamp output was attenuated to 25% by a 0.6 ND filter in the light path to minimize photobleaching. All experiments were performed at room temperature.
 
-FRET analysis was performed as previously described (Navarro-Borelly et al., 2008). The microscope-specific bleed-through constants (a = 0.12; b = 0.008; c = 0.002 and d = 0.33) were determined from cells expressing cytosolic CFP or YFP alone. The apparent FRET efficiency was calculated from background-subtracted images using the formalism (Zal and Gascoigne, 2004):EFRET=FcFc+GIDDwhere Fc = IDA aIAA - dIDD.
+FRET analysis was performed as previously described (Navarro-Borelly et al., 2008). The microscope-specific bleed-through constants (a = 0.12; b = 0.008; c = 0.002 and d = 0.33) were determined from cells expressing cytosolic CFP or YFP alone. The apparent FRET efficiency was calculated from background-subtracted images using the formalism (Zal and Gascoigne, 2004):
+
+$$
+E_{FRET}=\frac{F_{c}}{F_{c}+GI_{DD}}
+$$
+
+where Fc = IDA aIAA - dIDD.
 
 IDD, IAA, and IDA refer to the background subtracted CFP, YFP, and FRET images, respectively. The instrument dependent G factor had the value 1.85 ± 0.1. E-FRET analysis was restricted to cells with YFP/CFP ratios in the range of 2–6 to ensure that E-FRET was compared across identical acceptor to donor ratios, and measurements were restricted to regions of interest drawn at the plasma membrane.
 
-## Confocal microscopy
+### Confocal microscopy
 
 HEK293-H cells expressing various Orai1-YFP mutants and CFP-CAD were imaged on an Andor XDI Revolution spinning-disk confocal microscope equipped with a 100X oil immersion objective. Cells were maintained at 37°C with 5% CO2. Fluorophores were excited with 445 nm (CFP) and 515 nm (YFP) laser diodes with the intensity of laser light attenuated to 15–40% for CFP and 5–30% for YFP. Images were obtained at 512 × 512 pixels at an exposure of 200–500 ms per frame and a slice thickness of 0.8 μm. An average of four frames was used for each image. Images analysis was performed using NIH ImageJ software (NIH, Bethesda, MD).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Molecular models were constructed using the crystal structure of the Drosophila melanogaster Orai1 channel (4HKR) (Hou et al., 2012). Missing residues of the M1-M2 loop (amino acids 181 to 190) and the M2-M3 loop (amino acids 220 to 235) were modeled de novo using MODELLER (Fiser and Sali, 2003). System preparation was performed using CHARMM-GUI membrane builder (Jo et al., 2007). The C terminus was truncated at residue 329 for all chains and the N and C terminus were acetylated and amidated, respectively. The protein was embedded within a hydrated 1-palmitoyl,2-oleoyl-sn-glycero-3-phosphocholine (POPC) bilayer with 150 mM NaCl to obtain a hexagonal cell with box vectors 104.2 × 104.2×126.5 Å. Pore waters were not modeled. The simulation cell consisted of ~112K atoms. Single point mutations were made using CHARMM-GUI to create the H206Y, H206Q, H206C, M173L, and M173F systems. The CHARMM36 force field was used for protein (Best et al., 2012; MacKerell et al., 1998), ions, and lipids (Klauda et al., 2010) along with the TIP3P water model (Jorgensen et al., 1983).
 
 All simulations were performed using GROMACS 2016.3 (Murtola et al., 2015) without modification to the CHARMM-GUI output parameters (with the exception of additional equilibration steps and extended production simulation length). Lennard-Jones interactions were cut off at 1.2 nm and a force-based switching function with a range of 1.0 nm was used. Electrostatic interactions were calculated using particle-mesh Ewald (Darden et al., 1993; Essmann et al., 1995) with a real-space cut-off distance of 1.2 nm. Nonbonded interactions were calculated using Verlet neighbor lists (Páll and Hess, 2013; Verlet, 1967). All simulations were performed at constant temperature (323.15 K) and pressure (one atm) using the Nosé-Hoover thermostat (Hoover, 1985; Nosé, 1984) with temperature coupling of 1.0 ps and the Parrinello-Rahman barostat (Nosé and Klein, 1983; Parrinello and Rahman, 1980) with a time constant of 5.0 ps, respectively. All hydrogen bonds were constrained using the LINCS algorithm (Hess, 2008). The integration time step was two fs. All systems followed the standard energy minimization and six-step equilibration procedure of CHARMM-GUI (Jo et al., 2007), followed by two successive 10 ns protein-restrained simulations conducted in the NPT ensemble. In these equilibration steps, position restraints were applied to main chain backbone atoms and then Cα atoms, with restraint strength of 1000 kJ mol−1 nm−2. Twenty simulation repeats were created for WT, H206Q/C, ten simulation repeats were created for H206Y, and thirty repeats were created for M173L/F systems with randomized initial velocities for production simulations. Production simulations were conducted for 400–500 ns for all simulation repeats for an aggregate total of 73.6 µs.
 
-Prior to analysis, all simulation frames were aligned such that the principal axis formed by TM1 helix Cα atoms were aligned to the box vector z. Analysis was performed on all simulation frames spaced at 1.0 ns after removing the first 100 ns of data from each simulation repeat. All axial coordinates were measured with respect to the center of mass of the pore helix Cα atoms (residues 141 to 174). Axial histograms of water oxygen atoms, Na+, and Cl-, was computed within a cylinder of radius of 10 Å centered at the pore center of mass. Error bars were computed using the standard error of mean over all simulation repeats. Pearson correlation coefficients were computed using observables measured at all data points for all simulation repeats, with all subunit specific properties averaged across all six subunits. Potential mean force plots in Figure 7B were generated from the M173-F171 distance distributions, where the energy change is denoted as W(d)–W(0) and the equilibrium constant is represented by p(d)/p(d0):Wd-W0=-RTlnp(d)p(d0)where p(d) is the probability distribution of the distance d between M173 and F171, d0 is an arbitrary reference separation, R is the universal gas constant, and W(d) is the potential of mean force (PMF) or free energy at d.
+Prior to analysis, all simulation frames were aligned such that the principal axis formed by TM1 helix Cα atoms were aligned to the box vector z. Analysis was performed on all simulation frames spaced at 1.0 ns after removing the first 100 ns of data from each simulation repeat. All axial coordinates were measured with respect to the center of mass of the pore helix Cα atoms (residues 141 to 174). Axial histograms of water oxygen atoms, Na+, and Cl-, was computed within a cylinder of radius of 10 Å centered at the pore center of mass. Error bars were computed using the standard error of mean over all simulation repeats. Pearson correlation coefficients were computed using observables measured at all data points for all simulation repeats, with all subunit specific properties averaged across all six subunits. Potential mean force plots in Figure 7B were generated from the M173-F171 distance distributions, where the energy change is denoted as W(d)–W(0) and the equilibrium constant is represented by p(d)/p(d0):
+
+$$
+Wd-W0=-RTln\frac{p(d)}{p(d_{0})}
+$$
+
+where p(d) is the probability distribution of the distance d between M173 and F171, d0 is an arbitrary reference separation, R is the universal gas constant, and W(d) is the potential of mean force (PMF) or free energy at d.

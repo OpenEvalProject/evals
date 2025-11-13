@@ -51,9 +51,17 @@ The use of single-molecule and single-cell analyses in biology offers unpreceden
 
 ## Results
 
-## SARS-CoV-2 genomic RNA at single-molecule resolution
+### SARS-CoV-2 genomic RNA at single-molecule resolution
 
 To explore the spatial and temporal aspects of SARS-CoV-2 replication at single-molecule and cell levels, we carried out smFISH experiments with fluorescently labelled probes directed against the 30 kb viral gRNA. 48 short antisense DNA oligonucleotide probes were designed to target the viral ORF1a and labelled with a single fluorescent dye to detect the positive sense gRNA, as described previously (Gaspar et al., 2017; Figure 1A). The probe set detected single molecules of gRNA within SARS-CoV-2-infected Vero E6 cells, visible as well-resolved diffraction-limited single spots with a consistent fluorescence intensity and shape (Figure 1B). Treatment of the infected cells with RNase or the viral polymerase inhibitor remdesivir (RDV) ablated the probe signal, confirming specificity (Figure 1—figure supplement 1A). To assess the efficiency and specificity of detection of the +ORF1a probe set, we divided the probes into two groups of 24 alternating oligonucleotides (‘ODD’ and ‘EVEN’) that were labelled with different fluorochromes. Interlacing the probes minimised chromatic aberration between spots detected by the two colours (Figure 1C). Analysis of the SARS-CoV-2 gRNA with these probes showed a mean distance of <250 nm between the two fluorescent spots, indicating near-perfect colour registration and a lack of chromatic aberration. 95% of the diffraction-limited spots within infected cells were dual labelled, demonstrating efficient detection of single SARS-CoV-2 gRNA molecules (Figure 1C). To assess whether virion-encapsulated RNA is accessible to the probes, we immobilised SARS-CoV-2 particles from our viral stocks on glass and incubated them with the +ORF1a probes. We observed a large number of spots in the immobilised virus preparation that was compatible with single RNA molecules (Figure 1—figure supplement 1B), suggesting that detection of RNA within viral particles was achieved.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic illustration of single-molecule fluorescence in situ hybridisation (smFISH) for detecting SARS-CoV-2 positive strand genomic RNA (+gRNA) within infected cells. (B) Reference spatial profile of a diffraction-limited +ORF1a smFISH spot. The calibration bar represents relative fluorescence intensity (top). Frequency distribution of smFISH spot intensities, exhibiting a unimodal distribution (bottom). (C) Assessment of smFISH detection sensitivity by a dual-colour co-detection method. Maximum intensity projected images and corresponding FISH-quant spot detection views of ODD and EVEN probe sets are shown. Scale bar = 5 µm. Density histogram of nearest-neighbour distance from one spectral channel to another (top). Vertical line indicates 300 nm distance. Percentage overlap between spots detected by ODD and EVEN split probes, calculated bidirectionally (bottom). (D) Heatmap of probe sequence alignment against various Coronaviridae and host transcriptomes. Each column represents individual 20 nt + ORF1a probe sequences. The minimum edit distance represents mismatch scores, where ‘0’ indicates a perfect match. Melting temperatures of each probe at the smFISH hybridisation condition are shown. (E) smFISH against +ORF1a in SARS-CoV-2-infected formalin-fixed paraffin-embedded (FFPE) lung tissue from Golden Syrian hamster at 4 days post infection. Hamsters were infected intranasally with 5 × 104 plaque-forming unit (PFU) of SARS-CoV-2 BVICO1. At necropsy, lung samples were fixed in 10% buffered formalin and embedded in paraffin wax. Red arrows in magnified panels indicate single-molecule RNA spots. Scale bars = 1000, 10, or 2 µm. (F) Experimental design for visualising SARS-CoV-2 gRNA with smFISH at different timepoints after infection of Vero E6 cells. Cells were seeded on cover-glass and 24 hr later inoculated with SARS-CoV-2 (Victoria [VIC] strain at multiplicity of infection [MOI] 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion and cells fixed at the timepoints shown. Representative 4 µm maximum intensity projection confocal images are shown. The calibration bar labelled with the symbol ‘#’ is used to display wider dynamic contrast range. Magnified view of insets in the upper panels is shown in lower panels. Scale bars = 10 µm or 2 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Specificity of the +ORF1a smFISH probe for SARS-CoV-2 RNA. Vero E6 cells were infected with SARS-CoV-2 (Victoria [VIC], multiplicity of infection [MOI] = 1), fixed at 8 hr post infection (hpi), and hybridised with +ORF1a smFISH probe. In the remdesivir (RDV) condition, the drug was added to the cells at 10 µM during virus inoculation and maintained for the infection period. For the RNase digestion, permeabilised cells were treated with a cocktail of RNaseT1 and RNaseIII in the presence of MgCl2 to digest RNA prior to probe hybridisation. Representative full z-projection (8 µm) confocal images are shown. Scale bar = 10 µm. (B) Visualisation of encapsidated SARS-CoV-2 RNA with smFISH (left panels). Virus was immobilised onto poly-L-lysine-coated coverslips and visualised via the +ORF1a probe. Mock (negative control) condition was prepared by incubating coated coverslips in PBS without the virus. 1 µm maximum z-projected confocal images are shown. Scale bar = 20 µm or 5 µm. Density distribution of smFISH spot intensities (right panel), exhibiting a unimodal distribution (n = 1664 spots). (C) Calu-3 (upper panels) and Huh-7.5 (lower panels) cells were infected with SARS-CoV-2 (VIC) and HCoV-229E (MOI = 1), respectively, fixed at 24 hpi and hybridised with the SARS-CoV-2-specific +ORF1a probe. In addition, cells were stained with anti-dsRNA (J2) to identify heavily infected cells. Representative single slice confocal images are shown. Scale bar = 10 µm.
 
 To verify the specificity of the +ORF1a probes for SARS-CoV-2, we aligned their sequences against other coronaviruses and the transcriptomes of both human and African green monkeys. Many of the oligonucleotides showed mismatches with SARS-CoV-1, MERS, and other coronaviruses along with human and green monkey RNAs (Figure 1D). The specificity of the +ORF1a probes highlights the applicability of our probes to detect SARS-CoV-2 in different mammalian hosts. The high level of mismatches with other coronaviruses predicts that the +ORF1a probes are unlikely to hybridise with RNAs of other coronaviruses. To evaluate this, we assessed the ability of the +ORF1a probe set to hybridise RNA from the common cold coronavirus HCoV-229E. Although the antibody against dsRNA (J2) detected dsRNA foci in the HCoV-229E-infected Huh7.5 hepatoma cells, no signal was detected with the SARS-CoV-2 +ORF1a probe set (Figure 1—figure supplement 1C). In contrast, the +ORF1a probe set bound with intense signals in J2-positive SARS-CoV-2-infected Calu-3 cells.
 
@@ -61,19 +69,51 @@ Next, we tested whether smFISH could be used to detect SARS-CoV-2 RNAs in formal
 
 Having established smFISH for the detection of SARS-CoV-2 gRNA, we used this technique to assess both the quantity and distribution of gRNA during infection. Vero E6 cells were inoculated with virus at a multiplicity of infection (MOI) of 1 for 2 hr and non-internalised viruses were removed by trypsin digestion to synchronise the infection. At 2 hr post infection (hpi), most fluorescent spots correspond to single gRNAs along with a small number of foci harbouring several gRNA copies (Figure 1F), consistent with early RNA replication events. By 8 hpi, we noted an expansion in the number of bright multi-gRNA foci, and at 24 hpi there was a further increase in the number of multi-RNA foci that localised to the perinuclear region (Figure 1F); consistent with the reported association of viral replication factories with membranous structures derived from the endoplasmic reticulum (V’kovski et al., 2021). Interestingly, our observation of individual gRNA molecules at the periphery of cells (Figure 1F) is also consistent with individual viral particles observed at the same location by electron microscopy (Cortese et al., 2020; Klein et al., 2020). We conclude that detection of SARS-CoV-2 + gRNA by smFISH identifies changes in viral RNA abundance and cellular distribution during early replication. Our method detected +gRNA molecules in all the expected subcellular locations, namely in virions, free in the cytoplasm and in clusters at the periphery of the nucleus, reflecting different steps of the viral life cycle (Cortese et al., 2020; Hackstadt et al., 2021; Mendonça et al., 2021).
 
-## Quantification of SARS-CoV-2 genomic and subgenomic RNAs
+### Quantification of SARS-CoV-2 genomic and subgenomic RNAs
 
 SARS-CoV-2 produces both gRNA and subgenomic (sg)RNAs which are both critical to express the full scope of viral proteins in the right time and stoichiometry. However, quantitation of sgRNAs is challenging due to their sequence overlap with the 3′ end of the gRNA. To estimate the abundance of sgRNAs, we designed two additional probe sets labelled with different fluorochromes; a +ORFN set that hybridises to all canonical positive sense viral RNAs, and a +ORFS set that detects only sgRNA encoding S (S-sgRNA) and gRNA (Figure 2A; Kim et al., 2020). Therefore, spots showing fluorescence only for +ORFN or +ORFS probe sets will represent sgRNAs, whereas spots positive for both +ORFN or+ORFS and +ORF1a will correspond to gRNA molecules. We applied this approach to visualise SARS-CoV-2 RNAs in infected Vero E6 cells (6 hpi) and observed a high abundance of sgRNAs compared to gRNAs (Figure 2B), in agreement with RNA sequencing studies (Alexandersen et al., 2020; Kim et al., 2020). Further analysis revealed that the +ORFN single-labelled sgRNAs were more uniformly dispersed throughout the cytoplasm than dual-labelled gRNA, consistent with their predominant role as mRNAs to direct protein synthesis (Figure 2—figure supplement 1). However, gRNAs were enriched near the periphery of the nucleus in a clustered fashion. Association of gRNA with nucleocapsid (N) is essential for the assembly of coronavirus particles (Carlson et al., 2020; Dinesh et al., 2020; Iserman et al., 2020). To monitor this process in SARS-CoV-2, we combined smFISH using the +ORF1a and +ORFN probe sets with immunofluorescence detection of the viral nucleocapsid (N). Our findings show that N protein primarily co-localises with gRNA, while displaying a limited overlap with sgRNAs (Figure 2C, Figure 2—figure supplement 2). Together, these data demonstrate the specificity of our probes to accurately discriminate between the gRNA and sgRNAs.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic illustration of transcript-specific targeting of SARS-CoV-2 genomic RNA (gRNA) and subgenomic RNA (sgRNA) using smFISH. (B) Transcript-specific visualisation of gRNA and sgRNA in infected (Victoria [VIC] strain) Vero E6 cells. Cells were infected with SARS-CoV-2 (VIC strain) and hybridised with probes against +ORF1a and +ORFN probe at 6 hr post infection (hpi) (upper panels) or +ORF1a and +ORFS probe at 8 hpi (lower panels). Representative 3 µm maximum intensity projected confocal images are shown. Orange circular regions of interest (ROIs) indicate S-sgRNA encoding Spike, whereas dual-colour spots (teal-coloured ROIs) represent gRNA. Scale bar = 5, 10, or 20 µm. (C) Co-detection of viral nucleocapsid (N) with gRNA and sgRNA. Monoclonal anti-N (Ey2A clone) was used for N protein immunofluorescence. Representative 3 µm z-projected confocal images are shown. The inset shows a magnified view of co-localised N and gRNA. Scale bar = 10 µm. Fluorescence profiles of N immunostaining and gRNA smFISH intensity across a 2 µm linear distance are shown in the image inset (lower left). Percentage of co-localised gRNA or sgRNA molecules with N protein at 6 hpi. Co-localisation was assessed by N fluorescence density within point-spread function ellipsoids of RNA spots over random coordinates. sgRNA were defined as single-coloured spots with +ORFN probe signal only (n = 7) (lower right). Student’s t-test. ****p<0.0001. (D) Detection of both positive and negative genomic RNA by denaturing viral double-stranded RNA (dsRNA) with DMSO and heat treatment at 80°C (upper panels). 3 µm z-projected images of infected Vero E6 cells at 8 hpi are shown. Scale bar = 10 µm. Schematic illustration of +ORF1a and -ORF1b probe targeting regions (lower panel). -ORF1b probe target region does not overlap with +ORF1a target sequences to prevent probe duplex formation. (E) Comparison of anti-dsRNA (J2) and gRNA smFISH. Full z-projected images of infected Vero E6 cells co-stained with J2 and smFISH are shown. Scale bar = 10 µm. (F) Percentage of infected cells detected by J2 or smFISH (upper panels). For J2-based quantification, we defined the threshold as 95th percentile fluorescent signal of uninfected cells (Mock) due to the presence of endogenous host-derived signals. Fluorescent positive signals were used for smFISH-based quantification. Data are presented as mean ± SD. Comparison of quantification results between J2 stain and smFISH (lower panels). Each symbol represents one cell. J2 signal was quantified by fluorescence density over 3D cell volume, which was normalised to the average signal of uninfected control cells (horizontal dotted line). gRNA count represents sum of single-molecule spots and decomposed spots within viral factories. The symbol denoted with ‘#’ is the infected cell shown in Figure 2E (J2 stain, n = 3 independent repeats; smFISH, n = 4). One-way ANOVA and Tukey post-hoc test. n.s., not significant; *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Vero E6 cells were infected with SARS-CoV-2 (Victoria [VIC] strain, multiplicity of infection [MOI] 1) and hybridised with +ORF1a and +ORFN single-molecule fluorescence in situ hybridisation (smFISH) probes at 6 hr post infection (hpi). RNA dispersion and peripheral distribution indices were calculated using the RNA distribution index (RDI) calculator on smFISH channels (see Materials and methods). Schematic diagrams of subcellular RNA distribution of select index values are shown next to the corresponding plots. Mann–Whitney U test. ****p<0.0001 (n = 32 cells).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Density histogram of SARS-CoV-2 nucleocapsid (N) protein voxel intensities co-localised to gRNA or subgenomic RNA (sgRNA) spots that relate to Figure 2C. Schematic diagram of co-staining for N protein and viral RNA is shown. In addition to the ‘observed’ gRNA and sgRNA spots, we performed a ‘random’ simulation to place the same density of RNA spots within infected cells and calculated the voxel intensities that correspond to chance co-localisation. The vertical dotted line corresponds to the threshold of co-detection defined as 2 standard deviation value from the random distribution analysis (n = 7 field of views).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Comparison of dsRNA denaturation efficiency assessed by the reduction of anti-dsRNA (J2) immunofluorescence. Vero E6 cells infected with SARS-CoV-2 (Victoria [VIC], multiplicity of infection [MOI] = 1) were fixed at 8 hr post infection (hpi) and treated with DMSO, formamide, or NaOH prior to immunostaining (see Materials and methods). DMSO and formamide treatment was performed at 80°C. Representative low-magnification single-slice confocal images are shown. Formamide treatment with heat resulted in cell detachment from coverslips. Scale bar = 200 µm. (B) Sensitivity of +ORF1a single-molecule fluorescence in situ hybridisation (smFISH) and J2 immunofluorescence signal to RNase digestion. Fixed infected cells (24 hpi) were treated with RNaseT1 and/or RNaseIII to digest single-stranded RNA and/or dsRNA, respectively, hybridised with +ORF1a probe and stained with J2. Representative full z-projected confocal images are shown, which are single-molecule contrast matched. Scale bar = 20 µm. (C) RNaseT1 digestion of denatured dsRNA. Fixed infected cells (8 hpi) were treated as follows: (i) DMSO/heat only (left); (ii) RNaseT1 then DMSO/heat (centre); or (iii) in the reverse order of DMSO/heat and then RNaseT1 (right). Treated cells were hybridised with +ORF1a and -ORF1b probes (see Figure 2D for schematics) and stained with J2. RNaseT1 digestion followed by DMSO treatment shows that viral dsRNAs are resistant to RNaseT1 activity, but DMSO treatment preceding RNaseT1 suggests that the denatured dsRNA can be targeted by RNaseT1. Full z-projected confocal images are shown. Scale bar = 10 µm.
+
 Negative sense gRNA and sgRNAs are the templates for the synthesis of positive sense RNAs and are expected to localise to viral replication factories. However, their detection by RT-qPCR or sequencing is hampered by cDNA library protocols that employ oligo(dT) selection and by primer binding to dsRNA structures (Ramanan et al., 2016; Sethna et al., 1991). To detect negative sense viral RNAs, we denatured dsRNA complexes through either formamide, DMSO, or sodium hydroxide treatment (Singer et al., 2021; Wilcox et al., 2019). The combination of DMSO with heat treatment resulted in a loss of anti-dsRNA J2 signal, while maintaining cell integrity, suggesting a disruption of dsRNA hybrids (Figure 2—figure supplement 3A). We designed an smFISH probe set specific for the ORF1b antisense sequence that targets the negative sense gRNA (-gRNA) and resulted in intense diffraction-limited spots in DMSO and heat-treated cells (Figure 2D). The -gRNA spots were detected at a significantly lower level than their +gRNA counterparts, with substantial overlap observed between the two strands at multi-RNA spots, consistent with these foci representing active sites of viral replication. To determine if these multi-RNA foci contain dsRNA, the permeabilised infected cells were treated with RNaseT1 or RNaseIII, which are nucleases specific for single-stranded RNA (ssRNA) and dsRNA, respectively (Figure 2—figure supplement 3B). RNaseT1 digestion diminished the +ORF1a probe signal, while RNaseIII treatment abolished the anti-dsRNA J2 signal. A cocktail of RNaseT1 and RNaseIII ablated both +ORF1a probe binding and anti-dsRNA J2 signals, demonstrating that the +ORF1a probe set hybridises to both single and duplex RNA under our experimental conditions. Furthermore, treating cells with DMSO prior to RNaseT1 fully ablated the smFISH signal (Figure 2—figure supplement 3C), demonstrating that denaturation makes dsRNA accessible for RNaseT1 degradation. In summary, our data show that probe binding to negative strand gRNA requires chemical denaturation, suggesting that this replication intermediate is rich in dsRNA structures.
 
-## Anti-dsRNA antibodies underestimate SARS-CoV-2 replication
+### Anti-dsRNA antibodies underestimate SARS-CoV-2 replication
 
 The establishment of replication factories is a critical phase of the virus life cycle. Previous reports have identified these viral factories using the J2 dsRNA antibody (Burgess and Mohr, 2015; Cortese et al., 2020; Targett-Adams et al., 2008; Weber et al., 2006). However, this approach depends on high levels of viral dsRNA as cells naturally express endogenous low levels of dsRNA (Dhir et al., 2018; Kimura et al., 2018; Figure 2E). To evaluate the ability of J2 antibody to quantify SARS-CoV-2 replication sites, we co-stained infected cells at 2 and 6 hpi with both J2 and +ORF1a smFISH probes. No viral-specific J2 signal was detected at 2 hpi, and only 10% of infected cells stained positive at 6 hpi, in agreement with previous observations (Cortese et al., 2020; Eymieux et al., 2021; Figure 2E). In contrast, more than 85% of the cells showed diffraction-limited smFISH signals at both timepoints (Figure 2F). Furthermore, the average J2 signal detected in the SARS-CoV-2-infected cells at both timepoints was comparable to uninfected cells (Figure 2F). These data clearly show that the J2 antibody, although broadly used, underestimates the frequency of SARS-CoV-2 infection. In contrast, smFISH detected gRNA as early as 2 hpi, with a significant increase in copy number by 6 hpi, highlighting its utility to detect and quantify viral replication factories.
 
-## SARS-CoV-2 replication at single-molecule resolution
+### SARS-CoV-2 replication at single-molecule resolution
 
 The efficiency and sensitivity of smFISH to detect single molecules of SARS-CoV-2 RNA allowed us to investigate the dynamics of viral replication in Vero E6 cells during the first 10 hr of infection (Figure 3A). At 2 hpi, the +ORF1a probe set detected predominantly single molecules of +gRNA with a median value of ~30 molecules per cell (Figure 3B and C). Interestingly, at 2 hpi RDV treatment did not affect the number of gRNA copies per cell, suggesting that these RNAs derive from incoming viral particles (Figure 3C). In contrast, the increase in gRNA copies per cell at 4 and 6 hpi was inhibited by RDV, indicating active viral replication. The infected cell population showed varying gRNA levels that we classified into three groups; (i) ‘partially resistant’ cells with <102 gRNA copies that showed no increase in gRNA burden between 2 and 8 hpi (60% of the population); (ii) ‘permissive’ cells with ~102–105 copies per cell showing a modest increase over time (~30%); and (iii) ‘super-permissive’ cells with >105 copies per cell showing a sharp increase in gRNA copies (~10%). Given the high gRNA density in super-permissive cells, RNA counts were estimated by correlating the integrated fluorescence intensity of reference single molecules to the total fluorescence of the 3D cell volume (see Materials and methods), which follows a linear relationship (Figure 3—figure supplement 1). Analysing the total cellular gRNA content showed that ‘super-permissive’ cells are the dominant source of gRNA across the culture (Figure 3D). This suggests that bulk RNA analyses such as RT-qPCR are biased towards this high gRNA burden group. Importantly, we found that cellular heterogeneity persists beyond the initial hours of infection. Even at 24 hpi, 40% of the cells did not reach the super-permissive state, and they formed a distinct population with approximately 10-fold less gRNA (Figure 3C and E). Similar heterogeneous cell populations were observed between 24 and 48 hpi, although the overall levels of gRNA started to decline after 32 hpi, reflecting cytotoxic effects and virus egress (Figure 3—figure supplement 2A–C). Therefore, these results highlight a wide variation in cell susceptibility to SARS-CoV-2 replication, which persisted throughout the infection. Notably, the high level of gRNA content in super-permissive cells (~107 counts/cell) was similar throughout the time course, suggesting the existence of an upper limit of gRNA copies in Vero E6 cells (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental design to profile SARS-CoV-2 replication kinetics using single-molecule fluorescence in situ hybridisation (smFISH). Vero E6 cells were seeded on cover-glass and 24 hr later inoculated with SARS-CoV-2 (Victoria [VIC] strain, multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion and cells fixed at the timepoints shown for hybridisation with +ORF1a and +ORFN probes. In the remdesivir (RDV) condition, the drug was added to cells at 10 µM during virus inoculation and maintained for the infection period. (B) Maximum z-projected confocal images of infected cells. Intensity calibration bars are shown for the +ORF1a and +ORFN channels. Scale bar = 10 µm. (C) Bigfish quantification of +gRNA or +sgRNA counts per cell. sgRNA counts were calculated by subtracting +ORF1a counts from +ORFN counts per cell. Horizontal dashed lines indicate 102 or 105 molecules of RNA. 24 hr post infection (hpi) samples and the cells harbouring >107 RNA counts were quantified by extrapolating single-molecule intensity. Quantified cells from all replicates are plotted (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). Number of cells analysed (untreated/RDV): 2 hpi, 373/273; 4 hpi, 798/516; 6 hpi, 370/487; 8 hpi, 1442/1022; 10 hpi, 1175/1102; 24 hpi, 542/249. (D) Relative contribution of viral gRNA within the infected cell population. The infected cells were classified into three groups based on gRNA counts: (i) ‘partially resistant’ – gRNA <100; ‘permissive’ – 100 < gRNA < 105; ‘super-permissive’ – gRNA >105. The total gRNA within the infected wells was obtained by summing gRNA counts in population, and the figure shows the relative fraction from each classification. Representative max-projected images of cells in each category are shown (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). (E) Identification of super-permissive cells from a low-magnification (×20) high-throughput smFISH assay (left panels). Full z-projected (9 µm) images of infected Vero E6 cells hybridised with +ORF1a probes are shown. At this magnification, only the cells with vRNA count >~105 (i.e. corresponding to ‘super-permissive’ cells) exhibit significant smFISH fluorescence compared to uninfected cells. Scale bar = 250 µm. Percentage of super-permissive cells in untreated and RDV-treated conditions at 8 and 24 hpi (right panel). Labels represent average values. Data are represented as mean ± SD (n = 3, ~ 2000 cells were scanned from each replicate well). Student’s t-test. ***p<0.001; ****p<0.0001. (F) Percentage of infected cells expressing sgRNA. sgRNA-expressing cells were identified by those having a (ORF-N – ORF1a) probe count more than 1. Data are represented as mean ± SEM (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). (G) Per cell ratio of sgRNA/gRNA counts across the time series. Grey symbols represent cell-to-cell median values, whereas the line plot represents ratio calculated from population sum of gRNA and sgRNA. The number of cells analysed is the same as in (Figure 3C), with the exception of cells having equal ORF1a and ORF-N probe counts. Horizontal dashed line represents value of 1 (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). (H) Per cell ratio of sgRNA/gRNA counts grouped by gRNA burden classification as defined in Figure 3D. Data are represented as median ± SEM. Horizontal dashed line represents value of 1 (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). (I) The number of viral factories per cell increase over time as assessed by smFISH cluster detection. Cells harbouring >107 copies of RNA, less than 10 molecules of RNA, cells with no viral factories, and cells from 24 hpi timepoints were excluded from this analysis. Data are represented as mean ± SEM. Number of cells analysed (untreated/RDV): 2 hpi, 494/240; 4 hpi, 758/494; 6 hpi, 315/417; 8 hpi, 933/877; 10 hpi, 726/885 (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). (J) The kinetics of gRNA copies within viral factories. Spatially extended viral factories were resolved by cluster decomposition to obtain single-molecule counts. The type and number of cells analysed are the same as in Figure 3I (2–8 hpi, n ≥ 3; 10 and 24 hpi, n = 2). gRNA, genomic RNA; sgRNA, subgenomic RNA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Correlation of smFISH RNA counts and cellular smFISH fluorescence intensity per cell. Non-‘super-permissive’ cells infected with severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) (multiplicity of infection [MOI], 1, 8–10 hr post infection [hpi]) were hybridised with +ORF1a probes and RNA counts quantified using Bigfish (absolute RNA count) or via estimation using integrated intensity. RNA count by Integrated intensity method was quantified using reference single-molecule intensity and relating it to the total 3D fluorescence of the cells. A linear correlation was fitted using geom_smooth() function of ‘ggplot2’ R package (n = 383 cells).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Experimental design to profile SARS-CoV-2 replication kinetics in the late-stage infection. Vero E6 cells were seeded on cover-glass and 24 hr later inoculated with SARS-CoV-2 (Victoria [VIC] strain, multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and cells were fixed at timepoints shown for hybridisation with +ORF1a probe. In remdesivir (RDV) condition, the drug (10 µM) was added to cells at 24 hpi and maintained for the times shown. (B) Representative full z-projected confocal images of infected cells from the time series. Viral genomic RNA (gRNA) was visualised with +ORF1a probes. Images were contrasted to equivalent single-molecule intensity. Scale bar = 20 µm. (C) Quantification of viral gRNA counts in untreated and RDV-treated cells. Reference single RNA molecule intensity was acquired using Bigfish in signal-sparse region of the images. Viral gRNA counts were quantified by extrapolating single-molecule intensity to 3D integrated intensity per cell. Decay curve was fitted with the median RNA count values using the last three timepoints. Data are represented as median ± SEM (n = 2). (D) The proportion of super-permissive and viable cells per field of view (FOV) across the time series. Cells containing >105 gRNA counts were considered super-permissive. Viable cells were quantified by counting non-condensed nuclei in randomly sampled FOVs. Non-condensed nuclei counts were normalised to the average count values from uninfected ‘Mock’ condition. Student’s t-test. ***p<0.001; ****p<0.0001. Data are represented as mean ± SEM (n = 2).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Dose-response curve of RDV versus SARS-CoV-2 RNA replication. Viral RNA was quantified using RT-qPCR in infected Vero E6 cells at 24 hr post infection (hpi), targeting the ORF-N region. The concentrations of drug required for 50% inhibition (inhibitory concentration 50; IC50) and 90% inhibition (IC90) were estimated by fitting a non-linear (weighted) least-squares model on the data using the nls() function in base R (n = 3).
 
 Viral RNA stability is an important determinant for the virus’ ability to initiate and maintain a productive infection. In an effort to determine the stability of SARS-CoV-2 RNA, we added RDV simultaneously to SARS-CoV-2 infection and followed gRNA persistence in a time course. Notably, the average number of gRNA copies per cell was stable in RDV-treated cells (Figure 3C), suggesting that the incoming gRNA is long-lived. To assess if gRNA is also stable at later times post infection, we treated cells with RDV at 24 hpi and measured gRNA abundance at different times post treatment (Figure 3—figure supplement 2A–C). As expected, RDV treatment led to a reduced proportion of super-permissive cells and non-viable cells at 48 hpi, indicating an inhibition of viral replication and, consequently, viral-induced cell death (Figure 3—figure supplement 2D). However, considerable levels of gRNA persisted in these cells even after 24 hr of RDV treatment, suggesting that gRNA is also relatively stable at late times post infection. To estimate the half-life of gRNA in late infection, we fitted a decay curve and calculated the half-life of gRNA within a range of 6–8 hr (Figure 3—figure supplement 2C). This half-life might be underestimated as gRNA loss is not only due to decay but also to virus egress. Moreover, while we used an RDV dose that exceeded the 90% inhibitory concentration (IC90) (Figure 3—figure supplement 3), we cannot rule out that incomplete inhibition by RDV could affect our half-life estimates (Figure 3C).
 
@@ -81,21 +121,53 @@ Simultaneous analysis of +ORF1a and +ORFN revealed similar expression kinetics f
 
 Positive sense RNA viruses, including coronaviruses, utilise host membranes to generate viral factories, which are sites of active replication and/or virus assembly (Wolff et al., 2020). Our current knowledge on the genesis and dynamics of these factories in SARS-CoV-2 infection is limited. We exploited the spatial resolution of smFISH to study these structures, which we define as spatially extended foci containing multiple gRNA molecule clusters. These clusters are compatible in size with the double membrane vesicles (DMVs) employed by SARS-CoV-2 to replicate and assemble new virions, as previously identified by EM (see Materials and methods; Cortese et al., 2020; Mendonça et al., 2021). We refer to these gRNA clusters as ‘factories’. We observed 1–2 factories per cell at 2 hpi, which increased to ~30 factories/cell by 10 hpi (Figure 3I). In addition, the average number of gRNA molecules within these factories, although variable, increased over time (Figure 3J). RDV treatment reduced both the number of viral factories per cell and their RNA content. Together these data show the capability of smFISH to localise and quantify active sites of SARS-CoV-2 replication and to measure changes in gRNA and sgRNA at a single-cell level over the course of the infection.
 
-## Super-permissive cells are randomly distributed
+### Super-permissive cells are randomly distributed
 
 Our earlier kinetic analysis of infected Vero E6 cells identified a minor population of ‘super-permissive’ cells containing high gRNA copies at 8 hpi. A random selection of ~300 cells allowed us to further characterise the infected cell population (Figure 4A and B). To extend these observations, we examined the vRNAs in two human lung epithelial cell lines, A549-ACE2 and Calu-3, that are widely used to study SARS-CoV-2 infection (Chu et al., 2020; Hoffmann et al., 2020). In agreement with our earlier observations with Vero E6, 3–5% of A549-ACE2 and Calu-3 cells showed a ‘super-permissive’ phenotype (Figure 4C and D). An important question is how these ‘super-permissive’ cells are distributed in the population as the pattern could highlight potential drivers for susceptibility (Healy et al., 2020). Infection can induce innate signalling that can lead to the expression and secretion of soluble factors such as interferons that induce an antiviral state in the local cellular environment (Belkowski and Sen, 1987; Schoggins and Rice, 2011). Regulation can be widespread through paracrine signalling or affect only proximal cells. We considered three scenarios where ‘super-permissive’ cells are randomly distributed, evenly separated or clustered together. We compared the average nearest-neighbour distance between ‘super-permissive’ cells and simulated points that were distributed either randomly, evenly, or in clusters (Figure 4—figure supplement 1). In summary, our results show conclusively that the ‘super-permissive’ infected Vero E6, A549-ACE2, and Calu-3 cells were randomly distributed (Figure 4E and F, Figure 4—figure supplement 1). We interpret these data as being consistent with an intrinsic property of the cell that defines susceptibility to virus infection. The data also argue against cell-to-cell signalling mechanisms that would either lead to clustering (if increasing susceptibility) or to an even distribution (if inhibiting) of infected cells.
 
-## Differential replication kinetics of the B.1.1.7 and VIC strains
+![Figure 4.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative ×60 magnified field of view (FOV) of SARS-CoV-2-infected Vero E6 cells at 8 hr post infection (hpi) (Victoria [VIC] strain, multiplicity of infection [MOI] = 1). Single-molecule fluorescence in situ hybridisation (smFISH) against ORF1a was used to visualise cellular heterogeneity in viral RNA counts. Magnified panels show (i) a ‘super-permissive’ cell and (ii) a cell with discrete viral RNA copies. Scale bar = 10 or 50 µm. (B) Discrete separation of genomic RNA (gRNA) count distribution among infected cells randomly sampled at 8 hpi, where each symbol represents a cell. Statistics for the percentage of infected cells and frequency of ‘super-permissive’ cells at 8 hpi. Quantification was performed per FOV, and the number labels represent average values. Cells with >105 gRNA copies were considered to be ‘super-permissive’ (gRNA quantification: n = 4, 148 uninfected and 316 infected cells; percentage infection: n = 3). (C, D) Heterogeneous SARS-CoV-2 replication in lung epithelial A549-ACE2 and Calu-3 cells. The percentage of infected and super-permissive cells was quantified as with Vero E6 cells above. Scale bar = 50 µm (A549-ACE2, n = 2; Calu-3, n = 3). (E, F) Spatial distribution analysis of super-permissive Vero E6 and A549-ACE2 cells at 8 hpi. Low-magnification smFISH overview of infected cells (top left). 2D mask of super-permissive cells (top right). An example of randomly simulated points within the DAPI mask (bottom left). Same number of random points as super-permissive cells were simulated 10 times per FOV. Histogram of nearest-neighbour distances calculated from super-permissive cells (Observed) and randomly simulated points (Random) (bottom right). Further modes of spatial analyses are presented in Figure 4—figure supplement 1 with infected Calu-3 cells. All confocal images are presented as maximum full z-projection. Data are represented as mean ± SD. Student’s t-test; p-values are shown on the presented visual (Vero E6, n = 3; A549-ACE2, n = 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Spatial distribution analysis of ‘super-permissive’ SARS-CoV-2 (Victoria [VIC])-infected Calu-3 cells. Cells were infected with SARS-CoV-2 (VIC strain) at a multiplicity of infection [MOI] of 1, fixed at 8 hr post infection (hpi) and hybridised with +ORF1a single-molecule fluorescence in situ hybridisation (smFISH) probe to visualise viral RNA. (A) Low-magnification image (full z-projection) of infected Calu-3 cells showing a population of minority ‘super-permissive’ cells visible with smFISH. Scale bar = 250 µm. (B) 2D mask generated from spatial coordinates of super-permissive cells. (C) Observed distribution of super-permissive cells (Observed) and the example coordinates of the three modes of spatial distributions: (i) evenly spaced, (ii) clustered, and (iii) random. The simulations were confined to DAPI-positive areas. (D) Density plot of nearest-neighbour distances obtained from the spatial distribution simulation. Each mode of distribution was iterated 10 times per image. (E) Beeswarm plot of nearest-neighbour distances obtained from the spatial distribution analysis. One-way ANOVA with post-hoc Tukey test (n = 3).
+
+### Differential replication kinetics of the B.1.1.7 and VIC strains
 
 The recent emergence of SARS-CoV-2 VOCs, which display differential transmission, pathogenesis, and infectivity, has changed the course of the COVID-19 pandemic. Recent studies have focused on mutations in the Spike protein and whether these alter particle uptake into cells and resistance to vaccine or naturally acquired antibodies (Collier et al., 2021; Dicken et al., 2021; Planas et al., 2021). The B.1.1.7 variant is associated with higher transmission (Davies et al., 2021; Galloway et al., 2021; Volz et al., 2021) and has 17 coding changes mapping to both non-structural (ORF1a/b, ORF3a, ORF8) and structural (Spike and N) proteins. Mutations within the non-structural genes could affect virus replication, independent of Spike-mediated entry, thus we used smFISH to compare the replication kinetics of the B.1.1.7 and VIC strains (Figure 5A). We discovered that the number of gRNA molecules at 2 hpi was similar for both viruses, reflecting similar cell uptake of viral particles (Figure 5B–E). However, the quantities of intracellular gRNA and sgRNA were lower in B.1.1.7-infected cells compared to VIC at 6 and 8 hpi (Figure 5E). We also found that while the amount of gRNA per cell was reduced in the B.1.1.7 variant, there were an equal number of +ORF1a and +ORFN-positive cells (Figure 5D), suggesting that the reduced B.1.1.7 RNA burden is due to a differential replication efficiency rather than infection rate. The B.1.1.7 variant also showed a reduced number of replication factories per cell (Figure 5F), with each focus containing on average a lower number of gRNA molecules compared to the VIC strain (Figure 5G). RDV treatment ablated the differences between the viral strains, demonstrating that the observed phenotype is replication-dependent (Figure 5B,E-I). Nevertheless, the lower level of individual gRNA that we detected in RDV-treated cells persisted for at least 8 hpi in both the VIC and B.1.1.7 strains. We conclude that individual gRNA molecules of both the strains are highly stable in the cytoplasm of infected cells.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental design to compare the replication kinetics of Victoria (VIC) and B.1.1.7 severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) strains. Vero E6 cells were seeded on cover-glass and 24 hr later inoculated with VIC or B.1.1.7 strain (multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and cells were fixed at designated timepoints for hybridisation with +ORF1a and +ORFN probes. In remdesivir (RDV) condition, the drug was added to cells at 10 µM during virus inoculation and maintained for the infection period. (B) Maximum z-projected confocal images of Vero E6 cells infected with VIC or B.1.1.7 strains. Representative super-permissive cells from the time series are shown. Scale bar = 10 µm. (C) Comparing viral genomic RNA (gRNA) counts at 2 hr post infection (hpi) between VIC and B.1.1.7. Each symbol represents a cell. Different hue of colours represents readings taken from individual repeat experiments, and the labels represent average values (n = 3; VIC, 424 cells; B.1.1.7, 519 cells). Mann–Whitney U test. (D) Comparing percentage of infected cells between the two viral strains at 2 hpi. Infected cells were determined by +ORF1a single-molecule fluorescence in situ hybridisation (smFISH) fluorescence. Data are represented as mean ± SD (n = 3). Student’s t-test. (E) Bigfish quantification of gRNA and subgenomic RNA (sgRNA) smFISH counts per cell. Quantification was performed as in (Figure 3C). Due to bimodality of the data, statistical significance was determined using two-sample Kolmogorov-Smirnov test to compare cumulative distribution of+ ORF1 a counts between the two strains. (n = 3). (VIC, 2 : 6 : 8 hpi = 460 : 343 : 407 cells; B.1.1.7, 2 : 6 : 8 hpi = 396 : 487 : 429 cells). (F) Comparing the number of viral factories per cell between the two viral strains across the time series. Cells harbouring >107 copies of vRNA were excluded from analysis. Viral factories were identified using Bigfish cluster detection as with (Figure 3I). Data are represented as mean ± SEM (n = 3). Mann–Whitney U test. (G) Density ridge plot showing the number of gRNA copies within viral factories for VIC and B.1.1.7 variants. The density distribution represents the number of molecules per viral factories per cell. Vertical segment symbol represents a cell (n = 3). Mann–Whitney U test. (H) Per cell ratio of sgRNA/gRNA counts across the time series. Grey symbols represent cell-to-cell mean ± SE which are connected by line plots. Horizontal dashed line represents value of 1 (n = 3). Mann–Whitney U test. (I) Comparison of the percentage of super-permissive cells between the two strains assessed from low-magnification high-throughput smFISH assay (see Figure 5—figure supplement 1 for details). Data are represented as mean ± SD (n = 3). Student’s t-test. n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ***p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Vero E6 cells were seeded on cover-glass and 24 hr later inoculated with Victoria (VIC) or B.1.1.7 strain (multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and cells were fixed at designated timepoints. In remdesivir (RDV) condition, the drug was added to cells at 10 µM during virus inoculation and maintained for the infection period. (A) Per cell ratio of subgenomic RNA (sgRNA)/genomic RNA (gRNA) counts grouped by gRNA burden classification as in Figure 3D. Single-molecule fluorescence in situ hybridisation (smFISH) quantification was performed as with Figure 5H. Grey symbols represent mean ± SEM. The horizontal dashed line represents ratio of 1 (3). Mann–Whitney U test. n.s., not significant; *p<0.05; **p<0.01; ***p<0.001; ***p<0.0001. (B) Low-magnification (×20) z-projected (6 µm) images of +ORF1a and +ORFN smFISH in infected Vero E6 cells. Scale bar = 250 µm. (C) Scatter plot showing high-throughput smFISH intensity quantification of +ORF1a and +ORFN probes in VIC and B.1.1.7-infected cells. Each symbol represents a cell. Fluorescence density was measured from stitched ×20 overview images, covering approximately ~60% of the culture well area. At this magnification, smFISH fluorescence is only detectable in ‘super-permissive’ cells (>105 vRNA). The percentage of super-permissive cells was calculated based on a gate which was set with +ORFN signal using uninfected (Mock) condition signal as a threshold (vertical line) (n = 3).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Spatial distribution analysis of super-permissive A549-ACE2 cells infected with VIC or B.1.1.7 strains at 8 hr post infection (hpi) and 24 hpi. Low-magnification overview of infected cells hybridised with +ORF1a probes is shown. To compare the ‘observed’ distribution of super-permissive cells and ‘random’ distributions, the same number of random points as super-permissive cells was simulated 10 times per field of view (FOV). Nearest-neighbour distances calculated from super-permissive cells (Observed) and simulated points (Random) are presented as histogram plots. Nearest-neighbour values (Rn) were calculated for each condition to assess the distribution of cell clusters (see Materials and methods). Rn value below 1 indicates a degree of clustering, and Rn value >1 indicates uniform placements. Student’s t-test. p-Values are denoted on the figure (n = 2 entire chamber wells).
 
 Consistent with the delay in replication, we observed a shallower growth of the sgRNA/gRNA ratio in B.1.1.7-infected cells between 2 and 8 hpi compared to the VIC strain (Figure 5H). These differences between the strains were apparent in all three classifications of cells from our earlier gRNA burden criteria. We noted that B.1.1.7-infected ‘partially resistant’ and ‘permissive’ cells show lower sgRNA/gRNA ratio while ‘super-permissive’ cells displayed 1.5-fold higher ratio compared to VIC (Figure 5—figure supplement 1A). The frequency of super-permissive cells was lower for B.1.1.7 at 6 and 8 hpi (Figure 5I, Figure 5—figure supplement 1B and C). In agreement with our results with VIC (Figure 4E and F), the distribution of super-permissive cells with B.1.1.7 was random at 8 hpi; however, this changed to a non-random pattern at 24 hpi. In contrast, the distribution of VIC super-permissive cells remained random at all timepoints (Figure 5—figure supplement 2). We interpret these results as demonstrating differences in the infection kinetics of the variants, with B.1.1.7 displaying a potentially higher capacity to spread locally between adjacent cells than VIC.
 
 To test whether our findings using B.1.1.7 are applicable to other cell types, we assessed the replication of both variants in A549-ACE2 cells that were recently reported to be immunocompetent (Li et al., 2021). Both VIC and B.1.1.7 infections resulted in comparable numbers of infected cells and similar numbers of gRNA molecules per cell at 2 hpi, demonstrating a similar degree of viral particle entry into cells (Figure 6—figure supplement 1A). However, infection with the B.1.1.7 variant led to a reduced gRNA and sgRNA burden at 8 and 24 hpi (Figure 6A and B, Figure 6—figure supplement 1B and C). Moreover, fewer ‘super-permissive’ cells were detected at these timepoints (Figure 6C). To evaluate whether the slower replication kinetics of B.1.1.7 was attributable to a reduction in the secretion of new particles, we measured the level of infectious virus (Figure 6—figure supplement 1D). We found a modest but significant reduction in the infectious titre of B.1.1.7 compared to VIC at 8 and 24 hpi, consistent with the reduced cellular RNA burden of B.1.1.7. Considering these results together, we conclude that the replication and secretion rates of B.1.1.7 are slower than VIC in contrast to its more rapid spread in the human population.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design to compare replication kinetics and transcriptomic landscapes of VIC and B.1.1.7 strains. A549-ACE2 cells were seeded and 24 hr later inoculated with VIC or B.1.1.7 strain (multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and cells were fixed at designated timepoints for single-molecule fluorescence in situ hybridisation (smFISH) or harvested for RNA-seq library preparation. (B) Maximum z-projected confocal images of A549-ACE2 cells infected with VIC or B.1.1.7. Representative super-permissive cells from the time series are shown. Numbers at the bottom-left corner indicate dynamic contrast range used to display the image. Scale bar = 10 µm. (C) Comparison of the percentage of super-permissive cells between the two strains. Super-permissive cells were identified from low-magnification high-throughput smFISH assay (see Figure 6—figure supplement 1B-C). Data are represented as mean ± SD (8 hr post infection [hpi] n = 2; 24 hpi n = 3). *p<0.5: **p<0.01. (D) Read coverage along SARS-CoV-2 genome (positive strand) for the two variants in the three timepoints. Counts are normalised to total read count to show the increased proportion of reads from the virus in addition to the accumulation of subgenomic RNA and averaged across replicates. (n = 3). (E) Percentage of reads mapping to SARS-CoV-2 genome of total mapped reads, shown separately for the two strains. Each symbol represents an experimental replicate (n = 3). (F) Violin plots showing fold-changes in the host transcriptome and viral RNA genome comparing B.1.1.7 and VIC strains at the three timepoints. Fold-changes for SARS-CoV-2-positive and -negative strands are indicated as separate points and coloured according to the statistical significance of the change (red – higher in VIC, blue – higher in B.1.1.7, grey – no change). p-adjusted <0.01, log2 fold-change cut-off = 0 (n = 3). (G) Percent of reads mapping to SARS-CoV-2-negative (antisense) strand relative to all SARS-CoV-2 reads, shown separately for the two strains. Each symbol represents an experimental replicate (n = 3). (H) Estimated ratio of SARS-CoV-2 subgenomic to genomic RNA for the two virus variants at the three timepoints. Student’s t-test. n.s., not significant; *p<0.05; ****p<0.001 (n = 3). (I) Expression of S, N, ORF9b, and N* viral subgenomic RNAs in each strain and different timepoints. Expression of each subgenomic RNA is determined from split reads indicative of transcriptional skipping landing within 100 nt upstream of annotated ORF start site, or until upstream ORF start codon if nearer. Percentage of all skip events is shown (n = 3).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** A549-ACE2 cells were seeded and 24 hr later inoculated with Victoria (VIC) or B.1.1.7 strain (multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and the cells were fixed at designated timepoints for single-molecule fluorescence in situ hybridisation (smFISH). (A) Comparing percentage of infected A549-ACE2 cells between VIC and B.1.1.7 at 2 hr post infection (hpi) (left). Infected cells were determined by +ORF1a smFISH spot detection. Data are represented as mean ± SD. Comparison of viral genomic RNA (gRNA) counts at 2 hpi between the two strains (right). Each dot represents a cell. Data are represented as mean ± SEM, and the labels represent average values. (B) Low-magnification z-projected (9 µm) images of SARS-CoV-2-infected A549-ACE2 cells. Cells were hybridised with +ORF1a and +ORFN probes to visualise super-permissive cells. Scale bar = 500 µm. (C) Scatter plot showing high-throughput smFISH intensity quantification of +ORF1a and +ORFN probes in infected cells. Each dot is a cell. Fluorescence signal density was measured from low-magnification overview image of entire culture wells. A gate was set with +ORFN signal using uninfected (Mock) condition (dotted line) (2–4 hpi, n = 2; 24 hpi, n = 3). (D) Comparison of VIC and B.1.1.7 infection and secretion of infectious virus. Extracellular media from infected A549-ACE2 cells was collected at the indicated timepoints and infectious virus quantified using plaque forming assay. Data are represented as mean ± SEM. No apparent plaques were found at 2 hpi, and pseudocounts of 10 PFU/ml were added for plotting purposes (LLOD, lower limit of detection). Student’s t-test (n = 3). *p<0.05.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/74153/elife-74153-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** A549-ACE2 cells were seeded and 24 hr later inoculated with VIC or B.1.1.7 strain (multiplicity of infection [MOI] = 1) for 2 hr. Non-internalised viruses were removed by trypsin digestion, and the cells were harvested for RNA-seq library preparation. (A) First two components of a principal component analysis (PCA) performed on the 500 host genes showing the highest variance in RNA-seq. The infection timepoints (coloured) and control (grey) samples group into separate clusters, but the samples of the two strains remain close to one another (n = 3). (B) Violin plots showing fold-changes in the host transcriptome and viral RNA genome comparing consecutive timepoints separately for each of the two strains. Fold-changes for SARS-CoV-2-positive and -negative strands are indicated as separate points and coloured according to the statistical significance of the change (red – upregulated relative to earlier timepoint, blue – downregulated relative to earlier timepoint, grey – no change). p-adjusted <0.01, log2 fold-change cut-off = 0 (n = 3). (C) Expression of viral subgenomic RNAs (sgRNAs) in each strain and different timepoints. Expression of each sgRNA is determined from split reads indicative of transcriptional skipping landing within 100 nt upstream of annotated ORF start site, or until upstream ORF start codon if nearer. Percentage of all skip events is shown (n = 3). (D) Comparison of transcriptional skip site usage between the two virus strains at 24 hr post infection (hpi). Assignment to viral genes is as in panel (C).Average across replicates is shown (n = 3).
+
 To evaluate our observation on B.1.1.7 replication kinetics with an independent method, we sequenced ribo-depleted total RNA libraries of A549-ACE2 cells infected with B.1.1.7 or VIC for 2, 8, and 24 hr (Figure 6A, Figure 6—figure supplement 2A). As expected, the number of reads mapping to SARS-CoV-2 genome increased over time, reflecting active replication and transcription (Figure 6D). Reads mapping to the 3′ end of the genome increased relative to the 5′ end, reflecting the synthesis of sgRNAs. In agreement with our smFISH analysis, we detected similar levels of vRNA at 2 hpi within B.1.1.7 or VIC-infected cells, consistent with similar internalisation rates in A549-ACE2 cells (Figure 6E). However, the abundance of vRNAs in B.1.1.7-infected cells at 8 and 24 hpi was notably lower than with VIC-infected cells (Figure 6E). Furthermore, the level of B.1.1.7 RNA was almost unaltered between 2 and 8 hpi, and then increased dramatically at 24 hpi (Figure 6E, Figure 6—figure supplement 2B), contrasting with VIC-infected cells, which showed a continuous increase in vRNA over time. Together, these RNA sequencing data confirm that the B.1.1.7 variant exhibits delayed replication kinetics complementing our smFISH results.
 
-## Transcriptomic changes in B.1.1.7 and VIC-infected cells
+### Transcriptomic changes in B.1.1.7 and VIC-infected cells
 
 To further explore the differences in gene expression between the B.1.1.7 and VIC strains, we assessed the abundance of the different vRNAs in infected A549-ACE2 cells. Negative sense viral RNAs represent a small fraction of the vRNA present in the cell, as assayed by smFISH (Figure 6G). These negative sense transcripts are detectable as early as 2 hpi, adding further support to our earlier conclusion that primary viral replication events can occur rapidly post-infection, particularly in ‘super-permissive’ cells (Figures 3C and 6G). The ratio between negative and positive sense vRNAs increased throughout the infection for the VIC strain, but for B.1.1.7 we observed a modest reduction in the ratio at 24 hpi (Figure 6G). To assess the expression of sgRNAs, we quantified the reads mapping to the split junctions derived from RNA-dependent RNA polymerase discontinuous replication (Figure 6—figure supplement 2C; Kim et al., 2020; V’kovski et al., 2021). In agreement with smFISH data, sgRNAs were detected in low quantities at 2 hpi (Figure 6D and G). For VIC, the sgRNA/gRNA ratio peaks at 8 hpi, followed by a significant drop at 24 hpi (Figure 6G). For B.1.1.7, we observed a significantly lower sgRNA/gRNA ratio at 8 hpi when compared to VIC (Figure 5H). However, the sgRNA/gRNA ratio of B.1.1.7 remained stable between 8 and 24 hpi, surpassing VIC (Figure 6H). These results suggest that both VIC and B.1.1.7 have a different kinetics of gRNA and sgRNA expression, complementing our earlier observations with smFISH (Figure 3C and G).
 
@@ -115,25 +187,308 @@ Emerging VOCs, such as B.1.1.7, have been reported to have a fitness advantage i
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (SARS-CoV-2)</td>
+      <td>SARS-CoV-2 RefSeq reference genome</td>
+      <td>NCBI</td>
+      <td>NC_045512.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>human genome</td>
+      <td>Ensembl</td>
+      <td>GRCh38.99</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2)</td>
+      <td>Victoria 01/20 (BVIC01)</td>
+      <td>Caly et al., 2020</td>
+      <td></td>
+      <td>Provided by PHE Porton Down after supply from the Doherty Centre Melbourne, Australia</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2)</td>
+      <td>B.1.1.7 (20I/501Y.V1.HMPP1)</td>
+      <td>Tegally et al., 2020</td>
+      <td></td>
+      <td>Provided by PHE Porton Down</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (SARS-CoV-2)</td>
+      <td>HCoV-229E</td>
+      <td>Provided by Professor Andrew Davidson and Professor Peter Simmonds</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (African green monkey)</td>
+      <td>Vero E6</td>
+      <td>Kind gift from Professor William James</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549-ACE2</td>
+      <td>Kind gift from Professor Ralf Bartenschlager</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Huh-7.5</td>
+      <td>Kind gift from Professor Peter Simmonds</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Calu-3</td>
+      <td>Kind gift from Professor Nicole Zitzmann</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Gold Syrian hamster)</td>
+      <td>hamster lung tissue</td>
+      <td>This study</td>
+      <td></td>
+      <td>Infected tissue provided by the Biological Investigations Group, Public Health England, Porton Down</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>J2 primary antibody (mouse, monoclonal)</td>
+      <td>Scicons</td>
+      <td>Cat# 10010200;RRID:AB_2651015</td>
+      <td>1:500 IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SARS-CoV-2 N antibody (human, monoclonal)</td>
+      <td>Huang et al., 2020</td>
+      <td>Ey2A clone</td>
+      <td>1:2000 IF</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SARS primer probe</td>
+      <td>IDT</td>
+      <td>Cat# 100006770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>B2M primer probe</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 4325797</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAGEN RNeasy kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina Total RNA Prep with Ribo-Zero Plus library kit</td>
+      <td>Illumina</td>
+      <td>Cat# 20040525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Beckman Coulter RNAClean XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Takyon Dry Probe MasterMix</td>
+      <td>Eurogentec</td>
+      <td>Cat# UFD-NPMT-C0101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATTO633 NHS ester</td>
+      <td>Atto-Tec</td>
+      <td>Cat# AD633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATTO565 NHS ester</td>
+      <td>Atto-Tec</td>
+      <td>Cat# AD565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cy3 NHS ester</td>
+      <td>Lumiprobe</td>
+      <td>Cat# 11320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATTO488 NHS ester</td>
+      <td>Atto-Tec</td>
+      <td>Cat# AD488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin-Alexa Fluor 488 conjugate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellMask Green</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# C37608</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNaseT1</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# EN0541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNaseIII</td>
+      <td>NEB</td>
+      <td>Cat# M0245S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stellaris Probe Designer ver 4.2</td>
+      <td>Biosearch technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘bowtie2’</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td></td>
+      <td>v2.4.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OMERO server</td>
+      <td>Allan et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cellSens Dimension</td>
+      <td>Olympus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Institute of Health</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FISH-quant</td>
+      <td>Mueller et al., 2013</td>
+      <td></td>
+      <td>v3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNA Distribution Index (RDI) calculator</td>
+      <td>Stueland et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR aligner</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td>v2.7.3a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellpose</td>
+      <td>Stringer et al., 2021</td>
+      <td></td>
+      <td>v0.6.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bigfish</td>
+      <td>Imbert et al., 2021</td>
+      <td></td>
+      <td>v0.4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td>v1.28.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Affinity Designer</td>
+      <td>Serif</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Vero E6, A549-ACE2 (kind gift from the Bartenschlager lab) (Klein et al., 2020), and Huh-7.5 cells were maintained in standard DMEM, Calu-3 cells in Advanced DMEM both supplemented with 10% foetal bovine serum, 2 mM L-glutamine, 100 U/ml penicillin, and 10 μg/ml streptomycin and non-essential amino acids. All cell lines tested free of mycoplasma were maintained at 37°C and 5% CO2 in a standard culture incubator. Human cell line identities were authenticated by Short Tandem Repeat (STR) profiling, and Vero E6 cells were verified using DNA barcoding.
 
-## Virus propagation and infection of cell culture models
+### Virus propagation and infection of cell culture models
 
 SARS-CoV-2 strains: VIC 01/20 (BVIC01) (Caly et al., 2020) (provided by PHE Porton Down after supply from the Doherty Centre Melbourne, Australia) and B.1.1.7 (Tegally et al., 2020) (20I/501Y.V1.HMPP1) (provided by PHE Porton Down). Viral strains were propagated in Vero E6 cells as described (Wing et al., 2021). Briefly, naïve Vero E6 cells were infected with SARS-CoV-2 at an MOI of 0.003 and incubated for 48–72 hr until visible cytopathic effect was observed. At this point, cultures were harvested, clarified by centrifugation to remove residual cell debris and stored at –80°C. To determine the viral titre, fresh Vero E6 cells were inoculated with serial dilutions of SARS-CoV-2 viral stocks for 2 hr followed by addition of a semi-solid overlay consisting of 1.5% carboxymethyl cellulose (Sigma). Cells were incubated for 72 hr and visible plaques enumerated by fixing cells using amido black stain to calculate PFU/ml. Similarly, HCoV-229E (Andrew Davidson lab [Bristol] and Peter Simmmonds lab [Oxford]) virus was propagated in Vero E6 cells and TCID50 was performed in Huh-7.5 cells.
 
 For smFISH experiments with the SARS-CoV-2 stains, cells were infected at an MOI of 1 for 2 hr followed by extensive washing in PBS. Residual cell surface-associated virus was removed by trypsin treatment of the cell monolayer for 2 min followed by neutralisation of the trypsin using serum-containing media. Infected cells were then maintained for defined periods up to 24 hr. For the HCoV-229E, cells were infected at an MOI of 1 and were maintained for 24 and 48 hr.
 
-## Hamster infection and tissues preparation
+### Hamster infection and tissues preparation
 
 Golden Syrian hamsters (Mesocricetus auratus) (males and females) aged 7 weeks old, weighing 96–116 g, were obtained from Envigo, London, UK. Hamsters were housed in individual cages with access to food and water ad libitum. Hamsters were briefly anaesthetised with 5% isoflurane (Zoetis, Leatherhead, UK) and 4 l/m O2 and inoculated by the intranasal route with 5 × 104 PFU/animal of SARS-CoV-2 BVIC01 delivered in 100 μl per nostril (200 μl in total). Hamsters were monitored post-infection for weight, clinical signs and temperature (via implanted temperature chip). On day 4, the hamsters were euthanised by overdose (sodium pentobarbitone [Dolelethal, Vetquinol UK Ltd]) via the intraperitoneal route. At necropsy, lung samples were fixed in 10% buffered formalin at room temperature and embedded in paraffin wax. 4 µm tissue sections were cut.
 
-## RT-qPCR
+### RT-qPCR
 
 Infected cells were harvested in RLT buffer and RNA extracted using the QIAGEN RNeasy kit. SARS-CoV-2 RNA was quantified using a one-step reverse transcriptase qPCR (RT-qPCR) kit (Takyon) in a multiplexed reaction containing primer probes directed against the SARS-CoV-2 N gene (FAM) and ß–2-microglobulin (VIC) as an internal control. All qPCR reactions were carried out using a Roche 96 Light cycler (Roche) (SARS primer probe IDT CAT:100006770, B2M primer probe Applied Biosystems 4325797).
 
-## Single-molecule fluorescence in situ hybridisation (smFISH)
+### Single-molecule fluorescence in situ hybridisation (smFISH)
 
 smFISH was carried out as previously reported (Titlow et al., 2018; Yang et al., 2017) with minor modifications. Briefly, cells were grown on #1.5 round-glass coverslips in 24-well plate or in µ-slides 8-well glass bottom (IBIDI) and fixed in 4% paraformaldehyde (Thermo Fisher) for 30 min at room temperature. Coverslips were cleaned in 80% ethanol with lint-free tissue and kept in 100% ethanol to maintain sterility and cleanliness. Cells were permeabilised in PBS/0.1% Triton X-100 for 10 min at room temperature followed by washes in PBS and 2× SSC. Cells were pre-hybridised in pre-warmed (37°C) wash solution (2× SSC, 10% formamide) twice for 20 min each at 37°C. Hybridisation was carried out in hybridisation solution (2× SSC, 10% formamide, 10% dextran sulphate) containing 500 nM smFISH probes overnight at 37°C. For infection timepoints beyond 24 hr, smFISH probes were added at 1 µM. After the overnight hybridisation, cells were washed for 20 min in pre-warmed wash solution at 37°C followed by counterstain with DAPI (1 µg/ml), phalloidin-Alexa Fluor 488 conjugate (264 nM) and/or CellMask Green (1:1,000,000) diluted in wash solution. Cells were then washed once with wash solution for 20 min at 37°C and twice with 2× SSC for 10 min each at room temperature. Cells were mounted using Vectashield, IBIDI mounting media or 2× SSC.
 
@@ -143,27 +498,27 @@ In the experiment to detect viral negative strands, dsRNA was denatured using DM
 
 For smFISH on FFPE hamster lungs, the tissue sections were pre-treated as described in Annaratone et al., 2017 and the probes were hybridised based on the protocol described in Rouhanifard et al., 2018 with minor modifications. Briefly, tissues were fixed in 10% neutral buffered formalin and sectioned to 5µm slices. Tissue sections were deparaffinised in xylene (2 × 10min), washed in 100% ethanol (2 × 5min) and post-fixed in methanol-acetic acid (3:1v/v) for 5min. Tissues were re-hydrated in an ethanol gradient for 3min each (100%, 85%, 70%, nuclease-free water), heated at 80°C for 1hr in antigen retrieval solution (10mM sodium citrate, pH 6 supplemented with 1:50 RVC), permeabilised in 70% ethanol overnight at 4°C. Then, sections were incubated in 100% ethanol for 5min, air-dried for 5min and tissue-cleared with 8% SDS made up in 2× SSC. Afterwards, standard smFISH procedures were followed.
 
-## smFISH probe design and specificity analysis
+### smFISH probe design and specificity analysis
 
 Candidate smFISH probe sequences were acquired using Stellaris Probe Designer version 4.2 (https://www.biosearchtech.com/stellaris-designer) with the following parameters: organism, human; masking level, 5; oligo length, 20 nt; minimum spacing length, 3 nt. Appropriate region of the SARS-CoV-2 Wuhan-Hu-1 (NC_045512.2) reference sequence was used as target sequence. We BLAST screened candidate probe sequences against custom human transcriptome and intron database to score number of off-target basepair matches, then 35–48 sequences with the least match scores were chosen per probe set. Oligonucleotides were singly labelled with ATTO633, ATTO565, Cy3, or ATTO488 at 3′ ends according to a published protocol (Gaspar et al., 2017) and were concentration normalised to 25µM. All probe sets used in this study had degree of labelling>0.94.
 
 We developed a bespoke pipeline to analysed the sequence specificity of oligonucleotide probe sequences against ORF-1a and ORF-N by alignment against SARS-CoV-1 (NC_004718), SARS-CoV-2 (NC_045512), MERS-CoV (NC_019843), HCoV-229E (NC_002645), HCoV-NL63 (NC_005831), HCoV-OC43 (NC_006213), HCoV-HKU1 (NC_006577), human (GCF_000001405.39), and African green monkey (GCF_015252025.1) RefSeq genome or transcriptome assembly using ‘bowtie2’ (2.4.4) (Langmead and Salzberg, 2012). Following bowtie2 arguments were used to find minimum edit distance of oligonucleotide sequences to target genome/transcriptome: --end-to-end --no-unal --align-seed-mm 0, --align-seed-length 5, --align-seed-interval 1–1.15, --effort-extend 15, --effort-repeat 2. Melting temperatures were obtained using ‘rmelting’ (1.8.0) R package at 300mM Na concentration (2× SSC). smFISH probe sequences used in this study are available in Supplementary file 2.
 
-## Immunofluorescence
+### Immunofluorescence
 
 After permeabilisation, cells were blocked in blocking solution (50% LI-COR Odyssey blocking solution, pretreated with RNASecure for 30 min and supplemented with 2 mM ribonucleoside vanadyl complex and 0.1% Tween-20) for 30 min at room temperature. Then, cells were incubated with J2 primary antibody (Scicons 10010200) at 2 µg/ml or human anti-N primary antibody (Ey2A clone 1:2000) (Huang et al., 2020) for 2 hr at room temperature. Cells were washed three times in PBS/0.1% Tween-20 (PBSTw) for 10 min each at room temperature and incubated with fluorescent secondary antibodies (1:500) diluted in blocking solution for 1 hr at room temperature. After further three washes in PBSTw, cells were mounted using Vectashield or IBIDI mounting media. For combined smFISH and immunofluorescence, antibody staining was carried out sequentially after the smFISH protocol.
 
-## Microscopy and image handling
+### Microscopy and image handling
 
 Cells were imaged on an Olympus SpinSR10 spinning disk confocal system equipped with Prime BSI and Prime 95B sCMOS cameras. Objectives used were ×20 dry (0.8 NA, UPLXAPO20X), ×60 silicone oil (1.3 NA, UPLSAPO60XS2), ×60 oil (1.5 NA, UPLAPOHR60X), or ×100 oil (1.45 NA, UPLXAPO100XO). Image voxel sizes were 0.55 × 0.55 × 2 µm (x:y:z) with the ×20 objective and 0.11 × 0.11 × 0.2 µm (x:y:z) with the ×60 and ×100 objectives. Automatic and manual image acquisition and image stitching were performed with Olympus cellSens Dimension software. Images were uploaded and stored in the University of Oxford OMERO server (Allan et al., 2012), and OMERO.figure (3.2.0) was used to generate presented image visualisations.
 
-## Image analysis
+### Image analysis
 
-## Cell segmentation and counting
+#### Cell segmentation and counting
 
 Cell segmentation was performed either manually in ImageJ (National Institute of Health) or automatically with Cellpose (0.6.1) (Stringer et al., 2021) using 2D maximum intensity projected images of phalloidin or CellMask stains. Cellpose parameters for ×60 and ×100 magnification images were model_type = cyto, diameter = 375, flow_threshold = 0.9, cellprob_threshold=-3. For 20× stitched images, CellMask channel was deconvolved with constrained iterative module using cellSens (five iterations, default spinning disk PSF, Olympus), then the following Cellpose parameters were used: model_type = cyto, diameter = 55, flow_threshold = 0, cellprob_threshold=-6. Total number of cells per image was counted using a custom ImageJ macro script or from the Cellpose segmentation output on DAPI channel images (model_type = nuclei, diameter = 20, default threshold). Infected cells were counted using ImageJ ‘3D object counter’ or manually.
 
-## Quantification of smFISH images
+#### Quantification of smFISH images
 
 Single-molecule-level quantification of smFISH images was performed either with FISH-quant (Mueller et al., 2013) or Bigfish (Imbert et al., 2021). For FISH-quant, ImageJ region of interest (ROI) files were converted to FQ outline file using a custom Python script. Then, smFISH channels were Laplacian of Gaussian filtered (sigma = 7, 3 px) and pre-detected using local maximum mode with ‘allow smaller z region for analysis’ option enabled. Pre-detected diffraction limited spots were fitted with 3D Gaussian and thresholded in batch mode based on filtered intensity, amplitude, and σz. Thresholds were defined by uninfected ‘Mock’ condition samples. The filtering also removed non-specific autofluorescence and rare dust particles because these contaminants usually show lower fluorescence intensity and are highly variable in shapes.
 
@@ -173,48 +528,52 @@ Cells with high viral RNA (>105-6 RNA counts) were quantified by integrating smF
 
 Viral factories were defined as gRNA smFISH signals with spatially extended foci that exceed the point-spread function of the microscope and intensity of the reference single molecules. In FISH-quant, the foci were quantified using the TxSite quantification mode (xy:z = 500:1200 nm crop per factory) with normal-sampled averaged single-molecule image (xy:z = 15:12 px) from the batch mode output. Then, ‘Integrated intensity in 3D’ method was used to compare integrated intensity of the viral factory to that of averaged single-molecule RNA. In Bigfish, the factories were resolved using ‘decompose_cluster()’ function to find a reference single-molecule spot in a less signal-dense region of the image, which was used to simulate fitting of reference single-molecule spots into viral factories until the local signal intensities are matched. The candidate factories were filtered based on the previously reported radii of DMVs measured by electron microscopy (150 nm pre-8 hpi and 200 nm post-8 hpi) (Cortese et al., 2020). In addition, we applied a threshold of 3–7 RNA molecules per factory as a technical cut-off to prevent overestimation or over-cluster of viral factories at later infection timepoints.
 
-## Dual-colour smFISH spot detection analysis
+#### Dual-colour smFISH spot detection analysis
 
 The same viral RNA target was detected using two smFISH probes labelled with alternating (ODD and EVEN) red and far-red fluorochromes. Resulting images were processed in FISH-quant to obtain 3D coordinates of each spots. Percentage co-localisation analysis was performed with a custom script using an R package ‘FNN’ (1.1.3). Briefly, we calculated 3D distance of nearest neighbour for each spot in the red channel to the closest detected spot in the other channel and repeated the analysis starting from the far-red channel. We then used a value of 300 nm to define co-localised spots corresponding to the same viral RNA molecule. The presented visuals report percentage co-localisations calculated from the red channel to the far-red channel and vice versa. The analysis was performed per field of view.
 
-## Quantification of fluorescence intensity and signal co-localisation
+#### Quantification of fluorescence intensity and signal co-localisation
 
 Immunofluorescence images were background subtracted using rolling ball subtraction method (radius = 150 px) in ImageJ. Anti-dsRNA (J2) stain was quantified by integrating fluorescence signal across the z-stacks of cellular ROI divided by the cell volume to obtain signal density. Signal density was normalised to the average signal density of uninfected ‘Mock’ condition cells. Fluorescence intensity profiles were obtained using ImageJ ‘plot profile’ tool across 3 µm region on 1 µm maximum intensity projected images. To assess co-localisation of N protein with SARS-CoV-2 RNA, ellipsoid mask centred around centroid xyz coordinates of smFISH spots was generated with the size of the point-spread function (xy radius = 65 nm, z radius = 150 nm) using ImageJ 3D suite. Integrated density of N protein channel (background subtracted, radius = 5 px) fluorescence within the ellipsoid mask was measured and compared to the equivalent signal in the uninfected condition or randomly distributed ellipsoids.
 
-## Calculation of RNA spatial dispersion index
+#### Calculation of RNA spatial dispersion index
 
 Subcellular spatial distribution metrics of SARS-CoV-2 RNA species were quantified using the RNA Distribution Index (RDI) calculator (Stueland et al., 2019). Nuclei and cell boundaries were pre-segmented in ImageJ using the ‘Auto Threshold’ function on DAPI (‘method = Huang’) or CellMask green (‘method = MaxEntropy’) channels. Resulting images were maximum intensity projected and passed into the RDI calculator MATLAB script. Standard RDI calculator graphical user interface was used without background intensity removals.
 
-## Simulation of super-permissive cell distribution
+#### Simulation of super-permissive cell distribution
 
-Simulations were performed to determine if the appearance of SARS-CoV-2 super-permissive cells follows a random distribution. The general strategy was to test the complete spatial randomness hypothesis by comparing the average nearest-neighbour distance of superinfected cells to an equal number of randomly selected coordinates (Ripley, 1979). 2D spatial coordinates of superinfected cells were obtained from the 3D object counter (ImageJ) as described above. Cell nuclei were segmented with the DAPI channel, and placement of random coordinates was confined to pixels that fell within the DAPI segmentation mask. Nearest-neighbour distances were calculated using the KDtree algorithm (Maneewongvatana and Mount, 1999) implemented in Python (scipy.spatial.KDTree). Pseudo-random distributions were simulated by randomly placing the first coordinate, then constraining the placement of subsequent coordinates to within a defined number of pixels. Rn nearest-neighbour statics (Pinder and Witherick, 1972) were calculated according to the following equation, where D(obs) is the average nearest-neighbour distance (µm), a is the total imaged area (µm), and n is the number of super-permissive cells. Rn value of 1 suggests a random distribution, whereas Rn < 1 indicates clusteredness and Rn > 1 indicates regular distributions.Rn=Dobs0.5an
+Simulations were performed to determine if the appearance of SARS-CoV-2 super-permissive cells follows a random distribution. The general strategy was to test the complete spatial randomness hypothesis by comparing the average nearest-neighbour distance of superinfected cells to an equal number of randomly selected coordinates (Ripley, 1979). 2D spatial coordinates of superinfected cells were obtained from the 3D object counter (ImageJ) as described above. Cell nuclei were segmented with the DAPI channel, and placement of random coordinates was confined to pixels that fell within the DAPI segmentation mask. Nearest-neighbour distances were calculated using the KDtree algorithm (Maneewongvatana and Mount, 1999) implemented in Python (scipy.spatial.KDTree). Pseudo-random distributions were simulated by randomly placing the first coordinate, then constraining the placement of subsequent coordinates to within a defined number of pixels. Rn nearest-neighbour statics (Pinder and Witherick, 1972) were calculated according to the following equation, where D(obs) is the average nearest-neighbour distance (µm), a is the total imaged area (µm), and n is the number of super-permissive cells. Rn value of 1 suggests a random distribution, whereas Rn < 1 indicates clusteredness and Rn > 1 indicates regular distributions.
 
-## RNA-sequencing library preparation
+$$
+Rn=\frac{Dobs}{0.5\sqrt{\frac{a}{n}}}
+$$
+
+#### RNA-sequencing library preparation
 
 RNA from infected cells were extracted as described above. Sequencing libraries were prepared using the Illumina Total RNA Prep with Ribo-Zero Plus library kit (Cat# 20040525) according to the manufacturer’s guidelines. Briefly, 100 ng of total RNA was first depleted of the abundant ribosomal RNA present in the samples by rRNA-targeted DNA probe capture followed by enzymatic digestion. Samples were then purified by Beckman Coulter RNAClean XP beads (Cat# A63987). Obtained rRNA-depleted RNA was fragmented, reverse transcribed, converted to dsDNA, end repaired, and A-tailed. The A-tailed DNA fragments were ligated to anchors allowing for PCR amplification with Illumina unique dual indexing primers (Cat# 20040553). Libraries were pooled in equimolar concentrations and sequenced on Illumina NextSeq 500 and NextSeq 550 sequencers using high-output cartridges (Cat# 20024907), generating single 150-nt-long reads.
 
-## RNA-sequencing analysis
+### RNA-sequencing analysis
 
-## Genomes
+#### Genomes
 
 We downloaded the human genome primary assembly and annotation from Ensembl (GRCh38.99) and the SARS-CoV-2 RefSeq reference genome from NCBI (NC_045512.2). We combined the human and viral genome and annotation files into one composite genome and annotation file for downstream analyses.
 
-## Alignment and gene counts
+#### Alignment and gene counts
 
 We performed a splice-site-aware mapping of the sequencing reads to the combined human and SARS-CoV-2 genome and annotation using STAR aligner (2.7.3a) (Dobin et al., 2013). We also used STAR to assign uniquely mapping reads in strand-specific fashion to the Ensembl human gene annotation and the two SARS-CoV-2 strains.
 
-## Principal component analysis
+#### Principal component analysis
 
 To assess if SARS2 infection is the main driver of differences in the RNA-seq samples, we performed a principal component analysis (PCA). First, we performed library size correction and variance stabilisation with regularised-logarithm transformation implemented in DESeq2 (1.28.1) (Love et al., 2014). This corrects for the fact that in RNA-seq data variance grows with the mean, and therefore, without suitable correction, only the most highly expressed genes drive the clustering. We then used the 500 genes showing the highest variance to perform PCA using the prcomp function implemented in the base R package stats (4.0.2).
 
-## Differential expression analysis
+#### Differential expression analysis
 
 We performed differential expression analysis using the R package DESeq2 (1.28.1) (Love et al., 2014). DESeq2 estimates variance-mean dependence in count data from high-throughput sequencing data and tests for differential expression based on a model using the negative binomial distribution. Full output of DESeq2 analysis is available in Supplementary file 3.
 
-## SARS-CoV-2 subgenomic RNA expression
+#### SARS-CoV-2 subgenomic RNA expression
 
 To assess relative levels of viral subgenomic and genomic RNA expression, we tallied the alignments (using GenomicRanges and GenomicAlignments R packages; Lawrence et al., 2013) mapping to the region unique to the genomic RNA and the shared region and normalised for their respective lengths. Unique contribution of sgRNA region was then estimated by subtracting the contribution of the genomic RNA from the shared region. In order to assess expression of individual SARS-CoV-2 subgenomic RNAs, we extracted split (junction) reads mapping to the viral genome with the GenomicAlignments R package (1.24.0) (Lawrence et al., 2013). The subgenomic transcripts fully overlap the full genomic RNA and partially with each other. While the molecular process generating these subgenomic RNAs is distinct from RNA splicing, from the point of view of short read mapping they are equivalent. We determined the relative expression level of each sgRNA generated by transcriptional skipping by calculating the number of reads supporting skipping into a region upstream of each annotated viral ORF. To avoid spurious mappings, we filtered for skip sites that were present in all three replicates and constituted at least 0.1% of all skipped viral reads.
 
-## Statistics, data wrangling, and visualisation
+#### Statistics, data wrangling, and visualisation
 
 Statistical analyses were performed in R (3.6.3) and RStudio (1.4) environment using an R package ‘rstatix’ (0.7.0). p-Values were adjusted using the Bonferroni method for multiple comparisons. The ‘tidyverse suite’ (1.3.0) was used in R, and ‘Numpy’ and ‘Pandas’ Python packages were used in Jupyter notebook for data wrangling. The following R packages were used to create the presented visualisation: ‘ggplot2’ (3.3.2), ‘ggbeeswarm’ (0.6.0), ‘hrbrthemes’ (0.8.0), ‘scales’ (1.1.1), and ‘patchwork’ (1.1.1). Further visual annotations were made in the Affinity Designer (Serif).

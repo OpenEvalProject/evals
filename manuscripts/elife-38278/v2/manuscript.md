@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.38278.001 Barriers to microbial migrations can lead adaptive radiations and increased endemism. We propose that extreme unbalanced nutrient stoichiometry of essential nutrients can be a barrier to microbial immigration over geological timescales. At the oasis in the Cuatro Ciénegas Basin in Mexico, nutrient stoichiometric proportions are skewed given the low phosphorus availability in the ecosystem. We show that this endangered oasis can be a model for a lost world . The ancient niche of extreme unbalanced nutrient stoichiometry favoured survival of ancestral microorganisms. This extreme nutrient imbalance persisted due to environmental stability and low extinction rates, generating a diverse and unique bacterial community. Several endemic clades of Bacillus invaded the Cuatro Cienegas region in two geological times, the late Precambrian and the Jurassic. Other lineages of Bacillus , Clostridium and Bacteroidetes migrated into the basin in isolated events. Cuatro Ciénegas Basin conservation is vital to the understanding of early evolutionary and ecological processes.
+Barriers to microbial migrations can lead adaptive radiations and increased endemism. We propose that extreme unbalanced nutrient stoichiometry of essential nutrients can be a barrier to microbial immigration over geological timescales. At the oasis in the Cuatro Ciénegas Basin in Mexico, nutrient stoichiometric proportions are skewed given the low phosphorus availability in the ecosystem. We show that this endangered oasis can be a model for a lost world. The ancient niche of extreme unbalanced nutrient stoichiometry favoured survival of ancestral microorganisms. This extreme nutrient imbalance persisted due to environmental stability and low extinction rates, generating a diverse and unique bacterial community. Several endemic clades of Bacillus invaded the Cuatro Cienegas region in two geological times, the late Precambrian and the Jurassic. Other lineages of Bacillus, Clostridium and Bacteroidetes migrated into the basin in isolated events. Cuatro Ciénegas Basin conservation is vital to the understanding of early evolutionary and ecological processes.
 
 ## Introduction
 
@@ -51,19 +51,27 @@ To further compare with the other environments, we used the individual OTUs and 
 
 To test for the lost world clade diversification, we focused on the diversity of bacteria from a single well-known genus, Bacillus, that are easily cultured. From our collection of approximately 2500 cultured Bacillus spp. from CCB, 16S gene sequences were obtained and compared to sequences in databases. We obtained 265 unique sequences selected at 97% identity, a very conservative estimate for Bacillus. In a global tree (Figure 4) with 1019 other OTUs reported for Bacillus spp. from around the world, we can observe the overall distribution and genetic distance of these CCB 16S sequences in relation to all known Bacillus lineages. We noticed that CCB strains formed multiple endemic (only found in CCB) lineages most of them with very deep branches, and that our sample increased by nearly 21% the number of previously known Bacillus.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/38278/elife-38278-fig4-v2.jpg)
+
+**Figure 4.:** All taxa have a sequence divergence over 97%. Strains found in Cuatro Cienegas Basin (CCB) are denoted in blue. All other strains, including the outgroups, are denoted in light gray. The position of the sediment CCB Bacillus and marine CCB Bacillus lineages within the genus Bacillus are also indicated. The outgroup includes strains of Geobacillus and Anoxybacillus..
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38278/elife-38278-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** All taxa have a sequence divergence of 97%. Taxa exclusive to CCB are denoted in magenta for Clostridiales and blue for Bacteroidetes. All other taxa, including outgroups, are in light gray. The outgroup in Clostridiales includes Thermoanaerobacter and Symbiobacterium, and for Bacteroidetes the outgroup includes Chlorobium and Prosthecochloris.
+
 Within the Bacillus spp. from CCB, we can distinguish two diverse sets of endemic lineages: one from sediment and another one closely related to marine Bacillus spp. (Figure 4). CCB Bacillus spp. from sediments are significantly older than the marine related CCB lineages, and according to our analyses calibrated using the divergence between the genus Bacillus and Geobacillus (Moreno-Letelier et al., 2012; Battistuzzi and Hedges, 2009) (Figure 5) may date back to the Ediacaran (635–541 mya, at the end of the Precambrian). The Ediacaran period, marks the start of the oxygenation of the ocean allowing not only the first animals to evolve (Planavsky et al., 2010), but also the first aerobic Bacilli to diversify. Unlike the sediment lineage, CCB Bacillus species from water, did not form a monophyletic group, which suggests independent synchronized origins dating to the late Jurassic (Figure 6). A mixed representation of many lineages appears to have entered the CCB ‘multidimensional niche bubble’ simultaneously and did not become extinct. The presence of endemic and early divergent clades, with deep branches, of sediment and marine related CCB lineages, as well as the low extinction rates observed in these lineages (Figure 7), provides strong evidence for the lost world scenario (Figure 1D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/38278/elife-38278-fig5-v2.jpg)
 
-**Figure 5.:** Bacillus, including the endemic lineage of sediment CCB Bacillus (highlighted in cyan).Strains endemic to CCB are denoted in blue. The vertical grey line indicated the date of divergence of sediment CCB Bacillus approximately 655 Ma, in the late Precambrian, during the Cryogenian period.
+**Figure 5.:** Strains endemic to CCB are denoted in blue. The vertical grey line indicated the date of divergence of sediment CCB Bacillus approximately 655 Ma, in the late Precambrian, during the Cryogenian period.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/38278/elife-38278-fig6-v2.jpg)
 
-**Figure 6.:** Bacillus, including endemic lineages from CCB (highlighted in cyan).The grey line indicates the divergence time of three independent CCB marine strains at around 160 Ma in the Late Jurassic period.
+**Figure 6.:** The grey line indicates the divergence time of three independent CCB marine strains at around 160 Ma in the Late Jurassic period.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/38278/elife-38278-fig7-v2.jpg)
 
-**Figure 7.:** Bacillus from CCB.(a) Net diversification rates in soil and sediment Bacillus plotted in a phylogenetic tree. (b) Speciation and extinction rates of soil and sediment Bacillus. Speciation rates lower over time, while extinction rates remain constant.
+**Figure 7.:** (a) Net diversification rates in soil and sediment Bacillus plotted in a phylogenetic tree. (b) Speciation and extinction rates of soil and sediment Bacillus. Speciation rates lower over time, while extinction rates remain constant.
 
 Why do we observe only two pulses of marine migration at CCB? We think that the first pulse can be explained by the abrupt change of nutrient stoichiometry balance at the end of the Ediacaran (Elser et al., 2006; Planavsky et al., 2010; Stüeken and Kipp, 2017). However, the second pulse is more puzzling since it implies the migration of many independent lineages into the CCB shore. It is possible that the reason is tectonics, as CCB is the point where the birth of the Tethys sea occurred in the western point of Pangea breakage (Wolaver et al., 2013; Souza et al., 2006).
 
@@ -89,7 +97,7 @@ We hope that awareness of this problem will push for proper measures for a chang
 
 ## Materials and methods
 
-## Microbial diversity context
+### Microbial diversity context
 
 We sampled ten sites during May 2011 in the Churince system of CCB in a 300 m long lagoon plus two more sites in the spring-head, ca. 1 km away (latitude: 26° 50’ 53.19’ N, longitude: 102° 8’ 29.98’ W). For each site, permission to sample was obtained from the federal government in Mexico (SEMARNAT, dirección de vida silvestre FAUT0230). In each sample site, we took 50 g of sediment and a gallon of water as well as a sample of both for biogeochemical variables, nutrients and minerals: C, N, P, Ca, Mg. We also sampled four types of vegetation from an established gradient and obtained composite soil samples. We extracted DNA from each sample using the same methodology (López-Lozano et al., 2012). Metagenomic DNAs were sent to JCVI (San Diego, CA, USA) for 16S rRNA amplicon gene library (341 F-926R primers) 454 pyrosequencing (Roche, Brandford, Ct, USA).
 
@@ -99,7 +107,7 @@ The 16S rRNA gene analysis was done as previously reported (Avitia et al., 2014;
 
 Compared datasets (342) were retrieved from public available databases like NCBI’s SRA, MG-RAST, and HMP (Human microbiome project) websites. Detailed information about accessions used is available as supplementary material in Table S1.
 
-## Bacillus tree
+### Bacillus tree
 
 The sequence identity clustering of all 16S rRNA gene sequences from the genus Bacillus spp. and sister genera Anoxybacillus and Geobacillus were retrieved from online databases Ribosomal Database Project (RRID:SCR_006633) and Genbank (RRID:SCR_002760), 1019 of them at 97% sequence identity, plus 648 sequences of cultivated Bacillus spp. from CCB (accession numbers in Supplementary file 2) selected with the same criterion out of more than 2500 cultivates strains; sequence clustering was done with cd-Hit (http://weizhongli-lab.org/cd-hit/, Huang et al., 2010, RRID:SCR_007105).
 

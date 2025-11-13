@@ -125,7 +125,7 @@ Each March, dozens of academics, conservationists, and artists use the social me
 
 Although rife with pop culture jokes and internet memes, March Mammal Madness is systematically anchored to the scientific literature (Hinde et al., 2017; Fisher, 2018). For each simulated battle, scientist-narrators provide key information about each combatant species and feature facts about behavior, life history, conservation status, phylogeny, morphology, and other exceptional adaptations. Predation tactics, anti-predator defenses, kleptoparasitism, kill ownership, maternal aggression, signaling behavior, optimal foraging, interspecific displacement, sickness behavior, winner effects, gut passage time, and many other aspects of animal behavior, physiology, and morphology are routinely invoked in battle narrations, often with specific citations linked. Additional facts and images are tweeted by geneticists and partner organizations such as the American Society of Mammalogists, Cleveland Museum of Natural History, and the Aldo Leopold Foundation. Immediately after the evening’s battles conclude, written “sports summaries” of the battles (see Supplementary file 3) and underlying science and full transcripts of the play-by-play are posted on multiple online platforms including Facebook, Wakelet, Blogspot, and LibGuide so the science behind the outcomes is widely available. These materials are additionally distributed directly to educators using March Mammal Madness in their classrooms so student players can follow the tournament without being on social media or accessing the internet. Our tournament motto perennially emphasizes “If you’re learning, you’re winning.”
 
-## Tournament species
+### Tournament species
 
 March Mammal Madness has featured hundreds of species from a global distribution of biogeographic regions (N = 383 species across 2013–2019). Combatants have represented N = 25/27 mammalian orders, all except for Paucituberculata and Microbiotheria. Species inclusion as tournament combatants, however, does not achieve proportional representation across mammalian orders (Burgin et al., 2018), much to the oft-communicated ire of researchers studying Chiroptera. Carnivora, Artiodactyla, and Diprotodontia are particularly over-represented as tournament combatants (Figure 2) and taxa from these orders have more often been featured in two or more tournament years as repeat entrants. Chiroptera, Rodentia, and Eulipotyphla are consistently featured as combatants, but have been under-represented in proportion to their actual species counts, while small-bodied taxa from mammalian orders less familiar to the general public have been routinely showcased (Figure 2). As such, each year our bracket includes well-recognized charismatic megafauna, familiar backyard species, and introduces rare taxa many players have never encountered in their zoo visits, reading, or nature program viewing.
 
@@ -135,15 +135,179 @@ March Mammal Madness has featured hundreds of species from a global distribution
 
 Although the tournament particularly celebrates Class Mammalia, many non-mammal combatants have been included in March Mammal Madness; N = 53 in total from 2013 to 2019. While early tournaments only showcased a smattering of non-mammals, since 2018 March Mammal Madness has featured dozens of diverse animal taxa including insect, amphibian, lepidosaurian, archosaurian (including avian), cephalopod, arachnid, crustacean, and tardigrade combatants. In an effort to further expand the topics included in our science outreach and to intentionally disrupt “plant blindness” (Jose et al., 2019), we included several plant species in 2019. Organismal diversity and description have waned as foci within biology curricula, in tandem with decreases in student and public engagement with nature (Tewksbury et al., 2014; Greene, 2005; Schmidly, 2005). By structuring the tournament around organisms and routinely linking to the higher and lower levels of biological complexity (Greene, 2005), March Mammal Madness continuously spins a sparkling kaleidoscope of biological life on earth.
 
-## Tournament divisions
+### Tournament divisions
 
 Each year, March Mammal Madness presents combatant species in four novel “Divisions” (Table 1). In the inaugural year, the divisions were largely organized around mammalian Orders (Carnivora, Primates), that had the dual drawbacks of reduced phylogenetic representation across the mammalian Class and substantial redundancy of attributes among many combatants due to recent shared common ancestry. Since 2014, we have intentionally designed divisions to integrate more complex themes of environments, extinction-risk, adaptations, lexical quirks, among other bins. These divisions demonstrate how biological life can be clustered according to diverse taxonomies (Medin and Bang, 2014) and facilitate dialogues about historical context of scientific “discovery.” For example, in 2019 the CAT-e-GORY Division featured many “cool cats,” but no species from the mammalian Family Felidae. Rather these were taxa whose English common name or scientific binomial alluded to phenotypic similarities to felids, an extensively used comparand in common names and taxonomic nomenclature. This division provided important opportunities to highlight the intertwining of scientific colonialism, linguistic privilege, and phylogenetics as the co-occurrence of European Imperialism and the formalization of Linnean taxonomy manifested in a rapid global cataloging of fauna (Raj, 2000; Smith and Jackson, 2006).
+
+**Table 1.**
+ Each annual March Mammal Madness tournament featured novel divisions that showcased diverse taxa.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Divisions</th>
+      <th>Description</th>
+      <th>Example taxa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">2013</td>
+      <td>Carnivores</td>
+      <td>Meat-eaters</td>
+      <td>Lion, Wolverine</td>
+    </tr>
+    <tr>
+      <td>Primates</td>
+      <td>Primate Order</td>
+      <td>Orangutan, Uakari</td>
+    </tr>
+    <tr>
+      <td>Browsers and Grazers</td>
+      <td>Herbivores</td>
+      <td>Tapir, Moose</td>
+    </tr>
+    <tr>
+      <td>Hodge Podge</td>
+      <td>Miscellaneous taxa</td>
+      <td>Wombat, Flying Fox</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2014</td>
+      <td>Marine Mammals</td>
+      <td>Adapted to marine ecosystems</td>
+      <td>Narwhal, Harbor Seal</td>
+    </tr>
+    <tr>
+      <td>Social Mammals</td>
+      <td>Highly social species (battle as a team)</td>
+      <td>Hyena, African Wild Dogs</td>
+    </tr>
+    <tr>
+      <td>The Who in the What Now</td>
+      <td>Lesser-known taxa</td>
+      <td>Dhole, Saiga</td>
+    </tr>
+    <tr>
+      <td>Fossil Mammals</td>
+      <td>Extinct taxa from the fossil record</td>
+      <td>Mastodon, Dire Wolf</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2015</td>
+      <td>Mighty Minis</td>
+      <td>Smol bois</td>
+      <td>Bumblebee Bat, Tenrec</td>
+    </tr>
+    <tr>
+      <td>Critically Endangered</td>
+      <td>IUCN red list taxa</td>
+      <td>Iberian lynx, Tenkile</td>
+    </tr>
+    <tr>
+      <td>Sexy Beasts</td>
+      <td>Traits strongly influenced by sexual selection</td>
+      <td>Irish Elk, Elephant Seal</td>
+    </tr>
+    <tr>
+      <td>Mythical Mammals</td>
+      <td>Creatures from cultural myths and folklore</td>
+      <td>Minotaur, Yeti</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2016</td>
+      <td>Cold-adapted</td>
+      <td>Adapted to cold environments/seasons</td>
+      <td>Snow Leopard, Caribou</td>
+    </tr>
+    <tr>
+      <td>Mighty Giants</td>
+      <td>Large in size/for their clade</td>
+      <td>Panda, Giant Armadillo</td>
+    </tr>
+    <tr>
+      <td>Mascot Mammals</td>
+      <td>Mascots of colleges/universities</td>
+      <td>(Howard) Bison</td>
+    </tr>
+    <tr>
+      <td>Mammals of the Nouns</td>
+      <td>Ecosystem niche featured in common name</td>
+      <td>‘Hyrax of the Rock’</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2017</td>
+      <td>Desert-adapted</td>
+      <td>Adapted to arid environments</td>
+      <td>Aardwolf, Saiga</td>
+    </tr>
+    <tr>
+      <td>Coulda Shoulda</td>
+      <td>Contenders defeated unexpectedly 2013–16</td>
+      <td>Sabertooth Cat, Lion</td>
+    </tr>
+    <tr>
+      <td>Adjective Mammals</td>
+      <td>Common name includes adjective</td>
+      <td>Sac-winged Bat</td>
+    </tr>
+    <tr>
+      <td>Two Animals, One Mammal</td>
+      <td>Taxa with two-part animal common names</td>
+      <td>Spider Monkey</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2018</td>
+      <td>Antecessor</td>
+      <td>Synapsids and their fossil descendants</td>
+      <td>Dimetrodon, Doedicurus</td>
+    </tr>
+    <tr>
+      <td>Great Adaptations</td>
+      <td>Unique/exceptional traits</td>
+      <td>Crabeater Seal, Aye Aye</td>
+    </tr>
+    <tr>
+      <td>Alt-Mammals</td>
+      <td>OK FINE, WE'LL HAVE NON-MAMMALS</td>
+      <td>Mantis Shrimp, Secretary Bird</td>
+    </tr>
+    <tr>
+      <td>Urban Jungle</td>
+      <td>Taxa that thrive in high density human areas</td>
+      <td>Coyote, Rhesus</td>
+    </tr>
+    <tr>
+      <td rowspan="4">2019</td>
+      <td>Waterfalls</td>
+      <td>Aquatic adaptations</td>
+      <td>Aquatic Genet, Manatee</td>
+    </tr>
+    <tr>
+      <td>Tag Team</td>
+      <td>Inter-species mutualisms (battle as a team)</td>
+      <td>Banded Mongoose and Warthog</td>
+    </tr>
+    <tr>
+      <td>Jump-Jump</td>
+      <td>Adaptations for saltation</td>
+      <td>Jackrabbit, Serval</td>
+    </tr>
+    <tr>
+      <td>CAT-e-GORY</td>
+      <td>Nomenclature referring to a felid</td>
+      <td>Sea Lion, Tiger Owl</td>
+    </tr>
+  </tbody>
+</table>
 
 A mythical mammal division in 2015 stirred controversy as some fans initially averred the inclusion of imaginary species subverted scholarly credibility and competitively inhibited legitimate animals. Discussion of mythical mammals, however, was harmonious with the tournament’s science communication priorities. Importantly, mythical mammals often feature traits or combinations of traits of species within a local ecology that present danger, risk, or usefulness to humans (Scalise Sugiyama, 2001), allowing narrators to include information on multiple actual species in tandem with the mythical stories. For example, one contestant was the ichneumon, a mythical mammal which would allow itself to be swallowed by a crocodile and then burst out, and in doing so, would kill its sworn enemy (Budge, 1969). Through this myth, we were able to not only showcase the role of crocodiles as apex predators in African river systems, but also introduce the biology of ichneumon wasps – a group of insects that lay eggs within other insect species, the larvae hatch within and emerge, thereby killing the host (Gauld and Bolton, 1988). Tales of magic beings or objects have the greatest diffusion across cultural landscapes and can persist for thousands of years (da Silva and Tehrani, 2016). As such, mythical creatures can serve as valuable symbols around which conservation themes can be structured (Holmes et al., 2018). Myths and mythical mammals as phenomena are constructs that emerge from human adaptations for social learning, credulity, and abstract thought, allowing MMM to reflexively discuss how evolution has shaped humans (Ihejirika and Edodi, 2017, Barrett et al., 2016; Kline, 2015). Lastly, by including mythology gleaned from antiquity and ethnography, we hoped to broaden participation among students and scholars in the humanities.
 
 Within divisions, combatants are assigned relative rankings, termed “seeding”, that suggest expected competitiveness within the tournament construct (Schwenk, 2000). Seedings are largely based on upper limits of combatant mass, with predators “punching above their weight.” Seed assignment can be, in part, to facilitate more reasonable first round match-ups in terms of battle substrate (terrestrial vs. aquatic match-ups are typically avoided in the first round) or to minimize counter-productive digressions in classrooms of adolescents in contexts of various cultural sensibilities (Skiba et al., 2016). For example, one year our initial seed assignment would have generated a macaque vs. deer match-up shortly after extensive media coverage of inter-specific sexual behaviors between Macaca fuscata and Cervus nippon (Gunst et al., 2018), prompting seed re-assignment early in tournament planning. Once we finalize the full bracket line-up, the MMM scientific team conducts additional research to evaluate likely match outcomes, accounting for battle ecology. Following team evaluation and discussion, outcome probabilities are assigned to each match-up. These probability estimations are used in conjunction with a 1-100 random number generator to determine the “official” match outcomes and allows the random occurrence of upsets (see Battle Outcomes below). The scientist-narrators then use the scientific literature or personal experiences in the field to craft plausible battle scenarios. In this way, the tournament incorporates structured game mechanics around science learning (Subhash and Cudney, 2018).
 
-## Battle location (This is not Thunderdome)
+### Battle location (This is not Thunderdome)
 
 Battle narrations are situated across diverse ecosystems globally and are March Mammal Madness canon. Early rounds of the tournament favor the better-ranked combatant by situating the encounter in their own habitat, a “home-court advantage” that potentially disadvantages their opponent. Adaptations mismatched with ecological context have contributed to tournament losses due to hyperthermia (Panthera uncia, Gulo gulo), hypoxia (Mustela erminea), and osmotic imbalance (Octopus vulgaris). More advanced rounds – the Elite Trait, the Final Roar, and the Championship – are randomized among four possible ecosystems specific to each tournament year (Figure 3). Scientist-narrators often situate battles in specific locations to highlight national parks, conservation areas, public lands and/or endangered ecosystems (Bland et al., 2017). Tournament spectators have been figuratively transported to the Karakum Desert in Turkmenistan; Gunung Leuser National Park, Indonesia; the Cojedes River, Venezuela; Bears Ears National Monument, USA; coastal ice flows of Antarctica; Cradle Mountains-Lake St. Clair National Park, Australia; Namib-Naukluft National Park, Namibia; and thorn forests of the Deccan Plateau, India, among hundreds of other locations. Figurative transportation has been combined at times with time travel, as battles involving fossil combatants occur within specific paleoenvironments. For example, a battle between Andrewsarchus mongoliensis and Nuralagus rex took place 40 million years ago in a humid forest in what is present-day Inner Mongolia. Scientist-narrators frequently highlight aspects of the community ecology, particularly carnivore guilds that have shaped the evolution of the combatant species (Caro and Stoner, 2003). Of additional interest in the tournament are ecosystem engineers whose activities alter physical structures within the environment, impacting numerous other taxa (Coggan et al., 2018).
 
@@ -153,7 +317,7 @@ Battle narrations are situated across diverse ecosystems globally and are March 
 
 Impacts of the human-driven global climate crisis, such as extreme sea ice retreat (Durner et al., 2011), permafrost thaw-slumping (Wang et al., 2014), and range constriction on altitudinal gradients (Henry et al., 2012) have been decisive factors in battle outcomes. Narrations have further stressed that in addition to the humanitarian devastations associated with human conflict, warfare has significant, though poorly understood, ecological impacts (Machlis and Hanson, 2008).
 
-## Battle outcomes
+### Battle outcomes
 
 The conclusion of these imaginary encounters among tournament combatants typically fall into three general domains; “Red, in tooth and claw” (to quote from “In Memoriam A.H.H.” by Lord Tennyson), “the better part of Valour, is Discretion” (from Henry IV, Part 1 by Shakespeare), and Deus ex Machina (Figure 4). Lethal or devastating injuries can occur from predation, anti-predator defense, territorial encounters, or conflict over a recent kill, and were coded as a “technical knock out” (TKO). Scientist-narrators have described apex predators’ mortal attacks on mesopredators, parental defense of young, and other intentional conflicts that escalated into physical attacks. TKO outcomes occurred in ~50% of tournament battles (N=225/451). But in nature the injury risks and/or energy costs associated with physical attacks, when weighed against potential benefit, can frequently precipitate de-escalation, retreat, or withdrawal (Parker and Rubenstein, 1981; Archer et al., 1994; Briffa and Sneddon, 2007), outcomes often intentionally featured in March Mammal Madness (32%, N=146/451).
 
@@ -171,7 +335,7 @@ Winner effects may manifest, if the aggressive encounter involves a well-matched
 
 Tournament champions are most typically apex predators or large-bodied herbivores – African elephant (Loxodonta africana, 2013), spotted hyena clan (Crocuta crocuta, 2014), Sumatran rhinoceros (Dicerorhinus sumatrensis, 2015), tundra wolf (Canis lupus occidentalis, 2016), middle Pleistocene short-faced running bear (Arctodus simus, 2017), pygmy hippo (Choeropsis liberiensis, 2018), and Bengal tiger (Panthera tigris tigris, 2019).To date, a non-mammal has yet to achieve tournament champion, a state of affairs entirely due to empirically-grounded probabilities within the tournament structure and certainly not due to taxonomic biases (Batt, 2009; Schlegel and Rupf, 2010) that influence research effort and the scholarly literature (Jarić et al., 2019; Bezanson and McNamara, 2019) or the tournament architect.
 
-## Battle artwork
+### Battle artwork
 
 Eleven artists have created N = 669 depictions of combatant species for the March Mammal Madness tournament. After playing the tournament in 2014, tattoo artist and scientific illustrator Charon Henning approached the narrators and offered to contribute artwork of the combatants. In 2015, Henning joined MMM leadership as tournament art director. Artists have used both digital approaches and traditional illustration media, including graphite, pen and ink, scratchboard, and acrylic paints, to depict each of the competitors (Figure 5). Artists created individual illustrations for each competitor for their tournament debut, and a “victory” illustration with each advance in the tournament. First round artwork has generally been produced with a minimum of detail, while illustrations for advances became sequentially more refined. As a result, by the completion of the tournament, the champion competitor has been depicted in seven individual illustrations. Beginning in 2016, the championship portrait has been an art fusion with contributions from each illustrator involved in that year’s tournament.
 
@@ -181,7 +345,7 @@ Eleven artists have created N = 669 depictions of combatant species for the Ma
 
 Using the Latin binomials, artists conduct illustration research and at times consult scientist-narrators for further information on a given species. Academic publications, species experts, and museum resources are valuable and necessary components in creating accurate and compelling illustrations. In 2015, the Critically Endangered Division presented challenges due to the dearth of photographic reference material. Many species in this division were only known from museum collections and antiquated scientific illustrations, requiring time-intensive cross-referencing with closely related species to better understand life-like appearances of these species. The art pieces for this division, however, were particularly notable for the inspired idea to incorporate extinction threat elements into the art pieces. All revenue generated by the sale of tournament artwork through the Society6 shop (https://society6.com/mammalmadness) is equitably divided among the artistic team.
 
-## Scholarly content in battle narrations
+### Scholarly content in battle narrations
 
 The descriptions of species and environments and explanations of encounters that are provided in the "battles” of March Mammal Madness rely extensively on the academic literature. Since the tournament’s inception in 2013 until the 2019 Championship, March Mammal Madness battles included citations to N = 1078 scholarly sources, including N = 1016 peer-reviewed journal articles from N = 350 journals. The number of scholarly publications cited each year has generally increased across the tournament years (Figure 6A), showing marked increases in conjunction with expansions of the narration team in 2014 (N = 4 scientist-narrators) and 2017 (N = 11 scientist-narrators). The Journal of Mammalogy, PLoS One, and the Journal of Zoology are most frequently cited by scientist-narrators, and many other animal-focused and general science journals are represented among the top-cited journals in March Mammal Madness (Figure 6B). The majority of scholarly sources, N = 689 (64%), were published in the 21 st century (Figure 6C), but some citations included writings dating back to the 1700s including important germinal studies of animal behavior and natural history (Burghardt, 2020). Naturalists’ detailed, integrative descriptions of behavioral and physical characteristics are excellent for crafting MMM narratives, although experimental and explanatory science has increasingly displaced descriptive natural history, a significant loss to science and society that has been decried for decades (Tewksbury et al., 2014; Greene, 2005; Schmidly, 2005). Empirical citations with amazing, but real facts, can be instrumental for substantiating narrative outcomes in hotly-debated MMM match-ups that generate intense emotions among players. Primary literature can often reveal important natural history that is often elided in the online sources typically used by tournament players researching their bracket predictions. For example, many players had high hopes for the platypus upon discovering during pre-tournament research that the platypus is one of the rare venomous mammals. But during the battle play-by-play, followers were astonished to learn that platypus venom varies seasonally.
 
@@ -191,7 +355,7 @@ The descriptions of species and environments and explanations of encounters that
 
 The scholarly contributions extend beyond the official narration tweets. Beginning in 2015, the American Society of Mammalogists (ASM), via the Informatics Committee, has systematically featured 241 unique photographs of combatant taxa from the ASM Mammal Images Library. As a nonprofit, educational program of the society, the Mammal Images Library is a curated collection of >4700,700 high-resolution images of extant and extinct mammalian species. These images, expertly identified to current taxonomy, are freely available for educational use at the ASM website, mammalsociety.org. Since 2016, Professors Anne Stone and Melissa Wilson contributed tweets featuring genetic and phylogenetic information about combatants citing an additional ~175 sources annually (Figure 6A). March Mammal Madness allows scientists to translate scientific academese directly in accessible, dynamic narration paired with exquisite illustration. In so doing, we reach a broader distribution of the next generation and more effectively inspire appreciation for the vivid splendor of the natural world.
 
-## Timeline, teams, and skillsets
+### Timeline, teams, and skillsets
 
 Compelling, infectious, far-reaching SciComm is not created de novo, but rather is built cumulatively through intentional design, considered expansion, transdisciplinary collaboration, and no small amount of serendipity. Although initially created in 2013 as a reaction to a non-science based animal bracket (Cole, 2015) and for psychological resilience in light of other scholarly activities (Clancy et al., 2014; Nelson et al., 2017), March Mammal Madness has grown substantially from its inaugural year. In response to player and educator feedback and volunteered expertise, we have refined and expanded the tournament offerings each year (Figure 7). Biological anthropologists, evolutionary biologists, entomologists, mammalogists, marine biologists, paleoanthropologists, primatologists, and wildlife biologists have been instrumental, individually and in teams, in crafting battle narratives for the “performance science” of live tweeting the play-by-plays [Anderson, Brokaw, Chestnut, Connors, Dasari, Drew, Durgavich, Hilborn, Hinde, Kissel, Lee, Lewton, Light, Murphy, Tanis, Wilson, Varner] with varying amounts of input from Editors [Anderson, Hinde]. As the narration team has grown, team members alternate serving as back-channel stage manager to direct the complex sequence of ordered battles on Twitter each tournament night.
 
@@ -215,7 +379,7 @@ March Mammal Madness intentionally builds connections with other science communi
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/65066/elife-65066-fig8-v1.jpg)
 
-**Figure 8.:** National No One Eats Alone Day in 2019.“Today is National No One Eats Alone Day to promote inclusion and acceptance in schools! https://nooneeatsalone.org Did you know that sometimes Coyotes and Badgers hunt together? Coyote and Badger agree: #NoOneEatsAlone art by @Opellisms #2019MMM #TagTeam” —@Mammals_Suck.
+**Figure 8.:** “Today is National No One Eats Alone Day to promote inclusion and acceptance in schools! https://nooneeatsalone.org Did you know that sometimes Coyotes and Badgers hunt together? Coyote and Badger agree: #NoOneEatsAlone art by @Opellisms #2019MMM #TagTeam” —@Mammals_Suck.
 
 User engagement in the March Mammal Madness tournament increased across multiple domains and platforms over the years. Views of the annual tournament blogpost have increased ninefold from N = 30,000,000 in 2013 to N = 272,000,000 in 2019 (Figure 9A) a rate of growth exceeding the background growth in Twitter (Leetaru, 2019). We tracked hashtag use on Twitter during the 2017–2019 tournaments. Although ~1400 tweets annually are official tweets generated by the MMM team, an additional 40,000+ tweets are created or shared by the active MMM Twitter community (Figure 9B). In 2019, the highest annual hashtag use to date, 5400 accounts used the tournament hashtag, tweeting to 13.3 million followers. Cumulative estimates of timeline deliveries of tweets using the tournament hashtag 2017–2019 are in excess of 339 million, although not all tweets will be seen by all followers (Figure 9B). On Twitter, as of fall 2019, the tournament account had 17,000+ followers and retweeted only official tournament tweets by organizers and contributors, thus showcasing only scientific and artistic content while shielding followers from any fandom intensity that manifests as profane exclamations on the tournament hashtag. This “MMMletsgo” account was spontaneously created in 2016 by then high school junior Emma Willcocks, and she continued to maintain the account as a college undergraduate majoring in Biology. All official tournament tweets since 2013 have been archived, initially on Storify, but with the scheduled extinction of that platform in 2018, the March Mammal Madness collection was migrated to Wakelet where it continues to be curated. All scientific content of tournament battles remains available and, to date, the archive has been viewed tens of thousands of times. As of Fall 2019, 6,500+ accounts followed the March Mammal Madness Facebook page and the day the 2019 tournament bracket dropped the FB post organically reached 43,000+ Facebook newsfeeds from user engagement. These social media engagement numbers for followers, shares, and retweets indicate that tournament content is broadly reaching public audiences (Côté and Darling, 2018; McClain, 2019). Moreover, social media engagement around natural world content has been associated with increased donations to conservation campaigns (Lenda et al., 2020) and long-term changes in species awareness (Fernández-Bellon and Kane, 2020).
 
@@ -293,15 +457,15 @@ March Mammal Madness upends the stereotype of science as dry, prescriptive disci
 
 ## Materials and methods
 
-## Species
+### Species
 
 In our count of species combatants 2013–2019 (Figure 2), subspecies were not counted as unique combatants; Papio systematics counted as per Jordan et al., 2018; the batfly commensal Gammaproteobacteria were considered a single operational taxonomic unit; mythical combatants, though purportedly sharing features with biological species, were not counted as species. Order and class assignment of extant taxa of MMM combatants was systematized using R (R Development Core Team, 2017) taxize package that uses multiple sources for these taxonomic designations (Chamberlain and Szöcs, 2013) and were compared with reported species proportions among mammalian orders as described by Burgin et al., 2018.
 
-## Usage analytics
+### Usage analytics
 
 Online platforms including Twitter, Facebook, LibGuide, and BlogSpot make freely available some analytics about the traffic or engagement with the account. For some of these, we were able to identify the total number of unique followers/users, daily and/or cumulative pageviews, and user engagement and amplification. Hashtracking is a proprietary subscription service that collects metrics and metadata associated with social media hashtags including the number of tweets that have used the hashtag, the number of accounts using the hashtag, and the total followers of the accounts using the hashtag. The product of these measures generates a total number of deliveries of tweets with the hashtag during a period of time. Through our hashtracking account (Hashtracking, Ladera Ranch, CA, USA), each year 2017–2019, we tracked hashtag usage information from ~2 weeks before the bracket drop through until 3 days after the Championship battle (tournament dates shifted from year to year). Hashtracking also gleans information about device usage, temporal patterns, and other hashtags typically covarying with the focus hashtag.
 
-## Educator survey and analysis
+### Educator survey and analysis
 
 In 2018 and 2019, we launched a google form for educators to request early access to the tournament bracket, lesson plan, and worksheet materials before the bracket was publicly released on the Mammals Suck… Milk! blog and the ASU MMM LibGuide. We announced the education materials request form and provided a link via Twitter, Facebook, blog, and LibGuide. In the request form, educators were invited to answer a brief, IRB-approved survey after submitting their email address for materials and were informed that whether or not they participated in the survey had no bearing on access to materials, that they could answer as many or as few questions as they wished, and they could stop participation at any time. The full 2018 and 2019 survey instruments are included in as Supplementary files 6 and 7, respectively. Both the 2018 and 2019 surveys asked specifically how many years the educator had been using March Mammal Madness with their learners (allowing differentiation of experienced and first-time tournament users) and how many students they planned to distribute the bracket to. The 2018 survey asked open-ended questions about the courses/classes and what grade levels the educator taught, specific USA geographical region operationalized by states, or non-USA North America, Central and South America, SubSaharan Africa, North Africa and the Middle East, Central Asia, Australia and the Pacific Islands, South Asia and Southeast Asia, and Europe. Respondents were asked if their local community was rural, suburban, urban (or other) without specifically operationalizing these terms (stage whisper: whoops). The 2018 survey asked how they used the tournament in their classroom. Respondents in 2018 for the last question were prompted to “Please add any comments you wish to share about MMM.” The 2019 survey asked an open-ended question about how educators had learned about March Mammal Madness and asked specifically “In 2019, how will you use MMM in your classroom?” In 2019, the final question we asked was “If 2018 was the first year you used MMM in your classroom, please share any comments you have about the experiences of 2018.”
 
@@ -313,6 +477,6 @@ After data cleaning, and organizing, we were able to tabulate and analyze respon
 
 To better understand veteran educators’ key takeaways about their experiences using March Mammal Madness, we combined unique respondents across the 2018 and 2019 surveys who were experienced with using MMM in their classrooms. We accomplished this by pooling veteran educators from the 2018 survey with educators in the 2019 survey whose first year using the tournament was 2018. Of the N = 1192 educators who fit these selection criteria, N = 910 (76%) provided free-write answers when prompted to share comments in the final question in both surveys. Comments were coded as "Positive," "Negative," "Constructive," "Constructive/Positive," "Mixed Positive and Negative," and "Other." Comments were coded as positive or negative depending on whether the comment expressed positive or negative sentiments about emotions, engagement, experiences and/or outcomes from using March Mammal Madness. Comments were coded as “Constructive” if the respondent made a suggestion, wishlist, request, or other constructive critique about March Mammal Madness. If respondent comment had combinations of positive, negative, and constructive elements, they were assigned the relevant combination code. Comments were coded as “Other” if they did not have positive, negative, or constructive elements and instead addressed scheduling conflicts, description of plans, mis-entered response to a different question, or other miscellaneous responses that would have required subjective inference to apply another valence code. Latent evaluation of survey responses by KH inductively revealed several themes and we then conducted semantic screening for thematic keywords within individual respondent answers (Bree and Gallagher, 2016; Maguire and Delahunt, 2017) including “love,” “engage,” “fun,” “discuss,” and “former” using cell formulas in Microsoft Excel. We curated illustrative quotations for inclusion in the manuscript. We noted substantial variance in the length and detail of the respondents free-write answers and our blunt, preliminary textual analysis could not effectively explore many elements and nuances among the answers or comprehensively manifest the rich scholarly approaches to qualitative text analysis (Wutich et al., 2015; Bernard et al., 2016).
 
-## Data availability
+### Data availability
 
 Source data are publicly available in the ASU Research Data Repository at dataverse.asu.edu/dataverse/marchmammalmadness (Hinde, 2021a; Hinde, 2021b) and linked with the March Mammal Madness Open Resources Collection (Perry and Hinde, 2020).

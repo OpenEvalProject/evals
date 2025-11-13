@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02r109517 Division of Cardiology, Department of Medicine, Cardiovascular Research Institute, Weill Center for Metabolic Health, Weill Cornell Medicine New York United States
+1. Division of Cardiology, Department of Medicine, Cardiovascular Research Institute, Weill Center for Metabolic Health, Weill Cornell Medicine New York United States ([ROR:02r109517](https://ror.org/02r109517))
 
 † Corresponding author
 
 ## Abstract
 
-Together with obesity and type 2 diabetes, metabolic dysfunction-associated steatotic liver disease (MASLD) is a growing global epidemic. Activation of the complement system and infiltration of macrophages has been linked to progression of metabolic liver disease. The role of complement receptors in macrophage activation and recruitment in MASLD remains poorly understood. In human and mouse, C3AR1 in the liver is expressed primarily in Kupffer cells, but is downregulated in humans with MASLD compared to obese controls. To test the role of complement 3a receptor (C3aR1) on macrophages and liver resident macrophages in MASLD, we generated mice deficient in C3aR1 on all macrophages (C3aR1-MφKO) or specifically in liver Kupffer cells (C3aR1-KpKO) and subjected them to a model of metabolic steatotic liver disease. We show that macrophages account for the vast majority of C3ar1 expression in the liver. Overall, C3aR1-MφKO and C3aR1-KpKO mice have similar body weight gain without significant alterations in glucose homeostasis, hepatic steatosis and fibrosis, compared to controls on a MASLD-inducing diet. This study demonstrates that C3aR1 deletion in macrophages or Kupffer cells, the predominant liver cell type expressing C3ar1 , has no significant effect on liver steatosis, inflammation or fibrosis in a dietary MASLD model.
+Together with obesity and type 2 diabetes, metabolic dysfunction-associated steatotic liver disease (MASLD) is a growing global epidemic. Activation of the complement system and infiltration of macrophages has been linked to progression of metabolic liver disease. The role of complement receptors in macrophage activation and recruitment in MASLD remains poorly understood. In human and mouse, C3AR1 in the liver is expressed primarily in Kupffer cells, but is downregulated in humans with MASLD compared to obese controls. To test the role of complement 3a receptor (C3aR1) on macrophages and liver resident macrophages in MASLD, we generated mice deficient in C3aR1 on all macrophages (C3aR1-MφKO) or specifically in liver Kupffer cells (C3aR1-KpKO) and subjected them to a model of metabolic steatotic liver disease. We show that macrophages account for the vast majority of C3ar1 expression in the liver. Overall, C3aR1-MφKO and C3aR1-KpKO mice have similar body weight gain without significant alterations in glucose homeostasis, hepatic steatosis and fibrosis, compared to controls on a MASLD-inducing diet. This study demonstrates that C3aR1 deletion in macrophages or Kupffer cells, the predominant liver cell type expressing C3ar1, has no significant effect on liver steatosis, inflammation or fibrosis in a dietary MASLD model.
 
 ## Introduction
 
@@ -36,33 +36,57 @@ In the present study, we aim to explore the macrophage-specific effect of comple
 
 ## Results
 
-## C3AR1 is expressed in human and mouse liver, primarily in Kupffer cells
+### C3AR1 is expressed in human and mouse liver, primarily in Kupffer cells
 
 In the scRNA-Seq database, Human Protein Atlas, C3AR1 is broadly expressed throughout the body, with increased abundance in tissues rich in immunologic cell types, such as bone marrow and appendix (Figure 1A; Uhlén et al., 2015). In a single-cell transcriptomic database of healthy human liver, C3AR1 expression predominates in the macrophage and Kupffer cell population, with minimal-to-undetectable C3AR1 expression in hepatocytes or hepatic stellate cells by scRNA-Seq (Figure 1B; MacParland et al., 2018). In the mouse liver scRNA-Seq database, Tabula Muris, C3ar1 is similarly expressed primarily in Kupffer cells (Figure 1—figure supplement 1A; The Tabula Muris Consortium et al., 2018).
 
-## Hepatic CFD and C3AR1 are downregulated in human MASLD/MASH
+![Figure 1.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig1-v1.jpg)
+
+**Figure 1.:** (A) Relative C3AR1 human tissue expression level by tissue, derived from deep sequencing of the mRNA combined dataset (HPA and GTEx) in the Human Protein Atlas, shown as normalized transcripts per million (nTPM). Liver is highlighted in purple and immunologic tissues are highlighted in red. (B) Single-cell RNA sequencing distribution of C3AR1 expression in human liver (tSNE, t-distributed Stochastic Neighbor Embedding). (C) Analysis of CFD and C3AR1 expression from liver biopsy samples in patients with MASH, MASLD, obesity without MASLD, and age-matched healthy controls (n=12–16 per group, Welch t test with Holm-Šídák correction for multiple comparisons). (D) Weight curve in male and female C3ar1flox/flox control mice placed on GAN high-fat diet compared to regular diet (RD) controls (males, n=7; females, n=6). (E) Representative liver section staining by Masson’s Trichrome in male control mice on RD or GAN diet for 28 weeks (scale bar = 100 mm). (F) Lipid droplet area quantification in liver sections from male control mice, excluding vessel lumens (RD, n=3; GAN, n=7). (G) Collagen area quantification in liver sections of male control mice (RD, n=3; GAN, n=7). (H) Gene expression of key macrophage or fibrosis genes in male control mice on GAN or RD (n=6 per group). Unpaired two-tailed Student’s t test (Except 1 C as above). Annotations: *, p<0.05; **, p<0.01; ***, <0.001. Error bars represent standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** GAN diet induces fat accumulation without induction of C3ar1 in female mice. (A) Single cell RNA sequencing analysis of C3ar1 expression in mouse liver tissue (derived from Tabula Muris). (B) Percent lean and fat mass of C3ar1flox/flox control mice after 20 weeks of GAN or RD (n=6–7 per group). (C) Absolute lean and fat mass of control mice after 20 weeks of GAN or RD (n=6–7 per group). (D) Relative gene expression in female control mice after 30 weeks on RD (n=4–6 per group). Unpaired two-tailed Student’s t test: ***, p<0.001. Error bars represent standard error of the mean.
+
+### Hepatic CFD and C3AR1 are downregulated in human MASLD/MASH
 
 We also examined data from Suppli and coworkers, who performed bulk transcriptomic analysis of human liver samples from an age-matched cohort of healthy controls and obese controls without MASLD, as well as MASLD and MASH patients without cirrhosis (Suppli et al., 2019). Both CFD and C3AR1 were unchanged in obese subjects without MASLD compared to healthy controls, but both CFD and C3AR1 were significantly downregulated in liver biopsies from both MASLD and MASH patients compared to both healthy controls and obese subjects without MASLD (Figure 1C). Interestingly, both CFD and C3AR1 levels were slightly higher in MASH individuals compared to those with MASLD only.
 
-## Murine MASH model recapitulates key features of human MASH
+### Murine MASH model recapitulates key features of human MASH
 
 At 5 weeks of age, we subjected C3ar1flox/flox control mice to standard regular diet (RD) or GAN diet (Boland et al., 2019; Hansen et al., 2020). After 28 weeks of GAN diet, male mice gained body weight compared to RD (Figure 1D), primarily as fat mass (Figure 1—figure supplement 1B–C), but weight gain in female GAN-fed mice was attenuated. Histologic signs of MASLD were present in GAN-fed mice (Figure 1E), most notably hepatic steatosis and hepatocyte ballooning (Figure 1F), and liver fibrosis measured by collagen deposition nearly doubled with GAN compared to RD (Figure 1G). Both hepatic C3ar1 and Cfd gene expression were robustly increased on GAN compared to RD, as were markers of macrophage infiltration, hepatic inflammation, and fibrosis, including collagen gene expression, indicating progression to fibrotic MASH (Figure 1H). In female control mice on GAN diet, there were no significant differences in C3ar1 expression or other gene markers, although there was a nonsignificant trend toward increased inflammation and fibrosis compared to regular diet (Figure 1—figure supplement 1D).
 
-## Macrophage-specific C3aR1 deletion does not alter glucose homeostasis
+### Macrophage-specific C3aR1 deletion does not alter glucose homeostasis
 
 Owing to higher levels of C3ar1 in murine MASLD and the differential regulation of C3AR1 gene in MASLD humans, this motivated us to interrogate the role of pathophysiological role of C3ar1 in macrophages in MASLD. We generated transgenic mice with macrophage-specific deletion of C3aR1 by crossing C3ar1flox/flox mice with Lyz2Cre transgenic mice (C3aR1-MφKO) to target both liver resident macrophages and recruited monocytes. C3ar1flox/flox mice were used as controls. Successful deletion of C3ar1 in macrophages from the C3aR1-MφKO mouse was confirmed by quantitative RT-PCR of isolated peritoneal macrophages that were F4/80+and CD68+by fluorescence-activated cell sorting (Figure 2A). In liver tissue, C3ar1 expression was reduced by ~88% in both male and female C3aR1-MφKO (Figure 2B). These results indicate that macrophages account for the vast majority of C3ar1 expression in the liver.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig2-v1.jpg)
+
+**Figure 2.:** (A) Expression of C3ar1 in peritoneal F4/80+/CD68+ cells from C3ar1flox/flox control (n=6) or C3aR1-MφKO male mice (n=3). (B) Expression of C3ar1 in whole liver from control or C3aR1-MφKO mice (n=11–12 per male group, n=13–14 per female group). (C) Body mass curve of control or C3aR1-MφKO mice on GAN high-fat diet starting at 5 weeks of age (n=11–12 per male group, n=14 per female group). (D) Body composition analysis by EchoMRI in control or C3aR1-MφKO mice after 30 weeks GAN diet (n=6–9 per male group, n=9–13 per female group). (E) Glucose tolerance test in control or C3aR1-MφKO mice with 14 hr fast after 28 weeks GAN diet (n=6–9 per male group, n=9–14 per female group). (F) Liver mass in control or C3aR1-MφKO male mice at time of euthanasia after 30 weeks GAN diet (n=6–9 per male group, n=9–14 per female group). (H) Representative liver section staining by Masson’s Trichrome in male control or C3aR1-MφKO mice (scale bar = 100 mm). (I) Lipid droplet area in liver sections from male control or C3aR1-MφKO mice, excluding vessel lumens (n=6–7 per group). (J) Collagen area in liver sections from male control or C3aR1-MφKO mice (n=6–7 per group). (J,K) Relative mRNA expression of key markers for inflammation, fibrosis, and liver metabolism in liver from male control or C3aR1-MφKO mice after 30 weeks of either GAN (J) diet (n=11–12 per group) or regular (K) diet (n=3–5 per group). Unpaired two-tailed Student’s t test: Student’s t test: *, p<0.05. Error bars represent standard error of the mean.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Insulin tolerance test in C3ar1flox/flox control or C3aR1-MφKO male mice with 14 hr fast after 29 weeks GAN diet (n=6–9 per group). (B) HOMA-IR measurement of insulin resistance in control or C3aR1-MφKO mice with 6 hr fast after 27 weeks GAN diet (n=6–9 per male group, n=9–13 per female group). (C) Serum alanine aminotransferase levels in control or C3aR1-MφKO male mice after 30 weeks GAN diet (n=4 per group). (D) Relative gene expression in control or C3aR1-MφKO female mice after 30 weeks of either GAN (n=13–14 per group) or RD (n=5–6 per group). Unpaired two-tailed Student’s t test: *, p<0.05; ***, p<0.001. Error bars represent standard error of the mean.
+
 When placed on GAN diet, there was no significant difference in weight gain between control and C3aR1-MφKO mice (Figure 2C). There was similarly no difference in percent lean or fat mass between these mice (Figure 2D). Glucose tolerance tests performed in fasted mice after 27 weeks GAN diet found no significant differences between control and C3aR1-MφKO mice (Figure 2E). There was also no difference in insulin sensitivity as measured by insulin tolerance tests in male mice (Figure 2—figure supplement 1A). Insulin resistance as measured by comparing the ratio of fasting glucose level to fasting insulin level (HOMA-IR) was also unchanged between controls and C3aR1-MφKO mice (Figure 2—figure supplement 1B). Circulating serum ALT levels were unchanged in male control and C3aR1-MφKO mice on GAN diet (Figure 2—figure supplement 1C).
 
-## Macrophage-specific C3aR1 deletion does not significantly impact hepatic steatosis or fibrosis
+### Macrophage-specific C3aR1 deletion does not significantly impact hepatic steatosis or fibrosis
 
 Liver samples collected after 28–30 weeks of GAN or regular diet did not show significant differences in liver mass between control and C3aR1-MφKO mice (Figure 2F). Male mice on GAN diet developed similar qualitative appearance on histology (Figure 2G), and slide image analysis showed similar proportions of lipid droplet area and collagen area (Figure 2H and I). This indicates that there were no significant differences in steatosis or fibrosis between GAN-fed control and C3aR1-MφKO male mice. While C3ar1 expression was markedly reduced in the C3aR1-MφKO liver tissue (Figure 2B), there were no detectable gene expression changes in markers of fibrosis, inflammation, or lipid handling on either GAN or regular diet (Figure 2J and K). Similarly, in female mice there were also no significant differences between control and C3aR1-MφKO mouse liver on either GAN or regular diet in a subset of key gene markers of fibrosis or inflammation (Figure 2—figure supplement 1D).
 
-## Kupffer-cell-specific C3aR1 deletion does not alter weight gain or glucose homeostasis
+### Kupffer-cell-specific C3aR1 deletion does not alter weight gain or glucose homeostasis
 
 To explore whether there may be competing effects between recruited monocytes and liver resident macrophages (Kupffer cells), we next generated Kupffer-cell-specific C3aR1 knockout mice (C3aR1-KpKO) by crossing C3ar1flox/flox mice to Clec4f-Cre transgenic mice and fed them GAN diet. C3ar1flox/flox mice were used as controls. Body weight gain was similar between genotypes for both male and female mice (Figure 3A), and there was no difference in body composition between control and C3aR1-KpKO mice on GAN diet (Figure 3B). There was similarly no significant difference in glucose homeostasis between the genotypes during a glucose tolerance test (Figure 3C).
 
-## Kupffer-cell-specific C3aR1 deletion does not significantly impact hepatic steatosis or fibrosis
+![Figure 3.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig3-v1.jpg)
+
+**Figure 3.:** (A) Body mass curve on GAN diet in C3ar1flox/flox control or C3aR1-KpKO mice beginning at 5 weeks of age (n=8–10 per group). (B) Body composition analysis by EchoMRI in control or C3aR1-KpKO mice after 28 weeks GAN diet (n=8–10). (C) Glucose tolerance test in control or C3aR1-KpKO mice with 14 hr fast after 26 weeks GAN diet (n=8–10). (D) Liver mass in control or C3aR1-KpKO male mice at time of euthanasia after 30 weeks GAN diet (n=8–10). (E) Representative liver section staining by Masson’s Trichrome in control or C3aR1-KpKO male mice (scale bar = 100 mm). (F) Lipid droplet area quantified on liver sections of control or C3aR1-KpKO male mice, excluding vessel lumens (n=8–9). (G) Collagen area quantified on whole liver section of control or C3aR1-KpKO male mice (n=8–9). (H) Relative gene expression in male control or C3aR1-KpKO mice after 30 weeks GAN diet (n=5–6). Unpaired two-tailed Student’s t test: **, p<0.01. Error bars represent standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100708/elife-100708-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Relative C3ar1 expression in C3ar1flox/flox control or C3aR1-KpKO female mice after 30 weeks RD (n=2–3 per group). Unpaired two-tailed Student’s t test: **, p<0.01. Error bars represent standard error of the mean.
+
+### Kupffer-cell-specific C3aR1 deletion does not significantly impact hepatic steatosis or fibrosis
 
 Liver mass was not significantly different between control and C3aR1-KpKO mice on GAN diet (Figure 3D). Liver sections appeared qualitatively similar by histology stained with Masson’s trichrome (Figure 3E). There were similar levels of hepatic steatosis in these mice as measured by percent lipid droplet area (Figure 3F). When measured by collagen proportional area, there was no significant differences in liver fibrosis between C3aR1-KpKO and control mice (Figure 3G). While C3ar1 expression was reduced by 73% in liver tissue of C3aR1-KpKO mice, there were no significant differences in expression of inflammatory, fibrotic, or lipid handling gene markers (Figure 3H). C3ar1 expression similarly decreased by ~90% in liver tissue of female C3aR1-KpKO mice fed regular diet compared to control mice (Figure 3—figure supplement 1A). These data also indicate that Kupffer cells account for ~80% of hepatic C3ar1 gene expression in our mouse model of MASLD/MASH.
 
@@ -80,26 +104,26 @@ Deletion of C3aR1 in macrophages generally, or in liver resident macrophages spe
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 C3ar1flox/flox mice were on the C57BL/6 J background as described (Cumpelik et al., 2021). Homozygous Lyz2Cre mice on the C57BL/6 J background (Strain #004781) as well as homozygous Clec4f-Cre mice on the C57BL/6 J background (Strain #003296) were purchased from Jackson Laboratories. C3ar1flox/flox homozygous mice on C57BL/6 J background were used in the experiments as controls from the same backcross generation (Ma et al., 2024). All mice were maintained in plastic cages under a 12 hr/12 hr light/dark cycle at constant temperature (22 °C) with free access to water and food. Mice were fed regular diet containing 4.5%kcal fat PicoLab Rodent diet 20 (LabDiet) or GAN diet containing 40%kcal HFD (mostly palm oil) with 20% fructose and 2% cholesterol (D09100310, Research Diets) for 28–30 weeks. Fat mass and lean mass were determined via noninvasive 3-in-1 body composition analyzer (EchoMRI). Mice were humanely euthanized with CO2 inhalation followed by exsanguination by cardiac puncture. For a typical experiment we expected ~10% loss of animals, a coefficient of variation (CV) of 10% and a treatment/genotype effect of 30–50%. To ensure an adequate statistical power of 0.9 with an alpha value of 0.05, we anticipated 6–12 mice per experimental group for physiology experiments. Key experiments were repeated in at least two independent mouse cohorts.
 
-## Blood chemistry and serum insulin analysis
+### Blood chemistry and serum insulin analysis
 
 Mice were fasted overnight (14–16 hr) for glucose tolerance tests and injected intraperitoneally with syringe-filtered D-glucose solution (2 g/kg). For insulin tolerance test, mice were fasted for 6 hr and injected with 0.5 mIU/kg insulin. Blood glucose levels were assayed by commercial glucometer (OneTouch) by tail vein blood samples. Plasma insulin levels were measured from mice fasted for 6 hr. Tail vein blood was collected into lithium heparin-coated tubes, centrifuged at 2000 x g at 4 °C, and plasma insulin levels were determined by ELISA using a standard curve (Mercodia). Serum alanine aminotransferase levels were measured in serum from blood collected via cardiac puncture using a commercially available colorimetric assay (TR71121, Thermo Fisher Scientific).
 
-## Peritoneal macrophage isolation and flow cytometry
+### Peritoneal macrophage isolation and flow cytometry
 
 Peritoneal macrophages were isolated from as previously described (Zhang et al., 2008). Briefly, mice were euthanized then immediately injected intraperitoneally with 10mL phosphate-buffered saline (PBS, pH 7.4) at room temperature. After a 3–5min incubation period, peritoneal fluid was removed with sterile needle and syringe and placed on ice. After centrifugation at 300 x g, the pellet was resuspended in PBS containing 2% fetal bovine serum and 0.1% sodium azide. Cells were stained with phycoerythrin-conjugated anti-F4/80 (clone BM8, cat. #123110) and fluorescein isothiocyanate-conjugated anti-CD11b (clone M1/70, cat. #101206) fluorescent antibodies (Biolegend). Stained cells were loaded on MA900 fluorescence-activated cell sorter (Sony), and dual-positive F480+/CD11b+ cells were sorted for subsequent RNA extraction.
 
-## Histological studies
+### Histological studies
 
 A mid-distal portion of the left liver lobe was fixed with 10% buffered formalin and transferred to 70% ethanol. Samples were embedded in paraffin, sectioned at ~5 μm thickness, and stained with Masson’s trichrome. Slides were imaged using Zeiss Axioscan7 at ×20 magnification. Histologic analyses were performed using ImageJ software (version 1.53t). Lipid droplet area was quantified by subtracting non-droplet area in the green channel from total section area of two to three independent sections. Collagen proportionate area was quantified by measuring total area in the red channel after reducing intensity threshold to 60–70.
 
-## RNA extraction and real-time quantitative PCR analysis
+### RNA extraction and real-time quantitative PCR analysis
 
 Total RNA from liver tissue lysates was extracted using Trizol reagent (Invitrogen) followed by RNAeasy Mini kit (QIAGEN) as per manufacturer’s protocol. RNA was reverse-transcribed using the High Capacity cDNA RT kit (Thermo Fisher). Quantitative PCR was performed using SYBR Green Master Mix (Quanta) and specific gene primers on QuantStudio6 Flex Real-Time PCR Systems (Thermo Fisher Scientific) using the delta-delta Ct method. Expression levels were normalized to Ribosomal protein S18 (Rps18). Primer sequences are listed in Supplementary file 1.
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were performed with biological replicates using GraphPad Prism10. Unpaired two-tailed Student’s t test with Welch correction for most analyses, with Holm-Šídák correction for multiple comparisons where applicable, and p<0.05 was considered statistically significant.

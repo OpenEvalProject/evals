@@ -48,25 +48,445 @@ Here, we determined high-resolution cryo-EM structures of yeast EMC bound to a F
 
 ## Results
 
-## Overview of strategy to comprehensively reveal EMC structure and function
+### Overview of strategy to comprehensively reveal EMC structure and function
 
 To comprehensively dissect both conserved and species-specific functions of the EMC, we developed approaches to produce EMC for structure determination and broad mutational analysis (Figure 1A–D). We developed systems to produce robust quantities of pure intact yEMC and hEMC to determine structures for the two organisms in which different facets of EMC function have been described in detail (Jonikas et al., 2009; Christianson et al., 2012; Guna et al., 2018; Shurtleff et al., 2018). Parallel efforts converged on an approach involving FLAG affinity-tagging of the EMC5 C-terminus, which was performed for endogenous yEMC and recombinant hEMC in human embryonic kidney (HEK) cells (Figure 1—figure supplements 1–2, Supplementary file 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-v3.jpg)
+
+**Figure 1.:** Schematic representation of the combined structural and mutational approach to dissect EMC function. (A) yEMC was purified either by overexpression of all subunits together and affinity pulldown with 3xFlag-tagged yEMC5 or by pulldown of endogenous yEMC proteins using an affinity pulldown with 3xFlag-tagged yEMC5. For hEMC, all subunits were overexpressed together with Flag-tagged EMC5 via a single recombinant BacMam virus. Both yEMC and hEMC were purified by column chromatography and subjected to cryo-EM analysis. (B) The obtained collection of cryo-EM structures of yEMC and hEMC in lipid nanodiscs or detergent micelles were compared to identify similarities and differences. (C) Structure-guided mutagenesis was performed across four core hEMC subunits: hEMC1, hEMC2, hEMC3, and hEMC5 in mammalian K562 cells. (D) Each hEMC subunit knockout (KO) cell line was individually transduced with three different fluorescent client reporters: SQS378-410, full-length B1AR, and full-length TMEM97. Mutant hEMC subunits were then introduced into the corresponding subunit KO cell lines carrying each of the three fluorescent hEMC client reporters. hEMC client stability in each mutant hEMC subunit cell line was assessed by quantifying the mCherry-to-GFP ratio. Western blotting was performed for each mutant-transduced cell line to assess EMC integrity (by immunoblotting for hEMC subunits) as well as client stability (by immunoblotting for hEMC clients) compared against both wild-type (WT) and KO cell lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Size-exclusion chromatography (SEC) purification of overexpressed yEMC+FAb in DDM detergent micelles. (B) SEC purification of endogenous yEMC + FAb in MSP1D1 nanodisc. (C) Coomassie-stained SDS-PAGE analysis of SEC elution fractions from (A). The expected molecular weight of the subunits are as follows: yEMC1 - 87 kDa, yEMC2 - 34 kD, yEMC7 - 27 kD, yEMC10 - 25 kD, yEMC3 - 23 kD, yEMC4 - 21 kD, yEMC5-3xflag - 17 kD, yEMC6 - 12 kD. (D) Coomassie-stained SDS-PAGE analysis of SEC elution fractions from (B).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Size-exclusion chromatography (SEC) purification of hEMC in GDN detergent. (B) SEC purification of hEMC reconstituted in MSP1D1 nanodiscs. (C) Coomassie-stained SDS-PAGE analysis of the SEC elution fractions from (A). The expected molecular weight of the subunits are as follows: hEMC1 - 110 kDa, hEMC2 - 35 kD, hEMC3 - 30 kD, hEMC10 - 25 kD, hEMC7 - 24 kD, hEMC8/9 - 24 kD, hEMC4 - 20 kD, hEMC5-flag - 16 kD, hEMC6 - 12 kD. (D) Coomassie-stained SDS-PAGE analysis of the SEC elution fractions from (B). (E) Mass spectrometry analysis of purified hEMC in GDN following SEC. iBAQ values for identified proteins in the sample are sorted in descending order along the X-axis. hEMC subunits form a cluster (red) and their normalized iBAQ values (against EMC5-Flag) are shown in the inset. (F) As in (E) for hEMC in lipid nanodiscs.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** Fluorescent reporter cell lines were created by introducing lentivirus containing the fluorescently-tagged client reporters into five K562 cells lines: (1) wild type, (2) hEMC1 knockout (3) hEMC2 knockout, (4) hEMC3 knockout, and (5) hEMC5 knockout. A construct with mCherry-P2A-GFP was introduced into each cell line (control). This process was repeated individually for three tail anchor membrane proteins with N-terminal tags: one EMC-dependent tail anchor client membrane protein (SQS) and two EMC-independent tail anchor membrane proteins (SEC22B, VAMP2). This process was repeated individually for four polytopic membrane proteins with C-terminal tags: an EMC-dependent polytopic membrane protein client with the N-terminus in the ER lumen (B1AR), an EMC-dependent polytopic membrane protein client with the N-terminus in the cytoplasm (TMEM97), and two EMC-independent polytopic membrane proteins with N-termini in the cytoplasm (TRAM2, JAGN1). (A) Ratio of mCherry to GFP measured by flow cytometry for mCherry-P2A-GFP construct for each of the five cell lines. (B) Same as (A) for GFP-P2A-mCherry-SQS378-410-opsin. (C) Same as (A) for GFP-P2A-mCherry-SEC22B. (D) Same as (A) for GFP-P2A-mCherry-VAMP2. (E) Same as (A) for TMEM97-mCherry-P2A-GFP. (F) Same as (A) for B1AR-mCherry-P2A-GFP. (G) Same as (A) for TRAM2-mCherry-P2A-GFP. (H) Same as (A) for JAGN1-mCherry-P2A-GFP.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Into each K562 cell line (WT or knockout of respective subunit), fluorescent client reporters were introduced lentivirally. Subsequently, knockout phenotypes were rescued by re-introducing the wild-type hEMC subunit. (B) After introducing client reporters into hEMC1 knockout cell lines cells were sorted to obtain a pure population. Then mutant hEMC subunits were re-introduced lentivirally and selected with puromycin. Upon reaching a pure population, cells lines were subjected to flow cytometry to measure abundance of mCherry and GFP for each client reporter in each mutant background. Cell pellets were collected for subsequent western blot analysis for each mutant in WT and knockout cell line in a cell line with an mCherry-P2A-GFP reporter. (C) Same as (B) for hEMC2. (D) Same as (B) for hEMC3. (E) Same as (B) for hEMC5.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Western blots of endogenous human EMC subunits and client proteins functional assay to check for complex stability and endogenous protein levels. For each mutant, abundance of several hEMC subunits as well as several representative client proteins were tested. (A) Western blots for hEMC1 mutant cell lines, blotting for hEMC subunits hEMC1, hEMC3, hEMC4, and hEMC10. In addition, levels of three endogenous client proteins (SQS, BCAP31, and TMEM97) were blotted for. Wild-type cells with the fluorescent reporter displayed in Lanes 1 and 16. hEMC1 knockout cells displayed in Lanes 2 and 17. hEMC1 knockout cells with reintroduction of wild-type hEMC1 shown in Lanes 3 and 18. (B) Western blots for hEMC2 mutant cell lines, blotting for hEMC subunits hEMC2, hEMC3, hEMC4, and hEMC5. In addition, levels of three endogenous client proteins (SQS, BCAP31, and TMEM97) were blotted for. Wild-type cells with the fluorescent reporter displayed in Lane 1. hEMC2 knockout cells displayed in Lane 2. hEMC2 knockout cells with reintroduction of wild-type hEMC2 shown in Lane 3. Mutant hEMC2 E206A+E209A+D252A is in Lane 10, flow cytometry of this mutant is not included. For the remaining mutants, both western blot and flow cytometry were conducted.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** Human functional assay to check for complex stability. For each mutant, abundance of several EMC subunits as well as several representative client proteins was tested. (A) Western blots for hEMC3 mutant cell lines, blotting for hEMC subunits hEMC1, hEMC3, hEMC4, and hEMC5. In addition, levels of three endogenous client proteins (SQS, BCAP31, and TMEM97) were blotted for. Wild-type cells with the fluorescent reporter displayed in Lanes 1 and 12. hEMC3 knockout cells displayed in Lanes 2 and 13. hEMC3 knockout cells with reintroduction of wild-type hEMC1 shown in Lanes 3 and 14. (B) Western blots for hEMC5 mutant cell lines, blotting for hEMC subunits hEMC1, hEMC2, hEMC3, and hEMC5. In addition, levels of three endogenous client proteins (SQS, BCAP31, and TMEM97) were blotted for. Wild-type cells with the fluorescent reporter displayed in Lane 1. hEMC5 knockout cells displayed in Lane 2. hEMC5 knockout cells with reintroduction of wild-type hEMC5 shown in Lanes 3 and 4.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Yeast (yEMC sequence from uniprot entry for Saccharomyces cerevisiae EMC1, sequence identifier: P25574-1) to human (hEMC sequence from uniprot entry for Homo sapiens EMC1 sequence identifier: Q8N766-1). Sequence alignment of EMC1 by T-Coffee PSI-Coffee homology extension online server. Colored by ClustalX coloring –Blue for hydrophobic (AILMFWV); Red for positive charge (KR); Magenta for negative charge (ED); Green for polar (NQST); Pink for cysteines (C); Orange for glycines (G); Yellow for prolines (P); Cyan for aromatic (HY); No color for any residues other than proline or glycine that are not conserved. Residues represented within hEMC mutagenesis are marked with hEMC amino acid sequence numbering and (*). Transmembrane helices are outlined in black, as annotated in uniprot entries.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp8-v3.jpg)
+
+**Figure 1—figure supplement 8.:** Yeast to human sequence alignments. (A) Alignment of hEMC2 and yEMC2. Computed by t-Coffee PSI-Coffee homology extension online server. Colored by ClustalX coloring – Blue for hydrophobic (AILMFWV); Red for positive charge (KR); Magenta for negative charge (ED); Green for polar (NQST); Pink for cysteines (C); Orange for glycines (G); Yellow for prolines (P); Cyan for aromatic (HY); No color for any residues other than proline or glycine that are not conserved. Residues represented within hEMC mutagenesis experiments are marked with hEMC amino acid sequence numbering and (*). Transmembrane segments are outlined in black, as annotated in uniprot entries. (B) Same as (A) for hEMC3 and yEMC3. (C) Same as (A) for hEMC5 and yEMC5.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig1-figsupp9-v3.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Sanger sequencing of mutant aligned to wild-type sequence for hEMC1 T82M. (B) Sanger sequencing of mutant aligned to wild-type sequence for hEMC3 E63K+D213K+E223K. (C) Sanger sequencing of mutant aligned to wild-type sequence for hEMC1 A144T. (D) Sanger sequencing of mutant aligned to wild-type sequence for hEMC3 F148L. (E) Sanger sequencing of mutant aligned to wild-type sequence for hEMC1 G868R. (F) Sanger sequencing of mutant aligned to wild-type sequence for hEMC3 M151L. (G) Sanger sequencing of mutant aligned to wild-type sequence for hEMC1 R881C. (H) Sanger sequencing of mutant aligned to wild-type sequence for hEMC5 K7E. (I) Sanger sequencing of mutant aligned to wild-type sequence for hEMC3 R13E. (J) Sanger sequencing of mutant aligned to wild-type sequence for hEMC5 H19L+S23A+Q26L.
+
 In parallel, to enable testing of hypotheses based on structures, we created a suite of human (K562) knockout cell lines deleted for individual hEMC subunits - hEMC1 (lumen), hEMC2 (cytoplasm), hEMC3, and hEMC5 (transmembrane) - and a series of reporters of EMC-dependent transmembrane protein biogenesis (Figure 1—figure supplements 3–4). Reintroduction of the wild-type hEMC subunits in the respective knockout cells fully rescued the knockout phenotype (Figure 1—figure supplements 5–6). This allowed for introduction of structure-based mutations in hEMC subunits into the respective knockout cells to determine features supporting biogenesis of fluorescently tagged versions of three different types of EMC clients: the transmembrane domain of a C-terminal tail-anchored transmembrane protein (squalene synthase, SQS378-410) (Guna et al., 2018), a polytopic transmembrane protein that depends on the EMC N-terminal insertase activity (Beta 1 adrenergic receptor, B1AR) (Chitwood et al., 2018), and a polytopic transmembrane protein (Sigma intracellular receptor 2, TMEM97) whose biogenesis requires the Sec61 translocon but does not require a terminal helix insertase (Figure 1—figure supplements 3–6). Three individual EMC clients were fused to mCherry fluorescent protein and GFP separated by a P2A ribosomal skipping sequence. Translation of the described mRNA generates two products due to peptide bond skipping at the P2A sequence. For each molecule of the client-mCherry fusion, there is one GFP molecule. Reduction in mCherry levels relative to GFP reflects post-translational degradation of the client fused to mCherry. Each of the client reporters were introduced into five separate cell lines: wild-type K562 cells, hEMC1 knockout K562 cells, hEMC2 knockout K562 cells, hEMC3 knockout K562 cells, and hEMC5 knockout K562 cells. Monitoring the effect of an hEMC mutation on fluorescent reporter levels provided a quantitative measure of its impact on EMC-dependent biogenesis of each class of client protein. A number of mutations of varying severity, varying conservation between yeast and human (Figure 1—figure supplements 7–8), were designed and tested spanning the hEMC structure. Subsequently, these 49 mutations were mapped onto the structure grouped by reporter phenotype (Video 1, Supplement File 2). To allow for direct comparison of our structure-guided mutant phenotypes with those published recently by others (Pleiner et al., 2020; Bai et al., 2020; O'Donnell et al., 2020), we summarized all mutant data (Supplementary file 3). A subset of the mutant cell lines was validated by genotyping (Figure 1—figure supplement 9). Western blots against the endogenous hEMC subunits allowed us to control for mutational effects on the production and stability of the hEMC complex itself. We concurrently blotted for three clients, SQS, TMEM97, and BCAP31, to assay changes in endogenous protein levels for each of the mutations (Figure 1—figure supplements 5–6, Supplementary file 4). This strategy thus distinguishes effects resulting from a global disruption of the EMC complex from those caused by specific disruption of EMC function. These functional assays of the hEMC show a broad dependence of all these clients on the EMC, consistent with previous work (Shurtleff et al., 2018; Guna et al., 2018; Chitwood et al., 2018; Volkmar et al., 2019; Tian et al., 2019). In order to understand the mechanism of action, we will now go in more detail through several of the mutants with the strongest functional phenotypes in differing regions of the three-dimensional structure.
 
-## The EMC is an intricate molecular machine spanning the ER membrane and exhibits a conserved core architecture
+![Video 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-video1.mp4.jpg)
+
+**Video 1.:** Three identical copies of hEMC in nanodisc (colored blue) are displayed here. Subsequent labeling and coloring of mutated residues by flow cytometric measure of reporter abundance, grouped into three categories: increased reporter levels (mCherry > GFP signal, colored white), wild-type levels (mCherry signal is close to GFP signal, colored light blue), and decreased reporter levels (mCherry < GFP signal, colored gold). Left hEMC structure displays phenotypes for the C-lumenal tail anchor reporter (GFP-P2A-mCherry-SQS378-410-opsin). Middle hEMC structure displays phenotypes for the N-lumenal polytopic reporter (B1AR-mCherry-P2A-GFP). Right hEMC structure displays phenotypes for the N- cytoplasmic polytopic reporter (TMEM97-mCherry-P2A-GFP). Mutations with little to no phenotype are displayed as similar to wild-type levels.
+
+### The EMC is an intricate molecular machine spanning the ER membrane and exhibits a conserved core architecture
 
 We determined structures of yEMC and hEMC — all showing overall compositional similarity, with regional conformational differences between the yeast and human complexes (Figure 2A–D). We obtained reconstructions of yEMC bound to an antigen binding fragment (Fab) and hEMC reconstituted both in detergent micelles and lipid nanodiscs, with the latter strategy yielding the most isotropic and highest resolution data. For yEMC+FabDH4 and hEMC, the global map resolutions reached 3.2 Å and 3.4 Å, respectively (Table 1, Figure 2—figure supplements 1–4). The cryo-EM maps allowed for de novo model building of both human and yeast complexes (Figure 2—figure supplements 5 and 6). As described in the following sections, our multiple EMC structures enable a broad survey of its conserved architecture, with variations between the structures pointing to conformational and compositional differences (Figure 2—figure supplements 7–8). We note that our maps and models are consistent with recent cryo-EM data from yeast EMC (Bai et al., 2020), human EMC (O'Donnell et al., 2020; Pleiner et al., 2020), and a crystal structure of human EMC2-EMC9 (O'Donnell et al., 2020; Figure 2—figure supplement 9).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-v3.jpg)
+
+**Figure 2.:** (A) Cryo-EM structure of yEMC in nanodiscs. Three orthogonal views of the yEMC cryo-EM structure shown as surface rendering. Gray bars delineate the approximate ER membrane boundaries with the cytoplasmic (C) and lumenal (L) sides indicated. The FAb molecule bound to the yEMC1 lumenal domain is colored in gray. (B) Cryo-EM structure of hEMC in nanodiscs. Labeling as in (A). (C) Subunit composition and color scheme of yEMC used throughout the manuscript. Dotted line indicates a portion of yEMC4 unresolved in the cryo-EM map and left unmodeled. (D) Subunit composition and color scheme of hEMC used throughout the manuscript. (E) Schematic depiction and comparison of the EMC architecture to known transmembrane protein biogenesis factors in the ER and the bacterial plasma membrane. Cytoplasmic, transmembrane and lumenal domains are depicted as cartoons colored red, gray and blue, respectively. E, eukaryotic; P, prokaryotic.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative motion-corrected micrograph for yEMC-FabE in DDM. Scale-bar = 500 Å. (B) Representative motion-corrected micrograph for yEMC-FabH in DDM. Scale-bar = 500 Å. (C–D) Gallery of 2D classes for the final consensus particle set of yEMC in DDM. (E) Angular distribution of the final consensus particle set of yEMC in DDM. (F) Gold-standard Fourier shell correlation (FSC) of the consensus yEMC DDM map. The FSC at 0.143 is indicated by a gold line. (G) A slice through the consensus yEMC DDM map colored by local resolution. (H) Representative motion-corrected micrograph for yEMC in nanodiscs. Scale-bar = 500 Å. (I) Gallery of 2D classes of yEMC in nanodiscs. (J) Angular distribution of the final consensus particle set of yEMC in nanodiscs. (K) Gold-standard Fourier shell correlation (FSC) of the consensus yEMC nanodisc map. The FSC at 0.143 is indicated by a gold line. (L) A slice through the consensus yEMC nanodisc map colored by local resolution.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative motion-corrected micrograph for hEMC in nanodiscs. Scale-bar = 500 Å. (B) Gallery of 2D classes for the final consensus particle set of hEMC in nanodiscs. (C) Angular distribution of the final consensus particle set of hEMC in nanodiscs. (D) Gold-standard Fourier shell correlation (FSC) of the consensus hEMC nanodisc map. The FSC at 0.143 is indicated by a blue line. (E) A slice through the consensus hEMC nanodisc map colored by local resolution. (F–J) As for (a – e) but for hEMC in detergent.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic of cryoEM data processing workflow for yEMC+Fab in b-DDM detergent micelles. (B) Schematic of cryoEM data processing workflow for yEMC+Fab in lipid nanodiscs.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Schematic of cryoEM data processing workflow for hEMC in GDN detergent micelles. (B) Schematic of cryoEM data processing workflow for hEMC in lipid nanodiscs.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Final model-to-map FSC curve shown for yEMC in nanodiscs (left) and detergent (right). (B) Consensus yEMC nanodisc density shown superposed on the final yEMC nanodisc model. Three cytoplasmic subunit interfaces are depicted. (C) As in (B), for transmembrane subunit interfaces. (D) As in (B), for lumenal subunit interfaces.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Final model-to-map FSC curves shown for hEMC in nanodiscs (left) and detergent (right). (B) Consensus hEMC nanodisc density shown superposed on the final hEMC nanodisc model. Three cytoplasmic subunit interfaces are depicted. Cyan dashed lines correspond to an unresolved cytoplasmic loop of EMC4. (C) As in (B), for transmembrane subunit interfaces. (D) As in (B), for lumenal subunit interfaces. The right most panel depicts the sub-classified hEMC nanodisc map featuring stronger EMC7 lumenal density.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** (A–D) EMC models from both human (A,C) and yeast (B,D) in lipid nanodiscs are colored with the same subunit color code, shown in the middle. Both cartoon ribbons and surface rendering are shown in two different views.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** (A–H) Each panel shows a side-by-side comparison of homologous yeast and human EMC subunits, colored from N- (blue) to C-terminus (red). Schematics above each panel depict domain organization for each subunit. TM = transmembrane helix. C = cytoplasmic. L = ER lumenal.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig2-figsupp9-v3.jpg)
+
+**Figure 2—figure supplement 9.:** Pairwise superpositions between hEMC and yEMC from this work and recently published EMC structures. Alignments were performed with the matchmaker command in ChimeraX, in each case aligning on the conserved core subunits EMC3 and EMC5. RMSD values for alignments between pruned atom pairs are shown. (A) Alignment on hEMC in nanodiscs (this work). (B) Alignment on yEMC in nanodiscs (this work).
+
+**Table 1.**
+ Cryo-EM data acquisition, reconstruction, and model refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>yEMC in detergent dataset 1</th>
+      <th>yEMC in detergent dataset 2</th>
+      <th>yEMC in nanodiscs</th>
+      <th>hEMC in detergent</th>
+      <th>hEMC in nanodiscs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMDB accession code</td>
+      <td colspan="2">EMD-23033</td>
+      <td>EMD-23003</td>
+      <td>EMD-11733</td>
+      <td>EMD-11732</td>
+    </tr>
+    <tr>
+      <td>PDB accession code</td>
+      <td colspan="2">PDB-7KTX</td>
+      <td>PDB-7KRA</td>
+      <td>PDB-7ADP</td>
+      <td>PDB-7ADO</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>FEI Technai Polara</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td>Gatan K2 Summit</td>
+      <td>Gatan K2 Summit</td>
+      <td>Gatan K3</td>
+      <td>Gatan K3</td>
+      <td>Gatan K3</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>31,000x</td>
+      <td>22,500x</td>
+      <td>105,000x</td>
+      <td>81,000x</td>
+      <td>105,000x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>56.8</td>
+      <td>58.3</td>
+      <td>67</td>
+      <td>62</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>−1.0 to −3.0</td>
+      <td>−1.0 to −3.0</td>
+      <td>−0.8 to −2.5</td>
+      <td>0.7–2.8</td>
+      <td>0.7–2.8</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.22</td>
+      <td>1.31</td>
+      <td>0.853</td>
+      <td>1.094</td>
+      <td>0.8512</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Relion 2.0, Relion 3.0, THUNDER</td>
+      <td>Relion 2.0, Relion 3.0, THUNDER</td>
+      <td>Relion 3.0, cryoSPARC v2</td>
+      <td>Relion 3.0, cryoSPARC v2</td>
+      <td>Relion 3.0, cryoSPARC v2</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>419,907</td>
+      <td>670,078</td>
+      <td>6,100,000</td>
+      <td>3,350,000</td>
+      <td>5,900,000</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>83,599</td>
+      <td>170,186</td>
+      <td>230,528</td>
+      <td>144,222</td>
+      <td>177,560</td>
+    </tr>
+    <tr>
+      <td>Overall map resolution (Å)</td>
+      <td>8</td>
+      <td>7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC threshold 0.143</td>
+      <td colspan="2">4.3 (combined)</td>
+      <td>3.2</td>
+      <td>3.60</td>
+      <td>3.39</td>
+    </tr>
+    <tr>
+      <td>Local map resolution range (Å)</td>
+      <td colspan="2">3.6–6.4</td>
+      <td>2.6–6.4</td>
+      <td>2.8–6.0</td>
+      <td>3.0–7.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td colspan="2">Phenix 1.18 real-space-refine</td>
+      <td>Phenix 1.18 real-space-refine</td>
+      <td>Phenix 1.18 real-space-refine</td>
+      <td>Phenix 1.18 real-space-refine</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FSC threshold 0.5</td>
+      <td colspan="2">4.5</td>
+      <td>3.5</td>
+      <td>3.9</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td colspan="2">−125</td>
+      <td>−75</td>
+      <td>−115</td>
+      <td>−126</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td colspan="2">17,315</td>
+      <td>17,293</td>
+      <td>15,040</td>
+      <td>16,652</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td colspan="2">2171</td>
+      <td>2164</td>
+      <td>1880</td>
+      <td>2086</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td colspan="2">NAG: 6</td>
+      <td>NAG: 5; PCW: 1</td>
+      <td>NAG: 2</td>
+      <td>NAG: 4; PCW: 5</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein (mean)</td>
+      <td colspan="2">167</td>
+      <td>107</td>
+      <td>111</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <td>Ligand (mean)</td>
+      <td colspan="2">146</td>
+      <td>92</td>
+      <td>107</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td colspan="2">0.006</td>
+      <td>0.005</td>
+      <td>0.005</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td colspan="2">0.988</td>
+      <td>0.804</td>
+      <td>0.718</td>
+      <td>0.782</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td colspan="2">1.44</td>
+      <td>1.29</td>
+      <td>1.46</td>
+      <td>1.28</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td colspan="2">8.1</td>
+      <td>3.5</td>
+      <td>9</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td colspan="2">98</td>
+      <td>97</td>
+      <td>97</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td colspan="2">2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td colspan="2">0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 The EMC is comprised of cytoplasmic, transmembrane, and lumenal domains arranged similarly for yeast and human, despite significant evolutionary separation (Figure 2A–B). For both species, subunits encompassing EMC2 to EMC7 form an interconnected core complex, while there is additional density capping both the cytoplasmic and lumenal domains of hEMC, occupied by an hEMC8/9 and an hEMC1 N-terminal expansion, respectively (Figure 2C–D). hEMC8 and hEMC9 are paralogs of each other, which have not been identified in yeast (Wideman, 2015). We modeled and depict only hEMC8 for clarity, but due to the 44% sequence identity with hEMC9 and both being present in the recombinant system we refer to this as hEMC8/9. The large hEMC1 insertion in hEMC constitutes the majority of a membrane distal beta-propeller domain protruding into the lumen, a feature missing from S. cerevisiae. Compared to other ER-resident proteins implicated in membrane protein biogenesis (Suloway et al., 2009; Pfeffer et al., 2017; Ramírez et al., 2019; McDowell et al., 2020; McGilvray et al., 2020), the arrangement of domains of the EMC is unusual with the transmembrane domain connecting prominent cytoplasmic and lumenal domains (Figure 2E). On a global level, the structure suggests complexities beyond those of some other ER machineries fulfilling select functions in transmembrane protein biogenesis.
 
-## The cytoplasmic domain provides a platform for protein-protein interactions
+### The cytoplasmic domain provides a platform for protein-protein interactions
 
 The exterior interface of the cytoplasmic domain is formed by EMC2, EMC3, EMC4, and parts of hEMC8/9 (in human), while parts of EMC5, EMC2, and EMC8/9 are shielded from the cytoplasm (Figure 3A–B). The helical fold of EMC2 constitutes the central organizer of this platform, established by five or six TPR motifs in human versus yeast, respectively (Figure 3C). TPR domains are commonly found mediating protein-protein interactions and are present in numerous well-characterized chaperone-protein and other interaction networks (Blatch and Lässle, 1999; Scheufler et al., 2000; Schlegel et al., 2007; Assimon et al., 2015; Krysztofinska et al., 2017; Graham et al., 2019). Yeast EMC2 features a more curved helical arrangement with N- and C-terminal domains in closer proximity to each other than seen in hEMC2. Notably, the canonical peptide-binding TPR groove is occupied by the partially helical C-terminus of EMC5, which forms a large interaction surface with EMC2. To test the functional roles of this interaction, we mutated three residues within the hEMC2 TPR motif (hEMC2K125E + R126D + K127E) or a single hEMC5 residue buried in the TPR-binding groove (hEMC5F90A). The mutations on both sides of the interface decreased hEMC integrity by western blot, with a modest decrease of hEMC subunits for hEMC5F90A and a strong reduction in the levels of several hEMC subunits for hEMC2K125E + R126D + K127E (Figure 3C, Figure 3—figure supplements 1–2, Figure 1—figure supplements 5–6). This suggests that this interface might be critical for EMC complex assembly rather than EMC function.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig3-v3.jpg)
+
+**Figure 3.:** (A) Position of the hEMC cytoplasmic domain relative to the membrane and the rest of the complex. Shown is the surface rendered hEMC structure reconstituted in nanodiscs. (B) EMC2 nucleates a protein-protein interaction hub in the cytoplasm. Zoomed-in view of the cytoplasmic domain from (A). EMC2 is shown as surface rendering while interacting EMC subunits are shown as cartoon cylinders. (C) EMC2 forms a TPR domain which binds EMC5. Overlaid are hEMC2 (red) and yEMC2 (dark red), illustrating the more tightly wound yEMC2 TPR solenoid. Two mutants, one in EMC5 and three in EMC2, are colored in blue, and show destabilizing phenotypes for EMC integrity. (D) A cytoplasmic cap structure involving EMC4 is conserved in yEMC and hEMC. Shown is a side-by-side comparison between the cytoplasmic domains of hEMC (left) and yEMC (right), highlighting the similar path EMC4 takes from the cytoplasmic domain toward the transmembrane domain. While an interaction surface between EMC8/9 and the EMC4 N-terminus is absent in yeast, yEMC4 binds at the top of the EMC2 TPR domain and assumes as similar position across the EMC3 cytoplasmic domain at the cytoplasm-membrane interface. (E) Fluorescent client reporter stability assay for TMEM97 (N-cytoplasmic polytopic client), B1AR (N-lumenal polytopic client) and SQS378-410 (C- lumenal tail-anchored client) in EMC2 KO cells expressing mutant hEMC2E168A+D170A+K173A (shaded) or WT hEMC2 rescue (unshaded). Shown is the model of hEMC in nanodiscs superposed with the unsharpened cryo-EM map, where the weaker density for EMC4 (23–42) becomes apparent. Mutated residues are colored blue and marked with asterisks for clarity. (F) Fluorescent client reporter stability assay, as in E, for the hEMC2E146A+E149A+Q150A mutant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mutant hEMC2K125E+R126D+K127E with TMEM97-mCherry, B1AR-mCherry, and mCherry-SQS378-410 cell lines. Image of hEMC ND model displaying the residues mutated. (B) Mutant hEMC2K18A+K21A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC2K248E+D252K+K255E with TMEM97-mCherry, B1AR-mCherry, and mCherry-SQScterm cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC2N137A+N167A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC2Q269A+E286A+E290A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Mutant hEMC2R266A+Q269A+R273A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC2R80E+R81E+K90E+R112E with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC5F90A with TMEM97-mCherry, B1AR-mCherry, and mCherry-SQScterm cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC5E75A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC5D82A+R85A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Superposition of hEMC8 (cryo-EM model, this work) and hEMC9 (X-ray model, PDB code 6Y4L) reveals strong structural homology between the two paralogous hEMC subunits. (B) Central slide through the models of hEMC8 (cryo-EM) and hEMC9 (X-ray) fitted into the hEMC nanodisc cytoplasmic focused map. (C) Representative non-conserved residues in hEMC8 and hEMC9 showing evidence of side-chain density superposition. The hEMC nanodisc cytoplasmic focused map is depicted. (D) Tcoffee sequence alignment between hEMC8 and hEMC9, displayed in Jalview and ClustalX coloring.
+
 The multi-protein cytoplasmic cap has distinct elements between hEMC and yEMC. Capping the cytoplasmic domain in hEMC is hEMC8/9; the functional roles of this cap-like structure are not yet clear. An hEMC8-9 heterodimer is not observed and our cryo-EM permits tracing with both the hEMC8 or hEMC9 amino acid sequence (Figure 3—figure supplement 3). Mass spectrometric analysis of our hEMC preparations reveals slightly higher abundance of hEMC8 to hEMC9 (Figure 1—figure supplement 2E–F, Supplementary file 1), so we modeled the cytoplasmic cap structure with the hEMC8 sequence. A groove on hEMC8/9 cradles an N-terminal peptide of hEMC4, which proceeds into the EMC4 segment that traverses over hEMC2 and the three-helix bundle of hEMC3 (Figure 3D). Although yEMC lacks EMC8/9, yEMC4 follows a similar binding trajectory along cytoplasmic yEMC2 and yEMC3 surfaces. A stretch of 20 hEMC4 amino acids (residues 23–42) after the hEMC8/9 binding site is only poorly resolved in our cryo-EM maps and predicted to be disordered (40% glycine content). This loop contains primarily polar amino acids, and traverses the top of the hEMC2 TPR domain. To see whether this dynamic hEMC2-hEMC4 interface played a role in client stabilization, we mutated two charged patches on hEMC2 to alanines (hEMC2E146A+E149A+Q150A, hEMC2E168A+D170A+K173A), lying in close vicinity to hEMC423-42 (Figure 3E–F). These mutants lead to a modest accumulation of the tail-anchored client (SQS378-410) but did not affect polytopic client abundance or decrease of hEMC subunits (Figure 3E–F; Figure 1—figure supplement 5). Several mutants across the cytoplasmic domain showed similar phenotypes, supporting a key role in tail anchor protein biogenesis (Figure 3—figure supplements 1–2).
 
-## Two distinct cavities are present in the transmembrane domain
+### Two distinct cavities are present in the transmembrane domain
 
 The transmembrane core of EMC is predicted to include contributions from each subunit except for EMC2 and, in humans, hEMC8/9 (Figure 2C–D). The EMC presents two distinct and structurally conserved cavities on opposite sides of the transmembrane core that differ in size, shape, subunit compositions and apparent function (Figure 4A–B). One cavity, which we refer to as the lipid-filled cavity, appears contiguous with the ER lipid environment (Figure 4A). The second cavity, which we refer to as the gated cavity, appears to open toward the cytoplasm in our structures and is more occluded by a transmembrane helix gate from the lipid environment (Figure 4B). Notable structural hallmarks present in both species include a superimposable core of nine transmembrane helices, a set of flexible gate helices, and an amphipathic EMC1 brace helix (Figure 4C).
 
@@ -74,9 +494,33 @@ The transmembrane core of EMC is predicted to include contributions from each su
 
 **Figure 4.:** (A) Location and composition of the lipid-filled cavity. A zoom-in view on the cavity is shown below, which is composed of EMC1, EMC3, EMC5, and EMC6. Resolved lipid densities from the cryo-EM map of hEMC in POPC nanodiscs are shown as black mesh zoned within 3 Å of modeled POPC molecules. (B) Location and composition of the gated cavity. Two orthogonal zoom-in views of the cavity are shown below, which is composed of EMC3 and EMC6. A transmembrane gate opposite the cavity wall is depicted as transparent cartoon cylinders and has contributions from the C-terminal EMC4 transmembrane helix along with up to two additional, unassigned helices. Resolved lipid densities are shown as in (A). (C) The dual-cavity architecture of the EMC transmembrane domain is conserved between yEMC and hEMC. Unsharpened cryo-EM maps of hEMC and yEMC in nanodiscs (top) are shown along with corresponding schematic representations of the spatial organization of all transmembrane helices (bottom). The gate helices of the gated cavity represent the region of highest conformational heterogeneity across our collection of EMC structures. (D) The two EMC transmembrane cavities feature distinct accessibilities. Shown is a central slice through the surface rendered hEMC nanodisc structure with the two membrane cavities on opposite sides. Measuring from the lumenal to the cytoplasmic side, gated and lipid-filled cavities measure 45 Å and 35 Å across, respectively. This suggests that the gated cavity has accessibility from the cytoplasm while the lipid-filled cavity does not.
 
-## The gated cavity serves as a conduit for terminal helix insertion
+### The gated cavity serves as a conduit for terminal helix insertion
 
 Evaluating potential client paths from the cytoplasm into the transmembrane domain revealed a cavernous opening at the membrane-cytoplasmic interface of the gated cavity, wide enough to allow passage of a client helix, and tapering toward the lumen (Figure 4D). Consistent with its potential role as a cytoplasmic conduit into the EMC, the EMC3 portion of the cytoplasmic domain, which delineates this opening, sits approximately 45 Å from the lumenal side of the gated cavity. This dimension exceeds the thickness of the ER membrane (Mitra et al., 2004; Heberle et al., 2020; Cornell et al., 2020; Figure 4D). This cavity is lined primarily by EMC3, EMC4, and EMC6 (Figure 5A). Simulating the dimension of the first transmembrane helix of a known terminal insertase-client (B1AR - Chitwood et al., 2018) suggests that there is sufficient space for a client helix even in the client-free state of the EMC (Figure 5B). The gated cavity is hydrophilic on the cytoplasmic side and becomes increasingly hydrophobic toward the lumenal side (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-v3.jpg)
+
+**Figure 5.:** (A) A transmembrane gate anchored in the cytosol and the lumen is a structural hallmark of the EMC gated cavity. Shown is a surface rendering of the hEMC model in lipid nanodiscs with an unresolved EMC4 connection between the cytoplasm and the membrane depicted as a dashed line. An unassigned helix of the gate is shown in gray (H1). (B) The gated cavity in the hEMC nanodisc structure has sufficient space to accommodate a client transmembrane helix. The space-filling model of the first transmembrane helix of B1AR (B1AR TMH1) is shown placed inside an outline of the EMC gated cavity. (C) A hydrophobic gradient characterizes the surface of the EMC gated cavity from the cytoplasmic to the lumenal side. Gate helices have been omitted for clarity. The surface of the hEMC nanodisc structure is colored by electrostatic surface potential ranging from −15 (red) to +15 (blue) kcal/(mol·e). (D) Distinct EMC3 regions along the gated cavity hydrophobic gradient targeted for mutagenesis. Mutated residues are colored in lime. (E) Fluorescent client reporter stability assay for the EMC3 cavity entrance mutant, hEMC3E63K+D213K+E223K. (F) As in (E) for the EMC3 buried polar patch mutant, hEMC3N114D+N117D. (G) As in (E) for the EMC3 hydrophobic seal mutant, hEMC3M151L.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mutant hEMC1K951A+K957A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC3R147E with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC3F148L with TMEM97-mCherry, B1AR-mCherry, and mCherry-SQScterm cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC3V118A+I122A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC3R180A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Mutant hEMC3K42A+K43A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC3K244A+H247A+E249A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC3R59E+R62E+K216E with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC3K70Y with TMEM97-mCherry, B1AR-mCherry, and mCherry-SQScterm cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** Structure and sequence comparison between EMC3 and YidC-family proteins. (A) Side-by-side structure view of human EMC3, yeast EMC3, E. coli YidC, and M. jannaschii YidC-like protein. hEMC3 and yEMC are displayed within the context of the EMC complex. EMC3 and YidC subunits are colored from the N-terminus (blue) to the C-terminus (red). (B) Amino acid sequence alignment between human EMC3, yeast EMC3, E. coli YidC, and M. jannaschii YidC-like protein. Alignment from T-Coffee online server. Conserved residues colored in shades of blue to indicate degree of conservation.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Resolved lipids in the hEMC gated cavity. Left: The hEMC model is shown as surface rendering, colored by molecular lipophilicity potential (mint = hydrophilic, gold = hydrophobic). Black mesh corresponds to the hEMC consensus nanodisc map zoned within 3 Å of the modeled POPC molecules. Enlarged views of lipid densities are shown, although the second lipid on the lumenal side of the cavity is shown with the corresponding zoned Sidesplitter hEMC nanodisc map. Since this particular lipid molecule shows only weak features in the consensus map, it is left unmodeled in the hEMC nanodisc model. Right: The yEMC model is shown as surface rendering, colored by molecular lipophilicity potential. One POPC lipid is modeled at the lumenal side of the yEMC gated cavity and shown is an enlarged view from the yEMC consensus nanodisc map zoned within 3 Å of a modeled POPC molecule. (B) Same view as in (a), with the hEMC model molecular surface colored according to amino acid conservation. (C) As for (A) but for the hEMC lipid-filled cavity. (D) Same view as in (C), with the hEMC model molecular surface colored according to amino acid conservation.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** (A) Comparison of gate helix conformations across hEMC and yEMC structures. In each panel, the model of hEMC in nanodiscs is shown as ribbons (color-coded as elsewhere in the manuscript). Cryo-EM maps were aligned on their transmembrane cores and gate helices segmented, with the EMC4 transmembrane helix colored cyan and unassigned gate helices colored gray. (B) Comparison of gate helix densities in cryo-EM maps of hEMC (O'Donnell et al., 2020) and yEMC (Bai et al., 2020), the latter of which was smoothed by Gaussian filtering for clarity. Panels are in same view as (A), with the hEMC model from this work shown as colored ribbons. (C) Topology diagrams of EMC4, EMC7, and EMC10. Based on resolved N- and C-terminal domains of EMC4 in our hEMC structure, EMC4 can possess either one or two transmembrane domains, the latter scenario proposed by Bai et al., 2020 and O'Donnell et al., 2020. The resolved EMC7 and EMC10 N-terminal lumenal domains in our yEMC and hEMC structures orient their C-terminal, predicted transmembrane helices, toward the membrane. (D) Unsharpened maps of the gate helix densities from yEMC in nanodiscs. The assigned C-terminal EMC4 transmembrane helix is colored cyan, whereas two unassigned helices are colored gray. (E) Predicted transmembrane helices for EMC4, EMC7, and EMC10 were extracted from full-sequence prediction models generated with Robetta (robetta.bakerlab.org). (F) Predicted transmembrane helices for EMC7 and EMC10 were docked into the unassigned gate helix densities. (G) Predicted transmembrane helices for EMC4 were docked into the unassigned gate helix densities.
 
 The entrance into the gated cavity interior (Figure 5A) is formed primarily by the EMC3 cytoplasmic domain. To test its function, charge swap mutations were introduced along the rim of this opening (hEMC3E63K + D213K + E223K, hEMC3R59E + R62E + K216E) (Figure 5D). These mutants resulted in loss of the tail-anchored client (SQS378-410) and partial loss of the N-terminal insertase-dependent polytopic client (B1AR), reflecting a failure to support insertase activity. These mutants had no appreciable effect on the abundance of the polytopic transmembrane client (TMEM97) reporter (Figure 5E, Figure 5—figure supplements 1–2). A similar phenotype was observed with alanine substitutions for a pair of lysines at the periphery of this cytoplasmic rim (hEMC3K42A + K43A) (Figure 5—figure supplement 2).
 
@@ -84,25 +528,61 @@ Having identified a functionally important entry route for terminal helix insert
 
 Lastly, we surveyed residues closer to the hydrophobic lumenal side of the gated cavity. Lipid density was resolved at positions along the cavity in hEMC and yEMC cryo-EM maps (Figure 4B) and the properties of this hydrophobic seal to the lumen are conserved (Figure 5—figure supplement 4A–B). The importance of this hydrophobic seal is suggested by the strong effect of a structurally mild mutation of a conserved methionine to a leucine (hEMC3M151L), which caused significant decrease in both SQS378-410 and B1AR abundance (Figure 5G). Mutation of a neighboring aromatic residue (hEMC3F148L), contacting both a lipid and a hEMC4 C-terminal transmembrane helix, caused a decrease in all three client types without altering the levels of hEMC subunits (Figure 5—figure supplements 1–2, Figure 1—figure supplement 6). Together these results indicate that proper EMC insertase function depends on the exact composition of the cavity and not simply on its hydrophobic nature.
 
-## Structural heterogeneity suggests a role for the gate in regulating access to the insertase transmembrane cavity
+### Structural heterogeneity suggests a role for the gate in regulating access to the insertase transmembrane cavity
 
 While the core transmembrane helices of the gated cavity are superimposable in all four of our EMC structures, the adjacent gate helices appear in different relative orientations. The structural variability likely reflects dynamics of the gate (Figure 4C). Comparing detergent and nanodisc maps for both species identified two major gate conformations (Video 2, Figure 5—figure supplement 5A). One of the conformations, referred to as the closed-gate conformation, results in a more occluded membrane cavity. The other conformation, referred to as the open-gate conformation, would provide space for client accommodation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-video2.mp4.jpg)
+
+**Video 2.:** Overview of hEMC colored and labeled by subunit. Volume fades away to hEMC nanodisc model. hEMC nanodisc model remains constant as segmented maps of the unassigned gate helices are shown of hEMC detergent, yEMC detergent, and yEMC nanodisc maps. hEMC is colored cyan, yEMC is colored dark cyan, and gate helices are colored in shades of gray and purple as indicated by the label on the left. Two residues are shown in stick representation colored gold.
 
 The C-terminal transmembrane helix of EMC4 and ensuing lumenal segment are well resolved in all four structures; however, other regions of EMC4, including the segment connecting the cytoplasmic domain to the transmembrane gate helices, were poorly resolved, perhaps owing to mobility. The yEMC detergent map, yEMC nanodisc map, and hEMC detergent map all show the unassigned helices in the closed conformation, preventing client residence in the gated cavity. By contrast, the hEMC nanodisc map reveals an open-gate conformation with the unassigned helices shifted away from the transmembrane core to provide space for a client (Figure 5B). Consistent with our observations, the closed transmembrane gate conformation can also be seen in recently published cryo-EM maps of hEMC (O'Donnell et al., 2020) and yEMC (Bai et al., 2020), which studied LMNG and digitonin-solubilized complexes, respectively (Figure 5—figure supplement 5B). We note that the conformational heterogeneity and concomitant lower resolution of the gate likely accounts for the challenges in making unambiguous subunit assignments (Figure 5—figure supplement 5C–E), reflected by the three different interpretations reported in recent structures (Pleiner et al., 2020; O'Donnell et al., 2020; Bai et al., 2020).
 
 Considering the apparent flexibility of the gate, we sought to mutate the hEMC4 interfaces resolved in the cytoplasm versus the membrane. As described above, mutating residues that together form a composite-binding surface for the cytoplasmic domain of hEMC4 (hEMC2E146A+E149A+Q150A, hEMC2E168A + D170A + K173A, Figure 3E–F), we observed a modest accumulation of the tail-anchored insertase client (SQS378-410). Likewise, mutating residues in the center of the gated cavity, close to one of the unassigned helices in the closed-gate conformation (hEMC3V118A + I122A) (Video 2, Figure 5—figure supplement 1) led to an increase of SQS378-410. This SQS378-410 accumulation effect stands in contrast to mutating a residue that contacts the lumenal anchor of hEMC4 (hEMC3F148L), which caused a reduction of SQS378-410 levels (Figure 5—figure supplement 1).
 
-## The lipid-filled cavity is critical for both insertase-dependent and insertase-independent EMC functions
+### The lipid-filled cavity is critical for both insertase-dependent and insertase-independent EMC functions
 
 In addition to the gated cavity, the EMC harbors another membrane-accessible cavity. The surface of the lipid-filled cavity includes contributions from EMC1, EMC3, EMC5, and EMC6 (Figure 6A). In our structures, the EMC2 N-terminus occludes cytoplasmic accessibility to this cavity (Figure 4D, Figure 6A–B). However, this cavity may be accessible from the membrane or the ER lumen. The respective distance from the cytoplasmic EMC2 N-terminus to the lumenal side of the lipid-filled cavity is approximately 35 Å across, which is close to the average ER membrane thickness (Mitra et al., 2004).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig6-v3.jpg)
+
+**Figure 6.:** (A) An EMC1 amphipathic brace helix delineates the boundary of the lipid-filled transmembrane cavity and packs against EMC5. Shown is a surface rendering of the hEMC model in nanodiscs. EMC4, EMC5, EMC6, and EMC1 subunits all contribute to the cavity lining. (B) The lipid-filled cavity in the hEMC nanodisc is occupied by several lipid molecules. Cartoon outlines of the gated cavity illustrate that the cavity could in principle allow for occupancy of a client helix (B1AR TMH1), possibly by lipid displacement or movement of the EMC1 brace helix. (C) The lipid-filled cavity has a uniform hydrophobic lining. Shown is an electrostatic surface rendering of the hEMC nanodisc structure colored as in Figure 5C. The cytoplasm-membrane interface contains positively charged residues and the lumenal interface contains negatively charged residues. Modeled phospholipid molecules are displayed in black. (D) Lipid-proximal and brace interface residues targeted for mutagenesis. Selected regions targeted for mutagenesis are colored in magenta and include brace interface mutations both in EMC1 and EMC5, as well as a lipid-proximal residue in EMC3. (E) Fluorescent client reporter stability assay for the hEMC3R13E mutant, which is in close proximity to a modeled POPC molecule. (F) As in (E) for the hEMC5H19L+S23A+Q26L mutant, which sits at the interface to the EMC1 amphipathic brace helix. (G) As in (E) for the hEMC1F473Y+R487K mutant, which sits at the interface to the EMC5 transmembrane helices.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mutant hEMC5K7E with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC5K7A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC3I182V+I186V with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC5I63L with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC5A18L with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Mutant hEMC5F22L with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC1M483A+R487H+Q491N with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC5D44K with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC5R28A+R32A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC3D9A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
 The lipid-filled cavity features a uniformly hydrophobic surface (Figure 6C) and superimposes across our ensemble of EMC structures. As noted, we resolved several lipids in our cryo-EM maps lining the cavity wall and modeled four POPC (1-palmitoyl-2-oleoyl-sn-glycero-3 phosphatidylcholine) molecules in the hEMC nanodisc map (Figure 6C). The residues in close proximity to these lipids are moderately conserved (Figure 5—figure supplement 4C–D). To characterize the functional role of the lipid-filled cavity, we mutated cavity-lining and lipid-proximal residues (Figure 6D, Figure 6—figure supplements 1–2). Most of these mutations resulted in an increased abundance of the tail-anchored reporter (SQS378-410) and wild-type rescue levels for the other two reporters (B1AR, TMEM97). However, one lipid-proximal mutant showed decreased levels of all three client reporter types with varying severity (hEMC3R13E) without altering overall EMC levels (Figure 6E). Western blotting for the endogenous SQS and TMEM97 revealed a decrease in endogenous SQS and TMEM97 levels for this mutant (Figure 1—figure supplement 6). An analogous mutation in Drosophila EMC3 was recently was reported to cause reduced levels of Rh1 in this mutant background (Xiong et al., 2020). The amphipathic EMC1 brace helix, which packs against the transmembrane helices of EMC5, is a structural hallmark of the lipid-filled cavity (Figure 6D). Here, mutating interfacial residues from hEMC5 (hEMC5H19L+S23A+Q26L) caused a marked decrease in the N-lumenal polytopic reporter (B1AR) and no effect on either the tail-anchored client (SQS378-410) or the polytopic client reporter (TMEM97) (Figure 6F). Unexpectedly, mutating interfacial residues from hEMC1 (hEMC1F473Y+R487K) showed a diametrically opposed phenotype in which B1AR was unaffected, increased SQS378-410 levels, and TMEM97 levels markedly decreased (Figure 6G). Another mutation in this brace (hEMC1M483A+R487H+Q491N) resulted in a decrease in TMEM97 and no significant effect on the other two client reporters. An adjacent hEMC5D44K mutations in the interfacial brace had yet different resulting client flow cytometry profiles, with an increase in SQS378-410 and no effect on either of the polytopic client reporters (Figure 6—figure supplement 2B–C). The pleiotropic client phenotypes across the panel of interfacial brace mutants suggest that this feature is critical for multiple EMC functions.
 
-## The EMC lumenal domain is crucial for the biogenesis of multi-pass transmembrane proteins
+### The EMC lumenal domain is crucial for the biogenesis of multi-pass transmembrane proteins
 
 Composed primarily of EMC1, EMC7, and EMC10, the extensive EMC lumenal domain (Figure 7A) is important for polytopic client biogenesis and interactions with lumenal chaperones (Luo et al., 2002; Shurtleff et al., 2018; Hiramatsu et al., 2019; Coelho et al., 2019). EMC7 and EMC10 are scaffolded on two beta-propellers of EMC1, one distal and the other proximal to the membrane. The lumenal cap differs between hEMC and yEMC, with a four-bladed distal beta-propeller in yeast and eight-bladed distal propeller the human complex (Figure 7B). All three lumenal EMC subunits have structural folds known to participate in protein-protein interactions (Reinisch and De Camilli, 2016). Mutations in this lumenal domain have been linked to loss of the EMC complex (Bircham et al., 2011), a trafficking delay for membrane protein Pma1 (Luo et al., 2002), and male infertility (Zhou et al., 2018).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig7-v3.jpg)
+
+**Figure 7.:** (A) Two views of the hEMC nanodisc structure. Two beta propellers are present in EMC1, one proximal to the membrane and one distal. (B) EMC1 is the largest EMC subunit and differs in size between yeast and human. Shown are human EMC1 (nanodisc), an overlay of human and yeast EMC1 (both nanodisc), and yeast EMC1 (nanodisc). (C) The hEMC1R881C mutant sits near the EMC4 lumenal gate anchor. Left: Location of the mutation (colored pink). Right: Fluorescent client R881C reporter stability assay for hEMC1. (D) As in (C) for for the hEMC1G868R mutant. (E) As in (C) for the hEMC1D31K mutant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Superposition of hEMC in detergent (green) and nanodiscs (color-coded). Models were aligned on hEMC2 (cytoplasm) and hEMC5 (transmembrane), revealing a rotation of the lumenal domain. (B) Enlarged view on the superposition around the area of the hEMC1 brace and the membrane proximal beta-propeller. A helix leading toward the amphipathic brace is resolved in the nanodisc map and disordered in the detergent map. In the nanodisc structure, several proximal propeller loops approach and form stabilizing interactions with the leading helix (dashed circle). (C) Enlarged view on the superposition around the area of the lumenal hydrophobic seal of the gated cavity. The loop stabilized by hEMC1R881 (corresponding to the disease mutant R881C) is well resolved in the hEMC nanodisc map and more disordered in the detergent map. The loops of the hEMC3 hydrophobic seal shift concomitantly with the lumenal rotation between detergent and nanodisc structures. (D) Structural alignment of hEMC1 from the detergent (green) and nanodisc (blue) models. While the beta-propellers align extremely well, a clear rotation of the hEMC1 brace and the hEMC1 transmembrane helix can be observed.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Mutant hEMC1G471R with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC1A144T with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC1R69D with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC1G71S with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (E) Mutant hEMC1T82M with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Mutant hEMC1T82A with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (B) Mutant hEMC1R76D+K80D with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (C) Mutant hEMC1H93D+E138D+N282K with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated. (D) Mutant hEMC1R275E+R404E with TMEM97-mCherry, B1AR-mCherry, and mCherry- SQS378-410 cell lines. Snapshot of hEMC ND model displaying the residues mutated.
+
 Several regions of the lumenal domain form stabilizing interactions with the membrane cavities. The gate helices of the gated cavity are anchored via the embedding of EMC4’s C-terminus within the membrane-proximal EMC1 propeller. The lipid-filled cavity is connected to the ER lumenal domain via the amphipathic EMC1 brace helix, which is tethered to the membrane-proximal EMC1 beta-propeller. The connections between the lumenal domain and the transmembrane cavities could allow for conformational coupling during client handling. Indeed, superimposing the two conformations presented above, the open- and closed-gate states, revealed not only differences in the transmembrane domain but also a rotation of the lumenal domain relative to the membrane cavities (Video 3). The lumenal positioning is consistent for all three of our closed-gate conformation reconstructions (hEMC detergent, yEMC nanodisc, yEMC detergent). By contrast, the one map with an open gated cavity displayed a lumenal rotation and concomitant shifts in position of the hEMC1 brace helix (Figure 7—figure supplement 1). Indeed, our set of interfacial hEMC1 brace mutants described above (Figure 6F–G, Figure 6—figure supplement 2B–C), showed differing client phenotypes when mutated from either the hEMC1 or the hEMC5 side. This suggests a complex conformational interplay between lumenal and transmembrane domains during the engagement of diverse client types.
+
+![Video 3.](https://cdn.elifesciences.org/articles/62611/elife-62611-video3.mp4.jpg)
+
+**Video 3.:** Overview of hEMC nanodisc model colored and labeled by subunit. Structural landmarks are labeled. hEMC detergent model (colored gray) fades in and both models rotate. As the models rotate several structural features are highlighted.
 
 We investigated several known disease mutations in both conserved and human-specific regions of hEMC1 (Figure 7C–D, Figure 7—figure supplements 2–3; Harel et al., 2016; Abu-Safieh et al., 2013; Amberger et al., 2019). One of these disease-associated residues sits near the anchor point for the lumenal hEMC4 transmembrane gate helix (hEMC1R881C), while the majority are found farther from the membrane (hEMC1G868R, hEMC1A144T, hEMC1T82M) (Figure 7C–D, Figure 7—figure supplement 2B). Incorporating each of these disease mutations into our EMC functional assay resulted in lower levels of the N-cytoplasmic polytopic client (TMEM97) and an increase in the level of the tail-anchored client (SQS378-410), discussed in more detail below.
 
@@ -122,7 +602,7 @@ Overall, our studies present a nuanced picture of EMC’s multifunctionality, re
 
 **Figure 8.:** (A) Model of EMC insertase function for a C-lumenal tail-anchored client. Cytosolic factors bring post-translationally localized clients to the ER. Then the client engages the EMC cytoplasmic domain. The polar roof modulates entry into the gated cavity. A hydrophobic slide facilitates the client helix fully entering the cavity. A lateral movement of the gate releases the client helix into the membrane and the EMC gate closes. (B) Our mutagenesis data provide the following insights into EMC regions of functional importance for each of the three client types we tested. Mutants are depicted by yellow triangles. Tail-anchored client (coral) abundance was depleted upon mutagenesis of the cytoplasmic domain entrance to the gated cavity, polar and charged residues at the cytoplasm-membrane boundary, residues along the length of the gated cavity, in the hydrophobic seal to the lumen, and lipid interacting residues in both cavities (left). We also observed a subset of mutants that resulted in higher levels of the C-lumenal tail-anchored client (right) that are positioned in the cytoplasmic domain cap, throughout the ER lumenal domain, and one mutation at the center of the gated cavity. (C) The EMC facilitates biogenesis of N-lumenal polytopic client protein B1AR (dark red). (D) Regions important for B1AR stability primarily map to the transmembrane region of the EMC structure, with depletion observed for lipid proximal residues on both sides of the cavity, the polar entrance roof of the gated cavity, and the EMC1 brace helix. (E) The EMC facilitates biogenesis of N-cytoplasmic polytopic client protein TMEM97 (dark purple). (F) Regions important for TMEM97 stability were primarily located in the lumenal domain spanning both propellers, in EMC1. In addition to these lumenal regions, there was a depletion of TMEM97 at the lipid-interacting positions at the lumenal interface of both membrane cavities of the EMC. Figure - Figure Supplement legends.
 
-## Terminal insertase clients require an embedded insertase module within the EMC
+### Terminal insertase clients require an embedded insertase module within the EMC
 
 EMC3’s fold at the interface between the cytoplasm and membrane forms the core of the gated cavity and is reminiscent of proteins from the YidC family of insertases (Borowska et al., 2015; Dalbey and Kuhn, 2015; Anghel et al., 2017). Indeed, mutations in either the cytoplasmic or transmembrane domains of EMC3 establish that these features are critical for terminal helix insertase activity. In light of our observation of multiple gate conformations, we speculate that these conformations modulate insertion and release into the ER membrane.
 
@@ -130,11 +610,11 @@ Notably, mutating the surface of the cytoplasmic cap, which extends beyond the E
 
 Post-translational insertase clients have previously been shown to be targeted to the ER by cytoplasmic chaperones (Guna et al., 2018). Structural analysis and coupled mutagenesis, from our and recent studies (O'Donnell et al., 2020; Pleiner et al., 2020; Bai et al., 2020), suggest that clients then engage the cytoplasmic domain of the EMC, the transmembrane gate opens, the terminal helix is inserted into the EMC-gated cavity, and then another conformational change would allow for release into the lipid bilayer (Figure 8A–B). Further studies are needed to establish the precise C-terminal client range, as most tail anchor clients have been shown to be inserted by the GET (in yeast) or WRB (in human) complexes (Denic et al., 2013; Mateja and Keenan, 2018).
 
-## Both EMC cavities have resolved lipids and are critical for client biogenesis
+### Both EMC cavities have resolved lipids and are critical for client biogenesis
 
 Both the N-terminal (B1AR) and C-terminal insertase (SQS) clients depend on the EMC-gated cavity. Indeed, both the SQS tail-anchored helix and the first transmembrane helix of B1AR are moderately hydrophobic, with polar residues near the cytoplasmic end of the transmembrane helix, and both showed a strong dependence on the gated cavity. Nevertheless, our panel of mutants revealed some notable differences in the handling of these two client types. B1AR showed more dependence than SQS on the lipid-filled cavity in contrast to mutants elsewhere in the complex. Consistent with this, a number of mutations, primarily in the gated cavity, show residues of importance to both SQS and B1AR. However, there are also a number of mutations that appear to only affect SQS. One possible reason could be due to differences in the mechanism of initial engagement: SQS is targeted to the ER by cytoplasmic chaperones, while B1AR is targeted by SRP. Another key difference is that B1AR is polytopic and needs to overcome the additional challenge of tertiary transmembrane packing to reach its folded state. This work provides support for a model where the EMC inserts both types of terminal transmembrane helices into the gated cavity with differences in initial targeting and perhaps release into the lipid environment (Figure 8C–D). Future work will address the interplay between B1AR synthesis and its co-translational engagement with the translocon to ascertain whether there is a direct handoff between the translocon and the EMC or the EMC acts post-translationally to insert the N-terminal helix of B1AR.
 
-## The EMC lumenal domain orchestrates holdase chaperone function important for polytopic clients
+### The EMC lumenal domain orchestrates holdase chaperone function important for polytopic clients
 
 Unlike the two terminal insertase clients we investigated, TMEM97 biogenesis was negatively impacted by mutation of the lumenal EMC1. The depletion of TMEM97 observed in these mutant backgrounds is consistent with the lumenal domain contributing to a holdase chaperone function, passively shielding its client while it is being synthesized and/or folded (Zhang et al., 2017). Interestingly, the diametrically opposed phenotype of mutants in the EMC lumenal domain on SQS raises the possibility that occupancy by one type of client can support an EMC conformation that is unfavorable for receiving the other. Alternative conformations could establish competition between client types for EMC occupancy. One explanation for this observation is that there is a conformational change between the insertase-active versus the holdase-active states. Interestingly, we identified at least two EMC conformations in our collection of structures, and EMC may adopt different conformations in various client and cofactor-engaged states.
 
@@ -142,7 +622,7 @@ In yeast, the polytopic clients co-purifying with the EMC are also glycosylated.
 
 Multi-pass transmembrane proteins require membrane factors to assist after insertion into the membrane to pack transmembrane helices in the correct order and topology. We propose that the EMC may act as a chaperone holdase to facilitate one of the following: helix and lipid packing, shielding from degradation while synthesis is in progress, or assisting in the assembly of multi-protein transmembrane complex formation. This is consistent with observations that in the absence of the EMC numerous integral membrane proteins are degraded (Shurtleff et al., 2018; Volkmar et al., 2019; Tian et al., 2019). Direct interactions with multi-pass transmembrane proteins have been shown previously (Shurtleff et al., 2018; Coelho et al., 2019). Furthermore, EMC dependence of internal transmembrane domain segments has also been established (Ngo et al., 2019; Hiramatsu et al., 2019). In the absence of yEMC7, a primarily lumenal subunit, a polytopic membrane protein was retained for longer in the ER, suggesting the possibility that yEMC7 may be involved in client release from the EMC. We propose a model where the EMC engages polytopic clients either during or directly after translation and remains bound until the client is released either to the membrane environment directly or handed off to client-specific and general ER chaperones (Figure 8E–F). It remains to be seen whether these polytopic clients directly engage with the lipid-filled cavity or the gated cavity or the lumen domain, what the determinants for engaging with a client or release into the membrane are, and how the EMC fits into the broader ER lumenal chaperone network.
 
-## Potential role of the EMC as a master regulator of membrane protein biogenesis as the basis for its pleiotropic phenotypes
+### Potential role of the EMC as a master regulator of membrane protein biogenesis as the basis for its pleiotropic phenotypes
 
 Why does the cell use a multifunctional EMC molecular machinery rather than specialized machinery for each of the functions encompassed by the EMC? Considering that the cell already has general machinery (Sec61 translocon) and tail-anchor insertase machinery (GET/TRC complex), we speculate that the EMC coordinates biogenesis of diverse membrane proteins. Several observations suggest broader roles of the EMC as an integrator of information sensing the protein and lipid environment and coordinating its multiple activities, including the regulating the biogenesis of membrane proteins. For example, the initial identification of the EMC included numerous genetic interactions with both protein and lipid synthesis factors in yeast (Jonikas et al., 2009) and these disparate interdependencies have been subsequently observed in numerous species including human EMC (Lahiri et al., 2014; Tang et al., 2017; Guna et al., 2018; Volkmar et al., 2019; Volkmar and Christianson, 2020). Also, several client proteins are enzymes or cofactors involved in multiple stages of lipid synthesis or trafficking, and this may provide a unifying explanation for the range of genetic interactions and co-essentiality observations reported to date (Guna et al., 2018; Shurtleff et al., 2018; Volkmar et al., 2019; Tian et al., 2019; Wainberg et al., 2019; Corradi et al., 2019; Volkmar and Christianson, 2020). Perhaps by facilitating the insertion of sterol synthesis protein SQS, the EMC allows for modulation of local membrane thickness and lipid composition to accommodate differences within the broad range of membrane proteins being synthesized. In this regard, one structural feature of particular interest is the EMC1 amphipathic brace, which resides adjacent to the lipid-filled cavity. This conserved feature sits within the interfacial membrane boundary, raising the possibility that it can modulate the lipid or protein composition of this cavity. Notably, several other membrane proteins involved in ER homeostasis, including Opi1 and Ire1, also contain amphipathic helices that have been proposed to sense the properties of the lipid bilayer (Volmer et al., 2013; Jacquemyn et al., 2017; Halbleib et al., 2017; Hofbauer et al., 2018; Cho et al., 2019). Future work will explore how the EMC overall, and the EMC1 brace helix in particular, govern client release into the membrane, interface with the local structure of the lipid bilayer, and play roles in specific client-lipid interactions.
 
@@ -150,123 +630,1036 @@ In addition to the three client classes we investigate here, it is clear that EM
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC1</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC034589</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC2</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC021667</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC3</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC022807</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC4</td>
+      <td>Genestrand (Eurofins, Germany)</td>
+      <td>Uniprot: Q5J8M3-1</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC5</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC033588</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC6</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC001409</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC7</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC104936</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC8</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC020250</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC9</td>
+      <td>NIH Mammalian Gene Collection</td>
+      <td>NCBI: BC002491</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hEMC10</td>
+      <td>Genestrand (Eurofins, Germany)</td>
+      <td>Uniprot: Q5UCC4-1</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC1</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P25574</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC2</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P47133</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC3</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P36039</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC4</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P53073</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC5</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P40540</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC6</td>
+      <td>Uniprot</td>
+      <td>Uniprot: Q12431</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC7</td>
+      <td>Uniprot</td>
+      <td>Uniprot: P39543</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>yEMC10</td>
+      <td>Uniprot</td>
+      <td>Uniprot: Q12025</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX458</td>
+      <td>Addgene</td>
+      <td>pX458</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP041</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>Cas9-sfGFP- EMC5 sgRNA3</td>
+      <td colspan="2">single guide KO system targeting EMC5 gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP077</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>Cas9-sfGFP-EMC1_ sgRNA3_sgRNA4</td>
+      <td colspan="2">dual guide KO system targeting EMC1 gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP080</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>Cas9-sfGFP-EMC2_ sgRNA4_sgRNA5</td>
+      <td colspan="2">dual guide KO system targeting EMC2 gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP083</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>Cas9-sfGFP-EMC3_ sgRNA1_sgRNA2</td>
+      <td colspan="2">dual guide KO system targeting EMC3 gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>SFFV-insert site- IRES-Puro-P2A-BFP</td>
+      <td colspan="2">parental vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP121</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>pTwist+Lenti+SFFV+ EMC1+IRES+Puro+ P2A+BFP+WPRE</td>
+      <td colspan="2">EMC1 covering plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP122</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>pTwist+Lenti+SFFV+ EMC3+IRES+Puro+ P2A+BFP+WPRE</td>
+      <td colspan="2">EMC3 covering plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP124</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>pTwist+Lenti+SFFV+ EMC5+IRES+Puro+ P2A+BFP+WPRE</td>
+      <td colspan="2">EMC5 covering plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP125</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>pTwist+Lenti+SFFV+ EMC2+IRES+Puro+ P2A+BFP+WPRE</td>
+      <td colspan="2">EMC2 covering plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP110</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>bAR1_mCherry_ P2A_GFP</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP111</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>TMEM97_mCherry_ P2A_GFP</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP136</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>GFP_P2A_mCherry_ SQS_TMD_opsintag</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_D31K</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_D31K</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_R69D</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_R69D</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_G71S</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_G71S</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_ hsEMC1_mut_ R76D_K80D</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_ R76D_K80D</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_T82M</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_T82M</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_T82A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_T82A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_A144T</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_A144T</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_H93D_E138D_N282K</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_H93D_ E138D_N282K</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_R275E_R404E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_ R275E_R404E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_G471R</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_G471R</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_F473Y_R487K</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_ F473Y_R487K</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_M483A_ R487H_Q491N</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_M483A_ R487H_Q491N</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_G868R</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_G868R</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_R881C</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_R881C</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC1_ mut_K951A_K957A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC1_mut_ K951A_K957A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_K18A_K21A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_ K18A_K21A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_R80A_R81A_ K90A_R112A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_R80A_ R81A_K90A_R112A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_K125E_R126D_K127E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_K125E_ R126D_K127E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_N137A_N167A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_ N137A_N167A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_E146A_E149A_Q150A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_E146A_ E149A_Q150A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_E168A_D170A_K173A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_E168A_ D170A_K173A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_E206A_E209A_D252A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_E206A_ E209A_D252A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_ mut_K248E_D252K_K255E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_K248E_ D252K_K255E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_mut_ R266A_Q269A_R273A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_R266A_ Q269A_R273A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC2_mut_ Q269A_E286A_E290A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC2_mut_Q269A_ E286A_E290A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_WT</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_WT</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_D9A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_D9A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_R13E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_R13E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_K42A_K43A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_ K42A_K43A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_E63K_D213K_E223K</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_E63K_ D213K_E223K</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_K70Y</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_K70Y</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_V118A_I122A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_ V118A_I122A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_N114D_N117D</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_ N114D_N117D</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_R180A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_R180A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_R59E_R62E_K216E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_R59E_ R62E_K216E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_R147E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_R147E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_F148L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_F148L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_M151L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_M151L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_I186V_I182V</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_ I186V_I182V</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC3_ mut_K244A_ H247A_E249A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC3_mut_K244A_ H247A_E249A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_WT</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_WT</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_A18L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_A18L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_D44K</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_D44K</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_D82A_R85A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_ D82A_R85A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_F22L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_F22L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_E75A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_E75A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_H19L_S23A_Q26L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_H19L_ S23A_Q26L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_K7A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_K7A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_K7E</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_K7E</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_R28A_R32A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_ R28A_R32A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_I63L</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_I63L</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKDP119_hsEMC5_ mut_F90A</td>
+      <td>Twist; available from the Weissman Lab</td>
+      <td>hsEMC5_mut_F90A</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse GAPDH Primary Antibody</td>
+      <td>Abcam</td>
+      <td>ab8245</td>
+      <td colspan="2">See Supplementary file 5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit TMEM97 primary</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PA-23003</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit FDFT1 Primary Antibody</td>
+      <td>Abcam</td>
+      <td>ab195046</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat BAP31 Primary Antibody</td>
+      <td>ThermoFisher Scientific</td>
+      <td>MA3-002</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit (KIAA0090) EMC1 primary antibody</td>
+      <td>Abcam</td>
+      <td>ab242112</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit TTC35 (EMC2) primary antibody</td>
+      <td>Proteintech</td>
+      <td>25443–1-AP</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit TM111 (EMC3) primary antibody</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#711771</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit EMC4 primary antibody</td>
+      <td>Abcam</td>
+      <td>ab184544</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit MMGT1 (EMC5) primary antibody</td>
+      <td>Bethyl Laboratories</td>
+      <td>A305-833A-M</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit (C19orf63) EMC10 primary antibody</td>
+      <td>Abcam</td>
+      <td>ab180148</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Goat anti-Mouse IgG Secondary Antibody</td>
+      <td>LI-COR Biosciences</td>
+      <td>925–32210</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 800CW Goat anti-Rabbit IgG Secondary Antibody</td>
+      <td>LI-COR Biosciences</td>
+      <td>926–32211</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fab DE4</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>LMV83</td>
+      <td colspan="2">LFAIPLVVPFYSHSALDVVMTQSPLSLPV TPGEPASISCRSSQTLMNRNGNNFLDW YVQKPGQSPQLLIYLGSNRAPGVPDRFS GSGSGTDFTLKISRLEVEDVGVYYCMQA LQTPRTFGQGTKVEIKRTVAAPSVFIFPP SDEQLKSGTASVVCLLNNFYPREAKVQW KVDNALQSGNSQESVTEQDSKDSTYSLS STLTLSKADYEKHKVYACEVTHQGLSSP VTKSFNRGEC-- MAQVQLQQWGAGLLKPSETLSLTCAVYG GSFSGYYWSWIRQPPGKGLEWIGEINHS GSTNYNPSLKSRVTISVDTSKKQFSLKLS SVTAADTAVYYCARFSYYGSGIYWGQGTL VTVSSASTKGPSVFPLAPSSKSTSGGTAA LGCLVKDYFPEPVTVSWNSGALTSGVHT FPAVLQSSGLYSLSSVVTVPSSSLGTQTYI CNVNHKPSNTKVDKKVEPKSCAAAHHH HHHGAAEQKLISEEDLNGAA-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fab DH4</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>LMV82</td>
+      <td colspan="2">LFAIPLVVPFYSHSALDVVMTQSPLSLPV TPGEPASISCRSSQTLMNRNGNNFLDW YLQKPGQSPQLLIYLGSNRAPGVPDRFS GSGSGTDFTLRISRVEPEDVGVYYCMQA LQTPSFGGGTKVEIRRTVAAPSVFIFPPS DEQLKSGTASVVCLLNNFYPREAKVQW KVDNALQSGNSQESVTEQDSKDSTYSL SSTLTLSKADYEKHKVYACEVTHQGLSS PVTKSFNRGEC-- MAQVQLQQWGAGLLKPSETLSLTCAVY GGSFSGYYWSWIRQPPGKGLEWIGEIN HSGSTNYNPSLKSRVTISVDTSKNQFSL KLSSVTAADTAVYYCARGLAGRGYYGSG SYLRWGQGTLVTVSSASTKGPSVFPLAP SSKSTSGGTAALGCLVKDYFPEPVTVSW NSGALTSGVHTFPAVLQSSGLYSLSSVV TVPSSSLGTQTYICNVNHKPSNTKVDK KVEPKSCAAAHHHHHHGAAE QKLISEEDLNGAA-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superose 6, 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>17517201</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>R1.2/1.3 200 and 300 mesh Cu holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>1210627</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BL21 Gold Star competent cells</td>
+      <td>Invitrogen</td>
+      <td>C602003</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-Flag agarose beads</td>
+      <td>Millipore</td>
+      <td>A2220</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EconoPac Chromatography Columns</td>
+      <td>Biorad</td>
+      <td>7321010</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>100 KD MW</td>
+      <td>EMD Millipore</td>
+      <td>UFC810024</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superose 6, 10/300 GL</td>
+      <td>Cytiva</td>
+      <td>29-0915-96</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>cOmplete EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>catalog No. 05056489001</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Beads</td>
+      <td>Biorad</td>
+      <td>1523920</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>R1.2/1.3 200 and 300 mesh Cu holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>1210627</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultrathin Carbon Film on Lacey Carbon Support Film, 400 mesh, Copper</td>
+      <td>Ted Pella</td>
+      <td>#01824</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FuGENE HD transfection reagent</td>
+      <td>Promega</td>
+      <td>E2312</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Palmitoyl-2-oleoyl-sn- glycero-3-PC (POPC)</td>
+      <td>Cayman Chemical</td>
+      <td>15102</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glyco-diosgenin (GDN)</td>
+      <td>Anatrace</td>
+      <td>GDN101</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>yeast extract total</td>
+      <td>Avanti Polar Lipids</td>
+      <td>190000 P-100mg</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl Hemisuccinate Tris Salt</td>
+      <td>Anatrace</td>
+      <td>CH210 5 GM</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>b-DDM</td>
+      <td>Anatrace</td>
+      <td>D310</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IPTG</td>
+      <td>GoldBio</td>
+      <td>I2481C5</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EX-CELL 420 Serum-Free Medium</td>
+      <td>Sigma-Aldrich</td>
+      <td>14420 C</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FreeStyle 293 Expression Medium</td>
+      <td>Thermo fischer</td>
+      <td>12338018</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>CRL-3022</td>
+      <td colspan="2">Mycoplasma negative</td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf9</td>
+      <td>Thermo Fischer</td>
+      <td>11496015</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>K562 crispri</td>
+      <td>Gilbert et al., 2014</td>
+      <td>K562 crispri</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Saccharomyces cerevisiae</td>
+      <td>Overexpressed EMC with yEMC5-linker- TEV-linker-3xFlag</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>LMV84</td>
+      <td colspan="2">BY4743 ---- MATa/alpha, his3∆0/his3∆0, leu2∆0/leu2∆0, LYS2/lys2∆0, met15∆0/MET15, ura3∆0/ura3∆0, emc1::NatMX:: TEF2pr-EMC1/EMC1, emc3:: KanMX::TEF2pr-EMC3/EMC3, emc4::his3(CG)::TEF2pr-EMC4/ EMC4, sop4::HphMx::TEF2pr- SOP4/SOP4, EMC2/emc2::NatMX:: TEF2pr-EMC2, emc5::EMC5-TEV- 3xFLAG::ura3(KL)/emc5::his3(CG):: TEF2pr-EMC5-TEV-3xFLAG::KanMX, EMC6/emc6::HphMX::TEF2pr-EMC6, YDR056c/ydr056c::leu2(CG):: TEF2pr-ydr056c</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Saccharomyces cerevisiae</td>
+      <td>Endogenous yEMC5- linker-TEV-linker-3xFlag</td>
+      <td>This study; available from the Weissman Lab</td>
+      <td>LMV85</td>
+      <td colspan="2">W303 ---- EMC5-3xF:ura - Linker-TEV- linker-3xFlag (GGSGSGENLYFQSGSGS DYKDDDDKDYKDDDDKDYKDDDDK)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CryoSPARC version 2.12.4.</td>
+      <td>Punjani et al., 2017</td>
+      <td>RRID:SCR_016501</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX Version 1.0</td>
+      <td>Goddard et al., 2018</td>
+      <td>RRID:SCR_015872</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX Version 1.17</td>
+      <td>Adams et al., 2011;</td>
+      <td>RRID:SCR_014224</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot Version 0.8</td>
+      <td>Emsley et al., 2010</td>
+      <td>RRID:SCR_014222</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.1</td>
+      <td>Kimanius et al., 2016; Zivanov et al., 2018</td>
+      <td>http://www2.mrclmb.cam.ac.uk/relion</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>RRID:SCR_017293</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
 Reagents used for experiments described and reagents made as part of this study are listed in a Key Resources Table listed as an appendix to this article file.
 
-## Cell line maintenance
+### Cell line maintenance
 
 K562 dCas9 KRAB cells were grown in RPMI 1640 (GIBCO) with 25 mM HEPES, 2 mM l-glutamine, 2 g/L NaHCO3 and supplemented with 10% (v/v) fetal bovine serum (FBS), 100 units/mL penicillin, 100 μg/mL streptomycin, 2 mM l-glutamine. HEK293T cells were grown in Dulbecco’s modified eagle medium (DMEM, GIBCO) with 25 mM d-glucose, 3.7 g/L NaHCO3, 4 mM l-glutamine and supplemented with 10% (v/v) FBS, 100 units/mL penicillin, 100 μg/mL streptomycin. All cell lines were grown at 37°C. All cell lines were periodically tested for Mycoplasma contamination using the MycoAlert Plus Mycoplasma detection kit (Lonza).
 
-## DNA transfections and virus production
+### DNA transfections and virus production
 
 Lentivirus was generated by transfecting HEK39T cells with standard fourth-generation packaging vectors using TransIT-LT1 Transfection Reagent (Mirus Bio). Media was changed 10 hr post-transfection. Viral supernatant was harvested 60 hr after transfection, filtered through 0.45 μm PVDF filters and frozen prior to transduction.
 
-## Knockout hEMC cell lines
+### Knockout hEMC cell lines
 
 A single and dual knockout guide system was developed in the pX458 backbone (Addgene plasmid # 48138) with guides targeting hEMC1, hEMC2, hEMC3, or hEMC5 (Key Resources table). Targeting guides were selected using the Broad’s guide selection tool (https://portals.broadinstitute.org/gpp/public/analysis-tools/sgrna-design). For the single hEMC5 knockout system, an hEMC5 targeting guide was cloned into pX458 by digesting with BbsI and ligating to annealed oligos for the hEMC5 sgRNA. For the dual knockout system, a four-step cloning process generated the final knockout plasmid: (1) Each of the two guides targeting the same locus were individually cloned into pX458. (2) Then pX458_sgRNA1 was digested with XbaI. (3) SgRNA2 cassette from pX458_sgRNA2 was PCR amplified with oligos containing overhangs spanning the XbaI cloning site and purified. (4) Finally, the final dual guide vector was generated by Gibson cloning (NEBuilder).
 
 To generate the hEMC knockout cell lines, K562 dCas9 KRAB cells were nucleofected with the respective hEMC knockout plasmids using Lonza SF Cell Line 96-well Nucleofector Kit (V4SC-2096). Two days post-nucleofection, GFP-positive cells were single cell sorted into 96-well plates using BD FACS AriaII. After colonies from single cells grew out, genomic DNA was isolated using QuickExtract (Lucigen), the sgRNA-targeted sites were PCR amplified and then NGS-sequenced via Genewiz’s EZ-Amplicon service. Sequencing data was analyzed and aligned to the respective reference alleles in the human genome. Clones whose alleles harbored only indel mutations for hEMC1, hEMC2, hEMC3, and hEMC5 (full knockouts) respectively were further validated on the protein level.
 
-## Dual fluorescent EMC client reporter cell lines
+### Dual fluorescent EMC client reporter cell lines
 
 Dual client reporters for TMEM97, ADRB1 (protein name: B1AR), and FDFT1 (protein name: SQS) were introduced lentivirally into each of the EMC1, EMC2, EMC3, and EMC5 knockout cell lines. TMEM97 and ADRB1 full-length sequences were used with a C-terminal tag -mCherry-P2A-GFP. The sequence for FDFT1 transmembrane domain (SQS378-410) was tagged N-terminally with GFP-P2A-mCherry- and an opsin tag on the C-terminus as used in a prior study (Guna et al., 2018). Three days post-transduction, GFP/mCherry-positive cells were sorted on BDAriaII. Sequences for these constructs are available in the Supplementary file 5.
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig9-v3.jpg)
 
-## Mutant EMC cell lines
+### Mutant EMC cell lines
 
 The EMC mutant genes were synthesized and cloned by Twist into pKDP119-SFFV-[insert site]-IRES-Puro-P2A-BFP. For hEMC subunit mutation details refer to the Key Resources Table, for sequences refer to Supplementary file 5. Mutant hEMC cell lines were generated by lentiviral introduction of the respective hEMC mutant subunit into the respective knockout cell lines (hEMC1, hEMC2, hEMC3, or hEMC5) containing the dual fluorescent reporters for each EMC client (pKDP110_ADRB1_mCherry_P2A_GFP, pKDP111_TMEM97_mCherry_P2A_GFP, or GFP_P2A_mCherry_FDFT1_TMD_opsintag). The expression of each fluorescent reporter was read out 6 days after puromycin selection in each of the hEMC mutant cell lines.
 
 ![Scheme 2.](https://cdn.elifesciences.org/articles/62611/elife-62611-fig10-v3.jpg)
 
-## Flow analysis
+### Flow analysis
 
 For each hEMC mutant cell line, 20,000 live cells were recorded on Attune NxT flow cytometer. FlowCal flow analysis package was used for analysis in Python. First, live cells were gated based on FSC/SSC. Then GFP (BL1-A) and mChery (YL2-A) were plotted for each mutant and control cell line. mCherry:GFP intensity ratios were calculated for individual cells in each cell line. Fluorescence ratios for each substrate in an hEMC mutant cell line were normalized to the mCherry:GFP ratio of the same substrate in the hEMC wild-type rescue cell line. Distributions of fluorescence ratios were plotted as histograms in Python using seaborn.
 
-## Fluorescent reporter statistical analysis
+### Fluorescent reporter statistical analysis
 
 We performed bootstrap estimates of the mean of normalized mCherry/GFP ratio from the FACS data. For bootstrapping, we performed 1000 iterations with 50 cells/iteration to fit normal distributions. We performed two separate one-sided T-tests at a p-value cutoff of 0.01 between each mutant and the respective subunit WT to test for significant decreases or increases in ratios based on bootstrapped estimates of the mean. These statistics are contained in the files ‘filtered_final_pvalues.01cutoff.lo.csv’ and ‘filtered_final_pvalues.01cutoff.hi.csv’ respectively. Statistics were generated for the EMC-independent membrane protein controls (‘stats.membrane.controls.lo’, ‘stats.membrane.controls.hi’) and for the mCherry-p2a-GFP control (‘.mcherry.p2a.gfp.control.lo’, ‘stats.mcherry.p2a.gfp.control.hi’). Values can be found in Supplementary file 2.
 
-## Western blotting
+### Western blotting
 
 Cell pellets were lysed using lysis buffer (20 mM Tris pH 7.5, 150 mM NaCl, 5 MgCl2, 1% Triton x-100, 1 mM DTT, 24 U/ml) Turbo DNase (Ambion). Clarified lysate was quantified and samples were boiled with 4x LDS sample (Thermo Fisher, NP0007) buffer for 5 min at 95°C. Samples were separated on 4–12% or 12% Bolt Bis-Tris Plus Gels (Invitrogen, NP0322PK2). Proteins were transferred onto nitrocellulose membranes using Bio-Rad Trans-Blot Turbo transfer system. Membranes were blocked in Odyssey Blocking Buffer (LI-COR, 927–50000) for an hour at room temperature. Blocked membranes were incubated with primary antibody diluted in TBST and incubated overnight at 4°C on a shaker. Primary antibodies were detected by incubating membranes with 1:10,000 dilution of IRDye-conjugated (LI-COR) secondary anti-mouse and anti-rabbit antibodies for 1 hr at room temperature. Blots were visualized using LI-COR imaging system. The primary antibodies used in this study are listed in the Key Resources table.
 
-## Yeast strains
+### Yeast strains
 
 Strain BY4741 and BY4742 were used as the wild-type parental strains for the creation of the yEMC overexpression strain. Yeast homologous recombination (Rothstein, 1991) was used to generate yeast strains. For the overexpression strain, the endogenous promotor for each yEMC subunit (yEMC1, yEMC2, yEMC3, yEMC4, yEMC5, yEMC6, yEMC7, yEMC10) were replaced with a TEF2 promoter. In addition, EMC5 was tagged at the C-terminus with linker-TEV-linker-3xFlag. Auxotrophic markers and drug selection markers in both BY4741 and BY4742 were employed to add this promoter modification to all these eight subunits and the two strains were crossed to create the resulting BY4743 strain used for immunoprecipitation. Endogenous EMC yeast strain was made using W303a wild-type parental background (leu2-3,−112; his3-11,−15; trp1-1; ura3-1; ade2-1; can1-100; MATa). Homologous recombination was used to integrate a linker-TEV-linker-3xFlag at the C-terminus of yEMC coding sequence. Genomic PCR was conducted to verify integration.
 
-## Design and purification of fragments antigen binding (Fab) DH4 and DE4
+### Design and purification of fragments antigen binding (Fab) DH4 and DE4
 
 Fabs were identified as described in these studies (Kim et al., 2011; Wu et al., 2012). Overexpressed yEMC solubilized in DDM as described above was biotinylated and streptavidin magnetic beads were used to capture yEMC, which was then subjected to a Fab phage library. Unbound Fabs were washed away and then binding Fabs were eluted and analyzed by ELISA. Two Fabs were identified binding yEMC, Fab DH4 and DE4.
 
-## Purification of DH4 and DE4 Fabs
+### Purification of DH4 and DE4 Fabs
 
 Plasmid with either Fab DH4 or DE4 were transformed into BL21 Gold Star cells and plated onto agarose plates with 2x YT + 2% glucose + Ampicillin. Cultures were inoculated from resulting colonies for overnight growth at 30°C into 2xYT + 2% glucose + Amp. In the morning dilute overnight culture to OD600 of 0.05 in 1L, in a 2.8 L flask of 2xYT + 0.1% glucose + Amp. Grow the culture at 180 rpm at 37°C shaker until OD600 of 0.6, then, switch to shaking at 19°C for 1 hr. Next, induce with 0.4 mM IPTG. Shake at 180 rpm at 19°C for 18–20 hr. Spin 1L cultures down at 3500 rpm in large Beckman Centrifuge at 4°C for 20 min in (8.1 rotor). Discard media and gently resuspend cell pellet in ice-cold 20 ml in Buffer 1 (0.2 M Tris pH 8.0, 0.5 mM EDTA, 0.5 M Sucrose) on ice. Transfer the resuspended cells from step 2 into two smaller JLA 25.5 centrifuge tubes. Add 20 mL of ice cold ddH2O with 2x protease inhibitor cocktail (Roche Complete Ultra, Millipore Sigma 5056489001) from step 3 to the resuspended pellets. Incubate at on ice for 1 hr occasionally swirling samples gently. Spin periplasmic fractions at 13,000 x g for 15 min, 4°C, rotor 25.50. Wash 500 µL Ni resin (Qiagen, Ni-NTA, 30210) per periplasmic fraction four times in Buffer 2 (50 mM Tris pH 8.0, 250 mM NaCl). Add MgCl2 and imidazole to a final concentration of 10 mM to each periplasmic fraction. Add beads to periplasmic fractions and nutate at 4°C for 2 hr. Spin down beads at 2000 x g, 10 min, 4°C. Transfer beads either to a 50-mL gravity column. Wash the beads with 20 column volumes of Buffer 3 (50 mM Tris pH 8.0, 500 mM NaCl, 20 mM Imidazole). Elute protein with three column volumes of Buffer 4 (50 mM Tris pH 8.0, 500 mM NaCl, 300 mM Imidazole). Analyze eluate by SDS-PAGE 4–12% Invitrogen (Invitrogen, NP0321PK2). Fabs as two bands run around 30 kDa in reducing conditions, or 50 kDa in non-reducing conditions. Dialyze eluate O/N in Dialysis cassette 10 kD molecular weight cutoff at 4°C against 150 mM KOAc, 20 mM HEPES pH 6.8.
 
-## Purification of overexpressed yeast EMC5-3xflag
+### Purification of overexpressed yeast EMC5-3xflag
 
 The OE-Emc5-3xflag yeast strain were grown in YEPD media in a 40 L fermenter, harvested and flash frozen in liquid nitrogen. Cell pellets were thawed and diluted in lysis buffer (50 mM HEPES pH 6.8, 150 mM KOAc, 2 mM MgOAc, 1 mM CaCl2, 0.2M Sorbital, 2x Protease Inhibitor). Bead beating (10 times → 1 min on, 2 min off) was used to lyse cells. For 25 g of cells, 0.1 mm cold beads were added and lysis buffer up to the top of the 50 mL canister. After lysis, beads were filtered and solution centrifuged at 10,000 xg for 10 min. Supernatants were ultracentrifuged at 42,000 RPM (Ti 45 rotor) for 2 hr. Supernatant was discarded. Membrane pellet was combined with the lipid layer, and resuspended in lysis buffer and then a precooled dounce homogenizer was used to dounce 20 times. Membranes were aliquoted and flash frozen in liquid nitrogen. On ice, 150 mL of solubilization buffer (50 mM HEPES pH 6.8, 150 mM KOAc, 2 mM MgOAc, 1 mM CaCl2, 15% glycerol, 1% b-DDM, 2x Protease Inhibitor) was added incrementally to 7.5 g of thawing membranes, nutated at 4°C for 1 hr in JA 25.5 rotor tubes, and centrifuged at 20,000 rpm for 45 min. Meanwhile 2.5 mL of αFLAG agarose beads (Millipore A2220) were rinsed in 50 mL of low-salt buffer (50 mM HEPES pH 6.8, 150 mM KOAc). Supernatant was added to αFLAG beads and nutated at 4°C for 2 hr. Resulting solution was applied over a glass column. After flowing through unbound solution, αFLAG beads were washed with 100 mL low-salt buffer, 100 mL high-salt buffer (50 mM HEPES pH 6.8, 300 mM KOAc, 0.05% b-DDM), and 100 mL low-salt buffer. αFLAG beads were resuspended in 10 mL of low-salt buffer and 300 µL of TEV (1.15 mg/mL) was added and nutated overnight at 4°C. Removed supernatant from beads by low-speed spin and applied over 500 µL of NiNTA beads equilibrated with low-salt buffer to remove excess TEV. Flow through glass column and collect supernatant. Using a 100 kD concentrator (Millipore, UFC910008) solution was concentrated to 2 mg/mL. Concentrated EMC protein was applied to the Akta Explorer Superose 6 Increase column (Cytiva, 29091596) for size exclusion chromatography in the size exclusion buffer (20 mM HEPES pH 6.8, 150 mM KOAc, 0.05% b-DDM). Fractions were evaluated by SDS-PAGE Coomassie stain and negative stain electron microscopy then EMC peak fractions were pooled and incubated with 2x molar excess of Fab, either Fab DH4 or Fab DE4, for 30 min on ice. Solution was applied to Akta Explorer Superose 6 Increase for size exclusion of Fab bound EMC. Resulting EMC-Fab fractions were evaluated by SDS-PAGE Coomassie stain and EMC-Fab peak fractions were pooled.
 
-## Purification and nanodisc reconstitution of endogenous yeast EMC5-3xflag
+### Purification and nanodisc reconstitution of endogenous yeast EMC5-3xflag
 
 Yeast was grown in rich media (YPAD) in a 65L fermenter until OD 2.6. Cell pellets were harvested and flash frozen in liquid nitrogen. Pellets were ground using three cycles in a French press. As above, the resulting solution was ultracentrifuged to separate membranes, dounced to homogenize, and flash frozen in liquid nitrogen. Thawed membranes were solubilized in 1% b-DDM (Anatrace, D310) nutating at 4°C for 1 hr then centrifuged to separate solubilized membranes from the pellet. Supernatant was applied to equilibrated αFLAG beads, nutated at 4°C for 1 hr, and applied over a disposable plastic column at 4°C. αFLAG beads were washed with low-salt buffer and high salt buffer. Then washed with low-salt buffer with b-DDM+CHS (Anatrace, CH210) (10:1) in place of b-DDM. αFLAG beads were then transferred to a 15-mL Eppendorf tube for TEC cleavage and nanodisc reconstitution.
 
 Bio-Beads SM-2 (Bio-Rad) were prepared ~400 µL biobeads, rinsing with EtOH, and then water four times. Yeast Extract Total (Avanti Polar Lipids, 190000 C-100mg) was prepared by transferring chloroform resuspended solution to a glass vial, drying the lipids into a film with nitrogen gas, drying in a vacuum desiccator overnight, and then solubilizing the lipids first in water and then in size exclusion buffer with DDM+CHS by bath sonication, aliquots stored at −20°C until use. A total of 200 µL of TEV protease (5 mg/mL) and 150 µL of 1 mg/mL Yeast Total Extract solubilized in b-DDM+CHS, at room temperature for 30 min. Then added MSP1D1, purified as described previously (Ritchie et al., 2009), to a ratio of 200:10:1 (Yeast total extract:MSP1D1:EMC), at 4°C for 10 min. Then activated Bio-Beads SM-2 (Bio-Rad), ~300 µL, were added and nutated overnight. On-bead reconstitution employed adapted from Laverty et al., 2019. In the morning, ~100 µL more Bio-Beads SM-2 (Bio-Rad) were added and 2x molar excess of FabDH4, nutated for another hour. Beads and solution applied to an EconoPac column (Bio-Rad). Flow through was collected and solution was applied to a 100 kD (Amicon) concentrator. Resulting concentrated EMC was applied to the Akta Explorer Superose 6 Increase column for size exclusion chromatography. Peak fractions were pooled for SDS-PAGE Coomassie stain, negative stain, and cryo-EM evaluation. Key reagents used are provided in the Key Resource Table.
 
-## Cryo-EM sample preparation and data collection for yEMC
+### Cryo-EM sample preparation and data collection for yEMC
 
-## Overexpressed EMC + Fab DE4 in b-DDM
+#### Overexpressed EMC + Fab DE4 in b-DDM
 
 Following size exclusion sample was prepared for cryo-electron microscopy. A total of 3 µL of sample (0.1 mg/mL EMC + Fab DE4 in 20 mM HEPES pH 6.8, 150 mM KOAc, 0.05% b-DDM) was applied to the grid, incubated for 10 s, then blotted with no offset for 6.5 s and plunge frozen in liquid ethane using a Vitrobot Mark III at 5°C, Whatman #1 filter paper, and 100% humidity. Protein was frozen on glow discharged Ultrathin Carbon Film on a Lacey Carbon Support Film (Ted Pella, 01824) and stored under liquid nitrogen until imaging. This dataset was collected on the 300 kV Technai Polara at UCSF with a 30 μm C2 aperture, 100 μm Objective aperture, and K2 Summit detector operated in super-resolution mode. 1536 micrographs were collected using SerialEM (Mastronarde, 2005) at a magnification of 31,000X (0.6078 Å/ super resolution pixel) as dose-fractionated stacks of 40 frames x 0.2 s exposures (1.42 e-/Å2) for a total dose of ~56.85 e–/Å2 (Table 1).
 
-## Overexpressed EMC + Fab DH4 in b-DDM
+#### Overexpressed EMC + Fab DH4 in b-DDM
 
 Following size exclusion sample was prepared for cryo electron microscopy. A total of 3 µL of sample (0.1 mg/mL EMC + Fab DH4 in 20 mM HEPES pH 6.8, 150 mM KOAc, 0.05% b-DDM) was applied to the grid, incubated for 10 s, then blotted with no offset for 7 s and plunge frozen in liquid ethane using a Vitrobot Mark III at 4°C, Whatman #1 filter paper, and 100% humidity. Protein was frozen on glow discharged Ultrathin Carbon Film on a Lacey Carbon Support Film (Ted Pella 01824). This dataset was collected at the HHMI Janelia Research Campus on Titan Krios 2, a 300 kV microscope equipped with a 50 μm C2 aperture, 70 μm objective aperture, and K2 Summit detector operated in super-resolution mode. A total of 3357 micrographs were collected using automated SerialEM (Mastronarde, 2005) collection with defocus range set between −1 and −3 μm at a magnification of 22,500X (0.655 Å/ super resolution pixel) as dose-fractionated stacks of 50 frames x 0.2 s exposures (1.165 e-/Å2) for a total dose of ~58.3 e–/Å2 (see Table 1).
 
-## Endogenous EMC + Fab DH4 in MSP1D1-yeast total extract nanodisc
+#### Endogenous EMC + Fab DH4 in MSP1D1-yeast total extract nanodisc
 
 Following size exclusion sample was prepared for cryo electron microscopy. Four µL of sample (~0.8 mg/mL EMC + Fab DH4 in nanodisc in 20 mM HEPES pH 6.8, 150 mM KOAc, 0.05% b-DDM) was applied to the grid from the left side, then blotted with no offset for 2.5 s, then another 4 µL of sample was applied to the right side of the grid (without glow discharge) and blotted for 3.5 s, and plunge frozen in liquid ethane using a Vitrobot Mark IV at 4°C, Whatman #1 filter paper, and 100% humidity. Protein was frozen on R 1.2/1.3 grids with 300 Au mesh (Quantifoil, Germany). This dataset was collected at UCSF on the Titan Krios 2, a 300 kV microscope equipped with a 70 μm C2 aperture, 100 μm objective aperture, and K3 detector operated in CDS mode. 5949 micrographs were collected using automated SerialEM (Mastronarde, 2005) collection with defocus range set between −0.8 and −2 μm at a magnification of 105X (0.4265 Å/ super resolution pixel) as dose-fractionated stacks of 100 frames x 0.06 s exposures (0.67 e-/Å2) for a total dose of ~67 e–/Å2 (see Table 1).
 
-## Image analysis and 3D reconstruction for yEMC
+### Image analysis and 3D reconstruction for yEMC
 
-## Overexpressed EMC + Fab in b-DDM
+#### Overexpressed EMC + Fab in b-DDM
 
 Image processing schematic (Figure 2—figure supplement 1) and Table 1 have additional details. All dose-fractionated image stacks were corrected for motion artefacts, 2x binned in the Fourier domain, and dose-weighted using MotionCor (Li et al., 2013) for the DDM datasets, resulting in one dose-weighted and one unweighted integrated image per stack with pixel sizes of 1.22 Å (DDM - Polara) or 1.31 Å (DDM – Janelia Krios). The parameters of the Contrast Transfer Function (CTF) were estimated using GCTF-v1.06 (Zhang, 2016) and the motion-corrected but unweighted images. For each dataset, ~1000 particles per dataset were manually selected and averaged in 2D using RELION 2.0 (Kimanius et al., 2016). The resulting class sums were then used as templates for automated particle picking using Gautomatch-v0.55 (Zhang, 2016), followed by extraction in RELION 2.0. Five rounds of 2D classification were performed to eliminate ice contamination, particles near carbon edges, and 2D class without visible secondary structure features. Subsequent particles were subjected to 3D auto-refine in Relion 2.0. The Polara dataset was processed providing a reference model created in Spider (Shaikh et al., 2008) roughly mimicking the dimensions seen in 2D projections, then a second round was run using the resulting volume before two rounds of 3D classification without alignments. The resulting subset of particles were subjected to 3D auto-refine and then 3D classification with local alignments. The best 83,599 particles were then subjected to 3D refinement resulting in a 3D volume with ~8 Å reported resolution, which was rescaled and low-pass filtered for use as the reference for the DDM Krios dataset. 3D classification without alignments, 3D refinement, 3D classification with local alignments, and 3D auto refinement were performed resulting in a ~ 7 Å structure composed of 170,186 particles. Both resulting reconstructions overlay with one another, despite having Fab DH4 in one sample and DE4 in the other. Furthermore, they both displayed a severe orientation bias, and 3D reconstructions appeared streaky.
 
 Particles from both datasets were re-extracted and scaled to a common pixel size of 1.35 Å and box size of 266. The combined dataset was subjected to two rounds of 3D refinement to form a consensus structure at ~6.8 Å all conducted in Relion 2.0. These particles were then subjected to 3D refinement in THUNDER (Hu et al., 2018) using soft-edged mask. THUNDER produced a resulting 3D reconstruction that visually appeared less distorted along the axis of overrepresented views and resulted in a ~ 4.8 Å consensus structure. Postprocessing was done in Relion 3.0 resulting in a ~ 4.3 Å sharpened map and output was used to generate the FSC plot (Figure 2—figure supplement 1). Molecular graphics and analyses were performed with the UCSF Chimera package (Pettersen et al., 2004) and Coot 0.8.7 and Coot 0.9 (Emsley and Cowtan, 2004; Emsley et al., 2010). Local resolution was computed by inputting mask and half maps into Cryosparc two local resolution (Stagg et al., 2014; Punjani et al., 2017; Punjani et al., 2019) and visualizing the resulting map and scaling in UCSF Chimera.
 
-## Endogenous EMC + Fab DH4 in MSP1D1-yeast total extract nanodisc
+#### Endogenous EMC + Fab DH4 in MSP1D1-yeast total extract nanodisc
 
 All dose-fractionated image stacks were corrected for motion artefacts, 2x binned in the Fourier domain, and dose-weighted using MotionCor2 (Zheng et al., 2017) using Focus (Biyani et al., 2017) resulting in a 2x binned pixel size of 0.835 Å (nanodisc – UCSF Krios). The parameters of the Contrast Transfer Function (CTF) were estimated using GCTF-v1.06 (Zhang, 2016) and the motion-corrected but unweighted images. Data were then split into five groups of 1000 micrographs for processing until they were combined in 3D. Roughly ~1000 particles per subset were manually selected and averaged in 2D using RELION 3.0 (Zivanov et al., 2018) for the nanodisc dataset. The resulting class sums were then used as templates for automated particle picking using Autopick in Relion 3.0, followed by extraction and one round of 2D classification per subset to remove ice contamination. The resulting subsets of particles were subject to 3D refinement. Combining the RELION star files these particles were imported into Cryosparc 2.0 (Punjani et al., 2017; Punjani et al., 2019) along with a reference model. These data were subjected to non-uniform homogenous refinement, a round of four class 3D heterogeneous refinement, another round of non-uniform refinement for the best class (roughly 1.2 million particles), non-uniform homogeneous refinement, a round of two class 3D heterogeneous refinement, and another non-uniform homogeneous refinement for the best class (roughly 500,000 particles). These were then exported to RELION 3.0 using PyEM (Asarnow et al., 2019). 3D Classification was performed with local alignments, then CTF refinement of the best class (230,528 particles) resulting in a ~ 3.2 Å final reconstruction. This was post-processed in both RELION 3.0 and using phenix.autosharpen, both resulting maps were used for model building.
 
-## Model building and refinement of yEMC in nanodiscs
+### Model building and refinement of yEMC in nanodiscs
 
 Structural biology applications used in this project were compiled and configured by SBGrid (Morin et al., 2013). The yeast EMC structure was built de novo using Coot (version 0.8.7 and 0.9) and UCSF ChimeraX (Goddard et al., 2018). Visible secondary structure was built by hand for the entire structure using overlays of the yEMC detergent consensus map as well as the yEMC nanodisc unsharpened and sharpened map. Starting with the best resolved transmembrane helices, sequence was placed for each of the predicted transmembrane helices, using TMHMM (Krogh et al., 2001), in the yEMC proteins. Visual inspection for landmark residues (tryptophan, tyrosine, leucine, and proline) in the sequences that correlated with the position of well densities as well as fit correlation in UCSF Chimera was computed to assign identities for yEMC1, yEMC3, yEMC5, and yEMC6. Connectivity between the EMC1 assigned helix to the lumenal domain was used to start assigning sequence for the lumenal portion of EMC1. Secondary structure prediction was computed for all yEMC proteins using Phyre2 (Kelley et al., 2015) and Quick2D, a tool within the Max-Plank Institute for Developmental Biology Bioinformatics Toolkit that visualizes several different secondary structure predictors (Jones, 1999; Cuff and Barton, 2000; Ouali and King, 2000; Rost, 2001; Lupas et al., 1991; Jones et al., 1994; Ward et al., 2004; Peng et al., 2006; Obradovic et al., 2005). Secondary structure prediction was used to check and guide sequence assignment of beta strands and helices. Next several homology models were computed and overlain for yEMC2, with a predicted TPR structural domain, using Robetta (Raman et al., 2009; Song et al., 2013), I-TASSER (Zhang, 2008; Roy et al., 2010; Yang et al., 2015), Phyre2 (Kelley et al., 2015), and RaptorX (Källberg et al., 2012). These were used in addition to secondary structure prediction to guide sequence assignment, loop building, and helical packing. Fab DH4 starting structure was computed using Phyre2 1-to-1 threading against a crystal structure of a monoclonal Fab (PDB 1M71, Vyas et al., 2002). EMC3, EMC5, and EMC6 were built off of the transmembrane helices using sphere refinement, real space refinement, regularization, and visual monitoring of the Ramachandran plot in Coot. EMC7 and EMC10 both form beta sandwich folds on the exterior of the EMC1 lumenal domain, beta strand sequence was placed for both in both densities, position of aromatic residues and loop length differed between the two allowing assignment of each. After building EMC1-3, EMC5-7, and EMC10, there remained several transmembrane helices and a beta strand fitted into the lumen but not connected to EMC1, EMC7, or EMC10. The resolution of the lumenal domain is better than 3 Å in most parts allowing for sequence placement of the EMC4 C-terminus and C-terminal transmembrane helix. The connectivity of the transmembrane helix to the cytoplasmic domain was not resolved. However, there was an additional poorly resolved short helix and loop density in the cytoplasmic domain which was assigned to EMC4.
 
 Two poorly resolved transmembrane helices remained, however, due to the fact they did not have clear connectivity to any built strand, poly alanine alpha helices were built in but not assigned to a yEMC protein (Figure 5—figure supplement 5). EMC4 had density in the cytoplasmic domain as well as the lumenal domain, suggesting that it has either one or three transmembrane passes. EMC7 and EMC10 were predicted to have transmembrane helices, however, the connection between the lumenal densities and those predicted transmembrane helices was not clear. Additional density that was not built into was visualized in UCSF ChimeraX (Goddard et al., 2018) and allowed for subsequent assignment of several glycosylated residues and one POPC molecule. Each subunit was built in a separate pdb file and subjected to iterative rounds of phenix.real_space_refine (Adams et al., 2011; Liebschner et al., 2019) into segmented maps preceded and followed by adjustment in Coot. Manual assignment of secondary structure restraints was used and improved during Phenix refinement. Once all of the well-resolved secondary structure was assigned to yEMC subunits, PDBs were combined and subjected to iterative rounds of phenix.real_space_refine (Adams et al., 2011; Afonine et al., 2018; Liebschner et al., 2019) in the unsharpened and then sharpened maps. Loops were built back where the connectivity was clear and then refined again in Phenix and Coot. PDBs were prepared for refinement steps using phenix.reduce to add hydrogens throughout refinement steps, ReadySet to generate cif restraints, and Phenix PDB preparation tool for creating mmCIF files for deposition. Representative regions of the model as well as the map-to-model FSC can be found in Figure 2—figure supplement 5. Model for the yEMC nanodisc sample was used to generate reference model restraints for phenix real space refinement of yEMC DDM model.
 
-## Cloning and expression constructs for hEMC
+#### Cloning and expression constructs for hEMC
 
 A modified version of the biGBac (Weissmann et al., 2016) multi-gene cloning method was combined with the BacMam (Goehring et al., 2014) mammalian expression system to allow for recombinant production of human EMC (hEMC). hEMC subunits were individually inserted into pEG, with EMC5 bearing a C-terminal Flag-tag. To amplify gene-expression cassettes (GEC) from pEG, original forward primers from biGBac were used in combination with modified reverse primers bearing complementarity downstream of the SV40 terminator sequence. GECs were inserted into pBIG1a-e vectors as follows: pBIG1a (EMC1 - Uniprot code Q8N766-1), pBIG1b (EMC4 – Q5J8M3-1; EMC5-Flag – Q8N4V1-1, which encodes DYKDDDDK immediately after R131; EMC6 – Q9BV81), pBIG1c (EMC2 – Q15006; EMC3 – Q9P0I2-1; EMC7 – Q9NPA0), pBIG1d (EMC8 – O43402-1; EMC9 – Q9Y3B6), pBIG1e (EMC10 – Q5UCC4-1). These were subsequently combined into pBIG2abcde to yield a single expression vector containing all 10 hEMC subunits. Bacmid was generated in DH10 EMBacY E. coli and subsequently transfected into Sf9 insect cells using FuGENE (Promega) reagent. Virus was amplified in Sf9 cells up to P3 and virus supernatant sterilized by filtration.
 
-## hEMC expression, purification, and nanodisc reconstitution
+#### hEMC expression, purification, and nanodisc reconstitution
 
 Recombinant hEMC was expressed by baculovirus transduction of human embryonic kidney (HEK) 293S GnTI- cells grown in suspension. Cells were maintained at 37°C in Freestyle 293 Expression Medium (Thermo) and expanded with home-made suspension medium (Chaudhary et al., 2012) in 2 L shaker flasks. For expression of hEMC, 10% (v/v) P3 virus was added to 800 mL of HEK culture at a cell density >3×106. 16 hr post-transduction, 10 mM butyrate was added and the temperature reduced to 30°C. Cells were harvested 48 hr later and stored frozen at −80°C.
 
 For purification, 15–20 g of cell pellet was thawed and resuspended in 60–80 mL Lysis Buffer containing 50 mM ammonium citrate pH 6.0, 150 mM sodium chloride, 0.001 mg/mL Benzonase, EDTA-free protease inhibitor cocktail (1 tablet per 50 mL of buffer), and lysed by Dounce homogenization on ice (50 strokes). Glyco-diosgenin (GDN, Anatrace) was added to the lysate at 2% (w/v) and cellular membranes solubilized for 3 hr at 4°C under constant stirring. Insolubilized material was removed by centrifugation at 100,000 x g, supernatant incubated with 2 mL M2 Flag-affinity resin in-batch for 2 hr at 4°C. The resin was poured into a column and unbound proteins washed away with 25 column volumes (CV) of Wash Buffer containing 20 mM ammonium citrate pH 6.0, 150 mM sodium chloride, 0.01% (w/v) GDN. Bound hEMC was eluted in 10 CV Wash Buffer containing 0.3 mg/mL Flag peptide and concentrated to <500 µL using centrifugal concentration filters with 100 kDa cut—off (Amicon). Sample was polished using size-exclusion chromatography (SEC) on a Superose 6 Increase 10/300 GL column (GE Healthcare) with Running Buffer containing 10 mM ammonium citrate pH 6.0, 100 mM sodium chloride, 0.25 mM TCEP, 0.01% (w/v) GDN. Peak fractions containing hEMC were pooled, concentrated to ~3 mg/mL and used immediately for cryo-EM grid preparation. hEMC in nanodiscs composed of MSP1D1 scaffold protein and 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphatidylcholine (POPC) was reconstituted following Flag-affinity chromatography. The MSP1D1 expression vector was a gift from Franz Hagn (TUM, Germany) and the scaffold protein purified from E. coli following a published protocol (Hagn et al., 2018). Prior to reconstitution, hEMC purified by Flag-affinity chromatography was mixed with MSP1D1 and POPC (solubilized as 25 mM stock in 5% n-dodecyl β-D-maltoside) in a 1:4:50 ratio and this mixture incubated on ice for 2 hr. Nanodisc reconstitution was achieved by incubation with 0.5–1 mL Bio-Beads SM-2 (Bio-Rad) for 16 hr at 4°C under constant rotation. The liquid phase was aspirated, concentrated to <500 µL and injected onto a Superose 6 s column with buffer containing 10 mM ammonium citrate pH 6.0, 100 mM sodium chloride, 0.25 mM TCEP, to separate nanodisc-embedded hEMC from empty nanodiscs. Peak fractions were pooled and concentrated to ~2 mg/mL for immediate cryo-EM grid preparation.
 
-## Cryo-EM sample preparation and imaging for hEMC
+#### Cryo-EM sample preparation and imaging for hEMC
 
 Four µL of freshly purified hEMC (in detergent or nanodisc) was applied to glow discharged copper Quantifoil holey carbon grids (R1.2/1.3 300 mesh) at 100% humidity and 4°C in a Vitrobot Mark IV (Thermo) and incubated for 30 s. Excess liquid was blotted away with filter paper (blot force 4–6, blot time 4 s) and the grid plunge-frozen into liquid ethane. Samples were imaged on a FEI Titan Krios microscope operating at 300 kV, equipped with a post-column GIF and a K3 direct detector operating in counting mode. Images were recorded at a nominal magnification of 105,000x (0.8512 Å/pixel at the specimen level) for hEMC in nanodiscs or 81,000x (1.094 Å/pixel at the specimen level) for hEMC in detergent, with target defocus ranging between 0.7 and 2.8 µm and total exposure of ~70 e/Å2 using SerialEM (Mastronarde, 2005). On-the-fly motion correction, CTF estimation and templated particle auto-picking were performed using a pipeline implemented in Focus (Biyani et al., 2017).
 
-## Cryo-EM data processing for hEMC in detergent
+#### Cryo-EM data processing for hEMC in detergent
 
 Preprocessing in Focus included dose-weighted motion correction using Motioncor2 (Zheng et al., 2017), CTF estimation using Gctf (Zhang, 2016) and templated autopicking using Gautomatch (Zhang, 2016). The autopicking template originated from a reconstruction of hEMC in GDN micelles, with data acquired on a K2 (Gatan) direct electron detector (operated in counting mode) under liquid nitrogen conditions using a Glacios microscope (Thermo) operated at 200 kV. 3713 micrographs with a maximal resolution estimate better than 5 Å were imported into Relion 3.0 (Zivanov et al., 2018), from which ~ 3.35 million particles were extracted applying fourfold binning. These were subjected to three rounds of 2D classification and two rounds of 3D classification (using the reconstruction obtained from the 200kV dataset as reference), followed by 3D autorefinement. This reconstruction was used as initial model for three rounds of 3D classification of the original ~3.35 million particles (first round: K = 10, T = 10; second round: K = 10, T = 10; third round: K = 3, T = 16), yielding a set of 144,222 particles. This set was re-extracted at full pixel size, followed by masked 3D autorefinement, producing a reconstruction at 3.77 Å overall resolution. Application of non-uniform refinement in cryoSPARC (Punjani et al., 2017; Punjani et al., 2019) further improved the map quality and overall resolution to 3.60 Å.
 
-## Cryo-EM data processing for hEMC in nanodiscs
+#### Cryo-EM data processing for hEMC in nanodiscs
 
 Micrographs were preprocessed using Focus in a similar manner as for hEMC in detergent. 9164 micrographs with a maximal resolution estimate better than 5 Å were imported into Relion 3.0, from which ~ 5.9 million particles were extracted applying fourfold binning. These were subjected to three rounds of 3D classification (using hEMC in GDN as reference for the first round), after which 386739 particles were kept and re-extracted to full pixel size. Particles were aligned using global angular search 3D classification (K = 1, T = 4) before one further round of 3D classification with a soft mask and skipping alignment (K = 6, T = 8), to isolate a set of 177560 homogeneous hEMC particles. Masked 3D autorefinement of this particle set yielded a map at 3.6 Å overall resolution. Implementation of cryoSPARC non-uniform refinement led to a consensus map at 3.4 Å global resolution. To aid de novo model building of cytoplasmic and luminal domains, these parts were subjected to masked focused classification (K = 5, T = 8), 3D autorefinement and post-processing in Relion, yielding improved maps at 3.4 Å and 3.2 Å, respectively. To obtain highest quality maps of the transmembrane domains, the 177560 particles from consensus refinement were processed using Sidesplitter (Ramlaul et al., 2020), producing a 3.3 Å global map after Relion post-processing, where transmembrane helix pitch and side chains were well resolved and allowed for unambiguous sequence assignment. The final particle set was further subjected to 3D variability analysis (Punjani and Fleet, 2020) in cryoSPARC, revealing the presence or absence of the EMC7 lumenal domain between the EMC1 beta-propellers. Heterogeneous refinement, using a map from 3D variability analysis containing stronger EMC7 density as reference, allowed for further sub-classification of the consensus particle set. Non-uniform refinement of the class containing stronger EMC7 density produced a map at 3.5 Å global resolution, which was subsequently used to build an EMC7 model.
 
-## Model building and refinement of hEMC in nanodiscs and detergent
+#### Model building and refinement of hEMC in nanodiscs and detergent
 
 Given the higher quality hEMC nanodisc map compared to the detergent map, the former was used for de novo model building in Coot (Emsley and Cowtan, 2004; Emsley et al., 2010). Focused luminal and cytoplasmic, as well as Sideplitter maps, permitted assignment of amino acid sequence throughout all parts of hEMC. Inspection of structural homology and secondary structure predictions for the hEMC subunits produced via HHpred and Quick2D servers (Zimmermann et al., 2018) predicted the luminal domain of EMC1, the largest hEMC subunit, to consist of two beta-propellers. EMC7 and EMC10 are predicted to feature beta-sandwich structures in the lumen. A final missing beta-strand of the EMC1 membrane proximal propeller could be assigned to the luminal C-terminus of EMC4, which forms a parallel sheet with EMC1 residues 668–674. Almost all EMC2 is predicted to form an alpha-solenoid structure harboring several TPR motifs. Analysis of EMC8 and EMC9 amino acid sequences revealed structural homology to CSN5 (deneddylase subunit of the CSN complex) and Rpn11 (deubiquitinase subunit of the 19S proteasomal regulatory particle) peptide hydrolase folds. The globular density sitting on the distal face of the EMC2 solenoid, facing away from the rest of the complex, was modeled with the EMC8 sequence, which shares ~45% amino acid sequence identity with EMC9. Additional helical density sitting sideways on top of the EMC2 solenoid could be modeled as two cytoplasmic helices of EMC3 as well as the extended, partially helical meander of the EMC3 C-terminus. Beta-strand-like density on the EMC8 surface, commonly occupied by deubiquitinase substrate peptides, was assigned to the extreme N-terminus of EMC4, with a further downstream part of this cytoplasmic domain snaking along EMC2 and EMC3 toward the transmembrane part of hEMC.
 
@@ -276,7 +1669,7 @@ Model refinement was performed using real-space refinement in Phenix (Adams et a
 
 The refined hEMC nanodisc model was subsequently docked into the hEMC detergent map, revealing a relative rotation of the entire lumenal domain. The fitted model was manually adjusted in Coot (Emsley and Cowtan, 2004; Emsley et al., 2010) and refined using Phenix real-space refinement (Adams et al., 2011). Different masking strategies failed to produce stronger density for the EMC7 lumenal domain in the hEMC detergent maps, despite EMC7 levels being comparable to the other hEMC subunits in subsequent mass spectrometry analysis. EMC7 thus remains absent from our hEMC detergent model, perhaps due to conformational heterogeneity.
 
-## Mass spectrometric analysis of purified hEMC samples in detergent or nanodiscs
+#### Mass spectrometric analysis of purified hEMC samples in detergent or nanodiscs
 
 GDN solubilized or nanodisc reconstituted hEMC purified by Flag-affinity chromatography and SEC was subjected to mass spectrometric analysis to assess hEMC subunit abundance. For reduction and alkylation of the proteins, proteins were incubated with SDC buffer (1% Sodiumdeoxycholate, 40 nmM 2-Cloroacetamide (Sigma-Aldrich), 10 mM tris(2-carboxyethyl) phosphine (TCEP; PierceTM, Thermo Fisher Scientific) in 100 mM Tris, pH 8.0) for 20 min at 37°C. Before digestion, the samples were diluted 1:2 with MS grade water (VWR). Samples were digested overnight at 37°C with 1 µg trypsin (Promega).
 
@@ -288,10 +1681,10 @@ Peptides were loaded in buffer A (0.1% (v/v) Formic acid) at 250 nL/min and perc
 
 Raw data were processed using the MaxQuant computational platform (Cox and Mann, 2008) with standard settings applied. Shortly, the peak list was searched against the reviewed human Uniprot database with an allowed precursor mass deviation of 4.5 ppm and an allowed fragment mass deviation of 20 ppm. MaxQuant by default enables individual peptide mass tolerances, which was used in the search. Cysteine carbamidomethylation was set as static modification, and methionine oxidation and N-terminal acetylation as variable modifications. The iBAQ algorithm was used for calculation of approximate abundances for the identified proteins (Schwanhäusser et al., 2011) which normalizes the summed peptide intensities by the number of theoretically observable peptides of the protein.
 
-## Sequence alignments
+### Sequence alignments
 
 T-coffee PSI-Coffee extension (Notredame et al., 2000) was used to compute sequence alignments between yEMC, hEMC, and homologous proteins (Figure 1—figure supplements 6–7, Figure 3—figure supplement 3, Figure 5—figure supplement 3). Outputs of these alignments were visualized in Jalview (Waterhouse et al., 2009) for figure creation and colored by ClustalX convention.
 
-## Figure and video creation
+### Figure and video creation
 
 All figures were assembled and edited in Adobe Illustrator. Figure 1 and Figure 1—figure supplement 4 were created using BioRender. All the visualization, structure figures, and structure videos were made using UCSF ChimeraX 1.0 (Goddard et al., 2018) and UCSF Chimera 1.14 (Pettersen et al., 2004). Flow cytometry plots were generated in Python and labeled in Adobe Illustrator.

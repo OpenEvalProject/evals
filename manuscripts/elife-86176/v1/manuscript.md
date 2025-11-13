@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05krs5044 Department of Computer Science, University of Sheffield Sheffield United Kingdom
-2. https://ror.org/05krs5044 Sheffield Neuroscience Institute, University of Sheffield Sheffield United Kingdom
-3. https://ror.org/01sf06y89 School of Natural Sciences, Macquarie University North Ryde Australia
+1. Department of Computer Science, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+2. Sheffield Neuroscience Institute, University of Sheffield Sheffield United Kingdom ([ROR:05krs5044](https://ror.org/05krs5044))
+3. School of Natural Sciences, Macquarie University North Ryde Australia ([ROR:01sf06y89](https://ror.org/01sf06y89))
 
 † Corresponding author
 
@@ -35,13 +35,154 @@ We individually trained 20 honey bees (Apis mellifera) on a colour discriminatio
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86176/elife-86176-fig1-v1.jpg)
 
-**Figure 1.:** (A & B) Each bee was given 18 training trials in which she could choose between two different colours: one rewarded and the other punished. The bee was free to select each colour and return to the hive when satiated marking the end of a trial. Stimuli positions in the arena were changed in each trial in a pseudo-random manner. Stimuli were 2 cm diameter-coloured disks on a small platform (5 cm tall). On the top of each colour was placed either 10 μl reward (50% sucrose) or punishment (quinine) in training, or distilled water in tests. Two different colours, four disks of each colour, were presented in each training trial and test. Five different colours were used in the training. The colours differed in the proportion of training bouts in which they offered reward and punishment (rewarded at 100, 66, 50, 33, and 0% of training trials). Two groups of bees were trained with different likelihoods of reward and punishment from each colour (see Materials and methods section and Figure 1—source data 1). (C) Following training, the bee was given three unreinforced tests where the positive or negative reinforcements were replaced with distilled water. Bees’ responses were analysed from video recordings of the first 120 s in the flight arena. In the easy colour discrimination test, bees were presented with three pairs of the 100% and 0% rewarded colours (blue and green). In the reduced reward likelihood test, bees were examined with 66% and 33% rewarded colours (yellow and orange). In the reduced evidence test. bees were given two colours intermediate between green and blue (D & E) Examples of flight paths showing the inspection activity of a bee during the easy discrimination test in accepting blue (D) and rejecting green (E). Each black line on the flight path corresponds to the bee’s body orientation in a single video frame with 4ms intervals between frames. Line colour: flight speed 0.0–0.5 m/s (See Video 1).Figure 1—source data 1.Tables show the number of bees’ correct and incorrect choices to the high and low rewarded stimuli during two different sequences of training trials were used (A: Protocol 1; B: Protocol 2). The blue cells indicate the number of reward bees received, whereas the red cells indicate the number of punishment bees received.
+**Figure 1.:** (A & B) Each bee was given 18 training trials in which she could choose between two different colours: one rewarded and the other punished. The bee was free to select each colour and return to the hive when satiated marking the end of a trial. Stimuli positions in the arena were changed in each trial in a pseudo-random manner. Stimuli were 2 cm diameter-coloured disks on a small platform (5 cm tall). On the top of each colour was placed either 10 μl reward (50% sucrose) or punishment (quinine) in training, or distilled water in tests. Two different colours, four disks of each colour, were presented in each training trial and test. Five different colours were used in the training. The colours differed in the proportion of training bouts in which they offered reward and punishment (rewarded at 100, 66, 50, 33, and 0% of training trials). Two groups of bees were trained with different likelihoods of reward and punishment from each colour (see Materials and methods section and Figure 1—source data 1). (C) Following training, the bee was given three unreinforced tests where the positive or negative reinforcements were replaced with distilled water. Bees’ responses were analysed from video recordings of the first 120 s in the flight arena. In the easy colour discrimination test, bees were presented with three pairs of the 100% and 0% rewarded colours (blue and green). In the reduced reward likelihood test, bees were examined with 66% and 33% rewarded colours (yellow and orange). In the reduced evidence test. bees were given two colours intermediate between green and blue (D & E) Examples of flight paths showing the inspection activity of a bee during the easy discrimination test in accepting blue (D) and rejecting green (E). Each black line on the flight path corresponds to the bee’s body orientation in a single video frame with 4ms intervals between frames. Line colour: flight speed 0.0–0.5 m/s (See Video 1).
+
+**Table 1.**
+ Two different sequences of training trials were used.10 bees were trained with the protocol P1 and 10 with the protocol P2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Protocol P1</th>
+      <th colspan="2">Protocol P2</th>
+    </tr>
+    <tr>
+      <th>#trials</th>
+      <th>colours at each trial</th>
+      <th>#trials</th>
+      <th>colours at each trial</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>S100% vs S66%</td>
+      <td>1</td>
+      <td>S50% vs S0%</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>S50% vs S0%</td>
+      <td>2</td>
+      <td>S100% vs S66%</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>S100% vs S33%</td>
+      <td>3</td>
+      <td>S100% vs S33%</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>S66% vs S0%</td>
+      <td>4</td>
+      <td>S66% vs S0%</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>S50% vs S33%</td>
+      <td>5</td>
+      <td>S100% vs S50%</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>S100% vs S50%</td>
+      <td>6</td>
+      <td>S50% vs S33%</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>S33% vs S0%</td>
+      <td>7</td>
+      <td>S100% vs S0%</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>S66% vs S50%</td>
+      <td>8</td>
+      <td>S33% vs S0%</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>S100% vs S0%</td>
+      <td>9</td>
+      <td>S66% vs S50%</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>S100% vs S66%</td>
+      <td>10</td>
+      <td>S100% vs S0%</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>S50% vs S0%</td>
+      <td>11</td>
+      <td>S50% vs S33%</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>S100% vs S33%</td>
+      <td>12</td>
+      <td>S66% vs S50%</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>S66% vs S0%</td>
+      <td>13</td>
+      <td>S33% vs S0%</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>S50% vs S33%</td>
+      <td>14</td>
+      <td>S100% vs S50%</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>S100% vs S50%</td>
+      <td>15</td>
+      <td>S66% vs S0%</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>S33% vs S0%</td>
+      <td>16</td>
+      <td>S100% vs S33%</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>S66% vs S50%</td>
+      <td>17</td>
+      <td>S100% vs S66%</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>S100% vs S0%</td>
+      <td>18</td>
+      <td>S50% vs S0%</td>
+    </tr>
+  </tbody>
+</table>
 
 In our free-flight choice assay bees learned to prefer the 100% rewarded colour from the 0% rewarded colour (Figure 2A; Wilcoxon signed rank test: z=3.62, n=20, p=2.93e-4; see Figure 2—figure supplement 1C for power analysis). Bees’ performance in the reduced evidence test was lower but was still higher than chance (Figure 2A; Wilcoxon signed rank test: z=2.10, n=18, p=0.03). In the reduced reward likelihood test, bees selected the 66% reward colour more frequently than chance (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86176/elife-86176-fig2-v1.jpg)
+
+**Figure 2.:** (A) Matthew correlation coefficients (MCC) (mean ± SEM) for the easy discrimination and reduced evidence tests. In the both easy discrimination and reduced evidence tests, this correlation is computed with respect to choosing the high-rewarded colours for each bee. A positive correlation (max at +1) indicates perfect correct performance while zero indicates chance level performance. Correlation coefficients were significantly greater than zero for both tests. (B) Average time to the first choices for three tests and the first training trial. Bees naive to the stimuli made their first choice faster than bees trained on the stimuli (p=1.55e-3). (C) Scatter plot showing a negative correlation between the MCC and the time to first acceptance in the easy discrimination test. A rapid first choice correlated with higher performance. Values for each individual bee are shown by small circles. n=20, **p<0.005 and *p<0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86176/elife-86176-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Bar graphs show the proportion of bees’ responses to high rewarded stimuli at each training trials (A: bees in Protocol 1; B: bees in Protocol 2). Below exhibit the stimuli presented at each training trails. (C) Results of power analyses for both easy discrimination and reduced evidence tests, assuming the mean and variance in MCC seen in this study (Figure 2A). It indicates that our sample size of 20 bee provided us with a power level that exceeded the commonly accepted threshold of 80%.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86176/elife-86176-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Bar shows mean proportion of choosing high-rewarded colour. Dashed line indicates performance expected at random. n=20.
+
 Bees spent longer in flight before their first landing in the tests than in the first training trial (Figure 2B; Kruskal-Wallis test, chi-sq=13, df = 7, p=4.60e-3). This shows that during training bees developed a behaviour of assessing the available stimuli in the arena for longer before landing. There was a significant negative correlation between bees’ performance in the easy discrimination test and their time to first landing (assessed by the MCC: Spearman correlation, rho = –0.55, n=20, p=0.02). Poor performance in the test was associated with a longer time before a first choice (Figure 2C).
 
-## Investigation of bee decision-making using classical signal detection theory
+### Investigation of bee decision-making using classical signal detection theory
 
 Signal detection theory provides a framework for understanding and predicting how animals make decisions under uncertainty by modelling the relationship between the sensory information they received and their ability to accurately discriminate between stimuli. Hence, the probability of a stimulus being correctly identified is assumed to be a function of the sensory information received. If we have two different stimuli (in our case the high and low rewarded colours) we can model how the probability of identifying them changes as perceived colour information is sampled from two overlapping normal distributions (Figure 3A). For each colour, it could be identified correctly or incorrectly. For a trained bee we would recognise this as four types of behavioural response. For the highly rewarded colour, these would be correct acceptance or incorrect rejection. For the low rewarded colour these would be correct rejection or incorrect acceptance (Figure 3A). Discriminability (d′) is the difference in the sensory information between the maximal probability of the two different stimuli (Figure 3A). From our data, we could calculate discriminability following Sumner and Sumner, 2020 by modelling total accept and reject responses as cumulative distribution functions and considering the hit rate (correct acceptance / total acceptance) and the false positive rate (incorrect rejections/ total rejections; Equation 2, Materials and methods).
 
@@ -55,7 +196,7 @@ The reduced evidence test significantly decreased the discriminability of more a
 
 When the likelihood of reward for the two stimuli was more similar the decision criterion was closer to zero (Figure 3C; Wilcoxon signed rank test: z=–2.21, n=20, p=8.4e-3) indicating that the accuracy of acceptance and rejection were more similar when the reward outcomes for the two stimuli were more similar. Otherwise, in both the easy discrimination and reduced evidence tests (in which one stimulus was always rewarded and one punished) acceptance was more accurate than rejection (Figure 3C; Wilcoxon signed rank test: z=–3.62, n=20, p=2.93e-4 for easy discrimination test, z=–2.91, n=18, p=3.5e-3 for reduced evidence test). Finally, the comparison of the ratio of correct and incorrect acceptance and rejection in the three tests (Figure 3D) revealed that the acceptance accuracy in both reduced evidence and reduced likelihood tests decreased compared to the easy discrimination test, indicating that acceptance accuracy was sensitive to both evidence and reward likelihood. Overall rejection accuracy was lower than acceptance accuracy. Rejection accuracy was lowest in the reduced reward likelihood test than in the reduced evidence test, indicating the rejection accuracy was more influenced by reward likelihood than available evidence (Figure 3D). This indicates that the evidence thresholds for accept and reject decisions were distinct, as discussed further in the Discussion section.
 
-## How quality of evidence and reward likelihood influence decision accuracy and decision speed
+### How quality of evidence and reward likelihood influence decision accuracy and decision speed
 
 In the easy discrimination test, there were more rejections than acceptances (Figure 4B; Wilcoxon signed rank test: z=–3.62, n=20, p=2.9e-4) and bees’ accuracy (the difference between the number of correct and incorrect choices) of acceptance was higher than rejection (Figure 4B; Wilcoxon signed rank test: z=3.42, n=20, p=6.1e-4). Also, bees’ accuracy of acceptance in the easy discrimination test was higher than bees’ responses in the reduced evidence test (Figure 4B and C; Wilcoxon signed rank test: z=3.77, n=18, p=1.57e-4). While the number of correct rejections is higher than the number of incorrect rejection responses in the easy discrimination test (Figure 4B; Wilcoxon signed rank test: z=1.94, n=20, p=0.43), in the reduced evidence test there was no difference in the number of correct and incorrect rejection responses (Figure 4C; Wilcoxon signed rank test: z=–0.66, n=20, p=0.50). Hence, we propose that acceptance responses are more accurate than rejection responses, but reducing the available evidence reduced the capacity of bees to distinguish the correct and incorrect options.
 
@@ -69,7 +210,7 @@ Prior to bees accepting or rejecting stimuli, we noticed the bees hovered close 
 
 We calculated the Conditional Accuracy Functions (CAF) for acceptance and rejection responses, which is the subject’s accuracy as a function of the decision time (Figure 4F & G; Murphy et al., 2016). For each bee, we assessed the response time for all acceptance responses (both correct and incorrect) in the reduced evidence and easy discrimination tests. Response times were divided into 0.5 s bins and, for each bin, we calculated the proportion of correct acceptances as the number of correct acceptances / total acceptances in that response time bin. The negative slope of the CAF curves for acceptance indicates that bees made correct acceptances faster than incorrect acceptances (Figure 4F; Spearman correlation, rho = –0.43, n=20, p=3.0e-3). However, the CAF for the reduced evidence test was lower than the CAF for the easy discrimination test for almost the entire range of the response time (Figure 4F; Spearman correlation, rho = –0.25, n=18, p=6.5e-2). The gradient of the CAF curve was decreased by reducing the available evidence. This shows that decisions based on reduced evidence are slower and less accurate, and accuracy varied less with decision time. The CAF for the rejection response showed that rejection time did not vary with accuracy (Figure 4G; Spearman correlation, rho = 0.07, n=20, p=0.87 for easy discrimination test; rho = 0.02, n=18, p=0.81 for reduced evidence test). Collectively our analyses show that acceptance behaviour is very accurate and therefore very sensitive to available evidence, whereas rejection behaviour is less accurate, and hence is less sensitive to changes in evidence (See Discussion section).
 
-## Bees' choice strategy is sensitive to the history of reward
+### Bees' choice strategy is sensitive to the history of reward
 
 In the reduced reward likelihood test bees were more likely to reject than accept stimuli (Figure 5A; Wilcoxon signed rank test: z=–3.46, n=20, p=5.35e-4). In the reduced reward likelihood test bees had experienced both stimuli as rewarded and punished (33% and 66% punished) during training. We observed acceptance and rejection responses to both stimuli, most likely because bees were displaying the strategy of matching their choices to the probability each stimulus was rewarded in training (MaBouDi et al., 2020b). In the reduced reward likelihood test, there was no difference in times to accept and reject (Figure 5B; Wilcoxon signed rank test: z=–0.51, n=20, p=0.60 for acceptances; z=–1.15, n=20, p=0.24). Comparing the acceptance time of the easy discrimination, reduced evidence and reduced likelihood reward tests showed that fast acceptance is associated with more reliable evidence and certainty of outcome, and slower acceptance times are associated with less reliable evidence or less certainty of reward (comparing Figures 4C and 5B). No negative slope of CAF curves was observed for either acceptance or rejection behaviour in the reduced likelihood reward test (Figure 5C). Acceptance time decreased with increasing reward expectation (Figure 5D; Spearman correlation, rho = 0.04, n=20, p=0.78 for acceptances; rho = –0.11, n=20, p=0.39 for rejections). Generally, our results show that bees were more likely to reject when either the available evidence or the reward likelihood was reduced.
 
@@ -77,17 +218,17 @@ In the reduced reward likelihood test bees were more likely to reject than accep
 
 **Figure 5.:** (A) In the reduced reward likelihood test bees made more rejection than acceptance responses. Bees accepted the highly-rewarded colour more than the low-rewarded colour, but there was no difference in rejections of the two colours. (B) Response times did not differ for either colour or response. (C) CAF curves for acceptance and rejection response. The accuracy of acceptance or rejection responses did not change with response time in the reduced reward likelihood test (see Figure 4F&G). (D) Comparing acceptance times in the easy discrimination and reduced evidence tests allowed us to compare acceptance times for stimuli with different likelihoods of reward in training. Bees accepted the stimuli with higher reward likelihood faster. n=20, *p<0.05 and n.s., p>0.05.
 
-## A minimal model for honey bee decision-making capacity
+### A minimal model for honey bee decision-making capacity
 
-We assessed various computational sequential sampling models to explore what kinds of computation are necessary for these capacities of decision-making. We used well-established abstract models of decision-making (Bogacz et al., 2006). Our first model had separate accumulators for acceptance or rejection responses (Pa,Pr). Both accumulators receive sensory input and they provide inputs to acceptance (A) and rejection (R) command cells, respectively (Figure 6A). A decision is made either when one of the command cells reaches a predetermined threshold, or when a maximal decision time is exceeded. In this case, the command cell (A∨R) with the highest activity determines the decision (see Materials and Methods section). It is more common in sequential sampling models to assume accumulators for specific stimuli, with each stimulus channel activating a different specific response. This structure is not biologically feasible as it would demand separate accumulators for every possible visible stimulus. Hence, we modelled accumulators for response (accept and reject) and provided both with sensory input. Simulations showed this model could neither correctly accept nor reject stimuli at above chance levels.
+We assessed various computational sequential sampling models to explore what kinds of computation are necessary for these capacities of decision-making. We used well-established abstract models of decision-making (Bogacz et al., 2006). Our first model had separate accumulators for acceptance or rejection responses ($P_{a},P_{r}$). Both accumulators receive sensory input and they provide inputs to acceptance (A) and rejection (R) command cells, respectively (Figure 6A). A decision is made either when one of the command cells reaches a predetermined threshold, or when a maximal decision time is exceeded. In this case, the command cell ($A∨R$) with the highest activity determines the decision (see Materials and Methods section). It is more common in sequential sampling models to assume accumulators for specific stimuli, with each stimulus channel activating a different specific response. This structure is not biologically feasible as it would demand separate accumulators for every possible visible stimulus. Hence, we modelled accumulators for response (accept and reject) and provided both with sensory input. Simulations showed this model could neither correctly accept nor reject stimuli at above chance levels.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86176/elife-86176-fig6-v1.jpg)
 
-**Figure 6.:** (A) A simple model with independent accumulators and command cells for acceptance and rejection was not able to reproduce the features of bee decisions. Correct and incorrect choices were made at equal frequency. (B) When cross-inhibitory feedback from the command cells was added to the model, the model was still not able to discriminate between the correct and incorrect choices, despite the number of rejections now being higher than acceptances. (C) A model with parallel pathways and learning cells that inhibit the accumulators with different values (i.e. ) had the ability to discriminate between stimuli, but the proportion of accepting correct colours and rejecting the incorrect colours are equal.w2r>w1r∧w2a<w1a
+**Figure 6.:** (A) A simple model with independent accumulators and command cells for acceptance and rejection was not able to reproduce the features of bee decisions. Correct and incorrect choices were made at equal frequency. (B) When cross-inhibitory feedback from the command cells was added to the model, the model was still not able to discriminate between the correct and incorrect choices, despite the number of rejections now being higher than acceptances. (C) A model with parallel pathways and learning cells that inhibit the accumulators with different values (i.e. $w_{2r}>w_{1r}∧w_{2a}<w_{1a}$) had the ability to discriminate between stimuli, but the proportion of accepting correct colours and rejecting the incorrect colours are equal.
 
-We then added to the model cross-inhibitory feedback signals from command cells back to the accumulators, which are constantly active during accumulating evidence at each accumulator (Figure 6B). In this model, as evidence accumulates in one command cell, it dampens the accumulation of evidence in the other accumulator. To build a model with a higher threshold for acceptance than the rejection response we set a stronger inhibitory connection between the reject command cell and the accept accumulator (vr>va). This difference between the strength of cross-inhibitory feedback signals makes the model more likely to reject a stimulus whenever the evidence is insufficient. This model did indeed reject stimuli more often than accept (Figure 6B), but it still made an equal number of correct and incorrect choices and therefore could not discriminate between correct and incorrect decisions (Figure 6B).
+We then added to the model cross-inhibitory feedback signals from command cells back to the accumulators, which are constantly active during accumulating evidence at each accumulator (Figure 6B). In this model, as evidence accumulates in one command cell, it dampens the accumulation of evidence in the other accumulator. To build a model with a higher threshold for acceptance than the rejection response we set a stronger inhibitory connection between the reject command cell and the accept accumulator ($v_{r}>v_{a}$). This difference between the strength of cross-inhibitory feedback signals makes the model more likely to reject a stimulus whenever the evidence is insufficient. This model did indeed reject stimuli more often than accept (Figure 6B), but it still made an equal number of correct and incorrect choices and therefore could not discriminate between correct and incorrect decisions (Figure 6B).
 
-To improve the accuracy of the model in acceptance responses we added learning cells and (L1andL2) to the model (Figure 6C) that receive input from the sensory cells on the identity of the colours and send different inhibitory outputs to the accumulator cells (Figure 6C). Following a model approach by MaBouDi et al., 2020b L1 is activated when the low rewarded colours were presented to the model. L2 is activated by the high rewarded colour. The two accumulators receive different levels of inhibition from the learning cells based on the reward likelihood of the presented colour. If a highly-rewarded colour is presented to the model, L2 is activated and inhibits the reject accumulator more than the accept accumulator. This lowers evidence accumulation in the rejection accumulator. Conversely, a low rewarded colour activates L1 which inhibits the accept accumulator. The model with learning cells could discriminate between the high-rewarded and low-rewarded colours but in simulations, it made equal numbers of correct acceptance and correct rejection responses (Figure 6C). This differed from the behaviour of bees (Figure 4B). In summary, none of the classical sequential sampling models in Figure 6 were able to reproduce the experimental data.
+To improve the accuracy of the model in acceptance responses we added learning cells and ($L1andL2$) to the model (Figure 6C) that receive input from the sensory cells on the identity of the colours and send different inhibitory outputs to the accumulator cells (Figure 6C). Following a model approach by MaBouDi et al., 2020b $L1$ is activated when the low rewarded colours were presented to the model. $L2$ is activated by the high rewarded colour. The two accumulators receive different levels of inhibition from the learning cells based on the reward likelihood of the presented colour. If a highly-rewarded colour is presented to the model, $L2$ is activated and inhibits the reject accumulator more than the accept accumulator. This lowers evidence accumulation in the rejection accumulator. Conversely, a low rewarded colour activates $L1$ which inhibits the accept accumulator. The model with learning cells could discriminate between the high-rewarded and low-rewarded colours but in simulations, it made equal numbers of correct acceptance and correct rejection responses (Figure 6C). This differed from the behaviour of bees (Figure 4B). In summary, none of the classical sequential sampling models in Figure 6 were able to reproduce the experimental data.
 
 Our final model included parallel accumulators for accept and reject, learning cells and the cross-inhibitory feedback signals from the command cells (Figure 7A). This model could reproduce the features of bee choice behaviour (Figures 4 and 5): (1) In this model there was a higher threshold for acceptance than rejection, and acceptance was more accurate than rejection (Figure 7C); (2) When the available evidence was reduced, the model showed reduced discriminability (Figure 7D); (3) The model was sensitive to reward likelihood (Figure 7E); (4) Finally, changing evidence and reward likelihood influenced acceptance and rejection response times. By comparing the model outputs with observed bee behaviours, it becomes evident that our final model can appropriately capture the dynamic features of bee decision-making. Comparing the outputs of the different models indicates that a parallel pathway for accept and reject accumulators is crucial in modelling bee decision-making, where both accumulators' evidence is subject to modification through learning and feedback from command cells (see decision letter section).
 
@@ -109,7 +250,7 @@ Acceptance and rejection are fundamental aspects of animal decision-making. Whil
 
 The properties of acceptance behaviour were not fixed and were sensitive to the history of reinforcement experienced at a stimulus. Previously we have shown that in response to variable rewards bees match their choice behaviour to the probability a stimulus offers a reward (MaBouDi et al., 2020b). Such a probability matching strategy is the most likely ecologically rational strategy, and the best option in circumstances where the rewards offered by different options are unknown and liable to change. Here, we showed that even individual choices were influenced by the history of reinforcement (MaBouDi et al., 2020b). Faced with stimuli that offered both reward and punishment in training, bees' acceptance time increased, indicating the threshold for acceptance increased when there was a chance of a negative outcome from the stimulus. This shows that bees adjust how they respond to specific stimuli according to the totality of their prior experience with that stimulus.
 
-## A neurobiological model for honey bee decision-making
+### A neurobiological model for honey bee decision-making
 
 Our exploration of race and LCA modelling (Figures 6 and 7A) showed that the simplest forms of the race model were not sufficient to capture the dynamic features of bee decision-making. Modelling all the properties of bee decisions required two channels for processing stimulus information, one of which was modifiable by learning (Figure 7A). These channels interacted with populations of neurons that accumulated evidence for different available options, with feedback from the command cells into the accumulator populations. Our identified model was the simplest found capable of reproducing all the qualitative features of bee decision-making (Figure 7C, D and E). There was a striking similarity between the features of this minimal model and our understanding of the sensory-motor transformation in the insect brain (Figure 7).
 
@@ -123,15 +264,19 @@ Our study unveils the remarkable sophistication and subtlety of honey bee decisi
 
 ## Materials and methods
 
-## Bees and flight arena
+### Bees and flight arena
 
 Experiments were conducted at the Sheffield University Research Apiary with four standard commercial hives of honey bees (Apis mellifera). To source honey bees for our experiments, we provide them with a feeder containing 20% sucrose solution (w/w). Some bees visiting the feeder were given individually distinctive marks with coloured paints on their abdomen and/or thorax using coloured Posca marking pens (Uni-Ball, Japan). Experiments were performed in a (100x80 x 80 cm) flight arena made from expanded PVC foam boards with a roof of UV-transparent Plexiglas. To create a natural foraging environment for the bees, we set up the flight arena 5 m away from the gravity feeder and an additional 15 meters away from the hives. A transparent Perspex corridor (20x4 x 4 cm) provided access to the flight arena for bees. The interior walls and floor of the arena were covered with a pink random dot pattern, which created a contrast between the bees' colour and the background. This pattern was specifically designed to aid video analysis in tracking bees (Figure 1A, Video 1). All bees visiting the arena were forager bees motivated to gather sucrose for their colony. In this way, the behavioural state of bees participating in the study was standardised. The flight arena was not connected to the hives, rather for each trial bees visited the flight arena under their own volition when motivated to perform a foraging flight. Forager bees forage for their colony not for themselves and they feed in the colony prior to beginning a foraging flight. Thus, bees visiting the flight arena should have been in similar physiological and motivational states. The typical inter-visit interval by a bee was 5–10 min.
 
-## Training and testing stimuli
+![Video 1.](https://cdn.elifesciences.org/articles/86176/elife-86176-video1.mp4.jpg)
+
+**Video 1.:** The video was captured from an overhead perspective, providing a clear view of the bees' movements within the flight arena, showcasing their reactions to various stimuli. The black lines depict the orientation of the bee’s body at each frame of the video, offering further observations of their positioning and behaviour during the experiment.
+
+### Training and testing stimuli
 
 Bees were trained to visit coloured stimuli inside the arena. Stimuli were disks (2.5 cm in diameter) of coloured paper covered with transparent laminate (Figure 1A) placed on small inverted transparent plastic cups (5 cm in height). Two additional colours intermediate between green and blue were designed for the reduced evidence test (Figure 1B). All colours were distinguishable for bees (MaBouDi et al., 2020b).
 
-## Training protocol
+### Training protocol
 
 During the pre-training phase, marked bees were attracted to the entrance of the arena from the gravity feeder using a cotton bud soaked in a 50% sucrose solution (w/w). Once at the gravity feeder, the bees were given more 50% sucrose solution and were gently moved to the entrance of the corridor. This process was repeated until the bee was able to fly independently to the entrance of the corridor. The bees were then trained to fly into the arena via the entrance corridor to locate drops of 50% sucrose placed on transparent disks of laminate top plastic cups. The roof of the arena was lifted to release the bees from the arena every time they were satiated. Only those bees that flew independently into the arena to feed were selected for the training phase.
 
@@ -141,11 +286,11 @@ To evaluate any effect of the innate colour preference of bees on their decision
 
 Over 18 training trials, bees experienced all combinations of the five colours twice, with the exception that bees in training never experienced %66 rewarded paired with %33 rewarded colours. This pairing was excluded from training so that in the post-training, reduced reward likelihood test, we could examine how trained bees evaluate a colour pair based on the reward likelihood of colours. To control the effect of the training sequence on bees’ colour preferences, bees were randomly assigned to one colour group (A or B) and one of two different sequences of training bouts (protocols P1 and P2; Table 1). In each training bout, bees were able to freely choose and feed from rewarded stimuli. 10 μL drops of 50% sucrose solution were replaced on depleted rewarded stimuli until the bee had fed to satiation and left the arena via the roof. Between trials, all stimuli and the arena were cleaned with soap water and then 70% ethanol and water to remove any possible pheromonal cues left by the bee. They finally were air-dried before reuse.
 
-## Testing
+### Testing
 
 Each bee was given three tests. Each test was video recorded for 120 s. In all tests, all stimuli provided 10 μl water. The easy colour discrimination test presented bees with the colours that had been rewarded in 100% and 0% of training trials. The reduced reward likelihood test presented bees with 66% and 33% rewarded colours – a combination they never experienced in training. In the reduced evidence test bees were given two novel colours that were similar to but intermediate to the 100% and 0% rewarded colours. The sequence of the three tests was pseudo-randomised for each bee. To maintain the bees’ motivation to visit the arena, one or two refreshment trials were given between tests. In a refreshment trial, the bees were allowed to feed from 10 μL sucrose drops placed on eight disks of transparent laminate positioned in the arena. As in training, stimuli and the arena were cleaned between each test.
 
-## Automatic bee tracking algorithm
+### Automatic bee tracking algorithm
 
 The flight arena was equipped with an iPhone 6 camera placed at the top of the arena, 1 meter distance from the floor, facing down that captured the full base of the flight arena in the field of view (Figure 1A). The camera was configured to record at 30 FPS (at a resolution of 1080 pixels) in the training phase, and 240 FPS at 720 pixels in the testing phase. The first 120 s of the test and the first bout of the training phase were used to analyse bees’ flights. Examples of a recorded flight path are shown in Video 1.
 
@@ -153,40 +298,80 @@ A bee’s flight path was determined frame by frame extracting the x, y coordina
 
 The flight path began when the bee entered the arena. Hovering time prior to accepting or rejecting a stimulus was assessed as the total time the bee’s body was within a 5 cm radius of the centre of the stimulus (Figure 1D). We assumed that bees did not attend to the stimuli when flying over them at high speeds (above the height of the cups) as they did when flying between the stimuli at a similar speed, opposed to when bees were approaching the stimuli at the same height as the plastic cups. Thus, 7% of all paths with length <0.2 s close to the edge of the focal area were excluded from analyses. A bee accepted a colour when it made contact with the colour (antennae at least contacting the platform; Figure 1C). This translated to an automatically count bees’ landings algorithm. This algorithm counts bee’s landing and utilises a threshold flight speed classifier based on the k-means algorithm that was applied to flight paths that crossed over the stimuli (MaBouDi et al., 2021). In this dynamic threshold determination, the speed of bees within the border of the colours was clustered into two groups: acceptance (very low-speed paths) and reject (high-speed paths). The boundary between the two groups obtained by the K-means algorithm was set as a defined rule to determine whether the bee chose or did not choose the colour.
 
-## Flight analysis and statistics
+### Flight analysis and statistics
 
-In each test, we evaluated bees’ performance from their choices during their first 120 s in the arena. Choices were scored as accepting (made a contact with colour) or rejecting a stimulus (flying away without landing). If the bee accepted the colour more likely to be rewarded in training, we considered this a correct choice. If the bee rejected the colour more likely to be punished in training, we also considered this a correct choice. Hence the bees’ decision was classified into four distinct responses: (1) correct acceptance (CA), landing on the more rewarded colour (2) incorrect acceptance (IA), landing on the less rewarded colour (3) correct rejection (CR), rejecting the less rewarded colour and (4) incorrect rejection (IR), rejecting the more rewarded colour. To summarise the bees’ performance in the tests, the Matthew correlation coefficient (MCC) was used as follows MaBouDi et al., 2020a; Matthews, 1975:(1)MCC=nCA×nCR-nIA×nIRnCA+nIAnCA+nIRnCR+nIAnCR+nIR
+In each test, we evaluated bees’ performance from their choices during their first 120 s in the arena. Choices were scored as accepting (made a contact with colour) or rejecting a stimulus (flying away without landing). If the bee accepted the colour more likely to be rewarded in training, we considered this a correct choice. If the bee rejected the colour more likely to be punished in training, we also considered this a correct choice. Hence the bees’ decision was classified into four distinct responses: (1) correct acceptance (CA), landing on the more rewarded colour (2) incorrect acceptance (IA), landing on the less rewarded colour (3) correct rejection (CR), rejecting the less rewarded colour and (4) incorrect rejection (IR), rejecting the more rewarded colour. To summarise the bees’ performance in the tests, the Matthew correlation coefficient (MCC) was used as follows MaBouDi et al., 2020a; Matthews, 1975:
 
-where nCA , nCR , nIA and nIR represent the number of CA, CR, IA and IRs for a bee in a test. The MCC has a scale from –1 to +1. High positive values indicate mostly correct acceptance and rejection choices. Negative values correspond to bees making mostly incorrect choices. Zero indicates bees choose colours randomly. A Wilcoxon signed rank test was applied to the MCC values to compare bees’ performance. Finally, the relationship between bees’ MCC and their scanning behaviours in the tests was evaluated by the Spearman’s correlation tests. All statistical tests were performed in MATLAB 2019 (MathWorks, Natick, MA, USA). Also, to ensure the validity of our conclusions, we conducted a power analysis on the bees' performance in the experimental tests, which helped us to confirm that our sample size was sufficient (Figure 2—figure supplement 1C). This approach allowed us to have greater confidence in the statistical significance of our findings and to draw more accurate conclusions from our data.
+$$
+MCC=\frac{n_{CA}\timesn_{CR}-n_{IA}\timesn_{IR}}{\sqrt{n_{CA}+n_{IA}n_{CA}+n_{IR}n_{CR}+n_{IA}n_{CR}+n_{IR}}}
+$$
 
-## Signal detection theory
+where $n_{CA}$ , $n_{CR}$ , $n_{IA}$ and $n_{IR}$ represent the number of CA, CR, IA and IRs for a bee in a test. The MCC has a scale from –1 to +1. High positive values indicate mostly correct acceptance and rejection choices. Negative values correspond to bees making mostly incorrect choices. Zero indicates bees choose colours randomly. A Wilcoxon signed rank test was applied to the MCC values to compare bees’ performance. Finally, the relationship between bees’ MCC and their scanning behaviours in the tests was evaluated by the Spearman’s correlation tests. All statistical tests were performed in MATLAB 2019 (MathWorks, Natick, MA, USA). Also, to ensure the validity of our conclusions, we conducted a power analysis on the bees' performance in the experimental tests, which helped us to confirm that our sample size was sufficient (Figure 2—figure supplement 1C). This approach allowed us to have greater confidence in the statistical significance of our findings and to draw more accurate conclusions from our data.
+
+### Signal detection theory
 
 Signal detection theory (Wickens, 2001) was used to analyse bee decisions. Signal detection theory proposes that bees evaluate a signal (stimulus with strength x) as either rewarded or punished. We assume that the probability of either accepting or rejecting a perceived signal can be described by two distributions that are normal in shape with equal variance (Figure 3A). We also assume a decision criterion (d.c.) of the perceived signal at which the response changes from accept to reject (Figure 3A). From the positions of the distributions and the location of the criterion, we can estimate the expected probabilities of correct acceptances (hits) correct rejections, incorrect acceptance (false negative), and incorrect rejections (false positive; Figure 3A). The location of d.c. can be influenced by training and the experience of each signal as either punished or rewarded as well as the consequences of correct and incorrect acceptance and rejection choices (Wickens, 2001). Discriminability (d’) is the difference in signal between the maximum likelihood of acceptance and rejection responses (Figure 3A). If d’ is low the acceptance and rejection distributions overlap. Hence more errors are made.
 
-Discriminability (d`) and the decision criteria (d.c.) can be calculated from the empirical measurements of hit and false positive rates as follows(2)d`=Zhitrate-Zfalsepositiverate
+Discriminability ($d`$) and the decision criteria ($d.c.$) can be calculated from the empirical measurements of hit and false positive rates as follows
 
-and(3)d.c.=-Zhitrate+Zfalsepositiverate/2
+$$
+d^{`}=Zhitrate-Zfalsepositiverate
+$$
 
-where the function Z. is the inverse of the standard normal cumulative distribution function (CDF). The hit rate is the ratio of correct acceptance to all acceptances (nCA/nCA+nIA) and the false positive rate is the ratio of incorrect rejections to all rejections (nIR/nIR+nCR).
+and
 
-## Modelling honey bee decision-making
+$$
+d.c.=-Zhitrate+Zfalsepositiverate/2
+$$
+
+where the function $Z.$ is the inverse of the standard normal cumulative distribution function (CDF). The hit rate is the ratio of correct acceptance to all acceptances ($n_{CA}/n_{CA}+n_{IA}$) and the false positive rate is the ratio of incorrect rejections to all rejections ($n_{IR}/n_{IR}+n_{CR}$).
+
+### Modelling honey bee decision-making
 
 We started with the simple and well-defined sequential sampling model (Bogacz et al., 2006; Pike, 1966; Vickers, 1970) which we adjusted to provide a better fit to experimental data for both accuracy and reaction times (Figures 4 and 5). Our adjustments to the sequential sampling model were constrained by the types of processing considered plausible to derive both acceptance and rejection responses through two parallel pathways.
 
-In the model, evidence favouring each alternative (I) accumulated in separate accept (Pa) or reject (Pr) accumulators over time (Figure 6A). Biologically plausible leaky accumulators (with decay rate, k) were used to model the decision time which represent the duration that bees spend accumulating evidence in favour of or against a stimulus. At each time step, accept and reject accumulators send signals to the accept (A) and rejection (R) command cells, respectively. The output of command cells of accept and rejection was calculated by A=max⁡0.1,Pa and R=max⁡0.1,Pr with the baseline activity at 0.1. A decision was made either when one of the command cells reached a predetermined threshold, or when a decision was forced by exceeding a maximal assessment time in which case the decision associated with the command cell with the highest activity was chosen. The accumulation of evidence in the model is governed according to the following stochastic ordinary differential equations:(4)dPat=-kPat+Idt+dW1t,(5)dPrt=-kPrt+Idt+dW2t
+In the model, evidence favouring each alternative ($I$) accumulated in separate accept ($P_{a}$) or reject ($P_{r}$) accumulators over time (Figure 6A). Biologically plausible leaky accumulators (with decay rate, $k$) were used to model the decision time which represent the duration that bees spend accumulating evidence in favour of or against a stimulus. At each time step, accept and reject accumulators send signals to the accept ($A$) and rejection ($R$) command cells, respectively. The output of command cells of accept and rejection was calculated by $A=max⁡0.1,P_{a}$ and $R=max⁡0.1,P_{r}$ with the baseline activity at 0.1. A decision was made either when one of the command cells reached a predetermined threshold, or when a decision was forced by exceeding a maximal assessment time in which case the decision associated with the command cell with the highest activity was chosen. The accumulation of evidence in the model is governed according to the following stochastic ordinary differential equations:
 
-At time zero, the evidence accumulated Pa and Pr are set to zero; Pa0=Pr0=0. Brownian random motions dWa and dWr are added to represent noise in input and model the random walk behaviour.
+$$
+dP_{a}t=-kP_{a}t+Idt+dW_{1}t,
+$$
 
-To add inhibitory feedback signals from the command cells into the accumulators (Figure 6B), both accept and reject accumulators actively received feedback inhibitory signals from the opposite command cells while simultaneously receiving inputs from their respective accumulators as:(6)Pat=Pat+dPat-vrRt,
 
-and(7)Prt=Prt+dPrt-vaAt
 
-Here va and vr are the fraction of command outputs that inhibit the alternative accumulator.
+$$
+dP_{r}t=-kP_{r}t+Idt+dW_{2}t
+$$
 
-In a previous studies (MaBouDi et al., 2020b; Vasas et al., 2019), we developed a model for the five-armed bandit task, which showed that plasticity in both the input (calyx) and output (lobes) of the mushroom body can effectively learn the history of reinforcement for different colours. This implies that the mushroom body output neurons can provide distinct inhibitory signals to the accumulator cells based on the reinforcement history of each colour. In the current study, we utilized the abstract version of learning cells from our previous work, which underwent 18 training trials for the five different colours in the five-armed bandit task, identical to what the bees experienced in this study. Building upon the model proposed in MaBouDi et al., 2020b, we incorporated two types of learning cells (L1 , L2) into the model and presented the modified version in Figure 6C. Both learning cells received the sensory input and sent different inhibitory outputs to the accumulators based on the reward likelihood of the colours. w1a,w1r,w2a and w2r are the value of inhibitory signals that the accept and reject accumulators received from the learning cells (L1 , L2) such that w1a>w2a and w1r<w2r . The model activates the first learning cell, rL1=αI, if the high rewarded colour is presented to the model, and activates the second learning cell, rL2=αI, if the low rewarded colour is presented to the model. 0≤α≤1 represent the rate of the learning cells activity based on the input signal (I). The behaviour of learning cells and the value of the alpha were assumed and inspired by the model presented in our previous research (MaBouDi et al., 2020b), that demonstrated how the reinforcement neurons modulates the strengths of the synaptic connectivity in mushroom bodies in response to both reward and punishment. Synaptic weights w1a,w1r,w2a, and w2r were updated for each presented stimulus during training such that the accumulation of evidence in the model proceed according to the following equations:,(8)dPat=-kPat-w1arL1-w2arL2+Idt+dW1t(9)dPrt=-kPrt-w1rrL1-w2rrL2+Idt+dW2t
+At time zero, the evidence accumulated $P_{a}$ and $P_{r}$ are set to zero; $P_{a}0=P_{r}0=0$. Brownian random motions $dW_{a}$ and $dW_{r}$ are added to represent noise in input and model the random walk behaviour.
 
-where rL1 and rL2 represent the activity of learning cells L1 , L2 , respectively. Our final model, (Figure 7A) accumulated evidence following Equations 8 and 9. The accumulators received cross-inhibitory signals from the command cells according to Equations 6 and 7.
+To add inhibitory feedback signals from the command cells into the accumulators (Figure 6B), both accept and reject accumulators actively received feedback inhibitory signals from the opposite command cells while simultaneously receiving inputs from their respective accumulators as:
 
-## Model evaluation
+$$
+P_{a}t=P_{a}t+dP_{a}t-v_{r}Rt,
+$$
 
-The models are presented with 25 trials in which high-rewarded and low-rewarded stimuli were randomly presented. Each model responded after each trial by accepting or rejecting the presented stimulus. The performance of the model was evaluated by counting the number of correct and incorrect acceptances or rejections and their corresponding response times. In addition, we normalised the time response of the model to the maximum time response of all model bees, which allowed us to make meaningful comparisons between the relative time responses of different experimental conditions and the observed time responses. This approach helped us to identify significant differences in the bees' responses to different stimuli and to gain a deeper understanding of the factors that influence their behaviour. Twenty different model bees with different random factors were examined and reported in this study. The final model could be simplified to emphasise the effect of the contributions of learning and feedback from command cells. In this way, the final model (Figure 7A) was also examined with learning cells inactive (α=0) or without the contribution of command cells by synaptic weights va and vr set to zero. We assumed the accept and reject pathways process the input interdependently (i.e. no interaction between pathways) if α=0, va=0 and vr=0.
+and
+
+$$
+P_{r}t=P_{r}t+dP_{r}t-v_{a}At
+$$
+
+Here $v_{a}$ and $v_{r}$ are the fraction of command outputs that inhibit the alternative accumulator.
+
+In a previous studies (MaBouDi et al., 2020b; Vasas et al., 2019), we developed a model for the five-armed bandit task, which showed that plasticity in both the input (calyx) and output (lobes) of the mushroom body can effectively learn the history of reinforcement for different colours. This implies that the mushroom body output neurons can provide distinct inhibitory signals to the accumulator cells based on the reinforcement history of each colour. In the current study, we utilized the abstract version of learning cells from our previous work, which underwent 18 training trials for the five different colours in the five-armed bandit task, identical to what the bees experienced in this study. Building upon the model proposed in MaBouDi et al., 2020b, we incorporated two types of learning cells ($L_{1}$ , $L_{2}$) into the model and presented the modified version in Figure 6C. Both learning cells received the sensory input and sent different inhibitory outputs to the accumulators based on the reward likelihood of the colours. $w_{1a},w_{1r},w_{2a}$ and $w_{2r}$ are the value of inhibitory signals that the accept and reject accumulators received from the learning cells ($L_{1}$ , $L_{2}$) such that $w_{1a}>w_{2a}$ and $w_{1r}<w_{2r}$ . The model activates the first learning cell, $r_{L_{1}}=\alphaI$, if the high rewarded colour is presented to the model, and activates the second learning cell, $r_{L_{2}}=\alphaI$, if the low rewarded colour is presented to the model. $0\leq\alpha\leq1$ represent the rate of the learning cells activity based on the input signal ($I$). The behaviour of learning cells and the value of the alpha were assumed and inspired by the model presented in our previous research (MaBouDi et al., 2020b), that demonstrated how the reinforcement neurons modulates the strengths of the synaptic connectivity in mushroom bodies in response to both reward and punishment. Synaptic weights $w_{1a},w_{1r},w_{2a}$, and $w_{2r}$ were updated for each presented stimulus during training such that the accumulation of evidence in the model proceed according to the following equations:
+
+$$
+dP_{a}t=-kP_{a}t-w_{1a}r_{L_{1}}-w_{2a}r_{L_{2}}+Idt+dW_{1}t
+$$
+
+
+
+$$
+dP_{r}t=-kP_{r}t-w_{1r}r_{L_{1}}-w_{2r}r_{L_{2}}+Idt+dW_{2}t
+$$
+
+where $r_{L_{1}}$ and $r_{L_{2}}$ represent the activity of learning cells $L_{1}$ , $L_{2}$ , respectively. Our final model, (Figure 7A) accumulated evidence following Equations 8 and 9. The accumulators received cross-inhibitory signals from the command cells according to Equations 6 and 7.
+
+### Model evaluation
+
+The models are presented with 25 trials in which high-rewarded and low-rewarded stimuli were randomly presented. Each model responded after each trial by accepting or rejecting the presented stimulus. The performance of the model was evaluated by counting the number of correct and incorrect acceptances or rejections and their corresponding response times. In addition, we normalised the time response of the model to the maximum time response of all model bees, which allowed us to make meaningful comparisons between the relative time responses of different experimental conditions and the observed time responses. This approach helped us to identify significant differences in the bees' responses to different stimuli and to gain a deeper understanding of the factors that influence their behaviour. Twenty different model bees with different random factors were examined and reported in this study. The final model could be simplified to emphasise the effect of the contributions of learning and feedback from command cells. In this way, the final model (Figure 7A) was also examined with learning cells inactive ($\alpha=0$) or without the contribution of command cells by synaptic weights $v_{a}$ and $v_{r}$ set to zero. We assumed the accept and reject pathways process the input interdependently (i.e. no interaction between pathways) if $\alpha=0$, $v_{a}=0$ and $v_{r}=0$.

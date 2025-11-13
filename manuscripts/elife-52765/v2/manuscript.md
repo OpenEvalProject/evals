@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Our behaviour is shaped by its consequences – we seek rewards and avoid harm. It has been reported that individuals vary markedly in their avoidance of detrimental consequences, that is in their sensitivity to punishment. The underpinnings of this variability are poorly understood; they may be driven by differences in aversion sensitivity, motivation for reward, and/or instrumental control. We examined these hypotheses by applying several analysis strategies to the behaviour of rats ( n = 48; 18 female) trained in a conditioned punishment task that permitted concurrent assessment of punishment, reward-seeking, and Pavlovian fear. We show that punishment insensitivity is a unique phenotype, unrelated to differences in reward-seeking and Pavlovian fear, and due to a failure of instrumental control. Subjects insensitive to punishment are afraid of aversive events, they are simply unable to change their behaviour to avoid them.
+Our behaviour is shaped by its consequences – we seek rewards and avoid harm. It has been reported that individuals vary markedly in their avoidance of detrimental consequences, that is in their sensitivity to punishment. The underpinnings of this variability are poorly understood; they may be driven by differences in aversion sensitivity, motivation for reward, and/or instrumental control. We examined these hypotheses by applying several analysis strategies to the behaviour of rats (n = 48; 18 female) trained in a conditioned punishment task that permitted concurrent assessment of punishment, reward-seeking, and Pavlovian fear. We show that punishment insensitivity is a unique phenotype, unrelated to differences in reward-seeking and Pavlovian fear, and due to a failure of instrumental control. Subjects insensitive to punishment are afraid of aversive events, they are simply unable to change their behaviour to avoid them.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Here we used a conditioned punishment task that permitted us to concurrently ide
 
 ## Results
 
-## Individual differences in punishment and fear
+### Individual differences in punishment and fear
 
 Three contingencies were in effect within this task: the instrumental contingency of reward which should maintain responding on both levers; the instrumental contingency of punishment, which should bias animals away from the punished response (i.e. punishment suppression), and the aversive Pavlovian contingency that drives fear conditioning to predictive cues and suppresses ongoing behaviour (i.e. Pavlovian suppression). Each of these three effects were observed (Figure 2). Prior to aversive training, there was no preference between pressing the to-be-punished versus unpunished lever (F(1,47) = .071; p = 0.791, ηp2 0.001) (Figure 2). Across the course of aversive training, reward learning was maintained and punishment learning as well as fear learning were observed. There was evidence for punishment learning because there was less lever pressing on the punished lever than the unpunished lever (the traditional measure of punishment learning in this task) (Figure 2A). Punishment avoidance increased across days (linear trend: F (1,47)=7.49; p=0.009, ηp2 0.137). Follow-up analyses revealed significant punishment suppression for each session (1st session: F (1,47)=5.48; p=0.024, ηp2 0.137; remaining sessions: F (1,47)>23.4; p<0.001, ηp2 0.332). There was also robust evidence for Pavlovian fear (Figure 2B). Conditioned suppression elicited by presentations of the CS+ also increased across training (F (1,47)=35.1; p<0.001, ηp2 0.427), with significant suppression being observed for each session (all F (1,47)>54.7; p<0.001, ηp2 0.537). However, as expected, these group-averaged data obscured pronounced individual differences. Figure 2C and D show the same data plotted at subject level. Punishment suppression appeared to be bimodally distributed with some subjects showing strong punishment suppression (i.e. punishment sensitivity) and others weaker or no punishment suppression (i.e. punishment insensitivity) (Figure 2C). There was also, albeit less pronounced, variation in Pavlovian fear (Figure 2D).
 
@@ -48,7 +48,7 @@ The evidence for punishment is derived from a preference ratio (responses on the
 
 **Figure 3.:** (A) Mean ± SEM suppression ratios for responding on the punished (red) and unpunished (green) levers relative to training. *p<0.05 punished vs. unpunished. (B) Violin plots and individual subject suppression ratios for the punished lever. *p<0.05 punished vs. null ratio (0.5). (D) Violin plots and individual subject suppression ratios for the unpunished lever. *p<0.05 punished vs. null ratio (0.5).
 
-## Punishment, reward, and fear are separate
+### Punishment, reward, and fear are separate
 
 To further examine the relationship between punishment, fear, and reward we examined the correlations between suppression on the punished lever (punishment), unpunished lever (reward), and conditioned suppression elicited by the CS+ (fear) across training (Figure 4A). We observed strong positive correlations among each of these measures across sessions, showing that each subject’s relative behaviour was stable across days. However, we observed few significant positive correlations between the measures. Notably, for fear and punishment, the only significant correlation was negative and present only on the first day of training.
 
@@ -60,19 +60,47 @@ The correlation matrix is useful in visualising and understanding the relationsh
 
 These results show qualitative differences between punishment, reward, and fear. To better understand the shared variance between our measures we used Principal Components Analysis (PCA) to identify any shared underlying components in learning (Figure 5A). If there is a common aversion sensitivity that underpins punishment and fear learning, or any other common process, then PCA should identify it as a component with strong loadings from both punishment suppression and CS+ suppression. A 4-component solution was optimal, accounting for 75.9% of overall variance (Figure 5—figure supplement 1), with most measures well captured by these four components (Figure 5A, Figure 5—figure supplement 1). The first component captured the influence of punishment: punishment suppression across the course of training loaded strongly on this component. The second component captured the influence of contextual fear learning early during training: both initial punishment suppression and unpunished responding loaded positively on this component whereas CS+ suppression loaded negatively. The third component captured specific CS+ fear from later in training: only CS+ suppression loaded positively on this component. The fourth component captured reward: the remainder of the variance in unpunished responding loaded positively on this component. So, punishment and fear do not load positively on the same component. In fact, any relationship between them was largely negative, indicative of a competitive rather than complementary relationship between them.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig5-v2.jpg)
+
+**Figure 5.:** (A) Loading heatmaps for principal component analysis of suppression ratios across conditioned punishment sessions (1-6). (B) Loading heatmaps for factor analysis of suppression ratios across conditioned punishment sessions (1-6). Bottom rows indicates proportion of total variance (Var) accounted for by components/factors. Last column indicates variance of each measure accounted for by components/factors (extraction). Loadings that account for majority (>50%) or substantial (>10%) variance are indicated with ++ and +, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Scree plot of eigenvalues (black line, left axis) and cumulative variance accounted for by components (blue line, right axis). Four components/factors (dotted line) was deemed optimal. (B) Results of principal component analysis (left table) and factor analysis (right table). Loadings in bold are above. 707 (>50%, that is majority, of variable’s variance). Loadings in grey are below. 316 (<10% of variable’s variance), indicative of a weak or null loading.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Scree plot of eigenvalues (black line, left axis) and cumulative variance accounted for by components (blue line, right axis). Four components/factors (dotted line) was deemed optimal. (B) Results of principal component analysis. Loadings in bold are above. 707 (>50%, that is majority, of variable’s variance). Loadings in grey are below. 316 (<10% of variable’s variance), indicative of a weak or null loading. Component one captured majority variance in punished responding. Component two captured majority variance in unpunished responding, including training lever-press rates. Components 3–4 captured majority variance of conditioned suppression. (C) Multidimensional scaling of lever-press rates and conditioned suppression. Pre-punishment lever-pressing was clustered with unpunished lever-pressing, indicating the strong relatedness of unpunished reward-seeking pre- and post-punishment. Punished reward-seeking was clustered separately, as was conditioned suppression.
+
 PCA is a dimension reduction procedure. It is less explicitly a means to identify underlying latent variables in datasets. Therefore, we performed Factor Analysis to identify latent variables in the association between punishment, reward, and fear. The results from this analysis were similar to PCA (Figure 5B, Figure 5—figure supplement 1). Based on factor loadings, variation in aversive learning can be accounted for by an influence of punishment (Factor 1), contextual fear (Factor 2), CS+ fear (Factor 3), and reward (Factor 4). Taken together, these findings suggest punishment, reward, and fear are largely orthogonal each other.
 
 We also assessed the relationship between pre-punishment lever-pressing and behaviour in conditioned punishment. Training lever-pressing was correlated with unpunished (average r = 0.561, p<0.0001) but not punished lever-press rates during ITIs (average r = 0.198, p=0.18) or conditioned suppression (average r = 0.173, p=0.24). This relationship was further supported by PCA and multidimensional scaling (Figure 5—figure supplement 2). This implies responding during training predicts later unpunished responding but not punishment or conditioned suppression. Lever-press suppression ratios, which remove variability attributable to pre-punishment differences in reward-seeking, were not correlated with training lever-press rate (punished lever suppression: r = −0.06, p=0.69; unpunished lever suppression: r = −0.04, p=0.79), again indicating that punishment-driven changes in lever-pressing are unrelated to initial rates of lever pressing.
 
-## Cluster analysis reveals punishment sensitive vs. insensitive phenotypes
+### Cluster analysis reveals punishment sensitive vs. insensitive phenotypes
 
 To further understand individual differences in aversive learning we used cluster analysis. This allowed us to identify clusters of subjects whose performances across training were more similar to each other and different to other clusters of subjects. Silhouette values revealed positive silhouette values for 2–4 k-mean clusters, which were each marginally higher compared to solutions using more clusters.
 
 We examined punishment, reward, and fear behaviours for each of the cluster solutions. The groups produced by the 2-cluster solution did not differ in sex (χ2(1)=0.782, p=0.376; Figure 6—figure supplement 1). The two clusters did not differ in pre-punishment lever-pressing (all F(1,46) ≤. 659, p ≥. 421; Figure 6—figure supplement 1), showing that they did not differ in reward learning prior to aversive learning. They were, however, distinguishable by their punishment avoidance, regardless of whether this was measured via punished lever suppression or preference ratio (Figure 6A, Figure 6—figure supplement 1). Specifically, there was a significant overall difference in punished lever suppression (F(1,46) = 105.96, p<0.001, ηp2 0.697) (Figure 6A) and preference ratio (F(1,46) = 49.13, p<0.001, ηp2 0.517) (Figure 6—figure supplement 1) between clusters across sessions. However, there was no main effect of cluster on either unpunished lever suppression (F(1,46) = .215, p = 0.645) (Figure 6A) or conditioned suppression (F(1,46) = 1.008, p=0.321, ηp2 0.021) (Figure 6B). Thus, we refer to these clusters as punishment-sensitive (filled symbols, n = 15 [7 female]) and punishment-insensitive (empty symbols, n = 33 [11 female]). Further analyses showed that the punishment-sensitive group significantly suppressed punished (F(1,46) = 333.638, p<0.001, ηp2 0.878) but not unpunished (F(1,46) = 2.601, p=0.114, ηp2 0.053) responding relative to pre-punishment. In contrast, the punishment-insensitive group modestly suppressed both punished (F(1,46) = 75.318, p<0.001, ηp2 0.621) and unpunished (F(1,46) = 10.395, p=0.002, ηp2 0.184) responding relative to pre-punishment. This shows that the punishment-insensitive group were not simply showing attenuated punishment but were instead showing a distinct suppression phenotype.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mean ± SEM punished and unpunished lever suppression for punishment-sensitive (PunS; filled) and punishment-insensitive (PunIns; empty) groups from 2-cluster solution. (B) Mean ± SEM conditioned suppression ratios for groups from 2-cluster solution.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Breakdown of cluster assignment across males and females. (B) Mean ± SEM lever-press rates during ITI for punishment-sensitive (filled symbol) and -insensitive (empty symbol) clusters. No differences were observed during training. (C) Mean ± SEM preference ratios for punishment-sensitive (filled symbol) and -insensitive (empty symbol) clusters. (C) Mean ± SEM shock intensity for punishment-sensitive (filled symbol) and -insensitive (empty symbol) clusters.
+
 Due to this differential ITI suppression across groups, shock intensities for the punishment-insensitive cluster had been increased more than for punishment-sensitive cluster (linear x cluster interaction: F(1,46) = 6.062, p=0.018; Figure 6—figure supplement 1), although shock intensity did not differ overall across sessions (F(1,45) = 2.196, p=0.145). Importantly, shock intensity was not a significant covariate for final punishment (F(1,45) = 1.042, p=0.313) or conditioned suppression (F(1,45) = .389, p = 0.536), showing this was not a driving factor for cluster differences.
 
 When a 3-cluster solution was derived, a significant effect of sex was found (χ2 (2)=7.416, p=0.025; Figure 7—figure supplement 1). The two larger clusters were most distinguishable by their suppression on the punished lever, that is punishment-sensitive (filled symbols; n = 17 [6 female]; Figure 7A) versus punishment-insensitive (empty symbols; n = 27 [8 female]; Figure 7B) and their behaviour was largely similar to the groups in the 2-cluster solution. The last cluster (half-filled symbols; n = 4 [4 female]; Figure 7C) was a small cohort that exhibited initial indiscriminate suppression on both the punished and unpunished levers as well as a counterintuitive increase in pressing during the CS+ during initial sessions. However, in later sessions, this cluster exhibited the greatest conditioned and punished lever suppression. Given these extreme responses, we will refer to this cluster as the hyper-sensitive group.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig7-v2.jpg)
+
+**Figure 7.:** (A) Mean ± SEM punishment suppression and conditioned suppression for punishment-sensitive cluster. (B) Mean ± SEM punishment suppression and conditioned suppression for punishment-insensitive cluster. (C) Mean ± SEM punishment suppression and conditioned suppression for hyper-sensitive cluster.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/52765/elife-52765-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Breakdown of cluster assignment across males and females. (B) Mean ± SEM lever-press rates during ITI for punishment-sensitive (filled symbol), -insensitive (empty symbol), and hyper-sensitive (half-filled symbol) clusters. No differences were observed during training. (C) Mean ± SEM preference ratios for punishment-sensitive (filled symbol), -insensitive (empty symbol), and hyper-sensitive (half-filled symbol) clusters. (D) Mean ± SEM shock intensity for punishment-sensitive (filled symbol), -insensitive (empty symbol), and hyper-sensitive (half-filled symbol) clusters.
 
 Once again, the clusters did not differ in lever-press rates across training (all F(2,45) ≤ 1.886, p ≥. 164; Figure 7—figure supplement 1). Compared to pre-punishment lever-pressing, all clusters showed significant punished lever suppression averaged across punishment (F(1,45) ≥ 45.374, p<0.001, ηp2 0.502) (Figure 7). However, there were differences between the clusters. Specifically, the punishment-insensitive cluster showed the least (F(1,45) ≥ 66.55, p<0.001, ηp2 0.596) and the hyper-sensitive cluster showed the most F(1,45) ≥ 4.386, p ≤. 0419, ηp2 0.089) punished lever suppression. The clusters also differed on unpunished lever suppression relative to pre-training (F(1,45) ≥ 15.54, p<0.001, ηp2 0.257) (Figure 7). The punishment-sensitive cluster showed no (F(1,45) = 1.164, p=0.286, ηp2 0.025), the punishment-insensitive cluster showed moderate (F(1,45) = 24.828, p<0.001, ηp2 0.356), whereas the hyper-sensitive cluster showed the most suppression (F(1,45) = 61.932, p<0.001, ηp2 0.579).
 
@@ -100,29 +128,57 @@ In summary, we examined punishment-, fear- and reward-related learning and behav
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Subjects were experimentally naive adult male and female Long-Evans rats (N = 48, 18 females) supplied by the University of New South Wales (Sydney, NSW, Australia). This was a single group experiment, so N = n = 48. This group size was chosen based on past research (Marchant et al., 2018) suggesting that it would be sufficient to identify individual differences in punishment. Animals were housed in groups of four in ventilated racks in a temperature- and humidity-controlled room with a 12–12 hr light/dark cycle (lights on 07:00). Experiments were conducted during the light cycle. Animals were food restricted from 3 days prior to the experiment onwards (10–15 g food per day for males, 7–12 g for females) to maintain them at ~90% of free-feeding weight, with ad libitum access to water. All procedures were approved by the UNSW Animal Ethics Committee (AEC) and in accordance with the code set out by the National Health and Medical Research Council (NHMRC) for the treatment of animals in research.
 
-## Apparatus
+### Apparatus
 
 Behavioural procedures were conducted in standard operant chambers (24 [length] x 30 [width] x 21 cm [height] (Med Associates, St Albans, VT) housed within sound- and light-attenuating cabinets equipped with fans providing constant ventilation and low-level background noise. All events were controlled and recorded by MedPC IV software (Med Associates). CS+ and CS- were 10 s 3 kHz tone or 5 Hz flashing light, counterbalanced. Pellets (Bioserve, Biotechnologies) were delivered from a dispenser to a recessed magazine cup (5 × 5 cm); magazine entries were detected using infrared beams at the magazine opening. Retractable levers were located on each side of the magazine. Shocks (0.5 secs, 0.3–0.6mA) were delivered via the grid floor. A 3W house light was mounted at the top of the wall opposite to the magazine and was turned on throughout each session.
 
-## Behavioural procedures (Table 1)
+### Behavioural procedures (Table 1)
 
-## Magazine training
+**Table 1.**
+ Experimental design.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Lever</th>
+      <th>End lever-press training</th>
+      <th>Conditioned punishment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Punished</td>
+      <td>Food (VI30s)</td>
+      <td>Food (VI30s) CS+ → Shock (VI60s)</td>
+    </tr>
+    <tr>
+      <td>Unpunished</td>
+      <td>Food (VI30s)</td>
+      <td>Food (VI30s) CS- (VI60s)</td>
+    </tr>
+  </tbody>
+</table>
+
+_CS+ and CS- were 10 s 3 kHz tone or 5 Hz flashing light, counterbalanced. CS+ co-terminated with shock (0.5 secs, 0.3–0.6mA)._
+
+#### Magazine training
 
 Rats received one session of magazine training, during which pellets were delivered on a variable 60 s interval (VI-60s) schedule until 20 pellets were delivered or 30 min had elapsed.
 
-## Lever-press training
+#### Lever-press training
 
 Following magazine training, rats were trained to press two levers equally on an escalating reinforcement schedule. The first two sessions (30 mins) presented a single lever (left or right, order counterbalanced) to each rat and each lever-press was rewarded with a pellet (FR1). The session terminated after 20 presses or after 30 mins. Animals (n = 2) that did not acquire lever-pressing received extra magazine and FR1 training. This was followed by single-lever sessions (30 mins) that reinforced lever-pressing on VI-15s and VI-30s schedule (one session for each schedule on each lever). Rats were then given double-lever sessions (30 mins); both levers were extended and reinforced on a VI-15s (one session) and modified VI-30s schedule (two sessions). To counteract lever-preferences and equalise lever-pressing on both levers, double-lever VI-30s sessions dynamically adjusted the VI schedule as a ratio of relative lever-press rates, decreasing the reinforcement schedule on the preferred lever and increasing the reinforcement schedule on the non-preferred lever. The last lever-press training session (60 mins) presented both levers and pressing was reinforced on a standard VI-30s schedule for each lever.
 
-## Punishment and fear conditioning
+#### Punishment and fear conditioning
 
 Following lever-press training, rats received 6 days of conditioned punishment training. Both levers were extended for 60mins and pressing was reinforced on a standard VI-30 schedule. In these sessions, the punished lever also yielded an aversive CS+ (VI-60s), while pressing the other unpunished lever yielded a neutral CS- (VI-60s). The CS+ co-terminated with a 0.5 s footshock and the CS- terminated by itself. For the first session, footshock intensity was set at. 3mA. Shock intensity was intermittently incremented by. 1mA between sessions (up to. 6mA) if suppression of ITI lever-pressing was not observed. If a lever-press was scheduled to yield both a pellet and CS at the same time, only the CS was delivered due to its leaner schedule.
 
-## Data analysis
+### Data analysis
 
 Suppression/preference ratios were calculated using rates of lever-pressing on punished and unpunished levers during the inter-trial interval (ITI; non-CS periods), CS+, and CS-. Punishment learning was defined as suppression of punished lever-pressing during the ITI. This was captured in two ways. The traditional assessment is to measure rates of punished responding relative to unpunished responding during the ITI using a ‘preference ratio’ ([Pun ITI rate/total ITI rate]; previously termed a ‘punishment ratio’). Suppression of punished as well as unpunished responding were also assessed using ‘lever suppression ratios’ (session ITI rate/[training ITI rate + session ITI rate]), which capture rates of responding on each lever relative to rates on the final day of pre-punishment training. This allows separate assessment of punished vs. unpunished responding under punishment, clarifying lever preferences or lack thereof. Finally, CS suppression ratios were calculated to assess suppression of lever-pressing (both levers) during each CS relative to ITI (CS rate/[ITI rate + CS rate]). The CS+ ratio measures Pavlovian fear via conditioned suppression, while the CS- ratio acts as a control comparison.
 

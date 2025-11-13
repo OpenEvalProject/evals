@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00jmfr291 Department of Psychology, University of Michigan Ann Arbor United States
+1. Department of Psychology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 

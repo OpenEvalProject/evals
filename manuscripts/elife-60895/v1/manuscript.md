@@ -31,9 +31,17 @@ In this work, we apply FPA and PET-FCS to investigate the folding trajectory and
 
 ## Results
 
-## Sequential folding of HemK NTD on the ribosome
+### Sequential folding of HemK NTD on the ribosome
 
 Native folded HemK NTD (72 amino acids (aa)) consists of five α-helices (H1 to H5) arranged into a globular domain, identical to the NTD conformation in the full HemK protein (Yang et al., 2004; Figure 1a). In solution this domain folds at a rate of 5 ms⁻¹ while the translation rate for HemK NTD is 3.6 amino acids s⁻¹ (Holtkamp et al., 2015). To map the cotranslational folding pathway, we performed high-resolution FPA covering aa 22 to 101 of HemK. We generated a construct that encodes aa 1 to 101 of HemK, which includes the NTD (aa 1–73) and part of the interdomain linker connecting the NTD to the C-terminal domain, followed by 17 codons for the SecM arrest peptide, and an additional sequence encoding 20 aa of protein CspA; the latter served as a reporter for high-tension events in the nascent chain. With the HemK101 construct, the resulting nascent chain (including the SecM peptide; 118 aa in total) is long enough for the entire NTD to emerge from the ribosome. At low force, the ribosome is stalled by the SecM arrest peptide, generating an arrested translation product (AR) (Nilsson et al., 2015). If folding of HemK exerts force, translation arrest is alleviated, resulting in a longer peptide, which we denote as full-length (FL) (Figure 1b). We then constructed a series of mRNAs where the HemK sequence is trimmed in steps of one or two codons from the 3’ end of the HemK mRNA. We translated these mRNAs in a fully reconstituted in vitro translation system from E. coli. In this system, the ribosomes are synchronized at the initiation step and start translation simultaneously after mixing with elongation factors and aa-tRNAs. The experimental setup allows for a single round of translation on a given mRNA, thereby avoiding the potential desynchronization due to re-initiation. The translation products, AR and FL, are separated by SDS-PAGE. By analyzing the fraction of FL product formed, we identify high-tension folding events (Figure 1c).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic representation of the FPA sensor. HemK NTD helices (H) 1–5, the C-terminal linker (orange), SecM arrest peptide (red), and CspA (green) (left) and crystal structure of HemK NTD (PDB ID: 1T43) (right). The mutations introduced in the 4xA variant (L27A, L28A, L55A, L58A) are shown in gray and the N-terminal fluorophore position is shown in lilac. (b) SDS-PAGE of in vitro translation products for the FPA construct of wt HemK. The length of the nascent chain from the N-terminus to SecM AP is indicated (#aa). FL, full-length product; AR, arrested peptide. For controls with shorter nascent chains, see Figure 1—figure supplement 1d. (c) Force profile of HemK NTD folding. fFL is the fraction of the full-length product formed during in vitro translation. Black, HemK wt; blue, HemK 4xA mutant; error bars indicate standard error of mean calculated from three independent biological replicates (N = 3).The schematic underneath shows the potential secondary structure of HemK at the indicated aa chain length. (d) Schematic diagram of HemK NTD compaction events during translation; color code as in (a). The constriction site is indicated by a white band. (e) Schematic overlay of the HemK H1-H3 crystal structure (pink) (PDB ID: 1T43) and ADR1 Zn finger domain crystal structure (blue) inside the peptide exit tunnel, 60–80 Å from the PTC (Nilsson et al., 2015) (PDB ID: 2ADR; EM map: EMD-3079).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Abbreviations as in Figure 1. (a) Representative SDS PAGE of FPA for HemK 4xA variant (b) Representative SDS PAGE of FPA for HemK W6F variant (c) Calculation of fraction of full-length (fFL) product of HemK W6F (green) compared with wt (gray). Approximate HemK PET-FCS construct lengths indicated on graph. Error bars indicate standard error of mean calculated from three independent biological replicates (N = 3) (d) Representative SDS PAGE of the translation product of the mRNA truncated after codon 15 of HemK sequence (15 aa) and SecM arrest peptide only control (0 aa) (e) SDS PAGE of HemK wt and 4xA constructs at lengths 116, 100 and 88, HemK length indicated on the right. (f) Representative SDS PAGE of FPA for HemK Pro variants. The positions of Pro substitutions are indicated in Supplementary file 1 - table 11. (g) Calculation of fraction of full-length (fFL) product of HemK Pro (salmon) compared with wt (black). Error bars indicate standard error of mean calculated from three independent biological replicates (N = 3). The schematic below the graph shows the positions of prolines (stars) mapped on the secondary structure of the N-terminal part of HemK NTD.
 
 The detailed force profile of the HemK NTD reveals several distinct force-generating folding events starting early inside the exit tunnel until the entire NTD emerges from the ribosome (Figure 1c,d). The early high-tension regions are observed at nascent-chain lengths of aa 22–24 (I), 33–39 (II) and 42–52 (III) with a transient force relief at aa 48. At these chain lengths, the nascent peptide is likely to reside in the exit tunnel, as it is protected from protease digestion (Holtkamp et al., 2015). To test whether high-tension regions reflect folding events, we generated a variant of HemK with proline mutations in N-terminal helices H1-H3, which should prevent native helix formation and disturb native cotranslational tertiary packing of the nascent chain. Introducing prolines alters the FPA profile, but to a somewhat different extent in regions I, II and III (Figure 1—figure supplement 1f,g). At 22–24 aa (region I), the wt nascent peptide entails H1 and the subsequent loop region that moved past the tunnel constriction; hence, the observed high tension can reflect folding of H1 on its own or together with the first helical turn of H2. Introducing prolines into the 22–32 region leads to a flattening of the FPA profile (Figure 1—figure supplement 1g), consistent with the notion that the characteristic FPA profile provides a signature for sequence-specific protein compaction within confines of the tunnel. Furthermore, if the polypeptide is truncated within the loop between H1 and H2, tension is abolished (Figure 1—figure supplement 1d), suggesting that the entire first loop sequence together with H1 are necessary to create the high-tension event. This very early cotranslational intermediate of HemK folding deep inside the exit tunnel was not observed so far. The force level decreases as more of H2 emerges and H1 moves further down the exit tunnel, and then increases again before the complete helix H3 is synthesized (high-tension region II). Once H1 and H2 move toward the more open space of the vestibule, they may begin to form tertiary interactions, thereby generating tension. Proline substitutions in the 34–38 region decrease tension considerably (Figure 1—figure supplement 1g), supporting the notion that region II likely represents a folding event.
 
@@ -47,7 +55,7 @@ In addition to the wt HemK NTD, we examined cotranslational folding of the desta
 
 The two following cotranslational folding steps V and VII are similar in duration and amplitude for 4xA and wt, suggesting that these rearrangements are independent of the hydrophobic core packing. In contrast, in regions VI and VIII, the 4xA variant generates consistently higher tension than the wt NTD. This agrees with the notion that the 4xA variant adopts an expanded conformation; the timing of the discrete rearrangements that occur at step IV appears similar for 4xA and wt NTD, but each time when a more bulky 4xA peptide moves toward the ribosome surface, the tension increases. This difference in tension may indicate that the non-native 4xA fold occupies a larger volume has a more dynamic structure, or there are changes in domain stability (Leininger et al., 2019).
 
-## Nascent-chain dynamics monitored with PET-FCS
+### Nascent-chain dynamics monitored with PET-FCS
 
 Next, we monitored the dynamics or ribosome-bound nascent chains by PET-FCS. We utilized the native Trp6 residue (W6) in HemK that could quench an N-terminal ATTO655 fluorophore upon coming into van der Waals distance (Doose et al., 2009). The dynamic motions of the nascent chain define the frequency of these quenching interactions, and the resulting fluorescence intensity fluctuations can be used to track the internal dynamics of the nascent chain (Neuweiler et al., 2003).
 
@@ -55,15 +63,43 @@ First, we studied the dynamics of the HemK NTD in solution. We prepared a 70 aa-
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig2-v1.jpg)
 
-**Figure 2.:** HemK constructs in solution by PET-FCS.(a) ACF of the HemK NTD free in solution. Black, wt variant with Trp at position 6 (W6); red, destabilized 4xA HemK W6 variant; green, HemK wt with no Trp in the nascent chain (W6F); blue, 4xA HemK W6F variant; each curve is derived from two separate release experiments and each experiment consists of at least four technical replicates (N ≥ 8). (b) Autocorrelation curves of HemK14 peptide in solution. Black, W6 variant at low solvent viscosity; red, W6 at high viscosity in the presence of 50% glycerol (Glyc); green, W6F variant at low viscosity; blue, W6F variant at high viscosity. Shown are representative curves of at least two experimental repeats, each consisting of at least four technical replicates (N ≥ 8). (c) Autocorrelation curves of HemK NTD released from the ribosome at high viscosity conditions (50% glycerol). Black, wt W6; red, 4xA W6; green, wt W6F; blue, 4xA W6F. Each curve is derived from two separate release experiments and each experiment consists of at least four technical replicates (N ≥ 8).Figure 2—source data 1.
+**Figure 2.:** (a) ACF of the HemK NTD free in solution. Black, wt variant with Trp at position 6 (W6); red, destabilized 4xA HemK W6 variant; green, HemK wt with no Trp in the nascent chain (W6F); blue, 4xA HemK W6F variant; each curve is derived from two separate release experiments and each experiment consists of at least four technical replicates (N ≥ 8). (b) Autocorrelation curves of HemK14 peptide in solution. Black, W6 variant at low solvent viscosity; red, W6 at high viscosity in the presence of 50% glycerol (Glyc); green, W6F variant at low viscosity; blue, W6F variant at high viscosity. Shown are representative curves of at least two experimental repeats, each consisting of at least four technical replicates (N ≥ 8). (c) Autocorrelation curves of HemK NTD released from the ribosome at high viscosity conditions (50% glycerol). Black, wt W6; red, 4xA W6; green, wt W6F; blue, 4xA W6F. Each curve is derived from two separate release experiments and each experiment consists of at least four technical replicates (N ≥ 8).
 
 We next applied PET-FCS to study dynamics of nascent peptides. We chose the peptide lengths at which all of the NTD has been synthesized and generated RNCs at three stages of translation based on the FRET and PET measurements (Mercier and Rodnina, 2018; Figure 3a). While we indicate the approximate FPA profile peak that these RNC constructs will correspond to, the all-native chain dynamics might differ from the nascent peptides in the FPA assay due to the presence of non-native SecM arrest sequence at the C-terminus (17aa) (Figure 1a). To monitor the nascent chain dynamics during the compaction of H1-H3 within the exit tunnel, we used RNC with a 70 aa-long nascent chain (HemK 70), which shows a high FRET signal and maps roughly between FPA regions III and IV (Figure 1c,d). An RNC with the 102 aa-long nascent chain (HemK 102) should expose H1-H4 at the ribosome surface and maps onto the end of FPA region VI; earlier PET measurements indicate a folding transition around this chain length (Mercier and Rodnina, 2018). To monitor the fully emerged domain, we used an RNC with a 112 aa-long nascent chain (FPA region VIII; Figure 1c,d). To understand how destabilization of the hydrophobic core of the NTD affects the nascent-chain dynamics, we also used the respective 4xA variants. One complication of the PET-FCS experiments with ribosome complexes is that the Trp residues in ribosomal proteins and guanines of the rRNA also quench the N-terminal fluorophore (Doose et al., 2009). To account for these interactions of the nascent peptide with the ribosome surface, we compare the W6 and the respective W6F control constructs.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig3-v1.jpg)
+
+**Figure 3.:** (a) SDS PAGE of nascent chains produced by in vitro translation visualized after RNC purification using the fluorescence of ATTO655. The aa length of HemK wt constructs is indicated. (b) Autocorrelation curves for HemK 70-RNC. Black, wt W6; red, 4xA W6; green, wt W6F; blue, 4xA W6F. Each curve is derived from at least two separate RNC preparations and each experiment consists of at least four technical replicates (N ≥ 8). (c) Autocorrelation curves for HemK 102-RNC. Black, wt W6, green, wt W6F; gray, W6F variant with loop extension between helix 3 and helix 4. Each curve is derived from at least two separate RNC preparations and each experiment consists of at least four technical replicates (N ≥ 8). (d) Autocorrelation curves for HemK 112-RNC. Black, wt W6; red, 4xA W6; green, wt W6F; blue, 4xA W6F; gray, W6F variant with a loop extension between helix 3 and helix 4. Each curve is derived from a minimum of two separate RNC preparations and each experiment consists of at least four technical replicates (N ≥ 8).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Autocorrelation curves of HemK102 wt RNC measurements at increasing laser power (LP). (b) Amplitude of the triplet state relaxation time.
+
 For all RNCs tested, PET-FCS experiments yield multiphasic ACFs spanning the timescale from ms to ns. The diffusion time of the RNC is in the ms time range (Samelson et al., 2016). Initial exponential fitting reveals at least three fast dynamic components in the μs time range. One of the components most likely reflects the triplet state pumping and relaxation of the ATTO655 dye in the complex with the ribosome (Figure 3—figure supplement 1). The relaxation time of the triplet state of ATTO655 attached to the peptide on the ribosome, about 40 µs, is somewhat larger than that measured with a model peptide, which is in the range of 2 µs (Luitz et al., 2017). We then fitted the ACF curves (Figure 3b–d) using a combination of two exponential decays, the triplet state correction, and the diffusion term (Materials and methods). The two relaxation times (τ = 1/k) as estimated by fitting, one in the tens of µs and the other in the µs time range, were observed in all tested complexes, regardless of the presence of the W6 residue that causes intra-chain PET (Supplementary file 1 - table 2). However, the τ1 and τ2 values and the respective amplitudes are different for the respective W6 and W6F constructs, indicating that part of the effect is due to intra-chain PET. Taking into account the known timescales of peptide dynamics in solution (Neuweiler et al., 2010; Luitz et al., 2017; Lum et al., 2012), the shorter relaxation time τ1 most likely reflects the quenching interactions of the fluorophore with the internal Trp or the quenchers at the ribosome surface. The slower relaxation time τ2 is usually attributed to the dynamics of conformational intermediates. To challenge this assignment, we designed two additional RNCs where we changed the dynamics of peptide chain rearrangements. Because long and unstructured loops are known to enhance conformational fluctuations through increased entropy of the folded state (Dagan et al., 2013), we extended a loop between H3 and H4 by five additional Gly residues and generated two RNCs with different lengths of this construct, called 102 loop and 112 loop, respectively. Both τ1 and τ2 values are affected by the loop mutations (Supplementary file 1 - table 2). Because τ1 and τ2 are apparent values that have no biological meaning as such, in the following we develop a kinetic modeling approach to determine the elemental rates of nascent-chain dynamics.
 
-## Kinetic model for the dynamics of nascent chains
+### Kinetic model for the dynamics of nascent chains
 
 To fit the ACF data, we examine a series of kinetic models starting with a simple two-step model and going through a number of alternative models of increasing complexity that would describe the whole dataset with the minimum number of parameters. We find that the minimal model that can fit our ACF dataset must include five-equilibria (model 5e-H and model 5e-O) and models with fewer equilibria are insufficient (Figure 4—figure supplement 1) (Materials and methods). To account for the exponential term on the µs time scale, we assume that nascent chains can undergo a conformational change from state C to state D (C↔D) (Figure 4). In each of these states the N-terminal dye can interact with the internal Trp6. The resulting quenched states are denoted as Wx, leading to the equilibria C↔Wc and D↔Wd. Given that these are fast PET interactions we model the quenched states separately without an equilibrium between them to limit the number of free fitted parameters. By analogy, a quencher on the ribosome surface can quench the fluorescence of states C or D, yielding a non-fluorescent state Rx and the equilibria C↔Rc and D↔Rd (model 5e-H; Figure 4a, right panel). An alternative five-equilibria model is possible (model 5e-O) (Figure 4—figure supplement 2), where the quenched states are not unique, i.e. the Wx and Rx states are the denoted as the same state W or R (Figure 4—figure supplement 2, right panels), this model allows for the possibility of moving from state C to state D and vice versa via one of the shared quenched states W or R.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig4-v1.jpg)
+
+**Figure 4.:** Shown are the results of global fitting of autocorrelation data to the kinetic model 5e-H (right panel). Black – measured data; red – kinetic model simulation curve. C and D are two peptide conformations; Wx –Trp-quenched states; Rx – ribosome-quenched states. Cartoons indicate the presumed position of the nascent chains on the ribosome, with the wt nascent chains shown in magenta, without and with an extra loop, and the 4xA variant shown in blue. (a) HemK 70 W6 and W6F. (b) HemK 70 4xA W6 and W6F. (c) HemK 102 W6 and W6F. (d) HemK 102 and 112, both W6F, with loop extensions. (e) HemK 112 W6 and W6F. (f) HemK 112 4xA W6 and W6F.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Kinetic Model 2e: nascent chain – state C; Trp-quenched state - W, ribosome-quenched state - R. (b) Kinetic model 3e: nascent chain – state C and state D; W and R same as in a. (c) Results of global fitting of autocorrelation data to kinetic model in 2e, shown in a. Plotted on the left-hand y axis: black – measured data, red – kinetic model simulation curve, On the right-hand y axis in open circles – residual values (Res.); Each graph shows a different RNC construct as indicated. (d) Results of global fitting to kinetic model 3e, shown in b. Graph legend as in c.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Black – measured data; red – kinetic model simulation curve. C and D are peptide conformations; W –Trp-quenched state; R – ribosome-quenched state. Cartoons illustrate the likely nascent-chain position on the ribosome, the wt nascent chains are in magenta, without and with an extra loop; the 4xA variant is shown blue. (a) HemK 70 W6 and W6F. (b) HemK 70 4xA W6 and W6F. (c) HemK 102 W6 and W6F. (d) HemK 102 and 112, both W6F, with loop extensions. (e) HemK 112 4xA W6 and W6F. (f) HemK 112 4xA 4xA W6 and W6F. Free-energy barriers between different chain conformations calculated from model 5e-O rates, values and SEM shown in Supplementary file 1 - Table 9. (g) HemK wt constructs of increasing length, 70 aa (blue), 102 (green), and 112 (black). (h) HemK wt and 4xA variants, 70 wt (blue) 70 4xA (lilac), 112 (black), and 112 4xA (red). (i) HemK wt and loop variants, 102 wt (green), 112 wt (black), 102 loop (orange), and 112 loop (yellow).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Free Trp concentration is indicated on the right of each graph. (a) HemK 70 W6F RNC, fitted to model 5e-H (c). (b) HemK 102 W6F RNC, fitted to model 5e-H (c). (c) Global fit kinetic model 5e-H. Nascent-chain conformational states – state D and state C; ribosome quenched states Rd and Rc, Tryptophan quenched states Wd and Wc; Tryptophan in solution T. (d) HemK 70 W6F RNC, fitted to model 5e-O (f). (e) HemK 102 W6F RNC, fitted to model 5e-O (f). (f) Global fit kinetic model 5e-O.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/60895/elife-60895-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (a) Residuals of fits to model 5e-H. (b) Residuals of fits to model 5e-O.
 
 We perform a global fit of the entire HemK RNC dataset to these models in order to determine the elemental rates of the outlined interactions. For reliable fitting of the µs-range data, we extract the dynamic component from the raw ACF curves by removing from each experimental ACF the diffusional and triplet state components using parameters of the empirical fit (Methods, Equation 1; Supplementary file 1 - table 2). This results in time courses with two exponential decays (Figure 4). Because there is no solution to calculate elemental rates from the two apparent rate constants, we additionally measured ACF of RNC 70 W6F and RNC 102 W6F at different free Trp concentrations (Figure 4—figure supplement 3). Global fit of the Trp titration data to the five-equilibria models (Materials and methods) yielded ATTO655–Trp dequenching rate of about 2 μs⁻¹ (Supplementary file 1 - tables 3 and 4). These values were then fixed during global fitting of the main dataset (Figure 4 and Figure 4—figure supplement 2), which allowed us to obtain statistically significant values for rate constants describing nascent-chain dynamics of each HemK NTD variant on the ribosome using both five-equilibria models (Figure 4; Figure 4—figure supplements 2 and 4; Supplementary file 1 - tables 5, 6 and 7; Materials and methods). Here we will primarily discuss the fitting results of the kinetic model 5e-H, which separates the fast PET-based interactions between dye and quencher, from the slower structural conformational fluctuations of the nascent chain itself, thus more adequately exposing the total extent of conformational fluctuations. It is worth noting that while the obtained absolute rate values are different between models 5e-H and 5e-O, the general trends revealed by the rate analysis are supported by both models (Figure 4 and Figure 4—figure supplement 2; Supplementary file 1 - tables 5 and 6).
 
@@ -97,7 +133,108 @@ In summary, the present work shows how a small α-helical protein domain folds c
 
 ## Materials and methods
 
-## HemK constructs for PET and FPA
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HemK wt plasmid</td>
+      <td>DOI: 10.1126/science.aad0344</td>
+      <td>ID_ECBD_2409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HemK 4xA plasmid</td>
+      <td>DOI: 10.1126/science.aad0344</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HemK looped plasmid</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Methods: HemK constructs for PET and FPA; Supplementary file 1 - table 10</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HemK 4xA FPA plasmid</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Methods: HemK constructs for PET and FPA; Supplementary file 1 - table 11</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HemK wt FPA plasmid</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Methods: HemK constructs for PET and FPA; Supplementary file 1 - table 11</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>Purified E. coli in vitro translation system</td>
+      <td>DOI: 10.1073/pnas.92.6.1945; 10.1021/ja407511q; 10.1126/science.1229017; 10.1126/science.aad0344; 10.1016/S0076-6879 (07)30001–3</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BODIPY FL NHS-Ester</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>ID_D2184</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATTO 655-NHS-Ester</td>
+      <td>ATTO-Tec GmbH, Siegen, Germany</td>
+      <td>ID_AD 655–31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism GraphPad</td>
+      <td>GraphPad Software, La Jolla California USA, www.graphpad.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>KinTek Explorer, version 6.3</td>
+      <td>KinTek Global Kinetic Explorer V 6.3 https://kintekcorp.com/software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MicroTime 200 system</td>
+      <td>MicroTime 200 system, PicoQuant, Berlin, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SymPhoTime 64 version 2.2</td>
+      <td>PicoQuant, Berlin, Germany</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### HemK constructs for PET and FPA
 
 The HemK (methyl transferase HemK) coding sequence (ECBD_2409, 834 p, 277aa) was derived from the pET-24a vector. For PET measurements, Trp at position 78 and – where indicated – Trp6 were mutated to Phe either in the wt or the 4xA HemK NTD sequence. The looped construct was generated using Gibson assembly reaction protocol (Gibson et al., 2010; Gibson et al., 2009) introducing five additional glycines in the loop between helix 3 and helix 4, before the wt Gly at position 43. Primers used to generate the glycine insert: forward 5’-CTCGCCTTTGGCGGCGGC and reverse 5’-GCGTTTCACCGCCGCCGCC, primers used to linearize the vector: forward 5’-GGCGGCGGCGGCGGCGGTGAAACGCAGCT and reverse 5’-AAAGGCGAGGATAAAAGTACGCCCTTTGCC. mRNA transcription templates were generated for all lengths using universal commercially available T7 forward primer (Eurofins Genomics, Ebersberg) and three unique reverse primers for the required constructs: 70 (5’-ATGAGCAATGGGTTCACCATCG), 102 (5’-TGCCTGCTCCACCAGACACTCC), 112 (5’-ACGGCAAGGTTGTTCAGGCA) (Eurofins Genomics, Ebersberg). All PET-FCS constructs are shown in Supplementary file 1 - table 10.
 
@@ -105,7 +242,7 @@ The FPA reporters contained a sequence of wt or 4xA HemK (aa 1–101) or HemK Pr
 
 All mRNAs lacked a stop codon and were transcribed in vitro in buffer (40 mM Tris-HCl, pH 7.5, 15 mM MgCl2, 2 mM spermidine, 10 mM NaCl, 10 mM DTT, 5 mM GMP). The DNA template (10% (v/v)) was incubated with 3 mM each of GTP, ATP, CTP and UTP, pyrophosphatase (5 u/ml), RiboLock RNase inhibitor (1.5% (v/v), Fermentas), and T7 RNA-polymerase (1.6 u/μL), for 4 hr at 37°C. The mRNA was purified by anion exchange chromatography on a HiTrap Q HP column (GE Healthcare) operated on Äkta FPLC system in buffer 30 mM Bis-Tris pH 6, 1 mM EDTA, 300 mM NaCl. mRNA was eluted using a linear gradient from 300 mM to 1.5 M NaCl over 20 column volumes. The mRNA-containing fractions were pooled, the mRNAs precipitated with ethanol and the mRNAs pelleted by centrifugation at 4000 g for 1 hr at 4°C. The mRNA pellets were resuspended in RNase- and DNase-free water and the concentration was measured using Nanodrop 2000c (Thermo Scientific). 8 M urea 10% polyacrylamide gel electrophoresis was used for mRNA quality control.
 
-## In vitro translation
+### In vitro translation
 
 Translation components, including 70S ribosomes, initiation factors, elongation factors (EF-G and EF-Tu) and total aminoacyl-tRNAs (aa-tRNAs) were prepared as described (Holtkamp et al., 2015; Rodnina and Wintermeyer, 1995; Mittelstaet et al., 2013; Doerfel et al., 2013; Milon et al., 2007). Initiation complexes were formed in buffer A (50 mM HEPES pH 7.5, 70 mM NH4Cl, 30 mM KCl, 7 mM MgCl2, with 2 mM DTT, and 2 mM GTP). Ribosomes (0.5 μM) were incubated with initiation factors (IF1, IF2, and IF3; 2.25 μM each), mRNA (1.5 μM), and ATTO655-[3H]Met-tRNAfMet (1 µM; for PET-FCS) or BodipyFL-[3H]Met-tRNAfMet (1 µM; for arrest peptide assay) for 45 min at 37°C. Fluorescence-labeled tRNAs were prepared as described (Mittelstaet et al., 2013). EF-Tu–GTP was prepared in buffer A by incubating EF-Tu–GDP (120 μM) with phosphoenol pyruvate (3 mM) pyruvate kinase (0.05 mg/mL) for 15 min at 37°C. The ternary complex EF-Tu–GTP–aa-tRNA was formed by adding total aminoacyl-tRNA (200 μM) to EF-Tu–GTP followed by a 1 min incubation at 37°C.
 
@@ -115,15 +252,21 @@ All translation samples were prepared for Tris-tricine SDS PAGE as follows. The 
 
 To produce free peptide, nascent chains were released from the ribosome with hydroxylamine. RNC was incubated with hydroxylamine (5% w/v; pH ≤8) for 1 hr at 37°C. This was followed by a sucrose cushion centrifugation as above. The supernatant containing the released nascent chains was collected for PET-FCS measurements.
 
-## Fluorescence correlation spectroscopy
+### Fluorescence correlation spectroscopy
 
 Fluorescence correlation measurements were performed using the MicroTime 200 system (PicoQuant, Berlin, Germany), which is based on a modified Olympus IX 73 confocal microscope and equipped with a water objective lens with 60x magnification and 1.2 N.A. (Olympus UPlanSApo). For excitation, a collimated laser (LDH-D-C-640, PicoQuant GmbH) beam with 636.5 nm wavelength (operated in continuous wave mode) with large diameter was focused through the objective into the sample solution. The laser power was set to ~40 µW to minimize Atto655 triplet state formation and to avoid photobleaching. Fluorescence signals were collected using the same objective (epifluorescence configuration) and separated from the excitation light by a dichroic mirror. After that, the collected fluorescence light was focused through a 50 µm pinhole to eliminate fluorescence coming from axial positions away from the focal plane (confocal detection). A 50/50 beam splitter was used to split the fluorescence signal into two channels, where light was focused onto two single-photon avalanche photodiodes (SPAD) after passing through a band pass filter (690/70 nm). The signals of two SPADs were cross-correlated to eliminate SPAD after-pulsing effects.
 
 Purified RNCs were measured at ~4 nM in buffer B, and sample concentration was adjusted in such a way as to yield an average of one molecule within the confocal detection volume for all measurements. For the Trp titrations, ACFs were recorded for purified RNCs of HemK 70 W6F and HemK 102 W6F at different concentrations of added Trp. A solution of 70 mM Trp was prepared in buffer B, and final free Trp concentrations ranged from 1.8 mM to 45 mM. The recorded ACFs were then fitted (Equation 1), and the parameters obtained were processed as described below. Measurements were performed at ambient temperature (22°C). For each RNC solution, single-photon fluorescence detection events were recorded for at least four consecutive time intervals of 10 min. The auto-correlation functions (ACF) were computed using the SymPhoTime 64 software (PicoQuant). After normalization, these ACFs were compared to confirm that the RNCs were stable throughout the duration of the measurement, and the technical replicates were averaged. The experiments were repeated a minimum of 2–3 times for the same class of RNCs from different preparations.
 
-The microscope is set up with a detection volume where the longitudinal dimension is much larger than the transverse dimension. The variance in fit using a 3D versus 2D diffusion models for the fast relaxation times was 2–9%, and 11% for τD, therefore fitting of initial ACFs was carried out using a model for 2D single species diffusion (Krichevsky and Bonnet, 2002; Allen and Thompson, 2006) with two relaxation rate constants, a triplet rate constant, and a diffusion rate constant,(1)G(τ)=(1+c1e−k1t+c2e−k2t)(1−F+F e−kft1−F)(1N)(1+kdt)−1,where k1 and k2 are apparent relaxation rate constants with respective amplitudes c1 and 2, N is the average number of molecules in the confocal volume, F is the amplitude for the triplet component with rate constant kf, and kd is the inverse diffusion time.
+The microscope is set up with a detection volume where the longitudinal dimension is much larger than the transverse dimension. The variance in fit using a 3D versus 2D diffusion models for the fast relaxation times was 2–9%, and 11% for τD, therefore fitting of initial ACFs was carried out using a model for 2D single species diffusion (Krichevsky and Bonnet, 2002; Allen and Thompson, 2006) with two relaxation rate constants, a triplet rate constant, and a diffusion rate constant,
 
-## Kinetic modeling
+$$
+G(\tau)=(1+c_{1}e^{−k_{1}t}+c_{2}e^{−k_{2}t})(\frac{1−F+F e^{−k_{f}t}}{1−F})(\frac{1}{N})(1+k_{d}t)^{−1},
+$$
+
+where k1 and k2 are apparent relaxation rate constants with respective amplitudes c1 and 2, N is the average number of molecules in the confocal volume, F is the amplitude for the triplet component with rate constant kf, and kd is the inverse diffusion time.
+
+### Kinetic modeling
 
 To fit the ACFs of the PET-FCS measurements in the commercial KinTek software, the signal from diffusion and triplet state components was removed from each curve using the respective fitted parameters (Equation 1; Supplementary file 1 - table 2). The software KinTek Global Kinetic Explorer V 6.3 was used for kinetic modeling (Johnson et al., 2009a; Johnson et al., 2009b). In short, the KinTek software is specifically designed for kinetic analysis of complex biological reactions and upon defining the model in simple alphanumerical terms (states); the software automatically generates the differential equations and the numerical integration without simplification or further user input (Johnson et al., 2009a). Using this software, we are able to test many different models for nascent-chain dynamics and by utilizing the multiple rigorous statistical analysis tools integrated into the software (Johnson et al., 2009b) we can immediately analyze the quality of the results in a fast and robust way. In all cases, the exponential decays of different PET quenching curves were simulated by the KinTek software as a sum of species C, D, R (or Rx), and W (or Wx) (see text) for a given HemK construct, multiplied by a species-specific amplitude coefficient. The amplitude coefficients were assumed to be identical for all simulated traces in a particular dataset. We determined the model that was sufficient to fit our data by testing a series of models with increasing complexity:
 
@@ -143,6 +286,12 @@ In the second step, we globally fit the experimental dataset for different RNCs:
 
 Complete fitting results to model 5e-H are displayed in Figure 4, Figure 4—figure supplements 3 and 4; Supplementary file 1 - tables 3, 5 and 8. Complete fitting results to model 5e-O are displayed in Figure 4—figure supplements 2, 3 and 4, Supplementary file 1 - tables 4, 6 and 9. The confidence intervals for rate values obtained by the kinetic fits were calculated by the KinTek software using their in-built fitspace quality-of-fit assessment algorithm (Johnson et al., 2009b) that examines confidence contours at a constant χ2 value of 0.833 for each rate parameter (Supplementary file 1 - table 7).
 
-## Calculations of the transition-state energy barrier
+### Calculations of the transition-state energy barrier
 
-Transition-state theory was used to calculate the energy barrier between the conformational state ensembles of different HemK constructs. The kon and rates of conformational fluctuations between states that were obtained from the kinetic modeling were used to solve for the transition state (ΔG‡) energy barrier between the states (Fersht et al., 1999; Baryshnikova et al., 2005)(2) kon=kBThκ ⋅exp(−ΔG‡−DRT),where R is the gas constant 8.3145 J mol⁻¹; T is temperature (295°K); κ is transmission coefficient (approximated to 1.0 in transition-state theory; Fersht et al., 1999); kB is Boltzmann’s constant 1.38 ×10−23 J K⁻¹; and h is Planck‘s constant 6.6 ×10−34 m2 kg s⁻¹.
+Transition-state theory was used to calculate the energy barrier between the conformational state ensembles of different HemK constructs. The kon and rates of conformational fluctuations between states that were obtained from the kinetic modeling were used to solve for the transition state (ΔG‡) energy barrier between the states (Fersht et al., 1999; Baryshnikova et al., 2005)
+
+$$
+ k_{on}=k_{B}\frac{T}{h}κ ⋅exp(\frac{−ΔG_{‡−D}}{RT}),
+$$
+
+where R is the gas constant 8.3145 J mol⁻¹; T is temperature (295°K); κ is transmission coefficient (approximated to 1.0 in transition-state theory; Fersht et al., 1999); kB is Boltzmann’s constant 1.38 ×10−23 J K⁻¹; and h is Planck‘s constant 6.6 ×10−34 m2 kg s⁻¹.

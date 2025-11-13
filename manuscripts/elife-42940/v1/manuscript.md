@@ -34,7 +34,7 @@
 
 ## Abstract
 
-10.7554/eLife.42940.001 The integrated stress response (ISR) attenuates the rate of protein synthesis while inducing expression of stress proteins in cells. Various insults activate kinases that phosphorylate the GTPase eIF2 leading to inhibition of its exchange factor eIF2B. Vanishing White Matter (VWM) is a neurological disease caused by eIF2B mutations that, like phosphorylated eIF2, reduce its activity. We show that introduction of a human VWM mutation into mice leads to persistent ISR induction in the central nervous system. ISR activation precedes myelin loss and development of motor deficits. Remarkably, long-term treatment with a small molecule eIF2B activator, 2BAct, prevents all measures of pathology and normalizes the transcriptome and proteome of VWM mice. 2BAct stimulates the remaining activity of mutant eIF2B complex in vivo, abrogating the maladaptive stress response. Thus, 2BAct-like molecules may provide a promising therapeutic approach for VWM and provide relief from chronic ISR induction in a variety of disease contexts.
+The integrated stress response (ISR) attenuates the rate of protein synthesis while inducing expression of stress proteins in cells. Various insults activate kinases that phosphorylate the GTPase eIF2 leading to inhibition of its exchange factor eIF2B. Vanishing White Matter (VWM) is a neurological disease caused by eIF2B mutations that, like phosphorylated eIF2, reduce its activity. We show that introduction of a human VWM mutation into mice leads to persistent ISR induction in the central nervous system. ISR activation precedes myelin loss and development of motor deficits. Remarkably, long-term treatment with a small molecule eIF2B activator, 2BAct, prevents all measures of pathology and normalizes the transcriptome and proteome of VWM mice. 2BAct stimulates the remaining activity of mutant eIF2B complex in vivo, abrogating the maladaptive stress response. Thus, 2BAct-like molecules may provide a promising therapeutic approach for VWM and provide relief from chronic ISR induction in a variety of disease contexts.
 
 ## Introduction
 
@@ -48,11 +48,31 @@ Although we found that ISRIB rescued the stability and activity of VWM mutant eI
 
 ## Results
 
-## 2BAct is a novel eIF2B activator with improved in vivo properties in rodents
+### 2BAct is a novel eIF2B activator with improved in vivo properties in rodents
 
 To interrogate efficacy in vivo, we sought a small molecule eIF2B activator with improved solubility and pharmacokinetics relative to ISRIB. To that end, we synthesized 2BAct, which has a differentiated bicyclo[1.1.1]pentyl core and, unlike ISRIB, is no longer symmetric (Figure 1A). 2BAct is a highly selective eIF2B activator and exhibited similar potency to ISRIB in a cell-based reporter assay that measures ISR attenuation (Figure 1—figure supplement 1A and Supplementary file 1A). 2BAct is able to penetrate the central nervous system (CNS) (unbound brain/plasma ratio ~0.3) and also demonstrated dose-dependent oral bioavailability using an aqueous-based vehicle (Supplementary file 1B). Additionally, 2BAct is well-suited for formulation in diet, enabling long-term dosing without effects on body weight in WT mice (Figure 1—figure supplement 1B). The molecule was well-tolerated in the animal studies described here, and did not elicit any relevant effects in a rat cardiovascular (CV) safety study; however, significant anomalies were observed in a dog CV model. This CV safety liability makes this particular molecule unsuitable for human dosing.
 
-## 2BAct normalized body weight gain in VWM mice
+![Figure 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig1-v1.jpg)
+
+**Figure 1.:** (A) Chemical structure of 2BAct and ATF4-luciferase reporter assay EC50. (B) Schematic of the 2BAct treatment experiment. Body weights were measured weekly for the duration of the experiment. (C) Body weight measurements of male mice along the study. Lines are linear regressions. At the 6–11 week time point when 2BAct treatment was initiated, body weights were not significantly different among the three conditions (p>0.05; two-way ANOVA with Holm-Sidak pairwise comparisons). R191H body weight was significantly lower at all subsequent time points. 2BAct-treated animals caught up to WT animals at the 8–13 week time point, and their weights were not significantly different thereafter. (D) Inverted grid test of muscle strength. Time spent hanging was measured up to a maximum of 60 s. (E–F) Beam-crossing assay to measure balance and motor coordination. Time to cross the beam was measured up to a maximum of 30 s (E), and the number of foot slips/falls was counted (F). For (C)-(F), N = 20 (WT), 19 (R191H) and 21 (R191H + 2 BAct) males were analyzed. Error bars are SD. For (D)-(F), *p<0.05; **p<0.01; ***p<10-3; nsp>0.05 by Mann-Whitney test with Bonferroni correction.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Dose response curves of 2BAct and ISRIB in an ATF4-luciferase reporter assay of ISR activation in HEK293T cells. Cells were treated with 100 nM thapsigargin and increasing doses of 2BAct or ISRIB for 7 hr (N = 4, mean ±SD). (B) Body weight measurements of WT mice treated with placebo or 2BAct for 4 weeks, beginning at 6 weeks of age (N = 6/condition/sex). Lines are linear regressions. Weight gain was not significantly different between the treatment conditions (p>0.48; treatment factor in two-way ANOVA). (C) Half-lives of GDP release from eIF2 stimulated by WT and R191H mouse embryonic fibroblast lysates. R191H had significantly reduced GEF activity (p<0.01; two-tailed t-test) that was enhanced by 2BAct. (D) 2BAct EC50 values calculated from dose-response measurements in GEF assays. WT and R191H were not significantly different (p>0.05; two-tailed t-test). For (C) and (D), each bar represents 12 measurements from four independent experiments (mean ±SD).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of the mouse Eif2b5 locus and the targeting vector used. Gray bars, exons; black lines, introns; DTA, diphtheria toxin negative selection cassette. A single base point mutation (CGC to CAC) in exon four changed Arg191 to His. Excision of the neomycin selection cassette by Flp recombinase left behind a single FRT site and two loxP sites flanking exons 3–7. (B) Breeding scheme used to generate homozygous R191H mice. Experiments were performed with homozygous mice from heterozygous parents, and their WT littermates as controls.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Body weight measurements along the study. Lines are linear regressions. 5-week-old R191H mice had significantly lower body weight compared to WT littermates, and the weight difference persisted as animals aged. In both males and females, weights were significantly different at all time points (p<0.01; two-way ANOVA with Holm-Sidak pairwise comparisons). (B) Inverted grid test of grip strength. At week 26, the difference in hang time between WT and R191H was statistically significant. (C–D) Beam-crossing assay to measure motor coordination. Motor deficits were not evident in R191H mice at early time points (8–19 weeks), but became apparent in older animals (23 and 26 weeks). At the later time points, R191H animals took significantly longer to cross the beam (C) and suffered more slips and falls while crossing (D). For all panels, n = 15/genotype were analyzed. Error bars are SD. *p<0.05; **p<0.01; ***p<10-3; nsp>0.05 by Mann-Whitney test with Bonferroni correction.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Body weight measurements along the study. Lines are linear regressions. At the 6–11 week time point when 2BAct treatment was initiated, body weights were not significantly different between the three conditions (p>0.05; two-way ANOVA with Holm-Sidak pairwise comparisons). R191H body weight was significantly lower at all subsequent time points. The body weights of 2BAct-treated R191H females were not significantly different from WT at any time point. (B) Inverted grid test of muscle strength. Time spent hanging was measured up to a maximum of 60 s. (C–D) Beam-crossing assay to measure balance and motor coordination. Time to cross the beam was measured up to a maximum of 30 s (C), and the number of foot slips/falls was counted (D). For all panels, N = 15 (WT), 14 (R191H) and 15 (R191H + 2 BAct) females were analyzed. Error bars are SD. For (B)-(D), *p<0.05; **p<0.01; ***p<10-3; nsp>0.05 by Mann-Whitney test with Bonferroni correction.
+
+### 2BAct normalized body weight gain in VWM mice
 
 We generated a previously described mouse model of VWM that harbors the severe ‘Cree leukoencephalopathy’ mutation, Eif2b5R191H/R191H (hereafter referred to as R191H; Figure 1—figure supplement 2) (Dooves et al., 2016). The homologous human Eif2b5R195H mutation causes an infantile-onset, rapidly progressing form of VWM (Black et al., 1988). R191H mice recapitulate many aspects of the human disease, such as spontaneous myelin loss, progressive ataxia, motor skill deficits, and shortened lifespan (Dooves et al., 2016). We selected this severe disease allele for in vivo studies as pharmacological efficacy in this model is a stringent test for eIF2B activators and, mechanistically, should generalize to milder mutations as seen in vitro (Wong et al., 2018). We confirmed that primary fibroblast lysates from R191H embryos had lower GEF activity than WT lysates, and that 2BAct enhanced this activity threefold (EC50 = 7.3 nM; Figure 1—figure supplement 1C–D).
 
@@ -60,25 +80,53 @@ To test efficacy, we undertook a 21-week blinded treatment study with 2BAct and 
 
 At the initiation of the study (6–11 weeks old), WT and R191H males had similar body weights (Figure 1C and Figure 1—figure supplement 3A). However, 1 week later, a significant difference emerged and continued to grow as R191H mice failed to gain weight (WT gain = 0.5 g/week vs. R191H gain = 0.08 g/week; p<10−4). Remarkably, the body weight of 2BAct-treated R191H males caught up to WT mice 2 weeks after beginning dosing (8–13 weeks old), at which point their rate of weight gain equalized (WT gain = 0.5 g/week vs. R191H gain = 0.55 g/week; p = 0.24; Figure 1C). Similar results were observed in female mice (Figure 1—figure supplement 4A). As lack of weight gain appeared to be the first overt phenotype, rapid normalization by 2BAct was a promising prognostic sign of efficacious target engagement.
 
-## 2BAct prevented the appearance of motor deficits in VWM mice
+### 2BAct prevented the appearance of motor deficits in VWM mice
 
 Longitudinal characterization revealed that R191H mice developed progressive, age-dependent strength and motor coordination deficits. From 8 to 19 weeks of age, R191H animals were not significantly different from WT in their performance on an inverted grid test of neuromuscular function. At 23 weeks, R191H mice showed a trend towards shorter hang times and at 26 weeks, this decrease was highly significant in both sexes (Figure 1—figure supplement 3B). In a beam-crossing test of balance and motor coordination, R191H mice were not significantly different from WT littermates at 8–19 weeks of age (Figure 1—figure supplement 3C–D). However, at 23 weeks of age, beam-crossing time was significantly increased in mutant animals, and they exhibited more foot slips and falls from the beam while crossing. The deficit in both parameters was exacerbated at 26 weeks, and some R191H animals completely failed to cross the beam within the trial cutoff of 30 s (Figure 1—figure supplement 3C). These results are consistent with the original description of the R191H model (Dooves et al., 2016).
 
 With baseline performance measured, we assessed the effect of 2BAct treatment on R191H motor skills. Placebo-treated R191H males had significantly reduced inverted grid hang times at both tested time points, as well as more coordination errors and time spent crossing the balance beam (Figure 1D–F). By contrast, 2BAct-treated R191H males were indistinguishable from WT in both assays. Full normalization was similarly observed in female animals (Figure 1—figure supplement 4B–D). Together, these data show that treatment of R191H animals with 2BAct prevented the progressive deterioration of motor function caused by VWM.
 
-## 2BAct prevented myelin loss and reactive gliosis in VWM mice
+### 2BAct prevented myelin loss and reactive gliosis in VWM mice
 
 VWM is a leukoencephalopathy defined by progressive loss of myelin. In patients with advanced disease, an almost complete loss of cerebral white matter is observed (van der Knaap et al., 1997). Similarly, in a previous characterization of the R191H mouse model, perturbed myelination and myelin vacuolization were noted in the brain beginning at 4–5 months of age (Dooves et al., 2016; Klok et al., 2018). Given the dramatic rescue of behavioral phenotypes by 2BAct, we performed immunohistochemical analysis to examine its effects on myelin and accompanying pathologies at the end of the treatment. We focused on two heavily myelinated regions, the corpus callosum and the spinal cord. Notably, severe spinal cord pathology has recently been reported in both VWM patients and R191H mice (Leferink et al., 2018).
 
 As anticipated, R191H animals showed a clear reduction in myelin by Luxol Fast Blue staining of both regions (33% reduction in corpus callosum, p<10−4; 58% reduction in cervical/thoracic spinal cord, p<10−4; Figure 2A–D). Strikingly, 2BAct treatment maintained myelin levels at 91% and 85% of WT in the corpus callosum and spinal cord, respectively. Staining for myelin basic protein (MBP), an alternative measure of myelin content, corroborated these results in both regions (Figure 2—figure supplement 1A–D). As astrocytes have been implicated in the pathogenesis of VWM, we also stained for the astrocyte marker GFAP (Dietrich et al., 2005; Dooves et al., 2016). We found a significant increase in GFAP in both regions of placebo-treated R191H mice, which was fully normalized by 2BAct treatment (Figure 2A–B and Figure 2—figure supplement 1C–D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative IHC images of the corpus callosum. Scale bar, 250 μm. Inset is magnified 2X. Inset scale bar, 100 μm. (B) Quantification of staining in (A). Area of positive staining expressed as μm2. (C) Representative IHC images of the lower cervical/upper thoracic region of the spinal cord. Scale bar, 500 μm. Inset is magnified 6.8X. Inset scale bar, 50 μm. (D) Quantification of staining in (C). For (B) and (D), N = 12 mice/condition (6 males and six females combined; no significant sex differences were detected). Error bars are SD. *p<0.05; ***p<10-4; nsp>0.05 by 1-way ANOVA with Holm-Sidak pairwise comparisons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative MBP staining in the corpus callosum. Scale bar, 250 μm. Inset is magnified 2X. Inset scale bar, 100 μm. (B) Quantification of staining in (A). Area of positive staining expressed as μm2. (C) Representative IHC images of the lower cervical/upper thoracic region of the spinal cord. Scale bar, 500 μm. Inset is magnified 6.8X. Inset scale bar, 50 μm. (D) Quantification of staining in (C). For (B) and (D), N = 12 mice/condition (6 males and six females combined; no significant sex differences were observed). Error bars are SD. *p<0.05; **p<10−3; ***p<10-4; nsp>0.05 by 1-way ANOVA with Holm-Sidak pairwise comparisons.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative IHC images of the lower cervical/upper thoracic region of the spinal cord of female mice at 2, 4 and 6 months of age. Scale bar, 500 μm. Inset is magnified 6.8X. Inset scale bar, 50 μm. (B) Quantification of staining in (A). N = 3 (2 mo WT), 5 (2 mo R191H), 3 (4 mo WT), 5 (4 mo R191H), 3 (6 mo WT), 4 (6 mo R191H) females. Error bars are SD. *p<0.05; ***p<10-4; nsp>0.05 by 2-way ANOVA with Holm-Sidak correction.
+
 Consistent with the literature, we noted a significant increase in Olig2 in R191H spinal cord (Figure 2—figure supplement 1C–D). Olig2 is a marker of the oligodendrocyte lineage, and its increase could indicate an attempt to compensate for the myelin loss (Bugiani et al., 2011). Additionally, we observed signs of reactive microglia in the placebo-treated R191H samples, as evidenced by a 15-fold increase in Iba-1 staining (Figure 2C–D). ATF3, an ISR target induced in the spinal cord during injury and inflammation, was also significantly increased (Dominguez et al., 2010; Hossain-Ibrahim et al., 2006). 2BAct treatment fully normalized all four of these markers (Figure 2C–D and Figure 2—figure supplement 1C–D). In an analysis of younger mice, we observed no significant differences in myelin, Iba-1 or ATF3 between R191H and WT spinal cord at the start of treatment (2 months of age; Figure 2—figure supplement 2). The time course of pathology was consistent with the emergence of motor deficits, and reflected the degenerative nature of VWM. Together, these results demonstrate that dosing with 2BAct before onset of histological signs prevents CNS pathology in a mouse model of VWM.
 
-## A chronic ISR in the CNS of VWM mice is prevented by 2BAct
+### A chronic ISR in the CNS of VWM mice is prevented by 2BAct
 
 In all eukaryotic systems, ATF4 protein expression is regulated by the level of ternary complex in cells (Harding et al., 2000; Mueller and Hinnebusch, 1986; Vattem and Wek, 2004). We postulated that the decrease in eIF2B GEF activity brought about by the Eif2b5R191H mutation would reduce levels of ternary complex, leading to upregulated ATF4 translation in R191H mice. In support of this, ISR activation has been reported in patient VWM postmortem samples (van der Voorn et al., 2005; van Kollenburg et al., 2006).
 
 To evaluate ISR activity, we measured the expression of 15 transcripts previously identified as ATF4 target genes at three different time points (2.5, 5, and 7 months) during the lifespan and development of pathology. The ISR was robustly and consistently induced at these time points in the cerebellum, forebrain, midbrain and hindbrain of R191H animals (Figure 3A and Figure 3—figure supplement 1A). Significant upregulation of all targets except Gadd34, Slc1a5 and Gadd45a was evident in cerebellum at 2.5 months; at later timepoints, these three transcripts also became significantly induced. The ISR signature was similar across all brain regions with Atf5, Eif4ebp1 and Trib3 being the most upregulated transcripts in the panel. Interestingly, we did not observe ISR induction in R191H mice at postnatal day 14 (Figure 3—figure supplement 1B). Thus, the ISR is activated sometime between 2 and 8 weeks of age through an as-yet unknown mechanism. Activation of this stress response preceded the appearance of pathology (myelin loss, gliosis and motor deficits) in VWM mice.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig3-v1.jpg)
+
+**Figure 3.:** (A) mRNA expression in R191H cerebellum at 2.5 (N = 13/genotype), 5 (N = 20 WT, 19 R191H) and 7 (N = 30/genotype) months of age. (B) Western Blots of the indicated proteins from 7-month-old male cerebellum. Actin was used as a loading control. Each lane represents an individual animal. (C) Schematic of ISR activation in the context of external stressors or VWM. PP1, protein phosphatase 1. Gadd34, an ATF4-induced regulatory subunit of PP1 that targets it to eIF2. (D) mRNA expression in R191H cerebellum (N = 23 WT, 21 R191H, 24 R191H + 2 BAct) and spinal cord (N = 10/condition) at 27–32 weeks of age from the 2BAct treatment study (Figure 1B). For (A) and (D), males and females were combined as there was no significant difference between sexes. Data are shown normalized to WT transcript levels. Bars, mean ±SD. *p<0.01; **p<10-3; nsp>0.05 by Student’s t-test with Holm-Sidak correction (compared to WT). Transcripts without symbols were highly significant with p<10−4. 2BAct treatment was highly significant for all transcripts (p<0.01 vs. placebo treatment). A table of p-values from tests is available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) mRNA expression in R191H brain regions at 2.5 (N = 13/genotype), 5 (N = 20 WT, 19 R191H) and 7 (N = 30/genotype) months of age. *p<0.01; **p<10-3; nsp>0.05 by Student’s t-test with Holm-Sidak correction (compared to WT). Transcripts without symbols were highly significant with p<10−4. (B) mRNA expression in R191H whole brain and spinal cord at postnatal day 14. N = 5/genotype. None of the transcripts were significantly different from WT (p>0.1 by Student’s t-test with Holm-Sidak correction). For (A) and (B), males and females were combined as there was no significant difference between sexes. Data are shown normalized to WT transcript levels. Bars, mean ±SD. A table of p-values from tests is available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** mRNA expression in Eif2b5R132H/R132H cerebellum and spinal cord (N = 6/condition) at 12–14 weeks of age. 2BAct treatment was initiated at 8–10 weeks of age. Data are shown normalized to WT transcript levels. Bars, mean ±SD. ***p<10−5 by Student’s t-test with Holm-Sidak correction (compared to WT). Transcripts without symbols were not significant (p>0.05). A table of p-values from tests is available in Figure 3—source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** mRNA expression in R191H soleus muscle (N = 20 WT, 19 R191H), liver (N = 28 WT, 30 R191H), ovary (N = 6/genotype) and kidney (N = 14/genotype) at 7, 7, 10 and 2.5 months of age, respectively. Males and females were combined as there was no significant difference between sexes. Data are shown normalized to WT transcript levels. Bars, mean ±SD. **p<10−3; ***p<10−5 by Student’s t-test with Holm-Sidak correction (compared to WT). Transcripts without symbols were not significant (p>0.05). A table of p-values from tests is available in Figure 3—source data 1.
 
 In addition to changes in transcript levels, we confirmed translational induction of ATF4 as well as the increase in protein levels of the negative regulator of cap-mediated mRNA translation EIF4EBP1 by Western blot analysis of 7-month-old R191H cerebellum lysates (Figure 3B). As expected for an ISR induced by eIF2B dysfunction rather than external stressors (see schematic in Figure 3C), we did not detect an increase in eIF2α phosphorylation in R191H brains.
 
@@ -88,19 +136,47 @@ To determine whether our results would extend to other VWM mutations, we examine
 
 Even though patients carry the eIF2B mutation(s) in all cell types, VWM manifests as a CNS disease with the exception of ovarian failure in late-onset female patients. In extremely rare and severe cases, renal dysplasia and hepatomegaly have also been recently reported (Hamilton et al., 2018). To evaluate the impact of the R191H mutation on other tissues, we interrogated ISR target expression in various peripheral organs. Upregulation of ATF4 targets was not detected in skeletal muscle, liver, kidney or ovaries (Figure 3—figure supplement 3), demonstrating that the CNS is particularly sensitive to a reduction in eIF2B function.
 
-## 2BAct normalized the R191H brain transcriptome
+### 2BAct normalized the R191H brain transcriptome
 
 Because our targeted RNA panel consisted of only 15 genes, we turned to RNA-seq in order to comprehensively profile the transcriptional changes that take place in the VWM brain. We analyzed cerebellum from WT and R191H mice at 2, 5 and 7 months of age in order to assess potential changes in R191H mice as they develop pathology. We confirmed the upregulation of ISR target genes beginning as early as 2 months of age, the magnitude of which was sustained at 5 and 7 months (Figure 4—figure supplement 1A–C). By contrast, and as expected for a disease driven by dysfunction in eIF2B, we did not observe changes in expression for known downstream targets of the parallel IRE1α or ATF6-dependent branches of the unfolded protein response at any time point (Figure 4—figure supplement 1A–C).
 
 In order to identify additional classes of transcripts that distinguish R191H from WT, we performed singular value decomposition (SVD) analysis on the dataset from 2-month-old mice. We focused on genes with the largest positive and negative loadings on the first eigengene (i.e. the first singular vector from SVD [Alter et al., 2000]), which separated the samples by genotype (Figure 4A–B). The first class consisted of 473 genes with increased expression (positive loadings) in R191H mice. Unsurprisingly, GO-term enrichment analysis revealed categories that contained many known ATF4-dependent targets involved in amino acid metabolism and tRNA aminoacylation (Supplementary file 1C) (Adamson et al., 2016; Han et al., 2013).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig4-v1.jpg)
+
+**Figure 4.:** (A) Scree plot showing the variance explained by each component of the SVD analysis of 2-month-old WT and R191H cerebellum. (B) Individual 2-month-old cerebellum samples plotted along the first and second components of SVD analysis. (C) Heatmap of gene expression changes in WT and R191H cerebellum at 2, 5, and 7 months of age (N = 3/genotype/time point). Shown are the 50 genes with the largest absolute loadings in the first eigengene from SVD analysis of 2 month samples. Source data for (A) -(C) are available in Figure 4—source data 1. (D) Volcano plots showing gene expression changes between R191H and WT (left) and R191H + 2 BAct and WT (right). Orange and green dots indicate transcripts that were more than 2X increased or decreased, respectively, in the R191H vs. WT plot. These dots are replicated on the R191H + 2 BAct vs. WT plot for comparison. (E) Heatmap of gene expression changes in WT and R191H cerebellum treated with placebo or 2BAct for 4 weeks. Genes are the same set plotted in Figure 4C. Colors indicate the scaled ln(TPM) from the mean abundance of the gene across all samples. For (D) and (E), N = 3/condition. Source data for (D) and (E) are available in Figure 4—source data 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Volcano plot showing gene expression changes between R191H and WT cerebellum at 2 months of age. Orange dots indicate genes from the targeted ISR panel. Green dots indicate targets of the IRE1α and ATF6 branches of the UPR. (B) Volcano plots showing gene expression changes between R191H and WT cerebellum samples at 5 (left) and 7 (right) months of age. Orange dots indicate genes from the targeted ISR panel. Green dots indicate targets of the IRE1α and ATF6 branches of the UPR. (C) Volcano plots showing gene expression changes between the R191H vs. WT cerebellum comparisons at different ages (5 mo vs. two mo, left; 7 mo vs. five mo, right). Orange dots indicate genes from the targeted ISR panel. For all panels, N = 3/genotype/time point. Source data are available in Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Heatmap of gene expression changes in WT cerebellum from mice treated with placebo or 2BAct for 4 weeks. The entire analyzed transcriptome is shown. Placebo- and 2BAct-treated samples did not cluster away from each other. Colors indicate the scaled ln(TPM) from the mean abundance of the gene across all samples. Scale limits are the same as shown in Figure 4C and E. (B) Volcano plot showing gene expression changes between 2BAct-treated and placebo-treated WT cerebellum. Orange dots indicate genes from the targeted ISR panel. For (A) and (B), N = 3/condition. Source data are available in Figure 4—source data 2.
+
 A second class comprised 600 genes with reduced expression (negative loadings). These genes were not restricted to expression in a specific cell type, but GO-term enrichment analysis revealed categories related to myelination and lipid metabolism (Supplementary file 1C), suggesting an effect on glial cells such as astrocytes and oligodendrocytes. A gene signature of perturbed myelin maintenance is detectable as early as 2 months, preceding evidence of myelin loss by histological analysis. A heatmap of the 50 genes with the largest absolute loadings on the first eigengene revealed that the expression of both classes persisted and was consistent as the animals aged (Figure 4C).
 
 Our targeted analysis revealed complete abrogation of the ISR by 2BAct treatment (Figure 3D). To test whether 2BAct could also normalize the broad downregulation of transcripts related to CNS function, we performed RNA-seq on cerebellum from 2.5-month-old WT and R191H mice treated for only 4 weeks. Remarkably, both upregulated and downregulated classes of transcripts were normalized in 2BAct-treated R191H mice (Figure 4D). Clustering of samples based on the top 50 genes from the previous analysis confirmed that 2BAct-treated R191H mice were indistinguishable from WT (Figure 4E). Thus, 2BAct normalized the defective expression of glial and myelination-related genes. Moreover, 2BAct treatment of WT mice did not significantly alter gene expression compared to placebo (Figure 4—figure supplement 2A–B). Together, these data demonstrated that 2BAct treatment normalizes the aberrant transcriptional landscape of VWM mice without eliciting spurious gene expression changes in WT mice.
 
-## The ISR is activated in astrocytes and myelinating oligodendrocytes of R191H mice
+### The ISR is activated in astrocytes and myelinating oligodendrocytes of R191H mice
 
 The robust induction of ISR targets in the brain of VWM mice raised the question of whether all CNS cell types are uniformly affected, or whether a subpopulation of cells is particularly susceptible to a decrease in eIF2B function. To address this, we performed single cell RNA-seq (scRNA-seq) on two brain regions, forebrain and cerebellum, of 2.5-month-old WT and R191H mice. Unbiased clustering of single cells from each region identified 13 and 10 clusters in the forebrain and cerebellum, respectively, that were subsequently assigned cell type identities using CNS cell type gene markers obtained from bulk RNA-seq data (Figure 5A, Figure 5—figure supplement 1 and Figure 5—figure supplement 2A) (Koirala and Corfas, 2010; Zhang et al., 2014). Cells from both WT and R191H tissues were represented in each cluster, demonstrating that transcriptionally defined cell types are not influenced by genotype at this early time point in disease progression. Next, we generated an unbiased, tissue-independent ISR target signature by using the top 50 upregulated genes from our bulk RNA-seq analysis of R191H cerebellum as input for Clustering by Inferred Co-Expression (CLIC) analysis (Li et al., 2017). CLIC identified 18 of our input genes as coherently co-expressed across 1774 diverse mouse microarray datasets, and expanded this co-expression module to a final signature comprising 95 genes (Supplementary file 1D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig5-v1.jpg)
+
+**Figure 5.:** (A) tSNE plot showing the 13 transcriptionally defined clusters identified from single-cell analysis of WT and R191H forebrain. (B) Q-values from GSEA based on the differential expression analysis of each WT cluster versus all other WT clusters, using the ISR gene expression signature derived from CLIC. (C) Q-values from the differential expression analysis of R191H vs WT cells for each cluster, using the same ISR signature as in (B). In (B) and (C), dotted lines indicate Q-value thresholds of 0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) tSNE plots showing the cell type clusters identified from scRNA-seq analysis of WT and R191H forebrain and cerebellum. Points represent individual cells color-coded by source animal. (B) Probability of each cluster corresponding to a cell type of defined identity based on published gene signatures (Koirala and Corfas, 2010; Zhang et al., 2014). Each cluster was assigned a single cell type label if any individual probability exceeded 0.5.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) tSNE plot showing the 10 cell type clusters identified from scRNA-seq analysis of WT and R191H cerebellum. (B) Q-values from GSEA based on the differential expression analysis of each WT cluster versus all other WT clusters, using the ISR gene expression signature derived from CLIC. (C) Q-values from the differential expression analysis of R191H vs WT cells for each cluster, using the same ISR signature as in (B). In (B) and (C), dotted lines indicate Q-value thresholds of 0.05.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Q-values from GSEA based on the differential expression analysis of each WT cluster versus all other WT clusters, using the ISR gene expression signature derived from the curated ISR target list. (B) Q-values from the differential expression analysis of R191H vs WT cells for each cluster, using the same ISR signature as in (A). In (A) and (B), dotted lines indicate Q-value thresholds of 0.05.
 
 Using the CLIC-derived signature, we first assessed ISR expression in WT cells only. Strikingly, two astrocyte clusters in the forebrain and Bergmann glia in the cerebellum showed significant enrichment of the ISR signature (q = 0.004, 0.008 and 0.004, respectively), indicating that these cell types have higher basal expression of ISR targets (Figure 5B and Figure 5—figure supplement 2B). By contrast, the ISR signature was insignificant (using a threshold of q = 0.05) or even negatively enriched in other WT CNS cell types.
 
@@ -108,7 +184,7 @@ Next, we investigated the source of upregulated ISR expression in R191H compared
 
 Interestingly, the comparison of R191H to WT cerebellum also revealed significant enrichment of the ISR signature in other non-neuronal cell types, including myelinating oligodendrocytes, an unassigned cell type, and endothelial cells (q = 0.001, 0.005 and 0.02, respectively; Figure 5—figure supplement 2C). We were unable to confidently assign an identity to the unknown cell type, but its expression profile is consistent with a non-neuronal lineage (cluster four in Figure 5—figure supplement 1B). Our findings held true when we repeated the analysis using a manually curated list of ISR target genes (Figure 5—figure supplement 3 and Supplementary file 1D). Collectively, the results of our unbiased analysis suggest that in R191H brain, other cell types beyond astrocytes upregulate the ISR and may contribute to pathology.
 
-## 2BAct normalized the R191H brain proteome without rescuing eIF2B levels
+### 2BAct normalized the R191H brain proteome without rescuing eIF2B levels
 
 Because eIF2B is essential for translation initiation and the Eif2b5R191H mutation reduces its GEF activity, we wondered how well the changes observed by RNA-seq would correlate with changes in the proteome. To address this, we performed tandem mass tag mass spectrometry (TMT-MS) on cerebellum samples at the end of the 2BAct treatment study.
 
@@ -116,11 +192,106 @@ We discovered 42 proteins that increased >1.5 fold in abundance, and 19 protein
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/42940/elife-42940-fig6-v1.jpg)
 
-**Figure 6.:** (A) Volcano plots showing protein abundance changes between R191H and WT (left) and R191H + 2 BAct and WT (right). The y-axis is the inverse of the coefficient of variation. Orange and green dots indicate proteins that were more than 1.5X increased or decreased, respectively, in the R191H vs. WT plot at a posterior probability of >90%. These dots are replicated on the R191H + 2 BAct vs. WT plot for comparison. (B) GO-term enrichment analysis of proteins meeting the threshold for increase in (A). Categories shown have an FDR cutoff smaller than 10−2. Downregulated proteins did not show enrichment for any categories. (C) Quantification of selected ISR, metabolic and neural targets relative to WT levels, showing rescue by 2BAct treatment. Posterior probability *<0.05; **<10−5; ***<10−10 of a <50% difference compared to WT. All targets in the 2BAct-treated condition had posterior probability >0.5 of a <50% difference compared to WT. (D) Quantification of eIF2B subunits relative to WT levels. Posterior probability >0.95 of a <25% difference between placebo-treated and 2BAct-treated conditions. For all panels, N = 6/condition. For (B) and (C), bars are mean ±95% credible intervals. Source data are available in Figure 6—source data 1.10.7554/eLife.42940.026Figure 6—source data 1.
+**Figure 6.:** (A) Volcano plots showing protein abundance changes between R191H and WT (left) and R191H + 2 BAct and WT (right). The y-axis is the inverse of the coefficient of variation. Orange and green dots indicate proteins that were more than 1.5X increased or decreased, respectively, in the R191H vs. WT plot at a posterior probability of >90%. These dots are replicated on the R191H + 2 BAct vs. WT plot for comparison. (B) GO-term enrichment analysis of proteins meeting the threshold for increase in (A). Categories shown have an FDR cutoff smaller than 10−2. Downregulated proteins did not show enrichment for any categories. (C) Quantification of selected ISR, metabolic and neural targets relative to WT levels, showing rescue by 2BAct treatment. Posterior probability *<0.05; **<10−5; ***<10−10 of a <50% difference compared to WT. All targets in the 2BAct-treated condition had posterior probability >0.5 of a <50% difference compared to WT. (D) Quantification of eIF2B subunits relative to WT levels. Posterior probability >0.95 of a <25% difference between placebo-treated and 2BAct-treated conditions. For all panels, N = 6/condition. For (B) and (C), bars are mean ±95% credible intervals. Source data are available in Figure 6—source data 1.
 
 Of the downregulated proteins, 13/19 were transcriptionally downregulated in the RNA-seq experiment, one did not change transcriptionally and five did not meet the RNA-seq abundance threshold. We did not identify significant enrichment of gene sets in the downregulated proteins, likely due to the small number of targets that met our cutoff criteria. Remarkably, 14/19 of these targets are most highly expressed in Bergmann glia or astrocytes, and 9/19 are highly expressed in oligodendroyctes or oligodendrocyte precursor cells (Tabula Muris Consortium et al., 2018). One interesting example that falls into both categories is the fatty-acid binding protein FABP7, the downregulation of which is again suggestive of dysregulation of lipid metabolism (Kipp et al., 2011; Kurtz et al., 1994). Our proteomic data are consistent with the downregulated GO categories observed in RNA-seq, as well as the ISR activation seen in astrocytes and myelinating oligodendrocytes by scRNA-seq. Together, they implicate glial cells as a potential source of dysregulation. Importantly, all downregulated proteins and 40/42 upregulated proteins were normalized by 2BAct treatment (Figure 6A right panel and Figure 6C).
 
 Interestingly, we discovered that levels of all five eIF2B subunits were reduced 15–35% in R191H cerebellum compared to WT (Figure 6D). This decrease occurred at the protein level, as no changes were observed in transcript abundance by RNA-seq. We had previously observed destabilization of eIF2B in HEK293T cells, wherein a VWM mutation in one member of the complex caused a reduction in itself as well as the other subunits (Wong et al., 2018). The finding that long-term treatment with 2BAct does not rescue eIF2B complex levels in vivo suggests that the normalization of all measured endpoints in R191H mice (Table 1) is due to boosting the GEF activity of the remaining mutant complex to functionally normal levels.
+
+**Table 1.**
+ Measured parameters in R191H mice and effect of 2BAct.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>R191H phenotype</th>
+      <th>Effect of 2BAct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Physiological</td>
+    </tr>
+    <tr>
+      <td>Body weight</td>
+      <td>Reduced</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Inverted grid test</td>
+      <td>Reduced hang time</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Balance beam test</td>
+      <td>Longer crossing time, more errors</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td colspan="3">Histological</td>
+    </tr>
+    <tr>
+      <td>Myelin levels</td>
+      <td>Reduced</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>GFAP staining</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Iba-1 staining</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>ATF3 staining</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Olig2 staining</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td colspan="3">Molecular</td>
+    </tr>
+    <tr>
+      <td>ATF4 expression</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>ISR target genes expression</td>
+      <td>Increased</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Transcriptome</td>
+      <td>Deregulated</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>Proteome</td>
+      <td>Deregulated</td>
+      <td>Normalized</td>
+    </tr>
+    <tr>
+      <td>eIF2B complex levels</td>
+      <td>Reduced</td>
+      <td>No effect</td>
+    </tr>
+    <tr>
+      <td>eIF2B specific activity</td>
+      <td>Reduced</td>
+      <td>Increased</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -140,7 +311,164 @@ We and others previously demonstrated that stabilizing the decameric complex can
 
 ## Materials and methods
 
-## Preparation of 2BAct
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R191H VWM mouse model</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Eif2b5R191H/R191H mutation in C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R132H VWM mouse model</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Eif2b5R132H/R132H mutation in C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2BAct</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Synthesized in-house</td>
+    </tr>
+    <tr>
+      <td>Cell line (H.sapiens)</td>
+      <td>HEK293T with ATF4-Luc reporter</td>
+      <td>PMID: 23741617</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantigene Plex 2.0 assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>Custom gene panel</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ONE-GLO luciferase assay system</td>
+      <td>Promega</td>
+      <td>#E6120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-MBP</td>
+      <td>abcam</td>
+      <td>#ab40390 (RRID:AB_11141521)</td>
+      <td>IHC 5 ug/ml; epitope retrieval with pepsin pH 2.3, 10–20 min</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GFAP</td>
+      <td>Millipore</td>
+      <td>#MAB3402 (RRID:AB_94844)</td>
+      <td>IHC 1 ug/ml; epitope retrieval with citrate pH 6, 95C, 30 min</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Iba1</td>
+      <td>Wako Chemicals</td>
+      <td>#019–19741 (RRID:AB_839504)</td>
+      <td>IHC 1 ug/ml; epitope retrieval with citrate pH 6, 95C, 30 min</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-ATF3</td>
+      <td>abcam</td>
+      <td>#ab207434 (RRID:AB_2734728)</td>
+      <td>IHC 4 ug/ml; epitope retrieval with EDTA pH 9, 95C, 30 min</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Olig2</td>
+      <td>abcam</td>
+      <td>#ab109186 (RRID:AB_10861310)</td>
+      <td>IHC 0.3 ug/ml; epitope retrieval with EDTA pH 9, 95C, 30 min</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-ATF4</td>
+      <td>Cell Signaling Technology</td>
+      <td>#11815 (RRID:AB_2616025)</td>
+      <td>Western Blot (1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9722 (RRID:AB_2230924)</td>
+      <td>Western Blot (1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-eIF2α</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3398 (RRID:AB_2096481)</td>
+      <td>Western Blot (1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-4EBP1</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9644 (RRID:AB_2097841)</td>
+      <td>Western Blot (1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho- 4EBP1</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2855 (RRID:AB_560835)</td>
+      <td>Western Blot (1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-actin</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3700 (RRID:AB_2242334)</td>
+      <td>Western Blot (1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-rabbit</td>
+      <td>Promega</td>
+      <td>#W401B</td>
+      <td>Western Blot (1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated goat anti-mouse</td>
+      <td>Promega</td>
+      <td>#W402B</td>
+      <td>Western Blot (1:5000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Luxol Fast Blue</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>#26516–01</td>
+      <td>Histological stain for myelin</td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of 2BAct
 
 To a solution of 5-(difluoromethyl)pyrazine-2-carboxylic acid (20.3 g, 117 mmol) and tert-butyl (3-aminobicyclo[1.1.1]pentan-1-yl)carbamate (22.0 g, 111 mmol) in N,N-dimethylformamide (400 mL) at ambient temperature was added triethylamine (61.9 mL, 444 mmol). The 2-(3H-[1,2,3] triazolo[4,5-b]pyridin-3-yl)- 1,1,3,3-tetramethylisouronium hexafluorophosphate(V) (44.3 g, 117 mmol) was added portion wise over 60 min and the mixture was allowed to stir at ambient temperature for 23 hr. The mixture was quenched with saturated, aqueous NH4Cl (75 mL) and water (30 mL) and diluted with EtOAc (100 mL). The layers were separated and the aqueous layer was extracted with EtOAc (2 × 20 mL) and CH2Cl2 (2 × 30 mL). The combined organic extracts were dried over anhydrous Na2SO4, filtered, concentrated under reduced pressure. The residue was crystallized from EtOH (Et2O wash) to give some solid product. The mother liquor was concentrated under reduced pressure and purified via column chromatography (SiO2, 75% EtOAc/heptanes) to give additional solids. All solids were combined to give tert-butyl (3-(5-(difluoromethyl)pyrazine-2-carboxamido)bicyclo[1.1.1] pentan-1-yl)carbamate (38 g, 107 mmol, 97% yield).
 
@@ -148,73 +476,73 @@ To a solution of tert-butyl (3-(5-(difluoromethyl)pyrazine-2-carboxamido)bicyclo
 
 To a solution of N-(3-aminobicyclo[1.1.1]pentan-1-yl)−5-(difluoromethyl) pyrazine-2-carboxamide, trifluoroacetic acid (39.4 g, 107 mmol) and 2-(4-chloro-3-fluorophenoxy)acetic acid (24.1 g, 118 mmol) in N,N-dimethylformamide (400 mL) was added triethylamine (59.7 mL, 428 mmol). The mixture was cooled to 0°C then 2-(3H-[1,2,3] triazolo[4,5-b]pyridin-3-yl)−1,1,3,3-tetramethylisouroniumhexafluorophosphate (V) (HATU, 44.8 g, 118 mmol) was added portionwise over 30 min and the mixture was allowed to stir at ambient temperature for 16 hr. The mixture was quenched with saturated, aqueous NH4Cl (100 mL) and water (50 mL) and diluted with EtOAc (200 mL). The layers were separated and the aqueous layer was extracted with EtOAc (2 × 50 mL) and CH2Cl2 (2 × 50 mL). The combined organic extracts were dried over anhydrous Na2SO4, filtered and concentrated under reduced pressure. The solids were crystallized from EtOAc/heptanes to give some product. The mother liquor was concentrated under reduced pressure and purified via column chromatography (SiO2, 75% EtOAc/heptanes) to give additional solids. All solids were combined and recrystallized again using charcoal to remove color (material in boiling EtOAc and hot filtered) to give product which was dried under vacuum at 45°C for 2 days to give 2BAct (39 g, 88 mmol, 83% yield) as a white solid.
 
-## 2BAct microsuspension preparation
+### 2BAct microsuspension preparation
 
 An aqueous suspension of 2BAct was prepared by suspending the drug in 0.5% hydroxypropyl methylcellulose (HPMC; Hypromellose 2910, 4000 mPa.s; Spectrum Chemical Manufacturing Corp, NJ) in water. The suspending vehicle was first prepared by adding 5 g of HPMC to 500 mL of miliQ water heated to 60°C. This mixture was allowed to stir until all of HPMC was dispersed. This solution was then transferred to a volumetric flask with two additional rinses of the original container. Sufficient quantity of water was then added to prepare 1 L of vehicle and allowed to stir overnight to obtain a clear suspension. The vehicle was kept refrigerated and allowed to come to room temperature before each use. Fresh vehicle was prepared every month. For preparation of the aqueous suspension of 2BAct, the compound was weighed into an appropriately sized mortar and levigated with a pestle using a small amount of the vehicle. This was then collected into an appropriately sized glass vial, previously marked with a q.s. line. The mortar was rinsed five times, adding each rinse into the glass vial. Additional vehicle was added to the glass vial until q.s. line was reached and entire suspension mixed by vortexing for 10 s.
 
-## 2BAct pharmacokinetics
+### 2BAct pharmacokinetics
 
 Six- to eight-week-old CD1 male mice were dosed with 2BAct at 1 mg/kg or 30 mg/kg orally at a dosing volume of 10 mL/kg. For dosing, 2BAct was micronized and suspended in 0.5% hydroxypropyl methylcellulose (HPMC) (see Microsuspension preparation above). Blood was drawn into EDTA charged capillary tubes via the tail vein at the following timepoints: 0.25, 0.5, 1, 3, 6, 9, 12 and 24 hr (N = 3 measurements per timepoint, mice bled at each timepoint, and combined in pairs for extraction). Blood was centrifuged at 3000 rpm and plasma harvested. Plasma samples and standards were extracted by protein precipitation with acetonitrile containing internal standards. The supernatant was diluted with 0.1% formic acid in water before injection into an HPLC-MS/MS system for separation and quantitation. The analytes were separated from matrix components using reverse phase chromatography (30 × 2.1 mm, 5 µm Fortis Pace C18) using gradient elution at a flow rate of 0.8 mL/min. The tandem mass spectrometry analysis was carried out on SCIEX triple quadrupole mass spectrometer with an electrospray ionization interface, in positive ion mode. Data acquisition and evaluation were performed using Analyst software (SCIEX).
 
-## Preparation of 2BAct in diet
+### Preparation of 2BAct in diet
 
 2BAct was administered orally by providing mice with the compound incorporated in rodent meal (2014, Teklad Global 14% Protein Rodent Maintenance Diet; Envigo, WI). For this, the compound was weighed, added to a mortar with small amount of powdered meal, and ground with a pestle until homogenous. This was further mixed with additional powdered meal in HDPE bottles by either geometric mixing with hand agitation or using a Turbula mixer (Glen Mills Inc., NJ) set at 48 rpm for 15 min or contract manufactured at Envigo to achieve a 2BAct concentration of 300 ppm (300 µg 2BAct/g of meal). Teklad 2014 without added compound was offered as the placebo diet.
 
-## Generation of mouse models
+### Generation of mouse models
 
 The Eif2b5R191H/R191H knock-in mutant mouse model was generated in the background strain C57BL/6J as a service by genOway (Lyon, France). Briefly, a targeting vector was designed against the Eif2b5 locus to simultaneously insert: (1) a Flp-excisable neomycin resistance cassette between exons 2 and 3; (2) a CGC - > CAC codon substitution in exon 4 (changing residue Arg191 to His); (3) loxP sites flanking exons 3 and 7 (Figure 1—figure supplement 2). Successful homologous recombination in ES cells was verified by PCR and Southern Blotting. Chimeras were generated by blastocyst injection, which were then mated to WT C57BL/6J mice to identify F1 heterozygous Eif2b5+/R191H;FRT-neo (flox) progeny. The neomycin resistance cassette was removed by mating of heterozygous mice to Flp deleter mice. The resulting Eif2b5+/R191H (flox) mice were used as colony founders. Experiments were performed using homozygous mutant mice and their WT littermates as controls. The Eif2b5R132H/R132H mouse model was generated in a similar manner.
 
-## Mouse embryonic fibroblast isolation
+### Mouse embryonic fibroblast isolation
 
 Pregnant female C57BL/6J mice (WT and Eif2b5R191H (flox)/R191H (flox)) were sacrificed 13 days after discovery of a post-mating plug. Embryos were dissected out of the uterine horn and separated for individual processing. The head and blood-containing organs of each embryo were removed. The remaining tissue was finely minced with a razor blade and triturated using a pipet. Cells were dissociated with 0.25% trypsin-EDTA for 30 min at 37°C. Dissociated cells were washed once in DMEM +10% FBS+1X antibiotic-antimycotic solution, then plated onto 10 cm dishes in fresh medium. Cells were expanded for two passages before freezing for storage. Cells from each embryo were treated as separate, independent lines.
 
-## Western blots
+### Western blots
 
 Cerebellum lysates were prepared in RIPA buffer (Sigma #R0278)+protease/phosphatase inhibitors (Pierce #A32959). Tissues were lysed in a Qiagen TissueLyser II for 2 × 2 min intervals at 30 Hz. Lysates were incubated on ice for ten minutes and centrifuged (21,000 x g, 10 min, 4°C) to remove cellular debris. Protein concentrations were determined using a Pierce BCA assay (Thermo #23227) and adjusted to 2 mg/mL using RIPA buffer. Lysates were aliquoted, flash-frozen and stored at −80°C. For western blots, samples were run on Mini-PROTEAN TGX 4–20% gradient gels (Bio-Rad #4561096) and transferred using Trans-Blot Turbo Mini-PVDF Transfer packs (Bio-Rad #1704156) on a Trans-Blot Turbo apparatus. Membranes were blocked with 5% milk in TBS-T and incubated overnight with primary antibody in the same blocking buffer at 4°C. After three washes of 15 min each in TBS-T, HRP-conjugated secondary antibodies were applied for 1 hr. Membranes were washed in TBS-T as before. Advansta WesternBright chemiluminescent substrate was applied to the membranes and images were obtained on a Bio-Rad ChemiDoc MP imaging system in signal accumulation mode.
 
-## ATF4-luciferase reporter assay
+### ATF4-luciferase reporter assay
 
 The experiment was performed as previously described (Wong et al., 2018). Briefly, HEK293T cells expressing an ATF4-luciferase reporter (Sidrauski et al., 2013) were seeded into 96-well plates and treated with 100 nM thapsigargin for 7 hr to induce ER stress. Cells were co-treated with 2BAct or ISRIB in dose response. Luminescence was measured using ONE-Glo Luciferase assay reagent (Promega) and a Molecular Devices SpectraMax i3x plate reader. Data were analyzed in Prism (GraphPad Software).
 
-## GEF assay
+### GEF assay
 
 The experiment was performed as previously described (Wong et al., 2018). Briefly, Bodipy-FL-GDP-loaded eIF2 was used as a substrate for lysates generated from WT and R191H MEFs. The assay was performed in 384-well plates. In a final assay volume of 10 µL/well, the following conditions were kept constant: 25 nM Bodipy-FL-GDP-loaded eIF2, 3 nM phospho-eIF2, 0.1 mM GDP, 1 mg/mL BSA, 0.1 mg/mL MEF lysate. 2BAct was dispensed from a 1 mM stock. For each run, triplicate measurements were made for each concentration of 2BAct. Reactions were read on a SpectraMax i3x plate reader using the following instrument parameters: plate temperature = 25°C; excitation wavelength = 485 nm (15 nm width); emission wavelength = 535 nm (25 nm width); read duration = 30 mins at 45 s intervals. Data were analyzed in Prism. GDP release half-lives were calculated by fitting single-exponential decay curves. EC50s were calculated by fitting log(inhibitor) vs response curves.
 
-## Animal care
+### Animal care
 
 Mice were allowed to habituate to our facilities for at least 1 week prior to the start of experiments. Mice were housed on a 12-hr light/dark cycle (lights on at 6:00, lights off at 18:00) in a temperature- and humidity-controlled environment (22 ± 1°C, 60–70% humidity). Experimental procedures took place during the illuminated phase of the cycle. Male mice were individually housed due to aggression. Female mice were housed as shipped from the vendor in groups of 1–3 animals/cage. Animals had free access to food and water. AbbVie is committed to the internationally accepted standard of the 3Rs (Reduction, Refinement, Replacement) and adhering to the highest standards of animal welfare in the company’s research and development programs. Animal studies were approved by AbbVie’s Institutional Animal Care and Use Committee or Ethics Committee. Animal studies were conducted in an AAALAC-accredited program where veterinary care and oversight was provided to ensure appropriate animal care.
 
 Body weights were measured weekly for mice throughout the study. For experiments, mice were pseudo-randomly balanced between treatment groups by date of birth. Analysis of groups was performed in a blinded fashion. Due to the number of animals required for the 2BAct treatment study, mice were binned into age cohorts spanning 5 weeks each. Power analysis was not done prior to beginning the study as experiments were animal-limited. Post-hoc analysis demonstrated that the sample sizes used were sufficient to detect an effect size of 1.1 at 90% power and alpha = 0.05 (two-sided t-test).
 
-## Beam walking
+### Beam walking
 
 A 100 cm long x 2.5 cm diameter PVC pipe, suspended 30 cm above a padded landing area, was used as the balance beam. A length of 80 cm was marked on the pipe as the distance the animals were required to cross. The pipe was placed in a dimly lit room, with a spotlight suspended above the starting end to serve as the aversive condition. A darkened enclosure with bedding was placed at the opposite end to promote a more agreeable condition. A video camera was set above the starting end to record foot slips as the animal progressed across the pipe.
 
 Animals were habituated to the experimental room for at least one hour prior to testing. To begin an experiment, each subject was placed on the starting end of the beam and allowed a cutoff time of 30 s to cross. Elapsed time was only recorded while the subject actively moved towards the finish line; if it turned around or stopped to groom, the timer was paused. If a fall occurred, the subject was restarted at the beginning of the beam. Each subject was given three attempts to complete the balance beam. If a subject failed all three attempts, it was assigned a time of 30 s and a value of 3 falls. The number of foot slips was quantified from the video recording only if the animal completed the task. The balance beam was cleaned and dried between each subject. Due to the non-normal distribution of the data, they were analyzed using a Mann-Whitney (non-parametric) test in Prism. Reported p-values are adjusted for multiple comparisons by the Bonferroni method.
 
-## Inverted grid
+### Inverted grid
 
 Animals were habituated to the experimental room for 30–60 mins prior to testing. A grid screen measuring 20 cm x 25 cm with a mesh density of 9 squares/cm2 was elevated 45 cm above a cage with bedding. Each subject was placed head oriented downward in the middle of the grid screen. When it was determined that the subject had proper grip on the screen, it was inverted 180°. The hang time (duration a subject held on to the screen without falling) was recorded, up to a cutoff time of 60 s. Any subject that was able to climb onto the top of the screen was assigned a time of 60 s. The grid was cleaned and dried between trial days. Due to the non-normal distribution of the data, they were analyzed using a Mann-Whitney (non-parametric) test in Prism. Reported p-values are adjusted for multiple comparisons by the Bonferroni method.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were deeply anesthetized with CO2 and rapidly fixed by transcardiac perfusion with normal saline followed by 10% formalin. Brains and spinal cords were excised and allowed to post-fix in formalin for an additional 2 hr. Samples were processed for paraffin embedding, sectioned at 6 µm, and mounted on adhesive-coated slides. Immunohistochemical staining was carried out using the antibodies described in the Key Resources Table and species-appropriate polymer detection systems (ImmPRESS HRP, Vector Laboratories), and developed with 3,3'-Diaminobenzidine (DAB) followed by hematoxylin counterstaining. For GFAP, DAB development was enhanced with nickel. Myelin staining by Luxol Fast Blue was carried out by the Klüver-Barrera method (Kluver and Barrera, 1953). Sections were dehydrated through successive ethanol solutions, cleared in xylene, and coverslipped using xylene-based mounting media.
 
 To examine histopathological endpoints in the brain, sections from two coronal levels of the corpus callosum were examined beginning at approximately Bregma + 0.7 and+1.0 mm. For the spinal cord, coronal sections from cervical and thoracic levels were examined. Image capture and analysis was achieved using either a 3DHISTECH Pannoramic 250 Digital Slide Scanner (20X, Thermo Fisher Scientific) and HALO image analysis software (version 2.1.1637.26, Indica Labs), or a BX-51 microscope fitted with a DP80 camera (10X) and cellSens image analysis software (Olympus). The same parameters for microscopy and image analysis were uniformly applied to all images for each endpoint. For the spinal cord, the mean area fraction from a single section from both the cervical and thoracic levels served as the value for each subject to normalize to the different size of the anatomical levels. For the corpus callosum, the mean area of positive staining from a single section at each coronal level served as the value for each subject. Data were analyzed by one-way (for single time point experiments) or two-way ANOVA (for multiple time point experiments). Reported p-values are adjusted for multiple comparisons by the Holm-Sidak method.
 
-## RNA isolation
+### RNA isolation
 
 Total RNA was isolated from ~20 mg pieces of each frozen tissue, with a minimum of one extraction performed from each sample. All steps were performed on dry ice prior to the addition of 350 µL of RTL Buffer + 40 µM DTT. Samples were homogenized at 4°C using a Qiagen TissueLyser II (Retsch, Castleford, UK) for 2 × 2 min intervals at 30 Hz with the addition of one 5 mm stainless steel bead (Qiagen catalog # 69965). This was followed by incubation in a Vortemp 56 (Labnet International, Edison, NJ) at 65°C with shaking (300 rpm). The samples were then centrifuged at 15,000 x g for 5 min. RNA extraction was performed using the RNeasy Mini kit (Qiagen, Germany) according to manufacturer’s instructions, eluting in 30 µL nuclease-free H2O. RNA concentration and purity were determined spectrophotometrically.
 
-## QuantiGene plex 2.0 assay
+### QuantiGene plex 2.0 assay
 
 To measure multiplexed transcript expression levels, we designed a custom QuantiGene Plex Panel (Flagella et al., 2006) (Thermo Fisher Scientific, Waltham, MA). Either purified RNA or crude lysates (~15–20 mg of frozen tissue, homogenized using the QuantiGene 2.0 Sample Processing Kit) were used since comparable results were achieved in a head-to-head comparison with a set of samples (data not shown). RNA or tissue homogenates were then subjected to the QuantiGene assay following manufacturer’s instructions. Briefly, this involved: (1) capturing target RNAs to corresponding genes on specified beads through an overnight hybridization; (2) a second hybridization to capture the biotinylated label probes for signal amplification; and (3) a final hybridization to capture the SAPE reagent, which emits a fluorescent signal from each bead set. Signal intensities for each bead set, proportional to the number of captured target RNA molecules, were read on a Luminex Flexmap 3D (Luminex, Northbrook, IL). To control for differences in total RNA input between reactions, background-subtracted output data were normalized to the mean of two housekeeping genes, RPL13A and RPL19. The final data are presented as fold-change for each gene relative to the mean of the corresponding WT samples. Data were analyzed in Prism. Student’s t-test was performed for the panel of genes comparing R191H to WT for each time point and brain region. Reported p-values are adjusted for multiple comparisons by the Holm-Sidak method.
 
-## RNA-seq library preparation and sequencing
+### RNA-seq library preparation and sequencing
 
 RNA-seq libraries were prepared using purified RNA isolated as described above. RNA quality and concentration were assayed using a Fragment Analyzer instrument. RNA-seq libraries were prepared using the TruSeq Stranded Total RNA kit paired with the Ribo-Zero rRNA removal kit (Illumina, San Diego, CA). Libraries were sequenced on an Illumina HiSeq 4000 instrument. For the experiment comparing different ages, N = 3 males/genotype/time point. For the 4-week 2BAct treatment experiment, N = 3 females/condition.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 RNA-seq library mapping and estimation of expression levels were computed as follows. Reads were mapped with STAR aligner (Dobin et al., 2013), version 2.5.3a, to the mm10 reference mouse genome and the Gencode vM12 primary assembly annotation (Mudge and Harrow, 2015), to which non-redundant UCSC transcripts were added, using the two-round read-mapping approach. This means that following a first read-mapping round of each library, the splice-junction coordinates reported by STAR, across all libraries, are fed as input to the second round of read mapping. The parameters used in both read-mapping rounds are: outSAMprimaryFlag =‘AllBestScore’, outFilterMultimapNmax =‘10’, outFilterMismatchNoverLmax =‘0.05’, outFilterIntronMotifs =‘RemoveNoncanonical’. Following read-mapping, transcript and gene expression levels were estimated using MMSEQ (Turro et al., 2011). Transcripts and genes which were minimally distinguishable according to the read data were collapsed using the mmcollapse utility of MMDIFF (Turro et al., 2014), and the Fragments Per Kilobase Million (FPKM) expression units were converted to Transcript Per Million (TPM) units.
 
@@ -222,13 +550,13 @@ In order to test for differential expression between the R191H and WT samples, f
 
 Singular value decomposition analyses were carried out using R’s SVD function. The right singular vectors of the decomposition, referred to as eigengenes, are used to capture the canonical gene expression patters in the data set (Alter et al., 2000). We applied a threshold on the absolute gene loading values defined as two-fold the mean of all absolute values. For GO-term enrichment, analyses were carried out using the online tool at geneontology.org (Ashburner et al., 2000; The Gene Ontology Consortium, 2017). Samples were clustered using the heatmap.2 function from the gplots package (R Core Team, 2018; Warnes et al., 2005).
 
-## Preparation of samples for scRNA-seq
+### Preparation of samples for scRNA-seq
 
 Forebrain and cerebellum were dissected from 2-month-old female mice. Tissues were dissociated by incubation in 2 mg/mL papain solution (BrainBits, Springfield, IL) for 30 min at 37°C with agitation, followed by trituration. To remove large debris, suspensions were successively passed through 100 μm and 40 μm strainers. Cells were pelleted by centrifugation at 280 x g, and pellets were subjected to the Miltenyi Debris Removal protocol with Debris Removal solution according to manufacturer’s instructions (Miltenyi Biotec, Bergisch Gladbach, Germany). Following this, cells were re-filtered through a 40 μm Flowmi cell strainer (Belart, Wayne, NJ).
 
 Single cell RNA-seq libraries were created using the Chromium Single Cell 3′ Library and Gel Bead Kit v2 and associated consumables (10X Genomics, Pleasanton, CA).~7000 cells per sample were loaded onto the Chromium microfluidic chip for an expected recovery of 4000 cells per sample. Manufacturer’s instructions were followed for library preparation, and cDNAs were amplified for 12 cycles. Samples were sequenced on an Illumina HiSeq 4000.
 
-## scRNA-seq data analysis
+### scRNA-seq data analysis
 
 scRNA-seq fastq files were demultiplexed to their respective barcodes using the 10X Genomics Cell Ranger mkfastq utility. Unique Molecular Identifier (UMI) counts were generated for each barcode using the Cell Ranger count utility, with the mm10 reference mouse genome used for mapping reads. For each sample, barcodes that were not likely to represent captured cells were filtered out by detecting the first local minimum above two in a distribution of log10(UMIs).
 
@@ -240,7 +568,7 @@ In order to assign cell identities to our identified clusters, we utilized publi
 
 In order to detect whether ISR activation is cell-type-specific in the WT samples, for each gene in each cluster we performed a differential expression analysis between that cluster and all other clusters as described above. Since the clustering analysis using both WT and R191H samples (described above) found that transcriptionally defined clusters are not influenced by genotype, we used these cluster assignments for the WT, as independent clustering of the WT data alone was not powered enough to obtain the same clustering as when performed on both genotypes. Subsequently, for each cluster we performed a Gene Set Enrichment Analysis (GSEA), using the fgsea R package, with our ISR gene lists – one derived from the CLIC analysis (Li et al., 2017) and a manually curated list of ATF4 targets (Supplementary file 1D), as the gene sets. In order to detect whether ISR activation is cell type-specific between WT and R191H, for each cluster in the combined WT and R191H data, for each gene in each cluster we performed a differential expression analysis contrasting the cells that correspond to the two genotypes. We subsequently performed the ISR GSEA for each cluster.
 
-## Proteomics
+### Proteomics
 
 Frozen brain samples were lysed with 0.9 mL 50 mM HEPES, 75 mM NaCl, 3% SDS, pH 8.5 + protease/phosphatase inhibitors and homogenized using a Qiagen TissueLyser II for 8 cycles at 20 Hz. Samples were then sonicated for 5 min. Lysates were centrifuged (16,000 x g, 5 min) to remove cellular debris. Proteins were reduced with 5 mM dithiothreitol (56°C, 30 min) and alkylated with 15 mM iodoacetamide (room temperature, 30 min). Excess iodoacetamide was quenched with 5 mM dithiothreitol (room temperature, 30 min). Proteins were precipitated by sequential addition of 4 volumes methanol, 1 vol chloroform and three volumes water, with vigorous vortexing in between. Protein pellets were washed with methanol, air-dried, and resuspended in 50 mM HEPES, 8 M urea, pH 8.5. The samples were then diluted to 4 M urea and digested with Lys-C protease (25°C, 15 hr; WAKO Chemicals, Richmond, VA). The urea concentration was then diluted to 1 M and the samples were digested with trypsin (37°C, 6 hr; Promega, Madison, WI).
 
@@ -252,7 +580,7 @@ Pooled TMT-labeled peptides were fractionated using high pH RP-HPLC. Samples wer
 
 Peptides were analyzed on an Orbitrap Fusion Lumos mass spectrometer (Thermo Fisher Scientific) coupled to an Easy-nLC (Thermo Fisher Scientific). Peptides were separated on a microcapillary column (100 µm ID x 25 cm length, filled in-house with Maccel C18 AQ resin, 1.8 µm, 120 A; Sepax Technologies). The total LC-MS run length for each sample was 180 min comprising a 165 min gradient from 6–30% acetonitrile in 0.125% formic acid. The flow rate was 300 nL/min and the column was heated to 60°C. Data-dependent acquisition mode was used for mass spectrometry data collection. A high resolution MS1 scan in the Orbitrap (m/z range = 500–1200, resolution = 60,000; AGC = 5×105; max injection time = 100 ms; RF for S-lens = 30) was collected, from which the top 10 precursors were selected for MS2 analysis followed by MS3 analysis. For MS2 spectra, ions were isolated using a 0.5 m/z window using the mass filter. The MS2 scan was performed in the quadrupole ion trap (CID, AGC = 1×104, normalized collision energy = 30%, max injection time = 35 ms) and the MS3 scan was analyzed in the Orbitrap (HCD, resolution = 60,000; max AGC = 5×104; max injection time = 250 ms; normalized collision energy = 50). For TMT reporter ion quantification, up to six fragment ions from each MS2 spectrum were selected for MS3 analysis using synchronous precursor selection.
 
-## Proteomics data analysis
+### Proteomics data analysis
 
 Mass spectrometry data were processed using an in-house software pipeline as previously described (Huttlin et al., 2010). Briefly, raw files were converted to mzXML files and searched against a composite mouse Uniprot database (downloaded on 9 May 2017) containing sequences in forward and reverse orientations using the Sequest algorithm. Database searching matched MS/MS spectra with fully tryptic peptides from this composite dataset with a precursor ion tolerance of 20 ppm and a product ion tolerance of 0.6 Da. Carbamidomethylation of cysteine residues (+57.02146 Da) and TMT tags of peptide N-termini (+229.162932 Da) were set as static modifications. Oxidation of methionines (+15.99492 Da) was set as a variable modification. Linear discriminant analysis was used to filter peptide spectral matches to a 1% FDR (false discovery rate). Non-unique peptides that matched to multiple proteins were assigned to proteins that contained the largest number of matched redundant peptides sequences.
 

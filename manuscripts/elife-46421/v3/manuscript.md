@@ -36,6 +36,26 @@ Neuropeptides are synthesized as precursors, sorted into dense core vesicles (DC
 
 The DCV lumen has lower pH and free calcium (pH = 5.5–6.75, [Ca2+]~30 µM) compared to the extracellular space (pH = 7.3, [Ca2+]~2 mM) (Mitchell et al., 2001; Sturman et al., 2006). These differences prompted us to test validated sorting domains in a functional ex vivo screen using either pH-sensitive fluorescent proteins (Miesenböck et al., 1998) or genetically-encoded calcium indicators (GECIs) (Tian et al., 2012; Lin and Schnitzer, 2016) (Figure 1—figure supplement 1A–D). Reporters based on pHluorins (Miesenböck et al., 1998) did not perform well in our hands, therefore we focused on GCaMP6s (Chen et al., 2013). The calcium sensitivity threshold of GCaMP6s is below the calcium concentration in both DCVs and the extracellular space. However, GCaMP6s fluorescence is quenched in the acidic DCV lumen (Barykina et al., 2016), enabling it to function as a dual calcium/pH indicator (Figure 1A). These key properties should boost the contrast between GCaMP6s fluorescence in unreleased vs. released DCVs, potentially allowing us to trace NP release at the cellular level in vivo.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic illustrating the principle of NPRRs (Neuropeptide Release Reporters). NPRR molecules in the DCV lumen (low pH/low calcium, left) exhibit increased fluorescence when released by fusion into the extracellular space (neutral pH/high calcium, right). NPRR fluorescent signal is expected to decay following diffusion into the synaptic cleft. New NPRR-containing DCVs are produced by synthesis and transport from the soma, not by recycling. NP: Neuropeptide. DCV: Dense Core Vesicle. SV: Synaptic Vesicle. (B) Distinct motor neuron subtypes at the Drosophila NMJ (muscle 12/13) have different proportions of DCVs vs. SVs. The GAL4 driver R57C10-Gal4 (nsyb-GAL4) labels all subtypes, while R20C11-GAL4 selectively labels only Type III neurons, which lack SVs (‘Type III-GAL4’). Light gray circles, black lines and dark gray shading represent boutons, inter-bouton intervals and subsynaptic reticulum respectively. The studies in this paper focus on Type Ib neurons and Type III neurons (in red rectangles). (C) Triple immunolabeling for GFP (green), Bursicon (blue) and vGluT (red), in flies containing nsyb-GAL4 driving UAS-GCaMP6s (upper), or NPRRANP (lower). Type Ib and Type III boutons are indicated. Scale bar, 5 µm. Inset image (NPRRANP, a-GFP channel) shows details of puncta distribution of NPRRANP in Type Ib neuron. Scale bar, 2 µm. (D) TEM images of boutons immunolabeled with anti-GFP (5 nm gold particle-conjugated) to detect nsyb>NPRRANP-GFP, which has an identical structure to NPRRANP, but is a GFP rather than GCaMP6s fusion to improve antigenicity (see Figure 1—figure supplement 4). Note strong labeling in DCVs (arrows) and the neuronal plasma membrane (arrowheads). Scale bar, 200 nm. Lower panel shows representative images of labeled DCVs. Scale bar,100 nm. (E) Quantification for TEM images in (D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** A series of reporter-neuropeptide precursor fusions were designed, codon-optimized for Drosophila, cloned into expression vectors under the control of the GAL4 upstream activator sequence (UAS), and used to generate transgenic flies. (A) Candidate reporters interrogated included (constitutive) fluorescent reporters, genetically encoded calcium indicators (GECI) and pH indicators (pHluorins). (B) Sorting domain candidates included different truncated versions of rat Atrial Natriuretic Peptide (ANP; single-precursor-single-peptide) and Drosophila tachykinin (dTK; single-precursor-multiple-peptide) precursors. 52 constructs were built and injected. 44 of 54 were successfully integrated as transgenic lines, while eight were excluded due to lethality or unstable expression. (C–D) Candidate UAS-NPRR lines were crossed with an NPF-Gal4 driver line and selected based on their expression in NPF terminals in the adult fly brain. The raw fluorescence intensity of each NPRR candidate was measured using the same microscope parameters (laser power, HV, offset value). 14 candidates passed this screening. (C) We screened the performance of difference NPRRs (signal-to-noise contrast) by measuring fluorescence before and immediately after 70 mM high-potassium challenge in an ex vivo explant preparation of adult fly brains. The post/pre KCl fluorescence ratio is defined as ΔF/F. We arbitrarily set the threshold as 100%. 2 NPRRs with highest ΔF/F passed the final round of screening. Red asterisks indicate the candidates selected for the studies in Figure 2 and Figure 3. Blue asterisk indicates original ANP-GFP fusion) (Burke et al., 1997; Rao et al., 2001).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Membrane-bound mCD8::GFP fusion (A), cytosolic GCaMP6s (B) and NPRRANP (C) were expressed pan-neuronally in the larval NMJ and stained for both ANP (red) and NPRR (green, anti-GFP). (C) Note co-localization of ANP and GFP. Scale bar, 5 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** A GAL4 line (R20C11-GAL4, named Type III-GAL4 in this report) allows specific expression in Type III neurons. Expression patterns of (A) conventional GCaMP, (B) membrane-bound GFP, (C) NPRRdTK and (D) NPRRANP using Type III-GAL4. Arrows indicate boutons in Type III neurons, which contain the neuropeptide Bursicon. Note that anti-vGluT stains other types of motor neurons, which are not labeled by the Type III-specific driver used in this experiment. Scale bar, 5 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** NPRRANP (labeled as NPRRANP-GCaMP6s) (A) and NPRRANP-GFP (B) were expressed pan-neuronally in the larval NMJ and double immune-labeled with antibodies to vGluT (red) and GFP (green). Note that the distribution of GFP signal is similar whether the reporter fusion is GCaMP6s (A) or GFP (B). Scale bar, 5 µm.
+
 We sought to test several NP precursor-GCaMP6s fusion proteins, called NPRRs (NeuroPeptide Release Reporters; unless otherwise indicated all NPRRs refer to fusions with GCaMP6s), in an intact preparation using electrical stimulation to evoke release. Initially for proof-of-principle experiments, we used the Drosophila larval NMJ to test NPRRANP, a GCaMP6s fusion with rat ANP (Burke et al., 1997). NMJ terminals are large, individually identifiable, and easy to image and record. In particular, boutons on muscle 12/13 are diverse -- Type Ib and Type Is boutons contain mostly synaptic vesicles and few DCVs, while Type III boutons contain an abundance of DCVs but no synaptic vesicles (Menon et al., 2013); moreover, Type III-specific GAL4 drivers are available (Koon and Budnik, 2012) (Figure 1B).
 
 Expression of NPRRANP pan-neuronally (under the control of nsyb-GAL4) followed by double immuno-staining for ANP and GCaMP (anti-GFP) indicated that the sorting domain and the reporter domains showed a similar localization in Type III neurons (Figure 1—figure supplement 2). Moreover, the distribution of NPRRANP overlapped that of Bursicon (Figure 1—figure supplement 3D), an NP that is endogenously expressed in Type III neurons (Loveall and Deitcher, 2010). Both GCaMP and Bursicon immunoreactivity were strongest within boutons, consistent with the known subcellular localization of DCVs (Gorczyca and Budnik, 2006).
@@ -46,6 +66,26 @@ The diffraction limit of light microscopy precluded definitive co-localization o
 
 To measure the release of NPRRs from DCVs, we next expressed NPRRANP in Type III neurons using a specific GAL4 driver for these cells (Koon and Budnik, 2012) (Figure 2E and Figure 1—figure supplement 3D). We delivered 4 trials of 70 Hz electrical stimulation to the nerve bundle, a frequency reported to trigger NP release as measured by ANF-GFP fluorescence decrease (Rao et al., 2001; Shakiryanova et al., 2006), and used an extracellular calcium concentration that promotes full fusion mode (Alés et al., 1999). This stimulation paradigm produced a relative increase in NPRRANP fluorescence intensity (ΔF/F), whose peak magnitude increased across successive trials (Figure 2A, red bars and 2D; Video 1; Figure 2—figure supplement 1, A1 vs. A7). Responses in each trial showed a tri-phasic temporal pattern: (1) In the ‘rising’ phase, NPRRANP ∆F/F peaked 0.5–5 secs after stimulation onset, in contrast to the virtually instantaneous peak seen in positive control specimens expressing conventional GCaMP6s in Type III neurons (Figure 2A–B). The NPRRANP latency to peak was similar to the reported DCV fusion latency following depolarization in hippocampal neurons (Xia et al., 2009). This delay is thought to reflect the kinetic difference between calcium influx and DCV exocytosis due to the loose association between DCVs and calcium channels (Xia et al., 2009). (2) In the ‘falling’ phase, NPRRANP ∆F/F began to decline 1–5 s before the termination of each stimulation trial, presumably reflecting depletion of the available pool of releasable vesicles. In contrast, GCaMP6s fluorescence did not return to baseline until after stimulation offset (Figure 2A–B). (3) Finally, unlike GCaMP6s, NPRRANP exhibited an ‘undershoot’ (∆F/F below baseline) during the post-stimulation intervals, followed by a ‘recovering’ phase (Figure 2A; Figures 2C,I1–4). This undershoot may reflect dilution of released fluorescent NPRR molecules by diffusion into the synaptic cleft (van den Pol, 2012), while recovery may reflect DCV replenishment in the boutons from vesicles proximal to the imaged release site.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-v3.jpg)
+
+**Figure 2.:** (A) Trace from a representative experiment showing changes in NPRRANP fluorescence intensity (∆F/F) in Type III motor neurons at the larval NMJ evoked by electrical stimulation. BG: background. S1-S4: Stimulation trials 1–4. I1-I4: Inter-stimulation Intervals (ISIs) 1–4. Green line: ∆F/F averaged across all boutons in the field of view. Gray shading: s.e.m envelope. Red bar: electrical stimulation trials (70 Hz). The three typical phases of the response are indicated in S4. The peak height of the response on the first trial is characteristically lower (see also (D)), and may reflect competition with unlabeled DCVs in the readily releasable pool. (B) ΔF/F traces in control flies expressing cytoplasmic GCaMP6s in Type III neurons. (C) Integrated NPRRANP ΔF/F values during trials S1-4 and intervals I1-4. A.U.: arbitrary units. n = 8. ***, p<0.001. (D) Average NPRRANP ΔF/F peak heights for trials S1-4. n = 8. *, p<0.05. Plotted values in (C–D) are mean ± s.e.m. (E1–E2) Representative selection of ROIs (yellow). Details see Materials and methods. Scale bar, 5 µm. (F) NPRRANP ΔF/F response are abolished in Type III GAL4>UAS NPRRANP flies bearing UAS-TNT (F1) but not UAS-TNTimp (F2). (G) Average peak heights of NPRRANP ΔF/F in combined stimulation trials (S1-4) from (F). ****, p<0.0001. (H) Average ‘undershoot’, defined as the integrated ΔF/F during ISIs I1-4 (see (C)). In (C–D) and (G–H).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Representative still frames (A1–A12) from video recordings of NPRRANP-expressing Type III neurons at the larval NMJ. ‘On’ (A2,4,7,10) represents the onset of electrical pulses. Color bar: Raw fluorescence intensity. Scale bar, 50 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Left: Segmentation of Type III neurons into boutons (orange) and inter-bouton intervals (IBIs, red). Right: Schematic illustrating DCV distribution in Type III neurons, based on photomicrograph to the left. Green dots, DCVs. (B) Average time-integrated ratio of ΔF/F in boutons/IBIs (Materials and Methods), within each stimulation periods. n.s., not significant. *, p<0.05. ***, p<0.001. ****, p<0.0001.(C) TNT does not affect GCaMP6s ΔF/F kinetics. n = 6–7. GCaMP6s peak magnitudes were reduced slightly in TNT (C1) in comparison to TNTimp (C2) preparations, perhaps reflecting partial vulnerability of the cytosolic GCaMP6s reporter to TNT-mediated cleavage and degradation. NPRRs are expected to be protected from TNT by the DCV membrane.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A1, A2) Tetanus toxin (TNT) blocks vesicle fusion by cleavage of n-synaptobrevin (n-syb).
+
+![Video 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-video1.mp4.jpg)
+
+**Video 1.:** Representative video recording of NPRRANP-expressing Type III neurons at the larval NMJ. In the preparation, the Type III neuron was stimulated as described in Figure 2A.
+
 Because NPRRANP fluorescence was preferentially accumulated within boutons, we asked whether these regions contributed to ∆F/F peaks more significantly than the inter-bouton intervals (IBIs). To do this, we partitioned the processes into boutons and IBI fields (Figure 2—figure supplement 2A), and compared the ∆F/F in these regions during stimulation trials. The time-averaged ratio of bouton/IBI ΔF/F (see Materials and Methods) was significantly higher for NPRRANP than for GCaMP6s, particularly during later stimulation trials (Figure 2—figure supplement 2B, green bars, S2-4). This contrast indicates that NPRRANP signals are preferentially observed in boutons, where DCVs are located, and do not reflect differences in cytoplasmic free Ca2+ levels between these regions as detected by GCaMP6s.
 
 To test definitively if NPRRANP ∆F/F signals are dependent upon NP release, we blocked vesicle fusion at terminals of Type III neurons using expression of tetanus toxin light chain (TNT) (Sweeney et al., 1995), a protease that cleaves n-synaptobrevin, a v-snare required for DCV fusion (Figure 2—figure supplement 3) (Xu et al., 1998). As a control, we used impotent TNT (TNTimp), a reduced activity variant (Sweeney et al., 1995). TNT expression completely abolished stimulation-induced ∆F/F increases from NPRRANP, while TNTimp did not (Figure 2F). Further analysis revealed that both the ∆F/F peaks and inter-stimulation undershoots were diminished by TNT (Figure 2G–H). In contrast, neither TNT nor TNTimp affected the kinetics of GCaMP6s signals in Type III neurons (Figure 2—figure supplement 2C), which report cytosolic Ca2+ influx. Taken together, these data support the idea that NPRRANP signals specifically reflect DCV release.
@@ -54,9 +94,17 @@ ANP is a rat NP that lacks a Drosophila homolog (Rao et al., 2001). To determine
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig3-v3.jpg)
 
-**Figure 3.:** Drosophila neuropeptide.(A) Triple immunolabeling for GFP (green), Bursicon (blue) and vGluT (red) in Type III-GAL4> UAS NPRRdTK flies. Scale bar, 5 µm. (B) TEM images of boutons immunolabeled against GFP (5 nm gold) in nsyb-GAL4>UAS NPRRdTK-GFP flies. Note strong labeling in DCVs (arrows) and bouton plasma membrane (arrowheads). Scale bar, 200 nm. Lower panel shows representative images of labeled DCVs. Scale bar,100 nm. (C) Quantification of TEM images in (B). (D) NPRRdTK ΔF/F curve; stimulation conditions as in Figure 2A. (E) Average NPRRdTK ΔF/F peak height above pre-stimulation baseline (corrected; see Materials and methods) for stimulation trials S1-4. n = 6. **, p<0.01.Figure 3—source data 1.
+**Figure 3.:** (A) Triple immunolabeling for GFP (green), Bursicon (blue) and vGluT (red) in Type III-GAL4> UAS NPRRdTK flies. Scale bar, 5 µm. (B) TEM images of boutons immunolabeled against GFP (5 nm gold) in nsyb-GAL4>UAS NPRRdTK-GFP flies. Note strong labeling in DCVs (arrows) and bouton plasma membrane (arrowheads). Scale bar, 200 nm. Lower panel shows representative images of labeled DCVs. Scale bar,100 nm. (C) Quantification of TEM images in (B). (D) NPRRdTK ΔF/F curve; stimulation conditions as in Figure 2A. (E) Average NPRRdTK ΔF/F peak height above pre-stimulation baseline (corrected; see Materials and methods) for stimulation trials S1-4. n = 6. **, p<0.01.
 
 We next investigated the relationship between NPRR signal and stimulation intensity, by delivering to the Type III neurons a series of low to high frequency electrical stimuli (1–70 Hz; Levitan et al., 2007) while imaging the nerve terminals. For direct comparison of NPRR responses across different preparations, we applied a posteriori normalization of fluorescent peaks in each trial to the highest response obtained among all trials. For both NPRRANP and NPRRdTK (Figure 4A–B), the peak responses showed a positive correlation with stimulation frequency, analogous to that observed using cytosolic GCaMP6s (Figure 4C). In Type III neurons, the responses of both NPRRs to stimulation frequencies < 30 Hz (1,5,10,20 Hz) were not statistically significant from zero. NPRRANP showed a higher sensitivity to high stimulation frequencies (30 Hz: 18.14%, 50 Hz: 82.40% Normalized peak ∆F/F), while NPRRdTK showed a higher stimulation threshold and lower sensitivity (30 Hz: 3.57%, 50 Hz: 24.67% Normalized peak ∆F/F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig4-v3.jpg)
+
+**Figure 4.:** For each preparation, a series of stimulation trials were delivered at frequencies from 1 Hz to 70 Hz, as indicated. In-stimulation response peaks were normalized to 70 Hz. The normalized peaks of NPRRs or calcium responses (measured with cytosolic GCaMP6s) were pooled and plotted for both Type III (A-C) and Type Ib (D-F) neurons. Responses were compared to zero. n = 6–12. n.s., not significant. *, p<0.05. **, p<0.01. ***, p<0.001. ****, p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46421/elife-46421-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Normalized ΔF/F peaks in at 30 Hz (A) and 50 Hz (B) electrical stimulation in Figure 4A,B,D,E are replotted and compared. n = 6–7. *, p<0.05. **, p<0.01. n.s., not significant.
 
 We next investigated whether the relatively high stimulation frequency required to observe significant responses with NPRRs was a function of the reporters, or rather of the cell class in which they were tested. To do this, we expressed both NPRRs in Type Ib neurons, a class of motor neurons that contains both SVs and DCVs (Figure 1B, Figure 4D–F), and performed stimulation frequency titration experiments. Strikingly, in Type Ib neurons, significant increases in ∆F/F could be observed at frequencies as low as 10 Hz (Figure 4D,E; NPRRANP @ 20 Hz: 12.50%, NPRRdTK @ 20 Hz: 17.67% normalized peak ∆F/F). The reason for the difference in NPRR threshold between Type III and Type Ib neurons is unknown, but parallels their difference in GCaMP6s response to electrical stimulation (Figure 4C vs. Figure 4F).
 
@@ -76,25 +124,91 @@ The method described here can, in principle, be extended to an in vivo setting. 
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NPRRANP (attp2)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>See Materials and methods, subsection Construction of transgenic animals.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-NPRRdTK (attp2)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Same as above.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNTimp</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:28840; FLYB:FBti0038575; RRID:BDSC_28840</td>
+      <td>Flybase symbol: w[*]; P{w[+mC]=UAS TeTxLC.(-)V}A2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-TNT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC:28838; FLYB:FBti0038527; RRID:BDSC_28838</td>
+      <td>Flybase symbol: w[*]; P{w[+mC]=UAS TeTxLC.tnt}G2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w; +; UAS-GCaMP6s (su(Hw)attp1)</td>
+      <td>Hoopfer et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Aveslab</td>
+      <td>Aveslab: GFP-1020; RRID:AB_2307313</td>
+      <td>(1:250:Immuno-EM, 1:1000: IHC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ANP (rabbit polyclonal)</td>
+      <td>abcam</td>
+      <td>abcam #14348</td>
+      <td>(1:500)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 All experimental flies were reared on a 12/12 hr day-night cycle at 25°C. Standard chromosomal balancers and genetic strategies were used for all crosses and for maintaining mutant lines. Detailed genotypes used are summarized in Supplementary file 3. The following strains were obtained from Bloomington Stock Center (Indiana University): R20C11-Gal4 (#48887), R57C10-Gal4 (#39171), UAS-mCD8::GFP (#32185), UAS-TNT (#28838), UAS-TNTimp (#28840). UAS-opGCaMP6s was made by Barret Pfeiffer (Gerald Rubin’s lab, Janelia Farm) (Hoopfer et al., 2015).
 
-## Construction of transgenic animals
+### Construction of transgenic animals
 
 All PCR reactions were performed using PrimeSTAR HS DNA polymerase (Takara #R045Q). All constructs were verified via DNA sequencing (Laragen).
 
 To construct UAS-NPRRANP, Drosophila codon-optimized ANP and GCaMP6s were synthesized using gBlocks service (Integrated DNA Technologies), and subcloned into pJFRC7 vector (from Addgene #26220) (Pfeiffer et al., 2010) using Gibson cloning. UAS-dTK-NPRR is built in a similar way except the dTK fragment was cloned from the Drosophila brain cDNA. NPRRdTK-GFP and NPRRANP-GFP were built similarly except Drosophila codon-optimized GFP was used for the subcloning. All the vectors were injected and integrated into attP2 or attp40 sites (Bestgene Inc; see Supplementary file 3 for attP sites used for each genotype employed).
 
-## Expression screening of NPRR candidates
+### Expression screening of NPRR candidates
 
 Adult fly brains were dissected in chilled PBS and fixed in 4% formaldehyde for 55 min at room temperature. After three 10 min rinses with PBS, the brains were cleared with Vectashield (#1000, Vectorlabs), mounted, and used for native fluorescence measurements. We trace the NPF neuron somata and arborization as ROIs. We selected regions next to NPF neurons and measured its fluorescent intensity as a reference, which represents background autofluorescence. Candidates whose fluorescence reached at least 2-fold higher than reference were selected for functional screening.
 
-## Functional screening of NPRR candidates
+### Functional screening of NPRR candidates
 
 For the baseline fluorescence measurement, we crossed NPF-Gal4 to the candidate lines and generated NPF-Gal4>NPRRx (x = candidate label) flies for tests. The dissected adult fly brains were mounted on a petri dish and immersed in Drosophila imaging saline (108 mM NaCl, 5 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES, pH 7.5). To deliver high potassium challenge, High-K imaging saline was perfused (43 mM NaCl, 70 mM KCl, 2 mM CaCl2, 8.2 mM MgCl2, 4 mM NaHCO3, 1 mM NaH2PO4, 5 mM trehalose, 10 mM sucrose, 5 mM HEPES, pH 7.5). Live imaging series were acquired using a Fluoview FV3000 Confocal laser scanning biological microscope (Olympus) with a 40×, 0.8 N.A. (Numerical Aperture) water immersion objective (Olympus). Candidates whose post-stimulation fluorescence reached at least 2-fold of baseline fluorescence (measured as averaged pre-stimulation fluorescence) were selected for in vivo tests at NMJ. For each candidate line, at least three brains were tested and fold-change of each was averaged.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Larval dissection was performed in chilled HL3 solution (70 mM NaCl, 5 mM KCl, 20 mM MgCl2, 10 mM NaHCO3, 115 mM sucrose, 5 mM trehalose, 5 mM HEPES and 1.5 mM CaCl2, pH 7.2). Dissected tissues were fixed in 4% formaldehyde or Bouin’s solution for 30 min at room temperature. After three 15 min rinses with PBS, tissues were incubated with primary antibodies overnight at 4°C. Following three 15 min rinses with PBS, tissues were incubated with secondary antibody for 2 hr at room temperature. Following three 15 min rinses, tissues were cleared with Vectashield (#1000, Vectorlabs) and mounted. Confocal serial optical sections were acquired using a Fluoview FV3000 Confocal laser scanning biological microscope (Olympus) with a 60×, 1.30 N.A. silicone oil objective (Olympus). All image processing and analyses were done using ImageJ (National Institute of Health).
 
@@ -102,7 +216,7 @@ The following primary antibodies were used: Chicken anti-GFP (1:250-1:1000, Aves
 
 The following secondary antibodies were used: Alexa Fluor 488 Goat anti-Chicken IgY (#A11039, Invitrogen), Alexa Fluor 488 Goat anti-Rabbit IgG (#A11008, Invitrogen), Alexa Fluor 568 Goat anti-Rabbit IgG(H + L) (#A11011, Invitrogen), Alexa Fluor 633 Goat anti-Rabbit IgG(H + L) (#A21070, Invitrogen), Alexa Fluor 488 Goat anti-Guinea Pig IgG(H + L) (#A11073, Invitrogen), Alexa Fluor 568 Goat anti-Guinea Pig IgG(H + L) (#A11075, Invitrogen), Alexa Fluor 568 Goat anti-Mouse IgG(H + L) (#A11004, Invitrogen) and Alexa Fluor 633 Goat anti-Mouse IgG(H + L) (#A21050, Invitrogen).
 
-## Electron microscopy
+### Electron microscopy
 
 Drosophila tissues were fixed in 4% formaldehyde in PBS and stored at 4°C until preparation by high-pressure freezing (HPF) and freeze-substitution (FS) (Buser and Walther, 2008; Buser and Drubin, 2013). Tissues were cryoprotected in 2.3 M sucrose for 45 min, transferred to 200 µm deep planchettes and high-pressure frozen in an EMPact2 with RTS (Leica, Vienna, Austria). FS was carried out in an AFS2 (Leica, Vienna, Austria) in methanol containing 5% water, 0.05% glutaraldehyde and 0.1% uranyl acetate (−90°C, 3 hr; −90 to −80°C, 10 hr; −80°C, 4 hr; −80°C to 4°C, 24 hr). Samples were washed once in methanol containing 5% water, infiltrated with hard grade LR White (Electron Microscopy Sciences, Hatfield, PA, USA) at 4°C ([LR White]: [methanol containing 5% water] 1:1, 24 hr; 100% LR White, 3 × 24 hr) and polymerized in a fresh change of LR White using a Pelco BioWave (Ted Pella, Inc, Redding, CA, USA) set to 750 W, 95°C for 45 min.
 
@@ -110,16 +224,16 @@ Drosophila tissues were fixed in 4% formaldehyde in PBS and stored at 4°C until
 
 Labeling density was estimated using stereological methods (Griffiths and Hoppeler, 1986). Cross-sections through boutons were recorded and the following parameters were measured: total image area, total number of gold particles, number of visible dense core vesicles (DCV), number of gold particles within a 50 nm radius of the DCV center, bouton area (grid intersection estimate), gold within the bouton cytoplasm, gold within 20 nm of the bouton plasma membrane, gold outside of the bouton (mainly sER). Background labeling was estimated using internal controls (labeling on blank resin and on muscle fibers) and a biological control (non-GFP expressing genotype). Occasional obvious, large gold aggregates were disregarded. Background was consistently below 0.6 gold/µm2 in independently repeated labeling experiments.
 
-## Electrical stimulation
+### Electrical stimulation
 
 The dissection of third-instar larvae was performed in zero-calcium HL3 saline. The CNS was removed to avoid spontaneous motor neuron activity. To minimize muscle contraction induced by electrical stimulation of motor neurons, the larval body walls were slightly stretched and incubated in HL3 saline supplemented with 10 mM glutamate for 5 mins after dissection to desensitize postsynaptic glutamate receptors. Samples were then shifted to HL3 saline containing 1 mM glutamate and 1.5 mM Ca2+. Motor nerves were sucked into a glass micropipette with a stimulation electrode. In Figure 2 and Figure 3, to induce maximum dense core vesicle release at type III motor neuron terminals, four repetitive bursts (70 Hz stimulation for 18–20 s with pulse width of 1 ms) with intervals of 40–42 s were programmed and triggered with a Master-9 stimulator (A.M.P.I., Israel) connected to an iso-flex pulse stimulator (A.M.P.I., Israel). The stimulation intensity was tested and set to double the intensity required to induce muscle contraction by a single pulse stimulation.
 
 In Figure 4, stimulation trials were delivered with the same duration, but with a series of frequencies spanning 1 Hz to 70 Hz.
 
-## Calcium imaging
+### Calcium imaging
 
 A Nikon A1R confocal microscope with resonant scanner and NIS Element software were used to acquire live Ca2+ imaging on third instar larvae, bathed with 1 mM glutamate added in 1.5 mM Ca2+ HL3 saline. Type III motor neuron terminals in abdominal segments from A2 to A5 were imaged using a 60x APO 1.4 N.A. water immersion objective with 488 nm excitation laser. A 5 min period was used for time-lapse imaging at a resonance frequency of 1 fps (512 × 512 pixels or 1024 × 1024 pixels), with z-stacks (step length varying from 1 to 1.5 μm) covering the depth of entire type III motor neuron terminals. The repetitive electrical stimulation of 70 Hz was delivered during the imaging session. Samples with severe muscle contractions were abandoned due to imaging difficulties. Maximum intensity projection (MIP) and image registration were conducted using Image J. Plugins including Image Stabilizer (K. Li, CMU) and Template Matching (Q. Tseng) were used for compensating drifting and correcting movement induced by electrical stimulations. ROIs were manually selected by tracing the outer edge of each neuron based on the baseline fluorescence. If the fluorescence was too weak to trace, we established a reference stack by empirically adjusting the contrast on a duplicate of the raw image stack. We used the reference stack for ROI selection and projected the selected ROIs back onto to the raw image stack for measurement. For frames in which the sample movement could not be automatically corrected, we manually outlined the ROIs used for measurements. Preparations with severe movement or deformation artifacts were abandoned to avoid unreliable measurements. Each ROI represent a traceable neuronal branch except Figure 2—figure supplement 2B, in which the ROIs were further manually partitioned into boutons and IBIs (Inter-Bouton Intervals) based on morphology. Fluorescence change were normalized to the pre-stimulation background except for Figure 3E, for which the data in each trial was normalized to the average ∆F/F during a 5 s period just before stimulation was initiated. No sample size is predetermined based on statistics. Ca2+ imaging data were acquired from at least six independent NMJs from at least five animals.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± s.e.m. All data analysis was performed with Graphpad Prism 6, Microsoft Excel and custom Matlab codes (Source code 1). Mann-Whitney U test was used for comparison except in Figure 4, where One-sample T test was used for comparison with a specified value (0).

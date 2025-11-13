@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.45303.001 Adult neurogenesis in the hippocampus may represent a form of plasticity in brain functions including mood, learning and memory. However, mechanisms underlying neural stem/progenitor cells (NSPCs) proliferation are not well understood. We found that Agrin, a factor critical for neuromuscular junction formation, is elevated in the hippocampus of mice that are stimulated by enriched environment (EE). Genetic deletion of the Agrn gene in excitatory neurons decreases NSPCs proliferation and increases depressive-like behavior. Low-density lipoprotein receptor-related protein 4 (Lrp4), a receptor for Agrin, is expressed in hippocampal NSPCs and its mutation blocked basal as well as EE-induced NSPCs proliferation and maturation of newborn neurons. Finally, we show that Lrp4 interacts with and activates receptor tyrosine kinase-like orphan receptor 2 (Ror2); and Ror 2 mutation impairs NSPCs proliferation. Together, these observations identify a role of Agrin-Lrp4-Ror2 signaling for adult neurogenesis, uncovering previously unexpected functions of Agrin and Lrp4 in the brain.
+Adult neurogenesis in the hippocampus may represent a form of plasticity in brain functions including mood, learning and memory. However, mechanisms underlying neural stem/progenitor cells (NSPCs) proliferation are not well understood. We found that Agrin, a factor critical for neuromuscular junction formation, is elevated in the hippocampus of mice that are stimulated by enriched environment (EE). Genetic deletion of the Agrn gene in excitatory neurons decreases NSPCs proliferation and increases depressive-like behavior. Low-density lipoprotein receptor-related protein 4 (Lrp4), a receptor for Agrin, is expressed in hippocampal NSPCs and its mutation blocked basal as well as EE-induced NSPCs proliferation and maturation of newborn neurons. Finally, we show that Lrp4 interacts with and activates receptor tyrosine kinase-like orphan receptor 2 (Ror2); and Ror2 mutation impairs NSPCs proliferation. Together, these observations identify a role of Agrin-Lrp4-Ror2 signaling for adult neurogenesis, uncovering previously unexpected functions of Agrin and Lrp4 in the brain.
 
 ## Introduction
 
@@ -39,15 +39,23 @@ Agrin is a proteoglycan utilized by motoneurons for postsynaptic assembly of the
 
 ## Results
 
-## Requirement of EE-induced Agrin in adult neurogenesis
+### Requirement of EE-induced Agrin in adult neurogenesis
 
 To identify factors that contribute to EE-induced neurogenesis in the hippocampus, we adopted an EE behavioral paradigm as previously described (Sztainberg and Chen, 2010) (Figure 1A). Mice were housed for 4 weeks in a chamber (86×76×24 cm) that contained two running wheels, tubes and nest boxes (designated as EE cage). Compared with mice that were housed in standard cages (SC), mice housed in EE cages displayed more Arc+ granule cells in the dental gyrus region of the hippocampus (Figure 1B and C), in agreement with previous reports (Pinaud et al., 2001). To validate this behavioral paradigm, we analyzed hippocampal mRNA for expression of various secretable proteins. EE increased levels of Bdnf, Igf1, and Vegf (Figure 1D), in agreement with previous reports (Cao et al., 2004; Keyvani et al., 2004; Rossi et al., 2006). Unexpectedly, Agrn was also increased in the hippocampus of EE animals, as compared with SC animals. This effect appeared to be specific because levels of ApoE and Wnt5a remained similar between mice of EE cages and SC (Figure 1D). Interestingly, the expression level of Lrp4, a receptor of Agrin, was increased by EE. In contrast, expression of MuSK, which was low in the brain, was not changed by EE (Figure 1E). These results led us to posit that Agrin, possibly via Lrp4, may contribute to EE-induced adult neurogenesis in the hippocampus.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of standard cage (SC) and environmental enrichment (EE) housing. (B–C) Increased Arc+ cells in hippocampus of mice in EE, compared with SC-housed mice. n = 3 for each group, Student’s t-test: t (4)=5.493, p=0.0054. (D) Increased Agrn mRNA level in hippocampus of EE-housed mice, compared with SC-housed mice. n = 3 for each group. Student’s t-test: t (4)=3.641, p=0.022 (Bdnf); t (4)=9.545, p=0.0007 (Igf1); t (4)=3.32, p=0.0294 (Vegf); t (4)=3.434, p=0.0264 (Agrn); t (4)=0.7758, p=0.4812 (ApoE); t (4)=0.3968, p=0.7117 (Wnt5a). (E) Increased Lrp4 mRNA level in hippocampus of EE-housed mice, compared with SC-housed mice. n = 3 for each group. Student’s t-test: t (4)=8.04, p=0.0013 (Lrp4); t (4)=1.76, p=0.1527(MuSK). (F–I) Reduced BrdU, Mcm2, and Dcx-labeled cells in Agrin CKO hippocampal SGZ. (F) Representative images. Scale bar,100 µm. (G–I) Stereological quantification of BrdU+ (G), Mcm2+ (H), and Dcx+ (I) cells. n = 4 for each group. Student’s t-test: t (6)=3.656, p=0.0106 for BrdU; t (6)=4.185, p=0.0058 for Mcm2; t (6)=3.410, p=0.0143 for Dcx. (J) Agrin CKO mice increased latency to find the hidden platform F(1,70)=7.81, p=0.0067. (K) Reduced time spent in target quadrant. n = 8 for each group, Student’s t test: t (14)=2.639, p=0.0195. (L) Reduced number of platform crossings. n = 8 for each group, Student’s t test: t (14)=0.0386. (M) Reduced preference score during test section. n = 8 for each group, Student’s t test t (14)=2.865, p=0.0125. (N–O) Increased immobility of Agrin CKO mice, compared with control mice, in FST (N) and TST (O). n = 8 for each group. Student’s t-test: t (14)=3.956, p=0.0014 for FST; t (14)=2.691, p=0.0175 for TST. Data are mean ± s.e.m; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Agrnf/f mice were crossed with Neurod6-Cre mice. Resulting Neurod6-Cre::Agrnf/+ mice were crossed with Agrnf/+ mice to generate Neurod6-Cre::Agrnf/f (Agrin CKO) and Agrnf/+ or Agrnf/f (Control). (B) Reduced Agrn mRNA levels in Agrin CKO hippocampus, compared with control mice. nAgrn, neuronal Agrn. n = 3 for each group. Student’s t-test: t (4)=12.5, p=0.0002 (total Agrn); t (4)=28.1, p<0.001 (nAgrn). (C) Similar body weights between control and Agrin CKO mice. n = 8 for each group, P56. Student’s t-test: t (14)=0.4794, p=0.6391. (D) Similar hippocampal morphology between control and Agrin CKO mice. Scale bar, 200 µm. (E) Similar hippocampus volume between control and Agrin CKO mice at P60. Student’s t-test: t (4)=0.4905, p=0.6495. (F) Agrin CKO shows similar swim speed with control in water maze; t (14)=0.07001, p=0.9452. (G) Similar preference score during training section. n = 8 for each group, Student’s t test t (14)=0.5091, p=0.6186. Data are mean ± s.e.m; ***, p<0.001.
 
 To test this hypothesis, we generated neuron-specific Agrn knockout mice by crossing Agrnf/f mice with Neurod6-Cre mice where Cre is expressed under the promoter of the gene of Neurod6 (Goebbels et al., 2006). Neurod6 is a transcription factor whose expression in mice is specific in neurons and begins at E11.5 (Goebbels et al., 2006). Resulting Neurod6-Cre;Agrnf/f (referred as Agrin CKO) had ~50% reduction in total Agrn mRNA levels in the hippocampus, compared with control mice (Figure 1—figure supplement 1A and B). Agrn has two isoforms: neuronal Agrn and non-neuronal Agrn (Li et al., 2018). The residual Agrn mRNA in Agrin CKO mice may come from non-neuronal cells. Indeed, by using primers specific for neuronal Agrn, 80% reduction was observed in Agrin CKO hippocampus (Figure 1—figure supplement 1B), indicating a specific ablation of neuronal Agrn (hereafter referred as Agrn). Agrin CKO mice had similar body weight to control mice (Agrnf/f or Agrnf/+ mice) (Figure 1—figure supplement 1C) and did not exhibit global morphological deficits. In particular, hippocampal structures of Agrin CKO mice were similar to those of control mice (Figure 1—figure supplement 1D and E).
 
 To determine whether Agrin is indispensable for adult neurogenesis, we injected BrdU into mice to label proliferating cells in the hippocampus as previously described (Appel et al., 2018). The density of BrdU+ cells was decreased in Agrin CKO mice compared with littermate controls, suggesting a compromised cell proliferation in mutant hippocampus. To further test the hypothesis, we stained the hippocampus for Mcm2, a marker of cell proliferation, and Dcx, a marker of immature neurons; and found the density of both Mcm2+ and Dcx+ cells were decreased (Figure 1F–1I). These results suggest that Agrin may be indispensable for adult hippocampal neurogenesis. Impaired adult hippocampal neurogenesis has been shown to correlate with memory and mood in mice (Anacker and Hen, 2017). Therefore, Agrin CKO mice were subjected to a battery of behavioral test. In the training phase of Morris water maze, the escape latency for Agrn mutant mice to locate the hidden platform was increased, compared with that of control mice (Figure 1J). The mutant mice exhibited similar swimming speed as control mice (Figure 1—figure supplement 1F). During the probe test, Agrn mutant mice spent less time in the platform quadrant and exhibited fewer crosses over the absent platform (Figure 1K and L). These results suggest that Agrn mutant mice may be impaired in learning and memory. This notion was further supported by lower preference scores in object location test (Figure 1M, Figure 1—figure supplement 1G). In the forced swimming test (FST) and tail suspension test (TST), Agrin CKO mice increased the duration of immobility (Figure 1N and O), suggesting depressive-like behavior in Agrn mutant mice. Together, these observations suggest that excitatory neurons in DGs expresses Agrin, which promotes adult hippocampal neurogenesis.
 
-## Lrp4 for adult hippocampal NSPCs proliferation
+### Lrp4 for adult hippocampal NSPCs proliferation
 
 Lrp4 mRNA was increased in hippocampus by EE (Figure 1E). It would be important to determine in which cells Lrp4 is expressed. Unfortunately, currently available anti-Lrp4 antibodies were not good for immunostaining. To this end, we characterized β-gal expression in the hippocampus of Lrp4-LacZ reporter mice (Sun et al., 2016). In this strain, the Lrp4 gene (exons 2–30) was replaced by a cassette containing the LacZ gene. Under the control of the endogenous promoter of Lrp4, β-gal activity is believed to faithfully indicate the expression pattern of Lrp4. As shown in Figure 2A, β-gal was enriched in cells in SLM and ML layers of the hippocampus, which were mostly astrocytes (Sun et al., 2016). Interestingly, β-gal was also detected in the SGZ of the DG (Figure 2A), which NSPCs reside. To determine in what cells β-gal is expressed in the SGZ, sections were co-stained with antibodies against β-gal and markers of NSCs and derivatives at different stages (Ming and Song, 2011). As shown in Figure 2B, β-gal activity was detected in cells labeled by Nestin, a marker of neural stem cells and progenitor cells (Ming and Song, 2011). In addition, β-gal+ cells were positive for Gfap, a marker of radial glia-like cells (RGLs) (Ming and Song, 2011). However, β-gal activity was barely detectable in cells positive for Tbr2 (Figure 2C), a marker of progenitor cells (Ming and Song, 2011) or PSA-NCAM (Figure 2D), a marker of immature neurons. These results indicate that Lrp4 is expressed in precursor cells including RGLs, intermediate progenitor cells, and neuroblasts. These results are consistent with recent single-cell RNA-seq results that Lrp4 is expressed in astrocytes, RGLs and progenitors, but not in more mature neurobloasts or dentate granule neurons (Habib et al., 2016; Hochgerner et al., 2018; Shin et al., 2015).
 
@@ -57,19 +65,63 @@ Lrp4 mRNA was increased in hippocampus by EE (Figure 1E). It would be important 
 
 To determine whether Lrp4 plays a role in adult hippocampal neurogenesis, Lrp4 knockout mice were generated by crossing Lrp4f/f mice with hGFAP-Cre mice (Figure 3—figure supplement 1A) where Cre is under the promoter of the human GFAP gene (Zhuo et al., 2001). Lrp4 expression was abolished in the brain in resulting GFAP-Cre::Lrp4f/f (Lrp4 CKO) (Figure 3—figure supplement 1B–1D). Remarkably, BrdU+ cells were reduced in Lrp4 CKO hippocampus (Figure 3A and B), suggesting an indispensable role of Lrp4 in maintaining adult neurogenesis. Consequently, without Lrp4, Dcx+ cells were fewer in Lrp4 CKO dentate gyrus (Figure 3A and C). BrdU+ cells reduction may result from a diminished pool of quiescent neural stem cells and/or reduced numbers of proliferating stem cells including activated neural stem cells, progenitor cells, and neuroblast cells (Kempermann et al., 2015). To test this, we characterize the number of cells that are positive for Gfap and Sox2, a marker of neural stem cells and progenitor cells. Cells positive for these two markers are quiescent neural stem cells (Bonaguidi et al., 2011; Encinas et al., 2011). As shown in Figure 3D and E, the number of Gfap+Sox2+BrdU+ cells was similar between control and Lrp4 CKO mice, suggesting that Lrp4 knockout may not affect neural stem cell division. However, Lrp4 mutation reduced the number of BrdU+Sox2+ cells (Figure 3F), indicating that Lrp4 is indispensable for progenitor cell proliferation in the SGZ. The reduction of BrdU+ Sox2+ cell was not due to increased cell death because there was no difference between apoptotic cells positive for cleaved caspase-3 between control and Lrp4 CKO mice (Figure 3—figure supplement 2A and B). In agreement with decreased adult hippocampal neurogenesis, Lrp4 CKO mice showed increased immobility in FST and TST (Figure 3G and H). Together, these results identify a critical role of Lrp4 in adult hippocampal neurogenesis.
 
-## Lrp4 cell-autonomous regulation of EE-induced adult neurogenesis
+![Figure 3.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig3-v2.jpg)
+
+**Figure 3.:** (A–C) Reduced numbers of BrdU- and Dcx-labeled cells in Lrp4 CKO SGZ. (A) Representative images. Scale bar, 100 μm. (B–C) Stereological quantification of SGZ BrdU+ (B) and Dcx+ (C) cells. n = 5 for each group. Student’s t-test: t (8)=6.602, p=0.0002 for BrdU; t (8)=4.701, p=0.0015 for Dcx. (D–F) Reduced NPCs proliferation in Lrp4 CKO. (D) Representative images. The arrow indicated Gfap+/BrdU+/Sox2+, while the arrow head indicated BrdU+/Sox2+ cells. Scale bar, left 100 µm, right 20 µm. (E) Similar numbers of SGZ Gfap+Sox2+ BrdU+ NSCs between the two genotypes. n = 5 for each group. Student’s t-test: t (8)=0.2947, p=0.7757. (F) Decreased the density of Sox2+BrdU+ NPCs in Lrp4 CKO mice, compared with control. n = 5 for each group. Student’s t-test: t (8)=7.943, p<0.0001. (G–H) Increased duration of immobility in FST (G) and TST (H) of Lrp4 CKO mice, compared with control. n = 8 for each group. Student’s t-test: t (14)=2.826, p=0.0135 for FST; t (14)=2.332, p=0.0352 for TST. Data are mean ± s.e.m; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Lrp4f/f mice were crossed with hGFAP-Cre mice; resulting GFAP-Cre::Lrp4f/+ were crossed with Lrp4f/f mice to generate hGFAP-Cre::Lrp4f/f (Lrp4 CKO) and Lrp4f/+ or Lrp4f/f (control). (B) Reduced Lrp4 mRNA in Lrp4 CKO hippocampus, compared with control. n = 3 for each group. Student’s t-test: t (4)=15.76, p<0.0001. (C–D) Reduced Lrp4 protein in Lrp4 CKO hippocampus, compared with control. n = 3 for each group. Student’s t-test: t (4)=10.49, p=0.0005. Data are mean ± s.e.m. ***, p<0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative images. Scale bar, left 50 µm, right 5 µm. (B) Quantitative data. n = 3 for each group. Student’s t-test: t (4)=0.2427, p=0.8202. Data are mean ± s.e.m; ns, p>0.05.
+
+### Lrp4 cell-autonomous regulation of EE-induced adult neurogenesis
 
 Early-stage Gfap+ cells can develop into neurons as well as astrocytes (Noctor et al., 2001). Because Lrp4 is expressed in astrocytes in developed brains (Sun et al., 2016), we determined whether Lrp4 in NSPCs is indispensable by crossing Lrp4f/f mice with Nes-Cre/ERT2;Ai9 mice. In Nes-Cre/ERT2 mice, Cre is expressed in NSPCs, but its activity is inactive until induction by tamoxifen (Tam) (Lagace et al., 2007). Ai9 mice carry floxed tdTomato cassette in the Gt(ROSA)26Sor locus and express tdTomato in a Cre-dependent manner upon Tam induction. Resulting Nes-Cre/ERT2::Ai9::Lrp4f/f mice were injected with Tam (referred as Nes Lrp4 CKO mice). Lrp4 mRNA and protein were reduced in the dentate gyrus of Nes Lrp4 CKO mice, compared with Tam-treated Nes-Cre/ERT2::Ai9::Lrp4+/+ mice (referred as control) (Figure 4—figure supplement 1A–1E). tdTomato-labeled cells were reduced in dentate gyrus 2 days as well 1 month after Tam injection (Figure 4A–4E). The reduced number of tdTomato-labeled cells not due to increased cell death because there was no difference of apoptotic cells positive for cleaved caspase-3 between control mice and Nes Lrp4 CKO mice 2 days after Tam treatment (Figure 4—figure supplement 1F and G). Because tdTomato expression was controlled by Nes-Cre, these results provide further support to the hypothesis that Lrp4 in NSPCs is critical and Lrp4 regulates adult neurogenesis in a cell-autonomous manner and at basal level more likely at the progenitor level.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig4-v2.jpg)
+
+**Figure 4.:** (A) The protocol of Tam treatment. (B–C) Decreased Td+ cells in Nes Lrp4 CKO mice compared with control at 2 days after Tam treatment. (B) Representative images. Scale bar, 25 µm. (C) Stereological quantification of Td+ cell density. n = 4 for each group. Student’s t-test: t (6)=6.553, p=0.0006. (D–E) Decreased Td+ cells in Nes Lrp4 CKO mice compared with control after 1 months of Tam treatment. (D) Representative images. Scale bar, 50 µm. (E) Stereological quantification of Td+ cell density. Student’s t-test: t (4)=8.159, p=0.0012. (F) Time schedule of Tam injection, EE, and BrdU administration. (G–H) EE for 4 weeks failed to increase the density of Ki67+ cells in the DG of iNestin-Lrp4f/f mice. (G) Representative images, Scale bar, 100 µm. (H) Stereological quantification of Ki67+ cell density. n = 3 for each group. Two-way ANOVA test, F (1,8)=129.4, p<0.0001 for genotype; F(1,8) = 12.4, p=0.0078 for EE). (I–L) EE for 4 weeks failed to increase the density of BrdU+, Gfap+Sox2+BrdU+, Sox2+BrdU+ cells in the DG of Nes Lrp4 CKO mice. (I) Representative images, Scale bar, 100 µm. (J) EE for 4 weeks failed to increase the density of BrdU+ cells in the DG of Nes Lrp4 CKO mice. n = 3 for each group. Two-way ANOVA test, F (1,8)=57.01, p<0.0001 for genotype; F (1,8)=24.28, p=0.0012 for EE. (K) EE for 4 weeks increase the density of Gfap+Sox2+BrdU+ cells in the DG of Nes Lrp4 CKO mice. n = 3 for each group. Two-way ANOVA test, F (1,8)=10.09, p=0.0131 for genotype; F (1,8)=8.321, p=0.0204 for EE. (L) EE for 4 weeks increase the density of Sox2+BrdU+ cells in the DG of Nes Lrp4 CKO mice. n = 3 for each group. Two-way ANOVA test, F (1,8)=98.21, p<0.0001 for genotype; F (1,8)=14.09, p=0.0056 for EE. (M–N) Nes Lrp4 CKOmice did not display decrease the duration of immobility in FST (K) and TST (L) after EE for 4 weeks. n = 6 for each group. In FST, two-way ANOVA test: F (1,20)=115.5, p<0.0001 for genotype; F (1,20)=9.04, p=0.007 for EE. In TST, two-way ANOVA test: F (1,20)=44.99, p<0.0001 for genotype; F (1,20)=11.85, p=0.0026 for EE. Data are mean ± s.e.m; ns, p>0.05; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Strategy of mouse crossing and Tam treatment. (B) Tam treatment diagram. (C) Decreased Lrp4 mRNA in the DG of Nes Lrp4 CKO mice after Tam treatment. n = 3 for each group. Student’s t-test: t (4)=15.18, p=0.0001. (D–E) Reduced Lrp4 protein in Nes Lrp4 CKO DG after Tam treatment. n = 3 for each group. Student’s t-test: t (4)=6.31, p=0.0032. (F–G) Similar number of cleaved Caspase-3 labeled cells between Nes Lrp4 CKO and control mice 2 days after last Tam treatment. (F) Representative images, Scale bar 20 µm. (G) Quantitative data, n = 4 for each group. Student’s t test: t (6)=0.7717, p=0.4696. Data are mean ± s.e.m; **, p<0.01; ***, p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic diagram of retroviral injection. (B–F) Impaired dendrite maturation of Lrp4 mutant newborn neurons. (B) Representative image. Scale bar, 50 µm. (C) Decreased numbers of dendrite branches of GFP+ newborn neurons that expressed Cre, compared with those that expressed D-Cre. dpi, days post injection. n = 36 for D-Cre 28 dpi; n = 42 for Cre 28 dpi; n = 31 for D-Cre 42 dpi; n = 29 for Cre 42 dpi. Student’s t test: t (76)=5.234, p<0.0001 for 28 dpi; t (58)=3.094, p=0.003 for 42 dpi. (D) Reduced total dendrite length of GFP+ newborn neurons that expressed Cre, compared with those that expressed D-Cre. n = 36 for D-Cre 28 dpi; n = 42 for Cre 28 dpi; n = 31 for D-Cre 42 dpi; n = 29 for Cre 42 dpi. Student’s t-test: t (76)=2.974, p=0.0039 for 28 dpi; t (58)=4.332, p<0.0001 for 42 dpi. (E–F) Decreased dendrite complexity by Lrp4 mutation. Two-way ANOVA followed by Bonferroni multiple comparisons test, F (1,1949)=92.61, p<0.0001 for 28 dpi (E); F(1,1450) = 64.91, p<0.0001 for 42 dpi (F). (G–H) Impaired dendritic spine development. (G and H) Representative images. Scale bar, 2 µm. (I) Decreased spine density in Lrp4 mutant newborn neurons. n = 26 for D-Cre 28 dpi; n = 26 for Cre 28 dpi; n = 26 for D-Cre 42 dpi; n = 26 for Cre 42 dpi. Two-way ANOVA with Tukey’s multiple comparisons test, F (1,100)=37.42, p<0.0001 for 28 and 42 dpi. F (1,100)=130.1, p<0.0001 for D-Cre and Cre. p<0.0001 for D-Cre 28 dpi and Cre 28 dpi. p<0.0001 for D-Cre 28 dpi and 42 D-Cre dpi. p<0.0001 for D-Cre 42 dpi and Cre 42 dpi. p=0.0049 for Cre 28 dpi and Cre 42 dpi. More than three mice were analyzed in each genotype for 28 dpi and 42 dpi. Data are mean ± s.e.m. **, p<0.01, ***, p<0.001.
 
 To determine whether NSPCs Lrp4 contributes to EE-induced adult neurogenesis, we housed Nes Lrp4 CKO and control mice in EE cages for 4 weeks after Tam treatment (Figure 4F). In control mice, EE increased the numbers of Ki67+ cells (Figure 4G and H), suggesting an increase in cell proliferation in the DG. Similar increase was observed with BrdU+ cells (Figure 4I and J). To determine whether the increase occurred in NSCs and/or NPCs, we quantified BrdU+ cells in Gfap+Sox2+ and Sox2+ populations, respectively. Both were increased by EE (Figure 4K and L), in agreement with previous results (Meshi et al., 2006). Interestingly, the density of BrdU+Gfap+Sox2+ cells were similar in Nes Lrp4 CKO mice, compared with control, suggesting that Lrp4 knockout does not change the proliferation of NSCs at SC. However, the density of BrdU+Sox2+ cells was reduced at SC by Lrp4 knockout, suggesting that Lrp4 is necessary for NPCs proliferation (Figure 4L). In either case, EE-induced increase in BrdU+ cells was attenuated by Lrp4 mutation (Figures 4J, K and L). These results suggest that Lrp4 in NSPCs is involved in EE-induced adult neurogenesis. In accord, Nes Lrp4 CKO mice displayed increased immobility in FST and TST when housed in SC cages, compared with control mice (Figure 4M and N). In addition, unlike control mice that showed EE-induced decrease in immobility, Nes Lrp4 CKO mice failed to respond to EE (Figure 4M and N). Together, these observations indicate that ablation of Lrp4 from NSPCs blocked EE-induced adult neurogenesis and behavioral improvement and suggest that Lrp4 regulates NSPCs proliferation in a cell-autonomous manner.
 
 In addition to NSPCs proliferation, EE has been implicated in integration of newborn neurons into adult dentate gyrus (Chancey et al., 2013). To test whether this process requires Lrp4, we examined dendritic growth of newborn neurons in adult mice. To label proliferating NSPCs, Lrp4f/f mice were injected with retroviruses expressing GFP-fused wild-type Cre (Cre-GFP) and inactive Cre (D-Cre-GFP) (Figure 4—figure supplement 2A). GFP-labeled progenies were subjected to morphology analysis. As shown in Figure 4—figure supplement 2B, dendrites of D-Cre-GFP+ neurons were extensively arborized at 28 dpi. In contrast, Cre-GFP+ neurons (where Lrp4 was ablated) showed less arborization. Branch number, total length, and complexity of dendrites were reduced in Cre-GFP+ neurons, compared with D-Cre-GFP+ neurons (Figure 4—figure supplement 2C–2F). Similar dendrite deficits were observed at 42 dpi when newborn neurons are mature and fully integrated into the circuity. We also examined spines at these time points and found that Lrp4 ablation reduced spine density (Figure 4—figure supplement 2G–2I), suggesting compromised dendritic spine formation. Together, these data indicate that Lrp4 is necessary for dendritic arborization and spine formation in newly generated neurons in adult dentate gyrus and this effect in cell autonomous manner.
 
-## Lrp4 as a receptor for Agrin to activate Ror2
+### Lrp4 as a receptor for Agrin to activate Ror2
 
 In NMJ formation and maintenance, Lrp4 serves as a receptor for Agrin to activate the transmembrane kinase MuSK (Li et al., 2018). The requirement of Agrin and Lrp4 for EE-induced adult neurogenesis suggests that they work together. The β1 propeller domain of Lrp4 is required for and sufficient to mediate interaction with Agrin. On the other hand, the β3 propeller domain was shown to interact with MuSK and to be necessary for activating the kinase (Zhang et al., 2011). To determine whether these domains are indispensable for EE-induced adult neurogenesis, we generated transgenic mice carrying loxP-STOP-loxP (LSL)-Flag-Lrp4Δβ1 or Flag-Lrp4Δβ3 and crossed them with Lrp4 CKO mice (Figure 5A, Figure 5—figure supplement 1A–1D). Transgenes under the control of the LSL cassette are not expressed until the STOP signal is floxed out (Zinyk et al., 1998). As shown in Figure 5—figure supplement 1E, Lrp4 revealed by anti-Lrp4 antibody was present in brains of control mice, but not of Lrp4 CKO mice. Flag-Lrp4Δβ1 and -Lrp4Δβ3 were revealed by anti-Flag antibody. They were not detectable in brains of LSL-Lrp4Δβ1 and LSL-Lrp4Δβ3 mice, but became detectable with anti-Flag antibody in brains of GFAP-Cre::Lrp4f/f::LSL- Lrp4Δβ1 (Lrp4 CKO Δβ1) and GFAP-Cre::Lrp4f/f::LSL-Lrp4Δβ3 (Lrp4 CKO Δβ3) mice. Notice that in these mice, Lrp4 was deleted in Lrp4 CKO brain (Figure 5—figure supplement 1E). As shown in Figure 5B and D, GFAP-mediated Lrp4 deletion decreased the density of Dcx+ and BrdU+ cells (Figure 5B–5E). These deficits remained in mice expressing Lrp4Δβ1, indicating that the β1 domain is indispensable in Lrp4-regulated adult neurogenesis and suggesting that Agrin and Lrp4 are likely to work together in the pathway.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig5-v2.jpg)
+
+**Figure 5.:** (A) Domain structures of Lrp4 and deletion mutants. (B–C) Reduced Dcx+ cell density in Lrp4 CKO and Lrp4 CKO ∆β1, compared with control and Lrp4 CKO ∆β3 mice. (B) Representative images. Scale bar, 50 µm. (C) Stereological quantification of Dcx+ cell density. n = 3 for each group. One-way ANOVA multiple comparisons test, F (3,8)=18.69, p=0.0006; control vs Lrp4 CKO, p=0.0011; control vs Lrp4 CKO ∆β1, p=0.0012; control vs Lrp4 CKO ∆β3, p=0.7005. (D–E) Reduced BrdU+ cell density in Lrp4 CKO and Lrp4 CKO ∆β1, compared with control and Lrp4 CKO ∆β3 mice. (D) Representative images. Scale bar, 50 µm. (E) Stereological quantification. One-way ANOVA multiple comparisons test, F (3,8)=21.26, p=0.0004; control vs Lrp4 CKO, p=0.0005; control vs Lrp4 CKO ∆β1, p=0.0011; control vs Lrp4 CKO ∆β3, p=0.5538. Data are mean ± s.e.m. ns, p>0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Transgene constructs. (B) Mouse crossing strategy. mt indicates either Lrp4-∆β1 or Lrp4-∆β3. (C–D) Genotyping of indicated mice. wt allele generated 415 bp; floxed allele generated 455 bp; LSL-∆β1 generated ~567 bp; LSL-∆β3 generated ~842 bp; and GFAP-Cre generated ~150 bp bands. (E) Expression of Lrp4-∆β1 and Lrp4-∆β3 in indicated mouse strains, n = 3 for each group. Western blotting was performed with indicated antibodies.
+
 Intriguingly, the deficits were mitigated by expressing Lrp4∆β3, indicating that the β3 domain is dispensable and suggesting the involvement of a receptor tyrosine kinase other than MuSK. Among receptor tyrosine kinases, Rors show the highest homology to MuSK (Masiakowski and Yancopoulos, 1998). There are two Ror kinases, Ror1 and Ror2, which were thought to be orphan receptors until recent evidence that they may in part function as receptors for Wnt5a (Ho et al., 2012; ; Mikels et al., 2009; Oishi et al., 2003). To investigate whether Rors play a role in Agrin-Lrp4 signaling, we first determined whether they interact with Lrp4. Flag-Lrp4 and HA-tagged Ror1 and Ror2 were co-transfected into HEK293T cells. Lrp4 was precipitated from cells lysates by a Flag antibody, and the resulting immunocomplex was analyzed for HA-Ror1 and Ror2. As shown in Figure 6A, Ror2 coprecipitated with Lrp4 in transfected cells. This interaction appeared to be specific because Ror1 did not co-precipitate with Lrp4 from cell lysates (Figure 6B). These results support the notion that Ror2, but not Ror1, may serve as a downstream kinase of Lrp4. In support of this notion was the finding that the Lrp4-Ror2 interaction was enhanced by Agrin stimulation (Figure 6C and D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Co-immunoprecipitation Ror2 (A), not Ror1 (B), with Lrp4 in co-transfected HEK293T cell. (C–D) Increased Lrp4-Ror2 interaction in Agrin-treated HEK293T cell. (D) Quantitative analysis of data of C. Lrp4 intensity was normalized by that of IgG. Student’s t-test: t (4)=18.47, p<0.0001. (E) Increased Ror2 tyrosine phosphorylation in Agrin-treated neurosphere. Three independent experiments were performed. (F–G) Increased neurosphere size by Agrin and blockade by Lrp4 or Ror2 mutation. (F) Representative images. Scale bar, 100 µm. (G) Quantification of neurosphere size. One-way ANOVA test: F (5,314)=28.55, p<0.0001. Three independent experiments were performed. (H–I) Decreased Dcx+ cell density in Nes Ror2 CKO mice, compared with control. (H) Representative images. Scale bar, 100 µm. (I) Stereological quantification of Dcx+ cell density. n = 5 for each group. Student’s t-test: t (8)=4.523, p=0.0019. (J–L) Reduced BrdU+ cell density in Nes Ror2 CKO mice, compared with control. (J) Representative images. Scale bar 100 µm. (K) Stereological quantification of BrdU+ cell density. n = 5 for each group. Student’s t-test: t (8)=5.948, p=0.0003. (L) Similar density of SGZ Gfap+Sox2+ BrdU+ NSCs between the two genotypes. Student’s t-test: t (8)=1.22, p=0.2572. Data are mean ± s.e.m. **, p<0.01; ***, p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Generation of Ror2 conditional knockout mice. (B–C) Reduced Ror2 protein in Ror2 CKO hippocampus, compared with control. (B) Representative western blot. (C) Quantitative data of B. n = 3 for each group. Student’s t-test: t (4)=22.97, p<0.0001. (D) Similar brain gross morphology of Ror2 CKO and control mice. Scale bar, 5 mm. (E) Similar hippocampus morphology between control and Ror2 CKO mice. (F) Similar hippocampus volume of Ror2 CKO and control mice at P60. Student’s t-test: t (4)=0.416, p=0.6988. Scale bar, 200 µm. (G–H) Reduced density of Dcx+ cells in Ror2 CKO DG, compared with control. (G) Representative images. Scale bar, 50 µm. (H) Stereological. n = 4 for control and n = 3 for Ror2 CKO. Student’s t-test: t (5)=3.77, p=0.013. (I–J) Decreased numbers of BrdU+ cells in Ror2 CKO DG, compared with control. (I) Representative images. Scale bar 50 µm. (J) Stereological quantification. n = 4 for control and n = 3 for Ror2 CKO. Student’s t-test: t (5)=3.538, p=0.0166. Data are mean ± s.e.m. *, p<0.05; ***, p<0.001.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/45303/elife-45303-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Strategy of mouse crossing and Tam treatment. (B) Tam treatment diagram. (C) Reduced Ror2 protein in Nes Ror2 CKO DG after Tam treatment. n = 3 for each group. Student’s t-test: t (4)=7.7, p=0.0015. Data are mean ± s.e.m; **, p<0.01.
 
 To explore Ror2’s function in adult neurogenesis, we cultured neurospheres from DG and stimulated them with Agrin. As shown in Figure 6E, Agrin increased the tyrosine-phosphorylation level of Ror2 in neurospheres. To determine whether Ror2 is necessary for adult neurogenesis in vivo, we generated Ror2 knockout mice by crossing Ror2f/f mice with hGFAP-Cre mice (Figure 6—figure supplement 1A). Ror2 protein was reduced in the hippocampus of GFAP-Cre::Ror2f/f (referred as Ror2 CKO) mice (Figure 6—figure supplement 1B and C). The brain size of Ror2 CKO mice was comparable to that of littermate control, and their hippocampal morphology appeared to be normal (Figure 6—figure supplement 1D–1F), in agreement with previous reports (Endo et al., 2017). We found that the density of Dcx+ and BrdU+ cells was reduced in Ror2 CKO mice, compared with control littermates (Figure 6—figure supplement 1G–1J), suggesting a necessary role of Ror2 in adult neurogenesis. Agrin-induced growth was blocked in neurosphere derived from Ror2 CKO or Lrp4 CKO mice (Figure 6F and G), indicating that the regulation by Ror2 and Lrp4 was likely to be cell-autonomous.
 
@@ -89,60 +141,420 @@ Exercise is known to increase cell proliferation in the hippocampus (Choi et al.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Agrnf</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 031788</td>
+      <td>Harvey et al., 2007</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lrp4f</td>
+      <td>Wu et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ror2f</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 018354</td>
+      <td>Ho et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Neurod6-Cre</td>
+      <td>CARD R-BASE</td>
+      <td>CARD ID: 2556</td>
+      <td>Goebbels et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>GFAP-Cre</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 004600</td>
+      <td>Zhuo et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Ai9 (B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007909</td>
+      <td>Madisen et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Nes-Cre/ERT2 (C57BL/6Tg(Nes-cre/ERT2)KEisc/J)</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 016261</td>
+      <td>PMID:17166924</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lrp4-LacZ</td>
+      <td>KNOCKOUT MOUSE PROJECT</td>
+      <td>Project ID: VG15248</td>
+      <td>Sun et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LSL-Lrp4-Δβ1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>LSL-Lrp4-Δβ3</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#:CRL-3216 RRID: CVCL_0042</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>GP2-293</td>
+      <td>Clontech</td>
+      <td>Cat #: 631458 RRID: CVCL_WI48</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Arc</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-7839 RRID: AB_626696</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Dcx</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-8066 RRID: AB_2088494</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Mcm2</td>
+      <td>BD Biosciences</td>
+      <td>Cat #: 610701 RRID: AB_398024,</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-BrdU</td>
+      <td>Accurate Chemical and Scientific Corporation</td>
+      <td>Cat #: OBT0030 RRID: AB_2313756</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Ki67</td>
+      <td>Millipore</td>
+      <td>Cat #: AB9260 RRID: AB_2142366</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Nestin</td>
+      <td>BD Biosciences</td>
+      <td>Cat #: 556309 RRID: AB_396354</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFAP</td>
+      <td>Dako</td>
+      <td>Cat #: Z0334 RRID: AB_10013382</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-β-gal</td>
+      <td>Aves Labs</td>
+      <td>Cat #: BGL-1040 RRID: AB_2313507</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Sox2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-20088 RRID: AB_2255358</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Tbr2</td>
+      <td>Abcam</td>
+      <td>Cat #: ab23345 RRID: AB_778267</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-PSA-NCAM</td>
+      <td>Millipore</td>
+      <td>Cat #: MAB5324 RRID: AB_95211</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Cleaved Caspase3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9661 RRID: AB_2341188</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NeuN</td>
+      <td>Millipore</td>
+      <td>Cat #: MAB377 RRID: AB_2298772</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFP</td>
+      <td>AVES</td>
+      <td>Cat #: GFP-1020 RRID: AB_10000240</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Flag</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: F7425 RRID: AB_439687</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-HA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #: H9658 RRID: AB_260092</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-GAPDH</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-32233, RRID: AB_627679</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-β-Actin</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 12262 RRID: AB_2566811</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-P-Tyr-100</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 9411 RRID: AB_331228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Ror2</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #: 4105 RRID: AB_2180134</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Lrp4</td>
+      <td>UC Davis/NIH NeuroMab Facility</td>
+      <td>Cat #: 75–221 RRID: AB_2139030</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-AffiniPure Fab Fragment Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat #: 711-607-003 RRID: AB_2340626</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594-AffiniPure F(ab')2 Fragment Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson Immuno Research Labs</td>
+      <td>Cat #: 711-586-152 RRID: AB_2340622</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-AffiniPure Fab Fragment Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 711-547-003 RRID: AB_2340620</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647-AffiniPure Fab Fragment Donkey Anti-Mouse IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 715-607-003 RRID: AB_2340867</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-AffiniPure Fab Fragment Donkey Anti-Mouse IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 715-547-003 RRID: AB_2340851</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-AffiniPure Fab Fragment Donkey Anti-Goat IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 705-547-003 RRID: AB_2340431</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-AffiniPure F(ab')2 Fragment Donkey Anti-Chicken IgY (IgG) (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 703-546-155 RRID: AB_2340376</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647- AffiniPure Fab Fragment Donkey Anti-Rat IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 712-607-003, RRID: AB_2340697</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye 680RD Donkey anti-Rabbit IgG (H + L)</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat #: 926–68073, RRID:AB_10954442</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-Mouse IgG, IRDye 800CW Conjugated</td>
+      <td>LI-COR Biosciences</td>
+      <td>Cat # 926–32212, RRID: AB_621847</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFlag-Lrp4</td>
+      <td>PMID: 30171091</td>
+      <td></td>
+      <td>Materials and methods subsection: antibodies and plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-Ror1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: antibodies and plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-Ror2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: antibodies and plasmid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>BrdU</td>
+      <td>Sigma</td>
+      <td>Cat #: B5002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound,drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma</td>
+      <td>Cat #: T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH, USA</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 The following mice were described previously: Agrnf (Harvey et al., 2007), Lrp4f (Wu et al., 2012), GFAP-Cre (Zhuo et al., 2001), Ai9 (Madisen et al., 2010) (Jackson Labs, #007909), Nes-Cre/ERT2 (Jackson Labs, #016261), Lrp4-LacZ reporter mice were from UCDAVIS KOMP Respository (VG15248) (Sun et al., 2016), Ror2f (Ho et al., 2012), Neurod6-Cre (Goebbels et al., 2006). LSL-∆β1 and LSL-∆β3 transgenic mice were generated by subcloning respective insert (Lrp4 without aa 435–749 and Lrp4 without aa 1045–1354) into pCCALL2 at Hind III and Not I sites, which was confirmed by sequencing. The transgenes were purified from vector sequences and microinjected into the pronuclei of single-cell C57BL/6JxSJL hybrid embryos. Founder transgenic mice were identified by PCR. Primers for genotypes were as follow: LSL-∆β1 (F: 5’ CCA GGA TGT GAA TGA ATG TG 3’, R: 5’ ACT TGT CGG TTG GAG GC 3’); LSL-∆β3 (F: 5’ ACA CGG ACG GCA GCA T 3’, R: 5’ AGC CCA TCA GTG GTC TTC 3’). Mice were group-housed no more than five per cage in a room with a 12-h light/dark cycle with ad libitum access to water and rodent chow diet (Diet 1/4 7097, Harlan Teklad). In some experiments, mice were housed for 4 weeks in EE cages (86 cm x 76 cm x 24 cm; l x w x h; 12 mice per cage) with regular bedding, food and water ad libitum, and EE items (two running wheels with solid closed plastic floor, two plastic tubes, one red transparent plastic nest box and a paper-based nest box). Experiments with animals were approved by the Institutional Animal Care and Use Committee of Augusta University and Case Western Reserve University. Male mice were used for all the studies.
 
-## Antibodies and plasmids
+### Antibodies and plasmids
 
 The information of primary antibodies used was as follows: mouse anti-Arc (Santa Cruz Biotechnology, sc-7839); goat anti-Dcx (Santa Cruz Biotechnology, sc-8066); mouse anti-Mcm2 (BD Biosciences, 61070); rat anti-BrdU (Accurate Chemical and Scientific Corporation, OBT0030); rabbit anti-Ki67(Millipore, AB9260); mouse anti-Nestin (BD Biosciences, 556309); rabbit anti-GFAP (Dako, Z0334); chicken anti-β-gal (Aves Labs, BGL-1040); mouse anti-Sox2 (Santa Cruz Biotechnology, sc-20088); rabbit anti-Tbr2 (Abcam, ab23345); mouse anti-PSA-NCAM (Millipore, MAB5324); rabbit anti-Cleaved Caspase-3 (Cell Signaling Technology, 9661); mouse anti-NeuN (Millipore, MAB377); chicken anti-GFP (AVES, GFP-1020); rabbit anti-Flag (Sigma-Aldrich, F7425); mouse anti-HA (Sigma-Aldrich,H9658); mouse anti-GAPDH (Santa Cruz Biotechnology, sc-32233); mouse anti-β-Actin (Cell Signaling Technology, 12262); mouse anti-P-Tyr (Cell Signaling Technology, 9411); rabbit anti-Ror2 (Cell Signaling Technology, 4105); and mouse anti-Lrp4 (UC Davis/NIH NeuroMab Facility, 75–221). The information of secondary antibodies used was as follows: Alexa Fluor 488-donkey-anti-mouse-IgG (Cat #: 715-547-003); Alexa Fluor 647-donkey-anti-mouse-IgG (Cat #: 715-607-003); Alexa Fluor 594-donkey-anti-rabbit-IgG (Cat.#711-586-152); Alexa Fluor 488-donkey-anti-rabbit-IgG (Cat #: 711-547-003); Alexa Fluor 647-donkey-anti-rabbit-IgG (Cat #: 711-607-003); Alexa Fluor 647-donkey-anti-mouse-IgG (Cat #: 715-607-003); Alexa Fluor 488-donkey-anti-goat-IgG (Cat #: 705-547-003); Alexa Fluor 488-donkey-anti-chicken-IgG (Cat #: 703-546-155); Alexa Fluor 594-donkey-anti-rat-IgG (Cat #: 712-607-003), all 1:200 (Jackson ImmunoResearch Laboratories Inc, West Grove, PA) for IHC. RDye680RD Donkey anti-Rabbit-IgG (H + L, LI-COR Bioscience, Cat #: P/N 926–68073) and IRDye 800CW Donkey anti-Mouse-IgG (H + L, LI-COR Bioscience, Cat #: P/N 926–32212) secondary antibodies, both 1:10000 were used for western blot. D-Cre-GFP and Cre-GFP plasmids were a kind gift from Dr. Weixiang Guo. Lrp4 Rat cDNA were generated by PCR and subcloned into pFLAG-CMV1 (Sigma, Cat # E7273). Ror1 and Ror2 mouse cDNA were generated by PCR and subcloned into pKH3 (Addgene, RRID: Addgene_12555). Authenticity of all constructs was verified by DNA sequencing.
 
-## 5-Bromo-2’-deoxyuridine (BrdU) and Tamoxifen administration
+### 5-Bromo-2’-deoxyuridine (BrdU) and Tamoxifen administration
 
 Mice were injected with BrdU and Tamoxifen as previously described (Appel et al., 2018). Briefly, mice were injected with BrdU (Sigma, 10 mg/mL, B5002; i.p., 200 mg/kg body weight) 2 h before perfusion. Tamoxifen (10 mg/mL, Sigma, T5648) was prepared in corn oil (Sigma, C8267) mixed with ethanol (9:1 ratio). Mice were injected with 100 mg/kg Tamoxifen (i.p., daily for constitutive 5 days) for 4-week-old male mice and with 125 mg/kg Tamoxifen (i.p., every 12 h for 4 times) for 8-week-old male mice. Mice were perfused at 1 month after injection and 2 days after injection, respectively.
 
-## In situ X-gal assay
+### In situ X-gal assay
 
 In situ X-gal assay was carried out as previously described (Sun et al., 2016). Briefly, brains were quickly isolated and embedded in OCT (Tissue-Tek). Coronal sections were cut at 20 μm in thickness, and every fourth section was collected and mounted onto slides. Sections were fixed for 2 min in PBS containing 2 mM MgCl2 and 5 mM EGTA with 0.2% glutaraldehyde. Sections were washed in ice-cold PBS and stained in X-gal solution (1 mg/mL X-gal, 5 mM K3Fe(CN)6, 5 mM K4Fe(CN)6, 0.02% NP-40, 0.01% deoxycholate, and 2 mM MgCl2 in PBS) at 37°C overnight. Following a wash with PBS, sections were counterstained with nuclear Fast Red (Vector Labs, H-3403).
 
-## Immunostaining
+### Immunostaining
 
 Immunostaining was performed as described previously (Sun et al., 2016). Briefly, mice were deeply anesthetized with isoflurane and perfused with PBS followed by 4% paraformaldehyde (PFA) until bodies became stiff. Brain was post-fixed in 4% PFA at 4°C for another 8 h and dehydrated using 30% sucrose at 4°C for 2 days. Brain was embedded in optimal cutting temperature compound (4583; Tissue-Tek), rapidly frozen. Serial 40-μm-thick coronal brain sections were cut on a cryostat (HM550; Thermo Scientific). Sections were permeabilized with 0.3% Triton X-100, blocked with 10% donkey serum for 1 h at room temperature, incubated with primary antibodies at 4°C overnight. After washing with PBS 3 times, incubated with corresponding conjugated secondary antibody for 2 h. DAPI was used for nucleus counterstaining.
 
-## Stereological quantification
+### Stereological quantification
 
 Stereological quantification of cells was carried out as previously described with a slight modification (Appel et al., 2018). Briefly, cells were counted in a one-in-six series of sections through hippocampus (Bregma -1.06 mm to -3.08 mm). DAPI staining was used to outline DG area using Image J software. The total number of marker+ cells was counted, and the volume of the DG section was calculated by multiplying the area by its thickness. The cell count was divided by the resultant section volume to obtain the total cell density in the dentate gyrus per mm3. The hippocampus volume was estimated by using a one-in-six systematic random series of 40 µm Nissl-stained brain sections. Image J software was used to outline and measure the hippocampus area. The total volume of hippocampus was estimated by multiplying the area with its thickness and the Cavalieri’s principle. The investigator blind to the genotype.
 
-## Quantitative real time-polymerase chain reaction (qRT-PCR)
+### Quantitative real time-polymerase chain reaction (qRT-PCR)
 
 Different brain regions were dissected and frozen in liquid nitrogen. Total RNA was purified using TRIzol (15596–026, Invitrogen). Total RNA (3 µg) was reverse-transcribed to cDNA (Promega) and subjected to qPCR using SYBR green (Qiagen) in CFX96 real-time system (Bio-Rad). Primer sequences used were as follows: Lrp4 (F: 5’GTG TGG CAG AAC CTT GAC AGTC 3’, R: 5’ TAC GGT CTG AGC CAT CCA TTC C 3’); ApoE (F: 5’ GAA CCG CTT CTG GGA TTA CC TG 3’, R: 5’ GC CTT TAC TTC CGT CAT AGT GTC 3’); Wnt5a (F: 5’ GGA ACG AAT CCA CGC TAA GGG T 3’, R: 5’ AGC ACG TCT TGA GGC TAC AGG A 3’); Bdnf (F: 5’ GGC TGA CAC TTT TGA GCA CGT C-3’, R: 5’ CTC CAA AGG CAC TTG ACT GCT G-3’); Igf1 (F: 5’ GTG GAT GCT CTT CAG TTC GTG TG 3’, R: 5’ TCC AGT CTC CTC AGA TCA CAG C 3’); Vegf (F: 5’ CTG CTG TAA CGA TGA AGC CCT G 3’, R: 5’ GCT GTA GGA AGC TCA TCT CTC C 3’); MuSK (F: 5’ CTG AAG GCT GTG AGT CCA CTG T 3’, R: 5’ TCC TTT ACC GCC AGG CAG TAC T 3’); Agrn (F: 5’ AGA TGG TGT TCT TGG CTC GTG G 3’, R: 5’ CAG GGC TAT GGG CTC TTT GCT 3’); nAgrn (F: 5'CAC TGC GAG AAG GGG ATA GTT G-3', R: 5' GGC TGG GAT CTC ATT GGT CAG 3'); GAPDH (F: 5’ CAT CAC TGC CAC CCA GA AGA CTG 3’, R: 5’ ATG CCA GTG AGC TTC CCG TTC AG 3’). Each sample was assayed in triplicate, and the mRNA level was normalized to GAPDH using the 2-∆∆CT method.
 
-## Depressive-like behavior test
+### Depressive-like behavior test
 
 Behavioral testing was performed during the light phase of the cycle, that is between 9:00 A.M. and 5:00 P.M. Mice (7–8 weeks) were habituated to test room for 3 days before forced swim test (FST), which was followed by 2 days of habituation and then tail suspension test (TST). A short habituation (2 h) was allowed on test day. FST and TST were carried out as previously described (Appel et al., 2018). Briefly, in FST, mice were individually placed in a glass cylinder (25 cm height, 10 cm diameter) with water (22°C). Mice were allowed to swim in water for 6 min and scored for immobile time in last 4 min. In TST, mice were individually suspended by the distal portion of tails with adhesive tape for 6 min and scored for immobile time in last 4 min. Tests were performed by investigators blind to genotypes.
 
-## Morris water maze
+### Morris water maze
 
 The Morris water maze was performed as previously described with slight modification (Sun et al., 2016). A 120 cm pool and 10 cm platform were used for water maze and nontoxic bright white gel (Soft Gel Paste Food Color, AmeriColor) was added to the water to make the surface opaque and to hide the escape platform (1 cm below the surface). Mice were trained for 5 days with four trials per day with 20 min interval between trials and 60 sec per trial to locate the hidden platform. Eight spatial cues on the pool wall are visible for mice to find the hidden platform. On the 6th day the platform was removed and mice were placed into the pool at new start position and assessed the time spent in the platform quadrant and the number of platform crossing within 60 sec. The swim speed and amount of time spend in each quadrant were quantified using the video tracking system (Noldus). The investigator was blind to genotype during the data acquisition and analysis.
 
-## Object location test
+### Object location test
 
 The object location test was carried out as previously described with modifications (Hattiangady et al., 2014). Briefly, mice were habituated in the open field chamber (50 × 50 cm) for 10 min 24 h before starting the test. On the test day, mice were placed in the chamber with two identical objects for 10 min and returned to its home cage for 24 h. They were allowed to explore the two identical objects except one of them was placed to new location. The time that mice sniffed the objects were recorded and preference scores were calculated. The investigator was blind to genotype during the data acquisition and analysis.
 
-## In vivo genetic manipulation of neural progenitors
+### In vivo genetic manipulation of neural progenitors
 
 Cre-GFP (5.2 × 107 pfu/mL) and D-Cre-GFP (4.6 × 107 pfu/mL) retroviruses were produced following the GP2-293 (RRID: CVCL_Wl48) cells manual, which were purchased from Clontech and were certified authentic and found to be free of Mycoplasma. The Lrp4f/f mice (7–8 weeks old) were anesthetized and stereotaxically injected with a virus into DG (0.5 µL at 0.25 µL/min) with the following coordinates (posterior = -2.0 mm from Bregma, lateral = ± 1.6 mm, ventral = 2.0 mm) as previously described (Zhang et al., 2016). After perfusion with PBS and PFA as described above, coronal sections (50 µm) were prepared and processed for morphological analysis.
 
 For analysis of dendrite development, three-dimensional (3D) reconstructed images of entire dendritic processes of individual GFP+ neurons were obtained from Z-series stacks of confocal images. Two-dimensional (2D) projection images were traced with NIH Image J using the neuron J plugin. GFP+ dentate granule cells with intact dendritic trees were analyzed for total dendritic length and complexity as previously described (Zhang et al., 2016). The measurements did not include corrections for inclinations of the dendritic process and therefore represented projected lengths. Images of GFP labeled dendritic processes at the outer molecular layer were acquired at 0.18 µm intervals with Zeiss LSM 800 Airyscan system with a plane apochromatic 63 x oil lens [numerical aperture (NA), 1.4; Zeiss] and a digital zoom of 3.2. The Zeiss image files were subjected to the Airyscan processing. The structure of dendritic fragments and spines was traced using 3D Imaris software using a ‘fire’ heat map and a 2D X-Y ortho slice plane to aid visualization (Bitplane). Dendritic processes were traced using automatic filament tracer, whereas dendritic spines were traced using an auto-path method with the semi-automatic filament tracer (diameter; min: 0.1, max: 2.0, contrast: 0.8) (Zhang et al., 2016). The spine density was calculated by dividing the total number of spines by the length of the dendritic segment. The investigator was blind to genotype during the image acquisition and analysis of data.
 
-## Neurosphere assay
+### Neurosphere assay
 
 Neurospheres were prepared as described previously (Sun et al., 2018). Briefly, DG regions were isolated, minced and treated with papain (0.8 mg/mL) for 30 min at 37°C. Tissues were then mechanically dissociated in HBSS containing 30 mM glucose, 2 mM HEPES and 26 mM NaHCO3 to obtain single-cell suspension. Cells were seeded at a density of 5,000–10,000 cells/mL and cultured in culture medium containing Neural Basal Medium, 2% B27,1x GlutaMAX, 2 µg/mL heparin, 50 units/mL Penicillin/Streptomycin, 20 ng/mL epidermal growth factor, and 20 ng/mL fibroblast growth factor for 7 days. Neurospheres were treated without or with Agrin (100 ng/mL) for 7 days in culture medium and scored for size/diameter using Image J (NIH).
 
-## Cell culture, transfection, co-immunoprecipitation, and western blotting
+### Cell culture, transfection, co-immunoprecipitation, and western blotting
 
 HEK293T cells were purchased from ATCC (RRID: CVCL_0063) and were certified authentic and found to be free of Mycoplasma. Cells were cultured in DMEM (Hyclone) supplemented with 10% fetalbovine serum (FBS) and transfected with polyethyleneimine (PEI), as previously described (Zhang et al., 2008). Flag-tagged Lrp4 and Ror2 were immunoprecipitated with Flag M2 beads (SigmaA2220) and anti-Ror2 antibodies. Western blotting was performed as described previously (Wang et al., 2018). Three independent experiments were performed.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are mean ± standard error of the mean (s.e.m.). For two independent data comparisons, unpaired student’s t-test was used to determine statistical significance. For multiple comparisons, ANOVA was used. *, p<0.05; **, p<0.01; ***, p<0.001. Statistical analyses were performed using Excel 2016 (Microsoft) or GraphPad Prism 6.0.

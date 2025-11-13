@@ -22,7 +22,7 @@ Both visual and auditory spatial selective attention result in lateralized alpha
 
 ## Introduction
 
-## Parietal alpha activity changes with the focus of spatial attention
+### Parietal alpha activity changes with the focus of spatial attention
 
 Parietal cortex interacts with frontal cortex to control spatial attention in both vision and audition (Farah et al., 1989; Green et al., 2011). Functional magnetic resonance imaging (fMRI) reveals a series of retinotopically mapped regions ascending along the intraparietal sulcus (IPS), which are biased towards representing contralateral exocentric space (Sereno et al., 2001; Swisher et al., 2007). While the earlier mapped regions are strongly engaged only by vision, the higher maps are recruited when participants engage spatial auditory attention (Michalka et al., 2016).
 
@@ -34,13 +34,13 @@ Alpha oscillations (8–14 Hz) are associated with a range of neural functions (
 
 While auditory spatial processing relies on retinotopic regions of parietal cortex, processing nonspatial features does not, even when listeners are attending the same source in the same sound mixture (Michalka et al., 2016; Hill and Miller, 2010; Noyce et al., 2017). Indeed, for a target defined by its location, alpha lateralization appears only transiently at the start of a trial if competing streams have distinct nonspatial features (Bonacci et al., 2019). Thus, spatial auditory attention utilizes parietal cortex and produces lateralized alpha; however, nonspatial auditory attention does not and produces no signature of attentional focus in parietal cortex.
 
-## Talker discontinuity disrupts auditory spatial attention
+### Talker discontinuity disrupts auditory spatial attention
 
 Numerous behavioral studies demonstrate that maintaining attention on an ongoing auditory stream is supported by continuity of features like pitch, location, voice, and timbre (Best et al., 2008; Darwin and Carlyon, 1995). Feature continuity influences performance automatically: even when listeners know they should ignore some feature, such as talker identity, and attend to a different feature, such as location, discontinuities in the task-irrelevant feature disrupt attention (Best et al., 2008; Maddox and Shinn-Cunningham, 2012; Bressler et al., 2014). Indeed, effects of talker continuity on speech perception in quiet have been ascribed to ‘talker normalization,’ but may actually be due to disruptions of attention triggered by a talker change (Lim et al., 2019; Choi and Perrachione, 2019).
 
 Talker discontinuity during an auditory spatial attention task not only interferes with recall of the target stream, it disrupts parietal alpha lateralization (Mehraei et al., 2018) (see Figure 1B). In this recent study, two competing speech streams were presented. Each syllable was presented from either left or right and was spoken by either a male or a female. Subjects were cued at the beginning of a trial to focus on and report back the content of either the left or the right syllables. The cue conveyed only to which location the subject should attend. In continuous trials, the talker from each direction was fixed throughout the trial, while in switching trials, the talkers switched locations after the first two target syllables (see top of Figure 1B). Because the continuous and switching trials were randomly interweaved within experimental runs, subjects had to rely on top-down spatial attention to perform the task even in the continuous trials. In switching trials when listeners were instructed to listen to syllables from one direction (ignoring any talker change), errors were elevated for the syllable right after the talker switch —and subsequent alpha lateralization was disrupted (see bottom of Figure 1B). These results suggest that talker continuity overrides top-down, volitional control of spatial attention; when the talker from the attended location jumps to the opposite side of the listener, the talker discontinuity interrupts spatial attention and parietal alpha lateralization.
 
-## Brain stimulation studies suggest a causal link between parietal alpha and visual spatial attention
+### Brain stimulation studies suggest a causal link between parietal alpha and visual spatial attention
 
 Despite the strong association between alpha lateralization and spatial visual and auditory attention, these results do not prove that parietal alpha ‘steers’ attention. In humans, brain stimulation methods such as transcranial magnetic stimulation (TMS) and transcranial electrical stimulation (for reviews, see Bestmann et al., 2015; Dayan et al., 2013; Herrmann et al., 2016; Parkin et al., 2015) provide a means to directly test whether particular neural regions are causally involved in particular behaviors.
 
@@ -50,7 +50,7 @@ Some studies have demonstrated effects of alpha-rate stimulation of parietal cor
 
 A few studies have shown that stimulation of auditory cortex can influence auditory task performance (Riecke et al., 2018; Riecke et al., 2015; Zoefel et al., 2018; Neuling et al., 2012), including spatially specific effects on auditory selective attention (Wöstmann et al., 2018; Hanenberg et al., 2019). However, we are unaware of any prior studies exploring whether parietal alpha stimulation influences auditory spatial attention.
 
-## Rationale of the current study
+### Rationale of the current study
 
 Compared to traditional tACS (conducted through sponge pads), HD-tACS, which uses an electrode ring configuration (e.g., an anode flanked by multiple cathodes), creates a more focused electrical current sink (Kuo et al., 2013; Reinhart and Nguyen, 2019). This allows for more precise anatomical targeting. Combined with improved computational models of predicted current flow in the brain (Datta et al., 2009; Edwards et al., 2013), HD-tACS yields more precise brain stimulation than traditional approaches. We therefore used HD-tACS to achieve focused, alpha-frequency stimulation of parietal cortex.
 
@@ -78,7 +78,7 @@ Our primary interest was to explore how HD-tACS stimulation influenced spatial a
 
 ## Results
 
-## Results confirm that talker switches exogenously interfere with spatial attention
+### Results confirm that talker switches exogenously interfere with spatial attention
 
 Based on previous results (Mehraei et al., 2018), we expected performance to be worse in switching than continuous trials, especially during spatial attention. Results confirmed this (see Figure 4). We averaged performance for the baseline blocks of both the Sham and Stimulation sessions, since these blocks were identical, occurring prior to any stimulation. We expected performance for these baseline blocks to be similar in the main experiment and the control experiment, since the trials in these blocks were identical across the experiments (though the subjects differed). As seen in Figure 4, performance was worse in switching trials than in continuous trials, especially during spatial attention, in both experiments.
 
@@ -92,7 +92,7 @@ Results from the control experiment, shown in Figure 4B, were similar. When list
 
 It is worth noting that our talkers switched after each syllable (see Figure 2B), which should be more disruptive than a single switch (as in Mehraei et al., 2018, which inspired this manipulation). Consistent with this, we found a larger drop in performance from continuous to switching trials than in Mehraei et al. (2018).
 
-## Baseline performance is similar in sham and stimulation sessions
+### Baseline performance is similar in sham and stimulation sessions
 
 Each subject in both experiments performed both a Sham and an HD-tACS Stimulation session. Session order was counter-balanced across subjects, who were blinded to this aspect of the experimental design. In both Sham and Stimulation sessions, the first trial block was a no-stimulation, baseline block.
 
@@ -100,11 +100,11 @@ We first confirmed that there was no significant difference in baseline performa
 
 To correct for changes in individual performance between sessions, we referenced performance to that in the baseline block in each session. To test whether our results could be confounded by performance fluctuations in this baseline level between test days, we performed test-retest reliability analyses, comparing baseline results across different testing days (Reinhart, 2017). We found that individual subjects’ performance across sessions was significantly correlated in both the main experiment (Spearman’s Rhos = 0.48; p=0.032) and the control experiment (Spearman’s Rhos = 0.52; p=0.028), indicating the stability of individual differences across testing days.
 
-## Alpha HD-tACS of rIPS disrupts auditory spatial attention for leftward targets
+### Alpha HD-tACS of rIPS disrupts auditory spatial attention for leftward targets
 
 We conducted within-subject comparisons of baseline-corrected performance in Sham and Stimulation sessions for trials where we expected an effect. We analyzed only spatial trials, since parietal processing is not involved during nonspatial attention, and only continuous trials, where there was no exogenous disruption of spatial attention. Finally, we expected any effects to be present during, but not after stimulation. Thus, a priori, we considered only two of the many conditions tested; the control trials from the main experiment and all the results from the control experiment are shown in the next section.
 
-We predicted stimulation to decrease performance for leftward spatial attention compared to the Sham session, but either to increase or to have no effect for rightward spatial attention. Results confirmed these expectations (see Figure 5A). Specifically, for rIPS alpha stimulation, performance in the ‘stimulation’ block was significantly worse in the Stimulation session than in the Sham session for left attention (Z(19) = 2.10, Padj = 0.036, Wilcoxon signed rank test, corrected for multiple comparisons). The effect size of stimulation on leftward attention was 0.33, computed using the z value obtained from the Wilcoxon test with the formula: d=z/N (Pallant, 2013). There was no significant increase in performance from Sham to Stimulation sessions for right attention (Z(19) = 1.27, Padj > 0.99; see Figure 5A).
+We predicted stimulation to decrease performance for leftward spatial attention compared to the Sham session, but either to increase or to have no effect for rightward spatial attention. Results confirmed these expectations (see Figure 5A). Specifically, for rIPS alpha stimulation, performance in the ‘stimulation’ block was significantly worse in the Stimulation session than in the Sham session for left attention (Z(19) = 2.10, Padj = 0.036, Wilcoxon signed rank test, corrected for multiple comparisons). The effect size of stimulation on leftward attention was 0.33, computed using the z value obtained from the Wilcoxon test with the formula: $d=z/\sqrt{N}$ (Pallant, 2013). There was no significant increase in performance from Sham to Stimulation sessions for right attention (Z(19) = 1.27, Padj > 0.99; see Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51184/elife-51184-fig5-v2.jpg)
 
@@ -118,7 +118,7 @@ Post hoc, we explored the dynamics of the effect of alpha stimulation on spatial
 
 We observed a consistent, sustained effect of stimulation: baseline-corrected performance was lower in the Stimulation session compared to the Sham session for each of the sub-blocks in the ‘stimulation’ block (left side of Figure 6). This difference disappeared by the first post-stimulation sub-block, immediately after HD-tACS stopped; baseline-corrected performance was indistinguishable for the Sham and Stimulation sessions for the final four sub-blocks (right side of Figure 6).
 
-## Theta, stimulation does not affect performance during spatial attention
+### Theta, stimulation does not affect performance during spatial attention
 
 Figure 5A demonstrates that there is a spatially specific effect of HD-tACS stimulation. We included a number of other control conditions where we expected no effects of stimulation (see Figure 7).
 
@@ -130,23 +130,82 @@ Theta stimulation was not expected to alter parietal processing for any trials (
 
 Of the 32 distinct trial types, Sham vs. Stimulation sessions differed significantly only in one, in the expected direction: during alpha stimulation of rIPS, when listeners directed spatial attention to a continuous-talker target that was on the left (top leftmost panel in Figure 7A, repeated from Figure 5A). Table 1 shows the results of statistical tests directly comparing Sham and Stimulation baseline-corrected results for all trial types in the main experiment (Wilcox rank tests; note that for control conditions, there was no correction for multiple comparisons, which is conservative given that we expected null results). In addition, there was no effect of theta stimulation for any of the 16 trial types in the control experiment [(spatial and nonspatial attention) x (during stimulation and post stimulation) x (continuous trials and switching trials) x (left/female and right/male)]: for all of these, Z(17) < 1.67 (p>0.095).
 
+**Table 1.**
+ Statistical tests comparing baseline-corrected performance in Sham and Stimulation sessions for the various types of control trials in the main experiment, laid out as in Figure 7A.Each cell represents results of a Wilcoxon rank test with 19 degrees of freedom. Note that the primary comparisons of interest (left vs. right spatial attention for continuous stimuli during rIPS alpha stimulation; results shown in light gray) were already discussed in Section 2.3. For these conditions, results are corrected for multiple comparisons. Uncorrected statistics are reported for the remaining control conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9">Main experiment, using alpha stimulation</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="4">Spatial attention</th>
+      <th colspan="4">Nonspatial attention</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="2">Continuous</th>
+      <th colspan="2">Switching</th>
+      <th colspan="2">Continuous</th>
+      <th colspan="2">Switching</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Left</th>
+      <th>Right</th>
+      <th>Left</th>
+      <th>Right</th>
+      <th>Female</th>
+      <th>Male</th>
+      <th>Female</th>
+      <th>Male</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>During Stimulation</td>
+      <td>Z = 2.10 Padj = 0.036</td>
+      <td>Z = 1.27 Padj = 1</td>
+      <td>Z = 1.21 p=0.23</td>
+      <td>Z = 0.58 p=0.56</td>
+      <td>Z = 0.11 p=0.91</td>
+      <td>Z = 1.08 p=0.28</td>
+      <td>Z = 0.69 p=0.49</td>
+      <td>Z = 0.71 p=0.48</td>
+    </tr>
+    <tr>
+      <td>Post Stimulation</td>
+      <td>Z = 0.87 p=0.39</td>
+      <td>Z = 0.23 p=0.82</td>
+      <td>Z = 1.03 p=0.30</td>
+      <td>Z = 0.66 p=0.51</td>
+      <td>Z = 1.02 p=0.31</td>
+      <td>Z = 0.98 p=0.33</td>
+      <td>Z = 0.33 p=0.74</td>
+      <td>Z = 0.10 p=0.92</td>
+    </tr>
+  </tbody>
+</table>
+
 We did one final post hoc exploration of the data from the main experiment, examining performance for the continuous nonspatial trials, which used stimuli that were physically identical to those where we saw stimulation effects (continuous trials during spatial attention). We reanalyzed performance for the continuous nonspatial trials based on the direction of the target (a feature that listeners were presumably ignoring), collapsing across the gender of the target talker (the feature that listeners were presumably attending). We then examined performance for leftward and rightward targets. If parietal stimulation disrupted attention for leftward, continuous targets when attention was directed to talker gender, it would suggest that spatial parietal processing contributed to performance even during nonspatial attention trials. Comparing baseline-corrected performance for Sham vs. Stimulation sessions during nonspatial attention, we observed no effect of stimulation for targets from either the left (Z(19) = 0.23, p=0.82) or the right (Z(19) = 1.30, p=0.19). These results further support the view that alpha stimulation of parietal cortex only influences top-down spatial processing.
 
 ## Discussion
 
-## Summary of results
+### Summary of results
 
 Using HD-tACS to stimulate rIPS, we here show a causal relationship between parietal alpha power and spatial auditory attention. We included numerous controls to establish the specificity of the influence of parietal alpha. We used a within-subject design that included counter-balanced Sham and Stimulation sessions, and that employed both baseline and post-stimulation control blocks within each session to control for performance fluctuations and to validate the internal consistency of the behavioral metrics. We found that right HD-tACS parietal stimulation disrupted selective attention directed to the left. We found no effect on performance in the myriad control conditions (i.e., when listeners focused top-down attention based on talker identity, when the talker in the attended direction switched abruptly, or when theta stimulation was employed).
 
 In our study, alpha HD-tACS stimulation produced an effect size of 0.33 for leftward spatial attention. A meta-analysis study (Schutter and Wischnewski, 2016) shows that this effect size is comparable to those in past published reports of tACS effects on cognitive function in healthy adults (Ē=0.36, 95% CI = 0.27–0.46) as well as tDCS studies (e.g., Ē = 0.23, 95% CI = 0.09–0.36) (Brunoni and Vanderhasselt, 2014; Hill et al., 2016; Klaus and Schutter, 2018). Thus, we not only established a very specific role of parietal alpha in auditory selective attention, the effect is as robust as other reported effects of neural stimulation.
 
-## Spatial and frequency specificity show that parietal alpha causally influences auditory spatial attention
+### Spatial and frequency specificity show that parietal alpha causally influences auditory spatial attention
 
 Our main experiment used HD-tACS in the alpha band (10 Hz), while in our control experiment, stimulation was at a closely neighboring theta frequency (6 Hz). We found no evidence that theta stimulation altered performance. This frequency specificity of HD-tACS parietal stimulation implicates alpha in control of auditory spatial attention. As expected, we found that stimulation interfered with spatial attention to leftward sources, but had no significant effect for rightward sources (see Figure 3).
 
 We observed no improvement for rightward spatial attention, even though we thought that right parietal stimulation might enhance suppression of an interfering leftward stream. This lack of an effect could simply be due to limited statistical power. However, it may also reflect other factors. First, previous visual attention studies show that alpha-tACS increases endogenous alpha oscillations only when alpha power is low (Alagapan et al., 2016; Neuling et al., 2013). Top-down attention to the right should naturally produce strong rIPS alpha, limiting the influence of additional alpha power (see Figure 3). In contrast, intrinsic rIPS alpha power should be low during leftward attention, allowing stimulation to have an observable effect. Second, parietal cortex is asymmetrical; rIPS predominantly represents left space, but also has a weak representation of right space. When listeners attended to the right, an injection of alpha energy to rIPS may have enhanced suppression of the dominant leftward distractor, but it may also have spread to suppress the weak representation of the rightward target, leading to little net change. Finally, as discussed further below, our stimulation may not have been precise enough to optimize its effectiveness. Regardless, the spatial specificity of the effect of rIPS stimulation is consistent with the hypothesis that parietal alpha causally suppresses the representation of contralateral space, steering spatial attention.
 
-## Task-specificity and stimulus-specificity show that parietal alpha stimulation influences volitional spatial attention, but not exogenous attention
+### Task-specificity and stimulus-specificity show that parietal alpha stimulation influences volitional spatial attention, but not exogenous attention
 
 Consistent with our hypotheses, we found no effect of parietal stimulation when listeners directed attention based on talker gender. To further check that rIPS stimulation did not impact nonspatial attention, we analyzed nonspatial attention performance for continuous targets that happened to be from the left – physically identical to the stimuli for which rIPS HD-tACS alpha stimulation impaired spatial attention performance. As expected, HD-tACS stimulation had no significant impact on nonspatial attention.
 
@@ -154,7 +213,7 @@ In switching stimuli, the irrelevant target feature alternated from syllable to 
 
 Thus, our results implicate parietal alpha in volitional steering of auditory spatial attention.
 
-## Our results confirm and clarify past results from visual attention studies
+### Our results confirm and clarify past results from visual attention studies
 
 As noted in the Introduction, past studies exploring how parietal alpha stimulation influences performance have produced apparently conflicting results. Alpha rTMS of parietal cortex increases performance for ipsilateral targets and decreases performance for contralateral targets, both in visual attention and visual working memory tasks, while no effects are found for other stimulation rates (Romei et al., 2010; Sauseng et al., 2009). However, past results from the handful of studies that used tACS to stimulate parietal cortex during visual spatial attention are less conclusive.
 
@@ -164,7 +223,7 @@ These findings highlight the importance of carefully considering task demands wh
 
 In addition, whereas Schumann and colleagues used HD-tACS, the studies that failed to see consistent, spatially specific effects of parietal alpha stimulation used traditional tACS. Traditional tACS is usually delivered with large pads (5 × 5 cm2) and stimulates a broad area between the stimulation electrodes (Datta et al., 2009). The resulting spread of electric current is greater, and could even spread to both hemispheres, confounding stimulation effects.
 
-## Our study differs from past brain stimulation studies in audition
+### Our study differs from past brain stimulation studies in audition
 
 As noted in the Introduction, a few studies stimulated auditory cortex and demonstrated behavioral effects (Riecke et al., 2018; Riecke et al., 2015; Zoefel et al., 2018). However, we know of no other studies that show a causal influence of parietal alpha oscillations on auditory spatial attention.
 
@@ -178,7 +237,7 @@ In contrast to their study, our HD-tACS stimulation targeted intraparietal sulcu
 
 We believe that auditory spatial attention recruits the same fronto-parietal network involved in visual spatial attention (Michalka et al., 2016; see the discussion in Bonacci et al., 2019). We therefore expect manipulation of parietal alpha to lead to similar effects for auditory spatial attention and visual spatial attention. Consistent with Schuhmann (2019), we used alpha HD-tACS to focally stimulate parietal cortex. As in Schuhmann (2019), we found that manipulation of parietal alpha affects control of endogenous spatial attention (processing of continuous contralateral targets during a spatial attention task)—but does not influence performance dominated by exogenous attention effects (processing of switching targets, where endogenous disruptions limit performance).
 
-## Caveats and future work
+### Caveats and future work
 
 We know of no other studies that show a causal influence of parietal alpha oscillations on auditory spatial attention. Additional studies are needed to replicate and confirm our results, and to further delineate the conditions under which parietal alpha influences auditory perception.
 
@@ -194,13 +253,13 @@ The present findings add to a growing body of neuromodulation research addressin
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Thirty-eight volunteers gave written consent to procedures approved by the Boston University Institutional Review Board. The subjects were paid for their participation. Twenty volunteers aged between 18–24 years (mean 21.15 year., standard deviation 3.01 year.; 13 females, seven males) participated in the main experiment. Eighteen volunteers aged between 18–24 years (mean 22.11 year., standard deviation 2.4 year.; 15 females, three males) participated in the control experiment. All participants had clinically normal audiometric thresholds in both ears for frequencies from 250 Hz to 8 k Hz (thresholds less than 20 dB HL).
 
 We conducted a pilot experiment with six subjects and estimated effect size for the ‘attend left, continuous, spatial attention’ trials during alpha stimulation of right parietal cortex. Given that we also planned on testing ‘attend right, continuous, spatial attention’ trials, we estimated that we needed 14 subjects to achieve a power of 0.903 (correcting the family-wise error rate for multiple comparisons). Because we anticipated some attrition, we recruited 20 subjects in the main experiment and 18 in the control experiment, all of whom completed the experiments.
 
-## Task and stimuli
+### Task and stimuli
 
 Subjects performed a selective auditory attention task, diagrammed in Figure 2A. At the beginning of each trial, subjects fixated their gaze on a dot presented at the center of a computer screen. A visual cue starting 0.5 s later (0.4 s duration) instructed subjects which of two competing speech streams to attend, based on either spatial or nonspatial features. In spatial trials, the cue was either a left or right arrow, indicating the location of the target speech stream. In nonspatial trials, the cue was either an up or down arrow, indicating the gender of the target stream talker (female or male talker). The sound stimuli began 1.2 s after the visual cue disappeared and lasted 2.3 s. Listeners had one second after this to enter their response on the keyboard, at which point a colored circle appeared around the fixation dot for 0.2 s to indicate if the response was correct (blue) or incorrect (red). A small cash reward was given to subjects for each trial correctly answered within the time limit to help ensure subjects remained attention throughout the session.
 
@@ -210,7 +269,7 @@ On each trial, the listener’s goal was to count the number of/ga/ syllables in
 
 Stimuli were presented via earphones (ER-2, Etymotic Research, Inc) in a double-walled Eckel sound-treated booth at Boston University. All sound stimuli were presented at a sound pressure level of approximately 75 dB.
 
-## Experimental procedures
+### Experimental procedures
 
 We conducted two experiments, differing in the form of HD-tACS stimulation that was applied to right parietal cortex. In the main experiment, HD-tACS stimulation was at a frequency in the middle of the alpha range (10 Hz), while in the control experiment, it was in the theta frequency range (6 Hz). Other than this detail, the two experiments were procedurally identical.
 
@@ -222,7 +281,7 @@ Following training in each session, subjects conducted three 20 min long blocks 
 
 The trial order within each 208-trial block was pseudo-random, with each trial type equally likely. Each block contained exactly 104 trials of spatial attention trials (52 attend left and 52 attend right) and 104 trials of nonspatial attention (52 attend female and 52 attend male). Additionally, half of the trials were continuous and the other half switching (e.g., each of the three blocks in an experimental session contained exactly 26 trials of attend left, continuous trials). To avoid fatigue, subjects were given a 10 s rest period after every 48 trials within each block.
 
-## High definition transcranial alternating current stimulation (HD-tACS)
+### High definition transcranial alternating current stimulation (HD-tACS)
 
 HD-tACS was administered using the Soterix M × N-9 High Definition-Transcranial Electrical Current (HD-tES) Stimulator (Model 9002A, Soterix Medical, New York, NY). To target right IPS, an electrode montage was created based on a current-flow model generated by the Soterix HD-Explore software (version 4.1, Soterix Medical, New York, NY). Stimulation electrodes were placed in HD Electrode holders (Soterix Medical, New York, NY) and embedded in a 64-channel EEG cap. The electrode holders were filled with gel to ensure impedance for each electrode did not exceed 50 k ohms prior to stimulation and remained below 5 k ohms during stimulation (Thair et al., 2017). The major stimulating electrode was placed at P2 with a stimulation intensity of 1.5mA, and four return electrodes were placed at CP2 (−0.6mA), P4 (−0.225mA), Pz (−0.075mA), and PO4 (−0.6mA). Both the HD-tACS stimulation and sham sessions used the same electrode montage. Figure 8A depicts the electrode placement of the montage and simulated current-flow model.
 
@@ -234,6 +293,6 @@ In the HD-tACS session, stimulation ramped up to 1.5 mA over 30 s at the beginni
 
 In our pilot experiments, we asked subjects verbally whether they could differentiate sham and stimulation sessions. None could. This confirmed the experience we have from our past HD-tACS studies using comparable stimulation parameters (including intensity, duration, sink-source electrode configuration, low frequencies), where we systematically probed the subjects’ ability to differentiate sham from stimulation; in no case were responses significantly different from random guessing (Reinhart and Nguyen, 2019; Reinhart, 2017; Nguyen et al., 2018).
 
-## Statistical analysis
+### Statistical analysis
 
 To test our hypotheses, we calculated the percentage of correct responses for each attention condition (spatial attention: attend left vs. right; nonspatial attention: attend female vs. male). We then baseline corrected for each attention condition in the during-stimulation block and post-stimulation block by subtracting the accuracy of the corresponding trial type during the initial baseline block. For the pairwise comparisons of accuracy for the two a priori planned statistical tests (i.e., leftward spatial attention in continuous trials should be hurt by alpha stimulation and rightward spatial attention in continuous trials might be enhanced by alpha stimulation), single-tailed Wilcoxon signed rank tests were performed (significance for p<0.05) and Bonferroni corrected for multiple corrections. For the many control conditions, where we expected no effects, we did post hoc Wilcoxon signed rank tests, without correction for multiple comparisons (which is conservative when we expected no effect, as correction would make it more likely that we dismissed marginal effects).

@@ -7,13 +7,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
+1. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
 ## Abstract
 
-Many animals moving through fluids exhibit highly coordinated group movement that is thought to reduce the cost of locomotion. However, direct energetic measurements demonstrating the energy-saving benefits of fluid-mediated collective movements remain elusive. By characterizing both aerobic and anaerobic metabolic energy contributions in schools of giant danio ( Devario aequipinnatus ), we discovered that fish schools have a concave upward shaped metabolism–speed curve, with a minimum metabolic cost at ~1 body length s -1 . We demonstrate that fish schools reduce total energy expenditure (TEE) per tail beat by up to 56% compared to solitary fish. When reaching their maximum sustained swimming speed, fish swimming in schools had a 44% higher maximum aerobic performance and used 65% less non-aerobic energy compared to solitary individuals, which lowered the TEE and total cost of transport by up to 53%, near the lowest recorded for any aquatic organism. Fish in schools also recovered from exercise 43% faster than solitary fish. The non-aerobic energetic savings that occur when fish in schools actively swim at high speed can considerably improve both peak and repeated performance which is likely to be beneficial for evading predators. These energetic savings may underlie the prevalence of coordinated group locomotion in fishes.
+Many animals moving through fluids exhibit highly coordinated group movement that is thought to reduce the cost of locomotion. However, direct energetic measurements demonstrating the energy-saving benefits of fluid-mediated collective movements remain elusive. By characterizing both aerobic and anaerobic metabolic energy contributions in schools of giant danio (Devario aequipinnatus), we discovered that fish schools have a concave upward shaped metabolism–speed curve, with a minimum metabolic cost at ~1 body length s-1. We demonstrate that fish schools reduce total energy expenditure (TEE) per tail beat by up to 56% compared to solitary fish. When reaching their maximum sustained swimming speed, fish swimming in schools had a 44% higher maximum aerobic performance and used 65% less non-aerobic energy compared to solitary individuals, which lowered the TEE and total cost of transport by up to 53%, near the lowest recorded for any aquatic organism. Fish in schools also recovered from exercise 43% faster than solitary fish. The non-aerobic energetic savings that occur when fish in schools actively swim at high speed can considerably improve both peak and repeated performance which is likely to be beneficial for evading predators. These energetic savings may underlie the prevalence of coordinated group locomotion in fishes.
 
 ## Introduction
 
@@ -25,11 +25,114 @@ Another factor of importance in the experimental evaluation of the energetic cos
 
 More broadly, despite the widespread notion that collective motion saves energy (Weihs, 1973), very few studies have directly measured the energetic cost of collective movement compared to the cost of movement by solitary individuals. In the canonical case of V-formation flight in birds, energetic saving is exclusively inferred from indirect measurements, for example, heart rate (Weimerskirch et al., 2001), and flapping frequency and phase (Portugal et al., 2014; Table 1). There are no direct measurements of metabolic energy consumption of collective movement in birds, and indeed this would be extremely challenging to accomplish. Although some energetic aspects of schooling fishes have been studied (Parker, 1973; Abrahams and Colgan, 1985; Burgerhout et al., 2013; Currier et al., 2021; Hvas and Oppedal, 2019), these studies have analyzed a limited range of speeds and focused on aerobic metabolism (see Table 1). In fact, several field and laboratory kinematic studies suggest that both bird flocks and fish schools do not always conserve aerobic energy (Hvas and Oppedal, 2019; Partridge and Pitcher, 1979; Usherwood et al., 2011) and indicate that moving in a group can actually involve increased costs. Without directly measuring the energetic cost of movement, inferences solely based on kinematics do not include complex group interactions, and the interaction between collective behavior and fluid dynamics. Consequently, we do not yet have a holistic and mechanistic view of where and how the collective movement by fish might conserve energy.
 
+**Table 1.**
+ A summary of experimental studies that directly estimate the energetic saving of group movement in aerial and aquatic vertebrates that move through a fluid environment.No energetic measurements have made for freely-moving bird flocks. Three studies measured the energetics of fish schools over a range of narrow speeds; two other studies measured the energetics of fish schooling at one speed. But no studies have quantified both the aerobic and anaerobic energetic cost of swimming as a group compared to solitary locomotion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal group</th>
+      <th>Species</th>
+      <th>Testing speeds</th>
+      <th>Group size</th>
+      <th>Measurements</th>
+      <th>Results</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bird</td>
+      <td>Pelecanus onocrotalus</td>
+      <td>Voluntary flights</td>
+      <td>&lt;8</td>
+      <td>Heart rate</td>
+      <td>Group movement saves energy</td>
+      <td>Weimerskirch et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Bird</td>
+      <td>Columba livia</td>
+      <td>Voluntary flights</td>
+      <td>6</td>
+      <td>Flap frequency &amp; Accelerations</td>
+      <td>Group movement costs more energy</td>
+      <td>Usherwood et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Bird</td>
+      <td>Geronticus eremita</td>
+      <td>Voluntary flights</td>
+      <td>14</td>
+      <td>Wing beat phase, spatial distribution</td>
+      <td>V-formation birds use phasing strategy to cope with wakes</td>
+      <td>Portugal et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>15 species</td>
+      <td>1 speed, unknown speed</td>
+      <td>6–12 individuals</td>
+      <td>Aerobic energy</td>
+      <td>Grouping reduces metabolic rate</td>
+      <td>Parker, 1973</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>Notropis heterodon</td>
+      <td>1 speed~1.2 BL s–1</td>
+      <td>3 individuals</td>
+      <td>Aerobic energy</td>
+      <td>Only schooling of 6 cm fish saves energy</td>
+      <td>Abrahams and Colgan, 1985*</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>Anguilla anguilla L</td>
+      <td>6 speeds1–2.2 BL s–1</td>
+      <td>7 individuals</td>
+      <td>Aerobic energy</td>
+      <td>Schooling save energy at low speeds</td>
+      <td>Burgerhout et al., 2013*</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>Lepomis macrochirus Oncorhynchus mykiss</td>
+      <td>4 speeds,1.5–3 BL s–1</td>
+      <td>1–8 individuals</td>
+      <td>Aerobic energy</td>
+      <td>Schooling saves energy</td>
+      <td>Currier et al., 2021*</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>Salmo salar</td>
+      <td>6 speeds1–3 BL s–1</td>
+      <td>10 individuals</td>
+      <td>Aerobic energy</td>
+      <td>Schooling does not save energy</td>
+      <td>Hvas and Oppedal, 2019</td>
+    </tr>
+    <tr>
+      <td>Ray-finned fish</td>
+      <td>Devario aequipinnatus</td>
+      <td>14 speeds,0.3–8 BL s–1</td>
+      <td>8 individuals</td>
+      <td>Aerobic and anaerobic energy</td>
+      <td>Schooling saves energy at high speed</td>
+      <td>Present study*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Other uncited studies of fish schoolings use kinematic calculations and computer simulation to indirectly show that fish schooling conserve energy.*Studies used group and individual fish in the same size swim-tunnel respirometer._
+
 For swimming fish, fluid dynamic experiments have shown how collective movement can improve swimming efficiency due to interactions among deforming bodies and through interactions between moving animals and the local fluid environment (these energy-saving mechanisms are summarized in Figure 1). Our current understanding of energy saving mechanisms during collective locomotion in fishes is largely based on computational fluid dynamic models with a few analyses using robotic systems (Weihs, 1973; Li et al., 2020; Kelly and Menzer, 2023; Fish et al., 2016; Kurt and Moored, 2018) at low speed, but the link between such models and fish metabolic energy saving over a wide speed range is not yet established. We expect that the need to conserve energy in animals moving against air or water resistance should be greater at higher speeds. We hypothesize that fish in schools can reduce the total cost of high-speed locomotion relative to solitary movement, leading to reduced non-aerobic energetic costs and time of recovery for schooling fish swimming at speeds occupying the majority (>50%) of their aerobic capacity. Our secondary objective is to determine the differences (if any) between the swimming performance curves (metabolic rate versus speed) of solitary fish and fish schools.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90352/elife-90352-fig1-v1.jpg)
 
-**Figure 1.:** When fish swim into free-stream flow (U), experimental data show that fish schools are dynamic with fish changing position frequently. Regardless of fish position within a school and changes in relative position, theoretical and robotic analyses have demonstrated that at least four mechanisms (indicated by numbers) provide an advantage in the form of reduced power consumption. 1. Reduced oncoming velocity (Ufs2) requires less thrust for a fish swimming in the wake between two leading fish (Weihs, 1973); 2. The Knoller-Betz effect of leading edge suction reduces costs for a trailing fish due to accelerated oscillating flow at the head (U1) (Jones et al., 1998; Saadat et al., 2021); 3. Added mass ‘push’ from follower to leader can reduce costs for the leader in front of another fish (Fish and Hui, 1991; Kurt and Moored, 2018; Saadat et al., 2021); 4. Wall effects benefit neighboring fish where swimming next to another fish reduces swimming costs (Daghooghi and Borazjani, 2015; Li et al., 2020). These principles suggest that regardless of the relative positions of the individuals within the fish school, the fish school as a collective unit should be able to save metabolic energy compared to a solitary fish swimming in U.fs
+**Figure 1.:** When fish swim into free-stream flow (Ufs), experimental data show that fish schools are dynamic with fish changing position frequently. Regardless of fish position within a school and changes in relative position, theoretical and robotic analyses have demonstrated that at least four mechanisms (indicated by numbers) provide an advantage in the form of reduced power consumption. 1. Reduced oncoming velocity (U2) requires less thrust for a fish swimming in the wake between two leading fish (Weihs, 1973); 2. The Knoller-Betz effect of leading edge suction reduces costs for a trailing fish due to accelerated oscillating flow at the head (U1) (Jones et al., 1998; Saadat et al., 2021); 3. Added mass ‘push’ from follower to leader can reduce costs for the leader in front of another fish (Fish and Hui, 1991; Kurt and Moored, 2018; Saadat et al., 2021); 4. Wall effects benefit neighboring fish where swimming next to another fish reduces swimming costs (Daghooghi and Borazjani, 2015; Li et al., 2020). These principles suggest that regardless of the relative positions of the individuals within the fish school, the fish school as a collective unit should be able to save metabolic energy compared to a solitary fish swimming in Ufs.
 
 To evaluate these hypotheses, we directly measured both the aerobic and non-aerobic energy used by schooling fishes over a wide range of water velocities (0.3–8.0 body lengths s–1; BL s–1), and then compared the swimming performance curve to that of solitary fish. We equipped a high-resolution (see materials and methods for our approach to enhancing the signal-to-noise ratio in our respirometer) swim-tunnel respirometer with two orthogonal high-speed cameras to quantify three-dimensional (3-D) fish kinematics. This enabled us to simultaneously measure energetics, 3-D dynamics of fish schools (n=5 replicate schools), and the kinematics of solitary fish (n=5) of a model species, giant danio (Devario aequipinnatus), that exhibits an active directional group swimming from near still water to maximum sustained speeds (equivalent to a Reynolds number range of 6.4•103–1.8•105; Appendix 1—figure 2), using a Ucrit test.
 
@@ -47,6 +150,10 @@ We also characterized the kinematic features that result in elevated ṀO2 at lo
 
 **Figure 3.:** (A) Total energy expenditure (TEE) per tail beat, (B) Tail beat frequency, (C) The angle of fish to free-stream water flow, measured as the mean and the S.D. of the angles of the individuals within the school. (D) Three-dimensional angle of fish to the frontal plane. (E) Turning frequency, (F) Three-dimensional school length. (G) Three-dimensional distances among all individuals in the school and the S.D. of the distance. The upper and lower boundaries of the metrics are indicated. Statistical significance is denoted by asterisk(s). Green color = school data (n=3–4); blue color = solitary fish data (n=3–4); shading indicates the 95% confidence interval. See materials and methods for details of three-dimensional reconstruction and statistics.
 
+![Video 1.](https://cdn.elifesciences.org/articles/90352/elife-90352-video1.mp4.jpg)
+
+**Video 1.:** Three of the four fish that were holding stationary showed a positive body angle, and considerable motion of the fins is evident for stability control. One fish that moved from the top right corner increased its body angle and started to use more fin movements for stability control as the fish approached zero ground speed. Once the fish reached zero ground speed, the body angles and movements of fins were very similar to the other three fish that had been holding stationary.
+
 We discovered that, across the entire 0.3–8 BL s–1 range, ṀO2-speed curves of fish schools are concave upward shaped (reached 1053.5 mg O2 kg–1 hr–1 at 8 BL s–1) whereas solitary fish showed an upward concave curve that reaching a plateau of 760.2 mg O2 kg–1 hr–1 (~10% CV in 6–8 BL s–1, Figure 2C), demonstrating that schooling dynamics results in a 44% higher maximum aerobic performance (F1,80 = 30.0, p<0.001). This increased maximum aerobic performance translated to a lower use of aerobic capacity compared to solitary fish over 0.3–8 BL s–1 (see the discussion for how fish swimming in school can improve aerobic performance). Collectively, fish schools used a 36% lower proportion of their aerobic scope than solitary fish (Wilcoxon test: p = 0.0002, Figure 2F). Fish schools used a 38% lower proportion of aerobic scope (34 vs 55%) at 4 BL s–1 (50% Ucrit and > 50% aerobic scope onward), and consistently used ~25% lower proportion of their aerobic scope at 6 and 7 BL s–1 than solitary fish (F1,103 ≥ 4.8, p≤0.03, Figure 2E).
 
 Given that fish schools had a higher maximum aerobic performance, generally used a lower proportion of their aerobic scope, and individuals within the schools have a 14% lower fTB than the solitary fish at 8 BL s–1 (11.5 vs. 13.3 Hz, F1,80 = 15.1, p<0.001), we predicted that fish schools, compared with solitary fish, use less anaerobic energy to supplement aerobic energy for the high-speed movement approaching their aerobic limit. Hence, we measured post-exercise O2 utilization, a majority of which is used to restore high-energy phosphate storage and glycolytically induced metabolic perturbations (EPOC: Excess Post-exercise O2 Consumption). We discovered that fish schools have a 65% lower EPOC (0.69 vs 1.95 mg O2; t8=4.5, p=0.0021), and recover 43% faster than solitary fish (8 vs 14 h; t8=2.8, p=0.025; Figure 2G, H).
@@ -55,7 +162,7 @@ To estimate the relative proportions of aerobic and anaerobic energy contributio
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90352/elife-90352-fig4-v1.jpg)
 
-**Figure 4.:** Ucrit) test.(A) Modeling the O2 cost of the metabolic rate (ṀO2)-speed curve and the ensuing recovery cost (excess post-exercise oxygen consumption, EPOC) as a function of speed. After Ucrit, fish returned to the same resting ṀO2 (ṀO2rest) as a pre-test. (B, C) In addition to ṀO2 (solid line and filled symbols), we modeled the total O2 cost (dash line and half-filled symbols) for fish schools and solitary fish and when performing the Ucrit swimming test. The estimated partitioning of aerobic and non-aerobic contributions to swimming are denoted (red-&-bold) with respect to speed for 4–8 BL s–1 is shown below each graph. (D, E) Using total O2 cost, we computed total energy expenditure (10 min period per point) and the total cost of transport (including both aerobic metabolism, high-energy phosphate, and anaerobic glycolysis) for both fish schools and solitary fish. Statistical significance is denoted by asterisk(s). Green color = school data (n=5); blue color = solitary fish data (n=5); shading indicates the 95% confidence interval. See materials and methods for modeling and statistical details.
+**Figure 4.:** (A) Modeling the O2 cost of the metabolic rate (ṀO2)-speed curve and the ensuing recovery cost (excess post-exercise oxygen consumption, EPOC) as a function of speed. After Ucrit, fish returned to the same resting ṀO2 (ṀO2rest) as a pre-test. (B, C) In addition to ṀO2 (solid line and filled symbols), we modeled the total O2 cost (dash line and half-filled symbols) for fish schools and solitary fish and when performing the Ucrit swimming test. The estimated partitioning of aerobic and non-aerobic contributions to swimming are denoted (red-&-bold) with respect to speed for 4–8 BL s–1 is shown below each graph. (D, E) Using total O2 cost, we computed total energy expenditure (10 min period per point) and the total cost of transport (including both aerobic metabolism, high-energy phosphate, and anaerobic glycolysis) for both fish schools and solitary fish. Statistical significance is denoted by asterisk(s). Green color = school data (n=5); blue color = solitary fish data (n=5); shading indicates the 95% confidence interval. See materials and methods for modeling and statistical details.
 
 Schooling dynamics reduced the total cost (aerobic plus anaerobic) of transport (TCOT) by an average of 43% compared to swimming alone (F1,103 = 6.9, p=0.01), and most of this energy conservation happens at higher speeds when fish approach their aerobic limit. Schooling dynamics in danio enables an extremely shallow rate of increase in TCOT with speed compared to that of an individual (Figure 4E). The TCOT of solitary fish increased by 490% (6.5 kJ km–1 kg–1) at 8 BL s–1, whereas the schooling TCOT increased by only 200% (3.6 kJ km–1 kg–1) at 8 BL s–1. Therefore, individual fish form a more energy-efficient biological entity when they collectively move as a school.
 
@@ -65,7 +172,7 @@ To answer the question of how schooling dynamics reduces TEE, we combine video a
 
 Simultaneous characterization of energetics and kinematics enables an integrated understanding of both the physiology and physics of fish schooling behavior. Hydrodynamic models, kinematic measurements, and robotic analyses of fish schools indicate that the cost of swimming can be reduced when fish swim beside neighboring fish (Li et al., 2020), behind or in front of another fish (Jones et al., 1998), or behind leading individuals (Weihs, 1973; Figure 1). We have demonstrated here that fish schools downshifted an overall concave upward swimming energetics performance curve at higher speeds by ~43%. Energy use as swimming speed increases changes in a non-linear manner, with higher energy use at the lowest speeds (Figure 2D), and the performance curve below 3.0 BL s–1 is U-shaped. Energy saving occurs through a substantial reduction in the non-aerobic energy contribution when fish approach aerobic limits. One of the key ecological benefits of the reduced use of glycolysis is a faster recovery time from fatigue (Figure 2H). This would enable fish schools in nature to repeat high-performance movements. Considering that high-speed maneuvers are extremely common in predatory evasion (Stewart et al., 2018), food-searching group motion (Pitcher et al., 1982), and in fish schools in the ocean (Appendix 1—figure 1), energy savings by fish schooling at high speed and the faster recovery that followed could have a considerable impact on lifetime fitness (Jain and Farrell, 2003; Holder et al., 2022). Moreover, considerable energy savings occur even though we observed that individual danio regularly change positions within the school and do not maintain stable inter-individual locations. We expect that this is because individuals within the school can use multiple hydrodynamic mechanisms to save energy depending on their location (Figure 1). We propose that energetic savings by collective movement may not require either fixed positional arrangements among individuals or specific kinematic features (such as tail beat synchronization) compared to solitary locomotion. Based on these results, we regard fish schooling as a highly robust behavior that provides considerable energetic benefits that are not necessarily sensitive to specific fish locations or movements. Future studies are necessary to decipher each of the specific hydrodynamic mechanisms for energy saving.
 
-## Schooling dynamics enhances aerobic performance and reduces non-aerobic energy use
+### Schooling dynamics enhances aerobic performance and reduces non-aerobic energy use
 
 We discovered that a significant amount of energy conservation for active directional swimming occurs at speeds above 3 BL s–1. In nature, fish schools routinely exhibit active directional collective locomotion above ~6 BL s–1 (Appendix 1—figure 1; Supplementary file 1c; Misund and Aglen, 1992), a speed that engages anaerobic glycolysis. Yet, there are no previous measurements of the anaerobic cost of schooling in fish. Hence, important and previously unrecognized benefits of active directional collective locomotion are (1) increased aerobic performance, (2) a reduced use of aerobic capacity and anaerobic energy, and (3) a resultant faster recovery from the associated metabolic perturbations and costs of swimming at higher speeds. When animals are approaching their maximum metabolic rate, the highest attainable rate of O2 uptake limits aerobic performance during the unsteady state of high-speed locomotion and anaerobic glycolysis is engaged to support the maximum metabolic demand.
 
@@ -77,7 +184,7 @@ To present a complete energetic profile showing the total energy expenditure (TE
 
 We also demonstrated that the need for energy saving in fish schools at lower speeds (<3 BL s–1 or 38% Ucrit Figures 2E, 3D, E) is not as crucial as at higher speeds where we demonstrated substantial energy savings in the schools compared to solitary individuals. Fluid drag is exponentially less at lower speeds compared to higher speeds. Fish predominately use aerobic metabolism to support low-speed steady swimming for prolonged periods (Brett, 1964) which does not require lengthy recovery as swimming at higher speeds, where glycolysis contributes to the energetic demands. The costs of low-speed swimming are often less than <20% of aerobic capacity (Figure 2E), which leaves the majority of aerobic capacity (>50%) for other activities. Therefore, the benefits of reducing the energetic cost of locomotion are likely not major factors underlying behaviors such as low-speed milling (Costanzo and Hemelrijk, 2018) and aggregation (Rountree, 1989) in fishes, where other ecological drivers such as feeding, predator avoidance, and reproduction likely dominate the fitness landscape.
 
-## Schooling dynamics and energy conservation
+### Schooling dynamics and energy conservation
 
 Our 3D kinematic analyses shed light on the complex interactions between schooling and hydrodynamics that enable energy saving by fish collective movement. One of the key possible mechanisms is local interactions among individuals, where the kinematics of individual fish respond to the wakes shed by neighbors (Camazine et al., 2020). Kinematic and simulation studies indicate that two to three coordinated fish can save energy (Verma et al., 2018; Li et al., 2020) through local interactions. We directly demonstrate here that eight coordinated fish can save energy, and recent simulations show that schooling benefits can extend to at least 23 fish (Kelly and Menzer, 2023). Although these studies appear to suggest that the energetic benefits of schooling are scalable, we are still some ways from proving the exact mechanisms of how the large school size in nature is coordinated and whether or not local interactions are still one of the mechanisms for energy saving when scaling up school size. Future hydrodynamic and long-term 3-D tracking studies are needed to investigate the specific schooling formations and hydrodynamic mechanisms used by live fish for energy saving (as summarized in Figure 1; Ko et al., 2023).
 
@@ -85,7 +192,7 @@ We show that danio in a school keep a relatively consistent 3-D distance from ne
 
 To encapsulate the complex interaction among animal physiology, kinematics and fluid dynamics, more comprehensive quantification beyond simple kinematic metrics are necessary. For example, the wing flapping frequency of birds in a V-formation can be higher than for solitary flight despite strong indirect evidence of overall energy saving by V-formation flying (Weimerskirch et al., 2001; Portugal et al., 2014; Usherwood et al., 2011), and flapping phase of adjacent birds may be informative for understanding the fluid dynamic advantages of V-formation flying (Portugal et al., 2014). Likewise, phase matching of body motion between neighboring fish can help individual fish within the school to boost thrust or reduce drag (Li et al., 2020). Fish can also adjust their body stiffness and maintain fTB while reducing the amount of muscle activity needed to generate movement (Beal et al., 2006; Liao et al., 2003; Quinn and Lauder, 2021). Thus, we did not observe consistent and substantial changes in the fTB of fish within the schools compared to solitary swimmers despite demonstrating substantial energetic savings by the group at high speed. Although reduced fTB has been used in past studies as an indirect indicator of energy saving in fishes (Zuyev and Belyayev, 1970; Marras et al., 2015), we caution that fTB is not necessarily an indicator of energy use in group dynamics where fish constantly and dynamically interact with complex vortices and flow generated by other individuals. By simultaneously measuring kinematics and energetics, we discovered a downshifted performance curve of TEE per tail beat in fish schools at higher speeds (Figure 3A), even with limited alteration in fTB at lower swimming speeds within the school. This suggests that the locomotor muscle fibres in the body musculature of fish within the school need to generate less force as indicated by the lower measured TEE. Fish can possibly fine-tune undulatory motion to harness kinetic energy from nearby vortices (Li et al., 2020; Verma et al., 2018), reducing biological energy contribution for thrust.
 
-## Aerobic metabolic rate–speed curve of fish schools
+### Aerobic metabolic rate–speed curve of fish schools
 
 We discovered that the aerobic metabolic rate (ṀO2)–speed curve at speeds less than 3 BL s–1 is U-shaped, with swimming at 0.3 BL s–1 utilizing the same aerobic energy as moving at 3 BL s–1 (Figure 2D). The entire aerobic energy-speed performance curve is concave upward in an extended J-shape (Figure 2C), and non-linear, in contrast to several previous analyses of energy use with speed in fish which have shown linear relationships (Herskin and Steffensen, 1998; Bushnell et al., 1984; Sepulveda and Dickson, 2000). By quantifying energy use over a wide speed range and by measuring aerobic energy use at 14 distinct speeds, we showed that locomotion at the lowest speeds involves increased energy use relative to swimming at speeds up to 3 BL s–1, similar to previous results from skate locomotion (Di Santo et al., 2017). This suggests that analyses of fish energy use as speed increases would benefit from increasing the number of tested speeds, and that efforts to extend speed measurements to both the lowest and highest speeds would enable a greater level of precision in measuring fish locomotor performance.
 
@@ -99,11 +206,11 @@ In summary, our experiments on giant danio have demonstrated substantial energy 
 
 ## Materials and methods
 
-## Experimental animals
+### Experimental animals
 
 The experiments were performed on giant danio (Devario aequipinnatus) that were acquired from a local commercial supplier near Boston, Massachusetts USA (Supplementary file 1). Five schooling groups are randomly distributed and housed separately in five 37.9 l aquaria (n=8 per tank). The five solitary individuals are housed separately in five 9.5 l aquaria (n=1 per tank). The individual housing condition acclimated the single D. aequipinnatus to the solitary environment and helped to reduce any isolation stress that might elevate whole-organism metabolic rate. In fact, the aerobic locomotion cost of solitary individuals showed no statistical difference from (in fact, being numerically lower) that of fish schools at a very low testing speed. The flow speed is similar to some areas of the aerated home aquarium for each individual fish. This suggests that the stress of solitary fish likely does not meaningfully contribute to the higher locomotor costs (see experimental protocol for more details on mitigating the stress). The condition factor showed no difference between solitary fish and fish schools (0.81 vs 0.99; t8=2.14, p=0.065). All aquaria have self-contained thermal control (28 °C), an aeration system (>95% air saturation, % sat.) and a filtration system. Water changes (up to 50% exchange ratio) were carried out weekly. Fish were fed ad libitum daily (TetraMin, Germany). Animal holding and experimental procedures were approved by the Harvard University Animal Care IACUC Committee (protocol number 20-03-3).
 
-## Integrated Biomechanics & Bioenergetic Assessment System (IBAS)
+### Integrated Biomechanics & Bioenergetic Assessment System (IBAS)
 
 The core of our Integrated Biomechanics & Bioenergetic Assessment System (IBAS) (Appendix 1—figure 4) is a 9.35 l (respirometry volume plus tubing) customized Loligo swim-tunnel respirometer (Tjele, Denmark). The respirometer has an electric motor, and a sealed shaft attached to a propeller located inside the respirometer. Regulating the revolutions per minute (RPM) of the motor controls water velocity of the tunnel. The linear regression equation between RPM and water velocity (V) is established (V=0.06169 • RPM – 5.128, R2=0.9988, p<0.0001) by velocity field measured by particle image velocimetry (PIV). Hence, the aerobic costs during locomotion are measured through the regulation of the water velocity.
 
@@ -119,7 +226,7 @@ The aerated (100% sat., air pump: whisper AP 300, Tetra, China) reservoir water 
 
 To allow fish to reach the undisturbed quiescent state during the trial (another stress mitigation practice), the entire IBAS is covered by laser blackout sheets (Nylon Fabric with Polyurethane Coating; Thorlabs Inc, New Jersey, United States). The room lights are shut off and foot traffic around IBAS is restrained to the absolute minimum. Fish are orientated by dual small anterior spots of white light (lowest light intensity, Model 1177, Cambridge Instruments Inc, New York, United States) for orientation (one to the top and the other to the side) of the swimming section. The test section is illuminated by infrared light arrays to allow high-speed video recording with minimal disturbance of fish behavior.
 
-## Experimental protocol
+### Experimental protocol
 
 The energy use of vertebrates at lower speeds is primarily aerobic, while for high-speed movement anaerobic metabolic pathways are activated to supply the additional (largely shorter-term) energy needs (LaForgia et al., 2006). While whole-animal aerobic metabolism is measured by oxygen (O2) uptake rate (ṀO2), the non-aerobic O2 cost (mostly through high-energy phosphate and anaerobic glycolysis) is measured as excess post-exercise O2 consumption (EPOC; Brett, 1964). Both metabolic energy sources contribute to the total energy expenditure (TEE) required for movement. For a given workload, the higher the maximum aerobic performance of the animal, the less the need for the anaerobic energy contribution (LaForgia et al., 2006; Gaesser and Brooks, 1984). The experimental protocol captures both metabolic energy contributions by measuring ṀO2 during locomotion and EPOC afterwards.
 
@@ -129,11 +236,15 @@ We characterize the aerobic costs for the swimming performance of fish using an 
 
 To measure the contribution of non-aerobic O2 cost, where the majority of the cost is related to substrate-level phosphorylation, and to calculate the TEE for swimming over the entire speed range, we measured EPOC after the Ucrit test for the ensuing 19 hr, recorded by an automatic system. Most previous measurements of EPOC have used a duration of ~5 hr (see review Zhang et al., 2018), but our extended measurement period ensured that longer duration recovery O2 consumption during EPOC was measured completely as fish were exercised to Ucrit (see summary table in Currier et al., 2021). The intermittent flow of water into the respirometer occurred over 30 s to replenish the DO level to ~95% sat. For the following 900 s the flushing pump remained closed, and the respirometer becomes a closed system, with the first 240 s to allow O2 saturation inside the respirometer to stabilize. The remaining 660 s when the flushing pump was off during the cycle were used to measure ṀO2 (see Equation 1). The cycle is automated by computer software (AquaResp v.3) and provided 74 measurements of ṀO2 to compute EPOC. Upon the completion of the 3-day protocol, the school or individual fish are returned to the home aquarium for recovery. The fish condition was closely monitored during the first 48 hr after the experiment, during which no mortality was observed.
 
-## Bioenergetic measurement and modeling
+### Bioenergetic measurement and modeling
 
-To estimate the steady-rate whole-animal aerobic metabolic rate, ṀO2 values were calculated from the sequential interval regression algorithm (Equation 1) using the DO points continuously sampled (~1 Hz) from the respirometer. (1)M˙O2=[dDO[i,(i+a)]dt[i,(i+a)]∙(Vr−Vf)∙SO]/(t∙Mf)
+To estimate the steady-rate whole-animal aerobic metabolic rate, ṀO2 values were calculated from the sequential interval regression algorithm (Equation 1) using the DO points continuously sampled (~1 Hz) from the respirometer.
 
-where dDOdt is the change in O2 saturation with time, Vr is the respirometer volume, Vf is the fish volume (1 g body mass = 1 ml water), So is the water solubility of O2 (calculated by AquaResp v.3 software) at the experimental temperature, salinity and atmospheric pressure, t is a time constant of 3600 s h–1, Mf is fish mass, and a is the sampling window duration, i is the next PO2 sample after the preceding sampling window.
+$$
+M˙O_{2}=[\frac{d_{DO_{[i,(i+a)]}}}{d_{t_{[i,(i+a)]}}}∙(V_{r}−V_{f})∙S_{O}]/(t∙M_{f})
+$$
+
+where $\frac{d_{DO}}{d_{t}}$ is the change in O2 saturation with time, Vr is the respirometer volume, Vf is the fish volume (1 g body mass = 1 ml water), So is the water solubility of O2 (calculated by AquaResp v.3 software) at the experimental temperature, salinity and atmospheric pressure, t is a time constant of 3600 s h–1, Mf is fish mass, and a is the sampling window duration, i is the next PO2 sample after the preceding sampling window.
 
 To account for allometric scaling, the ṀO2 values of solitary fish were transformed to match the size of the individual fish in the school using an allometric scaling exponent (b=0.7546). The calculation of the scaling relationship [Log10(ṀO2)=b•Log10(M)+Log10(a), where M is the body mass and a is a constant] was performed by least squares linear regression analysis (y=0.7546 • x+0.2046; R2=0.6727, p<0.0001) on the 180 data points of metabolic rate and body mass from a closely related species (the best available dataset to our knowledge) (Wootton et al., 2022). (The mass scaling for tail beat frequency was not conducted because of the lack of data for D. aequipinnatus and its related species. Using the scaling exponent of distant species for mass scaling of tail beat frequency will introduce errors of unknown magnitude.) The allometrically scaled ṀO2 values were used to derive other energetic metrics (listed below and such as aerobic scope) for the solitary fish. The energetic metrics of fish schools are calculated from the mass-specific ṀO2.
 
@@ -147,7 +258,7 @@ Active oxygen uptake (ṀO2active) is the highest average ṀO2 when fish are ac
 
 The aerobic scope (the metric for aerobic capacity) is the numerical difference between ṀO2active and ṀO2min (i.e. ṀO2active – ṀO2min) (Brett, 1964).
 
-The percentage of aerobic scope (% aerobic scope) is calculated by normalizing the ṀO2 value at a water velocity as a % aerobic scope: [(ṀO2 – ṀO2min) / (ṀO2active – ṀO2min)] * 100%. The apportioning of aerobic scope to swimming performance is computed across the entire range of swim speeds.
+The percentage of aerobic scope (% aerobic scope) is calculated by normalizing the ṀO2 value at a water velocity as a % aerobic scope: [(ṀO2 – ṀO2min) / (ṀO2active – ṀO2min)] $*$ 100%. The apportioning of aerobic scope to swimming performance is computed across the entire range of swim speeds.
 
 The excess post-exercise oxygen consumption (EPOC) is an integral area of ṀO2 measured during post-exercise recovery, from the end of Ucrit until reached ṀO2rest plus 10% or within 24 hr post-exercise, whichever endpoint occurred first. This approach reduces the likelihood of overestimating EPOC due to any potential spontaneous activities. To account for the allometric scaling effect, we used the total amount of O2 consumed (mg O2) by the standardized body mass of fish (1.66 g) for fish schools and solitary fish.
 
@@ -157,15 +268,23 @@ Total energy expenditure (TEE) is calculated by converting total O2 cost to kJ �
 
 Cost of transport (COT), in kJ ×km–1×kg–1 is calculated by dividing TEE by speed (in km ×hr–1; Di Santo et al., 2017).
 
-## Three-dimensional kinematic data extraction from high-speed videography
+### Three-dimensional kinematic data extraction from high-speed videography
 
 We used two synchronized 10 s high-speed videos (lateral and ventral views, at each speed) for kinematic analyses. We calibrated the field of view of the high-speed cameras using a direct linear transformation for three-dimensional (3-D) kinematic reconstruction (DLTdv8; Hedrick, 2008) by applying a stereo calibration to the swimming section of the respirometer (see Appendix 1—figure 9). We digitized the anatomical landmarks of fish (see Appendix 1—figure 10) to obtain the X, Y, and Z coordinates for each marker at the 1st s, 5th s, and 10th s for videos recorded at each speed. These coordinates are used to calculate the following kinematic parameters. All the calculations are validated on the known length and angle of test objects inserted into the tank working section.
 
-The 3-D distance between the tip of the nose of each fish in the school per frame is calculated in vector Equation 2(2)d=(Xa−Xb)2+(Ya−Yb)2+(Za−Zb)2
+The 3-D distance between the tip of the nose of each fish in the school per frame is calculated in vector Equation 2
+
+$$
+d=\sqrt{(Xa−Xb)^{2}+(Ya−Yb)^{2}+(Za−Zb)^{2} }
+$$
 
 where spatial coordinates of two neighboring fish are (Xa, Ya, Za) and (Xb, Yb, Zb) respectively.
 
-The 3-D angle of each fish in the school to the frontal plane per frame is calculated by Equation 3(3)θ=arccos(X2−X1)⋅(X3−X1)+(Y2−Y1)⋅(Y3−Y1)+(Z2−Z1)⋅(Z3−Z1)(X2−X1)2⋅(Y2−Y1)2⋅(Z2−Z1)2⋅(X3−X1)2⋅(Y3−Y1)2⋅(Z3−Z1)2
+The 3-D angle of each fish in the school to the frontal plane per frame is calculated by Equation 3
+
+$$
+\theta=arccos\frac{(X2−X1)⋅(X3−X1)+(Y2−Y1)⋅(Y3−Y1)+(Z2−Z1)⋅(Z3−Z1)}{\sqrt{(X2−X1)^{2}⋅(Y2−Y1)^{2}⋅(Z2−Z1)^{2}}⋅\sqrt{(X3−X1)^{2}⋅(Y3−Y1)^{2}⋅(Z3−Z1)^{2}} }
+$$
 
 where the spatial coordinates of the caudal peduncle, nose of fish and right-angle crosshair between the peduncle and the nose are (X1, Y1, Z1), (X3, Y3, Z3) and (X2, Y2, Z2) respectively (see Appendix 1—figure 9).
 
@@ -187,6 +306,6 @@ Strouhal number = (fTB • tail beat amplitude) • U -1 (Vogel, 1981). Tail bea
 
 Reynolds number = (water density • U • fish fork length) • water dynamic viscosity –1 (Vogel, 1981). Water density and dynamic viscosity are given at 28 °C.
 
-## Statistical analyses
+### Statistical analyses
 
 Measurement points are presented as mean ± s.e.m. For the metrics that failed normality tests, logarithm transformations were applied to meet the assumptions of normality of residuals, homoscedasticity of the residuals, and no trend in the explanatory variables. Since fish schools exhibit the features of a coherent functional unit, the statistical model treated one school as one sample size, and the experiment measured five replicates of fish schools. The majority of statistical comparisons used the General Linear Model (Fixed factors: solitary fish vs. fish schools and swimming speeds, the label of solitary fish and fish schools as a random effect) with Holm–Šídák post-hoc tests. The few comparisons that used other statistical models are listed below. The comparison of ṀO2min at Uopt, ṀO2 of aggregating behaviors exhibited at the lowest speed (ṀO2aggregate) and resting ṀO2 (ṀO2rest) in fish schools used one-way ANOVA with Holm–Šídák post-hoc tests. The comparison of EPOC between solitary fish and fish schools used a two-tailed Student’s t-test. The comparison of the duration of EPOC between solitary fish and fish schools used a two-tailed Student’s t-test. The overall difference in percentage aerobic scope (% aerobic scope) between fish schools and solitary individuals is compared by the Wilcoxon singed-rank test over the entire range of 14 swimming speeds. The statistical analyses were conducted in SPSS v.28 (SPSS Inc Chicago, IL, USA). The best-fitting regression analyses were conducted using Prism v.9.4.1 (GraphPad Software, San Diego, CA, USA). 95% C.I. values were presented for all regression models as shaded areas around the regression or data points. Statistical significance is denoted by *, **, ***, **** for p-values of ≤0.05, ≤0.01, ≤0.001, ≤0.0001 respectively.

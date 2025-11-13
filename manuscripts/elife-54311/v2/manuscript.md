@@ -42,7 +42,7 @@ In this study, we aimed to determine the molecular basis of how class II IN subs
 
 ## Results
 
-## Characterization of the replication defects of class II IN mutant viruses
+### Characterization of the replication defects of class II IN mutant viruses
 
 Substitutions in IN that exhibited a class II phenotype i.e. assembly, maturation or reverse transcription defects (Engelman, 1999; Engelman et al., 1995; Engelman, 2011; Ansari-Lari et al., 1995; Bukovsky and Göttlinger, 1996; Jenkins et al., 1996; Kalpana et al., 1999; Leavitt et al., 1996; Liao and Wang, 2004; Lu et al., 2005a; Lu et al., 2004; Nakamura et al., 1997; Quillent et al., 1996; Shin et al., 1994; Taddeo et al., 1994; Wu et al., 1999; Fontana et al., 2015; Jurado et al., 2013; Kessl et al., 2016; Ao et al., 2005; Busschots et al., 2007; Engelman et al., 1997; Limón et al., 2002; Lloyd et al., 2007; Lu et al., 2005b; Masuda et al., 1995; Rahman et al., 2007; Rivière et al., 2010; Tsurutani et al., 2000; Wiskerchen and Muesing, 1995; Zhu et al., 2004; De Houwer et al., 2014; Johnson et al., 2013; Mohammed et al., 2011; Shehu-Xhilaga et al., 2002; Englund et al., 1995; Petit et al., 1999) or affected IN multimerization (Lutzke and Plasterk, 1998; Eijkelenboom et al., 1999; Hare et al., 2009; Kessl et al., 2009; Li et al., 2012) were selected from past literature. Although a structure of IN bound to RNA is not currently available, the location of these substitutions depicted on the model of a tetrameric IN complex (based on the cryo-EM structure of the HIV-1 intasome complex consisting of IN and DNA [Passos et al., 2017]) suggest that the targeted amino acids are positioned at or near monomer-monomer or dimer-dimer interfaces (Figure 1A–B). While not apparent in the tetrameric intasome complex, the CTD mediates IN tetramer-tetramer interactions in the higher-order dodecamer IN structure (Passos et al., 2017) and has also been shown to mediate IN multimerization in vitro (Jenkins et al., 1996).
 
@@ -52,11 +52,19 @@ Substitutions in IN that exhibited a class II phenotype i.e. assembly, maturatio
 
 IN mutations were introduced into the replication-competent pNL4-3 molecular clone and HEK293T cells were transfected with the resulting plasmids. Cell lysates and cell-free virions were subsequently analyzed for Gag/Gag-Pol expression, processing, particle release, and infectivity. While substitutions in IN had no measurable effect on Gag (Pr55) expression, modest effects on Gag processing in cells was visible for several missense mutant viruses including H12N, N18I, K34A, Y99A, K103E, W108R, F185K, Q214L/Q216L, L242A, V260E, as well as the ΔIN mutant (Figure 2A). Nevertheless, particle release was largely similar between WT and IN mutant viruses, as evident by the similar levels of CA protein present in cell culture supernatants (Figure 2A, lower panels).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of Gag and Gag-Pol products in cell lysates and virions. HEK293T cells were transfected with proviral HIV-1NL4-3 expression plasmids carrying pol mutations encoding for the indicated IN substitutions. Cell lysates and purified virions were harvested 2 d post-transfection and analyzed by immunoblotting for CA, IN, and, in the case of virions, RT. A representative image of one of four independent experiments is shown. (B) Infectious titers of WT or IN mutant HIV-1NL4-3 viruses in cell culture supernatants were determined on TZM-bl indicator cells. Titer values are expressed relative to WT (set to 1). Columns show the average of five independent experiments (open circles) and error bars represent standard deviation (****p<0.0001, by one-way ANOVA with Dunnett’s multiple comparison test). (C) The relative quantity of reverse-transcribed HIV-1 DNA in MT-4 target cells infected with HIV-1NL4-3 at 6 hpi. Quantities of vDNA are expressed relative to WT (set to 1). Columns show the average of three independent experiments (open circles) and error bars represent standard deviation (****p<0.0001, by one-way ANOVA with Dunnett’s multiple comparison test). (D) A representative growth curve of HIV-1NL4-3 IND116N viruses trans-complemented with class II mutant IN proteins in cell culture. Y-axis indicates fold increase in virion yield over day 0 as measured by RT activity in culture supernatants. HIV-1NL4-3 IND116N viruses that were trans-complemented with WT IN, class II mutant INs, IND116N, or an empty vector are denoted as red, black, dark blue, and light blue lines respectively. A representative plot from one of three independent experiments. (E) Fold increase in virions in culture supernatants at 4 dpi, as measured by RT activity in culture supernatants. Trans-complementation of the HIV-1NL4-3 IND116N virus with mutant IN molecules restored particle release to levels comparable to WT IN (red), partially restored particle release (gray) or could not restore particle release (blue). Columns show the average of three independent experiments (open circles) and error bars represent standard deviation (*p<0.05 and **p<0.01, by paired t-test between individual mutants and WT).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Reverse-transcriptase activity measured in HIV-1NL4-3 virion lysates. For each repetition RT activities for the IN mutants are expressed relative to the WT (set to 1). Columns show the average of two independent experiments (open circles) and error bars represent standard deviation (****p<0.0001, ***p<0.001, **p<0.01, and *p<0.05, by unpaired t-test between individual mutants and WT). (B) A representative immunoblot analysis of Vpr-IN fusion constructs in cell lysates. HEK293T cells were co-transfected with the HIV-1NL4-3 IND116N proviral plasmid along with Vpr-IN expression plasmids encoding for the indicated IN substitutions or an empty vector control. The expression of Vpr-IN constructs in cell lysates was detected using an anti-IN antibody.
+
 Three distinct phenotypes became apparent by assessing the amount of virion-associated IN and RT enzymes (Figure 2A, Figure 2—figure supplement 1A). First, virion-associated IN was at least 5-fold less than WT with several mutants, including H12N, N18I, K103E, W108R, F185K, L242A, and V260E (Figure 2A and Supplementary file 1). Notably, these substitutions also reduced levels of Gag-Pol processing intermediates in producer cells (Figure 2A) and RT in virions (Figure 2A, Figure 2—figure supplement 1A), suggesting that they likely destabilized the Gag-Pol precursor. Near-complete lack of processing intermediates with the K14A and N18I substitutions, despite the presence of fully processed RT and IN in virions (detected using a separate polyclonal antibody), is likely due to the inaccessibility of epitopes recognized by the monoclonal anti-IN antibody in the processing intermediates. Second, the R228A substitution abolished full-length IN in virions without impacting cell- or virion-associated Gag-Pol levels or processing intermediates; however, a faster migrating species generated by aberrant IN processing and/or IN degradation was visible. A similar but more modest defect was observed for the K34A mutant, which was incorporated into virions at a modestly reduced level alongside a smaller protein species. Third, the remainder of the IN substitutions did not appear to affect IN or Gag-Pol levels in cells or virions.
 
 With the exception of E96A, nearly all of the IN substitutions reduced virus titers at least 100-fold compared to the WT (Figure 2B), which corresponded with reduced levels of reverse-transcription in infected cells (Figure 2C). In line with previous reports (Lu et al., 2005a; Lu et al., 2004; Lu et al., 2005b), class II mutant IN molecules had variable levels of catalytic activity as assessed by the ability of Vpr-IN proteins to transcomplement a catalytically inactive IN (D116N, Engelman et al., 1995; Engelman and Craigie, 1992) in infected cells (Liu et al., 1997; Fletcher et al., 1997). All Vpr-IN fusion proteins, except for the H12N mutant which likely decreased the stability of the Vpr-IN fusion protein, were expressed at similar levels in cells (Figure 2—figure supplement 1B). We found that K14A, E96A, Y99A, K103A, V165A, R187A, K188E R199A, K236E, and R269A/R273A IN mutants trans-complemented a catalytically inactive IN at levels similar to the WT, whereas W108R, R228A, and V260E mutants were unable to do so (Figure 2D–E). The inability of W108R, R228A, and V260E mutants to transcomplement implies that they are impaired for integration, a result in line with previous observations (Lutzke and Plasterk, 1998; Li et al., 2012). The remainder of the IN mutants restored integration, albeit at significantly lower than WT levels (Figure 2D–E). These results suggest that the majority of the class II mutant INs retain structural integrity and at least partial catalytic activity in the presence of a complementing IN protein. Cumulatively, these data show that some class II substitutions in IN can affect the stability and/or processing of virion-associated proteins, but they all universally lead to the formation of non-infectious virions that are blocked at reverse transcription in target cells, a hallmark of class II IN substitutions (Engelman, 1999; Engelman, 2011).
 
-## Class II IN mutants abolish IN binding to RNA
+### Class II IN mutants abolish IN binding to RNA
 
 Using complementary in vitro and CLIP-based approaches, we have previously shown that viral genomic RNAs (vRNA) constitute the primary RNA species bound by IN in virions and that IN interacts with the viral genome through multiple basic residues (i.e. K264, K266, R269, K273) in its CTD (Kessl et al., 2016). In addition, IN-RNA interactions could also depend on proper IN multimerization, as ALLINI-induced aberrant IN multimerization potently inhibited the ability of IN to bind RNA (Kessl et al., 2016). Based on this, in the next set of experiments, we aimed to determine whether class II IN mutants bind vRNA, and if not, whether improper IN multimerization may underlie this defect.
 
@@ -66,17 +74,33 @@ IN-vRNA complexes were immunoprecipitated from UV-crosslinked virions and the le
 
 **Figure 3.:** (A) Analysis of the levels of packaged viral genomic RNA in WT and IN mutant HIV-1NL4-3 virions. vRNA extracted from purified virions was measured by Q-PCR. Data were normalized to account for differences in particle yield using an RT activity assay. Normalized quantities of vRNA are expressed relative to WT (set to 1). Columns show the average of three-four independent experiments (open circles) and error bars represent standard deviation (ns, not significant, by one-way ANOVA). (B) A representative autoradiogram of IN-RNA adducts immunoprecipitated from WT or IN mutant HIV-1NL4-3 virions. The amount of immunoprecipitated material was normalized such that equivalent levels of WT and mutant IN proteins were loaded on the gel, as also evident in the immunoblots shown below. Levels of IN and CA in input virion lysates is shown in the lower immunoblots. Results are a representative of three independent replicates.
 
-## IN multimerization plays a key role in RNA binding
+### IN multimerization plays a key role in RNA binding
 
 As it seemed unlikely that all of the class II IN substitutions directly inhibited IN binding to RNA, we reasoned that they might indirectly abolish binding by perturbing proper IN multimerization. To test whether class II IN substitutions altered IN multimerization in a relevant setting, purified HIV-1NL4-3 virions were treated with ethylene glycol bis(succinimidyl succinate) (EGS) to covalently crosslink IN in situ and virus lysates were analyzed by immunoblotting. IN species that migrated at molecular weights consistent with those of monomers, dimers, trimers, and tetramers were readily distinguished in WT virions (Figure 4—figure supplement 1). In the majority of the class II mutant particles, IN appeared to exist as monomers as well as higher molecular weight species, representing IN multimers or IN aggregates, with little dimers and no readily detectable tetramers (Figure 4A, Figure 4—figure supplement 1). In contrast, K34A, E96A, R262A/R263A, and R269A/K273A IN mutants formed dimers and tetramers at similar levels to the WT (Figure 4A, Figure 4—figure supplement 1). An undefined smear was present at higher molecular weights for all viruses, possibly as a result of the formation of large IN aggregates upon cross-linking (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig4-v2.jpg)
+
+**Figure 4.:** (A) Purified HIV-1 virions were crosslinked with 1 mM EGS and analyzed by immunoblotting as detailed in Materials and Methods. The IN signal at the molecular weights of 32 kDa (monomers), 64 kDa (dimers), and 96 kDa (trimers) was measured and divided by the total signal of the three multimeric species for each virus. Columns show the average of three independent experiments and error bars represent standard error of the mean (**p<0.05 and *p<0.01, by one-way ANOVA with Dunnett’s multiple comparison test). (B) SEC profiles of 10 µM of WT and indicated IN mutants are shown. The X-axis indicates elution volume (mL) and Y-axis indicates the intensity of absorbance (mAU). Tetramers (T), dimers (D), and monomers (M) are indicated. Representative chromatograms from two independent analyses are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Immunoblot analyses of IN multimers in virions. Purified WT or IN mutant HIV-1NL4-3 virions were treated with 1 mM EGS, and virus lysates analyzed by immunoblotting using antibodies against IN following separation on 6% Tris-acetate gels. The position of monomers (M), dimers (D), and tetramers (T) are indicated by arrows. A representative image of one of three independent experiments is shown.
 
 To corroborate these findings, we analyzed the oligomeric states of recombinant WT, K34A, E96A, V165A, K188E, R199A, Q214L/Q216L, K236E, K258A, and R262A/R263A IN proteins by SEC (Figure 4B). Oligomeric states of additional class II IN mutants have previously been characterized in vitro (Kessl et al., 2016; Lutzke and Plasterk, 1998; Hare et al., 2009; Kessl et al., 2009; McKee et al., 2008; Pandey et al., 2011; De Houwer et al., 2012) and are summarized in Supplementary file 2. In line with the crosslinking studies in virions, WT, K34A, and R262A/R263A INs formed tetramers, while the levels of dimers varied for different mutants. For example, while IN R262A/R263A presented similar levels of tetramers and dimers, IN K34A was primarily tetrameric with a minor dimeric species, as evident by the broad right shoulder of the tetrameric SEC peak (Figure 4B). By contrast, the majority of other IN mutants almost exclusively formed dimers and monomers with little evidence for tetramer formation (Figure 4B). While Q214L/Q216L and K236E IN were predominantly dimeric, the broad base of their chromatograms revealed some evidence for tetramers and monomers as well (Figure 4B).
 
 Next, we tested the mutant INs for their ability to bind and bridge cognate RNA oligonucleotides in vitro. We have previously shown that recombinant IN binds TAR RNA with a high affinity and provides a nucleation point to bridge and condense RNA (Kessl et al., 2016). However, IN oligomeric states required for its ability to bind and bridge RNA molecules are not known. We have separated WT monomeric, dimeric, and tetrameric forms of WT IN by SEC and examined their binding to TAR RNA (Kessl et al., 2016). Remarkably, while WT IN tetramers bound to TAR RNA with high affinity (2.68 ± 0.16 nM), neither IN dimers nor monomers showed evidence of binding (Figure 5A). In line with this, we found that WT tetramers rather than dimers effectively bridged RNA oligonucleotides in vitro (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig5-v2.jpg)
+
+**Figure 5.:** (A) Analysis by AlphaScreen assay of 100 nM WT IN monomers, dimers, and tetramers binding to biotinylated TAR RNA after separation by SEC. Graphed data is the average of three independent experiments and error bars indicate standard deviation. (B) Summary of WT IN dimers and tetramers bridging TAR RNA at different protein concentrations as measured by AlphaScreen assay. Graphed data is the average of four independent experiments and error bars indicate standard deviation. (C) Summary of mutant INs binding to TAR RNA (black bars) and bridging TAR RNA (gray bars) compared to WT IN. Percent binding was calculated for each mutant IN by comparing the calculated Kd value to that of WT IN (normalized to 100%) within an experiment. Percent bridging was calculated by comparing the Alpha Counts at 320 nM for each protein to that of WT (normalized to 100%). Graphed data is the average of three independent experiments and error bars represent standard deviation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Analysis of 100 nM WT or mutant INs binding to biotinylated TAR RNA by AlphaScreen assay. Graphed data is the average of three independent experiments and error bars indicate standard deviation.
+
 We then analyzed a set of class II IN mutants for their ability to bind and bridge TAR RNA in vitro (Figure 4B). All class II IN mutants that predominantly formed dimers (Figure 4B) had reduced affinity for RNA compared to WT IN (Figure 5C, Figure 5—figure supplement 1B–D). Furthermore, these mutations had even more deleterious effects on the ability of IN to bridge the RNA molecules (Figure 5C). Although IN K34A and IN R262A/R263A could both form tetramers, IN K34A showed a reduced binding affinity for RNA while IN R262A/R263A did not bind RNA at all (Figure 5C, Figure 5—figure supplement 1A), suggesting that these residues may be directly involved in IN binding to RNA. Collectively, these results pointed to a key role of IN tetramerization for high-affinity binding to RNA and more critically for RNA bridging. Thus, these findings suggest that a defect in proper multimerization underlies the inability of the majority of class II IN mutants to form functional complexes with vRNA.
 
-## Class II IN substitutions generate virions with eccentric morphology
+### Class II IN substitutions generate virions with eccentric morphology
 
 We next sought to determine how preclusion or inhibition of IN-vRNA interactions correlated with particle morphology. Virion morphology of a subset of IN mutants that inhibited vRNA interactions by three different mechanisms; that is, those that decreased IN levels in virions (N18I and W108R), those that may have directly inhibited IN binding to RNA (K34A, R262A/R263A), and those that primarily altered IN multimerization (E87A, E96A, F185K, R187A, L241A, L242A), was assessed by transmission electron microscopy (TEM). As expected, the majority of WT particles contained an electron-dense condensate representing vRNPs inside the CA lattice, whereas an ΔRT-IN deletion mutant virus produced similar levels of immature particles and eccentric particles (Figure 6A–B). Remarkably, irrespective of how IN-RNA interactions were inhibited, 70–80% of nearly all class II IN mutant particles exhibited an eccentric morphology (Figure 6A–B). Of note, the E96A mutant tended to produce less eccentric and more mature particles than the other IN mutants. Because IN E96A retained partial binding to vRNA in virions (Figure 3B) and partial infectivity (Figure 2B), we conclude that this infection-deferred mutant harbors a partial class II phenotype.
 
@@ -86,13 +110,29 @@ We next sought to determine how preclusion or inhibition of IN-vRNA interactions
 
 Next, we tested whether inhibition of IN-RNA interactions through class II substitutions changes the localization of IN in virions. The premise for this is based on our previous finding that disruption of IN binding to vRNA through the IN R269A/K273A substitution leads to separation of a fraction of IN from dense vRNPs and CA containing complexes (Madison et al., 2017). Thus, we predicted that inhibition of IN-RNA interactions through the above class II substitutions could lead to a similar outcome. To this end, WT or class II IN mutant virions stripped of the viral lipid envelope by brief detergent treatment were separated on sucrose gradients, and resulting fractions were analyzed for CA, IN, and matrix (MA) content by immunoblotting (Madison et al., 2017; Welker et al., 2000). As before (Madison et al., 2017), WT IN migrated primarily in dense fractions, whereas the R269A/K273A mutant migrated bimodally (Figure 7A,B). In contrast to our hypothesis, the majority of IN mutants sedimented similarly to WT IN and settled in the denser gradient fractions (Figure 7A,B). Exceptions were the K34A and R262A/R263A IN mutants, a fraction of which migrated to soluble fractions similar to the R269A/K273A mutant, suggesting their localization outside of the capsid lattice. None of the IN substitutions affected the migration pattern of CA (Figure 7C), which distributed was bimodally between the soluble and dense fractions, nor the distribution of MA (data not shown), which was found in mainly the soluble fractions. These results suggested that, with the exception of the K34A, R262A/R263A, and R269A/K273A, IN mutant proteins may remain associated with the CA lattice despite inhibition of IN-vRNA interactions. Alternatively, class II IN mutants may localize outside of the CA lattice but form aggregates resulting in a similar migration pattern in dense fractions.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig7-v2.jpg)
+
+**Figure 7.:** (A) Immunoblot analysis of sedimentation profiles of IN in WT or IN mutant virions. Purified HIV-1NLGP virions were analyzed by equilibrium density centrifugation as detailed in Materials and Methods. Ten fractions collected from the top of the gradients were analyzed by immunoblotting using antibodies against IN. Representative images from one of four independent experiments are shown. (B) Quantitation of IN signal intensity in immunoblots as in (A) is shown. Profile of WT virions is denoted in black, IN mutants that led to bimodal IN distribution are shown in red and others are shown in gray. Graphed data is the average of two independent experiments and error bars indicate the range. (C) The representative immunoblot analysis of the sedimentation profile of CA in WT virions and quantitation of CA signal intensity in immunoblots are shown. Profile of WT virions is denoted in black, IN mutants that led to bimodal IN distribution are shown in red and others are shown in gray. Graphed data is the average of two independent experiments and error bars indicate the range.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunoblot analysis of sedimentation profiles of IN in HIV-1NLGP CAK203A mutant virions. In addition to the CAK203A mutation, class II mutations were introduced in IN. Purified virions were stripped of the viral envelope using 0.5% Triton X-100 and analyzed by equilibrium density centrifugation as detailed in Materials and Methods. Ten fractions collected from the top of the gradients were analyzed by immunoblotting using antibodies against IN or CA. Representative images from one of two independent experiments are shown. (B) Immunoblot analysis of sedimentation profiles of WT versus class II IN mutants from HIV-1NL4-3 bZIP virions. Purified virions were analyzed by equilibrium density centrifugation, 10 fractions were collected from the top of the gradients and subsequently analyzed by immunoblotting using antibodies against IN or CA. Representative images from one of two independent experiments are shown.
+
 To test these possibilities, we combined the CA destabilizing K203A substitution, which leads to premature disassembly of the CA lattice in vitro (Forshey et al., 2002), with class II IN substitutions K34A, E87A, and R262A/R263A. Biochemical fractionation of these viruses following membrane stripping as above yielded a similar IN distribution primarily in dense fractions (Figure 7—figure supplement 1A). Note that the K203A CA mutation caused the loss of CA in the dense fractions compared to WT viruses, indicating that the CA lattice was indeed destabilized (Figure 7—figure supplement 1A). Thus, the migration of IN in dense fractions over the gradients does not appear to be dependent on its being enclosed in an intact CA lattice. We then asked if the mutant IN molecules may settle in the dense fractions due to some residual RNA binding not detected by the CLIP assay (Figure 3B). To test this, we introduced the above class II IN substitutions into a Gag-chimeric virus (Gag-bZIP) in which the NC domain is replaced by the leucine zipper domain from the yeast GCN4 protein and as a result is devoid of RNA (Johnson et al., 2002; Accola et al., 2000). Of note, this modification additionally destabilized the CA lattice, as indicated by the lack of a second population of CA in dense fractions (Figure 7—figure supplement 1B). Lack of RNA packaging and an unstable CA lattice with the Gag-bZIP virus also did not affect the migration pattern of IN over the sucrose gradients (Figure 7—figure supplement 1B), nor did presence of RNAse throughout the fractionation experiment (data not shown). The results from these experiments indicate that the migration of IN in dense sucrose gradients is independent of its being enclosed in an intact CA lattice and of its binding to vRNA.
 
-## Premature loss of vRNA and IN from class II IN mutant viruses upon infection of target cells
+### Premature loss of vRNA and IN from class II IN mutant viruses upon infection of target cells
 
 We have previously shown that vRNA and IN are prematurely lost from cells infected with the R269A/K273A class II IN mutant (Madison et al., 2017). Given that eccentric vRNP localization is a common feature of class II IN mutant viruses (Figure 6), we next asked whether loss of vRNA in target cells is a common outcome for other class II IN mutant viruses. As the majority of mutant IN molecules appeared to remain associated with higher-order CA in virions (Figure 7), we also wanted to test whether they would be protected from premature degradation in infected cells.
 
 The fates of viral core components in target cells were tracked using a previously described biochemical assay (Kutluay et al., 2013). For these experiments we utilized pgsA-745 cells (pgsA), which lack surface glycosaminoglycans, and likely as a result can be very efficiently infected by VSV-G-pseudotyped viruses in a synchronized fashion. PgsA cells were infected with WT or IN mutant viruses bearing substitutions that inhibited IN-vRNA interactions directly and may lead to mislocalization of IN in virions (i.e. K34A, R262A/R263A, R269A/K273A) or indirectly through aberrant IN multimerization and did not appear to grossly affect IN localization in virions (i.e. E87A, V165A; Figure 8A). Following infection, post-nuclear lysates were separated on linear sucrose gradients, and fractions collected from gradients were analyzed for viral proteins (CA, IN, RT) and vRNA by immunoblotting and Q-PCR-based assays, respectively.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig8-v2.jpg)
+
+**Figure 8.:** (A) Locations of the class II IN substitutions K34A, E87A, V165A, and R262A/R263A displayed on a single IN monomer within the context of the HIV-1 IN tetramer intasome structure (PDB 5U1C.) Substitutions are color-coded based on whether they may cause mislocalization of IN in virions (black) or not (blue). (B–E) PgsA-745 cells were infected with WT or IN mutant HIV-1 virions and fates of viral core components were analyzed 2 hpi. Fractions were analyzed for the presence of CA (B) and IN (C) by immunoblotting and for RT activity (D) and vRNA (E) by Q-PCR. Immunoblots are representative of three independent experiments. Graphed data in (D) and (E) is the average of three independent experiments with error bars indicating standard deviation (*p<0.05 and **p<0.01, by repeated measures one-way ANOVA). (F) Representative images of pgsA-745 cells infected with WT or IN mutant HIV-1NL4-3 viruses 0 and 2 hpi. Cells were stained for vRNA (green) and nuclei (blue) as detailed in Materials and Methods. (G) The fraction of viral RNA remaining after 2 and 6 hpi compared to the quantity measured at 0 hpi. MT-4 cells were synchronously infected with VSV-G pseudotyped HIV-1NL4-3 viruses and at each time point samples of infected cultures were taken for analysis. Viral RNA levels in samples were measured by Q-PCR and normalized to the levels of GAPDH mRNA. Data points are the average of five independent experiments with error bars indicating standard error of the mean.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54311/elife-54311-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Representative images of uninfected pgsA-745 cells and cells infected with WT HIV-1NL4-3 viruses at 0 hpi. Cells were fixed and stained for vRNA (green) and nuclei (blue). (B) Representative images of pgsA745 cells infected with IN mutant HIV-1NL4-3 viruses 0 and 2 hpi. Cells were fixed and stained for vRNA (green) and nuclei (blue). (C) Quantification of vRNA remaining in cells infected with WT or IN mutant HIV-1NL4-3 viruses at 2 hpi. Values are the percent of vRNA remaining at 2 hpi compared to at 0 hpi. Columns show average of three independent experiments (open circles) and error bars represent standard deviation (*p<0.05 and **p<0.01, by one-way ANOVA with Dunnett’s multiple comparison test). (D) The fraction of viral RNA remaining after 2 and 6 hpi compared to the quantity measured at 0 hpi. MT-4 cells were synchronously infected with VSV-G pseudotyped HIV-1NL4-3 viruses and incubated in the presence of 50 mM ammonium chloride for 6 hr. At each time point samples of infected cultures were taken for analysis and levels of viral RNA in samples were measured by Q-PCR and normalized to the levels of GAPDH mRNA. Data points are the average of three independent experiments with error bars indicating standard error of the mean.
 
 As previously reported (Madison et al., 2017; Kutluay et al., 2013), in cells infected with WT viruses, IN, RT, vRNA, and a fraction of CA comigrated to sucrose fractions 6–8, representing active RTCs (Figure 8B–E). Note that a large fraction of CA migrated to the top two soluble sucrose fractions representing CA that had dissociated from the core as a result of uncoating or CA that was packaged into virions but not incorporated into the capsid lattice (Briggs et al., 2004; Ganser-Pornillos et al., 2007). Notably, in cells infected with class II IN mutant viruses, equivalent levels of CA (Figure 8B) and RT (Figure 8D) remained in the denser fractions, whereas IN (Figure 8C) and vRNA (Figure 8E) were substantially reduced. Loss of vRNA and IN from dense fractions, without any corresponding increase in the top fractions containing soluble proteins and RNA, suggest their premature degradation and/or mislocalization in infected cells.
 
@@ -124,67 +164,210 @@ In conclusion, we have identified IN-vRNA binding as the underlying factor for t
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (human immunodeficiency virus type 1)</td>
+      <td>Integrase (IN)</td>
+      <td>NCBI (NC_001802.1)</td>
+      <td>Gene ID: 155348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH10B</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>EC0113</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C600003</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TZM-bl</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>8129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>pgsA-745</td>
+      <td>ATCC</td>
+      <td>CRL-2242</td>
+      <td>Xylosyltransferase I deficient</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>MT-4</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 integrase-4 (mouse monoclonal)</td>
+      <td>Bouyac-Bertoia et al., 2001</td>
+      <td></td>
+      <td>WB (1:4000), IP (5 μL/100 μL of Dyna beads)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 integrase-1 (rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 p24 antibody (mouse monoclonal)</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>183-H12-5C</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 reverse transcriptase antibody (rabbit polyclonal)</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>6195</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 Vpr antibody (rabbit polyclonal)</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>11836</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 MA antibody (rabbit polyclonal)</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>4811</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# 200519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>DNeasy Blood and Tissue kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 69506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAScope F luorescent Multiplex Detection Reagents</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Ref# 320851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nevirapine</td>
+      <td>NIH AIDS Reagents</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethylene glycol bis(succinimidyl succinate) (EGS)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 The pNLGP plasmid consisting of the HIV-1NL4-3 -derived Gag-Pol sequence inserted into the pCR/V1 plasmid backbone (Zennou et al., 2004) and the CCGW vector genome plasmid carrying a GFP reporter under the control of the CMV promoter (Cowan et al., 2002; Hatziioannou et al., 2003) were previously described. The pLR2P-vprIN plasmid expressing a Vpr-IN fusion protein has also been previously described (Liu et al., 1997). Mutations in the IN coding sequence were introduced into both the pNLGP plasmid and the HIV-1NL4-3 full-length proviral plasmid (pNL4-3) by overlap extension PCR. Briefly, forward and reverse primers containing IN mutations in the pol reading frame were used in PCR reactions with antisense and sense outer primers containing unique restriction endonuclease sites (AgeI-sense, NotI-antisense for NLGP and AgeI-sense, EcoRI-antisense for pNL4-3), respectively. The resulting fragments containing the desired mutations were mixed at a 1:1 ratio and overlapped subsequently using the sense and antisense primer pairs. The resulting fragments were digested with the corresponding restriction endonucleases and cloned into pNLGP and pNL4-3 plasmids. IN mutations were introduced into the pLR2P-vprIN plasmid using the QuickChange Site-Directed Mutagenesis kit (Agilent Technologies). The presence of the desired mutations and the absence of unwanted secondary changes were verified by Sanger sequencing. HIV-1 CA K203A substitution, which destabilizes the CA lattice (Forshey et al., 2002), was cloned into HIV-1NL4-3 bearing class II IN mutations by conventional cloning. Generation of Gag-bZIP chimeras bearing the leucine zipper domain from the yeast GCN4 protein in place of NC, which facilitates Gag dimerization but does not bind RNA has been described previously (Johnson et al., 2002; Accola et al., 2000). A version of this chimera was generated by replacing NC with a NotI restriction site and cloning of the PCR-amplified GCN4-bZIP in its place. Class II IN mutants were subsequently cloned into this backbone by the QuickChange Site-Directed Mutagenesis kit (Agilent Technologies).
 
-## Cells and viruses
+### Cells and viruses
 
 All cell lines were originally obtained from American Type Culture Collection and NIH AIDS Reagents where STR profiling was performed. MT-4 cells were additionally subjected to STR profiling at Washington University School of Medicine Genome Engineering and iPSC center. All cell lines are regularly checked for mycoplasma contamination using the MycoAlert mycoplasma detection kit (Lonza) and verified to be free of contamination during these studies. HEK293T cells (ATCC CRL-11268) and HeLa-derived TZM-bl cells (NIH AIDS Reagent Program) were maintained in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum. MT-4 cells were maintained in RPMI 1640 medium supplemented with 10% fetal bovine serum. CHO K1-derived pgsA-745 cells (CRL-2242, ATCC) that lack a functional xylosyltransferase enzyme and as a result do not produce glycosaminoglycans were maintained in Dulbecco’s modified Eagle’s/F12 (1:1) media supplemented with 10% fetal bovine serum and 1 mM L-glutamine. Single-cycle GFP reporter viruses pseudotyped with vesicular stomatitis virus G protein (VSV-G) were produced by transfection of HEK293T cells with pNLGP-derived plasmids, the CCGW vector genome carrying GFP, and VSV-G expression plasmid at a ratio of 5:5:1, respectively, using polyethyleneimine (PolySciences, Warrington, PA). Full-length viruses pseudotyped with VSV-G were produced by transfecting HEK293T cells with the pNL4-3-derived plasmids and VSV-G plasmid at a ratio of 4:1 (pNL4-3:VSV-G).
 
-## Immunoblotting
+### Immunoblotting
 
 Viral and cell lysates were resuspended in sodium dodecyl sulfate (SDS) sample buffer and separated by electrophoresis on Bolt 4–12% Bis-Tris Plus gels (Life Technologies), blotted onto nitrocellulose membranes and probed overnight at 4°C with the following antibodies in Odyssey Blocking Buffer (LI-COR): mouse monoclonal anti-HIV p24 antibody (183-H12-5C, NIH AIDS reagents), mouse monoclonal anti-HIV integrase antibody (Bouyac-Bertoia et al., 2001), rabbit polyclonal anti-HIV integrase antibody raised in-house against Q44-LKGEAMHGQVD-C56 peptide and hence unlikely to be affected by the substitutions introduced into IN in this study, rabbit polyclonal anti-HIV-1 reverse transcriptase antibody (6195, NIH AIDS reagents), rabbit polyclonal anti-Vpr antibody (11836, NIH AIDS Reagents), rabbit polyclonal anti-MA antibody (4811, NIH AIDS Reagents). Membranes were probed with fluorophore-conjugated secondary antibodies (LI-COR) and scanned using an LI-COR Odyssey system. IN and CA levels in virions were quantified using Image Studio software (LI-COR). For analysis of the fates of core components in infected cells, antibody incubations were done using 5% non-fat dry milk. Membranes were probed with HRP-conjugated secondary antibodies and developed using SuperSignal West Femto reagent (Thermo-Fisher).
 
-## Analysis of reverse transcription products in infected cells
+### Analysis of reverse transcription products in infected cells
 
 MT-4 cells were grown in 24-well plates and infected with VSV-G pseudotyped pNL4-3 viruses (either WT or class II IN mutant) at a multiplicity of infection (MOI) of 2 in the presence of polybrene. After 6 hr, post-infection cells were collected, pelleted by brief centrifugation, and resuspended in PBS. DNA was extracted from cells using the DNeasy Blood and Tissue Kit (Qiagen) as per kit protocol. Quantity of HIV-1 vDNA was measured by Q-PCR using primers specific for early reverse-transcripts.
 
-## Vpr-IN transcomplementation experiments
+### Vpr-IN transcomplementation experiments
 
 A class I IN mutant virus (HIV-1NL4-3 IND116N) was trans-complemented with class II mutant IN proteins as described previously (Liu et al., 1997). Briefly, HEK293T cells grown in 24-well plates were co-transfected with a derivative of the full-length HIV-1NL4-3 proviral plasmid bearing a class I IN substitution (pNL4-3D116N), VSV-G, and derivatives of the pLR2P-vprIN plasmid bearing class II IN mutations at a ratio of 6:1:3. Two days post-transfection cell-free virions were collected from cell culture supernatants. Integration capability of the trans-complemented class II IN mutants was tested by infecting MT-4 cells and measuring the yield of progeny virions in cell culture supernatants over a 6 d period as described previously (Liu et al., 1997). In brief, MT-4 cells were incubated with virus inoculum in 96 V-bottom well plates for 4 hr at 37°C after which the virus inoculum was washed away and replaced with fresh media. Immediately following removal of the virus inoculum and during the 6 subsequent days, the number of virions present in the culture supernatant was quantified by measuring RT activity using a Q-PCR-based assay (Pizzato et al., 2009).
 
-## CLIP experiments
+### CLIP experiments
 
 CLIP experiments were conducted as previously described (Kessl et al., 2016; Kutluay et al., 2014; Kutluay and Bieniasz, 2016). Cell-free HIV-1 virions were isolated from transfected HEK293T cells. Briefly, cells in 15 cm cell culture plates were transfected with 30 μg full-length proviral plasmid (pNL4-3) DNA containing the WT sequence or indicated pol mutations within the IN coding sequence. Cells were grown in the presence of 4-thiouridine for 16 hr before the virus harvest. Two days post-transfection cell culture supernatants were collected and filtered through 0.22 μm filters and pelleted by ultracentrifugation through a 20% sucrose cushion using a Beckman SW32-Ti rotor at 28,000 rpm for 1.5 hr at 4°C. Virus pellets were resuspended in phosphate-buffered saline (PBS) and UV-crosslinked. Following lysis in RIPA buffer, IN-RNA complexes were immunoprecipitated using a mouse monoclonal anti-IN antibody (Bouyac-Bertoia et al., 2001). Bound RNA was end-labeled with γ-32P-ATP and T4 polynucleotide kinase. The isolated protein-RNA complexes were separated by SDS-PAGE, transferred to nitrocellulose membranes, and exposed to autoradiography films to visualize RNA. Lysates and immunoprecipitates were also analyzed by immunoblotting using antibodies against IN.
 
-## IN multimerization in virions
+### IN multimerization in virions
 
 HEK293T cells grown on 10 cm dishes were transfected with 10 μg pNL4-3 plasmid DNA containing the WT sequence or indicated pol mutations within IN coding sequence. Two days post-transfection cell-free virions collected from cell culture supernatants were pelleted by ultracentrifugation through a 20% sucrose cushion using a Beckman SW41-Ti rotor at 28,000 rpm for 1.5 hr at 4°C. Pelleted virions were resuspended in 1× PBS and treated with EGS (ThermoFisher Scientific), a membrane-permeable crosslinker, at a concentration of 1 mM for 30 min at room temperature. Crosslinking was stopped by the addition of SDS sample buffer. Samples were subsequently separated on 3–8% Tris-acetate gels and analyzed by immunoblotting using a mouse monoclonal anti-IN antibody (Bouyac-Bertoia et al., 2001).
 
-## Size exclusion chromatography (SEC)
+### Size exclusion chromatography (SEC)
 
 All of the mutations were introduced into a plasmid backbone expressing His6 tagged pNL4-3-derived IN by QuikChange site-directed mutagenesis kit (Agilent) (Kessl et al., 2012). His6 tagged recombinant pNL4-3 WT and mutant INs were expressed in BL21 (DE3) E. coli cells followed by nickel and heparin column purification as described previously (Kessl et al., 2012; Cherepanov, 2007). Recombinant WT and mutant INs were analyzed on Superdex 200 10/300 GL column (GE Healthcare) with running buffer containing 20 mM HEPES (pH 7.5), 1 M NaCl, 10% glycerol, and 5 mM BME at 0.3 mL/min flow rate. The proteins were diluted to 10 µM with the running buffer and incubated for 1 hr at 4°C followed by centrifugation at 10,000 g for 10 min. Multimeric form determination was based on the standards including bovine thyroglobulin (670,000 Da), bovine gamma-globulin (158,000 Da), chicken ovalbumin (44,000 Da), horse myoglobin (17,000 Da), and vitamin B12 (1350 Da).
 
-## Analysis of IN-RNA binding in vitro
+### Analysis of IN-RNA binding in vitro
 
 Following SEC of IN as above, individual fractions of tetramer, dimer, and monomer forms were collected and their binding to TAR RNA was analyzed by an Alpha screen assay as described previously (Kessl et al., 2016). Briefly, 100 nM His6 tagged IN fractions (tetramer, dimer, and monomer) were incubated with nickel acceptor beads while increasing concentrations of biotinylated-TAR RNA was incubated with streptavidin donor beads in buffer containing 100 mM NaCl, 1 mM MgCl2, 1 mM DTT, 1 mg/mL BSA, and 25 mM Tris (pH 7.4). Followed by 2 hr incubation at 4°C, they were mixed and the reading was taken after 1 hr incubation at 4°C by PerkinElmer Life Sciences Enspire multimode plate reader. The Kd values were calculated using OriginLab software.
 
-## AlphaScreen-based RNA bridging assays
+### AlphaScreen-based RNA bridging assays
 
 The RNA bridging property of IN was analyzed by AlphaScreen-based assay as described (Kessl et al., 2016). Briefly, equal concentrations (1 nM) of two synthetic TAR RNA oligonucleotides labeled either with biotin or DIG were mixed and then streptavidin donor and anti-DIG acceptor beads at 0.02 mg/mL concentration were supplied in a buffer containing 100 mM NaCl, 1 mM MgCl2, 1 mM DTT, 1 mg/mL BSA, and 25 mM Tris (pH 7.4). After 2 hr incubation at 4°C, indicated concentrations of IN were added to the reaction mixture and incubated further for 1.5 hr at 4°C. AlphaScreen signals were recorded with a PerkinElmer Life Sciences Enspire multimode plate reader.
 
-## Virus production and transmission electron microscopy
+### Virus production and transmission electron microscopy
 
 Cell-free HIV-1 virions were isolated from transfected HEK293T cells. Briefly, cells grown in two 15 cm cell culture plates (107 cells per dish) were transfected with 30 μg full-length proviral plasmid (pNL4-3) DNA containing the WT sequence or indicated pol mutations within IN coding sequence using PolyJet DNA transfection reagent as recommended by the manufacturer (SignaGen Laboratories). Two days after transfection, cell culture supernatants were filtered through 0.22 μm filters, and pelleted by ultracentrifugation using a Beckman SW32-Ti rotor at 26,000 rpm for 2 hr at 4°C. Fixative (2.5% glutaraldehyde, 1.25% paraformaldehyde, 0.03% picric acid, 0.1 M sodium cacodylate, pH 7.4) was gently added to resulting pellets, and samples were incubated overnight at 4°C. The following steps were conducted at the Harvard Medical School Electron Microscopy core facility. Samples were washed with 0.1 M sodium cacodylate, pH 7.4 and postfixed with 1% osmium tetroxide/1.5% potassium ferrocyanide for 1 hr, washed twice with water, once with maleate buffer (MB), and incubated in 1% uranyl acetate in MB for 1 hr. Samples washed twice with water were dehydrated in ethanol by subsequent 10 min incubations with 50%, 70%, 90%, and then twice with 100%. The samples were then placed in propyleneoxide for 1 hr and infiltrated overnight in a 1:1 mixture of propyleneoxide and TAAB Epon (Marivac Canada Inc). The following day the samples were embedded in TAAB Epon and polymerized at 60°C for 48 hr. Ultrathin sections (about 60 nm) were cut on a Reichert Ultracut-S microtome, transferred to copper grids stained with lead citrate, and examined in a JEOL 1200EX transmission electron microscope with images recorded on an AMT 2 k CCD camera. Images were captured at 30,000× magnification, and over 100 viral particles per sample were counted by visual inspection.
 
-## Equilibrium density sedimentation of virion core components in vitro
+### Equilibrium density sedimentation of virion core components in vitro
 
 Equilibrium density sedimentation of virion core components was performed as previously described (Madison et al., 2017). Briefly, HEK293T cells grown in 10 cm cell culture plates were transfected with 10 μg pNLGP plasmid DNA containing the WT sequence or indicated pol mutations within IN coding sequence. Two days post-transfection cell-free virions collected from cell culture supernatants were pelleted by ultracentrifugation through a 20% sucrose cushion using a Beckman SW41-Ti rotor at 28,000 rpm for 1.5 hr at 4°C. Pelleted viral-like particles were resuspended in PBS and treated with 0.5% Triton X-100 for 2 min at room temperature. Immediately after, samples were layered on top of 30–70% linear sucrose gradients prepared in 1× STE buffer (100 mM NaCl, 10 mM Tris-Cl [pH 8.0], 1 mM EDTA) and ultracentrifuged using a Beckman SW55-Ti rotor at 28,500 rpm for 16 hr at 4°C. Fractions (500 μL) collected from the top of the gradients were analyzed for IN, CA, and MA by immunoblotting as detailed above.
 
-## Biochemical analysis of virion core components in infected cells
+### Biochemical analysis of virion core components in infected cells
 
 Biochemical analysis of retroviral cores in infected cells was performed as described previously (Kutluay et al., 2013). Briefly, pgsA-745 cells were infected with VSV-G pseudotyped single cycle GFP-reporter viruses or its derivatives synchronously at 4°C. Following the removal of virus inoculum and extensive washes with PBS, cells were incubated at 37°C for 2 hr. To prevent loss of vRNA due to reverse-transcription, cells were infected in the presence of 25 μM nevirapine. Post-nuclear supernatants were separated by ultracentrifugation on 10–50% linear sucrose gradients using a Beckman SW55-Ti rotor at 30,000 rpm for 1 hr at 4°C. Ten 500 µL fractions from the top of the gradient were collected, and CA, IN, and vRNA in each fraction were analyzed by either immunoblotting or Q-PCR (Kutluay et al., 2013). A SYBR-Green-based Q-PCR assay (Pizzato et al., 2009) was used to determine RT activity in the collected sucrose fractions.
 
-## Visualization of vRNA in infected cells
+### Visualization of vRNA in infected cells
 
 Viral RNA was visualized in infected cells according to the published multiplex immunofluorescent cell-based detection of DNA, RNA, and Protein (MICDDRP) protocol (Puray-Chavez et al., 2017). VSV-G pseudotyped HIV-1NL4-3 virus stocks were prepared as described above and concentrated 40X using a lentivirus precipitation solution (ALSTEM). PgsA-745 cells were plated on 1.5 mm collagen-treated coverslips (GG-12–1.5-Collagen, Neuvitro) placed in 24-well plates 1 d before infection. Synchronized infections were performed by incubating pre-chilled virus inoculum on the cells for 30 min at 4°C. Cells were infected with WT virus at an MOI of 0.5, or with an equivalent number (normalized by RNA copy number) of IN mutant viral particles. After removal of the virus, inoculum cells were washed with PBS and either immediately fixed with 4% paraformaldehyde, or incubated at 37°C for 2 hr before fixing. To prevent loss of vRNA due to reverse-transcription, cells were infected and incubated in the presence of 25 μM nevirapine. Following fixation, cells were dehydrated with ethanol and stored at −20°C. Before probing for vRNA, cells were rehydrated, incubated in 0.1% Tween in PBS for 10 min, and mounted on slides. Probing was performed using RNAScope probes and reagents (Advanced Cell Diagnostics). Briefly, coverslips were treated with protease solution for 15 min in a humidified HybEZ oven (Advanced Cell Diagnostics) at 40°C. The coverslips were then washed with PBS and pre-designed anti-sense probes (Puray-Chavez et al., 2017) specific for HIV-1 vRNA were applied and allowed to hybridize with the samples in a humidified HybEZ oven at 40°C for 2 hr. The probes were visualized by hybridizing with preamplifiers, amplifiers, and finally, a fluorescent label. First, pre-amplifier 1 (Amp 1-FL) was hybridized to its cognate probe for 30 min in a humidified HybEZ oven at 40°C. Samples were then subsequently incubated with Amp 2-FL, Amp 3-FL, and Amp 4A-FL for 15 min, 30 min, and 15 min, respectively. Between adding amplifiers, the coverslips were washed with a proprietary wash buffer. Nuclei were stained with DAPI diluted in PBS at room temperature for 5 min. Finally, coverslips were washed in PBST followed by PBS and then mounted on slides using Prolong Gold Antifade.
 
-## Microscopy and image quantification
+### Microscopy and image quantification
 
 Images were taken using a Zeiss LSM 880 Airyscan confocal microscope equipped with a × 63/1.4 oil-immersion objective using the Airyscan super-resolution mode. Ten images were taken for each sample using the × 63 objective. Numbers of nuclei and vRNA punctae in images were counted using Volocity software (Quorum Technologies). The number of vRNA punctae per 100 nuclei were recorded at 0 hr post-infection (hpi) and 2 hpi for each virus, and the number at 2 hpi compared to the number at 0 hpi.
 
-## Analysis of the fate of vRNA genome in MT4 cells
+### Analysis of the fate of vRNA genome in MT4 cells
 
 MT-4 cells were infected with VSV-G pseudotyped HIV-1 NL4-3 WT or an equivalent number of mutant viruses (normalized by RT activity) synchronously at 4°C. After removal of virus inoculum and extensive washes with PBS, cells were incubated at 37°C for 6 hr in the presence of 25 μM nevirapine. Immediately after synchronization (0 hr) and at 2 and 6 hr post-infection samples were taken from the infected cultures and RNA was isolated using TRIzol Reagent. The amount of vRNA was measured by Q-RT-PCR.
 

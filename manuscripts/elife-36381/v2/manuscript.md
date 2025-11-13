@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.36381.001 Two classes of riboswitches related to the ykkC guanidine-I riboswitch bind phosphoribosyl pyrophosphate (PRPP) and guanosine tetraphosphate (ppGpp). Here we report the co-crystal structure of the PRPP aptamer and its ligand. We also report the structure of the G96A point mutant that prefers ppGpp over PRPP with a dramatic 40,000-fold switch in specificity. The ends of the aptamer form a helix that is not present in the guanidine aptamer and is involved in the expression platform. In the mutant, the base of ppGpp replaces G96 in three-dimensional space. This disrupts the S-turn, which is a primary structural feature of the ykkC RNA motif. These dramatic differences in ligand specificity are achieved with minimal mutations. ykkC aptamers are therefore a prime example of an RNA fold with a rugged fitness landscape. The ease with which the ykkC aptamer acquires new specificity represents a striking case of evolvability in RNA.
+Two classes of riboswitches related to the ykkC guanidine-I riboswitch bind phosphoribosyl pyrophosphate (PRPP) and guanosine tetraphosphate (ppGpp). Here we report the co-crystal structure of the PRPP aptamer and its ligand. We also report the structure of the G96A point mutant that prefers ppGpp over PRPP with a dramatic 40,000-fold switch in specificity. The ends of the aptamer form a helix that is not present in the guanidine aptamer and is involved in the expression platform. In the mutant, the base of ppGpp replaces G96 in three-dimensional space. This disrupts the S-turn, which is a primary structural feature of the ykkC RNA motif. These dramatic differences in ligand specificity are achieved with minimal mutations. ykkC aptamers are therefore a prime example of an RNA fold with a rugged fitness landscape. The ease with which the ykkC aptamer acquires new specificity represents a striking case of evolvability in RNA.
 
 ## Introduction
 
@@ -37,11 +37,23 @@ We set out to determine how three RNA elements with a common scaffold could reco
 
 ## Results
 
-## The structure of the wild-type PRPP aptamer and a single point mutant ppGpp aptamer
+### The structure of the wild-type PRPP aptamer and a single point mutant ppGpp aptamer
 
 To understand the basis of ligand recognition by the PRPP riboswitch, we determined the crystal structure of the aptamer domain of the ykkC 2b riboswitch from Thermoanaerobacter mathranii at 2.5 Å resolution in the presence of its native ligand, PRPP (Supplementary file 1). PRPP is an activated metabolic intermediate. As a result, it is highly unstable. It degrades on a time course of minutes to hours via several mechanisms in the presence of divalent metal ions, acidic or basic pH, and/or elevated temperatures (Dennis et al., 2000; Hove-Jensen et al., 2017; Khorana et al., 1958; 1955; Meola et al., 2003; Remy et al., 1955). However, binding to the PRPP riboswitch aptamer domain protects PRPP on a time scale of hours to days (Figure 1—figure supplement 1). The stabilizing effect of the aptamer permitted crystals of the intact complex to be observed after two days. Once formed, unfrozen crystals disappeared after approximately five to ten days, underscoring the need for prompt crystallization and cryogenic preservation in this study. The structure was solved by molecular replacement using the guanidine-I aptamer as an initial model. After model building and refinement, the model fit the data with an Rwork of 0.216 and an Rfree of 0.253.
 
 Like its parent aptamer, the PRPP riboswitch contains two adjacent helical stacks (Figure 1). P3 forms a large portion of the binding pocket, and a conserved loop at the end of P3 docks into P1a. This allows conserved nucleotides from P1a to participate in ligand recognition. P1, P1a, P1b, and P2 together form a continuous coaxial stack adjacent to P3. However, unlike the guanidine aptamer, the PRPP aptamer has structured tails at the 5′ and 3′ ends that are not conserved in the guanidine riboswitch. The ends pair to form an additional short helix that we have termed P0, resulting in a four-way junction between P0, P1, P2, and P3. P0 coaxially stacks with P3 and extends the binding pocket for recognition of the larger PRPP ligand. The overall architecture of the PRPP aptamer reveals that it is a rather conservative adaptation of the guanidine aptamer with key differences that allow for PRPP recognition.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig1-v2.jpg)
+
+**Figure 1.:** (A) Consensus sequence of the PRPP riboswitch, adapted from Sherlock et al. (Sherlock et al., 2018b). The secondary structure has been updated to show structural information gained from the present study. The sequence is depicted as in Sherlock et al. (see key). Nucleotides noted in blue are important bioinformatic differences between PRPP riboswitches and guanidine riboswitches. Base pair notation is as published previously (Leontis and Westhof, 2001). (B) Secondary structure of the PRPP riboswitch aptamer from T. mathranii. Nucleotides are colored by paired region. Paired regions are indicated in bold. Sequence numbering is indicated in gray. Nucleotides that directly contact PRPP are circled in red, and arrows indicate strand connectivity. (C) Crystal structure of the PRPP riboswitch. Chain A is shown. The RNA is depicted as a cartoon and PRPP is depicted as yellow spheres. Nucleotides are colored by paired region as in B. (D) Crystal structure of the G96A mutant. Chain A is shown. The RNA is depicted as a cartoon and ppGpp is depicted as green spheres. Nucleotides are colored by paired region as in B.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The higher of the two bands represents intact PRPP, while the lower band represents degradation products. The leftmost lane is purified PRPP. This leftmost lane represents a sample of PRPP that was purified and eluted but not subjected to the reaction conditions. Each pair of lanes thereafter represents one dialysis cassette. The concentration of aptamer added to the cassette in micromolar is depicted above each pair. The concentration of aptamer in crystallization experiments was 150 μM, three-fold greater than the highest concentration used in determining the dissociation constant for wild type RNA. ‘L’ is the side of the cassette to which PRPP ligand was initially added. ‘R’ is the side of the cassette to which RNA aptamer was initially added. After overnight incubation at room temperature, material recovered from dialysis cassettes was electrophoresed to separate intact PRPP from degradation products. PRPP incubated in the presence of aptamer experienced significant protection relative to unbound PRPP, permitting the use of this unstable metabolite in the present structural and biophysical studies.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** All experiments were performed in triplicate and the standard deviation for each data point is shown using black error bars. (A) wild type RNA binding to PRPP (purple) and ppGpp (green). The ppGpp complex did not quite reach saturation, so the Bmax was constrained to equal the Bmax value from the fit for ppGpp binding to the G96A mutant. (B) G96A mutant binding to PRPP (purple) and ppGpp (green). PRPP reached just 20% bound at 400 μM RNA, so the Bmax was constrained to equal the Bmax value from the fit for PRPP binding to wild type RNA.
 
 Although PRPP is unstable in solution, it has high occupancy in this crystal structure. PRPP is modeled with an occupancy of 1, and its B factors refined similarly to those of nearby residues. The quality of the fit between the electron density data and this model shows that a combination of protection by the riboswitch and a vast molar excess of ligand permitted a high degree of aptamer saturation when data were collected.
 
@@ -50,6 +62,14 @@ PRPP is a potentially challenging ligand for RNA to recognize; it has three nega
 ![Figure 2.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig2-v2.jpg)
 
 **Figure 2.:** (A) Crystal structure of the ligand-binding site in chain A. Relative to Figure 1, the structure is rotated 180° about the y axis. PRPP is depicted as sticks and colored by element with purple carbons. Nucleotides are depicted as blue sticks. Metal ions are depicted as gray spheres. Individual nucleotides and metals are labeled. An FO–FC map contoured at 2.5 σ is shown as a gray mesh. The map was calculated using an otherwise complete model lacking PRPP, M1, and M2. (B) Ligand interaction map. The map is colored essentially as in A. All RNA and metal contacts to PRPP are shown. Dashed black lines indicate hydrogen bonds. Solid black lines indicate coordination to a metal ion. Brackets indicate interactions shown in individual panels of Figure 3.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig3-v2.jpg)
+
+**Figure 3.:** Nucleotides are depicted as sticks and colored by element with blue carbons. Individual nucleotides and metals are labeled. Dashed black lines indicate hydrogen bonds. A dashed green line shows the lone pair-π interaction between A103 and G105. Solid black lines indicate coordination to a metal ion. Relative to Figure 1, the structure is rotated 180° about the y axis. Panel A is additionally rotated nearly 90° about the x axis. Panel D is rotated approximately 45° about the x axis in the opposite direction. (A) Contacts among the 5-phosphate of PRPP, residues G48, C49, C77, and metal ions M1 and M3. (B) Hydrogen bonds between the ribose of PRPP and residues C77, G96, and G104. (C) Coordination of metal M2 by PRPP and residue G6. (D) Recognition of the pyrophosphate group of PRPP by residues A5, G6, A101, and G105.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** PRPP is depicted as sticks and colored by element with purple carbons. Nucleotides are depicted as sticks and colored by element with blue carbons. Individual nucleotides and metals are labeled. Solid black lines indicate coordination to a metal ion, and coordination distances in Å are indicated. (A) Coordination of M1. (B) Coordination of M2. (C) Coordination of M3.
 
 This construct crystallizes in the presence of BaCl2, so both Ba2+ and Mg2+ are present in the crystallization condition. M1 and M3 are modeled as Ba2+ due to the appearance of large positive peaks in the electron density map when they are modeled as Mg2+. M2 is modeled as Mg2+, but exhibits coordination distances higher than expected for this species (Figure 3—figure supplement 1). The aptamer binds PRPP with nearly equal affinity in the presence of either Ba2+ or Mg2+ alone (2.0 ± 0.4 and 2.0 ± 0.3 µM, respectively). Given that both metals support binding, we expect that there may be partial occupancy of these two species that cannot be resolved at this resolution.
 
@@ -61,19 +81,61 @@ The P0 region of the aptamer extends below P3 and permits a suite of interaction
 
 The intracellular PRPP concentration in bacteria is estimated to be in the millimolar range (Hove-Jensen et al., 2017; Jendresen et al., 2011; Jensen et al., 1979; Nygaard and Smith, 1993; Saxild and Nygaard, 1991; Schneider and Gourse, 2004; Yaginuma et al., 2015). However, enzymes and protein regulatory elements that sense PRPP concentrations in bacteria typically have micromolar dissociation (Kd) or Michaelis (KM) constants (Bera et al., 2003; Hove-Jensen et al., 2017; Jørgensen et al., 2008). Sherlock and colleagues recently found that the T50 (the ligand concentration that produces half-maximal effect) of a PRPP riboswitch in transcription termination assays is 90 μM (Sherlock et al., 2018b). We determined the Kd of the riboswitch aptamer domain for PRPP (Table 1, see also Figure 1—figure supplement 2A) by equilibrium dialysis using radiolabeled [β-33P]-PRPP. This assay yields a Kd of 2.0 ± 0.3 μM. There are two notable differences between the present experimental system and that employed by Sherlock et al. First and most importantly, the present study examines binding affinity in an isolated aptamer domain, while Sherlock et al. focused on the ability of the full riboswitch to terminate transcription. The full system is governed by the kinetics of ligand association and RNA folding, while the present experimental system only measures the thermodynamics of ligand binding. Also, in this study, [β-33P]-PRPP was used in trace quantities and the amount of intact PRPP remaining in each sample was carefully measured to deconvolute the counts obtained from intact PRPP and the counts obtained from breakdown products. Sherlock et al. used unlabeled PRPP and could not quantify the extent of degradation, likely resulting in some underestimation of PRPP’s ability to terminate transcription. The present data show that the affinity of the complex is at least of low micromolar affinity, placing it well within the range observed for complexes of PRPP with protein elements (Bera et al., 2003; Jørgensen et al., 2008).
 
+**Table 1.**
+ Dissociation constants for PRPP and ppGpp binding to the wild type and G96A T. mathranii aptamers with calculated fold specificity changes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Dissociation constants for WT and G96A binding to PRPP and ppGpp</th>
+    </tr>
+    <tr>
+      <th>Construct</th>
+      <th>Kd for PRPP</th>
+      <th>Kd for ppGpp</th>
+      <th>Fold specificity for PRPP over ppGpp</th>
+      <th>Estimated magnitude of overall specificity switch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild type</td>
+      <td>2.0 ± 0.3 μM</td>
+      <td>91 ± 3 μM</td>
+      <td>46</td>
+      <td rowspan="2">~40,000</td>
+    </tr>
+    <tr>
+      <td>G96A</td>
+      <td>1600 ± 200 μM</td>
+      <td>1.8 ± 0.1 μM</td>
+      <td>~0.001</td>
+    </tr>
+  </tbody>
+</table>
+
 In parallel with structural inquiries into the PRPP riboswitch, crystallization of native ppGpp aptamers was pursued. However, crystallization was unsuccessful with the subset of ppGpp aptamers tested. Considering the evident versatility of the ykkC motif and the overt similarity between the consensus sequences of ykkC RNA subtypes 2a and 2b, a specificity switch of the PRPP aptamer to a ppGpp aptamer was pursued via mutation as an alternative strategy.
 
 Close examination of the consensus motifs of the PRPP and ppGpp riboswitch aptamers revealed that the ppGpp aptamer consensus sequence was almost entirely a subset of the PRPP aptamer consensus sequence, with the PRPP aptamer generally having more stringent requirements than the ppGpp aptamer. The most salient difference between the two consensus sequences is at position 96. In the PRPP aptamer, this position is >97% conserved as a guanosine, but this conservation is lost in the ppGpp aptamer. In the ppGpp aptamer, the lack of conservation in this region complicates the process of sequence alignment. However, it appears that this nucleotide is not always present and, when it is, it appears to be conserved as A, C or U, but not G (Sherlock et al., 2018a). The dramatic difference in conservation at this site suggested that it may be critical for differential recognition of PRPP and ppGpp.
 
 We mutated position 96 in the T. mathranii PRPP aptamer from guanosine to adenosine, generating the G96A mutant. The wild-type aptamer shows low affinity for ppGpp (Kd = 91 ± 3 μM) and 46-fold greater affinity for PRPP (Kd = 2.0 ± 0.3 μM) (Table 1). Conversely, the G96A mutant binds ppGpp with an affinity equivalent to that of wild-type for PRPP (Kd = 1.8 ± 0.1 μM), but PRPP binding is abolished in the mutant up to 400 μM RNA (estimated Kd = 1600 ± 200 μM). The G96A mutant has approximately 900-fold higher affinity for ppGpp than PRPP. The G96A mutation thus strikingly resulted in approximately a 40,000-fold switch in ligand specificity from PRPP to ppGpp. The mutant’s affinity for ppGpp is well within the range of native aptamers tested (data not shown).
 
-## Co-crystal structure of the generated ppGpp aptamer and its ligand
+### Co-crystal structure of the generated ppGpp aptamer and its ligand
 
 Having shown that the G96A mutant is a ppGpp aptamer, we solved its crystal structure in the presence of ppGpp to 3.1 Å resolution. The crystallization conditions that reproducibly gave rise to co-crystals of the wild-type PRPP aptamer did not yield comparable results for co-crystals of the G96A mutant. However, the G96A mutant was found to crystallize in a separate condition that also produced crystals of the wild-type aptamer. The crystallization reagent used for G96A lacks barium, which was the most abundant divalent metal ion in the wild type crystallization condition. Potassium chloride, sodium chloride, and magnesium chloride were present in the crystallization drops. K+ and Mg2+ ions are observed in the mutant crystal structure. The best mutant crystal diffracted to a resolution of 3.1 Å and its structure was solved by molecular replacement using chain A of the PRPP riboswitch as an initial model. The asymmetric unit contained four aptamer molecules. Molecular replacement and refinement revealed robust density for the electron-dense pyrophosphate groups of ppGpp as well as its guanine base. In the initial solution and throughout refinement, the quality of the electron density was worse in chain D compared to chains A-C. The model of chain D is consistent with that of chains A-C, but is excluded from discussion in the text.
 
 Overall, the architecture of the G96A mutant is very similar to that of the wild-type aptamer (Figure 1D). Notably, the 2FO−FC map generated directly by molecular replacement showed no electron density in the former location of the ribose and phosphate of G96. Additional lack of electron density for the ribose of G95 and the phosphate of G97 immediately suggested that the G96A mutation caused major conformational rearrangement in this region.
 
 The orientation of the ppGpp ligand was determined by examining an FO−FC map where the input model lacked ppGpp. The positions of the 5′ and 3′ pyrophosphate groups of ppGpp are easily inferred from the available electron density data, which clearly show that the 5′ pyrophosphate occupies the former position of the pyrophosphate of PRPP. In this orientation, there is high electron density at the phosphates and lesser electron density at the 4′ and 5′ carbons, as expected (Figure 4A). This results in the ppGpp ribose having the opposite orientation of the PRPP ribose. The 5′ pyrophosphate is oriented toward P0 in the ppGpp structure, but the 5-phosphate is oriented away from P0 in the PRPP structure (Figure 1C,D, 2A and 4A). Several metal ions appear to associate with the pyrophosphate moieties. These were initially assigned as magnesium ions or water molecules, and subsequently assigned as more electron dense potassium ions due to implausibly low B factors after refinement. The positioning of these entities is highly variable among the molecules in the asymmetric unit, suggesting that they do not make essential contributions to ligand recognition, but may provide general charge stabilization.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig4-v2.jpg)
+
+**Figure 4.:** (A) Crystal structure of the ligand-binding site in chain A. ppGpp is depicted as sticks and colored by element with green carbons. Nucleotides are depicted as blue sticks. Metal ions are depicted as gray spheres. Individual nucleotides are labeled. An FO–FC map contoured at 3.0 σ is shown as a gray mesh. The map was calculated using an otherwise complete model lacking ppGpp and nearby metals. Relative to Figure 1, the structure is rotated 180° about the y axis. (B) Ligand interaction map. The map is colored essentially as in A. All RNA contacts to ppGpp are shown. Dashed black lines indicate hydrogen bonds. The grey bracket indicates base stacking. Black brackets indicate interactions shown in individual panels of Figure 5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Chain A is shown. ppGpp has green carbons and is colored by element. The Fo-Fc map was generated using an otherwise complete model lacking ppGpp and is shown contoured at 3.0 σ as a grey mesh.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig5-v2.jpg)
 
@@ -91,6 +153,22 @@ Nucleotide A74 appears to play a conserved structural role in the PRPP and ppGpp
 
 The guanidine-I and PRPP ykkC aptamers each have an S-turn motif in the P3 helix. In the guanidine-I aptamer, the orientation of G88 is reversed relative to its stacking partners and G89 flips out of the helix. These are classic features of the S-turn. The guanidine-I riboswitch also possesses a cross-strand purine stack, a characteristic backbone kink on the opposite strand from the S-turn, and stabilizing hydrogen bonds, all of which were first observed in the S-turn of the conserved sarcin-ricin loop in the 23S rRNA (Correll et al., 1999). In the PRPP riboswitch, a similar S-turn motif exists at the equivalent position (Figure 6B). Equivalent to G89 in guanidine-I, G96 flips out and base pairs with C75 while also hydrogen bonding to PRPP. Notably, the cross-strand purine stack is absent in the PRPP riboswitch, but other S-turn characteristics are preserved. Conversely, the S-turn motif is abolished in the G96A mutant, and no contacts are observed between A96 and other nucleotides. Even more significantly, G95 does not possess the reverse ribose orientation that defines an S-turn. Rather, this region resembles a standard A-form helix with a single nucleotide bulge. The guanine of ppGpp replaces the flipped out guanosine of the former S-turn motif (G89/G96) (Figure 6), revealing that the S-turn is a key center of functional plasticity in the ykkC RNAs.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig6-v2.jpg)
+
+**Figure 6.:** (A) Watson-Crick base pairs with C75 in the wild-type and G96A aptamers. Wild-type and G96A aptamer structures are overlaid. Wild-type RNA is shown as gray sticks. G96A RNA is shown as blue sticks. The base and ribose of ppGpp are shown as green sticks. Hydrogen bonds are shown as dashed lines. Left: face-on view of the preserved base pair. Right: edge-on view of the same interaction. (B) The S-turn motif in the guanidine and PRPP aptamers, and the equivalent position in the ppGpp aptamer. The RNA is depicted as a blue cartoon. Guanidine is colored by element with white carbons. PRPP is colored by element with purple carbons. ppGpp is colored by element with green carbons. A red outline showcases the position of a conserved guanine base in all three RNA elements. Relative to Figure 1, the structure is rotated 180° about the y axis. (C) Nucleotides in the guanidine or M3 binding site, or the equivalent site in the ppGpp aptamer. The RNA is colored by element with blue carbons. Guanidine is colored by element with white carbons. Black dashed lines indicate hydrogen bonds. Solid black lines indicate coordination to a metal ion. Individual nucleotides, guanidine and M3 are labeled. Chain A of the PRPP and ppGpp aptamers is shown.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Nucleotides are labeled, depicted as sticks and colored by element with blue carbons. Dashed lines indicate hydrogen bonds. (A) Nucleotides A6 and A68 of the guanidine aptamer. (B) Nucleotides G6 and A74 of the PRPP aptamer. (C) Nucleotides G6 and A74 of the G96A mutant, a ppGpp aptamer. Chain A of the PRPP and ppGpp aptamers is shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The secondary structure of the RNA is represented as black lines. P0 nucleotides are colored dark red. Guanine aptamer nucleotides that may pair with P0 nucleotides are colored light red. P3 nucleotides are colored dark blue. Nucleotides in the terminator stem that may pair with P3 nucleotides are colored light blue. PRPP is represented as a blue ellipse, and guanine is represented as a red circle. The behavior of this IMPLY Boolean logic gate is shown in the center. (A) Predicted structure in the absence of PRPP and guanine. (B) Predicted structure in the presence of guanine. (C) Predicted structure in the presence of PRPP. (D) Predicted structure in the presence of PRPP and guanine. In this model, the presence of PRPP stabilizes P0 and destabilizes the guanine aptamer domain.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/36381/elife-36381-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Anion-exchange chromatography of substrate and product standards. The ppGpp sample standard was purchased from TriLink BioTechnologies. (B) Anion-exchange chromatography of reactions with substrates GDP and ATP in the presence or absence of SAS1. To purify ppGpp for use in crystal trays, only fractions from the peak at ~16 column volumes were collected and pooled.
+
 ## Discussion
 
 Taken together, the present structural and biochemical data shed light on the evolvability of RNA as a whole and of the ykkC motif in particular. Just as residue C49 was previously used to distinguish guanidine aptamers from subtype 2 ykkC RNAs, here we show that G96 is the residue that differentiates PRPP and ppGpp aptamers. Clearly, the sequence space of the ykkC motif is rugged with potential functionality. The existence of ykkC RNAs with other gene contexts and unknown ligand specificity further reinforces the diversity of functions that this single RNA structural motif achieves with very small variations in consensus sequence (Nelson et al., 2017). Three-dimensional structural models of the wild type and G96A mutant aptamers reveal that the mechanism of specificity switching is recruitment of C75 as a primary effector of ligand recognition (Figure 6A). The presence or absence of the S-turn motif governs whether an RNA base or the ppGpp base can pair with C75, and therefore controls the specificity of the aptamer.
@@ -105,13 +183,95 @@ A final key observation in this study is the direct visualization that an RNA el
 
 ## Materials and methods
 
-## RNA transcription and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ppGpp standard</td>
+      <td>TriLink BioTechnologies</td>
+      <td>TriLink Biotechnologies: N-6001</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PRPP</td>
+      <td>Millipore Sigma</td>
+      <td>Millipore Sigma:P8296- 25MG</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Hampton Research Natrix HT Screen</td>
+      <td>Hampton Research</td>
+      <td>Hampton Research:HR2- 131</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Harvard Apparatus cassettes</td>
+      <td>Harvard Apparatus</td>
+      <td>Harvard Apparatus:742203</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Ribose phosphate pyrophosphokinase</td>
+      <td>Abbexa</td>
+      <td>Abbexa:abx072019</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>T. mathranii genome</td>
+      <td>NCBI</td>
+      <td>NCBI:NC_014209.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>https://doi.org/10.1107/S0907444910045749</td>
+      <td>CCP4:7.0.042; RRID:SCR_007255</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>https://doi.org/10.1107/S0907444904019158</td>
+      <td>Coot:0.8.6.1; RRID:SCR_014222</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad</td>
+      <td>GraphPad</td>
+      <td>GraphPad:7.0a; RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HKL2000</td>
+      <td>https://doi.org/10.1016/S0076-6879(97)76066-X</td>
+      <td>HKL2000:v0.98.714; RRID:SCR_015547</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Open Source PyMol</td>
+      <td>SourceForge https://sourceforge.net/projects/pymol/</td>
+      <td>PyMol:v1.8.x; RRID:SCR_000305</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA transcription and purification
 
 RNA was prepared essentially as in Reiss et al (Reiss et al., 2017). Plasmids containing ykkC PRPP riboswitch DNA from T. mathranii downstream of the T7 promoter were obtained from GeneArt at Thermo Fisher Scientific. The aptamer domain was extended at the 5′ end by one nucleotide to aid transcription by T7 polymerase (Salvail-Lacoste et al., 2013). Plasmid DNA was prepared using a QIAgen MaxiPrep kit and the accuracy of the sequence was verified using Sanger sequencing (Sanger et al., 1977). Template DNA for transcription was made using PCR with Phusion polymerase and primers 5′-TAATACGACTCACTATAGTGAAAGTGTACC-3′ and 5′-TACGAGTGAAACCTATCCTCCCG-3′. G96A transcription template was generated using the primers 5′-TAATACGACTCACTATAGTGAAAGTGTACC-3′ and 5′-TACGAGTGAAACCTATCCTCTCGGGCTTTTGTCC-3′. Template was purified using the Zymo Research DNA Clean and Concentrator 500 kit.
 
 RNA was transcribed from 20 ng/μL PCR template using T7 polymerase in the presence of 80 mM HEPES-Na pH 7.5, 5 mM DTT, 1 mM spermidine, 0.12 mg/mL bovine serum albumin, 6 mM NTPs, 44 mM MgCl2, and 1 U/nL inorganic pyrophosphatase (Hartmann, 2009). Transcription reactions proceeded for approximately 4 hr at 37°C. Monomeric RNA was exchanged into gel filtration buffer (50 mM MES pH 6.2–6.3, 100 mM KCl, 10 mM MgCl2), filtered, and purified natively on a HiLoad 26/600 Superdex 75 pg gel filtration column in a cold room (6 ± 2°C). Monomers eluted at ca. 0.6 column volumes, and were pooled and concentrated to >100 μM.
 
-## Crystallization and structure determination of the wild-type and mutant aptamers
+### Crystallization and structure determination of the wild-type and mutant aptamers
 
 Crystals were grown using the microbatch-under-oil method with 2:1 paraffin:silicon oil. In all cases, crystals appeared within two days. Initial crystallization screening was performed using Hampton Research Natrix HT at 23 and 30°C. To produce the wild type crystals used for data collection, 2 μL of 150 μM RNA in 10 mM MgCl2, 10 mM KCl, 10 mM HEPES-KOH pH 7.5, and 10 mM PRPP (Millipore Sigma) was mixed with 1 μL of a solution of 80 mM sodium chloride, 20 mM barium chloride dihydrate, 40 mM sodium cacodylate trihydrate pH 5.6, 45% v/v (+/-)−2-methyl-2,4-pentanediol (MPD), and 12 mM spermine tetrahydrochloride and incubated at 30°C. To produce the G96A crystals, 150 μM RNA in 10 mM MgCl2, 10 mM KCl, 10 mM HEPES-KOH pH 7.5, and 1 mM ppGpp was mixed with a solution of 80 mM sodium chloride, 40 mM sodium cacodylate pH 7.0, 30% MPD, and 12 mM spermine (1 μL RNA solution plus 0.8 μL reagent) and incubated at 23°C.
 
@@ -123,36 +283,44 @@ The G96A aptamer crystallized in space group P1 with four molecules in the asymm
 
 Refinement of the two structures was performed with Refmac and Phenix (Adams et al., 2010; Winn et al., 2011). Refinement was concluded when no more entities could be modeled into the electron density and computational refinement ceased to produce improvements in Rwork and Rfree. Metal ions were identified by first modeling a magnesium ion and evaluating coordination geometry, B factors, and unaccounted-for density using difference Fourier methods, followed by reassignment where appropriate. The figures of the crystal structure were made in PyMOL (Schrödinger, n.d.). The ligand interaction map was made in ChemDraw.
 
-## Synthesis of (β-33P) PRPP and determination of the dissociation constant of the PRPP-aptamer complex
+### Synthesis of (β-33P) PRPP and determination of the dissociation constant of the PRPP-aptamer complex
 
 (β-33P) PRPP was synthesized using E. coli ribose-phosphate pyrophosphokinase (RPPK) obtained from Abbexa. 17.7 μg/mL RPPK was incubated at 37°C for two hours in the presence of 50 mM potassium phosphate dibasic pH 8, 10 mM ribose 5-phosphate, 5 mM MgCl2, and trace quantities of (γ-33P) ATP essentially as in Switzer and Gibson (Switzer and Gibson, 1978). PRPP and ATP were separated on a native 20% acrylamide gel at 4°C. PRPP was distinguished from the substrate by its faster rate of migration and eluted overnight in 400 μL dH2O at 4°C.
 
-## Purification of SAS1 for synthesis of ppGpp
+### Purification of SAS1 for synthesis of ppGpp
 
 SAS1 enzyme was expressed and purified based on the protocol in Steinchen et al. (Steinchen et al., 2015). Briefly, the SAS1 protein from B. subtilis was amplified by colony PCR, cloned into a pET-28aM vector, and transformed into E. coli BL21(DE3) cells. A 15 mL starter culture was used to inoculate 1.5 L Terrific Broth plus 50 μg/mL kanamycin and grown at 37°C. At OD600 ~0.8, expression was induced with 0.5 mM IPTG and the culture was shaken overnight at 18°C. Cells were then pelleted and lysed using a microfluidizer (lysis buffer: 50 mM Tris, pH 8.0, 300 mM NaCl, 20 mM imidazole, 20 mM MgCl2, 20 mM KCl) and the lysate was run on a nickel column. The protein was eluted from the column with 400 mM imidazole (elution buffer: 50 mM Tris, pH 8.0, 400 mM NaCl, 400 mM imidazole, 0.2 mM TCEP). A band running between 25 and 30 kDa was seen on an SDS-PAGE gel, indicating SAS1 was successfully eluted. The eluted protein was diluted in 50 mM Tris, pH 8.0 and run on a Q column (HiTrap Q column, 5 mL) to remove contaminants. Finally, the Q column fractions were pooled and run on a gel filtration column (Superdex 200, running buffer: 20 mM HEPES-Na, pH 7.5, 200 mM NaCl, 20 mM KCl, 20 mM MgCl2), and a peak eluted consistent with the relevant tetrameric assembly of the protein. The protein was concentrated and frozen at −80°C in aliquots for storage.
 
-## Synthesis and purification of ppGpp
+### Synthesis and purification of ppGpp
 
 The SAS1 protein accepts GDP (or GTP) and ATP as substrates and catalyzes the transfer of the β and γ phosphates from ATP onto the 3′ end of GDP or GTP to form ppGpp or pppGpp, respectively. To make unlabeled ppGpp for crystallography, a reaction setup based on the protocol of Steinchen et al (Steinchen et al., 2015) was used. Briefly, 5 mM GDP, 5 mM ATP, and 5 μM SAS1 were combined in reaction buffer (100 mM HEPES-Na, pH 7.5, 200 mM NaCl, 20 mM MgCl2, and 20 mM KCl) and incubated at 37°C for two hours. A chloroform extraction was performed to remove SAS1, followed by 10-fold dilution in ddH2O and purification by Q column (HiTrap Q HP, 5 mL column volume), where buffer A (10 mM HEPES-KOH, pH 7.5) was used to bind nucleotides to the column and a gradient of buffer B (2 M NaCl) was used to elute the nucleotides. Nucleotides eluted from the column such that the number of phosphates positively correlated with %B. ppGpp eluted last at ~15% buffer B (approximately 300 mM NaCl) (Figure 6—figure supplement 3). ppGpp was then precipitated by lithium chloride (LiCl) precipitation. Eluate from the Q column was brought to 1 M LiCl, 4 volumes of ethanol were added, and the tubes were frozen at −20°C before centrifuging at 6000 rpm in an Eppendorf F-45-18-11 fixed-angle centrifuge rotor at 4°C for 10 min to pellet the precipitate. The supernatant was discarded and the pellet was washed twice with cold (−20°C) ethanol, repeating the freezing and pelleting steps between each wash step. After pouring off the ethanol of the final wash, pellets were completely dried. A dry, white powder resulted. Concentration was calculated by measuring UV absorbance at 252 nm (ε252 = 13600 L mol−1 cm−1).
 
-## Synthesis and purification of (3′-β-32P)-ppGpp
+### Synthesis and purification of (3′-β-32P)-ppGpp
 
 A reaction mixture resembling that in the previous section was made, substituting 5 mM ATP for 150 μCi [γ-32P]-ATP (Perkin Elmer). (3′-β-32P)-ppGpp was purified using a 20% denaturing polyacrylamide gel to separate it from [γ-32P]-ATP. The band was soaked in 300 μL ddH2O overnight at 4°C. The gel slice was then filtered off and the solution containing (3′-β-32P)-ppGpp was frozen at −20°C for use in binding assays.
 
-## Determination of dissociation constants by equilibrium dialysis
+### Determination of dissociation constants by equilibrium dialysis
 
-The dissociation constants of the PRPP-RNA and ppGpp-RNA complexes were determined by equilibrium dialysis using cassettes with a 10 kDa cutoff obtained from Harvard Apparatus, essentially as in Reiss et al (Reiss et al., 2017). Trace quantities of radiolabeled ligand were dissolved in equilibrium dialysis buffer (50 mM HEPES-KOH, pH 7.5, 200 mM KCl, 20 mM MgCl2) and were added to one side of the cassette, while varying concentrations of RNA dissolved in the same buffer were added to the other side of the cassette. The cassettes were incubated at room temperature overnight with gentle shaking and recovered by centrifugation. For ppGpp, which experiences negligible amounts of degradation overnight, 20 μL of the recovered material was directly subjected to scintillation counting. For PRPP, 10 μL of the recovered material was subjected to scintillation counting, while another 10 μL was electrophoresed on a denaturing 20% acrylamide gel containing 7.5 M urea. The latter step allowed determination of the amount of PRPP remaining in each sample after overnight incubation at room temperature in the presence of magnesium. The fraction of ligand bound in each cassette was determined using the following equation:F=(CPMR∗PR)−(CPML∗PL)CPMR∗PR
+The dissociation constants of the PRPP-RNA and ppGpp-RNA complexes were determined by equilibrium dialysis using cassettes with a 10 kDa cutoff obtained from Harvard Apparatus, essentially as in Reiss et al (Reiss et al., 2017). Trace quantities of radiolabeled ligand were dissolved in equilibrium dialysis buffer (50 mM HEPES-KOH, pH 7.5, 200 mM KCl, 20 mM MgCl2) and were added to one side of the cassette, while varying concentrations of RNA dissolved in the same buffer were added to the other side of the cassette. The cassettes were incubated at room temperature overnight with gentle shaking and recovered by centrifugation. For ppGpp, which experiences negligible amounts of degradation overnight, 20 μL of the recovered material was directly subjected to scintillation counting. For PRPP, 10 μL of the recovered material was subjected to scintillation counting, while another 10 μL was electrophoresed on a denaturing 20% acrylamide gel containing 7.5 M urea. The latter step allowed determination of the amount of PRPP remaining in each sample after overnight incubation at room temperature in the presence of magnesium. The fraction of ligand bound in each cassette was determined using the following equation:
 
-Where F is the fraction of PRPP bound. CPML and CPMR are the counts per minute measured via scintillation counting of the ligand and RNA sides of the cassette, respectively. PL and PR are the percentages of intact PRPP remaining as determined by gel electrophoresis for the ligand and RNA sides of the cassette, respectively. Fitting was performed in GraphPad Prism using the following equation:F=Fmax∗[RNA]Kd+[RNA]
+$$
+F=\frac{(CPM_{R}∗P_{R})−(CPM_{L}∗P_{L})}{CPM_{R}∗P_{R}}
+$$
+
+Where F is the fraction of PRPP bound. CPML and CPMR are the counts per minute measured via scintillation counting of the ligand and RNA sides of the cassette, respectively. PL and PR are the percentages of intact PRPP remaining as determined by gel electrophoresis for the ligand and RNA sides of the cassette, respectively. Fitting was performed in GraphPad Prism using the following equation:
+
+$$
+F=\frac{F_{max}∗[RNA]}{K_{d}+[RNA]}
+$$
 
 Where F is the fraction of PRPP bound, Fmax is the maximum fraction of PRPP bound, [RNA] is the concentration of RNA, and Kd is the dissociation constant.
 
 All binding data consist of three technical replicates, of which the arithmetic mean and standard deviation are represented in Figure 1—figure supplement 2. All replicates were performed using a single stock of RNA from the same round of in vitro transcription and purification. Each data point in each replicate was collected using a different equilibrium dialysis cassette with independently diluted RNA solutions. Data were fit to a single-binding hyperbolic curve, with Bmax floating or constrained as follows. TmaWT binding to PRPP and TmaG96A binding to ppGpp fully reached saturation and Bmax was allowed to float. These Bmax values fit here should represent the fraction of radiolabeled ligand available for binding. TmaWT binding to ppGpp and TmaG96A binding to PRPP did not reach saturation, so the Bmax was constrained to equal the Bmax values for TmaG96A binding to ppGpp and TmaWT binding to PRPP, respectively. Values shown in Supplementary file 1 are the dissociation constant (Kd) from the hyperbolic fit plus or minus the standard error of the fit calculated by GraphPad Prism.
 
-## Secondary structure prediction
+### Secondary structure prediction
 
 Secondary structure predictions were obtained from mFold using the default settings (Zuker, 2003). NCBI Reference Sequence: NC_014209.1, location 657606 to 657788 was used to predict the secondary structure of the aptamers in the presence of guanine and absence of PRPP. Location 657617 to 657800 was used to predict the secondary structures of the aptamers in the absence of guanine, in the presence of PRPP, and in the presence of both ligands. The secondary structure of the transcription terminator was predicted using location 657606 to 657841. The secondary structure deemed most likely by the program was used for interpretation. Bound guanine aptamer and bound PRPP aptamer secondary structure predictions are consistent with X-ray crystallography data.
 
-## Accession numbers
+### Accession numbers
 
 Coordinates have been deposited in the Protein Data Bank (PDB) with accession numbers 6CK5 for the wild-type PRPP aptamer and 6CK4 for the G96A ppGpp aptamer.

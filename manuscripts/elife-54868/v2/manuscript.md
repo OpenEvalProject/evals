@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Jellyfish, with their tetraradial symmetry, offer a novel paradigm for addressing patterning mechanisms during regeneration. Here we show that an interplay between mechanical forces, cell migration and proliferation allows jellyfish fragments to regain shape and functionality rapidly, notably by efficient restoration of the central feeding organ (manubrium). Fragmentation first triggers actomyosin-powered remodeling that restores body umbrella shape, causing radial smooth muscle fibers to converge around ‘hubs’ which serve as positional landmarks. Stabilization of these hubs, and associated expression of Wnt6 , depends on the configuration of the adjoining muscle fiber ‘spokes’. Stabilized hubs presage the site of the manubrium blastema, whose growth is Wnt/β-catenin dependent and fueled by both cell proliferation and long-range cell recruitment. Manubrium morphogenesis is modulated by its connections with the gastrovascular canal system. We conclude that body patterning in regenerating jellyfish emerges mainly from local interactions, triggered and directed by the remodeling process.
+Jellyfish, with their tetraradial symmetry, offer a novel paradigm for addressing patterning mechanisms during regeneration. Here we show that an interplay between mechanical forces, cell migration and proliferation allows jellyfish fragments to regain shape and functionality rapidly, notably by efficient restoration of the central feeding organ (manubrium). Fragmentation first triggers actomyosin-powered remodeling that restores body umbrella shape, causing radial smooth muscle fibers to converge around ‘hubs’ which serve as positional landmarks. Stabilization of these hubs, and associated expression of Wnt6, depends on the configuration of the adjoining muscle fiber ‘spokes’. Stabilized hubs presage the site of the manubrium blastema, whose growth is Wnt/β-catenin dependent and fueled by both cell proliferation and long-range cell recruitment. Manubrium morphogenesis is modulated by its connections with the gastrovascular canal system. We conclude that body patterning in regenerating jellyfish emerges mainly from local interactions, triggered and directed by the remodeling process.
 
 ## Introduction
 
@@ -31,11 +31,23 @@ Compared to the polyp stage, medusae display complex tissue architectures, inclu
 
 The pioneering work of V. Schmid and P. Tardent provided an initial characterization of the regenerative capacity of hydrozoan medusae. Among other species, they documented the ability of wild-caught Clytia hemisphaerica to reconstitute organs and restore umbrella shape after diverse types of damage (Schmid and Tardent, 1971; Schmid, 1974; Schmid et al., 1976). Clytia is now a reliable laboratory model with extensive genomic and transcriptomic resources (Houliston et al., 2010; Leclère et al., 2019), amenable to gene function analyses (Momose et al., 2018). The complex life cycle, comprising two adult phases - the polyp and the medusa - can be completed reliably in the laboratory (Houliston et al., 2010; Lechable et al., 2019): the developing embryo becomes a ciliated larva, which settles and metamorphoses into a benthic polyp. The polyp propagates asexually, generating a colony. Specialized polyps generate swimming medusae, which develop gonads and ensure gamete dispersal. Polyp colonies can be kept for years, without reduction of reproductive potential, while medusae grow to adult size in two to three weeks and have a total lifespan of about two months. Clytia medusae show 4-fold rotational symmetry around the central feeding organ, termed the manubrium (Figure 1A–D). The distribution of elements within the medusa can thus be defined by positional values along a radial axis (i.e. from the umbrella center to the rim), and by their angular spacing (Figure 1B). Clytia jellyfish are made up of four identical morphological units, called quadrants. Each umbrellar quadrant harbors one radial gastrovascular canal, a gonad, one lobe of the tetraradially-organized manubrium (Figure 1D) and a segment of the circular peripheral canal connecting the tentacle bulbs (up to four per quadrant). The manubrium, tentacle bulbs and gonads harbor populations of stem cells (Amiel and Houliston, 2009; Denker et al., 2008; Leclère et al., 2012), have autonomous functions and can be regarded as true organs. The main component of the umbrella is an acellular connective layer, the mesoglea (Figure 1C), covered on its external surface, the ‘exumbrella’, by a simple monolayer of epithelial cells (Kamran et al., 2017). The concave face of the umbrella, termed ‘subumbrella’, is composed of three overlapping tissues layers (Figure 1C): (i) an inner epithelium associated with the mesoglea, (ii) an overlying cnidarian-specific tissue type comprising radially aligned smooth epitheliomuscular cells (‘radial smooth muscles’), (iii) a ring of striated epitheliomuscular cells at the umbrella periphery which power swimming contractions, and are sandwiched between the other two layers (Leclère and Röttinger, 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Anatomy of Clytia jellyfish. (A) Swimming female jellyfish (m: manubrium; g: gonads; tb: tentacle bulbs). (B) Tetraradial body organization: each umbrella quadrant comprises a radial canal (rc), a gonad (g), and up to 16 tentacle bulbs (tb). The tetraradially-shaped manubrium (m) lies at the center. A peripheral circular canal (cc) connects the tentacle bulbs. Radial smooth muscle fibers (smooth m.) and circular striated muscles (striated m.) line the subumbrellar surface. (C) The umbrella comprises an epithelial exumbrella layer, a connective mesoglea, and a subumbrella layer, constituted by an inner layer associated with the mesoglea and two layers of muscle fibers (smooth and striated). (D) Diagram of the manubrium, lateral view, showing the oral (distal)-aboral (proximal) axis. The base comprises four gastric pouches, connected to the four radial canals. The oral area is organized into four folds (lips). (E–J) Regenerative potential of Clytia. In each cartoon the cut is indicated by an orange dotted line, removed parts are veiled. (E) Manubrium regeneration is completed in 4 days, the white dashed line at 24 hpd circles the cell accumulation. (F) Gonad regeneration over 8 days. (G) Tentacle bulb regeneration over 8 days. (H) Detail of the tip of a regrowing radial canal shown by fluorescence microscopy; neural fibers associated with the canal are stained with an anti-tyr-Tub antibody (red). (I) A quarter jellyfish fragment that morphed within 24 hr into a small jellyfish. A tiny new manubrium was visible after 4 days (arrowhead). (J) Fragment from which the entire bell margin had been removed: it sealed upon itself without further regeneration. Abbreviations: (dpd) days post-dissection, (hpd) hours post-dissection. Scale bars- A,I-J: 1 mm; E-G: 100 µm; H: 20 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A,B) Examples of organ ablation in fed individuals, each illustrated by a cartoon showing the cut (as an orange dotted line) and images of the regenerate at successive times. The regenerated gonad (A) and tentacle bulb (B) were both visible after 6 days. (C–E) Quantification of regeneration of gonads, tentacle bulbs and manubria, respectively, in fed versus unfed animals, as indicated. Both groups were fed 12 hr before the dissection, and fed animals were given Artemia every day until the end of the experiment. For gonads (C) and bulbs (D), regeneration rates were variable, but proceeded more reliably in fed jellyfish. (E) Manubrium regeneration was highly stereotypical. (F, G) Comparison of the dimension of endogenous versus regenerated manubria (4 dpd). The length from base to lip (F) was longer for endogenous manubria (n = 20 jellyfish), while their bases (G) were of comparable sizes. Statistics: two tailed t-test. Raw data for (C–G): Figure 1—figure supplement 1—source data 1. The images in A and B are also shown in Figure 1F and G, respectively. Scale bars: 100 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Examples of different kinds of ablation. Left cartoon illustrates the cut (as an orange dotted line, removed parts are veiled), in the middle is an image of the regenerate at 24 hpd, and to the right there is a cartoon illustrating the regenerate. All types of damage (A–T) triggered remodeling of the umbrella, driven by rapid reduction of the cut edges. Segments of severed peripheral circular canal fused together, defining the final perimeter of the regenerate. Circular shape was largely restored in all cases, but the original tetraradial symmetry was not recovered (exceptions in A, B). The images in C, D and T are also shown in Figures 8A, 1I and J, respectively.
+
 We employed cutting and grafting experiments to understand patterning principles during Clytia jellyfish regeneration and address the underlying cellular and molecular mechanisms. Distinguishable phases of wound healing, tissue remodeling and cell proliferation contribute, in a predictable manner, to the restoration of shape and missing organs. Actomyosin-driven wound constriction triggers the remodeling of umbrella tissues, causing the formation of a transient landmark, a ‘hub’ of radial smooth muscle fibers. Depending on surrounding tissue topology, the hubs will stabilize, predicting the site where a new manubrium will regenerate. CheWnt6 provides a likely molecular link between the hub and manubrium formation, since contraction-dependent expression at the wound site is maintained only in stabilized hubs. Wnt/β-catenin signaling is essential for blastema onset and manubrium regeneration. We also show that cells mobilized from other organs (proliferating stem cells and digestive cells) fuel the manubrium anlage, and that connections to radial canals locally dictate the growing manubrium geometry. Pattern in regenerating Clytia medusae emerges thus from the integration of local interactions between structural elements. Based on our findings, we propose an actomyosin-based ‘spoke and hub’ patterning system to account for manubrium positioning, which translates the wound-induced remodeling process into a precisely located blastema, likely through an interplay with Wnt signaling.
 
 ## Results
 
-## Restoration of medusa form involves both body remodeling and regrowth of organs
+### Restoration of medusa form involves both body remodeling and regrowth of organs
 
 In order to gain insight into the self-organizing properties of the jellyfish Clytia, we explored its responses to a diverse array of dissections (Figure 1E–J and Figure 1—figure supplement 1, Figure 1—figure supplement 2).
 
@@ -43,17 +55,33 @@ Firstly, targeted ablations demonstrated that all organs (the feeding manubrium,
 
 Secondly, a series of diverse cuts to the jellyfish umbrella allowed us to define the parameters of shape restoration (Figure 1I,J and Figure 1—figure supplement 2). Fragments began remodeling rapidly, reducing the wounded surface, and usually restoring the circular jellyfish shape within 24 hr, irrespective of the starting topology and of the number of remaining organs or canals (Figure 1I and Figure 1—figure supplement 2). This is well illustrated by half (‘bisected’) jellyfish or quarter fragments, which morph rapidly into a circular, smaller, umbrella (Figure 1I and Figure 1—figure supplement 2C,D). Together, the responses to our array of cut topologies indicated that: (i) existing organs and canals are largely conserved, (ii) the length of the residual circular canal determines the final perimeter of the restored umbrella, (iii) the final umbrella size correlates with the amount of tissue in the fragment (Figure 1—figure supplement 2). A rare failure in shape restoration concerned medusae from which the entire umbrella margin had been removed (Figure 1J and Figure 1—figure supplement 2T): these fragments sealed into a spherical shape and died shortly after. It is worth noticing that in the earlier study using larger, wild-caught Clytia jellyfish (Schmid and Tardent, 1971) reported one case of an interradial fragment, devoid of gastrovascular system, which regained a circular shape and an irregular manubrium. In cases where the manubrium was injured, we found that the organ rapidly healed before regaining its feeding function (Figure 1—figure supplement 2C). In manubrium-free fragments, cells accumulated at the injured ending of the remaining radial canal(s) within 24 hr post-dissection (hpd), and this mass regenerated into a new functional manubrium within 4 days post-dissection (dpd) (Figures 1E and 2A). After remodeling and feeding, the umbrella of regenerated jellyfish continued to grow and new tentacle bulbs were added to the circular canal; however, if the original four-quadrant body plan had been lost, it never recovered. A minority of remodeled manubria sprouted additional radial canals (6/16 of bisected jellyfish showed a third radial canal after 6 weeks).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig2-v2.jpg)
+
+**Figure 2.:** (A) Top: schematics of the different stages of manubrium regeneration following manubrium ablation. Below: Phalloidin staining (white) and EdU incorporation (1 hr pulse) at successive time points following manubrium ablation. EdU incorporation is detected from 24 hpd onward (quantification in B). Orange arrowhead: open gastric cavity from stage 3. Orange dotted line at 6 hpd: remodeling wound-area. The number of regenerating manubria used for quantification is indicated by the ‘n’ below each time point. (B, C) Quantification of EdU incorporation in the manubrium regeneration area (B) and in the radial canal (C). In (C), a 250 µm section of the MG-segment, at a standard distance of 250 µm from the manubrium, was considered for quantification. n.d.: radial canal from non-dissected medusae. Statistical test for (B) and (C): p values calculated with the Mann Whitney Wilcoxon test. Given that each time point is compared to the previous one, a Bonferroni correction was applied for identifying significant p-values: 0.0125 (B) and 0.01 (C), n.s. non-significant values. The number of individuals used for quantification is indicated by ‘n’ below each time point. (D) DIC (left) and phalloidin staining (right) images of regenerating manubria in control vs hydroxyurea (HU) treatment (0–48 hpd). HU treatment blocks blastema proliferation, but does not prevent the initial accumulation of cells. (E) DIC images of regenerating manubria, in control or HU-treated conditions (bottom: HU treatment for 0–48 hpd followed by washout). HU treatment prevents manubrium outgrowth and the correct formation of lobes. Orange arrowheads show the opening of the gastric cavity in control and HU-washed regenerating animals. (F, G) Remodeling does not require cell proliferation. (F) 24 hr after jellyfish bisection, EdU incorporation (12 hr pulse) is detected in the manubrium and close to the remodeling margin (left image: Hoechst-stained nuclei in blue, EdU in red; right: EdU in black). (G) Remodeled jellyfish fragments, in control conditions (left) or HU-treated (right). HU incubation does not affect shape restoration. Scale bars: A,D-F: 100 µm, G: 1 mm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) EdU incorporation at successive time points following manubrium ablation (1 hr pulse) detects cell proliferation in the MG-segment of radial canals. (A) Images of EdU detection (red in top panels; black in lower panels) within the MG-segment of radial canals. (B) Quantification, raw data presented in Figure 2—source data 1. Same data as Figure 2C, here compared to the unfed control. At 48 hpd and 72 hpd the number of EdU-positive cells in regenerating medusae (in blue) was significantly higher compared to control (shown in green; controls were non-dissected and unfed, indicated as n.d. unfed) animals. The number of radial canals per condition (‘n’) used for the quantification is reported below the boxplots. Statistical test: Mann Whitney Wilcoxon. (C) EdU incorporation detected, following a 12 hr pulse, in the central area of non-dissected (left) and manubrium–ablated (right) medusae; colors as in (A). EdU incorporation around the ablation site (0–12 hpd) is very low. (D) Images of EdU detection in tentacle bulbs, following a 1 hr pulse, in animals incubated in HU for 3 hr (EdU added after 2 hr; right) or untreated (left); colors as in (A). No EdU-positive cells are detected following HU treatment. (E) Quantification of EdU-positive cells in tentacle bulbs from jellyfish treated as in (D). The number of tentacle bulbs used for the quantification is reported below each bar. Raw data: Figure 2—source data 1. Scale bars: 100 µm.
+
 These observations highlighted the strong capacity for tissue and organ repair in Clytia jellyfish, but also showed that the final layout of body parts in regenerates does not necessarily match the original topology. Most obviously, missing radial canals were not restored, and the spacing between remaining canals and gonads was unbalanced in many cases (e.g. Figure 1—figure supplement 2H,I,P). Thus, restoration of the characteristic tetraradial symmetry of the jellyfish, manifest in the regular angular spacing of organs and canals (Figure 1B), requires at least part of all four radial canals (or manubrium corners from which they can sprout – see below) to be retained in the regenerate.
 
-## Wound closure and body remodeling precede proliferation-dependent organ regeneration
+### Wound closure and body remodeling precede proliferation-dependent organ regeneration
 
 We characterized the different processes of regeneration as follows: following manubrium ablation (Figures 1E and 2A), the wounded exumbrellar and subumbrellar layers curl and fuse together, sealing off the exposed mesoglea (stage 0, wound closure). The hole in the umbrella starts to constrict, progressively pulling together the cut ends of the four radial canals. By 12 hpd the tissue gap is closed, and the radial canals meet at the center (stage 1, remodeling) and start fusing (n: 10/16 lumen fused at 12 hpd). Cells start accumulating at the junction of the radial canals, the first sign of organ regeneration; by 24 hpd the cell mass forms a roughly square, flat primordium (stage 2, regeneration primordium). The primordium thickens, and by 48 hpd it fissures centrally, revealing the now distinguishable gastric cavity (stage 3, opening). A thicker rim emerges, which develops into a short tubular outgrowth (stage 4, outgrowth). The protuberance elongates, and within 4 dpd, it develops the characteristic lip folds, tetraradially arranged; the manubrium is now fully functional, albeit smaller than the original one (stage 5, folding) (Figure 1—figure supplement 1F,G).
 
 The contribution of cell proliferation to manubrium regrowth was assessed using one-hour incubations in the thymidine analogue EdU, which incorporates into newly-synthesized DNA (Figure 2A–C and Figure 2—figure supplement 1). Within the first hours following manubrium ablation, cell proliferation levels in the subumbrella decreased, notably within the segment of radial canal lying between gonad and manubrium (termed ‘MG-segment’; Figure 2A–C and Figure 2—figure supplement 1). Cell proliferation increased at the regeneration site from 24 hpd, and within the radial canals from 48 hpd. Cell proliferation then peaked during primordium thickening stage (72 hpd), before returning to basal levels at 96 hpd (Figure 2A-C and Figure 2—figure supplement 1A, B). Treatment with the DNA synthesis inhibitor hydroxyurea blocked manubrium regeneration at a pre-opening stage (stages 2–3), thus establishing the dependency of manubrium outgrowth on cell proliferation (3 days n: 14/20; Figure 2D, E and Figure 2—figure supplement 1D, E). Conversely, hydroxyurea treatment did not impair wound healing, umbrella remodeling or the repositioning of regenerating manubrium after bisection (Figure 2G), consistent with the relatively low number of cells incorporating EdU detected during these processes (Figure 2F).
 
-## Cell recruitment via the radial canals sustains manubrium morphogenesis
+### Cell recruitment via the radial canals sustains manubrium morphogenesis
 
 The high numbers of EdU-labelled cells detected within radial canals during the formation of the manubrium primordium (Figure 2A, C and Figure 2—figure supplement 1A, B) raised the possibility that precursor cells are recruited from other parts of the medusa through the canal system. Gonads and tentacle bulbs, which connect to the manubrium via the radial canals, harbor niches of multipotent stem cells (Denker et al., 2008; Leclère et al., 2012) called interstitial stem cells (i-cells; Figure 3A and Figure 3—figure supplement 1A). Hydrozoan i-cells can generate both somatic and germ cell types, and along with early precursors of these cell types, express stem cell markers such as Nanos1 (Bosch, 2009).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon illustrates the distribution of CheNanos1-expressing cells (in red), also shown by FISH images in the bottom panels (CheNanos1+ cells in red; nuclei counter-stained with Hoechst, in blue). CheNanos1-expressing cells reside at the base of the manubrium (m), in the gonads (g) and in a band of epidermis around the tentacle bulbs (tb). (B) FISH detection of CheNanos1 in manubrium-ablated jellyfish, showing CheNanos1-expressing cells in the manubrium anlage and in the radial canals, at successive stages of manubrium regeneration. The larger cells are likely maturing oocytes. Colors in top row as in (A); CheNanos1 mRNA detection alone is shown in white in the bottom images. (C–G) Grafting experiments detecting cell migration from gonad to the site of manubrium regeneration. (C) Diagram of experimental design: the donor medusa is incubated with EdU (24 hr pulse), one gonad is then excised and grafted at the place of one of the gonads of a non-treated host, which is then left to heal for 24 hr. Host manubrium is dissected, and regeneration proceeds for 48 hr. (D) Images from a host medusa 48 hpd - hours post manubrium dissection (3 days post graft - dpg). Left panel shows 2-channels image with EdU-positive cells (yellow), and nuclear counterstain (Hoechst, blue), right panel shows EdU-positive cells alone (white arrowheads). EdU-positive cells are detected within the radial canal connecting the grafted gonad to the regenerating manubrium, and in the manubrium primordium itself. (E) Higher magnification image from host medusa, showing putative migrating i-cell (white arrowhead), with colocalization of EdU and CheNanos1 FISH staining - EdU cells (yellow), CheNanos1 FISH (red), Hoechst nuclear counterstain (blue). (F) Diagram of control experiment, performed in parallel to (C): an EdU-labeled gonad (24 hr pulse) is grafted to a non-regenerating host (manubrium non dissected), let recover for 24 hr. EdU is detected in the host after two more days. (G) Images from a host control jellyfish; colors as in (D). Only few EdU-positive cells are detected in the non-dissected manubrium and the radial canal connected to the grafted gonad (white arrowheads; detail from larger image shown in Figure 3—figure supplement 1G). (H) Quantification of EdU-positive and EdU/CheNanos1 double positive cells in regenerating manubria compared to non-regenerating manubria; raw data: Figure 3—source data 1. Abbreviations: (m) manubrium, (rm) regenerating manubrium, (g) gonad, (gg) grafted gonad, (tb) tentacle bulb, (rc) radial canal, (dpg) days post grafting, (dpd) days post dissection. Statistical test: p values calculated with the Mann Whitney Wilcoxon test. Scale bars: A-D,G: 100 µm, E: 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fluorescent in situ hybridization (FISH) showing the localization of CheNanos1-expressing cells (shown in red), in a two-week-old non-operated medusa. Blue: Hoechst-counter-stained nuclei, here and all other panels, where present. (B–E) Gonad-donor medusae, showing double staining for EdU, following a 24 hr pulse: EdU only in (B), (yellow), CheNanos1 FISH only in (C) (red), overlay in (D, E) Gonad of a donor medusa, showing EdU+/CheNanos1+ cells in the gonad (single plane of z-stack). (F–H) Three gonad-grafted regenerating medusae showing single and double (white arrowheads) labeling for EdU (yellow) and CheNanos1 FISH (red), in the regenerating manubrium and in the connecting radial canal. White square in G indicates the area shown in Figure 3E, while the arrow indicates the position of the grafted gonad (gg, out of field). (H) EdU/Nanos1 double positive small oocytes (white arrowheads), originating from the grafted gonad, are found in the regenerating manubrium and within the connecting canal. Oocytes are distinguishable for their larger size, here we considered cells greater than 25 µm in diameter to be growing oocytes. Lower panel: close up (i: single plane; ii: maximum projection of z-stack) corresponding to the square shown on the upper panel. (I) Image of EdU-detection (yellow in top panel, black in lower panel) in the tentacle bulb and the radial canal connecting to the EdU+ grafted gonad. Abbreviations: (m) manubrium, (rm) regenerating manubrium, (g) gonad, (gg) grafted gonad, (tb) tentacle bulb, (rc) radial canal, (dpg) days post grafting, (dpd) days post dissection. Sample sizes for panels F-I are as reported in Figure 3H. Scale bars: 100 µm, except in the lower panels of (H): 10 µm.
 
 In situ hybridization detection of CheNanos1 in manubrium-ablated jellyfish revealed i-cells (used hereafter in a wide sense to include early precursors of the derivate cell types) in both regenerating manubrium and radial canals, starting from 24 hpd (Figure 3B). We could demonstrate that some of these i-cells originated from the gonad by replacing a gonad in a host medusa prior to manubrium ablation with one from an EdU-labeled donor (24 hr incubation in EdU; Figure 3C, D and Figure 3—figure supplement 1F-H). Around 48 hr after manubrium ablation, EdU+ cells were detected in the host medusa both within the regenerating manubrium and in the connecting radial canal (Figure 3D, H and Figure 3—figure supplement 1F-H). A subpopulation of the migrating EdU+ cells expressed CheNanos1 (Figure 3E, H and Figure 3—figure supplement 1F-H). EdU+/CheNanos1+ cells were found exclusively in the MG-segment of radial canals and in the manubrium primordium (Figure 3—figure supplement 1F–I), indicating that cell migration from the gonad is directed towards the regeneration site. Unexpectedly, small oocytes (significantly larger than the CheNanos1+ i-cells) labeled by EdU were also detected both in the radial canal and regenerating primordium (Figure 3—figure supplement 1H). The fate of these oocytes in the primordium is unclear. No mobilization of EdU+/CheNanos1+ cells from the gonad was observed in undamaged medusae (Figure 3F–H), suggesting that cellular recruitment is triggered by the regeneration process. The exact identity (early germ cells or somatic cell progenitors) and developmental potential (multipotent or restricted potential) of the smaller CheNanos1-expressing cells migrating from the gonad remains to be determined.
 
@@ -61,7 +89,7 @@ We noted another cell type, characterized by brown pigmentation, which circulate
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig4-v2.jpg)
 
-**Figure 4.:** (A) Images illustrating the distribution of MGD cells in Clytia organs (manubrium, gonads, tentacle bulbs), as indicated for each row. MGD cells can be recognized by the orange/brown pigment (DIC images in left panels). Second and third panels: Fluorescent micro-Beads (FB, in red) are ingested by cells residing in the gastroderm. Nuclei are counterstained with Hoechst (in blue), the organization of tissues in shown by phalloidin staining (in white). Right panel: higher magnification images including all three channels showing MGD cell morphology. All confocal images are maximum projection except the close-up image of the manubrium MGD cells that is a single plane of a z-stack. (B) Tracking of FB-labeled cells (following 24 hr feeding) in manubrium-regenerating medusae, cartoon illustrates experimental design. Distribution of FB-labeled MGD cells, 48 hr after manubrium dissection: DIC and fluorescence images (colors as in A) show FB-labeled cells in the gonad digestive cavity (i), in the radial canals (ii) and in the regenerating manubrium (iii). (C) Frames from time lapse movies of the MG-segment of radial canal (rc), showing rapid movement of MGD cells in the lumen. The five top panels show outward movement from the gonad (g), the bottom series shows movement into the regenerating manubrium (rm). (D) Quantification of circulating cells in the MG-segment of all four radial canals in fed, starved and regenerating jellyfish. Starved and dissected animals were last fed 8 hr before experiment (n: 24 for each condition, see Figure 4—source data 1) (E) Grafting of a FB-labeled gonad to a naïve host (cartoon illustrates experimental design) demonstrates untargeted migration of FB-labeled cells into all organs, either in regenerating jellyfish (manubrium dissected, i - top panel) or in non-dissected condition (n.d. ii – bottom panel). Panels show, from left to right: tentacle bulb, gonad, manubrium; FB in red, nuclear counterstain (Hoechst) in blue. (F) Experiment to determine the source of FB-labeled cells during manubrium regeneration (48 hpd), cartoons illustrate the three experimental conditions (from top to bottom): manubrium-dissected jellyfish, manubrium- and gonad-dissected (connection to tentacle bulbs is maintained), manubrium- dissected and canal-disconnected (gonads removed). Images show phalloidin staining (in white, to the left) visualizing the tissue organization around the manubrium site and fluorescent micro-beads (FB, right column, shown in red with Hoechst staining of nuclei in blue). FB-labeled cells are present in the regenerating manubrium in the first two conditions, but if there is no connection to another organ, manubrium regeneration is stalled, and no FB-labeled cells can be detected. Scale bars: 100 µm, except in the right column of (A): 25 µm.Figure 4—source data 1.Figure 4D.
+**Figure 4.:** (A) Images illustrating the distribution of MGD cells in Clytia organs (manubrium, gonads, tentacle bulbs), as indicated for each row. MGD cells can be recognized by the orange/brown pigment (DIC images in left panels). Second and third panels: Fluorescent micro-Beads (FB, in red) are ingested by cells residing in the gastroderm. Nuclei are counterstained with Hoechst (in blue), the organization of tissues in shown by phalloidin staining (in white). Right panel: higher magnification images including all three channels showing MGD cell morphology. All confocal images are maximum projection except the close-up image of the manubrium MGD cells that is a single plane of a z-stack. (B) Tracking of FB-labeled cells (following 24 hr feeding) in manubrium-regenerating medusae, cartoon illustrates experimental design. Distribution of FB-labeled MGD cells, 48 hr after manubrium dissection: DIC and fluorescence images (colors as in A) show FB-labeled cells in the gonad digestive cavity (i), in the radial canals (ii) and in the regenerating manubrium (iii). (C) Frames from time lapse movies of the MG-segment of radial canal (rc), showing rapid movement of MGD cells in the lumen. The five top panels show outward movement from the gonad (g), the bottom series shows movement into the regenerating manubrium (rm). (D) Quantification of circulating cells in the MG-segment of all four radial canals in fed, starved and regenerating jellyfish. Starved and dissected animals were last fed 8 hr before experiment (n: 24 for each condition, see Figure 4—source data 1) (E) Grafting of a FB-labeled gonad to a naïve host (cartoon illustrates experimental design) demonstrates untargeted migration of FB-labeled cells into all organs, either in regenerating jellyfish (manubrium dissected, i - top panel) or in non-dissected condition (n.d. ii – bottom panel). Panels show, from left to right: tentacle bulb, gonad, manubrium; FB in red, nuclear counterstain (Hoechst) in blue. (F) Experiment to determine the source of FB-labeled cells during manubrium regeneration (48 hpd), cartoons illustrate the three experimental conditions (from top to bottom): manubrium-dissected jellyfish, manubrium- and gonad-dissected (connection to tentacle bulbs is maintained), manubrium- dissected and canal-disconnected (gonads removed). Images show phalloidin staining (in white, to the left) visualizing the tissue organization around the manubrium site and fluorescent micro-beads (FB, right column, shown in red with Hoechst staining of nuclei in blue). FB-labeled cells are present in the regenerating manubrium in the first two conditions, but if there is no connection to another organ, manubrium regeneration is stalled, and no FB-labeled cells can be detected. Scale bars: 100 µm, except in the right column of (A): 25 µm.
 
 Related experiments demonstrated that intact radial canals are necessary for manubrium regeneration. The removal of all four radial canals (including gonads), leaving just their most proximal segments intact, led either to stalling of regeneration at early stages (stages 2–3, open cavity) or to formation of abnormal manubria with incorrect geometry and disrupted morphogenesis, notably lacking the deep folds shaping the four edges of the manubrium column (Figures 4F and 5A). Correct morphogenesis of a manubrium only occurred when at least one radial canal was connected to the peripheral gastrovascular system (Figure 5B), with the details of its morphology conditioned by the number of canals (see below).
 
@@ -71,15 +99,23 @@ Related experiments demonstrated that intact radial canals are necessary for man
 
 Based on these results, we propose that radial canals provide a route for the recruitment of diverse cell types, whose respective contributions to the regeneration of manubrium remain to be fully investigated. We observed mobilization of two cell types with distinct patterns of behavior: stem cells specifically migrate towards the regeneration site, while digestive cells circulate through the canal system and can settle in the gastroderm of any organ, including the manubrium regeneration site.
 
-## Radial canals dictate the geometry of the regenerating manubrium
+### Radial canals dictate the geometry of the regenerating manubrium
 
 The tetraradial symmetry of the native manubrium mirrors the global symmetry of undamaged medusae, and is perfectly restored in regenerating manubria, if they are properly connected to the canal system (see above; Figure 5J). In order to explore further the link between manubrium symmetry and the global tetraradial symmetry of the jellyfish, we examined the geometry of manubria regenerated in the context of different cut topologies.
 
 Bisected and quarter medusa fragments regenerated double- and single-lobed manubria, respectively (Figure 5C,D). Furthermore, irrespective of the dissection topology, the number of lobes of the regenerating manubrium always reflected the number of remaining radial canals, such that three radial canals generated a three-lobed manubrium, and so on (Figure 5C–F). This pattern might depend either on an underlying system of circular positional information retained within the medusa fragments, or by signals coming from the canals themselves. To distinguish these possibilities, we systematically removed radial canals from manubrium-ablated (but otherwise undamaged) medusae. The presence of four canals led in most cases to a tetraradial manubrium, three canals to a three-lobed one, two canals to a two-lobed manubrium, and one canal to a tubular one (Figure 5G–J). We conclude that the topology of the regenerating manubrium is determined by the number of connecting canals, which might provide a mechanical or biochemical signal, and/or might materially contribute to the primordium composition by providing migrating cells (Figures 3 and 4). Arguing against the latter option, canal fragments connected to the primordium but not to any other organ were found to be sufficient to direct the geometry of the regenerated manubrium (Figure 5B), as long as at least one canal remained connected to other organs (gonads and/or bulbs). Supporting our findings, Neppi, 1918 reported a correlation between the number of canals and manubrium morphology in regenerating wild-caught Clytia jellyfish, without specifically testing this relationship. Canals appear therefore to direct morphogenesis of the proliferating primordium by a local influence, whose nature remains to be determined.
 
-## Muscle fiber ‘hubs’ predict the site of manubrium regeneration
+### Muscle fiber ‘hubs’ predict the site of manubrium regeneration
 
 Recovering medusa fragments usually regenerate only a single manubrium. A key issue is thus to understand how the position of a new manubrium is determined. In undamaged jellyfish, the manubrium is located at the geometrical center of the umbrella, at the point of convergence ('hub') of the radial smooth muscles fibers and of the four radial canals. In regenerates, the initial position of the manubrium anlage does not necessarily coincide with the geometrical center of the remodeled medusa (e.g. in quarter jellyfish fragments; Figure 6A and Figure 6—figure supplement 1A). The anlage was, however, invariably associated with radial canal(s) and an aggregate (‘hub’) of smooth muscle fibers. We thus explored the contribution of the canals and/or the smooth muscle fibers hub to defining the position of the new organ.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig6-v2.jpg)
+
+**Figure 6.:** For each experiment, cartoons illustrate the cut (orange dotted lines), and stereomicroscope images the responses of live regenerates, while fluorescent images show phalloidin staining (in white) of the regions outlined by brown squares in the stereomicroscope images. Quantification of phenotypes at the bottom left of each image. (A) Quarter fragments: 24 hpd, a radially arranged hub of muscle fibers (orange arrowhead) is detected away from the wound site, close to the injured end of the remaining radial canal. At 5 dpd, a regenerated manubrium is located at the smooth muscle hub. (B) Umbrella fragments devoid of radial canals observed after 4 dpd (top panel: re-circularized, no manubrium regeneration) and 14 dpd (bottom panel: a tubular manubrium-like structure, unable to feed, rarely forms). (C) Removal of canal segments, between the ablated manubrium and gonads: at 24 hpd (left) a muscle hub - but no manubrium blastema - is visible; regrowing radial canals (blue outline in phalloidin image) have not yet reached the hub. At 5 dpd (right panel) three radial canals (blue dashed line) are connected to the muscle hub and manubrium regeneration has occurred (orange arrowhead). (D) Manubrium dissection, coupled to a long cut through the umbrella: 24 hpd (left panel) two muscle hubs are visible (orange arrowheads). At 5 dpd (right) two manubria have formed (orange arrowheads), at the corresponding locations. Scale bars: A-C: 150 µm; D: 300 µm; for all stereoscope images: 1 mm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** For each experiment, cartoons illustrate the cut (orange dotted lines), and stereomicroscope images the responses of live regenerates, while fluorescent images show phalloidin staining (in white) of the regions outlined by brown squares in the stereomicroscope images. Quantification of phenotypes at the bottom left of each image. (A) Small fragment containing a gonad and a canal section, with a regenerated manubrium visible at 4 dpd. (B) Manubrium dissection: at 24 hpd, radial smooth muscle fibers have joined at the center of the jellyfish, forming a ‘muscle hub’. Right panel is the same shown in Figure 2A. (C) Manubrium dissection, coupled to a long cut through the umbrella and to the removal of radial canal connections to gonads. Fluorescent image shows a double hub forming 24 hpd (phalloidin staining). The stereomicroscope image of a 7 dpd regenerate shows two manubria, formed once the canal connections were reestablished. (D) Manubrium dissection, coupled to a long cut through the umbrella: Hoechst staining images illustrating the possible outcomes at 24 hpd and 5 dpd, quantified below (as indicated by the color code, see: Figure 6—figure supplement 1—source data 1). Scale bars: 1 mm for stereomicroscope images, 200 µm for fluorescent images.
 
 Experiments presented above showed that complete manubrium regeneration is dependent on the presence of radial canals. Cells recruited through the radial canals are necessary for manubrium growth and morphogenesis (see above, Figure 5). Consistently, interradial fragments lacking a radial canal showed no signs of primordium formation at 4 dpd (Figure 6B). After two weeks, however, a simple tube-like manubrium (unable to feed) was observed in a few cases (n: 13/65; Figure 6B). This observation indicates that the canals are not strictly required to position the new manubrium and that umbrella tissues also contribute to the new structure. Canals rather play a facilitating role to manubrium regeneration by contributing with specific cell types to the blastema. We can further conclude that the meeting of multiple canal ends (often seen during remodeling, see for example Figure 1—figure supplement 2) is not responsible for specifying the position of manubrium regeneration, as evidenced by quarter jellyfish fragments in which a manubrium regenerated on the sole surviving radial canal (Figure 6A).
 
@@ -87,7 +123,7 @@ Strikingly, F-actin staining showed that primordia and regenerated manubria were
 
 In order to test the relationship between the muscle fibers hub and the site of manubrium regeneration, we performed a longitudinal deep cut through the umbrella of manubrium-ablated medusae (Figure 6D and Figure 6—figure supplement 1D). This cut topology disrupted the wound closure and remodeling processes, resulting in the formation of two separate manubria primordia (Figure 6D; n: 34/105, at 24 hpd) located on two muscle hubs (n: 13/16). In about a third of cases these regenerated two independent manubria, sometimes linked by a radial canal (Figure 6D). In other cases, the two manubria anlagens fused into a single oral structure, correctly patterned or twinned (Figure 6—figure supplement 1D; fused manubria, 5 dpd: 24/159). These ‘double hub’ experiments confirmed that (i) the muscle hub is a product of the remodeling process and its formation is independent of the radial canals (Figure 6C and Figure 6—figure supplement 1C), and (ii) each hub marks the location of a regenerating manubrium, irrespective of the subsequent outcome (two manubria or fused; Figure 6D and Figure 6—figure supplement 1D).
 
-## Why does only one manubrium usually regenerate?
+### Why does only one manubrium usually regenerate?
 
 Our initial survey showed that any medusa fragment can reform a manubrium. This implies that the entire radial axis of the umbrella possesses the potential to form a manubrium, and that a control mechanism exists to prevent multiple manubria from forming. One explanation could be that Clytia manubrium has an organizing role, as is the case for the hypostome (mouth) of Hydra polyps (Bode, 2011; Meinhardt, 1993; Vogg et al., 2019), and provides an inhibitory signal that spreads through the umbrella and prevents the induction of additional manubria. We tested this hypothesis by grafting supernumerary manubria at different subumbrellar positions. Grafted manubria could co-exist stably with the original one (Figure 7A), with each manubrium behaving independently and participating in feeding. The grafted manubria rapidly sprouted new canals, which reconnected to the existing gastrovascular system (Figure 7A). Grafting a fragment of a manubrium base onto the umbrella tissues, either on a radial canal or directly adjacent to the endogenous manubrium, systematically led to its regeneration into a functional extra manubrium (Figure 7B; tubular/bi-lobed shape: 12/12). Furthermore, manubria grafted either on the radial canal (Figure 7C) or the umbrella (Figure 7D) did not prevent the regeneration of an excised manubrium, resulting in the formation of a two-manubria medusa (n: 10/10 and 17/20, respectively). In contrast, no regeneration occurred when exogenous manubria were grafted adjacent to the excised one (Figure 7E; n: 15/20). These experiments indicate that existing manubria can exert only a local inhibition on manubrium reformation.
 
@@ -99,33 +135,69 @@ The organization of muscle fibers in manubrium-grafted jellyfish provided a poss
 
 These experiments indicate that the manubrium does not generate a long-range signal affecting organ positioning. The ‘inhibitory’ effect of proximal grafts is likely indirect, and can be explained by a localized rearrangement of the muscle fibers. Also on a local scale, we observed new canals sprouting from the base of grafted manubria (Figure 7A). The manubrium of Clytia medusae, unlike the hypostome of Hydra polyps, thus does not appear to act as an organizer of global patterning. Rather it can be considered the pivotal element of a self-organizing system based on local interactions.
 
-## Actomyosin-driven subumbrella remodeling restores medusa shape
+### Actomyosin-driven subumbrella remodeling restores medusa shape
 
 Wound closure progressively constricts injured tissues, drawing together the intact parts (Figure 8A–C). In all cases, a continuous bundle of actin lined the remodeling edge (Figure 8F), reminiscent of the actin ring described around wound sites in the exumbrella layer of Clytia (Kamran et al., 2017). This bundle resembles the purse-string structures described in many species, tightening epithelial wounds through a contraction of supra-cellular actin/myosin cables assembling along the wound edges (Begnaud et al., 2016; Schwayer et al., 2016). Detection of phosphorylated (activated) Myosin Regulatory Light Chain 2 (MRLC) around the wound area by antibody staining (Figure 8G and Figure 8—figure supplement 1A) is consistent with local activation of the actomyosin contraction system. Actomyosin cables could be detected following any type of wound in Clytia (Figure 8F). Treatment with myosin II inhibitors (such as blebbistatin or BDM) impaired umbrella remodeling, providing further evidence that the forces that underpin remodeling of the umbrella result from actomyosin activity (Figure 8H and Figure 8—figure supplement 1B).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig8-v2.jpg)
+
+**Figure 8.:** (A) Morphology of remodeling bisected medusae; successive stereomicroscope images showing the rapid reduction of exposed edges. After closure of the wound, the manubrium migrates towards the center, by 24 hpd only a scar-like trace is visible in the umbrella, which will then disappear. (B, C) Muscle fiber organization in remodeling jellyfish: in (B) phalloidin staining of the remodeling edge (corresponding to the regions highlighted by brown squares in A), in (C) diagram. The initially ordered radial fibers disorganize at the wound edge, and are extensively rearranged following the movements of the umbrella. (D, E) Images showing DiI droplets (in D) injected into the thick mesoglea layer of hemi-medusae, along the wound (left images, DiI droplets shown with red arrowheads, n: 8/8 jellyfish) or perpendicular to it (right images, DiI droplets shown with purple arrowheads, n: 6/6 jellyfish). Mesoglea was rearranged close to the wound area, while its more distal region seemed unaffected (diagram in E). (F) Phalloidin staining showing an actomyosin cable assembled at the wound edge in bisected (top) and manubrium-dissected (bottom) jellyfish. (G) Phalloidin (top) and antibody staining (PMyo; bottom) recognizing phospho-Myosin Light Chain 2 (Ser19) of the same specimen (6 hpd) showing enrichment of both actin and phosphorylated myosin at the wound site (orange arrowheads), during remodeling. (H) Halved jellyfish incubated (bottom) or not (top) with the myosin inhibitor blebbistatin: remodeling has not occurred in the presence of blebbistatin. (I) Halved jellyfish incubated (bottom) or not (top) in menthol, which inhibits striated muscle-based rhythmic contractions (see Figure 8—figure supplement 1C). Wound closure and remodeling (red arrowhead) have occurred in the menthol-treated specimen, with only a slight delay. Scale bars: A,D: 1 mm; F: 50 µm, B,G: 25 µm, H, I: 1 mm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Anti phospho-Myosin Light Chain 2 (Ser19) antibody (here indicated as PMyo) staining (upper row) of intact and remodeling muscle fibers, visualized by phalloidin staining (bottom row). PMyo antibody decorated radial smooth muscle fibers (central and peripheral umbrella), but not the circular striated muscle fibers (peripheral umbrella only). A negative control with only the secondary antibody (IIr rho) shows no staining in the smooth muscle fibers of an undamaged jellyfish. Disorganizing muscle fibers close to the wound (6 hpd) show strong myosin phosphorylation (right panel). (B) Manubrium-ablated jellyfish were incubated in different drugs (see Materials and methods), and observed 24 hpd. Controls treated in parallel with the carrier solvents (DMSO, ethanol) in FASW are shown in the top row. Jellyfish incubated in myosin inhibitors (blebbistatin and BDM) show impaired wound healing and remodeling, while inhibition of muscle contraction with menthol had no major effect. Stereomicroscope images. Scale bars: A: 1 mm, C: 25 µm. (C) Quantification of muscle contraction in non-dissected and bisected jellyfish in the absence (grey) and presence (orange) of menthol. Note that jellyfish contract significantly faster after amputation. Number of contractions per minutes was recorded for 5 min for 10 non-dissected and 10 newly bissected jellyfish, in control (0,04% ethanol) and menthol (400 µM in ethanol/FASW) conditions (see Figure 8—figure supplement 1—source data 1). Statistical test: Mann Whitney Wilcoxon.
 
 Staining of F-actin and tracing using the vital dye DiI demonstrated that remodeling is accompanied by localized reorganization of both the subumbrellar radial muscle layer (Figure 8B,C) and of the underlying mesoglea (Figure 8D,E), reorganization that is limited to the area proximal to the wound. During the constriction phase (1–12 hpd), the radial alignment of smooth muscle fibers loosened and they partially disorganized (Figure 8B; 6 hpd), recovering a radial orientation later (12–24 hpd) (Figure 8B,C). Similarly, the redistribution of DiI droplets indicated that regions distal to the wound were unaffected, while the proximal area accompanied the constricting tissues. In bisected jellyfish DiI staining on the cut margin is found around the newly centered manubrium (Figure 8D,E).
 
 A comparable process described in damaged Aurelia ephyrae was proposed to depend on rhythmic contractions of the striated muscles (Abrams et al., 2015), and indeed newly fragmented Clytia undergo vigorous contractions (Figure 8—figure supplement 1C). Treatment with the anesthetic menthol, which efficiently blocks umbrella contractions (Figure 8—figure supplement 1C), did not prevent remodeling of bisected medusae, inducing only a slight delay of remodeling (Figure 8I). Thus rhythmic contractions of the striated muscle are not necessary to the remodeling process in Clytia.
 
-## The topology of muscle fibers predicts the formation of a pro-blastema stable hub
+### The topology of muscle fibers predicts the formation of a pro-blastema stable hub
 
 Blastema formation always correlates with the stereotypical bunching up of smooth muscle fibers into a hub-like configuration caused by wound healing/remodeling – however not every initial hub leads to a blastema. Which parameter(s) will determine whether a wound is going to induce the regeneration of a new manubrium? The asymmetric bisection of the jellyfish umbrella, which leaves a smaller (S) fragment devoid of manubrium and a larger (L), manubrium-bearing, one, provides an informative case study in which the S-fragment regenerates a manubrium, while the L-fragment does not (Figure 9). These opposite outcomes cannot be attributed to the length of the wound nor, as previously shown, to a long-range inhibitory signal from the existing manubrium (see Figure 7). Following bisection, both fragments displayed the typical bunching of injured smooth muscle fibers near the wound area (8 hpd, F-actin staining; Figure 9). In the S-fragment, smooth muscle fibers subsequently started to converge towards the ‘hub’ site, maintaining their connections to the margin of the umbrella. This characteristic topology evolved into a stable radial hub structure, which was then translated towards the new geometrical center of the umbrella, prefiguring the appearance of a manubrium primordium (Figure 9A). In the L-fragment, the severed fibers that gathered into the initial hub had a different organization and instead adopted a parallel arrangement, all being connected at one end to the wound site and at the other extremity to the manubrium (Figure 9B). During subsequent re-centering of the manubrium, this hub figure displaced away from the wound site, and the surrounding fibers reoriented to reestablish the original configuration around the endogenous manubrium, while the wound-induced hub disappeared (Figure 9B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig9-v2.jpg)
+
+**Figure 9.:** (A,B) Successive images (0, 8, 10, 24 hpd and 4 dpd) of remodeling jellyfish fragments, deriving from an asymmetric cut across the umbrella, which generates one smaller fragment (‘S’) without manubrium (A) and one larger fragment (‘L’) bearing a manubrium (B). For each case it is shown: stereomicroscope images of immobilized specimens, phalloidin staining (in white) of the region highlighted in the brown square, diagram showing the topology of radial smooth muscle fibers (in green). All S and L fragments displayed, respectively, the same morphological progression (n: 20/20 each condition). Orange arrowheads indicate hubs. Scale bar: 200 µm, except for stereomicroscope images: 1 mm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Dynamics of smooth muscle fibers in the case of grafted and manubrium-ablated jellyfish (cartoon). Representative images are shown for each case: 12 hpd most (n: 6/8) specimens show an organized hub (top row), while at 24 hpd they tend (n: 8/13) to show a disorganized one (bottom row). At 48 hpd most specimens have no organized hub on the wound site, and manubrium does not regenerate. Purple arrowhead: grafted manubria; orange arrowhead: hub on manubrium-ablation site. Phalloidin-stained muscles in white. Scale bars: 100 µm.
 
 A similarly transient hub was observed in specimens where manubrium regeneration was inhibited by a locally grafted manubrium as described above (Figure 9—figure supplement 1, see also Figure 7H). In these experiments, the smooth muscles initially aggregated into a hub at the wound site (12 hpd), but later disassembled, accounting for the absence of regenerative blastema at 48 hpd (and related hub).
 
 We propose a model where the stabilization of a wound-induced hub depends on the configuration of the connecting muscle fibers: stabilization of the muscle hub occurs when the fibers are not constrained by attachment to an existing hub.
 
-## Wnt signaling links muscle hub stabilization to manubrium regeneration
+### Wnt signaling links muscle hub stabilization to manubrium regeneration
 
 We used an RNAseq approach to provide molecular insights into the regulation of Clytia regeneration, following the transcriptional dynamics of the central umbrella region at different times during manubrium regeneration (Figure 10A and Figure 10—figure supplement 1). Transcript levels of Wnt-pathway components and of known downstream targets (CheBra1 and CheFoxA, see Lapébie et al., 2014) modulated dynamically during the regeneration process (Figure 10B). These are prime candidate regulators of manubrium regeneration given their widespread role in developmental regenerative/processes, and notably in determining oral fates in cnidarians (e.g. Duffy et al., 2010; Momose et al., 2008; Servetnick et al., 2017). Most of Clytia Wnt genes were found to be expressed highly in the non-dissected manubrium (n.d.), and lowly in the surrounding umbrella tissues (0 hpd) (Figure 10B,C). Their expression then increased during manubrium regeneration (Figure 10B,C). In situ hybridization revealed that, following manubrium excision, CheWnt6 and Cheβ-cat were activated early at the constricting wound area (6 hpd), while transcripts for CheWnt3 and the Wnt-pathway downstream targets CheBra1 and CheFoxA started to be detectable later at the ‘hub’ site (24–48 hpd; Figure 10B,C). Expression of CheAxin, a modulator of canonical Wnt signaling, could first be detected at the hub/blastema site from 48 hpd (Figure 10C).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig10-v2.jpg)
+
+**Figure 10.:** (A) Sampling strategy for transcriptomic analyses: fragments of the central umbrella (orange dotted area) were collected at different times, prior (n.d.) or following manubrium ablation. (B) Heatmap displaying quantification of transcript levels (tpm, log2 normalized) for selected Wnt/ß-catenin pathway components and downstream targets. Color scale based on quantile values. (C) In situ hybridization detection of Wnt pathway components, together with CheFoxA and CheBra1 (genes in bold in B). Genes are expressed in staggered domains along the oral-aboral axis of the undamaged manubrium. Cheß-cat and CheWnt6 transcripts can be detected at the wound site at 6 hpd (black arrowheads), while CheWnt3, CheFoxA and CheBra1 are detected only at the stabilized hub (24 hpd). Treatment with PKF118-310 (0.8 µM) inhibits expression of Wnt/ß-catenin pathway components, and their targets. (D) Schematics and DIC images of manubrium-ablated jellyfish, treated with PKF118-310 (right) or control (left): following drug treatment blastema did not form and manubrium did not regenerate. (E) Reduction (expressed as fold-change) of expression of some Wnt/ß-catenin pathway components, and their targets, determined by qPCR between PKF118-310 (17–48 hpd) and control non-treated medusae (48 hpd) (see Materials and methods for sampling details), for two biological replicates. The ratio of expression levels of selected genes were normalized with respect to eF1α.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Non-dissected (n.d.), 0 hpd, 6 hpd, 12 hpd, 24 hpd (hub stabilization), 48 hpd (blastema onset). Two biological replicates of pooled samples were sequenced, per condition. PCA demonstrates samples reproducibility and indicates that at 48 hpd manubrium regeneration is not complete as the transcript composition remains distinct from the non-dissected manubrium.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig10-figsupp2-v2.jpg)
+
+**Figure 10—figure supplement 2.:** DIC images of Clytia embryos incubated from the 4-cell stage in 0.7-µM PKF118-310 (middle and right) or in FASW (left). The spherical morphology and lack of endoderm of drug-treated embryos at 24 hpf (hours post fertilization) strongly resembles the phenotypes obtained through knockdown of Wnt signaling using antisense morpholinos targeting Wnt3 and Fz1 (Lapébie et al., 2014). Removal of inhibition (FASW 24–48 hpf) allows endoderm formation and larval elongation. Details on phenotype quantification: FASW control embryos (24 hpf): 30/30 ‘torpedo-shaped planulae’; PKF118-310 treated (3–24 hpf) embryos: 32/49 ‘delayed blastulae’ (comprising: 15/49 ‘empty blastulae’, 17/49 ‘blastulae with cells within the blastocoel’), 17/49 dead embryos; PKF118-310 treated (3-24hpf) and washed embryos (48 hpf): 17/50 ‘planulae’ (comprising: 7/50 ‘torpedo-shaped planulae’, 10/50 ‘irregularly-shaped planulae’), 3/50 ‘un-polarized planulae’, 30/50 dead embryos. Dead embryos have been removed from the total sample numbers shown on figures. Scale bars: 100 µm.
 
 Treatment of injured jellyfish (from 17 hpd until 48 hpd) with PKF118-310, a chemical inhibitor of Wnt/β-catenin signaling, blocked regeneration of manubrium prior to blastema development (‘stages 1–2’ in Figure 10D). Inhibition of Wnt/β-catenin signaling by PKF118-310 was validated using Clytia embryos, where the role of this pathway in axis development is well characterized (Momose et al., 2008; Lapébie et al., 2014). 21 hr treatments, starting from cleavage stage, phenocopied the strong ‘aboralization’ obtained following CheWnt3 knockdown (Momose et al., 2008). No gastrulation or signs of morphological polarity were observed 24 hr after fertilization (24 hpf; Figure 10—figure supplement 2), while embryos washed from the drug recovered and formed polarized larvae (Figure 10—figure supplement 2).
 
 In dissected jellyfish, treatment with PKF118-310 prevented expression of Wnt-pathway components and downstream targets (CheWnt3, CheWnt6, CheBra1, CheFoxA, CheAxin) at the hub, as shown by in situ hybridization (Figure 10C). qPCR experiments showed a strong reduction of the target genes (CheBra1, CheFoxA), a milder reduction for some pathway components (CheWnt3, CheAxin), and no significant reduction for the early-expressed genes CheWnt6 and Cheβ-cat (Figure 10E). When PKF118-310 treatment commenced immediately after dissection, it strongly delayed wound closure, suggesting that Wnt/β-catenin signaling may also be involved in early phases of remodeling.
 
-## Remodeling-dependent Wnt6 expression
+### Remodeling-dependent Wnt6 expression
 
 In situ hybridization on ‘S’ and ‘L’ fragments from bisected medusae revealed an early activation of CheWnt6 expression on both ‘sides’ of the remodeling wound (8 hpd; Figure 11A). Following the subsequent disassembly of the hub in the larger fragments, CheWnt6 expression became undetectable by in situ hybridization in L fragments, while it reinforced in the S fragments, where hubs were stabilized (24 hpd; Figure 11B). Inhibition of remodeling with blebbistatin suppressed CheWnt6-expression in both S and L fragments (at 8 hpd and 24 hpd; Figure 11A,C), while CheWnt6 signal was detected at the remodeling wound site (at 24 hpd) following 9 hr of inhibitor washout, in both S and L fragments (Figure 11B). qPCR quantification revealed a much stronger upregulation (>100-fold) of CheWnt6 in the remodeling wound area of untreated S fragments at 8 hpd (Figure 11C and Figure 11—figure supplement 1) compared to the relaxed wound area of blebbistatin-treated S fragments (2- to 4-fold) (Figure 11C and Figure 11—figure supplement 1). Blebbistatin treatment also caused an unexpected generalized increase in CheWnt6 expression in the umbrella tissues of both non-dissected and injured jellyfish (Figure 11—figure supplement 1). These analyses point to a functional link between actomyosin-driven remodeling and the expression of Wnt-pathway components.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig11-v2.jpg)
+
+**Figure 11.:** (A) Schematics of S/L fragments to the left, and stereomicroscope/in situ hybridization images of 8 hpd control and blebbistatin-treated to the right. At 8 hpd CheWnt6 expression was detected at the remodeling wound site of both fragments (purple arrowheads). In blebbistatin-treated samples, no CheWnt6 expression was detected at the wound sites (white arrowheads). (B) At 24 hpd CheWnt6 was not detected in the L fragments at the site of hub disassembly (white arrowheads), while it was detected at the hub site in S fragments (purple arrowhead). No CheWnt6 expression was detected at the wound sites in blebbistatin-treated samples at 24 hpd, while CheWnt6 signal was detected following washout of blebbistatin (blebbistatin treatment: 0–15 hpd) at the remodeling wound site (at 24 hpd), in both S and L fragments. (C) CheWnt6 expression ratio between ‘f’ (corresponding to wound area) and ‘F’ (nearby umbrella area) tissue pieces, as determined by qPCR, for control and blebbistatin-treated S fragments (8 hpd), for two biological replicates normalized with respect to eF1α expression. See Materials and methods and Figure 11—figure supplement 1 for further details, and Figure 10—source data 2 for the raw qPCR data. (A,B) Scale bars: 100 µm, except for stereomicroscope images: 1 mm.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/54868/elife-54868-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** (A) Schematic of ‘f’ and ‘F’ dissected tissue fragments from: (i) non-dissected (n.d.) and non-treated controls, (ii) non-dissected, blebbistatin-treated for 8 hr, (iii) control S fragments 8 hpd non-treated, and (iv) blebbistatin-treated S fragments 8 hpd. (B) f/F ratio of CheWnt6 expression values, as determined by qPCR for two biological replicates, for each of the four conditions represented in (A). (C) Corresponding CheWnt6 expression values for f and F fragments, normalized with respect to eF1α, and relative to the condition ‘non-dissected non-treated f control’ (which was arbitrarily set to 1.00). See Materials and methods for more sampling details, and Figure 10—source data 2 for the raw qPCR data.
 
 Taken together, our data suggest that expression of Wnt6 is strongly and rapidly activated during actomyosin-dependent wound remodeling in Clytia, and later maintained at the stabilized muscle hub. Wnt/β-catenin signaling becomes necessary for later stages of manubrium regeneration.
 
@@ -137,13 +209,13 @@ Clytia jellyfish, with their tetraradial body elaborated around a short oral-abo
 
 **Figure 12.:** Actomyosin-driven remodeling restores the circular shape (phase i), and generates a transient hub of remodeling smooth muscle fibers expressing CheWnt6. If stabilized after the re-centering step (phase ii), the hub maintains CheWnt6 expression and transforms into a Wnt-signaling landmark, enabling blastema initiation. Manubrium regeneration is fueled by cells traveling through at least one radial canal. The circular medusa shape is almost systematically restored, but the original tetraradial symmetry is often lost after completion of remodeling and regeneration.
 
-## Distinct cell behaviors, coordinated in time and space
+### Distinct cell behaviors, coordinated in time and space
 
 Regeneration in Clytia jellyfish is characterized by large-scale remodeling (see Figure 12): an initial re-organization of umbrella tissues, triggered by wound healing, leads to body recircularization (phase i), and continues with global re-positioning of the organs and canal system (phase ii). The timing and site of blastema formation is determined precisely. The manubrium blastema, a heterogeneous cell mass, recruits distinct cell types from nearby organs. These include both putative stem cells expressing CheNanos1, and differentiated cells – notably a novel type of gastrodermal cell that we term Mobilizing Gastro-Digestive (MGD) cells. MGD cells remain largely uncharacterized, but their mobilization between organs may contribute to the redistribution of nutrients. The stem cell system(s) of adult Clytia jellyfish have not been fully characterized. Only a fraction of proliferating cells express the i-cell marker CheNanos1, suggesting that in Clytia several distinct stem cell populations may co-exist, as in Hydra (e.g. see Bosch, 2009).
 
 The relative contributions of cell proliferation and tissue remodeling to the restoration of form vary widely among regenerating species. In the classic regeneration model Hydra, as in Clytia, body regeneration mainly involves remodeling and repatterning of existing tissues (Bode, 2003; Vogg et al., 2019). In contrast, cell proliferation plays a prominent role during regeneration of Nematostella and Hydractinia polyps (Amiel et al., 2015; Bradshaw et al., 2015; Passamaneck and Martindale, 2012). The few studied cases of organ regeneration in cnidarians also require cell proliferation, as here shown in Clytia or in the regenerating tentacles of some hydrozoan jellyfish (Fujita et al., 2019). Targeted recruitment of undifferentiated progenitors towards the wound/regeneration site is also a widespread feature of regenerating systems, including Hydractinia polyps (Bradshaw et al., 2015), planarians (Atabay et al., 2018), or mammalian epithelia (e.g. Dekoninck and Blanpain, 2019).
 
-## Mechanical control of shape in regenerating Clytia
+### Mechanical control of shape in regenerating Clytia
 
 Historical experiments on specimens caught from the wild revealed several basic features of Clytia regeneration, notably the rapid re-circularization of jellyfish fragments and the correlation between the shape of the fragment and both its regeneration potential and its ability to recover the original tetraradial symmetry (Neppi, 1918; Schmid and Tardent, 1971; Schmid, 1974; Schmid et al., 1976). In hydrozoan polyps, the mouth (hypostome) acts as a signaling center and the source of a morphogen gradient organizing the body axis (e.g. Bode, 2009; Mayorova et al., 2015). In contrast, morphogen gradients are not responsible for the positioning and regeneration of manubria in Clytia jellyfish, as shown by our grafting experiments and the pioneering work of Schmid et al., 1976. Similarly to our findings, they observed an inhibitory effect when a manubrium (or fragment of it) was grafted close to the regeneration site, but they explained it as a competition for the cells contributing to regeneration (Schmid et al., 1976). Their model for regeneration relied on mechanical forces rather than on a morphogen gradient, and more precisely postulated that the tensions exerted by the mesoglea and the smooth/striated muscle fibers would either concentrate, or favor the dispersion of the subumbrellar cells contributing to manubrium regeneration (Schmid et al., 1976). Indeed, we found that the regeneration of a manubrium is related to the organization of the smooth muscle fibers: regeneration is promoted when the muscle topology - and thus presumably the balance of resultant forces - allows the stabilization of a ‘hub’ conformation. As for the cellular components, we found a body-wide contribution from the jellyfish, with the highly plastic canal system providing a conduit for the diverse cell types fueling manubrium regeneration. The mesoglea, the elastic layer constituting a large part of the jellyfish body, undoubtedly contributes to the mechanical properties of the system, likely by opposing the muscle forces. Consistently, in vitro experiments using another jellyfish species, Podocoryna, showed that mechanical deformation of the mesoglea affects the spreading of striated muscle cells and the initiation of DNA replication (Schmid et al., 1993).
 
@@ -151,7 +223,7 @@ We found that the rapid re-circularization of jellyfish fragments relies on the 
 
 During regeneration of Clytia fragments, pharmacological inhibition of actomyosin contractility prevented not only tissue remodeling, but also CheWnt6 expression at wound and blastema formation. Our findings thus suggest that Wnt/β-catenin signaling activation is modulated by actomyosin contractions. Such instances of biochemical responses triggered by mechanical forces are attracting increasing attention (Chiou and Collins, 2018; Green and Sharpe, 2015; Ingber, 2006; Urdy, 2012; Vining and Mooney, 2017). Interplay between mechanical stresses and gene expression allows a fine coordination of developmental processes (e.g. Heisenberg and Bellaïche, 2013), with numerous examples identified during embryogenesis such as mechanical regulation of Wnt/β-catenin signaling during germ layer formation in Drosophila and zebrafish (Brunet et al., 2013), amphibians (Kornikova et al., 2010), Nematostella (Pukhlyakova et al., 2018), or during antero-posterior body axis establishment in mammals (Hiramatsu et al., 2013). Supra-cellular actomyosin fibers may also be involved in body axis repositioning during regeneration in Hydra polyps (Livshits et al., 2017; Mercker et al., 2015), although it remains unclear how mechanical cues are integrated with the morphogen gradient that patterns the primary body axis during both homeostasis and regeneration (Wang et al., 2020; Nakamura et al., 2011; Hobmayer et al., 2000; Gierer and Meinhardt, 1972).
 
-## The emergence of a Wnt-expressing structural landmark for blastema formation
+### The emergence of a Wnt-expressing structural landmark for blastema formation
 
 Wound sites and the neighboring tissues act as signaling centers in many regenerating organisms, instructing the re-patterning of body parts or blastema initiation – for example in Hydra polyps (Chera et al., 2009), zebrafish caudal fins (Wang et al., 2019), or planarians (Oderberg et al., 2017; Petersen and Reddien, 2009; Reddien and Sánchez Alvarado, 2004; Wurtzel et al., 2015). We found an analogous correlation between wound site and blastema position, however in Clytia medusa signaling from the wound site is not sufficient to trigger regeneration, but it is likely conditional. This conclusion is supported on one hand by the fact that wound response and blastema onset can be temporally separated, as also recently shown for the regeneration of the ctenophore Mnemiopsis (Ramon-Mateu et al., 2019), and on the other that the trigger for regeneration depends on the configuration of the wound.
 
@@ -163,17 +235,202 @@ The mechanisms regulating the stabilization and final positioning of the ‘spok
 
 During regeneration in Clytia, the configuration of the muscle hub and its associated spokes represents a good readout for the regenerate pattern, as it reliably predicts the position of the pro-blastema Wnt/β-catenin signaling center. The mechanisms linking muscles to the newly developing tissue polarity of the regenerate remain however unclear. The assembling spokes could carry/generate polarity information which is transmitted to the tissues, or their positioning may be directed by another patterning cue in the tissue. The question whether muscle fibers contribute to the polarity of a tissue – by exercising contractile forces – or they align according to another morphogenetic signal – for example responding to Wnt-pathway signaling – is not restricted to Clytia, but is relevant also for other systems, such as Hydra (Wang et al., 2020). Since whole-body morphogen gradients do not appear to contribute to manubrium positioning in the medusa of Clytia, this study system could be advantageous to disentangle the relative contributions of muscle fibers and biochemical signaling to body patterning.
 
-## Emergence of global pattern from local interactions
+### Emergence of global pattern from local interactions
 
 How positional information is restored in animals undergoing regeneration remains a central question. In Clytia, morphological ‘quadrants’ (each containing a radial canal, a quarter manubrium, a gonad and a segment of the bell rim with tentacle bulbs) repeat around the primary oral-aboral body axis. Our findings demonstrate that, in regenerating animals, the angular position of elements around this body axis is not encoded by a system of rotational coordinates, but depends rather on cues from existing structures. The characteristic tetraradial symmetry of the adult jellyfish thus does not depend on an actively maintained global patterning system. We cannot nevertheless exclude that a system of morphogen might be secondarily patterning the centro-peripheral axis: missing gonads, for instance, reform at their original location along the radial canal. Manubrium regeneration, instead, is essentially directed by the reorganization of radial muscles and the local influences of the canal system. The integration at the jellyfish level of local cues, emerging from the interaction of structural elements, is thus sufficient to explain body shape recovery and manubrium regeneration - without invoking a redefinition of positional information, encoded by a body-wide, morphogen-based, patterning system.
 
 ## Materials and methods
 
-## Clytia hemisphaerica husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheNanos1</td>
+      <td>GenBank</td>
+      <td>JQ397274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheWnt3</td>
+      <td>GenBank</td>
+      <td>EU374721</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheWnt6</td>
+      <td>GenBank</td>
+      <td>EU374719</td>
+      <td>Named CheWnt6 following Condamine et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheAxin</td>
+      <td>GenBank</td>
+      <td>EU374716</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>Cheβ-cat</td>
+      <td>GenBank</td>
+      <td>JQ438997</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheBra1</td>
+      <td>GenBank</td>
+      <td>DQ872898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>CheFoxA</td>
+      <td>GenBank</td>
+      <td>GBGP01000196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Clytia hemisphaerica)</td>
+      <td>Z4B strain</td>
+      <td>Leclère et al., 2019</td>
+      <td></td>
+      <td>Polyp colony producing female jellyfish</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rhodamine goat anti-rabbit secondary antibody</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 or 594 goat anti-rat secondary antibodies</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#A-11006 #A-11007</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myosin Light Chain two phosphorylated at serine19 (PMyo) rabbit polyclonal</td>
+      <td>Cell signaling technology</td>
+      <td>#3671</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tyrosinated tubulin antibody (YL1/2) rat monoclonal</td>
+      <td>Abcam</td>
+      <td>#6160</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma-Aldrich</td>
+      <td>#H8627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>#B0560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDM (2,3-Butanedione monoxime)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#B0753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Menthol</td>
+      <td>Sigma-Aldrich</td>
+      <td>#M2772</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PKF118-310</td>
+      <td>Sigma-Aldrich</td>
+      <td>#K4394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>EdU Click-It kit (Alexa Fluor 555)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#C10338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluoSpheres</td>
+      <td>Molecular Probes</td>
+      <td>#F8812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiI</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#D3911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#10125092</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst dye</td>
+      <td>Sigma-Aldrich</td>
+      <td>#94403</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Reference transcriptome (Clytia hemisphaerica)</td>
+      <td>Leclère et al., 2019</td>
+      <td>ENA identifier: PRJEB28006</td>
+      <td>Genome guided transcriptome</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNAseq samples (Clytia hemisphaerica)</td>
+      <td>This study</td>
+      <td>ENA identifier: PRJEB37920</td>
+      <td>BGISEQ-500 50nt single reads generated for 12 RNA samples:pooled samples of umbrella central area collected at six time points during manubrium regeneration (two biological replicates for each).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Clytia hemisphaerica husbandry
 
 Clytia jellyfish were produced clonally from the Z4B (female) polyp colony (see Leclère et al., 2019 for further information on the genome and the establishment of the line) in the Clytia facility at IMEV, as described by Lechable et al., 2019 using a custom-made closed culture system, artificial sea water (37 ‰, ‘Red Sea Salts’ (Red Sea) in deionized water) at 18°C, and twice-daily feeding with Artemia sp. nauplii. We performed all experiments on 11/14 day old, newly spawning medusae (0.5–0.8 cm diameter). Animals were starved for at least 12 hr prior to experiments and not fed during regeneration experiments, with the exception of the specified gonad and bulb-regeneration experiments and of the fluorescent bead assays (see below).
 
-## Surgical procedures
+### Surgical procedures
 
 Surgical manipulations were performed in agarose-coated petri dishes (2% agarose in Millipore-Filtered Artificial Sea Water, hereby FASW), by means of custom-made tools of fine platinum wire, acupuncture needles, pipette tips of diverse diameters, Dowell scissors (Fine Science Tools, #15040–11), fine forceps (Fine Science Tools, #11370–40) and fine scalpels. For manipulations, animals were relaxed using either ice-cold FASW or 400 µM menthol in FASW. Tentacles were trimmed with fine scissors to avoid damage to the animals due to entanglement. Operated animals were maintained in clean 6-well plastic plates, in a volume of 5 ml of FASW with antibiotic (1/1000 dilution of stock, stock at 10,000 units penicillin and 10 mg streptomycin per ml; Sigma Aldrich, #P4333), refreshed at least once per day. Multi-well plates were kept in an incubator at 18°C.
 
@@ -181,34 +438,34 @@ Organ dissections were performed either by punching out a hole across subumbrell
 
 Experiments were monitored at least once per day, and pictures were taken when necessary (see below). For imaging, animals were temporarily relaxed using 400 µM menthol in FASW.
 
-## In vivo cell labeling experiments and mesoglea injections
+### In vivo cell labeling experiments and mesoglea injections
 
 EdU labeling was performed by incubating medusae in a 100 µM EdU (Click-It kit, Thermo Fisher Scientific #C10338) in FASW. Incubation times for pulse and pulse-chase experiments are reported in the Results section and in the related Figures. Animals were then fixed with 4% paraformaldehyde (PFA) in PBS, for two hours, then rinsed with 1X PBS. Staining was performed with the EdU Click-It kit (Alexa Fluor 555 kit; Thermo Fisher Scientific, #C10338) following the manufacturer’s protocol (BSA not added). Nuclei were counterstained with 1 µg/ml Hoechst 33258 (Sigma-Aldrich, #94403). Fluorescent bead labeling (FluoSpheres, Molecular Probes, #F8812) was performed by feeding animals with beads mixed with hatched Artemia nauplii. Beads were first washed through five successive centrifugations in milli-Q H2O. Artemia nauplii were then incubated with the beads for one hour. After feeding, jellyfish were washed with FASW, to remove non-ingested beads. DiI (Thermo Fisher Scientific, #D3911) in Wesson oil was injected into the mesoglea with micro-needles.
 
-## Chemical treatments
+### Chemical treatments
 
 Around 10 mM hydroxyurea (Sigma-Aldrich, #H8627) was dissolved in FASW; the solution was renewed twice a day. Muscle contraction was inhibited as follows: with 1 or 5 µM blebbistatin (Sigma-Aldrich, #B0560) diluted from a 34 mM stock solution in DMSO, or with 8 mM BDM (2,3-Butanedione monoxime; Sigma-Aldrich, #B0753) in FASW, or with 400 µM menthol (Sigma-Aldrich, #M2772) diluted from a 1M stock solution in ethanol. The β-catenin/Tcf interaction inhibitor PKF118-310 (Lepourcelet et al., 2004; Sigma Aldrich, #K4394) was used at a final concentration of 0.7–0.8 µM, diluted from a 15 mM stock solution in DMSO.
 
-## In situ hybridization, immunostaining and phalloidin staining
+### In situ hybridization, immunostaining and phalloidin staining
 
 Probe synthesis and fluorescent in situ hybridization (FISH) were performed according to our urea-based protocol (Sinigaglia et al., 2018), see also Sinigaglia, 2019 for further recipes and reagents. In situ hybridization probes were generated from clones previously reported: CheBra1 and Cheβ-cat (Momose and Houliston, 2007); CheAxin (Momose et al., 2008); CheNanos1 (Leclère et al., 2012); CheFoxA (Lapébie et al., 2014); CheWnt3 and CheWnt6 (Condamine et al., 2019). In situ hybridization experiments were performed at least twice for each condition, and gave highly reproducible results (see respective figures for sample sizes).
 
 For immunostaining, animals were fixed for two hours with 4% PFA in HEPES buffer (HEPES 0.1M, pH 6.9, EGTA 50 mM, MgSO410 mM, Maltose 80 mM), rinsed and permeabilized with 1X PBS containing 0.2% Triton X-100, blocked and incubated with an antibody recognizing Myosin Light Chain two phosphorylated at serine19 (1:200, rabbit; Cell signaling technology, #3671), or with the anti-tyrosinated tubulin antibody YL1/2 (1:50, rat; Abcam, #6160). Primary antibodies were detected, respectively, with a goat anti-rabbit secondary antibody coupled to rhodamine (1:500) and a goat anti-rat secondary antibody coupled to Alexa 488 or 594 (1:200; Thermo Fisher Scientific, #A-11006 and #A-11007); samples were mounted in Citifluor AF-1 antifade mountant for imaging. Actin fibers were stained with 1:100 phalloidin coupled to Alexa 488 (solubilized in methanol; Thermo Fisher Scientific, #10125092), following fixation with 4% formaldehyde in HEPES buffer. For FISH plus EdU reaction, animals were fixed with 3.7% formaldehyde in HEPES buffer and the EdU click-It reaction was performed after the TSA reaction of FISH. Nuclei were stained with 1 µg/ml Hoechst 33258 (Sigma-Aldrich, #94403).
 
-## Image acquisition and processing
+### Image acquisition and processing
 
 Macroscopic images were taken with a Sony camera (NEX-5R) mounted on an Olympus SZ61 stereomicroscope. Fluorescent images were taken with a Zeiss Axio Imager A2 microscope and a Leica SP8 confocal microscope. Image processing (maximum projection, color display) and quantifications were done with Fiji software. All stereomicroscope images are shown in black and white with color inversion to facilitate jellyfish structure visualization. Drawings and figure construction were done with Illustrator CS6 (Adobe).
 
-## Transcriptomic analyses
+### Transcriptomic analyses
 
 RNAseq samples were prepared from 11/12 day old Z4B jellyfish (4–5 mm in size, 12 tentacle bulbs). Animals were first starved for 24 hr. Manubrium dissections were performed using a P200 tip (Sorenson, BioScience). Biological replicates for each sample consisted of pooled tissue fragments corresponding to the umbrella central area (see Figure 10A), dissected using ophthalmological scissors (Fine Science Tools, #15000) at the appropriate time: n.d. (non-dissected manubrium), 0, 6, 12, 24 and 48 hpd. Batches of five dissected fragments were collected in lysis buffer (from the RNAqueous micro kit, Thermo Fisher Scientific #AM1931), then quickly vortexed and snap-frezeed in liquid nitrogen (no longer than 15 min from dissection), and stored at −80°C until further processing.
 
 BGISEQ-500 50nt single reads were generated by BGI (~24 million reads per sample) from mRNA isolated using the RNAqueous-Micro kit (Thermo Fisher Scientific, #AM1931) followed by a DNaseI treatment (RQ1 DNase; Promega, #M6101) for 20 min at 37°C and purification with the RNeasy MinElute Cleanup kit (Qiagen, #74204). RNA quality was checked with the Agilent 2100 Bioanalyzer. See Figure 10—source data 1 for further information about the samples. The reads were mapped against a genome-guided reference transcriptome of Clytia hemisphaerica (Leclère et al., 2019 – ENA identifier: PRJEB28006) using the Kallisto R package (Bray et al., 2016). Read counts were combined at the gene level using Sleuth R package (Pimentel et al., 2017 following Yi et al., 2018). The RNA-seq data were deposited in ENA (PRJEB37920). Wnt signaling pathway-related genes were retrieved and named following Leclère et al., 2019 and Condamine et al., 2019.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA from fragments (central umbrella fragments for the experiments shown in Figure 10; ‘f’ or ‘F’ fragments for experiments shown in Figure 11 and Figure 11—figure supplement 1) pooled from 20 to 24 jellyfish was extracted using the RNAqueous-Micro kit according to the manufacturer’s instructions (Thermo Fisher Scientific, #AM1931). Two biological replicates were generated for each sample type. Genomic DNA was removed by Ambion DNase I treatment (Thermo Fisher Scientific, #AM2222). First-strand cDNA was synthesized from the entire volume of total RNA using the SuperScript VILO cDNA Synthesis Kit (Invitrogen, Thermo Fisher Scientific). Quantitative PCRs were run in quadruplicate, each reaction contained (20 µl final volume): 5 µl cDNA (1/100 or 1/200), 10 µl SYBR Green I Master Mix (Roche Applied Science) and 200 nM of each gene-specific primer. PCR reactions were run in 96-well plates, in a LightCycler 480 Instrument (Roche Applied Science). eF1α was used as reference control gene (Lapébie et al., 2014). Expression levels were calculated as 2-CP, with CP (Crossing Point) being the number of cycles required for the fluorescent signal to cross the threshold. Primer sequences and qPCR raw data are provided in Figure 10—source data 2.
 
-## Statistics
+### Statistics
 
 Histograms were prepared in Excel, while boxplots and heatmaps with R (R 3.6.1) using ggplot2 (v. 3.2.1; Wickham, 2016) and pheatmap (v. 1.0.12) packages respectively. Statistical tests were performed in R (see Figure legends for details). The principal component analysis on RNAseq samples was performed using Sleuth (Pimentel et al., 2017).

@@ -63,7 +63,7 @@
 
 ## Abstract
 
-Urinary metabolic profiling is a promising powerful tool to reflect dietary intake and can help understand metabolic alterations in response to diet quality. Here, we used 1 H NMR spectroscopy in a multicountry study in European children (1147 children from 6 different cohorts) and identified a common panel of 4 urinary metabolites (hippurate, N -methylnicotinic acid, urea, and sucrose) that was predictive of Mediterranean diet adherence (KIDMED) and ultra-processed food consumption and also had higher capacity in discriminating children’s diet quality than that of established sociodemographic determinants. Further, we showed that the identified metabolite panel also reflected the associations of these diet quality indicators with C-peptide, a stable and accurate marker of insulin resistance and future risk of metabolic disease. This methodology enables objective assessment of dietary patterns in European child populations, complementary to traditional questionary methods, and can be used in future studies to evaluate diet quality. Moreover, this knowledge can provide mechanistic evidence of common biological pathways that characterize healthy and unhealthy dietary patterns, and diet-related molecular alterations that could associate to metabolic disease.
+Urinary metabolic profiling is a promising powerful tool to reflect dietary intake and can help understand metabolic alterations in response to diet quality. Here, we used 1H NMR spectroscopy in a multicountry study in European children (1147 children from 6 different cohorts) and identified a common panel of 4 urinary metabolites (hippurate, N-methylnicotinic acid, urea, and sucrose) that was predictive of Mediterranean diet adherence (KIDMED) and ultra-processed food consumption and also had higher capacity in discriminating children’s diet quality than that of established sociodemographic determinants. Further, we showed that the identified metabolite panel also reflected the associations of these diet quality indicators with C-peptide, a stable and accurate marker of insulin resistance and future risk of metabolic disease. This methodology enables objective assessment of dietary patterns in European child populations, complementary to traditional questionary methods, and can be used in future studies to evaluate diet quality. Moreover, this knowledge can provide mechanistic evidence of common biological pathways that characterize healthy and unhealthy dietary patterns, and diet-related molecular alterations that could associate to metabolic disease.
 
 ## Introduction
 
@@ -79,7 +79,7 @@ We conducted a multicountry study in European children within the Human Early-Li
 
 ## Methods
 
-## Study population
+### Study population
 
 This study is embedded within the HELIX project (Maitre et al., 2018), a collaborative project across six established and ongoing longitudinal population-based birth cohort studies in Europe: Born in Bradford (BiB, UK) (Wright et al., 2013), Étude des Déterminants pré et postnatals du développement et de la santé de l’Enfant (EDEN, France) (Heude et al., 2016), Kaunas Cohort (KANC, Lithuania) (Grazuleviciene et al., 2009), INfancia y Medio Ambiente (INMA, Spain) (Guxens et al., 2012), Norwegian Mother, Father and Child Cohort Study (MoBa, Norway) (Magnus et al., 2016), and RHEA (RHEA, Greece) (Chatzi et al., 2017a). Participating cohorts covered singleton deliveries from 2003 to 2008. As part of HELIX, a subcohort of 1301 children (approximately 200 children in each cohort) were followed in 2014–2015 for a clinical examination, a computer-assisted interview with the parents, and the collection of biological samples. Data collection was standardized across cohorts and performed by trained staff. A full description of the HELIX follow-up methods and study population are provided by Maitre et al., 2018. Prior to the start of HELIX, all six cohorts on which HELIX is based had undergone the required evaluation by national ethics committees and had obtained all the required permissions for their cohort recruitment and follow-up visits. Each cohort also confirmed that relevant informed consent and approval were in place for secondary use of data from preexisting data. The work in HELIX was covered by new ethics approvals from the local ethics committees at each site, and at enrolment in the HELIX subcohort, participants were asked to sign an informed consent form for the specific HELIX work including clinical examination and biospecimen collection and analysis. Additionally, the current study was approved by the University of Southern California Institutional Review Board.
 
@@ -87,7 +87,7 @@ Our study population consisted of 1147 children with available information on di
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/71332/elife-71332-fig1-v1.jpg)
 
-## Dietary assessment
+### Dietary assessment
 
 Information about the children’s habitual diet was collected via a semi quantitative food-frequency questionnaire (FFQ) covering the child’s habitual diet, which was filled in by the parent attending the examination appointment. The FFQ, covering the past year, was developed by the HELIX research group, translated and applied to all cohorts (Maitre et al., 2018). It included 43 questions of intake of food items, which were aggregated in 16 main food groups: meat and meat products, fish and seafood, sweets, beverages, potatoes, vegetables, dairy products, fruits, bread and cereal, sweet bakery products, added fats, eggs, nuts, salty snacks, pulses, and dressings. It also included 15 specific questions to examining the degree of adherence to Mediterranean diet. Diet quality was assessed using two different approaches, (1) by assessing the degree of adherence to a Mediterranean diet based on the KIDMED index (Mediterranean Diet Quality Index for children and adolescents) (Serra-Majem et al., 2004) and (2) by assessing the proportion of UPF in the overall diet (Monteiro et al., 2019).
 
@@ -95,23 +95,23 @@ For the KIDMED index (Serra-Majem et al., 2004), items positively associated wit
 
 For UPF intake, we identified foods and drinks as ‘ultra-processed’ by using the NOVA classification, a food classification system based on the nature, extent, and purpose of industrial food processing (Monteiro et al., 2019) We identified the following ‘ultra-processed’ foods: cookies, pastries, sugar-sweetened, low-sugar and artificially sweetened beverages, cold meat cuts; ham, dairy desserts, sugar-sweetened and other breakfast cereals, crispbread and rusks; chocolate, sweets, margarine, dressings, and salty snacks. For some food items, our FFQ did not provide enough information on food processing to determine if a specific item belongs to one processing category or another. We discussed the classification of each food item with a team of nutritionists and used a conservative approach, such that the lower level of processing was chosen – for instance, we made the assumption that fries are homemade from fresh potatoes, and therefore, they were not classified as UPF. For each child, we calculated the daily proportion of all UPF in the total diet as the ratio between the sum of daily servings of UPF to the total daily sum of all food and drink servings. More details on the categorization of foods according to the NOVA classification are presented in Supplementary file 1b.
 
-## Urine metabolite profiling
+### Urine metabolite profiling
 
 Two urine samples, representing last night-time and first morning voids, were collected on the evening and morning before the clinical examination, kept in a fridge and transported in a temperature-controlled environment, and aliquoted and frozen within 3 hr of arrival at the clinics. They were subsequently pooled to generate a more representative sample of the last 24 hr for metabolomic analysis (Lau et al., 2018).
 
 Urinary metabolic profiles were acquired using 1H NMR spectroscopy according to Lau et al., 2018. In brief one-dimensional 600 MHz 1H NMR spectra of urine samples from each cohort were acquired on the same Bruker Avance III spectrometer operating at 14.1 Tesla within a period of 1 month. The spectrometer was equipped with a Bruker SampleJet system, and a 5-mm broadband inverse configuration probe maintained at 300 K. Prior to analysis, cohort samples were randomized. Deuterated 3-(trimethylsilyl)-[2,2,3,3-d4]-propionic acid sodium salt was used as internal reference. Aliquots of the study pooled quality control (QC) sample were used to monitor analytical performance throughout the run and were analysed at an interval of every 23 samples (i.e., 4 QC samples per well plate). The 1H NMR spectra were acquired using a standard one-dimensional solvent suppression pulse sequence. Forty-four metabolites were identified and quantified as described in Lau et al., 2018. The urinary NMR showed excellent analytical performance, the mean coefficient of variation across the 44 NMR detected urinary metabolites was 11%. For the statistical analysis we have used creatinine-normalized metabolite concentrations (μmol/mmol of creatinine).
 
-## Plasma C-peptide
+### Plasma C-peptide
 
 Blood was collected at the end of the clinical examination during the HELIX follow-up visit. The median postprandial interval (time between last meal and blood collection) was 3.3 hr (interquartile range [IQR: 2.8–4.0]).
 
 For each cohort, concentration of C-peptide was assessed in child plasma at the CRG/UPF Proteomics Unit (Barcelona, Spain) using the xMAP and Luminex System multiplex platform according to the manufacturer’s protocol. Blood samples were randomized and blocked by cohort prior to measurement to ensure a representation of each cohort in each plate (batch). For protein quantification, an 8-point calibration curve per plate was performed with protein standards provided in the Luminex kit and following the procedures described in the standard procedures described by the vendor. Commercial heat inactivated, sterile-filtered plasma from human male AB plasma (Sigma Cat # H3667) was used as constant controls to control for intra- and interplate variability. Four control samples were added per plate. Raw intensities obtained with the xMAP and Luminex system for each sample were converted to pg/ml using the calculated standard curves of each plate and accounting for the dilutions that were made prior measurement. The coefficient of variation for C-peptide was 16%. The LOD was determined and the lower and upper quantification limits (LOQ1 and LOQ2, respectively) were obtained from the calibration curves. C-peptide concentrations were log2-transformed to achieve normal distribution. Plate batch effect was corrected by subtracting for each individual and each protein the difference between the overall protein average minus the plate-specific protein average. Finally, values below LOQ1 and above LOQ2 were imputed using a truncated normal distribution using the truncdist R package.
 
-## Covariates
+### Covariates
 
 Adjustment factors were selected a priori based on literature (Aranceta et al., 2003; Scaglioni et al., 2018; Patrick and Nicklas, 2005) and included: maternal age (in years), maternal education level (low, middle, high), maternal prepregnancy body mass index (BMI, in kg/m2), family affluence score (cohort-specific definition of low, middle, high), child sex, child age (in years), child BMI (in kg/m2), child sedentary behavior (min/day of time spent watching TV, playing computer games or other sedentary games), child ethnicity (White European, Asian, other), and postprandial interval (in hours). We also included a cohort indicator as a fixed effect in the models, as this, in the context of an observational study, is expected to control for cohort effects (Basagaña et al., 2018). We imputed missing values for covariates (ranging from 0% to 4%) using the method of chained equations with the R package mice. Details about the imputation process in HELIX, diagnostics, and comparison between imputed and complete-case values have been reported in detail elsewhere (Agier et al., 2019).
 
-## Statistical analysis
+### Statistical analysis
 
 As a first step in our analysis, we conducted a metabolome-wide association study to assess the associations of urinary metabolites with diet quality. Creatinine-normalized metabolite concentrations (μmol/mmol of creatinine) were log10 transformed prior to statistical analyses to improve model fit. We fitted separate multivariable regression models for each metabolite with the KIDMED score or UPF intake (expressed as per 5% change of total daily food intake). To account for multiple hypothesis testing, we applied the Benjamini–Hochberg false discovery rate (FDR) correction; an FDR-corrected p value <0.05 denoted statistical significance. For metabolites identified to be associated with the diet quality indicators, we assessed between-cohort heterogeneity with the I2 statistic and χ2 test from Cochran’s Q.
 
@@ -125,9 +125,182 @@ Analyses were conducted using STATA version 14.2 (StataCorp LLC, TX) and R softw
 
 ## Results
 
-## Study population
+### Study population
 
 Among participating children (n = 1147), 626 (54.6%) were boys and 1028 (89.6%) were white (Table 1). The mean (SD) age at assessment was 7.9 (1.6) years. Median (IQR) C-peptide concentration was 1.26 (0.03, 1.95) ng/ml.
+
+**Table 1.**
+ Characteristics of the study population.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort of inclusion, n (%)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BiB, UK</td>
+      <td>189 (16.5)</td>
+    </tr>
+    <tr>
+      <td>EDEN, France</td>
+      <td>149 (13)</td>
+    </tr>
+    <tr>
+      <td>INMA, Spain</td>
+      <td>202 (17.6)</td>
+    </tr>
+    <tr>
+      <td>KANC, Lithuania</td>
+      <td>194 (16.9)</td>
+    </tr>
+    <tr>
+      <td>MoBa, Norway</td>
+      <td>221 (19.3)</td>
+    </tr>
+    <tr>
+      <td>RHEA, Greece</td>
+      <td>192 (16.7)</td>
+    </tr>
+    <tr>
+      <td>Maternal characteristics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Maternal age, mean (SD), years</td>
+      <td>30.7 (4.9)</td>
+    </tr>
+    <tr>
+      <td>Missing, n (%)</td>
+      <td>13 (1.1)</td>
+    </tr>
+    <tr>
+      <td>Prepregnancy BMI, mean (SD), kg/m2</td>
+      <td>25 (5)</td>
+    </tr>
+    <tr>
+      <td>Missing, n (%)</td>
+      <td>21 (1.8)</td>
+    </tr>
+    <tr>
+      <td>Maternal educational level, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>157 (13.7)</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>391 (34.1)</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>562 (49)</td>
+    </tr>
+    <tr>
+      <td>Missing, n (%)</td>
+      <td>37 (3.2)</td>
+    </tr>
+    <tr>
+      <td>Child characteristics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age at assessment, mean (SD), years</td>
+      <td>7.9 (1.6)</td>
+    </tr>
+    <tr>
+      <td>Sex, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>626 (54.6)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>521 (45.4)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White European</td>
+      <td>1,028 (89.6)</td>
+    </tr>
+    <tr>
+      <td>Asian</td>
+      <td>92 (8)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>27 (2.4)</td>
+    </tr>
+    <tr>
+      <td>Family affluence score, n (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>126 (11)</td>
+    </tr>
+    <tr>
+      <td>Medium</td>
+      <td>448 (39.1)</td>
+    </tr>
+    <tr>
+      <td>High</td>
+      <td>569 (49.6)</td>
+    </tr>
+    <tr>
+      <td>Missing, n (%)</td>
+      <td>4 (0.4)</td>
+    </tr>
+    <tr>
+      <td>BMI, mean (SD), kg/m2</td>
+      <td>16.9 (2.6)</td>
+    </tr>
+    <tr>
+      <td>Normal weight, n (%)*</td>
+      <td>906 (79)</td>
+    </tr>
+    <tr>
+      <td>Overweight/obese, n (%)*</td>
+      <td>237 (20.7)</td>
+    </tr>
+    <tr>
+      <td>Missing, n (%)</td>
+      <td>4 (0.4)</td>
+    </tr>
+    <tr>
+      <td>KIDMED score, mean (SD)</td>
+      <td>2.8 (1.7)</td>
+    </tr>
+    <tr>
+      <td>Low (&lt;1), n (%)</td>
+      <td>104 (9.1)</td>
+    </tr>
+    <tr>
+      <td>Medium (1–4), n (%)</td>
+      <td>848 (73.9)</td>
+    </tr>
+    <tr>
+      <td>High (&gt;4), n (%)</td>
+      <td>195 (17)</td>
+    </tr>
+    <tr>
+      <td>Ultra-processed food intake, mean (SD), % of daily food intake</td>
+      <td>24.2 (8.7)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Categories of normal weight and overweight/obese were derived using the International Obesity Taskforce criteria (Cole and Lobstein, 2012).BiB, Born in Bradford cohort; EDEN, the Étude des Déterminants pré et postnatals du développement et de la santé de l’Enfant study; INMA, INfancia y Medio Ambiente cohort; KANC, Kaunas Cohort; KIDMED, Mediterranean Diet Quality Index for children and adolescents; MoBa, Norwegian Mother, Father and Child Cohort Study; RHEA, Rhea Mother Child Cohort study._
 
 Seventeen percent of children (n = 195) had a high KIDMED score (>4), indicative of high adherence to the Mediterranean diet. Mean (SD) UPF intake in the overall study population was 24.2 (8.7)% of total daily food intake. KIDMED and UPF intake were negatively correlated (Spearman r = −0.44); children with high and low (<1) KIDMED score had a mean (SD) UPF intake of 18.8 (6.6)% and 33.4 (9.9)%, respectively. The two diet quality scores were associated with most recorded food intakes in opposite directions (Supplementary file 1c, d). Daily fruit and vegetable consumption, weekly fish consumption and not skipping breakfast were the major dietary habits differentiating children with low and high KIDMED score (Supplementary file 1c). Intakes of pastries and bakery products, dairy desserts, margarine, and dressings were the major determinants of UPF intake (Supplementary file 1d). Children with the highest KIDMED scores were mostly from Norway and Spain (Figure 2A), while those with the highest UPF intake were mostly from Lithuania and the UK (Figure 2B).
 
@@ -135,7 +308,7 @@ Seventeen percent of children (n = 195) had a high KIDMED score (>4), indicative
 
 **Figure 2.:** Panel (A) illustrates the levels of adherence to the Mediterranean diet which were defined as follows: low, KIDMED score, <1; moderate, KIDMED score, 1–4; and high, >4. Panel (B) illustrates the levels of ultra-processed food consumption (expressed as % of total daily food intake) which are based on quartile (Q) cutoffs according to the intake distribution of the overall HELIX study population. BiB, Born in Bradford cohort; EDEN, the Étude des Déterminants pré et postnatals du développement et de la santé de l’Enfant study; INMA, INfancia y Medio Ambiente cohort; KANC, Kaunas Cohort; KIDMED, Mediterranean Diet Quality Index for children and adolescents; MoBa, Norwegian Mother, Father and Child Cohort Study; RHEA, Rhea Mother Child Cohort study.
 
-## Diet quality and urinary metabolome
+### Diet quality and urinary metabolome
 
 Figure 3 and Supplementary file 1e, f show the associations of diet quality indicators with urinary metabolite levels in childhood. KIDMED and UPF intake exhibited an opposite pattern of association for most of the metabolites (30 out of 43). After controlling for FDR (FDR-corrected p value <0.05), we found that a panel of four metabolites related to both diet quality indicators. Specifically, a higher KIDMED score was associated with higher levels of hippurate, N-methylnicotinic acid, and urea and with lower levels of sucrose; UPF intake exhibited opposite associations with these four metabolites. A higher KIDMED score was also associated with higher acetate and pantothenic acid concentrations, while tyrosine and valine concentrations were inversely associated with UPF intake. There was no evidence of significant between-cohort heterogeneity in the associations between the diet quality indicators and these metabolites ( <30%; p for heterogeneity >0.2). ROC curve analyses showed that the combination of four metabolites associated with both diet quality indicators performed better than individual metabolites in discriminating children with high and low KIDMED scores and UPF intake (Figure 4). The discriminative ability of this metabolite panel was not improved with the addition of urinary metabolites specifically linked to each diet quality indicator and was equal or even greater to that of established sociodemographic factors previously linked to diet quality in childhood. The regression formulas (scores) for predicting children’s diet quality indicators based on the urinary metabolites are given in Supplementary file 1g.
 
@@ -147,7 +320,7 @@ Figure 3 and Supplementary file 1e, f show the associations of diet quality indi
 
 **Figure 4.:** Panel (A) illustrates the ability of urinary metabolites of interest in discriminating high adherence to the Mediterranean diet (KIDMED >4) from low adherence (KIDMED <1). Panel (B) illustrates the ability of urinary metabolites of interest in discriminating high ultra-processed food consumption (UPF ≥29% of total intake) from low consumption (UPF <18% of total daily food intake). ROC curves are based on models across the full study sample, and discriminative power is evaluated based on tenfold cross-validation. The mean area under the receiver operating characteristic curve (AUC) value (SD) across the ten cross-validations of each model is presented in the box. The common panel of four metabolites includes the metabolites associated with both diet quality indicators (hippurate, sucrose, urea, and N-methylnicotinid acid). The panel of six metabolites includes the metabolites associated with each diet quality indicator (common panel of four plus acetate and pantothenic acid for KIDMED, and plus valine and tyrosine for UPF). The panel of sociodemographic factors includes maternal education level, maternal prepregnancy BMI, family affluence score, child sedentary behavior, ethnicity, age, and sex.
 
-## Diet quality and C-peptide levels
+### Diet quality and C-peptide levels
 
 Table 2 presents the associations of diet quality indicators with C-peptide concentration in childhood. We found that a higher KIDMED score was associated with lower C-peptide. Specifically, compared to a low KIDMED score (<1), children with a moderate score (1–4) had a 28% lower C-peptide concentration (percent change: −27.7, 95% CI: −49.6 to 3.9) and those with a high score (>4) had a 39% lower C-peptide concentration (percent change: −39.0, 95% CI: −60.6 to −5.7) (p-trend = 0.03). An opposite association was observed for UPF intake. Compared to children at the lowest quartile of UPF intake (<18% of total daily food intake), children at the second quartile (18% to <23% of total daily food intake) had a 24% higher C-peptide concentration (percent change: 24.3, 95% CI: −6.4 to 65.2), those at the third quartile (23% to < 29% of total daily food intake) had a 39% higher concentration (percent change: 38.5, 95% CI: 3.8–84.9), and those at the fourth quartile (≥29% of total daily food intake) had a 46% higher concentration (percent change: 46.0, 95% CI: 8.1–97.3) (p-trend = 0.01). There was no evidence of interaction between the diet quality indicators (Supplementary file 1h). When we examined the associations separately in each cohort, we found no significant between-cohort heterogeneity (I2 <18%, p for heterogeneity >0.29) (Figure 5). We also found no evidence that the observed associations differed by the sex of the children or their weight status (Supplementary file 1i).
 
@@ -155,7 +328,72 @@ Table 2 presents the associations of diet quality indicators with C-peptide conc
 
 **Figure 5.:** Panel (A) illustrates the associations for adherence to the Mediterranean diet, which was assessed via the KIDMED score (expressed per unit increase). Panel (B) illustrates the associations for ultra-processed food (UPF) intake (expressed per 5% increase of total daily food intake). Beta coefficients (95% confidence intervals, CIs) by cohort were obtained using linear regression models adjusted for maternal age, maternal education level, maternal prepregnancy body mass index (BMI), family affluence status, child sex, child age, child BMI, child sedentary behavior, child ethnicity, and postprandial interval. Combined estimates were obtained by using a fixed-effects meta-analysis. Squares represent the cohort-specific effect estimates; diamond represents the combined estimate; and horizontal lines denote 95% CIs. BiB, Born in Bradford cohort; EDEN, the Étude des Déterminants pré et postnatals du développement et de la santé de l’Enfant study; INMA, INfancia y Medio Ambiente cohort; KANC, Kaunas Cohort; MoBa, Norwegian Mother, Father and Child Cohort Study; RHEA, Rhea Mother Child Cohort study.
 
-## Diet-related urinary metabolites and C-peptide levels
+**Table 2.**
+ Adjusted associations of diet quality with C-peptide levels in childhood*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>C-peptide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Percent change (95% CI)</td>
+    </tr>
+    <tr>
+      <td>KIDMED score (per unit increase)</td>
+      <td>−8.1 (−13.7, −2.2)</td>
+    </tr>
+    <tr>
+      <td>Low (&lt;1)</td>
+      <td>Ref.</td>
+    </tr>
+    <tr>
+      <td>Moderate (1–4)</td>
+      <td>−27.7 (−49.6, 3.9)</td>
+    </tr>
+    <tr>
+      <td>High (&gt;4)</td>
+      <td>−39.0 (−60.6, −5.7)</td>
+    </tr>
+    <tr>
+      <td>p-Trend</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>UPF intake (per 5% increase of total intake)</td>
+      <td>9.3 (2.8, 16.2)</td>
+    </tr>
+    <tr>
+      <td>Q1 (&lt;18% of total intake)</td>
+      <td>Ref.</td>
+    </tr>
+    <tr>
+      <td>Q2 (18% to &lt;23% of total intake)</td>
+      <td>24.3 (−6.4, 65.2)</td>
+    </tr>
+    <tr>
+      <td>Q3 (23% to &lt;29% of total intake)</td>
+      <td>38.5 (3.8, 84.9)</td>
+    </tr>
+    <tr>
+      <td>Q4 (≥29% of total intake)</td>
+      <td>46.0 (8.1, 97.3)</td>
+    </tr>
+    <tr>
+      <td>p-Trend</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Effect estimates represent percent changes in log-2 transformed C-peptide levels and their 95% CIs derived from linear regression models adjusted for maternal age, maternal education level, maternal prepregnancy BMI, family affluence status, child sex, child age, child BMI, child sedentary behavior, child ethnicity, postprandial interval, and a cohort indicator.KIDMED, Mediterranean Diet Quality Index for children and adolescents; UPF, ultra-processed food._
+
+### Diet-related urinary metabolites and C-peptide levels
 
 When we examined the associations with the metabolite scores for each diet quality indicator, we found that the scores for KIDMED were associated with lower C-peptide, while opposite associations were observed with the metabolite scores for UPF (Supplementary file 1j). In the pairwise associations between the individual urinary metabolites linked to KIDMED or UPF intake and C-peptide, we found that higher levels of sucrose were associated with higher C-peptide levels.
 
@@ -175,7 +413,7 @@ In addition, adherence to the Mediterranean diet was also positively associated 
 
 Moreover, we found that UPF intake was negatively associated with two urinary amino acids, valine and tyrosine. Tyrosine is regarded as a conditionally essential amino acid in adults and essential in children. Foods high in dietary tyrosine include dairy, meat, eggs, beans, nuts, grains. Tyrosine is a precursor for neurotransmitters and hormones, increases dopamine availability which in turn could enhance cognitive performance (Kühn et al., 2019). Valine is an essential branch chain amino acid (BCAA) critical to energy homeostasis, protein and muscle metabolism (Brosnan and Brosnan, 2006; Nie et al., 2018). In many studies, it has been observed that elevated BCAAs are associated with insulin resistance and diabetes (Lynch and Adams, 2014). Also, in our previous HELIX study, Lau et al., 2018 we found that urinary valine was associated with higher children’s BMI. However, it remains to be eludicated whether these associations are causal (e.g., via mTOR activation) or consequential (e.g., due to reduced mitochondrial oxidation) in metabolic disease, (Lynch and Adams, 2014) and whether UPF intake plays a role in the etiology of the association of BCAAs with metabolic health.
 
-## Strengths and limitations
+### Strengths and limitations
 
 The main strengths of the study are the multicentric design which included children from six countries spanning north to south in Europe, the use of standardized data collection and biomarker measurement protocols across cohorts, and the fairly large sample size with biomarker data. Identified panels of urinary metabolites had similar or higher capacity in discriminating children’s diet quality to that of established sociodemographic determinants. We chose 1H NMR spectroscopy for urinary analysis as this is an inherently high reproducible, high throughput technique suitable for the identification and quantification of urine metabolites, which are typically of high concentrations, without complex sample preparation which could potentially introduce analytical biases. Also, urinary 1H NMR spectroscopy has been applied in many other cohort studies and proposed as an objective method for dietary assessment (Garcia-Perez et al., 2017) potentially facilitating comparative studies in the future. We have used a pooled urine sample collection design which combined the last sample before bedtime with the first morning void sample of the following day, and we have shown in our preliminary work that this sample collection strategy has the advantage of reducing diurnal variations (Lau et al., 2018; Maitre et al., 2017).
 

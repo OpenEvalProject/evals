@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.21036.001 The human ubiquitin ligase HUWE1 has key roles in tumorigenesis, yet it is unkown how its activity is regulated. We present the crystal structure of a C-terminal part of HUWE1, including the catalytic domain, and reveal an asymmetric auto-inhibited dimer. We show that HUWE1 dimerizes in solution and self-associates in cells, and that both occurs through the crystallographic dimer interface. We demonstrate that HUWE1 is inhibited in cells and that it can be activated by disruption of the dimer interface. We identify a conserved segment in HUWE1 that counteracts dimer formation by associating with the dimerization region intramolecularly. Our studies reveal, intriguingly, that the tumor suppressor p14ARF binds to this segment and may thus shift the conformational equilibrium of HUWE1 toward the inactive state. We propose a model, in which the activity of HUWE1 underlies conformational control in response to physiological cues—a mechanism that may be exploited for cancer therapy. DOI: http://dx.doi.org/10.7554/eLife.21036.001
+The human ubiquitin ligase HUWE1 has key roles in tumorigenesis, yet it is unkown how its activity is regulated. We present the crystal structure of a C-terminal part of HUWE1, including the catalytic domain, and reveal an asymmetric auto-inhibited dimer. We show that HUWE1 dimerizes in solution and self-associates in cells, and that both occurs through the crystallographic dimer interface. We demonstrate that HUWE1 is inhibited in cells and that it can be activated by disruption of the dimer interface. We identify a conserved segment in HUWE1 that counteracts dimer formation by associating with the dimerization region intramolecularly. Our studies reveal, intriguingly, that the tumor suppressor p14ARF binds to this segment and may thus shift the conformational equilibrium of HUWE1 toward the inactive state. We propose a model, in which the activity of HUWE1 underlies conformational control in response to physiological cues—a mechanism that may be exploited for cancer therapy.
 
 ## Introduction
 
@@ -37,73 +37,208 @@ Here, we report the surprising discovery that the activity of HUWE1 underlies co
 
 ## Results
 
-## The crystal structure of a C-terminal region of HUWE1 reveals an asymmetric dimer
+### The crystal structure of a C-terminal region of HUWE1 reveals an asymmetric dimer
 
-To map structurally ordered regions of HUWE1 for crystallographic studies, we performed limited proteolysis of an extended C-terminal HUWE1 fragment (residues 3759 to 4374) (data not shown). Along with secondary structure predictions, these analyses led to the identification of a stable HUWE1 construct (residues 3951–4374) comprising the catalytic HECT domain and a previously uncharacterized 42-residue extension that readily crystallized. We determined the crystal structure of this construct at 2.7 Å resolution by molecular replacement, using a structure of the HUWE1 HECT domain (PDB ID: 3H1D [Pandya et al., 2010]) as a search model. The data collection and refinement statistics are summarized in Table 1; a comprehensive B-factor analysis is provided in Figure 1—figure supplement 1.10.7554/eLife.21036.002Table 1.X-ray crystallographic data collection and refinement statistics for the structure of HUWE1 (3951–4374). Values in parentheses correspond to the highest resolution shell. For a detailed B-factor analysis, see Figure 1—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.21036.002Data collection Wavelength (Å)0.9677Space groupP 63Cell dimensionsa,b,c (Å)177.46 177.46 106.26α, β, γ (°)90.00 90.00 120.00Resolution (Å)46.15–2.70 Rmerge0.058 (0.349) I/σ(I)16.2 (2.6) CC1/20.998 (0.828) Completeness (%)99.4 (98.5) Redundancy4.2 (2.9) Wilson B factor51.1Refinement Resolution46.15–2.70 Reflections used52025 Rfree reflections2549 Rwork/Rfree0.197/0.227 No. of non-hydrogen atoms7015 Protein6983 Ligands32Average B factors70.84Protein70.97Solvent44.19RMSD from idealityBonds (Å)0.005Angles (°)0.845Ramachandran statisticsFavored (%)97.97% Disallowed (%)0.00% MolProbity clash score1.89
+To map structurally ordered regions of HUWE1 for crystallographic studies, we performed limited proteolysis of an extended C-terminal HUWE1 fragment (residues 3759 to 4374) (data not shown). Along with secondary structure predictions, these analyses led to the identification of a stable HUWE1 construct (residues 3951–4374) comprising the catalytic HECT domain and a previously uncharacterized 42-residue extension that readily crystallized. We determined the crystal structure of this construct at 2.7 Å resolution by molecular replacement, using a structure of the HUWE1 HECT domain (PDB ID: 3H1D [Pandya et al., 2010]) as a search model. The data collection and refinement statistics are summarized in Table 1; a comprehensive B-factor analysis is provided in Figure 1—figure supplement 1.
 
-The structure has two molecules of HUWE1 in the asymmetric unit. The HECT domain adopts an overall similar structure in both molecules (backbone-RMSD ~0.5 Å), in which the HECT C-lobe occupies a centric position along the N-lobe (
+**Table 1.**
+ X-ray crystallographic data collection and refinement statistics for the structure of HUWE1 (3951–4374). Values in parentheses correspond to the highest resolution shell. For a detailed B-factor analysis, see Figure 1—figure supplement 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9677</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 63</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a,b,c (Å)</td>
+      <td>177.46 177.46 106.26</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.00 90.00 120.00</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>46.15–2.70</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.058 (0.349)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>16.2 (2.6)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.998 (0.828)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.4 (98.5)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.2 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor</td>
+      <td>51.1</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td>46.15–2.70</td>
+    </tr>
+    <tr>
+      <td>Reflections used</td>
+      <td>52025</td>
+    </tr>
+    <tr>
+      <td>Rfree reflections</td>
+      <td>2549</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.197/0.227</td>
+    </tr>
+    <tr>
+      <td>No. of non-hydrogen atoms</td>
+      <td>7015</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>6983</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Average B factors</td>
+      <td>70.84</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>70.97</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>44.19</td>
+    </tr>
+    <tr>
+      <td>RMSD from ideality</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>0.845</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statistics</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.97%</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>MolProbity clash score</td>
+      <td>1.89</td>
+    </tr>
+  </tbody>
+</table>
+
+The structure has two molecules of HUWE1 in the asymmetric unit. The HECT domain adopts an overall similar structure in both molecules (backbone-RMSD ~0.5 Å), in which the HECT C-lobe occupies a centric position along the N-lobe (Figure 1A,B). Such a conformation has been referred to as ‘T’-shape (Verdecia et al., 2003; Lorenz et al., 2013) and is also seen in structures of the isolated HECT domain of HUWE1 (PDB IDs: 3H1D [Pandya et al., 2010] and 3G1N).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig1-v1.jpg)
 
-**Figure 1.:** (A) Structural organization of HUWE1 (3951–4374), shown for molecule A. The bi-lobal catalytic HECT domain is colored yellow, the previously uncharacterized region orange. (B) Superposition of the HECT domains of molecules A and B (grey). The N-terminal regions are highlighted. (C) Asymmetric dimer formed of molecules A and B in the crystal. The C-terminal residues (4370–4374, ‘C-tail’) of molecule B are highlighted in magenta. Two loop regions in molecule B, distant from the dimer interface, are disordered (dotted lines) (top). Cartoon model of the asymmetric dimer (bottom). The C-lobe and the C-tail (magenta) of molecule B are in a locked conformation (see Figure 2C,D). In all structural figures, the protein backbones are rendered as cartoons and the side chains of relevant residues as ball-and-stick models.DOI: http://dx.doi.org/10.7554/eLife.21036.003
+**Figure 1.:** (A) Structural organization of HUWE1 (3951–4374), shown for molecule A. The bi-lobal catalytic HECT domain is colored yellow, the previously uncharacterized region orange. (B) Superposition of the HECT domains of molecules A and B (grey). The N-terminal regions are highlighted. (C) Asymmetric dimer formed of molecules A and B in the crystal. The C-terminal residues (4370–4374, ‘C-tail’) of molecule B are highlighted in magenta. Two loop regions in molecule B, distant from the dimer interface, are disordered (dotted lines) (top). Cartoon model of the asymmetric dimer (bottom). The C-lobe and the C-tail (magenta) of molecule B are in a locked conformation (see Figure 2C,D). In all structural figures, the protein backbones are rendered as cartoons and the side chains of relevant residues as ball-and-stick models.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Isotropic Cα B-factors are plotted onto the crystal structure of the HUWE1 dimer. The table lists the mean isotropic B-factors per molecule and region, as calculated by Phenix (Adams et al., 2010). The dimerization regions of molecules A and B show B-factors that are below average overall. For molecule B that has higher B-factors than molecule A, the dimerization region has B-factors below average; for molecule A, the opposite is true. Importantly, however, both dimerization regions are well defined in the electron density. Residues at the N-terminus of the pointer helices that belong to the expression tag, including a disconnected stretch of residues, whose chain identity could not be assigned (see Figure 3—figure supplement 2) are characterized by high B-factors. While the B-factors for molecule B are higher than for molecule A, they fall into an acceptable range of the Wilson B factor for this dataset, as validated by Phenix (Adams et al., 2010). (B) Lattice environment of the asymmetric HUWE1 dimer. Surrounding symmetry mates are shown in ribbon representation (grey). The difference in the B-factors for the two molecules may originate from the different environments of two molecules in the context of the crystal lattice. A significant portion of molecule B – the one that is characterized by relatively high B-factors – faces a large water channel. In contrast, molecule A is more tightly embedded into lattice contacts and, consistently, displays lower B-factors.DOI: http://dx.doi.org/10.7554/eLife.21036.004
+**Figure 1—figure supplement 1.:** (A) Isotropic Cα B-factors are plotted onto the crystal structure of the HUWE1 dimer. The table lists the mean isotropic B-factors per molecule and region, as calculated by Phenix (Adams et al., 2010). The dimerization regions of molecules A and B show B-factors that are below average overall. For molecule B that has higher B-factors than molecule A, the dimerization region has B-factors below average; for molecule A, the opposite is true. Importantly, however, both dimerization regions are well defined in the electron density. Residues at the N-terminus of the pointer helices that belong to the expression tag, including a disconnected stretch of residues, whose chain identity could not be assigned (see Figure 3—figure supplement 2) are characterized by high B-factors. While the B-factors for molecule B are higher than for molecule A, they fall into an acceptable range of the Wilson B factor for this dataset, as validated by Phenix (Adams et al., 2010). (B) Lattice environment of the asymmetric HUWE1 dimer. Surrounding symmetry mates are shown in ribbon representation (grey). The difference in the B-factors for the two molecules may originate from the different environments of two molecules in the context of the crystal lattice. A significant portion of molecule B – the one that is characterized by relatively high B-factors – faces a large water channel. In contrast, molecule A is more tightly embedded into lattice contacts and, consistently, displays lower B-factors.
 
 However, the conformation of the N-terminal extension differs between the two molecules in the asymmetric unit (Figure 1B). In molecule A, the C-terminal part of the extension (residues 3979–3990) that directly flanks the HECT domain, folds into an α-helix that we will refer to as the ‘thumb helix’. In contrast, the same region adopts a turn followed by short 310-helical segments in molecule B. The N-terminal part of the extension consists of a long amphipathic α-helix spanning 21 (3951–3971) and 22 (3951–3972) residues in molecules A and B, respectively, that we will term the ‘pointer helix’. Interestingly, the pointer helix of molecule A points away from the HECT domain and contacts molecule B, where its hydrophobic helix face is grasped tightly by the thumb, the pointer helix, and part of the C-lobe of molecule B (Figure 1C).
 
-The resulting asymmetric dimer interface buries a solvent-accessible surface area of ~1350 Å
+The resulting asymmetric dimer interface buries a solvent-accessible surface area of ~1350 Å2 of molecule A and ~1340 Å2 of molecule B. Interface scoring programs, such as the 'Protein interfaces, surfaces and assemblies' service PISA at the European Bioinformatics Institute (http://www.ebi.ac.uk/pdbe/prot_int/pistart.html) (Krissinel and Henrick, 2007) predict a significant solvation free-energy gain upon dimer formation of −26 kcal/mol, indicating that the underlying contacts are extraordinarily hydrophobic. As illustrated by an open-book view of the dimer interface and a contact schematic (Figure 2A,B), the extensive hydrophobic contact network stretches all along the thumb and pointer helices of both molecules and includes Phe 3955, Phe 3958, Ala 3959, His 3962, Val 3965, Leu 3966, Ile 3969, Val 3984, Leu 3985, Tyr 3988, and Val 3991. Additional contacts are subunit-specific, due to the asymmetric nature of the dimer. For instance, the thumb region of molecule B, which is re-organized structurally compared to molecule A, is tilted outwards with respect to the HECT domain, thus allowing it to cradle the C-terminal part of the pointer helix of molecule A (Figure 1C). This configuration brings Phe 3982 of molecule B into a central position at the interface (Figure 2A,B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig2-v1.jpg)
 
-**Figure 2.:** (A) Open-book-view of the dimerization sites on molecules A and B of HUWE1 (3951–4374). The side chains of interfacing residues with ≥ 40% buried surface area (BSA) are displayed. (B) Schematic representation of the contact network between molecules A and B. The most important hydrophobic interactions are illustrated. Ion pairs and hydrogen bonds are sparse. The mutation sites, His 3962, Ile 3969, and Phe 3982, are marked bold (see Figure 4C–E). Residues that do not make contacts at the dimer interface are colored grey. For the C-lobe of molecule B, only those residues that form significant contacts and that have an interfacing BSA ≥ 40% are shown. (C) The C-tail of molecule B is buried at the dimer interface and well resolved in the electron density. An omit map countered at 1 σ is shown around residues 4370–4374. Phe 4371 corresponds to the conserved ‘−4 Phe’. For the C-tail of molecule A, see Figure 2—figure supplement 2. (D) Detailed view of the hydrophobic environment of −4 Phe (magenta) of molecule B at the dimer interface. The asterisk marks ‘F3947’ as not being part of HUWE1, but of an N-terminal expression tag (see Figure 3—figure supplement 2).DOI: http://dx.doi.org/10.7554/eLife.21036.005
+**Figure 2.:** (A) Open-book-view of the dimerization sites on molecules A and B of HUWE1 (3951–4374). The side chains of interfacing residues with ≥ 40% buried surface area (BSA) are displayed. (B) Schematic representation of the contact network between molecules A and B. The most important hydrophobic interactions are illustrated. Ion pairs and hydrogen bonds are sparse. The mutation sites, His 3962, Ile 3969, and Phe 3982, are marked bold (see Figure 4C–E). Residues that do not make contacts at the dimer interface are colored grey. For the C-lobe of molecule B, only those residues that form significant contacts and that have an interfacing BSA ≥ 40% are shown. (C) The C-tail of molecule B is buried at the dimer interface and well resolved in the electron density. An omit map countered at 1 σ is shown around residues 4370–4374. Phe 4371 corresponds to the conserved ‘−4 Phe’. For the C-tail of molecule A, see Figure 2—figure supplement 2. (D) Detailed view of the hydrophobic environment of −4 Phe (magenta) of molecule B at the dimer interface. The asterisk marks ‘F3947’ as not being part of HUWE1, but of an N-terminal expression tag (see Figure 3—figure supplement 2).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) HUWE1 dimer (left) and NEDD4L-ubiquitin complex (as extracted from PDB ID: 3JVZ [Kamadurai et al., 2009]) (right). The C-lobes of molecule B of HUWE1 and of NEDD4L are shown in the same orientation, illustrating that the interactions of the C-lobe with the pointer helix of molecule A in HUWE1 and with ubiquitin, as seen in the NEDD4-family, are incompatible with each other. (B) Detailed view of the interface between the C-lobe of molecule B and the pointer helix of molecule A of HUWE1, including Leu 4335 and Leu 4362. The homologous residues in NEDD4L (Leu 916 and Leu 943) are important for the binding of ubiquitin (Maspero et al., 2013; Kamadurai et al., 2009, 2013). A ubiquitin molecule, modeled in the same orientation, in which it interacts with the C-lobe of NEDD4-subfamily enzymes clashes with the pointer helix of molecule A.DOI: http://dx.doi.org/10.7554/eLife.21036.006
+**Figure 2—figure supplement 1.:** (A) HUWE1 dimer (left) and NEDD4L-ubiquitin complex (as extracted from PDB ID: 3JVZ [Kamadurai et al., 2009]) (right). The C-lobes of molecule B of HUWE1 and of NEDD4L are shown in the same orientation, illustrating that the interactions of the C-lobe with the pointer helix of molecule A in HUWE1 and with ubiquitin, as seen in the NEDD4-family, are incompatible with each other. (B) Detailed view of the interface between the C-lobe of molecule B and the pointer helix of molecule A of HUWE1, including Leu 4335 and Leu 4362. The homologous residues in NEDD4L (Leu 916 and Leu 943) are important for the binding of ubiquitin (Maspero et al., 2013; Kamadurai et al., 2009, 2013). A ubiquitin molecule, modeled in the same orientation, in which it interacts with the C-lobe of NEDD4-subfamily enzymes clashes with the pointer helix of molecule A.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** In contrast to molecule B (Figure 2C,D), the C-tail of molecule A is disordered in the crystal and could not be modeled. However, the location of the most C-terminal residue that was built, Glu 4369, indicates that the C-tail of molecule A is removed from the dimer interface.DOI: http://dx.doi.org/10.7554/eLife.21036.007
+**Figure 2—figure supplement 2.:** In contrast to molecule B (Figure 2C,D), the C-tail of molecule A is disordered in the crystal and could not be modeled. However, the location of the most C-terminal residue that was built, Glu 4369, indicates that the C-tail of molecule A is removed from the dimer interface.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** (A) Overview of all molecules that the C-lobe of molecule A contacts in the context of the crystal lattice. The symmetry operations that ought to be applied in order to obtain the respective interface (specified in fractional space relative to the structure position in the PDB file) are provided. (B–D) Details of each lattice interface that the C-lobe of molecule A is involved in. The interface area (difference in the total accessible surface areas of the isolated and interfacing structures divided by 2) and the solvation free energy gain upon formation of the interface, ΔiG, (difference in the total solvation energies of the isolated and the interfacing structures) were calculated with PISA (Krissinel and Henrick, 2007). In (B) residues that form hydrogen bonds at the interface are displayed. In (C) and (D) interfacing residues with >20% buried surface area are displayed. (B) Interface formed between the C-lobe of molecule A and the C-lobe of a neighboring molecule B. The positive ΔiG-value reflects the polar nature of this interface that is mainly made up of hydrogen bonds. These connect Ile 4320 and Lys 4270, Glu 4315 and Gln 4272, Asn 4318 and Arg 4327, and Ile 4320 and Arg 4327, of the C-lobes of molecules A and B, respectively. (C) Interface between the C-lobe of molecule A and the N-lobe of another copy of molecule A. This lattice interface is at least partially hydrophobic. Only few residues are buried on each molecule. These include Ile 4276, Gln 4279, and Trp 4280 of the C-lobe and Glu 4177, Cys 4184, and Val 4186 of the neighboring N-lobe, respectively. When considering additional contacts formed between the N-lobe of molecule A and this copy of molecule B (−x,−y + 1,z−1/2) (not shown), the ΔiG-value amounts to 2.6 kcal/mol, demonstrating that this intermolecular interface is rather polar overall. (D) Interface formed between residues in the C-lobe and linker region of molecule A and the N-lobe of a neighboring copy of molecule B. This interface is rather polar and includes a total of five hydrogen bonds that are formed between Leu 4254 and Gly 4011, Leu 4254 and Arg 4013, Ser 4304 and Arg 4013 (two hydrogen bonds), and Gly 4253 and Arg 4013 of the C-lobe and neighboring N-lobe, respectively. When considering additional contacts formed between the N-lobe of molecule A and this copy of molecule B (−y + 1,x−y +1,z) (not shown), the interaction has an even more positive ΔiG-value of 1.5 kcal/mol.DOI: http://dx.doi.org/10.7554/eLife.21036.008
+**Figure 2—figure supplement 3.:** (A) Overview of all molecules that the C-lobe of molecule A contacts in the context of the crystal lattice. The symmetry operations that ought to be applied in order to obtain the respective interface (specified in fractional space relative to the structure position in the PDB file) are provided. (B–D) Details of each lattice interface that the C-lobe of molecule A is involved in. The interface area (difference in the total accessible surface areas of the isolated and interfacing structures divided by 2) and the solvation free energy gain upon formation of the interface, ΔiG, (difference in the total solvation energies of the isolated and the interfacing structures) were calculated with PISA (Krissinel and Henrick, 2007). In (B) residues that form hydrogen bonds at the interface are displayed. In (C) and (D) interfacing residues with >20% buried surface area are displayed. (B) Interface formed between the C-lobe of molecule A and the C-lobe of a neighboring molecule B. The positive ΔiG-value reflects the polar nature of this interface that is mainly made up of hydrogen bonds. These connect Ile 4320 and Lys 4270, Glu 4315 and Gln 4272, Asn 4318 and Arg 4327, and Ile 4320 and Arg 4327, of the C-lobes of molecules A and B, respectively. (C) Interface between the C-lobe of molecule A and the N-lobe of another copy of molecule A. This lattice interface is at least partially hydrophobic. Only few residues are buried on each molecule. These include Ile 4276, Gln 4279, and Trp 4280 of the C-lobe and Glu 4177, Cys 4184, and Val 4186 of the neighboring N-lobe, respectively. When considering additional contacts formed between the N-lobe of molecule A and this copy of molecule B (−x,−y + 1,z−1/2) (not shown), the ΔiG-value amounts to 2.6 kcal/mol, demonstrating that this intermolecular interface is rather polar overall. (D) Interface formed between residues in the C-lobe and linker region of molecule A and the N-lobe of a neighboring copy of molecule B. This interface is rather polar and includes a total of five hydrogen bonds that are formed between Leu 4254 and Gly 4011, Leu 4254 and Arg 4013, Ser 4304 and Arg 4013 (two hydrogen bonds), and Gly 4253 and Arg 4013 of the C-lobe and neighboring N-lobe, respectively. When considering additional contacts formed between the N-lobe of molecule A and this copy of molecule B (−y + 1,x−y +1,z) (not shown), the interaction has an even more positive ΔiG-value of 1.5 kcal/mol.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig2-figsupp4-v1.jpg)
 
-**Figure 2—figure supplement 4.:** The N-lobe of molecule A in our structure was superposed with the N-lobes of two NEDD4-subfamily enzymes, RSP5 (PDB ID: 4LCD [Kamadurai et al.,2013] and NEDD4L (PDB ID: 3JVZ [Kamadurai et al., 2009]), respectively. The RSP5 structure has the C-lobe in a conformation that is adopted during substrate modification/isopeptide bond formation, while the NEDD4L structure represents a state that occurs during trans-thioesterification. For clarity, only the N-lobe of molecule A of HUWE1 is shown. The three C-lobes are rendered as surfaces in addition to the cartoon models. Note that in this view the C-lobe of RSP5 is located behind the C-lobe of NEDD4L and thus partially obscured.DOI: http://dx.doi.org/10.7554/eLife.21036.009
+**Figure 2—figure supplement 4.:** The N-lobe of molecule A in our structure was superposed with the N-lobes of two NEDD4-subfamily enzymes, RSP5 (PDB ID: 4LCD [Kamadurai et al.,2013] and NEDD4L (PDB ID: 3JVZ [Kamadurai et al., 2009]), respectively. The RSP5 structure has the C-lobe in a conformation that is adopted during substrate modification/isopeptide bond formation, while the NEDD4L structure represents a state that occurs during trans-thioesterification. For clarity, only the N-lobe of molecule A of HUWE1 is shown. The three C-lobes are rendered as surfaces in addition to the cartoon models. Note that in this view the C-lobe of RSP5 is located behind the C-lobe of NEDD4L and thus partially obscured.
 
 Remarkably, the C-lobe of molecule B is conformationally locked at the dimer interface, where it buttresses the N-terminal part of the pointer helix of molecule A (Figures 1C and 2A,B). C-lobe mobility, however, as enabled by a flexible linker between the N- and C-lobes of the HECT domain (Figure 1A), is required for HECT E3 activity (Verdecia et al., 2003). We thus predict that the conformation of molecule B in the crystal reflects an auto-inhibited state. This interpretation is underscored by the fact that the dimer interface buries a particular region of the C-lobe, including Leu 4335, Met 4359, and Leu 4362 (Figure 2A). The homologous region in NEDD4-type E3 enzymes has been shown to interact with ubiquitin, thereby facilitating the transfer of ubiquitin from the E2 to the E3 (Maspero et al., 2013; Kamadurai et al., 2009, 2013) (Figure 2—figure supplement 1A). If HUWE1 oriented ubiquitin in a similar manner, this complex would clash with the HUWE1 dimer (Figure 2—figure supplement 1B).
 
 Another indication that the conformation of molecule B is auto-inhibited comes from the positioning of the C-terminal region (‘C-tail’) that participates in the dimer interface (Figures 1C and 2). This region contains a phenylalanine four residues from the C-terminus (Phe 4371), known as ‘−4 Phe’, that is conserved across the HECT E3 family (Salvat et al., 2004) and has a critical role in the transfer of ubiquitin from its thioester-linked state at the E3 active site to lysine residues, presumably by anchoring the C-lobe at a specific position on the N-lobe (Kamadurai et al., 2013; Salvat et al., 2004) and/or by interacting with ubiquitin. Consistently, truncation of the C-lobe by four residues or mutation of −4 Phe was found to inhibit the auto-ubiquitination acitivities of various HECT E3 enzymes, including the HECT domain of HUWE1 (Verdecia et al., 2003; Maspero et al., 2013; Kamadurai et al., 2013; Pandya et al., 2010; Salvat et al., 2004; Mari et al., 2014). However, the position of −4 Phe has rarely been resolved in crystal structures of HECT domains (Zhang et al., 2016; Kamadurai et al., 2013), which may be due to the flexibility of the C-tail in the absence of substrates. Our crystal structure of HUWE1 has the C-tail of molecule B fully resolved (Figure 2C). −4 Phe is buried at the dimer interface, where it interacts with Phe 3955, Phe 3958, and the aliphatic side chain portion of Lys 3954 of molecule A in trans, and with Leu 4335 and Leu 4362 of the C-lobe in cis (Figure 2D). This tight engagement of −4 Phe at the dimer interface is incompatible with the C-tail reaching out to the N-lobe, as seen in an active conformation of the NEDD4-type E3 RSP5 (Kamadurai et al., 2013). Taken together, we conclude that the conformation of molecule B in our crystal structure of HUWE1 represents an auto-inhibited state.
 
-In contrast to the locked C-lobe conformation of molecule B, the C-lobe of molecule A does not contact the dimer interface (
+In contrast to the locked C-lobe conformation of molecule B, the C-lobe of molecule A does not contact the dimer interface (Figure 2A) and its C-tail could not be modeled (Figure 2—figure supplement 2). Instead, the C-lobe of molecule A forms peripheral, predominantly electrostatic lattice contacts with three neighboring molecules in the crystal (Figure 2—figure supplement 3). Neither of these interfaces or putative higher order oligomeric assemblies are relevant in solution (see below, Figures 3 and 4). In principle, it is conceivable structurally that the C-lobe of molecule A is flexible in the context of the dimer and that it occupies catalytically relevant positions, as observed in other HECT E3 enzymes, in solution (Figure 2—figure supplement 4)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig3-v1.jpg)
 
-**Figure 3.:** (A) SEC-MALS experiments with the crystallization construct, HUWE1 (3951–4374), at different concentrations. The heights of the absorbance peaks were normalized to a value of 1. The MALS-based MW profiles for each elution peak are shown, along with the calculated MWs of the monomer (53 kDa) and dimer (106 kDa), as references. The MALS-derived MWs in the order of increasing protein concentration are 54, 60, 76, 90, and 93 kDa. (B) SAXS experiment with HUWE1 (3951–4374) at 40 μM concentration. The experimental SAXS intensity, I, plotted over the momentum transfer, q, is compared to a simulated scattering curve, based on the crystal structure of the HUWE1 dimer. The corresponding fit score, χ, is 1.4. Analogous simulations of scattering curves, based on the structures of the two HUWE1 monomers seen in the crystal are shown in Figure 3—figure supplement 1. (C) AUC sedimentation equilibrium experiments with HUWE1 (3951–4374) at 10 μM concentration. The protein distribution across the cell, monitored by absorbance (λ = 280 nm), is shown for three rotation speeds (left). The data were fitted with Sedphat (Houtman et al., 2007) (red line), yielding a KD of 2.9 ± 1.5 μM. The residuals of the fit are shown (right).DOI: http://dx.doi.org/10.7554/eLife.21036.010
+**Figure 3.:** (A) SEC-MALS experiments with the crystallization construct, HUWE1 (3951–4374), at different concentrations. The heights of the absorbance peaks were normalized to a value of 1. The MALS-based MW profiles for each elution peak are shown, along with the calculated MWs of the monomer (53 kDa) and dimer (106 kDa), as references. The MALS-derived MWs in the order of increasing protein concentration are 54, 60, 76, 90, and 93 kDa. (B) SAXS experiment with HUWE1 (3951–4374) at 40 μM concentration. The experimental SAXS intensity, I, plotted over the momentum transfer, q, is compared to a simulated scattering curve, based on the crystal structure of the HUWE1 dimer. The corresponding fit score, χ, is 1.4. Analogous simulations of scattering curves, based on the structures of the two HUWE1 monomers seen in the crystal are shown in Figure 3—figure supplement 1. (C) AUC sedimentation equilibrium experiments with HUWE1 (3951–4374) at 10 μM concentration. The protein distribution across the cell, monitored by absorbance (λ = 280 nm), is shown for three rotation speeds (left). The data were fitted with Sedphat (Houtman et al., 2007) (red line), yielding a KD of 2.9 ± 1.5 μM. The residuals of the fit are shown (right).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** The experimental SAXS intensity, I, of HUWE1 (3951–4374) at ~40 μM concentration, plotted over the momentum transfer, q, is compared with simulated scattering curves, based on the crystal structures of the HUWE1 monomers, molecules A (A) and B (B). The corresponding fit scores, χ, amount to 19.9 and 17.7, respectively.DOI: http://dx.doi.org/10.7554/eLife.21036.011
+**Figure 3—figure supplement 1.:** The experimental SAXS intensity, I, of HUWE1 (3951–4374) at ~40 μM concentration, plotted over the momentum transfer, q, is compared with simulated scattering curves, based on the crystal structures of the HUWE1 monomers, molecules A (A) and B (B). The corresponding fit scores, χ, amount to 19.9 and 17.7, respectively.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Parts of the N-terminal expression tags of molecules A and B that could be built in the crystal structure are shown in green. The side chains of those residues that form inter- or intramolecular contacts with HUWE1 are shown as ball-and-stick models. Note that, due to a lack of connecting electron density, it could not be determined if the tag region 3936*−3941* belongs to molecule A or B. (B) SEC-MALS experiments with HUWE1 (3951–4374) before and after TEV protease-mediated cleavage of the expression tag (left). The samples were loaded at 75 μM concentration, and the peak heights were normalized to a value of 1. The MALS-derived MW difference between the tagged and untagged protein variants and the calculated MW difference, based on the MW of the expression tag and assuming a constant fraction of dimer, are shown. The completeness of the TEV protease-mediated cleavage reaction was confirmed by SDS PAGE (right). ~2 μg of HUWE1 were loaded after incubation with or without ~3 μg of TEV protease.DOI: http://dx.doi.org/10.7554/eLife.21036.012
+**Figure 3—figure supplement 2.:** (A) Parts of the N-terminal expression tags of molecules A and B that could be built in the crystal structure are shown in green. The side chains of those residues that form inter- or intramolecular contacts with HUWE1 are shown as ball-and-stick models. Note that, due to a lack of connecting electron density, it could not be determined if the tag region 3936*−3941* belongs to molecule A or B. (B) SEC-MALS experiments with HUWE1 (3951–4374) before and after TEV protease-mediated cleavage of the expression tag (left). The samples were loaded at 75 μM concentration, and the peak heights were normalized to a value of 1. The MALS-derived MW difference between the tagged and untagged protein variants and the calculated MW difference, based on the MW of the expression tag and assuming a constant fraction of dimer, are shown. The completeness of the TEV protease-mediated cleavage reaction was confirmed by SDS PAGE (right). ~2 μg of HUWE1 were loaded after incubation with or without ~3 μg of TEV protease.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig4-v1.jpg)
 
-**Figure 4.:** (A) SEC-MALS experiments with a truncated construct, HUWE1 (3975–4374), that lacks the pointer helix and with the HECT domain (HUWE1 [3993–4374]), at 380 and 400 μM, respectively. The absorbance peak heights were normalized to a value of 1. The MALS-derived MWs are 51 kDa and 44 kDa; the calculated MWs for the monomers are 50 and 47 kDa, respectively. (B) Comparison of the experimental SAXS intensity profile, I(q), of HUWE1 (3975–4374) at 40 μM concentration with a simulated scattering curve, based on the crystal structure of a monomer, as extracted from the crystal structure of HUWE1 (3951–4374). The fit score, χ, is 1.3. (C–E) Detailed views of the hydrophobic side chain environments (within a radius of ~4 Å) of the mutation sites Ile 3969 (purple) of molecules A and B (C), Phe 3982 (cyan) of molecule B (D), and His 3962 (red) of molecules A and B (E). For the environment of Phe 3982 of molecule A, see Figure 4—figure supplement 1. (F) SEC-MALS experiments with WT and mutated variants of HUWE1 (3951–4374) at ~350 μM concentration. The MALS-derived MWs of I3969A, F3982A, and I3969A/F3982A are 63, 64, and 53 kDa, respectively, compared to 79 kDa for the WT. The calculated MW of each protein monomer is 50 kDa. (G) Analogous SEC-MALS experiment with the tumor-associated mutated variant H3962D of HUWE1 (3951–4374). The MALS-derived MW is 62 kDa; the calculated MW of a monomer is 50 kDa. For comparison, the WT profile is displayed (same as in panel F).DOI: http://dx.doi.org/10.7554/eLife.21036.013
+**Figure 4.:** (A) SEC-MALS experiments with a truncated construct, HUWE1 (3975–4374), that lacks the pointer helix and with the HECT domain (HUWE1 [3993–4374]), at 380 and 400 μM, respectively. The absorbance peak heights were normalized to a value of 1. The MALS-derived MWs are 51 kDa and 44 kDa; the calculated MWs for the monomers are 50 and 47 kDa, respectively. (B) Comparison of the experimental SAXS intensity profile, I(q), of HUWE1 (3975–4374) at 40 μM concentration with a simulated scattering curve, based on the crystal structure of a monomer, as extracted from the crystal structure of HUWE1 (3951–4374). The fit score, χ, is 1.3. (C–E) Detailed views of the hydrophobic side chain environments (within a radius of ~4 Å) of the mutation sites Ile 3969 (purple) of molecules A and B (C), Phe 3982 (cyan) of molecule B (D), and His 3962 (red) of molecules A and B (E). For the environment of Phe 3982 of molecule A, see Figure 4—figure supplement 1. (F) SEC-MALS experiments with WT and mutated variants of HUWE1 (3951–4374) at ~350 μM concentration. The MALS-derived MWs of I3969A, F3982A, and I3969A/F3982A are 63, 64, and 53 kDa, respectively, compared to 79 kDa for the WT. The calculated MW of each protein monomer is 50 kDa. (G) Analogous SEC-MALS experiment with the tumor-associated mutated variant H3962D of HUWE1 (3951–4374). The MALS-derived MW is 62 kDa; the calculated MW of a monomer is 50 kDa. For comparison, the WT profile is displayed (same as in panel F).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** In contrast to Phe 3982 of molecule B (Figure 4D), Phe 3982 of molecule A does not participate in the dimer interface and is, instead, oriented toward the N-lobe of molecule A. The side chains of key contacting residues of Phe 3982 (within a radius ~4 Å) are shown as ball-and-stick models. Phe 3982 of each molecule is shown in cyan.DOI: http://dx.doi.org/10.7554/eLife.21036.014
+**Figure 4—figure supplement 1.:** In contrast to Phe 3982 of molecule B (Figure 4D), Phe 3982 of molecule A does not participate in the dimer interface and is, instead, oriented toward the N-lobe of molecule A. The side chains of key contacting residues of Phe 3982 (within a radius ~4 Å) are shown as ball-and-stick models. Phe 3982 of each molecule is shown in cyan.
 
 Taken together, our crystallographic studies reveal an asymmetric dimer of HUWE1 (3951–4374), in which one subunit adopts an auto-inhibited conformation.
 
-## The C-terminal region of HUWE1 dimerizes in solution
+### The C-terminal region of HUWE1 dimerizes in solution
 
 To investigate if the crystallized construct, HUWE1 (3951–4374), dimerizes in solution, we performed size exclusion chromatography-coupled multi-angle light scattering (SEC-MALS) experiments at different protein concentrations, ranging from 3 to 378 μM at the stage of injection (Figure 3A). We find that HUWE1 elutes at smaller volumes with increasing protein concentrations, indicative of an increase in its hydrodynamic radius. At the lowest concentration tested, the MALS-derived molecular weight (MW) of 54 kDa is very close to the MW of a monomer (53 kDa). With increasing protein concentration the conformational equilibrium shifts toward a dimer. At the highest concentration tested, the MALS analysis yields a MW of 93 kDa, in line with a dominant population of the dimeric state.
 
@@ -117,7 +252,7 @@ To ascertain that untagged HUWE1 lacking Phe 3947* still dimerizes, we compared 
 
 Importantly, we also demonstrate that untagged HUWE1 (3951–4374) dimerizes using analytical ultracentrifugation (Figure 3C). The corresponding dissociation constant, KD, of ~3 μM, indicates that the dimerization of this construct is relatively weak in vitro, consistent with our SEC-MALS analyses.
 
-## Key contacts in the crystallographic dimer interface mediate the dimerization of HUWE1 in vitro and its self-association in cells
+### Key contacts in the crystallographic dimer interface mediate the dimerization of HUWE1 in vitro and its self-association in cells
 
 To test if the dimerization of HUWE1 in solution occurs through the same key contacts that make up the crystallographic dimer interface, we determined the effects of truncations and site-specific mutations on dimer formation. We generated an N-terminal truncation construct comprising residues 3975 to 4374 of HUWE1, in which the pointer helix is removed. Since the pointer helix is an integral part of the dimer interface, we expected the truncated construct to be monomeric. Indeed, this construct no longer dimerizes in SEC-MALS experiments, even at high concentrations of 380 μM, and its elution volume approaches that of the monomeric HECT domain (Figure 4A). The MALS-derived MWs of 51 and 44 kDa for HUWE1 (3975–4374) and for the HECT domain are close to the calculated MWs of 50 and 47 kDa, respectively.
 
@@ -131,49 +266,108 @@ We subjected the single mutant variants I3969A and F3982A of HUWE1 (3951–4374)
 
 Notably, one of the mutation sites that we selected for our studies, Ile 3969, is among a subset of residues in the dimerization region that were found to be mutated in human tumors (cutaneous squamous cell carcinoma: I3969N and I3969V [Pickering et al., 2014]). Another cancer-associated, non-conservative amino acid substitution occurs at His 3962 (upper aerodigestive tract carcinoma: H3962D [http://cancer.sanger.ac.uk/cosmic/]). This residue adopts a central position at the hydrophobic face of the pointer helix and contributes to the dimer interface on both subunits by contacting Val 3965, Leu 3966, Tyr 3988 of molecule A and Phe 3958, Ala 3959, and the aliphatic portion of Arg 3963 of molecule B (Figure 4E). Consequently, we expected the H3962D variant of HUWE1 (3951–4374) to be impaired in dimer formation. Indeed, SEC-MALS experiments show that this variant elutes at larger volumes than the WT (Figure 4G), and the MALS-derived MW of 62 kDa confirms that the dimerization capacity of this variant is reduced significantly.
 
-We next determined whether HUWE1 oligomerizes in the cellular context. To this end, we employed co-immunoprecipitation (co-IP) experiments from HeLa cells transiently transfected with FLAG- and HA-tagged versions of an extended HUWE1 construct spanning residues 2474 to 4374, as used in previous studies (
+We next determined whether HUWE1 oligomerizes in the cellular context. To this end, we employed co-immunoprecipitation (co-IP) experiments from HeLa cells transiently transfected with FLAG- and HA-tagged versions of an extended HUWE1 construct spanning residues 2474 to 4374, as used in previous studies (Adhikary et al., 2005; Peter et al., 2014). Strikingly, we find that HUWE1 self-associates (Figure 5A). In contrast to WT HUWE1, the F3982A and I3969A variants both show a marked reduction in their abilities to associate with WT HUWE1, analogous to the disruptive effect of these mutations on HUWE1 dimerization that was observed in vitro (Figure 5A). The same results were obtained in inverse co-IP experiments (FLAG-IP; data not shown).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig5-v1.jpg)
 
-**Figure 5.:** (A) Co-IP experiments from HeLa cells upon transient transfection with HA- and FLAG-tagged HUWE1 (2474–4374) WT, I3969A, and F3982A. (B) Co-IP experiments from HeLa cells stably expressing HA- and FLAG-tagged HUWE1 (2474–4374) WT that were generated by lentiviral transduction. (C) Co-IP experiments from HeLa cells stably expressing HA- and FLAG-tagged HUWE1 (2474–4374) WT that were generated by transposon-mediated gene delivery.DOI: http://dx.doi.org/10.7554/eLife.21036.015
+**Figure 5.:** (A) Co-IP experiments from HeLa cells upon transient transfection with HA- and FLAG-tagged HUWE1 (2474–4374) WT, I3969A, and F3982A. (B) Co-IP experiments from HeLa cells stably expressing HA- and FLAG-tagged HUWE1 (2474–4374) WT that were generated by lentiviral transduction. (C) Co-IP experiments from HeLa cells stably expressing HA- and FLAG-tagged HUWE1 (2474–4374) WT that were generated by transposon-mediated gene delivery.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Expression levels of HUWE1 construct in stable cell lines, generated using lentiviruses or transposons, and upon transient expression (left). The expression is particularly low in the cell lines generated using transposon vectors. To visualize the protein in this system, a second blot is shown, where more cell lysate was loaded (right).DOI: http://dx.doi.org/10.7554/eLife.21036.016
+**Figure 5—figure supplement 1.:** Expression levels of HUWE1 construct in stable cell lines, generated using lentiviruses or transposons, and upon transient expression (left). The expression is particularly low in the cell lines generated using transposon vectors. To visualize the protein in this system, a second blot is shown, where more cell lysate was loaded (right).
 
 To assess the effect of the protein expression level on the self-association of WT HUWE1, we generated cell lines stably expressing HUWE1, using lentivirus- and transposon-mediated gene delivery, respectively. Notably, the cell line generated by lentiviral transduction shows higher HUWE1 levels than the transiently transfected cells (Figure 5—figure supplement 1) and, consistently, strong self-association of HUWE1 (Figure 5B). In contrast, the stable cell lines generated using transposons express HUWE1 at significantly lower levels than the transiently transfected cells (Figure 5—figure supplement 1). Yet, HUWE1 also self-associates robustly at these lower concentrations (Figure 5C).
 
 Taken together, these studies confirm that HUWE1 dimerizes in vitro and self-associates in cells and that both processes depend on the same key contacts that mediate the formation of the crystallographic dimer.
 
-## The disruption of the dimerization interface enhances the activity of HUWE1 in vitro and in cells
+### The disruption of the dimerization interface enhances the activity of HUWE1 in vitro and in cells
 
-The fact that the dimerization of HUWE1 (3951–4374) is mediated by rather weak interactions suggests that it is a dynamic process in solution, in which the dimerization regions associate with each other and with the C-lobes of each molecule transiently. Considering that one subunit of the crystallographic dimer presents an auto-inhibited state, we thus expected the ensemble of molecules to be inhibited in solution and a disruption of the dimer interface to enhance the catalytic activity of HUWE1 overall. We tested this idea by comparing the auto-ubiquitination activities of HUWE1 (3951–4374) WT with the dimerization-deficient variants I3969A, F3982A, I3969A/F3982A, and H3962D in vitro at concentrations of 1, 5, and 10 μM, that is, below and above the K
+The fact that the dimerization of HUWE1 (3951–4374) is mediated by rather weak interactions suggests that it is a dynamic process in solution, in which the dimerization regions associate with each other and with the C-lobes of each molecule transiently. Considering that one subunit of the crystallographic dimer presents an auto-inhibited state, we thus expected the ensemble of molecules to be inhibited in solution and a disruption of the dimer interface to enhance the catalytic activity of HUWE1 overall. We tested this idea by comparing the auto-ubiquitination activities of HUWE1 (3951–4374) WT with the dimerization-deficient variants I3969A, F3982A, I3969A/F3982A, and H3962D in vitro at concentrations of 1, 5, and 10 μM, that is, below and above the KD-value of dimerization (Figure 6A). We find that all of the mutated variants are, indeed, more active than the WT. The stimulatory effect is most pronounced for the double mutant variant, I3969A/F3982A, consistent with the dimer being most destabilized for this variant. The activity of HUWE1 WT decreases slightly with increasing protein concentrations, which can be explained, at least qualitatively, by concentration-dependent changes in the population of the dimeric state.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig6-v1.jpg)
 
-**Figure 6.:** (A) Comparison of the auto-ubiquitination activities of HUWE1 (3951–4374) WT to dimerization-deficient mutated variants at three different concentrations (1, 5, and 10 μM) in vitro, monitored by anti-ubiquitin Western blotting. The reactions contain HUWE1, E2 enzyme (UBCH7), E1 enzyme (UBA1), ubiquitin, and ATP/Mg2+ (for details see Materials and methods). Negative controls were performed without ATP. The band intensities for HUWE1 species modified with at least four ubiquitin molecules were quantified with ImageJ (Abràmoff and Magalhães, 2004) and normalized by the intensity observed in the presence of the lowest concentration of HUWE1 WT. The error bars result from three independent reaction replicates. (B) Comparison of the ubiquitination activities of HUWE1 (3951–4374), HUWE1 (3975–4374) (pointer helix missing), and HUWE1 (3993–4374) (HECT domain only) at 5 μM concentration toward the substrate MCL1, monitored by anti-MCL1 Western blotting (for details, see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.21036.017
+**Figure 6.:** (A) Comparison of the auto-ubiquitination activities of HUWE1 (3951–4374) WT to dimerization-deficient mutated variants at three different concentrations (1, 5, and 10 μM) in vitro, monitored by anti-ubiquitin Western blotting. The reactions contain HUWE1, E2 enzyme (UBCH7), E1 enzyme (UBA1), ubiquitin, and ATP/Mg2+ (for details see Materials and methods). Negative controls were performed without ATP. The band intensities for HUWE1 species modified with at least four ubiquitin molecules were quantified with ImageJ (Abràmoff and Magalhães, 2004) and normalized by the intensity observed in the presence of the lowest concentration of HUWE1 WT. The error bars result from three independent reaction replicates. (B) Comparison of the ubiquitination activities of HUWE1 (3951–4374), HUWE1 (3975–4374) (pointer helix missing), and HUWE1 (3993–4374) (HECT domain only) at 5 μM concentration toward the substrate MCL1, monitored by anti-MCL1 Western blotting (for details, see Materials and methods).
 
 We also sought to compare the catalytic activity of HUWE1 (3951–4374) to the dimerization-deficient truncated construct, HUWE1 (3975–4374) and to the monomeric HECT domain (HUWE1 [3993–4374]). In this context, auto-ubiquitination assays are hard to interpret, since the individual constructs display different levels of auto-ubiquitination activities per se, due to their different numbers of ubiquitination sites and their distinct conformations. Therefore, we monitored the ubiquitination activities of these constructs toward a physiological substrate of HUWE1, MCL1 (Figure 6B). In line with our model, we find that MCL1 is ubiquitinated significantly more strongly by the truncated, dimerization-deficient constructs of HUWE1 than by HUWE1 (3951–4374) that dimerizes.
 
-We next asked whether the dimerization of HUWE1 also affects its catalytic activity toward substrates in the cell. Interestingly, our studies show that both MCL1 and C-MYC are, indeed, ubiquitinated more strongly upon expression of the dimerization-deficient HUWE1 variants I3969A and F3982A than in the presence of the WT enzyme (
+We next asked whether the dimerization of HUWE1 also affects its catalytic activity toward substrates in the cell. Interestingly, our studies show that both MCL1 and C-MYC are, indeed, ubiquitinated more strongly upon expression of the dimerization-deficient HUWE1 variants I3969A and F3982A than in the presence of the WT enzyme (Figure 7A,B). It should be noted, however, that the stimulatory effect toward either substrate is significantly more pronounced for the F3982A than for the I3969A variant. As a negative control, we included a catalytically dead variant of HUWE1, in which the active site cysteine is replaced by serine (C4341S). Interestingly, the low background level of ubiquitination observed in this case is similar to the one seen for the WT. Evidently, HUWE1 exists in an, at least partially, inhibited state in HeLa cells.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig7-v1.jpg)
 
-**Figure 7.:** (A,B) Cell-based activity assays monitoring the substrate ubiquitination activities of HUWE1 (2474–4374) WT, the dimer interface mutants F3982A and I3969A, and the catalytically dead variant C4341S. HeLa cells were co-transfected with HUWE1 constructs, C-MYC, and MCL1, respectively. For details, see Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.21036.018
+**Figure 7.:** (A,B) Cell-based activity assays monitoring the substrate ubiquitination activities of HUWE1 (2474–4374) WT, the dimer interface mutants F3982A and I3969A, and the catalytically dead variant C4341S. HeLa cells were co-transfected with HUWE1 constructs, C-MYC, and MCL1, respectively. For details, see Materials and methods.
 
 Taken together, these studies demonstrate that a disruption of the dimer interface of HUWE1 releases inhibitory restraints on its catalytic activity, both in vitro and in cells.
 
-## The dimerization capacity of HUWE1 is modulated by intramolecular interactions
+### The dimerization capacity of HUWE1 is modulated by intramolecular interactions
 
-The observation that HUWE1 can adopt an auto-inhibited state made us wonder what mechanisms counteract dimerization for the enzyme to reach full activity. We thus set out to explore the role of an uncharacterized ~200 residue region N-terminal to the pointer helix. This region is predicted to contain four alternating stretches of α-helical content and low-sequence complexity, respectively (
+The observation that HUWE1 can adopt an auto-inhibited state made us wonder what mechanisms counteract dimerization for the enzyme to reach full activity. We thus set out to explore the role of an uncharacterized ~200 residue region N-terminal to the pointer helix. This region is predicted to contain four alternating stretches of α-helical content and low-sequence complexity, respectively (Figure 8A). Accordingly, we designed four additional HUWE1 constructs comprising residues 3896–4374, 3843–4374, 3810–4374, and 3759–4374. We subjected each of these constructs to SEC and SEC-MALS studies at protein concentrations, at which the crystallization construct, HUWE1 (3951–4374), exists predominantly as a dimer. A superposition of the SEC-profiles is shown in Figure 8B; the calculated and MALS-derived MWs are summarized in Table 2.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig8-v1.jpg)
 
-**Figure 8.:** (A) The panel of HUWE1 constructs used in our in vitro studies. Helices >5 residues, as predicted by I-TASSER (Yang et al., 2015) in the structurally uncharacterized regions are colored grey. White boxes mark regions of low sequence complexity. (B) SEC experiments with six individual HUWE1 constructs at 120 μM concentration. The absorbance peak heights were normalized to a value of 1. HUWE1 (3896–4374) and (3951–4374) that dimerize are marked by a dashed box. For the calculated and MALS-derived MWs of the constructs, see Table 2. (C) Activities of different HUWE1 constructs at 5 μM concentration towards MCL1, monitored by anti-MCL1 Western blotting. For details, see Materials and methods.DOI: http://dx.doi.org/10.7554/eLife.21036.019
+**Figure 8.:** (A) The panel of HUWE1 constructs used in our in vitro studies. Helices >5 residues, as predicted by I-TASSER (Yang et al., 2015) in the structurally uncharacterized regions are colored grey. White boxes mark regions of low sequence complexity. (B) SEC experiments with six individual HUWE1 constructs at 120 μM concentration. The absorbance peak heights were normalized to a value of 1. HUWE1 (3896–4374) and (3951–4374) that dimerize are marked by a dashed box. For the calculated and MALS-derived MWs of the constructs, see Table 2. (C) Activities of different HUWE1 constructs at 5 μM concentration towards MCL1, monitored by anti-MCL1 Western blotting. For details, see Materials and methods.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** SAXS intensity, I, plotted over the momentum transfer, q, and Guinier plots (insert) for HUWE1 (3759–4374) (A), (3810–4374) (B), (3843–4374) (C), (3896–4374) (D), (3951–4374) (E), and (3975–4374) (G) at 40 μM concentration each. The Guinier fits yield estimates of the radius of gyration, Rg (Table 2).DOI: http://dx.doi.org/10.7554/eLife.21036.020
+**Figure 8—figure supplement 1.:** SAXS intensity, I, plotted over the momentum transfer, q, and Guinier plots (insert) for HUWE1 (3759–4374) (A), (3810–4374) (B), (3843–4374) (C), (3896–4374) (D), (3951–4374) (E), and (3975–4374) (G) at 40 μM concentration each. The Guinier fits yield estimates of the radius of gyration, Rg (Table 2).
+
+**Table 2.**
+ Summary of SEC-MALS-derived MWs and SAXS-derived Rg-values for C-terminal HUWE1 constructs. For SEC-MALS studies the proteins were injected at a concentration of ~375 μM. The SAXS experiments were performed at ~40 μM concentration (see Figure 8—figure supplement 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>HUWE1 construct</th>
+      <th>MW (MALS) / kDa</th>
+      <th>MW (calc.) / kDa</th>
+      <th>Rg (SAXS) / Å</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3759–4374</td>
+      <td>68</td>
+      <td>74</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>3810–4374</td>
+      <td>61</td>
+      <td>68</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>3843–4374</td>
+      <td>60</td>
+      <td>65</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>3896–4374</td>
+      <td>92</td>
+      <td>60</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>3951–4374</td>
+      <td>93</td>
+      <td>53</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>3975–4374</td>
+      <td>51</td>
+      <td>50</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>3993–4374</td>
+      <td>44</td>
+      <td>47</td>
+      <td>/</td>
+    </tr>
+  </tbody>
+</table>
 
 For HUWE1 (3896–4374), that is elongated by a 55-residue low complexity region compared to the crystallization construct and that has a calculated MW of 60 kDa, the MALS analysis yields a MW of 92 kDa. This elongated construct, therefore, also dimerizes. Surprisingly, however, an additional construct extension by a preceding α-helical region (HUWE1 [3843–4374]) results in a marked shift of the SEC elution peak toward larger volumes (Figure 8B) and a MALS-derived MW of 60 kDa that approximates the calculated monomeric MW of this construct (65 kDa). Similarly, the two longest constructs, HUWE1 (3810–4374) and (3759–4374), do not dimerize, as revealed by MALS analysis (Table 2). Interestingly, however, these two constructs elute at smaller volumes than the shorter constructs that dimerize. This elution behavior, as determined by the hydrodynamic radii of the proteins, reflects a rather extended shape of the larger, monomeric constructs compared to the shorter, dimeric ones.
 
@@ -183,15 +377,15 @@ To corroborate these findings we determined Rg-values for all HUWE1 constructs a
 
 To test if the conformational switch in HUWE1 that is triggered by the presence of residues 3843-3895 coincides with a stimulation of activity, we monitored the ubiquitination activities of different HUWE1 constructs toward MCL1 (Figure 8C). Indeed, HUWE1 (3843–4374) displays similarly high activity as the isolated HECT domain. In comparison, the N-terminally truncated constructs that do not contain residues 3843–3895 and that dimerize (HUWE1 [3896–4374] and [3951–4374]) are significantly less active. We we will thus refer to the critical monomer-inducing region of HUWE1, residues 3843-3895, as the ‘activation segment’.
 
-In principle, the activation segment may antagonize the dimerization of HUWE1 either through direct intramolecular interactions with the dimerization region or through allosteric effects. When comparing the amino acid sequences of the activation segment and the dimerization region, we noticed a striking degree of similarity (
+In principle, the activation segment may antagonize the dimerization of HUWE1 either through direct intramolecular interactions with the dimerization region or through allosteric effects. When comparing the amino acid sequences of the activation segment and the dimerization region, we noticed a striking degree of similarity (Figure 9A). In particular, a hydrophobic motif in the thumb region, ‘FAVLVxxxxV’ (residues 3982–3991) recurs in almost identical form in the activation segment (residues 3874–3883). Remarkably, most of the residues in the dimerization region that are conserved in the activation segment (or that are at least substituted by similar amino acids) coincide with residues that participate in the dimer interface. Those include Ile 3969 and Phe 3982 that we found to be critical for dimer stability. Based on these analyses, we hypothesized that the activation segment may be able to interact with the dimerization region intramolecularly. This scenario is plausible structurally, since the 55-residue linker connecting the two regions is predicted to be disordered.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig9-v1.jpg)
 
-**Figure 9.:** (A) Sequence alignment of the activation segment with the dimerization region of HUWE1, generated by EMBOSS stretcher (Rice et al., 2000). Residues that form contacts at the dimer interface are shown in magenta. The mutations sites, Ile 3969 and Phe 3982, are marked by asterisks. (B,D,E) SEC experiments with different HUWE1 constructs, monitoring interactions with the MBP-tagged activation segment (residues 3843–3902) in trans. SEC profiles of the individual proteins at 120 μM concentration are shown in black and green, respectively; their 1.5:1 molar mixture is shown in blue. The peak heights for the activation segment alone (green) were normalized to a value of 1. In (B) a dashed line represents the expected elution peak for a mixture of non-interacting proteins. A red arrow marks the offset between the calculated and experimental peaks. No significant complex formation is detected in (D) and (E). (C) Analogous SEC experiment using MBP as a negative control.DOI: http://dx.doi.org/10.7554/eLife.21036.022
+**Figure 9.:** (A) Sequence alignment of the activation segment with the dimerization region of HUWE1, generated by EMBOSS stretcher (Rice et al., 2000). Residues that form contacts at the dimer interface are shown in magenta. The mutations sites, Ile 3969 and Phe 3982, are marked by asterisks. (B,D,E) SEC experiments with different HUWE1 constructs, monitoring interactions with the MBP-tagged activation segment (residues 3843–3902) in trans. SEC profiles of the individual proteins at 120 μM concentration are shown in black and green, respectively; their 1.5:1 molar mixture is shown in blue. The peak heights for the activation segment alone (green) were normalized to a value of 1. In (B) a dashed line represents the expected elution peak for a mixture of non-interacting proteins. A red arrow marks the offset between the calculated and experimental peaks. No significant complex formation is detected in (D) and (E). (C) Analogous SEC experiment using MBP as a negative control.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig9-figsupp1-v1.jpg)
 
-**Figure 9—figure supplement 1.:** SEC-MALS experiments with the MBP-tagged activation segment (residues 3843–3902) of HUWE1 at 75 μM concentration. The height of the absorbance peak was normalized to a value of 1. The MALS-derived MW of 52 kDa matches the calculated MW of a monomer. A small amount of aggregate (void) and a higher MW contaminant (~200 kDa) are visible in the SEC profile. Experiments performed at protein concentrations of up to 400 μM showed similar results (data not shown).DOI: http://dx.doi.org/10.7554/eLife.21036.023
+**Figure 9—figure supplement 1.:** SEC-MALS experiments with the MBP-tagged activation segment (residues 3843–3902) of HUWE1 at 75 μM concentration. The height of the absorbance peak was normalized to a value of 1. The MALS-derived MW of 52 kDa matches the calculated MW of a monomer. A small amount of aggregate (void) and a higher MW contaminant (~200 kDa) are visible in the SEC profile. Experiments performed at protein concentrations of up to 400 μM showed similar results (data not shown).
 
 To test whether the activation segment and the dimerization region bind to each other, we conducted SEC experiments with the activation segment (residues 3843–3902 of HUWE1, fused N-terminally to maltose-binding protein [MBP]), HUWE1 constructs lacking the activation segment, and mixtures thereof. In line with our hypothesis, we find that the activation segment forms a complex with HUWE1 (3951–4374), as indicated by a marked shift of the elution peak toward larger volumes upon mixing the two components (Figure 9B). This interaction is specific to the activation segment, since it does not occur with MBP alone (Figure 9C). Furthermore, the interaction requires an intact dimerization region of HUWE1, since the removal of the pointer helix (HUWE1 [3975–4374]) or of the entire dimerization region (HUWE1 [3993–4374]) results in a loss of binding to the activation segment (Figure 9D,E).
 
@@ -199,19 +393,62 @@ In a control experiment addressing the rather small SEC-elution volume of the M
 
 Taken together, these experiments provide evidence for a specific interaction between the activation segment and the C-terminal region of HUWE1 that is detectable in trans and dependent on the dimerization region. The conformational state and the catalytic activity of HUWE1 may thus be controlled by a balance of inter- and intramolecular interactions.
 
-## The HUWE1-inhibitor p14ARF interacts with the activation segment and promotes oligomerization of HUWE1
+### The HUWE1-inhibitor p14ARF interacts with the activation segment and promotes oligomerization of HUWE1
 
 How inter- and intramolecular interactions compete in the structural regulation of HUWE1 will be determined by various factors, such as the local concentrations of HUWE1, the respective affinities of the interacting regions, and their structural accessibilities. All these factors may, in turn, be influenced by macromolecular interactions that stabilize particular conformational states of HUWE1. In this context, p14ARF is an interesting candidate, since it was shown to interact with HUWE1 directly and to inhibit its catalytic activity (through unknown mechanisms) (Chen et al., 2005).
 
-p14ARF is a 14 kDa, highly basic protein with low overall sequence complexity and no conserved domains. In a series of binding and co-expression studies with truncated p14ARF variants, we identified a minimal region comprising residues 45–64 of p14ARF as a major binding site for HUWE1 (data not shown). To map the corresponding binding site for p14ARF on HUWE1, we monitored the interactions between a p14ARF-derived peptide (comprising residues 45–64) and our panel of HUWE1 constructs by fluorescence polarization (
+p14ARF is a 14 kDa, highly basic protein with low overall sequence complexity and no conserved domains. In a series of binding and co-expression studies with truncated p14ARF variants, we identified a minimal region comprising residues 45–64 of p14ARF as a major binding site for HUWE1 (data not shown). To map the corresponding binding site for p14ARF on HUWE1, we monitored the interactions between a p14ARF-derived peptide (comprising residues 45–64) and our panel of HUWE1 constructs by fluorescence polarization (Table 3, Figure 10A). Interestingly, we find that all HUWE1 constructs that contain the activation segment, that is, HUWE1 (3759–4374), HUWE1 (3810–4374), and HUWE1 (3843–4374), bind to the p14ARF-peptide with dissociation constants in the low micromolar range (7.7, 6, and 5.2 μM, respectively). In contrast, shorter constructs of HUWE1 that are lacking the activation segment display significantly weaker affinities for p14ARF, with dissociation constants ranging from 230 to 340 μM. These results indicate that a major binding site for p14ARF resides either in the activation segment itself or in a conformational state of HUWE1, whose population depends on the activation segment. To discriminate between these possibilities, we determined the affinity of the p14ARF-peptide for the isolated activation segment (HUWE1 [3843–3902], tagged with MBP). The resulting dissociation constant, 3.6 μM, is similar to the ones determined for the activation segment in the context of the HECT domain. This implies that a major binding site for p14ARF on HUWE1 resides in the activation segment.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig10-v1.jpg)
 
-**Figure 10.:** (A) Interactions of a fluorophor-labeled peptide comprising residues 45–64 of p14ARF with HUWE1 constructs of different lengths, monitored by fluorescence polarization. A constant peptide concentration of 1 μM was titrated with different concentrations of protein, as indicated. Constructs containing the activation segment, including the MBP-tagged activation segment per se are shown on the left; constructs lacking the activation segment on the right. Note that the x-axes have different scales. The data points and errors reflect the means and standard deviations obtained from three independent experiment replicates. Data were fitted (lines), as described in the Materials and methods section. The resulting KDapp-values are summarized in Table 3. (B–E) SEC experiments with the specified constructs of HUWE1 at 120 μM concentration in the absence and presence of a four-fold molar excess of p14ARF (45-75). The p14ARF-derived peptide does not contain any aromatic residues and is, therefore, not detected by UV absorbance (λ = 280 nm). That HUWE1 (3843–4374) co-elutes with the p14ARF-derived peptide is demonstrated by SDS-PAGE, using 10–20% tricine gradient gels (insert). Two different molecular weight markers are shown. The HUWE1 bands look somewhat diffuse on this particular gel, since a prior pull-down using nonspecific protein-binding resin (Strataclean, Agilent) was performed in order to visualize the small amount of peptide.DOI: http://dx.doi.org/10.7554/eLife.21036.024
+**Figure 10.:** (A) Interactions of a fluorophor-labeled peptide comprising residues 45–64 of p14ARF with HUWE1 constructs of different lengths, monitored by fluorescence polarization. A constant peptide concentration of 1 μM was titrated with different concentrations of protein, as indicated. Constructs containing the activation segment, including the MBP-tagged activation segment per se are shown on the left; constructs lacking the activation segment on the right. Note that the x-axes have different scales. The data points and errors reflect the means and standard deviations obtained from three independent experiment replicates. Data were fitted (lines), as described in the Materials and methods section. The resulting KDapp-values are summarized in Table 3. (B–E) SEC experiments with the specified constructs of HUWE1 at 120 μM concentration in the absence and presence of a four-fold molar excess of p14ARF (45-75). The p14ARF-derived peptide does not contain any aromatic residues and is, therefore, not detected by UV absorbance (λ = 280 nm). That HUWE1 (3843–4374) co-elutes with the p14ARF-derived peptide is demonstrated by SDS-PAGE, using 10–20% tricine gradient gels (insert). Two different molecular weight markers are shown. The HUWE1 bands look somewhat diffuse on this particular gel, since a prior pull-down using nonspecific protein-binding resin (Strataclean, Agilent) was performed in order to visualize the small amount of peptide.
 
 ![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig10-figsupp1-v1.jpg)
 
-**Figure 10—figure supplement 1.:** Auto-ubiquitination assays with various HUWE1 constructs in vitro, monitored by anti-ubiquitin Western blotting, in the absence and presence of p14ARF(45-75) (increasing concentrations of 15 and 75 μM, indicated by the triangle). Control reactions were performed without ATP. A separate blot is shown for HUWE1 (3993–4374), since the overall auto-ubiquitination activity of this construct is significantly lower than for the longer constructs.DOI: http://dx.doi.org/10.7554/eLife.21036.025
+**Figure 10—figure supplement 1.:** Auto-ubiquitination assays with various HUWE1 constructs in vitro, monitored by anti-ubiquitin Western blotting, in the absence and presence of p14ARF(45-75) (increasing concentrations of 15 and 75 μM, indicated by the triangle). Control reactions were performed without ATP. A separate blot is shown for HUWE1 (3993–4374), since the overall auto-ubiquitination activity of this construct is significantly lower than for the longer constructs.
+
+**Table 3.**
+ Apparent dissociation constants, KDapp, of the interactions between p14ARF and C-terminal HUWE1 constructs, as derived from fluorescence polarization studies with a fluorophor-labeled p14ARF-derived peptide (residues 45–64) (see Figure 10A).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>HUWE1 construct</th>
+      <th>KDapp/µM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3759–4374</td>
+      <td>7.7 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>3810–4374</td>
+      <td>6 ± 1</td>
+    </tr>
+    <tr>
+      <td>3843–4374</td>
+      <td>5.2 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>3896–4374</td>
+      <td>340 ± 60</td>
+    </tr>
+    <tr>
+      <td>3951–4374</td>
+      <td>280 ± 40</td>
+    </tr>
+    <tr>
+      <td>3993–4374</td>
+      <td>230 ± 40</td>
+    </tr>
+    <tr>
+      <td>(MBP-) 3843–3902</td>
+      <td>3.6 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
 
 To illuminate the functional consequences of the interactions between p14ARF and HUWE1, we performed auto-ubiquitination assays with different HUWE1 constructs upon addition of a peptide comprising residues 45–75 of p14ARF (Figure 10—figure supplement 1). Analogous assays with the slightly shorter peptide, p14ARF (45-64), that was used in the fluorescence polarisation studies yielded very similar results (data not shown). Surprisingly, we find that the activities of HUWE1 (3843–4374), (3896–4374), and (3951–4374), are all significantly inhibited by the p14ARF-peptide. For the isolated HECT domain, no clear p14ARF-mediated inhibitory effect is observed. As noted above, the absolute ubiquitination levels vary between the different constructs, due to variations in the numbers of ubiquitination sites and the distinct conformations of the constructs that likely impact the accessibilities of these sites.
 
@@ -229,11 +466,11 @@ In contrast, we have discovered that the catalytic activity of HUWE1 is down-reg
 
 We show that the dimerization of HUWE1 (3951–4374) is mediated by rather weak interactions. This suggests that the conformational ensemble of HUWE1 (3951–4374) is dynamic in solution and, hence, likely auto-inhibited overall through transient interactions between the C-lobes and the dimerization regions. In line with this idea, we observe a significant stimulation of activity upon disruption of the dimer interface, both in vitro and in cells, which indicates that the dimeric form of HUWE1 is auto-inhibited effectively. There is currently no indication that the HUWE1 dimer that has crystallized in an asymmetric form is also functionally asymmetric in solution, as was described for the U-box ligase CHIP (Zhang et al., 2005).
 
-Our studies suggest that the dimerization of HUWE1 can be counteracted by an intramolecular engagement of the dimerization region with a segment of strikingly similar sequence, the ‘activation segment’, located some 50 residues upstream. We imagine that the activation segment serves as an intramolecular ‘wedge’ that disrupts the HUWE1 dimer when the ligase ought to be active. In line with the important functions of the dimerization region and the activation segment in controlling the conformational equilibrium of HUWE1, both regions are disproportionately highly conserved across the family of HUWE1 orthologues, including lower eukaryotic ones (
+Our studies suggest that the dimerization of HUWE1 can be counteracted by an intramolecular engagement of the dimerization region with a segment of strikingly similar sequence, the ‘activation segment’, located some 50 residues upstream. We imagine that the activation segment serves as an intramolecular ‘wedge’ that disrupts the HUWE1 dimer when the ligase ought to be active. In line with the important functions of the dimerization region and the activation segment in controlling the conformational equilibrium of HUWE1, both regions are disproportionately highly conserved across the family of HUWE1 orthologues, including lower eukaryotic ones (Figure 11).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig11-v1.jpg)
 
-**Figure 11.:** Sequence alignment of 20 selected HUWE1 orthologues, as output by Clustal Omega (RRID:SCR_001591; http://www.ebi.ac.uk/Tools/msa/clustalo/) and sorted by their degree of sequence identity with the HECT domain of the human protein (top row). The illustration was prepared with Geneious Basic (RRID:SCR_010519) (Kearse et al., 2012). The alignment contains regions homologous to residues 3759 to 3992 of human HUWE1, that is, the region preceding the HECT domain.DOI: http://dx.doi.org/10.7554/eLife.21036.027
+**Figure 11.:** Sequence alignment of 20 selected HUWE1 orthologues, as output by Clustal Omega (RRID:SCR_001591; http://www.ebi.ac.uk/Tools/msa/clustalo/) and sorted by their degree of sequence identity with the HECT domain of the human protein (top row). The illustration was prepared with Geneious Basic (RRID:SCR_010519) (Kearse et al., 2012). The alignment contains regions homologous to residues 3759 to 3992 of human HUWE1, that is, the region preceding the HECT domain.
 
 The identification of the activation segment and the resulting interplay of intra- and intermolecular interactions in the regulation of HUWE1 may explain an apparent inconsistency between our in vitro and cell-based studies (Figures 6 and 7): In both systems, the dimerization-deficient variants, I3969A and F3982A, display higher activities than the WT. Yet, the relative stimulatory effects of the mutations are different. When monitoring the auto-ubiquitination capacity of HUWE1 in vitro, the activity enhancement observed for the I3969A and F3982 variants compared to the WT is relatively similar. In the cell, however, the F3982A variant stimulates the ubiquitination of physiological HUWE1 substrates more strongly than the I3969A variant. Notably, our cell-based assays were performed with large HUWE1 constructs (2474–4374) that include the activation segment, while the in vitro assays were based on the crystallization construct, HUWE1 (3951–4374), that lacks the activation segment. It is possible that the mutated residues, both of which are pivotal for the integrity of the dimer interface, contribute differently to the alternate intramolecular interaction between the dimerization region and the activation segment. To characterize this latter interaction structurally and to delineate the conformational transition of HUWE1 from the dimeric, auto-inhibited to the monomeric, active state of HUWE1 will be an important aim of future studies.
 
@@ -241,11 +478,11 @@ It will also be essential to illuminate the physiological context, in which thi
 
 Moreover, rather high overall cellular concentrations of HUWE1 have been reported, based on quantitative proteomics studies, for instance 120 nM in colon tissue (Wiśniewski et al., 2015a), 250 nM in colon cancer tissue (Wiśniewski et al., 2015a), and 400 nM in MCF7 cells (Wiśniewski et al., 2015b). Importantly, the local concentrations of HUWE1 at its cellular sites of action are expected to be significantly higher, due to the effects of cellular compartimentalization and protein co-localization. Considering the large size of HUWE1 (482 kDa) and, accordingly, the large number of its interaction partners, co-localization effects likely have a particularly pronounced impact on the local concentrations of HUWE1 and, therefore, on its propensity to dimerize (Ispolatov et al., 2005). Hence, even seemingly weak interactions of HUWE1, as determined in vitro, can be expected to fall into a physiologically meaningful range, that is, a range that can give rise to a functionally relevant population of the dimeric state, yet that allows for this population to be regulated by cellular factors.
 
-We propose that the conformational equilibrium and, hence, the activity of HUWE1 is modulated by yet uncharacterized domain interactions in the context of full-length HUWE1 and by macromolecular factors that will determine not only the local concentrations of HUWE1 in the cell, but also the accessibility of the dimerization region and the activation segment for their intramolecular engagement (
+We propose that the conformational equilibrium and, hence, the activity of HUWE1 is modulated by yet uncharacterized domain interactions in the context of full-length HUWE1 and by macromolecular factors that will determine not only the local concentrations of HUWE1 in the cell, but also the accessibility of the dimerization region and the activation segment for their intramolecular engagement (Figure 12).
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/21036/elife-21036-fig12-v1.jpg)
 
-**Figure 12.:** Our studies suggest that the catalytic activity of HUWE1 is regulated conformationally by an intricate balance of inter- and intramolecular interactions. The thumb and pointer helices adjacent to the catalytic HECT domain can mediate the dimerization of HUWE1. The dimer locks the position of the C-lobe, buries the C-terminal tail (magenta), and occludes a putative ubiquitin binding site on the C-lobe of one subunit, hence representing an auto-inhibited state. Alternatively, the dimerization region of HUWE1 can associate with the activation segment in cis, which precludes dimer formation. The activation segment and the dimerization region are separated by a 55-residue linker that is presumably flexible, thus allowing for the re-positioning of the activation segment. In the monomeric state of HUWE1, the C-lobe is mobile with respect to the N-lobe (arrow), and the C-terminal tail may anchor the C-lobe on the N-lobe or interact with substrates, as required for catalytic activity.The activation segment of HUWE1 presents a major interaction site for a physiological inhibitor of HUWE1, p14ARF. We propose that the binding of p14ARF to the activation segment releases the dimerization region from its intramolecular engagement, thus shifting the conformational equilibrium of HUWE1 toward the auto-inhibited, dimeric state. An additional/alternate mode of inhibition of HUWE1 by p14ARF is independent of the activation segment. We speculate that interactions of HUWE1 with its substrates and positive effectors favor the active state of HUWE1 through interactions that remain to be elucidated.DOI: http://dx.doi.org/10.7554/eLife.21036.028
+**Figure 12.:** Our studies suggest that the catalytic activity of HUWE1 is regulated conformationally by an intricate balance of inter- and intramolecular interactions. The thumb and pointer helices adjacent to the catalytic HECT domain can mediate the dimerization of HUWE1. The dimer locks the position of the C-lobe, buries the C-terminal tail (magenta), and occludes a putative ubiquitin binding site on the C-lobe of one subunit, hence representing an auto-inhibited state. Alternatively, the dimerization region of HUWE1 can associate with the activation segment in cis, which precludes dimer formation. The activation segment and the dimerization region are separated by a 55-residue linker that is presumably flexible, thus allowing for the re-positioning of the activation segment. In the monomeric state of HUWE1, the C-lobe is mobile with respect to the N-lobe (arrow), and the C-terminal tail may anchor the C-lobe on the N-lobe or interact with substrates, as required for catalytic activity.The activation segment of HUWE1 presents a major interaction site for a physiological inhibitor of HUWE1, p14ARF. We propose that the binding of p14ARF to the activation segment releases the dimerization region from its intramolecular engagement, thus shifting the conformational equilibrium of HUWE1 toward the auto-inhibited, dimeric state. An additional/alternate mode of inhibition of HUWE1 by p14ARF is independent of the activation segment. We speculate that interactions of HUWE1 with its substrates and positive effectors favor the active state of HUWE1 through interactions that remain to be elucidated.
 
 The HUWE1-inhibitor and tumor suppressor p14ARF presents such a macromolecular factor. Our studies reveal that p14ARF binds to the activation segment of HUWE1, which may release this segment from its intramolecular engagement with the dimerization region and, thus, promote dimerization. The fact that the interactions between p14ARF and HUWE1 and those mediating the dimerization of HUWE1 are in the same range KD-range in vitro, makes it plausible that they can regulate each other dynamically. We also speculate that high levels of p14ARF may contribute to the robust self-association and auto-inhibition of HUWE1 that we observe in HeLa cells. Notably, however, our studies show that an alternate or additional mode of p14ARF-mediated inhibition of HUWE1 also exists and is independent of the activation segment. In order to understand these mechanisms in detail and to clarify their relative contributions to the inhibition of HUWE1 by p14ARF, structural insights into HUWE1/p14ARF complexes are required.
 
@@ -257,13 +494,13 @@ We anticipate that the dimerization of HUWE1 may be manipulated by small-molecul
 
 ## Materials and methods
 
-## Gene construct design
+### Gene construct design
 
 For the in vitro studies, the HUWE1 gene constructs (3759–4374, 3810–4374, 3843–4374, 3896–4374, 3951–4374, 3975–4374, and 3993–4374) were sub-cloned into a pBADM11 vector (EMBL, Heidelberg, Germany) encoding an N-terminal TEV protease-cleavable His6-tag (sequence: MKHHHHHHPMSDYDIPTTENLYFQ). Mutations in the HUWE1 gene were introduced by site-directed mutagenesis and ligation-during-amplification approaches (Chen and Ruffner, 1998). The HUWE1 gene construct encoding residues 3843–3902 was sub-cloned into a pETM41 vector (EMBL, Heidelberg, Germany), encoding an N-terminal TEV protease-cleavable MBP-tag and a C-terminal 3C protease-cleavable His6-tag. The constructs encoding human UBA1 and ubiquitin were described previously (Wickliffe et al., 2011). The human UBCH7 gene (kindly provided by Michael Rape, UC Berkeley, CA), was sub-cloned into a pSKB2 vector (pET-28a [Merck, Darmstadt, Germany], modified to encode an N-terminal 3C protease-cleavable His6-SUMO-tag). A region encoding residues 26–325 of the human MCL1 gene (amplified from Addgene plasmid # 25375 (Morel et al., 2009); a gift from Roger Davis) was subcloned into a modified pSKB2 vector, in which the N-terminal His6-tag was replaced by a lipoyl domain, comprising residues 2–85 of branched-chain alpha-keto acid dehydrogenase subunit E2 from Geobacillus stearothermophilus (Hipps et al., 1994), followed by a TEV protease-cleavage site. The construct further encodes C-terminal HA- and His6-tags. All sub-cloning procedures were performed by ligation-free methods (van den Ent and Löwe, 2006).
 
 For transient transfections the following constructs were utilized: pcDNA3-His6-ubiquitin (Peter et al., 2014), pcDNA3-HA-HUWE1-ΔN (Adhikary et al., 2005), pcDNA3-HA-MCL1 (Peter et al., 2014), and pcDNA3-MYC (Adhikary et al., 2005). The pFLAG-HUWE1-ΔN vector was generated based on pcDNA3-HA-HUWE1-ΔN. To generate stable cell lines, HA-HUWE1-ΔN and FLAG-HUWE1-ΔN were sub-cloned into modified pRRL vectors (Wiese et al., 2015), using AgeI and SpeI restriction sites. Alternatively, the HA- and FLAG-tagged HUWE1 genes were sub-cloned into CMV-based transposon vectors carrying the puromycin resistance gene, kindly provided by Thorsten Stühmer (Comprehensive Cancer Center Mainfranken, Würzburg, Germany).
 
-## Protein expression and purification
+### Protein expression and purification
 
 All C-terminal HUWE1 fragments were expressed in LOBSTR RIL cells (Kerafast, Boston, MA) at 15°C for 16 hr after induction with 0.05% L-arabinose. His6-MBP-tagged HUWE1 (3843–3902) and lipoyl domain-/His6-tagged MCL1 were expressed in E.coli BL21(DE3) and LOBSTR RIL cells, respectively, at 15°C for 16 hr after induction with 0.5 mM IPTG. Cells were lysed in 80 mM HEPES pH 8.0, 500 mM NaCl, 10% glycerol, 20 mM imidazole, 5 mM β-mercaptoethanol (lysis buffer), containing protease inhibitor cocktail (Sigma-Aldrich, St. Louis, MO). His6- and His6-MBP-fusion proteins were purified from the supernatant by IMAC (immobilized metal ion affinity chromatography) using a HisTrap HP column (GE Healthcare, Uppsala, Sweden; buffer A: lysis buffer; buffer B: lysis buffer +980 mM imidazole). For cleavage of the His6-tag, the sample was buffer-exchanged at 4°C over night into 20 mM HEPES pH 8.0, 250 mM NaCl, 10 mM imidazole, and 3 mM β-mercaptoethanol in the presence of His6-tagged TEV protease. The protease was subsequently removed by an additional IMAC step. Tagged and untagged proteins, respectively, were further purified by gel filtration (Superdex 200, GE Healthcare) in 20 mM HEPES pH 8.0, 150 mM NaCl, 1 mM EDTA, and 5 mM DTT.
 
@@ -271,45 +508,49 @@ UBCH7 was expressed in E. coli BL21(DE3) cells at 20°C in TB-medium for 20 h
 
 Human UBA1 and ubiquitin were prepared as described previously (Wickliffe et al., 2011).
 
-## Synthetic peptides
+### Synthetic peptides
 
 Synthetic peptides corresponding to residues 45–64 and 45–75 of human p14ARF were purchased from Elim Biopharm (Hayward, CA) at >95% purity. For fluorescence polarization studies, a peptide comprising residues 45–64 of p14ARF was purchased with a TAMRA-label attached to the side chain of an additional lysine residue at the C-terminus of the peptide. In activity assays and SEC-studies, both p14ARF (45-64) and (45-75) behaved very similarly.
 
-## Crystallization, data collection, and structure calculation
+### Crystallization, data collection, and structure calculation
 
 Crystals of HUWE1 (3951–4374) grew at 20°C in sitting drops containing 100 mM HEPES pH 7.0, 15% (w/v) PEG 20,000, and 100 mM glycine and were cryo-protected in the same solution, including 30% glycerol. Diffraction data were collected at the European Synchrotron Radiation Facility (ESRF), Grenoble, France, beamline ID30A-1 to 2.7 Å resolution and were processed with XDS (Kabsch, 2010). Molecular replacement was performed with Phaser (McCoy et al., 2007), as implemented in the collaborative computational project no. 4 (ccp4) suite (RRID:SCR_007255) (Winn et al., 2011), using a structure of the HUWE1 HECT domain as a search model (PDB ID: 3H1D) (Pandya et al., 2010). Refinement was performed using Phenix (RRID:SCR_014224) (Adams et al., 2010) with individual B-factors, TLS (translation/libration/screw) and torsion angle NCS (non-crystallographic symmetry) restraints. Manual model building was performed in Coot (RRID:SCR_014222) (Emsley et al., 2004). In molecule B, residues 4171, 4172, and 4191–4197 could not be modeled and the intervening region (4173–4190) has poor or missing side chain density. This region is, however, remote from the dimer interface that we interpret in this study. In molecule A, the C-tail (4370–4374) could not not be built.
 
-## Small-angle X-ray scattering
+### Small-angle X-ray scattering
 
 SAXS data were collected at ESRF beamline BM29 using a Pilatus 1M detector (Dectris, Baden-Daettwil, Switzerland). Experiments were carried out at 10°C with HUWE1 constructs at various concentrations between 1 and 15 mg/ml in 20 mM HEPES pH 8.0, 150 mM NaCl, 1 mM EDTA, and 5 mM DTT. For each sample, 10 consecutive 1 s-exposures were compared, but no significant radiation damage was detected. Scattering data were reduced and processed using PRIMUS (Konarev et al., 2003), and the scattering profile of the buffer was subtracted. To estimate the radius of gyration (Rg) data from the samples at the lowest concentrations were subjected to AUTORG analysis (Petoukhov et al., 2007). This yielded very similar Rg values to those derived from the pair distribution function, P(r), as calculated with the indirect transform package GNOM (Semenyuk and Svergun, 1991).
 
 For the structure-based simulations of scattering profiles, we used the AllosMod-FoXS server (http://modbase.compbio.ucsf.edu/allosmod-foxs/) (Schneidman-Duhovny et al., 2016; Weinkam et al., 2012) in the static mode. Residues missing in the crystal structures were built automatically. The top fit scores for a single model and the corresponding Rg-values are quoted. To analyze simulations for a HUWE1 monomer with a flexible dimerization region, we made use of the MES (multiple ensemble search) (Pelikan et al., 2009) option of AllosModFoXS.
 
-## Multi-angle light scattering
+### Multi-angle light scattering
 
 SEC-MALS was performed at room temperature using a Superdex 200 10/300 GL column (GE Healthcare) coupled to a Dawn 8+ MALS detector and Optilab T-rEX refractive index detector (Wyatt Technology, Santa Barbara, CA). Proteins were injected at the indicated concentrations in a buffer containing 20 mM HEPES pH 8.0, 250 mM NaCl, 1 mM EDTA, and 5 mM DTT. MWs were determined at the absorbance peak tips using the ASTRA 6 software (Wyatt Technology).
 
-## Analytical size-exclusion chromatography
+### Analytical size-exclusion chromatography
 
 Proteins were injected onto a Superdex 200 Increase 3.2/300 column (GE Healthcare) at 4°C and at the indicated concentrations in 20 mM HEPES pH 8.0, 100 mM NaCl, 1 mM EDTA, and 5 mM DTT. When comparing HUWE1 in the presence and absence of the p14ARF-derived peptide, the samples contained 10% DMSO. Extensive control experiments over a range of DMSO concentrations were performed and ascertained that the DMSO content used here does not affect the oligomerization state of HUWE1.
 
 Note that the Superdex 200 Increase 3.2/300 column has a significantly smaller bed volume (2.4 ml) than the Superdex 200 10/300 GL column (24 ml) that was used for SEC-MALS studies. This results in a smaller dilution of the protein samples during our SEC experiments compared to our SEC-MALS experiments. To account for the differences in dilution and injected volumes, we adjusted the protein concentrations accordingly: Protein concentrations of ~120 μM in SEC experiments yielded a comparable degree of dimerization of HUWE1 (3951-4374) as ~375 μM in SEC-MALS experiments.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Sedimentation equilibrium experiments experiments were conducted at 4°C using a ProteomeLab XL-A/XL-I ultracentrifuge (Beckmann Coulter, Brea, CA), equipped with an An-50 Ti rotor. 10 µM HUWE1 (3951–4374) in 10 mM HEPES pH 8.0, 200 mM NaCl, 1 mM EDTA, and 1 mM β-mercaptoethanol was filled in a 12 mm six-channel cell centrepiece and its distribution was followed by absorbance detection at λ = 280 nm at rotation speeds of 9000 rpm, 13,000 rpm, and 17,000 rpm. The program Sedfit (Schuck, 2000) was used during the experiments to test whether an equilibrium was reached. The data were fitted using a monomer-dimer self-association model implemented in the program Sedphat (Houtman et al., 2007) with a monomer MW of 49.752 kDa.
 
-## Fluorescence polarization
+### Fluorescence polarization
 
-Fluorescence polarization measurements were performed at 25°C using a Clariostar microplate reader (BMG Labtech, Ortenberg, Germany), 540 nm excitation and 590 nm emission wavelengths, in 96-well flat-bottom microplates (Greiner Bio-One, Frickenhausen, Germany). Proteins and fluorophor-labeled p14ARF-derived peptide were in 20 mM HEPES pH 8.0, 150 mM NaCl, 10% glycerol, 1 mM EDTA, and 5 mM DTT. Titration points were prepared individually by mixing two stock solutions containing a constant peptide concentration of 1 μM and either none or the maximum concentration of protein. Average binding curves from three independent experiments were fitted using the formulaA=Af+(Ab−Af)∙((KD+L+x)−((KD+L+c)2−4∙c∙L)2)+t∙c
+Fluorescence polarization measurements were performed at 25°C using a Clariostar microplate reader (BMG Labtech, Ortenberg, Germany), 540 nm excitation and 590 nm emission wavelengths, in 96-well flat-bottom microplates (Greiner Bio-One, Frickenhausen, Germany). Proteins and fluorophor-labeled p14ARF-derived peptide were in 20 mM HEPES pH 8.0, 150 mM NaCl, 10% glycerol, 1 mM EDTA, and 5 mM DTT. Titration points were prepared individually by mixing two stock solutions containing a constant peptide concentration of 1 μM and either none or the maximum concentration of protein. Average binding curves from three independent experiments were fitted using the formula
+
+$$
+A=A_{f}+(A_{b}−A_{f})∙((K_{D}+L+x)−\frac{\sqrt{((K_{D}+L+c)^{2}−4∙c∙L)}}{2})+t∙c 
+$$
 
 where A is the anisotropy at protein concentration c, Ab the anisotropy when the fluorophor is completely bound to protein, Af the anisotropy in the absence of protein, KD the dissociation constant, L the concentration of labelled peptide, and t a constant.
 
-## Activity assays in vitro
+### Activity assays in vitro
 
 To compare the auto-ubiquitination activities of HUWE1 (3951–4374) WT versus mutated variants, the constructs were incubated at the indicated concentrations with 200 nM E1 enzyme, 5 μM E2 enzyme (UBCH7), 500 μM ubiquitin, 3 mM ATP, and 8 mM MgCl2. Substrate ubiquitination activities of HUWE1 (3951–4374), HUWE1 (3975–4374), and HUWE1 (3993–4374) at 5 μM concentration were compared under the same conditions, except for the presence of 60 µM MCL1. To monitor the effect of p14ARF on HUWE1 auto-ubiquitination activity, reaction mixtures contained p14ARF at 15 and 75 μM concentration, respectively, and 100 nM E1, 3 μM UBCH7, 5 µM HUWE1, 100 μM ubiquitin, 3 mM ATP, and 8 mM MgCl2. Reactions were performed in 25 mM HEPES, pH 7.7 at 37°C for 15 min. They were started by the addition of ATP and quenched in reducing SDS sample buffer. Samples were subjected to 10% Tris-glycine SDS-PAGE. Western blots performed using the anti-ubiquitin antibody FK2 (Enzo Life Sciences, Exeter, UK; RRID:AB_10541840) or the anti-MCL1 antibody S-19 (Santa Cruz Biotechnology, Dallas, TX; RRID:AB_2144105). Experiments were performed as independent triplicates. The results were quantified with ImageJ (RRID:SCR_003070) (Abràmoff and Magalhães, 2004), when appropriate, and the mean and standard deviations were plotted.
 
-## Cell-based assays
+### Cell-based assays
 
 HeLa (RRID:CVCL_0030) and HEK293 (RRID:CVCL_0045) cell lines were obtained from ATCC (Manassas, VA), authenticated by STR profiling. Cells were cultured in DMEM medium supplemented with 10% FBS and 1% penicillin/streptomycin and were regularly tested for mycoplasma contamination, using the Venor GeM mycoplasma PCR detection kit (Minerva Biolabs, Berlin, Germany). Transient transfections with the indicated plasmids were conducted in six-well plates using polyethylenimine, according to standard protocols. Stable HeLa cell lines were generated by lentiviral transduction, as described previously (Wiese et al., 2015). For transposon-mediated gene expression HUWE1-expressing transposon vectors were co-transfected with the SB transposase-expressing vector (Mátés et al., 2009) into HeLa cells, using polyethylenimine, and stable cell pools were established by selection with puromycin.
 
@@ -317,6 +558,6 @@ For in vivo ubiquitination assays, cells were lysed by sonication in urea buffer
 
 For immunoprecipitation, cells were lysed in TNT buffer (50 mM Tris pH 8.0, 250 mM NaCl, and 1% Triton X-100), supplemented with protease and phosphatase inhibitor cocktails (Sigma-Aldrich). Lysates were briefly sonicated and cleared by centrifugation. Protein complexes were recovered using protein G-agarose (Sigma-Aldrich) with anti-HA (C29F4, Cell Signaling Technology) or anti-FLAG (M2, Sigma-Aldrich) antibodies. Precipitated proteins were resolved on 10% SDS Bis-Tris gels and immunoblotted using the anti-HA (6E2, Cell Signaling Technology) and anti-FLAG (M2, Sigma-Aldrich) antibodies.
 
-## Accession numbers
+### Accession numbers
 
 Atomic coordinates and structure factors have been deposited in the Protein Data Bank under accession code 5LP8.

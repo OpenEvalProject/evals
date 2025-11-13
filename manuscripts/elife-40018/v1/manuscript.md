@@ -44,63 +44,109 @@ Allow me to introduce our fictitious Professor Lamarr, who has been investigatin
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig1-v1.jpg)
 
-**Figure 1.:** Chlamydomonas.(a) A light sheet is used to gather the algae, which are swimming in a petri dish, into a narrow strip of cells along the -axis. (yb) After the light is turned off, the cells swim randomly and spread out. The concentration profile, , is then measured along a thin strip parallel to the C⁢(x,t)-axis; x is time.t
+**Figure 1.:** (a) A light sheet is used to gather the algae, which are swimming in a petri dish, into a narrow strip of cells along the $y$-axis. (b) After the light is turned off, the cells swim randomly and spread out. The concentration profile, $C⁢(x,t)$, is then measured along a thin strip parallel to the $x$-axis; $t$ is time.
 
-Lamarr measures the normalized concentration profiles, C⁢(x,t), in a thin strip that is perpendicular to the initial line of cells, obtaining the data shown in Figure 2a. The sharply-peaked profile at early times gradually spreads out until the Petri dish is uniformly filled with cells. She measured the variance ⟨x2⟩ of the concentration profile, and found the linear relation ⟨x2⟩=𝒟t, with 𝒟=0.2 mm2/s (Figure 2b). Finally, the peak height C⁢(0,t) decays smoothly with time (Figure 2c). By systematic experimentation, she found that the basic results were insensitive to the precise size of the initial gathering, and that various swimming mutants of Chlamydomonas displayed the same behavior, albeit with different values of 𝒟.
+Lamarr measures the normalized concentration profiles, $C⁢(x,t)$, in a thin strip that is perpendicular to the initial line of cells, obtaining the data shown in Figure 2a. The sharply-peaked profile at early times gradually spreads out until the Petri dish is uniformly filled with cells. She measured the variance $⟨x^{2}⟩$ of the concentration profile, and found the linear relation $⟨x^{2}⟩=𝒟t$, with $𝒟=0.2$ mm2/s (Figure 2b). Finally, the peak height $C⁢(0,t)$ decays smoothly with time (Figure 2c). By systematic experimentation, she found that the basic results were insensitive to the precise size of the initial gathering, and that various swimming mutants of Chlamydomonas displayed the same behavior, albeit with different values of $𝒟$.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig2-v1.jpg)
 
-**Figure 2.:** Chlamydomonas.(a) Concentration profiles, , normalized to unity, at the following times: 1 second (red), 3 seconds (green), 7 seconds (blue) and 30 seconds (black). (C⁢(x,t)b) The variance, , of the data shown in (⟨x2⟩a) as a function of time; the dashed magenta line is a linear fit to the data. (c) The peak height, , of the data shown in (C⁢(0,t)a) as a function of time.
+**Figure 2.:** (a) Concentration profiles, $C⁢(x,t)$, normalized to unity, at the following times: 1 second (red), 3 seconds (green), 7 seconds (blue) and 30 seconds (black). (b) The variance, $⟨x^{2}⟩$, of the data shown in (a) as a function of time; the dashed magenta line is a linear fit to the data. (c) The peak height, $C⁢(0,t)$, of the data shown in (a) as a function of time.
 
-## Results v1: Experimental observations explained by a microscopic model
+### Results v1: Experimental observations explained by a microscopic model
 
-In this version of Results, we begin with a theoretical model of the random motions of individual cells and deduce from it a population-level description with which to analyze the data. In the simplest picture, we assume that cells move only to the left and right along the x-axis, and the cells are constrained to sit on a discrete set of points, at positions xm=m⁢Δ, where m=1,2,3,… (Figure 3a). Likewise, we assume time is discrete, so at each time tn=n⁢τ, n=1,2,3,…, a cell moves with probability 1/2 to the left or right, as indicated by the arrows in Figure 3a.
+In this version of Results, we begin with a theoretical model of the random motions of individual cells and deduce from it a population-level description with which to analyze the data. In the simplest picture, we assume that cells move only to the left and right along the $x$-axis, and the cells are constrained to sit on a discrete set of points, at positions $x_{m}=m⁢Δ$, where $m=1,2,3,…$ (Figure 3a). Likewise, we assume time is discrete, so at each time $t_{n}=n⁢\tau$, $n=1,2,3,…$, a cell moves with probability $1/2$ to the left or right, as indicated by the arrows in Figure 3a.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig3-v1.jpg)
 
-**Figure 3.:** (a) A cell at site  moves with probability m to the left or right. (1/2b) Diagram illustrating the counting that underlies the evolution equation (Equation 1).
+**Figure 3.:** (a) A cell at site $m$ moves with probability $1/2$ to the left or right. (b) Diagram illustrating the counting that underlies the evolution equation (Equation 1).
 
-In order to find an evolution equation for the probability Cn⁢(m) of finding a cell at position m⁢Δ⁢x at time n⁢Δ⁢t we observe (Figure 3b) that cells that appear at point m at time n+1 arrived there by moving to the right from point m-1 or by moving to the left from point m+1 at the previous time step (each with probability 1/2). Thus we can deduce that(1)Cn+1⁢(m)=12⁢Cn⁢(m+1)+12⁢Cn⁢(m-1).
+In order to find an evolution equation for the probability $C_{n}⁢(m)$ of finding a cell at position $m⁢Δ⁢x$ at time $n⁢Δ⁢t$ we observe (Figure 3b) that cells that appear at point $m$ at time $n+1$ arrived there by moving to the right from point $m-1$ or by moving to the left from point $m+1$ at the previous time step (each with probability $1/2$). Thus we can deduce that
 
-We now imagine that these probabilities are varying sufficiently slowly in space and time that we can use the following Taylor expansions: Cn+1(m)≃Cn(m)+τ(∂Cn(m)/∂t)+⋯; and Cn(m±1)≃ Cn(m)±Δ(∂Cn(m)/∂x)+(Δ2/2)(∂2Cn(m)/∂x2)+⋯. Collecting terms, we deduce that the ‘continuum limit’ for this one-dimensional random walk is(2)∂C∂t=D∂2C∂x2, with D=Δ22τ.
+$$
+C_{n+1}⁢(m)=\frac{1}{2}⁢C_{n}⁢(m+1)+\frac{1}{2}⁢C_{n}⁢(m-1).
+$$
 
-We term this the ‘diffusion equation’, where the diffusion constant D has units of length2/time. Although the above was derived in the context of a model with discrete space and time coordinates, the crucial point is that we can more generally interpret Δ as the typical distance a cell travels between sharp turns, and τ as the time between such turns. If U is the swimming speed between turns, then Δ∼U⁢τ, so we can write D=U2⁢τ/2. From tracking studies of Chlamydomonas, we know that U∼0.1 mm/s, and τ∼10 s, and therefore Δ∼1 mm and D∼0.1 mm2/s.
+We now imagine that these probabilities are varying sufficiently slowly in space and time that we can use the following Taylor expansions: $C_{n+1}(m)≃C_{n}(m)+\tau(∂C_{n}(m)/∂t)+⋯$; and $C_{n}(m\pm1)≃$ $C_{n}(m)\pmΔ(∂C_{n}(m)/∂x)+(Δ^{2}/2)(∂^{2}C_{n}(m)/∂x^{2})+⋯$. Collecting terms, we deduce that the ‘continuum limit’ for this one-dimensional random walk is
 
-If we rewrite the diffusion equation (2) as ∂⁡C/∂⁡t=-(∂/∂⁡x)⁢(-D⁢∂⁡C/∂⁡x) then it can be written as(3)∂⁡C∂⁡t=-∂⁡J∂⁡x,where J=-D⁢∂⁡C∂⁡x,where we identify the flux J as the number of cells passing through a given point x per unit time. This relationship implies that cells pass from regions of high concentration to regions of low concentration at a rate proportional the gradient of concentration. This ‘flux form’ of the diffusion equation guarantees that the total number of cells, N=∫-∞∞𝑑x⁢C⁢(x,t), remains constant over time, since(4)dNdt=∫−∞∞dx∂C(x,t)∂t=−∫−∞∞dx∂J∂x=J(−∞)−J(+∞).
+$$
+\frac{∂C}{∂t}=D\frac{∂^{2}C}{∂x^{2}}, with D=\frac{Δ^{2}}{2\tau}.
+$$
 
-Thus, provided the flux J goes to zero far away from our point of observation, N is constant.
+We term this the ‘diffusion equation’, where the diffusion constant $D$ has units of length$^{2}$/time. Although the above was derived in the context of a model with discrete space and time coordinates, the crucial point is that we can more generally interpret $Δ$ as the typical distance a cell travels between sharp turns, and $\tau$ as the time between such turns. If $U$ is the swimming speed between turns, then $Δ∼U⁢\tau$, so we can write $D=U^{2}⁢\tau/2$. From tracking studies of Chlamydomonas, we know that $U∼0.1$ mm/s, and $\tau∼10$ s, and therefore $Δ∼1$ mm and $D∼0.1$ mm$^{2}$/s.
 
-The relationship (Fick’s Law) J=-D⁢∂⁡C/∂⁡x can be tested experimentally. Lamarr recorded the distributions of cells at the times indicated in Figure 2 and then again 0.2 s later. As shown in Figure 4a for one pair, such measurements yield the flux, J, and concentration gradient, ∂⁡C/∂⁡x each as functions of x (Figure 4b), and we see that, apart from the overall scale, they are oppositely signed, as predicted by (3). But we can now go one step further and plot J at each point x and time t versus ∂⁡C/∂⁡x at those same x and t values. If the theory is correct, then every data set should collapse on to a single straight line, and indeed this is the case (Figure 4c). According to the theory above, the slope of the line in Figure 4c is the diffusion constant D; we obtain D=0.1 mm2/s, which is consistent with the microscopic interpretation in terms of motility.
+If we rewrite the diffusion equation (2) as $\partial⁡C/\partial⁡t=-(\partial/\partial⁡x)⁢(-D⁢\partial⁡C/\partial⁡x)$ then it can be written as
+
+$$
+\frac{\partial⁡C}{\partial⁡t}=-\frac{\partial⁡J}{\partial⁡x},where J=-D⁢\frac{\partial⁡C}{\partial⁡x},
+$$
+
+where we identify the flux $J$ as the number of cells passing through a given point $x$ per unit time. This relationship implies that cells pass from regions of high concentration to regions of low concentration at a rate proportional the gradient of concentration. This ‘flux form’ of the diffusion equation guarantees that the total number of cells, $N=\int_{-∞}^{∞}𝑑x⁢C⁢(x,t)$, remains constant over time, since
+
+$$
+\frac{dN}{dt}=\int_{−∞}^{∞}dx\frac{∂C(x,t)}{∂t}=−\int_{−∞}^{∞}dx\frac{∂J}{∂x}=J(−∞)−J(+∞).
+$$
+
+Thus, provided the flux $J$ goes to zero far away from our point of observation, $N$ is constant.
+
+The relationship (Fick’s Law) $J=-D⁢\partial⁡C/\partial⁡x$ can be tested experimentally. Lamarr recorded the distributions of cells at the times indicated in Figure 2 and then again 0.2 s later. As shown in Figure 4a for one pair, such measurements yield the flux, $J$, and concentration gradient, $\partial⁡C/\partial⁡x$ each as functions of $x$ (Figure 4b), and we see that, apart from the overall scale, they are oppositely signed, as predicted by (3). But we can now go one step further and plot $J$ at each point $x$ and time $t$ versus $\partial⁡C/\partial⁡x$ at those same $x$ and $t$ values. If the theory is correct, then every data set should collapse on to a single straight line, and indeed this is the case (Figure 4c). According to the theory above, the slope of the line in Figure 4c is the diffusion constant $D$; we obtain $D=0.1$ mm2/s, which is consistent with the microscopic interpretation in terms of motility.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig4-v1.jpg)
 
-**Figure 4.:** (a) Concentration profiles, , at times C⁢(x,t) s t=3and  s t=3.2. (b) The flux of cells past a given point,  (black; left axis), and the concentration gradient, J (yellow; right axis), versus position, ∂⁡C/∂⁡x. (xc) Flux, , versus concentration gradient, J, for all the values of ∂⁡C/∂⁡x and x shown in tFigure 2a. The dashed magenta line has a slope  mmD=0.12/s.
+**Figure 4.:** (a) Concentration profiles, $C⁢(x,t)$, at times $t=3$ s and $t=3.2$ s . (b) The flux of cells past a given point, $J$ (black; left axis), and the concentration gradient, $\partial⁡C/\partial⁡x$ (yellow; right axis), versus position, $x$. (c) Flux, $J$, versus concentration gradient, $\partial⁡C/\partial⁡x$, for all the values of $x$ and $t$ shown in Figure 2a. The dashed magenta line has a slope $D=0.1$ mm2/s.
 
-## Results v2: Dimensional analysis leads to the diffusion equation
+### Results v2: Dimensional analysis leads to the diffusion equation
 
-In this version of the Results section our goal is to infer directly from the data a differential equation for the time evolution of the algal concentration C⁢(x,t), which is measured in organisms per mm, hence units of 1/length. The variance ⟨x2⟩ has, of course, units of length squared, so we can define a characteristic, time-dependent length ℓ⁢(t)=⟨x2⟩. From the fit to the data in Figure 2b we infer that the width of C⁢(x,t) grows as(5)ℓ⁢(t)∼𝒟⁢t.
+In this version of the Results section our goal is to infer directly from the data a differential equation for the time evolution of the algal concentration $C⁢(x,t)$, which is measured in organisms per mm, hence units of 1/length. The variance $⟨x^{2}⟩$ has, of course, units of length squared, so we can define a characteristic, time-dependent length $ℓ⁢(t)=\sqrt{⟨x^{2}⟩}$. From the fit to the data in Figure 2b we infer that the width of $C⁢(x,t)$ grows as
 
-A very natural question is whether ℓ⁢(t) is the only intrinsic length scale that can be extracted from the data. As C⁢(x,t) has units of number/length we can, without loss of generality, write C⁢(x,t)=ℓ⁢(t)-1⁢F⁢(x,t) for some unknown function F that is itself dimensionless. And since F is dimensionless, it must be a function of a variable that is also dimensionless (similar to the way that sin⁡(θ) is a function of θ). Let us call this dimensionless variable ξ. With x and ℓ⁢(t) to work with, only the ratio is dimensionless, so we deduce that ξ=x/ℓ⁢(t). Thus, we expect(6)C⁢(x,t)=1ℓ⁢(t)⁢F⁢(xℓ⁢(t)).
+$$
+ℓ⁢(t)∼\sqrt{𝒟⁢t}.
+$$
 
-Let us now see if this form is consistent with the data. First, we note that it guarantees that the total number of cells, N=∫-∞∞𝑑x⁢C⁢(x,t), does not change with time because(7)N=∫−∞∞dx C(x,t)=∫∞∞dx1ℓ(t)F(xℓ(t))=∫−∞∞dξF(ξ),and ∫-∞∞𝑑ξ⁢F⁢(ξ) is a number that does not depend on time (just like ∫0π𝑑θ⁢sin⁡(θ) is a number). Given (Equation 6), the peak concentration C⁢(0,t) is just F⁢(0)/ℓ⁢(t), where F⁢(0) is again just a number. With the scaling in (Equation 5) we deduce that C⁢(0,t)∼1/t. A replotting of the data in Figure 2c on a log-log scale shows that this is true (Figure 5a).
+A very natural question is whether $ℓ⁢(t)$ is the only intrinsic length scale that can be extracted from the data. As $C⁢(x,t)$ has units of number/length we can, without loss of generality, write $C⁢(x,t)=ℓ⁢(t)^{-1}⁢F⁢(x,t)$ for some unknown function $F$ that is itself dimensionless. And since $F$ is dimensionless, it must be a function of a variable that is also dimensionless (similar to the way that $sin⁡(\theta)$ is a function of $\theta$). Let us call this dimensionless variable $ξ$. With $x$ and $ℓ⁢(t)$ to work with, only the ratio is dimensionless, so we deduce that $ξ=x/ℓ⁢(t)$. Thus, we expect
+
+$$
+C⁢(x,t)=\frac{1}{ℓ⁢(t)}⁢F⁢(\frac{x}{ℓ⁢(t)}).
+$$
+
+Let us now see if this form is consistent with the data. First, we note that it guarantees that the total number of cells, $N=\int_{-∞}^{∞}𝑑x⁢C⁢(x,t)$, does not change with time because
+
+$$
+N=\int_{−∞}^{∞}dx C(x,t)=\int_{∞}^{∞}dx\frac{1}{ℓ(t)}F(\frac{x}{ℓ(t)})=\int_{−∞}^{∞}dξF(ξ),
+$$
+
+and $\int_{-∞}^{∞}𝑑ξ⁢F⁢(ξ)$ is a number that does not depend on time (just like $\int_{0}^{\pi}𝑑\theta⁢sin⁡(\theta)$ is a number). Given (Equation 6), the peak concentration $C⁢(0,t)$ is just $F⁢(0)/ℓ⁢(t)$, where $F⁢(0)$ is again just a number. With the scaling in (Equation 5) we deduce that $C⁢(0,t)∼1/\sqrt{t}$. A replotting of the data in Figure 2c on a log-log scale shows that this is true (Figure 5a).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/40018/elife-40018-fig5-v1.jpg)
 
-**Figure 5.:** (a) The peak amplitude, , from C⁢(0,t)Figure 2c plotted as a function time, , on a log-log scale; the dashed magenta line has a slope of t, which shows that -1/2. (C⁢(0,t)∼t-1/2b) When the data in Figure 2a are rescaled (see main text) and replotted, they collapse to a universal curve; the dashed magenta curve is the function .exp⁡(-ξ2/2)
+**Figure 5.:** (a) The peak amplitude, $C⁢(0,t)$, from Figure 2c plotted as a function time, $t$, on a log-log scale; the dashed magenta line has a slope of $-1/2$, which shows that $C⁢(0,t)∼t^{-1/2}$. (b) When the data in Figure 2a are rescaled (see main text) and replotted, they collapse to a universal curve; the dashed magenta curve is the function $exp⁡(-ξ^{2}/2)$.
 
-A significant prediction of the analysis leading to (6) is that the data at different times should collapse when plotted as C⁢(x,t)/C⁢(0,t) versus x/ℓ⁢(t), for this ratio is just F⁢(ξ)/F⁢(0). (Dividing C⁢(x,t) by C⁢(0,t) means that we rescale the heights of the various curves; and dividing x by ℓ⁢(t) means that we allow for expansion of the initial concentration of cells). If this holds, then it implies that ℓ⁢(t) is the only characteristic length in the system. A test of this is shown in Figure 5b, where we see a good collapse of the data to a universal curve.
+A significant prediction of the analysis leading to (6) is that the data at different times should collapse when plotted as $C⁢(x,t)/C⁢(0,t)$ versus $x/ℓ⁢(t)$, for this ratio is just $F⁢(ξ)/F⁢(0)$. (Dividing $C⁢(x,t)$ by $C⁢(0,t)$ means that we rescale the heights of the various curves; and dividing $x$ by $ℓ⁢(t)$ means that we allow for expansion of the initial concentration of cells). If this holds, then it implies that $ℓ⁢(t)$ is the only characteristic length in the system. A test of this is shown in Figure 5b, where we see a good collapse of the data to a universal curve.
 
-It is natural to seek a differential equation that is consistent with the scaling x2∼t and would provide a quantitative prediction of the function F. First we consider if inertia is relevant in this system. We know from fluid dynamics that inertia is irrelevant when the Reynolds number R⁢e=U⁢L/ν is much less than unity: U is the typical speed of a particle, L is the typical length of a particle, and ν is the kinematic viscosity (which is defined as ν=η/ρ, where η is the fluid viscosity and ρ is the fluid density). For Chlamydomonas swimming in water (U∼10-2 cm/s, L∼10-3 cm, and ν=10-2 cm2/s), we have R⁢e∼10-3 and inertia is indeed negligible.
+It is natural to seek a differential equation that is consistent with the scaling $x^{2}∼t$ and would provide a quantitative prediction of the function $F$. First we consider if inertia is relevant in this system. We know from fluid dynamics that inertia is irrelevant when the Reynolds number $R⁢e=U⁢L/ν$ is much less than unity: $U$ is the typical speed of a particle, $L$ is the typical length of a particle, and $ν$ is the kinematic viscosity (which is defined as $ν=η/ρ$, where $η$ is the fluid viscosity and $ρ$ is the fluid density). For Chlamydomonas swimming in water ($U∼10^{-2}$ cm/s, $L∼10^{-3}$ cm, and $ν=10^{-2}$ cm2/s), we have $R⁢e∼10^{-3}$ and inertia is indeed negligible.
 
-The differential equation we seek will have derivatives both in time and in space. In the absence of inertia, we expect that the equation for C⁢(x,t) should only involve first-order derivatives in time (as second derivatives would imply inertia and accelerations). With the scaling x2∼t we expect two space derivatives for one time derivative, so a consistent equation would be(8)∂⁡C∂⁡t=D⁢∂2⁡C∂2⁡x,where the parameter D should be proportional to the empirical 𝒟 obtained from Figure 2b.
+The differential equation we seek will have derivatives both in time and in space. In the absence of inertia, we expect that the equation for $C⁢(x,t)$ should only involve first-order derivatives in time (as second derivatives would imply inertia and accelerations). With the scaling $x^{2}∼t$ we expect two space derivatives for one time derivative, so a consistent equation would be
 
-To find a solution of (Equation 8) in the form of (Equation 6), we use D to construct a length l=D⁢t and find (see Mathematical Details) the normalized distribution(9)C⁢(x,t)=14⁢π⁢D⁢t⁢exp⁡(-x24⁢D⁢t).
+$$
+\frac{\partial⁡C}{\partial⁡t}=D⁢\frac{\partial^{2}⁡C}{\partial^{2}⁡x},
+$$
 
-Given this distribution, we compute the variance as(10)⟨x2⟩=∫-∞∞x2⁢C⁢(x,t)=2⁢D⁢t.
+where the parameter $D$ should be proportional to the empirical $𝒟$ obtained from Figure 2b.
 
-Comparing with our empirical observation (Equation 5), we deduce 𝒟=2D (the promised factor of two!) and therefore that the dimensionless function is F⁢(ξ)=(2⁢π)-1/2⁢exp⁡(-ξ2/2). The ratio F⁢(ξ)/F⁢(0)=exp⁡(-ξ2/2) is shown as the dashed line in Figure 5b, in good agreement with the data.
+To find a solution of (Equation 8) in the form of (Equation 6), we use $D$ to construct a length $l=\sqrt{D⁢t}$ and find (see Mathematical Details) the normalized distribution
 
-Taken together, the experimental observations in Figure 2 and the phenomenological analysis above, confirmed in Figure 5, suggest that the diffusion equation in (Equation 8) provides a sound description of the spreading of cells that execute random motions. It indicates that different organisms, with different diffusion constants, obey the same fundamental scaling laws, insensitive to the details of the underlying random motions. Note that at this level of analysis we do not have a microscopic interpretation of the diffusion constant in terms of the fluid viscosity and aspects of cell motility; it is simply a phenomenological parameter that can be used to characterize a given microorganism. On the other hand, if we knew from microscopical observations that an organism’s motion consists of straight segments interrupted by random reorientations, as in the case of Chlamydomonas and indeed E. coli (Berg, 1993), then by dimensional analysis (again) we could deduce D∼Δ2/τ∼U2⁢τ in terms of the run length Δ, speed U, and time between turns τ.
+$$
+C⁢(x,t)=\frac{1}{\sqrt{4⁢\pi⁢D⁢t}}⁢exp⁡(-\frac{x^{2}}{4⁢D⁢t}).
+$$
+
+Given this distribution, we compute the variance as
+
+$$
+⟨x^{2}⟩=\int_{-∞}^{∞}x^{2}⁢C⁢(x,t)=2⁢D⁢t.
+$$
+
+Comparing with our empirical observation (Equation 5), we deduce $𝒟=2D$ (the promised factor of two!) and therefore that the dimensionless function is $F⁢(ξ)=(2⁢\pi)^{-1/2}⁢exp⁡(-ξ^{2}/2)$. The ratio $F⁢(ξ)/F⁢(0)=exp⁡(-ξ^{2}/2)$ is shown as the dashed line in Figure 5b, in good agreement with the data.
+
+Taken together, the experimental observations in Figure 2 and the phenomenological analysis above, confirmed in Figure 5, suggest that the diffusion equation in (Equation 8) provides a sound description of the spreading of cells that execute random motions. It indicates that different organisms, with different diffusion constants, obey the same fundamental scaling laws, insensitive to the details of the underlying random motions. Note that at this level of analysis we do not have a microscopic interpretation of the diffusion constant in terms of the fluid viscosity and aspects of cell motility; it is simply a phenomenological parameter that can be used to characterize a given microorganism. On the other hand, if we knew from microscopical observations that an organism’s motion consists of straight segments interrupted by random reorientations, as in the case of Chlamydomonas and indeed E. coli (Berg, 1993), then by dimensional analysis (again) we could deduce $D∼Δ^{2}/\tau∼U^{2}⁢\tau$ in terms of the run length $Δ$, speed $U$, and time between turns $\tau$.
 
 ## Discussion
 
@@ -118,14 +164,22 @@ This essay has touched on two tensions – between theory and experiment, and be
 
 ## Methods
 
-## Generating the data
+### Generating the data
 
-Full disclosure – rather than do the experiments, I numerically solved the Langevin equation d⁢x/d⁢t=η⁢(t) for the time evolution of the position x⁢(t) for a single alga undergoing random motion, where η⁢(t) is a random variable with zero mean and temporal correlation function ⟨η⁢(t)⁢η⁢(t′)⟩=2⁢D⁢δ⁢(t-t′). In the results described here, I set D=0.1 mm2/s, approximately that of Chlamydomonas (Polin et al., 2009). The equation was integrated forward a time increment δ⁢t from time index i to i+1 using the discrete representation xi+1=xi+2⁢D⁢δ⁢t⁢ηi, where ηi is a normally distributed random variable. The data represent averages over 30,000 realizations.
+Full disclosure – rather than do the experiments, I numerically solved the Langevin equation $d⁢x/d⁢t=η⁢(t)$ for the time evolution of the position $x⁢(t)$ for a single alga undergoing random motion, where $η⁢(t)$ is a random variable with zero mean and temporal correlation function $⟨η⁢(t)⁢η⁢(t^{′})⟩=2⁢D⁢\delta⁢(t-t^{′})$. In the results described here, I set $D=0.1$ mm2/s, approximately that of Chlamydomonas (Polin et al., 2009). The equation was integrated forward a time increment $\delta⁢t$ from time index $i$ to $i+1$ using the discrete representation $x_{i+1}=x_{i}+\sqrt{2⁢D⁢\delta⁢t}⁢η_{i}$, where $η_{i}$ is a normally distributed random variable. The data represent averages over 30,000 realizations.
 
-## Mathematical details
+### Mathematical details
 
-To obtain the normalized concentration profile (Equation 9) we simply substitute the latter into the diffusion (Equation 8), with χ=x/D⁢t. We obtain(11)d2⁢Fd⁢χ2+12⁢(F+χ⁢d⁢Fd⁢χ)=0.
+To obtain the normalized concentration profile (Equation 9) we simply substitute the latter into the diffusion (Equation 8), with $χ=x/\sqrt{D⁢t}$. We obtain
 
-Integrating (Equation 11) once and imposing the boundary condition that F→0 as χ→∞ we obtain d⁢F/d⁢χ+(1/2)⁢χ⁢F=0, which integrates to(12)F(ξ)=Aexp⁡(−χ2/4).
+$$
+\frac{d^{2}⁢F}{d⁢χ^{2}}+\frac{1}{2}⁢(F+χ⁢\frac{d⁢F}{d⁢χ})=0.
+$$
+
+Integrating (Equation 11) once and imposing the boundary condition that $F→0$ as $χ→∞$ we obtain $d⁢F/d⁢χ+(1/2)⁢χ⁢F=0$, which integrates to
+
+$$
+F(ξ)=Aexp⁡(−χ^{2}/4).
+$$
 
 Normalizing the associated concentration profile and re-expressing the result in terms of the original variables yields the result (Equation 9).

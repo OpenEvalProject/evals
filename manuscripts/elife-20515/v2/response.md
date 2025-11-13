@@ -108,9 +108,7 @@ Importantly, please note that we do not consider the framework employed in Bellu
 
 In the re-revised version, we substantially edited a previous Discussion paragraph to clarify these points (please see subsection “Statistical inference of phase-phase coupling”, third paragraph).
 
-Supplementary remarks: In the right panel of Figure 6A, Belluscio et al. show the mean phase-phase plot over all surrogate runs. In our paper we note that plotting the mean number of counts across all surrogates is qualitatively identical to plotting the pool of counts over all surrogate runs, up to a scaling factor, as shown in Author response image 1.10.7554/eLife.20515.031Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.20515.031
-
-DOI: http://dx.doi.org/10.7554/eLife.20515.031
+Supplementary remarks: In the right panel of Figure 6A, Belluscio et al. show the mean phase-phase plot over all surrogate runs. In our paper we note that plotting the mean number of counts across all surrogates is qualitatively identical to plotting the pool of counts over all surrogate runs, up to a scaling factor, as shown in Author response image 1.10.7554/eLife.20515.031Author response image 1.
 
 Clearly, the scaling factor is the number of surrogates (n=1000). The equivalence above motivated us to state that the procedure in Belluscio et al. is akin to what we call as a pooled surrogate analysis: there is no visual inspection of phase-phase plots for single surrogate runs but only the inspection of their average, which is equivalent to the visual inspection of their pool (of note, this improper visual analysis was also performed in Zheng et al. 2016). At any event, we stress that there is no proper Single Run surrogate analysis performed at the level of an n:m phase-locking metric such as the Rn:m in Belluscio et al.
 

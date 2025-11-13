@@ -31,17 +31,17 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Molecular Biosciences, The University of Texas at Austin Austin United States
-2. https://ror.org/00hj54h04 Department of Chemical Engineering, The University of Texas at Austin Austin United States
-3. https://ror.org/049emcs32 Department of Chemistry and Biochemistry, The University of Texas at Dallas Dallas United States
-4. https://ror.org/00hj54h04 Division of Chemical Biology and Medicinal Chemistry, The University of Texas at Austin Austin United States
-5. https://ror.org/00wbskb04 Texas Biomedical Research Institute San Antonio United States
-6. https://ror.org/05kzjxq56 Laboratory of Veterinary Zoonosis, College of Veterinary Medicine, Chonnam National University Gwangju Republic of Korea
-7. https://ror.org/01an7q238 Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States
-8. https://ror.org/01an7q238 Biophysics Graduate Program, University of California, Berkeley Berkeley United States
+1. Department of Molecular Biosciences, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. Department of Chemical Engineering, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+3. Department of Chemistry and Biochemistry, The University of Texas at Dallas Dallas United States ([ROR:049emcs32](https://ror.org/049emcs32))
+4. Division of Chemical Biology and Medicinal Chemistry, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+5. Texas Biomedical Research Institute San Antonio United States ([ROR:00wbskb04](https://ror.org/00wbskb04))
+6. Laboratory of Veterinary Zoonosis, College of Veterinary Medicine, Chonnam National University Gwangju Republic of Korea ([ROR:05kzjxq56](https://ror.org/05kzjxq56))
+7. Department of Molecular and Cell Biology, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+8. Biophysics Graduate Program, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
 9. Retired Kensington United States
-10. https://ror.org/01an7q238 Department of Chemistry, University of California, Berkeley Berkeley United States
-11. https://ror.org/00hj54h04 LaMontagne Center for Infectious Diseases, The University of Texas at Austin Austin United States
+10. Department of Chemistry, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))
+11. LaMontagne Center for Infectious Diseases, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
@@ -59,51 +59,133 @@ Whereas antibodies binding the spike RBD have been rigorously classified based o
 
 ## Results
 
-## A MERS S2 mouse immune library yields antibody 3A3 that also binds SARS-CoV-2 spike
+### A MERS S2 mouse immune library yields antibody 3A3 that also binds SARS-CoV-2 spike
 
 Balb/c mice were immunized with stabilized MERS-CoV S2 protein and boosted 4 weeks later, resulting in robust serum antibody titers against the immunogen detectable at >1:10,000 dilution. The MERS-CoV S2 protein MERS SS.V1 spans residues 763–1291 of the MERS-CoV spike protein with a C-terminal T4 phage fibritin (foldon) domain that assembles into a prefusion trimer (Hsieh et al., 2021). An immune antibody library with ~3.1 × 108 individual clones expressed as scFv-c-myc tag-pIII fusion proteins was generated and displayed on M13 bacteriophage. After 3–4 panning rounds, >80 clones binding both MERS S2 and SARS-2 spike were characterized, with ~85% of clones binding the shared foldon domain by ELISA (Figure 1—figure supplement 2). One foldon binder, 3E11, was carried forward as a control antibody along with the most promising spike-binding clone identified by phage ELISA, 3A3.
 
-## Antibody 3A3 binds the S2 core at the HR1/CH hairpin hinge
+### Antibody 3A3 binds the S2 core at the HR1/CH hairpin hinge
 
 Antibody 3A3 binds a highly conserved, conformational epitope spanning residues 980–1006 of the SARS-2 spike, at the apex of the S2 domain, distal to the viral envelope (Figure 1a), as determined by a combination of hydrogen-deuterium exchange mass spectrometry (HDX) and low-resolution cryo-EM. This region spans the hairpin hinge, joining the heptad repeat 1 (HR1) and the central helices (CH), and is referred to hereafter as the hinge epitope. This region plays a critical role in the spike conformational changes required for fusion of the viral envelope and target cell membrane. In the intact spike homotrimer, the membrane-proximal, stalk-like S2 domain is capped by S1 whose N-terminal and receptor-binding domains (RBD) form a responsive surface allowing each RBD to extend to an ‘up’ position for receptor binding or tuck into a ‘down’ position for immune shielding of the receptor-binding site. After the RBDs engage a receptor in the up position and target cell proteases prime the spike, the S1 domain is released from S2, propelling the fusion peptide into the target cell or endosomal membrane. The hinge then extends to form an alpha helix that bridges the viral envelope and target cell membrane, initiating fusion and leaving the spike in the post-fusion state (Cai et al., 2020).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-v3.jpg)
+
+**Figure 1.:** (a) Monomeric SARS-2 2P spike (PDBID: 6VSB chain B) colored according to the HDX difference in deuterium fractional uptake between SARS-2 HexaPro spike alone and with 3A3 IgG at 102 s exchange. Residues lacking coverage are indicated in black. The figure was prepared using DynamX per residue output without statistics and PyMOL. (b) Cryo-EM 2D class averages of the SARS-2 S2 subunit bound to the 3A3 Fab. (c) Cryo-EM 3D reconstruction of the S2–3A3 Fab complex showing each S2 protomer binding one 3A3 Fab molecule. The pink 3D volume was generated from a focused refinement of one S2 protomer and 3A3 Fab. (d) A structure of the S2 subunit and a predicted structure of the 3A3 Fab shown as ribbons and fit into the cryo-EM map. The 3A3 Fab light (LC, orange) and heavy (HC, red) chains sandwich the apex of the spike S2 hinge (cyan).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Percent sequence identity and similarity between the spike (a and c, respectively) S1 subunits and (b and d, respectively) S2 subunits of the seven coronaviruses known to infect humans were analyzed using LALIGN/PLALIGN local alignment. The default values of the gap penalties of open = –12 and gap = –2 were used for S2 alignments but reduced to open = –10 and gap = –1 to allow for variable domain lengths in S1. GenBank protein sequence identification numbers (protein_id) used in these alignments were: NP_073551.1 for 229E, AFD64754.1 for NL63, BBA20979.1 for OC43, BBA20986.1 for HKU1, YP_009047204.1 for MERS, AYV99817.1 for SARS-1–1, and YP_009724390.1 for SARS-2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Most monoclonal phage tested by ELISA on SARS-2 spike or the unrelated RSV F foldon-coated plates had cross-reactive binding, indicating targeting of the shared foldon domain. After round 4 of panning, these data show 3A3 in black, a close relative of 3A3 (two amino acid changes) in green, two other unique antibodies in red and purple, and foldon binders with closely related CDRH3 sequences in blue.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** A total of 192 peptides were monitored, covering 56.3% of the SARS-2 HexaPro spike sequence and averaging 3.34 redundancy per amino acid. All peptides were manually checked. SARS-2 spike features are indicated on the sequence, including glycosylation sites. Glycosylation was not included in the peptide search, so no peptides are recovered surrounding these sites.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Trimeric (i and ii) and monomeric (iii) SARS-2 2P spike (PDB: 6VSB) colored according to fractional deuterium uptake of the SARS-2 HexaPro spike alone after 103 s of exchange. The figure was prepared using DynamX per residue output and PyMOL. Residues lacking coverage are indicated in black. Structural features are labeled, including the central trimer interface that shows relatively low deuterium incorporation. (b) Spectra from a spike peptide spanning residues 991–1001, within the 3A3 epitope. The spectra show the width of isotopic distributions in the deuterated samples suggestive of conformational heterogeneity.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Volcano plots showing changes in deuterium uptake in SARS-2 HexaPro spike peptides upon addition of (a) 3A3 IgG or (b) Fab after 102 s exchange. Significance cutoffs are an average change in deuterium uptake greater than 0.2 Da and a p-value less than 10–2 in a Welch’s t-test (hatched box). Black dots indicate peptides with a significant decrease in deuterium uptake and their residue boundaries are labeled. (c) Uptake plots for these peptides are shown. Traces are SARS-2 HexaPro spike alone (black), with 3A3 IgG (blue), and with 3A3 Fab (orange). Error bars are ± 2σ from three or four technical replicates and sometimes too small to be visible. The y-axis is 70% of max deuterium uptake assuming the N-terminal residue undergoes complete back-exchange. Data have not been corrected for back-exchange. (d) The difference in deuterium fractional uptake between SARS-2 HexaPro spike alone and with 3A3 Fab at 102 s exchange is projected onto monomeric SARS-2 2P spike (PDB: 6VSB chain B). Image was prepared using DynamX per residue output without statistics and PyMOL. Residues lacking coverage are indicated in black. Structural features are labeled, including the 2P mutations at residues 986 and 987 (shown as sticks).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** Volcano plots showing changes in deuterium uptake in 3A3 IgG (a) heavy chain and (b) light chain upon addition of SARS-2 HexaPro spike after 102 s exchange. Significance cutoffs are an average change in deuterium uptake greater than 0.2 Da and a p-value less than 10–2 in a Welch’s t-test (hatched box). Black dots indicate peptides with a significant decrease in deuterium uptake and their residue boundaries are labeled. (c) Uptake plots for these peptides are shown. Traces are 3A3 IgG alone (black) and with SARS-2 HexaPro spike (gray). Error bars are ± 2σ from three or four technical replicates and sometimes too small to be visible. The y-axis is 70% of max deuterium uptake assuming the N-terminal residue undergoes complete back-exchange. Data have not been corrected for back-exchange.
 
 For HDX epitope analysis, we measured deuterium uptake of the SARS-2 HexaPro (Hsieh et al., 2020) spike alone and when bound by the 3A3 IgG or 3A3 Fab (Supplementary files 1 and 2). We tracked 192 unmodified peptides (Figure 1—figure supplement 3) through the deuteration time course (101, 102, 103, and 104 s). Analysis of the raw deuterium uptake in the SARS-2 HexaPro spike alone is consistent with a trimer during exchange with relatively low deuterium uptake in the helix at the center of the trimer and high deuterium uptake in the HR1 helix at the trimer’s surface (Figure 1—figure supplement 4a). Analysis of the isotopic distribution width of peptides from regions of spike reported to display bimodal spectra (Costello et al., 2022) further suggests conformational heterogeneity consistent with the trimeric spike sampling an open conformation (Supplementary file 3 and Figure 1—figure supplement 4b). Antibody epitopes were identified by examining the difference in deuterium uptake between SARS-2 HexaPro spike in the free and antibody-bound states (Figure 1a). We defined a significant difference as greater than 0.2 Da with a p-value <0.01 (Figure 1—figure supplement 5a and b). The binding of 3A3 IgG caused a significant decrease in 12 peptides that redundantly span residues 980–1006 of the SARS-2 HexaPro spike (Figure 1—figure supplement 5c). These peptides have reduced deuterium uptake with 3A3 IgG at several timepoints during the exchange reaction. A similar result was obtained with the 3A3 Fab (Figure 1—figure supplement 5c and d).
 
 Antibody paratopes were similarly identified by comparing deuterium uptake of 3A3 IgG alone to that with an excess of SARS-2 HexaPro spike. We monitored 169 peptides that redundantly cover 80% of the 3A3 IgG sequence. This analysis implicated CDRs L2 (residues 53–59) and H3 (residues 105–109) as forming the paratope that interacts with SARS-2 HexaPro spike (Figure 1—figure supplement 6). The spike epitope identified by HDX is consistent with low-resolution cryogenic electron microscopy (cryo-EM) of 3A3 Fab bound to stabilized SARS-2 S2, which shows Fabs bound to the apex of each S2 protomer in a 1:1 stoichiometry (Figure 1b–d). The open S2 conformation of spike resulted in particles with varying degrees of protomer opening that precluded sorting into 3D classes for high-affinity structural resolution.
 
-## Access to the hinge epitope depends on spike domain dynamics
+### Access to the hinge epitope depends on spike domain dynamics
 
 Mapping of the hinge epitope onto full-length spike structures shows that this region is fully occluded by the S1 domain in the closed (three RBDs down) state but becomes increasingly visible in structures with one, two, or three RBDs up and with ACE2 bound (Figure 2a). In fact, RBDs in the down position make direct hydrogen bonds with the 3A3 epitope at residues 983–988 (Hossen et al., 2022), thereby excluding other binding interactions. Consistent with this structural analysis, simultaneous binding of ACE2 and 3A3 to spike was demonstrated by BLI in which immobilized 3A3 captured SARS-2 HexaPro and then soluble ACE2. In a similar experiment, control mAb 2–4, whose epitope spans adjacent RBDs in the down state, bound SARS-2 HexaPro but could not then bind ACE2 (Figure 2b). Additionally, 3A3 did not bind SARS-2 HexaPro spike locked into the closed conformation by engineered disulfide bonds (Henderson et al., 2020), although this constrained spike was recognized by mAb 2–4 (Figure 2c). As expected from the structural analysis, 3A3 binding does not block ACE2 binding to the spike RBDs. Moreover, the hinge epitope is only accessible when RBDs have freedom to convert to the up position.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig2-v3.jpg)
+
+**Figure 2.:** (a) Trimeric SARS-2 spike in various conformations colored according to difference in deuterium fractional uptake between SARS-2 HexaPro spike alone and with 3A3 IgG. The hinge epitope within S2 is colored dark blue in structures of wild-type SARS-2 spike in the (i) three RBDs down or closed conformation (PDB: 6XR8) and in structures of stabilized spike with (ii) one RBD up (PDB: 6VSB), (iii) two RBDs up (PDB: 7A93), or (iv) three RBDs up while bound to ACE2 (red) in top-view and (v) sideview (PDB: 7A98). Residues lacking coverage in the HDX experiment are indicated in gray. (b) Antibody 3A3 (bottom) or control mAb 2–4 (top) were coupled to anti-Fab BLI sensors and allowed to capture HexaPro or nothing (buffer, green line), then dipped into buffer (baseline), and finally dipped into ACE2-Fc (ACE2, red) or nothing (buffer, blue). (c) BLI binding of immobilized control mAb 2–4 (top) or antibody 3A3 (bottom) to 100 nM HexaPro (solid) or HexaPro locked into the ‘closed’ conformation (dashed). Vertical dashed lines indicate start of dissociation phase. (d) The network of hydrogen bonds formed by residues E1031 and R1039 across protomers deep in the S2 core is shown on intact HexaPro spike and in detail in a top view (PDB: 6XKL). (e) Antibody 3A3 was coupled to anti-Fc BLI sensors and allowed to bind HexaPro or E1031R HexaPro (E1031R) spike protein. All BLI data are representative of biological duplicates. Each experiment was repeated in technical duplicate except e, which was tested once at each concentration to allow all data to be collected simultaneously for direct comparison. (f) Model of the kinetic changes required for antibody binding to the hinge epitope, including conversion of the RBDs into the up position and some degree of opening of the S2 domain in addition to typical antibody association and dissociation kinetics (generated using PDB 6XV8 and 7A98).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The kinetics of interconversion between the closed-S2 and open-S2 states of HexaPro and HexaPro E1031R were evaluated by HDX as previously described (Costello et al., 2022). The spike proteins were incubated at 37°C for 24 hr, then incubated at 4°C, assayed for detecting the S2-open state over time, then transferred to 37°C and assayed again. The fraction closed-S2 was estimated by exposing a sample of the incubation reaction to a 1 min pulse of deuterium and quenching the labeling reaction with low pH and temperature. After LC-MS and peptide identification, the bimodal mass envelopes for all timepoints for one peptide were globally fit to a sum of two Gaussians, keeping the center and width of each Gaussian constant across all incubation time points. After fitting, the area under the lower molecular weight Gaussian was integrated to determine the fraction of closed-S2. For HexaPro, the half-life of conversion from closed to open (37°C → 4°C) was 143.5 hr and the half-life of conversion from open to closed (4°C → 37°C) was 2.5 hr. These conversions for HexaPro E1031R occur with half-lives decreased by >700-fold (0.2 hr) and >6-fold (0.4 hr), respectively.
+
 Access to S2 core epitopes is only partially understood, as are the dynamics of spike breathing and other complex intra-protein spike motions. Costello et al., 2022 showed that stabilized spike undergoes reversible protomer opening in solution to expose the S2 core and the hinge epitope. They performed an independent HDX experiment under conditions favoring the open trimer conformation to show that 3A3 exclusively binds and stabilizes an S2-open state, distinct from the open/closed states used to describe RBD motion. Consistent with this report, 3A3 has a faster on-rate for spike variants favoring S2 opening versus unmodified spike. SARS-2 HexaPro bearing an E1031R substitution, which disrupts an electrostatic interaction between E1031 and R1039 on adjacent protomers deep in the S2 base (Figure 2d), favored the S2-open state relative to unmodified HexaPro as assessed by HDX (Figure 2—figure supplement 1) and exhibited a fourfold increased on-rate for 3A3 binding (2.9 ± 0.1 µM–1 s–1) versus unmodified HexaPro spike (0.8 ± 0.1 µM–1 s–1; Figure 2e). This indicates that 3A3 binding to full-length spike occurs after the RBDs have transitioned to the up position and the S2 domain has relaxed into a more open state. Overall 3A3 binding rates thus depend on these transition rates in addition to typical antibody-antigen association and dissociation rates (Figure 2f).
 
-## Antibody 3A3 binds a conformational epitope spanning the 2P stabilizing mutations
+### Antibody 3A3 binds a conformational epitope spanning the 2P stabilizing mutations
 
 To validate the HDX and cryo-EM data and define the 3A3 epitope with single amino acid resolution, 16 solvent-exposed epitope residues were individually altered in HexaPro to assess the impact on 3A3 binding. Three changes (L984A, Q992L, and R995A) improved 3A3 binding, while five (D985L, E988Q or I, D994A, and L1001A) significantly reduced 3A3 binding by ELISA (Figure 3a, Figure 3—figure supplement 1). Substitutions nearly ablated binding at positions D985 and E988, which form a negatively charged patch adjacent to the stabilizing 2P changes, P986 and P987 (Figure 3b and c). Since E988Q is present in the spike proteins of α-coronaviruses NL63 and 229E, this suggests 3A3 binding may be limited to β-coronavirus spike proteins. When SARS-2 D614G lentivirus containing D985L, E988A, or E988Q substitutions were evaluated for the ability to infect ACE2-expressing HEK 293 cells, all had impaired infectivity (55–98% reduction at the highest titer tested; Figure 3d), suggesting that escape mutations within this epitope have a high fitness cost. Indeed, GISAID genomic sequence data analyzed by Los Alamos National Laboratory’s COVID-19 Viral Genome Analysis Pipeline (Korber et al., 2020) accessed in August 2022 showed that the Shannon entropy of positions 985 and 988 was >40-fold and >150-fold reduced relative to the average Shannon entropy of the SARS-2 S2 domain and full SARS-2 spike ectodomain, respectively. Pseudotyped virions bearing spike with 988Q found in α-coronaviruses were least impacted, consistent with tolerance to this substitution for spike function. Importantly, single mutations within this epitope that have emerged, L981F in SARS-2 Omicron BA.1 spike (which reverted in subsequent Omicron variants BA.2 through BA.5) and S982A in SARS-2 Alpha spike, had no significant impact on 3A3 binding (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig3-v3.jpg)
+
+**Figure 3.:** (a) Residues important for 3A3 binding were identified by single residue changes in HexaPro that increased or decreased binding to 3A3 relative to HexaPro. Each variant was tested with duplicate technical replicates in 2–6 independent ELISA assays. Significance relative to unaltered HexaPro was determined by ANOVA with post-hoc Tukey–Kramer test with α = 0.01; data meeting this criterion indicated by *. (b) Location of the residue changes altering binding to 3A3 shown in the HexaPro spike (6XKL) monomer and in (c) intact spike (side view) and the S2 domain (top-down view). All epitope residues (980–1006) are shown in space-fill, with residues colored according to their effect on 3A3 binding: improved binding (orange), reduced binding (teal), no effect (black), and those not altered (gray). The 2P stabilizing mutations within the hinge epitope are displayed in purple. (d) The infectivity of lentivirus pseudotyped with unmodified D614G SARS-2 spike or variants with D985L (green), E988A (light blue), and E988Q (dark blue) substitutions was compared by luciferase activity. Data shown are the mean luminescence with standard deviation of three technical replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The single-point mutants of HexaPro, D985L, E988I, D994A, and L1001A, had reduced binding to 3A3 relative to HexaPro (Figure 3a), but retained the overall size of unmodified HexaPro by SEC with elution of the main peak at ~13.75 mL on a Superose 6 Increase 30/100 column, indicating the spike was intact. Molecular weight markers (black triangles) on the x-axis are peak elution volumes from the following standards in order from left to right: thyroglobulin (669 kDa, 13.49 mL), ferritin (440 kDa, 15.40 mL), β-amylase (200 kDa, 16.75 mL), and aldolase (158 kDa, 17.91 mL).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (a) 3E11 binds reduced, denatured SARS-2 HP, SARS-2, and MERS spike proteins by Western blot, but 3A3 does not. The ladder molecular weight is labeled in kDa on the left side. (b) SDS-PAGE analysis of fresh and stressed SARS-2 and SARS-2 HexaPro spikes shows a substantial aggregation of the stressed SARS-2 spike. For each spike, 8 μg of protein was analyzed by SDS-PAGE under nonreducing conditions. Reduced band intensity of stressed SARS-2 spike (bottom arrow) and appearance of a band just under the loading wells (top arrow) indicates aggregation products not apparent in the other samples. Densitometry analysis (ImageJ) of these bands indicates that the stressed SARS-2 spike’s main peak is diminished by ~20% relative to the fresh SARS-2 spike intensity. Ladder molecular weights in kDa are indicated to the left of the gel image. Binding of 3A3 Fab to HexaPro S2 measured (c) ELISA capture of fresh (red circles) or stressed (pink diamonds) SARS-2 spike on 3A3 coated plates. (d) Antibodies coated on ELISA plates captured fresh (dark blue or red) or stressed (pink or light blue) SARS-2 HP (blue) or SARS-2 (red) spike proteins. Duplicate dilutions of spike over ~5 log in concentration were used to calculate EC50 values. For dilution series in which no binding was observed, EC50 was assumed to be >1000 nM. Open symbols are replicate data and filled rectangles are average data.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig3-figsupp3-v3.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** Antibody 3A3 was coated on high binding plates and allowed to bind dilutions of SARS-2 HexaPro spike, 4P spike (HexaPro with P986K and P987V reversions), or 4P-DS spike (4P with an additional stabilizing disulfide). For detection, streptactin-HRP was allowed to bind the twin strep tag sequence at the C-terminus of any captured spike proteins.
 
 Antibody 3A3 could not detect fully denatured coronavirus spike in Western blot (Figure 3—figure supplement 2a, Figure 3—figure supplement 3), consistent with recognition of the folded, bent S2 hinge conformation. After three freeze/thaw cycles, aggregates were detectable by SDS-PAGE in the SARS-2 spike but not in the stress-resistant (Hsieh et al., 2020) SARS-2 HexaPro. (Figure 3—figure supplement 2b). The control foldon-binding antibody 3E11 bound fresh and stressed proteins similarly, but 3A3 binding to stressed 2P spike was greatly decreased (~150-fold worse ELISA EC50), while binding of stressed SARS-2 HexaPro was unaffected (Figure 3—figure supplement 2c and d). These data are consistent with the HDX and cryo-EM data indicating that 3A3 binds properly folded, pre-fusion spike.
 
 Residues K986 and V987 are substituted with prolines in the stabilized SARS-2 2P and HexaPro soluble spikes used by most laboratories as these changes substantially improve the yield and stability of soluble prefusion spike. Given their proximity to hot spot residues D985 and E988 within the hinge epitope, we reverted 2P to the native sequence and evaluated the impact on 3A3 binding (Figure 3a–c). Binding to this 4P spike (HexaPro with P986K and P987V) was dramatically impaired. Since proline side chains are part of the main chain backbone, the 2P changes may serve to rigidify the epitope and/or the native lysine residue may introduce steric or electrostatic clashes. To mimic the prefusion bent conformation without 2P, we introduced a disulfide bond between amino acids 965 and 1003 (Hsieh et al., 2020) in 4P to create 4P-DS. By ELISA, 3A3 binding to 4P-DS was partially recovered (Figure 3—figure supplement 4). Collectively, these data demonstrate that antibody 3A3 binds a conformational hinge epitope dominated by residues D985 and E988 and rigidified by the adjacent stabilizing 2P changes.
 
-## Antibody RAY53 binds the authentic SARS-2 spike hinge epitope
+### Antibody RAY53 binds the authentic SARS-2 spike hinge epitope
 
 To understand the role of the hinge epitope in the context of authentic spike, we expected that an engineered version of 3A3 would be necessary to accommodate 986K and thereby improve binding to 4P, 4P-DS, and authentic spike. We evaluated several humanized 3A3 variants as previously described (Nguyen et al., 2015), yielding hu3A3 which bound HexaPro similarly to 3A3 by ELISA (Figure 4—figure supplement 1). To identify variants binding 4P-DS more strongly, two hu3A3 Fab libraries of ~3 × 107 members each were generated in a yeast display plasmid: a random mutagenesis library (Fromant et al., 1995) with an error rate of 0.3% and a site-directed mutagenesis library targeting three residues in CDRL2 and five residues in CDRH3 implicated in spike recognition by HDX. After 3–4 rounds of sorting for enhanced 4P-DS binding (Figure 4—figure supplement 2), individual clones were isolated. Combinatorial expression of selected VH and VL regions as IgG1 antibodies followed by ELISA screening for 4P-DS binding identified RAY53, comprised of a light chain from the site-directed library and a heavy chain from the random mutagenesis library.
 
 RAY53 shows greatly improved binding to 4P-DS spike versus 3A3 (Figure 4—figure supplement 3a and b) while retaining 3A3’s epitope sensitivity (Figure 4—figure supplement 3c). Fab 3A3 binds stabilized SARS-2 HexaPro S2 with ~3 nM equilibrium Kd, as measured by BLI and SPR (Figure 4—figure supplement 4a and b); RAY53 binds SARS-2 HexaPro similarly (Figure 4—figure supplement 4f). However, while 3A3 IgG1 binding to 4P-DS and 4P spikes was too weak for quantitation at the concentrations used (Figure 4—figure supplement 3), SPR analysis of RAY53 IgG1 binding to 4P-DS indicated a Kd of 100 ± 16 nM (Figure 4—figure supplement 4c). Interestingly, the RAY53 Fab Kd was 1.3 ± 0.2 µM, ~13-fold lower than the corresponding IgG (Figure 4—figure supplement 4d), suggesting both IgG arms simultaneously engage protomers within the same spike in this SPR orientation, consistent with cryo-EM images (Figure 1b). Overall, RAY53 retained binding to stabilized HexaPro spike while accommodating the native K986/V987 hinge residues.
 
-## The hinge epitope is highly conserved across β-coronaviruses but susceptible to structural occlusion
+### The hinge epitope is highly conserved across β-coronaviruses but susceptible to structural occlusion
 
 The spike hinge at SARS-2 amino acids 980–1006 exhibits high sequence and structural conservation across all β-coronaviruses known to infect humans (Figure 4a and b), with Cα atom RMSDs ranging from 0.6 Å for HKU1 to 3.1 Å for MERS. To assess the phylogenetic range of spikes recognized by 3A3 and RAY53, binding to diverse coronavirus spikes was assessed by ELISA (Figure 4c). Antibodies 3A3 and RAY53 bound each of the 2P stabilized spikes similarly, with improved RAY53 binding observed for SARS-2 4P, 4P-DS, and HKU1. Binding of 3A3 to proline-stabilized SARS-2 HexaPro, SARS-2, aglycosylated SARS-2 HexaPro, SARS-1 and MERS spike was apparent with BLI-measured on-rates of ~0.2–1.3 µM–1 s–1; equivalent association rates were observed for RAY53 binding to the stabilized spikes tested (Figure 4—figure supplement 4f). Although both 3A3 and RAY53 bound SARS-2 HexaPro Omicron BA.1 by BLI, the on-rate was reduced ~15-fold relative to HexaPro. Binding of RAY53 was maintained for diverse β-coronavirus spike proteins, consistent with the high sequence identity of this epitope.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig4-v3.jpg)
+
+**Figure 4.:** The hinge epitope recognized by 3A3 (SARS-2 amino acids 980–1006) is highly conserved across the spike (a) sequences and (b) structures of β-coronaviruses known to infect humans, including Alpha, Omicron BA.1, and other variants of concern (VOC; Beta, Gamma, Delta, Epsilon, Omicron BA.2 through BA.5). In (a), identical residues are indicated by a dot and similar residues are highlighted in gray. Residues conserved across all listed β-coronaviruses are in bold. Residues that lost binding to 3A3 when altered as shown in Figure 3 are in teal highlight and those whose disruption improved binding are orange. The location of the two proline mutations introduced to 2P variants are shown below the alignment. In (b), the structure of each epitope is displayed as follows: SARS-2 (6VSB) – red, SARS-1 (6CRV, RMSD = 0.8 Å) – magenta, MERS (5X5C, RMSD = 3.1 Å) – blue, HKU1 (5I08, RMSD = 0.5 Å) – teal, OC43 (6OHW, RMSD = 0.6 Å) – green. (c) Binding of full-length antibody 3A3 (black circles) and RAY53 (blue diamonds) to ancestral SARS-2, SARS-2 HexaPro (SARS-2 HP), SARS-2 4P, SARS-2 4P-DS, SARS-2 HexaPro Delta (SARS-2 HP Delta), SARS-2 HexaPro Omicron BA.1 (SARS-2 HP Omicron BA.1), MERS, SARS-1, HKU1, or milk (no coat) proteins by ELISA. Data are representative of duplicate biological replicates, each with duplicate technical replicates. The data midpoint is indicated with a bar. (d) Plasmids encoding full-length unstabilized spike proteins from SARS-2, SARS-2 Omicron BA.1, MERS, or SARS-1 were transiently transfected to Expi293 cells. The spike (blue or magenta histograms) or mock (grey histograms) transfected cells were stained with 100 nM RAY53 (top panels) or 10 nM control antibody S309 (bottom panels), followed by goat-anti-human Fc-PE secondary antibody, and flow cytometry scanning of 10,000 cells. The data shown are representative of triplicate experiments, with each condition repeated in technical duplicate. (e) Expi293 cells were transiently transfected with plasmids encoding SARS-2 spike and EGFP or EGFP only, then incubated with 3A3 (black circles) or RAY53 (blue diamonds) antibody (~1–300 nM) and anti-human Fc-PE before flow cytometric determination of the geometric mean fluorescence intensity (GMFI) in the PE channel for all green fluorescent cells. The GMFI of cells transfected with EGFP only was subtracted from the GMFI of cells expressing spike at each concentration, and the data fit to a three-parameter logistic curve to determine the effective Kd (Kd,eff) for antibody binding. The data shown are representative of triplicate experiments; ND, not detected.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** SARS-2 HexaPro spike was coated on high binding plates and allowed to bind dilutions of 3A3 or hu3A3 purified antibody, then anti-human Fc-HRP for detection.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** Yeast surface display of irrelevant Fab or the hu3A3 Fab resulted in minimal binding to AF647 conjugated 4P-DS spike by flow cytometry. Site-directed (SD) or error-prone (EP) strategies to introduce diversity into the variable regions of hu3A3 Fab resulted in two libraries shown unsorted (R0), and after one (R1), two (R2), three (R3), or four (R4) rounds of selection. The 4P-DS-binding population was enriched by >70-fold during sorting of each library.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (a) ELISA data with spike 4P-DS or 4P coated on high binding plates, followed by the addition antibody 3A3 or RAY53 in a 1:5 dilution series and detection with anti-human Fc-HRP secondary antibody. (b) Raw SPR curves showing binding of immobilized 4P-DS to 3A3 or RAY53 as full-length human IgG1 at 500 nM or human Fab at 1000 nM. These curves are representative of duplicate data. (c) The same substitutions used for fine epitope mapping of 3A3 were analyzed for ELISA binding to RAY53 as described in Figure 3a.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Binding of 3A3 Fab to HexaPro S2 was measured by (a) BLI with the HexaPro S2 trimer immobilized on the biosensor and (b) SPR with Fab immobilized on the chip. SPR was also used to evaluate binding of SARS-2 4P-DS to immobilized (c) IgG RAY53, (d) Fab RAY53 or (e) control IgG22. For BLI, Kd values were obtained using a 1:1 global fit model using the Octet instrument software. The SPR data were double-reference subtracted and fit to a 1:1 binding model using BIAevaluation software. (f) Binding of 3A3 and RAY53 IgG to additional spike variants was compared by incubating full-length IgGs immobilized on anti-Fc BLI sensors with serially diluted spike variants for an association step followed by a dissociation step in buffer only. Since the off-rates determined for this 3:1 spike protomer:antibody binding arm format using kinetic-based Kd were extremely slow due to rebinding (~10–12 s–1) and differential epitope accessibility is expected to influence the observed on-rate (Figure 2f), on-rates (kon) were compared. Vertical lines indicate the start of the dissociation phase; data shown in solid lines with fits (1:1 association then dissociation fit using GraphPad Prism software) shown in red lines.
 
 To evaluate the binding of RAY53 to a range of unmodified β-coronavirus spikes, authentic SARS-2 (wild-type and Omicron BA.1), MERS, and SARS-1 spikes were displayed on the surface of Expi293 cells and stained with antibody (Figure 4d). The soluble expression of authentic coronavirus spike without stabilizing mutations results in poor yield and misfolded proteins, preventing accurate measurement of binding affinities. Moreover, measurement of an ‘effective’ affinity based on binding to many spike proteins on the mammalian cell surface (Feldhaus and Siegel, 2004) is more indicative of antibody interactions with authentic spike during infection. Excluding the non-binding population consequent to transient expression, control antibody S309 bound SARS-2 and SARS-1 spike-expressing cells but not MERS spike-expressing cells, as expected (Figure 4d). Binding of RAY53 to wild-type SARS-2 spike yielded an effective Kd of 100 ± 20 nM, nearly identical to the 100 nM affinity measured by SPR for 4P-DS (Figure 4—figure supplement 4c), with no 3A3 binding above background detected (Figure 4e). Overall, we conclude that affinity maturation to 4P-DS improved RAY53 binding to the hinge epitope found in authentic spike.
 
 Interestingly, RAY53 bound SARS-2 and MERS spikes, but not SARS-2 Omicron BA.1 or SARS-1 spikes. The contrast between high RAY53 binding to stabilized SARS-2 HexaPro Omicron BA.1 (Figure 4c) and dramatic loss of binding to cell-surface displayed Omicron BA.1 implicates structural differences between the two spike formats as opposed to the single epitope mutation which is inert on its own (L981F, Figure 4—figure supplement 3c). SARS-2 Omicron BA.1 spike has accumulated mutations that result in tight packing of the RBDs in the down state, occluding many neutralizing RBD epitopes and aiding in immune evasion (Gobeil et al., 2022). We expect this tightly packed RBD surface will also impede access to the S2 core, including the hinge epitope. Similarly, strong RAY53 binding to stabilized SARS-1 spike was completely lost when spike was expressed without stabilizing mutations on the cell surface, despite an unaltered hinge epitope (Figure 4a). Overall, these data suggest mutations distal to the hinge epitope can restrict antibody access and this effect is lost in proline-stabilized spike.
 
-## Targeting the hinge epitope inhibits cellular fusion and neutralizes pseudovirus but not authentic virus infection and mediates Fc effector functions
+### Targeting the hinge epitope inhibits cellular fusion and neutralizes pseudovirus but not authentic virus infection and mediates Fc effector functions
 
 To investigate the impact of antibody binding on hinge function, we first employed a mammalian cell fusion assay (Figure 5—figure supplement 1). A CHO cell line expressing wild-type SARS-2 spike and EGFP was incubated with ACE2-expressing HEK 293 cells stained with red fluorescent Cell Trace Far Red. After 24 hr, large syncytia formed with green CHO cell fluorescence overlapping ~70% of red HEK 293 cell fluorescence, indicating fusion of the CHO and HEK 293 membranes in the presence of no antibody or 670 nM irrelevant human IgG1. Incubation with 670 nM or 67 nM of 3A3 significantly reduced colocalization to ~50% (p<0.0001) and significantly reduced syncytia size was noted down to 6.7 nM. These data indicate that 3A3 can prevent spike’s ability to fuse viral and cell membranes.
 
 We next compared 3A3 and RAY53 in an in vitro pseudovirus neutralization assay to determine whether stronger epitope binding improved neutralization. These antibodies, the potently neutralizing antibody S309 (Pinto et al., 2020), or an isotype control antibody were incubated with lentivirus expressing authentic spikes and added to HEK293 cells expressing the relevant receptor with infection monitored by luciferase expression (Figure 5a). Control antibody S309 potently neutralized SARS-1 and SARS-2 spike lentivirus (IC50 of ~0.5 nM), similar to MLV pseudovirus reports (Pinto et al., 2020), but was approximately tenfold less potent against SARS-2 Omicron BA.1 and ineffective against MERS pseudoviruses, as expected (Cameroni et al., 2022). By contrast, 3A3 and RAY53 weakly and incompletely blocked infection of wild-type SARS-2 and MERS pseudoviruses (estimated IC50 values >50 nM) but did not block infection by SARS-1 or SARS-2 Omicron BA.1 pseudoviruses. Incomplete pseudovirus neutralization has been noted in other studies, particularly with antibodies that do not directly block ACE2 binding, although it is unclear why this occurs (Rogers et al., 2020). Despite greatly improved binding to 4P-DS (Figure 4—figure supplement 3a and b) and authentic SARS-2 spike on the mammalian cell surface (Figure 4e), RAY53 did not neutralize pseudovirus better than 3A3, indicating that antibody binding is not the rate-limiting step in neutralizing the hinge epitope (Figure 2f).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig5-v3.jpg)
+
+**Figure 5.:** (a) Neutralization was evaluated by pre-incubating antibody with pseudotyped HIV particles that were then added to HEK 293T cells stably expressing ACE2 (SARS-1 and SARS-2 pseudoviruses) or DPP4 (MERS pseudovirus), with viral entry detected by luciferase luminescence. The entry efficiency of pseudoviruses without any treatment was considered 100%. (b) Neutralization of authentic SARS-2 wild-type virus was assessed by incubating viral particles with antibody before adding to Vero HF cells. Viral infection was assessed by ELISPOT 24 hr after infection by immunostaining with the anti-SARS-2 nucleocapsid antibody 1C7C7. (c) ADCP was performed by co-incubating undifferentiated THP-1 cells, antibodies and pHrodo-Green/APC-polystyrene beads coated with HexaPro or 4P-DS. The phagocytosis score was calculated as the percent of positive APC/FITC cells multiplied by the GMFI for APC. Data were collected from two separate experiments with the average and standard deviation shown. (d) ADCC was assessed by incubating NK-92 V/V cells, HEK-293T cells transfected to express either wild-type SARS-2 spike (spike) or nothing (mock) and antibody. For each panel, data shown are representative of three biological replicates. Duplicate technical replicates with the midpoint of each condition are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83710/elife-83710-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) HEK 293 cells stably expressing human ACE2 were stained with Cell Trace Far Red and incubated with a CHO-based cell line transiently expressing authentic SARS-2 spike and EGFP. The cultures were imaged after 24 hr of incubation for EGFP (green) or Cell Trace Far Red (red) and the level of colocalization (yellow) was evaluated. (b) CHO cells not expressing SARS-2 spike and (c) HEK 293 cells not expressing ACE2 exhibited minimal fusion. (d) When the cultures were preincubated with an irrelevant isotype control antibody, extensive fusion and syncytia formation equivalent to no antibody was apparent. Incubation at (e) 6.7, (f) 67, and (g) 670 nM 3A3 reduced fusion in a dose-dependent manner with significance reached at 67 nM. Scale bar, 100 μm. (h) The percentage of HEK-ACE2 pixels (red) colocalizing with spike expressing CHO pixels (green) was analyzed with the JACoP plugin for ImageJ. (i) The same images were analyzed for the average cell size of fused HEK-ACE2 with ImageJ as a second statistical method to test the cell fusion level. Shown are the mean and standard deviation of at least 160 cells per condition from 8 to 9 independent images. The statistical analysis of average cell sizes under different conditions were performed with ANOVA followed by Tukey’s HSD test. Results shown are representative of four independent experiments; ****p<0.0001.
 
 With the understanding that these considerations may be different still in a live coronavirus context, neutralization of authentic SARS-2 wild-type virus by 3A3 and RAY53 alongside an isotype control and S309 positive control was tested in vitro (Figure 5b). In contrast to pseudotyped lentivirus, neither 3A3 nor RAY53 exhibited neutralization of the authentic virus in this assay. This difference may be caused by several factors, including the specific neutralization protocol used or variation in spike structure and/or dynamics in the specific environment of the virion surface.
 
@@ -123,27 +205,583 @@ Here, we report an S2 hinge epitope that is conserved across all highly pathogen
 
 ## Materials and methods
 
-## Nomenclature
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NP 1C7C7</td>
+      <td>Thomas Moran (The Icahn School of Medicine at Mount Sinai)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-spike CR3022</td>
+      <td>Constructed based on ter Meulen et al., 2006.</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-spike mAb 2–4</td>
+      <td>Constructed based on Liu et al., 2020 .</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-spike S309</td>
+      <td>Constructed based on Pinto et al., 2020.</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-StrepTagII Fab (clone C23.21)</td>
+      <td>Constructed based on patent WO2015067768A1 (Institut Pasteur)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Antibody variants: 3A3, hu3A3, RAY53, 3E11</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Sequences can be found in Supplementary file 4.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti human κ HRP</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 2060-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti human IgG Fc-AF647</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 109-605-008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti mouse Ig HRP</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 1010-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-human IgG Fc-HRP (polyclonal)</td>
+      <td>SouthernBiotech</td>
+      <td>Cat# 2047-05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human Fab2 anti-strep-tag (clone C23.21)</td>
+      <td>Jason McLellan Lab</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti c-myc, clone 9E10</td>
+      <td>BioXCell</td>
+      <td>Cat #MA1-980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti FLAG (M2) HRP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A8592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti FLAG (M2) PE</td>
+      <td>BioLegend/Prozyme</td>
+      <td>Cat# 637309/ #PJ315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-M13 pVIII-HRP, clone RL-pH1</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Cat# sc53004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>CHO-T</td>
+      <td>Acyte BioTech</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. griseus)</td>
+      <td>CHOK-1</td>
+      <td>ATCC</td>
+      <td>Cat# CCL-61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. griseus)</td>
+      <td>ExpiCHO</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A29133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Expi293</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A41249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Freestyle HEK293-F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-293T-hACE2</td>
+      <td>BEI Resources</td>
+      <td>Cat# NR-52511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>NK-92 V158</td>
+      <td>ATCC</td>
+      <td>Cat# PTA-8836</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>THP-1</td>
+      <td>ATCC</td>
+      <td>Cat# TIB-202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Vero HL</td>
+      <td>Piepenbrink et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# B4501-10G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein AM</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 564061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flash Red 1μ Beads</td>
+      <td>Bangs Laboratories</td>
+      <td>Cat# FSFR004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pHrodo iFL Green STP Ester</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# P36013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMB Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 34021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Alexa Fluor 647 Protein Labelling Kit</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# A20173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExpiFectamine 293 Transfection Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A14524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExpiFectamine CHO Transfection Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A29129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap Protein A columns</td>
+      <td>Cytiva</td>
+      <td>Cat# 17-5498-54P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IMAC Sepharose 6 Fast Flow resin</td>
+      <td>Cytiva</td>
+      <td>Cat# 17092107</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mycostrip test</td>
+      <td>Invivogen</td>
+      <td>Cat# rep-mys-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Octet Anti-Human Fab-CH1 2nd Generation (FAB2G) Biosensors</td>
+      <td>Forte Bio</td>
+      <td>Cat# 18-5125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Octet Streptavidin (SA) Biosensor</td>
+      <td>Forte Bio</td>
+      <td>Cat# 18-5019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein Thermal Shift Dye Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 4461146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Series S Sensor Chip CM5</td>
+      <td>Cytiva</td>
+      <td>Cat# BR100530</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Strep-Tactin XT Superflow high capacity cartridge</td>
+      <td>IBA</td>
+      <td>Cat# 2-4026-001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 Increase 10/300GL</td>
+      <td>Cytiva</td>
+      <td>Cat# 28-9909-44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organisms (Mus musculus)</td>
+      <td>Balb/c mice</td>
+      <td>Charles River</td>
+      <td>Cat# 028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HBS EP+buffer</td>
+      <td>Cytiva</td>
+      <td>Cat# BR100669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Avidin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A9275-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin AF647</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 016600084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin PE</td>
+      <td>BioLegend</td>
+      <td>Cat# 405204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AbVec hIgG1</td>
+      <td>Smith et al., 2009</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AbVec hIgKappa</td>
+      <td>Smith et al., 2009</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HDM-IDTSpike-fixK</td>
+      <td>BEI Resources</td>
+      <td>Cat# NR-52514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>M13KO7 helper phage (virus)</td>
+      <td>NEB</td>
+      <td>N0315S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(-)- Wuhan-Hu-1 Spike</td>
+      <td>Walls et al., 2020BEI Resources</td>
+      <td>Cat# NR-52420</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Cell Biolabs</td>
+      <td>Cat# RV-110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCTCon-Fab</td>
+      <td>Wang et al., 2018</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE-CMV-Luc2-IRS-ZsGreen-W</td>
+      <td>BEI Resources</td>
+      <td>Cat# NR-52516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE2-EF1aInt-ACE2-WT</td>
+      <td>BEI Resources</td>
+      <td>Cat# NR-52512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLEX307-DPP4-G418</td>
+      <td>Addgene</td>
+      <td>Cat# 158453</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMoPac24</td>
+      <td>Hayhurst et al., 2003</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for cloning mouse variable regions</td>
+      <td>Krebber et al., 1997</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Astra Software V6.1.2</td>
+      <td>Wyatt Technology</td>
+      <td>RRID:SCR_016255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Biacore X100 Evaluation Software V2.0.1</td>
+      <td>GE Healthcare</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cisTEM</td>
+      <td>Grant et al., 2018</td>
+      <td>RRID:SCR_016502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>Punjani et al., 2017</td>
+      <td>RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DynamX v3.0</td>
+      <td>Waters</td>
+      <td>Part# 720005145en</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel 1808</td>
+      <td>Microsoft</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 10.7.1</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism, v9.2.0</td>
+      <td>Motulsky and Brown, 2006</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HD-eXplosion v 1.2</td>
+      <td>Naifu Zhang and Sheena D’Arcy (The University of Texas at Dallas)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J v1.53e</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Octet Data Analysis Software V11.1</td>
+      <td>Forte Bio</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ViiA 7 Software</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α electrocompetent cells</td>
+      <td>NEB</td>
+      <td>Cat# C2987H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>XL1-Blue</td>
+      <td>Agilent</td>
+      <td>Cat# 200228</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>AYW101</td>
+      <td>Wentz and Shusta, 2007</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>EBY100 yeast</td>
+      <td>ATCC</td>
+      <td>Cat# MYA-4941</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Nomenclature
 
 In this work, ‘spike’ refers to the extracellular coronavirus fusogen domains containing homologous 2P changes (proline substitutions at residues 986 and 987 in SARS-CoV-2) C-terminally fused to a foldon domain (Wrapp et al., 2020a), whereas ‘authentic’ refers to spike variants as expressed without stabilizing changes as found on the virion, with other variations noted. ‘Wild-type’ SARS-CoV-2 spike refers to the spike sequence originally reported in January of 2020 for ancestral (Wuhan-Hu-1, GenBank accession number MN908947) SARS-CoV-2. For brevity and clarity, ‘SARS-2’ refers to the SARS-CoV-2 virus or spike, ‘SARS-1’ to SARS-CoV, and ‘MERS’ to MERS-CoV henceforth.
 
-## Cell lines
+### Cell lines
 
 Eukaryotic cell lines were obtained from the sources listed in the reagent table above under ‘Cell lines.’ No commonly misidentified cell lines were used in this study. Cell lines were purchased from reputable suppliers for protein expression and not further authenticated with the exception of HEK-293T-hACE2 cells, which were generated in the lab. These cells were verified to express human ACE2 after lentiviral infection and selection by Western blot as described in the text. Cell lines growing in the lab are tested approximately once per year for mycoplasma contamination using InvivoGen’s MycoStrip test, with no contamination detected.
 
-## Spike expression
+### Spike expression
 
 Soluble coronavirus spikes and spike variants were expressed and purified as previously described (Hsieh et al., 2020; Wrapp et al., 2020b). SARS-2 (Wrapp et al., 2020a), SARS-1 (Kirchdoerfer et al., 2018), SARS-2 HexaPro (Hsieh et al., 2020), MERS (Pallesen et al., 2017), HKU1 (Pallesen et al., 2017), and variant spikes were expressed in ExpiCHO or Freestyle 293F cells (Thermo Fisher Scientific). MERS S2 included residues 763–1291 of MERS-2P with 8 additional stabilizing substitutions (Hsieh et al., 2021). SARS-2 HexaPro S2 included residues 697–1208 of the SARS-2 spike with an artificial signal peptide, proline substitutions at positions 817, 892, 899, 942, 986, and 987 and a C-terminal T4 fibritin domain, HRV3C cleavage site, 8×HisTag and TwinStrepTag. HexaPro RBD-locked-down (Xiong et al., 2020) included the substitutions S383C-D985C in SARS-2 HexaPro. Aglycosylated HexaPro was produced by treating SARS-2 HexaPro with Endo H overnight at 4°C leaving only one N-acetylglucosamine attached to N-glycosylation site.
 
-## Murine immunization
+### Murine immunization
 
 Three 6-week-old female BALB/c (Charles River labs, Cat# 028) mice were immunized subcutaneously with 5 μg prefusion stabilized MERS S2 and 20 μg of ODN1826 + 100 μl of 2× Sigma Adjuvant System (SAS; Sigma) containing monophosphoryl lipid A and trehalose dimycolate in squalene oil. Four weeks later, the mice were boosted with the same dose of the same mixture. Three weeks after boosting, the mice were sacrificed and spleens were collected in RNALater (Thermo Fisher). All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols approved by the University of Texas at Austin (protocol AUP-2018-00092).
 
-## Phage display antibody library construction
+### Phage display antibody library construction
 
 RNA from each mouse was isolated from the aqueous phase of homogenized spleens mixed with 1-bromo-3-chloropropane and purified with the PureLink RNA kit (Invitrogen) separately. The Superscript IV kit (Invitrogen) was used to synthesize cDNA. The VH and VL sequences from each immunized mouse were amplified with mouse-specific primers described by Krebber et al., 1997. Maintaining separate reactions for each mouse, the VL and VH regions were joined by overlap extension PCR to generate VL-linker-VH fragments (scFv) in which the linker region encodes the amino acids (Gly4Ser)4 and SfiI sites flanked the scFv sequence. The scFv PCR products were pooled and cloned into pMopac24 (Hayhurst et al., 2003) via SfiI cut sites to encode an scFv with a c-terminal myc tag fused to the M13 phage pIII protein. This library was then transformed to XL1-Blue (Agilent Technologies) Escherichia coli. The total number of transformants was 3.1 × 108 with <0.01% background based on plating.
 
-## Phage display and panning
+### Phage display and panning
 
 The E. coli containing the library were expanded in growth media (2×YT with 1% glucose, 200 μg/mL ampicillin, 10 μg/mL tetracycline) at 37°C to an OD600 of 0.5, then infected with 1 × 1011 pfu/mL M13K07 helper phage (NEB) and induced with 1 mM isopropyl β-d-1-thiogalactopyranoside. After 2 hr of shaking at room temperature, 12.5 μg/mL of kanamycin was added for phage expression overnight. Phage were precipitated in 20% PEG-8000 in 2.5 M NaCl, titered by infection of XL1-Blue and plating, and used for Round 1 panning. This process was repeated for each round of panning, starting from overnight growth of the output phage from each round.
 
@@ -151,13 +789,13 @@ Four rounds of panning were used to isolate scFvs binding both MERS S2 and SARS-
 
 Random clones isolated after rounds 3 and 4 of panning were sequenced and unique clones were tested by monoclonal phage enzyme-linked immunosorbent assay (ELISA) on plates coated with SARS-2 spike or RSV F foldon at 2 μg/mL in PBS. Briefly, plates were coated overnight at 4°C, washed with PBS-T, then blocked with PBS-T and 5% milk. Phage were allowed to bind for 1 hr at room temperature, thoroughly washed with PBS-T, then incubated with 1:2000 anti-M13 pVIII-HRP (GE Healthcare) in PBS-T 5% milk for another hour. After washing, the plate was developed with the TMB Substrate Kit (Thermo Scientific), quenched with an equal volume of 1 M HCl and evaluated by absorbance at 450 nm.
 
-## Antibody expression, purification, and quality control
+### Antibody expression, purification, and quality control
 
 Full-length antibody versions of 3A3 and 3E11 were cloned as previously described (Nguyen et al., 2015) as mouse variable region-human IgG1 constant region chimeras. Antibodies hu3A3 and RAY53 were similarly cloned into human IgG1 and IgΚ expression vectors. Antibodies were expressed in ExpiCHO (Thermo Fisher Scientific) cells according to the high titer protocol provided and purified on a Protein A HiTrap column (GE Healthcare) with the ACTA Pure FPLC system (GE Healthcare), and buffer exchanged to PBS.
 
 Human Fab fragments were generated by digestion of full-length antibody with papain and removal of the Fc portion by protein A binding. Mouse Fab fragments of 3A3 were generated by cloning the VH and VL regions upstream of heavy chain constant regions with a HRV3C protease site in the hinge (Pallesen et al., 2017) and a mouse kappa chain, respectively. After expression, protein A purified protein was digested with HRV3C protease, and the flow-through from a protein A HiTrap column was collected. Excess HRV3C protease was removed by incubation with Ni Sepharose 6Fast Flow beads (GE Healthcare). Fully murine antibodies were produced by cloning the VH regions into mouse IgG2a and VL regions in to a mouse IgK expression cassettes in the pAbVec background, co-transfecting, and purifying as described above.
 
-## Hydrogen-deuterium exchange mass spectrometry
+### Hydrogen-deuterium exchange mass spectrometry
 
 Hydrogen-deuterium exchange was performed on complexes were formed with excess antibody (0.50 μM SARS-2 HexaPro spike protein alone or in the presence of 0.55 μM 3A3 IgG or Fab) such that the SARS-2 HexaPro spike was expected to be ~90% bound based on the known protein concentrations and measured Kd. Only spike protein peptides were analyzed in this experiment. Complexes were thawed from –80°C storage on ice and incubated for 10 min at 25°C before exchange in 90% deuterium and 20 mM Tris pH 8.0, 200 mM NaCl. The exchange was quenched after 101, 102, 103, and 104 s by mixing samples 1:1 with cooled 0.2% (v/v) formic acid, 200 mM TCEP, 8 M Urea, pH 2.3. Samples were immediately flash-frozen in liquid N2 and stored at −80°C. Hydrogen-deuterium exchange was similarly performed on 0.50 μM 3A3 IgG alone or in the presence of 0.75 μM of SARS-2 HexaPro spike protein. Only 3A3 IgG peptides were analyzed in this experiment. Samples were prepared as described above, but in 86% deuterium for 101, 102, and 103 s.
 
@@ -167,11 +805,11 @@ MS data were acquired using positive ion mode and either HDMS or HDMSE. HDMSE mo
 
 Water-only control samples were processed by Protein Lynx Global Server v.3.0.2 with a ‘minimum fragment ion matches per peptide’ of 3 and allowing methionine oxidation. The low and elevated energy thresholds were 250 and 50 counts, respectively, and the overall intensity threshold was 750 counts. The resulting peptide lists were then used to search data from deuterated samples using DynamX v.3.0. We did not search for glycosylated peptides as de-glycosylation had little impact on 3A3 binding (Figure 4—figure supplement 4f). Peptide filters of 0.3 products per amino acid and one consecutive product were used. Spectra were manually assessed, and figures were prepared using HD-eXplosion (Zhang et al., 2020) and PyMOL (DeLano, 2002). The HDX data summary table (Supplementary file 1) and complete data table (Supplementary file 2) are included. The location of the 3A3 epitope was confirmed in a separate experiment carried out over the temperature range of 4–37°C (Costello et al., 2022).
 
-## Low-resolution cryo-EM
+### Low-resolution cryo-EM
 
 To form spike-antibody complex, prefusion-stabilized SARS-CoV-2 S2 was incubated with 1.5-fold molar excess of 3A3 Fab at room temperature for 20 min. The mixture was then applied to a size-exclusion column (SEC) in a running buffer containing 2 mM Tris pH 8.0, 200 mM NaCl, and 0.02% NaN3 to obtain a peak fraction containing the S2-3A3 Fab complex for cryo-EM sample preparation. The complex at 0.5 mg/mL was deposited on a plasma-cleaned Au-Flat 1.2/1.3 grid (ProtoChip), which was plunge-frozen using a Vitrobot Mark IV (Thermo Fisher) with 4 s blot time and –2 force at 100% humidity at 22°C. A total of 1179 micrographs were collected using a Glacios (Thermo Fisher) equipped with a Falcon IV direct electron detector. Data were collected at a magnification of 150,000×, corresponding to a calibrated pixel size of 0.94 Å/pix. CryoSPARC v3.2.0 was used for patch motion correction, CTF estimation, particle picking, and particle curation via iterative rounds of 2D classification (Punjani et al., 2017). One class that had the best-resolved 3D reconstruction from heterogenous refinement was used for subsequent non-uniform homogeneous refinement. ChimeraX (Pettersen et al., 2021) was used to generate a mask that encompassed the Fab and the apex of an S2 protomer to perform focused refinement. A protomer of SARS-CoV-2 spike (PDB: 6XKL) without the S1 subunit and an ABodyBuilder-predicted 3A3 Fab structure (Dunbar et al., 2016) was used as a model to dock into the local EM map generated by focused refinement using cryoSPARC v3.2.0.
 
-## Biolayer interferometry (BLI) and surface plasmon resonance (SPR) measurements
+### Biolayer interferometry (BLI) and surface plasmon resonance (SPR) measurements
 
 To evaluate ACE2 binding to HexaPro captured by 3A3, AHC anti-human IgG Fc (ForteBio) sensors were used to pick up 3A3 (10 nM) to a response of 0.6 nm. Then mAb-coated tips were dipped into wells containing HexaPro (50 nM) to a response of 0.6 nm and then dipped into wells containing ACE2 (50 nM), irrelevant murine mAb (50 nM), or buffer. Association of mu3A3/irrelevant mAb was measured for 5 min and dissociation for 10 min.
 
@@ -185,64 +823,78 @@ For all BLI experiments, an Octet Red96 (ForteBio) instrument was used. Between 
 
 SPR was used to determine the binding kinetics and equilibrium affinity of the 3A3 Fab and HexaPro S2 interaction as well as the RAY53 and 4P-DS. An anti-StrepTagII Fab (clone C23.21) was covalently coupled to a CM5 sensor chip in 10 mM sodium acetate at pH 4.0 for a final RU of ~4300. It was then used to capture purified SARS-2 HexaPro S2 or 4P-DS by the c-terminal twin StrepTag to ~80 or ~1000 response units (RU), respectively, in each cycle using a Biacore X100 (GE Healthcare). The binding surface was regenerated between cycles using 0.1% SDS followed by 10 mM glycine at pH 2. The IgG or Fab was serially diluted and injected over the blank reference flow cell and then SARS-2 HexaPro S2- or 4P-DS-coated flow cell in HBS-P+ buffer. Buffer was also injected through both flow cells as a reference. The data were double-reference subtracted and fit to a 1:1 binding model using BIAevaluation software.
 
-## ELISA evaluation of antibody binding
+### ELISA evaluation of antibody binding
 
 ELISAs were in either a spike or antibody capture configuration as indicated. For spike capture, plates were coated with 1 μg/mL of purified spike proteins in PBS. Duplicate serial dilutions of each full-length antibody in PBS-T with 5% milk were allowed to bind each coat, and the secondary antibody solution was a 1:1200 dilution of goat-anti-human IgG Fc-HRP (SouthernBiotech). For antibody capture, antibody was coated at 1 μg/mL in PBS. Duplicate serial dilutions of spike in PBS-T with 3% bovine serum albumin were allowed to bind each coat, and the secondary antibody solution was a 1:2000 dilution of streptactin-HRP (IBA Lifesciences). ELISA curves were fit to a four-parameter logistic curve.
 
 Fresh aliquots of SARS-2 and SARS-2 HexaPro spikes were thawed and split to stress the spike proteins. One half of the aliquot was stressed by incubation at –20°C for 5 min, then 50°C for 2 min for three temperature cycles. The freshly thawed and stressed spikes were evaluated in antibody capture ELISAs. For each fresh and stressed spike, 8 µg was analyzed by SDS-PAGE under non-reducing conditions.
 
-## Humanization of 3A3
+### Humanization of 3A3
 
 Humanized 3A3 VH and VL regions were designed as previously described (Nguyen et al., 2015), and the variable regions were cloned into human IgK and IgG1 expression plasmids. The heavy and light chains were transfected together into ExpiCHO cells for combinatorial analysis of expression level and HexaPro binding. The veneering method of humanization for both VL and VH resulted in binding equivalent to 3A3 with slightly improved expression.
 
-## Yeast display and engineering of 3A3
+### Yeast display and engineering of 3A3
 
 The hu3A3 light chain and Fab heavy chain region were cloned into pCTCON-Fab (Wang et al., 2018) with the heavy chain fused to Aga2 and a c-Myc tag and c-terminal FLAG tag on the light chain. The VH and VL regions were subjected to random mutagenesis at a target rate of 0.3%. In parallel, a site-directed library was created using primers encoding degenerate codons at CDRL2 and CDRH3 locations implicated in spike binding by HDX. Both the random and site-directed PCR products were integrated into Saccharomyces cerevisiae strain AWY101 (Wentz and Shusta, 2007) yeast plasmid by homologous recombination as previously described (Benatuil et al., 2010), resulting in approximately 3 × 107 variants in each library. Libraries and transformed yeast were grown and maintained in YNB media with casamino acids and 2% glucose at 30°C.
 
 To induce expression of surface displayed Fab, yeast were subcultured to an OD600 of 0.5 in YNB media with casamino acids, 0.2% glucose and 1.8% galactose and allowed to grow for 24 hr at 25°C. Libraries were sorted for three or four rounds by staining with 1:200 anti-FLAG-R-PE (ProZyme) and 50 nM 4P-DS directly labeled with Alexa Fluor 647 (Thermo Fisher) for 15 min at room temperature and 45 min on ice, and the brightest AF647 cells also fluorescent in the PE channel were sorted on a SONY MA900 cell sorter. Individual clones were isolated and the variable regions from the most promising 4P-DS binding yeast clones were amplified and transferred to mammalian expression vectors. Heavy and light chain candidates were transfected for combinatorial screening and evaluated for binding to 4P-DS by ELISA. RAY53 was the highest binding clone isolated and is comprised of a light chain variable region originating from the site-directed library and a heavy chain from the random mutagenesis library.
 
-## Western blot of antibody binding to coronavirus spike proteins
+### Western blot of antibody binding to coronavirus spike proteins
 
 Purified coronavirus spike proteins were reduced and boiled, and 50 ng of each was subjected to SDS-PAGE and transfer to PVDF membranes in duplicate. After blocking with PBS-T with 5% milk, the membranes were probed with 0.2 μg/mL 3A3 or 3E11 for 1 hr at room temperature. After washing with PBS-T, the membranes were incubated with 1:4000 goat anti-human IgG Fc-HRP for 45 min at room temperature, then developed with the SuperSignal West Pico Chemiluminescent Substrate (Thermo Scientific) and imaged.
 
-## Mammalian expression and lentiviral plasmids
+### Mammalian expression and lentiviral plasmids
 
 Plasmids required for mammalian expression and lentiviral production were obtained from BEI Resources. Plasmids expressing the HIV virion under the CMV promotor (HDM-Hgpm2, pRC-CMV-Rev1b, and HDM-tat1b) were provided under the following catalog numbers NR-52517, NR-52519, and NR-52518, respectively (Crawford et al., 2020). Plasmids for lentiviral backbone expressing a luciferase reporter under the CMV promotor followed by an IRES and ZsGreen (pHAGE-CMV-Luc2-IRS-ZsGreen-W) or human ACE2 gene (GenBank ID NM_021804) under an EF1a promoter (pHAGE2-EF1aInt-ACE2-WT) were provided as NR-52516 and NR52512, respectively (Crawford et al., 2020). The envelop vector expressing a codon-optimized wild-type SARS-2 spike protein (GenBank ID NC_045512) under a CMV promoter was obtained from BEI resources (HDM-IDTSpike-fixK, NR-52514, called pWT-SARS-2-spike here) (Crawford et al., 2020) The lentiviral backbone vector expressing a human DPP4 gene under an EF1a promoter (pLEX307-DPP4-G418) was obtained from Addgene, while the plasmid expressing VSV G (vesicular stomatitis virus glycoprotein) was purchased from Cell Biolabs (pCMV-VSV-G, Part No. RV-110). The pWT-SARS-2-spike plasmid was employed as a template for site-directed mutagenesis to generate the expression plasmid for the D614G and D614G with D985L, E988Q, or E988A. SARS-2 Omicron BA.1 (B.1.1.529) Spike Gene ORF cDNA was purchased from SinoBiological Inc SARS-2 Omicron BA.1, SARS-1 and MERS spike sequences were cloned into the pWT-SARS-2-spike plasmid for pseudovirus production.
 
-## Flow cytometric evaluation of antibody binding to mammalian surface displayed spike
+### Flow cytometric evaluation of antibody binding to mammalian surface displayed spike
 
 On day 0, Expi-293 cells (Thermo Fisher) were transfected with pEGFP alone or pEGFP and pWT-SARS-2-spike in a 1:1 ratio. On day 2, RAY53 in concentrations ranging from 300 nM to 3.5 nM was used to stain ~3 × 105 transfected cells for 1 hr on ice. All cells were collected, washed with PBS with 1% FBS, then incubated with 1:250 goat-anti-human Fc-PE for 1 hr on ice. Cells were washed again, then scanned for EGFP and PE fluorescence on a BD Fortessa flow cytometer, and analyzed with FlowJo. Cells were gated by FSC and SSC, singlets, then EGFP expression to only analyze transfected cells. The PE GMFI of the EGFP expressing cells at each concentration was then used to calculate the effective Kd as described (Feldhaus and Siegel, 2004).
 
 To assess RAY53 binding to additional spike variants, Expi-293 cells were transfected with either pWT-SARS-2-spike, pOmicronBA1-SARS-2-spike, pSARS-spike, or pMERS-spike (no pEGFP plasmid was used) and treated as described above. Either 100 nM of RAY53 or 10 nM S309 was used to stain the transfected cells before incubation with goat-anti-human Fc-PE.
 
-## Confocal cell fusion assay
+### Confocal cell fusion assay
 
 On day 0, the CHO-T cells (Acyte Biotech) were transfected with either pPyEGFP (Nguyen et al., 2018) or 1:4 pWT-SARS- CoV-2-spike:pPyEGFP using Lipofectamine 2000 (Life Technologies), and media was replaced on day 1. On day 2 after transfection, HEK-293T-hACE2 cells (BEI, NR-52511), which stably expresses human ACE2, were stained with 1 μM CellTrace Far Red dye (Invitrogen, Ex/Em: 630/661 nm) in PBS for 20 min at room temperature, then quenched with DMEM with 10% heat-inactivated FBS for 5 min, and resuspended in fresh media. CHO-T cells expressing EGFP or EGFP and surface spike were preincubated with the antibody for 1 hr at 37°C, then mixed with HEK-hACE2 cells at a ratio of 5:1 in 24-well plates with a coverslip on the bottom of each well. On day 3, after 20 hr of coincubation, the coverslip with bound cells was washed once with PBS and fixed with 4% paraformaldehyde for 20 min at room temperature, washed again, and mounted on slides with DAPI-fluoromount-G (SouthernBiotech). Images were collected with Zeiss LSM 710 confocal microscope (Carl Zeiss, Inc) and processed using ImageJ software (http://rsbweb.nih.gov/ij).
 
-Two different statistical analysis methods determined the cell fusion level. The first statistical analysis was based on the percentage of HEK-ACE2 pixels (red) colocalizing with spike expressing CHO pixels (green), which was determined by the following equation within the JACoP plugin for ImageJ (Bolte and Cordelières, 2006):HEK−ACE2 colocalization%=(summed intensities at 633 nm wavelength of HEK−ACE2 pixels colocalizaing with CHO pixels)(summed intensities at 633 nm wavelength of HEK−ACE2 pixels)
+Two different statistical analysis methods determined the cell fusion level. The first statistical analysis was based on the percentage of HEK-ACE2 pixels (red) colocalizing with spike expressing CHO pixels (green), which was determined by the following equation within the JACoP plugin for ImageJ (Bolte and Cordelières, 2006):
+
+$$
+HEK−ACE2 colocalization%
+$$
+
+
+
+$$
+=\frac{(summed intensities at 633 nm wavelength of HEK−ACE2 pixels colocalizaing with CHO pixels)}{(summed intensities at 633 nm wavelength of HEK−ACE2 pixels)}
+$$
 
 The colocalization percentage for each independent image was determined using the Manders’ coefficient. The average HEK-ACE2 cell size after coincubation with CHO cells was also determined using ImageJ software. The images collected at 633 nm emission (red fluorescence) were converted into 16-bit grayscale and the threshold adjusted to highlight the cell structure. The average cell size was automatically counted using ‘Analyze Particles’ with a size threshold (50–infinity) to exclude the background noise. The cells on the edge were excluded. The statistical significance of either HEK-ACE2 colocalization percentage or average cell size between different conditions was calculated with ANOVA using GraphPad Prism 7 (GraphPad Software). Values represent the mean and standard deviation of at least 160 cells.
 
-## Generation of HEK293T-ACE2 and HEK293T-DPP4 target cells
+### Generation of HEK293T-ACE2 and HEK293T-DPP4 target cells
 
 A lentiviral vector expressing human ACE2 (pHAGE2-EF1aInt-ACE2-WT) or DPP4 (pLEX307-DPP4-G418) an EF1a promoter was used to transduce HEK293T cells. Clonal selection depended on the susceptibility to infection by the pseudotyped lentiviral particles; selected clones were validated using Western blotting.
 
-## SARS-2 spike-mediated pseudovirus entry assay
+### SARS-2 spike-mediated pseudovirus entry assay
 
 HIV particles pseudotyped with wild-type or the Omicron BA.1 variant of SARS-2 spike, SARS-1 spike, MERS spike, and VSV-G were generated in HEK 293T cells. A detailed protocol for generating these particles was reported by Crawford et al., 2020. HEK 293T cells were co-transfected with plasmids for (1) HIV virion-formation proteins (HDM-Hgpm2, pRC-CMV-Rev1b, and HDM-tat1b); (2) lentiviral backbone expressing luciferase reporter (pHAGE-CMV-Luc2-IRES-ZsGreen-W); and (3) a plasmid encoding one of the envelope proteins (wild-type SARS-2, SARS-2 Omicron BA.1, SARS-1, MERS, or VSV G). 72 hours post-transfection, media containing the pseudovirus particles were collected, filtered, fractionated, and stored at –80°C. In all the assays, 10,000 target cells were seeded in each well of the 96-well plate and allowed to adhere overnight before virus treatment. For the SARS-2-spike mutagenesis studies, virus titer was estimated for each virus using the qPCR Lentivirus Titer Kit (abm LV900), following the manufacturer’s protocol. An equal number of viral particles carrying each spike mutant were serially diluted and added directly to HEK293T-ACE2 target cells (in triplicate). For the neutralization assays, the particles were used directly in cell entry experiments or after pre-incubation with each antibody for one hour at room temperature or at 4°C for the viral particles pseudotyped with the MERS spike. After 60–72 hr, a total number of cells per well were estimated using lncuCyte ZOOM equipment with a ×10 objective. Then cells were treated with the Bright-Glo Luciferase Assay reagent (Promega, E2610) to detect a luciferase signal (relative luciferase units or RLU) following the manufacturer’s protocol. The percentage of entry was estimated as the ratio of the relative luciferase units recorded in the presence and absence of the tested antibody and a half-maximal inhibitory concentration (IC50) calculated using a three-parameter logistic regression equation (GraphPad Prism v9.0).
 
-## Live SARS-2 viral neutralization assays
+### Live SARS-2 viral neutralization assays
 
 Approximately 200 PFU/well of SARS-2 WA-1 strain containing twofold dilutions (starting concentration 670 nM) of antibody were incubated at 37°C for 1 hr. Vero HL cells (4 × 104 cells/well in quadruplicate) were infected with the virus/antibody mixture, or virus alone mixture for 1 hr. After 1 hr virus adsorption, the media was changed with post-infection media containing 2% FBS, 1% Avicel and antibody. At 24 hr post-infection, infected and mock infected control cells were fixed with 10% neutral formalin for 24 hr and were immunostained with the anti-NP monoclonal 1C7C7 antibody. Virus neutralization was evaluated and quantified using ELISPOT, and the percentage of infectivity calculated using sigmoidal dose–response curves. In both cases, mock-infected cells and viruses in the absence of antibody were used as internal controls. Dotted line indicates 50% neutralization. Data were expressed as mean and SD.
 
-## Fc-dependent ADCP and ADCC assays
+### Fc-dependent ADCP and ADCC assays
 
 To assess the ability of antibodies to induce phagocytosis, Flash Red polystyrene beads (Bangs Laboratories) were coated with SARS-2 HexaPro or 4P-DS spike and stained with pHrodo Green (Thermo Fisher Scientific). The beads were incubated with 50,000 undifferentiated THP-1 cells at a ratio of 50:1, and antibodies at 3.4 nM for 4 hr at 37°C. After washing, 10,000 cells per sample were evaluated by flow cytometry on a BD Fortessa instrument for red (APC channel) and pHrodo Green fluorescence. The phagocytosis score was calculated as the percent of total cells fluorescent in both the APC and pHrodo Green channel multiplied by the GMFI for the APC channel (Ackerman et al., 2011). Data was collected from two separate experiments with two technical replicates each.
 
-To evaluate ADCC, HEK-293T cells were transfected with pWT-SARS-2-spike or nothing (mock) and allowed to express surface spike for 2 days. The HEK-293T cells were then stained with 2 µM calcein AM (BD Biosciences) for 30 min in serum-free media at 37°C, washed thoroughly and incubated for 4 hr with 67 nM antibody and NK-92 V158 cells (ATCC) at a ratio of 10:1. The cells were then spun down. The fluorescence of the supernatant was measured with 488 nm excitation and 515 nm emission. Controls included HEK-293T cells alone (spontaneous release) and fully lysed with detergent (maximum lysis). The following calculation determined the percent lysis for each antibody:%lysis=sample RFU−spontaneous release RFUmaximum lysis RFU−spontaneous release RFU.
+To evaluate ADCC, HEK-293T cells were transfected with pWT-SARS-2-spike or nothing (mock) and allowed to express surface spike for 2 days. The HEK-293T cells were then stained with 2 µM calcein AM (BD Biosciences) for 30 min in serum-free media at 37°C, washed thoroughly and incubated for 4 hr with 67 nM antibody and NK-92 V158 cells (ATCC) at a ratio of 10:1. The cells were then spun down. The fluorescence of the supernatant was measured with 488 nm excitation and 515 nm emission. Controls included HEK-293T cells alone (spontaneous release) and fully lysed with detergent (maximum lysis). The following calculation determined the percent lysis for each antibody:
+
+$$
+%lysis=\frac{sample RFU−spontaneous release RFU}{maximum lysis RFU−spontaneous release RFU}.
+$$
 
 Three assays were performed in total with duplicate technical replicates.
 
-## Statistical analyses
+### Statistical analyses
 
 The means ± SD were determined for all appropriate data. For the mammalian cell fusion experiments, pseudovirus neutralization experiments and epitope variant analysis, a one-way analysis of variance (ANOVA) with Tukey’s simultaneous test with p-values was used to determine statistical significance between groups. Welch’s t-test was used to determine the significance of deuterium uptake differences.

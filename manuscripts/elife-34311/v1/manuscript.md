@@ -97,7 +97,7 @@
 
 ## Abstract
 
-Potent, selective and broadly characterized small molecule modulators of protein function (chemical probes) are powerful research reagents. The pharmaceutical industry has generated many high-quality chemical probes and several of these have been made available to academia. However, probe-associated data and control compounds, such as inactive structurally related molecules and their associated data, are generally not accessible. The lack of data and guidance makes it difficult for researchers to decide which chemical tools to choose. Several pharmaceutical companies (AbbVie, Bayer, Boehringer Ingelheim, Janssen, MSD, Pfizer, and Takeda) have therefore entered into a pre-competitive collaboration to make available a large number of innovative high-quality probes, including all probe-associated data, control compounds and recommendations on use ( https://openscienceprobes.sgc-frankfurt.de / ). Here we describe the chemical tools and target-related knowledge that have been made available, and encourage others to join the project.
+Potent, selective and broadly characterized small molecule modulators of protein function (chemical probes) are powerful research reagents. The pharmaceutical industry has generated many high-quality chemical probes and several of these have been made available to academia. However, probe-associated data and control compounds, such as inactive structurally related molecules and their associated data, are generally not accessible. The lack of data and guidance makes it difficult for researchers to decide which chemical tools to choose. Several pharmaceutical companies (AbbVie, Bayer, Boehringer Ingelheim, Janssen, MSD, Pfizer, and Takeda) have therefore entered into a pre-competitive collaboration to make available a large number of innovative high-quality probes, including all probe-associated data, control compounds and recommendations on use (https://openscienceprobes.sgc-frankfurt.de/). Here we describe the chemical tools and target-related knowledge that have been made available, and encourage others to join the project.
 
 ## “Man must shape his tools lest they shape him” (Arthur Miller)
 
@@ -135,6 +135,193 @@ This is an exciting development, but many of the compounds will require wider pr
 
 The aim of our partnership is to provide this comprehensive characterization. We believe this to be a valuable contribution to the community. Once broadly characterized and accompanied by relevant control compounds, the initial set of 70 probes reflect a collective contribution of at least €140 million to the public domain (Figure 3). These donated probes cover a broad array of targets from different protein families relevant for a number of disease indications (see Table 1).
 
+**Table 1.**
+ Targets of first wave of donated probes (approved or close to approval).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>Target</th>
+      <th>Mode of action</th>
+      <th>Company</th>
+      <th>Structure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>D4 Dopamine receptor</td>
+      <td>Agonist</td>
+      <td>AbbVie ABT-724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="7">GPCR</td>
+      <td>ETA Endothelin receptor</td>
+      <td>Antagonist</td>
+      <td>AbbVie ABT-546</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Par1/F2R (F2R) Protease activated receptor</td>
+      <td>Antagonist</td>
+      <td>Bayer BAY-386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CRTH2 (Prostaglandin DP2 receptor)</td>
+      <td>Antagonist</td>
+      <td>MSD CRTH2i</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CB1 Cannabinoid receptor</td>
+      <td>Inverse Agonist</td>
+      <td>MSD MRL-650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EP2Prostaglandin receptor</td>
+      <td>Antagonist</td>
+      <td>Pfizer PF-04418948</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>α1D Adrenoceptor</td>
+      <td>Antagonist</td>
+      <td>Takeda (R)-9s</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KISS1 Receptor (GPR54)</td>
+      <td>Agonist</td>
+      <td>Takeda KISS1-305</td>
+      <td>D-Tyr-D-Pya(4)-Asn-Ser-Phe-azaGly-Leu-Arg(Me)-Phe-NH2</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Hydrolase</td>
+      <td>sEH (Soluble epoxide hydrolase)</td>
+      <td>Inhibitor</td>
+      <td>Boehringer Ingelheim BI-1935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FAAH (Fatty acid amide hydrolase)</td>
+      <td>Inhibitor</td>
+      <td>Pfizer PF-04457845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ion channel</td>
+      <td>TRPM8 (Cold and menthol receptor 1)</td>
+      <td>Antagonist</td>
+      <td>Pfizer PF-05105679</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Kinase</td>
+      <td>c-MET (Tyrosine-protein Kinase Met)</td>
+      <td>Inhibitor</td>
+      <td>Bayer BAY-474</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TIE (Tyrosine kinase with Ig and EGF homology domains 1), DDR (Discoidin domain receptor family)</td>
+      <td>Inhibitor</td>
+      <td>Bayer BAY-826</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ERK1/2 (Extracellular signal-regulated kinase)</td>
+      <td>Inhibitor</td>
+      <td>MSD MRK-ERKi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYK (Spleen tyrosine kinase)</td>
+      <td>Inhibitor</td>
+      <td>MSD MRL-SYKi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FAK/PYK2(focal adhesion kinase/proline-rich tyrosine kinase 2)</td>
+      <td>Inhibitor</td>
+      <td>Pfizer PF-04554878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="7">Other</td>
+      <td>FLAP (5-Lipoxygenase-activating protein)</td>
+      <td>Inhibitor</td>
+      <td>Boehringer Ingelheim BI 665915</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FASN (Fatty acid synthase)</td>
+      <td>Inhibitor</td>
+      <td>Boehringer Ingelheim BI 99179</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MIF (Macrophage migration inhibitory factor)</td>
+      <td>Activator</td>
+      <td>Takeda BTZO-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Farnesyltransferase</td>
+      <td>Inhibitor</td>
+      <td>AbbVie ABT-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P300/CBP(E1A binding protein/CREB binding protein)</td>
+      <td>Inhibitor</td>
+      <td>AbbVie A-485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NHE1, SLC9A1</td>
+      <td>Antagonist</td>
+      <td>Boehringer Ingelheim BI-9267</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MTH1 (MutT homolog 1)</td>
+      <td>Inhibitor</td>
+      <td>Bayer BAY-707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Protease</td>
+      <td>MMP12 (Matrix metallopeptidase 12)</td>
+      <td>Inhibitor</td>
+      <td>Bayer BAY-7598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gamma secretase</td>
+      <td>Inhibitor</td>
+      <td>MSD MRK-560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gamma secretase</td>
+      <td>Modulator</td>
+      <td>MSD GSM1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>METAP2 (Methionine aminopeptidase-2)</td>
+      <td>Inhibitor</td>
+      <td>Takeda TP-004</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/34311/elife-34311-fig3-v1.jpg)
 
 **Figure 3.:** Planned release for wave one probes is in spring 2018 pending the outcome of independent peer review. The targets of this first wave of probes are given in Table 1. Final numbers may slightly vary as some chemical probes are still in the approval process.
@@ -142,6 +329,57 @@ The aim of our partnership is to provide this comprehensive characterization. We
 In order to guarantee the quality of the compounds, the donated probe candidates and control compounds are subjected to a two-tier scientific review process: the first review takes place internally, including partners who have not been involved in the probe project, and the second review is performed by a panel of renowned scientists, who have agreed to act as independent reviewers. The first 30 proposals were presented to the internal review committee during a two-day meeting in June 2017 in Frankfurt am Main, Germany, where a process for their release to the public was also established. At this ‘historic’ meeting scientists from eight pharmaceutical companies scrutinized the quality of the probes proposed by the other partners and made constructive suggestions on improvement of the associated data packages (Figure 4A).
 
 In the initial set, most targets are uniquely addressed by only one chemical compound, but a maximum of two chemical probes for the same target will be accepted if they represent different chemotypes as judged by the review panels. The remaining probe sets will be provided during the course of 2018/2019. All approved probes are measured against the same quality criteria (Figure 1) and will be profiled in assay panels comprising of >500 assays, including broad panels of pharmacologically active targets such as GPCRs, kinases, ion channels and proteases to identify off-target activities (Table 2). Disease-specific phenotypic panels such as assays in primary tissues established by SGC partners will provide an initial characterization of their biological effects (Edwards et al., 2015).
+
+**Table 2.**
+ Overview of data generated for all donated probes.These data will be made available through a publicly available database.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Assays</th>
+      <th>Scope</th>
+      <th>Timing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target-specific assays (biochemical/ biophysical/ cell-based)</td>
+      <td rowspan="2">All chemical probes &amp; controls</td>
+      <td rowspan="2">Before release (decision criteria)</td>
+    </tr>
+    <tr>
+      <td>Target-specific selectivity panels</td>
+    </tr>
+    <tr>
+      <td>500+ kinases</td>
+      <td rowspan="4">All chemical probes &amp; controls</td>
+      <td rowspan="4">After release (annotation)</td>
+    </tr>
+    <tr>
+      <td>Broad specificity panel, 100+ ion channels, GPCRs, proteases</td>
+    </tr>
+    <tr>
+      <td>30+ epigenetics targets</td>
+    </tr>
+    <tr>
+      <td>Phenotypic assays (cell lines &amp; primary human material)</td>
+    </tr>
+    <tr>
+      <td>3D structure of protein-ligand complex</td>
+      <td>Subset</td>
+      <td rowspan="3">Optional</td>
+    </tr>
+    <tr>
+      <td>Physchem parameters, e.g. solubility</td>
+      <td>Subset</td>
+    </tr>
+    <tr>
+      <td>In vivo experiments</td>
+      <td>Selected probes</td>
+    </tr>
+  </tbody>
+</table>
 
 The proposed probes range from completely novel ‘best in class’, to probes that have been selected because they are provided as a complete set, with control compounds. Although some of the proposed compounds themselves are already commercially available, for most there is no widely characterized partner control compound (Figure 4B).
 

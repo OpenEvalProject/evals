@@ -38,21 +38,29 @@ Here, we performed scRNA-seq analysis on Marsupenaeus japonicus hemocytes to cla
 
 ## Results
 
-## scRNA-seq clustering of M. japonicus hemocytes
+### scRNA-seq clustering of M. japonicus hemocytes
 
 Our study utilized scRNA-seq to determine the cellular subtypes with a distinct transcriptional expression (Figure 1A). To map the scRNA-seq sequences from M. japonicus hemocytes, we first prepared a high-quality de novo assembled reference genes using hybrid assembly of short- and long-read RNA sequencing results. The quality of assembled genes was quality-checked by BUSCO against arthropoda database. BUSCO tool showed 91.5% (35.6% complete and single-copy genes and 55.9% complete and duplicated genes) as complete genes, showing good completeness of the assembly. Some of the assembled genes constructed in this study showed homology to the same genes despite processed EvidentialGene program to remove similar sequences. Cluster database at high identity with tolerance (CD-HIT) programs was also applied on our draft assembled genes, but it was not able to cluster better than EvidentialGene program. Since we thought that subjective clustering of specific genes by ourselves would result in bias, we conducted our analysis based on the results of clustering by EvidentialGene program. Then, by using self-built Drop-seq microfluidic chips, single hemocytes were captured and their mRNA was barcoded using the droplet-based strategy. This process was performed in triplicates for three shrimp individuals. Following library preparation and sequencing, the transcriptomes obtained from scRNA-seq were mapped against the reference genes to discover the cell types.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig1-v2.jpg)
 
-**Figure 1.:** M. japonicus hemocytes.Single hemocytes were analyzed through the microfluidics-based Drop-seq, mRNA sequencing for the preparation of de novo assembled gene sets, in silico analysis workflow, and morphology-based cell classification.
+**Figure 1.:** Single hemocytes were analyzed through the microfluidics-based Drop-seq, mRNA sequencing for the preparation of de novo assembled gene sets, in silico analysis workflow, and morphology-based cell classification.
 
 Using the Drop-seq procedure, we profiled a total of 2566 cells and obtained a median value of 2427 unique molecular identifiers (UMIs), 1193 genes, and 2.9% of mitochondrial genes per cell across three replicates (Figure 2, Figure 2—figure supplement 1A–C). There was some transcriptional variability, which may have resulted from the artifacts of the Drop-seq system, because it is consistent with the original Drop-seq paper (Macosko et al., 2015) and with recent findings in other organisms, such as fish (Carmona et al., 2017), flies (Tattikota et al., 2020; Cho et al., 2020), and mosquitoes (Raddi et al., 2020). We constructed three Drop-seq libraries, which accumulates 1500 cells each from three individual shrimps. The sequence depth of read number per single-cell counts about 800,000 reads per cell based on the calculation that 400 million reads from NextSeq 500/550 High Output v2 kit/three individual shrimp/1500 cells. Conventionally, this read number is sufficient for any biological clustering with reference to the additional information of Drop-seq original paper; however, we obtained a median value of 2427 UMIs per cell, which is lower than other organisms such as Drosophila melanogaster counting 8000 UMIs (Tattikota et al., 2020) or HEK (human) and 3T3 (mouse) cells counting 9000 UMIs (Macosko et al., 2015), respectively. This is due to the lack of genomic information of M. japonicus; hence, we prepared de novo assembled transcripts for the read mapping. As the genomic analysis of M. japonicus further progresses, we believe that these UMI values will be improved.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig2-v2.jpg)
+
+**Figure 2.:** Distribution and the median of the number of transcripts (unique molecular identifiers [UMIs]) (A), genes (B), and percentage of mitochondrial UMIs (C) detected per cell. Uniform manifold approximation and projection (UMAP) plot of SCTransform batch corrected and integrated of hemocytes from three shrimps (n = 2566) (D). scRNA-seq analysis of penaeid shrimp M. japonicus hemocytes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Uniform manifold approximation and projection plot of SCTransform batch corrected and integrated of hemocytes from individual shrimps (D).
 
 Applying the SCTransform batch correction method integrated into the Seurat package allowed us to remove the individual differences. SCTransform successfully integrated all three shrimp datasets (Figure 2—figure supplement 1D), among which we identified a total of six clusters (Figure 2D). Each cluster contained the following number of cells: Hem 1, 168 cells (6.5%); Hem 2, 850 cells (33.1%); Hem 3, 533 cells (20.8%); Hem 4, 468 cells (18.2%); Hem 5, 134 cells (5.2%); and Hem 6, 413 cells (16.1%).
 
 Since not all the de novo assembled transcripts were expressed in this single-cell data, the highly expressed transcript that represents 50% of the total normalized expression data was extracted as ‘Ex50’ for further analysis. The functions of 1362 transcripts composed Ex50 were predicted by blastx program on penaeid shrimp proteins and by eggNOG-mapper annotation for the eukaryotic orthologous groups (KOGs) and gene ontologies (GOs) (Supplementary file 1).
 
-## KOGs and GOs analysis on clusters
+### KOGs and GOs analysis on clusters
 
 Among 1362 transcripts composed Ex50, 865 (70.9%) transcripts on shrimp proteins, 886 (65.1%) transcripts on KOG annotation, and 614 (45.1%) transcripts on GO annotation were annotated.
 
@@ -62,7 +70,7 @@ In the result of KOGs, seven KOG annotations (i.e., chromatin structure and dyna
 
 **Figure 3.:** Dot plot representing the average expression of KOGs (A) and GOs (B) per cluster. Color gradient of dots represents the expression level, while the size represents the percentage of cells expressing any genes per cluster. The numbers in parentheses represent the number of genes estimated as distinct function of KOGs or GOs.
 
-## Cluster-specific markers and their functional prediction
+### Cluster-specific markers and their functional prediction
 
 A total of 415 cluster-specific markers were predicted using the Seurat FindMarkers tool (Figure 4A; Supplementary file 2). For each cluster, 167 (Hem 1), 29 (Hem 2), 38 (Hem 3), 37 (Hem 4), 42 (Hem 5), and 102 (Hem 6) markers were identified. Important markers in each cluster are described in the dot plot figure (Figure 4B).
 
@@ -78,19 +86,31 @@ In cluster Hem 3, two markers were annotated with anti-lipopolysaccharide factor
 
 In clusters Hem 5 and Hem 6, many of the cluster-specific markers showed similarity with immune-related genes of penaeid shrimp. In clusters Hem 5 and Hem 6, markers showed a high similarity with alpha2-macroglobulin, c-type lysozyme, stylicin, crustin, penaeidin-II, hemocyte kazal-type proteinase inhibitor (KPI), superoxide dismutase (SOD), prophenoloxidase (proPO), PPAF, and TGase. Hem 5 and 6 were found to have high expressions of immune-related genes by GO analysis, and our maker analysis results support this observation.
 
-## G2/M and S phase clustering and pseudo-temporal ordering of hemocytes delineate hemocyte lineages
+### G2/M and S phase clustering and pseudo-temporal ordering of hemocytes delineate hemocyte lineages
 
 Cell cycle of each cell was calculated by Seurat CellCycleScoring function based on the homologue genes of Drosophila G2/M and S phase markers (https://github.com/hbc/tinyatlas, Kirchner and Barrera, 2019). In the search for cell cycle-specific markers, we found that a large portion of cells in Hem 1 expressed the G2/M-related genes of Drosophila (Supplementary file 3; Figure 5—figure supplement 2). For examples, HP1 and Su(var)205 are known to be essential for the maintenance of the active transcription of the euchromatic genes functionally involved in cell-cycle progression, including those required for DNA replication and mitosis in Drosophila (De Lucia et al., 2005; Paro and Hogness, 1991). CTCF has zinc finger domains and plays an important role in the development and cell division of fly and mammalian cells (Mohan et al., 2007; Rasko et al., 2001). These findings suggested that hemocytes grouped as Hem 1 are tightly regulated by these G2/M phase-related genes to promote cell division. Among the total of 2566 cells, G1 phase consisted of 66% (1693 cells), G2/M phase consisted of 9% (236 cells), and S phase consisted of 25% cells (637 cells), respectively. With the exception of Hem 1, the percentage of G1 phase was the highest, and S phase was the second highest among all clusters; Hem 2 to Hem 6 (Figure 5A, B). On the other hand, Hem 1 showed the highest percentage of G2/M phase, followed by G1 phase and the lowest percentage of S phase. KOG and GO analyses of each cluster showed that Hem 1 cluster has high expression of chromatin dynamics, duplication, and growth functions (Figure 3). Thereby, we determined that Hem 1 is a cluster in the early stage of hemocyte development, which might have the potential of self-renewing or just came out from the hematopoietic tissue (HPT). A previous study using flow cytometry reported a significantly lower percentage of S phase, about 0.5% (Sequeira et al., 1996). It is possible that the genes used in the analysis of S phase had lower homology with Drosophila markers than the gene set used in the analysis of G2/M phase, and thus did not score as accurately as Drosophila.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig5-v2.jpg)
+
+**Figure 5.:** Percentage of each cell cycle on clusters (A). Uniform manifold approximation and projection plot of cell cycles of hemocytes from three shrimps (n = 2566) (B). Visualization of clusters onto the pseudotime map using monocle 3 (C). The black lines indicate the main path of the pseudotime ordering of the cells. Color gradient of each dot represents the pseudotime.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Batch effect was removed, and there were no differences between individuals.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Dot plot representing the average expression of G2/M and S phase-related genes per cluster. Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any genes per cluster. Detailed blast results are listed in Supplementary file 3.
+
 We further performed lineage-tree reconstruction using the Monocle 3 learn_graph function to investigate the dynamics of hemocyte differentiation because the differentiation and proliferation pathways of hemocytes in shrimp and other crustaceans are still under debate (Söderhäll, 2016). We considered Hem 1 to be the initial state of hemocytes and set it as the starting point in the differentiation process because Hem 1 expressed cell proliferation-related genes, TGase (an immature hemocyte marker), and G2/M phase-related genes (De Lucia et al., 2005; Paro and Hogness, 1991; Mohan et al., 2007; Rasko et al., 2001; Scott et al., 2007; Junkunlo et al., 2017; Junkunlo et al., 2019). From this pseudo-temporal ordering analysis, we found two main lineages starting from Hem 1 to Hem 4, and Hem 6 at the endpoints (Figure 5C). In crayfish, hematopoietic stem cells are present in HPT, and two types of hemocyte lineages starting from a hematopoietic stem cell exist (Lin and Söderhäll, 2011). In Penaeus monodon, hyaline cells (i.e., agranulocytes) are considered as the young and immature hemocytes of two types of matured hemocytes (van de Braak et al., 2002). Our pseudo-temporal ordering analysis revealed that the hemocytes of M. japonicus differentiate from a single subpopulation into two major populations. The differentiation process was continuous, not discrete, which was in agreement with previous arguments on the crustacean hematopoiesis mechanism (van de Braak et al., 2002; Lin and Söderhäll, 2011; Noonin et al., 2012).
 
-## Possibility of application of Drosophila hemocyte-type marker to shrimp
+### Possibility of application of Drosophila hemocyte-type marker to shrimp
 
 Since the hemocyte type-specific markers are better studied in Drosophila, we checked the Ex50 that are similar to the markers of Drosophila to determine whether they are applicable to shrimp. Among the specific markers of four types of Drosophila hemocytes, 8 genes in prohemocytes, 14 genes in plasmatocytes, 35 genes in lamellocytes, and 5 genes in crystal cells showed similarity with the shrimp genes (Figure 6; Supplementary file 4).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig6-v2.jpg)
 
-**Figure 6.:** Drosophila hemocyte-type markers in each cluster.Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. Detailed blast results are listed in Supplementary file 4.
+**Figure 6.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. Detailed blast results are listed in Supplementary file 4.
 
 In case of prohemocyte markers, Mj-7095 and Mj-21032 showed cluster-specific expression and were annotated on thioester-containing protein 4 (Tep4) with identity 30%, which participates in the cellular immune response to certain Gram-negative bacteria in Drosophila (Figure 6). Prohemocytes are progenitor cells in Drosophila; however, the expression of these marker genes was not strong in Hem 1, which was expected to be progenitor cells in shrimp, but rather was high in Hem 5 and 6. In the blastx results on penaeid shrimp proteins, Mj-7095 and Mj-21032 were annotated on alpha2-macroglobulin gene (Supplementary file 1). Alpha2-macroglobulin (a2m) of shrimp contributes clotting pathway to eliminate bacterial infection, and its proteins are contained within the secretory granules of hemocytes (Chaikeeratisak et al., 2012). Therefore, it is not reasonable to use these markers as a common marker with prohemocytes in shrimp.
 
@@ -100,7 +120,7 @@ Mj-7880 showed characteristic expression within the identical cluster among lame
 
 Among Drosophila crystal cell markers, four contigs, Mj-16308, Mj-16712, Mj-16869, and Mj-16919, were annotated on prophenoloxidase 1 (PPO1) of Drosophila (Figure 6). These four contigs were also annotated on proPO of M. japonicus and phenoloxidase 3-like of L. vannamei. From the single-cell study of Drosophila hemocytes, the expression level of PPO1 increased with the maturation of crystal cells (Tattikota et al., 2020). Crystal cells contain about −5% of total number of hemocytes of Drosophila and contain the enzymes necessary for humoral melanization that accompanies a number of immune reactions (Meister and Lagueux, 2003). It is very interesting to note that the ratio of Hem 6 is larger in shrimp compared to in Drosophila crystal cells, but the expression of proPO is highest in Hem 6, the estimated endpoint of differentiation by pseudotime analysis (Figure 5C). It is not possible to assign crystal cells of Drosophila and Hem 6 of shrimp as homologous cells because of the unknown similarities in morphology and other functions, but at least PPO/proPO can be considered to be a marker gene commonly expressed in mature hemocytes of both Drosophila and shrimp.
 
-## Expression of cell growth-related genes
+### Expression of cell growth-related genes
 
 The exploration of cluster-specific markers revealed that cell growth-related genes were specifically expressed in certain clusters. We identified 10 cell growth-related genes from Ex50 that are predicted to be involved in cell growth and differentiation: extracellular signal-regulated kinase (ERK), mitogen-activated protein kinase kinase 4 (MKK4), insulin-like growth factor-binding protein 4 (IGFBP-4), vascular endothelial growth factor 1 (VEGF-1), VEGF-3, astakine, crustacean hematopoietic factor-like protein (CHF-like), PDGF/VEGF-related factor 1, growth hormone secretagogue receptor type 1 (GHSR), and platelet-derived growth factor receptor alpha-like (PDGFRA-like) (Figure 7A; Supplementary file 1).
 
@@ -120,11 +140,39 @@ From Ex50 genes, we identified two candidate receptors related to cell growth, G
 
 So far, we described the expression of proliferation- and differentiation-promoting genes. However, there was also the specific expression of the hemocyte homeostasis regulatory gene, crustacean hematopoietic factor (CHF) (Lin and Söderhäll, 2011). CHF is a hematopoietic factor of crayfish, and the silencing of CHF leads to an increase in the apoptosis of cells in HPT and a reduction in the number of circulating hemocytes (Jiao et al., 2016). Additionally, the silencing of laminin, a receptor of CHF, reduces the number of circulating hemocytes by decreasing the number of agranulocytes, as opposed to granulocytes, in P. vannamei (Charoensapsri et al., 2015). CHF-like was expressed in cluster Hem 4, Hem 5, and Hem 6 (Figure 7). Taken together, CHF-like expressed from matured hemocytes might work as a hematopoietic factor against immature hemocytes, such as Hem 1 and Hem 2.
 
-## Expression of immune-related genes
+### Expression of immune-related genes
 
 Hemocytes of shrimp play key roles in their immunity; therefore, we identified immune-related genes from Ex50, and then analyzed their expression levels to deduce the detailed immune functions of each cluster (Supplementary file 1).
 
 AMPs and antimicrobial enzymes play the most important role in the immunity of shrimps and are well known to be stored in granulocytes (Bachère et al., 2004; Rosa and Barracco, 2010). The expression patterns of AMPs and antimicrobial enzymes revealed that the major AMPs of penaeid shrimp were expressed in clusters Hem 4 to Hem 6 (Figure 8A, B, Figure 8—figure supplement 1). Therefore, Hem 4 to Hem 6 were predicted to be granulocytes. Whereas almost all the expressions of AMP genes were increased as hemocytes grew (Figure 5C, Figure 8B), the expression patterns of ALFs were different from other AMPs (Figure 8—figure supplement 1). It is predicted that the diversity of shrimp ALFs contributes to create synergism-improving shrimp antimicrobial defenses (Rosa et al., 2013). Analysis of each function of ALFs may lead to a more detailed understanding of immune function in each cluster of hemocytes in shrimp.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-v2.jpg)
+
+**Figure 8.:** Dot plot representing the average expression of each immune-related gene per cluster (A). Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any genes per cluster. The numbers in parentheses represents the number of genes estimated as immune-related. Expression profiling of immune-related genes on UMAP plot (B). Color gradient of each plot represents the expression level. The details of the identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of the identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of the identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of the identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp5-v2.jpg)
+
+**Figure 8—figure supplement 5.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of the identified genes are listed in Supplementary file 1.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig8-figsupp6-v2.jpg)
+
+**Figure 8—figure supplement 6.:** Color gradient of the dot represents the expression level, while the size represents the percentage of cells expressing any gene per cluster. The details of the identified genes are listed in Supplementary file 1.
 
 Clotting is an important innate immune response in shrimp. Transglutaminase (TGase) plays critical roles in clotting and hematopoiesis, and there are two types of TGases in shrimp (Lin et al., 2008; Söderhäll, 2016; Lin and Söderhäll, 2011; Chen et al., 2005). In crayfish, different types of TGases are localized in different types of hemocyte, in immature hemocytes and granular hemocytes, respectively (Junkunlo et al., 2020). In our scRNA-seq, different types of TGases were expressed in different cluster of hemocytes (Figure 8—figure supplement 2), indicating that shrimp TGases are also expressed in different places. More interestingly, it is reported that TGase is not expressed in all granulocytes in crayfish (Junkunlo et al., 2020). Our result was in accordance with the previous study because not 100% of the hemocytes expressed TGase in clusters Hem 5 and Hem 6. Alpha2-a2m of shrimp contributes to clotting pathway and are stored in the granules of hemocytes (Chaikeeratisak et al., 2012). Since our results also showed strong expression of a2m in Hem 5 and Hem 6, these clusters are predicted to be a granulocyte. Coagulation factor and hemocytin are related to clotting pathway in invertebrates (Lavine and Strand, 2002; Kotani et al., 1995). Strong expression of the whole clotting-related genes was predicted in Hem 1, Hem 2, Hem 5, and Hem 6, except Hem 3 and Hem 4 (Figure 8). Although it is not possible to estimate which genes are working in clotting pathway and how, it is clear that there were populations, Hem 3 and Hem 4, that are not involved in clotting.
 
@@ -138,9 +186,17 @@ We also identified other immune-related genes (Figure 8—figure supplement 6). 
 
 In the mosquito, scRNA-seq revealed a new subpopulation called ‘antimicrobial granulocytes’ that expressed characteristic AMPs (Raddi et al., 2020). Similarly, in M. japonicus, the expression patterns of immune-related genes were also different among certain clusters, suggesting that shrimp hemocytes are more heterogeneous than previously thought. It is anticipated that the class of granulocytes discussed in previous studies is actually a mixture of clusters exhibiting different roles.
 
-## Validation of marker genes and the relationship between clusters and morphology
+### Validation of marker genes and the relationship between clusters and morphology
 
 Our scRNA-seq results revealed six major subpopulations and their marker genes, and the possible differentiation trajectory of kuruma shrimp M. japonicus hemocytes. Next, we examined the correlation between the morphology and expression of marker genes. Two major populations of hemocytes were sorted based on the forward versus side scatter plot obtained using microfluidic-based fluorescence-activated cell sorter (FACS). The sorted populations were observed using microscopy. FACS was able to separate hemocytes into two morphologically different populations (Figure 9A–E, Figure 9—figure supplement 1): smaller cells with low internal complexity in region 1 (R1) (50.7 ± 5.2%) and larger cells with high internal complexity in region 2 (R2) (47.7 ± 3.4%). From differential interference contrast (DIC) and dye staining imaging (Figure 9A–D), we observed that cells in the R1 region contained no or few granules in the cytoplasm. The nucleus occupied a large portion of the volume in these cells (Figure 9C). Conversely, those in the R2 region had many granules in the cytoplasmic region, which occupied a large portion of cells (Figure 9D).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig9-v2.jpg)
+
+**Figure 9.:** (A) Differential interference contrast (DIC) image of unsorted total hemocytes. (B) Dye-stained total hemocytes. (C) DIC imaging and dye staining of region 1 (R1)-sorted hemocytes. (D) DIC imaging and dye staining of region 2 (R2)-sorted hemocytes. (E) Fluorescence-activated cell sorting (FACS) analysis of hemocytes. Based on the forward scatter (FSC) and side scatter (SSC) two-dimensional space, two regions (R1 and R2) were obtained. (F) Differential gene expression analysis between R1 and R2 of hemocytes sorted using FACS. ∆∆Ct values were analyzed using qRT-PCR. Higher ∆∆Ct values indicate a higher accumulation of mRNA transcripts. The p values shown in the figures are represented by *p<0.05.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/66954/elife-66954-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Based on the forward scatter (FSC) and side scatter (SSC) two-dimensional space, two regions (R1 and R2) were obtained.
 
 We conducted qRT-PCR analysis to determine the expression of some representative genes in these populations. The results showed that the average ∆∆Ct values of the transcripts of HemTGase were higher in R1 hemocytes than in R2 hemocytes, while the values of penaeidin, crustin, stylicin, proPO, and SOD were higher in R2 hemocytes (Figure 9F). The average ∆∆Ct values of transcripts of c-type lysozyme and VRP were similar in R1 and R2 hemocytes. The combination of FACS and qRT-PCR results confirmed that the gene expression of the two populations in shrimp hemocytes was roughly divided based on morphology, that is, agranulocytes and granulocytes, which is consistent with our scRNA-seq analysis. Some of these genes were not statistically different in the t-test, but due to the small sample size, we used the mean values for discussion. Granulocytes found in the R2 region expressed major AMPs, such as penaeidin, crustin, and stylicin, suggesting that they consist of clusters Hem 4 to Hem 6. However, c-type lysozyme, which was expressed in Hem 4 to Hem 6 in scRNA-seq, was higher on the cells in R1 region. The reason why only c-lysozyme was expressed in different population from the other AMPs was unclear. VRP, which is a marker of Hem 3 (Figure 8—figure supplement 6), was expressed in cells in both R1 and R2 regions, indicating that Hem 3 exists in both populations and is indistinguishable from the morphological characteristics. Our conclusion that the cells in R1 and R2 regions separated by FACS consist of Hem 1–3 and Hem 4–6, respectively, is quantitatively supported by the fact that Hem 1–3 and Hem 4–6 cover 60.4 and 39.6% of whole cells, respectively.
 
@@ -160,56 +216,395 @@ In conclusion, we succeeded in classifying shrimp hemocytes into six subpopulati
 
 ## Materials and methods
 
-## Shrimp and cell preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Marsupenaeus japonicus)</td>
+      <td colspan="2">Hemocytes</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>Hemocytes from hemolymph from 20 g of kuruma shrimp</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">1st PCR primer</td>
+      <td>Macosko et al., 2015</td>
+      <td>DOI: 10.1016/j.cell.2015.05.002</td>
+      <td>AAGCAGTGGTATCAACGCAGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">P5 universal primer</td>
+      <td>Illumina, Inc</td>
+      <td>NA</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACGCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGT*A*C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">i7 index primer</td>
+      <td>Illumina, Inc</td>
+      <td>NA</td>
+      <td>N703: CAAGCAGAAGACGGCATACGAGATTTCTGCCTGTCTCGTGGGCTCGG N704: CAAGCAGAAGACGGCATACGAGATGCTCAGGAGTCTCGTGGGCTCGG N705: CAAGCAGAAGACGGCATACGAGATAGGAGTCCGTCTCGTGGGCTCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Custom sequence primer</td>
+      <td>Macosko et al., 2015</td>
+      <td>DOI: 10.1016/j.cell.2015.05.002</td>
+      <td>GCCTGTCCGCGGAAGCAGTGGTATCAACGCAGAGTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">EF-1α</td>
+      <td>Koiwai et al., 2019</td>
+      <td>DOI:10.1007/s12562-019-01311-5 sequence accession number: AB458256</td>
+      <td>For: ATTGCCACACCGCTCACA Rev: TCGATCTTGGTCAGCAGTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">HemTGase</td>
+      <td>Yeh et al., 2006</td>
+      <td>DOI: 10.1016/j.bbapap.2006.04.005 sequence accession number: DQ436474</td>
+      <td>For: GAGTCAGAAGTCGCCGAGTGT Rev: TGGCTCAGCAGGTCGTTTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Penaeidin</td>
+      <td>An et al., 2016</td>
+      <td>DOI: 10.1016/j.dci.2016.02.001 sequence accession number: KU057370</td>
+      <td>For: TTAGCCTTACTCTGTCAAGTGTACGCC Rev: AACCTGAAGTTCCGTAGGAGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Crustin</td>
+      <td>Hipolito et al., 2014</td>
+      <td>DOI: 10.1016/j.dci.2014.06.001 sequence accession number: AB121740</td>
+      <td>For: AACTACTGCTGCGAAAGGTCTCA Rev: GGCAGTCCAGTGGCTTGGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Stylicin</td>
+      <td>Liu et al., 2015</td>
+      <td>DOI: 10.1016/j.fsi.2015.09.044 sequence accession number: KR063277</td>
+      <td>For: GGCTCTTCCTTTTCACCTG Rev: GTCGGGCATTCTTCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">proPO</td>
+      <td>Koiwai et al., 2019</td>
+      <td>DOI: 10.1007/s12562-019-01311-5 sequence accession number: AB073223</td>
+      <td>For: CCGAGTTTTGTGGAGGTGTT Rev: GAGAACTCCAGTCCGTGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">SOD</td>
+      <td>Hung et al., 2014</td>
+      <td>DOI: 10.1016/j.fsi.2014.07.030 sequence accession number: AB908996</td>
+      <td>For: GCCGACACTTCCGACATCA Rev: TTTTGCTTCCGGGTTGGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">C-lysozyme</td>
+      <td>Hikima et al., 2003</td>
+      <td>DOI:10.1016/s0378-1119(03)00761-3</td>
+      <td>For: ATTACGGCCGCTCTGAGGTGC Rev: CCAGCAATCGGCCATGTAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">VRP</td>
+      <td>Elbahnaswy et al., 2017</td>
+      <td>DOI: 10.1016/j.fsi.2017.09.045 sequence accession number: LC179543</td>
+      <td>For: CTACGGTCGCTACCTTCGTTTG Rev: TCAACAACGCTTCTGAACTTATTCC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">TRI REAGENT</td>
+      <td>Molecular Research Center, Inc</td>
+      <td>TR118</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Direct-zol RNA MiniPrep</td>
+      <td>Zymo Research</td>
+      <td>R2050</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Dynabeads Oligo(dT)25</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>DB61002</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Direct RNA Sequencing kit</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>SQK-RNA002 kit</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">MinION Flow Cell</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Flow Cell R9.4.1</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Negative Photoresist</td>
+      <td>Nippon Kayaku Co., Ltd.</td>
+      <td>SU-8 3050</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Polydimethylsiloxane sylgard 184</td>
+      <td>Dow Corning Corp.</td>
+      <td>SYLGARD 184 Silicone Elastomer Kit</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Barcoded Bead SeqB</td>
+      <td>ChemGenes Corporation</td>
+      <td>MACOSKO-2011–10</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Maxima H Minus Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>EP0751</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Exonuclease I</td>
+      <td>New England Biolabs</td>
+      <td>M0293S</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">KAPA HiFi HotStart ReadyMix</td>
+      <td>Roche Ltd.</td>
+      <td>KK2601</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">KAPA HiFi DNA polymerase</td>
+      <td>Roche Ltd.</td>
+      <td>KK2103</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Agencourt AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>A63882</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">DNA Clean and Concentrator Kit</td>
+      <td>Zymo Research</td>
+      <td>D4013</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Qubit dsDNA HS Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Q32851</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>4368814</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">KOD SYBR qPCR</td>
+      <td>TOYOBO Co. Ltd.</td>
+      <td>QKD-201</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Cell staining solution</td>
+      <td colspan="2">May-Grünwald‘s eosin methylene blue solution modified</td>
+      <td>Merck KGaA</td>
+      <td>101424</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Cell staining solution</td>
+      <td colspan="2">Giemsa’s Azure Eosin Methylene Blue solution</td>
+      <td>Merck KGaA</td>
+      <td>109204</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Guppy v3.6.1</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>NA</td>
+      <td>https://community.nanoporetech.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">MinKNOW v3.6.5</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>NA</td>
+      <td>https://community.nanoporetech.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">TALC v1.01</td>
+      <td>Broseus et al., 2020a, Broseus et al., 2020b</td>
+      <td>DOI: 10.1093/bioinformatics/btaa634</td>
+      <td>https://gitlab.igh.cnrs.fr/lbroseus/TALC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">rnaSPAdes v3.14.1</td>
+      <td>Bushmanova et al., 2019a, Bushmanova et al., 2019b</td>
+      <td>DOI: 10.1093/gigascience/giz100</td>
+      <td>https://cab.spbu.ru/software/rnaspades/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Trinity 2.10.0</td>
+      <td>Grabherr et al., 2011, Grabherr et al., 2018</td>
+      <td>DOI: 10.1038/nbt.1883</td>
+      <td>https://github.com/trinityrnaseq/trinityrnaseq/wiki</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">EvidentialGene v2022.01.20</td>
+      <td>Gilbert, 2019</td>
+      <td>NA</td>
+      <td>http://arthropods.eugenes.org/EvidentialGene/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">BUSCO v5.0.0</td>
+      <td>Seppey et al., 1962</td>
+      <td>DOI: 10.1007/978-1-4939-9173-0_14</td>
+      <td>https://busco.ezlab.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Blast+ v2.2.31</td>
+      <td>Altschul et al., 1990; Camacho et al., 2009</td>
+      <td>DOI: 10.1016/s0022-2836(05)80360-2 DOI: 10.1186/1471-2105-10-421</td>
+      <td>https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Drop-seq tools v2.3.0</td>
+      <td>McCarroll Lab Wysoker et al., 2020</td>
+      <td>NA</td>
+      <td>https://github.com/broadinstitute/Drop-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Picard Toolkit</td>
+      <td>Broad Institute Picard Toolkit, 2019</td>
+      <td>NA</td>
+      <td>http://broadinstitute.github.io/picard/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">STAR v2.7.8a</td>
+      <td>Dobin et al., 2013; Dobin et al., 2021</td>
+      <td>DOI: 10.1093/bioinformatics/bts635</td>
+      <td>https://github.com/alexdobin/STAR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Surat v4.0.1</td>
+      <td>Butler et al., 2018; Stuart et al., 2019</td>
+      <td>DOI: 10.1038/nbt.4096 DOI: 10.1016/j.cell.2019.05.031</td>
+      <td>https://satijalab.org/seurat/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Monocle 3 v0.2.3.0</td>
+      <td>Trapnell et al., 2014, Trapnell et al., 2021</td>
+      <td>DOI: 10.1038/nbt.2859</td>
+      <td>https://github.com/cole-trapnell-lab/monocle3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Shrimp and cell preparation
 
 Twenty-three female kuruma shrimp, M. japonicus, with an average weight of 20 g, were purchased from a local distributor and maintained in artificial seawater with a 34 ppt salinity with a recirculating system at 20°C. Hemolymph was collected using an anticoagulant solution suitable for penaeid shrimp (Söderhäll and Smith, 1983) from an abdominal site. The collected hemolymph was centrifuged at 800 × g for 10 min to collect the hemocytes, which were then washed twice with PBS, and the osmolarity was adjusted to kuruma shrimp (KPBS: 480 mM NaCl, 2.7 mM KCl, 8.1 mM Na2HPO4·12H2O, 1.47 mM KH2PO4, pH 7.4).
 
-## Preparation of expressing gene list of hemocytes
+### Preparation of expressing gene list of hemocytes
 
 De novo assembled transcript data were prepared as a reference for mapping Drop-seq data because the genome sequence of M. japonicus is still unknown. To improve the quality of the de novo assembled transcript sequences, we prepared long-read mRNA sequences using MinION (Oxford Nanopore Technologies) direct RNA sequencing to conduct hybrid de novo assembly. Poly(A) tailed RNA was purified from 58 μg of total RNA from the hemocytes of 16 shrimp using Dynabeads Oligo(dT)25 (Thermo Fisher Scientific), and 500 ng of poly-(A) RNA was ligated to adaptors using a direct RNA sequencing kit (Oxford Nanopore Technologies) according to the manufacturer’s manual version DRS_9080_v2_revL_14Aug2019. Finally, 44 ng of the library was obtained and sequenced using MinION by using a MinION flow cell R9.4.1 (Oxford Nanopore Technologies). All sequencing experiments were performed using MinKNOW v3.6.5 without base calling. Raw sequence data were then base-called using Guppy v3.6.1. Once the raw signal from the MinION fast5 files was converted into fastq files, the sequencing errors were corrected using TALC v1.01 (Broseus et al., 2020a, https://gitlab.igh.cnrs.fr/lbroseus/TALC, Broseus et al., 2020b), by using the Illumina short reads sequence of M. japonicus shrimp hemocytes (DDBJ Sequence Read Archive [DRA] accession number DRA004781). The corrected long-read sequences from MinION and short-read sequences from Illumina Miseq were hybrid de novo assembled using rnaSPAdes v3.14.1 (Bushmanova et al., 2019a, https://cab.spbu.ru/software/rnaspades/, Bushmanova et al., 2019b) and Trinity 2.10.0 (Grabherr et al., 2011, https://github.com/trinityrnaseq/trinityrnaseq/wiki, Grabherr et al., 2018). All assembled de novo transcripts were merged and subjected to the EvidentialGene program v2022.01.20 (http://arthropods.eugenes.org/EvidentialGene/, Gilbert, 2019) to remove similar sequences with a default parameter. The remaining sequences were renamed as Mj-XXX and were subjected to BUSCO analysis to check the quality of assembling (Seppey et al., 1962). The assembled transcripts were used as a hemocyte-expressing gene list. The assembled sequences and code used to perform base-calling and de novo assembly are available on GitHub at https://github.com/KeiichiroKOIWAI/Drop-seq_on_shrimp (Koiwai, 2021a, copy archived at swh:1:rev:cddd130b4cb841168bf3e29d0fbfef0de5ef2ad7, Koiwai, 2021b).
 
-## Single-cell and single-bead encapsulation by a microfluidic device and exonuclease and reverse transcribe reaction on a bead
+### Single-cell and single-bead encapsulation by a microfluidic device and exonuclease and reverse transcribe reaction on a bead
 
 The Drop-seq procedure was used to encapsulate single hemocytes and single mRNA capture beads together into fL-scale microdroplets, as previously described (Macosko et al., 2015). The following steps were performed in triplicates for three shrimp individuals. Briefly, the self-built Drop-seq microfluidic device was prepared by molding polydimethylsiloxane (PDMS; Sylgard 184, Dow Corning Corp.) from the microchannel structure formed by the negative photoresist (SU-8 3050, Nippon Kayaku Co.). Using this device, droplets containing a cell and a Barcoded Bead SeqB (ChemGenes Corporation) were produced up to 2 mL per sample using a pressure pump system (Droplet generator, On-chip Biotechnologies Co., Ltd.). During the sample introduction, the vial bottles containing cells and beads were shaken using a vortex mixer to prevent sedimentation and aggregation (Biočanin et al., 2019). Droplets were collected from the channel outlet into the 50 mL corning tube and incubated at 80°C for 10 min in a water bath to promote hybridization of the poly(A) tail of mRNA and oligo d(T) on beads. After incubation, droplets were broken promptly and barcoded beads with captured transcriptomes were reverse transcribed using Maxima H Minus Reverse Transcriptase (Thermo Fisher Scientific) at room temperature (RT) for 30 min, then at 42°C for 90 min. Then, the beads were treated with Exonuclease I (New England Biolabs) to obtain single-cell transcriptomes attached to microparticles (STAMP). The first-strand cDNAs on beads were amplified using PCR. The beads obtained above were distributed throughout PCR tubes (1000 beads per tube), wherein 1× KAPA HiFi HS Ready Mix (KAPA Biosystems) and 0.8 µM 1st PCR primer were included in a 25 μL reaction volume. PCR amplification was achieved using the following program: initial denaturation at 95°C for 3 min; 4 cycles at 98°C for 20 s, 65°C for 45 s, and 72°C for 6 min; 12 cycles of 98°C for 20 s, 67°C for 20 s, and 72°C for 6 min; and a final extension at 72°C for 5 min. The amplicons were pooled, double-purified with 0.9× AMPure XP beads (Beckman Coulter), and eluted in 100 μL of ddH2O. Sequence-ready libraries were prepared according to Picelli et al., 2014. A total of 1 ng of each cDNA library was fragmented using home-made Tn5 transposome in a solution containing 10 mM TAPS-NaOH (pH 8.5), 5 mM MgCl2, and 10% dimethylformamide at 55°C for 10 min. The cDNA fragments were purified using a DNA Clean and Concentrator Kit (Zymo Research) and eluted in 25 µL of ddH2O. The index PCR reaction was performed by adding 12 µL of the elute to a mixture consisting of 1× Fidelity Buffer, 0.3 mM dNTPs, 0.5 U KAPA HiFi DNA polymerase (KAPA Biosystems), 0.2 µM P5 universal primer, and 0.2 µM i7 index primer. Each reaction was achieved as follows: initial extension and subsequent denaturation at 72°C for 3 min and 98°C for 30 s; 12 cycles of 98°C for 10 s, 63°C for 30 s, and 72°C for 30 s; and a final extension at 72°C for 5 min. The amplified library was purified using 0.9× AMPure XP beads and sequenced (paired-end) on an Illumina NextSeq 500 sequencer (NextSeq 500/550 High Output v2 kit [75 cycles]); 20 cycles for read1 with custom sequence primer, 8 cycles for index read, and 64 cycles for read2. Before performing the Drop-seq on M. japonicus shrimp hemocytes, we validated the protocol by performing the same procedure using a mixture of HEK293 and NIH3T3 cells and sequencing the test library using a Miseq Reagent Kit v3 (150 cycles).
 
-## Analysis of single-cell data
+### Analysis of single-cell data
 
 Paired-end reads were processed and mapped to the reference de novo assembled gene list of hemocytes following the Drop-seq Core Computational Protocol version 2.0.0 and the corresponding Drop-seq tools v2.3.0 (https://github.com/broadinstitute/Drop-seq; Wysoker et al., 2020), provided by McCarroll Lab (http://mccarrolllab.org/dropseq/). The Picard suite (https://github.com/broadinstitute/picard, Picard Toolkit, 2019). was used to generate the unaligned bam files. The steps included the detection of barcode and UMI sequences, filtration and trimming of low-quality bases and adaptors or poly(A) tails, and the alignment of reads using STAR v2.7.8a (Dobin et al., 2013). The cumulative distribution of reads from the aligned bam files was obtained using BAMTagHistogram, and the number of cells was inferred using Drop-seq tools.
 
-## Data integration
+### Data integration
 
 After digital expression data from three shrimps were read using Seurat v4.0.1 (Butler et al., 2018; Hafemeister and Satija, 2019) (https://satijalab.org/seurat/). To remove data from low-quality cells or empty droplets, we filtered digital expression data with unique feature counts over 4000 or less than 500 and mitochondrial counts over 10% or less than 1%, then the remained 2566 dataset was used for the further analysis. SCTransform (Hafemeister and Satija, 2019) was performed to remove the technical variation, while retaining biological heterogeneity. We ran a PCA using the expression matrix of the top 3000 most variable genes. The total number of principal components (PCs) required to compute and store was 50. The UMAP was then performed using the following parameters: n.neighbors, min.dist, and n.components were 50L, 0.2, and 2, respectively, to visualize the data in the two-dimensional space, and then the clusters were predicted with a resolution of 0.4.
 
-## Functional prediction of the highly expressed genes and clusters
+### Functional prediction of the highly expressed genes and clusters
 
 The de novo assembly constructed 30,986 transcripts. However, not all transcripts were not so expressed in our single-cell data. Thereby, we limited to the highly expressed genes as ‘Ex50’ that represent 50% of the total normalized expression data. The functions of Ex50 were predicted using BLAST program v2.2.31 (Camacho et al., 2009; Altschul et al., 1990) on three common penaeid shrimp, L. vannamei, P. monodon, and M. japonicus, proteins (totally 62,242 proteins were downloaded from NCBI Protein Groups on 10 April 2021) with the blastx parameter of e-value as 1e-6, and KOGs and GOs of each Ex50 were also predicted using TransDecoder (https://github.com/TransDecoder/TransDecoder, Zimmermann et al., 2018) and eggNOG-mapper (http://eggnog-mapper.embl.de/, Cantalapiedra et al., 2021). From the annotated result, 21 KOGs and eleven GOs were selected, then average expressions were calculated on the clusters by AddModuleScore function of Seurat. The functions of each cluster were also predicted based on the marker genes. Marker genes were predicted using the Seurat FindAllMarkers tool with the following parameters: min.pct as 0.5, logfc.threshold as 1, and test.
 
-## Prediction of cell cycles based on Drosophila G2/M and S phase marker genes
+### Prediction of cell cycles based on Drosophila G2/M and S phase marker genes
 
 To calculate cell cycle, Ex50 genes were annotated with Drosophila G2/M and S phase marker genes (https://github.com/hbc/tinyatlas, Kirchner and Barrera, 2019) using blastx parameter of e-value as 1e-6. Based on this result, we calculated cell cycle score of each single cell by Seurat CellCycleScoring function.
 
-## Pseudo-temporal ordering of cells using Monocle 3
+### Pseudo-temporal ordering of cells using Monocle 3
 
 The integrated data of Seurat were transferred to Monocle 3 (Trapnell et al., 2014, https://github.com/cole-trapnell-lab/monocle3, Trapnell et al., 2021), to calculate a cell trajectory using the learn_graph function. We assigned the start point based on the expression of cell proliferation-related genes and Drosophila marker genes of the cell cycle.
 
-## Comparison with Drosophila hemocyte marker genes
+### Comparison with Drosophila hemocyte marker genes
 
 To check whether the Drosophila marker genes are applicable to shrimp, we performed a BLAST search on the Drosophila cell-type markers (https://github.com/hbc/tinyatlas, Kirchner and Barrera, 2019). Ex50 were blastx searched on D. melanogaster genes (dmel-all-gene-r6.34.fasta; downloaded from FlyBase https://flybase.org/) with the parameters of e-value as 1e-6.
 
-## Visualization of cell growth-related and immune-related genes on single hemocytes
+### Visualization of cell growth-related and immune-related genes on single hemocytes
 
 To visualize the immune-related genes of shrimp, we identified the distinct sequences from Ex50 based on their blastx results against penaeid shrimp proteins. Here, we focused on the cell growth-related genes and on immune-related genes, such as AMPs, lysozyme, clotting-related, melanization-related, phagocytosis-related, superoxide dismutase, Kazal-type proteinase inhibitors, and other immune-related genes listed in Supplementary file 1. The average expressions of each immune-related genes were calculated on the clusters by AddModuleScore function of Seurat.
 
-## Cell sorting of hemocytes and qRT-PCR of marker genes
+### Cell sorting of hemocytes and qRT-PCR of marker genes
 
 To validate the Drop-seq results on hemocytes, populations of hemocytes in the forward scatter (FSC) and side scatter (SSC) two-dimensional space were sorted using a microfluidic cell sorter (On-chip sort, On-chip Biotechnologies Co., Ltd.) from four shrimp individuals (Figure 9—figure supplement 1). In the FSC/SSC two-dimensional space, two main populations were predicted as R1: small/simple and R2: large/complexity populations, which were defined as agranulocytes and granulocytes, respectively. After sorting, some sorted hemocytes were immediately fixed in 2% formalin in KPBS and stained with a May-Grunwald and Giemsa staining solution to observe the cellular components. Briefly, fixed hemocytes were smeared on a glass slides and dried, stained for 5 min with 20% May-Grunwald stain solution (Merck KGaA) in 6.67 mM phosphate buffer (pH 6.6), washed with phosphate buffer, stained for 15 min with 4% Giemsa stain solution (Merck KGaA) in 6.67 mM phosphate buffer (pH 6.6), and washed with tap water, dried, mounted with malinol (Muto Pure Chemicals). Non-stained and stained hemocytes were subjected to microscopy IX71 (Olympus Corporation) to observe their structures.
 
 Total RNA was also collected from sorted cells and pre-sorted cells. The concentration of RNA was measured using a nanodrop, and cDNA was transcribed using a High-Capacity cDNA Reverse Transcription Kit (Thermo Fisher Scientific). Constructed cDNA was diluted five times with TE buffer and subjected to qRT-PCR with a number of cycles as 40 using KOD SYBR qPCR (TOYOBO Co. Ltd.), following the manufacturer’s protocol. When the CT value was not detectable, we set a CT value of 40 to use for ΔCT calculation. The expression of each gene was calculated using the ΔΔCT method against elongation factor-1 alpha and total hemocytes.
 
-## Statistics
+### Statistics
 
 Statistics of qRT-PCR were performed on R software. Significance between two hemocyte R1 and R2 was calculated by unpaired t-test. The p values shown in the figures are represented by *p<0.05.
 
-## Data files and analysis code
+### Data files and analysis code
 
 The raw sequence data of newly sequenced M. japonicus transcriptomic reads were archived in the DDBJ Sequence Read Archive (DRA) of the DNA Data Bank of Japan as follows: MinION mRNA direct sequencing: DRA010948; Drop-seq shrimp rep1: DRA010950; shrimp rep2: DRA010951; shrimp rep3: DRA010952; mixture sample of HEK293 and 3T3 cells: DRA010949. The Seurat digital expression data were archived in the Genomic Expression Archive of the DNA Data Bank of Japan: E-GEAD-403. Fast5 data of MinION direct RNA sequencing will be made available upon request from the authors. The code used to perform de novo assembly, clustering, and marker analysis is available on GitHub at https://github.com/KeiichiroKOIWAI/Drop-seq_on_shrimp, Koiwai, 2021a.

@@ -10,21 +10,21 @@
 
 ### Affiliations
 
-1. https://ror.org/05byvp690 Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States
-2. https://ror.org/05byvp690 Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States
-3. https://ror.org/05byvp690 Department of Pharmacology, University of Texas Southwestern Medical Center Dallas United States
-4. https://ror.org/05byvp690 Green Center for Systems Biology, The University of Texas Southwestern Medical Center Dallas United States
-5. https://ror.org/013q1eq08 Department of Medicinal Chemistry, School of Pharmacy, Fudan University Shanghai China
-6. https://ror.org/012afjb06 Department of Biological Sciences, Lehigh University Bethlehem United States
-7. https://ror.org/012afjb06 Department of Chemistry, Lehigh University Bethlehem United States
-8. https://ror.org/012afjb06 Department of Bioengineering, Lehigh University Bethlehem United States
-9. https://ror.org/012afjb06 Department of Computer Science and Engineering, Lehigh University Bethlehem United States
+1. Department of Biophysics, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+2. Department of Biochemistry, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+3. Department of Pharmacology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+4. Green Center for Systems Biology, The University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+5. Department of Medicinal Chemistry, School of Pharmacy, Fudan University Shanghai China ([ROR:013q1eq08](https://ror.org/013q1eq08))
+6. Department of Biological Sciences, Lehigh University Bethlehem United States ([ROR:012afjb06](https://ror.org/012afjb06))
+7. Department of Chemistry, Lehigh University Bethlehem United States ([ROR:012afjb06](https://ror.org/012afjb06))
+8. Department of Bioengineering, Lehigh University Bethlehem United States ([ROR:012afjb06](https://ror.org/012afjb06))
+9. Department of Computer Science and Engineering, Lehigh University Bethlehem United States ([ROR:012afjb06](https://ror.org/012afjb06))
 
 † Corresponding author
 
 ## Abstract
 
-Synaptic vesicles are primed into a state that is ready for fast neurotransmitter release upon Ca 2+ -binding to Synaptotagmin-1. This state likely includes trans-SNARE complexes between the vesicle and plasma membranes that are bound to Synaptotagmin-1 and complexins. However, the nature of this state and the steps leading to membrane fusion are unclear, in part because of the difficulty of studying this dynamic process experimentally. To shed light into these questions, we performed all-atom molecular dynamics simulations of systems containing trans-SNARE complexes between two flat bilayers or a vesicle and a flat bilayer with or without fragments of Synaptotagmin-1 and/or complexin-1. Our results need to be interpreted with caution because of the limited simulation times and the absence of key components, but suggest mechanistic features that may control release and help visualize potential states of the primed Synaptotagmin-1-SNARE-complexin-1 complex. The simulations suggest that SNAREs alone induce formation of extended membrane-membrane contact interfaces that may fuse slowly, and that the primed state contains macromolecular assemblies of trans-SNARE complexes bound to the Synaptotagmin-1 C 2 B domain and complexin-1 in a spring-loaded configuration that prevents premature membrane merger and formation of extended interfaces, but keeps the system ready for fast fusion upon Ca 2+ influx.
+Synaptic vesicles are primed into a state that is ready for fast neurotransmitter release upon Ca2+-binding to Synaptotagmin-1. This state likely includes trans-SNARE complexes between the vesicle and plasma membranes that are bound to Synaptotagmin-1 and complexins. However, the nature of this state and the steps leading to membrane fusion are unclear, in part because of the difficulty of studying this dynamic process experimentally. To shed light into these questions, we performed all-atom molecular dynamics simulations of systems containing trans-SNARE complexes between two flat bilayers or a vesicle and a flat bilayer with or without fragments of Synaptotagmin-1 and/or complexin-1. Our results need to be interpreted with caution because of the limited simulation times and the absence of key components, but suggest mechanistic features that may control release and help visualize potential states of the primed Synaptotagmin-1-SNARE-complexin-1 complex. The simulations suggest that SNAREs alone induce formation of extended membrane-membrane contact interfaces that may fuse slowly, and that the primed state contains macromolecular assemblies of trans-SNARE complexes bound to the Synaptotagmin-1 C2B domain and complexin-1 in a spring-loaded configuration that prevents premature membrane merger and formation of extended interfaces, but keeps the system ready for fast fusion upon Ca2+ influx.
 
 ## Introduction
 
@@ -42,11 +42,449 @@ Here, we present all-atom MD simulations with explicit water molecules of system
 
 ## Results
 
-## Four trans-SNARE complexes between two flat lipid bilayers
+### Four trans-SNARE complexes between two flat lipid bilayers
 
 The possibility of observing membrane fusion in the low microsecond time scale in all-atom MD simulations depends critically on the choice of the starting configuration, but the exact nature of the primed state of synaptic vesicles is unknown. Hence, we used the structural and functional information available on this system to generate potential starting configurations. The MD simulations presented here involved systems ranging from 1.7 to 5.9 million atoms. While multiple replicas of each simulation should ideally be carried out to verify the consistency of the results, performing replicated simulations would have limited the number of systems that we could study. Moreover, each simulation included four-trans SNARE complexes bridging two lipid bilayers and the variability in the behavior of the complexes in each simulation already provided insights into the consistency of the observed behaviors. Hence, we chose to use the available high performance computing time to investigate systems with different components and/or distinct geometry, designing each new starting configuration according to what we had learned from the previous simulations. The simulations generated a large amount of data and it is impossible to describe a thorough analysis within the constraints of a single paper. Here, we present the main observations from the analyses that we have performed, and key files from the simulations are available in Dryad for further analyses.
 
 In all the systems that we built, the composition of the bilayer containing anchored synaptobrevin approximated the lipid composition of synaptic vesicles (Takamori et al., 2006) and that of the bilayer with anchored syntaxin-1 was based on the lipid composition of the plasma membrane (Chan et al., 2012; Table 1). Both bilayers had asymmetric lipid distributions in the two leaflets to mimic those present in vivo (Kobayashi and Menon, 2018). The first system that we built was designed to examine whether SNARE complexes alone can bend two flat lipid bilayers and initiate bilayer fusion. The system contained four trans-SNARE complexes between two square lipid bilayers. The number of SNARE complexes was based on symmetry considerations and the finding that fast vesicle fusion typically observed in synapses requires at least three SNARE complexes (Mohrmann et al., 2010). For simplicity, the SNARE complexes contained the four SNARE motifs, the transmembrane (TM) sequences of syntaxin-1 and synaptobrevin, and the juxtamembrane linkers between their respective SNARE motif and TM region, but did not include the syntaxin-1 N-terminal region or the long linker between the two SNAP-25 SNARE motifs.
+
+**Table 1.**
+ Size in atoms, length of productions MD simulations, temperature, speed of the simulations on Frontera at TACC and lipid composition of the flat bilayers and the vesicle of the different systems.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>qscff</td>
+      <td colspan="2">1699436 atoms</td>
+      <td>750 ns</td>
+      <td>310 K</td>
+      <td colspan="3">24 ns/day with 16 nodes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Upper bilayer</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>POPS</td>
+      <td>SAPE</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>total</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Upper leaflet</td>
+      <td>540</td>
+      <td>468</td>
+      <td>0</td>
+      <td>72</td>
+      <td>120</td>
+      <td>0</td>
+      <td>1200</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45</td>
+      <td>39</td>
+      <td>0</td>
+      <td>6</td>
+      <td>10</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower leaflet</td>
+      <td>540</td>
+      <td>146</td>
+      <td>84</td>
+      <td>120</td>
+      <td>240</td>
+      <td>96</td>
+      <td>1226</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>44</td>
+      <td>11.9</td>
+      <td>6.9</td>
+      <td>9.8</td>
+      <td>19.6</td>
+      <td>7.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower bilayer</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>POPS</td>
+      <td>SAPI2D</td>
+      <td>SAPE</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>total</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Upper leaflet</td>
+      <td>540</td>
+      <td>134</td>
+      <td>120</td>
+      <td>60</td>
+      <td>84</td>
+      <td>168</td>
+      <td>120</td>
+      <td>1226</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>44</td>
+      <td>11</td>
+      <td>9.8</td>
+      <td>4.9</td>
+      <td>6.9</td>
+      <td>13.7</td>
+      <td>9.8</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower leaflet</td>
+      <td>540</td>
+      <td>538</td>
+      <td>0</td>
+      <td>0</td>
+      <td>48</td>
+      <td>84</td>
+      <td>0</td>
+      <td>1200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45</td>
+      <td>44</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>7</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sqscff</td>
+      <td colspan="2">1700475 atoms</td>
+      <td>270 ns</td>
+      <td colspan="4">310 K 24 ns/day with 16 nodes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>qscv</td>
+      <td colspan="2">3222393 atoms</td>
+      <td>520 ns</td>
+      <td>310 K</td>
+      <td colspan="3">23 ns/day with 32 nodes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>454 ns</td>
+      <td>325 K</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vesicle</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>SAGL</td>
+      <td>SAPE</td>
+      <td>SAPI2D</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>SOPS</td>
+      <td>total</td>
+    </tr>
+    <tr>
+      <td>Outer leaflet</td>
+      <td>1258</td>
+      <td>296</td>
+      <td>0</td>
+      <td>534</td>
+      <td>0</td>
+      <td>282</td>
+      <td>210</td>
+      <td>199</td>
+      <td>2779</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45.3</td>
+      <td>10.6</td>
+      <td>0</td>
+      <td>19.2</td>
+      <td>0</td>
+      <td>10.1</td>
+      <td>7.6</td>
+      <td>7.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inner leaflet</td>
+      <td>814</td>
+      <td>668</td>
+      <td>0</td>
+      <td>183</td>
+      <td>0</td>
+      <td>99</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1766</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>46.1</td>
+      <td>37.8</td>
+      <td>0</td>
+      <td>10.4</td>
+      <td>0</td>
+      <td>5.6</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flat bilayer</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>SAGL</td>
+      <td>SAPE</td>
+      <td>SAPI2D</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>SOPS</td>
+      <td>total</td>
+    </tr>
+    <tr>
+      <td>Upper leaflet</td>
+      <td>540</td>
+      <td>96</td>
+      <td>12</td>
+      <td>84</td>
+      <td>60</td>
+      <td>156</td>
+      <td>120</td>
+      <td>120</td>
+      <td>1188</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45.4</td>
+      <td>8.1</td>
+      <td>1</td>
+      <td>7.1</td>
+      <td>5.1</td>
+      <td>13.1</td>
+      <td>10.1</td>
+      <td>10.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower leaflet</td>
+      <td>540</td>
+      <td>516</td>
+      <td>12</td>
+      <td>36</td>
+      <td>0</td>
+      <td>84</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1188</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45.4</td>
+      <td>43.4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+      <td>7.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>prsg</td>
+      <td colspan="2">5056443 atoms</td>
+      <td>336 ns</td>
+      <td>310 K</td>
+      <td colspan="3">13 ns/day with 32 nodes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flat bilayer</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>SAGL</td>
+      <td>SAPE</td>
+      <td>SAPI2D</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>SOPS</td>
+      <td>total</td>
+    </tr>
+    <tr>
+      <td>Upper leaflet</td>
+      <td>830</td>
+      <td>151</td>
+      <td>18</td>
+      <td>132</td>
+      <td>93</td>
+      <td>262</td>
+      <td>182</td>
+      <td>181</td>
+      <td>1849</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>44.9</td>
+      <td>8.2</td>
+      <td>1</td>
+      <td>7.1</td>
+      <td>5</td>
+      <td>14.2</td>
+      <td>9.8</td>
+      <td>9.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower leaflet</td>
+      <td>810</td>
+      <td>774</td>
+      <td>18</td>
+      <td>72</td>
+      <td>0</td>
+      <td>126</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45</td>
+      <td>43</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>prs2</td>
+      <td colspan="2">5870280 atoms</td>
+      <td>310 ns</td>
+      <td>310 K</td>
+      <td colspan="2">16 ns/day 48 nodes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Flat bilayer</td>
+      <td>CHL1</td>
+      <td>POPC</td>
+      <td>SAGL</td>
+      <td>SAPE</td>
+      <td>SAPI2D</td>
+      <td>SDPE</td>
+      <td>SDPS</td>
+      <td>SOPS</td>
+      <td>total</td>
+    </tr>
+    <tr>
+      <td>Upper leaflet</td>
+      <td>1035</td>
+      <td>184</td>
+      <td>23</td>
+      <td>161</td>
+      <td>115</td>
+      <td>322</td>
+      <td>230</td>
+      <td>230</td>
+      <td>2300</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45</td>
+      <td>8</td>
+      <td>1</td>
+      <td>7</td>
+      <td>5</td>
+      <td>14</td>
+      <td>10</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lower leaflet</td>
+      <td>1009</td>
+      <td>964</td>
+      <td>22</td>
+      <td>88</td>
+      <td>0</td>
+      <td>154</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2237</td>
+    </tr>
+    <tr>
+      <td>%</td>
+      <td>45.1</td>
+      <td>43.1</td>
+      <td>1</td>
+      <td>3.9</td>
+      <td>0</td>
+      <td>6.9</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>prsncpxca</td>
+      <td colspan="2">5870246 atoms</td>
+      <td>439 ns</td>
+      <td>310 K</td>
+      <td colspan="2">16 ns/day 48 nodes</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Vesicle: same as qscv system.Flat bilayer: same as prs2 system._
 
 A key aspect in the design of realistic potential states of trans-SNARE complexes is the conformation of the juxtamembrane linkers of syntaxin-1 and synaptobrevin. Popular models of SNARE-mediated membrane fusion depicted continuous helices spanning the SNARE motifs, juxtamembrane linkers and TM regions for both synaptobrevin and syntaxin-1, envisioning that these helices can bend to accommodate the geometry of trans-SNARE complexes (Hanson et al., 1997a; Sutton et al., 1998; Weber et al., 1998). These models were supported by coarse-grained MD simulations that used the MARTINI force field and modeled the SNAREs in continuous helical conformations (Risselada et al., 2011). However, the intrinsic helical restraints enforced by the force field might bias the results and/or obscure the potential role of conformational changes in the dynamical coupling of the SNAREs to membrane fusion. Moreover, the bending of the helices required to form trans-SNARE complexes leads to unrealistic conformations that are expected to be unfavorable energetically because of their distorted geometry and are not commonly observed in protein structures. Thus, the helical restraints might have played a key role in membrane fusion in these simulations. Although continuous helices were observed in the crystal structure of a cis-SNARE complex that represents the configuration occurring after membrane fusion (Stein et al., 2009), the natural expectation is that the helical structure must break somewhere to accommodate the geometry of a trans-SNARE complex, most likely at the juxtamembrane linker. This expectation has been supported experimentally (Kim et al., 2002) and with all-atom MD simulations (Bykhovskaia, 2021). Moreover, helix continuity in the linkers is not required for neurotransmitter release (Kesavan et al., 2007; Zhou et al., 2013).
 
@@ -54,21 +492,49 @@ Thus, to generate trans-SNARE complexes for our simulations we started with the 
 
 A short (1 ns) restrained MD simulation in water was sufficient for this purpose and led to unstructured conformations for the juxtamembrane linkers without substantially altering the four-helix bundle even at the C-terminal half, which was not restrained (Figure 1—figure supplement 1B). Four copies of the resulting trans-SNARE complex were generated by translations and rotations (Figure 1—figure supplement 1C), and were merged with the two bilayers separated by 5 nm to generate the initial configuration of this system (Figure 1A). We then carried out an unrestrained production simulation of this system for 750 ns at 310 K. As expected, the two membranes became almost circular to minimize tension and were gradually drawn together by the SNAREs, although the minimal distance between the bilayers reached a plateau (Figure 1—figure supplement 1D, E). The two bilayers were actually drawn to each other on one side first (at about 110 ns, Figure 1B) and later on the other side (Figure 1C), leading to close packing of the lipids against the SNARE four-helix bundles (Figure 1D). It is noteworthy that the four SNARE complexes were zippered at the C-terminus to the same extent as in the initial configuration and that extensive interactions were established between the juxtamembrane linkers and the membranes during the simulations. Such interactions were not unexpected, as both linkers contain abundant basic residues, the synaptobrevin linker in addition contains hydrophobic residues, and both linkers were shown to interact with the adjacent membrane (Brewer et al., 2011; Kim et al., 2002). Since much of the SNARE four-helix bundle is negatively charged, these findings suggest that any electrostatic repulsion existing between the SNARE four-helix bundle and the membranes can be readily overcome by the high stability of the SNARE four-helix bundle and perhaps some contribution from the linker-bilayer interactions. During the 750 ns of the simulation we occasionally observed mild buckling of the syntaxin-1 membrane, but the buckling was reversible and there was no progress toward fusion. These findings suggest that four trans-SNARE complexes are unable to fuse two flat bilayers in the 1 μs time scale.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Initial configuration of the system with SNARE complexes only (A), and snapshots of the MD simulation after 110 and 270 ns (B, C). The SNARE complexes are illustrated by ribbon diagrams in salmon. The lipids are shown as thin stick models. The scale bar in (A) equals 10 nm, which is a little shorter than the length of the SNARE four-helix bundle. (D) Snapshot of the same MD simulation at 270 ns showing all non-solvent atoms as spheres. (E–F) Initial configuration of the system containing four Ca2+-bound Syt1 C2AB molecules in addition to the four trans-SNARE complexes (E) and snapshot of the simulation at 270 ns (F). SNARE complexes are illustrated by ribbon diagrams in salmon and the C2AB molecules are shown as ribbon diagrams with C2A in cyan and C2B in violet. The lipids are shown as thin stick models. The atom color code for the lipids is: carbon lime, oxygen red, nitrogen blue, phosphorous orange. Ca2+ ions are shown as yellow spheres.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ribbon diagram of the conformation of Syt1 C2AB molecules used for the simulation of four trans-SNARE complexes and four C2AB molecules between two bilayers. The C2A domain is colored in cyan and the C2B domain in violet. Key side chains of the C2B domain mentioned in the text, which form the polybasic face (left) or the primary interface (right) are shown as stick models. The polybasic face side chains are colored in blue, and those from the primary interface are in pink (site I) or purple (site II). Ca2+ ions are shown as yellow spheres. (B) Illustration of the procedure used to general the initial structure of a trans-SNARE complex between two flat bilayers. A ribbon diagram of a crystal structure of the neuronal SNARE complex including the TM regions of synaptobrevin and syntaxin-1 (PDB accession code 3HD7) is shown in the middle on the left, with synaptobrevin in red, syntaxin-1 in yellow and SNAP-25 in green. Ribbon diagrams above and below show the positions designed for the TM regions. A 1 ns MD simulation with restraints to force these positions of the TM regions and additional restraints to keep the heavy atoms of the N-terminal half of the SNARE four-helix bundle (up to the polar layer) at their initial positions led to the structure illustrated by the ribbon diagram on the right. (C) Ribbon diagrams of the four trans-SNARE complexes generated for the system with two flat bilayers. Three copies of the original structure obtained by the 1 ns restrained MD simulation were generated and then rotated and translated to yield this final configuration. (D) Snapshot of the MD simulation of four trans-SNARE complexes between two flat bilayers after 110 ns viewed from the top to illustrate that the flat bilayers acquired an almost circular shape. The SNARE complexes are illustrated by ribbon diagrams in salmon. The lipids are shown as thin stick models. The atom color code for the lipids is: carbon lime, oxygen red, nitrogen blue, phosphorous orange. (E) Minimum distance between atoms of the two flat bilayers in frames taken every 1 ns in the simulation of four trans-SNARE complexes between two bilayers. (F) Minimum distance between atoms of the two flat bilayers in frames taken every 1 ns in the simulation of four trans-SNARE complexes and four C2AB molecules between two bilayers.
+
 To explore whether Syt1 might cooperate with the SNAREs in bending two flat bilayers to initiate membrane fusion, we performed another simulation with an analogous system where we included a fragment spanning the two C2 domains of Syt1 (C2AB) bound to five Ca2+ ions (Fernandez et al., 2001; Ubach et al., 1998; Figure 1E). During a 270 ns production MD simulation of this system, we observed that the C2AB molecules hindered the action of the trans-SNARE complexes in bringing the two bilayers closer (Figure 1—figure supplement 1F), particularly when the C2 domains bind to one bilayer through the Ca2+-binding loops and to the other bilayer via the opposite side of the β-sandwich, which is basic (Figure 1F). Although such bilayer-bilayer bridging might help in fusion (Araç et al., 2006) in a different configuration, it appeared that such potential action would require a much longer time scale in this system and we did not continue this simulation.
 
-## Four trans-SNARE complexes bridging a vesicle and a flat bilayer
+### Four trans-SNARE complexes bridging a vesicle and a flat bilayer
 
 Based on the results from the simulations with four trans-SNARE complexes between two flat bilayers, we reasoned that, if synaptic vesicle fusion indeed occurs in the low microsecond time scale, this speed might require the geometry occurring at synapses, where small synaptic vesicles (ca. 40 nm diameter) fuse with the plasma membrane. To test this notion, we built a system with four trans-SNARE complexes (Figure 2—figure supplement 1A) bridging a vesicle and a flat bilayer (Figure 2A). The initial diameter of the vesicle (26 nm) was chosen as a compromise between making the system realistic and minimizing the overall size of the system to limit the time required for MD simulations. The vesicle was practically in molecular contact with the flat bilayer so that the system was poised for fusion. Since the lipid density of the vesicle was close to but not optimal, holes appeared in an initial production MD simulation. The holes were filled manually in an iterative process until the vesicle was stable (see Methods). During this procedure, the flat bilayer became circular and the vesicle became slightly smaller (24 nm diameter) (Figure 2—figure supplement 1B, C), but the diameter remained stable in subsequent production runs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overall view of the initial system. (B) Close-up view of one of the trans-SNARE complexes in the initial system. (C) Snapshot of the system after a 520 ns MD simulation at 310 K and a 454 ns simulation at 325 K. (D–G) Close-up views of the four trans-SNARE complexes (named SC1-SC4) after the 520 ns MD simulation at 310 K and the 454 ns simulation at 325 K. In (A–G), the SNARE complexes are illustrated by ribbon diagrams in salmon. The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). (H–K) Thin slices of the system in its initial configuration (H), after the equilibration steps (I), after 280 ns at 310 K (J) and after 520 ns at 310 K and 454 ns at 325 K (K). In (H–K) Phosphorous atoms of phospholipids and the oxygen atoms of cholesterol molecules are shown as spheres to illustrate the approximate locations of lipid head groups.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ribbon diagrams of the four trans-SNARE complexes generated for the initial system with one vesicle and a flat bilayer, with synaptobrevin in red, syntaxin-1 in yellow and SNAP-25 in green. (B,C) The system of four trans-SNARE complexes bridging a vesicle and a flat bilayer after the equilibration steps viewed from the side (B) or from the bottom (C). The SNARE complexes are illustrated by ribbon diagrams in salmon. The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). (D) Number of contacts in frames taken at 1 ns steps in the simulation of four trans-SNARE complexes bridging a vesicle and a flat bilayer. The number of contacts was defined as the number of distances between oxygen atoms of the vesicle and oxygen atoms of the flat bilayer that were smaller than 1 nm.
 
 With the system equilibrated, we performed a production run of 520 ns at 310 K. Although we observed occasional flips of cholesterol molecules, there were no persistent perturbations of the bilayers that might signal the initiation of fusion. We raised the temperature to 325 K and carried out a production run of 454 ns in an attempt to accelerate fusion, but observed similar results. The final configuration illustrates that the vesicle diffused to some extent to one side with respect to the flat bilayer during the simulations (Figure 2C). The four-helix bundles of the four trans-SNARE complexes remained fully assembled up to the last hydrophobic layer [referred to as layer +8 (Sutton et al., 1998)] at the end of the simulations (Figure 2D–G), as in the initial configuration of the system (Figure 2B). One of the SNARE complexes became parallel to the flat bilayer (Figure 2F), whereas the other three had similar orientations as in the starting configuration (Figure 2B, D, E and G). The juxtamembrane linkers of synaptobrevin and syntaxin-1 established extensive interactions with the lipids early in the simulations. After 280 ns of the simulation at 310 K, we observed that the bottom of the vesicle was flattened, resulting in an extended contact interface with the flat bilayer (compare the slice view of Figure 2J with those of the initial configurations in Figure 2H, I). To corroborate these findings quantitatively, we calculated the number of contacts between oxygen atoms of the vesicle and the flat bilayer as a function of time. We assigned a contact to each oxygen-oxygen distance below 1 nm, which is a common cutoff used to calculate van der Waals and electrostatic interactions between atoms. The results showed that the number of contacts increased rapidly up to about 300 ns and then leveled off (Figure 2—figure supplement 1D). The extended contact interface persisted until the end of the simulation at 325 K, and during this simulation the flat bilayer became slightly curved to adapt to the shape of the vesicle (Figure 2K).
 
 These finding correlates with results obtained in cryo-EM analyses of liposome fusion reactions mediated by the neuronal SNAREs, which revealed extended contact interfaces between the liposomes that are referred to as tight docking intermediates (Hernandez et al., 2012). These intermediates eventually evolve to yield membrane fusion, but fusion occurs in the second-minute time scale (Hernandez et al., 2012; Witkowska et al., 2021). Hence, it is unlikely that such extended interfaces occur in the pathway that leads to fast Ca2+-triggered synaptic vesicle fusion. Note also that the energy required to initiate membrane fusion is expected to increase with the area of the interface between the two membranes, as larger areas require more lipid molecules to be rearranged. Interestingly, cryo-EM images of reconstitution reactions including additional components of the release machinery suggested that these additional components prevent formation of extended contact interfaces, favoring interfaces with smaller contact area between the bilayers that are referred to as point-of-contact interfaces (Gipson et al., 2017).
 
-## Simulations of the primed Synaptotagmin-1-SNARE-complexin-1 complex
+### Simulations of the primed Synaptotagmin-1-SNARE-complexin-1 complex
 
 Overall, our simulations do not rule out the possibility that SNAREs alone might be able to induce membrane fusion in the low microsecond time scale, as it is plausible that other geometries might be more efficient in inducing fusion. However, the correlation of our results with the cryo-EM images of reconstitution experiments suggests that fast fusion requires additional proteins. Formation of a primed state of synaptic vesicles that is ready for fast release is the key to achieve fast Ca2+-triggered fusion in synapses. The exact nature of this state is unclear, but Syt1 and complexin are most likely bound to trans-SNARE complexes in this state, as both proteins bind to the SNARE complex and are critical for fast, Ca2+-triggered neurotransmitter release (Fernández-Chacón et al., 2001; Reim et al., 2001). A model of this state (Voleti et al., 2020) was proposed based on crystal structures of the SNARE complex bound to a complexin-1 fragment (Chen et al., 2002) or to the Syt1 C2B domain through the primary interface (Zhou et al., 2015), as well as a cryo-EM structure of Syt1 bound to lipid nanotube-anchored SNARE complex (Grushin et al., 2019). In this model, complexin-1 and the Syt 1 C2B domain bind to opposite sides of the SNARE four-helix bundle, and the C2B domain binds to the plasma membrane through a polybasic region on the side of the C2B domain opposite to the primary interface. However, the orientation of this macromolecular assembly with respect to the vesicle and plasma membranes, and the extent to which the SNARE complex is zippered, are unclear.
 
 To gain insights into the nature of the primed Syt1-SNARE-complexin complex that is ready for fast Ca2+-triggered membrane fusion, we built a system with four trans-SNARE complexes bridging a vesicle and a flat bilayer, each bound to a complexin-1 fragment and the Syt1 C2AB fragment as observed by crystallography (Chen et al., 2002; Zhou et al., 2015; below referred to as primed complexes). The complexin-1 fragment spanned residues 27–72 [Cpx1(27-72)], which include the central helix that binds to the SNARE complex and the preceding accessory helix that is believed to underlie the inhibitory activity of the accessory helix (Trimbuch et al., 2014; Xue et al., 2007). The system was designed to resemble a potential arrangement of the primed state, but implementing some flexibility such that the system could progress towards a preferred configuration of the proteins with respect to the two membranes. A restrained MD simulation performed to generate the initial protein arrangement led to partial unfolding of the C-terminal halves of the SNARE four-helix bundles but to distinct extents (Figure 3A, B, D, F, H and J, Figure 3—figure supplement 1), thus yielding a variety of starting configurations of the complexes.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overall view of the initial system after equilibration. (B) Close-up view of the four primed complexes in the initial system after equilibration. (C) Snapshot of the system after a 336 ns MD simulation. (D–K) Close-up views of the individual primed complexes (named PC1-PC4) in the initial configuration (D,F,H,J) and after the 336 ns MD simulation (E,G,I,K). In all panels, the primed complexes are illustrated by ribbon diagrams, with the SNAREs in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain). The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The SNAREs are in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–E) Close-up views of PC3 in the first MD simulation of primed complexes bridging a vesicle and a flat bilayer in the initial configuration (A) and after 40, 80, 120, and 157 ns (B–E), respectively. PC3 is illustrated by ribbon diagrams, with the SNAREs in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain). The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). (F) Close-up view of the region where Cpx1(27-72) remains bound to the SNARE complex in PC4 after 336 ns. The position of the Y70 side chain of Cpx1(27-72), which binds at a hydrophobic pocket of the SNARE complex, is indicated. (G) Close-up view of the region where the Cpx1(27-72) accessory helix interacts with the SNARE motif of synaptobrevin (labeled Syb) and the C-terminal SNARE motif of SNAP-25 (labeled SNC) in PC2 after 336 ns. Cpx1(27-72) and the SNARE complex are illustrated by ribbon diagrams and stick models with oxygen atoms in red, nitrogen atoms in blue, sulfur atoms in light orange and carbon atoms in yellow [for Cpx1(27-72)] or salmon (for the SNAREs).
 
 After equilibration, we carried out a production simulation of 336 ns that resulted in the state shown in Figure 3C. Most substantial changes in the system occurred early in the simulation and each of the primed complexes appeared to reach a stable or metastable configuration by the end. The primed complexes exhibited some common behaviors and also distinct features. The SNARE four-helix bundle of one of the primed complexes (PC1) was almost fully assembled at the start of the simulation (up to layer +7, with a break in a SNAP-25 helix) and remained equally assembled at the end (Figure 3D, E). The C-terminal halves of the SNARE four-helix bundles of the other three complexes were considerably more disrupted and, although they exhibited substantial changes during the simulation, they did not progress toward full assembly (Figure 3F–K). Interestingly, a few of the most C-terminal layers (+5 to+7) still formed a four-helix bundle in two complexes (PC2 and PC3, Figure 3F-I) and hence they may be particularly stable, but this feature did not seem to facilitate reassembly of the section of the four-helix bundle that was disrupted. Hence, although coil-to-helix transitions are known to occur very fast, in the 100 ns time scale (Muñoz and Cerminara, 2016), it appears that the constraints placed on the motions of the SNAREs in this complex system hinder the evolution toward a fully formed SNARE four-helix bundle.
 
@@ -76,15 +542,47 @@ Interestingly, the Cpx1(27-72) accessory helix exhibited clear steric clashes wi
 
 A common feature of the four primed complexes at the end of the simulation was the arrangement of the Syt1 C2B domain, which was initially placed between the SNARE four-helix bundle and the flat bilayer but in all primed complexes changed orientation, establishing extensive interactions between its polybasic face and the flat bilayer, and bringing the SNARE four-helix bundle close to the flat bilayer (Figure 4A–D). This arrangement dictates that the Cpx1(27-72) helix points toward the vesicle membrane, in agreement with the proposal that binding of Syt1 to the SNARE complex through the primary interface supports the inhibitory activity of Syt1 and complexin-1 (Guan et al., 2017; Voleti et al., 2020). The Syt1 C2A domain adopted distinct orientations in the different primed complexes, consistent with the fact that no stable Ca2+-independent interactions of this domain with membranes or the SNARE complex have been identified. The C2B domain remained bound to the SNARE four-helix bundle via the primary interface in all four primed complexes throughout the simulation. The binding modes in the primed complexes resembled those observed in various crystal structures containing the primary interface (Zhou et al., 2015; Zhou et al., 2017), particularly in the so-called region I of this interface that includes Y338 among other side chains of C2B (e.g. Figure 4E). However, there were differences in the other region of this interface (region II), which includes R281, R398, and R399 of the C2B domain. In the crystal structures, there was variability in the contacts made by these side chains and R398 did not interact with acidic residues or was at moderate proximity with E238 of syntaxin-1 (Figure 4—figure supplement 1A, B). However, the R398 side chain interacted with a negative pocket formed by E55, D58 and E62 of SNAP-25 in the four primed complexes of our simulation (Figure 4F, Figure 4—figure supplement 1C–E). The findings that an R398Q mutation impairs binding of the C2B domain to the SNARE complex in vitro (Voleti et al., 2020) and disrupts neurotransmitter release in neurons (Xue et al., 2008) support the relevance of the interactions of R398 uncovered by our simulation and suggest that crystal packing might have slightly distorted the binding mode, but it is also plausible that the binding mode is dynamic in this area.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Close-up views of the four primed complexes after 336 ns showing how the Syt1 C2B domain binds to the SNARE complex through the primary interface and to the flat bilayer with the polybasic face, which dictates that the Cpx1(27-72) helix is oriented toward the vesicle and bends in different ways and directions to avoid steric clashes. This arrangement forces the SNARE four-helix bundle to be close to the flat bilayer. The primed complexes are illustrated by ribbon diagrams, with the SNAREs in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain). The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). (E–F) Two different close-up views of the primary interface between the C2B domain and the SNARE complex in PC1 after 336 ns showing site I of the interface (E) or site II where R398,R399 of the C2B domain are located (F). The C2B domain and the SNARE complex are illustrated by ribbon diagrams and stick models with oxygen atoms in red, nitrogen atoms in blue, sulfur atoms in light orange and carbon atoms in violet [for the C2B domain] or salmon (for the SNAREs). The positions of selected side chains are indicated. (G) Close-up view of the interaction of the C2B domain of PC1 with the flat bilayer after 336 ns. The positions of PIP2 headgroups, basic side chains involved in interactions with the lipids, and the hydrophobic side chain of I367 at the tip of a Ca2+-binding loop that inserts into the bilayer, are indicated. (H) Thin slice of the system showing a point-of-contact interface between the vesicle and the flat bilayer at 336 ns. Phosphorous atoms of phospholipids and the oxygen atoms of cholesterol molecules are shown as spheres to illustrate the approximate locations of lipid head groups. The positions of PC1 and PC3 are indicated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–E) Close-up views of site II of the primary interface between the C2B domain and the SNARE complex in two crystal structures (A), PDB accession number 5KJ7; (B), PDB accession number 5W5C, and in PC2, PC3, and PC4 (C–E), respectively after 336 ns of the first MD simulation of primed complexes bridging a vesicle and a flat bilayer.The C2B domain and the SNARE complex are illustrated by ribbon diagrams and stick models with oxygen atoms in red, nitrogen atoms in blue, sulfur atoms in light orange and carbon atoms in violet [for the C2B domain] or salmon (for the SNAREs). The positions of selected side chains are indicated. (F–H) Close-up views of the interaction of the C2B domain of PC2, PC3, or PC4 with the flat bilayer after 336 ns (F–H), respectively. The positions of PIP2 headgroups, basic side chains involved in interactions with the lipids, and the hydrophobic side chain of I367 at the tip of a Ca2+-binding loop that inserts into the bilayer, are indicated.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Overall view of the initial system. (B) Close-up view of the four primed complexes in the initial system. (C) Snapshot of the system after a 310 ns MD simulation. (D–K) Close-up views of the individual primed complexes (named PC1-PC4) in the initial configuration (D,F,H,J) and after the 310 ns MD simulation (E,G,I,K). In all panels, the primed complexes are illustrated by ribbon diagrams, with the SNAREs in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain). The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A–D) Close-up views of the four primed complexes after 310 ns showing how the Syt1 C2B domain binds to the SNARE complex through the primary interface and to the flat bilayer with the polybasic face, which dictates that the Cpx1(27-72) helix is oriented toward the vesicle and bends in different ways and directions to avoid steric clashes. This arrangement forces the SNARE four-helix bundle to be close to the flat bilayer. The primed complexes are illustrated by ribbon diagrams, with the SNAREs in salmon, Cpx1(27-72) in yellow and the Syt1 C2AB fragment in cyan (C2A domain) and violet (C2B domain). The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). (E) Thin slice of the system showing a point-of-contact interface between the vesicle and the flat bilayer at 310 ns. Phosphorous atoms of phospholipids and the oxygen atoms of cholesterol molecules are shown as spheres to illustrate the approximate locations of lipid head groups. The positions of PC1 and PC3 are indicated.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** The number of contacts was defined as the number of distances between oxygen atoms of the vesicle and oxygen atoms of the flat bilayer that were smaller than 1 nm.
+
 In all four primed complexes, the extensive interactions of the C2B domain with the flat bilayer involved not only a polybasic sequence (residues 321–327) known to bind to PIP2 (Bai et al., 2003) but also other basic residues on this face of the β-sandwich that are also important for neurotransmitter release [e.g. K313, (Brewer et al., 2015; Figure 4G, Figure 4—figure supplement 1F-H)]. PIP2 molecules of the flat bilayer were often involved in these interactions. In addition, for all primed complexes, one of the C2B domain Ca2+-binding loops interacted extensively with the flat bilayer, inserting the hydrophobic residue at its tip (I367) into the acyl region. We also observed some interactions of the flat bilayer with basic residues of the SNARE four-helix bundle (e.g. R30, R31 from synaptobrevin and R176 from SNAP-25), which appeared to be favored because the clashes between the Cpx1(27-72) helix and the vesicle push the SNARE four-helix bundle and C2AB toward the flat bilayer. There was some variability in the four-helix bundle-flat bilayer interactions observed in the different primed complexes, but the overall arrangement of the C2B domain with respect to the flat bilayer and the SNARE four-helix bundle was very similar in all complexes, regardless of the orientation of the Cpx1(27-72) helix and the state of assembly of the SNARE four-helix bundle at the C-terminus (Figure 4A–D).
 
 To further test the consistency of our results with respect to the configuration of the primed Syt1-SNARE-complexin-1 complex, we built a similar system but using different configurations of the four initial primed complexes and a slightly larger square bilayer to provide more space for protein-membrane interactions. The final system (Figure 4—figure supplement 2A, B) was used to run a production simulation of 310 ns. Figure 4—figure supplement 2C shows the final configuration. The behaviors of the primed complexes were similar to those of the previous simulation. The four initial four-helix bundles again had different levels of assembly at the C-terminus, with PC1 being the only one that was almost completely assembled, and there was not much progress toward full assembly in the other three complexes (Figure 4—figure supplement 2D-K). The Cpx1(27-72) helix again exhibited strong clashes with the vesicle and distinct ways to overcome such clashes, whereas the C2B domain changed orientation to establish extensive interactions with the flat bilayer while remaining bound to the SNARE four-helix bundle via the primary interface (Figure 4—figure supplement 2D, Figure 4—figure supplement 3A–D). It is also noteworthy that, in the two simulations of primed complexes, contacts between the vesicle and the plasma membrane were established at about 210–230 ns and the contacts increased gradually afterwards, but appeared to be leveling off at the end of the simulations (Figure 4—figure supplement 4), resulting in point-of-contact interfaces between the vesicle and the flat bilayer, without flattening of the vesicle (Figure 4H, Figure 4—figure supplement 3E).
 
 Overall, the arrangements of the Syt1 C2B domain with respect to the flat bilayer and the SNARE four-helix bundle in the eight primed complexes from the two simulations were very similar, and in all cases dictated that the Cpx1(27-72) helix was oriented toward the vesicle (Figure 4A–D, Figure 4—figure supplement 3A–D). The consistency of these results, together with the abundant data available on the functional importance of the C2B-membrane, C2B-SNARE and Cpx1(27-72)-SNARE interfaces present in these complexes [e.g. Chen et al., 2002; Li et al., 2006; Zhou et al., 2015] suggest that these complexes resemble those present in the primed state of synaptic vesicles.
 
-## Simulation of the primed Synaptotagmin-1-SNARE-complexin-1 complex in the presence of Ca2+
+### Simulation of the primed Synaptotagmin-1-SNARE-complexin-1 complex in the presence of Ca2+
 
 Ca2+ binding to Syt1 is believed to induce a tight, PIP2-dependent interaction of the C2B domain with the plasma membrane and dissociation from the SNARE complex to relieve the inhibition of release caused by Syt1 and complexin-1 (Voleti et al., 2020). Based on the estimated kD of the interaction between the C2B domain and the SNARE complex [ca. 20 μM Voleti et al., 2020], the off rate for dissociation is expected to be at most 2000 Hz and hence too slow for the time scales reachable in our simulations. However, it is plausible that dissociation might be strongly accelerated by changes in the orientation of the C2B domain with respect to the membrane induced by Ca2+ (Voleti et al., 2020). To examine whether we could observe the dissociation step and investigate how the system evolves afterwards through MD simulations, we generated a system analogous to that used for our first simulation of primed complexes, but with the larger flat bilayer used for the second simulation of primed complexes to provide sufficient room for Ca2+-dependent binding to the C2 domains. We added five Ca2+ ions to the corresponding binding sites of C2A and C2B, and we removed the Cpx1(27-72) molecules to facilitate potential eventual fusion and to study at the same time how the system evolves without complexin-1 (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig5-v2.jpg)
+
+**Figure 5.:** (A) Close-up view of the four C2AB-SNARE complexes in the initial system. (B) Close-up view of the system after a 439 ns MD simulation. (C–J) Close-up views of the assemblies between C2AB molecules (named C2AB1-4) and SNARE complexes (SC1-SC4) in the initial configuration (C,E,G,I) and after the 439 ns MD simulation (D,F,H,J). In all panels, the SNAREs are represented by ribbon diagrams in salmon and the Syt1 C2AB fragment by ribbon diagrams in cyan (C2A domain) and violet (C2B domain). Ca2+ ions are shown as yellow spheres. The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Close-up views of SC4 and C2AB4 in the MD simulation of C2AB bound to Ca2+ and to trans-SNARE complexes bridging a vesicle and a flat bilayer in the initial configuration (A) and after 5, 75, and 439 ns (B–D), respectively.The SNAREs are represented by ribbon diagrams in salmon and the Syt1 C2AB fragment by ribbon diagrams in cyan (C2A domain) and violet (C2B domain). Ca2+ ions are shown as yellow spheres. The lipids are shown as thin stick models (carbon lime, oxygen red, nitrogen blue, phosphorous orange). Note that in just the first 5 ns one of the helices that was disrupted was almost fully formed but overall there was no substantial progress toward assembly of the C-terminal part of the SNARE four-helix bundle in 439 ns. (E–F) Close-up views of the primary interface between SC4 and C2AB4 after 75 (E) and 439 (F) ns. The C2B domain and the SNARE complex are illustrated by ribbon diagrams and stick models with oxygen atoms in red, nitrogen atoms in blue, sulfur atoms in light orange and carbon atoms in violet [for the C2B domain] or salmon (for the SNAREs). The positions of selected side chains are indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76356/elife-76356-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The number of contacts was defined as the number of distances between oxygen atoms of the vesicle and oxygen atoms of the flat bilayer that were smaller than 1 nm.
 
 We performed a production MD simulation of 439 ns, which led to the final configuration shown in Figure 5B. The C2AB-SNARE complexes generally behaved similarly to the primed complexes in the previous simulations, but with some differences. The SNARE four-helix bundle that was almost fully assembled in the starting configuration remained assembled almost completely (up to layer +7), whereas the other three complexes did not make much progress toward C-terminal assembly (Figure 5C–J). We note again that 439 ns are expected to provide ample time for helix formation and large conformational rearrangements, which is exemplified by the behavior of one of the SNARE four-helix bundles (SC4) during the simulation. Thus, the helix corresponding to the SNAP-25 C-terminal SNARE motif was almost fully formed after 5 ns, even though there was a substantial break in the helix in the beginning, and there were considerable structural changes at 75 ns, but only limited changes from 75 to 439 ns (Figure 5—figure supplement 1A–D). These findings again show that the constraints imposed by the system hinder fast assembly of the C-terminus of the SNARE four-helix bundle. Interestingly, the SNARE four-helix bundles exhibited less interactions with the flat bilayer than in the simulations of primed complexes including Cpx1(27-72), consistent with the notion that the steric clashes of the complexin-1 accessory helix with the vesicle push the SNARE four-helix bundle toward the flat bilayer. As observed in previous simulations, the C2B domains of the four complexes established extensive interactions with the flat bilayer and remained bound to the SNARE complex through the primary interface (Figure 5D, F, H and J). We did observe that SC4 became detached from R398,R399 of the C2B domain early in the simulation and there were additional interactions in region I of the primary interface that remained at the end of the simulation (Figure 5—figure supplement 1E, F). However, it is unclear whether this change was caused by Ca2+ binding to the C2B domain. These findings suggest that dissociation of the C2B domain from the SNAREs requires longer time scales and may be a rate limiting step in release, which is supported by the finding that an E295A/Y338W in the C2B domain primary interface enhances SNARE complex binding (Voleti et al., 2020) but disrupts Ca2+-evoked neurotransmitter release (Zhou et al., 2015). In this simulation, the vesicle came into contact with the flat bilayer at about 400 ns and the number contacts increased gradually afterwards but without reaching a plateau at the end (Figure 5—figure supplement 2).
 
@@ -116,11 +614,11 @@ Clearly, these models will need to be tested with further MD simulations and exp
 
 ## Methods
 
-## High-performance computing
+### High-performance computing
 
 Most high-performance computing, including all production MD simulations, were performed using Gromacs (Pronk et al., 2013; Van Der Spoel et al., 2005) with the CHARMM36 force field (Huang et al., 2017; Klauda et al., 2010; Lee et al., 2019; Wu et al., 2014a; Wu et al., 2014b) on Frontera at TACC. Some of the initial setup tests, solvation, ion addition, minimizations, and equilibration steps were performed using Gromacs with the CHARMM36 force field at the BioHPC supercomputing facility of UT Southwestern, or on Lonestar5 or Stampede2 at TACC. System visualization and manual manipulation were performed with Pymol (Schrödinger, LLC).
 
-## System setup
+### System setup
 
 All systems were built by manually combining coordinates of the protein components with coordinates of the membranes, solvating the system with explicit water molecules (TIP3P model) and adding potassium and chloride ions as needed to reach a concentration of 145 mM and make the system neutral. Flat lipid bilayers were built with the Membrane Builder module (Jo et al., 2007; Jo et al., 2009) in the CHARMM-GUI (Jo et al., 2008) website (https://charmm-gui.org/), providing the coordinates of the TM region of synaptobrevin or syntaxin-1 in their desired positions as input. The bilayers contained mixtures of cholesterol (CHL1), 16:0-18:1 phosphatidylcholine (POPC), 18:0-22:6 phosphatidyltethanolamine (SDPE), 18:0-22:4 phosphatidyltethanolamine (SAPE), 18:0-18:1 phosphatidylserine (SOPS), 18:0-22:6 phosphatidylserine (SDPS), 18:0-20:4 phosphatidylinositol 4,5-bisphosphate (SAPI2D) and/or 18:0-20:4 glycerol (SAGL). Table 1 list the number of atoms and lipid compositions of the membranes; each entry corresponds to a system denoted by the abbreviations described below, which were used as roots for the filenames of the corresponding simulations.
 
@@ -138,10 +636,10 @@ Second simulation of primed complexes bridging a vesicle and a flat bilayer (prs
 
 Four C2AB molecules bound to Ca2+ and to four trans-SNARE complexes bridging a vesicle and a flat bilayer (prsncpxca system). The Cpx1(27-72) molecules were removed from the four initial primed complexes of the prsg system and five Ca2+ ions were added to the corresponding binding sites of each C2AB molecule. The resulting complexes were merged with the equilibrated vesicle from the qscv system and the same flat bilayer of 35 × 35 nm2 used for the prs2 system.
 
-## MD simulations
+### MD simulations
 
 After energy minimization, all systems were heated to 310 K over the course of a 1 ns MD simulation in the NVT ensemble and equilibrated for 1 ns in the NPT ensemble using isotropic Parrinello-Rahman pressure coupling (Parrinello and Rahman, 1981). NPT production MD simulations were performed for the times indicated in for each system using 2 fs steps, isotropic Parrinello-Rahman pressure coupling and a 1.1 nm cutoff for non-bonding interactions. All simulations were performed at 310 K except one simulation with the qscff system, which was performed at 325 K after a 310 K simulation. Nose-Hoover temperature coupling (Hoover, 1985) was used separately for three groups: (i) protein atoms plus Ca2+ ions if present; (ii) lipid atoms; and (ii) water and KCL. Periodic boundary conditions were imposed with Particle Mesh Ewald (PME) (Darden et al., 1993) summation for long-range electrostatics. The speeds of the production simulations ran on Frontera at TACC are indicated in Table 1.
 
-## Analysis of vesicle-flat bilayer contacts
+### Analysis of vesicle-flat bilayer contacts
 
 Because the vesicle and the flat bilayers of the different systems contain large numbers of atoms, it was impractical to analyze vesicle-flat bilayer contacts through measurement of the distances between all atoms of the vesicle and all the atoms of the flat bilayer in multiple time frames of a trajectory. To limit the calculations, we selected only oxygen atoms from frames taken at 1 ns steps of each trajectory and measured the distances between all the oxygen atoms of the vesicle and all the oxygen atoms of the flat bilayer in each frame. The number of vesicle-flat bilayer contacts in each frame was defined as the number of oxygen-oxygen distances below 1 nm.

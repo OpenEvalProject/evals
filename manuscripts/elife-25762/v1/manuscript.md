@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.25762.001 Transposable elements (TEs) are widespread genomic parasites, and their evolution has remained a critical question in evolutionary genomics. Here, we study the relatively unexplored epigenetic impacts of TEs and provide the first genome-wide quantification of such effects in D. melanogaster and D. simulans . Surprisingly, the spread of repressive epigenetic marks (histone H3K9me2) to nearby DNA occurs at >50% of euchromatic TEs, and can extend up to 20 kb. This results in differential epigenetic states of genic alleles and, in turn, selection against TEs. Interestingly, the lower TE content in D. simulans compared to D. melanogaster correlates with stronger epigenetic effects of TEs and higher levels of host genetic factors known to promote epigenetic silencing. Our study demonstrates that the epigenetic effects of euchromatic TEs, and host genetic factors modulating such effects, play a critical role in the evolution of TEs both within and between species. DOI: http://dx.doi.org/10.7554/eLife.25762.001
+Transposable elements (TEs) are widespread genomic parasites, and their evolution has remained a critical question in evolutionary genomics. Here, we study the relatively unexplored epigenetic impacts of TEs and provide the first genome-wide quantification of such effects in D. melanogaster and D. simulans. Surprisingly, the spread of repressive epigenetic marks (histone H3K9me2) to nearby DNA occurs at >50% of euchromatic TEs, and can extend up to 20 kb. This results in differential epigenetic states of genic alleles and, in turn, selection against TEs. Interestingly, the lower TE content in D. simulans compared to D. melanogaster correlates with stronger epigenetic effects of TEs and higher levels of host genetic factors known to promote epigenetic silencing. Our study demonstrates that the epigenetic effects of euchromatic TEs, and host genetic factors modulating such effects, play a critical role in the evolution of TEs both within and between species.
 
 ## Introduction
 
@@ -34,137 +34,276 @@ In this study, analyses of the epigenomes of two recently established, wild-deri
 
 ## Results
 
-## Euchromatic TEs exhibit extensive epigenetic effects on adjacent sequences
+### Euchromatic TEs exhibit extensive epigenetic effects on adjacent sequences
 
-In
+In Drosophila, repressive histone modifications H3K9me2/3 (Kouzarides, 2007; Grewal and Elgin, 2007) and their cognate ‘reader’ protein Heterochromatin Protein 1a (HP1a) (Eissenberg and Elgin, 2014) play a dominant role in the initiation and maintenance of repressive chromatin states in heterochromatin. Our previous study showed that euchromatic sequences flanking TEs have strong enrichment for H3K9me3 in the reference D. melanogaster strain (Lee 2015). Using modEncode ChIP-seq data generated from the Oregon-R strain, we observed that sequences flanking euchromatic TEs are also enriched for another key heterochromatic histone modification (H3K9me2) and HP1a, while depleted for ‘active’ histone modifications H3K4me2 and H3K4me3, which are enriched at transcribing promoters (Kouzarides, 2007; Kharchenko et al., 2011) (Figure 1). Interestingly, enrichment for repressive epigenetic marks around TEs is strongest at the embryonic stage and weaker at later developmental stages, consistent with our previous study of only H3K9me3 (Lee 2015).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig1-v1.jpg)
 
-**Figure 1.:** Euchromatic sequences around TEs are enriched for (A) repressive epigenetic marks (H3K9me2, H3K9me3, and HP1a), (B) and depleted for active epigenetic marks (H3K4me2 and H3K4me2) in Oregon-R. Different colors represent different developmental stages. Plots were generated using LOESS smoothing (span = 10%).DOI: http://dx.doi.org/10.7554/eLife.25762.003
+**Figure 1.:** Euchromatic sequences around TEs are enriched for (A) repressive epigenetic marks (H3K9me2, H3K9me3, and HP1a), (B) and depleted for active epigenetic marks (H3K4me2 and H3K4me2) in Oregon-R. Different colors represent different developmental stages. Plots were generated using LOESS smoothing (span = 10%).
 
 To investigate if the enrichment of repressive epigenetic marks is TE-induced or results from the preferential insertion of TEs into regions already enriched for repressive epigenetic marks, we performed Chromatin Immuno-Precipitation and sequencing (ChIP-seq) on H3K9me2 using two inbred, wildtype D. melanogaster strains collected in North Carolina, USA (RAL315 and RAL360 from Drosophila Genetic Reference Panel or DGRP [Mackay et al., 2012]). These strains have been fully sequenced and annotated for the locations of euchromatic TE insertions (Rahman et al., 2015), allowing direct comparison of the epigenetic status of allelic regions with and without TEs. Our ChIP-Seq analyses of H3K9me2 distributions (see Materials and methods) in 4–8 hr RAL315 and RAL360 embryos, which contain fully-formed heterochromatin (Yuan and O'Farrell, 2016), only included TE insertions annotated with high confidence and unique to either strain (see Materials and methods). Importantly, we used highly conservative heterochromatin-euchromatin boundaries (0.5 Mb distal from epigenetically defined boundaries [Riddle et al., 2011]). This ensures that only euchromatic sequences and TEs were included in the analysis, and prevents confounding effects from pericentromeric or subtelomeric heterochromatin. Because the ChIP-Seq data were generated using whole animals that contain multiple cell types, combined with the stochastic nature of heterochromatic silencing, H3K9me2 enrichment reflects the average epigenetic states of all cells in the samples. Accordingly, we analyzed the enrichment of H3K9me2 quantitatively, instead of as binary states (see Materials and methods).
 
-We compared the epigenetic states of euchromatic sequences around
+We compared the epigenetic states of euchromatic sequences around all TE insertions present in one strain with those of homologous alleles lacking the TE insertions in the other strain. The presence of TEs correlated with substantially higher H3K9me2 enrichment (Figure 2), which strongly supports the conclusion that these repressive mark enrichments are due to TE insertions, and not pre-existing epigenetic states. To quantify the epigenetic effects of individual TEs, we compared H3K9me2 fold enrichment in strains with and without a TE using non-overlapping 1 kb windows around each TE insertion (Figure 2—figure supplement 1). A TE was counted as having epigenetic effects if the H3K9me2 enrichment level was significantly higher in the strain with the TE than the other strain in the 0–1 kb windows flanking the TE insertion. We also estimated the ‘extent of H3K9me2 spread’ from the TE insertion (the farthest window in which H3K9me2 enrichment was consecutively and significantly higher in the strain with the TE) and the ‘% increase in H3K9me2 enrichment’ (the difference in H3K9me2 enrichment between the two strains in 0–1 kb windows; see Materials and methods and Figure 2—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig2-v1.jpg)
 
-**Figure 2.:** Levels of H3K9me2 enrichment were compared between homologous sequences of two D. melanogaster strains. Left: sequences around TEs in strain RAL315 that are absent in RAL360. Right: sequences around TEs in strain RAL360 that are absent in RAL315. H3K9me2 fold enrichment was averaged over all euchromatic sequences flanking the analyzed TEs. Plots were generated using LOESS smoothing (span = 10%). Upper figures show ±50 kb around TE insertions, while lower figures show expanded views of ±20 kb.DOI: http://dx.doi.org/10.7554/eLife.25762.00410.7554/eLife.25762.005Figure 2—source data 1.D. melanogaster TE insertions.DOI: http://dx.doi.org/10.7554/eLife.25762.005
+**Figure 2.:** Levels of H3K9me2 enrichment were compared between homologous sequences of two D. melanogaster strains. Left: sequences around TEs in strain RAL315 that are absent in RAL360. Right: sequences around TEs in strain RAL360 that are absent in RAL315. H3K9me2 fold enrichment was averaged over all euchromatic sequences flanking the analyzed TEs. Plots were generated using LOESS smoothing (span = 10%). Upper figures show ±50 kb around TE insertions, while lower figures show expanded views of ±20 kb.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Taking one TE present in RAL360 (green line) and absent in RAL315 (orange line) as an example, we compared H3K9me2 fold enrichment in the two strains for 20 kb on each side of the insertion site (40 kb total), using 1 kb nonoverlapping windows (dashed lines). A TE is counted as having epigenetic effects if the H3K9me2 enrichment is significantly higher (determined by Mann-Whitney U test) in the strain with the TE (RAL360 here, green line) than in the strain lacking the TE (RAL 315 here, orange line) in 0–1 kb windows around TE insertion site (shaded gray area). The ‘extent of H3K9me2 spread’ is the farthest window in which H3K9me2 enrichment was consecutively and significantly higher in the strain with the TE. Note that H3K9me2 enrichment needs to be significantly higher in windows on both left and right sides of TE insertions. The ‘% increase in H3K9me2 enrichment’ is the difference in H3K9me2 enrichment between the two strains, divided by the enrichment level of the strain without TE, in 0–1 kb windows (shaded gray area).DOI: http://dx.doi.org/10.7554/eLife.25762.006
+**Figure 2—figure supplement 1.:** Taking one TE present in RAL360 (green line) and absent in RAL315 (orange line) as an example, we compared H3K9me2 fold enrichment in the two strains for 20 kb on each side of the insertion site (40 kb total), using 1 kb nonoverlapping windows (dashed lines). A TE is counted as having epigenetic effects if the H3K9me2 enrichment is significantly higher (determined by Mann-Whitney U test) in the strain with the TE (RAL360 here, green line) than in the strain lacking the TE (RAL 315 here, orange line) in 0–1 kb windows around TE insertion site (shaded gray area). The ‘extent of H3K9me2 spread’ is the farthest window in which H3K9me2 enrichment was consecutively and significantly higher in the strain with the TE. Note that H3K9me2 enrichment needs to be significantly higher in windows on both left and right sides of TE insertions. The ‘% increase in H3K9me2 enrichment’ is the difference in H3K9me2 enrichment between the two strains, divided by the enrichment level of the strain without TE, in 0–1 kb windows (shaded gray area).
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** The number of TE insertions analyzed at each genomic window is represented with gray bars, while the number of such TE insertions with epigenetic effects is represented with blue bars. The start and end of euchromatic regions analyzed are labeled with vertical lines.DOI: http://dx.doi.org/10.7554/eLife.25762.007
+**Figure 2—figure supplement 2.:** The number of TE insertions analyzed at each genomic window is represented with gray bars, while the number of such TE insertions with epigenetic effects is represented with blue bars. The start and end of euchromatic regions analyzed are labeled with vertical lines.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig2-figsupp3-v1.jpg)
-
-**Figure 2—figure supplement 3.:** Li et al., 2011) for replicates of D. melanogaster RAL strain ChIP samples.DOI: http://dx.doi.org/10.7554/eLife.25762.008
 
 Surprisingly, more than half of the euchromatic TEs (54.2% of 419 TEs analyzed) were associated with enrichment for H3K9me2 in at least 1 kb of adjacent sequences. The TE-induced spreading of H3K9me2 in flanking sequence extended for a mean of 4.50 kb (standard deviation 4.59 kb), and an average of 79.8% increase in H3K9me2 enrichment at the TE insertion site (standard deviation 78.8%, Figure 2—source data 1). These observations revealed that the epigenetic effects of euchromatic TEs in D. melanogaster are not only pervasive and extensive, but also highly variable between TE insertions.
 
 Previous investigations using randomly inserted transgenic constructs in D. melanogaster found that the epigenetic effects of TEs depend on proximity to pericentromeric or subtelomeric heterochromatin (Sentmanat and Elgin, 2012), and on local repeat density (Huisinga et al., 2016). Our analysis focused on regions far from these heterochromatic regions, and showed that TEs associated with H3K9me2 enrichment at flanking sequences are not concentrated around pericentromeric or subtelomeric heterochromatin (Figure 2—figure supplement 2). Also, local repeat density does not differ between TEs that are or are not associated with H3K9me2 spreading (Mann-Whitney U test, p=0.55). Similarly, we observed no correlations between the extent or magnitude of TE’s epigenetic effects and local repeat density (Spearman rank correlation test, p=0.81 (repeat density vs extent of H3K9me2 spread), 0.65 (repeat density vs % increase in H3K9me2)). These results demonstrate that epigenetic influences of TEs are not restricted to specific genomic locations or contexts, and can be observed across diverse euchromatic regions.
 
-## TE families of LTR-type and targeted by piRNAs show stronger epigenetic effects
+### TE families of LTR-type and targeted by piRNAs show stronger epigenetic effects
 
-While our results demonstrate that euchromatic TEs have widespread epigenetic effects in
+While our results demonstrate that euchromatic TEs have widespread epigenetic effects in D. melanogaster, we also found that the epigenetic effects of individual TE insertions vary significantly. In particular, there is substantial variation in the epigenetic effects of insertions from different TE families (Figure 3). Many biological properties differ between TE families, including transposition mechanism (Wicker et al., 2007), genome abundance (Kaminker et al., 2002; Quesneville et al., 2005), and targeting by small RNAs (Gunawardane et al., 2007; Brennecke et al., 2007, 2008; Ghildiyal et al., 2008; Czech et al., 2008). We investigated which properties are associated with stronger epigenetic effects of insertions from a TE family.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig3-v1.jpg)
 
-**Figure 3.:** There is substantial variation in the (A) proportion of TEs with epigenetic effects, (B) mean extent of H3K9me2 spread, and (C) mean % increase in H3K9me2 enrichment of the TE families analyzed. Different colors denote different types of TEs. The number of observations for each TE family is in parenthesis in (A).DOI: http://dx.doi.org/10.7554/eLife.25762.009
+**Figure 3.:** There is substantial variation in the (A) proportion of TEs with epigenetic effects, (B) mean extent of H3K9me2 spread, and (C) mean % increase in H3K9me2 enrichment of the TE families analyzed. Different colors denote different types of TEs. The number of observations for each TE family is in parenthesis in (A).
 
-Based on transposition mechanisms, there are three major types of TE families: Long Terminal Repeats (LTR) retrotransposons, non-LTR retroposons, and Terminal Inverted Repeats (TIR) transposons. An immediately obvious pattern is that LTR-type TE families seem to have the strongest epigenetic effects. The LTR
+Based on transposition mechanisms, there are three major types of TE families: Long Terminal Repeats (LTR) retrotransposons, non-LTR retroposons, and Terminal Inverted Repeats (TIR) transposons. An immediately obvious pattern is that LTR-type TE families seem to have the strongest epigenetic effects. The LTR copia family has the largest proportion of insertions with epigenetic effects, and LTR roo insertions display both the most extensive average spread of H3K9me2 and the largest average increase in H3K9me2 enrichment in flanking sequences (Figure 3). Similarly, eight of 11 TE families in which over half of analyzed insertions showed epigenetic effects are LTR-type, while the remaining three are TIR-type. The two TE families with >5 kb average spread of H3K9me2 and the four families that yield >50% mean increase in H3K9me2 enrichment are all LTR-type families. To formally test if LTR-type TE families have stronger epigenetic effects than other types of TE families, we estimated the proportion of TEs with epigenetic effects, the average extent of H3K9me2 spread, and average % increase in H3K9me2 enrichment of TE insertions from each TE family and compared these metrics between LTR-type and other types of TE families. Indeed, LTR-type TE families show a larger increase in H3K9me2 enrichment compared to other types of TEs (Mann-Whitney U test p=0.00047, median: 0.547 (LTR) vs 0.352 (others), Figure 4). The other two indexes are not significantly different, likely due to the high heterogeneity between LTR-type TE families (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig4-v1.jpg)
 
-**Figure 4.:** While there are no significant differences in (A) the proportion of TEs with epigenetic effects and (B) the mean extent of H3K9me2 spread, (C) TE insertions of LTR-type families lead to significantly higher mean % increase of H3K9me2 enrichment in flanking sequences. Note that each data point represents one TE family. (*** Kruskal-Wallis test p<0.005).DOI: http://dx.doi.org/10.7554/eLife.25762.010
+**Figure 4.:** While there are no significant differences in (A) the proportion of TEs with epigenetic effects and (B) the mean extent of H3K9me2 spread, (C) TE insertions of LTR-type families lead to significantly higher mean % increase of H3K9me2 enrichment in flanking sequences. Note that each data point represents one TE family. (*** Kruskal-Wallis test p<0.005).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Outlier TE families are denoted in blue.DOI: http://dx.doi.org/10.7554/eLife.25762.011
+**Figure 4—figure supplement 1.:** Outlier TE families are denoted in blue.
 
-In Drosophila, TEs are targeted by two types of small RNAs: piRNAs in the germline (Gunawardane et al., 2007; Brennecke et al., 2007) and endo-siRNAs in the soma (Ghildiyal et al., 2008; Czech et al., 2008). The epigenetic silencing of TEs in the germline and early embryo, which is maintained through development (Gu and Elgin, 2013), depends on piRNAs (Klenov et al., 2007; Sentmanat and Elgin, 2012; Le Thomas et al., 2013), while the role of endo-siRNAs in epigenetic silencing of TEs is currently less clear. Consistently, we observed that TE families targeted by more piRNAs show more extensive H3K9me2 spreading and enrichment in flanking sequences (Table 1). It is worth noting that there is no difference in the amount of piRNAs targeting LTR-type TEs compared to other major types of TEs (Mann-Whitney U test, p=0.19 (wK) and 0.39 (w1118)), suggesting that the observed correlation between the amount of piRNAs and TE’s epigenetic effects was unlikely solely driven by stronger epigenetic effects of LTR-type TE families. On the other hand, we did not find significant associations between the epigenetic effects of TEs and targeting by endo-siRNAs (Table 1).10.7554/eLife.25762.012Table 1.Spearman rank correlation tests between properties of TE families and the epigenetic effects of TEs. piRNA amounts were estimated from two studies (two genotypes: w1118 and wK) and siRNA counts were estimated from two studies (Ghildiyal et al., 2008; Czech et al., 2008).DOI: http://dx.doi.org/10.7554/eLife.25762.012prop. TE with epigenetic effectsmean extent of H3K9me2 spreadmean % of increase in H3K9me2 enrichmentp-valueρp-valueρp-valueρpiRNA amount (w1118)5.18E-010.1211.67E-020.4651.13E-020.493piRNA amount (wK)9.99E-010.0003.41E-030.5537.09E-030.521siRNA counts (Czech et al., 2008)2.90E-010.1934.99E-010.1421.24E-010.316siRNA counts (Ghildiyal et al., 2008)6.08E-010.1087.46E-01−0.0751.46E-010.329family copy no.3.61E-030.4736.24E-010.0956.59E-010.085
+In Drosophila, TEs are targeted by two types of small RNAs: piRNAs in the germline (Gunawardane et al., 2007; Brennecke et al., 2007) and endo-siRNAs in the soma (Ghildiyal et al., 2008; Czech et al., 2008). The epigenetic silencing of TEs in the germline and early embryo, which is maintained through development (Gu and Elgin, 2013), depends on piRNAs (Klenov et al., 2007; Sentmanat and Elgin, 2012; Le Thomas et al., 2013), while the role of endo-siRNAs in epigenetic silencing of TEs is currently less clear. Consistently, we observed that TE families targeted by more piRNAs show more extensive H3K9me2 spreading and enrichment in flanking sequences (Table 1). It is worth noting that there is no difference in the amount of piRNAs targeting LTR-type TEs compared to other major types of TEs (Mann-Whitney U test, p=0.19 (wK) and 0.39 (w1118)), suggesting that the observed correlation between the amount of piRNAs and TE’s epigenetic effects was unlikely solely driven by stronger epigenetic effects of LTR-type TE families. On the other hand, we did not find significant associations between the epigenetic effects of TEs and targeting by endo-siRNAs (Table 1).
+
+**Table 1.**
+ Spearman rank correlation tests between properties of TE families and the epigenetic effects of TEs. piRNA amounts were estimated from two studies (two genotypes: w1118 and wK) and siRNA counts were estimated from two studies (Ghildiyal et al., 2008; Czech et al., 2008).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">prop. TE with epigenetic effects</th>
+      <th colspan="2">mean extent of H3K9me2 spread</th>
+      <th colspan="2">mean % of increase in H3K9me2 enrichment</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>p-value</th>
+      <th>ρ</th>
+      <th>p-value</th>
+      <th>ρ</th>
+      <th>p-value</th>
+      <th>ρ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>piRNA amount (w1118)</td>
+      <td>5.18E-01</td>
+      <td>0.121</td>
+      <td>1.67E-02</td>
+      <td>0.465</td>
+      <td>1.13E-02</td>
+      <td>0.493</td>
+    </tr>
+    <tr>
+      <td>piRNA amount (wK)</td>
+      <td>9.99E-01</td>
+      <td>0.000</td>
+      <td>3.41E-03</td>
+      <td>0.553</td>
+      <td>7.09E-03</td>
+      <td>0.521</td>
+    </tr>
+    <tr>
+      <td>siRNA counts (Czech et al., 2008)</td>
+      <td>2.90E-01</td>
+      <td>0.193</td>
+      <td>4.99E-01</td>
+      <td>0.142</td>
+      <td>1.24E-01</td>
+      <td>0.316</td>
+    </tr>
+    <tr>
+      <td>siRNA counts (Ghildiyal et al., 2008)</td>
+      <td>6.08E-01</td>
+      <td>0.108</td>
+      <td>7.46E-01</td>
+      <td>−0.075</td>
+      <td>1.46E-01</td>
+      <td>0.329</td>
+    </tr>
+    <tr>
+      <td>family copy no.</td>
+      <td>3.61E-03</td>
+      <td>0.473</td>
+      <td>6.24E-01</td>
+      <td>0.095</td>
+      <td>6.59E-01</td>
+      <td>0.085</td>
+    </tr>
+  </tbody>
+</table>
 
 It has been observed that insertions of abundant TE families are under stronger purifying selection than those of less abundant TE families, and several mechanisms were proposed to account for this copy-number dependency (reviewed in [Barrón et al., 2014]). Because the generation of piRNAs involves TE transcripts (Gunawardane et al., 2007; Brennecke et al., 2007), it was predicted that for a given TE family the epigenetic effects of TEs, and the associated strength of selection that influences the population dynamics of TEs, should also depend on TE copy number (Lee and Langley 2010; Lee 2015). Supporting this prediction, TE families with higher copy numbers in a large sample of African flies (Kofler et al., 2015) have larger proportions of insertions with epigenetic effects (Table 1). This strong correlation is not driven by TE families with exceptional abundance (Figure 4—figure supplement 1), because the removal of those TE families does not qualitatively change the results (Spearman rank ρ = 0. 46, p=0.0058). In summary, TE families of LTR-type, targeted by larger amounts of piRNAs, or of higher abundance display stronger epigenetic effects on adjacent sequences than other TE families.
 
-## TEs with epigenetic effects are more strongly selected against
+### TEs with epigenetic effects are more strongly selected against
 
 Given the high density of genes and other functional elements in Drosophila (modENCODE Consortium et al., 2010), H3K9me2 spreading from TEs to adjacent sequences is expected to have functional consequences. Accordingly, TE insertions with epigenetic effects should more likely be selected against and have lower population frequencies than TEs without H3K9me2 spreading.
 
-Population genomic analysis indicated that Zambia is the likely ancestral origin of
+Population genomic analysis indicated that Zambia is the likely ancestral origin of D. melanogaster, and Zambian populations have limited admixture from non-African genomes (Pool et al., 2012; Lack et al., 2015). Demographic history should thus have less effect on the analysis of TE population frequencies in the Zambian population compared to non-ancestral populations. Accordingly, we used genome sequences of a Zambian D. melanogaster population (Lack et al., 2015) to determine the population frequencies of individual TE insertions in the two DGRP strains analyzed (RAL315 and RAL360), which were first collected in North America. Consistent with previous genome-wide observations that most TE insertions have low population frequencies in D. melanogaster (González et al., 2008; Kofler et al., 2012, 2015; Cridland et al., 2013), only 31.5% of TE insertions present in either of the two DGRP strains analyzed were found in the Zambian population, and these TEs displayed very low population frequencies (0.54% (first quartile), 0.56% (median), 1.61% (third quartile), Figure 5—figure supplement 1). We categorized TE insertions in the two DGRP strains according to their presence in the Zambian population (‘high frequency’ – present, ‘low frequency’ – not present). Low frequency TEs were more likely to exhibit spreading of H3K9me2 (Fisher’s Exact Test, p=0.039, odds ratio = 1.58, Figure 5A), led to more extensive spreading (Mann-Whitney U test, p=0.011, Figure 5B and Figure 5—figure supplement 2A), and resulted in a larger increase in H3K9me2 enrichment (Mann-Whitney U test, p=0.014, Figure 5C and Figure 5—figure supplement 2B). Consistently, by analyzing the population frequencies of individual TE insertions, we observed significant negative correlations between the strength of a TE’s epigenetic effects and its population frequency (Spearman rank ρ = −0.15 (extent of H3K9me2 spread) and −0.14 increase in H3K9me2), p<0.005 for both, Figure 5—figure supplement 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig5-v1.jpg)
 
-**Figure 5.:** TEs with low population frequencies are (A) more likely to show spread of H3K9me2, (B) result in more extensive spread of H3K9me2, and (C) lead to a larger increase in H3K9me2 enrichment. (*Mann-Whitney U test, p<0.05).DOI: http://dx.doi.org/10.7554/eLife.25762.013
+**Figure 5.:** TEs with low population frequencies are (A) more likely to show spread of H3K9me2, (B) result in more extensive spread of H3K9me2, and (C) lead to a larger increase in H3K9me2 enrichment. (*Mann-Whitney U test, p<0.05).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Most TEs have zero (‘low frequency’ TEs, see text) or low population frequencies in the Zambian population.DOI: http://dx.doi.org/10.7554/eLife.25762.014
+**Figure 5—figure supplement 1.:** Most TEs have zero (‘low frequency’ TEs, see text) or low population frequencies in the Zambian population.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) the extent of H3K9me2 spread, and (B) the % increase in H3K9me2 enrichment were plotted for individual TE insertion. Median is denoted by horizontal lines.DOI: http://dx.doi.org/10.7554/eLife.25762.015
+**Figure 5—figure supplement 2.:** (A) the extent of H3K9me2 spread, and (B) the % increase in H3K9me2 enrichment were plotted for individual TE insertion. Median is denoted by horizontal lines.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** (A and B) TE’s population frequency vs TE-induced extent of H3K9me2 spread, and (C and D) TE’s population frequency vs TE-induced % increase in H3K9me2.DOI: http://dx.doi.org/10.7554/eLife.25762.016
+**Figure 5—figure supplement 3.:** (A and B) TE’s population frequency vs TE-induced extent of H3K9me2 spread, and (C and D) TE’s population frequency vs TE-induced % increase in H3K9me2.
 
-A potential confounding factor for our observation is that the population frequencies of TE insertions vary between TE families (i.e. insertions from specific TE families tend to have high/low population frequencies, [Petrov et al., 2011; Kofler et al., 2012, 2015]). Thus, ‘low’ and ‘high’ frequency categories of TE insertions could be comprised of insertions from different TE families, whose variation in population frequencies could be due to factors other than the differential strength of selection removing TE insertions (Blumenstiel, 2011; Blumenstiel et al., 2014). To address this issue, we performed multiple regression analyses that jointly consider the impact of TE’s epigenetic effects and family identity on the population frequencies of TEs (see Materials and methods). Because most TEs in the two DGRP strains analyzed were not detected in the Zambian population (Figure 5—figure supplement 1), we treated the frequency of TE insertions (the number of individuals in which a TE insertion is present in the Zambian population) also as dichotomous variable (‘high frequency’ TE or not, see Materials and methods). Even accounting for the effect of TE family identity, the regression coefficients for TE’s epigenetic effects on population frequencies are still negative for all the regression models analyzed, and are statistically significant for a majority of the models (Table 2), suggesting that TE family identity is unlikely a major contributor for the negative associations between TE’s epigenetic effects and population frequencies.10.7554/eLife.25762.017Table 2.Regression analysis for the associations between TE’s epigenetic effects and population frequencies while accounting for the influence of TE family identity. Population frequencies of individual TE insertion (response variable) were modeled as either dichotomous variable (‘high frequency’ TE or not) or count (TE count). Because the distribution of TE count is overdispersed, TE count was modeled as either ‘quasipoission’ or ‘negative binomial’ in regression analyses. The influence of TE family identity was treated as either fixed or random effect. Also see Table 2—source data 1 for regression coefficients for all TE families.DOI: http://dx.doi.org/10.7554/eLife.25762.01710.7554/eLife.25762.018Table 2—source data 1.Regression coefficients for the epigenetic effects of TEs (extent of spread and magnitude of spread) and each TE family.DOI: http://dx.doi.org/10.7554/eLife.25762.018Extent of spreadMagnitude of spreadResponse variableFamily identityp-valueRegression coefficientp-valueRegression coefficient‘high frequency’ TE or notfixed effect4.72E-01−0.0293.37E-01−0.246random effect1.58E-01−0.0494.83E-02−0.409TE count (quasipoisson)fixed effect4.00E-03−0.1884.73E-03−1.121random effect3.20E-03−0.1361.71E-04−1.400TE count (negative binomial)fixed effect5.25E-04−0.1512.31E-04−1.041random effect9.19E-05−0.1385.49E-05−0.986
+A potential confounding factor for our observation is that the population frequencies of TE insertions vary between TE families (i.e. insertions from specific TE families tend to have high/low population frequencies, [Petrov et al., 2011; Kofler et al., 2012, 2015]). Thus, ‘low’ and ‘high’ frequency categories of TE insertions could be comprised of insertions from different TE families, whose variation in population frequencies could be due to factors other than the differential strength of selection removing TE insertions (Blumenstiel, 2011; Blumenstiel et al., 2014). To address this issue, we performed multiple regression analyses that jointly consider the impact of TE’s epigenetic effects and family identity on the population frequencies of TEs (see Materials and methods). Because most TEs in the two DGRP strains analyzed were not detected in the Zambian population (Figure 5—figure supplement 1), we treated the frequency of TE insertions (the number of individuals in which a TE insertion is present in the Zambian population) also as dichotomous variable (‘high frequency’ TE or not, see Materials and methods). Even accounting for the effect of TE family identity, the regression coefficients for TE’s epigenetic effects on population frequencies are still negative for all the regression models analyzed, and are statistically significant for a majority of the models (Table 2), suggesting that TE family identity is unlikely a major contributor for the negative associations between TE’s epigenetic effects and population frequencies.
+
+**Table 2.**
+ Regression analysis for the associations between TE’s epigenetic effects and population frequencies while accounting for the influence of TE family identity. Population frequencies of individual TE insertion (response variable) were modeled as either dichotomous variable (‘high frequency’ TE or not) or count (TE count). Because the distribution of TE count is overdispersed, TE count was modeled as either ‘quasipoission’ or ‘negative binomial’ in regression analyses. The influence of TE family identity was treated as either fixed or random effect. Also see Table 2—source data 1 for regression coefficients for all TE families.Table 2—source data 1.Regression coefficients for the epigenetic effects of TEs (extent of spread and magnitude of spread) and each TE family.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Extent of spread</th>
+      <th colspan="2">Magnitude of spread</th>
+    </tr>
+    <tr>
+      <th>Response variable</th>
+      <th>Family identity</th>
+      <th>p-value</th>
+      <th>Regression coefficient</th>
+      <th>p-value</th>
+      <th>Regression coefficient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">‘high frequency’ TE or not</td>
+      <td>fixed effect</td>
+      <td>4.72E-01</td>
+      <td>−0.029</td>
+      <td>3.37E-01</td>
+      <td>−0.246</td>
+    </tr>
+    <tr>
+      <td>random effect</td>
+      <td>1.58E-01</td>
+      <td>−0.049</td>
+      <td>4.83E-02</td>
+      <td>−0.409</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TE count (quasipoisson)</td>
+      <td>fixed effect</td>
+      <td>4.00E-03</td>
+      <td>−0.188</td>
+      <td>4.73E-03</td>
+      <td>−1.121</td>
+    </tr>
+    <tr>
+      <td>random effect</td>
+      <td>3.20E-03</td>
+      <td>−0.136</td>
+      <td>1.71E-04</td>
+      <td>−1.400</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TE count (negative binomial)</td>
+      <td>fixed effect</td>
+      <td>5.25E-04</td>
+      <td>−0.151</td>
+      <td>2.31E-04</td>
+      <td>−1.041</td>
+    </tr>
+    <tr>
+      <td>random effect</td>
+      <td>9.19E-05</td>
+      <td>−0.138</td>
+      <td>5.49E-05</td>
+      <td>−0.986</td>
+    </tr>
+  </tbody>
+</table>
 
 An alternative explanation for the observed negative associations between TE’s epigenetic effects and population frequencies is that TEs without epigenetic effects tend to occur in regions of low meiotic recombination. TE insertions in regions with low meiotic recombination are repeatedly observed to have higher population frequencies than TEs in other genomic regions (Charlesworth and Lapid, 1989; Charlesworth et al., 1992; Bartolomé and Maside, 2004; Kofler et al., 2012; Cridland et al., 2013). A lower probability of recombination between TE insertions at different genomic locations (ectopic exchange [Langley et al., 1988; Montgomery et al., 1991]) and/or reduced efficacy of selection against TEs due to selective interference (Hill and Robertson, 1966; Felsenstein, 1974) have been proposed to account for these observations (reviewed in [Charlesworth and Langley, 1989; Lee and Langley 2010; Barrón et al., 2014]). However, we observed that recombination rates do not differ between TEs with or without spreading of H3K9me2 (Mann-Whitney U test, p=0.83). Similarly, neither the extent of H3K9me2 spread nor the increase in H3K9me2 enrichment in flanking sequences was correlated with the local recombination rate for individual TE insertions (Spearman rank correlation test, p=0.62 (recombination rate vs extent of H3K9me2 spread) and 0.55 (recombination rate vs % increase in H3K9me2 enrichment)). It is unlikely that variation in recombination rates can account for the observations that TEs with stronger epigenetic effects have lower population frequencies. Overall, these results strongly support the proposed selection against the epigenetic effects of TEs.
 
-## Epigenetic effects of TEs result in differential epigenetic states of adjacent coding genes
+### Epigenetic effects of TEs result in differential epigenetic states of adjacent coding genes
 
 We hypothesized that selection against TEs with epigenetic effects result from the associated functional consequences, in particular influences on the epigenetic states of adjacent functional elements. To investigate the predicted epigenetic influence of TEs on adjacent genes, we categorized euchromatic protein coding genes according to their shortest distance to a TE (0–1 kb, 1–2 kb, 2–5 kb, 5–10 kb, and no TE within 10 kb; see Materials and methods). Within each of the two strains analyzed, genes in proximity to TEs are more enriched for H3K9me2 (Figure 6—figure supplement 1), consistent with previous observations (Lee 2015).
 
-To investigate the influence of TEs on the epigenetic states of homologous alleles, we calculated a z-score that compares the H3K9me2 enrichment of genic alleles with and without TEs located within 10 kb (see Materials and methods). The absolute value of the z-score reports the magnitude of differences in H3K9me2 enrichment between homologous alleles in the two strains, and the sign indicates if the allele with adjacent TEs has higher H3K9me2 enrichment (positive: yes, negative: no). As expected, genes with adjacent TEs in either strain have significantly higher, positive z-scores compared to genes distant from TEs in both strains (
+To investigate the influence of TEs on the epigenetic states of homologous alleles, we calculated a z-score that compares the H3K9me2 enrichment of genic alleles with and without TEs located within 10 kb (see Materials and methods). The absolute value of the z-score reports the magnitude of differences in H3K9me2 enrichment between homologous alleles in the two strains, and the sign indicates if the allele with adjacent TEs has higher H3K9me2 enrichment (positive: yes, negative: no). As expected, genes with adjacent TEs in either strain have significantly higher, positive z-scores compared to genes distant from TEs in both strains (Figure 6A). We further investigated if the differential epigenetic states between homologous alleles depend on TE-induced epigenetic effects, or only on the presence of TEs. For all categories of genes within 10 kb from TEs, z-scores are significantly higher for genes whose neighboring TEs exhibit H3K9me2 spreading (Figure 6B). Consistently, there are significant positive correlations between the z-scores of genes and the extent of epigenetic effects from the nearest TEs (vs. the extent of H3K9me2 spread: Spearman rank ρ = 0.31, p<10−15; vs. % increase in H3K9me2 enrichment: Spearman rank ρ = 0.30, p<10−15). It is worth noting that genes whose nearest TEs did not exhibit epigenetic effects have similar z-scores to genes without TEs within 10 kb (dashed line, Figure 6B). These observations demonstrate that the spread of repressive epigenetic marks from euchromatic TEs leads to substantial epigenetic differences at homologous alleles of adjacent coding genes.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig6-v1.jpg)
 
-**Figure 6.:** (A) Alleles with adjacent TEs have higher H3K9me2 enrichment compared to homologous alleles in the strain that lacks adjacent TEs, as indicated by positive z-scores (see text), and the strength of the effect decreases with distance from TEs. (B) Genes adjacent to TEs with epigenetic effects show stronger differential enrichment for H3K9me2 than genes adjacent to TEs without epigenetic effects. (C) Genes adjacent to low frequency TEs with epigenetic effects, which likely experienced stronger selection against them, show stronger differential enrichment of H3K9me2 than genes adjacent to high frequency TEs with epigenetic effects (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).DOI: http://dx.doi.org/10.7554/eLife.25762.019
+**Figure 6.:** (A) Alleles with adjacent TEs have higher H3K9me2 enrichment compared to homologous alleles in the strain that lacks adjacent TEs, as indicated by positive z-scores (see text), and the strength of the effect decreases with distance from TEs. (B) Genes adjacent to TEs with epigenetic effects show stronger differential enrichment for H3K9me2 than genes adjacent to TEs without epigenetic effects. (C) Genes adjacent to low frequency TEs with epigenetic effects, which likely experienced stronger selection against them, show stronger differential enrichment of H3K9me2 than genes adjacent to high frequency TEs with epigenetic effects (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Significant levels are comparisons to genes without TEs in 10 kb (gray) (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).DOI: http://dx.doi.org/10.7554/eLife.25762.020
+**Figure 6—figure supplement 1.:** Significant levels are comparisons to genes without TEs in 10 kb (gray) (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).
 
 TE insertions with stronger enrichment of repressive marks in adjacent functional alleles should lead to more deleterious functional consequences. We predict these TEs should be under stronger purifying selection and have lower population frequencies than other TEs. To test this hypothesis, we further restricted the analysis to genes whose nearest TEs show spreading of H3K9me2. Among these genes, those whose nearest TEs were absent in the Zambian population (‘low frequency’ TEs, see above) have significantly higher z-scores than genes adjacent to ‘high frequency’ TEs (Mann-Whitney U test, p=0.0019, median: 0.95 (genes near low frequency TEs) vs 0.32 (genes near high frequency TEs)). The observed differences are most prominent for genes within 1 kb of TEs (Figure 6C). Consistently, there is a significant negative correlation between the z-score of a gene and the population frequency of its nearest TE (Spearman rank ρ = −0.18, p<10−3).
 
-A potential functional consequence of H3K9me2 enrichment is reduced transcript levels of influenced alleles. To address this possibility, we performed RNA-seq of developmental stage-matched embryos. Within either strain, there are indeed significant negative correlations between H3K9me2 enrichment and transcript levels for genes within 10 kb of TEs (
+A potential functional consequence of H3K9me2 enrichment is reduced transcript levels of influenced alleles. To address this possibility, we performed RNA-seq of developmental stage-matched embryos. Within either strain, there are indeed significant negative correlations between H3K9me2 enrichment and transcript levels for genes within 10 kb of TEs (Spearman rank ρ = −0.35 (RAL315) and −0.33 (RAL360), p<10−16 for both). To compare the differential epigenetic states and transcript levels between homologous alleles, we calculated fold changes in expression and z-scores for H3K9me2 enrichment level using RAL 360 allele as reference (Figure 7A). Note this is different from the z-score used above, which uses the allele without TE as reference. We found an excess number of genes that support the influence of TE’s epigenetic effects on gene expression (higher H3K9me2 enrichment and lower expression of alleles with adjacent TEs, shaded green area in Figure 7A) for genes with TEs within 10 kb when compared to other genes in the genome (Figure 7B, upper 2 × 2 Tables). Restricting the analysis to TEs with epigenetic effects produced an even larger proportion of genes whose TE-neighboring alleles have higher H3K9me2 enrichment and lower expression (Figure 7B, bottom 2 × 2 Tables). Intriguingly, the excess number of genes supporting TE-induced epigenetic effects on expression was mainly observed for one of the two strains analyzed (RAL360). Furthermore, while we found a weak, but significant, negative correlation between z-scores for H3K9me2 enrichment and fold changes in expression for genes without TEs (Spearman rank ρ = −0.035, p=0.0084), there are no such correlations observed for genes with TEs within 10 kb (Spearman rank test p=0. 57 (RAL315) and 0.16 (RAL360)). In fact, there are multiple genes whose alleles associated with TEs have higher enrichment of H3K9me2, but also higher expression (e.g. arrows in Figure 7A). These observations suggest that the influence of TE-induced epigenetic states on gene expression may be more complex (see Discussion).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig7-v1.jpg)
 
-**Figure 7.:** (A) The z-score for H3K9me2 enrichment (X-axis) and log2 expression fold change (Y-axis) were plotted for euchromatic protein coding genes without TEs within 10 kb (‘neither’) and for genes with adjacent TEs in either strain. It is worth noting that both H3K9me2 z-score and log2 expression fold change used RAL360 as reference. Shaded green areas are genes displaying the expected negative influence of TE’s epigenetic effects on gene expression (i.e. alleles adjacent to TEs have higher H3K9me2 enrichment and lower RNA transcript levels), while shaded orange areas are all other cases of epigenetic states and transcript levels. For each sub-plot, the numbers of genes (blue, pink, or gray dots) in each quarter are shown in black, and the numbers of genes whose nearest TEs with epigenetic effects (blue dots) are shown in blue. (B) Left: 2 × 2 contingency table for comparing the number of genes supporting the influence of TE’s epigenetic effects on gene expression (shaded green) and the number of other genes (shaded orange), against those for genes without TEs within 10 kb (‘neither’). Middle and right: 2 × 2 contingency tables for testing if there is an excess number of genes with TEs in RAL315 (middle) and in RAL360 (right) supporting the influence of TE-induced epigenetic effects on gene expression.DOI: http://dx.doi.org/10.7554/eLife.25762.021
+**Figure 7.:** (A) The z-score for H3K9me2 enrichment (X-axis) and log2 expression fold change (Y-axis) were plotted for euchromatic protein coding genes without TEs within 10 kb (‘neither’) and for genes with adjacent TEs in either strain. It is worth noting that both H3K9me2 z-score and log2 expression fold change used RAL360 as reference. Shaded green areas are genes displaying the expected negative influence of TE’s epigenetic effects on gene expression (i.e. alleles adjacent to TEs have higher H3K9me2 enrichment and lower RNA transcript levels), while shaded orange areas are all other cases of epigenetic states and transcript levels. For each sub-plot, the numbers of genes (blue, pink, or gray dots) in each quarter are shown in black, and the numbers of genes whose nearest TEs with epigenetic effects (blue dots) are shown in blue. (B) Left: 2 × 2 contingency table for comparing the number of genes supporting the influence of TE’s epigenetic effects on gene expression (shaded green) and the number of other genes (shaded orange), against those for genes without TEs within 10 kb (‘neither’). Middle and right: 2 × 2 contingency tables for testing if there is an excess number of genes with TEs in RAL315 (middle) and in RAL360 (right) supporting the influence of TE-induced epigenetic effects on gene expression.
 
-## Stronger epigenetic effects of TEs in D. simulans compared to D. melanogaster
+### Stronger epigenetic effects of TEs in D. simulans compared to D. melanogaster
+
+D. simulans diverged from D. melanogaster only four million years ago (Obbard et al., 2012), yet is widely observed to harbor fewer TE insertions compared to D. melanogaster (Dowsett and Young, 1982; Vieira et al., 1999; Vieira and Biémont, 2004; Kofler et al., 2015). We hypothesized that variation in the epigenetic effects of TEs, and thus strength of selection against them, contributes to this between-species difference in TE content. To test this hypothesis, we performed H3K9me2 ChIP-seq on 4–8 hr embryos from the D. simulans reference strain. Similar to D. melanogaster, we observed strong H3K9me2 enrichment in sequences flanking TEs (Figure 8A), and genes adjacent to TEs have higher H3K9me2 enrichment than genes distant from TEs (Figure 8—figure supplement 1). Furthermore, genes adjacent to TEs with epigenetic effects (see below) have higher H3K9me2 enrichment than genes adjacent to TEs without epigenetic effects (Figure 8—figure supplement 1). For genes within 10 kb of TEs, there is also a strong negative correlation between H3K9me2 enrichment and transcript levels (Spearman rank ρ = −0.45, p<10−16), supporting a functional consequence of H3K9me2 enrichment in D. simulans.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig8-v1.jpg)
 
-**Figure 8.:** D. simulans TEs show stronger epigenetic effects than D. melanogaster TEs.(A) Enrichment of H3K9me2 is also observed at sequences adjacent to euchromatic TEs in D. simulans. (B) Compared to insertions of the same TE family in D. melanogaster, insertions in D. simulans are more likely to show epigenetic effects (proportion of TE spread) and a larger increase in relative H3K9me2 fold enrichment in adjacent sequences. FE: fold enrichment, D. mel: D. melanogaster, D. sim: D. simulans.DOI: http://dx.doi.org/10.7554/eLife.25762.02210.7554/eLife.25762.023Figure 8—source data 1.D. simulans TEs.Estimates of D. melanogaster TEs using the same methods are also included.DOI: http://dx.doi.org/10.7554/eLife.25762.023
+**Figure 8.:** (A) Enrichment of H3K9me2 is also observed at sequences adjacent to euchromatic TEs in D. simulans. (B) Compared to insertions of the same TE family in D. melanogaster, insertions in D. simulans are more likely to show epigenetic effects (proportion of TE spread) and a larger increase in relative H3K9me2 fold enrichment in adjacent sequences. FE: fold enrichment, D. mel: D. melanogaster, D. sim: D. simulans.
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** D. simulans.Compared to genes without TEs within 10 kb, genes with adjacent TEs have higher enrichment for H3K9me2. For genes at equal distance from TEs, genes adjacent to TEs with epigenetic effects (darker gray) have higher H3K9me2 enrichment than genes adjacent to TEs without epigenetic effects (lighter gray). (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).DOI: http://dx.doi.org/10.7554/eLife.25762.024
+**Figure 8—figure supplement 1.:** Compared to genes without TEs within 10 kb, genes with adjacent TEs have higher enrichment for H3K9me2. For genes at equal distance from TEs, genes adjacent to TEs with epigenetic effects (darker gray) have higher H3K9me2 enrichment than genes adjacent to TEs without epigenetic effects (lighter gray). (Mann-Whitney U test, *p<0.05, **p<0.01, ***p<0.001).
 
 ![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig8-figsupp2-v1.jpg)
 
-**Figure 8—figure supplement 2.:** D. simulans ChIP samples.DOI: http://dx.doi.org/10.7554/eLife.25762.025
-
 To compare the epigenetic effects of TEs in D. melanogaster and D. simulans, the H3K9me2 enrichment at sequences flanking TEs were estimated relative to the median fold enrichment level at sequences 20–40 kb away from TEs in both species (see Materials and methods). Current TE annotations are D. melanogaster-centric and it is likely that our analysis missed TE families and/or variants that are D. simulans-specific. Accordingly, we restricted comparisons to TE families that have at least two insertions in both species. While there are no significant between-species differences in the extent of H3K9me2 spread (paired MWU test, p=0.67), TE families in D. simulans display a larger proportion of TEs with epigenetic effects (paired MWU test, p=0.013), and a larger increase in relative H3K9me2 fold enrichment (paired MWU test, p=0.035; Figure 8B). It is worth noting that only high confidence TE calls were included in the analysis, and only 14 families had at least two copies in both species. The roo family has the highest proportion of TEs with epigenetic effects in both species (94.4% and 86.5% in D. melanogaster and D. simulans, respectively), while the 1360 family has the largest differences between the two species (14.3% and 77.8% in D. melanogaster and D. simulans, respectively). These results demonstrate that TEs in D. simulans exhibit stronger epigenetic effects on flanking sequences compared to D. melanogaster.
 
-## Variation in genetic modifiers of PEV correlates with differences in the epigenetic effects of TEs between species
+### Variation in genetic modifiers of PEV correlates with differences in the epigenetic effects of TEs between species
 
 The extent of heterochromatin-mediated gene silencing (e.g. PEV) depends on several genetic modifiers, in particular the amount of heterochromatic DNA in a genome (reviewed in [Girton and Johansen, 2008]), and the dosage of several Su(var) and E(var) genes, whose wildtype proteins enhance and weaken PEV respectively (Elgin and Reuter, 2013; Swenson et al., 2016). The prevailing model is that altering the ratio of heterochromatin targets (heterochromatic DNAs) and regulators (Su(var) and E(var) proteins) influences heterochromatin nucleation and spreading (Locke et al., 1988). For example, lower amounts of heterochromatic DNA result in increased levels of heterochromatic Su(var) proteins in other regions, and accordingly enhance PEV. Because both PEV and the epigenetic effects of TEs are mediated through spreading of the same repressive epigenetic marks (H3K9me2/3 and HP1a), the epigenetic effects of TEs may depend on similar PEV modifiers. Indeed, a limited survey using reporter constructs demonstrated that the epigenetic effects of TEs depend on the expression of HP1a (Su(var)205) and Su(var)3–9, which binds and catalytically generates H3K9me2/3 marks, respectively (Sentmanat and Elgin, 2012). We thus predicted that variation in the epigenetic effects of TEs within and between species, and accordingly genomic abundance of TE insertions, could be due to differences in the amounts of heterochromatic DNA and/or modifier proteins.
 
-We investigated the hypothesis that stronger epigenetic effects of TEs in
+We investigated the hypothesis that stronger epigenetic effects of TEs in D. simulans are associated with lower amounts of heterochromatic DNA or altered expression of Su(var)s/E(var)s. In Drosophila, heterochromatic DNA consists of simple repeats and degenerate TEs (Hoskins et al., 2007, 2015). We first identified short repeats (12-mers) that are enriched in heterochromatic regions by performing K-mer analysis of H3K9me2 ChIP-Seq data (see above), and then quantified the amount of identified H3K9me2-enriched 12-mers in these two species using published genomic sequencing data ((Kofler et al., 2015), see Materials and methods). Consistent with previous quantitation of simple repeat content using orthogonal approaches (melting curves [Lohe and Brutlag, 1987] or flow cytometry [Bosco et al., 2007]), we observed lower amounts of H3K9me2-enriched simple repeats in D. simulans compared to D. melanogaster (Figure 9A, ANOVA p-value=0.00013 (species) and <10−6 (library preparation method)).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig9-v1.jpg)
 
-**Figure 9.:** D. melanogaster and D. simulans.(A) D. simulans has higher normalized amounts of H3K9me2-enriched 12-mers than D. melanogaster. Raw amounts of H3K9me2-enriched 12-mers were normalized with sequencing coverage in each sample before comparisons (see Materials and methods). Different library preparation methods (see [Kofler et al., 2015]) are denoted with dots of different colors. (B) Compared to genome-wide distributions (shaded gray), known Su(var) genes as a group (orange, 40 genes in total) have higher expression in D. simulans than in D. melanogaster. Positive z-score represents lower expression rank (i.e. higher expression) in D. simulans than in D. melanogaster. Dashed vertical lines represent the top and bottom 5% of transcript level differences genome-wide. (C) Z-score for differences in transcript levels of ten known dosage-dependent E(var) genes (green), Su(var) genes (orange), and histone methyltransferase genes (also Su(var)s) between D. melanogaster and D. simulans are denoted as vertical lines and compared to genome-wide distributions (shaded gray). Dashed vertical lines indicate top and bottom 5% of transcript level differences genome-wide.DOI: http://dx.doi.org/10.7554/eLife.25762.02610.7554/eLife.25762.027Figure 9—source data 1.Su(var) and E(var) genes in D. melanogaster and D. simulans.DOI: http://dx.doi.org/10.7554/eLife.25762.027
+**Figure 9.:** (A) D. simulans has higher normalized amounts of H3K9me2-enriched 12-mers than D. melanogaster. Raw amounts of H3K9me2-enriched 12-mers were normalized with sequencing coverage in each sample before comparisons (see Materials and methods). Different library preparation methods (see [Kofler et al., 2015]) are denoted with dots of different colors. (B) Compared to genome-wide distributions (shaded gray), known Su(var) genes as a group (orange, 40 genes in total) have higher expression in D. simulans than in D. melanogaster. Positive z-score represents lower expression rank (i.e. higher expression) in D. simulans than in D. melanogaster. Dashed vertical lines represent the top and bottom 5% of transcript level differences genome-wide. (C) Z-score for differences in transcript levels of ten known dosage-dependent E(var) genes (green), Su(var) genes (orange), and histone methyltransferase genes (also Su(var)s) between D. melanogaster and D. simulans are denoted as vertical lines and compared to genome-wide distributions (shaded gray). Dashed vertical lines indicate top and bottom 5% of transcript level differences genome-wide.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/25762/elife-25762-fig9-figsupp1-v1.jpg)
 
-**Figure 9—figure supplement 1.:** Su(var) and E(var) genes between D. melanogaster and D. simulans.Z-scores, which measure differences in transcript levels between D. melanogaster and D. simulans, for (A) 40 Su(var) genes and (B) five E(var) genes are denoted as vertical lines and compared to genome-wide distribution (shaded gray).DOI: http://dx.doi.org/10.7554/eLife.25762.028
+**Figure 9—figure supplement 1.:** Z-scores, which measure differences in transcript levels between D. melanogaster and D. simulans, for (A) 40 Su(var) genes and (B) five E(var) genes are denoted as vertical lines and compared to genome-wide distribution (shaded gray).
 
 To test if the expression of Su(var)s and E(var)s varies between the two species, we estimated z-scores for between-species differences in expression rank (high expression – low rank), using D. simulans as reference (i.e. positive z-socre: higher expression in D. simulans; negative z-score: higher expression in D. melanogaster). Compared to other genes in the genome, 40 known Su(var)s, as a group, have higher expression in D. simulans than in D. melanogaster (Kolmogorov–Smirnov test, p<10−6, Figure 9B; also see Figure 9—figure supplement 1 and Figure 9—source data 1 for individual genes included in the analysis). The small number of known E(var)s (five) precluded us from drawing any solid conclusions (Figure 9—figure supplement 1). Several Su(var)s/E(var)s are known to have dosage-dependent effects on heterochromatin silencing (Elgin and Reuter, 2013; Swenson et al., 2016). Among these dosage-dependent Su(var)s/E(var)s, Su(var)3–9 showed significantly higher expression in D. simulans than in D. melanogaster (Figure 9C). Overall, we found that D. simulans has lower amounts of H3K9me2-enriched simple repeats and higher expression of Su(var)s compared to D. melanogaster, both of which could account for the stronger epigenetic effects of TEs observed in D. simulans.
 
@@ -192,19 +331,19 @@ The observed significant variation in genetic PEV modifiers between D. melanogas
 
 ## Materials and methods
 
-## Drosophila strains
+### Drosophila strains
 
 Drosophila strains used in this study are D. melanogaster RAL315 (Bloomington Drosophila stock center (BDSC) #25181), RAL360 (BDSC #25186), and D. simulans w501 (Drosophila species stock center). Previous analysis showed that these two D. melanogaster inbred wildtype strains have low residual heterozygosity (Lack et al., 2015). Flies were cultured on standard medium at 25∘C, 12 hr light/12 hr dark cycles.
 
-## ChiP-Seq and RNA-Seq experiments
+### ChiP-Seq and RNA-Seq experiments
 
 Before collecting embryos, mated flies were allowed to lay eggs on fresh apple juice agar plates for one hour. Embryos were then collected on fresh apple juice agar plates for 4 hr and aged for 4 hr (to enrich for 4–8 hr embryos). All fly rearing and embryo collections were performed at 25∘C. Chromatin isolation and immunoprecipitation were performed following the modEncode protocol (http://www.modencode.org/). The antibody used for H3K9me2 (abcam 1220) was validated by modEncode and showed high consistency between lots (Egelhofer et al., 2011). For each strain, there were at least two replicates and each IP replicate had a matching input. ChIP-Seq libraries were prepared with NuGen Ovation Ultralow Library Systems V2 (San Carlos, CA) and sequenced on Illumina Hi-Seq with 100 bp, paired-end reads. RNAs were extracted from embryos that were collected using the same procedures using the RNeasy Plus kit (Qiagen). There were two replicates for each strain. RNA-Seq libraries were prepared using Illumina TruSeq and sequenced on Illumina Hi-Seq with 100 bp, paired-end reads.
 
-## TE calls
+### TE calls
 
 We used highly conservative euchromatin-heterochromatin boundaries: 0.5 Mb distal from those reported previously for D. melanogaster (Riddle et al., 2011). For D. simulans, we used boundaries that are 0.5 Mb distal from the sharp transition in H3K9me2 enrichment, based on our ChIP-Seq data. For all the analyses reported, we excluded TEs, genes, and sequences in heterochromatic regions. For D. melanogaster strains, we used TE insertions reported with strong confidence (coverage ratio greater than or equal to 3; [Rahman et al., 2015]). TEs that are shared between two RAL strains, in shared H3K9me2 peaks in euchromatin (called by MACS2 and present in both strains, see below), and/or in exons were also excluded. TEs in the D. simulans genome were annotated according to (Chiu et al., 2013), using blastn (Camacho et al., 2009). In brief, we used the blast hit with smallest e-value and excluded a putative insertion when the blast hit had the same smallest e-value for more than one TE family. We required a putative TE call to have at least 100 bp, at least 80% identity to canonical TEs, and merged TE calls of the same family and within 500 bp. TEs of different families but were within 2 kb were called as putative TE clusters and excluded from the analysis. In both species, we excluded INE-1 TEs, most which are relicts of a TE family that experienced an ancient burst of transposition events and are now mostly fixed in populations (Kapitonov and Jurka, 2003; Singh and Petrov, 2004). Our study included 255 TEs for the Oregon-R strain, 419 TEs for RAL strains, and 349 TEs for the D. simulans strain.
 
-## ChIP-Seq data analysis
+### ChIP-Seq data analysis
 
 Raw reads were processed with trim-galore (‘Babraham Bioinformatics - Trim Galore!”) to remove adaptors and low quality sequences. Processed reads were mapped to release six reference D. melanogaster genome (Hoskins et al., 2015) or release two reference D. simulans genome (Hu et al. 2013), using bwa mem with default parameters (v 0.7.5) (Li and Durbin, 2009). Reads with mapping quality score lower than 30 were filtered using samtools (Li, 2011) and excluded from further analysis. We used Macs2 with a liberal significance threshold (p=0.2) to generate peak calls for IDR (irreproducible rate) analysis (Li et al., 2011), which evaluates the reproducibility of ChIP replicates. Replicates for our samples had low IDRs (Figure 2—figure supplement 3 and Figure 8—figure supplement 2), and were combined to generate a single H3K9me2 fold enrichment track (between IP and matching input) for each sample. Our analyses were based these fold-enrichment tracks.
 
@@ -218,26 +357,96 @@ For gene-based analysis, we calculated average fold enrichment over gene bodies 
 
 ChIP-Seq data from Oregon-R were downloaded from the modEncode website (http://www.modencode.org/) and analyzed with the same procedures.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Raw reads were processed with trim-galore, followed by mapping to release six reference D. melanogaster genome (Hoskins et al., 2015) or release two reference D. simulans genome (Hu et al. 2013) using TopHat with default parameters (Trapnell et al., 2009). We used htseq-count (Anders et al., 2015) to count the number of reads mapping to exons and used DESeq2 (Love et al., 2014) to normalize and estimate expressional fold change between the two D. melanogaster strains. Estimates of transcript abundance were highly correlated between biological replicates (Pearson’s r = 0.98 (RAL315), 0.97 (RAL360), and 0.88 (D. simulans), p<10−16 for all). We only analyzed genes annotated as expressed in 4–8 hr embryos by the modEncode developmental time course study (Graveley et al., 2011). Indeed, genes annotated as no or extremely low expression in 4–8 hr embryos in the modEncode study have much fewer mapped reads than other genes in our RNA-seq data (median for RPKM, RAL315: 0.058 (not expressed) vs 13.16 (other genes), RAL360: 0.031 (not expressed) vs 12.70 (other genes), Mann-Whitney U test, p<10−16 for both). To investigate the functional consequence of TE-induced enrichment of repressive epigenetic marks, we categorized protein-coding genes according to their epigenetic states (RAL 315 or RAL360 higher?) and RNA transcript levels (RAL 315 or RAL360 higher?) in the two strains. The proportion of genes with predicted TE-induced epigenetic states and RNA transcript levels (higher H3K9me2 enrichment and lower expression for alleles adjacent to TEs) for genes with TEs in 10 kb were compared to other genes in the genome using Fisher’s Exact Test (also see Figure 7).
 
 To compare expression levels between the two species, we used RPKM (reads per kilobase per million reads) and ranked genes from highest (small rank) to lowest (large rank) expression in each library. Z-score was calculated as (mean rank of D. melanogaster – mean rank of D. simulans)/mean standard deviation. A negative z-score represents higher expression in D. melanogaster while a positive z-score represents higher expression in D. simulans.
 
-## TE population frequency analysis
+### TE population frequency analysis
 
 Raw reads from Drosophila Population Genomic Project (DPGP) 3 (Lack et al., 2015) were mapped to release six D. melanogaster reference genome using bwa mem with default parameters. Reads mapping within 500 bp upstream or downstream of TE insertion sites were parsed out using samtools. Parsed reads were assembled using phrap (Ewing and Green, 1998) following parameters in (Cridland et al., 2013). Assembled contigs were aligned against repeat-masked release six D. melanogaster genome using blastn. If one of the contigs spanned over at least 50 bp on both sides of a TE insertion site, the TE was called absent in the analyzed genome. If no contigs spanned the TE insertion site, contigs were aligned against canonical TE sequences and sequences of all TEs in the reference D. melanogaster genome using blastn. When there were blast hits to TE sequences, a TE was called present if there was a contig aligning at least 30 bp left or right of the TE insertion site without spanning the insertion site. All other scenarios were called as missing data. For population frequency analysis, we only included TEs that have at least 100 alleles (out of 197 alleles) called in DPGP3 genomes.
 
-A large proportion of the analyzed TE insertions (68.5%) has zero population frequencies in the Zambian population (Figure 5—figure supplement 1). Accordingly, in some analyses, we also categorized TEs into those that are present in the Zambian population (‘high frequency’ TEs) and those that are absent (‘low frequency’ TEs). To account for the influence of TE family identity on TE’s population frequencies, we performed regression analysis using generalized linear model and generalized mixed linear model. Population frequencies of TE insertions (response variable) were treated as either dichotomous variable (‘high frequency’ TE or not) or count (the number of individuals in which a TE insertion is present). Because the distribution of TE count is overdispersed (i.e. the variance is greater than the mean), we modeled the TE count as having either ‘quasipoission’ or ‘negative binomial’ distribution. The influence of TE family identity was modeled as either fixed effect (generalized linear model) or random effect (generalized mixed linear model). The two indexes for the epigenetic effects of TEs (‘extent of H3K9me2 spread’ and ‘% increase in H3K9me2 enrichment’) were analyzed separately. Regression models used were:logit p ∼ TE′s epigenetic effects (either "extent of H3K9me2 spread" or"% increase in H3K9me2 enrichment")+familyTE count ∼ TE′s epigenetic effects+family
+A large proportion of the analyzed TE insertions (68.5%) has zero population frequencies in the Zambian population (Figure 5—figure supplement 1). Accordingly, in some analyses, we also categorized TEs into those that are present in the Zambian population (‘high frequency’ TEs) and those that are absent (‘low frequency’ TEs). To account for the influence of TE family identity on TE’s population frequencies, we performed regression analysis using generalized linear model and generalized mixed linear model. Population frequencies of TE insertions (response variable) were treated as either dichotomous variable (‘high frequency’ TE or not) or count (the number of individuals in which a TE insertion is present). Because the distribution of TE count is overdispersed (i.e. the variance is greater than the mean), we modeled the TE count as having either ‘quasipoission’ or ‘negative binomial’ distribution. The influence of TE family identity was modeled as either fixed effect (generalized linear model) or random effect (generalized mixed linear model). The two indexes for the epigenetic effects of TEs (‘extent of H3K9me2 spread’ and ‘% increase in H3K9me2 enrichment’) were analyzed separately. Regression models used were:
+
+$$
+logit p ∼ TE^{′}s epigenetic effects (either "extent of H3K9me2 spread" or"% increase in H3K9me2 enrichment")+familyTE count ∼ TE^{′}s epigenetic effects+family
+$$
 
 where logit p is the log odds of whether a TE is observed in the Zambia population (‘high frequency’ TEs). We used MASS (Venables and Ripley, 2002) for negative binomial regression and lme4 (Bates et al., 2015) for generalized mixed linear models in R.
 
-## Heterochromatic repeat content
+### Heterochromatic repeat content
 
-## Identifying heterochromatic repeats
+#### Identifying heterochromatic repeats
 
 To identify repeats enriched in heterochromatic regions, we used KMC2 (Deorowicz et al., 2015) to quantify the number of 12-mers in IP and Input libraries from the H3K9me2 ChIP-seq experiments. To normalize between sequencing libraries, we divided the counts of 12-mers by the number of reads that mapped uniquely to the reference genome with at least 30 mapping quality score. The idea is to have a measure of the abundance of repetitive sequence relative to the single-copy regions of the genome. To find 12-mers enriched with H3K9me2, we divided the normalized counts from IP libraries by the normalized counts in corresponding Input libraries, and considered 12-mers with at least 1.5 fold enrichment with H3K9me2 as enriched in heterochromatic regions.
 
-## Quantifying the amount of heterochromatic repeats
+#### Quantifying the amount of heterochromatic repeats
 
-We used pooled-genome sequencing of D. melanogaster and D. simulans data from (Kofler et al., 2015) to quantify the amount of heterochromatic repeats in these two species. It is worth noting that in (Kofler et al., 2015), libraries of these two species were prepared and sequenced in pairs, which minimized technical variations. We used KMC2 with the same parameters to count the number of H3K9me2 enriched 12-mers in each library. To account for the different completeness of reference genomes for D. melanogaster and D. simulans, and the variation in sequencing coverage between samples, we counted the number of reads mapped uniquely and with at least 30 mapping quality score to Flybase annotated orthologous exonic regions. Numbers of H3K9me2 enriched 12-mers were then normalized with sequencing coverage in these orthologous exonic regions. Results using different fold enrichment thresholds to identify H3K9me2 enriched 12-mers or using different normalization metrics gave consistent results (Table 3).10.7554/eLife.25762.029Table 3.Comparisons of H3K9me2 enriched 12-mers between D. melanogaster and D. simulans using different normalization and thresholds. Raw counts of H3K9me2 enriched 12-mers were normalized by read coverage of either the orthologous exonic regions or all orthologous genomic regions. ‘Fold enrichment threshold’ is the threshold for a 12-mer to be considered as H3K9me2 enriched in the ChIP-Seq data. ‘% of 12-mers’ is the proportion of H3K9me2 enriched 12-mers among all 12-mers.DOI: http://dx.doi.org/10.7554/eLife.25762.029ANOVA p-valuenormalizationfold enrichment threshold% of total 12-mersSpecieslibrary preparation methodexon reads1.520.21%1.29E-041.43E-07exon reads212.89%8.62E-051.28E-07exon reads36.41%1.01E-021.55E-07all reads1.520.21%2.07E-092.40E-05all reads212.89%5.14E-111.70E-05all reads36.41%1.60E-031.20E-02
+We used pooled-genome sequencing of D. melanogaster and D. simulans data from (Kofler et al., 2015) to quantify the amount of heterochromatic repeats in these two species. It is worth noting that in (Kofler et al., 2015), libraries of these two species were prepared and sequenced in pairs, which minimized technical variations. We used KMC2 with the same parameters to count the number of H3K9me2 enriched 12-mers in each library. To account for the different completeness of reference genomes for D. melanogaster and D. simulans, and the variation in sequencing coverage between samples, we counted the number of reads mapped uniquely and with at least 30 mapping quality score to Flybase annotated orthologous exonic regions. Numbers of H3K9me2 enriched 12-mers were then normalized with sequencing coverage in these orthologous exonic regions. Results using different fold enrichment thresholds to identify H3K9me2 enriched 12-mers or using different normalization metrics gave consistent results (Table 3).
+
+**Table 3.**
+ Comparisons of H3K9me2 enriched 12-mers between D. melanogaster and D. simulans using different normalization and thresholds. Raw counts of H3K9me2 enriched 12-mers were normalized by read coverage of either the orthologous exonic regions or all orthologous genomic regions. ‘Fold enrichment threshold’ is the threshold for a 12-mer to be considered as H3K9me2 enriched in the ChIP-Seq data. ‘% of 12-mers’ is the proportion of H3K9me2 enriched 12-mers among all 12-mers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">ANOVA p-value</th>
+    </tr>
+    <tr>
+      <th>normalization</th>
+      <th>fold enrichment threshold</th>
+      <th>% of total 12-mers</th>
+      <th>Species</th>
+      <th>library preparation method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>exon reads</td>
+      <td>1.5</td>
+      <td>20.21%</td>
+      <td>1.29E-04</td>
+      <td>1.43E-07</td>
+    </tr>
+    <tr>
+      <td>exon reads</td>
+      <td>2</td>
+      <td>12.89%</td>
+      <td>8.62E-05</td>
+      <td>1.28E-07</td>
+    </tr>
+    <tr>
+      <td>exon reads</td>
+      <td>3</td>
+      <td>6.41%</td>
+      <td>1.01E-02</td>
+      <td>1.55E-07</td>
+    </tr>
+    <tr>
+      <td>all reads</td>
+      <td>1.5</td>
+      <td>20.21%</td>
+      <td>2.07E-09</td>
+      <td>2.40E-05</td>
+    </tr>
+    <tr>
+      <td>all reads</td>
+      <td>2</td>
+      <td>12.89%</td>
+      <td>5.14E-11</td>
+      <td>1.70E-05</td>
+    </tr>
+    <tr>
+      <td>all reads</td>
+      <td>3</td>
+      <td>6.41%</td>
+      <td>1.60E-03</td>
+      <td>1.20E-02</td>
+    </tr>
+  </tbody>
+</table>

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
+1. MRC Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 
 † Corresponding author
 
@@ -31,9 +31,17 @@ In the present study, we address this idea by analysing experimental data on cot
 
 ## Results
 
-## Cotranslationally assembling subunits are characterised by large interfaces
+### Cotranslationally assembling subunits are characterised by large interfaces
 
 In a recent study, a novel ribosome profiling method was used to identify over 4000 cotranslationally assembling human proteins (Bertolini et al., 2021). By design, the method can identify subunits that undergo cotranslational assembly when both subunits are in the process of translation. As recently proposed (Kamenova et al., 2019), we refer to this mode of binding as ‘simultaneous’ assembly (illustrated in Figure 1A, B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79602/elife-79602-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of (cis) simultaneous cotranslational assembly in homomers. (B) Schematic representation of (trans) simultaneous cotranslational assembly in heteromers. (C) Interface size differences between cotranslationally assembling and all other subunits of homomeric symmetry groups and heterodimers. Error bars represent standard error of the mean (SEM) and labels on bars show the number of proteins in each group. The p values were calculated with two-sided Wilcoxon rank-sum tests. Pictograms show the basic structure of symmetry group members, with the blue dots representing isologous and red dots representing heterologous and heteromeric interfaces. (D) Interface size distributions of cotranslationally assembling and all other subunits of C2 homodimers and heterodimers, subset by the terminal location of the interface. The p values were calculated with two-sided Wilcoxon rank-sum tests.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79602/elife-79602-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Interface size differences between cotranslationally assembling and all other subunits of C2 homodimers and heterodimers, measured at incremental interface area cutoffs. Error bars represent standard error of the mean (SEM) and labels show the number of proteins in each group. The p values were calculated with two-sided Wilcoxon rank-sum tests. (B) Left: Interface size differences between cotranslationally assembling and all other subunits of plasma membrane localised higher-order cyclic symmetry members. Right: Interface size differences between cotranslationally assembling and all other subunits of dihedral complexes grouped by their probable evolutionary history. The p values were calculated with two-sided Wilcoxon rank-sum tests. (C) Interface size differences between cotranslationally assembling and all other subunits of C2 homodimers and heterodimers, binned into three approximately equal-sized bins of sequence length. Error bars represent SEM and labels show the number of proteins in each group. The p values were calculated with two-sided Wilcoxon rank-sum tests. (D) Interface size differences subset by confidence in cotranslational assembly. Only proteins with cytoplasmic and nuclear localisations are included. Pictograms show the basic structure of symmetry group members, with the blue dots representing isologous and red dots representing heterologous and heteromeric interfaces. The p values were calculated with two-sided Wilcoxon rank-sum tests between high confidence and all other subunits. Differences between high confidence and low confidence subunits are not significant. Larger dots within boxes represent the sample mean.
 
 To investigate if interface area correlates with simultaneous assembly, we computed the buried surface areas of homomeric and heterodimeric subunits, and subset the results by whether or not the protein was detected to cotranslationally assemble (Figure 1C). The arrangement of homomeric subunits with respect to one or more rotational axes allows their classification into symmetry groups. The three most common groups are the twofold symmetric (Schönflies notation, C2), cyclic (Cn [n>2]), and dihedral (Dn [n>1]) complexes, which all have distinct structural and functional characteristics (Goodsell and Olson, 2000; Levy and Teichmann, 2013; Bergendahl and Marsh, 2017) and should therefore be considered separately. For example, members of the cyclic and dihedral symmetry tend to have larger buried surfaces, because they interface with more than one subunit, while C2 symmetric homodimers tend to have larger buried surfaces than heterodimers (Jones and Thornton, 1996).
 
@@ -55,7 +63,7 @@ The second variable we accounted for is the confidence-based classification of t
 
 The third potential confounder is the location of the interface relative to protein termini. Interactions via N-terminal interfaces are translated earlier, therefore increasing the time available for them to assemble cotranslationally. Given that cotranslationally forming interfaces identified by ribosome profiling are known to be significantly enriched towards the N-terminus of proteins (Bertolini et al., 2021), but that overall, homomeric interfaces tend to be enriched towards the C-terminus (Natan et al., 2018), we wished to control for interface location. We classified all interfaces as occurring on either the N- or C-terminal halves of proteins, based on the position of the interface midpoint, which is the residue at which half of the buried surface area of an interface is reached. This comparison is presented for C2 homodimers and heterodimers in Figure 1D. In all groups, there is a clear interface size trend wherein cotranslationally assembling subunits have a larger area. More interestingly, however, the trend is only significant and much larger in effect between N-terminally localised interfaces. In fact, N-terminal interfaces are significantly larger than C-terminal interfaces in cotranslationally assembling homodimers (p = 0.021, Wilcoxon rank-sum test). One possible explanation for this is that N-terminally localised interfaces are far more likely to represent cases of genuine cotranslational assembly.
 
-## Interface area is more important than other interfacial contact-based properties for explaining cotranslational assembly
+### Interface area is more important than other interfacial contact-based properties for explaining cotranslational assembly
 
 To rule out that interface size is masking a more important property of cotranslationally assembling subunits, we explored other interface features using the same set of C2 symmetric homodimers (n = 1486) and heterodimers (n = 1640) as shown in Figure 1A, which are abundant in the structural data and possess only a single interface, making the results simple to interpret. Because hydrophobicity is essential to protein–protein interactions (Chothia and Janin, 1975), we calculated the apolar interface area and compared it to the total area (Figure 2A, B). We found that, while the difference in apolar interface area shows a stronger effect among homodimers than the total size (Wilcoxon effect size 0.24, p = 1.8 × 10−7, vs. 0.228, p = 7.2 × 10−7), the opposite is observed among heterodimers (Wilcoxon effect size 0.054, p = 0.262, vs. 0.127, p = 7.9 × 10−3). The origin of this sharp contrast is likely the fact that heteromeric interfaces are less hydrophobic (Jones and Thornton, 1996), and thus complexation is less likely to be primarily driven by the size of the hydrophobic patch of the interface. We also looked at the absolute number of residue–residue contacts within a 5.5 Å radius (Vangone and Bonvin, 2015), which echoes the results we obtained with total interface size, but with weaker effects (Figure 2C; Wilcoxon effect size, 0.211 for C2, p = 4.4 × 10−6, and 0.083 for heterodimers, p = 0.08). Next, we employed a contact-based model to estimate binding affinity from the number and character of residue–residue contacts (Vangone and Bonvin, 2015). As expected, this analysis revealed that cotranslationally assembling subunits have higher predicted affinities, or lower ΔG of binding (Figure 2D), among both homo- and heterodimers (Wilcoxon effect size, 0.166 for C2, p = 3.1 × 10−4, and 0.122 for heterodimers, p = 0.011), although these differences are also weaker than those observed with interface size.
 
@@ -69,7 +77,7 @@ A linear model developed for the estimation of binding affinity from residue–r
 
 What may explain the finding that cotranslationally assembling subunits display more negative surface charges than other proteins? We believe there are four mutually non-exclusive hypotheses that are compatible with the observation. The first is based on the work of Kastritis et al., 2014, who proposed based on alanine scanning mutagenesis experiments that polar and charged residues of non-interacting surfaces contribute to binding affinity. Second, one might argue that the role of charged residues on the surface is to counteract the strong water-orientation forces exerted at large interfaces by supporting protein solubility through favourable interactions with water molecules (Kramer et al., 2012) and ions (Linse et al., 1988). The third idea concerns the ribosome:nascent chain interaction, where negative charges could help avoid unproductive interactions with the ribosome surface (Cassaignau et al., 2021; Deckert et al., 2021), thus facilitating cotranslational folding and assembly. The fourth scenario would be attributable to a proteome-wide effect, whereby the higher the abundance of a protein, the more its surface has been shaped by evolution for optimal ‘stickiness’ to combat non-specific interactions upon molecular crowding (Levy et al., 2012). While further analysis of this effect is out of the scope of this study, using pooled homo- and heterodimer data, we detect a weak but significant Spearman correlation of 0.18 (p = 1.7 × 10−23) between the NISc parameter and HEK293-specific active ribosome count (an abundance measure, Clamer et al., 2018), which corroborates the fourth hypothesis.
 
-## Larger and earlier-assembling interfaces tend to form cotranslationally in heteromeric subunits with multiple interfaces
+### Larger and earlier-assembling interfaces tend to form cotranslationally in heteromeric subunits with multiple interfaces
 
 Having confirmed that subunit interface size correlates with cotranslational assembly, we next wanted to see if this trend applies within single subunits that have more than one interface. In other words, do multi-interface heteromeric subunits also employ their largest interface during the course of simultaneous assembly? A multi-interface heteromeric subunit forms at least two distinct interfaces with two other proteins in a complex that contains at least three subunits. Because of the interface hierarchy that exists within protein complexes (Levy et al., 2008; Marsh et al., 2013), we hypothesised that the largest interface, which is most likely to assemble earliest, should also be more likely to cotranslationally assemble.
 
@@ -85,7 +93,7 @@ We wished to put these interfaces into the context of their full complexes. Do s
 
 Some of the identified interfaces belong to complexes that have been shown to use cotranslational assembly routes, such as the proteasome (Panasenko et al., 2019) and subunits of the transcription initiation complex (Kamenova et al., 2019). However, many are not yet described in the literature, for example, the loading of histone H2A onto importin-9 (Figure 3D), which has been reported to act as a storage chaperone while transporting a histone dimer to the nucleus (Padavannil et al., 2019). Another example is the V-type ATPase (Figure 3D), whose catalytic A and B subunits have been tested for their ability to assemble in the sequential mode with a negative result (Shiber et al., 2018), but our structural approach using the assembly-onset identified the E1 subunit to form in the simultaneous mode with the catalytic B subunit. Although these two subunits can undergo major structural rearrangements in the complex, the same B subunits stay in contact with the same E1 subunits across all the observed conformational states (Vasanthakumar et al., 2022). In fact, such large post-translational conformational rearrangements may be common in cotranslationally forming interfaces, given that proteins with larger interfaces will have an inherent tendency to be more flexible (Marsh and Teichmann, 2014).
 
-## Evolutionarily more ancient subunits of complexes are more likely to undergo cotranslational assembly
+### Evolutionarily more ancient subunits of complexes are more likely to undergo cotranslational assembly
 
 Protein complexes are under evolutionary selection to minimise misassembly (Marsh et al., 2013; Leonard and Ahnert, 2019), meaning that over evolutionary timescales, ordered subunit assembly has been prioritised in cells (Wells et al., 2016). These findings have led to the formulation of the interface size hypothesis, which posits that the assembly pathway of a protein complex parallels with its evolutionary history. A simple proxy for predicting the steps of such pathways is interface size, which demonstrates exceptional correspondence with in vitro complex assembly–disassembly analyses (Levy et al., 2008; Marsh et al., 2013).
 
@@ -95,11 +103,19 @@ Naturally related to the interface size hypothesis is another trend that reflect
 
 **Figure 4.:** (A) Average (mean ± standard error of the mean [SEM]) interface sizes of yeast and human homo- and heteromeric subunits grouped by the evolutionary age of the protein. Age group labels coloured in red are defined as ‘more recent’ proteins, while those in black represent ‘ancient’ proteins. Numbers under labels represent the number of distinct proteins in the given age group. Homomeric interface sizes are a pool of experimentally determined structures and SWISS-MODEL homology models. (B) The frequency (%) of cotranslational assembly, as detected by Bertolini et al., 2021, in the different protein age groups, split into homo- and heteromers. Heteromer annotations were supplemented with those contained in hu.MAP2.0 (Drew et al., 2021). Fractions under labels denote the number of cotranslationally assembling proteins out of the total in the given age group. Error bars represent 68% Jeffrey’s binomial confidence intervals.
 
-## N-terminal interfaces tend to be larger than C-terminal interfaces supporting evolutionary selection for cotranslational assembly
+### N-terminal interfaces tend to be larger than C-terminal interfaces supporting evolutionary selection for cotranslational assembly
 
 There are two possible explanations for the observation that cotranslationally forming interfaces tend to be larger. First, larger interfaces may be inherently more likely to form cotranslationally because their assembly is more energetically favourable. In this scenario, cotranslational assembly has not been evolutionarily selected for; instead, the larger interfaces are simply more likely to be formed while the protein is still in the process of being translated, without providing any functional benefit. Alternatively, cotranslational assembly may have been selected for, for example, because it increases the efficiency of assembly and avoids potentially damaging non-specific interactions. Here, large interfaces have evolved to increase the level of functionally beneficial cotranslational assembly.
 
 One way to distinguish between these two scenarios is to compare the sizes of N- and C-terminal interfaces. Regardless of whether cotranslational assembly occurs simultaneously (Figure 1B) or sequentially (Figure 5A), due to vectorial synthesis on the ribosome, N-terminal regions of proteins are more likely to be involved in binding events during translation. Therefore, if cotranslational assembly is adaptive, we would expect that N-terminal interfaces in multi-interface heteromeric subunits, which will be translated first, should show a significant tendency to be larger than C-terminal interfaces, as illustrated in Figure 5B.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79602/elife-79602-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic representation of sequential cotranslational assembly in homomers. (B) Diagrammatic representation of the hypothesis test of the adaptive model of cotranslational assembly. (C) Area differences between the first and last translated interfaces in multi-interface heteromeric subunits across the species. Panels are ordered by the area cutoffs, 400, 1000, and 2000 Å2, which are satisfied if either the first or the last interface is larger than the given cutoff. Error bars represent standard error of the mean (SEM) and labels on bars show the number of proteins in each group. The p values were calculated with Wilcoxon signed-rank tests. (D) Bootstrap distributions of the area difference between the first and the last translated interfaces within two different categories. The first category (top two boxplots) is protein age, whereby yeast and human multi-interface heteromeric subunits are classified into ‘ancient’ and ‘more recent’ groups. In the second category (bottom boxplot), bacterial subunits are grouped based on whether or not they are encoded in operons. Positive values represent a larger first translated interface. The p values were calculated from 104 bootstrap resamples with correction for finite testing. (E) Example of an operon-encoded complex, the RecBCD nuclease (pdb: 5ld2). In the linear sequence of RecD, the interface with RecC is translated first, and that with RecB is last. The RecD:RecC interface is twice the area of the RecD:RecB interface, likely to promote cotranslational subunit recruitment. (F) Correlation between the relative distance of translational start points and the relative area difference of the first and last translated interfaces. Shaded lines represent the 95% confidence interval of the regression line. The Pearson’s correlation coefficient r, its p value, and the regression coefficient β1 are shown in the panels.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79602/elife-79602-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Full distribution of the first versus last translated interface size differences for all subunits, subunits with at least one interface >1000 Å2, and subunits with at least one interface >2000 Å2, in the first, second, and third panels, respectively. (B) Interface size differences between the first and last translated interfaces in human multi-interface heteromeric subunits, with those identified to have simultaneously forming interfaces shown as a separate group. Error bars represent standard error of the mean (SEM) and labels on bars show the number of proteins in each group. The p values were calculated with Wilcoxon signed-rank tests. (C) Scatter plots showing the absolute distance in amino acids between translational start points of the first and last translated interfaces and the absolute area difference across species. Shaded lines represent the 95% confidence interval of the regression line. (D) TIE-fighter plots demonstrating that interface separation increases the area difference in favour of the first interface independent of protein length. For all species, the relative translational distance interval was split at the mean, and the plot is divided into less and more than 400 amino acid long sequences. Dots represent the mean and error bars are SEM. Labels are the number of proteins in each group. Background colour reflects the direction of the size difference: blue – first interface larger, yellow – last interface larger.
 
 To address the question, we selected experimentally determined heteromeric complex structures from three model proteomes: Escherichia coli, Saccharomyces cerevisiae (yeast), and Homo sapiens (human). For each heteromeric subunit, we defined the first interface as the one that exposes the most N-terminal interface residue in the linear protein sequence, and, to treat the termini symmetrically, the last interface was defined as the one that exposes the last interface residue, that is the first interface residue from the C-terminal direction.
 
@@ -116,6 +132,65 @@ We illustrate the example of the RecBCD nuclease in Figure 5E. Genes of the subu
 To further test whether large interfaces could have been selected to promote cotranslational assembly, we acquired annotations derived from RNA sequencing data sets (Chetal and Janga, 2015) to group heteromers from E. coli according to whether or not they are encoded by operons. We again generated bootstrap distributions of the area difference between the first and the last translated interfaces to visualise and derive a probability (Figure 5D). In agreement with the above idea, we found that the size difference between the two interfaces is significantly larger in operon-encoded multi-interface heteromeric subunits, favouring the first interface (mean area difference of 317 Å2, p = 0.011).
 
 We speculate that the first versus last interface trend may be the hallmark of sequential cotranslational assembly (Figure 5A), rather than that of the simultaneous mode (Figure 1B). Bertolini et al., 2021 have suggested that simultaneous assembly is predominantly employed for the formation of homomeric protein complexes, which could mean sequential assembly is the more common cotranslational assembly mode in heteromers. The strong trend in E. coli also supports this idea, because polycistronic gene structure is more compatible with sequential cotranslational assembly (Shieh et al., 2015). In eukaryotes, large complexes and subunits of lowly abundant complexes may require an additional biological process to ensure their transcripts are colocalised for simultaneous assembly and to facilitate further assembly steps (Keene, 2007; Chen and Mayr, 2022). Sequential assembly, on the other hand, may have evolved to exploit large interface areas for the recruitment of partner subunits. This can be conceptualised as the ‘bait and prey strategy’ of cotranslational assembly, in which a large nascent interface represents the ‘bait’ bound by a fully folded ‘prey’ subunit. Although a proteome-scale data set of cotranslationally assembling proteins is not available for yeast, we have identified case studies of five multi-interface heteromeric subunits in yeast that use the sequential assembly mode, and found that all five subunits follow the first versus last interface size trend (Table 1). To substantiate the model further, we removed from the human data set those proteins that were identified by Bertolini et al., 2021, that is those that simultaneously assemble. Strikingly, removal of these proteins increases the size difference between the first and the last translated interfaces from 13% to 18% (Figure 5—figure supplement 1B; p = 0.014, Wilcoxon signed-rank test). One explanation is that the remaining heteromers are enriched in sequential assembly, and thus exhibit a greater difference.
+
+**Table 1.**
+ Table of yeast multi-interface heteromeric subunits, which have been shown to utilise the sequential mode of cotranslational assembly.The yeast Set1, part of the COMPASS complex, binds multiple partners during its translation process (Halbach et al., 2009), but the order of these assembly steps is uncertain. In a partial structure of the histone methyltransferase complex (6b × 3), Set1 is found to have two biologically significant interfaces, the first with Swd3 and the last with Swd1. For the rest of the cases, the mature partners are known and the available structural data support a model where the first translated interface is larger relative to the last translated interface, likely to promote cotranslational subunit recruitment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Nascent chain</th>
+      <th>Mature partner</th>
+      <th>First (Å2)</th>
+      <th>Last (Å2)</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Halbach et al., 2009</td>
+      <td>Set1</td>
+      <td>uncertain</td>
+      <td>1,467</td>
+      <td>1,025</td>
+      <td>6b × 3</td>
+    </tr>
+    <tr>
+      <td>Shiber et al., 2018; Fischer et al., 2020</td>
+      <td>Fas2</td>
+      <td>Fas1</td>
+      <td>4,226</td>
+      <td>484</td>
+      <td>6ql9</td>
+    </tr>
+    <tr>
+      <td>Shiber et al., 2018</td>
+      <td>Pfka1</td>
+      <td>Pfk2</td>
+      <td>7,796</td>
+      <td>5,749</td>
+      <td>3o8o</td>
+    </tr>
+    <tr>
+      <td>Shiber et al., 2018</td>
+      <td>Gcn3</td>
+      <td>Gcd2</td>
+      <td>1,210</td>
+      <td>687</td>
+      <td>Humphreys et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Panasenko et al., 2019</td>
+      <td>Rpt2</td>
+      <td>Rpt1</td>
+      <td>4,226</td>
+      <td>484</td>
+      <td>6fvt</td>
+    </tr>
+  </tbody>
+</table>
 
 A property that would be consistent with the above model is interface separation. The later the translation of the last interface starts relative to the first, the higher the chance that assembly of the first interface will be undisturbed, free of competition with the partner subunit of the last interface. Therefore, we hypothesised that the distance between translation start points of the first and last interfaces, which are the earliest emerged interface residues of each, should correlate with the size difference in favour of the first interface. Because of large variances in protein length and interface size, we normalised the translational distance between the first and last interfaces as the percentage of the protein’s sequence length, and scaled the area difference by the sum of both interfaces. Figure 5F shows the correlation between the separation of translation start points and the area differences of the first and the last interfaces (absolute values shown in Figure 5—figure supplement 1C). As expected, increasing the distance between the start points monotonically increases the extent of the area difference across all species. To rule out that the interface separation metric is confounded by sequence length, we split the structures into less and more than 400 amino acids, which is the pan-species mean of sequence lengths. In both subsets, there is a pronounced preference in all species for a larger first interface when the separation is high (Figure 5—figure supplement 1D). The causal direction of this effect, whether it reflects that cotranslational assembly happens more often in high degrees of interface separation, or that separation is driven by selection for cotranslational assembly, remains to be addressed.
 
@@ -137,62 +212,74 @@ Finally, our results build on evidence from the past decade and emphasise the im
 
 ## Materials and methods
 
-## Protein structural data sets
+### Protein structural data sets
 
 Starting from the entire set of structures in the Protein Data Bank (Berman et al., 2000) on 2021-02-18, we searched for all polypeptide chains longer than 50 residues with greater than 90% sequence identity to H. sapiens, S. cerevisiae, and E. coli canonical protein sequences. When proteins mapped to multiple chains, we selected a single chain sorting by sequence identity, then by the number of unique subunits in the complex, and then by the number of atoms present in the chain. Only biological assemblies (pdb1) were used and symmetry assignments were taken directly from the PDB. Polypeptides formed by cleavage were excluded. In the generation of the multi-interface heteromeric subunit data sets, to exclude proteins with yet uncharacterised interfaces, chains with an at least 70% complete structure were considered and only included if they formed interface pairs >800 Å2 with at least two different subunits. To supplement the smaller yeast data set, computed structures of yeast core complexes were downloaded from the ModelArchive link provided by Humphreys et al., 2021. For downstream analysis, mmCIF files were converted into standard Brookhaven PDB format and the chains were mapped to genes using the table provided on ModelArchive. Homology models of yeast and human homomeric complexes were obtained from the SWISS-MODEL repository (version 2022_02) (Bienert et al., 2017; Waterhouse et al., 2018). When a protein’s UniProt accession number mapped to multiple homology models, we selected a single model ranking by the number of subunits in the complex, followed by the length of the modelled chain. Symmetry groups of the homology models were assigned with the software AnAnaS (Pagès and Grudinin, 2018; Pagès et al., 2018). In the analysis of N- versus C-terminal interface sizes, we excluded very large heteromeric complexes, defined as those containing ≥10 subunits. This is because of the previous evidence that predicting assembly order based on interface size in very large complexes is not as accurate (Marsh et al., 2013; Ahnert et al., 2015), likely because of the many intersubunit interfaces these complexes possess.
 
-## Calculation of interface area-related properties
+### Calculation of interface area-related properties
 
 Interface areas of SWISS-MODEL homology models were calculated with FreeSASA (Mitternacht, 2016) using the default surface probe radius of 1.4 Å. Residue-level pairwise interfaces in complexes derived from the PDB and from Humphreys et al., 2021 were calculated between all pairs of subunits using AREAIMOL from the CCP4 suite (Winn et al., 2011) with a probe radius of 1.4 Å. The interface was defined as the difference between the solvent accessible surface area of each subunit in isolation and within the context of the full complex. Apolar interface area was calculated from the residue-level data by classifying A, F, G, I, L, V, M, P, and Y amino acids as apolar (Vangone and Bonvin, 2015). An area cutoff of >400 Å2 was used for homomeric subunits and individual interfaces of multi-interface heteromeric subunits derived from the PDB to exclude potential crystallographic interfaces and to restrict the analyses to biologically significant interfaces. Assembly order was computed by predicting the assembly pathway assuming additivity of pairwise interfaces in each complex (Marsh et al., 2013), and implemented with the assembly-prediction Perl package (Wells et al., 2016).
 
-The relative interface location was calculated according to the formula:Relativeinterfacelocation=(i−1)/(L−1)
+The relative interface location was calculated according to the formula:
 
-where i marks the residue at which half of the cumulative buried surface area of the interface is passed (i.e. interface midpoint), and L is the sequence length.
+$$
+Relativeinterfacelocation=(i−1)/(L−1)
+$$
 
-The normalised distance between translational start points of two interfaces was calculated as:Relativetranslationaldistance=(flast−ffirst)/L
+where $i$ marks the residue at which half of the cumulative buried surface area of the interface is passed (i.e. interface midpoint), and $L$ is the sequence length.
 
-where f marks the first residue of the given interface and L is the sequence length.
+The normalised distance between translational start points of two interfaces was calculated as:
 
-Area differences between the first and the last interfaces were normalised according to the equation:Relativesizedifference=(BSAfirst−BSAlast)/(BSAfirst+BSAlast)
+$$
+Relativetranslationaldistance=(f_{last}−f_{first})/L
+$$
 
-where BSA is the buried surface area of the corresponding interface.
+where $f$ marks the first residue of the given interface and $L$ is the sequence length.
 
-## Calculation of interfacial contact-related properties
+Area differences between the first and the last interfaces were normalised according to the equation:
+
+$$
+Relativesizedifference=(BSA_{first}−BSA_{last})/(BSA_{first}+BSA_{last})
+$$
+
+where $BSA$ is the buried surface area of the corresponding interface.
+
+### Calculation of interfacial contact-related properties
 
 To make sure all software runs without errors, we converted the human structure files of homo- and heterodimers obtained by our pipeline from the Protein Data Bank to standard Brookhaven PDB format by taking the first atom locations in case of multiple AltLoc entries, converting non-canonical amino acids into equivalent standard names, renaming chain pairs with identical chain identifiers, and stripping files to only contain ATOM, TER, and END lines, thus excluding heteroatoms. Interfacial residue contacts were determined with the software PRODIGY (Vangone and Bonvin, 2015; Xue et al., 2016), using the default settings. The software RING 3.0 (Clementel et al., 2022) was used to compute the different types of residue interactions between the subunits. The network policy was set to ‘closest’ and all interactions were returned for a contact using the flag --all_edges.
 
-## Determining protein isoelectric point from structure
+### Determining protein isoelectric point from structure
 
 Predicted structures of the human monomeric proteome were acquired from the AlphaFold database (Tunyasuvunakool et al., 2021) in PDB format, which were converted into PQR files with PDB2PQR (Dolinsky et al., 2004) using the PARSE force field. The PQR files were piped into the software BLUUES (Walsh et al., 2012), and the.ddg output was kept, containing the pH ~ charge titration data. Then, each protein’s isoelectric point (pI) was calculated by interpolating from the pH ~ charge curve for charge = 0, using the approx() function in R. For proteins that are longer than 2700 amino acids and are contained in fragments in the AlphaFold database, we took the mean pI across the fragments.
 
-## Protein localisation
+### Protein localisation
 
 We obtained annotations for plasma membrane, cytoplasmic, and nuclear localisations directly from the UniProt FTP site (Bateman, 2021). Canonical UniProt entries with the gene ontology terms plasma membrane (GO:0005886), cytoplasm (GO:0005737), and nucleus (GO:0005634) were considered.
 
-## HEK293 active ribosome count
+### HEK293 active ribosome count
 
 Normalised ribosome protected fragments of actively translating ribosomes specific to Human Embryonal Kidney 293 lineage were determined by Clamer et al., 2018, the data are available at the NCBI Gene Expression Omnibus (Edgar et al., 2002) under the accession GSE112353. We used averages from two biological replicates.
 
-## Protein age
+### Protein age
 
 The ages of proteins were obtained from the work of Liebeskind et al., 2016, at the link https://github.com/marcottelab/Gene-Ages/tree/master/Main. The main_HUMAN and the main_YEAST comma separated value files were parsed and the modeage column was used in our analyses. We combined the mode age into two categories, where ‘ancient’ proteins are those whose genes are common to all cellular life (‘Cellular_organisms’), whose genes were transferred horizontally from bacteria after eukaryotes diverged from archaea (‘Euk +Bac’), and whose genes emerged in the clades of eukaryotes and archaea (‘Eukaryota’ and ‘Euk_Archaea’). The other four age groups, ranging from genes emerged in the classes Opisthokonta to Mammalia in the human proteome, and from Ascomycota to Saccharomyceta in the yeast proteome, were classified as ‘more recent’.
 
-## hu.MAP2.0 heteromers
+### hu.MAP2.0 heteromers
 
 Drew et al., 2021 integrated large-scale affinity purification mass spectrometry data sets, large-scale biochemical fractionation data, proximity labelling, and RNA hairpin pulldown data to generate a complex map with >7000 complexes, which is freely available at http://humap2.proteincomplexes.org/. We used hu.MAP2.0 to supplement genes of heteromers for the analysis in Figure 4B.
 
-## Mapping simultaneously forming interfaces in multi-interface heteromeric subunits
+### Mapping simultaneously forming interfaces in multi-interface heteromeric subunits
 
 Cotranslational assembly-onset positions were acquired from the supplemental material of Bertolini et al., 2021. From the onset positions, 30 residues were subtracted to account for the length of the ribosome tunnel. Our method maps the assembly-onset position to the closest interface midpoint in the linear sequence. Cases where the assembly-onset mapped to a homomeric interface were discarded under the assumption that the homomeric interface is hierarchically higher and undergoes cis-assembly. In subsequent analyses presented in Figure 3B, C, we only included comparisons between heteromeric interfaces.
 
-## Mapping bacterial subunits to operons
+### Mapping bacterial subunits to operons
 
 Operon annotations were downloaded from OperomeDB (Chetal and Janga, 2015). Genes were mapped to UniProt identifiers using E. coli proteome-specific mapping from the UniProt FTP site (Bateman, 2021).
 
-## Molecular graphics
+### Molecular graphics
 
 Visualisation of structures was performed with UCSF ChimeraX version 1.1 (Pettersen et al., 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 Data exploration and statistical analyses were carried out in RStudio (Rstudio, 2022) version 2022.02.0+443 ‘Prairie Trillium’ Release, using R version 4.2.1 (R Development Core Team, 2021). The R packages used for analyses are tidyverse, tidytable, rsample, rstatix, scales, and ggbeeswarm. The Wilcoxon rank-sum or signed-rank tests were used for A/B testing of interface size distributions, because although they appear log-normal, they are also left bounded because of the minimum interface size cutoff, thus a non-parametric test was required. Wilcoxon signed-rank tests were one tailed, and their main assumption that the data are symmetric around the median was supported by boxplot distributions. In Dunn’s test of multiple comparisons the Holm–Bonferroni method (Holm, 1979) was used to correct for family wise error rate. The effect sizes were defined as the Z-score computed from the p value over the square root of sample size (Tomczak and Tomczak, 2014). In the bootstrap analyses, data were stratified for protein age or operonal localisation in 104 resamples. The p value was calculated by determining the fraction of point estimates (difference in area) greater than 0, with correction for finite sampling (Buckland et al., 1998). In the regression analysis, conditions for statistical inference, including linearity of the relationship between variables, the independence and normality of the residuals, and homoscedasticity were met; validations can be found in the analysis scriptata and code availabilit.

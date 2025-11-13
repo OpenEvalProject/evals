@@ -27,16 +27,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03nadee84 Department of Biothermodynamics and Drug Design, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania
-2. https://ror.org/01gckhp53 Latvian Biomedical Research and Study Centre Riga Latvia
-3. https://ror.org/03nadee84 Department of Biological DNA Modification, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania
-4. https://ror.org/03nadee84 Department of Protein - DNA Interactions, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania
-5. https://ror.org/03nadee84 Sector of Biocatalysis, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania
-6. https://ror.org/03nadee84 Proteomics Center, Institute of Biochemistry, Life Sciences Center, Vilnius University Vilnius Lithuania
-7. https://ror.org/048a87296 Functional Pharmacology and Neuroscience, Department of Surgical Sciences, Uppsala University Uppsala Sweden
-8. https://ror.org/01a92vw29 Latvian Institute of Organic Synthesis Riga Latvia
-9. https://ror.org/03nadee84 Sector of Crystallography and Chemical Informatics, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania
-10. https://ror.org/047wbd030 Department of Chemical Engineering and Biotechnology, University of Applied Sciences Darmstadt Darmstadt Germany
+1. Department of Biothermodynamics and Drug Design, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+2. Latvian Biomedical Research and Study Centre Riga Latvia ([ROR:01gckhp53](https://ror.org/01gckhp53))
+3. Department of Biological DNA Modification, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+4. Department of Protein - DNA Interactions, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+5. Sector of Biocatalysis, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+6. Proteomics Center, Institute of Biochemistry, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+7. Functional Pharmacology and Neuroscience, Department of Surgical Sciences, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+8. Latvian Institute of Organic Synthesis Riga Latvia ([ROR:01a92vw29](https://ror.org/01a92vw29))
+9. Sector of Crystallography and Chemical Informatics, Institute of Biotechnology, Life Sciences Center, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+10. Department of Chemical Engineering and Biotechnology, University of Applied Sciences Darmstadt Darmstadt Germany ([ROR:047wbd030](https://ror.org/047wbd030))
 
 † Corresponding author
 
@@ -62,7 +62,7 @@ In this work, we investigated fluorinated benzenesulfonamide compounds bearing s
 
 ## Results
 
-## Design and mechanism of covalently-binding CA inhibitors
+### Design and mechanism of covalently-binding CA inhibitors
 
 In search of high-affinity and high-selectivity inhibitors of CAs, a series of fluoro-benzenesulfonamide-based compounds were synthesized (Figure 1). The benzenesulfonamide group is important for making a coordination bond with the Zn(II). At the same time, the fluorine atoms were included to withdraw electrons from the sulfonamide group and diminish its pKa to strengthen interaction. Surprisingly, part of the compounds exhibited extremely strong binding affinity. These compounds contained the -SO2CH2CH2OCOR group that was forming an unexpected covalent bond with the protein.
 
@@ -73,8 +73,6 @@ In search of high-affinity and high-selectivity inhibitors of CAs, a series of f
 It has been known in organic chemistry that compounds bearing this fragment in the presence of bases can rearrange to vinyl-sulfonyl moiety which has been reported as a covalently modifying ‘warhead’ (Tsutsui et al., 1987; Alonso et al., 2003; Ichikawa et al., 1989). To the best of our knowledge, this kind of rearrangement/elimination has not been applied to enzyme covalent inhibitors. We designed benzenesulfonamides with the SO2CH2CH2OCOR group that can form highly reactive electrophilic species without adding additional base by adding multiple fluorine atoms to the benzene ring. Furthermore, the rearrangement occurred only in the CA enzyme active site. The active vinyl-sulfonyl group formed via elimination reaction, which occurred easily due to the strong electron-withdrawing effect of fluorines on the benzene ring (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig2-v1.jpg)
-
-**Figure 2.:** 2CH2CH2OCOR fragment to vinyl-sulfone and the formation of a covalent bond with the histidine (His64) amino acid side chain of the CA protein.
 
 The SO2 group at the para position relative to the sulfonamide group was also necessary for a covalent bond because compounds 4 and 5 bearing the SO or S groups, respectively, did not form the covalent bond with CA isozymes. Moreover, the change of the -O-CO-R group to -NH-CO-R or -CO-O-R also prevented the formation of the covalent bond as illustrated by compounds 2, 10, 7, and 8 that did not form covalent bonds with the protein molecule.
 
@@ -88,7 +86,7 @@ The cyclooctyl or cyclododecyl rings present in covalent compounds 20–24 and i
 
 **Figure 3.:** First, the negatively charged sulfonamide forms a coordination bond with the Zn(II). Second, the hydrophobic cyclooctyl ring fits into the hydrophobic pocket of the CAIX isozyme and provides substantial selectivity over other CA isozymes. Third, a covalent bond forms with the histidine providing irreversible inhibition of CAIX enzymatic activity.
 
-## Covalent interaction between inhibitors and CA isozymes by X-ray crystallography
+### Covalent interaction between inhibitors and CA isozymes by X-ray crystallography
 
 The covalent bond between the compounds and protein was demonstrated by X-ray crystallography (Figure 4). The crystal structures of compounds 21, 20, and 23 with CAI, CAII, and CAIX, respectively, showed covalent bond formation between the ligands and the histidine residue of the enzymes. In CAI, the ligand forms a covalent bond with His 67, while in CAII and CAIX, the bond is made with His 64 – a residue responsible for proton shuttle function in CA isoforms (Fisher et al., 2005). The distance between the nitrogen atom of histidine and the vinyl carbon atom of the compounds was around 1.5 Å, consistent with the length of the covalent bond, and was visible with strong electron density in all three crystal structures (Figure 4A, B and C). The X-ray crystal structure refinement statistics are provided in Table 1.
 
@@ -96,13 +94,361 @@ The covalent bond between the compounds and protein was demonstrated by X-ray cr
 
 **Figure 4.:** X-ray crystal structures of CAI (A–C), CAII (D–F), and CAIX (G–I) covalently bound with inhibitors 21, 20, and 23, respectively. The left panels show cartoon models of the entire protein molecule with the covalently bound compound and the His64 residue shown as a stick model, while the middle and right panels show close-up views of the inhibitor, shown as sticks, displayed with a 180° rotation between the images. The 2Fo-Fc map is shown only for the ligand and the histidine residue with which it forms a covalent bond, contoured at 1σ.
 
+**Table 1.**
+ X-ray crystal structure refinement statistics of CA II-20, CA I-21, and CA IX-23 complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Structure</th>
+      <th>CA II – 20</th>
+      <th>CA I – 21</th>
+      <th>CA IX – 23</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Space group</td>
+      <td>P21</td>
+      <td>P 21 21 21</td>
+      <td>H3</td>
+    </tr>
+    <tr>
+      <td colspan="4">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a (Å)</td>
+      <td>42.45</td>
+      <td>62.42</td>
+      <td>152.11</td>
+    </tr>
+    <tr>
+      <td>b (Å)</td>
+      <td>41.57</td>
+      <td>73.27</td>
+      <td>152.11</td>
+    </tr>
+    <tr>
+      <td>c (Å)</td>
+      <td>72.79</td>
+      <td>120.57</td>
+      <td>172.51</td>
+    </tr>
+    <tr>
+      <td>β (o)</td>
+      <td>104.4</td>
+      <td>90</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>70.50–1.40</td>
+      <td>120.57–1.39</td>
+      <td>52.35–2.20</td>
+    </tr>
+    <tr>
+      <td>Highest resolution shell (Å)</td>
+      <td>1.40–1.47</td>
+      <td>1.39–1.41</td>
+      <td>2.20–2.25</td>
+    </tr>
+    <tr>
+      <td>No. of reflections (unique)</td>
+      <td>47352</td>
+      <td>110929</td>
+      <td>75528</td>
+    </tr>
+    <tr>
+      <td>No. of reflections in the test set</td>
+      <td>2410</td>
+      <td>10962</td>
+      <td>3874</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>96.9 (98.0*)</td>
+      <td>98.3 (67.6*)</td>
+      <td>100.0 (100.0*)</td>
+    </tr>
+    <tr>
+      <td>R merge</td>
+      <td>0.14 (0.48*)</td>
+      <td>0.06 (2.7*)</td>
+      <td>0.07 (1.16*)</td>
+    </tr>
+    <tr>
+      <td>⟨ I/σI ⟩</td>
+      <td>6.5 (3.0*)</td>
+      <td>20.4 (0.5*)</td>
+      <td>17.2 (1.9*)</td>
+    </tr>
+    <tr>
+      <td>Average multiplicity</td>
+      <td>5.0 (5.0*)</td>
+      <td>13.0 (4.7*)</td>
+      <td>10.7 (11.0*)</td>
+    </tr>
+    <tr>
+      <td>R-factor</td>
+      <td>0.18 (0.32*)</td>
+      <td>0.21 (0.47*)</td>
+      <td>0.17 (0.26*)</td>
+    </tr>
+    <tr>
+      <td>R free</td>
+      <td>0.22 (0.34*)</td>
+      <td>0.23 (0.48*)</td>
+      <td>0.20 (0.32*)</td>
+    </tr>
+    <tr>
+      <td>Average B factor (Å2)</td>
+      <td>11.0</td>
+      <td>26.6</td>
+      <td>52.4</td>
+    </tr>
+    <tr>
+      <td>Average B factor for inhibitor (Å2)</td>
+      <td>18.7</td>
+      <td>33.1</td>
+      <td>73.5</td>
+    </tr>
+    <tr>
+      <td>⟨B⟩ from Wilson plot (Å2)</td>
+      <td>8.9</td>
+      <td>22.1</td>
+      <td>49.5</td>
+    </tr>
+    <tr>
+      <td>No. of protein atoms</td>
+      <td>2045</td>
+      <td>4032</td>
+      <td>7413</td>
+    </tr>
+    <tr>
+      <td>No. of inhibitor atoms</td>
+      <td>27</td>
+      <td>54</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>No. of solvent molecules</td>
+      <td>338</td>
+      <td>539</td>
+      <td>421</td>
+    </tr>
+    <tr>
+      <td colspan="4">RMS deviations from ideal values</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.02</td>
+      <td>0.01</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bond angles (o)</td>
+      <td>1.67</td>
+      <td>1.85</td>
+      <td>1.79</td>
+    </tr>
+    <tr>
+      <td>Outliers in Ramachandran plot (%)</td>
+      <td>0.39</td>
+      <td>0</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>PDB code</td>
+      <td>8OO8</td>
+      <td>8S4F</td>
+      <td>9FLF</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parenthesis are for the high-resolution bin._
+
 The tail moiety of the ligands is also coordinated by two hydrogen bonds – with Asn 62 and Gln 92 (CAII numbering) in the cases of CAII and CAIX, while in CAI, a possible hydrogen bond is formed with Gln 92 and His 64. Electron density was overall good for the whole ligand in all three crystal structures, with slightly weaker electron density observed in the hydrophobic tail region indicating higher flexibility. The hydrophobic tail part is oriented towards the active site region, which varies most between CA isozymes (the so-called ‘hot spot’ for isozyme (isoform)-selective inhibitor design Alterio et al., 2009).
 
 There are two protein subunits in the CAI structure, the position of the modeled 21 is very similar in both. The electron density of the ligand is better in protein chain B. Sulfonamide group and modification of His67 with para-linker are visible. The fluorine atoms of the benzene ring also could be located clearly, but the electron density of the benzene ring is partially lost. This could be explained by partial occupancy of the modeled conformation of the inhibitor and by rotation of ligand fraction since the ligand is probably not fixed by the covalent bond with His67. The cyclooctyl group is visible in both subunits only partially due to the flexibility of the ring resulting in multiple conformations. This group is oriented towards the hydrophobic part of the active site, defined by Leu131, Ala135, Leu141, and Leu198.
 
-## Covalent interaction by mass spectrometry and enzymatic activity
+### Covalent interaction by mass spectrometry and enzymatic activity
 
 The mass spectra of CA isoforms incubated with compound 12 showed a 319 Da shift compared to pure CA isoforms (except CAIII), equal to compound 12 molar mass without the ester group (Table 2). Moreover, after a 3-min incubation of 1:1 molar ratio of compound 12 with CAXIII protein (29,575 Da), nearly half of the protein was already covalently modified in this time as shown by an additional 29,894 Da peak (319 Da shift, Figure 5A). After 2 hr of incubation, essentially entire protein fraction was covalently modified by the compound. The presence of the minor peak at 30,213 Da (638 Da shift) in Figure 5A indicates that there is a second modification site on CAXIII protein. Figure 5—figure supplements 1–20 show MS spectra after incubation under listed conditions of various CA isozymes with inhibitors.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-v1.jpg)
+
+**Figure 5.:** (A). MS spectra of CAXIII in the absence of compound (top panel), the presence of 1:1 molar ratio of compound 12 after 3-min incubation (middle panel) and 2 hr incubation (bottom panel). (B). MS spectra of CAIX in the absence of compound (top panel) and after the incubation of 1:1 molar ratio of compound 22 (carbamate) for 4 hours. (C). Enzymatic activity of CAIX before dialysis, while D) – after dialysis (32 hr, 4-times buffer change, black solid line – fully active CAIX, grey solid line – spontaneous CO2 hydration reaction (coincides with fully inhibited CAIX), blue solid line – CAIX with non-covalent 5, dotted red line – CAIX with covalent 20, and dashed green line – CAIX with covalent carbamate 22. The recombinant CAIX recovered almost full activity after dialyzing out the non-covalent compound, while the activity remained fully inhibited with the covalent compounds.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp1-v1.jpg)
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp2-v1.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp3-v1.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp4-v1.jpg)
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp5-v1.jpg)
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp6-v1.jpg)
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp7-v1.jpg)
+
+![Figure 5—figure supplement 8.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp8-v1.jpg)
+
+![Figure 5—figure supplement 9.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp9-v1.jpg)
+
+![Figure 5—figure supplement 10.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp10-v1.jpg)
+
+![Figure 5—figure supplement 11.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp11-v1.jpg)
+
+![Figure 5—figure supplement 12.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp12-v1.jpg)
+
+![Figure 5—figure supplement 13.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp13-v1.jpg)
+
+![Figure 5—figure supplement 14.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp14-v1.jpg)
+
+![Figure 5—figure supplement 15.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp15-v1.jpg)
+
+![Figure 5—figure supplement 16.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp16-v1.jpg)
+
+![Figure 5—figure supplement 17.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp17-v1.jpg)
+
+![Figure 5—figure supplement 18.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp18-v1.jpg)
+
+![Figure 5—figure supplement 19.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp19-v1.jpg)
+
+![Figure 5—figure supplement 20.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp20-v1.jpg)
+
+![Figure 5—figure supplement 21.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp21-v1.jpg)
+
+**Figure 5—figure supplement 21.:** Proteomic data show only one binding site of compound 12 (VD10-35-2) in the peptide K.IISNSGHSFNVDFDDTENK.S +VD10-35-2 (H).
+
+![Figure 5—figure supplement 22.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp22-v1.jpg)
+
+**Figure 5—figure supplement 22.:** The masses of the detected peptide fragments are marked in red.
+
+![Figure 5—figure supplement 23.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp23-v1.jpg)
+
+![Figure 5—figure supplement 24.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig5-figsupp24-v1.jpg)
+
+**Table 2.**
+ Carbonic anhydrase isozyme masses in the absence of compound and incubated with covalently-modifying compound 12.All CA isozymes except CAIII were covalently modified by compound 12 to a variable extent.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enzyme</th>
+      <th>Plasmid number</th>
+      <th>Theoretical MW</th>
+      <th>Obtained mass</th>
+      <th>Protein mass with compound 12, most intense peak m/z</th>
+      <th>Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CA I</td>
+      <td>pL0067</td>
+      <td>31204.7</td>
+      <td>31074.31 (w/o Met)</td>
+      <td>31393.63</td>
+      <td>319.32</td>
+    </tr>
+    <tr>
+      <td>CA II</td>
+      <td>pL0059</td>
+      <td>29246</td>
+      <td>29115.54 (w/o Met)</td>
+      <td>29434.81</td>
+      <td>319.27</td>
+    </tr>
+    <tr>
+      <td>CA III</td>
+      <td>pL0066</td>
+      <td>31648.9</td>
+      <td>31518.29 (w/o Met), 31696.34 (w/o Met and glycosylated)</td>
+      <td>31518.29 (w/o Met), 31696.34</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CA IV</td>
+      <td>pL0307</td>
+      <td>30454.6</td>
+      <td>30320.33 (w/o Met and S-S bridge)</td>
+      <td>30639.53</td>
+      <td>319.20</td>
+    </tr>
+    <tr>
+      <td>CA VA</td>
+      <td>pL0245</td>
+      <td>31285.3</td>
+      <td>31154.77 (w/o Met)</td>
+      <td>31474.07</td>
+      <td>319.30</td>
+    </tr>
+    <tr>
+      <td>CA VB</td>
+      <td>pL0173</td>
+      <td>34193.6</td>
+      <td>34063.56 (w/o Met)</td>
+      <td>34382.29</td>
+      <td>318.73</td>
+    </tr>
+    <tr>
+      <td>CA VI</td>
+      <td>pL0339</td>
+      <td>35367</td>
+      <td>35956.25 (glycosylated)36208.06(glycosylated)36412.74(glycosylated)37643.18(glycosylated)37934.87(glycosylated)</td>
+      <td>36275.1536528.4336731.4837962.2738254.18</td>
+      <td>318.90320.37318.74319.09319.31</td>
+    </tr>
+    <tr>
+      <td>CA VII</td>
+      <td>pL0137</td>
+      <td>31821.7</td>
+      <td>31689.57 (w/o Met)</td>
+      <td>32008.7332327.99</td>
+      <td>319.03638.42</td>
+    </tr>
+    <tr>
+      <td>CA IX</td>
+      <td>*</td>
+      <td>28061.7</td>
+      <td>28060.32</td>
+      <td>28379.58</td>
+      <td>319.26</td>
+    </tr>
+    <tr>
+      <td>CA XII</td>
+      <td>pL0119</td>
+      <td>29886.3</td>
+      <td>29754.54 (w/o Met)</td>
+      <td>30072.81</td>
+      <td>318.27</td>
+    </tr>
+    <tr>
+      <td>CA XIII</td>
+      <td>pL0058</td>
+      <td>29574.3</td>
+      <td>29574.69</td>
+      <td>29893.97</td>
+      <td>319.28</td>
+    </tr>
+    <tr>
+      <td>CA XIV</td>
+      <td>pL0318</td>
+      <td>32129.7</td>
+      <td>31997.12 (w/o Met)32175.25(w/o Met and glycosylated)</td>
+      <td>32316.3732494.53</td>
+      <td>319.25319.28</td>
+    </tr>
+  </tbody>
+</table>
+
+_*CA IX mutant C174S, N346Q, prepared in yeast as described in Leitans et al., 2015._
 
 The peptide mapping by digestion of the CAXIII with thrombin detected the compound 12 covalently bound exclusively to the peptide containing His64 residue (Figure 5—figure supplements 21 and 22). However, in the 1H-15N-HSQC 2D NMR spectrum, upon incubation of CAII isozyme at 1:1 molar ratio for 1 hr with covalent compound 12, in addition to the His64 signal change, we observed a decrease of peak intensity in the N-terminal part of CAII indicating an additional minor fraction of enzyme with covalently bound 12 outside CA active site (Figure 5—figure supplements 23 and 24). Thus, ester compound 12 may be too reactive for fully specific inhibition. The non-covalent compound 6 was incubated with CAII at a tenfold surplus of the compound, but no covalent modification was detected (Figure 5—figure supplement 16).
 
@@ -114,23 +460,62 @@ To determine the contribution of the primary sulfonamide group on the capability
 
 The presence of non-specific unintended covalent modifications prompted us to synthesize different covalently modifying groups that would be less reactive and more suitable for drug design, such as carbamate compounds 18 and 19, which showed significantly slower (at least by two orders of magnitude) covalent-modification activity compared to the ester compounds (Figure 5—figure supplement 19). Even using less reactive carbamates, CA isozymes were still able to make covalent bonds with more than one inhibitor molecule albeit in a much lower quantity.
 
-## Specific binding of covalent compounds to CAIX expressed on live cell surface
+### Specific binding of covalent compounds to CAIX expressed on live cell surface
 
 The HeLa cell culture was grown under hypoxia and shown to express CAIX on the cell surface reaching the concentration of 2–10 nM, determined by saturating with fluorescein-labeled compound GZ19-32 as previously described (Matulienė et al., 2022). Covalent compounds were added to the cell culture at various concentrations together with 10 nM of GZ19-32 that strongly and specifically binds CAIX. The tested covalent compounds competed for the binding to the CAIX active site in a dose-dependent manner (Figure 6). At high concentrations (e.g. 100 µM, 10,000-fold surplus over CAIX and GZ19-32), the compounds completely outcompeted the CAIX-specific GZ19-32. However, at low concentrations, around 10 nM, the compounds competed with GZ19-32 depending on the compound’s chemical nature. Thus, the covalent compounds were available for binding to CAIX and, most likely, did not bind to other proteins that are expected to be present in abundant quantities on the cell surface. These other proteins certainly have His residues that would have been modified if the non-specific binding occurred.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig6-v1.jpg)
 
-**Figure 6.:** 22 – green; 18 - orange; 24 – cyan; 20 – red, and 12 – black.The compounds competed with the fluorescein-labeled GZ19-32, added at 10 nM concentration to all samples. A competitive binding model was applied to obtain the affinities of tested compounds for cell-surface CAIX (Table 1).
+**Figure 6.:** The compounds competed with the fluorescein-labeled GZ19-32, added at 10 nM concentration to all samples. A competitive binding model was applied to obtain the affinities of tested compounds for cell-surface CAIX (Table 1).
 
 Several covalent compounds were chosen to demonstrate the importance of compound structural features for CAIX recognition in cell cultures. Two compounds 12 and 18 were para-substituted benzenesulfonamides, non-selective for CAIX. Compound 24 had a cyclododecyl amino substitution, selectively recognizing CAIX, but slightly too large for optimal binding and solubility. The 20 contains cyclooctylamine substitution at the meta position, exhibiting a high affinity for purified CAIX. Finally, 22 bore the cyclooctylamine substitution and the carbamate leaving group optimized for lower covalent modification activity compared to ester.
 
 All tested covalent compounds competed with the fluorescein-labeled GZ19-32 for the binding to cell surface CAIX in a dose-dependent manner. Their apparent dissociation constants, as determined by the competition with GZ19-32, are listed in Table 3. The para-substituted compounds that are non-selective for CAIX, bound weaker to cell-surface CAIX than the meta substitute-bearing CAIX-selective compounds. The ester compounds bearing both para and meta substitutions designed for CAIX recognition exhibited single-digit nanomolar affinities (4.0 nM for 24 and 1.8 nM for 20). However, carbamate compound 22 exhibited the strongest affinity (300 pM) for cell-surface CAIX among all tested compounds.
 
+**Table 3.**
+ Affinities (apparent dissociation constants Kd,app) of covalent compound binding to cell-expressed CAIX determined by applying a competitive binding model to data in Figure 6 as previously described (Matulienė et al., 2022).Parameters used in the competitive model were: the CAIX protein concentration was 5 nM (Pt = 5 nM), the dissociation constant of GZ19-32 was 150 pM (Kd_B = 150 pM), and the concentration of GZ19-32 was 10 nM (Lt_B = 10 nM).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>Kd,app_A, nM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>12</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>1.8</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>0.30</td>
+    </tr>
+  </tbody>
+</table>
+
 The carbamate compound 22 showed the highest affinity for cell-expressed CAIX and irreversibly covalently modified the protein in the active site, thus permanently inhibiting its enzymatic activity. Therefore, this compound is a leader among tested compounds to serve as an anticancer inhibitor of CAIX, highly expressed in hypoxic solid tumors.
 
-## Covalent compound binding apparent affinities to purified CA isozymes
+### Covalent compound binding apparent affinities to purified CA isozymes
 
-Covalent compounds formed an irreversible covalent bond with the protein molecule. This inhibition mode may occur in two stages. In the first stage, the inhibitor interacts with the enzyme due to its affinity to the targeted enzyme. Here, the affinity is determined by the primary sulfonamide group and the hydrophobic substituent in the meta position. The compound is still able to reversibly dissociate and its non-covalent binding affinity is quantified by the dissociation constant Kd, defined as the ratio of dissociation and association rate constants koff/kon:E+I⇌koffkonE⋅I→ktransE⋅A→kinactE−A
+Covalent compounds formed an irreversible covalent bond with the protein molecule. This inhibition mode may occur in two stages. In the first stage, the inhibitor interacts with the enzyme due to its affinity to the targeted enzyme. Here, the affinity is determined by the primary sulfonamide group and the hydrophobic substituent in the meta position. The compound is still able to reversibly dissociate and its non-covalent binding affinity is quantified by the dissociation constant Kd, defined as the ratio of dissociation and association rate constants koff/kon:
+
+$$
+E+I⇌k_{off}k_{on}E⋅I→k_{trans}E⋅A→k_{inact}E−A
+$$
 
 In the second stage, the pre-vinylsulfone compound is chemically transformed into the reactive vinylsulfone electrophile by a basic amino acid of the enzyme at a rate of ktrans. In the final reaction step, the vinylsulfone may form a covalent bond with the nucleophilic residue with a specific inactivation rate constant kinact. Since the vinylsulfone is highly reactive, ktrans must be rate-limiting and accounting for the apparent inactivation rate, much slower than for vinyl sulfone 15.
 
@@ -138,9 +523,467 @@ It is incorrect to state covalent compound affinities in terms of a conventional
 
 We applied the fluorescence-based thermal shift assay to determine the apparent dissociation constants Kd,app of covalent compounds to arrange them in the order of their apparent affinities (association rate constants). For example, the CAIX-specific covalent compound 22 bound with an extremely tight affinity, the apparent dissociation constant was determined to be 7.8 pM, the highest affinity among known CAIX-binding compounds. The thermal shift was over 18 °C and exhibited a typical flat dosing curve often observed for covalent compounds (Figure 7, Figure 7—figure supplements 1–9). There was a strong shift of the protein melting temperature caused by the compound but no further shift as observed in reversible non-covalent interactions. Using compound 18, we determined that the obtained apparent affinity constants were time-independent, meaning lower errors due to compound-protein incubation time and preparation for FTSA (Figure 7—figure supplements 10–15).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-v1.jpg)
+
+**Figure 7.:** (A) Raw FTSA data of compound 22 binding to CAIX (pH 7.0 for 37 °C). (B) Enzyme melting temperature dependence on compound 22 concentration. Datapoints saturated due to the covalent nature of interaction and therefore did not fully fit into the model line.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp2-v1.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp3-v1.jpg)
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp4-v1.jpg)
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp5-v1.jpg)
+
+![Figure 7—figure supplement 6.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp6-v1.jpg)
+
+![Figure 7—figure supplement 7.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp7-v1.jpg)
+
+![Figure 7—figure supplement 8.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp8-v1.jpg)
+
+![Figure 7—figure supplement 9.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp9-v1.jpg)
+
+![Figure 7—figure supplement 10.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp10-v1.jpg)
+
+![Figure 7—figure supplement 11.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp11-v1.jpg)
+
+![Figure 7—figure supplement 12.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp12-v1.jpg)
+
+![Figure 7—figure supplement 13.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp13-v1.jpg)
+
+![Figure 7—figure supplement 14.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp14-v1.jpg)
+
+![Figure 7—figure supplement 15.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig7-figsupp15-v1.jpg)
+
 The observed Kd,app values of all covalent compounds binding to CA isozymes were higher than those of its non-covalent analogs. For example, CAIX binds to the para-substituted esters 12 and 14, forming a covalent bond with the protein, up to 1000 times stronger than the non-covalent para-substituted compounds 1 and 3. Covalent compounds with meta-substituents 20–24 bind CAIX up to 10 times more strongly than their non-covalent analogs 10 and 11. The apparent dissociation constants of covalent compound binding to all 12 human catalytically active CA isozymes as determined by the fluorescence-based thermal shift assay are listed in Table 4. The apparent affinities of covalent compounds can be compared with the non-covalent reversibly-binding analog compounds and estimate the energetic contribution of the covalent bond.
 
-## Design of dual CAIX and CAXII-recognizing covalent compounds
+**Table 4.**
+ The apparent dissociation constants Kd,app (in nM units) for compound interaction with human recombinant CA isozymes as determined by fluorescence-based thermal shift assay (FTSA) at pH 7.0 for 37 °C.The values are logarithmic averages of several independent FTSA experiments.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Compound</th>
+      <th colspan="12">Kd,app, nM</th>
+    </tr>
+    <tr>
+      <th>CAI</th>
+      <th>CAII</th>
+      <th>CAIII</th>
+      <th>CAIV</th>
+      <th>CAVA</th>
+      <th>CAVB</th>
+      <th>CAVI</th>
+      <th>CAVII</th>
+      <th>CAIX</th>
+      <th>CAXII</th>
+      <th>CAXIII</th>
+      <th>CAXIV</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="13">Non-covalent</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>VD10-35</td>
+      <td>0.2</td>
+      <td>20</td>
+      <td>20,000</td>
+      <td>500</td>
+      <td>300</td>
+      <td>20</td>
+      <td>70</td>
+      <td>7</td>
+      <td>40</td>
+      <td>300</td>
+      <td>30</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>JA16-9-26</td>
+      <td>0.7</td>
+      <td>50</td>
+      <td>60,000</td>
+      <td>2000</td>
+      <td>600</td>
+      <td>5</td>
+      <td>400</td>
+      <td>20</td>
+      <td>5</td>
+      <td>500</td>
+      <td>100</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>AV19-64-1</td>
+      <td>0.6</td>
+      <td>20</td>
+      <td>20,000</td>
+      <td>700</td>
+      <td>200</td>
+      <td>2</td>
+      <td>200</td>
+      <td>1</td>
+      <td>50</td>
+      <td>600</td>
+      <td>2</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>AV21-05</td>
+      <td>1</td>
+      <td>10</td>
+      <td>≥200,000</td>
+      <td>700</td>
+      <td>70</td>
+      <td>8</td>
+      <td>300</td>
+      <td>3</td>
+      <td>20</td>
+      <td>200</td>
+      <td>10</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>AV19-36</td>
+      <td>0.2</td>
+      <td>10</td>
+      <td>50,000</td>
+      <td>700</td>
+      <td>200</td>
+      <td>20</td>
+      <td>700</td>
+      <td>5</td>
+      <td>20</td>
+      <td>200</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>AV20-08</td>
+      <td>60</td>
+      <td>70</td>
+      <td>2000</td>
+      <td>20</td>
+      <td>10</td>
+      <td>3000</td>
+      <td>1000</td>
+      <td>40</td>
+      <td>20</td>
+      <td>700</td>
+      <td>800</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>AV19-56</td>
+      <td>0.3</td>
+      <td>20</td>
+      <td>20,000</td>
+      <td>400</td>
+      <td>300</td>
+      <td>20</td>
+      <td>200</td>
+      <td>20</td>
+      <td>20</td>
+      <td>100</td>
+      <td>20</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>AV17-06</td>
+      <td>0.2</td>
+      <td>10</td>
+      <td>40,000</td>
+      <td>800</td>
+      <td>300</td>
+      <td>8</td>
+      <td>300</td>
+      <td>3</td>
+      <td>10</td>
+      <td>200</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>AV23-30-1</td>
+      <td>0.03</td>
+      <td>2</td>
+      <td>7000</td>
+      <td>100</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>1000</td>
+      <td>nd</td>
+      <td>3</td>
+      <td>40</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>AV17-30</td>
+      <td>4000</td>
+      <td>100</td>
+      <td>≥200,000</td>
+      <td>100</td>
+      <td>4000</td>
+      <td>20</td>
+      <td>400</td>
+      <td>30</td>
+      <td>0.1</td>
+      <td>10</td>
+      <td>20</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>VD11-4-2</td>
+      <td>800</td>
+      <td>60</td>
+      <td>30,000</td>
+      <td>60</td>
+      <td>3000</td>
+      <td>20</td>
+      <td>70</td>
+      <td>9</td>
+      <td>0.03</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="13">Covalent</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>VD10-35-2</td>
+      <td>0.003</td>
+      <td>0.2</td>
+      <td>30,000</td>
+      <td>10</td>
+      <td>2</td>
+      <td>100</td>
+      <td>0.1</td>
+      <td>0.007</td>
+      <td>0.03</td>
+      <td>0.03</td>
+      <td>0.01</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>VD18-02</td>
+      <td>50,000</td>
+      <td>300,000</td>
+      <td>≥1,000,000</td>
+      <td>≥1,000,000</td>
+      <td>≥1,000,000</td>
+      <td>≥1,000,000</td>
+      <td>≥1,000,000</td>
+      <td>≥1,000,000</td>
+      <td>300,000</td>
+      <td>300,000</td>
+      <td>≥1,000,000</td>
+      <td>30,000</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>AV21-03</td>
+      <td>0.003</td>
+      <td>0.07</td>
+      <td>40,000</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.01</td>
+      <td>0.05</td>
+      <td>0.002</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.003</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>AV22-48</td>
+      <td>0.007</td>
+      <td>0.3</td>
+      <td>30,000</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0.01</td>
+      <td>0.3</td>
+      <td>0.006</td>
+      <td>0.07</td>
+      <td>0.03</td>
+      <td>0.06</td>
+      <td>0.06</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>AV22-162</td>
+      <td>0.008</td>
+      <td>0.4</td>
+      <td>20,000</td>
+      <td>60</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>0.3</td>
+      <td>0.8</td>
+      <td>0.09</td>
+      <td>0.3</td>
+      <td>0.05</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>AV21-25</td>
+      <td>0.002</td>
+      <td>0.1</td>
+      <td>20,000</td>
+      <td>50</td>
+      <td>3</td>
+      <td>0.02</td>
+      <td>0.4</td>
+      <td>0.8</td>
+      <td>0.04</td>
+      <td>0.07</td>
+      <td>0.01</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>AV22-138</td>
+      <td>0.008</td>
+      <td>0.4</td>
+      <td>4000</td>
+      <td>20</td>
+      <td>1</td>
+      <td>0.005</td>
+      <td>0.1</td>
+      <td>0.4</td>
+      <td>0.04</td>
+      <td>0.1</td>
+      <td>0.02</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>AV23-04</td>
+      <td>0.003</td>
+      <td>0.3</td>
+      <td>nd</td>
+      <td>20</td>
+      <td>nd</td>
+      <td>nd</td>
+      <td>0.06</td>
+      <td>0.4</td>
+      <td>0.04</td>
+      <td>0.06</td>
+      <td>0.02</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>AV19-37</td>
+      <td>0.05*</td>
+      <td>0.8</td>
+      <td>≥200,000</td>
+      <td>1</td>
+      <td>500</td>
+      <td>4</td>
+      <td>10</td>
+      <td>0.04</td>
+      <td>0.004</td>
+      <td>0.02</td>
+      <td>0.02</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>AV21-08</td>
+      <td>0.005*</td>
+      <td>0.7</td>
+      <td>≥200,000</td>
+      <td>2</td>
+      <td>1000</td>
+      <td>0.02</td>
+      <td>3</td>
+      <td>0.2</td>
+      <td>0.002</td>
+      <td>0.01</td>
+      <td>0.005</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>AV22-149</td>
+      <td>0.01*</td>
+      <td>1</td>
+      <td>100,000</td>
+      <td>2</td>
+      <td>nd</td>
+      <td>0.1</td>
+      <td>40</td>
+      <td>80</td>
+      <td>0.008</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>AV21-47</td>
+      <td>10* or 0.02</td>
+      <td>1</td>
+      <td>≥200,000</td>
+      <td>0.2</td>
+      <td>5000</td>
+      <td>0.3</td>
+      <td>30</td>
+      <td>nd</td>
+      <td>0.003</td>
+      <td>0.1</td>
+      <td>0.02</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>AV22-132</td>
+      <td>20* or 0.02</td>
+      <td>2</td>
+      <td>≥200,000</td>
+      <td>4</td>
+      <td>3000</td>
+      <td>0.2</td>
+      <td>2000</td>
+      <td>nd</td>
+      <td>0.009</td>
+      <td>0.2</td>
+      <td>0.01</td>
+      <td>0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*2 different fluorescence shifts were observed of which the dominating one was used for kd,app determination._
+
+### Design of dual CAIX and CAXII-recognizing covalent compounds
 
 As shown above, compounds with a carbamate leaving group are better than ester groups. The carbamate compounds seemed to have a good balance to enhance interaction with CAIX via a covalent bond and, at the same time, should have sufficiently low reactivity to react with any unintended proteins. It has been demonstrated that, in some cancers, CAXII isozyme is overexpressed instead of CAIX and sometimes both of these isozymes are expressed. Therefore, a dual attack on CAIX and CAXII could be beneficial over a single CAIX interaction. At the same time, inhibition of the remaining 10 CA isozymes is expected to cause more harm than benefit.
 
@@ -168,43 +1011,43 @@ To assess the potential of covalent compounds for drug development, it is crucia
 
 ## Materials and methods
 
-## Enzyme purification
+### Enzyme purification
 
 All recombinant human CA isozymes were produced as described previously by using either bacterial or mammalian expression system (Dudutienė et al., 2014; Mickevičiūtė et al., 2019). For isozymes possessing transmembrane parts, only catalytic domains were produced. The production of the catalytic domain of CAIX in methylotrophic yeast Pichia pastoris was performed as described in Leitans et al., 2015. Protein purity was confirmed by SDS-PAGE, and MW was confirmed by mass spectrometry.
 
-## Fluorescent thermal shift assay (FTSA)
+### Fluorescent thermal shift assay (FTSA)
 
 Thermal unfolding experiments of the purified CA isozymes were carried out by a real-time PCR instrument, Rotor-Gene Q, containing six channels. Twofold serial dilutions of the 10 mM compound stock in DMSO were made by adding 10 μL of DMSO to 10 μL of each compound solution. Overall, 8 different compound concentration solutions were prepared, including the 10 mM compound stock concentration and a sample containing only DMSO, without a ligand. To prepare 12 different concentrations of the ligand, 1.5-fold serial dilutions of 10 mM compound stock were performed by adding 10 μL of DMSO to 20 μL of each compound solution (the last sample contained no ligand). Each prepared compound solution was diluted 12.5 times with the assay buffer 50 mM sodium phosphate (pH 7.0), 100 mM NaCl. The 10 μM CA isozyme solution (or 20 μM of CAIV) was prepared in the same assay buffer, which contained a reporter dye (200 μM ANS or 200 x diluted Glomelt). 5 μL of prepared CA solution with dye was added to the 100 μl of PCR tubes. Subsequently, 5 μL of the compound solution is added. The tubes are placed into the real-time thermocycler, and protein unfolding is measured by increasing the temperature from 25°C to 90°C, at the rate of 1 °C/min, and measuring the fluorescence of the dye. The raw data were analyzed to determine the Tm of the proteins. Tm values were plotted as a function of ligand concentration and the model was fitted to the dosing curves to obtain the binding affinities using Thermott software (Gedgaudas et al., 2022). Compound binding affinity and other thermodynamic data will be entered and freely available for download from the repository plbd.org (Protein-Ligand Binding Database; Lingė et al., 2023).
 
-## CAIX activity measurement by the stopped-flow assay
+### CAIX activity measurement by the stopped-flow assay
 
 CAIX activity was measured in the absence and presence of the compound before and after dialysis. 1.5 µM CAIX was incubated with 15 μM 20, 15 μM 22, or 100 µM 5 for 2 hr. The solution of CAIX without a compound and the CAIX-compound complexes were then dialyzed in 25 mM Tris buffer solution (pH = 7) containing 50 mM NaCl (by changing buffer four times every 8/16 hours). CO2 hydration velocities were measured by recording the absorbance of phenol red (final concentration 50 µM) at 557 nm using an Applied Photophysics SX.18MV-R stopped-flow spectrometer. Experiments were performed at 25 °C using 25 mM Hepes containing 50 mM NaCl, pH 7.5.
 
-## Mass spectrometry
+### Mass spectrometry
 
 Mass spectrometry experiments were performed with an electrospray ionization time-of-flight mass spectrometer (Q-TOF). The 0.1 mg/mL CA isozyme solution was prepared in the absence or presence of compounds (1:2; 1:5, or 1:10 CA isozyme: compound molar ratio). The solution was incubated for 1 hr at room temperature before analysis. The final DMSO concentration was 1% (v/v).
 
-## 2D NMR
+### 2D NMR
 
 All NMR spectra were recorded using a 600 MHz Bruker Avance Neo spectrometer equipped with a cryogenic probe. 2D 15N–1H HSQC spectra of 15N labeled CAII solution (270 µM 15 N CAII, 20 mM sodium phosphate buffer, 50 mM NaCl, 5% D2O, pH 6.8) were recorded at 25 °C using 256 increments in the indirect dimension and 8 scans. The spectra were recorded when the protein solution contained different concentrations of covalent ligand: 0.27 mM, 0.53 mM, 1.0 mM and 1.5 mM (the final DMSO concentration was 7.5%) or non-covalent ligand: 0.35 mM, 0.70 mM, 1.0 mM, 2.0 mM (the final DMSO concentration was 3%). The spectra were analyzed using Topspin 4.1.3 and CcpNMR 2.4.1 analysis software (Vranken et al., 2005).
 
-## HPLC analysis
+### HPLC analysis
 
 The HPLC separation was done as previously described (Sakalauskas et al., 2022). In brief, the samples were separated and analyzed using Shimadzu UFLC system with a CMB-20A communication module, two LC20AD quaternary and isocratic pumps, a SIL-20AC autosampler, a CTO-20A column compartment and an SPD-M20A DAD detector (Shimadzu Corp., Japan). For the detection of the eluting molecules, the DAD spectra recording was set from 190 to 750 nm with a data rate of 6.25 Hz. The ACE C18-PFP HPLC separation column (100x4.6, 3 µm, Avantor) was used as a stationary phase. The HPLC grade MeCN (Fisher Scientific) and Milli-Q water (18.2 MΩ cm−1, Milli-Q Plus system, Millipore Bedford, MA, USA) were used for the RP-HPLC separation.
 
 The samples were separated using a trinary gradient consisting of ultrapure water (eluent A), MeCN (eluent B), and 1% TFA in ultrapure water (eluent C). A constant 10% flow of eluent C was used to maintain 0.1% TFA concentration in the column throughout the separation experiment. The gradient between eluents A and B was 36% (0 min), 63% (20 min), and 63% (21 min). Before each analytical run, the column equilibration (10 column volume) was performed. The column thermostat was set to 40 °C and the flow rate to 1 mL min–1.
 
-## Protein-compound complex sample preparation for data-dependent analysis (DDA)
+### Protein-compound complex sample preparation for data-dependent analysis (DDA)
 
 The 0.1 mg/ml CAXIII solution was prepared with compound 12 (molar ratio 1:2 CAXIII: 12) and filter-aided sample preparation (FASP) (Wiśniewski et al., 2009) was used for protein digestion before mass spectrometry analyses.
 
-## Data-dependent analysis
+### Data-dependent analysis
 
 DDA was performed with the nanoAcquity coupled to a Synapt G2 HDMS mass spectrometer (Waters). For DDA, the instrument performed a 0.7 s MS scan (350–1350 scan range) followed by MS/MS acquisition on the top 5 ions with charge states 2+, 3+, and 4+. MS/MS scan range was 50–2000 Da, 0.6 s scan duration with exclusion after 2 MS/MS scans were acquired, and dynamic exclusion of ions within 100 mDa of the selected precursor m/z was set to 100 s.
 
 The Progenesis QI for proteomics software (Nonlinear Dynamics), in combination with the Mascot server (2.2.07) was employed to identify peptides. The acquired raw files were imported into the Progenesis QI for proteomics software and MS2 spectra were exported directly from Progenesis in mgf format and searched using the MASCOT algorithm.
 
-## Crystallization and structure solution
+### Crystallization and structure solution
 
 Human CAI in buffer containing 20 mM HEPES pH 7.6 and 50 mM NaCl was mixed with the 21 in DMSO in the ratio 1:1.1 and incubated for 2.5 hr at room temperature. The protein-21 complex was concentrated at 30 mg/ml, and crystallization in sitting drops was started. The crystallization solution contained 0.1 M Tris-HCl pH 8.5, 0.2 M NaCl, and 28% (w/v) PEG3350. Before cryo-cooling crystal was shortly incubated in cryo-protection buffer containing 0.1 M TrisHCl pH8.5, 15% (w/v) PEG8000, and 20% (v/v) Ethylene glycol. The synchrotron data was collected at beamline P13 operated by EMBL Hamburg at the PETRA III storage ring (DESY, Hamburg, Germany).
 
@@ -218,27 +1061,21 @@ The dataset of the CAIX-ligand complex was collected at the Diamond Light Source
 
 Model refinement was performed with REFMAC (Murshudov et al., 2011), and the structures were visualized using COOT (Emsley et al., 2010). Ligand parameter files were generated using LIBCHECK (Lebedev et al., 2012), and the ligand was manually fitted to the electron density map in COOT (Emsley et al., 2010). The coordinates and structure factors have been deposited in the PDB. Table ST1 provides the PDB access code, data collection, and refinement statistics.
 
-## Determination of compound Kd values for cellular CAIX
+### Determination of compound Kd values for cellular CAIX
 
 Human cervical adenocarcinoma cells (HeLa) were cultured in Dulbecco’s Modified Eagle’s Medium (DMEM) with GlutaMAX (Gibco, ThermoFisher) supplemented with 10% fetal bovine serum (ThermoFisher) in a humidified atmosphere at 37 °C and 5% CO2.
 
 A covalent compound competition experiment with fluorescein-labeled compound GZ19-32 was conducted as described previously (Matulienė et al., 2022). In brief, HeLa cells were cultivated in DMEM in 12-well plates under hypoxic conditions (1% O2) for 72 hr. The 10 serial twofold dilutions of covalent compounds were prepared in FluoroBrite DMEM (ThermoFisher) starting with 80 nM (1st tube). No compound was added to the last 12th tube (it contained FluoroBrite only). Subsequently, the same volume of 20 nM GZ19-32 was added to each of the 12 tubes and mixed. Cell culture medium was removed from all 12 wells with HeLa cells and 200 µl of prepared compound mixtures were added, followed by 20 min incubation at 37 ℃ under normoxic conditions (21% O2). Post-incubation, the compound solutions were aspirated, and the cells were washed 3 times with 400 µl of PBS. Finally, the cells were detached from the well plate surface by TrypLE (ThermoFisher), resuspended by pipetting in 200 µl of FluoroBrite DMEM, and 150 µl of the suspension was transferred to black Thermo Scientific Nunc MicroWell 96-Well Optical-Bottom Plates for fluorescence and absorbance measurements.
 
-## Compound synthesis
+### Compound synthesis
 
 Compound numbering includes the intermediate compounds, and, therefore, there are two numbering systems. Compounds are marked with x to help visualize the path of synthesis and the numbered compounds are listed in the brackets. Chemical compounds may be provided upon reasonable request for research purposes if available in stock. Compound synthesis paths are shown in Figures 9—11.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig9-v1.jpg)
 
-**Figure 9.:** 5ax-fx, 7x, 8x, 10x, 11x, 14x, and 16x.
-
 ![Figure 10.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig10-v1.jpg)
 
-**Figure 10.:** 21x.
-
 ![Figure 11.](https://cdn.elifesciences.org/articles/101401/elife-101401-fig11-v1.jpg)
-
-**Figure 11.:** 24 ax, 24bx, 27 ax, 27bx, 28 ax, 28bx, 30 x, and 31 x.
 
 All starting materials and reagents were commercially available or prepared according to known procedures. Melting points of the compounds were determined in open capillaries on a Thermo Scientific 9100 Series and are uncorrected. 1H and 13C NMR spectra were recorded on a Bruker spectrometer (400 and 100 MHz, respectively) in DMSO-D6 or CDCl3 using residual DMSO, CDCl3 signals (2.50 ppm, 7.26 ppm, and 39.52 ppm, 77.16 ppm for 1H and 13C NMR spectra, respectively) as the internal standard. 19F NMR spectra were recorded on a Bruker spectrometer (376 MHz) with CFCl3 as an internal standard. TLC was performed with silica gel 60 F254 aluminum plates (Merck) and visualized with UV light. Column chromatography was performed using silica gel 60 (0.040–0.063 mm, Merck). High-resolution mass spectra (HRMS) were recorded on a Dual-ESI Q-TOF 6520 mass spectrometer (Agilent Technologies). Compound IUPAC names were generated with ChemDraw ultra 12.0.
 

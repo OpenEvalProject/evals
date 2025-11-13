@@ -16,18 +16,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0220mzb33 Centre for Craniofacial and Regenerative Biology, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom
-2. https://ror.org/0220mzb33 Department of Endodontics, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom
-3. https://ror.org/00j161312 NIHR BRC Genomics Research Platform, Guy’s and St Thomas’ NHS Foundation Trust, King’s College London School of Medicine, Guy’s Hospital London United Kingdom
-4. https://ror.org/0220mzb33 Department of Periodontology, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom
-5. https://ror.org/05n8ah907 Unilever R&D, Colworth Science Park Sharnbrook United Kingdom
-6. https://ror.org/0157za327 Laboratory of Odontogenesis and Osteogenesis, Institute of Animal Physiology and Genetics Brno Czech Republic
+1. Centre for Craniofacial and Regenerative Biology, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+2. Department of Endodontics, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+3. NIHR BRC Genomics Research Platform, Guy’s and St Thomas’ NHS Foundation Trust, King’s College London School of Medicine, Guy’s Hospital London United Kingdom ([ROR:00j161312](https://ror.org/00j161312))
+4. Department of Periodontology, Faculty of Dentistry, Oral & Craniofacial Sciences, King’s College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+5. Unilever R&D, Colworth Science Park Sharnbrook United Kingdom ([ROR:05n8ah907](https://ror.org/05n8ah907))
+6. Laboratory of Odontogenesis and Osteogenesis, Institute of Animal Physiology and Genetics Brno Czech Republic ([ROR:0157za327](https://ror.org/0157za327))
 
 † Corresponding author
 
 ## Abstract
 
-The interplay among different cells in a tissue is essential for maintaining homeostasis. Although disease states have been traditionally attributed to individual cell types, increasing evidence and new therapeutic options have demonstrated the primary role of multicellular functions to understand health and disease, opening new avenues to understand pathogenesis and develop new treatment strategies. We recently described the cellular composition and dynamics of the human oral mucosa; however, the spatial arrangement of cells is needed to better understand a morphologically complex tissue. Here, we link single-cell RNA sequencing, spatial transcriptomics, and high-resolution multiplex fluorescence in situ hybridisation to characterise human oral mucosa in health and oral chronic inflammatory disease. We deconvolved expression for resolution enhancement of spatial transcriptomic data and defined highly specialised epithelial and stromal compartments describing location-specific immune programs. Furthermore, we spatially mapped a rare pathogenic fibroblast population localised in a highly immunogenic region, responsible for lymphocyte recruitment through CXCL8 and CXCL10 and with a possible role in pathological angiogenesis through ALOX5AP . Collectively, our study provides a comprehensive reference for the study of oral chronic disease pathogenesis.
+The interplay among different cells in a tissue is essential for maintaining homeostasis. Although disease states have been traditionally attributed to individual cell types, increasing evidence and new therapeutic options have demonstrated the primary role of multicellular functions to understand health and disease, opening new avenues to understand pathogenesis and develop new treatment strategies. We recently described the cellular composition and dynamics of the human oral mucosa; however, the spatial arrangement of cells is needed to better understand a morphologically complex tissue. Here, we link single-cell RNA sequencing, spatial transcriptomics, and high-resolution multiplex fluorescence in situ hybridisation to characterise human oral mucosa in health and oral chronic inflammatory disease. We deconvolved expression for resolution enhancement of spatial transcriptomic data and defined highly specialised epithelial and stromal compartments describing location-specific immune programs. Furthermore, we spatially mapped a rare pathogenic fibroblast population localised in a highly immunogenic region, responsible for lymphocyte recruitment through CXCL8 and CXCL10 and with a possible role in pathological angiogenesis through ALOX5AP. Collectively, our study provides a comprehensive reference for the study of oral chronic disease pathogenesis.
 
 ## Introduction
 
@@ -41,9 +41,21 @@ In this study, we aimed to understand how oral mucosa tissue organisation (struc
 
 ## Results
 
-## Molecular spatial reconstruction of the human oral mucosa in health
+### Molecular spatial reconstruction of the human oral mucosa in health
 
 The function of many biological systems depends on the spatial organisation of their cells; genes need to be properly regulated in space for a system to function. To systematically study the spatial patterns of gene expression of human oral mucosa that we previously described (Caetano et al., 2021) and understand in situ tissue organisation, healthy human oral mucosa samples were analysed by spatial transcriptomics (ST) (10X Genomics Visium) (Figure 1A). Two distinct anatomical locations were used in our analyses – buccal (anterior; Figure 1B–F) and palatal (posterior; Figure 1—figure supplement 1) from three individuals. In each experiment, 10-µm-thick paraffin and 15-µm-thick cryosection slices from five individual healthy samples in total were analysed. We generated two technical replicates for two biological replicates to understand technical variability and no major differences were detected (Figure 1—figure supplements 1 and 2). Sequencing data were processed and integrated to generate spatial transcriptomes of each section. Typically, this captured more than 40,000 mean reads under tissue per spot representing over 2000 genes per 55 µm spot. We then performed unsupervised clustering, and clusters were associated with tissue structure, followed by manual validation and annotation.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of study design for human oral mucosa. A total of nine tissue sections from seven distinct patients were sequenced and analysed. (B) Haematoxylin and eosin (H&E) image of a representative healthy oral mucosa section demonstrating general tissue morphology and demarcation between the two major tissue compartments, epithelium and connective tissue. Scale bar: 1 mm. (C) Human oral mucosa regions present in the assayed section. (D) Anatomical annotation of unbiased transcriptional tissue regions. (E) Markers of tissue compartment-specific genes used for tissue annotation showing percent of expressing cells (circle size) and average expression (colour) of gene markers (rows) across compartments (columns). (F) Connective tissue (lamina propria) heterogeneity Gene Ontology (GO) analyses showing subepithelial region enrichment for epithelium development and deep reticular region enriched for extracellular matrix (ECM) terms.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Consecutive sections used as technical replicates for ST analyses. (B) UMAP plot of spot transcriptome clusters from the two merged sections. (C) High-resolution clustering of the same assayed patient sample (palatal). (D) Anatomical annotation. (E) Heatmap of the mean expression of the most differentially expressed marker genes for each cluster identified in (A). (F) Heatmap of the mean expression of the most differentially expressed marker genes for each cluster identified related to Figure 1B–E. (G) Heatmap of the mean expression of the most differentially expressed marker genes for each cluster identified related to Figure 2B–E.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) UMAP plot of spot transcriptome clusters from patient 43 (health) on the left; clusters are visualised on tissue covered slide areas (centre). High-resolution clustering at subspot level on the right. (B) UMAP plot of spot transcriptome clusters from patient 43 technical replicate (health) on the left; clusters are visualised on tissue covered slide areas (centre). High-resolution clustering at subspot level on the right. (C) UMAP plot of spot transcriptome clusters from patient 35 (disease) on the left; clusters are visualised on tissue-covered slide areas (centre). High-resolution clustering at subspot level on the right. (D) UMAP plot of spot transcriptome clusters from patients 41 and 7 (disease) on the left; clusters are visualised on tissue-covered slide areas (centre). High-resolution clustering at subspot level on the right.
 
 Analyses of transcriptional signatures of ST spots identified between 4 and 10 oral mucosa compartments in each slide, which mapped to distinct locations and allowed us to define anatomical regions from a molecular perspective (Figure 1C–E, Figure 1—figure supplements 1 and 2, Figure 1—source data 1, Figure 2—source data 1).
 
@@ -51,17 +63,17 @@ Since ST spots measure 55 µm, these contain multiple cell types. To address thi
 
 Altogether, our analyses yield the first comprehensive molecular in situ description of the human oral mucosa in health, with the discovery of transcriptionally distinct regions.
 
-## Remodelling of the human oral mucosa structure in oral chronic inflammatory disease
+### Remodelling of the human oral mucosa structure in oral chronic inflammatory disease
 
 To understand how tissue organisation is reshaped in disease, we investigated changes in tissue organisation and gene expression in patients with periodontal disease. We again undertook ST (10X Visium) on tissue from four different patient samples. Analyses of transcriptional signatures of ST spots identified between 5 and 10 spot clusters in each slide, which again mapped to discreet anatomical locations (Figure 2A–E). We readily identified similar cluster regions as detected in healthy mucosa, and we observed hallmarks of a pro-inflammatory tissue microenvironment in disease (Figure 2E, Figure 1—figure supplement 1, Figure 2—source data 1). To validate the spatial transcriptomes that we obtained, we compared spatial expression patterns of top marker genes of oral mucosa tissue with known tissue markers. The spatial patterns of these transcripts matched well with those of immunohistochemistry (IHC) results (Figure 2F). We also observed several disease-associated changes in the stromal compartment, exemplified by an overall upregulation of pro-inflammatory gene signatures (Figure 2E, Figure 1—figure supplement 1, Figure 2—source data 1), and upregulation of genes involved in vascular transport (CXCL12) and blood vessel morphogenesis (CLDN5, TAGLN) (Figure 2E). These results support the hypothesis that tissue-specific properties reflect local organisation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig2-v2.jpg)
 
-**Figure 2.:** (A) Schematic illustration of the human oral mucosa showing the different epithelial regions, oral epithelium (OE), oral sulcular epithelium (OSE), and junctional epithelium (JE). Created with Biorender. (B) H&E image of the representative inflamed oral mucosa section demonstrating demarcation between the distinct epithelia, and connective tissue region. (C) Human oral mucosa regions present in the assayed section using BayesSpace. (D) Anatomical annotation of unbiased transcriptional tissue regions. (E) Markers of tissue compartment differentially expressed genes used for tissue annotation showing percent of expressing cells (circle size) and average expression (colour) of gene markers (rows) across compartments (columns). (F) Immunofluorescence image validation stained for KRT14 and KRT76 (representative image, n = 3 samples). Scale bars: 100 µm. (G) Mapping of periodontitis risk genes showing VAMP8, CDKN2B, IL1A, and IL1B restricted expression in the junctional epithelium region.Figure 2—source data 1.Figure 2).
+**Figure 2.:** (A) Schematic illustration of the human oral mucosa showing the different epithelial regions, oral epithelium (OE), oral sulcular epithelium (OSE), and junctional epithelium (JE). Created with Biorender. (B) H&E image of the representative inflamed oral mucosa section demonstrating demarcation between the distinct epithelia, and connective tissue region. (C) Human oral mucosa regions present in the assayed section using BayesSpace. (D) Anatomical annotation of unbiased transcriptional tissue regions. (E) Markers of tissue compartment differentially expressed genes used for tissue annotation showing percent of expressing cells (circle size) and average expression (colour) of gene markers (rows) across compartments (columns). (F) Immunofluorescence image validation stained for KRT14 and KRT76 (representative image, n = 3 samples). Scale bars: 100 µm. (G) Mapping of periodontitis risk genes showing VAMP8, CDKN2B, IL1A, and IL1B restricted expression in the junctional epithelium region.
 
 To reveal transcriptional defects that might drive disease pathogenesis, we investigated spatial gene expression of genes known to be linked to periodontitis susceptibility from recent GWAS that revealed single-nucleotide polymorphisms (Caetano et al., 2022; Nibali et al., 2019). Mapping of 21 known disease genes with our spatial data allowed us to link genotypes with phenotypes that likely manifest through highly cell-type and location-specific defects and result in pathology. From these, CDKN2B, IL1A, IL1B, and VAMP8 specifically localised in the junctional epithelium region (Figure 2G). In summary, our analysis suggests that dysfunctional junctional epithelium might be a major driver of periodontal disease pathogenesis.
 
-## Human oral epithelia regional heterogeneity
+### Human oral epithelia regional heterogeneity
 
 The most fundamental function of an epithelial tissue is to act as a barrier; the gingival epithelium can be divided into three distinct anatomical regions – oral (OE), sulcular (OSE), and junctional epithelium (JE) (Figure 3A). In health, the JE attaches to the tooth, providing a seal against oral microorganisms, thus having a profound role in the innate response. Breakdown of this attachment results in loss of periodontal ligament, alveolar bone resorption, and often, tooth loss. Despite recent evidence of epithelial proliferative and stem cell heterogeneity in mouse models (Byrd et al., 2019; Tanaka et al., 2021; Yuan et al., 2021), to date it has not been possible to distinguish between these regions at a transcriptional level.
 
@@ -77,27 +89,55 @@ We also analysed the basal proliferative epithelial progenitor layer, which show
 
 Furthermore, distinct stromal regions also clustered adjacent to the different epithelial regions similar to healthy samples, suggestive of playing a part in epithelial specification or dysregulation (Figure 3D). Within the junctional epithelium area, we observed a distinct pro-inflammatory stromal signature with specific expression of genes involved in ‘neutrophil activation’ and ‘neutrophil degranulation’ (Figure 3D; Figure 1—figure supplement 1); whereas, the stromal sulcular epithelium region showed genes involved in angiogenesis (Figure 3D, Figure 1—figure supplement 1).
 
-## Stromal–immune–endothelial interactions characterise diseased tissue microenvironment
+### Stromal–immune–endothelial interactions characterise diseased tissue microenvironment
 
 Cell–cell interactions are the basis of organ development, homeostasis, and disease (Bonnans et al., 2014; Rouault and Hakim, 2012; Tucker and Sharpe, 2004). To investigate how surrounding cells may shape signalling in the oral mucosa across health and disease, we used a cell–cell communication pipeline that considers spatial cellular colocalisation when mapping ligand–receptor pairs (Dries et al., 2021). This method can identify which ligand–receptor pairs are potentially more or less active when cells from two cell types are spatially adjacent to each other. Thus, we generated a spatial neighbourhood network (Figure 4A), where in health we observed dominant interactions between suprabasal and basal epithelial layers (MMP9-LRP1; ADAM17-NOTCH1) (Figure 4A and B, Figure 4—figure supplement 1). In disease, we see the emergence of several stromal region interactions, particularly reticular regions (Figure 4A), whereas in health these interactions are downregulated (Figure 4A). Furthermore, we see a downregulation of endothelial–subepithelial interactions in health (VWF-LRP1, MMP9-LRP1), and in disease, the junctional epithelium shows pro-inflammatory interactions with the adjacent stroma (NRG1-EGFR, LRIG1-EGFR, TGFA-EGFR). Collectively, these findings suggest that stromal/immune/endothelial interactions are dominant in disease, whereas structural non-immune interactions shape tissue physiology. Understanding interactions may enable therapeutic modulation to promote immune tolerance in chronic inflammation.
 
-## Spatial location of oral mucosa single cells in health and chronic inflammation
+![Figure 4.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig4-v2.jpg)
+
+**Figure 4.:** (A) Network representation of the pairwise interacting regions identified by Giotto Analyzer (Dries et al., 2021), whereby it evaluates the enrichment of the frequency that each pair of regions is proximal to each other. Enriched interactions are depicted in red. We observed strongest interactions within epithelial layers in health, whereas in disease stromal regions interactions emerge. (B) Dotplot for ligand–receptor pairs that exhibit differential cell–cell communication scores due to spatial cell–cell interactions. The size of the dot is correlated with the adjusted p value, and the colour indicates increased (red) or decreased (blue) activity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Spatial plot with annotated tissue regions (left) and dotplot for ligand–receptor pairs that exhibit differential cell–cell communication scores due to spatial cell–cell interactions (left) for patient 36. (B) Spatial plot with annotated tissue regions (left) and dotplot for ligand–receptor pairs that exhibit differential cell–cell communication scores due to spatial cell–cell interactions (left) for patient 30.
+
+### Spatial location of oral mucosa single cells in health and chronic inflammation
 
 Upon further examination of the oral mucosa spatial features, clusters revealed high cell type complexity. Thus, to dissect cell type composition, we first integrated our previously generated scRNA-seq dataset with the spatial transcriptome data (Figure 5—figure supplement 1). This localised well-characterised cell types, such as proliferative epithelial cells mapped at the basal epithelial layer, and suprabasal keratinocytes in the suprabasal layer. Next, we used our previously generated high-resolution clustering to map well-characterised cell types to understand whether this strategy could reliably map fine-grained or less characterised cell types. In brief, we examined the expression of cell type-specific marker genes at the spot level and after enhancement. We aggregated the expression of marker genes within each cell type from the literature (Caetano et al., 2021; Huang et al., 2021; Williams et al., 2021) by summing their log-normalised expression (Figure 5A and B, Figure 5—figure supplement 2). We observed that this method accurately maps oral mucosa cell types, and we were able to detect cell types that went undetected in our reference scRNA-seq dataset, such as melanocytes (Figure 5A). Importantly, we observed a substantial increase in endothelial cell expression and distribution in the oral subepithelial and reticular stroma, which contradicts our scRNA-seq analysis alone emphasising the need to complement single-cell analyses with other data modalities. We then applied this method to understand immune cell composition, organisation, and abundance patterns. Again, we were able to detect fine-grained immune cell types that went undetected in our reference dataset, such as γδ T cells and Tregs (Figure 5B, Figure 5—figure supplement 2). Overall, we observed an increase in most immune cell types, particularly of macrophages and γδ T cells. The latter were found in sulcular and junctional epithelial regions. B cells differences were less evident; however, this was expected as these disease samples had a mild inflammatory phenotype to retain tissue architecture integrity for analysis. Flow cytometry studies have reported that there is a significant recruitment of neutrophils in disease (Dutzan et al., 2016) however, in our previous work and in subsequent studies (Huang et al., 2021; Williams et al., 2021), scRNA-seq was insufficient in characterising these cells. Here, we were able to map these cells and observed a significant increase in disease as reported previously (Dutzan et al., 2016).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig5-v2.jpg)
+
+**Figure 5.:** (A) Spatial expression of genes encoding for main human oral mucosa cell types. We selected the top differentially expressed genes for each cell type and predicted their expression at subspot resolution xgboost in BayesSpace. H&E staining shown here for clarity. (B) Spatial mapping of immune cell types showing overall increase in disease. (C) Neutrophils mapping using expression of CXCR2 and FCGR3B.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Probabilistic classification for epithelial, stromal, endothelial, and perivascular scRNA-sequencing derived classes for patient 36 (health). (B) Probabilistic classification for epithelial, stromal, endothelial, and perivascular scRNA-sequencing derived classes for patient 30 (disease).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Spatial expression of genes encoding for main human oral mucosa cell types. We selected the top differentially expressed genes for each cell type and predicted their expression at subspot resolution xgboost in BayesSpace.
+
 In short, changes in the immune profile agreed with an initial immune response of a significant infiltration of myeloid cells and lymphocytes, and importantly, composition changes also follow changes in spatial distribution.
 
-## Spatial identification of regional fibroblast subtypes
+### Spatial identification of regional fibroblast subtypes
 
 Next, we used our datasets for mapping fine-grained cell types in the oral mucosa. We focused on the heterogeneity of fibroblasts which remain largely functionally undefined despite their integral role in shaping tissue homeostasis and disease processes (Davidson et al., 2021). Single-cell technologies have changed our ability to study the molecular properties of these cells; however, their positional specification remains limited due to difficulties in specifying them since they share many common markers.
 
 To identify regionally enriched fibroblasts, we first annotated and spatially mapped five molecularly distinct fibroblast subtypes that were identified based on our scRNA-seq reference. In brief, we considered fibroblast 1–5 in our initial analysis. We then applied the ‘anchor’-based integration from Seurat to merge these cells across all seven Visium datasets to obtain prediction scores for each spot for each class of fibroblast. Only three of the five subtypes mapped into our spatial data; therefore, we used BayesSpace to map all subtypes using Seurat differential gene expression markers data (Figure 6A, Figure 6—figure supplement 1). The extent of molecular heterogeneity across these subtypes (measured by the number of marker genes) is as expected lower than that across different broad cell types, demonstrating the transcriptionally fine-grained nature of these cell populations. We identified subtypes that were spatially enriched in the reticular (Fb1, Fb3), subepithelial (Fb2), and immune enriched regions (Fb4, Fb5). This mapping largely confirmed previous spatial predictions based on their individual transcriptome (Figure 6A). Fibroblast 2 (GREM1+, SFRP1+) showed an increased spatial enrichment in the subepithelial region compared to the other subtypes, and a substantial enrichment in the sulcular stroma, suggestive of a role in epithelial maintenance. To further understand this, we investigated how this population and epithelial cells interact with each other by using a ligand–receptor pipeline (Browaeys et al., 2020); this analysis predicted RSPO1, CLEC11A, and FLRT2 as top ranked ligands expressed by Fb2 based on target genes expressed by epithelial cells (Figure 6D). Thus, in human oral mucosa, Fb2 fibroblasts may be required for epithelial niche maintenance.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig6-v2.jpg)
+
+**Figure 6.:** (A) Human oral mucosa fibroblast spatial mapping in health and disease. We used the top differentially expressed genes for each cell type and predicted their expression with BayesSpace. (B) Percentage of selected fibroblast abundance changes across conditions shown as a bar plot from single-cell RNA sequencing data. (C) Dotplot showing markers of fibroblast differentially expressed genes showing percent of expressing cells (circle size) and average expression (colour) of gene markers (rows) across cells (columns). (D) Dotplot showing top predicted ligands expressed by fibroblast types predicted to modulate the epithelial basal layer. (E) Fibroblast 5 spatial mapping and co-localisation with immune cell types, B cells, T cells, and macrophages. (F) Gene Ontology biological process term enrichment plot for fibroblast 5. Cluster markers were obtained using the non-parametric two-sided Wilcoxon rank-sum test in Seurat. Gene enrichment analysis was performed with the topGO package in R using the Kolmogorov–Smirnov statistical test. (G) Representative spatial mapping of CXCL8 and CXCL10 in health and disease showing co-localisation in fibroblast 5 region and increase in disease.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Human oral mucosa fibroblast spatial mapping. We used the top differentially expressed genes for each cell type and predicted their expression with BayesSpace.
+
 Both fibroblasts 4 and 5 localised in immune enriched areas, which confirmed their potential role in immune regulation with enrichment for various cytokine-mediated signalling pathways, IFNγ signalling, and pathways involved in T-cell activation (Figure 6A and E, Figure 6—figure supplement 1).
 
 Overall, these results follow previous evidence of location-specific transcriptional programmes that reflect the individual functional requirements of the surrounding tissue, and which were shown to be imprinted during development by epigenetic regulation of HOX genes (Frank-Bertoncelj et al., 2017).
 
-## Rare pathogenic fibroblasts are location-specific and control lymphocyte recruitment and blood progenitor development
+### Rare pathogenic fibroblasts are location-specific and control lymphocyte recruitment and blood progenitor development
 
 Although there are common mechanisms that fibroblasts use to regulate tissue immunity across diseases, others are unique to a single disease or anatomical location, and consequently defined by their local tissue environment (Davidson et al., 2021). Thus, we focused on fibroblast 5, which represented a rare cell population (<1%) in our reference dataset, and which was found markedly increased in disease and barely detected in healthy patients (Figure 6B). These fibroblasts were mainly located in regions that co-localised with other immune cell types, and are characterised by expression of RAC2, LCP1, and TNFRS11B, a negative regulator of bone resorption and key regulator of osteoclast activity as previously described (Figure 6B–E). Overall, this population shows enrichment of genes involved in ‘cytokine production’, ‘immune response’, and ‘T-cell activation’ (Figure 6F). This immune-effector profile is also shown by a higher expression of chemokines such as CXCL8 and CXCL10, and ALOX5AP, which encodes arachidonate 5-lipoxygenase-activating protein. To support this, we mapped these in our ST data, and these co-localised in the same immunogenic region as Fb5, macrophages, and B cells (Figure 6G), adjacent to the junctional epithelium region. CXCL8 is known to mediate and guide neutrophil recruitment (de Oliveira et al., 2013), whilst also being a potent angiogenic factor (Heidemann et al., 2003). CXCL10, also known as interferon-gamma-inducible protein 10, is secreted in response to IFN-γ and binds to its receptor CXCR3 regulating immune responses through recruitment of monocytes/macrophages, T cells, NK cells, and dendritic cells (Lee et al., 2009; Rotondi et al., 2007). ALOX5AP occupies a central role in the production of leukotrienes from arachidonic acid, and recently it was found to regulate blood progenitor formation (Ibarra-Soria et al., 2018).
 
@@ -105,7 +145,7 @@ We validated the identity, distribution, and co-localisation of fibroblast 5 wit
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81525/elife-81525-fig7-v2.jpg)
 
-**Figure 7.:** In vivo validation of fibroblast 5 co-localisation with immune cells.(A) Single-cell RNA sequencing integration with spatial data using ‘anchor’-based integration workflow in Seurat to enable a prediction score for each spot for fibroblast 5. Based on this prediction score, fibroblast 5 is confirmed spatially restricted. (B) Multiplex mRNA in situ hybridisation of a representative section of human oral mucosa using specific probes against RAC2 and LCP1 (fibroblast 5 markers), CD14 (macrophages), and CD79A (B cells) to validate in vivo localisation of fibroblast 5 and immune cell populations. Scale bars: 250 µm. (C) Schematic illustration of our proposed model summarising pathogenic fibroblast population role in human oral chronic disease. Created with Biorender.
+**Figure 7.:** (A) Single-cell RNA sequencing integration with spatial data using ‘anchor’-based integration workflow in Seurat to enable a prediction score for each spot for fibroblast 5. Based on this prediction score, fibroblast 5 is confirmed spatially restricted. (B) Multiplex mRNA in situ hybridisation of a representative section of human oral mucosa using specific probes against RAC2 and LCP1 (fibroblast 5 markers), CD14 (macrophages), and CD79A (B cells) to validate in vivo localisation of fibroblast 5 and immune cell populations. Scale bars: 250 µm. (C) Schematic illustration of our proposed model summarising pathogenic fibroblast population role in human oral chronic disease. Created with Biorender.
 
 Collectively, these results spatially define fibroblast subsets and identify a rare pathogenic fibroblast subset engaged in immune cell recruitment and formation of blood progenitor cells.
 
@@ -125,11 +165,133 @@ Finally, we focused on mapping a rare pro-inflammatory fibroblast subtype that w
 
 ## Materials and methods
 
-## Tissue handling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (human)</td>
+      <td>Oral mucosa biopsies</td>
+      <td>Periodontology department, King’s College London</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KRT14 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab7800; RRID:AB_306091</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KRT76 (rabbit polyclonal)</td>
+      <td>Atlas Antibodies</td>
+      <td>Cat# HPA019656</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Visium Gene Expression Slide Kit, 4 rxns</td>
+      <td>10X Genomics</td>
+      <td>10X-100187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Visium Gene Expression Slide Kit, 4 rxns</td>
+      <td>10X Genomics</td>
+      <td>10X-100338</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent V2</td>
+      <td>ACD</td>
+      <td>Cat# 323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope 4-Plex Ancillary Kit for Multiplex Fluorescent Kit V2</td>
+      <td>ACD</td>
+      <td>Cat# 323120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Target Probes (Made-to-Order C4 Probes).</td>
+      <td>ACD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Space Ranger (version 1.0.0)</td>
+      <td>10X Genomics</td>
+      <td>https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/installation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat version 4.0</td>
+      <td>R Bioconductor</td>
+      <td>RRID:SCR_007322;https://satijalab.org/seurat/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Enrichr</td>
+      <td>Chen et al., 2013</td>
+      <td>RRID:SCR_001575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NicheNet</td>
+      <td>GitHub, Browaeys et al., 2020</td>
+      <td>https://github.com/saeyslab/nichenetr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BayesSpace</td>
+      <td>R Bioconductor</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/BayesSpace.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Giotto</td>
+      <td>GitHub, Dries et al., 2021</td>
+      <td>https://rubd.github.io/Giotto_site/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>topGO</td>
+      <td>R Bioconductor</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/topGO.html</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue handling
 
 Human oral mucosa samples were obtained from consenting patients undergoing routine periodontal surgical procedures (Department of Periodontology, Guy’s Hospital, King’s College London). All samples were collected and processed in compliance with the UK Human Tissue Act (Human Tissue Authority #203019), ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188). Written informed consent was received from participants prior to inclusion in the study. Cohort inclusion criteria for all subjects were absent history of relevant medical conditions, no use of medication, no use of nicotine or nicotine-replacement medications, no pregnancy, and breast feeding.
 
-## Sample information
+### Sample information
 
 An overview of all samples used in the study is deposited in the supplementary materials and details such as age, gender, location, and disease state where appropriate. No randomisation or blinding of samples was performed. A power-calculation was not performed prior to study as samples were processed based on tissue quality, anatomical integrity, location, and availability.
 
@@ -149,7 +311,7 @@ Patient 41. Gender: female. Age band: 41–65. Chronic periodontitis with previo
 
 Patient 45. Gender: female. Age band: 41–65. No history of periodontal disease. Site: palatal gingival margin.
 
-## Spatial transcriptomics
+### Spatial transcriptomics
 
 Human oral mucosa tissue was collected immediately after clinical surgery and fixed overnight in 4% neutral buffered formalin for the FFPE protocol. Tissues underwent three 5 min washes in PBS at room temperature followed by dehydration washes in increasing ethanol concentrations. After dehydration, tissue was processed using a Leica ASP300 Tissue Processing for 1 hr. Tissues were then embedded in paraffin and stored at 4°C. For the frozen method, samples were collected immediately after clinical surgery (within 30 min), snap-frozen in O.C.T. compound using liquid nitrogen, and subsequently stored at –80°C in an air-tight container. Frozen blocks were tested for RNA quality with RIN > 8 for frozen tissues (RNA pico, Agilent) and three tissue optimisation experiments (10X Genomics, Visium Spatial Tissue Optimisation, Rev A) were performed with imaging of fluorescence footprint on a Nikon Eclipse Ti2 microscope and image analysis performed in Fiji (ImageJ v2.0.0). We identified 12 min as optimum permeabilisation time. FFPE blocks were tested for RNA quality with DV200 > 50% and a tissue adhesion test was performed.
 
@@ -157,7 +319,7 @@ Samples were then processed for full ST experiment as per the manufacturer’s i
 
 Following library construction as per the manufacturer’s instructions ST libraries were quantified using the KAPA-Illumina PCR quantification kit (KAPA Biosystems) and pooled at 4 nM concentration with a sample ratio corresponding to the surface area of tissue coverage obtained from the H&E imaging. Pooled libraries were sequenced on a NextSeq (Illumina) using 150 base-pair paired-end dual-indexed set up loaded. Two slides were sequenced to a manufacturer-recommended depth of approximately 50,000 reads per tissue covered spot.
 
-## Immunohistochemistry and in situ hybridisation
+### Immunohistochemistry and in situ hybridisation
 
 For IHC, paraffin-embedded blocks were cut at a thickness of 12 µm onto slides. In short, slides were dewaxed in Neo-Clear twice for 10 min and rehydrated in a series of decreasing ethanol volumes as described above. Heat-induced epitope retrieval was performed with sodium citrate buffer (pH 6) in a Decloaking chamber NXGEN (Menarini Diagnostics) for 3 min at 110°C. Slides were cooled to room temperature before blocking for 1 hr at room temperature in Blocking Buffer (0.2% BSA, 0.15% glycine, 0.1% TritonX in PBS) with 10% goat or donkey serum depending on the secondary antibody used. Primary antibodies (anti-KRT14 ab7800; anti-KRT76 HPA019656) were diluted in blocking buffer with 1% of the respective blocking buffer and incubated overnight at 4°C. The following day, slides were washed three times in PBST and incubated with the respective secondary antibodies diluted 1:500 in 1% blocking buffer for 1 hr at room temperature. Slides were mounted with Citifluor AF1 mountant media (Citifluor Ltd., AF1-100) and cover slipped for microscopy. Slides were put to dry in a dry chamber that omitted all light, and kept at 4°C.
 
@@ -165,7 +327,7 @@ Multiplex ISH was performed using kits and probes from Advanced Cell Diagnostics
 
 Fluorescent staining was imaged with a TCS SP5 confocal microscope (Leica Microsystems) and Leica Application Suite Advanced Fluorescence (LAS-AF) software. Images were collected and labelled using Adobe Photoshop 21.1.2 software and processed using Fiji (Schindelin et al., 2012).
 
-## Raw sequencing data processing
+### Raw sequencing data processing
 
 Raw sequencing data was converted to from bcl to fastq format using Illumina bcl2fastq software. Raw sequencing reads were quality checked using FastQC software.
 
@@ -173,32 +335,32 @@ Human hg38 reference genome analysis set was downloaded from the University of C
 
 Spaceranger (version 1.0.0) software from 10X Genomics was used to process, align, and summarise UMI counts against hg38 human reference genome for each spot on the Visium spatial transcriptomics array.
 
-## Spatial transcriptomics data analysis
+### Spatial transcriptomics data analysis
 
 Raw UMI counts spot matrices, imaging data, spot-image coordinates, and scale factors were imported into R using the Seurat package (Butler et al., 2018; Stuart et al., 2019). Raw UMI counts were normalised using regularised negative binomial regression (SC Transform; Hafemeister and Satija, 2019) to account for variability in total spot RNA content. Dimensionality reduction was performed using PCA, and for each slide, scree plots were examined to determine the optimum number of principal components to use in downstream clustering analyses.
 
 Clustering was performed using Louvain clustering algorithm as before (resolution = 0.5) and clusters were visualised using UMAP algorithm as before. Cluster distributions were visualised in spatial context over H&E images with spot size scaling factor of 2–3.5 used throughout. Our previous scRNA-seq dataset (GSE152042) was integrated via FindTransferAnchors and TransferData functions in Seurat to predict spot content for each slide. To further increase data resolution at a subspot level, we applied the BayesSpace package (Zhao et al., 2021). Briefly, Visium datasets processed with Space Ranger were loaded directly via the readVisium function. In all datasets, raw gene expression counts were log transformed and normalised using the spatialPreprocess function and PCA was then performed on the top 2000 most highly variable genes. We used qTune and qPlot to determine the optimum number of principal components. Clustering was performed using a Bayesian model with a Markov random field. To enhance the resolution of this clustering map, we segmented each spot into subspots with the spatialEnhance function and again leveraged spatial information using the Potts model spatial prior; it segments each Visium spot into six subspots and computes enhanced resolution PC vectors using a regression algorithm.
 
-## Marker gene detection and differential expression analyses
+### Marker gene detection and differential expression analyses
 
 For all marker gene expression, we used R packages Seurat and BayesSpace. Briefly, for each identified cluster, we compared the cells within that cluster versus all cells. For visualising and thresholding cell type specificity, we calculated gene AUC scores for all cell types using area under the curve analysis for each gene as implemented in Seurat FindMarkers function (test = ROC). Gene expression enhancement was implemented using the enhanceFeatures function in BayesSpace. We selected sets of marker genes of each cell type and predicted their expression at subspot resolution using xgboost.
 
-## Spatially informed ligand–receptor analysis
+### Spatially informed ligand–receptor analysis
 
 To perform neighbourhood analyses we used the R package Giotto (Dries et al., 2021). It incorporates ligand–receptor information from existing databases (Ramilowski et al., 2015) and calculates the increased spatial co-expression of gene pairs in neighbouring cells from two cell types. Then, it estimates which ligand–receptor pairs might be used often for communication between interacting cells. This is applied with the function spatCellCellcom.
 
-## NicheNet analysis
+### NicheNet analysis
 
 This analysis predicts which ligands produced by a sender cell regulate the expression of receptors/target genes in another (receiver) cell. We followed the open-source R implementation available at GitHub (https://github.com/saeyslab/nichenetr). For differential expression, we used FindMarkers function in Seurat to generate average logFC values per cell type. For Figure 6D, we assigned stromal cells from the scRNA-seq reference dataset as ‘sender cells’ and epithelial populations as ‘received cells’.
 
-## Gene Ontology enrichment analysis
+### Gene Ontology enrichment analysis
 
 Gene Ontology enrichment analyses were performed using using Enrichr (Chen et al., 2013) on the top 200 differentially expressed genes (adjusted p-value<0.05 by Wilcoxon rank-sum test). GO terms shown are enriched at false discovery rate (FDR) < 0.05. topGO R package available from Bioconductor was also applied with the Kolmogorov–Smirnov test (Alexa and Rahnenfuhrer, 2022).
 
-## Code availability
+### Code availability
 
 Code to reproduce the analysis is available at https://github.com/anacaetano/human-oral-mucosa-spatial/.
 
-## Study approval
+### Study approval
 
 Informed consent in writing before their participation in this study was obtained from each subject in compliance with the UK Human Tissue Act (Human Tissue Authority #203019) and ethically approved by the UK National Research Ethics Service (Research Ethics Committee 17/LO/1188).

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.50414.001 Macrophage-mediated phagocytosis and cytokine production represent the front lines of resistance to bacterial invaders. A key feature of this pro-inflammatory response in mammals is the complex remodeling of cellular metabolism towards aerobic glycolysis. Although the function of bactericidal macrophages is highly conserved, the metabolic remodeling of insect macrophages remains poorly understood. Here, we used adults of the fruit fly Drosophila melanogaster to investigate the metabolic changes that occur in macrophages during the acute and resolution phases of Streptococcus -induced sepsis. Our studies revealed that orthologs of Hypoxia inducible factor 1α (HIF1α) and Lactate dehydrogenase (LDH) are required for macrophage activation, their bactericidal function, and resistance to infection, thus documenting the conservation of this cellular response between insects and mammals. Further, we show that macrophages employing aerobic glycolysis induce changes in systemic metabolism that are necessary to meet the biosynthetic and energetic demands of their function and resistance to bacterial infection.
+Macrophage-mediated phagocytosis and cytokine production represent the front lines of resistance to bacterial invaders. A key feature of this pro-inflammatory response in mammals is the complex remodeling of cellular metabolism towards aerobic glycolysis. Although the function of bactericidal macrophages is highly conserved, the metabolic remodeling of insect macrophages remains poorly understood. Here, we used adults of the fruit fly Drosophila melanogaster to investigate the metabolic changes that occur in macrophages during the acute and resolution phases of Streptococcus-induced sepsis. Our studies revealed that orthologs of Hypoxia inducible factor 1α (HIF1α) and Lactate dehydrogenase (LDH) are required for macrophage activation, their bactericidal function, and resistance to infection, thus documenting the conservation of this cellular response between insects and mammals. Further, we show that macrophages employing aerobic glycolysis induce changes in systemic metabolism that are necessary to meet the biosynthetic and energetic demands of their function and resistance to bacterial infection.
 
 ## Introduction
 
@@ -52,9 +52,17 @@ To analyze processes that are characteristic of highly active phagocytic macro
 
 ## Results
 
-## Drosophila macrophages undergo a metabolic shift to aerobic glycolysis during the acute phase of bacterial infection
+### Drosophila macrophages undergo a metabolic shift to aerobic glycolysis during the acute phase of bacterial infection
 
 Since the bactericidal function of phagocytic cells is connected with AG in mice (Mills et al., 2000), we analyzed Drosophila macrophages for the occurrence of AG hallmarks, such as increased glucose uptake, an increase in glycolytic flux, and the generation of an NADH pool facilitating the Ldh-mediated reduction of pyruvate to lactate (Langston et al., 2017). The distribution of fluorescently labeled deoxyglucose (NBDG) in an organism, frequently used in cancer research, reflects the competitive potential of tissues in glucose internalization (Cox et al., 2015). We tested the effect of immune response activation on glucose distribution among tissues in Drosophila by feeding the infected or control flies with NBDG during a 24-hr period before the signal detection. Infected flies displayed prominent NBDG accumulation in APMФs compared to other tissues, which is in contrast to the distribution of NBDG seen in uninfected controls or in flies fed during the resolution phase of infection, which displayed no such accumulation (Figure 2A,B). These results indicate an increased potential of phagocytosing macrophages to consume glucose in direct competition with other tissues during the acute phase of bacterial infection.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Fluorescent images of the dorsal view of the abdomens of infected and control (both Hml >GFP) flies at 24 and 120 hpi, showing NBDG the distribution among the tissues (A) and at a higher magnification (B). Images represent a minimum of ten observations of a similar pattern. (C) Scheme of glycolysis and the TCA cycle, highlighting significant changes in the quantified expression of the indicated genes at 24 and 120 hpi. The expression levels of the mRNA were measured relative to that of the ribosomal protein 49 (rp49), and the statistical significance (p<0.05) was tested using ANOVA (for data see Figure 2—figure supplement 1). Upregulated genes are shown in red, downregulated genes in green; gray indicates no statistically significant difference. (D–F) Enzymatic activities of phosphoglucose isomerase (Pgi) (D) and lactate dehydrogenase (Ldh) (E), as well as the level of NADH (F), at 24 and 120 hpi measured in the homogenate of hemocytes isolated from infected and control flies. The levels of enzymatic activity and NADH concentration were normalized per ten thousand cells per sample. (G) The concentration of circulating lactate measured in the hemolymph of infected and control flies at 24 and 120 hpi. In all plots (D–G), individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Gene expression of glycolytic (HexA (A), Pgi (B), Pfk (C), Tpi (D), Gapdh1 (E), Eno (F)) and TCA (Cis (G), Scsα1 (H), CG10219 (I)) genes in the hemocytes of infected and control flies (both Hml >GFP) at 24 and 120 hpi. The mRNA expression levels, normalized against rp49, are given as fold change (F.C.) relative to the expression of noninfected controls. Individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
 
 The increased NBDG uptake by macrophages was further supported by gene expression analysis, which revealed that the transcription of genes encoding both glycolytic enzymes and LDH, but not TCA cycle enzymes, was significantly upregulated in APMФs (Figure 2C). Moreover, these changes in glycolytic genes were restricted to the acute phase of infection as most glycolytic genes returned to a basal level of expression during the resolution phase, whereas hexokinase and enolase (similarly to all analyzed TCA cycle genes) even showed decreased expression (Figure 2C and Figure 2—figure supplement 1), which can be ascribed to the global suppression of metabolism in these cells. Overall, these results indicate that macrophages specifically upregulate glucose metabolism in response to S. pneumoniae infection.
 
@@ -62,37 +70,45 @@ Increased glucose uptake and expression of glycolytic genes, including Ldh, sugg
 
 The primary reason why cells produce lactate as a byproduct of AG is to maintain NAD+/NADH redox balance. High levels of glycolytic flux produce excess NADH as a result of glyceraldehyde-3-phosphate dehydrogenase 1 (Gapdh1) activity (Olenchock et al., 2017). Consistently, we observed that NADH levels were significantly increased in APMФs and, to a lesser extent, in RPMФs when compared with controls (Figure 2F). When considered in the context of gene expression and enzyme activity assays, these results support a model in which activated Drosophila macrophages undergo a dramatic metabolic remodeling towards AG during bacterial infection.
 
-## Hif1α and Ldh activities are increased in Drosophila macrophages during the acute phase of infection
+### Hif1α and Ldh activities are increased in Drosophila macrophages during the acute phase of infection
 
 Since Hif1α can induce AG in both murine and Drosophila cells (Peyssonnaux et al., 2007; Herranz and Cohen, 2017; Eichenlaub et al., 2018), we examined the possibility that this transcription factor also promotes glucose catabolism within activated macrophages. Although Hif1α is known to be expressed continuously in almost all tissues and regulated predominantly at the post-translational level, we observed that Hif1α mRNA was significantly elevated in APMФs (Figure 3D). To determine whether this increase correlates with the elevated expression of Hif1α target genes, we used a transgenic β-galactosidase reporter under the control of a HRE (HRE-LacZ), which is primarily induced by HIF1α (Lavista-Llanos et al., 2002) although the involvement of other transcription factors cannot be entirely excluded. Although some cells exhibited HRE-LacZ expression in uninfected individuals, the number of β-galactosidase-positive macrophages rose dramatically in flies during the acute phase of infection (Figure 3A). These results suggest that Hif1α activity is increased in APMФs and confirms the previously reported expression pattern of glycolytic genes (see Figure 2—figure supplement 1A–F).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig3-v2.jpg)
 
-**Figure 3.:** (A) X-gal staining of infected and control flies bearing the HRE-LacZ reporter construct. Images represent a minimum of ten observations of a similar pattern. (B) An uninfected Hml >GFP, Ldh-mCherry adult fly (24 hpi) shows localization of the Ldh reporter activity (red) in many of the immune cells (green). The image is a Z-stack at maximal projection of 25 confocal slices. (C, D) Expression of Ldh (C) and Hif1α (D) mRNAs in hemocytes isolated from infected and control flies (both Hml >GFP; 24 and 120 hpi). (E) Expression of Ldh mRNA in hemocytes of infected and control Hml >GFP flies with and without a hemocyte-specific knockdown of Hif1α at 24 hpi. In all plots (C–E), expression levels, normalized against rp49, are given as fold change (F.C.) relative to levels in PBS-injected Hml >GFP controls (24 hpi), which were arbitrarily set to 1. Individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).10.7554/eLife.50414.009Figure 3—source data 1.
+**Figure 3.:** (A) X-gal staining of infected and control flies bearing the HRE-LacZ reporter construct. Images represent a minimum of ten observations of a similar pattern. (B) An uninfected Hml >GFP, Ldh-mCherry adult fly (24 hpi) shows localization of the Ldh reporter activity (red) in many of the immune cells (green). The image is a Z-stack at maximal projection of 25 confocal slices. (C, D) Expression of Ldh (C) and Hif1α (D) mRNAs in hemocytes isolated from infected and control flies (both Hml >GFP; 24 and 120 hpi). (E) Expression of Ldh mRNA in hemocytes of infected and control Hml >GFP flies with and without a hemocyte-specific knockdown of Hif1α at 24 hpi. In all plots (C–E), expression levels, normalized against rp49, are given as fold change (F.C.) relative to levels in PBS-injected Hml >GFP controls (24 hpi), which were arbitrarily set to 1. Individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
 
 As increased lactate production is a hallmark of AG, we examined Ldh expression in macrophages using a transgene that expresses a Ldh-mCherry fusion protein from an endogenous Ldh promoter. The expression of Ldh-mCherry in adult flies harboring the HmlGal4 >UAS eGFP reporter revealed that macrophages from uninfected adults expressed Ldh at levels that markedly exceeded the expression of this reporter in other tissues. This perhaps indicates that these cells are primed to generate lactate prior to infection (Figure 3B), as the Ldh-mCherry pattern did not change significantly after infection (data not shown). Ldh expression, however, was significantly upregulated in APMФs (Figure 3C), further supporting our observation that S. pneumoniae induces Ldh activity (Figure 2E), which is in agreement with elevated NADH levels (Figure 2G). The regulation of Ldh expression by Hif1α in activated immune cells was verified by knocking down Hif1α expression in macrophages 24 hr before infection (Hml >Hif1α[RNAi]). This strategy not only reduced Hif1α expression within APMФs (Figure 4—figure supplement 1G), but also led to the loss of the ability to increase Ldh expression in APMФs, indicating that Hif1α is essential for the elevated Ldh activity in APMФs (Figure 3E).
 
-## Hif1α promotes aerobic glycolysis in Drosophila macrophages during bacterial infection
+### Hif1α promotes aerobic glycolysis in Drosophila macrophages during bacterial infection
 
 To determine whether the observed increase in Hif1α activity is necessary to trigger AG in stimulated macrophages, we used Hml >Hif1α[RNAi] and examined the metabolic consequences. This treatment led to the abrogation of the metabolic changes associated with AG. Following infection, APMФs expressing Hif1α[RNAi] did not accumulate NBDG (Figure 4A), and failed to show increased expression of glycolytic genes (with the exception of Gpdh1) (Figure 4B). Moreover, these Hml >Hif1α[RNAi]-expressing cells exhibited no increase in either Pgi or Ldh enzyme activity and displayed decreased NADH levels when compared with controls (Figure 4D,E,F). These results indicate that Hif1α activity is essential for inducing AG in macrophages during the immune response.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig4-v2.jpg)
+
+**Figure 4.:** (A) Dorsal view of the abdomens of S.p.-infected flies (24 hpi) showing the distribution of the fluorescent NBDG probe. Controls (left) are compared to flies subjected to hemocyte-specific knockdown of Hif1α. Images represent a minimum of ten observations of a similar pattern. (B) Schematic representation of the expression of genes encoding metabolic enzymes in the hemocytes of infected control flies (left) and of flies with Hif1α hemocyte-specific knockdown (right) at 24 hpi. The expression levels of the mRNAs were measured relative to that of rp49, and the statistical significance (p<0.05) was tested using ANOVA (for data see Figure 4—figure supplement 1). Upregulated genes are shown in red; gray indicates no statistically significant difference. (C) Dorsal view of the abdomens of S.p.-infected flies (24 hpi) showing the distribution of the fluorescent NBDG probe. Controls (left) are compared to flies subjected to hemocyte-specific knockdown of Ldh. Images represent a minimum of ten observations of a similar pattern. (D–F) Enzymatic activity of Ldh (D), level of NADH (E), and enzymatic activity of Pgi (F) at 24 and 120 hpi measured in lysates of hemocytes isolated from infected and non-infected control flies and from flies with Hif1α hemocyte-specific knockdown. (G–I) Enzymatic activity of Ldh (G), level of NADH (H), and enzymatic activity of Pgi (I) at 24 and 120 hpi measured in lysates of hemocytes isolated from infected and non-infected control flies and from flies with Ldh hemocyte-specific knockdown. In all plots (D–I), the enzyme activities and NADH concentrations were normalized per ten thousand cells per sample. Individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F) Gene expression of glycolytic genes (HexA (A), Pgi (B), Pfk (C), Tpi (D), Gapdh1 (E) and Eno (F)) in the hemocytes of infected and control Hml >GFP flies and of flies with hemocyte-specific Hif1α knockdown at 24 hpi. (G, H) Gene expression of Hif1α (G) and Ldh (H) at 24 hpi in infected and control Hml >GFP flies and in flies with hemocyte-specific Hif1α knockdown representing the efficiency of RNAi treatment. The mRNA expression levels, normalized against rp49, are given as fold change (F.C.) relative to the expression in noninfected controls. Individual dots represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
+
 As a complement to these cell-specific studies of Hif1α, we also used Hml-Gal4 driving UAS-Ldh[RNAi] (Hml > Ldh[RNAi]) to reduce Ldh expression within APMФs. Intriguingly, although this approach successfully reduced Ldh activity in macrophages (Figure 4G), the metabolic consequences were relatively mild. Within APMФs, Hml > Ldh[RNAi] did not disrupt NBDG uptake and Pgi activity remained elevated (Figure 4C and I). Twenty-four hours after infection, however, we observed that NADH in Hml > Ldh[RNAi] macrophages failed to increase to the levels observed in infected controls (Figure 4H), thus revealing that increased Ldh activity is required for full metabolic reprograming of Drosophila macrophages in response to bacterial infection.
 
-## Hif1α-mediated aerobic glycolysis in APMфs causes systemic metabolic changes
+### Hif1α-mediated aerobic glycolysis in APMфs causes systemic metabolic changes
 
 As we have shown previously (Bajgar and Dolezal, 2018), the systemic metabolic adaptation of carbohydrate metabolism is intimately linked to the effective function of the immune system during streptococcal infection. Therefore, we focused on the characterization of systemic carbohydrate metabolism during the acute phase of infection in Hml >Hif1α[RNAi] and Hml >Ldh[RNAi] flies (Figure 5). Both control genotypes underwent the expected metabolic response during the acute phase of streptococcal infection: a significantly raised level of circulating glucose was accompanied by a strong depletion of glycogen stores in tissues. The Hif1α silencing completely suppressed the infection-induced changes in carbohydrate metabolism, but infected Hml >Ldh[RNAi] flies still significantly increased circulating glucose, albeit to a lesser extent than in the infected controls (Figure 5A). Although the glycogen stores appeared to be lowered in Hml >Ldh[RNAi] flies upon infection, the decrease was statistically insignificant (Figure 5B). Importantly, the macrophage-specific knockdown of either Hif1α or Ldh suppressed the occurrence of an infection-induced increase in circulating lactate titer (Figure 5C). These results show that APMФs are prominent lactate producers during the acute phase of the infection, and suggest that only full activation of APMФs with Hif1α-induced metabolic changes leads to reprograming of systemic carbohydrate metabolism.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig5-v2.jpg)
 
-**Figure 5.:** (A–C) The concentration of circulating glucose (A), glycogen stores (B) and circulating lactate (C) in infected and non-infected flies with Hif1α or Ldh hemocyte-specific knockdown and their respective controls at 24 hpi. The concentrations of metabolites were normalized to the amount of proteins in each sample. Individual dots in the plot represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).10.7554/eLife.50414.015Figure 5—source data 1.
+**Figure 5.:** (A–C) The concentration of circulating glucose (A), glycogen stores (B) and circulating lactate (C) in infected and non-infected flies with Hif1α or Ldh hemocyte-specific knockdown and their respective controls at 24 hpi. The concentrations of metabolites were normalized to the amount of proteins in each sample. Individual dots in the plot represent biological replicates. Values are mean ± SD, asterisks mark statistically significant differences (*p<0.05; **p<0.01; ***p<0.001).
 
-## Hif1α- and Ldh-mediated metabolic remodeling of APMФs is essential for mounting a successful immune response
+### Hif1α- and Ldh-mediated metabolic remodeling of APMФs is essential for mounting a successful immune response
 
 Our results suggest that Drosophila macrophages activate AG and systemic metabolic changes in order to mount a successful immune response. In support of this hypothesis, we observed a significant decrease in the viability of adult flies expressing either Hml >Hif1α[RNAi] or Hml >Ldh[RNAi] following S. pneumoniae infection. By 72 hr post infection, 25% of Hml >Hif1α[RNAi] flies died compared to 7% of controls, and the medium time to death (MTD) in Hml >Hif1α[RNAi] flies was 10 days compared to 23 days in controls (Figure 6A). Moreover, pathogen load in Hml >Hif1α[RNAi] flies was substantially elevated when compared with that in controls at the second and third day post-infection (Figure 6C). We observed similar effects in Hml >Ldh[RNAi] flies, in which S. pneumoniae infection resulted in a decreased survival rate, a MTD of 9 days relative to the 18 days observed in controls, and elevated bacterial load during days 2 and 3 post-infection (Figure 6B and D). These results reveal that Hif1α and Ldh serve essential roles in both survival of infection and bacterial killing, and demonstrate how shift towards AG associated with systemic metabolic changes in activated macrophages is required to mount a successful immune response.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/50414/elife-50414-fig6-v2.jpg)
 
-**Figure 6.:** (A–B) The survival rate of infected flies of the control genotype and of flies with hemocyte-specific Hif1α (A) and Ldh (B) knockdown. Vertical dotted lines denote medium time to death for each genotype; survival rate during the first 120 hr is shown in detail. Three independent experiments were performed and combined into one survival curve. The average number of individuals per replicate was more than 500 for each genotype. (C, D) Colony forming units (CFUs) obtained from infected flies of control genotype and from flies with hemocyte-specific Hif1α (C) and Ldh (D) knockdown at 0, 24, 48, and 72 hpi. Individual dots in the plot represent the number of bacteria raised from one individual. The data show results merged from three independent biological replicates.10.7554/eLife.50414.017Figure 6—source data 1.
+**Figure 6.:** (A–B) The survival rate of infected flies of the control genotype and of flies with hemocyte-specific Hif1α (A) and Ldh (B) knockdown. Vertical dotted lines denote medium time to death for each genotype; survival rate during the first 120 hr is shown in detail. Three independent experiments were performed and combined into one survival curve. The average number of individuals per replicate was more than 500 for each genotype. (C, D) Colony forming units (CFUs) obtained from infected flies of control genotype and from flies with hemocyte-specific Hif1α (C) and Ldh (D) knockdown at 0, 24, 48, and 72 hpi. Individual dots in the plot represent the number of bacteria raised from one individual. The data show results merged from three independent biological replicates.
 
 ## Discussion
 
@@ -114,56 +130,430 @@ In conclusion, we have shown that infection-induced systemic changes in carbohyd
 
 ## Materials and methods
 
-## Drosophila melanogaster strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source reference</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Streptococcus pneumoniae)</td>
+      <td>EJ1 strain</td>
+      <td>Provided by David Schneider</td>
+      <td></td>
+      <td>Dilution 20,000 units</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol Reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat# 15-596-018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Superscript III Reverse Transcriptase</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18080044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2x SYBR Master Mix</td>
+      <td>Top-Bio</td>
+      <td>Cat# T607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-NBDG</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# N13195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X-gal</td>
+      <td>Sigma</td>
+      <td>Cat# B4252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Glucose (GO) Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat# GAGO20-1KT</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Bicinchoninic Acid Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat# BCA1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lactate Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat# MAK064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lactate Dehydrogenase Activity Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat# MAK066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Phosphoglucose Isomerase Colorimetric Assay Kit</td>
+      <td>Sigma</td>
+      <td>Cat# MAK103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>HmlG4G80: w*; HmlΔ-Gal4*; P{tubPGal80ts}*</td>
+      <td>Cross made in our laboratory by Tomas Dolezal</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Hml &gt; GFP: w; HmlΔ-Gal4 UAS-eGFP</td>
+      <td>Provided by Bruno Lemaitre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Hif1α[RNAi]: P{KK110834}VIE-260B</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC: v106504</td>
+      <td>FBst0478328</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TRiP control: y(1) v(1); P{y[+t7.7]=CaryP}attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 36303</td>
+      <td>FBst0036303</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>KK control: y, w[1118];P{attP,y[+],w[3`]}</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 60100</td>
+      <td>FBst0060100</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ldh[RNAi]: y(1) v(1); P{y[+t7.7] v[+t1.8]=TRiP.HMS00039}attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 33640</td>
+      <td>FBst0033640</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>HRE-LacZ: HRE-HRE-CRE-LacZ</td>
+      <td>Provided by Pablo Wappner (Lavista-Llanos et al., 2002)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ldh-mCherry</td>
+      <td>Provided by Jason Tennessen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w: w1118</td>
+      <td>Genetic background based on CantonS</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cis forward: 5′TTCGATTGACTCCAGCCTGG3′</td>
+      <td>KRD</td>
+      <td>CG14740</td>
+      <td>FBgn0037988</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Cis reverse: 5′AGCCGGGAACCACCTGTCC3′</td>
+      <td>KRD</td>
+      <td>CG14740</td>
+      <td>FBgn0037988</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ldh forward: 5′CAGAGAAGTGGAACGAGCTG3′</td>
+      <td>KRD</td>
+      <td>CG10160</td>
+      <td>FBgn0001258</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Ldh reverse: 5′CATGTTCGCCCAAAACGGAG3′</td>
+      <td>KRD</td>
+      <td>CG10160</td>
+      <td>FBgn0001258</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Eno forward: 5′CAACATCCAGTCCAACAAGG3′</td>
+      <td>KRD</td>
+      <td>CG17654</td>
+      <td>FBgn0000579</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Eno reverse: 5′GTTCTTGAAGTCCAGATCGT3′</td>
+      <td>KRD</td>
+      <td>CG17654</td>
+      <td>FBgn0000579</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh1 forward: 5′TTG TGG ATC TTA CCG TCC GC3′</td>
+      <td>KRD</td>
+      <td>CG12055</td>
+      <td>FBgn0001091</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gapdh1 reverse: 5′CTCGAACACAGACGAATGGG3′</td>
+      <td>KRD</td>
+      <td>CG12055</td>
+      <td>FBgn0001091</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HexA forward: 5′ATATCGGGCATGTATATGGG3′</td>
+      <td>KRD</td>
+      <td>CG3001</td>
+      <td>FBgn0001186</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HexA reverse: 5′CAATTTCGCTCACATACTTGG3′</td>
+      <td>KRD</td>
+      <td>CG3001</td>
+      <td>FBgn0001186</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pfk forward: 5′AGCTCACATTTCCAAACATCG3′</td>
+      <td>KRD</td>
+      <td>CG4001</td>
+      <td>FBgn0003071</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pfk reverse: 5′TTTGATCACCAGAATCACTGC3′</td>
+      <td>KRD</td>
+      <td>CG4001</td>
+      <td>FBgn0003071</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pgi forward: 5′ACTGTCAATCTGTCTGTCCA3′</td>
+      <td>KRD</td>
+      <td>CG8251</td>
+      <td>FBgn0003074</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pgi reverse: 5′GATAACAGGAGCATTCTTCTCG3′</td>
+      <td>KRD</td>
+      <td>CG8251</td>
+      <td>FBgn0003074</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49 forward: 5′AAGCTGTCGCACAAATGGCG3′</td>
+      <td>KRD</td>
+      <td>CG7939</td>
+      <td>FBgn0002626</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49 reverse: 5′GCACGTTGTGCACCAGGAAC3′</td>
+      <td>KRD</td>
+      <td>CG7939</td>
+      <td>FBgn0002626</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1α forward: 5′CCAAAGGAGAAAAGAAGGAAC3′</td>
+      <td>KRD</td>
+      <td>CG45051</td>
+      <td>FBgn0266411</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Hif1α reverse: 5′GAATCTTGAGGAAAGCGATG3′</td>
+      <td>KRD</td>
+      <td>CG45051</td>
+      <td>FBgn0266411</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG10219 forward: 5′GAGATCTCCGTGAGTGCGC3′</td>
+      <td>KRD</td>
+      <td>CG10219</td>
+      <td>FBgn0039112</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CG10219 reverse: 5′CTCCACGCCCCAATGGG3′</td>
+      <td>KRD</td>
+      <td>CG10219</td>
+      <td>FBgn0039112</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scsα1 forward: 5′TCACAAGCGCGGCAAGATC3′</td>
+      <td>KRD</td>
+      <td>CG1065</td>
+      <td>FBgn0004888</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Scsα1 reverse: 5′TTGATGCCCGAATTGTACTCG3′</td>
+      <td>KRD</td>
+      <td>CG1065</td>
+      <td>FBgn0004888</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tpi forward: 5′AGATCAAGGACTGGAAGAACG3′</td>
+      <td>KRD</td>
+      <td>CG2171</td>
+      <td>FBgn0086355</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tpi reverse: 5′ACCTCCTTGGAGATGTTGTC3′</td>
+      <td>KRD</td>
+      <td>CG2171</td>
+      <td>FBgn0086355</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism</td>
+      <td>https://www.graphpad.com/</td>
+      <td>Graphpad Prism</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microsoft Excel</td>
+      <td>https://www.microsoft.com/</td>
+      <td>Microsoft Excel</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>ImageJ - https://fiji.sc</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_002285</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>S3e Cell Sorter</td>
+      <td>BioRad -http://www.bio-rad.com/</td>
+      <td>BioRad</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus FluoView 1000</td>
+      <td>Olympus -https://www.olympus-global.com/</td>
+      <td>Olympus</td>
+      <td>RRID:SCR_017015 RRID:SCR_014215</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus SZX12</td>
+      <td>Olympus -https://www.olympus-global.com/</td>
+      <td>Olympus</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus IX71</td>
+      <td>Olympus - https://www.olympus-global.com/</td>
+      <td>Olympus</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila melanogaster strains
 
 Flies were raised on a diet containing cornmeal (80 g/l), agar (10 g/l), yeast (40 g/l), saccharose (50 g/l) and 10% methylparaben (16.7 mL/l) and were kept in a controlled humidity environment with natural 12 hr/12 hr light/dark periods at 25°C, except for those used in temperature-controlled Gal80 experiments. Flies bearing Gal80 were transferred at 29°C 24 hr prior to infection in order to degrade temperature-sensitive Gal 80 protein. Prior to experiments, flies were kept in plastic vials on 0% glucose diet (cornmeal 53.5 g/l, agar 6.2 g/l, yeast 28.2 g/l and 10% methylparaben 16.7 mL/l) for 7 days and transferred into fresh vials every second day without CO2 in order to ensure good condition of the food. Infected flies were kept on 0% glucose diet in incubators at 29°C due to the temperature sensitivity of S. pneumoniae. Drosophila Stock Centre in Bloomington provided TRiP control and Ldh[RNAi] flies. Hif1α[RNAi] and KK control flies were obtained from Vienna Drosophila Resource Center. Ldh-mCherry strain was kindly provided by Jason Tennessen, HRE-LacZ by Pablo Wappner and Hml > GFP by Bruno Lemaitre. The w1118 strain has a genetic background based on CantonS.
 
-## Bacterial strain and fly injection
+### Bacterial strain and fly injection
 
 The S. pneumoniae strain EJ1 was stored at −80°C in Tryptic Soy Broth (TSB) media containing 16% glycerol. For the experiments, bacteria were streaked onto agar plates containing 3% TSB and 100 μg/mL streptomycin and subsequently incubated at 37°C + 5% CO2 overnight. Single colonies were inoculated into 3 mL of TSB liquid media with 100 μg/mL of streptomycin and 100,000 units of catalase and incubated at 37°C + 5% CO2 overnight. Bacterial density was measured after an additional 4 hr so that it reached an approximate 0.4 OD600. Final bacterial cultures were centrifuged and dissolved in phosphate-buffered saline (PBS) so the final OD reached A = 2.4. The S. pneumoniae culture was kept on ice prior to injection and during the injection itself. Seven-day-old males (survival experiments, qPCR assays, measurement of metabolites and enzymatic activity) or females (X-gal staining, NBDG assay) were anaesthetized with CO2 and injected with 50 nL culture containing 20,000 S. pneumoniae bacteria or 50 nL of mock buffer (PBS) into the ventrolateral side of the abdomen using an Eppendorf Femtojet Microinjector.
 
-## Pathogen load measurement
+### Pathogen load measurement
 
 Sixteen randomly chosen flies per genotype and treatment were anaesthetized with CO2 and individually homogenized in 200 µL PBS using a motorized plastic pestle. Serial dilutions were plated onto TSB agar plates and incubated at 37°C overnight. The number of colonies was counted at 0, 24, 48 and 72 hpi. Collected data were compared using Tukey's multiple comparisons test in Graphpad Prism software. Sidak's multiple comparison correction was performed.
 
-## Survival analysis
+### Survival analysis
 
 Injected flies were kept at 29°C in vials with approximately 30 individuals per vial and were transferred onto a fresh food every other day. Dead flies were counted daily. At least three independent experiments were performed and combined into one survival curve created in Graphpad Prism software; the individual experiments showed comparable results. Average number of individuals was more than 500 for each genotype. Data were analyzed by Log-rank and Grehan-Breslow-Wilcoxon tests (which gave more weight to deaths at early time points).
 
-## Isolation of hemocytes
+### Isolation of hemocytes
 
 GFP-labeled hemocytes were isolated from HmlΔ-Gal4 UAS-eGFP male flies using fluorescence-activated cell sorting (FACS). Approximately 200 flies were anaesthetized with CO2, washed in PBS and homogenized in 600 μL of PBS using a pestle. Homogenate was sieved through a nylon cell strainer (⌀ 40 μm). This strainer was then additionally washed with 200 µL of PBS, which was added to the homogenate subsequently. Samples were centrifuged (3 min, 6°C, 3500 RPM) and the supernatant was washed in ice cold PBS after each centrifugation (3x). Prior to sorting, samples were transferred to polystyrene FACS tubes using a disposable bacterial filter (⌀ 50 µm, Sysmex) and sorted into 100 µL of TRIzol Reagent (Invitrogen) using a S3TM Cell Sorter (BioRad). Sorted cells were verified by fluorescent microscopy and by differential interference contrast (DIC).
 
-## Gene expression
+### Gene expression
 
 Sorted hemocytes were homogenized using a DEPC-treated pestle and RNA was extracted by TRIzol Reagent (Invitrogen) according to the manufacturer's protocol. Superscript III Reverse Transcriptase (Invitrogen) and oligo(dT)20 primer was used for reverse transcription. Amounts of mRNA of particular genes were quantified on a CFX 1000 Touch Real-Time Cycler (Bio-Rad) using the TP 2x SYBR Master Mix (Top-Bio) in three technical replicates with the following conditions: initial denaturation for 3 min at 95°C, then amplification for 15 s at 94°C, 30 s at 54°C, 40 s at 72°C for 40 cycles and melting curve analysis at 65–85°C/step 0.5°C. Primer sequences are listed in the Key Resources Table. qPCR data were analyzed with double delta Ct analysis, and expressions or particular genes were normalized to the expression of Ribosomal protein 49 (Rp49) in the same sample. Relative values (fold change) to control were compared and are shown in the graphs. Samples for gene expression analysis were collected from three independent experiments. Data were compared with Tukey's multiple comparisons test in Graphpad Prism software. Sidak's multiple comparison correction was performed.
 
-## Glucose uptake
+### Glucose uptake
 
 HmlΔ-Gal4 UAS-eGFP adults were placed on a cornmeal diet with an added 200 µL of 2-NBDG (excitation/emission maxima of ~465/540 nm, 5 mg/mL stock (used 10,000x diluted), Thermo-Fisher), which was soaked into the surface of food, immediately after infection (flies analyzed at 24 hpi) or 96 hpi (flies analyzed at 120 hpi). After 1 day, flies were prepared for microscopy (Olympus IX71). Flies for glucose uptake analysis were collected from three independent experiments.
 
-## Activation of the hypoxia response element (HRE)
+### Activation of the hypoxia response element (HRE)
 
 X-gal staining was performed on infected HRE-HRE-CRE-LacZ females. Flies were dipped in 75% EtOH for 1 s in order to make their cuticle non-hydrophobic and dissected in PBS. Fixation was performed with 2.5% glutaraldehyde/PBS on a LabRoller rotator for 7 min at room temperature. Adults were then washed three times in PBS. Next, two washings were performed with a PT solution (1 mL 10xPBS (Ambion), 100 µL 1M MgCl2 × 6H2O, 300 µL 10% Triton, 8 mL dH2O, 320 µL 0.1M K4[Fe(CN)6], 320 µL 0.1 M K3[Fe(CN)6]) for 10 min. Finally, PT solution with few grains of X-gal (Sigma) was added. Samples were placed in a thermoblock at 37°C and occasionally mixed, and the colorimetric reaction was monitored. The reaction was stopped with three PBS washings at the same time for all samples. Samples for HRE activation evaluation were collected from four independent experiments.
 
-## Concentration of metabolites
+### Concentration of metabolites
 
 Five flies were homogenized in 200 µL of PBS and centrifuged (3 min, 4°C, 8000 RPM) for glycogen measurement. For lactate and glucose measurement, hemolymph was isolated from 25 adult males by centrifugation (14,000 RPM, 5 min) through a silicagel filter into 50 µL PBS. Half of all samples were used for the quantification of proteins. Samples for glucose, glycogen and lactate measurement were denatured at 75°C for 10 min, whereas samples for protein quantification were stored in −80°C. Glucose was measured using a Glucose (GO) Assay (GAGO-20) Kit (Sigma) according to the manufacturer’s protocol. Colorimetric reaction was measured at 540 nm. For glycogen quantification, sample was mixed with amyloglucosidase (Sigma) and incubated at 37°C for 30 min. A Bicinchoninic Acid Assay (BCA) Kit (Sigma) was used for protein quantification according to the supplier's protocol and the absorbance was measured at 595 nm. A Lactate Assay Kit (Sigma) was used for lactate concentration quantification according to the manufacturer's protocol. The absorbance was measured at 570 nm. Samples for metabolite concentration were collected from six independent experiments. Measured data were compared in Graphpad Prism using Tukey's multiple comparisons test. Sidak's multiple comparison correction was performed.
 
-## Enzymatic activity
+### Enzymatic activity
 
 The enzymatic activities of lactate dehydrogenase and phosphoglucose isomerase were measured using a Lacate Dehydrogenase Activity Assay Kit (Sigma) or a Phosphoglucose Isomerase Colorimetric Assay Kit (Sigma), respectively, according to the supplier's protocol in 10,000 FACS-sorted hemocytes for each sample. Colorimetric reaction was measured at 450 nm. Samples for enzymatic activity detection were collected from six independent experiments. Measured values were compared in Graphpad Prism software using Tukey's multiple comparisons test. Sidak's multiple comparison correction was performed.
 
-## Genotypes of experimental models
+### Genotypes of experimental models
 
-## Figure 1
+#### Figure 1
 
-## Figure 2
+#### Figure 2
 
-## Figure 3
+#### Figure 3
 
-## Figure 4
+#### Figure 4
 
-## Figure 5
+#### Figure 5
 
-## Figure 6
+#### Figure 6

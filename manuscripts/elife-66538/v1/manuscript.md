@@ -32,33 +32,159 @@ The poor understanding about cyanobacterial sulfated polysaccharide biosynthesis
 
 ## Results
 
-## Bloom formation and EPS accumulation in Synechocystis sp. PCC 6803
+### Bloom formation and EPS accumulation in Synechocystis sp. PCC 6803
 
 We fortuitously found that a motile substrain of Synechocystis 6803 produces EPS and forms floating cell aggregates resembling a typical cyanobacterial bloom. We established a two-step culture regime (2-day bubbling culture and subsequent standing culture without bubbling under continuous light) for reproducible formation of bloom-like aggregates (Figure 1A,B). The first (bubbling) step allows for cell propagation and EPS production, whereas the second (standing) step allows for massive cell aggregation and flotation, even though Synechocystis 6803 does not possess genes for intracellular gas vesicles (Harke et al., 2016). In Synechocystis 6803, cell flotation accompanying the generation of extracellular gas bubbles was suppressed by inactivation of photosynthesis (Figure 1C), suggesting that gas derived from photosynthesis drives the upward movement of cells embedded in viscous EPS. The non-motile, glucose-tolerant substrain—commonly used for photosynthesis research—did not aggregate or float.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-v1.jpg)
+
+**Figure 1.:** (A) Time course of bloom formation by wild-type (WT) Synechocystis 6803 during the second step of culture. Extracellular gas bubbles are formed and trapped in viscous EPS (~1 hr). Green vertical columns with bubbles become apparent at 4 hr. Those trapped gas bubbles slowly rise together with the viscous columns. (B) Enlarged images showing gas bubbles trapped in EPS. Vertically aligned bubbles are indicated by red arrows. (C) Lack of bloom formation in the non-motile substrain (NM) or WT with or without light and the photosynthesis inhibitor DCMU at 48 hr of the second step of culture. (D) Domain architecture of Slr5054. GT, glycosyltransferase domain; TM, transmembrane region. (E) Lack of bloom formation in Δslr5054 after standing culture for 48 hr. (F) Isolation of EPS from the first step of culture. Cells and capsular polysaccharides (CPS) were removed from the culture by centrifugation, and EPS in the supernatant was separated from ‘free’ polysaccharide (PS) by membrane filtration followed by a second centrifugation to remove residual cells. CPS was collected from the cell pellet after vortexing and centrifugation. (G) Sugar content of fractions from WT and Δslr5054. Error bars represent SD (CPS, n = 6; others, n = 3; **p<0.005).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Protocol for isolating crude EPS from the bloomed culture. The bloom, including EPS and cells at the end of the second (standing) step of culture, was trapped by membrane filtration, and crude EPS was recovered from the bloom by vortexing and centrifugation. PS, polysaccharide; ppt, precipitate; sup, supernatant. (B) Time course of sugar accumulation in the crude EPS during the standing culture. (C) Sugar content of the crude EPS from WT, and a non-motile glucose-tolerant substrain (NM). Error bars represent SD (n = 3, **p<0.005).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Domain architecture of membrane-bound glycosyltransferases. Red box, glycosyltransferase domain (GT); blue box, transmembrane region; orange box, glycogen phosphorylase domain. (B) Bloom formation by mutants after the second step of culture.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The microscopic images of isolated EPS from WT culture (Figure 1g) stained with alcian blue at pH 2.5 (left) and pH 0.5 (right).
 
 We first isolated crude viscous EPS from the bloomed culture by membrane filtration (Figure 1—figure supplement 1A). The crude EPS consisted of polysaccharide but very little protein or nucleic acid and its abundance remained unchanged during the second culture step (Figure 1—figure supplement 1B). As a common feature of diverse EPS biosynthesis systems in bacteria, membrane-bound glycosyltransferases are particularly important (Schmid et al., 2015). In the Synechocystis 6803 genome, 59 genes were annotated as glycosyltransferases. Twelve of them were uncharacterized and predicted to encode transmembrane helices. So, we disrupted five of them initially and found that slr5054 is essential for bloom formation (Figure 1D,E and Figure 1—figure supplement 2). The viscous EPS preparation was improved by removing cells before filtration to avoid cell-associated polysaccharides such as CPS (Figure 1F). ∆slr5054 lacked most of the EPS present in the wild type (WT), whereas the CPS and free polysaccharide fractions were similar in the WT and ∆slr5054 (Figure 1G). Then, we performed Alcian blue staining to examine the acidity of the EPS (Figure 1—figure supplement 3). Generally, sulfated polysaccharides are stained at pH 0.5 condition, while acidic polysaccharides, which contain sulfate groups and/or carboxylate groups (such as uronic acids and carboxylate modification), are stained at pH 2.5 condition (Bellezza et al., 2006). The EPS from WT was clearly stained under both pH conditions, strongly suggestive of the sulfate modification.
 
 Gene cluster for the biosynthesis of viscous EPS slr5054 resides on a megaplasmid, pSYSM, in a large gene cluster (sll5042–60), which we named xss (extracellular sulfated polysaccharide biosynthesis) (Figure 2A, xssA–xssS). This cluster includes two genes for sulfotransferases (xssA, xssE), eight genes for glycosyltransferases (xssB, xssC, xssG, xssI, xssM, xssN, xssO, xssP), three genes for the polysaccharide polymerization system (Wzx/flippase; xssH, Wzy/polymerase; xssF, and polysaccharide co-polymerase [PCP]; xssK), one gene for a putative transcriptional regulator (xssQ), a pair of genes for the bacterial two-component phosphorelay system (xssR, xssS), and genes encoding several small proteins of unknown function (Supplementary file 1, Figure 2A). All genes except those of unknown function were disrupted individually with a read-through cassette, and segregation was confirmed by colony PCR (Figure 2—figure supplement 1). Bloom formation and sugar content of the EPS fraction were reduced in many mutants (Figure 2B,C). In particular, bloom formation was completely abolished in ∆xssA, ∆xssB, ∆xssF, ∆xssH, ∆xssK, ∆xssM, ∆xssN, and ∆xssP, in which EPS accumulation was also suppressed. Certain glycosyltransferase mutants (∆xssC, ∆xssG, ∆xssI, ∆xssO) formed blooms but accumulated little EPS, and neither bloom formation nor EPS accumulation was substantially altered in one sulfotransferase mutant (∆xssE). In general, the Wzx/Wzy system in bacteria produces various EPS, lipopolysaccharides, and CPS through four steps: (i) biosynthesis of a heterooligosaccharide repeat unit on a lipid linker at the cytoplasmic side of the plasma membrane by a series of glycosyltransferases and modification enzymes, (ii) flip-out of the unit to the periplasmic side by Wzx, (iii) polymerization by transfer of the nascent polysaccharide chain to the repeat unit by Wzy, and (iv) export of the EPS chain through the periplasm and outer membrane via PCP and the outer-membrane polysaccharide export protein (OPX) (Islam and Lam, 2014; Schmid et al., 2015). It is very likely that the xss cluster harbors a whole set of genes for the Wzx/Wzy-dependent pathway except a gene for OPX.
 
-## Regulation of the sulfated EPS biosynthesis
+![Figure 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-v1.jpg)
+
+**Figure 2.:** (A) The xss gene cluster. Red, polysaccharide biosynthesis genes; green, regulatory genes; black, genes of unknown function. (B) Bloom formation by the mutants carrying disruptions in the polysaccharide biosynthesis xss genes. (C) Total sugar content (µg glucose per 1 × 108 cells) of the exopolysaccharides (EPS) fraction from mutants in b. Red bars, bloom-forming mutants; blue bars, non-bloom-forming mutants. Error bars represent SD (wild type [WT] grown at 20°C, n = 6; others, n = 3). Statistical significance was determined using Welch’s t test (*p<0.05, **p<0.005, ***p<0.0005). (D) Bloom formation by regulatory mutants, WT grown at 20°C, and outer-membrane polysaccharide export protein (OPX) mutant (∆sll1581). (E) Total sugar content of the EPS fraction from mutants in d. Red bars, bloom-forming mutants; green bars, excess-bloom-forming mutants. (F) A sheet of OX-xssR cells was stripped off from the agar plate by tweezers. The culture temperature was 31°C unless otherwise stated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** M indicates marker lane, and the numbers above each lane indicate the different clones. The band positions of wild type (WT) and mutants (MT) are shown at the right, with theoretical lengths in nt. A solid arrow indicates the existence of the band; a dotted arrow indicates the absence of the band. The bold text in the strain names indicates the region assessed by PCR.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Hybrid-type histidine kinase XssS presumably senses a cold signal and transduces it to the response regulator XssR, which in turn activates the transcription of extracellular sulfated polysaccharide biosynthesis (xss) genes via the signal transduction ATPase with numerous domains (STAND) protein XssQ. Generally, STAND proteins consist of the three-domain module, sensor region, and effector region13. In XssQ, the three-domain module consisting of the NACHT (NAIP [neuronal apoptosis inhibitor protein], CIIA [MHC class II transcription activator], HET-E, and TP1 [mammalian telomerase-associated proteins]) domain (PF05729), HD1 (helical domain 1), and WHD (winged helix domain) responds to a signal from XssR and oligomerizes, leading to the activation of the N-terminal effector domain (helix-turn-helix XRE family domain [SM00530]).
+
+### Regulation of the sulfated EPS biosynthesis
 
 The sensory histidine kinase mutant ∆xssS accumulated a much larger amount of EPS than WT, whereas mutants of the cognate response regulator xssR and transcriptional regulator xssQ had a null phenotype with regard to both bloom formation and EPS accumulation (Figure 2D,E, Supplementary file 2). The double mutant ∆xssS/∆xssR had a phenotype similar to that of ∆xssR. Overexpression of xssR or xssQ (OX-xssR, OX-xssQ) resulted in strong bloom formation as well as marked accumulation of viscous EPS, similar to that seen for ΔxssS. The combination of xssQ disruption and xssR overexpression (ΔxssQ + OX xssR) abrogated bloom formation and EPS accumulation, whereas the combination of xssQ overexpression and xssR disruption (ΔxssR + OX xssQ) resulted in a pronounced phenotype of bloom formation and EPS accumulation. These results suggested that the sensor histidine kinase XssS suppresses the response regulator XssR, leading to activation of the transcriptional activator XssQ. Notably, the OX-xssR and OX-xssQ strains formed sticky, non-motile, biofilm-like colonies on agar plates that could be picked by tweezers (Figure 2F).
 
 XssQ is a new type of the signal transduction ATPase with numerous domains (STAND) protein, because it harbors an N-terminal helix-turn-helix transcriptional DNA-binding domain (Figure 2—figure supplement 2). Typical STAND proteins possess a three-domain module with ATPase activity and are involved in processes such as apoptosis and immunity in animals, plants, and some bacteria (Danot et al., 2009). Using real-time quantitative PCR (qPCR), we compared gene expression in the xss cluster for WT, ΔxssS, and ΔxssQ (Figure 3A). Expression of five genes (xssA, xssB, xssE, xssN, xssP) was very low in ∆xssQ compared with WT, whereas that of xssF, xssH, and xssK was not substantially affected. These results suggested that XssQ transcriptionally activates genes encoding sulfotransferases and certain glycosyltransferases but not genes for polymerization and export via the Wzx/Wzy system. qPCR analysis of gene expression in ∆xssS revealed a tendency for slight up-regulation of xssB, xssE, xssN, and xssP. We next performed RNA-seq of WT, ΔxssS, and ΔxssQ to analyze the transcriptome (Figure 3—figure supplement 1). The genes down-regulated in ΔxssQ and up-regulated in ΔxssS were mostly xss genes. In detail, the regulated genes were xssA-E and xssL-P, which were roughly consistent with the qPCR analysis (Figure 3A). We conclude that xssA-E and xssL-P were specifically regulated by XssS/XssR/XssQ. In a previous report, xssA–xssE and xssL–xssP were up-regulated at low temperature in another substrain of Synechocystis 6803 (Kopf et al., 2014b). To test this in our substrain, we measured the sulfated EPS accumulation of WT culture at 20°C, and it was 3.1-fold greater than that at normal growth temperature (31°C; Figure 2D,E and Supplementary file 2). This result suggests that XssS/XssR/XssQ is a temperature sensor for xss gene expression.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-v1.jpg)
+
+**Figure 3.:** (A) Transcript levels for xss genes in wild type (WT), ΔxssS, and ΔxssQ measured by quantitative PCR (qPCR). The internal standard was rnpB. Relative expression levels were obtained by normalization to the transcript levels of each gene in WT. Error bars represent SD (n = 3, biological triplicates). (B) Upper: Sequence comparison of upstream regions of the five regulated genes. Putative consensus regions are shown in red and fully conserved nucleotides are shown in bold letter. Underlines represent transcribed regions based on the report (Kopf et al., 2014b) and initiation codons of regulated genes are shown in black/bold letters. (B) Lower: Sequences of DNA probe and competitors for xssE (native and mutant) used for electrophoretic mobility shift assay (EMSA) of C. Consensus regions are shown in red, and mutated regions are shown in blue. Total DNA size is 251 bp, where identical sequences are mostly not shown except 20 bp at both ends. (C) The autoradiogram image of EMSA of XssQ protein and the DNA probe of xssE with some competitors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Transcript levels were based on RPKM (reads per kilobase of exon per million mapped reads) value shown in Figure 3—figure supplement 1—source data 1. Dots in the second quadrant mean down-regulation in ΔxssQ and up-regulation in ΔxssS. Most xss genes were in this quadrant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A and B) HPLC profiles for neutral sugars in wild-type EPS (A) and ΔxssS EPS (B). (C and D) HPLC profiles for uronic acids in wild-type EPS (C) and ΔxssS EPS (D). The corresponding monosaccharide and retention time are noted at each peak. (E and F) HPLC profiles for SO42– after hydrolysis of EPS samples of wild type (E) and ΔxssS (F).
+
 We aligned nucleotide sequences near the transcription start sites of the regulated genes (xssA, xssE, xssL, xssN, and xssP) to find the consensus sequences for XssQ binding (Figure 3B), according to the differential RNA-seq-type transcriptomic analysis of Synechocystis 6803 (Kopf et al., 2014b). There are single or tandem consensus sequence, AAGTTXXAC. To confirm the binding of XssQ to this region, we performed electrophoretic mobility shift assay (EMSA) using purified recombinant XssQ protein and a PCR-amplified DNA fragment of xssE upstream (Figure 3C). The band position of the radiolabeled probe DNA shifted reflecting the concentration of XssQ. This shift was largely eliminated by excess addition of the unlabeled native competitor, but not by addition of the mutant competitor with mutations in the consensus region. These results suggest that XssQ recognizes the consensus sequence of xssE and other target genes for their transcriptional activation.
 
-## The chemical composition of the sulfated EPS
+### The chemical composition of the sulfated EPS
 
 The EPS fractions of WT and the overproduction mutant (∆xssS) were subjected to chemical composition analysis (Table 1, Figure 3—figure supplement 2). EPS from ∆xssS consisted of only four types of monosaccharides and sulfate with the near stoichiometric molar ratio of rhamnose:mannose:galactose:glucose:sulfate of 1:1:1:5:2. This finding roughly fits with the gene number, that is, eight glycosyltransferase genes and two sulfotransferase genes. We assumed that the sulfated EPS of ∆xssS is produced by the xss cluster in Synechocystis 6803 and designated ‘synechan’. On the other hand, the EPS fraction from WT likely contained unknown polysaccharides consisting of mannose, fucose, and xylose in addition to synechan of the ∆xssS. It should be mentioned that the membrane filtration is effective to collect synechan selectively from the ‘free’ polysaccharides, which have been mixed together with viscous molecules in literature.
 
-## The OPX protein for synechan biosynthesis
+**Table 1.**
+ Chemical composition of the exopolysaccharides (EPS) from wild-type (WT) Synechocystis 6803 and ΔxssS mutant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="12">Sugars</th>
+      <th></th>
+      <th>Sulfate residues</th>
+    </tr>
+    <tr>
+      <th colspan="8">Neutral sugars (mol/mol% )</th>
+      <th></th>
+      <th colspan="3">Uronic acids (mol/mol % )</th>
+      <th></th>
+      <th>Substitution degree</th>
+    </tr>
+    <tr>
+      <th>Rhamnose</th>
+      <th>Ribose</th>
+      <th>Mannose</th>
+      <th>Fucose</th>
+      <th>Galactose</th>
+      <th>Xylose</th>
+      <th>Glucose</th>
+      <th>Total</th>
+      <th></th>
+      <th>Galacturonic acid</th>
+      <th>Glucuronic acid</th>
+      <th>Total</th>
+      <th></th>
+      <th>(mol/mol%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>16.6</td>
+      <td>N.D.</td>
+      <td>25.7</td>
+      <td>16.2</td>
+      <td>4.7</td>
+      <td>10.6</td>
+      <td>23.1</td>
+      <td>96.9</td>
+      <td></td>
+      <td>ND</td>
+      <td>3.1</td>
+      <td>3.1</td>
+      <td></td>
+      <td>10.4</td>
+    </tr>
+    <tr>
+      <td>ΔxssS</td>
+      <td>13.1</td>
+      <td>N.D.</td>
+      <td>14.2</td>
+      <td>1.2</td>
+      <td>12.5</td>
+      <td>1.0</td>
+      <td>57.9</td>
+      <td>99.9</td>
+      <td></td>
+      <td>ND</td>
+      <td>0.1</td>
+      <td>0.1</td>
+      <td></td>
+      <td>26.6</td>
+    </tr>
+  </tbody>
+</table>
+
+### The OPX protein for synechan biosynthesis
 
 There is no candidate gene in the xss-carrying plasmid for the OPX protein of the Wzx/Wzy system, whereas sll1581, an OPX homolog, was found on the main chromosome. Disruption of sll1581 (Δsll1581) abolished bloom formation and EPS accumulation (Figure 2D,E). Thus, the chromosomal OPX protein Sll1581 (XssT) appears to serve as the outer-membrane exporter for synechan. Interestingly, Synechocystis 6803 possesses xssT (OPX gene) and sll0923 (a second PCP-2a gene) on the main chromosome and xssK (PCP-2a gene) on the plasmid pSYSM, whereas its close relative Synechocystis 6714 harbors only homologs of sll0923 and xssT but lacks the entire plasmid carrying the xss cluster. This suggested that XssT serves as an OPX for dual function for both XssK and Sll0923. It is likely that Synechocystis 6803 acquired pSYSM and borrowed the chromosomal OPX gene xssT to produce synechan or, alternatively, Synechocystis 6714 may have lost the plasmid.
 
 ## Discussion
 
 Summarizing these data, we propose models for synechan biosynthesis apparatus including OPX and temperature-responsive regulation (Figure 4A,B and Figure 2—figure supplement 2). The model of the Xss apparatus fits well with the known Wzx/Wzy-dependent apparatus represented by xanthan biosynthesis in Xanthomonas campestris (Katzen et al., 1998). The eight glycosyltransferases including XssP (the priming glycosyltransferase) produce oligosaccharide repeat unit of eight sugars, which is consistent with the sugar composition of synechan. These findings suggest that the xss cluster on the pSYSM plasmid harbors a whole set of genes for synechan biosynthesis except the OPX gene (xssT on the main chromosome). Notably, the cluster harbors two sulfotransferase genes, which have not been found to our knowledge in other bacterial gene clusters for extracellular polysaccharide biosynthesis. Sulfotransferases, XssA and XssE, belong to distinct subfamilies of bacterial sulfotransferases. We found many sulfotransferase genes in various cyanobacterial genomes by Pfam search (PF00685, PF03567, PF13469). They are mostly found in gene clusters for putative extracellular polysaccharide biosynthesis (Wzx/Wzy-type and ABC-type) (Figure 4—figure supplement 1). It should be noted that they are more or less partial as a cluster for extracellular polysaccharide biosynthesis system, whereas the xss cluster appears to be complete except the OPX gene in Synechocystis 6803. It is well established that the polysaccharide moiety of membrane-anchored lipopolysaccharides and CPS of bacteria are produced and exported by the Wzx/Wzy-dependent or ABC transporter–dependent pathways, whereas free EPS, that is, xanthan and cellulose, are produced by the Wzx/Wzy-dependent and synthase-dependent pathways but not by the ABC transporter–dependent pathway (Schmid et al., 2015; Willis and Whitfield, 2013). In the literature, a sulfated CPS was reported in A. platensis (formerly Spirulina platensis) (Mouhim et al., 1993). This sulfated CPS may be produced by an ABC transporter-type gene cluster in Figure 4—figure supplement 1. Gene disruption will confirm such predictions deduced from the gene cluster analyses, although targeted disruption is not so easy in many cyanobacteria due to poor transformation efficiency except Synechocystis 6803. In contrast, no sulfated polysaccharide has been reported in the other bacteria, though many sulfotransferases are also registered in Pfam database. Some of them are known to transfer a sulfuryl group to lipo-oligosaccharides in rhizobia (Nod factor) and mycobacteria (Mougous et al., 2002).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-v1.jpg)
+
+**Figure 4.:** (A) Model for the synechan biosynthesis apparatus with sugar polymerization and modification. Red boxes represent biosynthesis components, and red boxes with blue stripes represent transcriptionally regulated components. A putative lipid linker is shown as a black rod. Each monosaccharide is shown as a small hexagon, and each sulfate group is shown as a red spot. (B) Signaling and transcriptional regulation model. Green arrows and ellipses represent regulatory genes and proteins, respectively. Genes for synechan biosynthesis are shown in red, and transcriptionally regulated genes are depicted with blue stripes. Arrows with double lines represent transcriptional activation. (C) Two flotation models in cyanobacteria. Left, flotation of cells (green circles) with intracellular gas-filled vesicles (white circles). Right, flotation of exopolysaccharides (EPS) (red shading)-entrapped cells (green circles) and extracellular gas bubbles (white circles), which are generated by photosynthesis.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** A part of each cluster harboring genes for sulfotransferases, glycosyltransferases, and polysaccharide biosynthesis/export systems (Wzx/Wzy type and ABC transporter type) in cyanobacterial genomes.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66538/elife-66538-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The colored blocks indicate genes with direction. The homologs of each gene are represented by their corresponding colors (red, xssQ; blue, xssR; green, xssS).
 
 XssQ, a STAND protein with a DNA binding domain is indeed the transcriptional activator for xssE and other induced genes. XssQ homologs are found widely throughout the cyanobacteria but the set of XssS/XssR/XssQ is found near the gene cluster for sulfated EPS biosynthesis with sulfotransferases in many cyanobacteria (Figure 4—figure supplement 2, Supplementary file 3). Consensus sequences are also found in upstream of some genes in the cluster, suggesting that the XssS/XssR/XssQ system may operate universally for induction of sulfated EPS production under certain environmental conditions such as cold temperature.
 
@@ -74,31 +200,258 @@ Finally, sulfated polysaccharides are expected to be healthy foods, industrial m
 
 ## Materials and methods
 
-## Cyanobacterial strains and cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr1943</td>
+      <td>GenBank</td>
+      <td>Gene ID:952818</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr1043</td>
+      <td>GenBank</td>
+      <td>Gene ID:953647</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll0501</td>
+      <td>GenBank</td>
+      <td>Gene ID:953286</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr1118</td>
+      <td>GenBank</td>
+      <td>Gene ID:952865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5042</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5043</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655983</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5044</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>ssl5045</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655897</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5046</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655982</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5047</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5048</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655974</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5049</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5050</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5051</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655936</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5052</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5053</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5054</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5055</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5056</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655868</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5057</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>slr5058</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655931</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5059</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655971</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll5060</td>
+      <td>GenBank</td>
+      <td>Gene ID:2655968</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Synechocystis sp. PCC 6803)</td>
+      <td>sll1581</td>
+      <td>GenBank</td>
+      <td>Gene ID:953845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Synechocystis sp. PCC 6803)</td>
+      <td>Wild-type strain; WT</td>
+      <td>Doi.org/10.1093/dnares/dsr042</td>
+      <td>PCC-P</td>
+      <td>Motile</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Synechocystis sp. PCC 6803)</td>
+      <td>Non-motile strain; NM</td>
+      <td>Doi.org/10.1093/dnares/dsr042</td>
+      <td>GT-I</td>
+      <td>Glucose-tolerant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>JM109</td>
+      <td>Takara</td>
+      <td>Takara:9052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPCR-Script (plasmid)</td>
+      <td>STRATAGENE</td>
+      <td>STRATAGENE:211186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In-Fusion HD Cloning</td>
+      <td>Clontech</td>
+      <td>Clontech:639635</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcian Blue 8GX</td>
+      <td>MERCK</td>
+      <td>MERCK:05500</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cyanobacterial strains and cultures
 
 The motile substrain PCC-P of the unicellular cyanobacterium Synechocystis sp. PCC 6803, which exhibits phototaxis (Yoshihara et al., 2000) and forms bloom-like aggregates, was used as the WT in this work. A non-motile glucose-tolerant substrain, which has been widely used for studies of photosynthesis, was used for comparison (Chin et al., 2018). Cells were maintained in 50 mL of BG11 liquid medium (Stanier et al., 1971) under continuous illumination of fluorescent lamps from outside (30 µmol photons/m2/s) with bubbling of 1% CO2 in air at 31°C, or on 1.5% agar plates. Cell density was monitored at 730 nm.
 
-## Construction of plasmids and mutants
+### Construction of plasmids and mutants
 
 Primers used are listed in Supplementary file 5. Plasmids and mutants were constructed as described (Chin et al., 2018). In brief, the DNA fragments, antibiotic-resistance cassettes, the trc promoter, and plasmid vectors were amplified by PCR using PrimeSTAR MAX DNA polymerase (Takara, Shiga, Japan) and combined using the In-Fusion System (Takara). The resulting plasmid constructs were confirmed by DNA sequencing.
 
 Gene disruption was performed in two different ways. One method was replacement of a large portion of a targeted gene(s) with an antibiotic-resistance cassette. The other method was replacement of the translation initiation codon with a stop codon. In both cases, the screening cassette without the terminator was inserted in the direction of the targeted gene(s) to allow transcriptional read-through of the downstream gene(s). For overexpression, gene expression was constitutively driven by the strong trc promoter in two ways: integration of a target gene with the strong trc promoter into a neutral site near slr0846 or IS203c, or replacement of the target-gene promoter with the trc promoter. Natural transformation and subsequent homologous recombination were performed as described (Chin et al., 2018). The antibiotic concentration for the selection of transformants was 20 μg/mL chloramphenicol, 20 μg/mL kanamycin, and/or 20 μg/mL spectinomycin. Complete segregation of the transformed DNA in the multicopy genome was confirmed by PCR using primers listed in Supplementary file 5, and the transformants are listed in Supplementary file 6.
 
-## Bloom formation
+### Bloom formation
 
 The bloom was reproducibly formed using the two-step culture regime we developed in this work. Before the bloom formation experiment, cells were precultured once in liquid after transfer from plates. In the first step, cells inoculated at OD730 = 0.2 were grown with vigorous aeration under continuous light at 31°C or 20°C for 48 hr. Typically the cell density reached OD730 ~ 2. In the second step, the culture was shifted to the standing condition without bubbling under the same continuous light for another 48 hr (or longer) for cells to rise to the surface. Regarding the mutants of transmembrane glycosyltransferases, bloom formation was examined after 168 hr of the second-step culture. The final concentration of the photosynthesis inhibitor DCMU (3-(3,4-dichlorophenyl)-1,1-dimethylurea) was 100 μM.
 
-## EPS fractionation
+### EPS fractionation
 
 The fractionation method to isolate the crude EPS is shown in Figure 1—figure supplement 1A. The viscous materials including cells after the second step of culture were collected by filtration using a 1.0 μm pore PTFE membrane (Millipore). The trapped materials were gently and carefully recovered from the membrane using MilliQ water with the aid of flat-tip tweezers. The collected sample was vortexed and then centrifuged at 20,000 × g for 10 min to remove cells. The supernatant constituted the crude EPS that contained viscous EPS and possibly CPS.
 
 The refined fractionation method to isolate EPS is shown in Figure 1F. The entire culture at the end of the first step, which did not contain gas bubbles, was first centrifuged at 10,000 × g for 10 min to remove cells and CPS and then filtered through a 1.0 μm pore PTFE membrane. The trapped EPS was carefully recovered as described above. The flowthrough of the filtration was regarded as free polysaccharides, which were recovered by ethanol precipitation. CPS was released from the cell pellet by vigorous vortexing with MilliQ water and recovered by centrifugation to remove cells (20,000 × g for 10 min).
 
-## Sugar quantification
+### Sugar quantification
 
 Total sugar was quantified using the phenol-sulfate method (DuBois et al., 1956). A 100 μL aliquot of 5% (w/w) phenol was added to 100 μL of a sample in a glass tube and vortexed three times for 10 s. Then, 500 μL of concentrated sulfuric acid was added, and the tube was immediately vortexed three times for 10 s and then kept at 30°C for 30 min in a water bath. Sugar content was measured by absorption at 487 nm using a UV-2600PC spectrophotometer (Shimadzu, Japan, Tokyo). Any contamination of the BG11 medium was evident by slight background coloration. This background was subtracted on the basis of the extrapolation of absorption at 430 nm, where the coloration due to sugars was minimal. Glucose was used as the standard. Some EPS samples were highly viscous, so we vortexed and sonicated them before measurement. Statistical significance was determined using Welch’s t test.
 
-## Sugar composition analysis
+### Sugar composition analysis
 
 The collected EPS samples were dialyzed with MilliQ water and then freeze-dried for 3 days. Sugar composition was analyzed by Toray Research Center, Inc (Tokyo, Japan). A part of the fluffy sample (WT, 0.298 mg; ΔxssS, 0.203 mg) was dissolved in 200 μL of 2 M trifluoroacetic acid and hydrolyzed at 100°C for 6 hr. The treated sample was vacuum-dried with a centrifugal evaporator, redissolved in 400 μL MilliQ water, and filtered through a 0.22 μm pore filter. This sample was used for the analysis.
 
@@ -106,22 +459,22 @@ Monosaccharide composition was determined by HPLC with the LC-20A system (Shimad
 
 The SO42− content was determined by anion exchange column chromatography using the ISC-2100 system (Thermo Fisher Scientific, Waltham, MA). The column was eluted via a gradient of 0–1.0 M KOH. The separation column was IonPac ASI l-HC-4 μm (Thermo Fisher Scientific). Electric conductivity was used for detection.
 
-## Alcian blue staining
+### Alcian blue staining
 
 The polysaccharides were stained with 1% Alcian blue 8GX (Merck) for 10 min in 3% acetic acid (pH 2.5) or 0.5 N HCl (pH 0.5) as previously described (Di Pippo et al., 2013).
 
-## Quantitative PCR
+### Quantitative PCR
 
 The qPCR was performed as described in our previous work (Maeda et al., 2018). Cells were harvested by centrifugation at 5000 × g for 10 min at 4°C. Cell disruption and RNA extraction were done using an RNeasy Mini kit for bacteria (Qiagen, Venlo, The Netherlands). In addition, cells were disrupted five times by mechanical homogenization with zirconia beads (0.1 mm diameter) in a microhomogenizing system (Micro Smash MS-100, TOMY SEIKO, Tokyo, Japan) at 5000 rpm for 40 s. For cDNA preparation, RNA was reverse-transcribed using random primers (PrimeScript RT reagent kit with gDNA eraser, Takara). Real-time PCR was performed using the THUNDERBIRD SYBR qPCR Mix (Toyobo) and the Thermal Cycler Dice Real Time System II (Takara). The transcript level in each strain was normalized to the internal control (rnpB). The primers used are listed in Supplementary file 5.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 The expression and purification of recombinant His-tagged proteins and EMSA were performed as described in our previous works (Hirose et al., 2010; Maeda et al., 2014). In brief, His-tagged XssQ was expressed using pET28a vector system and Escherichia coli C41(DE3) strain. The protein was purified by Histrap HP column (Cytiva, Tokyo, Japan) and AKTA prime system (Cytiva). For probe and native competitor, the upstream region of xssE was amplified with the primer set xssEup-1F/2R (total 251 bp). As a mutant competitor, the same region of the chemically synthesized DNA fragment containing mutations in the two consensus sequences was used for amplification with the same primer set as mentioned above. Labeling of the DNA probe, electrophoresis, and autoradiography were performed as described (Midorikawa et al., 2009). We incubated the aliquots of the XssQ protein (0, 500, 1000, or 3000 ng/lane) with the radiolabeled probe for 30 min at room temperature. For competition, 3000 ng of XssQ was incubated with the probe and 20 pmol of unlabeled competitors (native or mutant).
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 RNAs for RNA-seq analysis were extracted as described above. Library construction for RNA sequencing analysis was conducted as described previously (Ohbayashi et al., 2016). The average number of raw read pairs per sample was 2.84 million. The reads were trimmed using CLC Genomics Workbench ver. 12.0 (QIAGEN) with the following parameters; Phred quality score >30; ambiguous nucleotides allowed: 1; automatic read-through adaptor trimming: yes; removing the terminal 15 nucleotides from the 5’ end; and removing truncated reads of less than 20 nucleotides in length. Trimmed reads were mapped to the all genes in Synechocystis sp. PCC 6803 using CLC Genomics Workbench ver. 12.0 with the following parameters; mismatch cost: 2; indel cost: 3; length fraction: 0.8; similarity fraction: 0.9; and maximum number of hits for a read: 10. In the comparison between WT and mutants ΔxssS, and ΔxssQ (Figure 3—figure supplement 1), the genome information (accession numbers, chromosome: CP003265, pSYSM: CP003266, pSYSX: CP003269, pSYSA: CP003267, pSYSG: CP003268, pCA2.4: CP003270, pCB2.4: CP003271, and pCC5.2: CP003272) was used as a reference, and in the comparison between the motile WT (PCC-P) and non-motile (NM) substrains (Supplementary file 4), the genome information (accession numbers, chromosome: AP012276, pSYSM: AP004310, pSYSX: AP006585, pSYSA: AP004311, pSYSG: AP004312, pCA2.4: CP003270, pCB2.4: CP003271, and pCC5.2: CP003272) was used as a reference. Reads per kilobase per million mapped reads (RPKM) were calculated using CLC Genomics Workbench ver. 20.0. Original sequence reads were deposited in the DRA/SRA database with the following accession numbers, DRA011755. The accession number of BioProject was PRJDB11449.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 The sequences of the proteins were obtained from NCBI (http://www.ncbi.nlm.nih.gov/) and Pfam (http://pfam.xfam.org/) (Finn et al., 2016). The domain architecture was searched using the Simple Modular Architecture Research Tool, SMART (Letunic et al., 2015). Glycosyltransferase classifications were based on the CAZy database (http://www.cazy.org/) (Henrissat, 1991; Lombard et al., 2014). Amino acid sequence similarity was evaluated by NCBI BLAST search.

@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/02f99v835 Endocrinology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany
-2. https://ror.org/02a33b393 Max Planck Institute for Evolutionary Anthropology Leipzig Germany
-3. https://ror.org/01w6qp003 Domestication Lab, Konrad Lorenz Institute of Ethology, Department of Interdisciplinary Life Sciences, University of Veterinary Medicine Vienna Vienna Austria
-4. https://ror.org/04qmmjx98 Comparative BioCognition, Institute of Cognitive Science, University of Osnabrück Osnabrück Germany
-5. https://ror.org/00y4zzh67 Center for the Advanced Study of Human Paleobiology, Department of Anthropology, George Washington University Washington United States
-6. https://ror.org/026stee22 Max Planck Institute of Animal Behavior Konstanz Germany
-7. https://ror.org/00ed5y156 Centre for Research and Conservation, Royal Zoological Society of Antwerp Antwerp Belgium
+1. Endocrinology Laboratory, German Primate Center, Leibniz Institute for Primate Research Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
+2. Max Planck Institute for Evolutionary Anthropology Leipzig Germany ([ROR:02a33b393](https://ror.org/02a33b393))
+3. Domestication Lab, Konrad Lorenz Institute of Ethology, Department of Interdisciplinary Life Sciences, University of Veterinary Medicine Vienna Vienna Austria ([ROR:01w6qp003](https://ror.org/01w6qp003))
+4. Comparative BioCognition, Institute of Cognitive Science, University of Osnabrück Osnabrück Germany ([ROR:04qmmjx98](https://ror.org/04qmmjx98))
+5. Center for the Advanced Study of Human Paleobiology, Department of Anthropology, George Washington University Washington United States ([ROR:00y4zzh67](https://ror.org/00y4zzh67))
+6. Max Planck Institute of Animal Behavior Konstanz Germany ([ROR:026stee22](https://ror.org/026stee22))
+7. Centre for Research and Conservation, Royal Zoological Society of Antwerp Antwerp Belgium ([ROR:00ed5y156](https://ror.org/00ed5y156))
 
 † Corresponding author
 
@@ -51,43 +51,860 @@ We complemented physiological measures with behavioral scores of nipple contact 
 
 Our main results are summarized in Table 1, and model structures can be derived from Tables 2 and 3, and from Supplementary file 1. We applied nonlinear generalized additive mixed models (GAMM) to investigate continuous changes in our parameters of interest around the time of sibling birth and compared those models to identical ones in which we added a categorical distinction between before and after sibling birth to allow noncontinuous, sudden changes at sibling birth. We considered that our response variables may naturally change with offspring age. Age-related changes in our response variables might (a) directly mediate potential changes during TTS in case of strong temporal overlap and (b) moderate these effects as the impact of TTS may decline with decreasing dependency of older offspring from maternal support. To control for potential mediation, we ran a model with age for all our response variables. If TTS has effects beyond weaning, we would expect sudden changes at the time of sibling birth also after controlling for age-related changes. To investigate whether continuous and sudden effects of sibling birth decrease with increasing age at sibling birth, we split individuals along the median (5.11 years old at sibling birth) and ran additional models that allowed for different trajectories around sibling birth for the two age cohorts. Finally, we generated continuous two-way interaction plots to visually inspect whether and how the trajectories around sibling birth changed with increasing offspring age (for more details see ‘Methods’).
 
-## Physiological changes during TTS
+**Table 1.**
+ Summary of the main findings of analyses of physiological markers and scores of older offspring behavioral during the transition to siblinghood (TTS).
 
-## Urinary cortisol level changes in response to TTS
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cortisol</th>
+      <th>Neopterin</th>
+      <th>Total T3</th>
+      <th>Nursing</th>
+      <th>Riding</th>
+      <th>5m-proximity with mother</th>
+      <th>Body contact with mother</th>
+      <th>Independent foraging</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sudden change at sibling birth</td>
+      <td>Yes, increase</td>
+      <td>Yes, decrease</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes, but increase</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Effect of TTS attenuates with offspring age</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No: all changes before sibling birth</td>
+      <td>Yes, effect exists only up to 5 years old</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No: all changes finished before sibling birth</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ General additive mixed model results for physiological changes (urinary cortisol, urinary neopterin, and urinary total T3 levels; all log-transformed) in the older offspring 7 years before and after sibling birth.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Reference</td>
+      <td colspan="4">Log cortisol</td>
+      <td colspan="4">Log neopterin</td>
+      <td colspan="4">Log total T3</td>
+    </tr>
+    <tr>
+      <td>Factor variables:</td>
+      <td>Category</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>t</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>(intercept)</td>
+      <td></td>
+      <td>0.85</td>
+      <td>0.05</td>
+      <td>16.23</td>
+      <td></td>
+      <td>2.41</td>
+      <td>0.04</td>
+      <td>58.68</td>
+      <td></td>
+      <td>0.89</td>
+      <td>0.05</td>
+      <td>17.26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>0.11</td>
+      <td>0.05</td>
+      <td>2.09</td>
+      <td>0.037</td>
+      <td>–0.03</td>
+      <td>0.04</td>
+      <td>–0.69</td>
+      <td>0.488</td>
+      <td>–0.11</td>
+      <td>0.05</td>
+      <td>–2.19</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td>After S-birth*</td>
+      <td>Before†</td>
+      <td>0.43</td>
+      <td>0.08</td>
+      <td>5.27</td>
+      <td>&lt;0.001</td>
+      <td>–0.19</td>
+      <td>0.06</td>
+      <td>–3.01</td>
+      <td>0.002</td>
+      <td>0.13</td>
+      <td>0.08</td>
+      <td>1.61</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>Smooth term variables:</td>
+      <td></td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>F</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>F</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>Time-S-birth: males</td>
+      <td></td>
+      <td>2.65</td>
+      <td>3.17</td>
+      <td>1.17</td>
+      <td>0.262</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.53</td>
+      <td>0.469</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>3.76</td>
+      <td>0.054</td>
+    </tr>
+    <tr>
+      <td>Time-S-birth: females</td>
+      <td></td>
+      <td>1.77</td>
+      <td>2.12</td>
+      <td>0.69</td>
+      <td>0.433</td>
+      <td>1.50</td>
+      <td>1.83</td>
+      <td>0.56</td>
+      <td>0.603</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.01</td>
+      <td>0.922</td>
+    </tr>
+    <tr>
+      <td>Time-S-birth: males</td>
+      <td>Females</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.05</td>
+      <td>0.818</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.23</td>
+      <td>0.585</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>2.85</td>
+      <td>0.093</td>
+    </tr>
+    <tr>
+      <td>Age: males</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>3.22</td>
+      <td>0.074</td>
+      <td>3.19</td>
+      <td>3.74</td>
+      <td>4.25</td>
+      <td>0.002</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Age: females</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.37</td>
+      <td>0.243</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.03</td>
+      <td>0.874</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Age: males</td>
+      <td>Females</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.43</td>
+      <td>0.513</td>
+      <td>2.17</td>
+      <td>2.63</td>
+      <td>1.08</td>
+      <td>0.243</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Daytime</td>
+      <td></td>
+      <td>1.20</td>
+      <td>1.37</td>
+      <td>29.27</td>
+      <td>&lt;0.001</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>4.82</td>
+      <td>0.029</td>
+      <td>2.10</td>
+      <td>2.56</td>
+      <td>1.77</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <td>Seasonal effect</td>
+      <td></td>
+      <td>2.38</td>
+      <td>3.00</td>
+      <td>11.18</td>
+      <td>&lt;0.001</td>
+      <td>0.51</td>
+      <td>3.00</td>
+      <td>0.22</td>
+      <td>0.278</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>0.00</td>
+      <td>0.723</td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Time-S-birth per ID (smooth)</td>
+      <td></td>
+      <td>0.00</td>
+      <td>111.0</td>
+      <td>0</td>
+      <td>0.238</td>
+      <td>0.00</td>
+      <td>112.0</td>
+      <td>0</td>
+      <td>0.850</td>
+      <td>7</td>
+      <td>148.0</td>
+      <td>0</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Age per ID (smooth)</td>
+      <td></td>
+      <td>0.00</td>
+      <td>109.0</td>
+      <td>0</td>
+      <td>0.291</td>
+      <td>0.00</td>
+      <td>108.0</td>
+      <td>0</td>
+      <td>0.737</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mother ID (intercept)</td>
+      <td></td>
+      <td>0.00</td>
+      <td>13.0</td>
+      <td>0</td>
+      <td>0.175</td>
+      <td>0.00</td>
+      <td>13.0</td>
+      <td>0</td>
+      <td>0.313</td>
+      <td>0</td>
+      <td>13.0</td>
+      <td>0</td>
+      <td>0.230</td>
+    </tr>
+    <tr>
+      <td>Year (intercept)</td>
+      <td></td>
+      <td>0.00</td>
+      <td>1.0</td>
+      <td>0</td>
+      <td>0.012</td>
+      <td>0.00</td>
+      <td>1.0</td>
+      <td>0</td>
+      <td>0.277</td>
+      <td>0</td>
+      <td>1.0</td>
+      <td>0</td>
+      <td>0.850</td>
+    </tr>
+    <tr>
+      <td>R2adj (deviance explained)</td>
+      <td></td>
+      <td colspan="4">0.311 (33.8%)</td>
+      <td colspan="4">0.169 (19.6%)</td>
+      <td colspan="4">0.117 (15.3%)</td>
+    </tr>
+    <tr>
+      <td>N (p-value, full/null comp)</td>
+      <td></td>
+      <td colspan="4">319 (&lt;0.001)</td>
+      <td colspan="4">314 (&lt;0.001)</td>
+      <td colspan="4">319 (0.020)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Green indicates classic interaction term derived from a separate model calculation (see ‘Methods’). Data points are physiological measures corrected for specific gravity (SG). All smooths are not controlled for age to show cumulative pattern.ID = individual; T3 = total triiodothyronine; S-birth = sibling birth. .*After sibling birth.†Before sibling birth._
+
+**Table 3.**
+ Generalized additive mixed model (GAMM) results of behavioral changes (nipple contact, riding, and body contact and 5 m proximity with the mother) in the older offspring around sibling birth (±2 years).Binomial GAMMs on proportions of time per day and individual.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Reference</th>
+      <th colspan="4">Nipple contact</th>
+      <th colspan="4">Riding</th>
+      <th colspan="4">Proximity</th>
+      <th colspan="4">Body contact with mother</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Factor variables:</td>
+      <td>Category</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>z</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>z</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>z</td>
+      <td>p</td>
+      <td>Est.</td>
+      <td>SE</td>
+      <td>z</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>(intercept)</td>
+      <td></td>
+      <td>–7.34</td>
+      <td>0.84</td>
+      <td>–8.73</td>
+      <td></td>
+      <td>–1.36</td>
+      <td>0.52</td>
+      <td>–2.65</td>
+      <td></td>
+      <td>0.21</td>
+      <td>0.16</td>
+      <td>1.30</td>
+      <td></td>
+      <td>–2.79</td>
+      <td>0.19</td>
+      <td>–14.50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Males</td>
+      <td>Females</td>
+      <td>0.76</td>
+      <td>0.61</td>
+      <td>1.24</td>
+      <td>0.21</td>
+      <td>1.18</td>
+      <td>0.36</td>
+      <td>3.22</td>
+      <td>0.001</td>
+      <td>–0.08</td>
+      <td>0.13</td>
+      <td>–0.66</td>
+      <td>0.51</td>
+      <td>0.22</td>
+      <td>0.11</td>
+      <td>2.05</td>
+      <td>0.040</td>
+    </tr>
+    <tr>
+      <td>After YS-birth*</td>
+      <td>Before†</td>
+      <td>1.39</td>
+      <td>0.88</td>
+      <td>1.55</td>
+      <td>0.12</td>
+      <td>–2.00</td>
+      <td>0.55</td>
+      <td>–3.64</td>
+      <td>&lt;0.001</td>
+      <td>0.02</td>
+      <td>0.10</td>
+      <td>0.18</td>
+      <td>0.85</td>
+      <td>0.47</td>
+      <td>0.11</td>
+      <td>4.17</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Year</td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Smooth term Variables:</td>
+      <td></td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>Chi²</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>Chi²</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>Chi²</td>
+      <td>p</td>
+      <td>edf</td>
+      <td>Ref. df</td>
+      <td>Chi²</td>
+      <td>p</td>
+    </tr>
+    <tr>
+      <td>T-S-birth: males</td>
+      <td></td>
+      <td>4.45</td>
+      <td>4.95</td>
+      <td>12.38</td>
+      <td>0.002</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.03</td>
+      <td>0.86</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>6.91</td>
+      <td>0.009</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>12.48</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>T-S-birth: females</td>
+      <td></td>
+      <td>3.72</td>
+      <td>4.19</td>
+      <td>12.38</td>
+      <td>0.017</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>5.24</td>
+      <td>0.022</td>
+      <td>3.28</td>
+      <td>3.37</td>
+      <td>8.03</td>
+      <td>0.032</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>28.70</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>T-S-birth: males</td>
+      <td>Females</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.20</td>
+      <td>0.66</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>2.78</td>
+      <td>0.095</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.05</td>
+      <td>0.83</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.04</td>
+      <td>0.31</td>
+    </tr>
+    <tr>
+      <td>Age: males</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.55</td>
+      <td>0.46</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>19.89</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Age: females</td>
+      <td></td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.12</td>
+      <td>0.71</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>4.39</td>
+      <td>0.036</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Age: males</td>
+      <td>Females</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.99</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>4.38</td>
+      <td>0.036</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Daytime</td>
+      <td></td>
+      <td>3.64</td>
+      <td>3.92</td>
+      <td>14.31</td>
+      <td>0.012</td>
+      <td>3.51</td>
+      <td>3.85</td>
+      <td>7.46</td>
+      <td>0.09</td>
+      <td>3.81</td>
+      <td>3.98</td>
+      <td>170.67</td>
+      <td>&lt;0.001</td>
+      <td>3.96</td>
+      <td>4.00</td>
+      <td>456.4</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Seasonal effect</td>
+      <td></td>
+      <td>1.10</td>
+      <td>3.00</td>
+      <td>1.89</td>
+      <td>0.021</td>
+      <td>8.89</td>
+      <td>3.00</td>
+      <td>1.91</td>
+      <td>0.063</td>
+      <td>0.00</td>
+      <td>3.00</td>
+      <td>0.00</td>
+      <td>0.05</td>
+      <td>2.64</td>
+      <td>3.00</td>
+      <td>61.22</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Time-S-birth per ID (smooth)</td>
+      <td></td>
+      <td>3.13</td>
+      <td>113.00</td>
+      <td>82.07</td>
+      <td>&lt;0.001</td>
+      <td>33.32</td>
+      <td>70.00</td>
+      <td>251.9</td>
+      <td>&lt;0.001</td>
+      <td>62.11</td>
+      <td>76.00</td>
+      <td>1323.3</td>
+      <td>&lt;0.001</td>
+      <td>58</td>
+      <td>76.0</td>
+      <td>1569</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age per ID (smooth)</td>
+      <td></td>
+      <td>8.05</td>
+      <td>94.00</td>
+      <td>34.07</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>61.00</td>
+      <td>0.00</td>
+      <td>0.010</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Mother ID (intercept)</td>
+      <td></td>
+      <td>2.45</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>10.00</td>
+      <td>0.00</td>
+      <td>0.001</td>
+      <td>6.28</td>
+      <td>12.00</td>
+      <td>0.00</td>
+      <td>&lt;0.001</td>
+      <td>0.01</td>
+      <td>12.0</td>
+      <td>0.01</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Date (intercept)</td>
+      <td></td>
+      <td>3.65</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.23</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>0.28</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>&lt;0.001</td>
+      <td>0.00</td>
+      <td>1.00</td>
+      <td>0.00</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>R2adj (deviance explained)</td>
+      <td></td>
+      <td colspan="4">0.39 (62.4%)</td>
+      <td colspan="4">0.827 (81.7%)</td>
+      <td colspan="4">0.226 (29.3%)</td>
+      <td colspan="4">0.319 (39.7%)</td>
+    </tr>
+    <tr>
+      <td>N (p-value, full/null comp)</td>
+      <td></td>
+      <td colspan="4">545 (&lt;0.001)</td>
+      <td colspan="4">301 (&lt;0.001)</td>
+      <td colspan="4">545 (&lt;0.001)</td>
+      <td colspan="4">545 (&lt;0.001)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Green: classic interaction term derived from a separate model calculation (see ‘Methods’). Statistics for year (categorical control variable) not shown for clarity.ID: individual; S-birth = sibling birth; ‘:’ = interaction term.*After sibling birth.†Before sibling birth._
+
+### Physiological changes during TTS
+
+#### Urinary cortisol level changes in response to TTS
 
 At the time of sibling birth, older offspring’s cortisol levels showed a significant and sudden, noncontinuous, up to fivefold increase from the level prior to this event (cortisol model with one sudden change; Figure 1A–C, Table 2). Compared to a model that allowed for nonlinear, but only continuous, fitting of the data (cortisol model without sudden change, Figure 1—figure supplement 1A and B), allowing for discontinuity (i.e., a sudden change) in cortisol levels at the time of sibling birth (cortisol model with sudden change), significantly improved model fit (Figure 1—figure supplement 1A and B; Chi2(1) = 9.30, p<0.001), even if the continuous model was allowed to be wiggly and to overfit the data (Figure 1—figure supplement 2A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-v2.jpg)
+
+**Figure 1.:** Data points are physiological measures corrected for specific gravity (SG). All smooths are not controlled for age to show cumulative pattern. Axes for physiological variables are log-transformed. 95% confidence intervals are plotted. Left-hand plots (A, D, G): sex-specific trajectories around sibling birth (blue: males; red: females). Middle plots (B, E, H): age-specific trajectories around sibling birth for offspring that were older (purple) or younger (yellow) than the median value of 5.1 years at sibling birth. Right-hand plots (C, F, I): interaction plots visualizing how trajectories around sibling birth change with increasing offspring age at sibling birth (scale from dark green [lowest levels] to brown [highest levels]; white space: extrapolation would be unreliable due to lacking data) for the respective perspective plots, see Figure 1—figure supplement 5. (A) Urinary cortisol levels showed a significant, sudden rise to fivefold values at sibling birth (dotted line); no sex differences or age effects. (B, C) The sudden rise in cortisol levels was independent of the age of the older offspring at sibling birth. (D) Urinary neopterin levels decreased by 1/3 at sibling birth (dotted line; no sex differences or age effects). (E, F) The sudden decrease in neopterin levels was independent of the age of the older offspring at sibling birth. (G–I). Urinary total T3 levels increased around sibling birth, but this effect was indistinguishable from a general age effect. There was no significant sudden change at sibling birth in total T3 levels (G), and there was no significant effect of the age at sibling birth (H, I).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Confidence intervals: 95% (dark gray) and 99.9% (light gray). Dotted lines: sibling birth (left) and potential second discontinuity in data at 7 (cortisol) and 4.5 months (neopterin) after sibling birth. Data points are original values of physiological measures corrected for specific gravity (SG) and are depicted with females in red and males in blue. All smooths are not controlled for age to show cumulative pattern. Axes for physiological variables are log-transformed. Real models were additionally allowed for sex-specific trajectories (see main text). (A–C) Response variable: urinary cortisol. (A) For all our physiological and behavioral response variables, we first ran a model with a continuous smooth only that allows for nonlinear modeling of changes around sibling birth but not for a discontinuity ( = sudden change) in values. (B) Next, we ran an identical model as in (A) but additionally allowing for an intercept difference between before and after the birth of a younger sibling, thereby allowing for a discontinuity and thus an abrupt change of response values at sibling birth. Significance of this discontinuity was estimated through model comparison between (A) and (B). (C) The same as (B) but additionally with separate smooths ( = trajectories) for offspring that were younger or older than the median age (5.11 years) at sibling birth, allowing for a change in pattern with increasing offspring age. Significance of this age difference was estimated through model comparison between (B) and (C). To allow for visual inspection, we further provide continuous interaction plots showing how trajectories in the response variables around sibling birth change continuously with the age of the offspring at sibling birth. (D–F) Same as (A–C) but for urinary neopterin.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** We tested whether the additional allowance for one or two discontinuities still provides a better model fit in a model comparison if compared with such continuous but highly flexible smooths that could theoretically also sufficiently fit the sudden changes. k = number of basis functions (here set to 50 for the predictor variables but kept at 6 for the random smooths to allow for high wiggliness and also for model comparison with the discontinuous models). sp = smoothing penalty, set to low values (and deactivating the default, automatic smoothing penalty estimation of the generalized additive mixed models [GAMM]).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Between the two vertical dotted lines, we did not find any low cortisol levels. Data points are physiological measures corrected for specific gravity (SG).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Data points are physiological measures corrected for specific gravity (SG). All smooths are not controlled for age to show cumulative pattern. Axes for physiological variables are log-transformed. 95% confidence intervals are plotted. Left-hand plots (A, D): sex-specific trajectories around sibling birth (blue: males; red: females). Middle plots (B, E): age-specific trajectories around sibling birth, for offspring that were older (purple) or younger (yellow) than the median value of 5.1 years at sibling birth. Right-hand plots (C, F): interaction plots visualizing how trajectories around sibling birth change with increasing offspring age at sibling birth (scale from dark green [lowest levels] to brown [highest levels]; white space: extrapolation would be unreliable due to lacking data).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The plots are identical to the plots in Figure 1 and represent another type of visualization of the contour plots shown in Figure 1C, F, and I. Z-axes represent levels of physiological measures (log-transformed and corrected for specific gravity). All smooths are not controlled for age to show cumulative pattern. (A) Cortisol levels before (left) and after (right; both on same scale) sibling birth. (B) Neopterin levels before (left) and after (right; both on same scale) sibling birth. (C) Total T3 levels before and after sibling birth. Red line = time of sibling birth.
 
 Post-hoc visual inspection of urinary cortisol levels indicated that urinary cortisol remained high for a long time. None of the older offspring’s samples collected during the months after sibling birth had low cortisol levels (Figure 1A–C, Figure 1—figure supplement 3); cortisol measures in all samples collected within 7 months following sibling birth were above the upper 99.9% confidence interval of the values from before sibling birth. Lower cortisol values appeared later, only after 7 months post-birth (Figure 1—figure supplement 3). To verify this unexpected pattern, we ran another model allowing for an additional discontinuity in cortisol levels, that is, one at sibling birth and another one 7 months later. This model (Supplementary file 1) significantly improved model fit (cortisol model with two sudden changes compared to the model with only one sudden change at sibling birth, Figure 1—figure supplement 4A: Chi2(1) = 18.36, p<0.001; compared with the continuous model without sudden change, Figure 1—figure supplement 1A: Chi2(2) = 27.65, p<0.001). Cortisol levels in samples collected after the 7-month period were not different from before sibling birth (Supplementary file 1). While the model with the two discontinuities describes our data better mathematically, there is no obvious biological explanation for the second change (i.e., the sudden decline in cortisol) after 7 months. However, also in the model with only one discontinuity at sibling birth and a smooth continuous decline thereafter (Figure 1A–C), the cortisol levels took over 7 months to return to previous levels. Hence, the absence of low cortisol levels after sibling birth was evident in both models.
 
 Cortisol trajectories around sibling birth were independent of the age of the older sibling. Allowing for different levels and trajectories in older and younger individuals did not improve the model (Figure 1B, Figure 1—figure supplement 4B; Chi2(3) = 0.28, p=0.91), suggesting that the cortisol level changes were not moderated by offspring age, a finding that was also apparent from visual inspection of continuous interaction plots (see Figure 1C, Figure 1—figure supplement 5A, B for perspective plots). Hence, the effect of TTS did not decrease with increasing age of the older sibling. Introducing two sudden changes, cortisol trajectories around sibling birth did not decrease with increasing age of the older sibling (Figure 1B, Figure 1—figure supplement 4B, C; Chi2(3) = 1.12, p=0.53) and sex of older sibling did not affect the results (Figure 1A, Table 2).
 
-## Urinary neopterin level changes in response to TTS
+#### Urinary neopterin level changes in response to TTS
 
 Just after sibling birth, urinary neopterin levels of older offspring decreased significantly and discontinuously (neopterin model with one sudden change, Figure 1D–F, Table 2). Compared to the model allowing for nonlinear but continuous fitting of the data (neopterin model without sudden changes, Figure 1—figure supplement 1D), a model with discontinuity in neopterin levels at the time of sibling birth significantly increased model fit (neopterin model with one sudden change, Figure 1D; Chi2(1) = 4.28, p=0.003), even if the continuous model allowed for extreme wiggliness and overfitting of the data (Figure 1—figure supplement 2B). Post-hoc visual inspection of neopterin data suggested a 4.5-month post-birth period with particularly low neopterin levels (all values during the 4.5-month post-birth period were below the mean from before or after sibling birth). Running an additional model, allowing a second discontinuity in neopterin levels at 4.5 months, slightly improved model fit (neopterin model with two sudden changes, Figure 1—figure supplement 4D–F; Chi2(1) = 1.95, p=0.048). However, even when allowing for a second discontinuous change, neopterin levels in samples collected after sibling birth remained significantly lower than before sibling birth (Supplementary file 1).
 
 Model fit did not improve when we allowed moderation of this effect by the age of the older offspring at sibling birth (allowing for different pattern in older and younger individuals: Chi2(3) = 1.19, p=0.50, Figure 1E, F, Figure 1—figure supplement 4E, F), and again, there was no sex difference in neopterin levels before or after sibling birth (Figure 1D, Table 2).
 
-## Total T3 levels during TTS
+#### Total T3 levels during TTS
 
 Urinary total T3 levels increased around the time of sibling birth (Figure 1G–I), but this change could neither be attributed to the age of the older siblings nor to the event of sibling birth. The model including both variables was not significantly different from the null model (p=0.096). A reduced model including only the event of sibling birth but not age was significantly better than the null model (p=0.020, Figure 1G, Table 2). There was neither a significant sex effect on urinary total T3 levels during TTS nor a significant and sudden change in total T3 levels at sibling’s birth (Figure 1G, Table 2; allowing for sudden change: Chi2(1) = 1.27, p=0.11). Adding interaction terms with age of the older offspring did not improve the model, nor did it if allowed for differences between older and younger individuals (Chi2(3) = 0.40, p=0.85; Figure 1I).
 
-## Behavioral changes during TTS
+### Behavioral changes during TTS
 
-## Nipple contact during TTS
+#### Nipple contact during TTS
 
 The proportion of time the older offspring was observed in nipple contact showed a continuous decrease prior to sibling birth in both males and females, and reached zero about 2 months before sibling birth (Figure 2A–C, Table 3). Consequently, there was no sudden change at sibling birth in terms of nipple contact (Figure 2A–C, Table 3; Chi2(1) = 0.81, p=0.20). Allowing for different trajectories depending on the age categories of the older offspring at sibling birth (younger or older than 5.11 years old at sibling birth) significantly improved the model (allowing for different pattern in older and younger individuals: Chi2(3) = 4.99, p=0.019) and visual inspection of the data indicated that nipple contact persisted mainly in younger offspring (Figure 2B and C, Figure 2—figure supplement 1A).
 
-## Riding on the mother during TTS
+![Figure 2.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig2-v2.jpg)
+
+**Figure 2.:** Vertical dotted lines = time of putative conception (left dotted line) and sibling birth (right dotted line). Data points represent the proportion of time and circle size the underlying sample size (square-rooted; ranges: riding 3–44, all other behaviors 3–303). All smooths are not controlled for age to show cumulative pattern. 95% confidence intervals are plotted. Left-hand plots (A, D, G, J): sex-specific trajectories around sibling birth (blue: males; red: females). Middle plots (B, E, H, K): age-specific trajectories around sibling birth for offspring that were older (purple) or younger (yellow) than the median value of 5.1 years at sibling birth. Right-hand plots (C, F, I, L): interaction plots visualizing how trajectories around sibling birth change with increasing offspring age at sibling birth (scale from dark green [lowest levels] to brown [highest levels]; white space: extrapolation would be unreliable due to lacking data) for the respective perspective plots, see Figure 2—figure supplement 1. (A–C) Proportion of time spent suckling decreased to zero already before sibling birth (A) and was largely absent in older offspring (B, C), without a sudden change at sibling birth. (D–F) The proportion of time riding on the mother showed a significant and sudden decline at sibling birth (D), but this cut was evident only in offspring younger than 5 years old at sibling birth and not anymore in older offspring (E, F). (G–I) The proportion of time spent in body contact with the mother showed a significant and sudden increase at sibling birth, irrespective of the sex or age of the offspring. (J–L) The proportion of time in 5 m proximity to the mother decreased around sibling birth, but this effect was indiscernible from a general age effect. There was no significant sudden change at sibling birth (J), and there was no significant effect of offspring age at sibling birth (K, L).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The plots are identical with the plots in Figure 2 and represent another type of visualization of the contour plots (Figure 2C, F, I, and L). Z-axes represent proportion of time spent (A) nipple contact, (B) riding on mother, (C) in body contact with the mother, and (D) in 5 m proximity to the mother. All smooths are not controlled for age to show cumulative pattern. Red line = time of sibling birth.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77227/elife-77227-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** All smooths are not controlled for age to show cumulative pattern. 95% confidence intervals are plotted. (A, B) Vertical dotted lines = time of putative conception (left dotted line) and sibling birth (right dotted line). Data points represent the proportion of time and circle size the underlying sample size (square-rooted; range 1–182). (A) Sex-specific trajectories around sibling birth (blue: males; red: females). (B) Age-specific trajectories around sibling birth for offspring that were older (purple) or younger (yellow) than the median value of 5.1 years at sibling birth. (C, D) Interaction plots visualizing how trajectories around sibling birth change with increasing offspring age at sibling birth. (C) Contour plot: scale from dark green (lowest levels) to brown (highest levels). White space: extrapolation would be unreliable due to lacking data. Vertical dotted lines = time of putative conception and sibling birth. (D) The respective perspective plot. The z-axis represents the proportion of time spent foraging independently. Red line = time of sibling birth.
+
+#### Riding on the mother during TTS
 
 The proportion of time the older offspring was riding on the mother during travel continuously decreased before sibling birth, then showed a significant and sudden decline at the time of sibling birth, and remained low thereafter (Figure 2D–F, Table 3; allowing for discontinuity at sibling birth: Chi2(1) = 6.06, p<0.001). Overall, sons spent significantly more time riding on their mothers than daughters, and the continuous decline before sibling birth was only significant in daughters, whereas the sudden decline at sibling birth appeared to be stronger in sons (Figure 2D, Table 3).
 
 Adding the older offspring’s age categories significantly improved the model (allowing for different trajectories in younger and older individuals: Chi2(3) = 9.32, p=0.001; Figure 2E). Visual inspection of the data showed that the sudden decline in riding at sibling birth was only evident in older siblings belonging to the younger age cohort (less than 5.11 years old at sibling birth), whereas older siblings in the older age cohort were completely independent from maternal carrying before sibling birth (Figure 2E and F, Figure 2—figure supplement 1B). Hence, the effect of TTS on riding disappeared with increasing age of the older sibling.
 
-## Independent foraging during TTS
+#### Independent foraging during TTS
 
 There was no effect of TTS on the proportion of time that offspring spent foraging on their own at times when mothers were foraging, and none of the full or reduced models was significantly different from the corresponding null models. Visual inspection of model results revealed that the proportion of time spent foraging independently reached high levels before sibling birth and did not change during the time window around sibling birth that was considered in our models (Figure 2—figure supplement 1A–D). In fact, all subjects were rather independent in terms of foraging at the time of sibling birth, irrespective of their age. In particular, there was no significant discontinuity at sibling birth (Figure 2—figure supplement 2A–D).
 
-## Body contact and 5 m proximity with the mother during TTS
+#### Body contact and 5 m proximity with the mother during TTS
 
 The proportion of time that older offspring spent in body contact with or in proximity (within 5 m) to their mothers showed similar trajectories relative to sibling birth (Figure 2G–L). Both variables decreased before and around the time of sibling birth, reaching low levels at the time of gestation (Figure 2G–L, Table 3). This pattern could be attributed neither to the age of older offspring nor to the event of sibling birth. The models including both age and time around sibling birth were not significantly different from corresponding null models (body contact: p=0.055, 5 m proximity: p=0.062) but models without age were significantly different from the respective null models (both p<0.001, Table 3).
 
@@ -123,15 +940,15 @@ The results of our study showed that bonobos, one of humans’ closest living re
 
 ## Methods
 
-## Study site and species
+### Study site and species
 
 Data were collected from wild bonobos (P. paniscus) of the Bompusa West and East communities, at LuiKotale, Democratic Republic of the Congo. This bonobo population was never provisioned with food and lives in an intact, natural forest habitat. All subjects were habituated to human presence before the start of the study, were genotyped, and were individually known. We considered every offspring only for the next sibling birth; therefore, all older offspring in our study experienced the birth event for the first time. At the time of sibling birth, the older siblings were between 2.3 and 8.6 years old. Behavioral sampling included 397.17 hr of focal data on 11 immature females (mean = 36.11, SD = 14.70) and 253.95 hr on six immature males (mean = 42.33, SD = 27.62). Physiological measurements were performed using 319 (220 females, 99 males) urine samples of 20 females and 6 males (see Supplementary file 2).
 
-## Behavioral data collection and analysis
+### Behavioral data collection and analysis
 
 Behavioral data were collected between July 2015 and July 2018 via focal animal sampling (Altmann, 1974) whereby an infant was observed for 1 hr and its instantaneous behavior recorded at 1 min intervals (a detailed description in Lee et al., 2020). Data points were only included when focal subjects were continuously visible throughout the focal interval. Behaviors included nipple contact, defined as the infant applying its mouth to the nipple of the mother in a suckling manner, and riding, defined as the infant being transported as it clings ventrally or dorsally to its mother. For riding, we only considered data where the mother was traveling for at least three consecutive minutes to exclude situations where the mother was likely traveling for short distances only and riding on the mother would not have been important for the offspring. We recorded when the offspring was in body contact or within 5 m proximity to the mother and when it was foraging independently (i.e., searching for its own food instead of being food provisioned by the mother). For independent foraging of the offspring, we only considered scans where also the mother was foraging to cover typical foraging situations and reduce the influence of potential sampling bias, with foraging encompassing handling and ingesting food. For all other behaviors, all scores were considered and we calculated the proportion of instantaneous records per observation day.
 
-## Urine sample collection and analyses
+### Urine sample collection and analyses
 
 Urine samples were collected between July 2008 and August 2018. Samples were collected opportunistically throughout the day between 5 am and 6 pm capturing urine directly from leaves or pipetting urine from the vegetation. Samples that were contaminated with feces were excluded. Samples were protected from direct sunlight to avoid degradation and stored in liquid nitrogen upon arrival at camp on the same day. Samples were shipped frozen to the Max Planck Institute for Evolutionary Anthropology in Leipzig, Germany, for cortisol and total triiodothyronine analysis, and later to the German Primate Center, Göttingen, Germany, for neopterin measurement.
 
@@ -139,25 +956,25 @@ Our urine dataset consisted of 16.0 ± 5.6 samples per individual (mean ± SD), 
 
 Frozen samples were first thawed at room temperature, shaken for 10 s (VX-2500 Multi-tube Vortexer), and centrifuged for 5 min at 2.000 × g (Multifuge Heraeus), after which specific gravity (SG) was measured using a refractometer. All results were corrected for SG to adjust the concentration of the physiological marker for urine concentration of the specimen, which depends on an individual’s hydration status and time since last urination (Miller et al., 2004). Aliquots of samples were prepared at this time for later neopterin and total T3 analyses. In order to exclude a methodological effect concerning the order of the samples, for example, that all post-sibling birth samples are run together, all samples were randomly assigned to the measurements.
 
-## Urinary cortisol analyses
+#### Urinary cortisol analyses
 
 We extracted and measured urinary cortisol in 319 (220 females, 99 males) urine samples of 20 females and 6 males. Cortisol extraction from urine samples was performed following the protocol described in Hauser et al., 2008 for liquid chromatography–tandem mass spectrometry (LC-MS/MS) analyses. Each urine sample was mixed with an internal standard (prednisolone, methyltestosterone, d3-testosterone, d4-estrone, and d9-progesterone). Prednisolone was used as an internal standard to assess sample recovery and quantify urinary cortisol levels. We performed hydrolysis using β‐glucuronidase from Escherichia coli (activity: 200 U/40 μl). Extracts were purified by solid-phase extractions (Chromabond HR-X SPE cartridges: 1 ml, 30 mg), followed by a solvolysis with 2.5 ml ethyl acetate and 200 mg sulfuric acid. The extraction of cortisol was carried out with methyl tert-butyl ether. Finally, we reconstituted evaporated extracts in 30% acetonitrile.
 
 For urinary cortisol measurement, we used a LC-MS/MS with a Waters Acquity UPLC separation module equipped with a binary solvent manager, sample manager, and a column oven (Waters, Milford, MA). A Waters Acquity BEH C18 column (2.1 × 100 mm, 1.7 μm particle diameter) was used for chromatographic separation. Eluent A was water with 0.1% formic acid and eluent B was acetonitrile. We injected 10 μl of sample extract. The quantitative analysis of cortisol levels was realized in the range of 0.01–100 pg/μl. For cortisol quantification, we used MassLynx (version 4.1; QuanLynx Software). Final urinary cortisol results are represented in ng/ml corrected for SG. We accepted measurements of a batch if quality control measurements deviated less than 15% from the true cortisol concentration. Seventeen samples in which internal standard recovery deviated by more than 60% of the internal standard were remeasured via reinjection. In two samples, measurements were above the limit of the calibration curve, and were reinjected at a 1:10 dilution.
 
-## Urinary neopterin analyses
+#### Urinary neopterin analyses
 
 We measured urinary neopterin in 314 (215 females, 99 males) aliquots of 20 females and 6 males with a commercial neopterin ELISA for humans, previously validated to determine neopterin in bonobo urine (Behringer et al., 2017). Prior to neopterin measurement, urine samples were diluted (1:10–1:200 depending on SG) with the assay buffer provided by the supplier. We added to each well on the plate 20 µl of the diluted urine, 100 µl of the provided enzyme conjugate, and 50 µl of the neopterin antiserum. The plate was covered and incubated on an orbital shaker at 500 rpm in the dark for 90 min. The plate was then washed four times with 300 µl washing buffer, and 150 µl of tetramethylbenzidine substrate (TMB) solution was added. The plate was incubated again for 10 min, and the reaction was stopped by adding 150 µl of the provided stop solution. Optical density was measured photometrically at 450 nm.
 
 All samples were measured in duplicates according to the supplier’s instructions. Inter-assay variation for high- and low-value quality controls was 4.2 and 1.7% (N = 17 assays), respectively. Intra-assay variation was 8.9%. Final neopterin concentrations are expressed in ng/ml corrected for SG.
 
-## Urinary total T3 analyses
+#### Urinary total T3 analyses
 
 We measured total T3 in 319 (220 females, 99 males) urine aliquots of 20 females and 6 males with a commercial, competitive total triiodothyronine (T3) ELISA (Ref. RE55251, IBL International GmbH, Hamburg, Germany). Samples were measured with a 1:2, 1:5, or without dilution depending on SG. Then, 50 µl of the diluted sample with 50 µl of the provided assay reagent was pipetted into a well. We shook the plate for 10 s and incubated the plate afterward for 30 min at room temperature. We then added 50 µl of the provided triiodothyronine-enzyme conjugate to each well, shacked the plate again for 10 s, and incubated it again at room temperature for 30 min. We then washed the plate five times with 300 µl of the washing buffer and added 100 µl of TMB substrate. After 10 min of incubation, we stopped the reaction with 100 µl of the provided stop solution and read the plate at 450 nm with a microplate reader.
 
 All samples were also measured in duplicates. Inter-assay variation for high- and low-value quality controls was 6.3 and 5.6% (N = 25 assays), respectively. Intra-assay variation was 7.2%. Final total T3 concentrations are expressed in ng/ml corrected for SG.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed with R 4.1.3 (R Core Development Team, 2020), and all R-codes can be found in the data depository. We applied GAMM, which allow for the detection and analysis of complex nonlinear relationships (termed ‘smooths’) that are typical for developmental trajectories. We used function gam for all models (package mgcv; Wood, 2017), with smooth estimation based on penalized cubic regression splines. We checked for model assumptions and appropriate model settings using functions gam.check (package mgcv), and all models were inspected for and showed negligible autocorrelation (function acf_resid, package itsadug; van Rij et al., 2020) and overdispersion (functions testDispersion and testZeroInflation, package DHARMa; Hartig, 2021). Model comparisons were conducted using the function compareML (package itsadug). GAMM smooths were plotted using package itsadug (van Rij et al., 2020) with removed random effects. As typical for GAMMs, interaction terms with factor variables were calculated in two ways, first analyzing whether significant changes occur within each level of the grouping factor, and second whether the smooths of the different levels differ significantly from each other (the classic interaction term statistic) (Wieling, 2018; Wood, 2017).
 

@@ -19,17 +19,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0168r3w48 Department of Molecular Biology, Division of Biological Sciences, University of California, San Diego La Jolla United States
-2. https://ror.org/0168r3w48 Department of Bioengineering, University of California, San Diego La Jolla United States
-3. https://ror.org/0168r3w48 Department of Chemistry and Biochemistry, University of California, San Diego La Jolla United States
-4. https://ror.org/0168r3w48 Synthetic Biology Institute, University of California, San Diego La Jolla United States
-5. https://ror.org/0168r3w48 UCSD Moores Cancer Center, University of California San, Diego La Jolla United States
+1. Department of Molecular Biology, Division of Biological Sciences, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+2. Department of Bioengineering, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+3. Department of Chemistry and Biochemistry, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+4. Synthetic Biology Institute, University of California, San Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
+5. UCSD Moores Cancer Center, University of California San, Diego La Jolla United States ([ROR:0168r3w48](https://ror.org/0168r3w48))
 
 † Corresponding author
 
 ## Abstract
 
-Chromatin instability and protein homeostasis (proteostasis) stress are two well-established hallmarks of aging, which have been considered largely independent of each other. Using microfluidics and single-cell imaging approaches, we observed that, during the replicative aging of Saccharomyces cerevisiae , a challenge to proteostasis occurs specifically in the fraction of cells with decreased stability within the ribosomal DNA (rDNA). A screen of 170 yeast RNA-binding proteins identified ribosomal RNA (rRNA)-binding proteins as the most enriched group that aggregate upon a decrease in rDNA stability induced by inhibition of a conserved lysine deacetylase Sir2. Further, loss of rDNA stability induces age-dependent aggregation of rRNA-binding proteins through aberrant overproduction of rRNAs. These aggregates contribute to age-induced proteostasis decline and limit cellular lifespan. Our findings reveal a mechanism underlying the interconnection between chromatin instability and proteostasis stress and highlight the importance of cell-to-cell variability in aging processes.
+Chromatin instability and protein homeostasis (proteostasis) stress are two well-established hallmarks of aging, which have been considered largely independent of each other. Using microfluidics and single-cell imaging approaches, we observed that, during the replicative aging of Saccharomyces cerevisiae, a challenge to proteostasis occurs specifically in the fraction of cells with decreased stability within the ribosomal DNA (rDNA). A screen of 170 yeast RNA-binding proteins identified ribosomal RNA (rRNA)-binding proteins as the most enriched group that aggregate upon a decrease in rDNA stability induced by inhibition of a conserved lysine deacetylase Sir2. Further, loss of rDNA stability induces age-dependent aggregation of rRNA-binding proteins through aberrant overproduction of rRNAs. These aggregates contribute to age-induced proteostasis decline and limit cellular lifespan. Our findings reveal a mechanism underlying the interconnection between chromatin instability and proteostasis stress and highlight the importance of cell-to-cell variability in aging processes.
 
 ## Introduction
 
@@ -41,9 +41,29 @@ A decline in proteostasis is another well-recognized hallmark of cellular aging 
 
 ## Results
 
-## A challenge to proteostasis concurs with loss of rDNA stability during cell aging
+### A challenge to proteostasis concurs with loss of rDNA stability during cell aging
 
 To track the challenges to proteostasis in single aging cells, we monitored Hsp104-GFP, a canonical protein stress reporter that forms aggregates (visualized as fluorescent foci) upon proteotoxic stress (Lum et al., 2004; Tkach and Glover, 2004). Consistent with previous studies (Andersson et al., 2013; Erjavec et al., 2007; Saarikangas and Barral, 2015), yeast cells form Hsp104-GFP foci during aging, and the frequency of such appearance increases with age. However, we noticed that Hsp104-GFP foci did not appear universally in all aging cells. Instead, only a fraction of cells showed foci formation during aging (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hsp104 foci formation during aging of WT cells. Top: representative time-lapse images of Hsp104-GFP in WT Mode 1 and Mode 2 aging processes. Replicative age of mother cell is shown at the top-left corner of each image. For phase images, aging and dead mothers are marked by yellow and red arrows, respectively. In fluorescence images, aging and dead mother cells are circled in yellow and red, respectively. White arrows point to fluorescence foci of Hsp104-GFP. Mode 1 and Mode 2 cells were classified based on their age-dependent changes in their daughter morphologies (Li et al., 2020). Bottom: single-cell color map trajectories of Hsp104-GFP foci formation in WT Mode 1 and Mode 2 cells. Each row represents the time trace of a single cell throughout its lifespan. Color represents the absence (light blue) or presence (dark blue) of foci within a given cell cycle. Cells are sorted based on their lifespans. Single-cell color map trajectories of iRFP fluorescence and cell cycle length from the same cells are shown in Figure 1—figure supplement 1 to confirm the classification of Mode 1 and Mode 2. (B) Hsp104 foci formation during aging of sir2∆ cells. Top: representative time-lapse images of Hsp104-GFP in sir2∆ cells during aging. Bottom: single-cell color map trajectories of Hsp104-GFP foci formation in sir2∆ cells. (C) Sis1 foci formation during aging of WT cells. Top: representative time-lapse images of Sis1-mNeon in WT Mode 1 and Mode 2 aging processes. Note that the expression level of Sis1 in young cells is relatively uniform and does not correlate with the cell’s future aging path, Mode 1 vs. Mode 2. Bottom: single-cell color map trajectories of Sis1-mNeon foci formation in WT Mode 1 and Mode 2 cells. (D) Sis1 foci formation during aging of sir2∆ cells. Top: representative time-lapse images of Sis1-mNeon in sir2∆ cells during aging. Bottom: single-cell color map trajectories of Sis1-mNeon foci formation in sir2∆ cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative time-lapse images of iRFP fluorescence during WT Mode 1 and Mode 2 aging processes. Replicative age of mother cell is shown at the top-left corner of each image. Aging and dead mother cells are circled in yellow and red, respectively. Single-cell color map trajectories of (B) iRFP fluorescence and (C) cell cycle length for WT Mode 1 (left) and Mode 2 (right) aging cells. Each row represents the time trace of a single cell throughout its lifespan. Color represents fluorescence intensity as indicated in the color bar. Cells are sorted based on their lifespans. Data in (B) and (C) are from the same cells in Figure 1B and are shown to confirm the classification of Mode 1 and Mode 2 aging cells (Li et al., 2020).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative time-lapse images of ∆ssCPY*-GFP during WT Mode 1 and Mode 2 aging processes. Time-lapse images are representative of all Mode 1 and Mode 2 cells measured in this study. Replicative age of mother cell is shown in white at the top-left corner of each image. Aging and dead mother cells are circled in yellow and red, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Each circle represents a single aging cell. Blue circles denote WT cells, and red circles denote sir2∆ cells. Single-cell data are from Figure 1B and D. The yellow and purple trend lines represent the lines of best fit for all points.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Single-cell color map trajectories of Hsp104-GFP foci formation in hap4Δ cells. Each row represents the time trace of a single cell throughout its lifespan. Color represents the absence (light blue) or presence (dark blue) of foci within a given cell-cycle. Cells are sorted based on their lifespans. (B) Single-cell color map trajectories of Hsp104-GFP foci formation in hap4Δ sir2Δ cells.
 
 We recently discovered and designated two distinct forms of aging processes in isogenic yeast cells as ‘Mode 1’ and ‘Mode 2’ (Jin et al., 2019; Li et al., 2020). Mode 1 aging is driven by loss of rDNA stability and is characterized by continuous production of elongated daughter cells at the late stages of lifespan. In contrast, Mode 2 aging retains rDNA stability and is associated with production of small round daughters (Li et al., 2020). We classified a population of aging cells into Mode 1 and Mode 2 (see Figure 1, ‘Materials and methods,’ and Figure 1—figure supplement 1) and found that Hsp104-GFP form foci almost exclusively in Mode 1 aging cells, but rarely in Mode 2 cells (Figure 1A, Figure 1—videos 1; 2), indicating that a challenge to proteostasis occurs specifically in Mode 1 aging. We monitored another reporter of proteotoxic stress, ∆ssCPY*-GFP. The ∆ssCPY*-GFP reporter is an unstable carboxypeptidase-GFP fusion protein (Eisele and Wolf, 2008; Medicherla et al., 2004). Consistent with the observed pattern of Hsp104-GFP aggregation, ∆ssCPY*-GFP formed aggregates specifically in Mode 1 aging cells (Figure 1—figure supplement 2).
 
@@ -53,11 +73,23 @@ To determine whether proteostasis in the nucleus is similarly challenged during 
 
 Taken together, these results suggest that rDNA instability can serve as a contributing factor for age-associated challenges to proteostasis. Sir2, by maintaining rDNA silencing, represses age-dependent protein aggregation, consistent with the role of sirtuins in alleviating protein aggregation-induced cytotoxicity and disorders (e.g., Huntington disease), in yeast and mammalian models (Cohen et al., 2012; Jiang et al., 2011; Kobayashi et al., 2005; Sorolla et al., 2011).
 
-## A screen identifies rRNA-binding proteins that aggregate in response to a loss of Sir2 activity
+### A screen identifies rRNA-binding proteins that aggregate in response to a loss of Sir2 activity
 
 RNA-binding proteins bind to RNAs and form ribonucleoprotein complexes that regulate the localization, processing, modification, translation, storage, and degradation of associated RNAs (Buchan, 2014; Lee and Lykke-Andersen, 2013; Mitchell and Parker, 2014; Ramaswami et al., 2013). A disproportionately high number of RNA-binding proteins contain low complexity, prion-like domains and hence are aggregation-prone (Calabretta and Richard, 2015; Kato et al., 2012; Weber and Brangwynne, 2012). Therefore, we reasoned that RNA-binding proteins may be especially sensitive to the intracellular proteostasis environment and considered whether aging or loss of Sir2 activity will lead to RNA-binding protein aggregation as a driving factor for age-induced protein misfolding and proteotoxic stress.
 
 To test this, we performed a screen to identify RNA-binding proteins that aggregate in response to a sustained loss of Sir2 activity, which induces rDNA silencing loss and mimics the later phases of Mode 1 aging. We used a recently developed synthetic genetic sensor for protein aggregation – the yeast transcriptional reporting of aggregating proteins (yTRAP) RNA-binding protein sensor library for the screen (Newby et al., 2017). The yTRAP RNA-binding protein sensor library is composed of 170 unique sensor strains, encompassing every known RNA-binding protein with an experimentally confirmed physical interaction with RNAs in yeast (Figure 2—figure supplement 1A). The aggregation state of an RNA-binding protein can be reflected by the fluorescence signal of its sensor strain. When RNA-binding proteins are in a soluble unaggregated state, the sensor GFP fluorescence is high; however, if the RNA-binding protein enters an aggregated state, the GFP fluorescence is reduced (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of the yTRAP synthetic genetic system that functions by coupling aggregation states of proteins to the expression of a fluorescent reporter. (A) has been adapted and modified from Figure 1A in Newby et al., 2017. (B) Representative images of yeast cells following 5 mM nicotinamide (NAM) treatment. Top: phase images; bottom: fluorescence images of rDNA GFP. (C) Representative time-lapse images of Hsp104-GFP cells treated with NAM during aging. (D) Representative time traces of fluorescence changes for a ‘non-responder’ sensor strain (top) and ‘responder’ sensor strains (middle, bottom). NAM induction time shown on graph in gray. Purple shades represent standard deviations of the traces. The time traces show raw fluorescence without normalization. (E) Functional categories of RBPs tested (left), the responders with more than 50% decrease in normalized fluorescence signal upon NAM (middle), and the responders with more than 75% decrease in normalized fluorescence signal upon NAM (right). Complete lists of RBPs tested and responder RBPs are included in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The 170 RBPs in the yTRAP library tested in the screen and their functional categories. The colors of boxes correspond to the colors in the pie chart in Fig. 2E. Note that there were a few strains without detectable signals and hence were not tested in our screen. (B) The 43 RBPs identified from the screen displayed at least a 50% decrease in the normalized fluorescence signal. (C) The 15 RBPs identified from the screen showed a more than 75% decrease in the normalized fluorescence signal. These RBPs are considered “Responders” in our screen.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic of the strain construction that enables chemically controllable expression of Sir2 in the yTRAP sensor strains. The endogenous copy of SIR2 is deleted. Sir2 expression depends on the presence of doxycycline in the medium. (B) Boxplots show the single-cell fluorescence changes of yTRAP sensor strains for rRNA-binding protein responders in the presence (100 nM) or absence of doxycycline, as indicated. ****p<0.0001. Doxycycline itself (without the Sir2 expression system) does not affect the fluorescence of the yTRAP sensor cells (results not shown). (C) The RPL7 sensor strain showed considerable leakiness in the doxycycline-controlled expression system. Therefore, deletion of SIR2 was examined instead. Results in (B) and (C) demonstrated that rRNA-binding protein responders undergo aggregation (indicated by decreased sensor fluorescence) when Sir2 is repressed or deleted, confirming that aggregation of these rRNA-binding proteins is mediated specifically by Sir2.
 
 To conditionally trigger a loss of Sir2 activity, we exposed cells to nicotinamide (NAM), a commonly used inhibitor of Sir2 (Bitterman et al., 2002; Kato and Lin, 2014; Orlandi et al., 2017). The NAM treatment induced elongated cell morphology, rDNA silencing loss (indicated by a constantly high rDNA-GFP signal) (Li et al., 2017), and increased Hsp104 aggregation (Figure 2B and C), recapitulating the aged phenotypes in sir2∆ and in the late phases of Mode 1 aging. To track the fluorescence changes of yTRAP RNA-binding protein sensor strains in response to NAM at high-throughput over time, we used a new version of our recently published large-scale microfluidic platform ‘DynOMICS’ (Graham et al., 2020) that was specifically modified to permit the analysis of libraries of fluorescent yeast strains. This device enables simultaneous quantitative measurements of 48 different fluorescent sensor strains over the course of several days. We observed that some sensor strains exhibited a dramatic decrease in fluorescence, indicating RNA-binding protein aggregation, upon the NAM treatment (Figure 2D, ‘Responders’); in contrast, other sensor strains showed modest fluorescence changes, indicating minor changes in the aggregation state (Figure 2D, ‘Non-Responder’). We note that because all the RNA-binding protein sensors in the library are under the same constitutive promoter, the fluorescence changes were specifically due to sensor aggregation state changes, not differential expression-level changes (Newby et al., 2017).
 
@@ -65,17 +97,41 @@ Of the 170 RNA-binding proteins tested on our screen (Figure 2E, left, and Figur
 
 We chose the top five rRNA-binding protein responders (Nop15, Sof1, Rlp7, Nop13, Mrd1; Figure 2—figure supplement 1C) for further study. To examine whether the aggregation of these proteins upon NAM treatments is mediated specifically through Sir2, we deleted the endogenous copy of SIR2 and introduced a doxycycline-controlled promoter system for Sir2 expression in each of the yTRAP sensor strains. We showed that the absence of Sir2 expression promoted aggregation of all five rRNA-binding proteins tested (Figure 2—figure supplement 2), confirming the specificity of aggregation to loss of Sir2.
 
-## Age-dependent rRNA-binding protein aggregation contributes to nuclear proteostasis stress and limits cellular lifespan
+### Age-dependent rRNA-binding protein aggregation contributes to nuclear proteostasis stress and limits cellular lifespan
 
 To confirm that the identified rRNA-binding proteins indeed aggregate during natural aging, we generated strains with an integrated copy of each rRNA-binding protein candidate C-terminally tagged with mNeon (Figure 2E, right, and Figure 2—figure supplement 1C). To visualize age-induced rRNA-binding protein aggregation, we tracked single aging cells using microfluidics, and then used confocal microscopy to capture high-resolution images of young cells (1 hr after loading) and aged cells (aged for 40 hr, ~80% of the average lifespan), respectively (Figure 3A). We observed that the rRNA-binding proteins in young cells are uniformly localized along one side of the nucleus, forming a single crescent shape, characteristic of the yeast nucleolus. At the late stages of aging, most rRNA-binding proteins formed multiple irregular-shaped coalescences or condensates (visualized as fluorescent patches or foci) in Mode 1 aged cells. In contrast, in Mode 2 aged cells, these rRNA-binding proteins all remained in the uniform crescent shape like that of young cells (Figure 3A). These data confirmed the yTRAP screen results (Figure 2) and suggested a connection between loss of rDNA silencing with age-induced rRNA-binding protein aggregation. We also observed that age-dependent condensation led to a partial loss of colocalization of rRNA-binding proteins (e.g., Nop13 and Nop15; Figure 3—figure supplement 1), which may be indicative of a deterioration of their coordinated functions in rRNA processing and ribosomal biogenesis in the nucleolus.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative confocal images of rRNA-binding proteins in young cells, Mode 1 aged, and Mode 2 aged cells. Young cells and aged mother cells are circled in yellow. White arrows point to the aggregates. (B) Representative confocal images of Nop15-mNeon and Sis1-mCherry in young (left) and aged Mode 1 (right) cells. Young cells and aged mother cells are circled in yellow. White arrows point to the colocalized aggregates. (C) The effects of twofold overexpression of each rRNA-binding protein on the lifespans of Mode 1 (left) and Mode 2 (right) cells. The percentage changes of the mean replicative lifespan (RLS) relative to that of WT have been shown in the bar graphs. Asterisk indicates the significance of the changes: ***p<0.001; *p<0.05. The complete RLS curves and p-values are shown in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representative confocal images of Nop13-mNeon and Nop15-mCherry in young (top row), Mode 1 aged (middle row), and Mode 2 aged (bottom row) cells. White arrows point to Nop13 and Nop15 aggregates that are not colocalized in Mode 1 aged cells. Nop13 and Nop15, in the nonaggregated form, are colocalized in the nucleolus of young and Mode 2 aged cells.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) RLS curves for Mode 1 cells in WT (n = 89), NOP15 twofold overexpression (O/E) (n = 156), SOF1 twofold O/E (n = 163), RLP7 twofold O/E (n = 190), NOP13 twofold O/E (n = 225), and MRD1 twofold O/E (n = 165). The mean RLSs for WT (blue) and each O/E mutant (red) are indicated. p-Values were calculated using the Gehan–Breslow–Wilcoxon method. (B) RLS curves for Mode 2 cells in WT (n = 127), NOP15 twofold O/E (n = 219), SOF1 twofold O/E (n = 180), RLP7 twofold O/E (n = 224), NOP13 twofold O/E (n = 111), and MRD1 twofold O/E (n = 230). Note that, in WT, Mode 1 cells have a longer RLS (RLS = 26) than that of Mode 2 cells (RLS = 17), as reported previously (Li et al., 2020).
 
 To determine whether the rRNA-binding protein condensates we observed in aged cells are indeed aggregates, we monitored the localization of Nop15, a representative rRNA-binding protein, and Sis1, the Hsp40 co-chaperone that functions in clearance of misfolded proteins in the nucleus (Feder et al., 2021; Klaips et al., 2020). We found that Sis1 clearly accumulated in Nop15 condensates in aged cells, whereas no such colocalization was observed in young cells (Figure 3B). These results indicate that age-induced rRNA-binding protein condensates are bona fide protein aggregates and contribute to the challenges to nuclear proteostasis observed during aging (as visualized by Sis1 foci; Figure 1C).
 
 To determine the effect of rRNA-binding protein aggregation on lifespan, we overexpressed each of the rRNA-binding proteins, which leads to increased aggregation based on the law of mass action. For each of the rRNA-binding proteins tested, we observed consistently that twofold overexpression of each significantly shortened the lifespan of Mode 1 aging cells, but not that of Mode 2 aging cells in the same isogenic population (Figure 3C and Figure 3—figure supplement 2). These results indicate that the aggregated form (in Mode 1 cells) of these rRNA-binding proteins causes cell deterioration and limits cellular lifespan, whereas increasing the non-aggregated form (in Mode 2 cells) shows either no effect or a small extension of the lifespan.
 
-## Excessive rRNA production induces rRNA-binding protein aggregation
+### Excessive rRNA production induces rRNA-binding protein aggregation
 
 We next considered the mechanism underlying rRNA-binding protein aggregation during aging and, in particular, how Sir2 and rDNA silencing, which primarily function in maintaining chromatin stability, influence the aggregation process. Since age-dependent aggregation and the effects on cellular lifespan were consistent for all the rRNA-binding proteins tested (Figure 3), we chose to perform in-depth genetic analysis of one. We selected Nop15, which functions in 60S ribosomal biogenesis, as a representative to investigate the pathways and factors that regulate rRNA-binding protein aggregation. To monitor age-dependent progression of aggregation in single cells, we tracked the aging processes of a large number of individual cells using microfluidics and time-lapse microscopy (phase images acquired every 15 min), and, in the same experiment, visualized Nop15-mNeon aggregation using confocal microscopy every 13 hr throughout the entire lifespans. We observed that Nop15 formed aggregates during aging of WT cells, with the frequency and severity increasing with age (Figure 4A) and following changes in rDNA copy number (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig4-v2.jpg)
+
+**Figure 4.:** Single-cell color map trajectories indicate the timing and extent of age-dependent Nop15 aggregation in (A) WT, (B, left) rpn4∆, (B, right) ubr2∆, (C, left) sir2∆, (C, right) fob1∆, and (D) fob1∆ + RRN3 overexpression (O/E). Each row tracks the aggregation state of a single aging cell. Confocal images were acquired at indicated time points during aging experiments. As indicated in the legend on the right, the aggregation state of Nop15 in each aging cell was classified as ‘no aggregation’ – evenly distributed fluorescence with a normal crescent shape (light blue), ‘moderate aggregation’ – unevenly distributed fluorescent patches with irregular shapes (blue), or ‘severe aggregation’ – multiple distinct fluorescent foci (dark blue). Bottom panels: bar charts show the percentage of cells in each aggregation state as a function of age, quantified from the data in corresponding top panels. For RRN3 O/E, a TetO-inducible RRN3 construct was integrated into the fob1∆ strain. Upon loading into the device, cells were exposed to 2 μM doxycycline to induce RRN3 overexpression throughout the aging experiment. As a control, fob1∆ cells without the inducible RRN3 construct were exposed to doxycycline to exclude the possibility that the drug treatment itself causes enhanced aggregation (Figure 4—figure supplement 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative time-lapse images of rDNA-LacI-GFP during aging. Replicative age of the mother cell is shown at the top-right corner of each image. The aging mother cell is circled in yellow. To monitor changes in rDNA copy numbers during aging, we used a strain in which 50× lacO elements were inserted into each rDNA repeat within the rDNA region (Miyazaki and Kobayashi, 2011). The strain also contains a constitutively expressed GFP-LacI reporter, which binds to the lacO elements in rDNA and the nuclear fluorescence of which correlates with the rDNA copy number (Morlot et al., 2019). (B) Quantified GFP-LacI nuclear fluorescence as a function of age. The age-dependent trace is overlaid with a bar chart showing the percentage of cells in each Nop15 aggregation state as a function of age, from Figure 4A. The aggregation states are illustrated in the legend on the right.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Single-cell color map trajectories indicate the timing and extent of age-dependent Nop15 aggregation in fob1∆, (A) without doxycycline, (B) with 2 μM doxycycline, and (C) fob1∆ + TetO-inducible RRN3 with 2 μM doxycycline. Each row tracks the aggregation state of a single aging cell. Confocal images were acquired at indicated time points during the aging experiments. The aggregation state in each aging cell was classified as ‘no aggregation’ – evenly distributed fluorescence with a normal crescent shape (light blue), ‘moderate aggregation’ – unevenly distributed fluorescent patches with irregular shapes (blue), or ‘severe aggregation’ – multiple distinct fluorescent foci (dark blue), similar to that in Figure 4. Panels (A) and (C) are the same as Figure 4C, right, and Figure 4D, respectively. Panel (B) is the control in the same set of experiments to exclude the possibility that doxycycline itself, but not induced RRN3 overexpression, causes enhanced aggregation.
 
 Recent studies have shown that RNA-binding proteins, many of which contain intrinsically disordered domains, are frequent substrates of proteasomal degradation (Myers et al., 2018; Thapa et al., 2020). The proteasome, in cooperation with disaggregases, functions to remove misfolded or aggregated proteins (Pohl and Dikic, 2019). To examine the effects on rRNA-binding protein aggregation, we began with Rpn4, a transcriptional regulator of the 26S proteasome components that is required for normal levels of proteasome activity (Xie and Varshavsky, 2001). In cells lacking Rpn4, which are characterized by a reduced proteasome pool (Ju et al., 2004; Xie and Varshavsky, 2001), we found increased, earlier, and more severe Nop15 aggregation during aging (Figure 4B, left). In contrast, deletion of UBR2, which encodes a ubiquitin ligase that mediates Rpn4 degradation, leads to elevated proteasome capacity (Wang et al., 2004) and thereby dramatically alleviated Nop15 aggregation (Figure 4B, right). These results suggest that the proteasome participates in the process of removing age-induced rRNA-binding protein aggregates, probably through degradation of intrinsically disordered protein monomers as in the case of other misfolded protein aggregates or aberrant RNA-binding protein aggregates (Berke and Paulson, 2003; Brown and Kaganovich, 2016; Hjerpe et al., 2016; Reiss et al., 2020; Thapa et al., 2020).
 
@@ -87,9 +143,17 @@ ERCs can impact various aspects of cellular functions, such as cell cycle progre
 
 Taken together, these results revealed that age-dependent loss of rDNA stability promotes rRNA-binding protein aggregation through ERC accumulation and, more specifically, excessively high levels of rRNAs transcribed from ERCs. This aggregation may impair the normal function of rRNA-binding proteins in pre-rRNA processing and maturation and the assembly of functional ribosomes, accounting for the decoupling of rRNA transcription and ribosomal biogenesis during aging (Morlot et al., 2019).
 
-## Elevated rRNA-binding protein aggregation contributes to global proteostasis stress
+### Elevated rRNA-binding protein aggregation contributes to global proteostasis stress
 
 Previous studies showed that increased expression and aggregation of intrinsically disordered proteins impose an increased burden on protein folding resources and the proteasome, leading to global proteostasis decline (Andersson et al., 2013; Bence et al., 2001; Outeiro and Lindquist, 2003; Stefani and Dobson, 2003; Verhoef, 2002; Yu et al., 2019). To determine the relationship between rRNA-binding protein aggregation and global proteostasis stress during aging, we monitored Nop15-mNeon and Hsp104-mCherry in the same cells (Figure 5A). We found continuous co-occurrence of Nop15 aggregation and Hsp104 foci during the later stage of aging in the majority of Mode 1 cells (Figure 5A, left). Furthermore, in 66% of these cells, Nop15 aggregation (indicated by green bars in Figure 5A) immediately preceded the co-occurrence phase (indicated by yellow bars in Figure 5A), suggesting that rRNA-binding protein aggregation leads to global proteostasis stress in a large fraction of aging cells. We also observed occasional, transient appearance of Hsp104 foci during the early stage of aging in both Mode 1 and Mode 2 cells, which did not show any obvious relationship to Nop15 aggregation that occurred much later in aging (see ‘Discussion’).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig5-v2.jpg)
+
+**Figure 5.:** (A) Single-cell color map trajectories of Nop15-mNeon aggregation (green), Hsp104-mCherry foci (red), and co-presence of both aggregates (yellow) in WT Mode 1 and Mode 2 cells. Each row represents the time trace of a single cell throughout its lifespan. Cells are sorted based on their lifespans. (B) Boxplots show the distributions of percentage of lifespan with Hsp104-GFP foci appearance in single aging cells for WT (n = 87), sir2∆ (n = 46), fob1∆ (n = 60), fob1∆ + RRN3 overexpression (n = 117), and fob1∆ + NOP15 overexpression (n = 130). In the plot, the bottom and top of the box are first (the 25th percentile of the data, q1) and third quartiles (the 75th percentile of the data, q3); the red band inside the box is the median; the whiskers cover the range between q1-1.5x(q3-q1) and q3 + 1.5x (q3–q1). The RRN3 O/E and NOP15 O/E experiments were conducted as in Figure 4D.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75978/elife-75978-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Each row represents the time trace of a single cell throughout its lifespan. Color represents the absence (light blue) or presence (dark blue) of foci within a given cell cycle.
 
 In further support of the causal connection from rRNA-binding protein aggregation to proteostasis stress, the deletion of SIR2, which reduces rDNA stability and enhances rRNA-binding protein aggregation (Figure 4C, left), promotes proteostasis stress during aging, as reflected by increased Hsp104 foci formation (Figures 1B and 5B). In contrast, the deletion of FOB1, which enhances rDNA stability and reduces rRNA-binding protein aggregation (Figure 4C, right), showed dramatically decreased Hsp104 foci formation (Figure 5B). To test whether elevated rRNA-binding protein aggregation can impact proteostasis independent of ERCs, in the fob1Δ mutant where ERC formation is abolished, we overexpressed Rrn3 and Nop15, respectively, as both perturbations can enhance rRNA-binding protein aggregation. We observed increased Hsp104 foci formation, indicating that elevated rRNA-binding protein aggregation is sufficient to induce proteostasis stress (Figure 5B and Figure 5—figure supplement 1, compare fob1∆ + RRN3 o/e and fob1∆ + NOP15 o/e with fob1∆ alone).
 
@@ -119,7 +183,339 @@ Research on aging biology has benefited tremendously from the development of gen
 
 ## Materials and methods
 
-## Strain and plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PNOP15-NOP15-mNeon-TADH1</td>
+      <td>This study</td>
+      <td>NHB0904</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PNOP15-NOP15-TADH1</td>
+      <td>This study</td>
+      <td>NHB0902</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PSOF1-SOF1-mNeon-TADH1</td>
+      <td>This study</td>
+      <td>NHB0892</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PSOF1-SOF1-TADH1</td>
+      <td>This study</td>
+      <td>NHB0901</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PRLP7-RLP7-TADH1</td>
+      <td>This study</td>
+      <td>NHB0896</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PNOP13-NOP13-mNeon-TADH1</td>
+      <td>This study</td>
+      <td>NHB0893</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PNOP13-NOP13-TADH1</td>
+      <td>This study</td>
+      <td>NHB0903</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PMRD1-MRD1-mNeon-TADH1</td>
+      <td>This study</td>
+      <td>NHB0927</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS306-PMRD1-MRD1-mNeon-TADH1</td>
+      <td>This study</td>
+      <td>NHB0895</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-RRN3-mRuby2-TENO2-LEU2</td>
+      <td>This study</td>
+      <td>NHB1148</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-NOP15-TENO2-LEU2</td>
+      <td>This study</td>
+      <td>NHB1150</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3</td>
+      <td>This study</td>
+      <td>NHGFP0068</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, sir2::CgURA3</td>
+      <td>This study</td>
+      <td>NH0761</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, fob1::CgURA3</td>
+      <td>This study</td>
+      <td>NH0778</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, SIS1-mNeon-URA3</td>
+      <td>This study</td>
+      <td>NH1324</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2-1 met15∆0 ura3-1, NHP6a-iRFP-kanMX, ura3-1::PPRC1-∆ssCPY*-GFP-URA3</td>
+      <td>This study</td>
+      <td>NH1036</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1212</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, SOF1::PSOF1-SOF1-mNeon-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1213</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, RLP7::PRLP7-RLP7-mNeon-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1187</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP13::PNOP13-NOP13-mNeon-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1186</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, MRD1::PMRD1-MRD1-mNeon-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1251</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1218</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, SOF1::PSOF1-SOF1-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1216</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, RLP7::PRLP7-RLP7-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1211</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP13::PNOP13-NOP13-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1219</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, MRD1::PMRD1-MRD1-TADH1-URA3</td>
+      <td>This study</td>
+      <td>NH1215</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1477</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, rpn4::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1478</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, fob1::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1479</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, ubr2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1630</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, leu2∆0:: PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-RRN3-mRuby2-TENO2-LEU2, fob1::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1507</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, RDN1::NTS1-PTDH3-GFP-URA3, ubr2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1408</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, RDN1::NTS1-PTDH3-GFP-URA3, HAP4::PTDH3-HAP4-LEU2, ubr2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1642</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, fob1::CgURA3, leu2∆0:: PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-RRN3-mRuby2-TENO2-LEU2,</td>
+      <td>This study</td>
+      <td>NH1666</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, fob1::CgURA3, leu2∆0:: PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-NOP15-TENO2-LEU2</td>
+      <td>This study</td>
+      <td>NH1685</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, hap4::CgURA3</td>
+      <td>This study</td>
+      <td>NH0815</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, HSP104-GFP-HIS3, sir2::CgURA3, hap4::CgLEU2</td>
+      <td>This study</td>
+      <td>NH1096</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yTRAP-NOP15, PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-SIR2-mCherry-TENO2-LEU2, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1788</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yTRAP-SOF1, PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-SIR2-mCherry-TENO2-LEU2, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1789</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yTRAP-NOP13, PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-SIR2-mCherry-TENO2-LEU2, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1790</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yTRAP-MRD1, PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-SIR2-mCherry-TENO2-LEU2, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1804</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yTRAP-RLP7, sir2::CgHIS3</td>
+      <td>This study</td>
+      <td>NH1763</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, SIS1-mCherry-HIS3</td>
+      <td>This study</td>
+      <td>NH1752</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741 MATa his3∆1 leu2∆0 met15∆0 ura3∆0, NHP6a-iRFP-kanMX, NOP15::PNOP15-NOP15-mNeon-TADH1-URA3, HSP104-mCherry-HIS</td>
+      <td>This study</td>
+      <td>NH1751</td>
+      <td>See ‘Strain and plasmid construction’ for details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>TMY3 MATa leu2-3,112 trp1-1 can1-100 ura3-1 ade2-1::LacI-GFP his3-11 rDNA::pTM-lacO50-URA3</td>
+      <td>Miyazaki and Kobayashi, 2011</td>
+      <td>TMY3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain and plasmid construction
 
 Standard methods for growth, maintenance, and transformation of yeast and bacteria were used throughout. The S. cerevisiae yeast strains used in this study were generated from the BY4741 strain background (MATa his3∆1 leu20∆ met15∆0 ura3∆0). Yeast integrative transformations were performed using the standard lithium acetate method and confirmed by PCR. To make the Hsp104-GFP reporter, yEGFP-HIS3 was amplified by PCR and integrated at the C-terminus of HSP104 at the native locus by homologous recombination. To make the Sis1-mNeon reporter, pKT209 (ref) was subcloned to replace yEGFP with mNeon, and then mNeon-URA3 was PCR-amplified and integrated into the C-terminus of SIS1 at the native locus by homologous recombination. The plasmid pRS316-∆ssCPY*-GFP was generated in a previous study (Park et al., 2007). We subcloned into pRS306 by digesting both pRS306 vector and ∆ssCPY*-GFP using SalI and HindIII and then ligating together. The newly assembled plasmid pRS306-∆ssCPY*-GFP was linearized using StuI and integrated into the ura3-1 locus by homologous recombination. This strain background was BY4741 in which ura3∆0 was replaced by the W303 ura3-1 locus (Li et al., 2020). The strain library used in the screen for RNA-binding protein aggregation was generated in a previous study (Newby et al., 2017).
 
@@ -129,36 +525,36 @@ The sir2∆ mutant was created by amplifying either CgURA3 or CgHIS3 fragment to
 
 Because constitutive overexpression of RRN3 or NOP15 adversely affects cellular physiology and condition, we constructed doxycycline-inducible expression plasmids for both genes to conditionally activate their overexpression during aging. For plasmid construction, we used the MoClo toolkit of yeast gene parts and followed the gene assembly strategy as described previously (Lee et al., 2015). Any Tet-On expression system consists of the same basic components: a constitutive promoter driving the transactivator rtTA expression and a promoter with a TetO element driving a gene of interest. More specifically, the ORF of RRN3 or NOP15 was PCR-amplified and assembled into the entry vector pYTK001 by Golden Gate Assembly. Then it was assembled with the following plasmids by Golden Gate Assembly to create a specific combination of promoter-ORF-fluorescent tag-terminator: pYTK003 (ConL1), NHB1016 (TetO7-PLEU2m), pYTK-ORF (RRN3 or NOP15), pYTK034 (mRuby2), pYTK065 (TENO2), pYTK072 (ConRE), and pYTK095 (AmpR-ColE1). Meanwhile, the coding sequence of rtTA3 was put under the PRPL18B promoter from the MoClo yeast toolkit, creating the PRPL18B-rtTA3 plasmid (NHB1028). The resulting two plasmids and NHB0980, which is a backbone plasmid containing LEU2 as a nutritional selection marker, were then assembled by Golden Gate Assembly to get the final plasmid, PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-RRN3-mRuby2-TENO2-LEU2 (NHB1148) or PRPL18B-rtTA3-TADH1-TetO7-PLEU2m-NOP15-TENO2-LEU2 (NHB1150). All the pYTK plasmids were from Lee et al., 2015. The inducible overexpression yeast strains were then created through genomic integration of NHB1148 or NHB1150 (linearized using NotI) by homologous recombination with the flanking sequences of the leu2∆0 locus.
 
-## Microfluidic device fabrication
+### Microfluidic device fabrication
 
 Design and fabrication of the microfluidic device for yeast replicative aging followed previously published work (Jin et al., 2019; Li et al., 2020; Li et al., 2017). In brief, 4-inch silicon wafers (University Wafer Inc) were patterned with SU8 2000 series (Kayakli Advanced Materials, Inc) photoresists using standard photolithography techniques in general accordance with the guidelines provided by the manufacturer. A polydimethylsiloxane (PDMS) device was made from the silicon wafer mold by mixing 33 g of Sylgard 184 (Dow Inc) and pouring it on the wafer surrounded with aluminum foil. The wafer and PDMS are then degassed in a vacuum chamber and cured on a level surface for at least 1 hr. Design and fabrication of the DynOMICS device were carried out using techniques described previously (Graham et al., 2020). This PDMS device was made from the silicon wafer mold by mixing 77 g of Sylgard 184 and pouring it on the wafer centered on a level 5″ × 5″ glass plate surrounded by an aluminum foil seal. The degassed PDMS is placed on a level surface and allowed to cure at 95°C for 1 hr.
 
-## Single-cell aging microfluidics setup
+### Single-cell aging microfluidics setup
 
 A PDMS aging device was cleaned and sonicated in 100% ethanol for 15 min, followed by a rinse sonication in Milli-Q water. The device was dried and cleaned with an adhesive tape. A glass coverslip was cleaned in a series of washes with heptane, followed by methanol, then Milli-Q water, and subsequently dried with an air gun. Both the coverslip and the PDMS device were exposed to oxygen plasma to bond and create a fully assembled device. Once assembled, each single-cell aging device was inspected to ensure no defects or dust contamination were present.
 
 To begin the experiment setup, the device was first placed under vacuum for 20 min. All media ports covered were then immediately covered by 0.075% Tween 20 for approximately 10 min. The device was then placed on an inverted microscope with a 30°C incubator system. Media ports were connected to plastic tubing and 60 mL syringes with fresh SCD media (prepared from CSM powder from Sunrise Science, #1001-100, with 2% glucose) medium containing 0.04% Tween-20. Initially the height of the syringes was approximately 2 ft above the microscope stage. The waste ports of the device were also connected to plastic tubing, which were attached by tape to stage height. Yeast cells were inoculated into 1.5 mL of SCD and cultured overnight at 30°C. This saturated overnight culture was then diluted 1:10,000 and grown at 30°C overnight until cells reached approximately OD600nm 0.6. For loading, cells were diluted approximately twofold and transferred to a 60 mL syringe (Luer-Lok Tip, BD) and connected to plastic tubing (TYGON, ID 0.020 IN, OD 0.060 IN, wall 0.020 IN). Cells were loaded by temporarily replacing the input media port with the syringe filled with yeast culture. The syringe containing the yeast is also placed approximately 2 ft above the stage. The media and cells flow into the device using gravity-driven flow. Cell traps are generally filled with cells in under a minute, at which point the loading tubing is replaced with the media tubing and syringe. Once cells are loaded, syringes are raised to be approximately 60 inches above the stage. Waste tubing is lowered to the floor and waste is collected in a 50 mL tube to measure flow rate of about 2.5 mL/day. Note that Tween-20 is a non-ionic surfactant that helps reduce cell friction on the PDMS (Ferry et al., 2011). We have validated previously that this low concentration of Tween-20 has no significant effect on cellular lifespan or physiology. This setup protocol was developed and described in our previous studies (Jin et al., 2019; Li et al., 2020; Li et al., 2017).
 
-## Time-lapse microscopy
+### Time-lapse microscopy
 
 Time-lapse microscopy experiments were performed using a Nikon Eclipse Ti-2 inverted fluorescence microscope with Perfect Focus and a back-illuminated sCMOS camera (Teledyne Photometrics Prime 95B). The light source is a Lumencor SpectraX. Images were taken using a CFI plan Apochromat Lambda DM ×60 oil immersion objective (NA 1.40 WD 0.13MM). Microfluidic devices were taped to a custom-built stage adapter and placed on the motorized stage. In all experiments, images were acquired using Nikon Elements software every 15 min for the duration of the yeast lifespan, typically 80 hr or longer, unless otherwise stated. The exposure and intensity settings were as follows for each of the fluorescence channels: GFP 10 ms with 10% light intensity, mCherry 50 ms with 5% light intensity, and Cy5 (iRFP) 200 ms with 2% light intensity.
 
-## Confocal microscopy
+### Confocal microscopy
 
 Confocal images were acquired using a CSU-X1 spinning disk confocal module on the Nikon Eclipse Ti2-E scope used for aging experiments. The excitation light is controlled using an Agilent laser box with 405 nm, 488 nm, 561 nm, or 640 nm lasers. Laser light is focused through the microlenses of the spinning excitation disk (Yokogawa CSU-X1). Images were taken using either Plan Apo lambda ×60 NA 1.40 oil, or SR HP APO TIRF ×100 1.49 NA objectives. Laser intensity settings were 30% for 488 nm, 50% for 561 nm, and 50% for 640 nm. For time-lapse confocal imaging in aging cells, we acquire the images every 13 hr to minimize phototoxicity generated from confocal laser scanning.
 
-## DynOMICS and yTRAP screen setup
+### DynOMICS and yTRAP screen setup
 
 Four 48-strain yeast DynOMICS devices were cleaned with 70% ethanol, DI water, and Scotch tape (3M), and each was aligned to a custom Singer ROTOR-compatible fixture. Both the fixture and a clean glass slide sonicated with 2% Hellmanex III were exposed to oxygen plasma. Cells were spotted from the previously arrayed agar plate to the aligned PDMS device using the Singer ROTOR spotting robot. The device and glass slide were bonded together and cured for 2 hr. Bonded chips were placed in a vacuum for 20 min before removal and covering of the inlet and outlet ports with SCD without folic acid or riboflavin media with 0.04% Tween-20. The microfluidic devices were then placed on two Nikon Ti microscopes, with two chips being placed on each Ti microscope. Media ports were then connected using plastic tubing and 60 mL syringes containing SCD media (without folic acid or riboflavin) with 0.04% Tween-20. At this point, we began imaging using a ×4 objective on each microscope as yeast cells began to grow to fill the ‘bulb’ regions of each position of the device and eventually fill the downstream ‘HD biopixels.’ Both scopes were equipped with CoolSnap HQ2 cameras (Photometrics). Initial imaging conditions on the first Ti scope containing half of the yTRAP library were as follows: phase contrast 10 ms, GFP 400 ms, and RFP 300 ms. For the second Ti microscope, phase contrast was 20 ms, GFP 600 ms, and RFP 300 ms. Approximately 2 days after initial setup of the experiment, yeast had grown to fill the downstream biopixels at each position across the four devices. At this point, the GFP exposure time for each scope was increased to 700 ms, and we marked this point as the starting point for future data analysis of fluorescent trajectories. Images were acquired every 20 min throughout the length of the experiment.
 
-## Classification of Mode 1 and Mode 2 aging cells
+### Classification of Mode 1 and Mode 2 aging cells
 
 We classified Mode 1 and Mode 2 aging cells based on the age-dependent changes in their daughter morphologies, as described in our previous study (Li et al., 2020). Mode 1 cells produce elongated daughters at the late stage of lifespan, whereas Mode 2 cells produce small rounded daughters until death. The classification was further confirmed by iRFP fluorescence (indicating the intracellular heme level) and cell cycle lengths during aging. Mode 1 and Mode 2 cells exhibit distinct dynamics of iRFP fluorescence during aging – the iRFP fluorescence increases toward the late stage of Mode 1 aging; in contrast, iRFP signal sharply decreases at the early stage of Mode 2 aging and remains extremely low throughout the entire lifespan. Mode 1 and Mode 2 cells show age-dependent extension of cell cycle length with different timing and extents. Mode 1 cells show a gradual extension of cell cycle length at the late stages of aging; in contrast, Mode 2 cells show a much earlier and more dramatic extension of cell cycle length during aging (Figure 1—figure supplement 1; Li et al., 2020). These age-dependent iRFP fluorescence and cell cycle length dynamics provide robust and quantitative metrics to further confirm the classification of the two aging modes, independent of the need for specific microfluidic devices or imaging setup.
 
-## Experiments with doxycycline-induced protein overexpression
+### Experiments with doxycycline-induced protein overexpression
 
 Doxycycline was used as an activator to induce expression of TetO promoter-driven constructs including RRN3 and NOP15. It was introduced into the media syringe to a final concentration of 2 μM. Doxycycline was delivered immediately after the cells were loaded into the microfluidic device and image acquisition began. Aging cells were exposed to doxycycline throughout the entire aging experiments. To control for the effect of doxycycline itself on Nop15 aggregation, strains lacking the inducible constructs (e.g., fob1Δ) were tested in parallel with and without doxycycline.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Sample size for each experimental result can be found in the corresponding figure legends. To evaluate the statistical significance of lifespan differences, p-values were calculated using the Gehan–Breslow–Wilcoxon method, as performed in previous publications (Crane et al., 2019; Li et al., 2020), and are included in the corresponding RLS plots or the figure legends.

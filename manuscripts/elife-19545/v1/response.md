@@ -38,11 +38,9 @@ As suggested, we did compare expression of human Alu-exon genes and their orthol
 
 Regarding the comparison to other species, we first tested the underlying assumption that the genes expressed at the lowest level in human are generally also lowly expressed in other species. We observed an increase in gene expression and expression variance roughly correlating with evolutionary distance (shown in Author response image 1A), and concluded that only comparisons up to mouse are valid. Analysis of the Alu-exon genes showed that orthologues of the human Alu-exon genes show no expression bias in mouse but do so in primates, which share some of the Alu-exons with human, consistent with the conclusion that Alu-exons could reduce gene expression. Yet we rely on 1-to-1 orthologue mapping which reduces the number of data points (genes) in each group substantially; for instance only 30 out of 120 human genes with constitutive Alu-exons are found across species.
 
-Due to the small numbers and confounding factors within the cross-species gene expression patterns, we decided not to include these analyses in the manuscript.10.7554/eLife.19545.023Author response image 1.(A) We selected the ~15% most lowly expressed genes across six human tissues (RPKM of 0.5-2, n=2,199), and compared their expression levels (RPKM) in other species. Data from Brawand et al. (Nature 2011). (B) We compared expression levels (RPKM) of Alu-exon genes and their mammalian orthologues in primates and mouse. Species abbreviated as in Figure 1.DOI: http://dx.doi.org/10.7554/eLife.19545.023
+Due to the small numbers and confounding factors within the cross-species gene expression patterns, we decided not to include these analyses in the manuscript.10.7554/eLife.19545.023Author response image 1.(A) We selected the ~15% most lowly expressed genes across six human tissues (RPKM of 0.5-2, n=2,199), and compared their expression levels (RPKM) in other species. Data from Brawand et al. (Nature 2011). (B) We compared expression levels (RPKM) of Alu-exon genes and their mammalian orthologues in primates and mouse. Species abbreviated as in Figure 1.
 
 (A) We selected the ~15% most lowly expressed genes across six human tissues (RPKM of 0.5-2, n=2,199), and compared their expression levels (RPKM) in other species. Data from Brawand et al. (Nature 2011). (B) We compared expression levels (RPKM) of Alu-exon genes and their mammalian orthologues in primates and mouse. Species abbreviated as in Figure 1.
-
-DOI: http://dx.doi.org/10.7554/eLife.19545.023
 
 References cited above:
 

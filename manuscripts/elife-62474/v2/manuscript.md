@@ -23,6 +23,14 @@ Given the mounting threat posed by antibiotic resistance, we need a better under
 
 Mobile integrons consist of an integrase encoding gene named intI followed by a recombination site, attI (Hall et al., 1991; Partridge et al., 2000) and a variable array of mobile gene cassettes (typically 2–5 in mobile integrons) ending each in a characteristic hairpin recombination site called the attC site (Hall et al., 1991). Integron cassettes usually lack a promoter, and their expression is driven by the Pc promoter located upstream of the array (Collis and Hall, 1995), such that expression levels are highest for cassettes closest to the promoter (Collis and Hall, 1995). The SOS response (named after the Morse code ...---...) induces the expression of integrases (Guerin et al., 2009), which then allows for the efficient integration and excision of cassettes in the array through attC × attI and attC × attC reactions, respectively (Collis and Hall, 1992). A peculiarity of this system is that integron recombination is semi-conservative, as only the bottom strand of the cassette is excised from the array following a recombination pathway that includes a replication step (Loot et al., 2012). The implication of this is that cassette excision and re-integration can lead to two different results: either a ‘cut and paste’ outcome, resulting in the movement of a cassette within an array, or a ‘copy and paste’ outcome, leading to the insertion of a duplicate copy of a cassette in the conserved array (Escudero et al., 2015). An overview of the mechanisms of integron activity is presented in Figure 1a.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig1-v2.jpg)
+
+**Figure 1.:** (a) Diagram of the integron mechanism: the integron consists of an integrase gene, intI, followed by an array of promoterless gene cassettes (represented here by arrows). Cassettes are expressed from the Pc promoter within the integrase gene, with decreasing cassette expression along the array. Following the induction of the SOS response, the integrase enzyme promotes cassette excision (recombination between a cassette attC site and the attC of the preceding cassette, causing excision of the cassette into its circular form). Due to the presence of a replication step in the excision process, a copy of the original array is conserved. Re-integration of the circular cassette can then occur through recombination between the cassette attC site and the attI site located at the start of either array, leading to an apparent ‘cut-and-paste’ recombination if the cassette integrates in the excised array, or can be assimilated to a ‘copy-and-paste’ outcome if it integrates in a conserved copy of the array. By shuffling and duplicating cassettes, the integron has the potential to quickly modulate cassette expression levels. (b) Custom integron arrays: the native integron array of the R388 plasmid was replaced by the custom integron arrays WTA1 to WTA6 containing three integron cassettes in every possible order. (c) Effect of position of the aadB cassette on gentamicin resistance levels. Error bars represent standard error (n = 2–4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Transcript levels of the aadB cassette in the different arrays. Transcription levels are normalized relatively to the best transcribed array (WTA6). Error bars represent the standard error of three independent biological replicates. (B) Representation of the genomic environment of the aadB cassette when aadB is in last (WTA3) or first position (WTA5) in our arrays. The two ORFs overlapping the attI, which have been shown to improve cassette translation (Hanau-Berçot et al., 2002; Papagiannitsis et al., 2017), are represented in color.
+
 Due to the stress-inducible regulation of integrase activity, integrons have been proposed to accelerate bacterial evolution by providing ‘adaptation on demand’ (Escudero et al., 2015). According to this hypothesis, integrase-mediated cassette re-shuffling in stressful environments allows bacteria to optimize cassette expression and maximize fitness: useful cassettes can be brought forward to ensure maximal expression, while unnecessary cassettes can be kept at the end of the array as a low cost memory of once-adaptive functions, ready to be brought forward when needed (Escudero et al., 2015). Stress-inducible regulation also helps to minimize the costs associated with integrase expression (Lacotte et al., 2017; Starikova et al., 2012), which are thought to come from increased genomic instability created by off-target integrase activity (Harms et al., 2013). Although antibiotics have diverse modes of action, many of the most common classes of antibiotic cause DNA damage that induces the SOS response (Kohanski et al., 2010). This link between antibiotic exposure and integrase activity suggests that cassette re-shuffling may allow pathogenic bacteria to rapidly adapt to novel antibiotic challenges.
 
 While the molecular mechanisms of integron shuffling are known in detail, our ability to understand the evolutionary benefits provided by this fascinating genetic platform is limited by our understanding of the population biology of integron-mediated antibiotic resistance. For example, constitutive over-expression of the integrase enzyme has been shown to accelerate the evolution of chloramphenicol resistance through the loss of cassettes between Pc and the resistance cassette as well as the formation of co-integrates between integron copies (Barraud and Ploy, 2015). However, to the best of our knowledge, the benefits of cassette shuffling under the integrase natural promoter and its associated LexA regulation have never been investigated. This is an important limitation, as parameters such as the re-insertion rate of excised cassettes and fitness costs of integrase expression are predicted to have a strong impact on the evolutionary benefits of the integrase (Engelstädter et al., 2016). Moreover, integron cassette shuffling has rarely been studied in the large, natural plasmids where class 1 integrons often occur.
@@ -31,13 +39,13 @@ Here we directly test the ‘adaptation on demand’ hypothesis using experiment
 
 ## Results
 
-## A combinatorial, three-cassette integron system to investigate the impact of cassette position
+### A combinatorial, three-cassette integron system to investigate the impact of cassette position
 
 We replaced the naturally occurring class 1 integron of plasmid R388 with all six possible configurations of a class 1 integron containing three antibiotic resistance cassettes, including dfrA5, aadB, and blaVEB-1 and transformed our integron variants into P. aeruginosa PA01 (Figure 1b). Integrons have played an important role in the evolution of antibiotic resistance in the opportunistic pathogen P. aeruginosa and are highly prevalent in P. aeruginosa high-risk clones (Oliver et al., 2015).
 
 As expected, resistance levels to gentamicin declined as the aadB cassette moved further away from the integrase (Figure 1c). Interestingly, the relationship between aadB position and resistance was not linear: we observed a 6- to 24-fold difference in minimum inhibitory concentration (MIC) between arrays containing aadB in first and second positions, but a less than twofold difference between arrays with aadB in second and third places. In order to investigate the mechanisms behind this trend, we measured the aadB cassette transcription levels of the different arrays. Instead of a sharp drop, we observed a steady decrease depending on the cassette position (Figure 1—figure supplement 1a). Previous work has shown that two short open-reading frames contained within the attI site can substantially enhance the translation of a cassette lacking a Shine–Dalgarno (SD) sequence when the cassette is located in first position (Hanau-Berçot et al., 2002; Papagiannitsis et al., 2017), showing that cassette position can also modulate translation levels (Hanau-Berçot et al., 2002; Jacquier et al., 2009). Interestingly, the aadB cassette contains a reduced SD box (Figure 1—figure supplement 1b), suggesting that the steep gradient in gentamicin resistance between first and second positions was mostly due to decreased translation.
 
-## Integrase activity accelerates the evolution of antibiotic resistance
+### Integrase activity accelerates the evolution of antibiotic resistance
 
 Given the strong effect of aadB cassette position on gentamicin resistance, we decided to use this combination of cassette and antibiotic to experimentally test the hypothesis that integrase activity accelerates resistance evolution. To properly measure the effect of integrase activity on evolvability, we constructed a ΔintI1 mutant of the A3 array lacking 818 bp of intI1 (total length is 1014 bp) but conserving the Pc and Pint promoters. We challenged independent populations of WTA3 and ΔintI1A3 with increasing doses of gentamicin using an ‘evolutionary ramp’ design (Gifford et al., 2018; San Millan et al., 2016). Importantly, we did not detect any difference in initial gentamicin resistance (MICexp = 24 mg/L) between strains with array A3 or the ΔintI1A3 mutant in the conditions of the evolution experiment (see Materials and Methods). We passaged 65 populations of each strain, starting at 1/8 MIC (i.e. 3 mg/L) and doubling the concentration of gentamicin each day until reaching 1024 times (24.5 g/L) the initial MIC (Figure 2a). As controls, 15 populations of each strain were passaged without antibiotic (no selection for gentamicin resistance), while 15 populations were passaged at a constant dose of 1/8 MIC (3 mg/L) to generate weak selection for gentamicin resistance and plasmid maintenance.
 
@@ -47,15 +55,31 @@ Given the strong effect of aadB cassette position on gentamicin resistance, we d
 
 The rapid increase in antibiotic concentration in the ‘evolutionary ramp’ treatment ensures that populations must either evolve increased resistance or face extinction (once concentrations exceed the MIC of the parental strains). Given this, measuring the rate at which populations go extinct provides a way to measure the evolvability of a strain. Crucially, populations of WTA3 populations with a functional integrase had a higher survival rate than those of the ΔintI1A3 mutant, showing that the integrase can increase evolvability for antibiotic resistance (Figure 2b; log-rank test: Chisq = 17.7, df = 1, p=3e-05). We did not detect any extinctions in either of the controls, showing that the higher extinction rate of ΔintI1A3 populations was driven by exposure to high doses of gentamicin. We confirmed the evolution of high level of gentamicin resistance by measuring the MICs of a subset of populations from the final time point (Figure 2c). We observed a similar level of resistance between ΔintI1A3 (mean MIC = 24,200 mg/L; s.d. = 1864; n = 5) and WTA3 (mean MIC = 27,800 mg/L; s.d. = 6031; n = 15) populations (t = 2.044, p=0.056), showing that integrase activity increased the likelihood of resistance evolution, but did not impact the final resistance levels of surviving populations. To understand the mechanisms by which integrase activity accelerates evolution, we sequenced DNA extracted from randomly chosen populations at a mid-point of the experiment (×4 MIC; n = 24 WTA3 and 22 ΔintI1A3) and all populations that survived until the end of the experiment (×1024 MIC; n = 21 WTA3 and 6 ΔintI1A3 populations).
 
-## Integron evolution under antibiotic treatment
+### Integron evolution under antibiotic treatment
 
 We found evidence for widespread cassette re-arrangement in WTA3 populations and identified four novel integron structures that were formed by insertion of the aadB cassette and/or deletions of blaVEB-1-dfrA5 (Figure 3a,b and Supplementary files 2 and 3). The junction sites for cassette insertions and deletions were consistent with integrase activity: recombination happened at the 5′-GTT-3′ triplet of the attI1, attCaadB, and attCdfrA5 sites. We did not find any evidence for cassette re-arrangements in ΔintI1A3 populations or in control WTA3 populations that we selected at a low dose of gentamicin (×1/8 MIC), while the entire R388 plasmid was lost in all ΔintI1A3 and WTA3 populations passaged without antibiotic. Cassette re-arrangements were found in most populations at the ×4 MIC time point, and approximately 90% of populations (19/21) contained cassette re-arrangements by the end of the experiment, highlighting the importance of integrase activity in resistance evolution. Integron structural polymorphisms were found in 50% of populations (12/24) at ×4 MIC, but this within-population diversity was transient and almost all populations contained a single dominant integron structure by the final time point.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig3-v2.jpg)
+
+**Figure 3.:** (a,b) Distribution of cassette re-arrangements at ×4 MIC (a) and ×1024 MIC (b) time points in the WTA3 populations. Homogeneous populations represent populations where only one type of array could be identified while mixed populations contain different arrays as indicated by the corresponding colors. Ambiguous populations correspond to re-arrangements that could not be identified with confidence from short-read data. No re-arrangement was found in the ΔintI1A3 populations. (c,d) Representation of the plasmid mutations and re-arrangements in the surviving PA01:WTA3 and PA01: ΔintI1A3 populations at ×4 MIC (c) and ×1024 MIC (d), mapped to the integron reference sequence. Each circle represents a separate population, with the inner circle representing the variants present in an equimolar pool of six 1/8 MIC control populations. Indels are represented in yellow and single-nucleotide substitutions in red. aadB insertions are represented by blue lozenges. The color intensity represents the frequency of the corresponding mutation/recombination. The dark gray area in the PA01:ΔintI1A3 populations represents the location of the intI1 deletion. (e) Resistance levels provided by evolved plasmids in the ancestral chromosomal background. The plasmids of 15 PA01:WTA3 and 2 PA01:ΔintI1A3 populations were extracted and transformed back into the ancestral PA01 strain. The populations are grouped by array cassette order. Other mutations in the arrays (blaVEB-1 mutations or intergenic mutations upstream of aadB) are indicated in the arrays representations on the right. Resistance levels of the less (WTA3) and most (WTA5) resistant unevolved custom arrays are represented by the dashed lines. Error bars represent standard deviation and the MIC of each plasmid was averaged from three biological replicates.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Representation of the plasmid mutations and re-arrangements in PA01:WTA3 and PA01: ΔintI1A3 populations, mapped to the plasmid reference sequence. Each circle represents a separate population. Indels are represented in yellow and single-nucleotide substitutions in red. aadB insertions are represented by blue lozenges. The color intensity represents the frequency of the corresponding mutation/recombination. The dark gray area in the PA01:ΔintI1 populations represents the location of the intI1 deletion. The function of each R388 gene as described in Fernández-López et al., 2006 is indicated by a specific color in the outer circle. Apart from oriT and oriV, given as reference, only the name of genes where mutations are located is indicated. In (b), the inner circles correspond to the equimolar ⅛ MIC control populations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Top: Primer binding sites and amplicons used in the screen for integrase size and cassette re-arrangements. Bottom: Full gels of the PCR screen for cassettes re-arrangements of the ×1024 MIC WTA3 populations. The population number identifier is indicated at the top. Genomic DNA from the WTA3 ancestor was used as positive control, unless indicated. Samples with a letter corresponds to populations latter excluded from the analysis due to detected cross-contamination. The former location of non-relevant lanes excluded from the gels images is indicated by the gray vertical line, and care was taken to keep the vertical alignment within the gels pictures during the figure composition. (B) Predicted amplicons and corresponding populations for each of the cassette array arrangements identified at the ×1024 MIC time point by full genome sequencing. Bands that cannot be explained by the genomic data are indicated by a question mark (?). Black borders separate different gels images. Gray lines indicate where the full gel images were spliced to keep only the corresponding populations while keeping the vertical alignment to the size ladder. Alignments figures created using Geneious version 10.2.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Left: Re-arrangements in the plasmid backbone of the WT populations at ×1024 MIC. Each junction site is indicated by a letter. Right: junction sequences for each re-arrangement. The junction site is indicated in yellow (as the crossover point is unclear due to sequence homology between each junction, the entire homology is highlighted). The GNT integron secondary motif is indicated by a red line. The recombination point of the aadB attC site is indicated by a black arrow.
 
 The most common novel integron structure contained a ‘copy and paste’ insertion of aadB in first position via attI × attCaadB recombination (ie aadB-blaVEB-1-dfrA5aadB). We measured the impact of this novel array on gentamicin resistance level by transferring the evolved plasmids into the ancestral chromosomal background (Figure 3e). This novel integron is associated with a large increase (64-fold) in gentamicin resistance due to the dominant effect of first position on aadB, with similar levels to our constructed arrays with aadB in first position (Figure 3e). Interestingly, we did not identify any aadBblaVEB-1dfrA5 arrays, which would be the result of an aadB excision followed by reintegration of aadB in first position within the same array, highlighting the prevalence of ‘copy and paste’ cassette insertions. Degenerate integrons that lack the blaVEB-1 and dfrA5 cassettes (i.e. either aadB or aadBaadB arrays) were also present at relatively high frequency at both the ×4 and ×1024 MIC time points. Interestingly, in mixed arrays populations, these reduced arrays were always observed in conjunction with the aadB-blaVEB-1dfrA5aadB array and never with the ancestral array. This repeated association provides good evidence that degenerate arrays evolved via aadB insertion in first position, to form the common aadB-blaVEB-1dfrA5aadB array, followed by the en bloc deletion of the other cassettes (blaVEB-1dfrA5aadB or blaVEB-1dfrA5) to form aadB and aadBaadB arrays. Recombination happened at the 5′-GTT-3′ triplet of the R box of attCaadB and attCdfrA5 sites, suggesting that these deletions were driven by integrase activity, although we cannot rule out the possibility that the blaVEB-1dfrA5aadB cassette deletion was driven by homologous recombination between aadB cassettes. The relative prevalence of these two degenerate arrays did not change between the ×4 and ×1024 MIC time points (four aadB against three aadBaadB arrays at ×4 MIC and three aadB against three aadBaadB arrays at ×1024 MIC), which suggests that the second aadB cassette in the aadBaadB array is redundant. In line with this argument, we found a marginal difference (×2) in MIC between evolved plasmids carrying aadB (mean = 512, s.d. = 0) and aadBaadB (mean = 939, s.d. = 121). Finally, we found arrays containing a duplicate copy of aadB at the end of the array (blaVEB-1dfrA5aadBaadB), which are likely to have been formed by the insertion of an aadB cassette in the middle or at the end of the array through the less frequent attC × attC integration (intermolecular) reaction. These arrays were only found at the ×4 MIC time point, strongly suggesting that they conferred a small increase in gentamicin resistance that was ultimately an evolutionary dead end under strong selection for elevated resistance.
 
 In addition to changes in integron structure, we found widespread integron evolution by mutations in both the WTA3 and ΔintI1A3 populations. Mutations in blaVEB-1 were found in more than 80% of WTA3 and ΔintI1A3 populations from the ×4 MIC time point, and in almost all populations where the blaVEB-1 cassette was maintained at the ×1024 MIC time point, including 5/6 ΔintI1A3 and 16/16 WTA3 populations. All mutations in blaVEB-1 were amino acid substitutions (n = 9) or indels (n = 16) and the 23 amino acid signal peptide was a hotspot for mutations (12 of 25 blaVEB-1 mutations), suggesting strong selection to eliminate the secretion of this redundant resistance protein (Supplementary files 2 and 3). Furthermore, similar blaVEB-1 mutations were also found in the ⅛ MIC controls, demonstrating that these mutations were beneficial under low doses of gentamicin, as we would expect if this cassette imposed an important fitness cost. It is unclear if this cost of blaVEB-1 was driven by the presence of gentamicin (i.e. collateral sensitivity) because the entire R388 plasmid was lost in every control population that was passaged in antibiotic-free medium. Parallel evolution also occurred close to the putative translation initiation site of the aadB cassette. These mutations were very rare at the ×4 MIC time points (2/46 populations), but were present at a high frequency in ΔintI1A3 populations from the final time point (4/6 populations) and are linked with high level of gentamicin resistance (Figure 3e). We speculate that these mutations were favored in ΔintI1A3 populations as they increased the translation rate of the weakly expressed third position aadB cassette and offer an alternative mechanism to increase aadB expression in the absence of re-arrangements. Similarly, we identified one 41 bp deletion within the dfrA5 attC site of a WTA3 population, which may increase translational coupling with the previous dfrA5 cassette (as in Jacquier et al., 2009) or lead to the creation of a fused protein with part of the previous cassette. Finally, we observed similar extended deletions in one WTA3 population and in the 1/8 MIC WTA3 pooled control. These deletions occur between attCaadB and different positions within the plasmid trwF gene, effectively deleting most of the genes involved in mating pore formation (Figure 3—figure supplement 1), with the sequence of the junction sites pointing toward potential off-target activity of the integrase (abundance of 5′-GNT-3′ secondary sites) (Figure 3—figure supplement 3).
 
-## Chromosomal evolution
+### Chromosomal evolution
 
 The integron integrase is known to have off-target effects, suggesting that integrase activity may also have an important effect on chromosomal evolution by reducing genomic stability through recombination between chromosomal pseudo-attC or pseudo-attI sites, leading to an increase in deletions and re-arrangements (Harms et al., 2013).
 
@@ -63,11 +87,23 @@ Chromosomal evolution occurred more rapidly in the ΔintI1A3 populations than in
 
 In total, we identified 41 different SNPs and 58 short indels in eight intergenic regions and 41 genes, with a similar spectrum of mutations in the ramping WTA3 and ΔintI1A3 populations (Figure 4; Supplementary files 2 and 3). Several lines of evidence indicate that the overwhelming majority of mutations were beneficial mutations that reached high frequency as a result of selection. First, many of the mutated genes have known roles in antibiotic resistance; for example, 11/41 mutated genes have also been identified in an aminoglycoside resistance screen in P. aeruginosa (Schurek et al., 2008). Second, parallel evolution was very common. Repeated evolution occurred in 11 of 42 (26%) genes and 3 of 8 (38%) intergenic regions with 68% of mutations occurring in these genes. Only 1 of 41 mutations in coding regions was synonymous, providing evidence that the rapid evolution of proteins was driven by positive selection, and not simply by an elevated mutation rate. Finally, we found almost no overlap between the genes that were mutated in the ramping populations and the controls, implying that the evolutionary response of the ramping populations was dominated by selection for high levels of gentamicin resistance. For both control regimens, the chromosomal genes with the most mutations were cdrA (PA4625), involved in biofilm formation (Reichhardt et al., 2018), and PA1874, a hypothetical protein. Similarly to the ramping populations, no wide-scale chromosomal re-arrangements were observed, and no major differences could be found between the distribution of mutations between WTA3 and ΔintI1A3 populations in both control regimens at x1024 MIC (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig4-v2.jpg)
+
+**Figure 4.:** (a) Summary of the chromosomal mutations at ×4 MIC (left) and at ×1024 MIC (right) mapped to the PAO1 reference sequence. Each circle represents a summary of each genotype. The type (indel, substitution) of mutation for each gene is represented by the shape of the marker (line, circle), while the marker color represents the effect of the mutations (nonsynonymous/intergenic vs. synonymous), and its color intensity and size represent its normalized cumulative frequency per gene. The size of the gene labels on the outer ring represents the overall cumulative frequency of mutations present in this gene across all populations from this time point. (b) Cumulative frequency of mutations for each gene normalized by the number of populations within each genotype and time point. Genes are colored by resistance mechanism, and the type of the mutations (single-nucleotide substitution, insertion, deletion) is indicated by the patterning.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Box plots representing the average cumulative mutation frequencies for each population at the ×1024 MIC time point for (A) all mutations (B) per mutation type (C) per mutation effect (SNP only). The lower and upper hinges correspond to the first and third quartiles, while the middle line corresponds to the median. Cassette re-arrangements (duplications and deletions) are not included.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62474/elife-62474-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Box plots representing the average cumulative mutation frequencies for each population at the ×4 MIC time point for (A) all mutations (B) per mutation type (C) per mutation effect (SNP only). The lower and upper hinges correspond to the first and third quartiles while the middle line corresponds to the median. Cassette re-arrangements (duplications and deletions) are not included. Supplementary Informations.
+
 In the ramping populations, the initial stages of adaptation to gentamicin were driven by mutations in a very diverse set of genes, with a strong bias toward genes that are involved in translation, such as rluD and PA0668.4, which encodes for the 23S ribosomal RNA (Figure 4). Interestingly, we observed divergent mutational trajectories of evolution in the WTA3 and ΔintI1A3 backgrounds: the number of genes that were mutated in both backgrounds was small (n = 7) relative to the total number of mutated genes in either background (n = 26) and the correlation in mutation frequencies across backgrounds was weak (rho = 0.029; p=0.89 Spearman test).
 
 Continued selection for elevated gentamicin resistance resulted in two changes in chromosomal evolution (Figure 4). First, chromosomal evolution became dominated by mutations in a few key target genes, implying that many of the trajectories of chromosomal evolution followed during early adaptation ultimately led to evolutionary dead ends. For example, the correlation in mutation frequencies between early and late time points was very weak, in both WTA3 (rho = −0.10, p=0.58) and ΔintI1A3 (rho = 0.20, p=0.307). In particular, we found evidence of extensive parallel evolution in mexZ, amgS, and rluD in both the WTA3 and ΔintI1A3 populations. At a functional level, the mutations found at ×1024 MIC are predominantly involved in antibiotic efflux, as opposed to translation. mexZ is a transcription factor that represses the expression of the mexXY multidrug efflux pump operon. Mutations inactivating mexZ cause a 2- to 16-fold increase in aminoglycoside resistance and have been widely identified in aminoglycoside-resistant P. aeruginosa isolates found in cystic fibrosis patients (Vogne et al., 2004). AmgS is part of an envelope stress-responsive two-component system AmgRS (Lau et al., 2013), and amgS mutations upregulate the mexXY multidrug efflux system in the presence of aminoglycosides (Lau et al., 2015).
 
-## Cassette duplication in a clinically relevant plasmid
+### Cassette duplication in a clinically relevant plasmid
 
 Resistance to carbapenem antibiotics in P. aeruginosa has emerged as an important clinical threat; for example, the WHO has designated carbapenem-resistant P. aeruginosa as a ‘critical priority’ for the development of new antibiotics. Interestingly, mobile integrons carrying multiple blaVIM-1 carbapenemase cassettes have been found in clinical isolates of P. aeruginosa (San Millan et al., 2015b), suggesting that cassette duplications may play an important role in clinical settings. To test this idea, we challenged 30 populations of P. aeruginosa carrying a plasmid (pAMBL-1), which contains an integron carrying a single copy of blaVIM-1 followed by aadB, with increasing doses of meropenem using a similar evolutionary ramp experiment (Figure 5). PCR screening of populations that survived at ×2 MIC identified numerous cassette re-arrangements of both the blaVIM-1 and aadB cassettes, with potential blaVIM-1 duplications occurring in all 14 surviving populations (Figure 5). Short-read sequencing of clones isolated from two of these populations confirmed the presence of duplications, as demonstrated by increased copy number of blaVIM-1 per plasmid (2.0 copies/plasmid [95% CI: 1.90–2.10] and 2.67 copies/plasmid [95% CI: 2.53–2.78]). Although it is not possible to definitely prove the role of the integrase without control populations lacking a functional integrase, these results strongly support the idea that ‘copy and paste’ outcomes of cassette re-arrangements can drive the rapid evolution of elevated carbapenem resistance and was the mechanism behind the blaVIM-1 amplification observed in the plasmid pAMBL2 isolated in the same hospital (San Millan et al., 2015b).
 
@@ -93,49 +129,164 @@ In conclusion, our study supports the view that integrons provide bacteria with 
 
 ## Materials and methods
 
-## Bacteria and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA01</td>
+      <td>Lab strain</td>
+      <td>NC_002516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MG-1</td>
+      <td>Poirel et al., 1999</td>
+      <td>AF205943</td>
+      <td>E. coli clinical isolate containing a qacI–aadB–aacA1/orfG–blaVEB1–aadB–arr2–cmIA5–blaOXA–10/aadA1 integron array</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>EIEC-4</td>
+      <td>Gassama et al., 2004</td>
+      <td></td>
+      <td>E. coli clinical isolate containing a dfrA5 integron cassette</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>R388</td>
+      <td>Avila and de la Cruz, 1988</td>
+      <td>NC_028464.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA1</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array drfA5–blaVEB1–aadB on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA2</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array blaVEB1– aadB–dfrA5 on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA3</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array blaVEB1–dfrA5–aadB on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA4</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array dfrA5–aadB–blaVEB1 on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA5</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array aadB–blaVEB1– dfrA5 on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>WTA6</td>
+      <td>This study</td>
+      <td></td>
+      <td>Custom integron array aadB–dfrA5–blaVEB1 on R388 plasmid backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Δint1A3</td>
+      <td>This study</td>
+      <td></td>
+      <td>Array WTA3 with a 948 bp deletion of the integrase intI1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAMBL1</td>
+      <td>San Millan et al., 2015a</td>
+      <td>KP873172.1</td>
+      <td>Clinical plasmid containing a blaVIM-1–aadB integron array</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>breseq</td>
+      <td>Barrick et al., 2014</td>
+      <td>RRID:SCR_010810</td>
+      <td>Version 0.33.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CNOGpro</td>
+      <td>Brynildsrud, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacteria and growth conditions
 
 A complete list of strains and plasmids can be found in Supplementary file 1. Unless stated, bacteria cultures were grown overnight at 37°C with shaking in Luria-Bertani (LB) Miller broth (Sigma Aldrich) and supplemented with 100 mg/L of ceftazidime when required to select for the integron-bearing plasmids.
 
-## Strain construction
+### Strain construction
 
 Six integron arrays covering all possible cassette orders were created using the plasmid R388 (Avila and de la Cruz, 1988) as backbone and three resistance cassettes: aadB, blaVEB-1, and dfrA5. The blaVEB-1 and aadB cassettes were amplified from the integron of the E. coli MG-1 clinical isolate (Poirel et al., 1999), while the dfrA5 cassette was obtained from an enteroinvasive E. coli strain isolated in Senegal (Gassama et al., 2004). These cassettes were then assembled into custom integron arrays using Gibson assembly and inserted into the plasmid R388 while replacing its original dhfr–orf9–qacEΔ1–sul1 integron array (Fernández-López et al., 2006). The original R388 strong PcS promoter variant (high cassette expression but low integrase activity [Jové et al., 2010]) was replaced by the weaker PcW promoter from a clinical isolate to guarantee high integrase activity and represent the promoter most commonly found in class 1 integrons (Jové et al., 2010). ΔintI1 mutants of these custom integrons were created by introducing a 948 bp deletion of the integrase IntI1 gene during array construction, deleting most of the integrase open-reading frame but conserving both the Pint and Pc promoters. The final arrays were then first transformed into chemically competent E. coli MG1655.
 
 These plasmids were then conjugated into P. aeruginosa through filter mating using the previous E. coli strains as donors and PA01 as recipient. Bacteria were incubated overnight in LB broth with 100 mg/L of carbenicillin at 37°C for the donors and in LB Miller broth without antibiotic at 42°C for the recipient bacteria. The next day cells were spun down, washed, and re-suspended in LB broth, before mixing in a 1:4 donor to acceptor ratio. The mix, as well as pure donor and acceptor controls, were put on filters placed on LB agar without antibiotics and incubated at 37°C overnight. Afterwards, filters were placed in tubes containing LB media and agitated. The resulting supernatants were plated on LB agar supplemented with 50 mg/L of kanamycin and 25 mg/L of ceftazidime and incubated for 48 hr. As P. aeruginosa PA01 has a higher innate resistance to kanamycin than E. coli MG1655 due to a chromosomally encoded phosphotransferase (Okii et al., 1983), kanamycin was used to select against the E. coli donors, while ceftazidime was used to select for the plasmid in the P. aeruginosa transconjugants. The final colonies were controlled by PCR for the presence of the plasmid and the absence of E. coli DNA.
 
-## MIC determination
+### MIC determination
 
 MIC were determined in cation-adjusted Mueller-Hinton Broth 2 (MH2), following the broth microdilution method from the Clinical and Laboratory Standards Institute guidelines (CLSI, 2017). Briefly 5×105 c.f.u bacteria inocula were prepared using individual colonies grown on selective agar in interlaced twofold-increasing concentrations of antibiotics and incubated for 20 hr in a shaking incubator at 37°C. The next day, plates’ optical density (OD595) was read using a Biotek Synergy two-plate reader. Wells were considered empty when the overall was under 0.1, and the MIC for each assay was defined as the minimal concentration in which growth was inhibited in all three technical replicates (separate wells, but grown on the same day from the same inoculum). The final MICs values are the average of two to four replicate assays (from separately prepared inocula, on different days).
 
-## aadB cassette transcription levels
+### aadB cassette transcription levels
 
-## RNA and DNA extractions
+#### RNA and DNA extractions
 
 Each bacterial strain was inoculated in MH2 medium supplemented with antibiotics and grown overnight at 37°C with constant shaking (225 rpm). The overnight cultures were diluted 1:50 in fresh MH2 without antibiotics and incubated until they reached an OD595 between 0.5 and 0.6. Both RNA and DNA were extracted for each sample. Half of each culture was mixed with RNAprotect Bacteria Reagent (Qiagen) according to the manufacturer instruction. Total RNA extraction was performed using the RNeasy Mini kit (Qiagen) on the QIAcube extraction machine (Qiagen). The other halves were treated with RNase and used to extract total gDNA using the DNeasy Blood and Tissue Kit on the QiaCube (Qiagen). Each strain was extracted three times from cultures started on different days.
 
-## Plasmid copy number
+#### Plasmid copy number
 
 Plasmid copy number was determined for each gDNA sample using the approach described in San Millan et al., 2015a: all samples were first digested in order to linearize the plasmid using the restriction enzyme BamHI (BamHI FastDigest, ThermoFisher Scientific) according to the manufacturer instruction for gDNA digestion. Linearizing the plasmid increases DNA template accessibility and therefore prevents from underestimating the plasmid copy number (Providenti et al., 2006). The amplified regions were controlled for the absence of BamHI restriction sites. The orf9 gene was used as the R388 plasmid target, and the mono-copy rpoD gene was used as chromosomal target for P. aeruginosa (primers given in Supplementary file 1). Amplifications were carried out using the Luna Universal Probe qPCR Master Mix (New England Biolabs). Thermal cycling protocol consisted of 1 s at 95°C (denaturation) and 20 s at 60°C (annealing/extension) for 40 cycles. Melting curve analysis was included for samples detected without probes. Fourfold dilution standard curves were included to control for differences in primer efficiencies. Plasmid copy number was calculated as the ratio between the plasmid and chromosomal target DNA quantities.
 
-## Reverse transcription and qPCR
+#### Reverse transcription and qPCR
 
 All RNA samples were treated with the TURBO DNA-free Kit (ThermoFisher) to eliminate genomic DNA. Concentration of the RNA samples was quantified using the Quantifluor RNA system (Promega). cDNA was synthesized from 100 ng of RNA templates using random primers from the GoScript Reverse Transcription Mix (Promega). qPCR was carried out on the StepOnePlus Real-time PCR platform (Applied Biosystems) using the iTaq Universal SYBR Green Supermix. The cassette, as well as two reference genes (actpA and acp), were amplified using the primers described in Supplementary file 1 in two technical replicates for each extraction. Standard curves for the pair of cassette primers was included in each PCR using restriction enzyme-digested gDNA as template and used to quantify the amount of target cDNA in each sample to control for inter-run variations. Melting curve analysis was included after each run to test for non-specific amplification products. For each biological replicate, the cassette transcript levels were normalized based on the geometric means of the two internal reference genes, using the first array A1 as a reference, before division by its plasmid copy number.
 
-## Experimental evolution with custom arrays
+### Experimental evolution with custom arrays
 
 As antibiotics’ MICs vary depending on the size of the starting inoculum (Brook, 1989), we first determined MIC in densities similar to the experimental evolution experiment (further called MICexp). Overnight cultures inoculated from two to three morphologically similar colonies grown on selective agar were incubated for 20 hr with shaking in MH2 media with antibiotics. These overnight cultures were then diluted 1/10,000 and supplemented with doubling concentrations of gentamicin in three replicates. MICexp were determined the next day after 20 hr of incubation using OD595 measurements. This process was repeated twice. In these conditions, the MICexp for PA01:WTA3 and PAO1:ΔintI1A3 were identical at 24 mg/L.
 
 At the start of the experiment, 90 individual colonies grown on selective agar of each strain (PA01:WTA3 and PA01:ΔintI1A3) were inoculated in 200 μL of MH2 media supplemented with gentamicin at a concentration of 1/8 MICexp. WT and ΔintI1 strains were placed in a chequerboard pattern by interlacing the different genotypes to control easily for cross-contamination. Wells at the edge of every plate were kept bacteria free to avoid edge effects and identify contaminations. These 90 populations were passaged every day with a 1/10,000 dilution factor, and the antibiotic concentration was doubled, starting at 1/8 MICexp until reaching a concentration of ×1024 MICexp. Alongside these 90 populations per strain which were transferred in increasing antibiotic concentrations, 30 populations per strain were transferred as controls in constant conditions: 15 without antibiotic and 15 at a constant concentration of 1/8 MICexp. Each population’s OD595 was measured each day and a population was considered extinct when its OD595 fell below 0.1 after 20 hr of incubation. All populations were frozen in 15% glycerol every 2 days.
 
-## DNA extraction
+### DNA extraction
 
 Liquid cultures were grown from the frozen stock of all surviving PA01:WTA3 and PA01:ΔintI1 A3 populations at ×1024 MICexp in LB Miller media supplemented with gentamicin at ×128 MICexp, and were incubated for 24 hr with shaking. Six populations were inoculated from each control treatment in either LB Miller supplemented with a concentration of MICexp or with no antibiotic. For the ×4 MICexp time point, 26 populations of each PA01:WTA3 and PA01:ΔA3 genotype were regrown in ×2 MICexp concentration of gentamicin. Ancestral PA01:WTA3 and PA01:ΔintI1A3 populations were incubated in 100 mg/L of ceftazidime from the initial frozen stock. DNA extractions of the whole populations were carried out using the DNeasy Blood and Tissue Kit (Qiagen) on the QiaCube extraction platform (Qiagen) combined with RNAse treatment. DNA concentrations were determined using the Quantifluor dsDNA system (Promega).
 
-## PCR controls and analysis
+### PCR controls and analysis
 
 At the ×1024 and ×4 MICexp transfers all surviving populations were controlled for cross-contamination by verifying the size of the integrase by PCR (primers given in Supplementary file 1). Starting materials were either 2 μL of extracted DNA (×1024 MICexp time point) or 2 μL of inoculate previously incubated for 24 hr and then boiled for 10 min at 105°C (×4 MICexp time point). PCR were carried out using the GoTaq G2 DNA mastermix (Promega) and the following protocol: 30 s at 95°C, 30 s at 55°C, 3 min at 72°C for 30 cycles. Plate mishandling during the transfers resulted in the contamination of 40 and 34 wells of 90 ramping populations for each array. Areas of the plates where cross-contamination was detected in several wells in close proximity were excluded from the rest of the analysis, for a final population number of 65 per strain. The final populations at ×1024 MICexp were analyzed by PCR to determine the position of the aadB cassette relative to the start and the end of the array as well as identify any aadB duplications or inversions and deletions of the plasmid backbone.
 
-## Next-generation sequencing and bioinformatic pipeline
+### Next-generation sequencing and bioinformatic pipeline
 
 Library preparation and next-generation sequencing using the NovaSeq 6000 Sequencing System (Illumina) were carried out at the Oxford Genomics Centre at the Wellcome Centre for Human Genetics. Twenty-two PA01:WTA3 and 6 PA01:ΔintI1A3 populations were sequenced from the ×1024 MICexp time point. For each control treatment, six populations were pooled together and sequenced as one. For the ×4 MICexp time point, 26 PA01:WTA3 and 26 PA01:ΔintI1A3 were sequenced.
 
@@ -145,18 +296,18 @@ Single-nucleotide polymorphism (SNP), point insertion, and deletion identificati
 
 Potential new junctions between distant regions of the reference genome were identified through the breseq software on the plasmid and on the chromosome (Barrick et al., 2014). We detected any re-arrangement present in more than 5% of a population, but kept only re-arrangements above 30% for further analysis, which excluded four re-arrangements, all deletions of less than 1 kb. Copy number variants were identified with CNOGpro (Brynildsrud, 2018) and used to confirm potential duplications or large-scale deletions. Finally, de novo assembly of the plasmids using plasmidSPAdes (Antipov et al., 2016) was carried out to provide additional evidence for the cassette rearrangements and visualized using Bandage (Wick et al., 2015). The robustness of the detection of cassette re-arrangement from the sequencing data was tested by cross-referencing the predicted recombinations with the results from the PCR screen at ×1024 MIC: all predicted recombinations matched the bands of the PCR screen, and only two extraneous bands could not be explained in three populations (Figure 3—figure supplement 2), confirming the robustness of the bioinformatic analysis.
 
-## MIC determination of evolved populations
+### MIC determination of evolved populations
 
 The MICs of 15 PA01:WTA3 and 5 PA01:ΔintI1A3 evolved populations from the final ×1024 MIC time point were determined as described above using individual colonies plated on in LB Miller media supplemented with gentamicin at ×128 MICexp from the frozen stocks.
 
 To create populations containing the evolved plasmids in the ancestral chromosomal background, the plasmids of 15 PA01:WTA3 and 2 PA01:ΔintI1A3 ×1024 MIC populations containing a single type of array were first extracted using the QIAprep Miniprep (Qiagen) on the QiaCube extraction platform (Qiagen) from liquid culture in LB Miller supplemented with gentamicin at x64 MICexp. These plasmids were then electroporated back into the ancestral PA01 background using the protocol described in Choi and Schweizer, 2006 and plated on agar supplemented with gentamicin at 24 mg/L. The presence of the plasmid was controlled by PCR targeting the integrase, and MICs were performed following the protocol described above.
 
-## Experimental evolution with pAMBL1
+### Experimental evolution with pAMBL1
 
 Thirty colonies of PA01:pAMBL1 were inoculated in 100 μL of MH2 broth and transferred every day in doubling concentrations of meropenem with a 1/10,000 dilution and frozen in 15% glycerol every other day. Population survival was monitored each day after reaching a concentration of ×1 MICexp by plating every well on a MH2 agar plate without antibiotic using a pin replicator. Extinction of a population was defined as the absence of a visible colony after 24 hr incubation at 37°C.
 
 Surviving populations at ×2 MICexp were grown on a MH2 agar plate without antibiotic and used as substrate for PCR. Primers were used to identify potential duplications of the blaVIM cassette by PCR. PCR were carried out using the GoTaq G2 DNA mastermix (Promega) and the following protocol: 30 s at 95°C, 30 s at 55°C, 3 min at 72°C for 30 cycles. Single clones from two different populations were sequenced through whole genome sequencing and analyzed using the same protocol as described previously.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was carried out using R (version 3.6.1) and RStudio (Version 1.2.5). Survival analysis using the log-rank test was performed using the survival (Therneau, 2020) package to compare survival rates between populations with and without a functional integrase.

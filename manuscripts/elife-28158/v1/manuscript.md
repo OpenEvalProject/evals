@@ -23,4 +23,4 @@
 
 ## Abstract
 
-The internal brain dynamics that link sensation and action are arguably better studied during natural animal behaviors. Here we report on a novel volume imaging and 3D tracking technique that monitors whole brain neural activity in freely swimming larval zebrafish ( Danio rerio ). We demonstrated the capability of our system through functional imaging of neural activity during visually evoked and prey capture behaviors in larval zebrafish.
+The internal brain dynamics that link sensation and action are arguably better studied during natural animal behaviors. Here we report on a novel volume imaging and 3D tracking technique that monitors whole brain neural activity in freely swimming larval zebrafish (Danio rerio). We demonstrated the capability of our system through functional imaging of neural activity during visually evoked and prey capture behaviors in larval zebrafish.

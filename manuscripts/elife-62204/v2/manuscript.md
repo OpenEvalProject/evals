@@ -26,37 +26,101 @@ B. subtilis is a unique model system to study cell division as it can divide via
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig1-v2.jpg)
 
-**Figure 1.:** Bacillus subtilis.Schematic of cell division in B. subtilis during (A) vegetative growth and (B) sporulation. The thickness of septa upon their closure is indicated for both cases.
+**Figure 1.:** Schematic of cell division in B. subtilis during (A) vegetative growth and (B) sporulation. The thickness of septa upon their closure is indicated for both cases.
 
 In this study, we used cryo-focused ion beam milling coupled with cryo-electron tomography (cryo-FIB-ET) to reveal the molecular architecture of the cell division machinery in B. subtilis during vegetative growth and sporulation. Our results demonstrate that FtsAZ filaments have distinct spatial organization during the two modes of division and that SpoIIE regulates the positioning of FtsAZ filaments during sporulation. We further provide evidence that this distinct organization leads to a thinner polar septum during sporulation. Our results pave the way for future studies in the field of bacterial cell division, giving rise to testable hypothesis on how bacteria regulate protein localization in space and time to carry out the critical process of cytokinesis under different gene expression programs.
 
 ## Results
 
-## FtsAZ filaments in vegetative B. subtilis
+### FtsAZ filaments in vegetative B. subtilis
 
 Cryo-electron tomography (cryo-ET) is a method to obtain three-dimensional reconstructions of biological specimens. Previously, cryo-ET images of E. coli and Caulobacter crescentus revealed the presence of a series of electron-dense puncta (dots) at the division site corresponding to cross-sectional views of FtsZ filaments encircling the cell (Li et al., 2007; Szwedziak et al., 2014). However, because of their increased thickness, B. subtilis cells were precluded from high-resolution tomography until recently, when we incorporated a cryo-FIB milling step in the workflow to provide mechanistic details about engulfment in B. subtilis sporangia (Khanna et al., 2019; Lopez-Garrido et al., 2018; Figure 2, Figure 2—figure supplement 1, see also Materials and methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig2-v2.jpg)
+
+**Figure 2.:** Schematic explaining visualization of cells in different planes in three-dimension (3D). (A) Initially, the rod-shaped Bacillus lies flat on an electron microscopy (EM) grid. (B) Representation of 3D view of a cellular section obtained by cryo-FIB-ET in the xyz coordinate axis. x axis represents the length along the short axis of the cell, y axis represents the length along the long axis of the cell and z axis represents the height of the cellular specimen. (C) Top panel: projection image of the cell in the xy coordinate plane (top view). Bottom panel: the corresponding projection image in the xz coordinate plane when the cell is rotated about its short axis by 90° (side/rotated view). The lateral and septal peptidoglycan (PG) are also indicated. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of a rod-shaped cell (gray) subjected to cryo-FIB milling. Two parallel beams of gallium ions (brown) ablate the cellular material from the top and the bottom, leaving a thin slice (~100–300 nm thick) for imaging using cryo-ET. (B) Schematic depicting different sections of the septal disc that can be captured when a rod-shaped cell is FIB-milled depending on the milling angle, orientation of the cell on the electron microscopy grid and orientation of the cell with respect to the tilt axis. (C) Schematic illustrating the orientation of bacterial cells (gray) on a grid square (orange). Since all cells lie flat on the grid with their xy axis parallel to the grid (as shown in Figure 2), the missing wedge is always in a direction that is perpendicular to the xy plane. (D) Schematic depicting the missing wedge issue in cryo-ET workflow. Since we are only able to image from ~ ± 60o, the areas from −60o to −90o and from +60o to +90o remain unsampled, leading to missing information for these areas.
+
 To obtain insights into the divisome architecture in B. subtilis, we first observed the leading edge of the invaginating septum in cryo-FIB-ET images of dividing vegetative cells (Figure 3, Figure 3—figure supplement 1). Our data revealed two series of dots at the division site that were distributed uniformly along the boundary of the leading edge: a membrane-proximal series of dots (~6.5 nm from the invaginating membrane) and a membrane-distal series of dots (~14 nm from the invaginating membrane) (Figure 3A, B, D, F, Figure 3—figure supplement 1A, B, Figure 3—video 1). Rotation of the 3D volume of the tomogram around the short axis of the cell (Figure 2) demonstrated that each series of dots corresponded to filamentous structures of ~3.5 nm diameter arranged next to each other, forming a bundle that spans the circumference of the cell (Figure 3C, E–I, Figure 3—figure supplement 1C, Figure 3—video 2). In the membrane-distal series of dots, we could resolve individual filaments spaced ~5.5 nm apart while the filaments corresponding to the membrane-proximal series of dots were more diffuse (Figure 3B, D). In a few data sets, we observed densities that connect the membrane-proximal and the membrane-distal bundles in a ladder-like arrangement (Figure 4, indicated by white lines in Figure 4B, D). We do not exactly know which factors may produce the ladder-like arrangements but other FtsZ-binding proteins including SepF, ZapA or EzrA are potential candidates to test in the future (Duman et al., 2013; Gueiros-Filho and Losick, 2002; Singh et al., 2007). In cryo-ET, contrast in images reflects variation in mass density across the biological specimen. Analysis of the intensities of the two rings revealed that the membrane-distal ring is denser and more continuous than the membrane-proximal ring (Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig3-v2.jpg)
+
+**Figure 3.:** (A) Slice through a tomogram of a dividing vegetative cell. The insets (l for left and r for right side of the septum) highlight the leading edges of the invaginating septum. (B) Left panel: zoomed-in view of the ‘l’ inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG; gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane-distal series of dots (blue) highlighted. The same color scheme is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with PG, cell membrane, membrane-proximal ring and membrane-distal ring highlighted. (D) Left panel: zoomed-in view of the inset ‘r’ in (A) in the xy coordinate plane. Right panel: same as left with cellular parts highlighted. (E) Left panel: view of the septal disc corresponding to (D) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with cellular parts highlighted. (F) Schematic of the arrangement of the cytoskeletal machinery in dividing vegetative cells as seen in the xy and xz coordinate planes. All cellular parts detailed previously are highlighted in the same color scheme. (G) Annotation of the cell membrane and filaments corresponding to the membrane-proximal and the membrane distal rings for the tomogram shown in (A). (H and I) represent zoomed-in views of the left (l) side and the right (r) side of the invaginating septum of the segmentation in (G), respectively. Scale bars: (A) 200 nm, (B–E) 25 nm. Scale bars are omitted from (G–I) owing to their perspective nature. See also Figure 3—figure supplements 1 and 2. * A note regarding annotation of cytoskeletal filaments. In this and in subsequent figures, we have annotated membrane-distal bundle with dots in xy views, and in slices where we could not resolve them unambiguously, we have depicted them as dashed lines. We have depicted membrane-proximal bundle as dashed lines in xy views since in many instances it was not possible to resolve individual dots corresponding to the membrane-proximal bundle with full certainty. We used dashed lines to represent both the membrane-distal and the membrane-proximal cytoskeletal rings in rotated views (xz/yz slices) due to missing wedge issues and the quality of tomograms at times that made it difficult to assign continuity at the pixel level for all images.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Slice through a tomogram of a dividing vegetative cell under vegetative culture conditions (see Materials and methods). The inset highlights the left side of the leading edge of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane distal series of dots (blue) highlighted. The same color scheme for labeling cellular parts is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with different cellular parts and cytoskeletal filaments highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Box-and-whisker plot depicting the distribution of intensity values for the region traced by the membrane-distal and the membrane-proximal rings normalized in the range of 0–1. A region with approximately similar area was masked for peptidoglycan, cell membrane and cytoplasm as controls. Lower-intensity values (darker pixels) correspond to high mass density in the cryo-ET data.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig4-v2.jpg)
 
-**Figure 4.:** B. subtilis cells.(A) Slice through a tomogram of a dividing vegetative cell. The insets (l for left and r for right side of the septum) highlight the leading edges of the invaginating septum. (B) Left panel: zoomed-in view of the ‘l’ inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG; gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane-distal series of dots (blue) highlighted. ‘Ladder-like’ connection between the membrane-proximal and the membrane-distal bands is shown by white lines (indicated by a black arrow). The same color scheme is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with PG, cell membrane, membrane-proximal ring and membrane-distal ring highlighted. (D) Left panel: zoomed-in view of the inset ‘r’ in (A) in the xy coordinate plane. Right panel: same as left with cellular parts highlighted. (E) Left panel: view of the septal disc corresponding to (D) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with cellular parts highlighted. Scale bars: (A) 200 nm, (B–E) 25 nm.
+**Figure 4.:** (A) Slice through a tomogram of a dividing vegetative cell. The insets (l for left and r for right side of the septum) highlight the leading edges of the invaginating septum. (B) Left panel: zoomed-in view of the ‘l’ inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG; gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane-distal series of dots (blue) highlighted. ‘Ladder-like’ connection between the membrane-proximal and the membrane-distal bands is shown by white lines (indicated by a black arrow). The same color scheme is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with PG, cell membrane, membrane-proximal ring and membrane-distal ring highlighted. (D) Left panel: zoomed-in view of the inset ‘r’ in (A) in the xy coordinate plane. Right panel: same as left with cellular parts highlighted. (E) Left panel: view of the septal disc corresponding to (D) in the xz coordinate plane obtained by rotating the cell around its short axis by 90°. Right panel: same as left with cellular parts highlighted. Scale bars: (A) 200 nm, (B–E) 25 nm.
 
-## FtsA and FtsZ comprise the membrane-proximal and the membrane-distal ring, respectively
+### FtsA and FtsZ comprise the membrane-proximal and the membrane-distal ring, respectively
 
 Our data suggest that the arrangement of the two cytoskeletal rings that mediate cytokinesis in B. subtilis differs from that of Gram-negative bacteria like E. coli and C. crescentus where only a single bundle of FtsZ filaments is visible at a distance of ~16 nm from the inner membrane (Li et al., 2007; Szwedziak et al., 2014). In E. coli, another ring composed of FtsA filaments is visible at a distance of ~8 nm from the membrane only when FtsA is overexpressed, such that the ratio of FtsZ to FtsA alters from 5:1 in wild type to 1:1 in the modified strain (Szwedziak et al., 2014). Based on these data and the knowledge that both FtsA and FtsZ form filaments in vivo and in vitro (Mukherjee and Lutkenhaus, 1994; Szwedziak et al., 2012), we hypothesized that in B. subtilis the membrane-proximal ring is composed of FtsA filaments and the membrane-distal ring that of FtsZ filaments.
 
 To unambiguously establish the identity of the two rings, we constructed a B. subtilis strain with an extra glutamine-rich linker region between the globular N-terminal domain of FtsZ and its C-terminal helix that binds FtsA (hereafter referred to as FtsZ-linkerQ-rich; Figures 5 and 6, Figure 5—figure supplement 1). In a similar E. coli mutant strain, the Z-ring was further from the membrane by ~5 nm compared to the wild type (Szwedziak et al., 2014). In B. subtilis FtsZ-linkerQ-rich, the distance of the membrane-proximal ring from the invaginating membrane remained unaltered compared to wild type, while the membrane-distal filaments were further from the membrane compared to wild type (17.5 ± 1.1 nm vs. 14 ± 0.6 nm) with a wide distribution ranging from ~15 to ~19 nm (Figure 5B, Figure 5—source data 1), establishing the membrane-distal filaments to be FtsZ.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig5-v2.jpg)
+
+**Figure 5.:** (A) Slice through a tomogram of FtsZ-linkerQrich dividing vegetative cell. A schematic showing the construction of the modified strain is overlaid on the tomogram slice wherein peptidoglycan (PG; gray) and cell membrane (peach) are highlighted. FtsZ (blue) is tethered to the membrane via FtsA (pink), and the two interact via a linker region (black + Q-rich linker in orange). Same color scheme is followed throughout. (B) Box-plot showing the distance of the membrane-proximal and the membrane-distal rings from the cell membrane in wild type and FtsZ-linkerQrich strains. Error bars indicate standard deviation (n.s.: p>0.05, ***p≤0.001, unpaired t-test). (C) Schematic illustrating the arrangement and identity of the cytoskeletal machinery with PG (gray), cell membrane (peach), FtsZ (blue) and FtsA (pink) highlighted. In the top view (xy coordinate plane), the cytoskeletal machinery is visible as two series of dots at the nascent septum. In the rotated view (xz coordinate plane), denser and more continuous ring formed by FtsZ is tethered to the membrane via a patchy ring formed by FtsA filaments. See also Figure 5—figure supplement 1, Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Morphology of wild-type B. subtilis (PY79) during (A) vegetative growth and (B) sporulation. Morphology of FtsZ-linkerQ-rich strain during (C) vegetative growth and (D) sporulation. Membranes are stained with FM4-64 (red). The cells indicated by white arrows in (C, D) show a filamentous phenotype and are longer compared to the wild type. (E) Spore titer of wild type and FtsZ-linkerQ-rich (see Materials and methods).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig6-v2.jpg)
+
+**Figure 6.:** (A) Slice through a tomogram of a dividing cell expressing FtsZ-linkerQrich, as in Figure 5A. The insets (l for left and r right for right side of the septum) highlight the leading edge of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) corresponding to ‘l’ in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG, gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane-distal series of dots (blue) highlighted. Same color scheme is followed throughout. Black arrows indicate membrane-distal dots that are likely not tethered to the membrane via membrane-proximal dots. Green and red stars are used to differentiate the two opposite sides of the dividing septum. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90o. Right panel: same as left with different cellular parts and cytoskeletal filaments highlighted. (D) Segmentation of the cell membrane (peach) corresponding to (B) and (C). Red and green stars indicate the two opposite sides. (E) View of the side highlighted by the green star obtained by rotating the cell by 90° as indicated in (D). Membrane-distal dots highlighted by black arrows in the right panel of (B) are highlighted. (F) Same as (D) except that the cell is rotated along its short axis by 90° to get a view of the septum side indicated by the red star. (G) View of the side highlighted by the red star. Membrane-distal dots highlighted by black arrows in the right panel of (B) are highlighted. (H) Left panel: zoomed-in view of the inset in (A) corresponding to ‘r’ in the xy coordinate plane. Right panel: same as left with different cellular parts highlighted. Doublets of the membrane-distal series of dots are indicated by blue arrows (labeled 2–6), and a possible triplet is indicated with an orange arrow (labeled 1). (I) Left panel: view of the septal disc corresponding to (H) in the xz coordinate plane obtained by rotating the cell around its short axis by 90o. Right panel: same as left with different cellular parts and cytoskeletal filaments highlighted. (J, K) Two views of the annotated cell membrane, membrane-proximal and membrane-distal filaments corresponding to (H) and (I). Doublets of membrane-distal filaments highlighted by blue arrows in the right panel of (H) are indicated in (J) and (K). (L) Violin plot showing the quantification of distances of membrane-distal dots indicated in the right panel of (H) within the doublets/triplet (as indicated by blue/orange arrows in the right panel of H) vs. distance of membrane-proximal dots with neighbor outside of the proposed doublet/triplet (***p≤0.001, unpaired t-test). Below the plot, membrane-proximal dots indicated in blue in the right panel in (H) are flattened and drawn to scale for context. Clusters labeled 1–6 in the right panel of (H) are also indicated. Scale bars: (A) 200 nm, (B, C, H, I) 25 nm. Scale bars are omitted from (D–G) and (J, K) owing to their perspective nature. See also Figure 6—figure supplements 1 and 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Slice through a tomogram of a dividing FtsZ-linkerQ-rich vegetative cell. The inset highlights the left side of the leading edge of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG; gray), cell membrane (peach), membrane-proximal series of dots (pink) and membrane-distal series of dots (blue) highlighted. An intermediate series of dots between the membrane-proximal and the membrane-distal series is highlighted in green. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis by 90o. Right panel: same as left with PG, cell membrane, membrane-proximal ring, membrane-distal ring and the intermediate ring (green) highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Box-and-whisker plot depicting the distribution of intensity values for the region traced by the membrane-distal and the membrane-proximal rings for wild type and FtsZ-linkerQ-rich normalized in the range of 0–1. A region with approximately similar area was masked for peptidoglycan, cell membrane and cytoplasm as controls for both strains. Lower-intensity values (darker pixels) correspond to high mass density in the cryo-ET data.
+
 In a few instances, we detected ‘stray’ filaments at a distance of ~12–20 nm from the membrane and away from the leading edge (black arrows, Figure 6A, B, D–G). We speculate that such filaments correspond to FtsZ but without a corresponding FtsA filament to tether it to the membrane as the incorporation of the long linker in the C-terminal of FtsZ likely affects the interaction between the two proteins, as also evidenced by longer filamented cells in the presence of the linker (Figure 5—figure supplement 1C, D). This is substantiated by previous studies showing that B. subtilis can grow without FtsA, albeit slowly and in a filamentous manner (Beall and Lutkenhaus, 1992). Instead, in B. subtilis, FtsZ may use an alternate anchor like SepF or EzrA to bind to the membrane in the absence of FtsA as these divisome proteins also have an N-terminal domain that binds to the membrane and a C-terminal domain that interacts with FtsZ (Duman et al., 2013; Singh et al., 2007). In a few tomograms, we also observed doublets/triplets of individual filaments only in the membrane-distal band, an arrangement that was previously reported for FtsZ filaments in tomograms of dividing E. coli cells (Szwedziak et al., 2014) (blue/orange arrows, Figure 6H–L), further demonstrating that only the membrane-distal ring corresponded to the Z-ring. In one tomogram, we also observed an additional faint ring between the membrane-proximal and the membrane-distal rings (~14 nm from the membrane) that might correspond to few FtsZ filaments that localize closer to the membrane likely due to flexibility of the linker domain (in green, Figure 6—figure supplement 1). We assigned the identity of the membrane-proximal ring to be FtsA filaments as no other cell division proteins form filaments in vivo or in vitro and its distance to the membrane is comparable to that of FtsA filaments in E. coli upon overexpression (Szwedziak et al., 2014). To further establish the identity of the filaments, we verified that the filament thickness, continuity along the septal plane and distribution of intensity values of the rings in FtsZ- linkerQ-rich compared to the wild type were all similar (Figure 6—figure supplement 2). Thus, we conclude that the more continuous membrane-distal ring of FtsZ filaments is tethered to the membrane via a patchy membrane-proximal ring of FtsA filaments (Figure 5C, Figure 3—video 3).
 
 Our cryo-FIB-ET data indicated that the Z-ring was mostly continuous in the cellular sections we imaged. We observed fairly continuous Z-rings in 9 out of 16 tomograms of dividing vegetative cells that we captured (Figures 3C, E and 4C, E, Figure 3—figure supplement 1C, Figure 3—video 2). We could not reliably assess the continuity of the Z-ring in the remaining seven tomograms because they were either too thick or did not yield high-resolution data due to their orientation with respect to the tilt axis. It is also difficult to ascertain with confidence whether the Z-ring is continuous throughout the cellular volume since we are only sampling a section of the cell (~200 nm of ~1.2 μm) due to ablation by cryo-FIB milling and due to missing wedge issue associated with cryo-ET data collection (Figure 2—figure supplement 1D). However, the data from our highest quality tomograms, each of which capture different parts of the septal disc, consistently show that the Z-ring is continuous at least in the entire 3D volume captured.
 
-## FtsAZ filaments localize only on the mother cell side during sporulation
+### FtsAZ filaments localize only on the mother cell side during sporulation
 
 Next, we analyzed divisome architecture in sporulating B. subtilis cells. During sporulation, the division site shifts closer to a pole as opposed to medial division during vegetative growth (Figure 1). We again observed two series of dots in dividing sporulating cells, but remarkably, they were visible only on the mother cell side of the leading edge of the invaginating sporulation septum (Figure 7A–C, Figure 7—figure supplements 1–5). Of note, the membranes at the leading edge of the nascent septum in sporulating cells were not as defined as in vegetative cells, suggesting that they have a higher ratio of protein to membrane, as might be expected due to the presence of both transmembrane cell division proteins and sporulation-specific multipass transmembrane proteins (Figure 7B, C). Due to molecular crowding, it is difficult to ascertain the continuity of Z-rings during sporulation as compared to vegetative growth. In conclusion, our data suggest that FtsAZ filaments mediating cell division localize differently during vegetative growth and sporulation. During vegetative growth, they span the leading edge of the invaginating septum uniformly, whereas during sporulation they localize only on the mother cell side (Figure 7D).
 
-## FtsAZ filaments tracking the division plane may dictate septal thickness
+![Figure 7.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-v2.jpg)
+
+**Figure 7.:** (A) Slice through a tomogram of a dividing sporulating cell. (B) Left panel: zoomed-in view of the inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) highlighted. (C) Left panel: view of the septal disc corresponding to (B) in the yz coordinate plane obtained by rotating the cell around its long axis near the left side of the invaginating septum by 90o. Right panel: same as left with cellular parts and FtsAZ filaments highlighted. (D) Schematic of the arrangement of the cytoskeletal machinery during sporulation. (E, F) Bar graphs depicting (E) septal thickness and (F) distance spanned by FtsZ bundle in wild-type vegetative and sporulating cells. For both, error bars indicate standard deviation. Each dot indicates a sample point. (****p≤0.0001, unpaired t-test). Scale bars: (A) 200 nm, (B, C) 25 nm. See also Figure 7—figure supplements 1–5.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) A section of a dividing sporulating cell wherein peptidoglycan (PG; gray) and cell membrane (peach) are highlighted. The xyz coordinate axis represents the dimensions of the 3D specimen (same as in Figure 2). (B) Top panel: projection image of the cell in (A) in the xy coordinate plane. FtsA (pink) and FtsZ (blue) bundles are indicated on the mother cell side of the septum. Bottom panel: the corresponding projection image in the xz coordinate plane when the cell is rotated about its short axis by 90°. The lateral PG, septal PG and FtsAZ filaments as they project onto the orthogonal view (xz) are also highlighted. Same color scheme is followed throughout. (C) Left panel: same as top panel in (B). Right panel: the corresponding projection image in the yz coordinate plane when the cell is rotated about its long axis on the left side of the invaginating septum. (D) Left panel: same as top panel in (B). Right panel: the corresponding projection image in the yz coordinate plane when the cell is rotated about its long axis on the right side of the invaginating septum. For both (C) and (D), FtsAZ bundle and the corresponding filaments are also indicated.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Slice through a tomogram of a dividing wild-type sporangia. The inset highlights the left (l) side of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) corresponding to ‘l’ in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) highlighted. Same color scheme for labeling is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the yz coordinate plane obtained by rotating the cell around its long axis near the left side of the invaginating septum by 90o. Right panel: same as left with different cellular parts and FtsAZ filaments highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Slice through a tomogram of a dividing wild-type sporangia. The inset highlights the left (l) side of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) corresponding to ‘l’ in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) highlighted. Same color scheme for labeling is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the yz coordinate plane obtained by rotating the cell around its long axis near the left side of the invaginating septum by 90o. Right panel: same as left with different cellular parts and FtsAZ filaments highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** (A) Slice through a tomogram of a dividing wild-type sporangia at a later stage of septum constriction. The insets highlight the left (l) side and the right (r) side of the invaginating septum. (B) Left panel: zoomed-in view of the inset in (A) corresponding to ‘l’ in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA (pink) and FtsZ (blue) highlighted. Same color scheme for labeling is followed throughout. (C) Left panel: zoomed-in view of the inset in (A) corresponding to ‘r’ in the xy coordinate plane. Right panel: same as left with different cellular parts highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** We were able to better resolve FtsAZ filaments in dividing cells of SpoIIIEATP- mutant sporangia during sporulation, where we observed them on the mother cell side of the septum (similar to wild type). We do not fully comprehend the reason behind this, although previous work has shown that the transmembrane protein SpoIIIE localizes to the leading edge of the constricting membrane (Fleming et al., 2010). (A) Slice through a tomogram of a dividing SpoIIIEATP- sporangium. The insets correspond to the left (l) and the right (r) side of the invaginating septum. (B) Schematic showing the arrangement of the cytoskeletal machinery in dividing SpoIIIEATP- sporangium with FtsAZ dots indicated. (C) Left panel: zoomed-in view of the inset in (A) corresponding to ‘l’ in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) highlighted. Same color scheme for labeling is followed throughout. (D) Left panel: view of the septal disc corresponding to (C) in the yz coordinate plane obtained by rotating the cell around its long axis near the left side of the invaginating septum by 90o. Right panel: same as left with different cellular parts and FtsAZ filaments highlighted. (E) Left panel: zoomed-in view of the inset in (A) corresponding to ‘r’ in the xy coordinate plane. Right panel: same as left different cellular parts highlighted. (F) Left panel: view of the septal disc corresponding to (E) in the yz coordinate plane obtained by rotating the cell around its long axis near the right side of the invaginating septum by 90o. Right panel: same as left with different cellular parts and FtsAZ filaments highlighted. Scale bars: (A) 200 nm, (C–F) 25 nm.
+
+### FtsAZ filaments tracking the division plane may dictate septal thickness
 
 Previous data demonstrated that upon closure the polar sporulation septum is just one-fourth of the thickness of the medial vegetative septum (~25 nm vs. ~80 nm) (Illing and Errington, 1991; Tocheva et al., 2013). Recent studies suggest that FtsZ treadmilling drives the circumferential motion of septal PG synthases and condensation of the Z-ring increases recruitment of PG synthases in B. subtilis (Bisson-Filho et al., 2017; Squyres et al., 2020). The observation that the sporulation septum is thinner than the vegetative septum and that FtsZ filaments localize differently during the two conditions led us to hypothesize that there may be a direct correlation between the number of FtsZ filaments at the division site and the septal thickness during septal biogenesis.
 
@@ -64,17 +128,45 @@ To investigate this, we first measured the septal thickness in dividing sporulat
 
 Next, we investigated if the number of FtsZ filaments tracking the division plane during vegetative growth and sporulation differs. It was often not possible to count the exact number of FtsZ filaments (or the number of electron-dense puncta around the leading edge) in cryo-FIB-ET data due to low signal-to-noise ratio at the division site, especially during sporulation given the molecular crowding at the leading edge of the constricting septum. However, our data indicate that the distance between individual electron-dense puncta representing FtsZ is similar in both vegetative and sporulating septa. Hence, we measured the distance spanned by the membrane-distal band of FtsZ bundle (end-to-end distance) as a proxy for the abundance of the cytoskeletal machinery during cell division. On average, FtsZ bundles spanned twice the length in vegetative cells compared to sporulating cells (~51 ± 2.9 nm vs. ~27 ± 3.6 nm, Figure 7F, Figure 7—source data 2), indicating that there are twice as many FtsZ filaments participating in cell division during vegetative growth as compared to sporulation. Based on these data, and the fact that the dynamic property of FtsZ filaments regulates the insertion of the cell wall material during septal biogenesis (Bisson-Filho et al., 2017; Squyres et al., 2020), we propose that the sporulation septum being thinner than the vegetative septum is likely a consequence of fewer FtsZ filaments tracking the division plane during sporulation.
 
-## SpoIIE affects the localization of FtsAZ filaments during sporulation
+### SpoIIE affects the localization of FtsAZ filaments during sporulation
 
 We next probed factors leading to the distinct pattern of FtsAZ localization during vegetative growth and sporulation. We focused on dissecting the role of SpoIIE, a sporulation-specific integral membrane protein proposed to regulate the formation of the sporulation septum for several reasons. First, SpoIIE localizes to the invaginating sporulation septum in an FtsZ-dependent manner (Arigoni et al., 1995; Levin et al., 1997; Lucet et al., 2000). Biochemical evidence suggests that the central FtsZ-binding domain and possibly the N-terminal transmembrane domain of SpoIIE play a role in its interaction with FtsZ (Carniol et al., 2005; Lucet et al., 2000). Second, previous electron micrographs demonstrated that certain spoIIE mutants form thicker polar septa compared to wild-type sporangia (Barák and Youngman, 1996; Illing and Errington, 1991). These mutations correspond to either transposon insertions or point mutations in spoIIE locus that do not produce any active gene product and hence represent the null phenotype. Third, recent evidence suggests that SpoIIE preferentially localizes to the forespore side of the dividing septum, creating an asymmetry during polar division that might contribute to the asymmetry of FtsZ (Eswaramoorthy et al., 2014; Guberman et al., 2008; Wu et al., 1998). Hence, we set out to determine if SpoIIE regulates the divisome architecture during sporulation.
 
 We first examined divisome architecture in spoIIE null mutant sporangia. Surprisingly, we noted that divisome architecture in spoIIE is similar to that in vegetative cells, with two series of dots corresponding to FtsAZ filaments present uniformly along the leading edge of the invaginating septum, in contrast to wild-type sporangia where they were present only on the mother cell side (Figure 8A–C, N). We also observed several spoIIE sporangia with abortive septa (Figure 8—figure supplement 1). Also, at ~42 ± 4 nm, the invaginating sporulation septum in spoIIE sporangia was comparable in thickness to the invaginating vegetative septum, implicating SpoIIE in regulating both the localization of FtsAZ filaments and the septal thickness during sporulation (Figure 8O, Figure 8—source data 1). Of note, even though the length spanned by the bundle of FtsZ filaments in spoIIE sporulation septa was similar to that in the wild-type vegetative septa (Figure 8—figure supplement 2A), the invaginating spoIIE sporulation septa were still slightly thinner (by ~10 nm) than the invaginating vegetative septa. This suggests that there may be other unidentified factors in addition to SpoIIE that regulate the thickness of the sporulation septum.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig8-v2.jpg)
+
+**Figure 8.:** (A, D, G, J) Slice through a tomogram of a dividing (A) spoIIE, (D) spoIIE-ΔregI, (G) spoIIE-ΔregII and (J) malF-spoIIE sporangia. Insets highlight the left side of the invaginating septum for each case. (B, E, H, K) Left panel: zoomed-in view of the inset in (A, D, G, J), respectively, in the xy coordinate plane. Right panel: same as left with peptidoglycan (PG), forespore (FS) and mother cell (MC) compartments indicated in all. Cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) are also highlighted for all. (C, F, I, L) Left panel: view of the septal disc corresponding to (B, E, H, K), respectively, in the xz/yz coordinate plane obtained by rotating the cell around its short axis or long axis by 90o (yz plane for I and xz plane for the rest of the panels). Right panel: same as left with cellular parts and FtsAZ filaments highlighted. (M) Schematic highlighting the different domains of SpoIIE and construction of different spoIIE mutants. (N) Schematic of the arrangement of the cytoskeletal machinery in spoIIE mutant sporangia from (A) to (L). PG (gray), cell membrane (peach), FtsA dots (pink) and FtsZ dots (blue) are indicated. (O) Bar graph depicting the septal thickness in wild-type vegetative, wild-type sporulating cells and spoIIE mutant sporangia. Error bars indicate standard deviation. Each dot indicates a sample point. Scale bars: (A, D, G, J) 200 nm, (B, C, E, F, H, I, K, L) 25 nm. See also Figure 8—figure supplements 1–4, Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) Slices through tomograms of SpoIIE sporangia with abortive septa (indicated by white arrows). Scale bars: (A–C) 200 nm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Bar graph depicting the distance spanned by FtsZ bundle in wild-type vegetative cells, wild-type sporulating cells and SpoIIE null mutant sporangia. Error bars indicate standard deviation (n.s.: not significant, ****p<0.0001, unpaired t-test). Each dot indicates a sample point. (B) Fluorescence microscopy of GFP-tagged (green) (i) SpoIIE, (ii) SpoIIE-ΔregI, (iii) SpoIIE-ΔregII and (iv) MalF-SpoIIE sporangia. Membranes are stained with FM4-64 (red). Scale bar: 1 μm. White arrows indicate a representative sporulating cell for each case. (C) Line graphs showing normalized GFP intensity for (i–iv) in (B) along the normalized length of sporangia. n indicates the number of cells analyzed for each case. Each line represents a single cell. In agreement with a previous study using the same strains (Carniol et al., 2005), GFP signal corresponding to SpoIIE-ΔregI appeared mostly diffuse with some cells showing enrichment or punctate patterns at the polar septum (at 50% level compared to wild type), indicating some association with FtsZ. GFP signal corresponding to SpoIIE-ΔregII appeared almost completely diffuse in the cytoplasm, and GFP signal corresponding to MalF-SpoIIE localized similar to wild type, displaying punctate patterns at the polar septum.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Zoomed-in view of the inset in Figure 8G in the xy coordinate plane. This is a different slice from the 3D volume of the tomogram than shown in Figure 8H. (B) Same as left with peptidoglycan (PG), forespore (FS) and mother cell (MC) compartments indicated. Cell membrane (peach), FtsA bundle (pink) and FtsZ bundle (blue) are also highlighted. Scale bars: (A, B) 50 nm.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** (A) Slice through a tomogram of a SpoII-ΔregII sporangium. The inset indicates the left side of the invaginating dividing septum. (B) Left panel: zoomed-in view of the inset in (A) in the xy coordinate plane. Right panel: same as left with peptidoglycan (gray), cell membrane (peach), FtsA (pink) and FtsZ (blue) highlighted. Same color scheme for labeling is followed throughout. (C) Left panel: view of the septal disc corresponding to (B) in the xz coordinate plane obtained by rotating the cell around its short axis near the left side of the invaginating septum by 90o. Right panel: same as left with different cellular parts and FtsAZ filaments highlighted. Scale bars: (A) 200 nm, (B, C) 25 nm.
+
 SpoIIE has three domains: an N-terminal transmembrane domain with 10 membrane-spanning segments (region I), a central domain that promotes oligomerization of SpoIIE and its interaction with FtsZ (region II) and a C-terminal phosphatase domain that is involved in the activation of the forespore-specific transcription factor σF after septum formation (region III) (Carniol et al., 2005). Since regions I and II have been implicated in regulating the interaction of SpoIIE with FtsZ (Carniol et al., 2005; Lucet et al., 2000), we acquired cryo-FIB-ET images of the following spoIIE mutant strains: (1) deletion of region I (or spoIIE-ΔregI), (2) deletion of region II (or spoIIE-ΔregII), and (3) replacement of 10 membrane-spanning segments of region I by 2 membrane-spanning segments from E. coli MalF (or malF-spoIIE). These strains also had a deletion in the spoIIA operon to uncouple the role of SpoIIE in polar division from its role in σF activation (Figure 8—figure supplement 2B, C). Our cryo-FIB-ET data demonstrated that the organization of FtsAZ filaments at the polar septum and the septal thickness in all the three mutant strains is similar to spoIIE sporangia (Figure 8D–O, Figure 8—figure supplements 3 and 4, Figure 8—video 1). These data indicate that both the transmembrane and the FtsZ-binding domains of SpoIIE are essential to regulate the localization of FtsAZ filaments and septal thickness during sporulation.
 
-## SpoIIE affects the localization of FtsA on the forespore side of the septum
+### SpoIIE affects the localization of FtsA on the forespore side of the septum
 
 SpoIIE is present exclusively on the forespore side of the septum even before the onset of membrane constriction (Eswaramoorthy et al., 2014; Guberman et al., 2008; Wu et al., 1998), and our data show that both the membrane-spanning and the FtsZ-binding domains of SpoIIE mediate differential localization of FtsAZ filaments during sporulation. Since SpoIIE directly binds FtsZ, one possible way SpoIIE could affect the localization of FtsZ filaments on the forespore side would be by competing directly with other cell division proteins that bind to FtsZ, including FtsA. Hence, we hypothesized that the interaction of SpoIIE with FtsZ may disrupt the interaction of FtsA with FtsZ on the forespore side. This could either be a result of direct competition faced by FtsA from SpoIIE for the binding site on FtsZ or due to possible membrane curving on the forespore side mediated by SpoIIE oligomers upon insertion of their large membrane-spanning segment, as has been previously reported in protein-packed environments (Stachowiak et al., 2012). In support of this, using time-lapse fluorescence microscopy, in a few cells, we observed two foci on each side of the cell at the division septum corresponding to fluorescently tagged FtsA, a bright signal (orange arrow, Figure 9A) that constricts with the invaginating membrane and a faint signal (yellow arrow, Figure 9A) that remains at the intersection of the lateral and the septal cell wall above the brighter signal (likely on the forespore side). We also used structured illumination microscopy (SIM) to observe FtsA-mNeonGreen in dividing sporulating cells at a higher resolution. Again, in a few cells, we observed bright FtsA puncta (orange arrow, Figure 9B, C) that colocalize with the invaginating septum and a faint FtsA punctum (yellow arrow, Figure 9B, C) that is slightly above the brighter signal, presumably on the forespore side. Due to the resolution of the optical microscopy techniques, we cannot state with confidence that the fainter FtsA signal is in the forespore, but our data suggest that there are some FtsA filaments that remain at the intersection of the lateral and the septal cell wall above the FtsA filaments that constrict with the invaginating membrane. It is possible that SpoIIE causes the disassociation of these residual FtsA filaments from the divisome in the forespore as SpoIIE is only present on the forespore side of the invaginating septum so that cytokinesis exclusively proceeds from the mother cell side (Figure 9D). Further experiments will be required to conclusively establish the mechanism by which SpoIIE interacts with different components of the divisome to regulate cell division during sporulation.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig9-v2.jpg)
+
+**Figure 9.:** (A) Time-lapse fluorescence microscopy of a dividing sporangium with FtsA in green and membranes in red. Images are taken every 3 min. Between 12 and 15 min, two FtsA rings are visible, one that constricts and the other that seemingly stays behind at the forespore side of the septum. Yellow arrows indicate FtsA on the forespore side that does not constrict. (B) Structured-illumination microscopy of a dividing sporangia with FtsA in green and membranes in red. Puncta corresponding to FtsA are more clearly visible, two (orange) on either side of the septum that constrict and one (yellow arrow) that remains above the invaginating septum near the lateral edge, presumably on the forespore side. (C) Line graph showing the normalized intensity of the membrane (red) and FtsA-mNeonGreen (green) signal along the normalized length of the cell. Two peaks corresponding to two puncta of FtsA in (B) are indicated by orange and yellow arrows, respectively. (D) A possible model of how SpoIIE (green asterisks) affects the localization of FtsA (pink) and FtsZ (blue) filaments during sporulation (top view of the cell shown). Peptidoglycan (gray) and cell membrane (peach) are also highlighted. SpoIIE molecules are preferentially present on the forespore side and hence bind to FtsZ on the forespore side (brown asterisks). This may prevent binding of FtsA filaments (and likely other cell division proteins) to FtsZ on the forespore side and they stay behind at the forespore edge, while FtsAZ filaments on the mother cell side constrict. Scale bars: (A, B) 1 μm. See also Figure 9—figure supplement 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62204/elife-62204-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Time-lapse microscopy of (A) FtsA-mNeonGreen and (B) mNeonGreen-FtsZ sporangia. Membranes are stained red with FM4-64, FtsA and FtsZ tagged with mNeonGreen fluorescent protein. Images are taken every 3 min. After polar septation, as engulfment proceeds, mNeonGreen signal gradually diminished in both the strains exclusively in the forespore. Scale bars: (A, B) 1 μm.
 
 ## Discussion
 
@@ -100,11 +192,140 @@ Our data provide a significant advancement in the understanding of the organizat
 
 ## Materials and methods
 
-## Strain and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>PY79</td>
+      <td>Youngman et al., 1984</td>
+      <td>Tax. ID:1415167</td>
+      <td>Wild type</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>KK240</td>
+      <td>This study</td>
+      <td></td>
+      <td>ftsZ-linkerQ-richΩkan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>KP69</td>
+      <td>Sandman et al., 1987</td>
+      <td></td>
+      <td>spoIIE::Tn917</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>KC548</td>
+      <td>Carniol et al., 2005</td>
+      <td></td>
+      <td>spoIIE::phleo spoIIA::cat amyE::spoIIE-ΔregII-gfp cat spc</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>KC549</td>
+      <td>Carniol et al., 2005</td>
+      <td></td>
+      <td>spoIIE::phleo spoIIA::cat amyE::spoIIE-ΔregI-gfp cat spc</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>KC538</td>
+      <td>Carniol et al., 2005</td>
+      <td></td>
+      <td>spoIIE::phleo spoIIA::spec amyE::malF-spoIIE-ΔregI gfp spc kan</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>bAB167</td>
+      <td>Bisson-Filho et al., 2017</td>
+      <td></td>
+      <td>ftsA-mNeonGreen(SW) ftsA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Bacillus subtilis PY79)</td>
+      <td>bAB185</td>
+      <td>Bisson-Filho et al., 2017</td>
+      <td></td>
+      <td>mNeonGreen ftsZ</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJLG142</td>
+      <td>This study</td>
+      <td></td>
+      <td>ftsZ-ssrAΩloxPKmloxP</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FM4-64</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#T13320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>Mastronarde, 1997</td>
+      <td>http://bio3d.colorado.edu/imod/; RRID:SCR_003297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TomoSegMemTV</td>
+      <td>Martinez-Sanchez et al., 2014</td>
+      <td>https://sites.google.com/site/3demimageprocessing/tomosegmemtv</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira</td>
+      <td>Commercial software by Thermo Scientific (formerly FEI)</td>
+      <td>https://www.fei.com/software/amira-3d-for-life-sciences/; RRID:SCR_014305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>http://bio3d.colorado.edu/SerialEM/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB code to calculate intensities of cytoskeletal rings</td>
+      <td>This paper; Source code 1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB code to calculate GFP/mNeonGreen intensity along cell length</td>
+      <td>This paper; Source code 2</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain and culture conditions
 
 B. subtilis PY79 background was used for all strain constructions. A list of strains used in the study is provided in the Key resources table. All the strains were routinely grown in LB plates at 30°C overnight. For sample preparation, cells were either grown in LB media at 30°C to OD600 ~0.5 for vegetative growth or by growing in ¼ diluted LB to OD600 ~0.5–0.8 and then resuspending in A + B media at 37°C for inducing sporulation. For wild-type sporangia, samples were prepared at an early enough time point of ~T1.5–1.75 hr after inducing sporulation to capture a mixed population of dividing cells undergoing the formation of polar septum (sporulating cells) or medial septum (vegetative cells). For other mutant sporangia, samples were also collected at ~T1.5–1.75 hr after inducing sporulation.
 
-## Construction of KK240
+### Construction of KK240
 
 Constructed by transformation of pKK238 (ftsZ-linkerQ-richΩkan) into PY79. pKK238 was constructed by removing ssrA tag of pJLG142 and incorporating Q-rich linker from FtsN of E. coli at the C-terminus of FtsZ.
 
@@ -112,7 +333,7 @@ FtsZ-linkerQ-rich sequence: (Q-rich linker region highlighted in red).
 
 MLEFETNIDGLASIKVIGVGGGGNNAVNRMIENEVQGVEYIAVNTDAQALNLSKAEVKMQIGAKLTRGLGAGANPEVGKKAAEESKEQIEEALKGADMVFVTAGMGGGTGTGAAPVIAQIAKDLGALTVGVVTRPFTFEGRKRQLQAAGGISAMKEAVDTLIVIPNDRILEIVDKNTPMLEAFREADNVLRQGVQGISDLIATPGLINLDFADVKTIMSNKGSALMGIGIATGENRAAEAAKKAISSPLLEAAIDGAQGVLMNITGGTNLSLYEVQEAADIVASASDQDVNMIFGSVINENLKDEIVVTVIATGFIEQEKDVTKPQRPSLNQSIKTHNQSVPKREPKREEPQQQNTVSRHTSQPARQQPTQLVEVPWNEQTPEQRQQTLQRQRQAQQLAEQQRLAQQSRTTEQSWQQQTRTSQAAPVQAQPRQSKPASSQQPYQDLLQTPAHTTAQSKPQQD.
 
-## Cryo-FIB-ET workflow
+#### Cryo-FIB-ET workflow
 
 QUANTIFOIL R2/1 200 mesh holey carbon Cu grids (Quantifoil Micro Tools) were glow discharged using PELCO easiGlow (Ted Pella). 7–8 μl of diluted liquid culture was deposited onto the grids, which were mounted to a manual plunger (Max Planck Institute of Biochemistry) and manually blotted using Whatman No. 1 filter paper for 3–4 s from the side opposite to where the cells were deposited such that the cells formed a homogeneous monolayer on the grid surface. The grids were then plunge-frozen in a 50–50 mixture of liquid ethane and propane (Airgas) cooled to liquid nitrogen temperature and subsequently clipped onto Cryo-FIB Autogrids (Thermo Fisher Scientific). All subsequent transfers were performed in liquid nitrogen.
 
@@ -120,36 +341,36 @@ Frozen-hydrated cells were micromachined either inside Scios or Aquilos DualBeam
 
 Tilt series were collected using SerialEM software (Mastronarde, 2005) either in 300-keV Tecnai G2 Polara or in 300-keV Titan Krios (Thermo Fisher Scientific), both equipped with a Quantum post-column energy filter (Gatan) and a K2 Summit 4k × 4k pixel direct detector camera (Gatan). The TEM magnification corresponded to a camera pixel size of either 0.612 nm (for data acquired on Polara) or 0.534 nm or 0.426 nm (for data acquired on Krios). The tilt series were usually collected from −61o to + 61o depending on the quality of the specimen with an increment ranging from 2o to 3o with a defocus of −5 μm following either the bidirectional or the dose-symmetric tilt scheme in low-dose mode. For both schemes, the zero of the tilt series was defined by taking into account the pre-tilt of the lamella. The K2 detector was operated in counting mode and images divided into frames of 0.1 s. The cumulative dose for each tilt series was ~50–150 e-/Å2.
 
-## Tomogram reconstruction and segmentation
+### Tomogram reconstruction and segmentation
 
 MotionCor2 (Zheng et al., 2017) was used to align the frames and dose-weigh the tilt series according to the cumulative dose. Subsequent alignment of the tilt series was done in IMOD (Kremer et al., 1996) using patch-tracking in the absence of fiducials and the tomograms reconstructed using weighted back-projection method. For purposes of representation and segmentation, tomograms were binned 3× or 4×. Semi-automatic segmentation of the membranes was performed using TomosegmemTV (Martinez-Sanchez et al., 2014) followed by manual refinement in Amira software package (Thermo Fisher Scientific). FtsAZ filaments were manually traced in Amira.
 
-## Image analysis
+### Image analysis
 
-## Distribution of intensities of cytoskeletal rings
+#### Distribution of intensities of cytoskeletal rings
 
 For Figure 3—figure supplement 2 and Figure 6—figure supplement 2, the membrane-proximal and the membrane-distal cytoskeletal rings were masked using Adobe Photoshop and the corresponding intensity values for each pixel were extracted using a custom-built MATLAB script (Source code 1). The distribution of these values for the two rings was depicted as box-and-whisker plot alongside those corresponding to cell membrane, cytoplasm and cell wall (PG) that were used as controls.
 
-## Distances between cytoskeletal rings and membrane
+#### Distances between cytoskeletal rings and membrane
 
 For Figure 5B (Figure 5—source data 1), a medial slice corresponding to the orthogonal view (xz) of the respective tomograms was taken from the z-stack wherein the cytoskeletal rings were clearly visible. The distances of the ring from the cell membrane were then calculated using the Fiji plugin ‘points to distance’.
 
-## Distance spanned by FtsZ bundle
+#### Distance spanned by FtsZ bundle
 
 For Figure 7F, a medial slice corresponding to the top view (xy) of the respective tomograms was taken from the Z-stack wherein the FtsZ bundle was clearly visible. The distance spanned by the FtsZ bundle along the curve of the membrane was then measured in Fiji.
 
-## Fluorescence microscopy for batch cultures
+#### Fluorescence microscopy for batch cultures
 
 Approximately 12 μl of samples were taken at indicated time points and transferred to 1.2% agarose pads that were prepared using either sporulation resuspension media (for sporulating cultures) or ¼ LB media (for vegetative growth). Membranes were stained with 0.5 μg/ml of FM4-64 (Thermo Fisher Scientific) that was added directly to the pads. An Applied Precision DV Elite optical sectioning microscope equipped with a Photometrics CoolSNAP-HQ2 camera was used to visualize the cells. The images were deconvolved using SoftWoRx v5.5.1 (Applied Precision). For all fluorescence images, the medial focal plane of the image is shown. Excitation/emission filters were TRITC/CY5 for membrane imaging and FITC/FITC to visualize GFP or mNeonGreen signal.
 
-## Calculating GFP intensity
+### Calculating GFP intensity
 
 For Figure 8—figure supplement 2C, ~15–16 cells with clear evidence of septal biogenesis were manually selected for each strain and all the images aligned such that the polar septum lies in the same orientation for all cells as shown in the inset of Figure 8—figure supplement 2Ci. To get the linear profile of GFP intensity for each cell, the data was grouped into smaller bins of approximately equal area using a custom-built MATLAB script (Source code 2). Normalized GFP intensities were then plotted for each cell along its normalized length as depicted by different curves in the graphs.
 
-## 3D-structured illumination microscopy (3D-SIM)
+### 3D-structured illumination microscopy (3D-SIM)
 
 For Figure 9B, cells were grown as indicated above and stained with 0.5 μg/ml FM4-64. An Applied Precision/GE OMX V2.2 Microscope was then used to image them. Raw data were sequentially taken by SI-super-resolution light path to collect 1.5-mm-thick specimens in 125 nm increments in the z-axis with compatible immersion oils (Applied Precision). Standard OMX SI reconstruction parameters were then used in DeltaVision SoftWoRx Image Analysis Program to reconstruct the images. To plot the graph in Figure 9C, the data corresponding to membrane and mNeonGreen intensity was grouped into smaller bins of approximately equal area along the normalized length of the cell (as indicated in the inset) using a custom-built MATLAB script (Source code 2).
 
-## Spore titer assay
+### Spore titer assay
 
 Strains were grown in triplicates in 2 ml of DSM media for 24 hr at 37°C followed by heating at 80°C for 20 min. Then, serial dilutions for each strain were prepared and spotted on LB plates. Number of colonies were then used as a marker to calculate spore titers.

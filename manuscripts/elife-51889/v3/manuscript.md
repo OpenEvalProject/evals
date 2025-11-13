@@ -36,7 +36,7 @@ Only a few studies of pTfh have been performed in the context of immunogenicity 
 
 ## Results
 
-## CSP-specific pTfh responses are elevated in protected subjects
+### CSP-specific pTfh responses are elevated in protected subjects
 
 A scheme outlining vaccine timepoints and blood-sample collection for the immunological analyses is shown in Figure 1. Samples were analyzed at eight different timepoints, designated T0-T7: pre-vaccination (T0), day 6 post dose 1 (T1), day 28 post dose 1 (T2), day 6 post dose 2 (T3), day 28 post dose 2 (T4), day 6 post dose 3 (T5), day 21 post dose 3, pre-challenge (T6) and at study end, 159 days post-challenge (T7). The timing of the blood draws on day 6 and day 28 after each vaccine dose was designed to capture important periods for pTfh cell and B cell development post immunization. The distribution of protected (P)/non-protected (NP) participants was 10/6 in the STD regimen, and 26/4 in the DFD regimen (Regules et al., 2016). Given the small number of NP, we pooled data from both study regimens for each vaccine-induced immune response to understand the basis for protection.
 
@@ -48,21 +48,61 @@ Here, we analyzed the quantity and quality of CD4 T cells and pTfh cells to unde
 
 Representative dot plots from P and NP subjects for total pTfh, CSP-specific CD4 T cells, and CSP-specific pTfh are shown in Figure 2A,B and C, respectively. Frequencies of total pTfh were greater at all the timepoints post-vaccination than at T0 in P subjects, and these frequencies showed sustained expansion after vaccination compared to NP subjects at T3, T4 T6 and T7 (Figure 2D). Frequencies of CSP-specific CD4 T cells were significantly increased at T2–T7 compared to those at T0 in P subjects (Figure 2E). CSP-specific pTfh cells showed a strong vaccine-induced expansion in P subjects and were more numerous at all the timepoints post-vaccination than at T0 (Figure 2F). Importantly, neither total pTfh, CSP-specific CD4 nor CSP-specific pTfh cells showed an increase post-vaccination in NP subjects. At T5, T6 and T7, the late timepoints after the two regimens diverged, the frequencies of total pTfh, CSP-specific CD4 and CSP-specific pTfh did not show differences between the STD and DFD regimens (Figure 2G, H and I, respectively), but the frequencies of total pTfh and CSP-specific CD4 T cells in the DFD regimen showed a decline at T7, the last time point that was evaluated (Figure 2G and H). Frequencies of CSP-specific non-pTfh did not show an increase from T0 following vaccination and did not differ between the two groups or the two regimens (Figure 2—figure supplement 2A and E).
 
-## IL-21+ and ICOS+ pTfh subsets are associated with protection
+![Figure 2.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig2-v3.jpg)
+
+**Figure 2.:** Frequencies of total pTfh, CSP-specific CD4 T cells and CSP-specific pTfh cells were identified by flow cytometry after 12 hr of PBMC stimulation with a CSP peptide pool in vaccinated subjects at different timepoints. Longitudinal data at different time points were analyzed for protected (P, n = 35) and non-protected (NP, n = 10) participants. (A–C) Flow cytometry dot plots for total pTfh cells, i.e. CD45RO+CD27+CXCR5+ cells gated from CD4 T cells (A); CSP-specific CD4 T cells, i.e. CD40L+ CD4 T cells (B); and CSP-specific pTfh cells, i.e. CD45RO+CXCR5+ cells gated from CD40L+ CD4 T cells (C). (D–F) Line graphs with error bars indicating mean ± standard error of mean (SEM) for protected (green line) and non-protected (red line) individuals showing frequencies of total pTfh cells (D), CD40L+CD4 T cells (E) and CSP-specific pTfh cells (F). (G–I) Scatter plots of CD4 T cell subsets in DFD and STD regimens at T5, T6 and T7 showing total pTfh cells (F), CSP-specific CD4 T cells (G) and CSP-specific pTfh cells (I) with data for the protected group represented by dark blue open circles for DFD (P DFD) and light blue open circles for the STD regimen (P STD), and the non-protected group represented by red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measures over time. P values shown within the graphs refer to significant difference between the P and NP groups at the indicated time points. Statistical significance is shown as *p, <0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** CSP-specific CD4 T cells and pTfh cells were identified by flow cytometry after 12 hr of PBMC stimulation with a CSP peptide pool in vaccinated subjects at different timepoints. Live (Aqua-) cells were gated from the singlets followed by CD3+ T cell gating from the live small lymphocytes. CD4+ and CD8+ T cells were further gated from CD3+ T cells. on the basis of the expression of CD45RO and CD27, CD4 T cell maturation subsets were identified as naïve (TN: RO-CD27+), central memory (TCM) RO+CD27+, effector memory (TEM: RO+CD27–) and effector (TE: RO–CD27–). CXCR5+ Total pTfh cells were gated from TCM cells. CSP-specific CD4 T cells were identified on the basis of CD40L expression. CSP-specific CD4 T cells were further gated on the basis of the expression of CD45RO and CXCR5 as pTfh (CD45RO+CXCR5+) and non-pTfh (CD45RO+CXCR5–).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** CSP-specific non-pTfh cells were identified as CD4+CD40L+CD45RO+CXR5– cells in P (n = 35) and NP (n = 10) subjects. (A–D) The line graphs represent the mean ± SEM for frequencies of CSP-specific non-pTfh (A), IL-21+ CSP-specific non-pTfh (B), ICOS+ CSP-specific non-pTfh (C), and Ki67+ CSP-specific non-pTfh cells (D) in P (green line) and NP (red line) subjects. (E–H) Scatter plot compare CSP-specific non-pTfh cells (E), IL-21+ CSP-specific non-pTfh (F), ICOS+CSP-specific non-pTfh (G), and Ki67+CSP-specific non-pTfh (H) in DFD and STD regimens at T5, T6 and T7. Data from the protected group are represented as dark blue open circles for the DFD regimen (P DFD) and light blue open circles for STD regimen (P STD), and data from the non-protected group are represented as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time.
+
+### IL-21+ and ICOS+ pTfh subsets are associated with protection
 
 To investigate the quality of vaccine-induced CD4 T cells in the context of protection, we analyzed (i) CSP antigen-induced intracellular IL-21 (Figure 3D), the signature Tfh cytokine; (ii) expression of inducible co-stimulatory molecule (ICOS) (Figure 3E), which is associated with the follicular recruitment, maintenance and function of Tfh cells, and (iii) Ki67 (Figure 3F), a marker indicative of cellular activation and proliferation. A significant increase in the frequencies (compared to those at T0) of IL-21-expressing (Figure 3G) and ICOS+ (Figure 3H) CSP-specific pTfh cells was evident in P subjects at all timepoints post vaccination and of Ki67+ (Figure 3I) CSP-specific pTfh cells at T3–T7. When comparing CSP-specific pTfh of P to NP subjects, frequencies of IL-21+ and ICOS+ cells showed an increase at T4, T6 and T7 (Figure 3D and E) and a transient increase of Ki67+ CSP-specific pTfh cells at T2 in P subjects (Figure 3F). In the NP subjects, no increase in IL-21+ or ICOS+ or in Ki67+ CSP-specific pTfh was noted post-vaccination, and the levels remained at background levels (Figure 3D, E and F), with ICOS+ cells dipping even lower at T7 (Figure 3E). ICOS+ total pTfh (CD45RO+CD27+CXCR5+ CD4 T cells) were present at higher frequencies in P subjects compared to baseline levels at T3-T7 and at higher frequencies than in NP subjects at T6 and T7 (not shown). IL-21+ total pTfh also showed a trend for higher frequencies in P subjects compared to NP subjects post-vaccination (not shown). Frequencies of CSP-specific IL-21+, ICOS+ and Ki67+ non-pTfh cells did not change post-vaccination and did not differ significantly between P and NP subjects at any timepoint (Figure 2—figure supplement 2B, C and D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig3-v3.jpg)
 
-**Figure 3.:** Representative flow cytometry dot plots showing (A) IL-21, (B) ICOS and (C) Ki67 expression in CSP-specific pTfh cells in protected (P, n = 35) and non-protected (NP, n = 10) subjects. (D–F) Line graphs with error bars indicate mean ± standard error of mean (SEM) for frequencies of IL-21+ CSP-specific pTfh cells (D), ICOS+ CSP-specific pTfh (E) and Ki67+ CSP-specific pTfh (F) in the P (green line) and NP (red line) groups. (G–I) Scatter plots comparing IL-21+ (G), ICOS+(H) and Ki67+ CSP-specific pTfh (I) in DFD and STD regimens at T5, T6 and T7. Data from the protected group are represented by dark blue open circles for DFD (P DFD) and by light blue open circles for the STD regimen (P STD), whereas data from the non-protected group are shown as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via the Penalized Quasi-Likelihood to accommodate repeated measurements over of time. P values shown within the graph refer to significant difference between the P and NP groups at the indicated timepoints. Statistical significance is shown as *p, <0.05; **, p<0.01; ***, p<0.001.Figure 3—source data 1.Figure 3D).Figure 3—source data 2.Figure 3E).Figure 3—source data 3.Figure 3F).Figure 3—source data 4.Figure 3G).Figure 3—source data 5.Figure 3H).Figure 3—source data 6.Figure 3I).
+**Figure 3.:** Representative flow cytometry dot plots showing (A) IL-21, (B) ICOS and (C) Ki67 expression in CSP-specific pTfh cells in protected (P, n = 35) and non-protected (NP, n = 10) subjects. (D–F) Line graphs with error bars indicate mean ± standard error of mean (SEM) for frequencies of IL-21+ CSP-specific pTfh cells (D), ICOS+ CSP-specific pTfh (E) and Ki67+ CSP-specific pTfh (F) in the P (green line) and NP (red line) groups. (G–I) Scatter plots comparing IL-21+ (G), ICOS+(H) and Ki67+ CSP-specific pTfh (I) in DFD and STD regimens at T5, T6 and T7. Data from the protected group are represented by dark blue open circles for DFD (P DFD) and by light blue open circles for the STD regimen (P STD), whereas data from the non-protected group are shown as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via the Penalized Quasi-Likelihood to accommodate repeated measurements over of time. P values shown within the graph refer to significant difference between the P and NP groups at the indicated timepoints. Statistical significance is shown as *p, <0.05; **, p<0.01; ***, p<0.001.
 
 Comparing the two regimens, we noticed that IL-21- and ICOS-expressing CSP-specific pTfh were significantly more frequent at T7 in the DFD regimen, but did not show a difference in Ki67 expression (Figure 3G, H and I, respectively). In the STD regimen, the frequencies of IL-21+ CSP-specific pTfh decreased at T7 from those at T5 and T6 (Figure 3G). In the CSP specific non-pTfh compartment, frequencies of IL-21+, ICOS+ and Ki67+ non-pTfh cells did not differ between the DFD and STD regimens at T5, T6 or T7 (Figure 2—figure supplement 2F, G and H). Taken together, these data demonstrate that, as a group, P subjects show vaccination-induced expansion of both total and functional CSP-specific pTfh cells that respond to Ag stimulation with IL-21 production and ICOS and Ki67 expression, whereas NP subjects do not do so.
 
-## CSP-responsive B cells emerge after the second dose in the P subjects and are more frequent in the DFD regimen
+### CSP-responsive B cells emerge after the second dose in the P subjects and are more frequent in the DFD regimen
 
 To test the impact of vaccination on the B cell compartment, we first analyzed alterations in B cell maturation subsets ex vivo. The gating strategy for B cell subsets by flow cytometry is shown in Figure 4—figure supplement 1. Total B cells were identified as CD3–CD20+ cells and total memory B cells as CD20+CD27+ cells. On the basis of the expression of CD21, CD27 and IgD, B cell maturation subsets were identified as naïve (CD21hiIgD+CD27–), resting memory (RM, CD21hiCD27+), activated memory (AM, CD21lowCD27+) and atypical memory B cells (aMBC, CD21lowCD27–). Further, on the basis of the expression of IgD and IgG, switch and unswitch memory B cell subsets were identified as total switch memory (SM), total unswitch memory (UM), switch RM (sRM), unswitch RM (uRM), switch AM (sAM), and unswitch AM (uAM) (Figure 5—figure supplement 1). Neither total B cells nor any of the ex-vivo-derived B cell maturation subsets differed significantly between P vs. NP subjects at any timepoint or between the two vaccine regimens at T5, T6 and T7 (not shown). The expression of CD80, a marker indicative of T-cell-dependent B cell activation, was analyzed ex vivo in total B cells, and in RM and AM subsets (Figure 4—figure supplement 2A), and did not differ significantly at any timepoint between P and NP subjects (Figure 4—figure supplement 2B, D and F, respectively), or between the DFD and STD regimens at the later timepoints (T5, T6 and T7) (Figure 4—figure supplement 2C, E and G, respectively). There was a trend for higher CD80 expression in AM B cells at T6 and T7 in P subjects (Figure 4—figure supplement 2F).
 
 To assess the functional properties of B cells, we cultured PBMC with (i) full-length CSP protein (PF-CSP), (ii) the CS repeat region (R32LR) and (iii) the C-terminal peptide (PF-16) to clarify whether there was a region-specific dominant response to CSP in the B cell compartment. Examination of the B cell phenotype in the antigen-stimulated cultures was performed to assess memory B cell subsets by flow-cytometry and proliferation using Ki67. Changes in antigen-stimulated B cell phenotypes were noted mostly in relation to the regimen and not in the context of protection. Regimen-specific differences emerged post dose 3 (T5 or later) exclusively in the Ag-specific memory B cell compartment, including SM and sAM for PF-CSP (Figure 4A and B) and PF-16 (Figure 5D and E), with larger responses in the DFD arm compared to the STD arm. Ki67+ B cells were also more frequent following PF-CSP and PF-16 antigen stimulation at T5 and T6 in the DFD arm (Figure 5C and F). Frequencies of PF-CSP-specific Ki67+ aMBC B cells were also higher in the DFD arm at T5 and T6 (Figure 4—figure supplement 3). In the context of protection, although the levels of all subsets tended to be higher in P than in NP, none reached significance except for PF-16-stimulated Ki67+ memory B cells, which increased from T0 to T6 (Figure 4—figure supplement 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig4-v3.jpg)
+
+**Figure 4.:** PBMC were cultured for 5 days in the presence of PF-CSP and PF-16 antigens and analyzed for frequencies of B cell maturation subsets: switched memory (SM: CD20+CD10–CD27+IgD–IgG+), switched activated memory (sAM: CD20+CD10–CD21lowCD27+IgD–IgG+) and Ki67 expression on total memory (Mem: CD20+CD10–CD27+) B cells in DFD (n = 29) and STD (n = 14) regimens at T5, T6 and T7. (A–C) The scatter plots show PF-CSP-specific SM (A); sAM (B) and Ki67+(C) memory B cells. (D–F) PF-16-specific SM (D); sAM (E) and Ki67+(F) memory B cells. Data for the protected group are represented as dark blue open circles for DFD (P DFD, n = 25) and as light blue open circles for STD regimen (P STD, n = 10) and non-protected as red open circles (NP, n = 10) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time. Statistical significance is shown as: *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Live (Aqua–) cells were gated from the singlets followed by gating for the CD3–CD20+B cells from live lymphocytes.﻿ Mature B cells were identified as CD10–CD20+ B cells. From the mature B cells, total memory B cells were identified as CD20+CD27+ cells. On the basis of the expression of CD21, CD27 and IgD, B cell maturation subsets were identified as naïve (CD21hiCD27–IgD+) B cells, resting memory (RM: CD21hiCD27+) activated memory B cells (AM: CD21lowCD27+) and atypical memory B cells (aMBC: CD21lowCD27–). On the basis of the IgD and IgG expression, unswitch and switch memory B cells were identified as IgD+IgG– (UM: unswitch) and IgD–IgG+ (SM: switch). Switch memory B cells in total memory, RM and AM were designated as SM, sRM and sAM, respectively, while unswitch memory B cells were designated as UM, uRM, uAM for total memory, RM and AM, respectively. All B cell subsets were gated for the expression of the proliferation marker Ki67.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** CD80 expression was analyzed in ex vivo B cell subsets at all the timepoints by flow cytometry. Data were compared longitudinally and also between the P (green line; n = 35) and NP (red line; n = 10) groups at each timepoint. (A) Representative flow cytometry dot plot for CD80 staining of B cells. (B, D, F) Line graphs with error bars, indicating mean ± standard error of mean (SEM), for frequencies of CD80 expression on total (B), RM (D) and AM B cells (F). (C, E, G) Scatter plots comparing CD80 expression between the DFD and STD regimens at T5, T6 and T7 for total (C), RM (E) and AM (G) B cells. Data for the protected group are represented by dark blue open circles for DFD (P DFD) and by light blue open circles for the STD regimen (P STD), whereas data for the non-protected group are shown as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time. Differences between timepoints in P and NP and between P and NP at each timepoint are not statistically significant.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** PBMC were cultured for 5 days in the presence of PF-CSP and PF-16 antigens, and atypical memory B cells (aMBC) were identified as CD3–CD20+CD21lo/negCD10–CD27– by flow cytometry. (A, B) Scatter plots showing aMBC specific to PF-CSP (A) and PF-16 (B). Data from the protected group are indicated as dark blue open circles for the DFD regimen (P DFD) and as light blue open circles for the STD regimen (P STD), whereas data from the non-protected group are represented as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood package to accommodate repeated measurements over time. Statistical significance shown as: *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** PBMC were cultured for 5 days in the presence of PF-CSP and PF-16 antigens, and B cell maturation subsets and Ki67 expression on B cell subsets were analyzed by flow cytometry. Line graphs with error bars indicate mean cell frequencies ± standard errors of the mean (SEM) for B cell subsets in the P (green; n = 35) and NP (red, n = 10) subjects for (A) SM, (B) sAM and (C) Ki67+ mem B cells. (D–F) Frequencies of PF-16-specific (D) SM, (E) sAM and (F) Ki67+ mem B cells. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time. Statistical significance is shown as: *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig5-v3.jpg)
+
+**Figure 5.:** Spontaneous antibody secreting cells (ASC) at T0, T1, T3, and T5 were determined in unstimulated PBMC for plasmablast responses by ELISpot against PF-CSP, PF-16 and R32LR antigens. Memory B cell ASC responses were analyzed at T0, T2, T4, T5, T6 and T7 using ELISpot assay in PBMC stimulated with PF-CSP, PF-16, or R32LR antigens. Line graphs with error bars indicate mean ± standard error of mean (SEM). (A, B) Spontaneous ASC/million PBMC for the protected (P, green line, n = 33) and non-protected (NP, red line, n = 10) study groups for PF-CSP (A) and R32LR (B) antigens. (C–E) Memory B cell ASC/million PBMC for PF-CSP (C), PF-16 (D) and R32LR (E) for P and NP subjects. (F–H) Scatter plots showing memory B cells responses as ASC/million PBMC in the DFD and STD regimens at T5, T6 and T7 for PF-CSP (F), PF-16 (G) and R32LR (H) antigens. Data from the protected group are represented as dark blue open circles for DFD (P DFD) and as light blue open circles for the STD regimen (P STD), whereas data for the non-protected group are represented as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time. P values shown within the graph refer to significant difference between the P and NP groups at the indicated timepoints. Statistical significance shown as: *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** PBMC were cultured for 5 days in the presence of PF-CSP, PF-16 or R32LR antigens and total IgG was measured in the culture supernatants by ELISA. (A, C, E) Line graphs with error bars indicate mean ± standard error of mean (SEM) for the frequencies of IgG specific to PF-16 (A), PF-CSP (C) and R32LR (E). (B, D, F) Scatter plots comparing IgG levels between the DFD and STD regimens at T5, T6 and T7 specific to PF-16 (B), PF-CSP (D) and R32LR (F). Data from the protected group are represented as dark blue open circles for the DFD (P DFD) regimen and as light blue open circles for the STD regimen (P STD), whereas data for the non-protected group are respresented as red open circles (NP) for both regimens. Statistical analysis was performed using the generalized linear mixed-effects model via Penalized Quasi-Likelihood to accommodate repeated measurements over time. Statistical significance is shown as: *, p<0.05; **, p<0.01; ***, p<0.001.
 
 Functional assessment of the vaccine-induced plasmablast and memory B cell antibody responses against the test antigens was conducted using antibody secreting cell (ASC) ELISpot assays. Plasmablasts are short-lived ASC that are generated rapidly in response to infection or vaccination, which transiently contribute to serum antibodies (Wrammert et al., 2008; George et al., 2015; Pallikkuth et al., 2011a; Rinaldi et al., 2017). To assess plasmablast responses, we determined the number of spontaneous IgG ASC directed at vaccine antigens on day 6 post-each vaccine dose as compared to the number pre-vaccination (Figure 5). A significant increase in the number of PF-CSP-specific (Figure 5A) and R32LR-specific (Figure 5B) spontaneous ASC were noted at day 6 post dose 2 (T3) in P subjects but not in NP subjects. The spontaneous ASC response did not differ significantly between the DFD and STD regimens at T5 (not shown).
 
@@ -70,19 +110,211 @@ Vaccine-induced antigen-specific IgG secreting memory B cell responses were anal
 
 As an additional measure of memory B cell function, we analyzed IgG secretion by ELISA in the PBMC culture supernatants after 5 days of stimulation with PF-CSP, PF-16, or R32LR antigens (Figure 5—figure supplement 1). Compared to T0, PF-16-specific IgG levels were significantly higher at T4, T6 and T7 in P subjects (Figure 5—figure supplement 1A), whereas PF-CSP- and R32LR-specific IgG did not change significantly (Figure 5—figure supplement 1C and E). IgG responses were significantly higher in the DFD regimen at T5–T7 for PF-16 (Figure 5—figure supplement 1B) and at T7 for R32LR (Figure 5—figure supplement 1F), with a trend of higher response at T7 for PF-CSP (Figure 5—figure supplement 1D), in comparison to responses in the STD regimen. Taken together, our findings indicate that RTS,S/AS01 vaccination elicited strong, functionally competent CSP-specific memory B cell responses in the P subjects, especially at the later timepoints, and that these responses were larger in the DFD regimen and stronger for PF-16 than for R32LR.
 
-## Data integration approach for identifying vaccine-induced immune correlates and their association with protection or regimen
+### Data integration approach for identifying vaccine-induced immune correlates and their association with protection or regimen
 
 In order to identify vaccine-induced immune correlates that are associated with protection and that differentiate the DFD regimen from the STD regimen, we employed a statistical data integration method. We incorporated data obtained for both CSP and HBs antigen-specific immune responses for this analysis, which include frequencies of memory B cell phenotypes, memory B cell ELISpot responses, CD4 and pTfh responses, and IgG levels from PBMC culture supernatants. We identified 676 of 1976 immune measures that were significantly increased from baseline (T0) to different timepoints post-vaccine (Supplementary file 1). By carrying out a correlation analysis to identify groups of correlated immune measures (‘immune clusters’), we were able to group these 1976 immune features into 142 immune clusters, of which 40 clusters had at least one vaccine-antigen-specific immune feature. Analysis of the vaccine-induced responses over the time course of the study revealed that the pTfh response was an early-stage response, emerging as early as T2, and persisting throughout the study. By contrast, the memory B cell response was a later-stage response, peaking between T4 and T5 (Figure 6—figure supplement 1A). 65% to 80% of the immune responses classified as ‘vaccine-induced’ were specific to the vaccine antigens CSP or HBs (Figure 6—figure supplement 1B), and the response was fairly balanced between both antigens.
 
-## Individualized predictions using machine learning
+### Individualized predictions using machine learning
 
 In order to assess the extent of regimen- and protection-level differences, we applied a machine-learning approach using random forest statistical modelling that could make individualized predictions of regimen and protection from immune data alone. A general workflow of the data integration approach is shown in (Figure 6—figure supplement 2). This approach allowed us 1) to determine what combination of immune features is most predictive of regimen or protection, and 2) to group subjects according to their pattern of vaccine-induced immune responses. Furthermore, by taking a prediction approach, we were able to determine how early in the vaccination regimen vaccine-induced immune responses would be predictive of protection. In order to assess predictive performance, we carried out a leave-one-out (LOO) analysis, in which each subject was excluded from the data set before the predictive model was trained on the remaining subjects, and then used to predict the outcome (or regimen) of that excluded subject. Accuracy was calculated as the proportion of subjects whose outcome (or regimen) was correctly predicted by the model.
 
 In order to predict vaccine regimen from immune data alone, we performed a random forest analysis using 41 parameters from timepoints prior to challenge (T6) that were shown to be significantly different with respect to regimen in the univariate analysis. The LOO analysis shows that the random forest model, using these 41 parameters, achieved 85% accuracy with a kappa value of 0.63, indicating a strong predictive value. Overall, an average of 39 out of 46 subjects in the vaccine regimens were predicted correctly. Further, we determined the relative importance of each parameter in the random forest (Table 1) and found that antigen-induced B cell characteristics, including proliferation (Ki67+) and frequencies of SM, sAM, and Ki67 expressing aMBC, were most predictive of regimen. Nearly all predictive parameters showed antigen specificity for either CSP (66%) or HBs (27%). We used principal components analysis (PCA) to visualize how well the predictive parameters identified in Table 1 were able to distinguish subjects by regimen (Figure 6A). Overall, we found good separation between DFD and STD regimens using these parameters. We also found that the axis of variation within each regimen was distinct between the two groups, suggesting that these regimens are acting differently on this common set of immune parameters.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig6-v3.jpg)
+
+**Figure 6.:** PCA plots using parameters identified by machine learning as being predictive of (A) regimen differences for DFD (purple) and STD (orange) subjects and (B) protection status for protected (blue) and non-protected (red) subjects.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Vaccine-induced immune responses by immune cluster across timepoints for frequencies of CSP- and HBs-specific B cell subsets by flow cytometry (BCF), frequencies and function of total pTfh, CSP-, HBs- and SEB-specific CD4 and pTfh data (Tfh ICC), CSP- and HBs-specific memory B cell ELISpot data (BELI), and CSP- and HBs-specific PBMC culture supernatant IgG (IGG). (B) Antigen-specificity following ex vivo stimulation of vaccine-induced responses for each assay.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/51889/elife-51889-fig6-figsupp2-v3.jpg)
+
+**Table 1.**
+ Parameters that are most predictive of vaccine regimen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Phenotype</th>
+      <th>Parameter</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="15">B cell</td>
+      <td rowspan="5">Ki67+memory B cells</td>
+      <td>BCF.Mem.Ki67.HBs.T5</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>BCF.Mem.Ki67.PF.CSP.T6</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td>BCF.Mem.Ki67.MED.T6</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>BCF.Mem.Ki67.PF.CSP.T5</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>BCF.Mem.Ki67.PF.16.T6</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td rowspan="3">sAM</td>
+      <td>BCF.sAM.PF.16.T6</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>BCF.sAM.PF.CSP.T5</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>BCF.sAM.HBs.T6</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SM</td>
+      <td>BCF.SM.PF.CSP.T5</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>BCF.SM.HBs.T5</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td rowspan="5">aMBCKi67</td>
+      <td>BCF. aMBC.Ki67.PF.CSP.T5</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>BCF. aMBC.Ki67.PF.16.T5</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>BCF. aMBC.Ki67.HBs.T5</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>BCF. aMBC.Ki67.PF.CSP.T6</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>BCF.sAM.Ki67.PF.CSP.T5</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: sAM, switched activated memory; SM, switched memory; aMBCKi67, Ki67+atypical memory B cells; BCF, antigen-specific memory B cell responses by flow cytometry._
+
 In order to predict protection status, we used 36 immune parameters that showed significant protection-level differences prior to challenge (T6 and earlier). We achieved a predictive accuracy of 85% with a kappa of 0.45, indicating low-to-moderate predictive ability, with 18 parameters in the model. Overall, 39 of 46 subjects were predicted correctly. The low sample size and imbalanced data set (78% of subjects were protected) made a more thorough assessment of the predictive ability of this model challenging. After analyzing for variable importance, we found that the parameters that are most predictive of protection (Table 2) include CSP-specific CD40L+ CD4, HBs-specific IL-21+, CSP-specific pTfh, frequencies of total pTfh cells, and CSP-specific antibody-secreting memory B cells. Of note, many of these parameters were from relatively early timepoints such as T2 and T4. We used PCA to visualize how well the predictive parameters identified in Table 2 could distinguish subjects by protection status (Figure 6B), and found that although there was a wide variability in the immune responses for P subjects, NP subjects clustered closely with each other and separately from P subjects. Together, these data suggest that there is a distinct pattern of immune responses associated with vaccine failure in this study.
 
-## Predicting protection from early-stage responses
+**Table 2.**
+ Parameters that are most predictive of protection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Phenotype</th>
+      <th>Parameter</th>
+      <th>Weight</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">B cell</td>
+      <td rowspan="3">Memory B cell ELISpot</td>
+      <td>PF.CSP.T2</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>PF.16.T4</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>PF.CSP.T5</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td rowspan="15">T cell</td>
+      <td rowspan="3">CD40L+CD4</td>
+      <td>CD40L.CSP.T4</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>CD40L.CSP.T6</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>CD40L.CSP.T2</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Ag.pTfh</td>
+      <td>Ag.pTfh.CSP.T2</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>Ag.pTfh.IL.21.HBs.T4</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Ag.pTfh.IL.21.CSP.T6</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Ag.pTfh.IL.21.HBs.T6</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Ag.pTfh.IL.21.CSP.T4</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Total. pTfh</td>
+      <td>Total.pTfh.MED.T2</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Total.pTfh.MED.T4</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Total.pTfh.MED.T6</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Ag.CD4</td>
+      <td>CSP.T4</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>CSP.T6</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>MED.T6</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>HBs.T4</td>
+      <td>52</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: Ag.pTfh, antigen specific peripheral T follicular helper cells; Ag.CD4, antigen stimulated total CD4 T cells; ELIspot, memory B cell ELISpot responses; CD40L+CD4, CD40L+ CD4 T cells._
+
+### Predicting protection from early-stage responses
 
 Given that many of the immune correlates for protection were found at timepoints before dose 3, we used machine learning to determine whether we could predict if a subject could be protected by early-stage immune responses alone. We trained the model on early-response data alone (post-dose 1 and 2) to predict protection and achieved 87% accuracy with a kappa of 0.46, indicating moderate accuracy in predicting protection using only immune response data prior to dose 3. When we broke down the prediction results by vaccine regimen, we found that the protection status of virtually all DFD subjects is predicted correctly (97% accuracy, kappa = 0.84), whereas the protection status of STD subjects is predicted poorly (69% accuracy, Kappa = 0.26).
 
@@ -116,33 +348,344 @@ We conclude that delaying and reducing the third vaccine dose is advantageous fo
 
 ## Materials and methods
 
-## Study timepoints and processing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Staphylococcal enterotoxin B</td>
+      <td>List Biological laboratories</td>
+      <td># 122</td>
+      <td>1 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CPG ODN 2016</td>
+      <td>In-Vivogen</td>
+      <td># tlrl2006-1</td>
+      <td>1 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HBs peptide pool</td>
+      <td>PATH’s Malaria Vaccine Initiative</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CSP peptide pool</td>
+      <td>PATH’s Malaria Vaccine Initiative</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CS repeat region protein (R32LR)</td>
+      <td>GSK</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HBs protein</td>
+      <td>GSK</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CSP protein</td>
+      <td>PATH’s Malaria Vaccine Initiative</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>C-terminal peptide (PF-16)</td>
+      <td>PATH’s Malaria Vaccine Initiative</td>
+      <td></td>
+      <td>2 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo-sapiens)</td>
+      <td>Primary human mononuclear cells</td>
+      <td>GSK</td>
+      <td></td>
+      <td>Cryopreserved in liquid nitrogen</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 BUV 395, mouse monoclonal, Clone SK7</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2744382; Cat# 564001</td>
+      <td>5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ICOS BV 421, regimenenian hamster monoclonal, Clone C398.4A</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2562545; Cat# 313524</td>
+      <td>0.156 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CXCR5 Alexa 647, rat monoclonal, Clone RF8B2</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2737606; Cat# 558113</td>
+      <td>0.625 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD8 Alexa 700, mouse monoclonal, Clone RPA-T8</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_10643765; Cat# 561453</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CCR7 PE-CF594, mouse monoclonal, Clone 150503</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_11153301; Cat# 562381</td>
+      <td>5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 PE-Cy5, mouse monoclonal, Clone CD28.2</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314312 Cat# 302910</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD45RO FITC, mouse monoclonal, Clone UCHL1</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# IM1247U</td>
+      <td>8 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD4 PerCP-Cy5.5, mouse monoclonal, Clone L200</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_394488 Cat# 552838</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD40L BV 605, mouse monoclonal, Clone 24–31</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2563832 Cat# 310826</td>
+      <td>0.625 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Ki-67 BV 711, mouse monoclonal, Clone Ki-67</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_ 2563861 Cat# 350516</td>
+      <td>1.25 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD69 APC-Cy7, mouse monoclonal, Clone FN50</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_314849 Cat# 310914</td>
+      <td>0.156 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-21 PE, mouse monoclonal, Clone 12-7219-42</td>
+      <td>eBioscience</td>
+      <td>RRID:AB_1582260 Cat# 12-7219-42</td>
+      <td>0.156 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IFN-g PE-Cy7, mouse monoclonal, Clone B27</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_396760 Cat# 557643</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG BV 421, mouse monoclonal, Clone G18-145</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2737665 Cat# 562581</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD80 BV 605, mouse monoclonal, Clone 2D10</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_11123909 Cat# 305225</td>
+      <td>0.625 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IL-21R APC, mouse monoclonal, Clone 2G1-K12</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_2123988 Cat# 347808</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD20 Alexa 700, mouse monoclonal, Clone 2H7</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_493753 Cat# 302322</td>
+      <td>0.625 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD38 PE, mouse monoclonal, Clone HIT2</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_395853 Cat# 555460</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD21 PE-Cy5, mouse monoclonal, Clone Bly4</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_394028 Cat# 551064</td>
+      <td>3.75 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD10 PE-Cy7, mouse monoclonal, Clone HI10A</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_400216 Cat# 341092</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgD FITC, mouse monoclonal, Clone IA6-2</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_10612567 Cat# 348206</td>
+      <td>0.625 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27 BV 650, mouse monoclonal, Clone L128</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2744352 Cat# 563228</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human ICOSL biotin, mouse monoclonal, Clone 2D3</td>
+      <td>Biolegend</td>
+      <td>RRID:AB_528729 Cat# 309406</td>
+      <td>1.25 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human streptavidin BV 711, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Cat# 405241</td>
+      <td>0.7 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Ki-67 PerCP-Cy5.5, mouse monoclonal, Clone B56</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_10611574 Cat# 561284</td>
+      <td>2.5 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27 PerCP-Cy5.5, mouse monoclonal, Clone MT271</td>
+      <td>Bioegend</td>
+      <td>RRID:AB_2561906 Cat# 356408</td>
+      <td>0.312 µl/test, FACS</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD28 unconjugated, mouse monoclonal, Clone L293</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_400197 Cat# 340975</td>
+      <td>1 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human IgG ELISA Quantitation Set</td>
+      <td>Bethyl Laboratories</td>
+      <td>Cat# E80-104</td>
+      <td>IgG ELISA, PBMC culture supernatants</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Brefeldin A</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# B7651-5mg</td>
+      <td>10 µg/ml, PBMC stimulation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td>https://www.flowjo.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACSDiva</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td>https://www.bdbiosciences.com/en-us/instruments/research-instruments/research-software/flow-cytometry-acquisition/facsdiva-software</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LIVE/DEAD Fixable Aqua Dead Cell Stain</td>
+      <td>Invitrogen</td>
+      <td>L34957</td>
+      <td>0.5 µl/ml, FACS</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study timepoints and processing
 
 Recruitment of participants, vaccine administration and CHMI studies were conducted at Walter Reed Army Institute of Research (WRAIR) (Regules et al., 2016). A schema for vaccine timepoints and blood sample collection for immunology analyses in both vaccine regimens and in the control regimen of the study is shown in Figure 1. Blood draws for this were performed at eight different timepoints designated T0–T7: (i) pre-vaccination (T0), day 6 post dose 1 (T1), day 28 post dose 1 (T2), day 6 post dose 2 (T3), day 28 post dose 2 (T4), day 6 post dose 3 (T5), day 21 post dose 3 and pre-challenge (T6) and at study end (T7), 159 days post-challenge. Blood was processed for peripheral blood mononuclear cells (PBMC) and cryopreserved PBMC samples were shipped to the University of Miami (UM) in liquid nitrogen. All lab testing, analysis, data entry and plotting of graphs were performed in batches in a blinded manner with information related to vaccine regimen and protection status revealed to the UM lab only after all of the samples had been processed. This study was approved by the Institutional Review Boards of UM. De-identified PBMC samples were processed at UM laboratory.
 
-## Vaccine antigens, control antigen and monoclonal Abs
+### Vaccine antigens, control antigen and monoclonal Abs
 
 The HBs peptide pool, CSP peptide pool, CS repeat region protein (R32LR) and HBs protein were provided by GSK. The CSP protein (PF-CSP) and the C-terminal peptide (PF-16) were provided by PATH’s Malaria Vaccine Initiative (MVI). Staphylococcal enterotoxin B (List Biological Laboratories) and CPG ODN 2006 (InvivoGen) were used as positive control antigens for T and B cells, respectively. A list of monoclonal Abs used for the flow cytometry studies, including the information about clone and fluorochrome, is included in the Key resources table.
 
-## pTfh frequency and antigen-specific intracellular cytokine secretion (ICS) in short-term cultures
+### pTfh frequency and antigen-specific intracellular cytokine secretion (ICS) in short-term cultures
 
 pTfh frequency and function were analyzed at pre-vaccination (T0) and at all timepoints post-vaccination in each regimen. Briefly, PBMC (1.5 × 106/ml/condition) were stimulated with CSP peptide pool (2 µg/ml) and HBs peptide pool (2 µg/ml) along with co-stimulation molecule antiCD28 (1 µg/ml) for 12 hr at 37°C. Brefeldin A (10 µg/ml) was added 7 hr after stimulation to prevent protein transport. SEB (1 µg/ml) was used as a positive control, and medium with co-sitm molecule antiCD28 alone was used as a negative control. After stimulation, cells were stained using a 14-color fluorochrome conjugated monoclonal Ab panel including surface markers that are specific for pTfh identification along with live/dead amine dye (aqua). Cells were then fixed, permeabilized and stained intracellularly for interleukin (IL-21), CD40L, and Ki67, acquired on a BD LSRFortessa, and analyzed by FlowJo (v 9.4.3, Tree Star Inc).
 
 All flow cytometry analyses were performed using optimally titrated Ab concentrations and after applying appropriate fluorescent compensation using DIVA software on BD LSRFortessa at the time of acquisition and fine tuning of compensation using FlowJo at the time of analysis. Gating controls included unstained cells and Fluorescence Minus One (FMO), and for all stimulation experiments, unstimulated cells were used as additional biological controls. For basic pTfh identification, CD4 T central memory (TCM[CD3+CD4+CD45RO+CD27+]) were gated on CXCR5 to determine the frequencies of CXCR5+ subsets in CD4 TCM cells, designated as pTfh cells. For Ag-specific pTfh cells, CD40L+ CD4 T cells were gated on the basis of the expression of CD45RO and CXCR5 (as CD45RO+CXCR5+) as CSP-specific pTfh cells and CD45RO+CXCR5– as CSP-specific non-pTfh cells (Figure 2—figure supplement 1). CSP-specific pTfh cells and non-pTfh cells were further analyzed for the intracellular expression of signature cytokine IL-21, inducible co-stimulator ICOS and proliferation marker Ki67.
 
-## Ex vivo B cell maturation subsets
+### Ex vivo B cell maturation subsets
 
 Thawed PBMC were analyzed for B cell phenotypes without in vitro stimulation by flow cytometry. Total mature B cell were identified as CD3–CD10–CD20+ cells after excluding immature CD10+ B cells, and total memory B cells were identified as CD20+CD27+ cells. On the basis of the expression of CD21, CD27 and IgD, B cell maturation subsets were identified as naïve (CD21hiIgD+CD27–), resting memory (RM: CD21hiCD27+), activated memory (AM: CD21lowCD27+) and atypical memory B cells (aMBC: CD21lowCD27–). Within the total memory, RM and AM B cells IgD+IgG– were identified as unswitch and IgD–IgG+ as switch memory B cells (Figure 5—figure supplement 1).
 
-## Spontaneous Ab-secreting cells (ASC)
+### Spontaneous Ab-secreting cells (ASC)
 
 A spontaneous ASC enzyme linked immunospot (ELISpot) assay was performed at T0, T1, T3, and T5 as described previously (George et al., 2015; Rinaldi et al., 2017; Pallikkuth et al., 2011b) against wells coated with PF-CSP, R32LR and PF-16 malaria antigens, as well as HBs-antigen, using unstimulated PBMC. Data are expressed as spontaneous ASC/million PBMC.
 
-## Memory B cell analysis
+### Memory B cell analysis
 
 Memory B cell responses were analyzed at T0, T2, T4, T5, T6 and T7 using memory B cell antibody secreting cell (ASC) ELISpot (George et al., 2015; Rinaldi et al., 2017; Pallikkuth et al., 2011b). PBMC 1.5 × 106/ mL per condition were stimulated for 5 days with 2 µg/ml each of malaria (PF-CSP, PF-16, R32LR) and HBs antigens. CpG oligodeoxynucleotides 2006 (CpG ODN2006: 1 µg/ml) was used as a positive control and medium as a negative control. On day 5, cells were harvested and assayed for Ag-specific induction of IgG-secreting cells by ELISpot assay (Pallikkuth et al., 2011b). The remaining cells were stained with fluorochrome conjugated monoclonal Abs that were specific for B cell maturation subsets (naïve, total memory, RM, AM, and aMBC). Switch and unswitch memory B cells within total memory, RM and AM subsets were identified on the basis of IgG and IgD expression along with proliferation marker Ki67 and analyzed by flow cytometry as described in Figure 5—figure supplement 1. Culture supernatants were stored at −80°C and assayed for IgG by ELISA.
 
-## Statistical analysis and data integration
+### Statistical analysis and data integration
 
 To analyze this complex immunology dataset, which includes a large number of immune measurements for each subject, we performed an integration approach in which we combined traditional univariate analysis with multivariate machine-learning methods to isolate immune responses that were vaccine induced, to characterize regimen-specific differences, and to identify correlates of protection. A general workflow of the data integration approach is shown in Figure 6—figure supplement 2. Analyses were performed to compare changes in pTfh and B cell related markers for each group between different timepoints pre- and post-vaccination, or between P vs NP, or between regimens DFD and STD, at each timepoint or at selected timepoints. Generalized linear mixed-effects models (GLMM), fitted via Penalized Quasi-Likelihood (PQL) using R ‘MASS’ package was used to accommodate repeated measures of time, with random intercept set by patient ID (PID). P value was adjusted for multiple comparisons by Benjamini and Hochberg correction using R ‘multcomp’ package. A p value of <0.05 was considered to be significant. Immune measures were classified as vaccine-induced responses if they showed a significant difference from the pre-immune (vs. T0) timepoint. Immune measures were classified as regimen-specific and protection-specific differences if they showed a significant difference with respect to vaccine regimen (STD vs. DFD) or protection status (P vs. NP), respectively.
 

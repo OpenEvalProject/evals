@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.47040.001 RNA degradation pathways enable RNA processing, the regulation of RNA levels, and the surveillance of aberrant or poorly functional RNAs in cells. Here we provide transcriptome-wide RNA-binding profiles of 30 general RNA degradation factors in the yeast Saccharomyces cerevisiae . The profiles reveal the distribution of degradation factors between different RNA classes. They are consistent with the canonical degradation pathway for closed-loop forming mRNAs after deadenylation. Modeling based on mRNA half-lives suggests that most degradation factors bind intact mRNAs, whereas decapping factors are recruited only for mRNA degradation, consistent with decapping being a rate-limiting step. Decapping factors preferentially bind mRNAs with non-optimal codons, consistent with rapid degradation of inefficiently translated mRNAs. Global analysis suggests that the nuclear surveillance machinery, including the complexes Nrd1/Nab3 and TRAMP4, targets aberrant nuclear RNAs and processes snoRNAs.
+RNA degradation pathways enable RNA processing, the regulation of RNA levels, and the surveillance of aberrant or poorly functional RNAs in cells. Here we provide transcriptome-wide RNA-binding profiles of 30 general RNA degradation factors in the yeast Saccharomyces cerevisiae. The profiles reveal the distribution of degradation factors between different RNA classes. They are consistent with the canonical degradation pathway for closed-loop forming mRNAs after deadenylation. Modeling based on mRNA half-lives suggests that most degradation factors bind intact mRNAs, whereas decapping factors are recruited only for mRNA degradation, consistent with decapping being a rate-limiting step. Decapping factors preferentially bind mRNAs with non-optimal codons, consistent with rapid degradation of inefficiently translated mRNAs. Global analysis suggests that the nuclear surveillance machinery, including the complexes Nrd1/Nab3 and TRAMP4, targets aberrant nuclear RNAs and processes snoRNAs.
 
 ## Introduction
 
@@ -42,23 +42,47 @@ Here we used photoactivatable ribonucleoside-enhanced crosslinking and immunopre
 
 ## Results
 
-## Transcriptome maps for 30 RNA degradation factors
+### Transcriptome maps for 30 RNA degradation factors
 
 In order to get a better understanding of RNA processing and degradation in a eukaryotic cell, we measured transcriptome-wide binding locations of 30 RNA degradation factors involved in mRNA deadenylation, decapping, exosome-mediated degradation, and in RNA surveillance pathways including nuclear RNA surveillance and cytoplasmic nonsense-mediated decay (NMD) (Figure 1A,B). We performed PAR-CLIP in S. cerevisiae using our published protocol (Battaglia et al., 2017), with minor modifications (Materials and methods). The high reproducibility of these PAR-CLIP experiments is revealed by a comparison of two independent biological replicates that we collected for all 30 degradation factors (Figure 1—figure supplement 1), with Spearman correlations between 0.87 and 1.00 (mean: 0.94). We typically obtained tens of thousands of verified factor-RNA cross-link sites with p-values≤0.005 (Figure 1B). These transcriptome maps represent an extensive, high-confidence dataset of in vivo RNA-binding sites for factors involved in RNA degradation.
 
-## Degradation factors exhibit transcript class specificity
+![Figure 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overview of degradation pathways studied. (B) Number of high-confidence PAR-CLIP cross-link sites obtained for each factor after merging data from replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Total transcript occupancy of factors in replicate experiments are plotted (in log2 space) and Spearman correlation values are shown for each pair. Each dot corresponds to a transcript. The color indicates dot density. (B) Comparison of coverage profiles obtained from CRAC experiments of Xrn1, Mtr4, Trf4, and Ski2 in S. cerevisiae (Tuck and Tollervey, 2013) with occupancy profiles from our PAR-CLIP experiments highlights reproducibility of transcriptome profiles across different methods. These profiles show the averaged binding of degradation factors over mRNAs (sense strand: left and anti-sense strand: right) in a window of [±700 nt] around their transcription start site (TSS) and their poly-adenylation (pA) site in a window of [±700 nt]. Regions that have neighboring transcripts on the same strand were removed to avoid contaminating profiles (Materials and methods).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** IP using the TAP-tag is detected by Western Blot analysis with tag specific antibody to show the IP quality of the different PAR-CLIP experiments representative for one replicate per factor. The factors are sorted according to their complexes: deadenylation (Ccr4, Pop2, Not1, Caf40, Pan3, and Pan3), decapping (Dcp1, Dcp2, Edc2, Edc3, and Dhh1), 5´→3´ exonuclease (Xrn1), exosome (Rrp6, Csl4, Rrp40, Rrp4, and Rrp44), TRAMP (Air1, Trf5, Mtr4, Air2, and Trf4), Ski (Ski2, Ski3, Ski7, and Ski8), and NMD (Upf1, Upf2, Upf3, and Nmd4). The molecular weight including the weight of the TAP tag (in kDa) is indicated for each factor. The band at ~25 kDa is caused by cross-reactivity of the light chain of the used antibodies for IP and Western Blot. A shift to higher molecular weight than indicated can be caused by UV-crosslinking of proteins to RNA.
+
+### Degradation factors exhibit transcript class specificity
 
 We first compared degradation factor binding over different RNA classes. These included messenger RNA (mRNA), where we distinguished the 5´ untranslated region (5´ UTR), the coding sequence (CDS), introns, and the 3´ untranslated region (3´ UTR). We also included several classes of ncRNAs: ribosomal (r), transfer (t), small nucleolar (sno), and small nuclear (sn) RNAs, as well as stable unannotated transcripts (SUTs), cryptic unstable transcripts (CUTs), and Nrd1-unterminated transcripts (NUTs) (Neil et al., 2009; Pelechano et al., 2013; Schulz et al., 2013) (Figure 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fractions of high confidence PAR-CLIP sequencing reads of 30 yeast degradation factors fall into various transcript classes. Depicted classes are the following: messenger RNA (mRNA) in turquoise (n = 4,928), ribosomal RNA (rRNA) in antique pink (n = 24), transfer RNA (tRNA) in dark blue (n = 299), small nucleolar RNA (snoRNA) in yellow (n = 77), small nuclear RNA (snRNA) in green (n = 6), stable unannotated transcripts (SUTs) in red (n = 318), cryptic unstable transcripts (CUTs) in light brown (n = 637), Nrd1-unterminated transcripts (NUTs) in dark brown (n = 298)(Materials and methods). (B) Enrichment z-scores of high confidence PAR-CLIP cross-link sites of 30 yeast degradation factors (rows) in various segments of mRNA transcripts (left columns; UTR: untranslated region; intron; CDS: coding sequence), or other transcript classes as in A (other columns). The color-coded enrichment score shows the column and row normalized enrichment values of binding preferences of each factor for each transcript class (color encoded, depleted in blue and enriched in red). The coefficient of variation on top is the standard deviation divided by the mean for each transcript class.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Transcript averaged PAR-CLIP occupancy profiles are shown for Air1, Trf5, Mtr4, Air2, and Trf4. snoRNA genes are aligned either at their 5´ end or at their 3´ end (n = 77). Occupancy profiles are shown over the range of ±50 nt.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Fraction of U over all bases in transcript classes studied in Figure 2 (untranslated region (UTR); intron; coding sequence (CDS), ribosomal RNA (rRNA), transfer RNA (tRNA), small nucleolar RNA (snoRNA), small nuclear RNA (snRNA), stable unannotated transcripts (SUTs), cryptic unstable transcripts (CUTs), Nrd1- unterminated transcripts (NUTs)).
+
 A first analysis revealed that most PAR-CLIP sequencing reads fall into the mRNA transcript class, although many of the factors also show a considerable number of sequencing reads in ncRNAs, in particular rRNAs (Figure 2A). To obtain a more quantitative comparison, we defined log enrichment scores that reflect the preferences of factors in binding to a specific transcript class in comparison to other factors and classes. To correct for the different sizes of classes and different numbers of measured factor binding sites, we normalized the log enrichment scores by subtracting class- and factor-specific offsets, such that the mean for each class and each factor vanishes (Figure 2B, Materials and methods). This analysis highlights differences between degradation factors with respect to binding to various transcript classes, as will be discussed in detail below.
 
-## RNA end-processing complexes differ in their targets
+### RNA end-processing complexes differ in their targets
 
 The catalytic subunit Pop2 and the core subunits Not1 and Caf40 of the deadenylase complex Ccr4/Not have similar binding preferences for the 5´ UTR, the CDS and 3´ UTR of mRNAs, for rRNAs, tRNAs, snoRNAs, and snRNAs (Figure 2B, highlighted in red). Compared to other deadenylation factors of the Ccr4/Not complex, the catalytically active subunit Ccr4 has different binding preferences, and is strongly enriched at mRNA introns. The second deadenylation complex, Pan2/Pan3, shows a similar binding preference as the Ccr4/Not complex (except for the Ccr4 subunit), consistent with its dominant role in yeast mRNA deadenylation (Boeck et al., 1996). Pan3 shows a strong binding preference for rRNAs and tRNAs.
 
 For all decapping-related factors we observed similar binding preferences among each other (Figure 2B, highlighted in green). They show the strongest enrichment at SUTs and at mRNAs compared to the other transcript classes. Decapping factors bind preferentially to CDS and 3´ UTR as well as SUTs. This is consistent with previous findings that SUTs are degraded via Dcp2-dependent pathways in the cytoplasm (Marquardt et al., 2011; Smith et al., 2014; Thompson and Parker, 2007). Dcp2, which harbors the hydrolase activity that removes the 5´ cap, and the decapping activator Edc3, additionally bind to NUTs. The 5´ exonuclease Xrn1 shows a similar binding preference as the decapping factors (Figure 2B, highlighted in orange). Taken together, complexes and enzymes that are known to target mRNA ends for 3´ deadenylation and 5´ decapping and degradation show remarkably distinct binding specificities to different transcript classes.
 
-## The exosome and surveillance factors
+### The exosome and surveillance factors
 
 For the exosome we also observed binding to different RNA classes (Figure 2B, highlighted in royal blue). The core exosome subunits Csl4 and Rrp40 show similar cross-linking to rRNAs, tRNAs, snoRNAs, and snRNAs. The catalytic exosome subunit Rrp44 and the core subunit Rrp4 binds to introns of mRNAs, but preferentially to the short-lived, nuclear CUTs and NUTs. Rrp6, a subunit that is exclusively present in the nuclear exosome complex, shows binding to rRNAs, snoRNAs, snRNAs, CUTs and NUTs. This is consistent with the suggestion that the factor is needed for nuclear processing of such non-coding transcripts and degradation of short-lived nuclear transcripts (Heo et al., 2013; Vasiljeva and Buratowski, 2006). This complex distribution of cross-links for different exosome subunits to different RNA classes reflects the distinct functions of the exosome in nuclear RNA surveillance, processing of stable ncRNAs, and cytoplasmic mRNA degradation (Zinder and Lima, 2017).
 
@@ -66,25 +90,69 @@ The two TRAMP complexes TRAMP4 and TRAMP5 show clearly distinct cross-linking pa
 
 The cross-linking preferences of subunits of the Ski complex differ only slightly from each other (Figure 2B, highlighted in cyan). All Ski complex subunits bind the 5´ UTR, CDS, and 3´ UTR of mRNAs, rRNAs, tRNAs, snoRNAs, and snRNAs. The Ski2 subunit preferentially binds to the CDS of mRNAs, consistent with its function as a helicase to detach bound proteins from the mRNAs (Houseley and Tollervey, 2009; Lebreton and Séraphin, 2008). The exosome adaptor subunit Ski7 preferentially binds rRNAs and tRNAs. These patterns are consistent with the model that the exosome cooperates with distinct accessory complexes and factors to target different transcript classes. Finally, we observed similar cross-linking patterns for all NMD factors with strong binding to SUTs and NUTs (Figure 2B, highlighted in yellow). Upf2 shows an additional binding preference to introns and CUTs. Upf3 also binds to the 5´ UTR, CDS, and 3´ UTR of mRNAs, and Nmd4 binds to introns and 3´ UTRs of mRNAs.
 
-## Distinct factor distribution along mRNA
+### Distinct factor distribution along mRNA
 
 We next focused on degradation factor distribution on mRNAs. We prepared metagene profiles showing the average occupancy of each factor around the mRNA transcription start sites (TSS) and the poly-adenylation (pA) sites, respectively (Figure 3). The Pan2/Pan3 deadenylase complex and the Ccr4/Not subunits Pop2, Not1, and Caf40 all cross-link upstream of the 3´ end of mRNA with the highest enrichment at the pA site, as expected from their function in shortening the polyA tail. The catalytic subunit Ccr4 binds strongly in the 5´ region of mRNAs. All 5´ decapping factors bind upstream of the pA site, and all but the catalytically active subunit Dcp2 show increasing occupancy towards the 3´ end of mRNAs. These patterns can be explained if decapping factors are pre-bound to mRNAs that form a closed loop that holds the RNA ends in proximity. In contrast, Dcp2 binds almost exclusively at the pA site, suggesting that it might be recruited only upon active mRNA degradation. The cytoplasmic 5´ exonuclease Xrn1 has the highest occupancy towards the 3´ end, similar to the previously published crosslinking and cDNA analysis (CRAC) data (Tuck and Tollervey, 2013), thereby resembling the binding profiles of the decapping factors. Comparison of the binding profiles aligned at the pA site or alternatively with profiles aligned at the translation stop codon shows that the binding preference indeed lies at the end of the 3´ UTR independent of the stop codon position (Figure 3—figure supplement 1B,C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig3-v2.jpg)
+
+**Figure 3.:** Averaged occupancy profiles of degradation factors over mRNAs aligned around their transcription start site (TSS) (n = 3,193, left) and around their poly-adenylation (pA) site (n = 3,193, right) in a window of [±700 nt]. Regions that have neighboring transcripts on the same strand were removed to avoid contaminating profiles (Materials and methods). Factors are grouped according to their functional role; from top to bottom: deadenylation, decapping, Xrn1, exosome, TRAMP complex, Ski complex, or NMD. The color code shows the average occupancy normalized between the minimum (blue) and maximum (red) values per profile.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Transcript-averaged PAR-CLIP occupancy profiles are shown for RNA degradation factors involved in (A) deadenylation, (B) decapping, (C) 5´→3´ exonuclease Xrn1, (D) exosome, (E) TRAMP, (F) Ski, and (G) NMD. Transcripts are aligned either at transcript start site (TSS) and poly-adenylation (pA) site (marked with blue) or at their start and stop codons (marked with green). TIF-seq based annotation is shown in blue (n = 3193 for TSS and pA site profiles) (Pelechano et al., 2013). Open reading frames (ORF) annotated in the SGD (version 64.2.1) are shown in green (n = 4012 for TSS, and n = 3965 for pA site selected transcripts). To avoid contaminating signals from neighboring genes, we filtered out regions that had annotations upstream and downstream of the centered gene (up to 700 nt) (Materials and methods). Shaded areas (in blue TIF-seq annotation, or in green for ORF annotation) depict 95% confidence intervals derived from bootstrapping genes. Comparison between these two profiles highlights preferences for end binding degradation factors in binding to untranslated regions at the two sides of the transcript.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Binding enrichment of degradation factors around the TSS of genes with an upstream sense NUT. Enrichment is defined as the ratio of the average occupancy in the interval [±300 nt] of the TSS on these genes that contain an upstream NUT (n = 459) (Schulz et al., 2013) divided by the average occupancy on all genes. (B) Transcript-averaged PAR-CLIP occupancy profiles for all mRNAs (black) is compared to patterns derived from genes with upstream sense NUTs (blue). Transcripts were aligned at their TSS and averaged over the interval of [±600 nt]. We compared Nrd1 and Nab3 profiles, known to process NUTs, with subunits of the TRAMP complex. 95% confidence intervals obtained from bootstrapping genes are shown with gray and blue shades.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Cross-link sites were filtered to exclude regions that were previously annotated as NUTs and CUTs (Neil et al., 2009; Schulz et al., 2013). Averaged occupancy profiles of degradation factors are then shown over mRNAs aligned around their transcription start site (TSS) (n = 3,193, left) and around their poly-adenylation (pA) site (n = 3,193, right) in a window of [±700 nt]. Regions that have neighboring transcripts on the same strand were removed to avoid contaminating profiles (Materials and methods). Factors are grouped according to their functional role; from top to bottom: deadenylation, decapping, Xrn1, exosome, TRAMP complex, Ski complex, or NMD. The color code shows the average occupancy normalized between the minimum (blue) and maximum (red) values per profile.
 
 The exosome core subunits (Csl4, Rrp40, and Rrp4) and the catalytically active subunits (nuclear: Rrp6, cytoplasmic: Rrp44) cross-link to the 5´ end of the transcript (Figure 3), possibly because the exosome binds to the 5´ end while digesting the 3´ end, or more likely because the exosome slows down towards the remaining 5´ end of mRNAs after rapid degradation from the 3´ end. Both TRAMP complexes bind mainly in the 5´ region of mRNAs near the TSS, as previously observed for Mtr4 and Trf4 (Tuck and Tollervey, 2013).
 
 The Ski complex components Ski7 and Ski8 occupy the entire mRNA with increasing occupancy towards the pA site, whereas Ski2 and Ski3 show more discrete binding towards the polyA tail (Figure 3). The NMD factors Upf1 and Upf3 show binding over the entire mRNA with highest occupancy at the pA site, consistent with their role in scanning for premature stop codons in mRNAs and remodeling of the 3´ end of protein-RNA complexes and completion of mRNA decay (Franks et al., 2010). In addition, Upf2 and Nmd4 show strongest binding near the 3´ ends of mRNAs. Taken together, the distribution of cross-links along mRNA transcripts differs between degradation complexes and in some cases also between their subunits.
 
-## Surveillance of aberrant nuclear ncRNA
+### Surveillance of aberrant nuclear ncRNA
 
 Pervasive transcription of the genome leads to many short-lived aberrant RNAs that must be rapidly detected and degraded in the nucleus. We previously reported that the RNA surveillance factors Nrd1 and Nab3 strongly cross-link to aberrant upstream antisense RNA that stems from bidirectional transcription (Schulz et al., 2013). In order to find factors cross-linking to aberrant ncRNAs, we plotted the occupancy of all 30 investigated factors on the antisense strand of known mRNAs (Figure 4). For comparison, we plotted the published Nrd1 and Nab3 profiles in the first two lanes of Figure 4. The factors are involved in processing and degradation of Nrd1-unterminated transcripts, or NUTs (Schulz et al., 2013), and are expected to show similar binding to upstream antisense RNA as Nrd1 and Nab3. Indeed, we observed a similar binding pattern for all exosome subunits (Rrp6, Csl4, Rrp40, Rrp4, Rrp44) and subunits of the TRAMP4 complex (Mtr4, Air2, Trf4). Consistent with this, these factors also bind strongly to previously annotated NUTs and CUTs (Figure 2) and show strong enrichment of Nrd1 and Nab3 motifs (GTAG, CTTG) around their cross-link sites (Figure 4—figure supplement 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig4-v2.jpg)
+
+**Figure 4.:** Averaged occupancy profiles of degradation factors binding to transcripts antisense of mRNAs aligned around transcription start site (TSS) (n = 3,076, left) and around their poly-adenylation (pA) site (n = 2,705, right) in a window of [±700 nt]. Regions with annotated genes on the antisense strand are removed to avoid contaminating the profiles (Materials and methods). The color code shows the average occupancy normalized between the minimum (blue) and maximum (yellow) values per profile. On top, previously published PAR-CLIP profiles for Nrd1 and Nab3 are included for comparison (Schulz et al., 2013).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Motif analysis was performed for all degradation factors in this study. Nrd1 and Nab3 are included for comparison (Schulz et al., 2013). Occurrences of Nrd1 motif (GTAG) and Nab3 motif (CTTG) are highlighted with red. The color code shows the log2 enrichment factor of top five enriched and top 3 depleted 4-mers around PAR-CLIP cross-link sites [±8 nt]. Dark red represents strong enrichment and dark blue shows strong depletion of a 4-mer. Infeasible combinations are shown with gray.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Cross-link sites were filtered to exclude regions that were previously annotated as NUTs and CUTs (Neil et al., 2009; Schulz et al., 2013). Averaged occupancy profiles of degradation factors are shown on transcripts antisense of mRNAs aligned around the transcription start site (TSS) (n = 3,076, left) and around their poly-adenylation (pA) site (n = 2,705, right) in a window of [±700 nt]. Regions with annotated genes on the antisense strand are removed to avoid contaminating the profiles (Materials and methods). The color code shows the average occupancy normalized between the minimum (blue) and maximum (yellow) values per profile. On top, previously published PAR-CLIP profiles for Nrd1 and Nab3 are included for comparison (Schulz et al., 2013).
 
 It has been shown that Nrd1 is involved in terminating transcripts upstream of the TSS. We also observe a strong signal for binding upstream of TSS on the sense strand for Air2 and Mtr4 (Figure 3). This suggests that the TRAMP4 complex is involved in degradation of those Nrd1-regulated upstream sense transcripts. To investigate this hypothesis, we compared the binding profiles around the TSS of 459 protein-coding genes, previously annotated as having upstream Nrd1-unterminated transcripts, or NUTs (Schulz et al., 2013), with the profiles obtained for all mRNAs (Figure 3—figure supplement 2A,B). TRAMP4 and the exosome subunits show a strong preference for binding to the upstream promoter region of genes that are controlled by the Nrd1/Nab3 complex. To further confirm that this upstream signal originates from NUTs and CUTs, we excluded cross-link sites that fall within such previously annotated regions. We then compared the binding profiles generated from the remaining binding sites on mRNAs (Figure 3—figure supplement 3). Upon filtering, the signal upstream of the TSS for Air2 and Mtr4 decreases, showing that Nrd1-mediated regulation is the primary cause for this upstream signal. Comparison of the observed antisense profiles (Figure 4) with those obtained after excluding cross-link sites in previously annotated NUT and CUT regions (Figure 4—figure supplement 2) confirms that most of the signal originates from transcripts that are targeted by the Nrd1/Nab3 machinery.
 
 These results are consistent with the idea that the nuclear RNA surveillance machinery involves, in addition to Nrd1 and Nab3, the TRAMP4 complex and the nuclear exosome. Indeed, it was reported that TRAMP4 can add a short polyA tail on aberrant RNAs (Wyers et al., 2005), which may trigger degradation by the nuclear exosome. It was also recently shown that Nrd1 and Trf4 interact, providing a basis for coupling surveillance-mediated termination to RNA degradation (Tudek et al., 2014).
 
-## Interactions between RNA processing machineries
+### Interactions between RNA processing machineries
 
 To find out which groups of factors can work together in degrading transcripts, we analyzed their tendency to co-occupy the same transcripts by calculating the Pearson correlation of their occupancy across all transcripts (Figure 5A). We also analyzed their co-localization, that is the tendency of a factor to bind near to another factor’s binding sites using a range of ±40 nt from each cross-link site (Figure 5B). To relate these profiles to those of other factors, we included previously published PAR-CLIP profiles from our lab (Supplementary file 1). Profiles were available for factors that function in nuclear RNA surveillance (Nrd1, Nab3), cap binding (Cbc2), mRNA transcript elongation (Bur1, Bur2, Ctk1, Ctk2, Cdc73, Ctr9, Leo1, Paf1, Rtf1, Set1, Set2, Dot1, Spt5, Spt6, Rpb1), pre-mRNA splicing (Ist3, Nam8, Mud1, Snp1, Luc7, Mud2, Msl5), pre-mRNA 3´ processing (Pab1, Pub1, Rna15, Mpe1, Cft2; Yth1), transcription termination (Rat1, Rai1, Rtt103, Pcf11), and mRNA export (Hrp1, Tho2, Gbp2, Hrb1, Mex67, Sub2, Yra1, Nab2, Npl3) (Baejen et al., 2017; Baejen et al., 2014; Battaglia et al., 2017; Schulz et al., 2013).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig5-v2.jpg)
+
+**Figure 5.:** (A) Matrix of pairwise correlation coefficients of factor occupancies evaluated over all transcripts. (B) Matrix of co-localization based on the enrichment of factor x binding within 40 nt of the cross-link site of factor x´ (Materials and methods). (C) Two-dimensional embedding of the co-occupancies in (A) analyzed for 74 RNA processing factors with tSNE, including 30 factors from this study (highlighted in bold), and 44 factors from previous studies (Baejen et al., 2017; Baejen et al., 2014; Battaglia et al., 2017; Schulz et al., 2013) (Supplementary file 1). Factors that are plotted in close proximity show a preference for binding to the same transcripts. Clusters present factors involved in RNA synthesis (1), splicing (2), 3´ processing (3), deadenylation (4), decapping (5), nuclear ncRNA processing (6), and surveillance (7).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Matrix of pairwise correlation coefficients of factor occupancies evaluated over all transcripts. Analysis for 74 RNA processing factors, including 30 factors from this study, and 44 factors from previous studies (Baejen et al., 2017; Baejen et al., 2014; Battaglia et al., 2017; Schulz et al., 2013) (see Supplementary file 1). Dark blue represents high correlation in binding across all transcripts. Factors are sorted and color coded (left and upper border) according to their general function.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Pairwise correlation between normalized co-localization profiles of factors in a window of 40 nt centered at PAR-CLIP cross-link sites. Analysis for 74 RNA processing factors, including 30 factors from this study, and 44 factors from previous studies (Baejen et al., 2017; Baejen et al., 2014; Battaglia et al., 2017; Schulz et al., 2013) (see Supplementary file 1). High co-localization represents binding to the same position on transcripts (marked with dark red). Factors are sorted and color coded (left and upper border) according to their general function.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** tSNE plot visualizes similarities in co-localization profiles between RNA processing factors (factors are color-coded based on their function). Analysis for 74 RNA processing factors, including 30 factors from this study (marked in bold), and 44 factors from previous studies (Baejen et al., 2017; Baejen et al., 2014; Battaglia et al., 2017; Schulz et al., 2013) (see Supplementary file 1).
 
 Co-occupancy and co-localization plots for all factors can be found in Figure 5—figure supplements 1 and 2, respectively. A two-dimensional embedding of co-occupancy profiles between all these processing factors is shown in Figure 5C. It represents the degree of similarities between co-occupancy of transcripts (Figure 5A) in terms of the distance in two dimensions. The two-dimensional embedding of the co-localization matrix in Figure 5B shows a similar clustering (Figure 5—figure supplement 3). This extensive global analysis suggests which factors reside in functional complexes and which functional complexes may interact during RNA processing and degradation. The analysis recovers several established interactions between subunits of known complexes and between different complexes, providing a positive control. For example, all factors of the decapping complex show very high co-occupancy and co-localization, as do Air2 and Mtr4, which reside in the TRAMP4 complex.
 
@@ -92,13 +160,53 @@ The analysis contains a lot of new information, forcing us to focus here on a fe
 
 A fourth cluster is formed by mRNA deadenylation factors together with polyA tail binding proteins (Pab1 and Pub1), Ski7, Ski8, Trf5, and the export factor Yra1 (cluster 4). This is consistent with coupled mRNA deadenylation and subsequent degradation from its 3´ end by the exosome with the Ski or TRAMP complex as adaptors. The fifth cluster is formed by mRNA decapping factors, which cluster together with Xrn1, suggesting a coupling of mRNA decapping with degradation from the 5´ end by Xrn1 (cluster 5). The NMD-involved factors Upf1, Upf2, Upf3 and Nmd4, and Ski2 and Ski3 are also found in cluster 5. The high correlation between Xrn1 and Ski2 has been reported in a CRAC experiment (Tuck and Tollervey, 2013). The elongation factor Ctr9, the 3´ processing factor Mpe1 and the export factors Tho2, Mex67 and Nab2 are also found in cluster 5. A last cluster (cluster 6) is formed by factors involved in nuclear RNA surveillance, including Air2, Mtr4 and the Nrd1/Nab3 complex. Taken together, these findings are consistent with known functional associations and physical interactions between factors and suggest intriguing new associations to be investigated in future work.
 
-## 5´ degradation machinery senses translation efficiency
+### 5´ degradation machinery senses translation efficiency
 
 To study the link between cytosolic mRNA translation and degradation, we compared the occupancy of degradation factors on mRNAs to their average codon-optimality score (‘transcript optimality’) (Figure 6A, Figure 6—figure supplements 2–8A). We found that the 5´ decapping machinery and Xrn1 preferentially bind transcripts with low transcript optimality. In contrast, the 3´ deadenylation machinery and the exosome bind more strongly to optimal transcripts. We asked whether this correlation with codon optimality is introduced by only a few differentially bound codons or by global enrichment/depletion of optimal codons. For this purpose, we introduced a ‘codon enrichment score’, which measures a codon’s enrichment in the set of transcripts bound by the factor relative to the yeast mRNA pool. For Dcp2 this enrichment score is high on non-optimal codons, and low on optimal codons, whereas the opposite trend is observed for Ccr4 and most degradation factors (Figure 6B, Figure 6—figure supplement 1–7) This is consistent with a model that ribosome stalling on translationally inefficient codons can lead to recruitment of Dcp2 and Xrn1 and subsequent 5´ degradation of the transcript (Heck and Wilusz, 2018).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-v2.jpg)
+
+**Figure 6.:** (A) Total occupancy per mRNA (according to TIF-seq annotation) for six factors as a function of the average mRNA codon optimality (transcript optimality). The occupancy of factors from the 5´→3´ degradation machinery (decapping and Xrn1, left) decreases with increasing transcript optimality, whereas the occupancy of factors from the 3´→5´ degradation machinery (Ccr4 and Caf40 deadenylation complex subunits and exosome subunit Rrp44, right) increases with increasing average codon optimality. (Gray shading: 95% confidence intervals generated by bootstrapping mRNAs). (B) Codon enrichment in transcripts bound by Dcp2 and Ccr4 compared to the average frequency over all mRNAs. The bar colors represent codon optimality, with highly optimal codons shown in dark red. (Thin gray lines: 90% confidence intervals generated by bootstrapping coding sequences.) (C) Significance of correlations between the binding strength of degradation factors and transcript length, transcript optimality (Pechmann and Frydman, 2013), expression level (Baejen et al., 2017), and half-life derived by multivariate linear regression analysis (Materials and methods). Bars are separated according to the direction of correlation with positive correlation marked by a red background and negative correlation marked by a blue background.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) To understand binding specificity of deadenylation factors, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) To understand binding specificity of decapping factors, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) To understand binding specificity of Xrn1 on various mRNAs, the total occupancy of Xrn1 on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) To understand binding specificity of exosome components, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) To understand binding specificity of TRAMP components, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** (A) To understand binding specificity of factors in the Ski complex, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) To understand binding specificity of factors in the NMD pathway, the total occupancy of each factor on a transcript is plotted against various transcript features (Gray shading: 95% confidence intervals generated by bootstrapping transcripts). (B) Same analysis as in Figure 6B: Codon enrichment shows deviations in codon frequencies of transcripts bound by a degradation factor compared to each codon’s frequency on all coding sequences. Each bar is colored according to its codon-optimality with highly optimal codons in dark red and highly non-optimal codons in dark blue. (Gray lines: 90% confidence intervals generated by bootstrapping coding sequences).
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** Histograms on the diagonal show distributions of length, half-life (Materials and methods), expression level (Baejen et al., 2017) and transcript optimality (Pechmann and Frydman, 2013). Pairwise comparisons of features are shown as scatter plots (top right) and kernel density estimates (KDEs) of bivariate densities are shown in the bottom with Pearson correlation values (r) (Materials and methods).
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/47040/elife-47040-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** Pearson correlation values between the binding strength of degradation factors (total occupancy over each transcript) and transcript length, transcript optimality (Pechmann and Frydman, 2013), expression level (Baejen et al., 2017), and half-life derived by multivariate linear regression analysis (Materials and methods).
+
 To investigate the significance of the correlation between transcript optimality and binding of the 5´ degradation machinery, we compared the contribution of several mRNA features in explaining the occupancy patterns retrieved from PAR-CLIP experiments. Since mRNA expression, half-life, and translation optimality are inter-correlated (Figure 6—figure supplement 8), a causative effect of one of these features on binding strength may lead to correlations with all three features. To better distinguish correlation from causation, we used linear regression analysis to explore whether correlations between factor binding and optimality are better explained with other mRNA features (Figure 6—figure supplement 9). We assessed the significance of features via the likelihood ratio test on the multi-variate linear regression model for occupancy. The likelihood ratio test calculates the significance of a feature from the change of the likelihood (quantifying the prediction quality) upon removal of that feature from the regression model. For decapping enhancers (Edc2, Edc3, and Dhh1) and Xrn1, low codon optimality is the most determining feature for binding (Figure 6C). The same is true for NMD factors Upf1 and Upf3, which are known to bind non-optimal transcripts (Celik et al., 2017). This result confirms the importance of the translation efficiency for the stability of cytosolic mRNAs and strengthens our finding that transcripts with low average codon optimality are preferentially targeted by the decapping machinery and degraded from the 5´ end.
 
-## Decapping factors are enriched upon RNA degradation
+### Decapping factors are enriched upon RNA degradation
 
 Although decapping occurs at the 5´ end of mRNAs, decapping factors show a strong occupancy near the 3´ end (Figure 3). To investigate this further, we compared metagene profiles of decapping factors between stable (top 25%) and unstable (bottom 25%) transcripts, using mRNA half-life estimates (Figure 7A, Materials and methods). On both stable and unstable mRNAs, Dcp1, Edc2, Edc3, and Dhh1 show increased binding near the 3´ end, but unstable RNAs show a higher occupancy in the transcript body. The catalytically active subunit Dcp2 binds almost exclusively at the 3´ end and has a higher occupancy on unstable transcripts. Moreover, A-rich 4-mers are abundant around the proximity (eight nt) of Dcp2-cross-link sites (Figure 7C), indicating a binding preference of Dcp2 for A-rich RNA sequences. Overall, these binding patterns suggest that decapping factors are bound in transcript bodies and near the 3´ end of transcripts, and that through closed-loop formation of the mRNA they are in close proximity to the 5´ end. Decapping factors might also travel with the 5´→3´ exonuclease Xrn1 upon RNA degradation.
 
@@ -106,7 +214,7 @@ Although decapping occurs at the 5´ end of mRNAs, decapping factors show a stro
 
 **Figure 7.:** (A) Smoothed, transcript-averaged PAR-CLIP occupancy profiles aligned at TSS and pA sites [±750 nt] of unstable and stable transcripts (first and fourth quantile of half-life distribution, respectively). (B) Dependence of total occupancy of factors on the transcripts half-life. The fitting function is plotted in red and the fitted value for b is marked with a dashed gray line. (Gray shade: 95% confidence intervals generated by bootstrapping transcripts). (C) Sequence binding preference for the catalytically active subunit of decapping complex (Dcp2), illustrated with the five most enriched and the 3 most depleted 4-mers. The color code shows the log2 enrichment factor of 4-mers around PAR-CLIP cross-link sites [±8 nt]. Dark red represents strong enrichment and dark blue shows strong depletion of a 4-mer. Infeasible combinations are shown with gray. The most highly enriched field is binding AAAAU with the cross-link at the U, which is enriched over random expectation approximately 22.3 = 5-fold.
 
-Decapping factors may bind to complete mRNAs or to transcripts that are in the process of being degraded. To quantify these two behaviors, we combined our PAR-CLIP occupancy data with RNA half-life estimates (Materials and methods). We modeled the occupancy of factors on mRNA as the sum of binding to all transcripts (b) and surplus binding to transcripts that are in the process of degradation (at1/2). Therefore, we can model occupancy as a function of half-life with a linear equation (occupancy= at1/2+b). In cases where there is no surplus binding upon active degradation, that is the occupancy is the same as in intact RNAs, ‘a’ will be zero. For 5´ decapping factors, this model closely fits the occupancy patterns retrieved from our experiments (Figure 7B), other degradation factors also follow this pattern to varying degrees (Figure 6—figure supplements 1–7). In particular, Dcp2 shows a very high a/b ratio, revealing that it cross-links preferentially to transcripts that are being degraded. This analysis strongly suggests that the 5´ decapping machinery, although present to some extent on complete mRNAs, is enriched when mRNAs are degraded.
+Decapping factors may bind to complete mRNAs or to transcripts that are in the process of being degraded. To quantify these two behaviors, we combined our PAR-CLIP occupancy data with RNA half-life estimates (Materials and methods). We modeled the occupancy of factors on mRNA as the sum of binding to all transcripts ($b$) and surplus binding to transcripts that are in the process of degradation ($\frac{a}{t_{1/2}})$. Therefore, we can model occupancy as a function of half-life with a linear equation ($occupancy=\frac{a}{t_{1/2}}+b$). In cases where there is no surplus binding upon active degradation, that is the occupancy is the same as in intact RNAs, ‘a’ will be zero. For 5´ decapping factors, this model closely fits the occupancy patterns retrieved from our experiments (Figure 7B), other degradation factors also follow this pattern to varying degrees (Figure 6—figure supplements 1–7). In particular, Dcp2 shows a very high a/b ratio, revealing that it cross-links preferentially to transcripts that are being degraded. This analysis strongly suggests that the 5´ decapping machinery, although present to some extent on complete mRNAs, is enriched when mRNAs are degraded.
 
 ## Discussion
 
@@ -122,15 +230,368 @@ The exosome is involved in 3´→5´ cytoplasmic mRNA degradation, and in the pr
 
 ## Materials and methods
 
-## S. cerevisiae strain verification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Ccr4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000000019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Pop2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005335</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Not1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000000689</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Caf40_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Pan2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000003062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Pan3_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000001508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Dcp1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Dcp2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Edc2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000000837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Edc3_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000000741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Dhh1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000002319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Xrn1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000003141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Rrp6_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Csl4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Rrp40-TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Rrp4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000001111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Rrp44_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Air1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000001341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Trf5_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Mtr4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000003586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Air2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000002334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Trf4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Ski2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000004390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Ski3_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000006393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Ski7_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000005602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Ski8_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000003181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Upf1_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000004685</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Upf2_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000001119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Upf3_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000003304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae, BY4741)</td>
+      <td>Nmd4_TAP</td>
+      <td>C-terminally tagged gene (Open Biosystems, Germany).</td>
+      <td>SGD: S000004355</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: I5006, RRID:AB_1163659</td>
+      <td>IP: 0.1 mg per IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PAP anti-TAP</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: P1291, RRID:AB_1079562</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10003D</td>
+      <td>330 µl per IP</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase T1</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: EN0541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Antarctic Phosphatase</td>
+      <td>NEB</td>
+      <td>Cat#: M0289S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase OUT</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10777019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 Polynucleotide Kinase</td>
+      <td>Invitrogen</td>
+      <td>Cat#: EK0032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 RNA ligase 2, truncated KQ</td>
+      <td>NEB</td>
+      <td>Cat#: M0373S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>T4 RNA ligase 1</td>
+      <td>NEB</td>
+      <td>Cat#: M0437M</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteinase K</td>
+      <td>NEB</td>
+      <td>Cat#: P8107S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III RT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Phusion High-Fidelity PCR Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: F531S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-thiouracil</td>
+      <td>Carbosynth</td>
+      <td>Cat#: 591-28-6</td>
+      <td>1 mM final conc.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mockinbird</td>
+      <td>Roth and Torkler, 2018;https://github.com/soedinglab/Degradation_scripts</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UMI-tools</td>
+      <td>Smith et al., 2017; doi:10.1101/gr.209601.116</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Skewer</td>
+      <td>Jiang et al., 2014; doi: 10.1186/1471-2105-15-182</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Langmead et al., 2009; doi: 10.1186/gb-2009-10-3-r25</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>tSNE</td>
+      <td>Van Der Maaten and Hinton, 2008; doi: 10.1007/s10479-011-0841-3</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### S. cerevisiae strain verification
 
 Saccharomyces cerevisiae BY4741 strains harboring C-terminally tagged genes (Open Biosystems, Germany) were tested for the correctly inserted tag by Western Blotting using the Peroxidase Anti-Peroxidase (PAP; Sigma) antibody and Pierce ECL Western Blotting Substrate (Thermo Fisher Scientific, USA) (data not shown).
 
-## PAR-CLIP experiments of S. cerevisiae proteins
+### PAR-CLIP experiments of S. cerevisiae proteins
 
 PAR-CLIP was performed as described (Baejen et al., 2014; Battaglia et al., 2017). Briefly, TAP-tagged protein expressing yeast cells were grown in minimal medium (CSM mixture, Formedium, UK) supplemented with 89 µM uracil, 50–100 µM 4-thiouracil (4tU) and 2% glucose at 30°C to OD600 = 0.5. Cells were labeled in 1 mM 4tU final concentration for 4 hr. After labeling, cells were harvested, resuspended in ice-cold PBS and UV irradiated with 10–12 J/cm2 at a wavelength of 365 nm on ice and continuous shaking. Lysis was performed in lysis buffer (50 mM Tris-HCl pH 7.5, 100 mM NaCl, 0.5% sodium deoxycholate, 0.1% SDS, 0.5% NP-40) by bead beating (FastPrep−24 Instrument, MP Biomedicals, LLC., France) using silica-zirconium beads (Roth, Germany). The cleared lysate was used for immunoprecipitation with rabbit IgG-conjugated Protein G magnetic beads (Invitrogen, Germany) on a rotating wheel for 4 hr or overnight at 4°C. Beads were washed in wash buffer (50 mM Tris-HCl pH 7.5, 1 M NaCl, 0.5% sodium deoxycholate, 0.1% SDS, 0.5% NP-40). IP efficiency was controlled with part of the sample by Western Blot as shown in Figure 1—figure supplement 2. Partial digest of the cross-linked RNA was performed with 50 U RNase T1 per mL for 15–25 min at 25°C. The dephosphorylation reaction was performed in antarctic phosphatase reaction buffer (NEB, Germany) supplemented with 1 U/µL of antarctic phosphatase and 1 U/µL of RNase OUT (Invitrogen) at 37°C for 30 min. For rephosphyorylation, beads were incubated in T4 PNK reaction buffer A (Invitrogen) with a final concentration of 1 U/µL T4 PNK, 1 U/µL RNase OUT and 1 mM ATP for 1 hr at 37°C. 3´ adapter ligation was performed in T4 RNA ligase buffer (NEB) with 10 U/µL T4 RNA ligase 2 (KQ) (NEB), 10 μM 3′ adapter (5′ 5rApp-TGGAATTCTCGGGTGCCAAGG-3ddC 3′ (IDT), 1 U/µL RNase OUT, and 15% (w/v) PEG 8000 overnight at 16°C. 5´ adapter was ligated to the RNA using T4 RNA ligase buffer (NEB) with 6 U/µL T4 RNA ligase 1 (NEB), 10 μM 5′ adapter (5′ 5InvddT-GUUCAGAGUUCUACAGUCCGACGAUCNNNNN 3′, IDT), 1 mM ATP, 1 U/µL RNase OUT, 5% (v/v) DMSO, and 10% (w/v) PEG 8000 for 4 hr at 25°C and 1 hr at 37°C. Beads were boiled in proteinase K buffer (50 mM Tris-HCl pH 7.5, 6.25 mM EDTA, 75 mM NaCl, 1% SDS) at 95°C for 5 min. Proteinase K digest was performed with 1.5 mg/mL proteinase K (NEB) for 2 hr at 55°C. RNA was recovered by acidic phenol/chloroform extraction followed by ethanol precipitation in presence of 0.5 µL GlycoBlue (Invitrogen) and 100 μM RT primer (5′ CCTTGGCACCCGAGAATTCCA 3′, IDT). SuperScript III RTase was used for reverse transcription for 1 hr at 44°C and 1 hr at 55°C. NEXTflex barcode primer and universal primer were added to cDNA by PCR amplification with Phusion HF master mix (NEB). After PCR amplification, cDNA was purified and size-selected on a 4% E-Gel EX Agarose Gel (Invitrogen). Quantification on an Agilent 2200 TapeStation instrument (Agilent Technologies, Germany) and 50–75 nt single-end sequencing was performed on Illumina sequencers (HiSeq1500, HiSeq2500 and NextSeq550).
 
-## PAR-CLIP data pre-processing
+### PAR-CLIP data pre-processing
 
 Reads from PAR-CLIP experiments with replicates were merged after making sure that all samples showed high Spearman correlation values comparing binding occupancies of replicates on different genes (Figure 2—figure supplement 2). Mapping and statistical evaluation of PAR-CLIP experiments was performed using our in-house software mockinbird (Roth and Torkler, 2018). In summary, the UMI is removed from the 5´ end with UMI-tools (Smith et al., 2017), and the 3´ adapter is trimmed with Skewer (Jiang et al., 2014). Reads with traces of the 5´ adapter are discarded. The preprocessed reads are then mapped to the S. cerevisiae genome (sacCer3, version 64.2.1). After mapping PCR duplicates are removed with UMI-tools.
 
@@ -138,50 +599,92 @@ We used two alternative approaches for mapping reads using Bowtie (Langmead et a
 
 T→C transitions directly at the edge of the reads or with a Phred quality score lower than 20 are not considered as signature of protein binding as they suffer from higher technical noise. To obtain high confidence cross-link sites, we set a stringent cutoff of 0.005 for the p-value of cross-link sites and require a minimum coverage of 2 per site. Moreover, if we see the same transition in at least 75% of reads in the input library control (SRA: SRX532381) (Baejen et al., 2014), we annotate it as a single nucleotide polymorphism of our lab strain with respect to the genomic reference and remove such sites from our analysis. Finally, the occupancy of a factor on a verified cross-link site is defined as the number of transitions obtained from our PAR-CLIP experiments divided by the concentration of RNAs covering the cross-link site according to the input library control. This control coverage is measured under comparable conditions to PAR-CLIP experiments (Baejen et al., 2014). Occupancy values are capped at the 95th percentile. Subsequent analyses were performed using in-house python scripts. Mockinbird configuration files as well as the analysis scripts can be found at https://github.com/soedinglab/Degradation_scripts (copy archived at https://github.com/elifesciences-publications/Degradation_scripts).
 
-## Transcript class enrichment
+### Transcript class enrichment
 
 We analyzed the distribution of reads from high confidence cross-link sites over the genome (Figure 2A). We presented the sum of reads from 5´ and 3´ UTRs, coding sequences, and introns as the value for mRNAs. Reads that fall within genomic regions not annotated as categories analyzed here are shown with gray. These annotated transcript classes have comparable U-content, making the comparison between fractions of cross-link sites in each category possible (Figure 2—figure supplement 2).
 
-For each factor studied here, we defined enrichment scores that represent their preferences for binding to various transcript classes c, in comparison to all other factors. We use annotations for rRNA, tRNA, snoRNA, snRNA, coding sequences (CDS), from S. cerevisiae genome sacCer3, version 64.2.1. Untranslated regions around coding boundaries (5´ and 3´ UTRs) were annotated based on TIF-seq experiment (Pelechano et al., 2013). We selected the most strongly expressed isoform for each gene. We then assigned boundaries to 3´ and 5´ UTRs based on annotated CDS of the same gene. We furthermore used annotations for stable, unannotated transcripts (SUTs), cryptic unstable transcripts (CUTs), and Nrd1-unterminated transcripts (NUTs) (Neil et al., 2009; Pelechano et al., 2013; Schulz et al., 2013). We removed overlapping annotations with the following priority list: rRNA, tRNA, snRNA, snoRNA, intron, CDS, UTR, SUT, CUT, NUT. For each factor, we counted the number of high confidence reads falling in each transcript class. We then used the log2-transformed matrix and normalized it in the following way for both rows and columns to get log enrichment values that sum to zero in both rows and columns. The row- and sum-normalized enrichment score is defined as follows, where Xf,c is the number of high confidence reads for factor f that fall into transcript class c, and X'f,c=log2⁡Xf,c (Figure 2B):Xf,c′~=Xf,c′−Xf,∘′X∘,c′X∘,∘′
+For each factor studied here, we defined enrichment scores that represent their preferences for binding to various transcript classes c, in comparison to all other factors. We use annotations for rRNA, tRNA, snoRNA, snRNA, coding sequences (CDS), from S. cerevisiae genome sacCer3, version 64.2.1. Untranslated regions around coding boundaries (5´ and 3´ UTRs) were annotated based on TIF-seq experiment (Pelechano et al., 2013). We selected the most strongly expressed isoform for each gene. We then assigned boundaries to 3´ and 5´ UTRs based on annotated CDS of the same gene. We furthermore used annotations for stable, unannotated transcripts (SUTs), cryptic unstable transcripts (CUTs), and Nrd1-unterminated transcripts (NUTs) (Neil et al., 2009; Pelechano et al., 2013; Schulz et al., 2013). We removed overlapping annotations with the following priority list: rRNA, tRNA, snRNA, snoRNA, intron, CDS, UTR, SUT, CUT, NUT. For each factor, we counted the number of high confidence reads falling in each transcript class. We then used the log2-transformed matrix and normalized it in the following way for both rows and columns to get log enrichment values that sum to zero in both rows and columns. The row- and sum-normalized enrichment score is defined as follows, where $X_{f,c}$ is the number of high confidence reads for factor f that fall into transcript class c, and $X'_{f,c}=log_{2}⁡X_{f,c}$ (Figure 2B):
 
-We defined the row and sum averages of Xf,c,Xf,∘′=1C∑c=1CXf,c′,X∘,c′=1F∑f=1FXf,c′,X∘,∘′=1FC∑f=1F∑c=1CXf,c′,
+$$
+X_{f,c}^{′}~=X_{f,c}^{′}−\frac{X_{f,∘}^{′}X_{∘,c}^{′}}{X_{∘,∘}^{′}}
+$$
+
+We defined the row and sum averages of $X_{f,c}$,
+
+$$
+X_{f,∘}^{′}=\frac{1}{C}\sumc=1CX_{f,c}^{′},
+$$
+
+
+
+$$
+X_{∘,c}^{′}=\frac{1}{F}\sumf=1FX_{f,c}^{′},
+$$
+
+
+
+$$
+X_{∘,∘}^{′}=\frac{1}{FC}\sumf=1F\sumc=1CX_{f,c}^{′},
+$$
 
 F is the number of factors and C is the number of transcript classes (Figure 2B). The normalization can be interpreted as subtracting from the log enrichment matrix X´ the first singular component of its singular-value decomposition.
 
-## Metagene analysis
+### Metagene analysis
 
 We used the most abundant TIF-annotated isoform for mRNAs (Pelechano et al., 2013) as a reference. Transcripts longer than 1500 bases are chosen and aligned at their TSS or pA sites. The average occupancy per nucleotide is then calculated based on high confidence cross-link sites of each PAR-CLIP experiment. The profiles are smoothed by a moving average in a 41 nt window and the 95% confidence interval is estimated by 1500 bootstrap sampling iterations over the transcripts. To further denoise the profiles, the cross-link sites falling in snRNAs, rRNAs, and tRNAs are removed. Furthermore, to avoid ambiguous results, we made sure that the profile comes solely from the central gene. To do so, we performed the metagene analysis around the TSS on the sense strand on TIF-annotated mRNAs that have no other mRNA up to 700 bp upstream of their TSS (3193 transcripts in total). Analogously, for sense-strand pA site profiles we used mRNAs that have no nearby genes downstream of their pA site up to 700 bases on the same strand (3193 transcripts in total). For the antisense strand profiles, we applied the same criteria on the opposite strand which left us with 3076 and 3193 transcripts filtered around TSS and pA site respectively. This ensures that the observed antisense binding does not originate from neighboring or overlapping transcripts on the antisense strand. In both cases we looked at the average occupancy in a window of [±700 nt] around TSS and around pA sites. Occupancies were normalized to the maximum value, which is the background binding level for antisense profiles with no significant cross-linking to the antisense strand (Figure 3, Figure 4, Figure 3—figure supplement 3, and Figure 4—figure supplement 2). The same procedure was followed to plot metagene occupancies centered around protein-coding regions and snoRNAs from S. cerevisiae genome sacCer3, version 64.2.1 (Figure 3—figure supplement 1 and Figure 2—figure supplement 1). Similarly, CRAC coverage profiles of Xrn1, Mtr4, Trf4, and Ski2 (pre-processed as described in Tuck and Tollervey, 2013) were aligned to TIF-annotated transcripts in the same approach as described here (Figure 1—figure supplement 1).
 
-## Co-occupancy
+### Co-occupancy
 
 Co-occupancy measures the tendency of two factors to bind to the same transcripts. Occupancy of a factor on a transcript is defined as the sum of occupancies for all high confidence cross-link sites falling within this transcript. Co-occupancy of two factors is defined as the Pearson correlation over all transcripts between the occupancies of these factors (Figure 5A). We used these correlation values between all pairs of RNA processing factors to assign distances to each pair and used tSNE (Van Der Maaten and Hinton, 2008) to visualize the two-dimensional nonlinear embedding of co-occupancies for all RNA-binding proteins in our dataset (Figure 5C).
 
-## Co-localization
+### Co-localization
 
-Co-localization measures how likely two factors are to bind near each other in the transcriptome. More precisely, we first calculate the occupancy of a factor f ∈{1,…,F} around the cross-link sites of another factor f´ ([−40 nt,+40 nt] excluding the centered T). We then normalize according to the total occupancy values,zff′=∑i=1nf′(∑j=−40−1Occff′,i,j+∑j=140Occff′,i,j)co-localization(f,f′)=zff′∑fzff′∑f′zff′
+Co-localization measures how likely two factors are to bind near each other in the transcriptome. More precisely, we first calculate the occupancy of a factor f ∈{1,…,F} around the cross-link sites of another factor f´ ([−40 nt,+40 nt] excluding the centered T). We then normalize according to the total occupancy values,
+
+$$
+z_{ff^{′}}=\sumi=1n_{f^{′}}(\sumj=−40−1Occ_{ff^{′},i,j}+\sumj=140Occ_{ff^{′},i,j})
+$$
+
+
+
+$$
+co-localization(f,f^{′})=\frac{z_{ff^{′}}}{\sumfz_{ff^{′}}\sumf^{′}z_{ff^{′}}}
+$$
 
 Where, nf is the number of cross-link sites for factor f, and Occff´,i,j is the occupancy of f at position j around the ith cross-link site from factor f´ (Occff´,i,j = 0 if no verified cross-link sites exist). To improve signal-to-noise, we compute from the resulting matrix of co-localizations between all RNA-processing factors Cf,f´, the matrix of Pearson correlations between the rows of Cf,f´, (Figure 5B).
 
-## Codon-enrichment analysis
+### Codon-enrichment analysis
 
 To search for possible links between translation efficiency and RNA degradation, we checked if some degradation factors preferentially bind to translationally efficient/non-efficient transcripts. To do so we adapted the proposed normalized translation efficiency scale (Pechmann and Frydman, 2013). The authors generate a normalized optimality score for codons that incorporates the competition between supply and demand of tRNAs. The coding region for each transcript was extracted according to ORFs annotated by SGD. The codon optimality score was averaged over the whole reading frame (Figure 6A, more detailed explanation in the next section).
 
-We then checked whether mRNAs that bind to each factor are enriched or depleted in some codons compared to all mRNAs. To achieve this, we defined the following score for codon enrichment that represents deviations from average frequencies in all mRNAs,codonenrichment=∑t=1T(occ(t)∑t′=1Tocc(t′)×Fc,t)1T∑t=1TFc,t
+We then checked whether mRNAs that bind to each factor are enriched or depleted in some codons compared to all mRNAs. To achieve this, we defined the following score for codon enrichment that represents deviations from average frequencies in all mRNAs,
 
-Here T is the number of mRNA transcripts, Fc,t is the fraction of the codon c in transcript t, and occ(t)  is the total occupancy of the factor on transcript t. 90% confidence intervals were generated by bootstrapping: we sampled with replacement 1000 times the same number of mRNAs from the total set as in total, and for each set we recalculated the codon enrichment score. We colored the bars based on the previously ranked optimality of codons (Pechmann and Frydman, 2013) (Figure 6A, Figure 6—figure supplements 1–7).
+$$
+codonenrichment=\frac{\sum_{t=1}^{T}(\frac{occ(t)}{\sum_{t^{′}=1}^{T}occ(t^{′})}\timesF_{c,t})}{\frac{1}{T}\sum_{t=1}^{T}F_{c,t}}
+$$
 
-## Relating occupancies to various transcript features
+Here T is the number of mRNA transcripts, $F_{c,t}$ is the fraction of the codon c in transcript t, and$occ(t)_{}$ is the total occupancy of the factor on transcript t. 90% confidence intervals were generated by bootstrapping: we sampled with replacement 1000 times the same number of mRNAs from the total set as in total, and for each set we recalculated the codon enrichment score. We colored the bars based on the previously ranked optimality of codons (Pechmann and Frydman, 2013) (Figure 6A, Figure 6—figure supplements 1–7).
+
+### Relating occupancies to various transcript features
 
 We analyzed the correlation of the occupancy of all factors with transcript length, codon enrichment of the transcript, expression level, transcript stability, and polyA tail length. For expression, we used an RNA-seq experiment of wild-type yeast (SRA: SRX532381) (Baejen et al., 2017) and mapped the reads to mRNAs. We present the average number of reads per base as an estimate for gene expression. For half-life calculations, we used published yeast 4tU-seq (GEO: GSM2199309) and RNA-seq experiments (SRA: SRX532381) (Baejen et al., 2017). Transcript half-life is estimated with an optimized method that will be published elsewhere (Hofmann et al., unpublished).
 
 Since there are only few transcripts with very low or very high half-life, codon optimality, and expression (Figure 6—figure supplement 8), we performed the analysis on a subset of mRNAs where the transcript property lies between the 5% and 95% quantiles. We then compared the total occupancy of degradation factors on each mRNA relative to such transcript features (Figures 6A and 7B, and Figure 6—figure supplements 1–7). We show 95% confidence intervals generated by bootstrapping mRNAs in gray shade.
 
-We checked whether such correlations originate from the feature of interest or merely shows up due to correlations between this feature and others (Figure 6—figure supplement 8). We used a multivariate linear regression to model total occupancy as a linear function of these four features:occupancy′(t)∼length+optimality+expression+halflife
+We checked whether such correlations originate from the feature of interest or merely shows up due to correlations between this feature and others (Figure 6—figure supplement 8). We used a multivariate linear regression to model total occupancy as a linear function of these four features:
 
-In cases where the correlation is a direct effect from our feature of interest, we expect to lose significantly on our prediction when this variable is taken out of the equation. Therefore, we use p-values representing the importance of each feature in this linear regression as a score representing the significance of its contribution in explaining the final occupancies. Occupancy correlated strongly with transcript length, which dominated as explanatory variable in this regression, trivially because most factors bind along the entire transcript. To eliminate this trivial dependency, we used occupancy per nucleotide, denoted occupancy', as the target variable in our regression (Figure 6C).
+$$
+occupancy^{′}(t)∼length+optimality+expression+halflife
+$$
 
-## Motif enrichment analysis
+In cases where the correlation is a direct effect from our feature of interest, we expect to lose significantly on our prediction when this variable is taken out of the equation. Therefore, we use p-values representing the importance of each feature in this linear regression as a score representing the significance of its contribution in explaining the final occupancies. Occupancy correlated strongly with transcript length, which dominated as explanatory variable in this regression, trivially because most factors bind along the entire transcript. To eliminate this trivial dependency, we used occupancy per nucleotide, denoted $occupancy'$, as the target variable in our regression (Figure 6C).
 
-To find sequence preferences for binding events of degradation factors, we counted 4-mers in a window of [±5 nt] intervals around high confidence cross-link sites of PAR-CLIP experiments. Based on this count table, the enrichment score for each 4-mer was calculated using the following formula,enrichment(4-mer,i)=n4-mer,i+1N×Πj=14P4-mer[j]
+### Motif enrichment analysis
 
-Here N is the number of cross-link sites below the cut-off p-value (we used a maximum of 5000 cross link sites), n4mer, i is the number of observed 4-mers at position i in the set of binding sequences aligned at their cross-link site i=0, 4-mer[j] is the base at the j’th position of the 4-mer, and Pb is the probability of observing base b. We used the probabilities: PA = PT = 0.31 and PC = PG = 0.19 based on frequencies in yeast genome and corrected for the T bias at the cross-link site (Figure 4—figure supplement 1).
+To find sequence preferences for binding events of degradation factors, we counted 4-mers in a window of [±5 nt] intervals around high confidence cross-link sites of PAR-CLIP experiments. Based on this count table, the enrichment score for each 4-mer was calculated using the following formula,
+
+$$
+enrichment(4-mer,i)=\frac{n_{4-mer,i}+1}{N\timesΠ_{j=1}^{4}P_{4-mer[j]}}
+$$
+
+Here N is the number of cross-link sites below the cut-off p-value (we used a maximum of 5000 cross link sites), $n_{4mer,i}$ is the number of observed 4-mers at position i in the set of binding sequences aligned at their cross-link site i=0, 4-mer[j] is the base at the j’th position of the 4-mer, and Pb is the probability of observing base b. We used the probabilities: PA = PT = 0.31 and PC = PG = 0.19 based on frequencies in yeast genome and corrected for the T bias at the cross-link site (Figure 4—figure supplement 1).

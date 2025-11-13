@@ -19,12 +19,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02r109517 Department of Pharmacology, Weill Cornell Medicine New York United States
-2. https://ror.org/02r109517 Brain and Mind Research Institute, Weill Cornell Medicine New York City United States
-3. https://ror.org/02yrq0923 Memorial Sloan Kettering Cancer Center New York United States
+1. Department of Pharmacology, Weill Cornell Medicine New York United States ([ROR:02r109517](https://ror.org/02r109517))
+2. Brain and Mind Research Institute, Weill Cornell Medicine New York City United States ([ROR:02r109517](https://ror.org/02r109517))
+3. Memorial Sloan Kettering Cancer Center New York United States ([ROR:02yrq0923](https://ror.org/02yrq0923))
 4. Bruker Daltonics Billerica United States
-5. https://ror.org/040cnym54 Pennington Biomedical Research Center, Louisiana State University Baton Rouge United States
-6. https://ror.org/05bnh6r87 Cornell University, Department of Molecular Biology & Genetics Ithaca United States
+5. Pennington Biomedical Research Center, Louisiana State University Baton Rouge United States ([ROR:040cnym54](https://ror.org/040cnym54))
+6. Cornell University, Department of Molecular Biology & Genetics Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
 
 † Corresponding author
 
@@ -42,29 +42,104 @@ To fill this gap, we developed an untargeted computational R workflow to image r
 
 ## Materials and methods
 
-## Sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mouse brain</td>
+      <td>Animal facility Weill Cornell Medicine</td>
+      <td>n/a</td>
+      <td>Fresh frozen</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>Mouse adipose</td>
+      <td>Animal facility Weill Cornell Medicine</td>
+      <td>n/a</td>
+      <td>Fresh frozen</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-(1-Naphthyl)ethylenediamine dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # 222488</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>9-Aminoacridine</td>
+      <td>Millipore Sigma</td>
+      <td>Cat # 92817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Indium tin oxide</td>
+      <td>ITO; (Delta Technologies)</td>
+      <td>Cat # CB-90IN-S111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,5-Diaminonaphthalene</td>
+      <td>Millipore Sigma</td>
+      <td>Cat # 56451</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample preparation
 
 Brain and adipose tissues from a mitochondrial myopathy model of cytochrome c oxidase assembly factor heme A:farnesyltransferase COX10 knockout (COX10 KO) and wildtype (WT) mice were frozen in liquid nitrogen and stored at −80 °C until processing. Entire mouse decidua dissected from pregnant females at gestation day 8.5 were embedded in 2% carboxymethylcellulose, frozen in liquid nitrogen, stored at –80 °C, and sectioned at 12 µm nominal thickness. Brain cryosections (n=4 per group) were cut at 10 µm and adipose at 20 µm thickness (n=3 for wildtype control and n=4 for COX 10 KO), mounted on conductive slides coated with indium tin oxide (ITO; Delta Technologies; cat # CB-90IN-S111) and stored at –80 °C. On the day of MALDI MS data acquisition, ITO-slides with tissue sections were transferred to a vacuum chamber and dried for 30 min prior to deposition of desired matrices for imaging: N-(1-naphthyl)ethylenediamine dihydrochloride (NEDC; 10 mg/ml in 75% methanol) for murine brain and E8.5 embryos; 1,5-diaminonaphthalene (DAN, 2 mg/mL in 50% acetonitrile) for murine COX10 KO adipose tissues, and 9-aminoacridine (9AA, 5 mg/ml in 85% Ethanol) for murine hippocampus. All matrices were delivered using an HTX TM-Sprayer (HTX Technologies LLC, NC) with optimized spraying parameters for each individual matrix. Matrix-coated tissue sections were dried in vacuum desiccator for 20 min before MALDI MSI data acquisition in negative ion detection mode.
 
-## MALDI MSI data acquisition and processing
+### MALDI MSI data acquisition and processing
 
 MALDI MSI data were acquired at raster width of either 10 µm or 80 µm using a 7T scimaX-MRMS mass spectrometer (Bruker Daltonics, USA) equipped with a SmartBeam II laser and a MALDI source. Peak-picked MALDI-IMS data were imported into SCiLS Lab 2024a software (SCiLS, Bremen, Germany) for image visualization. Compound identifications were assigned based on both accurate mass (<2 ppm mass accuracy) and isotope pattern matches to free source metabolite and lipid databases, including the Human Metabolome Database (HMDB), KEGG and LIPIDMAPs. An in-house R-code developed for the programmable SCiLS Lab Application Interface (SCiLS lab API) was used for fast export of raw pixel-by-pixel metabolite and unknown mass spectral abundance data from ROIs and whole tissue sections. In commercial processing software where missing values either have no value or have solid zero in abundance, we need to annotate the missing value for ratio calculation. Towards this, we first obtain the minimum abundance of a particular m/z among all pixels with detectable abundance (i.e. excluding missing values), then use 1/5 this minimum value as a threshold to annotate missing value. Pixel-by-pixel metabolite ratios between any two detected metabolites/features were calculated by applying R combination and ratio function to the annotated pixel data (see R code). Differential metabolite ratios among ROIs were visualized in R and exported as either an image or.PDF file. Figure 1 depicts a schematic workflow using SCiLS Lab API for metabolite ratio imaging and associated multivariate analysis among ROIs. Notably, a series of SCiLS lab API R codes for ratio imaging visualization, data analysis, and UMAP segmentation are available for download on GitHub (https://github.com/qic2005/Untargeted-mass-spectrometry-ratio-imaging copy archived at qic2005, 2024). For MSI data acquired from other non-Bruker MS imaging instruments, R codes are also available to extract pixel data directly from.imzml file, a common data format for MS imaging, using Cardinal 3.0 free-source software and the resulting pixel data can be applied for ratio imaging (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig1-v1.jpg)
+
+**Figure 1.:** For SCiLS lab MSI data, the execution of R codes starts with connecting a local SCiLS lab session project in R studio. Installation of SCiLS lab is required for this connection. After pixel data for a feature list is generated and exported as an Excel csv file, SCiLS lab installation is not required for downstream ratio imaging and data analysis, except for the potential writing of a spot image with labels back to SCiLS lab. For other types of MSI data, R code execution extracts pixel data from imzml file for subsequent ratio imaging and analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ROIs of COX 10 KO (left 4 sections) and WT (right 4 sections) brain outer cortex; (B) PLS-DA score plot showing classification of COX 10 KO and WT cortex pixels using Metaboanalyst 5.0 (https://www.metaboanalyst.ca/MetaboAnalyst/ModuleView.xhtml). (C) Variable importance in projection (VIP) scores of metabolites from PLS-DA shown in (B). The colored boxes on the right indicate the relative concentrations of the corresponding metabolite in COX 10 KO and WT. (D) Matched pathways showing p values from the pathway enrichment analysis and pathway impact values from the pathway topology analysis. Differential metabolites imaged in cortex of COX 10 KO vs WT brain and metabolite quarries from KEGG mouse metabolic pathway were used in this analysis. (E) Metabolite set enrichment analysis showing enrichment ratio of metabolic pathway metabolites. Differential metabolites from cortex of COX 10 KO vs WT and the Small Molecule Pathway Database (SMPDB) were used for this analysis. The enrichment analysis resembles gene set enrichment analysis in transcriptomics. Panel F: Metabolite correlation heatmap generated from differential metabolites in cortex of COX 10 KO and WT. Metaboanalyst 5.0 was used for analyses shown in (B-E) and Agilent MassProfiler Professional 15.1 was used for analysis in shown in (F).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** MSI Data was acquired at 80 µm using NEDC as matrix.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A-C) Images of mouse brain and mimetic brain sections spiked with stable isotope labeled [1- 13C] lactate (A), [U- 13C6]glucose (B) and [1- 13C]ascorbate (C). The concentrations of stable isotope standards from middle to left column of the slide are: 0, 1, 2.5, 5.0, 7.5, 10.0, 12.5, 15.0 mM for [1-13C] lactate; 0, 0.25, 0.5, 1.0, 2.5, 5.0, 7.5, 10 mM for [U-13C6]glucose; and 0, 0.05, 0.10, 0.25, 0.50, 0.75, 1.0, 1.5 mM for [1-13C]ascorbate. Panels (D-F) Calibration curves for [1-13C] lactate (D), [U-13C6]glucose (E) and [1- 13C]ascorbate (F). Panels (G-L) Ratio images from abundance ratio (upper image) verse concentration ratio (lower image).
+
 ## Results
 
-## Generation of an untargeted spectral feature list for export of pixel data to enable downstream metabolite ratio analysis
+### Generation of an untargeted spectral feature list for export of pixel data to enable downstream metabolite ratio analysis
 
 Using SCiLS lab API, we sought to establish new data processing and analysis features for use in metabolite ratio imaging. To this end, we developed an R code that engenders fast export of raw or normalized pixel-by-pixel feature abundance data for all sections and/or regions of interest (ROIs) in an Excel.csv file format. A targeted feature list from metabolic pathways of interest can also be imported into SCiLS lab as.mir files, generated using either a Python program or a SCiLS lab feature list with manual ID annotation of peak-picked spectral data. Feature lists from multiple pathways of interest can be saved for exclusive ratio imaging of these designated pathways. Once pixel data are available, a SCiLS lab license is no longer required for metabolite ratio imaging and downstream statistical analysis, except for label and spot image generation within the SCiLS lab environment. Notably, Imaging Mass Spectrometry Markup Language (imzml) is a common data format for MSI. It was developed to allow the flexible and efficient exchange of large MS imaging data between different instruments and data analysis software (Schramm et al., 2012). It contains two sets of data: the mass spectral data which is stored in a binary file (.ibd file) to ensure efficient storage and the XML metadata (.imzml file) which stores instrumental parameters, sample details. Therefore, imzml file can not be directly used. We also developed codes to generate Excel format pixel data from.imzml files of other vendor’s proprietary MSI software are also amenable to the ratio imaging strategy described herein. Therefore, we include a R code for extracting pixel data directly from imzml file, regardless of source of datafile from different vendors. Notably, pixel-by-pixel metabolite imaging data can also be co-registered with other omics imaging datasets obtained from a sequential serial cryosection, independent of the need for a SCiLS lab license.
 
 Given the lack of need for proprietary software to export pixel-by-pixel data, an individual feature list provides MALDI-MS instrument/application flexibility. Additionally, considering each pixel as a replicate from a defined ROI, exported pixel data can be readily used with either vendor-specific or non-proprietary metabolomics data software platforms for biomarker discovery and multivariate spatial metabolomics analysis such as principal component analysis (PCA), partial least-squares discriminant analysis (PLS-DA), hierarchical clustering (HCA), ROC curve assessment, VIP scoring, and pathway enrichment (Pang et al., 2022; Thompson and Moseley, 2023; Powell and Moseley, 2023; Sud et al., 2016; Rodeiro et al., 2023; Du et al., 2023; Dekermanjian et al., 2021; Plyushchenko et al., 2022; Misra, 2021; Chang et al., 2021; O’Shea and Misra, 2020; Adams et al., 2020; Misra, 2020). Figure 1—figure supplement 1 shows an exemplary conversion of ROI pixel data to formats compatible with import into MetaboAnlayst (Pang et al., 2022) and Agilent Mass Hunter Professional. For the presented data, brain outer cortex regions were selected for comparison between mitochondrial cytochrome oxidase 10 (COXKO) and WT (n=4 for each genotype) mice.
 
-## MSI ratio imaging requires missing pixel abundance annotation but not absolute metabolite quantification
+### MSI ratio imaging requires missing pixel abundance annotation but not absolute metabolite quantification
 
 Missing value annotation is conventionally employed for interpretation of omics data, including metabolomics (Shahjaman et al., 2021; Wei et al., 2018; Jin et al., 2018; Di Guida et al., 2016). Spatial metabolomics data acquired from MALDI and DESI MSI studies are subjected to missing value annotation when features are undetected in a given pixel. Given the differences in cell types and ionization efficiency/suppression across tissue regions, missing values are more common in spatial MSI than LC/MS data from the same tissue, especially in the case of FT-ICR-MS, which uses a peak-picking threshold to filter out the bulk of signal noise generated from Fourier data transformation. To prevent potential inclusion of a missing value as ‘zero’ abundance for imaging data analyses that include ROI metabolite mean abundance comparisons, we annotate missing values with 1/5 the minimum value quantified in all pixels in which it was detected. Figure 1—figure supplement 2A-B show the indistinguishable images of exemplary metabolites before and after missing value annotation (Pang et al., 2022). Therefore, pixel-wise missing value annotated data was used for all statistical analyses, image plots, and metabolite ratio imaging described herein. To provide reciprocal and complementary images for easier ROI access and visualization, we consider images for both A/B and B/A ratios (Figure 1—figure supplement 2C-D).
 
 It is possible that differences in ionization efficiency among metabolites may result in differential images obtained from ion abundance ratio compared to concentration ratio. To test this, we quantify the absolute concentration of brain glucose, lactate, and ascorbate using stable isotope standards spiked into the mimetic tissue sections prepared from carboxymethylcellulose (CMC) embedded brain homogenate. Figure 1—figure supplement 3 shows similar ratio images among lactate, glucose, and ascorbate obtained from abundance data compared to quantified concentration data. Although stable isotope standards and mimetic tissue model are often used to obtain quantitative concentration of metabolite/lipid of interest, it is not applicable for untargeted metabolite ratios that include an assessment of structurally undefined species. Note that the utilization of our strategy is to provide untargeted (and targeted) ratio imaging as a hypothesis generation tool and our quantification data indicate this use does not require absolute metabolite quantification.
 
-## Pixel-by-pixel ratio imaging reduces cryosection preparation artefacts and improves data interpretation
+### Pixel-by-pixel ratio imaging reduces cryosection preparation artefacts and improves data interpretation
 
 Preparing cryosections from non-fixed and non-embedded tissues is a technically demanding procedure prone to sectioning artefacts (Rieppo et al., 2004). Tissue freezing, cryo-cut temperature variation, section thickness irregularities, and tissue storage can all affect imaging performance. Pixel-by-pixel ratioing of metabolite/feature pairs offers the important advantage of reducing artefacts caused by non-uniform matrix coating of cryosections and other elements of sample processing, especially for slides containing multiple tissue cryosections. This is because as tissue cryosections are thaw-melted onto slides individually, the layout sequence results in variable waiting times for completion of the mounting process. Thus, individual cryosections undergo varying degrees of metabolically-active metabolite degradation, even at the typical –20 °C cryotome operating temperature.
 
@@ -72,13 +147,13 @@ Figure 2A–C and Figure 1—figure supplement 2B compare images for lysophospha
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig2-v1.jpg)
 
-**Figure 2.:** (A-C) Blurry and diffused images of LPEs with ω3 (A–B) and ω6 (C) polyunsaturated fatty acyl chains; (D-F) sharper ratio images of ω3 fatty acid containing LPE 20:4 and LPE 22:4 to ω6 fatty acid containing LPE 22:6; (G) ratio image of ω6 arachidonic acid (FA 20:4) to ω3 docosahexaenoic acid (FA 22:6) is consistent with the identified abundance ratio distributions for LPE 20:4 and LPE 22:4 to LPE 22:6.Figure 2—source data 1.
+**Figure 2.:** (A-C) Blurry and diffused images of LPEs with ω3 (A–B) and ω6 (C) polyunsaturated fatty acyl chains; (D-F) sharper ratio images of ω3 fatty acid containing LPE 20:4 and LPE 22:4 to ω6 fatty acid containing LPE 22:6; (G) ratio image of ω6 arachidonic acid (FA 20:4) to ω3 docosahexaenoic acid (FA 22:6) is consistent with the identified abundance ratio distributions for LPE 20:4 and LPE 22:4 to LPE 22:6.
 
 Notably, LPEs with polyunsaturated acyl chains of 20:4, 22:4, and 22:6 shown in Figure 2 predominantly originate from PLA1 action. As shown, images of these individual LPEs are relatively diffuse and variable among replicates of the same genotype (Figure 2A–C). A relatively higher abundance of these species was imaged in cross-sections of the striatal ventral region of the brain, except for LPE 22:6 in COX10 KO brain, which was more abundant in the outer cortex. Note that 20:4 and 22:4 acyl chains are derived from the ω6 fatty acids arachidonic acid (AA) and adrenic acid, whereas 22:6 acyl chains originate from an ω3 fatty acid, docosahexaenoic acid (DHA).
 
 Ratio images of LPE 20:4 and LPE 22:4 to LPE 22:6 indicate higher relative abundance of ω6 to ω3 LPEs in the striatum ventral region compared to the outer cortex (Figure 2D–F), consistent with the ratio distribution of arachidonic acid to docosahexaenoic acid (Figure 2G). Compared to diffuse non-ratio images of individual LPEs, the ratio images of ω6 to ω3 LPEs show an enhanced brain structure with markedly sharper definition. Despite variable LPE values imaged between COX10 KO and WT brains, overall LPE ratios were unchanged between genotypes. Note that we purposely chose this set of non-ideal section quality and imaging data to demonstrate the clear benefit of ratio imaging in obviating potential sample processing artefacts, thus improving image quality for data interpretation.
 
-## Targeted metabolite ratio imaging may serve as a proxy for spatial enzyme and pathway activities among similar regions
+### Targeted metabolite ratio imaging may serve as a proxy for spatial enzyme and pathway activities among similar regions
 
 For a given enzyme, pixel-wise specific enzyme activity may be inferred from pixel-by-pixel ratio imaging of substrate-product metabolite pairs. However, due to differences in ionization efficiency, comparison of pathway activity can only be limited to the equivalent pixel/regions of tissues from different biological groups, given the assumption that ionization efficiency is identical for equivalent pixel from different tissue sections (i.e. same cell type and microenvironment). Notably, metabolites with similar functional structure in the same pathway are better fit for this application. For instance, fatty acids with different chain length, phospholipid with same head groups, nucleotide phosphates with different phosphorylation status are expected to have similar ionization efficiency in the same tissue pixel/region. Examples of metabolite ratios that may serve as readouts for comparative enzyme activities include glutamine to glutamate for glutaminase (GLS), aspartate to asparagine for asparagine synthase (ASNS), aspartate to N-acetylaspartate for N-acetyltransferase 8 (NAT8L), inosine monophosphate (IMP) to adenosine monophosphate (AMP) for AMP deaminase (AMPD), lactate to pyruvate for lactate dehydrogenase (LDH), N-acetyl-aspartyl-glutamate (NAAG) to N-acetyl-aspartate for NAAG synthetase (NAAGS), carnosine to histidine for carnosine synthase (CARNS), hexose to hexose phosphate for hexose kinase (HK), glutamate to oxyproline for 5-oxoprolinase (OPLAH), and glutathione disulfide to glutathione for glutathione peroxidase (GPX). Note that ratio image serves as a hypothesis generation tool, an orthogonal tool may be needed for a higher degree of biological confidence.
 
@@ -90,7 +165,7 @@ Figure 3 demonstrates the benefit of imaging metabolically relevant metabolite r
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig3-v1.jpg)
 
-**Figure 3.:** (A) Annotated drawing of E 8.5 embryo tissue, derived from the section adjacent to imaged section. (B-H) Ratio of substrate/ product pairs of glycolysis, fatty acid and lipid metabolism that imply compartmented activities for hexokinase (B), fatty acid desaturation (C), fatty acid chain elongation (D), fatty acid composition (E–F) and phospholipase activity (G–H) in E 8.5 embryos. (I-Q) Ratio images showing relative oxidative stress (I), adenine nucleotide energy levels (J–L), purine nucleotide cycle activity (M–N), fatty acid desaturation (O), synthesis (P), ω3:ω6 FA ratio (Q) in neurons (purple arrow), compared to other cells in mouse hippocampus.Figure 3—source data 1.
+**Figure 3.:** (A) Annotated drawing of E 8.5 embryo tissue, derived from the section adjacent to imaged section. (B-H) Ratio of substrate/ product pairs of glycolysis, fatty acid and lipid metabolism that imply compartmented activities for hexokinase (B), fatty acid desaturation (C), fatty acid chain elongation (D), fatty acid composition (E–F) and phospholipase activity (G–H) in E 8.5 embryos. (I-Q) Ratio images showing relative oxidative stress (I), adenine nucleotide energy levels (J–L), purine nucleotide cycle activity (M–N), fatty acid desaturation (O), synthesis (P), ω3:ω6 FA ratio (Q) in neurons (purple arrow), compared to other cells in mouse hippocampus.
 
 As an additional example, we present mouse hippocampus MSI findings, which show that ratio imaging may can provide additional cell-type specific metabolic information at cellular (10 µm) spatial resolution compared to individual metabolite imaging alone. For example, to assess the ATP phosphorylation status. Notably, neurons have higher energy requirements and prefer mitochondrial oxidative phosphorylation as their dominant energy source. In accord with this expectation, higher ATP/ADP, ADP/AMP, IDP/IMP ratios (Figure 3J–L) are observed in neurons of mouse hippocampus, while indicators of oxidative stress (Figure 3I) and fatty acid synthesis (Figure 3P) were unchanged in neurons compared to other cell types. Elevated SCD and AMPD activities were also predominantly observed in neurons (Figure 3M–N) compared to other cell types, consistent with SCD being a novel regulator of neuronal cell proliferation and differentiation and their reported immunocytochemical results (Knecht et al., 2001). Although a higher ratio of ω3 to ω6 fatty acids predicts improved hippocampus-dependent spatial memory and cognitive status in older adults (Andruchow et al., 2017), ratio imaging surprisingly shows that these neurons display a relatively lower level of DHA (ω3) to AA (ω6) fatty acids vs. other cell types in mouse hippocampus. Thus, ratio imaging findings have the potential to challenge existing concepts and guide further investigation.
 
@@ -98,27 +173,199 @@ Adipose tissues store body fat as neutral triglyceride and represent the chief e
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig4-v1.jpg)
 
-**Figure 4.:** COX 10 KO, left 4 sections; WT, right 3 sections. Imaging data was acquired at 80 µm spatial resolution. (A) Decreased abundance ratio of FA 22:6 (DHA, ω3 fatty acid) to FA 20:4 (AA, ω6 fatty acid) in COX 10 KO adipose tissue. Panels (B-C) Decreased fatty acid FA 16:0 and FA 18:0 desaturation in COX 10 KO adipose. (D-G) Altered desaturated fatty acid abundance ratios for lysophospolipids and phospholipids in COX 10 KO adipose tissue. Panels (H-J) Elevated fatty acid synthesis inferred by free fatty acid and phospholipids ratios, considering FA 18:0 to FA 16:0 (H–I) and FA 20:1 to 18:1 (L) in COX 10 KO adipose. Panels (K-L) Elevated PLA2 (K) and PLA1(L) activities implied by the elevated ratio of Lyso PA to PA in COX 10 KO adipose.Figure 4—source data 1.
+**Figure 4.:** COX 10 KO, left 4 sections; WT, right 3 sections. Imaging data was acquired at 80 µm spatial resolution. (A) Decreased abundance ratio of FA 22:6 (DHA, ω3 fatty acid) to FA 20:4 (AA, ω6 fatty acid) in COX 10 KO adipose tissue. Panels (B-C) Decreased fatty acid FA 16:0 and FA 18:0 desaturation in COX 10 KO adipose. (D-G) Altered desaturated fatty acid abundance ratios for lysophospolipids and phospholipids in COX 10 KO adipose tissue. Panels (H-J) Elevated fatty acid synthesis inferred by free fatty acid and phospholipids ratios, considering FA 18:0 to FA 16:0 (H–I) and FA 20:1 to 18:1 (L) in COX 10 KO adipose. Panels (K-L) Elevated PLA2 (K) and PLA1(L) activities implied by the elevated ratio of Lyso PA to PA in COX 10 KO adipose.
 
-## Metabolite ratios uncover genotype-specific and spatially resolved tissue regions
+### Metabolite ratios uncover genotype-specific and spatially resolved tissue regions
 
 Conventional MSI depicts relative spatial abundance of metabolite features in tissue regions. For defined structures in tissues such as brain, kidney and prostate, metabolite images can potentially recognize discrete tissue structures, under the condition that ionization efficiency and/or absolute abundance differences do indeed exist among these structurally defined loci. In contrast, pixel-by-pixel metabolite ratio imaging almost invariably resolves distinct tissue structures but also uncovers fine structure and anatomically unrecognized regions not revealed by individual metabolite imaging alone.
 
 Using COX10 KO and WT mouse coronal brain sections as an example, we observed that individual glutamate, aspartate and glutamine distribution images failed to show a clear structural distribution, (Figure 5A–C). However, ratio imaging revealed a 1.59-fold increase in aspartate to glutamate ratio in an unusual ‘moon arc’ region across the amygdala and hypothalamus (mean abundance 0.563 in 6345 pixels) relative to the rest of the coronal brain (mean abundance 0.353 in 45742 pixels, Figure 5D). Similar but different arc-like structures are encompassed within the ventral thalamus and hypothalamus, wherein glutamate to glutamine ratio show a 1.63-fold increase in intensity compared to the rest of the brain (mean abundance of 0.695 in 7108 pixels vs 0.428 in 44979 pixels, Figure 5E), while relative glutamine to aspartate abundance appears enriched in the striatum (Figure 5F). Thus, ratio imaging not only improves image quality for regional/cell-selective assessment of metabolite distributions but also offers an opportunity to discover new differentially metabolic regions with biological relevance. Note that the enrichments of aspartate to glutamate and glutamine to glutamate near the thalamus, nucleus accumbens (NAc) and hypothalamus (and visualization of their reciprocal ratio images) were robust and consistently reproduced in MALDI-MSI experiments using an independent cohort of COX10 KO and WT mouse brains (Figure 5G–H). Enrichment of glutamate to aspartate in the cortex region was further confirmed in horizontal and sagittal brain sections from random mouse brains (Figure 5I–J).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig5-v1.jpg)
+
+**Figure 5.:** (A-C) Images of glutamine, glutamate and aspartate in coronal sections of COX 10 KO (left 4 sections) and WT (right 4 sections) mouse brains. (D-F) Differential abundance ratios of aspartate, glutamate and glutamine observed in defined regions of the COX 10 KO and WT brains (p<0.0001, two-tailed Student t-test with Benjamini-Hochberg correction). Panels G-H: Reciprocal and differential aspartate to glutamate ratio and Arc-like NAC containing region was repeated in a separate group of COX 10 KO (left 4 sections) and WT (right four sections) mouse brains. (I-J) Enrichment in the glutamate to aspartate ratio in the cortex region of mouse brain, as revealed in horizonal and sagittal sections.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig5-figsupp1-v1.jpg)
+
 Considering the above, it is notable that aberrations in glutamate, glutamine, and aspartate homeostasis are all implicated in neurological disease (Hertz and Rothman, 2017; Andersen et al., 2022). Aspartate serves as an amino donor for glial glutamate formation (Pardo et al., 2011), and the hippocampal aspartate to glutamate ratio has been related to changes in brain glucose (Szerb and O’Regan, 1985). Glutamine is synthesized from glutamate and ammonia by the catalytic action of glutamine synthetase (GS) in glial cells of the brain, while it is also taken into neurons and generates glutamate and ammonia by the catalytic action of glutaminase. The glutamate-glutamine cycle is closely linked to cellular energy metabolism (Andersen et al., 2022), and ratios between neurotransmitters (GABA, glutamine, and glutamate) have been used in MRS studies to probe neurological disease mechanisms and progression (Kantorová et al., 2022; Kantorová et al., 2021). Specifically, ratios among glutamine, glutamate, and aspartate have been implicated in memory function (Limón et al., 2021), schizophrenia, depression, alcoholism and motivated performance via NAc (Hangel et al., 2020). Given the biological significance of these ratios, spatial ratio imaging can reveal previously unrecognized ROI and relative abundance ratio differences between disease and normal physiological states. In COX10 KO and WT brains, differential aspartate to glutamate and glutamine to glutamate ratios point to an interesting linkage between muscle health and brain neurotransmitter signaling: mitochondrial myopathy alters glutamine, glutamate and aspartate signaling near the NAc. This unusual finding is in accord with and supportive of our recent discovery of a coordinated multiorgan metabolic response that extends to the brain and is anticipated to play a role in human mitochondrial myopathy disease states (Southwell et al., 2023).
 
-## Spatial correlation of ratio and non-ratio pixel-by-pixel data as an additional discovery tool
+### Spatial correlation of ratio and non-ratio pixel-by-pixel data as an additional discovery tool
 
 Combining pixel-by-pixel ratio and non-ratio data offers an additional tool for spatial metabolism discovery. Despite that MALDI MSI is a soft ionization technique, it generates various adduct ion clusters and possible fragment ions from common neutral losses. Unknown non-ratio metabolite feature data in a given ROI can be combined with known metabolite ratios, pixel-by-pixel, to discover correlations between unknowns and metabolite ratios that inform on a specific enzyme activity or metabolic pathway. This application can reveal unrecognized but significantly correlated pathway metabolites and metabolite ratios, thus enabling recognition of unknown metabolites with relevance to specific pathways of interest.
 
 Using COX10 KO and WT mouse adipose as an example, the unknown [M-H] 375.23059 was negatively correlated with the ratios of PA 36:4 to LPA 16:0 and PA 36:1 to PA 18:1, indicating that the abundance of this unknown metabolite may be positively associated with PLA1 and/or PLA2 activity (Table 1). Given that PLA1 and PLA2 generate different products, with PLA1 dominantly yielding unsaturated lysophospholipids and PLA2 yielding saturated lysophospholipids, an observed negative correlation of the unknown with LPA 18:1 to LPA 18:0 ratios hints that it may originate as a product of PLA2. Indeed, direct correlation of this unknown with lipid metabolites suggests it could be a reduction product of CPA 16:0 after loss of one oxygen atom, matching the formula C19H37O5P with 0.013 ppm mass accuracy. While it remains to be established that this unknown is a bona fide reduction product of CPA 16:0, the example illustrates how pixel-by-pixel correlations of unknown metabolite masses with metabolite ratios can aid potential discovery of pathway-relevant metabolites.
 
+**Table 1.**
+ Spearman correlation of an unknown with ratio and non-ratio entities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Entity</th>
+      <th>Unknown [M-H] 375.23059</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CPA 18:1</td>
+      <td>0 86090633</td>
+    </tr>
+    <tr>
+      <td>CPA 16:0</td>
+      <td>0 85862853</td>
+    </tr>
+    <tr>
+      <td>Docosahexaenoic Acid</td>
+      <td>0 84761078</td>
+    </tr>
+    <tr>
+      <td>Palmitic Acid</td>
+      <td>0 80091519</td>
+    </tr>
+    <tr>
+      <td>LPA 18:1</td>
+      <td>0 78455912</td>
+    </tr>
+    <tr>
+      <td>LPA 16:0</td>
+      <td>0 77663768</td>
+    </tr>
+    <tr>
+      <td>Oleic Acid</td>
+      <td>0 77371792</td>
+    </tr>
+    <tr>
+      <td>PA 34:2</td>
+      <td>0 73231961</td>
+    </tr>
+    <tr>
+      <td>PA 36:3</td>
+      <td>0 72919804</td>
+    </tr>
+    <tr>
+      <td>Palmitoleic Acid</td>
+      <td>0 72724047</td>
+    </tr>
+    <tr>
+      <td>CPA 18:0</td>
+      <td>0 70128825</td>
+    </tr>
+    <tr>
+      <td>LPE 16:0</td>
+      <td>0 69156441</td>
+    </tr>
+    <tr>
+      <td>PA 38:6</td>
+      <td>0 68799022</td>
+    </tr>
+    <tr>
+      <td>LPA 18:0</td>
+      <td>0 67264794</td>
+    </tr>
+    <tr>
+      <td>558.4283</td>
+      <td>0 67163649</td>
+    </tr>
+    <tr>
+      <td>PE P 16:0</td>
+      <td>0 66456185</td>
+    </tr>
+    <tr>
+      <td>Linoleic Acid</td>
+      <td>0 65773742</td>
+    </tr>
+    <tr>
+      <td>PI 36:2</td>
+      <td>0 65460109</td>
+    </tr>
+    <tr>
+      <td>LPA 18:2/LPA 18:1</td>
+      <td>–0 53780801</td>
+    </tr>
+    <tr>
+      <td>PA 36:1/LPA 18:1</td>
+      <td>–0 4549225</td>
+    </tr>
+    <tr>
+      <td>PA 36:4/LPA 16:0</td>
+      <td>–0 42353603</td>
+    </tr>
+  </tbody>
+</table>
+
 Another example of correlation-based discovery comes from consideration of COX10 KO and WT mouse brain sections, where calculating the Spearman correlation of combined pixel data from both individual metabolites and metabolite ratios revealed an unexpected positive association of FeCl2 with the glutamate to glutamine ratio, along with other related metabolite ratios that include aspartate, NAA, glucose and glutathione (Table 2, Figure 5—figure supplement 1). Conversely, glutamine to glutamate ratios showed significant negative correlation with FeCl2 and the above-mentioned metabolites (Supplementary file 2), suggesting these correlations are neither random nor an artefact of missing value annotation. Notably, free iron is recognized as a key mediator of glutamate excitotoxicity in spinal cord motor neurons (Yu et al., 2009). Significant associations between peripheral markers of iron metabolism and glutamate with glutamine in relation to total creatine (Glx:tCr) concentration have been reported in female human brains (Burger et al., 2020). Glutamate facilitates divalent metal transporter 1 (DMT1) flux and subsequent increases in brain free iron content (Yu et al., 2015). A positive relation between iron and glutamate in the brain and other organs has also been reported (Pardo et al., 2011; Szerb and O’Regan, 1985; Yu et al., 2009; Burger et al., 2020; McGahan et al., 2005; Mittal et al., 2003).
+
+**Table 2.**
+ Brain glutamate to glutamine ratio positively correlates FeCl2 using combined ratio and non-ratio pixel data and spearman correlation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metabolite or Metabolite ratio</th>
+      <th>Glutamate/Glutamine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Glutamate/Glutamine</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>N-Acetylaspartate/Glutamine</td>
+      <td>0.69140746</td>
+    </tr>
+    <tr>
+      <td>Glutamate/Glucose</td>
+      <td>0.68318508</td>
+    </tr>
+    <tr>
+      <td>Aspartate/Glutamine</td>
+      <td>0.617246741</td>
+    </tr>
+    <tr>
+      <td>Aspartate/Glucose</td>
+      <td>0.571634522</td>
+    </tr>
+    <tr>
+      <td>N-Acetylaspartate/Glucose</td>
+      <td>0.487447557</td>
+    </tr>
+    <tr>
+      <td>Glutathione/Glutamine</td>
+      <td>0.482704981</td>
+    </tr>
+    <tr>
+      <td>Glutamate/Malate</td>
+      <td>0.477826203</td>
+    </tr>
+    <tr>
+      <td>Glutamate/NAAG</td>
+      <td>0.418208761</td>
+    </tr>
+    <tr>
+      <td>Glutathione/Glucose</td>
+      <td>0.414914055</td>
+    </tr>
+    <tr>
+      <td>Glutamate/Taurine</td>
+      <td>0.408270132</td>
+    </tr>
+    <tr>
+      <td>Aspartate/NAAG</td>
+      <td>0.40560898</td>
+    </tr>
+    <tr>
+      <td>FeCl2</td>
+      <td>0.40137113</td>
+    </tr>
+  </tbody>
+</table>
 
 Note that this correlation with FeCl2 was observed in all brain sections regardless of genotype. Ferrous iron, measured as its chloride adduct when detected with NEDC matrix, likely arises from both free labile iron and protein-bound iron. Decreased FeCl2 levels in combination with decreased glutamate in the cortex region of COX10 KO vs. WT brain is an unexpected but intriguing finding. While aging is associated with increased brain iron through cortex-derived expression of the iron regulatory hormone hepcidin (Sato et al., 2022), calorie restriction down-regulates hepcidin expression (Wei et al., 2014). In accord with decreased Fe2+ and glutamate to glutamine ratio, COX10 KO mice exhibited decreased food intake and adopted a metabolic state resembling caloric restriction (Southwell et al., 2023). Collectively, pan-correlation of targeted metabolite ratios with non-ratio data serve as an additional imaging tool for data interpretation and hypothesis generation.
 
-## Metabolite ratios for PCA tissue segmentation in complex tissue sections
+### Metabolite ratios for PCA tissue segmentation in complex tissue sections
 
 Spatial segmentation is a popular application in MSI to cluster regions with similar metabolite abundance profiles. Unsupervised MSI segmentation methods such as PCA, K-means, bisecting K-means and HCA are all often used to delineate underlying tissue structures from high-dimensional MSI data without prior knowledge of sample anatomical information. Most segmentation approaches rely on unsupervised clustering algorithms that can readily result in the generation of biologically unrealistic tissue structures. Various algorithms for integrating partial or prior structural information with unsupervised clustering have been reported to improve segmentation results (Guo et al., 2022a; Shi et al., 2022; Guo et al., 2022b; Zou et al., 2023; Baars et al., 2021; Guo et al., 2021; Hu et al., 2021).
 
@@ -132,17 +379,45 @@ As metabolite ratio data can segment tissue into novel ROIs, we considered the p
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig7-v1.jpg)
 
-**Figure 7.:** KO: right 4 sections; WT: left 4 sections. (A-C) Ratio images of homocarnosine, glutamine and aspartate. (D) Enzymatic regulation and interconversions among brain glutamine, aspartate and homocarnosine. (E) Image of homocarnosine. (F) PCA with top 5 components and using ratios of homocarnosine, glutamine and aspartate shows differential ROI abundance shown in cyan blue in larger area of striatum, thalamus hypothalamus regions in KO compared to WT. (G) PCA with top 5 components using homocarnosine, glutamine, and aspartate pixel data show indistinguishable ROIs between genotypes.Figure 7—source data 1.
+**Figure 7.:** KO: right 4 sections; WT: left 4 sections. (A-C) Ratio images of homocarnosine, glutamine and aspartate. (D) Enzymatic regulation and interconversions among brain glutamine, aspartate and homocarnosine. (E) Image of homocarnosine. (F) PCA with top 5 components and using ratios of homocarnosine, glutamine and aspartate shows differential ROI abundance shown in cyan blue in larger area of striatum, thalamus hypothalamus regions in KO compared to WT. (G) PCA with top 5 components using homocarnosine, glutamine, and aspartate pixel data show indistinguishable ROIs between genotypes.
 
 The interrelationship of glutamine, aspartate and homocarnosine is shown in Figure 7D. Homocarnosine is a naturally occurring imidazole-containing dipeptide uniquely present in the brain, likely in a subclass of GABAergic neurons (Rothman et al., 1997). It is synthetized from γ-aminobutyric acid (GABA) and histidine via homocarnosine synthase (CARNS1) and can be hydrolyzed to histidine and GABA by carnosine dipeptidase 1 (CNDP1), which is exclusively expressed in brain (Figure 7D). Homocarnosine is recognized to play a role in mediating neuronal activity during satiation and starvation (Filipović et al., 1993). It is decreased in the brain during cold adaptation (Bondarenko et al., 1985) and increased during alcohol intoxication (Kukharenko et al., 1990). Additionally, aspartate and glutamate can be exchanged across the inner mitochondrial membrane by mitochondrial carrier protein SLC25A12 (Aralar1), mainly distributed in brain and skeletal muscle for the transport of aspartate from mitochondria to cytosol, and in the transfer of cytosolic reducing equivalents into mitochondria as a member of the malate-aspartate shuttle (Jalil et al., 2005). Given the interrelationship of these three metabolites and their important roles in maintaining brain neurotransmitter pools, their ratios could report on neurotransmitter homeostasis. Indeed, it has been shown that brain function can be estimated from the ratio of glutamine to homocarnosine in cerebrospinal fluid (Ohtsuka and Takahashi, 1983). An early report showed that homocarnosine is elevated in monkey brain in the setting of a protein-deficient diet, whereas aspartate and glutamate levels are unchanged (Enwonwu and Worthington, 1973). Similarly, in COX10 KO and WT brains, we observed no difference in individual aspartate or glutamate levels (Figure 5A–B), while striatal homocarnosine (Figure 7E) and glutamine (Figure 5C) were elevated. As COX10 KO mice displayed altered food intake, muscle mass and elevated starvation response (Southwell et al., 2023), an elevated homocarnosine to glutamine and glutamine to glutamate ratio (Figure 5F) could indicate increased synthesis of homocarnosine via the glutamine-glutamate-GABA axis. These results indicate that ratios among the three metabolites could serve as alternative markers to distinguish these murine genotypes.
 
 To provide additional spatial detail, we performed PCA segmentation on COX10 KO and WT brains using ratio and non-ratio pixel data for homocarnosine, glutamine and aspartate with the goal of learning whether differential ROIs exist for these genotypes. In this PCA segmentation, the overview RGB image maps the first three principal components to the red, green and blue channels respectively. Comparing PCA overview images from ratio (Figure 7F) to non-ratio (Figure 7G), PCA results from ratios showed cyan blue located in larger areas of striatum and thalamus regions in KO relative to WT brains, while non-ratio PCA did not. These results reveal distinguishable differences in abundance in the cyan region of the KO and WT brain regarding interconversion and homeostasis of the three neurotransmitter-relevant metabolites. Therefore, metabolite ratios could serve as better candidates for ROI-based disease metabotyping.
 
-## UMAP using metabolite ratios enables spatial metabotype mapping and recognizes novel ROIs
+### UMAP using metabolite ratios enables spatial metabotype mapping and recognizes novel ROIs
 
 Unlike PCA analysis, which builds on a linear dimension reduction algorithm, uniform manifold approximation and projection (UMAP) is a relatively newer non-linear dimension reduction algorithm often used to visualize complex dataset while preserving local structure. UMAP projects dimensionally reduced data into 2D or 3D scatterplots. Samples close to each other in the scatterplot have similar fingerprints, while samples further away have progressively different profiles. It is often used in combination with other clustering algorithms such as HCA and K-mean clustering to identify subgroups in the projected space. UMAP has been widely used for omics data interpretation to find internal structure in mixed datasets, as well as for disease subtyping, single-cell bioogy (Rather and Chachoo, 2023; ElKarami et al., 2022; Do and Canzar, 2021) and various molecular imaging applications.
 
 Since metabolite ratio segmentation using PCA is less prone to section preparation artefacts in MALDI-MSI and enables genotype-specific tissue segmentation (Figure 7F), we sought to assess whether metabolite ratio UMAP and clustering could generate novel ROIs that enable new spatial metabotype mapping beyond that obtained from consideration of individual metabolites. UMAP analysis of ratios for 5 LPEs in COX10 KO and WT murine brain sections, followed by K-mean clustering, showed much more defined and biologically relevant ROIs than those derived from non-ratioed LPEs (Figure 8) that resemble PCA segmentation results (Figure 6B). This UMAP analysis used nine neighbors with two Euclidean components as metric measurements of similarity. Figure 8—figure supplements 1 and 2 show the nine segmented ROIs from ratio and non-ratio UMAP and K-mean clustering analyses, along with scatterplots of the first two UMAP components (V1 vs. V2), projecting the distribution and similarity of each of nine segmented ROIs. While non-ratio segmented ROIs did not provide comparable and confident ROIs among replicates (Figure 8—figure supplement 1), the ratio-segmented data indicate a distinct LPE profile between the outer cortex (ROI 3), cortex (ROI 8), ventral thalamus (ROI 5) and striatal regions (ROI 2; Figure 8—figure supplement 2). These ROIs generated by UMAP metabolite ratios enable visualization and a reproducible comparison of lipid metabolite and/or ratio abundance among these irregular and difficult-to-draw (i.e. with imprecise anatomical definition) regions. In addition, they provide unique ROIs for pixel-by-pixel metabolite correlation with other previously mentioned multivariate analyses (Table 1, Figure 1—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-v1.jpg)
+
+**Figure 8.:** (A) UMAP clustering using ratios of five LPEs. (B) UMAP clustering using five LPE pixel data. The list of five LPEs is shown Supplementary file 4. Nine neighbors, two components with Euclidean distance as metric measurement of similarities were used in this UMAP analysis.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A-I) Nine segmented ROIs generated UMAP and K-mean clustering analysis corresponding to clustered regions of 1–9. (J) Scatterplot of UMAP first 2 components (V1 vs V2) projecting the distribution and similarity of nine segmented ROIs resulting in a incomplete and inconsistent ROIs among replicates. 5 LPE (Supplementary file 4) pixel data was used for UMAP analysis.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A-I) Nine segmented ROIs generated UMAP and K-mean clustering analysis corresponding to clustered regions of 1–9. (J) Scatterplot of UMAP first 2 components (V1 vs V2) projecting the distribution and similarity of nine segmented ROIs shows a distinct LPE profile between outer cortex (ROI 3) cortex (ROI 8) and ventral thalamus (ROI 5) striatum region(ROI2). Ratio of five LPE (Supplementary file 4) pixel data was used for UMAP.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A-H) Ratio image of NAA to aspartate in eight UMAP-segmented ROIs. (I-J) Ratio images of NAAG to NAA (I) and NAAG (J) to aspartate in ROI 7 of UAMP segmented ROIs. COX10 KO, right four sections; WT, left four sections.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** (A) NAAG is enriched and elevated in ROI 7–like region of COX 10 KO brain. (B-D) NAA,NAAG and glutamine are elevated in ROI 7 of COX 10 KO brain. (E) Decreased level of aspartate in ROI 7 of COX10 KO; (F) Glutamate shows no change in ROI 7 of COX 10 KO compared to WT. COX10 KO, right four sections; WT, left four sections.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** 4 biological replicates for each genotype. Only significant correlations with a spearman correlation coefficient of greater than 0.4 were presented in the figure.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/96892/elife-96892-fig8-figsupp6-v1.jpg)
+
+**Figure 8—figure supplement 6.:** (A-B) Overlay of nine segmented ROIs generated from UMAP and K-mean clustering analysis in horizonal hemisphere sections (A) and sagittal brain sections (B). (C-D) Scatterplot of UMAP first 2 components (V1 vs V2) projecting the distribution and similarity of 9 segmented ROIs in horizonal (C) and sagittal sections (D). See Supplementary file 4 for the list of five LPEs.
 
 Differences in metabolite abundance among ROIs can be difficult to visualize if the image color scale is set too wide. ROI images are better visualized by applying a relative image abundance scale set to a discrete ROI, rather than the entire tissue section. UMAP segmentation using ratios provides novel ROIs for such purpose. For example, murine brain imaging results showed decreased aspartate to NAA ratios visualizable in almost all 8 ROIs investigated with COX10 KO relative to WT, suggesting overall diminished expression or activity of NAT8L, the neuronal enzyme that produces NAA from acetyl-CoA and aspartate (Figure 8—figure supplement 3A-H). Moreover, NAAG, the most abundant dipeptide in the brain, can be synthesized from NAA and glutamate by NAAG synthase. NAAG to NAA and aspartate ratios were greater in ROI 7 of KO compared to WT brain (Figure 8—figure supplement 3I-J), suggesting elevated NAAG synthase activity in this defined region. Of note, NAT8L mRNA oxidation is linked to neurodegeneration in multiple sclerosis (Kharel et al., 2023) and overexpression-induced vulnerability to depressive behavior in mice (Uno et al., 2019). NAAG functions as a retrograde neurotransmitter and is released in response to glutamate, providing postsynaptic neurons with a feedback mechanism to inhibit excessive glutamate signaling (Morland and Nordengen, 2022). Therefore, elevated NAT8L activity, indicated by an increased NAA to aspartate ratio, is consistent with observations that COX10 KO mice are less mobile and relatively inactive compared to WT. Reviewing the non-ratio images of these metabolites, NAAG is mainly enriched near ROI 7 visualized in whole section images (Figure 8—figure supplement 4A), consistent with higher abundance of NAAG, NAA and glutamine imaged exclusively in COX10 KO ROI 7 (Figure 8—figure supplement 4B-D). These changes contrast with the decreased aspartate and unchanged glutamate levels imaged in ROI 7 of KO brains (Figure 8—figure supplement 4E-F). Therefore, we infer that the COX10 KO brain exhibits increased NAA and NAAG syntheses as feedback to inhibit excessive glutamate signaling. In contrast, glutamate within the NAc showed no change compared to WT, potentially due to excess glutamate being used for synthesis of glutamine and NAAG, which are elevated in KO ROI 7 (Figure 8—figure supplement 4C-D). Consideration of these UMAP findings exemplifies the applicability of this strategy for MSI data interpretation.
 

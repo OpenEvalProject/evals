@@ -11,17 +11,17 @@
 
 ### Affiliations
 
-1. https://ror.org/03tzb2h73 Neuroscience Graduate Program, Department of Biomedical Sciences, Ajou University Graduate School of Medicine Suwon Republic of Korea
-2. https://ror.org/03tzb2h73 Department of Brain Science, Ajou University School of Medicine Suwon Republic of Korea
-3. https://ror.org/04h9pn542 Interdisciplinary Program in Bioinformatics, Seoul National University Seoul Republic of Korea
-4. https://ror.org/03tzb2h73 Department of Psychiatry, Ajou University School of Medicine Suwon Republic of Korea
-5. https://ror.org/01zqcg218 Department of Oral Microbiology, College of Dentistry, Kyung Hee University Seoul Republic of Korea
+1. Neuroscience Graduate Program, Department of Biomedical Sciences, Ajou University Graduate School of Medicine Suwon Republic of Korea ([ROR:03tzb2h73](https://ror.org/03tzb2h73))
+2. Department of Brain Science, Ajou University School of Medicine Suwon Republic of Korea ([ROR:03tzb2h73](https://ror.org/03tzb2h73))
+3. Interdisciplinary Program in Bioinformatics, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+4. Department of Psychiatry, Ajou University School of Medicine Suwon Republic of Korea ([ROR:03tzb2h73](https://ror.org/03tzb2h73))
+5. Department of Oral Microbiology, College of Dentistry, Kyung Hee University Seoul Republic of Korea ([ROR:01zqcg218](https://ror.org/01zqcg218))
 
 † Corresponding author
 
 ## Abstract
 
-The circadian clock, an internal time-keeping system orchestrates 24 hr rhythms in physiology and behavior by regulating rhythmic transcription in cells. Astrocytes, the most abundant glial cells, play crucial roles in CNS functions, but the impact of the circadian clock on astrocyte functions remains largely unexplored. In this study, we identified 412 circadian rhythmic transcripts in cultured mouse cortical astrocytes through RNA sequencing. Gene Ontology analysis indicated that genes involved in Ca 2+ homeostasis are under circadian control. Notably, Herpud1 ( Herp ) exhibited robust circadian rhythmicity at both mRNA and protein levels, a rhythm disrupted in astrocytes lacking the circadian transcription factor, BMAL1. HERP regulated endoplasmic reticulum (ER) Ca 2+ release by modulating the degradation of inositol 1,4,5-trisphosphate receptors (ITPRs). ATP-stimulated ER Ca 2+ release varied with the circadian phase, being more pronounced at subjective night phase, likely due to the rhythmic expression of ITPR2. Correspondingly, ATP-stimulated cytosolic Ca 2+ increases were heightened at the subjective night phase. This rhythmic ER Ca 2+ response led to circadian phase-dependent variations in the phosphorylation of Connexin 43 (Ser368) and gap junctional communication. Given the role of gap junction channel (GJC) in propagating Ca 2+ signals, we suggest that this circadian regulation of ER Ca 2+ responses could affect astrocytic modulation of synaptic activity according to the time of day. Overall, our study enhances the understanding of how the circadian clock influences astrocyte function in the CNS, shedding light on their potential role in daily variations of brain activity and health.
+The circadian clock, an internal time-keeping system orchestrates 24 hr rhythms in physiology and behavior by regulating rhythmic transcription in cells. Astrocytes, the most abundant glial cells, play crucial roles in CNS functions, but the impact of the circadian clock on astrocyte functions remains largely unexplored. In this study, we identified 412 circadian rhythmic transcripts in cultured mouse cortical astrocytes through RNA sequencing. Gene Ontology analysis indicated that genes involved in Ca2+ homeostasis are under circadian control. Notably, Herpud1 (Herp) exhibited robust circadian rhythmicity at both mRNA and protein levels, a rhythm disrupted in astrocytes lacking the circadian transcription factor, BMAL1. HERP regulated endoplasmic reticulum (ER) Ca2+ release by modulating the degradation of inositol 1,4,5-trisphosphate receptors (ITPRs). ATP-stimulated ER Ca2+ release varied with the circadian phase, being more pronounced at subjective night phase, likely due to the rhythmic expression of ITPR2. Correspondingly, ATP-stimulated cytosolic Ca2+ increases were heightened at the subjective night phase. This rhythmic ER Ca2+ response led to circadian phase-dependent variations in the phosphorylation of Connexin 43 (Ser368) and gap junctional communication. Given the role of gap junction channel (GJC) in propagating Ca2+ signals, we suggest that this circadian regulation of ER Ca2+ responses could affect astrocytic modulation of synaptic activity according to the time of day. Overall, our study enhances the understanding of how the circadian clock influences astrocyte function in the CNS, shedding light on their potential role in daily variations of brain activity and health.
 
 ## Introduction
 
@@ -35,9 +35,21 @@ In this study, we conducted a transcriptome analysis to investigate how the circ
 
 ## Results
 
-## Defining circadian rhythmic transcripts in cultured mouse cortical astrocytes
+### Defining circadian rhythmic transcripts in cultured mouse cortical astrocytes
 
 To understand how the circadian clock regulates astrocyte physiology, we conducted a circadian transcriptome analysis of cultured mouse cortical astrocytes. Cultured astrocytes were synchronized using serum shock (SS) and harvested every 4 hr for 2 days starting at 12 hr post-SS. The time series astrocyte transcriptome was determined by RNA-seq (Figure 1A). Using a Gaussian mixture model, we defined expressed transcripts, choosing 0.577 transcripts per million (TPM) as the cut-off, corresponding to the 1% threshold in the distribution curve of highly expressed genes (Figure 1—figure supplement 1A). A total of 17,671 transcripts with the highest TPM values of the 12 time points exceeding 0.577, were considered expressed. To validate astrocyte enrichment, we compared the expression of marker genes for nervous cells. Our transcriptome data were replete with astrocyte markers but lacked markers for microglia, oligodendrocytes, neurons, and endothelial cells (Figure 1—figure supplement 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental scheme for synchronizing circadian rhythms in mouse cultured cortical astrocytes followed by RNA-sequencing over 2 days. (B) Venn diagram displaying the number of circadian rhythmic transcripts identified by two algorithms (q<0.05 in MetaCycle or BioCycle). (C) Number of transcripts that overlapping with 12 tissues in mouse circadian transcriptome ss from CircaDB (http://circadb.hogeneschlab.org). (D) Comparison of mean phase (ZT) from CircaDB and peak phase (Time post sync) from cultured astrocytes for 14 transcripts that are rhythmic in 10 or more tissues. (E) Scatter plot showing phase in CircaDB and peak phase of cultured astrocytes for transcripts that are rhythmic in one tissue. (F) Radial histogram of the distribution of phases of rhythmic genes in the astrocyte transcriptome. (G) Top 10 enriched GO Biological Process (BP) terms for significant circadian rhythmic genes in astrocytes (p<0.01) identified by Metascape (https://metascape.org). Panel A was created with BioRender.com.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Histogram showing the distribution of mean expression levels of transcripts. Transcripts with low (red) and high (green) expression were identified using a Gaussian mixture model. Dashed vertical lines represent cut-off points for highly expressed transcripts: maroon line (99.5%, TPM 0.40), blue line (99.0%, TPM 0.57), and purple line (95.0%, TPM 1.59). (B) Time-averaged expression levels of marker genes for astrocytes, microglia, oligodendrocytes, neurons, and endothelial cells in astrocyte cultures. Values are mean TPM ± S.E.M (n=2); *, not detected. (C) Expression profiles of Plat, Il34, Adora1, and Mybph in SS-synchronized cultured astrocytes from RNA-seq data. The q-values for BioCycle (red) and MetaCycle (blue) are shown in the bottom right corner. (D) Heatmap of 412 candidate genes from RNA-seq data, ordered by MetaCycle phase. Expression levels were normalized using Min-Max normalization.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Cluster analysis of 412 candidate genes was performed using ClustVis (https://biit.cs.ut.ee/clustvis/; Metsalu and Vilo, 2015). Expression levels were normalized using Min-Max normalization. Green bar indicates Cluster 1; orange bar indicates Cluster 2.
 
 Various methods have been used to identify periodicity in time-series data, such as Lomb-Scargle (Glynn et al., 2006), JTK_CYCLE (Hughes et al., 2010), and ARSER (Yang and Su, 2010), each with distinct advantages and limitations. MetaCycle, integrates these three methods, facilitating the evaluation of periodicity in time-series data without requiring the selection of an optimal algorithm (Wu et al., 2016). Additionally, BioCycle has been developed using a deep neural network trained with extensive synthetic and biological time series datasets (Agostinelli et al., 2016). Because MetaCycle and Biocycle identify periodic signal based on different algorithms, we applied both packages to identify periodicity in our time-series transcriptome data. BioCycle and MetaCycle analyses detected 321 and 311 periodic transcripts, respectively (FDR corrected, q-value <0.05; Figure 1B). Among these, 220 (53.4%) were detected by both methods, but many transcripts did not overlap. MetaCycle is known for its inability to detect asymmetric waveforms (Mei et al., 2021). In our analysis, genes with increasing waveforms like Adora1 and Mybph were identified as rhythmic only by BioCycle, while Plat and Il34 were identified as rhythmic only by MetaCycle (Figure 1—figure supplement 1C). Despite these discrepancies, the clear circadian rhythmic expression profiles of these genes led us to conclude that using the union of the two lists compensates for the limitations of each algorithm. Consequently, we identified a total of 412 circadian rhythmic transcripts (2.3% of all transcripts; Supplementary file 1). The circadian oscillations of these transcripts are illustrated in the heatmap in Figure 1—figure supplement 1D.
 
@@ -45,15 +57,23 @@ Next, we compared rhythmic transcripts of astrocytes with those of 12 mouse tiss
 
 To understand the biological processes and pathways controlled by the circadian clock, we performed a Gene Ontology (GO) analysis on each cluster using Metascape (https://metascape.org; Zhou et al., 2019; Figure 1G). Given that the goal of our research was to investigate processes specifically controlled by the circadian clock, we excluded 17 core clock transcripts (Arntl, Clock, Nfil3, Npas2, Bhlhe40, Bhlhe41, Cry1, Cry2, Dbp, Elf, Nr1d1, Nr1d2, Per1, Per2, Per3, Rorc, and Tef) from our GO enrichment analysis. Among the rhythmic processes, we focused on ‘calcium ion homeostasis (GO:0055074)’ due to the importance of intracellular Ca2+ signaling in numerous astrocyte functions (Agulhon et al., 2008; Bojarskaite et al., 2020; Brancaccio et al., 2019; Giaume et al., 2021; Guerra-Gomes et al., 2017; Verkhratsky and Nedergaard, 2018). In this category, Ca2+ homeostasis-related genes included Herp, Slc4a11, Sord and Kcnh1 etc. with Herp showing the most robust oscillation with large amplitude (Supplementary file 2A).
 
-## Circadian rhythmic expression of Herp in cultured mouse cortical astrocytes
+### Circadian rhythmic expression of Herp in cultured mouse cortical astrocytes
 
 We first assessed the expression patterns of core clock genes and Herp in our cultured astrocytes. Bmal1, was rhythmically expressed with a peak at 30 hr post sync while Per2 and Rev-Erbα showed rhythmic expression with peaks at 20 hr and 16 hr, respectively (Figure 2A). Herp displayed a robust rhythmic expression pattern, peaking at 20 hr, similar to Per2 (Figure 2A). To verify the circadian expression of Herp, we performed quantitative real-time RT-PCR, which confirmed that Bmal1, Rev-Erbα and Herp exhibited circadian rhythms consistent with the RNAseq results (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig2-v2.jpg)
+
+**Figure 2.:** (A, B) Astrocyte cultures from rom WT (black) and Bmal1-/- (orange) mice were synchronized and harvested at the indicated time. Expression was analyzed for rhythmicity using MetaCycle, and expression levels of given genes were quantified using RNA-seq (A) and real-time qRT-PCR (B) data. Values are mean ± SEM (n=2; p-values are indicated by insets in graphs). Light gray and dark gray backgrounds represent subjective day and subjective night, respectively, based on the phase analysis from Figure 1D. (C–E) Cultured astrocytes were transfected with the indicated siRNA (20 nM) and processed for real-time qRT-PCR (C) and western blot (D, E) analyses at 48 hrs post transfection. (C) Values are mean ± SEM (n=4; *p<0.05, **p<0.005, ***p<0.0005, and ****p<0.00005; t-test). (D) Representative western blot images of four independent experiments are shown. GAPDH served as loading control. (E) Densitometric quantification of HERP levels, normalized to GAPDH levels. Values are mean ± SEM (n=4; ***p<0.0005; Mann-Whiteny U test). (F–I) Astrocyte cultures from rom WT (F, G) and Bmal1-/- (H, I) mice were synchronized and harvested at the indicated time for western blot analysis. Total ERK (tERK) served as a loading control. HERP/tERK values at different times were normalized to those at 12 hr post sync (set to 1). Meta2d p values are indicated by insets in graphs. Light gray and dark gray backgrounds represent subjective day and subjective night, respectively. (F) Representative western blot images from five independent experiments are shown. (H) Representative western blot images from two independent experiments are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Astrocytes were synchronized using 50% horse serum (A), 100 nM dexamethasone (B, D–E), or 10 μM forskolin (C, F–G), and harvested at the indicated times. (A–C) Real-time qRT-PCR was performed to examine mRNA levels of the indicated genes (D–G) Western blot analysis for BMAL1 and HERP was conducted, with VINCULIN as a loading control. HERP/VINCULIN values at different times were normalized to those at 12 hrs post-shock (set to 1). (D, F) Representative Western blot images from three independent experiments. (E, G) Densitometric quantification of Western blots. Rhythmicity was analyzed using MetaCycle. Meta2d p values are indicated by insets in graphs. Values are mean ± SEM (n=3); p-values are indicated in the graph insets.
 
 Next, we examined whether HERP protein levels also showed rhythmic changes, as many genes exhibit rhythmic transcription without corresponding protein level changes (Reddy et al., 2006). We validated the specificity of HERP antiserum using Western blot analysis of astrocytes treated with Herp siRNA (Herp-KD), which significantly reduced Herp mRNA levels (Figure 2C) and the intensities of specific bands in western blots (Figure 2D and E). SS-synchronized cultured astrocytes were sampled every 6 hr for 2 days and processed for western blot analysis of BMAL1 and HERP. BMAL1 phosphorylation showed circadian variation, with hyper-phosphorylation peaking at midday and hypo-phosphorylation peaking early in the day or late at night (Yoshitane et al., 2009). In our SS-synchronized cultured astrocytes, BMAL1 was hyperphosphorylated at 18 hr, 24 hr, 42 hr, and 48 hr (corresponding to midday) and hypo-phosphorylated at 12 hr, 36 hr (corresponding to early in the day), and 30 hr, 54 hr (corresponding to late at night) throughout two daily cycles (Figure 2F) indicating strong circadian rhythms in cultured astrocytes. Importantly, HERP protein levels oscillated peaking at 18 hr and 42 hr and reaching a minimum at 12 hr, 30 hr, and 54 hr, mirroring its mRNA pattern (Figure 2F and G).
 
 Herp also exhibited rhythmic expression in astrocyte cultures synchronized by either dexamethasone (Balsalobre et al., 2000) or forskolin (Yagita and Okamura, 2000) treatments which are other commonly used for circadian clock resetting (Figure 2—figure supplement 1). Finally, to investigate whether the rhythmic expression of Herp is regulated by a circadian clock, we examined Herp mRNA and protein expression patterns in primary astrocyte cultured from Bmal1-/- mice. The rhythmic expression patterns of Per2, Rev-Erbα, and Herp were abolished in Bmal1-/- astrocyte cultures with their expression maintained at trough levels (Figure 2A). HERP protein levels remained constant throughout the daily cycles (Figure 2H and I). Collectively, these observations indicate that the expression of Herp exhibits a robust circadian rhythm that is controlled by BMAL1 in cultured mouse astrocytes. These results suggest that HERP-regulated cellular processes vary in a time-of-day specific manner.
 
-## Herp knockdown alters ATP-induced ER Ca2+ release
+### Herp knockdown alters ATP-induced ER Ca2+ release
 
 Herp was first identified as a gene with altered expression in response to homocysteine treatment in human umbilical vein endothelial cells (HUVECs; Kokame et al., 1996). It is strongly induced not only by homocysteine but also by ER stress-causing agents such as tunicamycin or thapsigargin. HERP, characterized by an N-terminal ubiquitin-like domain and present in the ER membrane facing cytoplasmic side, is involved in the unfolded protein response (UPR; Kokame et al., 2000) and is part of the ER-associated degradation (ERAD) complex, participating in the ubiquitination and relocation of ERAD substrates (Leitman et al., 2014). Notably, HERP modulates the ER Ca2+ response through IP3R degradation (Paredes et al., 2016; Torrealba et al., 2017).
 
@@ -61,17 +81,29 @@ Thus, we sought to investigate whether HERP-controlled processes are subject to 
 
 We treated control and Herp-KD astrocytes with 100 μM ATP and monitored subcellular Ca2+ changes. ATP treatment rapidly decreased ER Ca2+ in control astrocytes and this response was more pronounced in Herp-KD astrocytes (Figure 3A–C). As the main Ca2+ store in the cell, ER releases Ca2+ which is then rapidly transmitted to other organelles such as mitochondria and cytosol (Carreras-Sureda et al., 2018; Giorgi et al., 2018). Although ATP treatment did not significantly alter cytosolic Ca2+ signal in control astrocytes, it greatly increased cytosolic Ca2+ signals in Herp-KD astrocytes (Figure 3D–F). Consistently, mitochondrial Ca2+ significantly increased in Herp-KD astrocytes compared with control (Figure 3G–I).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig3-v2.jpg)
+
+**Figure 3.:** (A–I) Cultured astrocytes were co-transfected with 20 μM non-targeting (CTRL) siRNA or Herp siRNA together with G-CEPIA1er (A–C), R-GECO1 (D–F) or mito-R-GECO1 (G–I). At 48 hr post transfection, cultured astrocytes were treated with 100 µM ATP and Ca2+ imaging analysis was performed. Images were acquired every 3 seconds. (A, D, G) Representative time-lapse images of each Ca2+ indicator. (B, E, H) ΔF/F0 values over time following ATP application. (C, F, I) Area above or area under the curve values, calculated from panels B, E, and H. (A–C) CTRL siRNA, n=19; Herp siRNA, n=22. (D–F) CTRL siRNA, n=20; Herp siRNA, n=25. (G–I) CTRL siRNA, n=16; Herp siRNA, n=16. (J–M) Cultured astrocytes were transfected with the indicated siRNA (20 nM) and processed for Western blot analysis 48 hr post transfection. Vinculin and GAPDH served as loading control for ITPRs and HERP, respectively. (J) Representative western blot images from twelve independent experiments are shown. NS, non-specific band (K) Densitometric quantification of western blot data showing relative levels of ITPR1 in Herp siRNA-transfected astrocytes compared to CTRL siRNA transfected astrocytes. (L) Representative Western blot images from five independent experiments. (M) Densitometric quantification of western blot data showing relative levels of ITPR2 in Herp siRNA-transfected astrocytes compared to Control astrocytes. Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; t-test). (N–P) Cultured astrocytes were treated with 10 μM Xestospongin C (XesC), an IP3R inhibitor, for 30 min before live imaging. Cells were then treated with 100 μM ATP, and images were captured every 3 s. (N) Representative time-lapse images of ER Ca2+ indicator. (O) ΔF/F0 values over time following ATP application. (P) Area above the curve values were calculated from panel O. CTRL siRNA + Mock, n=9; Herp siRNA + Mock, n=9; CTRL siRNA + XesC, n=8; Herp siRNA + XesC, n=14. Values are means ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; one-way ANOVA).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic diagram showing organelle-specific Ca2+ sensors and DsRed2-ER-5. Astrocytes were transfected with Ca2+ sensors specific for G-CEPIA1er (B, C) or mito-R-GECO1 (D, E). (B, C) G-CEPIA1er was co-transfected with DsRed2-ER-5 containing calreticulin signal sequence. Live-cell imaging was performed 48 hr post transfection. (D, E) Mito-R-GECO1 was transfected, and live-cell imaging was performed 48 hr post transfection. Before imaging, 200 nM Mitotracker was applied for 30 min to stain the mitochondria. (C, E) The overlap coefficient (Manders' R value) was calculated from the images. (B, C) n=13; (D, E) n=16.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** White and gray backgrounds represent subjective day and subjective night, respectively.
+
 Next, we examined the mechanism by which HERP controls ER Ca2+.There are three subtypes of IP3Rs encoded by the genes Itpr1, Itpr2, and Itpr3. Transcriptome analysis of our cultured astrocytes indicated Itpr1 as the most prevalent, followed by Itpr2, while Itpr3 expression was minimal (Figure 3—figure supplement 2). Notably, expression of these Itpr subtypes was not rhythmic. We then assessed the ITPR1 and ITPR2 protein levels in control and Herp-KD astrocytes and found that the levels of both ITPR1 and ITPR2 were slightly but statistically significantly increased in Herp-KD astrocytes compared to controls (Figure 3J–M). These results, consistent with previous reports (Paredes et al., 2016; Torrealba et al., 2017) indicated that HERP negatively regulates ITPRs in astrocyte.
 
 To confirm that the HERP-ITPR axis underlies ER Ca2+ response, we analyzed the ER Ca2+ response following treatment with Xestospongin C (XesC), an IP3R inhibitor. XesC treatment reduced the ATP-induced ER Ca2+ release and abolished the enhanced effect observed in Herp-KD compared to control (Figure 3N–P). Collectively, these results clearly indicate that HERP controls ER Ca2+ release by negatively regulating IP3Rs.
 
-## ATP-induced ER Ca2+ release varies according to time post synchronization
+### ATP-induced ER Ca2+ release varies according to time post synchronization
 
 Given that HERP levels exhibited circadian variation and HERP regulated ER Ca2+ release, we investigated whether ATP-induced ER Ca2+ responses differ depending on circadian phase. After SS, we measured ER Ca2+ following ATP treatment at peak (42 hr post sync) and trough (30 hr post sync) phases of HERP (Figure 4A). With lower HERP levels potentially resulting in higher IP3R levels at 30 hr, we anticipated greater ER Ca2+ release at 30 hr than at 42 hr. Consistent with this, ER Ca2+ decreased more at 30 hr than at 42 hr upon ATP treatment (Figure 4B–D). Also, in keeping with previous result (Figure 3A–I), cytosolic Ca2+ increased more at 30 hr than at 42 hr following ATP treatment (Figure 4E–G). Although mitochondrial Ca2+ responses exhibited a similar trend, the differences were not statistically significant (Figure 4H–J).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig4-v2.jpg)
 
-**Figure 4.:** 2+ release varies according to time post sync.(A) Schematic diagram of the experimental scheme from transfection to live-cell Ca2+ imaging at different times. (B–M) Cultured astrocytes were transfected with G-CEPIA1er (B–D, K–M), R-GECO1 (E–G), or mito-R-GECO1 (H–J) compartment-specific Ca2+ indicators (denoted at left) and then their circadian rhythm was synchronized by SS. (K–M) The indicated siRNA was co-transfected with the ER Ca2+ indicator. After transfection, cells were allowed 48 hr for the siRNA to take effect and stabilize before synchronization by serum shock. At the indicated times, astrocytes were treated with 100 µM ATP and Ca2+ imaging was performed. (B, E, H, K) Representative time-lapse images of each Ca2+ indicator. (C, F, I, L) ΔF/F0 values over time following ATP application. (D, G, J, M) Area above or area under the curve values, calculated from panels C, F, I, and L. (B–D) 30 hr post sync, n=24; 42 hr post sync, n=19. (E–G) 30 hr post sync, n=33; 42 hr post sync, n=38. (H–J) 30 hr post sync, n=50; 42 hr post sync, n=54. (K–M) CTRL siRNA, 30 hr post sync, n=5; CTRL siRNA, 42 hr post sync, n=4; Herp siRNA, 30 hr post sync, n=11; Herp siRNA, 42 hr post sync, n=5. Values in graphs are mean ± SEM (*p<0.05, ****p<0.00005); (D, G, J) t-test, (M) one-way ANOVA. (N–O) Cells were harvested at the indicated times and processed for western blot analysis. Vinculin and GAPDH served as loading controls for ITPR and BMAL1, respectively. (N) Representative western blot images from six independent experiments. (O) Densitometric quantification of western blot data showing relative levels of ITPR1 and ITPR2 at different times. Values in graphs are mean ± SEMs (*p<0.05, ****p<0.00005; t-test). Panel A was created with BioRender.com.Figure 4—source data 1.Figure 4N, indicating the relevant bands and treatments.Figure 4—source data 2.Figure 4N.
+**Figure 4.:** (A) Schematic diagram of the experimental scheme from transfection to live-cell Ca2+ imaging at different times. (B–M) Cultured astrocytes were transfected with G-CEPIA1er (B–D, K–M), R-GECO1 (E–G), or mito-R-GECO1 (H–J) compartment-specific Ca2+ indicators (denoted at left) and then their circadian rhythm was synchronized by SS. (K–M) The indicated siRNA was co-transfected with the ER Ca2+ indicator. After transfection, cells were allowed 48 hr for the siRNA to take effect and stabilize before synchronization by serum shock. At the indicated times, astrocytes were treated with 100 µM ATP and Ca2+ imaging was performed. (B, E, H, K) Representative time-lapse images of each Ca2+ indicator. (C, F, I, L) ΔF/F0 values over time following ATP application. (D, G, J, M) Area above or area under the curve values, calculated from panels C, F, I, and L. (B–D) 30 hr post sync, n=24; 42 hr post sync, n=19. (E–G) 30 hr post sync, n=33; 42 hr post sync, n=38. (H–J) 30 hr post sync, n=50; 42 hr post sync, n=54. (K–M) CTRL siRNA, 30 hr post sync, n=5; CTRL siRNA, 42 hr post sync, n=4; Herp siRNA, 30 hr post sync, n=11; Herp siRNA, 42 hr post sync, n=5. Values in graphs are mean ± SEM (*p<0.05, ****p<0.00005); (D, G, J) t-test, (M) one-way ANOVA. (N–O) Cells were harvested at the indicated times and processed for western blot analysis. Vinculin and GAPDH served as loading controls for ITPR and BMAL1, respectively. (N) Representative western blot images from six independent experiments. (O) Densitometric quantification of western blot data showing relative levels of ITPR1 and ITPR2 at different times. Values in graphs are mean ± SEMs (*p<0.05, ****p<0.00005; t-test). Panel A was created with BioRender.com.
 
 To confirm that HERP underlies this circadian phase-dependent ER Ca2+ release, we compared ER Ca2+ release in control and Herp-KD astrocytes at 30 hr and 42 hr post sync. Control astrocytes exhibited time-dependent variation in ER Ca2+ release, which was abolished in Herp-KD astrocytes (Figure 4K–M), indicating the involvement of HERP in this regulation.
 
@@ -81,13 +113,21 @@ To verify if ER Ca2+ release is regulated by the circadian clock, we analyzed th
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig5-v2.jpg)
 
-**Figure 5.:** 2+ release is abolished in cultured astrocytes from Bmal1 mice.-/-Cultured astrocytes Bmal1 mice and WT littermates were transfected with G-CEPIA1er and then their circadian rhythm was synchronized by SS. At the indicated Time, astrocytes were treated with 100 μM ATP and Ca-/-2+ imaging was performed. (A) Representative time-lapse images of ER Ca2+ indicator. (B) ΔF/F0 values over time following ATP application. (C) Area above the curve values, calculated from panel B. (A–C) WT 30 hr post sync, n=17; WT 42 hr post sync, n=15; KO 30 hr post sync, n=19; KO 42 hr post sync, n=21. Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; one-way ANOVA). (D, E) Cultured astrocytes from Bmal1 mice and WT littermates were synchronized by SS. Cells were harvested at the indicated times and processed for western blot analysis. (-/-D) Representative western blot images from six independent experiments. GAPDH served as a loading control. (E) Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; two-way ANOVA).Figure 5—source data 1.Figure 5D, indicating the relevant bands and treatments.Figure 5—source data 2.Figure 5D.
+**Figure 5.:** Cultured astrocytes Bmal1-/- mice and WT littermates were transfected with G-CEPIA1er and then their circadian rhythm was synchronized by SS. At the indicated Time, astrocytes were treated with 100 μM ATP and Ca2+ imaging was performed. (A) Representative time-lapse images of ER Ca2+ indicator. (B) ΔF/F0 values over time following ATP application. (C) Area above the curve values, calculated from panel B. (A–C) WT 30 hr post sync, n=17; WT 42 hr post sync, n=15; KO 30 hr post sync, n=19; KO 42 hr post sync, n=21. Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; one-way ANOVA). (D, E) Cultured astrocytes from Bmal1-/- mice and WT littermates were synchronized by SS. Cells were harvested at the indicated times and processed for western blot analysis. (D) Representative western blot images from six independent experiments. GAPDH served as a loading control. (E) Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; two-way ANOVA).
 
-## ATP-induced S368-phosphorylation of CX43 and gap junctional communication shows circadian variation
+### ATP-induced S368-phosphorylation of CX43 and gap junctional communication shows circadian variation
 
 Syncytial coupling through gap junctions is a prominent feature of astrocytes, critical for their homeostatic functions, including the diffusion and equilibration of ions, metabolites, and signaling molecules (Langer et al., 2012; Verkhratsky and Nedergaard, 2018). This coupling allows the astrocytic syncytium to propagate Ca2+ waves, affecting nearby and remote cells through release of gliotransmitters and modulating synaptic functions in a far-reaching network (Pacholko et al., 2020). Connexin (Cx) family proteins constitute gap junction channels (GJCs; Giaume et al., 2021), with Cx43 (also known as Gja1) and Cx30 (also known as Gjb6) being the main connexins in astrocytes (Kunzelmann et al., 1999; Nagy et al., 1999). In our cultured astrocytes, Cx43 was the most abundantly expressed connexin (Figure 6—figure supplement 1). Phosphorylation of CX43 at Ser368 by protein kinase C (PKC), activated in response to intracellular Ca2+, is known to decrease gap junction conductance (Enkvist and McCarthy, 1992; Nimlamool et al., 2015; Solan and Lampe, 2014). Accordingly, we hypothesized that the circadian variations in ATP-driven ER Ca2+ responses might differentially impact CX43 phosphorylation according to times of day.
 
 First, we confirmed that ATP treatment induces rapid phosphorylation of CX43 at Ser368 (pCX43 (S368)) in cultured astrocytes (Figure 6A and B). We then examined whether pCX43 (S368) varies with circadian phase. Notably, ATP-induced ER Ca2+ release was more pronounced at 30 hr than at 42 hr post sync (Figure 3), and pCX43 (S368) in response to ATP was also significantly higher at 30 hr compared to 42 hr post sync (Figure 6C and D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig6-v2.jpg)
+
+**Figure 6.:** (A–D, G, H) Cultured astrocytes with (C, D) or without (A, B) synchronization, were treated with 100 µM ATP either at 30 hr post sync or 42 hr post sync and processed for western blot analysis at the indicated times. Vinculin, GAPDH, and/or β-tubulin (TUBB) served as loading controls. The intensity of pCX43 (S368) and Cx43 for each sample was normalized to that of Vinculin. (A) Representative western blot images from more three independent experiments. Vinculin served as a loading control. (B) Densitometric quantification of western blot data, showing relative pCX43 (S368)/CX43 levels. Values are normalized to those for mock-treated samples at time zero (set to 1). (C) Representative western blot images from three independent experiments. Vinculin, GAPDH, and β-tubulin (TUBB) served as loading controls. (D) Densitometric quantification of western blot data, showing relative pCX43 (S368)/CX43 levels. Values are normalized to those for mock-treated samples at ATP zero for 30 hr post sync (set to 1). (E, F) Changes in CX43 phosphorylation in vivo. Mice were entrained to a 12 hr light/dark cycle followed by constant dark conditions. At the indicated times, the prefrontal cortex area was dissected and processed for western blot analysis. (E) Representative western blot images from three independent experiments. (F) Densitometric quantification of western blot data showing relative levels of pCX43 (S368). (G, H) 48 hr post siRNA transfection, cells were synchronized by serum shock. At the indicated times post sync, 100 μM ATP was treated and processed for Western blot analysis (G) Representative western blot images from three independent experiments. Vinculin served as a loading control. (H) Densitometric quantification of Western blot data, showing relative pCX43 (S368)/CX43 levels. Values are normalized to those for 30 hr post sync at ATP zero (min) (set to 1). Values are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, ****p<0.00005; (B, D, H) two-way ANOVA, (F) t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** White and gray backgrounds represent subjective day and subjective night, respectively.
 
 We also examined circadian variations of pCX43 (S368) in vivo. Mice were entrained to a 12:12 hr light/dark (LD) cycle for two weeks and then kept in constant darkness (DD). This ensured that variations in CX43 phosphorylation were due to the internal circadian clock and not external light stimuli. Prefrontal cortex tissues were dissected at circadian time (CT) 58 and CT70 on the third day of DD. pCX43 (S368) levels were higher at CT70 (subjective night) than at CT58 (subjective day), consistent with our in vitro results (Figure 6E and F).
 
@@ -97,7 +137,7 @@ Finally, we assessed if rhythmic phosphorylation of CX43 contributes to circadia
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/96357/elife-96357-fig7-v2.jpg)
 
-**Figure 7.:** (A–C) 20 μM carbenoxolone (CBX), a gap junction channel block, was applied to cultured astrocytes for 30 min before gap-FRAP analysis. (A) Representative time-lapse images of prebleaching, bleaching and recovery condition during gap-FRAP analysis. (B) Ft/F0 values over time following photobleaching (yellow rectangle). (C) Recovery % values, calculated from panel B. Mock, n=7; CBX, n=7. Values in graphs are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, and ****p<0.00005; Mann-Whitney U test). (D–I) Cultured astrocytes from WT (D–F) and Bmal1 (-/-G–I) mice were synchronized by SS. At the indicated time, gap-FRAP was performed. (D, G) Representative time-lapse images of prebleaching, bleaching and recovery condition during gap-FRAP analysis at 30 hr post sync and 42 hr post sync. (E, H) Ft/F0 values over time following photobleaching (yellow rectangle). (F, I) Recovery % values, calculated from panel H and L, respectively. (D–F) 30 hr post sync, n=15; 42 hr post sync, n=11. (G–I) 30 hr post sync, n=9; 42 hr post sync, n=9. Values in graphs are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, and ****p<0.00005; F: t-test, I: Mann-Whiteny U test). (J) Schematic diagram illustrating the regulation of ER Ca2+ response by the circadian clock through rhythmic oscillation of HERP. Refer to the text for the detailed explanation. Panel J was created with BioRender.com.
+**Figure 7.:** (A–C) 20 μM carbenoxolone (CBX), a gap junction channel block, was applied to cultured astrocytes for 30 min before gap-FRAP analysis. (A) Representative time-lapse images of prebleaching, bleaching and recovery condition during gap-FRAP analysis. (B) Ft/F0 values over time following photobleaching (yellow rectangle). (C) Recovery % values, calculated from panel B. Mock, n=7; CBX, n=7. Values in graphs are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, and ****p<0.00005; Mann-Whitney U test). (D–I) Cultured astrocytes from WT (D–F) and Bmal1-/- (G–I) mice were synchronized by SS. At the indicated time, gap-FRAP was performed. (D, G) Representative time-lapse images of prebleaching, bleaching and recovery condition during gap-FRAP analysis at 30 hr post sync and 42 hr post sync. (E, H) Ft/F0 values over time following photobleaching (yellow rectangle). (F, I) Recovery % values, calculated from panel H and L, respectively. (D–F) 30 hr post sync, n=15; 42 hr post sync, n=11. (G–I) 30 hr post sync, n=9; 42 hr post sync, n=9. Values in graphs are mean ± SEM (*p<0.05, **p<0.005, ***p<0.0005, and ****p<0.00005; F: t-test, I: Mann-Whiteny U test). (J) Schematic diagram illustrating the regulation of ER Ca2+ response by the circadian clock through rhythmic oscillation of HERP. Refer to the text for the detailed explanation. Panel J was created with BioRender.com.
 
 In summary, we propose a model illustrating how the circadian clock influences astrocyte function through the regulation of ER Ca2+ response. Based on phase comparisons of clock genes between our data and CircaDB (Figure 1D), we defined subjective day and night, with 8 hr post sync corresponding to the beginning of the day. In astrocytes, BMAL1/CLOCK-controlled oscillation of HERP regulates day and night variations in ITPR2 levels. These oscillations contribute to changes in ER Ca2+ responses, which in turn result in the distinct day and night differences in pCx43 (S368) and the gap junction conductance (Figure 7J).
 
@@ -119,40 +159,358 @@ In conclusion, our findings enhance the understanding of the circadian regulatio
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Herpud1 (Herp)</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:1927406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bmal1</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:1096381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Rev-Erbα (Nr1d1)</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:2444210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Per2</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:1195265</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Itpr1</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:96623</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Itpr2</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:99418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cx43 (Gja1)</td>
+      <td>Mouse Genome Informatics</td>
+      <td>MGI:95713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male)</td>
+      <td>C57BL/6 J</td>
+      <td>Charles River Japan</td>
+      <td>N/A</td>
+      <td>Adult PFC experiment</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>B6.129-Bmal1tm1Bra/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Cat# 009100;RRID:IMSR_JAX:009100</td>
+      <td>Primary Bmal1 KO astrocyte culture</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>1 day old C75BL/6 N</td>
+      <td>Koatch</td>
+      <td>N/A</td>
+      <td>Primary WT astrocyte culture</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>CMV-G-CEPIA1er</td>
+      <td>Suzuki et al., 2014</td>
+      <td>Addgene plasmid # 58215</td>
+      <td>ER Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>CMV-mito-R-GECO1</td>
+      <td>Wu et al., 2013</td>
+      <td>Addgene plasmid # 46021</td>
+      <td>Mitochondria Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>CMV-R-GECO1</td>
+      <td>Zhao et al., 2011</td>
+      <td>Addgene plasmid # 32444</td>
+      <td>Cytosol Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Bmal1</td>
+      <td>Abcam</td>
+      <td>Cat# ab93806;RRID:AB_10675117</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Herpud1</td>
+      <td>Abcam</td>
+      <td>Cat# ab150424;RRID:AB_2857374</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ITPR1</td>
+      <td>Alomone Labs</td>
+      <td>Cat# ACC-019;RRID:AB_2039923</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-ITPR2</td>
+      <td>Alomone Labs</td>
+      <td>Cat# ACC-116; Lot: ACC116AN015;RRID:AB_2340910</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Connexin43</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C6219;RRID:AB_476857</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho Connexin43(Ser368)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3511 S;RRID:AB_2110169</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-GAPDH</td>
+      <td>Novus</td>
+      <td>Cat# NB100-56875;RRID:AB_2107610</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Vinculin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# V4505;RRID:AB_477617</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Total ERK</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 9102 S;RRID:AB_330744</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer used for qRT-PCR</td>
+      <td>This paper</td>
+      <td>Supplementary file 2c: Table of primers used in quantitative RT-PCR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGETplus Non-targeting siRNA negative control #1</td>
+      <td>Horizon Discovery</td>
+      <td>Cat# D-001810–01</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGETplus Mouse Herpud1 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat# L-049714–01</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGETplus Mouse Itpr1 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat# L-040933–00</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ON-TARGETplus Mouse Itpr2 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat# L-041018–00</td>
+      <td>20 nM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Kits</td>
+      <td>QIAGEN</td>
+      <td>CAT# 74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xestospongin C (XesC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# X2628</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5′-triphosphate disodium salt hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>A7699; CAS: 34369-07-8</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein-AM</td>
+      <td>Invitrogen</td>
+      <td>C1430; CAS: 148504-34-1</td>
+      <td>0.5 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>0.05% Pluronic-127</td>
+      <td>Invitrogen</td>
+      <td>P6866; CAS: 9003-11-6</td>
+      <td>0.05%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbenoxolone disodium salt (CBX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4790; CAS: 7421-40-1</td>
+      <td>20 μM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012; https://imagej.nih.gov/ij/</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software; https://www.graphpad.com/</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon Element</td>
+      <td>Nikon</td>
+      <td>V5.21.00;RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metacycle</td>
+      <td>Wu et al., 2016; https://CRAN.R-project.org/package=MetaCycle</td>
+      <td>RRID:SCR_025729</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioCycle</td>
+      <td>Agostinelli et al., 2016; http://circadiomics.igb.uci.edu</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Confocal Microscope</td>
+      <td>Nikon</td>
+      <td>A1R</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiSeq 2000 system</td>
+      <td>Illumina</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Metascape</td>
+      <td>Zhou et al., 2019; https://metascape.org</td>
+      <td>RRID:SCR_016620</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ChIP-Atlas</td>
+      <td>Zou et al., 2022; Oki et al., 2018; https://chip-atlas.org</td>
+      <td>RRID:SCR_015511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BioRender</td>
+      <td>https://www.biorender.com/</td>
+      <td>RRID:SCR_018361</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All procedures for the care and use of laboratory animals were approved by the Institutional Animal Care and Use Committee (IACUC) of Ajou University School of medicine. Bmal1-/+ mice (B6.129-Bmal1tm1Bra/J; Jackson Laboratory, #009100; Bunger et al., 2000) were purchased from Jackson Laboratory (USA) and housed in a specific pathogen-free environment at the Animal Research Center of Ajou University Medical Center, with a standard 12 hour light/dark cycle and free access to food. Primary cultured astrocytes involving only WT mice used 1day-old C57BL/6 mice (Koatch Inc, Korea). In experiments employing primary cultured astrocytes from Bmal1-/- mice, wild type (WT) littermates were used as controls. For animal studies, 7–8 week-old adult C57BL/6 male mice were first entrained in a standard 12 hr light/dark cycle for 2 weeks and then maintained in a constant darkness (DD). On the third day of DD, mice were sacrificed at indicated time and its prefrontal cortex (PFC) was dissected.
 
-## Primary astrocyte culture
+### Primary astrocyte culture
 
 Primary astrocyte culture was prepared according to a previous report (Choi et al., 2018) with minor modifications. In brief, 1-day-old pups were anesthetized by hypothermia and their cerebral cortices were dissected out and triturated in Modified Eagle’s medium (MEM; Welgene, Korea, LM 007–11) containing 10% fetal bovine serum (FBS; Hyclone, USA, SV30207.02), penicillin/streptomycin (Gibco, USA, 15140–122), 10 µM HEPES (Gibco, USA, 15630080) and GlutaMAX (Gibco, USA, 35050–061) yielding a single-cell suspension. Cells were plated into 75 cm2 T-flasks (1pup/flask) and incubated at 37 °C in a humidified 5% CO2 incubator for 2 weeks. Primary astrocytes were then incubated in a serum-free MEM for 7 days, after which astrocytes were detached from the T-flask with 0.25% trypsin and plated on culture dishes (1.0X106 cells/60 mm dish) for experiments.
 
-## Circadian transcriptome analysis
+### Circadian transcriptome analysis
 
 The experimental scheme for synchronizing circadian clocks of cultured astrocyte is illustrated in Figure 1A. In brief, astrocytes were grown in dishes (1.0X106 cells/60 mm dish) until reaching complete confluence and then incubated in serum-free MEM for 72 hr. Cells were then subjected to serum shock (SS), a well-established procedure for synchronizing the circadian clock of cultured cells (Balsalobre et al., 1998), by exchanging the medium for MEM containing 50% horse serum. 12 hr post SS, astrocytes were harvested at 4 hr intervals for 2 days for RNA sequencing (RNA-seq). Total RNA was extracted and purified from harvested astrocytes using a RNeasy Plus Micro Kit (QIAGEN, Germany, 74034). RNA quality and quantity assessments, RNA-Seq library construction, and next-generation sequencing analysis were performed by Macrogen Inc (Korea). Total RNA integrity and library size were analyzed using an Agilent Technologies 2100 Bioanalyzer. Paired-end raw reads, generated using an Illumina HiSeq 2000 system, were aligned to the mm10 mouse genome using STAR aligner (v.2.5.2b) (Dobin et al., 2013). Gene expression was subsequently quantified by calculating transcripts per million (TPM) using Ensemble gene (release 82) annotations. The threshold for defining expressed transcripts was set using a Gaussian mixture model in the R package ‘mixtools’. To detect circadian oscillating transcripts, we employed two circadian oscillation detection methods BioCycle (Agostinelli et al., 2016) and MetaCycle (Wu et al., 2016).
 
-## Quantitative reverse transcription polymerase chain reaction (qRT-PCR)
+### Quantitative reverse transcription polymerase chain reaction (qRT-PCR)
 
 Total RNA was extracted from cells and purified using the RNeasy Plus Micro Kit (QIAGEN, 74034). 1 μg of total RNA was reverse transcribed using an oligo-dT primer and PrimeScript RTase (TaKaRa, Japan, 2680A). Quantitative real-time PCR was performed using a Rotor Gene Q (QIAGEN) with TB Green Premix Ex Taq (Takara, RR420A). The specific primers used were provided in the Supplementary file 2C. Noncycling mRNA encoding HPRT was used to normalize gene expression. The data were analyzed using Rotor Gene 6000 software, and the relative mRNA levels were quantified using the 2-∆∆Ct method in which ∆∆Ct=[(Ct target - Ct HPRT) of experimental group]-[(Ct target - Ct HPRT) of control group].
 
-## siRNA transfection and immunoblotting
+### siRNA transfection and immunoblotting
 
 The following On-Target plus SMARTpool siRNAs were purchased from Dharmacon (USA): Non-targeting CTRL siRNA (D-001810-01-50), Herp siRNA (L-049714-01-0005), Itpr1 siRNA (L-040933-00-0005), and Itpr2 siRNA (L-041018-00-0005). Upon reaching >90% confluence, the medium was replaced with serum-free MEM, and cells were incubated for 72hrs. Cells were then transfected with siRNA using Lipofectamine RNAiMAX (Thermo Fisher, USA, 13778150) per the manufacturer’s instructions. Experiments were conducted 48 hrs post-transfection.
 
 For immunoblotting, astrocytes were lysed using modified-RIPA buffer (50 mM Tris-HCl pH 7.4, 1% NP-40, 0.5% sodium deoxycholate, 150 mM NaCl). Mouse prefrontal cortex was lysed using T-Per (ThermoFisher, 78510) with protease inhibitor cocktail (Sigma-Aldrich, P8340) and phosphatase inhibitor cocktails 2 and 3 (Sigma-Aldrich, P5726 and P0044). Proteins were separated by SDS-PAGE and transferred to polyvinylidene fluoride membranes. Membranes were blocked with 5% skim milk and incubated overnight at 4°C with primary antibodies: anti-BMAL1 (Abcam (UK), ab93806), 1:2000; anti-HERP (Abcam, ab150424), 1:1000; anti-ITPR1 (Alomone Labs, Israel, ACC-019), 1:1000; anti-ITPR2 (Alomone Labs, ACC-116), 1:1000; anti-CX43 (Sigma, C6219), 1:5000; anti-pCX43 (Ser368; CST, USA, 3511), 1:1000; anti-GAPDH (Novus, USA, NB100-56875), 1:5000; anti-Vinculin (Sigma-Aldrich, V4505), 1:5000; and anti-total ERK (CST, 9102), 1:5000. Membranes were washed with TBST, incubated with secondary antibodies, and visualized using enhanced chemiluminescence. Protein levels were quantified by densitometric analysis of band intensities using ImageJ software.
 
-## Ca2+ reporter plasmid transfection and imaging analysis
+### Ca2+ reporter plasmid transfection and imaging analysis
 
 After cells reached >90% confluence, the medium was replaced with serum-free MEM. For Ca2+ measurements, cells were transfected with Ca2+ indicator plasmids pCMV-G-CEPIA1er (a gift from Masamitsu Iino, Addgene plasmid #58215; Suzuki et al., 2014), CMV-mito-R-GECO1, or CMV-R-GECO1 (gifts from Robert Campbell, Addgene plasmid #46021, #32444; Wu et al., 2013) 72 hr post-serum deprivation using Lipofectamine 2000, with or without siRNA treatment. For Xestospongin C (XesC) experiments, 10 μM XesC was applied 30 minutes before imaging. 48 hr post-transfection, the medium was replaced with Ca2+- and Mg2+-free HBSS (Gibco, 14175095). Fluorescence images were captured every 3 s using a Nikon A1R Confocal Microscope with a x60 1.4 NA Plan-Apochromat objective at 37°C and 5% CO2. These experiments were conducted at the Three-Dimensional Immune System Imaging Core Facility of Ajou University (Korea). Images were analyzed using NIS Elements C software. Fluorescence intensity at each time point (Ft) and ΔF values (Ft-F0) were calculated. F0 values were averaged from the fluorescence intensity of 10 frames prior to stimulation.
 
-## Ca2+ reporter plasmid co-localization analysis
+### Ca2+ reporter plasmid co-localization analysis
 
 After cells reached >90% confluence, the medium was replaced with serum-free MEM. 72 hr later, cells were transfected with either the ER Ca2+ reporter plasmid pCMV-G-CEPIA1er or the mitochondrial Ca2+ reporter CMV-mito-R-GECO1. For ER co-localization analysis, pCMV-G-CEPIA1er was co-transfected with DsRed2-ER-5 (a gift from Michael Davidson, Addgene plasmid #55836; Day and Davidson, 2009). For mitochondrial co-localization, 200 nM Mitotracker was applied 30 min before imaging. Live imaging was performed using a Nikon A1R Confocal Microscope with a x60 1.4 NA Plan-Apochromat objective at 37°C and 5% CO2. These experiments were conducted at the Three-Dimensional Immune System Imaging Core Facility of Ajou University (Korea). Images were analyzed using NIS Elements C software.
 
-## Gap-FRAP (fluorescence recovery after photobleaching) analysis
+### Gap-FRAP (fluorescence recovery after photobleaching) analysis
 
 Astrocyte communication was evaluated using a modified gap-FRAP assay (Santiquet et al., 2012). 30 min before imaging, cells were incubated with 0.5 μM Calcein-AM (Invitrogen, C1430) and 0.05% Pluronic-127 (Invitrogen, P6866) at 37 °C. After incubation, cells were rinsed twice with serum-free MEM to remove excess dye. For carbenoxolone (CBX) experiments, 20 μM CBX was added for 30 min after calcein incubation. Immediately before imaging, the medium was replaced with Ca2+- and Mg2+-free HBSS (Gibco, 14175095). Live imaging was performed using a Nikon A1R Confocal Microscope with a 488 nm argon laser and a x60 1.4 NA Plan-Apochromat objective. Photobleaching was performed on a region of interest (ROI) cell, and fluorescence was measured at 37 °C and 5% CO2. Fluorescence intensity was recorded pre-bleach (5 images), during a 15 s laser pulse (100% power, 5.3 lines/s), and post-bleach (every 3 s for 3 min). Images were analyzed using NIS Elements C software. Fluorescence intensity at each time point (Ft) was normalized to the pre-bleach intensity (F0), calculated as the average of 5 pre-bleach frames. The percentage of fluorescence recovery was calculated using: (FFR-FA)/(F0-FA)x100, where FFR is the full recovery fluorescence intensity and FA is the intensity immediately after photobleaching.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 To conduct the statistical analyses, all samples were first tested for normality. For cases where normality testing was not possible, such as with the Area Under/Above Curve, t-tests were used for comparing two groups, and one-way ANOVA was used for comparing three or more groups, considering the sufficient sample size. When comparing two groups, a t-test was performed if the data followed a normal distribution; otherwise, the Mann-Whitney U test was used. For comparisons among three or more groups, one-way ANOVA was used if the data were normally distributed, and the Brown-Forsythe and Welch ANOVA tests were used if they were not. When comparing three or more groups across multiple time points, a two-way ANOVA was performed. A p < 0.05 was considered statistically significant for all tests. The n value for all experiments represents biological replicates, and the experiments were conducted at least three times to ensure the reliability of the results.

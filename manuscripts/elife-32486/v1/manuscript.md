@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.32486.001 Many studies in the biomedical research literature report analyses that fail to recognise important data dependencies from multilevel or complex experimental designs. Statistical inferences resulting from such analyses are unlikely to be valid and are often potentially highly misleading. Failure to recognise this as a problem is often referred to in the statistical literature as a unit of analysis (UoA) issue. Here, by analysing two example datasets in a simulation study, we demonstrate the impact of UoA issues on study efficiency and estimation bias, and highlight where errors in analysis can occur. We also provide code (written in R) as a resource to help researchers undertake their own statistical analyses.
+Many studies in the biomedical research literature report analyses that fail to recognise important data dependencies from multilevel or complex experimental designs. Statistical inferences resulting from such analyses are unlikely to be valid and are often potentially highly misleading. Failure to recognise this as a problem is often referred to in the statistical literature as a unit of analysis (UoA) issue. Here, by analysing two example datasets in a simulation study, we demonstrate the impact of UoA issues on study efficiency and estimation bias, and highlight where errors in analysis can occur. We also provide code (written in R) as a resource to help researchers undertake their own statistical analyses.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ A simulation study is undertaken in order to quantify losses in efficiency and i
 
 ## Methods and materials
 
-## Background
+### Background
 
 A fundamental aspect of the design of all experimental studies is a clear identification of the experimental unit. By definition, this is the smallest object or material that can be randomly and independently assigned to a particular treatment or intervention in the experiment (Mead et al., 2012). The experimental unit is usually the unit of statistical analysis and should provide information on the study outcomes independent of the other experimental units. Where here the term outcome refers to a quantity or characteristic measured or observed for an individual unit in an experiment; most experiments will have many outcomes (e.g. expression of multiple genes, or mutiple assays) for each unit. The term multiple outcomes refers to such situtations, but is not the same as repeated outcomes (or more often repeated measures) which refers to measuring the same outcome at multiple time-points. Experimental designs are generally improved by increasing the number of (independent) experimental units, rather than increasing the number of observations within the unit beyond what is require to measure within unit variation with reasonable precision. If only a single observation of a laboratory test is obtained for each subject, data can be analysed using conventional statistical methods provided all the usual cautions and necessary assumptions are met. However, if there are for instance multiple observations of a laboratory test observed for each subject (e.g. due to multiple testing, duplicated analyses of samples or other laboratory processes) then the analysis must properly take account of this.
 
@@ -42,7 +42,7 @@ If all observations are treated equally in an analysis, ignoring the dependency 
 
 The drive to improve standards of reporting and thereby design and analysis of randomized clinical trials, which resulted in the widely known CONSORT guidelines (CONSORT GROUP (Consolidated Standards of Reporting Trials) et al., 2001), has now expanded to cover many related areas of biomedical research activity. For instance, work by (Kilkenny et al., 2009) highlighted poor standards of reporting of experiments using animals, and made specific mention of the poor reporting of the number of experimental units; this work led directly to the ARRIVE guidelines (Animal Research: Reporting of In Vivo Experiments; Kilkenny et al., 2010) that explicitly require authors to report the study experimental unit when describing the design. The recent Academy of Medical Sciences symposium on the reproducibility and reliability of biomedical research (Academy of Medical Sciences, 2017) specifically highlighted poor experimental design and inappropriate analysis as key problem areas, and highlighted the need for additional resources such as the NC3Rs (National Centre for the Replacement, Reduction and Refinement of Animals in Research) free online experimental design assistant (NC3Rs, 2017).
 
-## Design
+### Design
 
 The experimental unit should always be identified and taken into account when designing a research study. If a study is assessing the effect of an intervention delivered to groups rather than individuals then the design must address the issue of clustering; this is common in many health studies where a number of subjects may receive an intervention in a group setting or in animal experiments where a group of animals in a controlled environment may be regarded as a cluster. This is also the case if a study is designed to take repeated measurements from individual subjects or units, from a source sample or replicate analyses of a sample itself. Individuals in a study may also be subject to inherent clustering (e.g. family membership) which needs to be identified and accounted for.
 
@@ -50,27 +50,77 @@ As a prelude to discussion of analysis issues, it is important to distinguish be
 
 Clearly many of these distinct design types can be combined to create more complex settings; e.g. plants might be housed together in batches that cause responses from the plants in the same batch to be correlated (batch-effects), and samples taken from the plants, divided into sub-samples, and processed at two different testing centres, possibly resulting in additional centre-effects. For such complex designs, it is advisable to seek expert statistical advice, however the focus in the sections discussing analysis is mainly on cases (ii), (iii) and (iv). Case (i) is handled adequately by conventional statistical analysis, and although case (v) is important, it is too large a topic to discuss in great depth here (see e.g. (Diggle et al., 2013) for a wide ranging discussion of longitudinal data analysis). More general design issues are discussed in Appendix 2.
 
-## Sample size
+### Sample size
 
-Power analysis provides a formal statistical assessment of sample size requirements for many common experimental designs; power here is the probability (usually expressed as a percentage) that the chosen test correctly rejects the study null hypothesis, and is usually set at either 80% or 90%. Many simple analytic expressions exist for calculating sample sizes for common types of design, particular for clinical settings where methods are well developed and widely used (Chow et al., 2008). Power increases as the square root of the sample size n, so power is gained by increasing n but at a diminishing rate with n. Also power is inversely related to the variance of the outcome σ2, so choosing a better or more stable outcome or assay or test procedure will increase power.
+Power analysis provides a formal statistical assessment of sample size requirements for many common experimental designs; power here is the probability (usually expressed as a percentage) that the chosen test correctly rejects the study null hypothesis, and is usually set at either 80% or 90%. Many simple analytic expressions exist for calculating sample sizes for common types of design, particular for clinical settings where methods are well developed and widely used (Chow et al., 2008). Power increases as the square root of the sample size $n$, so power is gained by increasing $n$ but at a diminishing rate with $n$. Also power is inversely related to the variance of the outcome $\sigma^{2}$, so choosing a better or more stable outcome or assay or test procedure will increase power.
 
-For the most simple design with a normally distributed outcome, comparing two groups of n subjects (e.g. as in Design case (i)), the sample size is given by n=2⁢σ2×{(zα/2+zβ)2/d2}, where d is the difference we wish to detect, zβ represents the the upper 100×β standard normal centile, and 1-β is the power and α the significance level; for the standard significance of 5% and power of 90%, (zα/2+zβ)2=(1.96+1.28)2≈10.5.
+For the most simple design with a normally distributed outcome, comparing two groups of $n$ subjects (e.g. as in Design case (i)), the sample size is given by $n=2⁢\sigma^{2}\times{(z_{\alpha/2}+z_{\beta})^{2}/d^{2}}$, where $d$ is the difference we wish to detect, $z_{\beta}$ represents the the upper $100\times\beta$ standard normal centile, and $1-\beta$ is the power and $\alpha$ the significance level; for the standard significance of 5% and power of 90%, $(z_{\alpha/2}+z_{\beta})^{2}=(1.96+1.28)^{2}≈10.5$.
 
-Where there are clusters of subjects (e.g. as in Design case (ii)), then the correlation between observations within clusters will have an impact on the sample size (Hemming et al., 2011). The conventional sample size expression needs to be inflated by a variance inflation factor (VIF), also called a design effect, given by VIF=1+(m-1)×ICC, where there are m observations in each cluster (e.g. a batch) and ICC is the intraclass (within cluster) correlation coefficient that quantifies the strength of association between subjects within a cluster. The ICC can either be estimated from pilot data or from previous studies in the same area (see examples), or otherwise a value must be assumed. For small cluster sizes (m<5) and intraclass correlations (ICC<0.01), the sample size needs only to be inflated by typically less than 10% (see Table 1). However for larger values of both m and ICC, sample sizes may need to be doubled, trebled or more to achieve the required power.
+Where there are clusters of subjects (e.g. as in Design case (ii)), then the correlation between observations within clusters will have an impact on the sample size (Hemming et al., 2011). The conventional sample size expression needs to be inflated by a variance inflation factor (VIF), also called a design effect, given by $VIF=1+(m-1)\timesICC$, where there are $m$ observations in each cluster (e.g. a batch) and ICC is the intraclass (within cluster) correlation coefficient that quantifies the strength of association between subjects within a cluster. The ICC can either be estimated from pilot data or from previous studies in the same area (see examples), or otherwise a value must be assumed. For small cluster sizes ($m<5$) and intraclass correlations ($ICC<0.01$), the sample size needs only to be inflated by typically less than 10% (see Table 1). However for larger values of both $m$ and ICC, sample sizes may need to be doubled, trebled or more to achieve the required power.
+
+**Table 1.**
+ Variance inflation factors for cluster sizes ($m$) 2, 5, 10 and 20, and intraclass correlation coefficients (ICC) 0.01, 0.05, 0.1 and 0.5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>m</th>
+      <th colspan="4">ICC</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>0.01</th>
+      <th>0.05</th>
+      <th>0.1</th>
+      <th>0.5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.01</td>
+      <td>1.05</td>
+      <td>1.10</td>
+      <td>1.50</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1.04</td>
+      <td>1.20</td>
+      <td>1.40</td>
+      <td>3.00</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1.09</td>
+      <td>1.45</td>
+      <td>1.90</td>
+      <td>5.50</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>1.19</td>
+      <td>1.95</td>
+      <td>2.90</td>
+      <td>10.50</td>
+      <td>20</td>
+    </tr>
+  </tbody>
+</table>
 
 For more complex settings, often the only realistic option for sample size estimation is simulation. Raw data values are created from an assumed distribution (e.g. multivariate normal distribution with known means and covariances) using a random number generator, and the planned analysis performed on these data. This process can be repeated many (usually thousands of) times and the design characteristics (e.g. power and type I error rate) calculated for various sample sizes. This has typically been a task that requires expert statistical input, but increasingly code is available in R to make this much easier (Green and MacLeod, 2016; Johnson et al., 2015). Many application area dependent rules of thumb exist when selecting a sample size, the most general being the resource equation approach of (Mead et al., 2012), which suggests that approximately 15 degrees of freedom are required to estimate the error variance at each level of an analysis.
 
-## Analysis
+### Analysis
 
 Incorrect analysis of data that have known or expected dependencies leads to inflation of the false positive rate (type I error rate) and invalid estimates of statistical power, leading to incorrect statistical inference; a simulation study (Appendix 1) shows how various design characteristics can affect the properties of a hypothetical study. Focussing on linear statistical modelling (McCullagh and Nelder, 1998), which is by far the most widely used methodology for analysis when reporting research in the biomedical sciences, there are generally two distinct approaches to analysis when there are known UoA issues (Altman and Bland, 1997).
 
-## Subject-based analysis
+#### Subject-based analysis
 
 The simplest approach to analysis is to use a single observation for each subject. This could be achieved by selecting a single representative observation or more usually by calculating a summary measure for each subject. The summary measure is often the mean value, but could be for instance the area under a response curve or the gradient (rate) measure from a linear model. Given that this results in a single observation for each subject, analysis can proceed using the summary measure data in the conventional way using a generalized linear model (GLM; (McCullagh and Nelder, 1998)) assuming independence between all observations.
 
 A GLM relates a (link function) transformed response variable to a linear combination of explanatory variables via a number of model parameters that are estimated from the observed data. The explanatory variables are so-called fixed-effects that represent the (systematic) observed data that are used to model the response variable. The lack of model fit is called the residual or error, and represents unstructured deviations from the model predictions that are beyond control. The subject-based approach is valid but has the disadvantage that not all of the available data are used in the definitive analysis, resulting in some lack of efficiency. Care must be taken when choosing a single measure for each subject, ensuring the selection does not introduce bias and if a summary measure is generated, this value must be meaningful and if appropriate the analysis should be weighted to account for the precision in estimation of the summary measure.
 
-## Mixed-effect analysis
+#### Mixed-effect analysis
 
 A better approach than the subject-based analysis, is a mixed-effect analysis (Galwey, 2014; Pinheiro and Bates, 2000). A (generalized) linear mixed effects model (GLME) is an extension of the conventional GLM, where structure is added to the error term, leaving the systematic fixed terms unchanged, by adding so-called random-effect terms that partition the error term into a set of structured (often nested) terms. In the simplest possible setting (Bouwmeester et al., 2013), the error term is replaced by a subject-error term to model the variation between subjects and a within-subject error term to model the within subject variation. This partition of the error into multiple strata allows, for instance, the correct variability (subject-error term) to be used to compare groups of subjects. Random-effects are often thought of as terms that are not of direct inferential interest (in contrast to the fixed-effects) but are such that they need to be properly accounted for in the model; e.g. a random selection of subjects or centres in a clinical trial, shelves in an incubator that form a temperature gradient or repeat assays from a tissue sample.
 
@@ -80,19 +130,198 @@ The algorithms used to estimate the model terms for a GLME and details of how to
 
 In order to better appreciate the importance of UoA issues, to understand how these issues arise and to show statistically how analyses should be implemented, two example datasets from real experiments are described and analysed in some detail. The aims of the experiments are clearly not of direct importance, but the logic, process and conduct of the analyses are intended to be sufficiently general in nature so as to elucidate many key problematic issues.
 
-## Example 1: Adjuvant radiotherapy and lymph node size in colorectal cancer
+### Example 1: Adjuvant radiotherapy and lymph node size in colorectal cancer
 
 Six subjects diagnosed with colorectal cancer, after confirmatory magnetic resonance imaging, underwent neoadjuvant therapy comprising of a short course of radiotherapy (RT) over one week prior to resection surgery. These subjects were compared with six additional cancer subjects, of similar age and disease severity, who did not receive the adjuvant therapy. The aim of the study was to assess whether the therapy reduced lymph node size in the resection specimen (i.e. the sample removed during surgery). The resection specimen for each subject was divided into two sub-samples after collection, and each was fixed in formalin for 48-72 hr. These sub-samples were processed and analysed at two occasions, by different members of the laboratory team. The samples were sliced at 5mm intervals and images captured and analysed in an automated process that identified lymph node material which was measured by a specialist pathologist to give a measure of individual lymph node size (i.e. diameter), based on assumed sphericity. Three slices per sub-sample were collected for each subject. Table 2 shows the measured lymph node sizes in mm for each sample.
 
-## Naive analysis
+**Table 2.**
+ Lymph node sizes (mm), by sample slice and subject, by radiotherapy (RT) group, subjects 1 to 6 no RT and subjects 7 to 12 short RT; highlighted cells are those removed to unbalance the design.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">None</th>
+      <th colspan="5">Short RT</th>
+    </tr>
+    <tr>
+      <th>Subject</th>
+      <th>Sample</th>
+      <th colspan="3">Slice</th>
+      <th>Subject</th>
+      <th>Sample</th>
+      <th colspan="3">Slice</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th></th>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1</td>
+      <td>1.71</td>
+      <td>1.98</td>
+      <td>1.88</td>
+      <td>7</td>
+      <td>1</td>
+      <td>2.37</td>
+      <td>2.36</td>
+      <td>2.20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>1.72</td>
+      <td>1.98</td>
+      <td>1.85</td>
+      <td></td>
+      <td>2</td>
+      <td>2.36</td>
+      <td>2.62</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1</td>
+      <td>2.51</td>
+      <td>2.55</td>
+      <td>2.65</td>
+      <td>8</td>
+      <td>1</td>
+      <td>1.33</td>
+      <td>1.35</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2.98</td>
+      <td>3.20</td>
+      <td>2.80</td>
+      <td></td>
+      <td>2</td>
+      <td>1.90</td>
+      <td>1.87</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>1.69</td>
+      <td>1.72</td>
+      <td>1.80</td>
+      <td>9</td>
+      <td>1</td>
+      <td>1.70</td>
+      <td>1.78</td>
+      <td>1.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>1.82</td>
+      <td>1.97</td>
+      <td>1.73</td>
+      <td></td>
+      <td>2</td>
+      <td>2.07</td>
+      <td>1.76</td>
+      <td>1.85</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1</td>
+      <td>1.72</td>
+      <td>1.78</td>
+      <td>2.04</td>
+      <td>10</td>
+      <td>1</td>
+      <td>2.23</td>
+      <td>2.14</td>
+      <td>2.21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2.50</td>
+      <td>2.65</td>
+      <td>2.77</td>
+      <td></td>
+      <td>2</td>
+      <td>2.50</td>
+      <td>2.33</td>
+      <td>2.16</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1</td>
+      <td>3.32</td>
+      <td>3.27</td>
+      <td>3.07</td>
+      <td>11</td>
+      <td>1</td>
+      <td>2.10</td>
+      <td>1.89</td>
+      <td>1.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>3.11</td>
+      <td>3.03</td>
+      <td>3.11</td>
+      <td></td>
+      <td>2</td>
+      <td>2.11</td>
+      <td>2.16</td>
+      <td>2.12</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>2.33</td>
+      <td>2.48</td>
+      <td>2.53</td>
+      <td>12</td>
+      <td>1</td>
+      <td>2.58</td>
+      <td>2.54</td>
+      <td>2.59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>2.86</td>
+      <td>2.87</td>
+      <td>2.52</td>
+      <td></td>
+      <td>2</td>
+      <td>2.77</td>
+      <td>2.65</td>
+      <td>2.60</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Naive analysis
 
 The simplest analysis and the one that may appear to be correct if no information on the design or data structure shown in Table 2 were known, would be a t-test that compares the mean lymph node size between the RT groups. This shows that there is reasonable evidence to support a statistically significant difference in mean lymph node size between those subjects who received RT (Short RT) and those who did not (None); mean in group None = 2.403 mm and in group RT Short = 2.120 mm, difference in means = 0.283 mm (95% CI; 0.057 to 0.508), with a t-statistic = 2.501 on 70 degrees of freedom, and a p-value = 0.015. The conclusion from this analysis is that lymph node sizes were statistically significantly smaller in the group that had received adjuvant RT. Why should the veracity of this result be questioned?
 
-The assumptions made when undertaking any statistical analysis must be considered carefully. The t-statistic is calculated as the absolute value of the difference between the group means, divided by the pooled standard error of the difference (sed) between the group means. This latter quantity is given by sed=s×(1/n1+1/n2), where n1 and n2 are the sample sizes in the two groups and s2 is the pooled variance given by s2=((n1−1)s12+(n2−1)s22)/(n1+n2−2); where s12 and s22 are the variances within each group. The important thing to realize here is that the variances within each of the RT groups are calculated by simply taking the totality of data for all six subjects in each group, across all sample types and slices. One of the key assumptions of the t-test is that of independence. Specifically, this requires the lymph node sizes to be all independent of each other; i.e. the observed size for one particular node is not systematically related to the other lymph node size data used for the statistical test. What is meant by related to in this context?
+The assumptions made when undertaking any statistical analysis must be considered carefully. The t-statistic is calculated as the absolute value of the difference between the group means, divided by the pooled standard error of the difference (sed) between the group means. This latter quantity is given by $sed=s\times\sqrt{(1/n_{1}+1/n_{2})}$, where $n_{1}$ and $n_{2}$ are the sample sizes in the two groups and $s^{2}$ is the pooled variance given by $s^{2}=((n_{1}−1)s_{1}^{2}+(n_{2}−1)s_{2}^{2})/(n_{1}+n_{2}−2)$; where $s_{1}^{2}$ and $s_{2}^{2}$ are the variances within each group. The important thing to realize here is that the variances within each of the RT groups are calculated by simply taking the totality of data for all six subjects in each group, across all sample types and slices. One of the key assumptions of the t-test is that of independence. Specifically, this requires the lymph node sizes to be all independent of each other; i.e. the observed size for one particular node is not systematically related to the other lymph node size data used for the statistical test. What is meant by related to in this context?
 
 It seems highly likely that the lymph node sizes for repeat slices for any particular sample for a subject are more similar than size measurements from other subjects. Similarly, it might be expected that lymph node sizes for the two samples for each subject are more similar than lymph nodes size measurements from other subjects. If the possibility that this is important is ignored, and a t-test is undertaken, then the variability measured between samples and between slices within samples is being used to assess differences between subjects. If the assumption of independence is not valid, then by ignoring this, claims for statistical significance may be being made that are not supported by the data (See Appendix 4 for a mathematical description of the naive analysis).
 
-## Subject-based analysis
+#### Subject-based analysis
 
 Given that the lymph node size measurements within samples and subjects are likely to be more similar to each other than to data from other subjects, how should the analysis be conducted? Visual inspection of the data can often reveal patterns that are not apparent from tabular summaries; Figure 1 shows a strip plot of the data from Table 2.
 
@@ -104,11 +333,11 @@ Using the mean lymph node size for each subject as the summary measure (subjects
 
 In the naive analysis the variability between measurements within the main experimental units (subjects) and the variability between experimental units was used to assess the difference between experimental units. In the analysis in this section the variability between experimental units alone has been used to assess the effect of the intervention applied to the experimental units. The multiple measurements within each experimental unit improve the precision of the estimate of the unit mean, but provide no information on the variability between units, that is important in assessing interventions that are applied to the experimental units. This analysis is clearly an improvement on the naive analysis, but it uses only summary measures for each experimental unit, rather than the full data, it tells us nothing about the relative importance of the variability between subjects, between samples and between slices and it does not allow us to assess the importance of these design factors to the conclusions of the analysis.
 
-## Linear mixed-effects analysis
+#### Linear mixed-effects analysis
 
 To correctly explain and model the lymph node data a linear mixed-effects model must be used. The experimental design used in the lymph node study provides the information needed to construct the random-effects for the mixed-effects model. Here there are multiple levels within the design that are naturally nested within each other; samples are nested within subjects, and slices are nested within samples. Fitting such a mixed-effects model gives the following estimate for the intervention effect (RT treatment groups); difference in means = 0.283 mm (95% CI; -0.321 to 0.886), with a p-value = 0.322 (t-statistic = 1.043 on 10 degrees of freedom). For a balanced design, intervention effect estimates for the mixed-effects model are equivalent to those from the subject-based analysis. A balanced design is one where there are equal numbers of observations for all possible combinations of design factor levels; in this example there are the same number of slices within samples and samples within subjects.
 
-The mixed effects model allows the variability within the data to be examined explicitly. Output from model fitting also provides estimates of the standard deviations of the random effects for each level of the design; these are for subjects, σP = 0.436 (95% CI; 0.262 to 0.727), samples σS = 0.236 (95% CI; 0.151 to 0.362) and residuals (slices) σϵ = 0.122 (95% CI; 0.100 to 0.149). Squaring to get variances, indicates that the variability, in lymph node size, between subjects was three and half times more than the variability between samples, and nearly thirteen times as much as the variability between repeat slices within samples. The intraclass correlation coefficient measures the strength of association between units within the same group; for subjects ICCP = 0.733, where ICCP=σP2/(σP2+σS2+σϵ2). This large value, which represents the correlation between two randomly selected observations on the same subject, shows why the independence assumption required for the naive analysis is wrong (i.e. independence implies that ICC = 0). This demonstrates clearly why pooling variability without careful thought about the sampling strategy and design of an experiment is unwise, and likely to lead to erroneous conclusions.
+The mixed effects model allows the variability within the data to be examined explicitly. Output from model fitting also provides estimates of the standard deviations of the random effects for each level of the design; these are for subjects, $\sigma_{P}$ = 0.436 (95% CI; 0.262 to 0.727), samples $\sigma_{S}$ = 0.236 (95% CI; 0.151 to 0.362) and residuals (slices) $\sigma_{ϵ}$ = 0.122 (95% CI; 0.100 to 0.149). Squaring to get variances, indicates that the variability, in lymph node size, between subjects was three and half times more than the variability between samples, and nearly thirteen times as much as the variability between repeat slices within samples. The intraclass correlation coefficient measures the strength of association between units within the same group; for subjects $ICC_{P}$ = 0.733, where $ICC_{P}=\sigma_{P}^{2}/(\sigma_{P}^{2}+\sigma_{S}^{2}+\sigma_{ϵ}^{2})$. This large value, which represents the correlation between two randomly selected observations on the same subject, shows why the independence assumption required for the naive analysis is wrong (i.e. independence implies that ICC = 0). This demonstrates clearly why pooling variability without careful thought about the sampling strategy and design of an experiment is unwise, and likely to lead to erroneous conclusions.
 
 Various competing models for random effects can be compared using likelihood ratio tests (LRT). For instance in this example suppose that the two samples collected for the same subject had been arbitrarily labelled as sample 1 and sample 2, and in practice there was no real difference in the methods used to process or capture images of nodes from the two samples. In such a setting, a more appropriate random effects model may be to have a subject effect only and ignore the effects of samples within subjects. Constructing such a model and comparing to the more complex model gives a LRT = 39.92 and p-value < 0.001, providing strong support in favour of the full multilevel model. Diagnostic analyses can be undertaken after fitting mixed-effects model, in an analogous manner to linear models (Fox et al., 2011).
 
@@ -116,25 +345,144 @@ Figure 2 shows boxplots of residuals for each subject and a quantile-quantile pl
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32486/elife-32486-fig2-v1.jpg)
 
-**Figure 2.:** ) are medians, boxes are interquartile ranges (IQR), whiskers extend to 1.5∙IQR and symbols (×) outside these are suspected outliers (∘a).Quantile-quantile (Q–Q) plot of the model residuals () on the horizontal axis against theoretical residuals from a Normal distribution on the vertical axis (∘b).
+**Figure 2.:** Boxplots of residuals (observed values - fitted values) for each subject; symbols ($∙$) are medians, boxes are interquartile ranges (IQR), whiskers extend to 1.5$\times$IQR and symbols ($∘$) outside these are suspected outliers (a).Quantile-quantile (Q–Q) plot of the model residuals ($∘$) on the horizontal axis against theoretical residuals from a Normal distribution on the vertical axis (b).
 
-## Unbalanced data analysis
+#### Unbalanced data analysis
 
 Intervention effect estimates for the mixed-effects and subject-based analyses presented here are equivalent, due to the balanced nature of the design. Every subject has complete data for all samples and slices. By calculating means for each subject averaging occurs across the same mix of samples and slices, so irrespective of the effects on the analysis of these factors, the means will be directly comparable and estimated with equivalent precision. Whilst balance is a desirable property of any experimental design, it is often unrealistic and impractical to obtain data structured in this way; for instance in this example, samples may be contaminated or damaged during processing or insufficient material may be available for all three slices.
 
-Repeating the above mixed-effects analysis after randomly removing 50% of the data (see Table 2), gives an estimated difference in lymph node size between groups = 0.263 mm (95% CI; -0.397 to 0.922), with a p-value = 0.391, and estimates of the standard deviations of the random effects for each level of the design, σP=0.421 (95% CI; 0.224 to 0.794), σS=0.279 (95% CI; 0.160 to 0.489) and σϵ=0.124 (95% CI; 0.088 to 0.174). These are, perhaps surprisingly given that only half the data from the previous analysis are being used, very similar to estimates from the complete data. However, in the unbalanced setting the subject-based analysis is no longer valid, as it ignores the variation in sample sizes between subjects; the estimated difference in lymph node size between groups is 0.199 mm (95% CI; -0.474 to 0.872) for the subject-based analysis.
+Repeating the above mixed-effects analysis after randomly removing 50% of the data (see Table 2), gives an estimated difference in lymph node size between groups = 0.263 mm (95% CI; -0.397 to 0.922), with a p-value = 0.391, and estimates of the standard deviations of the random effects for each level of the design, $\sigma_{P}=0.421$ (95% CI; 0.224 to 0.794), $\sigma_{S}=0.279$ (95% CI; 0.160 to 0.489) and $\sigma_{ϵ}=0.124$ (95% CI; 0.088 to 0.174). These are, perhaps surprisingly given that only half the data from the previous analysis are being used, very similar to estimates from the complete data. However, in the unbalanced setting the subject-based analysis is no longer valid, as it ignores the variation in sample sizes between subjects; the estimated difference in lymph node size between groups is 0.199 mm (95% CI; -0.474 to 0.872) for the subject-based analysis.
 
-## Example 2: Lymph node counts after random sampling
+### Example 2: Lymph node counts after random sampling
 
-The most extreme example of non-normal data is for binary responses, which generally results from yes/no or present/absence type outcomes. Extending the lymph node example, in a parallel study, rather than measure the sizes of selected nodes or conduct a time-consuming count of all nodes, a random sampling strategy was used to select regions of interest (RoI) in which fives nodes were randomly selected and compared to a 2mm reference standard (≥2mm; yes or no). This could be done rapidly by a non-specialist. Five samples were processed for each of twelve subjects, in an equivalent design to the lymph node size study; data are shown in Table 3.
+The most extreme example of non-normal data is for binary responses, which generally results from yes/no or present/absence type outcomes. Extending the lymph node example, in a parallel study, rather than measure the sizes of selected nodes or conduct a time-consuming count of all nodes, a random sampling strategy was used to select regions of interest (RoI) in which fives nodes were randomly selected and compared to a 2mm reference standard ($\geq$2mm; yes or no). This could be done rapidly by a non-specialist. Five samples were processed for each of twelve subjects, in an equivalent design to the lymph node size study; data are shown in Table 3.
 
-## Non-normal data analysis
+**Table 3.**
+ Number of five selected lymph nodes with maximum diameters $\geq$2mm, for up to five tissue samples per subject (1-12), after either none or a short course of radiotherapy (Short RT).
 
-For some subjects there was insufficient tissue for five samples, resulting in an unbalanced design. The odds of an event (i.e. observing or not observing a lymph node with diameter ≥2mm), is the ratio of the probabilities of the two possible states of the binary event, and the odds ratio is the ratio of the odds in the two groups of subjects (e.g. those receiving either None or Short RT). A naive analysis of these data suggest an estimate of the odds ratio of (43/82)/(79/46) = 0.31, for RT Short versus None groups; 43 lymph nodes with maximum diameters ≥2mm from 125 in the RT Short group versus 79 from 125 in the None group. Being in the RT Short group results in a lower odds of lymph nodes with diameters ≥2mm. This is the result one would obtain by conventional logistic regression analysis; odds-ratio 0.31 (95% CI; 0.18 to 0.51; p-value < 0.001) providing very strong evidence that lymph node diameters were lower in the RT Short group.
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">None</th>
+      <th colspan="6">Short RT</th>
+    </tr>
+    <tr>
+      <th>Subject</th>
+      <th colspan="5">Sample</th>
+      <th>Subject</th>
+      <th colspan="5">Sample</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+      <th></th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th>5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>7</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>2</td>
+      <td>-</td>
+      <td>8</td>
+      <td>1</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-</td>
+      <td>9</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>10</td>
+      <td>2</td>
+      <td>1</td>
+      <td>4</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>3</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>5</td>
+      <td>11</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2</td>
+      <td>5</td>
+      <td>5</td>
+      <td>3</td>
+      <td>3</td>
+      <td>12</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Non-normal data analysis
+
+For some subjects there was insufficient tissue for five samples, resulting in an unbalanced design. The odds of an event (i.e. observing or not observing a lymph node with diameter $\geq$2mm), is the ratio of the probabilities of the two possible states of the binary event, and the odds ratio is the ratio of the odds in the two groups of subjects (e.g. those receiving either None or Short RT). A naive analysis of these data suggest an estimate of the odds ratio of (43/82)/(79/46) = 0.31, for RT Short versus None groups; 43 lymph nodes with maximum diameters $\geq$2mm from 125 in the RT Short group versus 79 from 125 in the None group. Being in the RT Short group results in a lower odds of lymph nodes with diameters $\geq$2mm. This is the result one would obtain by conventional logistic regression analysis; odds-ratio 0.31 (95% CI; 0.18 to 0.51; p-value < 0.001) providing very strong evidence that lymph node diameters were lower in the RT Short group.
 
 In logistic regression analysis the estimated regression coefficients are interpreted as log odds-ratios, which can be transformed to odds ratios using the exponential function (Hosmer et al., 2013). However, one should be instinctively cautious about this result, as it is clear from Table 3 that variation within subjects is much less than between subjects; i.e. some subjects have low counts across all samples and others have high counts across all samples. The above analysis ignores this fact and pools variation between samples and between subjects to test for differences between two groups of subjects. This is clearly not a good idea.
 
-Fitting a GLME model with a subject random effect, gives an estimated odds-ratio for the Short RT group of 0.26 (95% CI; 0.09 to 0.78; p-value = 0.016). The predicted probability of detecting a lymph node with a diameter ≥2mm was 0.65 for the None RT group and 0.33 for the Short RT. The overall conclusions of the study have not changed, however the level of significance associated with the result is massively overstated in the simple logistic regression, due to the much smaller estimate of the standard error of the log odds-ratio (0.264 for logistic regression versus 0.564 for the mixed-effects logistic regression). By failing to properly account for the difference in variability between measurements made on the same subject relative to the variability in measurements between subjects results in overoptimistic conclusions.
+Fitting a GLME model with a subject random effect, gives an estimated odds-ratio for the Short RT group of 0.26 (95% CI; 0.09 to 0.78; p-value = 0.016). The predicted probability of detecting a lymph node with a diameter $\geq$2mm was 0.65 for the None RT group and 0.33 for the Short RT. The overall conclusions of the study have not changed, however the level of significance associated with the result is massively overstated in the simple logistic regression, due to the much smaller estimate of the standard error of the log odds-ratio (0.264 for logistic regression versus 0.564 for the mixed-effects logistic regression). By failing to properly account for the difference in variability between measurements made on the same subject relative to the variability in measurements between subjects results in overoptimistic conclusions.
 
 ## Discussion
 

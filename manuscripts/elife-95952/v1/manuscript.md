@@ -22,14 +22,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Ludwig Center for Cancer Genetics and Therapeutics, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00za53h95 Cellular and Molecular Medicine Graduate Program, Johns Hopkins University School of Medicine Baltimore United States
+1. Ludwig Center for Cancer Genetics and Therapeutics, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Cellular and Molecular Medicine Graduate Program, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 3. Department of Oncology, Johns Hopkins Medical Institutions Baltimore United States
-4. https://ror.org/00za53h95 Sidney Kimmel Cancer Center, Johns Hopkins University School of Medicine Baltimore United States
-5. https://ror.org/006w34k90 Howard Hughes Medical Institute, Johns Hopkins University School of Medicine Baltimore United States
-6. https://ror.org/00za53h95 Sol Goldman Pancreatic Cancer Research Center, Johns Hopkins University School of Medicine Baltimore United States
-7. https://ror.org/00za53h95 Department of Neurosurgery, Johns Hopkins University School of Medicine Baltimore United States
-8. https://ror.org/00za53h95 Department of Molecular and Comparative Pathobiology, Johns Hopkins University School of Medicine Baltimore United States
+4. Sidney Kimmel Cancer Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+5. Howard Hughes Medical Institute, Johns Hopkins University School of Medicine Baltimore United States ([ROR:006w34k90](https://ror.org/006w34k90))
+6. Sol Goldman Pancreatic Cancer Research Center, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+7. Department of Neurosurgery, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+8. Department of Molecular and Comparative Pathobiology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -47,7 +47,7 @@ In this work, we create a cell-based high-throughput assay to query the effects 
 
 ## Results
 
-## Development of a high-throughput assay to identify NMD inhibitors
+### Development of a high-throughput assay to identify NMD inhibitors
 
 To develop an assay to find NMD inhibitors, we identified isogenic cell lines with out-of-frame indel mutations, hereinafter referred to as truncating mutations, targeted by NMD activity (Supplementary file 1). We previously reported a panel of non-cancerous cell lines in which 19 common tumor suppressor genes were inactivated using the Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR)–Cas9 system (Cook et al., 2022). Through evaluation of this panel, we discovered two genes, Stromal Antigen 2 (STAG2) and Tumor Protein p53 (TP53), which did not express their expected proteins when assessed by western blots (STAG2) or immunohistochemistry (TP53) (Figure 1—figure supplement 1). Because the inactivation of these two genes was the result of frameshift mutations, we suspected that the absence of the proteins was due to NMD. This suspicion was supported by whole transcriptome RNA-sequencing (Figure 1—figure supplement 2; Cook et al., 2022). Notably, we saw an average decrease of STAG2 RNA transcripts by 20-fold and TP53 by 6-fold relative to their respective wild-type transcripts in the parental cell lines.
 
@@ -55,15 +55,51 @@ We selected two STAG2 knockout clones (clones 2 and 8) and one TP53 knockout clo
 
 We then designed a next-generation sequencing (NGS) assay for NMD (Figure 1A). We mixed the three cell lines in equal proportions and plated the mixture in 96-well plates followed by treatment with one compound (drug) per well. We determined NMD inhibition efficacy by comparing the wild-type and truncating mutant transcript expression levels in a ratiometric manner. Specifically, the wild-type sequences of the reciprocally knocked out clone (i.e., wild-type STAG2 sequence from the TP53 knockout clones, and wild-type TP53 sequence from the STAG2 knockout clones) served as internal references, providing a ratiometric assay of mutant to wild-type transcript abundance. This ratiometric assay minimized confounders introduced by nonspecific transcriptional activators or generally toxic agents. The use of three cell lines with different truncating mutations from two different target genes minimized the possibility that drugs identified in the HTS were cell line clone or mutation specific. Note that the use of these cell lines, carefully mixed, banked, and preserved, did not substantially increase the amount of time or work required to screen a single-cell line. A combination of well and plate barcodes allowed the pooling and scoring of over 1920 assays in a single NGS lane (see methods).
 
-## Execution of an HTS to identify NMD inhibitors
+![Figure 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of high-throughput screen (HTS) used to identify inhibitors of NMD. Mutant transcripts are represented by a smaller length in the cartoon for illustrative purposes only. All small molecules were tested at 10 μM. (B) Mutant RNA reads relative to wild-type reads for the top 8 hits from the HTS. The dotted line represents the minimum fraction required to be considered a hit (>5 standard deviations above dimethyl sulfoxide [DMSO] control). Full screen results are presented in Figure 1—figure supplement 4. (C) Targeted RNA-sequencing results of isogenic RPTec knockout clones treated with the eight best hits from the HTS at 10 µM. The dotted line represents a relative RNA expression level of 1, equal to that of DMSO-treated wells. Data for ceritinib, which did not validate on any line, are presented only in Figure 1—figure supplement 8. (D) TP53 western blot on RPE TP53 224, containing a homozygous TP53 mutation, using the four hit compounds that validated in RPTec isogenic lines at 10 μM. (E) Western blot analysis of full-length TP53α and isoform TP53β after treatment with two NMD inhibitor lead candidates at 10 μM. TP53β (expression known to be controlled by NMD) as well as mutant TP53 are prominently induced by LY3023414 whereas full length is not. Note that RPE TP53 223 is a heterozygous knockout clone with one near wild-type allele whereas RPTec TP53 588 contains a homozygous TP53 indel mutation. (F) Quantitative real-time PCR (qPCR) showing 10 μM LY3023414 treatment causes increased expression of the NMD controlled alternative transcript for TP53, TP53β, in parent cell lines for RPE1 and RPTec. Significance determined by Student’s t-test. Unless indicated otherwise cells were exposed to test compound for 16 hr.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Western blot showing STAG2 protein loss in four independent clones of which only clones 2 and 8 were used in subsequent experiments (bottom left). Note that STAG2 clone 8 has two independent biallelic indel events. The mutation in exon 15 was used for scoring relative transcript levels in the screen and for subsequent work. Immunohistochemistry (IHC) results confirming p53 protein loss in RPE TP53 221 (bottom right).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** RPE1 TP53 clone 221, RPE1 STAG2 clone 2, and RPE1 STAG2 clone 8 were used in the high-throughput screen (HTS). RPE1 TP53 clone 223 and RPE1 TP53 clone 224 are used in Figure 1—figure supplement 6. Note clone 223 has a 9-bp in-frame deletion in one allele and an out-of-frame deletion on the other allele, presumably accounting for the higher level of expression.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Red arrows indicate the cell line containing the truncating mutation in the gene being assessed. Error bars show standard deviation of three biological replicates. All changes are statistically significant by Student’s t-test (p < 0.05).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The x-axis represents all 2658 compounds screened at 10 µM, y-axis shows ratio of mutant to wild-type reads for each of the three isogenic cell lines. Higher values indicate more mutant RNA reads, representing inhibition of nonsense-mediated decay (NMD). The dotted line at 0.46 is the cutoff for a hit to be called (5 standard deviations above dimethyl sulfoxide [DMSO]-treated samples). Colored data points demarcate the eight hit compounds in the three screened cell lines.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Six DMSO and two emetine (12 mg/ml) samples were included in each dosing plate for a total of 198 DMSO and 66 emetine measurements in each boxplot.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Immunohistochemistry (IHC) staining of TP53 in RPTec TP53 knockout clones. (B) Western blot against STAG2 on RPTec STAG2 knockout clones demonstrating successful knockout at the protein level of all 10 clones. Out-of-frame indels were confirmed in all clones by next-generation sequencing (NGS) (data not shown). The arrow indicates the expected size for full-length STAG2 protein. (C) IHC staining of TP53 protein on RPE1 TP53 knockout clones. Clone 223 contains the same truncating mutation found in clone 224 on allele 1 and has a 9-bp in-frame deletion that preserves some full-length TP53α and TP53β isoform expression on allele 2 (see Figure 1E). Note that the IHC image shown for RPE1 parent (control) in part C is the same image shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Note: RPE TP53 223 has an in-frame deletion in the DNA-binding domain.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Each line was treated with each of the eight hit compounds from the screen. The 10 µM dose is also shown in Figure 1C.
+
+### Execution of an HTS to identify NMD inhibitors
 
 Previous human clinical trials suggest that off-target toxicity at doses required for NMD inhibition makes emetine and other well-known NMD inhibitors unsuitable for human use (Siddiqui et al., 1973; Moertel et al., 1974; Mastrangelo et al., 1973; Tang et al., 2012; Bongiorno et al., 2021). We performed an HTS to identify more specific NMD inhibitors by treating the isogenic cell line panel described above with a commercially available library consisting of 2658 FDA-approved or in late-phase clinical trial small molecules and natural products (Supplementary file 2). After purifying RNA from cells 16 hr post-treatment, we scored NMD inhibition using the strategy described in Figure 1A and Figure 1—figure supplement 4. Predictably, emetine increased the relative expression of mutant to wild-type transcripts by three- to fourfold on average (Figure 1—figure supplement 5). Eight compounds (0.3% of the library) increased the ratiometric mutant transcript fraction more than 5 standard deviations above the dimethyl sulfoxide (DMSO) controls in all three cell lines (Figure 1B). This hit threshold was chosen as it was the minimum required to ensure no false positives were observed in the DMSO controls. One of these eight compounds, anisomycin, is a known inhibitor of protein synthesis and commonly used NMD inhibitor for in vitro studies, providing independent validation of the screen (Carter et al., 1995). The other seven compounds increased mutant RNA transcript levels five- to tenfold relative to untreated cells.
 
-## LY3023414 inhibits NMD and causes re-expression of mutant RNA and protein
+### LY3023414 inhibits NMD and causes re-expression of mutant RNA and protein
 
 To validate the eight hit compounds described above, we tested their effects in additional lines with mutations targeted by NMD (Supplementary file 1). First, we assessed them on isogenic STAG2 and TP53 knockouts in RPtec cells, another non-cancerous cell line (Figure 1—figure supplement 6A, B and Figure 1—figure supplement 7; Cook et al., 2022). Four of the original eight hit compounds increased mutant RNA expression in a dose-dependent manner (Figure 1C and Figure 1—figure supplement 8). Next, we examined the effects of these four compounds on additional RPE1 TP53 knockout cell lines with different mutations predicted to generate truncated TP53 proteins (Figure 1—figure supplement 6C and Figure 1—figure supplement 7). While treatment with all four potential NMD inhibitors restored expression of the truncated mutant TP53 proteins, two of them (LY3023414 and halofuginone) did so most robustly (Figure 1D, E). Additionally, TP53 has an isoform, TP53β, whose expression is known to be controlled by the NMD pathway (Cowen and Tang, 2017). Using cell lines with intact TP53β isoform transcripts, we observed an increase in the TP53β isoform in cell lines treated with both LY3023414 and halofuginone (Figure 1E, middle and left columns). Quantitative real-time PCR (qPCR) of both the full-length TP53- (TP53α) and NMD-sensitive (TP53β) transcripts in parental RPE1 and RPTec cells treated with LY3023414 or halofuginone confirmed the selective upregulation of TP53β, but not TP53α, transcripts (Figure 1F). Based on a consistently stronger effect of LY3023414 over halofuginone across multiple isogenic cell lines and assays, LY3023414 was chosen to be the initial lead compound for further studies involving NMD inhibition.
 
-## LY3023414 increases expression of NMD repressed mutant RNA transcripts and proteins in vitro and in vivo
+### LY3023414 increases expression of NMD repressed mutant RNA transcripts and proteins in vitro and in vivo
 
 To evaluate whether LY3023414 could relieve NMD repression of naturally occurring heterozygous mutant transcripts, we chose the NCI-H358 and LS180 cancer cell lines (Supplementary file 1). Treatment with LY3023414 followed by whole transcriptome RNA-sequencing revealed increased expression of the mutant allele in 42% and 67% of heterozygous, out-of-frame, indel mutations in these two lines (Figure 2A). A third of the nonsense mutations in NCI-H358 were also ‘recovered’ (i.e., mutant transcripts increased relative to wild-type transcripts) after treatment with LY3023414 (Figure 2A, middle). In LS180, there was only one nonsense mutation meeting the required coverage, so it could not be evaluated in depth. Single base pair substitutions not resulting in stop codons were not affected by LY3023414 in either line (Figure 2A, right).
 
@@ -75,29 +111,91 @@ The whole transcriptome sequencing data were confirmed by targeted deep RNA-sequ
 
 LY3023414 was originally developed as a PI3K inhibitor with activity against AKT Serine/Threonine Kinase 1 (AKT1) and Mammalian Target of Rapamycin (mTOR) (Smith et al., 2016). It was tested in a number of clinical trials and has a well-known pharmacokinetic profile in vivo (Bendell et al., 2018; Rubinstein et al., 2020; Wei et al., 2016; Zou et al., 2017; Sweeney et al., 2022). To determine whether LY3023414 affects NMD in vivo, we established xenograft tumors of both NCI-H358 and LS180 in nude mice. Treatment of these mice with a single oral dose of 60 mg/kg LY3023414 led to a significant increase in the expression of mutant RNA transcripts relative to wild-type transcripts 16 hr later (Figure 2E). The RNF43 gene, which harbors a coding region heterozygous SNP, served as a control (Figure 2E). Severe drug-associated toxicity, including weight loss bordering on cachexia and near total inactivity, precluded the longer-term dosing required for anti-tumorigenic effects of LY3023414 in both BALB/c and C57BL/6N immunocompetent mouse strains.
 
-## The kinase SMG1 is the target for NMD inhibition by LY3023414
+### The kinase SMG1 is the target for NMD inhibition by LY3023414
 
 To investigate the mechanism of NMD inhibition by LY3023414, we evaluated the six kinases with the highest reported inhibition by LY3023414 (Smith et al., 2016). siRNA-mediated knockdown of each of these kinases in NCI-H358 and LS180 cancer cell lines was performed for this purpose (Figure 3—figure supplement 1). Only knockdown of SMG1 resulted in significant changes in the amount of truncating mutant transcript relative to wild-type transcript in all four genes evaluated (Figure 3A, top). RNF43 and DROSHA contain heterozygous coding region SNPs and served as controls in these experiments and as expected showed no changes despite siRNA treatment (Figure 3A, bottom).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fraction of mutant allele transcripts in genes with heterozygous indels previously established in this study as sensitive to NMD inhibition. Results show mutant levels after siRNA treatment targeting kinases inhibited by LY3023414. RNF43 and DROSHA are common heterozygous single-nucleotide polymorphisms (SNPs) (shaded gray) and serve as negative controls. (B) Fraction of mutant allele transcripts in genes with truncating mutations known to be sensitive to NMD inhibition after siRNA treatment with siUPF1 or non-targeting siRNA. Data from deep-targeted RNA-sequencing. (C) Structure of novel NMD inhibitor KVS0001. (D) Targeted RNA-sequencing on three genes with heterozygous, out-of-frame, indel mutations in LS180 cancer cells treated in a dose–response with KVS0001 or SMG1i-11. RNF43 serves as a control (common heterozygous SNP) and the mutant allele refers to the non-reference genome allele. (E) Western blot of EXOC1 protein in NCI-H358 cells treated with 5 µM novel inhibitor KVS0001, LY3023414, or SMG1i-11 for 24 hr. (F) Western blot of phosphorylated UPF1 on three cell lines treated with 5 µM KVS0001, SMG1i-11, or dimethyl sulfoxide (DMSO). Note that total UPF1 and p-UPF1 were run on different gels, loading controls correspond to indicated gel. (G) Fold change in the number of mutant allele transcripts measured by targeted RNA-seq in genes containing heterozygous out-of-frame indel mutations in NCI-H358 or (H) LS180 subcutaneous xenografts in bilateral flanks of nude mice. Mice were treated once with intraperitoneal (IP) injection of vehicle or 30 mg/kg KVS0001 and tumors harvested 16 hr post IP treatment. All genes shown contain heterozygous out-of-frame truncating mutations except RNF43 and DROSHA which serve as controls (contain heterozygous SNPs).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Cells are treated with siRNAs targeting genes known to be inhibited by LY3023414. Error bars represent 95% confidence intervals.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Gene names are shown in the boxes above each slider plot, genes highlighted in gray are common single-nucleotide polymorphisms (SNPs) and serve as a negative control (not expected to change). In the case of the control SNPs, the mutant allele refers to the non-reference genome allele. TRIM21 did not show a large change in expression with either small molecule, while ANLN did not show a difference with LY3023414 but did respond to SMG1i-11. The remaining genes responded to nonsense-mediated decay (NMD) inhibition by both LY3023414 and SMG1i-11.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Western blot showing SPTAN1 expression after treatment with dimethyl sulfoxide (DMSO), 5 µM LY3023414, or 1 µM SMG1 inhibitor SMG1i-11 (lanes 1, 2, and 3, respectively, for each antibody). The arrow indicates the expected size of the mutant NMD-targeted protein. Antibody ab75755 (Abcam) binds C-terminal to the out-of-frame indel and does not show mutant protein as expected. Antibody A301-249 (Bethyl) is polyclonal and also did not bind mutant protein. Antibody ab11755 (Abcam) is located N-terminal to the indel and does display mutant protein expression. (B) Western blot showing EXOC1 expression after treatment with DMSO, 5 µM LY3023414, or 1 µM SMG1i-11 (lanes 1, 2, and 3, respectively). The arrow indicates the expected size of the mutant (NMD-targeted) protein.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp4-v1.jpg)
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Kinativ assay results for KVS0001 at 100 nM and (B) 1 µM run with biological replicates showing KVS0001 specificity against the known kinome. Results are based on the average between two unique peptides for each kinase.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** DROSHA and RNF43 are common heterozygous single-nucleotide polymorphisms (SNPs) and serve as a negative control. In the case of the control SNPs, the mutant allele refers to the non-reference genome allele. Only the highest two concentrations were tested on LY3023414 which served as a positive control in this experiment. The dotted line indicates the mutant expression with dimethyl sulfoxide (DMSO) treatment and the solid line is a reference for equal expression of both the wild-type and mutant alleles.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** (A) Western blot showing expression of LMAN1 in LS180 cells treated with dimethyl sulfoxide (DMSO) (lane 1), KVS0001 at 5 µM (lane 2), or SMG1i-11 at 1 µM (lane 3). Arrows indicate expected size of wild-type and mutant LMAN1 protein. (B) Stain free loading control image for gel.
+
 SMG1 is known to regulate the NMD pathway by activating UPF1, an enzyme with RNA helicase and ATPase activity (Yamashita et al., 2001; Yamashita, 2013). We therefore knocked down UPF1 with siRNA and found that it restored expression of the NMD-downregulated transcripts, at levels similar to those observed after the knockdown of SMG1 (Figure 3B). Additionally, treatment of NCI-H358 and LS180 cancer cell lines with a previously reported SMG1-specific small molecule inhibitor, SMG1i-11, resulted in specific increases in the transcripts and proteins from genes with truncating mutations, just as did LY3023414 (Figure 3—figure supplements 2 and 3; Gopalsamy et al., 2012). Although SMG1i-11 displayed considerable SMG1 specificity and marked inhibition of NMD, it was highly insoluble. While we had no difficulty getting it into solution in DMSO for in vitro work, we were unable to find a vehicle to administer it in vivo, despite numerous attempts at various formulations and administration routes. This may explain why SMG1i-11 has been demonstrated to be an effective SMG1 inhibitor in vitro, but no peer-reviewed reports of its in vivo activity have been reported to date (Gopalsamy et al., 2012; Keenan et al., 2019; Valley et al., 2019).
 
-## Development of an improved NMD inhibitor targeting SMG1
+### Development of an improved NMD inhibitor targeting SMG1
 
 Although we were unable to secure a viable lead compound, the HTS did identify SMG1 as an ideal target to disrupt the NMD pathway. We sought to develop a new SMG1 inhibitor based on the cryo-electron microscopy structure of the binding pocket of SMG1 (Zhu et al., 2019; Langer et al., 2021). We attempted the synthesis of eleven compounds (KVS0001 to KVS0011) and tested for bioavailability and preservation of target specificity. Among these, KVS0001 stood out due to its solubility while preserving SMG1 inhibitory activity (Supplementary file 3, Figure 3C, and Figure 3—figure supplement 4). Mass spectrometry-based assays showed that KVS0001 inhibits SMG1 protein more than any of the other 246 protein or lipid kinases tested at concentrations from 10 nM to 1 µM (Supplementary file 4 and Figure 3—figure supplement 5; Patricelli et al., 2011). Noteworthy off-target kinase inhibition was not observed until doses of 1 µM and above. Experiments using NCI-H358 and LS180 cells showed that KVS0001 is bioactive in the nanomolar range and subverts the NMD-mediated downregulation of truncating mutant transcripts and proteins (Figure 3D, E, Figure 3—figure supplements 6 and 7). Inhibition at concentrations as low as 600 nM led to equal expression of wild-type and mutant transcripts, suggesting near total blockade of the NMD pathway (Figure 3D, Figure 3—figure supplement 6). Western blotting showed that KVS0001 substantially decreases the amount of phosphorylated UPF1, the downstream target of SMG1 kinase activity, in three different cell lines (Figure 3F). Finally, KVS0001 treatment of NCI-H358- and LS180-derived xenograft tumors in nude mice resulted in significant increases in transcript levels in each of six tested endogenous genes with truncating mutations, while having had no measurable effects on genes containing heterozygous coding region SNPs (Figure 3G, H).
 
-## NMD inhibition with KVS0001 causes MHC class I display of hidden neoantigens
+### NMD inhibition with KVS0001 causes MHC class I display of hidden neoantigens
 
 Cancer cells may evade immune surveillance by downregulating genes with truncating mutations as a result of NMD (Nogueira et al., 2021; Hu et al., 2017). Indeed, previous studies with non-specific or toxic NMD inhibitors have shown an increase in selected antigens from tumor-specific mutations when NMD is inhibited (Becker et al., 2021). We therefore investigated whether KVS0001 could similarly alter the cell surface presentation of proteins from genes harboring truncating mutations in NCI-H358 and LS180 cells. Using quantitative high-performance liquid chromatography (HPLC)–mass spectrometry (MS) we observed a striking (45- to 90-fold) increase in the EXOC1- and RAB14-derived neoantigens, and a significant (twofold) increase in the ZDHHC16-derived neoantigen (Figure 4A, B, Figure 4—figure supplements 1 and 2; Wang et al., 2019). This is consistent with the re-expression of mutant transcript and protein shown previously in this study (Figure 3D, E). These three peptides were chosen based on an in silico review of potentially presented peptides and a preliminary experiment that looked at qualitative (present or not present) presentation of the predicted peptides (Reynisson et al., 2020; Schmidt et al., 2021).
 
-## Targetable peptide presentation occurs with NMD inhibition by KVS0001
+![Figure 4.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig4-v1.jpg)
+
+**Figure 4.:** (A) MHC class I HLA presentation of mutant specific peptide sequences from NCI-H358 and (B) LS180 cells by quantitative HPLC–mass spectrometry treated with dimethyl sulfoxide (DMSO) or 5 µM KVS0001. The gene name, type of mutation (in parenthesis), and presented peptide are shown on the y-axis for each gene. Colors indicate different ions. (C) TP53 gene structure and mutant DNA sequence for NCI-H716 and NCI-H2228 cancer cell lines, both contain a homozygous splice site mutation in TP53. Capital letters represent exonic sequence; lowercase letters represent intronic sequence. DNA mutation reflected by gold bases. (D) Western blot against TP53 in the presence or absence of 5 µM NMD inhibitor in NCI-H716_A24 and NCI-H2228 cell lines. NCI-H2228 has an expected size of 46.6 kDa and NCI-H716 of 34.7 kDa. (E) Interferon (IFN-γ) levels over baseline based on enzyme-linked immunosorbent assay (ELISA) in a co-culture assay with NCI-H716_A24 and NCI-H2228 cells, 1.25 µM NMD inhibitor, human CD3+ T-cells, and bispecific antibody for TP53 and CD3. Chemotherapy (5-fluorouracil) is shown as a control. (F) Cell killing based on luciferase levels in a co-culture assay in NCI-H716 cells with and without A24 expression, treated with TP53-CD3 bispecific antibody, 1.25 µM NMD inhibitor and human CD3+ T-cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The mutant protein sequences caused by the out-of-frame indel are highlighted in red and the boxes indicate the peptides presented on the cell surface and identified by mass spectrometry in cells treated with 5 µM of KVS0001 (see Figure 4A and B).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Data are from quantitative HPLC–mass spectrometry. Note: y-axis scale changes between samples. Tables on the right show relative increase in peptide presentation with KVS0001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The two cell lines used in this study are highlighted in red and were in the bottom quartile of TP53 expression.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** LYO is LY3023414 and 5-FU is 5-fluorouracil. HEK293 parent cells are shown as a control (wild-type TP53 protein).
+
+### Targetable peptide presentation occurs with NMD inhibition by KVS0001
 
 To test whether cancer cell neoantigens presented as a result of NMD inhibition could be targeted, we evaluated two cancer cell lines, NCI-H716 and NCI-H2228 (Supplementary file 1). Both lines contain homozygous mutations in TP53 which produce transcripts downregulated by NMD, with each exhibiting RNA levels less than 20% of the median level of expression among 675 cancer cell lines (Figure 4C and Figure 4—figure supplement 3; Lindeboom et al., 2016; Klijn et al., 2015). Treatment with KVS0001 increased the expression of TP53 protein in both lines, while the commonly used therapeutic agents 5-fluorouracil and etoposide did not affect TP53 abundance (Figure 4D and Figure 4—figure supplement 4).
 
 To determine whether this disruption of NMD repression is targetable by T-cells, we developed a bispecific antibody (KVS-BI043) that recognizes a peptide–HLA complex on one end and CD3 on the other end. CD3 is expressed only on T-cells, and this bispecific antibody functions as a T-cell engager, linking target cells to cytotoxic T-cells, which then kill the targets (Mack et al., 1995; Middelburg et al., 2021). KVS-BI043 recognizes a ten amino acid peptide (residues 125–134 of TP53) bound to HLA-A24. NCI-H2228 naturally express A24 whereas NCI-H716 cells were engineered to express A24 using a retrovirus (NCI-H716_A24). Treatment of NCI-H716_A24 or NCI-H2228 cells with KVS0001 and the KVS-BI043 bispecific antibody in the presence of normal T-cells caused a significant increase in interferon (IFN-γ) release (Figure 4E). We observed no changes in IFN-γ levels in the absence of KVS-BI043 or normal T-cells (Figure 4E, gray boxed lanes). Most importantly, treatment of NCI-H716_A24 with KVS0001 in the presence of KVS-BI043 and T-cells led to significant killing of the target cancer cells, which was also not observed in the absence of T-cells or the absence of HLA-24 in the target cells (Figure 4F). NCI-H2228 was assessed for killing but expressed too much TP53 at baseline (Figure 4D, left most lane) and thus displayed substantial killing even in the DMSO controls.
 
-## Tumor growth is slowed in mice treated with KVS0001
+### Tumor growth is slowed in mice treated with KVS0001
 
 Finally, we investigated whether KVS0001 could impact tumor growth in syngeneic models in which the native immune system might play a role (Supplementary file 1). For this purpose, we first used murine RENCA (renal cancer) and LLC (lung cancer) as they are known to have a relatively large number of out-of-frame indel mutations (Supplementary file 5). Although murine and human SMG1 are highly related (98% at the amino acid level), it was important to show that KVS0001 could actually inhibit NMD in murine cells. For this purpose, we tested eight genes in LLC, and four in RENCA, which contained out-of-frame indel mutations potentially targeted by NMD. We also assessed the expression of three genes without any mutations known to have their normal expression controlled by NMD (Echols et al., 2020). We found that six of the twelve truncating mutation-containing genes and five of the six expression controlled by NMD genes had significantly increased RNA following in vitro treatment with KVS0001 (Figure 5A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fold change in RNA transcript levels in LLC or (B) RENCA cells treated in vitro with 5 µM of nonsense-mediated decay (NMD) inhibitor KVS0001 or dimethyl sulfoxide (DMSO). Orange bars indicate genes with homozygous indel mutations potentially targeted by NMD. Purple bars show genes with no mutations but that are known to have their normal transcription levels controlled by NMD. Green bar is a control gene that should not change with treatment. The dotted line shows relative expression of DMSO treatment (equal to 1). * indicates significantly different from untreated by Student’s T-test. (C) Treatment schedule for syngeneic tumor mouse experiments. (D) Average tumor size of LLC (left) and RENCA (right) syngeneic tumors in immune-competent mice (n = 8) treated with 30 mg/kg KVS0001 or vehicle control IP. Difference is statistically significant after day 10 based on one-way analysis of variance (ANOVA) with Dunnett’s test p < 0.001 (p < 0.05 for day 23 RENCA data point) for both tumors tested. (E) Average tumor size of LLC (left) and RENCA (right) in immunodeficient mice (n = 8) treated with 30 mg/kg KVS0001 or vehicle control. Error bars show 95% confidence intervals in all plots.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** N = 8 for all arms.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/95952/elife-95952-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Tumors with low/moderate and (B) high indel mutational loads are shown. No results presented in this figure supplement are statistically significant. Error bars show 95% confidence intervals.
 
 We then implanted LLC and RENCA cancer cells in the mammary fat pad of C57BL/6N and BALB/c mice, respectively, and treated with KVS0001 or vehicle control (Figure 5C). The dose of KVS0001 was based on experiments showing that the maximum solubility limit was reached around 2–3 mg/ml, leading to a maximum single dose of 30 mg/kg per mouse per treatment. At this dose, the only toxicity noted was transient weight loss (Figure 5—figure supplement 1), and no other pathology was observed. Both tumor types experienced significant slowing of tumor growth (Figure 5D). However, when the same tumors were implanted in immunocompromised mice, there was no statistically significant difference in tumor growth between mice treated with KVS0001 or vehicle control (Figure 5E).
 
@@ -119,104 +217,1003 @@ Though there is much work to be done, we hope that the tools, approaches, and co
 
 ## Materials and methods
 
-## Resource availability
+**Key resources table**
 
-## Contact for reagent and resource sharing
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti goat IgG 680RD monoclonal</td>
+      <td>Licor</td>
+      <td>926-68074,RRID:AB_10956736</td>
+      <td>Used for western blot at 1:10 K</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti mouse 680RD monoclonal</td>
+      <td>Licor</td>
+      <td>926-68072,RRID:AB_10953628</td>
+      <td>Used for western blot at 1:15 K</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti mouse HRP monoclonal</td>
+      <td>Jackson Immuno Research</td>
+      <td>115-035-006,RRID:AB_2338500</td>
+      <td>Used for western blot at 1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti rabbit 800CW monoclonal</td>
+      <td>Licor</td>
+      <td>926-32213,RRID:AB_621848</td>
+      <td>Used for western blot at 1:10 K</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti rabbit HRP monoclonal</td>
+      <td>Jackson Immuno Research</td>
+      <td>111-035-006,RRID:AB_2337936</td>
+      <td>Used for western blot at 1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti Beta-actin monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>3700S</td>
+      <td>Used for western blot at 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti EXOC1 polyclonal</td>
+      <td>Abcam</td>
+      <td>ab251853</td>
+      <td>Used for western blot at 0.4 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti LMAN1 monoclonal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CF502137</td>
+      <td>Used for western blot at 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti OKT-3 monoclonal</td>
+      <td>Biolegend</td>
+      <td>317347</td>
+      <td>Used for T-cell culturing at 15 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti p21/WAF1 monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>2947S,RRID:AB_823586</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti TP53 monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>18032S,RRID:AB_2798793</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Phospho-(Ser/Thr) ATM/ATR polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>2851S,RRID:AB_330318</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti Sodium Potassium Pump (Na-K) polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>3010S,RRID:AB_2060983</td>
+      <td>Used for western blot at 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti SPTAN1 (polyclonal)</td>
+      <td>Bethyl</td>
+      <td>A301-249A,RRID:AB_890655</td>
+      <td>Used for western blot at 0.04 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti SPTAN1 (N-Terminal) monoclonal</td>
+      <td>Abcam</td>
+      <td>ab11755,RRID:AB_298540</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti SPTAN1 (C-Terminal) monoclonal</td>
+      <td>Abcam</td>
+      <td>ab75755,RRID:AB_1309947</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti STAG2 monoclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>5882S,RRID:AB_10834529</td>
+      <td>Used for western blot at 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti UPF1 polyclonal</td>
+      <td>Abcam</td>
+      <td>ab10510,RRID:AB_297251</td>
+      <td>Used for western blot at 1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse α-HLA-A24 monoclonal</td>
+      <td>MBL Life Science</td>
+      <td>Cat #K0208-A64,RRID:AB_1953030</td>
+      <td>Used for flow cytometry at 10 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TP53-CD3 bispecific antibody</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>See ‘bispecific scFv construction’ in methods, anti CD-3 and anti TP53 sequence. Used for co-culture at 12.5 pg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HLA-A24 Retrovirus</td>
+      <td>Hsiue et al., 2021</td>
+      <td>N/A</td>
+      <td>Retrovirus which introduces and HLA-A24 expression vector</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Luciferase lentivirus</td>
+      <td>OriGene</td>
+      <td>Cat #PS100071</td>
+      <td>Lentivirus that introduces luciferase into cells</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1% penicillin–streptomycin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4–15% Mini-PROTEAN TGX Precast Protein Gels</td>
+      <td>Bio-Rad</td>
+      <td>Cat #456-1086</td>
+      <td>Used for western blotting</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>5-Fluoruracil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #F6627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AMPure beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat #A63880</td>
+      <td>Used to purify DNA before sequencing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cremaphor</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #C5135</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DharmaFECT1 transfection reagent</td>
+      <td>Horizon</td>
+      <td>Cat #T-2001-02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #C6295</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM medium</td>
+      <td>Gibco</td>
+      <td>Cat #11995065</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EMEM medium</td>
+      <td>ATCC</td>
+      <td>Cat #30-2003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #7083-71-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EPITHELIAL CELL MEDIUM-Complete Kit</td>
+      <td>Science Cell Research</td>
+      <td>Cat #4101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>HyClone</td>
+      <td>Cat #16777-006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycerol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #G5516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KVS0001</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Novel small molecule targeting SMG1 kinase. See ‘Resource availability’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LY3023414</td>
+      <td>Selleckchem</td>
+      <td>Cat #S8322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel Phenol Red Free Standard Formulation</td>
+      <td>Corning</td>
+      <td>Cat #356237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEGM Mammary Epithelial Cell Growth Medium BulletKit</td>
+      <td>Lonza</td>
+      <td>Cat #CC3150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylcellulose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #M6385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate-buffered saline (PBS)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #J60465.K2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phusion Flash High-Fidelity PCR Master Mix</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #F548S</td>
+      <td>PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce ECL Western Blotting Substrate</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #32106</td>
+      <td>Western blot reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PRIMETIME Gene Expression master mix</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Cat #1055770</td>
+      <td>Real-time PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease inhibitor</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #4693159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>QIAshredder</td>
+      <td>QIAGEN</td>
+      <td>Cat #79656</td>
+      <td>Western blot reagent</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant IL-2 protein</td>
+      <td>Prometheus Therapeutics and Diagnostics</td>
+      <td>Cat #aldesleukin</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant IL-7 protein</td>
+      <td>BioLegend</td>
+      <td>Cat #581908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RediJect D-Luciferin Ultra Bioluminescent Substrate</td>
+      <td>PerkinElmer</td>
+      <td>Cat #770505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA Lysis and Extraction buffer</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #89901</td>
+      <td>Western blot and real-time PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNA Later</td>
+      <td>Invitrogen</td>
+      <td>Cat #AM7020</td>
+      <td>Real-time PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI 1640 medium</td>
+      <td>Gibco</td>
+      <td>Cat #11875-119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Selleckchem Bioactive Compound library (Supplementary file 2)</td>
+      <td>Selleckchem</td>
+      <td>Cat #L1700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SMG1-specific inhibitor: 11j</td>
+      <td>Ascendex LLC</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SsoAdvanced Universal SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cat #1725270</td>
+      <td>Real-time PCR reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trypsin</td>
+      <td>Gibco</td>
+      <td>Cat #25300054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AllPrep DNA/RNA Mini Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat #80204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA ScreenTape</td>
+      <td>Agilent</td>
+      <td>Cat #5067-5576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA ScreenTape Sample Buffer</td>
+      <td>Agilent</td>
+      <td>Cat #5067-5577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA Ladder</td>
+      <td>Agilent</td>
+      <td>Cat #5067-5578</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat #23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Rad SingleShot Cell Lysis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat #1725080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat #SIF50C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Advanced Biosystems</td>
+      <td>Cat #4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illumina RNA library prep kit</td>
+      <td>Illumina</td>
+      <td>Cat #RS-122-2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kinase kinativ assay</td>
+      <td>ActivX Biosciences</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat #E1501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy</td>
+      <td>QIAGEN</td>
+      <td>Cat #74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Whole transcriptome RNA-seq: NCI-H358</td>
+      <td>This study</td>
+      <td></td>
+      <td>FASTQ files for RNA-seq. Available on Dryad</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Whole transcriptome RNA-seq: LS180</td>
+      <td>This study</td>
+      <td></td>
+      <td>FASTQ files for RNA-seq. Available on Dryad</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Whole transcriptome RNA-seq: Isogenic knockout cell lines</td>
+      <td>Cook et al., 2022</td>
+      <td>EGAD00001008559</td>
+      <td>FASTQ files for RNA-seq. Available on EGA database</td>
+    </tr>
+    <tr>
+      <td>Cell Line (murine)</td>
+      <td>B16-F10</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-6475,RRID:CVCL_0159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-3216,RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (murine)</td>
+      <td>Lewis lung carcinoma (LLC)</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-1642,RRID:CVCL_4358</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>LS180</td>
+      <td>ATCC</td>
+      <td>Cat #CL-187,RRID:CVCL_0397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>MCF10a</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-10317,RRID:CVCL_0598</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>NCI-H716</td>
+      <td>ATCC</td>
+      <td>Cat #CCL-251,RRID:CVCL_1581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>NCI-H2228</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-5935,RRID:CVCL_1543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>NCI-H358</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-5807,RRID:CVCL_1559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (murine)</td>
+      <td>Renca</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-2947,RRID:CVCL_2174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-4000,RRID:CVCL_4388</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 STAG2 2</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 STAG2 5</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 STAG2 6</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 STAG2 8</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 TP53 221</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 TP53 223</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPE1 TP53 224</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec</td>
+      <td>ATCC</td>
+      <td>Cat #CRL-4031,RRID:CVCL_K278</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 3</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 943</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 943A</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 944</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 945</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 946</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 947</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 951</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 952</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec STAG2 953</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec TP53 544</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Human)</td>
+      <td>RPTec TP53 588</td>
+      <td>Cook et al., 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>BALB/cAnAHsd</td>
+      <td>Harlan Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female)</td>
+      <td>C57BL/6NCrl</td>
+      <td>Charles River GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female)</td>
+      <td>BALB/cAnNCrl</td>
+      <td>Charles River GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female)</td>
+      <td>Hsd:Athymic Nude-Foxn1nu</td>
+      <td>Harlan Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, female)</td>
+      <td>NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ (NSG)</td>
+      <td>Jackson Laboratories</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>for Primers see Supplementary file 6</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HTS Screen sequencing primer: STAG2 Seq Forward: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNGAATTTCTCTACAAAAAGCTCTTCA</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Used in high-throughput screen to amplify STAG2 CRISPR mutation site</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HTS Screen sequencing primer: STAG2 Seq Reverse: CAAGCAGAAGACGGCATACGAGATNNNNNNNNNNTTCATCATTCCATCCTCCTC</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Used in high-throughput screen to amplify STAG2 CRISPR mutation site</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HTS Screen sequencing primer: TP53 Seq Forward: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNGAAACTACTTCCTGAAAACAACGT</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Used in high-throughput screen to amplify TP53 CRISPR mutation site</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HTS Screen sequencing primer: TP53 Seq Reverse: CAAGCAGAAGACGGCATACGAGATNNNNNNNNNNGCTTCATCTGGACCTGGGTC</td>
+      <td>This study</td>
+      <td>N/A</td>
+      <td>Used in high-throughput screen to amplify TP53 CRISPR mutation site</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ON-TARGETplus Human UPF1 siRNA Smartpool 10 nmol</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-011763-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ON-TARGETplus Human mTOR siRNA Smartpool 10 nmol</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-003008-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ON-TARGETplus Human ATM siRNA Smartpool 10 nmol</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-003201-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ON-TARGETplus Human ATR siRNA Smartpool 10 nmol</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-003202-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SMARTpool: ON-TARGETplus SMG1 siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-005033-00-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SMARTpool: ON-TARGETplus PRKDC siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-005030-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SMARTpool: ON-TARGETplus PIK3CA siRNA</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #L-003018-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ON-TARGETplus Non-targeting Pool</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #D-001810-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Phage display library</td>
+      <td>GeneArt</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2 (version 2.0.5)</td>
+      <td>Kim et al., 2019</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StringTie (version 1.3.3)</td>
+      <td>Pertea et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ballgown (version 2.6.0)</td>
+      <td>Pertea et al., 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (version 4.0.3)</td>
+      <td>R Development Core Team, 2022</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot (version 3.4.1)</td>
+      <td>Wickham, 2016</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pipeline for analyzing mutant and normal transcript abundance</td>
+      <td>MSSQL was used for initial data processing</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Resource availability
+
+#### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Nicolas Wyhs (wyhs@jhmi.edu). Isogenic knockout cell lines are available through The Genetic Resources Core Facility at Johns Hopkins School of Medicine (jhbiobank@jhmi.edu, Maryland, USA). KVS0001 generated in this study will be made available on request if available, but availability may be limited and we may require a payment and/or a completed materials transfer agreement if there is potential for commercial application.
 
-## Experimental models and subject details
+### Experimental models and subject details
 
-## Cell lines
+#### Cell lines
 
 NCI-H716, NCI-H2228, HEK293, NCI-H358, RPE1, MCF10a, RPTec, LLC, RENCA, B16-F10, and LS180 cells were purchased from The American Type Culture Collection (Virginia, USA). RPE1 STAG2 2, RPE1 STAG2 5, RPE1 STAG2 6, RPE1 STAG2 8, RPTec STAG2 3, RPTec STAG2 943, RPTec STAG2 943A, RPTec STAG2 944, RPTec STAG2 945, RPTec STAG2 946, RPTec STAG2 947, RPTec STAG2 951, RPTec STAG2 952, RPTec STAG2 953, RPE1 TP53 221, RPE1 TP53 223, RPE1 TP53 224, RPTec TP53 54, RPTec TP53 588, and RPTec TP53 544 isogenic knockout cell lines were generated and grown as previously described (Cook et al., 2022). NCI-H358, NCI-H2228, NCI-H716, RENCA, and RPE1 cells were grown in RPMI 1640 Medium (Gibco, California, USA, Cat #11875-119) supplemented with 10% fetal bovine serum (FBS) (HyClone, Utah, USA, Cat #16777-006). LS180 cells were grown in Eagle's Minimum Essential Medium (EMEM) (ATCC, Virginia, USA, Cat #30-2003) supplemented with 10% FBS. LLC, B16-F10, and HEK293 were grown in DMEM (Gibco, USA, Cat #11995065) supplemented with 10% FBS. RPTec cells were grown in EPITHELIAL CELL MEDIUM-Complete Kit (Science Cell Research, California, USA, Cat #4101). MCF10a cells were grown in MEGM Mammary Epithelial Cell Growth Medium BulletKit (Lonza, USA, Cat #CC3150). In vitro, all cells were grown at 37°C with 5% CO2. Mycoplasma testing was performed by The Genetic Resources Core Facility at Johns Hopkins School of Medicine (Maryland, USA).
 
-## Quantitative real-time PCR
+#### Quantitative real-time PCR
 
 RNA was obtained from cells using a QIAGEN RNeasy Kit (QIAGEN, Maryland, USA, Cat #74104) per the manufacturer’s instruction. Reverse transcription of RNA to cDNA was performed using a High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, USA, Cat #4368814) per the manufacturer’s instructions. Unless otherwise specified, qPCR reactions were set up using SsoAdvanced Universal SYBR Green Supermix (Bio-Rad, USA, Cat #1725270) following the manufacturer’s instructions and performed on a QuantStudio 3 (Applied Biosystems, USA) with the manufacturer’s recommended plates and plate covers. PCR thermocycling conditions were as follows: 2 min at 50°C, 2 min at 95°C, 35 cycles of 10 s at 95°C, 10 s at 60°C, 30 s at 72°C. Finally, a melt curve was performed starting at 50°C and ending at 95°C with 5-s incubations for imaging. For TP53β analysis, qPCR reactions were set up using PRIMETIME Gene Expression master mix (Integrated DNA Technologies, USA, Cat #1055770) and a probe with FAM reporter and TAMRA quencher (Integrated DNA Technologies, USA) following the manufacturer’s instructions and concentrations. PCR thermocycling conditions were as follows: 3 min at 50°C, 10 min at 95°C, 40 cycles of 10 s at 95°C, 30 s at 60°C. Primers used for all qPCR can be found in Supplementary file 6.
 
-## Small molecule compounds
+#### Small molecule compounds
 
 SMG1-specific inhibitor SMG1i-11 (11j) (Gopalsamy et al., 2012) and KVS0001 were synthesized by Ascendex LLC (Pennsylvania, USA). The synthesis scheme for KVS0001 is located below. Emetine was obtained from Sigma-Aldrich (Cat #7083-71-8). All other small molecule hits from the screen were purchased from Selleckchem (Texas, USA).
 
 ![Chemical structure 1.](https://cdn.elifesciences.org/articles/95952/elife-95952-chem1-v1.jpg)
 
-## NMD screen
+#### NMD screen
 
 We screened the Selleckchem Bioactive Compound library, a 2658 compound library (Selleckchem, Texas, USA, Cat #L1700). The library was distributed over 33 × 96-well tissue culture plates with each plate containing library compounds, two NMD positive controls (emetine, 12 μg/ml) and six NMD negative controls (DMSO). We mixed the three cell lines, RPE1 STAG2 2, RPE1 STAG2 8, and RPE1 TP53 221, in equal ratio and dosed with the compound library at 10 μM for 16 hr. Cell pools were harvested by washing plates 2× with phosphate-buffered saline (PBS) and frozen. RNA extraction and reverse transcriptase cDNA conversion were performed as described in Targeted RNA-seq. Quality control was performed by qPCR of one NMD-positive and one NMD-negative control well from each plate to confirm that increased expression of the positive control (emetine) wells was observed. All samples were prepared for sequencing by amplifying cDNA using primers containing both a plate (forward primer) and well (reverse primer) barcode which amplifies the knockout cell line-specific mutation for STAG2 and TP53 (see Supplementary file 6). Primers were obtained from Integrated DNA Technologies (Iowa, USA). PCR was performed using Phusion Flash High-Fidelity PCR Master Mix (Thermo Fisher, USA, Cat #F548S) for 1 min at 98oC, 29 cycles of 10 s at 98oC, 15 s at 64oC, 15 s at 72oC, and 5 min at 72oC. Samples were then well barcoded using a similar PCR setup for two to four cycles. Samples were then pooled, cleaned up with AMPure beads (Beckman Coulter, California, USA, Cat #A63880), and sequenced on an Illumina HiSeq2500 using the manufacturer’s instructions (150 cycle single read) for an average of 56,753 reads per well. The screen was scored by calculating the number of sequencing reads matching each mutant and reference transcript and calculating a mutant allele fraction (MAF) correcting for the number of cell lines and heterozygous mutations. NMD-positive and -negative control data were pooled, respectively, and averaged across all plates to determine the hit threshold of MAF >0.46. This value, 5 standard deviations above the mean for the DMSO controls, was chosen to ensure no false positives in the DMSO controls were observed. A compound was considered a hit if the MAF for all three cell lines was greater than this value. All results from the screen are reported as MAF.
 
-## Targeted RNA-seq
+#### Targeted RNA-seq
 
 RNA extraction of in vitro cells was performed using Bio-Rad SingleShot Cell Lysis kit (Bio-Rad, California, USA, Cat #1725080) scaled down to 50 µl reactions per well of 96-well plate per the manufacturer’s instructions. Tissue culture cells were lysed directly on the tissue culture plate. For RNA extraction of in vivo studies, tissues were harvested and placed in RNA Later (Invitrogen, Maryland, USA, Cat # AM7020) and stored at −80°C until RNA extraction. RNA extraction of tissues was performed using a QIAGEN RNeasy Kit (QIAGEN, Maryland, USA, Cat #74104) per the manufacturer’s instruction with tissue homogenization in 600 µl of RNA lysis buffer (RLT buffer) via dounce homogenizer followed by QIAshredder (QIAGEN, Maryland, USA, Cat #79656). All RNA quality was assessed by Agilent Tapestation 2200 (Agilent, California, USA, Cat #G2964AA) and the Agilent RNA ScreenTape (Agilent, California, USA, Cat #5067-5576) with Agilent RNA ScreenTape Sample Buffer and Ladder (Agilent, California, USA, Cat #5067-5577, Cat #5067-5578) per the manufacturer’s instruction. Reverse transcription to cDNA was performed using High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, USA, Cat #4368814) per the manufacturer’s instructions. cDNA was amplified using cDNA-specific primers with at least one primer (forward or reverse) covering an exon–exon boundary (see Supplementary file 6 for primer sequences). Primers were obtained from Integrated DNA Technologies (Iowa, USA). PCR was performed using Phusion Flash High-Fidelity PCR Master Mix (Thermo Fisher, USA, Cat #F548S) for 1 min at 98oC, 30 cycles of 10 s at 98oC, 15 s at 64oC, 15 s at 72oC, and 5 min at 72oC. Sequencing libraries were prepped from samples by addition of well barcodes using the same method described above for an additional two to six cycles. Libraries were pooled, cleaned up with AMPure beads (Beckman Coulter, California, USA, Cat #A63880) and sequenced on an Illumina Miseq using the manufacturer’s instructions (150 cycle single read).
 
-## MAF analysis
+#### MAF analysis
 
 MAF was determined by processing fastq files using HISAT2 (version 2.0.5) and aligning to a pseudo reference genome consisting of only the mutant or wild-type amplicon sequences for targeted regions. The MAF was determined by taking a ratio of the number of mutant transcripts to the total number of transcripts from the region in question. Initial data processing was performed in MSSQL and Excel.
 
-## Whole transcriptome RNA-seq
+#### Whole transcriptome RNA-seq
 
 LS180 or NCI-H358 cells were run in biological duplicate, treated with DMSO or 5 µM LY3023414. For RNA extraction, cells were pelleted, frozen in liquid nitrogen, and stored at −80°C until RNA extraction. RNA extraction was performed using a QIAGEN AllPrep DNA/RNA Mini Kit (QIAGEN, Maryland, USA, Cat #80204) per the manufacturer’s instruction with cell homogenization and lysis in RLT buffer with a QIAshredder (QIAGEN, Maryland, USA, Cat #79656). RNA quality control using Agilent Tapestation 2200 (Agilent, California, USA, Cat #G2964AA) and the Agilent RNA ScreenTape (Agilent, California, USA, Cat #5067-5576) with Agilent RNA ScreenTape Sample Buffer and Ladder (Agilent, California, USA, Cat #5067-5577, Cat #5067-5578) per the manufacturer’s instruction. Library prep using Illumina RNA library prep kit (Illumina, California, USA, Cat #RS-122–2001) and sequenced on an Illumina HiSeq 4000 150 cycle paired-end using the manufacturer’s instructions.
 
-## RNA-seq analysis
+#### RNA-seq analysis
 
 Sequencing reads aligned to Hg38 using HISAT2 (version 2.0.5), RNA alignment metrics using CollectRnaSeqMetrics (Picard, version 2.20.2). Exon skipping was determined using IGV Viewer Sashimi Plots (Robinson et al., 2011). The average number of bases sequenced per sample and percent aligned in LS180 was 5.14e9 bases (range 5.07e9–5.20e9) and 77.8% (range 76.1–78.7%) and for NCI-H358 was 5.58e9 bases (5.19e9–5.87e9) and 79.4% (range 77.2–82.7%). MAF was determined using VarScan 2 (Koboldt et al., 2012) by generating the ratio of Read 1 (mutant) to read2 (wild-type) transcripts. Mutations were only considered if they were heterozygous, and contained at least five reads at the somatic mutation or indel site in all four samples being compared (biological duplicates of treated and untreated).
 
-## Compound response curves
+#### Compound response curves
 
 We performed a 6-point dose–response curve by treating cell pools for 14 hr with single compounds. Cell pools consisted of three isogenic knockout cell lines grouped by parental cell line with readout via targeted sequencing RNA (see Targeted RNA-seq for details). The effect of the compound was determined by calculating the MAF by comparing the abundance of the expected mutation and compared to the wild-type within each isogenic pool (see MAF analysis for details).
 
-## Immunohistochemistry
+#### Immunohistochemistry
 
 Immunohistochemistry was performed on cell lines as previously described (Hsiue et al., 2021).
 
-## Western blots
+#### Western blots
 
 Cells were lysed using radioimmunoprecipitation assay buffer (RIPA buffer) (Thermo Fisher, USA, Cat #89901) containing 1× protease inhibitor (Thermo Fisher, USA, Cat #4693159001) on ice for 30 min. Samples were then centrifuged at max speed for 3 min at 4°C in a QIA shredder (QIAGEN, Maryland, USA, Cat #79654) before being transferred to a new sample collection tube. Protein was quantified using a bicinchoninic acid (BCA) assay (Thermo Fisher, USA, Cat #23227) per the manufacture’s instructions. Gels were run by loading 50 µg of total protein per sample into 15-well polyacrylamide gels (Bio-Rad, California, USA, Cat #456-1086) and run for 30 min at 200 V. Gels were then transferred using the manufacturer’s instructions (based on size) to nitrocellulose membrane using a Bio-Rad turbo transfer apparatus (Bio-Rad, USA, #170-4270). Membranes were blocked for 1 hr with 3% milk-TBS-Tween before being incubated overnight in primary antibody (concentration dependent on antibody). Primary antibodies and concentrations can be found in the Key resources table. Membranes were washed four times for 5 min each with TBS-Tween. Secondary antibody was applied at 1:2500 using either α-rabbit (Jackson ImmunoResearch, Pennsylvania, USA, Cat #111-035-006) or α-mouse (Jackson ImmunoResearch, Pennsylvania, USA, Cat #115-035-006). Membranes were imaged using Pierce ECL Western Blotting Substrate (Thermo Fisher, USA, Cat #32106) following the manufacturer’s instructions on a Bio-Rad Chemidoc (Bio-Rad, California, USA). Phospho-UPF1 westerns were performed as detailed above with the following exceptions: secondary antibodies were used at 1:10,000 either α-rabbit (Licor Biosciences, USA, Cat #926-32213) or α-goat (Licor Biosciences, USA, Cat #926-68074). Membranes were imaged using an Odyssey CLx (Licor Biosciences, USA) following the manufacturer’s instructions.
 
-## siRNA
+#### siRNA
 
 We performed knockdown of kinase proteins using siRNA. LS180 and NCI-H358 cells were plated in 96-well plates (Costar, USA, Cat #3595) at 5000 cells per well. Cells were transfected with DharmaFECT1 transfection reagent (Horizon, USA, Cat #T-2001-02) and either 50 nM control or kinase-specific pooled siRNA. siRNA used in this experiment can be found in the Key resources table. Knockdown efficacy was confirmed using qPCR (see Quantitative real-time PCR for details). NMD target gene mutation transcript levels were determined using NGS and MAF (see Targeted RNA-seq for details).
 
-## Bispecific scFv construction
+#### Bispecific scFv construction
 
 We utilized a bispecific antibody against CD-3 and TP53 wild-type peptide ‘TYSPALNKMF’ (residues 125–134) presented in a HLA-A24 MHC-I molecule scFv. This bispecific antibody was identified by panning a phage display library. The scFv-bearing phage library was constructed similarly as described in detail previously with some modifications (Skora et al., 2015). Briefly, oligonucleotides were synthesized by GeneArt (Thermo Fisher, USA) using trinucleotide mutagenesis (TRIM) technology to diversify complementarity-determining region (CDR)-L2, CDR-L3, CDR-H1, CDR-H2, and CDR-H3. A FLAG (DYKDDDDK) epitope tag was placed immediately downstream of the scFv, which was followed in frame by the full-length M13 pIII coat protein sequence. The total number unique clones obtained was determined to be 3.6 × 1010. Panning details can be found in the reference section (Hsiue et al., 2021; Skora et al., 2015).
 
-## Kinase target assay
+#### Kinase target assay
 
 Kinase kiNativ experiments were performed by ActivX Biosciences (San Diego, USA) (Patricelli et al., 2011).
 
-## Quantitative presentation of HLA-bound neoantigens via HPLC–mass spectrometry
+#### Quantitative presentation of HLA-bound neoantigens via HPLC–mass spectrometry
 
 Identification and quantitation of HLA-presented neoantigens were performed as previously described by Complete Omics Inc (Wang et al., 2019). Briefly, cells were treated in vitro for 24 hr with either DMSO or 5 µM KVS0001. Cells were cross-linked and immunoprecipitated with pan-HLA antibodies to obtain cell surface MHC-presented peptides. Mass spectrometry was performed in the presence of heavy labeled peptide to serve as an internal (loading) control to quantify the presence of the presented neoantigen. The presented peptides were identified in a preliminary MS screen of 187 candidate peptides predicted by using the union of NetMHC and Predictor of Immunogenic Epitopes (PRIME) predictions (Reynisson et al., 2020; Schmidt et al., 2021).
 
-## CD3-TP53scFv bispecific co-culture
+#### CD3-TP53scFv bispecific co-culture
 
 Co-culture of bispecific antibody was performed using volunteer human donor T-cells. T-cell enrichment and activation were performed as previously described (Hwang et al., 2021). Briefly, peripheral blood mononuclear cells (PBMCs) are incubated with OKT3 antibody (Biolegend) for 3 days. T-cells were then expanded in RPMI 1640 with 10% FBS and 1% penicillin–streptomycin, recombinant IL-2 (Proleukin, Prometheus Laboratories) and IL-7 (BioLegend) for at least 15 days before use. NCI-H716 cells were labeled with HLA-A24 using retrovirus as previously described (Hsiue et al., 2021). Briefly, the MSCV retroviral expression system (Clontech, USA, Cat #634401) was used to overexpress HLA-A*24-T2A-GFP in target cells. Expression was confirmed by flow cytometry. NCI-H2228 cells were not labeled as they express this specific HLA endogenously. For NCI-H716_A24 and NCI-H2228, 40,000 cells were plated in 96-well plates, and co-incubated with 40,000 activated T-cells, and 12.5 pg/ml of TP53-CD3 bispecific antibody. Cells were then dosed with 1.25 µM of KVS0001, SMG1-specific inhibitor or 200 mg/ml of 5-fluoruracil (Sigma-Aldrich, USA, Cat #F6627) for 24 hr. Readout of IFN-γ was performed by ELISA following the manufacturer’s instructions (R&D Systems, USA, Cat #SIF50C). Cell killing was assayed by luciferase levels following the manufacturer’s instructions (Promega, USA, Cat #E1501) and read out on a Synergy H1 Microplate reader (BioTek, USA). NCI-H716_A24 cells were labeled with luciferase via lentiviral transduction following the manufacturer’s recommendations (OriGene, USA, Cat #PS100071).
 
-## Animal protocols
+#### Animal protocols
 
 Animal research was approved and overseen by Johns Hopkins University Institutional Animal Care and Use Committee (IACUC) approved research protocol M018M79. Mice are housed in individually ventilated caging (Allentown, New Jersey, USA) at a maximum 5 animals per cage. Cages are changed every 14 days. Enrichment is provided through paper bedding, paper hut, and some food placed in the bottom of the cage. Facility is maintained between 70 and 72°F on a 12-hr light–dark cycle. Mice standard diet is ad lib Teklad Global 18% Protein Extruded Rodent Diet, autoclaved (Envigo, Huntingdon, UK) and acidified water via sipper tube.
 
-## In vivo tumor models
+#### In vivo tumor models
 
 Cells for tumor inoculation in each mouse were grown to 70–80% confluency in vitro. Cells were harvested with trypsin (Gibco, California, USA, Cat #25300054) and suspended in either PBS for LS180 cells or 50% PBS, 50% Matrigel Phenol Red Free Standard Formulation (Corning, New York, USA, Cat #356237) for NCI-H358 cells. For both cell lines, 1e6 cells were placed subcutaneously and grown to approximately 200 mm3. Animals were randomized into treatment groups prior to treatment by tumor size. All tumor volumes were measured via caliper twice weekly. Mice with tumors <150 mm3 at 11 days post-inoculation were excluded from experiments.
 
-## Human xenograft experiments
+#### Human xenograft experiments
 
 Six- to eight-week-old Mus musculus Hsd:Athymic Nude-Foxn1nu mice (referred to as nude mice) were purchased from Harlan Laboratories (Indiana, USA). Only female mice were used as gender was not considered to be a significant confounder in the experiment. LS180 cells were inoculated at 1.0 × 106 cells per mouse in the left mouse flank or NCI-H358 cells were inoculated at 7.5 × 105 cells per mouse in the right flank. For single-dose experiments, mice were orally dosed via gavage at 0, 40, or 60 mg/kg of LY3023414 (Selleckchem, Texas, USA, Cat #S8322) in 1% methylcellulose (Sigma-Aldrich, Missouri, USA, Cat #M6385). KVS0001 was dosed at 30 mg/ml intraperitoneal (IP) in 0.5% DMSO (Sigma-Aldrich, USA, Cat #C6295), 10% cremaphor (Sigma-Aldrich, USA, Cat #C5135), and 2% glycerol (Sigma-Aldrich, USA, Cat #G5516). Mice were given physical exams prior to euthanasia at designated endpoints according to the approved research protocol. Tumors, spleen, blood, and lungs were harvested post-euthanasia for further analysis. Tumors were harvested at indicated times and stored in RNA Later (Invitrogen, Maryland, USA, Cat # AM7020) at −80 for further analysis.
 
-## Syngeneic mouse tumor experiments
+#### Syngeneic mouse tumor experiments
 
 Six- to eight-week-old immune compromised M. musculus BALB/cAnNCrl (referred to as BALB/c) and C57BL/6NCrl (referred to as C57BL/6N) mice were purchased from Charles River GmbH (Germany). Only female mice were used as gender was not considered to be a significant confounder in the experiment. Murine cancer cell lines were placed in the left mammary fat pad of female mice at the following densities: LLC 1.0 × 106, RENCA 1.0 × 106, and B16-F10 0.2 × 106. Mice were randomized around day 7 post-implantation when tumor sizes had reached approximately 30–40 mm3. Mice were dosed with 30 mg/kg KVS0001 or vehicle control via IP injection alternating the right and left side daily for 28 days (Figure 5C). Mice were given physical exams before euthanasia at designated endpoints according to the approved research protocol. Syngeneic mouse tumor experiments were repeated offsite by a private contract research organization (CRO), Reaction Biology, blinded to the drug they were providing. Results shown in this manuscript are results as obtained by this CRO.
 
-## In vivo TP53 bispecific experiments
+#### In vivo TP53 bispecific experiments
 
 For the NCI-H716 in vivo bispecific experiments 2.5 × 106 NCI-H716_A24 expressing cells were placed orthotopically by IP injection into NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ (referred to as NSG) mice (Jackson Laboratories, USA). On day 2 mice were randomized to ensure a balanced tumor burden in all groups. Luminescence was measured by injecting mice with 150 µl of RediJect D-Luciferin Ultra Bioluminescent Substrate (PerkinElmer, USA, Cat #770505), and anesthetized using isoflurane in an induction chamber for 5 min. Readouts and analysis were performed on an IVIS Spectrum imaging system and Living Image software (PerkinElmer, USA).
 
-## Data reporting
+#### Data reporting
 
 No statistical methods were used to predetermine the sample size. Statistical analysis was performed using R and Excel. All animal experiments were randomized being sure to alter the first cage dosed and location of cages with a row of the rack. Randomization was performed by animal tumor size, unless otherwise indicated. The investigators responsible for weight and tumor measurements were blinded to the allocation, treatment, and outcome assessment of experiments. The investigators processing mouse tissue processing were blinded to the allocation, treatment, and outcome assessment of experiments. The investigator harvesting the tissues was aware of the allocation, treatment, and outcome assessment of experiments.
 
-## Statistical testing
+#### Statistical testing
 
 Chi-squared testing was performed using counts of cancer cell line mutations predicted to undergo NMD and RNA recovered and prop.test() in R. Mann–Whitney testing performed with wilcox.test() in R. Quantiles calculated utilizing z scores with quantile() in R. Student t-test and one-way ANOVA with Dunnett’s test and Student’s t-test were performed in R and Excel.

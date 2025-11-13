@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.43059.001 Reduced protein homeostasis leading to increased protein instability is a common molecular feature of aging, but it remains unclear whether this is a cause or consequence of the aging process. In neurodegenerative diseases and other amyloidoses, specific proteins self-assemble into amyloid fibrils and accumulate as pathological aggregates in different tissues. More recently, widespread protein aggregation has been described during normal aging. Until now, an extensive characterization of the nature of age-dependent protein aggregation has been lacking. Here, we show that age-dependent aggregates are rapidly formed by newly synthesized proteins and have an amyloid-like structure resembling that of protein aggregates observed in disease. We then demonstrate that age-dependent protein aggregation accelerates the functional decline of different tissues in C. elegans . Together, these findings imply that amyloid-like aggregates contribute to the aging process and therefore could be important targets for strategies designed to maintain physiological functions in the late stages of life.
+Reduced protein homeostasis leading to increased protein instability is a common molecular feature of aging, but it remains unclear whether this is a cause or consequence of the aging process. In neurodegenerative diseases and other amyloidoses, specific proteins self-assemble into amyloid fibrils and accumulate as pathological aggregates in different tissues. More recently, widespread protein aggregation has been described during normal aging. Until now, an extensive characterization of the nature of age-dependent protein aggregation has been lacking. Here, we show that age-dependent aggregates are rapidly formed by newly synthesized proteins and have an amyloid-like structure resembling that of protein aggregates observed in disease. We then demonstrate that age-dependent protein aggregation accelerates the functional decline of different tissues in C. elegans. Together, these findings imply that amyloid-like aggregates contribute to the aging process and therefore could be important targets for strategies designed to maintain physiological functions in the late stages of life.
 
 ## Introduction
 
@@ -43,23 +43,71 @@ In the current study, we use a combination of transmission electron microscopy (
 
 ## Results
 
-## Age-dependent aggregating proteins are intrinsically prone to aggregate in certain tissues
+### Age-dependent aggregating proteins are intrinsically prone to aggregate in certain tissues
 
 Previously, we performed an extensive characterization of the aggregation of two proteins, casein kinase I isoform alpha (KIN-19) and Ras-like GTP-binding protein rhoA (RHO-1). Both KIN-19 and RHO-1 were identified among the proteins with the highest propensity to become insoluble with age in wild-type C. elegans somatic tissues (David et al., 2010). In vivo analysis of animals expressing these proteins fused to fluorescent tags showed the appearance of immobile deposits with age (David et al., 2010). Among the insoluble proteome, the enrichment of certain physico-chemical features such as high aliphatic amino acid content or propensity to form β-sheet-rich structures shows that age-dependent protein aggregation is not random (David et al., 2010; Lechler et al., 2017; Walther et al., 2015). To understand whether KIN-19 and RHO-1 have an intrinsic capacity to aggregate similar to disease-associated proteins or whether a progressive accumulation of protein damage caused by non-enzymatic posttranslational modifications is required to induce their aggregation, we evaluated the dynamics of protein aggregation in vivo. Protein labeling with mEOS2, a green-to-red photoconvertible fluorescent protein, has been successfully used to track protein dynamics (McKinney et al., 2009). In the present case, we used the mEOS2 tag to investigate how fast newly synthesized KIN-19 and RHO-1 aggregate. For this purpose, we generated transgenic animals expressing KIN-19::mEOS2 in either the pharynx or in the body-wall muscles and transgenic animals expressing RHO-1::mEOS2 in the pharynx. The mEOS2 tag did not disrupt the aggregation potential of KIN-19, as the absence of fluorescence recovery after photobleaching confirms that both KIN-19::mEOS2 puncta in the pharynx and body-wall muscle are highly immobile structures (Figure 1—figure supplement 1A–D).
 
 To follow newly synthesized proteins, we set-up a system to perform irreversible photoconversion of the mEOS2 tag present in live animals from green to red by exposing them to intense blue light. At a defined time-point, we photoconverted the mEOS present in aggregates to red. After the photoconversion, newly synthesized proteins emitted green fluorescence and could thus easily be distinguished from old (photoconverted/red) aggregates. This method allowed us to follow the rate of new aggregate formation and the rate of old aggregate removal in a population of transgenic animals over time. We observed photoconversion of all aggregates, but we also noted that the core region of some larger aggregates continued to emit green fluorescence (Figure 1A,B). Interestingly, we observed a doubling in the number of animals with newly-formed green aggregates, 24 hr after the conversion at day 5 of adulthood in both the pharyngeal and body-wall muscles. Conversely, analysis of the red aggregates suggested a slow removal of old aggregates (Figure 1A,B, Source data 1). Blocking translation shortly before conversion reduced the formation of new aggregates (Figure 1B). Conversion in young animals and blocking translation produced similar results (Figure 1—figure supplement 1E). Confocal imaging shows that newly synthesized KIN-19 associate with pre-existing aggregates (Figure 1C). However, we also observed large aggregates emitting only green fluorescence suggesting that seeding is not a prerequisite for KIN-19 aggregate formation (Figure 1C). We observed similar aggregation kinetics in animals with RHO-1::mEOS2 expressed in the pharynx (Figure 1—figure supplement 1F). Together, these results reveal that aggregate formation can proceed rapidly after protein synthesis.
 
-## Age-dependent protein aggregates contain amyloid-like structures in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Following photoconversion at day 5 in the pharynx or in the body-wall muscle, the number of animals with newly synthesized green-emitting non-converted KIN-19::mEOS2 aggregates doubles over 24 hr. Conversely levels of red-emitting converted aggregates slowly declines. Blocking translation with cycloheximide (CHX) prevents new aggregate formation (B). Aggregation is evaluated in Pkin-19::KIN-19::mEOS2 and Pmyo-3::KIN-19::mEOS2 transgenic animals on the basis of the fluorescence intensity in puncta, representing aggregation (see Materials and methods). Quantification was done in the same population of C. elegans before conversion (BC), after conversion (AC), 24 hr after conversion and 48 hr after conversion. Fisher’s exact test comparing low versus medium +high aggregation levels to after conversion: *p<0.05, **p<0.01, ****p<0.0001. Fisher’s exact test comparing low +medium versus high aggregation levels to after conversion: °°p<0.01. See source data including independent biological repeat in Source data 1. (C) 24 hr after photoconversion at day 7, newly synthesized KIN-19::mEOS2 (green emitting) forms new aggregates and associates around older aggregates (red emitting). 3D reconstruction in the pharyngeal anterior bulb region. Arrow heads highlight large new aggregates formed independently of previous aggregates. Scale bar 2 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) KIN-19::mEOS2 puncta visible in the body wall muscle contain immobile protein, demonstrated by lack of fluorescent recovery after photobleaching (FRAP) after 5 min. Area bleached enlarged in caption. Scale bar 2 μm. (B) KIN-19::mEOS2 puncta visible in the pharynx contain immobile protein, demonstrated by FRAP after 8 min. Area bleached enlarged in caption. Scale bar 2 μm. (C) FRAP analysis of KIN-19::mEOS2 puncta present in aged worms. Quantification of relative fluorescence intensity (RFI) over time. Number of animals = 4, puncta evaluated = 6, mean ± SD is represented. See Source data 1. (D) FRAP analysis of mEOS2 puncta/areas of fluorescence present in aged worms. Number of animals = 3, puncta evaluated = 6, mean ± SD is represented. Only a few puncta are present in a population of animals overexpressing Pkin-19::mEOS2 (one in 80 transgenics at day 9 had more than 10 puncta in anterior bulb). (E) In young animals, aggregates are formed by newly synthesized KIN-19 and inhibition of translation (by cycloheximide (CHX)) reduces new aggregate formation. Aggregation is evaluated in Pkin-19::KIN-19::mEOS2 transgenic animals on the basis of the fluorescence intensity in puncta, representing aggregation (see Materials and methods). Quantification was done in the same population of C. elegans before conversion (BC) at day 2, after conversion (AC), 24 hr after conversion and 48 hr after conversion. Fisher’s exact test comparing low versus medium +high aggregation levels to after conversion: *p<0.05, **p<0.01, ****p<0.0001. See Source data 1. (F) RHO-1::mEOS2 aggregates strongly already at day 1 and forms new aggregates (green) 24 hr after photoconversion and associates with older aggregates (red). Scale bar 15 μm, 7 μm in zoom.
+
+### Age-dependent protein aggregates contain amyloid-like structures in vivo
 
 Both KIN-19 and RHO-1 are nearly identical to their human orthologues (sequence identity over 87%). X-ray diffraction shows that the human orthologues are globular proteins formed by a series of α-helices and β-strands. The ability of KIN-19 and RHO-1 to aggregate shortly after synthesis suggests that their aggregation may be associated with the presence of folding intermediates. Notably, both proteins have several segments with a high amyloid propensity (Figure 2—figure supplement 1A,B) (Goldschmidt et al., 2010). These features raise the possibility that KIN-19 and RHO-1 gain an amyloid-like conformation during their aggregation with age. We have previously shown that FLIM can be used to determine whether certain proteins are likely to form amyloid-like aggregates as the formation of amyloid fibrils leads to a significant drop in the fluorescence lifetime of the fluorescent-tagged amyloid proteins due to quenching (Chen et al., 2017; Kaminski Schierle et al., 2011; Murakami et al., 2015). In the current study, we applied FLIM to determine whether KIN-19 and RHO-1 form amyloid-like aggregates in live C. elegans. For this, we generated transgenic animals expressing translational fusions with the yellow fluorescent protein Venus in the pharynx. We first confirmed that there is an age-dependent increase in aggregate formation by KIN-19::Venus and RHO-1::Venus in the pharynx (Figure 2—figure supplement 2A,B) (Lechler et al., 2017). Using FLIM, we found that pharyngeal KIN-19 and RHO-1::Venus display a significantly decreased fluorescence lifetime compared to Venus only control worms (Figure 2A–C, Figure 2—figure supplement 3A). Areas with the strongest drop in fluorescence lifetime co-localize with fluorescent-labeled aggregates (Figure 2A). Of note, we also observed a similar drop in the fluorescence lifetime of pharyngeal RHO-1 labeled with tagRFP compared to tagRFP alone (Figure 2—figure supplement 3B). In both models with KIN-19 and RHO-1, we observed a significant drop in the fluorescence lifetime already at day 1, consistent with the appearance of aggregates in young animals due to protein overexpression. In particular, between day 1 and day 7 of adulthood, we measured a dramatic decrease in fluorescence lifetime of RHO-1 aggregates and a more modest decrease in the fluorescence lifetime of KIN-19 aggregates. This result is consistent with the age-dependent increase in aggregate formation by both proteins and the fact that RHO-1 puncta tend to be larger and more solid than KIN-19 puncta. Indeed, all RHO-1 puncta evaluated showed no recovery after photobleaching, whereas 30% of KIN-19 puncta showed some recovery as previously described (Figure 2—figure supplement 2C–E compared to David et al., 2010). In addition to evaluating the fluorescence lifetime, we assessed whether RHO-1 aggregates are stained by the Congo red derivative X34 previously used to detect amyloid deposits (Styren et al., 2000). Consistent with the amyloid-like nature of the aggregates, we observed co-localization of X34 with RHO-1 aggregates in vivo (Figure 2—figure supplement 3C–E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-v2.jpg)
+
+**Figure 2.:** elegans. (A) Representative intensity-weighted FLIM images of Venus only (control), RHO-1::Venus and KIN-19::Venus worms. Scale = 25 μm. Inset shows zoomed-in images (intensity and FLIM) of the anterior bulb for Venus only, RHO-1::Venus and KIN-19::Venus worms at day 12. Scale = 25 μm. (B) Scatter plot shows a drop in the intensity-weighted fluorescence lifetime averages in adult worms expressing RHO-1::Venus and KIN-19::Venus compared to worms expressing Venus only (control) in the pharynx. n = 7–10, two independent biological repeats. Data are shown as mean lifetime ± SEM and the statistical analysis was performed using two-way ANOVA with Sidak´s multiple comparisons test: **p<0.01, ****p<0.0001. See Source data 1. (C) Normalized histograms of intensity-weighted fluorescence lifetimes for RHO-1::Venus and KIN-19::Venus show a population shift towards lower lifetimes compared to Venus only (control) worms. The histograms contain information from all pixels of all images acquired for each condition.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Fibrillation propensity profile for KIN-19. (B) Fibrillation propensity profile for RHO-1. Table inlet shows hexapeptides with Composite scores below −45. ZipperDB: https://services.mbi.ucla.edu/zipperdb/.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Increased pharyngeal KIN-19 aggregation with age in animals expressing Pkin-19::KIN-19::Venus. Panel reproduced from Lechler et al. (2017). (B) Increased pharyngeal RHO-1 aggregation with age in animals expressing Pmyo-2::RHO-1::Venus. Numbers of worms indicated in the bars. Significance calculated low + medium versus high aggregation levels compared to day 2 of adulthood; Fisher’s exact test: ****p<0.0001. See Source data 1. (C) RHO-1::Venus puncta visible in the pharynx contain immobile protein, demonstrated by absence of fluorescence recovery after 4 min. Scale bar 2 μm. (D) RHO-1::Venus aggregates are highly immobile. Table summarizes FRAP experiments carried out at different ages. (E) FRAP analysis of RHO-1::Venus puncta present in aged worms compared to Venus alone. Quantification of RFI over time. Number of animals = 5, puncta evaluated = 6, mean ± SD is represented. See Source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative fluorescence decay curves, lifetime fits (with associated chi2 values) and fit residuals for Venus only (control), RHO-1::Venus and KIN-19::Venus adult worms at day 12. The black trace represents the instrument response function (IRF). (B) Drop in fluorescence lifetime upon RHO-1::tagRFP aggregation. Scatter plot showing the intensity-weighted mean fluorescence lifetime values of day 1 old adult worms expressing RHO-1::tagRFP in the pharynx compared to worms expressing tagRFP only. n = 7–8, two independent biological repeats combined. t-test with Welch's correction for unequal standard deviations: ****p<0.0001. See Source data 1. (C) RHO-1 aggregates are stained by Congo red derivative X34. Day 2 old animals expressing Pmyo-2::RHO-1::tagRFP. Scale bar 30 μm. Zoom scale bar 15 μm. (D) Absence of X34 staining in wild-type pharynx. Day 3 old wild-type animals (N2). Scale bar 30 μm. Zoom scale bar 15 μm. (E) RHO-1::tagRFP fluorescence does not interfer with X34 fluorescence as demonstrated by eliminating tagRFP fluorescence by bleaching (in white square). Scale bar 3 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Purification steps of recombinant RHO-1 analyzed by SDS-PAGE gel electrophoresis and Coomassie staining. The RHO-1 fusion protein consisting of the thioredoxin protein, His tag and Tobacco etch virus (TEV) cleavage recognition site was purified on a Crude FF column and eluted with imidazole. It ran slightly quicker than the expected 40 kDa predicted size (lane 1). The fusion protein was incubated with recombinant TEV protease overnight in a 1:50 ratio (lane 2). The cleaved RHO-1 protein did not bind to the Crude FF column and eluted in the flow through (lane 3). The TEV protease which has a 6xHis tag and the remaining uncleaved fusion protein were eluted from the column with imidazole (lane 4). (B) Matrix Assisted Laser Desorption/Ionization (MADLI) mass spectrometry of purified RHO-1. Performed by the Proteomics Facility, Biochemistry Department, University of Cambridge. (C) Negative-stain transmission electron micrographs of fibrillised recombinant RHO-1. TEM of RHO-1 negatively stained using 2% uranyl acetate. RHO-1 was incubated for 1 week in a ThT assay to fibrillise. Scale bar = 200 nm. (D) Negative-stain transmission electron micrographs of pmyo-2::RHO-1::Venus worm lysates, day 1. TEM of RHO-1 fibrils negatively stained using 2% uranyl acetate. Scale bar = 200 nm. (E) Negative-stain transmission electron micrographs of RHO-1::HisAvi and KIN-19::HisAvi purified from worms lysates with nickel beads, day 7. Scale bar = 200 nm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Left image: SIM image of RHO-1 fibrils isolated by affinity purification from transgenics expressing RHO-1::HisAvi at day 7 and labeled using the amyloid dye ThT. Right image: Zoomed in image of left image highlighting the fibril bundles formed by RHO-1 in vivo. Circled in red, single fibrils; in green, fibril bundles and in blue, fibril clusters. Scale bars: 5 and 1 µm, respectively. (B) Two-color SIM images of RHO-1 fibrils extracted from transgenics expressing RHO-1::tagRFP (day 2). Fibrils were stained with ThT prior to imaging. Left image: SIM image of ThT-positive RHO-1::tagRFP fibrils. Central image: SIM image of the same fibril as shown in left but upon tagRFP excitation. Right image: Overlay of ThT and tagRFP channels displays co-localization of ThT and RFP of extracted RHO-1::tagRFP fibrils. Lower panel: imaging of control extracts from young animals (sterile fem-1(-) mutants). Scale bar: 1 µm.
 
 To gain more insight into the capacity of RHO-1 to form amyloid-like fibrils, we expressed and purified recombinant RHO-1 (Figure 2—figure supplement 4A,B) and aggregated it over time by constant shaking in stabilizing buffer to induce fibrillization at 37˚C for a week. We obtained low quantities of RHO-1 fibrils, which we were able to analyze by TEM. Analysis of RHO-1 by TEM revealed fibril-like structures which resemble amyloid fibrils such as formed by huntingtin (Htt) (Figure 2—figure supplement 4C) (Reif et al., 2018). Indeed, RHO-1 fibrils had a morphology more similar to Htt fibrils which are shorter and more branch-like compared to fibrils formed from other amyloids such as alpha-synuclein, which are long and flexible. Additionally, RHO-1 and Htt fibrils display no twisting which can be observed in alpha-synuclein fibrils, suggesting that the packing of the monomeric structure and the interaction between protofibrils may be different (Lyubchenko et al., 2012). Importantly, already at day 1, we found comparable fibrillary structures in extracts from RHO-1::Venus transgenic animals (Figure 2—figure supplement 4D). In order to confirm that similar fibril structures can be found in the absence of a fluorescent tag, we have isolated fibrils by affinity purification from day 7 old transgenic worms expressing pharyngeal RHO-1::HisAvi and KIN-19::HisAvi and imaged them by TEM (Figure 2—figure supplement 4E). Moreover, we have stained isolated RHO-1::HisAvi day 7 fibrils, RHO-1::tagRFP day 2 fibrils and extracts from non-aggregated control worms day 2 with amyloid-binding molecule ThT. Using SIM, we found ThT-positive RHO-1 fibrils as shown previously for polyglutamine and Aβ fibrils in cells (Lu et al., 2019; Young et al., 2016) (Figure 2—figure supplement 5).
 
 Together, these findings strongly suggest that Casein kinase I isoform alpha and Ras-like GTP-binding protein rhoA aggregates contain amyloid-like structures in vivo.
 
-## Age-dependent protein aggregation accelerates functional decline
+### Age-dependent protein aggregation accelerates functional decline
 
 A reliable indicator of human aging is a decline in physical capacity such as decreased muscle strength and coordination (Belsky et al., 2015). Similarly, C. elegans displays an age-related decline in pharyngeal pumping and body movement (Huang et al., 2004). To investigate whether age-dependent protein aggregation accelerates functional decline with age, we measured pharyngeal pumping and swimming in liquid (thrashing) in transgenic animals overexpressing fluorescent-labeled KIN-19 and RHO-1 either in the pharynx or the body-wall muscles. In both models with KIN-19 and in the model with pharyngeal RHO-1, protein aggregation increased with age, as measured by the change from a diffuse distribution to the formation of specific puncta by the fluorescent-tagged proteins (Figure 3—figure supplement 1). Among the transgenic models generated, the largest age-dependent changes were observed for C. elegans expressing KIN-19::tagRFP in the pharynx (Figure 3—figure supplement 1A,E) (David et al., 2010). Although the majority of these transgenic animals have no aggregation at day 2, this dramatically changes with age and at day 8, the majority display high levels of KIN-19::tagRFP aggregation. Importantly, pumping frequency was strongly reduced in day 7 aged animals with the highest levels of pharyngeal KIN-19::tagRFP aggregation compared to those with the lowest aggregation levels (Figure 3A, Supplementary file 1). The detrimental effect of age-dependent protein aggregation was also apparent in animals with KIN-19::tagRFP aggregation in the body-wall muscles, since we observed an earlier decline in swimming frequency associated with KIN-19::tagRFP aggregation in the body-wall muscle (Figure 3—figure supplement 2A). This effect was amplified in animals with the highest level of aggregation (Figure 3B). Of note, the fluorescent tagRFP expressed alone in the pharynx or in the body-wall muscle did not affect muscle function (Figure 3—figure supplement 2A, C, D). Decreased body movement with age is associated with increased sarcopenia characterized by disordered sarcomeres and reduced F-actin filaments (F-actin) (Baird et al., 2014; Herndon et al., 2002). To evaluate whether the presence of KIN-19 aggregates is linked to muscle damage at the cellular level, we assessed F-actin staining in animals with KIN-19 aggregation in the body-wall muscles. We found that animals with aggregates tended to have higher levels of disrupted sarcomers compared to controls (Figure 3—figure supplement 3A,B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig3-v2.jpg)
+
+**Figure 3.:** (A) Aged animals with high levels of pharyngeal KIN-19 aggregation have reduced pharyngeal pumping. N = 23–28 animals analyzed per group. T-test: p<0.0001. (B) Aged animals with high levels of KIN-19 aggregation in the body-wall muscle display reduced thrashing. Mean body bends per seconds are set to 100% in animals with low aggregation. Mann-Whitney test: p<0.0001. (C) Young animals with RHO-1 aggregation in pharynx have impaired pharyngeal pumping. N = 26–27 animals analyzed per group. T-test: p<0.0001. (D) Overexpression of RHO-1 without aggregation in the body-wall muscles does not influence thrashing. Mean body bends per seconds are set to 100% in Punc-54::yfp transgenic animals. Mann-Whitney test: non-significant. SEM represented, independent biological repeats in Supplementary file 1 and Source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Increased pharyngeal KIN-19 aggregation with age in animals expressing Pkin-19::KIN-19::tagRFP. (B) Increased body-wall muscle KIN-19 aggregation with age in animals expressing Pmyo-3::KIN-19::tagRFP. (C) Increased pharyngeal RHO-1 aggregation with age in animals expressing Pmyo-2::RHO-1::tagRFP. Already young adults display abundant RHO-1 aggregation. (D) Absence of RHO-1 aggregation in the majority of animals expressing Punc-54::RHO-1::Venus. Numbers of worms indicated in the bars. Significance calculated low +medium versus high aggregation levels compared to day 2 of adulthood; Fisher’s exact test: **p<0.01, ***p<0.001, ****p<0.0001. See Source data 1. (E) RHO-1::tagRFP aggregates abundantly at day 2 compared to KIN-19::tagRFP. Fluorescent micrograph of the upper body region of animals expressing Pkin-19::KIN-19::tagRFP or Pmyo-2::RHO-1::tagRFP. Days of adulthood and exposure times displayed under images. Arrow heads highlight animals with high levels of KIN-19 aggregation in anterior bulb. Scale bar: 100 μm. (F) KIN-19::tagRFP but not RHO-1::Venus aggregates in body-wall muscle (small puncta). Fluorescent micrograph of whole animals expressing Punc-54::RHO-1::Venus or Pmyo-3::KIN-19::tagRFP. Head region on the left. Days of adulthood and exposure times displayed under images. Scale bar: 200 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) KIN-19 aggregation in body-wall muscles impairs thrashing. Mean body bends per seconds are set to 100% in Pmyo-3::tagRFP transgenics. Mann-Whitney test: ****p<0.0001. (B) No effect on pumping detected in animals with mixed levels of KIN-19::tagRFP aggregation. N = 29–39 animals analyzed per group. T-test: non-significant. (C) Fluorescent tagRFP does not affect pharyngeal pumping in young animals. N = 26–27 animals analyzed per group. T-test: non-significant. (D) Fluorescent tagRFP does not affect pharyngeal pumping in aged animals. N = 23–26 animals analyzed per group. T-test: non-significant. SEM represented, independent biological repeats in Supplementary file 1 and Source data 1.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43059/elife-43059-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A, B) Animals with KIN-19 aggregates show defective body-wall muscle structure at day 4. (A) Representative single-plane image showing wrinkled, thinner and faded actin filaments in the presence of KIN-19 aggregates. Top panel: F-actin staining with phalloidin (green). Bottom panel: Merged image with KIN-19 aggregates (magenta). Scale bar 30 µm. (B) Quantification of the decline in body-wall muscle structure with KIN-19 aggregation. Fisher’s exact test: ****p<0.0001. See Source data 1. (C, D) Animals with RHO-1 aggregates show defective pharyngeal muscle structure at day 2. (C) Representative single-plane image showing holes in the actin filaments in the presence of RHO-1 aggregates. Top: merged view of pharynx (RHO-1::tagRFP, tagRFP in magenta and F-actin staining with phalloidin in green); Bottom: zoom into boxed area. Scale bar: 15 µm, zoom: 3 µm. (D) Quantification of defective pharyngeal muscle structure with RHO-1 aggregation. Fisher’s exact test: ****p<0.0001. See Source data 1.
 
 To further show that protein aggregation is the cause of the functional decline in our transgenic animal models rather than other co-occurring aging factors, we examined the effects of protein aggregation in the absence of aging. Most likely due to the high level of overexpression in the pharyngeal muscles, RHO-1::tagRFP aggregated abundantly already in young animals (Figure 3—figure supplement 1C,E). We found that these high levels of RHO-1::tagRFP aggregation strongly impaired pharyngeal pumping in young animals (day 2) (Figure 3C). Notably, these young animals displayed pumping rates normally observed only in aged animals. Moreover, RHO-1 aggregation disrupted actin filament structure in the pharyngeal muscles (Figure 3—figure supplement 3C,D). To exclude that RHO-1 overexpression itself is toxic to C. elegans, we examined another transgenic model where RHO-1::Venus is expressed under the strong C. elegans body-wall muscle promoter Punc-54. These animals have similar levels of transgene expression compared to animals with body-wall muscle KIN-19::tagRFP (Figure 3—figure supplement 1F). Yet, whereas KIN-19 aggregates abundantly in the body-wall muscle, RHO-1::Venus hardly aggregates in this tissue (Figure 3—figure supplement 1D). Thus, these transgenics are a suitable control to identify RHO-1 toxicity caused by overexpression. Importantly, we did not observe reduced thrashing in animals with body-wall muscle RHO-1, demonstrating that overexpressed of RHO-1 without concomittant aggregation is not toxic (Figure 3D). Similarly, the observation that only animals with the highest levels of pharyngeal KIN-19::tagRFP aggregation have functional impairment shows that KIN-19::tagRFP overexpression alone does not cause pumping defects (Figure 3A and Figure 3—figure supplement 2B). Together, these positive and negative controls reveal that protein aggregation itself is detrimental in C. elegans.
 
@@ -79,37 +127,243 @@ In summary, our study demonstrates that aggregation of proteins during normal ag
 
 ## Materials and methods
 
-## Cloning and strain generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>kin-19</td>
+      <td>Wormbase</td>
+      <td>WBGene00002202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. elegans)</td>
+      <td>rho-1</td>
+      <td>Wormbase</td>
+      <td>WBGene00004357</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (E. coli)</td>
+      <td>OP50-1</td>
+      <td>Caenorhabditis genetic center (CGC)</td>
+      <td>RRID:WB-STRAIN:OP50-1</td>
+      <td>Streptomycin resistant strain of OP50</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>muEx473[Pkin-19:: kin-19::tagrfp + Ptph-1::gfp]</td>
+      <td>David et al., 2010</td>
+      <td>RRID:WB-STRAIN:CF3166</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>muEx512[Pkin-19:: tagRFP + Ptph-1::GFP]</td>
+      <td>David et al., 2010</td>
+      <td>CF3317</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>muIs209[Pmyo-3::kin-19:: tagrfp + Ptph-1::gfp]</td>
+      <td>David et al., 2010</td>
+      <td>CF3649</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>muIs210[Pmyo-3:: tagrfp + Ptph-1::GFP]</td>
+      <td>David et al., 2010</td>
+      <td>CF3650</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>muEx587[Pkin-19:: kin-19::meos2 + Punc-122::gfp]</td>
+      <td>This paper</td>
+      <td>CF3706</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqIs9[Pmyo-2::rho-1:: tagrfp + Ptph-1::gfp]</td>
+      <td>This paper</td>
+      <td>DCD13</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx4[Pmyo-3::kin-19::meos2]</td>
+      <td>This paper</td>
+      <td>DCD69</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx[Pmyo-2::rho-1:: meos2 + Punc-122:: gfp + cb-unc-119(+)]</td>
+      <td>This paper</td>
+      <td>DCD83</td>
+      <td>injected into EG6699 containing ttTi5605II; unc-119(ed3)III</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx22[Punc-54::rho-1::venus]</td>
+      <td>This paper</td>
+      <td>DCD127</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqIs12[Pmyo-2::rho-1::venus]</td>
+      <td>This paper</td>
+      <td>DCD146</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx37[Pkin-19:: kin-19::venus + Punc-122::gfp]</td>
+      <td>Lechler et al., 2017</td>
+      <td>DCD179</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqIs22 [Pkin19::kin19:: hisavi + Pkin19::birAtagrfp]</td>
+      <td>This paper</td>
+      <td>DCD242</td>
+      <td>fem-1(hc17ts) IV background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqIs19 [Pmyo2::rho1:: hisavi + Pmyo2::birAtagrfp]</td>
+      <td>This paper</td>
+      <td>DCD243</td>
+      <td>fem-1(hc17ts) IV background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx49[Pkin-19::meos]</td>
+      <td>This paper</td>
+      <td>DCD245</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>uqEx51[Pmyo-2::venus]</td>
+      <td>This paper</td>
+      <td>DCD248</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>rmIs126[Punc-54::YFP]</td>
+      <td>https://doi.org/10.1073/pnas.152161099</td>
+      <td>RRID:WB-STRAIN:AM134</td>
+      <td>N2 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (C. elegans)</td>
+      <td>fem-1(hc17ts)IV</td>
+      <td>CGC</td>
+      <td>WB Cat# BA17, RRID:WB-STRAIN:BA17</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>tagRFP</td>
+      <td>Evrogen, pTagRFP-N, FP142</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKA1062 containing mEOS2</td>
+      <td>Other</td>
+      <td></td>
+      <td>Kaveh Ashrafi, UCSF, USA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phalloidin-iFluor 488 conjugate</td>
+      <td>ABD-23115, AAT Bioquest, Biomol, Germany</td>
+      <td></td>
+      <td>‘1:50’</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X34</td>
+      <td>SML1954, Sigma- Aldrich, Germany</td>
+      <td></td>
+      <td>1 mM final</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>thioflavin T</td>
+      <td>#ab120751, abcam, UK</td>
+      <td></td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>5-Hydroxytryptamine creatinine sulfate complex</td>
+      <td>H7752, Sigma-Aldrich, Germany</td>
+      <td></td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nickel Sepharose 6 Fast Flow beads from HisTrap FF Crude column</td>
+      <td>GE Healthcare, Uppsala, Sweden</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning and strain generation
 
 Cloning was carried out using the Gateway system (Life Technologies, Darmstadt, Germany). Pmyo-2 promoter and pKA1062 mEOS2 translational vector were kindly provided by Dr. Brian Lee and Dr. Kaveh Ashrafi, UCSF. rho-1 cDNA was amplified from a cDNA library prepared from total RNA isolated from N2 worms. Plasmid containing biotinylation enzyme birA was kindly provided by Dr. Ekkehard Schulze (University Freiburg). All constructs contain the unc-54 3′ UTR. The tagrfp vector was obtained from Evrogen (AXXORA, San Diego, CA). Venus was generated by targeted mutation of the yfp gene. HisAvi-tagged KIN-19 and RHO-1 were generated by cloning at the C-terminus a RGSH6 tag together with a bacterially derived polypeptide serving as a biotinylation signal in vivo as previously described (Schäffer et al., 2010; Tagwerker et al., 2006). Constructs were sequenced at each step. Transgenics were generated by microinjection of the constructs at concentrations between 10 and 50 ng/µl into N2 animals. Stable lines were generated by irradiating the animals containing the extrachromosomal array in a CL-1000 Ultraviolet Crosslinker (UVP) with 275µJ x 100. 100% transmission lines were backcrossed at least four times into the wild-type N2 strain.
 
-## Maintenance
+### Maintenance
 
 All strains were kept at 15°C on NGM plates inoculated with OP50 using standard techniques. Age-synchronization was achieved by transferring adults of the desired strain to 20°C and selecting their progeny at L4 stage. All experiments were performed at 20°C. Day 1 of adulthood starts 24 hr after L4.
 
-## Photoconversion of mEOS2-tag and quantification of fluorescence levels
+### Photoconversion of mEOS2-tag and quantification of fluorescence levels
 
 For photoconversion, worms were transferred onto a small (diameter 35 mm) NGM plate without food. The plate was placed 0.5 cm below a collimator (Collimator High-End Lumencor, Leica, Germany) fitted with a filter for blue fluorescence (387/11 BrightLine HC, diameter 40 mm) and illuminated by a Lumencor Sola SE II (AHF, Tübingen). Conversion of mEOS2 in transgenic animals was performed four times for five minutes, with 2 min pauses between exposures. To reduce translation, worms were placed 2 hr before conversion on bacterial seeded plates with 500 µg/ml cycloheximide and kept after conversion on plates with cycloheximide for 48 hr during aggregation quantification.
 
-## Aggregation quantification in vivo
+### Aggregation quantification in vivo
 
 Aggregation levels were determined using Leica fluorescence microscope M165 FC with a Planapo 2.0x objective. Aggregation was quantified following pre-set criteria adapted to the transgene expression pattern and levels in the different transgenic C. elegans models: Animals expressing Pkin-19::KIN-19::mEOS2, Pkin-19::KIN-19::Venus or Pkin-19::KIN-19::TagRFP were divided into less than 10 puncta (low aggregation), between 10 and 100 puncta (medium aggregation) and over 100 puncta in the anterior pharyngeal bulb (high aggregation). Animals overexpressing Pmyo-2::RHO-1::Venus were divided into less than 10 puncta in anterior or posterior pharyngeal bulb (low aggregation), over 10 puncta in either bulbs (medium aggregation) and over 10 puncta in both bulbs (high aggregation). Because of extensive RHO-1 aggregation in animals overexpressing Pmyo-2::RHO-1::TagRFP, aggregation was only quantified in the isthmus: animals with no aggregation (low aggregation), animals with aggregation in up to 50% (medium aggregation) and animals with aggregation in more than 50% (high aggregation) of the isthmus. Animals overexpressing Pmyo-3::KIN-19::TagRFP were divided into over 15 puncta in the head or the middle body region (low aggregation), over 15 puncta in the head and the middle body region (medium aggregation) and over 15 puncta in head, middle body and tail region (high aggregation). The same categories defined for animals overexpressing Pmyo-3::KIN-19::TagRFP were used to evaluate animals overexpressing Pmyo-3::KIN-19::mEOS2 with a cutoff of 10 puncta instead of 15 to account for slightly lower aggregation levels. Animals overexpressing Punc-54::RHO-1::Venus were divided into two categories: less than 15 puncta in the whole animal (low aggregation) and over 15 puncta in the whole animal (medium aggregation). Counting was done in a blind fashion. Two-tailed Fisher’s exact test using an online tool (https://www.socscistatistics.com/tests/fisher/default2.aspx) was performed for statistical analysis.
 
-## Confocal imaging
+### Confocal imaging
 
 For confocal analysis using a Leica SP8 confocal microscope with the HC PL APO CS2 63x/1.30 NA glycerol objective, worms were mounted onto slides with 2% agarose pads using 2 µM levamisole for anesthesia. Worms were examined using the Leica HyD hybrid detector. The tag mEOS2 was detected using 506 nm as excitation and an emission range from 508 to 525 nm for green fluorescence and 571 nm as excitation and an emission range from 573 to 602 nm for red fluorescence. 3D reconstructions were performed using the Leica Application Suite (LAS X). For X34 imaging, X34 was excited with a 405 nm laser and detected with an emission window between 470 and 520 nm and RHO-1::tagRFP using 555 nm as excitation and an emission range from 565 nm to 620nm. For muscle structure imaging, phalloidin was visualized by excitation at 488 nm and with an emission window between 506 and 551 nm and KIN-19::tagRFP, RHO-1::tagRFP and tagRFP were visualized by excitation at 555 nm and with an emission window between 560 and 650 nm.
 
 FRAP analysis was performed as previously described (David et al., 2010) using the Leica SP8 confocal microscope PMT detector. Relative fluorescence intensity (RFI) was analyzed as described previously following the equation RFI = (Tt/Ct)/(T0/C0), where T0 is the intensity in the region of interest (ROI) before photobleaching; Tt, the intensity in the ROI at a defined time after photobleaching; C0, the intensity in the non-bleached part of the puncta before photobleaching; and Ct, the intensity in the non-bleached part of the puncta after bleaching (Brignull et al., 2006).
 
-## Fluorescence lifetime imaging in vivo
+### Fluorescence lifetime imaging in vivo
 
 For fluorescence lifetime imaging, transgenic C. elegans were mounted on microscope slides with 2.5% agarose pads using 25 mM NaN3 as anaesthetic. All samples were assayed on a modified confocal-based platform (Olympus FV300-IX70) equipped with a 60x oil objective (PLAPON 60XOSC2 1.4NA, Olympus, Germany) and integrated with time-correlated single photon counting (TCSPC) FLIM implementation. A pulsed supercontinuum (WL-SC-400–15, Fianium Ltd., UK) at 40MHz repetition rate served as the excitation source. YFP was excited at 510 nm using a tuneable filter (AOTFnC-400.650, Quanta Tech, New York). The excitation light was filtered with FF03-510/20 and the fluorescence emission was filtered with FF01-542/27 (both bandpass filters from Semrock Inc, New York) before reaching the photomultiplier tube (PMC-100, Becker and Hickl GmBH, Berlin, Germany). Photons were recorded by a SPC-830 (Becker and Hickl GmBH, Germany) module that permits sorting photons from each pixel into a histogram according to the photon arrival times. Photons were acquired for two minutes to make a single 256 × 256 FLIM image and photobleaching was verified to be negligible during this time. Photon count rates were always kept below 1% of the laser repetition rate to avoid pulse pileup. All raw FLIM images were fitted with a single exponential decay function using FLIMfit (Warren et al., 2013) and exported to MATLAB (Mathworks, Inc, Natick, MA) to obtain an intensity weighted lifetime average for each image. Statistical analysis was carried out using two-way ANOVA followed by Sidak’s multiple comparisons test in Graphpad Prism software (La Jolla, CA).
 
-## X34 staining
+### X34 staining
 
 Worms were incubated in 1 mM X-34 in 10 mM Tris-HCl pH 8 for 2 hr, gently shaking at room temperature as previously described (Link et al., 2001). Worms were then transferred to bacteria seeded NGM plates to destain overnight before confocal imaging.
 
-## Pharyngeal pumping analysis
+### Pharyngeal pumping analysis
 
 Electrical activity of the pharyngeal pumping was measured using the NemaMetrix ScreenChip System (NemaMetrix, Eugene, OR). The entire setup is housed in a laboratory that maintained a temperature of approximately 21°C. Baseline noise was typically between 5 and 25 µV.
 
@@ -117,38 +371,38 @@ For each experiment, 50 worms were picked in 1.5 ml of M9 +0.01% Triton and was
 
 The recordings were analyzed by NemAnalysis v0.2 software using the ‘Brute Force’ optimization method. The ideal settings were chosen automatically from all combinations of the bounds settings (Minimum SNR from 1.4 (low) to 2.0 (high), with a Step size of 0.1; Highpass Cutoff from 10 (low) to 20 (high), with a Step size of 5) and applied to produce the analysis results. Data was exported into Excel for statistical analysis with the student’s t test.
 
-## Thrashing analysis
+### Thrashing analysis
 
 To quantify movement in terms of body-bends-per-second, movies of worms swimming in liquid were acquired with high frame rates (15 frames per second) using a high-resolution monochrome camera (JAI BM-500 GE, Stemmer imaging GmbH, Puchheim, Germany). For each condition, around 40 animals were filmed (see Supplementary file 1 for exact numbers). Worms were picked from cultivation plate and allowed to swim in a small plastic petri dish filled with M9 +0.01% Triton. Petri dish containing worms was placed on a transparent platform and illuminated from bottom up with a flat backlight (CCS TH-211/200-RD, Stemmer imaging GmbH, Puchheim, Germany) to achieve homogeneous, high-contrast lighting. The entire setup is housed in a laboratory that maintained a temperature of approximately 21°C. Movies were taken 10 min after placing the animals in the liquid. Five consecutive 30 s movies were made for each group of worms. The movies were then analyzed using the ImageJ wrMTrck plugin (Nussbaum-Krammer et al., 2015). The wrMTrck plugin tracked individual worms in the movies and counted the numbers of body-bends. The input values of wrMTrck_Batch are detailed in Supplementary file 2. Mann-Whitney test was used for statistical analysis (GraphPad Prism 7).
 
-## Analysis of muscle structure
+### Analysis of muscle structure
 
 To analyze the muscle structures in the presence of aggregates, worms were collected at day 4 (for body-wall muscle KIN-19::tagRFP strain CF3649 and tagRFP control strain CF3650) and at day 2 (for pharyngeal RHO-1::tagrfp strain DCD13 and tagRFP control strain CF3317) and fixed in 4% PFA for 10 min at room temperature (RT). Worms were stained with phalloidin to visualize F-actin following a modified protocol by Karady et al. (2013). Briefly, worms were washed in phosphate buffered saline (PBS), incubated for 30 min in PBS with 2% Tween and reduced for 30 min in Tris-Triton β-mercaptoethanol solution (5% β-mercaptoethanol, 1% triton X-100, 130 mM Tris pH 6.8). After washing with PBS, worms were stained with phalloidin (1:50 in PBS, 0.5% triton X-100; Phalloidin-iFluor 488 conjugate from AAT Bioquest), washed and mounted on slides for confocal imaging.
 
 Image analysis of muscle structure was performed in a blind fashion. The body-wall muscle structure was considered normal when the actin filaments are smooth and tightly arranged with no empty space between, modest defective when some of the filaments were slightly distorted or less densely packed. Finally, body-wall muscles were considered severe defective when the filaments appeared significantly thinner or highly wrinkled, or with large empty space between. The pharyngeal muscle structure was considered severely defective when the actin filament structure showed large holes.
 
-## Plasmid generation for RHO-1 recombinant expression
+### Plasmid generation for RHO-1 recombinant expression
 
 C. elegans RHO-1 cDNA was cloned into pET32a expression vector using restriction sites BamHI and HindIII (NEB, UK). The open-reading frame encoded the RHO-1 fusion protein comprising of a thioredoxin protein, 6xHis tag and the Tobacco etch virus (TEV) cleavage recognition site with the sequence ENLYFQA, where TEV cleaves between Q and A, which was also the N-terminal residue of the RHO-1 protein sequence, followed by the RHO-1 protein. The plasmid was confirmed by DNA sequencing (Source Bioscience, Cambridge, UK).
 
-## Expression and isolation of recombinant RHO-1 from inclusion bodies
+### Expression and isolation of recombinant RHO-1 from inclusion bodies
 
 Reagents were purchased from Sigma-Aldrich, UK unless stated. BL21 DE3 STAR E. coli (Thermo Fisher Scientific, USA) were transformed with pET32a:RHO-1. 3 l cultures of E. coli in Lysogeny Broth containing carbenicillin (100 µg/ml) were grown at 37°C at 250 rpm and induced for expression of the RHO-1 fusion protein with 1 mM isopropyl-β-thiogalactopyranoside (IPTG) for 4 hr. E. coli were pelleted by centrifuge at 8000 x g for 15 min before being washed by resuspension in PBS with 1% Triton X-110 and 1 mM Tris(2-carboxyethyl)phosphine hydrochloride (TCEP) and centrifuged again. The pelleted E. coli were either stored at −20°C until further use or lysed straight away. The RHO-1 fusion protein forms in inclusion bodies. To release the inclusion bodies, the E. coli were resuspended in 20 ml of lysis buffer per 1 l of culture (50 mM Tris, 500 mM NaCl, 5 mM MgCl2, 1 mM phenylmethylsulfonyl fluoride (PMSF), protease inhibitor tablets (cOmplete, Mini EDTA-free, Roche), 1% Triton X-110, 1 mM TCEP, pH 8 at 4°C) and sonicated on ice using three rounds of 30 s on and 30 s off 70% sonication power. The suspension was centrifuged at 10,000 x g for 10 min at 4°C. The pellet containing RHO-1 inclusion bodies was resuspended in 30 ml per 1 l culture of wash buffer 1 (Lysis buffer +2 M urea, pH 8 at 4°C). The inclusion bodies were sonicated for four rounds of 10 s on, 20 s off and centrifuged at 10,000 x g for 10 min at 4°C, this wash was then repeated again. Wash numbers 3 and 4 used the same sonication and centrifuge parameters, but pellets were washed with wash buffer 2 (Lysis buffer, 2 M urea, 1 mM TCEP, without Triton X-110 or protease inhibitors). The final pellet became paler and more chalk-like. These wash steps are important to lead to a purer final RHO-1 protein. The inclusion bodies were then solublized in solublizing buffer using 10 ml per 1 l of culture for 1 hr using a magnetic stirrer (50 mM Tris, 500 mM NaCl, 5 mM MgCl2, 6 M guanidinium hydrochloride (GuHCl), 1 mM TCEP, (6 M Urea can also be used in place of GuHCl, but GuHCl gives a slightly higher final protein yield)). Insoluble material was removed by centrifuge at 16,000 x g for 10 min at room temperature (RT).
 
-## Purification of recombinant RHO-1
+### Purification of recombinant RHO-1
 
 The RHO-1 fusion protein was purified using two linked-together 1 mL HisTrap Crude FF columns on an ÄKTA Pure (GE Healthcare, Sweden). The columns were equilibrated with solublizing buffer before 10 ml of protein was loaded onto the column by the sample pump. The columns were washed in wash buffer (50 mM Tris, 500 mM NaCl, 5 mM MgCl2, 6 M Urea, 20 mM imidazole) before being eluted against a linear gradient of elution buffer (50 mM Tris, 500 mM NaCl, 5 mM MgCl2, 6 M Urea, 500 mM imidazole) over 16 column volumes of a 1 × 1 ml column, that is 16 ml. Multiple purification runs were performed until all RHO-1 fusion protein was purified. Fractions from all runs containing the RHO-1 fusion protein were pooled and dialysed overnight in 2 l stabilizing buffer modified from (Healthcare GE, 2007; Nelson et al., 2014; Thomson et al., 2012) (50 mM Tris, 250 mM NaCl, 100 mM arginine, 5 mM reduced glutathione, 0.5 mM oxidised glutathione, 5 mM MgCl2, 5 µM guanosine 5’-diphosphate (GDP) (Generon, UK) pH 7.2). The RHO-1 fusion protein was then concentrated to 1 ml per 1 l culture using Spectra/Gel Absorbent (Spectrum Labs, USA) through a 10 kDa MWCO Slide-A-Lyzer dialysis cassette (Thermo Fisher Scientific). The RHO-1 fusion protein was then incubated overnight with recombinant TEV protease to cleave the RHO-1 from the fusion tag in a 1:50 ration of TEV to RHO-1 fusion protein based on absorbance at 280 nm. Recombinant TEV was produced by Dr Marielle Wälti using methods from Tropea et al. (2009). The cleaved RHO-1 was separated from the fusion tag and TEV protein by purification using the two linked-together 1 ml HisTrap Crude FF columns on an ÄKTA Pure. The columns were equilibrated in stabilizing buffer and 1 ml of the protein loaded onto the columns by injection. Cleaved RHO-1 was eluted in stabilization buffer during the column wash. The fusion tag and the His-tagged TEV were retained on the column and eluted with 100% elution buffer over 10 CV (stabilization buffer with 500 mM imidazole). Protein concentration was monitored throughout purification using the extinction coefficient 0.862 M−1 cm−1 for the fusion protein, 0.849 M−1 cm−1 for the refolded fusion protein and 0.875 M−1 cm−1 for the cleaved refolded RHO-1 protein. Quantitative analysis of protein purity was performed in FIJI image analysis software (Schindelin et al., 2012) by profiling protein band intensity of the stained gel and mass spectrometry confirmed the purification of RHO-1. To note, RHO-1 precipitated in NaP, Tris, NaCl buffers.
 
-## Fibrillization of RHO-1 and analysis by transmission electron microscopy (TEM)
+### Fibrillization of RHO-1 and analysis by transmission electron microscopy (TEM)
 
 RHO-1 was fibrillized by incubating 20 µM in stabilizing buffer during a Thioflavin-T (ThT) based-assay with 10 µM ThT (AbCam, UK) in non-binding, clear bottom, black 96-well plate (PN 655906 Greiner Bio-One GmbH, Germany). The plate was incubated at 37°C with constant shaking at 300 rpm for 7 days. RHO-1 was taken from the wells in the microplate for imaging by TEM. All samples also contained 0.05% NaN3 to prevent bacterial growth.
 
 Fibrillized RHO-1 samples were centrifuged for 20 min at 21,000 x g and the supernatant removed leaving 10 µl of sample. Each 10 µl sample was incubated on a glow-discharged copper grid for 1 min. Excess liquid was blotted off and the grid washed in twice in dH2O for 15 s. 2% uranyl acetate was used to negatively stain the samples for 30 s before imaging on the Tecnai G2 80-200kv TEM at the Cambridge Advanced Imaging Centre.
 
-## Preparation and analysis of worm lysates for fibrils by TEM
+### Preparation and analysis of worm lysates for fibrils by TEM
 
 C. elegans DCD146 expressing RHO-1::Venus, DCD242 expressing KIN-19::HisAvi and DCD243 expressing RHO-1::HisAvi were grown to confluency on high growth medium plates and bleached to obtain a synchronized population of worms as previously described (Sulston, 1988). L1s were transferred into a liquid culture with complete S basal supplemented with OP50-1 (OP50 with Streptomycin resistance) and grown at 20°C or 25°C (to induce sterility of DCD242 and DCD243) as previously described (Groh et al., 2017a; Groh et al., 2017b). At day 1 of adulthood (DCD146) or at day 7 of adulthood (DCD242 and DCD243), worms were allowed to sediment in a separation funnel and washed with cold M9. The worm pellet was resuspended in PBS with 2x protease inhibitor tablets (cOmplete, Mini EDTA-free, Roche) and frozen in liquid nitrogen. For TEM with RHO-1::Venus, frozen worms were resuspended in radioimmunoprecipitation assay (RIPA) buffer with protease inhibitor tablets and lysed by 20–25 passages through a cell homogeniser (Isobiotec, Germany) using a tungsten carbide ball with 16 µm clearance. Cuticle fragments and unlysed worms were removed by centrifugation for 5 min at 835 g and 4°C. After careful removal of the supernatant, the insoluble fraction was collected by centrifugation for 30 min at 21,000 g and 4°C. The supernatant was removed and the pellet was resuspended in PBS with protease inhibitor tablets by homogenising with a needle (27G, Sterican). To perform TEM with fibrils isolated by affinity, we pulled down His-tagged RHO-1 and KIN-19 by nickel beads. For this, 250 µl worm extract was added to 250 µl RIPA buffer (Invitrogen) with protease inhibitors and sonicated for 10 s twice. Cuticle fragments and unlysed worms were removed by centrifugation for 1 min at 800 x g. The supernatant was removed and centrifuged at 21 k x g for 20 min. The pellet was resuspended in 250 µl PBS with protease inhibitors and passed through a 30 G needle three times. 20 µl of precharged Nickel Sepharose 6 Fast Flow beads taken from a HisTrap FF Crude column (GE Healthcare, Uppsala, Sweden) were incubated with the resuspended pellet overnight at 4°C on a fixed speed rotator at 20 rpm (SB2, Stuart, Staffordshire, UK). To separate the beads from unbound proteins the tubes were centrifuged at 800 x g for 1 min and the supernatant removed. 60 µl of 500 mM imidazole in PBS pH 8.0 was added to the beads and incubated overnight at 4°C on a fixed speed rotator at 20 rpm. To isolate eluted fibrils the tubes were centrifuged at 800 x g for 1 min and the supernatant containing the fibrils was used for TEM experiments. 10 µl sample was applied to a carbon coated grid, and 2% uranyl acetate was used for negative staining. Imaging was performed on the Tecnai G2 80-200kv TEM at the Cambridge Advanced Imaging Centre.
 
-## Preparation and analysis of worm lysates for fibrils by SIM
+### Preparation and analysis of worm lysates for fibrils by SIM
 
 Nunc Lab-Tek II Chamber Slide (Sigma, Dorset, UK) were coated for 30 min with 0.01% poly-L-Lysine (P4707, Sigma) before incubation for 1 hr with either nickel bead extracted fibrils or resuspended worm pellets prepared as described above. RHO-1::tagRFP expressing transgenics (DCD13) and fem-1(-) mutants (CF2137; the non-aggregated control worm) extracts were incubated with 50 µM thioflavin T (ThT) (#ab120751, abcam, UK) for 1 hr and washed three times in PBS before imaging. To visualize amyloids from worm extracts, we used our custom-built SIM providing a spatial resolution approaching 90 nm at frame rates reaching 22 Hz (Young et al., 2016). Hardware control and image reconstruction were performed with software written in LabView and Matlab (Ströhl and Kaminski, 2015). For visualization, ImageJ was used.

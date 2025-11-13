@@ -31,17 +31,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Fogarty International Center, National Institutes of Health Bethesda United States
-2. https://ror.org/00cvxb145 Brotman Baty Institute for Precision Medicine, University of Washington Seattle United States
-3. https://ror.org/007ps6h72 Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center Seattle United States
-4. https://ror.org/05je2tx78 Virology Surveillance and Diagnosis Branch, Influenza Division, National Center for Immunization and Respiratory Diseases (NCIRD), Centers for Disease Control and Prevention (CDC) Atlanta United States
-5. https://ror.org/04tnbqb63 WHO Collaborating Centre for Reference and Research on Influenza, Crick Worldwide Influenza Centre, The Francis Crick Institute London United Kingdom
-6. https://ror.org/001ggbx22 Influenza Virus Research Center, National Institute of Infectious Diseases Tokyo Japan
-7. https://ror.org/016899r71 WHO Collaborating Centre for Reference and Research on Influenza, The Peter Doherty Institute for Infection and Immunity, Department of Microbiology and Immunology, The University of Melbourne, The Peter Doherty Institute for Infection and Immunity Melbourne Australia
-8. https://ror.org/04a9tmd77 Center for Vaccine Research and Pandemic Preparedness (C-VaRPP), Icahn School of Medicine at Mount Sinai New York United States
-9. https://ror.org/04a9tmd77 Department of Pathology, Molecular and Cell-Based Medicine, Icahn School of Medicine at Mount Sinai New York United States
-10. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-11. https://ror.org/006w34k90 Howard Hughes Medical Institute Seattle United States
+1. Fogarty International Center, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Brotman Baty Institute for Precision Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+4. Virology Surveillance and Diagnosis Branch, Influenza Division, National Center for Immunization and Respiratory Diseases (NCIRD), Centers for Disease Control and Prevention (CDC) Atlanta United States ([ROR:05je2tx78](https://ror.org/05je2tx78))
+5. WHO Collaborating Centre for Reference and Research on Influenza, Crick Worldwide Influenza Centre, The Francis Crick Institute London United Kingdom ([ROR:04tnbqb63](https://ror.org/04tnbqb63))
+6. Influenza Virus Research Center, National Institute of Infectious Diseases Tokyo Japan ([ROR:001ggbx22](https://ror.org/001ggbx22))
+7. WHO Collaborating Centre for Reference and Research on Influenza, The Peter Doherty Institute for Infection and Immunity, Department of Microbiology and Immunology, The University of Melbourne, The Peter Doherty Institute for Infection and Immunity Melbourne Australia ([ROR:016899r71](https://ror.org/016899r71))
+8. Center for Vaccine Research and Pandemic Preparedness (C-VaRPP), Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+9. Department of Pathology, Molecular and Cell-Based Medicine, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+10. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+11. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
 
 † Corresponding author
 
@@ -65,11 +65,11 @@ Here, we link A(H3N2) virus evolutionary dynamics to epidemiologic surveillance 
 
 Our study focuses on the impact of A(H3N2) virus evolution on seasonal epidemics from seasons 1997–1998 to 2018–2019 in the U.S.; whenever possible, we make use of regionally disaggregated indicators and analyses. We start by identifying multiple indicators of influenza evolution each season based on changes in HA and NA. Next, we compile influenza virus subtype-specific incidence time series for U.S. Department of Health and Human Service (HHS) regions and estimate multiple indicators characterizing influenza A(H3N2) epidemic dynamics each season, including epidemic burden, severity, type/subtype dominance, timing, and the age distribution of cases. We then assess univariate relationships between national indicators of evolution and regional epidemic characteristics. Lastly, we use multivariable regression models and random forest models to measure the relative importance of viral evolution, heterosubtypic interference, and prior immunity in predicting regional A(H3N2) epidemic dynamics.
 
-## Influenza epidemic timing and burden
+### Influenza epidemic timing and burden
 
 Epidemiological data processing and analysis were performed using R version 4.3 (R Development Core Team, 2023).
 
-## Influenza-like illness and virological surveillance data
+#### Influenza-like illness and virological surveillance data
 
 We obtained weekly epidemiological and virological data for influenza seasons 1997–1998 to 2018–2019, at the U.S. HHS region level. We defined influenza seasons as calendar week 40 in a given year to calendar week 20 in the following year, with the exception of the 2008–2009 season, which ended in 2009 week 16 due to the emergence of the A(H1N1)pdm09 virus (Goldstein et al., 2011).
 
@@ -83,111 +83,303 @@ We defined influenza A subtype dominance in each season based on the proportion 
 
 For each HHS region, we estimated weekly incidences of influenza A(H3N2), A(H1N1), and B by multiplying the percentage of influenza-like illness among outpatient visits, weighted by regional population size, with the percentage of respiratory samples testing positive for each type/subtype (Figure 1, Figure 1—figure supplement 1). ILI × percent positive (ILI+) is considered a robust estimate of influenza activity and has been used in multiple prior modeling studies (Bedford et al., 2014; Goldstein et al., 2011; Pei et al., 2018). We used linear interpolation to estimate missing values for time spans of up to 4 consecutive weeks.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig1-v1.jpg)
+
+**Figure 1.:** (A) Weekly incidence of influenza A(H1N1) (blue), A(H3N2) (red), and B (green) averaged across 10 HHS regions (Region 1: Boston; Region 2: New York City; Region 3: Washington, DC; Region 4: Atlanta; Region 5: Chicago; Region 6: Dallas, Region 7: Kansas City; Region 8: Denver; Region 9: San Francisco; Region 10: Seattle). Incidences are the proportion of influenza-like illness (ILI) visits among all outpatient visits, multiplied by the proportion of respiratory samples testing positive for each influenza type/subtype. Time series are 95% confidence intervals of regional incidence estimates. Vertical dashed lines indicate January 1 of each year. (B) Intensity of weekly influenza A(H3N2) incidence in 10 HHS regions. White tiles indicate weeks when influenza-like-illness data or virological data were not reported. Data for Region 10 are not available in seasons prior to 2009.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Intensity of weekly (A) influenza A(H1N1) and (B) influenza B incidence in 10 HHS regions. Incidences are the proportion of influenza-like illness (ILI) visits among all outpatient visits, multiplied by the proportion of respiratory samples testing positive for each influenza type/subtype. Seasonal and pandemic A(H1N1) are combined as influenza A(H1N1), and the Victoria and Yamagata lineages of influenza B are combined as influenza B. White tiles indicate weeks when either influenza-like-illness cases or virological data were not reported. Data for Region 10 are not available in seasons prior to 2009.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Each point represents the total number of influenza tests in each HHS region in each season, as reported by the U.S. CDC WHO Collaborating Center for Surveillance, Epidemiology and Control of Influenza. In each boxplot, the whiskers extend to the first and third quartiles of the distribution, and the centre bar represents the median number of specimens. Data for Region 10 are not available in seasons prior to 2009.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Spearman’s rank correlations among indicators of A(H3N2) epidemic timing, including onset week, peak week, regional variation (s.d.) in onset and peak timing, the number of days from epidemic onset to peak incidence, and seasonal duration, indicators of A(H3N2) epidemic magnitude, including epidemic intensity (i.e. the ‘sharpness’ of the epidemic curve), transmissibility (maximum effective reproduction number, $R_{t}$), subtype dominance, epidemic size, and peak incidence. Correlations between the circulation of other influenza types/subtypes and A(H3N2) epidemic burden and timing are also included. The color of each circle indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation). Stars within circles indicate statistical significance (adjusted p<0.05). The Benjamini and Hochberg method was used to adjust p-values for multiple testing.
+
 The emergence of the A(H1N1)pdm09 virus in 2009 altered influenza testing and reporting patterns (Figure 1—figure supplement 2). Specifically, the U.S. CDC and WHO increased laboratory testing capacity and strengthened epidemiological networks, which led to substantial improvements to influenza surveillance that are still in place today (Centers for Disease Control and Prevention, National Center for Immunization and Respiratory Diseases, 2023b). For each HHS region, we adjusted weekly incidences for increases in reporting rates during the post-pandemic period – defined as the weeks after 2010 week 33 – by scaling pre-pandemic incidences by the ratio of mean weekly ILI+ in the post-pandemic period to that of the pre-pandemic period (1997 week 40–2009 week 17). Incidences for HHS Region 10 were not adjusted for pre- and post-pandemic reporting because surveillance data for this region were not available prior to 2009. To account for differences in reporting rates across HHS regions, we next scaled each region’s type/subtype incidences by its mean weekly ILI+ for the entire study period. Scaled incidences were used in all downstream analyses of epidemic burden and timing.
 
-## Characteristics of seasonal influenza epidemics
+#### Characteristics of seasonal influenza epidemics
 
-## Epidemic burden
+##### Epidemic burden
 
-We considered three complementary indicators of epidemic burden, separately for each influenza type/subtype, HHS region, and season. We defined peak incidence as the maximum weekly scaled incidence and epidemic size as the cumulative weekly scaled incidence. We estimated epidemic intensity based on a method previously developed to study variation in the shape (i.e. sharpness) of influenza epidemics across U.S. cities (Dalziel et al., 2018). Epidemic intensity increases when incidence is more concentrated in particular weeks and decreases when incidence is more evenly spread across weeks. Specifically, we defined the incidence distribution pij as the fraction of influenza incidence in season j that occurred during week i in a given region, and epidemic intensity vj as the inverse of the Shannon entropy of the weekly incidence distribution:(1)vj=(−∑ipijln⁡pij)−1
+We considered three complementary indicators of epidemic burden, separately for each influenza type/subtype, HHS region, and season. We defined peak incidence as the maximum weekly scaled incidence and epidemic size as the cumulative weekly scaled incidence. We estimated epidemic intensity based on a method previously developed to study variation in the shape (i.e. sharpness) of influenza epidemics across U.S. cities (Dalziel et al., 2018). Epidemic intensity increases when incidence is more concentrated in particular weeks and decreases when incidence is more evenly spread across weeks. Specifically, we defined the incidence distribution $p_{ij}$ as the fraction of influenza incidence in season $j$ that occurred during week $i$ in a given region, and epidemic intensity $v_{j}$ as the inverse of the Shannon entropy of the weekly incidence distribution:
+
+$$
+v_{j}=(−\sumip_{ij}ln⁡p_{ij})^{−1}
+$$
 
 Epidemic intensity is intended to measure the shape and spread of an epidemic, regardless of the actual volume of cases in a given region or season. Following the methodology of Dalziel et al., epidemic intensity values were normalized to fall between 0 and 1 so that epidemic intensity is invariant to differences in reporting rates and/or attack rates across regions and seasons.
 
-## Transmission intensity
+##### Transmission intensity
 
-For each region in each season, we used semi-mechanistic epidemiological models to estimate A(H3N2) virus time-varying (instantaneous) reproduction numbers, Rt, by date of infection (Epidemia R package; Bhatt et al., 2023; Scott et al., 2021). Epidemia implements a Bayesian approach using the probabilistic programming language Stan (Carpenter et al., 2017). Prior to Rt estimation, we computed daily A(H3N2) case counts by disaggregating weekly incidence rates to daily rates (tempdisagg R package; Sax and Steiner, 2013) and rounding the resultant values to integers.
+For each region in each season, we used semi-mechanistic epidemiological models to estimate A(H3N2) virus time-varying (instantaneous) reproduction numbers, $R_{t}$, by date of infection (Epidemia R package; Bhatt et al., 2023; Scott et al., 2021). Epidemia implements a Bayesian approach using the probabilistic programming language Stan (Carpenter et al., 2017). Prior to $R_{t}$ estimation, we computed daily A(H3N2) case counts by disaggregating weekly incidence rates to daily rates (tempdisagg R package; Sax and Steiner, 2013) and rounding the resultant values to integers.
 
-## Model specifications
+###### Model specifications
 
-Formally, Rt is modeled as:(2)Rt=exp(βo+ϵt1),(3)βo∼Normal(log(Ro),0.2),(4)ϵt1∼Normal(0,σϵ),(5)σϵ∼Half−Normal(0,0.01),
+Formally, $R_{t}$ is modeled as:
 
-where exp is the exponential function, the mean of the prior for the intercept βo is the natural log of the basic reproduction number Ro of A(H3N2) virus (1.3) (Biggerstaff et al., 2014a), and ϵt1 is a daily random walk process. The steps of the daily walks ϵt1 are independent and centered around 0 with standard deviation σϵ.
+$$
+R_{t}=exp(\beta_{o}+ϵ_{t}^{1}),
+$$
 
-Instead of using a renewal process to propagate infections, we modeled new infections it as unknown latent parameters it`, because the additional variance around infections can account for uncertainty in initial growth rates, as well as superspreading events (Bhatt et al., 2023; Scott et al., 2021):(6)it∼Normal(it′,d),(7)d∼Normal(10,2),
 
-where d is the coefficient of dispersion. This prior assumes that infections have conditional variance around 10 times the conditional mean (Scott et al., 2021).
 
-The generation interval distribution gk is the probability that s days separate the moment of infection in an index case and in an offspring case. For the generation interval, we assumed a discretized Weibull distribution with mean 3.6 days and s.d. 1.6 days (Cowling et al., 2009).
+$$
+\beta_{o}∼Normal(log(R_{o}),0.2),
+$$
 
-Given the generation interval distribution gk, the number of new infections on day t is given by the convolution function:(8)it′=Rt∑s<tisgt−s,
 
-where Rt is the non-negative instantaneous reproduction number. Rt can be expressed as the number of new infections on day t relative to the cumulative sum of individuals infected s days before day t, weighted by the current infectiousness of those individuals (Cori et al., 2013; Gostic et al., 2020):(9)Rt=it′∑s<tisgt−s
 
-The model is initialized with seeded infections iv:0,v<0, which are treated as unknown parameters (Bhatt et al., 2023; Scott et al., 2021). The prior on iv:0 assumes that daily seeds are constant over a seeding period of 6 days:(10)i−6:0∼Exponential(τ−1),(11)τ∼Exponential(λ0),
+$$
+ϵ_{t}^{1}∼Normal(0,\sigma_{ϵ}),
+$$
 
-where λ0>0 is a rate hyperparameter. λ0 is given an uninformative prior (0.03) so that seeds are primarily determined by initial transmission rates and the chosen start date of the epidemic (Bhatt et al., 2023; Scott et al., 2021).
 
-Daily case counts Yt are modeled as deriving from past new infections is,s<t, assuming a negative binomial observation model with mean yt and overdispersion parameter ϕ and a constant infection ascertainment rate α of 0.45 (Biggerstaff et al., 2014b). The expected number of observed cases on day t was mapped to past infections by convolving over the time distribution of infection to case observation πk:(12)Yt∼NegativeBinomial(yt,ϕ)(13)ϕ∼Normal(10,5)(14)logit(yt)=α(∑s≤tisπt−s)
 
-We estimated πk by summing the incubation period distribution and the reporting delay distribution (i.e. the time period from symptom onset to case observation), assuming a lognormal-distributed incubation period with mean 1.4 days and s.d. 1.5 days (Lessler et al., 2009) and a lognormal-distributed reporting delay with mean 2 days and s.d. 1.5 days (Russell et al., 2018). Thus, the time distribution for infection-to-case-observation was:(15)π∼ lognormal(1.4,1.5)+lognormal(2,1.5)
+$$
+\sigma_{ϵ}∼Half−Normal(0,0.01),
+$$
+
+where $exp$ is the exponential function, the mean of the prior for the intercept $\beta_{o}$ is the natural log of the basic reproduction number $R_{o}$ of A(H3N2) virus (1.3) (Biggerstaff et al., 2014a), and $ϵ_{t}^{1}$ is a daily random walk process. The steps of the daily walks $ϵ_{t}^{1}$ are independent and centered around 0 with standard deviation $\sigma_{ϵ}$.
+
+Instead of using a renewal process to propagate infections, we modeled new infections $i_{t}$ as unknown latent parameters $i_{t}^{`}$, because the additional variance around infections can account for uncertainty in initial growth rates, as well as superspreading events (Bhatt et al., 2023; Scott et al., 2021):
+
+$$
+i_{t}∼Normal(i_{t}^{′},d),
+$$
+
+
+
+$$
+d∼Normal(10,2),
+$$
+
+where $d$ is the coefficient of dispersion. This prior assumes that infections have conditional variance around 10 times the conditional mean (Scott et al., 2021).
+
+The generation interval distribution $g_{k}$ is the probability that $s$ days separate the moment of infection in an index case and in an offspring case. For the generation interval, we assumed a discretized Weibull distribution with mean 3.6 days and s.d. 1.6 days (Cowling et al., 2009).
+
+Given the generation interval distribution $g_{k}$, the number of new infections on day $t$ is given by the convolution function:
+
+$$
+i_{t}^{′}=R_{t}\sums<ti_{s}g_{t−s},
+$$
+
+where $R_{t}$ is the non-negative instantaneous reproduction number. $R_{t}$ can be expressed as the number of new infections on day $t$ relative to the cumulative sum of individuals infected $s$ days before day $t$, weighted by the current infectiousness of those individuals (Cori et al., 2013; Gostic et al., 2020):
+
+$$
+R_{t}=\frac{i_{t}^{′}}{\sums<ti_{s}g_{t−s}}
+$$
+
+The model is initialized with seeded infections $i_{v:0},v<0$, which are treated as unknown parameters (Bhatt et al., 2023; Scott et al., 2021). The prior on $i_{v:0}$ assumes that daily seeds are constant over a seeding period of 6 days:
+
+$$
+i_{−6:0}∼Exponential(\tau^{−1}),
+$$
+
+
+
+$$
+\tau∼Exponential(\lambda_{0}),
+$$
+
+where $\lambda_{0}>0$ is a rate hyperparameter. $\lambda_{0}$ is given an uninformative prior (0.03) so that seeds are primarily determined by initial transmission rates and the chosen start date of the epidemic (Bhatt et al., 2023; Scott et al., 2021).
+
+Daily case counts $Y_{t}$ are modeled as deriving from past new infections $i_{s},s<t$, assuming a negative binomial observation model with mean $y_{t}$ and overdispersion parameter $ϕ$ and a constant infection ascertainment rate $\alpha$ of 0.45 (Biggerstaff et al., 2014b). The expected number of observed cases on day $t$ was mapped to past infections by convolving over the time distribution of infection to case observation $\pi_{k}$:
+
+$$
+Y_{t}∼NegativeBinomial(y_{t},ϕ)
+$$
+
+
+
+$$
+ϕ∼Normal(10,5)
+$$
+
+
+
+$$
+logit(y_{t})=\alpha(\sums\leqti_{s}\pi_{t−s})
+$$
+
+We estimated $\pi_{k}$ by summing the incubation period distribution and the reporting delay distribution (i.e. the time period from symptom onset to case observation), assuming a lognormal-distributed incubation period with mean 1.4 days and s.d. 1.5 days (Lessler et al., 2009) and a lognormal-distributed reporting delay with mean 2 days and s.d. 1.5 days (Russell et al., 2018). Thus, the time distribution for infection-to-case-observation was:
+
+$$
+\pi∼ lognormal(1.4,1.5)+lognormal(2,1.5)
+$$
 
 Epidemic trajectories for each region and season were fit independently using Stan’s Hamiltonian Monte Carlo sampler (Hoffman and Gelman, 2014). For each model, we ran four chains, each for 10,000 iterations (including a burn-in period of 2000 iterations that was discarded), producing a total posterior sample size of 32,000. We verified convergence by confirming that all parameters had sufficiently low R-hat values (all R-hat <1.1⁠) and sufficiently large effective sample sizes (>15% of the total sample size).
 
-To generate seasonal indicators of transmission intensity, we extracted posterior draws of daily Rt estimates for each region and season, calculated the median value for each day, and averaged daily median values by epidemic week. For each region and season, we averaged Rt estimates from the weeks spanning epidemic onset to epidemic peak (initial Rt) and averaged the two highest Rt estimates (maximum Rt). Initial Rt and maximum Rt produced qualitatively equivalent results in downstream analyses, so we opted to report results for maximum Rt.
+To generate seasonal indicators of transmission intensity, we extracted posterior draws of daily $R_{t}$ estimates for each region and season, calculated the median value for each day, and averaged daily median values by epidemic week. For each region and season, we averaged $R_{t}$ estimates from the weeks spanning epidemic onset to epidemic peak (initial $R_{t}$) and averaged the two highest $R_{t}$ estimates (maximum $R_{t}$). Initial $R_{t}$ and maximum $R_{t}$ produced qualitatively equivalent results in downstream analyses, so we opted to report results for maximum $R_{t}$.
 
-## Excess pneumonia and influenza deaths attributable to A(H3N2)
+### Excess pneumonia and influenza deaths attributable to A(H3N2)
 
 To measure the epidemic severity each season, we obtained estimates of seasonal excess mortality attributable to influenza A(H3N2) infections (Hansen et al., 2022). Excess mortality is a measure of the mortality burden of a given pathogen in excess of a seasonally adjusted baseline, obtained by regressing weekly deaths from broad disease categories against indicators of influenza virus circulation. Hansen et al. used pneumonia and influenza (P&I) excess deaths, which are considered the most specific indicator of influenza burden (Simonsen and Viboud, 2012). Deaths with a mention of P&I (ICD-10 codes J00-J18) were aggregated by week and age group (<1, 1–4, 5–49, 50–64, and ≥65) for seasons 1998–1999 to 2017–2018. Age-specific generalized linear models were fit to observed weekly P&I death rates, while accounting for influenza and respiratory syncytial virus (RSV) activity and seasonal and temporal trends. The weekly national number of excess A(H3N2)-associated deaths were estimated by subtracting the baseline death rate expected in the absence of A(H3N2) virus circulation (A(H3N2) model terms set to zero) from the observed P&I death rate. We summed the number of excess A(H3N2) deaths per 100,000 people from October to May to obtain seasonal age-specific estimates.
 
-## Epidemic timing
+### Epidemic timing
 
-## Epidemic onset and peak timing
+#### Epidemic onset and peak timing
 
 We estimated the regional onsets of A(H3N2) virus epidemics by detecting breakpoints in A(H3N2) incidence curves at the beginning of each season. The timing of the breakpoint in incidence represents epidemic establishment (i.e. sustained transmission) rather than the timing of influenza introduction or arrival (Charu et al., 2017). We used two methods to estimate epidemic onsets: (1) piecewise regression, which models non-linear relationships with break points by iteratively fitting linear models to each segment (segmented R package; Muggeo, 2008; Muggeo, 2003), and (2) a Bayesian ensemble algorithm (BEAST – a Bayesian estimator of Abrupt change, Seasonal change, and Trend) that explicitly accounts for the time series nature of incidence data and allows for complex, non-linear trajectories interspersed with change points (Rbeast R package) (Zhao et al., 2019). For each region in each season, we limited the time period of breakpoint detection to epidemic week 40 to the first week of maximum incidence and did not estimate epidemic onsets for regions with insufficient signal, which we defined as fewer than three weeks of consecutive incidence and/or greater than 30% of weeks with missing data. We successfully estimated A(H3N2) onset timing for most seasons, except for three A(H1N1) dominant seasons: 2000–2001 (0 regions), 2002–2003 (3 regions), and 2009–2010 (0 regions). Estimates of epidemic onset weeks were similar when using piecewise regression versus the BEAST method, and downstream analyses of correlations between viral fitness indicators and onset timing produced equivalent results. We therefore report results from onsets estimated via piecewise regression. We defined epidemic peak timing as the first week of maximum incidence.
 
-## Epidemic speed
+#### Epidemic speed
 
 To measure spatiotemporal synchrony of regional epidemic dynamics, we calculated the standard deviation (s.d.) of regional onset and peak timing in each season (Viboud et al., 2006; Wolf et al., 2010). To measure the speed of viral spread in each region in each season, we measured the number of days spanning onset and peak weeks and seasonal duration (the number of weeks of non-zero incidence). We used two-sided Wilcoxon rank-sum tests to compare the distributions of epidemic timing metrics between A(H3N2) and A(H1N1) dominant seasons.
 
-## Wavelet analysis
+#### Wavelet analysis
 
 As a sensitivity analysis, we used wavelets to estimate timing differences between A(H3N2), A(H1N1), and B epidemics in each HHS region. Incidence time series were square root transformed and normalized and then padded with zeros to reduce edge effects. Wavelet coherence was used to determine the degree of synchrony between A(H3N2) versus A(H1N1) incidence and A(H3N2) versus B incidence within each region at multi-year time scales. Statistical significance was assessed using 10,000 Monte Carlo simulations. Coherence measures time- and frequency-specific associations between two wavelet transforms, with high coherence indicating that two non-stationary signals (time series) are associated at a particular time and frequency (Johansson et al., 2009).
 
 Following methodology developed for influenza and other viruses (Grenfell et al., 2001; Johansson et al., 2009; Liebhold et al., 2004; Viboud et al., 2006; Weinberger et al., 2012), we used continuous wavelet transformations (Morlet) to calculate the phase of seasonal A(H3N2), A(H1N1), and B epidemics. We reconstructed weekly time series of phase angles using wavelet reconstruction (Torrence and Compo, 1998; Viboud et al., 2006) and extracted the major one-year seasonal component (period 0.8–1.2 years) of the Morlet decomposition of A(H3N2), A(H1N1), and B time series. To estimate the relative timing of A(H3N2) and A(H1N1) incidence or A(H3N2) and B incidence in each region, phase angle differences were calculated as phase in A(H3N2) minus phase in A(H1N1) (or B), with a positive value indicating that A(H1N1) (or B) lags A(H3N2).
 
-## Influenza-like illness age patterns
+### Influenza-like illness age patterns
 
 We calculated the seasonal proportion of ILI encounters in each age group (0–4 years, 5–24 years, 25–64 years, and ≥65 years). Data for more narrow age groups are available after 2009, but we chose these four categories to increase the number of seasons in our analysis.
 
-## Influenza vaccination coverage and A(H3N2) vaccine effectiveness
+### Influenza vaccination coverage and A(H3N2) vaccine effectiveness
 
 Influenza vaccination coverage and effectiveness vary between years and would be expected to affect the population impact of seasonal outbreaks, and in turn our epidemiologic indicators. We obtained seasonal estimates of national vaccination coverage for adults 18–49 years and adults ≥65 years from studies utilizing vaccination questionnaire data collected by the National Health Interview Survey (Centers for Disease Control and Prevention, National Center for Immunization and Respiratory Diseases, 2023b; Centers for Disease Control and Prevention, National Center for Immunization and Respiratory Diseases, 2019; Jang and Kang, 2021; Lu et al., 2019; Lu et al., 2013; National Health Interview Survey, 2008; Ward et al., 2015; Ward et al., 2016). We did not consider the effects of vaccination coverage in children, due to our inability to find published estimates for most influenza seasons in our study.
 
-We obtained seasonal estimates of adjusted A(H3N2) vaccine effectiveness (VE) from 32 observational studies (Belongia et al., 2011; Bridges et al., 2000; Castilla et al., 2016; Centers for Disease Control and Prevention, National Center for Immunization and Respiratory Diseases, 2023b; Centers for Disease Control and Prevention (CDC), 2004; Flannery et al., 2019; Flannery et al., 2020; Flannery et al., 2016; Jackson et al., 2017; Janjua et al., 2012; Kawai et al., 2003; Kissling et al., 2013; Lester et al., 2003; McLean et al., 2014; Ohmit et al., 2014; Pebody et al., 2017; Rolfes et al., 2019; Simpson et al., 2015; Public Health Agency of Canada, 2005; Skowronski et al., 2017a; Skowronski et al., 2016; Skowronski et al., 2017b; Skowronski et al., 2010; Skowronski et al., 2009; Skowronski et al., 2014a; Skowronski et al., 2012; Skowronski et al., 2014b; Skowronski et al., 2022; Skowronski et al., 2007; Treanor et al., 2012; Valenciano et al., 2018; van Doorn et al., 2017; Zimmerman et al., 2016). Most studies had case-control test-negative designs (N=30) and took place in North America (N=25) or Europe (N=6). When possible, we limited VE estimates to those for healthy adults or general populations. When multiple VE studies were available for a given season, we calculated mean VE as the weighted average of m different VE point estimates:(16)∑i=1mδVEi−1/2VEi∑i=1mδVEi−1/2,
+We obtained seasonal estimates of adjusted A(H3N2) vaccine effectiveness (VE) from 32 observational studies (Belongia et al., 2011; Bridges et al., 2000; Castilla et al., 2016; Centers for Disease Control and Prevention, National Center for Immunization and Respiratory Diseases, 2023b; Centers for Disease Control and Prevention (CDC), 2004; Flannery et al., 2019; Flannery et al., 2020; Flannery et al., 2016; Jackson et al., 2017; Janjua et al., 2012; Kawai et al., 2003; Kissling et al., 2013; Lester et al., 2003; McLean et al., 2014; Ohmit et al., 2014; Pebody et al., 2017; Rolfes et al., 2019; Simpson et al., 2015; Public Health Agency of Canada, 2005; Skowronski et al., 2017a; Skowronski et al., 2016; Skowronski et al., 2017b; Skowronski et al., 2010; Skowronski et al., 2009; Skowronski et al., 2014a; Skowronski et al., 2012; Skowronski et al., 2014b; Skowronski et al., 2022; Skowronski et al., 2007; Treanor et al., 2012; Valenciano et al., 2018; van Doorn et al., 2017; Zimmerman et al., 2016). Most studies had case-control test-negative designs (N=30) and took place in North America (N=25) or Europe (N=6). When possible, we limited VE estimates to those for healthy adults or general populations. When multiple VE studies were available for a given season, we calculated mean VE as the weighted average of m different VE point estimates:
 
-wherein δVE denotes the width of the 95% confidence interval (CI) for VEi (Ndifon et al., 2009).
+$$
+\frac{\sumi=1m\delta_{VE_{i}}^{−1/2}VE_{i}}{\sumi=1m\delta_{VE_{i}}^{−1/2}},
+$$
 
-The 95% CI for the weighted mean VE was calculated as:(17)1m∑i=1m(δVEi)2
+wherein $\delta_{VE}$ denotes the width of the 95% confidence interval (CI) for $VE_{i}$ (Ndifon et al., 2009).
 
-## Correlations between seasonal epidemic metrics
+The 95% CI for the weighted mean VE was calculated as:
+
+$$
+\frac{1}{m}\sqrt{\sumi=1m(\delta_{VE_{i}})^{2}}
+$$
+
+### Correlations between seasonal epidemic metrics
 
 We used Spearman’s rank correlation coefficients to measure pairwise relationships between A(H3N2), A(H1N1), and B epidemiological indictors. We adjusted p-values for multiple testing using the Benjamini and Hochberg method (Benjamini and Hochberg, 1995).
 
-## Indicators of influenza A(H3N2) evolution
+### Indicators of influenza A(H3N2) evolution
 
 We considered multiple indicators of influenza evolution based on genetic and phenotypic (serologic) data, separately for HA and NA (Figure 2, Table 1). Our choice of evolutionary indicators builds on earlier studies that found hemagglutination inhibition (HI) phenotype or HA sequence data beneficial in forecasting seasonal influenza virus evolution (Huddleston et al., 2020; Luksza and Lässig, 2014; Neher et al., 2016; Neher et al., 2014) or annual epidemic dynamics (Axelsen et al., 2014; Du et al., 2017; Wolf et al., 2010; Table 1).
 
-## HA and NA sequence data
+![Figure 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Temporal phylogenies of (A) hemagglutinin (H3) and (B) neuraminidase (N2) gene segments. Tip color denotes the Hamming distance from the root of the tree, based on the number of substitutions at epitope sites in H3 (N=129 sites) and N2 (N=223 sites). Black ‘X’ marks indicate the phylogenetic positions of U.S. recommended vaccine strains. (C–D) Seasonal genetic and antigenic distances are the mean distance between A(H3N2) viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1), measured by (C) five sequence-based metrics (HA epitope (N=129), HA receptor binding site (RBS) (N=7), HA stalk footprint (N=34), NA epitope (N=223 or N=53)) and (D) hemagglutination inhibition (HI) titer measurements. (E) The Shannon diversity of H3 and N2 local branching index (LBI) values in each season. Vertical bars in (C), (D), and (E) are 95% confidence intervals of seasonal estimates from five bootstrapped phylogenies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** In each figure, the five subsampled datasets are plotted individually but individual time series are difficult to discern due to minor differences in sequence counts across the datasets. (A) The number of sequences in subsampled datasets in each month collected in North America (purple) versus nine other world regions combined (dark green). (B) The total number of sequences in subsampled datasets collected in each month in all world regions combined. (C) The number of sequences in subsampled datasets in each season collected in North America (purple) versus nine other world regions combined (dark green). (D) The total number of sequences in subsampled datasets collected in each season in all world regions combined.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** In each figure, the five subsampled datasets are plotted individually but individual time series are difficult to discern due to minor differences in sequence counts across the datasets. (A) The number of sequences in subsampled datasets in each month collected in North America (purple) versus nine other world regions combined (dark green). (B) The total number of sequences in subsampled datasets collected in each month in all world regions combined. (C) The number of sequences in subsampled datasets in each season collected in North America (purple) versus nine other world regions combined (dark green). (D) The total number of sequences in subsampled datasets in each season in all world regions combined.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Spearman’s rank correlations between H3 epitope distance and HI log2 titer distance at (A) one-season lags and (B) two-season lags. Correlation coefficients and associated p-values are shown in the top right section of each plot. Seasonal antigenic distance is the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1 year, one-season lags) or two prior seasons ago ($t$ – 2 years, two-season lags). Seasonal distances are scaled because H3 epitope distance and HI log2 titer distance use different units of measurement. Point labels indicate the current influenza season, and point color denotes the relative timing of influenza seasons, with earlier seasons shaded dark purple (e.g. 1997–1998) and later seasons shaded light yellow (e.g. 2018–2019). H3 epitope distance and HI log2 titer distance at two-season lags capture expected ‘jumps’ in antigenic drift during key seasons previously associated with major antigenic transitions (Smith et al., 2004), such as the SY97 cluster seasons (1997–1998, 1998–1999, 1999–2000), the FU02 cluster season (2003–2004), and the CA04 cluster season (2004–2005).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Spearman’s rank correlations between seasonal measures of H3 and N2 evolution, including H3 RBS distance, H3 epitope distance, H3 non-epitope distance, H3 stalk footprint distance, HI log2 titer distance, N2 epitope distance based on 223 or 53 epitope sites, N2 non-epitope distance, and the standard deviation (s.d.) and Shannon diversity of H3 and N2 local branching index (LBI) values in the current season $t$. Seasonal distances were estimated as the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1). The color of each circle indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation). Stars within circles indicate statistical significance (adjusted p<0.05). The Benjamini and Hochberg method was used to adjust p-values for multiple testing.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** We measured Spearman’s rank correlations between seasonal measures of H3 and N2 evolution, including H3 RBS distance, H3 epitope distance, H3 non-epitope distance, H3 stalk footprint distance, HI log2 titer distance, N2 epitope distance based on 223 or 53 epitope sites, N2 non-epitope distance, and the standard deviation (s.d.) and Shannon diversity of H3 and N2 local branching index (LBI) values in the current season $t$. Seasonal distances were estimated as the mean distance between viruses circulating in the current season $t$ and viruses circulating two prior seasons ago ($t$ – 2). The color of each circle indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation). Stars within circles indicate statistical significance (adjusted p<0.05). The Benjamini and Hochberg method was used to adjust p-values for multiple testing.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** We measured Spearman’s rank correlations between seasonal measures of H3 and N2 evolution, including H3 RBS distance, H3 epitope distance, H3 non-epitope distance, H3 stalk footprint distance, HI log2 titer distance, N2 epitope distance based on 223 or 53 epitope sites, N2 non-epitope distance, and the standard deviation (s.d.) and Shannon diversity of H3 and N2 local branching index (LBI) values in the current season $t$. Seasonal distances were estimated as the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). The color of each circle indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation). Stars within circles indicate statistical significance (adjusted p<0.05). The Benjamini and Hochberg method was used to adjust p-values for multiple testing.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** Spearman’s rank correlations between H3 epitope distance and N2 epitope distance at (A) one-season lags and (B) two-season lags. Correlation coefficients and associated p-values are shown in the top right section of each plot. Seasonal epitope distance is the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season $t$ – 1 (one-season lag) or two prior seasons ago $t$ – 2 (two-season lag). Point labels indicate the current influenza season, and point color denotes the relative timing of influenza seasons, with earlier seasons shaded dark purple (e.g. 1997–1998) and later seasons shaded light yellow (e.g. 2018–2019). H3 epitope distance at two-season lags and N2 epitope distance at one-season lags capture expected ‘jumps’ in antigenic drift during key seasons previously associated with major antigenic transitions (Smith et al., 2004), such as the SY97 cluster seasons (1997–1998, 1998–1999, 1999–2000), the FU02 cluster season (2003–2004), and the CA04 cluster season (2004–2005).
+
+**Table 1.**
+ Evolutionary indicators of seasonal viral fitness.Evolutionary indicators are labeled by the influenza gene for which data are available (hemagglutinin, HA or neuraminidase, NA), the type of data they are based on, and the component of influenza fitness they represent.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Evolutionary indicator</th>
+      <th>Influenza gene</th>
+      <th>Data type</th>
+      <th>Fitness category</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HI log2 titer distance from the prior season</td>
+      <td>HA</td>
+      <td>Hemagglutination inhibition measurements using ferret sera</td>
+      <td>Antigenic drift</td>
+      <td>Huddleston et al., 2020; Neher et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Epitope distance from the prior season</td>
+      <td>HA and NA</td>
+      <td>Sequences</td>
+      <td>Antigenic drift</td>
+      <td>Bhatt et al., 2011; Bush et al., 1999; Krammer, 2023; Webster and Laver, 1980; Wiley et al., 1981; Wilson and Cox, 1990; Wolf et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Receptor binding site distance from the prior season</td>
+      <td>HA</td>
+      <td>Sequences</td>
+      <td>Antigenic drift</td>
+      <td>Koel et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Mutational load (non-epitope distance from the prior season)</td>
+      <td>HA and NA</td>
+      <td>Sequences</td>
+      <td>Functional constraint</td>
+      <td>Luksza and Lässig, 2014</td>
+    </tr>
+    <tr>
+      <td>Stalk ‘footprint‘ distance from the prior season</td>
+      <td>HA</td>
+      <td>Sequences</td>
+      <td>Negative control</td>
+      <td>Kirkpatrick et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Local branching index</td>
+      <td>HA and NA</td>
+      <td>Sequences</td>
+      <td>Rate of recent phylogenetic branching</td>
+      <td>Huddleston et al., 2020; Neher et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table format is adapted from Huddleston et al., 2020._
+
+#### HA and NA sequence data
 
 We downloaded all H3 sequences and associated metadata from the Global Initiative on Sharing All Influenza Data (GISAID) EpiFlu database (Shu and McCauley, 2017). We focused our analysis on complete H3 sequences that were sampled between January 1, 1997, and October 1, 2019. We prioritized viruses with corresponding HI titer measurements provided by the WHO Global Influenza Surveillance and Response System (GISRS) Collaborating Centers and excluded all egg-passaged viruses and sequences with ambiguous year, month, and day annotations. To account for variation in sequence availability across global regions, we subsampled the selected sequences five times to representative sets of no more than 50 viruses per month, with preferential sampling for North America. Each month up to 25 viruses were selected from North America (when available) and up to 25 viruses were selected from nine other global regions (when available), with even sampling across the other global regions (Africa, Europe, China, South Asia, Japan and Korea, Oceania, South America, Southeast Asia, and West Asia; Figure 2—figure supplement 1). To ensure proper topology early in the phylogeny, we included reference strains that had been collected no earlier than 5 years prior to January 1, 1997. The resultant sets of H3 sequences included 10,060–10,062 sequences spanning December 25, 1995 – October 1, 2019 (Figure 2—source data 1). Although our subsampling scheme entailed selecting up to 50 viruses per month, with up to 25 viruses per month collected in North America, each replicate dataset was comprised of approximately 40% North American sequences across all seasons combined (Figure 2—source data 1), due to low sequence volumes in the early years of our study.
 
 As with the H3 analysis, we downloaded all N2 sequences and associated metadata from GISAID and selected complete N2 sequences that were sampled between January 1, 1997, and October 1, 2019. We excluded all sequences with ambiguous year, month, and day annotations, forced the inclusion of reference strains collected no earlier than 5 years prior to January 1, 1997, and compiled five replicate subsampled datasets with preferential sampling for North America (8815–8816 sequences; June 8, 1995 – October 1, 2019; Figure 2—figure supplement 2, Figure 2—source data 2). Similar to the H3 sequence datasets, each replicate dataset was comprised of approximately 40% North American sequences across all seasons combined (Figure 2—source data 2).
 
-## HA serologic data
+#### HA serologic data
 
 Hemagglutination inhibition (HI) measurements from ferret sera were provided by WHO GISRS Collaborating Centers in London, Melbourne, Atlanta, and Tokyo. We converted raw two-fold dilution measurements to log2 titer drops normalized by the corresponding log2 autologous measurements (Huddleston et al., 2020; Neher et al., 2016).
 
 Although a phenotypic assay exists for NA, NA inhibiting antibody titers are not routinely measured for influenza surveillance. Therefore, we could not include a phenotypic marker of NA evolution in our study.
 
-## Phylogenetic inference
+#### Phylogenetic inference
 
 For each set of H3 and N2 sequences, we aligned sequences with the augur align command (Hadfield et al., 2018) and MAFFT v7.407 (Katoh et al., 2002). We inferred initial phylogenies with IQ-TREE v1.6.10 (Nguyen et al., 2015). To reconstruct time-resolved phylogenies, we applied TreeTime v0.5.6 (Sagulenko et al., 2018) with the augur refine command (Huddleston et al., 2021).
 
-## Viral fitness metrics
+#### Viral fitness metrics
 
 We defined the following fitness metrics for each influenza season:
 
-## Antigenic drift
+##### Antigenic drift
 
 We estimated antigenic drift of each H3 sequence using either serologic or genetic data.
 
@@ -195,55 +387,59 @@ Historically, HI serological assays were considered the ‘gold standard’ for 
 
 Our sequence-based measures of drift counted substitutions at putative epitope sites in the globular head domains of HA and NA, identified through monoclonal antibody escape or protein crystal structure: 129 sites in HA epitope regions A to E (Bush et al., 1999; Webster and Laver, 1980; Wiley et al., 1981; Wilson and Cox, 1990; Wolf et al., 2006) (HA epitope distance), 7 sites adjacent to the HA receptor binding site (RBS) (Koel et al., 2013) (HA RBS distance), and 223 or 53 sites in NA epitope regions A to C (Bhatt et al., 2011; Krammer, 2023) (NA epitope distance). We also counted the number of substitutions at epitope sites in the HA stalk domain (HA stalk footprint distance) (Kirkpatrick et al., 2018). Although the majority of the antibody-mediated response to HA is directed to the immunodominant HA head, antibodies towards the highly conserved immunosubdominant stalk domain of HA are widely prevalent in older individuals, although at low levels (Krammer, 2019; Margine et al., 2013; Nachbagauer et al., 2016). We considered stalk footprint distance to be our ‘control’ metric for drift, given the HA stalk evolves at a significantly slower rate than the HA head (Kirkpatrick et al., 2018).
 
-## Mutational load
+##### Mutational load
 
 To estimate mutational load for each H3 and N2 sequence, an inverse proxy of viral fitness (Huddleston et al., 2020; Luksza and Lässig, 2014), we implemented metrics that count substitutions at putative non-epitope sites in HA (N=200) and NA (N=246), hereon HA non-epitope distance and NA non-epitope distance. Mutational load produces higher values for viruses that are less fit compared to previously circulating strains.
 
-## Clade growth
+##### Clade growth
 
-The local branching index (LBI) measures the relative fitness of co-circulating clades, with high LBI values indicating recent rapid phylogenetic branching (Huddleston et al., 2020; Neher et al., 2014). To calculate LBI for each H3 and N2 sequence, we applied the LBI heuristic algorithm as originally described by Neher et al., 2014 to H3 and N2 phylogenetic trees, respectively. We set the neighborhood parameter τ to 0.4 and only considered viruses sampled between the current season t and the previous season t – 1 as contributing to recent clade growth in the current season t.
+The local branching index (LBI) measures the relative fitness of co-circulating clades, with high LBI values indicating recent rapid phylogenetic branching (Huddleston et al., 2020; Neher et al., 2014). To calculate LBI for each H3 and N2 sequence, we applied the LBI heuristic algorithm as originally described by Neher et al., 2014 to H3 and N2 phylogenetic trees, respectively. We set the neighborhood parameter $\tau$ to 0.4 and only considered viruses sampled between the current season $t$ and the previous season $t$ – 1 as contributing to recent clade growth in the current season $t$.
 
 Variation in the phylogenetic branching rates of co-circulating A(H3N2) clades may affect the magnitude, intensity, onset, or duration of seasonal epidemics. For example, we expected that seasons dominated by a single variant with high fitness might have different epidemiological dynamics than seasons with multiple co-circulating clades with varying seeding and establishment times. We measured the diversity of clade growth rates of viruses circulating in each season by measuring the standard deviation (s.d.) and Shannon diversity of LBI values in each season. Given that LBI measures relative fitness among co-circulating clades, we did not compare overall clade growth rates (e.g. mean LBI) across seasons.
 
 Each season’s distribution of LBI values is right-skewed and does not follow a normal distribution. We therefore bootstrapped the LBI values of each season in each replicate dataset 1000 times (1000 samples with replacement) and estimated the seasonal standard deviation of LBI from resamples, rather than directly from observed LBI values. We also tested the seasonal standard deviation of LBI from log transformed LBI values, which produced qualitatively equivalent results to bootstrapped LBI values in downstream analyses.
 
-As an alternative measure of seasonal LBI diversity, we binned raw H3 and N2 LBI values into categories based on their integer values (e.g. an LBI value of 0.5 is assigned to the (0,1] bin) and estimated the exponential of the Shannon entropy (Shannon diversity) of LBI categories (Hill, 1973; Shannon, 1948). The Shannon diversity of LBI considers both the richness and relative abundance of viral clades with different growth rates in each season and is calculated as follows:(18)P1D=exp⁡(−∑i=1Rpiln⁡pi),
+As an alternative measure of seasonal LBI diversity, we binned raw H3 and N2 LBI values into categories based on their integer values (e.g. an LBI value of 0.5 is assigned to the (0,1] bin) and estimated the exponential of the Shannon entropy (Shannon diversity) of LBI categories (Hill, 1973; Shannon, 1948). The Shannon diversity of LBI considers both the richness and relative abundance of viral clades with different growth rates in each season and is calculated as follows:
 
-where PqD is the effective number of categories or Hill numbers of order q (here, clades with different growth rates), with q defining the sensitivity of the true diversity to rare versus abundant categories (Hill, 1973). exp is the exponential function, pi is the proportion of LBI values belonging to the ith category, and R is richness (the total number of categories). Shannon diversity P1D (q=1) estimates the effective number of categories in an assemblage using the geometric mean of their proportional abundances (Hill, 1973).
+$$
+P^{1}D=exp⁡(−\sumi=1Rp_{i}ln⁡p_{i}),
+$$
+
+where $P^{q}D$ is the effective number of categories or Hill numbers of order $q$ (here, clades with different growth rates), with $q$ defining the sensitivity of the true diversity to rare versus abundant categories (Hill, 1973). $exp$ is the exponential function, $p_{i}$ is the proportion of LBI values belonging to the ith category, and $R$ is richness (the total number of categories). Shannon diversity $P^{1}D$ ($q=1$) estimates the effective number of categories in an assemblage using the geometric mean of their proportional abundances (Hill, 1973).
 
 Because ecological diversity metrics are sensitive to sampling effort, we rarefied H3 and N2 sequence datasets prior to estimating Shannon diversity so that seasons had the same sample size. For each season in each replicate dataset, we constructed rarefaction and extrapolation curves of LBI Shannon diversity and extracted the Shannon diversity estimate of the sample size that was twice the size of the reference sample size (the smallest number of sequences obtained in any season during the study) (iNEXT R package; Chao et al., 2014). Chao et al. found that their diversity estimators work well for rarefaction and short-range extrapolation when the extrapolated sample size is up to twice the reference sample size. For H3, we estimated seasonal diversity using replicate datasets subsampled to 360 sequences/season; For N2, datasets were subsampled to 230 sequences/season.
 
-## Antigenic and genetic distance relative to prior seasons
+### Antigenic and genetic distance relative to prior seasons
 
-For each replicate dataset, we estimated national-level genetic and antigenic distances between influenza viruses circulating in consecutive seasons by calculating the mean distance between viruses circulating in the current season t and viruses circulating during the prior season (t – 1 year; one-season lag) or two prior seasons ago (t – 2 years; two-season lag). We then averaged seasonal mean distances across the five replicate datasets. Seasonal genetic and antigenic distances are greater when currently circulating strains are more antigenically distinct from previously circulating strains. We used Spearman’s rank correlation coefficients to measure pairwise relationships between scaled H3 and N2 evolutionary indicators. We adjusted p-values for multiple testing using the Benjamini and Hochberg method (Benjamini and Hochberg, 1995).
+For each replicate dataset, we estimated national-level genetic and antigenic distances between influenza viruses circulating in consecutive seasons by calculating the mean distance between viruses circulating in the current season $t$ and viruses circulating during the prior season ($t$ – 1 year; one-season lag) or two prior seasons ago ($t$ – 2 years; two-season lag). We then averaged seasonal mean distances across the five replicate datasets. Seasonal genetic and antigenic distances are greater when currently circulating strains are more antigenically distinct from previously circulating strains. We used Spearman’s rank correlation coefficients to measure pairwise relationships between scaled H3 and N2 evolutionary indicators. We adjusted p-values for multiple testing using the Benjamini and Hochberg method (Benjamini and Hochberg, 1995).
 
-## Univariate relationships between viral fitness, (sub)type interference and A(H3N2) epidemic impact
+### Univariate relationships between viral fitness, (sub)type interference and A(H3N2) epidemic impact
 
-We measured univariate associations between national indicators of A(H3N2) viral fitness and regional A(H3N2) epidemic parameters: peak incidence, epidemic size, transmissibility (effective Rt), epidemic intensity, subtype dominance, excess P&I deaths, onset timing, peak timing, spatiotemporal synchrony, the number of weeks from onset to peak, and seasonal duration. All predictors were centered and scaled prior to measuring correlations or fitting regression models.
+We measured univariate associations between national indicators of A(H3N2) viral fitness and regional A(H3N2) epidemic parameters: peak incidence, epidemic size, transmissibility (effective $R_{t}$), epidemic intensity, subtype dominance, excess P&I deaths, onset timing, peak timing, spatiotemporal synchrony, the number of weeks from onset to peak, and seasonal duration. All predictors were centered and scaled prior to measuring correlations or fitting regression models.
 
 We first measured Spearman’s rank correlation coefficients between pairs of scaled evolutionary indicators and epidemic metrics using 1000 bootstrap replicates of the original dataset (1000 samples with replacement). Next, we fit regression models with different distribution families (Gaussian or Gamma) and link functions (identity, log, or inverse) to observed data and used Bayesian information criterion (BIC) to select the best fit model, with lower BIC values indicating a better fit to the data. For subtype dominance, epidemic intensity, and age-specific proportions of ILI cases, we fit Beta regression models with logit links. Beta regression models are appropriate when the variable of interest is continuous and restricted to the interval (0, 1) (Ferrari and Cribari-Neto, 2004). For each epidemic metric, we fit the best-performing regression model to 1000 bootstrap replicates of the original dataset.
 
-To measure the effects of sub(type) interference on A(H3N2) epidemics, the same approach was applied to measure the univariate relationships between A(H1N1) or B epidemic size and A(H3N2) peak incidence, epidemic size, effective Rt, epidemic intensity, and excess mortality. As a sensitivity analysis, we evaluated univariate relationships between A(H3N2) epidemic metrics and A(H1N1) epidemic size during pre-2009 seasons (seasonal A(H1N1) viruses) and post-2009 seasons (A(H1N1)pdm09 viruses) separately.
+To measure the effects of sub(type) interference on A(H3N2) epidemics, the same approach was applied to measure the univariate relationships between A(H1N1) or B epidemic size and A(H3N2) peak incidence, epidemic size, effective $R_{t}$, epidemic intensity, and excess mortality. As a sensitivity analysis, we evaluated univariate relationships between A(H3N2) epidemic metrics and A(H1N1) epidemic size during pre-2009 seasons (seasonal A(H1N1) viruses) and post-2009 seasons (A(H1N1)pdm09 viruses) separately.
 
-## Selecting relevant predictors of A(H3N2) epidemic impact
+### Selecting relevant predictors of A(H3N2) epidemic impact
 
 Next, we explored multivariable approaches that would shed light on the potential mechanisms driving annual epidemic impact. Considering that we had many predictors and relatively few observations (22 seasons × 9–10 HHS regions), several covariates were collinear, and our goal was explicative rather than predictive, we settled on methods that tend to select few covariates: conditional inference random forests and LASSO (least absolute shrinkage and selection operator) regression models. All predictors were centered and scaled prior to fitting models.
 
-## Preprocessing of predictor data
+#### Preprocessing of predictor data
 
 The starting set of candidate predictors included all viral fitness metrics: genetic and antigenic distances between current and previously circulating viruses and the standard deviation and Shannon diversity of H3 and N2 LBI values in the current season. To account for potential type or subtype interference, we included A(H1N1) or A(H1N1)pdm09 epidemic size and B epidemic size in the current and prior season and the dominant IAV subtype in the prior season (Lee et al., 2018). We included A(H3N2) epidemic size in the prior season as a proxy for prior natural immunity to A(H3N2). To account for vaccine-induced immunity, we considered four categories of predictors and included estimates for the current and prior seasons: national vaccination coverage among adults (18–49 years coverage × ≥65 years coverage), adjusted A(H3N2) vaccine effectiveness (VE), a combined metric of vaccination coverage and A(H3N2) VE (18–49 years coverage × ≥65 years coverage × VE), and H3 and N2 epitope distances between naturally circulating A(H3N2) viruses and the U.S. A(H3N2) vaccine strain in each season. We could not include a predictor for vaccination coverage in children or consider clade-specific VE estimates because these data were not available for most seasons in our study.
 
-Random forest and LASSO regression models are not sensitive to redundant (highly collinear) features (Kuhn and Johnson, 2019), but we chose to downsize the original set of candidate predictors to minimize the impact of multicollinearity on variable importance scores. For both types of models, if there are highly collinear variables that are useful for predicting the target variable, the predictor chosen by the model becomes a random selection (Kuhn and Johnson, 2019). In random forest models, these highly collinear variables will be used in all splits across the forest of decision trees, and this redundancy dilutes variable importance scores (Kuhn and Johnson, 2019). We first confirmed that none of the candidate predictors had zero variance or near-zero variance. Because seasonal lags of each viral fitness metric are highly collinear, we included only one lag of each evolutionary predictor, with a preference for the lag that had the strongest univariate correlations with various epidemic metrics. We checked for multicollinearity among the remaining predictors by examining Spearman’s rank correlation coefficients between all pairs of predictors. If a particular pair of predictors was highly correlated (Spearman’s ρ>0.8), we retained only one predictor from that pair, with a preference for the predictor that had the strongest univariate correlations with various epidemic metrics. Lastly, we performed QR decomposition of the matrix of remaining predictors to determine if the matrix is full rank and identify sets of columns involved in linear dependencies. This step did not eliminate any additional predictors, given that we had already removed pairs of highly collinear variables based on Spearman correlation coefficients.
+Random forest and LASSO regression models are not sensitive to redundant (highly collinear) features (Kuhn and Johnson, 2019), but we chose to downsize the original set of candidate predictors to minimize the impact of multicollinearity on variable importance scores. For both types of models, if there are highly collinear variables that are useful for predicting the target variable, the predictor chosen by the model becomes a random selection (Kuhn and Johnson, 2019). In random forest models, these highly collinear variables will be used in all splits across the forest of decision trees, and this redundancy dilutes variable importance scores (Kuhn and Johnson, 2019). We first confirmed that none of the candidate predictors had zero variance or near-zero variance. Because seasonal lags of each viral fitness metric are highly collinear, we included only one lag of each evolutionary predictor, with a preference for the lag that had the strongest univariate correlations with various epidemic metrics. We checked for multicollinearity among the remaining predictors by examining Spearman’s rank correlation coefficients between all pairs of predictors. If a particular pair of predictors was highly correlated (Spearman’s $ρ$>0.8), we retained only one predictor from that pair, with a preference for the predictor that had the strongest univariate correlations with various epidemic metrics. Lastly, we performed QR decomposition of the matrix of remaining predictors to determine if the matrix is full rank and identify sets of columns involved in linear dependencies. This step did not eliminate any additional predictors, given that we had already removed pairs of highly collinear variables based on Spearman correlation coefficients.
 
-After these preprocessing steps, our final set of model predictors included 21 variables, including 8 viral evolutionary indicators: H3 epitope distance (t – 2), HI log2 titer distance (t – 2), H3 RBS distance (t – 2), H3 non-epitope distance (t – 2), N2 epitope distance (t – 1), N2 non-epitope distance (t – 1), and H3 and N2 LBI diversity (s.d.) in the current season; 6 proxies for type/subtype interference and prior immunity: A(H1N1) and B epidemic sizes in the current and prior season, A(H3N2) epidemic size in the prior season, and the dominant IAV subtype in the prior season; and 7 proxies for vaccine-induced immunity: A(H3N2) VE in the current and prior season, H3 and N2 epitope distances between circulating viruses and the vaccine strain in each season, the combined metric of adult vaccination coverage × VE in the current and prior season, and adult vaccination coverage in the prior season.
+After these preprocessing steps, our final set of model predictors included 21 variables, including 8 viral evolutionary indicators: H3 epitope distance ($t$ – 2), HI log2 titer distance ($t$ – 2), H3 RBS distance ($t$ – 2), H3 non-epitope distance ($t$ – 2), N2 epitope distance ($t$ – 1), N2 non-epitope distance ($t$ – 1), and H3 and N2 LBI diversity (s.d.) in the current season; 6 proxies for type/subtype interference and prior immunity: A(H1N1) and B epidemic sizes in the current and prior season, A(H3N2) epidemic size in the prior season, and the dominant IAV subtype in the prior season; and 7 proxies for vaccine-induced immunity: A(H3N2) VE in the current and prior season, H3 and N2 epitope distances between circulating viruses and the vaccine strain in each season, the combined metric of adult vaccination coverage × VE in the current and prior season, and adult vaccination coverage in the prior season.
 
-## Random forest models
+#### Random forest models
 
-We used conditional inference random forest models to select relevant predictors of A(H3N2) epidemic size, peak incidence, transmissibility (effective Rt), epidemic intensity, and subtype dominance (party and caret R packages; Hothorn et al., 2006; Kuhn, 2008; Strobl et al., 2008; Strobl et al., 2007). We did not conduct variable selection analysis for excess A(H3N2) mortality due to data limitations (one national estimate per season). Metrics related to epidemic timing were also excluded from this analysis because we found weak or non-statistically significant associations with most viral fitness metrics in univariate analyses. Lastly, we could not separate our analysis into pre- and post-2009 pandemic periods due to small sample sizes.
+We used conditional inference random forest models to select relevant predictors of A(H3N2) epidemic size, peak incidence, transmissibility (effective $R_{t}$), epidemic intensity, and subtype dominance (party and caret R packages; Hothorn et al., 2006; Kuhn, 2008; Strobl et al., 2008; Strobl et al., 2007). We did not conduct variable selection analysis for excess A(H3N2) mortality due to data limitations (one national estimate per season). Metrics related to epidemic timing were also excluded from this analysis because we found weak or non-statistically significant associations with most viral fitness metrics in univariate analyses. Lastly, we could not separate our analysis into pre- and post-2009 pandemic periods due to small sample sizes.
 
 We created each forest by generating 3000 regression trees. To determine the best performing model for each epidemic metric, we used leave-one-season-out (jackknife) cross-validation to train models and measure model performance, wherein each ‘assessment’ set is one season of data predicted by the model, and the corresponding ‘analysis’ set contains the remaining seasons. This approach is roughly analogous to splitting data into training and test sets, but all seasons are used at some point in the training of each model (Kuhn and Johnson, 2019). Due to the small size of our dataset (~20 seasons), evaluating the predictive accuracy of random forest models on a quasi-independent test set of 2–3 seasons produced unstable estimates. Instead of testing model performance on an independent test set, we generated 10 bootstrap resamples (‘repeats’) of each analysis set (‘fold’) and averaged the predictions of models trained on resamples (Kuhn and Johnson, 2013; Kuhn and Johnson, 2019). For each epidemic metric, we report the mean root mean squared error (RMSE) and R2 of predictions from the best tuned model. We used permutation importance (N=50 permutations) to estimate the relative importance of each predictor in determining target outcomes. Permutation importance is the decrease in prediction accuracy when a single feature (predictor) is randomly permuted, with larger values indicating more important variables. Because many features were collinear, we used conditional permutation importance to compute feature importance scores, rather than the standard marginal procedure (Altmann et al., 2010; Debeer and Strobl, 2020; Strobl et al., 2008; Strobl et al., 2007).
 
-## Regression models
+#### Regression models
 
 As an alternative method for variable selection, we performed LASSO regression on the same cross-validated dataset and report the mean RMSE and R2 of predictions from the best tuned model (glmnet and caret R packages; Friedman et al., 2010; Kuhn, 2008). Unlike random forest models, this modeling approach assumes linear relationships between predictors and the target variable. LASSO models (L1 penalty) are more restrictive than ridge models (L2 penalty) and elastic net models (combination of L1 and L2 penalties) and will arbitrarily retain one variable from a set of collinear variables.
 
@@ -251,49 +447,334 @@ To further reduce the set of predictors for each epidemic metric, we performed m
 
 ## Results
 
-## Indicators of influenza A(H3N2) evolution
+### Indicators of influenza A(H3N2) evolution
 
 We characterized seasonal patterns of genetic and antigenic evolution among A(H3N2) viruses circulating during 1997–2019, using HA and NA sequence data shared via the GISAID EpiFlu database (Shu and McCauley, 2017) and ferret hemagglutination inhibition (HI) assay data shared by WHO GISRS Collaborating Centers in London, Melbourne, Atlanta, and Tokyo. Time-resolved phylogenies of HA and NA genes are shown in Figure 2. Although our study is U.S.-focused, we used a global dataset because U.S.-collected sequences and HI titers were sometimes sparse during the earlier seasons of the study (Figure 2—figure supplements 1 and 2).
 
-To measure antigenic distances between consecutive seasons, we calculated mean genetic distances at epitope sites or mean log2 titer distances from HI titer measurements (Figure 2), between viruses circulating in the current season t and the prior season t – 1 year (one-season lag) or two prior seasons ago t – 2 years (two-season lag). These time windows generated seasonal antigenic distances consistent with empirical and theoretical studies characterizing transitions between H3 or N2 antigenic clusters (Bedford et al., 2014; Ferguson et al., 2003; Huddleston et al., 2020; Neher et al., 2014; Sandbulte et al., 2011; Smith et al., 2004), with H3 epitope distance and HI log2 titer distance, at two-season lags, and N2 epitope distance, at one-season lags, capturing expected ‘jumps’ in antigenic drift during key seasons that have been previously associated with major antigenic transitions (Smith et al., 2004), such as the seasons dominated by A/Sydney/5/1997-like strains (SY97) (1997–1998, 1998–1999, 1999–2000) and the 2003–2004 season dominated by A/Fujian/411/2002-like strains (FU02) (Figure 2—figure supplements 3 and 7). Prior studies explicitly linking antigenic drift to epidemic size or severity also support a 1-year (Bedford et al., 2014) or 2-year time window of drift (Koelle et al., 2006; Wolf et al., 2010). Given that protective immunity to homologous strains wanes after 1–4 years (He et al., 2015; Wraith et al., 2022), we would also expect these timeframes to return the greatest signal in epidemiological surveillance data.
+To measure antigenic distances between consecutive seasons, we calculated mean genetic distances at epitope sites or mean log2 titer distances from HI titer measurements (Figure 2), between viruses circulating in the current season $t$ and the prior season $t$ – 1 year (one-season lag) or two prior seasons ago $t$ – 2 years (two-season lag). These time windows generated seasonal antigenic distances consistent with empirical and theoretical studies characterizing transitions between H3 or N2 antigenic clusters (Bedford et al., 2014; Ferguson et al., 2003; Huddleston et al., 2020; Neher et al., 2014; Sandbulte et al., 2011; Smith et al., 2004), with H3 epitope distance and HI log2 titer distance, at two-season lags, and N2 epitope distance, at one-season lags, capturing expected ‘jumps’ in antigenic drift during key seasons that have been previously associated with major antigenic transitions (Smith et al., 2004), such as the seasons dominated by A/Sydney/5/1997-like strains (SY97) (1997–1998, 1998–1999, 1999–2000) and the 2003–2004 season dominated by A/Fujian/411/2002-like strains (FU02) (Figure 2—figure supplements 3 and 7). Prior studies explicitly linking antigenic drift to epidemic size or severity also support a 1-year (Bedford et al., 2014) or 2-year time window of drift (Koelle et al., 2006; Wolf et al., 2010). Given that protective immunity to homologous strains wanes after 1–4 years (He et al., 2015; Wraith et al., 2022), we would also expect these timeframes to return the greatest signal in epidemiological surveillance data.
 
-We measured pairwise correlations between seasonal indicators of HA and NA evolution to assess their degree of concordance. As expected, we found moderate-to-strong associations between HA epitope distance and HI log2 titer distance (Figure 2—figure supplements 3–6) and HA RBS distance and HI log2 titer distance (Figure 2—figure supplements 4–6). Consistent with prior serological studies (Eichelberger et al., 2018; Kilbourne et al., 1990; Schulman and Kilbourne, 1969), epitope distances in HA and NA were not correlated at one-season lags (Spearman’s ρ=0.25, p=0.3) or two-season lags (ρ=0.15, p=0.5) (Figure 2—figure supplements 4–7). The seasonal diversity of HA and NA LBI values was negatively correlated with NA epitope distance (Figure 2—figure supplements 5 and 6), with high antigenic novelty coinciding with low genealogical diversity. This association suggests that selective sweeps tend to follow the emergence of drifted variants with high fitness, resulting in seasons dominated by a single A(H3N2) variant rather than multiple co-circulating clades.
+We measured pairwise correlations between seasonal indicators of HA and NA evolution to assess their degree of concordance. As expected, we found moderate-to-strong associations between HA epitope distance and HI log2 titer distance (Figure 2—figure supplements 3–6) and HA RBS distance and HI log2 titer distance (Figure 2—figure supplements 4–6). Consistent with prior serological studies (Eichelberger et al., 2018; Kilbourne et al., 1990; Schulman and Kilbourne, 1969), epitope distances in HA and NA were not correlated at one-season lags (Spearman’s $ρ$=0.25, p=0.3) or two-season lags ($ρ$=0.15, p=0.5) (Figure 2—figure supplements 4–7). The seasonal diversity of HA and NA LBI values was negatively correlated with NA epitope distance (Figure 2—figure supplements 5 and 6), with high antigenic novelty coinciding with low genealogical diversity. This association suggests that selective sweeps tend to follow the emergence of drifted variants with high fitness, resulting in seasons dominated by a single A(H3N2) variant rather than multiple co-circulating clades.
 
-## Associations between A(H3N2) evolution and epidemic dynamics
+### Associations between A(H3N2) evolution and epidemic dynamics
 
 We explored relationships between viral evolution and variation in A(H3N2) epidemic dynamics from seasons 1997–1998 to 2018–2019, excluding the 2009 A(H1N1) pandemic, using syndromic and virologic surveillance data collected by the U.S. CDC and WHO. We estimated weekly incidences of influenza A(H3N2), A(H1N1), and B in 10 HHS regions by multiplying the influenza-like illness (ILI) rate – the proportion of outpatient encounters for ILI, weighted by regional population size – by the regional proportion of respiratory samples testing positive for each influenza type/subtype (percent positive). Figure 1 and Figure 1—figure supplement 1 show variability in the timing and intensity of annual epidemics of A(H3N2), A(H1N1), and B viruses. Based on these incidence time series, we measured indicators of epidemic burden, intensity, severity, subtype dominance, timing, and age-specific patterns during each non-pandemic season (Table 2) and assessed their univariate relationships with each indicator of HA and NA evolution. Figure 1—figure supplement 3 shows pairwise correlations between epidemic metrics.
 
-Two sequence-based measures based on broad sets of epitope sites exhibited stronger relationships with seasonal A(H3N2) epidemic burden and transmissibility than the serology-based measure, HI log2 titer distance. Both H3 epitope distance (t – 2) and N2 epitope distance (t – 1) correlated with increased epidemic size (H3, adjusted R2=0.37, p=0.03; N2: R2=0.26, p=0.08) and peak incidence (H3: R2=0.4, p=0.02; N2: R2=0.33, p=0.04) and higher effective reproduction numbers, Rt (H3, R2=0.37, p=0.06; N2, R2=0.33, p=0.03; regression results: Figure 3; Spearman correlations: Figure 3—figure supplement 1). Excess pneumonia and influenza mortality attributable to A(H3N2) increased with H3 epitope distance, though this relationship was not statistically significant (Figure 3—figure supplement 2). HI log2 titer distance (t – 2) exhibited positive but non-significant associations with different measures of epidemic impact (Figure 3, Figure 3—figure supplement 1). Effective Rt and epidemic intensity were greater in seasons with low LBI diversity (Figure 3—figure supplement 1; Figure 3—figure supplement 3 and Figure 3—figure supplement 4). The remaining indicators of viral evolution, including H3 and N2 non-epitope distance (mutational load), H3 RBS distance, and H3 stalk footprint distance had weaker, non-statistically significant correlations with epidemic impact (Figure 3—figure supplement 1).
+**Table 2.**
+ Seasonal metrics of A(H3N2) epidemic dynamics.Epidemic metrics are defined and labeled by which outcome category they represent.
 
-We explored whether evolutionary changes in A(H3N2) may predispose this subtype to dominate influenza virus circulation in a given season. A(H3N2) subtype dominance – the proportion of influenza positive samples typed as A(H3N2) – increased with H3 epitope distance (t – 2) (R2=0.32, p=0.05) and N2 epitope distance (t – 1) (R2=0.34, p=0.03) (regression results: Figure 4; Spearman correlations: Figure 3—figure supplement 1). Figure 4 illustrates this relationship at the regional level across two seasons in which A(H3N2) was nationally dominant, but where antigenic change differed. In 2003–2004, we observed widespread dominance of A(H3N2) viruses after the emergence of the novel antigenic cluster, FU02 (A/Fujian/411/2002-like strains). In contrast, there was substantial regional heterogeneity in subtype circulation during 2007–2008, a season in which A(H3N2) viruses were antigenically similar to those circulating in the previous season. Patterns in type/subtype circulation across all influenza seasons in our study period are shown in Figure 4—figure supplement 1. As observed for the 2003–2004 season, widespread A(H3N2) dominance tended to coincide with major antigenic transitions (e.g. A/Sydney/5/1997 (SY97) seasons, 1997–1998 to 1999–2000; A/California/7/2004 (CA04) season, 2004–2005), although this was not universally the case (e.g. A/Perth/16/2009 (PE09) season, 2010–2011).
+
+<table>
+  <thead>
+    <tr>
+      <th>Epidemic Outcome</th>
+      <th>Definition</th>
+      <th>Outcome category</th>
+      <th>Citations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Epidemic size</td>
+      <td>Cumulative weekly incidence</td>
+      <td>Burden</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peak incidence</td>
+      <td>Maximum weekly incidence</td>
+      <td>Burden</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Maximum time-varying effective reproduction number, Rt</td>
+      <td>The number of secondary cases arising from a symptomatic index case, assuming conditions remain the same</td>
+      <td>Transmissibility</td>
+      <td>Scott et al., 2021; Bhatt et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Epidemic intensity</td>
+      <td>Inverse Shannon entropy of the weekly incidence distribution (i.e. the spread of incidence across the season)</td>
+      <td>Sharpness of the epidemic curve</td>
+      <td>Dalziel et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Subtype dominance</td>
+      <td>The proportion of influenza positive samples typed as A(H3N2)</td>
+      <td>Viral activity</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Excess pneumonia and influenza mortality attributable to A(H3N2) virus</td>
+      <td>Mortality burden in excess of a seasonally adjusted baseline</td>
+      <td>Severity</td>
+      <td>Hansen et al., 2022; Simonsen and Viboud, 2012</td>
+    </tr>
+    <tr>
+      <td>Onset week</td>
+      <td>Winter changepoint in incidence</td>
+      <td>Timing</td>
+      <td>Charu et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Peak week</td>
+      <td>First week of maximum incidence</td>
+      <td>Timing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Spatiotemporal synchrony</td>
+      <td>Regional variation (s.d.) in onset or peak timing</td>
+      <td>Speed</td>
+      <td>Viboud et al., 2006</td>
+    </tr>
+    <tr>
+      <td>Onset to peak</td>
+      <td>Number of days between onset week and peak week</td>
+      <td>Speed</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Seasonal duration</td>
+      <td>Number of weeks with non-zero incidence</td>
+      <td>Speed</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+Two sequence-based measures based on broad sets of epitope sites exhibited stronger relationships with seasonal A(H3N2) epidemic burden and transmissibility than the serology-based measure, HI log2 titer distance. Both H3 epitope distance ($t$ – 2) and N2 epitope distance ($t$ – 1) correlated with increased epidemic size (H3, adjusted R2=0.37, p=0.03; N2: R2=0.26, p=0.08) and peak incidence (H3: R2=0.4, p=0.02; N2: R2=0.33, p=0.04) and higher effective reproduction numbers, $R_{t}$ (H3, R2=0.37, p=0.06; N2, R2=0.33, p=0.03; regression results: Figure 3; Spearman correlations: Figure 3—figure supplement 1). Excess pneumonia and influenza mortality attributable to A(H3N2) increased with H3 epitope distance, though this relationship was not statistically significant (Figure 3—figure supplement 2). HI log2 titer distance ($t$ – 2) exhibited positive but non-significant associations with different measures of epidemic impact (Figure 3, Figure 3—figure supplement 1). Effective $R_{t}$ and epidemic intensity were greater in seasons with low LBI diversity (Figure 3—figure supplement 1; Figure 3—figure supplement 3 and Figure 3—figure supplement 4). The remaining indicators of viral evolution, including H3 and N2 non-epitope distance (mutational load), H3 RBS distance, and H3 stalk footprint distance had weaker, non-statistically significant correlations with epidemic impact (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig3-v1.jpg)
+
+**Figure 3.:** A(H3N2) epidemic size, peak incidence, transmissibility (effective reproduction number, $R_{t}$), and epidemic intensity increase with antigenic drift, measured by (A) hemagglutinin (H3) epitope distance, (B) neuraminidase (N2) epitope distance, and (C) hemagglutination inhibition (HI) log2 titer distance. Seasonal antigenic drift is the mean titer distance or epitope distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). Distances are scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A virus (IAV) subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) epidemic metric values were fit as a function of antigenic or genetic distance using LMs (epidemic size, peak incidence), Gaussian GLMs (effective $R_{t}$: inverse link), or Beta GLMs (epidemic intensity: logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Mean Spearman’s rank correlation coefficients, 95% confidence intervals of correlation coefficients, and corresponding p-values of bootstrapped (N=1000) evolutionary indicators (rows) and epidemic metrics (columns). Point color indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation), and stars indicate statistical significance (* p<0.05, ** p<0.01, *** p<0.001). Abbreviations: $t$ – 1, one-season lag; $t$ – 2, two-season lag; RBS, receptor binding site; HI, hemagglutination inhibition; s.d., standard deviation; LBI, local branching index.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Relationships between seasonal excess influenza A(H3N2) mortality and epitope distance are organized by gene segment and age group: (A) H3 epitope distance and all age groups, (B) H3 epitope distance and individuals aged ≥65 years, (C) N2 epitope distance and all age groups, and (D) N2 epitope distance and individuals aged ≥65 years. The number of excess influenza deaths attributable to A(H3N2) (per 100,000 people) were estimated from a seasonal regression model fit to weekly pneumonia and influenza-coded deaths in the United States (Hansen et al., 2022). Seasonal epitope distance is the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). Distances are scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of excess mortality model estimates. Seasonal national excess mortality estimates were fit as a function of H3 or N2 epitope distance using Gaussian GLMs (log link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** A(H3N2) effective $R_{t}$ and epidemic intensity negatively correlate with the seasonal diversity of local branching index (LBI) values among circulating A(H3N2) lineages in the current season, measured by the standard deviation (s.d.) of (A) H3 LBI values, and (B) N2 LBI values. LBI values are scaled to aid in direct comparisons of H3 and N2 s.d. LBI values. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) epidemic metric values were fit as a function of H3 or N2 LBI diversity using Gaussian GLMs (effective $R_{t}$: inverse link) or Beta GLMs (epidemic intensity: logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top right section of each plot.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** A(H3N2) effective $R_{t}$ and epidemic intensity negatively correlate with the seasonal diversity of local branching index (LBI) values among circulating A(H3N2) lineages in the current season, measured by the Shannon diversity of (A) H3 LBI values, and (B) N2 LBI values. LBI values are scaled to aid in direct comparisons of H3 and N2 LBI diversity values. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) epidemic metric values were fit as a function of H3 or N2 LBI diversity using Gaussian GLMs (effective $R_{t}$: inverse link) or Beta GLMs (epidemic intensity: logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top right section of each plot.
+
+We explored whether evolutionary changes in A(H3N2) may predispose this subtype to dominate influenza virus circulation in a given season. A(H3N2) subtype dominance – the proportion of influenza positive samples typed as A(H3N2) – increased with H3 epitope distance ($t$ – 2) (R2=0.32, p=0.05) and N2 epitope distance ($t$ – 1) (R2=0.34, p=0.03) (regression results: Figure 4; Spearman correlations: Figure 3—figure supplement 1). Figure 4 illustrates this relationship at the regional level across two seasons in which A(H3N2) was nationally dominant, but where antigenic change differed. In 2003–2004, we observed widespread dominance of A(H3N2) viruses after the emergence of the novel antigenic cluster, FU02 (A/Fujian/411/2002-like strains). In contrast, there was substantial regional heterogeneity in subtype circulation during 2007–2008, a season in which A(H3N2) viruses were antigenically similar to those circulating in the previous season. Patterns in type/subtype circulation across all influenza seasons in our study period are shown in Figure 4—figure supplement 1. As observed for the 2003–2004 season, widespread A(H3N2) dominance tended to coincide with major antigenic transitions (e.g. A/Sydney/5/1997 (SY97) seasons, 1997–1998 to 1999–2000; A/California/7/2004 (CA04) season, 2004–2005), although this was not universally the case (e.g. A/Perth/16/2009 (PE09) season, 2010–2011).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig4-v1.jpg)
+
+**Figure 4.:** (A-B) Seasonal A(H3N2) subtype dominance increases with (A) hemagglutinin (H3) and (B) neuraminidase (N2) epitope distance. Seasonal epitope distance is the mean epitope distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ - 1) or two prior seasons ago ($t$ - 2). Distances were scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A virus (IAV) subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) dominance was fit as a function of H3 or N2 epitope distance using Beta GLMs with 1000 bootstrap resamples. In (A) and (B), the dashed black line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the bottom right section of each plot. (C–D) Regional patterns of influenza type and subtype incidence during two seasons when A(H3N2) was nationally dominant. Pie charts represent the proportion of influenza positive samples typed as A(H3N2) (red), A(H1N1) (blue), or B (green) in each HHS region. The sizes of regional pie charts are proportional to the total number of influenza positive samples. Data for Region 10 (purple) are not available for seasons prior to 2009. (C) Widespread A(H3N2) dominance during 2003–2004 after the emergence of a novel antigenic cluster, FU02 (A/Fujian/411/2002-like strains). (D) Spatial heterogeneity in subtype circulation during 2007–2008, a season with low A(H3N2) antigenic novelty relative to the prior season.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Pie charts represent the proportion of influenza positive samples that were typed as A(H3N2), A(H1N1) or A(H1N1)pdm09, and B in each HHS region. Data for Region 10 (purple) are not available for seasons prior to 2009.
 
 After the 2009 A(H1N1) pandemic, A(H3N2) dominant seasons still occurred more frequently than A(H1N1) dominant seasons, but the mean fraction of influenza positive cases typed as A(H3N2) in A(H3N2) dominant seasons was lower compared to A(H3N2) dominant seasons prior to 2009 (Figure 4—figure supplement 1). Antigenically distinct 3 c.2a and 3 c.3a viruses began to co-circulate in 2012 and underwent further diversification during subsequent seasons in our study (https://nextstrain.org/seasonal-flu/h3n2/ha/12y@2024-05-13; Dhanasekaran et al., 2022; Huddleston et al., 2020; Yan et al., 2019). The decline in A(H3N2) predominance during the post-2009 period may be linked to the genetic and antigenic diversification of A(H3N2) viruses, wherein multiple lineages with similar fitness co-circulated in each season.
 
-Next, we tested for associations between A(H3N2) evolution and various measures of epidemic timing (Table 2). Seasonal duration increased with H3 and N2 LBI diversity in the current season (H3, LBI Shannon diversity: R2=0.37; p=0.04; LBI s.d.: R2=0.3; p=0.09; N2, LBI Shannon diversity: R2=0.38; p=0.04; LBI s.d.: R2=0.36; p=0.06; regression results: Figure 5; Spearman correlations: Figure 5—figure supplement 1), while the number of days from epidemic onset to peak incidence shortened with increasing N2 epitope distance (t – 1) (R2=0.38, p=0.03; Figure 5—figure supplement 2). Onset and peak timing tended to be earlier in seasons with increased H3 and N2 antigenic novelty, but correlations between antigenic change and epidemic timing were not statistically significant (Figure 5—figure supplement 3). A(H3N2) evolution did not correlate with the degree of spatiotemporal synchrony across HHS regions (Figure 5—figure supplement 1).
+Next, we tested for associations between A(H3N2) evolution and various measures of epidemic timing (Table 2). Seasonal duration increased with H3 and N2 LBI diversity in the current season (H3, LBI Shannon diversity: R2=0.37; p=0.04; LBI s.d.: R2=0.3; p=0.09; N2, LBI Shannon diversity: R2=0.38; p=0.04; LBI s.d.: R2=0.36; p=0.06; regression results: Figure 5; Spearman correlations: Figure 5—figure supplement 1), while the number of days from epidemic onset to peak incidence shortened with increasing N2 epitope distance ($t$ – 1) (R2=0.38, p=0.03; Figure 5—figure supplement 2). Onset and peak timing tended to be earlier in seasons with increased H3 and N2 antigenic novelty, but correlations between antigenic change and epidemic timing were not statistically significant (Figure 5—figure supplement 3). A(H3N2) evolution did not correlate with the degree of spatiotemporal synchrony across HHS regions (Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig5-v1.jpg)
+
+**Figure 5.:** Seasonal diversity of clade growth rates is measured as the (A) Shannon diversity or (B) standard deviation (s.d.) of H3 and N2 local branching index (LBI) values of viruses circulating in each season. LBI values are scaled to aid in direct comparisons of different LBI diversity metrics. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Mean seasonal duration was fit as a function of H3 or N2 LBI diversity using Gaussian GLMs (inverse link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Mean Spearman’s rank correlation coefficients, 95% confidence intervals of correlation coefficients, and corresponding p-values of bootstrapped (N=1000) evolutionary indicators (columns) and epidemic timing metrics (rows). Epidemic timing metrics are the week of epidemic onset, regional variation (s.d.) in onset timing, the week of epidemic peak, regional variation (s.d.) in peak timing, the number of days between epidemic onset and peak, and seasonal duration. Color indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation), and stars indicate statistical significance (* p<0.05, ** p<0.01, *** p<0.001). Abbreviations: $t$ – 1, one-season lag; $t$ – 2, two-season lag; RBS, receptor binding site; HI, hemagglutination inhibition; s.d., standard deviation; LBI, local branching index.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** N2 epitope distance significantly correlates with fewer days from epidemic onset to peak (A), while the relationship between H3 epitope distance and epidemic speed is weaker (B). Seasonal epitope distance is the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). Distances are scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). The seasonal mean number of days from onset to peak was fit as a function of H3 or N2 epitope distance using Gamma GLMs (inverse link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top right section of each plot.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Epidemic onsets are earlier in seasons with increased H3 epitope distance ($t$ – 2), but the correlation is not statistically significant. (B) Epidemic peaks are earlier in seasons with increased H3 epitope distance ($t$ – 2) and N2 epitope distance ($t$ – 1), but correlations are not statistically significant. Seasonal epitope distance is the mean distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). Distances are scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean epidemic onsets and peaks were fit as a function of H3 or N2 epitope distance using Gaussian GLMs (inverse link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
 
 Lastly, we considered the effects of antigenic change on the age distribution of outpatient ILI cases, with the expectation that the proportion of cases in children would decrease in seasons with greater antigenic novelty, due to drifted variants’ increased ability to infect more immunologically experienced adults (Bedford et al., 2015; Gostic et al., 2019). Consistent with this hypothesis, N2 epitope distance was negatively correlated with the fraction of cases in children aged <5 years (one-season lag: R2=0.29, p=0.1; two-season lag: R2=0.59, p=0.003) and individuals aged 5–24 years (one-season lag: R2=0.38, p=0.04; two-season lag: R2=0.17, p=0.18) and positively correlated with the fraction of cases in adults aged 25–64 years (one-season lag: R2=0.36, p=0.05; two-season lag: R2=0.49, p=0.01) and ≥65 years (one-season lag: R2=0.39, p=0.01; two-season lag: R2=0.33, p=0.05) (regression results: Figure 6; Spearman correlations: Figure 6—figure supplement 1). Antigenic drift in H3 exhibited similar associations with age patterns of ILI cases, but correlations were weaker and non-significant (Figure 6, Figure 6—figure supplement 1).
 
-## Effects of heterosubtypic viral interference on A(H3N2) epidemic burden and timing
+![Figure 6.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig6-v1.jpg)
 
-We investigated the effects of influenza type/subtype interference – proxied by influenza A(H1N1) and B epidemic size – on A(H3N2) incidence during annual outbreaks. Across the entire study period, we observed moderate-to-strong, non-linear relationships between A(H1N1) epidemic size and A(H3N2) epidemic size (R2=0.65, p=0.01; Figure 7), peak incidence (R2=0.66, p=0.02; Figure 7), and excess mortality (R2=0.57, p=0.01; Figure 7—figure supplement 1), wherein A(H3N2) epidemic burden and excess mortality decreased as A(H1N1) incidence increased. A(H1N1) epidemic size was also significantly correlated with A(H3N2) transmissibility (effective Rt), exhibiting a negative, approximately linear relationship (R2=0.46, p=0.01; Figure 7). A(H3N2) epidemic intensity was negatively associated with A(H1N1) epidemic size, but this relationship was not statistically significant (R2=0.21, p=0.15; Figure 7). Influenza B epidemic size was not significantly correlated with any A(H3N2) epidemic metrics (Figure 7, Figure 7—figure supplement 1).
+**Figure 6.:** N2 epitope distance, but not H3 epitope distance, significantly correlates with the age distribution of outpatient ILI cases. Seasonal epitope distance is the mean distance between viruses circulating in current season $t$ and viruses circulating in the prior season ($t$ – 1) or two prior seasons ago ($t$ – 2). Distances are scaled to aid in direct comparison of evolutionary indicators. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of regional age distribution estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). The seasonal mean fraction of cases in each age group were fit as a function of H3 or N2 epitope distance using Beta GLMs (logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top right section of each plot.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Mean Spearman’s rank correlation coefficients, 95% confidence intervals of correlation coefficients, and corresponding p-values of bootstrapped (N=1000) evolutionary indicators (rows) and the proportion of ILI cases in individuals aged <5 years, 5–24 years, 25–64 years, and ≥65 years (columns). Color indicates the strength and direction of the association, from dark red (strong positive correlation) to dark blue (strong negative correlation), and stars indicate statistical significance (* p<0.05, ** p<0.01, *** p<0.001). Abbreviations: $t$ – 1, one-season lag; $t$ – 2, two-season lag; RBS, receptor binding site; HI, hemagglutination inhibition.
+
+### Effects of heterosubtypic viral interference on A(H3N2) epidemic burden and timing
+
+We investigated the effects of influenza type/subtype interference – proxied by influenza A(H1N1) and B epidemic size – on A(H3N2) incidence during annual outbreaks. Across the entire study period, we observed moderate-to-strong, non-linear relationships between A(H1N1) epidemic size and A(H3N2) epidemic size (R2=0.65, p=0.01; Figure 7), peak incidence (R2=0.66, p=0.02; Figure 7), and excess mortality (R2=0.57, p=0.01; Figure 7—figure supplement 1), wherein A(H3N2) epidemic burden and excess mortality decreased as A(H1N1) incidence increased. A(H1N1) epidemic size was also significantly correlated with A(H3N2) transmissibility (effective $R_{t}$), exhibiting a negative, approximately linear relationship (R2=0.46, p=0.01; Figure 7). A(H3N2) epidemic intensity was negatively associated with A(H1N1) epidemic size, but this relationship was not statistically significant (R2=0.21, p=0.15; Figure 7). Influenza B epidemic size was not significantly correlated with any A(H3N2) epidemic metrics (Figure 7, Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig7-v1.jpg)
+
+**Figure 7.:** (A) Influenza A(H1N1) epidemic size negatively correlates with A(H3N2) epidemic size, peak incidence, transmissibility (effective reproduction number, $R_{t}$), and epidemic intensity. (B) Influenza B epidemic size does not significantly correlate with A(H3N2) epidemic metrics. Point color indicates the dominant influenza A virus (IAV) subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical and horizontal bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) epidemic metrics were fit as a function of mean A(H1N1) or B epidemic size using Gaussian GLMs (epidemic size and peak incidence: inverse link; effective $R_{t}$: log link) or Beta GLMs (epidemic intensity: logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Relationships between seasonal excess influenza A(H3N2) mortality and the circulation of A(H1N1) or B viruses are organized by influenza type/subtype and age group: (A) A(H1N1) epidemic size and all age groups, (B) A(H1N1) epidemic size and individuals aged ≥65 years, (C) B epidemic size and all age groups, and (D) B epidemic size and individuals aged ≥65 years. Excess influenza deaths attributable to A(H3N2) (per 100,000 people) were estimated from a seasonal regression model fit to weekly pneumonia and influenza-coded deaths. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical bars are 95% confidence intervals of excess mortality model estimates. Seasonal national excess mortality estimates were fit as a function of A(H1N1) or B epidemic size using Gaussian GLMs (log link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top section of each plot.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Influenza A(H1N1) epidemic size negatively correlates with A(H3N2) epidemic size, peak incidence, transmissibility (maximum effective reproduction number, $R_{t}$), and epidemic intensity during (A) the entire study period (1997 – 2019), (B) pre-2009 seasons, and (C) post-2009 seasons. Point color indicates the dominant influenza A virus (IAV) subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), and vertical and horizontal bars are 95% confidence intervals of regional estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). Seasonal mean A(H3N2) epidemic metrics were fit as a function of A(H1N1) epidemic size using Gaussian GLMs (epidemic size, peak incidence: inverse link; effective $R_{t}$: log link) or Beta GLMs (epidemic intensity: logit link) with 1000 bootstrap resamples. In each plot, the black dashed line represents the mean regression fit, and the gray shaded band shows the 95% confidence interval, based on 1000 bootstrap resamples. The R2 and associated p-value from the mean regression fit are in the top left section of each plot.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) A(H3N2) incidence precedes A(H1N1) incidence in most seasons. Although A(H1N1) incidence sometimes leads or is in phase with A(H3N2) incidence (negative or zero phase lags), the direction of seasonal phase lags is not clearly associated with A(H1N1) epidemic size. (B) A(H3N2) incidence leads B incidence (positive phase lag) during every season, irrespective of B epidemic size. Point color indicates the dominant influenza A subtype based on CDC influenza season summary reports (red: A(H3N2), blue: A(H1N1), purple: A(H1N1)pdm09, orange: A(H3N2)/A(H1N1)pdm09 co-dominant), vertical bars are 95% confidence intervals (CIs) of regional phase lag estimates, and horizontal bars are 95% CIs of regional epidemic size estimates (pre-2009 seasons: 9 regions; post-2009 seasons: 10 regions). To estimate the relative timing of influenza subtype incidences, phase angle differences were calculated as phase in A(H3N2) minus phase in A(H1N1) (or B), with a positive value indicating that A(H1N1) (or B) incidence lags A(H3N2) incidence. To calculate seasonal phase lags, we averaged pairwise phase angle differences from epidemic week 40 to epidemic week 20. Seasonal phase lags were fit as a function of A(H1N1) or B epidemic size using LMs with 1000 bootstrap resamples. In each plot, the R2 and associated p-value from the mean regression fit are in the top right section, and the black dashed line shows $y=0$ (the two time series are in phase).
 
 The internal gene segments NS, M, NP, PA, and PB2 of A(H3N2) viruses and pre-2009 seasonal A(H1N1) viruses share a common ancestor (Webster et al., 1992) whereas A(H1N1)pdm09 viruses have a combination of gene segments derived from swine and avian reservoirs that were not reported prior to the 2009 pandemic (Garten et al., 2009; Smith et al., 2009). Non-glycoprotein genes are highly conserved between influenza A viruses and elicit cross-reactive antibody and T cell responses (Grebe et al., 2008; Sridhar, 2016). Because pre-2009 seasonal A(H1N1) viruses and A(H3N2) are more closely related, we hypothesized that seasonal A(H1N1) viruses could potentially limit the circulation of A(H3N2) viruses to a greater extent than A(H1N1)pdm09 viruses, due to greater T cell-mediated cross-protective immunity. As a sensitivity analysis, we measured correlations between A(H1N1) incidence and A(H3N2) epidemic metrics separately for pre- and post-2009 pandemic time periods. Relationships between different A(H3N2) epidemic metrics and A(H1N1) epidemic size were broadly similar for both periods, with slightly stronger correlations observed during the pre-2009 period (Figure 7—figure supplement 2).
 
 We compared A(H3N2) epidemic timing across A(H3N2) and A(H1N1) dominant seasons, which we defined as when ≥70% of influenza A positive samples are typed as A(H3N2) or A(H1N1), respectively. A(H3N2) epidemic onsets and peaks occurred, on average, 3–4 weeks earlier in A(H3N2) dominant seasons (Wilcoxon test, p<0.0001; Table 3). In A(H1N1) dominant seasons, regional A(H3N2) epidemics exhibited greater heterogeneity in epidemic timing (Wilcoxon tests, p<0.0001; Table 3) and were shorter in duration compared to A(H3N2) dominant seasons (median duration: 21.5 weeks versus 28 weeks; Wilcoxon test, p<0.0001; Table 3).
 
+**Table 3.**
+ Comparison of influenza A(H3N2) epidemic timing between A(H3N2) and A(H1N1) dominant seasons.We used two-sided Wilcoxon rank-sum tests to compare the distributions of epidemic timing metrics between A(H3N2) and A(H1N1) dominant seasons. We categorized seasons as A(H3N2) or A(H1N1) dominant when ≥70% of IAV positive samples were typed as one IAV subtype.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">A(H3N2) timing metric</th>
+      <th colspan="2">DominantIAV subtype</th>
+      <th colspan="2">Wilcoxon test</th>
+    </tr>
+    <tr>
+      <th>H3N2</th>
+      <th>H1N1</th>
+      <th>W</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Median onset week(from EW40)</td>
+      <td>8</td>
+      <td>11</td>
+      <td>3590</td>
+      <td>2.95×10–7</td>
+    </tr>
+    <tr>
+      <td>Median peak week(from EW40)</td>
+      <td>17</td>
+      <td>20.5</td>
+      <td>5294.5</td>
+      <td>3.5×10–9</td>
+    </tr>
+    <tr>
+      <td>Regional variation (s.d.) in onset timing</td>
+      <td>9.6</td>
+      <td>16.3</td>
+      <td>4095</td>
+      <td>1.61×10–5</td>
+    </tr>
+    <tr>
+      <td>Regional variation (s.d.) in peak timing</td>
+      <td>12</td>
+      <td>22.6</td>
+      <td>6166</td>
+      <td>6.43×10–18</td>
+    </tr>
+    <tr>
+      <td>Seasonal duration</td>
+      <td>28</td>
+      <td>21.5</td>
+      <td>1977.5</td>
+      <td>6.25×10–6</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations: IAV, influenza A virus; EW40, epidemic week 40 (the start of the influenza season); s.d., standard deviation._
+
 We applied a wavelet approach to weekly time series of incidences to measure more fine-scale differences in the relative timing of type/subtype circulation (Figure 7—figure supplement 3). A(H3N2) incidence preceded A(H1N1) incidence during most seasons prior to 2009 and during the two seasons in which A(H1N1)pdm09 was dominant, potentially because A(H3N2) viruses are more globally prevalent and migrate between regions more frequently than A(H1N1) viruses (Bedford et al., 2015). There was not a clear relationship between the direction of seasonal phase lags and A(H1N1) epidemic size (R2=0.23, p=0.1; Figure 7—figure supplement 3). A(H3N2) incidence led influenza B incidence in all influenza seasons (positive phase lag), irrespective of influenza B epidemic size (R2=0.05, p=0.5; Figure 7—figure supplement 3).
 
-## The relative impacts of viral evolution, heterosubtypic interference, and prior immunity on A(H3N2) epidemic dynamics
+### The relative impacts of viral evolution, heterosubtypic interference, and prior immunity on A(H3N2) epidemic dynamics
 
 We implemented conditional inference random forest models to assess the relative importance of viral evolution, type/subtype co-circulation, prior population immunity, and vaccine-related parameters in predicting regional A(H3N2) epidemic metrics (Figure 8).
 
-Based on variable importance scores, A(H1N1) epidemic size in the current season was the most informative predictor of A(H3N2) epidemic size and peak incidence, followed by H3 epitope distance (t – 2) and the dominant IAV subtype in the previous season or N2 epitope distance (t – 1) (Figure 8). For A(H3N2) subtype dominance, the highest ranked predictors were N2 epitope distance (t – 1), the dominant IAV subtype in the previous season, and H3 epitope distance (t – 2) (Figure 8). We note that we did not include A(H1N1) epidemic size as a predictor in this model, due to its confounding with the target outcome. For models of A(H3N2) transmissibility (effective Rt) and epidemic intensity, we observed less discernable differences in variable importance scores across the set of candidate predictors (Figure 8). For the model of effective Rt, A(H1N1) epidemic size in the current season, adult vaccination coverage in the previous season, and N2 epitope distance between circulating viruses and the vaccine strain were the highest ranked variables, while the most important predictors of epidemic intensity were vaccination coverage in the previous season, N2 epitope distance between circulating viruses and the vaccine strain, and N2 epitope distance (t – 1). Variable importance rankings from LASSO models were qualitatively similar to those from random forest models, with A(H1N1) epidemic size in the current season, H3 and N2 epitope distance, and the dominant IAV subtype in the previous season consistently retained across the best-tuned models of epidemic size, peak incidence, and subtype dominance (Figure 8—figure supplement 1). Vaccine-related parameters and H3 antigenic drift (either H3 epitope distance or HI log2 titer distance) were retained in the best-tuned LASSO models of effective Rt and epidemic intensity (Figure 8—figure supplement 1).
+![Figure 8.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig8-v1.jpg)
 
-We measured correlations between observed values and model-predicted values at the HHS region level. Among the various epidemic metrics, random forest models produced the most accurate predictions of A(H3N2) subtype dominance (Spearman’s ρ=0.95, regional range = 0.85–0.97), peak incidence (ρ=0.91, regional range = 0.72–0.95), and epidemic size (ρ=0.9, regional range = 0.74–0.95), while predictions of effective Rt and epidemic intensity were less accurate (ρ=0.81, regional range = 0.65–0.91; ρ=0.78, regional range = 0.63–0.92, respectively) (Figure 9). Random forest models tended to underpredict most epidemic targets in seasons with substantial H3 antigenic transitions, in particular the SY97 cluster seasons (1998–1999, 1999–2000) and the FU02 cluster season (2003–2004) (Figure 9).
+**Figure 8.:** Ranking of variables in predicting regional A(H3N2) (A) epidemic size, (B) peak incidence, (C) transmissibility (maximum effective reproduction number, $R_{t}$), (D) epidemic intensity, and (E) subtype dominance. Each forest was created by generating 3000 regression trees from a repeated leave-one-season-out cross-validated sample of the data. Variables are ranked by their conditional permutation importance, with differences in prediction accuracy scaled by the total (null model) error. Black error bars are 95% confidence intervals of conditional permutation scores (N=50 permutations). Abbreviations: $t$ – 1, one-season lag; $t$ – 2, two-season lag; IAV, influenza A virus subtype; s.d., standard deviation; HI, hemagglutination inhibition; LBI, local branching index; distance to vaccine, epitope distance between currently circulating viruses and the recommended vaccine strain; VE, vaccine effectiveness.
 
-For epidemic size and peak incidence, seasonal predictive error – the root-mean-square error (RMSE) across all regional predictions in a season – increased with H3 epitope distance (epidemic size, Spearman’s ρ=0.51, p=0.02; peak incidence, ρ=0.63, p=0.004) and N2 epitope distance (epidemic size, ρ=0.48, p=0.04; peak incidence, ρ=0.48, p=0.03) (Figure 9—figure supplements 1 and 2). For models of epidemic intensity, seasonal RMSE increased with N2 epitope distance (ρ=0.64, p=0.004) but not H3 epitope distance (ρ=0.06, p=0.8) (Figure 9—figure supplements 1 and 2). Seasonal RMSE of effective Rt and subtype dominance predictions did not correlate with H3 or N2 epitope distance (Figure 9—figure supplements 1 and 2).
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig8-figsupp1-v1.jpg)
 
-To further refine our set of informative predictors, we performed multivariable regression with the top 10 ranked predictors from each random forest model and used BIC to select the best fit model for each epidemic metric, allowing each metric’s regression model to include up to three independent variables. This additional step of variable selection demonstrated that models with few predictors fit the observed data relatively well (epidemic size, adjusted R2=0.69; peak incidence, R2=0.63; effective Rt, R2=0.63; epidemic intensity, R2=0.75), except for subtype dominance (R2=0.48) (Table 4). The set of variables retained after model selection were similar to those with high importance rankings in random forest models and LASSO regression models, with the exception that HI log2 titer distance, rather than H3 epitope distance, was included in the minimal models of effective Rt and epidemic intensity.
+**Figure 8—figure supplement 1.:** Ranking of variables in predicting regional A(H3N2) (A) epidemic size, (B) peak incidence, (C) transmissibility (maximum effective reproduction number, $R_{t}$), (D) epidemic intensity, and (E) subtype dominance. Models were tuned using a repeated leave-one-season-out cross-validated sample of the data. Variables are ranked by their coefficient estimates, with differences in prediction accuracy scaled by the total (null model) error. Abbreviations: $t$ – 1, one-season lag; $t$ – 2, two-season lag; IAV, influenza A virus subtype; s.d., standard deviation; HI, hemagglutination inhibition; LBI, local branching index; distance to vaccine, epitope distance between currently circulating viruses and the recommended vaccine strain; VE, vaccine effectiveness.
+
+Based on variable importance scores, A(H1N1) epidemic size in the current season was the most informative predictor of A(H3N2) epidemic size and peak incidence, followed by H3 epitope distance ($t$ – 2) and the dominant IAV subtype in the previous season or N2 epitope distance ($t$ – 1) (Figure 8). For A(H3N2) subtype dominance, the highest ranked predictors were N2 epitope distance ($t$ – 1), the dominant IAV subtype in the previous season, and H3 epitope distance ($t$ – 2) (Figure 8). We note that we did not include A(H1N1) epidemic size as a predictor in this model, due to its confounding with the target outcome. For models of A(H3N2) transmissibility (effective $R_{t}$) and epidemic intensity, we observed less discernable differences in variable importance scores across the set of candidate predictors (Figure 8). For the model of effective $R_{t}$, A(H1N1) epidemic size in the current season, adult vaccination coverage in the previous season, and N2 epitope distance between circulating viruses and the vaccine strain were the highest ranked variables, while the most important predictors of epidemic intensity were vaccination coverage in the previous season, N2 epitope distance between circulating viruses and the vaccine strain, and N2 epitope distance ($t$ – 1). Variable importance rankings from LASSO models were qualitatively similar to those from random forest models, with A(H1N1) epidemic size in the current season, H3 and N2 epitope distance, and the dominant IAV subtype in the previous season consistently retained across the best-tuned models of epidemic size, peak incidence, and subtype dominance (Figure 8—figure supplement 1). Vaccine-related parameters and H3 antigenic drift (either H3 epitope distance or HI log2 titer distance) were retained in the best-tuned LASSO models of effective $R_{t}$ and epidemic intensity (Figure 8—figure supplement 1).
+
+We measured correlations between observed values and model-predicted values at the HHS region level. Among the various epidemic metrics, random forest models produced the most accurate predictions of A(H3N2) subtype dominance (Spearman’s $ρ$=0.95, regional range = 0.85–0.97), peak incidence ($ρ$=0.91, regional range = 0.72–0.95), and epidemic size ($ρ$=0.9, regional range = 0.74–0.95), while predictions of effective $R_{t}$ and epidemic intensity were less accurate ($ρ$=0.81, regional range = 0.65–0.91; $ρ$=0.78, regional range = 0.63–0.92, respectively) (Figure 9). Random forest models tended to underpredict most epidemic targets in seasons with substantial H3 antigenic transitions, in particular the SY97 cluster seasons (1998–1999, 1999–2000) and the FU02 cluster season (2003–2004) (Figure 9).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig9-v1.jpg)
+
+**Figure 9.:** (A) Epidemic size, (B) peak incidence, (C) transmissibility (maximum effective reproduction number, $R_{t}$), (D) epidemic intensity, and (E) subtype dominance. Results are facetted by HHS region and epidemic metric. Point color and size corresponds to the mean H3 epitope distance between viruses circulating in the current season $t$ and viruses circulating two prior seasons ago ($t$ – 2). Large, yellow points indicate seasons with high antigenic novelty, and small blue points indicate seasons with low antigenic novelty. In each facet, the Spearman’s rank correlation coefficient and associated p-value are in the top left section, and the black dashed line shows $y=x$.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Root mean squared errors between observed and model-predicted values were averaged across regions for each season, and results are facetted according to epidemic metric. Point color corresponds to the mean H3 epitope distance between viruses circulating in the current season $t$ and viruses circulating two prior seasons ago ($t$ – 2), with bright yellow points indicating seasons with greater antigenic novelty. In each facet, the Spearman’s rank correlation coefficient and associated p-value are in the top left section, and the black dashed line represents the linear regression fit.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/91849/elife-91849-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Root mean squared errors between observed and model-predicted values were averaged across regions for each season, and results are facetted according to epidemic metric. Point color corresponds to the mean N2 epitope distance between viruses circulating in the current season $t$ and viruses circulating in the prior season ($t$ – 1), with bright yellow points indicating seasons with greater antigenic novelty. In each facet, the Spearman’s rank correlation coefficient and associated p-value are in the top left section, and the black dashed line represents the linear regression fit.
+
+For epidemic size and peak incidence, seasonal predictive error – the root-mean-square error (RMSE) across all regional predictions in a season – increased with H3 epitope distance (epidemic size, Spearman’s $ρ$=0.51, p=0.02; peak incidence, $ρ$=0.63, p=0.004) and N2 epitope distance (epidemic size, $ρ$=0.48, p=0.04; peak incidence, $ρ$=0.48, p=0.03) (Figure 9—figure supplements 1 and 2). For models of epidemic intensity, seasonal RMSE increased with N2 epitope distance ($ρ$=0.64, p=0.004) but not H3 epitope distance ($ρ$=0.06, p=0.8) (Figure 9—figure supplements 1 and 2). Seasonal RMSE of effective $R_{t}$ and subtype dominance predictions did not correlate with H3 or N2 epitope distance (Figure 9—figure supplements 1 and 2).
+
+To further refine our set of informative predictors, we performed multivariable regression with the top 10 ranked predictors from each random forest model and used BIC to select the best fit model for each epidemic metric, allowing each metric’s regression model to include up to three independent variables. This additional step of variable selection demonstrated that models with few predictors fit the observed data relatively well (epidemic size, adjusted R2=0.69; peak incidence, R2=0.63; effective $R_{t}$, R2=0.63; epidemic intensity, R2=0.75), except for subtype dominance (R2=0.48) (Table 4). The set of variables retained after model selection were similar to those with high importance rankings in random forest models and LASSO regression models, with the exception that HI log2 titer distance, rather than H3 epitope distance, was included in the minimal models of effective $R_{t}$ and epidemic intensity.
+
+**Table 4.**
+ Predictors of seasonal A(H3N2) epidemic size, peak incidence, transmissibility, epidemic intensity, and subtype dominance.Variables retained in the best fit model for each epidemic outcome were determined by BIC.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Best Minimal Model1</th>
+      <th>R2</th>
+      <th>Adj. R2</th>
+      <th>RMSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Epidemic Size</td>
+      <td>H3 epitope distance (t – 2) +H1 epidemic size +H3 epidemic size (t – 1)</td>
+      <td>0.74</td>
+      <td>0.69</td>
+      <td>9.88</td>
+    </tr>
+    <tr>
+      <td>Peak Incidence</td>
+      <td>H3 epitope distance (t – 2) +H1 epidemic size +Dominant IAV Subtype (t – 1)</td>
+      <td>0.69</td>
+      <td>0.63</td>
+      <td>2.09</td>
+    </tr>
+    <tr>
+      <td>Effective Rt</td>
+      <td>HI log2 titer distance (t – 2) +H1 epidemic size +N2 distance to vaccine strain</td>
+      <td>0.69</td>
+      <td>0.63</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Epidemic Intensity</td>
+      <td>HI log2 titer distance (t – 2) +N2 distance to vaccine strain +vaccination coverage (t – 1)</td>
+      <td>0.79</td>
+      <td>0.75</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Subtype Dominance</td>
+      <td>H3 epitope distance (t – 2) +N2 epitope distance (t – 1) +Dominant IAV Subtype (t – 1)</td>
+      <td>0.56</td>
+      <td>0.48</td>
+      <td>0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_1Candidate models were limited to three independent variables and considered all combinations of the top 10 ranked predictors from conditional inference random forest models (Figure 8)._
 
 ## Discussion
 
@@ -319,7 +800,7 @@ Novel antigenic variants are expected to have higher infectivity in immune popul
 
 After exploring individual correlations between evolutionary indicators and annual epidemics, we considered the effects of influenza A(H1N1) incidence and B incidence on A(H3N2) virus circulation within a season. We detected strong negative associations between A(H1N1) incidence and A(H3N2) epidemic size, peak incidence, transmissibility, and excess mortality, consistent with previous animal, epidemiological, phylodynamic, and theoretical studies that found evidence for cross-immunity between IAV subtypes (Cowling et al., 2010; Epstein, 2006; Ferguson et al., 2003; Gatti et al., 2022; Goldstein et al., 2011; Sonoguchi et al., 1985). For example, individuals recently infected with seasonal influenza A viruses are less likely to become infected during subsequent pandemic waves (Cowling et al., 2010; Epstein, 2006; Fox et al., 2017; Laurie et al., 2015; Sridhar et al., 2013), and the early circulation of one influenza virus type or subtype is associated with a reduced total incidence of the other type/subtypes within a season (Goldstein et al., 2011; Lam et al., 2020). Due to the shared evolutionary history of their internal genes (Webster et al., 1992) and in turn greater T cell-mediated cross-protective immunity, pre-2009 seasonal A(H1N1) viruses may impact A(H3N2) virus circulation to a greater extent than A(H1N1)pdm09 viruses, which have a unique combination of genes that were not identified in animals or humans prior to 2009 (Garten et al., 2009; Smith et al., 2009). We observed similar relationships between A(H3N2) epidemic metrics and A(H1N1) incidence during pre- and post-2009 pandemic seasons, with slightly stronger correlations observed during the pre-2009 period. However, given the small sample size (12 pre-2009 seasons and 9 post-2009 seasons), we cannot fully answer this question.
 
-In our study, univariate correlations between A(H1N1) and A(H3N2) incidence were more pronounced than those observed between A(H3N2) incidence and evolutionary indicators, and A(H1N1) epidemic size was the highest ranked feature by random forest models predicting epidemic size, peak incidence, and transmissibility (effective Rt). Consequently, interference between the two influenza A subtypes may be more impactful than viral evolution in determining the size of annual A(H3N2) outbreaks. Concerning epidemic timing, we did not detect a relationship between A(H3N2) antigenic change and the relative timing of A(H3N2) and A(H1N1) cases; specifically, A(H3N2) incidence did not consistently lead A(H1N1) incidence in seasons with greater H3 or N2 antigenic change. Overall, we did not find any indication that influenza B incidence affects A(H3N2) epidemic burden or timing, which is not unexpected, given that few T and B cell epitopes are shared between the two virus types (Terajima et al., 2013).
+In our study, univariate correlations between A(H1N1) and A(H3N2) incidence were more pronounced than those observed between A(H3N2) incidence and evolutionary indicators, and A(H1N1) epidemic size was the highest ranked feature by random forest models predicting epidemic size, peak incidence, and transmissibility (effective $R_{t}$). Consequently, interference between the two influenza A subtypes may be more impactful than viral evolution in determining the size of annual A(H3N2) outbreaks. Concerning epidemic timing, we did not detect a relationship between A(H3N2) antigenic change and the relative timing of A(H3N2) and A(H1N1) cases; specifically, A(H3N2) incidence did not consistently lead A(H1N1) incidence in seasons with greater H3 or N2 antigenic change. Overall, we did not find any indication that influenza B incidence affects A(H3N2) epidemic burden or timing, which is not unexpected, given that few T and B cell epitopes are shared between the two virus types (Terajima et al., 2013).
 
 Lastly, we used random forest models and multivariable linear regression models to assess the relative importance of viral evolution, prior population immunity, co-circulation of other influenza viruses, and vaccine-related parameters in predicting regional A(H3N2) epidemic dynamics. We chose conditional inference random forest models as our primary method of variable selection because several covariates were collinear, relationships between some predictors and target variables were nonlinear, and our goal was inferential rather than predictive. We performed leave-one-season-out cross-validation to tune each model, but, due to the limited number of seasons in our dataset, we were not able to test predictive performance on an independent test set. With the caveat that models were likely overfit to historical data, random forest models produced accurate predictions of regional epidemic size, peak incidence, and subtype dominance patterns, while predictions of epidemic intensity and transmission rates were less exact. The latter two measures could be more closely tied to climatic factors, the timing of influenza case importations from abroad, or mobility patterns (Bedford et al., 2015; Charu et al., 2017; Shaman and Kohn, 2009; Shaman et al., 2010) or they may be inherently more difficult to predict because their values are more constrained. Random forest models tended to underpredict epidemic burden in seasons with major antigenic transitions, particularly the SY97 seasons (1998–1999, 1999–2000) and the FU02 season (2003–2004), potentially because antigenic jumps of these magnitudes were infrequent during our 22-season study period. An additional step of post-hoc model selection demonstrated that models with only three covariates could also produce accurate fits to observed epidemiological data.
 

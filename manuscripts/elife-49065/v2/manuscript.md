@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.49065.001 The genetic control of anterior brain development is highly conserved throughout animals. For instance, a conserved anterior gene regulatory network specifies the ancestral neuroendocrine center of animals and the apical organ of marine organisms. However, its contribution to the brain in non-marine animals has remained elusive. Here, we study the function of the Tc-foxQ2 forkhead transcription factor, a key regulator of the anterior gene regulatory network of insects. We characterized four distinct types of Tc-foxQ2 positive neural progenitor cells based on differential co-expression with Tc-six3 / optix , Tc-six4 , Tc-chx / vsx , Tc-nkx2.1 / scro , Tc-ey , Tc-rx and Tc-fez1 . An enhancer trap line built by genome editing marked Tc-foxQ2 positive neurons, which projected through the primary brain commissure and later through a subset of commissural fascicles. Eventually, they contributed to the central complex. Strikingly, in Tc-foxQ2 RNAi knock-down embryos the primary brain commissure did not split and subsequent development of midline brain structures stalled. Our work establishes foxQ2 as a key regulator of brain midline structures, which distinguish the protocerebrum from segmental ganglia. Unexpectedly, our data suggest that the central complex evolved by integrating neural cells from an ancestral anterior neuroendocrine center.
+The genetic control of anterior brain development is highly conserved throughout animals. For instance, a conserved anterior gene regulatory network specifies the ancestral neuroendocrine center of animals and the apical organ of marine organisms. However, its contribution to the brain in non-marine animals has remained elusive. Here, we study the function of the Tc-foxQ2 forkhead transcription factor, a key regulator of the anterior gene regulatory network of insects. We characterized four distinct types of Tc-foxQ2 positive neural progenitor cells based on differential co-expression with Tc-six3/optix, Tc-six4, Tc-chx/vsx, Tc-nkx2.1/scro, Tc-ey, Tc-rx and Tc-fez1. An enhancer trap line built by genome editing marked Tc-foxQ2 positive neurons, which projected through the primary brain commissure and later through a subset of commissural fascicles. Eventually, they contributed to the central complex. Strikingly, in Tc-foxQ2 RNAi knock-down embryos the primary brain commissure did not split and subsequent development of midline brain structures stalled. Our work establishes foxQ2 as a key regulator of brain midline structures, which distinguish the protocerebrum from segmental ganglia. Unexpectedly, our data suggest that the central complex evolved by integrating neural cells from an ancestral anterior neuroendocrine center.
 
 ## Introduction
 
@@ -39,11 +39,23 @@ We found that Tc-foxQ2 was continuously expressed in anterior median cell cluste
 
 ## Results
 
-## Tc-foxQ2 marks neural progenitor cells with four different molecular identities
+### Tc-foxQ2 marks neural progenitor cells with four different molecular identities
 
 In the embryo, Tc-foxQ2 is expressed in the anterior neuroectoderm from earliest stages onwards indicating a role in the specification of neuroblasts (Kitzmann et al., 2017). Hence, we sought to determine which neural progenitor cells (NPCs) expressed Tc-foxQ2. To that end we generated an antibody specific for the Tc-FoxQ2 protein (see Materials and methods and Figure 1—figure supplement 1) and used an intronic probe of Tc-asense (Tc-ase) as marker for NPCs, which could be either NBs, intermediate neural progenitors (INPs) of type II NBs or ganglion mother cells (GMCs) (Boone and Doe, 2008; Bowman et al., 2008). It should be noted that the Tc-ase has been shown to be a marker for NBs in Tribolium (Wheeler et al., 2003) but that its expression in INPs or GMCs is assumed by analogy from Drosophila. In addition, cell size and shape together with large nuclei were used to recognize progenitor cells. See Figure 1—figure supplement 2 for staging according to Biffar and Stollewerk (2014) and for the comparison of the signals of exonic and intronic Tc-ase probes.
 
 The first protocerebral NPCs delaminate at NS4. The first Tc-FoxQ2+ NPCs, however, emerge at NS8. Here, about 15 Tc-FoxQ2+/Tc-ase+ cells were identified (n = 6; Figure 1A; Supplementary file 1-table 1) forming a large anterior group (blue and green in Figure 1A’’), a small median group (gray) and a single lateral cell (orange). These groups correspond to three domains into which the Tc-foxQ2 expression splits in the neuroectoderm (Kitzmann et al., 2017). At NS11, the number had decreased to 9–12 cells expressing both markers (n = 6; Figure 1B; Supplementary file 1-table 1) while at least 5–7 cells were observed at stage 14 (n = 6; Figure 1C; Supplementary file 1-table 1). This reduction could have several reasons: Tc-ase expression may cease once NBs enter quiescence like in Drosophila (Lai and Doe, 2014) or Tc-foxQ2 expression may become repressed in a subset of NPCs. Alternatively, if the anterior group contained type II NBs, the double positive cells would be INPs or GMCs, which based on Drosophila knowledge express asense while type II NBs themselves do not (Boone and Doe, 2008; Bowman et al., 2008). Unfortunately, markers for unequivocally distinguishing NBs, INPs and GMCs remain to be established in Tribolium.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig1-v2.jpg)
+
+**Figure 1.:** Tc-FoxQ2 protein is visualized by immunohistochemistry at different stages (magenta) while neural progenitor cells (NPCs) are marked by intronic Tc-asense whole mount in situ hybridization (green). Nuclei are visualized by DAPI (blue). Optical sections of right halves of stained heads are shown in the left column while respective close-ups are shown in second and third column (see hatched areas in left column in (A, B and C). A projection of all optical sections is given in the right column (A’, B’ and C’). The schemes represent the outline of right halves of the head lobes of flattened embryos. The dotted line represents the midline. This depiction is comparable to the one previously used for Drosophila neuroblast maps (Urbach and Technau, 2003a) (A’’, B’’ and C’’). (A–A’’) At NS8 about 15 Tc-FoxQ2 positive NPCs are found (n = 6). By position, three groups are distinguished: A large anterior median group (blue in A’’) with one neuroblast slightly separated posteriorly (green in A’’), one single lateral NPC (orange in A’’) and a group located closely to the midline (gray in A’’). White arrowheads show two exemplary NPCs. (B–B’’) At NS11 about 10 Tc-FoxQ2 positive NPCs are observed (n = 6). (C–C’’) At NS14, the number has decreased to 5–7 cells (n = 6). The single lateral NPC remains distinguishable (orange in C’’). Lr: labrum; Sto: stomodeum; Oc: ocular region; Ant: antenna; Ic: Intercalary region.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Protein sequence of Tc-FoxQ2. The C-terminus containing 85 amino acids (underlined) has little homology to other proteins in Tribolium and was used for protein expression. (B) Coomassie-blue stained SDS-PAGE gel analysis of expression and purification of Tc-FoxQ2. (-) Before IPTG induction; (+) after IPTG induction. M, marker; lane 1, cell pellet; lane 2, supernatant; lane 3, flow through after Ni2+ chelate affinity chromatography; lane 4, eluted fractions by imidazole; lane 5, before SUMO protease digestion (red arrow); lane 6, after SUMO protease digestion, two bands are observed (red arrows): 6xHis-SUMO and Tc-FoxQ2; lane 7, flow through after re-Ni2+ chelate affinity chromatography which contains Tc-FoxQ2. (C) Expression of Tc-foxQ2 RNA (green) and Tc-FoxQ2 protein (magenta) in the embryo. Tc-foxQ2 RNA is detected throughout the cytoplasm, while Tc-FoxQ2 protein is detected in the nuclei (blue). Tc-foxQ2 RNA and Tc-FoxQ2 protein show a high overlap.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In Tribolium, the established morphological staging system (Biffar and Stollewerk, 2014) with respect to early neurogenesis has 15 stages, termed NS1 to NS15. (A, B) From NS3 to NS5, the neuroectoderm is still a flat sheet of cells. (C) At NS7, the labral and stomodeal buds have formed (arrow, white arrowhead). (D) At NS11, the brain grows thicker and contains an increased number of cells. (E, F) From NS13 onwards, the brain hemispheres become an oval shape and grow. (G) At NS15, the brain hemisphere shows a pear-like shape. All planes are dorsal view. (H) Tc-ase-RNA exonic probe marks cytoplasm. (I) Tc-ase-RNA intronic probe marks only nuclei, which allows cell identification.
 
 The identity of NPCs is believed to be determined by unique cocktails of transcription factors (Skeath, 1999; Urbach and Technau, 2003a). In order to check whether the positional groups were also molecularly distinct we performed co-expression analyses (n = 6 embryos). We used a number of almost exclusive anterior patterning genes because these were likely to contribute to protocerebrum specific patterning (Posnien et al., 2011a; Posnien et al., 2011b; Steinmetz et al., 2010), the co-expression of which we were able to follow until stage NS11 when morphogenetic movements and the increase in cell number made an identification of individually marked cells challenging. We found four different molecular types that correlated with positional differences (Figure 2). The first type (No1 in Figure 2I’) was the largest group and was located anterior median in the neuroectoderm. This type showed co-expression of Tc-foxQ2 with Tc-six3 (optix), Tc-six4 and later Tc-chx (vsx). We call these cells the P-fox-am group of cells (P stands for protocerebral according to Drosophila nomenclature [Younossi-Hartenstein et al., 1996]). The second type (P-fox-amp) was located posteriorly adjacent and was similar to the P-fox-am but showed additional expression of Tc-scro (nkx2.1), Tc-earmuff (fez1) and in one of the cells also Tc-eyeless (Pax6) (No2 in Figure 2I’). A third type consisted of one lateral NPC, which co-expressed Tc-six3 with Tc-earmuff, Tc-rx and Tc-eyeless (No3 in Figure 2I’). Due to its separate location and molecular distinction, this cell type (P-fox-l) could be followed through several stages (orange in Figure 1). The fourth type showed only co-expression of Tc-foxQ2 and Tc-scro (No4 in Figure 2I’) and was located at a ventral position adjacent to the stomodeum (P-fox-v).
 
@@ -55,17 +67,41 @@ We were not able to homologize these NPCs with those of Drosophila or Tenebrio. 
 
 Taken together, our analysis showed that Tc-foxQ2 marks four distinct types of Tc-ase positive cells in the early neuroectoderm. Its expression suggests a role in the specification of NPCs in the protocerebral part of the insect brain.
 
-## Marking of the Tc-foxQ2 genetic neural lineage by a CRISPR/Cas9 induced enhancer trap
+### Marking of the Tc-foxQ2 genetic neural lineage by a CRISPR/Cas9 induced enhancer trap
 
 Orthologs of foxQ2 are involved in anterior-most patterning in animals including development of the apical organ (Marlow et al., 2014; Sinigaglia et al., 2013; Yaguchi et al., 2010). In insects, foxQ2 is exclusively expressed in protocerebral tissue and a function in protocerebrum-specific neuropils has been suggested (Kitzmann et al., 2017). However, foxQ2+ neurons had not been marked to follow their projections in any insect. Unfortunately, foxQ2 enhancer trap lines were neither available for Tribolium nor Drosophila. Hence, we used CRISPR/Cas9 genome editing (Gilles et al., 2015) for a non-homologous end joining strategy to generate an enhancer trap in the Tc-foxQ2 locus that drives EGFP (see Materials and methods; Supplementary file 1-tables 2–4; Figure 3—figure supplement 1, (Farnworth et al., 2019). By double immunohistochemistry we confirmed that EGFP and Tc-FoxQ2 protein expression correlated quite well throughout embryogenesis (Figure 3). The observed differences appeared to be mainly due to different dynamics of maturation and degradation of the two proteins but we cannot exclude that cells are single positive for either EGFP or Tc-FoxQ2. We called this line foxQ2-5’-line and used it for all subsequent analyses of Tc-foxQ2+ neurons.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig3-v2.jpg)
+
+**Figure 3.:** The expression of EGFP (green) derived from the foxQ2-5’-line and Tc-FoxQ2 protein (magenta) correlate closely throughout embryogenesis. The morphology of the anterior neuroectoderm is visualized with DAPI staining (blue, right column). Shown are heads of embryos dissected out of the egg and flattened to reveal the staining within the neuroectoderm (A’’’–C’’’) and the developing brain (D’’’–F’’’). Some differences between EGFP and Tc-FoxQ2 expression are observed, which may be due to either different dynamics of maturation and degradation of these proteins or to divergence of the enhancer trap signal from the endogenous expression. (A–A’’’) At NS3, Tc-foxQ2 expression shows two bilateral domains within the anterior median region. (B–F’’’) Later, the expression domains split into a stomodeal (asterisk), a median (white arrowhead) and lateral domain (open arrowhead). At NS15, two clusters of cells are observed: The large anterior-median-foxQ2-cluster (white arrowhead in F’) and a smaller anterior-lateral-foxQ2-lineage (open arrowhead in F’). (G–I) The general movements of the head tissue areshown from the germ rudiment (G) to an elongating (H) and a retracting stage (I). The approximate positions of the Tc-foxQ2 marked cells underlying the head epidermis are shown. (J,K) Flat preparations of heads of stage NS13 (J) and NS15 (K) are shown with the approximate positions of the underlying Tc-foxQ2 marked cells shown in green. (G–I) are redrawn from Posnien and Bucher (2010).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The insertion (including the plasmid backbone) is about 6.8 kb in length and the bhsp68 promoter is located approximately ~700 bp upstream of the transcription start site. The EGFP transcription unit is oriented in the opposite direction to Tc-foxQ2. (B) The upper row is the predicted sequence of a perfect insertion without indels where gray indicates the left and right extremes of the 6.8 kb insert and the gRNA target sequence is underlined. The lower row is the actual sequencing results of this line. The insertion occurred at the predicted site (3 bp upstream of the PAM, AGG shown in red) and small insertions occurred at both integration sites (green). The purple bases represent the gRNA1 target sequence (targeting the genomic DNA) and the brown bases represent the gRNA-eb target sequence (targeting the plasmid for linearization). The genomic region and sequence of Tc-foxQ2 (Tc004761) are viewed by the iBeetle genome browser (http://ibeetle-base.uni-goettingen.de/gb2/gbrowse/tribolium/). gRNA1 target sequence: 5’ GGGCGTTACTGTCACCCTCCAGG 3’gRNA-eb target sequence: 5’ CCAGGAGGCGGGCTGCCCGGTTC 3’.
+
 During embryogenesis from NS3 to NS13, the Tc-FoxQ2 antibody and EGFP stainings closely matched the in situ hybridization patterns (Kitzmann et al., 2017). Essentially, Tc-FoxQ2 was initially expressed in two bilateral anterior-median expression domains (Figure 3A). Later, these resolved into a stomodeal (asterisk in Figure 3B’ and F’) and an anterior domain, which was further subdivided into a median (white arrowhead) and lateral domain (open arrowhead). The P-fox-v NPCs were located in the stomodeal domain while the other types emerged from within the anterior domains. Towards the end of embryogenesis (NS15) two clusters of cells reminiscent of neural lineages were observed: A large anterior median group (white arrowhead in Figure 3F’) and a smaller lateral group (open arrowhead). In addition, scattered cells were observed more posteriorly in the brain and strong staining in the stomodeum persisted (asterisk).
 
-## Three Tc-FoxQ2 positive cell clusters contribute to brain midline structures including the central body
+### Three Tc-FoxQ2 positive cell clusters contribute to brain midline structures including the central body
 
 We characterized the contribution of Tc-foxQ2+ cells to the embryonic brain. We found no Tc-foxQ2+ glia based on immunohistochemistry in our transgenic glia reporter line glia-blue (Koniszewski et al., 2016) (not shown). In order to study the development of the projection patterns of Tc-foxQ2+ neurons we performed double-immunohistochemistry visualizing the EGFP derived from the foxQ2-5’-line combined with ß-acetylated tubulin (acTub), which marks axonal projections (Piperno and Fuller, 1985). We detected at least three clusters of Tc-foxQ2+ cells with properties of neural lineages (Figure 4, please find entire stacks and videos on figshare project 62939).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig4-v2.jpg)
+
+**Figure 4.:** Double-immunohistochemistry visualizes the EGFP (green) derived from the foxQ2-5’-line and acTub (magenta) which marks axonal projections – neuraxis anterior is up. (A–A’) At NS13, the first brain commissure marked by acTub appears (white arrowhead in A’). The cell bodies of the anterior-median-foxQ2-cluster are located around this commissure but do not yet project into it. A few weakly stained cells closely attached to the commissure are not Tc-FoxQ2 protein positive (asterisk in A’). (B–B’) At NS14, projections within the brain commissure become visible but have not yet reached the midline (white arrowhead in B). One Tc-FoxQ2 positive NPC is recognized by its morphology and position (hatched circle in B’). (B) and (B’) are not the same embryo but from the same developmental stage. (C–E) At NS15, at least three brain commissures are marked by the anterior-median-foxQ2-cluster: One in the circumesophageal commissure (white arrowhead in E), and two commissures within the central brain primordium (white arrowheads in D). The anterior-median-foxQ2-cluster produces more cells at this stage. (C’–E’) acTub marked brain commissures expand into many fascicles and increase in size. 6–7 axon bundles emanating from the anterior-median-foxQ2-cluster separately join this midline brain primordium (one of them marked by an arrow in C’).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** A cross of the foxQ2-5’-line (green) with the glia-line (Koniszewski et al., 2016); magenta) was imaged. (A–A’’) Most of the cells of the anterior-median-foxQ2-cluster are within one glia sheet (white arrowheads, dashed line). The medial-most cells which show comparably weak EGFP signal are surround by another glia sheet (open arrowheads, dashed line). (B–B’’) The anterior-lateral-foxQ2-lineage is surrounded by one glia sheet (orange arrowheads, dashed line).
+
 At stage NS13, the first brain commissure became visible in the acTub staining (white arrowhead in Figure 4A’). One large continuous cluster of about 89 Tc-foxQ2+ cells was situated around this primary commissure and was located in the anterior median part of the forming brain (n = 5; Figure 4A; Supplementary file 1-table 5). About 12 marked cells had the nuclear morphology of NPCs (n = 5; Figure 4A; Supplementary file 1-table 5). We termed this group of adjacent cells the anterior-median-foxQ2-cluster. Based on the number of observed NPCs within the cluster and the number of projections that emerge from it we assume that it could be composed of several neural lineages. During subsequent development, these cells stayed together but along with general morphogenetic movements they approached each other towards the midline (compare distance in Figure 4B with E; see Videos 1 and 2).
+
+![Video 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-video1.mp4.jpg)
+
+**Video 1.:** Anterior is up. The development is shown over the time of 80 hr. From 0–20 hr the head lobes and the brain anlagen approach each other at the midline. Subsequently, the labrum is seen to elongate towards anterior until 60 hr. Finally, the head undergoes an overall change of position by a rotation towards the ventral side.
+
+![Video 2.](https://cdn.elifesciences.org/articles/49065/elife-49065-video2.mp4.jpg)
+
+**Video 2.:** The movements towards the midline of the marked cell clusters are shown.
 
 At NS14 the cell number in the anterior-median-foxQ2-cluster had increased to about 150 (n = 5; Figure 4B; Supplementary file 1-table 5) and 14 Tc-FoxQ2+ NPCs were still discernable (e.g. hatched circle in Figure 4B’). At that stage, the first EGFP positive projections became visible. They projected towards the brain commissure and joined it. However, at that stage, the EGFP+ projections had not yet reached the midline of the commissure (white arrowhead in Figure 4B).
 
@@ -75,13 +111,25 @@ In order to assign the anterior-median-foxQ2-cluster to characterized NPCs we tr
 
 A second group of EGFP positive cells emerged laterally to that cluster after NS13 (anterior-lateral-foxQ2-lineage). At NS14 one NPC and a very small group of cells (6-8) were marked by EGFP (n = 4; orange arrowhead in Figure 5A; Supplementary file 1-table 6). At NS15 approximately 15–20 cells were marked (n = 4; Supplementary file 1-table 6). They formed a column-like cluster lateral to the anterior-median-foxQ2-cluster (orange arrowheads in Figure 5B,D) and their projections joined the established Tc-foxQ2 positive neurites at a lateral position (white arrows in Figure 5B,D). Because this cluster contained only one NB and all cells were within one glia sheath (orange arrowhead in Figure 4—figure supplement 1) we hypothesize that they form one neural lineage. By tracing back this lineage to the embryonic ectoderm we found that it most likely derived from the P-fox-l NPC (Figure 2I’).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig5-v2.jpg)
+
+**Figure 5.:** Immunohistochemistry visualizes EGFP (green) derived from the foxQ2-5’-line. Synapsin visualizes adult brain morphology (magenta in E,F) while nuclei are visualized by DAPI (blue in A’-C’’). (A–A’’) At NS14, the anterior-lateral-foxQ2-cluster consists of one NPC and a small number of progeny (orange arrowheads). (B–B’’, D) At NS15, more cells are marked by EGFP (orange arrowheads) and their projections join a Tc-foxQ2 positive axon bundle (white arrows in B, (D). (C–C’’) EGFP marked projections contribute to the central body in L5 larval brain, which is visualized by its surrounding glia cells (white arrowhead in C’). (E–F) EGFP marked projections contribute to the upper unit of the central body in the adult brain (white arrowhead in E) visualized by synapsin and surrounding glia (white arrowhead in F). (E’–F’) Another fascicle projects across the midline directly posterior of the central body (open arrowhead).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Immunohistochemistry visualizes the EGFP (green) expressed by the foxQ2-5’-line. The outline is visualized with DAPI staining (blue). The expression of Tc-foxQ2 marked by EGFP from NS6 to NS15 is shown. (A–C’) The stomodeum is located posteriorly in anterior median region and cells of it except for the dorsal roof are marked (white arrowheads). (D–E’) At NS14 and NS15, additional marked epidermal cells in the lateral parts of the labrum are observed (open arrowheads).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Immunohistochemistry visualizes the EGFP (green) derived from the foxQ2-5’-line. The morphology of the brain is visualized with DAPI staining (blue). (A–A’) At NS13, several cells lateral to the stomodeum are observed (open arrowhead). (B–B’) At NS14, this group of cells project into the posterior circumesophageal commissure (open arrowhead).
+
 The lineages of anterior median NBs are known to contribute to the CX in other insects (Boone and Doe, 2008; Bowman et al., 2008; Boyan et al., 2010; Walsh and Doe, 2017). We showed that some NPCs are Tc-foxQ2 positive and after RNAi-knock-down of Tc-foxQ2, the CX is disturbed (Kitzmann et al., 2017). Therefore, we hypothesized that the Tc-foxQ2 might mark cells contributing to the CX. In order to test this we analyzed larval (L5) and adult brains, where the CB is marked by a glia sheet (white arrowheads in Figure 5C’, F). Indeed, EGFP marked projections contributed to the upper division (fan shaped body) of the CB (white arrowheads in Figure 5C,E) while another fascicle crossed the midline directly dorsal of the CB (dorsal with respect to neuraxis; open arrowhead in Figure 5E’).
 
 In summary, we found that Tc-foxQ2 positive cells formed three cell clusters in the protocerebrum that projected through the early brain commissure. Later, they marked specific subsets of midline fascicles of the developing central brain and eventually contributed to the upper unit of the CB and to subsets of brain commissures.
 
 Some additional Tc-foxQ2+ cells merit mentioning although they were not neural or did not contribute to the central brain. Firstly, cells of the stomodeum except for the dorsal roof were marked at all stages (Figure 3 and white arrowheads in Figure 5—figure supplement 1). The domain appeared to be continuous with an expression in the lateral parts of the labrum from stage NS14 onwards (open arrowheads in Figure 5—figure supplement 1). Secondly, several Tc-foxQ2+ cells lateral to the stomodeum were observed at NS13 (open arrowhead in Figure 5—figure supplement 2A). From NS14 onwards they had expanded to a group of cells adjacent to the stomodeum, which sent projections into the posterior circumesophageal commissure (open arrowhead in Figure 5—figure supplement 2B). Thirdly, about 12 weakly stained cells were closely attached to the developing commissure at the midline (n = 5; star in Figure 4A’). These cells were Tc-FoxQ2 protein negative at NS13 but could have retained EGFP signal from median cells marked at a previous stage (e.g. dorsal to the stomodeum at NS6; see Figure 3B’).
 
-## In vivo imaging reveals complex morphogenetic movements of the developing brain
+### In vivo imaging reveals complex morphogenetic movements of the developing brain
 
 In order to confirm our view on the morphogenetic behavior of the marked cell clusters we used light-sheet based fluorescence microscopy for in vivo imaging (Strobl et al., 2015). We imaged a cross of the foxQ2-5’-line with the AGOC #6 reporter, which marks glia cells via the 3XP3 promoter (Koniszewski et al., 2016; Strobl et al., 2018). Three prominent morphogenetic movements were revealed: Initially, both brain and stomodeum EGFP signals started out in close vicinity at the dorsal side (Figure 6A white arrowhead and white arrow, respectively, Video 1). Shortly later, the stomodeum became elongated and bent away towards the ventral side such that the initially adjacent expression domains came to lie on opposite sides of the brain (Figure 6B–C). At the same time a second movement was observed, where the bilateral Tc-foxQ2+ cell clusters converged from lateral positions towards the midline until they made contact at the medial brain (white arrowheads in Figure 6E–J, Video 2). The third movement consisted of an overall ventral bending of the head and brain where the relative positions of the expression domains remained similar (compare white lines in Figure 6C and D). These movements reflected the movements described by the ‘bend and zipper’ model of head development (Figure 6K–N) (Posnien and Bucher, 2010; Posnien et al., 2010). Both the anterior-median-foxQ2-cluster (white arrowheads in Figure 6E–J) and the anterior-lateral-foxQ2-lineage (orange arrowheads) could be followed throughout development confirming our results in fixed specimen. The full datasets and metadata are available at Zenodo (see Materials and methods).
 
@@ -89,33 +137,41 @@ In order to confirm our view on the morphogenetic behavior of the marked cell cl
 
 **Figure 6.:** A cross of the foxQ2-5’-line (green) with the AGOC #6 glia reporter line (magenta) was imaged. (A–D) Shown are dorsal views (left specimen) and lateral views with dorsal to the left (right specimen) (A) EGFP signals in brain and stomodeum start out at the dorsal side (white arrowhead and white arrow, respectively). (B–C) Later, the stomodeum becomes elongated and bends away towards the ventral side. (C–D) An overall ventral bending of the head and brain follows, where the relative positions within the head remain similar (compare white lines in C and D). (E–J) Shown is one specimen from the dorsal side with anterior to the top. At the same time, the bilateral Tc-foxQ2 positive cell clusters approach each other towards the midline (white arrowheads). Both the anterior-median-foxQ2-cluster (white arrowheads in E-J) and the anterior-lateral-foxQ2-cluster (orange arrowheads in E-J) can be distinguished throughout development. Note that a small group of marked cells detach from the cluster and fuse at the midline. However, these cells are not Tc-FoxQ2 positive and are, hence, not further considered. (K–N) The overall morphogenetic movements of embryos aredepicted schematically with the embryo highlighted in gray. Marked are the stomodeum (red circle) and the antennae. The black hatched line marks the boundary between thorax and head segments while the red hatched line indicates the plane to which the mouth opens. The embryos are redrawn from Strobl and Stelzer (2014) and do not exactly match the stages shown in A-D.
 
-## Arrest of central brain formation in Tc-foxQ2 RNAi embryos
+### Arrest of central brain formation in Tc-foxQ2 RNAi embryos
 
 Development of the protocerebral brain commissures starts with the midline crossing of the primary commissure pioneer neurons. By subsequent joining of additional neurites from the DM1-4 and other lineages one compact commissure develops. This primary brain commissure later splits and expands into the mature brain commissure, which consists of many midline crossing fascicles (Boyan et al., 1993; Therianos et al., 1995; Williams and Boyan, 2008). Subsequently, formation of the CB by de- and re-fasciculation of axon tracts from a subset of these commissures occurs in grasshopper and Drosophila (Boyan et al., 2017). Given the contribution of Tc-foxQ2+ cells to the primary commissure and other midline spanning structures, we asked whether it was required for splitting of the primary brain commissure. In order to test this, we knocked down Tc-foxQ2 function by RNAi and stained the knock-down embryos with acetylated tubulin (acTub). We found that the primary brain commissure formed but was slightly irregular at NS13 (compare white arrowheads in Figure 7A and B). This was in line with our finding that Tc-foxQ2 positive neurons do not pioneer the commissure but project into it shortly after its formation. Some anterior aberrations stemmed from the previously described loss of the labrum (white arrows in Figure 7A,B) (Kitzmann et al., 2017). In wildtype NS15 embryos, the brain primordium had increased in size by additional fascicles, the primary commissure had split and first chiasmata had formed (white arrowhead in Figure 7C). Strikingly, this process was not observed in Tc-foxQ2 RNAi animals with strong phenotype. Here, the primary commissure remained compact without signs of splitting (white arrowhead in Figure 7D). As a consequence, the brain neuropil remained extremely narrow (compare the space between the cell bodies in Figure 7C’ and D’, open arrowheads). Lateral to the central body, the basic architecture of fascicles emanating from the commissure was mostly intact (e.g. the formation of three main branches emanating from the central brain (arrows in Figure 7D)) although it appeared to be built by fewer neurons. Indeed, the number of neurons marked in two imaging lines was reduced (see below). As a consequence, the lateral neuropil area was reduced as well (open arrowheads in Figure 7D’, E’). In weak phenotypes, commissure splitting had occurred to some degree but the arrangement of fascicles was clearly abnormal (white arrowhead in Figure 7E). In summary, Tc-foxQ2 function is essential for splitting of the brain commissure and for the expansion of the protocerebral neuropil, which together constitute the central brain anlagen. As a consequence, CB development was abolished. Hence, crucial steps of protocerebrum specific features depend on Tc-foxQ2 function.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig7-v2.jpg)
 
-**Figure 7.:** Tc-foxQ2 function leads to arrest of development of brain midline structures in the embryo.Axonal projections are marked by acTub (red) and cell bodies are visualized by DAPI (blue). (A, A’) In WT, the primary brain commissure forms at NS13 (white arrowhead in A). (B, B’) In RNAi embryos, the primary brain commissure is slightly irregular (white arrowhead in B). The anterior epidermal aberrations reflect the loss of the labrum (compare white arrows in A and B; Kitzmann et al., 2017). (C–C’’) In WT NS15 embryo, the central brain primordium increases in size and contains more fascicles, some of which form chiasmata at the midline (white arrowhead in C). (D–D’’) In strong phenotypes, the primary commissure remains detectable along with three main branches (arrows in D). However, the structures do not expand and commissure splitting does not occur. At the same time, the brain neuropil volume is strongly reduced (compare black space between the cell bodies in C’ and D’, open arrowheads (arrows in D). (E–E’’). Weak phenotypes show some degree of splitting of the brain commissure but axonal projections are disarranged (white arrowhead in E).
+**Figure 7.:** Axonal projections are marked by acTub (red) and cell bodies are visualized by DAPI (blue). (A, A’) In WT, the primary brain commissure forms at NS13 (white arrowhead in A). (B, B’) In RNAi embryos, the primary brain commissure is slightly irregular (white arrowhead in B). The anterior epidermal aberrations reflect the loss of the labrum (compare white arrows in A and B; Kitzmann et al., 2017). (C–C’’) In WT NS15 embryo, the central brain primordium increases in size and contains more fascicles, some of which form chiasmata at the midline (white arrowhead in C). (D–D’’) In strong phenotypes, the primary commissure remains detectable along with three main branches (arrows in D). However, the structures do not expand and commissure splitting does not occur. At the same time, the brain neuropil volume is strongly reduced (compare black space between the cell bodies in C’ and D’, open arrowheads (arrows in D). (E–E’’). Weak phenotypes show some degree of splitting of the brain commissure but axonal projections are disarranged (white arrowhead in E).
 
-## Analyses in novel brain imaging lines reveal a role for Tc-foxQ2 for different lineages
+### Analyses in novel brain imaging lines reveal a role for Tc-foxQ2 for different lineages
 
 We wondered, in how far different neural lineages would be affected by Tc-foxQ2 knock-down. To that end, we established two novel transgenic imaging lines that mark subsets of neurons. E035004 is an enhancer trap line generated in the GEKU screen (Trauner et al., 2009). We found that the insertion was intragenic in the Tribolium Teneurin-a locus (Ten-a; TC032747; Drosophila synonym: Tenascin accessory; CG42338). The EGFP signal overlapped with the cross-reacting Drosophila anti-Ten-a antibody staining (Fascetti and Baumgartner, 2002). In Tribolium embryos, the first midline crossing fascicle was marked while later several fascicles interconnecting the two brain lobes were Ten-a positive (Figure 8—figure supplement 1), which is similar to Drosophila (Fascetti and Baumgartner, 2002). We call this line Ten-a-green. In wildtype NS15 embryos three groups of cells were marked. The anterior group contained approximately 39 cells (n = 4; white circle in Figure 8A; Supplementary file 1-table 7), the posterior-lateral group around 32 cells (n = 4; open arrowhead in Figure 8A; Supplementary file 1-table 7) and the posterior-median group comprised about 27 cells (n = 4; dashed circle in Figure 8A; Supplementary file 1-table 7). Importantly for this work, the line marked the central brain primordium. Two Ten-a positive fascicles projected across the midline (white arrow in Figure 8A marks one of them). These fascicles represented a subset of the acTub positive commissures (compare to Figure 8A’). Among other patterns circumesophageal projections were found.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig8-v2.jpg)
+
+**Figure 8.:** (A–A’’) In WT Ten-a-green embryos, three groups of cells are marked by EGFP: An anterior group (white circle), a posterior-lateral group (open arrowhead) and a posterior-median group (dashed circle). The central brain primordium is marked with Ten-a positive fascicles projecting across the midline (white arrow in A). (B–B’’) In Tc-foxQ2 RNAi, the Ten-a positive projections and the number of the marked cells is reduced (n = 4). (C–C’) In WT Tc-rx-5’-up line, the anterior median group of cells marked by DsRed project into the central brain (white circle and white arrowhead). (D–D’) In Tc-foxQ2 RNAi, the cell number in the anterior median group is strongly reduced (n = 6; white circle) and the marked brain commissures are absent (white arrowhead). The peripheral cells are reduced in number as well (n = 6; compare open arrowheads in C,D).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Shown are antibody stainings (left column), signal from transgenic reporter lines (medial column) and overlay (right column). Upper panels: Co-localization of reporter protein with endogenous Ten-a protein in the Ten-a-line. Middle panel: anti Ten-a staining in Tribolium embryo marks the first midline crossing fascicle (left panel). Later, it marks several midline crossing fascicles of the central brain (right panel). Lower panels: Partial co-localization of reporter protein with endogenous protein in the rx-5’-up line.
 
 In Tc-foxQ2 RNAi embryos at NS15, the Ten-a positive commissure was highly reduced while the circumesophageal projection was still found. The cell clusters were still discernable but the number of the cells was reduced by half (Figure 8B; Supplementary file 1-table 7).
 
 Next we generated an enhancer construct by fusing the upstream regulatory region of Tc-rx to dsRedexpress (rx-5’-up line; see Supplementary Materials and methods for details). This line marked an anterior median group of cells, which projected into the central brain (white circle and arrowhead in Figure 8C). In addition, a number of peripheral cells without projections into the central brain was marked (open arrowhead in Figure 8C). A subset of the marked cells was Tc-Rx positive but a significant number was not (see Supplementary Materials and methods and Figure 8—figure supplement 1). Knock-down of Tc-foxQ2 led to a strong decrease of median cell number at NS15 to about 25% of wildtype (n = 6; Supplementary file 1-table 8) and to the complete loss of the marked brain commissures (white circle and arrowhead in Figure 8D). The number of peripheral marked cells was reduced as well. In summary, Tc-foxQ2 knock-down in our imaging lines confirmed the phenotype found in our acTub staining and showed that different neural lineages were affected.
 
-## Tc-foxQ2 function is required for survival of neural cells
+### Tc-foxQ2 function is required for survival of neural cells
 
 Finally, we asked in how far EGFP expression of the foxQ2-5’-line would be affected by knocking down Tc-foxQ2. Indeed, at NS13 we found strongly reduced number of cells (less than half; n = 4; Supplementary file 1-table 9) in the anterior-median-foxQ2-cluster (white arrowheads in Figure 9A,B) while the anterior-lateral-foxQ2-lineage was either absent or fused to the other cluster. The cells close to the stomodeum were lost completely (not shown). The stomodeal expression, in contrast, appeared unaffected (stars in Figure 9A,B). At NS15 the number of neural cells remained less than half of wildtype (n = 4; Supplementary file 1-table 9) but the remaining cells always formed connections across the midline. However, these fascicles were thinner and followed an abnormal rounded path instead of the straight line found in wildtype (compare white arrows in Figure 9E and F). These data indicated that Tc-foxQ2 was required for either survival or specification of neural cells and that upon RNAi these cells were lost or changed their identity. Indeed, increased cell death had been observed after Tc-foxQ2 RNAi at NS13 (Kitzmann et al., 2017). The reduced number of Tc-foxQ2+ cells was likely the reason for the thinner commissure while its altered path might be a secondary effect due to general misspecification in the central brain after Tc-foxQ2 RNAi (see below). The reduction of cell number could be due to apoptosis after misspecification of cells due to lack of Tc-foxQ2. Alternatively, Tc-foxQ2 could be involved in an autoregulatory loop, which would lead to EGFP reduction in an RNAi background.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/49065/elife-49065-fig9-v2.jpg)
 
-**Figure 9.:** foxQ2-5’-line indicates self-regulation.(A–B’) At NS13, Tc-foxQ2 RNAi shows the strongly reduced number of marked cells in the anterior-median-foxQ2-cluster (n = 4; white arrowheads) while the signal in the stomodeum appears to be unaffected (stars). (C–F’) In Tc-foxQ2 RNAi, the number of marked cells decreased significantly (n = 4; white arrowhead). The fascicles are reduced and follow an abnormal rounded path instead of the straight line in WT (compare white arrows in E and F). Legends figure supplements.
+**Figure 9.:** (A–B’) At NS13, Tc-foxQ2 RNAi shows the strongly reduced number of marked cells in the anterior-median-foxQ2-cluster (n = 4; white arrowheads) while the signal in the stomodeum appears to be unaffected (stars). (C–F’) In Tc-foxQ2 RNAi, the number of marked cells decreased significantly (n = 4; white arrowhead). The fascicles are reduced and follow an abnormal rounded path instead of the straight line in WT (compare white arrows in E and F). Legends figure supplements.
 
 ## Discussion
 
-## Does Tc-foxQ2 mark neuroblasts of both type I and II?
+### Does Tc-foxQ2 mark neuroblasts of both type I and II?
 
 Our data is in line with the hypothesis that type I and type II neuroblasts are present in Tribolium and that both types of lineages express Tc-foxQ2. Type II neuroblasts were discovered and described recently in Drosophila (Boone and Doe, 2008; Bowman et al., 2008; Izergina et al., 2009) and subsequently, lineages with similar properties were described in the grasshopper Schistocerca gregaria, which represents the basal hemimetabolan clade of insects (Boyan et al., 2010). Therefore, we assume that both types of neuroblasts exist in Tribolium as well although this remains to be shown. Type I NBs divide asymmetrically to form ganglion mother cells, which divide once more to form two postmitotic neural cells (Technau et al., 2006). All neuroblasts of the ventral nerve cord and most neuroblasts of the brain belong to the type I. Type II neuroblasts, in contrast, give rise to intermediate neural progenitors (INPs), which themselves divide in a stem cell-like fashion to form ganglion mother cells (GMCs) (Boone and Doe, 2008; Bowman et al., 2008; Boyan et al., 2010). This division mode leads to an increased number of cells stemming from one neuroblast. Interestingly, most of the columnar neurons of the central complex derive from type II neural lineages (Boyan et al., 2010; Pereanu et al., 2011; Walsh and Doe, 2017). Unfortunately, molecular markers for reliably distinguishing type I from type II neuroblasts remain to be established in insects outside Drosophila. Nevertheless, we suggest that Tc-foxQ2 marks both types of neuroblasts. The anterior-lateral-foxQ2-lineage might be a type I lineage. First, it is located in a lateral region in the neuroectoderm while type II neuroblasts were found in the anterior median brain in other insects (Boyan and Williams, 2011; Walsh and Doe, 2017). Second, within this cluster we see only one Tc-ase marked cell with neuroblast typical morphology throughout several stages of development and the cluster eventually comprises a moderate number of neurons (15-20), which is in the range typical of type I NBs. Finally, this group of cells is surrounded by one glial sheet, which is indicative for neural lineages (Younossi-Hartenstein et al., 1996). Using both the location and Tc-ase staining pattern as criteria, we assume that this type I lineage might derive from the P-fox-l neuroblast (number 3 in Figure 2I’).
 
@@ -123,15 +179,15 @@ The anterior-median-foxQ2-cluster, by contrast, is likely built by one or more t
 
 The ventrally located group of Tc-foxQ2 positive NPCs probably contributed to a cell cluster close to the stomodeum, which projected into the circumesophageal commissure but not to the central brain (Figure 5—figure supplement 2). Due to our focus on central brain development, we did not study this group in detail.
 
-## How does Tc-foxQ2 function in CX development?
+### How does Tc-foxQ2 function in CX development?
 
 Tc-foxQ2 positive cells are contributing to the CX and Tc-foxQ2 is essential for its development. The contribution could affect several stages of CX development. First, the effect could be a consequence of the failure of commissural splitting. In normal development, the primary brain commissure splits into several fascicles, which is the prerequisite for subsequent central body formation. Some neurites undergo fascicle switching, that is they leave their commissure (de-fasciculation) and bridge to another commissure, which they join (re-fasciculation). As consequence, these neurites form X-shaped crossings prefiguring the columns of the central body (Boyan and Williams, 2011; Boyan et al., 2008; Boyan et al., 2017). In the absence of commissural splitting, this process and central body formation cannot take place. A putative second contribution of Tc-foxQ2 could be to specify the points of fascicle switching. In the late embryonic brain, Tc-foxQ2 marks commissures that are located in the region where this process will occur. In this model, Tc-foxQ2 positive neurites could either be the ones that de-fasciculate or they could be required to provide the signal for other neurites to do so. Indeed, we find Tc-foxQ2 positive fascicles closely associated with the larval central body. Due to the arrest of development after the first phenotype, the subsequent processes cannot be observed and remain to be tested. Scrutinizing the development of individual Tc-foxQ2 positive cells would be helpful. Actually, we have designed our enhancer trap line to expresses Cre along with EGFP. Therefore, once a transgenic Tribolium line with a functional brainbow construct is developed, single neurons within the Tc-foxQ2 positive clusters can be traced (Livet et al., 2007).
 
-## Making the protocerebrum different from segmental ganglia
+### Making the protocerebrum different from segmental ganglia
 
 Our results show that Tc-foxQ2 is one of the regulatory genes required for the development of structures that distinguish the protocerebrum from segmental ganglia. Specifically, it is involved in the unique development of the brain commissures and the midline spanning neuropils of the central complex. We found several protocerebrum-specific functions. First, Tc-foxQ2 is expressed in neural progenitors of the protocerebrum but not in the more posterior ganglia. Hence, Tc-foxQ2 has indeed the potential of contributing to developmental programs that are specific to this brain part. Therefore, this gene adds to the list of co-expressed genes assumed to specify NB identity in the Drosophila brain (Urbach and Technau, 2003a). A second protocerebrum-specific role is the contribution of Tc-foxQ2 positive neurons to the CX, which is a strictly protocerebral neuropil. Third, Tc-foxQ2 positive neurons mark subsets of axons within the early brain commissure ending up in different commissural fascicles after the split of the primary commissure.
 
-## Evolutionary relationship of apical organ and the central complex
+### Evolutionary relationship of apical organ and the central complex
 
 foxQ2 together with six3 and other genes are part of the anterior gene regulatory network (aGRN) in animals and they contribute to the development of anterior-most neural structures. Specifically, they are involved in patterning the apical organ/apical tuft including serotonergic and neurosecretory cells in marine larvae, cnidarians, annelids and sea urchins (Leclère et al., 2016; Marlow et al., 2014; Yaguchi et al., 2008). However, apical organs are usually lost during metamorphosis and clear morphological homologs were not found in neither insects nor vertebrates (Nielsen, 2005). However, correlation of the aGRN with neuroendocrine cells was found in animals of all phyla including arthropods (Hunnekuhl and Akam, 2014; Oliver et al., 1995; Posnien et al., 2011b; Steinmetz et al., 2010). It has been proposed, that this aGRN derives from an ancestral apical brain (with neuroendocrine and non-visual light detection functions), which fused with a more posterior blastoporal brain (with sensory-contractile function) to form the ‘chimeric’ anterior brain of bilaterians (Tosches and Arendt, 2013). Unfortunately, the lack of a clear apical organ homolog in insects has hampered the comparison of the respective brain parts based on morphology. Hence, molecular similarity has to be interrogated instead for such analyses. Indeed, it was found before that six3 and rx are required for the formation of central brain structures with respect to the expected neuroendocrine cells but also for other protocerebral structures like mushroom bodies and central complex (Davis et al., 2003; de Velasco et al., 2007; Eggert et al., 1998; Kraft et al., 2016; Kunz et al., 2012; Posnien et al., 2011b; Steinmetz et al., 2010). The role of Tc-six3 and Tc-foxQ2 in Tribolium brain development had been noted but a detailed analysis of the respective brain phenotypes had not been performed and importantly, the projection patterns of these cells had not been studied in any insect (Kitzmann et al., 2017; Posnien et al., 2011b).
 
@@ -141,44 +197,180 @@ There are two evolutionary scenarios for the involvement of an apical neural cel
 
 Alternatively, this result could indicate that foxQ2 positive cells evolved novel functions after the apical organ became reduced in the lineage leading to arthropods. In this model, the reduction of the apical organ made the foxQ2 positive cells free to evolve and they integrated into the evolving CX. Actually, a canonical CX is found only in crustaceans while homology of brain midline structures of other arthropods with the CX remain equivocal (Hanström, 1928; Holmgren, 1916; Loesel et al., 2002; Loesel et al., 2011; Strausfeld, 2012). A contribution of the apical organ to brain development has been suggested in the annelid Platynereis dumerilii, where the apical organ may provide an initial scaffold for the developing anterior brain (Marlow et al., 2014). In the millipede Strigamia maritima, foxQ2 positive cells located at the brain midline build an early axonal scaffold forming a midline brain structure from which longitudinal tracts project bilaterally into the trunk (Hunnekuhl and Akam, 2014). Based on these findings, we suggest a model, where in a bilaterian arthropod ancestor the apical organ provided a scaffold for subsequent neural development of the anterior brain. In basal arthropods like myriapods, the initially simple midline structure with contribution from the apical organ expanded to form a prominent midline structure, which was still of low complexity. The respective neurons provided a more prominent scaffold for subsequent neural development. In crustaceans, this simple architecture was further developed to build a more elaborate CX, which in stomatopods and insects reached its most complex realization (Thoen et al., 2017). A comparison of the molecular signatures of foxQ2 positive cells in animals might be helpful to trace back their evolutionary trajectories.
 
-## Outlook
+### Outlook
 
 foxQ2 is one of several genes with an almost exclusive anterior expression in animals. We show its crucial contribution to protocerebrum-specific development. Based on this, it seems imperative that other highly conserved and protocerebrum-specific genes be considered when investigating brain development (e.g. rx, six3, chx, fez1, etc.; Kitzmann et al., 2017; Posnien et al., 2011b). An approach focusing on genes known from the ventral nerve cord might fall short of important insights. Given the rather exclusive contribution of foxQ2 positive neurons, it will be important to determine their individual projection patterns in both Drosophila and Tribolium in order to map them with identified neurons from existing resources and to determine the degree of conservation. Importantly, our concept of genetic neural lineages turned out to work quite well and opens the way for comparative studies (Koniszewski et al., 2016). As a basis it will be necessary to systematically compare cell types and markers between Drosophila and other insects in order to ascertain that orthologous genes mark homologous cell types. Finally, the evolution of foxQ2 positive neurons provide an interesting study case for neural evolution: From a role in patterning a rather simple structure, the apical organ, they expanded their role in arthropods contributing to one of the most intricate insect brain structures. On the other hand, foxQ2 was lost in amphibians and mammalians, which is astonishing regarding the usually high degree of conservation of anterior regulators.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene(Tribolium castaneum)</td>
+      <td>foxQ2</td>
+      <td>iBeetle-Base http://ibeetle-base.uni-goettingen.de/</td>
+      <td>TC004761</td>
+      <td>Drosophila Ortholog: fd102, CG11152</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Tribolium castaneum)</td>
+      <td>San Bernardino</td>
+      <td></td>
+      <td>SB</td>
+      <td>NCBI:txid7070</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Tribolium castaneum)</td>
+      <td>vermillionwhite</td>
+      <td></td>
+      <td>vw</td>
+      <td>NCBI:txid7070 for transgenesis, mutant eye color (white) is rescued to black by 3XP3-vw</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Tribolium castaneum)</td>
+      <td>foxQ2-5’-line</td>
+      <td>this publication</td>
+      <td></td>
+      <td>marks Tc-foxQ2 positive cells with EGFP; maintained by Bucher-Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Tribolium castaneum)</td>
+      <td>Ten-a-green-line</td>
+      <td>this publication</td>
+      <td></td>
+      <td>marks Ten-a positive cells with EGFP; maintained by Bucher-Lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Tribolium castaneum)</td>
+      <td>rx-5’-up-line</td>
+      <td>this publication</td>
+      <td></td>
+      <td>marks a subset of Tc-rx positive cells with dsRedexpress; maintained by Bucher-Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>[3xP3:Tc’v-SV40-Cre-2A-EGFP:bhsp68-eb]</td>
+      <td>this publication Addgene plasmid #124068</td>
+      <td></td>
+      <td>repair template for NHEJ mediated enhancer traps in Tribolium castaneum EGFP and Cre under the control of the Tribolium core heat-shock promoter, which is not heat-shock responsive but takes up enhancer traps.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>bhsp68-Cas9</td>
+      <td>Gilles et al., 2015 Addgene plasmid #65959</td>
+      <td></td>
+      <td>Cas9 gene for co-injection</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_300798</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-acetylated Tubulin (mouse monogclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>RRID:AB_609894</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SYNORF1 (synonym: anti synapsin) (mouse monoclonal)</td>
+      <td>DHSB Hybridoma Bank (University of Iowa)</td>
+      <td>RRID:AB_2313867 3C11 (DSHB ID)</td>
+      <td>1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RFP (rabbit polyclonal)</td>
+      <td>Abcam, ab62341</td>
+      <td>RRID: AB_945213</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tenascin (Teneurin)-a (rabbit polyclonal)</td>
+      <td>Fascetti and Baumgartner, 2002</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibodies coupled with Alexa Fluor 488 or Alexa Fluor 555 (goat anti mouse or goat anti chicken, polyclonal)</td>
+      <td>Thermo Fisher Scientific Cat # A32723 Cat # A32727 Cat # A-11039 Cat # A-21437</td>
+      <td>RRID:AB_2633275 RRID:AB_2633276 RRID:AB_142924 RRID:AB_2535858</td>
+      <td>1:1000.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAscript T7 Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>production of dsRNA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tc-foxQ2RNAi_a-L</td>
+      <td>Kitzmann et al., 2017</td>
+      <td></td>
+      <td>Primer for dsRNA template production: GAATTGTAATACGACTCAC TATAGGCTTACTTCAGGACCCGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tc-foxQ2RNAi_a-R</td>
+      <td>Kitzmann et al., 2017</td>
+      <td></td>
+      <td>Primer for dsRNA template production: GAATTGTAATACGACTCACTATAGGTCGCTTGTAACAATGCTTGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Tribolium castaneum NCBI:txid7070 animals were reared under standard conditions at 32°C. The San Bernadino (SB) wild-type strain was used for fluorescent in situ hybridization, antibody staining and RNAi experiments. The Tc-vermillionwhite (Tc-vw) strain (Lorenzen et al., 2002) was used for transgenesis.
 
-## Generation of a tc‐foxq2 polyclonal antibody
+### Generation of a tc‐foxq2 polyclonal antibody
 
 The C‐terminus (amino acids 202–286) was amplified from cDNA by PCR using primer pairs with BsaI restriction site forward and reverse (For primer sequences see Supplementary file 1-table 10) and cloned into pET SUMO vector generating a fusion protein with a His‐SUMO tag using golden gate cloning (modified from Thermo Fischer). The protein was expressed in BL21‐DE3 Rosetta cells at 37°C. Cells were fractionated (50 mM TRIS‐HCl pH 7.8, 500 mM NaCl, 10 mM Imidazole) using Fluidizer (mechanical lysis by high pressure‐80 psi). The protein was purified via Ni2+ chelate affinity chromatography using a gradient with 200 mM imidazole in lysis buffer. Dialysis (50 mM Tris‐HCl pH 7.8, 500 mM NaCl) and SUMO protease digestion for cleavage of the His‐SUMO tag were performed simultaneously overnight. The His‐SUMO tag was removed from the Tc-FoxQ2 via Re‐Ni2+ chelate affinity chromatography. Gel-filtration chromatography (Superdex G-30 Healthcare) was performed to remove the remaining contaminations and finally the purified Tc-FoxQ2 was stored in phosphate‐buffered saline (PBS). All the steps for purification were done at 4°C. Antibodies were produced in guinea pigs by Eurogentec (Liège, Belgium). The final serum was used straight as the Tc-FoxQ2 antibody with the dilution of 1:1000. Before antibody staining, pre-absorption of anti-FoxQ2 was performed for eliminating non-specific binding.
 
-## Generation of imaging lines and stocks
+### Generation of imaging lines and stocks
 
-## foxQ2-5’-line
+#### foxQ2-5’-line
 
 The guide RNAs (gRNAs) were designed with the aid of the flyCRISPR Optimal Target Finder (http://tools.flycrispr.molbio.wisc.edu/targetFinder/; Gratz et al., 2014). The TriGenes gRNA oligo design tool was used for generating the sequences of the oligos to order. The annealed oligos were cloned into the gRNA expression vector p(TcU6b-BsaI) via the BsaI restriction sites. The detailed annealing and ligation are following the protocol described previously (Gilles et al., 2015). [3xP3:Tc’v-SV40-Cre-2A-EGFP:bhsp68-eb] was designed as a repair template for NHEJ-mediate knock-in by CRISPR/Cas9. For linearizing the plasmid, Dm-ebony target site (gRNA-eb) was cloned into this construct (Addgene plasmid # 124068). Each fragment of the construct was amplified by PCR from plasmids available in the laboratory’s plasmid library (Supplementary file 1-table 3) by using primers with overhangs that are complements of two adjacent fragments (Supplementary file 1-table 10). The 2A-peptide and the target sequences for cleavage were completely added by primers. Overlap extension PCR was performed to assemble all fragments together. In addition, an ApaI and a XbaI restriction sites were added in end primers for the following ligation. The entire construct was finally cloned into pJET1.2 vector. The helpler plasmid p(bhsp68-Cas9) expressing Cas9 was a gift from Michalis Averof (Addgene plasmid # 65959).
 
 Embryonic injection was performed in Tc-vermillionwhite (Tc-vw) according to standard procedure (Berghammer et al., 1999; Schinko et al., 2012). Two gRNAs (gRNA1 and gRNA2) targeting the upstream region of Tc-foxQ2 together with the repair plasmid, Cas9 expression plasmid and gRNA-eb were injected. The final concentration of Cas9 plasmid and the repair plasmid is 500 ng/μl each, and gRNA is 125 ng/μl each. The injected animals were separated into male and female during pupal stage. Each animal was crossed to three Tc-vw wild type beetles of the opposite sex. The G1 offspring were screened for black eyes. The transgenic beetle was outcrossed with Tc-vw wild type and kept as a new stock.
 
-## rx-5’-up line
+#### rx-5’-up line
 
 The regulatory region including the endogenous promoter sequence of the gene Tc-rx was amplified from genomic DNA by PCR using primer pairs with restriction sites BamHI and NheI (for primer sequences see Supplementary file 1-table 10) and cloned into the Dual Promoter pCRII vector by using the TA Cloning Kit (Invitrogen). The final construct was designed with the following sections from 5´ to 3´: (1) regulatory regions, (2) endogenous promoter, (3) reporter gene. The reporter gene DsRedExpress was amplified from the other construct by using according primers (Supplementary file 1-table 10). The construct was designed and created in the vector pslfa1180fa. Afterwards, the cassette [rx-5’up:DsRedEx-SV40] including the regulatory region, promoter, reporter gene, and SV40 was transferred into the piggyBac[3xP3:Tc’v-SV40]fa transformation vector by using the restriction enzymes AscI and FseI (New England BioLabs). Further steps and treatments for embryonic transgenesis were performed as described (Berghammer et al., 1999; Schinko et al., 2012).
 
-## RNAi
+### RNAi
 
 Both dsRNA fragment and parental injection was performed as in Kitzmann et al. (2017), where off target controls had been performed. The injected dsRNA concentrations were 1.5 µg/µl and 3.0 µg/µl. 250–300 pupae were injected and >50 offspring embryos were fixed and stained, respectively. In larval and adult experiments, we stained >5 brains. 4–6 brains were analyzed by LSM imaging. We only considered phenotypes that we saw in several independent specimen.
 
-## Immunhistochemistry and FISH
+### Immunhistochemistry and FISH
 
 Immunostaining of embryonic, larval and adult brains were performed according to the described protocol (Büscher et al., 2019; Hunnekuhl et al., 2019). FISH was performed using a horseradish peroxidase (POD) mediated tyramide signal amplification (TSA). Primary antibodies: chicken anti-GFP (1:1000, Abcam; RRID:AB_300798), mouse anti-acetylated Tubulin (1:50, Sigma; RRID:AB_609894), mouse anti-Synapsin (1:40, DHSB Hybridoma Bank; RRID:AB_2313867), rabbit anti-RFP (1:1000, Abcam; RRID: AB_945213), polyclonal rabbit anti-Tenascin (Teneurin)-a (Fascetti and Baumgartner, 2002). Secondary antibodies coupled with Alexa Fluor 488 or Alexa Fluor 555 (Thermo Fisher Scientific, RRID:AB_2633275 RRID:AB_2633276 RRID:AB_142924 RRID:AB_2535858) were used at 1:1000.
 
-## In vivo imaging
+### In vivo imaging
 
 Long-term live imaging was performed with digitally scanned laser light sheet-based fluorescence microscopy (DSLM, LSFM) as described previously for Tribolium (Strobl et al., 2015; Strobl et al., 2017). In brief, embryos were collected either (i) from a homozygous foxQ2-5’ culture or (ii) from two hybrid cultures that consisted either of homozygous foxQ2-5’ females mated with (mO-mC/mO-mC) homozygous AGOC #6 males or of (mO-mC/mO-mC) homozygous AGOC #6 females mated with homozygous foxQ2-5’ females. After one hour of collection at 25°C, embryos were incubated for 20 hr at 32°C. Sample preparation took approximately one hour at room temperature (23 ± 1°C), so that embryos were at the beginning of germband retraction. Embryos were recorded either (i) only along the dorsal axis or (ii) along the dorsal and lateral axis with an interval of 60 min. All shown embryos survived the imaging procedure, developed to healthy and fertile adults, and when mated either (i) with a homozygous foxQ2-5’ sibling or (ii) with a (mO-mC/mO-mC) homozygous AGOC #6 sibling, produced progeny that was also fertile. Each setup for imaging this process (both 40X and 10X) was done twice summing up to four independent documentations. Metadata of the three datasets is provided with the Zenodo dataset.
 
-## Image processing and documentation
+### Image processing and documentation
 
 Immunohistochemistry and FISH were imaged using a ZEISS laser scanning microscope LSM510. Stacks were processed using ImageJ (v.1.47). Images were level-adjusted for brightness and contrast and assembled in Photoshop CS (Adobe). The stacks are available in both original Zeiss LSM format and as avi on figshare (https://figshare.com/account/home#/projects/62939).

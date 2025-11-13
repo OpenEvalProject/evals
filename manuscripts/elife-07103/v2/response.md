@@ -60,9 +60,7 @@ The probability that our chimp data would be an outlier when mouse data are cons
 
 Nevertheless, to address this point we examined data from Guo et al., Cell 156(4): 649–662, which contains RNA-seq data from 4 independently derived mouse iPSCs through lentiviral reprogramming of mouse embryonic fibroblasts. We began our analysis using the table of reads mapped to known mouse genes (mm9) by the authors using TopHat 2.0.4 (the data is available in GEO as series GSE53074) and used the R package biomaRt to retrieve mouse and human homologous identifiers for all genes in the Guo et al. data. We intersected those genes with those in our own data set, and calculated TMM library sizes, CPM and loess normalised data across 10,580 retained genes from all three species jointly. We then computed RPKM in a species-specific manner. Because the Guo et al. data are provided at the gene level, we used the mean length of all known transcripts associated with a particular Ensembl ID as the gene length to calculate RPKM for the mouse data.
 
-As expected, both PCA and a neighbour-joining tree built from Manhattan distances (see Author response image 1) confirm that data from the chimpanzee iPSC (purple, C1-C7 on the figure in the right) lines are far more similar to data from human iPSCs (yellow-green, H1-H7 on the figure in the right) than from mouse iPSCs (blue, M1-M4 on the figure in the right).10.7554/eLife.07103.052Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07103.052
-
-DOI: http://dx.doi.org/10.7554/eLife.07103.052
+As expected, both PCA and a neighbour-joining tree built from Manhattan distances (see Author response image 1) confirm that data from the chimpanzee iPSC (purple, C1-C7 on the figure in the right) lines are far more similar to data from human iPSCs (yellow-green, H1-H7 on the figure in the right) than from mouse iPSCs (blue, M1-M4 on the figure in the right).10.7554/eLife.07103.052Author response image 1.
 
 We respectfully ask not to include these results in the paper. Because strong batch effects are impossible to account for in this analysis, we do not believe that it is providing meaningful insight.
 

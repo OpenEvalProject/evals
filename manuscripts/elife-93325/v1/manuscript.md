@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/059y0zb32 State Key Laboratory of Cognitive Neuroscience and Learning & IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China
-2. https://ror.org/022k4wk35 BABRI Centre, Beijing Normal University Beijing China
-3. https://ror.org/022k4wk35 Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China
-4. https://ror.org/00wk2mp56 School of Computer Science and Engineering, Beihang University Beijing China
+1. State Key Laboratory of Cognitive Neuroscience and Learning & IDG/McGovern Institute for Brain Research, Beijing Normal University Beijing China ([ROR:059y0zb32](https://ror.org/059y0zb32))
+2. BABRI Centre, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+3. Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University Beijing China ([ROR:022k4wk35](https://ror.org/022k4wk35))
+4. School of Computer Science and Engineering, Beihang University Beijing China ([ROR:00wk2mp56](https://ror.org/00wk2mp56))
 
 † Corresponding author
 
@@ -38,27 +38,189 @@ In this study, we analysed data obtained from the Lifespan Human Connectome Proj
 
 We selected 439 participants (5.7–21.9 years of age, 207 males) in the HCP-D dataset who met our inclusion criteria: available high-quality T1/T2, dMRI, and rs-fMRI data that met the quality control thresholds. For each participant, we generated multiple connectomes using 210 cortical regions from the Human Brainnetome Atlas (BNA) (Fan et al., 2016), which comprised MPC, WMC, and FC. Intracortical connectivity was represented by MPC. According to the WMC, 27 weighted communication models (Zamani Esfahlani et al., 2022) were calculated to characterize geometric, topological, or dynamic connectivity properties. After analysis, we found that communicability (Crofts and Higham, 2009), mean first-passage times of random walkers (Noh and Rieger, 2004), and flow graphs (timescales = 1) provided the optimal combination of extracortical connectivity properties because of significantly predicting FC (p < 0.05, 1000 spin test permutations, Table 1). We used these three models to represent the extracortical connectivity properties in subsequent discovery and reproducibility analyses (Figure 1—figure supplement 1).
 
-## Spatial pattern of cortical SC–FC coupling
+**Table 1.**
+ Predictive significance of the communication model.
 
-We used SCs (MPC and three WMC communication models) to predict FC per node based on a multilinear model (Vázquez-Rodríguez et al., 2019; Figure 1), and quantified the nodewise SC–FC coupling as an adjusted coefficient of determination r2 . We observed that the grouped SC–FC coupling varied across cortical regions (mean adjusted  r2 = 0.14 ± 0.08, adjusted r2 range = [0.03, 0.45], Figure 2A), and regions with significant coupling were located in the middle frontal gyrus, precentral gyrus, paracentral lobule, superior temporal gyrus, superior parietal lobule, postcentral gyrus, cingulate gyrus, and occipital lobe (p < 0.05, 1000 spin test permutations, Figure 2B). Similar heterogeneous patterns of coupling were observed when categorizing cortical regions into seven functional subnetworks (Yeo et al., 2011) (visual, somatomotor, dorsal attention, ventral attention, limbic, frontoparietal, and default mode networks). In the visual, somatomotor, default mode and ventral attention networks, SC significantly predict FC variance (p < 0.05, 1000 spin test permutations, Figure 2C). The visual and somatomotor networks had higher coupling values than the other networks (p < 0.05, Kruskal–Wallis ANOVA, Figure 2C). We further investigated the alignment between SC–FC coupling and three fundamental properties of brain organization: evolution expansion (Hill et al., 2010), myelin content (Glasser and Van Essen, 2011), and functional principal gradient (Margulies et al., 2016). Our findings reveal a negative association between regional distribution of SC–FC coupling and evolution expansion (Spearman’s r = −0.52, p < 0.001, 1000 spin test permutations, Figure 2D), as well as with the functional principal gradient (Spearman’s r = −0.46, p < 0.001, 1000 spin test permutations, Figure 2F). Conversely, nodes exhibiting higher SC–FC coupling tended to exhibit higher myelin content (Spearman’s r = 0.49, p < 0.001, 1000 spin test permutations, Figure 2E). In addition, the coupling pattern based on other models (using only MPC or only SCs to predict FC) and the comparison between the models are shown in Figure 2—figure supplement 1A–C.
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th></th>
+      <th>pspin</th>
+      <th></th>
+      <th>Predictor</th>
+      <th>pspin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Shortest path length</td>
+      <td>Gamma values = 0.12</td>
+      <td>0.93</td>
+      <td rowspan="6">Path transitivity</td>
+      <td>Weight-to-cost transformations = 0.12</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Gamma values = 0.25</td>
+      <td>0.69</td>
+      <td>Weight-to-cost transformations = 0.25</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Gamma values = 0.5</td>
+      <td>0.63</td>
+      <td>Weight-to-cost transformations = 0.5</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Gamma values = 1</td>
+      <td>0.89</td>
+      <td>Weight-to-cost transformations = 1</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Gamma values = 2</td>
+      <td>0.77</td>
+      <td>Weight-to-cost transformations = 2</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Gamma values = 4</td>
+      <td>0.45</td>
+      <td>Weight-to-cost transformations = 4</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Communicability</td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td colspan="2">Matching index</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Cosine similarity</td>
+      <td></td>
+      <td>0.25</td>
+      <td colspan="2">Greedy navigation</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Search information</td>
+      <td>Weight-to-cost transformations = 0.12</td>
+      <td>0.63</td>
+      <td colspan="2">Mean first-passage times of random walkers</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Weight-to-cost transformations = 0.25</td>
+      <td>0.59</td>
+      <td rowspan="4">Flow graphs</td>
+      <td>Timescales = 1</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Weight-to-cost transformations = 0.5</td>
+      <td>0.32</td>
+      <td>Timescales = 2.5</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Weight-to-cost transformations = 1</td>
+      <td>0.72</td>
+      <td>Timescales = 5</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Weight-to-cost transformations = 2</td>
+      <td>0.60</td>
+      <td>Timescales = 10</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Weight-to-cost transformations = 4</td>
+      <td>0.75</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: pspin: spin test. The communication models in bold provide the optimal combination._
+
+### Spatial pattern of cortical SC–FC coupling
+
+We used SCs (MPC and three WMC communication models) to predict FC per node based on a multilinear model (Vázquez-Rodríguez et al., 2019; Figure 1), and quantified the nodewise SC–FC coupling as an adjusted coefficient of determination $r^{2}$ . We observed that the grouped SC–FC coupling varied across cortical regions (mean adjusted  $r^{2}$ = 0.14 ± 0.08, adjusted $r^{2}$ range = [0.03, 0.45], Figure 2A), and regions with significant coupling were located in the middle frontal gyrus, precentral gyrus, paracentral lobule, superior temporal gyrus, superior parietal lobule, postcentral gyrus, cingulate gyrus, and occipital lobe (p < 0.05, 1000 spin test permutations, Figure 2B). Similar heterogeneous patterns of coupling were observed when categorizing cortical regions into seven functional subnetworks (Yeo et al., 2011) (visual, somatomotor, dorsal attention, ventral attention, limbic, frontoparietal, and default mode networks). In the visual, somatomotor, default mode and ventral attention networks, SC significantly predict FC variance (p < 0.05, 1000 spin test permutations, Figure 2C). The visual and somatomotor networks had higher coupling values than the other networks (p < 0.05, Kruskal–Wallis ANOVA, Figure 2C). We further investigated the alignment between SC–FC coupling and three fundamental properties of brain organization: evolution expansion (Hill et al., 2010), myelin content (Glasser and Van Essen, 2011), and functional principal gradient (Margulies et al., 2016). Our findings reveal a negative association between regional distribution of SC–FC coupling and evolution expansion (Spearman’s r = −0.52, p < 0.001, 1000 spin test permutations, Figure 2D), as well as with the functional principal gradient (Spearman’s r = −0.46, p < 0.001, 1000 spin test permutations, Figure 2F). Conversely, nodes exhibiting higher SC–FC coupling tended to exhibit higher myelin content (Spearman’s r = 0.49, p < 0.001, 1000 spin test permutations, Figure 2E). In addition, the coupling pattern based on other models (using only MPC or only SCs to predict FC) and the comparison between the models are shown in Figure 2—figure supplement 1A–C.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig1-v1.jpg)
+
+**Figure 1.:** The framework used to quantify nodal SC–FC coupling in the human brain. The microstructure profile covariance (MPC) was used to map similarity networks of intracortical microstructure (voxel intensity sampled in different cortical depth) for each cortical node. The white matter connectome (WMC) represents the extracortical excitatory projection structure, and communication models were then constructed to represent the complex process of communication. A multilinear model was constructed to examine the association of individual nodewise SC (MPC and communication models) profiles with FC profiles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig1-figsupp1-v1.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig2-v1.jpg)
+
+**Figure 2.:** (A) Spatial pattern of SC–FC coupling. (B) Spatial patterns with significant predictions (p < 0.05, spin test). (C) SC–FC coupling comparisons among functional networks. The error bars represent 95% confidence intervals (n = 210). (D–F) SC–FC coupling aligns with evolution expansion, myelin content, and functional principal gradient. (G) Preferential contributions of cortical regions across different structural connections. Note: ***p < 0.001; *p < 0.05; n.s.: p > 0.05. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Spatial pattern of mean structural connectome–functional connectome (SC–FC) coupling based on microstructure profile covariance (MPC) ~ FC (A), SCs ~ FC (B), and MPC + SCs ~ FC (C). Correlation of age with SC–FC coupling across cortex based on MPC ~ FC (D), SCs ~ FC (E), and MPC + SCs ~ FC (F).
 
 Additionally, we applied Haufe’s inversion transform (Haufe et al., 2014) to yield predictor weights of various SCs, where higher or lower values indicate stronger positive or negative correlations with FC. Our results demonstrated that different SCs had preferential contributions to FC variance across cortical regions to explain FC variance (p < 0.05, false discovery rate (FDR) corrected, Kruskal–Wallis ANOVA, Figure 2G). Specifically, in the MPC, regions with positive correlation were the orbital gyrus, precentral gyrus, right middle temporal gyrus, and temporoparietal junction, while regions with negative correlations were the left superior frontal gyrus, inferior parietal lobule, and bilateral cingulate gyrus. Regarding WMC communication models, the communicability and flow graphs tended to stronger higher positive correlations in the visual, limbic, and default mode networks, whereas the mean first-passage time had stronger negative correlations in the somatomotor, limbic, and frontoparietal networks.
 
-## Age-related changes in SC–FC coupling with development
+### Age-related changes in SC–FC coupling with development
 
-To track changes in SC–FC coupling during development, we used a general linear model to assess the effect of age on nodal SC–FC coupling, while controlling for sex, intracranial volume, and in-scanner head motion. Our results revealed that the whole-cortex average coupling increased during development (βage = 1.05E−03, F = 3.76, p = 1.93E−04, r = 0.20, p = 3.20E−05, Figure 3A). Regionally, the SC–FC coupling of most cortical regions increased with age (p < 0.05, FDR corrected, Figure 3B), particularly that in the frontal lobe, middle temporal gyrus, inferior temporal gyrus, parietal lobe, cingulate gyrus, and lateral occipital cortex. Conversely, cortical regions with significantly decreased SC–FC coupling (p < 0.05, FDR corrected, Figure 3B) were located in left orbital gyrus, left precentral gyrus, right superior and inferior temporal gyrus, left fusiform gyrus, left superior parietal lobule, left postcentral gyrus, insular gyrus, and cingulate gyrus. Age correlation coefficients distributed within functional subnetworks are shown in Figure 3C. Regarding mean SC–FC coupling within functional subnetworks, the somatomotor (βage = 2.39E−03, F = 4.73, p = 3.10E−06, r = 0.25, p = 1.67E−07, Figure 3E), dorsal attention (βage = 1.40E−03, F = 4.63, p = 4.86E−06, r = 0.24, p = 2.91E−07, Figure 3F), frontoparietal (βage = 2.11E−03, F = 6.46, p = 2.80E−10, r = 0.33, p = 1.64E−12, Figure 3I) and default mode (βage = 9.71E−04, F = 2.90, p = 3.94E−03, r = 0.15, p = 1.19E−03, Figure 3J) networks significantly increased with age and exhibited greater increase. No significant correlations were found between developmental changes in SC–FC coupling and the fundamental properties of cortical organization. Additionally, weights of different SCs varied with age, showing that MPC weight was positively correlated with age and that the weights of WMC communication models were stable (Figure 3—figure supplements 1–4). The age-related patterns of SC–FC coupling based other coupling models were shown in Figure 2—figure supplement 1D–F.
+To track changes in SC–FC coupling during development, we used a general linear model to assess the effect of age on nodal SC–FC coupling, while controlling for sex, intracranial volume, and in-scanner head motion. Our results revealed that the whole-cortex average coupling increased during development ($\beta_{age}$ = 1.05E−03, F = 3.76, p = 1.93E−04, r = 0.20, p = 3.20E−05, Figure 3A). Regionally, the SC–FC coupling of most cortical regions increased with age (p < 0.05, FDR corrected, Figure 3B), particularly that in the frontal lobe, middle temporal gyrus, inferior temporal gyrus, parietal lobe, cingulate gyrus, and lateral occipital cortex. Conversely, cortical regions with significantly decreased SC–FC coupling (p < 0.05, FDR corrected, Figure 3B) were located in left orbital gyrus, left precentral gyrus, right superior and inferior temporal gyrus, left fusiform gyrus, left superior parietal lobule, left postcentral gyrus, insular gyrus, and cingulate gyrus. Age correlation coefficients distributed within functional subnetworks are shown in Figure 3C. Regarding mean SC–FC coupling within functional subnetworks, the somatomotor ($\beta_{age}$ = 2.39E−03, F = 4.73, p = 3.10E−06, r = 0.25, p = 1.67E−07, Figure 3E), dorsal attention ($\beta_{age}$ = 1.40E−03, F = 4.63, p = 4.86E−06, r = 0.24, p = 2.91E−07, Figure 3F), frontoparietal ($\beta_{age}$ = 2.11E−03, F = 6.46, p = 2.80E−10, r = 0.33, p = 1.64E−12, Figure 3I) and default mode ($\beta_{age}$ = 9.71E−04, F = 2.90, p = 3.94E−03, r = 0.15, p = 1.19E−03, Figure 3J) networks significantly increased with age and exhibited greater increase. No significant correlations were found between developmental changes in SC–FC coupling and the fundamental properties of cortical organization. Additionally, weights of different SCs varied with age, showing that MPC weight was positively correlated with age and that the weights of WMC communication models were stable (Figure 3—figure supplements 1–4). The age-related patterns of SC–FC coupling based other coupling models were shown in Figure 2—figure supplement 1D–F.
 
-## SC–FC coupling predicts individual differences in cognitive functions
+![Figure 3.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig3-v1.jpg)
+
+**Figure 3.:** (A) Increases in whole-brain coupling with age. (B) Correlation of age with SC–FC coupling across all regions and significant regions (p < 0.05, FDR corrected). (C) Comparisons of age-related changes in SC–FC coupling among functional networks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict 1.5 × IQR from the first or third quartile. (D–J) Correlation of age with SC–FC coupling across the VIS, SM, DA, VA, LIM, FP, and DM. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Increases in MPC weight across the whole brain with age. (B) Correlation of age with MPC weight across significant regions (p < 0.05, FDR corrected). (C) Comparison of changes in MPC weight among functional subnetworks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict 1.5 × IQR from the first or third quartile. (D–J) Correlation of age with MPC weight across the VIS, SM, DA, VA, LIM, FP, and DM. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Increases in communicability weight across the whole brain with age. (B) Correlation of age with communicability weight across significant regions (p < 0.05, FDR corrected). (C) Comparison of changes in communicability weight among functional subnetworks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict 1.5 × IQR from the first or third quartile. (D–J) Correlation of age with communicability weight across the VIS, SM, DA, VA, LIM, FP, and DM. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Increases in flow graph weight across the whole brain with age. (B) Correlation of age with flow graph weight across significant regions (p < 0.05, FDR corrected). (C) Flow graphs of changes in weight among functional networks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict 1.5 × IQR from the first or third quartile. (D–J) Correlation of age with flow graph weight across the VIS, SM, DA, VA, LIM, FP, and DM. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Increases in the weight of the mean first-passage time across the whole brain with age. (B) Correlation of age with mean first-passage time weight across significant regions (p < 0.05, FDR corrected). (C) Comparison of changes in mean first-passage time weight among functional networks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict 1.5 × IQR from the first or third quartile. (D–J) Correlation of age with mean first-passage time weight across the VIS, SM, DA, VA, LIM, FP, and DM. VIS, visual network; SM, somatomotor network; DA, dorsal attention network; VA, ventral attention network; LIM, limbic network; FP, frontoparietal network; DM, default mode network.
+
+### SC–FC coupling predicts individual differences in cognitive functions
 
 As we found that SC–FC coupling can encode brain maturation, we next evaluated the implications of coupling for individual cognition using Elastic-Net algorithm (Feng et al., 2022). After controlling for sex, intracranial volume and in-scanner head motion, we found the SC–FC coupling significantly predicted individual differences in fluid, crystal, and general intelligence (Pearson’s r = 0.3–0.4, p < 0.001, FDR corrected, Figure 4A). Furthermore, even after controlling for age, SC–FC coupling remained a significant predictor of general intelligence better than at chance (Pearson’s r = 0.11 ± 0.04, p = 0.01, FDR corrected, Figure 4A). For fluid and crystal intelligence, the predictive performances of SC–FC coupling were not better than at chance (Figure 4A). The predictive performances for other cognitive subscores are shown in Figure 4—figure supplement 1. To identify the regions with the greatest contributions to individual differences in age-adjusted general intelligence, we utilized Haufe’s inversion transform (Haufe et al., 2014) to extract predictor weights across various regions. Our analysis revealed that SC–FC coupling within the prefrontal, temporal, and lateral occipital lobes was the most predictive of individual differences in general intelligence (Figure 4B). In addition, we found that the weights of frontoparietal and default mode networks significantly contributed to the prediction of the general intelligence (p < 0.01, 1000 spin test permutations, Figure 4C).
 
-## Transcriptomic and cellular architectures of SC–FC coupling development
+![Figure 4.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig4-v1.jpg)
+
+**Figure 4.:** (A) Predictive accuracy of fluid, crystallized, and general intelligence composite scores. (B) Regional distribution of predictive weight. (C) Predictive contribution of functional networks. Each point represents a brain region (n = 210). The boxes show the median and interquartile range (IQR; 25–75%), and the whiskers depict the 1.5 × IQR from the first or third quartile. Note: ***p < 0.001; **p < 0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The top panel shows the predictive accuracy of regional SC–FC coupling across cognitive measures not adjusted for age, and the bottom panel shows the predictive accuracy across age-adjusted cognitive measures. Note: ***p < 0.001; **p < 0.01; *p < 0.05.
+
+### Transcriptomic and cellular architectures of SC–FC coupling development
 
 We employed partial least square (PLS) analysis (Krishnan et al., 2011) to establish a link between the spatial pattern of SC–FC coupling development and gene transcriptomic profiles (Figure 5A) obtained from the AHBA using a recommended pipeline (Arnatkeviciute et al., 2019). The gene expression score of the first PLS component (PLS1) explained the most spatial variance, at 22.26%. After correcting for spatial autocorrelation (Vos de Wael et al., 2020), we found a positive correlation (Pearson’s r = 0.41, p = 0.006, 10,000 spin test permutations, Figure 5B) between the PLS1 score of genes and the spatial pattern of SC–FC coupling development. In addition, we identified potential transcriptomic architectures using a Gene Ontology (GO) enrichment analysis of biological processes and pathway (Zhou et al., 2019), analysing the significant positive and negative genes in PLS1. The positive weight genes (364 genes) were prominently enriched for ‘myelination’, ‘monoatomic cation transport’, ‘supramolecular fibre organization’, etc. (p < 0.05, FDR corrected, Figure 5C). The negative correlation genes (456 genes) were relatively weakly enriched in ‘cellular macromolecule biosynthetic process’ and other pathways (p < 0.05, FDR corrected, Figure 5C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig5-v1.jpg)
+
+**Figure 5.:** (A) The map of developmental changes (absolute value of correlation coefficients) in SC–FC coupling across 105 left brain regions (left panel), and the normalized gene transcriptional profiles containing 10,027 genes in 105 left brain regions (right panel). (B) The correlation between developmental changes in SC–FC coupling and the first partial least square component (PLS1) from the PLS regression analysis. (C) Enriched terms of significant genes. (D) Cell type-specific expression of significant genes. Note: pspin: spin test; pfdr: FDR corrected; ***p < 0.001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Genes with positive weights. (B) Genes with negative weights. Note: pperm: permutation test.
+
 To further investigate cell-specific expression patterns associated with SC–FC coupling development, the selected genes in the AHBA were agglomerated into seven canonical cell classes (Zhang et al., 2016; Lake et al., 2018; Habib et al., 2017; Darmanis et al., 2015; Li et al., 2018; Seidlitz et al., 2020): astrocytes, endothelial cells, excitatory neurons, inhibitory neurons, microglia, oligodendrocytes, and oligodendrocyte precursors (OPCs). Our findings showed that the genes with positive weights were significantly expressed in oligodendrocytes (75 genes, p < 0.001, permutation test, Figure 5D). The genes with negative weights were expressed in astrocytes (43 genes, p < 0.001, permutation test, Figure 5D). Additionally, genes enriched in positive pathways were intensively overexpressed in oligodendrocytes, while genes enriched in three negative pathways were expressed in astrocytes, inhibitory neurons and microglia (p < 0.05, permutation test, Figure 5—figure supplement 1).
 
-## Reproducibility analyses different parcellation templates
+### Reproducibility analyses different parcellation templates
 
 To evaluate the robustness of our findings to different parcellation templates, using the multimodal parcellation from the Human Connectome Project (HCPMMP) (Glasser et al., 2016), we repeated the analyses of the cortical patterns of SC–FC coupling, correlation of age with SC–FC coupling, and gene weights. We observed a similar distribution in SC–FC coupling in which visual and somatomotor networks had higher coupling values than other networks (Figure 6A). The SC–FC coupling of most cortical regions increased with age (Figure 6B), and the significant regions were similar to those in the main findings (Figure 6C, p < 0.05, FDR corrected). The gene weights of HCPMMP was consistent with that of BNA (r = 0.25, p < 0.001).
 
@@ -66,7 +228,7 @@ To evaluate the robustness of our findings to different parcellation templates, 
 
 **Figure 6.:** (A) Spatial pattern of structural connectome–functional connectome (SC–FC) coupling. (B) Correlation of age with SC–FC coupling. (C) Correlation of age with SC–FC coupling across significant regions (p < 0.05, FDR corrected).
 
-## Different tractography strategies
+### Different tractography strategies
 
 To evaluate the sensitivity of our results to tractography strategies, we reconstructed fibres using deterministic tractography with a ball-and-stick model and generated a fibre number-weighted network for each participant. This same pipeline was employed for subsequent SC–FC coupling, prediction, and gene analyses. These two tractography strategies yielded similar findings, as indicated by significant correlations in the mean SC–FC coupling (r = 0.85, p < 0.001, spin test, Figure 7A), the correlation of between age and SC–FC coupling (r = 0.79, p < 0.001, spin test, Figure 7B), predictive weights on the general intelligence (r = 0.85, p < 0.001, spin test, Figure 7C), and gene weights (r = 0.80, p < 0.001, Figure 7D).
 
@@ -74,7 +236,7 @@ To evaluate the sensitivity of our results to tractography strategies, we recons
 
 **Figure 7.:** (A) The consistency of mean structural connectome–functional connectome (SC–FC) coupling between deterministic and probabilistic tractography. (B) The consistency of the correlation between age and SC–FC coupling between deterministic and probabilistic tractography. (C) The consistent predictive weights for the general intelligence composite score between deterministic and probabilistic tractography. (D) The consistency of gene weights between deterministic and probabilistic tractography.
 
-## Split-half validation
+### Split-half validation
 
 To assess the reproducibility of our findings, we performed a split-half independent validation using the whole dataset (WD). Specifically, we randomly partitioned WD into two independent subsets (S1 and S2), and this process was repeated 1000 times to mitigate any potential bias due to data partitioning. We then quantified SC–FC coupling, correlation between age and SC–FC coupling, and gene weights in S1 and S2 using the same procedures. Remarkably, we observed high levels of agreement among the datasets (S1, S2, and the WD) as demonstrated in Figure 8.
 
@@ -98,111 +260,129 @@ Classic twin studies have reported that the heritability of coupling differs amo
 
 Several methodological issues must be addressed. First, we implemented a conservative quality control procedure to address head motion, which unavoidably resulted in the loss of some valuable data. Given the confounding influence of head motion in fMRI studies, especially those involving developing populations, we applied censoring of high-motion frames and included motion as a covariate in the generalized linear model (GLM) analysis and cognitive prediction to minimize its effects (Zamani Esfahlani et al., 2022; Chen et al., 2022; Ciric et al., 2017; Li et al., 2022). Second, although we observed SC–FC coupling across development by integrating intra- and extracortical SC to predict FC, it is worth noting that combining deep learning models (Sarwar et al., 2021), biophysical models (Breakspear, 2017; Sanz-Leon et al., 2015), or dynamic coupling (Demirtaş et al., 2019; Liu et al., 2022) perspectives may provide complementary insights. Third, the appropriateness of structurally defined regions for the functional analysis is also a topic of important debate. Fourth, we focused solely on cortico-cortical pathways, excluding subcortical nuclei from analysis. This decision stemmed from the difficulty of reconstructing the surface of subcortical regions (Glasser et al., 2013) and characterizing their connections using MPC technique, as well as the challenge of accurately resolving the connections of small structures within subcortical regions using whole-brain diffusion imaging and tractography techniques (Thomas et al., 2014; Reveley et al., 2015). In addition, the reconstruction of short connections between hemispheres is a notable challenge. Fifth, it is important to acknowledge that changes in gene expression levels during development may introduce bias in the results. Finally, validation of sensitivity across independent datasets is a crucial step in ensuring the reliability of our results. To address this, we employed an alternative split-half validation strategy and the results supported the reliability of the current findings. However, future verification of current findings on independent datasets are still needed.
 
-## Conclusions
+### Conclusions
 
 Overall, this study sheds light on the development of SC–FC coupling in the brain and its relationship to cognitive function and gene expression patterns. The results improve our understanding of the fundamental principles of brain development and provide a basis for future research in this area. Further investigations are needed to fully explore the clinical implications of SC–FC coupling for a range of developmental disorders.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We selected 439 participants (207 males, mean age = 14.8 ± 4.2 years, age range = [5.7, 21.9]) from the HCP-D Release 2.0 data (https://www.humanconnectome.org/study/hcp-lifespan-development) after conducting rigorous checks for data completeness and quality control. The HCP-D dataset comprised 652 healthy participants who underwent multimodal MRI scans and cognitive assessments, and the detailed inclusion and exclusion criteria for this cohort have been described in Somerville et al., 2018. All participants or their parents (for participants under the age of 18 years) provided written informed consent and assent. The study was approved by the Institutional Review Board of Washington University in St. Louis.
 
-## Imaging acquisition
+### Imaging acquisition
 
 The MRI data were obtained with a Siemens 3T Prisma with a 32-channel phased array head coil, and detailed imaging parameters are available in Harms et al., 2018. High-resolution T1w images were acquired using a 3D multiecho MPRAGE sequence (0.8 mm isotropic voxels, repetition time (TR)/inversion time (TI) = 2500/1000 ms, echo time (TE) = 1.8/3.6/5.4/7.2 ms, flip angle = 8°, up to 30 reacquired TRs). The structural T2w images were collected with a variable-flip-angle turbo-spin-echo 3D SPACE sequence (0.8 mm isotropic voxels, TR/TE = 3200/564 ms, up to 25 reacquired TRs). The dMRI scans included four consecutive runs with a 2D 4×multiband spin‒echo echo-planar imaging (EPI) sequence (1.5 mm isotropic voxels, 185 diffusion directions with b = 1500/3000 s/mm2 and 28 b = 0 s/mm2 volumes, TR = 3.23 s, flip angle = 78°). The rs-fMR images were acquired using a 2D 8×multiband gradient-recalled echo EPI sequence (2.0 mm isotropic voxels, TR/TE = 800/37 ms, flip angle = 52°). Each rs-fMRI scan duration was 26 min (four runs of 6.5 min) for participants over 8 years old and 21 min (six runs of 3.5 min) for participants who were 5–7 years old.
 
-## Imaging preprocessing
+### Imaging preprocessing
 
 All structural, diffusion, and functional images underwent minimal preprocessing (Glasser et al., 2013). We specifically processed dMRI data referring to the publicly available code from https://github.com/Washington-University/HCPpipelines, Brown et al., 2024 since the HCP-D has not released preprocessed dMRI results. Briefly, structural T1w and T2w images went through gradient distortion correction, alignment, bias field correction, registration to Montreal Neurological Institute (MNI) space, WM and pial surface reconstruction, segment structures, and surface registration and downsampling to 32 k_fs_LR mesh. A T1w/T2w ratio image, which indicates intracortical myelin, was produced for each participant (Glasser and Van Essen, 2011). The BNA (Fan et al., 2016) was projected on native space according to the official scripts (http://www.brainnetome.org/resource/) and the native BNA was checked by visual inspection. Regarding fMRI data, the preprocessing pipeline included spatial distortion correction, motion correction, EPI distortion correction, registration to MNI space, intensity normalization, mapping volume time series to 32 k_fs_LR mesh, and smoothing using a 2-mm average surface vertex. Following our previous methodological evaluation study (Feng et al., 2022), the dMRI procedures consisted of intensity normalization of the mean b0 image, correction of EPI distortion and eddy current, motion correction, gradient nonlinearity correction, and linear registration to T1w space.
 
-## Network computation MPC
+### Network computation MPC
 
 The MPC can capture cytoarchitectural similarity between cortical areas (Paquola et al., 2019b). We first reconstructed 14 cortical surfaces from the WM to the pial surface using a robust equivolumetric model (Paquola et al., 2019b; Waehnert et al., 2014). Then, the T1w/T2w ratio image was used to sample intracortical myelin intensities at these surfaces. We averaged the intensity profiles of vertices over 210 cortical regions according to the BNA (Fan et al., 2016). Finally, we computed pairwise partial correlations between regional intensity profiles, while controlling for the average intensity profile. After removing negative correlations, we used Fisher’s r-to-z-transformation to generate an individual MPC.
 
-## White matter connectome
+#### White matter connectome
 
 Following our previous methodological evaluation study (Feng et al., 2022), the ball-and-stick model estimated from the bedpostx command-line in the FDT toolbox of FSL (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FDT) was used to estimate fibre orientations (three fibres modelled per voxel) (Behrens et al., 2003; Jbabdi et al., 2012; Behrens et al., 2007; Hernández et al., 2013). The BNA atlas was applied to individual volume space by inverse transformation derived from preprocessed steps. Next, probabilistic tractography (probtrackx) (Behrens et al., 2007; Hernandez-Fernandez et al., 2019) was implemented in the FDT toolbox to estimate the probability of connectivity between two regions by sampling 5000 fibres for each voxel within each region, correcting for distance, dividing by the total fibres number in source region, and calculating the average bidirectional probability (Feng et al., 2022). Notably, the connections in subcortical areas were removed. A consistency-based thresholding approach (weight of the coefficient of variation at the 75th percentile) was used to remove spurious connections, and retain consistently reconstructed connections across subjects (Baum et al., 2020; Roberts et al., 2017).
 
-## Functional network
+#### Functional network
 
 To further clean the functional signal, we performed frame censoring, regressed out nuisance variables (including WM, cerebrospinal fluid, global signal, and 12 motion parameters), and executed temporal bandpass filtering (0.01–0.1 Hz). Specifically, we identified censored frames with motion greater than 0.15 mm (Zamani Esfahlani et al., 2022) based on the Movement_RelativeRMS.txt file. We flagged one frame before and two frames after each censored frame, along with any uncensored segments of fewer than five contiguous frames, as censored frames as well (Li et al., 2022). We discarded fMRI runs with more than half of the frames flagged as censored frames, and excluded participants with fewer than 300 frames (less than 4 min). The nuisance variables were removed from time series based on general linear model. We averaged the time series of vertices into 210 cortical regions according to the BNA (Fan et al., 2016). We then computed pairwise Pearson’s correlations between regional time series, and applied Fisher’s r-to-z-transformation to the resulting correlations to generate individual FC.
 
-## Communication model
+### Communication model
 
 Twenty-seven communication models (Zamani Esfahlani et al., 2022) were subsequently derived from the WMC, defined as follows:
 
-## Shortest path length
+#### Shortest path length
 
-The connectivity of network can be associated with cost, in which higher connectivity strength has lower cost. Let there be a source node s, and a target node t, ps→t={psi,pij,…,pkt} is the sequence of paths between s and t. Here, a transformation strategy tpsi=pij-γ is used to obtain the tps→t={tpsi,tpij,…,tpkt}. The shortest path length sps→t is calculated as the minimized sum of tps→t . We set γ = 0.12, 0.25, 0.5, 1, 2, and 4.
+The connectivity of network can be associated with cost, in which higher connectivity strength has lower cost. Let there be a source node $s$, and a target node $t$, $p_{s→t}={p_{si},p_{ij},…,p_{kt}}$ is the sequence of paths between $s$ and $t$. Here, a transformation strategy $tp_{si}=p_{ij}^{-\gamma}$ is used to obtain the $tp_{s→t}={tp_{si},tp_{ij},…,tp_{kt}}$. The shortest path length $sp_{s→t}$ is calculated as the minimized sum of $tp_{s→t}$ . We set $\gamma$ = 0.12, 0.25, 0.5, 1, 2, and 4.
 
-## Communicability
+#### Communicability
 
-Communicability (Crofts and Higham, 2009) is a weighted sum of walks along all connections. The weighted connectivity matrix A is normalized as A`=D-1/2AD-1/2 , where D is the degree diagonal matrix. The communicability is exponentiated as G=eA` .
+Communicability (Crofts and Higham, 2009) is a weighted sum of walks along all connections. The weighted connectivity matrix $A$ is normalized as $A^{`}=D^{-1/2}AD^{-1/2}$ , where $D$ is the degree diagonal matrix. The communicability is exponentiated as $G=e^{A^{`}}$ .
 
-## Cosine similarity
+#### Cosine similarity
 
-Cosine similarity cst=ns∙ntns∙nt measures the angle between connection patterns of two nodes, ns=[ns1,ns2,…,nsm] and nt=[nt1,nt2,…,ntm], where ∙ is the norm of the vector, and m is the number of brain regions.
+Cosine similarity $c_{st}=\frac{n_{s}∙n_{t}}{n_{s}∙n_{t}}$ measures the angle between connection patterns of two nodes, $n_{s}=[n_{s1},n_{s2},…,n_{sm}]$ and $n_{t}=[n_{t1},n_{t2},…,n_{tm}]$, where $∙$ is the norm of the vector, and $m$ is the number of brain regions.
 
-## Search information
+#### Search information
 
-Search information (Rosvall et al., 2005) quantifies the amount of information (in bits) required to traverse shortest paths in a network. If the node sequence of shortest path between s and t is given by sps→t={s,i,j,…,k,l,t}, then the probability of taking that path is given by Bsps→t=Bsi×Bij×…×Bkl×Blt , where Bij=pij∑jpij . The information transmitted along this path, is then sisps→t=log2[Bsps→t].
+Search information (Rosvall et al., 2005) quantifies the amount of information (in bits) required to traverse shortest paths in a network. If the node sequence of shortest path between $s$ and $t$ is given by $sp_{s→t}={s,i,j,…,k,l,t}$, then the probability of taking that path is given by $Bsp_{s→t}=B_{si}\timesB_{ij}\times…\timesB_{kl}\timesB_{lt}$ , where $B_{ij}=\frac{p_{ij}}{\sum_{j}p_{ij}}$ . The information transmitted along this path, is then $sisp_{s→t}=log_{2}[Bsp_{s→t}]$.
 
-## Matching index
+#### Matching index
 
-Matching index (Hilgetag et al., 2000) is a measure of overlap between pairs of nodes based on their connectivity profiles excluding their mutual connections, here defined as miij=∑i≠s,t(psi+pit)θ(psi)θ(pit)∑i≠tpsi+∑i≠spit , where θpsi=1 if psi>0 and 0 otherwise.
+Matching index (Hilgetag et al., 2000) is a measure of overlap between pairs of nodes based on their connectivity profiles excluding their mutual connections, here defined as $mi_{ij}=\frac{\sum_{i\neqs,t}(p_{si}+p_{it})\theta(p_{si})\theta(p_{it})}{\sum_{i\neqt}p_{si}+\sum_{i\neqs}p_{it}}$ , where $\thetap_{si}=1$ if $p_{si}>0$ and 0 otherwise.
 
-## Path transitivity
+#### Path transitivity
 
-Path transitivity (Goñi et al., 2014) captures the transitivity of the path linking source nodes to a target node or, put differently, the density of local detours that are available along the path. This leads to the definition of ‘path transitivity’ as ptst=2∑i∈sps→t∑j∈sps→tmiijsps→t(sps→t-1) .
+Path transitivity (Goñi et al., 2014) captures the transitivity of the path linking source nodes to a target node or, put differently, the density of local detours that are available along the path. This leads to the definition of ‘path transitivity’ as $pt_{st}=\frac{2\sum_{i\insp_{s→t}}\sum_{j\insp_{s→t}}mi_{ij}}{sp_{s→t}(sp_{s→t}-1)}$ .
 
-## Greedy navigation
+#### Greedy navigation
 
-Greedy navigation (Seguin et al., 2018) is defined as the number of hops in the complete paths revealed by the navigation process. Note that for some node pairs, the navigation procedure leads to a dead end or a cycle—in which case the number of hops is listed as ∞.
+Greedy navigation (Seguin et al., 2018) is defined as the number of hops in the complete paths revealed by the navigation process. Note that for some node pairs, the navigation procedure leads to a dead end or a cycle—in which case the number of hops is listed as $∞$.
 
-## Mean first-passage times of random walkers
+#### Mean first-passage times of random walkers
 
-Mean first-passage times of random walkers (Noh and Rieger, 2004) refers to the expected number of steps in a random walk starting at node s to ending at node t.
+Mean first-passage times of random walkers (Noh and Rieger, 2004) refers to the expected number of steps in a random walk starting at node $s$ to ending at node $t$.
 
-## Flow graphs
+#### Flow graphs
 
-Flow graphs (Lambiotte et al., 2011) are a transformation of a network’s (possibly sparse) connectivity matrix A into a fully weighted matrix in which the dynamics of a Markov process are embedded into edge weights. For a continuous random walk with dynamics ri=-∑jLijrj on node i, the corresponding flow graph is given by g(t)ij=(e-tL)ijsj . In these expressions, the matrix L=D-A/s is the normalized Laplacian, where si=∑jAij is a node’s degree or weighted degree and D is the degree diagonal matrix (a square matrix the elements of s along its diagonal), and g(t)ij represents the probabilistic flow of random walkers between nodes i and j at time t. Here, we generated flow graphs using both binary and weighted structural connectivity matrices and evaluated them at different Markov times, t. Specifically, we focused on  t = 1, 2.5, 5, and 10.
+Flow graphs (Lambiotte et al., 2011) are a transformation of a network’s (possibly sparse) connectivity matrix $A$ into a fully weighted matrix in which the dynamics of a Markov process are embedded into edge weights. For a continuous random walk with dynamics $r_{i}=-\sum_{j}L_{ij}r_{j}$ on node $i$, the corresponding flow graph is given by $g(t)_{ij}=(e^{-tL})_{ij}s_{j}$ . In these expressions, the matrix $L=D-A/s$ is the normalized Laplacian, where $s_{i}=\sum_{j}A_{ij}$ is a node’s degree or weighted degree and $D$ is the degree diagonal matrix (a square matrix the elements of s along its diagonal), and $g(t)_{ij}$ represents the probabilistic flow of random walkers between nodes $i$ and $j$ at time $t$. Here, we generated flow graphs using both binary and weighted structural connectivity matrices and evaluated them at different Markov times, $t$. Specifically, we focused on  $t$ = 1, 2.5, 5, and 10.
 
-## Quality control
+### Quality control
 
 The exclusion of participants in the whole multimodal data processing pipeline is depicted in Figure 9. In the context of fMRI data, we computed Pearson’s correlation between motion and age, as well as between the number of remaining frames and age, for the included participants aged 5–22 and 8–22 years, respectively. These correlations are presented in Figure 9—figure supplement 1.
 
-## Cognitive scores
+![Figure 9.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig9-v1.jpg)
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig9-figsupp1-v1.jpg)
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/93325/elife-93325-fig9-figsupp2-v1.jpg)
+
+### Cognitive scores
 
 We included 11 cognitive scores which were assessed with the National Institutes of Health (NIH) Toolbox Cognition Battery (https://www.healthmeasures.net/exploremeasurement-systems/nih-toolbox), including episodic memory, executive function/cognitive flexibility, executive function/inhibition, language/reading decoding, processing speed, language/vocabulary comprehension, working memory, fluid intelligence composite score, crystal intelligence composite score, early child intelligence composite score, and total intelligence composite score. Distributions of these cognitive scores and their relationship with age are illustrated in Figure 9—figure supplement 2.
 
-## SC–FC coupling
+### SC–FC coupling
 
-A multilinear model (Vázquez-Rodríguez et al., 2019) was constructed to examine the relationship of individual nodewise SC profiles and FC profiles. For a given node, the predictive variable was nodal SC S={s1,s2,⋯,si,⋯,sn}, si∈Rm where si is the ith SC profiles, n is the number of SC profiles, and m is the node number. The nodal functional profile f is the dependent variable.(1)f=b0+b1s1+b2s2+⋯+bisi+⋯+bnsn
+A multilinear model (Vázquez-Rodríguez et al., 2019) was constructed to examine the relationship of individual nodewise SC profiles and FC profiles. For a given node, the predictive variable was nodal SC $S={s_{1},s_{2},⋯,s_{i},⋯,s_{n}}$, $s_{i}\inR^{m}$ where $s_{i}$ is the ith SC profiles, $n$ is the number of SC profiles, and $m$ is the node number. The nodal functional profile $f$ is the dependent variable.
 
-where the intercept b0 and regression coefficients bi are estimated model parameters. For each participant, goodness of fit per node represents the nodal coupling between SC and FC, quantified as the adjusted coefficient of determination (Zamani Esfahlani et al., 2022)(2)Radjusted2=1−(1−R2)(Nc−1)Nc−Np−1
+$$
+f=b_{0}+b_{1}s_{1}+b_{2}s_{2}+⋯+b_{i}s_{i}+⋯+b_{n}s_{n}
+$$
 
-where R2 is the unadjusted coefficient of determination, Nc is the number of connection (Nc = 245 for BNA), and Np is the number of predictors.
+where the intercept $b_{0}$ and regression coefficients $b_{i}$ are estimated model parameters. For each participant, goodness of fit per node represents the nodal coupling between SC and FC, quantified as the adjusted coefficient of determination (Zamani Esfahlani et al., 2022)
+
+$$
+R_{adjusted}^{2}=1−\frac{(1−R^{2})(N_{c}−1)}{N_{c}−N_{p}−1}
+$$
+
+where $R^{2}$ is the unadjusted coefficient of determination, $N_{c}$ is the number of connection ($N_{c}$ = 245 for BNA), and $N_{p}$ is the number of predictors.
 
 In the present study, WMC communication models that represented diverse geometric, topological, or dynamic factors, were used to explain nodal FC variation. Notably, too many predictors will result in overfitting and blindly increase the explained variance. And covariance structure among the predictors may lead to unreliable predictor weights. Thus, we applied Haufe’s inversion transform (Haufe et al., 2014) to address these issues and identified reliable communication mechanisms. Specifically, we used all 27 communication models to predict FC at the node level for each participant. We applied Haufe’s inversion transform (Haufe et al., 2014) to obtain predictor weights for each model, with higher or lower values indicating stronger positive or negative correlations with FC. Next, we generated 1000 FC permutations through a spin test (Alexander-Bloch et al., 2018) for each nodal prediction in each subject and obtained random distributions of model weights. These weights were averaged over the group and were investigated the enrichment of the highest weights per region to assess whether the number of highest weights across communication models was significantly larger than that in a random discovery.
 
-The significant communication models were used to represent WMC communication properties and to predict functional profiles in conjunction with MPC as structural profiles (predictors). To test the significance of the resulting adjusted R2 values and system specific of coupling, we generated a null predictive model using a spin test (Alexander-Bloch et al., 2018) with 1000 spatially constrained repetitions. We also used Kruskal–Wallis nonparametric one-way analysis of variance (Kruskal–Wallis ANOVA) to compare coupling differences between systems. To investigate the contributions of various structural predictors, we applied Kruskal–Wallis ANOVA to test the predictive weights derived by Haufe’s inversion transform, identifying optimal predictors across regions. We corrected for multiple comparisons using FDR correction. Additionally, we used a general linear model to explore age-related developmental patterns of SC–FC coupling, while controlling for sex, intracranial volume, and in-scanner head motion. Similarly, the system-specific significance of coupling alteration was calculated based on the 1000 repetitions of the spin test. In addition, we have constructed the models using only MPC or SCs to predict FC, respectively. Spearman’s correlation was used to assess the consistency between spatial patterns based on different models.
+The significant communication models were used to represent WMC communication properties and to predict functional profiles in conjunction with MPC as structural profiles (predictors). To test the significance of the resulting adjusted $R^{2}$ values and system specific of coupling, we generated a null predictive model using a spin test (Alexander-Bloch et al., 2018) with 1000 spatially constrained repetitions. We also used Kruskal–Wallis nonparametric one-way analysis of variance (Kruskal–Wallis ANOVA) to compare coupling differences between systems. To investigate the contributions of various structural predictors, we applied Kruskal–Wallis ANOVA to test the predictive weights derived by Haufe’s inversion transform, identifying optimal predictors across regions. We corrected for multiple comparisons using FDR correction. Additionally, we used a general linear model to explore age-related developmental patterns of SC–FC coupling, while controlling for sex, intracranial volume, and in-scanner head motion. Similarly, the system-specific significance of coupling alteration was calculated based on the 1000 repetitions of the spin test. In addition, we have constructed the models using only MPC or SCs to predict FC, respectively. Spearman’s correlation was used to assess the consistency between spatial patterns based on different models.
 
 We examined the associations of SC–FC coupling and its developmental pattern with evolution expansion (Hill et al., 2010), myelin content (Glasser and Van Essen, 2011), and functional principal gradient (Margulies et al., 2016). Spearman’s correlation analyses were used to quantify the strength of correlations, with significance corrected for spatial autocorrelation with 1000 repetitions of the spin test.
 
-## Prediction of cognitive function
+### Prediction of cognitive function
 
-Based on our predictive evaluation work (Feng et al., 2022), the Elastic-Net algorithm was applied to predict cognitive performance using nodal SC–FC coupling, which tends to yield robust prediction performance across various dimensions of cognitive tasks. The objective function is as follows:(3)L(Y,f(X,w))=∑i=0n(yi−f(xi))2+α∑j=1m(β|wj|+12(1−β)||wj||2)
+Based on our predictive evaluation work (Feng et al., 2022), the Elastic-Net algorithm was applied to predict cognitive performance using nodal SC–FC coupling, which tends to yield robust prediction performance across various dimensions of cognitive tasks. The objective function is as follows:
 
-where x={x1,x2,…,xn} represents an observation set (e.g., SC–FC coupling) with a sample size of n, and y={y1,y2,…,yn} is a label set (e.g., cognitive measure). The model solves the fitting coefficient w=(w1,w2,…,wm) under the minimization objective function LY,fX,w . The L1 regularization term ∙ and L2 regularization term ∙2 constraint the fitting coefficient to ensure model generalization ability. α represents regularization strength, controlling the compression loss scale, and β denotes a trade-off parameter between the L1 and L2 terms.
+$$
+L(Y,f(X,w))=\sumi=0n(y_{i}−f(x_{i}))^{2}+\alpha\sumj=1m(\beta|w_{j}|+\frac{1}{2}(1−\beta)||w_{j}||^{2})
+$$
 
-We employed a nested fivefold cross-validation (CV) framework comprising an external CV and an internal CV (Feng et al., 2022). In the external CV, observations were randomly partitioned into fivefolds, with four of them included in the training set used to develop the model and the remaining fold used as a testing set to assess the predictive accuracy of the model. This process was repeated 100 times, and the final model performance was evaluated by averaging the predictive accuracy across the 100 models. In the internal CV, the hyperparameter spaces were first defined as α∈{x|x=2n,n∈Z,n∈[-10,5]} and β∈{x|x=0.1n,n∈Z,n∈[0,10]}. Then, the training set was further divided into fivefolds. Fourfolds composed the internal training set, which was used to generate models by successively applying 16 × 11 hyperparametric combinations, and the remaining fold was defined as the validation set and used to find the optimal combination. Subsequently, we retrained the model on the training set using the optimal hyperparametric combination and assessed its predictive performance on the testing set by performing Pearson’s correlation analyses of the relationship between the predicted and labelled values.
+where $x={x_{1},x_{2},…,x_{n}}$ represents an observation set (e.g., SC–FC coupling) with a sample size of $n$, and $y={y_{1},y_{2},…,y_{n}}$ is a label set (e.g., cognitive measure). The model solves the fitting coefficient $w=(w_{1},w_{2},…,w_{m})$ under the minimization objective function $LY,fX,w$ . The L1 regularization term $∙$ and L2 regularization term $∙^{2}$ constraint the fitting coefficient to ensure model generalization ability. $\alpha$ represents regularization strength, controlling the compression loss scale, and $\beta$ denotes a trade-off parameter between the L1 and L2 terms.
+
+We employed a nested fivefold cross-validation (CV) framework comprising an external CV and an internal CV (Feng et al., 2022). In the external CV, observations were randomly partitioned into fivefolds, with four of them included in the training set used to develop the model and the remaining fold used as a testing set to assess the predictive accuracy of the model. This process was repeated 100 times, and the final model performance was evaluated by averaging the predictive accuracy across the 100 models. In the internal CV, the hyperparameter spaces were first defined as $\alpha\in{x|x=2^{n},n\inZ,n\in[-10,5]}$ and $\beta\in{x|x=0.1n,n\inZ,n\in[0,10]}$. Then, the training set was further divided into fivefolds. Fourfolds composed the internal training set, which was used to generate models by successively applying 16 × 11 hyperparametric combinations, and the remaining fold was defined as the validation set and used to find the optimal combination. Subsequently, we retrained the model on the training set using the optimal hyperparametric combination and assessed its predictive performance on the testing set by performing Pearson’s correlation analyses of the relationship between the predicted and labelled values.
 
 Prior to applying the nested fivefold CV framework to each behaviour measure, we regressed out covariates including sex, intracranial volume, and in-scanner head motion from the behaviour measure (Chen et al., 2022; Li et al., 2022). Specifically, we estimated the regression coefficients of the covariates using the training set and applied them to the testing set. This regression procedure was repeated for each fold. Additionally, we conducted control analyses using age-adjusted behavioural measures to investigate the effect of age on the predictive performance of SC–FC coupling.
 
 To evaluate whether our model performed better than at chance on each behaviour measure, we performed 1000 permutation tests by randomly shuffling the behaviour measure across participants, generating a null model of predicted performance using the same procedures. We then used the corrected resampled t test to determine statistical significance (Bouckaert and Frank, 2004; Nadeau and Bengio, 2003). We corrected for multiple comparisons using FDR correction. For model interpretability, we applied Haufe’s inversion transform (Haufe et al., 2014) to obtain predicted weights for various brain regions. The significance of the weights for each system was assessed by comparing them to those generated by a spin test (Alexander-Bloch et al., 2018) with 1000 repetitions.
 
-## Association between alterations of SC–FC coupling and gene expression
+### Association between alterations of SC–FC coupling and gene expression
 
 We preprocessed the anatomic and genomic information of the AHBA dataset following a recommended pipeline (Arnatkeviciute et al., 2019). Specifically, we used FreeSurfer (https://surfer.nmr.mgh.harvard.edu/fswiki/) to generate preprocessed structural data for each donor and projected the BNA template onto native fsaverage space using official scripts (http://www.brainnetome.org/resource/). Finally, we produced an averaged gene expression profile for 10,027 genes covering 105 left cortical regions. Restricting analyses to the left hemisphere will minimize variability across regions (and hemispheres) in terms of the number of samples available (Arnatkeviciute et al., 2019).
 
@@ -210,7 +390,7 @@ PLS analysis (Krishnan et al., 2011) was performed to mine the linear associatio
 
 To investigate the cell type-specific expression of the selected genes, we assigned them to 58 cell types derived from five studies (Zhang et al., 2016; Lake et al., 2018; Habib et al., 2017; Darmanis et al., 2015; Li et al., 2018) focusing on single-cell research using the human postnatal cortex. To avoid potential bias in cell-type assignment, we grouped these cell types into seven canonical classes: astrocytes, endothelial cells, excitatory neurons, inhibitory neurons, microglia, oligodendrocytes, and OPCs (Seidlitz et al., 2020; Li et al., 2021). We generated a null model by performing 10,000 random resamplings of genes within each cell type. We then tested the significance of our results against this null model. Additionally, we subjected the genes associated with each enriched term to the same analysis to explore the specificity of the cell type.
 
-## Reproducibility analyses
+### Reproducibility analyses
 
 To evaluate the robustness of our findings under different parcellation templates, we computed MPC, SCs (WMC, communicability Crofts and Higham, 2009), mean first-passage times of random walkers (Noh and Rieger, 2004), and flow graphs (timescales = 1), and FC using the multimodal parcellation from the Human Connectome Project (HCPMMP) (Glasser et al., 2016). We used the multilinear model to examine the association of individual nodewise SC and FC profiles. Then, a general linear model was used to explore age-related developmental patterns of SC–FC coupling, while controlling for sex, intracranial volume, and in-scanner head motion. We corrected for multiple comparisons using FDR correlation. Finally, we produced an averaged gene expression profile for 10,027 genes covering 176 left cortical regions based on HCPMMP and obtained the gene weights by PLS analysis. We performed Pearson’s correlation analyses to assess the consistency of gene weights between HCPMMP and BNA.
 

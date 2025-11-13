@@ -33,24 +33,24 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
-2. https://ror.org/05v5hg569 Department of Physiology and Biophysics, Weill Cornell Medicine-Qatar, Education City Doha Qatar
-3. https://ror.org/02smfhw86 Computer Engineering Department, Virginia Tech Blacksburg United States
-4. https://ror.org/01nrxwf90 Department of Psychology, University of Edinburgh Edinburgh United Kingdom
-5. https://ror.org/01nrxwf90 Lothian Birth Cohorts, University of Edinburgh Edinburgh United Kingdom
-6. https://ror.org/01nrxwf90 Centre for Clinical Brain Sciences, Chancellor’s Building, University of Edinburgh Edinburgh United Kingdom
-7. https://ror.org/052gg0110 Department of Psychiatry, University of Oxford Oxford United Kingdom
-8. https://ror.org/00hj54h04 Department of Psychology, The University of Texas at Austin Austin United States
-9. https://ror.org/00hj54h04 Population Research Center, The University of Texas at Austin Austin United States
-10. https://ror.org/00cfam450 Research Unit Molecular Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health Neuherberg Germany
-11. https://ror.org/00cfam450 Institute of Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health Neuherberg Germany
-12. https://ror.org/031t5w623 German Center for Cardiovascular Research (DZHK), partner site Munich Heart Alliance Munich Germany
-13. https://ror.org/04qq88z54 German Center for Diabetes Research (DZD) Neuherberg Germany
-14. https://ror.org/0165r2y73 Scientific Service Group Biomolecular Mass Spectrometry, Max Planck Institute for Heart and Lung Research, W.G. Kerckhoff Institute Bad Nauheim Germany
-15. https://ror.org/031t5w623 German Centre for Cardiovascular Research (DZHK), Partner Site Rhine-Main, Max Planck Institute of Heart and Lung Research Bad Nauheim Germany
-16. https://ror.org/00rqy9422 Institute for Molecular Bioscience, University of Queensland Brisbane Australia
-17. https://ror.org/01nrxwf90 Medical Research Council Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom
-18. https://ror.org/04jxcef68 Division of Psychiatry, University of Edinburgh, Royal Edinburgh Hospital Edinburgh United Kingdom
+1. Centre for Genomic and Experimental Medicine, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+2. Department of Physiology and Biophysics, Weill Cornell Medicine-Qatar, Education City Doha Qatar ([ROR:05v5hg569](https://ror.org/05v5hg569))
+3. Computer Engineering Department, Virginia Tech Blacksburg United States ([ROR:02smfhw86](https://ror.org/02smfhw86))
+4. Department of Psychology, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+5. Lothian Birth Cohorts, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+6. Centre for Clinical Brain Sciences, Chancellor’s Building, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+7. Department of Psychiatry, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+8. Department of Psychology, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+9. Population Research Center, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+10. Research Unit Molecular Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health Neuherberg Germany ([ROR:00cfam450](https://ror.org/00cfam450))
+11. Institute of Epidemiology, Helmholtz Zentrum München, German Research Center for Environmental Health Neuherberg Germany ([ROR:00cfam450](https://ror.org/00cfam450))
+12. German Center for Cardiovascular Research (DZHK), partner site Munich Heart Alliance Munich Germany ([ROR:031t5w623](https://ror.org/031t5w623))
+13. German Center for Diabetes Research (DZD) Neuherberg Germany ([ROR:04qq88z54](https://ror.org/04qq88z54))
+14. Scientific Service Group Biomolecular Mass Spectrometry, Max Planck Institute for Heart and Lung Research, W.G. Kerckhoff Institute Bad Nauheim Germany ([ROR:0165r2y73](https://ror.org/0165r2y73))
+15. German Centre for Cardiovascular Research (DZHK), Partner Site Rhine-Main, Max Planck Institute of Heart and Lung Research Bad Nauheim Germany ([ROR:031t5w623](https://ror.org/031t5w623))
+16. Institute for Molecular Bioscience, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+17. Medical Research Council Human Genetics Unit, Institute of Genetics and Cancer, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+18. Division of Psychiatry, University of Edinburgh, Royal Edinburgh Hospital Edinburgh United Kingdom ([ROR:04jxcef68](https://ror.org/04jxcef68))
 
 † Corresponding author
 
@@ -70,11 +70,149 @@ Here, we report a comprehensive association study of blood-based DNAm with prote
 
 **Figure 1.:** DNA methylation scores were trained on 953 circulating plasma protein levels in the KORA and LBC1936 cohorts. There were 109 EpiScores selected based on performance (r > 0.1, p < 0.05) in independent test sets. The selected EpiScores were projected into Generation Scotland, a cohort that has extensive data linkage to GP and hospital records. We tested whether levels of each EpiScore at baseline could predict the onset of 12 leading causes of morbidity, over a follow-up period of up to 14 years; 130 EpiScore-disease associations were identified, for 10 morbidities. We then assessed whether EpiScore associations reflected protein associations for diabetes, which is a trait that has been well characterised using SOMAscan protein measurements. Of the 34 SOMAscan-derived EpiScore-diabetes associations, 28 highlighted previously reported protein-diabetes associations.
 
+**Table 1.**
+ Incident morbidities in the Generation Scotland cohort.Counts are provided for the number of cases and controls for each incident trait in the basic and fully adjusted Cox models run in the Generation Scotland cohort (n = 9537). Mean time-to-event is summarised in years for each phenotype. Alzheimer’s dementia cases and controls were restricted to those older than 65 years. Breast cancer cases and controls were restricted to females.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Basic model</th>
+      <th colspan="3">Fully adjusted model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Morbidity</td>
+      <td>N cases</td>
+      <td>N controls</td>
+      <td>Years to event(mean, SD)</td>
+      <td>N cases</td>
+      <td>N controls</td>
+      <td>Years to event(mean, SD)</td>
+    </tr>
+    <tr>
+      <td>Rheumatoid arthritis</td>
+      <td>63</td>
+      <td>9289</td>
+      <td>5.6 (3.5)</td>
+      <td>52</td>
+      <td>7742</td>
+      <td>6.1 (3.3)</td>
+    </tr>
+    <tr>
+      <td>Alzheimer’s dementia</td>
+      <td>69</td>
+      <td>3764</td>
+      <td>7.7 (3)</td>
+      <td>52</td>
+      <td>3137</td>
+      <td>7.6 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Bowel cancer</td>
+      <td>78</td>
+      <td>9398</td>
+      <td>6.4 (3.2)</td>
+      <td>66</td>
+      <td>7817</td>
+      <td>6.5 (3.2)</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>95</td>
+      <td>8317</td>
+      <td>4 (3.2)</td>
+      <td>75</td>
+      <td>6984</td>
+      <td>3.8 (3.2)</td>
+    </tr>
+    <tr>
+      <td>Lung cancer</td>
+      <td>100</td>
+      <td>9433</td>
+      <td>5.6 (3.2)</td>
+      <td>78</td>
+      <td>7850</td>
+      <td>5.6 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Breast cancer</td>
+      <td>131</td>
+      <td>5356</td>
+      <td>6.1 (3.4)</td>
+      <td>111</td>
+      <td>4402</td>
+      <td>5.9 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Inflammatory bowel disease</td>
+      <td>194</td>
+      <td>9114</td>
+      <td>5 (3.6)</td>
+      <td>155</td>
+      <td>7592</td>
+      <td>4.8 (3.6)</td>
+    </tr>
+    <tr>
+      <td>Stroke</td>
+      <td>313</td>
+      <td>9026</td>
+      <td>6.4 (3.4)</td>
+      <td>246</td>
+      <td>7547</td>
+      <td>6.3 (3.5)</td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>322</td>
+      <td>8960</td>
+      <td>5.5 (3.4)</td>
+      <td>253</td>
+      <td>7476</td>
+      <td>5.5 (3.5)</td>
+    </tr>
+    <tr>
+      <td>Ischaemic heart disease</td>
+      <td>385</td>
+      <td>8649</td>
+      <td>5.6 (3.4)</td>
+      <td>302</td>
+      <td>7251</td>
+      <td>5.7 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>429</td>
+      <td>8757</td>
+      <td>5.6 (3.4)</td>
+      <td>322</td>
+      <td>7332</td>
+      <td>5.5 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Pain</td>
+      <td>1329</td>
+      <td>5480</td>
+      <td>4.8 (3.5)</td>
+      <td>1081</td>
+      <td>4593</td>
+      <td>4.9 (3.5)</td>
+    </tr>
+    <tr>
+      <td colspan="7"></td>
+    </tr>
+  </tbody>
+</table>
+
+_COPD: chronic obstructive pulmonary disease._
+
 Our MethylDetectR shiny app (Hillary and Marioni, 2020) has CpG weights for the 109 EpiScores integrated such that it automates the process of score generation for any DNAm dataset and is available at: https://www.ed.ac.uk/centre-genomic-medicine/research-groups/marioni-group/methyldetectr. A video on how to use the MethylDetectR shiny app to generate EpiScores is available at: https://youtu.be/65Y2Rv-4tPU.
 
 ## Results
 
-## Selecting the most robust EpiScores for protein levels
+### Selecting the most robust EpiScores for protein levels
 
 To generate epigenetic scores for a comprehensive set of plasma proteins, we ran elastic net penalised regression models using protein measurements from the SOMAscan (aptamer-based) and Olink (antibody-based) platforms. We used two cohorts: the German population-based study KORA (n = 944, mean age 59 years [SD 7.8], with 793 SOMAscan proteins) and the Scottish Lothian Birth Cohort 1936 (LBC1936) study (between 706 and 875 individuals in the training cohort, with a total of 160 Olink neurology and inflammatory panel proteins). The mean age of the LBC1936 participants at sampling was 70 (SD 0.8) for inflammatory and 73 (SD 0.7) for neurology proteins. Full demographic information is available for all cohorts in Supplementary file 1A.
 
@@ -82,9 +220,29 @@ Prior to running the elastic net models, we rank-based inverse normalised protei
 
 A total of 109 EpiScores (84 SOMAscan-based and 25 Olink-based) were brought forward (r > 0.1 and p < 0.05) to EpiScore-disease analyses (Figure 2 and Supplementary file 1D). There were five EpiScores for proteins common to both Olink and SOMAscan panels, which had variable correlation strength (GZMA r = 0.71, MMP.1 r = 0.46, CXCL10 r = 0.35, NTRK3 r = 0.26, and CXCL11 r = 0.09). Predictor weights, positional information, and cis/trans status for CpG sites contributing to these EpiScores are available in Supplementary file 1E. The number of CpG features selected for EpiScores ranged from 1 (lyzozyme) to 395 (aminoacylase-1 [ACY-1]), with a mean of 96 (Supplementary file 1F). The most frequently selected CpG was the smoking-related site cg05575921 (mapping to the AHRR gene), which was included in 25 EpiScores. Counts for each CpG site are summarised in Supplementary file 1G. This table includes the set of protein EpiScores that each CpG contributes to, along with phenotypic annotations (traits) from the MRC-IEU EWAS catalog (MRC-IEU, 2021) for each CpG site having genome-wide significance (p < 3.6 × 10–8) (Saffari et al., 2018). GeneSet enrichment analysis of the original proteins used to train the 109 EpiScores highlighted pathways associated with immune response and cell remodelling, adhesion, and extracellular matrix function (Supplementary file 1H).
 
-## EpiScore-disease associations in Generation Scotland
+![Figure 2.](https://cdn.elifesciences.org/articles/71802/elife-71802-fig2-v3.jpg)
+
+**Figure 2.:** Test set correlation coefficients for associations between protein EpiScores for (a) inflammatory Olink, (b) neurology Olink, and (c) SOMAmer protein panel EpiScores and measured protein levels are plotted. 95% confidence intervals are shown for each correlation. The 109 protein EpiScores shown had r > 0.1 and p < 0.05 in either one or both of the GS:STRADL (n = 778) and LBC1921 (n = 162) test sets, wherever protein data was available for comparison. Data shown corresponds to the results included in Supplementary file 1B-C. Correlation heatmaps between the 109 EpiScore measures (Figure 2—figure supplement 1) are provided, along with a summary of the most enriched functional pathways for the genes of the 109 proteins used to train EpiScores (Figure 2—figure supplement 2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71802/elife-71802-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Correlation heatmap for EpiScore measures projected into Generation Scotland (N = 9537) for the 109 protein EpiScores selected in the test sample (r > 0.1, p < 0.05). At the top of the heatmap, an annotation bar is displayed. Olink proteins are shown in pale green and Somalogic proteins are shown in purple.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71802/elife-71802-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Genes selected for pathway enrichment (false discovery rate [FDR]-adjusted p < 0.05) are summarised, with the proportion of overlapping genes enriched in the gene-set also shown. The corresponding data for this figure can be accessed in full in Supplementary file 1H.
+
+### EpiScore-disease associations in Generation Scotland
 
 The Generation Scotland dataset contains extensive electronic health data from GP and hospital records as well as DNAm data for 9537 individuals. This makes it uniquely positioned to test whether EpiScore signals can predict disease onset. We ran nested mixed effects Cox proportional hazards models (Figure 3) to determine whether the levels of each EpiScore at baseline associated with the incidence of 12 morbidities over a maximum of 14 years of follow-up. The correlation structures for the 109 EpiScore measures used for Cox modelling are presented in Figure 2—figure supplement 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71802/elife-71802-fig3-v3.jpg)
+
+**Figure 3.:** Mixed effects Cox proportional hazards analyses in Generation Scotland (n = 9537) tested the relationships between each of the 109 selected EpiScores and the incidence of 12 leading causes of morbidity (Supplementary file 1I-J). The basic model was adjusted for age and sex and yielded 286 associations between EpiScores and disease diagnoses, with false discovery rate (FDR)-adjusted p < 0.05. In the fully adjusted model, which included common risk factors as additional covariates (smoking, deprivation, educational attainment, body mass index (BMI), and alcohol consumption), 130 of the basic model associations remained significant with p < 0.05. In a sensitivity analysis, the addition of estimated white blood cells (WBCs) to the fully adjusted models led to the attenuation of 31 of the 130 associations. In a further sensitivity analysis, 78 associations remained after adjustment for both immune cell proportions and GrimAge acceleration.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71802/elife-71802-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmap of Pearson's correlations (r) between the 70 protein EpiScore measures that were associated with incident disease (with p < 0.05 in the fully adjusted Cox mixed effects proportional hazards models) and continuous phenotypic/lifestyle trait variables and Houseman-estimated white blood cell proportions in Generation Scotland (total N = 9537). Protein measurements used to train the predictors were adjusted for age and sex. The maximum sample size available was used for each correlation. GrimAge: GrimAge acceleration. Units: weekly units of alcohol. EpiSmoker: DNAm-derived score for smoking. SIMD: Scottish Index of Multiple Deprivation. EA: educational attainment. Mono: monocytes. Gran: granulocytes. NK: natural killer cells.
 
 There were 286 EpiScore-disease associations with a false discovery rate (FDR)-adjusted p < 0.05 in the basic model. After further adjustment for common risk factor covariates (smoking, social deprivation status, educational attainment, body mass index [BMI], and alcohol consumption), 130 of the 286 EpiScore-disease associations from the basic model had p < 0.05 in the fully adjusted model (Supplementary file 1I-J). Ten of the 130 fully adjusted associations failed the Cox proportional hazards assumption for the EpiScore variable (p < 0.05 for the association between the Schoenfeld residuals and time; Supplementary file 1K). When we restricted the time-to-event/censor period by each year of possible follow-up, there were minimal differences in the EpiScore-disease hazard ratios between follow-up periods that did not violate the assumption and those that did (Supplementary file 1L). The 130 associations were therefore retained as the primary results.
 
@@ -102,11 +260,11 @@ The 130 associations found in the fully adjusted model comprised 70 unique EpiSc
 
 **Figure 6.:** EpiScore-incident diabetes associations in Generation Scotland (n = 9537). The 34 SOMAscan (top panel) and four Olink (bottom panel) associations shown with p < 0.05 in fully adjusted mixed effects Cox proportional hazards models. Of the 34 SOMAscan-derived EpiScores, 28 associations were consistent with protein-diabetes associations (pink) in one or more of the comparison studies that used SOMAscan protein levels. Six associations were novel (blue). Data shown corresponds to the results included in Supplementary files 1J and M.
 
-## Immune cell and GrimAge sensitivity analyses
+### Immune cell and GrimAge sensitivity analyses
 
 Correlations of the 70 EpiScores that were associated with incident disease (P < 0.05 in the fully-adjusted cox proportional hazards models) with covariates suggested interlinked relationships with both estimated white blood cell proportions and GrimAge acceleration (Figure 3—figure supplement 1). These covariates were therefore added incrementally to the fully-adjusted Cox models (Figure 3). There were 99 associations that remained statistically significant (FDR p < 0.05 in the basic model and p < 0.05 in the fully adjusted model) after adjustment for immune cell proportions, of which 78 remained significant when GrimAge acceleration scores were added to this model (Supplementary file 1J). In a further sensitivity analysis, relationships between both estimated white blood cell (WBC) proportions and GrimAge acceleration scores with incident diseases were assessed in the Cox model structure independently of EpiScores. Of the 60 possible relationships between WBC measures and the morbidities assessed, three were statistically significant (FDR-adjusted p < 0.05) in the basic model and remained significant with p < 0.05 in the fully adjusted model (Supplementary file 1N). A higher proportion of natural killer cells was linked to decreased risk of incident COPD, RA and diabetes. The GrimAge acceleration composite score was associated with COPD, lung cancer, IBD, diabetes and RA in the fully adjusted models (p < 0.05) (Supplementary file 1O). The magnitude of the GrimAge effect sizes was comparable to the EpiScore findings.
 
-## Relationship between EpiScores and subsequent COVID-19
+### Relationship between EpiScores and subsequent COVID-19
 
 Two previous studies including pilot proteomic measurements from the Generation Scotland cohort (N = 199 controls) as part of wider analyses found that several proteins corresponding to our EpiScores were associated with COVID-19 outcomes (Demichev et al., 2021; Messner et al., 2020). These included proteins such as CRP, C9, SELL, and SHBG, all of which were associated with one or more incident diseases in this study. Two subsets (N = 268 and N = 173) of the Generation Scotland sample who contracted COVID-19 were therefore used to test the hypothesis that EpiScores would associate with COVID-19 outcomes (acquired >9 years after the blood draw for DNAm analyses). No significant associations were identified that delineated differences between the development of long-covid (duration >4 weeks) or hospitalisation from COVID-19 (associations that had p < 0.05 did not withstand Bonferroni adjustment for multiple testing) (Supplementary file 1P).
 
@@ -128,47 +286,47 @@ We have shown that EpiScores for circulating protein levels predict the incidenc
 
 ## Materials and methods
 
-## The KORA sample population
+### The KORA sample population
 
 The KORA F4 study includes 3080 participants who reside in Southern Germany. Individuals were between 32 and 81 years of age when recruited to the study from 2006 and 2008. In the current study, there were 944 individuals with methylation, proteomics, and genetic data available. The Infinium HumanMethylation450 BeadChip platform was used to generate DNAm data for these individuals. The Affymetrix Axiom array was used to generate genotyping data and the SOMAscan platform was used to generate proteomic measurements in the sample.
 
-## DNAm in KORA
+### DNAm in KORA
 
 Methylation data were generated for 1814 individuals (Petersen et al., 2014); 944 also had protein and genotype measurements available. During preprocessing, 65 SNP probes were excluded and background correction was performed in minfi (Aryee et al., 2014). Samples with a detection rate of less than 95% were excluded. Next, the minfi R package was used to perform normalisation on the intensity methylation measures (Aryee et al., 2014), with a method consistent with the Lumi:QN + BMIQ pipeline. After excluding non-cg sites and CpGs on sex chromosomes or with fewer than 100 measures available, 470,837 CpGs were available for analyses.
 
-## Proteomics in KORA
+### Proteomics in KORA
 
 The SOMAscan platform (Version 3.2) (Gold et al., 2010) was used to quantify protein levels in undepleted plasma for 1129 SOMAmer probes (Suhre et al., 2017). Of the 1000 samples provided for analysis, two samples were excluded due to errors in bio-bank sampling and one based on quality control (QC) measures. Of the 997 samples available, there were 944 individuals with methylation and genotypic data. Of the 1129 probes available, five failed the QC, leaving a total of 1124 probes for the subsequent analysis. Protein measurements were transformed by rank-based inverse normalisation and regressed onto age, sex, known pQTLs, and 20 genetic principal components of ancestry derived from the Affymetrix Axiom Array to control for population structure. pQTLs for each protein were taken from a previous GWAS in the sample (Suhre et al., 2017).
 
-## The LBC1936 and LBC1921 sample populations
+### The LBC1936 and LBC1921 sample populations
 
 The Lothian Birth Cohorts of 1921 (LBC1921; N = 550) and 1936 (LBC1936; N = 1091) are longitudinal studies of aging in individuals who reside in Scotland (Deary et al., 2012; Taylor et al., 2018). Participants completed an intelligence test at age 11 years and were recruited for these cohorts at mean ages of 79 (LBC1921) and 70 (LBC1936). They have been followed up triennially for a series of cognitive, clinical, physical, and social data, along with blood donations that have been used for genetic, epigenetic, and proteomic measurement. DNAm, proteomic (Olink platform), and genetic data for individuals from Waves 1 (n=875 at mean age 70 years and sd 0.8) and 2 (n=706 at mean age 73 years and sd 0.7) of the LBC1936 and Wave 3 of the LBC1921 (n=162 at mean age 87 years and sd 0.4) were available.
 
-## DNAm in LBC1936 and LBC1921
+### DNAm in LBC1936 and LBC1921
 
 DNA from whole blood was assessed using the Illumina 450 K methylation array. Details of QC have been described elsewhere (Shah et al., 2014; Zhang et al., 2018). Raw intensity data were background-corrected and normalised using internal controls. Manual inspection resulted in the removal of low-quality samples that presented issues related to bisulphite conversion, staining signal, inadequate hybridisation, or nucleotide extension. Probes with low detection rate <95% at p < 0.01 and samples with low call rates (<450,000 probes detected at p < 0.01) were removed. Samples were also removed if they had a poor match between genotype and SNP control probes, or incorrect DNAm-predicted sex.
 
-## Proteomics in LBC1936 and LBC1921
+### Proteomics in LBC1936 and LBC1921
 
 Plasma samples were analysed using either the Olink neurology 92-plex or the Olink inflammation 92-plex proximity extension assays (Olink Bioscience, Uppsala Sweden). One inflammatory panel protein (BDNF) failed QC and was removed. A further 21 proteins were removed, as over 40% of samples fell below the lowest limit of detection. Two neurology proteins, MAPT and HAGH, were excluded due to >40% of observations being below the lower limit of detection. This resulted in 90 neurology (LBC1936 Wave 2) and 70 inflammatory (LBC1936 Wave 1) proteins in LBC1936 and 92 neurology proteins available in LBC1921. Protein levels were rank-based inverse normalised and regressed onto age, sex, four genetic components of ancestry derived from multidimensional scaling of the Illumina 610-Quadv1 genotype array and Olink array plate. In LBC1936, pQTLs were adjusted for, through reference to GWAS in the samples (Hillary et al., 2019; Hillary et al., 2020b).
 
-## Generation Scotland and STRADL sample populations
+### Generation Scotland and STRADL sample populations
 
 Generation Scotland: the Scottish Family Health Study (GS) is a large, family-structured, population-based cohort study of >24,000 individuals from Scotland (mean age 48 years) (Smith et al., 2013). Recruitment took place between 2006 and 2011 with a clinical visit where detailed health, cognitive, and lifestyle information was collected along with biological samples (blood, urine, saliva). In GS, there were 9537 individuals with DNAm and phenotypic information available. The STRADL cohort is a subset of 1188 individuals from the GS cohort who undertook additional assessments approximately 5 years after the study baseline (Navrady et al., 2018).
 
-## DNAm in Generation Scotland and STRADL
+### DNAm in Generation Scotland and STRADL
 
 In the GS cohort, blood-based DNAm was generated in two sets using the Illumina EPIC array. Set 1 comprised 5190 related individuals whereas Set 2 comprised 4583 individuals, unrelated to each other and to those in Set 1. During QC, probes were removed based on visual outlier inspection, bead count <3 in over 5% of samples, and samples with detection p-value below adequate thresholds (McCartney et al., 2018b; Seeboth et al., 2020). Samples were removed based on sex mismatches, low detection p-values for CpGs and saliva samples and genetic outliers (Amador et al., 2015). The quality-controlled dataset comprised 9537 individuals (nSet1 = 5087, nSet2 = 4450). The same steps were also applied to process DNAm in STRADL.
 
-## Proteomics in STRADL
+### Proteomics in STRADL
 
 Measurements for 4235 proteins in 1065 individuals from the STRADL cohort were recorded using the SOMAscan technology; 793 epitopes matched between the KORA and STRADL cohorts and were included for training in KORA and testing in STRADL. There were 778 individuals with proteomics data and DNAm data in STRADL. Protein measurements were transformed by rank-based inverse normalisation and regressed onto age, sex, and 20 genetic principal components (derived from multidimensional scaling of genotype data from the Illumina 610-Quadv1 array).
 
-## Electronic health data linkage in Generation Scotland
+### Electronic health data linkage in Generation Scotland
 
 Over 98% of GS participants consented to allow access to electronic health records via data linkage to GP records (Read 2 codes) and hospital records (ICD codes). Data are available prospectively from the time of blood draw, yielding up to 14 years of linkage. We considered incident data for 12 morbidities. Ten of the diseases are listed by the World Health Organization (WHO) as leading causes of either morbidity or mortality (Hay et al., 2017; World Health Organization, 2018). Inflammatory bowel disease (IBD) (Kassam et al., 2014) and RA (James et al., 2018) are also included as traits as they have been reported as leading causes of disability and morbidity and the global burdens of these diseases are rising (Alatab et al., 2020; Safiri et al., 2019). Prevalent cases (ascertained via retrospective ICD and Read 2 codes or self-report from a baseline questionnaire) were excluded. For IBD prevalent cases were excluded based on data linkage alone. Included and excluded terms can be found in Supplementary files 1Q-1B1. Alzheimer’s dementia was limited to cases/controls with age of event/censoring ≥65 years. Breast cancer was restricted to females only. Recurrent, major and moderate episodes of depression were included in depression. Diabetes was comprised of predominantly type 2 diabetes codes and additional general diabetes codes such as diabetic retinopathy and diabetes mellitus with renal manifestation that often occur in individuals with type 2 diabetes. Type 1 and juvenile diabetes cases were excluded.
 
-## Elastic net protein EpiScores
+### Elastic net protein EpiScores
 
 Penalised regression models were generated for 160 proteins in LBC1936 and 793 proteins in KORA using Glmnet (Version 4.0-2) (Friedman et al., 2010) in R (Version 4.0) (R Development Core Team, 2020). Protein levels were the outcome and there were 428,489 CpG features per model in the LBC1936 training and 397,630 in the KORA training. An elastic net penalty was specified (alpha = 0.5) and cross validation was applied. DNAm and protein measurements were scaled to have a mean of zero and variance of one.
 
@@ -178,7 +336,7 @@ Functional annotations for each of the proteins used to train the finalised set 
 
 The 109 selected EpiScores were then applied to Generation Scotland (n = 9537). DNAm at each CpG site was scaled to have a mean of zero and variance of one, with scaling performed separately for GS sets.
 
-## Associations with health linkage phenotypes in Generation Scotland
+### Associations with health linkage phenotypes in Generation Scotland
 
 Mixed effects Cox proportional hazards regression models adjusting for age, sex, and methylation set were used to assess the relationship between 109 EpiScores and 12 morbidities in Generation Scotland. Models were run using coxme (Therneau, 2020b) (Version 2.2-16) with a kinship matrix accounting for relatedness in Set 1. Cases included those diagnosed after baseline who had died, in addition to those who received a diagnosis and remained alive. Controls were censored if they were disease free at time of death, or at the end of the follow-up period. EpiScore levels were rank-base inverse normalised. Fully adjusted models included the following additional covariates measured at baseline: alcohol consumption (units consumed in the previous week); deprivation assessed by the Scottish Index of Multiple Deprivation (GovScot, 2016); BMI (kg/m2); educational attainment (an 11-category ordinal variable); and a DNAm-based score for smoking status (Bollepalli et al., 2019). A false discovery rate multiple testing correction p < 0.05 was applied to the 1308 EpiScore-disease associations (109 EpiScores by 12 incident disease traits). Proportional hazards assumptions were checked through Schoenfeld residuals (global test and a test for the protein-EpiScore variable) using the coxph and cox.zph functions from the survival package (Therneau, 2020a) (Version 3.2-7). For each association failing to meet the assumption (Schoenfeld residuals p < 0.05), a sensitivity analysis was run across yearly follow-up intervals.
 
@@ -186,10 +344,10 @@ Fully adjusted Cox proportional hazards models were run with Houseman-estimated 
 
 Correlation structures for EpiScores, DNAm-estimated white blood cell proportions, and phenotypic information were assessed using Pearson correlations and pheatmap (Kolde, 2019) (Version 1.0.12) and ggcorrplot packages (Version 0.1.3) (Kassambara, 2019). The psych package (Version 2.0.9) (Revelle, 2020) was used to perform principal components analysis on EpiScores. Figures 1 and 2 were created with BioRender.com. Associations for EpiScores that were related to a minimum of three morbidities were subset from the fully adjusted Cox proportional hazards results and were visualised using the ggraph package (Version 2.0.5) (Pedersen, 2021). This network representation was used (Figure 5) to highlight protein EpiScores that were connected with multiple morbidities.
 
-## Consistency of disease associations between EpiScores and measured proteins
+### Consistency of disease associations between EpiScores and measured proteins
 
 Comparisons were conducted between EpiScore-diabetes associations and type 2 diabetes associations with measured proteins using three previous large-scale proteomic studies (Elhadad et al., 2020; Gudmundsdottir et al., 2020; Ngo et al., 2021) In these studies, six cohorts were included (Study 1: KORA n = 993, HUNT n = 940 [Elhadad et al., 2020], Study 2: AGES-Reykjavik n = 5438 and QMDiab n = 356 [Gudmundsdottir et al., 2020], Study 3: Framingham Heart Study n = 1618 and the Malmo Diet and Cancer Study n = 1221). Study 1 included the KORA dataset, which we use in this study to generate SOMAscan EpiScores. We characterised which SOMAscan-based EpiScore-diabetes associations from our fully adjusted results reflected those observed with measured protein levels. We included basic (nominal p < 0.05) and fully adjusted results (with either FDR or Bonferroni-corrected p < 0.05), wherever available, across the lookup cohorts (Supplementary file 1M).
 
-## Relationship between EpiScores and COVID-19 outcomes
+### Relationship between EpiScores and COVID-19 outcomes
 
 Associations between each of the 109 selected protein EpiScores and subsequent long-COVID or COVID-19 hospitalisation were tested in the Generation Scotland population. A binary variable was used for long-COVID based on self-reported COVID-19 duration from the CovidLife study survey 3 questionnaire (N = 2399 participating individuals) (Fawns-Ritchie et al., 2021). Participants were asked about the total overall time they experienced symptoms in their first/only episode of illness, as well as their COVID-19 illness duration. The dataset is correct as of February 2021 when the survey 3 was administered. Of the 9537 individuals with DNAm that were included in incident disease analyses, 173 indicated that they had COVID-19 and 56 of these individuals reported having long-COVID (>4 weeks duration of symptoms after infection). The mean duration from DNAm measurement to long-COVID for these 56 individuals was 11.2 years (sd 1.2). Hospitalisation information, derived from the Scottish Morbidity Records (SMR01), was used to obtain COVID-19 hospital admissions using ICD-10 codes U07.1 (lab-confirmed COVID-19 diagnosis), and U07.2 (clinically diagnosed COVID-19). This data linkage identified 268 of the 9537 individuals that had COVID-19 diagnoses and 29 had been recorded as being hospitalised due to COVID-19. The mean duration from DNAm measurement to hospitalisation for these 29 individuals was 11.9 years (sd 1.4). Logistic regression models with either hospitalisation or long-COVID status as binary outcomes were used, with the 109 scaled protein EpiScores as the independent variables. Sex and age at COVID testing were included as covariates. The latter was defined as the age at positive COVID-19 test or 1 January 2021 if COVID-19 test data were not available.

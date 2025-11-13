@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.44985.001 Complex interspecies relationships are widespread among metazoans, but the evolutionary history of these lifestyles is poorly understood. We describe a fossil beetle in 99-million-year-old Burmese amber that we infer to have been a social impostor of the earliest-known ant colonies. Promyrmister kistneri gen. et sp. nov. belongs to the haeteriine clown beetles (Coleoptera: Histeridae), a major clade of ‘myrmecophiles’—specialized nest intruders with dramatic anatomical, chemical and behavioral adaptations for colony infiltration. Promyrmister reveals that myrmecophiles evolved close to the emergence of ant eusociality, in colonies of stem-group ants that predominate Burmese amber, or with cryptic crown-group ants that remain largely unknown at this time. The clown beetle-ant relationship has been maintained ever since by the beetles host-switching to numerous modern ant genera, ultimately diversifying into one of the largest radiations of symbiotic animals. We infer that obligate behavioral symbioses can evolve relatively rapidly, and be sustained over deep time.
+Complex interspecies relationships are widespread among metazoans, but the evolutionary history of these lifestyles is poorly understood. We describe a fossil beetle in 99-million-year-old Burmese amber that we infer to have been a social impostor of the earliest-known ant colonies. Promyrmister kistneri gen. et sp. nov. belongs to the haeteriine clown beetles (Coleoptera: Histeridae), a major clade of ‘myrmecophiles’—specialized nest intruders with dramatic anatomical, chemical and behavioral adaptations for colony infiltration. Promyrmister reveals that myrmecophiles evolved close to the emergence of ant eusociality, in colonies of stem-group ants that predominate Burmese amber, or with cryptic crown-group ants that remain largely unknown at this time. The clown beetle-ant relationship has been maintained ever since by the beetles host-switching to numerous modern ant genera, ultimately diversifying into one of the largest radiations of symbiotic animals. We infer that obligate behavioral symbioses can evolve relatively rapidly, and be sustained over deep time.
 
 ## Introduction
 
@@ -26,25 +26,37 @@ A pervasive feature of colony-forming insect societies is the profusion of intru
 
 ## Results and discussion
 
-## Systematic palaeontology
+### Systematic palaeontology
 
-## Holotype
+#### Holotype
 
 Sex unknown. CNU-008021, deposited in Key Laboratory of Insect Evolution and Environmental Changes, Capital Normal University, Beijing. The holotype is well preserved in a small, transparent amber piece, 5.5 mm length ×3.5 mm width (Figure 1—figure supplement 1A). The entire external anatomy is observable (Figure 1A‒C), but the left region of the dorsal side is partially covered by white exudate (Figure 1A,G) emanating from the ventral side of the pronotal margin (arrow in Figure 1A,G).
 
-## Diagnosis of new genus and species
+![Figure 1.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig1-v1.jpg)
+
+**Figure 1.:** (A) Dorsal habitus of holotype CNU-008021 with origin of exudate globule (black arrow) and elytral striae (white arrows) indicated; the three lateral striae are complete (top three arrows), the three medial striae appear incomplete. (B) Right lateral habitus with flight wing indicated. (C) Ventral habitus, boxed region expanded in panel H. (D) Head, dorsal and (inset) frontal views, with antennal scapes and frontoclypeal carina (FC) indicated. (E) Right foreleg, laterally expanded femur and tibia indicated. (F) Proventral-mesoventral boundary showing proventral keel with posterior incision. (G) Left pronotal margin, lateral view, showing possible origin of putative glandular exudate; arrow in G corresponds to that in panel A. (H) Ventrite one showing proximal leg segments (Trc: trochanter) and postcoxal gland openings (white arrows), with globule of putative exudate emanating from left postcoxal gland opening.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (CNU-008021). (A) Amber piece containing holotype. (B) Frontal view of head. Scapes (covering eyes) shaded blue, apex of antenna red. Lateral concavities to receive antennae demarcated by white dotted lines. (C) Diagram of frontal view of head, to show key systematic characters.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Right coxal region showing postcoxal glandular opening and coxal striae. (B) Left coxal region showing postcoxal glandular opening with exudate. (C) Confocal image of right metacoxa showing oblique striae on inner side. (D) Confocal image of left gland opening secreting exudate.
+
+#### Diagnosis of new genus and species
 
 Haeteriine histerid that is distinguished from all other genera and species of Haeteriinae by possession of the following combination of characters: (1) deep depression behind meso- and metacoxae (Figure 1C,H); (2) metaventral postcoxal line recurved and extending laterally to metanepisternum (Figure 1B,C; (3) three complete striae on each elytron (Figure 1A); (4) lack of dorsal furrows on pronotum demarcating glandular lobe (Figure 1A,B); (5) strongly developed apical spur on protibia (Figure 1D,E); (6) frontoclypeus carinate medially (Figure 1D, Figure 1—figure supplement 1B,C); (7) triangular-shaped cavities to receive scapes of antennae (Figure 1—figure supplement 1B,C); (8) glandular opening in postcoxal cavity behind metacoxae (Figure 1H; Figure 1—figure supplement 2A,B,D). Promyrmister specifically differs from the closely related Haeterius in having deep epistomal depressions (Figure 1—figure supplement 1B,C; compare to Figure 2—figure supplement 1D), carinated epistomal striae convergent in the middle (Figure 1—figure supplement 1B,C) and paddle-shaped protibia with large apical spur (Figure 1D,E).
 
-## Locality and age
+#### Locality and age
 
 The holotype inclusion is derived from an amber mine located near Noije Bum, Tanaing, Kachin, Myanmar. The U-Pb dating of zircons from the volcanoclastic matrix yielded an age of 98.79 ± 0.62 million years (Shi et al., 2012).
 
-## Etymology
+#### Etymology
 
-The generic name Promyrmister is a combination of the Greek πϱó (pro) meaning ‘before’ or ‘early’, μûρμηξ (myrmex) meaning ‘ant’, and Hister Linnaeus, type genus of Histeridae. The name refers to the likely symbiotic habits of the fossil taxon inside early ant colonies. The gender is masculine. The specific epithet recognizes the lifetime contribution of Dr. David H. Kistner, a global authority on social insect symbionts.
+The generic name Promyrmister is a combination of the Greek π$ϱ$ó (pro) meaning ‘before’ or ‘early’, μûρμηξ (myrmex) meaning ‘ant’, and Hister Linnaeus, type genus of Histeridae. The name refers to the likely symbiotic habits of the fossil taxon inside early ant colonies. The gender is masculine. The specific epithet recognizes the lifetime contribution of Dr. David H. Kistner, a global authority on social insect symbionts.
 
-## Description
+#### Description
 
 Length 3.2 mm, width 2.3 mm. Body elongate oval (Figure 1A,C), moderately convex (Figure 1B); black or dark brown with dorsal surfaces bearing short and somewhat squamiform setae, visible along pronotal and elytral edges but on dorsal side often obscured by accumulation of water/dirt and appearing as tiny granules; interstices between setae moderately to distinctly shiny.
 
@@ -56,13 +68,29 @@ Mesoventrite between mesocoxae very broad, about 1/3 of body width at the same p
 
 Abdomen with median part of ventrite one delimited to a flat and polished central plate by inner abdominal stria, much longer than the remaining ventrites combined (Figure 1C); postcoxal line (outer abdominal stria) recurved and strongly diverging laterally (Figure 1B,C); also with deeply depressed rest for hind tibia outside the postcoxal line. Large abdominal gland opening behind hind coxa located between inner and outer abdominal striae (Figure 1H), on right side with exudate flowing out (paired arrows in Figure 1H; Figure 1—figure supplement 2B,D, note that laser reflectance indicates this is solidified material and not a gas/air bubble, which would appear dark). Ventrites 2‒four equal in length, without posterior marginal striae.
 
-## Systematic position
+#### Systematic position
 
 The fossil beetle is placed in Histeridae based on its possession of the following characters (Kovarik and Caterino, 2000): (i) a broad and compact body shape (Figure 1A,C); (ii) striate elytra that expose the two posterior abdominal tergites (Figure 1A); ii) five visible abdominal sternites (Figure 1C); (iv) short legs with broad, flattened tibiae (Figure 1C,E); (v) antenna short and geniculate with compact, 3-segmented club (Figure 1—figure supplement 1B); (vi) antenna retracting into cavity underneath the pronotum (Figure 1—figure supplement 1B); (vii) tarsal formula 5-5-5. Of the 11 histerid subfamilies (Bouchard et al., 2011), Promyrmister can be placed unequivocally in the subfamily Haeteriinae based on the following characters: head deflexed, with clypeus arched downwards in a different plane to the vertex (Figure 1D); antenna with enlarged, triangular scape received in repose in frontal groove and hiding the eye (Figure 1D; Figure 1—figure supplement 1B,C); antennal cavities located on hypomeron (Figure 1—figure supplement 1B), covered from below by proventral alae; proventral lobe strongly developed anteriorly, covering head from below, and extending laterally to form proventral alae (without lateral notch); proventral keel narrowly elevated between coxae and distinctly emarginate posteriorly to receive the projecting mesoventral process (Figure 1F). Additionally, the front, mid, and hind legs are extremely broad (Figure 1C,E), which is a feature of the clade Yarmister + Haeteriinae (Caterino and Tishechkin, 2015), in which Yarmister lacks the distinctly elevated proventral keel with posterior incision, which is present in Promyrmister and is an autapomorphy of the Haetaeriinae (Helava et al., 1985). The labrum of the fossil specimen may also be fused, but fossilization position precludes definitive assessment.
 
 Within Haeteriinae, the new taxon appears to bear a close relationship to the genus Haeterius Erichson and some closely allied genera that share several morphological characters supporting their monophyly (Yélamos, 1997), principally the broad and externally rounded tibiae, the deep depressions behind meso- and metacoxae to accommodate retracted legs (Figure 1C,H) (Caterino and Tishechkin, 2015), the metaventral postcoxal line being recurved and extending laterally to the metanepisternum (Figure 1B,C), and the presence of three complete striae on each elytron (Figure 1A). Morphological features of the extant Haeterius, with key character states shared with Promyrmister, are shown in Figure 2—figure supplement 1 (see Diagnosis for separation of Promyrmister and Haeterius). Consistent with our evaluation of Promyrmister’s likely phylogenetic placement, both cladistic and Bayesian analysis of a set of morphological characters (Caterino and Tishechkin, 2015) from the fossil specimen and a selection of Recent histerid taxa places the new taxon within Haeteriinae as sister to Haeterius (Figure 2A,B; Figure 2—figure supplements 2 and 3). We infer that Promyrmister represents an extinct Cretaceous lineage that belongs within the crown-group of Haeteriinae.
 
-## Promyrmister and deep-time persistence of a social symbiosis
+![Figure 2.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig2-v1.jpg)
+
+**Figure 2.:** (A) Consensus Bayesian Inference (BI) tree of representative histerid taxa including Haeteriinae, and Promyrmister. Posterior probabilities above 0.8 are shown on branches. (B) The consensus parsimony tree (MP) using TNT under the Traditional Search; bootstrap percentages above 80 are shown on branches. (C) Habitus photograph of Haeterius (H. ferrugineus), an inferred extant close relative of Promyrmister (photo credit: C. Fägerström) (D, E) Living Haeterius ferrugineus beetles interacting with Formica (D) and Lasius (E) host ants (photo credit: P. Krásenský). (F) Reconstruction of Promyrmister with stem-group host ant and larva (ant based on Gerontoformica).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Habitus in dorsal view with three elytral striae indicated by arrows; (B) Habitus in ventral view; (C) Ventral thoracic region with proventrite colored pink to show expanded proventral lobe (anterior margin) covering underside of head, and proventral keel (posterior margin) which receives the mesoventral process. Left postcoxal glandular opening is indicated. (D) Ventral head showing retraction under pronotum and flattened clypeus aligned along dorsoventral plane of the body. Enlarged scapes (blue) cover eyes, and antennae retract into prothoracic cavities. (E) Middle leg showing expanded femur and tibia.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Character mapping in WinClada with unambiguous optimization. Black circles indicate unique character state changes; white circles indicate parallelisms or reversals; character numbers are above circles; character states are below circles.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Character mapping in WinClada with unambiguous optimization. Black circles indicate unique character state changes; white circles indicate parallelisms or reversals; character numbers are above circles; character states are below circles.
+
+### Promyrmister and deep-time persistence of a social symbiosis
 
 Symbiotic relationships in which different animal species interact socially with each other have arisen sporadically across the metazoan tree of life. Such relationships encompass a spectrum of dependency, from transient, facultative associations seen in mixed-species groups of insectivorous birds (Sridhar et al., 2009), cetaceans and ungulates (Stensland et al., 2003; Goodale et al., 2017), to obligate symbiotic lifestyles typified by brood parasitic cuckoos, cowbirds (Johnsgard, 1997), mutualistic cleaner fish (Grutter, 1999) and oxpeckers (Nunn et al., 2011). Of all animal groups, however, the complex societies of ants play host to the greatest diversity of behavioral symbionts. Several major radiations of myrmecophiles are known, each containing hundreds of symbiotic species, including the lycaenid butterflies (Pierce et al., 2002), eucharitid wasps (Murray et al., 2013), paussine ground beetles (Moore and Robertson, 2014) and multiple lineages of rove beetles (Kistner, 1979; Kistner, 1982; Parker, 2016; Parker and Grimaldi, 2014; Seevers, 1965; Maruyama and Parker, 2017). The diversity and often-broad geographic ranges of these clades imply that their relationships with ants are evolutionarily ancient (Parker and Grimaldi, 2014; Yamamoto et al., 2016). Although fossil myrmecophiles are known from as far back as the Eocene (Parker and Grimaldi, 2014; Wasmann, 1929), ant eusociality is known to be at least twice as old, with the earliest definitively social ants occurring in Upper Cretaceous Burmese amber (Barden and Grimaldi, 2016). Whether their colonies were targeted by myrmecophiles has, however, been unclear: ants are comparatively scarce in Cretaceous ambers (Grimaldi and Agosti, 2000; LaPolla et al., 2013; Barden, 2016; Barden, 2018), and myrmecophilous invertebrates typically live at densities orders of magnitude lower than their hosts (Kistner, 1979). The unlikely discovery of a myrmecophile clown beetle in Burmese amber reveals that a major radiation of ant symbionts has its origins in Mesozoic ant societies.
 
@@ -74,7 +102,7 @@ What were the Cretaceous host ants of Promyrmister? All ants thus far described 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/44985/elife-44985-fig3-v1.jpg)
 
-**Figure 3.:** Promymister implies pervasive host switching of Haeteriinae from Cretaceous to Recent.Age of Promyrmister is shown (red circle). The inferred window of occurrence of stem-group ants is indicated by the top orange bar. The ages of crown-group ants as a whole, New World (NW) army ants, and other specific subfamilies and genera that are known hosts of Haeteriinae are also presented. Orange bars extend back from the Recent to the age of the earliest-known fossil; dotted lines extend back to molecularly-inferred origins of crown groups. Molecular dating implies crown-group ants existed at the same time as Promyrmister, but stem-group ants are the only ants so far known in Burmese and other contemporaneous ambers. All modern host ant genera are inferred to have Cenozoic origins, implying extensive host switching between the inferred Early Cretaceous origin of Haeteriinae and the present day.
+**Figure 3.:** Age of Promyrmister is shown (red circle). The inferred window of occurrence of stem-group ants is indicated by the top orange bar. The ages of crown-group ants as a whole, New World (NW) army ants, and other specific subfamilies and genera that are known hosts of Haeteriinae are also presented. Orange bars extend back from the Recent to the age of the earliest-known fossil; dotted lines extend back to molecularly-inferred origins of crown groups. Molecular dating implies crown-group ants existed at the same time as Promyrmister, but stem-group ants are the only ants so far known in Burmese and other contemporaneous ambers. All modern host ant genera are inferred to have Cenozoic origins, implying extensive host switching between the inferred Early Cretaceous origin of Haeteriinae and the present day.
 
 Whether haeteriines evolved in stem- or crown-group ant colonies, their original hosts are presumably long-extinct. The present-day host associations of haeteriines imply that these myrmecophiles have host-switched between many modern ant lineages (Figure 3). The beetles have been recorded in colonies of ant species scattered across the subfamilies Dolichoderinae, Dorylinae, Formicinae, Myrmicinae and Ponerinae (Helava et al., 1985; Tishechkin, 2007) (Figure 3). We suggest that it is this capacity for host switching that may explain the great longevity of the clown beetle-ant symbiosis. Through host switching, the clade as a whole has circumvented potential coextinction with host ant lineages that disappeared from the Cretaceous to the present (Barden and Grimaldi, 2016; Barden, 2016). Moreover, in some cases, the beetles have radiated dramatically with certain ant groups: the vast majority of the contemporary species richness of Haeteriinae is found in taxa that have adapted to colonies of Neotropical army ants (Ecitonini), including at least 30 genera associated with Eciton army ants alone (Parker, 2016; Helava et al., 1985; von Beeren and Tishechkin, 2017; Tishechkin, 2007). Some of these haeteriines have remarkable adaptations for life in colonies of those nomadic ants (Figure 4). Neotropical army ants are thought to have begun diversifying approximately in the Oligocene (Brady et al., 2014; Borowiec et al., 2017b), implying that the bulk of haeteriine cladogenesis occurred within this window too, long after the beetles originated in the Cretaceous.
 
@@ -86,11 +114,11 @@ An ancient association between histerids and ants is further suggested by inquil
 
 ## Materials and methods
 
-## Material and photography
+### Material and photography
 
 This study is based on a single specimen of Burmese amber (CNU-008021) collected from Noije Bum, Tanaing, Kachin, Myanmar. The specimen is housed at Key Laboratory of Insect Evolution and Environmental Changes, Capital Normal University, Beijing. The holotype of the new genus and species is embedded in a cuboid amber piece. The holotype was examined under a Leica M205C dissecting microscope and photographed using a Visionary Digital BK Lab Plus system (Austin, Texas). The source images were aligned and stacked in Helicon Focus (Ukraine). Fluorescence images of the fossil were made on a Zeiss LSM 880 (with Airyscan) confocal microscope (Germany) with a 488 nm laser. Scanning electron microscopic images of Haeterius were obtained using a Tabletop Hitachi Microscope TM3030Plus (Japan). Morphological terminology follows Ślipiński and Mazur (1999), Zhou et al. (2018), and Caterino and Tishechkin (2015).
 
-## Taxon sampling, morphological characters and phylogenetic analysis
+### Taxon sampling, morphological characters and phylogenetic analysis
 
 We scored Promyrmister for 259 external morphological characters used by Caterino and Tishechkin (2015) in a study investigating relationships among the tribe Exosternini, which is closely related to Haeteriinae. From the original matrix, we selected all taxa from the nearest sister clades of Haeteriinae, including 35 taxa belonging to Exosternini, including all species of Yarmister (apparently the closest genus to Haeteriinae; Caterino and Tishechkin, 2015). We also included representatives of four other tribes: Omalodini, Histerini, Hololeptini and Platysomatini, and assigned Hister unicolor as the primary outgroup, following Caterino and Tishechkin (2015). The final taxon list is presented in Supplementary file 2A.
 
@@ -104,16 +132,16 @@ We also enlarged our data matrix by adding one more taxon (Haeterius ferrugineus
 
 The complete matrix of 46 taxa, 261 characters was constructed in Mesquite v. 3.20 (Maddison and Maddison, 2016); the matrix is provided in the nexus file (Supplementary file 1). Bayesian analysis was carried out using MrBayes 3.2.6 (Ronquist et al., 2012) accessed via the CIPRES Science Gateway Version 3 (Miller et al., 2010) (phylo.org). The Mkv model of character evolution was used with a gamma distribution, and two MCMC were executed with four chains for 100 million generations. Convergence was judged to have occurred when the standard deviation of split frequencies dropped below 0.005, and by ESS values higher than 200 in Tracer v1.7.0 (Rambaut et al., 2018), indicating adequate estimation of the posterior. The first 25% of trees were discarded as burn-in. We used Treeannotator (Bouckaert et al., 2014) to obtain the maximum clade credibility tree from post burn-in trees (ESS > 200) (Figure 2A), and added the estimated nodal Bayesian posterior probability (BPP) in FigTree v1.4.3 (https://github.com/rambaut/figtree/). Parsimony analysis was conducted in TNT Version 1.5 (Goloboff and Catalano, 2016) using Traditional Search without, and with implied weighting setting (function K = 13 in Figure 2—figure supplements 2 and 3). A consensus tree (Figure 2B; L = 1604, CI = 25, RI = 42) was obtained from four shortest-length trees (L = 1483, CI = 28, RI = 48) and the branch support was also calculated using 10,000 bootstrap replicates. Mapping character state changes onto the tree was performed in WinClada (Nixon, 2002).
 
-## Host ant ages
+### Host ant ages
 
 A list of haeteriine host ant genera was obtained from the literature (Helava et al., 1985; Yélamos, 1997; Tishechkin, 2007; Lapeva-Gjonova, 2013; Mazur, 1981). To estimate ages of stem-group and Recent host ant taxa in Figure 3a, data for earliest-known fossils were obtained from Barden (2016) (Barden, 2016; Barden, 2018), and molecular age estimates of crown-groups were taken from recent taxon-specific phylogenetic studies (Borowiec et al., 2017a; Borowiec et al., 2017b; Blaimer et al., 2015; Ward et al., 2015; Ferguson-Gow et al., 2014; Ward et al., 2010; Schmidt, 2013). Data are presented in Supplementary file 2B.
 
-## Nomenclatural acts
+### Nomenclatural acts
 
 This published work and the nomenclatural acts it contains have been registered in ZooBank, the online registration system for the International Code of Zoological Nomenclature. The ZooBank LSIDs (Life Science Identifiers) can be resolved and the associated information viewed through any standard web browser by appending the LSID to the prefix ‘http://zoobank.org/’. The LSIDs for this publication are to be found at:
 
 The specific LSIDs for new nomenclatural acts:
 
-## Data availability
+### Data availability
 
 All data generated or analyzed during this study are included in this published article (and its Supplementary Information files). The holotype specimen of Promyrmister kistneri is housed at Key Laboratory of Insect Evolution and Environmental Changes, Capital Normal University, Beijing (accession number CNU-008021).

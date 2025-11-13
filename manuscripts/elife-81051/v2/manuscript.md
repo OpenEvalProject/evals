@@ -10,17 +10,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0446vnd56 Western Kentucky University Bowling Green United States
+1. Western Kentucky University Bowling Green United States ([ROR:0446vnd56](https://ror.org/0446vnd56))
 2. Stanford Cardiovascular Institute Stanford United States
-3. https://ror.org/05bnh6r87 Cornell University Ithaca United States
-4. https://ror.org/046rm7j60 University of California, Los Angeles Los Angeles United States
-5. https://ror.org/05rrcem69 University of California, Davis Davis United States
+3. Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+4. University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+5. University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
 
 † Corresponding author
 
 ## Abstract
 
-Several fields have described low reproducibility of scientific research and poor accessibility in research reporting practices. Although previous reports have investigated accessible reporting practices that lead to reproducible research in other fields, to date, no study has explored the extent of accessible and reproducible research practices in cardiovascular science literature. To study accessibility and reproducibility in cardiovascular research reporting, we screened 639 randomly selected articles published in 2019 in three top cardiovascular science publications: Circulation, the European Heart Journal, and the Journal of the American College of Cardiology (JACC). Of those 639 articles, 393 were empirical research articles. We screened each paper for accessible and reproducible research practices using a set of accessibility criteria including protocol, materials, data, and analysis script availability, as well as accessibility of the publication itself. We also quantified the consistency of open research practices within and across cardiovascular study types and journal formats. We identified that fewer than 2% of cardiovascular research publications provide sufficient resources (materials, methods, data, and analysis scripts) to fully reproduce their studies. Of the 639 articles screened, 393 were empirical research studies for which reproducibility could be assessed using our protocol, as opposed to commentaries or reviews. After calculating an accessibility score as a measure of the extent to which an article makes its resources available, we also showed that the level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E−5) and across journals (0.19 through 0.34, p = 1.230E−2). We further showed that there are significant differences in which study types share which resources. Although the degree to which reproducible reporting practices are present in publications varies significantly across journals and study types, current cardiovascular science reports frequently do not provide sufficient materials, protocols, data, or analysis information to reproduce a study. In the future, having higher standards of accessibility mandated by either journals or funding bodies will help increase the reproducibility of cardiovascular research. Authors Gabriel Heckerman, Arely Campos-Melendez, and Chisomaga Ekwueme were supported by an NIH R25 grant from the National Heart Lung and Blood Institute (R25HL147666). Eileen Tzng was supported by an AHA Institutional Training Award fellowship (18UFEL33960207).
+Background:Several fields have described low reproducibility of scientific research and poor accessibility in research reporting practices. Although previous reports have investigated accessible reporting practices that lead to reproducible research in other fields, to date, no study has explored the extent of accessible and reproducible research practices in cardiovascular science literature.Methods:To study accessibility and reproducibility in cardiovascular research reporting, we screened 639 randomly selected articles published in 2019 in three top cardiovascular science publications: Circulation, the European Heart Journal, and the Journal of the American College of Cardiology (JACC). Of those 639 articles, 393 were empirical research articles. We screened each paper for accessible and reproducible research practices using a set of accessibility criteria including protocol, materials, data, and analysis script availability, as well as accessibility of the publication itself. We also quantified the consistency of open research practices within and across cardiovascular study types and journal formats.Results:We identified that fewer than 2% of cardiovascular research publications provide sufficient resources (materials, methods, data, and analysis scripts) to fully reproduce their studies. Of the 639 articles screened, 393 were empirical research studies for which reproducibility could be assessed using our protocol, as opposed to commentaries or reviews. After calculating an accessibility score as a measure of the extent to which an article makes its resources available, we also showed that the level of accessibility varies across study types with a score of 0.08 for case studies or case series and 0.39 for clinical trials (p = 5.500E−5) and across journals (0.19 through 0.34, p = 1.230E−2). We further showed that there are significant differences in which study types share which resources.Conclusions:Although the degree to which reproducible reporting practices are present in publications varies significantly across journals and study types, current cardiovascular science reports frequently do not provide sufficient materials, protocols, data, or analysis information to reproduce a study. In the future, having higher standards of accessibility mandated by either journals or funding bodies will help increase the reproducibility of cardiovascular research.Funding:Authors Gabriel Heckerman, Arely Campos-Melendez, and Chisomaga Ekwueme were supported by an NIH R25 grant from the National Heart Lung and Blood Institute (R25HL147666). Eileen Tzng was supported by an AHA Institutional Training Award fellowship (18UFEL33960207).
 
 ## Introduction
 
@@ -34,7 +34,7 @@ With this study, we hoped to identify the prevalence of accessible and reproduci
 
 ## Materials and methods
 
-## Sampling plan
+### Sampling plan
 
 To determine the prevalence of accessible and reproducible research practices within cardiovascular literature, data was gathered from a random selection of all published studies in 2019 in the following three leading cardiology journals (Opthof, 2019): Circulation, European Heart Journal, and the Journal of the American College of Cardiology (JACC). To limit the scope of our analysis, we only included articles published in the year of 2019. This specific year was selected because it was the most recent full year not influenced by changes in reporting practices due to the COVID-19 pandemic.
 
@@ -44,13 +44,98 @@ No blinding was involved in this study and each article was screened at least tw
 
 We initially screened 400 randomly selected articles, however of those articles only 153 were empirical research articles for which we could calculate accessibility measures. To increase the number of empirical research articles in our study, we therefore conducted a second round of screening. All aspects remained the same during additional screening other than generating the following new PubMed search string: (‘Circulation’[Journal] OR ‘J Am Coll Cardiol’[Journal] OR ‘Eur Heart J’[Journal]) AND 2019/01/01:2019/12/31 [Date – Publication] NOT ((review[Publication Type]) OR (systematic review[Publication Type]) OR (editorial[Publication Type]) OR (comment[Publication Type]) OR (‘case reports’[Publication Type]) OR (‘Introductory Journal Article’[Publication Type]) OR (‘Historical Article’[Publication Type]) OR (‘Practice Guideline’[Publication Type])). This search string retrieved 1461 primarily empirical articles. This list was also randomized and the first 239 articles that had not already been screened were added to the first set of 400 screened articles. Researchers screened the new articles sequentially and any remaining non-empirical articles were removed from the list and replaced with an empirical research article.
 
-## Variables
+### Variables
 
 Following a modified version of a previously established coding protocol for reproducible and accessible research practices (Iqbal et al., 2016), the following criteria were screened during the evaluation process: type of reported study, pre-registration status, protocol availability, materials availability, data availability, analysis script availability, conflict of interest (COI) status, and open access of the article. An article’s ‘accessibility score’ was calculated as the fraction of several accessibility criteria results with the specific criteria satisfied out of the total possible to be satisfied for that specific study type. See Table 1 for a list of screening criteria that contributed to the calculation of the accessibility score. Note that for papers without the ability to share Materials (e.g. Meta-analyses), the materials criterion was omitted from the accessibility score calculation. Our article coding form is derived from Iqbal et al., 2016 and can be found as Qualtrics.qsf and Word files in the pre-registration (Campos-Melendez et al., 2021).
 
+**Table 1.**
+ Criteria determining accessibility score and criteria-satisfying responses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Criteria screened</th>
+      <th>Criteria-satisfying responses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>How clearly stated was the study type?</td>
+      <td>Stated (e.g. editorial comment, clinical trial)</td>
+    </tr>
+    <tr>
+      <td>Does the article state whether or not materials are available?</td>
+      <td>Yes the statement says that the materials (or some of the materials are available).*</td>
+    </tr>
+    <tr>
+      <td>Can you access, download, and open the materials files?</td>
+      <td>Yes.*</td>
+    </tr>
+    <tr>
+      <td>Does the article state whether or not data are available?</td>
+      <td>Yes – the statement says that the data (or some of the data) are available.</td>
+    </tr>
+    <tr>
+      <td>Can you access, download, and open the data files?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Are the data files clearly documented?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Do the data files appear to contain all of the raw data necessary to reproduce the reported findings?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Does the article state whether or not analysis scripts are available?</td>
+      <td>Yes – the statement says that the analysis scripts (or some of the analysis scripts) are available.</td>
+    </tr>
+    <tr>
+      <td>Can you access, download, and open the analysis files?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>Does the article state whether or not the study (or some aspect of the study) was pre-registered?</td>
+      <td>Yes – the statement says that there was a pre-registration.</td>
+    </tr>
+    <tr>
+      <td>Can you access and open the pre-registration?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>What aspects of the study appear to be pre-registered? (select all that apply)</td>
+      <td>Hypotheses, Methods, AND Analysis Plan all available.</td>
+    </tr>
+    <tr>
+      <td>Does the article link to an accessible protocol?</td>
+      <td>Yes.</td>
+    </tr>
+    <tr>
+      <td>What aspects of the study appear to be included in the protocol? (select all that apply)</td>
+      <td>Hypotheses, Methods, AND Analysis Plan all available.</td>
+    </tr>
+    <tr>
+      <td>Does the article include a statement indicating whether there were any conflicts of interest?</td>
+      <td>Any of the following can be selected:Yes – the statement says that there are one or more conflicts of interest.Yes – the statement says that there is no conflict of interest.</td>
+    </tr>
+    <tr>
+      <td>Does the article include a statement indicating whether there were funding sources?</td>
+      <td>Any of the following can be selected:Yes – the statement says that there was funding from a private organization.Yes – the statement says that there was funding from a public organization.Yes – the statement says that there was funding from both public and private organizations.Yes – the statement says that no funding was provided.</td>
+    </tr>
+    <tr>
+      <td>Is the article open access?</td>
+      <td>Any of the following can be selected:Yes – found via Open Access Button.Yes – found via other means.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*This criterion was not included for publications for which it was not possible to share materials._
+
 The four criteria defining repeatability – methods (protocol or pre-registration), materials, data, and analysis script availability – are each considered an accessibility category. Each individual criterion in these four categories can be either satisfied or not. For a study to be considered fully ‘replicable’ all three of the following categories must be available: methods, data, and analysis scripts. For a study to be considered fully ‘reproducible’, all three of the following categories must be available: methods, data, and analysis scripts. If an article is either partially replicable or partially reproducible it is considered ‘partially repeatable’. Definitions of replicability and reproducibility were set based on those introduced by the National Academies of Sciences, Engineering and Medicine (NASEM) (2019). We defined the ability to replicate a study as the attempt to obtain the same results as a study by collecting new data. Reproducing a study describes the attempt to obtain the same results as a study by re-analyzing its data.
 
-## Analysis
+### Analysis
 
 Only articles that were fully screened and for which all ambiguities had been resolved were included in the final analysis. Papers written in a language other than English were also excluded, as well as any articles for which we could not access the full text. Articles without empirical data (e.g. review articles, commentaries, and editorials) were evaluated for author location, language, COI, funding statements, and public access of the article itself, but were otherwise not screened for accessibility criteria because these study types by their nature cannot share, for example, materials, data, or analysis code. We also screened whether studies could share materials or not. For example, meta-analyses are empirical research studies, but do not typically have any shareable materials. One such example is a meta-analysis (Russo et al., 2019), which was screened as an empirical paper but could not have materials due to the nature of the research conducted. Our analysis does assume, however, that all empirical research articles involve a protocol, the collection or re-use of data, and analysis of that data, and therefore methods, data, and analysis code or scripts should always be available.
 
@@ -60,7 +145,7 @@ To test for inconsistent, or variable, levels of accessibility, we examined our 
 
 To evaluate the relationship between accessibility criteria (Materials, Methods, Data, and Analysis Code) and study types, we performed several sequential chi-squared tests of proportions. In cases with 0 samples in a group, we instead performed Fisher’s exact tests. Tests were performed using R. We compared the proportion of papers that did and did not allow access to those four categories of information and resources, across all four categories. We also used chi-squared tests to further compare the proportion of papers that provided access to each category of information and which study types shared more or less of a specific type of information compared to other study types. We considered p-values ≤0.05 to indicate significant differences in proportions. We used Bonferroni correction to adjust the p-value for the number of tests performed. Note that this analysis differs slightly from that proposed in our pre-registration: Chi square Automatic Interaction Detection (CHAID).
 
-## Pre-registration
+### Pre-registration
 
 This study was pre-registered through the Open Science Foundation and can be accessed at https://doi.org/10.17605/OSF.IO/QFSTH (Campos-Melendez et al., 2021).
 
@@ -74,7 +159,7 @@ We screened a similar proportion of 2019 articles from each of the three top car
 
 **Figure 1.:** Summary of all screened publications on their (A) study type, (B) study type clarity, (C) journal in which it was published, (D) presence of funding source statement, (E) presence of conflict of interest (COI) statement, and (F) open access status.
 
-## Cardiovascular research publications rarely make their resources available
+### Cardiovascular research publications rarely make their resources available
 
 Looking only at articles that included empirical research (393 out of 639 total articles), the majority had had no pre-registration statement (286) or no linked and accessible protocol (383; Figure 2A). Of the papers that had a pre-registration statement, nearly all of them had accessible and openable pre-registrations (106 out of 107; Figure 2A). Among articles that had an openable and accessible pre-registration or protocol, almost all articles included methods (106 out of 106, 9 out of 10), approximately half included hypotheses (44 out of 106, 7 out of 10), and less than half included analysis plans (27 out of 106, 5 out of 10; Figure 2A). We define a publication to have all pre-registration aspects if hypotheses, methods, and analysis are pre-registered. Of the 393 screened publications that have empirical research, 53 had 1 out of 3 of the aspects, 35 had 2 out of 4 of the aspects, and 18 studies had all three aspects.
 
@@ -88,9 +173,9 @@ The majority of cardiovascular publications are not readily replicable or reprod
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig3-v2.jpg)
 
-**Figure 3.:** n = 393 studies).An article is considered ‘partially replicable’ if any of material availability, analysis script availability, and methods criteria are satisfied and ‘fully replicable’ if all three criteria are satisfied. An article is considered ‘partially reproducible’ if any of data availability, analysis script availability, and methods are satisfied and ‘fully reproducible’ if all three criteria are satisfied. Note that these data describe the potential for a study to be partially or fully reproduced or replicated based on the availability of the study’s resources (methods, materials, data, and code), not whether the study was itself replicated or reproduced.
+**Figure 3.:** An article is considered ‘partially replicable’ if any of material availability, analysis script availability, and methods criteria are satisfied and ‘fully replicable’ if all three criteria are satisfied. An article is considered ‘partially reproducible’ if any of data availability, analysis script availability, and methods are satisfied and ‘fully reproducible’ if all three criteria are satisfied. Note that these data describe the potential for a study to be partially or fully reproduced or replicated based on the availability of the study’s resources (methods, materials, data, and code), not whether the study was itself replicated or reproduced.
 
-## Accessibility varies across journals and study types
+### Accessibility varies across journals and study types
 
 With the exception of one paper, the entire dataset exhibited low accessibility with scores lower than 0.6; the majority of articles (144 out of 393) had accessibility scores within the 0.20–0.29 range and 18 articles had scores below 0.1. Only one article exhibited an accessibility score of 0.6 or greater (Figure 4A).
 
@@ -102,15 +187,116 @@ We also predicted that the level of accessibility will be inconsistent across se
 
 We also predicted a significant difference in the number of accessibility criteria satisfied across journals due to differences in reporting policies. The largest proportion of articles screened were obtained from Circulation with a total number of 226 articles, and 74% of those were empirical research papers (168 out of 226). 63% of JACC articles (138 out of 220) and 45% of Circulation articles (87 out of 193) were empirical research for which we could calculate an accessibility score. After computing the average accessibility score for all three journals, Circulation had the highest average accessibility score (0.34), followed by the Journals of the American College of Cardiology (0.24), then the European Heart Journal (0.19) (Figure 4B). Accessibility scores vary significantly across journals (ANOVA, d.f. 2, F = 80.07, p = 1.230E−2). There was not a significant interaction between study type and journal (p = 0.284).
 
-## Categories of accessible resources varies across study types
+### Categories of accessible resources varies across study types
 
 We also predicted some categories of resources will be accessible significantly more frequently than other categories (e.g. materials availability vs analysis script availability). We found that there was a significant difference in the proportion of papers that shared specific categories of resources (X2 = 55.2, p = 6.17e−12). We then further identified whether different study types exhibited differences in the proportions of shared resources, for example, whether there was a difference in the proportion of papers that have accessible data depending on study type. Note that we did not include Clinical Studies with Interventions, Meta-analysis or Systematic Reviews, Non-clinical Secondary Data Analysis, or Laboratory Cell or Molecular Studies in this analysis due to their small sample size. For all four shareable resources (Materials, Methods, Data, and Analysis), we found a significant difference across study types (Table 2).
+
+**Table 2.**
+ p-values of chi-square tests of study type for each category of resource.We tested for a significant relationship between study type and availability of resources. ‘Yes’ refers to a paper including the resource and ‘No’ refers to a paper not including the resource. Observed values were compared to expected values for each category of resource.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Yes</th>
+      <th>No</th>
+      <th>Study type chi-square p-value with Bonferroni correction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Materials</td>
+      <td>46</td>
+      <td>308</td>
+      <td>3.05E−13</td>
+    </tr>
+    <tr>
+      <td>Methods</td>
+      <td>107</td>
+      <td>247</td>
+      <td>4.91E−35 (case studies omitted)</td>
+    </tr>
+    <tr>
+      <td>Data</td>
+      <td>107</td>
+      <td>247</td>
+      <td>2.31E−12</td>
+    </tr>
+    <tr>
+      <td>Analysis</td>
+      <td>36</td>
+      <td>318</td>
+      <td>1.58E−12</td>
+    </tr>
+  </tbody>
+</table>
 
 To determine specifically how study types differ in which resources they share, we performed multiple chi-squared tests with Bonferroni correction, comparing each study type with every other study type for a given resource (Figure 5; Table 3). We found that a significantly higher proportion of laboratory animal studies stated that they would share materials than clinical observational studies or clinical trials. We also, as expected, found a significantly higher proportion of clinical trials shared their methods compared to any other study type. With regard to data sharing, we found that a significantly higher proportion of laboratory animal studies shared their data than any other study type. Lastly, a significantly higher proportion of laboratory animal studies shared their analysis code compared to clinical observational studies and clinical trials.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/81051/elife-81051-fig5-v2.jpg)
 
 **Figure 5.:** Methods presence is determined by presence of a pre-registration or linked protocol. Presence is indicated in green, absence in yellow. For each value, both the percentage and the count for that category and study type are shown.
+
+**Table 3.**
+ p-values for chi-squared tests and Fisher’s exact tests comparing the presence or absence of specific accessibility categories (Materials, Methods, Data, and Analysis Code) for each study type compared to every other study type (Clinical Case Study or Series, Clinical Observational Study, Clinical Trial, and Laboratory Animal Study).p-values significant at an alpha level of 0.05 with Bonferroni correction are shown in bold. Use of Bonferroni correction to adjust the p-values for multiple comparisons resulted in some p-values being greater than 1. Given that a probability greater than 100% cannot occur, any values greater than 1 were adjusted to a ceiling value of 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Materials</th>
+      <th>Methods</th>
+      <th>Data</th>
+      <th>Analysis Code</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clinical Case Study or Series vs Clinical Observational Study</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Clinical Case Study or Series vs Clinical Trial</td>
+      <td>1.0</td>
+      <td>3.14E−13</td>
+      <td>0.34</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Clinical Case Study or Series vs Laboratory Animal Study</td>
+      <td>0.04</td>
+      <td>1.0</td>
+      <td>1.86E−5</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Clinical Observational Study vs Clinical Trial</td>
+      <td>1.0</td>
+      <td>1.35E−26</td>
+      <td>0.25</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Clinical Observational Study vs Laboratory Animal Study</td>
+      <td>1.58E−12</td>
+      <td>1.0</td>
+      <td>1.74E−11</td>
+      <td>2.66E−12</td>
+    </tr>
+    <tr>
+      <td>Clinical Trial vs Laboratory Animal Study</td>
+      <td>1.42E−3</td>
+      <td>3.96E−19</td>
+      <td>2.07E−3</td>
+      <td>1.92E−3</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -120,33 +306,131 @@ In general, we found that the simple majority, but not the vast majority, of pub
 
 In an effort to increase replicability and reproducibility of future published cardiovascular literature, there are some initiatives that could be taken. Journals have implemented practices to incentivize researchers to share their materials, methods, data, and analysis scripts, such as open science badges (Kidwell et al., 2016), reporting checklists (Han et al., 2017), and checking articles for reproducibility (Organic Syntheses, 2023) or replicability (Nosek et al., 2015). Our findings suggest increasing these efforts and expanding them to funding agencies would help promote open science practices across the field.
 
-## Publication accessibility
+### Publication accessibility
 
 In collecting data on the fraction of papers that were publicly accessible, we found that only 34 out of 639 articles (5%) were not publicly accessible (Figure 1F). Although this is a fairly low fraction of inaccessible articles, a study’s publication is in many ways the most tangible output of the research, and having publicly accessible publication should be a minimum standard for research. The NIH’s public access policy has been instrumental in ensuring public access to published research reports, but reports funded purely through private sources are not currently under the same reporting mandate.
 
-## Study type
+### Study type
 
 It is notable that over half of the 400 papers we initially randomly selected for screening were non-empirical research, e.g. reviews, editorials, and commentaries. Although these emissions may be effective ways to communicate quickly and effectively with larger audiences, they may not go through the same rigor of review process. We also occasionally screened articles that were simplified summaries of the original research study, geared toward a lay audience. This type of article is valuable in that it makes research more accessible to a broader audience; however, because methods were absent and results were condensed, it was ambiguous whether the studies being reported in these articles had undergone full scientific review. Readers run the risk of assuming that these articles describe a full scientific story as opposed to a news highlight.
 
 In addition, publications of replication studies, or studies that included a replication study, were virtually absent from our dataset (4 out of 393 empirical research publications) – suggesting the field of cardiovascular research puts very little emphasis on replication work. Of concern, several studies also stated outright that their data was not available for replication, stating for example ‘The investigators will not make the data, methods used in the analysis, and materials used to conduct the research available to any researcher for purposes of reproducing the results or replicating the procedure.’ Although there can be legitimate reasons why data sharing is not possible, these statements are typically not accompanied by any justification.
 
-## Materials, methods, data, and analysis script sharing
+### Materials, methods, data, and analysis script sharing
 
 Although data was shared more frequently than materials or analysis scripts, there were still only a total of 13 out of 393 empirical research papers for which data was readily openable to a reader. We acknowledge that authors will often have legitimate reasons for not being able to share resources, including patient privacy. However, it has also been shown that patients are in general very willing to make their data available to further research (Seltzer et al., 2019; Kim et al., 2019). We advocate for research studies actively seeking consent from human subject participants to make their data available and if that consent cannot be obtained to specify that justification for not sharing data in their report.
 
 Although basic research studies more frequently shared materials, data, and analysis scripts than clinical trials, that sharing was frequently ‘upon request from the authors’, which previous studies have shown to be hit-or-miss in terms of yield (Hardwicke et al., 2018). Clinical trials had by far the most consistent availability of a resource category: methods, in the form of pre-registrations. Because pre-registrations are mandated by the FDA to conduct a clinical trial, our results suggest that resource-sharing requirements by funding or approval agencies are effective means of changing practices. It should be noted however, that a recent study by Goldacre et al., 2019 showed that in trials with pre-registrations, only 76% of pre-specified trial outcomes were correctly reported. Therefore, even when trials are pre-registered variable switching is common when reporting results.
 
-## COI and funding statements
+### COI and funding statements
 
 Publications are a critical form of communicating research, and the content and results of publications are often prioritized to the point that COI and funding statements are easy to overlook. As a community, we are often more interested in the results described in publications than the process behind getting them. Personal interests and finances are undeniably a part of experimental integrity and can impact experimental design and therefore COI and funding statements should be given as much attention as other components of the publication. Although it was beyond the scope of this study to perform a rigorous analysis of COI and funding statements, our screening process did reveal numerous cases of ambiguous COI and funding declarations. In Table 4, we capture both problematic and positive examples of COI and funding statements. For example, many COI and funding statements were vague in that they lacked details on how different funders of interests specifically influenced the study, which is important for interpretation of the results. As another example, we also identified ‘Disclosures: None’ as a problematic statement, because it could be interpreted as the authors having no disclosures or that the authors declined to list their disclosures. The relationship between funders and COIs is also ambiguous. Authors frequently listed funders and declared ‘no conflict of interest’; however, funders frequently do have an interest in and impact on the study and therefore represent a COI. If nothing else, it is in the interest of researchers to produce compelling results to maintain good relations and receive future funding from agencies, even if they were funded solely through public organizations.
 
+**Table 4.**
+ Summary table of problematic and informative COI and funding statement examples that we repeatedly came across.Ambiguous or problematic statements are in red and clear statements are in green.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Conflict of interest (COI) statements</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Example</td>
+      <td>Comment</td>
+    </tr>
+    <tr>
+      <td>When the COI is mixed with funding when disclosures are listed as ‘none’.</td>
+      <td>While funding can be considered a conflict of interest, the statements should be carefully separated if ‘disclosures’ and ‘funding’ are listed separately. Support for a specific author may not always be directly funding the project but may influence the project as a conflict of interest.</td>
+    </tr>
+    <tr>
+      <td>‘Conflict of interest: the author has received fees or grants from COMPANY.’</td>
+      <td>‘Fees’ and ‘grants’ are two different elements and should be clarified as both can influence a study. It is unclear whether these fees or grants funded the published study and how they influenced the study if at all.</td>
+    </tr>
+    <tr>
+      <td>‘Both authors have reported that they have no relationships relevant to the contents of this paper to disclose.’ ‘The authors have reported that they have no relationships relevant to the contents of this paper to disclose.’ ‘Conflicts of interest: none.’ ‘Disclosures: none.’</td>
+      <td>This statement suggests that there are potential conflicts of interests and leaves the reader wondering if there are possible conflicts of interests left out. It does not leave room to be confident that there are no conflicts of interests.</td>
+    </tr>
+    <tr>
+      <td>‘Dr. NAME has received research grants from NAME; and has received honoraria for NAME. Dr. NAME has received research grants from NAME. Drs. NAMES are founders of COMPANY and as such have received modest honoraria from COMPANY.’‘Dr. NAME is related through family to a member of COMPANY but neither she, nor her spouse, nor children have financial involvement or equity interest in and have received no financial assistance, support, or grants from the aforementioned.’</td>
+      <td>It is highly ambiguous as to whether this is a funding or COI statement. It is unclear if funders played any role in designing or performing the experiment.</td>
+    </tr>
+    <tr>
+      <td>There is no COI but there is an acknowledgement.</td>
+      <td>Acknowledgements and COI should be separate sections as these two sections have different purposes. Including COI as acknowledgement allows COIs to be easily overlooked.</td>
+    </tr>
+    <tr>
+      <td>No COI or funding statement.</td>
+      <td>COI and funding statements provide additional factors that can impact a study outside of experimental factors. This information should always be included to fully inform readers, particularly when concerns are raised about certain studies or when the information is applied in real-world applications.</td>
+    </tr>
+    <tr>
+      <td>‘NAME served as the Guest Associate Editor for this paper.’</td>
+      <td>Although many authors will not serve as editors for the journals they are applying to, it is helpful to acknowledge when that is the case and the potential conflict of interest.</td>
+    </tr>
+    <tr>
+      <td>The authors specifically state that they have no conflicts of interest.</td>
+      <td>This is a clear and definitive statement that there are no conflicts of interests and readers are not left wondering if there are conflicts of interests that are not mentioned.</td>
+    </tr>
+    <tr>
+      <td>Itemization of funders with explicit listing of the ways funders did not contribute to the study. ‘The authors have reported that they have no relationships relevant to the contents of this paper to disclose.’</td>
+      <td>We believe this is an excellent way of recognizing that funding can be a form of conflict of interest. The authors also specifically state that they have no conflict of interests.</td>
+    </tr>
+    <tr>
+      <td colspan="2">Funding statements</td>
+    </tr>
+    <tr>
+      <td>Example</td>
+      <td>Comment</td>
+    </tr>
+    <tr>
+      <td>Funding in acknowledgements.</td>
+      <td>Funding should be separate from acknowledgements. When funding is included in acknowledgements, it is easily overlooked.</td>
+    </tr>
+    <tr>
+      <td>Long list of affiliations without any statement that the list is funding or COI.</td>
+      <td>Funding and COI should be considered as an opportunity to share how factors outside of the experiment influenced the study. Listing affiliations is not sufficient and should be followed by explanations of why they are listed.</td>
+    </tr>
+    <tr>
+      <td>Funding statement system, particularly when papers list ‘funding on page PAGENUMBER’.</td>
+      <td>Listing ‘funding on page PAGENUMBER’ is ambiguous, leading to issues with finding the funding statement. We experienced cases where we either could not find the funding statement, or it was difficult to access. Funding statements should be listed with their respective articles.</td>
+    </tr>
+    <tr>
+      <td>Funding statement found on pages outside of their respective articles ‘Sources of Funding, see page PAGENUMBER.’</td>
+      <td>Funding statements should be directly associated with their corresponding article. Although including a funding statement elsewhere in a journal issue is better than no funding statement, the location is distant and disconnected from its corresponding article. If a pay wall is present, access may differ between the funding statement and the original article.</td>
+    </tr>
+    <tr>
+      <td>‘Acknowledgements: Dr. NAME is a recipient of a grant from the ORGANIZATION in support of SPECIFIC research.’</td>
+      <td>We believe that funding should be separate from acknowledgements, as these two sections have their own purposes.</td>
+    </tr>
+    <tr>
+      <td>‘Sources of Funding: none.’ ‘Disclosures: Drs. NAMES received modest consulting fees from COMPANY for the conduct of this research. NAME is funded by grants from COMPANY. Dr. NAME reports a charitable grant from the ORGANIZATION, and personal fees from COMPANY. The other authors report no conflicts.’</td>
+      <td>There are no funding sources listed, but numerous avenues of fees, grants, and more are then listed as disclosures. It is not clear that these fees and grants did not influence the study in any way, including whether those fees and grants were used to partially fund the study.</td>
+    </tr>
+    <tr>
+      <td>Under ‘sources of funding’, no sources of funding are listed, but the COI statement refers to (explicit) statements that describe funding for the study.</td>
+      <td>There should not be discrepancies between reports on funding and COI. This makes it difficult for the reader to gauge how factors are truly impacting the study.</td>
+    </tr>
+    <tr>
+      <td>Funding and COI are condensed into a single section below author associations. Funding statement and COI are listed together as ‘Footnotes’.</td>
+      <td>COI, funding, and author associations should be listed separately for easy understanding. By listing COI, funding, and author associations together, it is difficult to understand who impacts the study in what ways.</td>
+    </tr>
+    <tr>
+      <td>‘Dr. NAME is supported by FUNDING from the COMPANY/ORGANIZATION. The funding source had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; preparation, review, or approval of the article; and decision to submit the article for publication.’</td>
+      <td>This statement clearly acknowledges how funders can play a role in a study and explicitly states that funders had no role in the experiment and publication. The reader is not left wondering if there are additional conflicts.</td>
+    </tr>
+  </tbody>
+</table>
+
 To avoid these issues, we advocate that journals require more complete and standardized COI and funding information that recognizes their overlap, including: a clear description on how each funding entity supported the work including whether they influenced the experiments, analysis, or dissemination of the work. We recommend that journals require authors to complete a consistent and transparent funding and COI questionnaire or decision tree that is clearly and prominently associated with the article.
 
-## Authorship
+### Authorship
 
 Although we did not have sufficient articles from different countries of corresponding authors to determine whether there was a significant difference in accessibility practices across countries, we did see a wide range in accessibility score values. In terms of reporting, it was in general very straightforward to identify the corresponding author of an article. However, sometimes corresponding authorship was ambiguous in that no contact information was given, or was listed as, ‘Published on behalf of […]. All rights reserved. The Author(s) 2019. For permissions, please email: […].’ In these circumstances, it is unclear who the corresponding author is and who is ultimately responsible for questions regarding the research.
 
-## Limitations
+### Limitations
 
 Although we attempted to achieve completeness and consistency in screening by ensuring each article was screened by two separate individuals, we acknowledge we may have missed or misinterpreted statements in screened articles. For example, in capturing the type of funding for a study as public, private, or a combination of both, we may have misidentified the funding type for some organizations, especially for foreign funding bodies. Another example would be identifying whether the study type was clearly stated versus inferred with further reading of the article. These determinations are subjective and may vary with individuals’ experience with different study types and interpretation of language used in articles. Note that regular readers of publications will face the same challenges.
 
@@ -154,7 +438,7 @@ Furthermore, the accessibility score we used could be further developed to bette
 
 In the future, the accessibility score could be improved to be more specific to different article types. For example, case studies typically represent patient cases where replicating or reproducing the study would not necessarily be expected. Lastly, this study also only used data from some of the highest ranking cardiovascular research journals. These journals are likely to have higher reporting standards than other journals in the field, so our results are likely to overestimate the reporting and sharing practices of publications in cardiovascular research in general.
 
-## Future work and conclusion
+### Future work and conclusion
 
 The data collected from 639 screened papers provides numerous future directions for not only exploratory analysis on the existing dataset, but also for new projects assessing accessibility and reproducibility of scientific literature. The accessibility scores we calculated are a rough, quantitative estimate of an article’s actual accessibility and further work is required to more fully describe how accessible and reproducible cardiovascular literature is. For example, future work could identify which criteria are the biggest needs for the field, and then evaluate the quality of an article’s accessibility by weighting those criteria or organizing the criteria into a hierarchy of importance. Future studies could also investigate text excerpts describing how resources are or are not being made available to determine the causes that promote or undermine accessible research practices.
 

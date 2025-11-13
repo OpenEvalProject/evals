@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.31451.001 The Mecp2 mouse model recapitulates many phenotypes of patients with Rett syndrome (RTT), including learning and memory deficits. It is unknown, however, how the disease state alters memory circuit functions in vivo in RTT mice. Here we recorded from hippocampal place cells, which are thought to encode spatial memories, in freely moving RTT mice and littermate controls. We found that place cells in RTT mice are impaired in their experience-dependent increase of spatial information. This impairment is accompanied by an enhanced baseline firing synchrony of place cells within ripple oscillations during rest, which consequently occludes the increase in synchrony after a novel experience. Behaviorally, contextual memory is normal at short but not long time scale in RTT mice. Our results suggest that hypersynchrony interferes with memory consolidation and leads to impaired spatial memory codes in RTT mice, providing a possible circuit mechanism for memory deficits in Rett Syndrome. +/-
+The Mecp2+/- mouse model recapitulates many phenotypes of patients with Rett syndrome (RTT), including learning and memory deficits. It is unknown, however, how the disease state alters memory circuit functions in vivo in RTT mice. Here we recorded from hippocampal place cells, which are thought to encode spatial memories, in freely moving RTT mice and littermate controls. We found that place cells in RTT mice are impaired in their experience-dependent increase of spatial information. This impairment is accompanied by an enhanced baseline firing synchrony of place cells within ripple oscillations during rest, which consequently occludes the increase in synchrony after a novel experience. Behaviorally, contextual memory is normal at short but not long time scale in RTT mice. Our results suggest that hypersynchrony interferes with memory consolidation and leads to impaired spatial memory codes in RTT mice, providing a possible circuit mechanism for memory deficits in Rett Syndrome.
 
 ## Introduction
 
@@ -39,11 +39,186 @@ To test the hypothesis we recorded place cells and LFPs using tetrodes (Cheng an
 
 **Figure 1.:** (A) Coronal brain sections of a WT and a RTT mouse stained with cresyl violet. Arrow: tetrode location. (B) Recording sessions and schematics of a track and a rest box. Animals ran back and forth on the track for food reward (R: reward sites) for two sessions (Run 1 and Run 2) and rested in the box before (Pre-run) and after (Post-run) the first run session. (C) Number of laps and running speed of WT and RTT mice on the novel track. Number of animals: N = 7 (WT), 9 (RTT). Wilcoxon ranksum tests: p=0.66 for number of laps; p=0.65 for speed. (D) Same as in (C), but on the familiar track. Number of animals: N = 7 (WT), 8 (RTT). Wilcoxon ranksum tests: p=0.93 for number of laps, p=0.96 for speed.
 
-## Place cells in RTT mice contained less spatial information in the familiar, but not the novel, environment
+### Place cells in RTT mice contained less spatial information in the familiar, but not the novel, environment
 
 We first analyzed place cell activities on the novel track. A total of 47 cells from 9 RTT mice (RTT cells) and 93 cells from 7 WT mice (WT cells) were recorded on the novel track. Of these, 39 RTT cells and 84 WT cells were classified as putative pyramidal cells (with mean firing rate <7 Hz; Table 1). We defined a run-active cell as a putative pyramidal cell active (with mean firing rate >0.5 Hz) on at least one trajectory during at least one run session. The percentage of run-active cells among all putative pyramidal cells in RTT mice (79%, N = 31) did not significantly differ from that in WT (63%, N = 53) mice (p=0.069, binomial test). The median firing rate of the run-active cells in RTT mice (median [25–75%] range: 1.8 [0.71 3.2] Hz, N = 31) was also not significantly different from that in WT mice (1.1 [0.57 2.3] Hz, N = 53; p=0.10, Wilcoxon ranksum test) on the novel track.
 
+**Table 1.**
+ WT and RTT animals used in the experiment and number of putative pyramidal cells recorded from each animal on the novel and familiar track.Putative interneurons were not included. x: no recording was made, -: behavioral and neural data not analyzed because of insufficient number of laps during running.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th colspan="2">Novel track cells</th>
+      <th colspan="2">Familiar track cells</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Putative pyramidal</th>
+      <th>Active</th>
+      <th>Putative pyramidal</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>23</td>
+      <td>12</td>
+      <td>36</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>21</td>
+      <td>15</td>
+      <td>8</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>8</td>
+      <td>6</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>10</td>
+      <td>6</td>
+      <td>26</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>7</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>9</td>
+      <td>4</td>
+      <td>18</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>12</td>
+      <td>9</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>-</td>
+      <td>-</td>
+      <td>36</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>6</td>
+      <td>5</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>6</td>
+      <td>5</td>
+      <td>34</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>7</td>
+      <td>3</td>
+      <td>19</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>10</td>
+      <td>8</td>
+      <td>30</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>0</td>
+      <td>0</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>RTT</td>
+      <td>3</td>
+      <td>3</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>WT total</td>
+      <td>84</td>
+      <td>53</td>
+      <td>102</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>RTT total</td>
+      <td>39</td>
+      <td>31</td>
+      <td>135</td>
+      <td>103</td>
+    </tr>
+  </tbody>
+</table>
+
 To examine place fields of run-active cells on the novel track, we linearized an animal’s locations on a track trajectory. For each cell active on a trajectory in a run session, we plotted the cell’s spike raster over the linearized locations during every running lap and computed a firing rate curve (average firing rates over all laps versus linearized locations of the trajectory). On the novel track, raster plots and rate curves show that RTT and WT cells fired spikes at specific locations (place fields) along a trajectory (Figure 2A). To quantify firing specificity, we computed a cell’s spatial information (Skaggs et al., 1993), which measures, in bits per spike, the amount of information the cell’s firing provides about the animal’s location on a trajectory. We found that the spatial information of RTT cells was similar to that of WT cells (Figure 2B) on the novel track. We then quantified how consistent a cell’s firing on a trajectory was between Run 1 and Run 2 by firing stability, which is the Pearson correlation between the rate curves of a cell in the two sessions (Ciupek et al., 2015). We found that the stability of RTT cells on the novel track was significantly reduced from that of WT cells (Figure 2B). We then identified individual place fields of each cell and determined whether place field properties were altered in RTT mice. We found a greater number of place fields per cell per active trajectory in RTT (median [25–75%] range: 2 [1 3]; N = 31 cells) than that in WT cells (1 [1 2], N = 53; p=0.049, Wilcoxon ranksum test), but the place field length in RTT mice was shorter (Figure 2B). The median peak firing rate within place fields was comparable between RTT and WT cells on the novel track (Figure 2B). These quantifications show that place cells in RTT mice contained similar information on the novel track as those in WT mice, but encoded space by more place fields with shorter lengths.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig2-v1.jpg)
+
+**Figure 2.:** (A) Firing activities of an example WT and RTT cell during running on the novel track in two sessions (Run 1, Run 2). For each panel, the top shows spike raster of a cell during every running lap on a linearized trajectory (running direction: from left to right). Each row is a lap and each tick is a spike. The bottom trace is the firing rate curve averaged over all laps in a session. (B) Distributions of spatial information, stability, peak firing rate within place fields, and place field length for WT and RTT place cells on the novel track. Spatial information: p=0.67, Wilcoxon ranksum test; number of cells by active trajectories: N = 79 (WT), 51 (RTT). Stability: ***p=0.0008; number of cells by active trajectory in both run sessions: N = 37 (WT), 25 (RTT). Peak rate: p=0.25; place field length: ***p=0.0001; number of place fields: N = 151 (WT), 115 (RTT). (C) Same as in (A), but for example cells on the familiar track. (D) Same as in (B), but for place cells on the familiar track. Spatial information: *p=0.016, number of cells by active trajectories: N = 87 (WT), 120 (RTT). Stability: p=0.33; number of cells by active trajectories in both run sessions: N = 52 (WT), 61 (RTT). Peak rate: p=0.26; place field length: ***p=2.1×10−8; number of place fields: N = 206 (WT), 280 (RTT).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The cells were randomly selected from the recorded cells active on the novel and familiar track in such a way that the number of cells was 31 for both genotypes (RTT, WT) on both the novel and familiar track. The random downsampling was repeated 200 iterations. (A) Cumulative distributions of spatial information for the down-sampled WT and RTT cells on the novel and familiar track in one example of iteration. Novel: p=0.096, Wilcoxon ranksum test comparing WT and RTT cells, number of cells by active trajectories: N = 51 (WT), 48 (RTT). Familiar: *p=0.026; number of cells by active trajectories: N = 38 (WT), 33 (RTT). (B) Same data as in (A), but comparing novel and familiar tracks for RTT and WT cells. RTT: p=0.15; WT: ***p=1.3×10−5. (C) Distribution of Wilcoxon ranksum test P values among all iterations for comparing spatial information between WT and RTT cells on the novel and familiar track. There were 3 and 42% of iterations producing a P value < 0.05 (red dashed line) on the novel and familiar track, respectively. The numbers suggest that the downsamping reduced the statistical power of comparing WT and RTT cells on the familiar track and therefore produced an insignificant P value for the originally significant comparison (Figure 2D) in many iterations. The downsampling largely did not affect the originally insignificant comparison between WT and RTT cells on the novel track (Figure 2B), because the number of down-sampled cells (31) was similar to the original number of WT cells (53) and RTT cells (31). (D) Similar to (C), but for P values among all iterations for comparing spatial information between the novel and familiar tracks for RTT and WT cells. There were 25 and 98% of iterations producing a P value < 0.05 (red dashed line) for RTT and WT cells, respectively. The numbers indicate that the vast majority of iterations showed significant increase in spatial information from the novel to familiar track in WT cells, but not in RTT cells, suggesting the experience-dependent increase in spatial information was impaired in RTT mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Lap-by-lap spatial information in Run 1 and Run 2 on the novel track. Inset on the right of each panel: average spatial information during the early (1–3) and late (6–8) laps. *p<0.00625, Wilcoxon ranksum test with significance level adjusted for multiple (8) comparisons. Number of cells: N = 53 (WT), N = 31 (RTT). (B) Same as (A), but on the familiar track. Number of cells: N = 65 (WT), 103 (RTT). *p<0.00625; #p<0.025. Note that the spatial information of RTT cells started lower on the familiar track in both Run1 and Run 2 than that of WT cells.
 
 We next performed the same analyses on RTT and WT cells active on the familiar track (Figure 2C), where we recorded 171 cells from 8 RTT mice and 136 cells from 7 WT mice. Among these, 135 RTT cells and 102 WT cells were putative pyramidal cells (Table 1). The percentage of run-active cells among all putative pyramidal neurons in RTT mice (77%, N = 103) was greater than that in WT (64%, N = 65) mice (p=0.035). The median firing rate of these run-active neurons in RTT (1.8 [1.1 3.0] Hz, N = 103) mice was significantly increased from that in WT mice (1.1 [0.6 2.1] Hz, N = 65; p=0.0012). However, the spatial information of run-active RTT cells was significantly reduced (by 63%), compared to that of WT run-active cells, while the stability was similar (Figure 2D). The number of place fields per cell was similar between RTT (2 [1 2], N = 103 cells) and WT (1 [1 2], N = 65) cells (p=0.16, Wilcoxon ranksum test) on the familiar track, but the place field length of RTT cells was significantly larger than that of WT cells (Figure 2D). The median peak firing rate within place fields was comparable between RTT and WT cells (Figure 2D). The results suggest that the reduced specificity of RTT cells on the familiar track was due to larger place fields.
 
@@ -59,17 +234,49 @@ Finally, to understand whether place fields of RTT cells were impaired at a fine
 
 **Figure 3.:** (A) Example cells with theta phase precession from a WT and RTT animal on the novel and familiar track. For each panel, the top depicts theta phases of a cell versus positions on the track plotted three cycles and the bottom is the cell’s mean firing rate. Solid line: linear regression of the theta phases versus positions. (B) Cumulative distributions of linear correlations and slopes of theta phase and position regressions for place fields in the WT and RTT mice on the novel and familiar tracks. Novel correlation: p=0.11, Wilcoxon ranksum test; slope: p=0.16; number of place fields: N = 160 (WT), 103 (RTT). Familiar correlation: p=0.15; slope: p=0.053; N = 237 (WT), 293 (RTT). (C) Cumulative distributions of circular-linear correlations of theta phase and position regressions for place fields in the WT and RTT mice on the novel and familiar tracks. Novel: p=0.77, Wilcoxon ranksum test; number of place fields: N = 160 (WT), 103 (RTT). Familiar: *p=0.016; N = 237 (WT), 293 (RTT).
 
-## Place cell synchrony failed to increase after novel experience in RTT mice
+### Place cell synchrony failed to increase after novel experience in RTT mice
 
 Next, we examined ripples in the rest session before (Pre-run) and after (Post-run) the first spatial experience (Run 1) on a given day in either the novel or familiar room. For each animal and each rest session, we identified individual ripple events in LFPs (Figure 4A) and quantified ripple properties by occurrence rate (number of ripples per second), duration, amplitude, and frequency. Each of these parameters was averaged over all ripple events in a rest session. In the novel environment, ANOVA analysis shows that there was no significant effect of genotype or significant interaction between genotype and rest session in ripple rate, duration, amplitude, or frequency (Figure 4B). Similar findings were made in the familiar environment (Figure 4C). The data suggest that ripples in RTT and WT mice were qualitatively similar in rest sessions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig4-v1.jpg)
+
+**Figure 4.:** (A) Raw and filtered (pass band: 100–250 Hz) LFP traces from a WT and RTT animal. (B) Ripple occurrence rate, duration, amplitude, and frequency during resting before (Pre-run) and after (Post-run) running on the novel track. Each dot is the parameter averaged over all ripple events in an animal. Number of animals: N = 5 (WT), 7 (RTT) for Pre-run and 7 (WT), 9 (RTT) for Post-run. ANOVA analysis reveals no significant effect of genotype on occurrence rate (F(1, 26)=2.0, p=0.17), duration (F(1, 26)=1.8, p=0.19), amplitude (F(1, 26)=0.04, p=0.84), or frequency (F(1, 26)=0, p=1.0). There was a significant effect of session on occurrence rate (F(1, 26)=6.8, *p=0.015), but not on duration (F(1, 26)=1.6, p=0.22), amplitude (F(1, 26)=0.14, p=0.71), or frequency (F(1, 26)=0.33, p=0.57). There was no significant effect of the interaction between genotypes and resting sessions (Pre- and Post-run) on occurrence rate (F(1, 24)=1.8, p=0.20), duration (F(1, 24)=0.54, p=0.47), amplitude (F(1, 24)=0.04 P=0.84), or frequency (F(1, 24)=0.41, p=0.53). (C) Same as in (B), but during resting before (Pre-run) and after (Post-run) running on the familiar track. Number of animals: N = 5 (WT), 5 (RTT) for Pre-run and 7 (WT), 8 (RTT) for Post-run. Effect of genotype on occurrence rate (F(1, 23)=0.15, p=0.70), duration (F(1, 23)=0.49, p=0.49), amplitude (F(1, 23)=0.12, p=0.73, and frequency (F(1, 23)=0.06, p=0.81). The main effect of session on occurrence rate was no longer significant (F(1, 26)=4.2, p=0.053), neither was on duration (F(1, 26)=0.02, p=0.88), amplitude (F(1, 26)=1.0, p=0.31), or frequency (F(1, 26)=0.33, p=0.57). There was also no significant effect of the interaction between genotypes and resting sessions (Pre- and Post-run) on occurrence rate (F(1, 21)=0.02, p=0.88), duration (F(1, 21)=0, p=0.96), amplitude (F(1, 21)=0.57, p=0.46), or frequency (F(1, 21)=0.14, p=0.71).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cumulative distributions of firing rate for all putative CA1 pyramidal cells within ripple events before (Pre-run) and after (Post-run) running on the novel track. Pre-run: N = 40 (WT), 26 (RTT); p=0.14, Wilcoxon ranksum test. Post-run: N = 84 (WT), 39 (RTT); p=0.35. (B) Same as in (C), but for run-active cells. Pre-run: N = 26 (WT), 20 (RTT); p=0.07. Post-run: N = 53 (WT), 31 (RTT); p=0.23. (C, D) Same as in (A, B), respectively, but before and after running on the familiar track. (C) Pre-run: N = 51 (WT), 50 (RTT); p=0.06; Post-run: N = 102 (WT), 135 (RTT); p=0.11. (D) Pre-run: N = 24 (WT), 42 (RTT); **p=0.003. Post-run: N = 65 (WT), 103 (RTT); p=0.06.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cumulative distributions of ripple participation rate for run-active cells in WT and RTT mice before (Pre-run) and after (Post-run) running on the novel track. Pre-run: p=0.07, Wilcoxon ranksum test; N = 26 (WT), 20 (RTT). Post-run: p=0.39, N = 53 (WT), 31 (RTT). (B) Same as (A), but for number of spikes per ripple event. Pre-run: p=0.23; N = 26 (WT), 20 (RTT). Post-run: p=0.22, N = 53 (WT), 31 (RTT). (C) Cumulative distributions of ripple participation rate for run-active cells in WT and RTT mice before (Pre-run) and after (Post-run) running on the familiar track. Pre-run: **p=0.0023, Wilcoxon ranksum test; N = 24 (WT), 42 (RTT). Post-run: *p=0.012, N = 65 (WT), 103 (RTT). (D) Same as (C), but for number of spikes per ripple event. Pre-run: **p=0.0025; N = 26 (WT), 20 (RTT). Post-run: *p=0.019, N = 53 (WT), 31 (RTT).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A – D) Cumulative distributions of ripple participation rate and number of spike per ripple for run-inactive cells in WT and RTT mice during Pre- and Post-run. Cells in Pre-/Post-run sessions before/after running the novel and familiar track are combined. (A): N = 26 (WT), 23 (RTT); p=0.81, Wilcoxon ranksum test. (B): N = 55 (WT), 36 (RTT); p=0.58. (C): N = 26 (WT), 23 (RTT); p=0.74. (D): N = 55 (WT), 36 (RTT); p=0.68. There was no significant difference between Run-run and Post-run in any of the parameters in either WT or RTT mice (p>0.55).
 
 We then examined firing rates of CA1 cells within ripple events (Figure 4—figure supplement 1). In the novel room, the firing rates of all putative pyramidal cells or run-active cells were not significantly different between WT and RTT in either Pre- or Post-run. In the familiar room, the median firing rate of all putative pyramidal cells in RTT mice was similar to that in WT mice in both Pre-run and Post-run, but run-active cells had higher firing rate in RTT mice than in WT mice, especially in Pre-run. This firing rate increase suggests that run-active cells might fire in ripples more often in RTT mice than in WT mice in the familiar room. Indeed, run-active cells in RTT mice participated in ripples with a higher rate and fired more spikes per ripple event in the familiar room, but not in the novel room (Figure 4—figure supplement 2). In contrast, run-inactive cells did not differ between WT and RTT mice in either of these parameters in either the novel or familiar room (Figure 4—figure supplement 3), providing a control that the difference in ripple participation between WT and RTT mice was not due to differences in resting behavior or ripple events per se.
 
 It is known that place cells active in a new spatial experience tend to fire synchronously during ripples immediately after the experience more frequently than during ripples before (Wilson and McNaughton, 1994; Skaggs and McNaughton, 1996). We therefore asked whether this experience-dependent increase in firing synchrony was altered in RTT mice. We examined firing activities of run-active cells within ripples in Pre- and Post-run in the novel room. In WT mice, run-active cells rarely fired together during ripples in Pre-run, but did so more frequently in Post-run. However, in RTT mice run-active cells already fired together in Pre-run and they appeared not to do so more frequently in Post-run (Figure 5A). To quantify this, we computed a normalized pair-wise cross-correlogram (Sirota et al., 2003; Ciupek et al., 2015) within ripples in Pre-/Post-run for each pair of run-active cells that were also recorded in Pre-run and Post-run. Cross-correlograms of these cell pairs in WT mice showed low correlation around the time lag 0 in Pre-run and relatively high correlation in Post-run (Figure 5B). However, cross-correlograms in RTT mice showed high correlation around the time lag 0 already in Pre-run, without further increase in Post-run (Figure 5B). We used the average correlation value around time lag 0 (within [−50 50] ms) as a measure of ‘coactivity’ for each pair of cells (Wilson and McNaughton, 1994). We then compared the coactivity values of all run-active pairs between RTT and WT mice to evaluate their difference in firing synchrony at the cell population level. We found that the coactivity in WT mice was significantly increased from Pre- to Post-run (Figure 5C), indicating an experience-dependent increase in synchrony following running on the novel track, as expected (Wilson and McNaughton, 1994). In RTT mice, however, the coactivity was not significantly different between Pre-run and Post-run, indicating a lack of increase in synchrony after the novel track experience (Figure 5C). Moreover, the Pre-run coactivity was significantly higher in RTT mice than that in WT mice, whereas the Post-run coactivity was not significantly different. Therefore, run-active cells in RTT mice failed to increase their synchrony following a novel experience and this failure appeared to be due to their higher than normal synchrony (hypersynchrony) prior to the experience, consistent with our previous study (Lu et al., 2016).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig5-v1.jpg)
+
+**Figure 5.:** (A) Spiking activities of run-active cells in an example WT and RTT mouse within a ripple event in Pre-run and Post-run and within a running lap in Run 1. Each row represents a cell and each tick is a spike. Bottom trace: LFP filtered within the ripple band (100–250 Hz). (B) Cross-correlograms of pairs of run-active cells within ripples in Pre-run and Post-run. Pairs are ordered by their peak correlations. 25 pairs in RTT mice and a random subset of 25 pairs out of 34 in WT mice are plotted. All these pairs were recorded throughout all sessions of Pre-run, Run 1 and Post-run. (C) Coactivities of all run-active cell pairs in WT and RTT mice within ripple events in Pre-run and Post-run. Solid lines: median values. Number of pairs: N = 34 (WT), 25 (RTT). WT coactivity between Pre-run and Post-run: *p=0.044, paired Student’s t-test; RTT: p=0.47. Pre-run coactivity between WT and RTT mice: *p=0.039, Wilcoxon ranksum test; Post-run: p=0.65.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The plot shows cumulative distribution of coactivity of all putative pyramidal cell pairs in WT and RTT mice within ripple events in Pre-run before running the novel track. Number of pairs: N = 204 (WT), 105 (RTT). ***p=0.0007, Wilcoxon ranksum test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The plot shows coactivity of all run-active cell pairs in WT and RTT mice within ripple events in Pre-run and Post-run. Solid lines: median values. Number of pairs recorded during all sessions of Pre-run, Run 1, and Post-run: N = 32 (WT), 119 (RTT). WT coactivity between Pre-run and Post-run: **p=0.0076, paired Student’s t-test; RTT: **p=0.0014. Pre-run coactivity between WT and RTT mice: **p=0.0015, Wilcoxon ranksum test; Post-run: *p=0.012.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/31451/elife-31451-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The plot shows cumulative distribution of coactivity for pairs of run-silent cells in WT and RTT mice within ripple events, combined from Pre-run and Post-run in both the novel and familiar environments. Number of pairs: N = 268 (WT), 107 (RTT). *p=0.017, Wilcoxon ranksum test.
+
 The finding of hypersynchrony among run-active cells in Pre-run leads to the question of whether a general hypersynchrony within ripples existed among all putative pyramidal cells, unrelated to any track-running experience. We first re-analyzed the correlograms in Pre-run before the novel-track running, but for all pairs of putative pyramidal cells in RTT and WT mice. Indeed, we found that the coactivity in RTT mice was significantly higher than that in WT mice (Figure 5—figure supplement 1). Second, we analyzed the coactivity of run-active cells in the familiar environment. We found a similar hypersynchrony among run-active cells in RTT mice, relative to those in WT mice, within ripples in both Pre- and Post-run (Figure 5—figure supplement 2), although the coactivity of RTT cells in Post-run now became significantly higher than that in Pre-run, likely because the repetitive experience on the familiar track eventually further increased the cells’ coactivity (see Discussion). Finally, we computed the coactivity of run-silent cells within ripples (Pre- and Post-run in novel and familiar environments combined) and found that the coactivity was higher in RTT mice than that in WT mice (Figure 5—figure supplement 3). The results suggest a general hypersynchrony among CA1 neurons in RTT mice.
 
-## RTT mice displayed normal contextual fear memory at short, but not at long, time scales
+### RTT mice displayed normal contextual fear memory at short, but not at long, time scales
 
 Our analysis so far indicates that place cell synchrony failed to increase after novel experience, likely due to baseline hypersynchrony, and place cell firing specificity was impaired on the familiar track. These results suggest that impaired memory consolidation contributes to memory deficits in RTT mice. We attempted to provide behavioral evidence for this hypothesis. Previous studies have shown that RTT mice are impaired in contextual fear memory when they are tested 3 or 24 hr after learning (Samaco et al., 2013; Hao et al., 2015). Here we examined the contextual fear memory of our RTT and WT mice at a shorter time scale, 20 min after learning, when presumably only minimal consolidation had occurred and memory should be relatively normal, according to our hypothesis. After exploring a novel fear-conditioning box and receiving two mild foot shocks, animals were returned to their home cages. We measured their freezing level 20 min later, at which time the animals were placed back to the conditioning box for 5 min. We found that the freezing level at 20 min was comparable between RTT and WT mice (Figure 6A). We also examined the freezing level of the mice at 1 and 24 hr later after the shocks and used the 24 hr freezing level as a measure of long-term memory, when presumably substantial ripple events and thus memory consolidation had occurred. ANOVA analysis revealed a significant effect of genotype and post-hoc Wilcoxon ranksum test showed that there was a significant difference at 24 hr, but not at 20 min, between WT and RTT mice. The memory of a subset of mice (N = 12 WT, 14 RTT) was examined at all three time points. However, ANOVA analysis for these mice failed to identify a significant interaction of genotype by time (F(2,72) = 0.5; p=0.61), probably due to memory extinction of these animals that were tested repeatedly. Nevertheless, our data did show that the contextual memory at a short time scale (20 min) was relatively normal in RTT mice. This result, together with previous studies (Samaco et al., 2013; Hao et al., 2015) showing contextual fear memory deficits at longer time scales, is consistent with a memory consolidation impairment in RTT mice.
 
@@ -93,52 +300,118 @@ Although we need to be cautious when interpreting data from animal studies, our 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (mouse)</td>
+      <td>Mecp2</td>
+      <td>DOI: 10.1038/85899</td>
+      <td>RRID:MGI:3624717</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (mouse)</td>
+      <td>Wild-Type control</td>
+      <td>Source (public (Taconic Farms, Inc., Germantown, NY, USA)); Source (DOI: 10.1038/85899)</td>
+      <td>129SvEv: RRID:MGI:5653381; FVB: RRID:IMSR_TAC:fvb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (mouse)</td>
+      <td>RTT</td>
+      <td>PMID: 11242117; DOI: 10.1038/85899</td>
+      <td>RRID:IMSR_JAX:003890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Neuralynx Cheetah</td>
+      <td>https://neuralynx.com/software/cheetah</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MatLab</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>xclust2</td>
+      <td>https://github.com/wilsonlab/mwsoft64/tree/master/src/xclust</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>DataManager</td>
+      <td>https://github.com/DaoyunJiLab/DataManager</td>
+      <td></td>
+      <td>Copy archived at https://github.com/elifesciences-publications/DataManager</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 A total of 9 wild-type (WT) and 10 Rett (RTT) mice were used for electrophysiological recordings. Among them, 8 WT and 9 RTT mice yielded electrophysiological data during at least one behavioral procedure (see Table 1 for details) and were used for the subsequent fear conditioning task. Given the large amount of effort in tetrode recording of each individual animal, to reduce unnecessary effort, the animals were genotyped before the recording experiment and the genotype was not blind to the experimenter. However, to ensure that WT and RTT animals followed the same experimental procedure, we always conducted experiments on a pair of WT and RTT mice at the same time. The number of animals was decided based on existing literature, where a typical tetrode recording experiment uses 3–10 animals per group. Additionally, two non-recorded cohorts totaling 11 WT and 12 RTT mice were used for fear conditioning only. F1 hybrid of FVB/N x 129S6/SvEv (FVB.129F1) animals were generated by mating female Mecp2+/- mice which were maintained on a pure FVB/N background (RRID:IMSR_TAC:fvb) to male WT mice of a pure 129SvEv background (RRID:MGI:5653381). These mice were maintained on a 12 hr light:12 hr dark cycle, fed standard mouse chow and water ad libitum until the experiment began. The Mecp2tm1.1Bird allele (RRID:IMSR_JAX:003890), lacking exons 3 and 4, was used in the Mecp2+/- mice, and it generated a true Mecp2-null allele (Guy et al., 2001). Adult mice at ages of at least 3 months were used for electrophysiological recording and fear conditioning. Only female mice were used. Animals were housed 4 to 5 per cage until tetrode hyperdrives were implanted, then mice were single housed. All research and animal care procedures followed the recommendations in the ‘Guide for the Care and Use of Laboratory Animals’ of the National Institute of Health and were approved by the Baylor College of Medicine Institutional Animal Care and Use Committee.
 
-## Surgery
+### Surgery
 
 Mice were implanted with a tetrode hyperdrive containing nine tetrodes (eight for recording, and one as a reference). Mice were anesthetized with 0.5–2% isoflurane and fixed using a stereotaxic device throughout the surgery. The implantation was made at 2.0 mm antereoposterior and 1.5 mm mediolateral from Bregma, targeting CA1 cells in the right hemisphere. The cannulae of the hyperdrive was affixed to the skull using dental cement and stainless steel anchoring screws. Supportive care of ketoprofen (5 mg/kg) and saline (1 ml) were injected prior the beginning of surgery.
 
-## Tetrode recording
+### Tetrode recording
 
 Tetrode recordings were made as previously described (Cheng and Ji, 2013; Ciupek et al., 2015). In 2–4 weeks following the surgery, the tetrodes were lowered slowly into the CA1 pyramidal cell layer. Identification of the CA1 pyramidal cell layer was made by visual inspection of the spiking activity and sharp-wave ripples in the local field potentials (LFPs) while the animals were at rest. A Neuralynx Digital Lynx system was used to record both LFPs and neuronal spiking activity. Recordings were made while animals ran on a rectangular shaped linear track, or were on an elevated platform (Figure 1B). Spiking activity was identified with a pre-set threshold of 50–70 µV, sampled at 32 kHz, and was band-pass filtered from 0.6 to 6 kHz. LFPs were band-pass filtered from 0.1 to 1 kHz and sampled at 2 kHz. Animals’ positions were monitored by two color diodes mounted over the tetrode hyperdrive and sampled at 33 Hz. Data was analyzed offline.
 
-## Behavioral apparatuses and tasks
+### Behavioral apparatuses and tasks
 
-## Track-running and resting tasks
+#### Track-running and resting tasks
 
 Animals (N = 10 RTT, 9 WT mice) were food deprived to ≥85% of their ad libitum weight ~2 weeks after recovery from surgery. They were first trained to run back and forth (two trajectories) on a familiar, rectangular-shaped track of ~2 m length for a food reward (condensed milk) at each end of the track in a familiar room for at least 2 weeks. Recordings started when the mice were able to run consistently back and forth on the track. On each of the recording days, the animal had two track-running sessions (Run 1, Run 2), each lasting ~15 min (Figure 1B). Then, a subset of animals (N = 9 RTT, 7 WT mice) was also recorded while they ran on a novel track for two sessions in a novel room, following the same daily procedure as before. The novel track had a similar shape to the familiar one, but with different tactile and visual cues. The animals had never been exposed to the novel room or the novel track before the recording. Some of the animals were also recorded while they were resting for 10–15 min on an elevated platform elevated platform before (Pre-run) and after (Post-run) the first track session on either the familiar or the novel track. For the familiar track, 5 RTT and 5 WT mice were recorded during Pre-run and 8 RTT and 7 WT mice recorded during Post-run. For the novel track, 7 RTT and 5 WT mice were recorded in Pre-run and 9 RTT and 7 WT mice recorded in Post-run.
 
-## Fear Conditioning
+#### Fear Conditioning
 
 22 RTT and 20 WT mice were studied, including those implanted, which were tested in fear conditioning after all recordings were completed. The animals explored a novel fear-conditioning box for 2 min, then a 30 s tone (80 dB, 5 kHz) was played with a coinciding mild footshock (2 s, 0.7 mA) at the end of the tone. After 1 min, the tone/footshock pairing was repeated. The animals stayed in the box for one more minute before returned to their home cages. To test contextual fear memory, 1 hr and 24 hr later, the animals were placed back to the conditioning box for 5 min and their freezing behavior was measured. A subset of animals (12 WT, 14 RTT) were also tested at an additional time point of 20 min after conditioning, prior to the testing at other two time points. Data at 20 min and 24 hr were plotted to assess contextual memories before and after memory consolidation.
 
-## Histology
+### Histology
 
 After all recordings, each recorded animal was euthanized using a pentobarbital overdose (50 mg/kg). Current of 30 µA was passed through each tetrode for 10 s to generate a small lesion at each recording site. The brain was then dissected out, fixed in 10% formaldehyde solution for at least 24 hr, cryoprotected in 30% sucrose, and then sectioned at 50 µm thickness. Slices were placed on slides and dried. They were then stained using 0.2% Cresyl violet and cover-slipped. Recording sites were then identified by matching lesion sites with tetrode depths and relative positions. Only tetrodes in the CA1 pyramidal cell layer were used for analysis.
 
-## Data analysis
+### Data analysis
 
 For all recording days, single units were sorted offline using a manual clustering software (https://github.com/wilsonlab/mwsoft64/tree/master/src/xclust) (Wilson, 2008). Only well-sorted clusters (with isolation distance >9.5) were included in the analysis. Although animals were recorded across several days on the familiar track, only one day’s data was used in the analysis for these behavioral conditions, to avoid possible repeated sampling of same cells. Only putative pyramidal cells (average firing rate ≤7 Hz) were included in the analysis. Behavioral and neural spike data were analyzed using a custom Matlab package DataManager (https://github.com/DaoyunJiLab/DataManager) (Ji, 2018; copy archived at https://github.com/elifesciences-publications/DataManager). Results are presented with median and quartile [25–75%] values unless otherwise indicated. Statistical comparisons were completed using the non-parametric Wilcoxon ranksum test or ANOVA, unless otherwise specified.
 
-## Firing rate curve and place field quantification
+#### Firing rate curve and place field quantification
 
 We identified every time period (lap) an animal traveled through one of two trajectories on a track. Each trajectory was separately linearized and divided into 2 cm spatial bins. Run-active cells, defined as those with average rate >0.5 Hz on at least one trajectory in one track-running session, were analyzed on each trajectory they were active on. For each cell on a trajectory, we computed its firing rate (xi) within each spatial bin (i), as the total number of spikes divided by the total occupancy time (ti) across all laps on that trajectory in a session. The cell’s firing rate curve (firing rate at each bin: [x1, x2, …, xN]) was smoothed by a Gaussian kernel with a sigma of 2 bins. For this analysis, we excluded the spatial bins at the reward site and those stopping periods, when animal did not move (speed <3 cm/s for more than 1 s). Spatial information was calculated from a rate curve as previously described (Sirota et al., 2003). Spatial information was computed on each active trajectory and averaged between the two running sessions (Run 1, Run 2). Stability was the Pearson correlation between a cell’s rate curves on the same active trajectory across two running sessions (Ciupek et al., 2015). Place fields were defined as peaks of a firing rate curve with a peak rate ≥1 Hz. A threshold of 10% of peak rate was used to detect place field boundaries (Mehta et al., 2002). Place fields with a gap of ≤6 cm were combined into one.
 
-## Downsampling analysis
+#### Downsampling analysis
 
 For downsampling analysis, the 4 groups of cells, WT and RTT cells active on the familiar and novel tracks, were equalized to have the same number of cells, which was the number of RTT cells on the novel track (31). To do so, 31 cells were randomly chosen among each of the other three groups. This random downsampling was repeated 200 iterations. Since the downsampling largely did not change the cells on the novel track, it mostly affected the results involving cells on the familiar track. Therefore, we subjected a key variable, spatial information, to the downsampling analysis. For each iteration, the spatial information of the chosen cells was statistically compared between WT and RTT cells or between the novel and familiar tracks, using the Wilcoxon ranksum test. For each comparison, the distribution of resulting P values was plotted and the proportion of iterations that produced a significant P value (<0.05) was reported (Figure 2—figure supplement 1).
 
-## Theta phase precession
+#### Theta phase precession
 
 LFPs were filtered through the theta frequency range of 6–10 Hz. For all spikes within a place field, we computed the regression between their phases relative to the filtered theta LFPs and their firing locations. Two types of regression were used. The first was the optimal linear regression as in the original phase precession paper (O'Keefe and Recce, 1993), where a linear regression was computed with spike phases shifted by every 1° among a 360° range and the regression with the best fit was used. The second was the circular-linear regression between the circular phase values and spike locations, with the formula given in a previous study (Ravassard et al., 2013).
 
-## Ripple event detection and quantification
+#### Ripple event detection and quantification
 
 Individual ripple events were detected via CA1 LFPs recorded while mice were resting before (Pre-run) and after (Post-run) track-running, as in previous studies (Csicsvari et al., 2000; Lee and Wilson, 2002). A LFP trace was first filtered through the ripple band (100–250 Hz) and its standard deviation (std) was computed. A (peak) threshold of 6 stds was used to identify potential events. Start and end times of ripple events were determined by a threshold of 2.5 stds. Neighboring events with a gap of <30 ms were combined into single events. We defined those identified events with durations between 30 to 500 ms as ripple events. Ripple parameters, including occurrence rate (number of ripples per second), amplitude (the absolute value of the most negative trough), duration, frequency, were quantified for each ripple event and averaged across all ripple events in an animal for each rest session. For each putative pyramidal cell, we quantified its ripple participation rate as the ratio of number of ripples when the cell fired at least one spike over the total number of ripples in a session. The numbers of spikes within all ripple events in a session were also averaged and reported as number of spikes per ripple event.
 
-## Pairwise cross-correlation and coactivity
+#### Pairwise cross-correlation and coactivity
 
 We computed pairwise spike cross-correlation within ripple events, similarly to previous studies (Sirota et al., 2003; Ciupek et al., 2015). For each ripple event in a session, we identified its start and end times as described above and defined a time period of 150 ms before the start time and 150 ms after the end time. For each pair of neurons, we computed a spike-count cross-correlation correlogram for spikes within these ripple time periods (Terada et al., 2017; Diba et al., 2014), with a bin size of 20 ms, which was then smoothed by 5-bin nearest neighbor averaging. The spike-count cross-correlation was then subtracted by the average number of spikes among the baseline time lags ([−220–180] ms and [180 220] ms). Finally, the cross-correlograms were re-scaled by the square root of the number of spikes expected from two random Poisson spike trains with identical firing rates (Sirota et al., 2003; Ciupek et al., 2015). The normalization renders the cross-correlation insensitive to firing rates of the two neurons. For a pair of neurons, their coactivity within ripples events was defined as the average of the normalized cross-correlogram values at lag bins within [−50 50] ms (Wilson and McNaughton, 1994).

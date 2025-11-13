@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.47338.001 We analyzed how often and in what ways the Journal Impact Factor (JIF) is currently used in review, promotion, and tenure (RPT) documents of a representative sample of universities from the United States and Canada. 40% of research-intensive institutions and 18% of master’s institutions mentioned the JIF, or closely related terms. Of the institutions that mentioned the JIF, 87% supported its use in at least one of their RPT documents, 13% expressed caution about its use, and none heavily criticized it or prohibited its use. Furthermore, 63% of institutions that mentioned the JIF associated the metric with quality, 40% with impact, importance, or significance, and 20% with prestige, reputation, or status. We conclude that use of the JIF is encouraged in RPT evaluations, especially at research-intensive universities, and that there is work to be done to avoid the potential misuse of metrics like the JIF.
+We analyzed how often and in what ways the Journal Impact Factor (JIF) is currently used in review, promotion, and tenure (RPT) documents of a representative sample of universities from the United States and Canada. 40% of research-intensive institutions and 18% of master’s institutions mentioned the JIF, or closely related terms. Of the institutions that mentioned the JIF, 87% supported its use in at least one of their RPT documents, 13% expressed caution about its use, and none heavily criticized it or prohibited its use. Furthermore, 63% of institutions that mentioned the JIF associated the metric with quality, 40% with impact, importance, or significance, and 20% with prestige, reputation, or status. We conclude that use of the JIF is encouraged in RPT evaluations, especially at research-intensive universities, and that there is work to be done to avoid the potential misuse of metrics like the JIF.
 
 ## Introduction
 
@@ -33,13 +33,52 @@ This use – and potential misuse – of the JIF to evaluate research and resear
 
 ## Methods
 
-## Document collection
+### Document collection
 
 This paper reports a set of findings from a larger study (Alperin et al., 2019) for which we collected documents related to the RPT process from a representative sample of universities in the United States and Canada and many of their academic units. A detailed description of the methods for selecting institutions to include in our sample, how we classified them, how we collected documents, and the analysis approach is included in Alperin et al. (2019) and in the methodological note accompanying the public dataset (Alperin et al., 2018). Briefly, we created a stratified random sample based on the 2015 edition of the Carnegie Classification of Institutions of Higher Education (Carnegie Foundation for the Advancement of Teaching, 2015) and the 2016 edition of the Maclean’s University Rankings (Rogers Digital Media, 2016), which respectively group US and Canadian universities into those focused on doctoral programs (i.e., research intensive; R-type), those that predominantly grant master’s degrees (M-type), and those that focus on undergraduate programs (i.e., baccalaureate; B-type). We used a taxonomy developed by the National Academies in the United States (The National Academies of Sciences, Engineering and Medicine, 2006) to classify the academic units (e.g., department, school, or faculty) within an institution into three major areas: Life Sciences (LS); Physical Sciences and Mathematics (PSM); and Social Sciences and Humanities (SSH). Additional units that could not be classified as belonging to a single area (e.g., a College of Arts and Sciences) were designated as multidisciplinary. The stratified sample was designed to collect documents from enough institutions in each of the R-, M-, and B-type categories to have a statistical power of .8 (assuming a small effect size of .25 of a standard deviation) when making comparisons between categories. An overview of the population of universities by type, the number and percent randomly chosen for our stratified sample, and the number of institutions for which we obtained at least one relevant document can be found in Table 1. A more detailed table, including institution sub-types, can be found in Alperin et al. (2019).
 
 We then used a combination of web searches, crowdsourcing, and targeted emailing to request documents related to the RPT process, including but not limited to collective agreements, faculty handbooks, guidelines, and forms. Some of these documents applied to the institution as a whole, while others applied only to specific academic units. In the end, we obtained 864 documents related to the RPT process of 129 universities, of which 57 were R-type, 39 were M-type, and 33 were B-type institutions. Of the total documents, 370 were institutional-level documents, while the remaining 494 came from 381 academic units within 60 of these universities. Of the 116 units at R-type institutions, 33 (28%) were LS units, 21 (18%) were PSM units, 39 (34%) were SSH units, and 23 (20%) were multidisciplinary units.
 
-## Document analysis and coding terminology
+**Table 1.**
+ Sampling summary of universities from Canada and the United States.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number in category</th>
+      <th>Number sampled</th>
+      <th>Percent sampled</th>
+      <th>Number with documents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>R-type</td>
+      <td>350</td>
+      <td>65</td>
+      <td>19%</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>M-type</td>
+      <td>847</td>
+      <td>50</td>
+      <td>6%</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>B-type</td>
+      <td>602</td>
+      <td>50</td>
+      <td>8%</td>
+      <td>33</td>
+    </tr>
+  </tbody>
+</table>
+
+### Document analysis and coding terminology
 
 The RPT documents were loaded into QSR International’s NVivo 12 qualitative data analysis software, where text queries were used to identify documents that mention specific terms. Because the language in RPT documents varies, we first searched all the documents for the words “impact” and “journal”, and read each mention to identify terms that may be referencing the JIF. We classified these terms into three groups: (1) direct references to the JIF as a metric; (2) those that reference journal impact in some way; and (3) indirect but possible references to the JIF. In the first group, we included the terms “impact factor”, “impact score”, “impact metric”, and “impact index”. In the second group, we included the terms “high-impact journal”, “impact of the journal”, and “journal(’s) impact”. The third group contains a larger number and variety of terms, such as “high-ranking journal", “top-tier journal”, and “prestigious journal”. For all terms, we considered both singular and plural equivalents. A map of the terms we found and their grouping into the three categories can be seen in Figure 1. In our analysis, we looked at only the first two groups of terms, as we considered them to be unambiguously about the JIF (group 1) or sufficiently close to the notion of JIF (group 2). The terms in the third group, however, may or may not refer to the JIF. So while these terms could represent examples of ways in which the idea of the JIF is invoked without being explicit, their mentions were not analyzed further for this study.
 
@@ -49,17 +88,17 @@ The RPT documents were loaded into QSR International’s NVivo 12 qualitative da
 
 The results of each text query for the terms in groups 1 and 2 were placed in an NVivo “node” that contained the text surrounding each of the mentions. We then performed a “matrix coding query” to produce a table with institutions and academic units as rows, terms of interests as columns, and a 1 or a 0 indicating whether the institution or academic unit made mention of the term or not, with the ability to distinguish if the mention appeared in documents that pertain to the whole institution, to one or more academic units, or both. We considered an institution as making mention of a term if the term was present in at least one document from that institution or any of its academic units. More details on this process can be found in Alperin et al. (2019).
 
-## Qualitative analysis
+### Qualitative analysis
 
 We also exported the content of each node for a qualitative analysis of the JIF mentions. In some cases, the software extracted complete sentences, while in other cases it pulled only fragments and we retrieved the rest of the text manually to provide better context. Based on a detailed reading of the text, we classified each of the JIF mentions along two dimensions. First, we classified each mention as either: (1) supportive of the JIF’s use in evaluations; (2) cautious, meaning the document expresses some reservations about the use of the JIF in evaluations; or (3) neutral, meaning the mention was neither supportive nor cautious, or not enough information was present in the document to make a judgement. In addition, we read each mention to determine what aspects of research were being measured with the JIF, if specified. Using categories we arrived at inductively, we classified each mention of the JIF as associating the metric with one or more of the following: (i) quality of the research and/or journal; (ii) impact, importance, or significance of the research or publication; (iii) prestige, reputation, or status of the journal or publication; or (iv) left unspecified, meaning the document mentions the JIF, but does not state what the metric is intended to measure. If an institution contained multiple mentions (for example, in two different academic units), it was counted under all the relevant categories.
 
 To arrive at the classification, each mention was independently coded by two of the authors (EM and LM) using the definitions above. After an initial pass, the two coders agreed on all of the classifications for 86% of all mentions. The remaining mentions were independently coded by a third author (LS). In all instances, the third coder agreed with one of the previous two, and this agreement was taken as the final code.
 
-## Data availability
+### Data availability
 
 We have shared the data on which this paper is based in two different formats: (1) a spreadsheet with all the JIF-related mentions (including repetitions) extracted from the RPT documents, available as part of the larger public dataset (Alperin et al., 2018), and (2) a text document containing the mentions (minus repetitions), with terms of interest color coded and a qualitative assessment of each quote, available as supplemental information. The main data file in Alperin et al. (2018) (scholcommlab-rpt-master-april-2019.tab) contains two columns for the JIF (metrics_impact_factor and metrics_high_impact_journals). A 1 in these columns indicates that at least one document from that institution or any of its academic units contained a JIF term from groups 1 or 2 (Figure 1), respectively, while a 0 indicates no such terms were found in any of the documents for that institution. A set of columns with the prefix if_ similarly contain a 1 if the JIF mention was coded for each category, and a 0 otherwise. We are not able to share the original RPT documents collected for this study, since the copyrights are held by the universities and academic units that created them. However, for publicly available documents, we included Wayback Machine web archive links to them in the shared spreadsheet.
 
-## Limitations
+### Limitations
 
 Our study covers a broad range of document types that spans an equally diverse range of institutions and academic units. Although we believe the documents analyzed are representative of what is used in practice in RPT evaluations, the diversity of forms and practices means that some documents contain more details than others regarding what is expected of faculty. As a result, the lack of presence of the JIF-related terms may be due to the types of document used at those institutions, and not a lack of interest or focus on using the metric for evaluation.
 
@@ -67,17 +106,116 @@ Along the same lines, we must also recognize that in studying the RPT process th
 
 ## Results
 
-## How often is the JIF mentioned in RPT documents?
+### How often is the JIF mentioned in RPT documents?
 
 While metrics in general are mentioned in RPT documents from 50% of institutions in our sample (Alperin et al., 2019), only 23% mentioned the JIF explicitly or used one of the JIF-related terms (see groups 1 and 2 in Figure 1) in their RPT documents. The percentage was higher for R-type institutions (40%) than for either M-type (18%) or B-type (0%) institutions (Table 2). Some mentions were found in the institutional-level documents, while others were found at the level of the academic unit (e.g., college, school, or department). Many of the mentions were from different academic units within the same university. Within the R-type institutions, the percentage of academic units that mentioned JIF-related terms was higher for LS (33%) and PSM (29%) units than for SSH (21%) or multidisciplinary units (17%).
 
-## Are the JIF mentions supportive or cautionary?
+**Table 2.**
+ Mentions of the JIF in RPT documents, overall and by institution type.Note that percentages do not sum to one hundred in any given column, since many institutions had more than one JIF mention that could be classified differently. For example, an institution was marked as having a supportive mention if at least one RPT document from that institution, or any of its academic units, had a supportive mention. The same institution could also be counted under ‘cautious’ if a different academic unit within that institution had such a mention.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>All</th>
+      <th>R-type</th>
+      <th>M-type</th>
+      <th>B-type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">How many institutions mention the JIF?</td>
+      <td>n</td>
+      <td>129</td>
+      <td>57</td>
+      <td>39</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>JIF mentioned</td>
+      <td>30 (23%)</td>
+      <td>23 (40%)</td>
+      <td>7 (18%)</td>
+      <td>0 (0%)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Are the JIF mentions supportive or cautionary?</td>
+      <td>n</td>
+      <td>30</td>
+      <td>23</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>supportive</td>
+      <td>26 (87%)</td>
+      <td>19 (83%)</td>
+      <td>7 (100%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>cautious</td>
+      <td>4 (13%)</td>
+      <td>3 (13%)</td>
+      <td>1 (14%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>neutral</td>
+      <td>5 (17%)</td>
+      <td>4 (17%)</td>
+      <td>1 (14%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="5">What do institutions measure with the JIF?</td>
+      <td>n</td>
+      <td>30</td>
+      <td>23</td>
+      <td>7</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>quality</td>
+      <td>19 (63%)</td>
+      <td>14 (61%)</td>
+      <td>5 (71%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>impact/importance/significance</td>
+      <td>12 (40%)</td>
+      <td>8 (35%)</td>
+      <td>4 (57%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>prestige/reputation/status</td>
+      <td>6 (20%)</td>
+      <td>5 (22%)</td>
+      <td>1 (14%)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>unspecified</td>
+      <td>23 (77%)</td>
+      <td>17 (74%)</td>
+      <td>6 (86%)</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Are the JIF mentions supportive or cautionary?
 
 The majority of mentions of the JIF were supportive of the metric’s use in evaluations. Overall, 87% of institutions that mentioned the JIF did so supportively in at least one of their RPT documents from our sample (Table 2). Breaking down by institution type, 83% of R-type and 100% of M-type institutions had supportive mentions. In contrast, just 13% of institutions overall had at least one mention which expressed caution about using the JIF in evaluations. Two institutions (University of Central Florida and University of Guelph) had both supportive and cautious mentions of the JIF, but originating from different academic units. Overall, 17% of institutions had at least one neutral mention. Examples of supportive and cautious mentions can be found in the following two sections. Examples of neutral mentions are in the supplemental information.
 
-## What do RPT documents assume the JIF measures?
+### What do RPT documents assume the JIF measures?
 
-## Associating the JIF with quality
+#### Associating the JIF with quality
 
 The most commonly specified association we observed in these RPT documents was between the JIF and quality, seen in 63% of institutions overall (Table 2). By institution type, 61% of R-type and 71% of M-type institutions in our sample that mention the JIF associate the metric with quality. This association can be seen in the guidelines from the Faculty of Science at the University of Alberta that state: “Of all the criteria listed, the one used most extensively, and generally the most reliable, is the quality and quantity of published work in refereed venues of international stature. Impact factors and/or acceptance rates of refereed venues are useful measures of venue quality…” (University of Alberta, 2012).
 
@@ -87,7 +225,7 @@ Other guidelines create their own metrics using the JIF in their calculations an
 
 In sum, there are repeated links made in the sampled RPT documents between the JIF and research, publication, or journal quality.
 
-## Associating the JIF with impact, importance, or significance
+#### Associating the JIF with impact, importance, or significance
 
 The second most common specified association we observed in these RPT documents was between the JIF and the impact, importance, or significance of faculty research or publications, found in 40% of institutions in our sample. By institution type, 35% of R-type and 57% of M-type institutions made this association (Table 2). For example, guidelines from the Department of Psychology at Simon Fraser University link the JIF with impact: “The TPC [Tenure and Promotion Committee] may additionally consider metrics such as citation figures, impact factors, or other such measures of the reach and impact of the candidate’s scholarship” (Simon Fraser University, 2015).
 
@@ -97,7 +235,7 @@ Guidelines from the Department of History at the University of California, Los A
 
 In all of the above cases, the value of faculty research or individual publications is being evaluated, at least in part, based on the JIF.
 
-## Associating the JIF with prestige, reputation, or status
+#### Associating the JIF with prestige, reputation, or status
 
 A third set of mentions of the JIF associated the metric with prestige, reputation, or status, typically referring to the publication venue. Overall, 20% of institutions in our sample that mentioned the JIF made such an association. As with other concepts, there was variability by institution type, with 22% of the R-type and 14% of the M-type having at least one instance of this association (Table 2). For example, guidelines from the Department of Sociology at the University of Central Florida link the JIF with prestige: “It is also true that some refereed journal outlets count for more than others. Publication in respected, highly cited journals, that is, counts for more than publication in unranked journals. The top journals in sociology and all other social sciences are ranked in the Thompson/ISI citation data base (which generates the well-known Impact Factors), in the Scopus data base, and in certain other citation data bases. In general, it behooves faculty to be aware of the prestige rankings of the field’s journals and to publish in the highest-ranked journals possible. It is also advisable to include in one’s tenure and promotion file information about the Impact Factors or related metrics for the journals where one’s papers appear” (University of Central Florida, 2015).
 
@@ -105,11 +243,11 @@ Similarly, promotion and tenure forms from the University of Vermont associate t
 
 Overall, these documents show a focus on publication venue and use the JIF as a proxy measure for determining how much individual publications should count in evaluations based on where they are published.
 
-## Many mentions do not specify what is measured with the JIF
+#### Many mentions do not specify what is measured with the JIF
 
 Lastly, we were left with many instances where the JIF was mentioned without additional information on what it is intended to measure. Such unspecified mentions were found in the RPT documents of 77% of institutions that mentioned the JIF. These correspond to 74% of the R-type institutions and 86% of the M-type institutions with mentions (Table 2). These mentions were often found in research and scholarship sections that ask faculty to list their publications and accompanying information about the publication venues, such as the JIF or journal rank. Some of these documents simply suggest the JIF be included, while others make it a requirement. For example, guidelines from the Russ College of Engineering and Technology at Ohio University request the JIF in the following way: “List relevant peer-reviewed journal and conference papers published over the last five years (or since last promotion or initial appointment, whichever is less) related to pedagogy or other relevant areas of education. Include the journal’s impact factor (or equivalent journal ranking data) and the number of citations of the article(s)” (Ohio University, 2015).
 
-## Not all mentions of the JIF support its use
+### Not all mentions of the JIF support its use
 
 While the majority of the mentions found in our sample of RPT documents were either neutral or supportive of the JIF, we find that 13% of institutions had at least one mention which cautioned against or discouraged use of the JIF in evaluations. We observed varying levels of caution in these mentions. Some do not critique use of the JIF in general, but rather express concern that JIF data are not as relevant for their discipline as for others. For example, criteria for promotion and tenure from the School of Social Work at the University of Central Florida state: “Journal impact factors will not be a primary criteria for the measurement of scholarly activity and prominence as the academic depth and breadth of the profession requires publication in a multitude of journals that may not have high impact factors, especially when compared to the stem [sic] disciplines” (University of Central Florida, 2014).
 
@@ -125,13 +263,13 @@ None of the RPT documents we analyzed heavily criticize the JIF or prohibit its 
 
 To our knowledge, this is the first study of RPT documents from a representative sample of US and Canadian universities to analyze the use of the JIF in academic evaluations. We found that 40% of R-type and 18% of M-type institutions mentioned the JIF or related terms in their RPT documents. Mentions were largely supportive of JIF use, with 87% of institutions having at least one supportive mention, while just 13% had cautious mentions. The most common specified association we observed in these documents was between the JIF and quality.
 
-## How prevalent is the use of the JIF in evaluations?
+### How prevalent is the use of the JIF in evaluations?
 
 Mentions of the JIF and related terms in RPT documents are not as ubiquitous as the amount of discussion of current evaluation systems would suggest – 23% of institutions in our sample used these terms explicitly. Sample considerations, including the relatively small total number of institutions included, could be a factor in calculating the prevalence of the use of the JIF. However, given our stratified random sampling approach, we consider our sample to be representative and a good indicator of what would be found in the larger population of U.S. and Canadian universities. Importantly, we note that the results differ depending on institution type, which might suggest that the experiences at R-type universities (where mentions of the JIF were most prevalent) play an outsized role in discussions about evaluation. Furthermore, the analysis we present on the terms in groups 1 and 2 of our coding terminology (see Figure 1) may represent only the tip of the iceberg. That is, while we analyzed only those terms that were very closely related to the JIF, we also observed (but did not analyze) terms such as ‘major’, ‘prestigious’, ‘prominent’, ‘highly respected’, ‘highly ranked’, and ‘top tier’ that may be associated with high JIFs in the minds of evaluators. It is impossible to know how RPT committee members interpret such phrases on the basis of the documents alone, but we suspect that some of these additional terms serve to invoke the JIF without explictly naming it. Take the following example from the Department of Anthropology at Boise State University that leaves open for interpretation what measure is used for determining a journal’s status (emphasis added): “The candidate for promotion to associate rank should have a least two publications in upper-tier journals”.
 
 Such examples do not explicitly mention the JIF (and thus are not counted in our analysis), but do imply the need for some measure for ranking journals. It seems likely, given the ubiquity of the JIF, that some committee members will rely on this metric, at least in part, for such a ranking. In short, counting mentions of a restricted set of terms, as we have done here, is likely an underestimate of the extent of the use of the JIF in RPT processes. However, we believe the in-depth analysis presented herein provides a glimpse into the current use of the JIF and may indicate how faculty are considering the metric in evaluations, particularly with respect to assessments of quality.
 
-## The JIF does not measure quality
+### The JIF does not measure quality
 
 The association between the JIF and quality was found in 63% of institutions in our sample, but is there evidence that the JIF is a good indicator of quality? Although quality is hard to define, and even harder to measure, there are aspects of methodological rigor which could be considered indicative of quality, such as sample size, experimental design, and reproducibility (Brembs, 2018). What is the relationship between these aspects of a study and the JIF?
 
@@ -143,7 +281,7 @@ Reproducibility could be used as a measure of quality, since it requires suffici
 
 Thus, at least as viewed through the aspects above, there is little to no evidence that the JIF measures research quality. For a more comprehensive review, see Brembs (2018).
 
-## Improving academic evaluation
+### Improving academic evaluation
 
 In the last few years, several proposals and initiatives have challenged the use of the JIF and promoted the responsible use of metrics to improve academic evaluations. These include the Leiden Manifesto (Hicks et al., 2015), the Metric Tide report (Wilsdon et al., 2015), the Next-Generation Metrics report (Wildson et al., 2017), and HuMetricsHSS (humetricshss.org). We provide a brief description of some such efforts (for a review, see Moher et al., 2018).
 

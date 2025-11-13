@@ -35,7 +35,7 @@
 
 ## Abstract
 
-Monitoring malaria transmission is a critical component of efforts to achieve targets for elimination and eradication. Two commonly monitored metrics of transmission intensity are parasite prevalence (PR) and the entomological inoculation rate (EIR). Comparing the spatial and temporal variations in the PR and EIR of a given geographical region and modelling the relationship between the two metrics may provide a fuller picture of the malaria epidemiology of the region to inform control activities. Using geostatistical methods, we compare the spatial and temporal patterns of Plasmodium falciparum EIR and PR using data collected over 38 months in a rural area of Malawi. We then quantify the relationship between EIR and PR by using empirical and mechanistic statistical models. Hotspots identified through the EIR and PR partly overlapped during high transmission seasons but not during low transmission seasons. The estimated relationship showed a 1-month delayed effect of EIR on PR such that at lower levels of EIR, increases in EIR are associated with rapid rise in PR, whereas at higher levels of EIR, changes in EIR do not translate into notable changes in PR. Our study emphasises the need for integrated malaria control strategies that combine vector and human host managements monitored by both entomological and parasitaemia indices. This work was supported by Stichting Dioraphte grant number 13050800.
+Background:Monitoring malaria transmission is a critical component of efforts to achieve targets for elimination and eradication. Two commonly monitored metrics of transmission intensity are parasite prevalence (PR) and the entomological inoculation rate (EIR). Comparing the spatial and temporal variations in the PR and EIR of a given geographical region and modelling the relationship between the two metrics may provide a fuller picture of the malaria epidemiology of the region to inform control activities.Methods:Using geostatistical methods, we compare the spatial and temporal patterns of Plasmodium falciparum EIR and PR using data collected over 38 months in a rural area of Malawi. We then quantify the relationship between EIR and PR by using empirical and mechanistic statistical models.Results:Hotspots identified through the EIR and PR partly overlapped during high transmission seasons but not during low transmission seasons. The estimated relationship showed a 1-month delayed effect of EIR on PR such that at lower levels of EIR, increases in EIR are associated with rapid rise in PR, whereas at higher levels of EIR, changes in EIR do not translate into notable changes in PR.Conclusions:Our study emphasises the need for integrated malaria control strategies that combine vector and human host managements monitored by both entomological and parasitaemia indices.Funding:This work was supported by Stichting Dioraphte grant number 13050800.
 
 ## Introduction
 
@@ -43,7 +43,7 @@ National malaria control programmes, working in collaboration with global stakeh
 
 A wide range of metrics exists for monitoring malaria parasite transmission. The strengths and limitations of each metric are related, in part, to the step of the parasite transmission cycle it measures (Tusting et al., 2014). These strengths and weaknesses, including the sensitivity of each metric, vary across epidemiological settings and as parasite transmission declines within a given setting (The malERA Refresh Consultative Panel on Characterising the Reservoir and Measuring Transmission, 2017). Two of the most commonly monitored metrics are the prevalence of Plasmodium parasites and the entomological inoculation rate (EIR), especially in moderate to high transmission settings.
 
-The prevalence of Plasmodium parasites in the human population at a given time point (i.e. the parasite rate; PR) approximates the reservoir of hosts potentially available to transmit the parasite from humans to mosquitoes. While only the gametocyte stage of the parasite contributes to transmission, it remains relatively expensive to detect this stage of the parasite. Conversely, rapid diagnostic tests (RDTs) primarily detect asexual-stage antigens, yet they are inexpensive and easily deployed in large-scale community-based surveys (Poti et al., 2020). Still, the limit of detection (50–200 parasites/µ⁢l) for RDTs is higher than that of expert microscopy or PCR (Chiodini, 2014), so that RDT-based estimates of PR are biased by excluding low-density infections. Despite these limitations, RDT-based cross-sectional surveys to measure PR capture both symptomatic and asymptomatic infections, which is important because both are likely to contribute to transmission (Bousema et al., 2014; Slater et al., 2019), and changes in PR over time can indicate changes in transmission.
+The prevalence of Plasmodium parasites in the human population at a given time point (i.e. the parasite rate; PR) approximates the reservoir of hosts potentially available to transmit the parasite from humans to mosquitoes. While only the gametocyte stage of the parasite contributes to transmission, it remains relatively expensive to detect this stage of the parasite. Conversely, rapid diagnostic tests (RDTs) primarily detect asexual-stage antigens, yet they are inexpensive and easily deployed in large-scale community-based surveys (Poti et al., 2020). Still, the limit of detection (50–200 parasites/$µ⁢l$) for RDTs is higher than that of expert microscopy or PCR (Chiodini, 2014), so that RDT-based estimates of PR are biased by excluding low-density infections. Despite these limitations, RDT-based cross-sectional surveys to measure PR capture both symptomatic and asymptomatic infections, which is important because both are likely to contribute to transmission (Bousema et al., 2014; Slater et al., 2019), and changes in PR over time can indicate changes in transmission.
 
 EIR provides an estimate of the intensity of parasite transmission from mosquitoes to humans, expressed as the number of infectious bites received per person per unit time. EIR is calculated by multiplying the number of malaria vector bites per person per unit time, also known as the human biting rate (HBR), by the proportion of vectors carrying the infectious sporozoite stage of malaria parasites, referred to as the sporozoite rate (SR) (Onori and Grab, 1980). The accuracy and precision of EIR estimates, therefore, depends on the accuracy and precision with which HBR and SR can be measured (Tusting et al., 2014). Two common methods for measuring HBR are the human landing catch and the Centers for Disease Control and Prevention Light Trap, but inter-individual variation in attractiveness to mosquitoes restricts standardisation across sampling points for both of these methods (Knols et al., 1995; Qiu et al., 2006). Alternative methods for estimating HBR include the Suna trap, which uses a synthetic blend of volatiles found on human skin and carbon dioxide to attract host-seeking Anopheles mosquitoes (Mukabana et al., 2012; Menger et al., 2014; Hiscox et al., 2014). The standardised odour blend allows for reliable comparisons among trapping locations (Mburu et al., 2019). Regardless of the method used to estimate HBR, the precision of SR decreases as the number of mosquitoes collected decreases. Despite these limitations, EIR is a vital metric of malaria parasite transmission because it directly describes human exposure to malaria parasites before post-inoculation factors such as immunity, nutrition, and access to health care (Killeen et al., 2000). Moreover, EIR provides information about the relative contributions of different vector species to transmission, which can impact malaria intervention effectiveness based on interspecies differences in biting behaviours related to time and location, non-human blood-meal hosts, larval ecology, and insecticide resistance profiles (Ferguson et al., 2010).
 
@@ -55,7 +55,7 @@ In the current study, we use a series of repeated cross-sectional surveys conduc
 
 ## Materials and methods
 
-## Study site
+### Study site
 
 This study was part of the Majete Malaria Project (MMP), an integrated malaria control project in Chikwawa District, Malawi. The catchment area of MMP consisted of three distinct geographical regions, referred to as Focal Areas A, B, and C (Figure 1), with a total population of about 25,000 people living in 6600 households in 65 villages.
 
@@ -67,15 +67,15 @@ Chikwawa experiences highly variable rainfall during its single rainy season, wh
 
 Malaria control in the district is implemented through the Chikwawa District Health Office. During the study period, interventions applied throughout the study area included the continuous provision of insecticide-treated nets (ITNs) to pregnant women and children under five years old, mass distribution campaigns of ITNs targeting universal coverage, intermittent preventative therapy for pregnant women, and malaria case diagnosis and treatment with artemisinin-based combination therapy. The only mass distribution of ITNs in the district during the study period occurred in April 2016. As part of the MMP, a randomised trial was conducted to assess the effectiveness of additional, community-implemented malaria interventions between May 2016 and May 2018 (McCann et al., 2017b). The trial interventions were implemented at the village level, with villages assigned to one of four groups: (a) no additional interventions; (b) larval source management; (c) house improvement; and (d) both larval source management and house improvement (McCann et al., 2017b; van den Berg et al., 2018).
 
-## Data
+### Data
 
 To quantify PfPR and PfEIR over the course of the study, a rolling malaria indicator survey (rMIS) (Roca-Feltrer et al., 2012) was conducted in conjunction with mosquito sampling, forming a series of repeated cross sectional surveys. Sampling was carried out over 17 rounds, with each round spanning a period of 2 or 3 months. In the first two rounds of data collection (baseline, from April through August 2015), an inhibitory geostatistical sampling design (IGSD) was used to select 300 and 270 households, respectively, for the rMIS from an enumeration database of all households in the catchment area (Chipeta et al., 2017). The IGSD helped to ensure that randomly sampled households are relatively uniformly spaced over the study region by requiring each pair of sampled households to be separated by a distance of at least 0.1 km, which increases the efficiency of hotspot detection (Kabaghe et al., 2017). In the three subsequent rounds of data collection during the baseline, an adaptive geostatistical sampling design (AGSD) was used to select 270 households per round (Chipeta et al., 2016). With AGSD, new households for the current round of rMIS were chosen from regions with high standard errors of estimated prevalence, based on data from all previous rounds. In the baseline period, previously sampled households were not eligible for sampling in subsequent rounds. For the trial period (starting May 2016), IGSD was again used to select households from the enumeration database of all households. All households were eligible for selection in each round of the trial period regardless of whether they were selected in a previous round. At each round of rMIS data collection in the baseline and trial phases, respectively, 75% and 72% of the households chosen at each round of the rMIS were then randomly selected for mosquito sampling.
 
 In each sampled household, children under five (0.5–5 y/o) and women of reproductive age (15–49 y/o) were tested for P. falciparum using an RDT (SD BIOLINE Malaria Ag P.f. HRP-II, Standard Diagnostics, Yongin-si, Republic of Korea).
 
-Mosquitoes were sampled from 5pm to 7am using Suna traps (Biogents AG, Regensburg, Germany) with MB5 blend plus C⁢O2 to mimic human odour (Hiscox et al., 2014; Mburu et al., 2019). For a selected household in a surveillance round, the trap was set for one night indoors and one night outdoors, with the order of indoor/outdoor determined randomly. For households where the residents were sleeping in more than one building, a trap was set at each building. Trapped female anophelines were preserved using a desiccant and identified using standard morphological and molecular techniques (Gillies and Coetzee, 1987; Koekemoer et al., 2002; Scott et al., 1993). Female anophelines were further tested for the presence of P. falciparum in their head and thorax, after removing the abdomen, using quantitative polymerase chain reaction (qPCR ) (Bass et al., 2008; Perandin et al., 2004). Specimens with a Ct value below 37.0 were considered positive for P. falciparum.
+Mosquitoes were sampled from 5pm to 7am using Suna traps (Biogents AG, Regensburg, Germany) with MB5 blend plus $C⁢O_{2}$ to mimic human odour (Hiscox et al., 2014; Mburu et al., 2019). For a selected household in a surveillance round, the trap was set for one night indoors and one night outdoors, with the order of indoor/outdoor determined randomly. For households where the residents were sleeping in more than one building, a trap was set at each building. Trapped female anophelines were preserved using a desiccant and identified using standard morphological and molecular techniques (Gillies and Coetzee, 1987; Koekemoer et al., 2002; Scott et al., 1993). Female anophelines were further tested for the presence of P. falciparum in their head and thorax, after removing the abdomen, using quantitative polymerase chain reaction (qPCR ) (Bass et al., 2008; Perandin et al., 2004). Specimens with a Ct value below 37.0 were considered positive for P. falciparum.
 
-## Environmental and climatic factors
+### Environmental and climatic factors
 
 Environmental and climatic factors affect the abundance and suitability of water bodies that support the development of immature mosquitoes (Madder et al., 1983; Loetti et al., 2011), the duration of mosquito development (Ciota et al., 2014; Loetti et al., 2011; Craig et al., 1999), mosquito host-seeking and biting behaviour, and the development rate of malaria parasites in mosquitoes (Rumisha et al., 2014; Amek et al., 2011).
 
@@ -85,83 +85,149 @@ Spectral indices, namely normalised difference vegetation index (NDVI) and enhan
 
 We extracted raster data of surface elevation from the global digital elevation model (DEM) generated using measurements from the Advanced Space-borne Thermal Emission and Reflection Radiometer (ASTER) (Tachikawa et al., 2011). These data are also freely available for download from the USGS Earth Explorer. Using a flow accumulation map derived from the DEM, a river network map was generated and used to calculate and store as raster images the distance to small rivers and large rivers (henceforth, DSR and DLR, respectively).
 
-## Geostatistical analysis
+### Geostatistical analysis
 
 The number of mosquitoes trapped by Suna traps can be used to estimate HBR, as these traps primarily target host-seeking mosquitoes. Hence, we first estimated HBR and the P. falciparum sporozoite rate (PfSR). We then estimated PfEIR as the product of these two quantities.
 
 We carried out separate analyses for A. arabiensis and A. funestus s.s., using explanatory variables and random effects structures that we found to be suitable for each species. Details of the variable selection process and the final sets of explanatory variables for each of the models later described in this section are given in Appendix 1 – Procedure for building the HBR, PfSR, and PfPR models. The correlation structures adopted for the geostatistical models were informed by the variogram-based algorithm described in Giorgi et al., 2018. The geostatistical models for the HBR and PfPR data described below were fitted using PrevMap (Giorgi and Diggle, 2017), freely available from the Comprehensive R Archive Network (CRAN, www.r-project.org). The PfSR models were fitted using the glmm package, also available on CRAN.
 
-## Human biting rate
+#### Human biting rate
 
-Let Y⁢(xi,ti),i=1,…,M, where M=2432 is the total number of houses, denote counts of mosquitoes trapped at location xi in month ti∈{1,…,38}, where ti=1 denotes April 2015. We modelled the Y⁢(xi,ti) using Poisson mixed models expressed by the following linear predictor(1)log⁡{H⁢B⁢R⁢(xi,ti)}=d⁢(xi,ti)⊤⁢β+f⁢(ti;α)+S⁢(xi)+Zi,where: d⁢(xi,ti) is a vector of spatiotemporal explanatory variables with associated regression coefficients β; the f⁢(ti;α) is a linear combination of several functions of time, including sines, cosines and splines, with an associated vector of regression parameters α, accounting for trends and seasonal patterns; the Zi are independent and identically distributed Gaussian random variables with variance τ2; S(x) is a zero-mean stationary and isotropic Gaussian process with variance σ2 and exponential correlation function ρ⁢(u)=exp⁡(-u/ϕ), where ϕ regulates the pace at which the spatial correlation decays for increasing distance u between any two locations. We allow the explanatory variables d⁢(xi,ti) and f⁢(ti;α) to differ between different mosquito species since different species may respond differently to environmental changes. We point out that the stationarity of the process S⁢(x) implies that all of its properties, including the variance (σ2) and scale of the spatial correlation (ϕ), are constant over space. The estimation of the model parameters is then carried out using Monte Carlo Maximum Likelihood (Christensen, 2004).
+Let $Y⁢(x_{i},t_{i}),i=1,…,M$, where $M=2432$ is the total number of houses, denote counts of mosquitoes trapped at location xi in month $t_{i}\in{1,…,38}$, where $t_{i}=1$ denotes April 2015. We modelled the $Y⁢(x_{i},t_{i})$ using Poisson mixed models expressed by the following linear predictor
 
-## Plasmodium falciparum sporozoite rate
+$$
+log⁡{H⁢B⁢R⁢(x_{i},t_{i})}=d⁢(x_{i},t_{i})^{⊤}⁢\beta+f⁢(t_{i};\alpha)+S⁢(x_{i})+Z_{i},
+$$
 
-Let Y*⁢(xi,ti) be the number of mosquitoes that tested positive for the presence of P. falciparum sporozoites. We assumed that the Y*⁢(xi,ti) follow a Binomial mixed model with number of trials N*⁢(xi,ti), that is the total number of successfully tested mosquitoes, and probability of testing positive P⁢f⁢S⁢R⁢(xi,ti). We model the latter as a logit-linear regression given by(2)log⁡{P⁢f⁢S⁢R⁢(xi,ti)1-P⁢f⁢S⁢R⁢(xi,ti)}=d⁢(xi,ti)⊤⁢β*+f*⁢(ti;α*)+Zi*,
+where: $d⁢(x_{i},t_{i})$ is a vector of spatiotemporal explanatory variables with associated regression coefficients β; the $f⁢(t_{i};\alpha)$ is a linear combination of several functions of time, including sines, cosines and splines, with an associated vector of regression parameters α, accounting for trends and seasonal patterns; the $Z_{i}$ are independent and identically distributed Gaussian random variables with variance $\tau^{2}; S(x)$ is a zero-mean stationary and isotropic Gaussian process with variance $\sigma^{2}$ and exponential correlation function $ρ⁢(u)=exp⁡(-u/ϕ)$, where $ϕ$ regulates the pace at which the spatial correlation decays for increasing distance $u$ between any two locations. We allow the explanatory variables $d⁢(x_{i},t_{i})$ and $f⁢(t_{i};\alpha)$ to differ between different mosquito species since different species may respond differently to environmental changes. We point out that the stationarity of the process $S⁢(x)$ implies that all of its properties, including the variance ($\sigma^{2}$) and scale of the spatial correlation ($ϕ$), are constant over space. The estimation of the model parameters is then carried out using Monte Carlo Maximum Likelihood (Christensen, 2004).
 
-where each term in (2) has an analogous interpretation to those of (1). A spatial process S⁢(x) was not included in the sporozoite rate model because we found no evidence of residual spatial correlation in the sporozoite rate data (Appendix 1—figure 1).
+#### Plasmodium falciparum sporozoite rate
 
-## Estimating the Plasmodium falciparum entomological inoculation rate
+Let $Y^{*}⁢(x_{i},t_{i})$ be the number of mosquitoes that tested positive for the presence of P. falciparum sporozoites. We assumed that the $Y^{*}⁢(x_{i},t_{i})$ follow a Binomial mixed model with number of trials $N^{*}⁢(x_{i},t_{i})$, that is the total number of successfully tested mosquitoes, and probability of testing positive $P⁢f⁢S⁢R⁢(x_{i},t_{i})$. We model the latter as a logit-linear regression given by
 
-Let P⁢f⁢E⁢I⁢Rf⁢(x,t) and P⁢f⁢E⁢I⁢Ra⁢(x,t) denote the PfEIR for A. funestus s.s. and A. arabiensis at a given location x and month t. We estimated each of these two asPfEIRf(x,t)=HBRf(x,t)PfSRf(x,t)l(t)PfEIRa(x,t)=HBRa(x,t)PfSRa(x,t)l(t),where l⁢(t) is the number of days in month t. Finally, we estimated the overall PfEIR as(3)P⁢f⁢E⁢I⁢R⁢(x,t)=P⁢f⁢E⁢I⁢Rf⁢(x,t)+P⁢f⁢E⁢I⁢Ra⁢(x,t).
+$$
+log⁡{\frac{P⁢f⁢S⁢R⁢(x_{i},t_{i})}{1-P⁢f⁢S⁢R⁢(x_{i},t_{i})}}=d⁢(x_{i},t_{i})^{⊤}⁢\beta^{*}+f^{*}⁢(t_{i};\alpha^{*})+Z_{i}^{*},
+$$
+
+where each term in (2) has an analogous interpretation to those of (1). A spatial process $S⁢(x)$ was not included in the sporozoite rate model because we found no evidence of residual spatial correlation in the sporozoite rate data (Appendix 1—figure 1).
+
+#### Estimating the Plasmodium falciparum entomological inoculation rate
+
+Let $P⁢f⁢E⁢I⁢R_{f}⁢(x,t)$ and $P⁢f⁢E⁢I⁢R_{a}⁢(x,t)$ denote the PfEIR for A. funestus s.s. and A. arabiensis at a given location $x$ and month $t$. We estimated each of these two as
+
+$$
+PfEIR_{f}(x,t)=HBR_{f}(x,t)PfSR_{f}(x,t)l(t)PfEIR_{a}(x,t)=HBR_{a}(x,t)PfSR_{a}(x,t)l(t),
+$$
+
+where $l⁢(t)$ is the number of days in month $t$. Finally, we estimated the overall PfEIR as
+
+$$
+P⁢f⁢E⁢I⁢R⁢(x,t)=P⁢f⁢E⁢I⁢R_{f}⁢(x,t)+P⁢f⁢E⁢I⁢R_{a}⁢(x,t).
+$$
 
 We then mapped PfEIR as in (3) over a 30 × 30 m regular grid covering the whole of the study area for each month across 38 months.
 
-To map PfEIR for each month, we first simulate at each prediction location (i.e. the centroid of each grid cell) 10,000 samples from the conditional distribution of the random effects (corresponding to S⁢(x)+Z in the case of the PfHBR and Z in the case of PfSR) given the data. We then transform these to obtain 10,000 predicted surfaces for PfHBR and PfSR, and by applying (3) we obtain 10,000 predictive samples for PfEIR. The predicted PfEIR at each prediction location is taken to be the median of the 10,000 samples at that location. The associated 95% predictive interval is the 2.5th to 97.5th percentile of the 10,000 predictive samples.
+To map PfEIR for each month, we first simulate at each prediction location (i.e. the centroid of each grid cell) 10,000 samples from the conditional distribution of the random effects (corresponding to $S⁢(x)+Z$ in the case of the PfHBR and $Z$ in the case of PfSR) given the data. We then transform these to obtain 10,000 predicted surfaces for PfHBR and PfSR, and by applying (3) we obtain 10,000 predictive samples for PfEIR. The predicted PfEIR at each prediction location is taken to be the median of the 10,000 samples at that location. The associated 95% predictive interval is the 2.5th to 97.5th percentile of the 10,000 predictive samples.
 
 In this procedure, all the parameters corresponding to the regression coefficients, the scale and variance of the spatial process, and variance of Gaussian noise are fixed at their MCML estimates.
 
-## Plasmodium falciparum prevalence
+#### Plasmodium falciparum prevalence
 
-We mapped PfPR in women and in children by fitting a geostatistical model to each group. More specifically, let I⁢(xi,ti) denote the number of RDT positives out of Ni⁢t sampled individuals at location xi in month ti. We then assumed that the I⁢(xi,ti) follow a Binomial mixed model with probability of a positive RDT result p⁢(xi,ti), such that (4)log⁡{p⁢(xi,ti)1-p⁢(xi,ti)}=d⁢(xi,ti)⊤⁢φ+g⁢(ti;ϱ)+T⁢(xi)+Ui,where T⁢(xi) is a stationary and isotropic Gaussian process with exponential correlation function and Ui are Gaussian noise, g⁢(ti,ϱ) is a linear combination of splines, and sine and cosine functions of time accounting for trends and seasonality, and φ and ϱ are vectors of regression parameters to be estimated.
+We mapped PfPR in women and in children by fitting a geostatistical model to each group. More specifically, let $I⁢(x_{i},t_{i})$ denote the number of RDT positives out of $N_{i⁢t}$ sampled individuals at location xi in month ti. We then assumed that the $I⁢(x_{i},t_{i})$ follow a Binomial mixed model with probability of a positive RDT result $p⁢(x_{i},t_{i})$, such that 
 
-## Hotspot detection using PfEIR and PfPR
+$$
+log⁡{\frac{p⁢(x_{i},t_{i})}{1-p⁢(x_{i},t_{i})}}=d⁢(x_{i},t_{i})^{⊤}⁢\phi+g⁢(t_{i};ϱ)+T⁢(x_{i})+U_{i},
+$$
+
+where $T⁢(x_{i})$ is a stationary and isotropic Gaussian process with exponential correlation function and $U_{i}$ are Gaussian noise, $g⁢(t_{i},ϱ)$ is a linear combination of splines, and sine and cosine functions of time accounting for trends and seasonality, and φ and $ϱ$ are vectors of regression parameters to be estimated.
+
+#### Hotspot detection using PfEIR and PfPR
 
 We demarcated hotspots for PfEIR and PfPR using an exceedance probability approach. Using the resulting 10,000 predictive samples for PfEIR and PfPR, as described above, we then obtained the exceedance probability for each outcome at each space-time location by computing the proportion of the 10,000 predictive samples that exceeded the respective, predefined thresholds, which were set at 0.1 ib/person/month for EIR, 31% for PfPR in children, and 17% for PfPR in women. Finally, we mapped these exceedance probabilities and demarcated hotspots as areas where these probabilities were at least 0.9. The PfPR thresholds were defined to correspond to the PfEIR threshold based on the best of six functional relationships between PfEIR and PfPR as described in the next section.
 
-## Modelling the relationship between PfEIR and PfPR
+### Modelling the relationship between PfEIR and PfPR
 
-Because PfEIR may have a delayed effect on PfPR, possibly due to the time taken for P. falciparum to develop in the human host, we considered that current PfPR may depend on PfEIR l months prior. In particular, we considered l=0,1,2. We then assumed that the number of RDT positive individuals, I⁢(xi,ti), follow independent Binomial distributions such that(5)P⁢f⁢P⁢R⁢(xi,ti)=h⁢{P⁢f⁢E⁢I⁢R^⁢(xi,ti-l)},where h⁢(⋅) is a function depending on a vector of parameters θ that governs the relationship between PfPR and PfEIR, and P⁢f⁢E⁢I⁢R^⁢(xi,ti-l) is the estimated PfEIR as in Equation (3). We considered six models, each of which provided a different specification for h⁢(⋅).
+Because PfEIR may have a delayed effect on PfPR, possibly due to the time taken for P. falciparum to develop in the human host, we considered that current PfPR may depend on PfEIR $l$ months prior. In particular, we considered $l=0,1,2$. We then assumed that the number of RDT positive individuals, $I⁢(x_{i},t_{i})$, follow independent Binomial distributions such that
 
-We now describe the six models for h⁢(⋅). Models 1 to 4 make explicit assumptions on the underlying mechanism of transmission, whereas models 5 and 6 describe the functional relationship between PfEIR and PfPR through regression methods.
+$$
+P⁢f⁢P⁢R⁢(x_{i},t_{i})=h⁢{P⁢f⁢E⁢I⁢R^⁢(x_{i},t_{i}-l)},
+$$
 
-## Model 1: The susceptible-infected-susceptible (SIS) model
+where $h⁢(⋅)$ is a function depending on a vector of parameters θ that governs the relationship between PfPR and PfEIR, and $P⁢f⁢E⁢I⁢R^⁢(x_{i},t_{i}-l)$ is the estimated PfEIR as in Equation (3). We considered six models, each of which provided a different specification for $h⁢(⋅)$.
 
-Let b be the probability that an infectious mosquito bite results in an infection, referred to as the transmission efficiency. Then, infections at (xi,ti-l) are assessed to occur at a rate of b×P⁢f⁢E⁢I⁢R⁢(xi,ti-l). We assumed that each infection cleared independently over a duration 1/r so that the ratio γ=b/r is the time taken to clear infection per infectious bite. We assumed that the relationship between PfEIR and PfPR holds throughout the study region. If P⁢f⁢E⁢I⁢R⁢(x,t-l) is constant, the relationship between P⁢f⁢E⁢I⁢R⁢(x,t-l) and P⁢f⁢P⁢R⁢(x,t) is described by Ross, 1911(6)∂⁡P⁢f⁢P⁢R⁢(x,t)∂⁡t=b×P⁢f⁢E⁢I⁢R⁢(x,t-l)⁢(1-P⁢f⁢P⁢R⁢(x,t))-r×P⁢f⁢P⁢R⁢(x,t).
+We now describe the six models for $h⁢(⋅)$. Models 1 to 4 make explicit assumptions on the underlying mechanism of transmission, whereas models 5 and 6 describe the functional relationship between PfEIR and PfPR through regression methods.
 
-We obtained our first model as the non-zero equilibrium solution of (6), given by(7)P⁢f⁢P⁢R⁢(x,t)=γ⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)γ⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)+1.
+#### Model 1: The susceptible-infected-susceptible (SIS) model
 
-## Model 2: The SIS model with different infection/recovery rates (D.I/R)
+Let $b$ be the probability that an infectious mosquito bite results in an infection, referred to as the transmission efficiency. Then, infections at $(x_{i},t_{i}-l)$ are assessed to occur at a rate of $b\timesP⁢f⁢E⁢I⁢R⁢(x_{i},t_{i}-l)$. We assumed that each infection cleared independently over a duration $1/r$ so that the ratio $\gamma=b/r$ is the time taken to clear infection per infectious bite. We assumed that the relationship between PfEIR and PfPR holds throughout the study region. If $P⁢f⁢E⁢I⁢R⁢(x,t-l)$ is constant, the relationship between $P⁢f⁢E⁢I⁢R⁢(x,t-l)$ and $P⁢f⁢P⁢R⁢(x,t)$ is described by Ross, 1911
 
-Model 1 assumes that women and children get infected and recover at the same rate. However, the transmission and recovery rates in children may differ from those in women. We, therefore, modified Model 1 by allowing different values of b and r for each category of people. Let ξ1,i⁢t and ξ2,i⁢t respectively be the proportion of children and women sampled at (xi,ti) and γk=bk/rk, where k=1 denotes children and k=2 denotes women. The resulting Model 2 is(8)P⁢f⁢P⁢R⁢(x,t)=∑k=12ξk,i⁢t⁢γk⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)γk⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)+1.
+$$
+\frac{\partial⁡P⁢f⁢P⁢R⁢(x,t)}{\partial⁡t}=b\timesP⁢f⁢E⁢I⁢R⁢(x,t-l)⁢(1-P⁢f⁢P⁢R⁢(x,t))-r\timesP⁢f⁢P⁢R⁢(x,t).
+$$
 
-## Model 3: The SIS model with superinfection (S.I.)
+We obtained our first model as the non-zero equilibrium solution of (6), given by
 
-If individuals are super-infected with P. falciparum, then the rate at which infections clear depends on the infection rate, with clearance being faster when infection rate is low, and slower when infection rate is high. To capture this feature, we modelled infection clearance rate as g⁢(ϑ,r)=ϑ/(eϑ/r-1), where ϑ=b×P⁢f⁢E⁢I⁢R(Smith et al., 2005; Walton, 1947; Dietz et al., 1974; Aron and May, 1982). The resulting model for P⁢f⁢P⁢R⁢(x,t) is(9)P⁢f⁢P⁢R⁢(x,t)=1-exp⁡{-γ⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}
+$$
+P⁢f⁢P⁢R⁢(x,t)=\frac{\gamma⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}{\gamma⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)+1}.
+$$
 
-## Model 4: The SIS model with S.I and D.I/R
+#### Model 2: The SIS model with different infection/recovery rates (D.I/R)
 
-Combining the assumptions of heterogeneous infection/recovery rates, as in Model 2 and superinfection, as in Model 3, we obtain Model 4,(10)P⁢f⁢P⁢R⁢(x,t)=∑k=12ξk,i⁢t⁢(1-exp⁡{-γk⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}).
+Model 1 assumes that women and children get infected and recover at the same rate. However, the transmission and recovery rates in children may differ from those in women. We, therefore, modified Model 1 by allowing different values of $b$ and $r$ for each category of people. Let $ξ_{1,i⁢t}$ and $ξ_{2,i⁢t}$ respectively be the proportion of children and women sampled at $(x_{i},t_{i})$ and $\gamma_{k}=b_{k}/r_{k}$, where $k=1$ denotes children and $k=2$ denotes women. The resulting Model 2 is
 
-## Model 5: The Beier model
+$$
+P⁢f⁢P⁢R⁢(x,t)=\sumk=12ξ_{k,i⁢t}⁢\frac{\gamma_{k}⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}{\gamma_{k}⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)+1}.
+$$
 
-Beier et al., 1999 assumed that the log of PfEIR is linearly related to PfPR, and fitted the regression model(11)P⁢f⁢P⁢R⁢(x,t)=a+b⁢log⁡(P⁢f⁢E⁢I⁢R⁢(x,t-l)),the so called ‘log-linear model’.
+#### Model 3: The SIS model with superinfection (S.I.)
 
-## Model 6: The logit-linear model
+If individuals are super-infected with P. falciparum, then the rate at which infections clear depends on the infection rate, with clearance being faster when infection rate is low, and slower when infection rate is high. To capture this feature, we modelled infection clearance rate as $g⁢(ϑ,r)=ϑ/(e^{ϑ/r}-1)$, where $ϑ=b\timesP⁢f⁢E⁢I⁢R$(Smith et al., 2005; Walton, 1947; Dietz et al., 1974; Aron and May, 1982). The resulting model for $P⁢f⁢P⁢R⁢(x,t)$ is
 
-The Beier model has the limitation that PfPR approaches -∞ as PfEIR goes to 0 and approaches ∞ as PfEIR goes to ∞. To constrain PfPR to lie between 0 and 1, we applied the logit-link function to PfPR to give Model 6, (12)log⁡(P⁢f⁢P⁢R⁢(x,t)1-P⁢f⁢P⁢R⁢(x,t))=a+b⁢log⁡(P⁢f⁢E⁢I⁢R⁢(x,t-l)).
+$$
+P⁢f⁢P⁢R⁢(x,t)=1-exp⁡{-\gamma⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}
+$$
 
-## Parameter estimation of the PfEIR-PfPR relationship models
+#### Model 4: The SIS model with S.I and D.I/R
 
-We estimated the parameters of each of the six models by maximising the log-likelihood function(13)∑ti∑xiI⁢(xi,ti)⁢log⁡(P⁢f⁢P⁢R⁢(xi,ti))+(Ni⁢t-I⁢(xi,ti))⁢log⁡(1-P⁢f⁢P⁢R⁢(xi,ti)).
+Combining the assumptions of heterogeneous infection/recovery rates, as in Model 2 and superinfection, as in Model 3, we obtain Model 4,
 
-To fit each model, we first obtained 10,000 bootstrapped data sets of predicted PfEIR as in (3) at the set of all space-time locations sampled for the rMIS. We did this for two reasons: to obtain PfEIR data at locations (xi,ti) that were sampled for rMIS but not for the entomological surveillance; and to account for the uncertainty in PfEIR. The predicted PfEIR values were then paired with respective empirical PfPR values at (xi,ti). By fitting each model to each of the 10,000 datasets, we then obtained 10,000 bootstrapped samples {θ^1,…,θ^10000} for the vector of parameter estimates θ^ of each the six candidate models. We then summarised these samples by their mean and central 95% probability interval. We repeated this process for l=0,1,2.
+$$
+P⁢f⁢P⁢R⁢(x,t)=\sumk=12ξ_{k,i⁢t}⁢(1-exp⁡{-\gamma_{k}⁢P⁢f⁢E⁢I⁢R⁢(x,t-l)}).
+$$
+
+#### Model 5: The Beier model
+
+Beier et al., 1999 assumed that the log of PfEIR is linearly related to PfPR, and fitted the regression model
+
+$$
+P⁢f⁢P⁢R⁢(x,t)=a+b⁢log⁡(P⁢f⁢E⁢I⁢R⁢(x,t-l)),
+$$
+
+the so called ‘log-linear model’.
+
+#### Model 6: The logit-linear model
+
+The Beier model has the limitation that PfPR approaches $-∞$ as PfEIR goes to 0 and approaches $∞$ as PfEIR goes to $∞$. To constrain PfPR to lie between 0 and 1, we applied the logit-link function to PfPR to give Model 6, 
+
+$$
+log⁡(\frac{P⁢f⁢P⁢R⁢(x,t)}{1-P⁢f⁢P⁢R⁢(x,t)})=a+b⁢log⁡(P⁢f⁢E⁢I⁢R⁢(x,t-l)).
+$$
+
+#### Parameter estimation of the PfEIR-PfPR relationship models
+
+We estimated the parameters of each of the six models by maximising the log-likelihood function
+
+$$
+\sumt_{i}\sumx_{i}I⁢(x_{i},t_{i})⁢log⁡(P⁢f⁢P⁢R⁢(x_{i},t_{i}))+(N_{i⁢t}-I⁢(x_{i},t_{i}))⁢log⁡(1-P⁢f⁢P⁢R⁢(x_{i},t_{i})).
+$$
+
+To fit each model, we first obtained 10,000 bootstrapped data sets of predicted PfEIR as in (3) at the set of all space-time locations sampled for the rMIS. We did this for two reasons: to obtain PfEIR data at locations $(x_{i},t_{i})$ that were sampled for rMIS but not for the entomological surveillance; and to account for the uncertainty in PfEIR. The predicted PfEIR values were then paired with respective empirical PfPR values at $(x_{i},t_{i})$. By fitting each model to each of the 10,000 datasets, we then obtained 10,000 bootstrapped samples ${\theta^_{1},…,\theta^_{10000}}$ for the vector of parameter estimates $\theta^$ of each the six candidate models. We then summarised these samples by their mean and central 95% probability interval. We repeated this process for $l=0,1,2$.
 
 We compared the fit of the six models based on their predictive ability as measured by the bias and root-mean-square error when each model is used to predict prevalence at all the observed space-time locations.
 
 ## Results
 
-## rMIS and mosquito sampling
+### rMIS and mosquito sampling
 
 From April 2015 to May 2018, a total of 6870 traps (3439 indoors; 3431 outdoors) were placed at 2432 houses over 17 rounds of sampling (Figure 2), resulting in the collection of 657 female Anopheles mosquitoes (Table 1). Following PCR of the 478 A. gambiae s.l. collected, 92% were identified as A. arabiensis, 2% as A. gambiae s.s., 1% as A. quadriannulatus, and 5% could not be identified further. From the 179 A. funestus s.l. collected, 95% were identified as A. funestus s.s. by PCR, while the remaining 5% could not be identified further. The observed vector composition is therefore 71%, 27%, and 2% for A. arabiensis, A. funestus s.s., and A. gambiae s.s., respectively.
 
@@ -169,11 +235,104 @@ From April 2015 to May 2018, a total of 6870 traps (3439 indoors; 3431 outdoors)
 
 **Figure 2.:** The top panel shows the number of houses where Suna traps were set, and the bottom panel shows the number of participants in the rMIS.
 
+**Table 1.**
+ Details of Anopheles female mosquitoes collected.The table shows the observed numbers collected indoors and outdoors, the HBR (number collected per trap multiplied by the number of days in each of the 38 months of sampling), PfSR and PfEIR for the Anopheles species sampled.Table 1—source data 1.Source data of the details of Anopheles female mosquitoes collected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Number</th>
+      <th>Number</th>
+      <th>Empirical</th>
+      <th>Empirical</th>
+      <th>Empirical</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Collected</th>
+      <th>Collected</th>
+      <th>HBR</th>
+      <th>PfSR</th>
+      <th>PfEIR</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Indoors</th>
+      <th>Outdoors</th>
+      <th>(bite/person)</th>
+      <th>%</th>
+      <th>(ib/person)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A. arabiensis</td>
+      <td>175</td>
+      <td>263</td>
+      <td>73.66</td>
+      <td>5.48%</td>
+      <td>4.04</td>
+    </tr>
+    <tr>
+      <td>A. funestus s.s.</td>
+      <td>74</td>
+      <td>96</td>
+      <td>28.58</td>
+      <td>11.17%</td>
+      <td>3.19</td>
+    </tr>
+    <tr>
+      <td>A. gambiae s.s.</td>
+      <td>5</td>
+      <td>6</td>
+      <td>1.85</td>
+      <td>18.18%</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>A. quadriannulatus</td>
+      <td>1</td>
+      <td>3</td>
+      <td>0.67</td>
+      <td>0.00%</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>A. gambiae s.l.*</td>
+      <td>12</td>
+      <td>13</td>
+      <td>4.20</td>
+      <td>12.00%</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>A. funestus s.l.**</td>
+      <td>4</td>
+      <td>5</td>
+      <td>1.51</td>
+      <td>11.11%</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>TOTAL</td>
+      <td>271</td>
+      <td>386</td>
+      <td>110.47</td>
+      <td></td>
+      <td>8.24</td>
+    </tr>
+  </tbody>
+</table>
+
+_A. gambiae s.l. * and A. funestus s.l. ** are Anopheles female mosquitoes morphologically identified as belonging to the A. gambiae species complex and A. funestus species group, respectively, but which could not be further identified by PCR. The unit of EIR is infective bites per person over the course of the study (38 months)._
+
 Despite the relatively low abundance of A. funestus s.s. compared to A. arabiensis, the higher sporozoite rate of the former made the contribution of A. funestus s.s. to the total PfEIR almost equivalent to that of A. arabiensis (Table 1). The total PfEIR for the 38 months was 8.24 ib/person, equivalent to an average 2.60 ib/person/year.
 
 Over the same 38-month period, 5685 individual P. falciparum RDT tests were conducted across 3096 household visits (Figure 2). Among the 2401 tests conducted on children aged 6 to 59 months, 25.5% were positive, while 14.3% of the 3284 tests conducted on women aged 15–49 y/o were positive.
 
-## Spatiotemporal patterns of PfEIR and PfPR
+### Spatiotemporal patterns of PfEIR and PfPR
 
 We observed clear spatiotemporal heterogeneities in PfEIR, PfPR in children, and PfPR in women when mapped across the study region at a fine spatial resolution (30 x 30 m) and 1 month intervals. For convenient visualisation of the main features of the spatiotemporal maps, we have developed an interactive web-based application to show the maps at http://chicas.lancaster-university.uk/projects/malaria_in_malawi/pfpr/. We show selected predictive maps of PfEIR and PfPR in Figure 3 and exceedance probability of PfEIR and PfPR in Figure 4 for June 2015, August 2016 and November 2017, which are representative of high, medium and low transmission months, relative to the full study period. Spatially, there were differences both within and between the three focal areas. Focal Area A generally showed the lowest PfEIR and PfPR, while Focal Areas B and C showed similar, higher levels of PfEIR. Within each focal area, the spatial patterns changed from month to month, with hotspots of both PfEIR and PfPR proceeding through seasonal cycles of expansion and retraction over time. Over the 3-year study period, hotspots of PfEIR and PfPR generally disappeared during the low transmission seasons, except for residual hotspots of PfPR that persisted throughout the study period.
 
@@ -193,7 +352,7 @@ When summarised over the whole study region, each of PfPR and PfEIR exhibited se
 
 Three observations are clear from both the spatiotemporal maps and the monthly summarised data (Figure 5). First, children aged 6–59 months consistently had a higher level of PfPR than women throughout the study period. Second, PfPR in both groups generally decreased from the start of the study in April 2015 to December 2016, after which there was a general trend of increasing PfPR in both age groups. Finally, PfEIR was steady in the first 2 years of the study, followed by a general decrease after May 2016. Strikingly, the observed PfEIR was 0 between June 2017 and the end of the study, while the PfPR increased in both children and women between November 2017 and May 2018.
 
-## The relationship between PfEIR and PfPR
+### The relationship between PfEIR and PfPR
 
 Temporally, the seasonal patterns of PfEIR and PfPR within each year were nearly concurrent, with the estimated peak in PfEIR preceding that of PfPR by one month (Figure 5).
 
@@ -249,10 +408,10 @@ In this study, the empirical PfPR was used as the response variables of six diff
 
 One limitation of this study was that the six PfEIR-PfPR models do not allow for overdispersion in the estimation of the PfEIR-PfPR relationship. However, the use of standard Binomial likelihoods still delivers unbiased estimates of the functional relationship between PfEIR and PfPR, even in the presence of overdispersion (Godambe and Kale, 1991). Furthermore, given that the uncertainty around the PfPR-PfEIR relationship is mainly driven by the predictive distribution of PfEIR, which we account for through our bootstrap procedure, we do not expect overdispersion to have non-negigible influence on the parameter estimates. Finally, the development of models that allow for overdispersion may be achieved in several different ways, for example, by modelling the parameters that modulate the PfEIR-PfPR relationship as stochastic processes. However, these approaches would require a larger amount of data than those available in this study and should be the subject of future research.
 
-A second limitation was the use of RDTs to estimate PfPR. RDTs can show false positives after anti-malarial drug treatment due to persistence of the antigens detected by RDTs (Dalrymple et al., 2018). Also, the limit of detection (usually 50–200 parasites/µl) is higher than that of expert microscopy or PCR (Chiodini, 2014). In modelling the relationship between PfEIR and PfPR, we did not account for the sensitivity and specificity of the RDT used to detect P falciparum infection. If the sensitivity α and specificity β were known, we could account for them by setting P⁢f⁢P⁢R⁢(x,t) as used in our analysis to α⁢(P⁢f⁢P⁢R⁢(x,t)⁢β-1)/(α+β-1). Thus, strictly, what we have called PfPR should be interpreted as the probability of testing positive for P. falciparum using RDT. However, the use of RDTs as a diagnostic test for the detection of malaria infection provides PfPR estimates that are comparable to national malaria indicator surveys.
+A second limitation was the use of RDTs to estimate PfPR. RDTs can show false positives after anti-malarial drug treatment due to persistence of the antigens detected by RDTs (Dalrymple et al., 2018). Also, the limit of detection (usually 50–200 parasites/µl) is higher than that of expert microscopy or PCR (Chiodini, 2014). In modelling the relationship between PfEIR and PfPR, we did not account for the sensitivity and specificity of the RDT used to detect P falciparum infection. If the sensitivity α and specificity β were known, we could account for them by setting $P⁢f⁢P⁢R⁢(x,t)$ as used in our analysis to $\alpha⁢(P⁢f⁢P⁢R⁢(x,t)⁢\beta-1)/(\alpha+\beta-1)$. Thus, strictly, what we have called PfPR should be interpreted as the probability of testing positive for P. falciparum using RDT. However, the use of RDTs as a diagnostic test for the detection of malaria infection provides PfPR estimates that are comparable to national malaria indicator surveys.
 
 An additional limitation of our study was the unidirectional relationship implicitly assumed in our models of PfEIR-PfPR. In reality, PfPR and PfEIR are causally linked by the malaria parasite transmission cycle, which alternates between the human host and the mosquito vector. A higher rate of infectious bites received per person (i.e. PfEIR) increases the probability of the person becoming infected when bitten. Therefore, any factor that reduces mosquito populations, biting rates or human-to-mosquito parasite transmission (e.g. effective vector control interventions) will reduce PfEIR and consequently translate to reductions in PfPR. Similarly, a higher rate of parasite infection in people (i.e. PfPR) increases the probability of a mosquito becoming infected after any given blood meal. Therefore, factors that directly reduce PfPR (e.g. treatment of infections with effective drugs) will consequently reduce PfEIR. The impact of interventions may therefore affect both PfEIR and PfPR in such a way that a cyclic relationship may better describe the association between these metrics. Future modelling efforts may thus be improved by taking into account the cyclic aspect of the PfEIR-PfPR relationship.
 
-## Conclusion
+### Conclusion
 
 Measuring PfEIR and PfPR using the rolling MIS sampling framework and a geostatistical modelling approach allowed us to assess the fine-scale spatial and temporal distributions of malaria parasite transmission over 38 months in a mesoendemic setting. The relationship between PfEIR and PfPR estimated here shows that at low levels of PfEIR, changes in PfEIR are associated with rapid changes in PfPR, while at higher levels of PfEIR, changes in PfEIR are not associated with appreciable changes in PfPR. Comparing hotspots of PfEIR and PfPR revealed that each metric could identify potential transmission hotspots that the other fails to capture. Our results emphasise that PfEIR and PfPR are essential, complementary metrics for monitoring short term changes in P. falciparum transmission intensity in mesoendemic settings, which have become increasingly common as many regions reduce transmission and shift from the highest malaria endemicity levels. Our study emphasises the need to couple vector control with identifying and treating infected individuals to drive malaria to elimination levels and to monitor both entomological and parasitaemia indices in malaria surveillance.

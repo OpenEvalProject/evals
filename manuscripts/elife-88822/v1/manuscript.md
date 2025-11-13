@@ -18,14 +18,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02pc6pc55 Institute of Plant Science and Resources (IPSR), Okayama University Okayama Japan
-2. https://ror.org/0418a3v02 Faculty of Agriculture, Setsunan University Osaka Japan
-3. https://ror.org/02pc6pc55 Research Institute for Interdisciplinary Science, Okayama University Okayama Japan
-4. https://ror.org/057zh3y96 Research Center for Advanced Science and Technology, The University of Tokyo Tokyo Japan
-5. https://ror.org/034t30j35 Shanghai Center for Plant Stress Biology, Center for Excellence in Molecular Plant Sciences, Chinese Academy of Sciences Shanghai China
-6. https://ror.org/03xcn0p72 Biotechnology Division, CSIR-Institute of Himalayan Bioresource Technology Palampur India
-7. https://ror.org/00pd74e08 Institute of Plant Biology and Biotechnology, University of Münster Münster Germany
-8. https://ror.org/01na0pb61 Institut de Biologie Physico-Chimique, Unité Mixte de Recherche 7141, Centre National de la Recherche Scientifique and Sorbonne Université Pierre et Marie Curie Paris France
+1. Institute of Plant Science and Resources (IPSR), Okayama University Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))
+2. Faculty of Agriculture, Setsunan University Osaka Japan ([ROR:0418a3v02](https://ror.org/0418a3v02))
+3. Research Institute for Interdisciplinary Science, Okayama University Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))
+4. Research Center for Advanced Science and Technology, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+5. Shanghai Center for Plant Stress Biology, Center for Excellence in Molecular Plant Sciences, Chinese Academy of Sciences Shanghai China ([ROR:034t30j35](https://ror.org/034t30j35))
+6. Biotechnology Division, CSIR-Institute of Himalayan Bioresource Technology Palampur India ([ROR:03xcn0p72](https://ror.org/03xcn0p72))
+7. Institute of Plant Biology and Biotechnology, University of Münster Münster Germany ([ROR:00pd74e08](https://ror.org/00pd74e08))
+8. Institut de Biologie Physico-Chimique, Unité Mixte de Recherche 7141, Centre National de la Recherche Scientifique and Sorbonne Université Pierre et Marie Curie Paris France ([ROR:01na0pb61](https://ror.org/01na0pb61))
 
 † Corresponding author
 
@@ -43,37 +43,347 @@ In Escherichia coli, FtsH was shown to recognize either N- or C-terminal tail of
 
 What is the disorder of photosystems leading to photo-oxidative damage in PSII? Light energy frequently leads to the generation of reactive oxygen species (ROS) such as singlet oxygen at around PSII (Ohnishi et al., 2005; Tyystjarvi, 2008; Yamamoto et al., 2008), which may cause oxidative post-translational modification (OPTM) of subunit proteins (Li and Kim, 2022). It is noteworthy that light-dependent oxidation of amino acids, either in free forms or as peptide residues, has been reported, including thiol-containing (Cys and Met) and aromatic (Tyr, Phe, Trp) amino acids. For example, Cys and Met are prone to oxidation, whereas the oxidized Cys and Met can be reduced enzymatically. In contrast to these reversible OPTMs, OPTM of Trp is irreversible (Rinalducci et al., 2008; Ehrenshaft et al., 2015). Thus, the only way to remove irreversible oxidized residues is proteolytic degradation, implying that Trp oxidation might trigger D1 degradation, either directly or indirectly in the PSII repair. As summarized in Figure 1A, oxidation of Trp side chain results in the formation of oxindolylalanine (OIA), N-formylkynurenine (NFK), and kynurenine (KYN). ROS attacks and opens the pyrrole ring of Trp, and forms a di-oxidized Trp derivative, NFK. Indeed, Trp residues in photosynthetic protein components were shown to be oxidized both in vitro and in vivo (Anderson et al., 2002; Dreaden et al., 2011; Dreaden Kasson et al., 2012). However, although oxidative modification of D1 and other subunits has been documented previously, how these molecules are recognized and undergo degradation remains elusive. In this study, we investigated whether Trp oxidation in PSII core proteins influences D1 degradation mediated by FtsH. Our integrative approaches to address this question, by mass-spectrometry, site-directed mutagenesis, D1 degradation assay, and simulation model suggest that an N-terminal Trp oxidation is likely to be a key OPTM to trigger D1 degradation in the PSII repair.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig1-v1.jpg)
+
+**Figure 1.:** (A) Trp-oxidation pathway. OIA: oxindolylalanine, NFK: N-formylkynurenine, KYN: Kynurenine. (B) Multiple alignment of D1 protein from Arabidopsis, spinach, Chlamydomonas, and Thermosynechococcus vulcanus, showing oxidized Trp residues. Orange color boxes indicate the identified peptide by the MS-MS analysis. Oxidized Trp residues are highlighted in red. (C) Oxidation levels of three oxidative variants of Trp in Trp14 and Trp317 containing peptides in var2 and WT obtained by label-free MS analysis. The abundance of oxidized variants (+4: KYN,+16: OIA, and +32: NFK) of Trp14 and Trp317 were calculated using the intensity values. Asterisks indicate statistically significant differences between the mean values (*<0.05, **<0.01; Student’s t-test). (D–E) Structural positions of oxidized Trp residues in PSII core proteins. The side chain of oxidized Trp residues are shown with red-colored space-filling model and indicated with arrows. The P680 special chlorophyll pair is indicated with dark-green colored ball-stick model in panel e. PSII dimer (panel d) and monomer (panel e) from Chlamydomonas reinhardtii (PDB ID is 6KAC) is shown in cartoon model without cofactors Top view from stromal side or lumenal side (D) and the side view from the dimer interface (E) are shown respectively. The color code of each subunit is, Green, D1; Dark blue, D2; Purple, CP43, Cyan, CP47. Protein structure graphics were generated with PyMOL ver. 2.4.0 software.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Trp-oxidation pathway. (B) Mass spectra of Trp14 carrying peptide 9ESESL(W)GR16 of D1 protein in var2. This oxidation led to the formation of oxindolylalanine (OIA), N-formylkyrnurenine (NFK), and kynurenine (KYN) with  +16, +32, and  +4 mass shifts, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Trp-oxidation pathway. (B) Mass spectra of Trp317 carrying peptide 313VINT(W)ADIINR323 of D1 protein in var2. This oxidation led to the formation of oxindolylalanine (OIA), N-formylkyrnurenine (NFK), and kynurenine (KYN) with  +16, +32, and  +4 mass shifts, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The oxidized Trp residues in D2 (A), CP43(B), and CP47 (C) were highlighted. Orange color boxes indicate the identified peptide by the MS-MS analysis. Oxidized Trp residues are highlighted in red.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The structure is from Thermosynecoccocus vulcanus (PDB id is 3WU2) and shown in cartoon model without cofactors by PyMOL ver. 2.4.0. The four PSII core subunits are colored in green (D1), marine blue (D2), pink (CP43), and cyan (CP47). The oxidized Trp residues are indicated by red. Side view (a) and top view (b) of the structure are respectively shown. Green, D1; Dark blue, D2; Purple, CP43, Cyan, CP47.
+
 ## Results
 
-## Increased OPTM of Trp residues in Arabidopsis var2 mutant
+### Increased OPTM of Trp residues in Arabidopsis var2 mutant
 
 Previous studies using isolated spinach thylakoid membranes and Arabidopsis seedlings revealed several Trp residues oxidized in PSII core proteins, as summarized in Figure 1B and Table 1 (Rinalducci et al., 2008; Dreaden et al., 2011; Dreaden Kasson et al., 2012). Trp-oxidized derivatives, OIA, NFK, and KYN, give the shifts of peptide mass to +16,+32, and +4 Da, respectively (Figure 1A). In this study, we attempted to assess if the oxidation of certain Trp residues is associated with D1 degradation in the PSII repair cycle. To investigate this, comprehensive detection of Trp oxidation within protein extracts in Arabidopsis has been established using label-free quantitative mass-spectrometry, as previously reported (Dogra et al., 2019). First, we characterized Trp oxidation from total proteins of Arabidopsis wild-type seedlings grown in continuous light (100 µmol photons m–2s–1). Consistent with previous results (Dreaden Kasson et al., 2012; Dogra et al., 2019), two Trp residues in D1, namely Trp-14 and Trp-317, were shown to be oxidized (Figure 1—figure supplement 1 and Figure 1—figure supplement 2). The total sequence coverage obtained by our mass spectrometry for D1 was 26%. Further mass spectrometry in extracts of Arabidopsis mutants var2 lacking FtsH2, which is shown to impair D1 degradation and exhibit substantial accumulation of ROS (Kato et al., 2009), revealed the accumulation of oxidized Trp in the PSII complex. The levels of Trp-oxidized derivatives, OIA, NFK, and KYN in Trp-14 and the level of KYN in Trp-314 were significantly increased in var2 compared to the wild type, respectively (Figure 1C). These results prompted us to characterize the role of these Trp oxidations in the PSII repair further.
 
-## OPTM of Trp residues in Chlamydomonas PSII core proteins
+**Table 1.**
+ Modification reported in Trp in PSII core proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organism</th>
+      <th>Protein</th>
+      <th>Sequence</th>
+      <th>Modified Trp residue</th>
+      <th>Oxidation status</th>
+      <th>Position in Chlamydomonas</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Spinach</td>
+      <td>D1</td>
+      <td>VINT(W*)ADIINR</td>
+      <td>Trp317</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp317</td>
+      <td rowspan="5">Dreaden Kasson et al., 2012</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>FTKDEKDLFDSMDD(W*)LR</td>
+      <td>Trp22</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DLFDSMDD(W*)LR</td>
+      <td>Trp22</td>
+      <td>OIA, KYN</td>
+      <td>Trp21</td>
+    </tr>
+    <tr>
+      <td>CP43</td>
+      <td>AP(W*)LEPLR</td>
+      <td>Trp365</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp353</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AP(W*)LEPLRGPNGLDLSR</td>
+      <td>Trp365</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp353</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>AP(W*)LEPLR</td>
+      <td>Trp365</td>
+      <td>OIA, KYN</td>
+      <td>Trp353</td>
+      <td>Anderson et al., 2002</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>F(W*)DLR</td>
+      <td>Trp359</td>
+      <td>OIA</td>
+      <td>Trp347</td>
+      <td rowspan="2">Dreaden Kasson et al., 2012</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DIQP(W*)QER</td>
+      <td>Trp387</td>
+      <td>OIA</td>
+      <td>Trp375</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Arabidopsis</td>
+      <td>D1</td>
+      <td>ESESL(W*)GR</td>
+      <td>Trp14</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp14</td>
+      <td rowspan="8">Dogra et al., 2019</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VINT(W*)ADIINR</td>
+      <td>Trp317</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp317</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+      <td>DLFDIMDD(W*)LR</td>
+      <td>Trp22</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp21</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>A(W*)MAAQDQPHENLIFPEEVLPR</td>
+      <td>Trp329</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp328</td>
+    </tr>
+    <tr>
+      <td>CP43</td>
+      <td>AP(W*)LEPLR</td>
+      <td>Trp365</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp353</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DIQP(W*)QER</td>
+      <td>Trp387</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp375</td>
+    </tr>
+    <tr>
+      <td>CP47</td>
+      <td>YQ(W*)DQGYFQQEIYR</td>
+      <td>Trp275</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp275</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VSAGLAENQSLSEA(W*)AK</td>
+      <td>Trp302</td>
+      <td>OIA, NFK, KYN</td>
+      <td>Trp302</td>
+    </tr>
+    <tr>
+      <td colspan="3">OIA: oxindolylalanine, NFK: N-formylkynurenineKYN: Kynurenine</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### OPTM of Trp residues in Chlamydomonas PSII core proteins
 
 To validate whether Trp oxidation detected in Arabidopsis seedings is also detectable in other model organisms, we investigated extracts from Chlamydomonas thylakoid membranes (Table 2). Mass spectrometry following trypsin digestion demonstrated that several Trp residues in PSII were oxidized; among the core subunits, D1 had oxidation of four residues, D2 had three, CP43 had five, and CP47 had three (Table 2 and Figure 1—figure supplement 3). The position of oxidized Trp residues in their amino acid sequence was shown in Figure 1B for D1 and Figure 1—figure supplement 3 for D2, CP43, and CP47. Together with previous studies, Trp-14 and Trp-317 in D1, Trp-21 and Trp-328 in D2, Trp-353 and Trp-375 in CP43, and Trp-275 and Trp-302 in CP47 were commonly identified among at least two organisms. Spatial arrangement of these Trp residues that were commonly oxidized in Arabidopsis and Chlamydomonas was compared within the structure of PSII complex, as shown in Figure 1D and E (oxidized Trp residues were assigned in the PSII dimer, and its 3D image is shown in Figure 1—animation 1). Also, oxidized Trp residues were assigned in the PSII structure from Thermosynecoccocus vulcanus and were shown in Figure 1—figure supplement 4. Intriguingly, most of these oxidized Trp residues are positioned at the lumenal side of the PSII core complex, which appeared to surround the Mn4O5Ca cluster in the PSII structure model. In contrast, two oxidized Trp residues, Trp-14 in D1 and Trp-21 in D2 close to the N-terminus of the polypeptides, are located on the stromal side. The fact that the oxidized Trp residues are predominantly observed around the Mn4O5Ca cluster may reflect photoinhibition of PSII electron donor side and concomitant ROS generation. In contrast, stromal Trp oxidation is novel and localized at the N-terminal alpha-helix, which might suggest its effects in processive D1 degradation.
 
-## Site-directed mutagenesis of Trp residues undergoing OPTM in D1
+**Table 2.**
+ Trp oxidation in Chlamydomonas PSII core proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Accession</th>
+      <th>Protein</th>
+      <th>Sequence</th>
+      <th>range</th>
+      <th>Modified Trp residue</th>
+      <th>Oxidation status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">DAA00922.1_20</td>
+      <td rowspan="4">D1</td>
+      <td>ENSSL(W*)AR</td>
+      <td>9–16</td>
+      <td>Trp14</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>FCcamE(W*)ITSTENR</td>
+      <td>17–27</td>
+      <td>Trp20</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>E(W*)WELSFR</td>
+      <td>130–136</td>
+      <td>Trp131</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>VLNT(W*)ADIINR</td>
+      <td>313–323</td>
+      <td>Trp317</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td rowspan="5">DAA00964.1_63</td>
+      <td rowspan="5">D2</td>
+      <td>T(W*)FDDADDWLR</td>
+      <td>13–23</td>
+      <td>Trp14</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>TWFDDADD(W*)LR</td>
+      <td>13–23</td>
+      <td>Trp21</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>T(W*)FDDADD(W*)LR</td>
+      <td>13–23</td>
+      <td>Trp14, Trp21</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>A(W*)MAAQDQPHER</td>
+      <td>327–338</td>
+      <td>Trp328</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>A(W*)MoxAAQDQPHER</td>
+      <td>327–338</td>
+      <td>Trp328</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td rowspan="6">DAA00966.1_65</td>
+      <td rowspan="6">CP43</td>
+      <td>DQETTGFA(W*)WSGNAR</td>
+      <td>15–29</td>
+      <td>Trp23</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>DQETTGFAW(W*)SGNAR</td>
+      <td>15–29</td>
+      <td>Trp24</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>DQETTGFA(W*)(W*)SGNAR</td>
+      <td>15–29</td>
+      <td>Trp23, Trp24</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>AMoxYFGGVYDT(W*)APGGGDVR</td>
+      <td>167–185</td>
+      <td>Trp177</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>GP(W*)LEPLR</td>
+      <td>351–358</td>
+      <td>Trp353</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>NDIQP(W*)QER</td>
+      <td>370–378</td>
+      <td>Trp375</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td rowspan="3">DAA00933.1_31</td>
+      <td rowspan="3">CP47</td>
+      <td>YQ(W*)DQGFFQQEIQK</td>
+      <td>273–286</td>
+      <td>Trp275</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>VQASLAEGASLSDA(W*)SR</td>
+      <td>288–304</td>
+      <td>Trp302</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+    <tr>
+      <td>TGAMoxNSGDGIAVG(W*)LGHASFK</td>
+      <td>327–347</td>
+      <td>Trp340</td>
+      <td>OIA, NFK, KYN</td>
+    </tr>
+  </tbody>
+</table>
+
+_Ccam, Cys carbamidomethylation; W*, Trp oxidative modifications; Mox, Met oxidation._
+
+### Site-directed mutagenesis of Trp residues undergoing OPTM in D1
 
 To test whether any change in the oxidized Trp residues is associated with D1 degradation, we performed site-directed mutagenesis using chloroplast transformation in Chlamydomonas, to substitute the corresponding Trp for other amino acids in D1. Based on the mass-spectrometric results, we focused on Trp-14 and Trp-317, each of which was replaced by Ala (non-polar and hydrophobic) or Phe (aromatic and hydrophobic), respectively. The vectors harboring spectinomycin/streptomycin-resistant aadA cassette and the mutated psbA gene were transformed into ΔpsbA mutant Fud7 (Figure 2A). Transformants were selected on mixotrophic Tris-acetate-phosphate (TAP) plates containing spectinomycin, and their homoplasmicity was subsequently confirmed by PCR using specific primers and sequencing. All transformants grew like the control strain on mixotrophic TAP plates (Figure 2B). However, the transformants in which Trp-14 or Trp-317 was substituted to Ala, (W14A, W317A, and W14A/W317A) showed significantly impaired growth on photoautotrophic high salt minimal (HSM) plates. Ala substitution at both Trp-14 and Trp-317 led to decreased photosynthetic activities due to reduced accumulation of D1 and other PSII core proteins (Figure 2B, C and D), indicating its defect in stability and/or the translation of D1 protein.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic drawing of the transforming vector carrying psbA, its flanking regions of the chloroplast DNA, and the selectable aadA marker cassette. E and X represent restriction sites of EcoRI and XhoI, respectively. Green boxes represent exons 1–5 of psbA. Fud7 is the psbA deletion mutant of Chlamydomonas. (B) Phototrophic growth of Trp-substituted transformants on HSM medium and mixotrophic growth on TAP medium. GL, growth light (30 µmol photons m−2s−1): HL, high light (320 µmol photons m−2s−1). (C) Chlorophyll fluorescence induction kinetics in Trp-substituted transformants. SP, saturating pulse. AL, actinic light. (D) Protein accumulation in the transformants. Thylakoid proteins of cells grown in TAP medium under growth-light condition were separated by SDS-PAGE and analyzed by immunoblotting with antibodies against PSII subunits (D1, D2, and CP43), PSI subunits (PsaA), and light-harvesting complex of PSI (Lhca1). (E) Oxygen-evolving activity of the transformants.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Phototrophic growth of Trp-substituted transformants on HSM medium. GL, growth light (30 µmol photons m−2s−1): HL, high light (320 µmol photons m−2s−1).
+
 In contrast, Phe substitution at the same sites had little effect on their growth under growth light (30 µmol photons m–2s–1). These transformants (W14F, W317F, and W14F/W317F) accumulated PSII core proteins whose amounts were comparable to the control levels. They did not show a substantial change in photosynthetic activities as evidenced by comparable electron transport rates through the PSII complex and oxygen-evolving activity (Figure 2C and E). We next examined their photoautotrophic growth under high light (320 µmol photons m–2s–1). Under this condition, however, W14F exhibited significantly impaired growth, and W317F grew slightly slower than control cells. Double mutant W14F/W317F synergistically increased high-light sensitivity but the growth defect appeared to be similar to W14F, suggesting that Phe substitution at Trp-14, but not at Trp-317 had profound effects in the PSII repair cycle (Figure 2B and Figure 2—figure supplement 1).
 
-## Site-directed mutagenesis of Trp residues in CP43
+### Site-directed mutagenesis of Trp residues in CP43
 
 We next examined high-light sensitivity in the CP43 Trp mutants. As an important step in the PSII repair, PSII complex is partially disassembled by CP43 detachment, and this process likely allows FtsH to access photo-damaged D1. Therefore, Trp oxidation in CP43 may play a role in PSII disassembly and D1 degradation concomitantly. To test this, we substituted Trp-353 and Trp-375 for either Ala or Phe as carried out in D1. Transformants were generated by cotransformation of Fud7, using the vector harboring wild-type psbA gene and the vector harboring the mutated psbC gene. Consequently, we obtained four single mutants (W353A, W353F, W375A, and W375F) and two double mutants (W353A/W375A and W353A/W375F; Figure 3). Mixotrophic growth on TAP plates was comparable among all transformants and control cells (Figure 3). All the transformants except for W353A/W375A grew normally on the phototrophic condition under growth light condition. Supporting normal growth, immunoblot analysis showed normal accumulation of PSII core proteins, D1 and CP43, in all lines except for the double mutant W353A/W375A. On the other hand, D1 and CP43 were severely reduced in W353A/W375A, indicating that Ala substitution in these residues resulted in highly unstable or impaired PSII complex formation (Figure 3). Further analysis of these mutants under high light showed that the transformants except for W353F did not increase high-light sensitivity on their growth. Only W353F, but not W353F/W375F, showed a slight reduction in their growth under high-light conditions. This is consistent with a previous study (Anderson et al., 2002). However, the impaired growth of W353F was not as severe as that of D1 W14F or W14F/W317F, suggesting its effect was limited. At least in our site-directed mutagenesis, Trp oxidation in CP43 appeared to have little impact on the PSII repair.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig3-v1.jpg)
 
-**Figure 3.:** (A) Phototrophic growth on HSM medium and mixotrophic growth on TAP medium at growth light (GL) at 30 μmol m−2s−1 or high light, (HL) at 320 μmol m−2s−1. (B) Protein accumulation in the transformants. Thylakoid proteins of cells grown in TAP medium under growth light condition were separated by SDS-PAGE and analyzed by immunoblotting with antibodies against PSII subunits (D1 and CP43).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Phototrophic growth on HSM medium and mixotrophic growth on TAP medium at growth light (GL) at 30 μmol m−2s−1 or high light, (HL) at 320 μmol m−2s−1. (B) Protein accumulation in the transformants. Thylakoid proteins of cells grown in TAP medium under growth light condition were separated by SDS-PAGE and analyzed by immunoblotting with antibodies against PSII subunits (D1 and CP43).
 
-## Substitution of Trp-14 with Phe accelerates D1 degradation
+### Substitution of Trp-14 with Phe accelerates D1 degradation
 
 To evaluate whether Trp substitution in D1 affects PSII damage or repair, we next measured the maximum quantum yield of PSII (FV/FM) and subsequently monitored D1 levels under growth or high-light conditions. Trp-substituted lines grown in TAP medium under growth light were pre-incubated in the presence or absence of chloramphenicol (CAM), an inhibitor of chloroplast protein synthesis. CAM blocks the PSII repair at the step of D1 synthesis and allows us to evaluate photodamage and D1 degradation. Cells incubated under growth light or high light were subjected to chlorophyll fluorescence measurement and immunoblot analysis. Under growth light condition and in the absence of CAM, both PSII activity (FV/FM values) and D1 levels were comparable among all Trp-substituted lines and the control (Figure 4A). This result was consistent with their photoautotrophic growth under growth light (Figure 2B). When CAM was added, D1 levels decreased only slightly during incubation (90 min) in the control. D1 degradation rate was comparable in all Trp-substituted lines and control (Figure 4C), indicating that all Trp-substituted D1 proteins formed stable and functional PSII complex under growth light.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig4-v1.jpg)
 
-**Figure 4.:** The transformants were incubated under high-light (320 µmol photons m−2s−1) or growth-light (30 µmol photons m−2s−1) conditions in the absence or presence of inhibitor of chloroplast protein synthesis, CAM, and subjected to D1 degradation assay. (A) Growth-light in the absence of CAM; (B) high-light in the absence of CAM; (C) growth-light in the presence of CAM; (D) high-light in the presence of CAM. Immunoblot results of D1 in the transformants are shown at the top of each panel. A representative immunoblot using anti-D1 is depicted. Quantified D1 levels using NIH Image program are shown in the middle. Values are means ± SD. Asterisks indicate statistically significant differences between the mean values (*<0.05, **<0.01; Student’s t-test). Time course analysis of maximal photochemical efficiency of PSII, FV/FM, are shown at the bottom.Figure 4—source data 1.Figure 4.
+**Figure 4.:** The transformants were incubated under high-light (320 µmol photons m−2s−1) or growth-light (30 µmol photons m−2s−1) conditions in the absence or presence of inhibitor of chloroplast protein synthesis, CAM, and subjected to D1 degradation assay. (A) Growth-light in the absence of CAM; (B) high-light in the absence of CAM; (C) growth-light in the presence of CAM; (D) high-light in the presence of CAM. Immunoblot results of D1 in the transformants are shown at the top of each panel. A representative immunoblot using anti-D1 is depicted. Quantified D1 levels using NIH Image program are shown in the middle. Values are means ± SD. Asterisks indicate statistically significant differences between the mean values (*<0.05, **<0.01; Student’s t-test). Time course analysis of maximal photochemical efficiency of PSII, FV/FM, are shown at the bottom.
 
 Under high-light condition, however, FV/FM values in Trp-substituted lines significantly decreased, compared to that observed in the control even in the absence of CAM (Figure 4B). These vulnerabilities to high light were consistent with their impaired growth under high light (Figure 2B). To our surprise, D1 levels in W14F and W14F/W317F concomitantly decreased during high-light incubation (Figure 4B). In contrast, D1 levels in W317F were similar to those in control cells. When the PSII repair engages properly, high-light irradiation does not alter D1 levels because rapid D1 synthesis compensates turnover of photo-damaged D1. Given decreased D1 under high light, W14F was likely to cause faster D1 degradation. To confirm this possibility, D1 degradation in the presence of CAM was measured. PSII activity in all Trp-substituted lines fell at similar rates compared with control cells in the presence of the CAM (Figure 4D), indicating the light-induced damage was at the similar level among all Trp-substituted lines and the control. In contrast, our time course experiment indicated that W14F and W14F/W317F decreased D1 faster than the control and W317F (Figure 4D); the D1 level in W14F and W14F/W317F decreased approximately 60% and 50% of the initial level, respectively, whereas those in control cells and W317F remained 80% (Figure 4D).
 
@@ -81,27 +391,35 @@ Based on these D1 degradation assays, we assumed that D1 degradation by proteoly
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig5-v1.jpg)
 
-**Figure 5.:** Cells were radio-labeled in vivo with 35S, in the presence of cycloheximide for 1, 2, and 4 min. Total proteins were separated by SDS-PAGE. The bands corresponding to D1 is indicated by arrowheads. Quantified newly synthesized D1 levels using the Image J program are shown in bottom panels. To normalize values from four independent experiments, the ratio of control at 4 min was adjusted as 1, and the relative ratios are indicated. Values are means ± SD.Figure 5—source data 1.Figure 5.
+**Figure 5.:** Cells were radio-labeled in vivo with 35S, in the presence of cycloheximide for 1, 2, and 4 min. Total proteins were separated by SDS-PAGE. The bands corresponding to D1 is indicated by arrowheads. Quantified newly synthesized D1 levels using the Image J program are shown in bottom panels. To normalize values from four independent experiments, the ratio of control at 4 min was adjusted as 1, and the relative ratios are indicated. Values are means ± SD.
 
-## Enhanced D1 degradation due to the substitution of Trp-14 is mitigated in the ftsH mutant
+### Enhanced D1 degradation due to the substitution of Trp-14 is mitigated in the ftsH mutant
 
 To address whether the increased D1 degradation in W14F (and W14F/W317F) involved proteolysis by FtsH, these Trp substitutions were introduced into an ftsH mutant deficient in thylakoid FtsH activity. In the thylakoid membrane of Chlamydomonas, a hetero-oligomeric FtsH complex composed of FtsH1 (type-A) and FtsH2 (type-B) exists, and the ftsh1-1 mutant, expressing an inactive FtsH1 due to the amino-acid substitution in the ATP-binding domain, has been reported (Malnoë et al., 2014). We performed mating W14F and W14F/W317F transformants (mt+) with ftsh1-1 (mt-), and the resulting mutants, W14F ftsh1 and W14F/W317F ftsh1, were subjected to D1 degradation assay. The results indicated that as expected, the enhanced D1 degradation observed in W14F and W14F/W317F cells was partially mitigated under ftsh1-1 background (Figure 6), when CAM was added. These results suggested that FtsH plays a key role in the increased D1 degradation in W14F and W14F/W317F.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig6-v1.jpg)
 
-**Figure 6.:** ftsh mutant background.Rate of D1 degradation in the W14F ftsH and W14F/W317F ftsH was investigated as shown in Figure 3. Cultured cells were incubated under high-light conditions (320 µmol photons m–2s–1) in the absence (A) or presence (B) of CAM. Signals of immunoblots were quantified using NIH Image program. Values are means ± SD (n=4). A representative immunoblot using anti-D1 is depicted. Values are means ± SD. Asterisks indicate statistically significant differences between the mean values (*<0.05, **<0.01; Student’s t-test).Figure 6—source data 1.Figure 6.
+**Figure 6.:** Rate of D1 degradation in the W14F ftsH and W14F/W317F ftsH was investigated as shown in Figure 3. Cultured cells were incubated under high-light conditions (320 µmol photons m–2s–1) in the absence (A) or presence (B) of CAM. Signals of immunoblots were quantified using NIH Image program. Values are means ± SD (n=4). A representative immunoblot using anti-D1 is depicted. Values are means ± SD. Asterisks indicate statistically significant differences between the mean values (*<0.05, **<0.01; Student’s t-test).
 
-## Molecular dynamics simulation suggests W14F mimicking Trp-14 oxidation
+### Molecular dynamics simulation suggests W14F mimicking Trp-14 oxidation
 
 Although our site-directed mutagenesis in Trp-14 showed its effect in D1 degradation, how Trp oxidation can be structurally correlated with Trp to Phe mutagenesis should be taken into consideration. To investigate this, we employed molecular dynamics (MD) simulation, a powerful tool to simulate movements of amino acids in a protein complex, using the crystal structure of PSII complex from Thermosynechococcus vulcanus (Sakashita et al., 2017b; Sakashita et al., 2017a; Kawashima et al., 2018). D1 Trp-14 is located in the first α-helix at the N-terminus and hydrogen-bonded with PsbI Ser-25 (Figure 7A). It is deduced that this hydrogen bond restricts the conformational change around D1 Trp-14 and limit the fluctuation of D1 N-terminus. The simulation indicated that the hydrogen bond disappeared (Figure 7B and C) and the structural fluctuation of D1 Trp-14 was increased as compared with WT (Figure 7D) when Trp-14 is oxidized to NFK or is replaced with Phe residue. The increased fluctuation of the side chain also influences the Cβ-Cβ distance between D1 Trp-14 and PsbI Ser-25; the two Cβ atoms became farther away from each other when D1 Trp-14 is oxidized to NFK (Figure 7E). Of note, the amino acid substitution on Trp-14 to Phe showed similar trends as those observed when D1-Trp-14 is oxidized to NFK. These results suggest that the structural change of Trp-14 affect the local movement. The increased fluctuation of the first α-helix of D1 would give a chance to recognize the photo-damaged D1 by FtsH protease.
 
-## Augmented interaction between D1 and FtsH by substituting Trp-14/317
+![Figure 7.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig7-v1.jpg)
+
+**Figure 7.:** (A) The interaction between D1 Trp-14 and PsbI Ser-25. Dash line indicates the hydrogen bond between the side chains. (B) Position change of side-chain when D1 Trp-14 is oxidized to N-formylkynurenine. (C) Position change of side-chain when D1 Trp-14 is substituted to Phe. (D) The fluctuation of atoms at D1 Trp-14 in the MD simulation. (E) Averaged Cβ-Cβ distance between side chains of D1 Trp-14 and PsbI Ser-25. The error bars represent the standard deviations of the distances. The Cβ atoms are indicated as red arrowheads in A.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Red values represent atomic partial charges calculated by using the RESP procedure.
+
+### Augmented interaction between D1 and FtsH by substituting Trp-14/317
 
 Presented experimental results collectively raise the possibility that oxidation of Trp-14 is one of the key OPTMs for D1 degradation by FtsH. We raised a possibility that W14F mimics Trp-14 oxidation and shows increased FtsH association with D1. Since quantitative interaction of the protein and the protease remains to be elucidated, we performed differential pull-down assay. To emphasize the effect of the substituted amino acid residues and minimize potential oxidation of other amino acid residues, we decreased light intensity during cell culture and removed oxygen molecule from the buffer solution during the assay. Chlamydomonas cells were grown under dim light with gently shaking and were harvested at the mid-log phase. Subsequently, we isolated thylakoid membrane from the gently disrupted cells and performed co-immunoprecipitation in anoxic aqueous solution (Figure 8A). Quantification of D1 and D2 levels, normalized by FtsH in the co-immunoprecipitated sample showed that the relative D1 protein amounts was statistically higher in W14F/W317F than the control while D2 was fluctuating (Figure 8B). We concluded that W14F increased affinity between FtsH and the reaction center proteins, which leads to enhanced D1 degradation.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/88822/elife-88822-fig8-v1.jpg)
 
-**Figure 8.:** (A) Coimmunoprecipitation was performed with anti-FtsH antibody using the thylakoid membrane isolated from control or D1-W14F/W317F. The polypeptides of thylakoid membrane or coimmunoprecipitated samples were separated by SDS-PAGE and detected by immunoblotting with anti-D1, anti-D2, and anti-FtsH antibody. (B) The immunoblotting signals are quantified and the ratio of D1 or D2 to FtsH are calculated. The averaged value and standard error for three biological replicates are shown. Significant difference was calculated by t-test and 0.1 (§) or 0.05 (*) probability confidence were indicated respectively. (C), A proposed model of photodamaged D1 recognition, in which Trp oxidation plays a role in recruiting FtsH. FtsH heterocomplexes (blue) and PSII core proteins (green) along with oxygen evolving protein complex (gray) in the thylakoid membrane are schematically shown. Trp-oxidized residues (red) are localized at both lumenal and stromal sides. Trp-14 located at the N-terminus alpha helix enhances association of FtsH, whose catalytic site faces stroma.Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A) Coimmunoprecipitation was performed with anti-FtsH antibody using the thylakoid membrane isolated from control or D1-W14F/W317F. The polypeptides of thylakoid membrane or coimmunoprecipitated samples were separated by SDS-PAGE and detected by immunoblotting with anti-D1, anti-D2, and anti-FtsH antibody. (B) The immunoblotting signals are quantified and the ratio of D1 or D2 to FtsH are calculated. The averaged value and standard error for three biological replicates are shown. Significant difference was calculated by t-test and 0.1 (§) or 0.05 (*) probability confidence were indicated respectively. (C), A proposed model of photodamaged D1 recognition, in which Trp oxidation plays a role in recruiting FtsH. FtsH heterocomplexes (blue) and PSII core proteins (green) along with oxygen evolving protein complex (gray) in the thylakoid membrane are schematically shown. Trp-oxidized residues (red) are localized at both lumenal and stromal sides. Trp-14 located at the N-terminus alpha helix enhances association of FtsH, whose catalytic site faces stroma.
 
 ## Discussion
 
@@ -121,17 +439,17 @@ OPTM of Trp residues has been observed in various proteins (Kasson and Barry, 20
 
 ## Methods
 
-## Detection of Trp oxidation in Arabidopsis
+### Detection of Trp oxidation in Arabidopsis
 
 Chloroplasts were isolated from 3-week-old plants of WT and var2 (SAIL_253_A03) grown under continuous light (80 µmol photons m–2s–1 at 20 ± 2°C) conditions. The collected rosette leaves were homogenated in chloroplast isolation buffer [50 mM Hepes-KOH pH 8, 5 mM MgCl2, 5 mM EDTA pH 8, 5 mM EGTA pH 8, 10 mM NaHCO3, and 0.33 M D-sorbitol, supplemented with SIGMAFAST Protease Inhibitor (1 tablet per 100 ml)]. The homogenate was filtered through four layers of Miracloth and centrifuged at 400×g for 8 min at 4 °C. The pellets were suspended in isolation buffer and loaded onto a two-step Percoll gradient (40:80%) solution to separate intact and broken chloroplasts. The intact chloroplasts enriched between the two Percoll steps were carefully collected and washed twice with HS buffer (50 mM Hepes-KOH pH 8, and 0.33 M D-sorbitol). Chloroplasts corresponding to equal amounts of chlorophyll were lysed, and the proteins extracted using 6 M guanidine hydrochloride buffer (guanidine hydrochloride dissolved in 100 mM Tris, pH 8.5). The lysed samples were sonicated in an ice bath for 1 min with a pulse of 3 s ‘on’ and 5 s ‘off’, followed by heating at 95 °C for 5 min, and then centrifugation at 21 000 g for 30 min at 4 °C. Total protein content was estimated using a PierceTM BCA protein assay kit (Thermo Fisher Scientific).
 
 Mass spectrometric analysis for protein identification and PTM analysis was done according to our previous study (Dogra et al., 2019). For MS analysis, equal amounts of total protein (2 µg µl–1) from three independent biological samples were denatured using 10 mM DTT at 56 °C for 30 min followed by alkylation in 50 mM iodoacetamide at room temperature for 40 min in the dark. Reduced-alkylated proteins were then desalted a Nanosep membrane (Pall Corporation, MWCO 10 K) in 200 µL of 100 mM NH4HCO3 buffer, followed by digestion in buffer containing 40 ng/µl trypsin in 100 mM NH4HCO3 (corresponding to the enzyme-to-protein ratio of 1:50) at 37 °C for 20 h. The digested peptides were dried and resuspended in 0.1% (v/v) formic acid solution. Digested peptides were separated using nanoAcquity Ultra Performance LC (Waters, Milford, MA, USA) and analyzed by using Q Exactive Mass Spectrometer (Thermo Fisher Scientific, San Jose, CA, USA) as described in our previous study (Dogra et al., 2019). The mass spectra were submitted to the Mascot Server (version 2.5.1, Matrix Science, London, UK) for peptide identification and scanned against the Arabidopsis protein sequences (downloaded from TAIR; http://www.arabidopsis.org/). Database searches were carried out with peptide mass tolerance of 20 ppm, fragment mass tolerance of 0.02 Da, and a maximum of two missed cleavages. Carbamidomethylation of Cys was set as a fixed modification, while oxidations of Met and Trp were defined as variable modifications. The significance threshold for search results was set at a p-value of 0.05 and an Ions score cut-off of 15. For quantification, raw MS data files were processed and analyzed using MaxQuant software (version 1.5.8.3) with a label-free quantitation (LFQ) algorithm. Parent ion and MS2 spectra were searched against the Arabidopsis protein sequences. The precursor ion tolerance was set at 7 ppm with an allowed fragment mass deviation of 20 ppm. Carbamidomethylation of Cys was set as a fixed modification, while oxidations of Met and Trp were defined as variable modifications. Peptides with a minimum of six amino acids and a maximum of two missed cleavages were allowed. False discovery rate (FDR) was set to 0.01 for both peptide and protein identification. The absolute intensity values were used to calculate the abundance of oxidized peptides. Label-free quantitation of oxidized peptides using mass spectrometry were performed according to previously described method (Luber et al., 2010; Schwanhäusser et al., 2011; Duan et al., 2019).
 
-## Strains and generation of chloroplast transformants in Chlamydomonas
+### Strains and generation of chloroplast transformants in Chlamydomonas
 
 The psbA deletion mutant of the green alga Chlamydomonas reinhardtii, Fud7 (Bennoun et al., 1986) was used for chloroplast transformation in this study. The vector, which lacks large portion of psbA gene (Takahashi et al., 1996), was used for plasmid construction. To obtain psbA mutants, each psbA transformation vector was biolistically delivered into chloroplast of the Fud7 mutant using a particle gun (IDERA GIE-III, TANAKA Co. Ltd., Sapporo, Japan). Chloroplast transformants were selected by at least four rounds of single colony purification on TAP agar plates containing spectinomycin (150 µg mL–1) as described previously (Takahashi et al., 1996). The CP43 mutants were generated according to Kuroda et al., 2021. The psbD gene in the Fud7 was disrupted and we obtained Fud7-ΔpsbD mutant as a recipient for CP43 mutagenesis. The DNA delivery methods are the same with psbA mutagenesis experiment.
 
-## Detection of Trp oxidation in Chlamydomonas
+### Detection of Trp oxidation in Chlamydomonas
 
 Cultivation of the algae was carried out under constant light (50 µmol photons m−2s−1 or 500 µmol photons m−2s−1) in TAP medium for 24 h. Cells were harvested by centrifugation (2500 x g for 5 min at room temperature), frozen in liquid nitrogen and stored at –80 °C until further use. For protein extraction, lysis buffer (100 mM Tris/HCl pH 8.5, 2% (w/v) SDS, 1 mM PMSF, 1 mM benzamidine) was added to frozen cell pellets and incubated for 10 min at 65 °C and 1000 rpm in a Thermomixer (Eppendorf, Germany). The lysate was cleared by centrifugation (18,000 x g for 10 min at 25 °C) and the protein content of the supernatant was determined using the Pierce BCA protein assay kit (Thermo Fisher Scientific). Reduction, alkylation and tryptic digestion (50 µg of protein per sample) was performed in centrifugal filters (Amicon Ultra-0.5, 30 kDa cut-off, Merck Millipore) according to the FASP protocol (Wiśniewski et al., 2009). Peptides (5 µg per sample) were desalted using self-packed C18-StageTips as previously described (Kulak et al., 2014), followed by vacuum centrifugation until dry. Prior to LC-MS/MS analysis peptide samples were resuspended in 2% (v/v) acetonitrile/0.05% (v/v) trifluoroacetic acid at a concentration at a concentration of 1 µg/µl. LC-MS/MS analysis was carried out using an Ultimate 3000 nanoLC (Thermo Fisher Scientific) coupled to an Q Exactive Plus mass spectrometer (Thermo Fisher Scientific) via a nanospray interface. Samples (1 µl) were loaded on a trap column (C18, Acclaim PepMap 100, 300  μM×5  mm, 5 μm particle size, 100 Å pore size; Thermo Scientific) at a flow rate of 10 µl/min for 3 min using 2% (v/v) acetonitrile/0.05% (v/v) trifluoroacetic acid in ultrapure water. Subsequently, peptide separation was performed on a reversed phase column (C18, Acclaim Pepmap C18, 75 µm x 50 cm, 2 µm particle size, 100 Å pore size, Thermo Fisher Scientific) at a flow rate of 250 nl/min using the eluents 0.1% (v/v) formic acid in ultrapure water (A) and 80% (v/v) acetonitrile/0.1% (v/v) formic acid in ultrapure water (B). The following gradient was applied: 2.5–5% B over 10 min, 5–22% B over 90 min, 22–30% B over 70 min, 30–99%B over 10 min, 99% B for 20 min.
 
@@ -139,27 +457,27 @@ MS full scans (m/z 350–1600) were acquired in positive ion mode at a resolutio
 
 Peptide and protein identification were carried out in Proteome Discoverer 2.4 (Thermo Fisher Scientific) using the MSFragger node (MSFragger 3.0)(Kong et al., 2017) with default parameters for closed searches (precursor mass tolerance: 50 ppm, precursor true tolerance: 20 ppm, fragment mass tolerance: 20 ppm, maximum missed cleavages: 1). Spectra were searched against a concatenated sequence database containing nucleus-encoded proteins (https://www.phytozome.org, assembly version 5.0, annotation version 5.6), supplemented with proteins encoded in the chloroplast (NCBI BK000554.2) and mitochondria (NCBI NC_001638.1), as well as common contaminants (cRAP, https://www.thegpm.org/crap/). Carbamidomethylation was set as static modification. The following variable modifications were defined: N-acetylation of protein N-termini, oxidation of methionine, and various products of tryptophan oxidation kynurenine (+3.995 Da), hydroxytryptophan (+15.995 Da), hydroxykynurenine (+19.990 Da), N-formylkynurenine (+31.990 Da), dihydroxy-N-formylkynurenine (+63.980 Da). Peptide-spectrum-matches (PSMs) were filtered using the Percolator node to satisfy a false discovery rate (FDR) of 0.01. Subsequently, identifications were filtered to achieve a peptide and protein level FDR of 0.01.
 
-## Growth test
+### Growth test
 
 Cells were grown in TAP liquid medium without shaking at 23–24°C under the light-dark synchronized condition (10 hr light at 50 µmol photons m−2s−1 or less and 14 hr darkness). Subsequently the cells were harvested by centrifugation at 2000×g for 10 min at 25 °C and were suspended in TP (Tris Phosphate) medium for washing. After finishing the washing process, the cell concentration was adjusted at 25 ng Chl μL−1 with TP medium. The liquid culture was spotted on solid medium at 100 ng Chlorophylls/spot. When we evaluate the cellular growth rate in the liquid culture, the cells grown under 30 µmol photons m−2s−1 in TAP medium were suspended in the TP medium at 0.1 of OD750 and were incubated under 30 or 350 µmol photons m−2s−1.
 
-## Measurement of photosynthetic activity
+### Measurement of photosynthetic activity
 
 Chlorophyll fluorescence induction kinetics of Chlamydomonas transformants were measured using a pulse amplitude-modulated fluorometer (Dual-PAM-100; Heinz Walz GmbH). Before measurements, cultured cells were maintained in the dark for 5 min to oxidize the plastoquinone pool fully. Initial fluorescence yield of PSII (FO) and maximal fluorescence yield of PSII (FM) were measured. Maximal PSII quantum yield (FV/FM) was determined as FV/FM = (FM–FO)/FM. Light-induced oxygen-evolving activity of cells was measured using a Clark-type O2 electrode (Oxytherm OXYT1; Hansatech Instruments). Briefly, cells were grown in TAP culture under 5 µmol photons m–2 s–1 to reach 5–10 µg Chl mL–1. O2-evolving activity of cells (5 µg Chl mL–1) in the presence of 0.3 mM 2,6-dichloro-1,4-benzoquinone was measured using a Clarke-type O2 electrode with an actinic light at 7800 µmol photons m–2 s–1 at 25 °C as described (Kuroda et al., 2014).
 
-## Immunoblotting
+### Immunoblotting
 
 Total proteins were solubilized in SDS-PAGE sample (125 mM Tris-HCl, pH 6.8, 2% [w/v] SDS, 100 mM dithiothreitol, 10% [v/v] Glycerol, 0.05% [w/v] BPB) buffer at 96 °C for 1 min, and then were loaded based on equal chlorophyll. The proteins were electrophoretically transferred onto polyvinylidene difluoride membrane (Atto Corp.) after SDS-PAGE. The membranes were incubated with specific polyclonal antibodies: anti-D1 (raised against N-termimus, dilution 1:5000 Kato et al., 2012), anti-D2 (AS06 146, Agrisera; dilution, 1:5000), anti-CP43 (AS11 1787, Agrisera; dilution, 1:5000), anti-PsaA (a gift from Kevin Redding, Arizona State University, dilution 1:5000), and anti-Lhca1, dilution 1:5000; (Ozawa et al., 2018). The signals were visualized by using a Luminata Forte Western HRP Substrate (Merck Millipore) with Molecular Imager ChemiDoc XRS +imaging system (Bio Rad Laboratories, Inc, USA). Signal intensities were quantified using NIH Image.
 
-## D1 degradation assay
+### D1 degradation assay
 
 Cells were grown in TAP liquid medium at 22 °C under continuous light-condition (30 µmol photons m–2s–1). Cultured cells were harvested by centrifugation at 600×g for 5 min. The cell pellets were resuspended in a new TAP liquid medium as a final concentration of 0.5 µg Chl mL−1. Then, the cells were preincubated in the presence or absence of chloramphenicol (100 µg mL−1) in the dark for 30 min. Subsequently, the cells were incubated under high-light or growth light conditions (350 or 30 µmol photons m–2s–1) with stirring. Cells in 400 µl culture were collected at each time points (30, 60, 90 min) by centrifugation, and the resulting cell pellet was resuspended in 100 µl of SDS-PAGE sample buffer.
 
-## Pulse labeling of chloroplastic proteins
+### Pulse labeling of chloroplastic proteins
 
 Cells grown in pre-culture medium (TAP media with less sulfur) were harvested by centrifugation at 600×g for 5 min and were washed by TAP media containing no sulfur. After centrifugation, the cells were resuspended to 25  μg Chl mL−1 in TAP media containing no sulfur and incubated for 2 h. Subsequently, sulfur-starved cells were labeled with 5 μ Ci mL−1 [35S]Na2SO4 (American Radiolabeled Chemicals) in the light at 50   µmol photons m−2s−1 in the presence of 10 µg mL−1 cycloheximide. At each time point (1, 2, 4 min), cell samples were collected and immediately frozen in liquid nitrogen.
 
-## Thylakoid membrane isolation and the following co-immunoprecipitation in anoxic aqueous solution
+### Thylakoid membrane isolation and the following co-immunoprecipitation in anoxic aqueous solution
 
 Cells grown in TAP medium under 5 μmol photons m–2 s–1 were harvested by centrifugation at 2,000×g for 10 min at 25 °C. All buffers were incubated at 25 °C for 60 min in the presence of 100 mM glucose, 40 U/mL glucose oxidase, and 50 U/mL catalase to remove oxygen before chilling. Cells were suspended in suspension buffer (10 mM HEPES-KOH pH 8.0), broken by double passage through an airbrush at a pressure of 0.2 MPa (0.2 mm aperture airbrush). The broken materials were suspended in high sucrose concentration solution (1.8 M sucrose, 10 mM HEPES-KOH pH 8.0), and then a low sucrose concentration solution (1.0 M sucrose, 10 mM HEPES-KOH pH 8.0) and suspension buffer were layered in this order. Thylakoid membrane was floated at the interface between high-sucrose concentration solution and low sucrose concentration solution after centrifugation (at 20,000×g, for 60 min, at 25 °C). The recovered thylakoid membrane was suspended in the suspension buffer.
 
@@ -167,11 +485,11 @@ The anti-VAR2 antibody (Sakamoto et al., 2003) was conjugated with magnetic bead
 
 Thylakoid membrane was solubilized sequentially; thylakoid membrane (1.0 mg Chlorophyll/mL) was incubated with 1.0% (w/v) glyco-diosgenin (GDN) and subsequently n-dodecyl-α-maltoside was added at 1.0% (w/v), and finally the mixture was diluted at twice volume with suspension buffer. The solubilized material was incubated with FtsH conjugated magnetic beads for 60 min at 4 °C after removal of debris by centrifugation (at 20,000×g, for 1 min, at 4 °C). The beads were washed six times with suspension buffer containing 0.02% (w/v) GDN and were incubated with elution buffer (125 mM Tris-HCl pH 6.8, 2% (w/v) Lithium Dodecyl sulfate, 0.1% (w/v) Sodium Dodecyl sulfate, and 25% (w/v) glycerol) for 60 min on ice. The eluted sample was directly loaded on individual sample slot on SDS-PAGE to separate polypeptides. All buffers except elution buffer were incubated at 25 °C for 60 min in the presence of 100 mM glucose, 40 U/mL glucose oxidase, and 50 U/mL catalase to remove oxygen before chilling.
 
-## Molecular dynamics simulations of D1 N-term in PSII complex
+### Molecular dynamics simulations of D1 N-term in PSII complex
 
 The MD simulations for PSII were performed using the X-ray crystal structure determined at 1.9 Å resolution (PDB: 3ARC)(Umena et al., 2011) and based on the same procedure described previously (Sakashita et al., 2017b; Sakashita et al., 2017a; Kawashima et al., 2018), except for the following points. To investigate the structural fluctuation of the N terminal region of the D1 subunit, we restructured the N-terminal region between D1-Met1 and D1-Ser10 that was lacking in the crystal structure, using MOE program (2018). After structural optimization with positional restraints on heavy atoms of the PSII assembly, the system was heated from 0.001 to 300 K over 5.0 ps, with a 0.05-fs time step. The positional restraints on heavy atoms were gradually released over 16.5 ns. After an equilibrating MD run for 40 ns, a production run was conducted over 495 ns with an MD time step of 1.5 fs. The SHAKE algorithm was used for hydrogen constraints (Ryckaert et al., 1977). The structure of the D1-W14F mutant was modeled from the crystal structure of WT. The MD simulations were based on the AMBER-ff14SB force field for protein residues and lipids (Maier et al., 2015). The water molecules were described by TIP3P model (Jorgensen et al., 1983). For NFK, we employed the generalized Amber force field (GAFF) parameter set (Wang et al., 2004). The atomic partial charges of NFK were determined by fitting the electrostatic potential by using the RESP procedure (Bayly et al., 1993) (for calculated charges, see Figure 7—figure supplement 1). The electronic wave functions were calculated after geometry optimization with the density functional theory of the B3LYP/6–31 G** level by using JAGUAR (ver. 8.0, https://www.schrodinger.com/products/jaguar). MD simulations were conducted using the MD engine NAMD (Phillips et al., 2005). The atomic fluctuation was calculated as the root mean square fluctuation (RMSF) of heavy atoms from the averaged structure of PSII over the whole MD trajectory.
 
-## Plasmid construction
+### Plasmid construction
 
 To construct aadA marker for psbA transformation vectors, a 483 bp DNA fragment was amplified by PCR from plasmid pLM20 (Michelet et al., 2011) using primers On#1 (HK1174) and On#2 (HK1175), digested by XhoI and EcoRI and ligated into pBluescript KS- to generate plasmid pSXY501. An XhoI/Bsp119I-digested fragment from the pSXY501 and a ClaI/SpeI-digested fragment from pUC-atpX-AAD (Goldschmidt-Clermont, 1991) were simultaneously ligated into XhoI/NheI site of the pSXY501 to generate pSXY503. An NsiI/EcoRI-digested fragment from the pSXY503 was ligated into PstI/EcoRI-digested pBluescript KS- to generate pSXY504. Annealed oligo DNAs (On#3 and On#4) was ligated into HindIII/XbaI-digested pUC18 to generate pSRE6. An NheI/EcoRV-digested fragment from the pSXY504 was ligated into XbaI/EcoRV-digested pSRE6 to generate pSXY518.
 

@@ -39,7 +39,7 @@
 
 ## Abstract
 
-10.7554/eLife.42068.001 Unraveling the genetic susceptibility of complex diseases such as chronic kidney disease remains challenging. Here, we used inbred rat models of kidney damage associated with elevated blood pressure for the comprehensive analysis of a major albuminuria susceptibility locus detected in these models. We characterized its genomic architecture by congenic substitution mapping, targeted next-generation sequencing, and compartment-specific RNA sequencing analysis in isolated glomeruli. This led to prioritization of transmembrane protein Tmem63c as a novel potential target. Tmem63c is differentially expressed in glomeruli of allele-specific rat models during onset of albuminuria. Patients with focal segmental glomerulosclerosis exhibited specific TMEM63C loss in podocytes. Functional analysis in zebrafish revealed a role for tmem63c in mediating the glomerular filtration barrier function. Our data demonstrate that integrative analysis of the genomic architecture of a complex trait locus is a powerful tool for identification of new targets such as Tmem63c for further translational investigation.
+Unraveling the genetic susceptibility of complex diseases such as chronic kidney disease remains challenging. Here, we used inbred rat models of kidney damage associated with elevated blood pressure for the comprehensive analysis of a major albuminuria susceptibility locus detected in these models. We characterized its genomic architecture by congenic substitution mapping, targeted next-generation sequencing, and compartment-specific RNA sequencing analysis in isolated glomeruli. This led to prioritization of transmembrane protein Tmem63c as a novel potential target. Tmem63c is differentially expressed in glomeruli of allele-specific rat models during onset of albuminuria. Patients with focal segmental glomerulosclerosis exhibited specific TMEM63C loss in podocytes. Functional analysis in zebrafish revealed a role for tmem63c in mediating the glomerular filtration barrier function. Our data demonstrate that integrative analysis of the genomic architecture of a complex trait locus is a powerful tool for identification of new targets such as Tmem63c for further translational investigation.
 
 ## Introduction
 
@@ -49,61 +49,447 @@ Here, we successfully overcome the obstacles of QTL mapping in rodents by analyz
 
 ## Results
 
-## Congenic substitution mapping in the MWF rat model refines the albuminuria QTL to a chromosomal region linked to both albuminuria and nephron deficit
+### Congenic substitution mapping in the MWF rat model refines the albuminuria QTL to a chromosomal region linked to both albuminuria and nephron deficit
 
 We previously confirmed the pivotal role of a major albuminuria QTL on rat chromosome 6 (RNO6) in the MWF model by generating a consomic MWF-6SHR strain, which carries RNO6 from the contrasting albuminuria-resistant SHR strain in the MWF genetic background (Figure 1A–D) (Schulz et al., 2007). In addition, MWF rats inherit a deficit in nephron (and glomeruli) number, which represents a predisposition for the development of both hypertension and kidney damage (Wang and Garrett, 2017). We performed congenic substitution mapping for both albuminuria and glomerular density phenotypes by generating eight congenic lines by introgression of nested chromosomal fragments from SHR onto the MWF genetic background, and compared the renal phenotypes between congenic lines and the parental MWF strain (Figure 1E,F). We successfully narrowed the original region identified by QTL mapping, spanning about 55 Mb between genetic markers D6Rat106 and D6Rat9 (Schulz et al., 2003), to a smaller interval comprising 4.9 Mb between D6Mgh4 and D6Rat81 (Figure 1E,F). The comparison between the two informative congenic lines MWF.SHR-(D6Rat1-D6Mgh4) and MWF.SHR-(D6Rat1-D6Rat81) revealed that 95% of the difference in albuminuria and 89% of the difference in glomerular density observed between the MWF and consomic MWF-6SHR strains is attributable to this interval (Figure 1E,F). Subsequently, we set out to analyze the BP phenotype by direct intra-arterial measurements in the two congenic lines in comparison to the MWF and SHR strains. This analysis revealed similar mean arterial BP values in the two congenic lines and parental MWF strain (Figure 2). This findings clearly indicate the UAE difference between MWF.SHR-(D6Rat1-D6Mgh4) and MWF.SHR-(D6Rat1-D6Rat81) are not attributable to BP differences (Figure 2). Thus, we dissected away a role of this region for BP regulation and show that both the albuminuria and glomerular density phenotype co-localize in the same refined locus (sub-QTL), supporting further exploration of this region as an independent candidate region for kidney damage. Direct comparison of glomerular density (Figure 1G–J) with the total glomerular number as previously estimated by the physical fractionator method (Figure 1K) (Schulz et al., 2007) confirmed the nephron deficit in MWF compared to SHR (Figure 1J, p<0.0001). We further demonstrated that this phenotype maps also to RNO6 (Figure 1F) when determined by glomerular density analysis in kidney sections (Figure 1G–J).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig1-v2.jpg)
 
-**Figure 1.:** (A) Urinary albumin excretion (UAE) in Munich Wistar Frömter (MWF) and spontaneously hypertensive rats (SHR) at 8 weeks of age. MWF (n = 18); SHR (n = 10); values plotted: median ±interquartile range (IQR); Mann-Whitney U test; *p<0.0001. (B) Genetic map of RNO6 with genetic markers and distance in centi Morgan (cM). (C) 1-LOD (thick bar) and 2-LOD (thin bar) confidence intervals for placement of the albuminuria QTL by linkage mapping. (D) The chromosomal fragment for the MWF (black) and SHR (white) genome are indicated for the MWF (n = 18/11§), consomic MWF-6SHR (n = 19/11§), and SHR (n = 10/11§) strains. (E–F) The chromosomal fragment for congenic strains designated as MWF.SHR-(D6Rat1-D6Rat184) (n = 17/0§), MWF.SHR-(D6Rat1-D6Rat115) (n = 10/0§), MWF.SHR-(D6Rat1-D6Rat81) (n = 25/11§), MWF.SHR-(D6Rat1-D6Mgh4) (n = 24/11§), MWF.SHR-(D6Rat1-D6Rat121) (n = 29/6§), MWF.SHR-(D6Rat1-D6Mit8) (n = 18/6§), MWF.SHR-(D6Rat1-D6Rat106) (n = 10/0§), and MWF.SHR-(D6Rat1-D6Rat30) (n = 10/0§) (E). Corresponding phenotypes for UAE and glomerular density (GD) (F). Red values indicate disease phenotypes and blue values an amelioration of phenotypes for informative strains. § n is presented for the phenotypes in the following order UAE/GD; values shown for UAE: median ±IQR, Kruskall-Wallis test with Dunn’s multiple comparisons test; *p<0.0001; values shown for GD: mean ±SD; one-way ANOVA with post hoc Bonferroni’s multiple comparisons test and Mann-Whitney U test; *p<0.0001 vs. SHR, MWF-6SHR, MWF.SHR-(D6Rat1-D6Mgh4), respectively; <0.0001 vs. MWF.SHR-(#pD6Rat1-D6Mgh4), respectively; ##p=0.029 vs. MWF.SHR-(D6Rat1-D6Rat30). (G–K) Evaluation of nephron deficit in MWF and SHR rats by determination of GD. Right kidneys at 4 weeks of age were cut into 5 µm thick histological sections (G). For evaluation of glomerular diameter and glomerular number adjacent pictures were taken for each periodic acid-Schiff (PAS) stained histological section (white rectangles) (H). Calculation of GD (10x magnification) (I). Direct comparison of GD evaluation (J) vs. total glomerular number as previously estimated by the physical fractionator method (K). Total glomerular number (n = 7 each); GD (n = 11 each); values plotted: mean ±SD; two-tailed student’s t-test; *p<0.0001 vs. SHR; **p=0.0024 vs. SHR.10.7554/eLife.42068.004Figure 1—source data 1.10.7554/eLife.42068.005Figure 1—source data 2.
+**Figure 1.:** (A) Urinary albumin excretion (UAE) in Munich Wistar Frömter (MWF) and spontaneously hypertensive rats (SHR) at 8 weeks of age. MWF (n = 18); SHR (n = 10); values plotted: median ±interquartile range (IQR); Mann-Whitney U test; *p<0.0001. (B) Genetic map of RNO6 with genetic markers and distance in centi Morgan (cM). (C) 1-LOD (thick bar) and 2-LOD (thin bar) confidence intervals for placement of the albuminuria QTL by linkage mapping. (D) The chromosomal fragment for the MWF (black) and SHR (white) genome are indicated for the MWF (n = 18/11§), consomic MWF-6SHR (n = 19/11§), and SHR (n = 10/11§) strains. (E–F) The chromosomal fragment for congenic strains designated as MWF.SHR-(D6Rat1-D6Rat184) (n = 17/0§), MWF.SHR-(D6Rat1-D6Rat115) (n = 10/0§), MWF.SHR-(D6Rat1-D6Rat81) (n = 25/11§), MWF.SHR-(D6Rat1-D6Mgh4) (n = 24/11§), MWF.SHR-(D6Rat1-D6Rat121) (n = 29/6§), MWF.SHR-(D6Rat1-D6Mit8) (n = 18/6§), MWF.SHR-(D6Rat1-D6Rat106) (n = 10/0§), and MWF.SHR-(D6Rat1-D6Rat30) (n = 10/0§) (E). Corresponding phenotypes for UAE and glomerular density (GD) (F). Red values indicate disease phenotypes and blue values an amelioration of phenotypes for informative strains. § n is presented for the phenotypes in the following order UAE/GD; values shown for UAE: median ±IQR, Kruskall-Wallis test with Dunn’s multiple comparisons test; *p<0.0001; values shown for GD: mean ±SD; one-way ANOVA with post hoc Bonferroni’s multiple comparisons test and Mann-Whitney U test; *p<0.0001 vs. SHR, MWF-6SHR, MWF.SHR-(D6Rat1-D6Mgh4), respectively; #p<0.0001 vs. MWF.SHR-(D6Rat1-D6Mgh4), respectively; ##p=0.029 vs. MWF.SHR-(D6Rat1-D6Rat30). (G–K) Evaluation of nephron deficit in MWF and SHR rats by determination of GD. Right kidneys at 4 weeks of age were cut into 5 µm thick histological sections (G). For evaluation of glomerular diameter and glomerular number adjacent pictures were taken for each periodic acid-Schiff (PAS) stained histological section (white rectangles) (H). Calculation of GD (10x magnification) (I). Direct comparison of GD evaluation (J) vs. total glomerular number as previously estimated by the physical fractionator method (K). Total glomerular number (n = 7 each); GD (n = 11 each); values plotted: mean ±SD; two-tailed student’s t-test; *p<0.0001 vs. SHR; **p=0.0024 vs. SHR.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig2-v2.jpg)
 
-**Figure 2.:** Measurement of MAP is shown for SHR (n = 9), MWF-6SHR (n = 6), congenic MWF.SHR-(D6Rat1-D6Mgh4) (Rat1-Mgh4, n = 8) and congenic MWF.SHR-(D6Rat1-D6Rat81) (Rat1-Rat81, n = 8) and MWF (n = 7) at week 14; values plotted: mean ±SD; one-way ANOVA with Bonferroni’s post hoc analysis; *p<0.0001 vs. other strains, respectively.10.7554/eLife.42068.007Figure 2—source data 1.
+**Figure 2.:** Measurement of MAP is shown for SHR (n = 9), MWF-6SHR (n = 6), congenic MWF.SHR-(D6Rat1-D6Mgh4) (Rat1-Mgh4, n = 8) and congenic MWF.SHR-(D6Rat1-D6Rat81) (Rat1-Rat81, n = 8) and MWF (n = 7) at week 14; values plotted: mean ±SD; one-way ANOVA with Bonferroni’s post hoc analysis; *p<0.0001 vs. other strains, respectively.
 
-## Targeted NGS analysis of the identified kidney damage candidate region
+### Targeted NGS analysis of the identified kidney damage candidate region
 
 We employed targeted NGS on the region ranging from nucleotide positions 105,780,000 to 111,425,000 on RNO6. After genotype calling and comparing genotypes of consomic and congenic rats, we refined coordinates of the kidney damage locus from 106,400,000 bp to 111,360,000 bp (Figure 3A,B). This region contains 75 predicted protein-coding genes. In comparison to the reference genome (Rattus norvegicus, ENSEMBL rn6.0) (Yates et al., 2016), we identified 5,158 SNPs and 1893 small insertions and deletions (INDELs) in MWF, and 5326 single nucleotide polymorphisms (SNPs) and 1804 INDELs in SHR (Figure 3—figure supplement 1). Direct comparison between MWF and SHR revealed that both strains differ for 5376 SNPs and for 1613 INDELs (Figure 3—figure supplement 1), showing a remarkable pattern of stretches of variants either coming from the MWF or the contrasting SHR strain (Figure 3A). As selective sweeps have recently been reported as a consequence of inbreeding in rats (Atanur et al., 2013), we performed a formal analysis of selective processes such as directional selection or balancing selection, genetic hitchhiking, or introgression using the Tajima’s D statistics (Tajima, 1989). We observe such traces of selection with the majority of Tajima’s D values exceeding the generally accepted threshold of D > 2 (Figure 3C). Functional annotation using PROVEAN scores identified eight potentially deleterious non-synonymous variants in five genes (Table 1). In addition, in the contrasting SHR reference strain one frameshift deletion was detected in the gene encoding neuroglobin (Ngb). However, this deletion is also present in the entire clade of SHR-related rat strains derived from one ancestor including other strains with normal urinary albumin excretion and normal kidney function (Table 2) (Atanur et al., 2013). Consequently, this frameshift deletion is not to be considered involved in the kidney damage phenotype and was not further pursued. Thus, we identified no obvious single candidate by NGS analysis in the sub-QTL.
 
-## Positional candidate gene identification by transcriptome analysis in isolated glomerular tissue by RNA-Seq
+![Figure 3.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) DNA sequencing (DNA-Seq) analysis revealed the numbers of DNA variants in comparison to the reference genome across the sequenced region for the Munich Wistar Frömter (MWF) and spontaneously hypertensive rat (SHR) strains (n = 3, each) (A). The physical map between nucleotide position 106,405,000 and 111,405,000 is shown together with positions of potential candidate genes (in green) (B); in addition, the two genes at the 5’-position and 3’-position of the candidate region are visualized in black. (C) The Tajima’s D variation across the sequenced region. (D–E) Volcano plots illustrating the differential expression results (MWF vs. SHR) in RNA-Seq analysis in isolated glomeruli using the Cuffdiff (D) and DESeq2 (E) analysis tools. For each gene, the log10 transformed differential expression P-value adjusted for false discovery rate is plotted against the log2 transformed expression fold change. The color gradient refers to the P-values given on the y-axis. The applied significance threshold of adjusted p-value<0.05 is indicated as dashed horizontal line. Dashed vertical lines indicate fold changes > 1.5. Genes of interest are highlighted in grey and are annotated with gene symbols. (See Figure 3—figure supplement 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) The number of SNPs (A) and small insertions and deletions (INDELs) (B) are given in the Munich Wistar Frömter (MWF) and spontaneously hypertensive rat (SHR) strains (n = 3, each) in comparison to the reference genome. The numbers in the intersection refer to the variants that are common between MWF and SHR.
+
+**Table 1.**
+ Significant variants in the candidate kidney damage region on rat chromosome 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th colspan="2">Gene coordinates</th>
+      <th>Variant position</th>
+      <th>Variant type</th>
+      <th colspan="2">Allelic variants</th>
+      <th>Amino acid exchange</th>
+      <th>Effect of sequence variant</th>
+      <th>PROVEAN score</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Start position (bp)</th>
+      <th>Stop position (bp)</th>
+      <th></th>
+      <th></th>
+      <th>MWF</th>
+      <th>SHR</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acot4</td>
+      <td>107,517,668</td>
+      <td>107,522,952</td>
+      <td>107,518,131</td>
+      <td>exonic</td>
+      <td>A</td>
+      <td>G</td>
+      <td>Gly → Arg</td>
+      <td>non-synonymous</td>
+      <td>−5.660</td>
+    </tr>
+    <tr>
+      <td>Acot5</td>
+      <td>107,550,904</td>
+      <td>107,557,688</td>
+      <td>107,551,446</td>
+      <td>exonic</td>
+      <td>A</td>
+      <td>C</td>
+      <td>Arg → Ser</td>
+      <td>non-synonymous</td>
+      <td>−2.842</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>107,551,528</td>
+      <td>exonic</td>
+      <td>A</td>
+      <td>G</td>
+      <td>Arg → His</td>
+      <td>non-synonymous</td>
+      <td>−2.646</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>107,551,717</td>
+      <td>exonic</td>
+      <td>G</td>
+      <td>C</td>
+      <td>Pro → Arg</td>
+      <td>non-synonymous</td>
+      <td>−5.314</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>107,557,092</td>
+      <td>exonic</td>
+      <td>A</td>
+      <td>T</td>
+      <td>Leu → Gln</td>
+      <td>non-synonymous</td>
+      <td>−5.291</td>
+    </tr>
+    <tr>
+      <td>Acot6</td>
+      <td>107,581,608</td>
+      <td>107,590,373</td>
+      <td>107,590,006</td>
+      <td>exonic</td>
+      <td>C</td>
+      <td>T</td>
+      <td>Leu → Pro</td>
+      <td>non-synonymous</td>
+      <td>−5.091</td>
+    </tr>
+    <tr>
+      <td>Ptgr2</td>
+      <td>108,009,251</td>
+      <td>108,029,859</td>
+      <td>108,029,833</td>
+      <td>exonic</td>
+      <td>T</td>
+      <td>C</td>
+      <td>Arg → Cys</td>
+      <td>non-synonymous</td>
+      <td>−3.672</td>
+    </tr>
+    <tr>
+      <td>Ngb</td>
+      <td>111,126,261</td>
+      <td>111,132,320</td>
+      <td>111,128,730</td>
+      <td>exonic</td>
+      <td>G</td>
+      <td>A</td>
+      <td>Leu → Pro</td>
+      <td>non-synonymous</td>
+      <td>−3.000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>111,131,291</td>
+      <td>exonic</td>
+      <td>ACT</td>
+      <td>A</td>
+      <td>NA</td>
+      <td>frameshift deletion</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_MWF, Munich Wistar Frömter; SHR, spontaneously hypertensive rat. NA, not applicable._
+
+**Table 2.**
+ Presence of the frameshift deletion in inbred rat strains in neuroglobin (Ngb) at 111,131,291 bp.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Strain</th>
+      <th colspan="2">Presence of deletion</th>
+      <th colspan="2">Strain</th>
+      <th colspan="2">Presence of deletion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">ACI</td>
+      <td colspan="2">no</td>
+      <td colspan="2">MHS</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">BBDP</td>
+      <td colspan="2">no</td>
+      <td colspan="2">MNS</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">BN.Lx</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SBH</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">EVE</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SBN</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">F344/Ncrl</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SHR</td>
+      <td colspan="2">yes</td>
+    </tr>
+    <tr>
+      <td colspan="2">FHH</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SHR/NHsd</td>
+      <td colspan="2">yes</td>
+    </tr>
+    <tr>
+      <td colspan="2">FHL</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SHRSP/Gla</td>
+      <td colspan="2">yes</td>
+    </tr>
+    <tr>
+      <td colspan="2">GK</td>
+      <td colspan="2">yes</td>
+      <td colspan="2">SR/Jr</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">LE/Stm</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SS/Jr</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">LEW</td>
+      <td colspan="2">no</td>
+      <td colspan="2">SS_JRHSDMCWI</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">LEW/NcrlBR</td>
+      <td colspan="2">no</td>
+      <td colspan="2">WAG</td>
+      <td colspan="2">no</td>
+    </tr>
+    <tr>
+      <td colspan="2">LH</td>
+      <td colspan="2">no</td>
+      <td colspan="2">WKY</td>
+      <td colspan="2">yes</td>
+    </tr>
+    <tr>
+      <td colspan="2">LL</td>
+      <td colspan="2">no</td>
+      <td colspan="2">WKY/Gla</td>
+      <td colspan="2">yes</td>
+    </tr>
+    <tr>
+      <td colspan="2">LN</td>
+      <td colspan="2">no</td>
+      <td colspan="2">WKY_NHSD</td>
+      <td colspan="2">yes</td>
+    </tr>
+  </tbody>
+</table>
+
+_The inbred rat strains with presence of the Ngb frame shift deletion in bold belong to a clade of Wistar rat derived strains from Japan._
+
+### Positional candidate gene identification by transcriptome analysis in isolated glomerular tissue by RNA-Seq
 
 In order to identify other positional candidates at the sub-QTL on RNO6, we next embarked on RNA-Seq analysis in isolated glomeruli from MWF and SHR to assess global mRNA transcription patterns in the target compartment. We performed gene-based differential expression analysis using Cuffdiff and DESeq2 software tools (Figure 3D,E). After correcting for multiple testing, 1838 genes were assigned a p-value<0.05 for Cuffdiff analysis and 1841 genes for DESeq2, respectively, yielding a total set of 2454 unique differentially expressed genes. When filtering the results for those genes residing in the candidate region, we identified a total of 10 genes to be significantly differentially expressed between MWF and SHR (Table 3, Figure 3D,E) at significant p-values. These genes were taken forward to validation by quantitative real-time PCR (qPCR) analysis in isolated glomeruli obtained from the two parental and MWF-6SHR consomic animals during onset of albuminuria occurring between 4 and 8 weeks of age (Figure 4A). This analysis revealed that from the nine genes, which could be analyzed, only Tmem63c, showed consistent and allele-dependent differential expression during the crucial time window (Figure 4A,B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig4-v2.jpg)
 
-**Figure 4.:** (A) qPCR analysis showed no consistent differential expression for eight genes from overall 10 genes identified with differential expression in RNA sequencing (RNA-Seq) analysis (Table 3) between parental Munich Wistar Frömter (MWF), spontaneously hypertensive rats (SHR), and consomic MWF-6SHR during the crucial time window for onset of albuminuria between weeks 4 and 8. Only transmembrane protein 63c (Tmem63c) demonstrated differential mRNA expression at both time points. Acyl-CoA thioesterase 3 (Acot3) (Table 3) showed very low mRNA expression in qPCR analysis precluding quantitative analysis. Consequently, Acot3 and the genes shown were excluded from and Tmem63c was included for further functional analysis. Rats per strain (n = 7–8, each); values for Acot5 (week 8),Tgfb3 (week 4) and Tmem63c (week 8) are plotted as median ±IQR, while the rest of data are plotted as mean ±SD; data for Acot5 (week 8), Tgfb3 (week 4) and Tmem63c (week 8) were analyzed using Kruskal-Wallis test with Dunn’s post-hoc analysis and Mann-Whitney U test, while the rest of data was analyzed by one-way ANOVA with Bonferroni’s post hoc analysis and Mann-Whitney U test. (B) mRNA expression analysis for Tmem63c in isolated glomeruli by qPCR analysis is shown for MWF, SHR, congenic MWF.SHR-(D6Rat1-D6Mgh4) (Rat1-Mgh4) and congenic MWF.SHR-(D6Rat1-D6Rat81) (Rat1-Rat81), at week 4 and week 8. Rats per strain (n = 6–8, each); data for week 8 are plotted as median ±IQR and analyzed using Kruskal-Wallis test with Dunn’s post hoc analysis and Mann-Whitney U test; the other data are plotted as mean ±SD and analyzed by one-way ANOVA with Bonferroni’s post hoc analysis and Mann-Whitney U test (C) Representative immunohistochemical stainings of TMEM63C and Wilms tumor 1 (WT1) on kidney sections from SHR and MWF at 8 weeks of age; the insert indicates expression in podocytes. Scale bar = 50 µm. Quantitative analysis of TMEM63C intensity in podocytes using one-way ANOVA revealed lower intensity in MWF (n = 7) vs. SHR (n = 6) at 8 weeks (p=0.0032).10.7554/eLife.42068.014Figure 4—source data 1.10.7554/eLife.42068.015Figure 4—source data 2.
+**Figure 4.:** (A) qPCR analysis showed no consistent differential expression for eight genes from overall 10 genes identified with differential expression in RNA sequencing (RNA-Seq) analysis (Table 3) between parental Munich Wistar Frömter (MWF), spontaneously hypertensive rats (SHR), and consomic MWF-6SHR during the crucial time window for onset of albuminuria between weeks 4 and 8. Only transmembrane protein 63c (Tmem63c) demonstrated differential mRNA expression at both time points. Acyl-CoA thioesterase 3 (Acot3) (Table 3) showed very low mRNA expression in qPCR analysis precluding quantitative analysis. Consequently, Acot3 and the genes shown were excluded from and Tmem63c was included for further functional analysis. Rats per strain (n = 7–8, each); values for Acot5 (week 8),Tgfb3 (week 4) and Tmem63c (week 8) are plotted as median ±IQR, while the rest of data are plotted as mean ±SD; data for Acot5 (week 8), Tgfb3 (week 4) and Tmem63c (week 8) were analyzed using Kruskal-Wallis test with Dunn’s post-hoc analysis and Mann-Whitney U test, while the rest of data was analyzed by one-way ANOVA with Bonferroni’s post hoc analysis and Mann-Whitney U test. (B) mRNA expression analysis for Tmem63c in isolated glomeruli by qPCR analysis is shown for MWF, SHR, congenic MWF.SHR-(D6Rat1-D6Mgh4) (Rat1-Mgh4) and congenic MWF.SHR-(D6Rat1-D6Rat81) (Rat1-Rat81), at week 4 and week 8. Rats per strain (n = 6–8, each); data for week 8 are plotted as median ±IQR and analyzed using Kruskal-Wallis test with Dunn’s post hoc analysis and Mann-Whitney U test; the other data are plotted as mean ±SD and analyzed by one-way ANOVA with Bonferroni’s post hoc analysis and Mann-Whitney U test (C) Representative immunohistochemical stainings of TMEM63C and Wilms tumor 1 (WT1) on kidney sections from SHR and MWF at 8 weeks of age; the insert indicates expression in podocytes. Scale bar = 50 µm. Quantitative analysis of TMEM63C intensity in podocytes using one-way ANOVA revealed lower intensity in MWF (n = 7) vs. SHR (n = 6) at 8 weeks (p=0.0032).
 
-## Tmem63c represents a positional candidate gene in MWF with differential glomerular expression
+**Table 3.**
+ Genes in the candidate kidney damage region with differential expression in RNA-Seq analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Start (bp position)</th>
+      <th>End (bp position)</th>
+      <th>ID</th>
+      <th>P(DeSeq2)</th>
+      <th>P(Cuffdiff)</th>
+      <th>Straina</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acot3</td>
+      <td>107,531,528</td>
+      <td>107,536,789</td>
+      <td>ENSRNOG00000053460</td>
+      <td>0.09426742</td>
+      <td>0.00799931</td>
+      <td>SHR</td>
+    </tr>
+    <tr>
+      <td>Rps6kl1</td>
+      <td>108,961,994</td>
+      <td>108,976,489</td>
+      <td>ENSRNOG00000005530</td>
+      <td>0.024515465</td>
+      <td>0.0186294</td>
+      <td>MWF</td>
+    </tr>
+    <tr>
+      <td>Acot5</td>
+      <td>107,550,904</td>
+      <td>107,557,688</td>
+      <td>ENSRNOG00000032508</td>
+      <td>0.000234652</td>
+      <td>0.000948356</td>
+      <td>SHR</td>
+    </tr>
+    <tr>
+      <td>Papln</td>
+      <td>107,245,820</td>
+      <td>107,276,755</td>
+      <td>ENSRNOG00000009448</td>
+      <td>8.82E-05</td>
+      <td>0.000948356</td>
+      <td>MWF</td>
+    </tr>
+    <tr>
+      <td>Tmem63c</td>
+      <td>111,049,559</td>
+      <td>111,120,799</td>
+      <td>ENSRNOG00000011334</td>
+      <td>6.26E-06</td>
+      <td>0.000948356</td>
+      <td>MWF</td>
+    </tr>
+    <tr>
+      <td>Flvcr2</td>
+      <td>109,617,355</td>
+      <td>109,681,495</td>
+      <td>ENSRNOG00000008754</td>
+      <td>2.06E-06</td>
+      <td>0.000948356</td>
+      <td>MWF</td>
+    </tr>
+    <tr>
+      <td>Jdp2</td>
+      <td>109,466,060</td>
+      <td>109,505,161</td>
+      <td>ENSRNOG00000008224</td>
+      <td>0.052146312</td>
+      <td>0.00245615</td>
+      <td>SHR</td>
+    </tr>
+    <tr>
+      <td>Esrrb</td>
+      <td>110,410,141</td>
+      <td>110,455,906</td>
+      <td>ENSRNOG00000010259</td>
+      <td>0.278291584</td>
+      <td>0.00245615</td>
+      <td>SHR</td>
+    </tr>
+    <tr>
+      <td>Tgfb3</td>
+      <td>109,913,757</td>
+      <td>109,935,533</td>
+      <td>ENSRNOG00000009867</td>
+      <td>0.019914732</td>
+      <td>0.0632265</td>
+      <td>SHR</td>
+    </tr>
+    <tr>
+      <td>Vash1</td>
+      <td>110,624,856</td>
+      <td>110,637,382</td>
+      <td>ENSRNOG00000010457</td>
+      <td>0.070552875</td>
+      <td>0.00314268</td>
+      <td>MWF</td>
+    </tr>
+  </tbody>
+</table>
+
+_MWF, Munich Wistar Frömter; RNA-Seq, RNA sequencing; SHR, spontaneously hypertensive rat. Genes shown in bold were found to be significantly differentially expressed using both CuffDiff and DeSeq2 analysis. a The strain name is given for upregulation of mRNA expression._
+
+### Tmem63c represents a positional candidate gene in MWF with differential glomerular expression
 
 RNA-Seq and qPCR analysis indicated a significant 2.5- to 3-fold upregulation of Tmem63c mRNA expression in isolated glomeruli in the MWF model, which was abolished by transfer of RNO6 from SHR onto the MWF genetic background in the corresponding MWF-6SHR consomic line (Figure 4A). Moreover, comparison of Tmem63c mRNA expression between the two informative congenic lines MWF.SHR-(D6Rat1-D6Rat81) and MWF.SHR-(D6Rat1-D6Mgh4) confirmed an allelic (cis) regulation of Tmem63c mRNA expression in MWF and SHR, and its association with albuminuria (Figure 4B). Further evaluation of the NGS data for Tmem63c in MWF and SHR revealed no significant sequence variants, with the exception of one detected variant in intron 18 (ENSRNOT00000015571) at 111,101,251 bp at a potential splice site position. However, when analyzing our RNA-Seq data concerning differential exon usage in Tmem63c, we found no significant difference in exon usage between both parental strains.
 
 We then set out to perform immunohistochemistry analysis of TMEM63C in MWF kidney. This revealed TMEM63C expression in a podocyte-specific pattern (Figure 4C). In contrast to the clearly elevated mRNA expression in isolated glomeruli, this analysis indicated no elevated glomerular protein expression in MWF, and only somewhat lower TMEM63C protein expression in podocytes in MWF compared to SHR at onset of albuminuria at 8 weeks of age (Figure 4C).
 
-## Patients with focal segmental glomerulosclerosis exhibit loss of glomerular TMEM63C expression
+### Patients with focal segmental glomerulosclerosis exhibit loss of glomerular TMEM63C expression
 
 Aging MWF rats develop histopathological changes similar to those observed in patients with FSGS (Remuzzi et al., 1992; Schulz and Kreutz, 2012). Podocyte injury with the development of glomerular proteinuria represents a pivotal hallmark of FSGS (D'Agati et al., 2011; Lim et al., 2016). Thus, we explored TMEM63C expression in patients with FSGS and healthy controls to evaluate its potential role for human kidney damage (Yu et al., 2016). This analysis demonstrated that TMEM63C is expressed in podocytes of all glomeruli in healthy controls (Figure 5A,E), while patients with FSGS exhibit a significant decrease of TMEM63C expression (Figure 5B–E) with a global loss of glomerular TMEM63C in the majority of patients analyzed (Figure 5D–F). In addition to TMEM63C expression, we analyzed the expression of nephrin protein as a pivotal component of the slit diaphragm of the GFB (Figure 5G–J) (Kestilä et al., 1998). Nephrin expression was also significantly reduced in patients with FSGS (Figure 5H,I), which is in accordance with previously published results (Kim et al., 2002). Moreover, we observed a shift from the normal linear staining pattern to a granular staining pattern as reported (Figure 5H,J) (Doublier et al., 2001; Wernerson et al., 2003).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig5-v2.jpg)
 
-**Figure 5.:** (A–D) High-intensity TMEM63C staining in a glomerulus of a healthy human control subject (A) and representative glomeruli of FSGS patients with high (+++) (B), intermediate (+) TMEM63C staining intensity (C), or loss (-) of TMEM63C protein expression (D). The inserts indicate TMEM63C-positive podocytes. Scale bar = 50 µm. (E) Scoring of the TMEM63C staining intensity in controls (n = 11) and FSGS patients (n = 9). Percentage of cases with high intensity (green); intermediate intensity (blue); low intensity (yellow) and no TMEM63C staining (magenta). Linear-by-Linear association; p=0.005. (F) Scoring of the percentage of TMEM63C positivity in glomeruli. Green: no loss; blue:<25% loss; yellow: 25–50% loss; magenta:>50% loss of TMEM63C expression. Controls (n = 11) and FSGS patients (n = 9); values plotted: median ±IQR; Mann-Whitney U test; *p<0.0001 vs. control; **p=0.021 vs. control. (G–J) Linear nephrin staining in a glomerulus of a healthy human control subject (G) and segmental loss of nephrin staining in a glomerulus of a patient with FSGS (H), indicated by arrowheads. Nephrin expression was significantly reduced in patients with FSGS compared to healthy controls (I). Moreover, we observed a shift from a normal linear staining pattern, following the glomerular capillary wall, to a granular staining pattern (H and J). values plotted: median ±IQR; Mann-Whitney U test; *p=0.05 vs. control; **p<0.01 vs. control; ***p<0.001 vs. controls.10.7554/eLife.42068.018Figure 5—source data 1.10.7554/eLife.42068.019Figure 5—source data 2.
+**Figure 5.:** (A–D) High-intensity TMEM63C staining in a glomerulus of a healthy human control subject (A) and representative glomeruli of FSGS patients with high (+++) (B), intermediate (+) TMEM63C staining intensity (C), or loss (-) of TMEM63C protein expression (D). The inserts indicate TMEM63C-positive podocytes. Scale bar = 50 µm. (E) Scoring of the TMEM63C staining intensity in controls (n = 11) and FSGS patients (n = 9). Percentage of cases with high intensity (green); intermediate intensity (blue); low intensity (yellow) and no TMEM63C staining (magenta). Linear-by-Linear association; p=0.005. (F) Scoring of the percentage of TMEM63C positivity in glomeruli. Green: no loss; blue:<25% loss; yellow: 25–50% loss; magenta:>50% loss of TMEM63C expression. Controls (n = 11) and FSGS patients (n = 9); values plotted: median ±IQR; Mann-Whitney U test; *p<0.0001 vs. control; **p=0.021 vs. control. (G–J) Linear nephrin staining in a glomerulus of a healthy human control subject (G) and segmental loss of nephrin staining in a glomerulus of a patient with FSGS (H), indicated by arrowheads. Nephrin expression was significantly reduced in patients with FSGS compared to healthy controls (I). Moreover, we observed a shift from a normal linear staining pattern, following the glomerular capillary wall, to a granular staining pattern (H and J). values plotted: median ±IQR; Mann-Whitney U test; *p=0.05 vs. control; **p<0.01 vs. control; ***p<0.001 vs. controls.
 
-## Knockdown of TMEM63C expression in human podocytes impairs cell viability and survival signaling
+### Knockdown of TMEM63C expression in human podocytes impairs cell viability and survival signaling
 
 We further analyzed the effect of reduced TMEM63C expression in human podocytes in culture using small interfering RNA (siRNA) methodology (Figure 6A). We found significantly impaired cell viability in response to TMEM63C downregulation (Figure 6B). In addition, reduction of TMEM63C expression by siRNA decreased pro-survival signaling in human podocytes as indicated by reduced levels of pAKT (Figure 6C), and increased pro-apoptotic transition of cytochrome C from mitochondria to the cytoplasm (Figure 6D).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig6-v2.jpg)
 
-**Figure 6.:** Shown is the impact of siRNA-mediated inhibition of TMEM63C (siTMEM63C) or treatment of hPC with a corresponding nonsense negative control (siControl). (A) TMEM63C protein expression normalized against GAPDH as a loading control (*p=0.011). Shown is a representative Western blot. (B) Cell viability determined via measurement of calcein acetoxymethyl (AM) fluorescence intensity in hPC (**p=0.024). (C) Phosphorylation state of protein kinase B (pAKT) normalized against the expression of total AKT (AKT) (#p=0.0094). Shown is a representative Western blot, GAPDH is used as a loading control. (D) Pro-apoptotic cytochrome C transition from mitochondria to the cytoplasm of hPC (##p=0.0096). The mean ±SD of at least three independent experiments is shown, respectively. Two-tailed Student´s t-test was performed for all experiments.10.7554/eLife.42068.021Figure 6—source data 1.
+**Figure 6.:** Shown is the impact of siRNA-mediated inhibition of TMEM63C (siTMEM63C) or treatment of hPC with a corresponding nonsense negative control (siControl). (A) TMEM63C protein expression normalized against GAPDH as a loading control (*p=0.011). Shown is a representative Western blot. (B) Cell viability determined via measurement of calcein acetoxymethyl (AM) fluorescence intensity in hPC (**p=0.024). (C) Phosphorylation state of protein kinase B (pAKT) normalized against the expression of total AKT (AKT) (#p=0.0094). Shown is a representative Western blot, GAPDH is used as a loading control. (D) Pro-apoptotic cytochrome C transition from mitochondria to the cytoplasm of hPC (##p=0.0096). The mean ±SD of at least three independent experiments is shown, respectively. Two-tailed Student´s t-test was performed for all experiments.
 
-## Functional analysis of tmem63c in zebrafish
+### Functional analysis of tmem63c in zebrafish
 
 To assess the functional role of tmem63c for albuminuria development, we utilized the transgenic zebrafish line Tg[fabp10a:gc-EGFP] (Zhou and Hildebrandt, 2012). This model expresses a vitamin D binding protein tagged with enhanced green fluorescent protein (gc-EGFP) in the liver, from which it is released into the blood stream and circulates under the normal conditions in the blood (Figure 7A,G). Upon GFB damage, gc-EGFP leaks through the glomerular filtration barrier, indicated by a marked decrease in fluorescence in the trunk vasculature of Tg[fabp10a:gc-EGFP] embryos mimicking an albuminuria-like phenotype (Figure 7A). To reduce tmem63c levels in developing zebrafish embryos, we used the morpholino knockdown technology as well as CRISPR/Cas9-mediated somatic mutagenesis (Bassett et al., 2013; Burger et al., 2016) (Figure 7B). In both morpholino-injected embryos and crispants (CRISPR/Cas9-mediated somatic mutants), loss of tmem63c did not result in any visible developmental malformations apart from mild pericardial edema (Figure 7C–F). Knockdown of tmem63c using morpholino technology resulted in a significant decrease in gc-EGFP fluorescence in the trunk vasculature at 120 hr post fertilization (hpf) (Figure 7H). We corroborated this finding in tmem63c crispants (Figure 7J, Figure 7—figure supplement 1D) as well as by using another splice-blocking morpholino (Figure 7—figure supplement 1E–I); both experiments showed a similar albuminuria-like phenotype. To verify the specificity of the observed phenotype rescue experiments were carried out by co-injection of zebrafish tmem63c mRNA with tmem63c sgRNA/Cas9 complexes and rat Tmem63c mRNA (mRNA sequence identity vs. zebrafish = 65.82% (Clustal 2.1), Figure 7—figure supplement 2) with tmem63c ATG-MO, respectively. For both cases similarly, the albuminuria-like phenotype could be specifically rescued proving knockdown specificity on the one hand and functional conservation of tmem63c across species on the other hand (Figure 7I,K and L). Our data indicate that tmem63c may regulate the GFB integrity.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig7-v2.jpg)
+
+**Figure 7.:** (A) Scheme of the GFB in healthy and albuminuric zebrafish embryos. Green fluorescent protein (gc-EGFP) represents an albumin surrogate and is filtrated after impairment of the GFB. fe, fenestrated endothelium; fp, foot processes of podocytes; GBM, glomerular basement membrane. (B) Schematic of tmem63c showing the target regions in Exon 2 (ex2) used for Morpholino (MO)- and CRISPR/Cas9-mediated somatic mutagenesis. (C–F) Bright field view of wildtype embryos at 48 hr post-fertilization (hpf) in uninjected controls (C), ATG-MO injected (D), 159.6 ng/µl ex2-sgRNA injected (E), and 250 ng/µl ex2-sgRNA injected embryos (F). Scale bar = 1 mm. (G–K) Fluorescence microscopy of Tg[fabp10a:gc-EGFP] embryos at 120 hpf. Uninjected control with clearly visible gc-EGFP fluorescence in the trunk vasculature (‘fluorescent’) (G). tmem63c ATG-MO-injected embryo with partial or a complete loss of trunk fluorescence (‘deficient-fluorescent’) (H) and tmem63c ATG-MO +Tmem63c mRNA (Rat) co-injected embryo (I) showing rescue of the phenotype. Tmem63c ex2-sgRNA-injected embryo with partial or a complete loss of trunk fluorescence (‘deficient-fluorescent’) (J) and tmem63c ex2-sgRNA + tmem63c mRNA (ZF) co-injected embryo (K) showing rescue of the phenotype. Scale bar = 1 mm. (L) Analysis of gc-EGFP in the trunk vasculature. Shown are embryos categorized as ‘deficient-fluorescent’ (df), see Materials and method section and Figure 7—figure supplement 2 for details. Experimental groups are normalized to the corresponding uninjected control group per experiment. Uninjected Control (n = 1198); Control-MO (n = 189); tmem63c ATG-MO (n = 227); tmem63c ATG-MO +Tmem63c mRNA (Rat) (n = 230); tmem63c ex2-sgRNA (n = 371); tmem63c ex2-sgRNA + tmem63c mRNA (ZF) (n = 126); One-way ANOVA with Bonferroni’s multiple comparisons test. Values plottet: mean ±SD, dashed line at y = 1 indicates the uninjected control level; *p=0.0002 vs. uninjected Control, #p<0.0001 vs. tmem63c ATG-MO. **p=0.0014 vs. uninjected Control, ##p<0.0001 vs. tmem63c ex2-sgRNA. Data points in the graph represent the ratio per independent experiment, %(Uninjected Control (df)) / %(experimental group (df)), N ≥ 3. (See Figure 7—figure supplement 1 and Figure 7—figure supplement 2).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–C) Representative fluorescence microscopy pictures of Tg[fabp10a:gc-EGFP] zebrafish embryos categorized as ‘fluorescent’ or ‘deficient-fluorescent’, respectively to assess functionality of the GBM. An embryo of the ‘fluorescent group’ (A) shows clearly visible fluorescence in the trunk vasculature. (B–C) Embryos of different fluorescence intensities both characterized as ‘deficient-fluorescent’ with marked decrease in the fluorescence in the trunk vasculature. (D) Plot of mutagenesis output in transmembrane protein 63 c (tmem63c) crispants as created by CrispR Variants Lite analysis of the sequencing data from individual embryos. The gene schematic at the top illustrates the location of the sgRNA in red with respect to all overlapping transcripts on the reference strand in the Ensembl database (Yates et al., 2016). The panel below shows the pairwise alignment of each variant to the reference genome. The 20 bp sgRNA and the 3 bp PAM sequences are indicated in boxes in the reference sequence, the cutting site is indicated by a vertical line. Deletions are given by “- “and insertions by symbols with the inserted sequences shown underneath the plot with respect to the cutting site. The right panel demonstrates the frequency of the variants in the embryos analyzed with colors corresponding to variant frequencies as shown. The header displays the total number of embryos sequenced. (E–I) Functional assessment of the GFB after tmem63c-knockdown using tmem63c ex2-sdMO. (E) Schematic of tmem63c showing the region in Exon 2 (ex2) targeted by ex2-sdMO. Arrows indicate the positions of primers used for RT-PCR. (F) RT-PCR showing tmem63c-deficiency after injection of tmem63c ex2-sdMO, but not in Control-MO injected embryos or uninjected Controls, respectively. Eukaryotic translation elongation factor 1 alpha 1, like 1 (eef1a1l1) is used as a loading control. (F–G) Bright-field view of wildtype embryos at 48 hr post-fertilization (hpf) in uninjected controls (F) and tmem63c ex2-sdMO injected embryos (G). Scale bar = 1 mm. (H) Analysis of gc-EGFP in the trunk vasculature. Shown are embryos categorized as ‘deficient-fluorescent’ (df). Experimental groups are normalized to the corresponding uninjected control group per experiment. Uninjected Control (n = 457); tmem63c ex2-sdMO (n = 297); tmem63c ex2-sdMO + tmem63 c mRNA (ZF) (n = 246); One-way ANOVA with Bonferroni’s multiple comparisons test. Values plottet: mean ±SD, dashed line at y = 1 indicates the uninjected control level; *p=0.0039 vs. uninjected Control, # p=0.0021 vs. tmem63c ex2-sdMO. ZF = zebrafish. Data points in the graph represent the ratio per independent experiment, %(Uninjected Control (df)) / %(experimental group (df)), N ≥ 3.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Sequence alignment shows the first 100 bp of tmem63c mRNA zebrafish vs. Tmem63c mRNA rat following ATG. Orange bases indicate the zebrafish sequence following ATG targeted by tmem63c ATG-MO to prove no targeting of rat mRNA by the used tmem63c ATG-MO. Sequence identity is 65,82% (Clustal 2.1) for mRNA sequences or 53,52% (Clustal 2.1) for protein sequences, respectively. D., Danio; R., Rattus.
 
 To understand the possible functional changes in GFB in more detail, we deployed electron microscopy to visualize the GFB ultrastructure in embryos with reduced tmem63c levels. We observed significant changes in podocyte foot process morphology manifested by foot process effacement (Figure 8A–C). Quantitative analysis in tmem63c crispants revealed a significant increase in the foot process width compared to uninjected controls and Cas9-controls (Figure 8D) with concomitant significant decrease of the number of slit diaphragms per µm glomerular basement membrane (GBM) (Figure 8E). To analyze, whether the observed albuminuria-like phenotype upon tmem63c-deficiency is associated with the loss of podocytes, we utilized confocal microscopy to image glomeruli of Tg(wt1b:EGFP) embryos. In this analysis, tmem63c crispants (tmem63c ex2-sgRNA) showed a widened Bowman´s space and increased glomerular volumes compared to uninjected controls (133457 ± 59547 µm3 vs 67067 ± 21933 µm3, p=0.04) as quantified by 3D surface reconstruction. In addition, we observed dilated capillary loops in the crispants (Figure 8F–H). Quantification of podocyte cell number in embryos with reduced tmem63c levels revealed no changes in absolute cell number (Figure 8I, Videos 1–3), while relative podocyte cell number normalized to the total glomerular volume was significantly decreased compared to uninjected controls (Figure 8J, Videos 1–3). Collectively, our data indicate the conserved role for tmem63c in GFB function between fish, rodents, and humans.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/42068/elife-42068-fig8-v2.jpg)
 
-**Figure 8.:** tmem63c in zebrafish.(A–E) Electron microscopy and quantitative assessment of GFB ultrastructure. Representative electron microscopy pictures of the GFB in uninjected Controls (A), Cas9-Controls (B) and after tmem63c knockdown (C), asterisks indicate effaced podocyte foot processes). Quantitative analysis of podocyte foot process width (D) and number of slit diaphragms per µm GBM (E). Uninjected Control (n = 5); Cas9-Control (n = 4); tmem63c ex2-sgRNA (n = 4); Scale bar = 1 µm; values plottet: mean ±SD; One-way ANOVA with Bonferroni’s multiple comparisons test; *p=0.0019 vs. uninjected Control, *p=0.0017 vs Cas9-Control; # p=0.0171 vs. uninjected Control, # p=0.0148 vs. Cas9-Control. (F–J) Confocal microscopy and analysis of absolute and relative podocyte cell number in Tg(wt1b:EGFP) at 96 hpf. Representative confocal microscopy pictures of glomeruli in uninjected Controls (F), Cas9-Controls (G) and after tmem63c knockdown (H). Quantitative analysis of absolute (I) and relative (J) podocyte cell number. Relative podocyte cell number has been obtained after normalization to the glomerular volume. Uninjected Control (n = 6); Cas9-Control (n = 6); tmem63c ex2-sgRNA (n = 7); Scale bar = 15 µm; values plottet: mean ±SD; One-way ANOVA with Bonferroni’s multiple comparisons test; **p=0.0421 vs. uninjected Control.10.7554/eLife.42068.028Figure 8—source data 1.
+**Figure 8.:** (A–E) Electron microscopy and quantitative assessment of GFB ultrastructure. Representative electron microscopy pictures of the GFB in uninjected Controls (A), Cas9-Controls (B) and after tmem63c knockdown (C), asterisks indicate effaced podocyte foot processes). Quantitative analysis of podocyte foot process width (D) and number of slit diaphragms per µm GBM (E). Uninjected Control (n = 5); Cas9-Control (n = 4); tmem63c ex2-sgRNA (n = 4); Scale bar = 1 µm; values plottet: mean ±SD; One-way ANOVA with Bonferroni’s multiple comparisons test; *p=0.0019 vs. uninjected Control, *p=0.0017 vs Cas9-Control; # p=0.0171 vs. uninjected Control, # p=0.0148 vs. Cas9-Control. (F–J) Confocal microscopy and analysis of absolute and relative podocyte cell number in Tg(wt1b:EGFP) at 96 hpf. Representative confocal microscopy pictures of glomeruli in uninjected Controls (F), Cas9-Controls (G) and after tmem63c knockdown (H). Quantitative analysis of absolute (I) and relative (J) podocyte cell number. Relative podocyte cell number has been obtained after normalization to the glomerular volume. Uninjected Control (n = 6); Cas9-Control (n = 6); tmem63c ex2-sgRNA (n = 7); Scale bar = 15 µm; values plottet: mean ±SD; One-way ANOVA with Bonferroni’s multiple comparisons test; **p=0.0421 vs. uninjected Control.
+
+![Video 1.](https://cdn.elifesciences.org/articles/42068/elife-42068-video1.mp4.jpg)
+
+**Video 1.:** The videos show a maximum intensity projection of the masked DAPI channel acquired by confocal microscopy of Tg(wt1b:EGFP) zebrafish embryos at 96 hpf. The DAPI channel of DAPI+/EGFP+-cells visualized here represents podocyte nuclei. Blue spots show the podocyte nuclei identified by software-based spot segmentation. Spots were counted for quantification of the absolute podocyte cell number. The grey surface represents the 3D surface reconstruction of glomeruli containing all DAPI+/EGFP+ nuclei, which was used for quantification of the total glomerular volume. Shown here are representative analysis results of uninjected controls (Video 1), Cas9-Controls (Video 2) and tmem63c ex2-sgRNA-injected embryos (Video 3).
+
+![Video 2.](https://cdn.elifesciences.org/articles/42068/elife-42068-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/42068/elife-42068-video3.mp4.jpg)
 
 ## Discussion
 
@@ -117,17 +503,223 @@ Tmem63c belongs to the TMEM (transmembrane protein) gene family comprising more 
 
 ## Materials and methods
 
-## Rat animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TMEM63C</td>
+      <td>Perbio Science Germany; this paper</td>
+      <td>epitope: GLRGFARELDPAQFQEGLE</td>
+      <td>1:1600 for rat tissue, 1:800 for human biopsies</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-WT1</td>
+      <td>Santa Cruz</td>
+      <td>RRID:AB_632611</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-nephrin</td>
+      <td>Abcam</td>
+      <td>RRID:AB_944400</td>
+      <td>1:750</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit EnVision HRP conjugate</td>
+      <td>Dako</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH</td>
+      <td>Calbiochem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AKT</td>
+      <td>Merck Chemicals GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>phospho-AKT Ser473</td>
+      <td>Merck Chemicals GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Renal biopsy samples of patients with FSGS</td>
+      <td>archive of the Department of Pathology of the Leiden University Medical Center (LUMC)</td>
+      <td></td>
+      <td>For patient information see Table 4</td>
+    </tr>
+    <tr>
+      <td>ell line (Homo sapiens)</td>
+      <td>hPC</td>
+      <td>Saleem et al., 2002</td>
+      <td>RRID:CVCL_W186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>tmem63c</td>
+      <td>NA</td>
+      <td>ZFIN: ZDB-GENE-120928–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TMEM63C</td>
+      <td>NA</td>
+      <td>Ensembl: ENST00000298351.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Tmem63c</td>
+      <td>NA</td>
+      <td>Ensembl: ENSRNOT00000015571.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma Aldrich</td>
+      <td></td>
+      <td>stock solution 1 mg/ml diluted 1:2000 in PBS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DNA-Seq database</td>
+      <td>this paper</td>
+      <td>GEO and SRA: Submission ID: SUB2950675 and BioProject ID: PRJNA398197</td>
+      <td>See Data availability</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNA-Seq database</td>
+      <td>this paper</td>
+      <td>GEO and SRA: accession GSE102546</td>
+      <td>See Data availability</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>tmem63c (cDNA) zebrafish</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Infusion cloning primer sequences for cDNA synthesis: forward: GCTTGATATCGAATTCATGGCGTTTGAGTCCTGGCCTGC; reverse: CGGGCTGCAGGA ATTCTCACTGAAAAGCCACCGGACTG; Sequence additional primer for amplification of ORF: GTGCAGAAACTAATGAAGCTGG; Progenitors: tmem63c (cDNA); pBluescript II SK(+)</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>tmem63c ATG-MO</td>
+      <td>Gene Tools LLC Philomath</td>
+      <td></td>
+      <td>sequence: 5’-CAGGCCAGGACTCAAACGCCATTGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>tmem63c ex2-sdMO</td>
+      <td>Gene Tools LLC Philomath</td>
+      <td></td>
+      <td>sequence: 5'-TGTTATCATAGATGATGTACCAGCC-3'</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>tmem63c ex2-sgRNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Sequence synthesis forward primer with CRISPR target site underlined: GAAATTAATACGACTCACTATAGGACGTCAGGAGTTTCCTGAGTT TTAGAGCTAGAAATAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>tmem63c ex2- sgRNA primers flanking CRISPR target site</td>
+      <td>BioTez Berlin-Buch GmbH</td>
+      <td></td>
+      <td>Sequences: forward: CAAATGGTGAACACTTGTGAATC, reverse: CTGCGGTTTACTGCGGAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siTMEM63C</td>
+      <td>Sigma-Aldrich Chemie GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(fabp10a:gc-EGFP)</td>
+      <td>Zhou and Hildebrandt, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tg(wt1b:GFP)</td>
+      <td>Perner et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>MWF/Rkb</td>
+      <td>Own colony Charité – Universitätsmedizin Berlin, Germany</td>
+      <td>http://dels.nas.edu/ilar/ (laboratory code Rkb); Schulz and Kreutz, 2012; RRID:RGD_724569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>SHR/Rkb</td>
+      <td>Own colony Charité – Universitätsmedizin Berlin, Germany</td>
+      <td>http://dels.nas.edu/ilar/ (laboratory code Rkb); Schulz and Kreutz, 2012; RRID:RGD_631696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>MWF-6SHR</td>
+      <td>Own colony Charité – Universitätsmedizin Berlin, Germany</td>
+      <td>http://dels.nas.edu/ilar/ (laboratory code Rkb); Schulz and Kreutz, 2012; RRID:RGD_1641831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Congenic strains see Figure 1</td>
+      <td>Own colony Charité – Universitätsmedizin Berlin, Germany; this paper</td>
+      <td></td>
+      <td>For generation of congenic strains seeMaterials and method section</td>
+    </tr>
+  </tbody>
+</table>
+
+### Rat animals
 
 Male rats were obtained from our MWF/Rkb (RRID:RGD_724569, laboratory code Rkb, http://dels.nas.edu/ilar/) and SHR/Rkb (RRID:RGD_631696, laboratory code Rkb, http://dels.nas.edu/ilar/) colonies at the Charité – Universitätsmedizin Berlin, Germany. The consomic MWF-6SHR (RRID:RGD_1641831) was previously described (Schulz et al., 2007). Rats were grouped under conditions of regular 12 hr diurnal cycles with an automated light switching device and climate-controlled conditions at a room temperature of 22°C. The rats were fed a normal diet containing 0.2% NaCl and had free access to food and water.
 
 A panel of eight congenic rat lines MWF.SHR-(D6Rat1-D6Rat30), MWF.SHR-(D6Rat1-D6Rat106), MWF.SHR-(D6Rat1-D6Mit8), MWF.SHR-(D6Rat1-D6Rat121), MWF.SHR-(D6Rat1-D6Mgh4), MWF.SHR-(D6Rat1-D6Rat81), MWF.SHR-(D6Rat1-D6Rat115), and MWF.SHR-(D6Rat1-D6Rat184) was generated by transfer of different nested SHR segments onto the MWF background. For this procedure, male and female rats of the MWF-6SHR breeding, that were homozygous for all MWF chromosomes except RNO6 and heterozygous for RNO6, were intercrossed (Schulz et al., 2003). All experimental work in rat models was performed in accordance with the guidelines of the Charité-Universitätsmedizin Berlin and the local authority for animal protection (Landesamt für Gesundheit und Soziales, Berlin, Germany) for the use of laboratory animals. The registration numbers for the rat experiments are G 0255/09 and T 0189/02.
 
-## Determination of albuminuria, direct BP and glomerular density in rats
+### Determination of albuminuria, direct BP and glomerular density in rats
 
 Urinary albumin excretion was measured as reported (Kreutz et al., 2000). Direct intra-arterial BP measurements were performed in awake male rats at 14 weeks of age as previously described (Kreutz et al., 1995; Schulz et al., 2010). For determination of glomerular density, animals were sacrificed under ketamine-xylazine anesthesia (87 and 13 mg/kg body wt, respectively) at week 4. The right kidney was fixed in methacarn and embedded in paraffin. Tissue samples were cut into 5-μm-thick histological sections (Figure 1G–I) and stained with the periodic acid-Schiff (PAS) technique. Section analysis was performed by a photomicroscope Axiophot (Zeiss) and a digital camera system AxioCam MRc Rev. 3 FireWire (Zeiss) at a 10x magnification. Glomerular density was calculated using the formula n = G/FA(D + T) as reported (ELIAS et al., 1961; Lucas et al., 1997). Glomeruli in 20–25 fields for each sample were counted in the outer cortex zone (Figure 1H,I). Glomerular diameter was calculated by the AxioVision release 4.8.2 software program (Zeiss). This method was validated by comparison with the absolute nephron numbers as determined by the physical fractionator method in rat strains as previously reported (Gundersen, 1986; Schulz et al., 2007).
 
-## NGS of the candidate region on RNO6
+### NGS of the candidate region on RNO6
 
 Based on the fine mapping results of the congenic MWF strains, a target candidate region of about 5.63 Mbp (chr6:105.8–111.43 Mb, R. norvegicus, ENSEMBL rn6.0) (Yates et al., 2016) was defined for subsequent next-generation resequencing analysis. The solution-based SureSelectXT (Agilent Technologies) capture method was applied for custom target enrichment of the defined region according to the manufacturer’s instructions starting with 3 μg genomic rat DNA of MWF, SHR, MWF-6SHR, MWF.SHR-(D6Rat1-D6Mgh4), and MWF.SHR-(D6Rat1-D6Rat81) (n = 3, each), uniquely labelled by index tags.
 
@@ -135,94 +727,151 @@ Library quality control and final quantification for subsequent pooling of the 1
 
 The Tajima’s D statistic (Tajima, 1989) was used to test for signatures of selection in the region of interest utilizing the vcftools software (Vs. 0.1.13) (Danecek et al., 2011).
 
-## Rat glomeruli isolation
+### Rat glomeruli isolation
 
 Different protocols were used for isolation of glomeruli from male rats at 4 and 8 weeks of age, due to the different body size. Rats were anesthetized with ketamine-xylazine (87 and 13 mg/kg body weight, respectively). In 4-week-old rats, the abdominal artery was catheterized and kidneys were perfused with 10 ml 1x phosphate buffered saline (PBS) and subsequently with 20 ml ferrous solution (12.5 g ferric oxide (Iron(II/III) powder <5 micron, 98%; Sigma- Aldrich Chemie GmbH) suspended in 1000 ml 1x PBS. Kidneys were removed, decapsulated and passed through a 125 μm steel sieve (Retsch GmbH) with 1x PBS. The glomeruli containing ferrous particles were gathered by a magnet, snap-frozen and stored at −80°C. Kidneys of 8-week-old rats were removed, decapsulated and passed through a 125 μm steel sieve with 1x PBS. The filtrate was put on a 71 μm steel sieve (Retsch GmbH) to separate glomeruli from the flow-through. Glomeruli were washed off the sieve with 1x PBS, centrifuged, immediately snap-frozen and stored at −80°C.
 
-## Transcriptome analysis
+### Transcriptome analysis
 
 RNA sequencing (RNA-Seq) was performed in glomerular RNA of male MWF and SHR rats at week 4 (n = 3, each). The NEBNext Poly(A) mRNA magnetic isolation module followed by library preparation using NEBNext Ultra RNA Library Prep Kit for Illumina (New England BioLabs) was applied on 1 μg total RNA to generate a cDNA library for subsequent paired end (80 cycles) sequencing on the NextSeq 500 system (Illumina) using v2 chemistry yielding in about 415M single reads. RNA and library quality control was performed using the Bioanalyzer RNA 600 Nano and High-Sensitivity DNA Analysis Kit (Agilent Technologies), respectively. The KAPA Library Quantification Kit (Kapa Biosystems) was used for library quantification.
 
 Initial quality control of the raw data was performed using Cutadapt version 1.9 (Martin, 2012) program. Raw reads were quality trimmed (minimal base quality: 25, minimal read length after trimming: 70 nt), adapter sequences were removed from reads 3’ ends. TopHat2 version 2.1.0 (Trapnell et al., 2009; Trapnell et al., 2010) software tool together with Bowtie2 aligner version 2.2.3 (Langmead and Salzberg, 2012) was used for read mapping against ENSEMBL rn6.0 reference assembly (Yates et al., 2016). After the reads have been mapped to the reference genome, the Cufflinks version 2.2.1 (Trapnell et al., 2010) program together with Ensembl (release 81) gene annotation (Aken et al., 2016), baw093) were used to assemble transcripts and estimate their abundances. Differential expression analysis was performed using both Cuffdiff version 2.2.1 software package (Trapnell et al., 2010) and DESeq2 R package version 1.12.4 (Love et al., 2014). Genes having absolute fold change value <1.5 were excluded from further analysis. Genes were considered significantly differentially expressed if the corresponding adjusted p-value was less than 0.05.
 
-## Reverse transcription and qPCR
+### Reverse transcription and qPCR
 
 First-strand cDNA synthesis was carried out on 2 µg of total RNA using the First Strand cDNA Synthesis Kit (Fermentas Life Sciences) following the manufacturer’s protocol. Isolated glomeruli preparations of rat strains were analyzed at week 4 and week 8. qPCR of each gene was performed in a 7000 Real-Time PCR System (Applied Biosystems) with version 1.2.3 software or a 7500 Fast Real-Time PCR System with version 2.0.6 software (Applied Biosystems) using the comparative quantification cycle method as reported (Fast SYBRGreen Master Mix or Power SYBR Green PCR Master Mix; Applied Biosystems) (Schulz et al., 2008). Primers are listed in Figure 4—source data 2. Normalization of expression data was done by the reference gene hydroxymethylbilane synthase (Hmbs) (Schulz et al., 2008). For all analyses, three technical replicates of each animal/experiment were performed. Genes with low mRNA expression levels were only considered when the quantification cycles (Cqs) were ≥30 and the Cqs of the no-template controls were at least 5 Cqs delayed. Acyl-CoA thioesterase 3 (Acot3) demonstrated low expression levels and was therefore not analyzed.
 
-## Immunohistochemistry of TMEM63C in rat and human kidneys
+### Immunohistochemistry of TMEM63C in rat and human kidneys
 
 For determination of protein expression of TMEM63C an anti-TMEM63C antibody (epitope: GLRGFARELDPAQFQEGLE, custom antibody production: Perbio Science Germany) was generated. The epitope does not cross react with TMEM63A or TMEM63B or other genes. For Wilms tumor 1 (WT1) protein expression analysis, we used a rabbit anti-WT1 antibody (Santa Cruz). For nephrin protein expression analysis, we used a rabbit anti-nephrin antibody (Abcam). Paraffin embedded rat kidney sections and human biopsy samples were cut at 4 µm and incubated with the anti-TMEM63C antibody (1:1600 for rat tissue, 1:800 for human biopsies), the anti-WT1 antibody (1:500) or the anti-nephrin antibody (1:750). Rabbit IgG negative control fraction was used as a negative control in the same concentration as the primary antibody. Goat anti-rabbit EnVision HRP conjugate (Dako) was used as secondary antibody. The staining was visualized using diaminobenzidine as the chromogen and counterstained with haematoxylin.
 
-## Evaluation of TMEM63C staining in MWF and SHR rats
+### Evaluation of TMEM63C staining in MWF and SHR rats
 
 Consecutive slides of MWF and SHR kidney sections stained for TMEM63C and WT1 were evaluated to determine TMEM63C co-localization with podocytes. TMEM63C protein level in glomeruli was analyzed using ImageJ analysis.
 
-## FSGS patients
+### FSGS patients
 
 Renal biopsy samples of patients with FSGS (Table 4) were collected from the archive of the Department of Pathology of the Leiden University Medical Center (LUMC). Demographic data and laboratory data at time of biopsy were retrospectively retrieved from the patients’ medical records or pathology reports following the good practice guidelines of the LUMC. All biopsy samples were handled and analyzed anonymously in accordance with the Dutch National Ethics Guidelines (Code for Proper Secondary Use of Human Tissue, Dutch Federation of Medical Scientific Societies). This study is in agreement with the Declaration of Helsinki and the Department of Health and Human Services Belmont Report and the use of the patient biopsies was approved by the medical ethical committee of the LUMC (registration number G16.110). Samples obtained from Eurotransplant donors that were unsuited for transplantation because of technical problems, were used as healthy controls. All sections were scored separately by two observers for TMEM63C intensity as well as for percentage of glomeruli with loss of TMEM63C staining. Each case was given a score for TMEM63C staining intensity: high intensity in >50% of glomeruli, intermediate intensity in >50% of glomeruli, low intensity in >50% of glomeruli or no TMEM63C staining present in >50% of glomeruli. Secondly, sections were scored based on the percentage of glomeruli with loss of TMEM63C expression in podocytes. Per case, the percentage of glomeruli with 1) no loss 2) <25% loss 3) 25–50% loss or 4) >50% loss of TMEM63C expression in podocytes was determined. For nephrin staining analysis, each glomerulus was scored based on staining pattern (linear or granular) and loss of staining (no loss, segmental loss or global loss).
 
+**Table 4.**
+ Characteristics of focal segmental glomerulosclerosis patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Patient-specific features</th>
+      <th>Values‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of patients</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Age, years</td>
+      <td>36 ± 23</td>
+    </tr>
+    <tr>
+      <td>Sex, male</td>
+      <td>5 (55%)</td>
+    </tr>
+    <tr>
+      <td>SBP, mmHg*</td>
+      <td>167 ± 38</td>
+    </tr>
+    <tr>
+      <td>DBP, mmHg†</td>
+      <td>106 ± 25</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>7 (88%)</td>
+    </tr>
+    <tr>
+      <td>Proteinuria, g/day†</td>
+      <td>9.2 ± 4.4</td>
+    </tr>
+    <tr>
+      <td>Serum creatinine, µmol/l†</td>
+      <td>150 ± 43</td>
+    </tr>
+    <tr>
+      <td>eGFR, ml/min/1.73 m2*</td>
+      <td>51 (42–66)</td>
+    </tr>
+    <tr>
+      <td>Nephrotic syndrome</td>
+      <td>8 (89%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*n = 7; †n = 6; ‡ values are reported as number (%), mean ±SD or as median (interquartile range) for eGFR._
+
 All biopsy samples were handled and analyzed anonymously in accordance with the Dutch National Ethics Guidelines (Code for Proper Secondary Use of Human Tissue, Dutch Federation of Medical Scientific Societies) and in agreement with the Declaration of Helsinki and the Department of Health and Human Services Belmont Report. The use of the patient biopsies was approved by the medical ethical committee of the LUMC.
 
-## Cell lines
+### Cell lines
 
 Immortalized human podocytes (RRID:CVCL_W186, a kind gift from Professor Moin Saleem, MA, Academic and Children's Renal Unit, University of Bristol, Bristol, UK) (Saleem et al., 2002) were used as described (Eisenreich et al., 2016). The cell line has previously been authenticated (Saleem et al., 2002) and we have confirmed this by expression of podocyte specific markers such as podocin and synaptopodin as recently reported (Eisenreich et al., 2016). The cell line tested negative for mycoplasma contamination. Before transfection, human podocytes were starved with FBS-free RPMI 1640 medium overnight. Transfection of cells was performed using 200 nM of TMEM63C-specific siRNAs (siTMEM63C; Sigma-Aldrich Chemie GmbH) or non-sense control siRNAs (siControl; Sigma-Aldrich Chemie GmbH) as well as Lipofectamine 2000 (Life Technologies GmbH). The transfection efficacy of 25% in human podocytes was experimentally determined earlier (Eisenreich et al., 2016).
 
-## Western blotting
+### Western blotting
 
 Western blot analyses were done as described earlier (Eisenreich et al., 2016; Langer et al., 2016). For detection, specific antibodies against TMEM63C (Thermo Fisher Scientific), GAPDH (Calbiochem), protein kinase B (AKT; Merck Chemicals GmbH), and phospho-AKT (Ser473, pAKT; Merck Chemicals GmbH) were used. Quantification of Western blot analyses were done using Gel-Pro Analyzer software version 4.0.00.001 (Media Cybernetics).
 
-## Cytochrome C releasing apoptosis assay
+### Cytochrome C releasing apoptosis assay
 
 The cytochrome C releasing apoptosis assay kit (BioVision Inc) was used following the manufacturer’s protocol as described previously (Eisenreich et al., 2016). In brief, 1 × 104 cells per well were transfected for 48 hr with siTMEM63C or siControl, respectively. After that, cells were lysed and the cytosolic fraction was separated from the mitochondrial fraction. Comparative Western blot analyses of these fractions using a cytochrome C-specific antibody were performed to determine pro-apoptotic translocation of cytochrome C from mitochondria into cytosol.
 
-## Cell viability assay
+### Cell viability assay
 
 The calcein AM (acetoxymethyl) cell viability kit (Trevigen Inc) was used as earlier described following the manufacturer’s protocol (Eisenreich et al., 2016). In brief, 1 × 104 cells per well were transfected for 48 hr with siTMEM63C or siControl, respectively. Then, human podocytes were washed and incubated with calcein AM working solution for 30 min. Fluorescence was measured at 490 nm excitation and 520 nm emission.
 
-## Zebrafish animals
+### Zebrafish animals
 
 Zebrafish were bred, raised and maintained in accordance with the guidelines of the Max Delbrück Center for Molecular Medicine and the local authority for animal protection (Landesamt für Gesundheit und Soziales, Berlin, Germany) for the use of laboratory animals, and followed the ‘Principles of Laboratory Animal Care’ (NIH publication no. 86–23, revised 1985) as well as the current version of German Law on the Protection of Animals.
 
-## Zebrafish morpholino and single guide RNA (sgRNA) microinjections
+### Zebrafish morpholino and single guide RNA (sgRNA) microinjections
 
 Injection droplets of approximately 1 nl were injected into one-cell stage zygotes of the zebrafish wild type hybrid strain AB/Tülf and the transgenic lines Tg(fabp10a:gc-EGFP) (Zhou and Hildebrandt, 2012) and Tg(wt1b:GFP) (Bollig et al., 2009; Perner et al., 2007). Morpholinos (MO) of the following sequences were synthesized by Gene Tools LLC Philomath: tmem63c ATG-MO 5’-CAGGCCAGGACTCAAACGCCATTGC-3’, tmem63c ex2-sdMO 5'-TGTTATCATAGATGATGTACCAGCC-3', and standard control oligo (Control-MO) 5’-CCTCTTACCTCAGTTACAATTTATA-3’. Tmem63c ATG-MO was used at a final concentration of 0.3 mM (Figure 7B), tmem63c ex2-sdMO was used at a final concentration of 0.5 mM (Figure 7—figure supplement 1). sgRNA targeting exon 2 (Figure 7B) was generated as described (Bassett et al., 2013; Burger et al., 2016) using the ex2-sgRNA forward primer with CRISPR target site underlined: GAAATTAATACGACTCACTATAGGACGTCAGGAGTTTCCTGAGTTTTAGAGCTAGAAATAGC and the invariant reverse primer: AAAAGCACCGACTCGGTGCCACTTTTTCAAGTTGATAACGGACTAGCCTTATTTTAACTTGCTATTTCTAGCTCTAAAAC. PCR product was purified with GeneJET Gel Extraction Kit (Thermo Fisher Scientific, respectively). sgRNA was transcribed using the MEGAscript T7 Kit (Ambion) and extracted with RNeasy Mini Kit (Qiagen) according to the manufacturer’s protocol. sgRNA was diluted to a final concentration of 159.6 ng/μl or 250 ng/µl, respectively using water and 1 M KCl (final concentration: 300 mM) and co-injected with Cas9-Protein of 600 ng/μl final concentration as described (Burger et al., 2016; Gagnon et al., 2014). To determine the efficiency of sgRNA-mediated mutagenesis crispants alleles were analyzed as described (Figure 7—figure supplement 1D) (Burger et al., 2016). The following primers (BioTez Berlin-Buch GmbH) were used to amplify the genomic region flanking the CRISPR target site; forward: CAAATGGTGAACACTTGTGAATC, reverse: CTGCGGTTTACTGCGGAGATG. Computational sequence analysis was performed using CrispR Variants (Lindsay et al., 2016). For an injection control Cas9 was diluted to a final concentration of 600 ng/µl using water and 1 M KCl (final concentration: 300 mM; Cas9-Control).
 
-## Reverse transcriptase (RT)-PCR in zebrafish embryos
+### Reverse transcriptase (RT)-PCR in zebrafish embryos
 
 For efficiency analysis of the tmem63c ex2-sdMO a reverse transcriptase (RT)-PCR was carried out (Figure 7—figure supplement 1F). At 24 hpf, RNA from 50 pooled embryos was isolated using Trizol Reagent (Invitrogen); DNase I digestion was performed using the RNAse-free DNase set (Qiagen) and samples were purified using the RNeasy Mini Kit (Qiagen) according to the manufacturer’s protocol. After determination of RNA quality and quantity, equal amounts of mRNA for each group analyzed were transcribed to cDNA using First strand cDNA synthesis kit (Thermo Fisher) according to the manufacturer’s protocol.
 
 We amplified tmem63c from cDNA using DreamTaq DNA Polymerase (Thermo Fisher) with the following primers: forward: CTGATGGAGGAGAACAGCACGG, reverse: ATACAGCAGAGCGAAGATACTGTG. Eucaryotic elongation factor 1 alpha 1, like 1 (eef1a1l1) was used as a loading control and amplified using the following primers: forward: TGGAGACAGCAAGAACGACC, reverse: GAGGTTGGGAAGAACACGCC.
 
-## Cloning of tmem63c cDNA (Danio rerio)
+### Cloning of tmem63c cDNA (Danio rerio)
 
 Primers (BioTez Berlin-Buch GmbH) for the In-Fusion HD Cloning Kit (Takara) were designed using the web tool provided by TaKaRa (TaKaRa) (TaKaRa, 2018); forward: GCTTGATATCGAATTCATGGCGTTTGAGTCCTGGCCTGC, reverse: CGGGCTGCAGGAATTCTCACTGAAAAGCCACCGGACTG. tmem63c cDNA was amplified using Phusion High-Fidelity DNA polymerase (Thermo Fisher Scientific). The pBluescript II SK(+) vector was linearized using EcoRI FD enzyme. The tmem63c ORF was cloned into the pBluescript II SK (+) vector using the In-Fusion HD Cloning Kit (Takara). The tmem63c cDNA was sequence-verified using the common T7 forward and M13 reverse primers. For sequencing of the whole ORF, an additional primer was used, GTGCAGAAACTAATGAAGCTGG, located at 822–844 bp starting from the beginning of the ORF.
 
-## Rescue of CRISPR/Cas9-mediated tmem63c somatic mutants and tmem63c ex2-sdMO-mediated gene knockdown
+### Rescue of CRISPR/Cas9-mediated tmem63c somatic mutants and tmem63c ex2-sdMO-mediated gene knockdown
 
 For in vivo rescue experiments tmem63c cDNA (Danio rerio) was linearized using ApaI FD (Thermo Fisher Scientific) and purified using GeneJET Gel Extraction Kit (Thermo Fisher Scientific). In vitro transcription of capped RNA and following TurboDNase treatment were performed using mMessage mMachine T7 Kit (Ambion). For poly-A-tailing, the Poly(A)-tailing Kit (Ambion) was used, followed by RNA extraction using RNeasy Mini Kit (Qiagen). The mRNA was diluted to a concentration of 100 ng/μl and injected into one-cell stage zygotes. For in vivo rescue experiments, mRNA of a concentration of 100 ng/µl and ex2-sgRNA of a concentration of 159.6 ng/µl were subsequently injected into the same one-cell stage zygotes. For in vivo rescue of the tmem63c ex2-sdMO-mediated knockdown, mRNA with a concentration of 100 ng/µl and ex2-sdMO with a concentration of 0.5 mM were subsequently injected into the same zygote at one- or one-to-four cell stage, respectively.
 
-## Rescue of tmem63c ATG-MO-mediated gene knockdown
+### Rescue of tmem63c ATG-MO-mediated gene knockdown
 
 Tmem63c cDNA (Rattus norvegicus) was synthesized by Thermo Fisher Scientific using their GeneArt Gene synthesis service. For in vivo rescue experiments, Tmem63c cDNA was linearized using XbaI FD (Thermo Fisher Scientific) and purified using GeneJET Gel Extraction Kit (Thermo Fisher Scientific). In vitro transcription of capped RNA followed by TurboDNase treatment were performed using mMessage mMachine T7 Kit (Ambion). For poly-A-tailing, the Poly(A)-tailing Kit (Ambion) was used, followed by RNA extraction by RNeasy Mini Kit (Qiagen). The mRNA was diluted to a concentration of 100 ng/μl and injected into one-cell stage zygotes. For in vivo rescue of the tmem63c ATG-MO-mediated knockdown, mRNA with a concentration of 100 ng/µl and ATG-MO with a concentration of 0.3 mM were subsequently injected into the same zygote at one- or one to four cell-stage, respectively.
 
-## Functional assessment of the GFB
+### Functional assessment of the GFB
 
 To assess the functionality of the GFB, the gc-EGFP fluorescence in the trunk vasculature of Tg(fabp10a:gc-EGFP) embryos were evaluated at 120 hpf by epifluorescence microscopy. For CRISPR-Cas9-mediated somatogenesis of tmem63c the above described sgRNA was used in a concentration of 159.6 ng/µl. Each embryo was visually assigned to the ‘fluorescent group’, ‘deficient-fluorescent group’, or ‘crippled/dead’ and their number quantified. Due to the heterogeneous genotype of the used transgenic Tg(fabp10a:gc-EGFP) zebrafish families, the ‘deficient-fluorescent group’ included the embryos with reduced fluorescence in the trunk as well as embryos that did not carry the transgene (Figure 7—figure supplement 1A–C). The percentage of injected embryos was normalized to the percentage of the control group for each category. Quantifications were performed for at least three individual injections.
 
-## Electron microscopy in zebrafish embryos
+### Electron microscopy in zebrafish embryos
 
 Tg(fabp10a:gc-EGFP) embryos at 120 hpf were fixed in 4% formaldehyde/0.5% glutaraldehyde (EM-grade) in 0.1 M phosphate buffer for 2 hr at RT. For knockdown analysis embryos were injected with tmem63c ex2-sgRNA of a concentration of 250 ng/µl to enhance the observed phenotype (Figure 7E,F). Prior to analysis embryos were sorted for a clear knockdown phenotype. Samples were stained with 1% OsO4 for 2 hr, dehydrated in a graded ethanol series and propylene oxide and embedded in Poly/BedR 812 (Polysciences, Eppelheim, Germany). Ultrathin sections were contrasted with uranyl acetate and lead citrate. Sections were examined with a FEI Morgagni electron microscope and a Morada CCD camera (EMSIS GmbH, Münster, Germany). Image acquisition and quantification of podocyte foot process width and number of slit diaphragms per µm GBM was performed with the iTEM software (EMSIS GmbH, Münster, Germany).
 
-## Confocal microscopy of zebrafish embryos and quantification of podocyte cell number and glomerular volume
+### Confocal microscopy of zebrafish embryos and quantification of podocyte cell number and glomerular volume
 
 Tg(wt1b:EGFP) embryos at 96 hpf were fixed in PEM buffer containing 4% formaldehyde and 0.1% Triton-X 100 for 2 hr at RT or overnight at 4°C. For knockdown analysis embryos were injected with tmem63c ex2-sgRNA with a concentration of 250 ng/µl to enhance the observed phenotype. Nuclei were stained using 4′,6-Diamidin-2-phenylindol (DAPI, Sigma Aldrich, stock solution 1 mg/ml diluted 1:2000 in PBS) overnight at 4°C. After removal of the yolk and mounting in 0,7% low-melting agarose, the kidneys of whole-mount fixed embryos were imaged using a Zeiss LSM 710 or LSM 700 microscope with a LD C-Apochromat 40 x NA1.1 water objective and ZEN 2.1 software by sequentially acquiring confocal z-stacks of the GFP (488 nm laser, emission 495–550 nm) and the DAPI signal (405 nm laser, emission 420–480 nm) with a pixel size of 102.4 nm. Care was taken to apply identical settings to all samples and not to oversaturate pixels.
 
 Quantification of podocyte cell number and glomerular volume was done using Imaris version 9.21 software (RRID:SCR_007370, Bitplane AG, Zurich, Switzerland). A 3D surface covering the total glomerular volume was manually edited by tracing the outlines of EGFP-positive cells for every second section of the z-stack. EGFP-positive cells of the glomerulus were included, while cells of the pronephric ducts were excluded. For quantification of podocyte cell number, the DAPI channel was masked with the EGFP channel using Fiji software (RRID:SCR_002285) (Schindelin et al., 2012) to include DAPI+/EGFP+ cells only, thus representing nuclei of podocyte cells. Subsequently, a spot segmentation of the DAPI channel was performed. Estimated spot diameter was 4 µm. Spots were filtered for a minimum intensity of the EGFP channel and by using the Imaris quality filter for the occurrence of unspecific spots not matching the EGFP signal. Spots located outside the glomerular surface were manually deleted.
 
-## Statistics
+### Statistics
 
 Data are presented as mean ±SD for normally distributed data or median (25% percentile – 75% percentile, that is interquartile range [IQR]) for non-normally distributed data with the indicated number of experiments. Normal distribution was determined using the Shapiro-Wilk test. For identification of outliers, Grubbs’ outliers test (α = 0.05) was performed. Where appropriate, sample size calculations were performed by the power analyses program G*Power according to Cohen (Cohen, 1988; Faul et al., 2009). Differences between experimental rat and zebrafish groups were analyzed using One-way ANOVA with post-hoc Bonferroni’s multiple comparisons test and non-parametric Mann-Whitney-U or Kruskall-Wallis test with Dunn’s multiple comparisons post-hoc test, when appropriate. For the analysis shown in Figure 7L and Figure 7—figure supplement 1I Gaussian distribution was assumed due to the number of embryos categorized. Differences between FSGS patients and controls were analyzed using the Linear-by-Linear association test and the Mann-Whitney U test. Differences in human cultured podocytes were analyzed using two-tailed Student’s t-test. Statistical analysis was performed using SPSS and GraphPad Prism 6 software 6.00 (RRID:SCR_002798, GraphPad Software, La Jolla, CA). p values < 0.05 were considered as statistically significant.
 
-## Data availability
+### Data availability
 
 The genomic and transcriptomic data from this publication have been deposited to the NCBI (https://www.ncbi.nlm.nih.gov/) curated repositories, GEO, and SRA, and assigned the identifier SubmissionID: SUB2950675 and BioProject ID: PRJNA398197 (DNA-Seq) and accession GSE102546 (RNA-Seq).

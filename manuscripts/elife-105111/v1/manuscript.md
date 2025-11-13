@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Cardiovascular Research Institute, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Graduate Group in Biophysics, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States
+1. Cardiovascular Research Institute, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Graduate Group in Biophysics, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Department of Pharmaceutical Chemistry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-Biological membranes are complex and dynamic structures with different populations of lipids in their inner and outer leaflets. The Ca 2+ -activated TMEM16 family of membrane proteins plays an important role in collapsing this asymmetric lipid distribution by spontaneously and bidirectionally scrambling phospholipids between the two leaflets, which can initiate signaling and alter the physical properties of the membrane. While evidence shows that lipid scrambling can occur via an open hydrophilic pathway (groove) that spans the membrane, it remains unclear if all family members facilitate lipid movement in this manner. Here, we present a comprehensive computational study of lipid scrambling by all TMEM16 members with experimentally solved structures. We performed coarse-grained molecular dynamics (MD) simulations of 27 structures from five different family members solved under activating and non-activating conditions, and we captured over 700 scrambling events in aggregate. This enabled us to directly compare scrambling rates, mechanisms, and protein–lipid interactions for fungal and mammalian TMEM16s, in both open (Ca 2+ -bound) and closed (Ca 2+ -free) conformations with statistical rigor. We show that all TMEM16 structures thin the membrane and that the majority of scrambling (>90%) occurs at the groove only when TM4 and TM6 have sufficiently separated. Surprisingly, we also observed 60 scrambling events that occurred outside the canonical groove, over 90% of which took place at the dimer–dimer interface in mammalian TMEM16s. This new site suggests an alternative mechanism for lipid scrambling in the absence of an open groove.
+Biological membranes are complex and dynamic structures with different populations of lipids in their inner and outer leaflets. The Ca2+-activated TMEM16 family of membrane proteins plays an important role in collapsing this asymmetric lipid distribution by spontaneously and bidirectionally scrambling phospholipids between the two leaflets, which can initiate signaling and alter the physical properties of the membrane. While evidence shows that lipid scrambling can occur via an open hydrophilic pathway (groove) that spans the membrane, it remains unclear if all family members facilitate lipid movement in this manner. Here, we present a comprehensive computational study of lipid scrambling by all TMEM16 members with experimentally solved structures. We performed coarse-grained molecular dynamics (MD) simulations of 27 structures from five different family members solved under activating and non-activating conditions, and we captured over 700 scrambling events in aggregate. This enabled us to directly compare scrambling rates, mechanisms, and protein–lipid interactions for fungal and mammalian TMEM16s, in both open (Ca2+-bound) and closed (Ca2+-free) conformations with statistical rigor. We show that all TMEM16 structures thin the membrane and that the majority of scrambling (>90%) occurs at the groove only when TM4 and TM6 have sufficiently separated. Surprisingly, we also observed 60 scrambling events that occurred outside the canonical groove, over 90% of which took place at the dimer–dimer interface in mammalian TMEM16s. This new site suggests an alternative mechanism for lipid scrambling in the absence of an open groove.
 
 ## Introduction
 
@@ -33,17 +33,53 @@ To address these outstanding questions, we employed CGMD simulation to systemati
 
 ## Results
 
-## Lipid densities from coarse-grained simulations match all-atom simulations and cryo-EM nanodiscs
+### Lipid densities from coarse-grained simulations match all-atom simulations and cryo-EM nanodiscs
 
 We simulated Ca2+-bound and -free (apo) structures of TMEM16 proteins in a 1,2-dioleoyl-sn-glycero-3-phosphatidylcholine (DOPC) bilayer for 10 μs each using the Martini 3 force field. First, we determined how well the simulated membrane distortions matched experiment by comparing the annulus of lipids surrounding each protein to the lipid densities derived from structures solved in nanodiscs (Figure 1—figure supplement 1). The shapes of the membrane near the protein qualitatively match the experimental densities and the shapes produced from AAMD simulations and continuum membrane models (Bethel and Grabe, 2016; Falzone et al., 2022; Kalienkova et al., 2019). For example, the CG simulations capture the sinusoidal curve around both fungal scramblases in apo and Ca2+-bound states (Figure 1—figure supplement 1) previously determined by atomistic simulations (Bethel and Grabe, 2016) of Ca2+-bound nhTMEM16 (Figure 1A, B). Even though membrane deformation is a general feature of TMEM16s, the shapes between fungal and mammalian members are noticeably different. Specifically, the membrane is flatter around TMEM16K and TMEM16F compared to the fungal members in both the nanodisc density and CGMD (Figure 1—figure supplement 1). For WT TMEM16s, whether the groove is open (Figure 1B, insets) or closed (Figure 1—figure supplement 2), strong lipid density exists near the extracellular groove entrances at TM1 and TM8. Interestingly, this density is lost in the simulation of the Ca2+-bound constitutively active TMEM16F F518H mutant (PDB ID 8B8J), consistent with what is seen in the cryo-EM structure solved in nanodisc (Figure 1—figure supplement 1). The lipid density is present, however, at this location for the simulated open Ca2+-bound WT TMEM16F (6QP6*, initiated from PDB ID 6QP6) and closed Ca2+-bound WT TMEM16F (PDB ID 6QP6) (Figure 1C). The loss of density indicates that the normal membrane contact with the protein near the TMEM16F groove has been compromised in the mutant structure. Residues in this site on nhTMEM16 and TMEM16F also seem to play a role in scrambling, but the mechanism by which they do so is unclear (Falzone et al., 2022; Feng et al., 2024a; Feng et al., 2023).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig1-v1.jpg)
+
+**Figure 1.:** (A) Snapshot and POPC headgroup density (right) from atomistic simulations of Ca2+-bound nhTMEM16 (PDB ID 4WIS) previously published in Bethel and Grabe, 2016. Only the lipid headgroup choline (blue) and phosphate (red) beads are shown for clarity. Density (brown isosurface) is averaged from both subunits across eight independent simulations totaling ~2 μs. Two yellow circles indicate the Ca2+-binding sites. (B) Snapshots from CG simulations of open Ca2+-bound nhTMEM16 (PDB ID 4WIS, green), afTMEM16 (PDB ID 7RXG, violet), TMEM16K (PDB ID 5OC9, orange), TMEM16F F518H (PDB ID 8B8J, blue), TMEM16K (orange), and TMEM16A (red). (C) Snapshots with lipid headgroup densities near simulated open (6QP6*) and closed (PDB ID 6QP6) TMEM16F. (D) Snapshot of simulated ion-conductive TMEM16A (5OYB*). For each CG snapshot, again only the lipid headgroup choline (blue) and phosphate (red) beads are shown for clarity. Each density (brown isosurface) is averaged over both chains except TMEM16K and TMEM16A where only a single chain is used due to the structure’s asymmetry.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Front and side views of cryo-EM maps (left) and ensemble-averaged conformations from CGMD simulations (right). nhTMEM16: cryo-EM images (PDB IDs 6QM9 and 6QM4) were adapted from 2019, Kalienkova et al. published by eLife (Kalienkova et al., 2019). The CGMD structures are PDB IDs 4WIS (with Ca2+) and 6QM4 (without Ca2+). afTMEM16: cryo-EM image (PDB ID 7RXG) was adapted from 2022, Falzone et al. published by Springer Nature (Falzone et al., 2022). The CGMD structures are PDB IDs 7RXG (with Ca2+) and 7RXB (without Ca2+). TMEM16K: cryo-EM images (PDB ID 5OC9) were adapted from 2019, Bushell et al. published by Springer Nature (Bushell et al., 2019). The CGMD structures are PDB IDs 5OC9 (with Ca2+) and 6R7X (without Ca2+). TMEM16F: cryo-EM images (PDB IDs 6QPC and 8B8J) were adapted from 2022, Arndt et al. published by Springer Nature (Arndt et al., 2022). The CGMD structures are also PDB IDs 6QPC (wild-type [WT] with Ca2+) and 8B8J (F518H with Ca2+). Black arrows indicate a dip in lipid density near the groove entrance. CGMD images show the average glycerol and headgroup densities in solid and the tail densities in transparent coloring that matches the colors used in the original cryo-EM images.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Snapshots from coarse-grained molecular dynamics (CGMD) simulations of nhTMEM16 (PDB IDs 6QM4 (closed) and 4WIS (open), green), afTMEM16 (PDB IDs 7RXB (closed) and 7RXG (open), violet), TMEM16K (PDB IDs 6R7X (closed) and 5OC9 (open), gold), and TMEM16F (PDB IDs 6QPB (closed) and 6QP6* (open), blue) with phosphatidylcholine (PC) lipid headgroup density (yellow) and nearby lipids (yellow). Residues forming the closest distance between TM4 and TM6 (colored by residue type: basic (red), acidic (blue), and polar (green)) and lipids near the groove are also shown. Each density is averaged over both chains.
 
 Headgroup density isosurfaces from CGMD simulations of known scramblases bound to Ca2+ and with clear separation of TM4 and TM6 show that lipid headgroups occupy the full length of the groove creating a clear pathway that links the upper and lower membrane leaflets (nhTMEM16 (PDB ID 4WIS), afTMEM16 (PDB ID 7RXG), TMEM16K (PDB ID 5OC9) and TMEM16F F518H (PDB ID 8B8J), Figure 1B). These simulation-derived densities crossing the bilayer are strikingly similar to lipids resolved in cryo-EM structures of fungal scramblases in nanodisc (Falzone et al., 2022; Feng et al., 2024a). Individual simulation snapshots provide insight into how lipids traverse this pathway. Open-groove structures typically have an average of 2–3 lipids in the TM4/TM6 groove at any given time (see Figure 1—source data 1). Additional analysis shows that all of the grooves are filled with water (Appendix 1—figure 2). These profiles share additional features including a clear upward deflection of the membrane as it approaches TM3/TM4 from the left and a downward deflection as it approaches TM6/TM8 from the right; however, the degree of this deflection is not equal, as can be seen for TMEM16K, which is less pronounced (Figure 1B). These distortions are coupled to the sinusoidal curve around the entire protein, which was shown to thin the membrane across the groove and hypothesized to aid in scrambling (Bethel and Grabe, 2016).
 
 Unlike the open Ca2+-bound scramblase structures, apo and closed Ca2+-bound TMEM16 structures lack lipid headgroup density spanning the bilayer, and their density profiles are more consistent across the entire family (Figure 1—figure supplement 2). The membrane is deformed near the groove with some lower leaflet lipid density entering part of the groove and some of the upper leaflet density deflecting inward around TM1, TM6, and TM8 but not entering the closed outer portion of the groove. Again, the membrane around TMEM16F and TMEM16K is flatter than it is in the fungal scramblases. Similarly, simulation of a Ca2+-bound TMEM16A conformation that conducts Cl− in AAMD (7ZK3*6, initiated from PDB ID 7ZK3, see Appendix 1—Methods and Appendix 1—figure 1) samples partial lipid headgroup penetration into the extracellular vestibule formed by TM3/TM6, but lipids fail to traverse the bilayer as indicated by the lack of density in the center of the membrane (Figure 1B). This finding is consistent with TMEM16A lacking scramblase activity (Han et al., 2019; Gyobu et al., 2017); however, we simulated another ion-conductive TMEM16A conformation that can achieve a fully lipid-lined groove during its simulation (Figure 1D), although this configuration was uncommon (Figure 1—source data 1).
 
-## Simulations recapitulate scrambling competence of open and closed structures
+### Simulations recapitulate scrambling competence of open and closed structures
 
 To quantify the scrambling competence of each simulated TMEM16 structure, we determined the number of events in which lipids transitioned from one leaflet to the other (see Methods, Figure 2—figure supplement 1). The scrambling rates calculated from our MD trajectories are in excellent agreement with the presumed scrambling competence of each experimental structure (Figure 2A). The strongest scrambler was the open-groove, Ca2+-bound fungal nhTMEM16 (PDB ID 4WIS), with 24.4 ± 5.2 events per μs (Figure 2—figure supplement 2A). In line with experimental findings, the open Ca2+-free structure (PDB ID 6QM6), which is structurally very similar to PDB ID 4WIS, also scrambled lipids (15.7 ± 3.9 events per μs, Figure 2—figure supplement 2B; Kalienkova et al., 2019). In contrast, we observed no scrambling events for the intermediate- (PDB ID 6QMA) and closed- (PDB ID 6QM4, PDB ID 6QMB) groove nhTMEM16 structures. We observed a similar trend for the fungal afTMEM16, where our simulations identified the open Ca2+-bound cryo-EM structure (PDB ID 7RXG) as scrambling competent (10.7 ± 2.9 events per μs, Figure 2—figure supplement 2C) while the Ca2+-free closed-groove structure (PDB ID 7RXB) was not.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-v1.jpg)
+
+**Figure 2.:** (A) Accumulated scrambling events during coarse-grained molecular dynamics (CGMD) simulations of experimental and simulated (sim) structures of nhTMEM16 (green), afTMEM16 (violet), TMEM16K (gold), TMEM16F (blue), and TMEM16A (red). Inset values are the average rate and its standard deviation. Plots corresponding to structures described as ‘open’ in their original publications (PDB IDs 4WIS [Brunner et al., 2014], 6QM6 [Kalienkova et al., 2019], 7RXG [Falzone et al., 2022], 5OC9 [Bushell et al., 2019], 8B8J [Arndt et al., 2022], and 6QP6* [Khelashvili et al., 2022]) are shaded. (B) Snapshots of the open nhTMEM16 simulation (PDB ID 4WIS) showing a single scrambling event over time. The tail (yellow) of the scrambling lipid is explicitly shown, while all other lipids only show the phosphate (red)/choline (blue) headgroup.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) For every time frame, for every lipid in the system, we defined a vector between the choline bead (NC3) and the two tail beads (C4A, C4B; dashed arrows) and calculated the angle θ between the average of those two vectors (solid arrow) with the z-axis. (B) A schematic representation of a typical time trace for a lipid that scrambles from the upper membrane leaflet (θ ≈ 150°) to the lower membrane leaflet (θ ≈ 30°). A scrambling event is only counted when θ passes the threshold at the opposite leaflet with respect to its original location (35° for the lower, 145° for the upper).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Lipid traces for Ca2+-bound open nhTMEM16 (PDB ID 4WIS). (B) Lipid traces for Ca2+-bound open nhTMEM16 (PDB ID 6QM6). (C) Lipid traces for Ca2+-bound open afTMEM16 (PDB ID 7RXG). Lipid traces are generated by fitting raw lipid headgroup center of mass positions to a smooth spline curve.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Lipid traces for Ca2+-bound open TMEM16K (PDB ID 5OC9). (B) Cartoon representation of aligned subunits of Ca2+-bound TMEM16K (PDB ID 5OC9). Lipid traces are generated by fitting raw lipid headgroup center of mass positions to a smooth spline curve.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Lipid traces for Ca2+ -bound open TMEM16F F518H mutant (PDB ID 8B8J). (B) Lipid traces for Ca2+ -bound simulated open TMEM16F (6QP6*). (C) Cartoon representation of aligned subunits of Ca2+-bound simulated open TMEM16F (6QP6*). (D) Lipid traces for Ca2+ -bound simulated closed TMEM16F (PDB ID 8TAG). Lipid traces are generated by fitting raw lipid headgroup center of mass positions to a smooth spline curve.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Lipid traces for Ca2+-bound simulated conductive TMEM16A (5OYB*). (B) Lipid traces for Ca2+-bound simulated open TMEM16A (7ZK3*6). (C) Lipid traces for Ca2+-bound simulated open TMEM16A (7ZK3*10). (D) Lipid traces for Ca2+-bound simulated open TMEM16A (7ZK3*8). (E) Snapshots from simulation of 5OYB* during lipid scrambling event (trace in A). Lipid traces are generated by fitting raw lipid headgroup center of mass positions to a smooth spline curve.
 
 For TMEM16K, our simulations showed that the Ca2+-bound X-ray structure (PDB ID 5OC9) facilitates scrambling (8.2 ± 2.9 events per μs) in line with experiments in the presence of Ca2+, when the groove is presumably open, and previous MD simulations (Bushell et al., 2019). Interestingly, we found a stark asymmetry in the number of scrambling events between the two monomers, with >80% of events happening via chain B (Figure 2—figure supplement 3A). Although both monomers are Ca2+-bound, chain B has a slightly wider endoplasmic reticulum (ER) lumen-facing entrance to the groove in the experimental starting structure (PDB ID 5OC9, Figure 2—figure supplement 3B) and spontaneously opened its groove more than subunit A during the simulation (8.2 ± 1.3 Å compared to 5.8 ± 0.6 Å on average, Figure 3—figure supplement 6A), which likely accounts for the increased rate. The closed-groove TMEM16K conformation (PDB ID 6R7X) showed very little scrambling activity (0.4 ± 0.7 events per μs).
 
@@ -51,9 +87,200 @@ Although TMEM16F is a known lipid scramblase found in the plasma membrane of pla
 
 Finally, we simulated six structures of mouse TMEM16A, which functions as an ion channel but lacks lipid scrambling activity (Paulino et al., 2017). As expected, both the Ca2+-bound (PDB ID 5OYB) and the Ca2+-free (PDB ID 5OYG) experimental structures failed to induce scrambling in the CGMD simulations, as did one alternative and two ion conduction-competent structures that were obtained from AAMD (see Appendix 1—Methods for details). However, a TMEM16A state with an open hydrophilic groove predicted by Jia and Chen (5OYB*, simulations initiated from PDB ID 5OYB; Jia and Chen, 2021) did scramble a single lipid through each groove in a manner nearly identical to the scramblases (Figure 2—figure supplement 5A, E and Figure 3—video 4).
 
-## Groove dilation is the main determinant for scrambling activity
+### Groove dilation is the main determinant for scrambling activity
 
 The relative impact of membrane thinning versus TM4/TM6 groove opening on the lipid scrambling rate has long been debated in the TMEM16 field. One of the primary open questions is whether membrane thinning is sufficient for scrambling when the groove is closed (Feng et al., 2024b). In our CGMD simulations, 92% of the observed scrambling events occur along TM4 and TM6 with headgroups embedded in the open hydrated groove, in line with the credit card model, which we refer to as ‘in-the-groove’ scrambling (Table 1). To visualize how groove openness and membrane thinning relate to these events, we plotted the minimum distance between residues on TM4 and TM6 against the minimal thickness near the groove in our average membrane surfaces (see Methods for details) and colored each data point by scrambling rate in the groove (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-v1.jpg)
+
+**Figure 3.:** (A) The minimal membrane thickness at the groove plotted against the median width of the groove measured based on the minimal distance between any two residues on TM4 and TM6 of the groove with the most scrambling events. The lower and upper error bars represent the 25% (Q1) and 75% (Q3) quartiles, respectively. Each data point is colored by the scrambling rate through that same groove. Dashed lines define minimal TM4–TM6 distance and membrane thickness requirements for robust scrambling (shaded gray quadrant). (B) Simulation time traces of the TM4–TM6 minimal distance at the most scrambling-competent groove of 4WIS, 5OC9, 8B8J, and 5OYB* (top to bottom). The dashed line indicates the 6 Å threshold we defined for scrambling-competent groove opening. Black dots indicate time points at which a scrambling event is completed. The solid curve is a recursively exponentially weighted moving average with a smoothing factor 0.1, while the transparent curve is the raw distance values. (C) Density isosurfaces for 1,2-dioleoyl-sn-glycero-3-phosphatidylcholine (DOPC) headgroup beads (yellow) and average membrane surface calculated from the glycerol beads (blue) for representative nhTMEM16, TMEM16K, TMEM16F, TMEM16A, and afTMEM16 simulations. Panels are ordered left to right by decreasing scrambling rate. Cartoon beads and arrows in each image indicate the closest points between the inner and outer leaflet of the average surface.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Left column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Middle column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Right column: the sum of the upper and lower leaflet deformations, representing the bilayer thickness along z. In all plots, gray areas indicate grid points with lipid occupancy <2%. The black outline is the projected surface of the upper (z > 0) or lower (z < 0) portion of the protein dimer.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Left column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Middle column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Right column: the sum of the upper and lower leaflet deformations, representing the bilayer thickness along z. In all plots, gray areas indicate grid points with lipid occupancy <2%. The black outline is the projected surface of the upper (z > 0) or lower (z < 0) portion of the protein dimer.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Left column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Middle column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Right column: the sum of the upper and lower leaflet deformations, representing the bilayer thickness along z. In all plots, gray areas indicate grid points with lipid occupancy <2%. The black outline is the projected surface of the upper (z > 0) or lower (z < 0) portion of the protein dimer.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Left column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Middle column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Right column: the sum of the upper and lower leaflet deformations, representing the bilayer thickness along z. In all plots, gray areas indicate grid points with lipid occupancy <2%. The black outline is the projected surface of the upper (z > 0) or lower (z < 0) portion of the protein dimer.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Left column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Middle column: xy-map of the distance along the z-axis from the bilayer midplane to the ensemble averaged positions of the glycerol linker (GL1 and GL2 beads). Right column: the sum of the upper and lower leaflet deformations, representing the bilayer thickness along z. In all plots, gray areas indicate grid points with lipid occupancy <2%. The black outline is the projected surface of the upper (z > 0) or lower (z < 0) portion of the protein dimer.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Overlayed CG representations of experimentally determined or simulated starting structures (gray) and snapshots from CG simulations. nhTMEM16 4WIS (green), afTMEM16 7RXG (violet), TMEM16K 5OC9 (orange), TMEM16F 8B8J (blue), and TMEM16A 5OYB* (red) with minimum TM4–TM6 distances for the starting CG structure (gray) and mean values with standard deviation from simulations. (B) Violin plots of minimum distances between TM4 and TM6 in a single groove with median value (cyan square) and 25–75% quartiles (cyan bars). (C) TMEM16F TM4/TM6 groove constriction point at residues F518H (on TM4) and W619 (on TM6). (D) TMEM16K TM4/TM6 groove constriction point at Y366 (on TM4).
+
+**Table 1.**
+ Number of scrambling events in and out of the canonical groove pathway.Scrambling events where the lipid headgroup transitions between leaflets within 4.7 Å of the 1,2-dioleoyl-sn-glycero-3-phosphatidylcholine (DOPC) maximum density pathway. All other events were considered ‘out-of-the-groove’. For the full list of simulations and scrambling rates, see Source data 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Homolog</th>
+      <th>PDB code</th>
+      <th># of in-the-groove events</th>
+      <th># of out-of-the-groove events</th>
+      <th>Total</th>
+      <th>Average scrambling rate (μs−1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>nhTMEM16</td>
+      <td>4WIS</td>
+      <td>219</td>
+      <td>1</td>
+      <td>220</td>
+      <td>24.4 ± 5.2</td>
+    </tr>
+    <tr>
+      <td>nhTMEM16</td>
+      <td>6QM6</td>
+      <td>141</td>
+      <td>0</td>
+      <td>141</td>
+      <td>15.7 ± 3.9</td>
+    </tr>
+    <tr>
+      <td>afTMEM16</td>
+      <td>7RXG</td>
+      <td>96</td>
+      <td>0</td>
+      <td>96</td>
+      <td>10.7 ± 2.9</td>
+    </tr>
+    <tr>
+      <td>TMEM16K</td>
+      <td>5OC9</td>
+      <td>66</td>
+      <td>8</td>
+      <td>74</td>
+      <td>8.2 ± 2.9</td>
+    </tr>
+    <tr>
+      <td>TMEM16K</td>
+      <td>6R7X</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.4 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>TMEM16F F518H</td>
+      <td>8B8J</td>
+      <td>98</td>
+      <td>4</td>
+      <td>102</td>
+      <td>11.3 ± 4.1</td>
+    </tr>
+    <tr>
+      <td>TMEM16F</td>
+      <td>6QP6*</td>
+      <td>24</td>
+      <td>3</td>
+      <td>27</td>
+      <td>3.0 ± 1.6</td>
+    </tr>
+    <tr>
+      <td>TMEM16F T137Y</td>
+      <td>8TAG</td>
+      <td>0</td>
+      <td>9</td>
+      <td>9</td>
+      <td>1.0 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>TMEM16F</td>
+      <td>6P47</td>
+      <td>1</td>
+      <td>3</td>
+      <td>4</td>
+      <td>0.4 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>TMEM16F</td>
+      <td>6P48</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.4 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>TMEM16F F518H/Q623A</td>
+      <td>8BC0</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.4 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>TMEM16F F518H</td>
+      <td>8B8Q</td>
+      <td>0</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0.4 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>TMEM16F F518H</td>
+      <td>8B8G</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.2 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>TMEM16F</td>
+      <td>6QPB</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0.3 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>TMEM16A</td>
+      <td>7ZK3*6</td>
+      <td>0</td>
+      <td>11</td>
+      <td>11</td>
+      <td>1.2±1.6</td>
+    </tr>
+    <tr>
+      <td>TMEM16A</td>
+      <td>5OYB*</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.2 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>TMEM16A</td>
+      <td>7ZK3*10</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>TMEM16A</td>
+      <td>7ZK3*8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.1 ± 0.3</td>
+    </tr>
+  </tbody>
+</table>
 
 Interestingly, all the TMEM16 structures included in this study thin the membrane to 23 Å or less, which is at least 7 Å thinner than the bulk membrane thickness (30 Å), regardless of scrambling activity (Figure 3A; Figure 3—figure supplements 1–5). We observed negligible scrambling activity (0–1 events in the groove) in grooves that fail to thin the membrane to less than 14 Å and at the same time do not or very rarely sample TM4-TM6 distances above 6 Å (Figure 3A, upper left quadrant). On the other hand, all active scramblers have a minimal bilayer thickness below 14 Å. Among these structures, we observed the highest scrambling rates in grooves that remain open, with TM4–TM6 distances above 6 Å, throughout most of the simulation (shaded region). To the left of this shaded area, there are two TMEM16F structures (PDB ID 8B8J and 6QP6*) that spent less than half of their simulation time in an open configuration (note large error bars and Figure 3B) and had scrambling rates similar to (PDB ID 8B8J) or less than half of (6QP6*) rates for the open scramblases (PDB IDs 6QM6, 7RXG, and 5OC9). Although these results indicate that scrambling rates are generally higher with thinner membranes and wider grooves, we want to clarify that lipids flowing into the upper and lower vestibules of the dilated grooves heavily contribute to the observed <14 Å membrane thickness (Figure 3C). Therefore, we argue that the extremely thin membranes are likely correlated with groove opening, rather than being an independent contributing factor to lipid scrambling. Thus, the major determinant of lipid scrambling by TMEM16s is dilation of the TM4/TM6 groove.
 
@@ -63,7 +290,7 @@ Although all structures of TMEM16A, which is not a scramblase, have negligible s
 
 Despite these individual differences in groove dynamics, scrambling occurs in an identical manner across the family. Scrambling lipids move through the TM4/TM6 groove quickly, with dwell times for individual lipids below 20 ns. However, we observed longer dwell times for TMEM16K and TMEM16F at the groove constriction points, whereas in other scramblases, the dwell times are more evenly distributed along the groove (Figure 4—figure supplements 3 and 4). Among the scramblases, the free energy profile for lipids moving through the open groove is barrierless (<1 kT) (Appendix 1—figure 3A) with similar kinetics among the homologs and a mean diffusion coefficient between 10 and 16 Å2/ns (Appendix 1—figure 4). Scrambling events also enter and leave the groove at random locations (Figure 2—figure supplements 2–5) with only 3–10% of events passing through the high-density lipid regions on lower TM4 and upper TM6/TM8 (Figure 1B; Figure 4—figure supplement 2). We previously identified four residues (E313, R432, K353, and E352) at the intracellular and extracellular entrances of the nhTMEM16 groove that we hypothesized help organize or stabilize scrambling lipids (Bethel and Grabe, 2016; Figure 3—figure supplement 1A, B). However, our CGMD of the same nhTMEM16 structure shows that although these residues have elevated contact frequencies, more than half of the contacts are made with bulk lipids that never scramble (Figure 4—figure supplement 1C, D). Lastly, the in-the-groove scrambling events were Poisson distributed for all open and transiently open scramblases (Appendix 1—figure 5), indicating lipids do not scramble in a regular or kinetically coordinated fashion.
 
-## Water and ion content in the groove
+### Water and ion content in the groove
 
 To quantify how hydration of the groove or pore relates to scrambling, we measured the number of water permeation events along the pathway of maximum water density at the grooves (Appendix 1—figure 2A; all values in Source data 1; see Appendix 1—Methods for details). As expected, permeation through the closed scramblase structures was low, <30 events per μs on average, while dilated TM4/TM6 grooves (five out of six Ca2+-bound) support 300–550 permeation events per μs on average. Nonetheless, even when the groove is inaccessible to lipids in closed and intermediate states, including the TMEM16A ion channel path, it remains hydrated with the waters shielded from the hydrophobic core of the membrane (Appendix 1—figure 2A, closed). We qualitatively observed that in open grooves, the water is exposed to the membrane core and lipid headgroups occupy the fully hydrated groove to bridge the leaflets (Appendix 1—figure 2A, open) as seen in fully atomistic simulations (Bushell et al., 2019; Stansfeld et al., 2015; Bethel and Grabe, 2016; Jiang et al., 2017; Khelashvili et al., 2019; Lee et al., 2018; Cheng et al., 2022; Kostritskii and Machtens, 2021; Le et al., 2019b; Khelashvili et al., 2022; Jia et al., 2022).
 
@@ -71,9 +298,41 @@ We also observed spontaneous permeation of Na+ and Cl− ions through the scramb
 
 Finally, TMEM16A (7ZK3*8) had four Cl− and no Na+ permeation events, consistent with its experimentally measured anion selectivity (PNa/PCl = 0.1; Peters et al., 2018). Interestingly, we did not observe Cl− permeation in any of the other computationally predicted TMEM16A structures (5OYB*, 7ZK3*8, and 7ZK3*10), while AAMD simulations of these structures all reported Cl− conduction (Jia and Chen, 2021).
 
-## Scrambling also occurs out-of-the-groove
+### Scrambling also occurs out-of-the-groove
 
 A minority of our observed scrambling events (8%) occurred outside of the hydrophilic groove between TM4 and TM6. Surprisingly, most of these events happened at the dimer interface with lipids inserting their headgroups into the cavity outlined by TM3 and TM10 (Figure 4A, B; Figure 2—figure supplements 2–5). We only observed scrambling at this location in simulations of the mammalian homologs. In atomistic simulations of a closed Ca2+-bound TMEM16F (PDB ID 6QP6), we observed a similar flipping event for a POPC lipid into the dimer interface (Figure 4—figure supplement 5). Although the dimer interface is largely hydrophobic, there are a few polar and charged residues in the cavity near the membrane core, and water is present in the lower half of the cavity (Figure 4—figure supplement 6). In fact, the headgroup of the lipid in our atomistic simulation of TMEM16F interacts with a glutamate (E843) and lysine (K850) on TM10 near the membrane midplane (Figure 4—figure supplement 5). Lipids that scramble at the dimer interface interact with the protein up to 10-fold longer on average than those in the canonical groove (Figure 4C, D). The most prolonged interactions occur at sites containing aromatic residues into which the lipid tails intercalate (Figure 4—figure supplement 7).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-v1.jpg)
+
+**Figure 4.:** (A) Traces of all scrambling lipids in a TMEM16F (PDB ID 8B8J) simulation. Lipid scrambling from the inner to outer leaflet is illustrated as cyan traces and from the outer to inner leaflet as yellow traces. (B) Cartoon depiction of two individual inward scrambling events along the TM4/TM6 groove (orange tail with red/blue headgroup) and the dimer interface (yellow tail with red/blue headgroup) with multiple snapshots over time. Only the headgroup, first and second tail beads are shown for clarity. Protein backbone colored by mean lipid headgroup interaction (dwell) time at the TMEM16F dimer interface (C) and TM4/TM6 groove (D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Charged residues and nearby POPC lipids near two high lipid phosphate density sites at the intracellular and extracellular entry of the open nhTMEM16 (PDB ID 4WIS) canonical groove (‘SC’ and ‘SE’) identified from previous AA simulation 2016, Bethel and Grabe published by PNAS (Bethel and Grabe, 2016). (C) Contact frequency with any lipid (gray bars) and only scrambling lipids (cyan bars). Dwell times with scrambling lipids shown as black points. (D) The nhTMEM16 CG backbone colored by total number of contact events with any lipid. Gray spheres indicate lipid headgroup positions in a single snapshot.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Lipid traces and lipid headgroup density (yellow) for Ca2+-bound scrambling-competent TMEM16s: nhTMEM16 (PDB ID 4WIS, green), afTMEM16 (PDB ID 7RXG, purple), TMEM16K (PDB ID 5OC9, orange), TMEM16F F518H (PDB ID 8B8J, blue), and simulated TMEM16F (6QP6*). Each image is viewed from the extracellular or cytosolic (TMEM16K) space. Lipid traces are generated by fitting raw lipid headgroup center of mass positions to a smooth spline curve.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** The canonical groove of each experimentally solved (A) and simulated (B) open scramblase structure is colored by the average duration of each interaction (dwell time) between scrambling lipids and groove lining residues. The distribution of average dwell times at individual residues is shown as a histogram below each structure.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Contact frequency (cyan bar, left y-axis) and distribution of interaction dwell times (black scatter dots, right y-axis) between scrambling lipids and canonical groove lining residues with the 15 longest average interaction dwell times. Residues are sorted by the contact frequency. Frequency of contact with any lipid (scrambling and non-scrambling lipids taken together) is shown as a gray bar. The red dashed-line rectangle indicates two previously identified residues near high lipid phosphate density in an all-atom (AA) simulation (Bethel and Grabe, 2016).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Left: a snapshot of a 1-palmitoyl-2-oleoyl-glycero-3-phosphocholine (POPC) lipid that entered the TMEM16F (PDB ID 6QP6) dimer interface from the outer leaflet during an all-atom (AA) simulation. Right: snapshots at the same timepoint of 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) lipids that entered the TMEM16F (PDB ID 6QM6) dimer interface during a CG simulation. Nearby side chains are colored by residue type: basic (red), acidic (blue), and polar (green).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** Images in each row were taken from coarse-grained molecular dynamics (CGMD) simulations of five different TMEM16s. The first column depicts transmembrane (TM) helices forming one half of the dimer interface (rest of the protein not shown) colored by residue type (small/hydrophobic: white, charge/polar: blue). The second column depicts snapshots of the same dimer interface helices with overlayed positions of water (light blue spheres) and lipid headgroups (red and blue spheres) every 100 frames of the last 9 ms of each simulation. The last two columns are two views of the same snapshot showing the protein with its annulus of lipids (yellow). The dimer interface-forming helices are colored green (nhTMEM16), purple (afTMEM16), blue (TMEM16F), orange (TMEM16K), and red (TMEM16A).
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/105111/elife-105111-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** The scrambling region is delineated by TM3, TM4, TM5, TM9, and TM10 both monomers. TM3 and part of TM5 are transparent for clarity. The backbone region of the dimer interface is colored by dwell time of the scrambling lipids. Sites with prolonged dwell time are circled in cyan (center left) and shown in zoomed-in images (center right). Distributions of dwell times at each site are shown as violin plots (far right).
 
 There were five more out-of-the-groove events, including one that occurred across a closed TM4/TM6 groove of Ca2+-bound TMEM16F (PDB ID 6P47). From all our observed scrambling events, this is the only one that fits the postulated out-of-the-groove definition where scrambling is expected to take place near TM4/TM6 but without inserting into the groove (Feng et al., 2024b; Appendix 1—figure 6A). Two events occurred concurrently along TM6 and TM8 again near the hydrophilic groove of a Ca2+-bound closed TMEM16F (PDB ID 8TAG; Appendix 1—figure 6A, B). Lastly, two events occurred along TM3 and TM4, one near the canonical TM4/TM6 groove of an open nhTMEM16 (PDB ID 4WIS) and the other adjacent to the pore of an ion-conductive TMEM16A (7ZK3*8; Appendix 1—figure 6C, D). In each of these five out-of-the-groove events, the scrambling lipid traverses with two to four water molecules around its headgroup.
 
@@ -95,7 +354,7 @@ Finally, we end by discussing the observed in- and out-of-the-groove scrambling 
 
 ## Materials and methods
 
-## Coarse-grained system preparation and simulation details
+### Coarse-grained system preparation and simulation details
 
 For each simulated structure, missing loops with less than 16 residues were modeled using the loop building and refinement procedures MODELLER (version 10.2, Sali and Blundell, 1993). Further details on which loops were included are in Appendix 1—table 1. For each stretch of N missing residues, 10 × N models were generated. We then manually assessed the 10 lowest DOPE scoring predictions and selected the best model based on visual inspection. Models were inserted symmetrically into the original experimental dimer structure except for PDB IDs 8BC0, 8TAG, and 5OC9 which were published as asymmetric structures.
 
@@ -103,26 +362,26 @@ Setup of the CG simulation systems was automated in a python wrapper script adap
 
 All CGMD simulations were performed with Gromacs (version 2020.6; Abraham et al., 2015) and the Martini 3 force field (version 3.0.0). A 20 fs time step was used. Reaction-field electrostatics and Van der Waals potentials were cut off at 1.1 nm (de Jong et al., 2016). As recommended by Kim et al., 2023, the neighbor list was updated every 20 steps using the Verlet scheme with a 1.35 nm cut-off distance. Temperature was kept at 310 K using the velocity rescaling (Bussi et al., 2007) thermostat (τT = 1 ps). The pressure of the system was semi-isotropically coupled to a 1-bar reference pressure by the Parrinello–Rahman (Parrinello and Rahman, 1981) barostat (τP = 12 ps, compressibility = 3 × 10–4).
 
-## Lipid headgroup and water density calculations
+### Lipid headgroup and water density calculations
 
 First, each protein subunit was individually aligned in x, y, and z to their starting coordinates. Atomistic simulations were filtered for trajectory frames with T333–Y439 Cα distance >15 Å giving a total of ~2085 ns of aggregate simulation time. Then the positions of all PC headgroup beads were tracked over time and binned in a 100 × 100 × 150 Å grid with 0.5 Å spacing centered on two residues near the membrane midplane on TM4 and TM6 using a custom script that includes MDAnalysis methods (Gowers et al., 2016; Michaud Agrawal et al., 2011). Density for water beads was calculated in the same way. Density in each cell was then averaged from each chain and for atomistic simulations averaged from all eight independent simulations.
 
-## Scrambling analysis
+### Scrambling analysis
 
 Lipid scrambling was analyzed as described by Li et al., 2024. For every simulation frame (1 ns–1 sampling rate), the angle between each individual DOPC lipid and the z-axis was calculated using the average of the vectors between the choline (NC3) bead and the two last tail beads (C4A and C4B), see Figure 2—figure supplement 1A. We applied a 100 ns running average to denoise the angle traces. Lipids that reside in the upper leaflet are characterized by a 150° angle, and lipids in the lower leaflet have a 30° angle. Scrambling events were counted when a lipid from the upper leaflet passed the lower threshold at 35° or, vice versa, when a lipid from the lower leaflet passed the upper threshold at 145° (see Figure 2—figure supplement 1B). These settings are more stringent than the thresholds used by Li et al. (55° and 125°, respectively) to prevent falsely counted partial transitions (Li et al., 2024). A 1-μs block averaging was applied to obtain averages and standard deviations for the scrambling rates.
 
-## Groove dilation analysis
+### Groove dilation analysis
 
 The residues chosen for measuring the minimum distance between TM4 and TM6 were located within ~6 Å in z (1–2 α-helix turns) of the path node with the minimum net flux of water (see Appendix 1). The residues used for each homolog were as follows: 327–339 and 430–452 for nhTMEM16, 319–331 and 426–438 for afTMEM16, 365–377 and 434–446 for TMEM16K, 512–424 and 613–625 for TMEM16F, and 541–553 and 635–647 for TMEM16A. Distances were calculated using a custom script that includes MDAnalysis methods (Gowers et al., 2016; Michaud Agrawal et al., 2011).
 
-## Quantification of membrane deformations
+### Quantification of membrane deformations
 
 First, using Gromacs (gmx trjconv), MD trajectories were aligned in the xy-plane such that the longest principal axis defined by the initial positions of TM7 and TM8 aligned to the global y-axis. Average membrane surfaces were calculated from the aligned MD trajectories as outlined previously (Bethel and Grabe, 2016) using a custom python script based on MDAnalysis Michaud Agrawal et al., 2011 and SciPy (Virtanen et al., 2020). The positions of each lipid’s glycerol beads (GL1 and GL2) were linearly interpolated to a rectilinear grid with 1 Å spacing. Averaging over all time frames (again, discarding the first 1 μs for equilibration) yielded a representative upper and lower leaflet surface. Grid points with a lipid occupancy below 2% were discarded. Clusters of grid points that were disconnected from the bulk membrane surface were discarded. The minimal membrane thickness was calculated as the minimal distance between any two points on the opposing ensemble-averaged surfaces (e.g., Figure 3C). Crucially, in the case of lipid scrambling simulations like the ones described here, lipids were assigned to the upper/lower leaflet separately for every time frame.
 
-## Protein–lipid contact and dwell time analysis
+### Protein–lipid contact and dwell time analysis
 
 Using the full 10 μs simulation where each protein subunit was individually aligned in x, y, and z, we analyzed protein–lipid interactions by measuring distances between the protein’s outermost sidechain bead (except for glycine, which only has backbone bead) and the lipid’s choline (NC3) or phosphate (PO4) bead for every nanosecond using custom scripts with Scipy methods (Virtanen et al., 2020). Contacts were defined as distances below 7 Å. Contact frequency was calculated as the fraction of simulation frames where a contact occurred, averaged over two monomers. Dwell time was measured as the duration of consecutive contacts, allowing breaks up to 6 ns to account for transient fluctuations of lipid configuration. For each residue, we selected either the choline or phosphate bead based on which yielded the higher average dwell time. To visualize the result, we used averaged dwell time of the top 50% longest dwelling events at each residue to generate a color-coded representation of the protein structure (Figure 4C, D; Figure 4—figure supplement 3).
 
-## Simulation and data visualization
+### Simulation and data visualization
 
 Each simulation video and all simulation snapshots with lipid headgroup coordinate densities and traces, average membrane surfaces, and protein colored by lipid contact/dwell time were rendered using VMD (Humphrey et al., 1996). Images of TMEM16A atomistic starting structures were rendered using ChimeraX (Pettersen et al., 2021). All plots were generated using the Matplotlib graphics package (Hunter, 2007).

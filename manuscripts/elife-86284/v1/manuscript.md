@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04h9pn542 Department of Chemistry, Seoul National University Seoul Republic of Korea
-2. https://ror.org/04h9pn542 Plant Genomics and Breeding Institute, Seoul National University Seoul Republic of Korea
+1. Department of Chemistry, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+2. Plant Genomics and Breeding Institute, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
 
 † Corresponding author
 

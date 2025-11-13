@@ -36,9 +36,17 @@ Here, we investigated the causative role of repression of Drp1-driven mitochondr
 
 ## Results and discussion
 
-## Establishment of a mild carcinogen transformed keratinocyte model that maintains fine-tuned repression of Drp1, smaller fused mitochondria and abundant self-renewing/proliferating cells
+### Establishment of a mild carcinogen transformed keratinocyte model that maintains fine-tuned repression of Drp1, smaller fused mitochondria and abundant self-renewing/proliferating cells
 
 Neoplastic transformation can be modeled using chemical carcinogens like 2,3,7,8-Tetrachlorodibenzo-p-dioxin (TCDD) on skin tissue or the keratinocyte HaCaT cell line carrying non-functional p53 (Boelsma et al., 1999; Der Vartanian et al., 2019; Hao et al., 2012; Jung et al., 2016; Ray and Swanson, 2004; Schoop et al., 1999; Wincent et al., 2012; St John et al., 2000). Given Drp1 repression increases cell proliferation in the absence of active p53 (Mitra et al., 2012; Mitra et al., 2009), the HaCaT cell model provides the appropriate cellular context for our study involving Drp1. Here, we used both mild and strong dose of TCDD to uncover any mitochondria-based priming of stemness during TCDD driven neoplastic transformation. Exposure to milder (T-1nM) and stronger (T-10nM) doses of TCDD increases cell proliferation of HaCaT cells comparably in a standard transformation protocol (Figure 1A). Even in the absence of TCDD, the transformed colonies of TCDD-1nM (TF-1) and TCDD-10nM (TF-10) maintain comparable upregulation of the aryl hydrocarbon receptor AHR (Figure 1B), which is the primary effector of TCDD (Leclerc et al., 2021; Mulero-Navarro and Fernandez-Salguero, 2016). Unlike the parental HaCaT cells (Parental), both transformed cells are able to form subcutaneous xenograft tumors, confirming their transformation status (Figure 1—figure supplement 1A). Interestingly, pathological evaluation of H&E stained tumor sections revealed that the TF-1 cells gave rise to malignant tumors harboring less differentiated (primitive) squamous cells with large nuclei (blue) and little visible cytoplasm (pink) (Figure 1C, left). Whereas the TF-10 cells formed tumors harboring differentiated stratified squamous epithelium with cells having expansion of cytoplasm (Figure 1C, right); the clear gaps represent cryo-sectioning artifacts.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cell proliferation assay (quantified by crystal violet staining) after 4 or 16 days exposure to TCDD (1 or 10 nM) or Toluene (10 nM) vehicle control. (B) Immunoblot analyses of AHR and actin (loading control) in the absence of TCDD. (C) Representative micrographs (40 X) of H&E stained sections of tumor xenografts; zoom of boxed region shown in the bottom panels. (D) Immunoblot analyses of mitochondrial fission/fusion proteins with actin as loading control. (E) Dot plot of [Fission] and [Fusion5] obtained from confocal micrographs of Mitotracker green stained cells; numbers denote the percentage of cells in the colored boxes with p value from Chi-Square test (N > 90 cells in each group); representative images in Figure 1—figure supplement 1E. (F) Flowcytometric histogram plots of TMRE intensity of stained cells. (G) Quantification of cell proliferation assay (as in A) over 7 days in the absence of TCDD. (H) Representative micrograph showing spheroids formed when 104 cells of each group were maintained in low attachment plate in the presence of stem cell medium. (I) ELDA based quantification of spheroid forming frequency in each cell population. * signifies p value of < 0.05 in T test (A,G) and ELDA (I); scale bar depicts 100 μm (H); numbers under immunoblots denote quantification of band intensities normalized by that of Actin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A) Quantification of incidence and volume of xenograft tumors; # indicates presence of a distant tumor. (B) Immunoblot analyses of specific mitochondrial proteins with actin as loading control. (C) Immunoblot analyses of Drp1 and Mfn1. (D) Assessment of mitochondrial matrix continuity from live cell pulse chase assay in cells expressing mito-PSmO. (E) Maximum intensity projection of confocal optical sections of representative cells expressing mito-PSmO. (F) Bar graph signifying percentage of cells with >80 [Fusion1]. (G) Quantification of mitochondrial membrane potential per unit mass from confocal micrographs of cells co-stained with TMRE and Mitotracker green. scale bar depicts 10 μm; * signifies p value of < 0.05 in KW test (D, G).
 
 Notably, among the major proteins regulating mitochondrial fission and fusion (Drp1, Mfn1, Mfn2, Opa1), Drp1 exhibit the most robust difference between the Parental, TF-1 and TF-10 cells (Figure 1D, Figure 1—figure supplement 1C); other tested mitochondrial markers are lowered in the TF-1 compared to the TF-10 cells (Figure 1—figure supplement 1B). In the transformed cells, the activity of the elevated Drp1 protein (pDrp1-S616/ Drp1) is suppressed by ~10-fold by lowering its cell cycle driven activating phosphorylation (Taguchi et al., 2007; Figure 1D). Such repression of Drp1-driven mitochondrial fission is expected to allow unopposed mitochondrial fusion towards sustaining elevated mitochondrial matrix continuity. Indeed, the transformed cells maintain increased mitochondrial matrix continuity (Figure 1—figure supplement 1D), assessed by live cell pulse chase assay in cells stably expressing photoconvertible mitochondrial reporter mito-PSmO (Spurlock et al., 2019). Unexpectedly, TF-1 cells with twofold less Drp1 activity than TF-10 cells (Figure 1D) still maintain lower mitochondrial matrix continuity (Figure 1—figure supplement 1D), the cause of which was not apparent from subjective examination of mitochondrial shape (Figure 1—figure supplement 1E). Therefore, we performed quantitative assessment of mitochondrial shape that is determined by the opposing mitochondrial fission and fusion processes. We used our previously designed mitochondrial [Fission] and [Fusion5] metrics that quantify the contribution (but not kinetics) of fission/fusion to the steady state mitochondrial shape in live cells, which were validated using Drp1 or mitofusin knockout cells (Spurlock et al., 2019; Spurlock and Mitra, 2021).Also, bivariate analyses of the inversely related [Fission] and [Fusion5] metrics could reveal specific heterogeneity in mitochondrial shape in (FACS sorted) mitochondria primed ovarian neoplastic stem cell population (Spurlock et al., 2021). Here, bivariate analyses of the [Fission] and [Fusion5] metrics revealed that the reduced mitochondrial matrix continuity in TF-1 cells is due to maximum enrichment of a cellular subpopulation with moderately reduced [Fusion5] (40–80), moderately elevated [Fission] (0.15–0.4) (Figure 1E, Int), and weakened [Fission] vs [Fusion5] inverse correlation (Figure 1E, increased scatter around the regression line). The enrichment of this intermediate fission/fusion subpopulation was accompanied by a proportional reduction of the subpopulation with hyperfused mitochondria ([Fusion5] > 80) (Spurlock et al., 2019; Figure 1E, HF). Notably, despite maintaining higher mitochondrial matrix continuity than the Parental cells (Figure 1—figure supplement 1D), TF-1 population has lowest abundance of cells where the longest mitochondrial element contains >80% of the total mitochondrial length ([Fusion1] > 80) (Figure 1—figure supplement 1F). These data together suggest that the enriched subpopulation of TF-1 cells maintains smaller fused mitochondrial elements. These mitochondrial structural properties in the TF-1 cells are associated with overall lowering of mitochondrial transmembrane potential in comparison to Parental or the TF-10 cells (Figure 1F). Furthermore, the mitochondrial potential per unit mitochondrial mass in individual cells is regulated over a wider range in TF-1 cells, while it is lowest in TF-10 cells (Figure 1—figure supplement 1G) likely due to their elevated mitochondrial mass (Figure 1—figure supplement 1B).
 
@@ -46,9 +54,17 @@ The TF-1 cells have significantly higher in vitro cell proliferation rate and fo
 
 The above data confirms the derivation of a transformed TF-1 keratinocyte model characterized by the following properties: (a) fine-tuned repression of Drp1 activity by reduction of S616 phosphorylation of the elevated Drp1 protein level; (b) enrichment of a subpopulation of cells maintaining smaller fused mitochondrial networks; (c) enrichment of self-renewing/proliferating neoplastic cells capable of forming less differentiated primitive tumors. We speculate that twofold lower abundance of self-renewing TF-10 cells is due to their 2-fold elevated Drp1 activity that promotes differentiation in other systems (Spurlock et al., 2020), making TF-10 cells more differentiated than TF-1 cells.
 
-## Neoplastic stem cell enriched TF-1 keratinocyte population, with fine-tuned Drp1 repression, maintains an expanded sub-population of slow-cycling cells expressing elevated stem/progenitor cell markers
+### Neoplastic stem cell enriched TF-1 keratinocyte population, with fine-tuned Drp1 repression, maintains an expanded sub-population of slow-cycling cells expressing elevated stem/progenitor cell markers
 
 We performed scRNA-seq to define the neoplastic stem cells of our newly derived Drp1-repressed-TF-1 population (Luecken and Theis, 2019). Cell clustering in a UMAP plot shows six clusters within Parental, TF-1 and TF-10 populations (Figure 2A, Clusters 0–5). While Cluster 4 is reduced in both transformed populations in comparison to the Parental, the TF-1 population exhibits a marked expansion of Cluster 3 and reduction of Cluster 5 (Figure 2A, Figure 2—figure supplement 1A, left panel). These results also hold true with the lowest cluster resolution (Figure 2—figure supplement 1B, arrows). We identified the top-most candidate genes to mark each cluster (color coded arrows in Figure 2—figure supplement 1C, Figure 2—source data 1). Indeed, the neoplastic stem/progenitor cell enriched TF-1 population shows >3 fold upregulation of the epidermal stem cell marker Keratin(KRT)15 (Giroux et al., 2017; Purba et al., 2014) and of the neoplastic stem cell markers for skin carcinomas, SOX2 and SOX4 (Boumahdi et al., 2014; Foronda et al., 2014) (Figure 2B (box)). Since the markers increase across all TF-1 clusters, with maximum levels in Cluster 3, we conclude that the TF-1 population exhibits upregulation of the stem/progenitor markers independent of their cluster distribution. On the other hand, the other stem/progenitor cell markers, like KRT5, KRT14, KRT19 (Gonzales and Fuchs, 2017, Karantza, 2011) are also enriched by ~2-fold in Cluster 3, but comparably in all three cell populations, as exemplified by KRT5 (Figure 2B, box, Figure 2—source data 1). Notably, among the three-cell populations, TF-1 harbors markedly fewer cells with elevation of the differentiating cell marker KRT13 in Cluster 3 (Karantza, 2011). Cluster 5, reduced in TF-1 population, characterized by reduction of overall gene expression, is marked by 1.5 to >2-fold reduced expression of 12 of the 13 mtDNA genes in all the three-cell populations (Figure 2—figure supplement 1C, D (box)). Cluster 4, reduced in both transformed populations, is marked by >8-fold upregulation of OASL, a gene involved in the interferon pathway, in all the three cell populations (Figure 2—figure supplement 1E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig2-v2.jpg)
+
+**Figure 2.:** (A) UMAP plot of scRNA-seq derived clusters (0–5) in individual cell population (top); pie chart of the percentage distribution of the clusters (bottom, p value from Chi-Square test); color coded arrows mark the clusters with unique reciprocal abundance in TF-1 cells. (B) Violin plots depicting expression of specific stem/progenitor cell markers in the clusters identified in (A); box outlines the KRT15-hi Cluster 3. (C) Normalized Enrichment Scores (NES) of functional pathways identified by GSEA of marker genes of Clusters 0–4 (Figure 2—source data 2) and by overrepresentation analyses for Cluster 5 (* represents categories including mtDNA genes); functional categories defined by majority of the leading-edge genes are in parentheses, while clusters are arranged based on trajectory analyses (open arrows) (see Figure 2—figure supplement 1F). (D) Violin plots depicting expression of key cell cycle regulators in the clusters identified in (A); the functional category of genes identified in (C) is included in the cluster identity, while box outlines the KRT15-hi Cluster. (E) Distribution of G2-M and S scores obtained from gene expression analyses of cell cycle predictive genes. (F) Feature plot of G2-M and S scores obtained from (E); color coded arrows as in (A). (G) Bar plot showing fraction of cells in G2-M, S and G0/G1, computed from (E) in the functionally categorized clusters; inset shows G1 to S reciprocity of the clusters (color-coded arrows) with unique reciprocal abundance in TF-1 cells in (A).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Numbers on bar plot showing the percentage distribution of the clusters (0–5) in each of the cell populations identified by scRNA-seq analyses (left); numbers show cell cycle distribution from flowcytometry analyses of PI stained cells in the corresponding population (right). (B) UMAP plot of scRNA-seq derived clusters (0–3) obtained with minimum cluster resolution; color coded arrows point the major change in cluster distribution in transformed cells. (C) Heat map of statistically significant marker genes (LFC ≥1.5folds, p-adjusted <0.0001) for the color-coded clusters (0–5); color-coded arrows point to the top most marker gene in the three clusters that have different distribution between the Parental and transformed populations; color index shows log fold change; * marks the Histone gene cluster. (D) Violin plots depicting expression of the mt-DNA genes in the designated scRNA-seq-derived cell clusters. (E) Violin plots depicting expression of HES1 and OASL genes in designated scRNA-seq-derived cell clusters. (F) PCA plot of trajectory analyses of the scRNA-seq-derived cell clusters.
 
 Since flow cytometry on PI stained cells revealed modest differences in cell cycle distribution between the Parental and transformed populations (Figure 2—figure supplement 1A, right panel), we investigated if the scRNA-seq-derived clusters represent distinct cell cycle phases. We performed gene set enrichment analyses (GSEA) of the overall cluster marker profiles (Subramanian et al., 2005); some statistically significant REACTOME pathways (q value < 0.01) were renamed based on their leading-edge genes (Figure 2—source data 2). GSEA showed upregulation of genes in ‘Mitosis and Relevant Cytoskeletal Proteins’ in Cluster 2 and that of genes in ‘DNA repair/replication and Histones’ in Cluster 0 (Figure 2C); Cluster 1 has downregulation of “Histones and Ubiquitin related’ genes. Indeed, the mitotic Cyclin B (CCNB1) and its partner kinase CDK1, as well as Cyclin A (CCNA2) are markedly higher in Cluster 2-G2-M, while PCNA, which peaks early in S phase (Maga and Hubscher, 2003; Zerjatke et al., 2017) is highest in Cluster 0-S-Histone-hi in all three-cell populations (Figure 2D); the S phase cyclins E1/E2 and their partner CDK2 were not detected in our scRNA-seq data set. Surprisingly, KRT15 marked Cluster 3 has dramatic downregulation of genes in ‘Overall Cell Cycle’ and in cell cycle phase categories described above (Figure 2C), suggesting their cell cycling is slow. Cluster 3-SloCycl-K15-hi maintains extreme low levels of major cyclins in all three-cell populations, most prominently in TF-1 (Figure 2D). PCNA, which is dramatically reduced in quiescent cells (Maga and Hubscher, 2003; Zerjatke et al., 2017), is markedly reduced in the SloCycl-K15-hi cluster (and others) only in the TF-1 population (Figure 2D). SloCycl-K15-hi has upregulation of genes involved in ‘Keratin’ and ‘Signaling’ pathways (Figure 2C). Notably, the Notch pathway target, HES1, which actively maintains quiescence (Moriyama et al., 2008; Sang et al., 2008), is upregulated across the clusters in the TF-1 population (Figure 2—figure supplement 1E). These data strongly suggest that the enrichment of the SloCycl-K15-hi cluster in the TF-1 population happens due to active maintenance of quiescence, rendering them slow cycling. Cluster four does not relate to cell cycle and shows upregulation of genes related to ‘Cytokine’ (interferons) pathway (Figure 2C), many of which are suppressed by AHR activation (Di Meglio et al., 2014; Figure 2—source data 1). This finding is consistent with our findings in Figures 1B and 2A. The downregulated mtDNA genes in Cluster 5 were identified as ‘TCA cycle’ and ‘Complex one biogenesis’ in our overrepresentation analyses (* in Figure 2C), but not detected in GSEA. Towards understanding the entry into the slow cycling state of the K15hi-Cluster 3, we performed trajectory analyses using Slingshot algorithm that identifies clusters related to each other based on their gene expression (Street et al., 2018). The output trajectory was the following: ‘G2-M’ to ‘S-Histones-hi’ to ‘Cytokine’ to ‘Histones/Ub-lo’ bifurcating into ‘SloCycl-K15-hi’ or ‘mtDNA-lo’ (Figure 2C, open arrows, Figure 2—figure supplement 1F). This implies that the cells in the TF-1 population may preferentially reside in the SloCycl-K15-hi cluster and not in the mtDNA-lo cluster, thus expanding the former and reducing the latter (Figure 2A).
 
@@ -56,9 +72,17 @@ To confirm the cell cycle pathway findings from GSEA, we quantified cell cycle s
 
 Thus, detailed scRNA-seq characterization reveals that our newly derived Drp1-repressed-TF-1 keratinocyte population, enriched with neoplastic stem/progenitor cells, maintains an expanded sub-population of slow cycling cells expressing high levels of stem/progenitor markers (lineage specific: KRT15; general: SOX2 and SOX4), likely due to altered cell cycle regulation. Our data is consistent with the KRT15-hi epidermal stem cells being primarily slow cycling (Giroux et al., 2017; Morris et al., 2004; Purba et al., 2014). Moreover, the higher in vitro cell proliferation rate of the Drp1-repressed-TF-1 keratinocytes (Figure 1G) could result from the higher clonogenic capacity of the KRT15-hi cells (Morris et al., 2004; Seykora and Cotsarelis, 2011).
 
-## Fine-tuning Drp1 by reducing its S616 phosphorylation sustains a [Sox2hi-Krt15hi] neoplastic stem/progenitor cell state in TF-1 keratinocytes with elevated cyclin E levels
+### Fine-tuning Drp1 by reducing its S616 phosphorylation sustains a [Sox2hi-Krt15hi] neoplastic stem/progenitor cell state in TF-1 keratinocytes with elevated cyclin E levels
 
 Repression of Drp1-driven mitochondrial fission elevates stem/progenitor cell markers in multiple cell types (Iwata et al., 2020; Parker et al., 2015). The TF-1 keratinocytes, characterized by low pDrp1-S616 levels and high enrichment of neoplastic stem/progenitor cells (Figure 1D, H, I), exhibit marked elevation in Sox2 protein levels (but no other embryonic stem cell markers) in comparison to the Parental and TF-10 keratinocytes (Figure 3A, Figure 3—figure supplement 1A); this corroborates the scRNA-seq data (Figure 2B). Krt15 protein levels are elevated in both transformed cells in comparison to the Parental (Figure 3A), unlike the cluster-specific differences in transcript levels (Figure 2B). Immunostaining-based co-expression analyses of Sox2 and Krt15 revealed that ~26% of the TF-1 population exhibits elevation of both Krt15 and Sox2, compared to ~6% in Parental (Figure 3B). Similar analyses showed that the high levels of Sox2 is sustained in ~26% of the TF-1 population that has lowest pDrp1(S616) levels, compared to ~6% in Parental (Figure 3C). Thus, our data suggests about a quarter of the TF-1 population maintains low pDrp1, high Sox2 and high Krt15.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunoblot analyses of stem/progenitor cell markers with actin as loading control. (B) Dot plot of [Sox2] vs [Krt15] levels obtained from confocal micrographs of co-immunostained cells demarcating the four populations; N > 300 cells in each group. (C) Dot plot of [Sox2] and [pDrp1(S616)] levels obtained from confocal micrographs of co-immunostained cells demarcating the population of interest (arrow); N > 200 cells in each group. (D) Immunoblot analyses of major cyclins with actin as loading control. (E) Representative confocal micrographs of Cyclin E1 immunostaining; N depict the nucleus in each cell identified by DNA stain (not shown). (F) Box plot showing median and distribution of nuclear to cytosolic ratio of Cyclin E1 levels quantified from experiment described in (E); N > 180 cells in each group. (G) Dot plot of [Sox2] and [CyclinE1(pT62)] levels obtained from confocal micrographs of co-immunostained cells; N > 120 cells in each group. (H) Histogram plots obtained from quantification of pDrp1-S616 signal from confocal micrographs of immunostained Drp1 modified cells. (I) Table denoting abundance (%) of each population identified as in (B) in the Drp1 modified cells (see Figure 3—figure supplement 1D). (J) Flowcytometric histogram plots of TMRE staining intensity of Drp1 modified cells; cell numbers under immunoblots denote quantification of band intensities normalized to that of actin; dotted lines in dot plots represent signal threshold marking the quadrants (described in Materials and methods) with the numbers signifying the abundance (%) of each population and the p value of Chi-Square test mentioned; * signifies p value of < 0.05 in KW test (F).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative confocal micrographs of immunostained cells showing endogenous expression of key embryonic stem cell markers; blue depicting nuclear DNA staining with Hoechst. (B) Representative confocal micrographs of cells showing endogenous expression of Tom20 and Cyclin E1 after 2 hr incubation with DMSO or Cycloheximide, with the pre-incubation time point (0 h) as control. (C) Box plot of [Fission], [Fusion5] and [Fusion1] in Parental and TF-1 cells transiently expressing mitoRFP and Drp1 wild type or mutant constructs. (D) Dot plot of [Sox2] and [Krt15] obtained from confocal micrographs of co-immunostained Parental or TF-1 cells with Drp1 modifications; dotted lines in dot plots represent signal threshold marking the quadrants. (E) Representative confocal micrographs of Drp1 modified Parental or TF-1 cells immunostained for Cyclin E; * mark mitotic cells identified as condensed nuclei by the DNA stain; scale bar depicts 100 μm; * and ** signify p value of < 0.05 and < 0.01, respectively, in KW test (C).
 
 Cell cycle status is a crucial determinant of stemness (Orford and Scadden, 2008; Otsuki and Brand, 2018; Pauklin and Vallier, 2013). Sox2 expression is under the influence of various G1 cyclins (Liu et al., 2019), including Cyclin E whose degradation is regulated by mitochondria (Mandal et al., 2010; Parker et al., 2015).Particularly, Drp1 repression elevates Cyclin E levels (Spurlock et al., 2020). Consistently, among the major cyclins, Cyclin E1 levels are particularly higher in the Sox2 enriched Drp1 repressed TF-1 cells (Figure 3D); Cyclin D is particularly higher in TF-10 cells when compared to the Parental (corroborating scRNA-seq data, Figure 2D). Moreover, Cyclin E1 is preferentially accumulated in the nucleus in TF-1 cells, which is required to impact gene expression of Sox2 (and others) (Figure 3E and F). The level of CDK2-driven pCyclinE(T-62) reflects the level of CDK2 bound Cyclin E that is susceptible to degradation (Siu et al., 2012). Immunostaining based co-expression analyses showed that elevated Sox2 is sustained in ~38% of the TF1 population that sustain lower pCyclinE(T-62) as opposed to ~2% in the Parental (Figure 3G). Moreover, a cycloheximide chase assay, for assessing protein degradation rate, revealed no Cyclin E degradation in TF-1 cells within the 2-hr assay time frame in comparison to marked Cyclin E degradation in Parental; both populations maintain Tom20 (mitochondrial marker) (Figure 3—figure supplement 1B). Thus, our data is consistent with elevated Sox2 in TF-1 cells being sustained by elevated Cyclin E levels achieved by attenuation of its degradation kinetics, which can be potentially impacted by Drp1 repression (Parker et al., 2015).
 
@@ -66,19 +90,37 @@ Next, we investigated if repression of Drp1-S616 phosphorylation maintains Sox2 
 
 Therefore, our data demonstrates that the neoplastic stem/progenitor cell enriched TF-1 population, with elevated nuclear Cyclin E, maintains a [Sox2hi-Krt15hi] sub-population that is sustained by fine-tuning Drp1 by reducing its S-616 phosphorylation. Cell-cycle-dependent reduction of Cyclin B1/CDK1 levels in the TF-1 cells (Figure 2D) likely reduces their Drp1-S616 phosphorylation (Taguchi et al., 2007), which in turn maintains less fused mitochondria and modulates mitochondrial membrane potential to elevate Sox2 levels. It remains to be seen how regulation of pDrp1-S616 impacts Cyclin E toward maintaining elevated Sox2, although Drp1 regulation appears to enhance Cyclin E levels particularly in mitotic TF-1 (Figure 3—figure supplement 1E). Our data also reveal differences in the impact of Drp1 regulation between the non-transformed Parental and its transformed TF-1 counterpart, which warrants further detailed investigation.
 
-## Fine-tuned Drp1 repression by reducing its protein levels sustains a [CyclinEhi-Sox2hi-Krt15hi] state and accelerates carcinogen driven neoplastic transformation, which is suppressed by more complete Drp1 repression
+### Fine-tuned Drp1 repression by reducing its protein levels sustains a [CyclinEhi-Sox2hi-Krt15hi] state and accelerates carcinogen driven neoplastic transformation, which is suppressed by more complete Drp1 repression
 
 Given Drp1-S616A mutant does not elevate Sox2 or Krt15 in the non-transformed Parental cells (Figure 3I), we hypothesized that reduction of their Drp1 protein levels allows expression of the stem/progenitor cell markers as noted in Drp1 knockout cells of other cell lineages (Iwata et al., 2020; Parker et al., 2015). Therefore, we knocked down (kd) Drp1 expression in the Parental cells with two validated shRNAs against human DNM1L gene encoding Drp1 (Parker et al., 2015; Tanwar et al., 2016), one weaker (W) and the other ~10-fold stronger (S) almost mimicking Drp1 genetic ablation (Figure 4A). Surprisingly, while transient weaker Drp1 knockdown markedly elevates Krt15 levels, the transient stronger Drp1 knockdown does so only modestly (Figure 4A). On the other hand, both weak and strong transient Drp1 knockdown cause marked elevation of Sox2 (Figure 4A) and dramatic nuclear accumulation of Cyclin E (Figure 4B and C). The majority of the cytosolic Cyclin E particularly in the Drp1 knockdown cells represent mitochondrial Cyclin E (not shown) (Parker et al., 2015), which remains to be investigated. Therefore, unlike close to complete Drp1 knockdown, fine-tuned knockdown of Drp1 protein levels with the weaker shRNA maintains a CyclinEhi-Sox2hi-Krt15hi state characteristic of the naturally Drp1 repressed TF-1 population enriched in neoplastic stem/progenitor cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig4-v2.jpg)
+
+**Figure 4.:** (A) Immunoblot analyses of control (Cnt), weaker (W) or stronger (S) Drp1 knockdown (kd) Parental cells, with actin as loading control. (B) Representative images of Cyclin E1 immunostaining in control or Drp1 knockdown Parental cells. (C) Box plot showing median and distribution of nuclear to cytosolic ratio of Cyclin E1 levels quantified from experiment described in (B). (D) Cell proliferation assay of control or Drp1 knockdown Parental cells after exposure to TCDD (1 nM or 10 nM) at an early (10d) and a late time point (17d) in the neoplastic transformation protocol; ‘Toluene’ is the vehicle control for TCDD and ‘Control’ is with no chemical. (E) Immunoblot analyses of Parental cells with control or reduced level of Drp1 knockdown with weak (W–L) or strong (S–L) DNM1L shRNAs, with actin as loading control. (F) ELDA based quantification of spheroid forming frequency of cells described in (E). (G) TCDD induced cell proliferation assay (as in D) of cells described in (E). (H) Flowcytometric histogram plots of TMRE staining of cells described in (E). (I) Dot plot of [Fission] and [Fusion5] obtained from confocal micrographs of Mitotracker green stained live control or Drp1 knockdown Parental cells described in (A); numbers denote the percentage of cells in colored boxes with p value from Chi-Square test (N > 40 cells in each group); representative images in Figure 3—figure supplement 1D. (J) Dot plot of [Fission] or [Fusion5] of single cells (from I) with their total mitochondrial number and total mitochondrial length; lines represent the ranges of [Fission] and [Fusion5] to demarcate cell subpopulations in boxes in (I). (K) Bar graph signifying percentage of cells from (I) with >80 [Fusion1] metric (top); dot plot of [Fission] vs [Fusion1] of cells from (I) (bottom); cell numbers under immunoblots denote quantification of band intensities normalized to that of actin; * signifies p value of < 0.05 in KW test (C), T test (D,G) and ELDA (F); scale bar depicts 20 μm (B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dot plot of accelerated transformation efficacy vs remnant Drp1 protein after Drp1 knockdown with description of each data point; R2 value of the regression line mentioned. (B) Representative maximum intensity projections (MIP) of confocal optical sections (micrograph) and the corresponding MitoGraph generated binary images (binary) for quantifying [Fission] and [Fusion1/5] metrics of control and Drp1 knockdown Parental cells; the cells represent populations in colored boxes in Figure 4I while the number depicts their abundance in percentage; Scale bar depicts 15 μm. (C) Dot plot of [Fission] vs [Fusion1]. (D) Dot plot of % cells with >80 [Fusion1] vs remnant Drp1 protein after Drp1 knockdown with description of each data point.
 
 Given, Sox2 and Cyclin E are important for neoplastic transformation in various cancer types (Hwang and Clurman, 2005; Schaefer and Lengerke, 2020; Teixeira and Reed, 2017), and Krt15-hi cells give rise to skin carcinoma (Li et al., 2013; Seykora and Cotsarelis, 2011), we tested if repression of Drp1 can modulate the process of carcinogen driven neoplastic transformation of keratinocytes. Thus, we exposed control and Drp1 knockdown Parental keratinocytes to 1 and 10 nM TCDD following standard TCDD driven transformation protocol (similar to Figure 1A). Interestingly, the weaker Drp1 knockdown, which maintains remnant Drp1 protein and a CyclinEhi-Sox2hi-Krt15hi state, was transformed by 10 nM TCDD even earlier than the control (Figure 4D); 1 nM TCDD did not cause any transformation at this time point. This happened despite their lower cell proliferation rate than the control in the earlier time point. On the other hand, the stronger Drp1 knockdown, which also maintained slower cell proliferation rate and a Krt15lo-Sox2hi status with elevated nuclear Cyclin E, is not transformed in the same time window (Figure 4D). Furthermore, in case of lowered knockdown efficacy, both the weak (W-L) and strong (S-L) Drp1 knockdown (Figure 4E) increase abundance of self-renewing cells (Figure 4F) and initiate TCCD-driven neoplastic transformation at the earlier time point when control knockdown cells do not exhibit any neoplastic transformation (Figure 4G); this difference between control and the low efficacy Drp1 knockdown does not sustain in the later time point. Notably, the accelerated carcinogen-driven neoplastic transformation caused by Drp1 knockdown does not involve modulation of mitochondrial potential (Figure 4H).
 
 Therefore, we conclude that fine-tuned reduction of Drp1 protein levels in the Parental cells primes the ‘stem/progenitor-like [CyclinEhi-Sox2hi-Krt15hi] state’ toward accelerating neoplastic transformation, which is suppressed by more complete Drp1 reduction. We speculate that the inability to sustain this primed stem-like state may prevent neoplastic transformation in Drp1 knockout MEFs (Serasinghe et al., 2015). Plotting the accelerated transformation efficacy with remnant Drp1 levels after knockdown predicts ~50 % reduction of Drp1 protein may maximally accelerate transformation within the experimental range (Figure 4—figure supplement 1A) (remnant Drp1 levels may remain overestimated due to the reduction of the Actin control with Drp1 knockdown, Figure 4A and E).
 
-## Fine-tuned Drp1 repression maintains smaller fused mitochondria and transcriptomic profile characteristic of the neoplastic stem/progentior cell enriched TF-1 population, which is suppressed by more complete Drp1 repression
+### Fine-tuned Drp1 repression maintains smaller fused mitochondria and transcriptomic profile characteristic of the neoplastic stem/progentior cell enriched TF-1 population, which is suppressed by more complete Drp1 repression
 
 Toward understanding how the ‘stem/progenitor-like state’ is primed by fine-tuned (incomplete) Drp1 repression, we performed detailed comparison of mitochondrial shape (as in Figure 1E) and over all gene expression (as in Figure 2) between the Parental keratinocytes expressing control, weak or strong DNM1L shRNAs. Bivariate analyses of the inversely related mitochondrial [Fission] and [Fusion5] metrics confirmed that the stronger (more complete) Drp1 knockdown maintains ~77% cells in the uniformly hyperfused state while the control knockdown population maintains ~55% cells in this state (Figure 4I, HF, Figure 4—figure supplement 1D). Interestingly, similar to the neoplastic stem/progenitor cells enriched Drp1 repressed TF-1 cells (Figure 1E), the ~10-fold weaker Drp1 knockdown maintains only ~38% cells in the uniformly hyperfused state, while enriching a sub-population of cells (~45%) with moderately increased [Fission] and moderately decreased [Fusion5] (Figure 4I, Int). Subjective examination revealed that cells in the enriched sub-population (Int, Fission: 0.15–0.4 and Fusion5: 40–80) harbor some mitochondrial fragments in the midst of tubular mitochondrial network (Figure 4—figure supplement 1B). We also found that the cells in this sub-population have lower mitochondrial number and total mitochondrial length (Figure 4J), signifying decrease in mitochondrial content. Also, similar to the TF-1 cells (Figure 1—figure supplement 1F), ~ 7% of cells in the weaker Drp1 knockdown have the longest mitochondrial element containing >80% of the total mitochondrial length ([Fusion1] > 80), compared to ~40% in the stronger Drp1 knockdown (Figure 4K, top, Figure 1—figure supplement 1C,D). This indicates that the increase in mitochondrial number is due to a greater number of smaller networks of fused mitochondria, consistent with findings in TF-1 cells. Moreover, bivariate [Fission] vs [Fusion1] plot revealed that the cells with fission range of 0.15–0.4, enriched in the weaker Drp1 knockdown and TF-1 cells, have only up to 40% of the mitochondrial lengths in fused networks (Figure 4K, bottom). Given Drp1-WT overexpression in the Parental cells expectedly increases [Fission] and reduces [Fusion] (Figure 3—figure supplement 1C), our data suggest that the remnant Drp1-driven mitochondrial fission after fine-tuned Drp1 repression prevents mitochondrial hyperfusion to maintain smaller fused mitochondria (with reduced mitochondrial content), towards sustaining a [CyclinEhi-Sox2hi-Krt15hi] state. However, Drp1 overexpression by itself does not support Sox2hi/Krt15hi state in Parental cells (Figure 3I) as does weaker repression of Drp1 (Figure 4A), suggesting Drp1 needs to be repressed to support expression of stem cell markers and then further activated. Indeed, Aldh marked neoplastic ovarian stem cells with repressed [Fission] converts to a state of elevated mitochondrial [Fission] when self-renewal and proliferation is activated (Spurlock et al., 2019), which may be triggered to support mitophagy (Twig and Shirihai, 2011).
 
 To probe the contribution of gene expression of any particular cell population in sustaining a stem/progenitor-like state after fine-tuned Drp1 repression, we performed scRNA-seq of the control and Drp1 knockdown Parental populations. Analyses of the overall gene expression (within the limits of gene coverage) confirmed that the weaker Drp1 knockdown, which maintains higher transcript levels of DNM1L (Figure 5—figure supplement 1A) and ~10-fold higher protein levels (Figure 4A), modulates a smaller gene set to a smaller degree (Figure 5—figure supplement 1B). However, graded Drp1 knockdown has both ‘similar’ (graded upregulation or downregulation) and ‘opposite’ effects (upregulation in one and downregulation in the other) (Figure 5—figure supplement 1C). The opposite effect is dominated by KRT15, KRT13, KRT4, KRT5 transcripts being upregulated in the weaker Drp1 knockdown and downregulated in the stronger Drp1 knockdown (color coded * in Figure 5A, Figure 5—figure supplement 1C, Figure 5—figure supplement 2), corroborating our findings on Krt15 protein levels (Figure 4A). On the other hand, genes for various mitochondrial proteins, involved in mitochondrial energetics, redox or biogenesis, were upregulated particularly in the stronger Drp1 knockdown (Figure 5B upper panel, Figure 5—figure supplement 1C (bold), Figure 5—figure supplement 2B). This is consistent with our observation of decreased mitochondrial content in the weaker Drp1 knockdown (Figure 4J). Synthesis of the mitochondrial proteins can be potentially sustained by elevated ribosomal genes and genes involved in protein synthesis in the stronger Drp1 knockdown (Figure 5B, lower panel). This finding is consistent with observations linking Drp1 repression to ribosomal genes and/or protein synthesis (Tanwar et al., 2016; Zhao et al., 2021; Favaro et al., 2019). We speculate that repression of Drp1 sustained beyond an optimal level or time may initiate compensatory changes to trigger mitochondrial biogenesis through retrograde signaling (Ryan and Hoogenraad, 2007), which may be detected beyond ~50% reduction of Drp1 protein when transformation efficacy starts declining (Figure 4—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig5-v2.jpg)
+
+**Figure 5.:** (A) Bar plots showing positive and negative log fold change values of top 20 genes in Parental cells with weaker (W) (Top) or stronger (S) (bottom) Drp1 knockdown with respect to control knockdown; 0 signifies no change and color coded * denote relevant KRT genes (larger figure in Figure 5—figure supplement 2A). (B) Bar plot showing ratio of absolute expression values of mitochondrial genes (top) and ribosomal or protein translation genes (bottom) in the Parental cells with Drp1 knockdown normalized to control knockdown; one signifies no change (larger figure in Figure 5—figure supplement 2B). (C) Line plot showing % population of Parental cells with Drp1 knockdown in the named scRNA-seq derived cell clusters, with respect to control knockdown. This is compared to the same in the TF-1 cells with respect to its control Parental population; gray dashed line signifies no change from respective controls. (D) Distribution of G2-M and S scores obtained from gene expression analyses of cell cycle predictive genes in Parental cells with Drp1 or control knockdown. (E) Violin plots depicting expression of key cell cycle genes in the designated scRNA-seq derived cell clusters in Parental cells with Drp1 or control knockdown. (F) Working model describing the key findings: a ‘goldilocks zone’ of fine- tuned Drp1 repression, achieved by reduction of protein levels or its S616 phosphorylation, maintains smaller fused mitochondrial networks and primes a stem/progenitor cell state to support carcinogenic transformation; more complete Drp1 repression sustains hyperfused mitochondria and prevents stem/progenitor cell state dependent neoplastic transformation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Bar plot showing the knockdown efficiency of strong (S) or weak (W) DNM1L shRNA expressed as ratio of Drp1 transcript levels in the knockdown HaCaT and that of the cells expressing the non-targeted shRNA control. (B) Bar plot showing log fold change of overall gene expression of Drp1 knockdown Parental cells with respect to control knockdown. (C) Plots showing ratio of the expression of covered genes between the weak (W) or strong (S) Drp1 knockdown Parental cells; ‘Similar effects’ showing ratio of increase or decrease in the (S) Drp1 knockdown over the (W) Drp1 knockdown (back arrows in left panel), while opposite effects showing opposite trends in genes as labeled in the arrows (back arrows right panel); grey arrows point to the top 20 genes of each category. (D) UMAP plot of scRNA-seq based clusters (0–5) of control or Drp1 knockdown Parental cells; box outlines the SloCyc-K15-hi cluster (note color coding is not same as the one presented in Figure 2). (E) Bar plot showing percentage of statistically significant common genes (Upregulated or Downregulated) between color coded clusters obtained with the scRNA-seq data set of parental and transformed cells (Figure 2) and that of control or drp1 knockdown parental cells (Figure 4); same color coding is maintained between the two data sets. (F) Violin plots depicting expression of various KRT genes in the named scRNA-seq based cell clusters in the control and Drp1 knockdown Parental cells. (G) Bar plot showing fraction of cells in G2-M, S and G0/G1, computed from main Figure 5D, in the functionally categorized clusters in the control or Drp1 knockdown Parental cells.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/68394/elife-68394-fig5-figsupp2-v2.jpg)
 
 Cell clustering in a UMAP plot (Figure 5—figure supplement 1D, Figure 5—source data 1) revealed remarkable correspondence to the conserved cluster markers of the Parental/transformed data set (Figure 2, Figure 5—figure supplement 1D,E), allowing assignment of cluster identities of G2-M, S-early, S-late, mtDNA-lo, SloCycl-K15-hi and Cytokine to the control and Drp1 knockdown data set. Strikingly, the weaker Drp1-knockdown population exhibits expansion of the SloCycl-K15-hi cluster and reduction of the Cytokine and mtDNA-lo clusters observed in the stem/progenitor cell enriched Drp1-repressed-TF-1 population, albeit to a lesser degree (Figure 5C). This similarity in cluster organization suggests that fine-tuned Drp1 repression in Parental population establishes a stem/progenitor cell-like gene expression profile to poise them for accelerated neoplastic transformation (Figure 4D). On the other hand, the stronger Drp1 knockdown markedly reduces the abundance of the SloCycl-K15-hi cluster and exhibits overall opposite trend of cluster profile compared to the weaker Drp1 knockdown and TF-1 population (Figure 5C). KRT15 and various other marker Keratin genes are dramatically suppressed across the clusters in the stronger Drp1 knockdown and overall elevated in the weaker Drp1 knockdown (Figure 5—figure supplement 1F), confirming and expanding our findings on Krt15 protein levels (Figure 4A). Moreover, analyses of cell cycle distribution (as in Figure 2) revealed higher G2-M score, reduced S score and perturbed G1 to S reciprocity between SloCycl-K15-hi and the mtDNA-lo clusters particularly in the stronger Drp1 knockdown (Figure 5D, Figure 5—figure supplement 1G). The dramatic reduction of the SloCycl-K15-hi cluster in the stronger Drp1 knockdown cells could be due to their inability of exiting the elevated CyclinB1/CDK1-driven G2-M regulation in this cluster (Figure 5E, left). Also, the stronger Drp1 knockdown maintained marked elevation of the growth factor cyclin, Cyclin D2 and reduction of the S phase marker, PCNA, across clusters (Figure 5E, right); Cyclin E1 and Sox2 transcripts were not detected in this data set. Therefore, our data demonstrates that particularly fine-tuned Drp1 repression sustains a gene expression profile characteristic of the neoplastic stem/progenitor cell enriched Drp1-repressed-[CyclinEhi-Sox2hi-Krt15hi]-TF-1 population, which is prevented by more complete Drp1 repression that induces cell cycle disturbances.
 
@@ -86,7 +128,248 @@ Taken together, single-cell analyses of stem/progenitor cell regulators (using i
 
 ## Materials and methods
 
-## Cell culture methods
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mouse, female)</td>
+      <td>Athymic Nude mice</td>
+      <td>Jackson Lab</td>
+      <td>RRID:IMSR_JAX:002019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HaCaT</td>
+      <td>M.AtharPMID:27725709</td>
+      <td>Gift</td>
+      <td>Originally obtained from AddexBioTechno-logies</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBABE-hDrp1(plasmid) (Human)</td>
+      <td>PMID:25658204</td>
+      <td>Gift</td>
+      <td>Dr. Jerry ChipuK Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBABE-hDrp1S616A(plasmid) (Human)</td>
+      <td>PMID:25658204</td>
+      <td>Gift</td>
+      <td>Dr. Jerry ChipuK Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBABE-hDrp1S616D(plasmid) (Human)</td>
+      <td>PMID:25658204</td>
+      <td>Gift</td>
+      <td>Dr. Jerry ChipuK Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human DNM1L shRNA1(plasmid)</td>
+      <td>DharmaconPMID:26446260</td>
+      <td>Dharmacon Clone: TRCN0000001099</td>
+      <td>Our previous publication</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human DNM1L shRNA2(plasmid)</td>
+      <td>PMID:26446260</td>
+      <td>Dharmacon Clone: TRCN0000001097</td>
+      <td>Our previous publication</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Non-targeted shRNA control(plasmid)</td>
+      <td>PMID:26446260</td>
+      <td>Sigma SHC016</td>
+      <td>Our previous publication</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMX-mito-PSmOrange(fluorescent protein reporter)</td>
+      <td>PMID:30910831</td>
+      <td>Available from us on request.</td>
+      <td>Our previous publication</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Drp1(Mouse, Clone 8/DLP1)</td>
+      <td>BD Transduction</td>
+      <td>611,112RRID:AB_398423</td>
+      <td>WB (1:1000)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pDrp1 S616(Rabbit, clone D9A1)</td>
+      <td>Cell Signaling</td>
+      <td>4,494RRID:AB_11178659</td>
+      <td>WB (1:1000)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cyclin Sampler(Mouse or Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9,869RRID:AB_1903944</td>
+      <td>WB (1:1000)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin(Mouse, clone Ab5)</td>
+      <td>BD Transduction</td>
+      <td>612656 RRID:AB_2289199</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sox2(Mouse, clone 030–678)</td>
+      <td>BD Pharmingen</td>
+      <td>561,469RRID:AB_10694256</td>
+      <td>WB (1:500)IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP60(Mouse, clone 24/HSP60)</td>
+      <td>BDTransduction</td>
+      <td>611,563RRID:AB_399009</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pCyclin E- T62(Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4,136RRID:AB_2071080</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fis1(Mouse, clone B-5)</td>
+      <td>SantaCruz</td>
+      <td>sc-376447</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TOM20(Mouse, clone D8T4N)</td>
+      <td>Cell Signaling</td>
+      <td>42,406RRID:AB_2687663</td>
+      <td>WB (1:5000)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MFN2(Rabbit, clone7H42L13)</td>
+      <td>ThermoFisher</td>
+      <td>702,768</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MFN1(Rabbit, clone D6E2S)</td>
+      <td>Cell Signaling</td>
+      <td>14,739RRID:AB_2744531</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Opa1(Mouse, clone 1E8-1D9)</td>
+      <td>ThermoFisher</td>
+      <td>MA5-16149RRID:AB_11153569</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AHR(Mouse, cloneRPT1)</td>
+      <td>ThermoFisher</td>
+      <td>MA1-514RRID:AB_2273723</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CytochromeC(Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4,272RRID:AB_2090454</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cytokeratin15(Rabbit, cloneEPR1614Y)</td>
+      <td>Abcam</td>
+      <td>ab52816RRID:AB_869863</td>
+      <td>WB (1:2000)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TCDD</td>
+      <td>Sigma</td>
+      <td>48,599</td>
+      <td>Solution in Toluene</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MitoGraph v2.1</td>
+      <td>PMID:30910831PMID:25640425</td>
+      <td>https://github.com/vianamp/MitoGraph (Viana, 2020)</td>
+      <td>Rafelski lab; freely available</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromount G</td>
+      <td>Southern Biotech</td>
+      <td>0100–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FuGENE 6(Transfection Reagent)</td>
+      <td>Promega</td>
+      <td>E2691</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine 3,000(Transfection Reagent)</td>
+      <td>Invitrogen</td>
+      <td>L3000001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>sc-RNAseq data generated here in</td>
+      <td>This paper</td>
+      <td>Gene expression omnibusGSE171772</td>
+      <td>Raw, analyzed and meta data deposited in Gene expression omnibus</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cell Ranger</td>
+      <td>10 X Genomics</td>
+      <td>RRID:SCR_017344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat</td>
+      <td>https://satijalab.org/seurat/get_started.html</td>
+      <td>RRID:SCR_016341</td>
+      <td>Freely available</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture methods
 
 HaCaT cells were cultured on plastic dishes in Dulbecco’s Modified Eagle’s Medium (DMEM) with high glucose (4.5 g/L), sodium pyruvate (1 mM), L-Glutamine (4 mM), Penicillin (100 U/mL), Streptomycin (100 µg/mL), and 10% FBS using standard techniques. Transformed HaCaT cells were derived from the Parental HaCaTs and HaCaTs stably expressing mito-PSmO (and mito-roGFP) developed previously (Spurlock et al., 2019) by selecting multiple clones after treatment with the noted dose of TCDD with replenishment with fresh TCDD every 2–3 days. The key difference in cell proliferation and cell morphology between TF-1 and TF-10 populations have been confirmed in multiple cell transformation experiments.
 
@@ -94,33 +377,33 @@ Transfections were preformed using Fugene six or Lipofectamine 3000, appropriate
 
 Standard cell proliferation assay was performed as described in Parker et al., 2015. The extreme limiting dilution analysis (ELDA) of spheroid formation ability was performed by seeding 1, 10, 100, and 1000 cells per well with 24 wells per dose in a 96-well UltraLow Attachment plate and TIC-supporting media (DMEM:F12 supplemented with human growth factors as published elsewhere Spurlock et al., 2019). Wells were Supplemented with media equaling 10% of the total volume every second day. On Day 5, the total number of wells for each dose containing nascent spheroids was tabulated. The web ELDA tool was used to analyze the results (Hu and Smyth, 2009).
 
-## Immunoblotting and immunofluorescence
+### Immunoblotting and immunofluorescence
 
 Immunoblotting was performed using standard techniques. Equal cell equivalents of whole cell lysates (assessed by counting a fraction of the cell suspension) were run on 10% polyacrylamide gels and transferred to PVDF membranes followed by probing with appropriate primary and secondary antibodies. Band intensity was quantified using ImageJ and normalized by loading and experimental controls as indicated.
 
 Immunofluorescence was performed as described previously (Parker et al., 2015) on cells seeded in Nunc Lab-Tek chamber slides. Briefly, cells were fixed in freshly prepared aqueous paraformaldehyde (4%) supplemented with (4%, w/v) sucrose and permeabilized in freshly prepared Triton X-100 (0.1%) prior to staining. Immunostained cells were mounted in FluoromountG with Hoechst 33,342 (10 µg/mL).
 
-## Confocal microscopy, image processing and analysis
+### Confocal microscopy, image processing and analysis
 
 Confocal microscopy was performed on a Zeiss LSM700 microscope equipped with 405 nm, 488 nm, 555 nm, and 639 nm lasers, using the proprietary Zen Black (2012) software. Confocal micrographs were acquired with optimized laser powers and appropriate filters to minimize crosstalk, cross-excitation and bleaching. Live cells were imaged using a temperature and CO2 controlled chamber set to 37 °C and 5 % CO2. Mitochondrial potential per unit mass was determined from TMRE and Mitotracker green co-stained cells as described previously (Mitra and Lippincott-Schwartz, 2010).
 
 Image processing and analysis of relative protein abundance and localization were performed using Zen Black and Zen Blue software to obtain background corrected mean fluorescence intensities within defined regions of interest drawn on maximum intensity z-projections of optical slices. Nuclear and cytosolic regions were demarcated based on DNA stain Hoechst 33,342 and the immunostain of the molecule of interest, respectively. The [Fission] and [Fusion1/5] metrics were computed using MitoGraph v2.1 software run on 3D stacks of confocal optical slices acquired from live cells stained with Mitotracker Green, as described previously (Spurlock et al., 2019; Spurlock and Mitra, 2021). [Fission] is total mitochondria number / total mitochondrial length; [Fusion5] is (sum of top five mitochondrial length / total mitochondrial length) X 100. Mitochondrial matrix continuity was assessed from time lapse images of mito-PSmO-expressing cells after photo-conversion with a 488 nm laser within a 50 × 50 px region of interest, as described previously (Spurlock et al., 2019; Spurlock and Mitra, 2021). Microsoft Excel and IBM SPSS Statistics 23 were used to perform computations, bivariate analyses and significance testing.
 
-## Flow cytometry with TMRE
+### Flow cytometry with TMRE
 
 Cells were trypsinized and stained in suspension with TMRE and processed as described previously (Spurlock et al., 2021). Data from ~10,000 single cells were acquired using PE-Green set-ups on the LSR II flow cytometer (BD Biosciences), after gated by forward and side scatter. Analyses was done using FlowJo software using the unstained cells as controls, and histograms of TMRE fluorescence are reported here.
 
-## Tumor forming assay in mice and histochemistry
+### Tumor forming assay in mice and histochemistry
 
 We first performed a pilot experiment to determine the number of cells and time required to form xenografts with our newly derived transformed lines, using established cancer line as positive control. Thereafter, we performed the second experiment with eight animals per group, as determined based on various prior publication by our group and others. Our data includes both experiments. Five million transformed HaCaT cells were injected subcutaneously in the flank of athymic nude mice to form xenograft tumors. Prior to injection, cells were trypsinized and washed once with sterile PBS, and finally resuspended to 25,000 cells/µL in room temperature PBS with Geltrex. Tumors arising within 6–8 months were harvested for histochemical analyses. The harvested tumors were frozen unfixed in TissueTek OCT compound on dry-ice. A Cryostat was used to obtain 5 µm slices, which were then fixed using freshly made cold 4% paraformaldehyde and then stained with H&E using standard techniques.
 
-## Single-cell RNAseq and data analyses
+### Single-cell RNAseq and data analyses
 
 Trypsinized single cells were washed in PBS (without ca ++ or Mg++) with 0.04% BSA and tested for >90% viability. Single-cell analysis was performed on a 10xGenomics platform according to 3’ v3.1 NextGem Dual Index manual. The 3’-biased cDNA libraries were constructed through the following steps: cDNA fragmentation, end repair and A-tailing, and size selection by SPRIselect beads, adaptor ligation, and sample index PCR amplification, and then SPRIselect beads size selection again. The final constructed 3’-biased single-cell libraries were sequenced by Illumina Nextseq500 machine, targeting total reads per cell for 20,000 at minimum, and the sequencing cycles consisted of 28 bp for read 1, 90 bp for read 2, and 10 bp for i7 index, and 10 bp for i5 index.
 
 Count matrices were generated from the single-cell raw fastq files using 10 x genomics cellranger software (v.4.0) using hg38 reference genome provided by 10 x Genomics. Raw, analyzed and meta data are available in Gene expression omnibus (GEO GSE171772). We filtered the data to only include cells expressing at least 2000 detectable genes (using ‘nFeature_RNA’ filter); this also filtered out dead cells with >10% mt-DNA gene expression in our data set. Our data coverage included approximately ~3000 genes in average of 5000 cells in each population. The resulting count matrices were analyzed by Seurat package (v3.9.9) with the standard workflow (Butler et al., 2018; Stuart et al., 2019). After applying the (nFeature_RNA >2000), the expression data were then normalized using the NormalizeData function in Seurat and variable featuresets were identified using the FindVariableFeatures function in Seurat. Depending on the type of comparison, specific sets of samples were combined using the IntegrateData function. The integrated datasets were scaled and cells were clustered with up to 20 dimensions (dim = 1:20). We performed clustering using several resolution parameters (0.1–0.8) and visually selected optimal resolution for specific datasets. The clusters were visualized using UMAP with up to 20 dimensions. Marker genes for each cluster were calculated with the FindAllMarkers function and statistical significance was calculated by Wilcoxon Rank Sum test. Differential expression of the cluster markers was carried out using the FindMarkers function of Seurat. For this, we only used the normalized data before integration (assay ‘RNA’) using the Wilcoxon rank sum test, as suggested by Seurat documentation. For cell-cycle scoring, we use the CellCycleScoring function of Seurat, which provides scores of G2M and S phase scores and assigns cell-cycle phases based on G2-M and S scores, or in G1/G0 when both scores are low (Tirosh et al., 2016). G1 to S reciprocity was obtained as: {% [G1/S] in Cluster 3 / % [G1/S] in Cluster 5}. The cell-lineage determination and trajectory calculation were carried out using the Slingshot (Street et al., 2018) package with Seurat clusters and default parameters. The algorithm was allowed to automatically identify the start and the end clusters. GSEA analyses were performed with ranked log fold change (LFC) of markers ( > 0.1, p < 0.01, FDR q value p < 0.01) using MsigDB as described in Tanwar et al., 2016. Overrepresentation analyses were performed with genes with negative LFC in Cluster 5 using the Reactome PA package of R v 3.6.0.
 
-## Statistical analyses and replicates
+### Statistical analyses and replicates
 
 Drawing of plots and statistical analyses were performed using Excel, SPSS or R package, as appropriate. For the cytochemistry-based dot-plot analyses, the following operations were performed: signal threshold = [Median] + 1.5 X [MAD], where Median Absolute Deviation (MAD) is the median of the absolute difference of individual value from the population median. Nonetheless, the reduced quantitative nature of immunocytochemistry studies compared to immunoblotting studies is exemplified in the smaller increase in Sox2 in the TF-1 cells in immunocytochemistry (Figure 3B, C and G) in comparison to the ~8-fold increase observed in immunoblot (Figure 3A).
 

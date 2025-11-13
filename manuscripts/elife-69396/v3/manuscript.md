@@ -33,23 +33,47 @@ Consistent with the need to fine-tune the amount of CMT3 activities required to 
 
 ## Results
 
-## Cell division is linked with CG and CHG methylation through distinct mechanisms
+### Cell division is linked with CG and CHG methylation through distinct mechanisms
 
 MET1 and VIM1/2/3 are required for the faithful transmission of mCG across cell cycles (Feng et al., 2010; Finnegan and Dennis, 1993; Ning et al., 2020; Woo et al., 2008) and accordingly had increased transcript levels in rapidly dividing early embryos that also correlated well with transcripts encoding cell-cycle activators throughout embryogenesis (Figure 1A; Hofmann et al., 2019; Papareddy et al., 2020). More specifically, MET1 and VIM1/2/3 transcript levels peaked at the early heart stage and were reduced afterwards before plummeting at the mature green stage. These transcript developmental dynamics were also characteristic of transcripts encoding proteins involved in licensing DNA replication (e.g. Cyclins A2/B1, CDKB1-1, MINICHROMOSOME MAINTENANCE2), heterochromatin maintenance (e.g. DDM1) and DNA methylation (e.g. CMT3), but not randomized controls (Figure 1B, Figure 1—figure supplement 1A). Therefore, genes required for DNA methylation and heterochromatin maintenance are tightly correlated with cell-cycle activity during embryogenesis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig1-v3.jpg)
+
+**Figure 1.:** (A) Bar chart depicting total abundance (top) and heat map of individual relative transcript levels (bottom) of genes involved in CG methylation in three biological replicates each of flowers, embryos, and leaves (Hofmann et al., 2019). fb, floral buds; pg, preglobular; gl, globular; eh, early heart; lh, late heart; et, early torpedo; lt, late torpedo; bc, bent cotyledon; mg, mature green; lf, leaf. (B) Heatmap showing developmental dynamics of permuted gene set (top) median values (i.e. 1000 iterations of random sampling of 25 genes) and top-25 genes co-varying with MET1, VIM1, VIM2, and VIM3 obtained by employing nearest neighbor algorithm calculated based on Euclidean distance between genes and centroid expression of MET1, VIM1, VIM2, and VIM3 (bottom). (C) Sequence logo representing nucleotide probability relative to differentially methylated cytosines (DMC). (D) Proportion of CG and CHG differentially methylated regions (DMRs) overlapping genomic features. Venn diagram showing overlap between CG and CHG DMRs. Significance overlap of DMRs determined by Fisher's Exact test p value < 0.0001 is indicated by ****. (E and F) Violin plot showing CG (top) and CHG (bottom) methylation differences between mutant and WT leaves for CHG DMRs overlapping (E) or not overlapping (F) with CG DMRs (Stroud et al., 2013). (G and H) Box plots of average weighted methylation of CG DMRs (n = 1185) and (G) CHG DMRs (n = 1398) during development. fb, floral buds; pg, preglobular; eh, early heart; tp, torpedo (6 DAP) Pignatta et al., 2015; bc, bent cotyledon; lt-mg, late torpedo-to-early mature green Hsieh et al., 2009; mg, mature green Bouyer et al., 2017; lf, leaf. fb, pg, eh, bc and lf were from Bouyer et al., 2017; Hsieh et al., 2009; Papareddy et al., 2020; Pignatta et al., 2015. Unless stated as not significant (ns), all combinations are significant with p values < 0.001 obtained by Mann-Whitney U test. Shaded horizontal line in the background represents the median methylation value of floral buds.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Gene ontology enrichment of top-50 genes co-expressed with MET1 and VIM1/2/3 with false discovery rates < 0.05. (B and C) Scatterplots showing Pearson’s R between MET1 transcript levels (TPM; transcripts per million) and mean-weighted CG methylation of developmental CG DMRs (B) or CMT3 TPM and mean-weighted CHG methylation of developmental CHG DMRs.
 
 To test whether the patterns observed for transcripts regulating DNA methylation reflect DNA methylation dynamics, we computed differentially methylated cytosines (DMCs) across flowers, embryos and leaves (see Materials and methods). Similar to previous observations (Bouyer et al., 2017; Lin et al., 2017; Papareddy et al., 2020), 70% of DMCs occurred in the CHH context (Figure 1C). Consistent with dynamic expression patterns of MET1 and CMT3, substantial fractions of DMCs occurred in CG (20%) or CHG (10%) contexts, respectively. Therefore, DNA methylation is dynamically reconfigured in all sequence contexts during embryogenesis. In total, these symmetric DMCs represented 1185 CG (Supplementary file 1) and 1398 CHG (Supplementary file 2) differentially methylated regions (DMRs) covering 201 kb and 185.8 kb, respectively (Figure 1D, Supplementary file 1; see Materials and methods). Although a significant fraction of CG and CHG DMRs overlapped (n = 183; 7.1% of total), the vast majority of CG and CHG DMRs were located in non-overlapping genomic regions corresponding to euchromatic gene-rich and heterochromatic TE-rich regions of the genome, respectively (Figure 1D). Because CHG methylation can require CG methylation (Stroud et al., 2013), we tested whether the 15.1% of CHG DMRs overlapping CG DMRs require CG methylation. Leaves deficient in CG methylation did not have reduced CHG methylation in CHG DMRs regardless of whether or not they overlapped with CG DMRs (Figure 1E,F; data from Stroud et al., 2013). This indicates that CHG DMRs occur in distinct genomic regions and are largely independent of CG methylation.
 
 Relative to floral bud samples, CG DMRs have slightly reduced methylation in preglobular embryos, followed by increased methylation until after the torpedo stage, when levels dramatically reduce in mature green embryos and recover in leaves (Figure 1G). By contrast, methylation levels of CHG DMRs are relatively stable between floral buds and early embryos, then decrease in late embryos, reaching a minimum in leaves (Figure 1H). Accordingly, changes in CG and CHG DMR methylation levels during development were significantly correlated with MET1 (Pearson’s R = 0.8; p value = 0.03) and CMT3 (Pearson’s R = 0.74; p value = 0.05) transcript levels, respectively (Figure 1—figure supplement 1B,C). Therefore, although cell division rates are correlated with symmetric DNA methylation dynamics, distinct mechanisms reconfigure CG or CHG methylation genome-wide during embryogenesis.
 
-## Genome-wide coordination of symmetric DNA methylation
+### Genome-wide coordination of symmetric DNA methylation
 
 Because DNA methylation is concentrated on TEs (Stroud et al., 2013; Zhang et al., 2006), we next investigated global developmental dynamics of TE methylation. CG methylation on both euchromatic and heterochromatic TEs was slightly reduced in pregobular embryos and then restored to the levels found in floral buds by the early heart stage (Figure 2A,B). Whereas CG methylation of euchromatic TEs was relatively constant for the remainder of embryogenesis, heterochromatic TEs had significantly increased methylation during late embryogenesis compared to post-embryonic tissues. Consistent with heterochromatin becoming highly condensed during embryo maturation (van Zanten et al., 2011), we found that CG hypermethylation in mature green compared to bent cotyledon embryos predominantly occurred in pericentromeric genomic regions rather than gene-rich chromosomal arms (Figure 2C). CG methylation was required for the production of 24-nt siRNAs from euchromatic TEs, but only marginally for heterochromatic TEs (Figure 2—figure supplement 1A, data from Lister et al., 2008). Conversely, the loss of 24-nt siRNAs in nrpd1a mutants only had negligible effects on CG methylation of both heterochromatic and euchromatic TEs (Figure 2—figure supplement 1B,C). Therefore, siRNA production from euchromatic regions of the genome requires CG methylation, but not vice versa.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig2-v3.jpg)
+
+**Figure 2.:** (A and B) Boxplots of CG methylation percentages on euchromatic (A) and heterochromatic (B) TEs during development. fb, floral buds; sp, sperm (Ibarra et al., 2012); pg, preglobular; eh, early heart; tp, torpedo (6 DAP); bc, bent cotyledon; lt-mg, late torpedo-to-early mature green; mg, mature green; lf, leaf. Thick horizontal bars indicate medians, and the top and bottom edges of boxes represent the 75th and 25th percentiles, respectively. Shaded horizontal line in the background represents the median methylation value of floral buds. (C) Difference in CG methylation between mature green (mg) and bent cotyledon (bc) embryos were calculated in 1 kb genomic bins, which were divided into percentiles and sorted based on their distance to centromeres (1 and 100 being the tile closest and furthest from centromeres, respectively). Red color line indicates the median and the top and bottom edges of the blue colored boxes represent 75th and 25th percentiles, respectively. Vertical gray bars indicate 1.5X the interquartile range. (D and E) Boxplots of CHG methylation on euchromatic (D) and heterochromatic (E) TEs during development (key as in A). (F and G) Boxplots of CHG methylation differences between nrpd1a and WT (Col-0) tissues for euchromatic (F) and heterochromatic (G) TEs. (H) Scatterplot showing Pearson’s correlation coefficients (R). Differences in mCHH and mCHG between bent cotyledon (bc) and torpedo stage (tp) embryos are shown on x- and y-axes, respectively. Histograms show the number of TEs in thousands (K).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Boxplot illustrating relative levels of 24-nt siRNAs in met1 relative to WT Lister et al., 2008; Euchromatic and heterochromatic TEs are abbreviated as Euc. TEs and Het. TEs, respectively. (B and C) Boxplots of CG methylation differences between nrpd1a and wild-type tissues for euchromatic (B) and heterochromatic (C) TEs. fb, floral buds; eh, early heart; bc, bent cotyledon; lf, leaf. Thick horizontal bars indicate medians, and the top and bottom edges of boxes indicate the 75th and 25th percentiles, respectively.
+
 Global CHG methylation of euchromatic and heterochromatic TEs was higher in embryos compared to leaves (Figure 2D,E). Similar to previous observations for CHH methylation (Papareddy et al., 2020), siRNA-deficient nrpd1a mutant tissues had reduced CHG methylation on euchromatic or heterochromatic TEs in all or only embryonic samples, respectively (Figure 2F,G). Intriguingly, increased CHH methylation on heterochromatic TEs was significantly correlated with decreased CHG methylation during late stages of embryogenesis when cell division rates are reduced (Figure 2H). Therefore, CMT3-dependent CHG and CMT2-dependent CHH methylation of heterochromatic TEs are positively and negatively correlated with cell division rates, respectively.
 
-## Repression of CMT3 during embryogenesis regulates methylome dynamics
+### Repression of CMT3 during embryogenesis regulates methylome dynamics
 
 CMT3 is recruited to loci by binding to H3K9me2 deposited by SUVH4/5/6 histone methyltransferases (Du et al., 2012; Jackson et al., 2002; Lindroth et al., 2001; Stroud et al., 2014). CMT3 and KYP, which is the major SUVH4 H3K9 methyltransferase, were dynamically expressed according to patterns characteristic of other cell-cycle regulated genes and CHG methylation dynamics (Figure 1B,H, Figure 3A). More specifically, CMT3 and KYP were highly expressed in rapidly dividing early embryos and had reduced expression in late embryos until the mature stage, where they were barely detectable. Altogether, our results are consistent with the idea that the more rapid cell divisions in early embryos demand higher levels of CMT3 and KYP to maintain mCHG through the cell cycle. Moreover, IBM1, which encodes an H3K9me2 demethylase and prevents CMT3 recruitment to gene bodies (Miura et al., 2009; Saze et al., 2008), is dynamically expressed during embryogenesis in a pattern that strongly resembles CMT3 and KYP (Figure 3A). Therefore, co-expression of IBM1 with CMT3 and KYP likely helps limit ectopic H3K9me2 and methylated CHG on gene bodies during embryogenesis as has been demonstrated during post-embryonic development (Inagaki et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig3-v3.jpg)
+
+**Figure 3.:** (A) Barplots illustrating transcript levels of CMT3 (top), KYP (middle), and IBM1 (bottom) in flowers, embryos, and leaves. fb, floral buds; pg, preglobular; gl, globular; eh, early heart; lh, late heart; et, early torpedo; lt, late torpedo; bc, bent cotyledon; mg, mature green; lf, leaf. (B) Line graphs showing the relative RNA abundance of miR823 (blue), CMT3 RNA (yellow), and miR823:CMT3 cleavage products (pink). (C) Log2-transformed relative CMT3 target transcript levels in bent cotyledon embryos (8 DAP; day after pollination) from WT plants (Col-0), or cmt3-11 plants expressing either miR823-cleavable CMT3 (cCMT3) or miR823-resistant CMT3 (rCMT3) versions. Each dot represents the mean of two technical replicates of embryos and bars represent mean values. Error bars in A-C represent standard errors of the means of three biological replicates. Asterisks indicate whether the transcript levels observed in mir823 mutant, cCMT3 and rCMT3 embryos were significantly different compared to WT (Two-tailed Student’s t tests; ****, ***, **, and * represent p values < 0.0001, < 0.001, < 0.01, and < 0.05, respectively). Color-coded according to the key. (D) Boxplots of CHG methylation on transposons with ≥five informative cytosines covered by ≥four reads and classified as either euchromatic or heterochromatic in Papareddy et al., 2020. pValues < 0.0001 based on Mann-Whitney U tests of methylation differences between WT and either mutant or transgenic bent cotyledon embryos are represented by ****. (E) Metaplots of average CHG methylation percentages across genes bodies from transcription start sites (TSS) to transcription end sites (TES), 1.5 kb upstream and 1.5 kb downstream of genes in bent cotyledon embryos. Color-coded according to the key. (F and G) Boxplots of CHG methylation on transposons (F) and metaplots of CHG methylation on genes (G) in three-week old plants as described in D and E, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Diagram of sequences deleted by CRISPR/Cas9 approach from MIR823A locus in miR823-1 and miR823-2. (B) Relative levels of miR823 in WT (Col-0), mir823-1 and mir823-2 bent cotyledon embryos (~8 DAP; days after pollination). Stem-loop qPCR values were normalized to U6 and then divided by the levels observed in wild-type plants before log2-transformation. Each dot represents the mean of two technical replicates of embryos, and error bars indicate standard error. p Values < 0.01 based on two-tailed Student’s t-test of differences between WT and miR823 mutants are represented by *. (C) Schematics of miR823 target site in CMT3 transcripts. Base-pairing interactions of miR823 with either wild-type target sites (cleavable, cCMT3) or miRNA-resistant target sites (resistant, rCMT3) are indicated above and below, respectively. Mutations introduced are labeled in red, and Watson-Crick base-pairing (I), non-base-pairing (X), and G:U wobbles (O) for each pair are indicated. (D) Relative CMT3 transcript levels in two-week old leaves (left) or floral buds (right) from WT plants (Col-0), mir823-1, mir823-2, or cmt3-11 plants carrying either miR823-cleavable CMT3 (cCMT3) or miR823-resistant CMT3 (rCMT3) transgenes. Bars represent mean values and error bars indicate standard errors. Asterisks indicate whether the transcript levels observed in mir823 mutants, or cCMT3 and rCMT3 transgenics were significantly different compared to WT (Two-tailed Student’s t-tests; ****, ***, **, and * represent p values < 0.0001, < 0.001, < 0.01, and < 0.05, respectively). (E) Boxplots of CG (top) and CHH (bottom) methylation on euchromatic and heterochromatic transposons with ≥4 informative cytosines covered by ≥5 reads. (F) Metaplots of average CG (top) and CHH (bottom) methylation percentages across genes bodies, and 1.5 kb upstream and downstream regions. Genotypes are color-coded according to the key. (G) Integrative Genomics Viewer screenshot of CMT3 locus showing normalized coverage of methylC-seq reads compared to WT (see Materials and methods). (H) CMT3 copy number quantification based on qPCR in 3-week-old leaves from WT (Col-0), or independently generated rCMT3 or cCMT3 transgenics in the cmt3-11 background.
 
 We previously found that miR823-directed cleavage of CMT3 transcripts is highly enriched in embryos directly after morphogenesis (Plotnikova et al., 2019). In contrast to CMT3 transcript dynamics, miR823 accumulates during embryogenesis, and miR823:CMT3 cleavage products were enriched and significantly detected specifically at late heart and early torpedo stages precisely when CMT3 transcript levels were sharply decreasing (Figure 3B). Based on these observations, we hypothesized that miR823-mediated repression of CMT3 contributes to the reduced CHG methylation levels observed during late embryogenesis.
 
@@ -59,17 +83,33 @@ As an independent approach, we used site-directed mutagenesis to introduce synon
 
 To test whether miR823-directed repression of CMT3 and prevention of CHG methylation of genes that we observed in embryos persists after embryogenesis, we next profiled methylomes of cCMT3 and rCMT3 plants 3 weeks after germination. We chose to focus on rCMT3 plants because of the large amount of hypermethylation observed in these lines during embryogenesis, and used cCMT3 plants as controls. Although TEs had increased CHG methylation levels in both cCMT3 lines relative to WT, protein-coding genes were not affected (Figure 3F,G). In stark contrast, TEs and genes were hypermethylated in both rCMT3 lines compared to cCMT3 or WT plants, and only slightly reduced relative to the levels observed in rCMT3 bent cotyledon embryos (Figure 3F,G). Together with miR823-independent processes (e.g. IBM1 removal of H3K9me2), miR823-directed repression of CMT3 is therefore required to prevent the hypermethylation of protein-coding genes that can be maintained weeks after the completion of embryogenesis.
 
-## Chromatin features associated with CMT3-induced gene methylation
+### Chromatin features associated with CMT3-induced gene methylation
 
 To yield insights into how genes are hypermethylated upon the derepression of CMT3, we determined whether certain genomic features were associated with CMT3-induced genic methylation. Toward this end, we first selected 22,637 nuclear-encoded protein-coding genes that had ≥5 methylC-seq reads overlapping CHG sites in rCMT3 line #3 and that were expressed (i.e. ≥1 TPM in any tissue based on Hofmann et al., 2019). We chose rCMT3 line #3 because it had the strongest genome-wide CHG hypermethylation and focussed on expressed genes to exclude those that may have TE-like features, which could confound analysis. We then used k-means clustering of the differences between rCMT3 line #3 and WT bent cotyledon embryos to partition this set of genes into four clusters (Figure 4—figure supplement 1A). These clusters were comprised of 1439–7882 genes (6.4–34.8% of total) and ranged from groups of genes that had no methylation changes (cluster 1) to those that were strongly hypermethylated with 3’ biases (cluster 4) in rCMT3 compared to WT embryos (Figure 4A,B, Figure 4—figure supplement 1B,C). The same patterns were observed across these clusters in embryos from an independently generated rCMT3 transgenic (line #1), which indicates that CMT3-induced hypermethylation is not stochastic (Figure 4—figure supplement 1B,C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig4-v3.jpg)
+
+**Figure 4.:** (A) Proportion of genes in each cluster partitioned using k-means clustering algorithm based on differences in mCHG between rCMT3 (line #3) and WT embryos. Unaffected genes (yellow), low mCHG gain genes (red), moderate mCHG gain genes (blue), and high mCHG gain genes (gray). Green inner circle represents all expressed genes. (B–D) Metaplots showing mCHG on gene clusters in bent cotyledon embryos from rCMT3 line #3 (L #3) (B), mCG on gene clusters in WT bent cotyledon embryos (C) and mCHG in rCMT3 (L #3) 3-week-old plants (3WK) (D). Shaded ribbons in metaplots represent standard deviations. (E–I) Metaplots showing normalized reads per genomic content (RPGC) average values of histone variant H2A (E), H2A.W (F) (Yelagandula et al., 2014), H3K9me2 (G) (Stroud et al., 2014), H2A.Z (H) (Yelagandula et al., 2014), and H3K4me2 (I) (Maher, 2020). p Values < 0.0001 obtained by Mann-Whitney U test based on differences between genes in cluster 1 or four compared to all genes is represented by ****. (J) Metaplots showing mCHG on gene clusters in seventh generation ddm1 mutants (Stroud et al., 2013). (K) Normalized ATAC-seq reads (Zhong et al., 2021) representing accessibility of heterochromatic TEs (Het.TEs) in WT and ddm1 mutants as defined in Papareddy et al., 2020.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Determining the optimal K-value based difference in genic mCHG between rCMT3 (Line #3) and wild-type bent cotyledon embryos using the elbow method. Four clusters were selected as optimal because the total within cluster sum of squares (WSS) became marginal after a K value of four. (B and C) Barplots showing median mCHG gain on annotated gene bodies in rCMT3 (Line #1) (B) and rCMT3 (Line #3) (C) compared to wild-type bent cotyledon embryos. (D) Overlap between expressed genes used for K-means clustering in main Figure 4A and all genes classified as teM in Bewick et al., 2016. (E) Number of total intersected teM in each gene cluster. (F-G) Metaplot showing average weighted methylation rate in rCMT3 Line #3 (F) and WT (G) after excluding 272 teM intersecting genes. (H) Barplots illustrating median gain of methylation in rCMT3 (Line #1) (top) and rCMT3 (Line #3) (bottom) compared to wild-type bent cotyledon embryos in various trinucleotide cytosine contexts where W = A or T and D ≠ C. p Values <0.05 and <0.0001 obtained by Mann Whitney U test based on difference in DCG methylation between rCMT3 and WT in bent cotyledon embryos were represented by * and **** respectively. (I-M) Metaplots showing nucleosome occupancy obtained from MNase-seq data (Rutowicz et al., 2019) (I), enrichment of linker histone 1 (H1) on gene clusters (Choi et al.) (J), normalized reads per genomic content (RPGC) average value of histone variant H2A.X (Yelagandula et al., 2014) (K), H3K9Ac (Wang et al., 2019) (L) and DNase-Seq signal on gene clusters representing accessibility (Choi et al.) (M). (N) Violin plot showing distances between genes and centromeres per cluster. White dots indicate the median and vertical black bars indicate 1.5X interquartile ranges. (O) Metaplot of CG methylation in differences in ddm1 compared to WT (Stroud et al., 2013).
 
 TE-like methylated (teM) genes generally have non-CG methylation on their gene bodies without strong 3’ biases (Kawakatsu et al., 2016; Bewick et al., 2016). To check whether rCMT3-induced genic CHG methylation is affected by teMs, we intersected our gene clusters with previously defined teMs (Bewick et al., 2016) and found that only 272 of 22,637 (0.012%) expressed genes overlapped teMs (Figure 4—figure supplement 1D). Hypermethylated clusters (clusters 3 and 4) contained more teMs compared to unmethylated or lowly methylated gene clusters (Figure 4—figure supplement 1E). However, rCMT3 embryos still had genic CHG hypermethylation and 3’ biases after excluding teM genes, whereas, WT embryos remained devoid of CHG methylation (Figure 4—figure supplement 1F,G). Therefore, our analysis is not confounded by either TEs or teM genes. As expected, CMT3-induced hypermethylation predominantly occurred in the CMT3-preferred CWG context (Gouil and Baulcombe, 2016; Li et al., 2018) although hypermethylation was also found in CCG and slightly, but significantly in non-CHG contexts, including CG characteristic of gbM similar to previous observations (Figure 4—figure supplement 1H; Wendte et al., 2019).
 
 Consistent with methyltransferases preferring nucleosome-rich DNA as substrates (Chodavarapu et al., 2010; Du et al., 2012), CMT3-induced hypermethylation was proportional to patterns of nucleosome occupancy and biased towards the 3’ ends of gene bodies, which was highly similar to CG methylation (Figure 4C, Figure 4—figure supplement 1I). Nucleosome spacing is promoted by linker histone 1 (H1) (Choi et al., 2020; Fan et al., 2003) and CMT3-induced CHG hypermethylation was proportional to H1 levels across gene bodies (Figure 4—figure supplement 1J). Because nucleosome occupancy was not as readily distinguishable between clusters of affected genes (i.e. clusters 2–4) (Figure 4—figure supplement 1I,J), we hypothesized that histone variants conferring differential nucleosome stabilities and chromatin accessibility may influence ectopic CMT3-induced hypermethylation (Osakabe et al., 2018). Indeed, CHG hypermethylation across the four groups was positively correlated with levels of the stable histone variants H2A, H2A.X and most notably H2A.W that was recently shown to be required for CHG methylation (Figure 4E,F, Figure 4—figure supplement 1K; Bourguet et al., 2021; Yelagandula et al., 2014). CMT3-induced CHG hypermethylation was also tightly associated with transcriptionally repressive H3K9me2 marks, which are required for interdependent feedback loops with CMT3 (Figure 4G). It was inversely related to H2A.Z (Figure 4H) and marks indicative of active transcription including H3K4me3 and H3K9ac (Figure 4I, Figure 4—figure supplement 1L). Further suggesting that deregulated CMT3 prefers features typically associated with inaccessible chromatin, genes with CHG hypermethylation had reduced chromatin accessibility (Figure 4—figure supplement 1M) and were generally closer to heterochromatic centromeres (Figure 4—figure supplement 1N). Moreover, the most CMT3-induced hypermethylated genes (i.e. cluster 4) were also substantially hypermethylated in ddm1 mutants (Figure 4J) that have increased heterochromatic accessibility (Figure 4K) and decreased stability (Mathieu et al., 2003; Soppe et al., 2002; Zhong et al., 2021). Although CMT3-induced CHG hypermethylation was strongly associated with CG gene-body methylation (gbM), both the independence of developmental mCHG DMRs (Figure 1E,F) and the gain of mCHG being associated with proportional loss of mCG over genes in ddm1 mutants (Figure 4—figure supplement 1O; Ito et al., 2015; Stroud et al., 2013; Zemach et al., 2013) indicate that mCG is not strictly required for ectopic CHG hypermethylation of genes. Instead, the associations between chromatin features of genes and their propensity for CMT3-induced hypermethylation altogether suggest that excessive CMT3 is ectopically recruited to genic chromatin characterized by nucleosome stability and inaccessibility.
 
-## Impact of CMT3-induced hypermethylation on gene expression
+### Impact of CMT3-induced hypermethylation on gene expression
 
 Because CHG methylation of TEs contributes to their repression (Stroud et al., 2014), we tested whether CMT3-induced ectopic CHG hypermethylation of protein-coding genes also represses their expression levels. Namely, we performed mRNA-seq on three biological replicates of WT and rCMT3 (line #s 1 and 3) bent cotyledon embryos. Principal component analysis revealed that WT and rCMT3 biological replicates clustered according to genotype and in similar positions along the dominant principal component axis corresponding to developmental time (Figure 5A). This indicates that our mRNA-seq datasets captured gene expression variation inherent to WT and rCMT3 genotypes, as well as that our staging was accurate. Differences in global transcript levels were not observed across the four clusters with increasing levels of CMT3-induced CHG methylation suggesting that ectopic CHG methylation alone was not sufficient to globally repress gene expression (Figure 5B, Figure 5—figure supplement 1A). We then identified 916 genes that were differentially expressed between rCMT3 and WT embryos (i.e. ≥2-fold differences and adj. p values ≤ 0.01; see Materials and methods) (Figure 5—figure supplement 1B,C and Supplementary file 3). Differentially expressed genes (DEGs), defined by comparing either rCMT3 line #1 or rCMT3 line #3 with WT, were commonly detected in both independently generated lines with 87.5% of genes overlapping (Figure 5—figure supplement 1C). In both rCMT3 lines, DEGs were less hypermethylated compared to all expressed genes, which indicates that the vast majority of changes in gene expression observed upon up-regulation of CMT3 were not directly due to their hypermethylation (Figure 5—figure supplement 1D). We then examined whether hypermethylation affects a subset of genes by computing DMRs in rCMT3 compared to WT bent cotyledon embryos and identified 4603 (97% of total) and 127 (3% of total) CHG hypermethylated and hypomethylated DMRs, respectively (Supplementary file 4; see Materials and methods). Further suggesting that CHG hypermethylation has minimal direct consequences on the expression of most genes under the conditions examined, we found that only a small but significant number of the down-regulated genes (including 1.5 kb regions flanking their transcriptional units) overlapped DMRs (21 of 542, 3.8% of total; Fisher's exact test, p value = 1.29e-05) (Figure 5—figure supplement 1E). Consistent with CMT3-induced hypermethylation repressing their expression, the DMRs overlapping these 21 down-regulated genes were significantly CHG hypermethylated compared to genomic bins (Figure 5C). Moreover, the stronger-expressing rCMT3 line #3 had significantly higher CHG methylation compared to rCMT3 line #1 (Figure 5C). This further supports that increased CMT3 levels lead to more ectopic CHG methylation (Inagaki et al., 2010; Inagaki et al., 2017). However, the transcript levels of these 21 genes were only moderately reduced in rCMT3 line #3 compared to rCMT3 line #1, suggesting non-linear relationships between gene hypermethylation and transcript levels (Figure 5—figure supplement 1F). Strikingly, transcripts corresponding to these 21 CMT3-induced hypermethylated and down-regulated genes were rapidly increasing when embryos were transitioning to the maturation phase (Figure 5D). Moreover, 10 of these 21 genes (Fisher’s exact test, P value = 1.49e-13), were among a group of 381 genes previously identified to also be rapidly activated at these time points (Figure 5—figure supplement 1G; Hofmann et al., 2019). Nearly half of these 381 genes (n = 183, 48%) were also among the 563 significantly down-regulated genes in rCMT3 embryos compared to WT. Altogether, our expression and methylation analyses suggest that when CMT3 is not properly repressed it can induce ectopic hypermethylation of genes. Furthermore, we suggest that CMT3-induced hypermethylation of gene promoters or bodies can reduce the steady state levels of transcripts from genes that are in the process of switching from silent to active transcriptional states. However, additional experiments are required to directly test whether gene-body CHG methylation can repress gene expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig5-v3.jpg)
+
+**Figure 5.:** (A) Principal component analysis of mRNA-seq from three biological replicates of rCMT3 and WT (Col-0) bent cotyledon embryos generated in this study along with floral buds, embryos, leaves, from Hofmann et al., 2019 and color-coded according to the key. (B) Violin plot showing transcript fold changes in rCMT3 (line #3) compared to WT (Col-0) bent cotyledon embryos per cluster as defined in Figure 4A. (C) Boxplot showing difference in methylation comparing rCMT3 to WT in down-regulated genes (DRG) intersecting with DMRs and similarly sized genomic bins of 213 bp as controls. p Values < 0.001 and < 0.0001 based on Mann-Whitney U tests are represented by *** and ****, respectively. (D) Boxplot (top) and heatmap (bottom) of transcript levels of DRGs intersecting DMRs during embryogenesis. p Values < 0.001 based on differences in transcript levels between mature green (mg) and all other stages of embryogenesis based on Mann-Whitney U test are represented by ***. (E) Integrative genome viewer (IGV) screenshot of representative downregulated genes associated with DMRs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69396/elife-69396-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Violin plot showing expression fold change in rCMT3 (line #3) compared to WT (Col-0) bent cotyledon embryos per cluster as defined in Figure 4A. (B) Scaled heatmap of differentially expressed genes (DEGs) when rCMT3 bent cotyledon are compared to WT with upregulated (URGs) and downregulated genes (DRGs) shown at the top and bottom, respectively. (C) Three-way Venn diagram showing the proportion of DEGs overlapping with each labelled comparison. (D) Metaplot of difference in CHG methylation in rCMT3 (line #1) (red) or rCMT3 (line #3) (blue) compared to WT for all expressed genes (AEGs, left), downregulated genes (DRGs, middle) and upregulated genes (URGs, right). (E) Venn diagram showing overlap between hyper differentially methylated regions (DMRs) and down regulated genes (DRGs) in rCMT3 compared to WT bent cotyledon embryos. (F) Boxplot showing log2 fold-change (FC) of transcript levels between rCMT3 and Col-0 (WT) for all DRGs intersecting DMRs (top). Heatmap showing fold-change of individual DRGs (bottom). (G) Venn diagram showing overlap between genes rapidly activated at mature green stage (cluster D6 genes based on Hofmann et al., 2019) and 21 DRGs/DMRs.
 
 ## Discussion
 
@@ -89,46 +129,168 @@ Transcriptional (Ning et al., 2020), post-transcriptional (Figure 3), post-trans
 
 ## Materials and methods
 
-## Plant material and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>CHROMOMETHYLASE 3 (CMT3)</td>
+      <td>TAIR</td>
+      <td>AT1G69770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>MICRORNA 823A (MIR823A)</td>
+      <td>TAIR</td>
+      <td>AT3G13724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>miR823-cleavable CMT3 (cCMT3)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pAlligatorR43/promoterCMT3::genomicCMT3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>miR823-resistant CMT3 (rCMT3)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>pAlligatorR43/promoterCMT3::resistantCMT3 (generated from cCMT3 with site-directed mutagenesis)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAlligatorR43 (plasmid)</td>
+      <td>DOI:10.7554/eLife.04501</td>
+      <td></td>
+      <td>mCherry selection marker</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHSE401 (plasmid)</td>
+      <td>Addgene</td>
+      <td>#62201</td>
+      <td>CRISPR/Cas9 plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCBCD-T1T2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>#50590</td>
+      <td>CRISPR/Cas9 plasmid</td>
+    </tr>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>cmt3-11T</td>
+      <td>NASC</td>
+      <td>SALK_148381</td>
+      <td>T-DNA insertion mutant of CMT3</td>
+    </tr>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>mir823-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>miR823 knockout mutant</td>
+    </tr>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>mir823-2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>miR823 knockout mutant</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>#E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Roche</td>
+      <td>#06402712001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>TRIzol</td>
+      <td>Invitrogen</td>
+      <td>#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Lightcycler 96</td>
+      <td>Roche Diagnostics</td>
+      <td>Version 1.1.0.1320</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and growth conditions
 
 Arabidopsis thaliana accession Columbia-0 (Col-0) were grown in controlled growth chambers at 20–22°C under a 16 hr light/8 hr dark cycle with incandescent lights (130 to 150 µmol/m2/s).
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
 The control genomic CMT3 construct (miR823-cleavable; cCMT3) was generated by PCR amplification of the CMT3 locus including 1408 bp upstream and 730 bp downstream of the TAIR10-annotated transcription start and end sites, respectively. PCR primers included overhangs for subsequent Gibson assembly into MultiSite-Gateway destination vector pAlligatorR43 (Kawashima et al., 2013). The miR823-resistant CMT3 construct (rCMT3) was generated by PCR site-directed mutagenesis (Q5 Site-Directed Mutagenesis Kit, New England Biolabs) using the cCMT3 construct as a template to introduce six silent mutations as shown in Figure 3—figure supplement 1C. Both cCMT3 and rCMT3 construct sequences were analyzed for mutations using Sanger sequencing. All primers used are listed in the Supplementary file 5. The constructs were transformed into cmt3-11T (SALK_148381) using the Agrobacterium floral dip method (Clough and Bent, 1998), and transformants were selected based on seed-coat RFP signal under fluorescent light (Zeiss SteREO DiscoveryV.8). Multiple independent first-generation transgenic (T1) lines were identified for cCMT3 and rCMT3, and three and four were characterized in bent cotyledon embryos for each, respectively.
 
-## Generation of CRISPR/Cas9 knockout mutants for MIR823
+### Generation of CRISPR/Cas9 knockout mutants for MIR823
 
 CRISPR/Cas9 knockout mutants in MIR823 were created by using a modified pHSE401 binary vector (Addgene #62201) according to the protocol detailed by Xing et al., 2014. Primers containing the sequences for the two guide RNAs targeting the MIR823 locus flanking the miR823 sequence (Figure 3—figure supplement 1A and Supplementary file 5) were amplified together with the pCBCD-T1T2 plasmid (Addgene #50590), and the resulting PCR product was subsequently assembled into the pHSE401 binary vector using GoldenGate cloning method (Xing et al., 2014). Plants were transformed with the floral dip method as described above; and Cas9-positive seeds were selected based on the presence of seed coat RFP signal. Deletion lines were identified with PCR using primers flanking gRNA-targeted sites (Figure 3—figure supplement 1A and Supplementary file 5). Deletion mutants were confirmed and mapped by Sanger sequencing.
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 Leaves (two-week old rosettes), floral clusters (five weeks) and bent cotyledon embryos (eight DAP) were homogenized in 500 μl TRIzol reagent (Invitrogen) and total RNA was isolated and purified according to manufacturer’s recommendations. For mRNA, 200 ng of total RNA was used for cDNA synthesis with SuperScript III Reverse Transcriptase (Thermo Fisher Scientific). The cDNA was diluted two-fold for embryos or ten-fold for leaves and floral buds with nuclease-free water. Two μL of diluted cDNA was used as a template for the qRT-PCR with Fast SYBR Green Master Mix (Roche) on a LightCycler 96 instrument (Roche) with two technical replicates for each biorep. For miRNA823 quantification, corresponding stem-loop primers were added to the RT reaction (adapted from Yang et al., 2014) and miR823 levels were measured using Fast SYBR Green Master Mix (Roche) with miRNA823-specific forward primer and a stem-loop specific universal reverse primer. U6 snRNA was used as the reference RNA (adapted from Shen et al., 2010). Primers used for qRT-PCR are listed in Supplementary file 5.
 
-## Sample size estimation, embryo isolation, and nucleic acid extraction
+### Sample size estimation, embryo isolation, and nucleic acid extraction
 
 Sample sizes were determined based on a combination of the required statistical power, ability to acquire samples and cost of the experiments. Bent cotyledon embryos were dissected from seeds 8 days after pollination and also selected based on morphology to ensure accurate staging. Embryos were serially washed 4× with nuclease-free water under an inverted microscope. Approximately 50 embryos per replicate were isolated and stored at −80°C until further use. RNA was isolated as previously described (Lutzmayer et al., 2017; Plotnikova et al., 2019). Genomic DNA was extracted from embryos and 3-week old plants using Quick-DNA Micro prep Kit (Zymo D3020) according to the recommendations of the manufacturer.
 
-## DNA methylation profiling and analysis
+### DNA methylation profiling and analysis
 
 MethylC-Seq libraries were generated as described previously (Papareddy et al., 2020) and sequenced in single-read mode on an Illumina HiSeq 2500 or Nextseq 550 instrument. Adapters and the first six bases corresponding to random hexamers used during the pre-amplification step were trimmed from MethylC-seq reads using Trim Galore. Bisulfite-converted reads were aligned against the TAIR10 genome (Lamesch et al., 2012) in non-directional mode using Bismark (bismark --non_directional -q --score-min L,0,–0.4) (Krueger and Andrews, 2011). Methylpy software was used to extract weighted methylation rates for each available cytosine from BAM files containing only deduplicated and uniquely mapped reads (Schultz et al., 2015). Reads mapping to the unmethylated chloroplast genome were used to calculate bisulfite conversion rates. FASTQ files obtained from publicly available methylomes generated from sperm (Ibarra et al., 2012), early torpedo (Pignatta et al., 2015), mid-torpedo to early maturation (Hsieh et al., 2009), mature green embryos (Bouyer et al., 2017) and DNA methylation mutant leaves (Stroud et al., 2013) were also processed in a similar manner except that alignments were performed in directional mode and only 5′ end nucleotides of the reads with m-bias were removed. Differentially methylated regions (DMRs) were identified using Methylpy (Schultz et al., 2015). Briefly, two biological replicates were pooled and differentially methylated cytosines (DMCs) were identified by root mean squared tests with false discovery rates ≤ 0.01. DMRs were defined by collapsing DMCs with ≥4 reads within 500 bps to single units requiring ≥eight and ≥4 DMCs for CG and CHN sites, respectively (N = A,T,C,G; H ≠ G). Using these parameters, DMRs were identified across floral bud, early heart, early torpedo, bent cotyledon, mature green and leaf samples, and merged into a single bedFile using the BEDtools merge function (Quinlan and Hall, 2010). Resulting DMRs were then used to calculate the methylation rate on all analyzed tissues and genotypes. We assigned that a gene and a DMR are associated if the DMR is overlapping within 1.5 kb upstream or downstream of TAIR10 annotated gene bodies using BEDtools closest function. For down-regulated genes overlapping with DMRs with above criteria, significance was tested using BEDtools fisher function with nuclear genome as a background control.
 
-## mRNA profiling and analysis
+### mRNA profiling and analysis
 
 Smart-seq2 mRNA libraries were generated from 1 µl of the 7 µl bent cotyledon embryo total RNA as previously described (Hofmann et al., 2019; Picelli et al., 2014). Both amplified cDNA and final libraries were inspected using Agilent HS NGS Fragment Kit (DNF-474) to control for library quality and proper length distributions. Libraries were sequenced in single-read mode on an Illumina HiSeq 2500 or NextSeq 550 machine. Raw FASTQ files from technical replicates were merged, quality filtered and trimmed for adapter sequences with Trim Galore using default parameters. Trimmed reads were aligned using STAR (Dobin et al., 2013) against a genome index generated using the TAIR10 genome fasta file and all transcripts in the GTF of Ensembl build TAIR10 annotation set (release version 44). Aligned transcriptome bam files were used to quantify read counts per gene and transcript abundance using RSEM (Li and Dewey, 2011). Along with the transcriptomes generated in this study, publicly available embryonic transcriptomes Hofmann et al., 2019 used for PCA were analyzed in the same fashion as described above (Supplementary file 6). Prior to PCA (Figure 5A), read counts derived from nuclear protein-coding genes were subjected to variance stabilizing transformations using DESeq2 (Love et al., 2014). Differential gene expression analysis was performed using DESeq2 for genes with at least five aligned reads. Genes with ≥2-fold differences and adjusted p-value ≤ 0.01 were classified as differentially expressed genes (DEGs). Nearest-neighbor genes in Figure 1A,B were classified based on Euclidean distance. First, the centroid expression of MET1 and VIM1/2/3 was calculated for all tissue types represented in the developmental time series. This centroid value was then used to calculate Euclidean distance of all TAIR10-annotated protein-coding genes and sorted based on their distances.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 ChIP-seq data for H2A variants and H3K9me2 were downloaded from GSE50942 (Yelagandula et al., 2014) and GSE51304 (Stroud et al., 2014), respectively. H3K9 acetylation marks were from GSE98214 (Wang et al., 2019). H3K4me3 marks were obtained from GSE152243 (Maher, 2020). All FASTQ files were trimmed and quality filtered using Trim Galore default parameters. Trimmed reads were aligned against the TAIR10 genome using BWA-MEM (Li and Durbin, 2009). Multi-mapping reads and clonal duplicates were removed using MarkDuplicates from the Picard Tools suite (Toolkit, 2019). The resulting BAM files containing alignments were sorted, indexed and used as input for the bamCoverage function of deepTools (Ramírez et al., 2014) to obtain genome normalized coverage with parameters --normalizeUsing 'RPGC'. Processed bigwig files for H1 Chromatin Affinity purification followed by sequencing (ChAP) and DNase-seq datasets were obtained from GSE122394 (Choi et al., 2020). MNase-Seq data was obtained from GSE113556 (Rutowicz et al., 2019). ATAC-seq processed bigwig files for WT and ddm1 mutants were from GSE155503 (Zhong et al., 2021).
 
-## Metaplots
+### Metaplots
 
 ChIP, ATAC, MNase, DNase, and MethylC-seq metaplots were plotted using the R library Seqplots (Stempor and Ahringer, 2016). Body, upstream, and downstream regions of TEs or genes were split into equal-sized bins, and the average levels for each bin was calculated and plotted.
 
-## CMT3 transgene copy number estimation
+### CMT3 transgene copy number estimation
 
 CMT3 transgene copy number was estimated using two methods: qPCR and coverage calculation. For the qPCR method, genomic DNA was extracted from leaves of three-week old plants using the CTAB DNA isolation method (Aboul-Maaty and Oraby, 2019). Relative transgene copy number was determined by using the qPCR-based method as described (Shepherd et al., 2009). ACTIN2 was used as a control gene while transgene copy number was calculated based on CMT3 levels. For the coverage method, Bismark-aligned and deduplicated BAM files from WT, cCMT3 and rCMT3 lines were processed with DeepTools to obtain normalized genome coverage as bins per million mapped reads (BPM) units with the bamCoverage function and following parameters: --binsize 50 --skipNAs --normalizeUsing 'BPM' --ignoreForNormalization mitochondria chloroplast. The resulting bigwig files were used to calculate genome-wide coverage fold-changes relative to WT using the deepTools function bigwigCompare --skipNAs --operation ‘ratio’. CMT3 locus was displayed with the Integrative Genomics Viewer (IGV).
 
-## Availability of data and material
+### Availability of data and material
 
 All sequencing data generated in this study are available at the National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO, https://www.ncbi.nlm.nih.gov/geo/) under accession number GSE171198. ChIP-Seq and mRNA-seq bioinformatic analysis pipelines were based on Nextflow (Di Tommaso et al., 2017) and the nf-core framework (Ewels et al., 2020) are available at https://github.com/Gregor-Mendel-Institute/RKP2021-CMT3, [copy archived at swh:1:rev:89d7e2ea78af1969bb161640baed09296ed2485f (Papareddy, 2021)].

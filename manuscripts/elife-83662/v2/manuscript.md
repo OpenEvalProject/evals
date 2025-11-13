@@ -15,21 +15,21 @@
 
 ### Affiliations
 
-1. https://ror.org/03dbr7087 Department of Mechanical Engineering, University of Toronto Toronto Canada
-2. https://ror.org/00t33hh48 School of Science and Engineering, The Chinese University of Hong Kong-Shenzhen Shenzhen China
-3. https://ror.org/00f1zfq44 Institute of Reproductive and Stem Cell Engineering, School of Basic Medical Science, Central South University Changsha China
-4. https://ror.org/01ar3e651 Reproductive and Genetic Hospital of CITIC-Xiangya Changsha China
+1. Department of Mechanical Engineering, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+2. School of Science and Engineering, The Chinese University of Hong Kong-Shenzhen Shenzhen China ([ROR:00t33hh48](https://ror.org/00t33hh48))
+3. Institute of Reproductive and Stem Cell Engineering, School of Basic Medical Science, Central South University Changsha China ([ROR:00f1zfq44](https://ror.org/00f1zfq44))
+4. Reproductive and Genetic Hospital of CITIC-Xiangya Changsha China ([ROR:01ar3e651](https://ror.org/01ar3e651))
 5. Department of Electrical and Computer Engineering Toronto Canada
-6. https://ror.org/052eegr76 Key Laboratory of Reproductive and Stem Cell Engineering, National Health and Family Planning Commission Changsha China
-7. https://ror.org/02khfyc93 National Engineering Research Center of Human Stem Cells Changsha China
-8. https://ror.org/03dbr7087 Institute of Biomedical Engineering, University of Toronto Toronto Canada
-9. https://ror.org/03dbr7087 Department of Computer Science, University of Toronto Toronto Canada
+6. Key Laboratory of Reproductive and Stem Cell Engineering, National Health and Family Planning Commission Changsha China ([ROR:052eegr76](https://ror.org/052eegr76))
+7. National Engineering Research Center of Human Stem Cells Changsha China ([ROR:02khfyc93](https://ror.org/02khfyc93))
+8. Institute of Biomedical Engineering, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+9. Department of Computer Science, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
 ## Abstract
 
-In infertility treatment, blastocyst morphological grading is commonly used in clinical practice for blastocyst evaluation and selection, but has shown limited predictive power on live birth outcomes of blastocysts. To improve live birth prediction, a number of artificial intelligence (AI) models have been established. Most existing AI models for blastocyst evaluation only used images for live birth prediction, and the area under the receiver operating characteristic (ROC) curve (AUC) achieved by these models has plateaued at ~0.65. This study proposed a multimodal blastocyst evaluation method using both blastocyst images and patient couple’s clinical features (e.g., maternal age, hormone profiles, endometrium thickness, and semen quality) to predict live birth outcomes of human blastocysts. To utilize the multimodal data, we developed a new AI model consisting of a convolutional neural network (CNN) to process blastocyst images and a multilayer perceptron to process patient couple’s clinical features. The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple’s clinical features. This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature. Sixteen out of 103 clinical features were identified to be predictors of live birth outcomes and helped improve live birth prediction. Among these features, maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone. The results suggest that the inclusion of patient couple’s clinical features along with blastocyst images increases live birth prediction accuracy. Natural Sciences and Engineering Research Council of Canada and the Canada Research Chairs Program.
+Background:In infertility treatment, blastocyst morphological grading is commonly used in clinical practice for blastocyst evaluation and selection, but has shown limited predictive power on live birth outcomes of blastocysts. To improve live birth prediction, a number of artificial intelligence (AI) models have been established. Most existing AI models for blastocyst evaluation only used images for live birth prediction, and the area under the receiver operating characteristic (ROC) curve (AUC) achieved by these models has plateaued at ~0.65.Methods:This study proposed a multimodal blastocyst evaluation method using both blastocyst images and patient couple’s clinical features (e.g., maternal age, hormone profiles, endometrium thickness, and semen quality) to predict live birth outcomes of human blastocysts. To utilize the multimodal data, we developed a new AI model consisting of a convolutional neural network (CNN) to process blastocyst images and a multilayer perceptron to process patient couple’s clinical features. The data set used in this study consists of 17,580 blastocysts with known live birth outcomes, blastocyst images, and patient couple’s clinical features.Results:This study achieved an AUC of 0.77 for live birth prediction, which significantly outperforms related works in the literature. Sixteen out of 103 clinical features were identified to be predictors of live birth outcomes and helped improve live birth prediction. Among these features, maternal age, the day of blastocyst transfer, antral follicle count, retrieved oocyte number, and endometrium thickness measured before transfer are the top five features contributing to live birth prediction. Heatmaps showed that the CNN in the AI model mainly focuses on image regions of inner cell mass and trophectoderm (TE) for live birth prediction, and the contribution of TE-related features was greater in the CNN trained with the inclusion of patient couple's clinical features compared with the CNN trained with blastocyst images alone.Conclusions:The results suggest that the inclusion of patient couple’s clinical features along with blastocyst images increases live birth prediction accuracy.Funding:Natural Sciences and Engineering Research Council of Canada and the Canada Research Chairs Program.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ In this study, we quantified the effect of blastocyst images and the combined ef
 
 ## Methods
 
-## Data set collection
+### Data set collection
 
 We used retrospectively collected data to develop the live birth prediction model. Transferred blastocysts with known live birth outcomes for patients who underwent frozen embryo transfer cycles from 2016 to 2020, at the Reproductive and Genetic Hospital of CITIC-Xiangya, were reviewed for inclusion in the data set. Informed consent was not necessary because this study used retrospective and fully de-identified data, no medical intervention was performed on the subject, and no biological samples from the patient were collected. This study was approved by the Ethics Committee of the Reproductive and Genetic Hospital of CITIC-Xiangya (approval number: LL-SC-2021-008).
 
@@ -53,15 +53,15 @@ Blastocyst images were captured before transfer using a standard optical light m
 
 A total of 28,118 blastocysts with known live birth outcomes were reviewed, among which 17,580 blastocysts with two blastocyst images and all the 16 clinical features available were included in the data set.
 
-## Model architecture
+### Model architecture
 
 Figure 1 shows the architecture of the live birth prediction model based on multimodal blastocyst evaluation. It consists of a CNN to process blastocyst images and an MLP to process patient couple’s clinical features. Features from the CNN and the MLP are fused; thus, the model can be trained to simultaneously take into account both blastocyst images and patient couple’s clinical features for live birth prediction. The last fully connected layer in the CNN and the last fully connected layer in the MLP each output a decision-level feature, which has two variables used to classify the blastocyst into the positive or negative live birth outcome category. The adding operation fuses decision-level features from the CNN and the MLP, and the result of addition is taken as the final output of the overall live birth prediction model.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig1-v2.jpg)
 
-**Figure 1.:** CNN, convolutional neural network; FC, fully connected layer; MLP, multilayer perceptron.Figure 1—source data 1.
+**Figure 1.:** CNN, convolutional neural network; FC, fully connected layer; MLP, multilayer perceptron.
 
-## Model implementation and training
+### Model implementation and training
 
 The proposed live birth prediction model used EfficientNetV2-S as the backbone CNN. EfficientNetV2-S is the baseline model in the EfficientNetV2 family, which is a new family of CNN models that provide higher accuracy and training speed than conventional models (Tan and Le, 2021). In our work, the output dimension of the final fully connected layer in EfficientNetV2-S was set to be two, representing the positive and negative live birth outcome of a blastocyst, respectively. The model was implemented using PyTorch 1.10.1 (Paszke et al., 2019).
 
@@ -69,13 +69,13 @@ Each of the 17,580 blastocysts had two images taken at different focal planes, o
 
 Model performance is subject to training hyperparameters (e.g., optimizer, learning rate, batch size, and number of layers). Hence, an automatic hyperparameter-tuning tool is used, Facebook Ax (version 0.2.2, https://github.com/facebook/Ax), to search for the optimal hyperparameters for model training. The selected hyperparameters for training the model include a batch size of 16, an SGD optimizer with a learning rate of 0.008, and a momentum of 0.39, and three hidden layers in the MLP. A dropout layer follows each hidden layer in the MLP to prevent overfitting. The number of nodes in each hidden layer is 6836, 5657, and 468, respectively. The dropout rate in each dropout layer is 0.01, 0.07, and 0.67, respectively. The model was trained with four RTX A6000 GPUs. It took about 30 hr to search for the optimal hyperparameters and about an hour to train the model using the optimal hyperparameters.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical tests were calculated to compare clinical features between blastocysts with the positive live birth outcome and blastocysts with the negative live birth outcome. Chi-squared test was used for categorical features, t test was used for numerical features. Chi-squared test and t test were performed using Python (version 3.6). ROC curves were compared by the DeLong test implemented in MedCalc software (version 20). All statistical tests were two-tailed and considered significant if p value≤0.05.
 
 ## Results
 
-## The inclusion of patient couple’s clinical features increased AUC for live birth prediction
+### The inclusion of patient couple’s clinical features increased AUC for live birth prediction
 
 To quantify the individual effect of blastocyst images and the combined effect of patient couple’s clinical features, we built and compared models that (1) used only blastocyst images for live birth prediction, and (2) used both blastocyst images and patient couple’s clinical features for prediction. In addition, to quantify the specific effect of endometrium status-related features (i.e., endometrium thickness before transfer, endometrium thickness on HCG day, and endometrium pattern B (yes/no) on HCG day) on live birth prediction, a third model trained using blastocyst images and patient couple’s clinical features where endometrium status-related features were excluded, was also built and compared.
 
@@ -83,15 +83,35 @@ Figure 2 shows the ROC curves and AUCs of the three models for predicting live b
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig2-v2.jpg)
 
-**Figure 2.:** ROC curves of the model using only blastocyst images, the model using blastocyst images and patient couple’s clinical features where EM-status related features were excluded, and the model using blastocyst images and patient couple’s clinical features where EM-status related features were included to predict live birth outcomes of 1758 blastocysts in the test data set. AUC, area under the ROC curve; EM, endometrium; EM status-related features, endometrium thickness before transfer, endometrium thickness on HCG day, endometrium pattern B (yes/no) on HCG day.Figure 2—source data 1.
+**Figure 2.:** ROC curves of the model using only blastocyst images, the model using blastocyst images and patient couple’s clinical features where EM-status related features were excluded, and the model using blastocyst images and patient couple’s clinical features where EM-status related features were included to predict live birth outcomes of 1758 blastocysts in the test data set. AUC, area under the ROC curve; EM, endometrium; EM status-related features, endometrium thickness before transfer, endometrium thickness on HCG day, endometrium pattern B (yes/no) on HCG day.
 
-## Ranking the predictive power of patient couple’s clinical features
+### Ranking the predictive power of patient couple’s clinical features
 
 We then investigated the predictive power of each patient couple’s clinical feature in predicting live birth outcome. Figure 3 shows the 16 features that were identified to be most related to the live birth outcomes of the blastocysts. These features were ranked according to their AUCs for individually predicting the live birth outcomes of blastocysts using univariable LR. The AUC for each feature was reported as the mean AUC over a tenfold cross-validation process.
 
-## CNN heatmaps
+![Figure 3.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-v2.jpg)
+
+**Figure 3.:** The 16 patient couple’s clinical features that were identified to be most related to the live birth outcomes of the blastocysts ranked by the AUC for individually predicting live birth outcome. AUC, area under the curve.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The AUC of the model using all clinical features showing statistical significance and blastocyst images is 0.75, lower than the AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images, and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images. The AUC (0.77) achieved by the model using LR-selected clinical features and blastocyst images and the AUC (0.76) achieved by the model using MLP-selected clinical features and blastocyst images show no significant difference (p value=0.95>0.05). AUC, area under the curve; LR, logistic regression; MLP, multilayer perceptron; ROC, receiver operating characteristic.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The MLP-based feature selection method selected 14 clinical features. Compared with the 16 clinical features selected by LR, 12 of the 16 clinical features were selected by both MLP and LR, and the top nine features are the same. The two clinical features selected by MLP but not by LR include fresh semen (yes/no) and follicle-stimulating hormone (FSH) on day 3 after period. The four clinical features selected by LR but not MLP include number of ovarian stimulation cycles, progesterone (P) on HCG day, maternal body mass index, and free thyroxine (FT4) on day 3 after period. LR: logistic regression.
+
+### CNN heatmaps
 
 In blastocyst images, what does CNN focus on to predict the live birth outcome of a blastocyst? Is there a difference in what the CNN focuses on between the model trained without and with the inclusion of patient couple’s clinical features? To answer these questions, we used the class activation mapping method to generate heatmaps. Figure 4 shows blastocyst images, corresponding heatmaps of the CNN trained without including patient couple’s clinical features, and corresponding heatmaps of the CNN trained with including patient couple’s clinical features.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig4-v2.jpg)
+
+**Figure 4.:** Heatmaps of the CNN trained without and with patient couple’s clinical features. Column (A): original blastocyst images. Column (B): corresponding heatmaps of the CNN trained without including patient couple’s clinical features. Column (C): corresponding heatmaps of the CNN trained with the inclusion of patient couple’s clinical features. CNN, convolutional neural network.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83662/elife-83662-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** ICM, inner cell mass; TE, trophectoderm.
 
 The blastocyst images were cropped and padded to a consistent size to facilitate model training. The padding value was calculated as the mean pixel value of blastocyst images in the data set. Heatmaps were generated by XGradCAM (Fu et al., 2020). Note that the CNN takes two-channel blastocyst images as the input, one focusing on ICM and the other focusing on TE. The blastocyst images shown in Figure 4 are those focused on ICM, and Figure 4—figure supplement 1 shows the two-channel blastocyst images. As can be seen in Figure 4, when trained using only blastocyst images, the CNN mainly focuses on ICM and TE for predicting live birth outcomes. When training with both blastocyst images and patient couple’s clinical features, TE-related features contributed more to live birth prediction compared with training with blastocyst images only.
 

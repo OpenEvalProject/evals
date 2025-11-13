@@ -34,7 +34,7 @@
 
 ## Abstract
 
-We report the in vivo regulation of Inosine-5´-monophosphate dehydrogenase 1 (IMPDH1) in the retina. IMPDH1 catalyzes the rate-limiting step in the de novo synthesis of guanine nucleotides, impacting the cellular pools of GMP, GDP and GTP. Guanine nucleotide homeostasis is central to photoreceptor cells, where cGMP is the signal transducing molecule in the light response. Mutations in IMPDH1 lead to inherited blindness. We unveil a light-dependent phosphorylation of retinal IMPDH1 at Thr 159 /Ser 160 in the Bateman domain that desensitizes the enzyme to allosteric inhibition by GDP/GTP. When exposed to bright light, living mice increase the rate of GTP and ATP synthesis in their retinas; concomitant with IMPDH1 aggregate formation at the outer segment layer. Inhibiting IMPDH activity in living mice delays rod mass recovery. We unveil a novel mechanism of regulation of IMPDH1 in vivo, important for understanding GTP homeostasis in the retina and the pathogenesis of adRP10 IMPDH1 mutations.
+We report the in vivo regulation of Inosine-5´-monophosphate dehydrogenase 1 (IMPDH1) in the retina. IMPDH1 catalyzes the rate-limiting step in the de novo synthesis of guanine nucleotides, impacting the cellular pools of GMP, GDP and GTP. Guanine nucleotide homeostasis is central to photoreceptor cells, where cGMP is the signal transducing molecule in the light response. Mutations in IMPDH1 lead to inherited blindness. We unveil a light-dependent phosphorylation of retinal IMPDH1 at Thr159/Ser160 in the Bateman domain that desensitizes the enzyme to allosteric inhibition by GDP/GTP. When exposed to bright light, living mice increase the rate of GTP and ATP synthesis in their retinas; concomitant with IMPDH1 aggregate formation at the outer segment layer. Inhibiting IMPDH activity in living mice delays rod mass recovery. We unveil a novel mechanism of regulation of IMPDH1 in vivo, important for understanding GTP homeostasis in the retina and the pathogenesis of adRP10 IMPDH1 mutations.
 
 ## Introduction
 
@@ -48,7 +48,7 @@ Purine nucleotide homeostasis is vital for many basic functions of the cell. Cel
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig1-v2.jpg)
 
-**Figure 1.:** salvage pathways of purine synthesis in eukaryotic cells.Metabolites and enzymes of the de novo pathway in black, and the salvage pathway in blue. R5P, ribose 5 -phosphate; PRPP, phosphoribosylpyrophosphate. The arrows from PRPP to IMP represent sequential enzymatic activities of the purinosome complex. IMPDH1 is responsible for the rate-limiting and first committed step in de novo GTP biosynthesis.
+**Figure 1.:** Metabolites and enzymes of the de novo pathway in black, and the salvage pathway in blue. R5P, ribose 5 -phosphate; PRPP, phosphoribosylpyrophosphate. The arrows from PRPP to IMP represent sequential enzymatic activities of the purinosome complex. IMPDH1 is responsible for the rate-limiting and first committed step in de novo GTP biosynthesis.
 
 IMPDH monomers consist of a catalytic and a regulatory domain. The catalytic domain is a (β/α)8 TIM barrel that catalyzes two sequential reactions that convert IMP to xanthosine monophosphate (XMP) in a NAD dependent manner (Hedstrom, 2009). GMP acts as a competitive inhibitor of enzymatic activity at this level, by binding to the IMP pocket (Hedstrom, 2009). The regulatory Bateman domain consists of two cystathionine β-synthase (CBS) repeats that act as ATP and GTP sensors to mediate allosteric modulation of catalytic activity (Buey et al., 2015; Labesse et al., 2013; Anthony et al., 2017; Buey et al., 2017; Fernández-Justel et al., 2019). In eukaryotes, binding of adenine nucleotides (ATP/ADP/AMP) induces the formation of extended octamers that remain fully active, while GDP/GTP binding induces the formation of compacted octamers with significantly reduced catalytic activity (Buey et al., 2015; Labesse et al., 2013; Buey et al., 2017).
 
@@ -60,9 +60,17 @@ Little is known about the relevance of IMPDH1 catalytic activity in photorecepto
 
 ## Results
 
-## Dark/light-dependent phosphorylation of retinal IMPDH1
+### Dark/light-dependent phosphorylation of retinal IMPDH1
 
 Phosphoproteomic analysis of dark- and light-adapted bovine retinas (see Methods) revealed three phosphorylation sites in IMPDH1 (Figure 2A–B). One phosphorylation event was detected at the Bateman domain, assigned to Thr159 or Ser160 with a 50:50 probability (numbering corresponding to canonical bovine IMPDH1β of 514aa with Uniprot code A0JNA3). This numbering correlates with the canonical human IMPDH1β. The peak areas of the precursor ions for the monophosphorylated peptide 154–169 in 3 dark and 3 light biological replicates revealed a light preference of the observed phosphorylation event (light/dark log2 fold change = 1.67 with p=0.03). The light/dark log2 fold change of phosphopeptides representative of well characterized light- or dark-dependent phosphorylation events in rhodopsin (Wilden, 1995; Lee et al., 2002; Mendez et al., 2000), phosducin (Lee et al., 1990; Lee et al., 2004) and GRK1 (Lee et al., 1982; Palczewski et al., 1992) is shown in Figure 2—figure supplement 1 as a quality control of the phosphoproteomic analysis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig2-v2.jpg)
+
+**Figure 2.:** (A) Mass spectra of identified IMPDH1 phosphorylated peptides. Residue numbers refer to the canonical bovine isoform β (514aa) [Uniprot A0JNA3]. For peptide 154–169 only one phosphorylation was detected, that could not be unequivocally assigned to T159 or S160. Phosphorylation at peptides 413–422 and 475–480 was at S416 and S477, respectively. (B) Peak areas of the precursor ions corresponding to the identified phosphopeptides of IMPDH1. Samples 1–3 are dark-adapted retinas; 4–6 light-exposed retinas (biological replicates). T159/S160 are preferentially phosphorylated in light, S477 in dark, and S416 indistinctly. (C) Ribbon diagram of IMPDH in its tetrameric conformation [pdb: 1jcn], showing the TIM barrel catalytic domain in coral, and the regulatory Bateman domain with two copies of cystathione beta-synthase (CBS) sequence in slate blue and green. (D) Monomer conformation [pdb: 1jcn] showing T159 and S160 at CBS1 in the Bateman domain; and S477 at the COOH-terminus. Disease associated mutations, depicted in red, are proximal to T159/S160 (Asn198; Arg224; Asp226) or to S477 (His372). (E) The catalytic domain of AgIMPDH, with the C319 loop in coral, the COOH-terminus of an adjacent monomer in blue and the mobile flap in green. IMP depicted in space fill model [pdb:4xfi]. (F) Alignment of IMPDH from T. foetus (prokaryotic), A. gossypii (filamentous fungus), H. sapiens, M. musculus and B. taurus IMPDH1 canonical isoforms. Phosphosites highlighted in yellow.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mass spectra of phosphorylated peptides of: phosducin 72–82 peptide MSVQEYELIHK [Uniprot F1MSE1]; GRK1 480–491 peptide NIQDVGAFSTVK [Uniprot P28327]; and rhodopsin 326–348 peptide NPLGDDEASTTVSKTETSQVAPA [Uniprot P02699]. For each peptide, the peak area of the precursor peptide ion was extracted and plotted for each sample. Samples 1–3 are dark-adapted retinas; 4–6 light-exposed retinas (biological replicates). Light/dark log2 fold-change values were: phosducin S73 (−1.39; p=0.01); GRK1 S488/T489 (2.70; p=0.08); Rhodopsin T336 (2.49; p=0); and Rhodopsin T340/T342 (5.53; p=0).
 
 Residues Thr159 and Ser160 map within the CBS motif 1 of the Bateman domain, in close proximity to Asn198, Arg224 and Asp226 mutated in adLCA or adRP10 (Figure 2C–D), and are directly involved in the binding of purine nucleotides at the allosteric nucleotide binding site 1 (Fernández-Justel et al., 2019).
 
@@ -84,15 +92,59 @@ Measured isoelectric points (IP) of IMPDH1-603/604aa-0P, −1P and −2P correla
 
 Taken together, our results show that the most abundant isoform of IMPDH1 in the retina, which is a retina-specific spliced form, is phosphorylated to a high extent in vivo. Nearly two thirds of the protein are phosphorylated in vivo, with mono- and di-phosphorylated forms being present but monophosphorylated species predominating under dark or physiological light conditions.
 
-## In vitro effects of phosphorylation on IMPDH1 catalytic activity
+### In vitro effects of phosphorylation on IMPDH1 catalytic activity
 
 While IMPDH1-603/604aa is the prevalent isoform in murine retinas, two isoforms predominate in human retinas: IMPDH1α (546aa) and IMPDH1γ (595aa) (Bowne et al., 2006b). In order to study the effect of phosphorylation on the catalytic activity of IMPDH1, the recombinant human IMPDH1α (546aa) and its individual phosphomimetic mutants were expressed in bacteria and purified to homogeneity. The S160D-hIMPDH1α (546aa) and S477D-hIMPDH1α (546aa) mutants showed very similar reaction kinetics and Michaelis-Menten parameters as the wildtype protein (Figure 4—figure supplement 1), indicating that phosphorylation at these sites was unlikely to affect the Km or Vmax of the enzyme. However, the S416D-hIMPDH1α (546aa) mutant showed a slower reaction (Figure 4—figure supplement 1). This result was not surprising, given that S416 maps at the mobile flap that determines the open or closed conformation of the enzyme during enzyme catalysis (Hedstrom, 2009).
 
 We confirmed the effect of Ser416 phosphorylation by measuring the effect on kinetics and IMP dependence of the S416D substitution in the canonical and in both prevalent hIMPDH1 retinal isoforms: hIMPDH1α (546aa) and hIMPDH1γ (595aa) (Figure 4A–B). Figure 4C shows that S416D substitution in the mobile flap had a significant effect at inhibiting the enzyme, that was higher for the retinal spliced forms of 546 and 595aa than for the canonical form. However, because phosphorylation at this residue was similar in dark and light conditions, we believe that the decrease in IMPDH1 catalytic activity associated to Ser416 phosphorylation might occur in response to other signals such as nutritional stress but would have an effect unrelated to dark/light physiological conditions (see Discussion).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig4-v2.jpg)
+
+**Figure 4.:** (A) Main splice variants of hIMPDH1: hIMPDH1α (546aa) and hIMPDH1γ (595aa) contain extended sequences at the COOH- terminus (546aa) or both the NH2- and COOH-termini (595aa). (B) S416D mutant recombinant proteins were rigorously normalized to their wildtype counterparts preceding enzymatic analysis. (C) Effect of S416D substitution on the Michaelis-Menten kinetics of hIMPDH1β (514aa); hIMPDH1α (546aa); and hIMPDH1γ (595aa) isoforms. Mutation S416D increased the Km for IMP and decreased the Vmax significantly in hIMPDHα (546aa) and γ (595aa) splice variants, with the effect being maximal in the hIMPDH1α (546aa) isoform. Kinetic parameters were: hIMPDH1β (514aa) [Vmax = 0.099 ± 0.004, Km = 7.62 ± 1.69]; S416D/hIMPDH1β (514aa) [Vmax = 0.084 ± 0.002, Km = 19.13 ± 1.75]; hIMPDH1α (546aa) [Vmax = 0.152 ± 0.002, Km = 20.72 ± 1.32]; S416D/hIMPDH1α (546aa) [Vmax = 0.046 ± 0.002, Km = 59.59 ± 9.74]; hIMPDH1γ (595aa) [Vmax = 0.093 ± 0.003, Km = 12.86 ± 2.18]; S416D/hIMPDH1γ (595aa) [Vmax = 0.049 ± 0.001, Km = 13.95 ± 1.71]. Results represent the media and S.E.M of three independent experiments with three technical replicates each.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Reaction kinetics of wildtype; S160D; S416D and S477D mutants of hIMPDH1α (546aa). Assays were performed with 3,6 μM of recombinant protein in assay buffer with 125 mM IMP and 0.5 mM NAD+. Results represent the mean and S.E.M of three independent experiments with three technical replicates each. S160D and S477D mutants showed wildtype kinetics; while S416D mutant showed delayed kinetics. (B) Michaelis-Menten plots for the wildtype and phosphomimetic mutants. NADH production plotted to concentration of IMP. Assays were performed at 0.5 mM NAD+ and varying concentrations of IMP, from 0 to 500 μM. NADH production (nmol/min/mg) was obtained from ΔAbs/Δt by applying Lambert- Beer’s law (εNADH340nm=6220M−1cm−1, l = 0.58 cm), and results were fitted to Michaelis-Menten curves with GraphPad Prism [Mean and S.E.M of three independent experiments, three technical replicas each].
+
 It has recently been established that GDP and GTP allosterically inhibit the catalytic activity of eukaryotic IMPDH enzymes in vitro (Buey et al., 2015; Anthony et al., 2017; Buey et al., 2017; Fernández-Justel et al., 2019). Thereby, we then tested whether phosphorylation could affect allosteric inhibition in vitro.
 
 Figure 5A plots the normalized Vmax values (Vmaxapp in the presence of 2 mM GTP or GDP divided by Vmax in the absence of nucleotide) for all the hIMPDH1β (514aa) phosphomimetic mutants as well as for the wild-type IMPDH1 enzyme. As expected, phosphorylation at Thr159/Ser160 had an obvious effect on the allosteric inhibition of IMPDH1 in vitro (Figure 5A). We then assayed the catalytic activity of the T159E/D mutants at different concentrations of GDP (Figure 5B) and GTP (Figure 5C), that yielded K1/2 values for enzyme inhibition around 5-fold higher than for the wild-type IMPDH1 (Table 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig5-v2.jpg)
+
+**Figure 5.:** (A) Vmaxapp/Vmax for the indicated phosphomimetics mutants. (B) Vmaxapp/Vmax for the T159E and T159D mutants, as a function of GDP concentration. (C) Vmaxapp/Vmax for the T159E and T159D mutants, as a function of GTP concentration. Results shown are representative of two independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Nucleotide levels (pmol/retina) in whole retinas obtained from dark-adapted mice that were maintained in DMEM in situ for 5 min, either in darkness or exposed to 2,000 lux white light. Note that GMP levels increased with light exposure, while GTP and ATP levels were maintained. Individual values and the Mean ± STDEV is indicated (4 biological replicates). Unpaired t-test for GMP values in dark and light resulted in p=0.002; while other nucleotides showed not significant changes between dark and 5 min light. Note that GTP levels were higher than ATP levels in the retina, both in dark and light conditions. (B) Chromatogram of a mix of nucleotide standards, showing each nucleotide retention time and typical spectral sensitivity. (C) Representative chromatogram of a retinal extract showing the retention time and relative abundances of the different nucleotides. cGMP was below detection in retinal extracts.
+
+**Table 1.**
+ K1/2 values (mM) for GDP and GTP.Enzyme kinetics data were fitted by non-linear regression to the Michaelis-Menten equation to derive Vmax and KM values. The Vmax values versus GTP/GDP concentration were then adjusted to a sigmoidal dose-response function using the GraphPad software package.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>GDP</th>
+      <th>GTP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HsIMPDH1β (514aa)-WT</td>
+      <td>0.45 ± 0.03</td>
+      <td>0.97 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>HsIMPDH1β (514aa)-T159D</td>
+      <td>2.19 ± 0.2</td>
+      <td>≈ 6</td>
+    </tr>
+  </tbody>
+</table>
+
+_K1/2 values are given in mM units (Mean ± SD), and are representative of two independent experiments._
 
 Taken together our results show that phosphorylation at Thr159/Ser160 desensitizes the enzyme to the allosteric inhibition exerted by GTP and GDP. Given the light-dependence of this phosphorylation event, these results indicate that IMPDH1 would be susceptible to GDP/GTP inhibition in darkness but desensitized to this allosteric regulation in light.
 
@@ -102,15 +154,72 @@ We have assessed GTP levels (as a function of ATP levels) in dark/light retinas 
 
 The fact that GTP is equimolar or higher than ATP in the retina further confirms that GTP levels are higher in photoreceptor cells than in most cell types, where the ratio of ATP:GTP is between 3:1 to 5:1 (Traut, 1994; Zhao et al., 2015; Sumita et al., 2016).
 
-## Constant bright light exposure results in IMPDH1 aggregation at the outer segment layer, and in increased flux towards de novo GTP and ATP synthesis
+### Constant bright light exposure results in IMPDH1 aggregation at the outer segment layer, and in increased flux towards de novo GTP and ATP synthesis
 
 It has been reported that mammalian IMPDHs can form mesoscale macromolecular assemblies in mammalian cells, denoted as cytoophidia, when an increase in IMPDH activity is required to keep with GTP demand (Aughey and Liu, 2016; Keppeke et al., 2018; Chang et al., 2015; Liu, 2016). Recently it has been proposed that IMPDH1 cytoophidia are more resistant to GDP/GTP-mediated allosteric inhibition, which indicates that they would allow a boost of GTP synthesis when required (Fernández-Justel et al., 2019; Keppeke et al., 2018; Duong-Ly et al., 2018a). IMPDH1 cytoophidia are not noticeable in the retina in mice reared in standard 12 hr dark/12 hr light cycles, although they can be induced and clearly detected if retinas are treated with mycophenolic acid (MPA), Figure 6—figure supplement 1.
 
 We next intended to assess whether IMPDH1 cytoophidia assembly could be induced by physiological conditions that increased GTP demand, such as exposing living mice to bright light for increasing time periods (Figure 6). The premise was to activate cGMP phosphodiesterase maximally by bright light, so that cGMP synthesis increased accordingly during light adaptation, consuming GTP in the process. Figure 6A shows the characteristic immunolocalization of IMPDH1 in the retina. IMPDH1 signal is much stronger in photoreceptor cell layers than at inner layers of the retina. IMPDH1 signal is particularly intense at the inner segment, outer nuclear and outer plexiform layers, and stronger in rods than cones. Strikingly, exposure of living mice to 1600 lux white light after pupil dilation led to the gradual accumulation of IMPDH1 aggregates at the rod outer segment layer, that increased in number and size with time (Figure 6A–B). In contrast to MPA treatment that induced cytoophidia formation at the outer nuclear and inner segment layers (Figure 6—figure supplement 1), IMPDH1 aggregates induced by bright light accumulated at the rod outer segment layer. IMPDH1 accumulation was even more evident when mice were reared for 15d under constant light (1600 lux), Figure 6C. This light-dependent accumulation of IMPDH1 aggregates at the outer segment layer did not involve a change in the protein levels of IMPDH1, and could be reverted by subsequent dark-adaptation (Figure 6D,E). This result indicated that IMPDH1 translocates from the cell soma to the outer segment layer under bright light exposure, in a reversible manner.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig6-v2.jpg)
+
+**Figure 6.:** (A) Murine retinal sections from dark-adapted mice or mice exposed to 1600lux-light for 20 m, 2 hr or 4 hr were immunostained for IMPDH1 (green) and co-immunostained for rhodopsin (red). Confocal images are average z-projections of 5 optical slices with 0.13μm-step size. Magnified frames from the outer segment layer show gradual accumulation of IMPDH1 aggregates with time of bright light exposure. (B) Size and number of IMPDH1 aggregates with time (Dark vs 2 hr light, p<0.0001; Dark versus 4 hr light, p<0.0001). Results are representative of two independent experiments. (C) Retinal sections from constant dark or 1600 lux constant light-reared mice for 15d, immunostained for IMPDH1 (green) and rhodopsin (red). Magnified inner/outer segment layers show a prominent accumulation of IMPDH1 signal at the outer segment layer, representing 30% of the total IMPDH1 signal in the retina. A basal IMPDH1 signal is already detected at the outer segment layer in dark-adapted mice. Results shown are representative of results obtained with two independent groups of mice. (D) IMPDH1 aggregate formation at the outer segment by 72 hr of bright light could be reversed by subsequent dark-adaptation (16 hr). Shown is a representative result observed in three independent groups of mice. (E) IMPDH1 expression in the retinas from these three groups of mice does not change, indicating that changes in IMPDH1 signal at the outer segment layer are due to protein translocation rather than to transcriptional regulation. (F) Retinal GMP, GDP and GTP levels (pmol/mg prot) determined by HPLC from retinal extracts from mice that had been dark-adapted or exposed to bright light (BL, 1600 lux) for 4 hr. GMP and GDP levels increased with light [p=0.021 for GMP and p=0.016 for GDP, with n = 4] whereas the GTP levels were maintained [p=0.802 for GTP, with n = 4]. OS: outer segment, IS: inner segment, ONL: outer nuclear layer, OPL: outer plexiform layer. Scale bar upper panels (20 μm) and bottom panels (5 μm).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56418/elife-56418-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Murine retinal sections from dark-adapted mock- or 10 μM MPA-treated retinas for 1 or 2 hr. MPA inhibition of IMPDH1 resulted in the formation and accumulation of IMPDH1 spicules with time, particularly noticeable at the perinuclear region of photoreceptor cells (8.5x Zoom images) at the outer nuclear layer. IMPDH1 immunolocalization shown in green; PNA staining of cones in cyan. Confocal images are the average z-projections of three optical slices acquired with a step size of 0,13 μm. (B) Histogram showing the number of spicules/100 μm2. (Mock vs 1 h MPA, p=0.0001; MOCK vs 2 h MPA p<0.0001), with at least 6 planes from 2 animals analyzed per condition. OS: outer segment, IS: inner segment, ONL: outer nuclear layer, OPL: outer plexiform layer. Scale bar upper panels (20 μm) and bottom panels (5 μm).
+
 To assess whether IMPDH1 catalytic activity increased in response to light in vivo, we determined the nucleotide levels in whole retinas from mice that had been dark-adapted or exposed to 4 hr of 1600 lux light. First, nucleotide determinations were done by HPLC. Subsequently, nucleotide determinations were done by LC coupled to tandem mass spectrometry (LC-MS/MS), following the intravitreal injection of a stable isotope form of labeled glycine. Because the amino acid glycine contributes carbon and nitrogen atoms to the scaffold on which the purine ring assembles, labeled glycine allowed us to analyze whether the incorporation of labeled Gly atoms into IMP, AMP and GMP increased with light in vivo.
 
-The nucleotide determination by HPLC showed that GMP and GDP levels increased with 4 hr of light exposure, while GTP levels were maintained (Figure 6F, ,Table 2). No massive drop in the GTP levels was observed with bright light exposure, as reported in ex vivo retinas in other studies (see Discussion).
+The nucleotide determination by HPLC showed that GMP and GDP levels increased with 4 hr of light exposure, while GTP levels were maintained (Figure 6F,,Table 2). No massive drop in the GTP levels was observed with bright light exposure, as reported in ex vivo retinas in other studies (see Discussion).
+
+**Table 2.**
+ Nucleotide levels in dark- or light-adapted murine retinas, determined by HPLC.Retinas were obtained from 16 dark-adapted mice that were either kept in the dark for 4 hr, or exposed to 4 hr bright light (1600 lux). HPLC determinations, with numbers indicating Mean ± S.E.M, with n = 4 biological replicates.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Pmol/mg protein</th>
+    </tr>
+    <tr>
+      <th>DARK</th>
+      <th>4 hr BL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GMP</td>
+      <td>557.21 ± 88.5</td>
+      <td>916.31 ± 81.1</td>
+    </tr>
+    <tr>
+      <td>GDP</td>
+      <td>762.57 ± 47.8</td>
+      <td>1174.11 ± 109</td>
+    </tr>
+    <tr>
+      <td>GTP</td>
+      <td>2461.53 ± 178.1</td>
+      <td>2737.29 ± 310.6</td>
+    </tr>
+    <tr>
+      <td>AMP</td>
+      <td>731.84 ± 125.4</td>
+      <td>1246.16 ± 69.8</td>
+    </tr>
+    <tr>
+      <td>ATP</td>
+      <td>1579.69 ± 110.5</td>
+      <td>2759.18 ± 226</td>
+    </tr>
+    <tr>
+      <td>GTP/ATP</td>
+      <td>1.56</td>
+      <td>0.99</td>
+    </tr>
+  </tbody>
+</table>
 
 For the metabolic flux analysis in vivo, 13C2;15N-Glycine was injected intravitreally in dark-adapted mice. Mice were then kept in the dark for 4 hr, or exposed to 1600 lux light for 4 hr. Whole retinal extracts were analyzed by mass spectrometry, to determine the levels of labeled and total cGMP, IMP, AMP, GMP, ATP and GTP, see Methods for experimental details.
 
@@ -124,7 +233,7 @@ Figure 7B shows the carbon and nitrogen atoms that glycine contributes to the pu
 
 Taken together, our results show that the global flux through the de novo synthesis of purine nucleotides increases with light. This increased flux could serve to maintain the ATP and GTP pools as their consumption increases in the phototransduction process.
 
-## Inhibition of IMPDH catalytic activity delays mass rod recovery in electroretinogram responses
+### Inhibition of IMPDH catalytic activity delays mass rod recovery in electroretinogram responses
 
 Two processes that increase GTP consumption upon light exposure in photoreceptor cells would be GTP hydrolysis by the GTPase transducin at the activation step, and GTP conversion to cGMP synthesis during recovery of the light response (Mendez et al., 2001; Burns et al., 2002).
 
@@ -138,7 +247,7 @@ IMPDH1 inhibitors did not significantly affect the amplitude of the a-wave or b-
 
 Taken together our results indicate that IMPDH1 activity (de novo GTP synthesis) contributes to mass rod recovery by sustaining the GTP pool upon light exposure.
 
-## Thr159 and Ser160 sites are phosphorylated by PKC in vitro
+### Thr159 and Ser160 sites are phosphorylated by PKC in vitro
 
 In order to identify the kinase/s responsible for the phosphorylation of the described residues of IMPDH1, the human IMPDH1α (546aa) isoform, and mutant forms with all of these 4 residues mutated to Gly (4KO, i.e. quadruple mutant T159G/S160G/S416G/S477G) or with individual phosphorylation sites restored in the 4KO (for instance, T159-only; T159T/S160G/S416G/S477G) were purified to perform in vitro phosphorylation assays with the kinases PKA, PKCα, PKG, CaCM-Kinase, CK II, PKB-Akt and AMPK. Figure 9A shows that PKCα phosphorylated the wild-type but not the 4KO enzyme, and phosphorylation was only restored in the mutants T159-only and S160-only, showing PKCα specificity for the Thr159 and Ser160 residues. No other kinase among the kinases tested showed specificity towards Thr159/Ser160; or towards Ser416 or Ser477 residues.
 
@@ -198,11 +307,11 @@ This study provides key insights into the complex IMPDH1 regulation in the retin
 
 ## Materials and methods
 
-## Ethics statement
+### Ethics statement
 
 Pertaining to animal research, this study was conducted in accordance with the ARVO statement for the use of animals in ophthalmic and vision research and in compliance with acts 5/1995 and 214/1997 for the welfare of experimental animals of the autonomous community (Generalitat) of Catalonia; and approved by the ethics committee on animal experiments of the University of Barcelona (Generalitat Reference #9906, protocols Bell 216/17; 217/17 and 218/17).
 
-## Label-free quantitative proteomic analysis of enriched phosphopeptides from dark- and light-adapted bovine retinas
+### Label-free quantitative proteomic analysis of enriched phosphopeptides from dark- and light-adapted bovine retinas
 
 Fresh calf eyes were obtained immediately postmortem and processed at the slaughterhouse premises. Upon collection, eyes were processed in a dark room by excising the cornea and submerging eyecups in chilled oxygenated Locke’s buffer (10 mM Hepes, 20 mM NaHCO3, 112.5 mM NaCl, 3.6 mM KCl, 2.4 mM MgCl2, 1.2 mM CaCl2, 0.1 mM EDTA and 10 mM glucose pH7.4) for 1 hr of dark-adaptation. Retinas were then excised under dim red light. Three retinas were kept for 5 m at room temperature in the dark; while three retinas were exposed to light of 3000 lux for 5 m. Following dark/light exposure retinas were homogenized in homogenization buffer (HB) [20 mM Hepes, 115 mM KCl, 10 mM NaCl, 10 mM MgCl2, 50 mM NaF, 5 mM β-glycerophosphate, 1 mM PMSF and complete protease inhibitor cocktail, pH7.4]. Retinal homogenates were kept at −80°C until further analysis. Subsequently, a basic fractionation protocol was performed to obtain fractions corresponding to soluble, peripheral and membrane proteins from each sample.
 
@@ -212,27 +321,27 @@ Phosphopeptide mixes were analyzed in an Orbitrap Fusion Lumos mass spectrometer
 
 The mass spectrometer was operated in DDA mode and full MS scans with 1 micro scans at resolution of 120.000 were used over a mass range of m/z 350–1500 with detection in the Orbitrap. Auto gain control (AGC) was set to 2E5 and dynamic exclusion to 60 s. In each cycle of DDA analysis, following each survey scan Top Speed ions with charged 2 to 7 above a threshold ion count of 1e4 were selected for fragmentation at normalized collision energy of 28%. Fragment ion spectra produced via high-energy collision dissociation (HCD) were acquired in the Ion Trap, AGC was set to 3e4, isolation window of 1.6 m/z and a maximum injection time of 40 ms was used. All data were acquired with Xcalibur software v3.0.63.
 
-## Data analysis
+### Data analysis
 
 Proteome Discoverer software suite (v2.2, Thermo Fisher Scientific) and the Mascot search engine (v2.5, Matrix Science; Bowne et al., 2002) were used for peptide identification and quantification (Perkins et al., 1999). Samples were searched against the Uniprot proteome database corresponding to Bos Taurus (UP000009136), and a list of common contaminants (total entries 24,097), plus all the corresponding decoy entries. Trypsin was chosen as enzyme and a maximum of three miscleavages were allowed. Carbamidomethylation (C) was set as a fixed modification, whereas oxidation (M), phosphorylation (STY) and acetylation (N-terminal) were used as variable modifications. Searches were performed using a peptide tolerance of 7 ppm and a product ion tolerance of 0.5 Da, and identified phosphopeptides were filtered for FDR < 5%. Phosphopeptides were quantified by extraction of their precursor areas using Skyline (version 4.2.0.19009). Light/dark fold change and p values were calculated for phosphopeptides present in two or more replicates of each condition.
 
-## Generation and affinity purification of antibody against bIMPDH1 canonical protein
+### Generation and affinity purification of antibody against bIMPDH1 canonical protein
 
 Anti-IMPDH1 antibody was generated against the bovine canonical recombinant protein (bIMPDH1-514aa). Bovine IMPDH1 cDNA corresponding to the canonical IMPDH1 (514aa) protein was amplified from total RNA from fresh bovine retinas and cloned into pET15b bacterial expression plasmid (Novagen, Madison, WI, USA) for expression in E. coli BL21 (DE3) cells. The expression of recombinant protein was induced in bacterial cultures at OD600 = 0.6 for 5 hr at 37°C. Cells were then collected and bacterial inclusion bodies were obtained and solubilized in 6M guanidinium hydrochloride buffer as previously described (López-Begines et al., 2018). bIMPDH1-514aa.His was purified by metal chelation using a HiTrap column (GE Healthcare, Chicago, IL, USA) and dialyzed against dialysis buffer (1M urea, 0.4M L-arginine, 20 mM Hepes and 200 mM NaCl).
 
 Purified bIMPDH1(514aa).His was used to immunize two New Zealand White rabbits following a standard 84 day protocol: initial injection of protein (0.5 mg) emulsified in Freund’s complete adjuvant, and three boosts of protein (0.25 mg) in incomplete adjuvant at three-week intervals. At exsanguination, blood serum was affinity purified with bIMPDH1-crosslinked Aminolink coupling resin (Thermo Fisher Scientific, Waltham, MA, USA); dialyzed against 0.1M sodium phosphate, 0.15M NaCl, pH 7.2, and concentrated with 10K Amicon devices.
 
-## In situ metabolic labeling
+### In situ metabolic labeling
 
 Eight six-week-old C57BL6 mice were dark-adapted overnight. Retinas were dissected under dim red light using a night vision dissecting scope, and placed in individual wells of two 12-well dishes –eight retinas per dish- in 600 μl of Locke’s buffer [10 mM Hepes, 20 mM NaHCO3, 112.5 mM NaCl, 3.6 mM KCl, 2.4 mM MgCl2, 1.2 mM CaCl2, 0.1 mM EDTA, 10 mM glucose, sodium succinate, sodium glutamate, vitamin and amino acid supplement, pH7.4] containing 1mCi/ml 32P-orthophosphoric acid [9.000 Ci/mmol, NEX053010 Perkin Elmer, Waltham, MA, USA]. Retinas were incubated for 90 m at 37°C in a 5% CO2 incubator in the dark, to allow incorporation of the 32P radionuclide into the ATP pool of retinal cells. One multiwell dish was then placed over the bench at room temperature for 5 m in darkness (dark retinas); and the other was exposed to 2000 lux white light (light retinas) for 5 m. Pools of two retinas were homogenized in HB. Samples were then centrifuged at 14.000 rpm for 20 m, 4°C, to obtain supernatant and pellet fractions. Pellets were resuspended in HB with 1% TritonX100. Immunoprecipitation of IMPDH1 was carried out with 10 μg of anti-IMPDH1 pAb and 50 μl of Dynabeads-protein G (Thermo Scientific, Waltham, MA, USA). Samples were resolved by SDS-PAGE and transferred to nitrocellulose membranes, that were directly exposed to an X-ray film (AGFA Healthcare NV, Mortsel, Belgium) and subsequently immunoblotted for IMPDH1 [anti-IMPDH1 pAb used as primary Ab; goat-anti Rabbit IREDye 800 (LI-COR, Lincoln, NE, USA) as secondary Ab; and bands visualized using an Odyssey Scan System (LI-COR)]. An immunoprecipitation control was carried with an anti-IgG isotype control.
 
-## Isolectrofocusing separation of IMPDH1
+### Isolectrofocusing separation of IMPDH1
 
 32P-labeled immunoprecipitated IMPDH1 from an in situ metabolic labeling procedure as described above was separated by isoelectrofocusing (IEF) to discern the differentially phosphorylated forms of the protein. For that, IMPDH1 immunoprecipitated samples were dissolved in IEF loading buffer [7M urea, 2M thiourea, 4% CHAPs, 40 mM DTT, 2% IPG buffer]. Samples were loaded into prehydrated pH-gradient IEF gel strips (18 cm linear gradient pH3-10 DryStrips from GE Healthcare, Chicago, IL, USA), and run in an Ettan IPGphor3 IEF system (GE Healthcare, Chicago, IL, USA). Gel strips were incubated for 10 m in transfer buffer [25 mM Tris base pH8.3, 190 mM glycine, 0.2% SDS, 20% methanol] and proteins transferred to nitrocellulose membranes by capillary action. Membranes were first exposed to an X-ray film and subsequently immunoblotted for IMPDH1 as indicated above.
 
 For isoelectric focusing analysis of IMPDH1 from retinas of living mice after dark/light adaptation, mice were dark-adapted for 16 hr and exposed to 2000 lux fluorescent light after pupil dilation for 5, 20 or 60 m. Retinas were dissected and homogenized in HB. Retinal homogenates were centrifuged at 13000 rpm for 20 m 4°C and supernatant fractions were kept. Protein was precipitated with 3 volumes of ice-chilled TCA-acetone buffer (13.3% w/v trichloroacetic acid in acetone, 20 mM DTT), and samples were cooled at −20°C for 16 hr, and centrifuged at 13200 rpm for 1 hr at 4°C. Protein pellets were washed in acetone, air-dried, resuspended in IEF buffer and resolved by IEF as described.
 
-## Cloning of HsIMPDH1 different spliced forms into pETEV15b and site-directed mutagenesis and bacterial heterologous protein expression
+### Cloning of HsIMPDH1 different spliced forms into pETEV15b and site-directed mutagenesis and bacterial heterologous protein expression
 
 Human IMPDH1 (1–514) ORF was obtained from a cDNA library and cloned into an in house modified pET15b expression vector (Alonso-García et al., 2009). A PCR-based strategy was used to insert NH2- and COOH- extra sequences to the ORF of the canonical protein, to generate the hIMPDH1 spliced retinal isoforms (1–546 and 1–595). All DNA constructs were corroborated by DNA sequencing.
 
@@ -244,25 +353,25 @@ Blindness associated mutations R105W, N198K, R224P, D226N, V268I and H372P were 
 
 Site-directed mutagenesis was confirmed by sequencing both DNA strands in all generated constructs.
 
-## Purification of IMPDH1 enzymes
+#### Purification of IMPDH1 enzymes
 
 Human IMPDH1 enzymes were expressed in Escherichia coli strain BL21 (DE3) and purified by nickel-chelating affinity chromatography as described before (Thomas et al., 2012). His-tagged proteins were only used for the in vitro phosphorylation assays, while the His-tag was removed from the recombinant proteins for the rest of the assays shown in the manuscript.
 
-## Enzymatic assays
+### Enzymatic assays
 
 IMPDH activity was studied by monitoring the increase in absorbance at 340 nm upon reduction of NAD+ at 32°C, using 96-well microtiter plates. The reaction buffer was 100 mM Tris-HCl, 100 mM KCl, 2 mM DTT, pH 8.0. Final enzyme concentrations were set to 100µgmL−1, NAD+ concentration was fixed at 0.5 mM and IMP concentration varied from 0.04 to 5 mM. Purine nucleotides were assayed at concentrations ranging from 0.09 to 6 mM. Free Mg+2 concentration was kept constant at 1 mM, as previously described (Buey et al., 2017). The experimental data were non-linearly fitted to the Michaelis-Menten equation of enzyme kinetics using the GraphPad Prism program (GraphPad software) in order to obtain the maximum apparent initial velocity (Vmaxapp) as a function of the nucleotide concentration. Normalized Vmax values were calculated by dividing the Vmaxapp value in the presence of GTP/GDP nucleotides by Vmax in the absence of nucleotides.
 
-## In vitro phosphorylation with PKC
+### In vitro phosphorylation with PKC
 
 For in vitro phosphorylation assays with PKC, 5 μg of recombinant protein HsIMPDH1(546) or its mutants were diluted in 12 μl of dilution buffer [TrisHCl pH 8, 500 mM KCl and 2 mM DTT], mixed with an equal volume of 2x kinase buffer [20 mM TrisHCl pH 7; 20 mM MgCl2; 0.05 mM phorbol 12-myristate 13-acetate (PMA); 0.2 mM CaCl2; 0.2 mM ATP]; 1 μl of 32P-ATPγ 3000 Ci/mmol (Perkin Elmer, Boston, Masachusetts, USA) and 1 μl of recombinant hPKCα (100 ng/μl, Enzo Life Sciences, Farmingdale, NY, USA). Samples were incubated for 15 m at 30°C, and reactions were stopped by addition of 4x SDS loading buffer. Sample fractions corresponding to 2.5 μg of HsIMPDH1(546) were resolved by 12% SDS-PAGE, and proteins transferred to 0.2 μm nitrocellulose membranes (Bio-rad). The membranes were first exposed to X-ray films (AGFA Healthcare NV, Mortsel, Belgium) for 2 hr; and subsequently immunoblotted for IMPDH1. Membranes were scanned at an Odyssey Scan System (LI-COR) and quantified with the Fiji (ImageJ) software.
 
-## Nucleotide determination in retinal extracts by high pressure liquid chromatography (HPLC)
+### Nucleotide determination in retinal extracts by high pressure liquid chromatography (HPLC)
 
 GMP, GDP, GTP, AMP and ATP levels were analytically measured in perchloric acid murine retinal extracts by ion-pairing high-performance liquid chromatography (HPLC). For in situ experiments, 6–8 week old C57Bl mice were dark-adapted for 16 hr and their retinas were dissected under dim red light. Retinas were placed in DMEM high glucose and either kept in the dark for 5 m at room temperature, or exposed to 2000 lux white light. Immediately after the 5 m dark/light exposure retinas were washed with ice-cold PBS and pools of four retinas were homogenized in 120 μl of 1.2M perchloric acid in PBS. Samples were centrifuged at 16000 rpm for 40 m at 4°C. Deproteinized supernatants were transferred to new tubes, extracted with 1 vol of HPLC-grade chloroform, neutralized, clarified and filtered through 0.22 μm filters (Nanosep MF 0.22 μm, Pall, Westborough, Massachusetts, USA). Samples were kept at −80°C until HPLC analysis. For the in situ experiment to test the effect of PKC inhibition on the dark/light levels of guanine nucleotides, bisindolylmaleimide was added to the medium at 50 nM concentration, and the dark-adapted retinas were incubated in a 5% CO2 incubator for 30 m, protected from light. Retinas were then kept in the dark for 5 m, or exposed to 2000 lux white light for 5 m and processed as above. For the in vivo experiment, retinas were obtained from 16 hr dark-adapted mice or from mice exposed to 2000 lux white light for 4 hr with pupils dilated, and processed the same way.
 
 HPLC analysis was performed as previously described (Di Pierro et al., 1995), with minor modifications. A BRISA LC2 C18, 250 × 4.6 mm, 5 μm particle size column (Teknokroma, Sant Cugat del Vallés, Spain) was equilibrated with mobile phase eluent A (10 mM tetrabuthylammonium hydroxide, 10 mM KH2PO4,0.25% v:v methanol, adjusted to pH 7.00 with HCl). A linear gradient was formed with eluent B (2.8 mM tetrabuthylammonium hydroxide, 100 mM KH2PO4, 30% v:v methanol, adjusted to pH 5.5 with HCl) as follows: 5 m 100% eluent A; 5 m 90% eluent A; 5 m 70% eluent A; 10 m 63% eluent A; 5 m 55% eluent A; 10 m 45% eluent A; 20 m 25% eluent A; 20 m 0% eluent A (100% eluent B). A Waters Acquity HPLC with a 210 nm-380nm diode array detector was used, at a flow rate of 0.8 ml/min and constant temperature of 40°C. Injector temperature was 10°C. Standard stock solutions (GMP, GDP, GTP, AMP, ATP) were diluted in 0.1M KH2PO4. Nucleotide concentrations in each sample were determined by measuring the area of the corresponding peak and comparing it to the peak area of the corresponding standard.
 
-## In vivo metabolic flux analysis by injection of a stable isotope of gly
+### In vivo metabolic flux analysis by injection of a stable isotope of gly
 
 A group of 5 week-old C57Bl mice was dark-adapted overnight. They were anesthesized with an intraperitoneal injection of ketamine (70 mg/kg; Ketalar, Parke-Davis, Wellington, New Zealand) and xylazine (7 mg/kg; Rompun, Bayer, Leverkusen, Germany) in saline solution (NaCl 0.9%), and injected intravitreally with 1 μl of a 20 mM solution of 13C2; 15N-Glycine [Cambridge Isotope Laboratories CNLM-1673-H-0,5] in phosphate saline buffer. The injection was performed under dim red light. Mice were kept in darkness, or immediately transferred to a bright light setting (1600 lux white light) for 4 hr. Mouse recovery from anesthesia in the dark or light setting was promoted by keeping the mouse body temperature with a heating pad. After 4 hr, retinas were collected, frozen in dry ice and kept at −80°C until mass spectrometry analysis.
 
@@ -270,13 +379,128 @@ Metabolites were extracted from the retina by vortexing retinas in cold acetonit
 
 Extracts were analyzed by ultra high performance liquid chromatography coupled to a 6490 triple quadrupole mass spectrometer (Agilent Technologies) with electrospray ion source (LC-ESI-QqQ) working in positive mode. 10 µl of extract were injected to the liquid chromatographic system. Metabolites were separated using an InfinityLab Poroshell 120 HILIC-Z, 2.1 × 100 mm, 2.7 μm (PEEK lined) column (Agilent Technologies). Mobile phase A was water with 50 mM ammonium acetate and 5 μM medronic acid, and mobile phase B was acetonitrile. Separation of the samples was conducted under the following gradient: 0–0.5 min 80% of B; 0.5–7.5 min decrease to 70% of B; 7.5–8.5 min decrease to 50% of B; 50% B was maintained for 30 s; 9–9.5 min raise to 80% of B; 9.5–11 min 80% of B. The flow was 0.7 ml/min. The mass spectrometer parameters were: drying and sheath gas temperatures 270°C and 400°C, respectively; source and sheath gas flows 12 and 12 l/min, respectively; nebulizer flow 20 psi; capillary voltage 3000V; nozzle voltage 1500V; and iFunnel HRF and LRF 70 and 80V, respectively. QqQ worked in multiple reaction monitoring (MRM) mode using two transitions (quantitation and confirmation transition) for each compound. The transitions for unlabelled metabolites and the collision energy (CE(V)) were: AMP 348→136(16), 348→119(56); ATP 508→136(32), 508→410(12); GMP 364→152(8), 364→135(52); GDP 444→152(32), 444→135(60); GTP 524→152(32), 524→135(56); cGMP 346→152(12), 346→135(54); IMP 349→137(16), 349→110(60); Gly 76→30(8),76→58(20). For labelled metabolites were: AMP 351→139(16), 351→122(56); ATP 511→139(32), 511→413(12); GMP 367→155(8), 367→138(52); GDP 447→155(32), 447→138(60); GTP 527→155(32), 527→138(56); cGMP 349→155(12), 349→138(54); IMP 352→140(16), 352→113(60); Gly 79→32(8), 79→61(20), as stated in Table 3. The percentage of labeled metabolites in the total pool of a particular metabolite was calculated as ‘[labeled/(labeled + unlabeled)]x100’. The average percentage of labeled (*) metabolites in the samples were: % IMP* [dark samples: 0,64%; light samples: 1,7%]; % AMP* [dark samples: 0,31%; light samples: 0,53%] and % of GMP% [dark samples: 0,33%; light samples: 0,52%]. This percentage of incorporation of label from 13C2; 15N-Glycine into purine nucleotides is in line with the reported range of incorporation [0–0,8%] in other tissues (Fan et al., 2019), given that exogenous glycine is much less efficient than endogenous glycine at fueling purine nucleotide synthesis in vivo. However our results were very robust in that the experimental ratio of the isotopologues M+3/M+0 for each metabolite was two orders of magnitude higher in the samples than in the corresponding non-labeled metabolite standard. The abundance of M+3 at metabolite standards reflects the natural abundance of isotopologues or ‘background labeling’.
 
-## Electroretinogram analysis
+**Table 3.**
+ Multiple reaction monitoring (MRM) transitions in LC-QqQ MS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Compound</th>
+      <th>RT (min)</th>
+      <th>Quantitation transition (CE)</th>
+      <th>Confirmation transition (CE)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AMP</td>
+      <td>3.21</td>
+      <td>348 → 136 (16)</td>
+      <td>348 → 119 (56)</td>
+    </tr>
+    <tr>
+      <td>AMP*</td>
+      <td>3.21</td>
+      <td>351 → 139 (16)</td>
+      <td>351→ 122 (56)</td>
+    </tr>
+    <tr>
+      <td>ATP</td>
+      <td>5.91</td>
+      <td>508 → 136 (32)</td>
+      <td>508 → 410 (12)</td>
+    </tr>
+    <tr>
+      <td>ATP*</td>
+      <td>5.91</td>
+      <td>511 → 139 (32)</td>
+      <td>511 → 413 (12)</td>
+    </tr>
+    <tr>
+      <td>GMP</td>
+      <td>4.60</td>
+      <td>364 → 152 (8)</td>
+      <td>364 → 135 (52)</td>
+    </tr>
+    <tr>
+      <td>GMP*</td>
+      <td>4.60</td>
+      <td>367 → 155 (8)</td>
+      <td>367 → 138 (52)</td>
+    </tr>
+    <tr>
+      <td>GDP</td>
+      <td>6.13</td>
+      <td>444 → 152 (32)</td>
+      <td>444 → 135 (60)</td>
+    </tr>
+    <tr>
+      <td>GDP*</td>
+      <td>6.13</td>
+      <td>447 → 155 (32)</td>
+      <td>447 → 138 (60)</td>
+    </tr>
+    <tr>
+      <td>GTP</td>
+      <td>7.07</td>
+      <td>524 → 152 (32)</td>
+      <td>524 → 135 (56)</td>
+    </tr>
+    <tr>
+      <td>GTP*</td>
+      <td>7.07</td>
+      <td>527 → 155 (32)</td>
+      <td>527 → 138 (56)</td>
+    </tr>
+    <tr>
+      <td>cGMP</td>
+      <td>1.38</td>
+      <td>346 → 152 (12)</td>
+      <td>346 → 135 (54)</td>
+    </tr>
+    <tr>
+      <td>cGMP*</td>
+      <td>1.38</td>
+      <td>349 → 155 (12)</td>
+      <td>349 → 138 (54)</td>
+    </tr>
+    <tr>
+      <td>IMP</td>
+      <td>3.82</td>
+      <td>349 → 137 (16)</td>
+      <td>349 → 110 (60)</td>
+    </tr>
+    <tr>
+      <td>IMP*</td>
+      <td>3.82</td>
+      <td>352 → 140 (16)</td>
+      <td>352 → 113 (60)</td>
+    </tr>
+    <tr>
+      <td>Gly</td>
+      <td>1.79</td>
+      <td>76 → 30 (8)</td>
+      <td>76 → 58 (20)</td>
+    </tr>
+    <tr>
+      <td>Gly*</td>
+      <td>1.79</td>
+      <td>79 → 32 (8)</td>
+      <td>79 → 61 (20)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*labeled (isotopologue M+3); RT: retention time; CE: collision energy (eV)._
+
+### Electroretinogram analysis
 
 A group of four mice was used for benzamide (BZM) injection, and a group of 7 mice for mycophenolate mofetyl (MMF) injection. A group of four mice was used for injection of bisindolylmaleimide PKC inhibitor. Dark-adapted (>12 hr) animals were anaesthetized with an intraperitoneal injection of ketamine (70 mg/kg; Ketalar, Parke-Davis, Wellington, New Zealand) and xylazine (7 mg/kg; Rompun, Bayer, Leverkusen, Germany) in saline solution (NaCl 0.9%) and pupils were dilated with one drop of 1% tropicamide. For each mouse the right eye was injected with the drug of interest, and the left eye with the physiological saline buffer used for drug dilution. MMF was injected intravitreously to an effective concentration of 200 nM (1 μl injection of 1 μM stock); benzamide riboside was injected to an effective concentration of 80 μM (1 μl injection of 400 μM stock); and bisindolylmaleimide was injected intravitreously to an effective concentration of 250 nM (1 μl injection of 1,25 μM stock).
 
 Two corneal electrodes were used to record simultaneous ERGs from both eyes (Burian-Allen, Hansen Ophthalmic Development Lab, Coralville, IA). Electrodes were placed in the visual axis 2–3 mm from the cornea, with a drop of 2% methyl-cellulose (Methocel, Ciba Vision, Hetlingen, Switzerland) between corneas and electrodes. Mice were maintained for >10 m in absolute darkness before the recordings, initiated 20 m after drug injection. Mouse temperature during the recording was maintained at 37°C with a heating pad (Hot-Cold, Pelton Shepherd Industries, Stockton, CA). Full-field flash ERG was performed, with the retina illuminated with a Ganzfeld dome. To test the effect of the drug under study on rod mass recovery after a saturating light flash, we applied the paired-flash paradigm (Lyubarsky and Pugh, 1996), by triggering a test flash (3 Cd·s/m2) followed by a probe flash of identical intensity at increasing inter-stimulus (IST) intervals: 400, 600, 800, 1200, 1500 and 2000 ms (double flash). The rate of recovery for the a- and b-waves at each IST was obtained by calculating the ratio of a- or b-wave of the probe flash to the a- or b-wave of the test flash. Cone responses were recorded following 5 m of light-adaptation with background white light (50 Cd/m2) to a flash light of 3 Cd·s/m2. Recorded electrophysiological responses were amplified; filtered (CP511 AC amplifier; Grass Instruments, Quincy, MA), and digitalized (ADInstruments Ltd, Oxfordshire, UK). The recording process was controlled with Scope version 3.8.1 software (Power Lab, ADInstruments Ltd). The stimulation protocols were designed according to the International Society for Clinical Electrophysiology of Vision.
 
-## IMPDH1 immunofluorescence localization in retinal sections
+### IMPDH1 immunofluorescence localization in retinal sections
 
 For the analysis of spicula formation in response to mycophenolic acid (MPA) treatment, retinas from 16 hr dark-adapted mice were dissected under dim red light and placed in DMEM-high glucose in the presence or absence of 10 μM MPA, protected from light in a 5% CO2 incubator for 1 or 2 hr. Retinas were then fixed and embedded in acrylamide as described (Hoyo et al., 2014). Cryosections were obtained at 18 µm thickness in a CM15105 Leica Cryostat (Leica Microsystems). Sections were subjected to an antigen retrieval protocol [2 m incubation with proteinase 0.05 mg/ml proteinase K in PBS pH 7.4 and an 8 s heat shock at 70°C]. Sections were then incubated with blocking solution (3% normal goat serum, 1% BSA, 0.3% Triton X-100 in PBS pH 7.4) for 1 hr at room temperature; with primary antibodies overnight at 4°C [anti-IMPDH1 pAb and anti-Rhodopsin 1D4 mAb]; with Lectin peanut agglutinin (PNA) conjugated to Alexa Fluor 647 (Thermo Fisher Scientific) for 2 hr at room temperature to label cones; and with secondary antibodies anti-rabbit Alexa-488 and anti-mouse Alexa-555 (Thermo Fisher Scientific) for 2 hr at room temperature. Sections were mounted with Mowiol (Calbiochem).
 

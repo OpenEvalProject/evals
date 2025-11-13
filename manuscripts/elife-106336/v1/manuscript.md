@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 School of Biological Sciences, University of Bristol Bristol United Kingdom
-2. https://ror.org/013meh722 Department of Zoology, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/027m9bs27 Division of Molecular and Cellular Function, University of Manchester Manchester United Kingdom
-4. https://ror.org/0524sp257 School of Physiology, Pharmacology and Neuroscience, University of Bristol Bristol United Kingdom
-5. https://ror.org/013meh722 Department of Psychology, University of Cambridge Cambridge United Kingdom
+1. School of Biological Sciences, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Department of Zoology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Division of Molecular and Cellular Function, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+4. School of Physiology, Pharmacology and Neuroscience, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+5. Department of Psychology, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 

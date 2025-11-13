@@ -39,6 +39,91 @@ Undergraduate degree pathways in the biosciences and natural sciences at UCL are
 
 The first approach, termed the ‘year 1–2 pathway’, analyses the marks of students entering UCL between 2013–2016 who studied the same cell biology courses in year 1 and 2 (up to 344 students; Table 1). Out of the 344 students, eight did not have a record for having taken year 1 cell biology: based on when they joined UCL, five are likely to have transferred directly into year 2 from another UCL degree, and the other three from another university. In year 1, each student takes one of two courses, and the grades awarded were combined as a single year 1 cell biology output. In year 2 all students study the same course.
 
+**Table 1.**
+ Cell biology cohorts studied in this report.(A) The year 1–2 pathway includes four cohorts that entered UCL between 2013–2016 and took a year 1 and year 2 course in cell biology. *>99% of students stayed with their cohort as it progressed in the pathway. Results for the other ~1% were allocated to the year they took the course. (B) The year 3 study includes students that entered UCL between 2012–2016 and took one of four courses. For each course, the marks of students from all five years groups are aggregated together. All academic years start in October and end June the following year. Final year is based on three year bachelor’s or four year master’s undergraduate degree.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="6">A</td>
+    </tr>
+    <tr>
+      <td>Year 1–2 pathway *</td>
+      <td>Year of entry in to university</td>
+      <td>Start of the academic year in which year 1 course was taken</td>
+      <td>Start of the academic year in which year 2 course was taken</td>
+      <td></td>
+      <td>Start of the academic year in which final year was taken</td>
+    </tr>
+    <tr>
+      <td>Cohort 1</td>
+      <td>2013</td>
+      <td>2013</td>
+      <td>2014</td>
+      <td></td>
+      <td>2015 or 2016</td>
+    </tr>
+    <tr>
+      <td>Cohort 2</td>
+      <td>2014</td>
+      <td>2014</td>
+      <td>2015</td>
+      <td></td>
+      <td>2016 or 2017</td>
+    </tr>
+    <tr>
+      <td>Cohort 3</td>
+      <td>2015</td>
+      <td>2015</td>
+      <td>2016</td>
+      <td></td>
+      <td>2017 or 2018</td>
+    </tr>
+    <tr>
+      <td>Cohort 4</td>
+      <td>2016</td>
+      <td>2016</td>
+      <td>2017</td>
+      <td></td>
+      <td>2018 or 2019</td>
+    </tr>
+    <tr>
+      <td colspan="4">B</td>
+    </tr>
+    <tr>
+      <td>Year 3 study</td>
+      <td>Year of entry in to university</td>
+      <td>Start of the academic year in which year 3 course was taken</td>
+      <td>Start of the academic year in which final year was taken</td>
+    </tr>
+    <tr>
+      <td>Course A</td>
+      <td>2012–16</td>
+      <td>2014–2018</td>
+      <td>2014–2019</td>
+    </tr>
+    <tr>
+      <td>Course B</td>
+      <td>2012–16</td>
+      <td>2014–2018</td>
+      <td>2014–2019</td>
+    </tr>
+    <tr>
+      <td>Course C</td>
+      <td>2012–16</td>
+      <td>2014–2018</td>
+      <td>2014–2019</td>
+    </tr>
+    <tr>
+      <td>Course D</td>
+      <td>2012–16</td>
+      <td>2014–2018</td>
+      <td>2014–2019</td>
+    </tr>
+  </tbody>
+</table>
+
 The other experimental approach, termed the ‘year 3 study’, looked at four different year 3 courses (448 students, entering UCL between 2012–2016; Table 1). Each course had a different composition of students and was chosen on the basis of their class size and variety of specialisms. From the data, it was possible to approximate how many students from the year 1–2 pathway were present in at least one of the year 3 courses (see Methods). This suggests that ~41% (182/448) of the students in the year 3 study flowed from the year 1–2 pathway and an additional ~59% (266/448) came from other bioscience degrees or another degree route.
 
 In the year 1–2 pathway there are four cohorts (one for each year of entry from 2013 to 2016). For clarity, all years in this study are academic years (which in the UK start in September-October and end May-June the following year) and cohorts are cited by the year they start. As each cohort takes two courses – one in year 1 and one in year 2 – a total of eight sets of marks were analysed (Table 1). The year 3 study encompasses students who entered UCL from 2012 to 2016, equalling five-year groups in total. Due to the small class sizes, the marks of the five-year groups included in the study are aggregated together for each course.
@@ -49,11 +134,11 @@ In addition to the 792 students included in the study (across both experimental 
 
 The average award gap in good grades is the difference in the mean proportion of BAME and white students that are awarded good marks. For each course, the final mark awarded is the sum of a weighted exam and weighted coursework mark (with exams typically receiving the higher weighting). Here, to enable a comparison of exam and coursework results, the raw (unweighted) marks are reported for each, along with the final weighted mark.
 
-## Comparing the award gap of UK domicile and international students at UCL
+### Comparing the award gap of UK domicile and international students at UCL
 
 Statistics agencies in the UK report the ethnicity award gap for undergraduate students that are domiciled in the UK, but universities themselves can collect data on all their students. At UCL, the gap for its UK students is 4.9% on average based on the marks of 8,044 undergraduate students that started their graduation year between 2016–2018, which are similar cohort years to those in this study (Table 1). This is at the smaller end of the scale compared to the average gap for all UK students (13.4%). In these same UCL cohorts, the average gap between BAME and white international undergraduate students (N = 5,671 total) is 6.3%, which is near the 4.9% for UK students. This suggests that if any domicile effect exists, it is small. Studying any potential effect of domicile on the gap is not the purpose of this investigation and has been discussed in part elsewhere (Stegers-Jager et al., 2016; Woolf et al., 2013). In this study, which is designed to find major contributions to the gap that would benefit all students, both UK domicile and international students are included for all the cell biology courses investigated and comparative UCL-wide data.
 
-## Entrance qualifications for cell biology students in this study
+### Entrance qualifications for cell biology students in this study
 
 The most common type of entrance exam (termed advanced level, or A-level) was accessible from UCL records. At UCL about 90% of UK and 30–40% of international students are admitted with A-levels. The university places strict equivalency requirements on those students that enter with other types of admission exams. Thus A-level grades are a reasonable approximation of all students in the study.
 
@@ -65,7 +150,7 @@ The mean admission tariff for BAME (50.53 ± 0.15) and white (50.29 ± 0.33)
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/58971/elife-58971-fig1-v1.jpg)
 
-**Figure 1.:** (A) Top three A-level grades awarded to the first three cohorts in year 1–2 pathway that entered UCL between 2013–2015: grades were converted to the UK standard points tariff (see Entrance qualifications for cell biology students in this study), the average for each student was calculated, and the mean of all three cohorts was determined (SEM: ±0.15 for BAME and ±0.33 for white students, which are too small to see on the graph). N = 179 students (82 BAME, 97 white); 536 entrance grades (246 BAME, 290 white). (B) Percentage of grades awarded to students in (A) that were C or lower, B, A, or A*: 3 year mean (± SEM). (C) The percentage of top admission (A* and A) grades awarded to BAME and white students in (A), the percentage of students that received the top two grade bands (first or 2i) in year 2 of cell biology in 2014–2016 (same students shown in (A)), and their average mark in year 2 of cell biology: each column: (3 year mean ± SEM).Figure 1—source data 1.
+**Figure 1.:** (A) Top three A-level grades awarded to the first three cohorts in year 1–2 pathway that entered UCL between 2013–2015: grades were converted to the UK standard points tariff (see Entrance qualifications for cell biology students in this study), the average for each student was calculated, and the mean of all three cohorts was determined (SEM: ±0.15 for BAME and ±0.33 for white students, which are too small to see on the graph). N = 179 students (82 BAME, 97 white); 536 entrance grades (246 BAME, 290 white). (B) Percentage of grades awarded to students in (A) that were C or lower, B, A, or A*: 3 year mean (± SEM). (C) The percentage of top admission (A* and A) grades awarded to BAME and white students in (A), the percentage of students that received the top two grade bands (first or 2i) in year 2 of cell biology in 2014–2016 (same students shown in (A)), and their average mark in year 2 of cell biology: each column: (3 year mean ± SEM).
 
 An alternative approach for assessing admission qualifications is to look at the distribution of the total number of each individual grade (A*, A, B, C or lower) awarded to each cohort. As expected distributions for BAME and white students were nearly identical (Figure 1B); of the total grades awarded to BAME students 95.45% ± 1.01 were A* or A, and for white students this figure was 95.02% ± 0.62 (Figure 1C).
 
@@ -73,13 +158,13 @@ Looking at the grades awarded to the same three cohorts of students in year 2 of
 
 These data indicate that prior qualifications do not explain the subsequent award gap in cell biology, at least at the resolution that the A-level grading system permits. This is in line with other admission studies at UK universities (Amos and Doku, 2019; Broeke and Nicholls, 2007; Woolf et al., 2013).
 
-## Dissecting cell biology course components at the level of good grades
+### Dissecting cell biology course components at the level of good grades
 
 In all year 1, year 2 and year 3 courses in the study, proportionally fewer BAME students were awarded final good grades than white students (Figure 2A, B and E). That the award gap has appeared by year 1 has also been reported for the University of Nottingham (Amos and Doku, 2019) and is the case for all undergraduate degrees at UCL (Figure 2F). The average gap in good grades awarded each year of study in cell biology (~8–13%) and across UCL (~7–11%) were similar (Figure 2, compare E and F, final mark). This suggests that the gaps identified in cell biology are in the range expected for students studying at UCL. Note the UCL award gap each year of study (starting the year 2016–18) were higher (~7–11%; Figure 2F) than the final degree classification (average 5.7%; 13,715 UK and international students starting the graduation year 2016–2018). One likely reason is that for most degrees, a defined number of worse performing courses are automatically excluded when calculating the final classification.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58971/elife-58971-fig2-v1.jpg)
 
-**Figure 2.:** Percentage of BAME and white students in each cohort (shown in Table 1) that were awarded good grades in cell biology for the final course mark in the (A) year 1–2 pathway and (B) year 3 study; and the exam and coursework components in the (C) year 1–2 pathway and in the (D) year 3 study. (E) Difference in the percentage of white and BAME students awarded a good mark (first or 2i) for each year of the cell biology course (data shown in A-D) based on the mean of all four cohorts or courses (means and SEMs are reported in Figure 2—source data 1). (F) Difference in mean proportion of good grades awarded to all white and BAME students at UCL in 2016, 2017 and 2018 for each year of study (years 1, 2 and 3). Total number of students that completed the course = 792; in the year 1–2 pathway = 344 (167 BAME, 177 white); in the year 3 study = 448 (205 BAME, 243 white). 22 students were excluded (12 due to unknown ethnicity; 10 did not complete the course).Figure 2—source data 1.
+**Figure 2.:** Percentage of BAME and white students in each cohort (shown in Table 1) that were awarded good grades in cell biology for the final course mark in the (A) year 1–2 pathway and (B) year 3 study; and the exam and coursework components in the (C) year 1–2 pathway and in the (D) year 3 study. (E) Difference in the percentage of white and BAME students awarded a good mark (first or 2i) for each year of the cell biology course (data shown in A-D) based on the mean of all four cohorts or courses (means and SEMs are reported in Figure 2—source data 1). (F) Difference in mean proportion of good grades awarded to all white and BAME students at UCL in 2016, 2017 and 2018 for each year of study (years 1, 2 and 3). Total number of students that completed the course = 792; in the year 1–2 pathway = 344 (167 BAME, 177 white); in the year 3 study = 448 (205 BAME, 243 white). 22 students were excluded (12 due to unknown ethnicity; 10 did not complete the course).
 
 For 11 out of 12 sets of marks studied, this award gap seemed largely derived from the exam component of the course (Figure 2C–E). The average exam gaps were similar in year 1 and 2 at over 13% each, and most pronounced in year 3 at nearly 17% (Figure 2E). Whether the peak in year 3 is a trend needs to be more widely tested. No exam gap was detected in year 2, cohort 4 (Figure 2C). However, a gap overall was still observed for this group (Figure 2A). This was explained by a longer ‘tail’ of lower exam marks for BAME students which resulted in fewer BAME students (61.3%; 23/36) being able to use their coursework grade to obtain a good final mark compared to white students (88.5%; 23/26).
 
@@ -91,15 +176,23 @@ In theory, if most students are awarded a good grade that may mask a gap. Howeve
 
 Overall, the method of looking at good marks seems sensitive enough to both detect a gap and to reflect its size if it exists. Cohen’s D (which is a measure of effect size) was then applied to the mean award gap of all four cohorts or courses studied for each component in the year 1–2 pathway and year 3 study. This revealed that the effect for coursework is three to six times smaller than the exam (Figure 2—source data 1).
 
-## Testing for potential hidden award gaps across all marks
+### Testing for potential hidden award gaps across all marks
 
 There is a further possibility that there may be a larger coursework award gap, but it was not detectable because it occurred within a specific range of marks. However, in year 2 and year 3 cell biology a larger coursework gap could not be found when comparing every absolute mark awarded to BAME and white students at the resolution of 5% intervals (which is one-half grade band) from less than 30% to 100% scores (Figure 3; only cohorts 1–3 were included in the analysis for year 2 – see legend for more details) Clearly evident in these frequency distributions, the peak of final marks (Figure 3A and B) and the peak of exam marks (Figure 3C and D) awarded to BAME students were shifted half to more than one grade band lower than white students (Figure 3A–D). The end result is that BAME students are most likely to receive a low 2i (60–64%), whilst white students are more likely to receive a high 2i (65–69%) or a low first (70–74%) for these courses overall (Figure 3A and B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58971/elife-58971-fig3-v1.jpg)
+
+**Figure 3.:** Comparisons of all marks awarded to individual BAME and white students in year 2 (A, C, E) and year 3 (B, D, F) cell biology for all courses in year 3 study and three cohorts (cohorts 1-3) in year 2; cohort 4 in year two was excluded since there was no exam award gap in good marks, as reported (Figure 2C; and main text) and also none in first class marks-only. For each component, frequency of marks for each interval was aggregated across cohorts. To enable fair comparison BAME, student frequencies were then normalised to the total number of white students in that component (normalisation factors are shown in Figure 3—figure supplement 1—source data 1). Total number of students that completed the course = 698; in year 2 = 250 max (116 BAME, 134 white); in year 3 = 448 max (205 BAME, 243 white). Exact cohorts and N for each component in (A–F) is shown in Figure 3—figure supplement 1—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58971/elife-58971-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Comparison of the award gaps in the exam, coursework, and final mark, for first class marks only (A, C) and all good marks (B, D) for the year 2 and year 3 average (A, B) and individual (C, D) cell biology courses and cohorts in year 3 (also listed in Figure 3—figure supplement 1—source data 1). As noted, cohort 4 of year 2 was excluded from Figure 3; therefore, for fair comparison, the award gap data shown here for year 2 only includes cohorts 1, 2 and 3 for all good marks and first class marks only. Award gaps in all four year 2 cohorts (cohort 1, 2, 3 and 4) were similar except the exam gap in all good grades is larger (~18%) for the 3-cohort mean (B) than the 4-cohort mean (Figure 2E, year two exam,~13%) as expected, and this also follows through to first class grades (see full evaluation in Figure 3—figure supplement 1—source data 1). All award gaps represent the mean of individual cohorts or courses except those in year 2 at the level of first class marks (see Methods for more details); the exam gap was instead based on the aggregated data of cohorts 1–3 and, for a fair comparison, this method was also used to calculate the award gap in first class marks for the other two components (final mark and coursework). See Figure 3—figure supplement 1—source data 1 for mean values +/- SEM or averages as indicated.
 
 In contrast, the histograms of coursework marks for white and BAME students were almost completely superimposed in both studies (Figure 3E and F). Further inspection of the curves demonstrates the method is sensitive enough to visualise the small award gap in good marks between BAME and white students for the coursework in year 3 (Figure 3F, slight broadening in the bell-shaped, blue curve away from the orange curve at 59% to 40%) that was reported in Figure 2E. However, clearly there is no larger visible gap anywhere in the entire spectrum of marks at the resolution of 5% intervals for either year 2 or 3 cell biology coursework (Figure 3E and F).
 
 There was insufficient data to fully assess year 1 cell biology course components by first class marks, though they were found to follow the same general trends as year 2 and 3 (see Limitations of the study).
 
-## Cell biology award gaps in first class marks
+### Cell biology award gaps in first class marks
 
 As expected from these histograms (Figure 3) the average award gaps for year 2 and year 3 coursework at the level of first class marks-only remained small (2.60% and 4.11%, respectively) similar to that reported at the level of all good marks for these modules (2.14% and 5.45%; Figure 3—figure supplement 1, compare A and B).
 
@@ -111,7 +204,7 @@ These differences are not unexpected. Indeed, although the exam award gap for fi
 
 Taken together, these data indicate that in these cell biology courses, the exam is the main contributor to the gap in marks awarded for the course overall. If there is a contribution from coursework, it is relatively small in all years and may not be consistently present in years 1 and 2.
 
-## Evaluating potential underlying causes of the award gap in exams
+### Evaluating potential underlying causes of the award gap in exams
 
 There are fewer cell biology courses in the year 1–2 pathway than in the year 3 study, and it is possible that comparing more biology courses in these first two years could identify a larger award gap in coursework, similar to the one found in year 3. On the corollary, the inclusion of students from multiple years groups in the year 3 study might drive the small coursework award gap detected. Future studies will be needed to distinguish between these two possibilities. Furthermore, it is also not possible to determine whether the difference in size of the exam and coursework award gaps between year 1, 2 and 3, and between different year 3 modules, is due to how each course is taught: for example, how the course is delivered, the precise types of assessments, the level of support students receive on different degree routes or a combination of these factors.
 
@@ -121,7 +214,7 @@ In the future, it will also be important to directly test the extent to which th
 
 Overall, these results suggest that this strategy of dissecting individual components of a degree could reveal what is causing the award gap for a particular subject. Although a description goes beyond the scope of this paper, these results could inform the development of a new educational framework aimed at reducing the award gap in cell biology.
 
-## Limitations of the study
+### Limitations of the study
 
 The study is restricted to certain courses at one university. The wider applicability of the written exam and coursework findings require testing in cell biology in other universities and in other subjects across institutions. Most degree subjects (if not all) are composed of different types of activities and assessed components. The method described here is envisaged to be readily adaptable to look systematically at the relevant components of any particular subject.
 
@@ -135,33 +228,33 @@ For the past 10 years, only 0.5% per year has been shaved off the undergraduate 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/58971/elife-58971-fig4-v1.jpg)
 
-**Figure 4.:** Recommendations are from three major UK original research reports: ECU and HEA, 2008; Berry and Loke, 2011; Amos and Doku, 2019. Reports were selected based on the depth and breadth of the data, the number of participating higher education institutions (HEIs) and representation across the past decade. The recommendations from each report were then assigned to seven different categories based on the language used to describe them. For example, characteristics of ‘HEI culture’, ‘student experience’ and 'racism' were grouped together, and ‘change curriculum’ encompasses recommendations with terms such as diversify, decolonise, internationalise, and make more inclusive. N = 197 recommendations; 168 participating HEIs total: 99 HEIs partnered with the UK National Union of Students and Universities UK; and 69 HEIs worked with the Equality Challenge Unit and the Higher Education Academy (now AdvanceHE).Figure 4—source data 1.
+**Figure 4.:** Recommendations are from three major UK original research reports: ECU and HEA, 2008; Berry and Loke, 2011; Amos and Doku, 2019. Reports were selected based on the depth and breadth of the data, the number of participating higher education institutions (HEIs) and representation across the past decade. The recommendations from each report were then assigned to seven different categories based on the language used to describe them. For example, characteristics of ‘HEI culture’, ‘student experience’ and 'racism' were grouped together, and ‘change curriculum’ encompasses recommendations with terms such as diversify, decolonise, internationalise, and make more inclusive. N = 197 recommendations; 168 participating HEIs total: 99 HEIs partnered with the UK National Union of Students and Universities UK; and 69 HEIs worked with the Equality Challenge Unit and the Higher Education Academy (now AdvanceHE).
 
 A scrutiny of the literature suggests that various factors are reducing the speed at which the award gap is closing: lack of staff time coupled to insufficient funding and resources to implement existing recommendations (see Policy 1); limited scientific approaches and diverse types of evidence on the underlying causes (Policy 2); limited funding for fundamental scientific studies and for applied scientific approaches on what works (Policies 3 and 4). That the gap is only disappearing very slowly also propels the need for alternative, parallel action to reduce impact on academic (and other) career progression, by removing (in the case of academic careers) barriers to accessing PhD and postdoc positions (Policy 5). Overall, combining these five strategies may help eliminate the award and progression gap between white and BAME students.
 
-## Policy 1. Create time and fund resources to develop, implement and monitor impact of recommendations
+### Policy 1. Create time and fund resources to develop, implement and monitor impact of recommendations
 
 Many universities, including UCL, have put considerable effort into identifying what resources are needed to close the award gap, with nearly 200 recommendations in three reports alone (Figure 4; Box 1). But therein lay two fundamental issues: they are all hugely time-intensive to develop and implement, both for academic and other university staff, and cost-heavy for universities. Academics already work excessive hours just to get their ‘regular’ job done (Richardson, 2019; UCU, 2016), yet seem directly responsible for delivering many of the recommendations. The UK does not appear in the world’s top 100 for staff-student ratios (THE, 2020) and the best UK ones are misleading, as they do not measure proportion of time spent on teaching or with students. Even if it is still ‘too early to tell’, the same work-load issues and ownership of who develops and delivers the actions apply. The complex mix of recommendations distils to a simpler accelerated answer: increase staff ratios and remove other speed barriers.
 
-## (1a) Increase the number of academics per student and monitor the new ratio to keep pace with the rise in student numbers
+#### (1a) Increase the number of academics per student and monitor the new ratio to keep pace with the rise in student numbers
 
 This would enable identification of sufficient academic staff that can be specifically tasked with a remit to work on the award gap so more time can be devoted to implementing initiatives aimed at decreasing the award gap. These additional academics should work with module or programme organisers, or both, to develop and implement existing recommendations (Figure 4) or design new education frameworks incorporating new evidence, such as the findings of this study, that are best suited for each subject.
 
-## (1b) Increase the number of staff to extract and analyse data and place more of them locally within departments to work on the gap
+#### (1b) Increase the number of staff to extract and analyse data and place more of them locally within departments to work on the gap
 
 This is essential to cope with the time-heavy (but critical) activity of monitoring and measuring impact of local actions. Currently individuals and departments working on the undergraduate award gap must typically rely on a single, central student record team, or similar, to extract student results. Such teams are often small and understandably must instead prioritise their own important tasks, which include complying with statutory regulations and maintaining the student record for the entire university. Furthermore, departmental teaching teams typically do not have dedicated analysts.
 
-## (1c) Release ethnicity of students in selected, pre-approved undergraduate class lists
+#### (1c) Release ethnicity of students in selected, pre-approved undergraduate class lists
 
 Another speed barrier is that in some higher education institutes – but not all – there is no mechanism for course-organisers (and entire departments) to access ethnicity (or gender) for their undergraduate class lists whilst they are live. Instead, organisers must wait to receive ethnicity data matched to student results retrospectively, which may well not be until the next academic year, delaying results of impact of any actions (see Policy 1b). Students in the UK give permission for their special category data (such as ethnicity) to be used for the legal purpose of monitoring equality of opportunity or treatment. This suggests that collecting this data in real-time will not breach UK data protection and recording of processing regulations.
 
-## (1d) Increase funding and resources to implement existing recommendations
+#### (1d) Increase funding and resources to implement existing recommendations
 
 Investment is required to enable the increase in staff time or number, or both, and to provide resources to implement the many recommendations (Figure 4); there are >5 types of training alone suggested for example (Box 1). Some universities (including University of the Arts London (UAL) and University of Brighton) have responded by releasing university access and other funds to hire new, permanent staff to work on the award gap, whilst others (including UCL) are enabling temporary ‘buy-out’ of existing staff time to develop and implement initiatives. This is welcome news; however, the total amounts to a handful of full-time equivalent posts, whereas at a single large university alone there are >4,400 courses (modules) within >440 separate undergraduate degrees (estimate based on the UCL record) and scaling that up to >50,000 undergraduate degrees across the UK (http://www.ucas.com) approaches half a million courses.
 
 The UK government who have tasked universities with removing the difference in degree scores could fund substantially more academic positions specifically for this role, so there is one or more in each department. These positions could be made permanent which would substantially increase the £8 per BAME student provided for training and other resources to reduce the gap (see Policy 3). A proposed stakeholder alliance could also make a significant investment (Policy 4).
 
-## Policy 2. Increase scientific evidence on causes of the unexplained award gap and the diversity of approaches
+### Policy 2. Increase scientific evidence on causes of the unexplained award gap and the diversity of approaches
 
 At first glance it may appear there is plenty of evidence on causes of the award gap, which in turn informs the many suggested actions (Figure 4). However, on closer inspection there seem two large gaps in the evidence base. Closing these have the potential to uncover previously unrecognised solutions and to inform which ones work best.
 
@@ -175,11 +268,11 @@ Robust scientific evidence can be qualitative or quantitative in nature, and bot
 
 Explicitly advocating scientific approaches in the UK’s Race Equality charter mark and in Fellow of Higher Education Academy Awards, when either is related to degree award gap work, may also help the rate of progress, as seen with the gender-professor gap and the Athena Swan charter mark.
 
-## Policy 3. Increase direct funding to research teams proposing scientific approaches
+### Policy 3. Increase direct funding to research teams proposing scientific approaches
 
 Enabling Policy 2 requires investment. Although the UK government has announced universities must remove the gap, it is only providing £3 million/year (government and other sources) in targeted-funding, equivalent to just £8 per BAME undergraduate/year (see Methods). In addition, the commitment is only for 2–3 years; yet the award gap will take several decades to close at current projection (AdvanceHE, 2020b). Universities also have separate ‘access funds’ which could in theory be released to individual research groups. Their general availability, however, seems unclear as well as in competition with other equally important priority areas such as enabling students from disadvantaged backgrounds to attend university.
 
-## Policy 4. Involve different stakeholders to create a funding alliance
+### Policy 4. Involve different stakeholders to create a funding alliance
 
 Vanishing the award gap should concern everyone. It provides all employers with a major route to considerably close their ethnicity pay- and career-gaps and thus increases productivity through enhanced work-force diversity. This in turn increases government tax revenue through increased corporate profits. Furthermore, gap closure is the sole method available to universities to remove their breach of UK laws on race equality.
 
@@ -187,19 +280,19 @@ A funding alliance seems a pragmatic way to raise and accelerate the large inves
 
 Strong leaders who believe what society has to gain from such an alliance are required for success. It is proposed then to take advantage of a pre-existing structure such as the UK’s Nuffield Foundation, which already seems to demonstrate such a belief both in its strategy document 2017–2021 and in its funding of projects widely across education, welfare and justice; their housing of the suggested alliance may speed up its creation.
 
-## Policy 5. Re-design monitoring and recruitment for early academic career positions whilst the award gap still exists
+### Policy 5. Re-design monitoring and recruitment for early academic career positions whilst the award gap still exists
 
 This policy combines determining exactly where the issue in PhD and postdoc recruitment is for different minority ethnic groups (Policy 5a), implementation of more accurate national data (Policy 5b), and direct action on the impact of an unexplained difference in grades for admission exams and other selection criteria that disadvantage PhD applicants from minority ethnic groups (Policy 5c). Although most of this section focuses on PhD admission the principles of recruitment redesign and access can be applied to postdoc recruitment.
 
-## (5a) Increase the monitoring and reporting of applications, interviews and offers for PhD student and postdoctoral researcher positions by ethnicity and gender
+#### (5a) Increase the monitoring and reporting of applications, interviews and offers for PhD student and postdoctoral researcher positions by ethnicity and gender
 
 Although at a national level, we know where the ethnicity career gaps are in terms of academic progression and the size of those gaps (described in the introduction), that information alone is not precise enough to design actions with the most impact. For example, preliminary work in our department reveals that Black people are underrepresented at application, whilst the bigger barrier for candidates from Asian ethnic groups seems underrepresentation at interview for both PhD and postdoctoral positions (ethnicity of candidates are not revealed during selection). Where such a monitoring policy is practiced, consequent legal and fair re-design of recruitment criteria combined with other successful initiatives have been powerful (Policy 5c).
 
-## (5b) Report national numbers of PhD students and postdocs separately to other positions
+#### (5b) Report national numbers of PhD students and postdocs separately to other positions
 
 Whilst individual departments have capacity to accurately record the ethnicity of their own PhD and postdocs, local and national data are required to monitor the wider impact of actions. Yet, UK data that are readily available (e.g. from the Higher Education Statistics Agency and Advance HE) do not report ethnicity of PhD students separate from other postgraduate research (PGR) students (such as master of research); nor do they report postdocs separate from other staff levels of similar seniority (see Methods). However, only a PhD typically qualifies as the first academic career step. Using PGR as a benchmark for BAME PhD students and several job groups as a proxy for BAME postdocs may over-estimate already low numbers. In the US, on the other hand, PhD recipients are separately reported.
 
-## (5c) Widen initiatives that work to increase representation of minority ethnic students on PhD programmes
+#### (5c) Widen initiatives that work to increase representation of minority ethnic students on PhD programmes
 
 Some pioneering initiatives in the UK and US have driven a two to four-fold increase in the proportion of PhD students from minority ethnic backgrounds in life sciences and physics over the last 3–6 years (Hodapp and Woodle, 2017; Frank Bayliss, Tetrad Programme Office and Nadine Mogford personal communications). Where measured, retention of PhD students is also higher than the national average in these schemes (Hodapp and Woodle, 2017). These are the London (UK) Interdisciplinary Doctorate programme (LIDo), Tetrad PhD programme at UCSF, and the American Physical Society (APS) Bridge Programme (which has also increased female doctorates in physics). Proportion of minority ethnic students on PhD programmes overall at UCSF have also increased in the past five years (Office for Institutional Research). There may be other programmes that have also had success unknown to the author. Common to the success of these UK and US programmes is:
 
@@ -213,7 +306,7 @@ Whilst the award gap persists, parallel actions on monitoring and changing recru
 
 ## Methods
 
-## Definition of terms and international variations
+### Definition of terms and international variations
 
 In the UK, BAME (and also BME) is a nationally used term to represent all ethnic groups within Black, Asian, mixed ethnicity and other minority ethnic individuals (which includes white minority ethnic groups). It is recognised here, that individuals have different opinions about using these terms. ‘Minority’ is relative to the country’s total demographic. Students select their own ethnicity when they enrol at university, standardised across UK higher education institutions (https://www.hesa.ac.uk/collection/c18051/a/ethnic).
 
@@ -225,35 +318,35 @@ The terms 'course' and 'module' are used interchangeably and refer to a single b
 
 It is recognised that in some fields, measuring the results of a survey would be considered a quantitative method. However, for clarity, in this study a strict definition of quantitative evidence is used, where the raw source of information is itself numerical (for example, marks awarded). If the original source is answering questions, recounting lived or other experience, or providing opinions such as in a survey, interview, discussion or other type of feedback, this is defined as qualitative in this study.
 
-## Students included and excluded from the study
+### Students included and excluded from the study
 
 UCL classifies a student as having completed a module if a non-zero mark is awarded for the module overall; and only these ‘completed’ students were included in the analysis. A small minority of included students (4.5%: 36/792) completed the course (non-zero mark awarded), but UCL did not return a mark for either the exam (35 students), or exam and coursework (one student). These are almost certainly authorised extenuating circumstances, which permits exclusion of the component from the final mark awarded to the student or delays in updating the student record. UCL assesses the final mark for these students based on the components that they complete and any other relevant material.
 
 Hence in the figures, total student number in the categories of final mark, exam and coursework may vary slightly (see exact N in Figure 2—source data 1). For completeness (detailed further in An exploration of the award gap in cell biology courses at University College London), N = 8 students (included) directly joined the year 1–2 pathway at year 2.
 
-## Estimating number of students in the year 1–2 pathway that are in the year 3 study
+### Estimating number of students in the year 1–2 pathway that are in the year 3 study
 
 From the year 2 data it was possible to determine how many students (112/250; 44.8%) in the year 1–2 pathway (cohorts 1–3) flowed into course A, B, or C in year 3. It was not possible to identify the year 3 destinations of the fourth cohort because these students had not yet completed their year 3 when records were extracted. The same proportion of 44.8% was used to approximate the number that would have flowed from the fourth cohort (44.8% of 94 year 2 students = 42). The exact N for each cohort is reported in Figure 2—source data 1.
 
 From the year 2 data provided, it was not possible to track which students in the year 1–2 pathway took course D in year 3. However, using information on the degree programme that was included with the year 3 data, it was possible to identify a further 28 students that must have flowed from the year 1–2 pathway, resulting in a total of 182 (140 exact and 42 estimated) students that were in both studies.
 
-## Student cohorts, student flows and interrupted studies
+### Student cohorts, student flows and interrupted studies
 
 All students in this study are undergraduate students and they could select whether to graduate with a bachelor’s (3 year course) or a master’s (4 year course) undergraduate degree.
 
 Here, >99% (N = 787/792) of students stayed with their cohort. For ease of quantification for the <1% of students who interrupted their studies, the data in the figures, tables, source data and supplements are parsed by the academic year in which each individual student took each individual course.
 
-## Data extraction, research ethics and data protection
+### Data extraction, research ethics and data protection
 
 UCL department of Student Data extracted results from the university’s Student Record, which includes the ethnicity of each student. The identity of each student is not available from the datasets supplied to the author. UCL legal services advise that in the context of external publishing, the data is considered fully anonymised and aggregated and thus is exempt from UK General Data Protection 2018 and the super-ceded Data Protection 1998 legislation and from Record of Processing Activity statutory requirement. Hence, they further advise explicit consent is not required. Students give their general consent through a privacy notice that they agree to when enrolling at UCL. The notice explains that their data, including special category (in this case ethnicity) and their marks awarded may be processed (such as this work here), and the legal basis for doing so. Here, that basis is to meet UCL’s legal obligation of monitoring equality of opportunity and treatment (as is the case for all UK universities). Students may opt out of providing certain data such as gender and ethnicity and is recorded as ‘unknown’ by UCL.
 
 UCL conditions to publish externally have been met: module code and precise titles are not provided, and undergraduate, PhD and postdoctoral data are anonymous and aggregated. The project is registered with UCL Data Protection and has UCL Research Ethics Committee approval (17663/001).
 
-## Cell biology assessed components
+### Cell biology assessed components
 
 The exams were invigilated and for the year 1 cell biology courses were mainly multiple-choice questions (machine-marked, student identity-blind) and for the year 2 and year 3 cell biology courses mainly long-answer essays (manually marked, student identity-blind). Students did not see the exam in advance. Coursework comprised one or more of the following types of activities: lab practical work, open-book work questions, discursive pieces, and/or a project (all marked blind).
 
-## Quantification
+### Quantification
 
 In this study the following was calculated for the indicated cohort or course: the average A-level entrance tariff, proportion of each A-level grade awarded, the percentage of BAME and white students awarded a specified grade for different components of the course, and mean of all marks awarded to students on the course or in the cohort. The mean of all cohorts or courses in each year was then calculated along with the standard error of the mean (SEM). The difference in the mean percent of BAME and white students awarded a good mark (first or 2i) or first class mark-only was then used to determine the award gap for each year, except in the following case:
 
@@ -261,32 +354,32 @@ It was not possible to calculate the award gap in first class marks in this way 
 
 Frequencies of raw marks awarded to BAME students were normalized to white students (Figure 3) by multiplying by factors 1.14–1.19 (provided in Figure 3—figure supplement 1—source data 1). This enabled fair comparison of these two ethnic groups where BAME student raw total population was smaller than white students.
 
-## Assessing significance of results
+### Assessing significance of results
 
 Due to the relatively small number of cohorts or courses studied for each year (N = 4), a statistical test of significance between the different award gaps between white and BAME students were not calculated and the raw data were evaluated instead, as recommended (Krzywinski and Altman, 2013; Vaux, 2012).
 
-## Attrition of BAME researchers occurs early in the academic trajectory to professor (Introduction)
+### Attrition of BAME researchers occurs early in the academic trajectory to professor (Introduction)
 
 This is an approximate guide as UK data, other than for undergraduates and full professors, are not precisely reported at the national level (discussed in Policy 5b). The academic trajectory was constructed from source data in section 3 of two reports published by AdvanceHE, which included all degree subjects and ethnicity of all UK academic staff and students (AdvanceHE, 2020a and AdvanceHE, 2020b).
 
 Out of all the students and staff included in the report, the following percent self-identified as BAME: 23.69% of graduates (with a bachelor’s or undergraduate master’s degree); 18.07% of PhD students (proxy - PGR); 10.7% postdoc researchers (proxy – academic level K which includes researcher and research fellow, but also some other very junior academic staff); 10.9% of assistant professors (academic level J); 9.9% of associate professors (academic level I); 9.1% of full professors (level ‘5A’).
 
-## Tracing the evidence underlying recommendations on how to close the award-gap (Policy 2)
+### Tracing the evidence underlying recommendations on how to close the award-gap (Policy 2)
 
 The type of evidence that informed the 197 recommendations summarised in Figure 4 was identified either from: ECU and HEA, 2008, Berry and Loke, 2011, Amos and Doku, 2019, or by back-tracing the evidence from other studies or reflective papers from participating higher education institutes, cited therein. These were carefully checked at the original source. Most recommendations seemed based on informal observation (74.62%; 147/197) and a few (4.57%; 9/197) could not be traced back to any obvious evidence. The other 41 recommendations were informed by data as described in the main text.
 
 Ethnicity of respondents was not reported in 15/30 of surveys, interviews or discussions or other feedback included or cited in these three papers: ECU and HEA, 2008, Berry and Loke, 2011, Amos and Doku, 2019. Out of the 15 that did report ethnicity, 66.7% (10) only included responses from minority ethnic staff and students.
 
-## Calculation of UK funding of award gap research (Policy 3)
+### Calculation of UK funding of award gap research (Policy 3)
 
 UK Government Office for Students (‘catalyst funding’) and university (typically ‘matched’ funding) was identified from ‘Addressing Barriers to Student Success Programme’, which also includes funds that are specifically aimed at reducing the award gap (10/17 projects).
 
 UCL was part of the Kingston University-lead consortium, which funded development and production of the ‘UCL inclusive curriculum toolkit’ and a small team to provide data and advise faculty deans. Total funding for the ten projects was £9,183,471 to be spent over typically three years (March 2017- October 2019). The British Medical Council has awarded an additional £85,000 to individual researchers. There are 360,650 UK-domiciled, BAME undergraduate students in the UK (Higher Education Statistics Agency). Thus, UK government and other funding is £8.49 per BAME student per year (and the funding has now ended).
 
-## Calculation of funding per dementia patient (Policy 4)
+### Calculation of funding per dementia patient (Policy 4)
 
 The Dementia Discovery Fund is £250 million and there are about 850,000 dementia patients in the UK (as of 2021) giving £294 funding per patient.
 
-## COVID-19 statement
+### COVID-19 statement
 
 This study predates the COVID-19 pandemic and all data (including all citations) are of original assessments and degree classifications as they stood prior to universities changing them in March 2020 as a result of the pandemic.

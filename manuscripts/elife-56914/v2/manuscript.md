@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Islet vascularization is essential for intact islet function and glucose homeostasis. We have previously shown that primary cilia directly regulate insulin secretion. However, it remains unclear whether they are also implicated in islet vascularization. At eight weeks, murine Bbs4 islets show significantly lower intra-islet capillary density with enlarged diameters. Transplanted -/- Bbs4 -/- islets exhibit delayed re-vascularization and reduced vascular fenestration after engraftment, partially impairing vascular permeability and glucose delivery to β-cells. We identified primary cilia on endothelial cells as the underlying cause of this regulation, via the vascular endothelial growth factor-A (VEGF-A)/VEGF receptor 2 (VEGFR2) pathway. In vitro silencing of ciliary genes in endothelial cells disrupts VEGF-A/VEGFR2 internalization and downstream signaling. Consequently, key features of angiogenesis including proliferation and migration are attenuated in human BBS4 silenced endothelial cells. We conclude that endothelial cell primary cilia regulate islet vascularization and vascular barrier function via the VEGF-A/VEGFR2 signaling pathway.
+Islet vascularization is essential for intact islet function and glucose homeostasis. We have previously shown that primary cilia directly regulate insulin secretion. However, it remains unclear whether they are also implicated in islet vascularization. At eight weeks, murine Bbs4-/-islets show significantly lower intra-islet capillary density with enlarged diameters. Transplanted Bbs4-/- islets exhibit delayed re-vascularization and reduced vascular fenestration after engraftment, partially impairing vascular permeability and glucose delivery to β-cells. We identified primary cilia on endothelial cells as the underlying cause of this regulation, via the vascular endothelial growth factor-A (VEGF-A)/VEGF receptor 2 (VEGFR2) pathway. In vitro silencing of ciliary genes in endothelial cells disrupts VEGF-A/VEGFR2 internalization and downstream signaling. Consequently, key features of angiogenesis including proliferation and migration are attenuated in human BBS4 silenced endothelial cells. We conclude that endothelial cell primary cilia regulate islet vascularization and vascular barrier function via the VEGF-A/VEGFR2 signaling pathway.
 
 ## Introduction
 
@@ -38,11 +38,23 @@ Primary cilia are present on roughly eighty percent of the cells in the adult ma
 
 ## Results
 
-## Intra-islet capillary density is reduced in Bbs4-/-pancreata
+### Intra-islet capillary density is reduced in Bbs4-/-pancreata
 
 To test if primary cilia play a role in pancreatic islet vascularization, we characterized intra-islet capillaries in pancreatic cryosections of 2-month-old Bbs4-/- mice (N = 8). Bbs4-/- mice are a model of Bardet-Biedl Syndrome (OMIM #209900), a ciliopathy characterized mainly by polydactyly, renal and gonadal malformations and truncal obesity. Bbs4 encodes a protein that is a component of the BBSome complex, a protein super complex thought to be involved in the sorting of membrane proteins to and from the ciliary compartment (Nachury et al., 2007; Liew et al., 2014). While Bbs4-/- mice form primary cilia, they are not fully functional (Mykytyn et al., 2004). The symptoms show good overlap with what has been observed in BBS patients and include obesity, male sterility, and impaired glucose handling. Platelet endothelial cell adhesion molecule (PECAM-1) immunofluorescence, as a marker of endothelial cells, revealed 35% reduced intra-islet capillary density compared to wildtype (wt) littermate controls (Figure 1A,B). To calculate intra-islet capillary density, the relative PECAM-1 positive volume was normalized to insulin-positive islet volume (Figure 1B, p=0.0019). In addition, the average vessel diameter was increased by 18% compared to that in wt controls (Figure 1C, p<0.0001). Because tissue integrity is often compromised in cryopreserved samples, we corroborated our results by whole mount staining and imaging of freshly isolated islets of 2-month-old mice (Figure 1D–F). In good agreement with our previous observations, capillary density was reduced by 34% and vessel diameter increased by 20% in islets of Bbs4-/- mice (p<0.0001 for both). Of note, we observed no change in pericyte coverage of intra-islet capillaries based on Neuron-glial 2 (NG2) immunofluorescence (Figure 1—figure supplement 1A and B, p=0.7045). In 4-month-old Bbs4-/- mice, however, the difference in intra-islet capillary density and diameter in Bbs4-/- mice approximated that of wt littermates (Figure 1—figure supplement 1C–1E, p=0.0676 and 0.0736 respectively). There is no evidence of significant changes in β-cell mass or insulin content in Bbs4-/- mice, and the observation of only slightly but not statistically significantly larger islets in Bbs4-/- mice at 4 weeks of age rules out effects of islet size on vessel density (Gerdes et al., 2014). These dynamics implicate that primary cilia and centrosome/basal body integrity play a role during the vascularization of pancreatic islets. Importantly, there was no detectable difference in vascularization of the exocrine portion of the pancreas at two months of age (Figure 1—figure supplement 1F). Therefore, Bbs4 function seems to be mostly restricted to the endocrine pancreas and not relevant for the exocrine compartment.
 
-## Bbs4-/- endothelial cells exhibits blunted angiogenic response during islet re-vascularization
+![Figure 1.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immuno-fluorescence staining of pancreatic sections from 2-month-old wt and Bbs4-/- mice showing islets (insulin, red) and intra-islet capillaries (PECAM-1, green). (B–C) Quantification of relative intra-islet PECAM-1 positive volume, normalized to insulin-positive volume (B) and average intra-islet capillary diameters (C) in wt and Bbs4-/- pancreatic sections. Individual data points are shown, **p<0.01, n = 8 for animals and n = 2–3 islets per animal. (D) Immuno-fluorescence staining of freshly isolated and fixed pancreatic islets from 2-month-old wt and Bbs4-/- mice, showing PECAM-1 (green) labeled islet capillaries. (E–F) Quantification of relative PECAM-1 positive volume within each islet, normalized to islet volume estimated by backscatter signal (E) and average capillary diameters (F) in wt and Bbs4-/- islets. Individual data points are shown, **p<0.01 by Mann-Whitney test, n = 3 for animals and n = 8–12 islets per animal. (G) Re-vascularization of 2 day-cultivated wt (upper) and Bbs4-/- (lower) islets in wt recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. (H) Quantification of re-vascularization rates of wt and Bbs4-/- islet grafts in wt recipients. Results are shown as mean ± SEM. (I) Relative vascular density of wt and Bbs4-/- islet grafts at the end of 12 weeks post-transplantation. Individual data points are shown, n.s. means not significant by Mann-Whitney test. (J) Average diameters of newly formed capillaries in wt and Bbs4-/- islet grafts in wt recipients. Results are shown as mean ± SEM, *p<0.05, **p<0.01 by two-way-ANOVA, n = 6 for animals and n = 4–8 islets per animal. Islets were encircled by dashed lines. The same is for all the other figures. Scale bars: 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immuno-fluorescence staining of pancreatic sections from 2-month-old wt and Bbs4-/- animals showing pericyte coverage (NG2, red) on intra-islet capillaries (PECAM-1, green). (B) Quantification of surface ratio of NG2 positive area to PECAM-1 positive area. n = 4 for animals and n = 2–4 islets per animal. (C) Immuno-fluorescence staining of pancreatic sections from 4-month-old wt and Bbs4-/- animals showing islets (insulin, red) and intra-islet capillaries (PECAM-1, green). (D–E) Quantification of relative intra-islet PECAM-1 positive volume, normalized to insulin-positive volume (D) and average intra-islet capillary diameters (E) in wt and Bbs4-/- islets from 4-month-old animals. n = 4 for animals and n = 2–4 islets per animal. (F) Immuno-fluorescence staining of pancreatic sections from 2-month-old wt and Bbs4-/- animals, showing PECAM-1 (green) labeled capillaries in exocrine pancreas. Individual data points are shown, n.s. means not significant by Mann-Whitney test. Scale bars: 50 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Remaining endothelial cells in islets which were freshly isolated (left), or cultured for 2 days (middle) or 7 days (right), indicated by whole islet PECAM-1 staining. Scale bar: 50 μm. (B) Schematic illustration of two scenarios of islet revascularization in the anterior chamber of mouse eyes. Upper panel indicates that when transplanted after minimum in vitro culture, the newly formed islet microvasculature is composed of both donor islet vascular cells (red) and recipient cells (green). Lower panel indicates that when transplanted after prolonged culture, the number of donor islet vascular cell decreases, and islet re-vascularization is mainly derived from recipient cells.
+
+### Bbs4-/- endothelial cells exhibits blunted angiogenic response during islet re-vascularization
 
 To test if cilia play a role in intra-islet capillary formation during engraftment of transplanted islets, we transplanted murine islets into the anterior chamber of the eye (ACE) (Speier et al., 2008). This approach allows for longitudinal and non-invasive in vivo monitoring of islet engraftment and re-vascularization. We and others have previously shown that endothelial cells disappear over prolonged periods of cultivation of isolated islets. Immediately after isolation, endothelial cells maintain the intra-islet capillary network. After two days in culture, endothelial cell clusters remain, whereas seven days post-isolation, intra-islet endothelial cells are generally lost (Figure 1—figure supplement 2A). Thus, when transplanted shortly after isolation, a significant number of endothelial cells from the donor survives and contributes to revascularization of the islet graft (Brissova et al., 2004; Linn et al., 2003; Nyqvist et al., 2005). Importantly, both islet cells and endothelial cells are ciliated (Nauli et al., 2008; Dinsmore and Reiter, 2016; Hughes et al., 2020; Ma and Zhou, 2020). Therefore, to determine whether the role of primary ciliary/centrosomal function in islet endothelial or endocrine cells is underlying the reduction in intra-islet capillary density in Bbs4-/- mice, we capitalized on the temporal differences in the ratio of donor or recipient endothelial cells in regenerated islet capillary network (Figure 1—figure supplement 2B).
 
@@ -52,13 +64,25 @@ In the other experimental setting, islets were kept in culture for seven days af
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig2-v2.jpg)
 
-**Figure 2.:** Bbs4-/- islets after prolonged culture exhibit normal re-vascularization patterns in wt recipient eyes.(A) Re-vascularization of 7-day-cultivated wt (upper) and Bbs4-/- (lower) islets in wt recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. Donor islets have been cultured for 7 days prior to transplantation. (B) Quantification of re-vascularization rates of wt and Bbs4-/- islet grafts in wt recipients. Results are mean ± S.E.M. (C) Relative vascular density of wt and Bbs4-/- islet grafts at the end of 12 weeks post-transplantation. Individual data points are shown, n.s. means not significant by Mann-Whitney test. (D) Average diameters of newly formed capillaries in wt and Bbs4-/- islet grafts in wt recipients. Results are mean ± S.E.M., n = 4 for animals and n = 2–6 islets per animal. Scale bar: 50 μm.
+**Figure 2.:** (A) Re-vascularization of 7-day-cultivated wt (upper) and Bbs4-/- (lower) islets in wt recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. Donor islets have been cultured for 7 days prior to transplantation. (B) Quantification of re-vascularization rates of wt and Bbs4-/- islet grafts in wt recipients. Results are mean ± S.E.M. (C) Relative vascular density of wt and Bbs4-/- islet grafts at the end of 12 weeks post-transplantation. Individual data points are shown, n.s. means not significant by Mann-Whitney test. (D) Average diameters of newly formed capillaries in wt and Bbs4-/- islet grafts in wt recipients. Results are mean ± S.E.M., n = 4 for animals and n = 2–6 islets per animal. Scale bar: 50 μm.
 
 To verify our conclusion, we reversed the transplantation strategy by transplanting wt islets to Bbs4-/- recipients either directly after isolation or after keeping them in culture for two and seven days respectively (Figure 3). To minimize confounding effects of diabetes on islet engraftment, we transplanted islets into the eyes of four-month-old Bbs4-/- mice that were obese and glucose intolerant, but not overtly diabetic yet (Figure 3A–C). Based on the apparent role of endothelial primary cilia in the angiogenic response, we expected more severe impairment in re-vascularization compared to wt recipients. Indeed, we observed significantly slower re-vascularization in this transplantation scheme and the rates correlated with the time islets were kept in culture (Figure 3D and E). The re-vascularization rate of wt islets transplanted to the ACE of Bbs4-/- mice seven days post-isolation was significantly lower than that of wt islets two days post-isolation (p=0.0053), and both were significantly lower than that of wt islets transplanted to wt ACE (p=0.0002 for two-day group and p<0.0001 for seven-day group respectively). Interestingly, intra-islet vessel density after completion of re-vascularization was not significantly lower than that of wt islets transplanted into wt recipients at the twelve-week endpoint (Figure 3F). The diameter of intra-islet capillaries, however, was markedly wider in wt islets transplanted to Bbs4-/- recipients after seven days in culture than the other two groups (Figure 3G).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig3-v2.jpg)
+
+**Figure 3.:** (A) Non-fasting glycemic levels in Bbs4-/- mice during islet engraftment. (B) Body weight measurements of Bbs4-/- mice during engraftment. (C) Intraperitoneal glucose tolerance test 12 weeks post-transplantation. Results are mean ± S.E.M. *p<0.05, **p<0.01 by two-way-ANOVA, n = 5. (D) Re-vascularization of wt islets (upper) after 2 (middle) or 7 days (lower) of culture in wt or Bbs4-/- recipients at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. (E) Quantification of re-vascularization rates of wt islet grafts. Results are mean ± S.E.M. (F) Relative vascular density of wt islet grafts in different recipients at the end of 12 weeks post-transplantation. Individual data points are shown, n.s. means not significant by one-way-ANOVA. (G) Average diameters of newly formed capillaries in wt islet grafts. Results are mean ± S.E.M. Comparisons were made between 2 day and 7 day groups by two-way-ANOVA, *p<0.05, **p<0.01. n = 4 for animals and n = 2–4 islets per animal for wt recipients. n = 5 for animals and n = 1–4 islets per animal for Bbs4-/- recipients. Scale bar: 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immuno-fluorescence staining of a freshly isolated islet from Cdh-tdT mice showing that tdTomato fluorescence (red) and intra-islet capillaries (PECAM-1, green) overlaps. (B) Representative images showing that 2-day and 7-day cultivation of Cdh-tdT islets leads to different amounts of donor endothelial cells constituting islet vasculature after engraftment. (C) Re-vascularization of 2-day-cultivated wt (upper) and Bbs4-/- (lower) islets in Cdh-tdT recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of FITC-conjugated dextran. (D) Quantification of re-vascularization rates of wt and Bbs4-/- islet grafts in Cdh-tdT recipients. (E) Average diameters of newly formed capillaries in wt and Bbs4-/- islet grafts in wt recipients. (F) Proportion of recipient to donor endothelial cells in wt and Bbs4-/- islet grafts indicated by the surface area ratio of tdTomato labeled cells to total dextran labeled islet vessels during engraftment. Results are mean ± S.E.M. *p<0.05, **p<0.01 by two-way ANOVA, n = 5 for animals and n = 2–4 islets per animal. Scale bars: 50 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immuno-fluorescence staining of pancreatic sections from 3-month-old wt and Pifo-/-mice showing islets (insulin, red) and intra-islet capillaries (PECAM-1, green). (B–C) Quantification of relative intra-islet PECAM-1 positive volume, normalized to insulin-positive volume (B) and average intra-islet capillary diameters (C) in wt and Pifo-/-pancreatic sections. Individual data points are shown. *p<0.05, **p<0.01 by Mann-Whitney test, n = 3 for animals and n = 4–6 islets per animal. (D) Re-vascularization of 2-day-cultivated wt (upper) and Pifo-/- (lower) islets in wt recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. (E) Quantification of re-vascularization rates of wt and Pifo-/-islet grafts in wt recipients. Results are mean ± S.E.M. (F) Relative vascular density of wt and Pifo-/-islet grafts at the end of 12 weeks post-transplantation. Individual data points are shown. (G) Average diameters of newly formed capillaries in wt and Pifo-/-islet grafts in wt recipients. Results are mean ± S.E.M., **p<0.01 by two-way ANOVA, n.s. means not significant by Mann-Whitney test, n = 5 for animals and n = 2–5 islets per animal. Scale bars: 50 μm.
+
 To further distinguish donor and recipient endothelial cells in ACE islet grafts and trace their dynamics during engraftment, we used a tdTomato reporter mouse line (Ai14) that carries a loxP flanked STOP codon preventing expression of a CAG-driven red fluorescent protein (tdTomato) in the Rosa26 locus. Crossing the floxed allele to an endothelial specific transgenic Cdh5-Cre mouse line (Chen et al., 2009) rendered all VE-Cadherin expressing-endothelial cells labeled with tdTomato (Cdh5-tdT). Directly after isolation, red fluorescence efficiently labels the intact intra-islet capillary network, which is demonstrated by PECAM-1 staining (Figure 3—figure supplement 1A). As expected, this network is partially preserved when transplanted shortly after isolation, and forms a mosaic neo-vasculature in islet grafts together with recipient endothelial cells (Figure 3—figure supplement 1B, left panel). Twelve weeks post-transplantation, we quantified the surface area ratio of tdTomato-positive structures to the lumen of the blood vessels as marked by fluorescein-labeled dextran and found it to be 41.7% in wt and 45.9% in Bbs4-/- islets transplanted two days after culture. This is in good agreement with another study, in which freshly transplanted islets were under the kidney capsule; here, the authors observed that donor endothelial cells constituted 40 ± 3% of the newly formed vasculature between three to five weeks post-transplantation (Brissova et al., 2004). On the contrary, only little tdTomato fluorescence was detected in the Cdh-tdT islets cultivated over seven days, suggesting that re-vascularization is mostly derived from non-fluorescent recipient endothelial cells (Figure 3—figure supplement 1B, right panel). To confirm previous findings and better understand the relative contribution of donor versus recipient endothelial cells during islet graft vascularization, we transplanted Ai14;Cdh5-Cre animals with islets isolated from Bbs4-/- and wt littermate controls which were cultivated for two days and monitored their re-vascularization (Figure 3—figure supplement 1C). While delayed re-vascularization and altered vascular morphology of Bbs4-/- islets was observed as before in wt recipients (Figure 3—figure supplement 1D and E, Figure 1H and J), the ratio of recipient-derived tdTomato-positive endothelial cells stayed significantly higher in Bbs4-/- islets during the first four weeks of engraftment (Figure 3—figure supplement 1F). Taken together, these results support the conclusion that Bbs4-/- endothelial cells are indeed less responsive to the angiogenic signals than wt endothelial cells.
 
-## Primary cilia of endothelial cells regulate islet re-vascularization
+### Primary cilia of endothelial cells regulate islet re-vascularization
 
 Because Bbs4 protein might have additional roles in cellular processes unrelated to the basal body, we used two additional mutant mouse models. Pitchfork (Pifo-/-) mice have dysfunctional cilia that cannot be properly disassembled (Kinzel et al., 2010). PIFO does not localize to the ciliary axoneme but accumulates at the base of the cilium during cilia disassembly and interacts with ciliary targeting complexes. Laterality defects in Pifo-/- mice suggest that ciliary signaling is impaired in these animals. We determined intra-islet vascular density in 3-month-old Pifo-/-mice. PECAM-1 staining revealed 19% reduction in intra-islet vascular density and 38% increase in vessel diameter in Pifo-/- mice compared to littermate controls, similar to our observation in Bbs4-/- islets (Figure 3—figure supplement 2A–2C, p=0.0421 and p=0.0032 respectively). Transplantation of Pifo-/- islets into wt ACE showed a delay in relative re-vascularization compared to wt islets, also similar to what we observed for Bbs4-/- mice (Figure 3—figure supplement 2D–2G). Although the effects on re-vascularization were less severe than those in Bbs4-/- islets, the findings support a role for primary cilia in islet vascularization and the angiogenic response in islet engraftment.
 
@@ -68,13 +92,29 @@ To further clarify the contributions of β-cell vs. endothelial cilia to the vas
 
 **Figure 4.:** (A) Efficiency of Ift88 silencing by tamoxifen induction. Individual data points are shown, **p<0.01 by Mann-Whitney test, n = 4 for animals. (B) Immuno-fluorescence staining of pancreatic sections from 2-month-old control (vehicle) and βICKO mice, showing islets (Nkx 6.1, cyan) and intra-islet capillaries (PECAM-1, magenta). (C) Quantification of relative intra-islet PECAM-1 positive area, normalized to islet area in control and βICKO pancreatic sections. Individual data points are shown, n.s. means not significant by Mann-Whitney test, n = 6 for animals and n = 5–6 islets per animal. (D) Re-vascularization of overnight-cultured control (upper) and βICKO (lower) islets in wt recipient eyes at 2-, 4-, 8- and 12-weeks post-transplantation, visualized by intravenous injection of Texas Red-conjugated dextran. (E) Quantification of re-vascularization rates of control and βICKO islet grafts in wt recipients. Results are mean ± S.E.M. n = 6 for animals and n = 6–8 islets per animal. (F) Relative vascular density of control and βICKO islet grafts at the end of 12 weeks post-transplantation. Individual data points are shown. n = 3 for animals and n = 2–3 islets per animal. (G) Average diameters of newly formed capillaries in control and βICKO islet grafts in wt recipients. Results are mean ± S.E.M. and n.s. means not significant by Mann-Whitney test. n = 6 for animals and n = 6–8 islets per animal. Scale bars: 50 μm.
 
-## Intra-islet vasculature plays a role in glucose metabolism
+### Intra-islet vasculature plays a role in glucose metabolism
 
 Besides a significantly higher vascular density than exocrine pancreas, another hallmark of intra-islet capillary are fenestrae as gateways for substance exchange between islets and the blood stream (Henderson and Moss, 1985). Thus, we further examined the barrier function of Bbs4-/- islet vessels four months after engraftment, when the intra-islet vascular density is comparable with wt islets. As previously reported, in isolated islets or Bbs4 depleted MIN6m9 cells, we did not observe a difference in β-cell glucose uptake or glucose metabolism. However, the role of Bbs4 in islet endothelial cell barrier function remains uncharacterized. Blinded analysis of electron micrographs showed significantly reduced fenestration in the capillaries of Bbs4-/- compared to wt islet grafts in the ACE four months after transplantation (Figure 5A and B, 27% lower, p=0.0006). Although the basement membrane seems slightly thicker in Bbs4-/- islets, we did not observe significant thickening of this structure (Figure 5C, p=0.1414). To test if reduced fenestration could affect the permeability and thus barrier function of Bbs4-/- islet capillaries, we intravenously injected 40 kDa fluorescently labeled dextran and measured the diffusion of dextran-related fluorescence outside the islet graft over time (inside the dashed area not including the part of vessel, Figure 5D). Fluorescently labeled dextran of different sizes were tested prior to the experiments, and we chose 40 KDa dextran due to its specific leakage through fenestrated islet vessels instead of surrounding iris vessels (Figure 5—figure supplement 1). During the time of the experiments, fluorescence intensity immediately increases outside the islet graft followed by a plateau that is established at comparable times after dextran injection due to the active drainage of aqueous humor. Fluorescence intensity is normalized to islet size for better comparison. Importantly, both the initial rate and the plateau are decreased in Bbs4-/- islet grafts (Figure 5E, p=0.0478). Simulation of this process also supports different kinetics of dye leakage (Figure 5F), suggesting that the delivery of medium sized molecules out of the blood stream is less efficient in Bbs4-/- intra islet capillaries. Nutrients such as glucose or fatty acids are small molecules that often rely on active transport across cell membranes. But in the case of highly fenestrated capillaries, solutes including small molecules, ions and hormones pass freely through the pores between the blood and luminal surface. To test if glucose delivery to islet cells was affected by the ultrastructural changes in islet capillaries, we injected fluorescently labeled glucose analog (2-NBDG) into wt animals transplanted with Bbs4-/- and wt islets. 2-NBDG is rapidly transported into islet cells from intra-islet capillaries and simultaneously leaked into the surrounding aqueous humor from iris vessels. We followed 2-NBDG uptake by measuring fluorescence intensity originating from islet cells over time, and normalized it to the fluorescence intensity originating from the aqueous humor (Figure 5G), since the 2-NBDG leaking from iris vessels is determined by the recipient animal and not by the individual eye. Importantly, wt islet cells internalized significantly more 2-NBDG than Bbs4-/- islet cells under the same period of time (Figure 5H, p=0.0118). This result points to a critical role of ciliary/basal body proteins in maintaining islet capillary fenestration with implications for the delivery of glucose and potentially other nutrients to islet cells. To investigate the physiological relevance of our findings, we utilized our transplantation model in combination with Bbs4-/- or wt islets to better understand how reduced intra-islet capillary density and permeability may affect islet output and glucose tolerance. It was previously shown that 100 islets (diameter between 150 and 200 μm) transplanted into the ACE of chemically induced diabetic mice were sufficient to revert blood glucose concentration to normoglycemic levels. This amount of pancreatic islets is defined as marginal islet mass (Rodriguez-Diaz et al., 2018). C57Bl/6 J mice were treated with strepotozotocin and subsequently transplanted with marginal islet mass of wt or Bbs4-/- islets. Four weeks after transplantation, mice transplanted with Bbs4-/- islets were glucose intolerant compared to those mice transplanted with wt islets (Figure 5I). Eight weeks after transplantation, mice showed impaired glucose tolerance and, 12 weeks post-transplantation, only mildly impaired glucose handling compared to those transplanted with wt islets (Figure 5J and K). Overall, the phenotype is ameliorated over time, which is consistent with our previous observations in re-vascularization (Figures 1 and 2), suggesting that a lack of capillaries in Bbs4-/- islets indeed negatively affects whole body glucose homeostasis. Glucose handling is mildly impaired by the end of 12 weeks, which is probably caused by impaired vascular barrier function in combination with defective 1st phase insulin secretion (Gerdes et al., 2014).
 
-## Impaired VEGFA-VEGFR2 dependent signaling in Bbs4-depleted endothelial cells
+![Figure 5.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig5-v2.jpg)
+
+**Figure 5.:** (A) Electron microscopic images of wt and Bbs4-/- islet graft dissected from wt recipient eyes, showing fenestrated islet capillaries (arrows) and basement membrane (asterisks). Scale bar: 1 μm. (B–C) Quantification of average fenestrae density (B) and basement membrane thickness (C) of the capillaries in wt and Bbs4-/- islet grafts. Individual data points are shown, **p<0.01, n.s. means not significant by Mann-Whitney test, n = 7 for animals, and n = 1–2 for islets. (D) Representative image showing leakage of 40 KDa FITC-conjugated dextran from wt islet grafts in mouse eyes at 1 min after injection. Scale bar: 50 μm. (E–F) Quantification of FITC fluorescence intensity in the region circles by the dashed lines outside wt and Bbs4-/-islet grafts (E) and simulated curves showing different kinetics (F). Arrow indicates injection time point. Results are mean ± S.E.M. *p<0.05 by two-way-ANOVA, n = 12 for animals. (G) Representative image showing 2-NBDG leakage from wt islet vasculature and uptake by islet cells in vivo. Times points are 3 s (left) and 60 s (right) after injection. Scale bar: 50 μm. (H) Real-time ratio of 2-NBDG fluorescence intensity in islet cells of wt and Bbs4-/- islet grafts to aqueous humor. Arrow indicates injection time point. Results are mean ± S.E.M. *p<0.05, n = 8 for animals and n = 1–2 for islets. (I–K) Intraperitoneal glucose tolerance test of wt recipient mice which were transplanted with wt or Bbs4-/- islets, at 4 weeks (I), 8 weeks (J) and 12 weeks (K) post-transplantation. Results are mean ± S.E.M. *p<0.05, **p<0.01 by two-way-ANOVA, n = 6 for animals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Kinetics of fluorescence intensity outside islet grafts in transplanted eyes (Tx) or in the aqueous humor of non-transplanted control eyes (Non-Tx) after intravenously injection of fluorescently labeled dextran at sizes of 10 KDa (A), 40 KDa (B) and 70 KDa (C), respectively. Results are mean ± S.E.M, n = 4.
+
+### Impaired VEGFA-VEGFR2 dependent signaling in Bbs4-depleted endothelial cells
 
 We have observed a role for endothelial cilia in the islet vascularization process; the signaling pathways involved in this process, however, remained elusive. To complement the in vivo data and to better understand the cell-autonomous role of ciliary/basal body proteins in endothelial cells, we used a murine pancreatic endothelial cell line, MS-1. Suppressing Bbs4 by RNA interference reduces Bbs4 expression up to two-fold (Figure 6—figure supplement 1A). Expression analysis of key angiogenic factors revealed no observable changes in Tie1, Tie2, endothelial Nitric oxide synthase (eNOS) or Notch ligand Delta-4 (Dll4) (Figure 6A). However, VEGFR2, Ephrin A1 and B2 are downregulated by 20% when MS-1 cells are depleted of Bbs4. Interestingly, Bbs4 depletion has no effect on PECAM-1 expression and therefore does not change the characteristic properties of this endothelial cell line. Of note, intra-islet capillary density and fenestration is primarily maintained by VEGFA-VEGFR2-signaling (Lammert et al., 2003; Esser et al., 1998; Roberts and Palade, 1995).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig6-v2.jpg)
+
+**Figure 6.:** (A) qPCR analysis of VEGF-A signaling related gene expression in Bbs4 silenced MS-1. Results are presented as relative mRNA levels normalized to scrambled shRNA treated cells, *p<0.05, **p<0.01 by one-way-ANOVA, n = 3. (B) and (C) Western blots showing VEGF-A signaling pathway in scrambled or shBbs4 treated HDMECs. (D) Quantification of VEGFR2 activation. (E) Representative images showing biotinylated VEGF-A uptake in scrambled or ShBbs4 treated HDMECs and quantification (F). (G) Representative cell surface staining of VEGFR2 in scrambled (Scr) or ShBbs4 treated HDMECs, prior to (0 min) and after VEGF-A stimulation (10 min). (H) Quantification of the percentage of remaining membrane-bound VEGFR2. (I) VEGF-A induced proliferation in Scr or ShBbs4 treated MS-1 by EdU assay (green) and quantification (J). (K) VEGF-A induced endothelial cell migration in Scr or ShBbs4 treated MS-1. Individual data points are shown, *p<0.05, **p<0.01 by Mann-Whitney test, n = 3. Scale bars: 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56914/elife-56914-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Efficiency of shRNA silencing of Bbs4 in MS-1 endothelial cells. Individual data points are shown, **p<0.01 by one-way-ANOVA, n = 4. (B–C) Quantification of western blots showing BBS4, VEGFR2 and EphrinB2 protein levels (B), and activation of PLCγ1, Akt and MAPK 42/44 (C) in scrambled or shBbs4 treated HDMECs. *p<0.05, **p<0.01 by two-way-ANOVA, n = 3. (D) Western blots showing VEGF-A signaling pathway in freshly isolated wt and Bbs4-/- islets, and (E) quantification of activation of Akt and MAPK 42/44. *p<0.05 by two-way-ANOVA, n = 3 for animals. (F) Western blots showing VEGF-A signaling pathway in isolated wt islets cultivated for 7 days, and (G) quantification of activation of Akt and MAPK 42/44, *p<0.05 by Mann-Whitney test, n = 2 for animals. (H) Efficiency of shRNA silencing of Ift88 in MS-1 cells. **p<0.01 by one-way-ANOVA, n = 3. (I) Representative images showing biotinylated VEGF-A uptake in scrambled or ShIft88 treated MS-1 cells and quantification (J), **p<0.01 by Mann-Whitney test, n = 3. Scale bar: 10 μm. (K) Notch signaling activity in scrambled or ShIft88 treated MS-1 cells and indicated by luciferase assay. *p<0.05 by Mann-Whitney test, n = 3. (L) qPCR analysis of angiogenic gene expression in freshly isolated wt and Bbs4-/- islets. **p<0.01 by one-way-ANOVA, n = 4 for animals. (M) qPCR analysis of VEGF-A and VEGFR2 gene expression in freshly isolated control and βICKO islets. Results are presented as relative mRNA levels normalized to control. *p<0.05 by one-way-ANOVA, n = 4 for animals. (N) VEGF-A secretion from cultured wt and Bbs4-/- islets, normalized to total DNA quantity of islets. **p<0.01 by Mann-Whitney test, n = 5 for animals. (O) VEGF-A secretion from cultured control and βICKO islets, normalized to total DNA quantity of islets. **p<0.01 by Mann-Whitney test, n = 4 for animals.
 
 Angiogenesis is not exclusively regulated on the transcriptional level but also relies on a complex network of signaling cascades. Therefore, we tested if VEGFR2-dependent phospho-activation of downstream signaling molecules, including Phospholipase Cγ1 (PLCγ1), Protein Kinase B (Akt) and Mitogen-activated protein kinase (MAPK 42/44) were affected. We used primary human endothelial cells HDMEC stably transduced with lentivirus encoding shRNA targeting BBS4, and tested before (t = 0), seven and fifteen minutes after VEGF-A addition (Figure 6B–D, Figure 6—figure supplement 1B and C). In control cells (scrambled), VEGFR2 Tyr 1175 phosphorylation is markedly increased at seven minutes (4.3-fold) and sustained until 15 min (3.4-fold) after stimulation (Figure 6B and D). By comparison, pTyr1175 levels increased minimally in BBS4-depleted HDMECs (2-fold and 1.8-fold, respectively, Figure 6B and D). At the same time, total levels of VEGFR2 are also lowered in absence of Bbs4 by 20% (Figure 6B, Figure 6—figure supplement 1B, p=0.0101). In addition, we found that EphrinB2 protein level is slightly reduced in BBS4-depleted HDMECs (Figure 6B, Figure 6—figure supplements 1B and 5%, p=0.0051), corroborating our previous finding of decreased gene expression (Figure 6A). While PLCγ1 phosphorylation peaks at seven minutes and decreases 15 min after stimulation in control cells, loss of Bbs4 leads to a 40% attenuation in PLCγ1 phosphorylation at seven minutes (Figure 6C, Figure 6—figure supplement 1C, p=0.0336). Similarly, pAkt and pMAPK 42/44 were significantly reduced in BBS4-depleted cells seven and fifteen minutes after VEGF-A addition (Figure 6C, Figure 6—figure supplement 1C, p=0.0222 and p=0.0010, respectively). These in vitro experiments are suggestive but do not necessarily reflect in vivo processes of islet vascularization. Therefore, we further validated these results in freshly isolated islets from wt and Bbs4-/- animals, which still contain endothelial cells (Figure 6—figure supplement 1D). In unstimulated islet cells, pAkt and pMAPK baseline levels did not differ between wt and Bbs4-/- cells. Ten minutes after addition of 100 ng/ml VEGF-A, pAkt levels increased 2.2-fold in wt but only 1.4-fold in Bbs4-/- cells. Likewise, pMAPK levels increased 3-fold in wt but only 1.5-fold in Bbs4-/- cells, demonstrating that VEGF-A triggered downstream signaling is not sufficiently activated in these cells (Figure 6—figure supplement 1D and E). Importantly, similar experiments on wt islets cultured for seven days to diminish intra-islet endothelial cells showed markedly lower response to VEGF-A stimulation; therefore, VEGF-A/VEGFR2 dependent signaling cascades in endothelial cells contribute significantly to overall VEGF-A dependent signaling in whole murine islets (Figure 6—figure supplement 1F and G).
 
@@ -106,84 +146,397 @@ Finally, re-vascularization and establishing a functional interface between isle
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293FT</td>
+      <td>Thermo Fisher Scientific</td>
+      <td># R70007 RRID:CVCL_6911</td>
+      <td>Human embryonic kidney</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HDMEC</td>
+      <td>Promocell</td>
+      <td>C-12212</td>
+      <td>Primary human dermal microvascular endothelium</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MS-1</td>
+      <td>ATCC</td>
+      <td>#CRL-2279 RRID:CVCL_D134</td>
+      <td>Pancreas/islet of Langerhans; endothelium</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-PECAM-1</td>
+      <td>R&amp;D systems</td>
+      <td>AF3628</td>
+      <td>(IF 1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NG2</td>
+      <td>Merck</td>
+      <td>AB5320</td>
+      <td>(IF 1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-Insulin</td>
+      <td>Dako</td>
+      <td>A0564</td>
+      <td>(IF 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-BBS4</td>
+      <td>Proteintech</td>
+      <td>12766–1-AP</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-EphrinB2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>BS-10659R</td>
+      <td>(WB 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-VEGFR2 Y1175</td>
+      <td>Cell Signaling Technology</td>
+      <td>2478</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-VEGFR2</td>
+      <td>Cell Signaling Technology</td>
+      <td>9698</td>
+      <td>(IF 1:200) (WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-PLCγ1 Y783</td>
+      <td>Cell Signaling Technology</td>
+      <td>2821</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-PLCγ1</td>
+      <td>Cell Signaling Technology</td>
+      <td>2822</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-Akt Thr308/473</td>
+      <td>Cell Signaling Technology</td>
+      <td>4051</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-pan Akt</td>
+      <td>Cell Signaling Technology</td>
+      <td>4691</td>
+      <td>(WB 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho- p44/42 MAPK Thr202/Tyr204</td>
+      <td>Cell Signaling Technology</td>
+      <td>4370</td>
+      <td>(WB 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti- p44/42 MAPK</td>
+      <td>Cell Signaling Technology</td>
+      <td>4695</td>
+      <td>(WB 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-α-tubulin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T8203</td>
+      <td>(WB 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey monoclonal anti-Rabbit IgG, peroxidase-linked species-specific whole antibody Secondary Antibody</td>
+      <td>GE Healthcare</td>
+      <td>10794347</td>
+      <td>(WB 1:6000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep monoclonal anti-mouse IgG, peroxidase-linked species-specific whole antibody Secondary Antibody</td>
+      <td>GE Healthcare</td>
+      <td>10196124</td>
+      <td>(WB 1:6000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human VEGF 165</td>
+      <td>Peprotech</td>
+      <td>100–20</td>
+      <td>100 μg/ml in 1XPBS</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human VEGF 165, Biotinylated Protein</td>
+      <td>R&amp;D systems</td>
+      <td>BT293</td>
+      <td>100 μg/ml in 1XPBS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse VEGF Quantikine ELISA Kit</td>
+      <td>R&amp;D systems</td>
+      <td>MMV00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PowerUp SYBR Green Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A25742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dextran, Texas Red, 70,000 MW, Neutral</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1830</td>
+      <td>5 mg/ml in 1X PBS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dextran, Fluorescein, 40,000 MW, Anionic</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D1844</td>
+      <td>2.5 mg/ml in 1X PBS</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Cell Proliferation Kit for Imaging, Alexa Fluor 488 dye</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C10337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-NBDG (2-(N-(7-Nitrobenz-2-oxa-1,3-diazol-4-yl)Amino)−2-Deoxyglucose)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>N13195</td>
+      <td>5 mg/ml in 1X PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptozotocin</td>
+      <td>Sigma-Aldrich</td>
+      <td>S0130-50MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>R2016a</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>PerkinElmer (Massachusetts, USA)</td>
+      <td>RRID:SCR_002668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji-ImageJ</td>
+      <td>http://imagej.net/Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 Experimental procedures involving live animals were carried out in accordance with animal welfare regulations and with approval of the Regierung Oberbayern (Az 55.2-1-54-2532-187-15 and ROB-55.2–2532.Vet_02-14-157) or in accordance with the Karolinska Institutet’s guidelines for the care and use of animals in research, and were approved by the institute’s Animal Ethics Committee respectively (Ethical permit number 19462–2017). C57Bl/6J B6 albino and C57Bl/6J mice were obtained from The Jackson Laboratory (Maine, USA). Ai14 mice and Cdh5-Cre mice were obtained from the Jackson laboratory (stock number 007914 and 017968). Bbs4-/- mice were generated in the Lupski lab and backcrossed to C57Bl/6 J (Eichers et al., 2006). Heterozygous offspring were crossed to produce homozygous Bbs4-/- and littermate control. Pifowt/- mice were crossed to produce homozygous Pifo-/- mice and littermate controls (Kinzel et al., 2010). βICKO animals were generated by crossing Pdx1-CreER mice (Zhang et al., 2005) with Ift88loxP/loxP mice (Volta et al., 2019; Davenport et al., 2007).
 
-## Islet isolation and transplantation
+### Islet isolation and transplantation
 
 Islets were isolated by cannulation of the common bile duct of donor animals and infusion of 2.5 ml collagenase P, 1.0 mg/ml in HBSS containing 25 mM HEPES and 0.2% BSA (Sigma-Aldrich, USA). Inflated pancreata were dissected out and digested at 37°C for 10 min, and cultured in RPMI 1640 Medium (11 mM D-glucose) supplemented with 10% fetal bovine serum, 100 IU/ml penicillin, 100 μg/ml streptomycin and 2 mM L-Glutamine (all from Thermo Fisher Scientific, USA). Transplanted islets in all experimental setups have an average diameter of 200 μm.
 
 4-month-old female Bbs4-/- mice and their wildtype littermates were used as islet donors. 3–4 month-old female mice were used as recipients in all the in vivo transplantations except for Bbs4-/- animals (Figures 3D–3G and 4 males and one female knockout animals were used as recipients). In all experiment setups, wt and Bbs4-/- islets were transplanted into each eye of the same recipient mouse to minimize the variations caused by different recipients. Similarly, wt islets cultivated for different periods were transplanted into each eye of the same Bbs4-/- recipient for comparison. For transplantation, recipient mice were anesthetized with 2% isoflurane (Baxter, USA) and fixed with a custom-made head holder (Narishige, Japan) as described previously (Speier et al., 2008). A small incision was made in the cornea with a 25 G needle and a glass cannula containing islets was inserted through the opening into the anterior chamber of the eye. Around 4–8 islets were carefully positioned on the iris around the pupil. Post-operative analgesia was done by subcutaneous injection of 2 μg Temgesic (RB Pharmaceuticals Limited, UK).
 
-## Streptozotocin treatment and glucose tolerance test
+### Streptozotocin treatment and glucose tolerance test
 
 For Streptozotocin (STZ, Sigma-Aldrich, USA) treatment, 4-month-old female C57BL/6J B6 albino mice were fasted for 6 hr and a single dose of 200 mg STZ per kg body weight in phosphate buffered saline (PBS, Thermo Fisher Scientific, USA) was injected intraperitoneally. For glucose tolerance tests, animals were fasted for 6 hr and 2 g D-glucose (20% solution in PBS+/+) per kg body weight was injected intraperitoneally. Blood glucose values were measured afterwards at specified time points using an Accu-Chek Aviva system (Roche, Switzerland).
 
-## In vivo imaging of islet grafts
+### In vivo imaging of islet grafts
 
 Imaging was performed between one to twelve weeks post-transplantation by confocal microscopy. Images of islet grafts were obtained by a Leica SP5 system with 25 × objective (N.A.0.95, Leica Microsystems, Germany). Viscotears (Laboratoires Théa, France) was used as an immersion medium between the lens and the mouse eyes. For visualization of islet vascularization, animals were anesthetized with isoflurane (Baxter, USA). 100 μl of PBS solution containing 5 mg/ml of 70 kDa Texas Red-conjugated dextran (Thermo Fisher Scientific, USA) was injected intravenously prior to imaging. Z-stacks of 2 μm thickness were acquired for every islet graft (Ex.: 561 and 594 nm, Em.: 558–564 nm and 600–700 nm). For quantification of vascular leakage, animals were anesthetized with a mixture of 1:1 Hypnorm and midazolam (Roche, Switzerland). 100 μl of PBS solution containing 2.5 mg/ml of 40 kDa FITC-conjugated dextran (Thermo Fisher Scientific, USA) was injected intravenously prior to imaging. Time series of z-stacks (2 μm) were acquired every second (Ex.: 488 and 633 nm, Em.: 500–550 nm and 630–636 nm). For monitoring the uptake of glucose analog, animals were anesthetized with a mixture of 1:1 Hypnorm and midazolam (Roche, Switzerland). 2-(N-(7-Nitrobenz-2-oxa-1,3-diazol-4-yl)Amino)−2-Deoxyglucose (2-NBDG, Thermo Fisher Scientific, USA) was dissolved in PBS at 5 mg/ml. Recipient mice were anesthetized and a tail vein catheter containing 50 μl 2-NBDG solution was installed. Time series of z-stacks (2 μm) were acquired every second (Ex.: 488 and 633 nm, Em.: 500–600 nm and 630–636 nm) and 2-NBDG solution was injected during imaging.
 
-## Image analysis
+### Image analysis
 
 Unprocessed original images were used in all quantifications of in vivo re-vascularization. Graft volume was estimated from backscatter signals using Volocity image analysis software (Perkin Elmer, USA). Dextran-labeled islet capillaries were identified at different time points, using the same thresholds for all groups at all times, and structures smaller than 10 μm3 were automatically excluded. Their diameters and volumes were calculated using Volocity. Re-vascularization rate at 1 to 8 weeks post-transplantation was calculated as the percentage of islet vascular volume at each individual time point to that of the same islet at 12 week end point. Relative vascularity of each islet graft at 12 weeks post-transplantation was calculated from dividing the volume of islet vessels by the estimated graft volume. For FITC-dextran and 2-NBDG leakage analysis, images were first movement corrected in MATLAB (MathWorks, USA). Afterwards, time lapse confocal image stacks were analyzed and fluorescence intensity was quantified using Fiji (Schindelin et al., 2012) with the plugin Time Series Analyzer V3. Islet cells were identified by backscatter signals. The simulation of in vivo leakage kinetics was done in GraphPad Prism using the model of plateau followed by one phase association.
 
 Image analysis for histological sections were performed with Volocity. The region of interest per stack (ROI) was drawn according to insulin staining. The surface area and volume of PECAM-1, NG2, and insulin-positive structures were calculated using Volocity. Islet capillary density was obtained by counting the PECAM-1-positive volume and dividing it by the insulin-positive volume enclosed in this region. Pericyte coverage was calculated by counting NG2-positive surface area and dividing it by PECAM-1-positive surface area in the same insulin-positive region. Vessel diameters were taken from 6 to 10 randomly chosen segments per islet.
 
-## Cell culture
+### Cell culture
 
 HEK 293FT cells were purchased from Thermo Fisher Scientific (USA). MS-1 cells were purchased from ATCC (USA). Human Dermal Microvascular Endothelial Cells (HDMECs) were purchased from PromoCell (Germany). HEK293FT cells were cultured in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 2 mM L-Glutamine and 10% fetal bovine serum (all from Thermo fisher Scientific, USA). MS-1 cells were cultured in Dulbecco’s Modified Eagle’s Medium (DMEM) supplemented with 2 mM L-Glutamine and 5% fetal bovine serum. HDMECs were cultured in Endothelial Cell Growth Medium MV2 with Endothelial Cell Growth Supplement (PromoCell, Germany). All cells have been tested negative for mycoplasma contamination. The identities of HEK 293FT and MS-1 haven’t been re-authenticated, but they have been used within limited passages upon purchasing.
 
-## Construction of lentiviral vectors
+### Construction of lentiviral vectors
 
 We used a commercial lentiviral system from Sigma-Aldrich for designing and construct shRNA containing lentiviral vectors. Two verified sequences (Mus musculus) and one verified sequence (Homo sapiens) per gene of interest (Mus musculus) were selected from MISSIONshRNA database (https://www.sigmaaldrich.com/life-science/functional-genomics-and-rnai/shrna/individual-genes.html). For Bbs4: 5’- CCTTGTATTAAGAACCTAG-3’ (shBbs4-1) and 5’-GCATGACCTGACTTACATAAT-3’ (shBbs4-2). For Ift88: 5’-TCAGATGCCATCAACTCATTT-3’ (shIft88-1) and 5’-CTATGAGTCATACAGGTATTT-3’ (shIft88-2). For human Bbs4: 5’-TAGTCCTCAGAGTGCTGATAA-3’. Control scrambled sequence: 5’-CCTAAGGTTAAGTCGCCCTCG-3’. The corresponding oligonucleotides were cloned into pLKO.1-puro vector (Sigma-Aldrich, USA) according to manufacturer’s instructions. The efficacy was assessed by relative level of message RNA by qPCR. For reasons of clarity, we refer to more effective shRNA construct shBbs4-1 as shBbs4 and shIft88-1 as shIft88 in the text.
 
-## Lentiviral production and endothelial cell transduction
+### Lentiviral production and endothelial cell transduction
 
 Lentivirus was produced in 293FT cells and harvested following the manufacturer’s guidelines (https://www.sigmaaldrich.com/life-science/functional-genomics-and-rnai/shrna/trc-shrna-products/lentiviral-packaging-mix.html). 1 × 106 MS-1 or 2 × 105 HDMEC cells were plated in 25 cm2 flasks and 1 ml of crude virus containing medium was used for transduction. Transduced cells were further screened in 1.0 μg/ml puromycin (Sigma-Aldrich, USA) for a week before use.
 
-## VEGF-A uptake
+### VEGF-A uptake
 
 1 × 105 transduced HDMECs or 5 × 105 MS-1 cells were plated on coverslips in six well plates. Confluent cells were starved in DMEM supplemented with 0.5% BSA for 6 hr, and incubated with 50 ng/ml biotinylated VEGF-A (R&D Systems, USA) for 30 min at 37°C. Treated cells were subsequently fixed in 4% paraformaldehyde solution at room temperature for 15 min and permeabilized in 0.1% Triton-X (Sigma-Aldrich, USA) in PBS for 10 min. Fixed cells were then washed three times in PBS and blocked with 2% BSA in PBS for 1 hr. To detect the internalized biotinylated VEGF-A, cells were further incubated with Streptavidin- FITC conjugate (1:1000, Thermo Fisher Scientific, USA) at room temperature for 1 hr.
 
-## VEGFR-2 internalization
+### VEGFR-2 internalization
 
 1 × 105 transduced HDMECs were plated on coverslips in six well plates. Confluent cells were starved overnight in DMEM supplemented with 1% BSA. Starved cells were gently washed twice with PBS, and stimulated with 50 ng/ml human VEGF-A (Peprotech, Sweden) for 10 min at 37°C. VEGF-A containing medium was quickly removed and cells were washed twice in ice-cold PBS. Subsequently, cells were fixed in 4% paraformaldehyde solution at room temperature for 15 min, and blocked with 2% BSA in PBS for 1 hr without permeabilization. Further incubation steps with primary and secondary antibodies were described as below.
 
-## VEGF-A ELISA
+### VEGF-A ELISA
 
 Isolated islets from control and Bbs4-/- animals were cultured overnight. 30 islets from each group were picked into four well plates containing 450 μl culture medium per well. 72 hr later, supernatants were collected and stored at −80°C. Islets were collected and lysed in 50 μl M-PER buffer (Thermo Fisher Scientific, USA), for quantification of DNA contents by Quant-iT PicoGreen dsDNA Assay Kit (Thermo Fisher Scientific, USA) later according to manufacturer’s instructions. Secreted VEGF-A in the supernatants was measured with mouse VEGF Quantikine ELISA Kit (R&D Systems, USA), according to manufacturer’s instructions.
 
-## EdU labeling
+### EdU labeling
 
 Cell proliferation was detected with Click-iT EdU Alexa Fluor 488 Imaging Kit (Thermo Fisher Scientific, USA). Briefly, 2 × 105 transduced MS-1 cells were plated on coverslips in six well plates. After attachment, cells were starved overnight in DMEM supplemented with 1% BSA, gently washed twice with PBS, and further incubated with 50 ng/ml mouse VEGF-A (Peprotech, Sweden) and 10 μM EdU for 4 hr. Treated cells were fixed in 4% paraformaldehyde solution at room temperature for 15 min and EdU detection was carried out according to manufacturer’s instructions.
 
-## Endothelial cell migration assay
+### Endothelial cell migration assay
 
 2.5 × 105 transduced MS-1 cells were plated in 12 well plates. Confluent cells were washed gently with PBS, and incubated with 50 ng/ml VEGF-A in DMEM supplemented with 1% BSA. A scratch was made with 1 ml tip in the middle of each well, cells were washed again with PBS, and images were acquired for documentation of the initial distances between the separated cells. 18 hr later, cells were fixed in 4% paraformaldehyde solution at room temperature for 15 min, and the same areas were photographed again for calculating the distances of migration in individual wells. Images were acquired with BD Pathway 855 Bioimaging Systems using a Olympus 10x objective (BD, USA).
 
-## Notch1 activity assay
+### Notch1 activity assay
 
 3 × 104 transduced MS-1 cells were plated in 96 well plates for transfection of Notch1 reporter. Notch1 signaling pathway activity was detected according to manufacturer’s instructions (BPS Bioscience, #60509).
 
-## Transmission electron microscopy (TEM)
+### Transmission electron microscopy (TEM)
 
 Islet grafts were dissected out from euthanized animals which have been transplanted previously, and peri-islet iris tissues were removed carefully. Grafts were fixed in 2.5% glutaraldehyde+1% paraformaldehyde in 0.1 M phosphate buffer, pH 7.4 at 4°C overnight. Samples were further washed in 0.1 M phosphate buffer, pH 7.4 and post-fixed in 2% osmium tetroxide 0.1 M phosphate buffer, pH 7.4 at 4°C for 2 hr, dehydrated in ethanol and acetone, and embedded in LX-112 (Ladd Research Industries, Burlington, USA). Ultra-thin sections of 50–60 nm were cut by Leica EM UC 6 (Leica Microsystems, Germany) and contrasted with uranyl acetate, followed by lead citrate treatment and checked in Tecnai 12 Spirit Bio TWIN transmission electron microscope (FEI company, The Netherlands) at 100 kV. Digital images were acquired by Veleta camera (Olympus Soft Imaging Solutions, Germany).
 
-## Pancreatic sections and immunofluorescent staining
+### Pancreatic sections and immunofluorescent staining
 
 Pancreata were swiftly removed from euthanized animals, rinsed in PBS and fixed in 4% paraformaldehyde in PBS at room temperature for 2 hr. Tissues were then washed with PBS twice and transferred stepwise to 10%, 20% and eventually 30% sucrose in PBS. Tissues were then embedded in O.C.T. freezing medium (Thermo Fisher Scientific, USA) at −80°C and subsequently sectioned into 20 μm thick sections.
 
 Cells and islets were fixed in 4% paraformaldehyde solution at room temperature for 15 min or 1 hr, followed by permeabilization in 0.1% Triton-X in PBS, and blocking with 2% BSA or 10% goat serum in PBS respectively. Samples were incubated with primary antibodies, including anti-PEACAM-1 antibody (goat, 1:400, R&D Systems, USA), purified rat anti-mouse CD31 antibody (rat, 1:100, BD Bioscience, USA), anti-NG2 antibody (rabbit, 1:100, Millipore, USA), anti-insulin antibody (guinea pig, 1:1000, Dako, Sweden) and anti-VEGFR2 N-terminal antibody (rabbit, 1:100, R&D Systems, USA), at room temperature for 1 hr or at 4°C overnight. After washing with PBS, cells and tissues were further incubated with secondary antibodies (goat anti-rabbit IgG H+L Alexa Fluor 633, goat anti mouse IgG H+L Alexa Fluor 488 or 633, goat anti guinea pig IgG H+L Alexa Fluor 561 and donkey-anti goat IgG H+L 488; all at 1:1000, Thermo Fisher Scientific, USA) at room temperature for 1 hr, and mounted with ProLong Antifade mountant with DAPI (Thermo Fisher Scientific, USA).
 
-## Western blots
+### Western blots
 
 Confluent HDMECs were stimulated by 50 ng/ml VEGF-A for indicated lengths of time and lysed in modified RIPA buffer (150 mM NaCl, 50 mM Tris-HCl pH 7.4, 1% NP-40, 0.1% sodium deoxycholate, 1 mM EDTA, all from Sigma-Aldrich, USA) supplemented with protease and phosphatase inhibitors (Mini Complete/PhosphoStop, Roche Diagnostics, Germany). Protein contents were determined using the BCA Protein Assay Kit (Pierce, USA). Protein extracts were separated on 7.5% stain-free precast gels (Bio-Rad, USA) and transferred to 0.22 μm PVDF membranes (GE Healthcare, USA). Blots were probed with primary antibodies, including phospho-VEGFR2 Y1175 antibody (rabbit, 1:1000), VEGFR2 antibody (rabbit, 1:1000), EphrinB2 antibody (rabbit, 1:500), phospho-PLCγ1 Y783 antibody (rabbit, 1:1000), PLCγ1 antibody (rabbit, 1:1000), phospho-Akt Thr308/473 antibody (rabbit, 1:1000), Akt1/2 antibody (rabbit, 1:1000), phospho-p44/42 MAPK Thr202/Tyr204 antibody (rabbit, 1:2000) and Erk1/2 antibody (rabbit, 1:2000; all from Cell Signaling Technology, USA), and α-tubulin antibody (mouse,1:2000, Sigma-Aldrich, USA), and subsequently with secondary anti-mouse/ -rabbit IgG (H+L)-HRP conjugates (1:6000, GE Healthcare, USA). Quantification was carried out on original scanned images using Image Lab software (Bio-Rad, USA) and normalization to total protein.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA samples were collected from isolated islets of control and Bbs4-/- animals, or transduced MS-1 cells. Tissue and cell samples were lysed and total RNA was isolated using the GeneJET RNA purification kit (Thermo Fisher Scientific, USA) according to manufacturer’s instructions. Extracted mRNA was transcribed into cDNA using the Maxima First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, USA) following manufacturer’s instructions. Bbs4, Ift88, VEGF-A, VEGFR2, Ang-1, Ang-2, Tie-1, Tie-2, VHL, EphrinA1, EphrinB2, eNOS and Dll4 messages were measured using the SYBR Green Master Mix (Thermo Fisher Scientific, USA) with an QuantStudio 5 Real-Time PCR System (Applied Biosystems, USA). Relative gene expression level was quantified against the average of 18S, HMBS and TBP messages, and normalized to those of control cells. All primer sequences are listed in Table 1.
 
-## Statistical tests
+**Table 1.**
+ Sequences of qPCR primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>18S</td>
+      <td>L:5’-AACCCGTTGAACCCCATT-3’ R:5’-CCATCCAATCGGTAGTAGCG-3’</td>
+    </tr>
+    <tr>
+      <td>HMBS</td>
+      <td>L:5’-CGGAGTCATGTCCGGTAAC-3’ R:5’-GGTGCCCACTCGAATCAC-3’</td>
+    </tr>
+    <tr>
+      <td>TBP</td>
+      <td>L:5’-TGCTGTTGGTGATTGTTGGT-3’ R:5’-CTGGCTTGTGTGGGAAAGAT-3’</td>
+    </tr>
+    <tr>
+      <td>Bbs4</td>
+      <td>L:5’-AATGCACTGACCTACGACCC-3’ R:5’-ATGCTGATGCATACTGCTGC-3’</td>
+    </tr>
+    <tr>
+      <td>Ift88</td>
+      <td>L:5’-TGAAGTGGCAGCTGATGGTA-3’ R:5’-CTGTGCAGAGACGAACCAAG-3’</td>
+    </tr>
+    <tr>
+      <td>VEGF-A</td>
+      <td>L:5’-CAGGCTGCTGTAACGATGAA-3’ R:5’-GCATTCACATCTGCTGTGCT-3’</td>
+    </tr>
+    <tr>
+      <td>VEGFR2</td>
+      <td>L:5’-GGCGGTGGTGACAGTATCTT-3’ R:5’-GTCACTGACAGAGGCGATGA-3’</td>
+    </tr>
+    <tr>
+      <td>Ang-1</td>
+      <td>L:5’-GATCTTACACGGTGCCGATT-3’ R:5’-TTAGATTGGAAGGGCCACAG-3’</td>
+    </tr>
+    <tr>
+      <td>Ang-2</td>
+      <td>L:5’-TCCAAGAGCTCGGTTGCTAT-3’ R:5’-AGTTGGGGAAGGTCAGTGTG-3’</td>
+    </tr>
+    <tr>
+      <td>Tie-1</td>
+      <td>L:5’-TCAACTGCAGCTCCAAAATG-3’ R:5’-TGACAGCTCTGTCCAAAACG-3’</td>
+    </tr>
+    <tr>
+      <td>Tie-2</td>
+      <td>L:5’-GTGTGAGAAAGAAGGCAGGC-3’ R:5’-GTAGGTAGTGGCCACCCAGA-3’</td>
+    </tr>
+    <tr>
+      <td>VHL</td>
+      <td>L:5’-CAGGAGACTGGACATCGTCA-3’ R:5’-TCCTCTTCCAGGTGCTGACT-3’</td>
+    </tr>
+    <tr>
+      <td>EphrinA1</td>
+      <td>L:5’-CCCACATTACGAGGACGACT-3’ R:5’-GTGAAGCGCTGGAATTTCTC-3’</td>
+    </tr>
+    <tr>
+      <td>EphrinB2</td>
+      <td>L:5’-AGGAATCACGGTCCAACAAG-3’ R:5’-GTCTCCTGCGGTACTTGAGC-3’</td>
+    </tr>
+    <tr>
+      <td>eNOS</td>
+      <td>L:5’-GCAAGACCTCCTGAGGACAG-3’ R:5’-TGCAAAGAAAAGCTCTGGGT-3’</td>
+    </tr>
+    <tr>
+      <td>Dll4</td>
+      <td>L:5’-CAGAGACTTCGCCAGGAAAC-3’ R:5’-TCATTTTGCTCGTCTGTTCG-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical tests
 
 All results are presented as either original data points or mean ± SEM. Measurements and calculated results obtained from the WT and control groups were subjected to normality test, and most of them pass Kolmogorov-Smirnov test. Two-way ANOVA test was used for all time course analysis, One-way ANOVA test was used for comparison of multiple groups, and Mann-Whitney test was used to assess statistical significance for other experiments, with a p value < 0.05 considered to indicate significance (GraphPad Prism).

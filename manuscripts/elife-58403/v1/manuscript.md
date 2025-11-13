@@ -12,4 +12,4 @@
 
 ## Abstract
 
-The gene that allows budding yeast cells to switch their mating type evolved from a newly discovered family of genes named weird HO .
+The gene that allows budding yeast cells to switch their mating type evolved from a newly discovered family of genes named weird HO.

@@ -43,17 +43,284 @@ Here, we overcome these difficulties by coupling in situ radioactivity character
 
 In order to build a robust and powerful comparative design aimed for testing the influence of natural radioactivity on the mutation rate, we first prospected for closely related subterranean species living in contrasted radioactive set-ups. Using the map of bedrock uranium content in France (Ielsch et al., 2017), we prospected areas with low and high radioactivity. From this large survey (58 sites with waterlice), we selected 14 sites with contrasted levels of α radioactivity which were inhabited by closely related groundwater waterlice species. We paid special attention that α radioactivity differed at least by a factor of three between two habitats, each containing a closely related species (Figure 1, Supplementary file 1). On average low level of radioactivity was around 0.357 Bq/g of dry sediment and high level around 1.259 Bq/g of dry sediment. Based on transcriptome sequencing and de novo assembly, we used a phylogenetic approach to estimate nuclear and mitochondrial substitution rates (i.e. the rate of mutations which are fixed). While experimental approaches allow to measure the impact of radioactivity on somatic mutations or on the transmission of mutations across few generations, this phylogenetic approach allows us to measure the impact of natural radiation on the germinal mutation rate over the course of a species history.
 
-Using the 14 selected species and locations, we tested whether there was a significant positive relationship between natural radioactivity and the long-term mutation rate. The latter was estimated using the synonymous substitution rate (dS) calculated on the terminal branches of the phylogenetic tree tracing the history of these 14 species. The dS is the rate at which silent mutations accumulate in protein coding genes and, when calculated using many different loci and in the absence of a strong synonymous codon usage bias (see methods), is an estimator of the average mutation rate across a species’ genome (Kimura, 1983). To be comparable across species, these dS has to be divided by the time over which it is measured. To achieve that, we used the software CoEvol (Lartillot and Poujol, 2011) which models directly a synonymous substitution rate relative to the root age (dS/ra). We computed dS/ra using 769 one-to-one nuclear and 13 mitochondrial orthologous protein-coding genes shared by all 14 species. At each sampling site, we measured the global α radioactivity and the activity of all radio-elements in the sediment. The analysis of the composition in radionuclides at each site reveals that two sites (BRETEMIN and BOREON) show a disruption of the secular equilibrium in the U-238 chain. This suggests that nearby industrial activities (e.g. lead mines) have modified the natural radioactivity at these two sites. As these industrial activities are very recent (since 1950), their impact on the substitution rate, which is measured on a much longer time scale, is unlikely. We therefore did not use these two sites to test the correlation between dS and any site-specific radioactivity measurement (however, see next paragraph for a regional measurement). The dS/ra is positively correlated with the α radioactivity in the nuclear genome as well as in the mitochondrial genome (Table 1; Figure 2). A linear model predicts a dS/ra increase of 31.8% in the nuclear genome and 56.5% in the mitochondrial genome between species living in low (on average 0.357 Bq/g of dry sediment) and high radioactivity (on average 1.259 Bq/g of dry sediment). We also modeled the biologically effective dose of radioactivity received by each species (Received dose in µGy/h, Figure 1). This measure takes into account the transfer coefficient from environment to biota and the radio-toxicity of each radio-element for a crustacean model (ERICA tool V1.2.1 Brown et al., 2016). Again, we found positive correlations between the dS/ra and the received dose of radioactivity (Table 1). These results are robust to the presence of influential cases and to variation in the model of evolution used to perform the test (see Methods, pGLS, p. values < 0.05).
+![Figure 1.](https://cdn.elifesciences.org/articles/56830/elife-56830-fig1-v2.jpg)
+
+**Figure 1.:** Fourteen species with contrasted bedrock radioactivity exposure were selected (black dot: low exposure, red dot: high exposure). Based on their phylogenetic history (a), we further selected six monophyletic pairs of closely related species to compare their mutational spectrum (Vielvic and Montbar are excluded because of unresolved phylogeny, pairs are indicated using superscript numbers). Received dose of radioactivity was determined from measurements of radioactivity in the sediments of the sampled sites (b). For each site, the areal proportion of low-radioactivity sedimentary rocks and high-radioactivity metamorphic and igneous rocks in a radius of 15 km around the sampling (λ15) site is represented with circles next to the map (c).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56830/elife-56830-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Tree was built with the concatenation of the 2490 genes with PhyML3.0, under a GTR+G+I model with 100 bootstrap replicates. Bootstrap value are indicated with blue numbers, branch length (i.e. substitution rate) are indicated with black numbers.
+
+Using the 14 selected species and locations, we tested whether there was a significant positive relationship between natural radioactivity and the long-term mutation rate. The latter was estimated using the synonymous substitution rate ($d_{S}$) calculated on the terminal branches of the phylogenetic tree tracing the history of these 14 species. The $d_{S}$ is the rate at which silent mutations accumulate in protein coding genes and, when calculated using many different loci and in the absence of a strong synonymous codon usage bias (see methods), is an estimator of the average mutation rate across a species’ genome (Kimura, 1983). To be comparable across species, these $d_{S}$ has to be divided by the time over which it is measured. To achieve that, we used the software CoEvol (Lartillot and Poujol, 2011) which models directly a synonymous substitution rate relative to the root age ($d_{S}$/ra). We computed $d_{S}$/ra using 769 one-to-one nuclear and 13 mitochondrial orthologous protein-coding genes shared by all 14 species. At each sampling site, we measured the global α radioactivity and the activity of all radio-elements in the sediment. The analysis of the composition in radionuclides at each site reveals that two sites (BRETEMIN and BOREON) show a disruption of the secular equilibrium in the U-238 chain. This suggests that nearby industrial activities (e.g. lead mines) have modified the natural radioactivity at these two sites. As these industrial activities are very recent (since 1950), their impact on the substitution rate, which is measured on a much longer time scale, is unlikely. We therefore did not use these two sites to test the correlation between dS and any site-specific radioactivity measurement (however, see next paragraph for a regional measurement). The dS/ra is positively correlated with the α radioactivity in the nuclear genome as well as in the mitochondrial genome (Table 1; Figure 2). A linear model predicts a dS/ra increase of 31.8% in the nuclear genome and 56.5% in the mitochondrial genome between species living in low (on average 0.357 Bq/g of dry sediment) and high radioactivity (on average 1.259 Bq/g of dry sediment). We also modeled the biologically effective dose of radioactivity received by each species (Received dose in µGy/h, Figure 1). This measure takes into account the transfer coefficient from environment to biota and the radio-toxicity of each radio-element for a crustacean model (ERICA tool V1.2.1 Brown et al., 2016). Again, we found positive correlations between the dS/ra and the received dose of radioactivity (Table 1). These results are robust to the presence of influential cases and to variation in the model of evolution used to perform the test (see Methods, pGLS, p. values < 0.05).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56830/elife-56830-fig2-v2.jpg)
 
-**Figure 2.:** dS/ra) and radioactivity measured either as the sediment α radioactivity (left), the received dose (middle) or the proportion of igneous and metamorphic rock in a radius of 15 km around the sampling sites, λ15 (right).Each dot represents a species nuclear (top) and mitochondrial (bottom) dS/ra. The fit of the pGLS model is indicated with a solid line and the confidence interval of the correlation is indicated with dashed lines. The two species of a pair are labeled with a number as in Figure 1 (the number seven corresponds to the two species not forming a pair), with in red the species of the pair living in the highest α radioactivity. Species in sedimentary formations (λ15 < 50%) are depicted with circles and species in igneous/metamorphic formations (λ15 > 50%) with a diamond.
+**Figure 2.:** Each dot represents a species nuclear (top) and mitochondrial (bottom) dS/ra. The fit of the pGLS model is indicated with a solid line and the confidence interval of the correlation is indicated with dashed lines. The two species of a pair are labeled with a number as in Figure 1 (the number seven corresponds to the two species not forming a pair), with in red the species of the pair living in the highest α radioactivity. Species in sedimentary formations (λ15 < 50%) are depicted with circles and species in igneous/metamorphic formations (λ15 > 50%) with a diamond.
+
+**Table 1.**
+ Phylogenetic generalized least square (pGLS) regressions of the nuclear synonymous substitution rate (dS/ra) and mitochondrial dS/ra against the α radioactivity measured in the sediments (α radio.), the received dose (RD) of radioactivity, and the surface of metamorphic and igneous bedrock within a 15 km radius around the sampling sites (λ15).α radioactivity and RD were log transformed to fit with the linear model assumptions. $R^{2}$ are Cox-Snell pseudo $R^{2}$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Nuclear dS/ra</th>
+      <th colspan="4">Mitochondrial dS/ra</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Slope</th>
+      <th>L. ratio</th>
+      <th>p. value</th>
+      <th>R2</th>
+      <th>Slope</th>
+      <th>L. ratio</th>
+      <th>p. value</th>
+      <th>R2</th>
+      <th>N taxa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>log(α radio.)</td>
+      <td>0.034</td>
+      <td>5.995</td>
+      <td>0.014</td>
+      <td>0.393</td>
+      <td>0.506</td>
+      <td>7.895</td>
+      <td>0.005</td>
+      <td>0.482</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>0.038</td>
+      <td>6.51</td>
+      <td>0.011</td>
+      <td>0.419</td>
+      <td>0.491</td>
+      <td>5.981</td>
+      <td>0.015</td>
+      <td>0.392</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>0.076</td>
+      <td>9.039</td>
+      <td>0.003</td>
+      <td>0.476</td>
+      <td>1.097</td>
+      <td>11.680</td>
+      <td>0.001</td>
+      <td>0.566</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each line corresponds to one likelihood ratio test between the models with and without the given explanatory variable. The impact of multiple predictors that are collinear are unreliable in the linear model framework (Quinn and Keough, 2002). As the three independent variables are collinear (R2 > 0.6) a model with a combination of these variable is not shown._
 
 As previously explained, the measured radioactivity at two sites overestimates the radioactivity level to which the organisms have been exposed for many generations because it is influenced by recent human activities. Moreover, while most species collected in highly radioactive habitats were from metamorphic or igneous formations, two species were from sedimentary formations (BOREON and GROTTAZE). Contrary to metamorphic and igneous formations, radioactivity in sedimentary formations is often observed in restricted localities (Ielsch et al., 2017) and can show large variations at the meter scale. A single radiation measurement may not therefore accurately represent the average radiation that a species was exposed to. To account for this variability as well as to include the two human-impacted sites into the regression analysis, we calculated the areal proportion of metamorphic and igneous rock within a 15 km radius around each site (later called λ15, Figure 1). This proportion was used as a proxy for the long-term regional radioactive exposure because the average linear distribution range of a groundwater crustacean is 30 km (Eme et al., 2018). We found a positive and stronger correlation between the dS/ra and λ15 in both genomes (Table 1, Figure 2, n = 14 species). The linear model predicts that the nuclear and mitochondrial dS/ra of a species living in a metamorphic formation (>50% of metamorphic and igneous rocks) are on average 34.4% and 61.3% higher, respectively, than those of a species living in a sedimentary formation (<50% of metamorphic or igneous rocks).
 
-As bedrock radioactivity is positively correlated with the mutation rate, the underlying question is whether radioactivity also modifies the mutational spectrum, that is, the specific types of mutations that tend to occur. To address this question, we reconstructed the mutational spectrum of 6 independent pairs of species, each composed of two species located in low and high bedrock radiation set-ups, respectively, with a minimum of a 3X increase in the received dose of radioactivity between the two species (Figure 1). Briefly, we first estimated species polymorphism across a set of 2490 one-to-one orthologous genes by sequencing transcriptomes for eight individuals per species. After ancestral sequence reconstruction, we then identified mutations that occurred in each species and computed the relative proportion of each type of mutation (from A to T, A to C, …), pooling together complementary mutations (e.g. p(C→A) + p(G→T) = p(C:G→A:T)). Two types of dependencies are present in testing mutational spectrum variation in a comparative data-set: (i) dependency among mutations – if the proportion of one mutation increases, the proportions of the other mutations will decrease – and (ii) the phylogenetic inertia, two closely related species have more chance to display more similar mutational spectrum. To take into account these two types of dependencies, we first used a forward selection approach as described in Harris and Pritchard, 2017 to pull out mutations at different frequencies across habitats (see Materials and methods). Only the C:G→A:T mutation was significantly more frequent in radioactive habitats (Table 2, Figure 3). Second, we checked that these results were not induced by the phylogenetic structure of the data-set by using a pGLS regression between the proportion of each type of mutation and different radioactivity proxies. Again, we found a strong positive correlation between the proportion of C:G→A:T mutations and bedrock radioactivity (Table 2, Figure 3). Selection is unlikely to be responsible for the increase of C:G→A:T as this correlation is also observed when the data set is limited to mutations found at the third, usually redundant, codon position (Figure 3—figure supplement 1, Supplementary file 2). A weak negative trend is observed for A:T→T:A mutations; however, this trend disappears when measured on third codon position.
+As bedrock radioactivity is positively correlated with the mutation rate, the underlying question is whether radioactivity also modifies the mutational spectrum, that is, the specific types of mutations that tend to occur. To address this question, we reconstructed the mutational spectrum of 6 independent pairs of species, each composed of two species located in low and high bedrock radiation set-ups, respectively, with a minimum of a 3X increase in the received dose of radioactivity between the two species (Figure 1). Briefly, we first estimated species polymorphism across a set of 2490 one-to-one orthologous genes by sequencing transcriptomes for eight individuals per species. After ancestral sequence reconstruction, we then identified mutations that occurred in each species and computed the relative proportion of each type of mutation (from A to T, A to C, …), pooling together complementary mutations (e.g. p($C→A$) + p($G→T$) = p($C:G→A:T$)). Two types of dependencies are present in testing mutational spectrum variation in a comparative data-set: (i) dependency among mutations – if the proportion of one mutation increases, the proportions of the other mutations will decrease – and (ii) the phylogenetic inertia, two closely related species have more chance to display more similar mutational spectrum. To take into account these two types of dependencies, we first used a forward selection approach as described in Harris and Pritchard, 2017 to pull out mutations at different frequencies across habitats (see Materials and methods). Only the $C:G→A:T$ mutation was significantly more frequent in radioactive habitats (Table 2, Figure 3). Second, we checked that these results were not induced by the phylogenetic structure of the data-set by using a pGLS regression between the proportion of each type of mutation and different radioactivity proxies. Again, we found a strong positive correlation between the proportion of $C:G→A:T$ mutations and bedrock radioactivity (Table 2, Figure 3). Selection is unlikely to be responsible for the increase of $C:G→A:T$ as this correlation is also observed when the data set is limited to mutations found at the third, usually redundant, codon position (Figure 3—figure supplement 1, Supplementary file 2). A weak negative trend is observed for $A:T→T:A$ mutations; however, this trend disappears when measured on third codon position.
 
-Variations in the frequency of genetic variants among populations can originate from variation in the mutagenic environment or from biases in the fixation of mutations that can be due to demographic factors (Mathieson and Reich, 2017), natural selection (Boussau et al., 2008), or biased gene conversion (Duret and Galtier, 2009). While the impact of fixation biases on sequence evolution have been relatively well described, the long term impact of the mutagenic environment is less well-known. The most extensive demonstration of environmentally induced changes in the mutation spectrum comes from the study of carcinogens (Seo et al., 2000). Many carcinogens induce a specific mutational signature, for instance, UVs increase the CC→TT mutations whereas estrogen treatments increase the frequency of A:T→G:C mutations (Flibotte et al., 2010; Nik-Zainal et al., 2015). Here, we found an increase of the proportion of G→T mutations (and complementary C→A) which is a mutation that increases in a variety of contexts and is not specific to a mutagen in particular. The occurrence of this mutation increases after exposure to carbon black (Jacobsen et al., 2011), to tobacco smoke (Hollstein et al., 1991; Hainaut and Pfeifer, 2001), or to polycyclic aromatic hydrocarbons (Nik-Zainal et al., 2015). Oxidative stress is the likely source of this mutation (Wood et al., 1990; Besaratinia et al., 2004; Jacobsen et al., 2011). Indeed, the characteristic damage linked to oxidative stress is the formation of 8-hydroxyguanine (Shigenaga et al., 1989) which leads to G→T mutations (Shibutani et al., 1991; Cheng et al., 1992). Thus, the mutational spectrum modification observed in radioactive environments is suggestive of an increase of the overall oxidative stress in these environments. Similarly, high artificial doses of ionizing radiation were found to increase oxidative damage (Einor et al., 2016; Haghdoost et al., 2006). As oxidative stress triggers more 8-hydroxyguanine formation in the mitochondrial genome than in the nuclear genome (Richter et al., 1988), this could explain the twice as strong effect observed in this study in the mitochondrial compartment.
+![Figure 3.](https://cdn.elifesciences.org/articles/56830/elife-56830-fig3-v2.jpg)
+
+**Figure 3.:** Contrasts (π) of the relative proportion of each mutation [p(i:j→k:l)] in each pair of sister species: $\pi_{m}=log\frac{p(i:j→k:l)+}{p(i:j→k:l)−}$ where + and - refer respectively to the species exposed to the higher and lower level of radioactivity in the pair m.Thus, positive bars represent a higher proportion of the given mutation in the species living in the high radioactivity rock. From left to right, bars are in increasing order of difference (Δ) in λ15 (the areal proportion of igneous and metamorphic rock in a radius of 15 km around the site) between the two species of each pair. From left to right, mutations are in increasing order of correlation with radioactivity. Numbers below the color scale indicate the species pair number as in Figure 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56830/elife-56830-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Contrasts (π) of the relative proportion of each mutation $[P(i:j→k:l)]$ computed only on third positions in each pair of sister species: $[\pi_{m}=log\frac{P(i:j→k:l)+}{P(i:j→k:l)−}]$ where + and - refer respectively to the species exposed to the higher and lower level of radioactivity in the pair m.Thus, positive bars represent a higher proportion of the given mutation in the species living in the high radioactivity rock. From left to right, bars are in increasing order of difference (Δ) in λ15 (the areal proportion of igneous and metamorphic rock in a radius of 15 km around the site) between the two species of each pair. From left to right, mutations are in increasing order of correlation with radioactivity. Numbers below the color scale indicate the species pair number as in Figure 1.
+
+**Table 2.**
+ Variation of the mutational spectrum as a function of bedrock radioactivity.An ordered $χ^{2}$ test is first used to test if mutation counts vary between low and high radioactive habitats while accounting for the dependency among mutation. In parallel, the phylogenetic dependency was taken into account using a Phylogenetic Generalized Least Square (pGLS) regression of the proportion of each mutation against the sediment α radioactivity (α radio.), Received Dose (RD), and areal proportion of metamorphic and igneous rock within a 15 km radius (λ15). α radioactivity and RD are log transformed to fit with the linear model assumptions. $R^{2}$ are Cox-Snell pseudo $R^{2}$.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ordered χ2 test</th>
+      <th colspan="6">pGLS regression</th>
+    </tr>
+    <tr>
+      <th>Mutation type</th>
+      <th>Ordered p. value</th>
+      <th>Radio.</th>
+      <th>Slope</th>
+      <th>L.ratio</th>
+      <th>P.value</th>
+      <th>R2</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">P(C:G→A:T)</td>
+      <td rowspan="3">0.000</td>
+      <td>log(α radio)</td>
+      <td>0.013</td>
+      <td>13.010</td>
+      <td>0.000</td>
+      <td>0.662</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>0.014</td>
+      <td>12.079</td>
+      <td>0.006</td>
+      <td>0.635</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>0.042</td>
+      <td>13.791</td>
+      <td>0.000</td>
+      <td>0.683</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P(A:T→T:A)</td>
+      <td rowspan="3">0.111</td>
+      <td>log(α radio)</td>
+      <td>−0.009</td>
+      <td>6.819</td>
+      <td>0.072</td>
+      <td>0.433</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>−0.011</td>
+      <td>9.348</td>
+      <td>0.030</td>
+      <td>0.541</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>−0.025</td>
+      <td>6.994</td>
+      <td>0.080</td>
+      <td>0.442</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P(C:G→T:A)</td>
+      <td rowspan="3">0.351</td>
+      <td>log(α radio)</td>
+      <td>0.012</td>
+      <td>3.323</td>
+      <td>0.612</td>
+      <td>0.242</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>0.010</td>
+      <td>1.684</td>
+      <td>0.776</td>
+      <td>0.131</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>−0.009</td>
+      <td>0.183</td>
+      <td>1.000</td>
+      <td>0.015</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P(A:T→C:G)</td>
+      <td rowspan="3">0.520</td>
+      <td>log(α radio)</td>
+      <td>0.001</td>
+      <td>0.121</td>
+      <td>1.000</td>
+      <td>0.010</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>0.000</td>
+      <td>0.015</td>
+      <td>1.000</td>
+      <td>0.001</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>0.001</td>
+      <td>0.005</td>
+      <td>1.000</td>
+      <td>0.000</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P(C:G→G:C)</td>
+      <td rowspan="3">0.982</td>
+      <td>log(α radio)</td>
+      <td>0.005</td>
+      <td>2.137</td>
+      <td>0.864</td>
+      <td>0.163</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>0.006</td>
+      <td>2.403</td>
+      <td>0.726</td>
+      <td>0.181</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>0.006</td>
+      <td>0.360</td>
+      <td>1.000</td>
+      <td>0.030</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P(A:T→G:C)</td>
+      <td rowspan="3">0.982</td>
+      <td>log(α radio)</td>
+      <td>−0.022</td>
+      <td>7.778</td>
+      <td>0.075</td>
+      <td>0.477</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>log(RD)</td>
+      <td>−0.019</td>
+      <td>4.004</td>
+      <td>0.180</td>
+      <td>0.284</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>λ15</td>
+      <td>−0.014</td>
+      <td>0.394</td>
+      <td>1.000</td>
+      <td>0.032</td>
+      <td>12</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each line of the pGLS tests corresponds to one likelihood ratio test between the models with and without the given explanatory variable. P values have been corrected following Holm’s method (k=18)._
+
+Variations in the frequency of genetic variants among populations can originate from variation in the mutagenic environment or from biases in the fixation of mutations that can be due to demographic factors (Mathieson and Reich, 2017), natural selection (Boussau et al., 2008), or biased gene conversion (Duret and Galtier, 2009). While the impact of fixation biases on sequence evolution have been relatively well described, the long term impact of the mutagenic environment is less well-known. The most extensive demonstration of environmentally induced changes in the mutation spectrum comes from the study of carcinogens (Seo et al., 2000). Many carcinogens induce a specific mutational signature, for instance, UVs increase the $CC→TT$ mutations whereas estrogen treatments increase the frequency of $A:T→G:C$ mutations (Flibotte et al., 2010; Nik-Zainal et al., 2015). Here, we found an increase of the proportion of $G→T$ mutations (and complementary $C→A$) which is a mutation that increases in a variety of contexts and is not specific to a mutagen in particular. The occurrence of this mutation increases after exposure to carbon black (Jacobsen et al., 2011), to tobacco smoke (Hollstein et al., 1991; Hainaut and Pfeifer, 2001), or to polycyclic aromatic hydrocarbons (Nik-Zainal et al., 2015). Oxidative stress is the likely source of this mutation (Wood et al., 1990; Besaratinia et al., 2004; Jacobsen et al., 2011). Indeed, the characteristic damage linked to oxidative stress is the formation of 8-hydroxyguanine (Shigenaga et al., 1989) which leads to $G→T$ mutations (Shibutani et al., 1991; Cheng et al., 1992). Thus, the mutational spectrum modification observed in radioactive environments is suggestive of an increase of the overall oxidative stress in these environments. Similarly, high artificial doses of ionizing radiation were found to increase oxidative damage (Einor et al., 2016; Haghdoost et al., 2006). As oxidative stress triggers more 8-hydroxyguanine formation in the mitochondrial genome than in the nuclear genome (Richter et al., 1988), this could explain the twice as strong effect observed in this study in the mitochondrial compartment.
 
 Radioactive environments can cause mutations in two intertwined ways. First, the ionisation of molecules in the cells can directly affect the DNA structure by breaking the sugar phosphate backbone or can affect DNA indirectly through the radiolysis of water which decomposes the H2O molecules and create free radicals (Desouky et al., 2015). These free radicals can damage DNA molecules and create mutations. Second, radioactive decay chains also generate heavy metals (lead, polonium, etc) which are toxic for cells and also cause oxidative stress (Quinlan et al., 1988; Pinto et al., 2003). Due to the physicochemical association between radioactivity and heavy metals, in naturae correlative approaches alone cannot discriminate between the toxicity of heavy metals and the direct toxicity of radioactive rays.
 
@@ -67,69 +334,77 @@ Although the literature on the effect of low doses of radiation is far from bein
 
 ## Materials and methods
 
-## Sampling
+### Sampling
 
 To test the impact of radioactivity on molecular evolution, we focused on subterranean species belonging to the Asellidae family. Subterranean species are never exposed to UV radiation, live in contrasted bedrock set-ups and have very limited dispersal capacity (Eme et al., 2018), allowing us to make the assumption that different species have persisted in different but nearly constant radioactive habitats for numerous generations (but see Statistical analyses paragraph). One of the most interesting feature of subterranean Asellidae is their similarities in terms of morphology, lifestyle and life history traits. This high uniformity is likely due to a low rate of phenotypic evolution and a high level of convergence imposed by the subterranean lifestyle. As a result, distinguishing different species requires a high level of expertise and some species cannot be distinguished without molecular tools (Morvan et al., 2013). The birth of the Asellidae family is estimated at −350 My (Morvan et al., 2013). These characteristics allow us to compare species that are divergent enough to compute an accurate rate of molecular evolution but which conserved with very similar traits.
 
 For 58 sites in France selected on the map of uranium (Ielsch et al., 2017), we collected Asellidae species and sampled about 50 g of sediment to measure global α radioactivity (see the following paragraph). Animals and sediments were collected using the Bou-Rouch pumping methods (Bou and Rouch, 1967). Collected specimens were stored in 96% ethanol at −20°C and were morphologically and molecularly identified. For molecular identification, DNA was extracted using an optimized chloroform DNA extraction protocol for the Aselloidea (Calvignac et al., 2011). We amplified DNA with primers targeting the 16S mitochondrial rDNA gene. PCR reactions were done following Morvan et al., 2013. PCR products were sequenced in both directions using the same primers as for amplification (GATC Biotech, Konstanz; Eurofins MWG Operon, Ebersberg; SeqLab, Göttingen, Germany; BIOFIDAL, Vaulx-en-Velin, France). Chromatograms were visualized and cleaned using Finch v1.5.0 (Geospiza, Seattle, USA). 16S have been deposited on the European Nucleotide Archive and are available under the accession number from LR214526 to LR214880. Using Eme et al., 2018 molecular species delimitation, each sequence has been assigned to a species. Based on this taxonomic assignment and radioactivity measurement, 14 species were retained for further analyses (Supplementary file 1). For these 14 selected species, during a new sampling trip, individuals were flash frozen alive in the field.
 
-## Measures of radioactivity
+### Measures of radioactivity
 
-## α radioactivity
+#### α radioactivity
 
 In order to estimate the global radioactivity in sediments, we measured the α radioactivity. An α decay occurs when an atom disintegrates by ejecting an α particle, that is, a particle made of two neutrons and two protons. The α radioactivity should be correlated with the global radioactivity in natural systems. For the 58 prospected sites, three samples of about 50 g of sediment were collected in polyethylene bottles. α radioactivity measurements were made by the LABRADOR service (Institut de Physique Nucléaire de Lyon, France) on proportional counter with the NF ISO 18589–6 standard (Data available on Zenodo, DOI: 10.5281/zenodo.4071754).
 
-## Received dose
+#### Received dose
 
 In order to estimate the received dose of radiation that is impacting organisms, we collected three samples of 100 g of fine sediments (<100 μm) in each of the selected sites. These sediments were prepared with the NF EN ISO 18589–2 standard and measured by gamma spectrometry in conformity with the NF EN ISO 18589–3 standard using the PRISNA-P analysis platform at the Centre d’Etude Nucléaire de Bordeaux Gradignan (CENBG). This platform is certified by the French Nuclear Security Authority (ASN) for measures of natural radioactivity. Samples were dried in open air, and then dried at 100°C. Matters were packed in a waterproof geometry. Geometries were sealed for one month and then counted for a duration of 86500 s on the same chain of measure. The chain used is an ORTEC chain, presenting an efficiency of about 60% and calibrated in May 2016. This chain is equipped with a cosmic veto device and located in a half buried laboratory in order to: (i) attenuate the background noise, (ii) improve the detection limits, and (iii) reduce the measure uncertainty. The activity of the main radionuclides were measured in sediment and the activity of the remaining radionuclides was deduced based on the hypothesis of a secular equilibrium of the uranium 238 and thorium 232 chains. As activities of the radionuclides of the uranium 235 decay chain are generally low, only measures higher than the decision threshold (according to the measure variability) were taken into account. When the uranium 235 activity was too low to be measured it has been deduced from the uranium 238 activity, using the natural isotopic ratio of 21.6.
 
-The received dose impacting organisms was estimated using the ERICA tool (V1.2.1, Brown et al., 2016) with a ‘crustacean’ model. We assumed that organisms stay 10% of their time on the surface of sediment and 90% inside sediment. All radionuclides available in the tool were taken into account (i.e, U238, T⁢h234, U234, T⁢h230, R⁢a226, P⁢b210, P⁢o210,U235, T⁢h231, P⁢a231, T⁢h227, T⁢h232, A⁢c228 and T⁢h228). We used the distribution coefficients proposed by the ERICA tool. Concentration factors proposed by the tool were used when available. If not, we used the concentration factor of the closest biogeochemical element available.
+The received dose impacting organisms was estimated using the ERICA tool (V1.2.1, Brown et al., 2016) with a ‘crustacean’ model. We assumed that organisms stay 10% of their time on the surface of sediment and 90% inside sediment. All radionuclides available in the tool were taken into account (i.e, $U^{238}$, $T⁢h^{234}$, $U^{234}$, $T⁢h^{230}$, $R⁢a^{226}$, $P⁢b^{210}$, $P⁢o^{210}$,$U^{235}$, $T⁢h^{231}$, $P⁢a^{231}$, $T⁢h^{227}$, $T⁢h^{232}$, $A⁢c^{228}$ and $T⁢h^{228}$). We used the distribution coefficients proposed by the ERICA tool. Concentration factors proposed by the tool were used when available. If not, we used the concentration factor of the closest biogeochemical element available.
 
-Two sites (BRETEMIN and BOREON) show a disruption of the secular equilibrium in the U238 chain. This suggests that nearby industrial activities (e.g. lead mines) have modified the natural radioactivity of these two sites. As these industrial activities are very recent (since 1950), their impact on the substitution rate which is measured on a much longer time scale is unlikely. These two sites were removed from the correlation between dS/ra and radioactivity measured with the global α radioactivity or with the received dose.
+Two sites (BRETEMIN and BOREON) show a disruption of the secular equilibrium in the $U^{238}$ chain. This suggests that nearby industrial activities (e.g. lead mines) have modified the natural radioactivity of these two sites. As these industrial activities are very recent (since 1950), their impact on the substitution rate which is measured on a much longer time scale is unlikely. These two sites were removed from the correlation between $d_{S}$/ra and radioactivity measured with the global α radioactivity or with the received dose.
 
-## Proportion of magmatic and igneous rocks in a 15 km radius
+#### Proportion of magmatic and igneous rocks in a 15 km radius
 
 Using the geological map of France (scale : 1/1,000,000, BRGM), the areal proportions of magmatic and igneous rocks in a radius of 15 km around sampling sites were computed (noted λ15), 30 km represents the average distribution range for a subterranean isopod (Eme et al., 2018).
 
-## Transcriptome sequencing and assembly
+### Transcriptome sequencing and assembly
 
-## Sequencing
+#### Sequencing
 
 For each species, we sequenced transcriptomes from eight individuals. For each individual total RNA was isolated using TRI Reagent (Molecular Research Center). Extraction quality was checked on a BioAnalyser RNA chip (Agilent Technologies) and RNA concentrations were estimated using a Qubit fluorometer (Life Technologies). Prior to any additional analysis, species identification was corroborated for each individual by sequencing a fragment of the 16S gene. Illumina libraries were then prepared using the TruSeq RNA Sample Prep Kit v2 (Illumina). For each species one library was paired-end sequenced using 100 cycles, and the seven other libraries were single-end sequenced using 50 cycles on a HiSeq2500 sequencer (Illumina) at the IGBMC GenomEast Platform (Illkirch, France). We obtained around 30 million single-end reads per individual and 118 million paired-end reads per species.
 
-## Assembly
+#### Assembly
 
 Adapters were clipped from the sequences, low quality read ends were trimmed (phred score <30) and low quality reads were discarded (mean phred score <25 or if remaining length <19 bp) using fastq-mcf of the ea-utils package (Aronesty, 2013). Paired-end transcriptomes were de novo assembled using Trinity v2.3.2 (Grabherr et al., 2011). Open reading frames (ORFs) were identified with TransDecoder (http://transdecoder.sourceforge.net). For each assembled component, only the most express ORF was retained.
 
-## Families of orthologous genes
+### Families of orthologous genes
 
 Gene families were delimited using an all-against-all BLASTP (Altschul et al., 1990) and SiLix (Miele et al., 2011) on the ORFs delimited in the previous step. We then kept gene families containing the 14 species, with only one sequence for each species in order to remove paralogs. We obtained 2490 families hereafter considered as one-to-one orthologous genes. These genes were aligned with PRANK (Löytynoja and Goldman, 2008) using a codon model and sites ambiguously aligned were removed with Gblocks (Castresana, 2000).
 
-## Species tree and gene trees
+### Species tree and gene trees
 
 The 2490 genes were concatenated and a phylogenetic tree (hereafter called the concatenated tree) was built using PhyML v3.0 (Guindon et al., 2010) under a GTR+G+I model with 100 bootstrap replicates and was rooted using the Slavus lineage (Proasellus boui and Proasellus slavus) as an outgroup (Morvan et al., 2013). Most nodes have a bootstrap value of 100% (Figure 1—figure supplement 1). Two nodes have values at 84% and 98% in the clade containing P. nsp VIELVIC; P. nsp HYPOPRAT; P. nsp MONTBAR and P. nsp ROSSFELD. To check the relationship between these four species, we built 2490 individual gene trees with PhyML v3.0 under a GTR+G+I model with 100 bootstrap replicates. Twenty-nine gene trees strongly support (bootstraps >90%) the phylogeny of the concatenated tree for this clade, 208 support other various topologies and the remaining 2253 gene trees do not support any relationship in particular for this clade (bootstraps <90%). Thus, the phylogeny for this clade remained unresolved, possibly as the consequence of a concomitant speciation process of these four species. For approaches with pairs of sister species, as we were unable to resolve the phylogeny for this clade, we selected the species living in the highest level of radioactivity (P. nsp HYPOPRAT) and the species living in the lowest level of radioactivity (P. nsp MONTBAR) among these four species to build a pair, resulting in a total of 6 pairs of sister species (sensu Felsenstein, 2004).
 
-## Mitochondrial genes
+### Mitochondrial genes
 
 Mitochondrial genes were not present amongst the 2490 genes obtained above. Indeed, owing to a different genetic code in invertebrate mitochondria, mitochondrial ORFs were systematically missed by the ORF caller (Transdecoder). We reconstructed mitochondrial genomes using the de novo transcriptome assemblies. Large mitochondrial contigs were built with MITObim (Hahn et al., 2013) by using RNA-seq reads. These contigs were mapped on the assembled mitochondrial genome from the closest possible species (taken from Saclier et al., 2018), allowing us to assemble them. Mitochondrial genomes were annotated using the MITOS web server (Bernt et al., 2013). We recovered the 13 mitochondrial protein-coding genes. Mitochondrial genes were aligned with PRANK (Löytynoja and Goldman, 2008) and sites ambiguously aligned were removed with Gblocks (Castresana, 2000).
 
-## Rate of molecular evolution
+### Rate of molecular evolution
 
 We used the synonymous substitution rate (dS) computed on the terminal branches of the tree as a proxy for the long-term species mutation rate (Kimura, 1983). This proxy is valid in absence of selection on codon usage. To check for the absence of biased codon usage, we computed the effective number of codons on the 2490 orthologous genes (ENC, Wright, 1990). This number varies between 20 (only a single codon is used for each amino acid) and 61 (all synonymous codons are used with equal frequency for each amino-acid). ENC ranged between 49.17 and 50.48 (Supplementary file 1), indicating a moderate codon usage bias, more importantly, they do not correlate with alpha radioactivity (pGLS, p.value = 0.6378). Altogether, the dS estimation does not seem impacted by a strongly biased or variable codon usage.
 
-To compute dS we first removed some genes showing a conflicting phylogeny. Including genes supporting different phylogenies in a concatenation amounts to constrain a wrong phylogeny for these genes which may biases dS estimations. Indeed imposing a wrong gene tree will tend to generate convergent mutations in terminal branches of the tree. To avoid such bias in our dS estimation we used ProfileNJ (Noutahi et al., 2016) with a bootstrap threshold of 90% to compute a cost of reconciliation between the concatenated tree and the gene trees. We kept the gene families with a cost of reconciliation of zero and with sequences long enough for all species (at least a half of the alignment) and removed all other genes, resulting in a set of 769 gene families. dS were estimated using CoEvol (Lartillot and Poujol, 2011). This software program implements a Muse and Gaut codon model (Muse and Gaut, 1994), with Brownian variation in dS and dN/dS along the tree. Bayesian inference and reconstruction of the history of variation in dS and dN/dS along the tree is conducted by Markov Chain Monte Carlo (MCMC). Two independent chains were run, and were stopped after checking for convergence by eye and with the tracecomp program included in the Coevol package (effective sample size >200 and discrepancy between chains < 0.3). Chains were stopped after 7117 generations (4200 generations excluded as burn-in). The age of the root was arbitrarily set to 1, resulting in synonymous substitution rate estimates that are relative to the root age (dS/ra) (Supplementary file 1). In order to ensure that assumptions made by CoEvol on the dS evolution along branches don’t bias the dS/ra estimation, dS were also computed with CodeML (Yang, 2007) using a free ratio model and with the Bio++ suite (Dutheil and Boussau, 2008). For the last one, a non-homogeneous model (NY98 model) was first applied to the alignment with BppML and then the MapNH program (Version 1.1.1) of the TestNH package (Guéguen and Duret, 2018) was used to reconstruct the ancestral states to estimate the number of synonymous substitutions on each branch. We multiplied the CoEvol dS/ra by the time estimated, to obtain a classical dS. This CoEvol dS was highly correlated with CodeML dS (R2 = 0.81) as well as with Mapnh dS (R2 = 0.82). Regarding the correlation with radioactivity, by dividing the CodeML dS and the Mapnh dS by the divergence time estimated by CoEvol in order to obtained comparable dS/ra among all species, we obtained similar results whatever the method used to compute the dS/ra (Supplementary file 3).
+To compute dS we first removed some genes showing a conflicting phylogeny. Including genes supporting different phylogenies in a concatenation amounts to constrain a wrong phylogeny for these genes which may biases dS estimations. Indeed imposing a wrong gene tree will tend to generate convergent mutations in terminal branches of the tree. To avoid such bias in our dS estimation we used ProfileNJ (Noutahi et al., 2016) with a bootstrap threshold of 90% to compute a cost of reconciliation between the concatenated tree and the gene trees. We kept the gene families with a cost of reconciliation of zero and with sequences long enough for all species (at least a half of the alignment) and removed all other genes, resulting in a set of 769 gene families. dS were estimated using CoEvol (Lartillot and Poujol, 2011). This software program implements a Muse and Gaut codon model (Muse and Gaut, 1994), with Brownian variation in dS and dN/dS along the tree. Bayesian inference and reconstruction of the history of variation in dS and dN/dS along the tree is conducted by Markov Chain Monte Carlo (MCMC). Two independent chains were run, and were stopped after checking for convergence by eye and with the tracecomp program included in the Coevol package (effective sample size >200 and discrepancy between chains < 0.3). Chains were stopped after 7117 generations (4200 generations excluded as burn-in). The age of the root was arbitrarily set to 1, resulting in synonymous substitution rate estimates that are relative to the root age (dS/ra) (Supplementary file 1). In order to ensure that assumptions made by CoEvol on the dS evolution along branches don’t bias the dS/ra estimation, dS were also computed with CodeML (Yang, 2007) using a free ratio model and with the Bio++ suite (Dutheil and Boussau, 2008). For the last one, a non-homogeneous model (NY98 model) was first applied to the alignment with BppML and then the MapNH program (Version 1.1.1) of the TestNH package (Guéguen and Duret, 2018) was used to reconstruct the ancestral states to estimate the number of synonymous substitutions on each branch. We multiplied the CoEvol dS/ra by the time estimated, to obtain a classical dS. This CoEvol dS was highly correlated with CodeML dS ($R^{2}$ = 0.81) as well as with Mapnh dS ($R^{2}$ = 0.82). Regarding the correlation with radioactivity, by dividing the CodeML dS and the Mapnh dS by the divergence time estimated by CoEvol in order to obtained comparable dS/ra among all species, we obtained similar results whatever the method used to compute the dS/ra (Supplementary file 3).
 
-## Mutational spectrum
+### Mutational spectrum
 
 To compute the mutational spectrum, we used an approach by pairs of sister species. We determined the polymorphism at the population level for each species by mapping the seven single-end transcriptomes on the assembled paired-end transcriptome with BWA (Li and Durbin, 2009). BAM files were produced with SAMtools (Li et al., 2009), and reads2snps (Gayral et al., 2013) was used to detect polymorphic sites. We then conserved only the 2490 orthologous genes shared by all species to compute the mutational spectrum on the same set of genes.
 
-For the two species of a pair, we reconstructed the ancestral sequence using a parsimonious approach. Namely, for each site in the alignment, if the two species had a single shared allele, this allele was considered as ancestral and the other alleles, if they existed, were considered as derived from the ancestral allele. For each species, we estimated the probability of a mutation in their population, p(i→j|f(i)a⁢n⁢c), by counting each type of mutation, either on all positions or on third positions, corrected by the ancestral base frequency:p(i→j|f(i)anc)=N(i→j)Nianc
+For the two species of a pair, we reconstructed the ancestral sequence using a parsimonious approach. Namely, for each site in the alignment, if the two species had a single shared allele, this allele was considered as ancestral and the other alleles, if they existed, were considered as derived from the ancestral allele. For each species, we estimated the probability of a mutation in their population, $p(i→j|f(i)_{a⁢n⁢c})$, by counting each type of mutation, either on all positions or on third positions, corrected by the ancestral base frequency:
 
-This probability being dependent on the mutation rate μ, we estimated the mutational spectrum by the proportion, when a mutation occurs, of mutation from the base i to the base j, noted p⁢(i⁢→⁢j|μ,f⁢(i)a⁢n⁢c):p(i→j|μ,f(i)anc)=p(i→j|f(i)anc)∗1∑i={A,C,G,T}∑j={A,T,C,G}p(i→j|f(i)anc)
+$$
+p(i→j|f(i)_{anc})=\frac{N(i→j)}{Ni_{anc}}
+$$
+
+This probability being dependent on the mutation rate μ, we estimated the mutational spectrum by the proportion, when a mutation occurs, of mutation from the base i to the base j, noted $p⁢(i⁢→⁢j|\mu,f⁢(i)_{a⁢n⁢c})$:
+
+$$
+p(i→j|\mu,f(i)_{anc})=p(i→j|f(i)_{anc})∗\frac{1}{\sumi={A,C,G,T}\sumj={A,T,C,G}p(i→j|f(i)_{anc})}
+$$
 
 This proportion takes into account the mutation rate and is so comparable across species. We pooled complementary mutations (e.g. A to C with T to G) to increase the counts by mutational categories and improve statistical power.
 
-## Statistical analyses
+### Statistical analyses
 
 Correlations between dS/ra computed on terminal branch of the tree and the different measures of radioactivity were tested using phylogenetic Generalized Least Squares models (pGLS Martins and Hansen, 1997) with the nlme (Pinheiro et al., 2007) and ape packages (Paradis et al., 2004) in R (R Development Core Team, 2020). As dS/ra is computed on terminal branches of the tree, this test assumes that radioactivity remained stable along the time represented by this branch which is disputable. Natural radioactivity has been slowly decreasing for the last 2 Gy (Karam and Leslie, 2005). However, this decrease is global and we can thus consider that the delta of radioactivity is stable over time. Second, the terminal branches on which the dS/ra is estimated do not exceed 10 My, a time frame in which the level of radioactivity can be considered stable. Thus, the present quantitative estimates should be representative of the radioactivity contrasts that persisted between these habitats in the time-frame of this study. That said, even if subterranean species have low dispersal abilities, there distribution have changed over time, but these movements could blur a signal and are unlikely to generate one.
 

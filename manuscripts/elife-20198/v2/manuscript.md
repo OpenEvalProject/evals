@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.20198.001 Catalytically inactive enzyme paralogs occur in many genomes. Some regulate their active counterparts but the structural principles of this regulation remain largely unknown. We report X-ray structures of Trypanosoma brucei S -adenosylmethionine decarboxylase alone and in functional complex with its catalytically dead paralogous partner, prozyme. We show monomeric Tb AdoMetDC is inactive because of autoinhibition by its N-terminal sequence. Heterodimerization with prozyme displaces this sequence from the active site through a complex mechanism involving a cis -to- trans proline isomerization, reorganization of a β-sheet, and insertion of the N-terminal α-helix into the heterodimer interface, leading to enzyme activation. We propose that the evolution of this intricate regulatory mechanism was facilitated by the acquisition of the dimerization domain, a single step that can in principle account for the divergence of regulatory schemes in the AdoMetDC enzyme family. These studies elucidate an allosteric mechanism in an enzyme and a plausible scheme by which such complex cooperativity evolved. DOI: http://dx.doi.org/10.7554/eLife.20198.001
+Catalytically inactive enzyme paralogs occur in many genomes. Some regulate their active counterparts but the structural principles of this regulation remain largely unknown. We report X-ray structures of Trypanosoma brucei S-adenosylmethionine decarboxylase alone and in functional complex with its catalytically dead paralogous partner, prozyme. We show monomeric TbAdoMetDC is inactive because of autoinhibition by its N-terminal sequence. Heterodimerization with prozyme displaces this sequence from the active site through a complex mechanism involving a cis-to-trans proline isomerization, reorganization of a β-sheet, and insertion of the N-terminal α-helix into the heterodimer interface, leading to enzyme activation. We propose that the evolution of this intricate regulatory mechanism was facilitated by the acquisition of the dimerization domain, a single step that can in principle account for the divergence of regulatory schemes in the AdoMetDC enzyme family. These studies elucidate an allosteric mechanism in an enzyme and a plausible scheme by which such complex cooperativity evolved.
 
 ## Introduction
 
@@ -31,19 +31,19 @@ The availability of numerous sequenced eukaryotic genomes has uncovered enzyme p
 
 A case study of pseudoenzyme regulation is found in the parasitic trypanosomatids, eukaryotic pathogens that cause human African trypanosomiasis (HAT), Chagas disease, and Leishmaniasis, globally infecting up to 20 million people (Stuart et al., 2008). Trypanosomatids encode inactive paralogs for two essential enzymes in the polyamine pathway (Willert et al., 2007; Willert and Phillips, 2008, 2012; Nguyen et al., 2013). These enzymes, S-adenosylmethionine decarboxylase (AdoMetDC) and deoxyhypusine synthase, have been characterized from Trypanosoma brucei, the causative agent of HAT. Both enzymes are profoundly activated (~1000 fold increase in catalytic efficiency) by oligomerization with their paralogous pseudoenzyme leading to formation of catalytically functional complexes.
 
-AdoMetDC is a pyruvoyl-dependent enzyme that catalyzes formation of decarboxylated AdoMet, a substrate required for biosynthesis of the polyamine spermidine from putrescine (
+AdoMetDC is a pyruvoyl-dependent enzyme that catalyzes formation of decarboxylated AdoMet, a substrate required for biosynthesis of the polyamine spermidine from putrescine (Pegg, 2009b) (Figure 1). Spermidine is essential in all eukaryotes for hypusine modification of the translation elongation factor eIF5A by deoxyhypusine synthase (Dever et al., 2014). As a consequence the polyamine biosynthetic pathway has been targeted for development of anti-proliferative agents, including for the treatment of HAT (Jacobs et al., 2011; Willert and Phillips, 2012). The AdoMetDC pyruvoyl group plays a key role in the catalytic mechanism and derives from an autocatalytic processing reaction that cleaves the peptide backbone into β- and α-chains (Pegg, 2009b; Bale and Ealick, 2010)(Figure 2A). Trypanosomatid AdoMetDC undergoes this cleavage, while the corresponding pseudoenzyme, which we call ‘prozyme’, lacks key residues and is not processed to the active form (Willert and Phillips, 2012). Prozyme is only found in the trypanosomatids. The T. brucei AdoMetDC/prozyme complex is a heterodimer, whereas T. brucei AdoMetDC (TbAdoMetDC) alone forms a homodimer only at high concentrations (Velez et al., 2013; Willert et al., 2007). Mutagenesis and biochemical data implicated the TbAdoMetDC N-terminus in the prozyme-induced activation mechanism, but the structural basis for the regulation was not elucidated (Velez et al., 2013).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig1-v2.jpg)
 
-**Figure 1.:** TbAdoMetDC ligands.(A) Reactions catalyzed by T. brucei S-adenosyl-L-methionine decarboxylase (TbAdoMetDC/prozyme heterodimer), ornithine decarboxylase (TbODC) and spermidine synthase (TbSpdSyn) are shown. AdoMet, S-adenosyl-L-methionine; dcAdoMet, decarboxylated S-adenosyl-L-methionine; MTA, methylthioadenosine. (B) CGP 40215 (CGP) is a competitive inhibitor of AdoMetDC (C) Bis-tris propane (B3P), a buffer component in the TbAdoMetDC/prozyme crystallization solution.DOI: http://dx.doi.org/10.7554/eLife.20198.002
+**Figure 1.:** (A) Reactions catalyzed by T. brucei S-adenosyl-L-methionine decarboxylase (TbAdoMetDC/prozyme heterodimer), ornithine decarboxylase (TbODC) and spermidine synthase (TbSpdSyn) are shown. AdoMet, S-adenosyl-L-methionine; dcAdoMet, decarboxylated S-adenosyl-L-methionine; MTA, methylthioadenosine. (B) CGP 40215 (CGP) is a competitive inhibitor of AdoMetDC (C) Bis-tris propane (B3P), a buffer component in the TbAdoMetDC/prozyme crystallization solution.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig2-v2.jpg)
 
-**Figure 2.:** TbAdoMetDC△26 monomer.(A) Schematic representation of TbAdoMetDC β-(pink) and α-(beige) chains resulting from autocatalytic serinolysis and pyruvoyl (Pvl86) formation. (B) Sequence alignment of the N-termini of trypanosomatid (Tb, T. brucei; Tc, T. cruzi; and Lm, Leishmania major) and Hs, human, AdoMetDCs. For the complete sequence alignment see Supplementary file 2. (C) Ribbon diagram of TbAdoMetDC△26 (β-chain in pink and α-chain in beige). Select β-strands are numbered. Pvl86 is shown in spheres and select residues in the autoinhibitory sequence and active site as sticks. Atom colors follow standard nomenclature where carbon is the indicated color, nitrogen (blue), oxygen (red) and sulfur (yellow). (D) 2m|Fo−DFc| electron density map of autoinhibitory residues contoured at the 1.2 σ. Dashed lines indicate distances (Å). (E) Active site comparison of TbAdoMetDC△26 and HsAdoMetDC (3DZ6) (β-chain dark green, α-chain light green). HsAdoMetDC active site surface is gray. Structures aligned with an RMSD of 2.6 Å over 277 Cα atoms. For full structural alignment see Figure 2—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.20198.003
+**Figure 2.:** (A) Schematic representation of TbAdoMetDC β-(pink) and α-(beige) chains resulting from autocatalytic serinolysis and pyruvoyl (Pvl86) formation. (B) Sequence alignment of the N-termini of trypanosomatid (Tb, T. brucei; Tc, T. cruzi; and Lm, Leishmania major) and Hs, human, AdoMetDCs. For the complete sequence alignment see Supplementary file 2. (C) Ribbon diagram of TbAdoMetDC△26 (β-chain in pink and α-chain in beige). Select β-strands are numbered. Pvl86 is shown in spheres and select residues in the autoinhibitory sequence and active site as sticks. Atom colors follow standard nomenclature where carbon is the indicated color, nitrogen (blue), oxygen (red) and sulfur (yellow). (D) 2m|Fo−DFc| electron density map of autoinhibitory residues contoured at the 1.2 σ. Dashed lines indicate distances (Å). (E) Active site comparison of TbAdoMetDC△26 and HsAdoMetDC (3DZ6) (β-chain dark green, α-chain light green). HsAdoMetDC active site surface is gray. Structures aligned with an RMSD of 2.6 Å over 277 Cα atoms. For full structural alignment see Figure 2—figure supplement 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** T. brucei and human (Hs) AdoMetDC.Alignment of TbAdoMetDCΔ26 monomer β/α (pink/beige) and HsAdoMetDC β/α (bright green/light green) (PDB access code 1i7M). The HsAdoMetDC putrescine is shown in green spheres and the HsAdoMetDC inhibitor 4-amidinoindan-1-one-2'-amidinohydrazone (AAH) is shown in transparent green spheres. TbAdoMetDCΔ26 contains no ligands. Structures aligned with an RMSD of 2.6 Å over 277 Cα atoms.DOI: http://dx.doi.org/10.7554/eLife.20198.004
+**Figure 2—figure supplement 1.:** Alignment of TbAdoMetDCΔ26 monomer β/α (pink/beige) and HsAdoMetDC β/α (bright green/light green) (PDB access code 1i7M). The HsAdoMetDC putrescine is shown in green spheres and the HsAdoMetDC inhibitor 4-amidinoindan-1-one-2'-amidinohydrazone (AAH) is shown in transparent green spheres. TbAdoMetDCΔ26 contains no ligands. Structures aligned with an RMSD of 2.6 Å over 277 Cα atoms.
 
 The polyamine biosynthetic pathway is highly regulated in most eukaryotic cells (Pegg, 2009a). However, these regulatory mechanisms are not conserved in trypanosomatids, and instead in T. brucei the pathway is regulated by prozyme through both allosteric (enzyme activation upon heterodimer formation) and protein expression effects that modulate the concentration of active AdoMetDC in the cell (Willert and Phillips, 2008; Xiao et al., 2013). Some evidence for allosteric regulation has also been reported for human AdoMetDC where the polyamine putrescine has been shown to stimulate both processing to form the pyruvoyl cofactor and also enzyme activity (Pegg, 2009b; Bale and Ealick, 2010). Putrescine also stimulates the activity of monomeric TbAdoMetDC, though the effects are small in comparison to prozyme (10-fold versus 1000-fold) (Velez et al., 2013; Willert et al., 2007). How these various regulatory strategies evolved in the AdoMetDC family and how they are related remain open questions.
 
@@ -51,47 +51,310 @@ In order to determine the structural basis for prozyme activation of TbAdoMetDC,
 
 ## Results
 
-## X-ray structure determination of the inactive T. brucei AdoMetDC monomer
+### X-ray structure determination of the inactive T. brucei AdoMetDC monomer
 
-Trypanosomatid AdoMetDCs contain a highly conserved 16 amino acid N-terminal sequence that is not conserved in other species (Figure 2B and Supplementary file 2). Deletion or mutation of these residues led to loss of prozyme-mediated activation of TbAdoMetDC despite competent heterodimer formation implicating the N-terminus in the activation mechanism (Velez et al., 2013). To facilitate crystallization, we created an additional deletion mutant TbAdoMetDCΔ26. Like the Δ16 mutant, TbAdoMetDCΔ26 had low activity either as a monomer or after heterodimerization with prozyme, and both were modestly (3-fold) more active in the presence of putrescine (Table 1). TbAdoMetDCΔ26 yielded crystals (space group P212121) that diffracted to 1.48 Å resolution (Table 2). A single TbAdoMetDCΔ26 αβ-monomer was found in the asymmetric unit composed of a four-layer sandwich with two central β-sheets positioned between outer α-helices (Figure 2C). The N-terminal β-sheet (strands β1-β8) contains pyruvoyl at the N-terminus of β4 (pyruvoyl β-sheet) and is composed of residues from both the α- and β-chains, whereas the C-terminal β-sheet (scaffolding β-sheet) contains only α-chain residues (strands β9-β16) (Figure 2C). To assess the contribution of putrescine to the TbAdoMetDC activation mechanism it was included in crystallization buffers. However, no density consistent with a bound putrescine was observed in the structure of TbAdoMetDCΔ26.10.7554/eLife.20198.005Table 1.Activity of T. brucei AdoMetDC and AdoMetDC/prozyme complexes.DOI: http://dx.doi.org/10.7554/eLife.20198.005TbAdoMetDC proteins Prozyme proteins kcat/Km (s−1M−1) TbAdoMetDC monomer TbAdoMetDC/prozyme heterodimer (+) Put(−) Put(+) Put(−) PutWild-typeWild-type9.7 ± 3.5 0.48 ± 0.08 3.2 ± 0.6×103 2.6 ± 0.3×103 Δ16Wild-type16±3*16±11*28±5*18±3*Δ26Wild-type0.32 ± 0.07 0.11 ± 0.02 7.6 ± 1.7 2.2 ± 0.3 H172AWild-typeNDND2.1 ± 0.4×103 93 ± 42 W137A/M146AWild-typeNDND87 ± 8 5.0 ± 0.9 Wild-typeM148'A/Y152'Aas aboveas above0.66 ± 0.23×103 16 ± 4 * data taken from (Velez et al., 2013). Data were collected in the presence of 4 mM putrescine (Put), except for the Δ16 mutant (5 mM putrescine*). In all cases, the heterodimer with the wild-type counterpart formed with sufficient affinity that the subunits could be copurified as a stable complex. Error represents the standard deviation for the fit of triplicate data points. ND, not determined.10.7554/eLife.20198.006Table 2.Crystallographic diffraction data and refinement statistics.DOI: http://dx.doi.org/10.7554/eLife.20198.006TbAdoMetDC△26 monomerTbAdoMetDC/prozyme heterodimerTbAdoMetDC/prozyme heterodimer with CGPData collection Space groupP212121 (No. 19)P21 (No. 4)P21 (No. 4)Unit cell dimensions (Å, °)a = 46.67, b = 75.64, c = 87.92 a = 81.30, b = 96.71, c = 99.58; β = 102.64 a = 81.13, b = 96.31, c = 98.48; β = 102.22 Wavelength (Å)0.979350.979320.97934Average mosaicity (°)0.250.850.62Resolution range (Å)50–1.48 (1.51–1.48)* 50–2.40 (2.44–2.40) 50–2.42 (2.46–2.42) Unique number of reflections51,57557,78057,137Average redundancy9.4 (4.8) 6.9 (5.6) 4.0 (3.4) Completeness (%)98.2 (79.2) 99.5 (97.4) 99.4 (98.5) Rr.i.m. (%) ‡6.814.612.5Rp.i.m. (%) §2.2 (39.3) 5.5 (60.2) 6.1 (69.7) <I /σI>29.8 (1.4) 15.1 (1.3) 16.6 (1.7) CC1/2 in the last resolution shell0.680.600.53CC* in the last resolution shell0.900.870.83Wilson B-factor (Å2) †17.242.025.1Refinement Resolution range (Å)36.2–1.48 (1.53–1.48) 37.9–2.41 (2.49–2.41) 32.4–2.42 (2.51–2.42) Number of reflections Total/Rfree51,476/2000 (4315/167)57,703/2000 (5361/186)55,801/1674 (5172/155)Atoms (non-H protein/ligands/solvent)2584/6/252 10,275/60/101 10,214/124/261Protein residues (resolved/sequence)314/344 ¶1292/1390 ¶,**1282/1390¶,**Rwork (%)15.8 (25.1) 22.8 (32.6) 21.3 (29.1) Rfree (%)20.0 (32.6) 27.1 (33.2) 25.5 (34.6) RMSD bond length (Å)0.0080.0020.002RMSD bond angle (°)1.00.460.48Average B-factor (Å2) (protein/ligands/solvent)24.9/20.8/32.356.2/56.3/40.240.6/56.2/28.9Ramachandran plot (%) (favored/allowed/disallowed)98.1/1.6/0.3††96.4/3.6/096.9/3.1/0Poor rotamers (%)0.340.700.18Clashscore1.181.231.38* Numbers in parentheses correspond to the last resolution shell.† Maximum likelihood estimate of the overall B-value reported in Phenix.‡ Redundancy-independent merging R factor, Rr.i.m=∑hkl{N(hkl)/[N(hkl)−1]}1/2×∑i|Ii(hkl)−⟨I(hkl)⟩|/∑hkl∑iIi(hkl) (Weiss, 2001)§ Precision-indicating merging R factor, Rp.i.m=∑hkl{1/[N(hkl)−1]}1/2×∑i|Ii(hkl)−⟨I(hkl)⟩|/∑hkl∑iIi(hkl) (Weiss, 2001)¶ Residue count includes Pvl but ** excludes the first Ser after Ulp1 cleavage site.†† I168 is the only residue in the disallowed region of the Ramachandran plot.
+Trypanosomatid AdoMetDCs contain a highly conserved 16 amino acid N-terminal sequence that is not conserved in other species (Figure 2B and Supplementary file 2). Deletion or mutation of these residues led to loss of prozyme-mediated activation of TbAdoMetDC despite competent heterodimer formation implicating the N-terminus in the activation mechanism (Velez et al., 2013). To facilitate crystallization, we created an additional deletion mutant TbAdoMetDCΔ26. Like the Δ16 mutant, TbAdoMetDCΔ26 had low activity either as a monomer or after heterodimerization with prozyme, and both were modestly (3-fold) more active in the presence of putrescine (Table 1). TbAdoMetDCΔ26 yielded crystals (space group P212121) that diffracted to 1.48 Å resolution (Table 2). A single TbAdoMetDCΔ26 αβ-monomer was found in the asymmetric unit composed of a four-layer sandwich with two central β-sheets positioned between outer α-helices (Figure 2C). The N-terminal β-sheet (strands β1-β8) contains pyruvoyl at the N-terminus of β4 (pyruvoyl β-sheet) and is composed of residues from both the α- and β-chains, whereas the C-terminal β-sheet (scaffolding β-sheet) contains only α-chain residues (strands β9-β16) (Figure 2C). To assess the contribution of putrescine to the TbAdoMetDC activation mechanism it was included in crystallization buffers. However, no density consistent with a bound putrescine was observed in the structure of TbAdoMetDCΔ26.
 
-## An autoinhibitory sequence blocks the active site of the T. brucei AdoMetDC monomer
+**Table 1.**
+ Activity of T. brucei AdoMetDC and AdoMetDC/prozyme complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">TbAdoMetDC proteins</th>
+      <th rowspan="3">Prozyme proteins</th>
+      <th colspan="4">kcat/Km (s−1M−1)</th>
+    </tr>
+    <tr>
+      <th colspan="2">TbAdoMetDC monomer</th>
+      <th colspan="2">TbAdoMetDC/prozyme heterodimer</th>
+    </tr>
+    <tr>
+      <th>(+) Put</th>
+      <th>(−) Put</th>
+      <th>(+) Put</th>
+      <th>(−) Put</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type</td>
+      <td>Wild-type</td>
+      <td>9.7 ± 3.5</td>
+      <td>0.48 ± 0.08</td>
+      <td>3.2 ± 0.6×103</td>
+      <td>2.6 ± 0.3×103</td>
+    </tr>
+    <tr>
+      <td>Δ16</td>
+      <td>Wild-type</td>
+      <td>16±3*</td>
+      <td>16±11*</td>
+      <td>28±5*</td>
+      <td>18±3*</td>
+    </tr>
+    <tr>
+      <td>Δ26</td>
+      <td>Wild-type</td>
+      <td>0.32 ± 0.07</td>
+      <td>0.11 ± 0.02</td>
+      <td>7.6 ± 1.7</td>
+      <td>2.2 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>H172A</td>
+      <td>Wild-type</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>2.1 ± 0.4×103</td>
+      <td>93 ± 42</td>
+    </tr>
+    <tr>
+      <td>W137A/M146A</td>
+      <td>Wild-type</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>87 ± 8</td>
+      <td>5.0 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>Wild-type</td>
+      <td>M148'A/Y152'A</td>
+      <td>as above</td>
+      <td>as above</td>
+      <td>0.66 ± 0.23×103</td>
+      <td>16 ± 4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* data taken from (Velez et al., 2013). Data were collected in the presence of 4 mM putrescine (Put), except for the Δ16 mutant (5 mM putrescine*). In all cases, the heterodimer with the wild-type counterpart formed with sufficient affinity that the subunits could be copurified as a stable complex. Error represents the standard deviation for the fit of triplicate data points. ND, not determined._
+
+**Table 2.**
+ Crystallographic diffraction data and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>TbAdoMetDC△26 monomer</th>
+      <th>TbAdoMetDC/prozyme heterodimer</th>
+      <th>TbAdoMetDC/prozyme heterodimer with CGP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121 (No. 19)</td>
+      <td>P21 (No. 4)</td>
+      <td>P21 (No. 4)</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions (Å, °)</td>
+      <td>a = 46.67, b = 75.64, c = 87.92</td>
+      <td>a = 81.30, b = 96.71, c = 99.58; β = 102.64</td>
+      <td>a = 81.13, b = 96.31, c = 98.48; β = 102.22</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97935</td>
+      <td>0.97932</td>
+      <td>0.97934</td>
+    </tr>
+    <tr>
+      <td>Average mosaicity (°)</td>
+      <td>0.25</td>
+      <td>0.85</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>50–1.48 (1.51–1.48)*</td>
+      <td>50–2.40 (2.44–2.40)</td>
+      <td>50–2.42 (2.46–2.42)</td>
+    </tr>
+    <tr>
+      <td>Unique number of reflections</td>
+      <td>51,575</td>
+      <td>57,780</td>
+      <td>57,137</td>
+    </tr>
+    <tr>
+      <td>Average redundancy</td>
+      <td>9.4 (4.8)</td>
+      <td>6.9 (5.6)</td>
+      <td>4.0 (3.4)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.2 (79.2)</td>
+      <td>99.5 (97.4)</td>
+      <td>99.4 (98.5)</td>
+    </tr>
+    <tr>
+      <td>Rr.i.m. (%) ‡</td>
+      <td>6.8</td>
+      <td>14.6</td>
+      <td>12.5</td>
+    </tr>
+    <tr>
+      <td>Rp.i.m. (%) §</td>
+      <td>2.2 (39.3)</td>
+      <td>5.5 (60.2)</td>
+      <td>6.1 (69.7)</td>
+    </tr>
+    <tr>
+      <td>&lt;I /σI&gt;</td>
+      <td>29.8 (1.4)</td>
+      <td>15.1 (1.3)</td>
+      <td>16.6 (1.7)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 in the last resolution shell</td>
+      <td>0.68</td>
+      <td>0.60</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>CC* in the last resolution shell</td>
+      <td>0.90</td>
+      <td>0.87</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor (Å2) †</td>
+      <td>17.2</td>
+      <td>42.0</td>
+      <td>25.1</td>
+    </tr>
+    <tr>
+      <td colspan="4">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>36.2–1.48 (1.53–1.48)</td>
+      <td>37.9–2.41 (2.49–2.41)</td>
+      <td>32.4–2.42 (2.51–2.42)</td>
+    </tr>
+    <tr>
+      <td>Number of reflections Total/Rfree</td>
+      <td>51,476/2000 (4315/167)</td>
+      <td>57,703/2000 (5361/186)</td>
+      <td>55,801/1674 (5172/155)</td>
+    </tr>
+    <tr>
+      <td>Atoms (non-H protein/ligands/solvent)</td>
+      <td>2584/6/252</td>
+      <td>10,275/60/101</td>
+      <td>10,214/124/261</td>
+    </tr>
+    <tr>
+      <td>Protein residues (resolved/sequence)</td>
+      <td>314/344 ¶</td>
+      <td>1292/1390 ¶,**</td>
+      <td>1282/1390¶,**</td>
+    </tr>
+    <tr>
+      <td>Rwork (%)</td>
+      <td>15.8 (25.1)</td>
+      <td>22.8 (32.6)</td>
+      <td>21.3 (29.1)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>20.0 (32.6)</td>
+      <td>27.1 (33.2)</td>
+      <td>25.5 (34.6)</td>
+    </tr>
+    <tr>
+      <td>RMSD bond length (Å)</td>
+      <td>0.008</td>
+      <td>0.002</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>RMSD bond angle (°)</td>
+      <td>1.0</td>
+      <td>0.46</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Average B-factor (Å2) (protein/ligands/solvent)</td>
+      <td>24.9/20.8/32.3</td>
+      <td>56.2/56.3/40.2</td>
+      <td>40.6/56.2/28.9</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%) (favored/allowed/disallowed)</td>
+      <td>98.1/1.6/0.3††</td>
+      <td>96.4/3.6/0</td>
+      <td>96.9/3.1/0</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.34</td>
+      <td>0.70</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>1.18</td>
+      <td>1.23</td>
+      <td>1.38</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Numbers in parentheses correspond to the last resolution shell.† Maximum likelihood estimate of the overall B-value reported in Phenix.‡ Redundancy-independent merging R factor, Rr.i.m=∑hkl{N(hkl)/[N(hkl)−1]}1/2×∑i|Ii(hkl)−⟨I(hkl)⟩|/∑hkl∑iIi(hkl) (Weiss, 2001)§ Precision-indicating merging R factor, Rp.i.m=∑hkl{1/[N(hkl)−1]}1/2×∑i|Ii(hkl)−⟨I(hkl)⟩|/∑hkl∑iIi(hkl) (Weiss, 2001)¶ Residue count includes Pvl but ** excludes the first Ser after Ulp1 cleavage site.†† I168 is the only residue in the disallowed region of the Ramachandran plot._
+
+### An autoinhibitory sequence blocks the active site of the T. brucei AdoMetDC monomer
 
 The inactivity of TbAdoMetDCΔ26 is explained by an autoinhibitory mechanism mediated by residues S27-G30, which block the active site (Figure 2C–E). The G30-P31 peptide bond is in the cis-conformation, orienting S27-G30 into the active site. This configuration places F28 within 3.8 Å of the pyruvoyl overlapping with the active site of the previously reported HsAdoMetDC structure (Ekstrom et al., 1999) (Figure 2E and Figure 2—figure supplement 1). In contrast, the equivalent peptide bond in HsAdoMetDC (HsG9-T10) is in the trans-conformation, and the N-terminus extends away from the active site, positioning HsF7 (equivalent to TbF28) to form one wall of the substrate-binding site (Figure 2E and Figure 2—figure supplement 1). The TbAdoMetDCΔ26 autoinhibitory residues are well defined by electron density and form extensive interactions in the active site stabilizing the observed conformation (Figure 2D). These interactions include, π-π-stacking between F28 and Y243 and H-bonds between the side chain of E85 and the backbone amide of S27, and between the amide of G101 and the carbonyl of E29. P31 is conserved throughout the trypanosomatid AdoMetDCs (Figure 2B and Supplementary file 2). Taken together with the specificity of the observed interactions between the autoinhibitory sequence and the active site, these data strongly support the conclusion that the autoinhibition observed for the truncated monomer will also form the structural basis for inactivity of the full-length TbAdoMetDC monomer.
 
-## X-ray structure determination of the T. brucei active AdoMetDC/prozyme heterodimer
+### X-ray structure determination of the T. brucei active AdoMetDC/prozyme heterodimer
+
+TbAdoMetDC/prozyme wild-type heterodimer was crystallized with putrescine both in the absence (apo-TbAdoMetDC/prozyme) and presence (CGP-TbAdoMetDC/prozyme) of CGP 40215 (CGP), a known AdoMetDC inhibitor (Bacchi et al., 1996) (Figure 1). Crystals (space group P21) from both conditions diffracted to 2.4 Å (Table 2). Two TbAdoMetDC/prozyme heterodimers are observed per asymmetric unit. They are associated in a tetrameric structure formed partially through a domain swap involving prozyme β-strands (β0’), but which buries a relatively small surface area (Figure 3—figure supplement 1). The TbAdoMetDC/prozyme complex was previously shown to be a dimer in solution by analytical ultracentrifugation (Velez et al., 2013; Willert et al., 2007), thus the tetramer is unlikely to be relevant to its catalytic function. Both apo- and CGP-TbAdoMetDC/prozyme structures contain ligands bound at identical sites between the β-sheets (Figure 3A and Figure 3—figure supplement 2). In prozyme, the electron density is consistent with a bound putrescine (Put’) (Figure 3—figure supplement 2C); however, in TbAdoMetDC the corresponding electron density is larger and the crystallization buffer bis-tris propane (B3P) was modeled into the site (Figures 1 and 3A, and Figure 3—figure supplement 2A). The CGP-TbAdoMetDC/prozyme structure additionally has CGP bound in the active site and a second putrescine (Put) found in a novel site near the N-terminal α-helix (h1) (Figure 3A and Figure 3—figure supplement 2). The ligand binding sites are described in greater detail below.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig3-v2.jpg)
 
-**Figure 3.:** TbAdoMetDC/prozyme heterodimer.(A) Ribbon diagram of the CGP-bound heterodimer of TbAdoMetDC (teal (β) and sky blue (α)) and prozyme (yellow). The schematic depicts color codes for the various chains. Ligand colors are as follows: Pvl86 (sky blue), CGP (purple), Put (orange)(AdoMetDC site), Put’ (orange)(prozyme site), and B3P (violet) are shown as spheres. Residues and ligands in prozyme are marked (’). (B) Superposition of TbAdoMetDC and prozyme subunits from the CGP-heterodimer (RMSD = 2.4 Å over 261 Cα atoms). TbAdoMetDC active site helices/strands (residues 202–247) absent from prozyme are colored orange, Y243 (green), CGP (purple), B3P (violet), and prozyme Put' (orange). (C) Schematic representation of the TbAdoMetDC/prozyme heterodimer. Prozyme helices (rectangles) and strands (arrows) were numbered based on structural homology to TbAdoMetDC. (D) Superposition of the scaffolding sheets from TbAdoMetDC△26 and the apo-TbAdoMetDC heterodimer subunit showing main- and side-chain H-bond network (dashed lines) across the dimer interface (overall structures RMSD = 2.1 Å over 310 Cα atoms). For the tetramer structure observed in the asymmetric unit see Figure 3—figure supplement 1 and for the electron density supporting ligand placement see Figure 3—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.20198.007
+**Figure 3.:** (A) Ribbon diagram of the CGP-bound heterodimer of TbAdoMetDC (teal (β) and sky blue (α)) and prozyme (yellow). The schematic depicts color codes for the various chains. Ligand colors are as follows: Pvl86 (sky blue), CGP (purple), Put (orange)(AdoMetDC site), Put’ (orange)(prozyme site), and B3P (violet) are shown as spheres. Residues and ligands in prozyme are marked (’). (B) Superposition of TbAdoMetDC and prozyme subunits from the CGP-heterodimer (RMSD = 2.4 Å over 261 Cα atoms). TbAdoMetDC active site helices/strands (residues 202–247) absent from prozyme are colored orange, Y243 (green), CGP (purple), B3P (violet), and prozyme Put' (orange). (C) Schematic representation of the TbAdoMetDC/prozyme heterodimer. Prozyme helices (rectangles) and strands (arrows) were numbered based on structural homology to TbAdoMetDC. (D) Superposition of the scaffolding sheets from TbAdoMetDC△26 and the apo-TbAdoMetDC heterodimer subunit showing main- and side-chain H-bond network (dashed lines) across the dimer interface (overall structures RMSD = 2.1 Å over 310 Cα atoms). For the tetramer structure observed in the asymmetric unit see Figure 3—figure supplement 1 and for the electron density supporting ligand placement see Figure 3—figure supplement 2.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** TbAdoMetDC/prozyme tetrameric structure.The asymmetric unit of CGP 40215-bound TbAdoMetDC/prozyme heterodimer (AdoMetDC β/α (teal/sky blue) and prozyme (yellow)) is shown with pyruvoyl groups (Pvl 86) and ligands as spheres (Put and Put', in orange; B3P, in violet; CGP, in purple). Select TbAdoMetDC helices (h1, h6–h8) and prozyme N-terminal β-strands (0') are marked. The tetramer interface (buried surface area of 2,100 Å2) is formed by the non-crystallographic symmetry related prozyme β-strands β0’ configured as crossed arms (domain swap), with β0’ forming additional interactions with h6 and h6/h7 loop from the opposite TbAdoMetDC. A salt bridge between prozyme R5’ and the TbAdoMetDC residue E148 of h8 within the same dimer is also formed (not shown). The tetramer is not relevant to the solution configuration since TbAdoMetDC/prozyme highest molecular weight species in AUC experiments was a heterodimer (Velez et al., 2013; Willert et al., 2007). The predicted solvation energy gain of burying this surface is small (△G = −10 kcal/mol as calculated by PDBePISA (Krissinel and Henrick, 2007)), again consistent with the insignificance of the tetramer to the solution structure.DOI: http://dx.doi.org/10.7554/eLife.20198.008
+**Figure 3—figure supplement 1.:** The asymmetric unit of CGP 40215-bound TbAdoMetDC/prozyme heterodimer (AdoMetDC β/α (teal/sky blue) and prozyme (yellow)) is shown with pyruvoyl groups (Pvl 86) and ligands as spheres (Put and Put', in orange; B3P, in violet; CGP, in purple). Select TbAdoMetDC helices (h1, h6–h8) and prozyme N-terminal β-strands (0') are marked. The tetramer interface (buried surface area of 2,100 Å2) is formed by the non-crystallographic symmetry related prozyme β-strands β0’ configured as crossed arms (domain swap), with β0’ forming additional interactions with h6 and h6/h7 loop from the opposite TbAdoMetDC. A salt bridge between prozyme R5’ and the TbAdoMetDC residue E148 of h8 within the same dimer is also formed (not shown). The tetramer is not relevant to the solution configuration since TbAdoMetDC/prozyme highest molecular weight species in AUC experiments was a heterodimer (Velez et al., 2013; Willert et al., 2007). The predicted solvation energy gain of burying this surface is small (△G = −10 kcal/mol as calculated by PDBePISA (Krissinel and Henrick, 2007)), again consistent with the insignificance of the tetramer to the solution structure.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** TbAdoMetDC/prozyme heterodimer.The electron density map, contoured at 1.0 σ, is shown for a radius of 1.8 Å. The map is color-coded as follows: blue mesh represents density around ligand and gray mesh is density around residues in the binding site within 5 Å of a ligand. The β- and α-chains of TbAdoMetDC are in teal/sky blue, prozyme is in yellow. Select residues are labeled. (A) Bis-tris propane, B3P. (B) CGP 40215, CGP. (C) Putrescine in prozyme, Put'. (D, E). Putrescine, Put, in TbAdoMetDC h1 binding pocket. The two molecules in the asymmetric unit bind Put in alternative conformations (D vs E).DOI: http://dx.doi.org/10.7554/eLife.20198.009
+**Figure 3—figure supplement 2.:** The electron density map, contoured at 1.0 σ, is shown for a radius of 1.8 Å. The map is color-coded as follows: blue mesh represents density around ligand and gray mesh is density around residues in the binding site within 5 Å of a ligand. The β- and α-chains of TbAdoMetDC are in teal/sky blue, prozyme is in yellow. Select residues are labeled. (A) Bis-tris propane, B3P. (B) CGP 40215, CGP. (C) Putrescine in prozyme, Put'. (D, E). Putrescine, Put, in TbAdoMetDC h1 binding pocket. The two molecules in the asymmetric unit bind Put in alternative conformations (D vs E).
 
 Prozyme and TbAdoMetDC subunits share the same overall fold (Figure 3B,C). However, besides the pyruvoyl, prozyme is also missing additional active site residues including the ligand-binding residue Y243, helices h9-h11 and strand β10. On the dimer interface side of the subunits, h6 and h7, which form part of the h1 binding site, and h8 in TbAdoMetDC are composed of only a single helix (h8’) in prozyme and the orientation of these helices is also substantially different (Figure 3B,C).
 
 The TbAdoMetDC/prozyme dimer interface contains an extensive buried surface area (3,200 Å2). Strands β9-β16 form a scaffold that extends across the dimer interface with H-bond interactions formed between β15 from TbAdoMetDC (R336-E340) and β15’ from prozyme (R305-H309) (Figure 3C,D). Additional interface interactions are observed between AdoMetDC pyruvoyl β-sheet (β7 and h8) and prozyme loop β7’-β8’, and vice versa.
 
-## Structural basis for activation of TbAdoMetDC by prozyme
+### Structural basis for activation of TbAdoMetDC by prozyme
 
-Comparison of inactive
+Comparison of inactive TbAdoMetDCΔ26 with TbAdoMetDC in the active heterodimer complex reveals a coupled set of conformational changes explaining how heterodimerization with prozyme leads to enzyme activation. Heterodimerization is likely initiated by the formation of the extended β-sheet across the dimer interface between the structurally rigid scaffolding β-sheet of TbAdoMetDC and its counterpart in prozyme (Figure 3D), providing a platform to support the conformational changes required for activation. The structural reorganization is defined by three segments of movement: (1) repositioning of the autoinhibitory residue and N-terminal h1 helix, (2) reorganization of the pyruvoyl β-sheet, and (3) ordering of the β6-h8 connector loop (Figure 4 and Video 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig4-v2.jpg)
 
-**Figure 4.:** TbAdoMetDC by prozyme.(A) Ribbon diagram of superimposed inactive TbAdoMetDCΔ26 (pink/beige) with active apo-TbAdoMetDC/prozyme (teal/sky blue/yellow) (RMSD = 2.1 Å over 310 Cα atoms). The schematic depicts color codes for the various chains. Ligands are colored as follows: B3P (purple) and Put’ (orange). (B) Active site comparison of inactive TbAdoMetDCΔ26 with CGP-TbAdoMetDC/prozyme. Inhibitor CGP is shown in green. (C) Pyruvoyl β-sheet rearrangements between inactive TbAdoMetDC△26 and the apo-TbAdoMetDC subunit from the heterodimer. Representative residues on the β7 and β8 strands and nearby loops are highlighted as color-coded pairs: Y176 (purple); F163 (green); I164 (red); I168 (black); H172 (teal) and D169 (orange). Labels are positioned near the monomer for F163, I164, I168, and Y176 and the dimer for D169 and H172. Highlighted residues migrate over distances in parenthesis (Cα-to-Cα) between the inactive monomer and heterodimer structures: F163 (14.7 Å), I164 (15.2 Å), I168 (13.7 Å), D169 (14.3 Å), H172 (8.8 Å), Y176 (8.4 Å). (D) β6 to h8 connector (residues 130–145) rearrangements between the inactive monomer and the active heterodimer. Residues E29 (green) (5.0 Å), W137 (purple) (15.4 Å), R154 (orange) (3.5 Å) are shown as color coded pairs and the migration distances are in parenthesis. F20 is shown in pink and all other residues are colored the same as their chain color. For a schematic and surface representation of these conformational changes see Figure 4—figure supplement 1 and Figure 4—figure supplement 2, respectively. See also Video 1.DOI: http://dx.doi.org/10.7554/eLife.20198.010
+**Figure 4.:** (A) Ribbon diagram of superimposed inactive TbAdoMetDCΔ26 (pink/beige) with active apo-TbAdoMetDC/prozyme (teal/sky blue/yellow) (RMSD = 2.1 Å over 310 Cα atoms). The schematic depicts color codes for the various chains. Ligands are colored as follows: B3P (purple) and Put’ (orange). (B) Active site comparison of inactive TbAdoMetDCΔ26 with CGP-TbAdoMetDC/prozyme. Inhibitor CGP is shown in green. (C) Pyruvoyl β-sheet rearrangements between inactive TbAdoMetDC△26 and the apo-TbAdoMetDC subunit from the heterodimer. Representative residues on the β7 and β8 strands and nearby loops are highlighted as color-coded pairs: Y176 (purple); F163 (green); I164 (red); I168 (black); H172 (teal) and D169 (orange). Labels are positioned near the monomer for F163, I164, I168, and Y176 and the dimer for D169 and H172. Highlighted residues migrate over distances in parenthesis (Cα-to-Cα) between the inactive monomer and heterodimer structures: F163 (14.7 Å), I164 (15.2 Å), I168 (13.7 Å), D169 (14.3 Å), H172 (8.8 Å), Y176 (8.4 Å). (D) β6 to h8 connector (residues 130–145) rearrangements between the inactive monomer and the active heterodimer. Residues E29 (green) (5.0 Å), W137 (purple) (15.4 Å), R154 (orange) (3.5 Å) are shown as color coded pairs and the migration distances are in parenthesis. F20 is shown in pink and all other residues are colored the same as their chain color. For a schematic and surface representation of these conformational changes see Figure 4—figure supplement 1 and Figure 4—figure supplement 2, respectively. See also Video 1.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** TbAdoMetDCΔ26 monomer and the active TbAdoMetDC/prozyme heterodimer.β-sheets (flat arrows) and loops (lines) are respectively colored gray and orange in the monomer. The corresponding residues in the heterodimer are colored the same as in the monomer to demonstrate the change in secondary structure. The side chains of residues in the β-strands are shown as black ovals oriented towards either the outer helices (above plain) or scaffolding β-sheet (below plain). Side chains of F163, I164, D169, H172, and Y176 are colored as in Figure 3C. The backbone H-bonds (as defined by distances < 3.3 Å) are shown as dashed lines. The register shifts for the H-bond interactions going from the monomer to the heterodimer are depicted above the monomer.DOI: http://dx.doi.org/10.7554/eLife.20198.011
+**Figure 4—figure supplement 1.:** β-sheets (flat arrows) and loops (lines) are respectively colored gray and orange in the monomer. The corresponding residues in the heterodimer are colored the same as in the monomer to demonstrate the change in secondary structure. The side chains of residues in the β-strands are shown as black ovals oriented towards either the outer helices (above plain) or scaffolding β-sheet (below plain). Side chains of F163, I164, D169, H172, and Y176 are colored as in Figure 3C. The backbone H-bonds (as defined by distances < 3.3 Å) are shown as dashed lines. The register shifts for the H-bond interactions going from the monomer to the heterodimer are depicted above the monomer.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** TbAdoMetDCΔ26 monomer and the active CGP-TbAdoMetDC/prozyme heterodimer.Residues within 4 Å of alpha-helix h1 in the heterodimer structure are color-coded: N132-S134 (red), F135-W137 (orange), L144-A147 (yellow), I164 (green), I168-S170 (blue), D171-H172 (dark blue) and R298 (violet). The same labeling is reproduced in the monomer to demonstrate the structural changes. (A) Ribbon diagram of TbAdoMetDCΔ26 (β- and α-chains are pink and beige, respectively). Active site residues F28 (sticks) and Pvl 86 (spheres) are shown. (B) Ribbon diagram of heterodimeric CGP-TbAdoMetDC (β-/α-chains in teal/sky blue, CGP as purple sticks). (C) Surface representation of (A). (D) Surface representation of (B). Residues positioned N-terminal of P31 were not used in surface calculations.DOI: http://dx.doi.org/10.7554/eLife.20198.012
+**Figure 4—figure supplement 2.:** Residues within 4 Å of alpha-helix h1 in the heterodimer structure are color-coded: N132-S134 (red), F135-W137 (orange), L144-A147 (yellow), I164 (green), I168-S170 (blue), D171-H172 (dark blue) and R298 (violet). The same labeling is reproduced in the monomer to demonstrate the structural changes. (A) Ribbon diagram of TbAdoMetDCΔ26 (β- and α-chains are pink and beige, respectively). Active site residues F28 (sticks) and Pvl 86 (spheres) are shown. (B) Ribbon diagram of heterodimeric CGP-TbAdoMetDC (β-/α-chains in teal/sky blue, CGP as purple sticks). (C) Surface representation of (A). (D) Surface representation of (B). Residues positioned N-terminal of P31 were not used in surface calculations.
+
+![Video 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-media1.mp4.jpg)
+
+**Video 1.:** The movie shows the changes within TbAdoMetDC from its confirmation as a TbAdoMetDCΔ26 monomer to the CGP-bound TbAdoMetDC/prozyme heterodimer. TbAdoMetDC is colored by chain (β in pink, α in beige, prozyme in yellow). The ribbon representation is based on the monomer secondary structure assignment. Key residues are shown: F28 (pink sticks) interacts with Y243 (beige sticks) in the monomer and forms the CGP (purple sticks) binding site in the heterodimer; D169 (beige spheres) interacts with H172 (beige spheres) in the monomer and moves 14 Å in the heterodimer to form new interactions with Y152', K156', H163' (yellow sticks); G30-P31 (pink spheres) forms cis-peptidyl bond in the monomer that trans-isomerizes in the heterodimer; W137 (orange spheres) is part of the β6-h8 connector (orange) that is partially disordered and blocks the h1 binding pocket in the monomer while repositioning and becoming structured in the heterodimer; F163 and F165 (cyan spheres) and F174, Y176 (green spheres) are residues on β7 and β8 strands, respectively, that flip from one surface of the β-strands in the monomer to the opposite surface in a heterodimer; pyruvoyl group (beige spheres) is only shown for the heterodimer. The morph and the movie were generated with PyMOL.
 
 Firstly, in the TbAdoMetDC/prozyme heterodimer, the autoinhibitory residues (S27-G30) have been displaced from the active site, which relieves the autoinhibition and positions F28 to form the catalytically competent ligand-binding site (Figure 4A,B). This movement is facilitated by cis-to-trans isomerization of P31. The TbAdoMetDC N-terminal α-helix (h1, residues S7-R19) then docks into the heterodimer interface stabilizing the open conformation of the active site (Figures 3A, 4A and 5A).
 
@@ -101,55 +364,55 @@ In the TbAdoMetDC monomer structure the backbone torsion angels for I168 are in 
 
 Finally, the formation of the h1 binding site requires that the TbAdoMetDC loop between β6 and h8 (H130-E138), which sterically blocks the h1 binding pocket in the inactive monomer, be repositioned (Figure 4D, Figure 4—figure supplement 2 and Video 1). Together with adjacent disordered residues (Q139-P142) this loop reorganizes in the heterodimer to form two short 310-helices (h6: P136-E138 and h7: G141-L144) that align with similar helices in HsAdoMetDC (Figure 6—figure supplement 1). Residues in the loop migrate over 15 Å and new interactions between h6 and h1 are formed. These include an edge-to-face stacking interaction between W137 and F20, while repositioning of h8 allows the formation of an H-bond between R154 and D171’, likely stabilizing the dimer interface. Coupled with these changes E29 from the autoinhibitory sequence undergoes a 5 Å shift to H-bond with the backbones of S134 and F135 (Figure 4D).
 
-## The h1 binding site in TbAdoMetDC/prozyme
+### The h1 binding site in TbAdoMetDC/prozyme
 
-A key feature of the mechanism is that the active conformation is stabilized by insertion of h1 helix into a largely buried pocket within the dimer interface (
+A key feature of the mechanism is that the active conformation is stabilized by insertion of h1 helix into a largely buried pocket within the dimer interface (Figure 5A–D). We previously showed that residues in the conserved trypanosomatid AdoMetDC N-terminus (L8, L10, M11, and M13) contributed to activation by prozyme and that the loss in activity of these mutants could be partially restored by putrescine (Velez et al., 2013). Extensive interactions are formed between these N-terminal TbAdoMetDC residues and amino acids in both TbAdoMetDC and prozyme (Figure 5B,D). Furthermore, the active conformation is likely stabilized and perhaps regulated by pathway metabolites since putrescine is bound in the h1 helix pocket forming H-bonds with both h1 residues and residues forming the h1 binding pocket, such as H172 (Figure 5C, Figure 3—figure supplement 2D,E). The putrescine site is formed upon the restructuring of residues between β6 and h8 upon heterodimerization (Figures 3A and 5), thus it is not present in the inactive monomer.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig5-v2.jpg)
 
-**Figure 5.:** TbAdoMetDC/prozyme structure.(A) Surface overview of CGP-TbAdoMetDC/prozyme. Color coding is as follows TbAdoMetDC: (teal (β) and sky blue (α)), prozyme (yellow), CGP (purple) and Put (orange). (B) Top view of the h1 binding site. (C) TbAdoMetDC h1 Put-binding site showing the 4 Å shell. Dashed lines represent H-bonds as defined by distances <3.3 Å. (D) Select h1 interactions (4 Å shell) with TbAdoMetDC or prozyme residues (shown as spheres). (E) Steady-state kinetic analysis of TbAdoMetDC and prozyme mutants for data collected ±4 mM putrescine. The enzyme rates in triplicates over the range of AdoMet concentrations used in Michaelis-Menten analysis are in Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20198.01410.7554/eLife.20198.015Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.20198.015
+**Figure 5.:** (A) Surface overview of CGP-TbAdoMetDC/prozyme. Color coding is as follows TbAdoMetDC: (teal (β) and sky blue (α)), prozyme (yellow), CGP (purple) and Put (orange). (B) Top view of the h1 binding site. (C) TbAdoMetDC h1 Put-binding site showing the 4 Å shell. Dashed lines represent H-bonds as defined by distances <3.3 Å. (D) Select h1 interactions (4 Å shell) with TbAdoMetDC or prozyme residues (shown as spheres). (E) Steady-state kinetic analysis of TbAdoMetDC and prozyme mutants for data collected ±4 mM putrescine. The enzyme rates in triplicates over the range of AdoMet concentrations used in Michaelis-Menten analysis are in Figure 5—source data 1.
 
 A subset of the h1 helix interactions were evaluated by site-directed mutagenesis, as was the contribution of H172 (h1 putrescine binding site). TbAdoMetDC-W137A/M146A and prozyme-M148'A/Y152'A mutants formed heterodimers with their wild-type counterparts, but were significantly impaired in their ability to be activated by heterodimerization (Table 1 and Figure 5E). The quadruple mutant containing TbAdoMetDC-W137A/M146A and prozyme-M148’A/Y152’A was further destabilized and could not be copurified as a complex. These data support a role for these residues in the prozyme activation mechanism. H172A also formed a heterodimer but in contrast to the other mutants it had near wild-type activity in the presence of putrescine (Table 1 and Figure 5E). All three mutants were significantly more impaired in their ability to be activated by heterodimerization in the absence of putrescine, suggesting that putrescine plays a role in stabilizing the active conformation and was potentially an important contributor to the evolutionary path leading to the allosteric mechanism.
 
-## β-sheet putrescine binding sites in TbAdoMetDC/prozyme
+### β-sheet putrescine binding sites in TbAdoMetDC/prozyme
 
-In addition to the novel putrescine binding site in the h1 pocket, we identified putrescine or putrescine analog binding sites between the β-sheets of the αββα sandwich that were occupied in both heterodimeric structures and in both
+In addition to the novel putrescine binding site in the h1 pocket, we identified putrescine or putrescine analog binding sites between the β-sheets of the αββα sandwich that were occupied in both heterodimeric structures and in both TbAdoMetDC and prozyme subunits. As described above the data supported placement of a buffer molecule B3P into the site in TbAdoMetDC while putrescine was modeled into the prozyme site (Figure 6A–C and Figure 3—figure supplement 2). This ligand-binding site is at the identical position in the two paralogous subunits. Important conserved contacts with ligand are made by TbAdoMetDC/prozyme’ E36/E42’, W125/W126’, D189/D195’, and D306/282’. However a number of amino acid residues (e.g. S187/E193’ and S185/R191’) differ between them and these differences enlarge the binding pocket in TbAdoMetDC compared to prozyme. The binding of B3P is likely an artifact of the crystallization conditions and suggests that the larger pocket observed in TbAdoMetDC has lower affinity for putrescine than the corresponding pocket in prozyme, thus allowing putrescine to be outcompeted by the buffer present in 25-fold excess over putrescine in the crystallization drop (50 mM B3P versus 2 mM putrescine).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig6-v2.jpg)
 
-**Figure 6.:** TbAdoMetDC/prozyme heterodimer structure.(A) Overlay of CGP-TbAdoMetDC β/α (teal/sky blue, CGP 40215 (TbCGP) and B3P in purple), prozyme (yellow, TbPut’ in orange) and HsAdoMetDC (3DZ6) β/α (dark green/light green, HsPut in green) structures viewed from the dimer interface. The schematic above the figure depicts color codes for the various chains. (B–C) Limited 4 Å shell showing the B3P- and putrescine-binding sites in TbAdoMetDC (B) and prozyme (C). (D) Overlay of the TbAdoMetDC CGP-binding site with HsAdoMetDC showing select residues in the 4 Å shell. H-bond interactions (distance < 3.3 Å) are shown by dashed lines. The electron density supporting ligand placement is shown in Figure 3—figure supplement 2, the complete structural alignment of Hs and Tb AdoMetDCs in Figure 6—figure supplement 1 and the comparison of the unliganded and liganded TbAdoMetDC structures in Figure 6—figure supplement 2.DOI: http://dx.doi.org/10.7554/eLife.20198.016
+**Figure 6.:** (A) Overlay of CGP-TbAdoMetDC β/α (teal/sky blue, CGP 40215 (TbCGP) and B3P in purple), prozyme (yellow, TbPut’ in orange) and HsAdoMetDC (3DZ6) β/α (dark green/light green, HsPut in green) structures viewed from the dimer interface. The schematic above the figure depicts color codes for the various chains. (B–C) Limited 4 Å shell showing the B3P- and putrescine-binding sites in TbAdoMetDC (B) and prozyme (C). (D) Overlay of the TbAdoMetDC CGP-binding site with HsAdoMetDC showing select residues in the 4 Å shell. H-bond interactions (distance < 3.3 Å) are shown by dashed lines. The electron density supporting ligand placement is shown in Figure 3—figure supplement 2, the complete structural alignment of Hs and Tb AdoMetDCs in Figure 6—figure supplement 1 and the comparison of the unliganded and liganded TbAdoMetDC structures in Figure 6—figure supplement 2.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** TbAdoMetDC/prozyme and HsAdoMetDC dimer.Alignment of TbAdoMetDC/prozyme CGP 40215-bound heterodimer (AdoMetDC β/α (teal/sky blue), prozyme (yellow)) with HsAdoMetDC 1i7M (β/α (bright green/light green). TbAdoMetDC pyruvoyl (TbPvl 86) is shown as dots. HsAdoMetDC ligands AAH (lines) and putrescine (spheres) are shown in green, TbAdoMetDC ligands (CGP and B3P) are shown in purple and Put is shown in tan, as is prozyme Put'. AdoMetDC subunits aligned with an RMSD of 1.6 Å over 290 Cα atoms.DOI: http://dx.doi.org/10.7554/eLife.20198.017
+**Figure 6—figure supplement 1.:** Alignment of TbAdoMetDC/prozyme CGP 40215-bound heterodimer (AdoMetDC β/α (teal/sky blue), prozyme (yellow)) with HsAdoMetDC 1i7M (β/α (bright green/light green). TbAdoMetDC pyruvoyl (TbPvl 86) is shown as dots. HsAdoMetDC ligands AAH (lines) and putrescine (spheres) are shown in green, TbAdoMetDC ligands (CGP and B3P) are shown in purple and Put is shown in tan, as is prozyme Put'. AdoMetDC subunits aligned with an RMSD of 1.6 Å over 290 Cα atoms.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** TbAdoMetDC/prozyme active site.Alignment of the AdoMetDC/prozyme apo structure (tan) with the CGP-bound structure (β/α in teal/sky blue) showing the active site region.DOI: http://dx.doi.org/10.7554/eLife.20198.018
+**Figure 6—figure supplement 2.:** Alignment of the AdoMetDC/prozyme apo structure (tan) with the CGP-bound structure (β/α in teal/sky blue) showing the active site region.
 
 The TbAdoMetDC and prozyme B3P/putrescine binding sites are adjacent to the putrescine binding site in the human structure, suggesting a similar role in β-sheet stabilization (Bale and Ealick, 2010). However, the HsAdoMetDC site is farther from the surface and only shares two common residues with TbAdoMetDC/prozyme (HsD174/TbD189/prozymeD195’ and HsE15/TbE36/prozymeE42') (Figure 6A and Supplementary file 2). The location of the putrescine-binding site in TbAdoMetDC is supported by our previously reported mutagenesis data on T. cruzi AdoMetDC (low activity conformation) (Beswick et al., 2006; Clyne et al., 2002). These studies showed that D189 was a key determinant of putrescine binding and that putrescine binding could be monitored by tryptophan fluorescence, consistent with the presence of W125 in the pocket. These data support the hypothesis that the natural ligand for the TbAdoMetDC site is also putrescine (despite the presence of B3P in the pocket in our structures). However, the finding that the TbAdoMetDC binding site can accommodate a molecule significantly larger than putrescine shows it remains possible that the enzyme is regulated by binding to an unidentified metabolite.
 
-## TbAdoMetDC/prozyme active site: CGP 40215 active site interactions
+### TbAdoMetDC/prozyme active site: CGP 40215 active site interactions
 
 Comparison of CGP-TbAdoMetDC/prozyme heterodimer with the apo-TbAdoMetDC/prozyme structure shows that conformational changes upon ligand binding are limited to the movement of a couple of residues in the flexible connector arm (e.g. R26) adjacent to h1 and the active site (Figure 6—figure supplement 2). In the presence of ligand R26 repositions to form an interaction with the π electrons in the benzamidine ring of the inhibitor. CGP binds in the TbAdoMetDC active site with one amidine group buried 3.6 Å above the active site pyruvoyl group (Figure 6D and Figure 3—figure supplement 2B). CGP forms H-bonds with the backbone carbonyl of L83, the side chain hydroxyls of S249 and Y243, and with C100, suggesting C100 may be unprotonated leading to formation of an ion pair with the amidine of the inhibitor. The buried benzyl ring is sandwiched between Y243 and F28 forming π-π stacking interactions with the former and the guanidine group nitrogens (N01 and N03) form a bidentate H-bond with E266. The amidine of the second benzamidine group is solvent exposed. The fully activated T. brucei enzyme has a conformation and active site structure similar to the human enzyme (Figure 6—figure supplement 1) however two residues within the 4 Å CGP 402015 inhibitor contacting surface differ between the human and T. brucei structures (TbR26/HsH5 and TbY243/HsF223) (Figure 6D). Additionally, substitution of TbC269 for HsF250 leads to a less restricted binding pocket in the T. brucei enzyme.
 
-## Evidence for allosteric regulation of homodimeric AdoMetDCs from other species
+### Evidence for allosteric regulation of homodimeric AdoMetDCs from other species
 
-The monomeric structure of eukaryotic AdoMetDC is an αββα sandwich that formed from the fusion of two smaller bacterial AdoMetDC proteins comprised of αβ half sandwiches (
+The monomeric structure of eukaryotic AdoMetDC is an αββα sandwich that formed from the fusion of two smaller bacterial AdoMetDC proteins comprised of αβ half sandwiches (Bale and Ealick, 2010). Additionally the eukaryotic enzymes contain a dimerization domain that is not observed in the bacterial enzymes (Figure 7). This domain is split between the two central β-sheets suggesting it was acquired prior to the fusion of the αβ half sandwiches. Most characterized eukaryotic AdoMetDC enzymes are dimers, although the plant enzyme lost the ability to dimerize and unlike the human enzyme does not require putrescine to stimulate processing or activity (Bale and Ealick, 2010). Within this complex evolutionary background, the trypanosomatids underwent a gene duplication event leading to the prozyme regulatory mechanism. Though prozyme is only found in the trypanosomatids we sought to determine if the potential for AdoMetDC to be allosterically regulated arose only in the trypanosomatid lineage or whether it was an earlier invention of the AdoMetDC enzyme family. By combining structural insight into the prozyme regulatory mechanism with a phylogenetic analysis of the enzyme family, we sought to find evidence for coevolution of residues involved in the activation mechanism and thus to determine if aspects of the allosteric regulatory mechanism were conserved in other eukaryotic AdoMetDCs. Through this analysis we then hoped to be able to generate a model for how the complex allosteric control of the trypanosomatid AdoMetDC was able to evolve in a stepwise manner.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig7-v2.jpg)
 
-**Figure 7.:** The diagram depicts eukaryotic AdoMetDC enzymes evolving from their bacterial counterparts by extension, gene duplication and fusion. Two bacterial half-enzymes (lower left, PDB 3iwc) form an αββα sandwich through dimerization of the β-sheet faces, with interacting chains depicted in cyan and green cartoon and active site pyruvates in red stick. The primary sequence diagram (same colors) is depicted below. The primary sequence diagram illustrates a presumed intermediate with extended C-terminal αββ extensions (pink). The duplicated and fused eukaryotic enzymes adopt the same αββα sandwich fold (now within a monomer), with extension (pink) dictating edge-to-edge dimerization of the β-sheets (Bale and Ealick, 2010). Trypanosomatid enzymes (represented by the T. brucei structure from this paper) undergo a second gene duplication, with one (prozyme in gray, lower right) losing catalytic activity. Prozyme activates the catalytic enzyme (colored cartoon, lower right) through dimerization and cis-trans isomerization of a conserved proline (P31, magenta sphere) with movement of N-terminal helix (purple). Additionally, protist and fungal sequences retain the conserved proline (magenta lines in the tree with primary sequence diagrams showing the location of the proline (magenta P)). Plant sequences (illustrated by PDB structure 1mhm) have lost the proline, N-terminal helix and dimerization; animal sequences (illustrated by PDB structure 1i7b) retain a dimeric structure of two active chains without proline and N-terminus (depicted in colored cartoon).DOI: http://dx.doi.org/10.7554/eLife.20198.019
+**Figure 7.:** The diagram depicts eukaryotic AdoMetDC enzymes evolving from their bacterial counterparts by extension, gene duplication and fusion. Two bacterial half-enzymes (lower left, PDB 3iwc) form an αββα sandwich through dimerization of the β-sheet faces, with interacting chains depicted in cyan and green cartoon and active site pyruvates in red stick. The primary sequence diagram (same colors) is depicted below. The primary sequence diagram illustrates a presumed intermediate with extended C-terminal αββ extensions (pink). The duplicated and fused eukaryotic enzymes adopt the same αββα sandwich fold (now within a monomer), with extension (pink) dictating edge-to-edge dimerization of the β-sheets (Bale and Ealick, 2010). Trypanosomatid enzymes (represented by the T. brucei structure from this paper) undergo a second gene duplication, with one (prozyme in gray, lower right) losing catalytic activity. Prozyme activates the catalytic enzyme (colored cartoon, lower right) through dimerization and cis-trans isomerization of a conserved proline (P31, magenta sphere) with movement of N-terminal helix (purple). Additionally, protist and fungal sequences retain the conserved proline (magenta lines in the tree with primary sequence diagrams showing the location of the proline (magenta P)). Plant sequences (illustrated by PDB structure 1mhm) have lost the proline, N-terminal helix and dimerization; animal sequences (illustrated by PDB structure 1i7b) retain a dimeric structure of two active chains without proline and N-terminus (depicted in colored cartoon).
 
 Sequence analysis of the AdoMetDC family shows that a proline residue equivalent to TbAdoMetDC P31 is present in all fungal AdoMetDCs and in diverse single-celled eukaryotes including Naegleria (Excavata) and Dictyostelium (Amoebozoa) but not in animals or plants (Supplementary file 2). Furthermore, P31 appears to have coevolved with the presence of an extended N-terminus, relative to mammalian and plant AdoMetDCs and with several residues that play roles in the prozyme allosteric activation mechanism (Figure 7). These include H172 (h1 putrescine binding site), T104 (packs against the 310-helix h6), N132 (a part of β6-h8 connector loop and h1 putrescine binding site), and C269 (within 4 Å of the autoinhibitory sequence F28). Coevolution of H172 with P31 extends throughout the fungal sequences, while T104, N132, and C269 are found in a more limited subset of fungal and protist sequences.
 
 ## Discussion
 
-The
+The TbAdoMetDC/prozyme heterodimer structure provides insight into how an inactive pseudoenzyme can regulate its paralogous enzyme. We have shown that prozyme activates trypanosomatid AdoMetDC through an allosteric mechanism involving extensive conformational changes (Figure 8). TbAdoMetDC is maintained in the low activity state in the absence of prozyme by autoinhibitory residues positioned in the active site by the cis-conformation of P31. Upon formation of the heterodimer, P31 undergoes a cis-to-trans isomerization, and helix h1 is docked into the dimer interface. This isomerization positions the autoinhibitory residues into the open configuration of the substrate-binding site leading to enzyme activation. Reorganization of the TbAdoMetDC pyruvoyl β-sheet and nearby loops is required to form the h1 binding site. The buried surface that is created by the prozyme-induced conformational changes leads to structural stabilization of the alternative conformation and to expanded biological function through enzyme activation. Left unresolved is the question of whether or not these conformational changes occur by a sequential or a concerted mechanism. While our observance of the autoinhibitory sequence in the inactive monomer was in the context of an N-terminal truncation our conclusion that the inactivity of full-length monomeric TbAdoMetDC is caused by auto inhibition is supported by the following observations: (1) the autoinhibitory sequence makes a number of specific interactions with residues in the active site expected to stabilize the conformation, (2) biochemical data shows that the N-terminus is necessary for the activation mechanism, (3) both P31 and the N-terminal amino acid sequence are conserved in the trypanosomatids and, (4) the highly coupled nature of the observed conformational changes links displacement of the autoinhibitory sequence to the structural reorganization that forms the h1 binding site.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/20198/elife-20198-fig8-v2.jpg)
 
-**Figure 8.:** TbAdoMetDC enzyme activation.The model depicts a logical step-wise process assuming that the formation of the h1 binding site precedes insertion of the helix into the interface, but current data do not distinguish between a sequential versus a concerted activation mechanism and the ordering of events is hypothetical. (A) The inactive TbAdoMetDC monomer is composed of two β-sheets: pyruvoyl (blue) and scaffolding (light blue). The active site pyruvoyl residue (Pvl86, star) is blocked by the inhibitory sequence (S27–G30), which is oriented into the active site by the cis configuration of P31. This autoinhibitory closed confirmation is stabilized by π-π stacking between F28 (purple) and Y243 (blue). Residues N-terminal of S27, including helix h1 (purple rectangle), were not present in the monomer construct and their position in the diagram is hypothetical. (B) Binding of prozyme (yellow/light yellow) to AdoMetDC is nucleated by formation of the H-bond network between the two scaffolding sheets leading to formation of a continuous inter-subunit β-sheet that serves as a platform for the following conformational changes: (a) slipping of the interface strands β7 and β8 relative to β6, which results in flipping of their side chains from one surface to the other; (b) repositioning and elongation of the β7-β8 loop that forms the back of the h1 binding site, stabilized in this confirmation by interaction across the interface with prozyme; and (c) disordered-to-ordered transition and movement of the β6-h8 loop (H130-L144, orange) that leads to formation of the h1 binding pocket. (C) Upon the formation of the h1 binding pocket, (a) cis-to-trans isomerization of P31 displaces the autoinhibitory sequence from the active site and the open active site conformation is stabilized by (b) docking of the h1 helix at the dimer interface. (D) The active TbAdoMetDC/prozyme dimer is capable of binding ligands in the open active site, which leads to ~1000 fold increase in rates of AdoMet decarboxylation.DOI: http://dx.doi.org/10.7554/eLife.20198.020
+**Figure 8.:** The model depicts a logical step-wise process assuming that the formation of the h1 binding site precedes insertion of the helix into the interface, but current data do not distinguish between a sequential versus a concerted activation mechanism and the ordering of events is hypothetical. (A) The inactive TbAdoMetDC monomer is composed of two β-sheets: pyruvoyl (blue) and scaffolding (light blue). The active site pyruvoyl residue (Pvl86, star) is blocked by the inhibitory sequence (S27–G30), which is oriented into the active site by the cis configuration of P31. This autoinhibitory closed confirmation is stabilized by π-π stacking between F28 (purple) and Y243 (blue). Residues N-terminal of S27, including helix h1 (purple rectangle), were not present in the monomer construct and their position in the diagram is hypothetical. (B) Binding of prozyme (yellow/light yellow) to AdoMetDC is nucleated by formation of the H-bond network between the two scaffolding sheets leading to formation of a continuous inter-subunit β-sheet that serves as a platform for the following conformational changes: (a) slipping of the interface strands β7 and β8 relative to β6, which results in flipping of their side chains from one surface to the other; (b) repositioning and elongation of the β7-β8 loop that forms the back of the h1 binding site, stabilized in this confirmation by interaction across the interface with prozyme; and (c) disordered-to-ordered transition and movement of the β6-h8 loop (H130-L144, orange) that leads to formation of the h1 binding pocket. (C) Upon the formation of the h1 binding pocket, (a) cis-to-trans isomerization of P31 displaces the autoinhibitory sequence from the active site and the open active site conformation is stabilized by (b) docking of the h1 helix at the dimer interface. (D) The active TbAdoMetDC/prozyme dimer is capable of binding ligands in the open active site, which leads to ~1000 fold increase in rates of AdoMet decarboxylation.
 
 Proteins that undergo structural transitions have several common features including the existence of conformers that have flexible regions or that exist in a state of diminished stability (Bryan and Orban, 2010). In the case of TbAdoMetDC we identified several regions of the monomeric structure that are either in strained conformations or disordered, and which are likely to play key roles in promoting the observed conformational changes. These include the cis-P31 peptide bond that isomerizes to form the more energetically favorable trans-P31, disordered surface loops that undergo a disordered-to-ordered transition, and β-strands that slip and flip during the monomer to heterodimer transition to form new favorable interactions. Within these β-strands one residue (I168) in the monomeric structure is in the disallowed region of the Ramachandran plot, suggesting that relief of the strain in the I168 backbone may also contribute energetically to the conformational reorganization. Backbone strain has previously been associated with allosteric control of catalytic activity, though has most often been found in active site residues (Jia et al., 1993; Oruganty et al., 2013). Interestingly it has also been previously noted that cis-trans proline isomerization is often associated with the evolution of new function when, like in the case of TbAdoMetDC, the new function uses the isomerization to drive a local conformational change (Joseph et al., 2012).
 
@@ -167,19 +430,19 @@ The structural details of the trypanosomatid AdoMetDC regulatory mechanism may b
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 General reagents and PCR primers were purchased from Sigma-Aldrich (St. Louis, MO). S-Adenosyl-L-methionine (AdoMet) sulfate p-toluenesulfonate salt was purchased from Affymetrix (Santa Clara, CA). S-Adenosyl-L-[carboxy-14C]-methionine (14C-AdoMet) was purchased from American Radiolabeled Chemicals (St. Louis, MO). Restriction enzymes and T4 DNA ligase were purchased from New England Biolabs (Ipswich, MA). S-adenosylmethionine decarboxylase inhibitor CGP 40215 (3-((E)-(((E)-amino(2-((E)−3-carbamimidoylbenzylidene)hydrazinyl)methylene)hydrazono)methyl)-benzimidamide) was a gift from Novartis (Basel, Switzerland).
 
-## Methods
+### Methods
 
-## Generation of E. coli wild-type expression constructs
+#### Generation of E. coli wild-type expression constructs
 
 The TbAdoMetDC open reading frame (ORF) was codon-optimized for E. coli and cloned into the pET28a vector by GenScript (Piscataway, New Jersey). For single-subunit expression, TbAdoMetDC was cloned into the pET28bSmt3 vector, a variant of pE-SUMOpro vector (LifeSensors, Malvern, PA) as described in (Mossessova and Lima, 2000). The resulting construct pET28bSmt3-TbAdoMetDC encoded TbAdoMetDC N-terminally fused with His6-tagged Saccharomyces cerevisiae SUMO protein (NP_010798.1), with a serine residue following the Ulp1 protease site and immediately before the first methionine residue of the TbAdoMetDC sequence.
 
 The TbAdoMetDC/prozyme heterodimer coexpression construct was generated in Novagen pETDuet-1 vector (EMD Millipore, Billerica, MA). Prozyme open reading frame (ORF) was PCR-amplified from T. brucei Lister 427 genomic DNA with primers p1 and p2 (primers are listed in Supplementary file 1) and His6-SUMO-tagged TbAdoMetDC ORF was amplified from pET28bSmt3-TbAdoMetDC (above) with primers p3 and p4. PCR products were then sequentially cloned into the pETDuet-1 by ligation-independent cloning using the In-Fusion LIC kit (Clontech Laboratories, Mountain View, CA) per the manufacturer's instructions. The prozyme ORF was inserted first into the NdeI- and XhoI-digested pETDuet-1 vector followed by the His6-SUMO-tagged TbAdoMetDC ORF into NcoI/HindIII-digested pETDuet-1-prozyme construct. The resulting pETDuet-1-Smt3-TbAdoMetDC-prozyme construct encoded the monocistronically transcribed tagless prozyme and gene-optimized TbAdoMetDC N-terminally fused with His6-SUMO.
 
-## Site-directed mutagenesis and deletion constructs
+#### Site-directed mutagenesis and deletion constructs
 
 N-terminally truncated TbAdoMetDCΔ26 was PCR amplified from the pET28bSmt3-TbAdoMetDC with primers p12 and p10 containing BamHI and XhoI endonuclease restriction sites, respectively. The amplified BamHI/XhoI-digested insert was cloned into BamH1/XhoI-digested pET28bSmt3. The resultant construct pET28bSmt3-TbAdoMetDC△26 encodes S27 of TbAdoMetDC immediately after the Ulp1 site. The TbAdoMetDCΔ26 was also cloned using BamHI-containing p12 and HindIII-containing p11 primers into BamHI/HindIII-digested pETDuet-1-Smt3-TbAdoMetDC-prozyme construct for expression of the truncated heterodimer.
 
@@ -189,15 +452,15 @@ TbAdoMetDC-W137A/M146A and prozyme-M148A/Y152A ORFs were generated by GenScript 
 
 All DNA constructs were verified by sequencing of the TbAdoMetDC and prozyme ORFs (UT Southwestern Sanger Sequencing Core). The constructs were propagated in Invitrogen One Shot TOP10 (Thermo Fisher Scientific) or Stellar (Clontech Laboratories) cells.
 
-## Protein purification
+#### Protein purification
 
 TbAdoMetDC, TbAdoMetDC/prozyme, and mutant enzymes were expressed from corresponding constructs in Novagen BL21(DE3)pLysS cells (EMD Millipore). Expression was induced by the addition of IPTG (0.6 mM) at OD600nm = 0.5–0.6, and cells were grown for 20 hr at 20°C. Cell pellets were harvested by centrifugation at 3500 x g, resuspended in buffer A (50 mM HEPES, pH 8.2, 300 mM NaCl, 10 mM imidazole, and 15% (v/v) glycerol) (15 mL per 1 L of culture) supplemented with protease inhibitors (1 µg/mL leupeptin, 2 µg/mL antipain, 10 µg/mL benzamidine, 1 µg/mL pepstatin, 1 µg/mL chymostatin, and 2 mM phenylmethylsulfonyl fluoride (PMSF)), and passed twice through the EmulsiFlex-C5 cell disruptor (Avestin, Ottawa, Canada) at 10,000 psi. Lysates were cleared by centrifugation at 56,000 x g for 3 hr at 4°C, and protein was purified by affinity chromatography using HiTrap Chelating HP columns on the ÄKTApurifier system (GE Healthcare Life Sciences, Pittsburgh, PA). After loading, the column was washed with buffer A, and protein was eluted in a gradient of imidazole from 10 to 200 mM over 25 column volumes. Protein-containing fractions were pooled and concentrated by ultrafiltration in Amicon Ultra-15 10,000 kDa NMWL centrifugal filters (EMD Millipore). To remove the His6-Smt3 tag, TbAdoMetDC (both the monomer and in complex with prozyme) was incubated with His6-Ulp1 (1 µg per 1 mg of protein, purified as described in [Velez et al., 2013]) for at least 2 hr at 4°C, sample was diluted 20-fold with buffer A and untagged protein was separated from tagged protein by passage through a HiTrap Chelating HP column equilibrated as above. Flow-through fractions were pooled and concentrated as described above. Proteins were further purified by HiLoad 16/60 Superdex 200 size-exclusion chromatography column (GE Healthcare Life Sciences) with buffer S (50 mM HEPES, pH 7.7, 50 mM NaCl) as a mobile phase. Protein purity was assessed by SDS-PAGE analysis. Protein concentrations were measured using Protein Assay Dye Reagent (Bio-Rad, Hercules, CA). Concentrated samples were flash-frozen in liquid nitrogen and stored at −80°C.
 
-## AdoMetDC 14C enzyme activity assay
+#### AdoMetDC 14C enzyme activity assay
 
 AdoMetDC activity was monitored under steady state conditions as previously described (Willert et al., 2007) by capturing 14CO2 released from the 14C-AdoMet substrate onto a barium carbonate soaked filter paper enclosed in a test tube at 37°C. Assay mix contained AdoMetDC (20–40 µM) or AdoMetDC/prozyme heterodimers (0.05–15 µM), 14C-AdoMet adjusted with unlabeled AdoMet to the specific activity of 2.5 or 5 µCi/µmol (50–1600 µM total substrate concentration) in buffer (50 mM HEPES, pH 7.2, 50 mM NaCl, 4 mM DTT, 0.25 mg/mL bovine serum albumin, and 0.005% (w/v) Nonidet P-40) in a final volume of 100 µL. Reactions were run in the presence (4 mM) or absence of putrescine. Enzymes were preincubated with buffer ± putrescine at 37°C for 2 hr prior to adding substrate and initiating the assay. Preincubation did not alter activity in the absence of putrescine, but allowed for measurement of maximum activity in the presence of putrescine. Substrate dose response data were fitted to the Michaelis-Menten model in Prism (GraphPad Software, La Jolla, CA) to determine the Michaelis constant, Km, and the turnover number, kcat, and catalytic efficiency reported as kcat/Km. The standard deviation for each parameter was also determined by GraphPad and all fits used triplicate data for each substrate concentration.
 
-## Protein crystallization and data collection
+#### Protein crystallization and data collection
 
 Crystallization of the TbAdoMetDCΔ26 monomer (10–20 mg/mL in buffer C: 50 mM HEPES, pH 7.2, 50 mM NaCl, 4 mM Tris(2-carboxyethyl)phosphine (TCEP), and 2 mM putrescine) was carried out using sitting drop vapor diffusion. Random crystallization screening was set up in 96-well CrystalMation Intelli-plates (Art Robbins Instruments, Sunnyvale, CA) on a Phoenix robotic liquid handler (Art Robbins Instruments), using equal volumes of reservoir and protein solutions with the following commercial 96-well crystallization suites: Index and PEG Rx (Hampton Research, Aliso Viejo, CA), Classics and PACT (Qiagen, Hilden, Germany), and JCSG+ and Structure1 and 2 (Molecular Dimensions, Newmarket, UK). Hexagonal rod crystals of TbAdoMetDCΔ26 appeared after two days of incubation at 20°C against a reservoir solution of 25% (w/v) PEG 3,350, 0.2 M ammonium acetate, and 0.1 M Bis-tris, pH 5.5. All crystals were flash-cooled in liquid nitrogen without additional cryoprotection.
 
@@ -207,7 +470,7 @@ In order to cocrystallize TbAdoMetDC/prozyme in complex with CGP 40215 inhibitor
 
 Native diffraction data were measured at 100 K at the Structural Biology Center (Beamline 19ID) at the Argonne National Laboratory. Data were reduced using the HKL software package (Minor et al., 2006).
 
-## Structure determination and model refinement
+#### Structure determination and model refinement
 
 Initial phases for TbAdoMetDCΔ26 were generated by molecular replacement using the program Phaser (McCoy et al., 2007) as implemented in the program suite Phenix (Adams et al., 2010), with a search model based on coordinates from human AdoMetDC (PDB access code 3EP9) (Bale et al., 2008). Automated model building via the AutoBuild routine (Terwilliger et al., 2008) in Phenix yielded a model that contained 68% of all residues. Alternating cycles of manual model building in Coot (Emsley et al., 2010) were followed by standard positional and anisotropic atomic displacement parameter (ADP) refinement in Phenix (Afonine et al., 2012). Residues with missing or poor electron density (139–142, 159–161, 180–188, and 357–370) were not built into the structure. Pyruvoyl was added to the model after the initial refinement and included in further refinement with geometry restraints generated in eLBOW (Moriarty et al., 2009).
 
@@ -217,6 +480,6 @@ The structure of TbAdoMetDC/prozyme heterodimer with bound CGP 40215 was solved 
 
 Refined structures were analyzed in MolProbity (Chen et al., 2010). Atomic representations were created using PyMOL Molecular Graphics System (Version 1.7, Schrödinger). Secondary structure in cartoon representations was assigned with DSSP (Kabsch and Sander, 1983) and visualized using the DSSP plugin for PyMOL (by Hongbo Zhu, 2011, BIOTEC, TU Dresden). Structures were aligned using TM-align and RMSD was calculated as described (Zhang and Skolnick, 2005). Buried surface areas were calculated using the PDBePISA web server (Krissinel and Henrick, 2007).
 
-## Sequence analysis
+#### Sequence analysis
 
 T. brucei prozyme protein sequence (XP_845564.1) was used to query the RefSeq_protein database with PSI-BLAST (Cameron et al., 2004) (default settings, 1000 maximum hits, 3 iterations) to identify AdoMetDC representatives (947 sequences). Identified sequences were submitted to batch CD-search (Marchler-Bauer et al., 2015) against the PFAM database to confirm the presence of an AdoMetDC domain (pfam01536) and were analyzed according to taxonomic groups using batch Entrez on the NCBI server. AdoMetDC sequences were distributed in animals (348), plants (302), fungi (164), protists (65), and bacteria (68). The eukaryotic AdoMetDC sequences were submitted to the MAFFT server for multiple sequence alignment (Katoh and Standley, 2013).

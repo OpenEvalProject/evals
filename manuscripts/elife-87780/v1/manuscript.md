@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/02693j602 Team Motivation Brain & Behavior, ICM – Brain and Spine Institute Paris France
-2. https://ror.org/051escj72 ISEM, Univ. Montpellier, IRD, EPHE Montpellier France
-3. https://ror.org/00c3ta789 UMR 7194 (HNHP), MNHN/CNRS/UPVD, Musée de l’Homme Paris France
-4. https://ror.org/02feahw73 UMR 7206 Eco-anthropologie, CNRS – MNHN – Univ. Paris Cité, Musée de l'Homme Paris France
-5. https://ror.org/001805t51 Department of African Zoology, Royal Museum for Central Africa Tervuren Belgium
-6. https://ror.org/01r9htc13 Université Libre de Bruxelles, Laboratory of Histology and Neuropathology Brussels Belgium
+1. Team Motivation Brain & Behavior, ICM – Brain and Spine Institute Paris France ([ROR:02693j602](https://ror.org/02693j602))
+2. ISEM, Univ. Montpellier, IRD, EPHE Montpellier France ([ROR:051escj72](https://ror.org/051escj72))
+3. UMR 7194 (HNHP), MNHN/CNRS/UPVD, Musée de l’Homme Paris France ([ROR:00c3ta789](https://ror.org/00c3ta789))
+4. UMR 7206 Eco-anthropologie, CNRS – MNHN – Univ. Paris Cité, Musée de l'Homme Paris France ([ROR:02feahw73](https://ror.org/02feahw73))
+5. Department of African Zoology, Royal Museum for Central Africa Tervuren Belgium ([ROR:001805t51](https://ror.org/001805t51))
+6. Université Libre de Bruxelles, Laboratory of Histology and Neuropathology Brussels Belgium ([ROR:01r9htc13](https://ror.org/01r9htc13))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ To address this question, we measured the volume of the two prefrontal regions o
 
 ## Results
 
-## Neuroanatomical measures
+### Neuroanatomical measures
 
 We measured the volume of the FP in 31 brains from 16 species. The boundaries of the FP (Figure 1) were chosen based on a combination of functional and anatomical criteria from the literature (see Materials and methods for details).
 
@@ -61,19 +61,121 @@ The average size of the regions of interest (whole brain, FP, and DLPFC) are sho
 
 **Figure 3.:** Each line provides the cumulated volumes of the dorso-lateral prefrontal cortex (DLPFC, green), the frontal pole (FP, gray), and the rest of the brain (ROB, blue), such that the size of each bar represents the whole brain volume. Note: for Homo sapiens, the bar has been truncated, since its value was out of scale with the other species.
 
-## Influence of socio-ecological variables on whole brain volume
+### Influence of socio-ecological variables on whole brain volume
 
 We used a model comparison approach to select the best combination of socio-ecological variables accounting for the variability in whole brain size across species using phylogenetic generalized least squares (PGLS). Details of the different models are provided in Supplementary file 1.
 
 The best model explaining the volume of the whole brain is the one that includes body mass, daily traveled distance, and population density. The values of the estimated coefficients are provided in Table 1. These three variables have a positive influence on the volume of the whole brain. Even if all three factors had a significant effect, their influence on the whole brain volume seemed to differ: there was an order of magnitude between the estimated beta (i.e. contribution) of body mass (0.47±0.15) and that of daily traveled distance (0.05±0.01). There was also an order of magnitude between the estimated beta of daily traveled distance and population density (0.007±0.003). Note that the standardized beta (see Materials and methods) is also greater for daily traveled distance than for population density (see Supplementary file 2).
 
+**Table 1.**
+ Estimated coefficients of socio-ecological variables for the whole brain volume.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>Beta (estimate)</th>
+      <th>Beta (std. error)</th>
+      <th>Standardized beta</th>
+      <th>t-Value</th>
+      <th>p- Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>4.26</td>
+      <td>0.24</td>
+      <td></td>
+      <td>17.8</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Body mass (log)</td>
+      <td>0.47</td>
+      <td>0.15</td>
+      <td>0.71</td>
+      <td>3.10</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Daily traveled distance</td>
+      <td>0.05</td>
+      <td>0.01</td>
+      <td>0.42</td>
+      <td>4.08</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Population density</td>
+      <td>0.007</td>
+      <td>0.003</td>
+      <td>0.35</td>
+      <td>2.35</td>
+      <td>0.036</td>
+    </tr>
+  </tbody>
+</table>
+
 We evaluated the robustness of the influence of these socio-ecological variables on whole brain volume using a ‘leave-one-out’ procedure. Thus, each model was tested 16 times (one per species removed) and we evaluated the reliability of each variable after each species was removed. The details of this analysis are provided in Supplementary file 3. The influence of body mass was very robust, in that it remained significant for all models where one species was removed. Daily traveled distance remained significant for all models but one, whereas population density lost significance (p>0.05) for four models where one species was removed, even if in all cases the estimated coefficient remained positive. Thus, the influence of body mass and daily traveled distance are very robust for the combination of species used for the analysis. It is less the case for population density, even if based on model comparison this variable plays a significant role in increasing the volume of the whole brain.
 
 In summary, this analysis indicates that the volume of the whole brain across primates is positively modulated by body mass, as well as social (population density) and ecological (daily traveled distance) variables. The weight of the ecological variable, however, seems to be slightly stronger and more reliable than the weight of the social variable.
 
-## Influence of socio-ecological variables on FP volume
+### Influence of socio-ecological variables on FP volume
 
 As for the whole brain, the best model accounting for the volume of the FP is the one that includes body mass, daily traveled distance, and population density. Details of the different models are provided in Supplementary file 1. The values of estimated coefficients, all positive, are provided in Table 2. Note that, as expected given the strong correlation between FP and whole brain volumes, including the whole brain volume as a covariate in the regression models canceled the effects of all other variables, such that only whole brain showed a significant effect.
+
+**Table 2.**
+ Estimated coefficients of socio-ecological variables for the frontal pole volume.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>Beta (estimate)</th>
+      <th>Beta (std. error)</th>
+      <th>Standardized beta</th>
+      <th>t-Value</th>
+      <th>p.-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>1.87</td>
+      <td>0.37</td>
+      <td></td>
+      <td>5.08</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Body mass (log)</td>
+      <td>0.69</td>
+      <td>0.23</td>
+      <td>0.66</td>
+      <td>2.96</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Daily traveled distance</td>
+      <td>0.07</td>
+      <td>0.02</td>
+      <td>0.36</td>
+      <td>3.62</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Population density</td>
+      <td>0.011</td>
+      <td>0.004</td>
+      <td>0.38</td>
+      <td>2.62</td>
+      <td>0.022</td>
+    </tr>
+  </tbody>
+</table>
 
 As for the whole brain, the largest effect is body mass (0.69±0.23), then daily traveled distance (0.07±0.02) and population density (0.011±0.004). By comparison with the whole brain, however, the coefficients for daily traveled distance and population density have the same order of magnitude such that their impact on the volume of the FP seems to be equivalent. Note that the standardized beta for daily traveled distance is smaller than for population density, whereas it was the opposite for the whole brain, i.e., bigger for daily traveled distance compared to population density.
 
@@ -83,9 +185,60 @@ As for the whole brain, we evaluated the reliability of the model’s variables 
 
 Altogether, these data indicate that the volume of the FP across primates is positively modulated by body mass as well as by both population density and daily traveled distance, in line with the idea that it is affected by both social and ecological components. By comparison with the whole brain, the relative influence of the social (population density) and ecological (daily traveled distance) variables are more balanced.
 
-## Influence of socio-ecological variables on DLPFC volume
+### Influence of socio-ecological variables on DLPFC volume
 
 As for the whole brain and the FP, the best model for the DLPFC is the one that includes body mass, daily traveled distance, and population density. Details of the different models are provided in Supplementary file 1. The values of estimated coefficients, all positive, are provided in Table 3. As it was the case for the FP, including the whole brain volume as a covariate in the regression models canceled the effects of all other variables, such that only whole brain showed a significant effect.
+
+**Table 3.**
+ Estimated coefficients of socio-ecological variables for the dorso-lateral prefrontal cortex (DLPFC) volume.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Predictor</th>
+      <th>Beta (estimate)</th>
+      <th>Beta (std. error)</th>
+      <th>Standardized beta</th>
+      <th>t-Value</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>2.78</td>
+      <td>0.28</td>
+      <td></td>
+      <td>9.99</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Body mass (log)</td>
+      <td>0.47</td>
+      <td>0.18</td>
+      <td>0.62</td>
+      <td>2.67</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Daily traveled distance</td>
+      <td>0.047</td>
+      <td>0.014</td>
+      <td>0.35</td>
+      <td>3.3</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Population density</td>
+      <td>0.006</td>
+      <td>0.003</td>
+      <td>0.30</td>
+      <td>2.01</td>
+      <td>0.067</td>
+    </tr>
+  </tbody>
+</table>
 
 As for the whole brain and the FP, the largest effect is body mass (0.47±0.18), followed by daily traveled distance (0.047±0.01). Even if the best model for DLPFC includes population density, its influence was very small (0.006±0.003) and failed to reach significance (p=0.067). The ‘leave-one-out’ procedure confirmed the reliability of the model for body mass (with no species causing that variable to lose significance when removed) and that of daily traveled distance (only one species causing that variable to lose significance when removed). The influence of population density only reached significance for two of the models where one species was removed, but it failed to reach significance for all other combinations tested (n=14), as it was the case for the original one with all 16 species. Details of this analysis can be found in Supplementary file 6. In other words, the relative weakness of the influence of population density compared to that of other variables is relatively reliable across the combinations of species used for the tests.
 
@@ -119,11 +272,11 @@ In conclusion, our results confirm that the size of specific brain regions can b
 
 ## Materials and methods
 
-## Sample
+### Sample
 
 Thirty-one brain magnetic resonance imaging (MRI) 3D reconstructions from 16 primate species (Ateles fusciceps, n=1; Cebus capucinus, n=1; Cercopithecus mitis, n=1; Gorilla gorilla, n=5; Gorilla beringei, n=1; H. sapiens, n=4; Hylobates lar, n=1; Lagothrix lagotricha, n=1; Lophocebus albigena, n=1; Macaca fascicularis, n=1; Macaca fuscata, n=4; Macaca mulatta, n=2; Pan troglodytes, n=5; Pan paniscus, n=1; Papio papio, n=1, Pongo pygmaeus, n=1) were used in this study. Japanese macaques (M. fuscata) and rhesus macaques (M. mulatta) were captive animals scanned at the National Institutes for Quantum and Radiological Science and Technology (Chiba, Japan) and at Brain and Spine Institute (Paris, France), respectively. P. troglodytes and G. gorilla brains came from the Muséum national d’Histoire naturelle (Paris, France). They had been collected between 1920 and 1970 and subsequently preserved in formalin solution. The P. paniscus and G. beringei brains came from the Royal Museum for Central Africa (RMCA) (Tervuren, Belgium) and the Royal Belgian Institute of Natural Sciences (Bruxelles, Belgium). All the Pan and Gorilla specimens have been scanned at University of Leuven (KUL). The brain scans A. fusciceps, C. mitis, and L. lagotricha were obtained from the Primate Brain Bank, NIN Utrecht University. Finally, the remaining species (C. capucinus, H. lar, L. albigena, P. pygmaeus, M. fascicularis, P. papio, and one specimen of H. sapiens) came from the brain catalogue website (https://braincatalogue.org), which gathers scans of specimens from the collections of the Muséum national d’Histoire naturelle (Paris). The three other H. sapiens brain scans were obtained from the Allen Institute (online brain atlas). All specimens were sexually mature at the time of scanning. The sexes of individuals were mostly unknown. Moreover, some specimens in the sample came from captivity. Thus, we neglected the effects of captivity and sex on brain/endocranium measurements, which were both shown to be very small compared to inter-species differences (Isler and van Schaik, 2012).
 
-## Processing of brain MRI and measurements
+### Processing of brain MRI and measurements
 
 Brain measurements (visualization, segmentation, and quantification of brain tissues volumes) were processed using Avizo v9.0 software. The whole brain volume was measured in order to facilitate comparisons with the literature. The cerebellum was excluded from all brain measurements, because it was missing on some of the MRI scans (gorilla brains). Whole brain segmentation was performed using the semi-automated tool in Avizo that enables to select a material or structure according to a specific gray-level threshold. It was however necessary to bring some manual corrections, e.g., when the brain had a similar gray-level than an adjacent tissue. Segmentations of the FP and the DLPFC were carried out manually with the brush tool, slice by slice of the MRI scan.
 
@@ -131,7 +284,7 @@ The FP is the most rostral part of the prefrontal cortex. Cytoarchitectonic stud
 
 Similarly, the DLPFC was measured by combining functional and anatomical data from the literature to identify reliable macroscopic landmarks (Levy and Goldman-Rakic, 2000; Passingham et al., 2012; Passingham and Sakai, 2004; Petrides et al., 2012; Sallet et al., 2013). Given the major difference in sulcal organization between monkeys and great apes, we used different landmarks, shown on Figure 2a and b. DLPFC comprises portions of middle frontal gyrus and superior frontal gyrus in great apes and lies in and around the principal sulcus in macaques. Then, the ventral limit was set as the fundus of the principal sulcus for monkeys, and the frontal inferior sulcus for apes and humans. The anterior limit of the DLPFC was defined as the posterior limit of the FP, which was the cingulate sulcus. For apes and humans, the posterior limit was defined as the precentral sulcus, whereas in monkeys it was defined as the end of the arcuate sulcus. Finally, the medial limit was designated as the inter-hemispheric sulcus.
 
-## Socio-ecological and phylogenetic data
+### Socio-ecological and phylogenetic data
 
 Eleven socio-ecological variables were selected for the analyses, gathered in different categories: body condition (body mass), diet (dietary quality index and tool use), movements and ranging behavior (daily traveled distance), social parameters (group size, population density, social system), and variables related to reproduction and life-history traits (mating system, mate guarding, seasonal breeding, and weaning age). Each variable was assessed based on the literature on wild populations, whenever possible, which was the case in a vast majority of cases (and otherwise specified, see below). We verified that these variables showed minimal correlation (see Supplementary file 7).
 
@@ -141,7 +294,7 @@ For group size and population density of H. sapiens, we took an average between 
 
 The phylogenetic tree was obtained from the 10ktrees website (https://10ktrees.nunn-lab.org/Primates/downloadTrees.php, version 3). This version (Arnold et al., 2010) provides a Bayesian inference of the primate phylogeny based on collected data for 11 mitochondrial and 6 autosomal genes from GenBank across 301 primate species.
 
-## Statistical analysis
+### Statistical analysis
 
 We used a PGLS approach to evaluate the joint influence of socio-ecological variables on the neuro-anatomical variability across species (Grafen, 1989). This approach allowed us to take into account the phylogenetic relation across species when evaluating the influence of socio-ecological variables on their neuroanatomy.
 

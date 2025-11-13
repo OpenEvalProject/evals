@@ -16,20 +16,20 @@
 
 ### Affiliations
 
-1. https://ror.org/052gg0110 Department of Earth Sciences, University of Oxford Oxford United Kingdom
-2. https://ror.org/04r659a56 Zoology Division, School of Environmental and Rural Sciences, University of New England Armidale Australia
-3. https://ror.org/01knv0402 Institute of Geology and Paleontology, Linyi University Linyi China
-4. https://ror.org/00mh9zx15 Field Museum of Natural History Chicago United States
-5. https://ror.org/034t30j35 Key Laboratory of Vertebrate Evolution and Human Origins, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China
+1. Department of Earth Sciences, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))
+2. Zoology Division, School of Environmental and Rural Sciences, University of New England Armidale Australia ([ROR:04r659a56](https://ror.org/04r659a56))
+3. Institute of Geology and Paleontology, Linyi University Linyi China ([ROR:01knv0402](https://ror.org/01knv0402))
+4. Field Museum of Natural History Chicago United States ([ROR:00mh9zx15](https://ror.org/00mh9zx15))
+5. Key Laboratory of Vertebrate Evolution and Human Origins, Institute of Vertebrate Paleontology and Paleoanthropology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
 6. Chinese Academy of Sciences Center for Excellence in Life and Paleoenvironment Beijing China
-7. https://ror.org/05j7fep28 Australian Centre for Neutron Scattering, Australian Nuclear Science and Technology Organisation Sydney Australia
+7. Australian Centre for Neutron Scattering, Australian Nuclear Science and Technology Organisation Sydney Australia ([ROR:05j7fep28](https://ror.org/05j7fep28))
 8. Shandong Tianyu Museum of Nature Linyi China
 
 † Corresponding author
 
 ## Abstract
 
-The Early Cretaceous diversification of birds was a major event in the history of terrestrial ecosystems, occurring during the earliest phase of the Cretaceous Terrestrial Revolution, long before the origin of the bird crown-group. Frugivorous birds play an important role in seed dispersal today. However, evidence of fruit consumption in early birds from outside the crown-group has been lacking. Jeholornis is one of the earliest-diverging birds, only slightly more crownward than Archaeopteryx , but its cranial anatomy has been poorly understood, limiting trophic information which may be gleaned from the skull. Originally hypothesised to be granivorous based on seeds preserved as gut contents, this interpretation has become controversial. We conducted high-resolution synchrotron tomography on an exquisitely preserved new skull of Jeholornis , revealing remarkable cranial plesiomorphies combined with a specialised rostrum. We use this to provide a near-complete cranial reconstruction of Jeholornis , and exclude the possibility that Jeholornis was granivorous, based on morphometric analyses of the mandible (3D) and cranium (2D), and comparisons with the 3D alimentary contents of extant birds. We show that Jeholornis provides the earliest evidence for fruit consumption in birds, and indicates that birds may have been recruited for seed dispersal during the earliest stages of the avian radiation. As mobile seed dispersers, early frugivorous birds could have expanded the scope for biotic dispersal in plants, and might therefore explain, at least in part, the subsequent evolutionary expansion of fruits, indicating a potential role of bird–plant interactions in the Cretaceous Terrestrial Revolution.
+The Early Cretaceous diversification of birds was a major event in the history of terrestrial ecosystems, occurring during the earliest phase of the Cretaceous Terrestrial Revolution, long before the origin of the bird crown-group. Frugivorous birds play an important role in seed dispersal today. However, evidence of fruit consumption in early birds from outside the crown-group has been lacking. Jeholornis is one of the earliest-diverging birds, only slightly more crownward than Archaeopteryx, but its cranial anatomy has been poorly understood, limiting trophic information which may be gleaned from the skull. Originally hypothesised to be granivorous based on seeds preserved as gut contents, this interpretation has become controversial. We conducted high-resolution synchrotron tomography on an exquisitely preserved new skull of Jeholornis, revealing remarkable cranial plesiomorphies combined with a specialised rostrum. We use this to provide a near-complete cranial reconstruction of Jeholornis, and exclude the possibility that Jeholornis was granivorous, based on morphometric analyses of the mandible (3D) and cranium (2D), and comparisons with the 3D alimentary contents of extant birds. We show that Jeholornis provides the earliest evidence for fruit consumption in birds, and indicates that birds may have been recruited for seed dispersal during the earliest stages of the avian radiation. As mobile seed dispersers, early frugivorous birds could have expanded the scope for biotic dispersal in plants, and might therefore explain, at least in part, the subsequent evolutionary expansion of fruits, indicating a potential role of bird–plant interactions in the Cretaceous Terrestrial Revolution.
 
 ## Introduction
 
@@ -41,9 +41,17 @@ Interpretations regarding diet in Jeholornis and other potentially granivorous e
 
 ## Results
 
-## Cranial anatomy
+### Cranial anatomy
 
 Jeholornis has been frequently studied and cited because of its key phylogenetic position, and many specimens are known. However, because specimens are often compressed, and are preserved in slabs, little unequivocal cranial information has been available (Lefèvre et al., 2014; O’Connor et al., 2012; O’Connor et al., 2018; O’Connor et al., 2013; Wang et al., 2020; Zheng et al., 2020; Zhou and Zhang, 2003; Zhou and Zhang, 2002). Our 3D reconstruction of the exquisitely preserved skull of Jeholornis STM 3–8 (Figure 1; Figure 1—figure supplement 1; for detailed taxonomic information see Supplementary Information) reveals that Jeholornis retains a plesiomorphic diapsid skull, and provides considerable new anatomical data.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left and (B) right views of the 3D reconstructed model of the skull. (C) Left and (D) ventral views of the reassembled 3D model of the skull. (E) Left and (F) ventral views of the 2D cranial reconstruction. (G) Photograph of the skull. (H) Dorsal view of the reassembled 3D model of the mandible. Abbreviations: 1. premaxilla; 2. nasal; 3. preorbital ossification; 4. lacrimal; 5. maxilla; 6. jugal; 7. quadratojugal; 8. frontal; 9. braincase; 10. squamosal; 11. postorbital; 12. scleral ring; 13. quadrate; 14. dentary; 15. surangular; 16. angular; 17. splenial; 18. vomer; 19. palatine; 20. pterygoid; 21. potential ectopterygoid. Different bones are indicated by different colours. Dashed lines indicate the elements not preserved but suspected to exist. Scale bar equals 5 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Scale bar equals 10 mm.
 
 Although an unfused postorbital was previously inferred based on the basal phylogenetic position of Jeholornis (Wang and Hu, 2017), STM 3–8 provides the first direct evidence of this. The postorbital is proportionally large with a well-developed jugal process that contacts the jugal, forming a robust, complete postorbital bar (Figure 1). This is a plesiomorphy shared with non-avian theropods and other stem birds including Archaeopteryx and Sapeornis (Hu et al., 2020a; Rauhut et al., 2018), contrasting with the reduced or absent postorbital bar in the Ornithothoraces including modern birds (Hu et al., 2020b). The squamosal possesses a postorbital process that likely contacted the postorbital to form the supratemporal arch. The ventral process of the squamosal is short and would not have contacted the quadratojugal. The squamosal of Jeholornis is remarkably anteroposteriorly broad even compared to that of Archaeopteryx (Rauhut, 2014; Rauhut et al., 2018). A complete bony upper temporal bar is supposed to exist based on the articular facet in the postorbital, while this bar is broken and probably linked by ligament in Late Cretaceous bird Ichthyornis (Field et al., 2018).
 
@@ -51,11 +59,27 @@ The palatal complex is nearly completely preserved, including the palatine, pter
 
 While the temporal and palatal regions retain plesiomorphies, the rostrum of Jeholornis is heavily modified. The new specimen reveals that its premaxillae corpora are fused while the frontal processes remain separate. Rostral fusion of the premaxillae is also present in extant birds, confuciusornithiforms and several enantiornithines for example Linyiornis and Shangyang (Wang and Zhou, 2019; Wang et al., 2016). Its occurrence in Jeholornis indicates that rostral fusion of premaxillae evolved phylogenetically deeper among birds than previously thought. Jeholornis also shows dental reduction, with an edentulous premaxilla, two rostrally restricted maxillary teeth and three extremely tiny teeth in the dentary (O’Connor and Zhou, 2020; Zhou and Zhang, 2002; Figure 1).
 
-## GMM analyses
+#### GMM analyses
 
 We digitally reassembled the cranium and mandible of Jeholornis STM 3–8, producing 2D cranial and 3D mandible reconstructions (Figure 1). These were included in a 3D GMM analysis of the mandible and a 2D analysis of the cranium of extant birds and select extinct pennaraptorans (for landmark definitions see Figure 2—figure supplement 1 and Figure 2—source data 1, Figure 2—source data 2), to evaluate the similarity of the mandible and cranium of Jeholornis to extant birds with different diets. Our main analysis is intended to test how seeds entered the gut of Jeholornis by distinguishing between two hypotheses, either (1) fruit consumption or (2) seed consumption (Figure 2, Figure 2—figure supplement 2). For this analysis, diets of extant birds were separated into five categories: (1) Seed-crackers (parrots): granivores that de-husk and fragment seeds using the beak prior to ingestion; (2) Seed-crackers (passerines): granivores that de-husk but do not extensively fragment seeds using the beak prior to ingestion; (3) Seed-grinders: granivores that primarily process seeds using a gastric mill, with minimal beak processing; (4) Fruit eaters; and (5) Other diets (such as folivores, carnivores, and omnivores). Our supplemental analysis includes a further split of ‘Other diets’, separating the ‘Other diets’ category into: (1) Probing for invertebrates; (2) Grabbing/pecking for invertebrates (Figure 2—figure supplement 3); (3) Piscivores; (4) Animal-dominated omnivores; (5) Carnivores (Figure 2—figure supplement 4); (6) Nectarivores; (7) Omnivores; (8) Plant-dominated omnivores (Figure 2—figure supplement 5). Our expectation is that these analyses will not provide an unambiguous classification of the diet of Jeholornis on their own, because craniomandibular shape data do not completely differentiate among diets in birds (Navalón et al., 2019), but that they may be capable of ruling out the occurrence of certain diets.
 
-## Mandibular morphospace
+![Figure 2.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-v1.jpg)
+
+**Figure 2.:** Different diet categories are indicated by different colours, and key samples are labelled with generic names.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Black labels indicate the description names, and blue labels below indicate the names in R.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig2-figsupp5-v1.jpg)
+
+#### Mandibular morphospace
 
 The principal components analysis (PCA) results reveal that a large portion of mandibular shape variation (PC1: 38.16%) is related to the relative length of the mandible compared to its rostral depth: positive values of PC1 indicate short, deep mandibles, whereas negative values indicate long, low mandibles. PC2 explains 32.98% of variation and is also related to the relative depth of the mandible, with positive values indicating low mandibles with coronoid eminence absent or less developed, and negative values indicating deep mandibles with a large coronoid eminence. PC3 (10.25% of variation) is related to the curvature, with positive values indicating a straight profile in lateral view, and negative values indicating rostroventral curvature of the rostral portion of the mandible (Figure 2A, B).
 
@@ -67,7 +91,7 @@ Jeholornis is plotted within the overlapping range of frugivores, seed-grinders,
 
 Our supplemental analyses find that Jeholornis was unlikely to have had a probing or piscivorous diet; probing birds occupy negative PC1 values (Figure 2—figure supplement 3), and piscivores occupy positive PC2 values (Figure 2—figure supplement 4). However, Jeholornis cannot readily be distinguished from other diets such as the grabbing/pecking for invertebrates and omnivory (Figure 2—figure supplements 3–5). Euclidean distances in the full multivariate shape space suggest that the mandible of Jeholornis is relatively similar to those of various omnivorous (e.g. Podica), seed-grinding (e.g. Calandrella), frugivorous (e.g. Crax), and invertebrate pecking (e.g. Picus) birds (Figure 2—source data 3).
 
-## Cranial morphospace
+#### Cranial morphospace
 
 Cranial shape distinguishes between our focal diet categories less effectively than mandibular shape (Figure 2C, D, Figure 2—figure supplement 2C, D). Nevertheless, some separation is still evident, especially between seed-crackers and other dietary groups. This also indicates that Jeholornis was not a seed-cracking granivore. Extant seed-crackers occupy positive values of both PC1 and PC2, compared to more centrally positioned frugivores and seed-grinders. Variation in PC1 (45.31%) is related to the relative length of the rostrum compared to the jugal bar, with positive values indicating a shorter rostrum. Variation in PC2 (14.34%) is related to the depth and curvature of the rostrum, with positive values indicating deeper and rostroventrally curved rostra, present in seed-crackers and toucans (Ramphastos, which differs from seed-crackers in having a negative PC1 score). Variation in PC3 (9.35%) is related to the relative size of the orbit and naris, with positive values indicating smaller orbits and naris. Because some fossil samples included in our analyses are incomplete, we did not include the skull roof in this analysis. Our results indicate that seed-crackers have relatively short, deep and rostroventrally curved rostra compared to most other birds, including Jeholornis, Sapeornis, and other Mesozoic taxa.
 
@@ -75,13 +99,23 @@ Similar to the results of the mandible analyses, the results of the supplemental
 
 Mesozoic taxa are mostly separated from modern birds along PC2 and PC3, occupying negative values of PC2 and positive values of PC3 separately (Figure 2C, D). Among them, Jeholornis and Sapeornis are more similar to extant birds along PC2, which describes rostral morphology. This may reflect the dietary specialisation of Jeholornis and Sapeornis (as fruit or seed consumers) compared to other Mesozoic taxa. Nevertheless, they cluster with other Mesozoic taxa along cranial PC3, indicating conservative aspects shared with non-avian theropods, especially a proportionally small orbit and external naris.
 
-## Alimentary content analyses
+### Alimentary content analyses
 
 Our morphometric analyses indicate that Jeholornis was not a ‘seed-cracker’, but do not distinguish between frugivorous and seed-grinding granivorous diets. We therefore conducted a comparison of the alimentary contents of Jeholornis (Figure 3) with selected modern birds (Figure 4) using high-resolution CT scanning. Our modern bird sample includes frugivores (Manucodia comrii, Curl-crested manucode; Bombycilla garrulus, Bohemian waxwing), seed-cracking parrots (Conuropsis carolinensis, Carolina parakeet), seed-cracking passerines (Geospiza fuliginosa, Small ground-finch; Calcarius lapponicus, Lapland longspur), and seed-grinding granivores (Ectopistes migratorius, Passenger pigeon; Pedionomus torquatus, Plains-wanderer; Thinocorus rumicivorus, Least seedsnipe) (detailed specimen information see Figure 4—source data 1; detailed descriptions of their alimentary contents see Materials and methods).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig3-v1.jpg)
 
-**Figure 3.:** Jeholornis prima specimens.(A) IVPP V13274 (holotype). (B) STM 2–41. (C) Close-up image of seeds in IVPP V13274 (A). (D) Gastrolith mass in J. prima STM 2–15. Photos in A–D followed figures in O’Connor et al., 2018. Scale bars equal 5 mm.
+**Figure 3.:** (A) IVPP V13274 (holotype). (B) STM 2–41. (C) Close-up image of seeds in IVPP V13274 (A). (D) Gastrolith mass in J. prima STM 2–15. Photos in A–D followed figures in O’Connor et al., 2018. Scale bars equal 5 mm.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig4-v1.jpg)
+
+**Figure 4.:** (A) Manucodia comrii (fruit eater). (B) Pedionomus torquatus (seed-grinder). (C) Ectopistes migratorius (seed-grinder). (D) Geospiza fuliginosa (use both seed-cracking and seed-grinding strategies). (E) Conuropsis carolinensis (seed-cracker). Dash-lined boxes indicate local magnifications. Gastroliths are remarkably brighter than other contents in the slices. Red arrows indicate the breakages of seeds in slices, which are difficult to show in the reconstructed models. Scale bars equal 5 mm for the whole models and slices, and 1 mm for the magnification boxes.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74751/elife-74751-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Red arrows indicate the breakages of seeds.
 
 Comparative evidence from those modern avian gut contents show that destructive seed consumption (seed predation) is strongly indicated by fragmentation (in seed-crackers) or abrasion (in seed-grinders) of seeds in the alimentary canals, which is likely a prerequisite for nutrient extraction. The seed remains are highly fragmented in seed-cracking parrots (Figure 4E), whereas in seed-cracking passerines, although the crop contents are almost intact, those in the stomach are also highly fragmentary (Figure 4D, Figure 4—figure supplement 1E, F). This is consistent with behavioural observations of finches and other granivorous passerines (Billerman et al., 2020), in which seed-cracking passerines use the beak only to remove the outer coats of seeds, and do not fragment the seed before ingestion, differing from parrots that can fragment seeds prior to ingestion (Figure 4E). Fragmentation of seeds in passerines is primarily achieved through the gastric mill, similar to some seed-grinders for example E. migratorius (Passenger pigeon) (Figure 4C, Figure 4—figure supplement 1B). However, in most seed-grinders the gut contents consist of abraded and partially damaged, rather than highly fragmented, seed remains (Figure 4B, Figure 4—figure supplement 2A–F).
 
@@ -109,17 +143,17 @@ Fossil birds have low preservation potential and are known primarily from sites 
 
 ## Materials and methods
 
-## Taxonomy of Jeholornis STM 3–8
+### Taxonomy of Jeholornis STM 3–8
 
 Jeholornis STM 3–8 was collected from the Jiufotang Formation (~120 Ma) (He et al., 2004) at the Dapingfang locality in Chaoyang, Liaoning province, preserving a complete and mostly articulated skull, and a few postcranial elements including the vertebral column, the pelvic girdle and fragmentary hindlimbs. This new specimen is tentatively assigned to Jeholornis prima based on the presence of the following features: relatively robust mandible with three rostrally restricted teeth; edentulous and robust premaxilla; maxilla lacking teeth in the caudal portion; long bony tail consisting of more than 20 caudal vertebrates. This specimen could be distinguished from Jeholornis palmapenis by its flattened dorsal margin of ilium, compared to the strongly convex condition in J. palmapenis (O’Connor et al., 2013). The validity of another recently reported jeholornithiformes, Kompsornis longicaudus (Wang et al., 2020) needs more discussions since only one specimen is used to erect it, while no detailed comparisons have been done to the numerous specimens which have been assigned to Jeholornis before. In addition, the parts bearing key features listed in Wang et al., 2020 such as pectoral girdle and sternum, are not preserved in STM 3–8. However, some characters such as the relatively pointed rostral tip of the mandible of Kompsornis still tentatively indicate that STM 3–8 may be distinguished different from it.
 
-## CT scans and digital reconstructions
+### CT scans and digital reconstructions
 
 Microtomographic measurements of Jeholornis STM 3–8 were performed using the Imaging and Medical Beamline (IMBL) at the Australian Nuclear Science and Technology Organisation’s (ANSTO) Australian Synchrotron, Melbourne, Australia. For this investigation, acquisition parameters included a pixel size of 16.9 × 16.9 µm, monochromatic beam energy of 70 keV, a sample-to-detector distance of 200 mm. As the height of the specimen exceeded the detector field-of-view, the specimen was aligned axially relative to the beam and imaged using seven consecutive scans. The raw 16-bit radiographic series were normalised relative to the beam calibration files and stitched. Reconstruction of the 3D dataset was achieved by the filtered-back projection method using the CSIRO’s X-TRACT (Gureyev et al., 2011).
 
 The 3D reconstructions (Figure 1A, B) and the fixing of 3D models (Figure 1C, D) were created and completed with the software Mimics and 3-matic (version 16.1). The mandible model of Jeholornis STM 3–8 was reconstructed for the GMM analysis (Figure 1H) by the following steps: the crashed left splenial was replaced by the mirrored right splenial; the breakage through the left dentary and surangular was joined together; second left dentary tooth was replaced by the mirrored right counterpart with better preservation; all the left dentary teeth were slightly relocated according to the morphology of the alveoli; the fixed left mandible was then mirrored to create the right half; the two sides were joined together, with the angle between them determined by the width of the braincase. The 3D models of the cranial elements of Jeholornis STM 3–8 were reassembled (Figure 1C, D) by the following steps: all the left elements with better preservation were mirrored to create the right half, except for the pterygoid, for which the better-preserved right one was used as the reference; all the elements were relatively relocated to build a complete skull according to their articulations and anatomical geometry. Since most elements are only slightly dislocated with the articulations/articulation facets preserved, this reassembled model is largely reliable, with the location of the preorbital ossifications being the highest uncertainty. The reassembled cranial model was then used as the reference for the 2D reconstruction of the Jeholornis skull in lateral and ventral views (Figure 1E, F). However, since the braincase is too flattened to be used as the reference for 3D retrodeformation, it was omitted in Figure 1C and reconstructed according to its common shape in early birds in Figure 1E. The ectopterygoid is not preserved but suspected to exist as discussed in the Cranial Anatomy part, therefore it was reconstructed according to the shape of this element among other stem birds for example Archaeopteryx and Sapeornis (Elzanowski and Wellnhofer, 1996; Hu et al., 2019).
 
-## GMM analyses
+### GMM analyses
 
 The dataset incorporates Jeholornis and 160 extant bird species representing 111 families and 36 orders in our 3D mandible analysis, with additional Mesozoic theropods in 2D skull analysis including: Sinornithosaurus (Dromaeosauridae) (Xu and Wu, 2001), Linheraptor (Dromaeosauridae) (Xu et al., 2015), Dilong (Tyrannosauroidea) (Xu et al., 2004), Archaeopteryx (non-Ornithothoraces Aves) (Rauhut, 2014), Sapeornis (non-Ornithothoraces Aves) (Hu et al., 2019), Pengornis (Enantiornithes) (O’Connor and Chiappe, 2011), and Ichthyornis (Ornithuromorpha) (Field et al., 2018). We note that the 2D cranial reconstruction of Pengornis is less reliable among those Mesozoic samples due to the comparatively poor preservation, but we incorporate it here as it is currently the best representative enantiornithine.
 
@@ -129,4 +163,4 @@ The ecological information including diet categories and foraging strategies of 
 
 The category ‘Other diets’ was further split to eight categories in our supplemental analysis primarily based on the information from Wilman et al., 2014 and Tobias et al., 2022: (1) Probing for invertebrates; (2) Grabbing/pecking for invertebrates; (3) Piscivores: including taxa who have a mixed fish/cephalopod diet; (4) Animal-dominated omnivores: including taxa who have >65% animals in diet; (5) Carnivores; (6) Nectarivores; (7) Omnivores: including taxa who have approximately even split of animals and plants in diet; (8) Plant-dominated omnivores: including taxa who have>65% plants in diet.
 
-## Detailed descriptions of the alimentary contents in modern birds
+### Detailed descriptions of the alimentary contents in modern birds

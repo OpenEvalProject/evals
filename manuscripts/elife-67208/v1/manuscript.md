@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02zx40v98 Department of Cognitive Science, Central European University Vienna Austria
-2. https://ror.org/02n742c10 Department of Life Sciences, University of Trieste Trieste Italy
-3. https://ror.org/026zzn846 School of Biological and Behavioural Sciences, Department of Biological and Experimental Psychology, Queen Mary University of London London United Kingdom
-4. https://ror.org/04cw6st05 Department of Psychological Sciences, Birkbeck, University of London London United Kingdom
-5. https://ror.org/05trd4x28 Center for Mind/Brain Sciences, University of Trento Rovereto Italy
+1. Department of Cognitive Science, Central European University Vienna Austria ([ROR:02zx40v98](https://ror.org/02zx40v98))
+2. Department of Life Sciences, University of Trieste Trieste Italy ([ROR:02n742c10](https://ror.org/02n742c10))
+3. School of Biological and Behavioural Sciences, Department of Biological and Experimental Psychology, Queen Mary University of London London United Kingdom ([ROR:026zzn846](https://ror.org/026zzn846))
+4. Department of Psychological Sciences, Birkbeck, University of London London United Kingdom ([ROR:04cw6st05](https://ror.org/04cw6st05))
+5. Center for Mind/Brain Sciences, University of Trento Rovereto Italy ([ROR:05trd4x28](https://ror.org/05trd4x28))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ For our second measurement, we coded which eye the chicks used to inspect the ex
 
 In addition, interestingly, lateralized sex differences have been repeatedly observed in response to novel objects. For instance, Vallortigara and Andrew, 1991 documented stronger left-eye-mediated choices of unfamiliar stimuli for males compared to females, and different preferences for unfamiliar and familiar objects between sexes. Lateralized sex differences have been found also by Dharmaretnam and Andrew, 1994, where unfamiliar stimuli evoked left-eye bias in females, but not in males. Vallortigara and Andrew, 1991 observed that left-eye (and binocular) males preferred unfamiliar objects, while left-eye (and binocular) females preferred familiar objects, whereas both males and females tested with the right eye did not exhibit significant preferences for familiar or novel stimuli. Hence, a potential modulation of sex in eye use must be considered for the exploration of unexpected vs. expected scenes in our study as well.
 
-## Study 1
+### Study 1
 
 In Study 1, we investigated whether the chicks encoded the presence (Experiment 1) and the absence (Experiment 2) of the object behind the screen. In Experiment 1 (Encoding Presence), chicks (n = 27, 13 females, 14 males) watched as the object moved behind the screen till full occlusion, and then they either saw it moving out of the scene (Expected Disappearance condition) or did not see it moving out (Unexpected Disappearance condition). Both scenes ended identically, by the screen falling and revealing an outcome with no object being present (Figure 1A). In Experiment 2 (Encoding Absence), the test trials started with the screen in a lowered position. A different group of chicks (n = 28, 15 females, 13 males) observed an object moving to the area behind the lowered screen (Expected Appearance condition) or moving out of the scene (Unexpected Appearance condition) before the screen was raised (Figure 1B). Both scenes ended by the screen falling and revealing an outcome with the object being present. We used a repeated measures design; thus, each chick was presented with both the Expected and the Unexpected conditions. We coded the chicks’ overall Looking Times and Lateralization Index (the difference between left- and right-eye usage proportional to the total eye usage) in the outcome phases.
 
@@ -50,7 +50,7 @@ In Study 1, we investigated whether the chicks encoded the presence (Experiment 
 
 **Figure 1.:** (A) Experiment 1 – Encoding Presence. The upper panels depict the events in the Expected Disappearance condition, where the target object was removed from the arena before the screen was lowered revealing the empty space behind it. The lower panels depict the events in the Unexpected Disappearance condition, where the target object was placed behind the screen visibly to the chick but then it was secretly removed from the arena. When the screen was lowered, it revealed the empty space behind. (B) Experiment 2 – Encoding Absence. The upper panels depict the events in the Expected Appearance condition, where the target object moved behind the screen and when the screen was lowered, it revealed the presence of the object. The lower panels depict the Unexpected Appearance condition, in which the target object was visibly removed from the arena, and then the vertical position of the screen was restored. Afterwards, the target object was secretly reintroduced into the arena, and when the screen was lowered, it revealed the target object.
 
-## Results
+### Results
 
 Chicks’ overall Looking Times were differently modulated as a function of the outcomes violating or confirming the chicks’ expectations about the presence and the absence of the object in Experiments 1 and 2 (Figure 2A). We run a repeated measures analysis of variance (ANOVA) on the square root transformed data set. A 2 × 2 × 2 repeated measures ANOVA with Experiment (Experiment 1: Encoding Presence vs. Experiment 2: Encoding Absence), Outcome (Expected vs. Unexpected), and Sex (Female vs. Male) as factors yielded a significant interaction between Experiment and Outcome (F1, 51 = 4.244, p = 0.045, ηp2 = 0.077) with no other effects (IBM SPSS Statistics 20). In Experiment 1, chicks’ looking behavior seemed to be in line with the prediction of longer looking times for unexpected outcomes (untransformed means: Unexpected Disappearance: M = 15.421; SD = 7.34; Expected Disappearance: M = 12.671, SD = 6.566; Scheffé test p = 0.078, η2 = 0.037); however, this was not the case for Experiment 2 (Unexpected Appearance: M = 12.906; SD = 8.409; Expected Appearance: M = 14.556, SD = 9.351; Scheffé test, p = 0.273, η2 = 0.008). Subjects looked longer to the Unexpected outcomes in Experiment 1 compared to Experiment 2 (Scheffé test, p = 0.028, d = 0.318). Human infants show similar looking patterns to such scenes (i.e., longer looks to violations of presence but not to that of absence; Wynn and Chiang, 2016; Kaufman et al., 2003), and it was suggested that they are more sensitive to violations of presence compared to violations regarding the absence of objects.
 
@@ -66,7 +66,7 @@ Interestingly, in contrast to the left-eye bias, overall looking time did not se
 
 To sum up, in Study 1 we found asymmetric patterns of looking times and lateralization in response to outcomes congruent or violating chicks’ expectations of presence and absence. Furthermore, we found that the left-eye bias seems to reflect chicks’ ability to form an expectation about the absence of an object. In Study 2, we targeted the cognitive processes that could support the representation of absence.
 
-## Study 2
+### Study 2
 
 In two additional experiments, we focused on the left-eye bias effect observed in Experiment 2. We aimed on the one hand to strengthen our findings regarding chicks’ absence encoding, and on the other hand to test the possible representational processes underlying such a behavior. According to one possibility, chicks in Experiment 2 (Encoding Absence) might have not formed an actual representation that there was no object behind the screen, instead their reaction to the unexpected appearance could have been perceptually driven and derived from detecting the mismatch between the memory of the empty space behind the screen (i.e., an iconic, picture-like representation of the empty floor, and the wall of the testing arena) and the perceived outcome (i.e., the scene with the object). This possibility, however, would predict no left-eye bias in a situation where there was no possibility for perceptually encoding the empty space. In contrast, left-eye bias without relying on the percept of an empty space would point to a more complex mental representation of absence that is inferred from the sequence of events (object going in/going out) (Experiment 3. Absence vs. Perceptual Comparison). A second alternative explanation might be that the chicks did not encode the absence of the object, but tracked the location of the target object even when it left the scene, and encoded its presence somewhere outside the arena, and the left-eye bias reflected their ‘surprise’ of seeing this object at an unexpected location (i.e., behind the screen, inside the arena). According to this alternative, an outcome which would feature a different object behind the occluder should not elicit a left-eye bias (Experiment 4. Absence vs. Tracking). In the second study, Experiments 3 and 4 test these alternative explanations, respectively, and aimed at replicating the findings from Experiment 2.
 
@@ -106,43 +106,59 @@ Importantly, in former studies, animals that managed to use absence information 
 
 ## Materials and methods
 
-## Subjects and rearing conditions
+### Subjects and rearing conditions
 
 Newborn chicks of the Ross 308 strain (broiler with fast growth rate) were collected from the incubator a few hours after hatching and they were housed individually in standard conditions in rectangular-shaped home cages (28 cm wide × 40 cm high × 32 cm deep) with a small circular opening on the front side (8 cm high, 2.7 cm diameter). Chicks could insert their head in this hole and look outside, and in this way they became familiarized with protruding the head from a window. Each chick shared the home cage with a red cylinder-shaped object (3 cm wide × 5.5 cm high) suspended centrally by a fine thread at about his or her eye level. The red object served as an imprinting object. Water and food were available ad libitum.
 
-## Apparatus
+### Apparatus
 
 Training and testing took place in a separate room close to the rearing room. The experimental apparatus consisted of a white circular arena (diameter 66 cm × 50 cm high), a screen (15.5 cm wide × 13 cm high), and a confining cylinder (10 cm wide × 25 cm high) in which the chick was placed during the training and testing sessions. The confining cylinder had a small circular opening facing the center of the arena. This opening had the same dimension and position as the windows on the home cages (8 cm high, 2.7 cm diameter). The screen was made of a plastic opaque blue sheet and it was placed at 30 cm from the closest part of the confining cylinder. The experimenter could rotate the screen upward (to reach a vertical position) and downward (leaning it forward on the apparatus floor) from above the experimental arena to hide or reveal the space behind the screen. Behind the screen, a camouflaged sliding door in the floor made possible for the experimenter to secretly remove or place the target object behind the screen out of the chicks’ view. A red object identical to the imprinting object was used during the training and the test. The experimenter could move the object within the arena with a fine thread held from above. A video camera was placed above the confining cylinder and recorded the whole test session.
 
-## Procedure
+### Procedure
 
-## Familiarization:
+#### Familiarization:
 
 On day 4 or 5 after hatching all chicks underwent a short familiarization session to get acquainted with the apparatus. Chicks were gently placed inside the confining cylinder and they could put out the head through the window. The red object was moved between the confining cylinder and the screen (which was in vertical position), but importantly the object never went behind the screen, thus chicks did not experience the occlusion of the object in this phase. Mealworms were placed on the top of the red object so if the chick put the head out of the cylinder and the red object was at reachable distance the chick could get the mealworm. After the chick ate the mealworm on the top of the red object, the object was removed from the arena and the mealworm was replaced. The red object was always inserted and removed centrally at the back of the experimental arena, opposite to the confining cylinder. The familiarization phase lasted 10 min for each chick. Chicks not putting out their head from the confining cylinder, and thus not seeing any of the events or not taking the mealworm were excluded from the experiment (n=21).
 
-## Test
+#### Test
 
 On day 8 after hatching chicks participated in the test of one of the four experiments. We tested 8-day-old chicks, because piloting of the paradigm showed that chicks at this age (but not younger) are more likely to put out their heads through the window of the confining cylinder, and to provide sufficient data for measurement. Every test session started with a short warm-up period, in which chicks were presented with the upward/downward rotating movement of the screen and the left/right movements of the red object. First, the screen was moved upwards and downwards three times. After the last movement, the screen remained in vertical position. Then the object was moved from near the window of the confining cylinder toward the screen and then behind the screen, and thus disappearing from the chick’s sight. Afterwards, the object was moved back from behind the screen to the window of the confining cylinder. This action was repeated once on the left and once on the right side. Afterwards, the screen was rotated downwards to horizontal position, and the object was moved on similar trajectories. After the warm-up period the test events followed. In all experiments trials were counterbalanced in an ABBA order, in a total of four test trials (where As and Bs stand for the two outcomes, counterbalanced across participants). The outcome was presented for approximately 30 s, with a small variance due to the natural variation of the movement of the experimenter while rotating upwards the screen at the end of the trial. To rule out the potential effect of this variance, we coded the length of trials and we investigated its effect on the dependent variables. First of all, we did not find significant difference between the length of trials in the two experimental conditions (Expected condition, M = 31.34, SD = 1.81; Unexpected condition, M = 31.15, SD = 1.89, Mann–Whitney U test, U = 22.56, p = 0.35). Moreover, we did not find significant correlation either between the length of trials and Looking Time (r(434) = 0.013, p = 0.793) or between the length of trials and Lateralization Index (r(434) = −0.003, p = 0.949). Chicks not putting out their heads from the confining cylinder during the presentation of the test events or through the full duration of presenting the outcome could not provide any data and were excluded from the studies (4 chicks in Experiment 1, 5 in Experiment 2, 4 in Experiment 3 and 2 in Experiment 4).
 
-## Experiment 1 (Encoding Presence)
+#### Experiment 1 (Encoding Presence)
 
 In the Unexpected Disappearance condition, the object was first placed behind the screen but then it was secretly removed from the arena through a sliding door hidden behind the screen, in a way that chicks could not see the removal. In the outcome phase, the screen was dropped and it revealed the empty space behind the screen. In the Expected Disappearance condition, the object was removed from the arena in the full view of the chick. In order to equalize the amount of noise and to approximately even up the time passing before the outcome, the sliding door was moved back and forth similar to the Unexpected Disappearance condition. In the outcome phase, the screen was dropped and it revealed the empty space behind the occlude (see Video 1). The movement of the object was counterbalanced within subjects: it was removed or moved behind the screen once from left and once from right in both conditions across the four trials, order counterbalanced.
 
-## Experiment 2 (Encoding Absence)
+![Video 1.](https://cdn.elifesciences.org/articles/67208/elife-67208-video1.mp4.jpg)
+
+**Video 1.:** The chick is presented with the Expected and Unexpected Disappearance of the imprinting object (example video from the test set).
+
+#### Experiment 2 (Encoding Absence)
 
 In the Unexpected Appearance condition, the object was visibly removed from the arena and then the screen was positioned in vertical position (hiding the space behind it). Afterwards, the object was secretly placed behind the screen, through the sliding door, in a way that chicks could not see the placement. In the outcome phase the screen was dropped and the object was revealed. In the Expected Appearance condition, the object was moved toward and placed behind the lowered screen. Then, the screen was raised in vertical position – covering the object – and the sliding door was moved back and forth similar to the Unexpected Appearance condition. At the end of the trial, the screen was dropped revealing the presence of the object (see Video 2).
 
-## Experiment 3 (Absence vs. Perceptual Comparison)
+![Video 2.](https://cdn.elifesciences.org/articles/67208/elife-67208-video2.mp4.jpg)
+
+**Video 2.:** The chick is presented with the expected and unexpected appearance of the imprinting object (example video from the test set).
+
+#### Experiment 3 (Absence vs. Perceptual Comparison)
 
 Procedure was similar to Experiment 2 except the following changes. In the warm-up phase, the screen was moved upwards and downwards three times, stopping in a horizontal position while the object was moved left and right twice. Then the same movement was repeated with the screen in vertical position. In Unexpected Appearance condition the object was moved behind the screen and then it was removed from the arena visibly to the chick. Before the end of trial, the object was secretly placed behind the screen, through the secret door. At the end of the trial, the screen was dropped and it revealed the object. In Expected Appearance condition, first the object was moved behind the screen and then to equalize the movements in the two conditions, it was moved halfway within the space between the screen and the edge of the arena to reveal it again for the chick, and afterwards it was moved back and placed again behind the screen. At the end of the trial the screen was dropped revealing the object (see Video 3).
 
-## Experiment 4 (Absence vs. Tracking)
+![Video 3.](https://cdn.elifesciences.org/articles/67208/elife-67208-video3.mp4.jpg)
+
+**Video 3.:** The chick is presented with the expected and unexpected appearance of the imprinting object (example video from the test set).
+
+#### Experiment 4 (Absence vs. Tracking)
 
 In this experiment, we used two objects both in the familiarization and in the test session. One object – just as in the other three experiments – was identical to the red imprinting object provided for all chicks in their home cages from the first day of life. The other object (hereafter the green object) was first introduced during the familiarization. This object had the same shape and size as the red object but it was green with yellow stripes on the bottom and top part. During the 10 min of the training session these two objects were alternated. In the test session, the pretest phase was the same as in Experiment 3 with the exception that the two objects were presented in turns; once the red was moved left and right and then the green object was moved to left and right while the screen was in horizontal position and the same movements were presented while the screen was in vertical position.
 
 The expected events were similar to the events in Experiment 3. In the Unexpected Appearance condition, the green object was moved behind the screen and then it was removed from the arena in the view of the chick. Afterwards, the red object was secretly placed behind the screen through the sliding door. At the end of the trial the screen was dropped uncovering the red object (see Video 4).
 
-## Data analyses
+![Video 4.](https://cdn.elifesciences.org/articles/67208/elife-67208-video4.mp4.jpg)
+
+**Video 4.:** The chick is presented with the expected and unexpected appearance of the imprinting object (example video from the test set).
+
+### Data analyses
 
 We derived two dependent variables from the coded values: Looking Time and a Lateralization Index. Looking Time was the sum of the left, the right, and the binocular eye usage during the 30 s. Lateralization Index was calculated as the ratio of the difference between left- and right-eye usage compared to the total of left- and right-eye usage (i.e., (Left − Right)/(Left + Right)).
 

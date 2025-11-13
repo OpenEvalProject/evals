@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/00453a208 Advanced Science Research Center, The City University of New York New York United States
-2. https://ror.org/00hj8s172 Center for Theoretical Neuroscience, Zuckerman Institute, Columbia University New York United States
-3. https://ror.org/04rt94r53 Department of Neuroscience and Behavior, Barnard College New York United States
-4. https://ror.org/00hj8s172 Department of Electrical Engineering, Columbia University New York United States
+1. Advanced Science Research Center, The City University of New York New York United States ([ROR:00453a208](https://ror.org/00453a208))
+2. Center for Theoretical Neuroscience, Zuckerman Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Department of Neuroscience and Behavior, Barnard College New York United States ([ROR:04rt94r53](https://ror.org/04rt94r53))
+4. Department of Electrical Engineering, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
 ## Abstract
 
-The circadian clock orchestrates daily changes in physiology and behavior to ensure internal temporal order and optimal timing across the day. In animals, a central brain clock coordinates circadian rhythms throughout the body and is characterized by a remarkable robustness that depends on synaptic connections between constituent neurons. The clock neuron network of Drosophila , which shares network motifs with clock networks in the mammalian brain yet is built of many fewer neurons, offers a powerful model for understanding the network properties of circadian timekeeping. Here, we report an assessment of synaptic connectivity within a clock network, focusing on the critical lateral neuron (LN) clock neuron classes within the Janelia hemibrain dataset. Our results reveal that previously identified anatomical and functional subclasses of LNs represent distinct connectomic types. Moreover, we identify a small number of non-clock cell subtypes representing highly synaptically coupled nodes within the clock neuron network. This suggests that neurons lacking molecular timekeeping likely play integral roles within the circadian timekeeping network. To our knowledge, this represents the first comprehensive connectomic analysis of a circadian neuronal network.
+The circadian clock orchestrates daily changes in physiology and behavior to ensure internal temporal order and optimal timing across the day. In animals, a central brain clock coordinates circadian rhythms throughout the body and is characterized by a remarkable robustness that depends on synaptic connections between constituent neurons. The clock neuron network of Drosophila, which shares network motifs with clock networks in the mammalian brain yet is built of many fewer neurons, offers a powerful model for understanding the network properties of circadian timekeeping. Here, we report an assessment of synaptic connectivity within a clock network, focusing on the critical lateral neuron (LN) clock neuron classes within the Janelia hemibrain dataset. Our results reveal that previously identified anatomical and functional subclasses of LNs represent distinct connectomic types. Moreover, we identify a small number of non-clock cell subtypes representing highly synaptically coupled nodes within the clock neuron network. This suggests that neurons lacking molecular timekeeping likely play integral roles within the circadian timekeeping network. To our knowledge, this represents the first comprehensive connectomic analysis of a circadian neuronal network.
 
 ## Introduction
 
@@ -44,17 +44,210 @@ Here, we report an assessment of chemical synaptic connectivity for the critical
 
 ## Results
 
-## The clock neuron network and the hemibrain dataset
+### The clock neuron network and the hemibrain dataset
 
 Representatives of all classes of clock neurons, with the exception of the DN2 and DN3 classes, have been identified in the hemibrain volume used here (Figure 1A and B). See Table 1 for the naming scheme used here for the clock neurons identified in the dataset with their corresponding unique body IDs. The patterns of connectivity among some of these neurons have recently been briefly described (Ahmad et al., 2021; Reinhard et al., 2022a; Reinhard et al., 2022b). Scheffer and colleagues (Scheffer et al., 2020) define synaptic strength within the hemibrain volume by the number of synaptic connections formed between neurons, defining connections consisting of only one or two chemical synapses as weak and subject to error, three to nine synapses as medium strength, and of ten or more synapses as strong. We used these definitions of synaptic strength in this study. As a whole, the identified clock neurons appear to be sparsely interconnected by chemical synapses. Most clock neuron pairs form either no synapses or weak synaptic connections (Figure 1C). However, there are a few clear exceptions: a single LNd (LNd6) and the 5th s-LNv form strong connections with one another and with members of the DN1 group (Figure 1C; see also Reinhard et al., 2022a) and stand out among the clock neurons as hubs of inter-clock synaptic connectivity.
 
+**Table 1.**
+ Identification of Clock Neurons within the Hemibrain Volume.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>BodyId</th>
+      <th>Type</th>
+      <th>Sequential label</th>
+      <th>Subphase</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2068801704</td>
+      <td>s-LNv</td>
+      <td>s-LNv1</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>1664980698</td>
+      <td>s-LNv</td>
+      <td>s-LNv2</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>2007068523</td>
+      <td>s-LNv</td>
+      <td>s-LNv3</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>1975347348</td>
+      <td>s-LNv</td>
+      <td>s-LNv4</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>5813056917</td>
+      <td>LNd</td>
+      <td>LNd4</td>
+      <td>E1</td>
+    </tr>
+    <tr>
+      <td>5813021192</td>
+      <td>LNd</td>
+      <td>LNd5</td>
+      <td>E1</td>
+    </tr>
+    <tr>
+      <td>5813069648</td>
+      <td>LNd</td>
+      <td>LNd6</td>
+      <td>E2</td>
+    </tr>
+    <tr>
+      <td>511051477</td>
+      <td>5th LNv</td>
+      <td>5th LNv</td>
+      <td>E2</td>
+    </tr>
+    <tr>
+      <td>296544364</td>
+      <td>LNd</td>
+      <td>LNd1</td>
+      <td>E3</td>
+    </tr>
+    <tr>
+      <td>448260940</td>
+      <td>LNd</td>
+      <td>LNd2</td>
+      <td>E3</td>
+    </tr>
+    <tr>
+      <td>5813064789</td>
+      <td>LNd</td>
+      <td>LNd3</td>
+      <td>E3</td>
+    </tr>
+    <tr>
+      <td>356818551</td>
+      <td>LPN</td>
+      <td>LPN1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>480029788</td>
+      <td>LPN</td>
+      <td>LPN2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>450034902</td>
+      <td>LPN</td>
+      <td>LPN3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>546977514</td>
+      <td>LPN</td>
+      <td>LPN4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>264083994</td>
+      <td>DN1a</td>
+      <td>DN1a1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5813022274</td>
+      <td>DN1a</td>
+      <td>DN1a2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5813010153</td>
+      <td>DN1pA</td>
+      <td>DN1pA1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>324846570</td>
+      <td>DN1pA</td>
+      <td>DN1pA2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>325529237</td>
+      <td>DN1pA</td>
+      <td>DN1pA3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>387944118</td>
+      <td>DN1pA</td>
+      <td>DN1pA4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>387166379</td>
+      <td>DN1pA</td>
+      <td>DN1pA5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>386834269</td>
+      <td>DN1pB</td>
+      <td>DN1pB1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5813071319</td>
+      <td>DN1pB</td>
+      <td>DN1pB2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1884625521</td>
+      <td>l-LNv</td>
+      <td>lLNv1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2065745704</td>
+      <td>l-LNv</td>
+      <td>lLNv2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5813001741</td>
+      <td>l-LNv</td>
+      <td>lLNv3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5813026773</td>
+      <td>l-LNv</td>
+      <td>lLNv4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 To asses synaptic connectivity in the Drosophila clock network, we focused on three critical classes of lateral clock neurons (LNs); the four Pigment Dispersing Factor (PDF) -expressing small ventral lateral neurons (s-LNvs), the six dorsal lateral neurons (LNds) and the PDF negative 5th s-LNv (Figure 1D). We have chosen to focus on these clock neuron classes for two reasons. First, these classes are completely accounted for in the hemibrain annotation used here. Second, the 11 neurons that comprise the LN class are sufficient to drive the fly’s endogenous bimodal rhythm in locomotor activity (Grima et al., 2004; Rieger et al., 2006) and therefore represent a critical sub-network within the fly’s circadian system.
 
-## The small LNvs are a highly unified connectomic class distinct from the 5th s-LNv
+### The small LNvs are a highly unified connectomic class distinct from the 5th s-LNv
 
 The s-LNvs have long been considered critical circadian pacemakers within the Drosophila clock neuron network (Helfrich-Förster, 1998). These cells express the neuropeptide PDF (Helfrich-Förster, 1995; Renn et al., 1999), maintain strong molecular timekeeping under constant conditions (Shafer et al., 2002; Yang and Sehgal, 2001) and are required for robust endogenous circadian rhythms (Grima et al., 2004; Shafer and Taghert, 2009). The s-LNvs also contribute to the morning peak of the fly’s crepuscular daily activity rhythm (Grima et al., 2004; Stoleru et al., 2004). In addition to PDF, these cells also release the neuropeptide short Neuropeptide F (sNPF) (Johard et al., 2009) and the neurotransmitter glycine (Frenkel et al., 2017). Hyper excitation of the s-LNvs leads to a morning-like gene expression profile for many circadian genes, while hyperpolarization leads to an evening-like transcriptional profile (Mizrak et al., 2012). Though by no means the only clock neurons capable of producing an endogenous sense of time (Delventhal et al., 2019; Schlichting et al., 2019; Yao and Shafer, 2014), a large body of evidence supports the notion that s-LNvs are among the most critical neurons for the maintenance of endogenous circadian rhythms (reviewed by Ahmad et al., 2021). The 5th s-LNv was named because it was initially thought to be anatomically similar to the PDF positive s-LNvs in the larval brain (Kaneko and Hall, 2000; Kaneko et al., 1997; Rieger et al., 2006). However, subsequent work has suggested that the 5th s-LNv is likely functionally and anatomically more akin to the LNds (Grima et al., 2004; Schubert et al., 2018; Yao and Shafer, 2014).
 
 The four PDF-expressing s-LNvs are characterized by a relatively simple morphology (Figure 2A–C; Helfrich-Förster et al., 2007b). Their cell bodies are located in the ventral brain, near the accessory medulla (AMe), into which they extend short neurites which likely receive input from photoreceptors (Helfrich-Förster et al., 2002; Malpel et al., 2002). These four sLNvs project dorsally to the posterior dorsal protocerebrum, where they turn toward the midline and form fine ramified termini that extend toward the midline (Helfrich-Förster, 1997; Helfrich-Förster et al., 2007b). These dorsal ramifications are thought to be the major site of s-LNv synaptic output but are also known to contain synaptic inputs (Yasuyama and Meinertzhagen, 2010). Work by Schubert et al., 2018 showed that the 5th s-LNv (Figure 2F), which expresses the neuropeptide ion transport peptide (ITP) and choline acetyltransferase (Johard et al., 2009), an enzyme involved in the biosynthesis of acetylcholine, has more extensive ramifications within the dorsal brain and accessory medulla than the PDF expressing s-LNvs and provided evidence that they are anatomically more akin to LNds than to s-LNvs. Based on these findings, Schubert et al. suggested that the 5th sLNv be reclassified as a LNv (Schubert et al., 2018), a convention we follow for the remainder of this study. Based on this work, we predict that the 5th LNv within the hemibrain will be connectomically distinct from the PDF expressing s-LNvs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig2-v3.jpg)
+
+**Figure 2.:** (A–C). Synaptic connections of the four pdf + s LNvs, s-LNv_R_1 through s-LNv_R_4. Neuronal morphology is shown in gray. In A and B, inputs to the s-LNvs are shown in blue, outputs are shown in magenta. (A) All connections, including non-clock cells, (B) Connections to/from clock cells only, excluding connections to s-LNvs, (C) Connections among the four pdf + s LNvs. Input and output sides coincide and are indicated in orange. (D–E) Sankey diagram indicating the strong synaptic partners of all s-LNvs, including the 5th LNv. The total weight of synapses formed by each cell with its inputs (D) or outputs (E) is shown. (D) Presynaptic partners (inputs) of s-LNvs. No shared connections were found between the pdf + s LNvs and the 5th LNv. (E) Post synaptic partners (outputs) of s-LNvs. Only one cell (Body ID 571372889) receives synaptic input from the 5th LNv plus a pdf + s LNv. (F–G) Synaptic connections of the 5th LNv. (F) All connections, including non-clock cells, (G) connections to clock cells only. (H) Connectivity map of the four pdf + s LNvs indicating their peptide and receptor expression.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D). Synaptic connections of each of the four pdf + s LNvs, s-LNv1 (A), s-LNv2 (B), s-LNv3 (C), and s-LNv4 (D), either to all neurons (left columns), to other clock cells except s-LNvs (middle columns), or to other s-LNvs (right columns). Neuronal morphology is shown in gray. Inputs to the s-LNvs are shown in blue, outputs are shown in magenta. Body IDs of each s-LNv are indicated on the right.
 
 The four PDF-expressing s-LNvs and the 5th LNv have been identified within the hemibrain dataset (Figure 1B–C and Figure 2A and F; Scheffer et al., 2020). Visualization of T-bars and postsynaptic densities within these neurons reveals that their ventral neurites, which innervate the accessory medulla, are biased toward receiving synaptic input (Figure 2A and F). Individual PDF-positive s-LNvs display relatively simple dorsal medial termini with relatively few branch-points that tend to run in parallel to neighboring branches (Figure 2—figure supplement 1). As previously described (Yasuyama and Meinertzhagen, 2010), these dorsal medial s-LNv termini contain both presynaptic and postsynaptic structures with the former significantly outnumbering the latter (Figure 2A and Figure 2—figure supplement 1). The dorsal termini of the 5th LNvs also contains both pre- and postsynaptic structures but appear to be less biased toward output compared to the PDF expressing s-LNvs (Figure 2F). Taken together, the four pdf +s LNvs form a total of 2238 synapses within the hemibrain volume: 505 inputs (postsynaptic densities) and 1733 outputs (projections onto postsynaptic densities). The single 5th s-LNv contains 1413 postsynaptic densities and forms synapses onto 1992 postsynaptic densities. Thus, the 5th LNv forms about four times the number of synapses of a single PDF-positive s-LNv (Figure 4C; Supplementary file 1, Supplementary file 2).
 
@@ -62,9 +255,33 @@ The four pdf +s LNvs display uniformity in their synaptic inputs for strong syna
 
 Though quite uniform in their patterns of strong synaptic input and outputs, the pdf +s LNvs do display some within-class differences in their patterns of weak and medium strength connections. Among the inputs targeting only one s-LNv, and mediated by only three synapses, is the HB-eyelet, a surprising finding given the long-held model that this external photoreceptor provides direct excitatory input onto s-LNvs and contributes to light entrainment of circadian rhythms (Helfrich-Förster et al., 2002; Malpel et al., 2002; Rieger et al., 2003), though recent work has indicated that the eyelet to s-LNv connection may be polysynaptic (Li et al., 2018). The sparse connectivity between the eyelet and the s-LNvs found within the hemibrain is consistent with recent work suggesting that the eyelet makes negligible contributions to light entrainment (Alejevski et al., 2019). Nevertheless, our analysis supports the notion that the pdf +s LNvs represent a uniform connectomic cell type with regard to patterns of strong synaptic connections, consistent with recent work revealing a uniformity in gene expression across the s-LNvs (Ma et al., 2021). A recent connectomic analysis of the larval brain reached similar conclusions regarding the uniformity of sensory inputs, anatomy, and local connections among the four larval pdf +neurons (Larderet et al., 2017), which persist through metamorphosis to become the adult s-LNvs (Helfrich-Förster, 1997).
 
-## The LNds comprise several connectomic subclasses
+### The LNds comprise several connectomic subclasses
 
 As their name suggests, the somata of the dorsal lateral neurons (LNds) are situated dorsally relative to the LNvs, residing in the lateral cell body rind (Helfrich-Förster et al., 2007b; Kaneko and Hall, 2000; Schubert et al., 2018). All six LNds send dorsal medial projections across the superior protocerebrum and three send an additional projection toward the ventral brain (Schubert et al., 2018; Figure 3 and Figure 3—figure supplement 1). Though consisting of only two more neurons than the PDF-positive s-LNv class, the LNds form seven times more synaptic connections (6149 postsynaptic densities and projections to 9590 PSDs; compare Figures 2A—4) and are characterized by a much larger number of strong synaptic partners. There are 164 distinct neurons that receive strong synaptic inputs from at least one LNd (compared to 11 neurons for pdf +s LNvs; Supplementary file 2), and 86 distinct neurons provide strong synaptic input onto at least one LNd (compared to three for s-LNvs; Supplementary file 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig3-v3.jpg)
+
+**Figure 3.:** (A–C). Synaptic connections of the six LNds. Neuronal morphology is shown in gray. In A and B, inputs to the s-LNvs are shown in blue, outputs are shown in magenta. (A) All connections, including non-clock cells, (B) Connections to clock cells only, excluding connections to LNds. Input and output sides coincide and are indicated in orange. (C) Connections within LNds. (D) Connectivity map of the six LNds indicating their peptide and receptor expression. (E–F) Sankey diagram indicating the strong synaptic partners of all LNds. The total weight of synapses formed by each cell with its inputs (E) or outputs (F) is shown. (E) Presynaptic partners of LNds. No shared connections were found between LNd1-3 and LNd4-6. Most of the shared connections are between LNd4 and LNd5 (X cells provide strong inputs to both). (F) Postsynaptic partners of the LNds.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–F). Synaptic connections of each of the six LNds, LNd1 (A), LNd2 (B), LNd3 (C), LNd4 (D), LNd5 (E), and LNd6 (F) either to all neurons (left columns), to other clock cells except LNds (middle columns), or to other LNds (right columns). Neuronal morphology is shown in gray. Inputs to the LNds are shown in blue, outputs of the LNds are shown in magenta. Body IDs of each LNd are indicated on the right.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A–C). Synaptic connections of the three E cell classes, E3a (A), E1 (B), and E2 (C) either to all neurons (left columns), to other clock cells except LNds (middle columns), or to other LNds (right columns). LNd1 alone (E3b) is shown in Figure 2—figure supplement 1. Neuronal morphology is shown in gray. Inputs to the E classes are shown in blue, outputs are shown in magenta (left and middle columns). Within each group (right columns), input and output sides coincide and are indicated in green.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig4-v3.jpg)
+
+**Figure 4.:** (A–B) Jaccard indices for overlap in synaptic partners of M and E cells. Only includes synaptic partners that make medium or strong connections. Higher index values indicate more similarity in either inputs (A) or outputs (B). (C) Total input and output Synapse counts for M and E cells. (D–E) Strong shared connections of the four pdf +s LNvs. Only cells that share one connection with at least two M cells are shown. The strength (weight) of the connection is indicated. Only medium and strong connections are included. (D) The two cells that send strong connections to at least two M cells send strong connections to all four. (E) The six cells that receive strong connections from at least two M cells receive strong connections from all four. (F–G) Strong shared connections of the six LNds plus the 5th LNv (collectively referred to as E cells). Only cells that share a strong connection with at least two E cells are shown. The strength (weight) of the connection is indicated. Only medium and strong connections are included. (F) Cells that send strong connections to at least two E cells are included in the heatmap. (G) Cells that receive strong connections from at least two E cells are included in the heatmap.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Supervenn diagrams indicate the number of shared inputs between all combinations of neurons, either among the 5th LNv and the LNds (A) or among the 5th LNv and the pdf +s LNvs (B). Each neuron is represented in a row, boxes in color indicate inputs to that neuron. The numbers on the right y-axis indicate the total number of neurons that provide input to that cell. For example, 74 neurons provide medium and strong inputs to LNd3. The numbers on the x-axis indicate the number of shared inputs between different combinations of cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Supervenn diagrams indicate the number of shared outputs between all combinations of neurons, either among the 5th s-LNv and the LNds (A) or among the 5th LNv and the pdf + s LNvs (B). Each neuron is represented in a row, boxes in color indicate inputs to that neuron. The numbers on the right y-axis indicate the total number of neurons that are being contacted by a specific cell. For example, 172 neurons receive medium or strong contacts from LNd3. The numbers on the x-axis indicate the number of shared outputs between different combinations of cells.
 
 In addition to forming more synapses with more neurons than the PDF-positive s-LNvs, the LNds are markedly less uniform in their patterns of strong synaptic connections (Figures 3E, F, 4F, G). There is not a single source of strong synaptic input or a single neural target of synaptic output that forms strong connections with all six LNds (Figure 3E and F, Supplementary file 1, Supplementary file 2). The maximum number of LNds that receive strong synaptic inputs from the same presynaptic neuron is three (Figure 3). The maximum number of LNds that form strong synaptic outputs onto the same neuronal targets is also three (Figure 3F). Based on these patterns of shared strong connectivity, there appear to be two connectomic groups within the LNds, each consisting of three neurons: LNds 1–3 and LNds 4–6. LNds within these two subgroups are more similar in their patterns of strong synaptic connectivity to each other than to LNds of the other group (Figures 3E and F and 4F and G ). These two groups differ to a notable degree in the number of their synaptic connections, with the LNd 4–6 group forming approximately twice the number of synaptic connections (Figure 4C; Figure 3—figure supplement 1 and Supplementary file 1, Supplementary file 2).
 
@@ -72,7 +289,7 @@ Examining the cellular morphology of the LNds within the hemibrain volume reveal
 
 Though the Cry-positive and Cry-negative subgroups of the LNds appear to be two distinct connectomic subtypes, patterns of strong synaptic connectivity suggest that the LNds can be further divided based on their patterns of strong synaptic connections. Within the Cry-positive LNds, LNd4, and LNd5 share 27 strong synaptic inputs with one another, but only seven strong connections with LNd6 (Figure 3E). Similarly, LNd4 and LNd5 share 33 strong synaptic targets with one another but only seven or fewer with LNd6 (Figure 3F). Thus, the Cry-positive LNds appear to consist of at least two connectomic subgroups, LNd4/LNd5 and LNd6. This connectomic distinction is consistent with differences in neuropeptide expression within the Cry-positive LNds, with two LNds expressing short neuropeptide F (sNPF) and the third expressing ion transport peptide (ITP), a feature it shares with the Cry expressing 5th LNv (Johard et al., 2009). A similar distinction can be made for the Cry-negative LNds, LNd2/LNd3 and LNd1, in terms of patterns of strong synaptic connections (Figure 3E and F). Based on these patterns of strong synaptic connections, the LNd class appears to consist of four distinct connectomic types. This number matches the number of transcriptomic classes of LNds recently revealed by single cell sequencing (Ma et al., 2021).
 
-## The four connectomic groups of LNd clock neurons correspond to previously identified cellular and functional clock subsets
+### The four connectomic groups of LNd clock neurons correspond to previously identified cellular and functional clock subsets
 
 The LNds vary in their coupling patterns to the s-LNvs (Yao and Shafer, 2014) in addition to differences in their expression profiles (Figure 3D). The two sNPF positive LNds, which express Cry and PdfR, remain tightly coupled to the s-LNvs when the circadian clock in the latter neurons is slowed down (Yao and Shafer, 2014). The sNPF expressing LNds were termed E1 oscillators based on this tight temporal coupling to the s-LNvs (Yao and Shafer, 2014), which also express sNPF (Johard et al., 2009). The NPF/ITP expressing LNd, despite being receptive to PDF released from the LNvs, does not display coupling to the slowed s-LNv clocks and was grouped with the ITP-expressing 5th s-LNv as E2 oscillators (Yao and Shafer, 2014). The remaining LNds, which consist of the Cry-negative LNds, were classified as E3 oscillators, which are neither PDF receptive nor coupled to s-LNvs with modified clock speeds (Yao and Shafer, 2014).
 
@@ -84,7 +301,7 @@ The patterns of strong clock neuron connectivity within the hemibrain led us to 
 
 These functional LN divisions also have different numbers of synaptic connections and different ratios of input to output synapses. The M group displays the smallest number of synapses, E3 an intermediate number, and E1 and E2 form roughly twice the number of connections displayed by E3 (Figure 4C). The M and E1 groups also appear distinct from the E2 and E3 groups in the balance of output to input synapses. Though all the identified LNs form more synaptic outputs than inputs, output synapses in the M and E1 groups make up a larger proportion of total synaptic connections when compared to the E2 and E3 groups (Figure 4). Thus, the connectomic subgroups that emerged from our analysis of strong synaptic connectivity (Figures 2—4) are further supported by the combined analysis of strong and medium strength connectivity (Figure 4—figure supplements 1 and 2) and conform to previously hypothesized functional and cellular subgroups.
 
-## The functional/connectomic subgroups of LN clock cells display distinct synaptic output pathways
+### The functional/connectomic subgroups of LN clock cells display distinct synaptic output pathways
 
 In animals, the brain’s endogenous central circadian clock drives myriad behavioral, physiological, and endocrine rhythms. Synaptic connections between the central clock network and neurons outside the timekeeping network are thought to mediate daily signals from the circadian system to the neural centers responsible for driving daily physiological and behavioral changes. Though specific output pathways linking the clock to specific endocrine and sleep control centers have been previously described in the fly (reviewed by King and Sehgal, 2020; Shafer and Keene, 2021), there is still a great deal to be learned about circadian output signaling. For example, do the various functional groups of clock neurons converge on the same synaptic targets to shape the timing of the same daily outputs, as was recently described for arousal promoting pathways linking the LNs to dopaminergic neurons modulating the ellipsoid body (Liang et al., 2019)? Alternatively, do functional clock cell subgroups generally synapse onto distinct neural targets to produce uniquely phased outputs of different behavioral, physiological, and endocrine rhythms, as recently described for sleep modulating dorsal clock neurons (Guo et al., 2018; Lamaze et al., 2018)? We examined the patterns of synaptic outputs of the LN oscillator subgroups to determine how they coordinate the myriad circadian outputs.
 
@@ -95,6 +312,18 @@ As previously described (Schubert et al., 2018) M, E1, E2, and E3 subgroups can 
 **Figure 5.:** (A–B). Percentage of connections located in each of the indicated neuropils. Medium and strong connections are included. (A) Neuropils in which the outputs of each of the four pdf + s LNvs are located. (B) Neuropils in which the outputs of each of the LNds and the 5th s-LNv are located.
 
 The M subgroup’s shared strong synaptic outputs represent only three distinct cell types (Figure 6). Among these are five neurons within the SLP, which represent only two cell types: three neurons annotated as SLP-316-R (Figure 6A) and two neurons annotated as SLP-403-R (Figure 6B). The sixth strong shared output is an SMP-associated neuron named SMP232-R (Figure 6C). The SLP-316-R neurons strongly resemble DN1ps currently missing from the hemibrain annotation, which sends ventral projections alongside the dorsal projections of M cells and were named ventral-contralateral DN1ps by Lamaze et al., 2018 (Figure 6A and Figure 6—figure supplement 1). Jaccard indices support the conclusion that these strong shared targets of M output are three distinct cell types (Figure 6D). Remarkably, all of the shared strong output targets of the M group form synapses back onto identified clock neurons (Figure 6A–C), including strong synaptic connections onto DN1ps and LPNs (Figure 6E). Thus, all the strong and shared output targets of the M group project back to the clock neuron network, thereby implicating them as nodes within the clock neuron network, either as currently unidentified clock-containing neurons or non-clock-containing neurons. The M group appears to be unique in the extent to which its strong shared synaptic targets reenter the clock neuron network, with only half or fewer of strong E1, E2, or E3 targets recurring to the clock network in this fashion (Figure 6F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig6-v3.jpg)
+
+**Figure 6.:** (A–C) The six cells that are strong shared outputs of the four M cells involve three different neuronal types (SPL316-R, SLP403-R, and SMP232-R). The M cells outputs onto each representative neuron of each type are shown in magenta. Representative target neurons are shown in green. (A) M cells contact three SPL316 neurons. Left, all four M cells are shown in gray and their contacts to 355453590 (neuronal morphology shown in green) are shown in magenta. Right: 355453590 is shown in gray and its outputs to clock cells are shown in magenta. (B) M cells contact two SPL403-R neurons. Left, all four M cells are shown in gray and their contacts to 325455002 (neuronal morphology shown in green) are shown in magenta. Right: 325455002 is shown in gray and its outputs to clock cells are shown in magenta. (C) M cells contact one SMP232-R neuron. Left: all four M cells are shown in gray and their contacts to 325455002 (neuronal morphology shown in green) are shown in magenta. Right: 325455002 is shown in gray and its outputs to clock cells are shown in magenta. (D) Jaccard index of the six M cell shared output cells. The index is based on the similarity of their outputs, the more similar their outputs are the higher the index value. Y and x-axis indicate the cell body ID of each of the six cells. Their neuronal type is indicated to the left of the body ID on the y-axis. Only indices ≥ 0.01 are shown. (E) All strong shared outputs of M cells in turn contact clock neurons. On the x-axis, the clock neurons that receive contacts from each cell are indicated. The values on the cells represent the weight of each connection. Medium and strong connections are included. (F) Percent of strong shared outputs of each neuronal class that in turn sends contacts to clock cells. Medium and strong connections are included. E1=LNd4 and LNd5, E2=LNd6 and the 5th s-LNv, E3=LNd1, LNd2, and LNd3.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A–F). Synaptic connections of each of the six cells that receive strong shared inputs from all four pdf +s LNvs. Each cell is indicated in gray. Inputs from clock neurons to each cell are indicated in blue, and outputs from each cell to any clock neurons are indicated in magenta. (A–C) Three SLP316 receive the strongest contacts from all pdf +s LNvs and are indicated in gray. (D–E) Two SLP403 are indicated in gray. (F) SMP223 is indicated in gray.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/79139/elife-79139-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Five DN1ps (green) that exhibit contralateral as well as dorsal projections have been identified, and are referred to as DN1pA. (B) Two DN1ps (magenta) that lack a contralateral or dorsal projection but extend ventrally and medially have been identified and are referred to as DN1pB. (C) The three SPL316 neurons (gray) have both dorsal and ventral projections and a short medial projection. (D) Overlap of DN1pA, DN1pB, and SLP316.
 
 The E1 subgroup is characterized by many more strong/shared synaptic targets than the M subgroup (compare Figure 4E and G) and these targets appear, based on Jaccard indices, to include many distinct cell types (Figure 7D). A minority of these E1 targets (16 out of 38) form output synapses onto identified clock neurons within the hemibrain volume. Thus, the majority of the strong shared synaptic outputs of E1 do not immediately project back to the clock neuron network, in contrast to the uniform recurrence of strong shared M targets to the clock network (Figure 6A–E). Several of the targets receiving the strongest E1 synaptic input do form strong synaptic connections back onto clock neurons, particularly onto the E1 LNds themselves, in addition to LPNs and DN1as (Figure 7E). Notably, the strong shared targets that recur to the clock neuron network do not display the anatomical hallmarks of any of the currently unannotated clock neurons in the hemibrain dataset (e.g. Figure 7A–C). It, therefore, appears that neurons that do not themselves possess molecular clocks might nevertheless reside within the central timekeeping network and mediate polysynaptic connections between clock neurons.
 
@@ -118,13 +347,13 @@ Taken together, our analysis indicates that the strong synaptic outputs of the f
 
 ## Discussion
 
-## The clock neuron network within the hemibrain volume
+### The clock neuron network within the hemibrain volume
 
 Before discussing our connectomic analysis of the LN clock neuron classes, it is important to acknowledge the limitations of the dataset. The hemibrain represents a single hemisphere of the central brain and therefore does not contain all connections from the clock neuron cell bodies it contains. Several classes of clock neurons, including the large LNvs, the 5th LNv, the LNds, and DN1ps, project across the midline and form connections in the contralateral hemisphere (Helfrich-Förster et al., 2007b). Many of these connections are expected to reside outside of the hemibrain volume. Our estimates of inter-clock connectivity will therefore not include these contralateral connections. Furthermore, recent work suggests that electrical synapses within the clock neuron network likely contribute to circadian timekeeping (Ramakrishnan and Sheeba, 2021), but these are not visible in the hemibrain dataset (Scheffer et al., 2020). In addition, neuropeptides can be released non-synaptically (e.g. Yasuyama and Meinertzhagen, 2010), act over long distances, and such paracrine signaling likely contributes to circadian timekeeping in the brain (e.g. Maywood et al., 2011). The connectomic analysis presented here does not include such peptidergic connectivity. Thus, our analysis underestimates connectivity. In addition, clock neuron classes undergo daily morphological changes that are most likely accompanied by changes in the number and locations of synaptic connections (Duhart et al., 2020; Fernández et al., 2008; Petsakou et al., 2015; Song et al., 2021). Thus, the hemibrain represents only one timepoint, in the early morning, within a cycle of changing synaptic connections (Scheffer et al., 2020). Finally, the hemibrain dataset represents a single female fly, whereas the vast majority of experiments on the neural basis of circadian timekeeping have employed male files. Thus, unexpected connectivity may be due to differences between the well-characterized clock neuron network of males and the less well-studied female network.
 
 Though, we are focusing our analysis on the LN clock neuron classes, we have omitted the l-LNvs. We have done so because the synaptic outputs of the l-LNvs are thought to occur in the contralateral accessory medulla (AMe) and much of their synaptic inputs are thought to be located in regions of the medulla that are not included in the hemibrain volume (Helfrich-Forster, Yoshii, Helfrich-Förster et al., 2007a). We note, in this context, that the l-LNvs do not appear to make significant contributions to endogenous circadian timekeeping (Shafer et al., 2002; Shafer and Taghert, 2009; Yang and Sehgal, 2001), which is the phenomenon we seek to illuminate here. Despite these limitations, the organizational principles uncovered in this study provide insights into clock network organization and are sure to generate a significant number of testable hypotheses regarding network function (see below).
 
-## Connectomic classes of LN clock neuron mirror previously proposed functional and molecular LN sub-groups
+### Connectomic classes of LN clock neuron mirror previously proposed functional and molecular LN sub-groups
 
 The lateral neuron classes are critical to maintain endogenous circadian rhythms (Helfrich-Förster, 1998; Renn et al., 1999). An examination of genetic mosaics suggested that, within the LNs, the PDF expressing LNvs drive the morning peak of daily activity, whereas PDF negative LNds and 5th LNv drive the evening peak, leading to the designation of the former neurons as ‘Morning (M) Cells’ and the latter as ‘Evening (E) Cells’ (Grima et al., 2004; Stoleru et al., 2004). Interestingly, light appears to modulate the coordination between the morning and evening oscillators (Chatterjee et al., 2018; Lamba et al., 2018). Though named based on its anatomical similarity to the other LNv clock neurons in the larval brain (Kaneko and Hall, 2000; Rieger et al., 2006; Schubert et al., 2018), there are now numerous observations suggesting that the 5th-LNv is functionally and anatomically distinct from the PDF expressing s-LNvs in the adult brain: the four pdf +sLNvs are functionally associated with morning activity whereas the 5th LNv is associated with evening activity (Grima et al., 2004). Furthermore, the 5th LNv shares connectivity patterns, neuropeptide expression, and features of cellular anatomy with one of the Cry-expressing LNds (Johard et al., 2009; Liang et al., 2017; Schubert et al., 2018; Yao and Shafer, 2014). Our connectomic analysis further supports the conclusion that the 5th LNv is an LNd-like clock neuron that bears little resemblance, functionally or anatomically, to the PDF expressing s-LNvs.
 
@@ -132,13 +361,13 @@ Functional and anatomical analysis suggests that the LN neurons can be divided i
 
 In addition, our analysis supports the existence of an additional subgroup within the LNs, suggesting that the Cry-negative E3 class likely consists of two subgroups: LNd2 and LNd3, which share a large proportion of their strong synaptic inputs and outputs, and LNd1, which shares significantly fewer strong connections with the other two Cry-negative LNds (Figure 3E and F). Placing LNd1 into its own LNd subgroup aligns our connectomic LN divisions with a recent transcriptomic analysis of the clock neuron network that divided the LNds into four clusters: The two sNPF and Cry expressing LNds (LNd4 and LNd5, i.e. E1), the single ITP and Cry expressing LNd (LNd6, i.e. the E2 LNd), two NPF expressing LNds lacking Cry expression, and a single Cry-negative LNd that lacks NPF (Ma et al., 2021).
 
-## The M group forms very few synaptic connections with other identified clock neuron classes in the hemibrain dataset
+### The M group forms very few synaptic connections with other identified clock neuron classes in the hemibrain dataset
 
 The s-LNvs of the M group, though they form medium strength connections with one another, are almost completely isolated from the other identified clock neurons within the hemibrain dataset (Figures 1C and 2H). Though this picture may ultimately underestimate of inter-clock connectivity if the strong shared SLP targets of M output (Figure 6A) are determined to be the DN1ps currently missing from the annotation (Figure 6—figure supplement 2). The predicted synaptic inputs to the M group from the DN1ps (Collins et al., 2012; Fernandez et al., 2020; Guo et al., 2016; Yadlapalli et al., 2018) are not apparent in the hemibrain dataset, though this may again be a limitation of the current annotation in which approximately half of the DN1ps are unaccounted for. However, strong DN1p to s-LNv connections are lacking even if we consider the three strong M cell targets, the SLP316s, to be missing DN1ps, as these form synapses on DN1ps and LPNs, but not the M group. Remarkably, there are no synaptic connections between the M and E1 groups, the latter of which was differentiated from E2 by the tight coupling of E1 molecular clocks to those of the M group (Yao and Shafer, 2014). Thus, the strong coupling of M and E1 may take place through non-synaptic connections, consistent with recent work suggesting that the M group mediates its influence over endogenous timekeeping via non-synaptic signaling mechanisms, most likely via the non-synaptic release of PDF peptide (Fernández et al., 2008; Yasuyama and Meinertzhagen, 2010).
 
 Compared to the other LN subgroups, the M group forms the smallest number of synaptic connections (Figure 4C). This group is also unique among the LN groups by virtue of the fact that all of its shared strong synaptic output targets form strong synaptic connections onto clock neurons (DN1ps and LPNs) (Figure 6E). Thus, the strongest synaptic outputs of the M groups appear to be intimately associated with the clock neuron network, either as neurons directly linking different clock neuron classes, or as currently unidentified clock neurons within the hemibrain dataset.
 
-## The E1 and E2 groups are major conduits of synaptic output from the clock network
+### The E1 and E2 groups are major conduits of synaptic output from the clock network
 
 Compared to the other three LN functional groups, the E1 group forms the largest number of connections onto postsynaptic neurons (Figures 3F and 4C) and the majority of their strong and shared synaptic targets do not themselves form synapses onto identified clock neurons within the hemibrain dataset. Of the minority of strong shared E1 targets that do synapse onto identified clock neurons, the majority form strong reciprocal connections with E1 itself (Figures 7E and 10A). Thus, the E group most strongly coupled with the critical M group (Yao and Shafer, 2014) also appears to be a major conduit of synaptic output from the clock neuron network.
 
@@ -150,13 +379,13 @@ Among the identified clock neurons within the hemibrain dataset, the E2 LNs (LNd
 
 Like the strong shared synaptic targets of E1 LNds, the majority of E2 strong output targets do not synapse onto identified clock neurons. But, in contrast to E1, the minority of E2 targets that do form strong connections with identified clock neurons do so more broadly than clock recurrent E1 targets, forming strong synaptic connections onto the M group, E2, and the LPNs (Figure 8E). Though not as numerous as the synaptic partners of E1, E2 forms many more synaptic connections than either M or E3, and together E1 and E2 make up the bulk of synaptic output from the LN classes (Figure 4C and Supplementary file 2). Thus, there appear to be two major circadian output conduits from the LN clock neurons within the hemibrain volume, one of which is tightly coupled to the M group and the other whose output is likely more strongly shaped by other clock neuron classes (Yao and Shafer, 2014).
 
-## The E3 group is characterized by a pattern of strong synaptic output that is distinct from E1 and E2 and is synaptically isolated from other identified clock neurons
+### The E3 group is characterized by a pattern of strong synaptic output that is distinct from E1 and E2 and is synaptically isolated from other identified clock neurons
 
 The E3 LNds are distinct from the E1 and E2 groups, in that they form approximately half the number synaptic connections (Figure 4C). While clearly distinct from E1 and E2, the E3 group displays some similarity to the M group with respect to its connectivity to identified clock neurons in the hemibrain, forming very few connections with other clock classes while being interconnected by medium strength connections (Figure 1C). Among the identified clock neurons in the hemibrain, the strong output targets of E3 make strong reciprocal connections back to E3, but not to other identified clock neuron classes, though they do form a few medium strength connections onto LPNs (Figure 9E). This sets E3 clearly apart from the other LN groups, all of which have strong synaptic targets that form strong synapses onto other clock neuron classes (compare Figures 6E—9). Thus, the E3 group appears to be uniquely isolated from other identified clock neuron classes for both direct and indirect synaptic connectivity.
 
 The E3 group is unique among the LN clock neurons by virtue of its lacking CRY and PdfR expression (Im et al., 2011; Yoshii et al., 2008) and is therefore thought to be relatively isolated from both light/dark cycles (Yoshii et al., 2010) and PDF released from the LNvs. Indeed, the E3 group entrains its molecular clocks more readily to environmental temperature cycles than to light cycles (Yoshii et al., 2010) and does not synchronize with PDF expressing LNvs with slowed clocks (Yao and Shafer, 2014). A close examination of E3 output pathways and the extent to which they converge or fail to converge on endocrine, sleep, and premotor centers will offer important insights into how light and temperature are integrated by the circadian system to entrain to environmental cycles of both light and temperature, the latter of which lag behind the former in natural environments.
 
-## Neurons without endogenous molecular clocks are likely integral to the central circadian pacemaker network
+### Neurons without endogenous molecular clocks are likely integral to the central circadian pacemaker network
 
 The LN clock neuron classes are critical nodes of circadian timekeeping and are predicted to communicate directly with endocrine, sleep, and premotor centers to drive circadian outputs (Cavey et al., 2016; King and Sehgal, 2020; Potdar and Sheeba, 2018; Shafer and Keene, 2021) and with other clock neuron classes to coordinate network timekeeping (reviewed by Ahmad et al., 2021). Thus, the LN classes are assumed to synapse upon other clock neurons to promote an endogenous sense of time and upon non-clock neurons to mediate daily changes in physiology and behavior. Our analysis reveals the presence of a third type of LN clock output target, neurons that mediate connections between identified clock neurons (e.g. Figure 10B and C).
 
@@ -170,7 +399,7 @@ This testable hypothesis is just one of many that emerge from the comprehensive 
 
 ## Methods
 
-## Connectome data and neuron identification
+### Connectome data and neuron identification
 
 All of the data analyzed in this study come from the Hemibrain v1.2.1 dataset made publicly available by Janelia Research Campus (Scheffer et al., 2020). The data details a full connectome derived from EM sections of a significant portion of the right hemisphere of a female Drosophila brain and small portions of the left hemisphere. These data were collected from a wild-type female brain reared under a 12 hr light, 12 hr dark cycle. The specimen was dissected at 5 days of age, 1.5 hr after lights-on (Hulse et al., 2021; Scheffer et al., 2020).
 
@@ -180,11 +409,11 @@ Each neuron in the database has a unique bodyID number and may also be identifie
 
 The full table of clock neurons, their unique body IDs, and their sequential labels are provided below. The hemibrain annotation does not sequentially label instances of the same cell type. The Fly Brain Observatory does sequentially label cell type instances; however, there is no guarantee that the sequential labeling will consistently correspond to the specific body IDs. Thus, we employed a sequential labeling on a single retrieval from FBO and have used this labeling consistently throughout the paper (Table 1).
 
-## Morphological data visualization with FlyBrainLab
+### Morphological data visualization with FlyBrainLab
 
 FlyBrainLab (Lazar et al., 2021) is available as a python environment and a user-friendly web interface. The platform displays the hemibrain EM data and enables the analysis of the connectome data. The morphology images in our paper were generated in FlyBrainLab.
 
-## Connectivity analysis
+### Connectivity analysis
 
 Synaptic connectivity data were retrieved from the Janelia hemibrain dataset (https://neuprint.janelia.org/). Our analyses included the synapses to or from traced but unnamed fragments as well as select orphan bodies, in addition to synapses from full, traced, and named neurons. Fragments are partial or truncated neurons that mainly lie beyond or at the boundaries of the hemibrain section. Although fragments were often unidentified cell types, we felt their inclusion was warranted to obtain as accurate a picture as possible of the relative amounts of synaptic connectivity to and from clock neurons.
 
@@ -194,12 +423,16 @@ We adopted the criteria from Scheffer et al., 2020 to categorize connectivity st
 
 The Sankey figures are based only on strong synaptic connections. Connectivity data were retrieved using the criteria for strong connections and exported into tables. The network structure of the clock connectome was graphed using the synaptic connectivity data retrieved from the hemibrain data and the networkX python package (https://networkx.org). Nodes are individual clock neurons and edges are labeled with the total synaptic connection weights from one neuron to another.
 
-## Jaccard indices
+### Jaccard indices
 
-The Jaccard similarity coefficient is defined as the ratio of the intersection and the union of two sets.J(A,B) = A ∩ BA ∪ B
+The Jaccard similarity coefficient is defined as the ratio of the intersection and the union of two sets.
+
+$$
+J(A,B) = \frac{A ∩ B}{A ∪ B}
+$$
 
 In the context of our study, the Jaccard index represents the amount of overlap among the synaptic partners of two neurons. The Jaccard index is a number between 0 and 1, with 0 indicating no overlap and with 1 indicating that the sets of synaptic partners for two neurons are identical.
 
-## Availability of analysis code
+### Availability of analysis code
 
 The data retrieval routines and the analyses used in this paper were done in the python coding language. We have made our scripts publicly available in a GitHub repository (Li et al., 2022): https://github.com/ClockConnectome/clock-connectome(copy archived at swh:1:rev:0c820068458bd9249785c704716acfd1a9301f1c). The license can be found here: https://github.com/ClockConnectome/clock-connectome/blob/main/LICENSE.

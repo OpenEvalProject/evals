@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Graduate Program in Neuroscience, University of Washington Seattle United States
-2. https://ror.org/00cvxb145 Department of Physiology and Biophysics, Washington National Primate Research Center, University of Washington Seattle United States
+1. Graduate Program in Neuroscience, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Department of Physiology and Biophysics, Washington National Primate Research Center, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -40,9 +40,33 @@ Using this technique, we found that many DO cells responded linearly to differen
 
 We analyzed the spiking responses of 98 V1 neurons from two awake, fixating male macaque monkeys (69 from Monkey 1, 29 from Monkey 2). Each neuron was visually stimulated with pixel white noise: a 10×10 grid of square, 0.2° pixels, each of which changed randomly and independently on every screen refresh. Data were analyzed by spike-triggered averaging to identify a pair of functionally distinct subfields within the classical RF. Visual stimulation was then targeted to these subfields to characterize their individual and joint contributions to the neuron’s firing rate.
 
-## RF characterization
+### RF characterization
 
 Spike-triggered averages (STAs) of some neurons resembled uniform blobs, indicating invariant spectral sensitivity across the RF. Other STAs were spatially structured, for example, consisting of a set of yellow pixels adjacent to a set of blue pixels (Figure 2A). These structured STAs are a signature of neurons that compare spectral information across space. If an STA did not reveal at least two distinct subfields, the neuron was passed over for data collection.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-v2.jpg)
+
+**Figure 2.:** (A) Pixel white noise stimulus (left), spike-triggered average (STA; right). Two sets of contiguous pixels were yoked to create two hyperpixels, each of which stimulated one RF subfield (white outlines). (B) Hyperpixel white noise stimulus (left) and STA at the peak frame (middle). Red, green, and blue curves (right) represent the average red, green, and blue phosphor intensities, relative to background, as a function of time before a spike. (C) A firing rate map for the example DO cell. The probability of spiking (grayscale) is plotted as a function of projection magnitudes of the hyperpixel stimulus onto the right and left halves of the STA (the 45° and 135° directions, respectively). Solid and dashed white lines are contours of constant spiking probability from GLM and GQM fits to the data, respectively. The firing rate map is binned to facilitate visualization, but models were fit to unbinned data. (D) Histogram of white noise NLIs for DO cells. The NLI of the example neuron is marked with a tick, and the median is marked with a triangle. (E) Same as (D) but for simple cells. (F) Same as (D) but for the other spatially opponent cells. DO, double-opponent; GLM, generalized linear model; GQM, generalized quadratic model; NLI, nonlinearity index; RF, receptive field.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Stimuli from Phase 1 (black) and Phase 2 (red) were projected onto the spatial–temporal–chromatic STA shown in Figure 2B. Projection magnitudes of both stimuli occupy only a small region of the display gamut (dashed gray rectangle). (B) Two-dimensional histogram of the Phase 1 projections shown in (A, C). Same as (B) but for the Phase 2 stimuli. (D) The probability of spiking (the ratio of spike triggering to total stimuli) as a function of hyperpixel stimulus projections onto the two halves of the STA. Projection magnitudes are shown from the 5th to the 95th percentile. Within this range, the probability of a spike increases approximately as a linear combination of the stimulus projections, but this range is a small fraction of what can be achieved on the display. STA, spike-triggered average.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Scatterplot of the firing rates (mean ± sem) in response to pixel and hyperpixel white noise for DO cells (red), simple cells (black), and OSO cells (gray). (B) Same as (A) but comparing responses to Phase 3 stimuli and hyperpixel white noise. DO, double-opponent; OSO, other spatially opponent.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each neuron is represented by a line joining two circles. Circle position indicates normalized cone weights and fill indicates the sign of the S-cone weight (filled = positive, unfilled = negative). DO, double-opponent; STA, spike-triggered average.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Probability of spiking was predicted as a function of projection magnitudes onto the two halves of the hyperpixel STA (Proj 1 and Proj 2) using a generalized linear model (GLM) and a generalized quadratic model (GQM). (B) An ROC analysis was used to assess the ability of the GLM and GQM to classify stimuli into those that preceded a spike by a response latency (inset, black) and those that did not (inset, gray). The identity line is shown for reference (dashed line). ROC, receiver operating characteristic.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Histogram of eigenvalues obtained by randomizing time shifts between hyperpixel white noise stimuli and evoked spikes. Eigenvalue from the unrandomized data is shown as a gray triangle. In this simulation, the spiking response was given by the product of two half-wave rectified linear subfields. This nonlinearity tightens the distribution of excitatory stimuli and therefore does not manifest in the PC1. (B) A firing rate map for the simulated neuron in (A) in the same format as Figure 2C. Contours of constant spiking probability (white lines) are curved, and white noise NLI (0.028) is large, indicative of nonlinear spatial integration. (C, D). Same as (A, B) but for a simulated neuron with a half-wave rectified response to modulations of one color channel and a full-wave rectified response to another. This neuron has a large PC1 due to the full-wave rectification but a small white noise NLI (0.00) because the nonlinearity is hidden once the stimuli are projected onto the STA, which is the first step in the calculation of the white noise NLI. NLI, non-linearity index; STA, spike-triggered average.
 
 A major goal of these experiments was to characterize spatial integration within the RFs of DO cells. The pixel white noise stimulus is ill-suited for achieving this goal because it modulates V1 neurons weakly, and nonlinear spatial integration might appear linear in response to small perturbations. To drive the neurons more effectively, we customized the stimulus for each neuron studied. From the pixel white noise STA, we identified two contiguous groups of pixels, each covering an RF subfield, and yoked each group into a ‘hyperpixel’ (Figure 2B). White noise modulation of the two hyperpixels stimulated the two subfields strongly and independently (Figure 2—figure supplement 1), driving a wide range of firing rates (Figure 2—figure supplement 2).
 
@@ -50,7 +74,7 @@ On the basis of responses to the hyperpixel white noise stimulus, neurons with s
 
 The two sides of the hyperpixel STAs from simple cells and DO cells were complementary, or nearly so. This complementarity was evident via a comparison between the background-subtracted red, green, and blue phosphor intensities at the two hyperpixels (Pearson’s r=–0.94±0.11 (mean ± SD) for simple cells and –0.76±0.23 for DO cells), and between cone weights derived from these RGB values (Figure 2—figure supplement 3). The results of these analyses are color space-dependent, but the fact that similar results were obtained in the physiologically relevant space of cone contrast and the device-specific space in which sampling errors are independent across color channels, attests to the spatial opponency of simple cells and DO cells in our data set.
 
-## Measuring spatial integration using hyperpixel white noise
+### Measuring spatial integration using hyperpixel white noise
 
 We quantified interactions between RF subfields using an approach similar to one used previously to study interactions between stimulus features that trigger spikes in complex cells (Rust et al., 2005; Touryan et al., 2002). In these previous studies, white noise stimuli were projected onto the plane spanned by the first and second principal components of the spike-triggering stimuli. Similarly, we projected the hyperpixel white noise stimuli onto the two halves of the STA (see Materials and methods: Hyperpixel white noise analysis of signal combination across subfields). These two projection values reveal how similar the stimulus was to the two halves of the hyperpixel STA: the larger the projection, the more of the STA is present in the stimulus. We visualized a firing rate map by binning stimulus projections and calculating the proportion within each bin that drove a spike (Figure 2C). The probability of spiking increased with the stimulus projection onto individual RF subfields, and it rose more steeply when both projections increased together.
 
@@ -62,7 +86,7 @@ NLIs differed across the three cell types (median white noise NLI for DO cells=0
 
 In interpreting these data, it is important to note that a lack of evidence for a difference between simple and DO cells is not evidence that a difference does not exist. This experiment probed neurons with low-contrast, rapidly modulated stimuli (Figure 2—figure supplement 1). The possibility remains that differences between simple and DO cells become evident when they are tested with stimuli of higher contrast or longer duration. We tested this possibility in Phase 3 of our experimental protocol, as described below.
 
-## Measuring spatial integration using the isoresponse method
+### Measuring spatial integration using the isoresponse method
 
 For each neuron, we found a collection of stimuli that evoked the same response. Each stimulus was spatially identical to the hyperpixel STA, but the contrast of the two hyperpixels was adjusted according to the algorithm described in Materials and methods: Contrast staircase procedure. Negative contrasts were allowed.
 
@@ -72,6 +96,28 @@ If a neuron combines cone-contrast signals linearly across its RF, then stimuli 
 
 In Figure 3A, each point represents a stimulus, distance from the origin represents contrast relative to the background, and angle represents contrast between the two sides of the stimulus. Within this plane, a search was performed to find physically distinct stimuli that evoked the same neuronal response. Angles were selected pseudo-randomly, and distances were titrated by a staircase procedure until a target firing rate was achieved (Figure 3—figure supplement 1). To mitigate the impact of spontaneous activity on the staircase procedure, the target firing rate for each neuron exceeded the 90th percentile of the baseline firing rate distribution, and for 95/98 neurons, the target firing rate exceeded the 95th percentile (Figure 3—figure supplement 2). Target firing rates did not differ across cell types (p=0.63, Kruskal-Wallis test).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-v2.jpg)
+
+**Figure 3.:** (A) Data from the example DO cell shown in Figure 2A–C. Dots indicate staircase terminations (target firing rate=30 ips) and gray dashed lines indicate staircases that exceeded the monitor gamut. Linear (green) and nonlinear (orange) fits to the data are similar. Pixel STA (to the right of the hyperpixel STA) and cone weights derived from the color weighting functions (bar plot) are also shown. (B) Same as (A) but for a simple cell (target firing rate=50 ips). L+M spectral sensitivity manifests as bright green (ON) or dark purple (OFF) when probed with RGB white noise (Chichilnisky and Kalmar, 2002). (C) Same as (A) for a cell that was spatially opponent but neither simple nor DO (target firing rate=20 ips). (D) Histogram of isoresponse NLIs. NLIs of example neurons are marked with ticks, and medians are marked with triangles. (E) Scatter plot of isoresponse NLIs and white noise NLIs. Example neurons are marked with yellow asterisks. Error bars were obtained via a jackknife procedure (see Materials and methods). DO, double-opponent; NLI, non-linearity index; STA, spike-triggered average.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Neuronal response (in impulses per second, ips) is plotted as a function of trial number (intervening stimuli skipped). The target firing rate was 30 ips (dashed line). (B) The projection magnitude as a function of trial number for the same staircase. The staircase termination point is defined as the projection magnitude of the stimulus presented in the final (17th) trial. DO, double-opponent.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Dots indicate the target firing rates and vertical lines span the 5th to the 95th percentiles of the basline firing rate distribution. On average, the target firing rate was 15.65 standard deviations above the mean baseline firing rate. DO, double-opponent; OSO, other spatially opponent.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Example neurons from Figure 3 are marked with yellow asterisks. DO, double-opponent; OSO, other spatially opponent.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/68133/elife-68133-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** A luminance tuning index was calculated for each cell by weighting and summing normalized cone weights (0.83 L+0.55 M+0.03 S). This index ranges from 0 to 1. Cells were classified as DO if their index value was <0.33 and they had an insignificant PC1. Cells were classified as simple if their index value was >0.67 and they had an insignificant PC1. Remaining cells were classified as OSO. Histograms of white noise NLIs for DO (A), simple (B), and OSO (C) cells classified this way. White noise NLIs of DO and simple cells were similar (p=0.78, Mann-Whitney U-test) and lower than those of OSO neurons (p=0.004, Mann-Whitney U-test). (D–F) Identical to (A–C) but showing isoresponse NLIs. Isoresponse NLIs for DO and simple cells were lower than for OSO neurons (p=0.06, Mann-Whitney U-test). DO, double-opponent; NLI, nonlinearity index; OSO, other spatially opponent.
+
 For some neurons, staircase termination points lay close to a line when plotted in the stimulus space (Figure 3A–B & Figure 3—figure supplement 3). This result shows that the excitation produced by a preferred light in one part of the RF can be canceled by an anti-preferred light in a neighboring part with a fixed constant of proportionality over the entire gamut of our video display. This cancelation is consistent with linearity of spatial integration (Figure 1A) and not with differential sensitivity to contrast increments and decrements (Figure 1B). However, not all neurons behaved this way. For some neurons, staircase termination points lay on a curve (Figure 3C), consistent with nonlinear spatial integration.
 
 To determine quantitatively whether a line or a curve provided the better description of the staircase termination points, we compared linear and quadratic models fits for each neuron (see Materials and methods: Evaluating model fits to staircase termination points; Figure 3—figure supplement 4). We defined an isoresponse nonlinearity index (isoresponse NLI) similarly to the white noise NLI defined previously (see Materials and methods: Evaluating model fits to staircase termination points). An isoresponse NLI of 0 indicates that the linear and quadratic models made equally accurate response predictions, NLI<0 indicates that the linear model predicted responses more accurately than the quadratic model, and NLI>0 indicates that the quadratic model predicted responses more accurately than the linear model. Cross-validation ensured that the quadratic model did not achieve greater prediction accuracy simply by virtue of having more parameters.
@@ -80,7 +126,7 @@ Isoresponse NLIs of DO cells and simple cells were close to zero and did not dif
 
 Isoresponse NLIs (from Phase 3 of the experiment) were positively correlated with white noise NLIs (from Phase 2 of the experiment) (r=0.30, p=0.001, Spearman’s correlation; Figure 3E). This correlation was driven primarily by OSO cells (r=0.41, p=0.004,) and not by DO (r=0.01, p=0.95,) or simple cells (r=–0.19, p=0.34). Even for the OSO cells, however, this correlation was far from perfect. Many neurons had white noise NLIs near 0 but isoresponse NLIs>>0. The reason for this discrepancy is unclear but is consistent with the higher contrasts used in Phase 3 engaging nonlinear mechanisms that were not engaged in Phase 2. However, we cannot rule out the possibility that isoresponse NLIs were inflated by nonstationarity in firing rate combined with the sequential measurement procedure used in Phase 3, or by other differences in the data collection or analysis procedures.
 
-## Measuring signal integration within individual subfields
+### Measuring signal integration within individual subfields
 
 An appreciable fraction of neurons in our data set, principally those in the OSO category, were poorly described by the linear model. We asked whether the nonlinear model shown in Figure 1E described these neurons more accurately. Under this model, signals from the three types of cone photoreceptors combine linearly within each RF subfield and are then transformed nonlinearly prior to spatial integration.
 
@@ -100,7 +146,7 @@ Within-subfield NLIs differed across the three cell types (p<0.0001, Kruskal-Wal
 
 **Figure 5.:** NLIs of example neurons in Figure 3 are marked with ticks, and medians are marked with triangles. GLM, generalized linear model; GQM, generalized quadratic model.
 
-## Relationship between S-cone input and signal integration across and within subfields
+### Relationship between S-cone input and signal integration across and within subfields
 
 Many V1 neurons that are driven strongly by modulations of the S-cones are poorly described by a linear model (Horwitz et al., 2005). Consistent with this observation, we found that the absolute value of the normalized S-cone weight derived from the hyperpixel STA was correlated with isoresponse NLI (r=0.23, p=0.02, Spearman’s correlation; Figure 6). However, S-cone weight did not correlate significantly with the other two NLIs (white noise and within-subfield, both r<0.2, p>0.05).
 
@@ -114,7 +160,7 @@ A fundamental goal of visual neuroscience is to characterize the transformation 
 
 Below, we compare our results to those from previous studies and discuss how our results are affected by cell classification criteria and the monkeys’ eye movements. We then discuss the implications of our results for the circuitry that underlies DO and simple cells and how these two cell types may contribute to downstream image processing. We conclude with speculations on parallels between the processing of color and other stimulus features in V1 by complex cells.
 
-## Relationship to previous work
+### Relationship to previous work
 
 Linearity in the visual system is ‘a rare and (apparently) prized commodity in neural signal processing’ (Shapley, 2009). The linearity of V1 simple cells is not an accident of random convergence of LGN afferents but rather the product of specialized excitatory and inhibitory circuitry (Ferster, 1988; Hirsch et al., 1998; Tolhurst and Dean, 1990). The discovery that V1 simple cells combine signals linearly across their RFs contributed to scientific progress in many ways. It provided a bridge between neurophysiology and the fields of psychophysics and computer vision. It provided guidance for how to characterize neuronal stimulus tuning efficiently. It served as a basis for more elaborate models; all V1 neurons exhibit some degree of nonlinearity, but the linear model remains a cornerstone of even nonlinear V1 models (Carandini, 2006; Carandini et al., 2005).
 
@@ -124,7 +170,7 @@ Three previous studies investigated spatial integration by DO cells. Using the 2
 
 Most other recent studies of DO cells used cone-isolating stimuli and limited mixtures of those stimuli, which cannot completely reveal interactions among cone types (Conway, 2001; Johnson et al., 2001, Johnson et al., 2004; Conway and Livingstone, 2006; Johnson et al., 2008). In contrast, we used a stimulus set that modulated all three cone types together in a variety of proportions. In further distinction from other studies, we stimulated DO cells with colored edges to confirm the spatial and spectral sensitivity inferred from the STAs.
 
-## Cell categorization criteria
+### Cell categorization criteria
 
 We classified neurons as OSO (other spatially opponent) if their hyperpixel STAs indicated spatial opponency and the first principal component (PC1) of hyperpixel white noise stimuli preceding spikes (PC1) was larger than expected by chance. This latter criterion was necessary to satisfy the assumptions underlying the conversion of the STA to cone weights, and it ensured that the neurons surviving this filter did not exhibit full-wave rectified responses, which would be inconsistent with the classical definitions of simple cells and DO cells.
 
@@ -134,17 +180,17 @@ Some cells that we classified as OSO would likely have been classified as DO in 
 
 The cone weight criteria for inclusion into the simple cell and DO cell categories were asymmetric because the variability in estimated L- and M-cone weights is greater for non-opponent cells than for opponent cells (Horwitz et al., 2007). Reclassifying DO, simple, and OSO cells with different cone weight criteria did not change the main results of this study (Figure 3—figure supplement 5).
 
-## Eye movements
+### Eye movements
 
 The monkeys, although rewarded for fixating, made small eye movements that moved the stimuli relative to the RF. These eye movements blurred STAs and inflated PC1s (for cells with spatially opponent RFs), but these effects were modest because the eye movements were small relative to the stimulus elements. Across experiments, the average standard deviation of horizontal and vertical eye positions (including measurement error) was 0.13°, and the largest standard deviation across all experiments was 0.18° (for reference, the size of each pixel in Phase 1 was 0.2°). Neurons with RF subfields too small to produce a spatially opponent STA were passed over for data collection. Importantly for the conclusions of this study, neither the horizontal (H) nor vertical (V) standard deviation varied significantly across cell category (Kruskal-Wallis tests, p<0.1) or correlated with isoresponse NLI (Spearman rank correlation coefficients, r=–0.03 (H), –0.18 (V), p>0.05). The fact that we were able, for many neurons, to cancel the effect of an increase in preferred color on one side of the RF with a decrease in preferred color on the other side during Phase 3 of the experimental protocol attests to the stability of the image on the retina relative to the sizes of the RFs we studied. We conclude that eye movements affected the measurements but are unlikely to have contributed substantively to the main conclusions of this study.
 
-## Neural circuitry underlying DO and simple cells
+### Neural circuitry underlying DO and simple cells
 
 The spectral sensitivity of a V1 neuron is determined by the spectral sensitivity of its excitatory and inhibitory afferents. A cell that is excited by L-ON and M-ON afferents in one part of its RF, and by L-OFF and M-OFF afferents in another, is spatially opponent but not cone-opponent. Spatial linearity in such a cell could be implemented via spectrally matched push-pull inhibition: L-OFF and M-OFF inhibition from the ON subfield and L-ON and M-ON inhibition from the OFF subfield. Pooling the same afferent signals to produce cone-opponency (e.g., pairing L-OFF with M-ON and L-ON with M-OFF) with otherwise identical circuitry would produce a linear L-M DO cell.
 
 S-cone signals, which are prevalent in DO cells and, to a lesser degree in simple cells, defy this simple explanation. S-cone ON and OFF pathways in the retina and LGN are highly asymmetric with regard to the L- and M-cone signals they carry (Tailby et al., 2008; Wool et al., 2019). One possibility is that these asymmetries contribute to the nonlinearity of S-cone-dominated V1 neurons.
 
-## Contributions to downstream processing
+### Contributions to downstream processing
 
 Simple cells are thought to provide the dominant input to complex cells (Alonso and Martinez, 1998; Hubel and Wiesel, 1962). Under a standard model, complex cells pool signals from simple cells with overlapping RFs and shared preferred orientation (Figure 7A). One possibility is that some complex cells also receive input from DO cells (Figure 7B). We speculate that complex cells receiving (cone non-opponent) simple cell input only are luminance-sensitive (Figure 7C) whereas those that receive input from simple and DO cells are both color- and luminance-sensitive (Figure 7D). This conjecture is consistent with the observation that the preferred orientation of color-sensitive complex cells is maintained across color directions (Johnson et al., 2001). It is also consistent with the observation that color-sensitive complex cells have multiple preferred color directions by STC analysis (Horwitz et al., 2007) and no null directions in cone-contrast space (Horwitz and Hass, 2012). Complex cells that are insensitive to chromatic modulation abound (e.g., Figure 7C), whereas those that are insensitive to luminance modulation are exceedingly rare, if present (Horwitz et al., 2007).
 
@@ -154,7 +200,7 @@ Simple cells are thought to provide the dominant input to complex cells (Alonso 
 
 Alternatively, the chromatic sensitivity of color-sensitive complex cells could arise entirely from DO cell inputs (Michael, 1978), which have been reported to be similarly responsive to chromatic and luminance contrast (Johnson et al., 2001; Johnson et al., 2004; Johnson et al., 2008). Yet another possibility is that it arises directly from LGN inputs. This explanation is consistent with the direct koniocellular projections to the cytochrome oxidase blobs in area V1 (Xiao, 2014), but is difficult to reconcile with the sharp orientation tuning and spatial phase-invariance of some color-sensitive complex cells across color directions. These visual tuning properties would seem to require a phase- and orientation-selective upstream intermediate or else elaborate dendritic computations.
 
-## Analogous neural coding of color and stereopsis
+### Analogous neural coding of color and stereopsis
 
 The stereotyped microcircuitry of area V1 contributes to vision for form, color, depth, and motion. These distinct visual modalities have distinct computational demands, but V1 circuits may contribute to each via a small set of operations that process different signals in similar ways. Parallels in the processing of binocular disparity and motion direction in V1 are well established (Adelson and Bergen, 1991). We speculate that color and stereopsis have heretofore unappreciated parallels and that models of binocular disparity tuning may provide a useful guide for the study of cone-opponent and non-opponent signal combinations in V1.
 
@@ -166,31 +212,76 @@ A parallel phenomenon may exist in the domain of color. Under natural viewing co
 
 ## Materials and methods
 
-## Contact for resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Macaca mulatta, male)</td>
+      <td>Monkey</td>
+      <td>WashingtonNational PrimateResearchCenter</td>
+      <td></td>
+      <td>Rhesus monkey</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>https://www.mathworks.com/products/matlab.html RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Sort Client</td>
+      <td>Plexon</td>
+      <td>http://www.plexon.comRRID:SCR_003170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Offline Sorter</td>
+      <td>Plexon</td>
+      <td>http://www.plexon.comRRID:SCR_000012</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for resource sharing
 
 Further information and requests for resources should be directed to and will be fulfilled by the Lead Contact, Gregory D. Horwitz (ghorwitz@u.washington.edu). Data and analysis code are available at https://github.com/horwitzlab/Chromatic_spatial_contrast (copy archived at swh:1:rev:fe8d51dc732fdc0336532ecc47cb7b18c01dc8cf, De and Horwitz, 2021b).
 
-## General
+### General
 
 All protocols conformed to the guidelines provided by the US National Institutes of Health and the University of Washington Animal Care and Use Committee. Data were collected from two adult male rhesus macaques (Macaca mulatta). Each monkey was surgically implanted with a titanium headpost and a recording chamber (Crist Instruments) over area V1. Eye position was monitored continuously using either an implanted monocular scleral search coil or a digital eye-tracking system (SMI iView X Hi-Speed Primate, SensoMotoric Instruments).
 
-## Task
+### Task
 
 The monkeys sat in a primate chair 1 m from a cathode ray tube (CRT) monitor (Dell Trinitron Ultrascan P991) in a dark room during the experiments. In a subset of sessions, the distance was reduced to 0.7 m and the pixel size was changed accordingly to preserve angular subtense. During white noise presentation, the monkeys fixated a centrally located dot measuring 0.2°×0.2° and maintained their gaze within a 1.6°×1.6° fixation window. During the closed-loop isoresponse measurements, the monkeys maintained their gaze within a 0.8°×0.8° window. Successful fixation was rewarded with apple juice, and fixation breaks aborted trials.
 
-## Monitor calibration
+### Monitor calibration
 
 Monitor calibration routines were adapted from those included in Matlab Psychophysics toolbox (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997). The emission spectrum and voltage-intensity relationship of each monitor phosphor were measured with a spectroradiometer (PR650, PhotoResearch Inc). Stimuli were gamma-corrected in software to compensate for the nonlinearity of voltage-intensity relationships. The color resolution of each channel was increased from 8 to 14 bits using a Bits++ video signal processor (Cambridge Research Systems, Ltd). The monitor refreshed at 75 Hz and background was uniform gray (x=0.3, y=0.3, Y=55–75 cd/m2). Tabulated primary emission spectra and gamma-corrected background RGB levels are available at https://github.com/horwitzlab/Chromatic_spatial_contrast (De and Horwitz, 2021b).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 We recorded from well-isolated V1 neurons (RF eccentricity: 1.3°–5.9°, median=3.6°) using extracellular tungsten microelectrodes (Frederick Haer, Inc) lowered through the dura mater via hydraulic microdrive (Stoelting Co). Electrical signals were amplified, digitized at 40 kHz, and recorded using Sort Client software (Plexon, Inc). Action potentials were identified offline using Offline Sorter software.
 
-## Experimental protocol
+### Experimental protocol
 
 Each experiment consisted of three phases. During the first phase, spatiochromatic tuning was probed with a white noise pixel stimulus and data were analyzed online by spike-triggered averaging. During the second phase, the white noise stimulus was customized to the RF of each neuron. During the third phase, high-contrast images with the same spatial structure as the Phase 2 stimulus were presented for relatively long durations (300 ms). Each of these phases is detailed below.
 
-## Phase 1: pixel white noise
+#### Phase 1: pixel white noise
 
 Each pixel white noise frame consisted of a 10×10 grid of pixels each of which subtended 0.2°×0.2° (Figure 2A; Horwitz et al., 2007). The stimulus changed every 13.33 ms. The intensity of each phosphor at each pixel was modulated independently according to a truncated Gaussian distribution with a standard deviation that was 15% of the physically achievable range. The space-time averaged intensity of each phosphor was equal to its contribution to the background.
 
@@ -198,7 +289,7 @@ Neuronal responses to the pixel white noise stimulus were analyzed by spike-trig
 
 The pixel white noise stimulus modulated neurons weakly for three reasons. First, individual stimulus pixels were small relative to V1 RFs. This was necessary to distinguish one RF subfield from another but resulted in each subfield being stimulated by independent pixel modulations that tended to cancel. Second, the pixels modulated rapidly, so multiple frames were effectively averaged together in the early visual system, prior to V1. Longer frame durations might have been preferable because spatial, not temporal, aspects of the response were of primary interest. Third, phosphor intensities were drawn from Gaussian distributions. Most of the probability mass of a Gaussian distribution is near the mean, which was identical to the background, so high-contrast pixels were improbable (Figure 2—figure supplement 1A, B). Non-Gaussian distributions complicate spike-triggered covariance analysis (Paninski, 2003).
 
-## Phase 2: hyperpixel white noise
+#### Phase 2: hyperpixel white noise
 
 For each neuron with an STA containing at least two spatially distinct subregions (with distinct chromatic preferences), we created a custom ‘hyperpixel’ white noise stimulus by yoking the pixels within each of the two subfields (Figure 2B). Phosphor intensities at the two yoked collections of pixels (the two hyperpixels) were modulated according to the same Gaussian distributions used in Phase 1. Pixels outside of the RF were not modulated.
 
@@ -208,82 +299,124 @@ To compute a single set of cone weights for each neuron, we decomposed the weigh
 
 To examine how signals were combined across the two targeted subfields, we computed the 15-frame hyperpixel STA and convolved it with the reconstructed hyperpixel stimulus movie. This operation provides two numbers for each frame that represent how strongly each short, overlapping segment of the stimulus movie drove the two RF subfields. We visualized a firing rate map from these pairs of values by binning them and then computing the proportion of stimuli within each bin that preceded a spike (Chichilnisky, 2001). We also fit these data with linear and nonlinear models to examine integration across RF subfields quantitatively (see Hyperpixel white noise analysis of signal combination across subfields).
 
-## Phase 3: isoresponse measurement
+#### Phase 3: isoresponse measurement
 
 We selected the hyperpixel STA frame that differed most from the background and separated it into its two components, each of which stimulated one RF subfield with its preferred light (represented along the 45° and 135° directions in Figure 3A). We then linearly combined these two images in different proportions to create a family of stimuli that can be represented in the same plane used to construct the firing rate map in Phase 2 (Figure 2C). The origin of the coordinate system represents the gray background of the display. Direction represents the contrast between the two halves of the stimulus, and distance from the origin represents stimulus contrast relative to the background.
 
 Contrast was quantified as follows. Each half of the hyperpixel STA was represented as a three-element unit vector. For example, if the STA indicated maximal sensitivity to increments of the red primary, half as much sensitivity to decrements of the green primary, and zero sensitivity to the blue primary, this vector would be [0.89 –0.46 0]. If the background was [0.5 0.5 0.5] (where ‘0’ means completely off and ‘1’ means maximum intensity), then possible stimuli included [0.589 0.454 0.5] (positive contrast), [0.411 0.546 0.5] (negative contrast), and [0.5 0.5 0.5] (zero contrast). To reduce RGB triplets to single numbers, we subtracted the background and then projected onto the unit vector: (e.g., [0.589 0.454 0.5]-[0.5 0.5 0.5]*[0.89 –0.46 0]T=0.1). This calculation provides one of the two coordinates needed to represent the stimulus as a point on a plane. The other coordinate was calculated identically, using the other half of the STA. Note that this stimulus space is different for each neuron because the axes are derived from each neuron’s hyperpixel STA.
 
-## Contrast staircase procedure
+### Contrast staircase procedure
 
 To examine interactions between subfields, we identified collections of stimuli described above that each evoked the same number of spikes using the following procedure. On each trial, the computer presented a stimulus and counted spikes from the response latency, defined as the peak frame of the hyperpixel STA from Phase 2, until the end of the stimulus presentation. This spike count was compared to an experimenter-defined target response (Figure 3—figure supplement 1A). If the spike count was lower than the target response, the contrast of the image was increased by a factor of 1.35. If the spike count exceeded the target response, the contrast was decreased by a factor of 0.65. This process continued until a reversal occurred. A reversal is a response that exceeded the target response after having fallen below it on the previous stimulus presentation or a response that fell below the target having exceeded it on the previous stimulus presentation. After each reversal, the change in contrast per trial decreased by 25% (Figure 3—figure supplement 1B). The staircase halted after seven reversals or whenever the contrast exceeded the physical limitations of the display. Staircase termination points were taken as estimates of the contrast that evoked the target response. Presentations of stimuli in pairs of directions in the stimulus space were randomly interleaved to mitigate non-stationarity due to adaptation. Each stimulus was presented for 300 ms and was separated from the preceding and subsequent stimuli by more than 1 s.
 
-## Cell screening
+### Cell screening
 
 We recorded from 232 well-isolated V1 neurons and made isoresponse measurements from 98 of them. These 98 neurons were selected on the basis that they were well-isolated throughout all the three phases of the experimental protocol and had STAs with clear spatial structure. Neurons were classified as ‘simple’, ‘double-opponent,’ or ‘other spatially opponent’ on the basis of responses to hyperpixel white noise as described below.
 
-## Spike-triggered covariance analysis
+### Spike-triggered covariance analysis
 
 We distinguished simple cells from DO cells on the basis of cone weights, and cone weights are interpretable only under a linear model of signal combination across cone types (Weller and Horwitz, 2018). To identify neurons that are poorly described by a linear model, we computed the first principal component (PC1) of the spike-triggering stimuli orthogonal to the hyperpixel STA (Horwitz et al., 2005; Rust et al., 2005; Touryan et al., 2002). A PC1 that is larger than expected by chance reveals a nonlinear component of the cell’s response to the white noise stimulus that cannot be captured by an output nonlinearity. We assessed the significance of the PC1 by randomly shifting spike trains in time relative to the Phase 2 stimulus movie, recalculating the PC1, and obtaining its eigenvalue (Rust et al., 2005). This procedure was repeated 1000 times. If the largest eigenvalue from the unrandomized data exceeded 95% of the largest eigenvalues from the randomized data sets, we concluded that the PC1 was significant at the 0.05 level. Thirty-five neurons with a significant PC1 were classified as OSO on this basis.
 
 Neurons lacking a significant PC1 were classified as simple if their L- and M-cone weights had the same sign, accounted for 80% of the total cone weight, and individually accounted for at least 10%. None of the simple cells we studied showed evidence of opponent input from the S-cones. Twenty-six cells in our data set were categorized as simple. A cell was classified as DO if it lacked a significant PC1 and had a pair of cone weights of opposite sign. Cone weights of small absolute value were ignored; to be classified as DO, a neuron either had to have (1) an S-cone weight that accounted for at least 20% of the total in addition to a pair of opponent weights, or (2) L- and M-cone weights that accounted for at least 80% jointly and 20% individually. Using these criteria, we classified 1 S−M+L, 3 S+M−L, and 2 S−M−L cells as DO by the first criterion and 19 L−M cells as DO by the second criterion. Twenty-five cells were categorized as DO. The 12 neurons that did not meet the cone weight criteria for the DO or simple cell categories were classified as OSO, leading to a total of 47 in this category.
 
-## Luminance tuning index
+### Luminance tuning index
 
 To test the robustness of the results to the cone weight classification criteria, we segregated simple cells from DO cells using an alternative approach. For each neuron, we calculated a luminance tuning index (Figure 3—figure supplement 5) by projecting the normalized cone weights of each cell onto a set of cone weights derived from the photopic luminous efficiency function. The luminance cone weights were estimated by regressing the Vos, 1978 2° photopic luminosity function onto the Stockman-Macleod-Johnson 2° cone fundamentals to find the best-fitting coefficients (0.83L+0.55M+0.03S) (Stockman et al., 1993; Vos, 1978). The luminance tuning index ranged from 0 to 1. Cells were classified as DO if their index value was <0.33 and if they lacked a significant PC1 (n=22). Cells were classified as simple if their index value was >0.67 and if they lacked a significant PC1 (n=27). The remaining 49 neurons were classified as OSO.
 
-## Hyperpixel white noise analysis of signal combination across subfields
+### Hyperpixel white noise analysis of signal combination across subfields
 
 We fit the data from Phase 2 of the experimental protocol with a GLM and a GQM.
 
-The GLM had the form:(1)predresp=11+e−(w1P1+w2P2+c)
+The GLM had the form:
 
-where predresp is the predicted response of the neuron and P1 and P2 are the projection magnitudes of the 15-frame-long segments of the stimulus movie onto the two halves of the temporo-chromatic hyperpixel STA. w1 , w2 , and c were fit using the Matlab routine fitglm to maximize the binomial likelihood of a spike. Predresp is constrained to be ≤1 because it represents a spiking probability, and the constant term, e-c , captures the overall responsivity of the cell.
+$$
+predresp=\frac{1}{1+e^{−(w_{1}P_{1}+w_{2}P_{2}+c)}}
+$$
 
-The GQM had the form:(2)predresp=11+e−(w1P12+w2P22+w3P1P2+w4P1+w5P2+c)
+where $predresp$ is the predicted response of the neuron and $P_{1}$ and $P_{2}$ are the projection magnitudes of the 15-frame-long segments of the stimulus movie onto the two halves of the temporo-chromatic hyperpixel STA. $w_{1}$ , $w_{2}$ , and $c$ were fit using the Matlab routine fitglm to maximize the binomial likelihood of a spike. Predresp is constrained to be ≤1 because it represents a spiking probability, and the constant term, $e^{-c}$ , captures the overall responsivity of the cell.
 
-## Evaluating the performance of generalized linear and quadratic models
+The GQM had the form:
 
-We quantified the ability of the fitted models to predict whether or not each stimulus segment evoked a spike using ROC analysis (Green and Swets, 1966). Classification error was defined as one minus the area under the ROC curve (Figure 2—figure supplement 2B). To avoid overfitting, the model was fit with 90% of the data and tested on the remaining 10%. The white noise nonlinearity index (white noise NLI) for each cell was defined as:(3)Whitenoise NLI=log10(median(Classification errorGLMClassification errorGQM))
+$$
+predresp=\frac{1}{1+e^{−(w_{1}P_{1}^{2}+w_{2}P_{2}^{2}+w_{3}P_{1}P_{2}+w_{4}P_{1}+w_{5}P_{2}+c)}}
+$$
+
+### Evaluating the performance of generalized linear and quadratic models
+
+We quantified the ability of the fitted models to predict whether or not each stimulus segment evoked a spike using ROC analysis (Green and Swets, 1966). Classification error was defined as one minus the area under the ROC curve (Figure 2—figure supplement 2B). To avoid overfitting, the model was fit with 90% of the data and tested on the remaining 10%. The white noise nonlinearity index (white noise NLI) for each cell was defined as:
+
+$$
+Whitenoise NLI=log_{10}(median(\frac{Classification error_{GLM}}{Classification error_{GQM}}))
+$$
 
 where the median is taken is taken across 10 cross-validation data partitions.
 
-## Error estimates of NLIs
+### Error estimates of NLIs
 
 The reliability of the NLIs was assessed using a jackknife resampling procedure. As described above, a GLM and GQM classification error was computed from multiple data partitions. An NLI was calculated from each pair of classification errors, and the spread of NLIs was quantified using the standard jackknife formula (Efron and Tibshirani, 1994).
 
-## Model fits to isoresponse staircase termination points
+### Model fits to isoresponse staircase termination points
 
 To assess the linearity of signal integration across the gamut of our video display, we fit the staircase termination points from Phase 3 with linear and quadratic models. Fitting was performed using a standard inbuilt Matlab routine for function minimization (fmincon) to minimize the Tukey-bisquare objective function (Fox, 2002).
 
-Searches for stimuli that produced the target response were conducted in multiple directions of the stimulus space (e.g., Figure 3A–C), but angles were fixed. We therefore fit the data with a model that assumes radial error. The linear model can be written as:(4)A r cosθ+B r sinθ=1(5)r=x2+y2,θ=tan−1yx
+Searches for stimuli that produced the target response were conducted in multiple directions of the stimulus space (e.g., Figure 3A–C), but angles were fixed. We therefore fit the data with a model that assumes radial error. The linear model can be written as:
 
-Where x represents the projection of each image onto one hyperpixel of the STA and y represents the projection onto the other hyperpixel (see Phase 3: Isoresponse measurement). A and B are fitted parameters. Fitting was performed on log(r), not r, because contrast was adjusted multiplicatively, not additively, during the staircase procedure.
+$$
+A r cos\theta+B r sin\theta=1
+$$
 
-The quadratic model can be written as:(6)A(r cosθ)2+B(r sinθ)2+Cr2cosθsinθ+Drcosθ+Ersinθ=1
 
-where A, B, C, D, and E are fitted parameters.
 
-## Evaluating model fits to staircase termination points
+$$
+r=\sqrt{x^{2}+y^{2}},\theta=tan^{−1}\frac{y}{x}
+$$
 
-We evaluated the quality of model fits by calculating the sum of Tukey-bisquared errors between the data and the model predictions. To avoid overfitting, we used leave-one-out cross-validation. The isoresponse nonlinearity index (isoresponse NLI) was defined as the median of the ratio of cross-validated linear model errors and quadratic model errors in logarithmic units.(7)Isoresponse NLI=log10(median(Crossvalidated errorLinearmodelCrossvalidated errorQuadraticmodel))
+Where $x$ represents the projection of each image onto one hyperpixel of the STA and $y$ represents the projection onto the other hyperpixel (see Phase 3: Isoresponse measurement). $A$ and $B$ are fitted parameters. Fitting was performed on log(r), not r, because contrast was adjusted multiplicatively, not additively, during the staircase procedure.
+
+The quadratic model can be written as:
+
+$$
+A(r cos\theta)^{2}+B(r sin\theta)^{2}+Cr^{2}cos\thetasin\theta+Drcos\theta+Ersin\theta=1
+$$
+
+where $A$, $B$, $C$, $D$, and $E$ are fitted parameters.
+
+### Evaluating model fits to staircase termination points
+
+We evaluated the quality of model fits by calculating the sum of Tukey-bisquared errors between the data and the model predictions. To avoid overfitting, we used leave-one-out cross-validation. The isoresponse nonlinearity index (isoresponse NLI) was defined as the median of the ratio of cross-validated linear model errors and quadratic model errors in logarithmic units.
+
+$$
+Isoresponse NLI=log_{10}(median(\frac{Crossvalidated error_{Linearmodel}}{Crossvalidated error_{Quadraticmodel}}))
+$$
 
 NLI reliability was quantitated with the jackknife procedure described above.
 
-## Hyperpixel white noise analysis of signal combination within subfields
+### Hyperpixel white noise analysis of signal combination within subfields
 
 To test the nonlinear model in Figure 1C, we fit the data collected during Phase 2 of the experiment with GLMs and GQMs that predicted spikes on the basis of RGB values at individual hyperpixels. The models classified the RGB triplet on each frame as belonging to the spike-triggering or non-spike-triggering ensemble (Figure 2—figure supplement 4).
 
 The latency of the response, which was needed to associate stimulus frames with spikes, was based on the time of the hyperpixel STA peak. Unlike the ‘across-subfield’ analysis, we only selected a single frame for ‘within-subfield’ analysis. Basing the within-subfield analysis on individual frames bypassed the assumption of linear temporal integration required to reduce multi-frame segments to single average RGB values and allowed us to focus on the integration of RGB values within a single subfield.
 
-The GLM had the form:(8)predresp=11+e−(w1R+w2G+w3B+c)
+The GLM had the form:
 
-where w1 , w2 , w3 , and c are fitted parameters. The output of the model is the probability of spiking given a triplet of background-subtracted red, green, and blue phosphor intensities (R, G, and B).
+$$
+predresp=\frac{1}{1+e^{−(w_{1}R+w_{2}G+w_{3}B+c)}}
+$$
 
-The GQM had the form:(9)predresp=11+e−(w1R2+w2G2+w3B2+w4RG+w5GB+w6RB+w7R+w8G+w9B+c)
+where $w_{1}$ , $w_{2}$ , $w_{3}$ , and $c$ are fitted parameters. The output of the model is the probability of spiking given a triplet of background-subtracted red, green, and blue phosphor intensities ($R$, $G$, and $B$).
 
-We used tenfold cross-validation to avoid overfitting and quantified the ability of the models to predict whether a stimulus frame preceded a spike or not using an ROC as described above. In total, 40 models were fit per neuron (one GLM and one GQM at each hyperpixel with tenfold cross-validation for each). To report a single value for each neuron, we averaged classification error rates across subfields and computed the median across cross-validation folds using the formula:(10)Within subfield NLI=log10(median(∑subfield=12Classification errorGLM∑subfield=12Classification errorGQM))
+The GQM had the form:
 
-## Drifting gratings
+$$
+predresp=\frac{1}{1+e^{−(w_{1}R^{2}+w_{2}G^{2}+w_{3}B^{2}+w_{4}RG+w_{5}GB+w_{6}RB+w_{7}R+w_{8}G+w_{9}B+c)}}
+$$
+
+We used tenfold cross-validation to avoid overfitting and quantified the ability of the models to predict whether a stimulus frame preceded a spike or not using an ROC as described above. In total, 40 models were fit per neuron (one GLM and one GQM at each hyperpixel with tenfold cross-validation for each). To report a single value for each neuron, we averaged classification error rates across subfields and computed the median across cross-validation folds using the formula:
+
+$$
+Within subfield NLI=log_{10}(median(\frac{\sumsubfield=12Classification error_{GLM}}{\sumsubfield=12Classification error_{GQM}}))
+$$
+
+### Drifting gratings
 
 Two neurons were stimulated with drifting, sinusoidal gratings (two cycles per degree, 3 Hz, 1° diameter circular aperture) that modulated L- and M-cones with identical contrasts either in phase (L+M) or in anti-phase (L−M) (Figure 7). These neurons were not tested with the standard protocol.

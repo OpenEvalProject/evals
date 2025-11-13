@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Biology, Duke University Durham United States
+1. Department of Biology, Duke University Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ We test if snapping shrimp face tradeoffs that scale with the condition as predi
 
 ## Results
 
-## Morphology
+### Morphology
 
 To identify weapon expenditures that vary with size as predicted by the handicap principle, we tested if snapping shrimp individuals bearing large weapons sacrificed resources from the abdomen (the muscular segmented region of the body used for swimming) (Arnott et al., 1998; Hunyadi et al., 2020). Reduced abdomen size could lower fitness through reduced survival, given that abdomen length is positively correlated with predator escape velocity in other benthic decapod crustaceans (Hunyadi et al., 2020). Snapping shrimp with smaller abdomens could therefore be more vulnerable to predation. Furthermore, female snapping shrimp hold eggs underneath their abdomen, and reduced abdomen size could constrain maximum egg clutch volume. Thus, we tested whether snapping claws exhibit a morphological tradeoff with abdomen size, and whether this expenditure increases as body size decreases.
 
@@ -51,15 +51,15 @@ As predicted, weapons with greater snapping claw residuals exhibited tradeoffs w
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/84589/elife-84589-fig3-v2.jpg)
 
-**Figure 3.:** Alpheus heterochaelis males.The tradeoff between snapping claw residuals and abdomen residuals was steepest for the smallest individuals in Alpheus heterochaelis males (a) but not females (b). Lines represent model predictions for standardized carapace lengths of −3, –2, –1, 0, 1, 2, and 3. A standardized carapace length of 0 represents an individual with the mean carapace length, and each increment of 1 represents one standard deviation. F-test sample sizes and p-values are shown above each graph. The interaction term was significant for males (t-test, n=329, p=0.00209) but not for females (t-test, n=348, p=0.932).
+**Figure 3.:** The tradeoff between snapping claw residuals and abdomen residuals was steepest for the smallest individuals in Alpheus heterochaelis males (a) but not females (b). Lines represent model predictions for standardized carapace lengths of −3, –2, –1, 0, 1, 2, and 3. A standardized carapace length of 0 represents an individual with the mean carapace length, and each increment of 1 represents one standard deviation. F-test sample sizes and p-values are shown above each graph. The interaction term was significant for males (t-test, n=329, p=0.00209) but not for females (t-test, n=348, p=0.932).
 
-## Kinematics
+### Kinematics
 
 Larger weapons produce longer-lasting cavitation bubbles and greater pressures (Dinh and Patek, 2023). However, individuals that grow larger weapons than predicted by snapping claw scaling relationships do so using less muscle and more exoskeleton (Dinh, 2022). Reducing the amount of muscle in the claw may hinder elastic loading and snap production. Therefore, we tested if growing weapons larger than predicted by the weapon size scaling relationships reduced the average angular velocity of the snapping claw, cavitation bubble duration, or pressure of the snap. We predicted that this tradeoff would be steepest in the smallest males as predicted by the handicap principle.
 
 Surprisingly, weapon residuals did not affect any measured snap parameter in A. heterochaelis males or females: Neither weapon residual nor its interaction with claw mass were significant predictors of log10(average angular velocity), log10(bubble duration), or sound pressure level (Supplementary file 1, Table 7-12).
 
-## Reproductive tradeoffs
+### Reproductive tradeoffs
 
 To determine if female-specific expenditures explain why females have smaller proportional weapon sizes than males, we tested for tradeoffs between female weaponry and egg production. Analogous tradeoffs between primary and secondary sexual characteristics arise for males in taxa as diverse as narwhals and dobsonflies (Dines et al., 2015; Liu et al., 2015; Simmons et al., 2017). In snapping shrimp, females bear the entire burden of egg production (Knowlton, 1980). Therefore, resources allocated to costly traits like weaponry should reduce the allotment invested in primary reproduction. We used the same residual tradeoffs approach that was used to test for morphological tradeoffs between weapons and abdomens.
 
@@ -67,13 +67,13 @@ For female A. heterochaelis, weapon residuals had egg production tradeoffs. Weap
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/84589/elife-84589-fig4-v2.jpg)
 
-**Figure 4.:** Alpheus heterochaelis females exhibited tradeoffs between weapon size and egg mass volume, average egg volume, and egg count.As carapace length increased, (a) egg mass volume increased, (b) average egg volume remained constant, and (c) egg count increased. As snapping claw residuals increased, (d) egg mass volume residuals decreased, (e) average egg volume decreased, and (f) egg count residual decreased. F-test sample size and p-values are shown above each graph.
+**Figure 4.:** As carapace length increased, (a) egg mass volume increased, (b) average egg volume remained constant, and (c) egg count increased. As snapping claw residuals increased, (d) egg mass volume residuals decreased, (e) average egg volume decreased, and (f) egg count residual decreased. F-test sample size and p-values are shown above each graph.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/84589/elife-84589-fig5-v2.jpg)
 
-**Figure 5.:** Alpheus heterochaelis females (blue) exhibited steeper tradeoffs between snapping claw residuals and average egg volume compared to larger females (yellow).Lines represent model predictions for standardized carapace lengths of −2, –1.5, −1, –0.5, 0, 0.5, 1, and 1.5. A standardized carapace length of 0 represents an individual with the mean carapace length, and each increment of 1 represents one standard deviation.
+**Figure 5.:** Lines represent model predictions for standardized carapace lengths of −2, –1.5, −1, –0.5, 0, 0.5, 1, and 1.5. A standardized carapace length of 0 represents an individual with the mean carapace length, and each increment of 1 represents one standard deviation.
 
-## Pairing
+### Pairing
 
 If males benefit more from large weaponry than females, then that benefit could also contribute to the sex differences in weaponry. Therefore, we tested if males with large weaponry benefited through improved pairing success. Snapping shrimp form size-assortative pairs (Mathews, 2002b; Nolan and Salmon, 1970). We tested whether large weapons improved the likelihood of pairing and whether individuals with large weapons paired with relatively larger mates. If either of these pairing advantages disproportionately benefits males, then this could explain why males have larger weapons than females.
 
@@ -81,13 +81,13 @@ In A. heterochaelis, paired males had significantly greater weapon residuals com
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/84589/elife-84589-fig6-v2.jpg)
 
-**Figure 6.:** Alpheus heterochaelis benefited from positive snapping claw residuals through pairing in a way that females did not.(a) Paired Alpheus heterochaelis males had greater snapping claw residuals than unpaired males, but there was no such trend in females. Sample sizes are shown below each jittered dot plot. p-value for the statistically significant t-test is shown above the graph. (b) Males with more positive residuals paired with relatively larger pair mates, but there was no such trend in females. F-test sample sizes and p-values are shown above each graph. (c) The probability of being paired was positively correlated with snapping claw residuals (but not carapace length) for males. Meanwhile, the same probability was correlated with carapace length (but not snapping claw residuals) for females. 1 indicates paired individuals, and 0 indicates unpaired individuals. Z-test sample sizes and p-values are shown above each graph. Shaded regions in regressions are 95% confidence intervals.
+**Figure 6.:** (a) Paired Alpheus heterochaelis males had greater snapping claw residuals than unpaired males, but there was no such trend in females. Sample sizes are shown below each jittered dot plot. p-value for the statistically significant t-test is shown above the graph. (b) Males with more positive residuals paired with relatively larger pair mates, but there was no such trend in females. F-test sample sizes and p-values are shown above each graph. (c) The probability of being paired was positively correlated with snapping claw residuals (but not carapace length) for males. Meanwhile, the same probability was correlated with carapace length (but not snapping claw residuals) for females. 1 indicates paired individuals, and 0 indicates unpaired individuals. Z-test sample sizes and p-values are shown above each graph. Shaded regions in regressions are 95% confidence intervals.
 
 For males, the probability of being paired increased as snapping claw residual increased (n=233, b=16.879, SE = 5.652, z=2.986, p=0.00345), but there was no significant relationship with carapace length (p=0.104; Supplementary file 1, Table 17). By contrast, for females, the probability of being paired increased as carapace length increased (n=253, b=0.574, SE = 0.142, z=4.034, p=3.72×10–5) but there was no significant relationship with snapping claw residual (p=0.487; Supplementary file 1, Table 18; Figure 6).
 
 For paired males, as weapon residuals increased, the relative rostrum-to-telson lengths of their pair mates also increased (linear model F-test, n=111, p=0.00467). However, there was no significant trend in females (linear model F-test, n=111, p=0.0649) (Figure 6; Supplementary file 1, Table 19, 20).
 
-## Seasonal trends
+### Seasonal trends
 
 Because the benefits of being paired and the costs of egg production are most salient during the breeding season, we expected investment into different morphologies to change as the costs and benefits do. Specifically, we predicted that snapping claw residuals would be greater for males during the breeding season. Meanwhile, we predicted that abdomen residuals for both sexes would decrease during the breeding season as males invest more into their weapons and as females invest more into their eggs.
 
@@ -95,7 +95,7 @@ Abdomen residuals were reduced in male A. heterochaelis during the breeding seas
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84589/elife-84589-fig7-v2.jpg)
 
-**Figure 7.:** Alpheus heterochaelis shifted investment from their abdomen to their snapping claws during the breeding season, whereas female weapon scaling slopes decreased during the breeding season.During the breeding season, males had (a) reduced abdomen residuals and (b) increased snapping claw residuals. Females did not exhibit significant morphological shifts. (c) Female Alpheus heterochaelis scaling slopes were significantly shallower during the breeding season compared to the nonbreeding season. Male scaling slopes did not significantly change seasonally, but during the breeding season, there was an upward shift in snapping claw lengths across all rostrum-to-telson lengths. Shaded regions are 95% confidence intervals. F-test sample sizes and p-values are shown above each graph. **p<0.01 ***p<0.001.
+**Figure 7.:** During the breeding season, males had (a) reduced abdomen residuals and (b) increased snapping claw residuals. Females did not exhibit significant morphological shifts. (c) Female Alpheus heterochaelis scaling slopes were significantly shallower during the breeding season compared to the nonbreeding season. Male scaling slopes did not significantly change seasonally, but during the breeding season, there was an upward shift in snapping claw lengths across all rostrum-to-telson lengths. Shaded regions are 95% confidence intervals. F-test sample sizes and p-values are shown above each graph. **p<0.01 ***p<0.001.
 
 Furthermore, the scaling slope for female snapping claws became less steep during the breeding season (interaction term t-test: n=348, b=–0.183, p=0.000838). There was no such seasonal shift in allometry for males (interaction term t-test: n=329, p=0.233). After the nonsignificant interaction term was removed from the male model, there was a significant increase in snapping claw lengths across all rostrum-to-telson lengths (t-test, n=329, b=0.023, = 5.62×10–6) (Figure 7; Supplementary file 1, Table 22-24).
 
@@ -135,13 +135,13 @@ Despite the challenges of observational inference, the statistical approach of t
 
 Empirical evidence of fitness costs is elusive because fitness manifests from a mosaic of subtle expenditures. Some of these expenditures, like reproduction, are obviously correlated to fitness, while others might have subtle yet meaningful effects. There is likely a smorgasbord of expenditures that we did not test for here, some of which are undetectable in purely observational work. For example, in other crustaceans, weapons hinder locomotion and reduce survival during predator escape (Hunyadi et al., 2020). These expenditures need to be identified through future experiments. Other expenditures might not be tractable through morphology, but through social interactions. In the paper wasp Polistes dominulus, for example, body size is correlated with pigment deposition in facial masks. Poor-condition wasps with facemasks manipulated to appear formidable experienced social costs via conspecific aggression (Tibbetts and Dale, 2004). The observational work we present here is a starting point to identify the fitness consequences of large weaponry. We encourage observations of behavior in naturalistic conditions and experiments that manipulate sexual traits to paint the entire mosaic of fitness-relevant expenditures of weaponry.
 
-## Conclusion
+### Conclusion
 
 The handicap principle suggests that individuals are plastic in their ability to signal at different levels, and they signal at the level that optimizes their cost-benefit difference (Grafen, 1990a; Grafen, 1990b; Nur and Hasson, 1984; Zahavi, 1977). This hypothesis requires costs or benefits that differ between individuals. However, the debate and acceptance of this principle have relied more on theory and less on empirical evidence (Penn and Számadó, 2020). We showed through field observations that size-dependent expenditures can ensure signal reliability through morphological and reproductive tradeoffs. Furthermore, we co-opted the same logic of differential costs and benefits to show that large weapons are particularly beneficial to males and particularly burdensome to females. These sex-specific implications of weaponry on reproduction could underlie sex and seasonal differences in costly trait expression.
 
 ## Materials and methods
 
-## Animal collection
+### Animal collection
 
 In total, we collected 677 Alpheus heterochaelis snapping shrimp from Beaufort, North Carolina, USA (NCDENR Scientific and Education permit # 707075 to Duke University Marine Laboratory). We measured each individual and tested for a tradeoff between the abdomen and snapping claw size (see Morphological tradeoff and Seasonal trends sections below). Subsets of these same Alpheus heterochaelis individuals were used in the remaining analyses: We used 76 individuals to test for kinematic tradeoffs (see Kinematics section), 37 egg-bearing females to test for reproductive tradeoffs (see Reproductive tradeoffs section), and 486 individuals to test for pairing benefits (see Pairing section). Finally, we captured 45 Alpheus estuariensis individuals from the same site and 53 Alpheus angulosus individuals from Beaufort, South Carolina, USA, and we tested whether morphological tradeoffs also arose in these species. No ethical permits were required.
 
@@ -149,38 +149,38 @@ We collected A. heterochaelis and A. estuariensis once per month during the spri
 
 For all three species, we measured each individual’s carapace length, abdomen length, rostrum-to-telson length, and snapping claw length using digital calipers (resolution +/−0.02 mm, Husky Tools, Atlanta, Georgia, USA) (see Supplementary file 1, Figure 1, 2). We built log-log scaling relationships for snapping claws, and abdomen length as a function of rostrum-to-telson length, sex, and their interaction. Abdomen length and carapace length both contribute to rostrum-to-telson length, but we used each of the three metrics in separate analyses because the existing literature indicates that each metric predicts different biologically relevant functions. For example, carapace length is the best-known predictor of resource-holding potential (Dinh et al., 2020; Dinh and Patek, 2023), abdomen length in other benthic decapods predicts predator escape velocity (Hunyadi et al., 2020), and rostrum-to-telson length predicts egg production (Knowlton, 1980).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were conducted using, R version 4.1.1, RStudio version 1.4.1717, and the tidyverse suite of R packages (R Development Core Team, 2018; RStudioTeam, 2021; Wickham et al., 2019).
 
-## Morphological tradeoffs
+### Morphological tradeoffs
 
 For each species, we hypothesized that growing a larger snapping claw would coincide with reduced abdomen size. We tested this relationship by calculating the residuals from the log-log abdomen and snapping claw scaling relationships defined above, where positive residuals indicate a larger abdomen or snapping claw than predicted by the scaling relationship. To test for a morphological tradeoff, we built regressions using abdomen residuals as the response variable and snapping claw residuals, sex, and their interaction as the explanatory variables. We repeated this analysis for A. heterochaelis, A. angulosus, and A. estuariensis.
 
 Then, we tested whether the slopes of the tradeoff depended on quality. Here and throughout the rest of the paper, we used carapace length as a measure of quality because it is the best-known proxy for resource-holding potential and a reliable predictor of dominance and subordinance in dyadic contests (Dinh et al., 2020). We hypothesized that the slope of the tradeoff would increase as carapace length decreased. To test this, we standardized carapace length so that the mean was zero and each increment of one represents an increase of one standard deviation. We built a regression with abdomen residual as the response variable and snapping claw residual, standardized carapace length, and their interaction as the explanatory variable. We performed this analysis only for A. heterochaelis, the species for which we had the greatest sample size and statistical power. We predicted a negative coefficient for the interaction, meaning that the tradeoff slope would approach zero as the carapace length increased.
 
-## Kinematics
+### Kinematics
 
 We reanalyzed data from Dinh, 2022 to test if exaggerated weapons reduced weapon performance in A. heterochaelis. We recorded high-speed videos with synchronous pressure measurements from 10 snaps each in 76 individuals. We measured the average angular velocity, cavitation bubble duration, and peak-to-peak sound pressure level of each snap. Details about recording setup, equipment, and performance metrics are provided in Dinh, 2022. In brief, we calculated average angular velocity as the angle change between the dactyl and the propodus during closure divided by the duration of closure (Kagaya and Patek, 2016). Then, we calculated cavitation bubble duration as the duration between the initiation of cavitation to the onset of initial bubble implosion. Finally, we calculated the peak-to-peak sound pressure level coincident with the cavitation bubble collapse.
 
 In previous research, we showed that average angular velocity decreased as claw mass increased, whereas cavitation bubble duration and sound pressure level increased as claw mass increased (Dinh and Patek, 2023). Here, we tested if these relationships also depended on weapon residuals. We built three linear models that used either log10(average angular velocity), log10(bubble duration), or sound pressure level (a logarithmic measure of pressure) as the response variable. In each model, we used log10(claw mass) and weapon residual as explanatory variables. We built separate models for males and females. For each performance metric, we hypothesized that performance would decrease with high-residual snapping claws, and we, therefore, predicted a negative coefficient for snapping claw residuals.
 
-## Reproductive tradeoffs
+### Reproductive tradeoffs
 
-We collected 37 ovigerous A. heterochaelis females. We removed each egg clutch and photographed them. We only included eggs in the early stage of development when the egg yolk was barely consumed and oblong deformation by the embryo was minimal. We counted the total number of eggs in each egg clutch and measured the estimated average egg volume using the Fiji distribution of ImageJ (version 2.0.0) (Schindelin et al., 2012). For each egg clutch, we measured the egg volume for 20 randomly selected eggs as Vegg=16πdmin2dmax , where Vegg represents egg volume, dmin represents the minimum egg diameter, and dmax represents the maximum egg diameter (Kuris, 1990). We then calculated the average egg volume as the mean volume of these 20 eggs. Finally, we calculated the total egg mass volume as the egg count multiplied by the average egg volume.
+We collected 37 ovigerous A. heterochaelis females. We removed each egg clutch and photographed them. We only included eggs in the early stage of development when the egg yolk was barely consumed and oblong deformation by the embryo was minimal. We counted the total number of eggs in each egg clutch and measured the estimated average egg volume using the Fiji distribution of ImageJ (version 2.0.0) (Schindelin et al., 2012). For each egg clutch, we measured the egg volume for 20 randomly selected eggs as $V_{egg}=\frac{1}{6}\pid_{min}^{2}d_{max}$ , where Vegg represents egg volume, dmin represents the minimum egg diameter, and dmax represents the maximum egg diameter (Kuris, 1990). We then calculated the average egg volume as the mean volume of these 20 eggs. Finally, we calculated the total egg mass volume as the egg count multiplied by the average egg volume.
 
 Egg count and egg mass volume increased as carapace length increased. Therefore, we regressed egg count and egg mass volume against carapace length and calculated egg count residuals and egg mass volume residuals from the scaling relationship. These residuals reflect investment into eggs, where more positive residuals indicate greater investment and more negative residuals indicate less investment. We did not use residual analysis for average egg volume because it did not scale with carapace length. To test for reproductive tradeoffs between eggs and weapons, we built three linear regressions that used either egg count residual, average egg volume, or egg mass volume residual as the response variable. All models included snapping claw residual as the sole explanatory variable. We predicted a negative relationship that reflected a reproductive tradeoff.
 
 Then, to test if female snapping shrimp with smaller carapace lengths faced steeper tradeoffs, we added carapace length and its interaction with snapping claw residual to each of the models. If smaller individuals pay steeper expenditures, then the interaction should be positive: The negative relationship between egg properties and snapping claw residuals would taper to zero as carapace length increases.
 
-## Pairing
+### Pairing
 
 We used t-tests to determine if paired individuals had greater weapon residuals than unpaired individuals. The response variable was weapon residual, and the explanatory variable was a binary variable of paired status, where one represents a paired individual and zero represents an unpaired individual. We performed separate tests for each sex.
 
 Similarly, to test if greater snapping claw residuals increased the probability of pairing, we built a binomial generalized linear model with pairing status (1=paired, 0=unpaired) as the response variable. The explanatory variables were carapace length and snapping claw residual. We built models for each sex separately.
 
-Then, we tested if individuals with greater weapon residuals paired with larger mates. We calculated the relative size of pair mates as 1−rostrum−to−telsonlengthfocalrostrum−to−telsonlengthpairmate such that more positive values mean that pair mates are larger than focal individuals, and 0 means that individuals are equally sized. We used rostrum-to-telson length here because males and females form size-assortative pairs based on body length (Mathews, 2002b; Nolan and Salmon, 1970). We built a linear model with the relative size of pair mates as the response variable and the snapping claw residual of the focal individual as the explanatory variable. We repeated this analysis using either males or females as the focal individuals and the opposite sex as the pair mate. We predicted a positive relationship if individuals with greater weapon residuals attracted or maintained relatively larger pair mates.
+Then, we tested if individuals with greater weapon residuals paired with larger mates. We calculated the relative size of pair mates as $1−\frac{rostrum−to−telsonlength_{focal}}{rostrum−to−telsonlength_{pairmate}}$ such that more positive values mean that pair mates are larger than focal individuals, and 0 means that individuals are equally sized. We used rostrum-to-telson length here because males and females form size-assortative pairs based on body length (Mathews, 2002b; Nolan and Salmon, 1970). We built a linear model with the relative size of pair mates as the response variable and the snapping claw residual of the focal individual as the explanatory variable. We repeated this analysis using either males or females as the focal individuals and the opposite sex as the pair mate. We predicted a positive relationship if individuals with greater weapon residuals attracted or maintained relatively larger pair mates.
 
-## Seasonal trends
+### Seasonal trends
 
 We tested if reproductive tradeoffs manifested in seasonal fluctuations in morphology between breeding and non-breeding seasons in Alpheus heterochaelis. We performed t-tests to compare (1) abdomen residuals and (2) snapping claw residuals using the breeding season as the explanatory variable (1=breeding season, 0=non-breeding season). The breeding season lasted from April to October when we found ovigerous female snapping shrimp. February and March collections were considered the nonbreeding season because we collected no ovigerous females. We performed separate t-tests for each sex in Alpheus heterochaelis. We predicted that snapping claw residuals would be elevated during the breeding season for males but not females, and that shift would coincide with a reduction in abdomen residuals. Then, to test if the scaling slope of the snapping claw changed between seasons, we built a linear model for each sex with log10(snapping claw length) as the response variable and log10(rostrum-to-telson length), breeding season, and their interaction as the predictor variables. A significant interaction term would indicate a seasonal allometric shift. If the interaction term was nonsignificant, we removed it from the model to test if there was an overall shift in weapon investment without a change in slope across breeding and non-breeding seasons.

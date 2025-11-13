@@ -42,18 +42,18 @@
 ### Affiliations
 
 1. Department of Cardiovascular and Metabolic Sciences, Lerner Research Institute of the Cleveland Clinic Cleveland United States
-2. https://ror.org/03xjacd83 Center for Microbiome and Human Health, Lerner Research Institute, Cleveland Clinic Cleveland United States
-3. https://ror.org/02k3smh20 Department of Pediatrics, Division of Pediatric Gastroenterology, Hepatology, and Nutrition, College of Medicine, University of Kentucky Lexington United States
-4. https://ror.org/03xjacd83 Department of Inflammation and Immunity, Lerner Research Institute, Cleveland Clinic Cleveland United States
-5. https://ror.org/03xjacd83 Department of Quantitative Health Sciences, Lerner Research Institute, Cleveland Clinic Cleveland United States
-6. https://ror.org/01ckdn478 Department of Medicine, University of Louisville Louisville United States
-7. https://ror.org/05byvp690 Department of Internal Medicine, University of Texas Southwestern Medical Center Dallas United States
-8. https://ror.org/02jzrsm59 National Institute on Alcohol Abuse and Alcoholism Bethesda United States
-9. https://ror.org/0464eyp60 Department of Population and Quantitative Health Sciences, University of Massachusetts Medical School Worcester United States
-10. https://ror.org/04drvxt59 Department of Medicine, Beth Israel Deaconess Medical Center and Harvard Medical School Boston United States
+2. Center for Microbiome and Human Health, Lerner Research Institute, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+3. Department of Pediatrics, Division of Pediatric Gastroenterology, Hepatology, and Nutrition, College of Medicine, University of Kentucky Lexington United States ([ROR:02k3smh20](https://ror.org/02k3smh20))
+4. Department of Inflammation and Immunity, Lerner Research Institute, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+5. Department of Quantitative Health Sciences, Lerner Research Institute, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+6. Department of Medicine, University of Louisville Louisville United States ([ROR:01ckdn478](https://ror.org/01ckdn478))
+7. Department of Internal Medicine, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))
+8. National Institute on Alcohol Abuse and Alcoholism Bethesda United States ([ROR:02jzrsm59](https://ror.org/02jzrsm59))
+9. Department of Population and Quantitative Health Sciences, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+10. Department of Medicine, Beth Israel Deaconess Medical Center and Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
 11. Life Sciences Transformative Platform Technologies, Procter & Gamble Cincinnati United States
-12. https://ror.org/03xjacd83 Department of Anatomical Pathology, Cleveland Clinic Cleveland United States
-13. https://ror.org/03xjacd83 Department of Cardiovascular Medicine, Heart and Vascular and Thoracic Institute, Cleveland Clinic Cleveland United States
+12. Department of Anatomical Pathology, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+13. Department of Cardiovascular Medicine, Heart and Vascular and Thoracic Institute, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
 
 † Corresponding author
 
@@ -69,19 +69,47 @@ Although there is now clear evidence that microbe-host interactions play a key r
 
 ## Results
 
-## Circulating levels of the gut microbial metabolite TMA are elevated in AH
+### Circulating levels of the gut microbial metabolite TMA are elevated in AH
 
 In a previous collaborative study, we reported that the highly volatile microbial metabolite TMA is elevated in exhaled breath of patients with AH (Hanouneh et al., 2014), and related co-metabolites, such as trimethyllysine and carnitine, can serve as prognostic indicators of mortality in AH (Ascha et al., 2016). Given the extremely volatile nature of TMA, it is readily detectable in breath, but is challenging to accurately quantitate levels in the circulation because TMA rapidly dissipates during collection and storage. To reduce the volatility of TMA and enable its analysis in the circulation, we coordinated patient blood collection utilizing rapid acidification of separated plasma (protonated TMA has a lower vapor pressure) across a large multi-center AH consortium (Defeat Alcoholic Steatohepatitis [DASH] consortium) (Crabb et al., 2016; Vatsalya et al., 2020; Saha et al., 2019). This provided us the unique opportunity to accurately quantify circulating TMA levels in human subjects, including those with moderate or severe AH for the first time. Patient demographics and clinical characteristics for the cohort examined are summarized in Figure 1—source data 1; Figure 1—source data 2. Importantly, MELD score, Maddrey’s discriminant function score, Child-Pugh score, aspartate aminotransferase (AST), total bilirubin, creatinine, and international normalized ratio were higher in patients with severe AH compared to moderate AH patients, while serum albumin was lower in severe AH compared to moderate AH patients. In agreement with previous breath metabolomics studies (Hanouneh et al., 2014; Ascha et al., 2016), plasma TMA levels were significantly elevated in moderate and severe AH patients compared to healthy controls (Figure 1A). However, the CVD-related co-metabolite TMAO was reciprocally decreased in AH patients (Figure 1B). Given the reciprocal alterations in plasma TMA and TMAO levels, we next examined the expression of the host liver enzyme flavin-containing monooxygenase 3 (FMO3) which is the predominant TMA to TMAO converting enzyme in the adult liver (Cashman, 2002). Interestingly, mRNA levels for FMO3 are uniquely repressed in patients with more severe AH (AH with liver failure [MELD 22–28] and AH with emergency liver transplant [MELD 18–21]), but not in other liver disease etiologies such as non-alcoholic fatty liver disease (NAFLD) or viral hepatitis (Figure 1C). In agreement with reduced mRNA levels (Figure 1C), patients with severe AH undergoing emergency liver transplant have marked reduction in FMO3 protein (Figure 1D), which likely contributes to elevations in plasma TMA (Figure 1A). Although ethanol feeding in mice does not consistently result in reduced hepatic Fmo3 expression (data not shown), a single injection of lipopolysaccharide (LPS) to induce acute hepatic inflammation is associated with both a reduction in the expression of Fmo3 and a significant increase in the TMA receptor trace amine-associated receptor 5 (Taar5) (Figure 1E). It is important to note that circulating choline levels was not significantly altered in patients with AH compared to healthy controls (Figure 1—figure supplement 1). However, plasma levels of one of the gut microbial substrates for TMA production (carnitine) and other TMA pathway co-metabolites (e.g. betaine and γ-butyrobetaine) were elevated in patients with AH compared to healthy controls (Figure 1—figure supplement 1). These findings, in addition to previous breath metabolomic studies (Hanouneh et al., 2014; Ascha et al., 2016), provide evidence that TMA and related co-metabolites may allow for discrimination of AH from other liver diseases.
 
-## Microbial choline TMA lyase inhibition protects mice from ethanol-induced liver injury
+![Figure 1.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig1-v3.jpg)
+
+**Figure 1.:** Plasma TMA (A) and trimethylamine N-oxide (TMAO) (B) levels in patients considered healthy (n = 13 for TMA and 20 for TMAO), or who have moderate (MELD < 20) (n = 52 for TMA and 111 for TMAO) or severe (MELD > 20) (n = 83 for TMA and 152 for TMAO) AH. (C) RNA sequencing results from liver tissues of patients with different pathologies, including: healthy controls (HC, n = 10), early AH (EAH, n = 12; MELD 7–8), AH with liver failure (AHL, n = 18; MELD 22–28), explant tissue from patients with severe AH with emergency liver transplants (ExAH, n = 10; MELD 18–21), non-alcohol-associated fatty liver disease (NAFLD; n = 8), hepatitis C virus (HCV; n = 9), and hepatitis C virus with cirrhosis (HCV_Cirr, n = 9). Gene expression was measured by transcripts per million (TPM). Boxplots of average expression for Fmo3 in different disease groups; error bars indicate SD (q < 0.05 in comparison to healthy controls). (D) Liver FMO3 protein expression measured by Western blot from healthy patients and patients with severe AH undergoing emergency liver transplant (Maddrey’s discriminant function 45–187). (E) Liver Tnfa, Il1b, Fmo3, and Taar5 transcript levels were measured by qPCR from female WT mice injected with either saline or lipopolysaccharide (LPS) for 6 hr. N = 6; unpaired Student’s t-test. *p ≤ 0.05; ***p ≤ 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Boxplots depicting the plasma concentration of four TMA-related metabolites – choline, carnitine, betaine, and γ-butyrobetaine in healthy controls (n = 21) and patients with moderate (n = 112) and severe (n = 152) alcoholic hepatitis (AH). Statistical significance was determined by analysis of variance and a Tukey’s honest significant difference post hoc test (p < .05).
+
+### Microbial choline TMA lyase inhibition protects mice from ethanol-induced liver injury
 
 We next sought to establish whether a causal relationship between gut microbial TMA production and ALD progression exists, and to test the hypothesis that selectively drugging microbial choline transformation can serve as a mechanism for improving host liver disease and attenuating ethanol-induced liver injury in mice. Mice were individually treated with two recently reported non-lethal bacterial choline TMA lyase inhibitors, iodomethylcholine (IMC) and fluoromethylcholine (FMC) (Roberts et al., 2018). These small molecule inhibitors exhibit potent in vivo inhibition of the gut microbial choline TMA lyase enzyme CutC (Craciun and Balskus, 2012), and have been shown to effectively block bacterial choline to TMA conversion in vivo (Roberts et al., 2018). Designed as suicide substrate mechanism-based inhibitors, past studies reveal that the vast majority of IMC and FMC is retained in the gut within luminal bacteria and excreted in the feces with limited systemic exposure of the polar drug in the host (Roberts et al., 2018; Gupta et al., 2020; Organ et al., 2020).
 
 IMC treatment effectively blunted ethanol-induced increases in plasma TMA and TMAO (Figure 2A and B). IMC also produced modest increases in plasma choline and betaine, while reducing plasma carnitine, particularly in pair-fed mice (Figure 2C–E). IMC also prevented ethanol-induced increases in alanine aminotransferase (ALT) and hepatic steatosis (Figure 2F, G, and K). Interestingly, IMC treatment prevented ethanol-induced increases in hepatic triglycerides (Figure 2G), and reduced hepatic total and cholesterol esters, but not free cholesterol, in both pair- and ethanol-fed conditions (Figure 2H–I). IMC treatment also reduced the expression levels of the pro-inflammatory cytokine tumor necrosis factor α (Tnfα) (Figure 2L). Although IMC was well tolerated in several previous mouse studies in the setting of standard rodent chow-feeding (Roberts et al., 2018; Gupta et al., 2020; Organ et al., 2020), here we found an unexpected reduction in food intake and body weights in mice receiving both IMC and ethanol (Figure 2—figure supplement 1A, B). Although IMC was clearly protective against ethanol-induced liver injury, this potential drug-ethanol interaction prompted us to test another structurally distinct gut microbe-targeted choline TMA lyase inhibitor FMC (Roberts et al., 2018; Figure 3 and Figure 3—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig2-v3.jpg)
+
+**Figure 2.:** Nine- to eleven-week-old female C57BL6/J mice were fed either ethanol-fed or pair-fed in the presence and absence of IMC as described in the methods. Plasma levels of TMA (A), trimethylamine N-oxide (TMAO) (B), choline (C), carnitine (D), and betaine (E) were measured by mass spectrometry (n = 4–5). Plasma alanine aminotransferase (ALT) (F) was measured enzymatically (n = 4–5). Liver triglycerides (G), total cholesterol (H), cholesterol esters (I), and free cholesterol (J) were measured enzymatically (n = 4–5). (K) Representative H&E staining of livers from pair and EtOH-fed mice in the presence and absence of IMC. (L) Hepatic messenger RNA levels of tumor necrosis factor alpha (Tnfα). Statistics were completed by a two-way analysis of variance (ANOVA) followed by a Tukey’s multiple comparison test. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ****p ≤ 0.0001. All data are presented as mean ± SEM, unless otherwise noted.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Panels A–B and C–D represent data from IMC- and FMC-treated pair and ethanol-fed mice, respectively. (A, C) Body weights were measured biweekly throughout the 24-day experiment. #p ≤ 0.05 comparing pair to pair + IMC; ****p ≤ 0.0001 comparing ethanol to ethanol + IMC. (B, D) Diet intake was recorded daily throughout the experiment (n = 3 cages of six mice per group). The ethanol percentages (1–6%) are listed on top of the figures. *p ≤ 0.05 for days 6–22; n = 4–6. Statistics were completed using a Student’s t-test compared to the control mice. All data are presented as mean ± SEM, unless otherwise noted.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig3-v3.jpg)
+
+**Figure 3.:** Nine- to eleven-week-old female C57BL6/J mice were fed either ethanol-fed or pair-fed in the presence and absence of FMC as described in the methods. Plasma levels of TMA (A), trimethylamine N-oxide (TMAO) (B), choline (C), carnitine (D), and betaine (E) were measured by mass spectrometry (n = 3–5). Plasma alanine aminotransferase (ALT) (F) were measured at necropsy (n = 4–5). Liver triglycerides (G), total cholesterol (H), cholesterol esters (I), and free cholesterol (J) were measured enzymatically (n = 4–5). (K) Representative H&E staining of livers from pair and EtOH-fed mice in the presence and absence of FMC. (L) Hepatic messenger RNA levels of tumor necrosis factor alpha (Tnfα). Statistics were completed by a two-way analysis of variance (ANOVA) followed by a Tukey’s multiple comparison test. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ****p ≤ 0.0001. All data are presented as mean ± SEM, unless otherwise noted.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** In this study, mice were exposed to a 10-day chronic model in which mice were allowed free access to a 5% vol/vol (27% kcal) for 10 days (Bertola et al., 2013). Ethanol-fed mice were allowed ad libitum access to liquid diet. Control mice were pair-fed a diet that received isocalorically substituted maltose dextrin for ethanol. Some cohorts received choline TMA lyase inhibitor FMC (0.006% wt/wt) in these liquid diets throughout the entire 10-day feeding period. Statistics were completed by a two-way analysis of variance (ANOVA) followed by a Tukey’s multiple comparison test. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001; ****p ≤ 0.0001. All data are (n = 5–8 per group) presented as mean ± SEM.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76554/elife-76554-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Nine- to eleven-week-old female C57BL6/J mice were fed Lieber DeCarli liquid control diet for 6 days (n = 5). On the seventh day, mice were gavaged with a bolus of maltose (9 g/kg) or ethanol (5 g/kg) and plasma was collected at several time points thereafter to examine acute alterations in TMA and related metabolites TMAO, betaine, choline, L-carnitine, and γ-butyrobetaine. Data were analyzed by a Student’s t-test comparing the ethanol-fed mice to the maltose dextrin-gavaged mice. *p ≤ 0.05; **p ≤ 0.01; ***p ≤ 0.001. All data are presented as mean ± SEM, unless otherwise noted.
+
 Importantly, FMC was well tolerated and did not significantly alter liquid diet intake or body weights throughout the 25-day chronic ethanol feeding study (Figure 2—figure supplement 1C, D). FMC treatment trended toward reducing plasma TMA (Figure 3A), and more dramatically suppressed plasma TMAO levels (Figure 3B). Unlike IMC, which also altered other co-metabolites such as choline, betaine, and carnitine (Figure 2B-E), FMC did not significantly alter these TMA co-metabolites (Figure 3C-E). More importantly, as with IMC (Figure 2F–K), FMC treatment significantly protected against ethanol-induced ALT elevations (Figure 3F), hepatic steatosis (Figure 3G and K), and reduced total and esterified cholesterol levels without altering free cholesterol (Figure 3H–J). However, FMC trended to reduce but did not significantly alter Tnfα expression (Figure 3L). To determine whether these effects were generalizable in other models of ethanol-induced liver injury, we exposed control and FMC-treated mice to a 10-day chronic model in which mice were allowed free access to a 5% vol/vol (27% kcal) for 10 days (Figure 3—figure supplement 1). In this 5%–10-day ethanol feeding model FMC treatment did not significantly alter food intake, body weight, or blood ethanol levels, but was able to selectively suppress TMA and TMAO levels (Figure 3—figure supplement 1). FMC treatment in the 5%–10-day model significantly reduced plasma AST and ALT levels, and trended toward lowering liver triglycerides (Figure 3—figure supplement 1). However, in this short-term model there were no apparent differences in hepatic cytokine/chemokine gene expression with either ethanol exposure or FMC treatment (Figure 3—figure supplement 1 and data not shown). Collectively, these data demonstrate that gut microbe-targeted choline TMA lyase inhibition with two structurally distinct inhibitors (IMC or FMC) can generally protect mice against ethanol-induced liver injury.
 
-## Microbial choline TMA lyase inhibitors promote remodeling of the gut microbiome and host liver transcriptome in an ethanol-dependent manner
+### Microbial choline TMA lyase inhibitors promote remodeling of the gut microbiome and host liver transcriptome in an ethanol-dependent manner
 
 One theoretical advantage of the selective microbe-targeted choline TMA lyase inhibitors, compared to antibiotic or MAMP-PRR-targeted therapies, is that they are anticipated to exert less selective pressure for development of drug resistance given their non-lethal nature. However, microbes that preferentially utilize choline as a carbon or nitrogen source might be anticipated to have reduced competitive advantage in the presence of the inhibitor. We therefore next examined whether IMC or FMC treatment was associated with alterations in choline utilizers and other members of the murine gut microbiome community that are known to be correlated with ethanol-induced liver injury (Chen et al., 2011; Yan et al., 2011; Mutlu et al., 2009; Mutlu et al., 2012; Tripathi et al., 2018; Ciocan et al., 2018; Llopis et al., 2016; Duan et al., 2019; Smirnova et al., 2020; Gao et al., 2019; Puri et al., 2018; Lang and Schnabl, 2020). It is important to note that both IMC (Figure 4A–E) and FMC (Figure 4F–J) altered the gut microbiome, with some consistent, yet several distinct differences. Non-metric multidimensional scaling (NMDS) of microbial taxa revealed distinct clusters, indicating that both IMC and FMC promoted clear restructuring of the cecal microbiome in an ethanol-dependent manner (Figure 4A and F). Under pair-feeding conditions, both IMC and FMC caused a reciprocal decrease in the relative abundance of Bacteroidetes and increase in Firmicutes (Figure 4B and G). However, under ethanol-fed conditions IMC resulted in increased Bacteroidetes and reduced Firmicutes, and FMC treatment resulted in more modest reductions in Bacteroidetes and increased Firmicutes (Figure 4B and G). When examining drug-specific alterations at the genus level, we found that under both pair- and ethanol-fed conditions, IMC treatment promoted significant increases in Faecalibaculum and Escherichica/Shigella, and reductions in Bacteroidales_S24-7 (Figure 4C–E , and H–I). FMC, however, most significantly altered Turicibacter, Oscillibacter, and Lachnospiraceae, and it is important to note that these FMC-induced alterations were different between pair- and ethanol-fed groups (Figure 4C–E , and H–I). Collectively, these data demonstrate that inhibition of gut microbial choline to TMA transformation with a selective non-lethal small molecule inhibitor promotes restructuring of the gut microbiome in an ethanol-dependent manner.
 
@@ -95,7 +123,7 @@ To more globally understand the effects of choline TMA lyase inhibitors on the h
 
 **Figure 5.:** Nine- to eleven-week-old female C57BL6/J mice were fed either ethanol-fed or pair-fed in the presence and absence of IMC as described in the methods. RNA was isolated from the livers and subjected to next-generation sequencing. (A) Non-metric multidimensional scaling (NMDS) plots; each point represents a single sample from a single mouse. Positions of points in space display dissimilarities in the transcriptome, with points further from one another being more dissimilar. (B–C) Row-normalized expression for the top 25 DEGs shown by heat map (B) while the volcano plot (C) summarizes log2 fold changes vs. significance in response to IMC treatment in pair (left) and ethanol (right) feeding (n = 4). (D) Summary of significantly differentially regulated pathways in mice treated with IMC in the ethanol-fed mice (n = 4).
 
-## The microbe-derived metabolite TMA elicits rapid hormone-like signaling effects in mouse liver
+### The microbe-derived metabolite TMA elicits rapid hormone-like signaling effects in mouse liver
 
 The gut microbe-derived co-metabolites TMA and TMAO are generated postprandially in both rodents and humans after a substrate-rich meal is ingested (Schugar et al., 2018; Boutagy et al., 2015). Given the acute meal-related production and recent identification of candidate host receptors for TMA (Li et al., 2013; Wallrabenstein et al., 2013) and TMAO (Chen et al., 2019), we hypothesized that TMA may be acting as a gut microbe-derived hormone to promote liver injury. However, currently nothing is known regarding the acute hormone-like signaling effects stimulated by TMA in the liver. To address this gap, we infused TMA directly into the portal circulation draining the gut (i.e. portal vein) of fasted mice and examined global phosphorylation events stimulated in the liver 10 min later using a phosphoproteomics approach (Figure 6A). It is important to note that this experiment provided high levels of exogenous TMA via direct injection, and future studies should focus on more physiologically relevant modes of TMA production like provision of gut bacteria that can naturally or be genetically engineered to produce high levels. A total of 36 liver proteins exhibited site-specific hypo- or hyper-phosphorylation 10 min after administration of TMA relative to vehicle-injected mice (Figure 6B). Several of the TMA-driven phosphorylation events represented proteins that are enriched in key hormonal signaling pathways known to impact hepatic metabolism. For example, portal vein infusion of TMA resulted in altered phosphorylation of proteins implicated in protein kinase A (PKA) signaling, including A kinase anchor protein 1 (AKAP1) (Huang et al., 1999) and FK506-binding protein 15 (FKBP15) (Nooh and Bahouth, 2017), and insulin signaling including insulin receptor substrate 2 (IRS2) (Araki et al., 1994; Figure 6B–D). TMA infusion was also associated with altering the phosphorylation of several guanine nucleotide exchange factors (GEF), including Rac/Cdc42 guanine nucleotide exchange factor 6 (Arhgef6) and Rho GTPase activating protein 17 (ARHGAP17) (Zhou et al., 2016; Aslan, 2019), and proteins involved in RNA processing/splicing including signal recognition particle 14 (SRP14) (Strub and Walter, 1990) and serine- and arginine-rich splicing factor 1 (SRSF1) (Cho et al., 2011; Figure 6B and C). These data have identified acute TMA-driven signaling events in the liver in vivo, and potentially link TMA to acute alterations in PKA-, insulin-, and GEF-driven signaling cascades that deserve further exploration.
 
@@ -117,72 +145,334 @@ The metaorganismal TMA/TMAO pathway represents only one of many microbial metabo
 
 ## Methods
 
-## Overview of human study populations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background Mice (Females)</td>
+      <td>9–11 Weeks</td>
+      <td>Jackson Laboratories</td>
+      <td>C57BL6/J, RRID:IMSR_JAX:000664</td>
+      <td>5–8 per study</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Humans)</td>
+      <td>Plasma samples from 285 patients</td>
+      <td>Cleveland Clinic Foundation; University of Louisville; University of Massachusetts Medical School; University of Texas Southwestern Medical Center</td>
+      <td>Not provided</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Humans)</td>
+      <td>Liver samples from five healthy donors</td>
+      <td>Clinical Resource for Alcoholic Hepatitis Investigations at Johns Hopkins University</td>
+      <td>Not provided</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Humans)</td>
+      <td>Liver samples from five patients with severe AH</td>
+      <td>Clinical Resource for Alcoholic Hepatitis Investigations at Johns Hopkins University</td>
+      <td>Not provided</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FMO3 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab126790, RRID: AB_11128907</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSC70 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-7298, RRID: AB_627761</td>
+      <td>1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG HRP</td>
+      <td>GE-Healthcare</td>
+      <td>Cat#: NA934-100UL, RRID: AB_772206</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG HRP</td>
+      <td>GE-Healthcare</td>
+      <td>NA931V, RRID: AB_772210</td>
+      <td>1:5000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Tnfα</td>
+      <td>Sigma</td>
+      <td>PCR primers</td>
+      <td>F:CCACCACGCTCTTCTGTCTACR:AGGGTCTGGGCCATAGAACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Il1β</td>
+      <td>Sigma</td>
+      <td>PCR primers</td>
+      <td>F:AGTTGACGGACCCCAAAAGR:AGCTGGATGCTCTCATCAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Fmo3</td>
+      <td>Sigma</td>
+      <td>PCR primers</td>
+      <td>F:CCCACATGCTTTGAGAGGAGR:GGAAGAGTTGGTGAAGACCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Taar5</td>
+      <td>Sigma</td>
+      <td>PCR primers</td>
+      <td>F:AAAGAAAAGCTGCCAAGAR:AAGGGAAGCCAACACACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse CyclophilinA</td>
+      <td>Sigma</td>
+      <td>PCR primers</td>
+      <td>F:GCGGCAGGTCCATCTACGR:GCCATCCAGCCATTCAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Cxcl1</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>F:TGCACCCAAACCGAAGTCR:GTCAGAAGCCAGCGTTCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Grp78</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>F:ACTTGGGGACCACCTATTCCTR:ATCGCCAATCAGACGCTCC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AST Commercial Kit</td>
+      <td>Sekisui Diagnostics</td>
+      <td>319–30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALT Commercial Kit</td>
+      <td>Sekisui Diagnostics</td>
+      <td>318–30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Triglyceride Commercial Kit</td>
+      <td>Wako</td>
+      <td>994–02891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Total Cholesterol Commercial Kit</td>
+      <td>Fisher Scientific</td>
+      <td>TR134321</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Free Cholesterol Commercial Kit</td>
+      <td>Wako</td>
+      <td>993–02501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy Lipid Tissue Mini Kit</td>
+      <td>Qiagen</td>
+      <td>74804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Thermo Scientific Pierce TiO2 Phosphopeptide Enrichment and Clean-up Kit</td>
+      <td>Fisher Scientific</td>
+      <td>PI88301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy Purification Kit</td>
+      <td>Qiagen</td>
+      <td>74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iodomethylcholine (IMC)</td>
+      <td>Synthesized at the Cleveland Clinic</td>
+      <td>Not provided</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoromethylcholine (FMC)</td>
+      <td>Synthesized at the Cleveland Clinic</td>
+      <td>Not provided</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trimethylamine Hydrochloride</td>
+      <td>Sigma</td>
+      <td>T72761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharide</td>
+      <td>Sigma</td>
+      <td>L4391</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, Inc</td>
+      <td>8.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DADA2</td>
+      <td>https://benjjneb.github.io/dada2/dada-installation.html; Callahan et al., 2016</td>
+      <td>1.16</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyloseq</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/phyloseq.html</td>
+      <td>4.1, RRID:SCR_013080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>microbiomeSeq</td>
+      <td>https://github.com/umerijaz/microbiomeSeq</td>
+      <td>1: RRID:SCR_002630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ggplot2</td>
+      <td>https://cran.r-project.org/web/packages/ggplot2/index.html</td>
+      <td>3.3.5, RRID:SCR_014601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>vegan</td>
+      <td>https://cran.r-project.org/web/packages/vegan/index.html</td>
+      <td>2.5–7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Supersignal West Pico Plus Substrate</td>
+      <td>Thermo Fisher</td>
+      <td>34577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Diet</td>
+      <td>Dyets</td>
+      <td>710260</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Overview of human study populations
 
 We made use of three different human study populations, detailed below, that included patients with severities of AH/ALD. It must be noted that one limitation of our study is that each of these cohorts used slightly different diagnostic criteria for defining the severity/stage of AH/ALD.
 
-## Human study populations and sample collection for TMA measurement
+### Human study populations and sample collection for TMA measurement
 
 A total of 285 subjects were included in this study. De-identified plasma samples, along with clinical and demographic data, were obtained from (1) the Northern Ohio Alcohol Center (NOAC) at the Cleveland Clinic biorepository including 21 healthy individuals and 15 patients diagnosed and (2) the Defeat Alcoholic Steatohepatitis (DASH) consortium (Cleveland Clinic, University of Louisville School of Medicine, University of Massachusetts Medical School, and University of Texas Southwestern Medical Center) including 249 patients with AH. Diagnosis with AH was performed using clinical and laboratory criteria, with MELD score utilized for distinguishing moderate (MELD < 20) and severe (MELD > 20) AH, as recommended by the NIAAA Alcoholic Hepatitis consortia (Crabb et al., 2016). A detailed description of patient recruitment, inclusion and exclusion criteria for the DASH consortium has been reported in previous studies (Vatsalya et al., 2020). Patients with AH were classified as moderate (MELD < 20, n = 112) and severe (MELD ≥ 20, n = 152) according to the MELD score at admission as part of either of two independent clinical trials (ClincalTrials.gov identifier # NCT01809132 and NCT03224949) or the NOAC biorepository. These studies were approved by the Institutional Review Boards of all four participating institutions and all study participants consented prior to collection of data and blood samples. Clinical and demographic data for the entire cohort is presented in Figure 1—source data 1 and for the sub-set of subjects used for TMA analysis is presented in Figure 1—source data 2.
 
 In order to be able to measure volatile compounds such as TMA, blood was collected in EDTA-coated tubes and immediately placed on ice. Plasma was separated by centrifugation at 1200× g for 15 min at 4°C. Plasma was rapidly acidified by adding 25 mL of 1 M hydrochloric acid (HCL) to 500 mL of aliquoted plasma, followed by vigorous vortexing. Acidified plasma samples were stored at –80°C in air-tight O-ring cryovials (Fisher Scientific, product # 02-681-373) until being processed for quantification of TMA and other volatile compounds. A non-acidified sample was also collected for standard plasma biochemistries.
 
-## Analysis of hepatic FMO3 expression across different liver disease etiologies
+### Analysis of hepatic FMO3 expression across different liver disease etiologies
 
 For data shown in main Figure 1 panel C, we leveraged access to publicly available bulk liver RNA sequencing data from patients with different liver disease etiologies (Argemi et al., 2019). For this cohort, early AH (EAH) was defined as MELD 7–8, severe AH with liver failure (AHL) with MELD 22–28, and AHL with emergency liver transplant (ExAH) with MELD 18–21. All raw fastq files were downloaded from SRA (PRJNA531223) and dbGAP (phs001807.v1.p1) (Argemi et al., 2019). Fastq files were aligned to the human genome (GRCh38, indices downloaded from https://github.com/pachterlab/kallisto-transcriptome-indices/releases/download/ensembl-96/homo_sapiens.tar.gz; Pachter, 2018) using Kallisto version 0.44.0 with 100 bootstraps calculated (Bray et al., 2016). Data were then merged with clinical data and analyzed with Sleuth in gene_mode with aggregation_column set to Ensemble Gene ID; in addition, extra_bootstrap_summary and read_bootstrap_tpm were set to true (Pimentel et al., 2017). Differential expression was measured with Sleuth using a cutoff of q < 0.05.
 
-## Human study populations and sample collection for liver Western blotting
+### Human study populations and sample collection for liver Western blotting
 
 De-identified samples from five livers explanted from severe AH patients during liver transplantation or five wedge biopsies from healthy donor livers were snap-frozen in liquid nitrogen and stored at –80°C. Samples were provided by the Clinical Resource for Alcoholic Hepatitis Investigations at Johns Hopkins University (R24 AA0025107, Z. Sun PI). Written informed consent was obtained from each patient included in the study and the study protocol conforms to the ethical guidelines of the 1975 Declaration of Helsinki as reflected in a priori approval by the Institutional Review Boards at Johns Hopkins Medical Institutions. This cohort utilized Maddrey’s Discriminant Function as the primary indicator of disease severity, with an average score of 102.5 ± 27.7. MELD scores are not available for this cohort. Descriptive biochemical and clinical data for this cohort have been reported previously (Tripathi et al., 2018).
 
-## Immunoblotting
+### Immunoblotting
 
 Whole tissue homogenates were made from tissues in a modified RIPA buffer as previously described (Warrier et al., 2015; Helsley et al., 2019; Schugar et al., 2017; Lord et al., 2016), and protein was quantified using the bicinchoninic assay (Pierce). Proteins were separated by 4–12% SDS-PAGE, transferred to polyvinylidene difluoride membranes, and then proteins were detected after incubation with specific antibodies as previously described (Warrier et al., 2015; Helsley et al., 2019; Schugar et al., 2017; Lord et al., 2016) and listed in the Key resources table.
 
-## Real-time PCR analysis of gene expression
+### Real-time PCR analysis of gene expression
 
 Tissue RNA extraction and qPCR analysis was performed as previously described (Helsley et al., 2019). The mRNA expression levels were calculated based on the ΔΔ-CT method using cyclophilin A as the housekeeping gene. qPCR was conducted using the Applied Biosystems 7500 Real-Time PCR system. All primer sequences are listed in the Key resources table.
 
-## Chemical synthesis of gut microbe-targeted choline TMA lyase inhibitors
+### Chemical synthesis of gut microbe-targeted choline TMA lyase inhibitors
 
 The small molecule choline TMA lyase inhibitors IMC and FMC have been previously described as potent and selective mechanism-based inhibitors targeted microbial CutC (Roberts et al., 2018). Here, IMC and FMC were synthesized and structurally characterized as outlined below using both multinuclear NMR analysis and high-resolution mass spectrometry. 1H- and 13C-NMR spectra for IMC and FMC were recorded on a Bruker Ascend spectrometer operating at 400 MHz. Chemical shifts are reported as parts per million (ppm). IMC iodide was prepared using a previously reported method using 2-dimethylethanolamine and diiodomethane as reactants in acetonitrile followed by recrystallization from dry ethanol. 1H- and 13C-NMRs of IMC were both consistent with that in the reported literature (Mistry et al., 2002), as well as consistent based on proton and carbon chemical shift assignments indicated below. High-resolution MS corroborated the expected cation mass and provided further evidence of structural identity. 1H-NMR (400 MHz, D2O): 5.24 (s, 2H, -N-CH2-I), 4.06–3.99 (m, 2H, -CH2-CH2-OH), 3.68–3.62 (m, 2H, -N-CH2-CH2-), 3.29 (s, 6H, -N(CH3)2); 13C-NMR (100 MHz, D2O): 66.1 (-CH2-CH2-OH), 55.8 (-N-CH2-CH2-), 52.9 (-N(CH3)2), 33.0 (-N-CH2-I); HRMS (ESI/TOF): m/z (M+) calculated for C5H13INO, 230.0036; found, 230.0033. The synthesis of fluoromethylcholine chloride was performed using the procedure below. 1H- and 13C-NMRs of FMC were consistent with that in the reported literature (Gao et al., 2019). High-resolution MS was also consistent with the expected cation mass. Chloro(fluoro)methane (2.05 kg, 29.9 mol, 6 eq) was bubbled into a solution of 2-dimethylaminoethanol (444.0 g, 4.98 mol, 500 mL, 1 eq) in THF (1000 mL) at –70°C for 4 hr. The mixture was then transferred to an autoclave and heated to 80°C and stirred for 18 hr (pressure: ~15–50 psi). During this period, a white precipitate formed. The solid was isolated by filtration, washed with cold THF (600 mL), and dried under vacuum to give fluoromethylcholine chloride as a white solid (1.14 kg, 70.7% yield, 98.0% purity). 1H-NMR (400 MHz, D2O): 5.44 (s, 1H, -N-CH2-F), 5.32 (s, 1H, -N-CH2-F), 4.04–3.98 (m, 2H, -CH2-CH2-OH), 3.60–3.54 (m, 2H, -N-CH2-CH2-), 3.19 (s, 6H, -N(CH3)2); 13C-NMR (100 MHz, D2O): 97.8 and 95.6 (-N-CH2-F), 62.9 (-CH2-CH2-OH), 55.1 (-N-CH2-CH2-), 48.0 (-N(CH3)2); HRMS (ESI/TOF): m/z (M+) calculated for C5H13FNO (M+) 122.0976, found 122.0975.
 
-## Ethanol feeding trials in mice
+### Ethanol feeding trials in mice
 
 All mice were maintained in an Association for the Assessment and Accreditation of Laboratory Animal Care, International-approved animal facility. All experimental protocols were approved by the Institutional Animal Care and Use Committee (IACUC) at the Cleveland Clinic. Age- and weight-matched female C57BL6/J mice were randomized into pair- and ethanol-fed groups and adapted to control liquid diet for 2 days. Two models of chronic ethanol feeding were used. (1) A 25-day chronic model in which mice were allowed free access to increasing concentrations of ethanol for 25 days (i.e. chronic feeding model) as previously described (McCullough et al., 2018). In this model, the ethanol-fed mice were acclimated to ethanol as follows: 1% vol/vol for 2 days, 2% vol/vol for 2 days, 4% vol/vol (22% kcal) for 1 week, 5% vol/vol (27% kcal) for 1 week, and last 6% vol/vol (32% kcal) for 1 week and is denoted as 32%, day 25. (2) A 10-day chronic model in which mice were allowed free access to a 5% vol/vol (27% kcal) for 10 days (Bertola et al., 2013). Ethanol-fed mice were allowed ad libitum access to liquid diet. Control mice were pair-fed a diet that received isocalorically substituted maltose dextrin for ethanol. Some cohorts received choline TMA lyase inhibitors IMC (0.06% wt/wt) or FMC (0.006% wt/wt) in these liquid diets throughout the entire 10- to 25-day feeding period. Lieber-DeCarli high-fat ethanol and control diets were purchased from Dyets (catalog number 710260; Bethlehem, PA).
 
-## LPS injections
+### LPS injections
 
 Female C57BL6/J mice at 10.5 weeks of age were injected intraperitoneally with either 15 mg/kg LPS (500 µg/mL, Sigma L4391) or a matched volume (30 mL/kg) of sterile saline. After 6 hr, mice were euthanized with ketamine/xylazine and the liver was immediately collected and homogenized in TRIzol. RNA was extracted using chloroform phase separation and purified using Qiagen RNeasy kit.
 
-## Liver histology and immunohistochemistry
+### Liver histology and immunohistochemistry
 
 For histological analysis, formalin-fixed tissues were paraffin embedded, sectioned, and stained with hematoxylin and eosin. Formalin-fixed samples are coded at the time of collection for blinded analysis.
 
-## Measurement of plasma aminotransferase levels
+### Measurement of plasma aminotransferase levels
 
 To determine the level of hepatic injury in mice, plasma was used to quantify ALT and AST levels using a commercially available enzymatic assay (Sekisui Diagnostics, Lexington, MA) according to manufacturer’s instruction.
 
-## Measurement of hepatic lipid levels
+### Measurement of hepatic lipid levels
 
 Extraction of liver lipids and quantification of total plasma and hepatic triglycerides, cholesterol, and cholesterol esters was conducted using enzymatic assays as described previously (Warrier et al., 2015; Helsley et al., 2019; Schugar et al., 2017; Lord et al., 2016).
 
-## Quantification of TMA-related metabolites in acidified plasma
+### Quantification of TMA-related metabolites in acidified plasma
 
 Stable isotope dilution high-performance liquid chromatography with on-line tandem mass spectrometry (LC-MS/MS) was used for quantification of levels of TMAO, TMA, choline, carnitine, betaine, and γ-butyrobetaine in plasma, as previously described (Wang et al., 2014a). Their d9(methyl) isotopologues were used as internal standards. LC-MS/MS analyses were performed on a Shimadzu 8050 triple quadrupole mass spectrometer. IMC and d2-IMC, along with other metabolites, were monitored using multiple reaction monitoring of precursor and characteristic product ions as follows: m/z 230.0 → 58.0 for IMC; m/z 232.0 → 60.1 for d2-IMC; m/z 76.0 → 58.1 for TMAO; m/z 85.0 → 66.2 for d9-TMAO; m/z 60.2 → 44.2 for TMA; m/z 69.0 → 49.1 for d9-TMA; m/z 104.0 → 60.1 for choline; m/z 113.1 → 69.2 for d9-choline; m/z 118.0 → 58.1 for betaine; m/z 127.0 → 66.2 for d9-betaine.
 
-## Cecal microbiome analyses
+### Cecal microbiome analyses
 
 16S rRNA amplicon sequencing were done for V4 region using via miSEQ from mouse cecal contents. Raw 16S amplicon sequence and metadata were demultiplexed using split_libraries_fastq.py script implemented in QIIME1.9.1 (Caporaso et al., 2010). Demultiplexed fastq file was split into sample specific fastq files using split_sequence_file_on_sample_ids.py script from Qiime1.9.1 (Caporaso et al., 2010). Individual fastq files without non-biological nucleotides were processed using Divisive Amplicon Denoising Algorithm (DADA) pipeline (Callahan et al., 2016). The output of the dada2 pipeline (feature table of amplicon sequence variants [an ASV table]) was processed for alpha and beta diversity analysis using phyloseq (McMurdie and Holmes, 2013), and microbiomeSeq (http://www.github.com/umerijaz/microbiomeSeq) packages in R. Alpha diversity estimates were measured within group categories using estimate_richness function of the phyloseq package (McMurdie and Holmes, 2013). Multidimensional scaling (also known as principal coordinate analysis [PCoA]) was performed using Bray-Curtis dissimilarity matrix (Knorr et al., 2020) between groups and visualized by using ggplot2 package (Wickham, 2009). We assessed the statistical significance (p  <  0.05) throughout and whenever necessary, we adjusted p-values for multiple comparisons according to the Benjamini and Hochberg method to control false discovery rate (Benjamini, 2010) while performing multiple testing on taxa abundance according to sample categories. We performed an analysis of variance (ANOVA) among sample categories while measuring the of alpha diversity measures using plot_anova_diversity function in microbiomeSeq package (http://www.github.com/umerijaz/microbiomeSeq). Permutational multivariate analysis of variance (PERMANOVA) with 999 permutations was performed on all principal coordinates obtained during PCoA with the ordination function of the microbiomeSeq package. Wilcoxon (non-parametric) test was performed on ASV’s abundances against metadata variables levels using their base functions in R (Tilt, 1999).
 
-## RNA sequencing in mouse tissues
+### RNA sequencing in mouse tissues
 
 RNA sequencing libraries were generated from mouse liver using the Illumina mRNA TruSeq Directional library kit and sequenced using an Illumina HiSeq4000 (both according to the manufacturer’s instructions). RNA sequencing was performed by the University of Chicago Genomics Facility, and data analysis and data availability are described in detail in the online supplement. Briefly, RNA samples were checked for quality and quantity using the Bio-analyzer (Agilent). RNA sequencing libraries were generated using the Illumina mRNA TruSEQ Directional library kit and sequenced using an Illumina HiSEQ4000 (both according to the manufacturer’s instructions). RNA sequencing was performed by the University of Chicago Genomics Facility. Raw sequence files will be deposited in the Sequence Read Archive before publication (SRA). Single-end 100 bp reads were trimmed with Trim Galore (v.0.3.3, https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/. ) and controlled for quality with FastQC (v0.11.3, http://www.bioinformatics.bbsrc.ac.uk/projects/fastqc) before alignment to the Mus musculus genome (Mm10 using UCSC transcript annotations downloaded July 2016). Reads were aligned using the STAR alignerSTAR in single pass mode (v.2.5.2a_modified, RRID:SCR_004463, https://github.com/alexdobin/STAR) with standard parameters. Raw counts were loaded into R (http://www.R-project.org/) and edgeR was used to perform upper quantile, between-lane normalization, and DE analysis. Values generated with the cpm function of edgeR, including library size normalization and log2 conversion, were used in figures. Heat maps were generated of top 50 differentially expressed transcripts using pheatmap. Reactome-based pathway analysis was performed using an open-sourced R package: ReactomePA. RNA sequencing data have been deposited into the National Institutes of Health (NIH)-sponsored GEO repository (accession number GSE157681).
 
-## Phosphoproteomics analyses to examine TMA-induced signaling events in mouse liver
+### Phosphoproteomics analyses to examine TMA-induced signaling events in mouse liver
 
 The goal of this experiment was to unbiasedly identify TMA-responsive signaling events in mouse liver after an acute exposure (10 min) of TMA. To closely mimic physiological route of delivery, we delivered saline or TMA directly into the portal vein in fasted mice. Briefly, C57BL/6 mice were fasted overnight (12 hr fast), and between the hours of 9:00–10:00 am (2–3 hr into light cycle), mice were anesthetized using isoflurane (4% for induction and 2% for maintenance). Once fully anesthetized, a midline laparotomy was performed, and the portal vein was visualized under a Leica M650 surgical microscope. Briefly, a fresh 10 mM stock of trimethylamine hydrochloride (TMA-HCL) made in sterile saline, and the pH of stock solution was adjusted to 7.4. Mice then received 20 μL of either saline vehicle or TMA-HCL via direct syringe infusion (Becton-Dickson product #309306); 9.75 min later a small aliquot (50 μL) of portal blood was collected by pulling back on injection syringe left in place following injection. In saline vehicle injected mice, portal blood levels of TMA ranged from 0.49 to 2.22 μM and TMAO levels ranged from 2.53 to 7.14 μM. In mice injected with TMA-HCL, portal blood levels of TMA ranged from 125.36 to 319.55 μM and TMAO levels ranged from 9.68 to 17.48 μM. Exactly 10 min after initial injection, the liver was rapidly snap-frozen by immersion in liquid nitrogen. Liver samples were homogenized, the protein was precipitated with acetone, and the protein concentration was measured. A total of 1 mg of protein from each sample was digested with trypsin and the resulting tryptic peptides were subjected to phosphoserine and phosphothreonine enrichment using the Thermo Scientific Pierce TiO2 Phosphopeptide Enrichment and Clean-up Kit (Fisher # PI88301). The enrichment was performed based on the manufacturer’s instructions. The enriched peptide samples were subjected to C18 clean-up prior to LC-MS analysis. The LC-MS system was a Finnigan LTQ-Obitrap Elite hybrid mass spectrometer system. The HPLC column was a Dionex 15 cm × 75 µm id Acclaim Pepmap C18, 2 μm, 100 Å reversed-phase capillary chromatography column. Five μL volumes of the extract were injected and the peptides eluted from the column by an acetonitrile/0.1% formic acid gradient at a flow rate of 0.25 μL/min were introduced into the source of the mass spectrometer on-line. The microelectrospray ion source is operated at 1.9 kV. The digest was analyzed using the data-dependent multitask capability of the instrument acquiring full scan mass spectra to determine peptide molecular weights and product ion spectra to determine amino acid sequence in successive instrument scans. The LC-MS/MS data files were searched against the mouse UnitProtKB database (downloaded in December 2019 contains 17,017 sequences) using Sequest bundled into Proteome Discoverer 2.4. Cysteine carbamidomethylation was set as a fixed modification and oxidized methionine, protein N-terminal acetylation, and phosphorylation of serine, threonine, and tyrosine were considered as dynamic modification. A maximum of two missed cleavages were permitted. The peptide and protein false discovery rates were set to 0.01 using a target-decoy strategy. Phosphorylation sites were identified using ptmRS node in PD2.4. The relative abundance of the positively identified phosphopeptides was determined using the extracted ion intensities (Minora Feature Detection node) with Retention time alignment. All peptides were included in the quantitation, the peptide intensities were normalized to total peptide amount. Missing values were imputed in Perseus using a normal distribution. A total of 789 phosphopeptides were identified with 36 phosphopeptides determined to be two-fold different in the TMA and saline samples with a p-value < 0.05 (t-test).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using GraphPad Prism and p < 0.05 was considered statistically significant. All data are presented as mean ± SEM, unless otherwise noted in the figure legends. All data were tested for equal variance and normality. For two-group comparison of parametric data, a two-tailed Student’s t-test was performed, while non-parametric data were analyzed with Mann-Whitney U test (also called the Wilcoxon rank-sum test). For studies comparing vehicle and TMA lyase inhibitors in pair- and ethanol-fed mice, a two-way ANOVA was performed, followed by Tukey’s tests for post hoc analysis. For human studies in AH patients, statistical significance was determined by ANOVA and a Tukey’s honest significant difference post hoc test (p < 0.05).

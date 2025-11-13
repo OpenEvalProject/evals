@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.39518.001 T-box riboswitches are cis -regulatory RNA elements that regulate the expression of proteins involved in amino acid biosynthesis and transport by binding to specific tRNAs and sensing their aminoacylation state. While the T-box modular structural elements that recognize different parts of a tRNA have been identified, the kinetic trajectory describing how these interactions are established temporally remains unclear. Using smFRET, we demonstrate that tRNA binds to the riboswitch in two steps, first anticodon recognition followed by the sensing of the 3’ NCCA end, with the second step accompanied by a T-box riboswitch conformational change. Studies on site-specific mutants highlight that specific T-box structural elements drive the two-step binding process in a modular fashion. Our results set up a kinetic framework describing tRNA binding by T-box riboswitches, and suggest such binding mechanism is kinetically beneficial for efficient, co-transcriptional recognition of the cognate tRNA ligand.
+T-box riboswitches are cis-regulatory RNA elements that regulate the expression of proteins involved in amino acid biosynthesis and transport by binding to specific tRNAs and sensing their aminoacylation state. While the T-box modular structural elements that recognize different parts of a tRNA have been identified, the kinetic trajectory describing how these interactions are established temporally remains unclear. Using smFRET, we demonstrate that tRNA binds to the riboswitch in two steps, first anticodon recognition followed by the sensing of the 3’ NCCA end, with the second step accompanied by a T-box riboswitch conformational change. Studies on site-specific mutants highlight that specific T-box structural elements drive the two-step binding process in a modular fashion. Our results set up a kinetic framework describing tRNA binding by T-box riboswitches, and suggest such binding mechanism is kinetically beneficial for efficient, co-transcriptional recognition of the cognate tRNA ligand.
 
 ## Introduction
 
@@ -29,15 +29,47 @@ Riboswitches are cis-regulatory RNA elements that recognize and respond to defin
 
 T-box riboswitches are found in Gram-positive bacteria and are usually located in the region upstream of mRNA sequences encoding aminoacyl tRNA synthetases and proteins involved in amino acid biosynthesis and transport and hence participate directly in amino acid homeostasis (Zhang and Ferré-D'Amaré, 2015). In general, the aptamer domain of all T-box riboswitches contains a long stem, Stem I, responsible for specific tRNA binding (Rollins et al., 1997). The expression platform can adopt either a terminator or anti-terminator conformation, depending on whether the bound tRNA is charged or uncharged (Henkin, 2014; Zhang and Ferré-D'Amaré, 2015). In most T-box riboswitches, binding of a charged tRNA to the T-box leads to rho independent transcription termination whereas an uncharged tRNA stabilizes the anti-terminator conformation and leads to transcription read-through (Henkin, 2014; Zhang and Ferré-D'Amaré, 2015). Whereas Stem I and the anti-terminator domain are highly conserved among T-box riboswitches, the region connecting them can vary. The Bacillus subtilis glyQS T-box riboswitch, involved in glycine regulation, represents one of the simplest T-box riboswitches (Grundy et al., 2002b) in which only a short linker and a small stem, Stem III, connect Stem I and the anti-terminator domain (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig1-v2.jpg)
+
+**Figure 1.:** (A) Secondary structure diagrams of the B. subtilis glyQS T-box riboswitch and B. subtilis tRNAGly used in this study. Green and orange lines indicate interactions between the T-box specifier loop and the tRNA anticodon and between the T-box t-box sequence and the tRNA 3’ NCCA, respectively. For the glyQS T-box sequence, the nucleotides in red were added for surface immobilization. (B) Ribbon diagram of a model of a complex between the B. subtilis glyQS T-box riboswitch (blue) and B. subtilis tRNAGly (green) based on SAXS data (Chetnani and Mondragón, 2017). Distances between the 5’ and 3’ ends of the T-box and the 5’ end of the tRNAGly are shown (black dash lines). The NCCA sequence at the 3’ end of the tRNA is shown in light green and the t-box sequence in the T-box is shown in yellow.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) T-box constructs and tRNA were refolded as described in the Materials and methods. Folding of tRNA is close to 100%, whereas a fraction of T-box is not folded in each construct. However, tRNA-Cy5 only binds to the correctly folded fraction; therefore, the residual unfolded or misfolded fraction does not interfere with our smFRET data collection or analysis. In addition, adding an oxygen scavenger and triplet-state quencher does not interfere with the binding of tRNA-Cy5. All T-box mutants show comparable folding efficiency as the wild-type T-box182. (B) Quantification of the folding efficiency was performed by ImageJ (Schneider et al., 2012) with background subtraction. Error bars represent standard deviation from at least three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** T-box182 contains extensions at both 5’ and 3’ ends with (A) unlabeled tRNAGly in 10 mM MgCl2 buffer, (B) unlabeled tRNAGly in 1 mM MgCl2 buffer and (C) 5’-Cy5 labelled tRNAGly in 10 mM MgCl2 buffer. (A) is a representative ITC profile in which the upper panel shows the heat change due to successive injections of tRNAGly to a T-box182 construct with extensions at both the 5’ and 3’ ends (Supplementary file 1) and the lower panel shows the binding isotherm obtained by integrating the heat change associated with each injection and plotting it as a function of molar ratio of tRNAGly to T-box182. (B) and (C) depict only the integrated binding isotherm. The first injection of the titration in all three ITC experiments was performed by injecting 0.5 µL of tRNAGly to minimize contribution of any artifact associate with loading the syringe. A curve was fitted to the integrated data using a single-site model with Origin 5.0 (OriginLab). Thermodynamic parameters are derived from a best fit curve ±minimized fitting error by non-linear regression analysis. (A) shows that unlabeled tRNAGly in 10 mM MgCl2 buffer binds with an affinity (1/Kb) of 360 nM which is comparable to the one reported for a similar construct (209 nM) (Zhang and Ferré-D'Amaré, 2013), but without the extensions. The experiment therefore shows that the extensions have a negligible effect on tRNA binding. (B) shows that in 1mMgCl2 buffer, tRNAGly does not bind to the T-box, suggesting that the T-box-tRNA interaction is strongly dependent on Mg2+ concentration. (C) shows that the addition of Cy5 fluorophore to the 5’ end of tRNAGly is only slightly detrimental for optimal binding to the T-box with ~4 fold reduction in affinity.
+
 Recognition of tRNA by a T-box riboswitch involves three main structural elements of the tRNA: the anticodon region, the ‘elbow’ region formed by the conserved T- and D-loops, and the 3’ NCCA sequence (Figure 1). The anticodon and elbow regions of the tRNA interact with Stem I directly. Stem I contains several phylogenetically conserved structural motifs (Rollins et al., 1997), including a K-turn motif, a specifier loop, a distal bulge, and an apical loop (Rollins et al., 1997) (Figure 1). Bioinformatics and structural analyses have collectively revealed the interactions between Stem I and the tRNA (Grigg et al., 2013; Lehmann et al., 2013; Zhang and Ferré-D'Amaré, 2013). Specifically, the co-crystal structures of Stem I/tRNA complexes show that Stem I flexes to follow closely the tRNA anticodon stem and interacts directly with the anticodon loop and the elbow through its proximal and distal ends, respectively (Zhang and Ferré-D'Amaré, 2013). The distal bulge and the apical loop fold into a compact structural module of interdigitated T-loops (Chan et al., 2013; Krasilnikov and Mondragón, 2003), which interact directly with conserved unstacked nucleobases at the tRNA elbow (Grigg et al., 2013; Zhang and Ferré-D'Amaré, 2013). In addition, the structures revealed that Stem I turns sharply around two hinge regions using a conserved dinucleotide bulge and the K-turn motif (Grigg and Ke, 2013; Zhang and Ferré-D'Amaré, 2013). Sensing of the aminoacylation state involves direct binding of the tRNA 3’ end to a highly conserved bulge in the T-box, the t-box sequence (Grundy et al., 2002a) (Figure 1). A free NCCA end can base pair with the t-box sequence, enabling the anti-terminator conformation, whereas a charged NCCA end prevents the formation of the NCCA/t-box interactions, leading to the more stable terminator conformation (Henkin, 2014; Zhang and Ferré-D'Amaré, 2015). Importantly, discrimination between the charged and uncharged tRNA does not require any additional proteins, such as EF-Tu (Suddala et al., 2018; Zhang and Ferré-D'Amaré, 2014), and is driven solely by RNA/RNA interactions.
 
 While Small Angle X-ray Scattering (SAXS)-derived models of the entire B. subtilis glyQS T-box riboswitch in complex with tRNA are available (Chetnani and Mondragón, 2017; Fang et al., 2017), atomic-level structural details on the interactions between tRNA and the anti-terminator region are still lacking. In addition, there is a dearth of information on the kinetics of the binding process. Whereas it is clear that tRNA recognition involves several specific interactions, their binding temporal sequence remains elusive. In addition, it is unclear whether sensing of the 3’ end of the tRNA involves any additional conformational changes in the T-box. Here, by introducing donor-acceptor fluorophore pairs at several locations in the tRNA and the T-box riboswitch, and using single-molecule fluorescence resonance energy transfer (smFRET), we demonstrate the temporal order of events in the trajectory of tRNA binding. Our results demonstrate that tRNA binds to the riboswitch in two steps, with its anticodon being recognized first, followed by NCCA binding accompanied with an inward motion of the 3’ region of the T-box riboswitch, including Stem III and the anti-terminator stem, relative to Stem I. In addition, by introducing mutations at different locations of the T-box, we further show that the two-step binding kinetics is regulated by the modular structural elements in the T-box riboswitch.
 
 ## Results
 
-## Binding of cognate tRNA by the glyQS T-box results in two distinct FRET states
+### Binding of cognate tRNA by the glyQS T-box results in two distinct FRET states
 
 To observe directly the binding of tRNA to the T-box, we placed the donor dye (Cy3) on the 3’ end of a T-box fragment (T-box182), and the acceptor dye (Cy5) on the 5’ end of the tRNAGly, where the subscript ‘182’ denotes the length of the T-box construct (Figure 1A). In vitro transcribed and labeled T-box and tRNA were purified and refolded according to published procedures (Chetnani and Mondragón, 2017; Zhang and Ferré-D'Amaré, 2013) (Figure 1—figure supplement 1). Labeling of the tRNA at the 5’ end had a modest effect on the binding affinity (Figure 1—figure supplement 2). T-box182 spans Stem I, the linker sequence, Stem III and the anti-terminator, but does not contain the terminator sequence, thereby preventing the transition to the terminator conformation. A short RNA extension sequence was added to the 5’ end of the T-box for surface immobilization (Figure 2A, Supplementary file 1). Single-molecule fluorescence images were recorded under equilibrium condition in the presence of 30 nM tRNAGly-Cy5. Binding of tRNAGly-Cy5 results in a major distribution of FRET values around 0.7, with 79 ± 4% of the traces showing a stable signal at 0.7 and 9 ± 5% traces sampling from 0.7 to 0.4 (Figure 2B,C). The SAXS model (Chetnani and Mondragón, 2017) predicts a distance between the labeling positions at the 3’ end of the T-box182 and the 5’ end of the tRNA to be around 52 Å. (Figure 1B). Based on a Förster distance of 54–60 Å (Ha et al., 2002; Hohng et al., 2004), our measured FRET value is within the range of estimated FRET values (0.56–0.70). Therefore, we assign the 0.7 FRET state to be the fully bound state of the tRNAGly by the T-box.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig2-v2.jpg)
+
+**Figure 2.:** (A) FRET labeling scheme for the T-box and tRNA. Cy3 (green star) and Cy5 (red star) fluorophores are attached at the 3’ of the T-box (blue) and the 5’ of the tRNA (black), respectively. glyQS T-box riboswitch molecules are anchored on slides through a biotinylated DNA probe (purple) hybridized to a 5’ extension sequence on the T-box. (B) smFRET vs. time trajectories of T-box182-Cy3(3’) with tRNAGly-Cy5, T-box182-Cy3(3’) with tRNAΔNCCA-Cy5 and T-box149-Cy3(3’) with tRNAGly-Cy5. Cy3 and Cy5 fluorescence intensity traces (upper panel), and their corresponding smFRET traces calculated as ICy5 / (ICy3+ICy5) (lower panel). (C) One-dimensional FRET histograms. FRET peaks are fit with a Gaussian distribution (black curve) and the peak centers are shown in red. ‘N’ denotes the total number of traces in each histogram from three independent experiments. (D) Transition density plot (TDP). Contours are plotted from white (less than 15% of the maximum population) to red (more than 85% of the maximum population). TDPs are generated from all smFRET traces from three independent experiments. (E) Representative smFRET trajectories showing real-time binding of tRNAGly-Cy5 to T-box182-Cy3(3’) in a steady-state measurement. Traces showing transitions from the unbound state (0 FRET) to fully bound state (0.7 FRET) through the partially bound state (0.4 FRET) (left) and unbound state directly to fully bound state (right). (F) Surface contour plot of time-evolved FRET histogram of T-box182-Cy3(3’) with tRNAGly-Cy5 (top) and tRNAΔNCCA-Cy5 (bottom). Contours are plotted from blue (less than 5% of the maximum population) to red (more than 75% of the maximum population). ‘N’ denotes the total number of traces in each histogram from three independent experiments, which are a subset of traces showing real-time binding events in the steady-state measurements. Total numbers of traces in steady-state measurements are indicated in (C). Traces that reach the 0.7 FRET state (cutoff >0.55) are included in the plot for tRNAGly-Cy5 to reveal better the transition from the 0.4 to the 0.7 FRET state. Time-evolved FRET histograms of all traces are shown in Figure 2—figure supplement 4D for comparison.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Images were created by maximum intensity projection of Cy5 emission of the time-lapse images and therefore report on the binding events of tRNA-Cy5 to the surface tethered T-box. A DNA oligo labeled with Cy3 is used as a negative control for non-specific binding or signal. Loading tRNATyr-Cy5 to pre-immobilized T-box-Cy3(3’) only generates background level of Cy5 signals in the maximum intensity projection similar to the negative control, and these nonspecific Cy5 signals do not generate any smFRET traces.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Dwell time of i) 0.7 FRET state to 0.4 FRET state, ii) 0.4 FRET state to 0.7 FRET state, iii) 0.7 FRET state to 0 FRET state, and iv) 0.7 FRET state to other FRET states of T-box182-Cy3(3’) with tRNAGly-Cy5. Histograms of i), ii), and iii) are fit with a single-exponential decay function (black curve) and iv) is fit with a double exponential decay function to generate the population-weighted average lifetime of the 0.7 FRET state (τ0.7), as molecules can transit from 0.7 FRET state to both 0.4 FRET state occasionally, and 0 FRET state upon fluorophore photobleaching. (B) Dwell time of i) 0 FRET to 0.4 FRET state and ii) 0.4 FRET state to 0 FRET of T-box182-Cy3(3’) with tRNAΔNCCA-Cy5. Histograms are fit with a single-exponential decay function (black curve). (C) Dwell time of i) 0 FRET state to 0.4 FRET state and ii) 0.4 FRET state to 0 FRET state of T-box149-Cy3(3’) with tRNAGly-Cy5. Histograms are fit with a single-exponential decay function (black curve). Mean ±standard deviation (S.D.) are calculated from three independent measurements.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Ribbon diagram of a complex of the B. subtilis glyQS T-box riboswitch and uncharged tRNAGly (Chetnani and Mondragón, 2017). Distances from the 5’ end of the tRNA to the 3’ end of the anti-terminator (T-box182) and to the 3’ end of Stem III (T-box149) are marked. (B) One dimensional FRET histograms of intra-T-box pair of T-box182 (black) and T-box149 (red) with Cy3 attached directly to the 3’ end of the T-box and Cy5 attached to the oligo hybridized to the 5’ extension of the T-box. Only the first 50 data points of the FRET trajectories are used to plot the histogram to eliminate the zero FRET resulting from Cy5 photobleaching. ‘N’ denotes the total number of traces in each histogram from two independent experiments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) smFRET trajectories of T-box182-Cy3(3’) and tRNAGly-Cy5. Black arrows represent the time point when tRNAGly-Cy5 is flowed through the imaging area. Dwell time of unbound state (Toff) was calculated as the time between starting point and first FRET transition. (B) Surface contour plot of time-evolved FRET histogram of the flow experiment. ‘N’ denotes the total number of traces in each histogram from two independent experiments. (C) Histogram of τoff and its single-exponential decay fitting. Mean ±S.D. are calculated from two independent measurements. (D) Surface contour plot of time-evolved FRET histogram of all traces showing real-time binding events, including the traces that are unable to reach the 0.7 FRET state. The same data sets are used in Figure 2F. ‘N’ denotes the total number of traces in each histogram from three independent experiments, which are a subset of traces showing real-time binding event in the steady-state measurements. Total numbers of traces in the steady-state measurements are indicated in Figure 2B. Contours in (B) and (D) are plotted in the same way as in Figure 2F.
 
 In order to assign the 0.4 FRET value to specific tRNA binding states, tRNATyr-Cy5 and tRNAΔNCCA-Cy5 (‘ΔNCCA’ denotes a tRNAGly with a deleted 3’ NCCA sequence) were flowed in the flow-chamber with pre-immobilized T-box182-Cy3(3’) (3’ denotes that the label was added at the 3’ end). We did not observe any binding of tRNATyr-Cy5 (Figure 2—figure supplement 1), confirming that recognition of the anticodon by the specifier region is required for tRNA binding. In the presence of tRNAΔNCCA-Cy5, we observed a fluctuating signal between 0.4 and 0 FRET (Figure 2B,D), with a mean lifetime of the 0.4 FRET state of 3.6 ± 0.6 s and a mean waiting time before binding of 31.3 ± 5.3 s (Figure 2—figure supplement 2B). Taken together with the results from the tRNAGly, tRNAΔNCCA and tRNATyr binding experiments, we assign the 0.4 FRET state to a partially bound state where only the anticodon interactions have been established.
 
@@ -45,7 +77,7 @@ To further confirm the assignment of the FRET states, we generated T-box149, whe
 
 Collectively, our results suggest a two-step binding model involving the separate establishment of the interactions with the anticodon and the NCCA. The fact that tRNATyr, which has a mismatched anticodon, but contains an intact NCCA 3’ end, does not show any binding activity suggests that interactions with the anticodon precede the interactions with the NCCA end of the tRNA and are necessary for the establishment of the NCCA contacts. Without the interaction between the NCCA and the t-box sequence the binding of tRNAGly is not stable. From the binding kinetics of tRNAΔNCCA, we estimated the association rate constant (k1) and the disassociation rate constant (k-1) for the first binding step to be (5.0 ± 1.6) x 105 M−1s−1 and 0.28 ± 0.05 s−1, respectively (Figure 5; Figure 6E).
 
-## The transition from anticodon recognition to NCCA binding is rapid for uncharged tRNA
+### The transition from anticodon recognition to NCCA binding is rapid for uncharged tRNA
 
 We classified smFRET traces for T-box182-Cy3(3’) in complex with tRNAGly-Cy5 into three types (Figure 2B): (I) traces stably sampling the 0.7 state (79 ± 4% of total traces), (II) traces transiently transitioning from the 0.7 state to the 0.4 state (9 ± 5%), and (III) traces only sampling the 0.4 state without reaching 0.7 state (12 ± 5%). The low percentage of Type III traces indicates that once the anticodon is recognized, the commitment to the next binding step, NCCA interactions, is high. The majority of the traces showed that the tRNAGly remained mostly in the fully bound state (Type I) until the fluorophore photobleached, with the actual lifetime limited by photobleaching (τ0.7 > 24 s, where τ0.7 denotes the lifetime of the 0.7 FRET state) (Figure 2—figure supplement 2A). The observation that tRNAGly is able to transit from the fully bound state back to the partially bound state (Type II) suggests that the NCCA/t-box interaction can break occasionally (Figure 2B). We estimated the lifetime of the transiently sampled partially bound state to be 0.35 ± 0.09 s in the presence of full-length tRNAGly (Figure 2—figure supplement 2A), ~10 fold shorter than the partially bound state in the presence of tRNAΔNCCA.
 
@@ -53,27 +85,67 @@ While the majority of the T-box molecules were already bound to tRNAGly before s
 
 From the real-time binding kinetics of tRNAGly to T-box182, we estimated a transition rate constant from the partially bound state to the fully bound state (k2) to be on the order of 10 s−1 (Figure 2F, Figure 2—figure supplement 4). On the other hand, as transitions back to the partially bound state from the fully bound state were only observed in ~10% traces, we interpreted this to mean that the reverse transition rate constant (k-2) is very small, and the second binding step in the wild-type (WT) T-box with uncharged tRNAGly is close to irreversible (Figure 5; Figure 6E and see Discussion).
 
-## Establishment of the NCCA/t-box interaction is accompanied by conformational changes in the T-box riboswitch
+### Establishment of the NCCA/t-box interaction is accompanied by conformational changes in the T-box riboswitch
 
 We next investigated whether tRNA binding requires any conformational changes in the T-box itself. Using doubly labeled T-box182, with Cy3 at the 3’ end and Cy5 at the 5’ hybridization extension, we observed a high FRET state (centered at ~0.75) in the absence of tRNA (Figure 3—figure supplement 1). Based on the structural model (Chetnani and Mondragón, 2017), we estimated the distance between the 5’ and 3’ ends of the T-box182 to be ~36 Å (Figure 1B). Our measured FRET value is slightly less than the predicted FRET value (~0.90), likely due to the engineered 5’ extension sequence used to immobilize the T-box. No noticeable change was detected upon incubation with unlabeled tRNAGly (Figure 3—figure supplement 1), indicating that the 3’ portion (Stem III plus the anti-terminator stem) does not move away from the 5’ portion (Stem I). Given that the measured FRET efficiency of 0.75 is already located beyond the FRET sensitive region, it is unlikely that any inward motion of the 3’ portion relative to the 5’ could be detected. To overcome this limitation, we added extensions at both the 3’ and 5’ ends (Figure 3A, Supplementary file 1). ITC experiments suggest that addition of a 5’ and/or a 3’ extension sequences to the T-box does not affect tRNA binding (Figure 1—figure supplement 2). With this intra-T-box FRET scheme, we observed a FRET shift from ~0.5 to~0.65 when tRNAGly was added (Figure 3B), indicating that the 3’ half of the T-box moves closer to the 5’ half, potentially with the T-box becoming more compact due to the presence of the cognate tRNAGly. Adding non-cognate tRNAPhe or tRNAΔNCCA gave similar FRET values as the T-box alone (Figure 3B), suggesting that the conformational change is associated with binding of both the anticodon and NCCA, not with anticodon recognition alone (Figure 5).
 
-## The NCCA end of the uncharged tRNA maintains its relative position to the K-turn region during the second binding step
+![Figure 3.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig3-v2.jpg)
+
+**Figure 3.:** (A) Intra-T-box FRET scheme. Cy3 (green star) and Cy5 (red star) are attached at the 5’ and 3’ extensions of T-box (blue), respectively. (B) One-dimensional FRET histograms of T-box182 alone, with tRNAPhe, with tRNAΔNCCA, and with tRNAGly. ‘N’ denotes the total number of traces in each histogram from three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Cy5 (red star) and Cy3 (green star) are attached at the 5’ extension of the T-box (blue) and the 3’ end of the T-box, respectively. (B) One dimensional FRET histograms of intra-T-box pair of T-box182 alone (black) and with tRNAGly (red). ‘N’ denotes the total number of traces in each histogram from all independent experiments. For ‘-tRNA’ case, two independent measurements were performed. For ‘+tRNAGly’ case, as no difference was detected, we only performed the measurement once.
+
+### The NCCA end of the uncharged tRNA maintains its relative position to the K-turn region during the second binding step
 
 Using the above two FRET pairs, we observed that the 3’ portion of the T-box moves towards the base of Stem I as well as the NCCA end of the tRNA during the second binding step. To ascertain whether the NCCA end of the tRNA also moves relative to the base of Stem I, we measured FRET between a Cy3 placed at the 5’ end of the T-box (T-box182-Cy3(5’)) and tRNAGly-Cy5 (Figure 4A). Using this FRET pair, binding of both tRNAGly and tRNAΔNCCA generated a similar FRET value centered at ~0.35 (Figure 4B,C). However, the FRET traces behaved differently for these two tRNA molecules. For tRNAΔNCCA, the signal fluctuated between zero and 0.35 (Figure 4D), with a lifetime of the 0.35 FRET state of 4.5 ± 1.0 s, reminiscent of the 0.4 FRET state using the tRNA/T-box182-Cy3(3’) FRET pair (Figure 4—figure supplement 1). For tRNAGly, the signal was more stably centered at 0.35 (Figure 4B). Since the tRNA-Cy5/T-box182–Cy3(5’) FRET pair cannot distinguish the partially bound from the fully bound state, we fit the lifetime with a double-exponential decay. The fast dissociation fraction has a lifetime of 3.9 ± 0.7 s (46 ± 21% of population), consistent with the lifetime for the partially bound state, and the low dissociation fraction has a lifetime of 15.7 ± 0.8 s (54 ± 21%), representing the stable fully bound state (Figure 4—figure supplement 1). Overall, the measurements with the tRNA-Cy5/T-box–Cy3(5’) FRET pair further validate the two-step binding model and reveal that the NCCA end of the uncharged tRNA maintains its relative position to the base of Stem I during the second binding step.
 
-## A mutation in the T-loop region affects the first binding step but has minimal effect on the second binding step
+![Figure 4.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cy3 (green star) and Cy5 (red star) are attached at the 5’ extension of the T-box (blue) and the 5’ of the tRNA (black), respectively. (B) smFRET trajectories of T-box-Cy3(5’) with tRNAΔNCCA-Cy5 (left) and tRNAGly-Cy5 (right). ‘N’ denotes the total number of traces in each histogram from three independent experiments. (C) One-dimensional FRET histograms of T-box-Cy3(5’) with tRNAΔNCCA-Cy5 (left) and tRNAGly-Cy5 (right). (D) TDP of T-box-Cy3(5’) with tRNAΔNCCA-Cy5 (left) and tRNAGly-Cy5 (right). Contours are plotted in the same way as in Figure 2D. TDPs are generated from all smFRET traces from three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Dwell time of bound state in the presence of tRNAΔNCCA-Cy5 (left) is fit with a single-exponential decay function (black curve). Dwell time of the bound state in the presence of tRNAGly-Cy5 (right) is fit with double exponential decay function (black curve). Mean ±S.D. are calculated from three independent measurements.
+
+### A mutation in the T-loop region affects the first binding step but has minimal effect on the second binding step
 
 The interdigitated T-loops structure formed by the interactions between the distal bulge and the apical loop at the distal end of Stem I has been shown to be important for tRNA binding (Grigg et al., 2013; Lehmann et al., 2013; Zhang and Ferré-D'Amaré, 2013). Specifically, C56 of the T-box stacks on a nucleobase in the D-loop of the tRNA, and a point mutation of C56 to U has been shown to reduce the tRNA binding affinity by ~40 fold (Zhang and Ferré-D'Amaré, 2013). We introduced the same mutation in the T-box182 backbone (T-boxC56U) (Figure 6A, Supplementary file 1). The smFRET trajectories for tRNAGly binding to T-boxC56U are overall similar to the trajectories for WT T-box182, with a majority of traces (73 ± 6% of total traces) showing stable binding at 0.7 FRET state, and 13 ± 4% of the traces showing transitions back to the 0.4 FRET state (Figure 6C,D). τ0.7 was estimated to be at least ~23 s (limited by the photobleaching of the fluorophore) (Figure 6E). Post-synchronized time-evolved histogram on the subset of traces that demonstrated real-time binding shows fast transition to the fully bound state (Figure 6—figure supplement 1). Comparison of tRNAGly binding to T-boxC56U and T-box182 suggest that the C56U mutation does not affect the second binding step. To investigate whether the mutation at the T-loop region affects the first binding step, we analyzed the binding and dissociation of tRNAΔNCCA-Cy5 to T-boxC56U-Cy3(3’). We found that the k1 of tRNA binding to T-boxC56U was roughly 20-fold slower compared to tRNA binding to T-box182, and the dissociation was roughly 2.5-fold faster compared to T-box182 (Figure 6E), leading to a ~ 50 fold higher dissociation constant for the first binding step. Our results suggest that the T-loop region of the T-box is critical during the first binding step, potentially aiding in anticodon recognition, but does not contribute significantly to the second binding step.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig5-v2.jpg)
 
-**Figure 5.:** glyQS T-box riboswitch and uncharged tRNAGly.Details of the model are described in the text. Rate constants are summarized in Figure 6E.
+**Figure 5.:** Details of the model are described in the text. Rate constants are summarized in Figure 6E.
 
-## A truncation of stem III has a minor effect on tRNA binding
+![Figure 6.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic diagram of three different mutations introduced to the T-box182 backbone (T-boxC56U, T-boxSIII-Δ4bp and T-boxΔKT). (B) Representative smFRET traces of T-boxΔKT-Cy3(3’) and tRNAGly-Cy5. (C) FRET histograms of the T-box mutants with tRNAGly-Cy5. ‘N’ denotes the total number of traces in each histogram from three independent experiments. (D) TDP of the T-box mutants with tRNAGly-Cy5. TDPs are generated from all smFRET traces from three independent experiments and are plotted in the same way as in Figure 2D. (E) Table of kinetic parameters for tRNAGly-Cy5 binding to different T-box constructs. k-1, k2, and k-2 of T-boxΔKT-Cy3(3’) are apparent rate constants estimated to allow comparison as described in Materials and methods. All rate constants are reported as mean ± standard deviation (S.D.) from three or four independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Surface contour plot of time-evolved FRET histogram of T-boxC56U-Cy3(3’) with tRNAGly-Cy5 with traces showing real-time binding. Contours are plotted in the same way as in Figure 2F. ‘N’ denotes the total number of traces in each histogram from three independent experiments, which are a subset of traces showing real-time binding event in the steady-state measurements. Total number of traces in the steady-state measurements is indicated in Figure 6C. (B) FRET histogram of T-boxC56U-Cy3(3’) with tRNAΔNCCA-Cy5. ‘N’ denotes the total number of traces three independent experiments. (C) TDP of T-boxC56U-Cy3(3’) with tRNAΔNCCA-Cy5. TDP is generated from all smFRET traces from three independent experiments and is plotted in the same way as in Figure 2D.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Surface contour plot of time-evolved FRET histogram of T-boxSIII-Δ4bp-Cy3(3’) with tRNAGly-Cy5 with traces showing real-time binding. Contours are plotted in the same way as in Figure 2F. ‘N’ denotes the total number of traces in each histogram from three independent experiments, which are a subset of traces showing real-time binding event in the steady-state measurements. Total number of traces in the steady-state measurements is indicated in Figure 6C. (B) FRET histogram of T-boxSIII-Δ4bp-Cy3(3’) with tRNAΔNCCA-Cy5. ‘N’ denotes the total number of traces from four independent experiments. (C) TDP of T-boxSIII-Δ4bp-Cy3(3’) with tRNAΔNCCA-Cy5. TDP is generated from all smFRET traces from four independent experiments and is plotted in the same way as in Figure 2D.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) FRET histogram of T-boxΔKT-Cy3(3’) with tRNAΔNCCA-Cy5. ‘N’ denotes the total number of traces from three independent experiments. (B) TDP of T-boxΔKT-Cy3(3’) with tRNAΔNCCA-Cy5. TDP is generated from all smFRET traces from three independent experiments and is plotted in the same way as in Figure 2D. (C) Kinetic model of tRNAGly binding to T-boxΔKT. Transition rate constants are reported as mean ±S.D from three independent measurements. Probabilities of different pathways for transitioning into and out of 0.7 FRET states are marked in red in parenthesis.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** The error bars correspond to the standard deviations from 3 or four independent measurements.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/39518/elife-39518-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Examples of binding traces simulated by the Gillespie algorithm (Gillespie, 1976; Gillespie, 1977; Gillespie, 2007). ‘1’ represents a binding event, and ‘0’ represents the unbound state. If there is a single binding event within the 70 s time window, the trace is included in the bound fraction (F). F is defined by the number of traces showing a binding event divided by the total number simulated traces. (B) Simulation of F as a function of k-1, where apparent k1 is set to be 0.015 s−1, to be consistent with our measured apparent k1 in the presence of 30 nM tRNA on WT T-box182 (left panel). Simulation of F as a function of apparent k1, where k-1 is set to be 0.25 s−1 to be consistent with our measured k-1. (C) Normalized bound fraction (f) is F normalized to the value at apparent k1 = 0.015 s−1, to reflect the equivalent quantification of normalized trace fraction to the case of tRNA binding to WT T-box182 (Figure 6—figure supplement 4). Red line presents the linear fitting of ln(f0-f) vs. apparent k1.
+
+### A truncation of stem III has a minor effect on tRNA binding
 
 The functional role of Stem III is unclear. It has been speculated that Stem III might serve as a transcription stalling site to allow co-transcriptional folding and regulation of the T-box riboswitch (Grundy and Henkin, 2004; Zhang and Landick, 2016). In addition, a SAXS data-derived model suggested coaxial stacking of Stem III and the anti-terminator stem, leading to a plausible role of Stem III in stabilizing the anti-terminator conformation in the presence of uncharged tRNAGly (Chetnani and Mondragón, 2017). To investigate the latter hypothesis, we generated a T-box mutant (T-boxSIII-Δ4bp), in which four base pairs in Stem III are deleted to significantly shorten its length (Figure 6A, Supplementary file 1). smFRET studies using T-boxSIII-Δ4bp-Cy3(3’) with tRNAΔNCCA-Cy5 and tRNAGly-Cy5 revealed insignificant difference in overall kinetics in the first and second step bindings (Figure 6C–E, Figure 6—figure supplement 2). Noticeably, the τ0.7 was around 50% shorter than that for the T-box182 (Figure 6E), indicating that Stem III may contribute to the stabilization of the fully bound state, potentially through coaxial stacking with the anti-terminator stem, but the effect is minor.
 
-## A K-turn mutation affects both binding steps
+### A K-turn mutation affects both binding steps
 
 We next investigated the role of the K-turn in regulating tRNA binding kinetics. We disrupted the K-turn (T-boxΔKT) by changing the six bulged nucleotides to three nucleotides (UCA) to replace the K-turn with a three base pair stem (Figure 6A, Supplementary file 1). In contrast to binding of tRNAGly to T-box182, binding to T-boxΔKT results in three FRET states centered on ~0.2, 0.4, and 0.7. (Figure 6B). While the exact boundary of each FRET state is difficult to determine accurately from the FRET histogram (Figure 6C), a transition density plot (TDP) clearly reveals interconversion between the 0.2, 0.4, and 0.7 states (Figure 6D), with transitions between the 0.2 and 0.4 FRET states, and between the 0.4 and 0.7 FRET states more populated. Binding of tRNAΔNCCA-Cy5 to T-boxΔKT, on the other hand, leads to the loss of population of the 0.7 state; however, both the 0.2 and 0.4 FRET states and fluctuations between these two states are frequently sampled (Figure 6—figure supplement 3A,B).
 
@@ -97,64 +169,200 @@ In conclusion, our study provides a comprehensive kinetic framework for describi
 
 ## Materials and methods
 
-## RNA purification and mutagenesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>glyQS T-box riboswitch</td>
+      <td>PMID: 28531275</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Bacillus subtilis)</td>
+      <td>tRNA-Gly</td>
+      <td>PMID: 9023104</td>
+      <td>RRID:SCR_008636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5α</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>Catalogue # 18265017</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC19 Vector</td>
+      <td>New England Biolabs</td>
+      <td></td>
+      <td>Catalogue # N3041S</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T7 RNA polymerase</td>
+      <td>PMID: 3684574</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BsaI</td>
+      <td>New England Biolabs</td>
+      <td></td>
+      <td>Catalgue #: M0535S</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RppH</td>
+      <td>New England Biolabs</td>
+      <td></td>
+      <td>Catalgue #: M0356S</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanine5 NHS ester</td>
+      <td>Lumiprobe</td>
+      <td></td>
+      <td>Catalogue # 13020</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cyanine3 hydrazide</td>
+      <td>Lumiprobe</td>
+      <td></td>
+      <td>Catalogue # 13070</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 5.0</td>
+      <td>Microcal Origin</td>
+      <td>RRID:SCR_002815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NIS-Elements</td>
+      <td>Nikon</td>
+      <td>RRID:SCR_014329</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA purification and mutagenesis
 
 RNA transcription was performed in vitro using His6-tagged T7 RNA polymerase using standard protocols (Milligan et al., 1987). Cloning, design of a bicistronic DNA template encoding the B. subtilis glyQS T-box riboswitch and its cognate tRNAGly, and conditions for in vitro transcription were described before (Chetnani and Mondragón, 2017). For the experiments, all the RNAs from the crude transcription reaction were purified on a 7.5% denaturing (8 M Urea) polyacrylamide gel. The RNAs of interest were located on the gel by UV shadowing, the bands were cut out, and the RNAs were eluted into 50 mM sodium acetate (pH 7.0) buffer containing 200 mM potassium chloride by overnight rocking at 4°C. The eluted RNAs were precipitated by adding 3 volumes of cold 100% ethanol and stored overnight at −20°C. The precipitated RNAs were pelleted by centrifugation for 15 min at 20,000 g. The RNA pellets were washed three times in cold 80% ethanol, dried in a Speedvac and re-suspended in water. The concentration was estimated by its absorbance at 260 nm and was kept frozen at −20°C for long term storage. All mutant constructs were made using a commercial site directed mutagenesis protocol (Kunkel, 1985) (Quikchange, Stratagene) and the RNAs were produced and purified by using the same protocol described above. The sequence of all mutant T-box and tRNA constructs were confirmed by sequencing and validated by MFOLD (Zuker, 2003) to ensure that the secondary structural elements were not affected by the mutations.
 
-## Fluorescent labelling of the RNA
+### Fluorescent labelling of the RNA
 
 For smFRET experiments, end labelling of RNA molecules was performed by modifying standard labelling protocols (Rinaldi et al., 2015). For 3’ end labelling, 50 µg of RNA in 50 µL of reaction volume was incubated with 0.1 M Na-periodate in 0.1 M Na-acetate buffer at pH 5.2 for 90 min in the dark. The reaction was quenched by adding 5 µL of 2.5 M KCl and incubating on ice for 10 min. The resultant insoluble KIO4 was removed by centrifugation at 20,000 g for 30 min and the supernatant was passed through a P6 column (Bio-Rad) to exchange the buffer to 0.1 M HEPES (pH 7.0), 40% DMSO. The RNA was incubated with Cy3 hydrazide (Lumiprobe) dye for 45 min with a final RNA/dye ratio of ~1:200. The RNA was then ethanol precipitated as described above. The precipitated RNA was pelleted by centrifugation for 15 min at 20,000 g, dried in a Speedvac and re-suspended in water. The final RNA solution was passed through a P6 column to remove any residual free dye.
 
 5’ end labelling of RNA was performed by N-(3-Dimethylaminopropyl)-N′-ethylcarbodiimide hydrochloride (EDC) – N-hydroxysuccinimide (NHS) coupling through activation of the 5’ monophosphate of the RNA by EDC and imidazole (Rinaldi et al., 2015). To improve the overall labelling efficiency of this method, a modified approach was used in which the 5’ triphosphate of 100 µg of RNA was converted to 5’ monophosphate in 100 µL reaction volume by incubating it with 100 units of RNA 5' Pyrophosphohydrolase (NEB) at 37°C for 1 hr. The enzyme was removed by phenol chloroform extraction and the supernatant was passed through a P6 column to exchange the buffer to 10 mM HEPES (pH 7.0), 150 mM NaCl, 10 mM EDTA. This was followed by addition of 12.5 mg of EDC to the RNA solution along with 50 µL of ethylene diamine and 200 µL of 0.1 M imidazole buffer (pH 6.0). The reaction was incubated for 3 hr at 37°C and the RNA was then ethanol precipitated as described above. The resultant RNA pellet was re-suspended in 0.1 M sodium carbonate buffer (pH 8.7) and residual EDC was removed by passing the solution through a P6 column. The resultant RNA solution in 0.1 M sodium carbonate buffer (pH 8.7) was incubated with Cy5 NHS (Lumiprobe) dye for 45 min with a final RNA/dye ratio of ~1:200. The RNA was ethanol precipitated as described above and re-suspended in water. The final RNA solution was passed through a P6 column to remove any residual free dye. The overall labelling efficiency of RNA constructs used in this study varied from 75% to 95%.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 The thermodynamic parameters associated with binding of tRNAGly to glyQS T-box were determined at 25°C by using an ITC-200 Micro-Calorimeter (MicroCal). Prior to the experiment, the two interacting RNAs (in 50 mM HEPES pH 7.0, 100 mM KCl) were refolded separately by first heating for 3 min at 90o C followed by incubation on ice for 2 min. At this point, MgCl2 was added to attain a final concentration of either 1 mM or 10 mM. The RNA solution was then heated to 50o C for 10 min and 37o C for 30 min followed by cooling to 25°C. The refolded RNA was then concentrated using a 10 kDa cutoff Amicon filter and washed three times with the final ITC buffer (50 mM HEPES pH 7.0, 100 mM KCl and 10 mM MgCl2 or 1 mM MgCl2). For testing the binding of T-box with unlabeled and 5’ Cy5 labelled tRNA in 10 mM MgCl2 buffer, the sample cell was filled with 6.6 µM and 11 µM T-box respectively and the corresponding concentration of tRNAGly in the syringe was 111 µM and 152 µM. For the ITC experiment in 1 mM MgCl2 buffer, the cell was filled with T-box at a concentration of 6.7 µM and the syringe concentration of unlabeled tRNAGly was 72 µM. For each ITC experiment, the titration was carried out by stepwise (2 µL) injection of tRNAGly from a stirred syringe (1000 rev/min) into the sample cell. Successive injections were spaced by 150 s and values for the change in enthalpy (ΔHb), association constant (Kb), change in enthalpy (ΔHb) and stoichiometry (n) were determined by nonlinear least-squares fitting of the data using Origin 5.0 software (OriginLab).
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 The T-box and tRNA were denatured and refolded using the same protocol as described for the ITC and smFRET experiments. For binding of tRNA, 5 µL of 4 µM of folded T-box and 5 µL of 2 µM folded tRNA samples were mixed together for 30 min in final buffer containing 50 mM HEPES pH 7.0, 100 mM KCl and 15 mM MgCl2. The folded T-box or T-box +tRNA mixture were loaded on to 6% native polyacrylamide gel containing 15 mM MgCl2 and the gel was run at room temperature for 2–2.5 hr. RNAs were stained by SYBRTM green RNA staining dye (Invitrogen). The gel was imaged using ChemiDoc (Bio-rad) in SYBR green channel (for unlabeled T-box constructs), Cy5 channel (for tRNA-Cy5), or Cy3 channel (for labeled T-box constructs). Images were processed and analyzed by ImageJ (Schneider et al., 2012).
 
-## Fluorophore conjugation of DNA oligos
+### Fluorophore conjugation of DNA oligos
 
 DNA oligos that hybridize to 5’ extension and 3’ extension of the T-box construct were purchased from Integrated DNA Technologies with an amine modification at the 5’ end and 3’ end respectively. 13.5 µL of 100 µM DNA oligo was mixed with 1.5 µL of 1 M NaHCO3 (pH 8.6). 25 µg of NHS conjugated fluorophore (Cy3 or Cy5) was dissolved with 0.5 µL DMSO and mixed with the DNA oligo solution. The mixture was incubated at 37°C overnight. 1.67 µL of 3 M NaOAc and 50 µL of pure ethanol was added to the mixture to precipitate the conjugated DNA oligo overnight at −20°C. The precipitated DNA oligo was pelleted by centrifugation for 30 min at 21000 g and re-suspended with 40 µL water. The DNA solution was passed through a P6 column to remove any residue free dye and salt. The overall fluorophore labeling efficiency is ~60%.
 
-## smFRET measurements
+### smFRET measurements
 
 Slides containing microfluidic channels were prepared as previously described (Blanchard et al., 2004). Slides and coverslips were coated with a mixture of poly-ethylene glycol (PEG, Mw = 500,000) and PEG-biotin (Mw = 500,000) according to previously published protocol (Blanchard et al., 2004). The T-box and tRNA were denatured and refolded using the same protocol described for the ITC experiments with the final buffer containing 50 mM HEPES pH 7.0, 100 mM KCl, and 15 mM MgCl2. T-box RNA was hybridized to the biotinylated DNA oligo at the extension during refolding, and immobilized via biotin-streptavidin interactions to the surface. tRNA was diluted in imaging buffer (50 mM HEPES pH 7.0, 100 mM KCl, 15 mM MgCl2, 5 mM protocatechuic acid (PCA) (Sigma), 160 nM protocatechuate-3,4-dioxygenase (PCD) (Sigma), and 2 mM Trolox (Sigma)) and flowed into the microfluidic channels. smFRET measurements were performed with an objective based total internal reflection fluorescence (TIRF) microscope based on a Nikon Ti-E with 100X NA 1.49 CFI HP TIRF objective (Nikon). A 561 nm laser (Coherent Obis at a power density of 4.07 × 105 W/cm2) was used for the FRET measurement. A 647 nm laser (Cobolt MLD at a power density of 5.88 × 105 W/cm2) was used for direct excitation of Cy5 to check the presence of the acceptor. Emissions from both donor and acceptor were passed through an emission splitter (OptoSplit III, Cairn), and collected at different locations on an EMCCD (iXon Ultra 888, Andor). 1500 frames of time-lapse images were taken with 100 ms exposure time. Each independent measurement in our study should be considered as a technical replicate. The biological samples (i.e. the in vitro transcribed tRNAs and T-boxes) were generated once. In each measurement, T-box and tRNA were folded, smFRET images were recorded, and analysis were performed independently.
 
-## Lifetime analysis
+### Lifetime analysis
 
 Individual spots were picked from maximum intensity projection of Cy5 emission channel (Figure 2—figure supplement 1) using NIS Elements software, that is only the pixels with the highest intensity value of the same XY coordinates in time-lapse images are displayed in the maximum intensity projection image. Fluorescent intensity trajectories of these spots were generated from Cy3 and Cy5 channels of time-lapse images, and corrected for baseline and bleed-through in MATLAB as previously described (Fei et al., 2008). FRET traces were generated by calculating ICy5 / (ICy5+ICy3) at each time point from the intensity trajectories. smFRET traces were idealized by fitting with a Hidden Markov Model using vbFRET (Bronson et al., 2009). Dwell time of each FRET state before transition to another FRET state of individual traces was extracted from the idealized traces and the dwell time histograms were fit with exponential decay by Origin 7.0 (OriginLab) (Figure 2—figure supplement 2). In most of the cases, dwell time histograms fit well with a single exponential decay (A.exp(-t/t0) + y0). In a few cases, in which mixed populations with different lifetimes were expected, dwell time histograms were fit with a double exponential decay (A1.exp(-t/t1) + A2.exp(-t/t2) + y0) and the population-weighted average lifetime was calculated by (A1.t1 +A2.t2) / (A1 + A2). The latter cases are explicitly mentioned in the text.
 
-## Determination of kinetic parameters
+### Determination of kinetic parameters
 
-## (I) k-1
+#### (I) k-1
 
-For all T-box constructs, k-1 was estimated from the dwell time of the partially bound state (0.4 FRET state of T-box182, T-boxC56U and T-boxSIII-Δ4bp) of tRNAΔNCCA-Cy5 (Figure 2—figure supplement 2). The dwell time of the partially bound state was fit with a single exponential decay. The lifetime of 0.4 FRET state (τ0.4-0) was extracted and k-1 was calculated using the following equation:k-1=1τ0.4-0
+For all T-box constructs, k-1 was estimated from the dwell time of the partially bound state (0.4 FRET state of T-box182, T-boxC56U and T-boxSIII-Δ4bp) of tRNAΔNCCA-Cy5 (Figure 2—figure supplement 2). The dwell time of the partially bound state was fit with a single exponential decay. The lifetime of 0.4 FRET state (τ0.4-0) was extracted and k-1 was calculated using the following equation:
 
-## (II) k1
+$$
+k_{-1}=\frac{1}{\tau_{0.4-0}}
+$$
 
-We noticed that the lifetime of the unbound state (τ0-0.4) of tRNAΔNCCA-Cy5 with Tbox182-Cy3(3’) was 31.3 ± 5.3 s, while the average smFRET trace length (τtrace) was 70 ± 7 s under 4.07 × 105 W/cm2 561 nm laser (Figure 2—figure supplement 2), limited by Cy3 photobleaching. Therefore, there was a possibility of underestimating the lifetime of the unbound state, or overestimating k1. We hence characterized the photobleaching effect on unbound state lifetime analysis using reduced 561 nm laser power (1.96 × 105 W/cm2). τ0-0.4 was calculated to be 46 ± 4 s and τtrace was 103.0 ± 0.6 s. To correct for the photobleaching effect, we estimated k1, using the following equation (Bartley et al., 2003; Fei et al., 2009):k1=1τ0-0.4-1τtrace×1[tRNA]where [tRNA] represents the concentration of tRNAΔNCCA-Cy5. k1 values were consistent using both high laser power ((5.8 ± 0.2) x 105 M−1s−1) and low laser power ((4.1 ± 0.6) x 105 M−1s−1). In Figure 6E, we reported the mean ±S.D. of k1 obtained with both high and low laser powers.
+#### (II) k1
+
+We noticed that the lifetime of the unbound state (τ0-0.4) of tRNAΔNCCA-Cy5 with Tbox182-Cy3(3’) was 31.3 ± 5.3 s, while the average smFRET trace length (τtrace) was 70 ± 7 s under 4.07 × 105 W/cm2 561 nm laser (Figure 2—figure supplement 2), limited by Cy3 photobleaching. Therefore, there was a possibility of underestimating the lifetime of the unbound state, or overestimating k1. We hence characterized the photobleaching effect on unbound state lifetime analysis using reduced 561 nm laser power (1.96 × 105 W/cm2). τ0-0.4 was calculated to be 46 ± 4 s and τtrace was 103.0 ± 0.6 s. To correct for the photobleaching effect, we estimated k1, using the following equation (Bartley et al., 2003; Fei et al., 2009):
+
+$$
+k_{1}=\frac{1}{\tau_{0-0.4}}-\frac{1}{\tau_{trace}}\times\frac{1}{[tRNA]}
+$$
+
+where [tRNA] represents the concentration of tRNAΔNCCA-Cy5. k1 values were consistent using both high laser power ((5.8 ± 0.2) x 105 M−1s−1) and low laser power ((4.1 ± 0.6) x 105 M−1s−1). In Figure 6E, we reported the mean ±S.D. of k1 obtained with both high and low laser powers.
 
 We also measured τoff in the flow experiment and it was determined by the dwell time between the injection time and detection of the first binding event (Figure 2—figure supplement 4C). k1 calculated for tRNAGly in the flow experiment was consistent with the value for tRNAΔNCCA in the steady-state experiment. We therefore used k1 of tRNAΔNCCA-Cy5 binding to the T-box to approximate the rate constant for the first binding step in all T-box constructs.
 
 For some T-box mutants (specifically, T-boxC56U-Cy3 and T-boxΔKT-Cy3), binding of tRNA-Cy5 became less efficient compared to the T-box182-Cy3(3’), already a hint of a deficient first binding step. In this case, estimation of k1 from the selected FRET traces will highly bias for the molecules that bind relatively fast within the photobleaching time of Cy3, therefore significantly overestimating k1. We therefore applied a different approach to estimate k1 for the T-box mutants. We counted trace percentage of the T-box mutants (number of FRET traces divided by the number of Cy3 spots) and normalized it to the trace percentage of T-box182 with tRNAΔNCCA-Cy5 to get the normalized trace percentage (f) (Figure 6—figure supplement 4).
 
-We performed Gillespie simulations (Gillespie, 1976; Gillespie, 1977; Gillespie, 2007) on the observed signal as a function of k1 and k-1 during the first binding step. The simulated signal mimicked the experiment and imaging processing. As our FRET traces were selected from the maximum intensity projection of the acceptor signal (Figure 2—figure supplement 1) regardless of the lifetime of the bound state, as long as there was a binding event during the imaging time window (70 s considering the photobleaching time of the donor dye), it would generate a signal (as a ‘footprint’) that showed in the output image of maximum projection (Figure 6—figure supplement 5A). For each parameter set, 2000 binding trajectories were simulated, and the fraction of the molecules that generated signal in the maximum intensity projection (referred to as ‘f’) within the 70 s time window was calculated. The simulation shows that f is insensitive to k-1, at least within the k-1 we observed for the various T-box constructs (Figure 6—figure supplement 5B), and that the dependence of f on k1 is best described asf=f0-aebk1where f0 is the binding fraction at saturation, and a and b are constants (Figure 6—figure supplement 5B). By fitting ln(f0-f) vs. k1 with a linear function (Figure 6—figure supplement 5C) we estimated k1 ask1=0.45-ln⁡1.557-f72.09
+We performed Gillespie simulations (Gillespie, 1976; Gillespie, 1977; Gillespie, 2007) on the observed signal as a function of k1 and k-1 during the first binding step. The simulated signal mimicked the experiment and imaging processing. As our FRET traces were selected from the maximum intensity projection of the acceptor signal (Figure 2—figure supplement 1) regardless of the lifetime of the bound state, as long as there was a binding event during the imaging time window (70 s considering the photobleaching time of the donor dye), it would generate a signal (as a ‘footprint’) that showed in the output image of maximum projection (Figure 6—figure supplement 5A). For each parameter set, 2000 binding trajectories were simulated, and the fraction of the molecules that generated signal in the maximum intensity projection (referred to as ‘f’) within the 70 s time window was calculated. The simulation shows that f is insensitive to k-1, at least within the k-1 we observed for the various T-box constructs (Figure 6—figure supplement 5B), and that the dependence of f on k1 is best described as
+
+$$
+f=f_{0}-ae^{bk_{1}}
+$$
+
+where f0 is the binding fraction at saturation, and a and b are constants (Figure 6—figure supplement 5B). By fitting ln(f0-f) vs. k1 with a linear function (Figure 6—figure supplement 5C) we estimated k1 as
+
+$$
+k_{1}=\frac{0.45-ln⁡1.557-f}{72.09}
+$$
 
 The standard deviations reported for k1 were calculated by an error propagation function considering the standard deviation of f.
 
-## (III) k2 and k-2
+#### (III) k2 and k-2
 
 Even though we observed that smFRET traces of tRNAGly with T-box182, T-boxC56U and T-boxSIII-Δ4bp exhibit real-time binding, the majority of the traces show single-step binding from unbound to fully bound state while only a few traces sample the partially unbound state within 0.1 s (Figure 2F, Figure 2—figure supplement 4B,Figure 6—figure supplements 1A and 2A). For this reason, our calculation of k2 is limited by the imaging time resolution and we estimate the transition from 0.4 to 0.7 is rapid with a k2 larger than 10 s−1.
 
 We can also detect transition from 0.7 FRET to 0.4 FRET, and calculate the lifetime of 0.7 FRET to 0.4 FRET (τ0.7-0.4) (Figure 2—figure supplement 2). However, the fraction of traces showing this transition is small. Since most of the traces demonstrate long time 0.7 FRET, we reason that k-2 should be very small and the second binding step for these three constructs is close to irreversible.
 
-## (IV) Kinetic model for T-boxΔKT
+#### (IV) Kinetic model for T-boxΔKT
 
-The kinetic model for tRNA binding to the K-turn mutant T-boxΔKT is illustrated in Figure 6—figure supplement 3C, with kinetic parameters marked. Specifically, the partially bound state contains a relaxed conformation and a bent conformation at the original K-turn region. The interconversion rates between 0.2, 0.4 and 0.7 FRET states were determined by the lifetime of the each FRET state before transitioning to the other FRET state. To compare better the kinetic parameters with other T-box constructs, we calculated the apparent k2 considering both pathways (0.2→0.7 and 0.2→0.4→0.7) (Figure 6—figure supplement 3C) as below:k2_app=p1k1'k2'(k1'+k-1')+p2k2
+The kinetic model for tRNA binding to the K-turn mutant T-boxΔKT is illustrated in Figure 6—figure supplement 3C, with kinetic parameters marked. Specifically, the partially bound state contains a relaxed conformation and a bent conformation at the original K-turn region. The interconversion rates between 0.2, 0.4 and 0.7 FRET states were determined by the lifetime of the each FRET state before transitioning to the other FRET state. To compare better the kinetic parameters with other T-box constructs, we calculated the apparent k2 considering both pathways (0.2→0.7 and 0.2→0.4→0.7) (Figure 6—figure supplement 3C) as below:
 
-Where p1 and p2 are the probabilities of the 0.2→0.4→0.7 and 0.2→0.7 pathways respectively. And we calculated the apparent k-2 considering both pathways (0.7→0.2 and 0.7→0.4) (Figure 6—figure supplement 3C) as shown below:k-2_app=p1k-2'+p2k-2
+$$
+k_{2_app}=p_{1}\frac{k_{1}^{'}k_{2}^{'}}{(k_{1}^{'}+k_{-1}^{'})}+p_{2}k_{2}
+$$
+
+Where p1 and p2 are the probabilities of the 0.2→0.4→0.7 and 0.2→0.7 pathways respectively. And we calculated the apparent k-2 considering both pathways (0.7→0.2 and 0.7→0.4) (Figure 6—figure supplement 3C) as shown below:
+
+$$
+k_{-2_app}=p_{1}k_{-2}^{'}+p_{2}k_{-2}
+$$
 
 Where p1 and p2 are the probabilities of the 0.7→0.4 and 0.7→0.2 pathways, respectively. To compare with the k-1 of other T-box constructs, the apparent k-1_app of T-boxΔKT was estimated by considering both 0.4 and 0.2 FRET states.

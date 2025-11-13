@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/02grkyz14 Western Institute for Neuroscience, Western University London Canada
-2. https://ror.org/0264fdx42 School of Exercise and Nutritional Sciences, San Diego State University San Diego United States
-3. https://ror.org/02grkyz14 Department of Physiology and Pharmacology, Western University London Canada
-4. https://ror.org/02grkyz14 Department of Computer Science, Western University London Canada
-5. https://ror.org/02grkyz14 Department of Statistical and Actuarial Sciences, Western University London Canada
+1. Western Institute for Neuroscience, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+2. School of Exercise and Nutritional Sciences, San Diego State University San Diego United States ([ROR:0264fdx42](https://ror.org/0264fdx42))
+3. Department of Physiology and Pharmacology, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+4. Department of Computer Science, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
+5. Department of Statistical and Actuarial Sciences, Western University London Canada ([ROR:02grkyz14](https://ror.org/02grkyz14))
 
 † Corresponding author
 
@@ -36,9 +36,17 @@ For longer movement sequences, especially if they are to be rapidly executed, it
 
 We investigated how multiple future targets of a sequence are planned in a continuous reaching task. Participants were instructed to perform sequences of 14 reaches in a planar robotic exoskeleton. The targets were generated from a hexagonal grid of potential targets with radii of 1 cm spaced 4 cm apart over a 21×24 cm2 total workspace (Figure 1A). Every trial started from the same ‘home’ target in the center of the workspace. Participants were instructed to capture a target before moving on the next target. They captured each target by staying within it for 75, 200, or 400 ms (dwell time, Figure 1B). Longer dwell times required a full stop in each target, while shorter dwell times allowed participants to link subsequent reaches into a co-articulated unit (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/94485/elife-94485-fig1-v1.jpg)
+
+**Figure 1.:** (A) Participants performed reaches in an exoskeleton robot. Their hand was occluded, and hand position was indicated by a red dot. The full grid of possible targets not shown to participants. The targets and their order were shown with decreasing brightness (an H3 trial is shown). (B) Movement trajectory in three example trials (Horizon 2; Dwell 75, 200, 400). Trials always started from a fixed home target in center (gray target). The small circles on the traces show the time point in which the target was captured. (C) Speed profiles for the example trials shown in (B). (D) Timeline of the task for Horizon 1–3 conditions. Ticks show the time when the target was captured (colored number) and a new target was shown on the screen (colored small dot). The boxes above the line show the available time for planning each movement, the time from when the target first shown to the beginning of the execution of the movement. The boxes below the line show the execution of each movement, the time interval in which the hand was moving from one target to another.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94485/elife-94485-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) From one participant, for each horizon, one trial is selected randomly. Black traces show the speed profile, red dots show the time point that hand entered a new target. (B) Same as (A) but for a different participant.
+
 Participants could see the position of their hand displayed as a circular cursor in the horizontal plane of the task. Participants were shown either one (Horizon 1), two (H2), three (H3), four (H4), or five (H5) future targets to control how much information about the future sequence was available. The order of future targets was indicated by their brightness. The Horizon 1 condition was equivalent to a serial reaction time task because the next target appeared only when the current one was captured. Therefore, the next movement could not be planned until the end of the current movement (Figure 1D, H1). In contrast, the Horizon 2 condition allowed for some planning of the next movement while executing the current one (Figure 1D, H2). Horizon 3–5 conditions allowed planning the next two, three, or four movements, respectively (Figure 1D, H3).
 
-## Planning future reaches speeds up sequence execution
+### Planning future reaches speeds up sequence execution
 
 To establish how many future movements participants planned, we first asked whether participants were faster when extra future targets were visible. To quantify speed, we measured the inter-reach interval (IRI), defined as the time required to move the hand from the boundary of one target to the boundary of the next target (Figure 2). IRI was significantly reduced from Horizon 1 to Horizon 2 for all dwell times. The average reduction of IRI was 206 ms (t(10) = 22.76, p=3.02e-10), 232 ms (t(10) = 27.41, p=4.83e-11), and 246 ms (t(10) = 24.84, p=1.27e-10) for the 75, 200, and 400 ms dwell times, respectively. We also observed a further small 16 ms improvement from H2 to H3 in the 75 ms dwell time condition (t(10) = 3.137, p=5.30e-3). These results suggest that, at least for a dwell time of 75 ms, participants plan two targets ahead of the current reach.
 
@@ -46,7 +54,7 @@ To establish how many future movements participants planned, we first asked whet
 
 **Figure 2.:** IRI was averaged across all trials, all session, for each participant. The error bars show a 95% confidence interval accross participants (n = 11), ** signifies p<0.01, **** signifies p<0.0001.
 
-## Target jump confirms participants plan two future reaches
+### Target jump confirms participants plan two future reaches
 
 Because the reduction of IRI from H2 to H3 observed above was small, we performed a second experiment to test whether participants planned two movements into the future. That is, we occasionally displaced the target two reaches in the future (i.e. the +2 target) when the current (i.e. +0) target was captured. If information about the +2 target was not being used, we would expect to see no interruption in the sequence: both the movement toward the unperturbed +1 target, as well as to the jumped +2 target should not differ from unperturbed conditions (Figure 3B, solid line). We tested this prediction in the H3 condition with 75 ms dwell time.
 
@@ -60,7 +68,7 @@ One reason for this delay could be that visual displacement of the target was si
 
 Together with the speedup of the overall movement (Figure 2), these results show that the reach to the +2 target was at least partially planned before the target jump, simultaneous with the reach to the +0 target and planning of the reach to the +1 target (Figure 3A).
 
-## Planning processes for multiple future movements are not independent
+### Planning processes for multiple future movements are not independent
 
 Our previously described results indicate that multiple future movements are planned at the same time. Consequently, we next asked whether these preparatory processes are independent of each other or if they interact.
 
@@ -74,7 +82,7 @@ Consistent with an interaction between future plans, we found that the correctio
 
 In summary, it took more time to update the +1 movement plan when participants could simultaneously plan both the +1 and +2 target as compared to when they could only plan the +1 target. This effect indicates that planning a reach to the +2 target occupied some part of a shared computational resource such that less of the resource was available for updating the reach to the +1 target. These results indicate a clear interaction between the planning processes for future movements.
 
-## Planning processes are not completely integrated in a single chunk
+### Planning processes are not completely integrated in a single chunk
 
 So far, we have established that people plan reaches to multiple future targets and that these planning processes interact with each other (Figure 5A). An extreme version of such an interaction is that the two future reaches are planned as a single unit, as a ‘motor chunk’ (Figure 5B; Ramkumar et al., 2016). Our data, however, are not consistent with the idea that future reaches are planned as a motor chunk.
 
@@ -88,7 +96,7 @@ Second, chunked planning predicts that a disturbance in any segment of the chunk
 
 In summary, participants were able to correct the second segment of their movement without causing any disturbance in the first segment. This observation provides clear evidence against chucked planning of the future reaches.
 
-## Interaction among planning processes leads to co-articulation of reach segments
+### Interaction among planning processes leads to co-articulation of reach segments
 
 The experiments above indicate that reach planning to the +1 and +2 targets interact with each other. Such interactions could allow the motor system to optimize the set of movements leading to systematic co-articulation of movement segments. In other words, when the visual information of the future target is available, each movement in the sequence could be planned in a way that accounts for the movement that comes after it.
 
@@ -104,7 +112,7 @@ Overall, we observed less co-articulation for longer dwell times. Dwell time can
 
 Together, these results show that the biomechanically advantageous co-articulation between segments of the sequence occur when the segments are planned together.
 
-## Fixation location is modified by the availability of future targets
+### Fixation location is modified by the availability of future targets
 
 Given that participants used visual information from two targets ahead, we were curious whether the availability of future targets influences participants’ eye-movement strategy, or whether they acquired this information parafoveally.
 
@@ -120,39 +128,39 @@ Together, these results suggest that information about future targets is receive
 
 ## Discussion
 
-## Planning horizon in sequential reaching versus finger presses
+### Planning horizon in sequential reaching versus finger presses
 
 In a previous finger sequence study, using a similar horizon manipulation to the one used here, we found that participants executed sequences faster when they had information about multiple future finger presses (Ariani et al., 2021). This benefit increased up to horizon of three future finger presses (H3) and then plateaued. Consistent with these findings, we observed a large reduction in movement time when participants were provided with one future reach target (Figure 2, H1 to H2). However, except for the shortest (75 ms) dwell time, the availability of a second future target (H2 to H3) did not further reduce movement time (Figure 2). In these longer (200 and 400 ms) dwell times, we did not observe faster performance for more knowledge of future target positions, likely because the participants had sufficient time to complete planning during the dwell period. Another possible reason for the more pronounced effect of horizon on movement speed in finger presses may be attributed to the nature of the effectors. Specifically, in reaching movements, the arm cannot initiate the next reach before completing the previous one. In contrast, with finger movements, future finger flexions can commence in advance, potentially resulting in faster execution of the sequence (Popp et al., 2022). It is also possible that this difference arises because the transformation of the visual cue to motor plans is faster for the direct spatial mapping used here than for the more abstract number-to-finger mapping used in our previous study (Diedrichsen et al., 2001; Goodman and Kelso, 1980). Even though the planning of multiple future movements, as measured by IRI, could only be seen in shortest dwell times, our experiments with target displacements provide clear evidence that participants had planned two movements ahead (Figure 3). Overall, these observations suggest that the availability of the second reach target can be more significant when faster execution of the task demands faster transformation of visual cue to muscle commands, or when the cue-to-action mapping is more demanding.
 
-## Interactions among future movement plans
+### Interactions among future movement plans
 
 If participants plan multiple future movements at the same time, the next question is whether these preparatory processes run independently or if they interact with each other. We investigated these possibilities by jumping the target that participants were about to reach toward. The participants corrected the reach only after initially reaching toward the pre-jump position of the target (Figure 4B). This behavior is similar to that shown in the work by Ames et al., 2019, where target displacement during execution led to an initial commitment to the pre-jump position of the target followed by a smooth corrective reach toward the new target position. Neurally, the authors showed that resource distribution in M1 and PMd is accomplished by re-planning the corrective reach in a subspace orthogonal to the one controlling the ongoing movement (Ames et al., 2019). Here, we asked whether the re-planning process depended on any other planned future movement (Figure 4). Interestingly, the corrections were slower when more future targets were known to the participants (Figure 4B), indicating some interaction between the two future planned reaches. This interaction could come in multiple forms. One possibility is that the neural resources dedicated to re-planning have to be split between preparation of future targets, slowing the re-planning of the next movement (Kornysheva et al., 2019). Alternatively, the two future movements may be prepared as a chunk (Ramkumar et al., 2016), and changing the entire chunk may take longer time than changing a single movement. The latter possibility seems unlikely since the results from jumping the +1 or +2 target within the same horizon of future target can be corrected separately (Figure 5). Either way, by probing the planned state with target perturbations we clearly demonstrate an obligatory interaction between multiple future movement plans.
 
 We also provide evidence that the interactions between future movement plans can optimize kinematics of single reaches for the next reach in the sequence. When the planning processes of two future reaches overlapped sufficiently, we found changes in the curvature of the current reach that anticipated the direction of the next reach target. The curvature was opposite to the direction of the next target, making this co-articulation advantageous from a biomechanical point of view (Figure 6D). The observed curvature interaction can again be either due to fully chunked planning of two elements, or alternatively, due to separate, yet interactive, planning of the two reaches. The former possibility seems less likely since the interaction was observed even when movement segments were fully separated by a long dwell time (Figure 6D, Dwell 400).
 
-## Implications for the neural control of online planning
+### Implications for the neural control of online planning
 
 What implications do our results have for the neural processes underlying the online planning of multiple future actions? Previous neurophysiological investigations showed that individual neurons can be involved in both the planning and execution of phases of a movement (Churchland and Shenoy, 2007; Crammond and Kalaska, 2000; Elsayed et al., 2016; Kaufman et al., 2014; Pruszynski et al., 2014). Nonetheless, when two movements are concatenated, the planning of the second movement can be proceeded in parallel with the control of the first movement. This lack of interference can be explained by the fact that planning and execution proceed in orthogonal neural subspaces (Zimnik and Churchland, 2021).
 
 The phenomena demonstrated in this study raise the question of how the planning processes for multiple future movements are realized in the brain. One hypothesis is that the two future movements are also planned in orthogonal neural subspaces without any interactions during the planning phase. Under this hypothesis, the co-articulation we report would arise from an interaction between the execution dynamics associated with the current movement and the planning dynamics of the second planned movement. An alternative hypothesis is that the preparation processes of the next two movements directly interact with each other, and possibly are even encoded in partly together (Fusi et al., 2016; Rigotti et al., 2013). Our results are suggestive of the latter scheme since we observed no co-articulation when the next target was only available during execution of the current reach (Figure 6D, H2). Nevertheless, careful electrophysiology experiments are necessary to investigate the exact mechanism by which planning processes interact. The current paradigm provides a useful framework to do so.
 
-## Eye movement coordination during sequence production
+### Eye movement coordination during sequence production
 
 In our sequence task, participants switched their gaze location only once per reach, suggesting that information about the location of the next target is perceived parafoveally (Figure 7A). This observation aligns with previous studies (Clavagnier et al., 2007; González-Alvarez et al., 2007; Sivak and MacKenzie, 1990) that found participants keep their visual attention on the current sequence item and can perceive the location of spatial targets even when foveal vision is occluded. However, when comparing gaze locations for conditions Horizon>1, we observed that participants systematically biased their gaze location based on the sequence context. The gaze position shifted toward the next target, potentially allowing for more accurate location estimation (Figure 7C and D). Notably, changes in gaze location were observed even in Horizon 2, despite no changes in the curvature of hand movements in this horizon (Figure 6B). This suggests that information about the next target may first be available in the circuitry that controls eye movements and later in the cortical areas that control voluntary upper limb movements. Further control studies are required to investigate this hypothesis.
 
 ## Methods
 
-## Participants
+### Participants
 
 Eleven participants (4 female) with an average age of 23.3 years (4.4 SD years) completed five experimental visits for this study (~10 hr data collection per participant); this data was used for IRI (Figure 2) and curvature analysis (Figure 6). Ten of these participants returned for two experimental visits where they were tested on target jump experiments. They were all right-handed with average handedness of 78 (24 SD), measured by the Edinburgh Handedness Inventory. For eye position analysis, we recruited a different group of 20 right-handed participants (2 female) with average age of 21.2 years (2.0 SD years), one participant was excluded from the analysis due to low quality of data (see Eye-tracker analysis below).
 
 All participants reported no prior history of musculoskeletal, neurological, or psychiatric disorders. All the participants provided informed consent in the first session, and they were remunerated CA$ 15 per hour in the seventh and last session of the study. All the procedures were approved by the Health Sciences Research Ethics Board at the University of Western Ontario (Project ID 115088).
 
-## Apparatus
+### Apparatus
 
 Participants performed all experimental trials in an exoskeleton robot (Kinarm, Kingston, ON, Canada). The participants were seated on a height-adjustable chair while their right arm rested comfortably on the robot arm, which supported the elbow and shoulder weight against gravitational force and allowed them to freely move their hand in the horizontal plane. Arm kinematics were recorded at 1000 Hz. All the reaching targets were presented by a horizontally placed monitor onto a mirror which occluded the vision of the participant’s arm (Figure 1A). Participants’ eye movement was recorded using an SR Research Eyelink 1000 at 1000 Hz. The eye tracker also recorded the participants’ head movement by recording the position a bullseye target attached to the participants’ front. The eye position was subtracted from the bullseye position to correct for small head movements during the task.
 
-## General procedures
+### General procedures
 
 In each experimental trial, participants performed sequences of 14 reaches. The sequences were generated from a hexagonal grid of equidistant circular targets (see Figure 1A and B). The radii of the targets were 1 cm, and the center of neighboring targets was 4 cm apart. The participants’ arm was occluded – they only saw a circle with radius of 0.5 cm aligned with the tip of their index finger as their hand feedback. The sequences always started from a fixed home target in the center of the working space. We generated sequences according to two rules. First, the next target in the sequence should be a neighbor of the previous target. This ensured that all the reaches were 4 cm apart. Second that there were no loops smaller than five reaches. This ensured that, when multiple future targets were presented, they did not overlap. The participants were instructed to move their right hand in the home target to start a trial. Once the hand was in the home target, either one, two, three, four, or five future targets of the sequence appeared on the screen (depending on the horizon condition); brightness indicated the order of targets, with the brightest target being the immediate next target. The participants were instructed to stay in the home target for 300 ms, after which they received a go cue by the disappearance of the home target. The participants were instructed to always move their hand to the brightest target and stay in the target until it was ‘captured’. Once one target was captured, the captured target disappeared, the brightness of the targets was updated, making the next target the brightest, and a new target appeared at the end of the horizon. This process was repeated until all 14 targets were captured. If the participant failed to stay in the target for the dwell time or the initial wait time in the home target, the trial was interrupted with an error message and rejected. Interrupted trials were repeated later in the session.
 
@@ -160,7 +168,7 @@ Our experiments manipulated two parameters: how much time participants had to st
 
 The entire experiment had seven sessions. The first five sessions were designed to get a time and curvature analysis in all dwell and horizon conditions. The last two session added the jump experiment.
 
-## Time and curvature analysis
+### Time and curvature analysis
 
 The first five sessions measured performance in 15 conditions (3 dwell times × 5 horizons). Each session consisted of three blocks of 120 trials for each dwell time, and the horizon was randomized across trials totaling 360 trials per session. The order of dwell time blocks was randomized across five sessions for each participant. Each session of data collection was 1 hr and 15 min on average. As the first step, for each trial, we broke down the full sequence of reaches to their constituting single reaches by segmenting the full sequence trajectory whenever a target was captured. This led to a set of 14 individual reaches starting from each target and ending in the next. For all the analysis we were interested in simultaneous planning and execution processes, therefore we excluded all targets that were visible in the beginning and could therefore be pre-planned. We also excluded one to five targets at the end of each sequence since there was no need to plan future targets anymore. The number of excluded reaches changed with the horizon. For instance, in the H1 condition, we excluded the first and the last reach in the sequence.
 
@@ -174,7 +182,7 @@ Next, we quantified the curvature of +1 reach. We used all the translated and ro
 
 Finally, we were interested in the effect of the +2 target angle on the curvature of the reach to the +1 target. However, the curvature of a reach in a sequence also depends on the previous reach, therefore, to account for this effect, we fitted a linear model that predicted the signed curvature value of each reach based on the position of the previous target (angle of –1 target), next target (angle of +2 target). The angles were one-hot coded, resulting in one regressor for each angle; therefore, the beta values represent the effect of each input angle onto the curvature effect. This process was performed for each of the dwell time and horizon conditions separately. Finally, as summary statistics for the effect of all the one-hot coded values the outgoing target (+2 target effect), we fitted a line to beta values for each of the five angles. We used the slope of this line as a summary of the overall effect. Zero slopes indicated no curvature effect, the value and sign of the slope show the strength and direction of the effect, with a negative slope showing curvature toward the opposite direction of the next target, and vice versa.
 
-## Jump experiment
+### Jump experiment
 
 For the last two data collection sessions, we focused on the 75 ms dwell condition and two of the horizons (H2, H3). All other parameters including the grid of targets, length of the sequence, size of the targets, etc. were identical to the first five sessions. In these experiments, only one jump of a target could happen in each trial. The jump happened randomly between the 4th and 10th reach of the sequence. We interleaved many no-jump trials in these sessions to avoid anticipation or adaptations for the jumps. The order of these two last sessions was randomized across participants.
 
@@ -182,10 +190,10 @@ The +1 jump experiment consisted of 400 trials, 200 target jumps in H2 and H3, i
 
 The +2 jump experiment was performed only in Horizon 3 (H3) condition. There was a total of 300 trials. Two-third of them were no jump; in the remaining one-third, exactly at the movement that the current target (+0 target) was captured, the second future target (+2 target) jumped to a new position, and the position of the next target (+1 target) remained unchanged. Before the jump, we showed a temporary +2 target (pre-jump +2 target) on the screen, and the jump happened with the disappearance of the pre-jump +2 target and the appearance of a new target as the new +2 target.
 
-## Eye-tracker analysis
+### Eye-tracker analysis
 
 For pre-processing of eye-tracker data, we first removed trials if the eye position was not recorded for a consecutive 600 ms. This missing data could be due to blinks or the eye tracker momentarily losing the eye position. We removed one participant due to low number of good trials. Then for the remaining trials we first partitioned each trial to 14 segments based on the time point that participants’ hand entered a new target. Then, within each segment we applied a fixed threshold on the derivative of eye position to detect the time point when the saccade occurred. Next, we used the average eye position before and after saccade for analysis of the saccade position. In 95% of the trial only one saccade happened in each reach. The eye position before and after saccade was centered on a circle with radius of 2 cm around the start and end target, respectively. These pre-processing steps were performed blind to the trial type. To analyze the changes in saccade position based on horizon, like curvature analysis, for each participant we first translated and rotated all the reaches and eye positions so that the start target (+0 target) and end target (+1 target) of the reaches are at (0,0) and (4,0) coordinate, respectively. Then for each horizon, we averaged the post-saccade eye position for each possible +2 target position.
 
-## Statistical analysis
+### Statistical analysis
 
 We employed a within-subject design. All the analyses were performed in RStudio 22.07.1. For analysis of IRI and curvature effect, we used two-way repeated measures ANOVA. Factors were dwell time (three levels), horizon (five levels: H1 to H5), and (dwell time × horizon) interaction. For comparison between different levels of each significant factor, we adjusted p-values for multiple comparisons using Holm method. For the jump +1 target experiment, we used a repeated measures two-way ANOVA with jump (two levels) and horizon (two levels) as factors. Correction for multiple comparisons was similar to the IRI analysis. The details of statistical analysis including the degrees of freedom, the test statistic, and the p-value are provided in the text.

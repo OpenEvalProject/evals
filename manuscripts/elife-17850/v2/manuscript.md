@@ -35,7 +35,7 @@
 
 ## Abstract
 
-10.7554/eLife.17850.001 Evaluation of preclinical evidence prior to initiating early-phase clinical studies has typically been performed by selecting individual studies in a non-systematic process that may introduce bias. Thus, in preparation for a first-in-human trial of mesenchymal stromal cells (MSCs) for septic shock, we applied systematic review methodology to evaluate all published preclinical evidence. We identified 20 controlled comparison experiments (980 animals from 18 publications) of in vivo sepsis models. Meta-analysis demonstrated that MSC treatment of preclinical sepsis significantly reduced mortality over a range of experimental conditions (odds ratio 0.27, 95% confidence interval 0.18–0.40, latest timepoint reported for each study). Risk of bias was unclear as few studies described elements such as randomization and no studies included an appropriately calculated sample size. Moreover, the presence of publication bias resulted in a ~30% overestimate of effect and threats to validity limit the strength of our conclusions. This novel prospective application of systematic review methodology serves as a template to evaluate preclinical evidence prior to initiating first-in-human clinical studies. DOI: http://dx.doi.org/10.7554/eLife.17850.001
+Evaluation of preclinical evidence prior to initiating early-phase clinical studies has typically been performed by selecting individual studies in a non-systematic process that may introduce bias. Thus, in preparation for a first-in-human trial of mesenchymal stromal cells (MSCs) for septic shock, we applied systematic review methodology to evaluate all published preclinical evidence. We identified 20 controlled comparison experiments (980 animals from 18 publications) of in vivo sepsis models. Meta-analysis demonstrated that MSC treatment of preclinical sepsis significantly reduced mortality over a range of experimental conditions (odds ratio 0.27, 95% confidence interval 0.18–0.40, latest timepoint reported for each study). Risk of bias was unclear as few studies described elements such as randomization and no studies included an appropriately calculated sample size. Moreover, the presence of publication bias resulted in a ~30% overestimate of effect and threats to validity limit the strength of our conclusions. This novel prospective application of systematic review methodology serves as a template to evaluate preclinical evidence prior to initiating first-in-human clinical studies.
 
 ## Introduction
 
@@ -53,93 +53,928 @@ We quantitatively summarized the results of all preclinical studies of MSC thera
 
 ## Results
 
-## Search results and study characteristics
+### Search results and study characteristics
 
-Our systematic search of MEDLINE, Embase, BIOSIS, and Web of Science yielded 3114 records. Following deduplication and screening, 18 studies were included in the review (
+Our systematic search of MEDLINE, Embase, BIOSIS, and Web of Science yielded 3114 records. Following deduplication and screening, 18 studies were included in the review (Figure 1). These studies were published over a six year period (2009 to 2015) and corresponded to 20 unique experiments and involved a total of 980 animals (Table 1) (Bi et al., 2010; Chang et al., 2012; Chao et al., 2014; Gonzalez-Rey et al., 2009; Hall et al., 2013; Kim et al., 2014; Krasnodembskaya et al., 2012; Li et al., 2012; Liang et al., 2011; Luo et al., 2014; Mei et al., 2010; Nemeth et al., 2009; Pedrazza et al., 2014; Sepúlveda et al., 2014; Yang et al., 2015; Zhao et al., 2013, 2014; Zhou et al., 2014). Six authors were contacted for additional information and all replied.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig1-v2.jpg)
 
-**Figure 1.:** DOI: http://dx.doi.org/10.7554/eLife.17850.003
+**Table 1.**
+ General characteristics of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Author year Country</th>
+      <th>Species, Strain, Gender</th>
+      <th>Sepsis model</th>
+      <th>Resuscitation</th>
+      <th>MSC source, Compatibility</th>
+      <th>MSC Dose</th>
+      <th>Time (hours)*</th>
+      <th>MSC route</th>
+      <th>Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)A Spain</td>
+      <td>Mouse BALB/c, NR</td>
+      <td>CLP (1 × 22 G)</td>
+      <td>None</td>
+      <td>Adipose Xenogenic or Allogeneic</td>
+      <td>1.0 × 106</td>
+      <td>4</td>
+      <td>IP</td>
+      <td>DMEM</td>
+    </tr>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)B Spain</td>
+      <td>Mouse BALB/c, NR</td>
+      <td>LPS (i.p.)</td>
+      <td>None</td>
+      <td>Adipose Xenogenic</td>
+      <td>1.0 x 106 or3.0 x 105</td>
+      <td>0.5</td>
+      <td>IP</td>
+      <td>DMEM</td>
+    </tr>
+    <tr>
+      <td>Nemeth et al. (2009) United States</td>
+      <td>Mouse C57BL/6, M</td>
+      <td>CLP (2 × 21 G)</td>
+      <td>Fluid and antibiotics</td>
+      <td>Bone marrow Allogeneic</td>
+      <td>1.0 × 106</td>
+      <td>0 or 1</td>
+      <td>IV</td>
+      <td>PBS or Fibroblast</td>
+    </tr>
+    <tr>
+      <td>Bi et al. (2010) China</td>
+      <td>Mouse C57BL/6, NR</td>
+      <td>CLP (2 × 21 G)</td>
+      <td>None</td>
+      <td>Bone marrow Xenogenic</td>
+      <td>1.0 × 106</td>
+      <td>1 1</td>
+      <td>IV</td>
+      <td>PBS</td>
+    </tr>
+    <tr>
+      <td>Mei et al. (2010)A Canada</td>
+      <td>Mouse C57BL/6J, F</td>
+      <td>CLP (1 × 22 G)</td>
+      <td>Fluid</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>2.5 × 105</td>
+      <td>6</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Mei et al. (2010)B Canada</td>
+      <td>Mouse C57BL/6J, F</td>
+      <td>CLP (1 × 18 G)</td>
+      <td>Fluid and antibiotics</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>2.5 × 105</td>
+      <td>6</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Liang et al. (2011) China</td>
+      <td>Rat Wistar, F</td>
+      <td>LPS (i.v.)</td>
+      <td>None</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>1.0 × 106</td>
+      <td>2</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Chang et al. (2012) China</td>
+      <td>Rat SPD, M</td>
+      <td>CLP (2 × 18 G)</td>
+      <td>None</td>
+      <td>Adipose Autologous</td>
+      <td>3 × 1.2 × 106</td>
+      <td>0.5, 6 then 18</td>
+      <td>IP</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Krasnodembskaya et al. (2012), USA</td>
+      <td>Mouse C57BL/6J, M</td>
+      <td>P. aeruginosa (i.p.)</td>
+      <td>None</td>
+      <td>Bone marrow Xenogenic</td>
+      <td>1.0 × 106</td>
+      <td>1</td>
+      <td>IV</td>
+      <td>PBS Fibroblast</td>
+    </tr>
+    <tr>
+      <td>Li et al. (2012) China</td>
+      <td>Rat SPD, M</td>
+      <td>LPS (i.p.)</td>
+      <td>None</td>
+      <td>Umbilical cord Xenogenic</td>
+      <td>5.0 × 105</td>
+      <td>1</td>
+      <td>IV</td>
+      <td>NS or Fibroblast</td>
+    </tr>
+    <tr>
+      <td>Hall et al. (2013) USA</td>
+      <td>Mouse BALB/c, M</td>
+      <td>CLP (2 × 21 G)</td>
+      <td>None</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>1 × 5.0× 105 + 2× 2.5 × 105</td>
+      <td>2 then 24 then 48</td>
+      <td>IV</td>
+      <td>PBS or Fibroblast</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2013) China</td>
+      <td>Rat SPD, F</td>
+      <td>LPS (i.v.)</td>
+      <td>None</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>2.5 ×106</td>
+      <td>2</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Chao et al. (2014) Taiwan</td>
+      <td>Rat Wistar, M</td>
+      <td>CLP (1 × 18 G)</td>
+      <td>None</td>
+      <td>Bone Marrow or Umbilical Cord Xenogenic</td>
+      <td>5.0 × 106</td>
+      <td>4</td>
+      <td>IV</td>
+      <td>PBS</td>
+    </tr>
+    <tr>
+      <td>Kim et al. (2014) Canada</td>
+      <td>Mouse C57BL/6, M</td>
+      <td>SEB+ (i.p)</td>
+      <td>None</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>2.5 × 105</td>
+      <td>3</td>
+      <td>IV</td>
+      <td>PBS</td>
+    </tr>
+    <tr>
+      <td>Luo et al. (2014) China</td>
+      <td>Mouse C57Bl/6, M</td>
+      <td>CLP (2 × 21 G)</td>
+      <td>Fluid</td>
+      <td>Bone marrow Syngeneic</td>
+      <td>1.0 × 106</td>
+      <td>3</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Pedrazza et al. (2014) Brazil</td>
+      <td>Mouse C57BL/6, M</td>
+      <td>E. coli (i.p.)</td>
+      <td>None</td>
+      <td>Adipose Syngeneic</td>
+      <td>1.0 × 106</td>
+      <td>0</td>
+      <td>IV</td>
+      <td>PBS</td>
+    </tr>
+    <tr>
+      <td>Sepulveda et al. (2014) Spain</td>
+      <td>Mouse BALB/c, M</td>
+      <td>LPS (i.p.)</td>
+      <td>None</td>
+      <td>Bone Marrow Xenogenic</td>
+      <td>1.0 × 106</td>
+      <td>0.5</td>
+      <td>IP</td>
+      <td>PBS</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2014) China</td>
+      <td>Mouse C57BL/6, M</td>
+      <td>CLP (NR)</td>
+      <td>None</td>
+      <td>Umbilical cord Xenogenic</td>
+      <td>1.0 × 106</td>
+      <td>1</td>
+      <td>IV</td>
+      <td>NS</td>
+    </tr>
+    <tr>
+      <td>Zhou et al. (2014) China</td>
+      <td>Mouse NOD SCID, M</td>
+      <td>LPS+ (i.p.)</td>
+      <td>None</td>
+      <td>Umbilical Cord Xenogenic</td>
+      <td>2.0 × 106</td>
+      <td>6</td>
+      <td>IV</td>
+      <td>No treatment</td>
+    </tr>
+    <tr>
+      <td>Yang et al. (2015) China</td>
+      <td>Mouse NOD SCID, M</td>
+      <td>LPS+ (i.p.)</td>
+      <td>None</td>
+      <td>Umbilical cord Xenogenic</td>
+      <td>5.0 × 105</td>
+      <td>0</td>
+      <td>IV</td>
+      <td>DMEM</td>
+    </tr>
+  </tbody>
+</table>
+
+_Legend: * = Time of delivery post-sepsis induction, + = Models also administered D-galactosamine, CLP = Cecal ligation and puncture, DMEM = Dulbecco's modified Eagle's medium, i.p. = Intraperitoneal, i.v. = Intravenous, LPS = Lipopolysaccharide, NR = Not reported, NOD SCID = NOD.Cg-Prkdcscid Il2rgtm1Wjl/SzJ (immunodeficient), NS = Normal saline, PBS = Phosphate buffered saline, SEB = Staphylococcal enterotoxin B, SPD = Sprague-Dawley._
 
 All experiments used rodents, and most were mice (80%). Several methods were used to establish sepsis or sepsis-like pathophysiology, including cecal-ligation and puncture (50%), live bacterial injection (10%), and bacterial component injection (40%). Tissue sources of MSCs included bone marrow (60%), adipose tissue (20%), and umbilical cord (20%). Similarly, immunological compatibility between donor MSCs and recipients varied between xenogenic (50%), syngeneic (40%), allogeneic (5%) and autologous (5%). Two of ten experiments with xenogenic cells used immunocompromised mice, while the remainder used immunocompetent mice. Total doses of MSCs ranged from 2.5 × 105 to 5.0 × 106 and most studies administered cells as a single dose (90%) either intravenously (80%) or intraperitoneally (20%). MSC therapy was initiated between 0 to 6 hr after experimental induction of the disease state.
 
-## Effect of MSCs on sepsis mortality in rodents
+### Effect of MSCs on sepsis mortality in rodents
 
-MSC therapy in preclinical models of sepsis significantly reduced the overall odds of death (odds ratio (OR) 0.27, 95% confidence interval (CI) 0.18–0.40 (
+MSC therapy in preclinical models of sepsis significantly reduced the overall odds of death (odds ratio (OR) 0.27, 95% confidence interval (CI) 0.18–0.40 (Figure 2). Since it is important to consider the consistency of results between studies, we calculated the I2 test, which demonstrated a low degree of heterogeneity across studies (I2 = 33%). The reduction in mortality was maintained regardless of when death occurred, whether considering deaths before two days after induction of sepsis (OR 0.31, 95% CI 0.21–0.46), between two and four days (OR 0.20, 95% CI 0.11–0.38), or more than four days (OR 0.18, 95% CI 0.11–0.32) (Figure 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-v2.jpg)
 
-**Figure 2.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect of MSC therapy on mortality is depicted by the diamond at the bottom of the plot (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I statistic. Data from 2Pedrazza et al. (2014) was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.DOI: http://dx.doi.org/10.7554/eLife.17850.005
+**Figure 2.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect of MSC therapy on mortality is depicted by the diamond at the bottom of the plot (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al. (2014) was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.006
+**Figure 2—figure supplement 1.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.007
+**Figure 2—figure supplement 2.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.008
+**Figure 2—figure supplement 3.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.009
+**Figure 2—figure supplement 4.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp5-v2.jpg)
 
-**Figure 2—figure supplement 5.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.010
+**Figure 2—figure supplement 5.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp6-v2.jpg)
 
-**Figure 2—figure supplement 6.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.011
+**Figure 2—figure supplement 6.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp7-v2.jpg)
 
-**Figure 2—figure supplement 7.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.012
+**Figure 2—figure supplement 7.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp8-v2.jpg)
 
-**Figure 2—figure supplement 8.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.013
+**Figure 2—figure supplement 8.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp9-v2.jpg)
 
-**Figure 2—figure supplement 9.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.014
+**Figure 2—figure supplement 9.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp10-v2.jpg)
 
-**Figure 2—figure supplement 10.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.015
+**Figure 2—figure supplement 10.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig2-figsupp11-v2.jpg)
 
-**Figure 2—figure supplement 11.:** Subgroups are studies that adhered to a majority of elements suggested to increase construct validity (≥5 of 8; see text for details of elements) vs those that did not adhere to majority. Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the Istatistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.2 DOI: http://dx.doi.org/10.7554/eLife.17850.016
+**Figure 2—figure supplement 11.:** Subgroups are studies that adhered to a majority of elements suggested to increase construct validity (≥5 of 8; see text for details of elements) vs those that did not adhere to majority. Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect is depicted by the diamond at the bottom of each subgroup (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al 2014 was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig3-v2.jpg)
 
-**Figure 3.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect of MSC therapy on mortality is depicted by the diamond at the bottom of each time interval (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I statistic. Data from 2Pedrazza et al. (2014) was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.DOI: http://dx.doi.org/10.7554/eLife.17850.017
+**Figure 3.:** Point estimates (odds ratio) and 95% confidence intervals (CI) are depicted for individual studies; size of point estimate depicts relative contribution to pooled effect. A pooled meta-analytic summary (random effects model) of overall effect of MSC therapy on mortality is depicted by the diamond at the bottom of each time interval (vertical points represent odds ratio point estimate and horizontal points represent 95% CIs). Heterogeneity is represented with the I2 statistic. Data from Pedrazza et al. (2014) was included in total counts but not included in meta-analysis due to 100% mortality in both study arms.
 
-## Assessment of threats to external validity/generalizability
+### Assessment of threats to external validity/generalizability
 
 The effects of therapies may not be sustained under varied experimental conditions, so we evaluated the generalizability and replicability of results by analyzing efficacy in pre-specified sub-groups. Heterogeneity (i.e. I2 statistic) was low to moderate unless otherwise stated. Similar efficacy was noted regardless of the compatibility of donor MSCs with recipient animal (syngeneic vs. allogeneic vs. xenogenic, Figure 2—figure supplement 1), dose of MSC (<1.0 × 106 cells vs. ≥1.0 × 106 cells, Figure 2—figure supplement 2), and timing of a single dose of MSCs (less than or equal to 1 hr vs. 1–6 hr after disease induction, Figure 2—figure supplement 3). Intravenous administration of MSCs demonstrated efficacy (OR 0.28, 95% CI 0.20–0.40); whereas intraperitoneal administration of MSCs did not have a statistically significant effect (OR 0.21, 95% CI 0.02–1.89; Figure 2—figure supplement 4) and had high heterogeneity (I2 = 78%), suggesting a high degree of inter-study variability. Significant effects were seen using MSCs derived from bone marrow (OR 0.13, 95% CI 0.05–0.35) and umbilical cord (OR 0.30, 95% CI 0.21–0.43; Figure 2—figure supplement 5), but the MSCs derived from adipose tissue did not demonstrate statistically significant efficacy (OR 0.35, 95% CI 0.03–4.39, I2 = 79%). Two studies administered multiple doses of MSCs, with one demonstrating benefit and the other having no statistically significant effect. The multiple dose study with no effect was also the only investigation of autologous cells (Chang et al., 2012).
 
 MSCs administered to mice were effective (OR 0.23, 95% CI 0.15–0.36) however MSC administration to rats did not produce a statistically significant effect (OR 0.47, 95% CI 0.18–1.21; Figure 2—figure supplement 6). Neither the sex of the diseased animal nor the model used (cecal ligation and puncture vs. live bacterial injection vs. lipopolysaccharide or other bacterial product) influenced efficacy (Figure 2—figure supplements 7 and 8). The addition of resuscitation (fluids or antibiotics, which are current clinical standards of therapy) did not influence the protective effect of MSCs (Figure 2—figure supplement 9). The comparator control group (phosphate buffered saline vs. fibroblast vs. normal saline vs. medium) had no effect; but, the one study that did not administer vehicle to the control animals did not demonstrate a statistically significant effect of MSC therapy (Zhou et al., 2014) (Figure 2—figure supplement 10).
 
-## Assessment of threats to internal validity (methodological quality/risk of bias)
+### Assessment of threats to internal validity (methodological quality/risk of bias)
 
-Practices such as blinding and randomization are known to affect the magnitude of effect in both clinical and preclinical studies. To determine if these threats to internal validity influenced our findings, we evaluated the risk of bias of included studies (Table 2). None of the experiments were considered low risk of bias across all six domains of methodological quality. Forty-five percent of experiments reported that the animals were randomized, none described methods of sequence generation or how allocation concealment was achieved. Similarly, no studies described blinding of personnel performing the experiments. One study did not blind assessors for the outcome of mortality, which may be of concern given that surrogate endpoints (i.e. not true death due to animal welfare concerns) were assessed (Kim et al., 2014); the remaining studies were assessed as ‘unclear’ as insufficient details of outcome assessment were reported. An assessment of high risk of bias for incomplete outcome data occurred in 10% of studies (examined as consistent n values reported from methods to results); in 65% of experiments the numbers (n) were not presented in both the methods and results in sufficient detail to permit judgment. No studies reported an appropriate rationale for selection of study sample size (where appropriate rationale included a correctly calculated sample size, Table 3). Given the paucity of studies that adequately implemented and reported internal validity practices, an analysis to determine the effects of high vs. low risk of bias on the effect size was not feasible.10.7554/eLife.17850.018Table 2.Risk of bias assessment of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.DOI: http://dx.doi.org/10.7554/eLife.17850.018StudyRandomizationAllocation concealmentBlinding of personnelBlinding of outcome assessmentIncomplete outcome dataSelective outcome reportingGonzalez-Rey et al. (2009)UUUULLNemeth et al. (2009)UUUULLBi et al. (2010)UUUUHLMei et al. (2010)UUUULLLiang et al. (2011)UUUUULChang et al. (2012)UUUUULKrasnodembskaya et al. (2012)UUUUULLi et al. (2012)UUUUULHall et al. (2013)UUUUULZhao et al. (2013)UUUUULChao et al. (2014)UUUUULKim et al. (2014)UUUHULLuo et al. (2014)UUUUULPedrazza et al. (2014)UUUUULSepulveda 2014UUUUULZhao et al. (2014)UUUUULZhou et al. (2014)UUUUHLYang et al. (2015)UUUUULLegend: H = High risk of bias, L = Low risk of bias, U = Unclear risk of biasBlinding of Outcome Assessment for Mortality: Low risk = Outcome assessors were blinded to the study groups when assessing mortality through surrogate endpoints or animals were allowed to die. Unclear = Insufficient information to determine if outcome assessors were blinded during assessment or if animals were allowed to die. High Risk = Outcome assessors not blinded to the study groups and death was defined according to surrogate endpoints.Incomplete Outcome Data: Low risk = N values were consistent between methods and results for the mortality outcome. Unclear = N value was either not presented in the methods or in the results, and therefore there is insufficient information to permit judgement. High risk = N values were not consistent between methods and results for the mortality outcome.Selective Reporting: Low risk = The methods section indicated mortality as a pre-specified outcome measure. High risk = The mortality outcome was presented in the results but not pre-specified in the methods section.10.7554/eLife.17850.019Table 3.Risk of bias assessment (other domains) of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.DOI: http://dx.doi.org/10.7554/eLife.17850.019StudyBaseline characteristics*Random housing*Source of fundingConflict of interestSample size calculationGonzalez-Rey et al. (2009)UUHHUNemeth et al. (2009)UULUUBi et al. (2010)UULUUMei (2010)UUHHULiang et al. (2011)UULUUChang et al. (2012)UULLHKrasnodembskaya et al. (2012)UULLULi et al. (2012)UULLUHall et al. (2013)UULLUZhao et al. (2013)UULLUChao et al. (2014)UULLUKim et al. (2014)UULLULuo et al. (2014)UULLUPedrazza et al. (2014)UULLUSepulveda 2014UULLUZhao et al. (2014)UULLUZhou et al. (2014)UULLUYang et al. (2015)UULLULegend: * = Items modified from SYRCLE risk of bias tool, H = High risk of bias, L = Low risk of bias, U = Unclear risk of biasBaseline Characteristics: Low risk = Baseline severity of disease equal between experimental groups, Unclear = Baseline severity of disease unreported, High risk = Baseline severity of disease unbalanced between experimental groups.Random Housing: Low risk = Animal cages were randomly placed within an animal room/facility, Unclear = Housing placement unreported, High risk = Animals place in non-random arrangement in animal room/facility.Other risk of bias was assessed according to source of funding, conflict of interest and pre-specified sample size calculations:Source of Funding: Low risk = Non-industry source of funding (or no funding). Unclear = Funding source was not reported. High risk = Study was funded by industry.Conflict of Interest: Low risk = Authors reported on no conflict of interest. Unclear = Conflict of interest was not reported. High risk = Authors reported on potential conflict of interests.Sample Size Calculation: Low risk = Sample size calculations were correctly performed and followed. Unclear = Sample size calculations were not performed. High risk = Sample size calculations were incorrectly performed/followed.
+Practices such as blinding and randomization are known to affect the magnitude of effect in both clinical and preclinical studies. To determine if these threats to internal validity influenced our findings, we evaluated the risk of bias of included studies (Table 2). None of the experiments were considered low risk of bias across all six domains of methodological quality. Forty-five percent of experiments reported that the animals were randomized, none described methods of sequence generation or how allocation concealment was achieved. Similarly, no studies described blinding of personnel performing the experiments. One study did not blind assessors for the outcome of mortality, which may be of concern given that surrogate endpoints (i.e. not true death due to animal welfare concerns) were assessed (Kim et al., 2014); the remaining studies were assessed as ‘unclear’ as insufficient details of outcome assessment were reported. An assessment of high risk of bias for incomplete outcome data occurred in 10% of studies (examined as consistent n values reported from methods to results); in 65% of experiments the numbers (n) were not presented in both the methods and results in sufficient detail to permit judgment. No studies reported an appropriate rationale for selection of study sample size (where appropriate rationale included a correctly calculated sample size, Table 3). Given the paucity of studies that adequately implemented and reported internal validity practices, an analysis to determine the effects of high vs. low risk of bias on the effect size was not feasible.
 
-## Assessment of threats to construct validity
+**Table 2.**
+ Risk of bias assessment of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.
 
-It has been suggested that failed preclinical to clinical translation may be related to a mismatch between experimental conditions and the clinical disease the model is intended to represent (i.e. construct validity) (Henderson et al., 2013; Kimmelman and Henderson, 2016). To evaluate clinical generalizability of the experimental conditions used, we performed a formal evaluation of construct validity using an eight item index that had been developed in a systematic review of preclinical sepsis (Table 4) (Lamontagne et al., 2010). None of the experiments used large animal models. Two experiments (10%) used animals with comorbidities (both used immunodeficient mice), 40% of experiments used adult animal models (40% did not report animal age), and 50% used infectious models of sepsis. 90% of studies initiated MSC therapy after the induction of the disease (as opposed to at the time of disease induction) but none documented severity of the disease state prior to initiating MSC therapy. Four studies used fluid resuscitation while two of these studies also administered antibiotics. Two studies incorporated a majority of construct validity elements (i.e. at least five of eight elements); there was no difference in effect size between these studies (OR 0.18, 95% CI 0.08–0.42) and those studies that incorporated fewer elements (OR 0.28, 95% CI 0.17–0.44) (Figure 2—figure supplement 11).10.7554/eLife.17850.020Table 4.Construct validity assessment of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.DOI: http://dx.doi.org/10.7554/eLife.17850.020StudyLarge animal modelAdult animal modelComorbiditiesInfectious model of sepsisTherapy initiated after sepsis inductionDocumented sepsis severity prior to initiating treatmentResuscitation included antibioticsResuscitation included fluidsGonzalez-Rey et al. (2009)A NNNYYNNNGonzalez-Rey et al. (2009)BNNNNYNNNNemeth et al. (2009) NYNYYNYYBi et al. (2010) NUNYYNNNMei (2010)ANYNYYNNYMei (2010)BNYNYYNYYLiang et al. (2011) NUNNYNNNChang et al. (2012) NUNYYNNNKrasnodembskaya et al. (2012) NYNYYNNNLi et al. (2012) NUNNYNNNHall et al. (2013) NUNYYNNNZhao et al. (2013) NYNNYNNNChao et al. (2014) NUNYYNNNKim et al. (2014) NYNNYNNNLuo et al. (2014) NUNYYNNYPedrazza et al. (2014) NYNYNNNNSepulveda 2014 NYNNYNNNZhao et al. (2014) NUNYYNNNZhou et al. (2014) NNYNYNNNYang et al. (2015) NNYNNNNNLegend: N = No, U = Unclear, Y = Yes. Letters following author and year (e.g. Mei 2010A) indicate that more than one independent experiment was conducted in the same publication.Large Animal Model: Yes = Sheep, pig, dog, monkey. No = Mouse, ratAdult Animal Model: Yes = Rats ≥ 6 weeks old, mice ≥ 8 weeks old. No = Rats < 6 weeks old, mice < 8 weeks old. Unclear = No age statedComorbidities: Yes = e.g. Diabetes, obesity, immunodeficiency. No = No comorbidities.Infectious Model of Sepsis: Yes = Cecal-ligation and puncture, live bacterial administration. No = Bacterial product administration (e.g. lipopolysaccharide).Therapy Initiated After Sepsis Induction: Yes = Mesenchymal stromal cells administered after sepsis model induced. No = Mesenchymal stromal cells administered at the time of sepsis induction.Documented Sepsis Severity Prior to Initiating Treatment: Yes = Mesenchymal stromal cells administered after marker of severity (e.g. hypotension) measured. No = Mesenchymal stromal cells administered without a marker of severity being measured.Resuscitation Included Fluids: Yes = Fluid therapy (aside from vehicle for cell administration) administered. No = Only vehicle for cell administration or no fluids administered.
 
-## Evidence of publication bias
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Randomization</th>
+      <th>Allocation concealment</th>
+      <th>Blinding of personnel</th>
+      <th>Blinding of outcome assessment</th>
+      <th>Incomplete outcome data</th>
+      <th>Selective outcome reporting</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Nemeth et al. (2009)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Bi et al. (2010)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>H</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Mei et al. (2010)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Liang et al. (2011)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Chang et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Krasnodembskaya et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Li et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Hall et al. (2013)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2013)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Chao et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Kim et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>H</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Luo et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Pedrazza et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Sepulveda 2014</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Zhou et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>H</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Yang et al. (2015)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+    </tr>
+  </tbody>
+</table>
 
-For the 20 experiments, 50% demonstrated statistically significant beneficial effects of MSCs with a median sample size of 19 animals per group. Visual inspection of a funnel plot analysis of all experiments suggested that publication bias exists (
+_Legend: H = High risk of bias, L = Low risk of bias, U = Unclear risk of biasBlinding of Outcome Assessment for Mortality: Low risk = Outcome assessors were blinded to the study groups when assessing mortality through surrogate endpoints or animals were allowed to die. Unclear = Insufficient information to determine if outcome assessors were blinded during assessment or if animals were allowed to die. High Risk = Outcome assessors not blinded to the study groups and death was defined according to surrogate endpoints.Incomplete Outcome Data: Low risk = N values were consistent between methods and results for the mortality outcome. Unclear = N value was either not presented in the methods or in the results, and therefore there is insufficient information to permit judgement. High risk = N values were not consistent between methods and results for the mortality outcome.Selective Reporting: Low risk = The methods section indicated mortality as a pre-specified outcome measure. High risk = The mortality outcome was presented in the results but not pre-specified in the methods section._
+
+**Table 3.**
+ Risk of bias assessment (other domains) of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Baseline characteristics*</th>
+      <th>Random housing*</th>
+      <th>Source of funding</th>
+      <th>Conflict of interest</th>
+      <th>Sample size calculation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>H</td>
+      <td>H</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Nemeth et al. (2009)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Bi et al. (2010)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Mei (2010)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>H</td>
+      <td>H</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Liang et al. (2011)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Chang et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>H</td>
+    </tr>
+    <tr>
+      <td>Krasnodembskaya et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Li et al. (2012)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Hall et al. (2013)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2013)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Chao et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Kim et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Luo et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Pedrazza et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Sepulveda 2014</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Zhou et al. (2014)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Yang et al. (2015)</td>
+      <td>U</td>
+      <td>U</td>
+      <td>L</td>
+      <td>L</td>
+      <td>U</td>
+    </tr>
+  </tbody>
+</table>
+
+_Legend: * = Items modified from SYRCLE risk of bias tool, H = High risk of bias, L = Low risk of bias, U = Unclear risk of biasBaseline Characteristics: Low risk = Baseline severity of disease equal between experimental groups, Unclear = Baseline severity of disease unreported, High risk = Baseline severity of disease unbalanced between experimental groups.Random Housing: Low risk = Animal cages were randomly placed within an animal room/facility, Unclear = Housing placement unreported, High risk = Animals place in non-random arrangement in animal room/facility.Other risk of bias was assessed according to source of funding, conflict of interest and pre-specified sample size calculations:Source of Funding: Low risk = Non-industry source of funding (or no funding). Unclear = Funding source was not reported. High risk = Study was funded by industry.Conflict of Interest: Low risk = Authors reported on no conflict of interest. Unclear = Conflict of interest was not reported. High risk = Authors reported on potential conflict of interests.Sample Size Calculation: Low risk = Sample size calculations were correctly performed and followed. Unclear = Sample size calculations were not performed. High risk = Sample size calculations were incorrectly performed/followed._
+
+### Assessment of threats to construct validity
+
+It has been suggested that failed preclinical to clinical translation may be related to a mismatch between experimental conditions and the clinical disease the model is intended to represent (i.e. construct validity) (Henderson et al., 2013; Kimmelman and Henderson, 2016). To evaluate clinical generalizability of the experimental conditions used, we performed a formal evaluation of construct validity using an eight item index that had been developed in a systematic review of preclinical sepsis (Table 4) (Lamontagne et al., 2010). None of the experiments used large animal models. Two experiments (10%) used animals with comorbidities (both used immunodeficient mice), 40% of experiments used adult animal models (40% did not report animal age), and 50% used infectious models of sepsis. 90% of studies initiated MSC therapy after the induction of the disease (as opposed to at the time of disease induction) but none documented severity of the disease state prior to initiating MSC therapy. Four studies used fluid resuscitation while two of these studies also administered antibiotics. Two studies incorporated a majority of construct validity elements (i.e. at least five of eight elements); there was no difference in effect size between these studies (OR 0.18, 95% CI 0.08–0.42) and those studies that incorporated fewer elements (OR 0.28, 95% CI 0.17–0.44) (Figure 2—figure supplement 11).
+
+**Table 4.**
+ Construct validity assessment of preclinical studies investigating the efficacy of mesenchymal stromal cells in models of sepsis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Large animal model</th>
+      <th>Adult animal model</th>
+      <th>Comorbidities</th>
+      <th>Infectious model of sepsis</th>
+      <th>Therapy initiated after sepsis induction</th>
+      <th>Documented sepsis severity prior to initiating treatment</th>
+      <th>Resuscitation included antibiotics</th>
+      <th>Resuscitation included fluids</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)A</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Gonzalez-Rey et al. (2009)B</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Nemeth et al. (2009)</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Bi et al. (2010)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Mei (2010)A</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Mei (2010)B</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Liang et al. (2011)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Chang et al. (2012)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Krasnodembskaya et al. (2012)</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Li et al. (2012)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Hall et al. (2013)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2013)</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Chao et al. (2014)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Kim et al. (2014)</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Luo et al. (2014)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+    </tr>
+    <tr>
+      <td>Pedrazza et al. (2014)</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Sepulveda 2014</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Zhao et al. (2014)</td>
+      <td>N</td>
+      <td>U</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Zhou et al. (2014)</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Yang et al. (2015)</td>
+      <td>N</td>
+      <td>N</td>
+      <td>Y</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+      <td>N</td>
+    </tr>
+  </tbody>
+</table>
+
+_Legend: N = No, U = Unclear, Y = Yes. Letters following author and year (e.g. Mei 2010A) indicate that more than one independent experiment was conducted in the same publication.Large Animal Model: Yes = Sheep, pig, dog, monkey. No = Mouse, ratAdult Animal Model: Yes = Rats ≥ 6 weeks old, mice ≥ 8 weeks old. No = Rats < 6 weeks old, mice < 8 weeks old. Unclear = No age statedComorbidities: Yes = e.g. Diabetes, obesity, immunodeficiency. No = No comorbidities.Infectious Model of Sepsis: Yes = Cecal-ligation and puncture, live bacterial administration. No = Bacterial product administration (e.g. lipopolysaccharide).Therapy Initiated After Sepsis Induction: Yes = Mesenchymal stromal cells administered after sepsis model induced. No = Mesenchymal stromal cells administered at the time of sepsis induction.Documented Sepsis Severity Prior to Initiating Treatment: Yes = Mesenchymal stromal cells administered after marker of severity (e.g. hypotension) measured. No = Mesenchymal stromal cells administered without a marker of severity being measured.Resuscitation Included Fluids: Yes = Fluid therapy (aside from vehicle for cell administration) administered. No = Only vehicle for cell administration or no fluids administered._
+
+### Evidence of publication bias
+
+For the 20 experiments, 50% demonstrated statistically significant beneficial effects of MSCs with a median sample size of 19 animals per group. Visual inspection of a funnel plot analysis of all experiments suggested that publication bias exists (Figure 4), which was confirmed by Egger regression (p=0.019). Post-hoc trim and fill analysis suggested a relative overestimation of effect size of 27%, although MSCs remained associated with a statistically significant reduction in mortality after adjustment (OR 0.34, 95% CI 0.22–0.52).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/17850/elife-17850-fig4-v2.jpg)
 
-**Figure 4.:** Trim and fill analysis was performed on overall mortality. Open circles denote original data, black circles denote ‘filled’ studies. Open diamond denotes original pooled effect size (log odds ratio) and 95% confidence interval. Filled diamond represents adjusted effect size and 95% confidence interval.DOI: http://dx.doi.org/10.7554/eLife.17850.021
+**Figure 4.:** Trim and fill analysis was performed on overall mortality. Open circles denote original data, black circles denote ‘filled’ studies. Open diamond denotes original pooled effect size (log odds ratio) and 95% confidence interval. Filled diamond represents adjusted effect size and 95% confidence interval.
 
 ## Discussion
 
@@ -167,39 +1002,39 @@ Despite the stated limitations of this review, the consistency of the results ac
 
 The methods section has been written completely and transparently for researchers unfamiliar with systematic review and meta-analysis methodology. We would encourage readers wishing to replicate our approach for their own research agendas to refer to available resources (Sena et al., 2014; Higgins and Green, (2009)) and/or our group for further guidance.
 
-## Review question and protocol
+### Review question and protocol
 
 The research question for this review was, “In preclinical in-vivo animal models of sepsis, what is the effect of MSC therapy (compared to control treatment) on death?” The protocol for this review was published on the Collaborative Approach to Meta Analysis and Review of Animal Data from Experimental Studies (CAMARADES) website (http://www.dcn.ed.ac.uk/camarades/research.html#protocols) and also the University of Ottawa’s Open Access Research Institutional Repository (http://hdl.handle.net/10393/32833). A priori publication of our protocol encourages transparency in the systematic review process and safeguards against reporting biases in the review. This review is reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analysis (PRISMA) Statement (Moher et al., 2009). The PRISMA guidelines are an evidence-based minimum set of items that should be reported in a systematic review and meta-analysis. Similar to other reporting guidelines, PRISMA ensures complete and transparent reporting of a study.
 
-## Inclusion and exclusion criteria
+### Inclusion and exclusion criteria
 
 We included all pre-clinical in vivo studies of sepsis and endotoxemia that investigated treatment with mesenchymal stromal cells. MSCs must have been administered during or after experimental induction of sepsis. Since our group was considering a clinical trial of unmodified MSCs, studies were excluded if the MSCs were differentiated, altered, or engineered to over or under express particular genes. Neonatal animal models were excluded, as were models of acute lung injury. Finally, studies where MSCs were administered with another experimental therapy or cell type were excluded.
 
-## Literature search
+### Literature search
 
 To identify all relevant studies, we designed a search strategy in collaboration with a medical information specialist. We would suggest readers consult a medical librarian experienced in systematic searches if they wish to perform a literature search for a preclinical systematic review; this will ensure a comprehensive search is conducted. Although MSC terminology has been codified (Dominici et al., 2006) non-standard terms continue to be used in the literature, thus a number of MSC related terms were used in the search strategy. Validated animal filters were applied to increase relevancy (de Vries et al., 2014; Hooijmans et al., 2010); post-hoc, an inadvertent truncation was noted in the application of these filters, thus an updated search was performed to include the complete filters. We searched Ovid MEDLINE In-Process and Other Non-Indexed Citations, Embase Classic+Embase, BIOSIS and Web of Science (using Web of Knowledge) from inception until May 2015. The full search strategy is listed in the Appendix. Additional references were also sought through hand-searching the bibliographies of reviews and included primary studies.
 
-## Screening
+### Screening
 
 Studies were independently screened by two reviewers, with consensus required for articles to proceed to either the next screening stage or to the final analysis. Disagreements were resolved by discussion or by consultation with a senior team member when necessary.
 
-## Data extraction
+### Data extraction
 
 Data was extracted on the general characteristics of the study (e.g. study design, country of origin, sample size), animal model (e.g. disease induction method, use of resuscitation), and mesenchymal stromal cells (e.g. condition and source of cells). Data was collected for the primary outcome of overall mortality. Mortality was further stratified by time: ≤ 2 days, > 2–≤ 4 days, and > 4 days. If multiple measurements were reported within a period, the latest measurement within the period was used. Data in graphical format was extracted using open source software (Engauge Digitizer, github.com; http://markummitchell.github.io/engauge-digitizer/). Extracted data were verified by a second reviewer with disagreements resolved by consultation with a third team member. Additionally, authors were contacted when further clarification was required.
 
-## Subgroup analyses/generalizability – assessment of threats to external validity
+### Subgroup analyses/generalizability – assessment of threats to external validity
 
 A priori determined subgroup analyses were conducted to determine the effects of important factors on the estimated treatment effect. These analyses were performed to assess generalizability of results over varying experimental conditions. Subgroups were analysed for the following: animal model (e.g. mice, rat), gender, experimental model (e.g. cecal ligation and puncture, endotoxemia), source of MSC (e.g. autologous, xenogenic), route of MSC administration (e.g. intravenous, intraperitoneal), dose of MSC (less or greater than 1.0 × 106 cells), frequency of MSC dose, timing of MSC administration (less than one hour, greater than 1 hr to less than or equal to 6 hr, greater than 6 hr, or multiple dosing), resuscitation used (e.g. fluid, antibiotics), and control group (phosphate buffered saline, fibroblasts, normal saline, medium, nothing administered). Given the number of analyses performed, the results were considered exploratory and hypothesis generating. Readers employing a similar analysis may consider adjusting the value of significance based on the number of comparisons (e.g. for 11 analyses p<0.0045 would be considered significant).
 
-## Risk of bias – assessment of threats to internal validity
+### Risk of bias – assessment of threats to internal validity
 
 Risk of bias was assessed independently in duplicate as high, low, or unclear for the six domains of bias identified by the Cochrane Risk of Bias tool (Higgins and Green, 2009). Domains include: (1) sequence generation, (2) allocation concealment, (3) blinding of participants and personnel, (4) blinding of outcome assessors, (5) incomplete outcome data, and (6) selective outcome reporting; operational definitions can be found in the legend for Table 2. Any disagreements were resolved through consultation with a senior member of the team. Other domains of risk of bias assessed were (1) source of funding, (2) conflict of interest, and (3) sample size calculations. Following reviewers’ suggestions we also included the SYRCLE Risk of Bias Tool, an alternative method of assessing risk of bias in preclinical animal studies (Hooijmans et al., 2014). This tool is largely based on the Cochrane Risk of Bias Tool and includes several additional domains: (1) similarity of groups or adjustment for confounders at baseline, (2) random housing of animals, (3) animal selection at random for outcome assessment. The last domain was not evaluated given the outcome being assessed was death, and it was unclear for most studies whether true death or surrogate measures were being evaluated.
 
-## Assessment of threats to construct validity
+### Assessment of threats to construct validity
 
 In preclinical studies construct validity refers to the extent an animal model corresponds to the clinical entity it is intended to represent (Henderson et al., 2013). We used a previously published framework to evaluate construct validity of the included studies (Lamontagne et al., 2010). Items evaluated in each study included: (1) use of a large animal model (e.g. pig, dog, sheep), (2) use of adult animals, (3) presence of co-morbid diseases, (4) use of an infectious model of sepsis, (5) documentation of severity of illness prior to initiating therapy, (6) follow-up duration ≥24 hr, (7) use of antibiotics, and (8) use of intravenous fluid resuscitation. Each item was assessed independently by two reviewers and assessed as either a ‘yes’ or a ‘no’. Disagreements were resolved by consultation with a third team-member.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed in consultation with a statistician experienced in systematic reviews and meta-analysis. Readers seeking to replicate these methods for their own purposes are encouraged to similarly seek advice from an experienced statistician. Data from studies were pooled using meta-analysis that was performed with random effects modeling employing the DerSimonian and Laird random effects method (Comprehensive Meta-Analysis 2.0, Englewood, USA). Outcomes are expressed as odds ratios and 95% confidence intervals. There were completely independent control groups for the studies with more than one experiment extracted (i.e. a control group was not shared between two experimental groups). Thus, no correction for the number of control animals was required for multiple comparisons within a single meta-analysis. Heterogeneity of effect sizes in the overall effect estimates was assessed using the I2 statistic. The following are suggested thresholds to interpret the I2 statistic: 0–40% may not be important, 30–60% moderate heterogeneity, 50–90% substantial heterogeneity, 75–100% considerable heterogeneity (Higgins and Green, 2009).
 

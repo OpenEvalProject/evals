@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03v0r5n49 Department of Biotechnology, Bhupat and Jyoti Mehta School of Biosciences, Indian Institute of Technology Madras Chennai India
+1. Department of Biotechnology, Bhupat and Jyoti Mehta School of Biosciences, Indian Institute of Technology Madras Chennai India ([ROR:03v0r5n49](https://ror.org/03v0r5n49))
 
 † Corresponding author
 
@@ -33,25 +33,39 @@ In addition, because CytR has an excess charge of +9 and a large positive electr
 
 ## Results
 
-## CytR WT and DM form condensates with polyphosphate while P33A aggregates
+### CytR WT and DM form condensates with polyphosphate while P33A aggregates
 
 Inorganic polyP45, i.e. polyphosphate with 45 Pi units and with a net charge of –47, is employed in our studies and is referred to as polyP in the text below. We explored a range of solution conditions involving two-component mixtures of WT and polyP ([polyP] of 3–100 μM and [WT] of 5–125 μM at 20 mM phosphate buffer, pH 7 and 298 K) to map the phase diagram (Figure 2A). Solutions containing [WT] > 25 μM and [polyP] > 10 μM consistently showed higher turbidity (turbidity at 350 nm). We therefore chose [polyP] of 22 μM for further experiments. DIC (differential interference contrast) microscopy reveals droplet-shaped condensates with a diameter of ~1–4 μm on average (Figure 2B; also vide infra), which is also confirmed by fluorescence microscopy of NHS-rhodamine-labeled protein (Figure 2C). The number of droplets increases with increasing [WT] in the range between 25 and 90 μM consistent with OD measurements (Figure 2D). These observations establish that the WT CytR undergoes phase separation into condensates with polyP, and that turbidity can be employed as a reasonable proxy for phase separation in this system.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig2-v1.jpg)
+
+**Figure 2.:** (A) Phase diagram illustrating the phase separation of WT at different protein and polyP concentrations. Empty circles represent no phase separation, and filled circles represent the extent of phase separation following the color bar which indicates the OD (turbidity) at 350 nm. Representative DIC (B) and fluorescence (C) microscopy images of WT showing condensate formation in the presence of polyP. (D) Fluorescence microscopy images of NHS-rhodamine labeled WT at different protein concentrations in the presence of 22 µM PolyP. The scale bar is 10 µm. (E) Ionic strength dependence of turbidity at fixed WT (90 µM) and polyP (22 µM) concentrations. The error bar indicates the spread from experimental replicates (N = 2). DIC (left) and fluorescence (right) microscopy images of NHS-rhodamine labeled DM (F) and P33A (G) in the presence of polyP. The scale bar is 10 µm. (H) Representative fluorescence microscopy images of condensates during fluorescence recovery after photobleaching (FRAP) on WT (left) and DM (right) immediately after polyP addition. (I) FRAP recovery curves at 0 hr for DM (blue) and WT (green). The data represents an average of five experiments (N = 5), and the errors (shaded areas) are smaller than the size of the circles. (J) Time-lapse fluorescence images showing a dripping event for the WT (left column) and fission–fusion events for DM (right column).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The scale bar is 10 µm.
+
 Given that CytR carries a large excess positive charge (+9) and polyP is an anionic polymer with no structural preference (unlike DNA), the interaction and the resultant assembly process is expected to be driven by non-specific electrostatic interactions. To test this, we use a [WT]:[polyP] of 90:22 μM and measure OD as a function of ionic strength at pH 7. The OD is observed to be independent of ionic strength until ~80 mM following which it linearly decreases with near-zero turbidity at 200 mM (Figure 2E). Under physiological ionic strength conditions of 150–160 mM, the OD value is still ~0.6 and with droplets evident in fluorescence microscopy (Figure 2—figure supplement 1).
 
-The double mutant (DM), which is folded and compact, also undergoes spontaneous phase separation at the same concentrations as the WT when mixed with polyP, while the P33A mutant aggregates on addition of polyP (Figure 2F, G). The fluorescence of the NHS-rhodamine-labeled WT and DM recovers on photobleaching, highlighting the liquid-like nature of the condensates (Figure 2H). Specifically, the WT displays a maximal recovery of ~92% at 90 s (recovery half-time, t1/2=6.0±2.5\begin{document}$t_{1/2}=6.0\pm 2.5$\end{document} s), and the DM recovers to ~87% (t1/2=5.2±1.3\begin{document}$t_{1/2}=5.2\pm 1.3$\end{document} s) (Figure 2I). We also observe multiple coalescence and de-coalescence events in both the proteins at the earliest times (Figure 2J, Figure 2—video 1 for WT and Figure 2—video 2 for the DM).
+The double mutant (DM), which is folded and compact, also undergoes spontaneous phase separation at the same concentrations as the WT when mixed with polyP, while the P33A mutant aggregates on addition of polyP (Figure 2F, G). The fluorescence of the NHS-rhodamine-labeled WT and DM recovers on photobleaching, highlighting the liquid-like nature of the condensates (Figure 2H). Specifically, the WT displays a maximal recovery of ~92% at 90 s (recovery half-time, $t_{1/2}=6.0\pm2.5$ s), and the DM recovers to ~87% ($t_{1/2}=5.2\pm1.3$ s) (Figure 2I). We also observe multiple coalescence and de-coalescence events in both the proteins at the earliest times (Figure 2J, Figure 2—video 1 for WT and Figure 2—video 2 for the DM).
 
 Taken together, the fully unfolded variant of CytR (P33A) forms aggregates, and the variants with more ‘folded-like’ states undergo phase separation with polyP. These results indicate that charge composition and patterning alone do not determine the phase separation tendencies in this system. They underscore the importance of the starting ensemble, and potentially the population of partially structured substates, in determining the nature of the assembly process observed.
 
-## Maturation of polyphosphate-induced assemblies
+### Maturation of polyphosphate-induced assemblies
 
 We carried out time-dependent studies in the presence of thioflavin T (ThT) enabling simultaneous measurement of OD and fluorescence in the same sample. The OD of WT–polyP mixtures shows a strong time dependence, with the OD decreasing from 1.2 to less than 0.9 in the first 10 min, but with little increase in ThT fluorescence (left panel in Figure 3A). However, the ThT fluorescence starts to increase in a sigmoidal fashion from 20 min. The OD, on the other hand, drops to a value of 0.75 at ~30 min following which it increases and stabilizes at a value of ~1. The WT–polyP mixture therefore forms condensates and matures into aggregates within 3 hr which is directly observable in microscopy images (Figure 3B), mirroring reports in numerous other systems that undergo droplet formation followed by a liquid-to-solid phase transition (Patel et al., 2015; Ray et al., 2020; Shen et al., 2023; Gracia et al., 2022; Dhakal et al., 2023). Control experiments with protein alone did not reveal any changes in turbidity or aggregation in the entire 24-hr duration (Figure 3—figure supplement 1), pointing to a process entirely driven by polyP–protein interactions.
 
-The OD of the DM–polyP mixture exhibits a similar decrease in OD starting from a value of ~1, but this trend extends beyond 3 hr, with the OD dropping to a value of ~0.1 at the longest time points (middle panel in Figure 3A). We do observe a marginal increase in ThT fluorescence after 2 hr, but the increase is not as significant as the WT. These observations point to a scenario wherein the DM forms condensates to start with, but which slowly dissolve with time (Figure 3B). On the other hand, the P33A mutant forms only aggregates as evidenced by the high OD and high ThT fluorescence across all time points in the 24-hr observation window (right panel in Figure 3A, B). Fluorescence recovery after photobleaching (FRAP) experiments follow the trends reported in OD-fluorescence measurements. In the WT, the recovery amplitude decreases from 0.92 ± 0.11 at the zeroth minute to just 0.43 ± 0.04 at 60 min (Figure 3C, D). The FRAP t1/2\begin{document}$t_{1/2}$\end{document}, however, drops to shorter times at t=60\begin{document}$t=60$\end{document} min, indicating that there is a small subset of dynamic molecules (i.e. a small percentage of mobile fraction) contributing to the rapid recovery (Figure 3E). Alternately, the DM–polyP condensates recover near fully even at the first hour, with the recovery time slowing down by a factor of 2 (Figure 3F–H).
+![Figure 3.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig3-v1.jpg)
 
-We further quantified the dimensions of the droplets from the microscopy images at three different time points: 0, 30, and 60 min. At t=0\begin{document}$t=0$\end{document} and for the WT–polyP condensates, the mean droplet dimensions are of the order of 2.7 µm, but with a heavy right tail spanning nearly 8 µm. This tail is diminished at t=30\begin{document}$t=30$\end{document} min, reducing the overall dimensions of droplets (~2.4 µm) and their number (smaller area under the curve in Figure 3I). The DM displays a behavior which is the exact opposite (Figure 3J): at t=0\begin{document}$t=0$\end{document} the mean dimensions of the condensates are 2.1 µm with no heavy right tail; larger droplets appear at t=30\begin{document}$t=30$\end{document} min contributing to the appearance of the heavy right tail and with the mean droplet size increasing to 3.3 µm. At longer times (t=60\begin{document}$t=60$\end{document} min), the number of droplets reduces, and so do their mean dimensions as a result of dissolution.
+**Figure 3.:** (A) Turbidity (blue circles and left y-axis) and thioflavin T fluorescence intensity (green circles and right y-axis) time dependence for 90 µM WT (left panel), DM (middle panel), and P33A (right panel) in the presence of 22 µM polyP. The average from N = 2 experiments (circles) and the spread in the respective data (shaded region) are shown. (B) Representative fluorescence images of NHS-rhodamine labeled WT (top panel), DM (middle panel), and P33A (bottom panel) in the presence of polyP at different time points. The scale bar is 10 µm. Fluorescence recovery after photobleaching (FRAP) experiments for WT (panels C–E) and DM (panels F–H) in the presence of polyP at different time points – 0 min (pink), 30 min (blue), and 60 min (yellow) – and from five droplets (N = 5) and plotted as mean ± s.d. (C, F) The FRAP recovery curves of NHS-rhodamine labeled WT (panel C) and DM (panel F). The experimental errors (shaded areas) are also shown. (D, G) Recovery amplitudes or extents from FRAP experiments on the WT (panel D) and DM (panel G) at different time points. WT shows less recovery with time, indicating a liquid-to-solid transition, while the DM recovers fully. (E, H) FRAP recovery half-times for the WT (panel E) and DM (panel H) at the indicated time points. (I, J) Droplet size distribution of WT (panel I) and DM (panel J) at different time points following the same color code in panels C–H. The numbers within the plot represent the mean droplet dimensions at the corresponding time points.
 
-## Structural changes within the condensates span over 3 hr
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig3-figsupp1-v1.jpg)
+
+The OD of the DM–polyP mixture exhibits a similar decrease in OD starting from a value of ~1, but this trend extends beyond 3 hr, with the OD dropping to a value of ~0.1 at the longest time points (middle panel in Figure 3A). We do observe a marginal increase in ThT fluorescence after 2 hr, but the increase is not as significant as the WT. These observations point to a scenario wherein the DM forms condensates to start with, but which slowly dissolve with time (Figure 3B). On the other hand, the P33A mutant forms only aggregates as evidenced by the high OD and high ThT fluorescence across all time points in the 24-hr observation window (right panel in Figure 3A, B). Fluorescence recovery after photobleaching (FRAP) experiments follow the trends reported in OD-fluorescence measurements. In the WT, the recovery amplitude decreases from 0.92 ± 0.11 at the zeroth minute to just 0.43 ± 0.04 at 60 min (Figure 3C, D). The FRAP $t_{1/2}$, however, drops to shorter times at $t=60$ min, indicating that there is a small subset of dynamic molecules (i.e. a small percentage of mobile fraction) contributing to the rapid recovery (Figure 3E). Alternately, the DM–polyP condensates recover near fully even at the first hour, with the recovery time slowing down by a factor of 2 (Figure 3F–H).
+
+We further quantified the dimensions of the droplets from the microscopy images at three different time points: 0, 30, and 60 min. At $t=0$ and for the WT–polyP condensates, the mean droplet dimensions are of the order of 2.7 µm, but with a heavy right tail spanning nearly 8 µm. This tail is diminished at $t=30$ min, reducing the overall dimensions of droplets (~2.4 µm) and their number (smaller area under the curve in Figure 3I). The DM displays a behavior which is the exact opposite (Figure 3J): at $t=0$ the mean dimensions of the condensates are 2.1 µm with no heavy right tail; larger droplets appear at $t=30$ min contributing to the appearance of the heavy right tail and with the mean droplet size increasing to 3.3 µm. At longer times ($t=60$ min), the number of droplets reduces, and so do their mean dimensions as a result of dissolution.
+
+### Structural changes within the condensates span over 3 hr
 
 The differential behavior of the three variants raises questions on the nature of structural changes upon condensate formation and maturation. The WT circular dichroism (CD) spectrum in the dilute phase (i.e. in the absence of polyP) is characterized by minima at 202 and 222 nm with ~17% of residual helical content (Figure 1D). Upon formation of condensates, the spectral shape shifts substantially to one with a minimum at 230 nm and with no spectral features at wavelengths <215 nm (Figure 4A), demonstrating that the WT adopts a non-helical and potentially an unfolded conformation in the condensed phase at initial times. The spectrum of DM is more representative of a folded protein with minima at both 208 and 222 nm (Figure 1D), and with the signal at 222 nm indicative of a protein with nearly 30% helical content. On mixing with polyP, the spectral shift resembles that of the WT (Figure 4B), again indicative of a structural change in the condensed phase. The P33A mutant, which is more unfolded (helicity ~10%), however, exhibits a more intense spectrum with a minimum at 225 nm which is representative of β-sheet-like structures (Figure 4C; see below). These differences are more evident when the signal at 222 nm is plotted as a function of time: the WT and P33A mutant exhibit a trend quite different from that of the DM, with the latter acquiring structure with time despite unfolding on adding polyP (Figure 4D).
 
@@ -61,19 +75,47 @@ The differential behavior of the three variants raises questions on the nature o
 
 Since the spectra measured with polyP are an effective average of structural signatures from both the condensed- and dilute phases and of different secondary-structure types, the spectral shapes cannot be directly interpreted. To extract structural signatures and the associated trends, we perform a global singular value decomposition of the spectral time series of the three variants. The first two components contribute 92% of the overall signal change (Figure 4E). Of this, the first component is the spectrum of an α-helix with clear minimum at 222 nm and another at 208 nm, and accounts for 71% of the signal change. The amplitude of this component decreases with time in the WT and P33A variant, implying that helical conformations are less favored in their assemblies; this feature also signals the population of an alternate structural form which is observable in the second component (Figure 4F). In the DM, the amplitude of the helical component increases with time as expected when the droplet dissolves due to preferential transport into the dilute phase. However, the helical content recovers to just ~15% at 4 hr (Figure 4F), conceivably due to non-specific interaction with polyP resulting in partially structured states or due to a small fraction of oligomers.
 
-The second component, accounting for 21% of the signal change, bears the features of polyproline II structures in unfolded conformations (Shi et al., 2002) with a maximum at 231 nm and a minimum at 207 nm (Figure 4E). There is a marginal increase in the amplitude of this component in the WT in the first hour, following which it stabilizes (Figure 4G). The amplitude of this component increases in the DM continuously even at 4 hr indicating a tussle between the helical and polyproline II-like structures (Figure 4G). Since the droplets are fully dissolved at 4 hr and by which time the ThT fluorescence starts to marginally increase, it is likely that smaller-sized aggregates (as the contribution of this component is only ~20% of the overall change) coexist with folded and partially structured helical conformations in the DM–polyP mixtures at longer times. In the P33A variant, the amplitude of the second component has a negative sign, and when multiplied with the second component (required for reconstructing the original spectra), it points to a strong contribution from β-turn or polyproline I conformations, mixed with β-sheet (Kelly and Price, 2000). This is further confirmed by Fourier-transform infrared (FTIR) spectroscopy on P33A, wherein a strong absorbance band is evident in the wavenumbers 1610–1630 cm–1, which is absent in both the WT and DM at t=0\begin{document}$t=0$\end{document} (Figure 4H–J). At t=60\begin{document}$t=60$\end{document} min, the relative intensity of this band increases in the WT and P33A, while no change in spectral shape is evident for the DM.
+The second component, accounting for 21% of the signal change, bears the features of polyproline II structures in unfolded conformations (Shi et al., 2002) with a maximum at 231 nm and a minimum at 207 nm (Figure 4E). There is a marginal increase in the amplitude of this component in the WT in the first hour, following which it stabilizes (Figure 4G). The amplitude of this component increases in the DM continuously even at 4 hr indicating a tussle between the helical and polyproline II-like structures (Figure 4G). Since the droplets are fully dissolved at 4 hr and by which time the ThT fluorescence starts to marginally increase, it is likely that smaller-sized aggregates (as the contribution of this component is only ~20% of the overall change) coexist with folded and partially structured helical conformations in the DM–polyP mixtures at longer times. In the P33A variant, the amplitude of the second component has a negative sign, and when multiplied with the second component (required for reconstructing the original spectra), it points to a strong contribution from β-turn or polyproline I conformations, mixed with β-sheet (Kelly and Price, 2000). This is further confirmed by Fourier-transform infrared (FTIR) spectroscopy on P33A, wherein a strong absorbance band is evident in the wavenumbers 1610–1630 cm–1, which is absent in both the WT and DM at $t=0$ (Figure 4H–J). At $t=60$ min, the relative intensity of this band increases in the WT and P33A, while no change in spectral shape is evident for the DM.
 
 In summary, we find that both the WT and the DM ‘unfold’ on forming condensates with polyP, with polyproline II-rich structures observed at longer times (~1–2 hr) in both the mixtures. The condensates thus formed are metastable, either undergoing a liquid-to-solid transition as in the WT or partially dissolving with time as in the DM. At the 4-hr time point, however, the DM acquires helical character due to the partial dissolution of the condensates, while the WT forms only aggregates. The starting ensemble thus determines the extent of metastability and the maturation of condensates, and not just the nature of assemblies formed.
 
-## DNA is insensitive to the starting conformational ensembles
+### DNA is insensitive to the starting conformational ensembles
 
-DNA is the primary anionic polymer bound by CytR, albeit without sequence preference and involving a distribution of binding free energies (Munshi et al., 2018b). We find that CytR WT also forms condensates with just 1 μM of double-stranded DNA in a concentration-dependent manner at 20 mM phosphate buffer, pH 7 (Figure 5A, B). The droplets are liquid-like, displaying coalescence behavior (Figure 5C), recovering fully on photobleaching in a few seconds and with an FRAP t1/2\begin{document}$t_{1/2}$\end{document} of 5.5±0.7 s (green in Figure 5D, E), comparable to the droplets formed in the presence of polyP. Both the DM and the P33A variants form phase-separated condensates with DNA (Figure 5F, G), unlike aggregated assemblies observed with polyP-P33A droplets (Figure 2G).
+DNA is the primary anionic polymer bound by CytR, albeit without sequence preference and involving a distribution of binding free energies (Munshi et al., 2018b). We find that CytR WT also forms condensates with just 1 μM of double-stranded DNA in a concentration-dependent manner at 20 mM phosphate buffer, pH 7 (Figure 5A, B). The droplets are liquid-like, displaying coalescence behavior (Figure 5C), recovering fully on photobleaching in a few seconds and with an FRAP $t_{1/2}$ of 5.5±0.7 s (green in Figure 5D, E), comparable to the droplets formed in the presence of polyP. Both the DM and the P33A variants form phase-separated condensates with DNA (Figure 5F, G), unlike aggregated assemblies observed with polyP-P33A droplets (Figure 2G).
 
-The time-dependent properties of the condensates with DNA again differ from those of polyP: the condensates dissolve within 90 min in both the WT and DM (Figure 5H, I), while taking nearly 3 hr for the P33A variant (Figure 5—figure supplement 1). Numerous droplets with a mean size of 1.6 µm form within the first few minutes (Figure 5J), which coalesce to form larger droplets of size 2–3 µm, following which they dissolve. The FRAP t1/2\begin{document}$t_{1/2}$\end{document} increases by a factor of two at 60 min compared to the initial time point (Figure 5K), and a very slow phase is also observed at 60 min (Figure 5—figure supplement 2), indicating ~20% immobile fraction. We find that OD is less sensitive to droplet formation with DNA, as we do observe few droplets even at 3 hr, a time point at which the OD is effectively zero (Figure 5—figure supplement 1). Both the DM and P33A mutants recover fully (amplitudes ~1) and with similar half-times compared to the WT at 60 min (Figure 5—figure supplement 2). To rule out the possibility of concentration differences (22 µM for polyP and 1 µM for DNA) contributing to the observed diverse behavior across the two anionic polymers, we carried out a set of control experiments at 11.2 µM DNA, a concentration at which the number of negative charges is equivalent to that of 22 µM polyP. However, the trends were identical to those observed at lower DNA concentration (Figure 5—figure supplement 3), further underscoring that the differences in chemical and conformational properties of the anionic polymers contribute to the diverse assembly behaviors.
+![Figure 5.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig5-v1.jpg)
 
-None of the three proteins ‘unfold’ in the DNA-driven condensates; there is a marginal reduction (i.e. the signal becomes less negative) in the far-UV CD signal at t=0\begin{document}$t=0$\end{document} following which it quickly recovers to reach a value near that of the CD signal in the absence of DNA (Figure 5L, M). The absence of large structural change or aging into an aggregate with time is also evident in FTIR spectra which do not change significantly (Figure 5—figure supplement 4). The WT, however, does display 50% less negative signal at ~202–204 nm which shifts to longer wavelength after the first hour (blue and green spectra in Figure 5L), indicating helical structure acquisition and mirroring earlier reports (Moody et al., 2011; Munshi et al., 2018c). At higher DNA concentrations as used in the current study, this structural shift appears to be offset by unfolding in other regions likely through non-specific interactions. This leads to little signal change at 222 nm – note that this shift is not observable in the two mutants – and thus requiring detailed atomic-level studies to discern the subtle structural modulations induced by DNA at longer times.
+**Figure 5.:** (A) Changes in turbidity in solutions containing increasing concentrations of the WT and a fixed 1 µM concentration 45 bp specific DNA. The data is the mean from N = 2 experiments, and the error bar represents the spread. (B) Fluorescence microscopy images of NHS-rhodamine labeled WT at different concentrations with 1 µM DNA. The scale bar is 10 µm. (C) Representative time-lapse images of WT showing a fusion event. (D) Fluorescence recovery after photobleaching (FRAP) recovery curves of NHS-rhodamine-labeled CytR WT (green), DM (blue), and P33A (red). The data represents the average from N = 4 experiments. The experimental errors are shown as shaded areas. (E) Recovery half-times for the CytR variants at the earliest time points (0 min). P33A shows the fastest recovery, followed by WT and DM. Fluorescence microscopy images of 25 µM DM (F) and P33A (G) in the presence of 1 µM 45 bp DNA. The scale bar is 10 µm. (H) Turbidity of 25 µM WT with 1 µM DNA as a function of time. Data (circles) are from N = 2 experiments, and the error bar indicates the spread. (I) Fluorescence microscopy images of NHS-rhodamine labeled WT with DNA at different time points. The scale bar is 10 µm. (J) Droplet size distribution curve for WT in the presence of DNA at different time points – 0 min (pink), 30 min (blue), and 60 min (yellow). Numbers within the plot represent the mean droplet dimensions at the corresponding time points. (K) Recovery half-times from FRAP experiment on WT with DNA at different time points for N = 4 experiments following the color code for panel J. (L–N) Far-UV CD spectra of 25 µM WT (left), DM (middle), and P33A (right) at different time points – 0 hr (pink), 1 hr (blue), and 4 hr (yellow) – following the addition of 1 µM 45 bp DNA at 298 K. Black curve is the protein spectra in the absence of DNA. The data is reported in mean residue ellipticity (MRE) units of deg. cm2 dmol−1. (O) Time-dependent changes in far-UV CD signal at 222 nm for the CytR WT (green), DM (blue), and P33A (red). Dashed lines show MRE signal at 222 nm for the corresponding proteins in the absence of DNA.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Turbidity of 25 µM DM (blue) and P33A (orange) with 1 µM DNA as a function of time. The mean and the spread from N = 2 experiments are shown as circles and error bars, respectively. (B, C) Droplet size distributions for DM (B) and P33A (C) in the presence of DNA at different time points: 0 min (pink), 30 min (blue), and 60 min (yellow). Values given in the plot represent the mean dimensions of droplets at the corresponding time points. (D) Fluorescence microscopy images of NHS-rhodamine labeled WT (top), DM (middle) and P33A (bottom) in the presence of 45 bp DNA at different time points. The scale bar is 5 µm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Data are reported as mean ± s.d. for N = 4 experiments. FRAP recovery curves of NHS-rhodamine labeled WT (A), DM (B), and P33A (C). The experimental errors are smaller than the size of data points. FRAP recovery half-times for WT (D), DM (F), and P33A (H) at the indicated time points. Recovery amplitude plots for WT (E), DM (G), and P33A (I) at different time points.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The scale bar is 10 µm.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Black curves represent FTIR spectra of protein in the absence of DNA, and blue and green curves show FTIR spectra of protein after the addition of DNA at 0 and 60 min, respectively.
+
+The time-dependent properties of the condensates with DNA again differ from those of polyP: the condensates dissolve within 90 min in both the WT and DM (Figure 5H, I), while taking nearly 3 hr for the P33A variant (Figure 5—figure supplement 1). Numerous droplets with a mean size of 1.6 µm form within the first few minutes (Figure 5J), which coalesce to form larger droplets of size 2–3 µm, following which they dissolve. The FRAP $t_{1/2}$ increases by a factor of two at 60 min compared to the initial time point (Figure 5K), and a very slow phase is also observed at 60 min (Figure 5—figure supplement 2), indicating ~20% immobile fraction. We find that OD is less sensitive to droplet formation with DNA, as we do observe few droplets even at 3 hr, a time point at which the OD is effectively zero (Figure 5—figure supplement 1). Both the DM and P33A mutants recover fully (amplitudes ~1) and with similar half-times compared to the WT at 60 min (Figure 5—figure supplement 2). To rule out the possibility of concentration differences (22 µM for polyP and 1 µM for DNA) contributing to the observed diverse behavior across the two anionic polymers, we carried out a set of control experiments at 11.2 µM DNA, a concentration at which the number of negative charges is equivalent to that of 22 µM polyP. However, the trends were identical to those observed at lower DNA concentration (Figure 5—figure supplement 3), further underscoring that the differences in chemical and conformational properties of the anionic polymers contribute to the diverse assembly behaviors.
+
+None of the three proteins ‘unfold’ in the DNA-driven condensates; there is a marginal reduction (i.e. the signal becomes less negative) in the far-UV CD signal at $t=0$ following which it quickly recovers to reach a value near that of the CD signal in the absence of DNA (Figure 5L, M). The absence of large structural change or aging into an aggregate with time is also evident in FTIR spectra which do not change significantly (Figure 5—figure supplement 4). The WT, however, does display 50% less negative signal at ~202–204 nm which shifts to longer wavelength after the first hour (blue and green spectra in Figure 5L), indicating helical structure acquisition and mirroring earlier reports (Moody et al., 2011; Munshi et al., 2018c). At higher DNA concentrations as used in the current study, this structural shift appears to be offset by unfolding in other regions likely through non-specific interactions. This leads to little signal change at 222 nm – note that this shift is not observable in the two mutants – and thus requiring detailed atomic-level studies to discern the subtle structural modulations induced by DNA at longer times.
 
 To further test the lack of sensitivity of DNA to the starting conformational ensemble, we carried out a similar time-dependent experiment with polyP and DNA, but with the folded DBD of FruR (fructose repressor; Figure 6A) and the molten-globular variant Y19A FruR (Rajendran et al., 2024). PolyP spontaneously induces aggregation in FruR, while the molten-globular variant forms condensates but only at the earliest times (Figure 6B–D). The intensity of ThT fluorescence protein–polyP mixture increases with time, indicating that polyP induces a time-dependent enhanced aggregation of FruR, while the FruR Y19A–polyP mixture undergoes a rapid liquid-to-solid transition within the first 20 min (Figure 6—figure supplement 1). As with the CytR WT, the change in turbidity on aggregation happens earlier than the increase in ThT fluorescence (Figure 6C). The far-UV CD spectral patterns are different in the presence and absence of polyP, with the WT displaying altered secondary-structure signature in the presence of polyP (Figure 6E, F). The Y19A mutant shows a significantly weakened helical structure content signaling structural destabilization and hence unfolding within the condensate (Figure 6G, H). In the presence of DNA, however, both the folded and the molten-globular variants display no change in turbidity with time (Figure 6I–L).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig6-v1.jpg)
+
+**Figure 6.:** (A) 3D structure of the DBD of FruR highlighting an aromatic stacking interaction between Y19 and Y28. (B,C) Turbidity (blue circles and left y-axis) and thioflavin T (ThT) fluorescence intensity (green circles and right y-axis) curve for 90 µM FruR WT (B) and Y19A (C) in the presence of 22 µM polyP. The mean data from N = 2 experiments and the corresponding spread are shown as circles and shaded area, respectively. (D) Representative fluorescence microscopy images of NHS-rhodamine labeled FruR WT (top panel) and Y19A (bottom panel) in the presence of polyP at different time points (0, 0.5, 1, and 3 hr). The scale bar is 10 µm. (E) Far-UV circular dichroism (CD) spectra of FruR WT (green) and Y19A (red) at 298 K in mean residue ellipticity (MRE) units of deg. cm2 dmol−1 in the absence of polyP. Far-UV CD spectra of 55 µM FruR WT (F) and Y19A (G) at different time points – 0 hr (pink), 1 hr (blue), and 4 hr (yellow) – after the addition of 22 µM polyP at 298 K and displayed in mean residue ellipticity (MRE). Note that the y-axis scales of this panel are different from panel E. (H) Time dependence of the signal at 222 nm for WT (green) and Y19A (red). Turbidity of 25 µM WT (I) and Y19A (J) with 1 µM DNA as a function of time from N = 2 experiments. No changes in turbidity are observed with time. Representative fluorescence microscopy images of NHS-rhodamine labeled FruR WT (K) and Y19A (L) in the presence of DNA. The scale bar is 10 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105461/elife-105461-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) FRAP recovery curves of NHS-rhodamine labeled FruR. Arrow indicates the movement of the recovery profiles at longer incubation times. (B) Recovery half-time at the indicated time points. (C) Recovery amplitude at different time points. FRAP data for 0–10 min represents data from a single experiment as the condensates of Y19A are highly metastable (also see Figure 6C). The data acquired between 10–20 and 20–30 min are shown as mean ± s.d. from N = 4 and 3 experiments, respectively. The experimental errors are smaller than the size of data points.
 
 ## Discussion
 
@@ -87,40 +129,128 @@ The large charge density associated with polyphosphates and their natural abunda
 
 ## Materials and methods
 
-## Purification of CytR DBD and mutants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>45 bp long ds DNA – CytR specific</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>5′ TGGTGGGTAAATTTATGCAACGCATTTGCGTCATGGTGATGAGTA 3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>45 bp long ds DNA – FruR specific</td>
+      <td>This paper</td>
+      <td>Oligonucleotide</td>
+      <td>5′ TAAAGACAAGATCGCGCTGAAACGTTTCAAGAAAGCATAATACTT 3′</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Glucose oxidase</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2133-10KU, 10000units</td>
+      <td>From Aspergillus niger</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Catalase</td>
+      <td>Sigma-Aldrich</td>
+      <td>E3289-100mg</td>
+      <td>From bovine liver</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Sodium phosphate glass – type 45 (polyphosphate)</td>
+      <td>Sigma-Aldrich</td>
+      <td>S4379-500MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NHS-rhodamine</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>46406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D-(+)-Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>SLBR5156V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DL-Dithiothreitol</td>
+      <td>HiMedia</td>
+      <td>MB070-25G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Thioflavin T</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3516-5G</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Purification of CytR DBD and mutants
 
 The gene corresponding to the DBD of CytR(MKAKKQETAATMKDVALKAKVSTATVSRALMNPDKVS QATRNRVEKAAREVGYLPQPMGRNVKRNE) in the pTXB1 vector was transformed into E. coli BL21 (DE3) cells and purified as described before (Munshi et al., 2018b). Identical protocols were employed for purification of the DM and P33A variants. The Stokes radius was estimated as detailed in an earlier work (Munshi et al., 2020).
 
-## Time-dependent scattering (OD) and ThT fluorescence measurements
+### Time-dependent scattering (OD) and ThT fluorescence measurements
 
 Different concentrations of CytR WT were prepared by dissolving the lyophilized protein in 20 mM sodium phosphate, pH 7 (43 mM ionic strength) buffer. To generate the phase diagram, the scattering intensity (optical density) was recorded at 350 nm at protein concentrations of 5, 25, 55, 90, and 120 µM, and at different polyP concentrations of 3, 6, 11, 22, 41, and 100 µM. The measurements were acquired for 24 hr at 7-min intervals in a microplate reader (Agilent BioTek Synergy H1) at 298 K. The sample volume in each well was 200 μl. Further studies employed 90 µM protein (WT and mutants) and 22 µM polyP, unless mentioned otherwise. For the time-dependent studies recording both scattering and fluorescence, a 5-µM ThT (Sigma-Aldrich) was also added to the protein and polyP mixture; the wells were also excited at 442 nm, and the fluorescence intensity recorded at an emission wavelength of 485 nm. Ionic strength-dependent experiments were carried out at 20 mM sodium phosphate buffer, pH 7.0 (43 mM effective ionic strength) with the addition of NaCl for final ionic strength values spanning 60–200 mM. The OD values are reported directly from the plate reader without correction for path length, which is 5 mm in this experiment.
 
 For the scattering measurements in the presence of DNA, a range of CytR WT concentrations (2–100 µM) was used, and measurements were acquired with 1 µM of 45 bp dsDNA (5′ TGGTGGGTAAATTTATGCAACGCATTTGCGTCATGGTGATGAGTA 3′). Further studies with DNA were done at 25 µM protein (WT and mutants) concentration.
 
-## NHS-rhodamine labeling
+### NHS-rhodamine labeling
 
 NHS-rhodamine (Thermo Fisher Scientific, USA) was dissolved in DMSO, and protein was dissolved in conjugation buffer at pH 7.4 (as per the manufacturer’s protocol). The protein solution was added to 5×–7× molar excess of dye and incubated at 25°C for 2 hr at mild shaking conditions in the dark. The excess dye was removed by desalting using a 26/10 HiPrep desalting column (Cytiva). The labeled protein was eluted in 20 mM sodium phosphate buffer at pH 7.
 
-## Flow chamber preparation for imaging experiments
+### Flow chamber preparation for imaging experiments
 
 Imaging experiments were done using 22 × 22 mm coverslips and glass slides (Blue Star, India). Coverslips and glass slides were kept in Piranha solution (3:1 vol/vol sulfuric acid and hydrogen peroxide) for 30 min and then washed thoroughly with MilliQ water. The slides and coverslips were then air-dried and wiped with absolute ethanol. Clean slides and coverslips were used to prepare flow chambers to observe the condensate formation. To prepare the flow chamber, the double-stick tape was sandwiched between the glass slide and coverslip. The chamber was then sealed from three sides to avoid sample leakage.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 The condensates were observed under 100×/1.45 NA oil immersion objective at room temperature using Olympus IX83 inverted fluorescence microscope. 10% of the labeled protein was mixed with unlabeled protein, and the sample was loaded into the flow chamber immediately after adding polyP/DNA. An anti-fading cocktail containing 20 µg/ml glucose oxidase, 1.4 µg/ml catalase, 20 mM glucose, and 10 mM dithiothreitol was used to prevent photobleaching of the sample (Sudhakar et al., 2021). The sample was imaged at different time points under DIC and fluorescence mode using an appropriate fluorescence channel at 2048 × 2048 pixels (images for WT in the presence of polyP were acquired at 1024 × 1024 pixels) with 8-bit depth resolution. Images were analyzed using cellSens Dimensions Desktop (provided with the instrument) and ImageJ (Schneider et al., 2012).
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
-For FRAP experiments, 10% and 5% of labeled protein were used for polyP and DNA studies, respectively. Anti-fading cocktail was added to the protein sample to prevent passive photobleaching. The samples were loaded into the flow chamber at different time points (0, 30, and 60 min), and the experiment was performed in an Olympus Fluoview FV3000 confocal microscope with a 100×/1.45 NA oil immersion objective. A 561-nm laser was used to visualize and bleach (with 100% laser power) the condensates at the center. Fluorescence intensity was acquired for five different regions of interest (ROIs) with the same diameter: ROI-1 for the actual bleaching region, ROI-2 for the neighboring condensate for passive bleaching correction, and ROI-3, 4, and 5 outside the condensates to record background intensity for background correction. The images were acquired at 1024 × 1024 pixels with 12-bit resolution. Data was processed using cellSens Dimensions Desktop software and MATLAB. The raw data was corrected using the following equation (Poudyal et al., 2023):I(n)=I(t)−I(b)Ic/Ico,\begin{document}$$\displaystyle  I\left (n\right)=\frac{I\left (t\right)-I\left (b\right)}{I_{c}/I_{c_{o}}},$$\end{document}
+For FRAP experiments, 10% and 5% of labeled protein were used for polyP and DNA studies, respectively. Anti-fading cocktail was added to the protein sample to prevent passive photobleaching. The samples were loaded into the flow chamber at different time points (0, 30, and 60 min), and the experiment was performed in an Olympus Fluoview FV3000 confocal microscope with a 100×/1.45 NA oil immersion objective. A 561-nm laser was used to visualize and bleach (with 100% laser power) the condensates at the center. Fluorescence intensity was acquired for five different regions of interest (ROIs) with the same diameter: ROI-1 for the actual bleaching region, ROI-2 for the neighboring condensate for passive bleaching correction, and ROI-3, 4, and 5 outside the condensates to record background intensity for background correction. The images were acquired at 1024 × 1024 pixels with 12-bit resolution. Data was processed using cellSens Dimensions Desktop software and MATLAB. The raw data was corrected using the following equation (Poudyal et al., 2023):
 
-where It\begin{document}$I\left (t\right)$\end{document} is the fluorescence intensity at time t, Ib\begin{document}$I\left (b\right)$\end{document} is the average of background intensity for ROI-3, 4, and 5, Ic\begin{document}$I_{c}$\end{document} is the fluorescence intensity of ROI-2 after photobleaching, and Ico\begin{document}$I_{c_{o}}$\end{document} is the fluorescence intensity before photobleaching. The data was normalized (I) using:I=In−InminIno,\begin{document}$$\displaystyle  I=\frac{I_{n}-I_{n_{min}}}{I_{n_{o}}},$$\end{document}
+$$
+I(n)=\frac{I(t)−I(b)}{I_{c}/I_{c_{o}}},
+$$
 
-where In\begin{document}$I_{n}$\end{document} is corrected fluorescence intensity at time t and Ino\begin{document}$I_{n_{o}}$\end{document} is the intensity before bleaching and Inmin\begin{document}$I_{n_{min}}$\end{document} is the minimum intensity. The average of corrected and normalized fluorescence intensity from different experiments was taken, and the data was plotted as a function of time.
+where $It$ is the fluorescence intensity at time t, $Ib$ is the average of background intensity for ROI-3, 4, and 5, $I_{c}$ is the fluorescence intensity of ROI-2 after photobleaching, and $I_{c_{o}}$ is the fluorescence intensity before photobleaching. The data was normalized (I) using:
 
-## Circular dichroism
+$$
+I=\frac{I_{n}−I_{n_{min}}}{I_{n_{o}}},
+$$
+
+where $I_{n}$ is corrected fluorescence intensity at time t and $I_{n_{o}}$ is the intensity before bleaching and $I_{n_{min}}$ is the minimum intensity. The average of corrected and normalized fluorescence intensity from different experiments was taken, and the data was plotted as a function of time.
+
+### Circular dichroism
 
 Far-UV CD spectra were recorded at protein concentrations of 55 and 25 µM immediately after the addition of 22 µM polyP and 1 µM DNA, respectively. The spectra were acquired as a function of time for 4 hr at an interval of 15 min in the wavelength range of 250–200 nm at 298 K with a scanning speed of 10 nm/min in a Jasco J-815 spectropolarimeter. The mean helical content for the different CytR variants is estimated by taking the ratio between the signal at 222 nm with that expected of a 100% helical protein (–40,000 MRE units of deg. cm2 dmol–1).
 
-## FTIR spectroscopy
+### FTIR spectroscopy
 
 FTIR scans were performed using a Perkin Elmer Spectrum Two Spectrometer equipped with a DTGS detector in the attenuated total reflectance mode. 5 µl of protein sample was added to the diamond crystal, and the spectrum was acquired in the range of 4000–400 cm–1 using an average of 50 scans at a resolution of 4 cm–1. Baseline correction was done with MilliQ water to minimize the interference due to H2O before spectral acquisition.

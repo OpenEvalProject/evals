@@ -24,29 +24,29 @@
 
 ### Affiliations
 
-1. https://ror.org/040af2s02 Institute for Molecular Medicine Finland, University of Helsinki Helsinki Finland
-2. https://ror.org/04r9x1a08 Centre for Genomics Research, AstraZeneca Cambridge United Kingdom
-3. https://ror.org/03tf0c761 Finnish Institute for Health and Welfare Helsinki Finland
-4. https://ror.org/013meh722 British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge Cambridge United Kingdom
-5. https://ror.org/00f2yqf98 Department of Cardiology and Angiology, Hannover Medical School Hannover Germany
-6. https://ror.org/01zgy1s35 Clinic of Cardiology, University Heart and Vascular Center, University Medical Center Hamburg-Eppendorf Hamburg Germany
-7. https://ror.org/01zgy1s35 Population Health Research Department, University Heart and Vascular Center, University Medical Center Hamburg-Eppendorf Hamburg Germany
-8. https://ror.org/031t5w623 German Center for Cardiovascular Research (DZHK), partner site Hamburg/Kiel/Luebeck Hamburg Germany
-9. https://ror.org/01zgy1s35 University Center of Cardiovascular Science, University Medical Center Hamburg-Eppendorf Hamburg Germany
-10. https://ror.org/041kmwe10 Department of Immunology and Inflammation, Imperial College London London United Kingdom
-11. https://ror.org/013meh722 Health Data Research UK Cambridge, Wellcome Genome Campus and University of Cambridge Cambridge United Kingdom
-12. https://ror.org/04wwrrg31 Bioscience Renal, Research and Early Development Cardiovascular, Renal and Metabolism (CVRM), BioPharmaceuticals R&D, AstraZeneca Gothenburg Sweden
+1. Institute for Molecular Medicine Finland, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
+2. Centre for Genomics Research, AstraZeneca Cambridge United Kingdom ([ROR:04r9x1a08](https://ror.org/04r9x1a08))
+3. Finnish Institute for Health and Welfare Helsinki Finland ([ROR:03tf0c761](https://ror.org/03tf0c761))
+4. British Heart Foundation Cardiovascular Epidemiology Unit, Department of Public Health and Primary Care, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+5. Department of Cardiology and Angiology, Hannover Medical School Hannover Germany ([ROR:00f2yqf98](https://ror.org/00f2yqf98))
+6. Clinic of Cardiology, University Heart and Vascular Center, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+7. Population Health Research Department, University Heart and Vascular Center, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+8. German Center for Cardiovascular Research (DZHK), partner site Hamburg/Kiel/Luebeck Hamburg Germany ([ROR:031t5w623](https://ror.org/031t5w623))
+9. University Center of Cardiovascular Science, University Medical Center Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+10. Department of Immunology and Inflammation, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+11. Health Data Research UK Cambridge, Wellcome Genome Campus and University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+12. Bioscience Renal, Research and Early Development Cardiovascular, Renal and Metabolism (CVRM), BioPharmaceuticals R&D, AstraZeneca Gothenburg Sweden ([ROR:04wwrrg31](https://ror.org/04wwrrg31))
 13. Precision Medicine, Oncology R&D, AstraZeneca Cambridge United Kingdom
-14. https://ror.org/002pd6e78 Analytic and Translational Genetics Unit, Department of Medicine, Massachusetts General Hospital Boston United States
-15. https://ror.org/05a0ya142 Program in Medical and Population Genetics, Broad Institute of MIT and Harvard Cambridge United States
-16. https://ror.org/013meh722 British Heart Foundation Centre of Research Excellence, University of Cambridge Cambridge United Kingdom
-17. https://ror.org/013meh722 National Institute for Health Research Blood and Transplant Research Unit in Donor Health and Genomics, University of Cambridge Cambridge United Kingdom
+14. Analytic and Translational Genetics Unit, Department of Medicine, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+15. Program in Medical and Population Genetics, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+16. British Heart Foundation Centre of Research Excellence, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+17. National Institute for Health Research Blood and Transplant Research Unit in Donor Health and Genomics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
 ## Abstract
 
-Growth differentiation factor-15 (GDF15) is a stress response cytokine that is elevated in several cardiometabolic diseases and has attracted interest as a potential therapeutic target. To further explore the association of GDF15 with human disease, we conducted a broad study into the phenotypic and genetic correlates of GDF15 concentration in up to 14,099 individuals. Assessment of 772 traits across 6610 participants in FINRISK identified associations of GDF15 concentration with a range of phenotypes including all-cause mortality, cardiometabolic disease, respiratory diseases and psychiatric disorders, as well as inflammatory markers. A meta-analysis of genome-wide association studies (GWAS) of GDF15 concentration across three different assay platforms (n=14,099) confirmed significant heterogeneity due to a common missense variant (rs1058587; p.H202D) in GDF15 , potentially due to epitope-binding artefacts. After conditioning on rs1058587, statistical fine mapping identified four independent putative causal signals at the locus. Mendelian randomisation (MR) analysis found evidence of a causal relationship between GDF15 concentration and high-density lipoprotein (HDL) but not body mass index (BMI). Using reverse MR, we identified a potential causal association of BMI on GDF15 (IVW p FDR = 0.0040). Taken together, our data derived from human population cohorts do not support a role for moderately elevated GDF15 concentrations as a causal factor in human cardiometabolic disease but support its role as a biomarker of metabolic stress.
+Growth differentiation factor-15 (GDF15) is a stress response cytokine that is elevated in several cardiometabolic diseases and has attracted interest as a potential therapeutic target. To further explore the association of GDF15 with human disease, we conducted a broad study into the phenotypic and genetic correlates of GDF15 concentration in up to 14,099 individuals. Assessment of 772 traits across 6610 participants in FINRISK identified associations of GDF15 concentration with a range of phenotypes including all-cause mortality, cardiometabolic disease, respiratory diseases and psychiatric disorders, as well as inflammatory markers. A meta-analysis of genome-wide association studies (GWAS) of GDF15 concentration across three different assay platforms (n=14,099) confirmed significant heterogeneity due to a common missense variant (rs1058587; p.H202D) in GDF15, potentially due to epitope-binding artefacts. After conditioning on rs1058587, statistical fine mapping identified four independent putative causal signals at the locus. Mendelian randomisation (MR) analysis found evidence of a causal relationship between GDF15 concentration and high-density lipoprotein (HDL) but not body mass index (BMI). Using reverse MR, we identified a potential causal association of BMI on GDF15 (IVW pFDR = 0.0040). Taken together, our data derived from human population cohorts do not support a role for moderately elevated GDF15 concentrations as a causal factor in human cardiometabolic disease but support its role as a biomarker of metabolic stress.
 
 ## Introduction
 
@@ -60,7 +60,7 @@ In this study, we used data from several large biobanks to conduct a systematic 
 
 ## Results
 
-## Association of GDF15 plasma levels with 676 disease outcomes
+### Association of GDF15 plasma levels with 676 disease outcomes
 
 To assess systematically the relationship between GDF15 plasma levels and clinical phenotypes, we utilised a large Finnish biobank, FINRISK. The FINRISK cohort comprises a cross-sectional population survey carried out over a 40-year period in Finland. GDF15 plasma levels were available for 6610 participants from the 1997 recruitment cohort linked to 676 disease outcomes and were included in this analysis.
 
@@ -68,9 +68,124 @@ The median GDF15 concentration (measured using an immunoluminometric assay [ILMA
 
 We then investigated potential associations of GDF15 plasma levels with a range of disease phenotypes (both prevalent and incident), focusing on the phenotypes defined by the FinnGen consortium (Tuomo et al., 2020), as these endpoints have undergone additional clinical validation (see Materials and methods). A total of 676 disease endpoints were examined as dependent variables in association analyses with GDF15 plasma levels (the independent variable). After multiple-testing correction using false discovery rate (FDR, pFDR < 0.05), GDF15 was significantly associated with 80 disease endpoints (Table 1 and Supplementary file 2c).
 
+**Table 1.**
+ Disease endpoints associated (pFDR < 1 × 10–5) with GDF15 plasma levels in FINRISK.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease endpoint</th>
+      <th>Cases/controls</th>
+      <th>OR (95% CI)</th>
+      <th>pFDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>All-cause mortality</td>
+      <td>1057/5481</td>
+      <td>1.79 (1.68–1.90)</td>
+      <td>7.5×10–24</td>
+    </tr>
+    <tr>
+      <td>Death due to cardiac causes</td>
+      <td>471/6067</td>
+      <td>1.76 (1.61–1.90)</td>
+      <td>3.0×10–11</td>
+    </tr>
+    <tr>
+      <td>Atherosclerosis, excluding cerebral, coronary, and PAD</td>
+      <td>379/6159</td>
+      <td>1.67 (1.51–1.82)</td>
+      <td>3.2×10–8</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus type 2</td>
+      <td>567/5971</td>
+      <td>1.48 (1.36–1.60)</td>
+      <td>3.2×10–8</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td>592/5946</td>
+      <td>1.44 (1.33–1.56)</td>
+      <td>9.8×10–8</td>
+    </tr>
+    <tr>
+      <td>Diseases of arteries, arterioles, and capillaries</td>
+      <td>505/6033</td>
+      <td>1.48 (1.35–1.61)</td>
+      <td>3.6×10–7</td>
+    </tr>
+    <tr>
+      <td>Other COPD</td>
+      <td>221/6317</td>
+      <td>1.84 (1.63–2.04)</td>
+      <td>5.7×10–7</td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>235/6303</td>
+      <td>1.77 (1.57–1.97)</td>
+      <td>9.6×10–7</td>
+    </tr>
+    <tr>
+      <td>Pneumonia (excl. viral and due to other infectious organisms not elsewhere classified)</td>
+      <td>779/5759</td>
+      <td>1.34 (1.24–1.44)</td>
+      <td>9.6×10–7</td>
+    </tr>
+    <tr>
+      <td>Type 2 diabetes without complications</td>
+      <td>485/6053</td>
+      <td>1.44 (1.31–1.57)</td>
+      <td>1.2×10–6</td>
+    </tr>
+    <tr>
+      <td>All pneumonia</td>
+      <td>789/5749</td>
+      <td>1.33 (1.23–1.43)</td>
+      <td>1.9×10–6</td>
+    </tr>
+    <tr>
+      <td>Chronic kidney disease</td>
+      <td>66/6472</td>
+      <td>2.46 (2.14–2.79)</td>
+      <td>4.4×10–6</td>
+    </tr>
+    <tr>
+      <td>Influenza and pneumonia</td>
+      <td>833/5795</td>
+      <td>1.30 (1.21–1.40)</td>
+      <td>4.4×10–6</td>
+    </tr>
+    <tr>
+      <td>Type 2 diabetes with renal complications</td>
+      <td>35/6503</td>
+      <td>2.97 (2.57–3.38)</td>
+      <td>8.1×10–6</td>
+    </tr>
+    <tr>
+      <td>Sequelae of cerebrovascular disease</td>
+      <td>209/6329</td>
+      <td>1.67 (1.47–1.86)</td>
+      <td>9.2×10–6</td>
+    </tr>
+    <tr>
+      <td>Alcoholic liver disease</td>
+      <td>56/6482</td>
+      <td>2.26 (1.95–2.57)</td>
+      <td>9.2×10–6</td>
+    </tr>
+  </tbody>
+</table>
+
+_Results are adjusted for age, gender, smoking, and BMI. Abbreviations: OR, odds ratio; CI, confidence interval; COPD, chronic obstructive pulmonary disease; PAD, peripheral artery disease; SAH, subarachnoid haemorrhage; GDF15, growth differentiation factor-15. ICD codes for these disease endpoints have been published (Tuomo et al., 2020)._
+
 The most significant clinical associations observed were with all-cause mortality (logistic regression odds ratio, OR = 1.8, CI = 1.7–1.9, p-value = 9.8 × 10–27) and mortality due to cardiac diseases (OR = 1.8, CI = 1.6–1.9, p-value = 7.7 × 10–14). We also observed significant associations between GDF15 levels and type 2 diabetes (OR = 1.5, CI = 1.3–1.6, p-value = 2.2 × 10–9). Further, GDF15 plasma levels were significantly associated with cardiovascular diseases (OR = 1.2, CI = 1.1–1.2, p-value = 5.6 × 10–6), as well as subtype endpoints such as atherosclerosis, hypertension, peripheral artery (PAD) disease and stroke, and chronic kidney disease (OR = 2.46, CI = 2.1–2.8, p-value = 4.4 × 10–6:Table 1). Additional positive associations were observed with respiratory diseases, such as chronic obstructive pulmonary disease (COPD) and pneumonia, and psychiatric disorders, including schizophrenia and mental and behavioural disorders due to psychoactive substance use. Cancer phenotypes were also associated with GDF15 levels, including malignant neoplasm of the respiratory system and intrathoracic organs (OR = 1.6, CI = 1.3–1.8, p-value = 0.0015) and malignant neoplasm of the bronchus and lung (OR = 1.6, CI = 1.3–1.9, p-value = 0.0029).
 
-## GDF15 plasma concentration associates with prevalent and incident disease and independently predicts all-cause mortality and cardiometabolic diseases
+### GDF15 plasma concentration associates with prevalent and incident disease and independently predicts all-cause mortality and cardiometabolic diseases
 
 To determine the prognostic potential of GDF15 in predicting incident disease, we investigated its plasma levels in relation to prevalent and incident diseases in the FINRISK cohort. We selected disease endpoints showing association to the GDF15 plasma levels, namely type 2 diabetes, atherosclerosis (excluding cerebral, coronary, and PAD), COPD, psychiatric disorders, and malignant neoplasm of respiratory system and intrathoracic organs (Supplementary file 2d).
 
@@ -82,13 +197,21 @@ Other tested endpoints (psychiatric disorders; malignant neoplasm of respiratory
 
 Next, we carried out a Cox regression survival analysis on all-cause mortality, type 2 diabetes, and cardiovascular disease. During a 10-year follow-up period, 393 (6%) study subjects had died, 97 (2%) developed diabetes, and 438 (7%) developed cardiovascular disease. Models accounted for blood pressure medication, smoking, total cholesterol, HDL cholesterol, BMI, prevalent cardiovascular disease, and mean systolic blood pressure. Our results revealed that GDF15 plasma concentration is an independent predictor of all-cause mortality (hazard ratio, HR = 1.7, p-value = 9.2 × 10–12), type 2 diabetes (HR = 1.40, p-value = 0.02), and cardiovascular disease (HR = 1.4, p-value = 1.5 × 10–6, Figure 1, Figure 1—figure supplement 1 and Supplementary file 2e). Individuals with GDF15 plasma levels above 967 ng/L (the upper quartile) were more than twice as likely to develop type 2 diabetes compared to individuals with lower levels (HR = 2.2, CI = 1.4–3.5, p-value = 7.1 × 10–4).
 
-## Association of GDF15 plasma levels with 96 quantitative biomarkers
+![Figure 1.](https://cdn.elifesciences.org/articles/76272/elife-76272-fig1-v2.jpg)
+
+**Figure 1.:** The plot reports hazard ratios and 95% condidence intervals (error bars) with the dashed line representing the null effect. GDF15 is highlighted in red and variables are ordered by highest hazards ratio. Sample sizes are as follows; (a) n=393, (b) n=97 and (c) n=438. Abbreviations: BMI, body mass index; GDF15, growth differentiation factor-15; CHD, coronary heart disease; STR, stroke; HDL, high-density lipoprotein.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76272/elife-76272-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Survival curves include data from 10-year follow-up and GDF15 levels are divided into quartiles. Type 2 diabetes shows only a comparison of the last quartile (75–100%) with the rest (0–75%) due to insufficient power when treating the other quartiles separately. Abbreviations: T2DM, type 2 diabetes mellitus; CHD, coronary heart disease; STR, stroke; GDF15, growth differentiation factor-15.
+
+### Association of GDF15 plasma levels with 96 quantitative biomarkers
 
 We then performed an association analysis of GDF15 plasma levels with 96 quantitative biomarkers in FINRISK. After multiple-testing correction (pFDR < 0.05), significant associations were observed with 45 biomarkers, most notably, with blood markers known to be associated with inflammation (Supplementary file 2f).
 
 The most significantly associated biomarkers were mid-regional pro-adrenomedullin (MR-proADM, beta = 0.24, p-value = 1.2 × 10–91), C-reactive protein (CRP, beta = 0.22, p-value = 4.6 × 10–64) and hepatocyte growth factor (HGF, beta = 0.17, p-value = 4.2 × 10–43). All three markers have been previously reported to be non-specifically elevated in a number of human diseases and have known prognostic value (Jackson et al., 2016; Madonna et al., 2012; Matsumoto et al., 2017; Miller et al., 2007; Peacock, 2014). Significant associations were also observed between GDF15 and components of metabolic syndrome, specifically, levels of serum triglycerides (beta = 0.13, p-value = 2.4 × 10–22), fasting insulin (beta = 0.10, p-value = 1.2 × 10–13) and waist-to-hip ratio (WHR) (beta = 0.049, p-value = 7.0 × 10–10).
 
-## Genome-wide association studies of plasma levels of GDF15 quantified using three different assays in two independent cohorts
+### Genome-wide association studies of plasma levels of GDF15 quantified using three different assays in two independent cohorts
 
 We performed GWAS to identify the genetic determinants of GDF15 plasma levels using two independent cohorts (FINRISK and INTERVAL) and three GDF15 quantification methodologies (ILMA in FINRISK and Olink and SomaScan proteomic assays in INTERVAL). Results from individual GWAS analyses are reported in Supplementary file 3a-c. In FINRISK GWAS was conducted on 5817 individuals with available GDF15 plasma levels, measured using an ILMA (Sinning et al., 2017; Supplementary file 3a). The most significant associations were found within or in proximity to the GDF15 gene on chromosome 19, comprising 159 significant variants (p-value < 5 × 10–8). In INTERVAL we assayed plasma GDF15 in 3301 participants using SomaScan (an aptamer-based multiplex protein assays) and in 4998 participants using a proximity extension-based antibody assay (Olink). The most significant associations were found around the GDF15 gene on chromosome 19, comprising 134 significant variants for INTERVAL-SomaScan and 72 significant variants for INTERVAL-Olink (p-value < 5 × 10–8:Supplementary file 3b-c).
 
@@ -96,29 +219,436 @@ We then performed a meta-analysis of the genome-wide significant variants identi
 
 Two variants had a strengthened signal in the combined meta-analysis, rs1054221 and rs1227734 (Supplementary file 3d), However, five genetic associations, which were genome-wide significant for two of the three GWAS, displayed substantial heterogeneity, for example, rs16982345 (heterogeneity I2=99.8%, heterogeneity p-value = 7.6 × 10–180; Supplementary file 3d). By exploring the LD structure between the heterogeneous variants (Supplementary file 3e), we found that these variants were all located within the same LD block that included the missense variant rs1058587 (p.H202D). Heterogeneity in GWAS results of GDF15 levels has been observed in other studies (Jiang et al., 2018; Pietzner et al., 2020) and significant variations in GDF15 antibody binding affinity dependent on rs1058587 have been previously reported (Fairlie et al., 2001).
 
-## Mitigation of epitope binding effects due to the rs1058587 missense variant
+### Mitigation of epitope binding effects due to the rs1058587 missense variant
 
 To remove any potential epitope effects, we applied conditional analysis on rs1058587 when linking plasma GDF15 concentrations with disease phenotypes and quantitative traits. A total of 59 significant disease associations and 43 biomarker associations were identified. These associations largely did not differ from the unconditioned results, although 21 fewer disease associations reached significance (Supplementary file 2g-h).
 
 To minimise confounding of the GWAS results from rs1058587 epitope effects, we conditioned the association signal on chromosome 19 on rs1058587 in both FINRISK (Supplementary file 3f) and INTERVAL-SomaScan (Supplementary file 3g). INTERVAL-Olink did not have a significant association at this LD block. We then performed a meta-analysis across the genome for all three cohorts. Only signals within 1 Mb of the GDF15 gene reached significance in the meta-analysis. Manhattan and Quantile-Quantile (QQ) plots of this GWAS meta-analysis are shown in Table 2, Figure 2, and Supplementary file 3h. We found 146 significant associations in this region, with rs1227734 identified as the strongest association (beta = 0.50, p-value = 2.5 × 10–187).
 
+**Table 2.**
+ Meta-analysis of GDF15 GWAS conditioned on rs1058587 in FINRISK and INTERVAL.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">FINRISK</th>
+      <th colspan="2">INTERVAL-SomaScan</th>
+      <th colspan="2">INTERVAL-Olink</th>
+      <th colspan="4">Meta-analysis</th>
+    </tr>
+    <tr>
+      <th>SNPs</th>
+      <th>LD block</th>
+      <th>EA/OA</th>
+      <th>beta</th>
+      <th>p-value</th>
+      <th>beta</th>
+      <th>p-value</th>
+      <th>beta</th>
+      <th>p-value</th>
+      <th>beta</th>
+      <th>p-value</th>
+      <th>Heterogeneity I2</th>
+      <th>Heterogeneity p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs16982345</td>
+      <td>1</td>
+      <td>A/G</td>
+      <td>–0.28</td>
+      <td>0.55</td>
+      <td>0.30</td>
+      <td>0.18</td>
+      <td>0.01</td>
+      <td>0.72</td>
+      <td>0.01</td>
+      <td>0.64</td>
+      <td>4.2</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>rs1058587</td>
+      <td>1</td>
+      <td>G/C</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.01</td>
+      <td>0.77</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>rs3787023</td>
+      <td>1</td>
+      <td>A/G</td>
+      <td>0.06</td>
+      <td>0.0011</td>
+      <td>–0.011</td>
+      <td>0.72</td>
+      <td>0.04</td>
+      <td>0.072</td>
+      <td>0.04</td>
+      <td>0.0017</td>
+      <td>51.4</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>rs1055150</td>
+      <td>1</td>
+      <td>G/C</td>
+      <td>0.06</td>
+      <td>0.0012</td>
+      <td>–0.017</td>
+      <td>0.56</td>
+      <td>0.04</td>
+      <td>0.080</td>
+      <td>0.04</td>
+      <td>0.0025</td>
+      <td>58.5</td>
+      <td>0.090</td>
+    </tr>
+    <tr>
+      <td>rs1059369</td>
+      <td>1</td>
+      <td>A/T</td>
+      <td>0.06</td>
+      <td>0.0010</td>
+      <td>–0.018</td>
+      <td>0.54</td>
+      <td>0.04</td>
+      <td>0.078</td>
+      <td>0.04</td>
+      <td>0.0024</td>
+      <td>60.2</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>rs1054221</td>
+      <td>2</td>
+      <td>C/T</td>
+      <td>0.38</td>
+      <td>3.4×10–37</td>
+      <td>0.62</td>
+      <td>7.8×10–83</td>
+      <td>0.52</td>
+      <td>9.4×10–74</td>
+      <td>0.50</td>
+      <td>2.4×10–186</td>
+      <td>93.4</td>
+      <td>2.9×10–7</td>
+    </tr>
+    <tr>
+      <td>rs1227734</td>
+      <td>2</td>
+      <td>T/C</td>
+      <td>0.38</td>
+      <td>3.9×10–37</td>
+      <td>0.62</td>
+      <td>1.8×10–83</td>
+      <td>0.51</td>
+      <td>7.1×10–74</td>
+      <td>0.50</td>
+      <td>2.5×10–187</td>
+      <td>93.1</td>
+      <td>5.4×10–7</td>
+    </tr>
+    <tr>
+      <td>rs189593084</td>
+      <td>3</td>
+      <td>A/C</td>
+      <td>–0.33</td>
+      <td>8.4×10–14</td>
+      <td>–0.61</td>
+      <td>0.011</td>
+      <td>–0.47</td>
+      <td>0.0053</td>
+      <td>–0.35</td>
+      <td>1.3×10–16</td>
+      <td>0.0</td>
+      <td>0.40</td>
+    </tr>
+  </tbody>
+</table>
+
+_For comparison identical variants to those listed in Supplementary file 3d are shown here (these variants were identified by fine mapping unconditioned GWAS results from FINRISK and INTERVAL). LD blocks were defined as SNPs that had LD > 0.1 with the lead variant (most significantly associated variant). Abbreviations: GDF15, growth differentiation factor-15; GWAS, genome-wide association study._
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/76272/elife-76272-fig2-v2.jpg)
 
-**Figure 2.:** a) the GDF15 region and (b) all chromosomes.The dotted line (a) and red line (b) represent genome-wide significance (p-value < 5 × 10–8).
+**Figure 2.:** The dotted line (a) and red line (b) represent genome-wide significance (p-value < 5 × 10–8).
 
 Fine-mapping this conditioned meta-analysis revealed four association signals with a causality probability of 0.86. The top configuration consisted of variants rs1054221 (beta = −0.50, p-value = 2.4 × 10–184), rs3787023 (beta = 0.04, p-value = 0.0017), rs138515339 (beta = −0.27, p-value = 3.2 × 10–11), and rs141542836 (beta = 0.61, p-value = 1.9 × 10–40) and had a regional heritability of 7%. Functional annotation can be found in Supplementary file 3i.
 
-## MR analysis suggests a causal relationship between GDF15 plasma levels and HDL
+### MR analysis suggests a causal relationship between GDF15 plasma levels and HDL
 
 Observed associations of GDF15 plasma levels with obesity-related diseases have been presented here and found in previous reports (Tsai et al., 2015; Vila et al., 2011) and variants in the GDF15 gene region have been associated with cardiovascular traits, cholesterol, WHR, and BMI (Wang et al., 2021a). We therefore applied MR to assess the relationship between genetically determined GDF15 plasma levels and BMI, WHR, glucose, and type 2 diabetes. We also included HDL cholesterol and estimated BMD (eBMD) as additional outcomes in our MR analysis due to the positive MR results in previous studies (Cheung et al., 2019; Folkersen et al., 2020).
 
 We applied two-sample MR (Bowden et al., 2015) using LD clumping (R2 < 0.01, within 1.5 Mb of either side of the lead SNP, see Materials and methods) and identified five independent genetic instruments from the conditioned meta-analysis on chromosome 19: rs111527728, rs113700483, rs1227734, rs150286074, and rs73923175 (regional heritability = 0.061, F-statistics reported in Supplementary file 4a). Association statistics between the conditioned instrumental variables (IVs) and exposure (GDF15) were taken from the above meta-analysis, and the association statistics between the IVs and outcome were extracted from publicly available GWAS summary statistics (see Materials and methods). These values were applied to a random-effect inverse variance weighted (IVW) MR, as well as MR-Egger, weighted median MR, and MR-PRESSO methods (Verbanck et al., 2018), in order to detect horizontal pleiotropy (see Materials and methods for further details on the underlying assumptions of these methods). MR using the conditioned variants found two significant associations of genetically determined GDF15 plasma levels with HDL (IVW estimate = −0.0085, pFDR = 0.0024) and WHR (IVW estimate = 0.017, pFDR = 0.0013). The effects sizes for both of these were very small and the WHR result was not robust to multiple-testing correction in MR-PRESSO (Table 3 and Supplementary file 4b). Horizontal pleiotropy was not detected in any of the MR analyses. We did not replicate findings of causality of genetically determined GDF15 plasma levels with eBMD but we were able to provide additional validation of the causal role of genetically determined GDF15 in HDL cholesterol (Cheung et al., 2019; Folkersen et al., 2020).
 
-## Reverse MR analysis identifies BMI as a causal factor for GDF15 plasma levels
+**Table 3.**
+ Mendelian randomisation results for genetically determined GDF15 plasma levels as the exposure with cardiometabolic outcomes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">IVW (random)</th>
+      <th colspan="3">MR-Egger</th>
+      <th colspan="6">MR-PRESSO</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>SNPs</th>
+      <th>Estimate (SE)</th>
+      <th>pFDR (raw p-value)</th>
+      <th>Estimate (SE)</th>
+      <th>p-value</th>
+      <th>Intercept p-value</th>
+      <th>Estimate (SE)</th>
+      <th>pFDR (raw p-value)</th>
+      <th>Outlier estimate</th>
+      <th>Outlier p-value</th>
+      <th>Global p-value</th>
+      <th>Distortion p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BMI</td>
+      <td>5</td>
+      <td>–0.0025 (0.012)</td>
+      <td>0.90 (0.84)</td>
+      <td>–0.14 (0.023)</td>
+      <td>0.53</td>
+      <td>0.53</td>
+      <td>–0.0025 (0.012)</td>
+      <td>0.89 (0.85)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.31</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WHR</td>
+      <td>5</td>
+      <td>0.017 (0.0053)</td>
+      <td>0.0013 (0.0039)</td>
+      <td>0.0058 (0.0093)</td>
+      <td>0.53</td>
+      <td>0.14</td>
+      <td>0.017 (0.0049)</td>
+      <td>0.078 (0.026)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.50</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>5</td>
+      <td>0.014 (0.018)</td>
+      <td>0.43 (0.86)</td>
+      <td>–0.20 (0.031)</td>
+      <td>0.53</td>
+      <td>0.19</td>
+      <td>0.014 (0.018)</td>
+      <td>0.89 (0.48)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.58</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td>5</td>
+      <td>–0.00096 (0.0080)</td>
+      <td>0.90 (0.90)</td>
+      <td>–0.0067 (0.014)</td>
+      <td>0.63</td>
+      <td>0.62</td>
+      <td>–0.00096 (0.0068)</td>
+      <td>0.89 (0.89)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.83</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>HDL</td>
+      <td>5</td>
+      <td>–0.0085 (0.0023)</td>
+      <td>0.0024 (0.0014)</td>
+      <td>–0.0069 (0.0041)</td>
+      <td>0.092</td>
+      <td>0.62</td>
+      <td>–0.0085 (0.0013)</td>
+      <td>0.019 (0.0031)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.79</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>eBMD</td>
+      <td>5</td>
+      <td>0.0047 (0.012)</td>
+      <td>0.69 (0.90)</td>
+      <td>–0.0072 (0.022)</td>
+      <td>0.75</td>
+      <td>0.51</td>
+      <td>0.0047 (0.012)</td>
+      <td>0.89 (0.71)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.28</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_A significant finding of pleiotropy is indicated by the intercept p-value in MR-Egger and the Global p-value in MR-PRESSO. For MR-PRESSO the outlier test is only run if an outlier is detected. The distortion p-value represents whether the outlier removal significantly reduces the horizontal pleiotropy. Significant findings p-value < 0.05 are marked in bold text. Abbreviations: GDF15, growth differentiation factor-15; IVW, inverse variance weighted; BMI, body mass index; WHR, waist-hip ratio; HDL, high-density lipoprotein; eBMD, estimated bone mineral density._
+
+### Reverse MR analysis identifies BMI as a causal factor for GDF15 plasma levels
 
 We applied reverse two-sample MR (as described above) using GDF15 plasma levels as the outcome variable to assess associations with BMI, WHR, glucose, diabetes, HDL cholesterol, and eBMD as the MR exposures. GDF15 GWAS summary statistics were taken from the conditioned meta-analysis of GDF15 levels in FINRISK and INTERVAL in all chromosomes. LD clumping was used to identify the genetic instruments (see Materials and methods, F-statistics are reported in Supplementary file 4c-h). We found a significant association between higher genetically predicted BMI and higher GDF15 plasma levels (IVW estimate = 0.097, pFDR = 0.0040) but not any other tested trait (Table 4 and Supplementary file 4i). Sensitivity analyses in MR-PRESSO but not MR-Egger analysis confirmed the association with BMI (p-value > 0.05). No horizontal pleiotropy was detected in this association with MR-Egger or MR-PRESSO. Horizontal pleiotropy was identified in diabetes with MR-Egger and MR-PRESSO. MR-PRESSO additionally identified horizontal pleiotropy with WHR, HDL, and eBMD.
 
-## Effect of GDF15 PTVs on cardiometabolic traits in 302,388 participants of UK Biobank
+**Table 4.**
+ Reverse Mendelian randomisation with GDF15 plasma levels as outcome.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">IVW (random)</th>
+      <th colspan="3">MR-Egger</th>
+      <th colspan="6">MR-PRESSO</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>SNPs</th>
+      <th>Estimate (SE)</th>
+      <th>pFDR (raw p-value)</th>
+      <th>Estimate (SE)</th>
+      <th>p-value</th>
+      <th>Intercept p-value</th>
+      <th>Raw estimate (SE)</th>
+      <th>pFDR (raw p-value)</th>
+      <th>Outlier estimate</th>
+      <th>Outlier p-value</th>
+      <th>Global p-value</th>
+      <th>Distortion p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BMI</td>
+      <td>1011</td>
+      <td>0.097 (0.028)</td>
+      <td>0.0040 (0.00066)</td>
+      <td>0.14 (0.082)</td>
+      <td>0.087</td>
+      <td>0.58</td>
+      <td>0.097 (0.028)</td>
+      <td>0.0041 (0.00069)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.11</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>WHR</td>
+      <td>588</td>
+      <td>0.040 (0.039)</td>
+      <td>0.45 (0.30)</td>
+      <td>–0.089 (0.11)</td>
+      <td>0.41</td>
+      <td>0.21</td>
+      <td>–0.040 (0.039)</td>
+      <td>0.45 (0.30)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.00125</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>278</td>
+      <td>0.00082 (0.015)</td>
+      <td>0.96 (0.96)</td>
+      <td>–0.055 (0.031)</td>
+      <td>0.071</td>
+      <td>0.038</td>
+      <td>–0.00082 (0.015)</td>
+      <td>0.95 (0.95)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.00088</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td>77</td>
+      <td>–0.065 (0.056)</td>
+      <td>0.45 (0.25)</td>
+      <td>–0.24 (0.13)</td>
+      <td>0.065</td>
+      <td>0.14</td>
+      <td>0.065 (0.056)</td>
+      <td>0.45 (0.26)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>0.18</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>HDL</td>
+      <td>483</td>
+      <td>–0.044 (0.061)</td>
+      <td>0.56 (0.47)</td>
+      <td>–0.057 (0.096)</td>
+      <td>0.56</td>
+      <td>0.87</td>
+      <td>0.044 (0.061)</td>
+      <td>0.55 (0.46)</td>
+      <td>0.054 (0.060)</td>
+      <td>0.37</td>
+      <td>0.0147</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>eBMD</td>
+      <td>1113</td>
+      <td>0.030 (0.019)</td>
+      <td>0.36 (0.12)</td>
+      <td>0.032 (0.036)</td>
+      <td>0.37</td>
+      <td>0.94</td>
+      <td>–0.030 (0.019)</td>
+      <td>0.36 (0.12)</td>
+      <td>–0.027 (0.018)</td>
+      <td>0.14</td>
+      <td>&lt;0.000125</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_A significant finding of pleiotropy is indicated by the intercept p-value in MR-Egger and the Global p-value in MR-PRESSO. For MR-PRESSO the outlier test is only run if an outlier is detected. The distortion p-value represents whether the outlier removal significantly reduces the horizontal pleiotropy. Significant findings p-value < 0.05 are marked in bold text. Abbreviations: GDF15, growth differentiation factor-15; IVW, inverse variance weighted; BMI, body mass index; WHR, waist-hip ratio; HDL, high-density lipoprotein; eBMD, estimated bone mineral density._
+
+### Effect of GDF15 PTVs on cardiometabolic traits in 302,388 participants of UK Biobank
 
 Carriers of GDF15 PTVs present an opportunity to explore the phenotypic consequences of predicted loss-of-function (LOF) of GDF15 on human disease. We analysed whole-exome sequencing data from 302,388 participants from the UK Biobank, of whom 109 carried GDF15 PTVs in the heterozygous state. We assessed differences in BMI, WHR, glucose, eBMD, and HDL cholesterol between carriers and non-carriers using the Mann-Whitney U test. We were not able to carry out this analysis on type 2 diabetes given too few patients in this subset (n=2). The analysis was restricted to unrelated individuals of European ancestry, leaving 91 carriers of GDF15 PTVs (Supplementary file 4j, male N=42, female N=49, mean age = 56.3) and 40,000 randomly selected European-ancestry non-carriers (male N=20,000, female N=20,000, mean age = 56.9). In line with the MR analyses, we observed no differences in BMI (mean difference = 0.1, p-value = 0.90), WHR (male: mean difference = 0.01, p-value = 0.64, female: mean difference = 0.01, p-value = 0.55), glucose (mean difference = 0.14, p-value = 0.32), eBMD (mean difference = 0.02, p-value = 0.82), or HDL cholesterol (mean difference = 0.08, p-value = 0.08), suggesting that mono-allelic GDF15 LOF does not have a strong effect on these traits. It is possible that the other allele is compensating for the LOF but given that no homozygous GDF15 LOF was found in over 300,000 patients we were not able to test this hypothesis. It may be worthwhile for future analysis to experimentally explore the effect of heterozygous LOF on GDF15 protein levels.
 
@@ -142,9 +672,9 @@ Taken together, our study provides a systematic and broad investigation of GDF15
 
 ## Materials and methods
 
-## Study population and phenotypes
+### Study population and phenotypes
 
-## FINRISK
+#### FINRISK
 
 This study was carried out in accordance with the recommendations of the Declaration of Helsinki. All participants of studies have given written informed consent. FINRISK study was approved by the Ethics Committee of Helsinki and Uusimaa Hospital District.
 
@@ -152,7 +682,7 @@ The FINRISK cohort comprises a cross-sectional population survey carried out ove
 
 Nurse assessment/interview, self-report data, and blood samples were all collected at various time points during the study. A wealth of quantitative biomarkers (e.g. blood lipids, blood sugar markers, inflammatory biomarkers, cytokines, blood count, fatty acids, metabolome) and physiological measures (e.g. anthropometrics, cardiovascular physiology, body composition) were collected from the study participants. In addition, participants who consented were matched to their electronic health records giving access to hospital discharge registry (years 1969–2015), hospital discharge registry of specialist health care operations (1996–2015), death registry (1992–2015), drug reimbursement registry (1964–2015), drug purchase registry (1995–2015), and cancer registry (1953–2014). Gender was obtained from social security numbers. A group of clinicians working in the FinnGen consortium constructed 676 disease endpoints combining information from multiple health registries. ICD8, ICD9, and ICD10 codes were utilised in the disease endpoint definitions, for more information see https://www.finngen.fi/en/researchers/clinical-endpoints. Genotyping was carried out for in 6538 individuals who were recruited in 1997, for more information see Supplementary materials.
 
-## INTERVAL
+#### INTERVAL
 
 The INTERVAL study is a prospective cohort study comprising approximately 50,000 participants nested within a pragmatic randomised trial of blood donors (Jammah, 2015). Between 2012 and 2014, blood donors aged 18 years and older were recruited at 25 NHSBT (National Health Service Blood and Transplant) donor centres across England. Participants were generally healthy because people with a history of major diseases (such as myocardial infarction, stroke, cancer, HIV, and hepatitis B or C) and those who have had recent illness or infection were ineligible to donate blood. Participants completed an online questionnaire which included questions about demographic characteristics (e.g. age, sex, and ethnicity), anthropometry measures (height, weight), and lifestyle information (alcohol intake, smoking, physical activity, and diet).
 
@@ -164,17 +694,17 @@ For the Olink assay, protein measurements were conducted in an additional subcoh
 
 For information on genotyping in the INTERVAl cohort, see Suplementary materials.
 
-## UK Biobank
+#### UK Biobank
 
 UK Biobank is a population-based cohort consisting of ~500,000 individuals with participants recruited between 2006 and 2010 and aged between 40 and 69. Recruitment and cohort information has been previously described (Sudlow et al., 2015). Electronic health records, self-report questionnaires, diet and lifestyle information, and biomarker data are available on this cohort. Here, we utilised BMI and WHR, which were measured during a nurse assessment, as well as diabetes information. Touchscreen questionnaire diabetic patients were applied in this study rather than ICD10 diagnosed in order to increase patient numbers, given the small subgroup of individuals being examined.
 
-## Laboratory methods for GDF15 measurement
+### Laboratory methods for GDF15 measurement
 
-## FINRISK
+#### FINRISK
 
 Blood samples were collected after an advisory 4 hr fast, immediately centrifuged and then stored at –70°C until GDF15 measurement which was undertaken using an ILMA with a limit of detection of 24 ng/L and a linear range from 200 to 50,000 ng/L (Kempf et al., 2007). The ILMA is technically identical to immunoradiometric assay (IRMA: Horn et al., 1996) except that the GDF15 detection antibody was labelled with acridinium ester and assay results were quantified in a luminometer (Berthold). ILMA and IRMA use an antibody that binds over a sequence of Ala197-Ile308. GDF-15 concentrations measured with the ILMA and IRMA are very similar [(ILMA concentration/ILMA concentration)×100% = 97.8% ± 1.3%] and closely correlated (r2=0.99, p<0.001, n=31 samples: H). Head-to-head comparison of IRMA with the clinical ‘gold standard’ Roche assay have been previously conducted and reported GDF15 levels were comparable (Wollert et al., 2017).
 
-## INTERVAL
+#### INTERVAL
 
 Blood sample collection procedures have been described previously (Moore et al., 2014). Blood samples were collected in 6 mL EDTA tubes and transferred at ambient temperature to UK Biocentre (Stockport, UK) for processing. Plasma was extracted by centrifugation into two 0.8 mL plasma aliquots and stored at –80°C before use.
 
@@ -182,76 +712,76 @@ The procedures for obtaining protein measurements using the SomaScan assay have 
 
 The Olink assay uses pairs of monoclonal antibodies (or a single polyclonal antibody) to bind each protein target, and then uses proximity extension followed by qPCR to quantify protein abundance. Aliquots of plasma from samples taken from INTERVAL participants at the 2-year follow-up survey were shipped on dry ice to Olink Proteomics (Uppsala, Sweden) for assay. Protein concentrations were recorded as normalised relative protein abundances (‘NPX’).
 
-## Genotyping and imputation
+### Genotyping and imputation
 
-## FINRISK
+#### FINRISK
 
 A total of 26,404 FINRISK samples were genotyped using several arrays: the HumanCoreExome BeadChip, the Human610-Quad BeadChip, the Affymetrix6.0, and the Infinium HumanOmniExpress (Illumina Inc, San Diego, CA). The present study, using samples taken in FINRISK in 1997, consisted of 6538 individuals which were genotyped using three genotyping arrays: the HumanCoreExome BeadChip, the Human610-Quad BeadChip, and the Infinium HumanOmniExpress (Illumina Inc, San Diego, CA). Genotype calls were generated together with other available datasets using zCall at the Institute for Molecular Medicine Finland (FIMM). After sample-wise QC (exclude samples with ambiguous gender, missingness [>5%], excess heterozygosity [±4 SD], non-European ancestry) and variant-wise QC (exclude SNPs with high missingness [>2%]), low HWE p-value (<1 x 10-6), minor allele count (MAC) < 3 (in case Zcall'ed chip data) or MAC < 10 (chip data called using Illumina GenCall) steps, the samples were pre-phased using Eagle2 (version 2.3). Genotype imputation was carried out by using a Finnish population-specific reference panel consisting of 2690 high-coverage WGS and 5092 WES samples with IMPUTE2 (version 2.3.2: Howie et al., 2009) that allows the usage of two panels at the same time (the ‘merge_ref_panels’ option). Post-imputation QC involved excluding variants imputed with imputation INFO < 0.7.
 
-## INTERVAL
+#### INTERVAL
 
 The genotyping protocol and QC for the INTERVAL samples have previously been described in detail (Astle et al., 2016). DNA was extracted from buffy coat at LGC Genomics (UK) and was used to assay approximately 830,000 variants on the UK Biobank Affymetrix Axiom genotyping array at Affymetrix (Santa Clara, CA). Genotyping was performed in batches of approximately 4800 samples. Variants were excluded from a batch if they strongly deviated from HWE (p-value < 5 x 10-6) or had a within-batch call rate < 0.97. Sample QC included removing duplicate samples and samples with non-European ancestry, missing phenotypic sex and sex mismatches, and extreme heterozygosity (±3 SD). Relatedness was removed by excluding one participant from each pair of close (first- or second-degree) relatives, defined as π > 0.187.
 
 Additional variant QC steps were performed prior to imputation to establish a high-quality imputation scaffold. This included imposing a global HWE filter of p-value < 5 x 10-6, a call rate filter of 99% over the INTERVAL genotyping batches that a variant was not failed in, and a global call rate filter of 75% across all INTERVAL genotyping batches. All monomorphic variants, non-autosomal and multi-allelic variants were removed and 654,966 high-quality variants remained to be used for imputation. Phasing was conducted using SHAPEIT3 and variants were imputed using a combined 1000 Genomes Phase 3-UK10K imputation panel. Imputation was performed on the Sanger Imputation Server (https://imputation.sanger.ac.uk), resulting in 87,696,888 imputed variants.
 
-## Genome-wide association analysis
+### Genome-wide association analysis
 
-## FINRISK
+#### FINRISK
 
 For the FINRISK cohort genome-wide association analyses were performed for 5817 individuals with plasma GDF15 concentrations available. A normal distribution of GDF15 plasma concentrations was achieved through applying an inverse normal transformation. Multi-dimensional scaling was done for genetic data of both studies using PLINK version 1.07 (Purcell et al., 2007). Only good quality autosomal markers passing the following criteria: imputation informativeness > 0.7, and MAF > 0.001, were included in further evaluations. Frequentist test with method ‘expected’, assuming an additive genetic model, was performed using SNPTEST version 2 (Marchini et al., 2007). Results were adjusted for the first five principal components of the genetic data to account for the population stratification and for gender, age, and genotyping set. The QQ and Manhattan plots and regional plots were created using R-2.11 to visualise genome-wide association results. The genomic positions indicated throughout this study are based on NCBI human genome build 37.
 
-## INTERVAL
+#### INTERVAL
 
 The GWAS for INTERVAL-SomaScan has previously been described in detail (Sun et al., 2018). Relative protein abundances were first natural log-transformed within each subcohort. Log-transformed protein levels were then adjusted in a linear regression for age, sex, duration between blood draw and processing (binary, ≤1 day/>1 day) and the first three principal components of ancestry from multi-dimensional scaling. A normal distribution of the protein residuals from this linear regression was achieved through rank-inverse normal transformation and these were used as phenotypes for association testing. Simple linear regression assuming an additive genetic model was used to test for genetic associations. Genotype uncertainty was accounted for by carrying out association tests on allelic dosages (‘method expected’ option) using SNPTEST version 2.5.2 (Mullican et al., 2017).
 
 For the INTERVAL-Olink GWAS, normalised protein levels (‘NPX’) were first regressed on age, sex, plate, time from blood draw to processing (in days), and season (categorical: ‘Spring’, ‘Summer’, ‘Autumn’, ‘Winter’). The residuals from this linear regression were rank-inverse normalised. The rank-inverse normalised residuals were then fitted in a linear regression model adjusted for ancestry by including the first three components of multi-dimensional scaling as covariates. GWAS was conducted using SNPTEST version 2.5.2.
 
-## Fine mapping
+#### Fine mapping
 
 Fine mapping was performed using the FINEMAP program (Benner et al., 2016). FINEMAP can potentially identify sets of variants with more evidence of being causal than those highlighted by a stepwise conditional analysis. The FINEMAP provides (1) a list of potential causal configurations together with their posterior probabilities and Bayes factors and, (2) for each variant, the posterior probability and Bayes factor of being causal. FINEMAP was applied with its default settings. LD between SNPs for the conditional analysis was combined using the formula: (N1 * LD1 + N2 * LD2 + N3 * LD3)/(N1 + N2 + N3), where N represents the number of individuals in the GWAS in each cohort, LD represents the R2 value, and 1, 2, and 3 represent the three different cohorts: FINRISK, INTERVAL-SomaScan, and INTERVAL-Olink.
 
-## Variant annotation
+#### Variant annotation
 
 The functional significance of the fine mapped variants were explored using public databases and browsers, including GTEx, Ensmbl, SNiPA, RegulomeDB (Võsa et al., 2021).
 
-## Meta-analysis
+### Meta-analysis
 
 Meta-analysis was completed on the chromosome 19 locus around the GDF15 gene in METAL (Willer et al., 2010) using the IVW method. A total of 3,799 SNPs were found in common across FINRISK, INTERVAL-SomaScan, and INTERVAL-Olink.
 
-## Statistical analysis
+### Statistical analysis
 
-## Association study between GDF15 levels and disease endpoints and quantitative biomarkers
+#### Association study between GDF15 levels and disease endpoints and quantitative biomarkers
 
 To examine the association of GDF15 with disease endpoints and quantitative biomarkers, logistic and linear regression models were used, respectively. Inverse variance transformed GDF15 levels were used in the analyses due to right-skewed distribution. Association of GDF15 with disease endpoints and quantitative biomarkers were examined in (1) age and sex, (2) age, sex, and BMI, (3) age, sex, and smoking-adjusted models. Analyses using linear and logistic regression models were performed using R2.11 (see URLs). FDR was applied to test for multiple test correction.
 
-## Survival analysis
+#### Survival analysis
 
 All analyses were performed in R version 3.4.0. Cox proportional hazard regression model was conducted to identify predictors of outcomes during 10 years. The survival curves for a Cox proportional hazards model were used to illustrate the timing of the death, type 2 diabetes, and CVD events during 10 years in relation to GDF15 quartiles, and statistical assessment between upper quartile and other quartiles was preformed using Cox proportional hazard regression model. To inspect the validity of the Cox model, the test of the proportional hazards assumption for a Cox regression model was used. Hosmer-Lemeshow goodness of fit test was used to determine whether models were calibrated with similar expected and observed event rates in both low- and high-risk individuals.
 
-## Wilcoxon test for prevalent and incident disease
+#### Wilcoxon test for prevalent and incident disease
 
 Wilcoxon rank sum test (Mann-Whitney U test) was performed, in R using function ‘wilcox.test’ from stats package, to test whether the distributions of the incident disease case group, prevalent disease case group, and control group were systematically different from one another. Wilcoxon rank sum test was used for the prevalent and incident analysis given non-transformed GDF15 plasma levels (that were not normally distributed) were used.
 
-## Type 2 diabetes endpoint used for prevalent and incident analysis
+#### Type 2 diabetes endpoint used for prevalent and incident analysis
 
 The ICD codes used for type 2 diabetes endpoint definition in the incident prevalent analysis were: ICD9 codes: 2502A, 2501A, 2503A, 2504A, 2505A, 2506A, 2507A, 2508A, 2500A (diabetes mellitus, type 2); ICD10 codes: E110, E111, E112, E113, E114, E115, E11[6-8], E119 (adult type diabetes); ATC-code A10B (blood glucose lowering drugs, excluding insulins) from kela drug purchase register as well as ICD10 code E11 (adult type diabetes) from kela reimbursement register. During the ICD8 era, type 1 and type 2 diabetes were not separated in Finnish ICD8 diagnosis codes, and thus ICD8 diabetes diagnosis codes were not included to the type 2 diabetes endpoint. To ensure that type 1 diabetes cases are not mixed with type 2 diabetes cases, type 1 diabetes endpoint cases were removed from the type 2 diabetes endpoint cases.
 
-## Mendelian randomisation
+### Mendelian randomisation
 
 In brief, MR is a method that explores whether an intermediate trait has a causal relationship with an endpoint by using genetic instruments. The use of genetic data means there is less environmental bias. Variants identified as significantly associated with the intermediate trait are applied and summary results from intermediate trait – variants and endpoint – variants are applied in the model. MR-Egger regression does not constrain the intercept, therefore it is not biased by invalid IV but has reduced power. MR relies on three main assumptions that (1) the instruments are associated with the exposure, (2) the instruments are not associated with any confounders, and (3) the instruments are associated with the outcome only through the exposure. Here, we applied random effect IVW analysis (which has the most statistical power but can be biased in the presence of horizontal pleiotropy), MR-Egger (which relies on the InSIDE assumption and has less statistical power but can be used to identify pleiotropy), weighted median MR (which is robust to outliers but sensitive to addition/removal of IVs), and MR-PRESSO (which is able to remove outliers but is prone to false positives in the presence of multiple invalid instruments). The strengths and weaknesses listed here are summarised in this paper (Burgess et al., 2019).
 
 We applied MR (Bowden et al., 2015) to explore causality of GDF15 with BMI, WHR, glucose, type 2 diabetes, HDL cholesterol, and eBMD. We additionally explored these relationship in reverse: with GDF15 as an outcome and other traits as the exposure. GWAS summary statistics for GDF15 were taken from the conditional meta-analysis of FINRISK and INTERVAL for the forward MR and from FINRISK only for the reverse MR. GWAS in INTERVAL being completed on chromosome 19 only whereas GWAS in FINRISK were completed on all chromosomes. Summary statistics for the other traits were obtained from large public data resources: BMI (n=590,827: Yengo et al., 2018), WHR (n=485,486: Shungin et al., 2015), glucose (n=314,916: http://www.nealelab.is/uk-biobank), type 2 diabetes (n cases = 74,124, n controls = 824,006: Mahajan et al., 2018), HDL cholesterol (n=315,133: http://www.nealelab.is/uk-biobank), and eBMD (n=426,824: Morris et al., 2019). For BMI, MR with GDF15 as the exposure was applied using summary statistics from UK Biobank only (n=361,194) as the LD clumped variants were not available in the larger meta-analysis, that was utilised for reverse MR. We utilised LD clumping to identify independent genetic variants in summary statistics and applied these as genetic instruments in MR analyses. LD clumping was carried out in PLINK (version 1.9) with the following thresholds applied: R2 < 0.01, p-value < 5 × 10-8 and clump radius < 3000 kb. MR analysis was run in R (version 4.0.2) using the package ‘MendelianRandomization’. The IVW method from this package was applied to test for causality and a sensitivity analysis using MR-Egger to testing for horizontal pleiotropy. A finding of significant causality is indicated with the IVW p-value and a significant MR-Egger intercept p-value indicates a finding of horizontal pleiotropy. Weighted median MR and MR-PRESSO (Mendelian randomisation pleiotropy residual sum and outlier: Verbanck et al., 2018) were additionally applied as a further sensitivity analysis and to test for horizontal pleiotropy and was run in R using the ‘MRPRESSO’ package. The Global p-value indicates a significant finding of horizontal pleiotropy and the software also tests for outliers, the finding of which instigates removal of outliers from the analysis. MR-PRESSO then re-runs IVW testing and gives a significant distortion p-value to indicate if the removal of outliers reduced the horizontal pleiotropy found in the analysis.
 
-## GDF15 PTV analysis
+### GDF15 PTV analysis
 
-## UK Biobank exome sequencing
+#### UK Biobank exome sequencing
 
 UK Biobank was whole exome sequenced (paired-end 75 bp) at Regeneron Pharmaceuticals using the IDT xGen version 1 capture kit and NovaSeq6000 for more information, see previous publication (Wang et al., 2021b). Data was available on 302,362 individuals of which >95% of CCDS had at least ×10 coverage and average coverage of CCDS was ×59. Alignment to GRCh38 and SNV and indel calling were completed utilising Illumina DRAGEN Bio-IT Platform Germline Pipeline version 3.07 on a custom-built Amazon Web Services (AWS) cloud platform. Annotation of SNVs and indels was performed using SnpEFF v4.3 against Ensembl Build 38.92 and MAPQ < 30 were excluded. Related individuals were identified using KING and first- and second-degree relatives were excluded from downstream analysis. Sex and ancestry checks were completed using PEDDY (Pedersen and Quinlan, 2017) and individuals with gender mismatch were excluded.
 
-## Quality control
+#### Quality control
 
 Individuals with GDF15 PTVs were identified by extracting variants annotated as PTVs (including exon loss variants, frameshift variants, start lost, stop gained, stop lost, splice acceptor variants, splice donor variant, rare amino acid variant, transcript ablation, gene fusion, and bidirectional gene fusion). Supplementary file 4j, demonstrates the frequency of LOF variants in each ancestry. From the individuals that did not carry GDF15 PTV variants 20,000 males and 20,000 females were randomly extracted as controls.
 
-## Mann-Whitney U test
+#### Mann-Whitney U test
 
 Analysis was completed in R (version 3.2.4) using ‘wilcox.test’ and models compared BMI, WHR (in males and females separately), diabetic status (self-reported), eBMD, and HDL in GDF15 PTV carriers and non-carriers.

@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Osteogenesis imperfecta (OI) is characterized by short stature, skeletal deformities, low bone mass, and motor deficits. A subset of OI patients also present with joint hypermobility; however, the role of tendon dysfunction in OI pathogenesis is largely unknown. Using the Crtap mouse model of severe, recessive OI, we found that mutant Achilles and patellar tendons were thinner and weaker with increased collagen cross-links and reduced collagen fibril size at 1- and 4-months compared to wildtype. Patellar tendons from -/- Crtap mice also had altered numbers of CD146 -/- + CD200 + and CD146 - CD200 + progenitor-like cells at skeletal maturity. RNA-seq analysis of Achilles and patellar tendons from 1-month Crtap mice revealed dysregulation in matrix and tendon marker gene expression concomitant with predicted alterations in TGF-β, inflammatory, and metabolic signaling. At 4-months, -/- Crtap mice showed increased αSMA, MMP2, and phospho-NFκB staining in the patellar tendon consistent with excess matrix remodeling and tissue inflammation. Finally, a series of behavioral tests showed severe motor impairments and reduced grip strength in 4-month -/- Crtap mice – a phenotype that correlates with the tendon pathology. -/-
+Osteogenesis imperfecta (OI) is characterized by short stature, skeletal deformities, low bone mass, and motor deficits. A subset of OI patients also present with joint hypermobility; however, the role of tendon dysfunction in OI pathogenesis is largely unknown. Using the Crtap-/- mouse model of severe, recessive OI, we found that mutant Achilles and patellar tendons were thinner and weaker with increased collagen cross-links and reduced collagen fibril size at 1- and 4-months compared to wildtype. Patellar tendons from Crtap-/- mice also had altered numbers of CD146+CD200+ and CD146-CD200+ progenitor-like cells at skeletal maturity. RNA-seq analysis of Achilles and patellar tendons from 1-month Crtap-/- mice revealed dysregulation in matrix and tendon marker gene expression concomitant with predicted alterations in TGF-β, inflammatory, and metabolic signaling. At 4-months, Crtap-/- mice showed increased αSMA, MMP2, and phospho-NFκB staining in the patellar tendon consistent with excess matrix remodeling and tissue inflammation. Finally, a series of behavioral tests showed severe motor impairments and reduced grip strength in 4-month Crtap-/- mice – a phenotype that correlates with the tendon pathology.
 
 ## Introduction
 
@@ -40,13 +40,13 @@ Alterations in collagen fibril size and cross-linking have been noted in a limit
 
 ## Results
 
-## Tendon structure, size, and strength are altered in Crtap-/- mice at 1- and 4-months
+### Tendon structure, size, and strength are altered in Crtap-/- mice at 1- and 4-months
 
 Mice lacking CRTAP present with growth delay, rhizomelia, and severe osteoporosis together with disruption of other connective tissues, including lung and skin (Morello et al., 2006; Baldridge et al., 2010). To assess abnormalities in the load-bearing tendons from Crtap-/- mice, we harvested ankle and knee joints at 1 and 4 months-of-age to histologically examine the Achilles and patellar tendons. At 1-month, Crtap-/- mice presented with thinner Achilles and patellar tendons (Figure 1C,F) compared to wildtype (Figure 1A,D) and heterozygous mice (Figure 1B,E) with increased cell density in both structures (Figure 1M). By 4 months-of-age, Crtap-/- Achilles and patellar tendons remained thinner and hypercellular compared to wildtype and heterozygous mice (Figure 1G–L,N). Interestingly, ectopic chondrogenesis was present towards either end of the patellar tendon in some (but not all) 4-month-old Crtap-/- mice (Figure 1L) – a phenomenon that can occur in tendinopathy (Steinmann et al., 2020). Consistent with our histological data, phase-contrast µCT analysis demonstrated that patellar tendon volume was reduced in Crtap-/-, but not in heterozygous mice, compared to wildtype controls (Figure 1O–Q). In contrast, no significant changes in articular cartilage volume or surface were observed (Figure 1R,S).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig1-v2.jpg)
 
-**Figure 1.:** (A–C) Representative H & E images of 1-month ankle joints. (D–F) Representative H & E images of 1-month knee joints. (G–I) Representative H & E images of 4-month ankle joints. (J–L) Representative H & E images of 4-month knee joints. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 3–4 mice per group. Scale bar is 1 mm. (M–N) Quantification of cell density for Achilles and patellar tendons of wildtype and Crtap mice at 1 month (-/-M) and 4 months (N) of age. Data are min-to-max box and whisker plots with individual points indicated. n = 3 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported. (O–P) Representative phase-contrast μCT images of 4-month wildtype (O) and Crtap (-/-P) knee joints. Blue indicates the patellar tendon, green indicates the femoral articular cartilage, and red indicates the tibial articular cartilage. Scale bar is 1 mm. (Q) Quantification of the patellar tendon volume in wildtype, heterozygous, and Crtap mice at 4-months. Data are min-to-max box and whisker plots with individual points indicated. n = 3 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. (-/-R–S) Quantification of articular cartilage volume (R) and surface (S) in wildtype, heterozygous, and Crtap mice at 4-months. Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. (-/-T–U) Biomechanical assessment of ultimate load (T) and linear stiffness (U) for Achilles tendons from 1-month-old wildtype, heterozygous, and Crtap mice. Data are min-to-max box and whisker plots with individual points indicated. n = 3–8 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.-/-
+**Figure 1.:** (A–C) Representative H & E images of 1-month ankle joints. (D–F) Representative H & E images of 1-month knee joints. (G–I) Representative H & E images of 4-month ankle joints. (J–L) Representative H & E images of 4-month knee joints. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 3–4 mice per group. Scale bar is 1 mm. (M–N) Quantification of cell density for Achilles and patellar tendons of wildtype and Crtap-/- mice at 1 month (M) and 4 months (N) of age. Data are min-to-max box and whisker plots with individual points indicated. n = 3 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported. (O–P) Representative phase-contrast μCT images of 4-month wildtype (O) and Crtap-/- (P) knee joints. Blue indicates the patellar tendon, green indicates the femoral articular cartilage, and red indicates the tibial articular cartilage. Scale bar is 1 mm. (Q) Quantification of the patellar tendon volume in wildtype, heterozygous, and Crtap-/- mice at 4-months. Data are min-to-max box and whisker plots with individual points indicated. n = 3 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. (R–S) Quantification of articular cartilage volume (R) and surface (S) in wildtype, heterozygous, and Crtap-/- mice at 4-months. Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. (T–U) Biomechanical assessment of ultimate load (T) and linear stiffness (U) for Achilles tendons from 1-month-old wildtype, heterozygous, and Crtap-/- mice. Data are min-to-max box and whisker plots with individual points indicated. n = 3–8 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.
 
 To determine whether the altered structure of Crtap-/- load-bearing tendons results in reduced tissue strength, we performed biomechanical testing at 1-month on Achilles tendons to examine structural properties. As predicted based on the histological data, we observed decreases in ultimate load and linear stiffness for Crtap-/- Achilles tendons compared to heterozygous and wildtype mice (Figure 1T,U). Taken together, load-bearing tendons in Crtap-/- mice present with reduced size, increased cell density and decreased strength compared to controls.
 
@@ -54,43 +54,43 @@ Given Crtap is deleted throughout development in our global knockout mouse model
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig2-v2.jpg)
 
-**Figure 2.:** Crtap mice at postnatal day 10.-/-(A–B) Representative H & E images of postnatal day 10 (P10) ankle joints. (C–D) Representative H & E images of P10 knee joints. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 5 mice per group. Scale bar is 0.5 mm. (E) Quantification of cell density and (F) Average tissue area for Achilles and patellar tendons of wildtype and Crtap mice at P10 (taken mid-tendon). Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported.-/-
+**Figure 2.:** (A–B) Representative H & E images of postnatal day 10 (P10) ankle joints. (C–D) Representative H & E images of P10 knee joints. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 5 mice per group. Scale bar is 0.5 mm. (E) Quantification of cell density and (F) Average tissue area for Achilles and patellar tendons of wildtype and Crtap-/- mice at P10 (taken mid-tendon). Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported.
 
 Given the significant hypercellularity seen in the load-bearing tendons from Crtap-/- mice, we next examined whether there were changes in tenocyte populations associated with progenitors and tendon repair response in Crtap-/- mice. Specifically, previous literature has demonstrated that progenitor-like cells involved in tendon maturation and repair are marked by the expression of CD146 (Lee et al., 2015) in addition to others. Using fluorescence-activated cell sorting (FACS) analysis of 5-month-old patellar tendons, we observed a significant decrease in the percentage of CD45-CD31-CD146+CD200+ (~2%) compared to wildtype mice (~4%) (Figure 3A–C, red box). In contrast, CD45-CD31-CD146-CD200+ cells were concomitantly increased in Crtap-/- mice (Figure 3D). Taken together, this data suggests that the matrix disruptions caused by loss of CRTAP may lead to the dysregulation of discrete tendon cell populations within the adult patellar tendon.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig3-v2.jpg)
 
-**Figure 3.:** (A–B) Patellar tendon cells isolated from 5-month-old wildtype (A) or Crtap (-/-B) mice were analyzed for the expression of CD200 and CD146 tendon progenitor markers (top histogram) within the CD45-CD31- population (bottom histogram). The plots are representative from a single wildtype or Crtap mouse. (-/-C–D) Graphs show the percentage of CD45-CD31-CD146+CD200+ progenitor cells (C) and CD45-CD31-CD146-CD200+ immature tendon cells (D) From 5-month wildtype and Crtap patellar tendons. Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported.-/-
+**Figure 3.:** (A–B) Patellar tendon cells isolated from 5-month-old wildtype (A) or Crtap-/- (B) mice were analyzed for the expression of CD200 and CD146 tendon progenitor markers (top histogram) within the CD45-CD31- population (bottom histogram). The plots are representative from a single wildtype or Crtap-/- mouse. (C–D) Graphs show the percentage of CD45-CD31-CD146+CD200+ progenitor cells (C) and CD45-CD31-CD146-CD200+ immature tendon cells (D) From 5-month wildtype and Crtap-/- patellar tendons. Data are min-to-max box and whisker plots with individual points indicated. n = 5 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using two-tailed unpaired t-tests. Exact p-values are reported.
 
-## Collagen fibril formation is altered in heterozygous and Crtap-/- mice
+### Collagen fibril formation is altered in heterozygous and Crtap-/- mice
 
 Tendons develop embryonically by increasing in fibril length and number, whereas postnatal growth arises from an increase in fibril length and diameter – the latter of which is driven by the lateral fusion of smaller fibrils (Kalson et al., 2015). To investigate the role of CRTAP in postnatal collagen fibril maturation, we utilized transmission electron microscopy (TEM) to examine changes in fibril diameter in flexor digitorum longus (FDL), Achilles, and patellar tendons (Figure 4). In the FDL tendon, there was a marked increase in small collagen fibrils (20–60 nm in size), a reduction in 80–320 nm fibrils, and a slight increase in larger fibrils (>340 nm in diameter) in Crtap-/- mice compared to wildtype (Figure 4A,C,J). Despite similarities seen in histology, heterozygous mutant FDL tendons also exhibited a slight increase in 20–40 nm fibrils in mice compared to wildtype controls (Figure 4A–B,J). Similar trends were observed for the Achilles tendon, namely an increase in small fibrils (20–60 nm), a reduction in 80–240 nm fibrils, and an increase in large fibrils (>280 nm) upon loss of Crtap (Figure 4D,F,K). In contrast to what we observed for the FDL, heterozygous Achilles tendons did not have increased numbers of smaller fibers (Figure 4E,K). Instead, a greater number of fibrils ranging from 140-to-200 nm in size were noted compared to wildtype controls.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig4-v2.jpg)
 
-**Figure 4.:** Crtap mice.-/-(A–C) Representative transverse TEM images of 4-month (A–C) FDL tendon collagen fibrils, (D–F) Achilles tendon collagen fibrils, and (G–I) patellar tendon collagen fibrils. Scale bar is 500 nm. (J) Representative histogram of the size distribution for collagen fibrils in FDL tendons. Data are representative of n = 3 mice. (K) Representative histogram of the size distribution for collagen fibrils in Achilles tendons. Data are representative of n = 3 mice. (L) Representative histogram of the size distribution for collagen fibrils in patellar tendons. Data are representative of n = 3 mice per group. (M–R) Representative longitudinal TEM images of 4-month wildtype FDL (M), Achilles (N), and patellar (O) tendons, and 4-month Crtap FDL (-/-P), Achilles (Q), and patellar (R) tendons. Scale bar is 500 nm.
+**Figure 4.:** (A–C) Representative transverse TEM images of 4-month (A–C) FDL tendon collagen fibrils, (D–F) Achilles tendon collagen fibrils, and (G–I) patellar tendon collagen fibrils. Scale bar is 500 nm. (J) Representative histogram of the size distribution for collagen fibrils in FDL tendons. Data are representative of n = 3 mice. (K) Representative histogram of the size distribution for collagen fibrils in Achilles tendons. Data are representative of n = 3 mice. (L) Representative histogram of the size distribution for collagen fibrils in patellar tendons. Data are representative of n = 3 mice per group. (M–R) Representative longitudinal TEM images of 4-month wildtype FDL (M), Achilles (N), and patellar (O) tendons, and 4-month Crtap-/- FDL (P), Achilles (Q), and patellar (R) tendons. Scale bar is 500 nm.
 
 Compared to the FDL and Achilles tendons, the most significant differences were seen within the patellar tendon, although the pattern of changes remained consistent (Figure 4G–I,L). Specifically, we observed a dramatic increase in 20 nm collagen fibrils compared to heterozygous and wildtype mice (Figure 4G–I,L). Fibrils ranging from 100-to-180 nm in diameter were reduced in heterozygous and Crtap-/- mice compared to wildtype. Interestingly, the greatest difference from wildtype was an increase in large collagen fibrils (>200 nm) in both heterozygous and Crtap-/- mice (Figure 4G–I,L).
 
 To examine how collagen fibril alignment is affected by the loss of CRTAP, we examined longitudinal sections of FDL, Achilles, and patellar tendons from 4-month wildtype and Crtap-/- mice using TEM (Figure 4M–R). Consistent with our transverse data, we observed a wider array of thinner and thicker collagen fibrils in Crtap-/- tendons (Figure 4P,Q,R) compared to wildtype (Figure 4M,N,O). In addition, while the collagen fibrils in wildtype animals were well-aligned, collagen fibril alignment in Crtap-/- tendons was more irregular (Figure 4P,Q,R). Taken together, these data indicate that loss of CRTAP alters collagen fibril assembly and alignment in load-bearing tendons. In addition, the degree to which collagen assembly is affected is site-dependent.
 
-## Collagen cross-linking is increased in heterozygous and Crtap-/- mice
+### Collagen cross-linking is increased in heterozygous and Crtap-/- mice
 
 Along with P3H1 and CyPB, CRTAP is an integral part of the collagen prolyl 3-hydroxylation complex responsible for the 3-hydroxylation of Pro986 of the type I procollagen α1 chain (Lim et al., 2017a). Loss of this complex blocks 3-hydroxyproline formation and affects lysine hydroxylation and cross-linking in bone collagen (Morello et al., 2006; Baldridge et al., 2008); however, whether Crtap-/- tendons display altered collagen cross-linking is unknown. To investigate this, we harvested tendons at 1- and 4-months and assessed collagen cross-linking by quantifying the levels of hydroxylysyl-pyridinoline (HP) (Figure 5). Overall, we observed an increase in these stable, mature collagen cross-links from 1 to 4 months-of-age in all genotypes for the FDL and Achilles tendons (Figure 5A–B). In contrast, for the patellar tendon, age-dependent increases in collagen cross-links were only observed in Crtap-/- mice (Figure 5C). For FDL tendons, Crtap-/- mice had more of these collagen cross-links at 1- and 4-months compared to heterozygous and wildtype mice; however, the content of HP residues per collagen decreased with age in this tissue (Figure 5A). Interestingly, in Achilles tendons, an increase in collagen cross-linking was observed in both heterozygous and Crtap-/- mice at 1-month compared to wildtype. In contrast, at 4-months, only Crtap-/- mice had elevated collagen cross-links, and these levels were greater than those observed at the earlier time point (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig5-v2.jpg)
 
-**Figure 5.:** Crtap mice.-/-Quantification of collagen cross-links as hydroxylysyl-pyridinoline (HP) residues per collagen molecule for (A) FDL tendons; (B) Achilles tendons; and (C) patellar tendons. Data are shown as means ± S.D. n = 3–4 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.
+**Figure 5.:** Quantification of collagen cross-links as hydroxylysyl-pyridinoline (HP) residues per collagen molecule for (A) FDL tendons; (B) Achilles tendons; and (C) patellar tendons. Data are shown as means ± S.D. n = 3–4 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.
 
 The patellar tendon showed the greatest increase in collagen cross-links both with time and across genotypes of the tissues examined. Specifically, collagen cross-links were elevated by 5- to 10-fold in Crtap-/- patellar tendons compared to heterozygous and wildtype at 1- and 4-months, respectively (Figure 5C). Taken together, these data suggest that CRTAP is required for proper hydroxylation and cross-linking of collagen fibrils in tendons in a semi-dominant fashion, as heterozygous mutant tendons display a phenotype that is milder than the phenotype observed for homozygous mutant mice. Notably, the chemical quality of collagen cross-linking appears to be spatiotemporally regulated, and this regulation is differentially affected by the loss of a single or both copies of Crtap.
 
-## Signaling and metabolic dysregulation in Crtap-/- load-bearing tendons
+### Signaling and metabolic dysregulation in Crtap-/- load-bearing tendons
 
 We performed bulk RNA-seq with RNA isolated from Achilles and patellar tendons of 1-month-old wildtype and Crtap-/- mice to investigate the molecular changes underlying the observed tendon phenotypes. To determine global changes in differentially expressed genes and predicted upstream regulators, we performed Ingenuity Pathway Analysis (IPA, Qiagen, Germany). For the Achilles tendon, a total of 178 genes (consisting of 99 upregulated genes and 79 downregulated genes) were significantly differentially expressed between wildtype and Crtap-/- samples (Figure 6A). Of the top 30 differentially expressed genes, several ECM proteins, including matrilin-3 (Matn3), matrilin-4 (Matn4), and fibronectin 1 (Fn1), and proteolytic enzymes such as matrix metallopeptidas-2 (Mmp2) were dysregulated. Gene ontology analysis revealed ‘GO:000715 – Cell Adhesion’, ‘GO:0045778 – Positive Regulation of Ossification’, and ‘GO:0051928 – Positive Regulation of Calcium Ion Transport’ to be enriched (Figure 6B). Examination of upstream regulators based on the differential gene expression data revealed a predicted activation of TGF-β1 in Crtap-/- mice and predicted inhibition of dystrophin (DMD) along with several for which activation state was unclear, including platelet-derived growth factor-BB (PDGF-BB), β-catenin (CTNNB1), and tumor necrosis factor (TNF) (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig6-v2.jpg)
 
-**Figure 6.:** Crtap mice.-/-DESeq2 was used to compare gene expression between wildtype and Crtap Achilles and patellar tendon RNA samples, and genes with an adjusted p-value<0.05 and absolute log-/-2 fold change >1 were considered as differentially expressed. (A) A bi-clustering heatmap of the top 30 differentially expressed genes between wildtype and Crtap Achilles tendons sorted by adjusted p-value and plotted according to log-/-2 transformed expression values. The Wald test was used to generate p-values and log2 fold changes. See Figure 6—source data 1 for a complete list of differentially regulated genes. (B) Significantly differentially expressed genes between Achilles tendons from wildtype and Crtap mice were clustered by their gene ontology, and enrichment for gene ontology terms was tested using Fisher exact test. All gene ontology terms with an adjusted p-value<0.05 are plotted according to their -log-/-10 adjusted p-value. (C) Select upstream regulators predicted as being activated (shown in green), inhibited (shown in red), or of unclear state (shown in gray) in Crtap compared to wildtype Achilles tendons plotted according to their -log-/-10 adjusted p-value. See Figure 6—source data 2 for a complete list of predicted upstream regulators. n = 3 mice per genotype for (A–C). (D) A bi-clustering heatmap of the top 30 differentially expressed genes between wildtype and Crtap patellar tendons sorted by adjusted p-value and plotted according to log-/-2 transformed expression values. The Wald test was used to generate p-values and log2 fold changes. See Figure 6—source data 3 for a complete list of differentially regulated genes. (E) Significantly differentially expressed genes between patellar tendons from wildtype and Crtap mice were clustered by their gene ontology, and enrichment for gene ontology terms was tested using Fisher exact test. All gene ontology terms with an adjusted p-value<0.05 are plotted according to their -log-/-10 adjusted p-value. (F) Select upstream regulators predicted as being activated (shown in green), inhibited (shown in red), or of unclear state (shown in gray) in Crtap compared to wildtype patellar tendons plotted according to -log-/-10 adjusted p-value. See Figure 6—source data 4 for a complete list of predicted upstream regulators. n = 2 mice per genotype for (D–F).  Figure 6—source data 1.Crtap knockout Achilles tendons.The Wald test was used to generate p-values and log2 fold changes. Genes with an adjusted p-value<0.05 and absolute log2 fold change >1 were called significantly differentially expressed genes. This is a full list of all differentially expressed genes ordered by adjusted p-value.  Figure 6—source data 2.Crtap knockout Achilles tendons.Based on a list of differentially expressed genes, upstream regulators were predicted using Ingenuity Pathway Analysis. The results are sorted by adjusted p-value.  Figure 6—source data 3.Crtap knockout patellar tendons.The Wald test was used to generate p-values and log2 fold changes. Genes with an adjusted p-value<0.05 and absolute log2 fold change >1 were called significantly differentially expressed genes. This is a full list of all differentially expressed genes ordered by adjusted p-value.  Figure 6—source data 4.Crtap knockout patellar tendons.Based on a list of differentially expressed genes, upstream regulators were predicted using Ingenuity Pathway Analysis. The results are sorted by adjusted p-value.
+**Figure 6.:** DESeq2 was used to compare gene expression between wildtype and Crtap-/- Achilles and patellar tendon RNA samples, and genes with an adjusted p-value<0.05 and absolute log2 fold change >1 were considered as differentially expressed. (A) A bi-clustering heatmap of the top 30 differentially expressed genes between wildtype and Crtap-/- Achilles tendons sorted by adjusted p-value and plotted according to log2 transformed expression values. The Wald test was used to generate p-values and log2 fold changes. See Figure 6—source data 1 for a complete list of differentially regulated genes. (B) Significantly differentially expressed genes between Achilles tendons from wildtype and Crtap-/- mice were clustered by their gene ontology, and enrichment for gene ontology terms was tested using Fisher exact test. All gene ontology terms with an adjusted p-value<0.05 are plotted according to their -log10 adjusted p-value. (C) Select upstream regulators predicted as being activated (shown in green), inhibited (shown in red), or of unclear state (shown in gray) in Crtap-/- compared to wildtype Achilles tendons plotted according to their -log10 adjusted p-value. See Figure 6—source data 2 for a complete list of predicted upstream regulators. n = 3 mice per genotype for (A–C). (D) A bi-clustering heatmap of the top 30 differentially expressed genes between wildtype and Crtap-/- patellar tendons sorted by adjusted p-value and plotted according to log2 transformed expression values. The Wald test was used to generate p-values and log2 fold changes. See Figure 6—source data 3 for a complete list of differentially regulated genes. (E) Significantly differentially expressed genes between patellar tendons from wildtype and Crtap-/- mice were clustered by their gene ontology, and enrichment for gene ontology terms was tested using Fisher exact test. All gene ontology terms with an adjusted p-value<0.05 are plotted according to their -log10 adjusted p-value. (F) Select upstream regulators predicted as being activated (shown in green), inhibited (shown in red), or of unclear state (shown in gray) in Crtap-/- compared to wildtype patellar tendons plotted according to -log10 adjusted p-value. See Figure 6—source data 4 for a complete list of predicted upstream regulators. n = 2 mice per genotype for (D–F).
 
 In keeping with the increased phenotypic severity seen in patellar tendons from Crtap-/- mice, a greater number of total genes were differentially expressed between wildtype and Crtap-/- patellar tendons (Figure 6D). We saw significant differential expression of 519 genes, with 224 being upregulated and 295 downregulated in Crtap-/- compared to wildtype. Several of the top 30 differentially expressed genes were minor collagens such as type IX collagen α3 chain (Col9a3), type IX collagen α1 chain (Col9a1), and type XXII collagen α1 chain (Col22a1), as well as other ECM proteins, including lumican (Lum) and fibronectin 1 (Fn1). Unlike the Achilles tendon, gene ontology analysis revealed significant enrichment for metabolic processes, including ‘GO:0055114 – Oxidation-Reduction Process’, ‘GO:0050873 – Brown Fat Cell Differentiation’, and ‘GO:0050872 – White Fat Cell Differentiation’ as well as for ‘GO:0008284 – Positive Regulation of Proliferation’ and ‘GO:0001525 – Angiogenesis’ (Figure 6E). Examination of upstream regulators also suggested a highly significant activation of TNF and interleukin 6 (IL-6) as well as fibroblast growth factor 2 (FGF2) and TGF-β3 in Crtap-/- patellar tendons (Figure 6F). Indeed, the representation of TNF, TGF-β, and PDGF-BB in this dataset is consistent with but more severe than that observed for those same regulators in the Achilles tendon results (Figure 6C).
 
@@ -98,21 +98,21 @@ We next examined the expression patterns of genes that are implicated in postnat
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig7-v2.jpg)
 
-**Figure 7.:** Crtap Achilles tendons at 1 month.-/-Real-time quantitative PCR was performed to examine changes in the expression of Crtap, various fibrillar collagens (i.e., Col1a1, Col1a2, Col2a1, Col3a1, Col9a2), tendon makers (i.e. Scx, Mkx, Egr1, Tnc, Lum, Tnmd, Fn1, Fbn1), other targets from the RNA-seq analysis in Figure 6 (i.e., Thbs3), and CD31 as a marker of vascularization. n = 4 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. The log2 fold change and adjusted p-value (shown as log2 fold change; adjusted p-value") from the RNA-seq experiment in Figure 6 is indicated in red just below the gene name.
+**Figure 7.:** Real-time quantitative PCR was performed to examine changes in the expression of Crtap, various fibrillar collagens (i.e., Col1a1, Col1a2, Col2a1, Col3a1, Col9a2), tendon makers (i.e. Scx, Mkx, Egr1, Tnc, Lum, Tnmd, Fn1, Fbn1), other targets from the RNA-seq analysis in Figure 6 (i.e., Thbs3), and CD31 as a marker of vascularization. n = 4 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported. The log2 fold change and adjusted p-value (shown as log2 fold change; adjusted p-value") from the RNA-seq experiment in Figure 6 is indicated in red just below the gene name.
 
 To investigate whether loss of CRTAP was associated with increased ECM remodeling at skeletal maturity, we performed a series of immunohistochemistry experiments at 4 months-of-age (Figure 8). Interestingly, Herovici staining revealed an abundance of immature collagen in patellar tendons from Crtap-/- mice compared to wildtype, as evidenced by the prominent blue staining (Figure 8A,B). We also observed increased α smooth muscle actin (αSMA; Figure 8C,D) and MMP2 (Figure 8E,F) together with elevated levels of phosphorylated nuclear factor kappa B (NFκB; Figure 8G,H), consistent with our RNA-seq data and our hypothesis that Crtap-/- tendons exist in a state of increased remodeling/repair and inflammation.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig8-v2.jpg)
 
-**Figure 8.:** Crtap patellar tendons exhibit increased staining for markers of fibrosis, increased ECM turnover, and inflammatory events.-/-(A–B) Representative herovici-stained images of 4-month patellar tendons. (C–D) Representative αSMA IHC images of 4-month patellar tendons. (E–F) Representative MMP2 IHC images of 4-month patellar tendons. (G–H) Representative phosphorylated NFκB (pNFκB) IHC images of 4-month patellar tendons. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 3–5 mice per group. Scale bar is 0.5 mm.
+**Figure 8.:** (A–B) Representative herovici-stained images of 4-month patellar tendons. (C–D) Representative αSMA IHC images of 4-month patellar tendons. (E–F) Representative MMP2 IHC images of 4-month patellar tendons. (G–H) Representative phosphorylated NFκB (pNFκB) IHC images of 4-month patellar tendons. For all micrographs, higher magnification images of the mid-tendon are illustrated. n = 3–5 mice per group. Scale bar is 0.5 mm.
 
-## Loss of CRTAP leads to deficiencies in motor activity, coordination, and strength
+### Loss of CRTAP leads to deficiencies in motor activity, coordination, and strength
 
 Based on the observed defects in Crtap-/- tendons, we performed a series of behavioral assays at 4 months-of-age to assess motor phenotypes. Using the open-field assay to quantify changes in spontaneous motor activity, we observed that Crtap-/- mice displayed significant reductions in both horizontal and vertical activity compared to heterozygous and wildtype mice (Figure 9A–B). We next examined changes in motor coordination and endurance using the rotarod assay. While no genotype-dependent differences were observed during the learning phase of the assessment (Trials 1–5), Crtap-/- displayed a reduction in latency to fall for Trials 6, 9–10 compared to wildtype and Trials 6, 8–10 compared to heterozygous mice (Figure 9C). To confirm this observation, we evaluated the mice using the grid foot slip assay – an alternative metric for motor coordination. In this regard, we found that Crtap-/- mice exhibited a modest increase in forelimb and hindlimb foot slips compared to heterozygous and wildtype mice (Figure 9D–E). Taken together, these findings indicate that Crtap-/- mice have deficiencies in motor activity and coordination compared to controls.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/63488/elife-63488-fig9-v2.jpg)
 
-**Figure 9.:** Crtap mice.-/-(A–B) Quantification of spontaneous motor activity including horizontal (A) and vertical (B) activity over a 30-min period using the open-field assay. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. For (A), data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. For (B), data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported for (A–B). (C) Quantification of motor activity, coordination, and endurance across 10 trials conducted over 2 days using an accelerating rotarod assay. Data are means ± S.D. n = 9–12 mice per group. Groups were compared using repeated-measures two-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported, with black p-values being compared to wildtype, and blue p-values being compared to heterozygous mice. (D–E) Quantification of forelimb (D) and hindlimb (E) motor coordination using the grid foot slip assay. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. Data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported. (F) Quantification of forelimb and hindlimb grip strength using the inverted grid assay conducted for 120 s. A reduction in latency to fall indicates reduced strength. Data are min-to-max box and whisker plots with individual points indicated. n = 8–9 mice per group. Data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported. (G) Quantification of forelimb grip strength in N of force measured over three trials and then averaged. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.
+**Figure 9.:** (A–B) Quantification of spontaneous motor activity including horizontal (A) and vertical (B) activity over a 30-min period using the open-field assay. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. For (A), data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. For (B), data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported for (A–B). (C) Quantification of motor activity, coordination, and endurance across 10 trials conducted over 2 days using an accelerating rotarod assay. Data are means ± S.D. n = 9–12 mice per group. Groups were compared using repeated-measures two-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported, with black p-values being compared to wildtype, and blue p-values being compared to heterozygous mice. (D–E) Quantification of forelimb (D) and hindlimb (E) motor coordination using the grid foot slip assay. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. Data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported. (F) Quantification of forelimb and hindlimb grip strength using the inverted grid assay conducted for 120 s. A reduction in latency to fall indicates reduced strength. Data are min-to-max box and whisker plots with individual points indicated. n = 8–9 mice per group. Data failed the Shapiro-Wilk test for normality, and groups were compared using Kruskal-Wallis with Dunn’s post-hoc tests. Exact p-values are reported. (G) Quantification of forelimb grip strength in N of force measured over three trials and then averaged. Data are min-to-max box and whisker plots with individual points indicated. n = 9–12 mice per group. Data passed the Shapiro-Wilk test for normality, and groups were compared using one-way ANOVA with Tukey’s post-hoc tests. Exact p-values are reported.
 
 We next evaluated strength in the Crtap-/- mice using the inverted grid and grip strength assays. Interestingly, we observed a decrease in the latency to fall during the inverted grid assay for Crtap-/- mice compared to heterozygous and wildtype controls (Figure 9F). Using a more quantitative metric, we examined these mice using the grip strength test and found that while wildtype and heterozygous mice could generate approximately 1.3 N of force, mice lacking CRTAP were weaker with a mean grip strength of 0.62 N (Figure 9G). Thus, Crtap-/- mice display significant reductions in strength together with perturbations in motor activity and coordination – behavioral changes that could be related in part to their tendon phenotype.
 
@@ -134,66 +134,272 @@ Taken together, this study provides the first evidence for load-bearing tendon p
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Crtaptm1Brle</td>
+      <td>B. H. Lee Laboratory</td>
+      <td>DOI: 10.1016/j.cell.2006.08.039</td>
+      <td>Deposited at Jackson Labs (B6; 129S7-Crtaptm1Brle/J; Stock #: 018831)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>129sv/EV</td>
+      <td>Dr. Allan Bradley</td>
+      <td>Baylor College of Medicine</td>
+      <td>Maintained in Lee Laboratory for many generations</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664 RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45- pacific blue (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: MCD4528 RRID:AB_10373710</td>
+      <td>FACS (1:100) Clone: 30-F11</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD31-eFluor 450 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat. #: 48-0311-82 RRID:AB_10598807</td>
+      <td>FACS (1:100) Clone: 390</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD146-PE-Cy7 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 134713 RRID:AB_2563108</td>
+      <td>FACS (1:100) Clone: ME-9F1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD200-APC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Cat. #: 123809 RRID:AB_10900996</td>
+      <td>FACS (1:100) Clone: OX-90</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-αSMA (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #: ab5694 RRID:AB_2223021</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MMP2 (goal polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat #: AF1488 RRID:AB_2145989</td>
+      <td>IHC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-NFκB p65 (Ser536) (93H1) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #: 3033 RRID:AB_331284</td>
+      <td>IHC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-SP-AffiniPure Donkey Anti-Rabbit IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 711-065-152 RRID:AB_2340593</td>
+      <td>IHC (1:100, 1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotin-SP-AffiniPure Donkey Anti-Goat IgG (H + L)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 705-065-147 RRID:AB_2340397</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase-Streptavidin Slides were incubated with DAB substrate (Vector Laboratories, SK-4100)</td>
+      <td>Jackson ImmunoResearch Labs</td>
+      <td>Cat #: 016-030-084 RRID:AB_2337238</td>
+      <td>IHC (1:100, 1:400, 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DAB Substrate Kit (3,3’-diaminobenzidine)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat #: SK-4100 RRID:AB_2336382</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: P4170-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy fibrous tissue mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #: 74704</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy micro kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #: 74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LightCycler FastStart DNA Master SYBR Green I</td>
+      <td>Roche</td>
+      <td>Cat. #: 12239264001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hexaammineruthenium(III) chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 262005–5G</td>
+      <td>0.7% w/v in phase-contrast µCT fixative, wash buffer, and post-fixative</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>Polysciences, Inc</td>
+      <td>Cat. #: 01909</td>
+      <td>2% v/v in phase-contrast µCT fixative</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cacodylic acid</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat. #: 12200</td>
+      <td>0.05 M in phase-contrast µCT fixative and wash buffer; 0.1 M for post-fixative</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat. #: 19190</td>
+      <td>1% w/v in phase-contrast µCT or TEM post-fixative</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>ImageJ</td>
+      <td>https://imagej.net/Fiji RRID:SCR_002285</td>
+      <td>Version 2.1.0/1.53 c</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://graphpad.com RRID:SCR_002798</td>
+      <td>Version 9.0.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tri/3D BON</td>
+      <td>Ratoc System Engineering</td>
+      <td>https://www.ratoc.co.jp/ENG/3diryo.html</td>
+      <td>Version R.8.00.008-H-64</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads RRID:SCR_008520</td>
+      <td>Version 10.7</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Crtap−/− mice were generated as previously described (Morello et al., 2006) and maintained on a mixed C57BL/6J and 129Sv genetic background. Male mice were used for all experiments. All studies were performed with approval from the Institutional Animal Care and Use Committee (IACUC) at Baylor College of Medicine. Mice were housed three to four mice to a cage in a pathogen-free environment with ad libitum access to food and water and under a 14 hr light/10 hr dark cycle.
 
-## Histological analysis
+### Histological analysis
 
 Mice were euthanized and ankle and knee joints were dissected and fixed for 48 hr on a shaker at 4°C or room temperature in freshly prepared 4% paraformaldehyde (PFA) in 1 × phosphate buffered saline (PBS). Samples were decalcified at 4°C using 10% ethylenediaminetetraacetic acid (EDTA) in 1 × PBS for 10 days (with one change out at 5 days) before paraffin embedding using a standard protocol. Samples were sectioned at 6 μm and stained with hematoxylin and eosin (H and E) to visualize tendon structures. Herovici staining was performed on separate sections to visualize the ratio of mature collagen (red color) to more immature collagen and reticular fibers (blue color). Using H and E-stained tissue sections, cell number per tissue area as well as tissue area were determined using the Fiji release of ImageJ (Schindelin et al., 2012). For the 1-month and 4-month time points, two to threeregions of interest were selected in one plane-matched tissue section for each animal and used for quantification. For postnatal day 10 (P10), a single region of interest was selected across three different sections for each animal owing to the smaller size of the tissue at this earlier time point. For cell density, the number of cells was then divided by the tissue area to determine cell density.
 
-## Fluorescence-activated cell sorting analysis of tendon progenitors
+### Fluorescence-activated cell sorting analysis of tendon progenitors
 
 After dissection of patellar tendons from 5-month-old wildtype and Crtap-/- mice, tissues were cut into small pieces in 1 × PBS with 10% fetal bovine serum (FBS) and incubated with 500 µl of PBS + 10% FBS and 0.1% collagenase at 37°C for 3 hr. After digestion, cells were filtered with a 40 μm strainer, washed, resuspended in 1 × PBS at a concentration of 106 cells/mL, and stained with CD45-pacific blue (clone: 30-F11), CD31-eFlour 450 (clone: 390), CD146-PE-Cy7 (clone ME-9F1) and CD200-APC (clone OX-90) (eBioscience). Propidium iodide was used for selecting viable cells. Cell analysis was performed using a LSRII Fortessa, and fluorescence-activated cell sorting (FACS) experiments were done using an AriaII cytometer (BD Biosciences, San Jose, CA). Data were analyzed with FlowJo software (TreeStar, OR).
 
-## Phase-contrast μCT imaging and analysis
+### Phase-contrast μCT imaging and analysis
 
 To quantify tendon and articular cartilage volume, knee joints were dissected from mice, stained with contrast agents, and scanned by phase-contrast μCT. The articular cartilage volume and surface were analyzed using TriBON software (RATOC, Tokyo, Japan) as previously described (Nixon et al., 2018; Ruan et al., 2013a; Ruan et al., 2013b; Stone et al., 2019). Using this technique, we quantified the patellar tendon volume by examining knee joints in transverse where the patellar tendon boundary was easily distinguished from the joint capsule. Tendon volume was assessed from its origin within the patella to its insertion at the tibia.
 
-## Transmission electron microscopy analysis of collagen fibril size
+### Transmission electron microscopy analysis of collagen fibril size
 
 Mouse ankle and knee joints were dissected and fixed in fresh 1.5% glutaraldehyde/1.5% PFA (Tousimis) with 0.05% tannic acid (Sigma) in 1 × PBS at 4°C overnight to preserve the native tension on relevant tendons. The next day, flexor digitorum longus (FDL), Achilles, and patellar tendons were dissected out in 1 × PBS, and placed back into fixative. Samples were then post-fixed in 1% osmium tetroxide (OsO4), rinsed in Dulbecco’s Modified Eagle Medium (DMEM), and dehydrated in a graded series of ethanol to 100%. Samples were rinsed in propylene oxide, infiltrated in Spurrs epoxy, and polymerized at 70°C overnight. TEM images were acquired using an FEI G20 TEM at multiple magnifications to visualize transverse and longitudinal sections of collagen fibrils. Collagen fibril diameter was measured using the Fiji release of ImageJ (Schindelin et al., 2012).
 
-## Tendon biomechanical testing
+### Tendon biomechanical testing
 
 Biomechanical tests were performed in tension on a universal testing machine (Instron 5848 Microtester) using a 100N load cell. The tests were performed under displacement control, at a rate of 0.1 N/s, until failure. Data was collected at 40 Hz, and stiffness and ultimate loads were calculated from the load-displacement curve. Tendons were fixed in the machine using a modification of the clamping technique proposed by Probst and colleagues (Probst et al., 2000). The calcaneus was wedged into a conical slot created in a smooth plastic block, which was formed using a moldable plastic (InstaMorph) to ensure all edges were smooth and would not touch or damage the tendon. The origin of the tendon was affixed to the testing machine using a similar technique to that proposed by Probst. Testing was not performed in a water bath, but rather the tendons were kept moist with application of saline during each test, which lasted less than 60 s.
 
-## Tendon collagen cross-linking analysis
+### Tendon collagen cross-linking analysis
 
 Collagen hydroxylysyl-pyridinoline (HP) cross-links were quantiﬁed as previously described (Eyre, 1987; Hudson et al., 2018). In brief, tendons isolated from hindlimbs were hydrolyzed by 6M HCl for 24 hr at 108°C. Dried samples were then dissolved in 1% (v/v) n-heptafluorobutyric acid for quantitation of HP by reverse-phase HPLC with fluorescence monitoring.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 At 1 month-of-age, Achilles tendons were excised using scissors proximal to the calcaneal insertion and distal to the tendon-muscular-junction, whereas patellar tendon were removed via scalpel just proximal to the tibial insertion and distal to the patella. Tendons were not cleaned of their paratenon layers in either case. RNA extraction for both tissues was performed with the Fibrous Connective Tissue kit (Qiagen), with columns from the RNeasy Micro Kit (Qiagen) employed for the patellar tendon. Quality control, library preparation, sequencing, and differential gene expression analysis including gene ontology analysis was performed by GENEWIZ (South Plainfield, NJ). For the examination of predicted Upstream Regulators, we utilized the Ingenuity Pathway Analysis (IPA) platform (Qiagen) with an adjusted p-value of 0.05. The expression is shown as Base Means and read counts of genes were normalized per million transcripts (Transcripts Per Million; TPM).
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 At 1 month-of-age, Achilles tendons were excised from the calcaneus, immediately distal to the tendon-muscular-junction. RNA was extracted using the Fibrous Connective Tissue kit (Qiagen). qRT-PCR was performed on the LightCycler 96 System (Roche) using gene-specific primers and FastStart SYBR Green I (Roche) following cDNA synthesis with iScript (Bio-Rad). The sequences of primers used were as follows: Crtap fwd: 5’-GCTCTTTGACCAGAGTGACAGG-3’; Crtap rev: 5’-TCCTTCTGGAGCGTCGTCACAT-3’; Col1a1 fwd: 5’-TTGGGGCAAGACAGTCATCGAAT −3’; Col1a1 rev: 5’-TTGGGGTGGAGGGAGTTTACACGAA-3’; Col1a2 fwd: 5’-AACCCATGAACATTCGCAC-3’; Col1a2 rev: 5’-AACTCTCATTGGGATGGTCTACAC-3’; Col2a1 fwd: 5’- GCTCATCCAGGGCTCCAATGATGTAG-3’; Col2a1 rev: 5’- CGGGAGGTCTTCTGTGATCGGTA-3’; Col3a1 fwd: 5’-GACCAAAAGGTGATGCTGGACAG-3’; Col3a1 rev: 5’-CAAGACCTCGTGCTCCAGTTAG-3’; Col9a2 fwd: 5’-CACCAGGCATTGATGGCAAGGA-3’; Col9a2 rev: 5’-AGGACCTCCTTTTGTTCCAGGC-3’; Tnc fwd: 5’-GAGACCTGACACGGAGTATGAG-3’; Tnc rev: 5’-CTCCAAGGTGATGCTGTTGTCTG-3’; Lum fwd: 5’-CCTTGGCATTAGTCGGTAGTGTCAGT-3’; Lum rev: 5’-CGATTTGGTTATTCCTCAGGTAAAG-3’; Tnmd fwd: 5’- CTTTACTAGGCTACTACCCATACCCCTACT-3’; Tnmd rev: 5’- ATATATTGGCTAACAGAAGGTTAAGCGTTT-3’; Fn1 fwd: 5’-CCCTATCTCTGATACCGTTGTCC-3’; Fn1 rev: 5’-TGCCGCAACTACTGTGATTCGG-3’; Fbn1 fwd: 5’-AGCCAGAACCTTCACATCATGGTACAAT-3’; Fbn1 rev: 5’- AGCACCAAACAGACAACAGAAACCTA-3’; Thbs3 fwd: 5’-GACCAGTGTGATGACGATGCTG-3’; Thbs3 rev: 5’-ACAGTTGTCGCAGGCATCACCA-3’; Scx fwd: 5’-AAGACGGCGATTCGAAGTTAGAAG-3’; Scx rev: 5’-TCTCTCTGTTCATAGGCCCTGCTCATAG-3’; Mkx fwd: 5’-CAAGGACAACCTCAGCCTGAGA-3’; Mkx rev: 5’-CGGTGCTTGTAAAGCCACTGCT-3’; Egr1 fwd: 5’-AGCGAACAACCCTATGAGCACC-3’; Egr1 rev: 5’- ATGGGAGGCAACCGAGTCGTTT-3’; CD31 fwd: 5’- CCAAAGCCAGTAGCATCATGGTC-3’; CD31 rev: 5’- GGATGGTGAAGTTGGCTACAGG-3’.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry was performed using anti-αSMA (Abcam, ab5694, 1:200), anti-MMP2 (R and D Systems, AF1488, 1:400), and anti-phospho-NFκB p65 (Ser536) (Cell Signaling (93H1), #3033, 1:20) antibodies. Briefly, slides of knee joints from 4 month wildtype and Crtap-/- mice were deparaffinized and treated with 3% hydrogen peroxide and proteinase K solution (20 mg/ml) for 10 min. Slides were blocked using 5% normal donkey serum and incubated for 1 hr. Primary antibodies were diluted in blocking solution and incubated overnight at 4°C. Slides were washed with PBS and incubated in anti-rabbit-biotin (Jackson Immunoresearch, 711-065-152, 1:400 for αSMA or 1:100 for phospho-NFκB) or anti-goat-biotin (Jackson Immunoresearch, 705-065-147, 1:500 for MMP2) for 1 hr. Following PBS wash, slides were incubated in streptavidin-HRP (Jackson Immunoresearch, 016-030-084, 1:400–500 for αSMA and MMP2 or 1:100 for phosho-NFκB) for 30 min then washed with PBS. Slides were incubated with DAB substrate (Vector Laboratories, SK-4100) for approximately 2 min, counterstained with hematoxylin, then cleared and mounted with a coverslip.
 
-## Open-field assessment of spontaneous motor activity
+### Open-field assessment of spontaneous motor activity
 
 Open-field activity was measured using the VersaMax Animal Activity Monitoring System (AccuScan Instruments, Columbus, OH). On the day of assessment, mice were transferred to the test room and allowed to acclimate in their home cage for 30 min at 50 Lux of illumination with 60 dB of white noise. Mice were then placed individually into clear 40 cm ×40 cm × 30 cm chambers and allowed to move freely for 30 min. Locomotion parameters and zones were recorded using the VersaMax activity monitoring software. Chambers were cleaned with 30–50% ethanol to remove the scent of previously tested mice between each run.
 
-## Rotarod analysis of motor coordination and endurance
+### Rotarod analysis of motor coordination and endurance
 
 On the day of assessment, mice were transferred to the test room and allowed to acclimate within their home cage for 30 min at 50 Lux of illumination with 60 dB of white noise. Mice were then placed on a rotarod (UGO Basile, Varese, Italy) set to accelerate from 5-to-40 RPM over 5 min. Five trials were performed per day for two consecutive days (trials 1–10) with a rest time of 5 min between trials. Latency to fall was recorded when the mouse fell from the rotating rod or went for two revolutions without regaining control. The rotarod was cleaned with 30–50% ethanol between mice to remove the scent of previously tested animals.
 
-## Grid foot slip analysis of motor coordination
+### Grid foot slip analysis of motor coordination
 
 The grid foot slip assay consisted of a wire grid set atop a stand where the movement was recorded by a suspended digital camera. Mice were transferred to the test room on the day of assessment and allowed to acclimate within their home cage for 30 min at 50 Lux of illumination with 60 dB of white noise. Mice were then placed one at a time on the grid and allowed to move freely for 5 min. The observer sat 6–8 feet away at eye-level to the mouse and recorded forelimb and hindlimb foot slips using the ANY-maze video tracking software (Stoelting Co., Wood Dale, IL). After the test, mice were removed to their original home cage. Forelimb and hindlimb foot slips were normalized to the total distance traveled during the test.
 
-## Inverted grid analysis of strength and endurance
+### Inverted grid analysis of strength and endurance
 
 On the day of assessment, mice were transferred to the test room and allowed to acclimate within their home cage for 30 min at 50 Lux of illumination with 60 dB of white noise. Mice were then placed in the middle of a wire grid, held approximately 18-in above a cushioned pad, and inverted. The latency to fall for each mouse was recorded. At the completion, mice were returned to their home cage.
 
-## Grip strength analysis
+### Grip strength analysis
 
 Mice were transferred to the test room on the day of assessment and allowed to acclimate within their home cage for 30 min at 50 Lux of illumination with 60 dB of white noise. Each mouse was then lifted by its tail onto the bar of a digital grip strength meter (Columbus Instruments, Columbus, OH). Once both forepaws had gripped the bar, the mouse was gently pulled away from the meter by its tail at a constant speed until the forepaws were released. The grip (in N of force) was recorded and the procedure repeated twice for a total of three measurements, which were averaged for the final result.
 
-## Statistical analysis
+### Statistical analysis
 
 Determination of sample size was based on previous publications. Biological replicates were defined as an individual mouse for each experiment. Respective tendons from the left and right hindlimbs were combined for TEM, collagen cross-linking, tendon progenitor, and RNA-seq analyses. Data are presented as means ± S.D. or min-to-max box and whisker plots with individual data points. For data whose residuals passed the Shapiro-Wilk test for normality, groups of two were compared using unpaired t-tests, and groups of three or more were compared using one-way ANOVA followed by Tukey’s post-hoc tests. For data whose residuals did not have a normal distribution, groups of two were compared using a Mann-Whitney test, and groups of three or more were compared using Kruskal-Wallis followed by Dunn’s post-hoc tests. For the Rotarod assay, where time was a variable, groups were compared using repeated measures two-way ANOVA followed by Tukey’s post-hoc tests. For all tests reported above, statistical analysis was performed using Prism 9.0.1 (GraphPad Software, La Jolla, CA). For all tests, the exact p-value is reported, and a p-value of <0.05 was considered statistically significant.

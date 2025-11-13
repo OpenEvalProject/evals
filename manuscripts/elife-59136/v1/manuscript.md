@@ -29,6 +29,73 @@ A preliminary evidence regarding the neurological complications due to the SARS-
 
 There is also a report of a COVID-19 patient with Parkinson’s Disease who presented with focal dysfunction of the left temporal lobe and altered mental status (Filatov et al., 2020). This raises the question whether pre-existing disorders of the nervous system may play a role in exacerbating the neurological aspect of the disease and may be a risk factor for increased pulmonary complications. On the other hand, it will also be interesting to know whether SARS-CoV-2 leads to an increase in the incidence of neurodegenerative disorders in the affected individuals in the future (De Felice, 2019). Nevertheless, hypoxic injury to the brain caused by respiratory failure in COVID-19 patients is of serious concern. In this context, hypoxic encephalopathy was reported in 20% of 113 deceased COVID-19 patients in China (Chen et al., 2020). Recently, a detailed study carried out by a multidisciplinary group from the National Hospital in London, examined data from SARS-CoV-2 positive patients who exhibited neurological problems. The clinical, radiological, laboratory and neuropathological findings of 43 qualifying patients were studied retrospectively by the team. The categories of neurological complications included encephalopathies (10/43), inflammatory CNS syndromes (12/43), ischaemic stroke (8/43), peripherical neurological disorders (8/43) and miscellaneous central disorders (5/43) (Paterson et al., 2020). This study makes available patients’ vignettes in these categories that document the progression of the neurological problem, clinical intervention and patient response. Thus, reports such as these, suggest that the SARS-CoV-2 may be capable of inflicting injury to the brain in different ways. In Table 1, a list of neurological symptoms observed has been presented.
 
+**Table 1.**
+ Neurological manifestations of SARS-CoV-2 infection.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neurological manifestations</th>
+      <th>Observations</th>
+      <th>Supportive neuro-diagnostic measures</th>
+      <th>Treatment</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stroke</td>
+      <td>Ischaemic stroke, deep vein thrombosis</td>
+      <td>MRI, ECG, EKG; blood test for coagulation factors, inflammatory markers</td>
+      <td>Antiplatelet, anticoagulant, tissue plasminogen activator, intravenous thrombolysis</td>
+      <td>Mao et al., 2020, Beyrouti et al., 2020, Zhou et al., 2020a, Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Seizure</td>
+      <td>Generalized seizures, convulsions, tonic-clonic seizures, status- epilepticus</td>
+      <td>MRI, CT scan, EEG; CSF for viral presence</td>
+      <td>Anti-epileptic medication Levetiracetam, Clonazepam and Valproate</td>
+      <td>Mao et al., 2020; Duong et al., 2020; Sohal and Mansur, 2020; Bernard-Valnet, 2020</td>
+    </tr>
+    <tr>
+      <td>Encephalopathy</td>
+      <td>Disorientation, confusion hallucinations, altered mental status, agitation, irritability, dissociated speech, lethargy</td>
+      <td>MRI, EEG; CSF for viral presence</td>
+      <td>Treatment for related problems such as seizures</td>
+      <td>Mao et al., 2020; Poyiadji et al., 2020; Duong et al., 2020; Yin et al., 2020; Helms et al., 2020,</td>
+    </tr>
+    <tr>
+      <td>Encephalitis/meningitis</td>
+      <td>Focal neurological defects, fever, headache, other neuropsychotic symptoms</td>
+      <td>MRI, EEG; CRP levels for inflammation; CSF for viral presence</td>
+      <td>Antivirals such as Acyclovir, Favipiravir, antibiotics such as Ceftriaxone, Vancomycin, and steroids</td>
+      <td>Mao et al., 2020; Bernard-Valnet, 2020; Chaumont et al., 2020; Hayashi et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Anosmia and ageusia</td>
+      <td>Reduction or loss of taste and smell, without nasal obstruction</td>
+      <td>Self diagnosis</td>
+      <td>Usually no treatment</td>
+      <td>Mao et al., 2020; Lechien, 2020; Hawthorn, 2018; Fotuhi et al., 2020; Galougahi et al., 2020; Spinato et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Brain haemorrhage</td>
+      <td>Intracranial blood loss, haemorrhagic rim enhancement in multiple parts of the brain</td>
+      <td>MRI, CT scan; CSF for viral presence</td>
+      <td>Intravenous immunoglobulin</td>
+      <td>Mao et al., 2020, Poyiadji et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Myalgia, partial paralysis and/or Guillain-Barré syndrome</td>
+      <td>Facial drooping, muscle weakness, diplegia/tetraplegia or hemiplegia; GBS-progressive, ascending, symmetrical flaccid limb paralysis, along with areflexia or hyporeflexia with or without cranial nerve involvement</td>
+      <td>MRI, CSF evaluation, CPK levels for muscle tissue damage, test for anti-ganglioside antibodies, nerve conduction studies for demyelinating neuropathy evaluation</td>
+      <td>Intravenous immunoglobulin, physiotherapy</td>
+      <td>Wang et al., 2020b; Toscano et al., 2020; Sedaghat and Karimi, 2020; Oxley et al., 2020; Zhou et al., 2020a; Zhao et al., 2020; Camdessanche et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Cerebrovascular disease and stroke
 
 COVID-19-related stroke is becoming an increasing cause of concern among clinicians, particularly for patients having comorbidities like obesity, diabetes, hypertension, and heart disease. In Tongji Hospital, Wuhan, 449 severe COVID-19 patients were recruited from among 1786 consecutive patients to study coagulopathy-associated stroke. The study used sepsis-induced coagulopathy (SIC) along with elevated D-dimer levels to show that administering heparin to severe COVID-19 patients resulted in better prognosis (Tang et al., 2020). In the study by Mao et al., 2020, acute cerebrovascular diseases was reported in 5.7% patients with severe infection. Another study with 219 COVID-19 patients found that 10 (4.6%) suffered from ischaemic stroke and 1 (0.5%) had developed intracerebral haemorrhage. The stroke patients also showed higher levels of inflammatory markers like C-Reactive Protein and D-dimer (Li et al., 2020). Elevated D-dimer levels (>1000 μL) were also reported in the study at National Hospital, London where six COVID-19 patients who suffered from ischaemic stroke presented with large vessel occlusion (Beyrouti et al., 2020). These patients also exhibited higher levels of ferritin and lactate dehydrogenase usually reported in severe cases. Although a causal relationship between COVID-19 and ischaemic stroke could not be confirmed because of competing conditions, the infection was linked to the prothrombic state conducive to stroke. Another retrospective study examined the radiological evidence of 4 patients and attributed the cerebrovascular accident to likely hypercoagulability; elevated D-dimer was also reported in these cases (Avula et al., 2020). Records of 3556 COVID-19 patients hospitalized in the New York metropolitan area were inducted in a retrospective study. Among these, the data from 32 patients having proven ischaemic stroke was analysed. This detailed study included categorization of study variables, ASCOD classification of stroke and statistical analyses. A majority of the strokes reported in this study were cryptogenic and correlated to acquired hypercoagulability (Yaghi et al., 2020). There have been numerous other reports of COVID-19-related strokes as well (Zhou et al., 2020a). However, it is still a matter of debate if these strokes are a direct cause of viral infection to the cerebrovascular system.

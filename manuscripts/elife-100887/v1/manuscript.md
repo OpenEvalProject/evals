@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/035adwg89 Department of Retroperitoneal Tumor Surgery, Peking University People’s Hospital Beijing China
-2. https://ror.org/03jxhcr96 Department of Retroperitoneal Tumor Surgery, Peking University International Hospital Beijing China
-3. https://ror.org/013xs5b60 Department of Gastroenterology, Beijing Friendship Hospital, Capital Medical University, State Key Laboratory for Digestive Health, National Clinical Research Center for Digestive Disease, Beijing Digestive Disease Center, Beijing Key Laboratory for Precancerous Lesion of Digestive Disease Beijing China
-4. https://ror.org/020dggs04 Department of Biomedical Sciences, Humanitas University Milan Italy
+1. Department of Retroperitoneal Tumor Surgery, Peking University People’s Hospital Beijing China ([ROR:035adwg89](https://ror.org/035adwg89))
+2. Department of Retroperitoneal Tumor Surgery, Peking University International Hospital Beijing China ([ROR:03jxhcr96](https://ror.org/03jxhcr96))
+3. Department of Gastroenterology, Beijing Friendship Hospital, Capital Medical University, State Key Laboratory for Digestive Health, National Clinical Research Center for Digestive Disease, Beijing Digestive Disease Center, Beijing Key Laboratory for Precancerous Lesion of Digestive Disease Beijing China ([ROR:013xs5b60](https://ror.org/013xs5b60))
+4. Department of Biomedical Sciences, Humanitas University Milan Italy ([ROR:020dggs04](https://ror.org/020dggs04))
 
 † Corresponding author
 
 ## Abstract
 
-Retroperitoneal liposarcoma (RPLS) is a critical malignant disease with various clinical outcomes. However, the molecular heterogeneity of RPLS was poorly elucidated, and few biomarkers were proposed to monitor its progression. RNA sequencing was performed on a training cohort of 88 RPLS patients to identify dysregulated genes and pathways using clusterProfiler. The GSVA algorithm was utilized to assess signaling pathway levels in each sample, and unsupervised clustering was employed to distinguish RPLS subtypes. Differentially expressed genes (DEGs) between RPLS subtypes were identified to construct a simplified dichotomous clustering via nonnegative matrix factorization. The feasibility of this classification was validated in a separate validation cohort (n=241) using immunohistochemistry (IHC) from the REtroperitoneal SArcoma Registry (RESAR). The study is registered with https://clinicaltrials.gov/ under number NCT03838718. Cell cycle, DNA damage and repair, and metabolism were identified as the most aberrant biological processes in RPLS, enabling the division of RPLS patients into two distinct subtypes with unique molecular signatures, tumor microenvironment, clinical features, and outcomes (overall survival [OS] and disease-free survival [DFS]). A simplified RPLS classification based on representative biomarkers (LEP and PTTG1) demonstrated high accuracy (area under the curve [AUC]>0.99), with patients classified as LEP+ and PTTG1-, showing lower aggressive pathological composition ratio and fewer surgery times, along with better OS (HR = 0.41, p<0.001) and DFS (HR = 0.60, p=0.005). Our study provided an ever-largest gene expression landscape of RPLS and established an IHC-based molecular classification that was clinically relevant and cost-effective for guiding treatment decisions. This work was supported by grants from the Beijing Municipal Science and Technology Project (Z191100006619081), National Natural Science Foundation of China (82073390), and Young Elite Scientists Sponsorship Program (2023QNRC001). The study sponsors had no role in the design and preparation of this manuscript. NCT03838718
+Background:Retroperitoneal liposarcoma (RPLS) is a critical malignant disease with various clinical outcomes. However, the molecular heterogeneity of RPLS was poorly elucidated, and few biomarkers were proposed to monitor its progression.Methods:RNA sequencing was performed on a training cohort of 88 RPLS patients to identify dysregulated genes and pathways using clusterProfiler. The GSVA algorithm was utilized to assess signaling pathway levels in each sample, and unsupervised clustering was employed to distinguish RPLS subtypes. Differentially expressed genes (DEGs) between RPLS subtypes were identified to construct a simplified dichotomous clustering via nonnegative matrix factorization. The feasibility of this classification was validated in a separate validation cohort (n=241) using immunohistochemistry (IHC) from the REtroperitoneal SArcoma Registry (RESAR). The study is registered with https://clinicaltrials.gov/ under number NCT03838718.Results:Cell cycle, DNA damage and repair, and metabolism were identified as the most aberrant biological processes in RPLS, enabling the division of RPLS patients into two distinct subtypes with unique molecular signatures, tumor microenvironment, clinical features, and outcomes (overall survival [OS] and disease-free survival [DFS]). A simplified RPLS classification based on representative biomarkers (LEP and PTTG1) demonstrated high accuracy (area under the curve [AUC]>0.99), with patients classified as LEP+ and PTTG1-, showing lower aggressive pathological composition ratio and fewer surgery times, along with better OS (HR = 0.41, p<0.001) and DFS (HR = 0.60, p=0.005).Conclusions:Our study provided an ever-largest gene expression landscape of RPLS and established an IHC-based molecular classification that was clinically relevant and cost-effective for guiding treatment decisions.Funding:This work was supported by grants from the Beijing Municipal Science and Technology Project (Z191100006619081), National Natural Science Foundation of China (82073390), and Young Elite Scientists Sponsorship Program (2023QNRC001). The study sponsors had no role in the design and preparation of this manuscript.Clinical trial number:NCT03838718
 
 ## Introduction
 
@@ -38,11 +38,11 @@ Here, we conducted a comprehensive investigation into the molecular characterist
 
 ## Materials and methods
 
-## Patients and tissue specimens
+### Patients and tissue specimens
 
 Patients who were diagnosed with RPLS amenable to surgical resection were eligible for the study. The RPLS histology was confirmed according to the WHO criteria done on biopsy or surgical specimen by a dedicated sarcoma pathologist. Exclusion criteria comprised age <18 years, severe psychiatric disorders impairing informed consent or study compliance, and inability to ensure adequate follow-up. Tumor specimens from 88 RPLS patients (training cohort 1, Supplementary file 1; training cohort 2, Supplementary file 2) and another cohort of 241 RPLS patients (validation cohort, Supplementary file 3) were obtained from our local hospital. These cohorts are sourced from REtroperitoneal SArcoma Registry (RESAR, NCT03838718). All the patients underwent curative resection from January 2015 to May 2019. RPLS tissue specimens were snap-frozen in liquid nitrogen within 1 hr and then stored in a –80°C refrigerator before use. Clinical information was collected from the medical records, and no patient had undergone previous chemotherapy or radiotherapy. Overall survival (OS) was defined as the interval between the latest surgery and death from tumors or between the latest surgery and the last observation taken for surviving patients. Disease-free survival (DFS) was defined as the interval between the latest surgery and diagnosis of relapse or death. Informed consent for surgical procedures and specimen collection was obtained from each patient. This study has been reported in line with the REMARK criteria (McShane et al., 2005). The data of the external validation cohort (GSE30929) was downloaded from GEO (https://www.ncbi.nlm.nih.gov/geo/).
 
-## RNA sequencing, primary data processing, and analysis
+### RNA sequencing, primary data processing, and analysis
 
 Total RNA was extracted from training cohort 1 (Supplementary file 4) and training cohort 2 (Supplementary file 2) using TRIzol Reagent (Invitrogen). RNA degradation and contamination were monitored with 1% agarose gel. RNA purity was checked by the NanoPhotometer spectrophotometer (IMPLEN, Los Angeles, CA, USA). RNA concentration was measured using the Qubit RNA Assay Kit with the Qubit 2.0 Fluorometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Agilent Bioanalyzer 2100 System (Agilent Technologies, CA, USA).
 
@@ -50,31 +50,31 @@ A total amount of 3–5 µg RNA per sample was used as input material for the RN
 
 FPKMs of mRNAs and noncoding RNAs in each sample were calculated by Cuffdiff (v2.1.1). FPKMs were calculated based on the length of the fragments and read counts mapped to this fragment. These sequencing data have been deposited at the Open Archive for Miscellaneous Data (OMIX) database of China National Center for Bioinformation (CNCB) under the accession number OMIX002786.
 
-## Identification of differential genes
+### Identification of differential genes
 
 Gene difference analysis was performed to determine the differential genes (differentially expressed genes [DEGs]). An adjusted false discovery rate (FDR)<0.05 and |log2FC|>0.585 were considered significant. This process was conducted with the R package ‘limma’.
 
-## Identification of prognostic genes
+### Identification of prognostic genes
 
 Cox univariate regression analysis was used to screen the prognostic genes of RPLS. Results of p<0.05 were considered significant. This process was conducted with the R package ‘survival’.
 
-## GSEA and immune infiltrate analysis
+### GSEA and immune infiltrate analysis
 
 Gene set enrichment analysis (GSEA) was performed in the tumor and normal groups to explore the biological signaling pathways. Pathway annotation files were downloaded from the MSigDB (https://www.gsea-msigdb.org/gsea/index.jsp) platform. This process was conducted by the GSEA R package to elucidate the representative HALLMARK and REACTOME pathways enriched in RPLS patients. Immunocyte infiltration (immune score and stromal score) was measured by the Estimation of STromal and Immune cells in Malignant Tumor tissues using Expression data (ESTIMATE) algorithm. This process was completed via the ‘estimate’ R package.
 
-## Functional annotation
+### Functional annotation
 
 Functional enrichment analyses were performed to elucidate the possible biological processes and signaling pathways of the prognostic genes. Gene Ontology (GO) and Kyoto Encyclopedia of Gene and Genomes (KEGG) analyses were conducted by the R package ‘clusterProfiler’, and the FDR<0.05 was considered significantly enriched.
 
-## Consensus clustering with t-SNE
+### Consensus clustering with t-SNE
 
 After evaluating the relative abundance level of related pathways, the Euclidean distance was calculated between any two samples and condensed into two-dimensional points using t-distributed stochastic neighbor embedding (t-SNE) (Guo et al., 2019a) and subsequently visualized automatically with the density-based spatial clustering of applications with noise (DBSCAN) algorithm. This consensus clustering was conducted with the R packages ‘Rtsne’ and ‘dbscan’.
 
-## Consensus clustering with NMF
+### Consensus clustering with NMF
 
 Nonnegative matrix factorization (NMF) was used to perform RPLS subtyping. Specifically, NMF was applied to gene expression matrix A which contained gene sets of major signaling pathways and prognostic genes. Matrix A was factorized into two nonnegative matrices W and H. Repeated factorization of matrix A was performed, and its outputs were aggregated to obtain consensus clustering of RPLS samples. The optimal number of subtypes was selected according to cophenetic, dispersion, and silhouette coefficients. This consensus clustering was conducted with the R package ‘NMF’.
 
-## Construction of machine learning models
+### Construction of machine learning models
 
 Machine learning models based on biomarkers were constructed by logistic regression (LR), support vector machine (SVM), and random forest (RF). These models were specifically tailored to analyze biomarker data in order to predict clinical outcomes in surgical patients.
 
@@ -82,13 +82,13 @@ LR is a statistical method that establishes a relationship between a set of inde
 
 The performance of these machine learning models was assessed using the area under the curve (AUC) metric. A higher AUC value indicates superior discriminatory power of the model in distinguishing different clinical outcomes. An AUC value closer to 1.0 signifies strong predictive capability, while 0.5 indicates no discriminatory ability at all. By evaluating the AUC values generated by LR, SVM, and RF models, clinicians can identify which algorithm yields the most reliable predictions based on biomarker profiles for surgical patients.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The protocol was performed as previously described (Li et al., 2022). In brief, the LEP and PTTG1 antibodies for IHC were purchased from Proteintech (Cat No: bs-0409R and bs-1881R). With deparaffinization for 15 min×3 in dimethylbenzene and routine hydration, the tissues were soaked in phosphate-buffered saline for 10 min and then performed high-pressure antigen retrieval (Tris-EDTA, pH = 9.0) for 2.5 min. After being treated with a 3% endogenous catalase blocker (ZSBIO, PV-6000) for 10 min, the tissues were incubated in goat serum (ZSBIO, ZLI-9022) for the blocking of nonspecific reaction and then incubated with primary antibody (LEP = 1:300 and PTTG1=1:300) at 4°C overnight. The next day, tissues were washed and incubated with goat anti-rabbit secondary antibody (ZSBIO, PV-9000) for 1 hr at room temperature, then washed and stained with DAB reagents (ZSBIO, ZLI-9018). Then, hematoxylin staining, 1% hydrochloric acid alcohol differentiation, ammonia water anti-blue, and neutral gum sealing.
 
 The IHC results were evaluated by pathologists, and the staining extent was scored as 0–100%. The intensity score was defined as negative, low-expression, medium-expression, and high-expression, which were documented as 0, 1, 2, and 3, respectively. The final scores were calculated by the formula: IHC score = Staining extent score × Staining intensity score.
 
-## Statistical methods
+### Statistical methods
 
 R software (v4.1.3) was used in this study. For quantitative variables, differences between the two groups and among multiple groups were analyzed by Wilcoxon’s test and one-way analysis of variance (ANOVA), respectively. For categorical variables, groups were compared by the use of a chi-square test. Survival curves were determined by the log-rank test. The clinicopathological features and levels of immune infiltration were conducted by Wilcoxon’s test. A difference of p<0.05 indicated statistical significance unless specified otherwise.
 
@@ -96,7 +96,250 @@ R software (v4.1.3) was used in this study. For quantitative variables, differen
 
 Baseline characteristics were shown in Table 1. Of 329 RPLS patients, 88 in training cohort and 241 in validation cohort. No statistically significant differences were found in the age, sex, pathology, surgery times, tumor size, and multilocation between the two cohorts (p>0.05). In validation cohort, the IHC scores of LEP and PTTG1 were 1.62 (0.820) and 0.830 (0.75), respectively.
 
-## Cell cycle, DNA damage and repair, and metabolism are dysregulated in RPLS
+**Table 1.**
+ Baseline characteristics of training cohort and validation cohort.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Training cohort (N=80)*</th>
+      <th>Validation cohort (N=241)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (years)</td>
+      <td>56.34 (11.14)†</td>
+      <td>55.11 (10.80) †</td>
+      <td>0.384</td>
+    </tr>
+    <tr>
+      <td>Sex</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>37 (46.25)</td>
+      <td>118 (48.96)</td>
+      <td rowspan="2">0.674</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>43 (53.75)</td>
+      <td>123 (51.04)</td>
+    </tr>
+    <tr>
+      <td>Pathology</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>WDLS</td>
+      <td>29 (36.25)</td>
+      <td>75 (31.12)</td>
+      <td rowspan="4">0.078</td>
+    </tr>
+    <tr>
+      <td>DDLS</td>
+      <td>48 (60.00)</td>
+      <td>144 (59.75)</td>
+    </tr>
+    <tr>
+      <td>MLS and PLS</td>
+      <td>3 (3.75)</td>
+      <td>5 (2.07)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>0 (0)</td>
+      <td>17 (7.06)</td>
+    </tr>
+    <tr>
+      <td>Surgery times ‡</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>0–1</td>
+      <td>50 (62.50)</td>
+      <td>143 (59.34)</td>
+      <td rowspan="4">0.834</td>
+    </tr>
+    <tr>
+      <td>2–3</td>
+      <td>21 (26.25)</td>
+      <td>73 (30.29)</td>
+    </tr>
+    <tr>
+      <td>4–7</td>
+      <td>9 (11.25)</td>
+      <td>24 (9.96)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>0 (0)</td>
+      <td>1 (0.41)</td>
+    </tr>
+    <tr>
+      <td>Tumor size</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>All</td>
+      <td>18.65 (8.70)†</td>
+      <td>16.90 (7.94)†</td>
+      <td>0.101</td>
+    </tr>
+    <tr>
+      <td>&lt;18 cm</td>
+      <td>40 (50.00)</td>
+      <td>135 (56.02)</td>
+      <td rowspan="3">0.095</td>
+    </tr>
+    <tr>
+      <td>&gt;18 cm</td>
+      <td>39 (48.75)</td>
+      <td>92 (38.17)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>1 (1.25)</td>
+      <td>14 (5.81)</td>
+    </tr>
+    <tr>
+      <td>Multilocation</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>52 (65.00)</td>
+      <td>153 (63.49)</td>
+      <td rowspan="3">0.081</td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>28 (35.00)</td>
+      <td>74 (30.71)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>0 (0)</td>
+      <td>14 (5.80)</td>
+    </tr>
+    <tr>
+      <td>MDM2 score</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>11 (13.75)</td>
+      <td>NA</td>
+      <td rowspan="6">NA</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>12 (15.00)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>39 (48.75)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>5 (6.25)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>9 (11.25)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>4 (5.00)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LEP score</td>
+      <td>NA</td>
+      <td>1.62 (0.82)†</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>LEP strength</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>NA</td>
+      <td>10 (4.15)</td>
+      <td rowspan="5">NA</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>NA</td>
+      <td>39 (16.18)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>NA</td>
+      <td>74 (30.71)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NA</td>
+      <td>115 (47.72)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>NA</td>
+      <td>3 (1.24)</td>
+    </tr>
+    <tr>
+      <td>PTTG1 score</td>
+      <td>NA</td>
+      <td>0.83 (0.75)†</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>PTTG1 strength</td>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>NA</td>
+      <td>38 (15.77)</td>
+      <td rowspan="5">NA</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>NA</td>
+      <td>100 (41.49)</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>NA</td>
+      <td>61 (25.31)</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NA</td>
+      <td>39 (16.18)</td>
+    </tr>
+    <tr>
+      <td>NR</td>
+      <td>NA</td>
+      <td>3 (1.25)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Clinical information missing in eight retroperitoneal liposarcoma (RPLS) patients (training cohort 2).†The data is shown as mean (SD); other data is shown as number (%).‡The definition of surgical times is the sum of current admission surgery and previous surgical resection DDLS, dedifferentiated liposarcoma; LEP, leptin; MDM2, mouse double minute 2; MLS, myxoid liposarcoma; NA, not applicable; NR, not reported; PLS, pleomorphic liposarcoma; PTTG1, pituitary tumor transforming gene 1; WDLS, well-differentiated liposarcoma._
+
+### Cell cycle, DNA damage and repair, and metabolism are dysregulated in RPLS
 
 To reveal the general molecular features of RPLS compared to noncancerous adipose tissues, we first recruited eight RPLS patients and collected paired tumor and normal tissues for DEG analysis. A total of 1354 DEGs, 554 upregulated and 800 downregulated, were identified (Figure 2A and B). To assess the underlying pathways of RPLS, GSEAs were performed for those DEGs. We found that proliferation-associated pathways, such as mitotic spindle, E2F target, G2/M checkpoint, and separation of sister chromatids, were mainly enriched in tumors, while metabolism-related pathways, such as bile acid metabolism, heme and fatty acid metabolism, and integration of energy metabolism, were enriched in normal controls (Figure 2C).
 
@@ -106,27 +349,59 @@ To reveal the general molecular features of RPLS compared to noncancerous adipos
 
 Then, we collected another 80 samples to investigate the molecular heterogeneity of RPLS. Gene expression profiles showed 918 and 3244 genes associated with OS and DFS, respectively. Among 497 candidate genes associated with both OS and DFS, 83 of them also overlapped with DEGs (Figure 2B). Functional annotation (GO, KEGG, and enrichWP) demonstrated that cell cycle, DNA damage and repair, and metabolism-related pathways were significantly enriched (Figure 2D), suggesting these signaling pathways were dysregulated in RPLS.
 
-## RPLS subgroups based on molecular features show different clinical outcomes
+### RPLS subgroups based on molecular features show different clinical outcomes
 
 To evaluate heterogeneous molecular clustering characteristics in RPLS, ssGSEA emerged as a widely adopted method for computing the enrichment level of specific biological signaling pathways for each sample based on gene expression data. This aids in gaining insights into the overall activity level of signaling pathways. Here, we scored each sample on the dysregulated pathways by ssGSEA and divided RPLS patients into two subgroups (Figure 3A). Subgroup 1 (G1) showed better OS and DFS compared to subgroup 2 (G2) (Figure 3B and C). G1 displayed elevated ssGSEA scores associated with metabolism, whereas G2 exhibited heightened ssGSEA scores linked to cell cycle and DNA damage and repair (Figure 3D). These features suggested that effective monitoring of the prognosis of RPLS patients can be achieved based on the activation status of specific pathways. We also evaluated the clinical features and immune infiltration levels of those samples. The results showed that G1 had a lower aggressive pathological composition ratio, MDM2 and Ki67 expression, larger tumor size, and higher tumor microenvironment (TME) level compared to G2 (Figure 3E, G, H; Figure 3—figure supplement 1A and B). Surgery times for G1 were also tended to decrease (Figure 3F). Taken together, the above results indicated that RPLS subgroups based on molecular features showed distinct clinical features and clinical outcomes.
 
-## A simplified RPLS classification strategy derived from RPLS G1/G2 subgroups
+![Figure 3.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig3-v1.jpg)
+
+**Figure 3.:** t-Distributed stochastic neighbor embedding (t-SNE) exhibited the subgroups (G1 and G2) of RPLS (A). Survival cures of overall survival (OS) (B) and disease-free survival (DFS) (C) in G1 and G2. The hierarchical clustering heatmap of dysregulated pathways in G1 and G2 (D). Histograms revealed the difference in pathological composition ratio (E), surgery times (F), and MDM2 (G) in G1 and G2. Violin plot of the microenvironmental scores in G1 and G2 (H).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The difference in Ki67 (A) and tumor size (B) in G1 and G2. Volcano plot of the differentially expressed genes (DEGs) (G1 vs G2) (C). Venn diagram showing shared genes between DEGs and prognostic genes (D). Bubble plot of the DEGs enrichment (E). Nonnegative matrix factorization (NMF) for a re-classification of training cohort 1 (F). t-Distributed stochastic neighbor embedding (t-SNE) exhibits the RPLS clusters (C1 and C2) (G).
+
+### A simplified RPLS classification strategy derived from RPLS G1/G2 subgroups
 
 To explore representative biomarkers for different RPLS subgroups, we performed a DEG analysis between G1 and G2. There were 1258 genes downregulated, among which 112 of them indicated good prognosis (protective genes). Correspondingly, 754 genes were upregulated, and 28 of them indicated poor prognosis (aggressive genes) (Figure 3—figure supplement 1C and D). Enrichment analysis suggested that those DEGs were also associated with cell cycle regulation and metabolism (Figure 3—figure supplement 1E), which was consistent with previous results (Figure 2C).
 
 To develop a simplified RPLS clustering based on DEGs, we adopted NMF and t-SNE for a reclassification of those patients. The results showed RPLS patients were also divided into two clusters (Figure 4A and Figure 3—figure supplement 1F and G). We then annotated the samples of two clusters by ssGSEA and found Cluster1 (C1) was related to metabolic processes, and Cluster2 (C2) was mainly related to the processes of cell cycle and DNA damage and repair (Figure 4—figure supplement 1A). Also, C1 showed better OS and DFS, lower pathological composition ratio and MDM2 expression, and fewer surgery times (Figure 4B–F). Lower Ki67 expression and larger tumor size were observed in C2 (Figure 4—figure supplement 1B and C). Interestingly, the biological annotations of the C1/C2 classification were greatly consistent with G1/G2. Therefore, a simplified RPLS classification strategy derived from RPLS subgroups was provisionally established.
 
-## Development of a dichotomous RPLS classification model
+![Figure 4.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig4-v1.jpg)
+
+**Figure 4.:** Nonnegative matrix factorization (NMF) for a reclassification of training cohort 1 (C1 and C2) (A). Survival cures of overall survival (OS) (B) and disease-free survival (DFS) (C) in C1 and C2. Histograms revealed the difference in pathological composition ratio (D), MDM2 (E), and surgery times (F) in C1 and C2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The hierarchical clustering heatmap of dysregulated pathways in C1 and C2 (A). The difference ofin Ki67 (B) and tumor size (C) in C1 and C2. The hierarchical clustering heatmap of dysregulated pathways in high- and low-risk groups (D). The difference ofin tumor size (E) and Ki67 (F) in high- and low-risk groups.
+
+### Development of a dichotomous RPLS classification model
 
 For NMF classification of RPLS patients, LEP and PTTG1 were identified as representative biomarkers of C1 and C2, respectively (Figure 5A). The selection criteria for identifying LEP and PTTG1 as biomarkers involved selecting prognostic genes that were highly expressed in C1 and C2, respectively, and achieved the highest AUC value in distinguishing the two RPLS groups. We aimed to replicate the RPLS classification of C1 and C2 by integrating these two biomarkers with the assistance of machine learning algorithms, and this two-gene panel achieved promising results (logistic, AUC = 0.995; SVM, AUC = 0.997; RF, AUC = 1.000; Figure 5B). Also, a linear negative correlation between LEP and PTTG1 expression was detected (Figure 5C). Considering the enhanced interpretability and generalization of linear models, we adopted the results of LR for subsequent analysis (risk values = 2.182 × PTTG1−2.204×LEP). The patients marked as high-risk (Cluster_H) exhibited worse OS and DFS than those marked as low-risk (Cluster_L) (Figure 5D and E). Dysregulated pathways, such as DNA repair and cell cycle regulation, were enriched in Cluster_H (Figure 5F; Figure 4—figure supplement 1D), and Cluster_H presented more aggressive pathological composition ratio, higher MDM2 levels, and marginally increased in surgery times than Cluster_L (Figure 5G–I). Similarly, the Cluster_H showed higher Ki67 levels and smaller tumor sizes (Figure 4—figure supplement 1E and F). Moreover, a Sankey diagram was drawn to show the correlation among G1/G2, C1/C2, and Cluster_L/H. Cluster_L/H was well matched to C1/C2 and G1/G2, suggesting LEP and PTTG1 were promising biomarkers for a dichotomous RPLS classification (Figure 5J). To ensure the broader applicability of LEP and PTTG1 as classification biomarkers, we performed an independent validation using an external liposarcoma cohort (GSE30929). This dataset was selected due to its relevance to RPLS (N=63, 45%) and the availability of distant recurrence-free survival (DRFS) outcomes, aligning with the clinical focus of our study. Applying our established LR, we found that the high-risk (V) group exhibited significantly worse DRFS compared to the low-risk (V) group (Figure 5—figure supplement 1A and B), and the high-risk group (V) demonstrated a higher proportion of high-grade histology (Figure 5—figure supplement 1C and D), consistent with our previous findings. These results validate the robustness and generalizability of our risk stratification model across distinct liposarcoma cohorts. The external dataset’s alignment with our findings underscores the potential of LEP and PTTG1 as reproducible biomarkers for prognosis and therapeutic stratification in liposarcoma.
 
-## Validation of the dichotomous RPLS classification in another 241 RPLS patients
+![Figure 5.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig5-v1.jpg)
+
+**Figure 5.:** Heatmap of biomarkers identified (LEP and PTTG1) in C1 and C2 (A). ROC curves of the machine learning models to identify C1 and C2 (B). Correlation between LEP and PTTG1 expression (C). Survival curves of overall survival (OS) (D) and disease-free survival (DFS) (E) in Cluster_C1 (low-risk) and Cluster_C2 (high-risk) groups. Gene set enrichment analysis (GSEA) of HALLMARK gene sets in Cluster_C1 and Cluster_C2 (F). Histograms revealed the difference in pathological composition ratio (G), MDM2 level (H), and surgery times (I) in Cluster_C1 and Cluster_C2. Sankey diagram indicated the correlation among G1/G2, C1/C2, and Cluster_C1/C2 (J).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Survival curve of distant recurrence-free survival (DRFS) in low-risk and high-risk groups (A). ROC curves of 1-, 3-, and 5-year DRFS in validation cohort (B). Histograms revealed the difference in pathological composition ratio in low-risk and high-risk groups (C). Pathological-type details of LPS ppatients (D).
+
+### Validation of the dichotomous RPLS classification in another 241 RPLS patients
 
 To validate LEP and PTTG1 as biomarkers for a dichotomous RPLS classification, we performed IHC staining of two biomarkers in validation cohort. The representative images of LEP and PTTG1 with different expression levels were shown in Figure 6A and B. The IHC scores were integrated with the previously fitted coefficients to evaluate the prognosis of RPLS patients (risk values = 2.182×PTTG1IHC-2.204×LEPIHC). The cutoff value of validation cohort is the median of the risk value. The high-risk group had worse OS and DFS (Figure 6C and D), along with more surgery times and more aggressive pathological composition ratio (Figure 7A and B), but the difference in tumor size was not observed between the two groups (Figure 7C). Then, we constructed visual nomograms for a precise survival prediction of RPLS patients by combining the risk score with clinical features. The predictive abilities of the 1-, 2-, and 3-year OS (Figure 7D–F) and DFS (Figure 7—figure supplement 1A–C) were 0.743–0.788. Together, we proposed a simple and clinically applicable molecular classification strategy for RPLS patients.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig6-v1.jpg)
 
 **Figure 6.:** Representative immunohistochemistry (IHC) staining images of LEP (A) and PTTG1 (B). Survival curves of overall survival (OS) (C) and disease-free survival (DFS) (D) in high-risk and low-risk groups.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig7-v1.jpg)
+
+**Figure 7.:** The difference in surgery times (A), pathological composition (B), and surgery times (C) in high-risk and low-risk groups. Nomograms for overall survival (OS) were developed in REASR cohort with four factors: sex, age, risk score, and differentiation (D). ROC curves of 1-, 2-, and 3-year OS in validation cohort (E). Calibration curves of predicting 1-, 2-, and 3-year OS in validation cohort (F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100887/elife-100887-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Nomograms for disease-free survival (DFS) were developed in REASR cohort with four factors: sex, age, risk score, and differentiation (A). ROC curves of 1-, 2-, and 3-year DFS in validation cohort (B). Calibration curves of predicting 1-, 2-, and 3-year DFS (C).
 
 ## Discussion
 
@@ -136,10 +411,10 @@ G2 had more aggressive molecular features and worse clinical outcomes compared t
 
 To facilitate the clinical application, we constructed a simplified RPLS molecular classification derived from the original cell cycle/metabolism subgroups. By the NMF algorithm, we identified LEP and PTTG1 as representative biomarkers for each subtype. A model based on IHC staining of LEP and PTTG1 successfully approximated the original dichotomous RPLS classification in biological features and survival outcomes. LEP is an important regulator of basal metabolism and food intake, which is considered a linkage between metabolism and the immune system (Jiménez-Cortegana et al., 2021). Although LEP-based targeting therapies have not yet been fully applied, LEP has already been identified as a potent metabolic reprogramming agent to support antitumor responses in aggressive melanomas (Waldman et al., 2020; de la Cruz-Merino et al., 2019; Rivadeneira et al., 2019). In addition, LEP improves the immunotherapeutic effects by regulating innate and adaptive immune responses via increasing the cytotoxicity of NK cells (Francisco et al., 2018), stimulating the proliferation of T/B cells (Francisco et al., 2018; Bernotiene et al., 2006), and activating DC cells (Hu et al., 2019). Those reported roles of LEP provided a good mechanism explanation on the features of metabolism pathway-enriched, better prognosis, and higher TME level of metabolism subgroup (LEP+). In contrast, PTTG1 acts as a regulator of sister chromatid separation during cell division under physiological conditions (Zou et al., 1999), which is closely linked to genetic instability, aneuploidy, tumor progression, invasion, and metastasis (Heaney et al., 2000; Ramaswamy et al., 2003; Kim et al., 2005; Yu et al., 2003; Teveroni et al., 2021; Romero et al., 2001). PTTG1 also regulates the cell cycle and the transactivation of growth factors as an initiator and promoter of tumorigenesis (Zou et al., 1999; Mora-Santos et al., 2013; McCabe et al., 2002; Ishikawa et al., 2001; Hamid et al., 2005). Overexpressing PTTG1 was correlated with worse prognosis in tumors, such as ovarian cancer (Parte et al., 2019), cervical cancer (Guo et al., 2019b), renal cell carcinoma (Tian et al., 2022), and colorectal cancer (Heaney et al., 2000). Therefore, the biological functions of PTTG1 provided a good mechanism explanation of the pathway-enriched cell cycle/DNA damage and repair-associated, worse prognosis, and more aggressive pathological composition ratio in the cell cycle subgroup (PTTG1+).
 
-## Conclusion
+### Conclusion
 
 Our study presented a comprehensive gene expression landscape of RPLS, revealing distinct molecular features. Through categorizing RPLS into metabolism and cell cycle subtypes and identifying key biomarkers LEP and PTTG1, we established a dichotomous classification system verified by IHC assays. This innovative approach enables precise guidance for surgeons in adjusting treatment strategies for patients with histologically favorable but prognostically challenging RPLS cases, thereby advancing the implementation of precision medicine in guiding surgical interventions for RPLS.
 
-## Data anonymization
+### Data anonymization
 
 All participant identifiers were replaced with unique IDs during data collection and analysis.

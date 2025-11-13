@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/024z2rq82 Institute for Experimental Psychology, Heinrich Heine University Düsseldorf Düsseldorf Germany
+1. Institute for Experimental Psychology, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
 
 † Corresponding author
 
@@ -45,7 +45,7 @@ In the present study, we directly investigated whether the precision of efferenc
 
 ## Results
 
-## Motor updating
+### Motor updating
 
 We investigated the influence of autistic traits on visual updating during saccadic eye movements using a classic double-step saccade task. This task relies on participants making two consecutive saccades to briefly presented targets. The accuracy of the second saccade serves as an indirect measure of how effectively the participant’s brain integrated the execution of the first saccade into their internal representation of visual space. Participants were divided into quartiles based on the severity of their autistic traits, as assessed by the autistic quotient (AQ) questionnaire (Baron-Cohen et al., 2001). We hypothesized that individuals with higher autistic traits would exhibit greater difficulty in visual updating compared to those with lower autistic traits. This would be reflected in reduced accuracy of their second saccades in the double-step task. Figure 2C illustrates examples from participants at the extremes of the autistic trait distribution (AQ = 3, in orange and AQ = 31, in magenta). As shown, both participants were instructed to make saccades to the locations indicated by two brief target appearances (T1 and T2), as quickly and accurately as possible, following the order of presentation. However, successful execution of the second saccade requires accurate internal compensation for the first saccade, without any visual references or feedback available during the saccade itself.
 
@@ -63,7 +63,7 @@ We then calculated the angle between the participants’ second saccade vector a
 
 Results on the double-step task suggest that although participants did not show an impairment in the first saccade execution, those with higher autistic traits reported difficulties in using extra-retinal information about the amplitude and direction of the motor vector of the first saccade, in order to update the spatial representation of the second target. Thus, they were less able to use the efference copy of the first saccade to construct a spatial representation of the second target location in generating an accurate saccade toward it.
 
-## Visual updating
+### Visual updating
 
 With a trans-saccadic localization task, we explored how autistic traits affect the integration of eye movements into visual perception. Participants were presented with stimuli before and after a single saccade, creating an illusion of apparent motion. We measured the perceived direction of this displacement, which is influenced by how well the participant’s brain accounts for the saccadic eye movement. We predicted that individuals with higher autistic traits would show a stronger bias in the perceived displacement direction, suggesting a less accurate integration of the eye movement into their visual perception.
 
@@ -121,33 +121,57 @@ In conclusion, our study underscores the critical role of efference copy in main
 
 ## Methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB code to process data</td>
+      <td>This paper and Mathworkshttps://mathworks.com</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Forty-two participants (31 females, mean age 23, SD = 4.19) took part to Experiment 1 (motor updating). Thirty-one of them (21 females, mean age 22.81, SD = 3.11) participated also in Experiment 2 (visual updating). Subjects were either German native speakers or English speakers with no neurological or psychiatric diseases. Participants either reported to have normal vision or they wore lenses during their acquisition. All participants were recruited through the Heinrich-Heine University Düsseldorf and received either course credit or payment of 10 euros per hour. The experimental procedure was approved by the local ethics committee of the Faculty of Mathematics and Natural Sciences of Heinrich-Heine-University, Düsseldorf (ethics approval number: PO01_2022_01). The research was in accordance with the Declaration of Helsinki and informed consent was obtained from all participants prior to the experiment.
 
-## Experimental materials and procedures
+### Experimental materials and procedures
 
 Stimuli were displayed on a 27-inch Acer XB272 LCD monitor driven by a Alienware pc (Aurora R7) with a 240-Hz refresh rate (frame duration 4.16 ms) and a resolution of 1920 × 1080 pixels. The experimental program was implemented in MATLAB 2016b (Mathworks, Natick, MA, USA) using Psychtoolbox (Kleiner et al., 2007). Eye movements and pupil diameters were recorded with the EyeLink 1000 system (SR Research Ltd, Mississauga, Ontario, Canada), which sampled eye positions at a rate of 1000 Hz. The head was sustained with a chin- and forehead-rest. For all participants, the left eye was recorded. Viewing was binocular. At the beginning of each session, the Eyelink was calibrated with the standard nine-point Eyelink procedure. The system detected the start and the end of a saccade when eye velocity exceeded or fell below 30°/s.
 
-## Experiment 1: motor updating
+### Experiment 1: motor updating
 
 A trial started with the presentation of a black fixation point (0.55 × 0.55°, FP) at the screen center. After 1000 ms plus a randomly chosen duration between 0 and 500 ms, the first saccade target ST1 (0.55 × 0.55°, black) appeared 10° to the right of the screen center (see Figure 2A), which remained visible for 64 ms. Upon extinction of ST1, ST2 appeared 10° upwards or downwards from ST1, and remained visible for another 64 ms. The position of ST2 was randomized across trials. ST2 and the fixation point were extinguished together, and these cued participants to start the saccade sequence: from the fixation point to ST1, and from ST1 to ST2. Participants completed 3 sessions of 100 trials each.
 
-## Experiment 2: visual updating
+### Experiment 2: visual updating
 
 The trial sequence is shown in Figures 3B and 4A. A trial started with the presentation of a fixation point (black square FP, 0.55° × 0.55°) 5° to the left of the screen center. The fixation point stayed on for 1000 ms plus a randomly chosen duration between 0 and 500 ms. At a random time within the fixation point presentation time, the first stimulus was presented (Bottom Dot, BD). After disappearance of the first fixation point, participants were instructed to saccade to the second fixation point (black square FP, 0.55° × 0.55°) 5° to the right of the screen center (total saccade size 10°). At saccade completion, a second stimulus was delivered (Top Dot, TD). The stimuli consisted of two red dots (1.5° diameter), each flashed for one monitor frame with at least a temporal separation of 300 ms on average (see Figure 4C for distribution of saccade offset and second stimulus onset). The first dot could appear randomly above or below gaze level at a fixed horizontal location, halfway between the two fixations (x = 0, y = −5° or +5° depending on the trial). The second dot was then shown orthogonal to the first one at a variable horizontal location (x = 0° ± 2.5°). The stimulus was perceived as a single dot moving downward or upward (depending on the position of the first dot) with a near-vertical trajectory, that is orthogonal to the direction of saccades. Participants completed 3 sessions of 110 trials each.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Experiment 1
+#### Experiment 1
 
 In the analysis of eye movement data in Experiment 1 we excluded trials if: (1) participants did not perform a saccade or they blinked during the execution of the saccade; (2) participants started the saccade sequence before the extinction of the fixation point; (3) the amplitude of the first saccade was smaller than half of the required distance, that is <5°; (4) the vertical amplitude of the second saccade was smaller than 5°; (5) participants deviated more than 2.5° on the horizontal or vertical dimension when fixating; (6) the latency of the first saccade was <100 ms. Saccade amplitudes were averaged into 10 separate bins of ~30 trials each for first, and second saccades that passed the selection criteria. These criteria were applied to ensure that both saccades were large enough to reveal a putative deviation of the second saccade. If, for instance, the executed first saccade is much smaller than the required distance, the efference copy should signal a smaller amplitude, thus leading to smaller influences on the direction of the second saccade. We tested our hypothesis concerning impaired use of efference copy information in high autism phenotype by analyzing the direction of the second saccade. Specifically, we determined how far the second saccade deviated from the optimal vector that would have directed the gaze onto the target. We calculated the angle between the second saccade vector and the optimal vector connecting the starting position of the second saccade and the second saccade target (see Figure 2B). These angles were computed separately for upward and downward saccades, but since they resulted in very similar values, we collapsed the data into upward angles only.
 
-## Experiment 2
+#### Experiment 2
 
 We only analyzed trials where the saccade was performed between the presentation of the two dots (first dot at least 60 ms before the saccade, second dot after its completion), therefore, in retinotopic coordinates, the two dots were always displaced horizontally by about 10°. That is when the dots were presented on the screen, they appeared at a different location on the retina, horizontally separated by an angle of approximatively 10° (see also Figure 4B). In other words, each dot was perceived on the retina at a slightly different position in the visual field, due to horizontal displacement. That subjects perceived the dots displaced along a nearly vertical trajectory, indicates that the retinotopic displacement is largely compensated, ensuring spatial stability. However, small biases of reported direction can indicate relative failures in this stabilization process. To estimate biases in trans-saccadic updating, we varied the location of the second dot with the method of constant stimuli and asked subjects to report in 2AFC whether the second dot was more slanted to the right or to the left compared to the first one. Data were analyzed as psychometric functions, plotting the proportion of ‘rightward’ judgments as function of the position of the second dot relative to the first one. Distributions were fitted with cumulative Gaussian functions; the median of the curve estimated the PSE, or the position of the second dot that led to vertical stimulus displacement. A negative bias (PSE <0) implies a bias toward seeing rightward displacement and a positive bias (PSE >0) implies a bias toward seeing leftward displacement (as in Figure 3B, dashed gray line). The former negative bias can be interpreted as an under-compensation of the saccade vector. Moreover, a trial was discarded if: (1) participants did not perform a saccade or they blinked during the execution of the saccade; (2) participants started the saccade before the extinction of the fixation point; (3) the amplitude was smaller than half of the required distance; (4) participants deviated more than 2.5° on the horizontal or vertical dimension when fixating.
 
-## Autistic quotient
+### Autistic quotient
 
 All participants completed the self-administered AQ questionnaire, in the German or English validated version (Ruzich et al., 2015; Freitag et al., 2007). This contains 50 items, grouped in five subscales: attention switching, attention to detail, imagination, communication, and social skills. For each question, participants read a statement and selected the degree to which the statement best described them: ‘strongly agree’, ‘slightly agree’, ‘slightly disagree’, and ‘strongly disagree’. The standard scoring described in the original paper was used: 1 when the participant’s response was characteristic of ASD (slightly or strongly), 0 otherwise. Total scores ranged between 0 and 50, with higher scores indicating higher degrees of autistic traits. All participants scored below 32, the threshold above which a clinical assessment is recommended (Baron-Cohen et al., 2001).
 

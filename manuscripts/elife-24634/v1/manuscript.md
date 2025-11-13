@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.24634.001 Cardiac β-myosin variants cause hypertrophic (HCM) or dilated (DCM) cardiomyopathy by disrupting sarcomere contraction and relaxation. The locations of variants on isolated myosin head structures predict contractility effects but not the prominent relaxation and energetic deficits that characterize HCM. During relaxation, pairs of myosins form interacting-heads motif (IHM) structures that with other sarcomere proteins establish an energy-saving, super-relaxed (SRX) state. Using a human β-cardiac myosin IHM quasi-atomic model, we defined interactions sites between adjacent myosin heads and associated protein partners, and then analyzed rare variants from 6112 HCM and 1315 DCM patients and 33,370 ExAC controls. HCM variants, 72% that changed electrostatic charges, disproportionately altered IHM interaction residues (expected 23%; HCM 54%, p=2.6×10 −19 ; DCM 26%, p=0.66; controls 20%, p=0.23). HCM variant locations predict impaired IHM formation and stability, and attenuation of the SRX state - accounting for altered contractility, reduced diastolic relaxation, and increased energy consumption, that fully characterizes HCM pathogenesis. DOI: http://dx.doi.org/10.7554/eLife.24634.001
+Cardiac β-myosin variants cause hypertrophic (HCM) or dilated (DCM) cardiomyopathy by disrupting sarcomere contraction and relaxation. The locations of variants on isolated myosin head structures predict contractility effects but not the prominent relaxation and energetic deficits that characterize HCM. During relaxation, pairs of myosins form interacting-heads motif (IHM) structures that with other sarcomere proteins establish an energy-saving, super-relaxed (SRX) state. Using a human β-cardiac myosin IHM quasi-atomic model, we defined interactions sites between adjacent myosin heads and associated protein partners, and then analyzed rare variants from 6112 HCM and 1315 DCM patients and 33,370 ExAC controls. HCM variants, 72% that changed electrostatic charges, disproportionately altered IHM interaction residues (expected 23%; HCM 54%, p=2.6×10−19; DCM 26%, p=0.66; controls 20%, p=0.23). HCM variant locations predict impaired IHM formation and stability, and attenuation of the SRX state - accounting for altered contractility, reduced diastolic relaxation, and increased energy consumption, that fully characterizes HCM pathogenesis.
 
 ## Introduction
 
@@ -33,11 +33,11 @@ Myosin heads comprise a motor domain (MD) that hydrolyses ATP, a regulatory doma
 
 After contraction, myosin heads rebind ATP, detach from actin, and assume a relaxed pre-powerstroke state (Llinas et al., 2015). During relaxation, two myosin heads pack together to form an interacting-heads motif (IHM; [Woodhead et al., 2005]). Consecutive IHMs interact along helices that protrude from the thick filament backbone and limit potential interactions between myosin heads and actin (Alamo et al., 2008; Jung et al., 2008). The IHM forms only in relaxed muscle and is a highly conserved structure throughout the evolution of myosins among different species, in different muscle types (smooth, skeletal, and cardiac), and non-muscle myosins (Alamo et al., 2016).
 
-The IHM appears to form through key interactions (
+The IHM appears to form through key interactions (Figure 1A) involving the actin-binding region of one myosin head (denoted as ‘blocked’) and the converter region of the partner ‘free’ head (Woodhead et al., 2005; Alamo et al., 2008; Jung et al., 2008). IHM priming occurs when the blocked head assumes a pre-powerstroke state (Llinas et al., 2015) and docks onto its own S2 by intra-molecular interactions. IHM anchoring occurs by inter-molecular interactions between the docked, blocked head and the neighboring myosin’s tail, and intra-molecular interactions with its ELC. IHM stabilization occurs by intra-molecular interactions between the free myosin head and the anchored blocked head (Alamo et al., 2008; Brito et al., 2011; Alamo et al., 2016). IHM scaffolding interactions between myosin heads and both ELCs and RLCs further support its three-dimensional shape.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig1-v1.jpg)
 
-**Figure 1.:** Myosin interactions involved in IHM assembly and myosin motor domain (MD) functions that are altered by PVs and LPVs are depicted. (A) Relaxed healthy cardiac muscle contains myosin heads populations in the super-relaxed (SRX) state (left) with lowest ATP consumption and a disordered relaxed (DRX) state (right) with swaying free heads that generate force with higher ATP consumption. The population of cardiac myosins in SRX is more stable than in skeletal muscle (Hooijman et al., 2011 and see Material and methods) which supports physiologic contraction and relaxation, energy conservation, and normal cardiac morphology. (B) HCM myosin variants both alter residues involved in MD functions (causing increased biophysical power [Tyska et al., 2000]), and destabilize IHM interactions (particularly those with altered electrostatic charge). Reduced populations of myosins in the SRX state and increased populations of myosins in DRX as well as enhanced MD properties will result in increased contractility, decreased relaxation, and increased ATP consumption, the three major phenotypes observed in HCM hearts. Compensatory signals may promote ventricular hypertrophy. (C) MYH7 DCM variants have modest effects on IHM interactions but substantially reduce MD functions, particularly nucleotide binding, resulting in reduced ATP consumption and sarcomere power (Schmitt et al., 2006), with minimal impact on relaxation and overall diminished contractility. Compensatory signals result in ventricular dilatation to maintain circulatory demands in DCM hearts.DOI: http://dx.doi.org/10.7554/eLife.24634.002
+**Figure 1.:** Myosin interactions involved in IHM assembly and myosin motor domain (MD) functions that are altered by PVs and LPVs are depicted. (A) Relaxed healthy cardiac muscle contains myosin heads populations in the super-relaxed (SRX) state (left) with lowest ATP consumption and a disordered relaxed (DRX) state (right) with swaying free heads that generate force with higher ATP consumption. The population of cardiac myosins in SRX is more stable than in skeletal muscle (Hooijman et al., 2011 and see Material and methods) which supports physiologic contraction and relaxation, energy conservation, and normal cardiac morphology. (B) HCM myosin variants both alter residues involved in MD functions (causing increased biophysical power [Tyska et al., 2000]), and destabilize IHM interactions (particularly those with altered electrostatic charge). Reduced populations of myosins in the SRX state and increased populations of myosins in DRX as well as enhanced MD properties will result in increased contractility, decreased relaxation, and increased ATP consumption, the three major phenotypes observed in HCM hearts. Compensatory signals may promote ventricular hypertrophy. (C) MYH7 DCM variants have modest effects on IHM interactions but substantially reduce MD functions, particularly nucleotide binding, resulting in reduced ATP consumption and sarcomere power (Schmitt et al., 2006), with minimal impact on relaxation and overall diminished contractility. Compensatory signals result in ventricular dilatation to maintain circulatory demands in DCM hearts.
 
 The dynamic structure of the IHM (Brito et al., 2011) enables properties that are not observed in isolated S1 myosin fragments (Figure 1A): (i) reduced ATPase activity in blocked heads and intermittently in the free head; (ii) mobility of the free head, that sways forth and back by breaking and restoring stabilizing IHM interactions (Alamo et al., 2008; Brito et al., 2011; Sulbarán et al., 2013; Espinoza-Fonseca et al., 2015; Alamo et al., 2015; Yamaguchi et al., 2016; Alamo et al., 2016); and (iii) release of extra free heads upon activation and blocked heads for force potentiation (Brito et al., 2011). Consistent with these properties, negatively stained smooth muscle myosins show that free heads are flexible, detaching from their partner blocked heads and adopting different motor domain orientations (Burgess et al., 2007); that swaying free heads support the sliding of F-actin filaments along relaxed thick filaments (Brito et al., 2011); and that thick filament respond to calcium activation producing force immediately (Linari et al., 2015).
 
@@ -57,97 +57,2054 @@ Here we assessed the structural pathogenesis of HCM and DCM by comprehensive ana
 
 ## Results
 
-## Human β-cardiac myosin IHM quasi-atomic PDB 5TBY model to identify interaction sites
+### Human β-cardiac myosin IHM quasi-atomic PDB 5TBY model to identify interaction sites
 
-We modeled a homologous human β-cardiac myosin IHM structure (
+We modeled a homologous human β-cardiac myosin IHM structure (Figure 2A and Video 1; deposited as entry PDB 5TBY) based on the tarantula striated muscle IHM quasi-atomic cryo-EM structure (PDB 3JBH, Alamo et al., 2016; Materials and methods). Although resolution of the IHM structure as derived by cryo-EM does not define specific atomic contacts or individual side chain densities, this model nonetheless identifies molecular interactions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig2-v1.jpg)
 
-**Figure 2.:** (A) Quasi-atomic homologous model of human β-cardiac myosin interacting-heads motif (IHM) PDB 5TBY composed of blocked (BH) and free (FH) heads, fitted to the human cardiac thick filament 3D-map EMD-2240 (Al-Khayat et al., 2013). (Also see Video 1.) Domains and residue equivalence are provided in Supplementary file 1. Sarcomere proteins depicted are MHC (BH: gold, FH: olive), essential light chain (ELC associated with BH: brown, FH: purple), and regulatory light chain (RLC associated with BH: dark blue, FH: blue). The three negatively-charged rings in the S2 are labeled R1, R2 and R3. (B) Calculated small angle X-ray solution scattering (SAXS) profile of PDB 5TBY (red line) matches the experimental squid heavy meromyosin SAXS profile (green dots) (Gillilan et al., 2013). Integrated scattering intensity (I in arbitrary units) is given as a function of momentum transfer, q = 4π sin(θ)/λ, with a scattering angle of 2θ and a wavelength of λ. (C) Relative deviation between PDB 5TBY scattering and squid HMM (red line) is calculated as (Imodel-Iexp)/Iexp. The corresponding difference in scattering between PDB 5TBY and PDB 3JBH models is also shown on the same scale (black dashed line). Comparison shows that the models cannot be distinguished based on currently available scattering data (See Supplementary Figures).DOI: http://dx.doi.org/10.7554/eLife.24634.003
+**Figure 2.:** (A) Quasi-atomic homologous model of human β-cardiac myosin interacting-heads motif (IHM) PDB 5TBY composed of blocked (BH) and free (FH) heads, fitted to the human cardiac thick filament 3D-map EMD-2240 (Al-Khayat et al., 2013). (Also see Video 1.) Domains and residue equivalence are provided in Supplementary file 1. Sarcomere proteins depicted are MHC (BH: gold, FH: olive), essential light chain (ELC associated with BH: brown, FH: purple), and regulatory light chain (RLC associated with BH: dark blue, FH: blue). The three negatively-charged rings in the S2 are labeled R1, R2 and R3. (B) Calculated small angle X-ray solution scattering (SAXS) profile of PDB 5TBY (red line) matches the experimental squid heavy meromyosin SAXS profile (green dots) (Gillilan et al., 2013). Integrated scattering intensity (I in arbitrary units) is given as a function of momentum transfer, q = 4π sin(θ)/λ, with a scattering angle of 2θ and a wavelength of λ. (C) Relative deviation between PDB 5TBY scattering and squid HMM (red line) is calculated as (Imodel-Iexp)/Iexp. The corresponding difference in scattering between PDB 5TBY and PDB 3JBH models is also shown on the same scale (black dashed line). Comparison shows that the models cannot be distinguished based on currently available scattering data (See Supplementary Figures).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Gillilan et al., 2013).The comparison of model-based tarantula PDB 3JBH (blue dashed line) vs. human cardiac ventricular IHM PDB 5TBY (red line) scattering with measured squid HMM scattering profiles (green dots) in (A) shows that the models cannot be distinguished based on the scattering data that is currently available. Computations are performed using the FoXS algorithm (Schneidman-Duhovny et al., 2013) using the default parameters of hydration layer, excluded volume, and background adjustment (Gillilan et al., 2013). In the case of (A) the ‘profile offset’ optimization was performed to obtain best fit with the data at widest angles. The predicted scattering profiles are based on electron microscopy-derived striated tarantula muscle PDB 3JBH (Alamo et al., 2016) (blue dashed line) IHM models. Calculated wide-angle scattering data (B), computed without reference to the squid HMM profile, confirms that the models do not significantly differ in the wide angle X-ray solution scattering (WAXS) region.DOI: http://dx.doi.org/10.7554/eLife.24634.004
+**Figure 2—figure supplement 1.:** The comparison of model-based tarantula PDB 3JBH (blue dashed line) vs. human cardiac ventricular IHM PDB 5TBY (red line) scattering with measured squid HMM scattering profiles (green dots) in (A) shows that the models cannot be distinguished based on the scattering data that is currently available. Computations are performed using the FoXS algorithm (Schneidman-Duhovny et al., 2013) using the default parameters of hydration layer, excluded volume, and background adjustment (Gillilan et al., 2013). In the case of (A) the ‘profile offset’ optimization was performed to obtain best fit with the data at widest angles. The predicted scattering profiles are based on electron microscopy-derived striated tarantula muscle PDB 3JBH (Alamo et al., 2016) (blue dashed line) IHM models. Calculated wide-angle scattering data (B), computed without reference to the squid HMM profile, confirms that the models do not significantly differ in the wide angle X-ray solution scattering (WAXS) region.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Superimposed MDs of S1 from the PDB 5TBY antavd a S1 fragment of human β-cardiac myosin S1 crystal structure PDB 4DB1 (AMPPNP rigor-like structure) See Video 2. Color code: PDB 5TBY: Blocked head (gold), free head (FH) (olive); PDB 4DB1: blocked head (brown), free head (magenta). All chains are shown as wires with the interacting loops highlighted as ribbons. (B) Superimposed S2 from the PDB 5TBY (same color code as A) and the S2 of the human β-cardiac myosin S2 (pink) crystal structure PDB 2FXM (Blankenfeldt et al., 2006) See Video 3. (C) Free and blocked head structures of PDB 5TBY vs. PDB 1BR1 structures (See Video 4). The free and blocked head MDs of PDB 5TBY (same color code as A) fits well the pre-powerstroke PDB 1BR1 crystal structure (magenta). The ELC and RLC were removed to highlight their lever arms, which are in the same plane but have different angles.DOI: http://dx.doi.org/10.7554/eLife.24634.005
+**Figure 2—figure supplement 2.:** (A) Superimposed MDs of S1 from the PDB 5TBY antavd a S1 fragment of human β-cardiac myosin S1 crystal structure PDB 4DB1 (AMPPNP rigor-like structure) See Video 2. Color code: PDB 5TBY: Blocked head (gold), free head (FH) (olive); PDB 4DB1: blocked head (brown), free head (magenta). All chains are shown as wires with the interacting loops highlighted as ribbons. (B) Superimposed S2 from the PDB 5TBY (same color code as A) and the S2 of the human β-cardiac myosin S2 (pink) crystal structure PDB 2FXM (Blankenfeldt et al., 2006) See Video 3. (C) Free and blocked head structures of PDB 5TBY vs. PDB 1BR1 structures (See Video 4). The free and blocked head MDs of PDB 5TBY (same color code as A) fits well the pre-powerstroke PDB 1BR1 crystal structure (magenta). The ELC and RLC were removed to highlight their lever arms, which are in the same plane but have different angles.
 
-## Comparisons of the human β-cardiac myosin IHM quasi-atomic PDB 5TBY with existing models
+![Video 1.](https://cdn.elifesciences.org/articles/24634/elife-24634-media1.mp4.jpg)
+
+**Video 1.:** The PDB 5TBY IHM model is initially depicted as a ribbon structure that includes paired myosin heads (blocked head (BH), gold, free head (FH), olive), essential light chain (ELC associated with BH: brown, FH: purple), and regulatory light chain (RLC associated with BH: dark blue, FH: blue). The PDB 5TBY IHM model is then fitted into the human cardiac thick filament (3D-map EMD-2240; A(Al-Khayat et al., 2013) as detailed in Materials and methods. See legend of Figure 2A.
+
+#### Comparisons of the human β-cardiac myosin IHM quasi-atomic PDB 5TBY with existing models
 
 The new model fitted well to the 28 Å resolution 3D-reconstruction for the negatively stained human cardiac thick filament (EMD-2240)(Al-Khayat et al., 2013) (Figure 2A). In addition, the predicted SAXS profile of PDB 5TBY is consistent with X-ray solution scattering of squid HMM in Ca2+-free (EGTA) conditions (Figure 2B and Figure 2—figure supplement 1) and the computed scattering profile for the model closely agrees with the measured scattering profile of squid heavy meromyosin (HMM) (Gillilan et al., 2013). Figure 2C shows the residuals (relative deviation) between the squid HMM data and the computed 5TBY scattering profile over the range of scattering angles (red line). The χ goodness of fit parameters reported by the FoXS program are 1.5 for 3JBH and 1.85 for 5TBY respectively (Schneidman-Duhovny et al., 2013). Relative deviation between the 5TBY and 3JBH calculated scattering profiles (dashed line) falls below the noise level of the experimental data (red line) consequently the two models cannot be distinguished. Extending the computations to wider angles (q = 1.0 Å-1; see Figure 2B and Figure 2—figure supplement 1), revealed that the tarantula PDB 3JBH and the human models are essentially identical above q = 0.4 Å-1 and unlikely to be distinguished by future SAXS and wide angle X-ray solution scattering experiments in that regime. The SAXS data in this angle range provide support for the overall shape, placement, and orientation of IHM domains.
 
-The PDB 5TBY model also closely matches crystal structures of fragments for human β-cardiac S1 MD fragment (PDB 4DB1) (Figure 2—figure supplement 2A and Video 2) and S2 (PDB 2FXM)(Blankenfeldt et al., 2006) (Figure 2—figure supplement 2B and Video 3). Moreover, this model includes important myosin loops that improve the analyses of IHM interactions, and that are absent from the only other IHM model used for cardiac muscle (PDB 3DTP; Alamo et al., 2008). In the PDB 5TBY model, the blocked and free myosin heads are in the pre-powerstroke state (Xu et al., 2003; Zoghbi et al., 2004; Llinas et al., 2015) and bent at the ‘pliant region’ (Houdusse et al., 2000) (see Figure 2—figure supplement 2C and Video 4). The blocked head is in a pre-powerstroke state (Llinas et al., 2015) (similar to the Mg·ADP-AlF4, PDB 1BR1; [Liu et al., 2003; Alamo et al., 2008]) while the free head, which is also in a pre-powerstroke state, shows a less angled lever arm than the blocked head (see Figure 2—figure supplement 2C). In the absence of a human β-cardiac IHM crystal atomic structure, the homologous human β-cardiac myosin IHM model PDB 5TBY (Figure 2A and Video 1) provides a robust option for analyses of cardiomyopathy variants on IHM interactions.10.7554/eLife.24634.007Video 2.The motor domain (MD) of the PDB 5TBY model closely matches the crystal structure of a fragment for human β-cardiac S1 MD (PDB 4DB1).The movie shows superimposed MDs of S1s from the PDB 5TBY model and a S1 fragment of PDB 4DB1 (S1 bound to adenylylimidodiphosphate (AMPPNP), a nonhydrolysable analogue of ATP to induce a rigor-like structure, open conformation) as ribbons. The MDs of PDB 5TBY blocked and free heads are in gold and olive respectively while the corresponding fragments from PDB 4DB1 are in brown and magenta. See legend of Figure 2—figure supplement 2A.DOI: http://dx.doi.org/10.7554/eLife.24634.00710.7554/eLife.24634.008Video 3.The sub-fragment 2 (S2) of the PDB 5TBY IHM model closely matches the crystal structures of S2 for human β-cardiac (PDB 2FXM)(Blankenfeldt et al., 2006).The movie shows the two S2 strands as ribbons of PDB 5TBY in gold and olive (blocked and free heads, respectively) and 2FXM in pink. See legend of Figure 2—figure supplement 2B.DOI: http://dx.doi.org/10.7554/eLife.24634.00810.7554/eLife.24634.009Video 4.The PDB 5TBY IHM model shows that the blocked and free myosin heads are in the pre-powerstroke state (Zoghbi et al., 2004; Xu et al., 2003; Llinas et al., 2015) and bent at the ‘pliant region’ as defined by Houdusse et al. (2000).The movie shows the free and blocked head structures of PDB 5TBY IHM model as ribbons in gold and olive respectively, versus the pre-powerstroke state PDB 1BR1 crystal structure (magenta). The ELC and RLC were removed to highlight their lever arms, which are in the same plane but have different angles. See legend of Figure 2—figure supplement 2C.DOI: http://dx.doi.org/10.7554/eLife.24634.009
+The PDB 5TBY model also closely matches crystal structures of fragments for human β-cardiac S1 MD fragment (PDB 4DB1) (Figure 2—figure supplement 2A and Video 2) and S2 (PDB 2FXM)(Blankenfeldt et al., 2006) (Figure 2—figure supplement 2B and Video 3). Moreover, this model includes important myosin loops that improve the analyses of IHM interactions, and that are absent from the only other IHM model used for cardiac muscle (PDB 3DTP; Alamo et al., 2008). In the PDB 5TBY model, the blocked and free myosin heads are in the pre-powerstroke state (Xu et al., 2003; Zoghbi et al., 2004; Llinas et al., 2015) and bent at the ‘pliant region’ (Houdusse et al., 2000) (see Figure 2—figure supplement 2C and Video 4). The blocked head is in a pre-powerstroke state (Llinas et al., 2015) (similar to the Mg·ADP-AlF4, PDB 1BR1; [Liu et al., 2003; Alamo et al., 2008]) while the free head, which is also in a pre-powerstroke state, shows a less angled lever arm than the blocked head (see Figure 2—figure supplement 2C). In the absence of a human β-cardiac IHM crystal atomic structure, the homologous human β-cardiac myosin IHM model PDB 5TBY (Figure 2A and Video 1) provides a robust option for analyses of cardiomyopathy variants on IHM interactions.
 
-## Analyses of HCM and DCM variants
+![Video 2.](https://cdn.elifesciences.org/articles/24634/elife-24634-media2.mp4.jpg)
 
-All sarcomere PVs and LPVs previously identified in 6112 HCM and 1315 DCM cases (Walsh et al., 2017) were analyzed. Among HCM cases, 40 MYH7 PVs substituted 39 distinct aa (two distinct variants encoded an identical substitution) at 33 positions and 95 LPVs led to 95 substitutions at 87 sites (Tables 1 and 2). Thirty-eight PVs altered S1 and S2 residues, and two altered LMM residues. Four further HCM PVs occurred in ELC (n = 2) or RLC (n = 2). Among DCM cases, one MYH7 PV and 26 LPVs altered 26 distinct aa residues (Table 3). We considered how these variants impacted residues involved in motor domain functions (Supplementary file 1) and in pre-specified IHM interactions (Supplementary file 2).10.7554/eLife.24634.010Table 1.HCM pathogenic variants (PVs) causing 39 MYH7, 2 MYL2, and 2 MYL3 amino acid substitutions.DOI: http://dx.doi.org/10.7554/eLife.24634.010SubstitutionLocation*BH interaction*Type*FH interaction*Type*Δq†Motor Domain Function‡ MYH7Motor DomainY115HNear ATP Binding I+1E170KNear ATP-binding IId.1Stabilizing+2R249QNear ATP Binding III-2I263TNear ATP Binding IV0P307HNear ATP Binding IV+1R403W/G/L/QCM-Loopd.1Stabilizing-2Actin interface 1R442CNear ATP Binding Vd.1Stabilizing-2R453CNear ATP Binding VgPrimingd.1Stabilizing-2E483KNear RelayjAnchoringd.2Stabilizing+2M515TRelayjAnchoringd.2Stabilizing0RelayV606MHelix-loop-helixeStabilizing0Actin interfaceR663HNear Loop 2f.2Priming-1M690TSH2 helix0I702NSH1 helix0G708ASH1 helix0G716RConverteriAnchoringd.2Stabilizing+2ConverterELC-MHCScaffoldingConverterR719W/QConverteri,Anchoringd.2Stabilizing-2ConverterELC-MHCScaffoldingConverterR723G/CConverteriAnchoringd.2Stabilizing-2ConverterELC-MHCScaffoldingConverterI736TConverterjAnchoringd.2Stabilizing0ConverterELC-MHCScaffoldingConverterG741W / RConverterjAnchoringd.2Stabilizing0 / + 2ConverterELC-MHCScaffoldingConverterK762RConverterjAnchoringd.2Stabilizing+1ConverterELC-MHCScaffoldingConverterK766QConverterd.2Stabilizing-1ConverterRegulatory DomainA797TNeck-ELC interfaceELC-MHCScaffoldingELC-MHCScaffolding0F834LHead-tail junctionRLC-MHCScaffoldingRLC-MHCScaffolding0S2S842NHead-tail junctionRLC-MHCScaffoldingRLC-MHCScaffolding0R870HKinkgPriminggPriming-1D906GRing1f.2Primingf.2Priming+1L908VRing1f.2Primingf.2Priming0L915PRing2aStabilizingaStabilizing0E924KRing2aStabilizingaStabilizing+2E930KRing2aStabilizingaStabilizing+2Light MeromyosinA1379TNear skip 2 residue0R1781CNear skip 4 residue-2 MYL3Essential Light ChainM149VChain FiAnchoringeStabilizing0ELC-MHCScaffoldingH155DChain FiAnchoringELC-MHCScaffolding-2ELC-MHCScaffoldingeStabilizing MYL2Regulatory Light ChainE22KNear S15RLC-RLCRegulatingRLC-RLCRegulating+2RLC-MHCScaffoldingRLC-MHCScaffoldingR58QChains B-C loopRLC-RLCRegulating-2RLC-MHCScaffoldingRLC-MHCScaffoldingAll PVs identified in 6112 HCM patients (Walsh et al., 2017) are shown. In MYH7 there are 40 PVs, leading to 39 distinct substitutions at 33 positions while in MYL2 and MYL3 there are four more pathogenic variants. HCM PVs located on the mesa are bolded.*Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the two LMM substitutions. RLC–RLC denotes interface region between regulatory light chains.†Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).‡Motor domain functions are ascribed only to variants within involved residues. RLC–RLC denotes interface region between regulatory light chains. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, anchoring = orange, stabilizing = pink, scaffolding = white, regulating = yellow.10.7554/eLife.24634.011Table 2.HCM likely pathogenic variants (LPVs) causing 95 MYH7 amino acid substitutions.DOI: http://dx.doi.org/10.7554/eLife.24634.011SubstitutionLocation*BH interaction*Type*FH interaction*Type*Δq‡Motor Domain Function§MYH7Motor DomainR17CSH3hAnchoring-2R143Q-2K146N-1R169G/K/SNear P-loopd.1Stabilizing−2/–1/−2Q193RNear P-loop+2A199VNear Loop 10R204CLoop 1-2Actin interfaceG214DLoop 1-1Actin interfaceN232HNear Switch 2+1D239NSwitch 1+1ATP-Binding IIIR243H†Switch 1-1ATP-Binding IIIF244CSwitch 10ATP-Binding IIIK246INear Switch 1-1F247LNear Switch 10I248TNear Switch 10G256ENear Switch 1-1I263MNear ATP-Binding IV0L267VNear ATP-Binding IV0Y283C0S291FNear I-loop0D309NI-loop+1MD-RLC interfaceI323NI-loop0MD-RLC interfaceE328GNear I-loop+1V338M0K351ENear C-loop-2G354SNear C-loop0E374VC-Loopd.2Stabilizing+1Actin interfaceA381DC-Loopd.2Stabilizing-1Actin interfaceY386CNear C-loopeStabilizing0V406MCM-loopd.1Stabilizing0Actin Interface IY410DCM-loopd.1Stabilizing-1Actin Interface IV411ICM-loopd.1Stabilizing0Actin Interface IL427M0T449SNear Switch 2gPrimingd.1Stabilizing0R453S/HNear Switch 2gPrimingd.1Stabilizing0/–1I457TNear Switch 20I478NNear Switch 20N479SNear Switch 20M493V/L/IRelayjAnchoringd.2Stabilizing0RelayE497G/DRelayjAnchoringd.2Stabilizing+1/0Relay1521TNear Relay0E536DH-loopf.2Priming0Actin Interface IIH576RLoop 3+1Actin Interface IIIG584RNear Loop 3+2V586ANear Loop 30R652GNear Loop 2f.2Priming-2K657QNear Loop 2f.2Priming-1R663CNear Loop 2f.2Priming-2R671CNear SH2 helix-2R694C/HSH2 helix−2/–1P710H/LConverter+1/0ConverterP731AConverterjAnchoring0ConverterELC-MHCScaffoldingG733EConverterjAnchoringd.2Stabilizing-1ConverterELC-MHCScaffoldingR739SConverterjAnchoringd.2Stabilizing-2ConverterELC-MHCScaffoldingK740NConverterjAnchoringd.2Stabilizing-1ConverterELC-MHCScaffoldingL749QConverterjAnchoring0ConverterELC-MHCScaffoldingF758CConverterjAnchoring0ConverterELC-MHCScaffoldingV763MConverterd.2Stabilizing0ConverterG768RConverter+2ConverterL781PPliantELC-MHCScaffoldingELC-MHCScaffolding0PivotR783HPliantELC-MHCScaffoldingELC-MHCScaffolding-1PivotRegulatory DomainR787CNeck-ELC interfaceELC-MHCScaffoldingELC-MHCScaffolding-2A797PNeck-ELC interfaceELC-MHCScaffoldingELC-MHCScaffolding0L811PNeck-ELC-RLC interfaceELC-MHC RLC-MHCScaffoldingRLC-MHCScaffolding0S2K847EHead-tail junction-2E848GHead-tail junction+1M849THead-tail junctionA850DHead-tail junction-1R858HgPriminggPriming-1E894GRing 1f.1Primingf.2Priming+1L898VRing 1f.1Primingf.2Priming0A901PRing 1f.1Primingf.2Priming0E903GRing 1f.1Primingf.2Priming+1Q914H+1D928NRing 2aStabilizingaStabilizing+1E929KRing 2aStabilizingaStabilizing+2E930QRing 2aStabilizingaStabilizing+1E949KRing 3+2E967K+2R1053Q-2Light MeromyosinE1356K+2R1382QNear skip 2 residue-2L1428S0R1606CNear skip 3 residue-2A1763T0R1781HNear skip 4 residue-1M1782VNear skip 4 residueAll LPVs identified in 6112 HCM patients (Walsh et al., 2017) are shown. In MYH7 there 95 LPVs, leading to 95 distinct amino acid substitutions at 87 positions.*Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the LMM variants. HCM LPVs located on the mesa are bolded.†R243H was identified in both HCM and DCM cohorts. RLC–RLC denotes interface region between regulatory light chains.‡Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).§Motor domain functions are ascribed only to variants within involved residues. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, anchoring = orange, stabilizing = pink, scaffolding = white.10.7554/eLife.24634.012Table 3.DCM pathogenic variants (PVs) and likely pathogenic variants (LPVs) causing 27 MYH7 amino acid substitutions.DOI: http://dx.doi.org/10.7554/eLife.24634.012SubstitutionLocation‡BH interaction‡Type‡FH interaction‡Type‡Δq§Motor Domain Function¶ MYH7Motor DomainG144VNear ATP Binding I0G178RATP-binding II (P-loop)+2ATP Binding IIG181RATP-binding II (P-loop)+2ATP Binding III201TNear 25/50 junction (Loop 1)0R243H†ATP-binding III (Switch 1)-1ATP Binding IIIG245EATP-binding III (Switch 1)-1ATP Binding IIII248FNear ATP-binding III0R369QC-Loop (Loop 4)d.2Stabilizing-2Actin interfaceD469YATP-binding V (Switch 2)+1ATP Binding VI524VNear H-Loopf.2Priming0E525KNear H-Loopf.2Priming+2I533VH-Loopf.2Priming0Actin interface IIR567HActin-interface III (Loop 3)-1Actin interface IIIN597KHelix-loop-helix+1Actin interfaceC672FNear SH2 Helix0R783PPliantELC-MHCScaffoldingELC-MHCScaffolding-2PivotS2R904C*/HRing1f.2Primingf.2Priming−2/–1E1152V+1Light MeromyosinR1193HNear skip 1 residue-1E1286K+2R1434C-2D1450N+1R1574W-2Q1794E-1E1801KNear skip 4 residue+2E1914K+2.All PVs and LPVs identified in 1315 DCM patients (Walsh et al., 2017) are shown. In MYH7 there are 27 DCM pathogenic and likely pathogenic variants, leading to 27 distinct substitutions at 26 residues. DCM LPVs located on the mesa are bolded.*R904C is the only DCM PV.†R243H was identified in both HCM and DCM cohorts. In this cohort, no variants in MYL2 or MYL3 caused DCM.‡Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the LMM variants.§Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).¶Motor domain functions are ascribed only to variants within involved residues. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, stabilizing = pink, scaffolding = white.
+**Video 2.:** The movie shows superimposed MDs of S1s from the PDB 5TBY model and a S1 fragment of PDB 4DB1 (S1 bound to adenylylimidodiphosphate (AMPPNP), a nonhydrolysable analogue of ATP to induce a rigor-like structure, open conformation) as ribbons. The MDs of PDB 5TBY blocked and free heads are in gold and olive respectively while the corresponding fragments from PDB 4DB1 are in brown and magenta. See legend of Figure 2—figure supplement 2A.
 
-## Variants altering functional Motor Domain residues
+![Video 3.](https://cdn.elifesciences.org/articles/24634/elife-24634-media3.mp4.jpg)
 
-We compared the distributions of MYH7 HCM and DCM variants at functional MD residues involved in the nucleotide-binding pocket (39 aa), actin binding (60 aa), converter (68 aa), or relay (27 aa), that together make up 10% of the myosin heavy chain (194 aa; Supplementary file 1). MYH7 variants were not distributed uniformly, but were over-represented at functional MD residues both in HCM (16/40 PVs (40%), 4-fold enrichment above 10% expected, p=6.14e-07; 23/95 LPVs (24%), p=5.11e-05; combined 39/135 (29%), p=7.9e-9; Tables 1, 2 and 4) and DCM (7/27 variants (26%), p=0.022; Tables 3 and 5). However these impacted distinct regions. HCM variants were enriched in residues of the converter (n = 21/135 (16%), expected 3.5%, p=1.25e-08; Supplementary file 3) while 5/27 DCM variants altered nucleotide-binding pocket residues (19%, expected 2.0%, p=0.00019; Supplementary file 4). This supports previous observations that HCM and DCM variants alter distinct functional motor domains (Debold et al., 2007; Spudich et al., 2016), leading to altered myocardial contraction (Figure 1).10.7554/eLife.24634.013Table 4.The distribution of HCM variants across IHM and MD functional residues.DOI: http://dx.doi.org/10.7554/eLife.24634.013Specified siteVariants within siteRateAmino acids within siteExpected rateRate ratioP-valueIHM Interactions (All)730.5414470.23102.347.95e-15Priming170.1261130.05842.162.64e-03Anchoring240.1781560.08062.212.11e-04Stabilizing480.3561890.09773.645.37e-16Scaffolding240.1781200.06202.872.97e-06MD Functional390.2891940.10002.897.87e-10The numbers of distinct pathogenic and likely pathogenic HCM variants (n = 135) affecting IHM interaction sites and motor domain (MD) functional residues are shown. Variant numbers are also tabulated separately for the four major IHM interactions: priming, anchoring, stabilizing and scaffolding. Note that a single variant may impact more than one interaction. The number of myosin amino acid residues (total protein length = 1935 residues) that compromise the IHM interaction sites or MD functions was used to determine the proportion of variants that would be expected to lie in the region of interest under the null (a uniform distribution), and the rates are compared with a binomial test. Full details of all variants are shown in Tables 1 and 2.10.7554/eLife.24634.014Table 5.The distribution of DCM variants across IHM and MD functional residues.DOI: http://dx.doi.org/10.7554/eLife.24634.014Specified siteVariants within siteRateAmino acids within siteExpected rateRate ratioP-valueIHM Interactions (All)70.2594470.23101.1200.6550Priming50.1851130.05843.1700.0186Anchoring00.0001560.08060.0000.1650Stabilizing10.0371890.09770.3790.5120Scaffolding10.0371200.06200.5971.0000MD Functional70.2592100.10902.3800.0222The numbers of distinct pathogenic and likely pathogenic DCM variants (n = 27) affecting IHM interactions and motor domain (MD) functional residues are shown. Variant numbers are also tabulated separately for the four major IHM interactions: priming, anchoring, stabilizing and scaffolding. Note that a single variant may impact more than one interaction. The number of myosin amino acid residues (total protein length = 1935 residues) that compromise the IHM interaction sites or MD functions was used to determine the proportion of variants that would be expected to lie in the region of interest under the null (a uniform distribution), and the rates are compared with a binomial test. Full details of all variants are shown in Table 3.
+**Video 3.:** The movie shows the two S2 strands as ribbons of PDB 5TBY in gold and olive (blocked and free heads, respectively) and 2FXM in pink. See legend of Figure 2—figure supplement 2B.
 
-## HCM variants altering IHM interactions
+![Video 4.](https://cdn.elifesciences.org/articles/24634/elife-24634-media4.mp4.jpg)
+
+**Video 4.:** The movie shows the free and blocked head structures of PDB 5TBY IHM model as ribbons in gold and olive respectively, versus the pre-powerstroke state PDB 1BR1 crystal structure (magenta). The ELC and RLC were removed to highlight their lever arms, which are in the same plane but have different angles. See legend of Figure 2—figure supplement 2C.
+
+### Analyses of HCM and DCM variants
+
+All sarcomere PVs and LPVs previously identified in 6112 HCM and 1315 DCM cases (Walsh et al., 2017) were analyzed. Among HCM cases, 40 MYH7 PVs substituted 39 distinct aa (two distinct variants encoded an identical substitution) at 33 positions and 95 LPVs led to 95 substitutions at 87 sites (Tables 1 and 2). Thirty-eight PVs altered S1 and S2 residues, and two altered LMM residues. Four further HCM PVs occurred in ELC (n = 2) or RLC (n = 2). Among DCM cases, one MYH7 PV and 26 LPVs altered 26 distinct aa residues (Table 3). We considered how these variants impacted residues involved in motor domain functions (Supplementary file 1) and in pre-specified IHM interactions (Supplementary file 2).
+
+**Table 1.**
+ HCM pathogenic variants (PVs) causing 39 MYH7, 2 MYL2, and 2 MYL3 amino acid substitutions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substitution</th>
+      <th>Location*</th>
+      <th>BH interaction*</th>
+      <th>Type*</th>
+      <th>FH interaction*</th>
+      <th>Type*</th>
+      <th>Δq†</th>
+      <th>Motor Domain Function‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH7</td>
+      <td>Motor Domain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y115H</td>
+      <td>Near ATP Binding I</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E170K</td>
+      <td>Near ATP-binding II</td>
+      <td></td>
+      <td></td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R249Q</td>
+      <td>Near ATP Binding III</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I263T</td>
+      <td>Near ATP Binding IV</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P307H</td>
+      <td>Near ATP Binding IV</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R403W/G/L/Q</td>
+      <td>CM-Loop</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td>Actin interface 1</td>
+    </tr>
+    <tr>
+      <td>R442C</td>
+      <td>Near ATP Binding V</td>
+      <td></td>
+      <td></td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R453C</td>
+      <td>Near ATP Binding V</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E483K</td>
+      <td>Near Relay</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M515T</td>
+      <td>Relay</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>0</td>
+      <td>Relay</td>
+    </tr>
+    <tr>
+      <td>V606M</td>
+      <td>Helix-loop-helix</td>
+      <td>e</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>R663H</td>
+      <td>Near Loop 2</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M690T</td>
+      <td>SH2 helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I702N</td>
+      <td>SH1 helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G708A</td>
+      <td>SH1 helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">G716R</td>
+      <td rowspan="2">Converter</td>
+      <td>i</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">+2</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R719W/Q</td>
+      <td rowspan="2">Converter</td>
+      <td>i,</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">-2</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R723G/C</td>
+      <td rowspan="2">Converter</td>
+      <td>i</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">-2</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">I736T</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">0</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G741W / R</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">0 / + 2</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">K762R</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">+1</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>K766Q</td>
+      <td>Converter</td>
+      <td></td>
+      <td></td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>-1</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Regulatory Domain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A797T</td>
+      <td>Neck-ELC interface</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F834L</td>
+      <td>Head-tail junction</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>S2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S842N</td>
+      <td>Head-tail junction</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R870H</td>
+      <td>Kink</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D906G</td>
+      <td>Ring1</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L908V</td>
+      <td>Ring1</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L915P</td>
+      <td>Ring2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E924K</td>
+      <td>Ring2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E930K</td>
+      <td>Ring2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Light Meromyosin</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A1379T</td>
+      <td>Near skip 2 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1781C</td>
+      <td>Near skip 4 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MYL3</td>
+      <td>Essential Light Chain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">M149V</td>
+      <td rowspan="2">Chain F</td>
+      <td>i</td>
+      <td>Anchoring</td>
+      <td>e</td>
+      <td>Stabilizing</td>
+      <td rowspan="2">0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">H155D</td>
+      <td rowspan="2">Chain F</td>
+      <td>i</td>
+      <td>Anchoring</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td rowspan="2">-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>e</td>
+      <td>Stabilizing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MYL2</td>
+      <td>Regulatory Light Chain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">E22K</td>
+      <td rowspan="2">Near S15</td>
+      <td>RLC-RLC</td>
+      <td>Regulating</td>
+      <td>RLC-RLC</td>
+      <td>Regulating</td>
+      <td rowspan="2">+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">R58Q</td>
+      <td rowspan="2">Chains B-C loop</td>
+      <td>RLC-RLC</td>
+      <td>Regulating</td>
+      <td></td>
+      <td></td>
+      <td rowspan="2">-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_All PVs identified in 6112 HCM patients (Walsh et al., 2017) are shown. In MYH7 there are 40 PVs, leading to 39 distinct substitutions at 33 positions while in MYL2 and MYL3 there are four more pathogenic variants. HCM PVs located on the mesa are bolded.*Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the two LMM substitutions. RLC–RLC denotes interface region between regulatory light chains.†Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).‡Motor domain functions are ascribed only to variants within involved residues. RLC–RLC denotes interface region between regulatory light chains. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, anchoring = orange, stabilizing = pink, scaffolding = white, regulating = yellow._
+
+**Table 2.**
+ HCM likely pathogenic variants (LPVs) causing 95 MYH7 amino acid substitutions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substitution</th>
+      <th>Location*</th>
+      <th>BH interaction*</th>
+      <th>Type*</th>
+      <th>FH interaction*</th>
+      <th>Type*</th>
+      <th>Δq‡</th>
+      <th>Motor Domain Function§</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH7</td>
+      <td>Motor Domain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R17C</td>
+      <td>SH3</td>
+      <td>h</td>
+      <td>Anchoring</td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R143Q</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K146N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R169G/K/S</td>
+      <td>Near P-loop</td>
+      <td></td>
+      <td></td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>−2/–1/−2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q193R</td>
+      <td>Near P-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A199V</td>
+      <td>Near Loop 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R204C</td>
+      <td>Loop 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>G214D</td>
+      <td>Loop 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>N232H</td>
+      <td>Near Switch 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D239N</td>
+      <td>Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>ATP-Binding III</td>
+    </tr>
+    <tr>
+      <td>R243H†</td>
+      <td>Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>ATP-Binding III</td>
+    </tr>
+    <tr>
+      <td>F244C</td>
+      <td>Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>ATP-Binding III</td>
+    </tr>
+    <tr>
+      <td>K246I</td>
+      <td>Near Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F247L</td>
+      <td>Near Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I248T</td>
+      <td>Near Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G256E</td>
+      <td>Near Switch 1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I263M</td>
+      <td>Near ATP-Binding IV</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L267V</td>
+      <td>Near ATP-Binding IV</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y283C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S291F</td>
+      <td>Near I-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D309N</td>
+      <td>I-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>MD-RLC interface</td>
+    </tr>
+    <tr>
+      <td>I323N</td>
+      <td>I-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>MD-RLC interface</td>
+    </tr>
+    <tr>
+      <td>E328G</td>
+      <td>Near I-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V338M</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K351E</td>
+      <td>Near C-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G354S</td>
+      <td>Near C-loop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E374V</td>
+      <td>C-Loop</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>A381D</td>
+      <td>C-Loop</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>Y386C</td>
+      <td>Near C-loop</td>
+      <td>e</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V406M</td>
+      <td>CM-loop</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>Actin Interface I</td>
+    </tr>
+    <tr>
+      <td>Y410D</td>
+      <td>CM-loop</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>Actin Interface I</td>
+    </tr>
+    <tr>
+      <td>V411I</td>
+      <td>CM-loop</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>Actin Interface I</td>
+    </tr>
+    <tr>
+      <td>L427M</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T449S</td>
+      <td>Near Switch 2</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R453S/H</td>
+      <td>Near Switch 2</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>d.1</td>
+      <td>Stabilizing</td>
+      <td>0/–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I457T</td>
+      <td>Near Switch 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I478N</td>
+      <td>Near Switch 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N479S</td>
+      <td>Near Switch 2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M493V/L/I</td>
+      <td>Relay</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>0</td>
+      <td>Relay</td>
+    </tr>
+    <tr>
+      <td>E497G/D</td>
+      <td>Relay</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>+1/0</td>
+      <td>Relay</td>
+    </tr>
+    <tr>
+      <td>1521T</td>
+      <td>Near Relay</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E536D</td>
+      <td>H-loop</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>Actin Interface II</td>
+    </tr>
+    <tr>
+      <td>H576R</td>
+      <td>Loop 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>Actin Interface III</td>
+    </tr>
+    <tr>
+      <td>G584R</td>
+      <td>Near Loop 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>V586A</td>
+      <td>Near Loop 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R652G</td>
+      <td>Near Loop 2</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K657Q</td>
+      <td>Near Loop 2</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R663C</td>
+      <td>Near Loop 2</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R671C</td>
+      <td>Near SH2 helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R694C/H</td>
+      <td>SH2 helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>−2/–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>P710H/L</td>
+      <td>Converter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1/0</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td rowspan="2">P731A</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G733E</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">-1</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td rowspan="2">R739S</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">-2</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td rowspan="2">K740N</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2">d.2</td>
+      <td rowspan="2">Stabilizing</td>
+      <td rowspan="2">-1</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td rowspan="2">L749Q</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td rowspan="2">F758C</td>
+      <td rowspan="2">Converter</td>
+      <td>j</td>
+      <td>Anchoring</td>
+      <td rowspan="2"></td>
+      <td rowspan="2"></td>
+      <td rowspan="2">0</td>
+      <td rowspan="2">Converter</td>
+    </tr>
+    <tr>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+    </tr>
+    <tr>
+      <td>V763M</td>
+      <td>Converter</td>
+      <td></td>
+      <td></td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td>0</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>G768R</td>
+      <td>Converter</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td>Converter</td>
+    </tr>
+    <tr>
+      <td>L781P</td>
+      <td>Pliant</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td>Pivot</td>
+    </tr>
+    <tr>
+      <td>R783H</td>
+      <td>Pliant</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>-1</td>
+      <td>Pivot</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Regulatory Domain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R787C</td>
+      <td>Neck-ELC interface</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A797P</td>
+      <td>Neck-ELC interface</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L811P</td>
+      <td>Neck-ELC-RLC interface</td>
+      <td>ELC-MHC RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>RLC-MHC</td>
+      <td>Scaffolding</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>S2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K847E</td>
+      <td>Head-tail junction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E848G</td>
+      <td>Head-tail junction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M849T</td>
+      <td>Head-tail junction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A850D</td>
+      <td>Head-tail junction</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R858H</td>
+      <td></td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>g</td>
+      <td>Priming</td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E894G</td>
+      <td>Ring 1</td>
+      <td>f.1</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L898V</td>
+      <td>Ring 1</td>
+      <td>f.1</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A901P</td>
+      <td>Ring 1</td>
+      <td>f.1</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E903G</td>
+      <td>Ring 1</td>
+      <td>f.1</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q914H</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D928N</td>
+      <td>Ring 2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E929K</td>
+      <td>Ring 2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E930Q</td>
+      <td>Ring 2</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>a</td>
+      <td>Stabilizing</td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E949K</td>
+      <td>Ring 3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E967K</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1053Q</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Light Meromyosin</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1356K</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1382Q</td>
+      <td>Near skip 2 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L1428S</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1606C</td>
+      <td>Near skip 3 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A1763T</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1781H</td>
+      <td>Near skip 4 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M1782V</td>
+      <td>Near skip 4 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_All LPVs identified in 6112 HCM patients (Walsh et al., 2017) are shown. In MYH7 there 95 LPVs, leading to 95 distinct amino acid substitutions at 87 positions.*Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the LMM variants. HCM LPVs located on the mesa are bolded.†R243H was identified in both HCM and DCM cohorts. RLC–RLC denotes interface region between regulatory light chains.‡Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).§Motor domain functions are ascribed only to variants within involved residues. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, anchoring = orange, stabilizing = pink, scaffolding = white._
+
+**Table 3.**
+ DCM pathogenic variants (PVs) and likely pathogenic variants (LPVs) causing 27 MYH7 amino acid substitutions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substitution</th>
+      <th>Location‡</th>
+      <th>BH interaction‡</th>
+      <th>Type‡</th>
+      <th>FH interaction‡</th>
+      <th>Type‡</th>
+      <th>Δq§</th>
+      <th>Motor Domain Function¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH7</td>
+      <td>Motor Domain</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G144V</td>
+      <td>Near ATP Binding I</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>G178R</td>
+      <td>ATP-binding II (P-loop)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td>ATP Binding II</td>
+    </tr>
+    <tr>
+      <td>G181R</td>
+      <td>ATP-binding II (P-loop)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td>ATP Binding II</td>
+    </tr>
+    <tr>
+      <td>I201T</td>
+      <td>Near 25/50 junction (Loop 1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R243H†</td>
+      <td>ATP-binding III (Switch 1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>ATP Binding III</td>
+    </tr>
+    <tr>
+      <td>G245E</td>
+      <td>ATP-binding III (Switch 1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>ATP Binding III</td>
+    </tr>
+    <tr>
+      <td>I248F</td>
+      <td>Near ATP-binding III</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R369Q</td>
+      <td>C-Loop (Loop 4)</td>
+      <td>d.2</td>
+      <td>Stabilizing</td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>D469Y</td>
+      <td>ATP-binding V (Switch 2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>ATP Binding V</td>
+    </tr>
+    <tr>
+      <td>I524V</td>
+      <td>Near H-Loop</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E525K</td>
+      <td>Near H-Loop</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>I533V</td>
+      <td>H-Loop</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td>Actin interface II</td>
+    </tr>
+    <tr>
+      <td>R567H</td>
+      <td>Actin-interface III (Loop 3)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td>Actin interface III</td>
+    </tr>
+    <tr>
+      <td>N597K</td>
+      <td>Helix-loop-helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td>Actin interface</td>
+    </tr>
+    <tr>
+      <td>C672F</td>
+      <td>Near SH2 Helix</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R783P</td>
+      <td>Pliant</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>ELC-MHC</td>
+      <td>Scaffolding</td>
+      <td>-2</td>
+      <td>Pivot</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>S2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R904C*/H</td>
+      <td>Ring1</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>f.2</td>
+      <td>Priming</td>
+      <td>−2/–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1152V</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Light Meromyosin</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1193H</td>
+      <td>Near skip 1 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1286K</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1434C</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D1450N</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R1574W</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Q1794E</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1801K</td>
+      <td>Near skip 4 residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>E1914K</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>+2</td>
+      <td>.</td>
+    </tr>
+  </tbody>
+</table>
+
+_All PVs and LPVs identified in 1315 DCM patients (Walsh et al., 2017) are shown. In MYH7 there are 27 DCM pathogenic and likely pathogenic variants, leading to 27 distinct substitutions at 26 residues. DCM LPVs located on the mesa are bolded.*R904C is the only DCM PV.†R243H was identified in both HCM and DCM cohorts. In this cohort, no variants in MYL2 or MYL3 caused DCM.‡Supplementary file 1 defines domain locations and Supplementary file 2 defines IHM interactions, refined using the PISA analysis (Krissinel and Henrick, 2007) that are highlighted as in Figure 3, excluding the LMM variants.§Δq: variant induced electrical charge change. Δq defines whether the substituted amino acid changes the charge (bolded) or not (Δq = 0).¶Motor domain functions are ascribed only to variants within involved residues. Variants at IHM interactions sites are colored according to the interaction affected: priming = green, stabilizing = pink, scaffolding = white._
+
+#### Variants altering functional Motor Domain residues
+
+We compared the distributions of MYH7 HCM and DCM variants at functional MD residues involved in the nucleotide-binding pocket (39 aa), actin binding (60 aa), converter (68 aa), or relay (27 aa), that together make up 10% of the myosin heavy chain (194 aa; Supplementary file 1). MYH7 variants were not distributed uniformly, but were over-represented at functional MD residues both in HCM (16/40 PVs (40%), 4-fold enrichment above 10% expected, p=6.14e-07; 23/95 LPVs (24%), p=5.11e-05; combined 39/135 (29%), p=7.9e-9; Tables 1, 2 and 4) and DCM (7/27 variants (26%), p=0.022; Tables 3 and 5). However these impacted distinct regions. HCM variants were enriched in residues of the converter (n = 21/135 (16%), expected 3.5%, p=1.25e-08; Supplementary file 3) while 5/27 DCM variants altered nucleotide-binding pocket residues (19%, expected 2.0%, p=0.00019; Supplementary file 4). This supports previous observations that HCM and DCM variants alter distinct functional motor domains (Debold et al., 2007; Spudich et al., 2016), leading to altered myocardial contraction (Figure 1).
+
+**Table 4.**
+ The distribution of HCM variants across IHM and MD functional residues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specified site</th>
+      <th>Variants within site</th>
+      <th>Rate</th>
+      <th>Amino acids within site</th>
+      <th>Expected rate</th>
+      <th>Rate ratio</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IHM Interactions (All)</td>
+      <td>73</td>
+      <td>0.541</td>
+      <td>447</td>
+      <td>0.2310</td>
+      <td>2.34</td>
+      <td>7.95e-15</td>
+    </tr>
+    <tr>
+      <td>Priming</td>
+      <td>17</td>
+      <td>0.126</td>
+      <td>113</td>
+      <td>0.0584</td>
+      <td>2.16</td>
+      <td>2.64e-03</td>
+    </tr>
+    <tr>
+      <td>Anchoring</td>
+      <td>24</td>
+      <td>0.178</td>
+      <td>156</td>
+      <td>0.0806</td>
+      <td>2.21</td>
+      <td>2.11e-04</td>
+    </tr>
+    <tr>
+      <td>Stabilizing</td>
+      <td>48</td>
+      <td>0.356</td>
+      <td>189</td>
+      <td>0.0977</td>
+      <td>3.64</td>
+      <td>5.37e-16</td>
+    </tr>
+    <tr>
+      <td>Scaffolding</td>
+      <td>24</td>
+      <td>0.178</td>
+      <td>120</td>
+      <td>0.0620</td>
+      <td>2.87</td>
+      <td>2.97e-06</td>
+    </tr>
+    <tr>
+      <td>MD Functional</td>
+      <td>39</td>
+      <td>0.289</td>
+      <td>194</td>
+      <td>0.1000</td>
+      <td>2.89</td>
+      <td>7.87e-10</td>
+    </tr>
+  </tbody>
+</table>
+
+_The numbers of distinct pathogenic and likely pathogenic HCM variants (n = 135) affecting IHM interaction sites and motor domain (MD) functional residues are shown. Variant numbers are also tabulated separately for the four major IHM interactions: priming, anchoring, stabilizing and scaffolding. Note that a single variant may impact more than one interaction. The number of myosin amino acid residues (total protein length = 1935 residues) that compromise the IHM interaction sites or MD functions was used to determine the proportion of variants that would be expected to lie in the region of interest under the null (a uniform distribution), and the rates are compared with a binomial test. Full details of all variants are shown in Tables 1 and 2._
+
+**Table 5.**
+ The distribution of DCM variants across IHM and MD functional residues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specified site</th>
+      <th>Variants within site</th>
+      <th>Rate</th>
+      <th>Amino acids within site</th>
+      <th>Expected rate</th>
+      <th>Rate ratio</th>
+      <th>P-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IHM Interactions (All)</td>
+      <td>7</td>
+      <td>0.259</td>
+      <td>447</td>
+      <td>0.2310</td>
+      <td>1.120</td>
+      <td>0.6550</td>
+    </tr>
+    <tr>
+      <td>Priming</td>
+      <td>5</td>
+      <td>0.185</td>
+      <td>113</td>
+      <td>0.0584</td>
+      <td>3.170</td>
+      <td>0.0186</td>
+    </tr>
+    <tr>
+      <td>Anchoring</td>
+      <td>0</td>
+      <td>0.000</td>
+      <td>156</td>
+      <td>0.0806</td>
+      <td>0.000</td>
+      <td>0.1650</td>
+    </tr>
+    <tr>
+      <td>Stabilizing</td>
+      <td>1</td>
+      <td>0.037</td>
+      <td>189</td>
+      <td>0.0977</td>
+      <td>0.379</td>
+      <td>0.5120</td>
+    </tr>
+    <tr>
+      <td>Scaffolding</td>
+      <td>1</td>
+      <td>0.037</td>
+      <td>120</td>
+      <td>0.0620</td>
+      <td>0.597</td>
+      <td>1.0000</td>
+    </tr>
+    <tr>
+      <td>MD Functional</td>
+      <td>7</td>
+      <td>0.259</td>
+      <td>210</td>
+      <td>0.1090</td>
+      <td>2.380</td>
+      <td>0.0222</td>
+    </tr>
+  </tbody>
+</table>
+
+_The numbers of distinct pathogenic and likely pathogenic DCM variants (n = 27) affecting IHM interactions and motor domain (MD) functional residues are shown. Variant numbers are also tabulated separately for the four major IHM interactions: priming, anchoring, stabilizing and scaffolding. Note that a single variant may impact more than one interaction. The number of myosin amino acid residues (total protein length = 1935 residues) that compromise the IHM interaction sites or MD functions was used to determine the proportion of variants that would be expected to lie in the region of interest under the null (a uniform distribution), and the rates are compared with a binomial test. Full details of all variants are shown in Table 3._
+
+#### HCM variants altering IHM interactions
 
 We next defined the distribution of HCM and DCM variants on 447 MYH7 residues involved in major IHM interactions (Supplementary file 2; Alamo et al., 2008, Alamo et al., 2016). Priming interactions (‘f’ and ‘g’, involving 113 aa) dock the blocked head onto its own S2. Anchoring (156 aa) associates the blocked head and ELC to the neighboring myosin tail via interactions ‘i’, ‘h’, and ‘j’. Stabilizing (189 aa) docks the free head onto the blocked head via interactions ‘a’, ‘d’, and ‘e’. Scaffolding (120 aa) supports the IHM three-dimensional structure (RLC-MHC and ELC-MHC interactions). Additional RLC-RLC interactions regulate the IHM (Alamo et al., 2016). As residues can participate in several interactions, HCM and DCM variants that alter multi-interactive residues can impact formation of the IHM in several ways.
 
 In comparison to expectation, HCM PVs were enriched among the 23% of myosin residues (447 of 1935) involved in the IHM structure, with thirty-one of 40 (78%) MYH7 PVs altering IHM residues (3.35-fold enrichment; p=5.25e-13; Table 1 Supplementary file 3a, Figure 3—figure supplement 1A). We validated this estimate by analyzing LPVs (Table 2): Forty-two of 95 LPVs (44%) similarly impacted IHM interactions (1.9-fold enrichment; p=7.04e-06; Supplementary file 3b). Based on the significant enrichment of HCM variants in residues involved in IHM interactions (Table 4) we infer that disruption of the IHM contributes to HCM pathophysiology (Figure 1B).
 
-As cardiomyopathy variants can alter distinct interactions when located on the blocked head versus the free head, we assessed HCM PVs and LPVs exposed to these different environments (
+As cardiomyopathy variants can alter distinct interactions when located on the blocked head versus the free head, we assessed HCM PVs and LPVs exposed to these different environments (Figure 3A and Video 5, Supplementary file 3f). Thirty-nine of 135 PVs or LPVs alter residues involved in free head interactions (29%, expected 8.8%, p=1.93e-11), 52 altered residues involved in blocked head interactions (39%, expected 19%, p=9.32e-08), and 14 altered residues involved in tail interactions (10%, expected 3.6%, p=3.57e-04). HCM variants that disrupt priming and anchoring residues would prevent the docking of the blocked head to the S2, delaying IHM formation (Figure 1B, left), while variants that alter stabilizing residues will tend to release the free head from the partner blocked head (Figure 1B, right). HCM PVs and LPVs (Supplementary file 3a, b) were particularly enriched in IHM stabilizing interactions (p=5.37e-16 vs. expectation; Table 4, Figure 3—figure supplement 4). These 48 variants (Figure 3, pink) include 11 variants affecting stabilizing residues when located on the blocked head (p=2.01e-2) and 31 variants affecting stabilizing residues when located on the free head (p=2.58e-12). Twenty-four HCM variants (Figure 3A, orange and Figure 3—figure supplement 3) altered blocked head residues involved in IHM anchoring interactions (p=2.1e-4). Five of eight anchoring variants (involved in ‘i’ interactions; Figure 3—figure supplement 3) affect residues that also participate in another IHM interaction (Tables 1 and 2), we cannot discern whether one or both interactions are more relevant to HCM pathogenesis. HCM variants were only modestly enriched in IHM priming interactions (p=2.6e-3; Table 4, Figure 3A, green and Figure 3—figure supplement 2), and affected nine residues on the blocked head and 14 tail residues, including three residues that also participate in stabilizing interactions (Supplementary file 3d). In addition, 24 MYH7 variants (Figure 3A, white; Figure 3—figure supplement 5) altered residues that scaffold the MHC and ELC or RLC (p=3.0e-6; Supplementary file 3d), that were particularly enriched in MHC blocked head residues affecting ELC interactions (p=1.19e-07).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-v1.jpg)
 
-**Figure 3.:** Tables 1–3).Each variant appears as a pair, one located on or associated with the blocked head (BH, olive) and one on the free head (FH, green). Associated proteins are the essential light chain (ELC interacting with BH, brown; FH, purple) and regulatory light chain (RLC interacting with BH, dark blue; FH, light blue). (A) HCM PVs and LPVs that alter residues involved in IHM interactions (73/135 variants, 54%) are represented by colored balls: priming, green (‘f’ and ‘g’, Figure 3—figure supplement 2); anchoring, orange (‘i’ and ‘j’, Figure 3—figure supplement 3); stabilizing, pink (‘a’, ‘d’, and ‘e’, Figure 3—figure supplement 4); scaffolding, white (ELC-MHC and RLC-MHC); RLC-RLC interface, yellow (Figure 3—figure supplement 5). For variants with multiple IHM interactions, only one is depicted. PVs and LPVs that do not alter residues involved in IHM interactions are grey. (B) DCM PV and LPV (7/27; 26%) defined here are colored as described above, along with two prior PVs (S532P and F764L, denoted by side chains) that alter IHM interacting residues. Detailed IHM PDB 5TBY models of variants involved in specific interactions are provided in Supplemental Files and Videos 5 and 6).DOI: http://dx.doi.org/10.7554/eLife.24634.015
+**Figure 3.:** Each variant appears as a pair, one located on or associated with the blocked head (BH, olive) and one on the free head (FH, green). Associated proteins are the essential light chain (ELC interacting with BH, brown; FH, purple) and regulatory light chain (RLC interacting with BH, dark blue; FH, light blue). (A) HCM PVs and LPVs that alter residues involved in IHM interactions (73/135 variants, 54%) are represented by colored balls: priming, green (‘f’ and ‘g’, Figure 3—figure supplement 2); anchoring, orange (‘i’ and ‘j’, Figure 3—figure supplement 3); stabilizing, pink (‘a’, ‘d’, and ‘e’, Figure 3—figure supplement 4); scaffolding, white (ELC-MHC and RLC-MHC); RLC-RLC interface, yellow (Figure 3—figure supplement 5). For variants with multiple IHM interactions, only one is depicted. PVs and LPVs that do not alter residues involved in IHM interactions are grey. (B) DCM PV and LPV (7/27; 26%) defined here are colored as described above, along with two prior PVs (S532P and F764L, denoted by side chains) that alter IHM interacting residues. Detailed IHM PDB 5TBY models of variants involved in specific interactions are provided in Supplemental Files and Videos 5 and 6).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** A) and DCM pathogenic and likely pathogenic variants (B).(A) IHM PDB 5TBY model mapping 40 HCM pathogenic variants (that produced 39 distinct substitutions in MHC and four substitutions in the regulatory and essential light chains; Table 1, in the main text) depicted as balls and sticks, with all chains are shown as wires, and the interaction loops highlighted as ribbons. 22/31 PVs (observed 71%, expected 49%, p=0.019) involved on interactions are charge-changing, according to this color code for their Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue). (B) IHM PDB 5TBY model mapping 27 DCM-causing variants, showing 26 residues substituted by 27 variants on each head (Table 3, in the main text) depicted as balls and sticks, with all chains are shown as wires, and the interaction loops highlighted as ribbons. Five of seven (71%) DCM PVs and LPVs involved on interactions are charge-changing, according to this color code for their Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).DOI: http://dx.doi.org/10.7554/eLife.24634.016
+**Figure 3—figure supplement 1.:** (A) IHM PDB 5TBY model mapping 40 HCM pathogenic variants (that produced 39 distinct substitutions in MHC and four substitutions in the regulatory and essential light chains; Table 1, in the main text) depicted as balls and sticks, with all chains are shown as wires, and the interaction loops highlighted as ribbons. 22/31 PVs (observed 71%, expected 49%, p=0.019) involved on interactions are charge-changing, according to this color code for their Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue). (B) IHM PDB 5TBY model mapping 27 DCM-causing variants, showing 26 residues substituted by 27 variants on each head (Table 3, in the main text) depicted as balls and sticks, with all chains are shown as wires, and the interaction loops highlighted as ribbons. Five of seven (71%) DCM PVs and LPVs involved on interactions are charge-changing, according to this color code for their Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Three variants alter resides that participate in ‘f’ sub-interactions (‘f.1’: D906G, L908V; ‘f.2’: R663H) and two alter residues that participate in ‘g’ interactions (R453C and R870H). All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).DOI: http://dx.doi.org/10.7554/eLife.24634.017
+**Figure 3—figure supplement 2.:** Three variants alter resides that participate in ‘f’ sub-interactions (‘f.1’: D906G, L908V; ‘f.2’: R663H) and two alter residues that participate in ‘g’ interactions (R453C and R870H). All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Intermolecular interactions between (‘j’, ‘i’) myosin and the essential light chain anchor the blocked head anchoring on the neighboring S2. Five substitutions are involved on interaction ‘j’ between blocked head relay (G483K, M515T) and converter (I736T and G741W/R) with the neighbor S2. Six MHC (G716R, R719W/Q, R723G/C and K762R) variants interact (‘i’) with the same loop of the blocked head ELC with the neighboring MHC S2. Two substitutions are located on the ELC. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).DOI: http://dx.doi.org/10.7554/eLife.24634.018
+**Figure 3—figure supplement 3.:** Intermolecular interactions between (‘j’, ‘i’) myosin and the essential light chain anchor the blocked head anchoring on the neighboring S2. Five substitutions are involved on interaction ‘j’ between blocked head relay (G483K, M515T) and converter (I736T and G741W/R) with the neighbor S2. Six MHC (G716R, R719W/Q, R723G/C and K762R) variants interact (‘i’) with the same loop of the blocked head ELC with the neighboring MHC S2. Two substitutions are located on the ELC. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp4-v1.jpg)
 
-**Figure 3—figure supplement 4.:** Twenty-three MHC variants and two ELC variants alter IHM residues that dock the free head onto the blocked head (‘e’, ‘d’ and ‘a’ interactions). Nineteen MYH7 substitutions are at residues participating in two ‘d’ sub-interactions (‘d.1’: E170K, R403W/G/L/Q, R453C, R442C; ‘d.2’: G716R, R719W/Q, R723G/C, I736T, G741W/R, E483K, M515T, K762R, K766Q), three substitutions are at ‘e’ interactions (MYH7 V606M; MYL3 M149V and H155D), and three at ‘a’ interactions (MYH7 L915P, E924K and E930K). Notably, nine of twelve substitutions involved in sub-interaction “d.2 “alter the charge. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).DOI: http://dx.doi.org/10.7554/eLife.24634.019
+**Figure 3—figure supplement 4.:** Twenty-three MHC variants and two ELC variants alter IHM residues that dock the free head onto the blocked head (‘e’, ‘d’ and ‘a’ interactions). Nineteen MYH7 substitutions are at residues participating in two ‘d’ sub-interactions (‘d.1’: E170K, R403W/G/L/Q, R453C, R442C; ‘d.2’: G716R, R719W/Q, R723G/C, I736T, G741W/R, E483K, M515T, K762R, K766Q), three substitutions are at ‘e’ interactions (MYH7 V606M; MYL3 M149V and H155D), and three at ‘a’ interactions (MYH7 L915P, E924K and E930K). Notably, nine of twelve substitutions involved in sub-interaction “d.2 “alter the charge. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp5-v1.jpg)
 
-**Figure 3—figure supplement 5.:** Variants in MHC (S842N and F834L) and RLC (E22K and R58Q) alter residues that allow proper docking of the two opposite surfaces of the RLC-RLC interface when the IHM is initially assembled. The large gray ball denotes phosphorylated Ser15. The small grey yellow denotes the RLC Ca2+ pocket. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).DOI: http://dx.doi.org/10.7554/eLife.24634.020
+**Figure 3—figure supplement 5.:** Variants in MHC (S842N and F834L) and RLC (E22K and R58Q) alter residues that allow proper docking of the two opposite surfaces of the RLC-RLC interface when the IHM is initially assembled. The large gray ball denotes phosphorylated Ser15. The small grey yellow denotes the RLC Ca2+ pocket. All chains are shown as wires, with the interacting loops highlighted as ribbons. Only amino acid substitutions (caused by cardiomyopathy variants) within these interacting loops are highlighted as balls and sticks. The color code reflects the variant’s Δq: −2 (dark red), −1 (pink), 0 (black),+1 (light blue) and +2 (dark blue).
 
 ![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp6-v1.jpg)
 
-**Figure 3—figure supplement 6.:** Variant positions (arrowheads) are color-coded according their charge-change, as in Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.24634.021
+**Figure 3—figure supplement 6.:** Variant positions (arrowheads) are color-coded according their charge-change, as in Figure 3—figure supplement 1.
 
 ![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp7-v1.jpg)
 
-**Figure 3—figure supplement 7.:** Variant positions (arrowheads) are color-coded as in Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.24634.022
+**Figure 3—figure supplement 7.:** Variant positions (arrowheads) are color-coded as in Figure 3—figure supplement 1.
 
 ![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp8-v1.jpg)
 
-**Figure 3—figure supplement 8.:** HCM variant positions are (arrowheads) color-coded as in Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.24634.023
+**Figure 3—figure supplement 8.:** HCM variant positions are (arrowheads) color-coded as in Figure 3—figure supplement 1.
 
 ![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig3-figsupp9-v1.jpg)
 
-**Figure 3—figure supplement 9.:** HCM variant positions are (arrowheads) color-coded as in Figure 3—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.24634.024
+**Figure 3—figure supplement 9.:** HCM variant positions are (arrowheads) color-coded as in Figure 3—figure supplement 1.
+
+![Video 5.](https://cdn.elifesciences.org/articles/24634/elife-24634-media5.mp4.jpg)
+
+**Video 5.:** HCM variants reside on the myosin blocked head (gold), myosin free head (olive), essential light chain (associated with blocked head (brown) or free head, (purple)), and regulatory light chain (associated with blocked head (dark blue) or free head (blue)). Variants are depicted as balls, colored according to the IHM interactions that are disrupted in each environment: priming, green; anchoring, orange; stabilizing, pink, scaffolding, white and regulatory, yellow. Grey variants alter residues that are not involved in IHM interactions. See legend of Figure 3A.
 
 All four HCM PVs in MYL2 (n = 2) and MYL3 (n = 2) also affected IHM residues. The MYL3 variants altered ELC residues involved in anchoring (orange) and scaffolding (white) the blocked head (Table 1 and Figure 3A), and residues involved in stabilizing (pink) and scaffolding (white) the free head. MYL2 variants altered residues on the RLC involved in scaffolding (Figure 3A, white). These variants also altered residues involved in RLC-RLC regulation (Figure 3A, yellow) of the blocked and free heads.
 
 HCM variants therefore overlie distinct interaction sites when found in the context of the free or blocked head. As the same residue may be involved in more than one interaction, HCM variants have the potential to disrupt multiple IHM properties. Yet while MD and IHM residues overlap, particularly in the converter region, that 73 of 135 MYH7 PVs and LPVs (54%) alter IHM interaction residues, as do all HCM variants in MYL2 and MYL3, challenges the paradigm that these act primarily through the impairment of myosin motor functions (Rayment et al., 1995). As the IHM structure allows myosin to adopt the SRX state, we suggest that HCM PVs and LPVs that perturb dynamic IHM interactions would likely alter physiologic relaxation by the heart, and account for diastolic dysfunction, which is the major component of HCM pathophysiology.
 
-## Distribution of DCM variants on IHM interactions
+#### Distribution of DCM variants on IHM interactions
 
-Parallel analyses of all DCM PVs and LPVs (n = 27) in MYH7 (Tables 3 and 5, Figure 3B and Figure 3—figure supplement 1B) showed that these were over-represented at MD residues, but were not enriched in residues across all IHM interactions (p=0.65) nor among residues involved in interactions by the blocked head, free head, or tail (p≥0.25). Within specific components of IHM interactions (Supplementary file 4a, b), five DCM variants altered IHM priming (Figure 3B, green and Video 6), albeit with only nominal significance (p=0.019). Additional DCM variants altered blocked head residues involved in IHM stabilizing interaction (pink) and ELC scaffolding of blocked and free head residues (white), but these were not enriched over expectation. This data show that residues within IHM interaction sites are differentially impacted by variants that cause the distinct pathophysiologies of HCM and DCM.10.7554/eLife.24634.026Video 6.Semi-transparent, space-filled PDB 5TBY IHM structure depicting the impact of DCM variants when residing on the myosin blocked head (gold) and myosin free head (olive).Variants are depicted as balls, colored according to the interactions that that disrupt: priming, green; anchoring, orange; stabilizing, pink, and scaffolding, white. Grey variants alter residues that are not involved in IHM interactions. The side chains of two previously reported DCM variants (Schmitt et al., 2006), S532P and F764L are also colored according to the IHM interaction that these disrupt. See legend of Figure 3BDOI: http://dx.doi.org/10.7554/eLife.24634.026
+Parallel analyses of all DCM PVs and LPVs (n = 27) in MYH7 (Tables 3 and 5, Figure 3B and Figure 3—figure supplement 1B) showed that these were over-represented at MD residues, but were not enriched in residues across all IHM interactions (p=0.65) nor among residues involved in interactions by the blocked head, free head, or tail (p≥0.25). Within specific components of IHM interactions (Supplementary file 4a, b), five DCM variants altered IHM priming (Figure 3B, green and Video 6), albeit with only nominal significance (p=0.019). Additional DCM variants altered blocked head residues involved in IHM stabilizing interaction (pink) and ELC scaffolding of blocked and free head residues (white), but these were not enriched over expectation. This data show that residues within IHM interaction sites are differentially impacted by variants that cause the distinct pathophysiologies of HCM and DCM.
+
+![Video 6.](https://cdn.elifesciences.org/articles/24634/elife-24634-media6.mp4.jpg)
+
+**Video 6.:** Variants are depicted as balls, colored according to the interactions that that disrupt: priming, green; anchoring, orange; stabilizing, pink, and scaffolding, white. Grey variants alter residues that are not involved in IHM interactions. The side chains of two previously reported DCM variants (Schmitt et al., 2006), S532P and F764L are also colored according to the IHM interaction that these disrupt. See legend of Figure 3B
 
 Given the overall limited numbers of myosin DCM PV and LPVs, we also assessed two previously reported DCM MYH7 PVs, S532P and F764L (Schmitt et al., 2006) that were not identified in the cardiomyopathy cohort studied here. S532P alters a blocked head residue (Figure 3B, side chain green), but is not involved in IHM interactions by the free head. F764L alters a blocked head residue that is involved in anchoring and a free head residue involved in IHM stabilization (Figure 3B, side chain orange and pink, respectively).
 
 A far smaller proportion of myosin DCM PV and LPVs altered residues involved in IHM interactions (Figure 1C) than HCM variants. Together with the observed enrichment at MD functional domains shown above, this implies that DCM variants predominantly affect myosin MD properties, which is consistent with the predominant clinical manifestations of DCM MYH7 variants - reduced contractile force but normal diastolic relaxation (Lakdawala et al., 2012).
 
-## Charge change by HCM and DCM variants impacts the IHM
+### Charge change by HCM and DCM variants impacts the IHM
 
 An electrostatic charge difference between the wild type and variant residue, Δq, is expected to further destabilize IHM inter- and intra-molecular interactions (Tables 1–3). Among HCM PVs that alter IHM interacting residues, 22/31 altered the charge (observed 71%, expected 49%, p=0.019): nine (29%) produced charge-gain (+2 > Δq > 0) and thirteen (42%) produced charge-loss (−2 < Δq < 0).
 
@@ -157,17 +2114,21 @@ Both MYL2 HCM PVs are charge changing and could destabilize MHC-RLC and RLC-RLC 
 
 Five of seven (71%) DCM PVs and LPVs affecting IHM interacting residues also have electrostatic charge changes. Variant R904C should make the S2 Ring 1 more negative (−2) and strengthen IHM priming (‘f.2’) when the blocked head docks onto its S2, therein decreasing ATPase activity. By contrast, a nearby HCM variant (D906G Figure 3—figure supplement 2) makes the S2 Ring 1 more positive (+1) which weakens IHM priming (‘f.2’) with resultant increase in expected ATP turnover and numbers of released swaying free heads. Therefore the predicted reciprocal biophysical consequences of adjacent MYH7 variants on the IHM provide potential mechanisms to explain how nearby, indistinguishable groups variants with opposite charge changes cause the distinct pathophysiology of HCM and DCM (Figure 1B vs. C).
 
-## HCM variants on the mesa disrupt IHM interactions
+#### HCM variants on the mesa disrupt IHM interactions
 
 The blocked myosin head structure in the IHM is similar to its pre-powerstroke structure (Figure 2—figure supplement 2C and Video 4) that contains a prominent flat myosin surface, denoted as the mesa (Spudich, 2015; Spudich et al., 2016; Homburger et al., 2016). The mesa is comprised of 277 aa, of which approximately half are IHM interacting residues. Based on the dynamic IHM structure, we expect that myosin can assume two mesa structures, corresponding to the blocked, docked head and the free head.
 
-Fifty-two of 135 HCM variants (18 PVs and 34 LPVs; p=3.9e-12 versus expected), but only 3 DCM variants (p=0.79), reside on the mesa (
+Fifty-two of 135 HCM variants (18 PVs and 34 LPVs; p=3.9e-12 versus expected), but only 3 DCM variants (p=0.79), reside on the mesa (Tables 1–3, Supplementary file 5, Figure 4 and Video 7). Thirty-six HCM variants alter mesa residues that also participate in IHM interactions (4.1-fold above expectation, p=2.38e-13). When located on the blocked head, HCM mesa variants altered residues involved in priming (n = 9), anchoring and scaffolding (n = 15), and stabilizing (n = 6). When located on the free head HCM residues altered IHM stabilization (n = 21) and scaffolding (n = 1). By disrupting blocked S1 head interactions with S2 (‘f.1’ with S2 Ring 1 and ‘g’ with the S2 kink; Figure 3—figure supplement 2) that are crucial for establishing SRX, and stabilizing interactions between the blocked and free heads, HCM mesa variants could compromise relaxation and increase free heads available for force potentiation. The model that disruption of the IHM contributes to HCM pathophysiology is therefore entirely compatible with recent data suggesting an important role for the mesa. We expect that variants residing on the mesa (Spudich, 2015) and that are involved in IHM interactions (Alamo et al., 2008; Jung et al., 2008; Luther et al., 2011) may also impact MyBP-C interactions.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24634/elife-24634-fig4-v1.jpg)
 
-**Figure 4.:** Spudich, 2015; Homburger et al., 2016) of the blocked head (BH, olive) and free head (FH, green).The three negatively-charged rings in the blocked head S2 are labeled R1, R2 and R3. The associated sarcomere proteins are depicted as in Figure 3. The myosin mesas are roughly orthogonal (blocked head mesa, parallel to the page; free head mesa, perpendicular to the page; see Video 7). HCM PVs are enriched on the mesa and in IHM interactions when located either on the blocked or free head, suggesting that these disrupt crucial determinants of cardiac relaxation, accounting for diastolic dysfunction in HCM.DOI: http://dx.doi.org/10.7554/eLife.24634.027
+**Figure 4.:** The three negatively-charged rings in the blocked head S2 are labeled R1, R2 and R3. The associated sarcomere proteins are depicted as in Figure 3. The myosin mesas are roughly orthogonal (blocked head mesa, parallel to the page; free head mesa, perpendicular to the page; see Video 7). HCM PVs are enriched on the mesa and in IHM interactions when located either on the blocked or free head, suggesting that these disrupt crucial determinants of cardiac relaxation, accounting for diastolic dysfunction in HCM.
 
-## Clinical interpretation of rare MYH7 variants
+![Video 7.](https://cdn.elifesciences.org/articles/24634/elife-24634-media7.mp4.jpg)
+
+**Video 7.:** The myosin blocked head (gold), myosin free head (olive), essential light chain (associated with blocked head (brown) or free head (purple)), and regulatory light chain (associated with blocked head (dark blue), or free head (blue)) are shown. Mesa variants (numbered according to the amino acid that is altered) are depicted as balls, colored according to the IHM interactions that is disrupted in each environment: priming, green; anchoring, orange; stabilizing, pink, and scaffolding, white. Grey variants alter residues that are not involved in IHM interactions. See legend of Figure 4.
+
+### Clinical interpretation of rare MYH7 variants
 
 Having identified a relationship between cardiomyopathy variants and residues identified as IHM interaction sites, we considered whether this information improved clinical variant interpretation. We compared the prevalence of all rare (ExAC global allele frequency <0.0001) missense variants in the 7427 cardiomyopathy subjects (Walsh et al., 2017) with 33,364 ancestry-matched ExAC subjects. We calculated disease odds ratios (under the assumption that each individual carries at most one rare variant, since individual-level genotypes are not available in ExAC, see Material and methods) and the etiologic fraction (EF, the proportion of variants in cases that are disease-causing), which represents the probability that a rare variant found on genetic testing in a cardiomyopathy subject is pathogenic (HCM, Supplementary file 6, DCM, Supplementary file 7). We calculated these measures for the whole protein, and for pre-specified sub-regions: the myosin head, MD functional sites, the mesa, a previously-described cluster of 29 amino acids in the converter region (Homburger et al., 2016), and the IHM interactions described here.
 
@@ -177,7 +2138,7 @@ Regional analyses identified portions of the protein that are highly enriched in
 
 Parallel comparisons of 58 rare variants in 68 of 1315 DCM patients (5.2%) indicated that a large proportion of those within the myosin head are pathogenic (EF = 0.75), but that this is insufficient to report novel variants as LPV without additional evidence of pathogenicity. Variants at functional MD residues have a high probability of pathogenicity (EF = 0.96). Among DCM rare variants that altered residues involved in IHM interactions (EF = 0.84), only those that altered IHM priming residues (EF = 0.96) achieved high probabilities of pathogenicity.
 
-## Energetic consequences of SRX and DRX states
+### Energetic consequences of SRX and DRX states
 
 Experimental preparations of relaxed cardiac muscles (Hooijman et al., 2011) display two rates of ATP hydrolysis (slow turnover time, 138–144s; fast turnover time 20 s) that are respectively attributed to docked blocked heads and transiently docked free heads (the SRX state) and swaying free heads in the DRX state (Alamo et al., 2016). As such, the proportion of myosin heads in the SRX or DRX state impacts cardiac muscle expenditure of ATP and energy efficiency, parameters that are critical for continuous pumping.
 
@@ -197,7 +2158,7 @@ We recognize several limitations in our analyses. First, there are neither atomi
 
 We also expect that high-resolution human cardiac thick filament structures will extend these insights to other HCM genes and variants. MyBP-C harbors many HCM variants that reduce protein levels (Harris et al., 2011) and evoke functional consequences similar to MyBP-C phosphorylation: increase calcium sensitivity of active force and acceleration of rigor force and rigor stiffness development (Kunst et al., 2000). The C1C2 fragment of MyBP-C (Gruen and Gautel, 1999) is predicted to interact with the second of three negatively charged rings (Blankenfeldt et al., 2006) on the myosin S2 domain (Figure 2A and Figure 4, labeled as R1-3), and Ring 2 residues participate in stabilizing the IHM. Charge inverting (+2) variants on Ring 2 (E924K and E930K in Table 1 and Figure 3—figure supplement 4 ‘a’; E927K and E935K, described in (Blankenfeldt et al., 2006) could disrupt MyBP-C binding (Lee et al., 2015), and destabilize the IHM, as would HCM variants that deplete MyBP-C protein levels. Moreover, destabilization of the IHM could account for the significant reduction of SRX that occurs in mice lacking MyBP-C (McNamara et al., 2016). With the enrichment of MYH7 variants in IHM interacting residues reported here, we suggest that altered physiologic ratios of SRX and DRX populations is the mechanism by which HCM disrupts cardiac relaxation.
 
-## Integrated consequences of cardiomyopathy variants on myocardial physiology
+### Integrated consequences of cardiomyopathy variants on myocardial physiology
 
 HCM and DCM are dominant disorders and sarcomeres contain an admixture of normal and mutated myosin proteins. As MYH7 DCM variants primarily impact functional MD residues (e.g. nucleotide binding and hydrolysis), these will depress contractility in proportion to the summed force produced by myosins with and without variants (Schmitt et al., 2006; Spudich et al., 2016), with concurrent reduction in ATP consumption. The resultant under-performance of sarcomeres containing DCM variants promotes compensatory ventricular dilation (Frank-Starling mechanism) to maintain circulatory demands (Figure 1C).
 
@@ -209,58 +2170,62 @@ In summary, the integrated interpretation of HCM and DCM variants on myosin MD f
 
 ## Material and methods
 
-## Overview
+### Overview
 
 We first generated a new homologous human β-cardiac myosin IHM quasi-atomic model, and used this to identify residues at sites of IHM interactions. These interaction sites were predefined from structural models, without prior knowledge of the location or distributions of HCM or DCM variants. We then examined the locations of a large series of clinically defined cardiomyopathy variants (Walsh et al., 2017). All these independently classified HCM and DCM PVs or LPVs were included in our statistical analyses. Finally, for predefined MYH7 functional regions we compared the total prevalence rare variants (not stratified by clinical consequence) in cardiomyopathy cases and a reference population to derive unbiased and quantitative estimates of clinical interpretability. Code to reproduce statistical analyses (in R) and figures (in Chimera) is available on GitHub (Ware, 2017).
 
-## Myosin II MHC, ELC and RLC sequences
+### Myosin II MHC, ELC and RLC sequences
 
 Sequences include human β-cardiac MHC (P12883), ELC (P08590) and RLC (P10916); chicken skeletal muscle MHC (P13538) and tarantula (Aphonopelma sp.) skeletal muscle ELC (GenBank KT390185), RLC (PDB KT390186) (Zhu et al., 2009) and MHC (GenBank KT619079) (Alamo et al., 2016). Alignments of the human β-cardiac, chicken skeletal and tarantula striated MHC, ELC and RLC that are shown in Figure 3—figure supplements 6–9 were generated with Clustal (Larkin et al., 2007) over the JalView platform (Waterhouse et al., 2009).
 
-## Homology modeling and rigid docking
+### Homology modeling and rigid docking
 
 Human β-cardiac myosin ELC, RLC and MHC (MD and S2) were modeled as described (Alamo et al., 2016). The human β-cardiac myosin interacting-heads motif (Figure 2A and Video 1) has been deposited into the Research Collaboratory for Structural Bioinformatics Protein Data Bank (PDB 5TBY). A rigid fitting of this model was done against the human cardiac negatively stained thick filament 2.8 nm resolution 3D-reconstruction (EMD-2240) (Al-Khayat et al., 2013) using the Chimera ‘Fit in Map’ option (Figure 2A and Video 1) (Pettersen et al., 2004).
 
-## SAXS analysis
+### SAXS analysis
 
-Sample preparation and data collection details for squid HMM are previously reported (Gillilan et al., 2013). Scattering intensity, I(q), is in arbitrary units, with q = 4π sin(θ)/λ in units of Å−1. The wavelength λ = 1.2563 Å and the scattering angle is 2θ as measured from the direct beam. Scattering profiles for PDB 5TBY and tarantula PDB 3JBH were computed using both FoXS (Schneidman-Duhovny et al., 2013) and CRYSOL (Svergun et al., 1995) to compare agreement, especially at scattering angles q > 0.3 Å-1. As described previously, CRYSOL required more than the default number of harmonics (Svergun et al., 1995) for agreement with FoXS in the WAXS regime and the algorithms agreed on the location and magnitude of the difference between the PDB models despite a minor baseline shift (not shown). Currently neither of these methods model flexibility, an effect that could also introduce baseline shifts at wider angles. The FoXS calculations reported here fit both the computed profiles to the squid HMM experimental data using the default parameters of hydration layer, excluded volume, and background adjustment (Gillilan et al., 2013). In the case of Figure 2B,C the ‘profile offset’ optimization was performed to obtain best fit with the data at widest angles (Schneidman-Duhovny et al., 2013). The goodness of fit parameter χ, reported by FoXS, is defined asχ=1M∑i=1M(Iexp(qi)−I(qi)σ(qi))2,
+Sample preparation and data collection details for squid HMM are previously reported (Gillilan et al., 2013). Scattering intensity, I(q), is in arbitrary units, with q = 4π sin(θ)/λ in units of Å−1. The wavelength λ = 1.2563 Å and the scattering angle is 2θ as measured from the direct beam. Scattering profiles for PDB 5TBY and tarantula PDB 3JBH were computed using both FoXS (Schneidman-Duhovny et al., 2013) and CRYSOL (Svergun et al., 1995) to compare agreement, especially at scattering angles q > 0.3 Å-1. As described previously, CRYSOL required more than the default number of harmonics (Svergun et al., 1995) for agreement with FoXS in the WAXS regime and the algorithms agreed on the location and magnitude of the difference between the PDB models despite a minor baseline shift (not shown). Currently neither of these methods model flexibility, an effect that could also introduce baseline shifts at wider angles. The FoXS calculations reported here fit both the computed profiles to the squid HMM experimental data using the default parameters of hydration layer, excluded volume, and background adjustment (Gillilan et al., 2013). In the case of Figure 2B,C the ‘profile offset’ optimization was performed to obtain best fit with the data at widest angles (Schneidman-Duhovny et al., 2013). The goodness of fit parameter χ, reported by FoXS, is defined as
 
-where Iexp(qi) is the experimental scattering profile measured at M points (qi) with error given by σ(qi) Model profiles, I(qi), that agree with the data to within expected noise levels give χ values close to unity. (Gillilan et al., 2013; Schneidman-Duhovny et al., 2013; Svergun et al., 1995)
+$$
+χ=\sqrt{\frac{1}{M}\sumi=1M(\frac{I_{exp}(q_{i})−I(q_{i})}{\sigma(q_{i})})^{2}},
+$$
 
-## Identification of IHM interaction sites
+where $I_{exp}(q_{i})$ is the experimental scattering profile measured at M points $(q_{i})$ with error given by $\sigma(q_{i})$ Model profiles, $I(q_{i})$, that agree with the data to within expected noise levels give χ values close to unity. (Gillilan et al., 2013; Schneidman-Duhovny et al., 2013; Svergun et al., 1995)
+
+### Identification of IHM interaction sites
 
 The analysis of the interactions was done as described (Alamo et al., 2016), using the ‘Protein interfaces, surfaces and assemblies’ (PISA) service at the European Bioinformatics Institute (http://www.ebi.ac.uk/pdbe/prot_int/pistart.html) (Krissinel and Henrick, 2007). Interactions were described as intra- or inter-molecular according to the customary convention used in IHM studies (Woodhead et al., 2005; Alamo et al., 2016).
 
-## Accession numbers
+### Accession numbers
 
 The atomic coordinates of the human β-cardiac myosin IHM quasi-atomic model have been deposited into the Research Collaborators for Structural Bioinformatics as PDB entry 5TBY.
 
-## Curation of HCM and DCM variants
+### Curation of HCM and DCM variants
 
 Variants found in samples from 7427 individuals referred for genetic testing with a referral diagnosis of HCM or DCM, sequenced in accredited diagnostic laboratories with clinical-grade variant interpretation (3826 individuals sequenced at Oxford Medical Genetics Laboratories (Walsh et al., 2017), and 3668 individuals from the Partners HealthCare Laboratory of Molecular Medicine (Pugh et al., 2014; Alfares et al., 2015) were used in our analysis. In total, 6112 HCM patients had MYH7 sequencing, including 4185 also with MYL2 and MYL3 sequencing, while 1315 DCM cases had MYH7 sequencing and 543 DCM also with MYL2 and MYL3 sequencing. First, all curated variants reported as pathogenic by either laboratory (HCM PV, Table 1) were assessed in the mapping analyses (Figure 3A, Supplementary file 3a, Figure 3—figure supplements 1–5). Variants reported as likely pathogenic (HCM LPV, Table 2, Supplementary file 3b, Figure 3A) were then analyzed for replication. Subsequent analyses of specific interactions include HCM PVs and LPVs combined (Table 4, Supplementary file 3a-d). Given the smaller number of variants in DCM, and that PV and LPV behaved similarly in HCM, all DCM PV and LPV were considered together (Tables 3 and 5, Supplementary file 4, Figure 3B).
 
-## Assessing the regional distribution of variants
+### Assessing the regional distribution of variants
 
 To determine whether variants were over-represented in a region of interest (Supplementary files 1, 2), the proportion of variants (Supplementary files 3–5) that fell within the region was compared with the proportion that would be expected under a uniform distribution (given by the length of the region / total protein length). Proportions were compared using a binomial test, implemented in R (Ware, 2017).
 
-## MYH7 variants in the general population
+### MYH7 variants in the general population
 
 In order to confirm the importance of the pre-specified IHM interaction sites (Supplementary file 2), and to determine the strength of the disease association for variants at different sites, we compared the total prevalence of rare variants in the case series described above (irrespective of clinical laboratory classification) with the prevalence amongst reference samples from the Exome Aggregation Consortium (ExAC; Lek et al., 2016); Supplementary files 6, 7). Rare (ExAC global AF <0.0001) missense variants were extracted from the ExAC vcf (version 0.3.1). Analysis was restricted to the ExAC sub-population of European ancestry, as the case series is drawn from a predominantly Caucasian background (Walsh et al., 2017). The median number of ExAC samples genotyped at each variant site was used as the ExAC population size (33,364), and prevalence was compared using the binomial test (Ware, 2017). A disease odds ratio (OR) was estimated (under the assumption that each rare variant was found in a distinct individual), and the etiological fraction (EF) was calculated as (OR – 1)/OR (Ware, 2017). The EF, a commonly used method in epidemiology, estimates the proportion of affected variant carriers in which the variant caused the disease, which can also be interpreted as the probability that an individual rare variant, found in a proband, is responsible for the disease (Greenland and Robins, 1988; Robins and Greenland, 1989; Cole and MacMahon, 1971; Walsh et al., 2017).
 
-## Mapping of the MHC, ELC and RLC HCM and DCM variants to the human β-cardiac myosin IHM structure PDB 5TBY
+### Mapping of the MHC, ELC and RLC HCM and DCM variants to the human β-cardiac myosin IHM structure PDB 5TBY
 
 The sites of 43 curated HCM aa substitutions (Table 1), 95 LPV substitutions (Table 2), and 27 DCM aa substitutions (PVs plus LPVs, Table 3) are shown in Figure 3 and Figure 3—figure supplements 1–5. UCSF Chimera software version 10.2 (Pettersen et al., 2004) was used to build Figures 2A, 3 and 4 and Figure 3—figure supplements 1–5. The Chimera sessions (.py) used for making Figure 2A and Figure 2—figure supplement 2, Figure 3 and Figure 3—figure supplements 1–5 and Figure 4 are available in GitHub (Ware, 2017). A copy is archived at https://github.com/elifesciences-publications/eLife_Alamo2017.
 
-## Assessment of charge changes
+### Assessment of charge changes
 
 In order to determine what proportion of missense changes might be expected to be charge-changing, we determined all possible single nucleotide variant events for MYH7 (1935 codons x nine possible SNV codon changes = 17,415 events). For 12,850 possible missense substitution events, we then determined the charge change: 2681 would lead to a negative charge change, 3604 to a positive charge change, and 6565 would be charge neutral, yielding an expectation that 49% of missense substitutions might be charge changing.
 
-## Estimates of SRX and DRX populations in relaxed skeletal and cardiac muscle
+### Estimates of SRX and DRX populations in relaxed skeletal and cardiac muscle
 
-## Relaxed skeletal muscle
+#### Relaxed skeletal muscle
 
 The proportion of skeletal muscle myosins in the SRX or DRX states has been deduced from the population of heads parallel or perpendicular to the filament axis, using fluorescence polarization from bifunctional rhodamine probes bound to the RLC. In relaxed rabbit psoas muscle, approximately 70% of all myosin heads are parallel to the fiber axis, while ~30% of all myosin heads are perpendicular (Fusi et al., 2015), implying that the head population comprises 50% blocked heads that are all parallel, 20% docked free heads that are parallel and 30% swaying free heads that are perpendicular. According to the relaxed IHM state model for skeletal muscle (Alamo et al., 2016), the blocked head remains docked while the free head sways away for a time ts and is docked only for a time td. Therefore for a total time t = ts + td, the swaying duty cycle Ds is defined as the ratio ts/t. Ds can be estimated in the relaxed skeletal muscles from measurements of the RLC orientation using fluorescence polarization from bifunctional rhodamine probes bound to the skeletal RLC and cardiac RLC (Fusi et al., 2015) (Kampourakis and Irving, 2015). In relaxed demembranated rabbit psoas muscle ~70% of the heads have their RLC orientation roughly parallel to the fiber axis, similar to those in the IHM structure, while the RLC orientation of the remainder ~30% of heads is more perpendicular, which is inconsistent with the IHM structure (Fusi et al., 2015). For the estimation of Ds and the SRX/DRX ratio we assume a population of N myosin molecules, so as each myosin molecule has one free (FH) and one blocked (BH) head, the sub-populations of free (NFH) and blocked (NBH) heads sum NBH + NFH = 2N. The populations of heads measured in the parallel conformation is Npar = NBH-par + NFH-par, while the populations of heads measured in the perpendicular conformation is Nper = NBH-per + NFH-per. In the relaxed state, blocked heads are docked so NBH-per = 0, therefore Nper = NFH-per. As a result the number of heads in the perpendicular conformation Nper = NFH-per = (ts/t)NFH = DsNFH = DsN while the number of free heads in the parallel conformation is NFH-par = NFH - NFH-per = NFH - (ts/t)NFH = NFH -DsNFH = (1-Ds)N. Therefore the number of heads in the parallel conformation is Npar = NBH-par + NFH-par = NBH-par+ (1 - Ds)N, and as NBH-par = N because blocked heads are docked in the relaxed state, then Npar = (2-Ds)N; in contrast the number of heads in the perpendicular conformation is Nper = DsN. Therefore the relative number of heads in the parallel and perpendicular conformations are respectively Npar/2N = (2 - Ds)N/2N = (2- Ds)/2 and Nper/2N = DsN/2N = Ds/2. Finally the ratio R of heads in the parallel and perpendicular conformation is R= Npar/Nper= (2-Ds)/Ds so we conclude that Ds = 2/(1+R). Therefore in skeletal muscle R = 0.70/0.3 = 2.3 so Ds = 0.60. Assuming that FHs spend 60% of the cycle released and swaying, and 40% docked on the blocked head the estimated ratio of skeletal muscle heads in the SRX and DRX states is SRX/DRX = (2 – Ds)/Ds = 2.3, predicting an estimated 2.3-fold reduction of ATP hydrolysis. As skeletal muscle myosin heads rapidly transition out of SRX into DRX, such as occurs with tetanic activation (Hooijman et al., 2011) (Brito et al., 2011), the changing population of myosin SRX and DRX heads in skeletal muscle achieves energy-saving imposed by the IHM structure but retains the ability to rapidly shift myosin into DRX for force potentiation.
 
-## Relaxed cardiac muscle
+#### Relaxed cardiac muscle
 
 Assessment of the population of cardiac myosin heads based on parallel or perpendicular alignment to the filament axis is more complicated because fluorescence analyses of RLC in relaxed ventricular fibers from rat hearts show both orientations (Kampourakis and Irving, 2015). However, because previous studies show that cardiac myosin heads remain in the SRX state with tetanic fiber activation (Hooijman et al., 2011), we deduced that activation of cardiac muscle only impacts free heads in the DRX state; docked blocked heads in the SRX state are not recruited. Supporting this idea, there is rapid re-ordering and presumably re-forming of the IHM following cardiac contraction, a finding that suggests that the IHM must be regenerated during the relaxation phase that follows every heartbeat (Huxley et al., 1982) (Yuan et al., 2015). Based on the assumption that IHM and SRX states are one and the same in cardiac muscle, we calculated the corresponding Ds and SRX/DRX ratios from the fluorescent analysis results of (Kampourakis and Irving, 2015) that showed both parallel and perpendicular orientations. By further assuming that the myosin parallel and perpendicular populations are roughly similar, a conservative estimate of cardiac Ds is 80% and the SRX/DRX ratio is 1.5. This conservative estimate of Ds = 0.8 was considerable higher than skeletal muscle, that is, most free heads are not interacting with the blocked head, with a smaller SRX/DRX of 1.5. Based on these observations, we suggest that cardiac IHM swaying duty cycle Ds should be considerable higher than skeletal muscle, that is, most free heads are not interacting with the blocked head. With these assumptions, the asymmetric configuration of myosin heads in the cardiac IHM would yield savings of one ATP molecule when the free head is docked to blocked head (SRX) that would be lost when swaying free heads increase ATP turnover (DRX, Figure 1A). Moreover, HCM variants in MYH7, MYL2, and MYL3 that impair IHM regulating interactions, like phosphorylation-dependent destabilization of the RLC-RLC interface (Figure 3—figure supplement 7) would reduce SRX:DRX proportions and consume more ATP and promote additional myosin-actin interactions and force.

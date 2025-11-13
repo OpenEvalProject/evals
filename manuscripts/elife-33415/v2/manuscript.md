@@ -42,7 +42,7 @@
 
 ## Abstract
 
-10.7554/eLife.33415.001 In glioma, microglia and infiltrating macrophages are exposed to factors that force them to produce cytokines and chemokines, which contribute to tumor growth and to maintaining a pro-tumorigenic, immunosuppressed microenvironment. We demonstrate that housing glioma-bearing mice in enriched environment (EE) reverts the immunosuppressive phenotype of infiltrating myeloid cells, by modulating inflammatory gene expression. Under these conditions, the branching and patrolling activity of myeloid cells is increased, and their phagocytic activity is promoted. Modulation of gene expression depends on interferon-(IFN)-γ produced by natural killer (NK) cells. This modulation disappears in mice depleted of NK cells or lacking IFN-γ, and was mimicked by exogenous interleukin-15 (IL-15). Further, we describe a key role for brain-derived neurotrophic factor (BDNF) that is produced in the brain of mice housed in EE, in mediating the expression of IL-15 in CD11b + cells. These data define novel mechanisms linking environmental cues to the acquisition of a pro-inflammatory, anti-tumor microenvironment in mouse brain.
+In glioma, microglia and infiltrating macrophages are exposed to factors that force them to produce cytokines and chemokines, which contribute to tumor growth and to maintaining a pro-tumorigenic, immunosuppressed microenvironment. We demonstrate that housing glioma-bearing mice in enriched environment (EE) reverts the immunosuppressive phenotype of infiltrating myeloid cells, by modulating inflammatory gene expression. Under these conditions, the branching and patrolling activity of myeloid cells is increased, and their phagocytic activity is promoted. Modulation of gene expression depends on interferon-(IFN)-γ produced by natural killer (NK) cells. This modulation disappears in mice depleted of NK cells or lacking IFN-γ, and was mimicked by exogenous interleukin-15 (IL-15). Further, we describe a key role for brain-derived neurotrophic factor (BDNF) that is produced in the brain of mice housed in EE, in mediating the expression of IL-15 in CD11b+ cells. These data define novel mechanisms linking environmental cues to the acquisition of a pro-inflammatory, anti-tumor microenvironment in mouse brain.
 
 ## Introduction
 
@@ -56,9 +56,17 @@ Despite the advancement of knowledge regarding the interactions between immune c
 
 ## Results
 
-## Housing mice in EE modulates gene expression, K+ channel functions and morphology of GAM
+### Housing mice in EE modulates gene expression, K+ channel functions and morphology of GAM
 
 To investigate the effect of the macroenvironment on GAMs, C57BL/6 mice housed in standard environment (SE) or EE for 5 weeks after weaning were injected with syngeneic glioma cells (GL261) into the right striatum. Animals were then returned to their original housing cages. A preliminary set of confirmatory experiments was performed to cross validate our experimental system (see Materials and methods). After 17 days, mice were sacrificed and CD11b+ cells were isolated from the ipsi- (ILH) or contra-lateral (CLH) cerebral hemispheres. RT-PCR analysis revealed that CD11b+ cells from the ILH (compared to those from the CLH) of mice housed in SE (SE mice) preferentially express anti-inflammatory markers that include Chil3, Mrc1, Arg1 and Retnla (Gabrusiewicz et al., 2011). Some pro-inflammatory genes, like Tnfa and Nos2, were also upregulated in the ILH, whereas no differences were observed for Cd86 and Il1b. In EE, the gene expression of CD11b+ cells isolated from the ILH was deeply modified, showing the significant increase of pro-inflammatory and reduction of anti-inflammatory genes (Figure 1a). Similar results were obtained when studying CD11b+ cells isolated from the brain of mice injected with a different, less immunogenic murine cell line, CT-2a. Also in this condition, tumor size was significantly reduced in EE mice as compared to SE mice (Figure 1—figure supplement 1a,b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig1-v2.jpg)
+
+**Figure 1.:** (a) RT-PCR of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in CD11b + cells sorted from ILH and CLH of GL261-bearing mice housed in EE or SE. Data are the mean ± S.E.M., **p<0.01 versus CLH by one-way ANOVA; n = 6. (b–c) RT-PCR of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in CD45low/CD11b+/Ly6c–/Ly6g– and CD45+/CD11b+/Ly6c+/Ly6g–cells sorted from ILH and CLH of GL261-bearing mice housed in EE or SE. Data are the mean ± S.E.M., **p<0.01 versus CLH (taken from CD11b + cells in [a]), by one-way ANOVA; n = 5. (d) Comparison of gene expression profiles resulting from EE (n = 2) compared to the SE exposure (n = 2) in microglia from ILH. Each point on the scatterplot represents a gene. The X-axis shows expression ratio (EE/SE) on the log2 scale. Y-axis presents corresponding p-values (–log10[p-value]). Genes that are significantly upregulated after EE exposure (t-test p-value<0.05, fold-change >4) are marked by large purple dots. Global gene expression was determined using Affymetrix microarrays. (e) Results of Gene Ontology over-representation analysis (Bonferroni corrected p-values <0.05) of the genes that are upregulated in microglia after EE exposure (d). X -axis corresponds to –log10-transformed p-values. (f) Expression profile of genes associated with immune response according to the Gene Ontology database and manually selected pro-inflammatory genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The mean tumor volumes at 17 days after implantation of CT-2a cells in mice housed in SE or EE, as indicated. n = 5 **p=0.007, Student’s t-test. (b) RT-PCR analysis of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos, Tnfa, Il1bβ) genes in CD11b+ cells sorted from ILH and CLH of CT-2a-bearing mice housed in EE or SE. Data are the mean ± S.E.M., *p<0.05 **p<0.01 versus CLH by one-way ANOVA; n = 5.
 
 To further define the relative contributions of microglia and myeloid cells recruited from the periphery, we isolated CD11b+/CD45low/Ly6C–/Ly6g– (corresponding to microglia) and CD11b+/CD45+/Ly6C+/Ly6g– (corresponding to infiltrating monocytes) cell populations from the brain hemispheres of tumor-bearing SE or EE mice (Figure 1b,c). The results of the gene expression analysis indicate that in both housing conditions, monocytes only infiltrate the ILH and are virtually absent from the CLH (Figure 1b), whereas microglia are present in both hemispheres (Figure 1c). In the ILH of EE mice, the expression of anti-inflammatory genes was reduced in both microglia and infiltrating monocytes, whereas the expression of anti-tumor, pro-inflammatory genes was increased only in microglia (Figure 1b,c). Consistently, when global expression profiles of the same cell populations were analyzed, similar results were obtained. Genes that were upregulated in microglia from the ILH of EE mice were enriched in Gene Ontology (GO) terms such as ‘response to interferon-gamma’ and ‘innate immune response’ (Figure 1d,e). We also observed the divergent activation of genes that are associated with ‘immune response’, which was further supported by the differential activation of pro-inflammatory genes (Figure 1f).
 
@@ -68,37 +76,77 @@ Myeloid cell morphology was also investigated inside the tumor. Two-photon analy
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig2-v2.jpg)
 
-**Figure 2.:** (a) Left: current/voltage relationship of microglia cells in response to voltage steps stimulation (steps from −170 to +70 mV, only one out of two steps are shown; holding potential −70 mV) in CLH (n = 38/9 mice), peritumoral area (n = 60/9 mice) and inside the tumor (n = 57/9 mice) of SE housed, GL261-bearing mice. Right: Current/voltage relationship of microglia cells in CLH (n = 27/9 mice), peritumoral area (n = 57/9 mice) and inside the tumor (n = 64/9 mice) of EE mice. (b) Percentage of GFP+-cells expressing Kor currents in the peritumoral area in SE and EE mice (∗p<0.05, z-test). Representative current/voltage relationships are shown on the right. (c) Amplitude of Kir current expressed by GFP+ cells in the peritumoral area in SE and EE mice (∗p<0.05, z-test). Representative current/voltage relationships are shown on the right. (d) Left: quantification of area of the soma and scanning domain of GFP+ cells measured by ImageJ in slices from GL261-bearing mice housed in SE or EE, as indicated (15 cells, 6 slices, 4 mice per condition, **p=0.0034, t-test). Center: total branch length of GFP+ cells in SE and EE (**p=0.0046, t-test). Right: representative images of maximum intensity projections of a confocal z-stack imaging on peritumoral area of GFP+ cells in SE and EE mice, converted to binary images and then skeletonized by the Analyze Skeleton plugin in Image J (green lines). (e) Length (left, **p=1.35E-24) and cumulative probability histogram of mean velocity (right, p=0.0053) of spontaneous (basal) movement of all single processes of the peritumoral area measured in SE (red, n = 177 tracks, 6 mice) and in EE (green, n = 210 tracks, 6 mice). Right images show reconstruction of basal process migration tracks in SE and EE. Individual tracks were aligned to the origin. (f) Time course of fluorescent ratio (ΔF/F) measured in a circle (10 μm radius) centered on the tip of the ATP puff pipette, in CLH (black, n = 9/9, SE; n = 7/9, EE), peritumoral (red, n = 11/9, SE; n = 12/9, EE) and intra-tumoral (green, n = 9/9, SE; n = 11/9, EE) areas of slices from Cx3cr1 mice housed in SE or EE. Note that the fluorescence increases around the pipette tip only in the peritumoral area (p<0.05; one-way ANOVA). Right: time course of fluorescence ratio evaluated in the peritumoral area of +/GFPCx3cr1+/GFP mice housed in SE (red, n = 11) and EE (black, n = 12) (p=0.041 at 3 min; p=0.035 at 8 min; p=0.018 at 15 min; t-test). (g) RT-PCR of P2RY12 gene in CD11b+ cells sorted from ILH and CLH of GL261-bearing mice, housed in SE or EE. Data are the mean ± S.E.M., *p<0.05 **p<0.01 versus CLH by one-way ANOVA, n = 4. (h) Representative SE and EE z-projections of GFP+ cells (skeletonized as above) into the tumoral area of Cx3cr1+/GFP mice. Left: 13 cells, 6 slices, 4 mice per condition, **p<0.01, Student’s t-test. Note that the scanning domain in the tumoral area was significantly smaller than that in the peritumoral area (p=0.021; t-test). Right: bar chart reporting the morphometric analysis of microglia branches (total branch length) of SE and EE microglia p=0.0031, t-test). (i) Ultrastructural analysis of cell body circularity and solidity, as well as average number of phagocytic inclusions in SE versus EE myeloid cells. Representative pictures showing IBA1-stained myeloid cells from both conditions are also provided. M = microglial cell body; m = microglial process; s = secretion granule; in = phagocytic inclusion; g = glioma cell. Data are the mean ± S.E.M., **p<0.01 by unpaired t-test; n = 25 cells from two animals in SE and n = 45 cells from three animals in EE.
+**Figure 2.:** (a) Left: current/voltage relationship of microglia cells in response to voltage steps stimulation (steps from −170 to +70 mV, only one out of two steps are shown; holding potential −70 mV) in CLH (n = 38/9 mice), peritumoral area (n = 60/9 mice) and inside the tumor (n = 57/9 mice) of SE housed, GL261-bearing mice. Right: Current/voltage relationship of microglia cells in CLH (n = 27/9 mice), peritumoral area (n = 57/9 mice) and inside the tumor (n = 64/9 mice) of EE mice. (b) Percentage of GFP+-cells expressing Kor currents in the peritumoral area in SE and EE mice (∗p<0.05, z-test). Representative current/voltage relationships are shown on the right. (c) Amplitude of Kir current expressed by GFP+ cells in the peritumoral area in SE and EE mice (∗p<0.05, z-test). Representative current/voltage relationships are shown on the right. (d) Left: quantification of area of the soma and scanning domain of GFP+ cells measured by ImageJ in slices from GL261-bearing mice housed in SE or EE, as indicated (15 cells, 6 slices, 4 mice per condition, **p=0.0034, t-test). Center: total branch length of GFP+ cells in SE and EE (**p=0.0046, t-test). Right: representative images of maximum intensity projections of a confocal z-stack imaging on peritumoral area of GFP+ cells in SE and EE mice, converted to binary images and then skeletonized by the Analyze Skeleton plugin in Image J (green lines). (e) Length (left, **p=1.35E-24) and cumulative probability histogram of mean velocity (right, p=0.0053) of spontaneous (basal) movement of all single processes of the peritumoral area measured in SE (red, n = 177 tracks, 6 mice) and in EE (green, n = 210 tracks, 6 mice). Right images show reconstruction of basal process migration tracks in SE and EE. Individual tracks were aligned to the origin. (f) Time course of fluorescent ratio (ΔF/F) measured in a circle (10 μm radius) centered on the tip of the ATP puff pipette, in CLH (black, n = 9/9, SE; n = 7/9, EE), peritumoral (red, n = 11/9, SE; n = 12/9, EE) and intra-tumoral (green, n = 9/9, SE; n = 11/9, EE) areas of slices from Cx3cr1+/GFP mice housed in SE or EE. Note that the fluorescence increases around the pipette tip only in the peritumoral area (p<0.05; one-way ANOVA). Right: time course of fluorescence ratio evaluated in the peritumoral area of Cx3cr1+/GFP mice housed in SE (red, n = 11) and EE (black, n = 12) (p=0.041 at 3 min; p=0.035 at 8 min; p=0.018 at 15 min; t-test). (g) RT-PCR of P2RY12 gene in CD11b+ cells sorted from ILH and CLH of GL261-bearing mice, housed in SE or EE. Data are the mean ± S.E.M., *p<0.05 **p<0.01 versus CLH by one-way ANOVA, n = 4. (h) Representative SE and EE z-projections of GFP+ cells (skeletonized as above) into the tumoral area of Cx3cr1+/GFP mice. Left: 13 cells, 6 slices, 4 mice per condition, **p<0.01, Student’s t-test. Note that the scanning domain in the tumoral area was significantly smaller than that in the peritumoral area (p=0.021; t-test). Right: bar chart reporting the morphometric analysis of microglia branches (total branch length) of SE and EE microglia p=0.0031, t-test). (i) Ultrastructural analysis of cell body circularity and solidity, as well as average number of phagocytic inclusions in SE versus EE myeloid cells. Representative pictures showing IBA1-stained myeloid cells from both conditions are also provided. M = microglial cell body; m = microglial process; s = secretion granule; in = phagocytic inclusion; g = glioma cell. Data are the mean ± S.E.M., **p<0.01 by unpaired t-test; n = 25 cells from two animals in SE and n = 45 cells from three animals in EE.
 
-## NK cells mediate the effects of environment
+### NK cells mediate the effects of environment
 
 Having previously shown that NK cells actively participate in the process of tumor reduction induced by EE (Garofalo et al., 2015), we wondered whether NK cells could contribute to the EE-induced phenotypic switch of CD11b+ cells. With this aim, glioma-bearing mice were treated with an antibody against NK1.1 to deplete the NK cell population. The efficacy and specificity of this treatment has been shown previously (Garofalo et al., 2015). In SE, NK cell depletion per se modifies the phenotype of CD11b+ cells in tumor-bearing brains towards an anti-inflammatory phenotype (Figure 3a; note that the scale values differ from those in Figure 1a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig3-v2.jpg)
+
+**Figure 3.:** (a) RT-PCR of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in CD11b+ cells sorted from ILH and CLH in vehicle and NK1.1 Ab-treated GL261-bearing mice, housed in SE or EE. Scheme of Ab-NK1.1 administration above. Data are the mean ± S.E.M., **p<0.01 versus CLH by one-way ANOVA; n = 6. (b) Cumulative distributions of distances of GL261 3D iso-surface from NK cells iso-surface, in brain slices from SE- and EE-housed mice. Note that in SE-housed mice, NK cells are significantly more distant from glioma cells than they are in EE (SE n = 14, 6 slices, 4 mice; EE n = 16, 6 slices/4 mice); **p<0.01, Kolmogorov-Smirnov test). Top: representative 3D reconstruction, by Imaris software, of GFP+ cells, Tag-RFP GL261 cells, and NK1.1-positive cells (Alexa Fluor 633 conjugated secondary Ab) in the tumoral area of brain from SE- (left) and EE- (right) housed mice. (Scale bar 10 µm.) (c) Ultrastructural evidence of direct contacts between microglia and NK cells inside the tumor. Examples of microglial processes wrapping around NK cells are provided for both SE and EE. In EE, the increased prevalence of phagocytic inclusions containing intact elements (in; myelinated axon being internalized) or other types of debris that are being digested (*) is shown. Filopodia protruding from the NK cell body where it touches a microglial process are observed in the images. M = microglial cell body; m = microglial process; NK = NK cell; in = phagocytic inclusion; g = glioma cell. (d) NK cells, isolated from the brains of EE and SE GL261-bearing mice, were incubated with GL261 or YAC-1 cells, and degranulation was assessed by FACS analysis of CD107a+ cells. Average values ± SD of CD107a+ cell frequency upon GL261 or YAC-1 cell co-incubations, minus blanks (degranulation in the absence of targets, in three independent experiments). Student’s t-test, *p=0.011. (e) Mean distances of NK cells from endothelial cells in vessels (CD31+ cells) 17 days after GL261 cell transplantation in SE or EE conditions (n = 4 mice per condition; **p=0.001 Student’s t-test, scale bar 0.1 mm). Representative immunofluorescence is shown on the right.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Cumulative distributions of distances of GFP-positive cells 3D isosurface from NK cells iso-surface, in brain slices from SE and EE GL261-bearing mice. Note similar distances in both conditions (SE: n = 14, 6 slices, 4 mice; EE: n = 16, 6 slices, 4 mice). (b) Frequency of GZMb+ and IFN-γ+ cells in the CD3–/NK1.1+ cell populations isolated from the brains of SE or EE mice (n = 3–5; for GZMb *p=0.028 Student’s t-test, for IFN-γ *p=0.029 Student’s t-test.) Representative FACS analyses are shown on the right.
 
 In EE mice with glioma, NK cell depletion blocks CD11b+ cell polarization towards a pro-inflammatory phenotype, demonstrating the importance of NK-CD11b+ intercellular communication for these effects. To explore the mechanisms underlying NK-CD11b+ cell communication, we first looked at their relative distribution within the tumor mass, using two-photon microscopy. We focused on measuring the distance between NK cells and myeloid cells, using Cx3cr1GFP/+ mice in which microglia are green, whereas GL261 glioma cells were visualized with RFP, and NK cells were stained with an Alexa-Fluor 633-conjugated NK1.1 Ab. The data indicate that in the EE condition, the number of NK cells that are in contact with myeloid (GFP+) cells is not significantly different from that in the SE condition (Figure 3—figure supplement 1a). On the other hand, in EE conditions, the frequency of direct contacts between NK cells and glioma cells was significantly increased (Figure 3b), suggesting that these structural interactions underlie the increased NK cell degranulation (see below). Electron microscopic analysis of tumors (Figure 3c) further shows that in EE mice, IBA1+ cells with the ultrastructural characteristics of microglia (Tremblay et al., 2012) and juxtaposed to NK cells contain an increased number of phagocytic vacuoles, sometimes containing cellular elements in the process of being digested. We confirmed (Garofalo et al., 2015) that in the brain of EE mice, there is an increased frequency of NK cells expressing granzyme B and IFN-γ (see Figure 3—figure supplement 1b), and this leads to an increased degranulation of NK cells ex vivo (not shown) which was further increased when challenged against tumor cells (GL261 and YAC-1 cells, Figure 3d).
 
 NK cells were also more distant from CD31+ endothelial cells, probably because of an increased colonization of the brain parenchyma in the EE condition (Figure 3e).
 
-## IFN-γ released by NK cells plays a critical role in the control of glioma growth
+### IFN-γ released by NK cells plays a critical role in the control of glioma growth
 
 Investigating the potential role of IFN-γ as mediator of NK-cell-mediated effect, we demonstrated that glioma-bearing EE mice express higher levels of IFN-γ in the ILH, and that NK cell depletion abolishes this increase (Figure 4a). To confirm the importance of IFN-γ produced upon housing in EE, mice were treated with an IFN-γ−blocking antibody (Ab-anti-IFN-γ), before analyzing the expression of pro- and anti-inflammatory genes in CD11b+ cells isolated from their brains. The efficacy of anti-IFN-γAb treatment was verified by analysis of MHCII protein expression in infiltrating CD11b+ cells, brain IgG staining (Figure 4—figure supplement 1a–b), and CD31+ cell density in the tumor area, as described below. IFN-γ depletion completely abolishes the effect of EE on CD11b+ cell phenotypic changes (Figure 4b). This treatment has consequences similar to those of NK cell depletion (Garofalo et al., 2015), reducing the effect of EE on tumor volume and inhibiting the pro-survival effect (Figure 4c–d). EE and IFN-γ depletion alone have opposite effects on angiogenesis. EE housing reduces the extent of CD31 staining, probably because of the production of angiostatic chemokines (Coughlin et al., 1998); whereas IFN-γ depletion per se increases angiogenesis. When the two treatments are combined, the reduction induced by EE is less pronounced but still maintained (Figure 4e). The blunted effect of EE on tumor size reduction was at least partially dependent on a reduced inhibition of tumor cell proliferation, as more Ki67+ cells were present in the tumor mass of IFN-γ-depleted mice (Figure 4f), in accordance with the anti-proliferative activity of IFN-γ. The effect of IFN-γ depletion was also investigated in mice injected with CT-2a glioma cells: data shown in Figure 4—figure supplement 2a–b demonstrate similar effects on tumor size and modulation of CD11b+ cell phenotype.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig4-v2.jpg)
+
+**Figure 4.:** (a) Expression of IFN-γ in CLH and ILH of GL261-bearing mice treated with vehicle or Ab anti-NK1.1 as indicated, and housed in SE or EE. (n = 5–4, **p<0.01, one-way ANOVA.) (b) RT-PCR of anti- and pro-inflammatory genes in CD11b+ cells sorted from ILH and CLH in vehicle and Ab-anti-IFN-γ treated GL261-bearing mice, housed in SE or EE. Above: scheme of Ab-anti-IFN-γ administration. Data are the mean ± S.E.M., **p<0.01 versus CLH, one-way ANOVA; n = 4. (c) Analysis of GL261 tumor volume (expressed in mm3 ± s.e.m.) in IgG Rat or Ab-anti-IFN-γ-treated mice, housed in SE or EE; n = 5; **p<0.01, two-way ANOVA). (d) Kaplan–Meier analyses of GL261-transplanted mice exposed to SE or EE upon vehicle or Ab-anti-IFN-γ treatment; n = 5; log-rank test **p<0.01. (e) Quantification of CD31+ cells (mean ± S.E.M. of CD31+area as % of the tumor area, **p<0.05, one-way ANOVA, n = 4 mice per condition) 17 days after GL261 transplantation in mice treated with IgG-Rat or Ab-anti-IFN-γ, as indicated. Representative immunofluorescences are shown on the right. (f) Quantification of Ki67+ cells (mean ± s.e.m. of Ki67+ area as % of the tumor area, **p<0.05, one-way ANOVA, n = 4 mice per condition) 17 days after GL261 transplantation in mice treated with IgG-Rat or Ab-anti-IFN-γ, as indicated. Representative immunofluorescences are shown on the right. (g) RT-PCR of human pro- (Cxcl10, Nos2 and Il12a) and anti-inflammatory (Cd163, Mmp12 and Tgfb) genes in CD11b+ cells sorted from patient-derived GBM tissue, after tissue treatment with IFN-γ (20 ng/ml, 24 hr) or vehicle. Above: scheme of human GBM treatment. Data are the mean ± S.E.M., for Nos2 and Il12a *p=0.029, for Tgfb and mmp12**p=0.002, for cd163 p=<0.001 versus vehicle, Student’s t-test, n = 3–6.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) RT-PCR of mhcII mRNA expression in CD11b+ cells isolated from ILH and CLH cerebral hemispheres of Ab anti-IFN-γ-treated GL261-bearing mice, housed in SE or EE. Data are expressed as the mean ± S.E.M., *p<0.05 **p<0.01 versus CLH, one-way ANOVA, n = 4. (b) Representative immunofluorescence images of rat IgG in the ILH of vehicle- (left) or Ab-anti-IFN-γ-treated (right) GL261-bearing mice.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Analysis of tumor volume (expressed as mm3 ± s.e.m.) in CT-2a-bearing mice treated with IgG (rat) or Ab-anti-IFN-γ, housed in SE or EE; n = 5; **p<0.01, two-way ANOVA). (b) RT-PCR of anti- and pro-inflammatory genes in CD11b+ cells sorted from ILH and CLH in vehicle- and Ab-anti-IFN-γ-treated CT-2a-bearing mice, housed in SE or EE. Above: scheme of Ab-anti-IFN-γ administration. Data are the mean ± S.E.M., **p<0.01 versus CLH, one-way ANOVA; n = 3.
 
 All together, these data indicate that the IFN-γ produced by NK cells upon housing in EE is responsible for the phenotypic modification of CD11b+ cells, reduction of tumor size, and increased survival of glioma-bearing mice.
 
 To investigate the effect of IFN-γ on human GAMs, we stimulated human GBM tissues with IFN-γ or vehicle for 24h and then analyzed the CD11b+ cell population. Figure 4g shows that IFN-γ treatment decreases expression of the human anti-inflammatory genes Cd163, Mmp12 and Tgfb, and increases expression of the pro-inflammatory genes Il12a, Nos2 and Cxcl10.
 
-## IL-15 is required as an intermediate modulator of the effect of EE on NK cells
+### IL-15 is required as an intermediate modulator of the effect of EE on NK cells
 
 We next sought to verify the hypothesis that IL-15 produced by CD11b+ cell in the brain of EE mice (Garofalo et al., 2015) could be involved in the IFN-γ-mediated effect of NK cells on the polarization of CD11b+ cells. To this aim, IL-15 was infused into mouse brains for one week, starting 10 days after the tumor implantation. Previous experiments demonstrated that this treatment increases the survival of glioma-bearing mice and reduces tumor size (Garofalo et al., 2015). We here confirm that tumor size reduction also occurred in mice injected with CT-2a cells or cancer stem cells (CD133+-GL261 cells) and in SCID mice xenografted with the human glioblastoma U87MG cell line (see Figure 5—figure supplement 1a). We also confirmed that IL-15 infusion increases the number of CD3–/NK1.1+ cells (NK cells) in the brains of tumor-implanted mice (Figure 5—figure supplement 1b). These cells were mostly activated, being CD69+ and expressing granzyme B and IFN-γ (Figure 5—figure supplement 1c–e). In accordance, chronic infusion of IL-15 increased IFN-γ levels in the brains of glioma-bearing mice. The IL-15-induced increase of IFN-γ depends on NK cells, being absent in mice treated with an anti-NK 1.1 Ab (Figure 5a). We then investigated the effect of IL-15 on myeloid cell phenotype. CD11b+ cells isolated from the brains of glioma-bearing mice treated with IL-15, as described in the scheme of Figure 5a, showed a phenotype shifted towards the pro-inflammatory state, with significantly increased expression of pro- and reduced expression of anti-inflammatory genes (Figure 5b). Similar results were obtained when animals were injected with CT-2a cells (Figure 5—figure supplement 1f). In accordance with this modulation of gene expression, IL-15 treatment also reduced the amount of CD68+ and F4/80+/CD68+ cells in the tumor mass (Figure 5c), indicative of reduced activation of GAMs. Interestingly, the IL-15-dependent modulation of gene expression was completely absent in glioma-bearing mice in which NK cells were depleted (Figure 5d), further supporting the hypothesis that IL-15 modulates CD11b+ cell phenotype by acting through NK cells.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig5-v2.jpg)
+
+**Figure 5.:** (a) Left: mice housed in SE were infused for 7 days in the striatum, with vehicle or IL-15 through micro-osmotic pumps, starting 10 days after GL261 cell transplantation, as described in the scheme. Right: expression of IFN-γ in CLH and ILH of GL261-bearing mice treated with vehicle or Ab anti-NK1.1 as indicated, implanted with osmotic pumps releasing IL-15 or vehicle (n = 5, **p<0.01, one-way ANOVA). (b) RT-PCR of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in CD11b+ cells sorted from ILH and CLH of GL261-bearing mice treated with IL-15 or vehicle. Data are expressed as mean ± S.E.M., *p<0.05 **p<0.01 versus CLH, one-way ANOVA; n = 4. (c) Myeloid cell activation (CD68) and infiltration (F4/80) in glioma mass in mice treated with IL-15 or vehicle, as shown in (a), analyzed at the end of treatment (17 days after glioma transplantation). Graph bars represent the mean (± S.E.M.) area expressed as percentage of total tumor area. Representative immunofluorescences are shown on the right (scale bar, 100 μm) (**p=0.002 *p=0.011 Student’s t-test; n = 4 mice per conditions). (d) RT-PCR of anti- and pro-inflammatory genes in CD11b+ cells isolated from ILH and CLH of GL261-bearing mice in vehicle and Ab-anti-NK1.1-treated mice, upon IL-15 or vehicle infusion, as shown in (a). Data are expressed as the mean ± S.E.M., **p<0.01 versus CLH, one-way ANOVA; n = 4. (e) Analysis of tumor volumes (expressed as mm3 ± S.E.M.) in wt or Il15ra–/– mice, housed in SE or EE; n = 5; **p<0.01, two-way ANOVA). Representative coronal sections are shown on the right. (f) RT-PCR of anti- and pro-inflammatory genes in CD11b+ cells sorted from ILH and CLH in Il15ra–/– mice, housed in SE or EE. Data are the means ± S.E.M., **p<0.01 versus CLH, one-way ANOVA; n = 4–5. (g) RT-PCR of Il15 mRNA in CD11b+ cells sorted from ILH and CLH of GL261-bearing mice treated with BDNF or vehicle. Data are the mean ± S.E.M., *p<0.05 versus CLH, one-way ANOVA; n = 5. Above: scheme of striatal infusion of vehicle or BDNF with micro-osmotic pumps starting 10 days after glioma cell transplantation and lasting 7 days, in SE mice. (h) RT-PCR of Il15 mRNA in CD11b+ cells isolated from ILH and CLH in wt or Bdnf+/– GL261 bearing mice, housed in SE or EE. Data are the mean ± S.E.M., *p<0.05 versus CLH, one-way ANOVA, n = 4. (i) RT-PCR of Il15 mRNA in primary mouse microglia stimulated with vehicle, LPS + IFNγ or IL-4 or in co-culture with GL261 for 24 h, in the presence or absence of BDNF. Data are expressed as the mean ± S.E.M., *p<0.05 **p<0.01, one-way ANOVA, n = 10.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Mean tumor volumes (expressed as mm3 ± s.e.m.), 17 days after implantation of human U87MG, purified CD133 +GL261, or murine CT-2a glioma cells into the striatum of SCID or C57BL/6 mice, upon IL-15 or vehicle infusion, as indicated; *p=0.026, **p<0.001, **p=0.003. Student’s t-test. n = 4–5. (b) CD3–/NK1.1+ cell frequency in the ILH upon IL-15 infusion (n = 6; *p=0.04 Student’s t-test). Representative FACS analysis is shown on the right. (c–e) Percentage of CD69+, GZMb+ and IFN-γ+ cells in the CD3–/NK1.1+ cell populations isolated from the brain of vehicle- or IL-15-treated GL261-bearing mice (n = 3–6; **p=0.003, *p=0.015, *p=0.013 Student’s t-test). Representative FACS analyses are shown on the right. (f) RT-PCR analysis of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in CD11b+ cells sorted from ILH and CLH of CT-2a-bearing mice treated with IL-15 or vehicle. Data are expressed as mean ± S.E.M., *p<0.05 **p<0.01 versus CLH, one-way ANOVA; n = 4.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) RT-PCR of il-15 mRNA in GL261 cells treated with BDNF or vehicle for 24 hr. (b) RT-PCR of anti- (Chil3, Mrc1, Arg1, Retnla) and pro-inflammatory (Cd86, Nos2, Tnfa, Il1b) genes in primary mouse microglia treated with BDNF (50 ng/ml, 24 hr) or vehicle. Data are the mean ± S.E.M., *p<0.05 versus vehicle, one-way ANOVA; n = 4.
+
 The role of IL-15 in modulating the effect of EE was also confirmed with glioma Il15ra–/– mice: in these animals, we observed increased tumor size in SE, and a smaller effect of reducing tumor size in EE (Figure 5e). In addition, in CD11b+ cells isolated from the brain of Il15ra–/– mice, the modulation of gene expression induced by EE was fully abolished (Figure 5f), thus demonstrating a key role for IL-15 signaling in modulating GAMs' phenotype.
 
-## Brain-derived growth factor produced in the brain of EE mice modulates NK cell activation through IL-15
+### Brain-derived growth factor produced in the brain of EE mice modulates NK cell activation through IL-15
 
 BDNF expression markedly increases during exposure to an EE (Sale et al., 2014). We investigated the possible effects of BDNF on glioma biology, demonstrating that the infusion of BDNF in mouse brain induces IL-15 production by CD11b+ cells (Figure 5g). In line with the hypothesis that BDNF is a key neurotrophin in mediating the effects of EE, we observed that Bdnf -/+ EE mice have no increased production of IL-15 in CD11b+ cells (Figure 5h). We also analyzed BDNF-induced IL-15 expression in vitro, using primary microglial cell cultures obtained after stimulation with vehicle, with LPS + IFN-γ or with IL-4, or co-cultured with GBM. We observed that BDNF induced IL-15 production by microglia only upon treatment with IL-4 or co-culture with glioma cells (Figure 5i). Control experiments confirmed that glioma cells were not the source of IL-15 (Figure 5—figure supplement 2a). In vitro experiments, performed to evaluate whether BDNF could directly modulate the pro- and anti-inflammatory gene expression by microglia, demonstrate no direct effects (Figure 5—figure supplement 2b).
 
-## Role of peripheral monocytes in EE: depletion experiments
+### Role of peripheral monocytes in EE: depletion experiments
 
 To evaluate the differential contribution of brain resident- versus infiltrating-myeloid cells in modulating the effects of EE on CD11b+ cell phenotype and tumor size, we first analyzed CD11b+/Ly6c+monocyte infiltration in the whole brain. We report a reduction in the frequency of CD11b+/Ly6c+ cells expressed as a percentage of infiltrating CD45+ cells in the brain of EE mice (Figure 6a). Mice were treated with clodronate-containing liposomes to deplete peripheral phagocytes (Van Rooijen and Sanders, 1994). The efficacy of depletion was verified by FACS analysis. We observed a significant reduction in the extent to which the CD11b+/Ly6c+ cell population infiltrates the brain, and in the number of F4/80+/Ly6c+cells in the spleen (Figure 6—figure supplement 1). In these mice, the housing conditions induced a minor variation of gene expression: in particular, in SE, the CD11b+ cells extracted from the ILH expressed all the anti-inflammatory markers analyzed except for CD206 (consistent with a selective peripheral phagocyte depletion). In EE mice, we observed a general decrease of anti-inflammatory genes accompanied by a significant increase of pro-inflammatory genes (Figure 6b). We also evaluated the effect of peripheral phagocyte depletion on tumor size (Figure 6c). In these mice, even in SE, tumor size is reduced, as expected considering the role of infiltrating cells in favoring tumor growth. In EE, clodronate-treated animals had a smaller tumor with respect to those in SE (Figure 6c), although the reduction was less than that in control mice treated with empty liposomes. (reduction of tumor volume in EE: 75.6 ± 6.6% for empty liposomes; 45.8 ± 9.6% for clodronate-filled liposomes, *p<0.05), suggesting the involvement of peripheral phagocytes in EE-induced tumor size reduction.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig6-v2.jpg)
+
+**Figure 6.:** (a) Percentage of CD11b+ and Ly6c+ cells in the total CD45+ cell population obtained from the brain of EE or SE GL261-bearing mice (n = 5–6; *p=0.012, Student’s t-test). Representative FACS analyses are shown below. (b) RT-PCR of anti- and pro-inflammatory genes in CD11b+ cells sorted from ILH and CLH in empty or clodronate-filled liposome-treated mice, housed in SE or EE. Data are the mean ± S.E.M., **p<0.01 versus CLH by one-way ANOVA; n = 4. (c) Analysis of tumor volume (expressed as mm3 ± S.E.M.) in liposome filled with clodronate or empty liposomes-treated GL261-bearing mice, housed in SE or EE; n = 5; *p<0.05 **p<0.01, two-way ANOVA). Representative coronal section are shown on the right.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33415/elife-33415-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** On top, scheme of liposome administration.
 
 ## Discussion
 
@@ -116,134 +164,424 @@ To establish a mechanistic link between the variations in the macroenvironment a
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 Salts, glucose, adenosine 5’-triphosphate magnesium salt (Mg-ATP), hematoxylin, eosin, Percoll, BSA and deoxyribonuclease I were from Sigma-Aldrich (Milan, Italy). Transwell inserts were from BD Labware (Franklin Lakes, NJ). F4/80 (#NB300-141, RRID:AB_2246477) and NKp46 (M100) (#sc-18161, RRID:AB_2149152) antibodies (Abs) were from Santa Cruz Biotechnology (Santa Cruz, CA). LPS is from Immunotools (Friesoythe, Germany). CD31 (#3568S, RRID:AB_10694616) and Ki67 (#12202, RRID:AB_2620142) Abs were from Cell Signaling (Danvers, MA). CD68 Ab (#MCA1957T, RRID:AB_322219) was from AbD Serotec (Oxford, UK). Secondary Abs were from DAKO (Milan, Italy). Culture media, fetal bovine serum (FBS), goat serum, penicillin G, streptomycin, glutamine, Na pyruvate, Thermo Script RT–PCR System and Hoechst (#33342, RRID:AB_10626776) were from GIBCO Invitrogen (Carlsbad, CA, USA). BDNF, IL-15 and IFN-γ were from Immunological Sciences (Rome, Italy). IFN-γ ELISA kit was from eBioscience (San Diego, CA). Microbeads CD11b+ were from Miltenyi Biotec (Bologna, Italy). RNeasy Mini Kit was from Qiagen (Hilden, Germany). CD45, CD69, CD133, NK1.1 Abs, IL-15 were from eBioscience Inc., (San Diego, CA). Rat anti-mouse CD16/CD32 Ab was from BD Pharmingen (Milan Italy), and Rabbit anti-Iba1 from Wako (VA, USA). Osmotic pump (Alzet model 1007D, 100 ml; 0.5 ml/h), cannula (Azlet brain infusion kit 3) were from Charles River, Italy. Rat anti–IFN-γ monoclonal antibody (clone: XMG1.2, BioXcell), clodronate and empty liposomes were from Encapsula NanoSciences (Brentwood, TN).
 
-## Mice and cell lines
+### Mice and cell lines
 
 Experiments described in the present work were approved by the Italian Ministry of Health in accordance with the guidelines on the ethical use of animals from the European Community Council Directive of September 22, 2010 (2010/63/EU). We used C57BL/6 (WT) and CB17/Icr-Prkdcscid/IcrIcoCrI (SCID) (RRID:IMSR_RBRC02771) mice from Charles River Laboratories; B6.129S4-Bdnftm1Jae/J (Bdnf+/–) (RRID:IMSR_JAX:002266), B6.129×1-Il15ratm.1Ama/J (Il15ra–/–) (#3702076, RRID:MGI:3702076) and heterozygous Cx3cr1+/GFP from The Jackson Laboratory. We always used two-month-old male mice. The GL261 glioma cell line (RRID:CVCL_Y003) (kindly provided by Dr. Serena Pellegatta, Istituto di Ricovero e Cura a Carattere Scientifico, Besta, Milan, Italy) and GL261-CD133+ were cultured in DMEM supplemented with 20% heat inactivated FBS, 100 IU/ml penicillin G, 100 μg/ml streptomycin, 2.5 μg/ml amphotericin B, 2 mM glutamine, and 1 mM sodium pyruvate. The U87MG (RRID:CVCL_0022) and CT-2a cell lines (established by Thomas N. Seyfried) and the primary murine microglia were cultured in DMEM supplemented with 10% FBS.
 
 None of the cell lines used was in the database of commonly misidentified cell lines maintained by ICLAC and NCBI Biosample. The cell lines were authenticated by STR profiling by the vendors and tested in our laboratory for mycoplasma contamination (negative).
 
-## Environmental Enrichment (EE)
+### Environmental Enrichment (EE)
 
 Three-week-old male mice (C57BL/6, Cx3cr1+/GFP, Il15ra–/– or Bdnf+/) were either housed in standard environment (SE) or EE. Mice exposed to SE were housed in pairs, in standard cages (30 cm × 16 cm × 11 cm), whereas mice exposed to EE were housed 10 in a cage (36 cm × 54 cm × 19 cm), in the presence of an assortment of objects, including climbing ladders, seesaws, running wheel, balls, plastic, and wood objects suspended from the ceiling, paper, cardboard boxes, and nesting material. Toys were changed every 2 days, and the bedding was changed every week. Both EE and SE groups received an identical type of rodent chow and water ad libitum and were kept on a 12 h light/dark cycle.
 
 The detailed housing conditions are described in Table 1. Mice were kept in EE or SE for 5 weeks before brain implantation of human or murine glioma cells, then were left in their original cages for an additional 17 days. To cross validate our results, we performed preliminary experiments to evaluate the effects of various EE factors on tumor (GL261) volume: (i) housing mice in a different room; (ii) changing the person who manipulated the animals; (iii) handling mice in SE the same number of times as those in EE; and (iv) housing mice in EE before tumor injection and then in SE.
 
-## Isolation of CD11b-positive cells and extraction of total RNA
+**Table 1.**
+ Housing conditions in enriched environment (EE).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variables</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EE cage size (cm)</td>
+      <td>36 x54 x19</td>
+    </tr>
+    <tr>
+      <td>EE cage composition</td>
+      <td>polycarbonate</td>
+    </tr>
+    <tr>
+      <td>Control cage</td>
+      <td>polycarbonate</td>
+    </tr>
+    <tr>
+      <td>EE floor space/mouse (cm 2)</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td># Mice/EE cage</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Stimulating toys/objects in EE cage</td>
+      <td>2 running wheels, tunnels, 2 refuges 1 swing, with nesting material</td>
+    </tr>
+    <tr>
+      <td>Objects varied regularly?</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Strain of mice</td>
+      <td>C57BL/6</td>
+    </tr>
+    <tr>
+      <td>Sex of mice</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>EE, control cages in same room?</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Lighting</td>
+      <td>12 hours on/off</td>
+    </tr>
+    <tr>
+      <td>Temp (degrees C)</td>
+      <td>22 ± 1</td>
+    </tr>
+    <tr>
+      <td>Bedding</td>
+      <td>Sawdust</td>
+    </tr>
+    <tr>
+      <td>Humidity control?</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Cleaning schedule</td>
+      <td>Once a week</td>
+    </tr>
+    <tr>
+      <td>Food based on wheat, oats, meat, soy and milk?</td>
+      <td>Yes (14% protein, 5% fat, 3041 kcal ME/kg)</td>
+    </tr>
+    <tr>
+      <td>Microbiota endemic in animal facility</td>
+      <td>Norovirus, Helicobacter</td>
+    </tr>
+    <tr>
+      <td>Age of mice put in cage initially</td>
+      <td>3 weeks</td>
+    </tr>
+    <tr>
+      <td># weeks habituation</td>
+      <td>5 weeks</td>
+    </tr>
+    <tr>
+      <td>Tumor injected</td>
+      <td>GL261</td>
+    </tr>
+    <tr>
+      <td>Route injected</td>
+      <td>intrastriatal</td>
+    </tr>
+    <tr>
+      <td># Cells injected</td>
+      <td>7.5×104</td>
+    </tr>
+    <tr>
+      <td>Mouse handling frequency</td>
+      <td>Every 3 days</td>
+    </tr>
+    <tr>
+      <td>Statistical significance in tumor size?</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation of CD11b-positive cells and extraction of total RNA
 
 Glioma bearing C57BL/6, Il15ra-–/– or Bdnf+/– mice were anesthetized and decapitated. Brains were removed, brain tissues were cut into small pieces and single-cell suspension was achieved in Hank's balanced salt solution (HBSS). The tissue was further mechanically dissociated using a glass wide-tipped pipette and the suspension was applied to a 30 μm cell strainer (Miltenyi Biotec). Cells were processed immediately for MACS MicroBead separation. CD11b+ cells were magnetically labelled with CD11b MicroBeads. The cell suspension was loaded onto a MACS Column placed in the magnetic field of a MACS Separator and the negative fraction was collected. After removing the magnetic field, CD11b+ cells were eluted as a positive fraction. Live CD11b+ cells were assessed by immunofluorescence and flow cytometry (FACS). After sorting the positive and negative fractions, total RNA was isolated with RNeasy Mini Kit, and processed for real-time PCR. The quality and yield of RNAs were verified using the NANODROP One system (Thermo Scientific).
 
-## Isolation of CD11b+ cells from human GBM
+### Isolation of CD11b+ cells from human GBM
 
 Tumor specimens obtained from adult patients with GBM who gave informed consent to the research proposals (IRCCS Neuromed) were dissociated and treated for 24h with IFN-γ (20 ng/ml) or vehicle. Tissues were then processed as described above to isolate CD11b+ cells and mRNAs were analyzed by RT-PCR for gene expression.
 
-## Preparation of CD133+GL261 cells
+### Preparation of CD133+GL261 cells
 
 Single-cell suspensions from cultured GL261 cells were incubated for 10 min at 4°C with rat anti-mouse CD16/CD32 Ab (1:250) and for 30 min at 4°C with CD133 Ab (1:75). The CD133+ GL261 cell population was isolated using phycoerythrin anti-mouse CD133 Ab using a BD FACS AriaII (BD Biosciences). The purity of cell population was verified using flow cytometry (~90%). Sorted CD133+ GL261 cells were maintained in DMEM with 20 ng ml−1 fibroblast growth factor-2, 20 ng ml−1 EGF and heparin 10 U ml−1, for 24 before brain transplantation.
 
-## Real-time PCR
+### Real-time PCR
 
 CLH or ILH of injected mice, housed in EE or SE, were lysed in Trizol reagent for isolation of RNA. Reverse transcription reaction of brain hemispheres or CD11b+ and CD11b– fractions collected by MACS was performed in a thermocycler (MJ Mini Personal Thermal Cycler; Biorad) using IScript TM Reverse Transcription Supermix (Biorad) according to the manufacturer's protocol, under the following conditions: incubation at 25°C for 5 min, reverse transcription at 42°C for 30 min, inactivation at 85°C for 5 min. Real-time PCR (RT-PCR) was carried out in a I-Cycler IQ Multicolor RT-PCR Detection System (Biorad) using SsoFast EvaGreen Supermix (Biorad) according to the manufacturer's instructions. The PCR protocol consisted of 40 cycles of denaturation at 95°C for 30 s and annealing/extension at 60°C for 30 s. For quantiﬁcation analysis, the comparative Threshold Cycle (Ct) method was used. The Ct values from each gene were normalized to the Ct value of GAPDH in the same RNA samples. Relative quantiﬁcation was performed using the 2−ΔΔCt method (Schmittgen and Livak, 2008) and expressed as fold change in arbitrary values. The following primers were used.
 
-GeneSpeciesPrimer forward (5’−3’)Primer Reverse (3’−5’)Arg1MouseCTCCAAGCCAAAGTCCTTAGAGAGGAGCTGTCATTAGGGACATCCd86MouseAGAACTTACGGAAGCACCCAGGCAGATATGCAGTCCCATTMrc1MouseCAAGGAAGGTTGGCATTTGTCCTTTCAGTCCTTTGCAAGTRetnlaMouseCCAATCCAGCTAACTATCCCTCCACCCAGTAGCAGTCATCCCAGapdhMouseTCGTCCCGTAGACAAAATGGTTGAGGTCAATGAAGGGGTCIl1bMouseGCAACTGTTCCTGAACTCAACTATCTTTTGGGGTCCGTCAACTNos2MouseACATCGACCCGTCCACAGTATCAGAGGGGTAGGCTTGTCTCTnfaMouseGTGGAACTGGCAGAAGAGCCATAGAACTGATGAGAGGChil3MouseCAGGTCTGGCAATTCTTCTGAAGTCTTGCTCATGTGTGTAAGTGAIl15MouseCATCCATCTCGTGCTACTTGTGTTCATCTATCCAGTTGGCCTCTGTTTP2ry12MouseCCTGTCGTCAGAGACTACAAGGGATTTACTGCGGATCTGAAAGCd163HumanTCTGGCTTGACAGCGTTTGTGTGTTTGTTGCCTGGATTMmp12HumanAGGAATCGGGCCTAAAATTGTGCTTTTCAGTGTTTTGGTGATgfbHumanCCAACTATTGCTTCAGCTCCACGTGTCCAGGCTCCAAATGTAGGCxcl10HumanGTGGCATTCAAGGAGTACCTCTGATGGCCTTCGATTCTGGATTNos2HumanCAGCGGGATGACTTTCCAAAGGCAAGATTTGGACCTGCAIl12aHumanCTCCTGGACCACCTCAGTTTGGGTGAAGGCATGGGAACATTGapdhHumanCCCCTTCATTGACCTCAACTACGATGACAAGCTTCCCGTTCTC
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Species</th>
+      <th>Primer forward (5’−3’)</th>
+      <th>Primer Reverse (3’−5’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Arg1</td>
+      <td>Mouse</td>
+      <td>CTCCAAGCCAAAGTCCTTAGAG</td>
+      <td>AGGAGCTGTCATTAGGGACATC</td>
+    </tr>
+    <tr>
+      <td>Cd86</td>
+      <td>Mouse</td>
+      <td>AGAACTTACGGAAGCACCCA</td>
+      <td>GGCAGATATGCAGTCCCATT</td>
+    </tr>
+    <tr>
+      <td>Mrc1</td>
+      <td>Mouse</td>
+      <td>CAAGGAAGGTTGGCATTTGT</td>
+      <td>CCTTTCAGTCCTTTGCAAGT</td>
+    </tr>
+    <tr>
+      <td>Retnla</td>
+      <td>Mouse</td>
+      <td>CCAATCCAGCTAACTATCCCTCC</td>
+      <td>ACCCAGTAGCAGTCATCCCA</td>
+    </tr>
+    <tr>
+      <td>Gapdh</td>
+      <td>Mouse</td>
+      <td>TCGTCCCGTAGACAAAATGG</td>
+      <td>TTGAGGTCAATGAAGGGGTC</td>
+    </tr>
+    <tr>
+      <td>Il1b</td>
+      <td>Mouse</td>
+      <td>GCAACTGTTCCTGAACTCAACT</td>
+      <td>ATCTTTTGGGGTCCGTCAACT</td>
+    </tr>
+    <tr>
+      <td>Nos2</td>
+      <td>Mouse</td>
+      <td>ACATCGACCCGTCCACAGTAT</td>
+      <td>CAGAGGGGTAGGCTTGTCTC</td>
+    </tr>
+    <tr>
+      <td>Tnfa</td>
+      <td>Mouse</td>
+      <td>GTGGAACTGGCAGAAGAG</td>
+      <td>CCATAGAACTGATGAGAGG</td>
+    </tr>
+    <tr>
+      <td>Chil3</td>
+      <td>Mouse</td>
+      <td>CAGGTCTGGCAATTCTTCTGAA</td>
+      <td>GTCTTGCTCATGTGTGTAAGTGA</td>
+    </tr>
+    <tr>
+      <td>Il15</td>
+      <td>Mouse</td>
+      <td>CATCCATCTCGTGCTACTTGTGTT</td>
+      <td>CATCTATCCAGTTGGCCTCTGTTT</td>
+    </tr>
+    <tr>
+      <td>P2ry12</td>
+      <td>Mouse</td>
+      <td>CCTGTCGTCAGAGACTACAAG</td>
+      <td>GGATTTACTGCGGATCTGAAAG</td>
+    </tr>
+    <tr>
+      <td>Cd163</td>
+      <td>Human</td>
+      <td>TCTGGCTTGACAGCGTTTG</td>
+      <td>TGTGTTTGTTGCCTGGATT</td>
+    </tr>
+    <tr>
+      <td>Mmp12</td>
+      <td>Human</td>
+      <td>AGGAATCGGGCCTAAAATTG</td>
+      <td>TGCTTTTCAGTGTTTTGGTGA</td>
+    </tr>
+    <tr>
+      <td>Tgfb</td>
+      <td>Human</td>
+      <td>CCAACTATTGCTTCAGCTCCAC</td>
+      <td>GTGTCCAGGCTCCAAATGTAGG</td>
+    </tr>
+    <tr>
+      <td>Cxcl10</td>
+      <td>Human</td>
+      <td>GTGGCATTCAAGGAGTACCTC</td>
+      <td>TGATGGCCTTCGATTCTGGATT</td>
+    </tr>
+    <tr>
+      <td>Nos2</td>
+      <td>Human</td>
+      <td>CAGCGGGATGACTTTCCAA</td>
+      <td>AGGCAAGATTTGGACCTGCA</td>
+    </tr>
+    <tr>
+      <td>Il12a</td>
+      <td>Human</td>
+      <td>CTCCTGGACCACCTCAGTTTG</td>
+      <td>GGTGAAGGCATGGGAACATT</td>
+    </tr>
+    <tr>
+      <td>Gapdh</td>
+      <td>Human</td>
+      <td>CCCCTTCATTGACCTCAACTAC</td>
+      <td>GATGACAAGCTTCCCGTTCTC</td>
+    </tr>
+  </tbody>
+</table>
 
-## Microarray gene expression profiling
+### Microarray gene expression profiling
 
 Microglia were isolated from ILH of EE or SE mice 17 days after GL261 injection. Total RNA was extracted using the RNeasy kit (Qiagen, Germany). The amount and quality of the RNA were determined with RNA 6000 Nano Kit (Agilent Technologies, Santa Clara (CA)) and Bioanalyzer 2100 (Thermo Scientific, Germany). Microarray experiments were performed with 100 ng of total RNA and HT-MG-430 PM Affymetrix strip according to the manufacturer’s User Guide for the GeneAtlas Personal Microarray System (Affymetrix, Santa Clara, CA, USA) . All microarray data analyses were performed in the R statistical environment and relevant Bioconductor software (RRID:SCR_001905). The raw data were pre-processed using RMA. Annotation of probe sets was performed with information provided in the Ensembl database. Because of the low number of samples, changes in gene expression levels were evaluated with Welsch t-test, and a high fold-change threshold (>4) was used to minimize the number of false positives. Genes were assigned to Gene Ontology terms according to the GO stats Bioconductor package, and Fisher exact test followed by Bonferroni correction were used to identify overrepresented GO terms.
 
-## In vivo NK cell depletion
+### In vivo NK cell depletion
 
 C57BL/6 mice were treated with Ab anti-NK1.1 (mAb PK136, 200 μg in 100 μl) by i.p. injections repeated with the following scheme: 2 days before glioma transplantation, and at day 0, 2 and 7 after glioma transplantation. At 7 and 17 days after glioma surgery, NK cell depletion from blood was verified as described (Garofalo et al., 2015).
 
-## In vivo IFN-γ depletion
+### In vivo IFN-γ depletion
 
 Mice housed in EE or SE were treated with a single dose of rat mAb anti–IFN-γ (XMG1.2, 2 mg) or control mAb isotype, by i.p. injection on the same day as glioma transplantation, and then every 5 days until the mice were sacrificed.
 
-## Clodronate liposome administration
+### Clodronate liposome administration
 
 Depletion of peripheral phagocytes was performed using clodronate-filled liposomes or empty liposomes as control. C57BL/6 mice housed in EE or SE were injected with GL261 cells and treated with clodronate 2.5 mg/ml in 100 μl of liposomes. Liposomes were injected i.p. 4 days before, during and every 4 days after glioma transplantation until the mice were sacrificed. 7 and 17 days after glioma implantation, cell depletion was verified from brain and spleen sample sorting cells by FACS for CD11b/Ly6C or F4/80/Ly6C staining.
 
-## Isolation of microglia or infiltrating monocytes
+### Isolation of microglia or infiltrating monocytes
 
 The CLH or ILH of glioma-bearing C57BL/6 mice were cut into small pieces and the tissue was mechanically dissociated using a wide-tipped glass pipette. The suspension was then passed through a 70 μm nylon cell strainer. CD11b+ cells, isolated by MACS, were further selected for CD45low, CD11b+, Ly6c–, Ly6g–, or for CD45+, CD11b+, Ly6c+, Ly6g– by FACS Aria II (BD Biosciences). Cell purity was verified by flow cytometry. After cell sorting, total RNA was isolated by RNeasy Mini Kit and processed for real-time PCR.
 
-## NK cell degranulation assay
+### NK cell degranulation assay
 
 GL261 cells were seeded in a 96-well plate at 2 × 103 cells/well the day before the assay. Brain immune cells from SE and EE tumor-bearing mice were enriched by centrifugation on percoll 40%, washed in PBS and co-incubated for 4h at 37°C with GL261 or YAC-1 cell lines at 2: 1 effector:target ratio in complete RPMI 1640 medium (Hepes 10mM + Monensin 100 μM + Il-2 100U/well). FITC-conjugated anti-mouse CD107a or anti-IgG were added into appropriate wells 3h before the end of the assay. Cells were immunostained with fluorochrome-conjugated anti-CD3 Ab, anti-NK1.1 Ab, anti-CD45.2 Ab to identify NK cells and analyzed by FACS analysis.
 
-## Measurement of IFN-γ by ELISA
+### Measurement of IFN-γ by ELISA
 
 After 17 days from glioma transplantation, ILH and CLH of EE or SE mice were disrupted with a homogenizer and were analyzed for IFN-γ content using a sandwich ELISA, following the manufacturer’s instructions. Briefly, 96-well ELISA microplates were coated with anti-IFN-γ monoclonal Ab. Samples or IFN-γ standard were added at the appropriate dilution and incubated for 2h at room temperature. After careful washing, biotinylated goat anti-human IFN-γ was added to each well; horseradish-peroxidase was used as secondary Ab and optical density was read at 450 nm.
 
-## Osmotic pump implantation
+### Osmotic pump implantation
 
 Ten days after glioma transplantation, 8-week-old male C57BL/6 or SCID mice were implanted with an osmotic pump (Alzet model 1007D, 100 µl; 0.5 µl/h; Charles River, Italy) in the right striatum. Before surgery, mice were anaesthetized and placed on the stereotaxic apparatus to implant a cannula (Alzet brain infusion kit 3) into the right striatum, through the same hole used for glioma injection. The cannula was sealed with dental cement and connected to the Alzet pump. Before surgery, the pumps and the tubing were incubated at 37°C overnight in a sterile saline solution for priming. The pump was then placed into a subcutaneous pocket in the dorsal region. The pumps were ﬁlled with vehicle (PBS), BDNF (60 ng/μl) or IL-15 (30 ng/μl), and infusion lasted 7 days. The BDNF and IL-15 doses were selected on the basis of previous in vitro experiments (Garofalo et al., 2015).
 
-## Primary microglial cultures and co-cultures with glioma cells
+### Primary microglial cultures and co-cultures with glioma cells
 
 Microglia cultures were obtained from mixed glia cultures derived from the cerebral cortices of post-natal day 0–1 (p0–p1) C57BL/6 mice, as described (Lauro et al., 2010). In brief, cortices were chopped and digested in 15 U/ml papain for 20 min at 37°C. Cells (5 × 105 cells/cm2) were plated on ﬂasks coated with poly-L-lysine (100 mg/ml) in DMEM supplemented with 10% FBS, 100 U/ml penicillin, and 0.1 mg/ml streptomycin. After 7–9 days, cells were shaken for 2h at 37°C to detach and collect microglial cells. These procedures gave almost pure microglial cell populations.
 
 Primary microglia cultures were co-cultured with the GL261 glioma cell line on 0.4 μm pore size polycarbonate membranes of transwells for 24 hr. Microglia were plated (5 × 104 cells) at the bottom of the dish and GL261 cells (8 × 104 cells) on the polycarbonate membrane.
 
-## Microglial polarization
+### Microglial polarization
 
 Primary microglia cultures were treated for 24h with LPS 100 ng/ml + IFN-γ 20 ng/ml, or IL-4 20 ng/ml to induce cell polarization, and then for an additional 24h in the presence or absence of BDNF 100 ng/ml.
 
-## Isolation of leukocytes
+### Isolation of leukocytes
 
 Seventeen days after glioma transplantation, mice were perfused intra-cardially with PBS and the brain rapidly removed; hemispheres were separated, placed into 5 mL of ice-cold PBS containing 0.2% bovine serum albumin (BSA), 0.01 mol/L EDTA, and 1 mg/ml deoxyribonuclease I. The hemispheres were disrupted in a glass homogenizer and passed through a 70 μm nylon cell strainer (Becton Dickinson). The suspension was centrifuged at 400 g for 10 min at RT and the pellets re-suspended in 4 ml of 40% Percoll (Amersham Pharmacia Biotech). Percoll was prepared by dilution in Hanks’ balanced salt solution (HBSS). The gradient was centrifuged at 1600 rpm for 20 min at RT; the cell pellet was subsequently collected (approximately 0.5 ml) and washed once with HBSS containing 10% FBS. After removal of contaminating erythrocytes, cells were counted, and 30–50 ml of whole blood cells were washed and re-suspended in staining buffer. Cells were then blocked by incubation in ice with anti-CD16/CD32 (24G2) to prevent nonspecific and Fc-mediated binding. After 10 min, a mixture of the appropriate antibodies was added. Cells were further incubated on ice for 30 min, washed and analyzed using a FACSCanto II (BDBiosciences). Data were elaborated using the FlowJo Version 7.6 software (Tree Star).
 
-## Intracranial injection of glioma
+### Intracranial injection of glioma
 
 Male C57BL/6, SCID, Cx3cr1+/GFP, Il15ra–/– or Bdnf+/– mice were anesthetized with chloral hydrate (400 mg/kg, i.p.) and placed in a stereotaxic head frame. Animals were stereotactically injected with 7.5 × 104 GL261 or GL261-CD133+ cells, 8 × 104 CT-2a cells, and 5 × 104 U87MG cells: a median incision of ~1 cm was made, a burr hole was drilled in the skull, and cells were injected 2 mm lateral (right) and 1 mm anterior to the bregma in the right striatum. Cell suspensions, in PBS (4 μl) were injected with a Hamilton syringe at a rate of 1 μl/min at 3 mm depth. After 17 days, animals were sacrificed for different analyses.
 
-## Histopathological evaluation of tumor volume
+### Histopathological evaluation of tumor volume
 
 After 17 days from glioma cells injection, brains were isolated for morphological evaluation of tissues and fixed in 4% buffered formaldehyde. Coronal brain sections (20 μm) were prepared by standard procedures and stained with hematoxylin and eosin. A section every 100 μm was collected, and the tumor area was evaluated using Image Tool 3.00.
 
-## Survival analysis
+### Survival analysis
 
 Following injection of the glioma cells, mice were treated with Ab anti-IFN-γ or vehicle every 5 days and were monitored daily. The endpoint was deﬁned by the lack of physical activity or death. The probability of survival was calculated using the Kaplan–Meier method, and statistical analysis was performed using a log-rank test.
 
-## Immunostaining
+### Immunostaining
 
 Seventeen days after injection of glioma cells, mice were overdosed with chloral hydrate (400 mg/kg, i.p.) and then intra-cardially perfused with PBS; brains were then isolated and ﬁxed in 4% formaldehyde and snap frozen. Cryostat sections (20 μm) were washed in PBS, blocked (3% goat serum in 0.3% Triton X-100) for 1 h at RT, and incubated overnight at 4°C with speciﬁc antibodies diluted in PBS containing 1% goat serum and 0.1% Triton X-100. The sections were incubated with the following primary Abs: anti-F4/80 (1:50), anti-CD68 (1:200), anti-Ki67 (1:200), anti-CD31 (1:200), and anti-Nkp46 (1:100). After several washes, sections were stained with the ﬂuorophore-conjugated antibody and Hoechst for nuclei visualization and analyzed using a ﬂuorescence microscope. For co-immunofluorescence, the secondary antibody was subsequently used. For F4/80 staining, coronal sections were first boiled for 20 min in citrate buffer (pH 6.0) at 95–100°C.
 
-## Image acquisition and data analysis
+### Image acquisition and data analysis
 
 Images were digitized using a CoolSNAP camera (Photometrics) coupled to an ECLIPSE Ti-S microscope (Nikon) and processed using MetaMorph 7.6.5.0 image analysis software (Molecular Device). Slices were scanned by consecutive ﬁelds of vision (x 10 objective lens) to build a single image per section. Data were expressed as area occupied by ﬂuorescent cells versus total tumor area (by converting pixel to mm [Graeber et al., 2002]). For comparison between different treatments, at least 12 coronal sections per brain around the point of injection were analyzed.
 
-## Slice preparation
+### Slice preparation
 
 Acute coronal brain slices were prepared from SE and EE Cx3cr1+/GFP mice (Jung et al., 2000) injected with Tag-RFP GL261 cells (Garofalo et al., 2015), in chilled artificial cerebrospinal fluid (ACSF) containing (in mM): NaCl 125, KCl 2.3, CaCl2 2, MgCl2 1, NaHPO4 1, NaHCO3 26 and glucose 10. The ACSF was continuously oxygenated with 95% O2, 5% CO2 to maintain physiological pH. Coronal 250 μm slices were cut at 4°C with a vibratome (DSK, Kyoto, Japan), placed in a chamber containing oxygenated ACSF and allowed to recover for at least 1h at RT (24–25 °C). All recordings were performed at RT on slices submerged in ACSF and perfused (1 ml/min) with the same solution in the recording chamber under the microscope.
 
-## Time-lapse imaging in brain slices
+### Time-lapse imaging in brain slices
 
 Time-lapse fluorescence determinations were acquired at RT using a customized digital imaging microscope. Excitation of GFP was achieved using a Cairn Research – OptoScan monochromator. Fluorescence was visualized using an upright microscope (Olympus) equipped with a 40x water-immersion objective and a digital 14 bit CCD camera system (Cool SNAP MYO, Photometrics). All the peripheral hardware controls, image acquisition and processing were achieved using Metafluor software (Molecular Device). A glass pipette containing ATP (2 mM) was placed in the center of the tumoral or peritumoral areas or in the CL striatum. Mg-ATP was pressure applied to the slices (100 ms; 5 p.s.i.) with a Pneumo pump (WPI). Changes in GFP fluorescence distribution were monitored by acquiring a fluorescent image every 10 s for 50 min. To quantify the speed of process rearrangement toward the pipette tip, we measured the increase of GFP fluorescence in a circular area centered on the pipette tip (10 µm radius). At each time point, the fluorescence increase in the area was calculated as ΔF = F F0, and then divided by F0 (ΔF/F0, where F0 is the average fluorescence before ATP puff), to normalize the difference in basal GFP fluorescence in slices from the two conditions. Slices were used from 2 to 7h after cutting.
 
-## Whole-cell patch-clamp recordings
+### Whole-cell patch-clamp recordings
 
 Visually identified GFP-expressing cells were patched in whole-cell configuration in the tumoral area, peritumoral area and CLH striatum. Micropipettes (4–5 MΩ) were usually filled with a solution containing (in mM): KCl 135, BAPTA 5, MgCl2 2, HEPES 10, and Mg-ATP 2 (pH 7.3 adjusted with KOH, osmolarity 290 mOsm). Voltage-clamp recordings were performed using an Axopatch 200B amplifier (Molecular Devices). Currents were filtered at 2 kHz, digitized (10 kHz) and acquired using Clampex 10 (Molecular Devices). The analysis was performed off-line using Clampfit 10 (Molecular Devices). The current/voltage (I/V) relationship of each cell was determined by applying voltage steps from −170 to +70 mV (ΔV = 10 mV) for 50 ms holding the cell at −70 mV between steps. Resting membrane potential and membrane capacitance were measured at the start of recording. Outward- and inward-rectifier K+ current amplitude was evaluated after subtraction of the leak current by a linear fit of the I/V curve between −100 and −50 mV. Cells were considered as expressing the outward-rectifier K+ current when the I/V relationship showed a rectification above −30 mV and the amplitude measured at 0 mV was at least 5 pA, after leak subtraction; similarly, cells showing a small inward rectification below −100 mV were classified as expressing the inward rectifier K+ current when the subtracted current amplitude was at least 5 pA at −150 mV.
 
 Membrane capacitance (Cm) of patched cells was estimated as the total charge (i.e., the current integral, Q step) mobilized in each cell by a 10 mV depolarizing step (V step): Q step/V step. Resting membrane potential (RP) and membrane resistance (Rm) were measured immediately after membrane rupture. Average values of Cm, Rm and RP are reported in Table 2.
 
-## Process movement
+**Table 2.**
+ Passive properties of patched microglia: membrane capacitance (Cm), resting membrane potential (RP) and membrane resistance (Rm) were measured as described in the methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cm (pF)</th>
+      <th>Rm (MΩ)</th>
+      <th>RP (mV)</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tum SE</td>
+      <td>26 ± 2</td>
+      <td>1.5 ± 0.1</td>
+      <td>–45 ± 3</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Tum EE</td>
+      <td>26 ± 1</td>
+      <td>2.1 ± 0.2</td>
+      <td>–46 ± 2</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Peri SE</td>
+      <td>27 ± 1</td>
+      <td>1.9 ± 0.2</td>
+      <td>–43 ± 4</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Peri EE</td>
+      <td>25 ± 1</td>
+      <td>2.2 ± 0.2</td>
+      <td>–49 ± 3</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>CLH SE</td>
+      <td>18 ± 3</td>
+      <td>2.7 ± 0.4</td>
+      <td>–53 ± 3</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>CLH EE</td>
+      <td>20 ± 1</td>
+      <td>2.4 ± 0.3</td>
+      <td>–47 ± 4</td>
+      <td>27</td>
+    </tr>
+  </tbody>
+</table>
+
+### Process movement
 
 Image stacks were processed using the ImageJ ‘Manual Tracking’ plug-in (http://imagej.nih.gov/ij/plugins/track/track.html) as previously described (Pagani et al., 2015). Briefly, stacks were initially background subtracted to optimize contrast. Track positions of single processes were transferred into a new coordinate system, in which the initial position of each track was set as the origin (x = 0, y = 0). For each moving process (i), with position vector Ri(t), the change in position from one frame to the next (ΔRi[t]) and the instantaneous velocity (vi[t]) were given by ΔRi(t)=Ri(t+Δt)−Ri(t), and vi(t)=ΔRi(t)/Δt respectively, where Δt is the elapsed time between the two frames. The mean velocity of each process was calculated as <v>= dx/dt, expressed in μm/min, defining dx as the mean accumulated distance of each process i sampled within the time interval dt. Migration length of single processes was also analyzed using the ‘Manual Tracking’ plug-in tool. Quantitative distributions of track parameters were analyzed with Origin 7 (OriginLab Co.) software.
 
-## Morphological analysis of myeloid cells and 3D reconstruction
+### Morphological analysis of myeloid cells and 3D reconstruction
 
 Brain slices from perfused brains were analyzed by confocal microscopy and skeleton analysis to assess myeloid cell morphology using endogenous GFP signal. Twenty μm z-stacks were acquired at 0.5 μm intervals using an FV1000 laser scanning microscope (Olympus) at ×60 objective. Cell morphology was measured in tumoral and peritumoral region using a method adapted from that described by Morrison and Filosa (2013). Maximum intensity projections for the GFP channel of each image were generated, binarized, and skeletonized using the Skeletonize 2D/3D plugin in ImageJ, after which the Analyze Skeleton plugin (http://imagej.net/AnalyzeSkeleton) was applied. The average branch number (process end points per cell) and length per cell were recorded for each image with a voxel size exclusion limit of 150 applied. The number of single and multiple junction points was additionally calculated to give an indication of branching complexity. The areas of the soma and scanning domain were measured for each cell. 3D reconstruction of NK cells, GL261 and myeloid cells was achieved by confocal microscopy analysis with a FV1200 (Olympus) Laser Scanning System, at 60x magnification. Myeloid and GL261 cells were detected using endogenous GFP and RFP signals respectively, NK cells were identified with an Alexa fluor 633 conjugated NK1.1 antibody. Acquisition files were then processed with ImageJ software for two-dimensional analysis. Three-dimensional reconstructions were generated with Imaris software (Bitplane, Zurich, Switzerland) and morphometric analysis of each reconstructed cell, both in acute slices and in perfused brain sections, was performed after surface and volume rendering. Distance plugin of Imaris software was applied to evaluate distances between surfaces of NK cells, GL261 and microglia.
 
-## Electron microscopy
+### Electron microscopy
 
 Immunoperoxidase staining for electron microscopy was performed as described previously (Tremblay et al., 2010; Bisht et al., 2016). Briefly, mice housed in EE or SE were anesthetized with sodium pentobarbital (80 mg/kg, i.p.) and perfused through the aortic arch with 0.1% glutaraldehyde in 4% paraformaldehyde. Only mice for which the perfusion was optimal were included in the study; brain sections containing the tumor were washed in PBS, quenched with 0.3% H2O2, then with 0.1% NaBH4, washed in Tris-buffered saline (TBS; 50 mM at pH 7.4) containing 0.01% Triton X100, and processed freely floating for immunostaining. Sections were blocked in TBS containing 10% FBS, 3% BSA and 0.01% Triton X100, prior to overnight incubation at 4°C with primary antibody (rabbit anti-Iba1 1:1000). Sections were then incubated with secondary antibodies (biotin-conjugated goat anti-rabbit IgG 1:200) for 1.5h. Staining was amplified by the ABC Vecta stain system (Vector laboratories), and revealed using diaminobenzidine (DAB; 0.05%) and hydrogen peroxide (0.015%) in TBS for 5 min. Sections were further processed for electron microscopy as follows: they were post-fixed in 1% osmium tetroxide and dehydrated using increasing concentrations of ethanol and finally immersed in propylene oxide. Following dehydration, sections were impregnated with Durcopan resin (EMS) overnight at RT, mounted between ACLAR embedding films (EMS), and cured at 55°C for 72h. Specific regions of interest were excised and mounted on resin blocks for ultrathin sectioning.
 
 Ultrathin (65–80 nm) sections were cut and collected on bare square mesh grids (EMS) using an ultramicrotome (Leica Ultracut UC7) and imaged at 80kV with a FEI Tecnai Spirit G2 transmission electron microscope. Profiles of neurons, synaptic elements, microglia, myeloid cells, astrocytes, oligodendrocytes, and myelinated axons were identified according to well-established criteria. Microglia were identified both by their Iba1 immunoreactivity and by their association with extracellular space, with distinctive long stretches of endoplasmic reticulum, and with small elongated nuclei (Tremblay et al., 2010, 2012). Myeloid cell bodies were photographed at various magnifications between 800x and 9300x using an ORCA-HR digital camera. In these images, we analyzed the size and shape of myeloid cells, ultrastructural features of microglia, contacts with NK and tumor cells, as well as phagocytic activity. All the analysis was performed by investigators blinded to the experimental conditions using FIJI.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are shown as the mean ± SEM. Statistical significance was assessed by Student’s t-test, one-way ANOVA or two-way ANOVA for parametrical data, as indicated; Holm–Sidak test was used as a post hoc test; Mann–Whitney Rank test and Kruskal–Wallis for non-parametrical data, followed by Dunn’s or Tukey’s post hoc tests. For multiple comparisons, multiplicity-adjusted p-values are indicated in the corresponding figures (*p 0.05, **p 0.01). For the Kaplan–Meier analysis of survival, the log-rank test was used. Statistical analyses comprising calculation of degrees of freedom were done using Sigma Plot 11.0, Imaris; Origin 7, and Prism 7 software. I/V plots, cumulative distribution plots, and fitted data points were constructed by linear or nonlinear regression analysis using Origin 7 software. Statistical significance for cumulative distributions was assessed with Kolmogorov-Smirnov test.

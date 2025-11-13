@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02vjkv261 Institute for Neurosciences of Montpellier, Univ Montpellier, Inserm, CNRS Montpellier France
+1. Institute for Neurosciences of Montpellier, Univ Montpellier, Inserm, CNRS Montpellier France ([ROR:02vjkv261](https://ror.org/02vjkv261))
 
 † Corresponding author
 

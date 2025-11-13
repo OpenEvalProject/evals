@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Department of Molecular and Cellular Biology, University of California, Davis Davis United States
-2. https://ror.org/00hj8s172 Department of Physiology and Cellular Biophysics, Columbia University Irving Medical Center New York United States
-3. https://ror.org/00hj8s172 The Robert N. Butler Columbia Aging Center, Columbia University Irving Medical Center New York United States
+1. Department of Molecular and Cellular Biology, University of California, Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Department of Physiology and Cellular Biophysics, Columbia University Irving Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. The Robert N. Butler Columbia Aging Center, Columbia University Irving Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
 ## Abstract
 
-Respiratory complex I is a proton-pumping oxidoreductase key to bioenergetic metabolism. Biochemical studies have found a divide in the behavior of complex I in metazoans that aligns with the evolutionary split between Protostomia and Deuterostomia. Complex I from Deuterostomia including mammals can adopt a biochemically defined off-pathway ‘deactive’ state, whereas complex I from Protostomia cannot. The presence of off-pathway states complicates the interpretation of structural results and has led to considerable mechanistic debate. Here, we report the structure of mitochondrial complex I from the thoracic muscles of the model protostome Drosophila melanogaster . We show that although D. melanogaster complex I ( Dm -CI) does not have a NEM-sensitive deactive state, it does show slow activation kinetics indicative of an off-pathway resting state. The resting-state structure of Dm -CI from the thoracic muscle reveals multiple conformations. We identify a helix-locked state in which an N-terminal α-helix on the NDUFS4 subunit wedges between the peripheral and membrane arms. Comparison of the Dm -CI structure and conformational states to those observed in bacteria, yeast, and mammals provides insight into the roles of subunits across organisms, explains why the Dm -CI off-pathway resting state is NEM insensitive, and raises questions regarding current mechanistic models of complex I turnover.
+Respiratory complex I is a proton-pumping oxidoreductase key to bioenergetic metabolism. Biochemical studies have found a divide in the behavior of complex I in metazoans that aligns with the evolutionary split between Protostomia and Deuterostomia. Complex I from Deuterostomia including mammals can adopt a biochemically defined off-pathway ‘deactive’ state, whereas complex I from Protostomia cannot. The presence of off-pathway states complicates the interpretation of structural results and has led to considerable mechanistic debate. Here, we report the structure of mitochondrial complex I from the thoracic muscles of the model protostome Drosophila melanogaster. We show that although D. melanogaster complex I (Dm-CI) does not have a NEM-sensitive deactive state, it does show slow activation kinetics indicative of an off-pathway resting state. The resting-state structure of Dm-CI from the thoracic muscle reveals multiple conformations. We identify a helix-locked state in which an N-terminal α-helix on the NDUFS4 subunit wedges between the peripheral and membrane arms. Comparison of the Dm-CI structure and conformational states to those observed in bacteria, yeast, and mammals provides insight into the roles of subunits across organisms, explains why the Dm-CI off-pathway resting state is NEM insensitive, and raises questions regarding current mechanistic models of complex I turnover.
 
 ## Introduction
 
@@ -32,11 +32,43 @@ Complicating the structural elucidation of the coupling mechanism is the fact th
 
 Nonetheless, the A-to-D transition is not universally conserved across species (Maklashina et al., 2003). Biochemical characterization of CI from bacteria and more recently the ciliate Tetrahymena thermophila has failed to detect a deactive state using the standard NEM approach (Maklashina et al., 2003; Zhou et al., 2022). Structural analysis of the T. thermophila CI demonstrated that its PA/MA interface is more extensive than in other species (Zhou et al., 2022), likely precluding the opening of the complex in the same manner observed in mammals (Agip et al., 2018; Kampjut and Sazanov, 2020) and E. coli (Kolata and Efremov, 2021; Kravchuk et al., 2022). Although fungi and metazoans diverged approximately 1300 million years ago they form a broad clade of eukaryotes known as the opisthokonts and are thus more closely related to each other than either is to the ciliate T. thermophila. This suggests that the A-to-D transition may be a biochemical feature of CI that evolved in early opisthokonts. However, even within the opisthokonts the A-to-D transition is not universally detected. An NEM-sensitive D-state is seen in the CI of all characterized fungi but within metazoans, it is observed in deuterostomes but absent in protostomes (Figure 1A; Maklashina et al., 2003). Deuterostomes and protostomes diverged after the evolution of bilaterians approximately 600 million years ago (Dunn et al., 2014). This indicates either the loss of an ancestral NEM-sensitive D-state in Protostomia or the evolution of distinct, though biochemically similar, D-states in Fungi and Deuterostomia. It is important to note that across opisthokonts, and eukaryotes more broadly, CI from very few species have been biochemically characterized in detail. Thus, the evolution of this biochemical feature of the complex remains poorly understood.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-v1.jpg)
+
+**Figure 1.:** (A) Dendrogram showing biochemically characterized CI from Opisthokonts. Distinct groups are highlighted with Fungi in yellow and metazoans in blue (Protostomia in dark blue and Deuterostomia in cyan). ‘D’ indicates the presence of a NEM-sensitive deactive state in the CI of the species. A minus sign indicates the absence of a NEM-sensitive deactive state in the CI of the species. A question mark indicates that the species has not been biochemically characterized for the presence of the deactive state. A star indicates that structures of CI from that species are currently available. (B, C) Functional characterization of A-to-D transition in isolated mitochondrial membranes of D. melanogaster (B) and S. scrofa (C) by spectroscopic measurement of NADH dehydrogenase activity at 340 nm in the presence of the indicated concentrations of N-ethylmaleimide (NEM) and pre-activation with 5 μM NADH or water. Individual values, average, and SEM are shown, n=7–8. Statistical analysis with ANOVA with Šídák’s multiple comparisons tests. **p<0.01; ****p<0.0001; n.s. denotes not significant. (D–G) Time courses of NADH oxidation reveal an off-pathway resting state in Dm-CI. NADH oxidation was measured by the change in absorbance at 340 nm of deactivated CI in mitochondrial membranes with or without pre-activation with 5 µM NADH. (D) S. scrofa with or without 2 mM NEM (n=3–4). (E) D. melanogaster with or without 2 mM NEM (n=3–5). (F) S. scrofa with or without 5 mM MgCl2 (n=3). (G) D. melanogaster with or without 5 mM MgCl2 (n=3–4). The average time course is plotted for each condition with standard error for each timepoint shown as the shaded boundary. (H) Cryo-EM reconstruction of Dm-CI colored by subunit.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative chromatogram of two sucrose gradient fractionations of digitonin-extracted and amphopol A8-35-exchanged D. melanogaster mitochondrial complexes. The sucrose gradient profile of Dm-CI purified in glyco-diosgenin (GDN), without exchange into A8-35 looked similar. (B) Blue-native PAGE (BN-PAGE) of fractions from (A) visualized by CI in gel activity staining. (C–F) Representative traces of A-to-D transition of partially purified detergent extracted deactivated CI samples with or without pre-activation with 5 µM NADH. (C) S. scrofa treated with 2 mM NEM (n=4–5), (D) D. melanogaster treated with 2 mM NEM (n=4), (E) S. scrofa treated with 10 mM MgCl2 (n=3–5), and (F) D. melanogaster treated with 10 mM MgCl2 (n=3–4). The average time course is plotted for each condition with standard error for each timepoint shown as the shaded boundary.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** A total of 10,761, movies were collected on a 200 kV Glacios microscope with K3 detector, from which 698,452 particles were initially picked using CrYOLO (Wagner et al., 2019). In CryoSPARC (Punjani et al., 2017), 2D classification revealed classes corresponding to CI, CIII2, and ATPase. After further particle classification via 3D ab initio reconstruction, a total of 293,389 Dm-CI particles were obtained. Homogenous refinement followed by non-uniform refinement (Punjani et al., 2020) resulted in an initial map of 3.7 Å. Further refinement with global and local CTF corrections and Bayesian polishing in RELION Zivanov et al., 2020; Zivanov et al., 2019 followed by local refinement using masks around the Dm-CI peripheral arm, membrane arm, and full mask in CryoSPARC, resulted in a final map of 3.3 Å.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Dm-CI’s 14 core subunits are in colored surface; accessory subunits are shown as gray cartoons. (B) Dm-CI’s 29 accessory subunits are in colored surface; 14 core subunits are shown as gray cartoon. The subunits are colored as in Figure 1.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The electron transfer pathway and the conserved hydrophilic axis are shown on a transparent surface of the overall structure. (B) The redox cofactors of the electron transfer pathway of Dm-CI are shown. The FES clusters are shown as spheres colored by the element. The dashed lines indicate the edge-to-edge distances. (C-G) Density of Dm-CI co-factors: ubiquinone (CoQ), 2′-deoxyguanosine-5′-triphosphate (dGTP) in NDUFA10, NADPH in NDUFA9, flavin mononucleotide (FMN) in NDUFV1, and acyl-phosphopantetheine in NDUFAB1-α, respectively. (H) The hydrophilic axis along the membrane arm of Dm-CI is show. Core subunits that form the membrane arm are shown as cylinders, colored as in Figure 1. The conserved residues that constitute the hydrophilic axis are shown in stick colored by subunit. (I) The distribution of lipids is shown. (J, K) Representative density of lipids cardiolipin (CDL) (J) 1,2-diacyl-SN-glycero-3-phosphocholine (PC1) (K).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A, B) Mitochondrial preparations from thoraces of two-day-old flies with the genotypes indicated were analyzed by BN-PAGE, followed by Western blotting with the antibodies shown. Panels A and B are biological replicates.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Newly identified NDUFA3 of Dm-CI is shown as a cartoon embedded in the colored density. (B) The position of NDUFA3 density as identified in the overall Dm-CI is highlighted in red. The cryogenic electron microscopy (CryoEM) map is colored according to the subunits as in Figure 1.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** The subunits are shown as colored cartoons Y. lipolytica (blue), D. melanogaster (orange), and O. aries (yellow).
+
 Further structural and biochemical analyses of CI in organisms without an A-to-D transition are needed to determine whether the observed conformational changes are catalytic or part of the off-pathway deactive state. Specifically, structural and functional characterization of a protostomian CI, like that from the model insect D. melanogaster, would be an important target due to its relatively close evolutionary relationship to the most well-characterized mammalian complexes. D. melanogaster is a genetically tractable system, has a similar ETC to humans, and is an emerging model for CI assembly and regulation (Garcia et al., 2017; Murari et al., 2022; Murari et al., 2021; Murari et al., 2020; Rhooms et al., 2019; Xu et al., 2019). Furthermore, CI is an established target for insecticides and agricultural pesticides (Murai and Miyoshi, 2016). Particularly with the emergence of Drosophila suzukii as a major pest for soft summer fruits (Tait et al., 2021), it is important to elucidate the structure of CI from a Drosophila species to identify unique aspects of CI in this genus. Here, we report the functional and structural characterization of thoracic muscle Dm-CI.
 
 ## Results
 
-## D. melanogaster CI possesses a NEM-insensitive off-pathway resting state
+### D. melanogaster CI possesses a NEM-insensitive off-pathway resting state
 
 We assayed for the presence of an A-to-D transition in Dm-CI from thoracic muscles using the established NEM sensitivity assay on isolated mitochondrial membranes (Figure 1B; Babot et al., 2014; Galkin et al., 2008). In this assay, incubation of the mitochondrial membranes at 37 °C in the absence of substrate should deactivate CI resulting in increased sensitivity to NEM inhibition. The impact of NEM incubation can be reduced by re-activation of the complex with a small amount of NADH prior to the addition of the NEM. When compared to mammalian mitochondrial membranes (Sus scrofa, Figure 1C), the D. melanogaster steady-state NADH oxidation rate is unaffected by NEM after incubation at elevated temperatures (Figure 1B and C). This is consistent with the lack of an A-to-D transition in Dm-CI as has been seen in the other protostomians, namely Lumbricus terrestris (earth worm), Homarus americanus (lobster), and Acheta domesticus (cricket) (Figure 1A; Maklashina et al., 2003). Moreover, although the addition of NADH prior to NEM rescues activity in Sus scrofa (Figure 1C), pre-activation with NADH sensitizes Dm-CI to NEM treatment, significantly reducing the rate of NADH oxidation after the addition of 2 mM NEM (Figure 1B). This result is consistent with a model in which the TMH1-2ND3 cysteine remains buried in resting Dm-CI but becomes accessible during turnover (Kampjut and Sazanov, 2022). Exposure of the ND3 cysteine during turnover has also been recently observed in Bos taurus CI (Burger et al., 2022).
 
@@ -44,9 +76,184 @@ When the time course of NADH oxidation is examined for deactivated porcine mitoc
 
 To further characterize the differences in activity, Ss-CI and Dm-CI were extracted from washed mitochondrial membranes using the mild detergent digitonin, followed by exchange into glyco-diosgenin (GDN) and enrichment by sucrose gradient ultracentrifugation (Figure 1—figure supplement 1A). Fractions containing CI activity, as assessed by blue-native polyacrylamide gel electrophoresis (BN-PAGE) in-gel activity (Figure 1—figure supplement 1B), were pooled and concentrated. NADH oxidation rates for these partially purified samples were determined to be 2.87 ± 0.08 µmol NADH min–1 mg–1 (mean ± SEM, n=4) for Dm-CI and 1.77 ± 0.10 µmol NADH min–1 mg–1 (mean ± SEM, n=5) for Ss-CI prepared in the same manner. We also tested the sensitivity of the detergent-solubilized complexes to NEM and MgCl2 after incubation at 37 °C in the absence of substrate (Figure 1—figure supplement 1C–F). These data were consistent with the activity in the mitochondrial membranes in that Ss-CI showed a clear sensitivity to both NEM and MgCl2 and Dm-CI did not (Figure 1—figure supplement 1C–F). However, the activation lag for the Dm-CI was less evident in the detergent-solubilized sample suggesting that activation may be faster in detergent. To better understand the functional differences between protostomian and deuterostomian CI, we solved the structure of thoracic muscle Dm-CI by single-particle cryogenic electron microscopy (cryoEM).
 
-## Overall structure of mitochondrial CI from D. melanogaster thoracic muscle
+### Overall structure of mitochondrial CI from D. melanogaster thoracic muscle
 
 Samples for structure determination were prepared similarly to the sample used in activity measurements except that the digitonin-extracted complexes were exchanged into the amphipathic polymer (amphipol) A8-35 instead of GDN. The amphipol-stabilized samples were applied directly to EM grids after partial purification on a sucrose gradient and used for cryoEM data collection (Table 1). The structure of Dm-CI was resolved to a nominal resolution of 3.3 Å (Figure 1H, Video 1, Figure 1—figure supplement 2, Table 1). This partially purified sample also contained particles of Dm-CIII2 and Dm-ATPases, albeit in insufficient numbers for high-resolution reconstruction (Figure 1—figure supplement 2). Consistent with previous studies on Dm-CI assembly (Garcia et al., 2017), but in contrast to what is seen in mammalian cardiac mitochondria, we did not observe large amounts of SC I+III2 either biochemically on the BN-PAGE gels or as particles in the cryoEM dataset (Figure 1—figure supplements 1B and 2).
+
+**Table 1.**
+ Data collection and image processing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Data collection and image processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="2">TFS Glacios</td>
+    </tr>
+    <tr>
+      <td>Voltage(kV)</td>
+      <td colspan="2">200</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td colspan="2">K3</td>
+    </tr>
+    <tr>
+      <td>Data collection software</td>
+      <td colspan="2">Serial EM</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="2">56818</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e/Å2)</td>
+      <td colspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Exposure time (s)</td>
+      <td colspan="2">3</td>
+    </tr>
+    <tr>
+      <td>Frame number</td>
+      <td colspan="2">75</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="2">–0.5 to –3.0</td>
+    </tr>
+    <tr>
+      <td>Super resolution pixel size (Å)</td>
+      <td colspan="2">0.44</td>
+    </tr>
+    <tr>
+      <td>Number of micrographs</td>
+      <td colspan="2">11066</td>
+    </tr>
+    <tr>
+      <td>EMPIAR accession code</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Helix-locked state</td>
+      <td>Flexible class 1 state</td>
+    </tr>
+    <tr>
+      <td>Number of particles for final reconstruction</td>
+      <td>64,806</td>
+      <td>72,611</td>
+    </tr>
+    <tr>
+      <td>Resolution focused refinement (Å)</td>
+      <td>3.4 Å</td>
+      <td>3.4 Å</td>
+    </tr>
+    <tr>
+      <td>EMDB accession code</td>
+      <td>28582</td>
+      <td>28581</td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Model refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Manual modelling software</td>
+      <td colspan="2">Coot</td>
+    </tr>
+    <tr>
+      <td>Refinement software</td>
+      <td colspan="2">Phenix</td>
+    </tr>
+    <tr>
+      <td>Cross-correlationMaskVolume</td>
+      <td>0.840.81</td>
+      <td>0.840.80</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atomsProtein residuesLigands</td>
+      <td>67,760814168</td>
+      <td>66,739809049</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)Allowed (%)Outlier (%)</td>
+      <td>97.003.000.00</td>
+      <td>97.03.000.00</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.9</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>6</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>RMSD</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length(Å)Bond angle (°)</td>
+      <td>0.0050.973</td>
+      <td>0.0050.962</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2 min/max/mean)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ProteinLigands</td>
+      <td>24.39/136.88/57.0026.80/91.61/59.37</td>
+      <td>5.74/81.66/25.847.72/57.56/30.70</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.44</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>Average atom inclusion</td>
+      <td>0.69</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Q-score</td>
+      <td>0.50</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td>PDB Accession Code</td>
+      <td>8ESZ</td>
+      <td>8ESW</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-video1.mp4.jpg)
+
+**Video 1.:** The subunits are colored as in Figure 1.
 
 Our Dm-CI structure contained the 14 core subunits as well as 29 accessory subunits (Figure 1D and Figure 1—figure supplement 3), for a total composition of 43 subunits, two fewer than the 45 total subunits observed in mammals (Padavannil et al., 2021). Unlike Y. lipolytica, T. thermophila, and plant CI, there were no accessory subunits unique to Dm-CI. The two missing subunits are NDUFA2, and NDUFC1. An accessory subunit consistent with the position of NDUFV3 in mammals was present at sub-stoichiometric levels (see below). The electron transfer pathway from FMN to the final N2 cluster was conserved (Figure 1—figure supplement 4A, B). Although no quinone was added to the CI preparation, we were able to build a quinone molecule into density in the Q-tunnel (Figure 1—figure supplement 4C). The E-channel and hydrophilic axis residues that are key to the coupling of electron transfer to proton pumping were also conserved (Figure 1—figure supplement 4A, H; Baradaran et al., 2013).
 
@@ -54,11 +261,37 @@ The metazoan-specific transmembrane (TM) accessory subunit NDUFC1 is absent from
 
 An ortholog of the accessory subunit NDUFA3 was not annotated in the D. melanogaster proteome (Garcia et al., 2017). However, we identified density consistent with the presence of an NDUFA3 ortholog (Figure 1H, Video 2 and Figure 1—figure supplement 6). Amino acid assignment based on the observed side chain density allowed for the identification of an uncharacterized protein Dme1_CG9034, isoform B as the most likely NDUFA3 ortholog in D. melanogaster (Figure 1—figure supplement 6A, B). Consistent with this observation, proteomic analysis of a Dm-CI band cut from blue native gels identified CG9034 as one of the proteins that co-migrates with Dm-CI (Garcia et al., 2017); however, because it was not annotated and bioinformatics searches failed to identify it as an NDUFA3 ortholog, it was not identified as such.
 
+![Video 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-video2.mp4.jpg)
+
+**Video 2.:** Subunit NDUFA3 identified from the map is highlighted. The subunits are colored as in Figure 1.
+
 While there were notable differences in the Dm-NDUFS1, Dm-NDUFS7, Dm-ND2, and Dm-ND5 structures (discussed below), the Dm-CI core subunits were overall like the core subunits of other opisthokonts (Figure 1—figure supplement 7). Differences in accessory subunits NDUFA11, NDUFC2, NDUFA10, NDUFB4, and NDUFB9 suggest that there may be some differences in the mechanism of assembly and regulation of Dm-CI and mammalian CI, reveal how accessory subunits may influence CI in mammals and reveal why D. melanogaster mitochondria have less SC I+III2 than mammals.
 
-## Features of Dm-CI subunits with implications for assembly and stability
+### Features of Dm-CI subunits with implications for assembly and stability
 
 NDUFA2 – Whereas the loop formed by amino acid residues 665–685 of NDUFS1 forms an α-helix in other species, in Dm-CI it is a poorly resolved coil lacking secondary structure (Figure 2A, Video 3 and Figure 2—figure supplement 1A). This region forms part of the interface with accessory subunit NDUFA2 in other species, and the loss of the α-helix may be responsible for the absence of NDUFA2 in the Dm-CI structure (Figure 2—figure supplement 1C). Sequence alignment revealed that this loop is four residues shorter compared to Y. lipolytica and mammals and that several bulky residues have been replaced by alanine or glycine residues in Dm-NDUFS1 (Figure 2—figure supplement 1D) resulting in the loss of ordered secondary structure and increased flexibility. The helical structure in the NDUFS1 loop is not seen in bacterial CIs (Baradaran et al., 2013; Kolata and Efremov, 2021; Kravchuk et al., 2022), suggesting that this secondary structure element may have evolved in eukaryotes specifically to interact with NDUFA2.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig2-v1.jpg)
+
+**Figure 2.:** (A) NDUFS1-NDUFA2 interface in Y. lipolytic (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB:6ZKC) are shown. (B) The N-terminal extension of NDUFS7 in Y. lipolytica (PDB:6YJ4) and D. melanogaster are shown as cartoons. The other subunits are shown in surface colored as in Figure 1. (C) Y. lipolytic (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB:6ZKC) ND2 is shown as surface. The N-terminal helices of ND2 are shown as cartoons. NDUFC2 and NDUFC1 are shown as cartoons. Lipids are shown as spheres colored by element. (D) TMH10ND2, TMH11ND2, and TMH10-11ND2 loop of D. melanogaster and O. aries (PDB:6ZKC) are shown as cartoons. (E) ND2-NDUFA10 interface in D. melanogaster (this study) and O. aries (PDB:6ZKC) is shown. ND2, NDUFA10 are shownas surface. TMH10ND2 TMH11ND2 and TMH10-11ND2 loop are shown as cartoons. Lipids are shown as spheres colored by the element. (F) NDUFA11 in Y. lipolytic (PDB: 6YJ4) (blue), D. melanogaster (this study) (orange), and O. aries (PDB:6ZKC) (yellow) is shown as cartoons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) NDUFS1 region 665–685 of Dm-CI is shown as a cartoon embedded in the cryoEM density. (B) Domain architecture of NDUFS1 in E. coli (PDB: 7NZ1) and T. thermophilus (PDB: 4HEA). (C) Domain architecture of NDUFS1 in Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC). (D) Sequence alignment of C-terminal region of NDUFS1 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-S1. The unstructured region of Dm-S1 is boxed green. (E) Sequence alignment of NDUFA2 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-A2. Cysteines forming the di-sulfide bonds in the oxidized form of NDUFA2 are boxed green.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Structural alignment of NDUFS7 from Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC) is shown. (B) Sequence alignment of N-terminal region of NDUFS7 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-NDUFS7. The sequence in the N terminal extension is boxed green.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Y. lipolytic (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB:6ZKC) ND2 are shown in surface representation. The N-terminal helices of ND2 are shown as cartoons. NDUFC2 and NDUFC1 are shown as cartoons. Lipids are shown as spheres colored by the element. (B) Sequence alignment of C-terminal region of ND2 from D. melanogaster and O. aries. Numbered according to Dm-ND2. The sequence of TMH10-11 loop region is boxed green. (C) Schematic representation of the role of NDUFC1 in mammalian CI assembly. TMH11ND2 has an extended helix. NDUFC1 brings in a cardiolipin to cap the shortened TMH11ND2, inducing the formation of short helices in the erstwhile coiled TMH10-11ND2 loop. The short helices form the interface for NDUFA10 to bind to complex I. NDUFC2 is not shown for clarity.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Structural alignment of NDUFA11 from Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC) is shown. (B) Sequence alignment of NDUFA11 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-NDUFA11.
+
+![Video 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-video3.mp4.jpg)
 
 In mammals, NDUFA2 plays an important role in the stability of the N-module (Stroud et al., 2016) and has been proposed to play a role in the regulation of CI by ROS (Padavannil et al., 2021). Whereas NDUFA2 knockout in HEK293T cells results in the loss of the N-module and complete loss of CI activity (Stroud et al., 2016), NDUFA2 knock-down in D. melanogaster has minimal effects, with CI retaining ~97% of WT (Mhc-Gal4/W1118 flies) activity during the first week after eclosing as adults (Garcia et al., 2017). It would be interesting to explore how a CRISPR-mediated knockout of NDUFA2 affects CI activity in D. melanogaster.
 
@@ -70,43 +303,115 @@ NDUFC1 – As in mammalian CI, Dm-ND2 lacks three TMHs at the N-terminus, thus h
 
 In both mammals and D. melanogaster, the TMH10-11ND2 loop provides a major interface with the metazoan-specific subunit NDUFA10 (Figure 2E and Video 4). In Y. lipolytica, which lacks any subunit binding on the matrix side of ND2, as well as in plants and Tetrahymena which use the equivalent loop to interact with their γ-carbonic anhydrase subunit (Klusch et al., 2021; Maldonado et al., 2020; Soufari et al., 2020; Zhou et al., 2022), the TMH10-11ND2 loop spans across the matrix surface of ND2 as a coil. In mammals, TMH10-11ND2 spans the same distance across the matrix surface but forms a short α-helix that interacts directly with NDUFA10 (Figure 2D and E and Video 4). Given that the length of the TMH10-11ND2 loop is only shorter by two residues in D. melanogaster compared to mammals (Figure 2—figure supplement 3B), the additional residues required for the TMH10-11ND2 loop to fold into an α-helix in mammals must come from the unwinding of TMH11ND2. Thus, a simple model emerges for how mammalian CI is dependent on NDUFC1 for assembly. Namely, the mammalian interface between ND2 and NDUFA10 cannot form before NDUFC1 binds and recruits a cardiolipin to partially unwind TMH11ND2 (Figure 2—figure supplement 3C; Padavannil et al., 2021). This model is consistent with the known binding order and dependencies of NDUFC1 and NDUFA10 to ND2 during CI assembly (Guerrero-Castillo et al., 2017; Stroud et al., 2016).
 
+![Video 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-video4.mp4.jpg)
+
 NDUFA11 – In Dm-CI, due to an extended C-terminal coil, the MA accessory subunit NDUFA11 has much more extensive interaction with the core subunits than seen in mammals (Figure 2F, Figure 2—figure supplement 4A and B and Video 5). NDUFA11 is a four-TMH subunit that binds adjacent to ND2 atop the ND5 lateral helix (ND5-HL) and ND5 TMH15 (TMH16 in fungi and mammals). It has an arch shape with a concave surface facing CI. The cavity formed at the interface is filled with lipids that bridge between NDUFA11 and ND2/ND5. In mammalian CI, only limited protein-protein contacts between NDUFA11 and other CI subunits are observed, dominated mainly by its short C-terminal coil (Figure 2F and Figure 2—figure supplement 4A). For this reason, detergent extraction can result in the loss of NDUFA11 in mammals, resulting in so-called ‘state 3’ particles (Chung et al., 2022b; Fiedorczuk et al., 2016; Zhu et al., 2016). However, in the fungus Y. lipolytica the C-terminus of NDUFA11 is much longer and extends along the matrix side of the complex (Parey et al., 2019). Likely for this reason NDUFA11 in Y. lipolytica is harder to dissociate from the complex even after treatment with harsh detergents (Angerer et al., 2011).
+
+![Video 5.](https://cdn.elifesciences.org/articles/84415/elife-84415-video5.mp4.jpg)
 
 Like Y. lipolytica, NDUFA11 in Dm-CI has an extended C-terminus (Figure 2F and Figure 2—figure supplement 4A). However, unlike the C-terminus in Y. lipolytica NDUFA11 which runs along the length of the MA, that of Dm-NDUFA11 runs across the membrane arm (i.e. perpendicular to the long axis), tucking between NDUFB5, NDUFS5, NDUFA8, and ND2, emerging adjacent to NDUFC2 on the opposite side (Figure 2F and Video 5). This arrangement is not seen in any other known CI structure. The C-terminus of Dm-NDUFA11 occupies space that is occupied by subunit NDUX1 (NUXM) in yeast, plants, and ciliates (a subunit that is lost in metazoans along with the truncation of ND2), and the N-terminus of NDUFC2 in mammals (Fiedorczuk et al., 2016; Klusch et al., 2021; Maldonado et al., 2020; Parey et al., 2019; Zhou et al., 2022). The extended C-terminus of Dm-NDUFA11 has significant implications for the assembly of Dm-CI. Mammalian CI is assembled through a series of intermediates and NDUFA11 is a terminally associated protein that does not form a part of any assembly intermediate (Guerrero-Castillo et al., 2017). Also in mammals, NDUFB5, NDUFB8, and NDUFS5 on the IMS side are all present in assembly intermediates prior to the addition of NDUFA11 (Guerrero-Castillo et al., 2017). The arrangement seen in Dm-CI, in which the C-terminus of Dm-NDUFA11 is sandwiched between Dm-NDUFB5, Dm-NDUFA8, Dm-NDUFS5, and Dm-ND2 (Video 5), suggests that Dm-NDUFA11 would need to bind Dm-ND2 before Dm-NDUFB5, Dm-NDUFA8, and Dm-NDUFS5. However, as NDUFA11 binds on top of ND5-HL, ND5 would need to associate with ND2 before NDUA11 could bind. This order of events is counter to what occurs in mammals (Guerrero-Castillo et al., 2017) and indicates that like plant CI (Ligas et al., 2018), assembly of this region of Dm-CI might proceed via a distinct mechanism than that of mammals.
 
-## Features of Dm-CI subunits with implications for regulation
+### Features of Dm-CI subunits with implications for regulation
 
 NDUFV3 – In mammals there are two isoforms of the NDFUV3 subunit – a long isoform NDUFV3-L and a short isoform NDUFV3-S – and it has been proposed that binding of the different isoforms may impact the activity of CI (Bridges et al., 2016; Dibley et al., 2017; Guerrero-Castillo et al., 2016). Density for a subunit at the position of NDUFV3 in mammals was also observed in the Dm-CI structure (Figure 3A). However, in the average structure calculated using all Dm-CI particles, this density was weak compared to that of the surrounding core subunits. When focused refinements were performed with a mask around the tip of the PA, two clear classes could be isolated differing in the occupancy of the NDUFV3 site (Figure 3A and Figure 3—figure supplement 1). Thus, in Dm-CI this site is only partially occupied.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-v1.jpg)
+
+**Figure 3.:** (A) Cryo-EM map with (red) and without (blue) NDUFV3 density is shown. (B) NDUFA10-NDUFA5 interface in Dm-CI is shown. The subunits are shown in cartoons colored as in Figure 1. The N and C terminal extension of Dm-NDUFA10 are colored red. (C) Structural alignment of NDUFA10 from O. aries (yellow) (6ZKC) and D. melanogaster (orange) is shown. The N and C-terminal extensions of Dm-NDUFA10 are shown in red. (D) N-terminal region of NDUFB4 and NDUFB9 in D. melanogaster (this study) and O. aries (PDB:6QC3) is shown as cartoons. Loop region of Oa-CIII subunit UQCRC1 forming interface with Oa-CI subunit is shown as cartoon colored in green. (E) ND5 in Y. lipolytic (PDB: 6YJ4), D. melanogaster (this study) and O. aries (PDB:6ZKC) is shown as surface. The N-terminal helices of ND5 are shown as cartoons. Lipids are shown as spheres colored by the element.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Masked classification of 206,112 Dm-CI particles using a mask around the tip of the peripheral arm resulted in three distinct classes of particles, Class I with clear NDUFV3 density, Class II a set of mixed particles, Class III with a clear absence of NDUFV3 density.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Transparent surface of open D-state (PDB:6ZKD) and closed A-state (PDB:6ZKC) of Oa-CI showing NDUFA10 and NDUFA5 as cartoons. (B) Transparent surface of Helix-locked and flexible class 1 state of Dm-CI showing NDUFA10 and NDUFA5 as cartoons (this study).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Structural comparison of NDUFAB4 from Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC) is shown. (B) Sequence alignment of NDUFB4 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-NDUFB4.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Structural comparison of N-terminal helices of ND5 in Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC). (B) Dm-ND5 TMH1 is shown as a cartoon embedded in the density map. (C) Sequence alignment of N-terminal region of ND5 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-ND5.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Structural alignment of NDUFC2 from Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC) is shown. (B) Sequence alignment of NDUFC2 from Y. lipolytica, D. melanogaster, and O. aries. Numbered according to Dm-NDUFC2.
 
 The 68 kDa fragment of the atypical cadherin (Ft4) can regulate Dm-CI activity (Sing et al., 2014) and it was proposed that it may bind to Dm-CI at the NDUFV3 site (Bridges et al., 2016). The density of the occupied class was too noisy to confidently assign the sequence of the subunit from the map (Figure 3A). However, our results are consistent with the hypothesis that binding at this site may be regulatory (Bridges et al., 2016).
 
 NDUFA10 and NDUFA5 – In addition to the major interface between NDUFA10 and ND2, in mammals NDUFA10 forms a state-dependent interface with accessory subunit NDUFA5 (Figure 3—figure supplement 2A; Agip et al., 2018; Kampjut and Sazanov, 2020; Letts et al., 2019). In Dm-CI, the interface between NDUFA10 and NDUFA5 is larger due to an extended NDUFA10 N-terminal coil that inserts between NDUFA10 and NDUFA5 (Figure 3B and C and Figure 3—figure supplement 2B). It has been debated whether the breaking of the interface between NDUFA10 and NDUFA5 occurs during enzyme turnover or is a feature of the D state (Agip et al., 2018; Kampjut and Sazanov, 2020). The enhanced interface between Dm-NDUFA10 and Dm-NDUFA5 would make these subunits more difficult to separate and indicates that, although the interactions at this interface may be state-dependent (see below), the interface is less likely to be fully broken as seen in the mammalian context (Agip et al., 2018; Kampjut and Sazanov, 2020; Letts et al., 2019).
 
-## Features of Dm-CI with implications for SC assembly
+### Features of Dm-CI with implications for SC assembly
 
 The structure provides a basis for understanding the lower abundance of SCs between D. melanogaster and mammals. In mammals, the N-terminus of NDUFB4 forms part of the only matrix interface between CI and CIII2 in SC I+III2 (Letts et al., 2019; Letts and Sazanov, 2017). In this interaction, a loop from the UQRC1 subunit of one CIII protomer binds in between the N-terminus of NDUFB4 and the three-helix-bundle of subunit NDUFB9. In Dm-CI the N-terminus of Dm-NDUFB4 is truncated relative to that of mammals and does not extend far enough towards NDUFB9 to form this interface (Figure 3D and Figure 3—figure supplement 3). Thus, the lack of this interface likely contributes to the observed low abundance of SCs in D. melanogaster mitochondria.
 
 Additionally, given its role in bridging between CI and CIII2 in respiratory SCs (Letts et al., 2019; Letts and Sazanov, 2017), it has been proposed that NDUFA11’s interaction with CI may have been weakened in species, such as mammals, to promote SC formation by requiring the presence of CIII2 to hold NDUFA11 in place (Padavannil et al., 2021). The extended interaction interface provided by the C-terminus of Dm-NDUFA11 indicates that Dm-NDUFA11 is not dependent on the presence of CIII2 for its stable association with the Dm-CI. Thus, the Dm-CI structure supports the proposed inverse relationship between the strength of the interaction between NDUFA11 and CI and the abundance of SCs (Padavannil et al., 2021).
 
-## Differences in lipid binding
+### Differences in lipid binding
 
 Lipids form an integral part of the CI MA and loss of lipids during purification results in diminished CI activity (Letts et al., 2016a; Padavannil et al., 2021). Across species, structural lipids are seen tightly binding to the surface of CI at the interface of the core H+-pumping subunits and specific deformation of the lipid membrane by NDUFA9 occurs adjacent to the Q-tunnel (Kampjut and Sazanov, 2020; Parey et al., 2019; Zhou et al., 2022). In general, the pattern of lipid binding to Dm-CI (Figure 1—figure supplement 4I) is like that seen in other CI structures with two notable exceptions. First, instead of 16 TMHs observed in ND5 of Y. lipolytica and mammals, Dm-ND5 lacks the first TMH for a total of only 15 (Figure 3E and Figure 3—figure supplement 4A). Like what is seen with the metazoan-specific shortening of ND2 discussed above, the region occupied by ND5-TMH1 in other species is not occupied by any other protein subunit but binds lipid (Figure 3E, Figure 3—figure supplement 4A). As mammalian ND5 maintains its full complement of helices, loss of the first TMH must have occurred after the split of Protostomia and Deuterostomia, but how widespread the ND5 deletion is in Protostomia along with any functional implications remains to be determined.
 
 Second, in mammals, the N-terminus of the two-TMH accessory subunit NDUFC2 binds underneath ND2 in the pocket left by the deletion of the first three ND2 TMHs. However, in Dm-CI this space is filled by the C-terminus of NDUFA11 (Figure 2C and Video 5). Like mammalian NDUFC2, Dm-NDUFC2 has an extended N-terminus relative to that of Y. lipolytica (Figure 2C and Figure 3—figure supplement 5A); however, instead of crossing over TMH2C2 and binding under ND2, it crosses over the C-terminal coil of NDUFA8 and forms additional interactions with NDUFB1 and NDUFB5 (Figure 2C and Figure 3—figure supplement 5A). These additional interactions contribute to lipid binding at the ND2/ND4 interface by capping this pocket and likely help to stabilize lipid binding at the interface between the two H+-pumping core subunits.
 
-## Focused classification of Dm-CI reveals an NDUFS4-helix-locked state
+### Focused classification of Dm-CI reveals an NDUFS4-helix-locked state
 
 Initial poor resolvability of the average Dm-CI map around NDUFA10 at the interface of the PA and MA led us to perform focused classifications using a mask encompassing subunits NDUFA10, NDUFA5, NDUFA6, and NDUFAB1-α (Figure 4—figure supplement 1). This classification revealed two major classes and two minor classes of Dm-CI particles that differ in the presence of an ordered α-helical element from NDUFS4 bound at the interface of NDUFA5, NDUFA10, and NDUFA6 and in the angle between the PA and MA (Figure 4). Only in one of the major classes is the NDUFS4 helix visible, while in the other major class and two minor classes this helix is disordered. We name the states the NDUFS4-helix-locked (helix-locked) state and the flexible class 1-3 states (Figure 4 and Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-v1.jpg)
+
+**Figure 4.:** (A) Dm-CI subunits forming the bridge at the peripheral arm (PA)/membrane arm (MA) interface in the helix-locked state are shown as cartoons colored as in Figure 1. The interaction between NDUFA5 and the N-terminal region of NDUFS4 is shown in the inset. (B) Dm-CI subunits forming the hinge at the PA/MA interface in the flexible class 1 state are shown as cartoons colored as in Figure 1. NDUFA5, NDUFA10, and NDUFA10, NDUFAB1-α interactions are shown in insets.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Masked classification of 206,112 Dm-CI particles using mask around the hinge region (NDUFA10, NDUFA5, NDUFA6, and NDUFAB1-α) at the peripheral arm (PA)/membrane arm (MA) interface of Dm-CI resulted in four distinct classes of particles, two major classes (Class1 and Class 4) and two minor classes (Class 2 and Class 3). Major class 1 has no density for the N-terminal region of NDUFS4 (shown in the inset) (flexible class 1 state) and major class 4 has a clear density for the N-terminal region of NDUFS4 (helix-locked state). Minor classes 2 and 3 have no density for the N-terminal region of NDUFS4 (shown in inset). (B, C) Local resolution maps and Fourier shell correlation (FSC) curves: Flexible class 1 state (B) and helix-locked state (C). Local resolution plotted on refined maps and FSC curves (gold standard FSC = 0.143 for resolution estimation). Resolution scale bars are shown.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Structural alignment of N-terminal region NDUFS4 from Y. lipolytica (PDB: 6YJ4), D. melanogaster (this study), and O. aries (PDB: 6ZKC) . (B) Sequence alignment of NDUFS4 from Y. lipolytica, D. melanogaster, and O. aries with signal sequence removed. Numbered according to Dm-NDUFS4.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Structural alignment of the Helix-locked state of Dm-CI (red) with the flexible class 1 state of Dm-CI (green). The structures are aligned by the ND5 subunit. (B) ND1 of Dm-CI in the helix-locked state (red) and flexible class 1 state (green) as seen in structures aligned by ND5 (above) are shown as cartoons.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Comparison of peripheral arm alignment relative to the membrane arm in helix-locked state (red) and flexible class 1 state (green). Only the peripheral arm (top view) is shown for clarity. Structurally conserved representative helices of various peripheral arm subunits are show for comparison. (B) Comparison of peripheral arm alignment of helix-locked state (red) from Dm-CI with NADH closed state (PDB ID: 6ZKG, gray) and “deactive” open1 state (PDB ID: 6ZKS, gray) of O. aries CI and comparison of peripheral arm alignment of flexible class 1 state (green) from Dm-CI with NADH closed state (PDB ID: 6ZKG, gray) and ‘deactive’ open1 state (PDB ID: 6ZKS, gray) of O. aries CI. (C) Comparison of peripheral arm alignment of helix-locked state (red) from Dm-CI with ‘active’/closed state (PDB ID: 6G2J, gray) and ‘deactive’/open state (PDB ID: 6G72, gray) of M. musculus CI and comparison of peripheral arm alignment of flexible class 1 state (green) from Dm-CI with ‘active’/closed state (PDB ID: 6G2J, gray) and ‘deactive’/open state (PDB ID: 6G72, gray) of M. musculus CI. (D) Comparison of peripheral arm alignment of helix-locked state (red) from Dm-CI with State 2 (PDB ID: 7ZMB, gray) and State 1 (PDB ID: 7ZMG, gray) of C. thermophilum CI and comparison of peripheral arm alignment of flexible class 1 state (green) from Dm-CI with State 2 (PDB ID: 7ZMB, gray) and State 1 (PDB ID: 7ZMG, gray) of C. thermophilum CI. (E) Comparison of peripheral arm alignment of helix-locked state (red) from Dm-CI with closed state (PDB ID: 7Z80, gray) and open state (PDB ID: 7Z83, gray) of E. coli CI and comparison of peripheral arm alignment of flexible class 1 state (green) from Dm-CI with closed (PDB ID: 7Z80, gray) and open state (PDB ID: 7Z83, gray) of E. coli CI.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Comparison of the hinge region – subunits NDUFA5, NDUFA10, NDUFS4 and NDUFAB1-α, in helix-locked and flexible class 1 states of D. melanogaster CI. The distance between centers of mass of NDUFA10 and NDUFAB1 is indicated. (B) Comparison of the hinge region – subunits NDUFA5, NDUFA10, NDUFS4 and NDUFAB1-α, in ‘Active’ state (PDB ID: 6G2J) and ‘Deactive’ (PDB ID: 6G72) of M. musculus CI. The distance between the centers of mass of NDUFA10 and NDUFAB1 is indicated. (C) Comparison of the hinge region – subunits NDUFA5, NDUFA10, NDUFS4, and NDUFAB1-α, in closed with NADH state (PDB ID: 6ZKG) and ‘Deactive’ open (PDB ID: 6ZKS) of O. aries CI. The distance between the centers of mass of NDUFA10 and NDUFAB1-α is indicated.
+
 The name helix-locked state refers to the fact that the positions of the PA and MA are ‘locked’ relative to each other due to the presence of the NDUFS4 helix (Figure 4A). In the absence of the lock helix, the relative positions of PA and MA vary and thus the complex is more flexible (Kampjut and Sazanov, 2020; Kravchuk et al., 2022; Parey et al., 2021) as indicated by the three distinct sub-classes (Figure 4—figure supplement 1). Three-dimensional variability analysis (3DVA) performed on the full set of particles revealed a smooth transition between the flexible sub-states along with the disappearance of the NDUFS4 helical density (Video 6). This indicates that the frozen Dm-CI particles adopt conformations along the trajectory from the major flexible class 1 state, which is the furthest rotated relative to the helix-locked state, towards the helix-locked state. Once the PA and MA are positioned such that they are far enough apart to accommodate the NDUFS4 helix, the binding of the helix ‘locks’ their relative positions (Figure 4A and Video 6). The N-terminal region of NDUFS4 that forms the lock helix is not conserved in Y. lipolytica or mammals (Figure 4—figure supplement 2) suggesting that it evolved after the split of Protostomia and Deuterostomia.
+
+![Video 6.](https://cdn.elifesciences.org/articles/84415/elife-84415-video6.mp4.jpg)
+
+**Video 6.:** The 3DVA volumes are shown as a continuous movie. The movie emphases on the hinge region of peripheral arm (PA)/membrane arm (MA) interface. Dm-CI subunits are colored as in Figure 1.
 
 Overall, the helix-locked state and the flexible class 1 state mainly differ from each other by a rotation of the PA and the tilting of subunit ND1 (Figure 4—figure supplement 3). When compared to the overall open/deactive and closed/active state structures of mammalian CI, the Dm-CI states do not align well (Figure 4—figure supplement 4). The rotation and angle between the PA and MA in the Dm-CI states do not correspond to those seen in any of the mammalian states but are more like states seen in E. coli CI and the hyper thermophilic fungus Chaetomium thermophilum (Figure 4—figure supplement 4; Kravchuk et al., 2022; Laube et al., 2022a). However, as has been recently acknowledged (Kravchuk et al., 2022), across species there is not a clear one-to-one mapping of the observed states indicating that the relative positions of the PA and MA are not indicative of conserved functional states of the complex as initially proposed (Kampjut and Sazanov, 2020). One possible measure to compare states in metazoans is the distance between the center of mass of NDUFAB1-α and that of NDUFA10 (Figure 4—figure supplement 5). According to this measure, the helix-locked state is most like the closed/active states (Figure 4—figure supplement 5) and the Dm-CI flexible class 1 state is most like the open/deactive states of mammalian CI (Figure 4—figure supplement 5). Although the density of the NDUFAB1-α subunit is weak due to flexibility, its position in flexible class 1 is consistent with the formation of salt-bridges between residues D146AB1-α, D149AB1-α and R209A10 (Figure 4B and Video 6). In plant and Tetrahymena CI, the NDUFAB1-α subunit is involved in bridging interactions between the PA and MA (Klusch et al., 2021; Zhou et al., 2022); however, to our knowledge, this is the first indication of direct bridging between the PA and MA via NDUFA10 and NDUFAB1-α in any metazoan structure.
 
 Although NDUFA5 and NDUFA10 remain in direct contact in both the helix-locked and the flexible states, there is a state-dependent change in their interaction (Figure 4 and Video 6). In the helix-locked state, the interaction between NDUFA5 and NDUFA10 is mediated in part by the N-terminus of NDUFS4 which binds along the surface of NDUFA10; and D34S4 forms a salt bridge with R92A5 (Figure 4A and Video 6). In the flexible class 1 state, the N-terminus of NDUFS4 is disordered, and NDUFA5 slides along the surface of NDUFA10 such that R92A5 forms a salt bridge with E302A10 (Figure 4B and Video 6). Thus, R92A5 is used to form salt bridging interactions with NDUFS4 and NDUFA10 in a state-dependent manner (Figure 4 and Video 6).
 
-## In the helix-locked state the CoQ reduction site loops are buried by an NDUFA9 ‘latch’
+### In the helix-locked state the CoQ reduction site loops are buried by an NDUFA9 ‘latch’
 
 Conformational changes in loops adjacent to the CoQ reduction site were seen between the helix-locked and flexible class 1 states of Dm-CI (Figure 5 and Video 7). In mammals, Y. lipolytica and E. coli the open state of the complex is commonly associated with specific conformations or disorder of loops around the CoQ binding site (α1-2S7 loop, α2-β1S7 loop, TMH5-6ND1 loop, TMH1-2ND3 loop, β1-2S2 loop, and TMH3-4ND6 loop) as well as a π-bulge in TMH3ND6 (Kampjut and Sazanov, 2020; Kravchuk et al., 2022; Parey et al., 2021; Parey et al., 2018). In the closed state, these loops are generally well ordered and TMH3ND6 re-folds into an α-helix (Figure 5—figure supplement 1). No differences in the conformations of the α1-2S7, TMH5-6ND1, and β1-2S2 loops were seen in Dm-CI between the helix-locked and flexible class 1 states (Figure 5—figure supplement 1A-C). The TMH1-2ND3 loop is well ordered in the helix-locked state and partially disordered, though to a lesser extent than seen in most CI open states, in the flexible class 1 state; and TMH3ND6 is α-helical in the helix-locked state and contains a π-bulge in the flexible class 1 state (Figure 5A and B and Figure 5—figure supplement 1D and E). These differences in the TMH1-2ND3 loop stem from a state-dependent interaction with the C-terminal loop of NDUFA9, a rotation of ND1 relative to the rest of the MA, and the movement of TMH4ND6 and the TMH3-4ND6 loop (Figure 5C–J Video 7, and Figure 5—figure supplements 1 and 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) The Q-site adjacent loops in the (A) helix-locked state and (B) flexible class 1 state are shown as cartoon colored as in Figure 1. (C, D) Interface between ND3, ND1, and NDUFA9 in the (C) helix-locked and (D) flexible class 1 state is shown. ND3, ND1, and NDUFA9 are shown as colored cartoons embedded in density colored as in Figure 1. (E, F) ND1 interaction with TMH1-2ND3 loop in the (E) helix-locked and (F) flexible class 1 states are shown. ND1 and ND3 are shown as cartoons colored as in Figure 1. (G, H) TMH3-4ND6 loop interaction with NDUFA9 in the (G) helix-locked and (H) flexible class 1 states are shown. ND6 and NDUFA9 are shown as cartoons colored as in Figure 1. (I, J) Interactions at the interface of ND1 and ND6 in the (I) helix-locked and (J) flexible class 1 states are shown. ND1 and ND6 are shown as cartoons colored as in Figure 1. Figure-figure supplements.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) NDUFS7 loops of D. melanogaster CI in helix-locked and flexible class 1 (this study), flipped confirmation of PSST loops from O. aries CI (native open1, PDB: 6ZKP), raised confirmation of PSST loops from O. aries CI (rotenone closed, PDB: 6ZKK), NuoB loops from E. coli (open, 7Z83), (closed, 7Z80) states, flipped confirmation of S7 loops from C. thermophilum CI (State 1, PDB: 7ZMG) and raised confirmation of S7 loops from C. thermophilum CI (State 2, PDB:7ZMB). (B) NDUFS2 β1–2 loop. NDUFS2 β1–2 loop of D. melanogaster in helix-locked state and flexible class 1 state (this study), disordered confirmation of O. aries CI (native open1, PDB: 6ZKP), extended confirmation of O. aries CI (NADH open1, PDB: 6ZKH), retracted confirmation of 49 kDa subunit loop from O. aries CI (native closed, PDB: 6ZKO), extended confirmation of NuoC β1–2 loop from E. coli CI (open, 7Z83) and retracted confirmation of NuoC β1–2 from E. coli CI (closed, 7Z80), extended confirmation of S2 β1–2 loop of C. thermophilum CI (State 1, PDB: 7ZMG) and retracted confirmation of S2 β1–2 loop of C. thermophilum CI (State 2, PDB: 7ZMB). (C) ND1 TMH5-6. D. melanogaster ND1 TMH5-6 loop in helix-locked state and flexible class 1 state (this study), the disordered state of ND1 loop of O. aries CI (native open1, PDB: 6ZKP), up confirmation of O. aries CI (NADH open1, PDB: 6ZKH), down confirmation of ND1 subunit of O. aries (native closed, PDB: 6ZKO), the disordered state of NuoH loop of E. coli CI (open, 7Z83),down confirmation of NuoH loop of E. coli CI (closed, 7Z80) states, down confirmations of ND1 loops of C. thermophilum CI (State 1, PDB:7ZMG, State 2,PDB:7ZMB). (D) ND3 TMH1-2 loop. ND3 TMH1-2 loop of D. melanogaster in helix-locked state and flexible class 1 state (this study), disordered confirmation of ND3 TMH1-2 loop from O. aries (deactive open1, PDB:6ZKS), ordered confirmation of ND3 TMH1-2 loop from O. aries (native closed, PDB 6ZKO), disordered confirmation of NuoA TMH1-2 loop from E. coli CI (open, 7Z83), ordered confirmation of NuoA TMH1-2 loop from E. coli CI (closed, 7Z80) states, disordered confirmation of C. thermophilum CI (State 1, PDB:7ZMG) and ordered confirmation of C. thermophilum CI (State 2, PDB:7ZMB). (E) ND6 TMH3-4 loop. D. melanogaster ND6 TMH3-4 loop in helix-locked and flexible class 1 states, the tilted configuration of CI from O. aries ND6 TMH4 with π-bulge as seen in the open state of deactive CI (deactive open 1, PDB: 6ZKS), disordered confirmation of CI with π-bulge of O. aries (native open1, PDB: 6ZKP), ordered confirmation of O. aries (native closed, PDB: 6ZKO), NuoJ TMH 3–4 from E. coli CI (open, 7Z83), (closed, 7Z80) states, and ND6 TMH3-4 loops from C. thermophilum CI (State 1, PDB ID: 7ZMG), (State 2, PDB ID:7ZMB).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84415/elife-84415-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) TMH4ND6 orientation in the ‘deactive’ open (PDB:6GCS) state of Y. lipolytica. (B) TMH4ND6 orientation in helix-locked and flexible class 1 states (this study) of D. melanogaster. ND6 TMH4 relative orientation in structurally aligned ND6 of the two states is shown in the right panel. (C) TMH4ND6 orientation in open (PDB:7Z83) and closed state (PDB:7Z80) of E. coli. TMH4ND6 relative orientation in structurally aligned ND6 of the two states is shown in the right panel. (D) TMH4ND6 orientation in open (PDB:6ZKS) and closed state (PDB:6ZKG) of O. aries. TMH4ND6 relative orientation in structurally aligned ND6 of the two states is shown in the right panel. (E) TMH4ND6 orientation in T. thermophilus (PDB:7Z83) is shown. TMH4ND6 is shown as a cartoon, the rest of CI is shown in colored surface. (F) TMH4ND6 orientation in open (PDB:6G72) and closed state (PDB:6G2J) of M. musculus. TMH4ND6 relative orientation in structurally aligned ND6 of the two states is shown in the right panel. (G) TMH4ND6 orientation in open (PDB:5O31) and closed state (PDB:5LC5) of B. taurus. TMH4ND6 relative orientation in structurally aligned ND6 of the two states is shown in the right panel.
+
+![Video 7.](https://cdn.elifesciences.org/articles/84415/elife-84415-video7.mp4.jpg)
+
+**Video 7.:** The 3DVA volumes are shown as a continuous movie. The movie emphasizes the Q-site and interface loops at the peripheral arm (PA)/membrane arm (MA) interface. Dm-CI subunits are colored as in Figure 1.
 
 In the helix-locked state, the C-terminal loop of NDUFA9 binds atop the TMH1-2ND3 loop, trapping R50ND3 to the surface of ND1 (Figure 5C), thereby holding the loop in place like a latch. In the flexible class 1 state, the C-terminal loop of NDUFA9 moves away from the TMH1-2ND3 loop, providing space for conformational flexibility and both loops become partially disordered (Figure 5D). Specifically, clear density is lost for R50ND3 and surrounding residues (Figure 5D). The movement of NDUFA9 away from the TMH1-2ND3 loop is accompanied by changes in the interactions between ND1 and the TMH1-2ND3 loop caused by the rotation of ND1 and conformational changes in the TMH1-2ND1 loop. In the helix-locked state, multiple hydrogen bonding and salt bridging interactions were seen between the TMH1-2ND3 loop and ND1 (Figure 5E). However, in the flexible class 1 state most of these interactions are lost except for a hydrogen bond between the conserved C41ND3 and Y134ND1 (Figure 5E and F). E40ND3 swaps hydrogen bonding partners from N133ND1 in the helix-locked state to S132ND1 in the flexible class 1 state (Figure 5E and F). Fewer hydrogen bonds between ND1 and the TMH1-2ND3 loop would also contribute to the observed higher flexibility of this loop in the flexible class 1 state (Figure 5C, D, E and F). Finally, the TMH3-4ND6 loop moves relative to NDUFA9, going from exposed or ‘untucked’ in the helix-locked state to ‘tucked’ under NDUFA9 in the flexible class 1 state (Figure 5G and H and Video 7). The movement of the TMH3-4ND6 loop brings it into contact with the TMH1-2ND1 loop in the flexible class 1 state and requires an ~10 Å translation of TMH4ND6 (Figure 5I and J, Figure 5—figure supplement 2 and Video 7). Similar ‘latching’ behavior of the NDUFA9 C-terminus and ‘tucking’ of the TMH3-4ND6 loop, though different in the structural details, was also recently seen in the structure of the thermophilic yeast Chaetomium thermophilum (Laube et al., 2022b), suggesting that this may be a general mechanism for regulating CI activity.
 
@@ -136,17 +441,253 @@ Therefore, interactions with the air-water interface should be noted as an alter
 
 In conclusion, the structure of Dm-CI from thoracic muscle reveals unique features of CI from Protostomia that do not share the standard A-to-D transition as defined biochemically. Overall, with a few notable differences, the structure of Dm-CI is like that of mammals, validating its use as a genetically tractable model for the study of metazoan CI physiology. Given that inhibitors of CI have been developed as potential agricultural pesticides (Murai and Miyoshi, 2016), this structure will be a valuable resource for the development of more selective inhibitors. Due to its close relatedness to D. melanogaster (Table 2), our structure is of particular value to develop targeted pesticides against spotted-wing drosophila (D. suzukii), a major invasive agricultural pest of the berry and wine industry in Southeast Asia, Europe, and America (Tait et al., 2021). More broadly, the unique features of Dm-CI revealed here suggest strategies for the development of insecticides that could help control insect vectors of human disease. This study highlights the utility of diverse model organisms in the study of important biochemical processes as we learn as much from the differences as we do from the similarities. In addition, our structures reveal unanticipated mechanisms that have evolved to regulate the assembly and activity of mitochondrial CI that may be exploited to modulate assembly or activity in other organisms. Additional studies on Dm-CI as well as other species are needed to fully understand the different mechanisms which have evolved to regulate the assembly and activity of this important enzyme.
 
+**Table 2.**
+ Sequence homology between CI subunits of D. melanogaster and D. suzukii.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subunit Name</th>
+      <th>Uniprot Annotation</th>
+      <th>Ds Homology with Dm (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NDUFV1</td>
+      <td>NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondrial</td>
+      <td>94.30%</td>
+    </tr>
+    <tr>
+      <td>NDUFV2</td>
+      <td>NADH dehydrogenase (Ubiquinone) 24 kDa subunit, isoform A</td>
+      <td>97.93%</td>
+    </tr>
+    <tr>
+      <td>NDUFS1</td>
+      <td>NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial</td>
+      <td>96.85%</td>
+    </tr>
+    <tr>
+      <td>NDUFS2</td>
+      <td>Complex I-49kD</td>
+      <td>91.03%</td>
+    </tr>
+    <tr>
+      <td>NDUFS3</td>
+      <td>NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitochondrial</td>
+      <td>97.58%</td>
+    </tr>
+    <tr>
+      <td>NDUFS7</td>
+      <td>LD31474p/NADH dehydrogenase (Ubiquinone) 20 kDa subunit, isoform A</td>
+      <td>96.85%</td>
+    </tr>
+    <tr>
+      <td>NDUFS8</td>
+      <td>NADH dehydrogenase (ubiquinone) 23 kDa subunit</td>
+      <td>96.77%</td>
+    </tr>
+    <tr>
+      <td>ND1</td>
+      <td>NADH-ubiquinone oxidoreductase chain 1</td>
+      <td>98.13%</td>
+    </tr>
+    <tr>
+      <td>ND2</td>
+      <td>NADH-ubiquinone oxidoreductase chain 2</td>
+      <td>97.06%</td>
+    </tr>
+    <tr>
+      <td>ND3</td>
+      <td>NADH-ubiquinone oxidoreductase chain 3</td>
+      <td>99.00%</td>
+    </tr>
+    <tr>
+      <td>ND4</td>
+      <td>NADH-ubiquinone oxidoreductase chain 4</td>
+      <td>95.57%</td>
+    </tr>
+    <tr>
+      <td>ND4L</td>
+      <td>NADH-ubiquinone oxidoreductase chain 4 L</td>
+      <td>98.96%</td>
+    </tr>
+    <tr>
+      <td>ND5</td>
+      <td>NADH-ubiquinone oxidoreductase chain 5</td>
+      <td>94.23%</td>
+    </tr>
+    <tr>
+      <td>ND6</td>
+      <td>NADH-ubiquinone oxidoreductase chain 6</td>
+      <td>93.10%</td>
+    </tr>
+    <tr>
+      <td>NDUFA1</td>
+      <td>Complex I-MWFE</td>
+      <td>98.61%</td>
+    </tr>
+    <tr>
+      <td>NDUFA2</td>
+      <td>NADH dehydrogenase (Ubiquinone) B8 subunit</td>
+      <td>91.58%</td>
+    </tr>
+    <tr>
+      <td>NDUFA3</td>
+      <td>uncharacterized protein Dmel_CG9034, isoform B</td>
+      <td>97.40%</td>
+    </tr>
+    <tr>
+      <td>NDUFA5</td>
+      <td>NADH dehydrogenase (Ubiquinone) 13 kDa B subunit</td>
+      <td>93.55%</td>
+    </tr>
+    <tr>
+      <td>NDUFA6</td>
+      <td>Complex I-B14</td>
+      <td>100.00%</td>
+    </tr>
+    <tr>
+      <td>NDUFA7</td>
+      <td>Complex I-B14.5a</td>
+      <td>91.35%</td>
+    </tr>
+    <tr>
+      <td>NDUFA8</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8</td>
+      <td>96.57%</td>
+    </tr>
+    <tr>
+      <td>NDUFA9</td>
+      <td>NADH dehydrogenase (Ubiquinone) 39 kDa subunit, isoform A</td>
+      <td>99.04%</td>
+    </tr>
+    <tr>
+      <td>NDUFA10</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10</td>
+      <td>92.87%</td>
+    </tr>
+    <tr>
+      <td>NDUFA11</td>
+      <td>Complex I-B14.7</td>
+      <td>95.81%</td>
+    </tr>
+    <tr>
+      <td>NDUFA12</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 12</td>
+      <td>96.48%</td>
+    </tr>
+    <tr>
+      <td>NDUFA13</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13</td>
+      <td>98.05%</td>
+    </tr>
+    <tr>
+      <td>NDUFAB1-α</td>
+      <td>Acyl carrier protein</td>
+      <td>96.71%</td>
+    </tr>
+    <tr>
+      <td>NDUFAB1-β</td>
+      <td>Acyl carrier protein</td>
+      <td>96.71%</td>
+    </tr>
+    <tr>
+      <td>NDUFB1</td>
+      <td>Complex I-MNLL</td>
+      <td>91.07%</td>
+    </tr>
+    <tr>
+      <td>NDUFB2</td>
+      <td>GEO11417p1/NADH dehydrogenase (Ubiquinone) AGGG subunit, isoform A</td>
+      <td>72.83%</td>
+    </tr>
+    <tr>
+      <td>NDUFB3</td>
+      <td>Complex I-B12</td>
+      <td>90.70%</td>
+    </tr>
+    <tr>
+      <td>NDUFB4</td>
+      <td>Complex I-B15</td>
+      <td>93.81%</td>
+    </tr>
+    <tr>
+      <td>NDUFB5</td>
+      <td>Complex I-SGDH</td>
+      <td>93.55%</td>
+    </tr>
+    <tr>
+      <td>NDUFB6</td>
+      <td>Complex I-B17</td>
+      <td>94.55%</td>
+    </tr>
+    <tr>
+      <td>NDUFB7</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7</td>
+      <td>94.02%</td>
+    </tr>
+    <tr>
+      <td>NDUFB8</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8</td>
+      <td>92.00%</td>
+    </tr>
+    <tr>
+      <td>NDUFB9</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9</td>
+      <td>90.97%</td>
+    </tr>
+    <tr>
+      <td>NDUFB10</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10</td>
+      <td>96.86%</td>
+    </tr>
+    <tr>
+      <td>NDUFB11</td>
+      <td>Complex I-ESSS</td>
+      <td>90.67%</td>
+    </tr>
+    <tr>
+      <td>NDUFC2</td>
+      <td>NADH dehydrogenase [ubiquinone] 1 subunit C2</td>
+      <td>87.07%</td>
+    </tr>
+    <tr>
+      <td>NDUFS4</td>
+      <td>NADH dehydrogenase [ubiquinone] iron-sulfur protein 4</td>
+      <td>87.10%</td>
+    </tr>
+    <tr>
+      <td>NDUFS5</td>
+      <td>Complex I-15 kDa</td>
+      <td>100.00%</td>
+    </tr>
+    <tr>
+      <td>NDUFS6</td>
+      <td>NADH dehydrogenase [ubiquinone] iron-sulfur protein 6</td>
+      <td>91.27%</td>
+    </tr>
+    <tr>
+      <td>NDUFV3</td>
+      <td>NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondrial</td>
+      <td>72.48%</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
-## Drosophila stocks and husbandry
+### Drosophila stocks and husbandry
 
 Drosophila strains were maintained in vials containing agar, yeast, molasses, and cornmeal medium supplemented with propionic acid and methylparaben in humidified environmental chambers (Forma environmental chambers) on a 12 hr:12 hr dark: light cycle. Mitochondrial preparations used for structure determination were from female w1118 flies. To examine the extent of incorporation of NDUFA2-FLAG into CI, genetic crosses were set up between female flies of the genotype, y w; Mhc-Gal4 and UAS-NDUFA2-FLAG males at 25 °C. After the Mhc-Gal4/UAS-NDUFA2-FLAG flies eclosed, they were maintained at 25 °C for two days, prior to dissection of thoraces. Mhc-Gal4 /w1118 flies were used as controls.
 
-## Mitochondria purification
+### Mitochondria purification
 
 Mitochondrial purification was performed as previously described (Rera et al., 2011). Briefly, approximately 2400 fly thoraces were dissected and gently crushed with a Dounce homogenizer in 1 mL per 20 thoraces of pre-chilled mitochondrial isolation buffer containing 20 mM HEPES-KOH pH 7.5, 0.6 M Sorbitol, 1 mM EDTA, 1 mM DTT, 0.1 mg/ml BSA, 10 units/ml Trasylol, and 0.5 mM PMSF on ice. After two rounds of centrifugation at 500 × g for 5 min at 4 °C to remove insoluble material, the supernatant was recovered and centrifuged at 5000 × g for 20 min at 4 °C. The pellet which is enriched for mitochondria was washed twice in the mitochondrial isolation buffer and stored at –80 °C until further processing.
 
-## Spectroscopic activity assays
+### Spectroscopic activity assays
 
 Activity from D. melanogaster or porcine mitochondrial membranes were measured in reaction buffer (20 mM HEPES, pH 7.4, 50 mM NaCl, 10% glycerol (v/v), 0.1% BSA (w/v), 0.1% CHAPS (w/v), 0.1% LMNG (w/v), 100 μM DQ) at 27 ± 1.30 μg/ml or 20 ± 0.21 μg/ml, respectively by spectroscopic observation of the oxidation of NADH (200 μM) at 340 nm in 1 ml cuvettes at room temperature using a Molecular Devices (San Jose, CA) Spectramax M2 spectrophotometer. The membrane samples were mixed with reaction buffer by tumbling and aliquoted into the 1 ml cuvette to a final volume of 1 ml. Activity of detergent-solubilized partially purified samples (see below for purification methodology) of D. melanogaster CI (1.34 ± 0.03 μg/ml) or S. scrofa SC I+III2 (2.75 ± 0.15 μg/ml) was measured as above. Measurements of the initial rates were done in 3–5 replicates, averaged and background corrected.
 
@@ -154,11 +695,11 @@ For the MgCl2 assay, the tubes were incubated at 37 °C for 30 min, after which 
 
 For the NEM assay, the plate/tubes was/were incubated at 37 °C for 20/30 min, after which 5 μM NADH or an equivalent amount of buffer was added to the well/tube and mixed by pipetting. 30 s after this addition, 0.5 mM NEM, 2 mM NEM or water was added to the corresponding wells/tubes and mixed by pipetting after which the plate/tubes was/were incubated for 20 min in dark at room temperature. The reaction mix in the tubes was transferred to cuvettes and the reactions in the cuvettes/plates were started by the addition of 200 μM NADH and briefly mixed by pipetting before recording every 2 s for 5 min (plates) /10 min (cuvettes).
 
-## Western blotting
+### Western blotting
 
 Western blotting was performed as previously described (Murari et al., 2022). Briefly, following the separation of protein complexes on 3–12% precast Bis-Tris Native PAGE gels (Life Technologies), the proteins were transferred to polyvinylidene difluoride (PVDF) membranes (Bio-Rad). Subsequently, the PVDF membrane was blocked in 5% (wt/vol) nonfat dry milk (NFDM) in tris-buffered saline (TBS) for 30 min and incubated in the appropriate primary antibody dissolved in 2% BSA and 0.1% Tween 20 in TBS (TBST) overnight at 4 °C. Subsequently, the blot was rinsed four times for 10 min each in 0.1% TBST, blocked for 30 min in 5% (wt/vol) NFDM in TBST, and incubated for 2 hr at room temperature with the appropriate HRP-conjugated secondary antibody dissolved in 2% BSA and 0.1% TBST. Afterward, samples were rinsed four times for 10 min each in 0.1% TBST. Immunoreactivity was detected by a SuperSignal West Pico PLUS Chemiluminescent kit (Thermo Scientific, 34578) and analyzed by a ChemiDoc gel imaging system from Bio-Rad. The primary antibodies used were anti-NDUFS3 (Abcam, ab14711), anti-NDUFA2 (this study), anti-FLAG (MilliporeSigma, F3165), and anti-ATPsynß (Life Technologies, A21351). Secondary antibodies used were goat anti-rabbit horseradish peroxidase (PI31460 from Pierce) and goat anti-mouse horseradish peroxidase (PI31430 from Pierce). To generate a rabbit polyclonal antibody for the Drosophila ortholog of NDUFA2 (CG15434) the following synthetic peptide was used: DPKGDTSKGVREYVER-Cys.
 
-## Electron transport chain complex purification
+### Electron transport chain complex purification
 
 The following operations were carried out at 4 °C unless otherwise indicated. The mitochondria pellet was resuspended and lysed in milli-Q water at 10 mL/g (of starting mitochondria, wet weight) using a Dounce homogenizer, to which KCl was added to a final concentration of 150 mM. The mitochondrial membrane was pelleted by centrifugation at 32,000 × g for 45 min and washed once in buffer M10 (20 mM Tris pH 7.4, 50 mM NaCl, 1 mM EDTA, 2 mM dithiothreitol (DTT), 0.002% PMSF (w/v), 10% glycerol (v/v)) at 18 mL/g (of starting mitochondria). The resulting membrane pellet was resuspended in buffer M10 at 3 mL/g (of starting mitochondria) and the protein concentration was determined using a BCA assay (Pierce Thermo Fisher). The resuspended membranes were stored at 10 mg/mL of total protein at –80 °C in a final glycerol concentration of 30% (v/v) after dilution with buffer M90 (20 mM Tris pH 7.4, 50 mM NaCl, 1 mM EDTA, 2 mM DTT, 0.002% PMSF (w/v), 90% glycerol (v/v)). Usual yield was ~30 mg total membrane protein per gram of D. melanogaster thorax.
 
@@ -166,16 +707,16 @@ The thawed mitochondrial membrane resuspension was solubilized in buffer MX (30 
 
 Partial purification of the complexes for activity assays was carried out as above with slight modifications. Briefly, following digitonin extraction, the insoluble material was cleared by centrifugation at 16,000 × g for 20 min. The supernatant was concentrated in 100 kDa MWCO centrifugal concentrators to 0.250 ml and loaded onto a continuous 20 to 45% (w/v) sucrose gradient in SGB buffer with 0.01% GDN (15 mM HEPES pH 7.8, 20 mM KCl, 0.01% GDN). After centrifugation in an SW40Ti swinging-bucket rotor at 149,176 × g for 24 hr, the sucrose gradients were fractionated using a Biocomp gradient profiler. Fractions were assayed for CI activity by running them on a 3–12% Tris-glycine blue-native PAGE (BN-PAGE) gel and a nitrotetrazoleum blue in-gel assay was performed as previously described (Maldonado et al., 2020). Fractions displaying CI activity were pooled, and buffer was exchanged into buffer containing 0.005% GDN (30 mM HEPES pH 7.8, 150 mM Potassium acetate, 0.005% GDN) and concentrated to a final concentration of 3–5 mg/ml.
 
-## CryoEM grid preparation and data collection
+### CryoEM grid preparation and data collection
 
 Four microliters of concentrated fractions from the sucrose gradients were applied onto a Quantifoil R1.2/1.3 300 mesh copper grid glow-discharged at 30 mA for 30 s before sample application. In a GP2, the grid was first incubated for 20 s at 100% humidity, then blotted for 4 s before plunge-freezing into liquid ethane cooled by liquid nitrogen. A total of 11,065 movies were collected using SerialEM on a 200 kV ThermoFisher Glacios microscope equipped with a Gatan Quantum K3 detector, at a nominal magnification of 56,818 (0.44 Å/pixel under super-resolution mode). A dose of 20 electrons/Å2/s with a 3 s exposure time was fractionated into 75 frames for each movie.
 
-## CryoEM image processing
+### CryoEM image processing
 
 The raw movies were binned twofold and motion-corrected using the MotionCor2 (Zheng et al., 2017), followed by per-micrograph contrast transfer function (ctf) estimation using the CTFFIND4.1 (Rohou and Grigorieff, 2015), both implemented in Relion 3.1.0 (Zivanov et al., 2018a). Micrographs were then curated to remove images lacking high-resolution ctf correlations. Particles were picked using crYOLO (Wagner et al., 2019). The initial 698,452 picked particles were extracted in Relion 3.1.0 with 512 pixel2 boxes, followed by 2D classification, 3D ab initio reconstruction, and 3D refinement in cryoSPARC v3.2.0 (Punjani et al., 2017). Iterative 2D classification and 3D ab initio reconstruction resulted in 293,389 good particles corresponding to Dm-CI, 25,080 particles corresponding to Dm-CIII, and 31,198 particles corresponding to Dm-CV (Figure 1—figure supplement 2). Homogenous refinement followed by non-uniform refinement (Punjani et al., 2020) of Dm-CI in cryoSPARC resulted in an initial reference map of 3.71 Å. This particle set was then transferred back into Relion 3.1.0 for further processing involving several rounds of global search, CTF refinement, Bayesian polishing (Zivanov et al., 2018b) and local searches resulting in a final map of 3.44 Å. This map was used for the initial model building in Coot (Emsley et al., 2010). Following initial model building and refinement in Phenix (Liebschner et al., 2019), masks corresponding to the peripheral arm, membrane arm, and the whole CI were generated in Relion. Iterative masked refinement and 3D classification resulted in a final reference map of 3.30 Å of the Dm-CI after import back into cryoSPARC for non-uniform refinement.
 
 Poor local resolution and broken density around at the matrix interface of the MA and PA (NDUFA10, NDUFA5, NDUFA6, NDUFS4, NDUFAB1-α) of CI prompted us to further classify CI particles using a mask around the hinge region. 3D classification of CI particles using a mask around the hinge region resulted in two distinct classes of CI particles. Iterative homogenous refinement and non-uniform refinement of the classes resulted in reference maps of 3.40 Å for both classes. The final focused map was post-processed using DeepEMhancer (Sanchez-Garcia et al., 2021) which improved the connectivity of certain regions of protein but also removed density for structured lipids. All software suites used for data processing and refinement except for cryoSPARC were accessed through the SBGrid consortium (Morin et al., 2013). 3D variability analysis (3DVA) on all 239,389 good particles was performed in cryoSPARC (Punjani and Fleet, 2020) to solve for three eigen volumes of the 3D covariance. Volume series corresponding to each of the components is generated in cryoSPARC. Molecular graphics and analyses were performed with UCSF ChimeraX, developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from National Institutes of Health R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases (Pettersen et al., 2021).
 
-## Model building and refinement
+### Model building and refinement
 
 All manual model building was performed in Coot 0.9.2 (Emsley et al., 2010) and refinements were performed in Phenix-1.19.1 (Liebschner et al., 2019). Mammalian CI was docked into the Dm-CI map and Alpha-fold models (Jumper et al., 2021), accessed via Uniprot (Bateman et al., 2020), of Dm-CI subunits, were structurally aligned to each of the corresponding mammalian CI subunits to generate an initial model of the Dm-CI. The model-map fit was manually inspected, and the model was rebuilt where necessary to generate an initial Dm-CI model. Secondary structure restraints were first automatically generated from the manually built model, then edited according to the outcome of the Phenix refinement. Bond length and angle restraints for metal ion coordination and amino acid side chain linkage were generated manually, and a ligand.cif file was also provided for non-default ligands in Phenix. The refined model was manually inspected and edited in Coot before the next round of Phenix refinement, and this iterative cycle continued until the model statistics converged before the submission of maps and models to the EMDB and PDB databases. Model statistics and details by subunit are provided in Table 1.

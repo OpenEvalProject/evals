@@ -14,13 +14,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04aqjf708 New York State Psychiatric Institute, Division of Systems Neuroscience New York New York United States
-2. https://ror.org/00hj8s172 Department of Psychiatry, Vagelos College of Physicians and Surgeons, Columbia University New York United States
-3. https://ror.org/00hj8s172 Institute for Genomic Medicine, Vagelos College of Physicians and Surgeons, Columbia University New York United States
-4. https://ror.org/00hj8s172 Department of Neurology, Vagelos College of Physicians and Surgeons, Columbia University New York United States
-5. https://ror.org/00hj8s172 Department of Neuroscience, Vagelos College of Physicians and Surgeons, Columbia University New York United States
-6. https://ror.org/00hj8s172 Columbia College, Columbia University New York United States
-7. https://ror.org/00hj8s172 Department of Pathology and Cell Biology, Vagelos College of Physicians and Surgeons, Columbia University New York United States
+1. New York State Psychiatric Institute, Division of Systems Neuroscience New York New York United States ([ROR:04aqjf708](https://ror.org/04aqjf708))
+2. Department of Psychiatry, Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Institute for Genomic Medicine, Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+4. Department of Neurology, Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+5. Department of Neuroscience, Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+6. Columbia College, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+7. Department of Pathology and Cell Biology, Vagelos College of Physicians and Surgeons, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
@@ -40,9 +40,17 @@ In this study, we investigated the activity of GCs and MCs during sleep-wake cyc
 
 ## Results
 
-## Infraslow neural oscillation of DG populations during NREM sleep
+### Infraslow neural oscillation of DG populations during NREM sleep
 
 To investigate population activity during sleep and awake brain states in the DG in a cell type-specific manner, we injected a set of Dock10Cre+/- mice with AAV1-FLEX-GcaMP6s to drive the expression of GCaMP specifically in GCs (Kohara et al., 2014). The mice were then implanted with fiber photometry probes, EEG, and EMG electrodes to facilitate brain state classification. Two weeks after recovery, we conducted chronic photometry and EEG recordings while the animals experienced natural wake/sleep cycles in a behavioral chamber. Consistent with previous studies (Senzai and Buzsáki, 2017; Pofahl et al., 2021; Shen et al., 1998), we observed significantly higher populational calcium activity during sleep states (NREM and REM), compared to wakefulness (Figure 1A–C). Strikingly, our data also revealed a structured pattern in the calcium signal: GC activity was organized to an infraslow oscillation (ISO, 1–2 cycles/min, or 0.017–0.033 Hz) during NREM sleep (Figure 1A and D). The oscillation amplitude and power remained largely unchanged in the early and late stages of NREM sleep epochs. However, the analysis of the oscillatory power and amplitude in the early stage of the first NREM sleep epochs following prolonged wakefulness yielded statistically significant differences (Figure 1—figure supplement 1A, B). Cross-correlation analysis between calcium activity and EMG/EEG revealed a strong correlation between the calcium oscillation and the sigma band of the EEG (Figure 1—figure supplement 1A, B). Additionally, the troughs of the calcium ISO partially coincided with MA episodes (Figure 1E). Quantitative analysis showed that 29% of the ISO events during NREM sleep were followed by a MA epoch while 62% of ISO events were accompanied by the maintenance of NREM sleep (Figure 1F). Notably, the reduction in GC activity significantly preceded the occurrence of MA events as judged from the EMG, where the average latency between the calcium trough and the onset of the MA was 6.06+/-0.31 s (Figure 1G and H).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig1-v1.jpg)
+
+**Figure 1.:** (A) Representative recording session showing infraslow oscillation (ISO) during NREM sleep. From top to bottom: brain states, EEG power spectrogram (0–25 Hz), EMG amplitude, photometric signal. (B) Left, Schematic representation of the recording setup. Right, a fluorescence image showing the expression of GCaMP6s (green) in the granule cell layer and the optic fiber placement (dashed line) in a Dock10Cre mouse. Scale bar, 500 µm. (C) Quantification of calcium activity in granule cells (13 recording sessions in 5 Dock10Cre mice, n.s. – no significance, **p<0.01, paired t-test) in wake (W), NREM sleep (N), and rapid eye movement (REM) sleep (R). (D) Left: oscillation peak frequency during NREM sleep and wake based on Fourier transformation of the photometry signal. Right: Quantification of calcium oscillations in granule cells (GCs) (13 sessions in 5 mice). (E) A representative example showing the coincidence of calcium troughs (indicated by *) with microarousals (MAs). (F) Percentage of state transition outcome from each calcium dip. (G) Peri-stimulus time histogram (PSTH) in one recording session showing calcium signal aligned with the onset of MAs. Bottom left: parameters of the calcium signal used for quantification. (H) Quantification of the latency (t) and magnitude of the calcium trough (Drop) during MAs (13 sessions from 5 Dock10Cre mice).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative recording session showing GC activity (red trace) during wake/sleep cycles. T0 (black dashed box), T1 (red dashed box), and T2 (green dashed box) indicate different stages of NREM sleep quantified in B. Blue lines (middle) indicate the microarousals. (B) Quantification of GC infraslow oscillation power (left) and amplitude (right) at different stages of NREM sleep (16 sessions from 5 Dock10Cre mice, ***p<0.001, n.s. no significance, paired t-test). T0 refers to the first minute of the first NREM epochs, defined as defined as those with the prior wakefulness longer than 5 min. T1 refers to the first minute of all NREM epochs, whereas T2 refers to the last minute of all NREM epochs of the recording sessions. (C) A representative example showing EEG spectrogram (0–15 Hz), EEG sigma power, and GC calcium signals. (D) Correlation analysis between GC calcium activity and EEG sigma power during NREM sleep in one recording session. (E) Quantification of correlation coefficient between GC activity and EEG sigma power during different brain states (13 sessions from 5 Dock10Cre mice, **p<0.01, ***p<0.001, paired t-test).
 
 MCs are among the first synaptic partners of GCs, therefore, we set out to record the calcium activity of MCs by injecting a new cohort of mice with dopamine 2 receptor-Cre (Drd2Cre+/-) genetic background (Figure 2A and B). Drd2 expression in the hilus is highly specific to MCs (Puighermanal et al., 2015; Gangarossa et al., 2012). MCs displayed similar levels of calcium activity during wake and NREM sleep, and significantly increased activity during REM sleep (Figure 2C). Similar to GCs, we observed the ISO in MCs calcium signal, although with a slightly lower peak frequency (Figure 2A and D). Furthermore, correlation analysis between photometric and EEG/EMG signals showed similar results as with GCs, i.e., around 30% of ISO events in MCs lead to MAs and 60% resulted in the maintenance of NREM (Figure 2E–G). The average latency between the onset of calcium declines and the onset of MAs was somewhat shorter than in GCs (5.18+/-0.49 s) (Figure 1H).
 
@@ -52,25 +60,61 @@ MCs are among the first synaptic partners of GCs, therefore, we set out to recor
 
 Overall, our data showed similar NREM-specific oscillatory activity in both GCs and MCs. The increased activity of GCs and MCs during sleep stages is consistent with previous studies (Senzai and Buzsáki, 2017; Pofahl et al., 2021; Shen et al., 1998; Jung and McNaughton, 1993). However, the ISO in the calcium activity of glutamatergic neurons, to the best of our knowledge, has not been reported yet.
 
-## Ensemble activity of dentate gyrus in sleep
+### Ensemble activity of dentate gyrus in sleep
 
 To study the cellular mechanisms underlying sleep-specific activity, we conducted head-fixed two-photon imaging experiments combined with EEG/EMG recordings to record neuronal ensemble activity in the DG during sleep stages (Figure 3A). Wild-type mice were injected with AAVdj-SYN-jGCaMP7b in the DG followed by optical window, EEG, and EMG implantations. After a few weeks of recovery, we recorded the cellular activity in the granule cell layer and in the hilus (Figure 3A–C) while the mouse was engaged in locomotory and motionless epochs on a treadmill. To facilitate sleep under the two-photon microscope, the mice underwent mild sleep deprivation before the recordings (see Methods for details). Post hoc analysis of EEG/EMG signals confirmed the presence of sleep states (Figure 3B and C, also Figure 3—figure supplement 1A, B). Comparing the calcium signals recorded during awake and sleep intervals revealed that the calcium activity was significantly upregulated during NREM in about 50% of the GC and 28% of the putative MC populations (Figure 3D and E) in the hilus. This finding is consistent with a previous two-photo imaging study showing that GCs display high activity during running but also during resting periods (Pilz et al., 2016). Similar to the photometry experiments, we then correlated the MAs with single-cell calcium activity. We found that up-regulated, but not down-regulated putative GCs and putative MCs displayed decreased activity during MAs in NREM sleep (Figure 3D and E, Figure 3—figure supplement 1C–E).
 
-## ISO is driven by serotonin release during NREM sleep
+![Figure 3.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig3-v1.jpg)
+
+**Figure 3.:** (A) Left, schematic layout of two-photon imaging and EEG recording setup. Right, representative images showing putative granule cells (pGCs) and putative mossy cells (pMCs). Scale bars, 50 µm. (B, C) Representative two-photon recording sessions of field of views containing putative pGCs pMCs. From top to bottom: brain states (gray – awake, orange – NREM), EEG spectrogram (0–25 Hz), EMG, velocity (vel.), and calcium traces in individual cells. Red traces - upregulated cells, blue traces –downregulated cells, gray traces – non-significant cells. (D, E) Left, Percentage of Up-, downregulated, and non-significant cells from the entire recorded cell populations. Middle, quantification of calcium activity in different brain states in up-, down-regulated cells (pGCs: p<0.05 in up-regulated cells between non-rapid eye movement (NREM) and microarousal (MA), p=0.75 in down-regulated cells between NREM and MA; pMCs: p<0.001 in up-regulated cells between NREM and MA, p=0.16 in down-regulated cells between NREM and MA, paired t-test). Right, Averaged activity in up-, down-regulated pGCs and pMCs during microarousals (MA). Time 0 indicates the MA onset. Putative GCs: 369 cells from 3 C57BL/6 J mice; putative MCs: 135 cells from 2 C57BL/6 J mice.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative EEG recording session showing sleep states in a head-fixed mouse under two-photon microscope. (B) Quantification of brain states in putative granule cells (GCs) (putative granule cells, pGCs, green circles) and putative mossy cells (MCs) (putative mossy cells, pMCs, red circles) during imaging sessions used in Figure 3. (C) A representative example of per-stimulus time histogram (PSTH) showing neuronal activity of up-regulated (left) and down-regulated (middle) GC cells during all 153 microarousal events in a recording session. The averaged activity across all up-regulated or down-regulated cells were shown in each row in PSTH. Right, aligned EMG amplitude during microarousal events. (D) Quantification of neuronal calcium activity in different brain states in up-regulated (N=174 cells), down-regulated (N=162 cells), and unchanged (N=33 cells) putative GCs. Gray: individual cells, red: Mean ± SEM. Data was collected from three imaging sessions in 3 C57BL/6 J mice. Up-regulated, not down-regulated GCs displayed decreased activity during microarousals (MAs), compared to that in NREM sleep (*p<0.05, n.s., no significance, paired t-test). (E), Quantification of neuronal activity in different brain states in up-regulated (N=55 cells), down-regulated (N=70 cells), and unchanged (N=10 cells) putative MC. Data was collected from two imaging sessions in 2 C57BL/6 J mice. Up-regulated, not down-regulated putative MCs displayed decreased activity during MAs, compared to that in NREM sleep (***p<0.001, n.s., no significance, paired t-test).
+
+### ISO is driven by serotonin release during NREM sleep
 
 The prominent electrographic patterns in the DG during NREM sleep include dentate spikes and sharp-waves ripples (Bragin et al., 1995; Buzsáki, 1986; Farrell et al., 2024), but these events are generally too short-lived (30–120 ms) to account for the long-lasting active periods during ISO. Given the second-long latencies between calcium troughs and MAs, we turned our attention toward neuromodulatory systems that are thought to modulate sleep/wake periods on a slower scale and display phasic activity during sleep cycles (Scammell et al., 2017). An earlier study in mice identified phasic activity of serotonergic neurons in the dorsal raphe during NREM sleep (Oikonomou et al., 2019). This finding was corroborated by another group, which also demonstrated that the frequency range of the phasic activity falls in the infraslow regime (0.01–0.3 Hz) (Kato et al., 2022). Therefore, we looked at the possibility whether the 5-HT system might be responsible for the modulation of the ISO in the DG. In a subsequent set of experiments, we used GRAB5-HT2h, a recently developed and optimized genetically encoded 5-HT sensor (Wan et al., 2021) to measure 5-HT dynamics during sleep. Considering that 5-HT is exclusively synthetized by the raphe nuclei in the adult brain (Muzerelle et al., 2016), our initial step involved stereotactic injection of an AAV expressing the GRAB5-HT2h sensor into this region, followed by the implantation of an optic fiber above the injection site. Our results recapitulated the canonical view on 5-HT dynamics during sleep/wake cycles: we observed the highest 5-HT level during wakefulness, significantly lower level during NREM and detected the lowest 5-HT levels during REM periods (Figure 4—figure supplement 1A, F; Monti, 2011; Jouvet, 1999; Lee and Dan, 2012). We also observed a phasic pattern of 5-HT during NREM sleep (Figure 4—figure supplement 1A, E) which is consistent with recently published studies (Kato et al., 2022; Wan et al., 2021). Our further analyses revealed that the rhythmic 5-HT release during NREM sleep was also correlated with MA episodes (Figure 4—figure supplement 1B). Correlation analysis revealed that 35% of phasic 5-HT peaks during NREM sleep were accompanied by MA events detected by the EMG bursts (Figure 4—figure supplement 1C). The latency between the phasic increase of 5-HT and the MA onset was 6.82+/-0.44 s (Figure 4—figure supplement 1D, E).
 
 To confirm that this infraslow oscillatory pattern in 5-HT is manifested in the hippocampus as well, we injected AAV-GRAB5-HT2h into the DG and implanted an optic fiber above the injection site. (Figure 4A). Similar to 5-HT signals recorded from the raphe nuclei, we observed the highest level of 5-HT in wake, the lowest in REM sleep, and intermediate level in NREM sleep (Figure 4B–D). Importantly, the 5-HT dynamics during NREM sleep displayed the same oscillatory pattern in the DG as that we observed in the raphe (Figure 4B). Thirty-four percent of the phasic increases in 5-HT were associated with MAs (Figure 4C). Furthermore, the frequency of phasic 5-HT release during NREM was 1.14+/-0.04 cycle/min (Figure 4E), closely matching the frequency of the ISO in the DG.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left, schematic of experimental design. Right, expression of 5-HT sensor in the hippocampus. Scale bar, 500 µm. (B) A representative example of 5-HT signals during different brain states. From top to bottom: brain states, EEG power spectrogram (0–25 Hz), EMG signal, photometric signal. The dashed box is enlarged below in panel B. The asterisks indicate the peaks of 5-HT signals. Note the coincidence of 5-HT release with MAs during NREM sleep (black arrows and vertical green lines). (C) Percentage of state transition outcome from each 5-HT event (averaged data from 6 mice). (D) Quantification of 5-HT signals in the DG during different brain states (14 sessions from 6 C57BL/6 J mice, **p<0.01, ***p<0.001, paired t-test). Data were normalized to Z scores in each recording session. (E) Quantification of oscillatory cycles of 5-HT signals in the DG (14 recording sessions from 6 C57BL/6 J mice).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative recording session showing 5-HT signals during different brain states. From top to bottom: brain states, EEG power spectrogram (0–25 Hz), EMG, photometric signal. The dashed box enlarged below in panel (B) Note that the 5-HT release during NREM sleep coincided with the microarousal (MA) episodes (black arrows). The asterisks indicate the peaks of 5-HT signals. (C) Percentage of outcome of brain states following 5-HT release during NREM sleep (average data from 11 sessions in 5 C57BL/6 J mice). (D) Left, A representative example showing 5-HT release during MAs. Right, aligned EMG burst during MAs. Peri-stimulus time histograms (PSTHs) were aligned to the onset of MAs. (E) Quantification of latency to the MAs and number of 5-HT release (Events, defined as those signals with a peak above the baseline) per minute during NREM sleep (11 sections from 5 C57BL/6 J mice). (F) Quantification of 5-HT signals in the raphe nuclei during different brain states (11 sections from 5 C57BL/6 J mice, **p<0.01, paired t-test). Data were normalized to Z scores in each recording session.
+
 The tight alignment of both the calcium troughs in the DG and the phasic 5-HT peaks in the raphe with MA events suggest a causal relationship between them. To test this hypothesis, we conducted dual site fiber photometry recordings in Slc6a4Cre+/- mice by injecting AAV1-FLEX-GCaMP6s in the raphe and with AAV9-CaMKII-GCaMP6s in the DG (Figure 5A) followed by fiber implants to these areas. Post hoc histological analysis of AAV9-CaMKII-GCaMP6s injected brains confirmed that the expression of GCaMP is largely restricted to GCs (Figure 5—figure supplement 1). Furthermore, analysis of the calcium signals from the AAV9-CaMKII-GCaMP6s-labeled population revealed a similar ISO pattern as we observed with the genetically more selective approach (Figure 5—figure supplement 1). Strikingly, the phases of the photometry signals in the DG and raphe appeared to be anticorrelated during NREM sleep, i.e., the calcium peaks in the raphe appeared when the intensity of the calcium signal dropped in the DG (Figure 5B). Indeed, Pearson’s correlation analysis of the two signals resulted in a strong negative correlation between the raphe and DG during NREM sleep (Figure 5C and D). Interestingly, during wake periods, the DG activity was positively correlated with the raphe activity (Figure 5D). Contrary to NREM sleep, the correlated activity between the dentate gyrus and raphe displayed a large variability during REM sleep. Together, these results suggest that the descending phase of the population activity during the ISO is driven by the phasic release of 5-HT during NREM sleep.
 
-## Granule cell activity is inhibited via Htr1a receptors during the ISO
+![Figure 5.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig5-v1.jpg)
+
+**Figure 5.:** (A) Left, Schematic representation of the two-site photometry experimental design. Right, Expression of CaMKII-GCaMP6s and fiber placement in the dentate gyrus (DG) and raphe nuclei. Scale bars, 500 µm. (B) A representative example of concurrent recording of DG and raphe 5-HT neurons in a Slc6a4Cre+/- mouse during sleep. From top to bottom: brain states, EEG power spectrogram (0–25 Hz), EMG amplitude, photometric calcium signals (CaMKII-G6s) in DG and in dorsal raphe. (C) Correlation analysis of calcium activity between DG and raphe 5-HT neurons during NREM sleep and wakefulness in one recording session. (D) Quantification of correlation coefficient between DG activity and raphe activity during different brain states (11 sessions from 3 Slc6a4Cre+/- mice, ***p<0.001, paired t-test).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative recording session showing calcium activity in a wild-type mouse injected with AAV9-CaMKII-GCaMP6s in the DG. From top to bottom: brain states, EEG power spectrogram (0–25 Hz), EMG, photometric signal. (B) A fluorescent image showing the constrained expression of GCaMP6s (green) in the granule cell layer of the DG. Scale bar, 500 µm. (C) Quantification of calcium activity (16 recording sessions in 6 C57BL/6 J mice, n.s., no significance, **p<0.01, paired t-test) in wake (W), NREM sleep (N), and REM sleep (R). (D) Left: oscillation peak frequency during NREM sleep and wake based on Fourier transformation of the photometry signal. Right: Quantification of calcium oscillations in CaMKII-labeled cells (16 sessions in 6 mice).
+
+### Granule cell activity is inhibited via Htr1a receptors during the ISO
 
 Our results so far suggested that the periodic increase in 5-HT levels during NREM sleep inhibits GC and MC activity. To identify the molecular basis of this relationship, we conducted local genetic manipulations of the Htr1a receptors. We selected this subtype because of its high expression pattern in GCs (Tanaka et al., 2012) and its well-characterized inhibitory effect on this cell type (Tsetsenis et al., 2007). We injected a cohort of Htr1aflox/flox mice (Samuels et al., 2015) with a mix of AAV1-hSyn-Cre and AAV9-CaMKII-GCaMP6s to simultaneously express a calcium sensor and to downregulate Htr1a receptors specifically in the GCs (Figure 6A). A control group of Htr1aflox/flox mice was injected with AAV9-CaMKII-GcaMP6s. We then conducted fiber photometry recordings in the DG. Analysis of the calcium signals during awake and sleep period resulted in significantly decreased ISO during NREM in the Htr1a downregulate group compared to the control (Figure 6B–D) Post hoc in situ hybridization confirmed the lack of Htr1a receptors at the injection site (Figure 6—figure supplement 1). To examine if Htr1a knock-down affects sleep architecture, we quantified the total duration of wake, NREM sleep, REM sleep, and frequency of MAs. No significant difference was observed between Htr1a flox/flox and control mice (Figure 6—figure supplement 2A). We reasoned that Htr1a receptors are required for the inhibitory response of DG activity during the MAs. Indeed, we found that Htr1a flox/flox mice displayed lower calcium drops and longer latency during the MAs, compared to that in control mice (Figure 6—figure supplement 2B, C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic representation of the experimental design. A mix of AAV9-CamKII-GCaMP6s and AAV1-hSyn-Cre was injected into the DG of Htr1aflox/flox mice. (B) Representative example showing photometry and EEG recordings in the DG of a control mouse injected with AAV9-CaMKII-GCaMP6s alone. Right, Fourier transformation of calcium activity during wake (blue) non-rapid eye movement (NREM) sleep (red). (C) A representative example showing photometry and EEG recordings in the DG of a mouse injected with AAV9-CaMKII-GCaMP6s and AAV1-hSyn-Cre. Right, Fourier transformation of calcium activity during wake (blue) NREM sleep (red). (D) Left, Quantification of the relative power of the calcium oscillation in the range of 1–2 cycles/min in the Cre and control groups (16 sessions from 5 mice for Cre, 16 sessions from 6 mice for control). Right, Quantification of calcium oscillation amplitudes in the Cre and control groups. Calcium signals in each mouse were normalized to Z scores. **p<0.01, ***p<0.001, unpaired t-test. (E) Schematic representation of the contextual fear conditioning (CFC) experimental design. (F) Left, Contextual fear recall tests showing percentage of freezing in 1 min time bins for Htr1aflox+/+ mice bilaterally injected with AAV9-CaMKII-Cre-GFP (Cre) or AAV9-CaMKII-GFP (GFP). Right, Quantification of freezing behavior over 5 min interval during contextual recall tests in Cre and GFP groups (N=11 for Cre, N=12 for GFP, *p<0.05, ***p<0.001, unpaired t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left, Schematic of the experimental design. AAV9-CaMKII-GFP-Cre was injected unilaterally into the dorsal DG of Htr1aflox/flox mice. (B) Representative examples of FISH signal of Htr1a (red) and GFP (green) in a brain section of a Htr1aflox/flox mouse (3 mice in total). (C, D) Enlarged view of Htr1a and GFP expression in the DG corresponding to the yellow boxes in B. Blue, DAPI. Scale bars, 200 μm in B and 20 μm in C and D.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/100196/elife-100196-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Quantification of the total duration of wake, non-rapid eye movement (NREM) sleep, rapid eye movement (REM) sleep, and the number of microarousals (MA) in wild-type (WT, N=5) and Htr1a knockout mice (N=5) injected with AAV-hSyn-Cre in the dentate gyrus (DG). Data were analyzed from intermittent EEG/photometry recordings across light and dark cycles. No significant difference was observed between wild-type (WT) and Htr1a mice (unpaired t-test). (B) Representative examples of peri-stimulus time histogram (PSTH) in a wild-type (WT) and Htr1a knockout mouse (injected with AAV-hSyn-Cre in the DG) aligned with the onset of microarousals (MAs). (C) Quantification of the latency and the magnitude of calcium drops during the MAs in WT (16 sessions from 6 mice) and Htr1a mice (16 sessions from 5 mice). *p<0.05, **p<0.01, unpaired t-test.
+
 Together, our two-site recordings and genetic manipulation data indicated that the ISO in the DG is modulated through an inhibitory mechanism via Htr1a receptors.
 
-## 5-HTergic modulation of the DG via Htr1a receptors is required for contextual memory
+### 5-HTergic modulation of the DG via Htr1a receptors is required for contextual memory
 
 Neural oscillations during NREM sleep are thought to be involved in memory consolidation (Girardeau and Lopes-Dos-Santos, 2021). We hypothesized that the Htr1a-dependent ISO is a required component for hippocampus-dependent memory consolidation. To test this hypothesis, we genetically knocked out Htr1a receptors in the DG and examined its effect on memory performance. We injected Htr1aflox/flox mice with AAV9-CaMKII-Cre-GFP (intervention group) or with AAV9-CaMKII-GFP (control group) bilaterally in the dorsal DG. Two weeks after surgery, we tested the memory performance of the mice by examining freezing behavior in a contextual fear conditioning (CFC) paradigm (Figure 6E). In accordance with our hypothesis, we observed diminished memory performance in retrieval tests in the intervention group (Figure 6F) measured by the time spent with freezing (30.0 ± 4.63% vs 49.2 ± 7.10%).
 
@@ -98,31 +142,146 @@ In summary, here we showed that calcium activity in the DG is highly increased d
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (C57BL/6 J)</td>
+      <td>C57BL/6 J mouse</td>
+      <td>JAX: #000664</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Dock10Cre)</td>
+      <td>Dock10Cre mouse</td>
+      <td>MGI:6117432</td>
+      <td>N/A</td>
+      <td>transgene insertion, by Susumu Tonegawa</td>
+    </tr>
+    <tr>
+      <td>Strain (Drd2Cre)</td>
+      <td>Drd2Cre mouse</td>
+      <td>GENSAT</td>
+      <td>MMRRC:032108-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Slc6a4Cre)</td>
+      <td>Slc6a4Cre mouse</td>
+      <td>JAX: #014554</td>
+      <td>RRID:IMSR_JAX:014554</td>
+      <td>Common name: SERT-Cre</td>
+    </tr>
+    <tr>
+      <td>Strain (Htr1aflox/flox)</td>
+      <td>Htr1aflox/flox mouse</td>
+      <td>Rene Hen at Columbia University</td>
+      <td>N/A</td>
+      <td>Generated by Rene Hen</td>
+    </tr>
+    <tr>
+      <td>Strain (pAAV.Syn.Flex.GCaMP6s.WPRE.SV40)</td>
+      <td>AAV1-SYN-FLEX-GCaMP6s</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_100845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (AAV.CamKII.GCaMP6s.WPRE.SV40)</td>
+      <td>AAV9-CamKIIa-GCaMP6s</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_107790</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (AAVdj-syn-jGCaMP7b)</td>
+      <td>AAVdj-syn-jGCaMP7b</td>
+      <td>Gene Vector and Virus Core at Stanford University</td>
+      <td>RRID:Addgene_104489</td>
+      <td>Custom-made at Stanford virus core</td>
+    </tr>
+    <tr>
+      <td>Strain (AAV9-hSyn-GRAB5-HT2h)</td>
+      <td>AAV9-hSyn-GRAB5-HT2h</td>
+      <td>Vigene Biosciences</td>
+      <td>Cat#YL10097-AV9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (pENN.AAV.hSyn.Cre.WPRE.hGH)</td>
+      <td>AAV1-hSyn-Cre</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_105553</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (pENN.AAV.CamKII.HI.GFP-Cre.WPRE.SV40)</td>
+      <td>AAV9-CaMKII-Cre-GFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_105551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (pENN.AAV.CamKII0.4.eGFP.WPRE.rBG)</td>
+      <td>AAV9-CaMKII-GFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_105541</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay (Htr1a RNAscope probe)</td>
+      <td>Htr1a mouse RNAscope probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#312301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay (EGFP RNAscope probe)</td>
+      <td>EGFP RNAscope probe</td>
+      <td>Advanced Cell Diagnostics</td>
+      <td>Cat#400281</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 This study was carried out in accordance with the US National Institute of Health (NIH) guidelines for the care and use of laboratory animals and approved by the Animal Care and Use Committees of Columbia University (Protocol# AC-AABL9550) and New York State Psychiatric Institute (NYSPI-1661 and 1667). Adult (10–16 wk of age) were used for all experiments from both sexes. The following mouse lines were used in the current study: C57BL/6 J (JAX 000664), Dock10Cre, Drd2Cre, Slc6a4Cre, Htr1aflox/flox. Mice were housed in 12 hr light-dark cycles (lights on at 07:00 am and off at 07:00 pm). Dock10Cre, Drd2Cre, Slc6a4Cre were bred with C57BL/6 J mice, and the heterozygote offspring was used in the experiments. Homozygote offspring of the Htr1aflox line was used in local genetic manipulations.
 
-## Surgical procedures
+### Surgical procedures
 
-## EEG and Fiber implants
+#### EEG and Fiber implants
 
 Mice were anesthetized with a mixture of ketamine and Xylazine (100 mg×kg-1 and 10 mg×kg-1, intraperitoneally), then placed on a stereotaxic frame with a closed-loop heating system to maintain body temperature. After asepsis, the skin was incised to expose the skull, and a small craniotomy (~0.5 mm in diameter) was made on the skull above the regions of interest. A solution containing 50–200 nl viral constructs was loaded into a pulled glass capillary and injected into the target region using a Nanoinjector (WPI). Optical fibers (0.2 mm diameter, 0.39 NA, Thorlabs) were implanted into the target region with the tip 0.1 mm above the virus injection site for fiber photometry recording. For EEG and EMG recordings, a reference screw was inserted into the skull on top of the cerebellum. EEG recordings were made from two screws on top of the cortex 1 mm from midline, 1.5 mm anterior to the bregma, and 1.5 mm posterior to the bregma, respectively. Two EMG electrodes were bilaterally inserted into the neck musculature. EEG screws and EMG electrodes were connected to a PCB board which was soldered with a 5-position pin connector. All the implants were secured onto the skull with dental cement (Lang Dental Manufacturing). After surgery, the animals were returned to their home cages for recovery for at least 2 wk before any experiment.
 
-## Virus injection
+#### Virus injection
 
 For fiber photometry, 150–200 nl AAV1-FLEx-GCaMP6s or AAV9-hSyn-5-HT2h was unilaterally injected in the DG (AP –1.9 mm, ML 1.5 mm, DV 1.7 mm) or the dorsal raphe (AP –4.5 mm, ML 0 mm, DV 3.2 mm), respectively. An optical fiber was implanted 0.1 mm above the injection site. The DV Coordinates listed above are relative to the pial surface.
 
 For two-photon imaging, the viral aliquots were diluted five times with physiological saline (titer: ~5.36×1012 GC/ml) and 200 nl AAVdj-SYN-jGCaMP7b was injected unilaterally to the left DG (AP –1.9 mm, ML 1.5 mm, DV –1.7 mm).
 
-## Optical cannula, EEG, and EMG implant for two-photon imaging
+#### Optical cannula, EEG, and EMG implant for two-photon imaging
 
 For two-photon imaging, we modified our standard surgical procedures (Turi et al., 2019) by implanting a pair of bone screws for unilateral EEG recording on the contralateral side to the cannula. Briefly, a week after the virus injection the mice were deeply anesthetized with Isoflurane, then a sagittal incision was made on the top of the skull. After removing the skin, trephination was done on the left side of the skull, by using a sterile 2 mm diameter tissue punch. The overlying cortical and hippocampal tissue was removed from above the DG, while the brain was constantly irrigated with sterile cortex buffer (125 mM NaCl, 5 mM KCl,10mM glucose, 10 mM HEPES, 2 mM CaCl2, 2 mM MgSO4. pH set to 7.4, osmolality to 305 mOsm). A sterile metal cannula (diameter: 2 mm, height: 1.8 mm) with a glass coverslip glued (Norland) to the bottom was implanted above the DG and secured in place with layers of tissue adhesive (3 M Vetbond) and dental acrylic. After the cannula was safely in place, we predrilled two holes on the right side of the skull (~1.5 mm from the middle line; 1.5 mm anterior and 1.5 mm posterior of the Bregma, respectively) for implanting recording electrodes, and one hole above the cerebellum for a reference electrode. Silver wires (125 μm diameter, PFA-coated) used for EEG recordings were placed into the predrilled holes and secured in place with stainless-steel skull screws (0.8 mm diam, 2.15 mm long). A pair of silver wires (125 μm diameter, PFA-coated) were implanted to the neck muscle as described in the fiber photometry section to facilitate EMG recordings. Finally, a metal head bar was secured to the skull with dental acrylic and the custom PCB interface with the connected silver wires and a connector was secured to the head bar with dental acrylic as well. All exposed bone areas were covered with dental acrylic and the mice were returned to their home cage for postoperative care and recovery.
 
-## EEG recording
+### EEG recording
 
 Mouse sleep behavior was monitored using EEG and EMG recording along with an infrared video camera at 30 frames per second. Recordings were performed for 24 hr (light on at 7:00 am and off at 7:00 pm) in a behavioral chamber inside a sound-attenuating cubicle (Med Associated Inc). Animals were habituated in the chamber for at least 4 hr before recording. EEG and EMG signals were recorded, bandpass filtered at 0.5–500 Hz, and digitized at 1017 Hz with 32-channel amplifiers (TDT, PZ5, and RZ5D or Neuralynx Digital Lynx 4 S). For sleep analysis, spectral analysis was carried out using a fast Fourier transform (FFT) over a 5 s sliding window, sequentially shifted by 2 s increments (bins). Brain states were semi-automatically classified into wake, NREM sleep, and REM sleep states using a custom-written MATLAB program using the following scoring criteria: wake: desynchronized EEG and high EMG activity; NREM: synchronized EEG with high-amplitude, delta frequency (0.5–4 Hz) activity and low EMG activity; REM: high power at theta frequencies (6–9 Hz) and low EMG activity. Semi-auto classification was validated manually by trained experimenters. We categorized wake bouts of <15 s as microarousals (MA) in the following way: the baseline of the EMG was calculated by averaging the signal, then a threshold of 0.5 standard derivation above the baseline was used to detect the MA. Finally, each MA event was further validated manually by a trained experimenter.
 
-## Two-photon recording
+### Two-photon recording
 
 Mice were extensively habituated to the two-photon rig and to the head-fixed position before the recording sessions. They were placed in the head holder apparatus for a gradually increasing amount of time (from 5 min to 1 hr) over the course of 2 wk. Mice were head-restrained under the objective of the two-photon microscope, but otherwise able to walk on a custom-built treadmill. The mouse’s behavior on the treadmill was collected with an earlier version of BehaviorMate (Bowler, 2023). The locomotory and stationary epochs were detected with a rotary encoder attached to the axel of the treadmill wheel. The signal from the encoder was processed with BehaviorMate.
 
@@ -134,24 +293,24 @@ To detect wake/sleep states, a Neuralynx Digital Lynx 4 S system was used for EE
 
 To facilitate sleep under head-fixed conditions, the mice underwent mild sleep deprivation during the night (from 5 pm to 8 am) before the recording session. Please note that the night is the active phase for mice. The mice were placed in a custom-designed cage within a sound attenuated enclosure on a treadmill controlled by a microcontroller. The treadmill was set to 5 s on and 10 s off cycles. On the morning of the two-photon recording sessions, the mice were transferred to the head-fixed apparatus from the sleep deprivation box.
 
-## Fiber photometry
+### Fiber photometry
 
 Fiber photometry recordings were performed as previously described (Teng et al., 2022). In brief, calcium dependent GCaMP fluorescence was excited by sinusoidal modulated LED light (473 nm, 220 Hz; 405 nm, 350 Hz, Doric lenses) and detected by a femtowatt silicon photoreceiver (New Port, 2151). Photometric signals and EEG/EMG signals were simultaneously acquired by a real-time processor (RZ5D, TDT) and synchronized with behavioral video recording. A motorized commutator (ACO32, TDT) was used to route electric wires and optical fiber. The collected data were analyzed by custom MATLAB scripts. They were first extracted and subject to a low-pass filter at 2 Hz. A least-squares linear fit was then applied to produce a fitted 405 nm signal. The DF/F was calculated as: (F-F0)/F0, where F0 was the fitted 405 nm signals. To compare activity across animals, photometric data were further normalized using Z-score calculation in each mouse. To analyze the infraslow oscillation (ISO) of calcium signals, data were first downsampled to 1 Hz, then spectral analysis was carried out using FFT over a 2 min sliding window, sequentially shifted by 2 s increments (bins). The spectral power in the range of 0–6 cycles per min (i.e. 0–0.1 Hz) during wake and sleep was analyzed. Then, the power in the range of 1–2 cycles per min (i.e. 0.0167–0.033 Hz) was normalized to the total power and used for statistical comparison between Htr1aflox/flox and control mice in Figure 6D. To detect the calcium trough of ISO in Figures 1 and 2, we first calculated a moving baseline by smoothing the calcium signals over 60 s, then set a threshold (0.2 standard deviation from the moving baseline) for events of calcium decrease, and finally detected the minimum point in each event as the calcium trough. The similar method was used to detect 5-HT peaks in Figure 4, Figure 4—figure supplement 1. To examine the infraslow oscillation at different stages of NREM sleep, we calculated the oscillation power and amplitude at the first (T0), early (T1), and late (T2) 1 min of NREM sleep epochs in Figure 1—figure supplement 1B. T0 refers to the first minute of the first NREM epochs, defined as those with the prior wakefulness longer than 5 min. T1 refers to the first minute of all NREM epochs, whereas T2 refers to the last minute of all NREM epochs of the recording sessions. To analyze the relationship between DG and raphe activity in Figure 5, the Pearson correlation coefficient (r) was calculated between two signals during wakefulness, NREM sleep, and REM sleep in each recording session.
 
 To examine the DG activity during microarousals in Figures 1 and 2 and Figure 6—figure supplement 2, the calcium signals were aligned to the onset of each microarousal event to generate the per-stimulus time histogram (PSTH). We then defined the baseline by calculating the average of calcium signals in the first 10 s window before the MA (from –15 s to –5 s). The onset of calcium decline is defined as the timepoint where calcium decrease was larger than 0.05 standard deviation from this baseline. Finally, the time difference between the onset of calcium declines and the MA onset was named as latency. The difference between the baseline and the calcium trough was named as calcium drop. The same method was used to calculate the latency of 5-HT release during MA in Figure 4—figure supplement 1, where calcium decrease was replaced with 5-HT increase.
 
-## Fluorescence in situ hybridization (FISH)
+### Fluorescence in situ hybridization (FISH)
 
 Mice were deeply anesthetized and then decapitated and their brains were snap-frozen on powdered dry ice. The fresh frozen brains were sectioned at 20 μm thickness using a cryostat. FISH was performed using RNAscope Multiplex Fluorescent Assay V2 (Advanced Cell Diagnostics) as per the manufacturer’s recommendations. Reagents: Htr1a in situ hybridization probe: cat# 312301, GFP in situ hybridization probe: cat# 400281 (Advanced Cell Diagnostics). Images were acquired using a Zeiss 810 confocal microscope.
 
-## Histology
+### Histology
 
 Viral expression and placement of optical implants were verified at the termination of the experiments using DAPI counterstaining of 100 μm coronal sections (Prolong Gold Antifade Mountant with DAPI, Invitrogen). Images were acquired using a Zeiss 810 confocal microscope. Cell numbers were counted manually in ImageJ.
 
-## Statistics
+### Statistics
 
 No method of randomization was used to determine how animals were allocated to experimental groups. Investigators were not blinded to group allocations. Mice in which the post hoc histological examination showed off-target viral injection or fiber implantation were excluded from further analysis. Paired and unpaired t-tests were used and are indicated in the respective figure legends. All analyses were performed in MATLAB. Data are presented as mean ± s.e.m.
 
-## Code availability
+### Code availability
 
 MATLAB scripts for EEG and photometry analysis are available on GitHub (https://github.com/thepenglab/TDTEEG, copy archived at Peng, 2025).

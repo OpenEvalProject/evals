@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Behavioral specialization is key to the success of social insects and leads to division of labor among colony members. Response thresholds to task-specific stimuli are thought to proximally regulate behavioral specialization, but their neurobiological regulation is complex and not well understood. Here, we show that response thresholds to task-relevant stimuli correspond to the specialization of three behavioral phenotypes of honeybee workers in the well-studied and important Apis mellifera and Apis cerana . Quantitative neuropeptidome comparisons suggest two tachykinin-related peptides (TRP2 and TRP3) as candidates for the modification of these response thresholds. Based on our characterization of their receptor binding and downstream signaling, we confirm a functional role of tachykinin signaling in regulating specific responsiveness of honeybee workers: TRP2 injection and RNAi-mediated downregulation cause consistent, opposite effects on responsiveness to task-specific stimuli of each behaviorally specialized phenotype but not to stimuli that are unrelated to their tasks. Thus, our study demonstrates that TRP signaling regulates the degree of task-specific responsiveness of specialized honeybee workers and may control the context specificity of behavior in animals more generally.
+Behavioral specialization is key to the success of social insects and leads to division of labor among colony members. Response thresholds to task-specific stimuli are thought to proximally regulate behavioral specialization, but their neurobiological regulation is complex and not well understood. Here, we show that response thresholds to task-relevant stimuli correspond to the specialization of three behavioral phenotypes of honeybee workers in the well-studied and important Apis mellifera and Apis cerana. Quantitative neuropeptidome comparisons suggest two tachykinin-related peptides (TRP2 and TRP3) as candidates for the modification of these response thresholds. Based on our characterization of their receptor binding and downstream signaling, we confirm a functional role of tachykinin signaling in regulating specific responsiveness of honeybee workers: TRP2 injection and RNAi-mediated downregulation cause consistent, opposite effects on responsiveness to task-specific stimuli of each behaviorally specialized phenotype but not to stimuli that are unrelated to their tasks. Thus, our study demonstrates that TRP signaling regulates the degree of task-specific responsiveness of specialized honeybee workers and may control the context specificity of behavior in animals more generally.
 
 ## Introduction
 
@@ -46,13 +46,13 @@ Here, we report the results of a comprehensive study to test the hypothesis that
 
 ## Results
 
-## The task-specific responsiveness of worker bees showed significant variations between behavioral phenotypes and the two honeybee species
+### The task-specific responsiveness of worker bees showed significant variations between behavioral phenotypes and the two honeybee species
 
 Based on the response threshold model for division of labor, we initially studied the responsiveness of three different behavioral phenotypes to three different task-relevant stimuli in A. mellifera and A. cerana using the PER assay. In accordance with our predictions, we identified significant differences among worker behavioral phenotypes in the PER responsiveness to the task-specific stimuli, including sucrose solution, pollen, and larva (Figure 1, Figure 1—source data 1, Supplementary file 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig1-v2.jpg)
 
-**Figure 1.:** (A) The proportion of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) showing a proboscis extension reflex (PER) increased with increasing concentrations of sucrose solutions. Left: Apis mellifera ligustica (AML), right: Apis cerana cerana (ACC). Details of the statistical results of our comparisons of sucrose responsiveness between behavioral phenotypes and bee species are listed in Supplementary file 1. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of PFs, NFs, and NBs. The number of bees per group was between 125 and 136. Kruskal-Wallis tests with Bonferroni correction were used to compare the SRSs of the three behavioral phenotypes in the same species and significant differences are denoted by letters at p<0.05. Pairwise Mann-Whitney U tests were used for comparing the same phenotype between two honeybee species (*p<0.05). (C) Proportion of PFs, NFs, and NBs showing PER to pollen stimulation of their antennae. (D) Proportion of PFs, NFs, and NBs showing PER to antennal stimulation with larvae. Numbers in bars represent the number of individuals sampled in each group. Independent chi-square tests were used to compare the responsiveness to pollen or larvae between species (*p<0.05) and among behavioral phenotypes within species (letters indicate significant difference at p<0.05).  Figure 1—source data 1.Apis mellifera ligustica and Apis cerana cerana worker bees to different sucrose solutions.
+**Figure 1.:** (A) The proportion of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) showing a proboscis extension reflex (PER) increased with increasing concentrations of sucrose solutions. Left: Apis mellifera ligustica (AML), right: Apis cerana cerana (ACC). Details of the statistical results of our comparisons of sucrose responsiveness between behavioral phenotypes and bee species are listed in Supplementary file 1. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of PFs, NFs, and NBs. The number of bees per group was between 125 and 136. Kruskal-Wallis tests with Bonferroni correction were used to compare the SRSs of the three behavioral phenotypes in the same species and significant differences are denoted by letters at p<0.05. Pairwise Mann-Whitney U tests were used for comparing the same phenotype between two honeybee species (*p<0.05). (C) Proportion of PFs, NFs, and NBs showing PER to pollen stimulation of their antennae. (D) Proportion of PFs, NFs, and NBs showing PER to antennal stimulation with larvae. Numbers in bars represent the number of individuals sampled in each group. Independent chi-square tests were used to compare the responsiveness to pollen or larvae between species (*p<0.05) and among behavioral phenotypes within species (letters indicate significant difference at p<0.05).
 
 The percentage of bees showing a PER increased with sucrose concentration across all experimental groups (Figure 1A). In both, Apis mellifera ligustica (AML) and Apis cerana cerana (ACC), the sucrose response scores (SRSs) of PFs were higher than the SRSs of NFs (AML: Z = 7.0, p≤0.001; ACC: Z = 6.1, p<0.001) and nurse bees (NBs) (AML: Z = 5.9, p<0.001; ACC: Z = 5.2, p<0.001), while no significant difference between NFs and NBs was observed in either species (Figure 1B). PFs were more responsive than NFs and NBs to all sucrose concentrations. The species comparison between AML and ACC showed significant higher sucrose responsiveness in PFs of AML than in PFs of ACC (Z = 2.361, p=0.018), specifically at sucrose concentrations of 0.3% (χ2 = 4.1, p=0.042), 1.0% (χ2 = 5.2, p=0.001), 3.0% (χ2 = 8.4, p=0.023), and 10.0% (χ2 = 5.3, p=0.021). NFs of AML and ACC showed no significant difference in overall SRS, but NFs of AML were more responsive than NFs of ACC at sucrose concentrations of 0.3% (χ2 = 4.5, p=0.035), 1.0% (χ2 = 4.5, p=0.033), and 3.0% (χ2 = 4.0, p=0.046). There was no significant difference between NBs of AML and ACC in sucrose responsiveness.
 
@@ -60,7 +60,7 @@ In AML, PFs were more responsive to pollen stimulation than NFs (χ2 = 14.9, p=0
 
 In larva responsiveness assay, NBs of AML showed increased responsiveness to larva stimulation compared to PFs (χ2 = 7.2, p=0.006) and NFs (χ2 = 10.3, p=0.001). Likewise, NBs of ACC were more sensitive than PFs (χ2 = 4.2, p=0.013) and NFs (χ2 = 6.1, p=0.002). NBs of AML were significantly more sensitive to larvae (χ2 = 4.3, p=0.027) than NBs of ACC, with no significant species differences in PFs and NFs (Figure 1D). In sum, our results indicated that behavioral specialization among the workers of both honeybee species correspond to differences in the workers’ responsiveness to task-relevant stimuli. Correlative evidence linking different neuropeptides to foraging specialization in A. mellifera (Pratavieira et al., 2018) motivated us to further investigate whether brain neuropeptides could regulate the response thresholds.
 
-## Quantitative neuropeptidomics revealed consistent correlations of TRPs with behavior
+### Quantitative neuropeptidomics revealed consistent correlations of TRPs with behavior
 
 To identify neuropeptides that potentially influence behavioral specialization, we compared the whole brain neuropeptidomes of NBs, PFs, and NFs of AML and ACC with liquid chromatography with tandem mass spectrometry (LC-MS/MS). The comparisons revealed numerous differences among experimental groups, but only two tachykinin-related peptides (TRP2 and TRP3) showed consistent patterns relating to the task-specific responsiveness of the experimental groups.
 
@@ -70,23 +70,23 @@ Quantitative comparison among the three behavioral phenotypes of AML showed that
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig2-v2.jpg)
 
-**Figure 2.:** The brain neuropeptides were quantitatively compared between nurse bees (NBs), pollen foragers (PFs), and nectar foragers (NFs) of Apis mellifera ligustica (AML) and Apis cerana cerana (ACC). The up- and downregulated peptides are indicated by yellow and blue colors, respectively. Color intensity indicates the relative expressional level, as noted in the key. Letters A, B, and C on the right represent significant differences between NBs and PFs, NBs and NFs, and PFs and NFs in AML, respectively; a, b, and c represent significant differences between NBs and PFs, NBs and NFs, and PFs and NFs in ACC, respectively; X, Y, and Z represent significant differences of NBs, PFs, and NFs between AML and ACC, respectively. For detailed quantitative comparison results, see Figure 2—source data 1, 2, and 3.  Figure 2—source data 1.Apis mellifera ligustica workers.  Figure 2—source data 2.Apis cerana cerana workers.  Figure 2—source data 3.Apis cerana cerana and Apis mellifera ligustica.
+**Figure 2.:** The brain neuropeptides were quantitatively compared between nurse bees (NBs), pollen foragers (PFs), and nectar foragers (NFs) of Apis mellifera ligustica (AML) and Apis cerana cerana (ACC). The up- and downregulated peptides are indicated by yellow and blue colors, respectively. Color intensity indicates the relative expressional level, as noted in the key. Letters A, B, and C on the right represent significant differences between NBs and PFs, NBs and NFs, and PFs and NFs in AML, respectively; a, b, and c represent significant differences between NBs and PFs, NBs and NFs, and PFs and NFs in ACC, respectively; X, Y, and Z represent significant differences of NBs, PFs, and NFs between AML and ACC, respectively. For detailed quantitative comparison results, see Figure 2—source data 1, 2, and 3.
 
-## TRP signaling inhibited task-specific responsiveness
+### TRP signaling inhibited task-specific responsiveness
 
 Based on our behavioral and peptidomics results, we hypothesized tachykinin signaling to affect response thresholds and tested this prediction with a combination of gain- and loss-of-function experiments. We focused on TRP2 because it showed a stronger binding affinity to the receptor TRPR than TRP3 in our biochemical work (see 'TRP/TRPR signaling was found to affect the Gαq and Gαs pathways and trigger the ERK cascade' section).
 
-## TRP2 injection decreased task-specific responsiveness
+#### TRP2 injection decreased task-specific responsiveness
 
 Task-specific responsiveness of the different behavioral phenotypes (PFs, NFs, and NBs) was decreased by injection of TRP2 in a task-specific manner (Figure 3 and Figure 3—source data 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig3-v2.jpg)
 
-**Figure 3.:** Apis mellifera ligustica).(A) The proportion of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) exhibiting a positive proboscis extension reflex (PER) increased with increasing concentrations of sucrose solutions but was overall decreased in PFs and NFs after injection of TRP2 compared to ddH2O injection. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of ddH2O-injected and TRP2-injected groups of PFs, NFs, and NBs. The number of bees varied between 52 and 58 per group. Mann-Whitney U tests were used to compare the SRS (*p<0.05). The proportion of PFs, NFs, and NBs showing PER to pollen stimulation (C) and larva stimulation (D) after injection of TRP2 or ddH2O. Numbers in bars are the number of individuals sampled in each group. Independent chi-square tests were used to compare the responsiveness between different treatments (*p<0.05) and between different behavioral phenotypes within treatments (significant differences are denoted by letters, p<0.05).  Figure 3—source data 1.2O and tachykinin-related peptide 2 (TRP2).
+**Figure 3.:** (A) The proportion of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) exhibiting a positive proboscis extension reflex (PER) increased with increasing concentrations of sucrose solutions but was overall decreased in PFs and NFs after injection of TRP2 compared to ddH2O injection. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of ddH2O-injected and TRP2-injected groups of PFs, NFs, and NBs. The number of bees varied between 52 and 58 per group. Mann-Whitney U tests were used to compare the SRS (*p<0.05). The proportion of PFs, NFs, and NBs showing PER to pollen stimulation (C) and larva stimulation (D) after injection of TRP2 or ddH2O. Numbers in bars are the number of individuals sampled in each group. Independent chi-square tests were used to compare the responsiveness between different treatments (*p<0.05) and between different behavioral phenotypes within treatments (significant differences are denoted by letters, p<0.05).
 
 Injection of the TRP2 peptide significantly reduced the SRS of PFs (Z = 2.2, p=0.031), significantly reducing PER responses to all sucrose concentrations used. Similarly, NFs injected with TRP2 displayed significantly lower SRS than control-injected NFs (Z = 2.3, p=0.019), significantly reducing PER responses to all sucrose concentrations except 0.1% (Figure 3A and B, Figure 3—source data 1). In contrast, TRP2-injected NBs did not show significant responsiveness changes to sucrose relative to controls. For pollen stimulation, PFs showed significantly decreased responsiveness to pollen loads after TRP2 injection (χ2 = 6.7, p=0.017), while no significant effects were observed in PFs and NFs (Figure 3C). In the larval responsiveness assay, injection of TRP2 only significantly affected the responsiveness of NBs (χ2 = 6.1, p=0.001) but not NFs or PFs (Figure 3D).
 
-## Downregulation of TRP or TRPR increased task-specific responsiveness
+#### Downregulation of TRP or TRPR increased task-specific responsiveness
 
 The function of TRP/TRPR signaling on task-specific responsiveness was further confirmed by RNAi-mediated downregulation of TRP or TRPR that increased task-specific responsiveness, opposite to the results of the TRP2 injection.
 
@@ -94,27 +94,51 @@ Knockdown efficiencies were close to 60% for TRP and TRPR mRNA levels at 24 hr p
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig4-v2.jpg)
 
-**Figure 4.:** TRP) and its receptor (TRPR) expression increased task-specific responses of worker bees ( Apis mellifera ligustica).(A) Proportion of positive proboscis extension reflex (PER) responses of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) increases with increasing concentrations of sucrose solutions but overall increases occur only in PFs and NFs after knockdown of TRP or TRPR transcripts compared to GFP control. Statistical details of these sucrose responsiveness comparisons are shown in Supplementary file 5. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of ddH2O-injected and TRP2-injected PFs, NFs, and NBs. The number of bees per group varied between 50 and 56. Kruskal-Wallis tests with Bonferroni correction were used to compare the SRSs of the three treatment groups of each behavioral phenotype and significant differences are denoted by letters (p<0.05). The proportion of PFs, NFs, and NBs showing PER to pollen stimulation (C) and larvae stimulation (D) after GFP, TRP, or TRPR knockdown. Numbers in bars are the number of individuals sampled in each group. Independent chi-square tests were used to compare the task-specific responsiveness between different treatments (*p<0.05, **p<0.01) within behavioral phenotypes and between different behavioral phenotypes within each treatment (significant differences are denoted by letters, p<0.05).  Figure 4—source data 1.GFP, dsTRP, and dsTRPR.
+**Figure 4.:** (A) Proportion of positive proboscis extension reflex (PER) responses of pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) increases with increasing concentrations of sucrose solutions but overall increases occur only in PFs and NFs after knockdown of TRP or TRPR transcripts compared to GFP control. Statistical details of these sucrose responsiveness comparisons are shown in Supplementary file 5. (B) Median sucrose response scores (SRS; intermediate lines) and quartiles (upper and lower lines) of ddH2O-injected and TRP2-injected PFs, NFs, and NBs. The number of bees per group varied between 50 and 56. Kruskal-Wallis tests with Bonferroni correction were used to compare the SRSs of the three treatment groups of each behavioral phenotype and significant differences are denoted by letters (p<0.05). The proportion of PFs, NFs, and NBs showing PER to pollen stimulation (C) and larvae stimulation (D) after GFP, TRP, or TRPR knockdown. Numbers in bars are the number of individuals sampled in each group. Independent chi-square tests were used to compare the task-specific responsiveness between different treatments (*p<0.05, **p<0.01) within behavioral phenotypes and between different behavioral phenotypes within each treatment (significant differences are denoted by letters, p<0.05).
 
 The experimental up- and downregulation of TRP signaling resulted in complementary changes in the responsiveness of our experimental groups in a specific way: Only the particular, increased responsiveness to task-relevant stimuli of each behavioral group was affected, suggesting that TRP signaling generally regulates the degree of behavioral specialization by moderating the responsiveness to task-specific stimuli in behavioral specialists.
 
-## TRP/TRPR signaling was found to affect the Gαq and Gαs pathways and trigger the ERK cascade
+### TRP/TRPR signaling was found to affect the Gαq and Gαs pathways and trigger the ERK cascade
 
 The action of most insect neuropeptides is mediated by G-protein-coupled receptors (GPCRs) that activate cAMP- and Ca2+-dependent pathways, such as ERK signaling to affect diverse biological processes (Hauser et al., 2006; He et al., 2014; Werry et al., 2005). However, the details of TRP signaling vary among insects (Birse et al., 2006; Poels et al., 2007) and have not been well studied in honeybees. To further support our behavioral studies by providing a plausible biochemical action of TRP signaling, we thus confirmed that the honeybee TRPR was localized in the cell membrane and specifically activated by TRP, triggering intracellular cAMP accumulation, Ca2+ mobilization, and ERK phosphorylation by dually coupling Gαs and Gαq signaling pathways. Because TRP2 and TRP3 are very similar and TRP2 displayed slightly higher binding affinity to their common receptor (see below), we used TRP2 only in a few of the below experiments.
 
 The honeybee TRPR gene was cloned and expressed in the human embryonic kidney cells (HEK293) and the insect Spodoptera frugiperda pupal ovary cells (Sf21). Significant cell surface expression was observed by fluorescence microscopy (Figure 5A and Figure 5—figure supplement 1), revealing that the honeybee TRPR was exclusively localized in the cell membrane. Competitive binding assays with labeled TRP2 and TRP3 confirmed the predicted high affinity of the TRPR for both, although it was higher for TRP2 than for TRP3 (Figure 5—figure supplement 1, Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-v2.jpg)
+
+**Figure 5.:** (A) To confirm the predicted membrane localization of the cloned A. mellifera TRP receptor (TRPR), Sf21 cells expressing the TRPR tagged with EGFP (green) were stained with the membrane plasma probe DiI (red) and nuclear probe Hoechst (blue). (B) Luciferase activity of HEK293 cells transfected with the reporter gene pCRE-Luc (CRE-L) and co-transfected with pFLAG-TRPR (TRPR) or vehicle vector (V) indicated that 1 μM treatment of TRP2 or TRP3 increases cAMP levels more than 10-fold. (C) Intracellular Ca2 levels of HEK293 cells expressing TRPR rose sharply in response to TRP2 and TRP3, based on fluorescence measures of the Ca2+ indicator Fura-2 AM. Hepes-buffered medium (HBM) was used as a control. (D) Dose-dependent response of ERK1/2 phosphorylation to TRP2 stimulation of Sf21 cells that expressed TRPR and were incubated with increasing doses of TRP2 (from 0.1 pM to 1 μM) before their harvest for Western blot analysis (log TRP2 (M) = logarithm of the molar concentration of TRP2).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Expression of TRPR and direct interaction of TRPs with TRPR in cell culture. (A and B) HEK293 and Sf21 cells expressing TRPR-EGFP and EGFP (green) were stained with a membrane plasma probe DiI (red) and a nuclei probe Hoechst (blue), and assessed by confocal microscopy. (C and D) Competitive inhibition of TAMRA-TRP2 and TAMRA-TRP3 binding to TRPR in HEK293 and Sf21 cells, and all data are presented as mean ± s.e.m. from three independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Luciferase activity of HEK293 cells transfected with the reporter gene pCRE-Luc (CRE-L) and co-transfected with pFLAG-TRPR (TRPR) or vehicle vector (V) were determined in response to ddH2O and TRP (TRP2 or TRP3, 1 μM) treatment. TRP-dependent TRPR activation increases cAMP levels more than 10-fold (see also main text). Luciferase activity of HEK293 cells (B) and Sf21 cells (C) co-transfected with TRPR and CRE-L were determined in response to different neuropeptides (TRP2, TRP3, short neuropeptide F [SNF], pigment-dispersing hormone [PDH], and corazonin [CRZ]) at different concentrations (1 nM or 1 μM). Increase of cAMP was specific to TRP2 and TRP3. Dose-dependent changes of luciferase activities, indicating cAMP increases, in HEK293 cells (D) and Sf21 cells (E) co-transfected with TRPR and CRE-L revealed typical kinetics in response to TRP2 and TRP3. All data are presented as mean ± s.e.m. from three independent experiments. Student’s t-tests were used for pairwise comparisons (**p < 0.01, ***p < 0.001).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Effects of Gαi inhibitor pertussis toxin (PTX) and Gαs activator cholera toxin (CTX) on TRP2-mediated stimulation of cAMP accumulation. HEK293 cells expressing TRPR were pretreated with PTX (100 ng/ml) or CTX (300 ng/ml) overnight prior to treatment with TRP2 (1 μM). (B) Effects of Gαq inhibitor YM-254890 and PKA inhibitor H89 on TRP2-mediated stimulation of cAMP accumulation. HEK293 cells expressing TRPR were pretreated with YM-254890 (1 μM) or H89 (10 μM) for 2 hr prior to treatment with TRP2 (1 μM). All data are presented as mean ± s.e.m. from three independent experiments. Student’s t-tests were used for pairwise comparisons between water and TRP2 treatments (*p < 0.05, **p < 0.01, ***p < 0.001). One-way ANOVAs followed by Tukey’s post hoc tests were used for comparisons among control, PTX, and CTX groups within water or TRP2 treatments, and significant differences (p < 0.05) are denoted by letters.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** HEK293 cells (A) and Sf21 cells (B) expressing TRPR were measured in response to TRP2 and TRP3 using the fluorescent Ca2+ indicator Fura-2 AM. Hanks solution (Hanks) and Hepes-buffered medium (HBM) were used as a control, respectively. (C) Effects of Gαq inhibitor YM-254890 and PLC inhibitor U73122 compared to vehicle control DMSO on TRP2-mediated intracellular Ca2+ influx. HEK293 cells expressing TRPR were pretreated with YM-254890 (1 μM) or U73122 (10 μM) for 2 hr then stimulated with TRP2 (1 μM). Each figure is a representative of three independent replicate experiments.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Gαq/PKC and Gαs/PKA pathways involved in tachykinin-related peptide (TRP) and its receptor (TRPR)-induced ERK1/2 phosphorylation. Dose- and time-response analyses of TRP/TRPR-induced ERK1/2 phosphorylation in HEK293 cells (A) and Sf21 cells (B). Cells expressing TRPR were serum-starved then incubated either with an increasing dose of TRP2 (from 0.1 pM to 1 μM) for 10 min or with 100 nM TRP2 for different times (from 0 to 90 min), then harvested to quantify ERK1/2 phosphorylation. Effects of Gαi inhibitor pertussis toxin (PTX), MEK inhibitor U0126, PKA inhibitor H89, and PKC inhibitor Go6983 on TRP2-induced ERK1/2 phosphorylation in HEK293 cells (C) and Sf21 cells (D). The cells were pretreated with or without inhibitors for 2 hr then stimulated with ddH2O (control) or TRP2 (10 nM or 1 μM) for 10 min. The phosphorylated ERK was normalized to a loading control (total ERK). All data are presented as mean ± s.e.m. from three independent replicates, and blots shown are representative of these experiments. One-way ANOVAs followed by Tukey’s post hoc tests were used for multi-group comparisons, and significant differences (p < 0.05) are denoted by letters.
+
 The detected accumulation of intracellular cAMP concentration only in HEK293 cells transformed with TRPR (Figure 5B, Figure 5—source data 2) confirmed that TRP2 and TRP3 can activate TRPR and trigger cAMP signaling. This effect was confirmed for both cell types in further dose-response experiments and compared to other neuropeptides, including short neuropeptide F (SNF), pigment-dispersing hormone (PDH), and corazonin (CRZ), which did not induce any detectable cAMP accumulation (Figure 5—figure supplement 2, Figure 5—source data 2). Correspondingly, selective inhibition/activation experiments implicated the Gαs and Gαq (but not Gαi) subunits in this signaling mechanism (Figure 5—figure supplement 3, Figure 5—source data 3). Furthermore, intracellular Ca2+ mobilization was also found to result from TRP2 or TRP3 stimulation, dependent on Gαq (Figure 5C, Figure 5—figure supplement 4, and Figure 5—source data 4).
 
 The final experiment of our in vitro studies demonstrated ERK phosphorylation in response to TRP/TRPR signaling by Western blot analysis. Treatment with different concentrations of TRP2 induced a transient, dose-dependent phosphorylation of ERK in both HEK293 (EC50 = 68.04 nM) and Sf21 (EC50 = 1.68 nM) cells (Figure 5D, Figure 5—figure supplement 5, Figure 5—source data 5). Further time-dependent analysis indicated that TRP2 elicited transient phosphorylation of ERK with maximal phosphorylation at 2 min and near basal levels by 90 min (Figure 5—figure supplement 5, Figure 5—source data 5). Moreover, specific inhibitors were used to elucidate TRP/TRPR signaling-mediated ERK activation in both HEK293 and Sf21 cells. Treatment with MEK inhibitor U0126, PKA inhibitor H89, and PKC inhibitor Go6983, respectively, led to a significant inhibition of TRP/TRPR-mediated ERK activation, whereas Gαi inhibitor pertussis toxin (PTX) had no effect, demonstrating that honeybee TRP/TRPR signaling dually coupled to Gαs and Gαq proteins to activate the ERK signaling pathway (Figure 5—figure supplement 5, Figure 5—source data 5).
 
-## Regulation of ERK activity by TRP/TRPR signaling was confirmed in vivo
+### Regulation of ERK activity by TRP/TRPR signaling was confirmed in vivo
 
 To complement our finding that TRP/TRPR signaling activates ERK phosphorylation in cell culture, we used our in vivo manipulations of TRP signaling to confirm the link between TRP and ERK signaling in living honeybee workers. Western blot results confirmed that TRP/TRPR signaling triggers ERK signaling in vivo. The level of phosphorylated ERK significantly increased after injection of TRP2 peptide into NBs, PFs, and NFs (Figure 6A) and decreased after knockdown of the TRP or TRPR transcripts (Figure 6B, Figure 6—source data 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/64830/elife-64830-fig6-v2.jpg)
 
-**Figure 6.:** Apis mellifera ligustica).(A) The ERK phosphorylation (p-ERK) levels after injection of TRP2 or ddH2O into pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) of A. mellifera ligustica. (B) The p-ERK levels after transcript knockdown of GFP, TRP, or TRPR in PFs, NFs, and NBs. The p-ERK was normalized to a loading control (total-ERK). The data shown are representative of three independent experiments, and blots shown are representative of these experiments. Student’s t-tests were used for pairwise comparisons between control and treatment groups within each behavioral phenotype (*p<0.05, **p<0.01, ***p<0.001).  Figure 6—source data 1.
+**Figure 6.:** (A) The ERK phosphorylation (p-ERK) levels after injection of TRP2 or ddH2O into pollen foragers (PFs), nectar foragers (NFs), and nurse bees (NBs) of A. mellifera ligustica. (B) The p-ERK levels after transcript knockdown of GFP, TRP, or TRPR in PFs, NFs, and NBs. The p-ERK was normalized to a loading control (total-ERK). The data shown are representative of three independent experiments, and blots shown are representative of these experiments. Student’s t-tests were used for pairwise comparisons between control and treatment groups within each behavioral phenotype (*p<0.05, **p<0.01, ***p<0.001).
 
 ## Discussion
 
@@ -140,11 +164,357 @@ Although AML and ACC are close relatives with similar basic biology, some behavi
 
 ## Materials and methods
 
-## Honeybee sources and sampling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Apis mellifera)</td>
+      <td>TRP</td>
+      <td>BEEBASE</td>
+      <td>GB49248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Apis mellifera)</td>
+      <td>TRPR</td>
+      <td>BEEBASE</td>
+      <td>GB49973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>DH5α competent cells</td>
+      <td>TaKaRa</td>
+      <td>Cat#9057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293 (embryonic kidney cell line)</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-1573, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodoptera frugiperda)</td>
+      <td>Sf21 (pupal ovary cell line)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#11497013, RRID:CVCL_0518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK1/2 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#4695T; RRID:AB_390779</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-ERK1/2 (rabbit polyclonal )</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#9101S; RRID:AB_331646</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked (goat, polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#7074S; RRID:AB_2099233</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-FLAG (plasmid)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#E 8770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1 (plasmid)</td>
+      <td>Clontech</td>
+      <td>Cat#6085–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRf_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TRPRf_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRe_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRe_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRi_F</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRi_R</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRq_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPRq_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPi_F</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPi_R</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPq_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFPi_F</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFPi_R</td>
+      <td>This paper</td>
+      <td>RNAi primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPq_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>See Supplementary file 6</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PrimeScript RT reagent kit</td>
+      <td>TaKaRa</td>
+      <td>Cat#RR047A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TB Green Fast qPCR Mix</td>
+      <td>TaKaRa</td>
+      <td>Cat#RR430A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luciferase assay system</td>
+      <td>Promega</td>
+      <td>Cat#E1500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>T7 RiboMAX Express RNAi System</td>
+      <td>Promega</td>
+      <td>Cat#P1700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TAMRA-ALMGFQGVRa</td>
+      <td>SynPeptide</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TAMRA-APMGFQGMRa</td>
+      <td>SynPeptide</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ALMGFQGVR</td>
+      <td>SynPeptide</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>APMGFQGMRa</td>
+      <td>SynPeptide</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CBR-5884</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML1656</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pertussis toxin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#3097/50U</td>
+      <td>CAS: 70323-44-3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H89</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#2910/1</td>
+      <td>CAS: 130964-39-5</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U73122</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#1268/10</td>
+      <td>CAS: 112648-68-7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholera toxin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#HY-P1446</td>
+      <td>CAS: 9012-63-9</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>YM-254890</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat#HY-111557</td>
+      <td>CAS: 568580-02-9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS Statistics 20.0</td>
+      <td>IBM</td>
+      <td>RRID:SCR_019096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur 3.0</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_014593</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEAKS 8.5</td>
+      <td>Bioinformatics Solutions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene cluster 3.0</td>
+      <td>de Hoon et al., 2004</td>
+      <td>https://doi.org/10.1093/bioinformatics/bth078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Primer Premier 5.0</td>
+      <td>PREMIER Biosoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33342 stain</td>
+      <td>Beyotime</td>
+      <td>Cat#C1027</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DiI stain</td>
+      <td>Beyotime</td>
+      <td>Cat#C1036</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipo6000 transfection reagent</td>
+      <td>Beyotime</td>
+      <td>Cat#C0526</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LipoInsect transfection reagent</td>
+      <td>Beyotime</td>
+      <td>Cat#C0551</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Honeybee sources and sampling
 
 Two honeybee species, AML and ACC, were maintained in the apiary of the Institute of Apicultural Research at the Chinese Academy of Agricultural Sciences in Beijing. Three colonies of each species with mated queens of identical age were selected as experimental colonies, and before experiments the colonies were equalized in terms of adult bee population, brood combs, and food storage. Frames containing old pupae (1–2 days before emergence) were put into an incubator (34°C and 80% relative humidity) for eclosion. Newly emerged worker bees were paint-marked on their thoraxes and placed back into their parent colonies. Ten days later, marked bees that had their head and thorax in open brood cells while contracting their abdomen for more than 10 s were collected as NBs. Twenty days after eclosion, marked bees were collected during early morning (between 8:00 a.m. and 10:00 a.m.) in good weather conditions during the blooming period of black locusts (Robinia pseudoacacia L.) as forager bees. The entrance to the hives were blocked to facilitate collecting. Bees flying into the hive with pollen loads were collected as PFs, returning foragers without pollen loads were collected as NFs. The experimental design of six groups (three behavioral phenotypes in two species) was used to compare responsiveness to task-specific stimuli ('Comparative PER experiments' section) and to relate these phenotypes to differences in the brain neuropeptidome ('Quantitative comparisons of brain neuropeptidomes' section).
 
-## Comparative PER experiments
+### Comparative PER experiments
 
 To investigate the responsiveness of different worker bee behavioral phenotypes (NBs, PFs, and NFs of AML and ACC) to different stimulus modalities (sucrose solution, pollen, and larva), series of PER experiments were performed. One hundred bees of each behavioral phenotype were collected from each experimental colony in the morning, transferred to the laboratory and narcotized on ice, then harnessed using a previously described protocol (Wang and Tan, 2014). All harnessed bees were fed to satiation with 50% sucrose solution and placed in a dark incubator (20°C and 65% relative humidity) overnight. After 24 hr, all surviving bees were assayed for their PER following the methodology of Page et al., 1998. Each stimulus was assessed independently with a new set of bees.
 
@@ -154,7 +524,7 @@ To test pollen stimulation, fresh pollen loads that had been removed from the le
 
 To test responsiveness to larva, 1-day-old larvae from each honeybee species were collected, briefly rinsed in distilled water to remove royal jelly residue and dried on a filter paper. As before, both antennae of bees were touched with a piece of filter paper first and spontaneous responders were excluded, then PERs in response to a larva touching the antennae were recorded. The responsiveness to larvae was compared with independent chi-square tests between different groups. Statistical analyses were conducted using SPSS Statistics 20.0 (IBM, USA).
 
-## Quantitative comparisons of brain neuropeptidomes
+### Quantitative comparisons of brain neuropeptidomes
 
 To explore brain neuropeptide functions in behavioral regulation, a label-free quantitative strategy was employed to compare neuropeptidomic variations between behavioral phenotypes and the two honeybee species. Three independent biological replicate samples (120 bees per sample) of NBs, PFs, and NFs of both AML and ACC (18 samples total) were collected and immediately frozen in liquid nitrogen. Individual brains were carefully dissected from the head capsule while remaining chilled on ice, and the dissected brains were frozen at −80°C until neuropeptide extraction.
 
@@ -164,27 +534,27 @@ The extracted MS/MS spectra were searched against a composite database of A. mel
 
 Quantitative comparison of brain neuropeptidomes was performed by the label-free approach in PEAKS Q module. Feature detection was performed separately on each sample by using the expectation-maximization algorithm. The features of the same peptide from different samples were reliably aligned together using a high-performance retention time alignment algorithm (Lin et al., 2013). Peptide features were considered significantly different between experimental groups if pairwise p<0.01 and fold change ≥1.5. A heat map of differentially expressed proteins was created by Gene cluster 3.0 using the unsupervised hierarchical clustering, and the result was visualized using Java Tree view software. The LC−MS/MS data and search results are deposited in ProteomeXchange Consortium (http://proteomecentral.proteomexchange.org) via the PRIDE partner repository with the dataset identifier PXD018713.
 
-## Characterization of honeybee TRP signaling pathway
+### Characterization of honeybee TRP signaling pathway
 
 To characterize honeybee TRP signaling pathway, the TRPR gene was first cloned and expressed in human and insect cell lines to identify its cellular location and verify its binding to TRPs. Additionally, these cells were used to test whether TRP/TRPR signaling triggers intracellular cAMP accumulation, Ca2+ mobilization, and ERK phosphorylation.
 
-## TRPR gene clone and expression
+#### TRPR gene clone and expression
 
 To amplify the full-length sequence encoding TRPR of A. mellifera, primers were designed using Primer Premier 5.0 software (PREMIER Biosoft, USA) based on the sequence from GenBank KT232312. The coding sequence of TRPR was amplified and cloned into FLAG-tag expression vectors (pCMV-FLAG and pBmIE1-FLAG) and EGFP-tag expression vectors (pEGFP-N1 and pBmIE1-EGFP). The primers used are documented in Supplementary file 6. All constructs were sequenced to verify the correct sequence, orientation, and reading frame of the inserts.
 
 The human embryonic kidney cell line HEK293 and the insect S. frugiperda pupal ovary cell line Sf21 were used for honeybee TRPR expression. HEK293 cells (RRID:CVCL_0045) were purchased from American Type Culture Collection (ATCC, CRL-1573, the identity has been authenticated using STR profiling) and cultured in DMEM medium (Gibco, USA) supplemented with 10% fetal bovine serum (FBS). Cells were routinely tested for mycoplasma contamination every 6 months. Sf21 cells (RRID: CVCL_0518) were purchased from Thermo Fisher Scientific and were cultured in TC100 medium (Gibco) supplemented with heat-inactivated 10% FBS. Cells were routinely tested for mycoplasma contamination every 6 months. Transfection of HEK293 cells was performed using Lipo6000 transfection reagent (Beyotime, China), while transfection of Sf21 cells was performed using LipoInsect transfection reagent (Beyotime), according to the manufacturer’s instructions.
 
-## Cellular location of TRPR
+#### Cellular location of TRPR
 
 To confirm the location of the honeybee TRPR, receptor surface expression assays were performed. HEK293 or Sf21 cells expressing TRPR-EGFP were seeded onto poly-L-lysine-coated glass coverslips and allowed to attach overnight under normal growth conditions. After 24 hr, cells were incubated with the membrane probe DiI (Beyotime) and the nucleic acid probe Hoechst 33342 (Beyotime) at 37°C for 10 min, then fixed with 4% paraformaldehyde for 15 min. Cells transfected with empty EGFP-tag expression vectors were used as a control. The cells were imaged using a Leica SP8 (Leica Microsystems, Germany) confocal microscope equipped with an HC PL APO CS2 63×/1.40 oil objective. Images were acquired with the sequence program in the Leica LAS X software.
 
-## Binding of TRPs to TRPR
+#### Binding of TRPs to TRPR
 
 To confirm the direct binding of the honeybee TRPs to TRPR, competitive binding experiments were performed using synthesized TAMRA-TRP2 (TAMRA-ALMGFQGVRa) and TAMRA-TRP3 (TAMRA-APMGFQGMRa), with TAMRA labeled at the N-terminus. The neuropeptides used as ligands here and in later sections were commercially synthesized by SynPeptide Co, Ltd (China). All peptides were purified by reverse-phase high-performance liquid chromatography with a purity >98%, lyophilized, and diluted to the desired concentrations for subsequent experiments. The peptide sequences were verified by us using a Q-Exactive HF mass spectrometer (Thermo Fisher Scientific).
 
 HEK293 and Sf21 cells expressing FLAG-TRPR were first seeded onto poly-L-lysine-coated 96-well plates and cultured overnight. On the next day, cells were washed once with phosphate-buffered saline (PBS), then incubated with 25 ml TAMRA-TRP2 or TAMRA-TRP3 (10 nM) in the presence of increasing concentrations of unlabeled TRP2 and TRP3 in a final volume of 100 ml of binding buffer (PBS containing 0.2% bovine serum albumin). Cells were incubated at room temperature for 2 hr. Fluorescence intensity was measured with a fluorescence spectrometer microplate reader (Tecan Infinite 200 PRO, Tecan, Switzerland) after washing twice with binding buffer. The cells transfected with empty FLAG-tag expression vectors were used as a control. The binding displacement curves were analyzed by GraphPad Prism 8.0 (GraphPad Software, USA) using the non-linear logistic regression method.
 
-## TRP/TRPR signaling targets: cAMP, Ca2+, and ERK
+#### TRP/TRPR signaling targets: cAMP, Ca2+, and ERK
 
 To test whether TRP/TRPR signaling affects cAMP accumulation, intracellular cAMP was measured after incubation of HEK293 and Sf21 cells expressing FLAG-TRPR and pCRE-Luc with TRP2 and TRP3. After seeding in a 96-well plate overnight, HEK293 or Sf21 cells co-transfected with pFLAG-TRPR and pCRE-Luc were grown to about 90% confluence. After washing once with PBS, cells were incubated with the neuropeptides TRP2, TRP3, SNF, PDH, and CRZ in serum-free medium for 4 hr at 37°C for HEK293 cells, and at 28°C for Sf21 cells. Cells transfected with empty EGFP-tag expression vectors were used as a control. Luciferase activity was detected by a luciferase assay system (Promega, USA). Fluorescence intensity was measured with a Tecan fluorescence spectrometer. When characterizing the TRP-mediated cAMP accumulation, cells were pretreated with Gαi inhibitor PTX, Gαs activator cholera toxin (CTX), Gαq inhibitor YM-254890, and PKA inhibitor H89 before stimulation with TRP2.
 
@@ -194,13 +564,13 @@ To assess whether TRP signaling mediates ERK1/2 signaling, ERK1/2 phosphorylatio
 
 To explore the detailed TRP-mediated ERK1/2 signaling, cells were pretreated with Gαi inhibitor PTX, MEK inhibitor U0126, PKA inhibitor H89, and PKC inhibitor Go6983 before stimulation with TRP2.
 
-## Effects of TRP2 injection on task-specific responsiveness
+### Effects of TRP2 injection on task-specific responsiveness
 
 To confirm the function of TRP on task-specific responsiveness, NBs, PFs, and NFs of AML were injected with TRP2 and tested for their PER response to sucrose solution, pollen, and larva. About 150 bees of each behavioral phenotype were collected in the morning, then harnessed, fed and placed in a dark incubator as described in 'Comparative PER experiments' section. After 24 hr, all surviving bees were evenly divided into two groups and injected with 1 μl TRP2 solution (1 μg/μl, synthesized TRP2 dissolved in ddH2O) or 1 μl of ddH2O into the head of honeybees via the central ocellus using a glass capillary needle coupled to a microinjector. Bees injected with ddH2O were used as control. All injected bees were put back to the dark incubator and 1 hr after injection all surviving bees were assayed for their PER to stimulations of sucrose solution, pollen, and larva as described in 'Comparative PER experiments' section. Each experiment was performed with a new set of bees containing about 55 individuals per experimental and control group.
 
 The average SRSs of the TRP2 injection group and the ddH2O injection group were compared separately for each of the three behavioral phenotypes (NBs, PFs, and NFs) using pairwise Mann-Whitney U tests. The sucrose responsiveness was further compared between different groups at each specific sucrose concentration with independent chi-square tests. The responsiveness to pollen and larvae was compared between TRP2 injection group and ddH2O injection group with independent chi-square tests for each behavioral phenotype separately. All statistical analyses were performed with SPSS Statistics 20.0 (IBM).
 
-## Effects of RNAi-mediated downregulation of TRP or TRPR on responsiveness
+### Effects of RNAi-mediated downregulation of TRP or TRPR on responsiveness
 
 To further confirm the hypothesized effects of TRP/TRPR signaling on task-specific responsiveness, RNAi-mediated downregulation of TRP and TRPR was performed on NBs, PFs, and NFs of AML and then their PER to sucrose solution, pollen, and larva was compared to controls.
 
@@ -208,6 +578,6 @@ Before evaluating the behavioral effects of transcript knockdown of TRP or TRPR,
 
 After determination of knockdown efficiencies (see 'Results' section), 24 hr post-injection was chosen as the time point to study the PER effects of dsRNA-mediated knockdown of TRP and TRPR. About 200 bees of each behavioral phenotype (NBs, PFs, and NFs of AML) were collected in the morning, harnessed, and remained in a dark incubator to acclimatize. After 30 min, all surviving bees of each behavioral phenotype were evenly divided into three groups, injected with dsTRP, dsTRPR, and dsGFP, and kept as described above. After 24 hr, all surviving bees were assayed for their PER to stimulations of sucrose solution, pollen, or larvae as described in 'Comparative PER experiments' section. Each stimulus was assessed with a new set of bees containing about 55 individuals for each treatment group (dsTRP, dsTRPR, and dsGFP). The SRSs of the TRP-knockdown, TRPR-knockdown, and control groups were compared using Kruskal-Wallis tests with Bonferroni correction for each behavioral phenotype separately. The sucrose responsiveness was further compared between the different groups at the same sucrose concentration with independent chi-square tests. The responsiveness to pollen and larvae was compared between the TRP knockdown, TRPR knockdown, and control groups using independent chi-square tests for each behavioral phenotype separately. All statistical analyses were performed with SPSS Statistics 20.0 (IBM).
 
-## Effects of TRP2 injection and RNAi-mediated downregulation of TRP and TRPR on ERK signaling in honeybee workers
+### Effects of TRP2 injection and RNAi-mediated downregulation of TRP and TRPR on ERK signaling in honeybee workers
 
 To test whether manipulating TRP/TRPR signaling has effect on honeybee ERK signaling, a group of 10 individual worker bees were collected from each injection group (ddH2O, TRP2, dsTRP, dsTRPR, and dsGFP) to compare ERK phosphorylation levels. Three independent replicate groups per condition were collected and Western blot analyses were performed: Honeybee brains were carefully dissected and frozen at −80°C until protein extraction. Brain protein extractions were carried out according to our previously described method with some modifications. Briefly, the larvae were homogenized with lysis buffer (LB, 8 M urea, 2 M thiourea, 4% CHAPS, 20 mM Tris-base, 30 mM dithiothreitol). The mixture was homogenized for 30 min on ice and sonicated 20 s per 5 min during this time, then centrifuged at 12,000 g and 4°C for 10 min. Ice-cold acetone was added to the collected supernatants, and then the mixture was kept on ice for 30 min for protein precipitation. Subsequently, the mixture was centrifuged at 12,000 g and 4°C for 10 min. The supernatant was discarded and the pellets were resolved in LB and kept at −20°C for further use. Western blot analyses were performed as described in 'TRP/TRPR signaling targets: cAMP, Ca2+, and ERK' section.

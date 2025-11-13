@@ -19,7 +19,291 @@ We include below Figure 1, which provides a visual comparison of the original an
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/109449/elife-109449-fig1-v1.jpg)
 
-**Figure 1.:** A), 5ff (B), 10ff (C), 15ff (D), and 20ff (E), before and after making corrections to the dataset.Please note that the distributions of 5, 10, and 15ff remain unchanged. The bin size is set to 3 seconds.
+**Figure 1.:** Please note that the distributions of 5, 10, and 15ff remain unchanged. The bin size is set to 3 seconds.
+
+**Table 1.**
+ A table summarizing the corrected dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#ff</th>
+      <th>Date label</th>
+      <th>Relevant time period</th>
+      <th>Duration in minutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>06012020u</td>
+      <td>260s - 4353s</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06022020u</td>
+      <td>688s - 5520s</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06032020a_1</td>
+      <td>152s - 4186s</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06032020a_2</td>
+      <td>100s - 1833s</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06042020a_1</td>
+      <td>102s - 3858s</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06042020a_2</td>
+      <td>86s - 1852s</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06112020c</td>
+      <td>160s - 5271s</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06072021u*</td>
+      <td>3s - 1681s</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06102021c*</td>
+      <td>10s - 300s</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06122021c*</td>
+      <td>10s - 300s</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06042020u</td>
+      <td>2111s - 2759s</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06072020u</td>
+      <td>824s - 1410s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06082020u</td>
+      <td>939s - 1550s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06042020u</td>
+      <td>2799s - 3711s</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06072020u</td>
+      <td>1450s - 2013s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06082020u</td>
+      <td>1590s - 2134s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06042020u</td>
+      <td>3751s - 4329s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06072020u</td>
+      <td>2053s - 2628s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06082020u</td>
+      <td>2174s - 2715s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06042020u</td>
+      <td>4369s - 5005s</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06072020u†</td>
+      <td>2668s - 3558s</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06072020c*</td>
+      <td>1922s - 2823s</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data added to the dataset. †Data trimmed in the updated dataset._
+
+**Table 2.**
+ A table summarizing the original dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>#ff</th>
+      <th>Date label</th>
+      <th>Relevant time period</th>
+      <th>Duration in minutes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>06012020u</td>
+      <td>260s - 4353s</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06022020u</td>
+      <td>688s - 5520s</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06032020a_1</td>
+      <td>152s - 4186s</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06032020a_2</td>
+      <td>100s - 1833s</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06042020a_1</td>
+      <td>102s - 3858s</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06042020a_2</td>
+      <td>86s - 1852s</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>06112020c</td>
+      <td>160s - 5271s</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06042020u</td>
+      <td>2111s - 2759s</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06072020u</td>
+      <td>824s - 1410s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>06082020u</td>
+      <td>939s - 1550s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06042020u</td>
+      <td>2799s - 3711s</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06072020u</td>
+      <td>1450s - 2013s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>06082020u</td>
+      <td>1590s - 2134s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06042020u</td>
+      <td>3751s - 4329s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06072020u</td>
+      <td>2053s - 2628s</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>06082020u</td>
+      <td>2174s - 2715s</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06042020u</td>
+      <td>4369s - 5005s</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06072020u†</td>
+      <td>2668s - 6823s</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>06102021c*</td>
+      <td>1800s - 2099s</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data removed from the dataset.†Data trimmed in the updated dataset._
 
 ## Theoretical model validation
 
@@ -27,7 +311,7 @@ As a first sanity check, we have compared the original theory outputs to the ori
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/109449/elife-109449-fig2-v1.jpg)
 
-**Figure 2.:** A), 10ff (B), 15ff (C), 20ff (D), and the resulting standard deviation of the interburst interval (Tb) (E), after removing the affected data points from the original dataset.The removal has no effect on the main conclusions.
+**Figure 2.:** The removal has no effect on the main conclusions.
 
 Next, based on the revised single-firefly interburst intervals, we regenerated the input envelope used in the analytical theory. We have updated Figure 3 with the new theoretical distributions generated from this revised input envelope (Figure shown below).
 

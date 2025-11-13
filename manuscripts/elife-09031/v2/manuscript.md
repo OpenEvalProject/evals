@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.09031.001 With experience we become accustomed to the types of environments that we normally encounter as we navigate in the world. But how does this fundamental knowledge develop in the first place and what brain regions are involved? To examine de novo environmental learning, we created an ‘alien’ virtual reality world populated with landmarks of which participants had no prior experience. They learned about this environment by moving within it during functional MRI (fMRI) scanning while we tracked their evolving knowledge. Retrosplenial cortex (RSC) played a central and highly selective role by representing only the most stable, permanent features in this world. Subsequently, increased coupling was noted between RSC and hippocampus, with hippocampus then expressing knowledge of permanent landmark locations and overall environmental layout. Studying how environmental representations emerge from scratch provided a new window into the information processing underpinning the brain's navigation system, highlighting the key influence of the RSC. DOI: http://dx.doi.org/10.7554/eLife.09031.001
+With experience we become accustomed to the types of environments that we normally encounter as we navigate in the world. But how does this fundamental knowledge develop in the first place and what brain regions are involved? To examine de novo environmental learning, we created an ‘alien’ virtual reality world populated with landmarks of which participants had no prior experience. They learned about this environment by moving within it during functional MRI (fMRI) scanning while we tracked their evolving knowledge. Retrosplenial cortex (RSC) played a central and highly selective role by representing only the most stable, permanent features in this world. Subsequently, increased coupling was noted between RSC and hippocampus, with hippocampus then expressing knowledge of permanent landmark locations and overall environmental layout. Studying how environmental representations emerge from scratch provided a new window into the information processing underpinning the brain's navigation system, highlighting the key influence of the RSC.
 
 ## Introduction
 
@@ -26,17 +26,21 @@ How children and adult humans learn about new environments has been studied exte
 
 Key questions therefore remain. How does knowledge of landmark features, including permanence, but also properties such as size and visual salience, evolve de novo during environmental learning where no prior semantic knowledge exists about landmarks? What brain areas support this learning, at what point do they come online, and to what aspects of the environment do they respond? Furthermore, how might this information be used in building an overall environmental representation? We addressed these questions in the current study.
 
-To do so we developed a new VR environment that subjects learnt during repeated exposures while undergoing fMRI scanning, and their accruing knowledge was tested during and after scanning. The environment was populated by entirely novel, ‘alien’ landmarks (
+To do so we developed a new VR environment that subjects learnt during repeated exposures while undergoing fMRI scanning, and their accruing knowledge was tested during and after scanning. The environment was populated by entirely novel, ‘alien’ landmarks (Figure 1A) about which subjects had no pre-conceived ideas. These were located along different paths (Figure 1B; ‘Materials and methods’). On each path, half the landmarks were permanent, each remaining fixed in a single place, while the rest were transient and changed location on every exposure. The landmarks were developed and characterised in an initial experiment with separate subjects (detailed in the ‘Materials and methods’) ensuring that the permanent and transient landmark groups were matched in terms of visual salience, how well they could be remembered, as well as other features.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig1-v2.jpg)
 
-**Figure 1.:** (A) Examples of the ‘alien’ landmarks. (B) Landmarks positioned within the virtual world. (C) An overhead perspective of the environment showing the five different coloured, intersecting paths—note this aerial view was never seen by participants during learning.DOI: http://dx.doi.org/10.7554/eLife.09031.003
+**Figure 1.:** (A) Examples of the ‘alien’ landmarks. (B) Landmarks positioned within the virtual world. (C) An overhead perspective of the environment showing the five different coloured, intersecting paths—note this aerial view was never seen by participants during learning.
 
-Before scanning, subjects were instructed to learn the layout of the environment and told that they would be tested in a variety of ways after scanning without the specific nature of those tasks being revealed. They were informed that some of the landmarks would always remain in the same location whereas others would appear in a different place every time they saw them. The world contained five different coloured intersecting straight paths (yellow, red, grey, blue and green;
+Before scanning, subjects were instructed to learn the layout of the environment and told that they would be tested in a variety of ways after scanning without the specific nature of those tasks being revealed. They were informed that some of the landmarks would always remain in the same location whereas others would appear in a different place every time they saw them. The world contained five different coloured intersecting straight paths (yellow, red, grey, blue and green; Figure 1C). Each path had 12 landmarks (six permanent, six transient) evenly distributed alongside it (Figure 1B). While undergoing fMRI scanning, subjects learned the layout of the environment and its landmarks by viewing first person perspective videos travelling along each of the five paths, one at a time. Each trial consisted of a single journey along one of the paths and at the end of a video subjects were immediately shown the next learning trial on a different path. In these videos, the environment was covered in a shroud of fog to restrict the field of view thus ensuring we had complete control over the exposure subjects had to each landmark (Figure 2A)—hence we refer to the environment as ‘Fog World’ (see Video 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig2-v2.jpg)
 
-**Figure 2.:** While undergoing functional MRI (fMRI) scanning, subjects were presented with videos travelling along the various paths. (A) An example sequence of video frames with a landmark emerging through the fog, the camera turning towards it before returning back to the middle of the path—see also Video 1. (B) After viewing videos of each of the five paths once, subjects answered a series of questions about individual landmarks to test their learning throughout the experiment. A learning ‘sweep’ consisted of one round of videos of the five paths and the questioning period which followed. There were 12 learning sweeps.DOI: http://dx.doi.org/10.7554/eLife.09031.004
+**Figure 2.:** While undergoing functional MRI (fMRI) scanning, subjects were presented with videos travelling along the various paths. (A) An example sequence of video frames with a landmark emerging through the fog, the camera turning towards it before returning back to the middle of the path—see also Video 1. (B) After viewing videos of each of the five paths once, subjects answered a series of questions about individual landmarks to test their learning throughout the experiment. A learning ‘sweep’ consisted of one round of videos of the five paths and the questioning period which followed. There were 12 learning sweeps.
+
+![Video 1.](https://cdn.elifesciences.org/articles/09031/elife-09031-media1.mpg.jpg)
+
+**Video 1.:** It demonstrates the first-person perspective presented to subjects and shows how, when a landmark emerges through the fog, the camera turns to bring it into the centre of view whilst continuing along the path. It also provides an example of what happens at an intersection. See also Figure 2.
 
 When all five paths had been travelled once, there came a questioning period to gauge how much information subjects had learned by that point in the experiment (Figure 2B). In these questioning periods, participants were first shown an image of a single landmark displayed, in isolation, on a plain grey background for 2 s. They were then asked whether or not they remembered the landmark from the environment (‘Have you seen this item in the environment?’, Yes/No). If they remembered seeing it, they were then asked about its permanence (‘How many locations in the environment have you seen it in?’, Only 1/More than 1), before being questioned about another landmark. Within each questioning period, subjects were asked about 13 landmarks: five permanent, five transient and three previously unseen. The combination of a 13 landmark questioning period and videos of the five different paths preceding it are referred to as a learning ‘sweep’. There were three such sweeps in each scanning run (or quarter) and four runs, so in total 12 learning sweeps. Once out of the scanner after learning had concluded, subjects' knowledge of Fog World landmarks (recognition memory or ‘memorableness’, permanence, visual salience and size—see ‘Materials and methods’), as well as their ability to volitionally navigate within Fog World were assessed.
 
@@ -44,7 +48,7 @@ We elected to show participants videos of movement through the environment durin
 
 ## Results
 
-## Behavioural analyses
+### Behavioural analyses
 
 During scanning, recognition memory for the landmarks was assessed in the questioning periods at the end of each learning sweep. We first wanted to establish whether or not subjects had learned to recognise the two types of landmark equally well. To do this, we performed separate linear regression analyses for permanent and transient landmarks to assess how the accuracy with which subjects recognised them changed throughout the learning phase in the scanner. We then directly compared the slopes and found that there was no difference in the rate at which subjects learned to recognise permanent and transient landmarks (mean difference in rate = 0.0084, SD = 0.063; t31 = 0.763, p = 0.45).
 
@@ -52,15 +56,139 @@ We then examined recognition accuracy in each of the four learning quarters and 
 
 Consistent with the result in the final quarter of learning, in the post-scan testing phase, there was no difference in how well subjects recognised permanent or transient landmarks (‘memorableness’: permanent mean accuracy = 82.9% (SD 4.9); transient mean accuracy = 76.3% (SD 4.4); t31 = 1.745, p = 0.09). Subjects were also accurate at identifying as novel landmarks which they had not seen before (mean = 93.0%, SD 2.3).
 
-Post-scan, subjects also rated other features of the landmarks. These included whether they thought an item was permanent or transient, how visually salient they found them, and finally the size that they were in Fog World (see ‘Materials and methods’). We compared these ratings with the corresponding actual values of permanence and size, and the salience scores from the separate initial landmark characterisation study (see ‘Materials and methods’) in order to test the validity of the scan subjects' ratings and to confirm whether or not subjects had successfully learned about the landmarks (full details in Table 1).10.7554/eLife.09031.006Table 1.Correlations between features of the 60 ‘alien’ landmarksDOI: http://dx.doi.org/10.7554/eLife.09031.006Permanence: actualPermanence: post-scanSalience: beh'al studySalience: post-scanSize: actualSize: post-scanPermanence: actual1.000–––––––––––Permanence: post-scan0.793†1.000––––<0.0001–––––Salience: beh'al study0.087−0.0011.000–––0.51.0––––Salience: post-scan0.315*0.325*0.314*1.000––0.010.010.02–––Size: actual0.0000.0680.0880.428†1.000–1.0000.60.50.001––Size: post-scan0.1170.0930.1290.749†0.726†1.0000.40.50.3<0.0001<0.0001–Beh'al = ratings that came from the initial behavioural landmark characterisation study. Correlations are shown between: mean salience scores from the initial characterisation study, the actual size and permanence of landmarks in Fog World, and ratings of permanence, salience and size from the fMRI subjects post-fMRI scan. Each cell shows the Pearson correlation r value above the corresponding p value. Significant correlations are highlighted in bold text.*Correlation is significant at the 0.05 level (2-tailed).†Correlation is significant at the 0.01 level (2-tailed).
+Post-scan, subjects also rated other features of the landmarks. These included whether they thought an item was permanent or transient, how visually salient they found them, and finally the size that they were in Fog World (see ‘Materials and methods’). We compared these ratings with the corresponding actual values of permanence and size, and the salience scores from the separate initial landmark characterisation study (see ‘Materials and methods’) in order to test the validity of the scan subjects' ratings and to confirm whether or not subjects had successfully learned about the landmarks (full details in Table 1).
+
+**Table 1.**
+ Correlations between features of the 60 ‘alien’ landmarks
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Permanence: actual</th>
+      <th>Permanence: post-scan</th>
+      <th>Salience: beh'al study</th>
+      <th>Salience: post-scan</th>
+      <th>Size: actual</th>
+      <th>Size: post-scan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Permanence: actual</td>
+      <td>1.000</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Permanence: post-scan</td>
+      <td>0.793†</td>
+      <td>1.000</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>&lt;0.0001</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Salience: beh'al study</td>
+      <td>0.087</td>
+      <td>−0.001</td>
+      <td>1.000</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>1.0</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Salience: post-scan</td>
+      <td>0.315*</td>
+      <td>0.325*</td>
+      <td>0.314*</td>
+      <td>1.000</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>0.01</td>
+      <td>0.01</td>
+      <td>0.02</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Size: actual</td>
+      <td>0.000</td>
+      <td>0.068</td>
+      <td>0.088</td>
+      <td>0.428†</td>
+      <td>1.000</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>1.000</td>
+      <td>0.6</td>
+      <td>0.5</td>
+      <td>0.001</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Size: post-scan</td>
+      <td>0.117</td>
+      <td>0.093</td>
+      <td>0.129</td>
+      <td>0.749†</td>
+      <td>0.726†</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>0.4</td>
+      <td>0.5</td>
+      <td>0.3</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_Beh'al = ratings that came from the initial behavioural landmark characterisation study. Correlations are shown between: mean salience scores from the initial characterisation study, the actual size and permanence of landmarks in Fog World, and ratings of permanence, salience and size from the fMRI subjects post-fMRI scan. Each cell shows the Pearson correlation r value above the corresponding p value. Significant correlations are highlighted in bold text.*Correlation is significant at the 0.05 level (2-tailed).†Correlation is significant at the 0.01 level (2-tailed)._
 
 Permanence ratings made post-fMRI scan were strongly correlated with the actual values (r = 0.793, p < 0.0001), indicating that subjects had successfully learned this information. Similarly, the size ratings in the post-scan session were significantly correlated with the actual landmarks sizes in Fog World (r = 0.726, p < 0.0001). Comparing the visual salience ratings from the initial landmark characterisation study and the fMRI study was particularly interesting. While the correlation between the two was significant (p = 0.02), the slope of the correlation was not particularly marked (r = 0.314). The landmarks in the characterisation experiment were viewed one at a time and in isolation (so not as part of Fog World). By contrast, there was a tendency for subjects post-fMRI scan to rate landmarks as more salient if they had been experienced in Fog World to be large (r = 0.428, p = 0.001) or permanent (r = 0.315, p = 0.01). In other words, the visual salience of landmarks (or how ‘attention grabbing’ they were) was not just an inherent property; it was also influenced by how and where they had been experienced within the environment.
 
-Because we had a number of separate measures of landmark features, we then sought to establish if some of these variables loaded onto common underlying components. We therefore submitted the ratings and scores of permanence, size and salience of landmarks made by the scanning participants along with their memorableness scores and the actual permanence of landmarks to a principal components factor analysis using a varimax rotation and Kaiser normalization (see ‘Materials and methods’). The features clearly separated onto four orthogonal factors which accounted for 96.4% of the variance in the data. These four factors were strongly related to the permanence, memorableness, size and salience of the landmarks (
+Because we had a number of separate measures of landmark features, we then sought to establish if some of these variables loaded onto common underlying components. We therefore submitted the ratings and scores of permanence, size and salience of landmarks made by the scanning participants along with their memorableness scores and the actual permanence of landmarks to a principal components factor analysis using a varimax rotation and Kaiser normalization (see ‘Materials and methods’). The features clearly separated onto four orthogonal factors which accounted for 96.4% of the variance in the data. These four factors were strongly related to the permanence, memorableness, size and salience of the landmarks (Figure 3A). Thus the factor analysis confirmed the presence of four independent components in the landmark features, which included permanence of landmarks as a distinct factor.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig3-v2.jpg)
 
-**Figure 3.:** (A) The loading values of each landmark feature to the four principal component factors. Values above 0.5 are highlighted in bold. Factor 1 was strongly related to landmark permanence, factor 2 to their memorableness, factor 3 to their size and factor 4 to the visual salience of landmarks. (B) The bar graphs to the left show how strongly each of the four factors was related to the various features rated by subjects in the post-scan debrief. The associated brain regions responding to these four factors in the first and last quarters of learning are shown to the right. All activations are shown on a structural MRI brain scan of single representative subject. Each factor's activations are shown on the same sagittal slice and using a whole brain uncorrected threshold of p < 0.00001 for display purposes. The colour bars indicate the Z-score associated with each voxel.DOI: http://dx.doi.org/10.7554/eLife.09031.007
+**Figure 3.:** (A) The loading values of each landmark feature to the four principal component factors. Values above 0.5 are highlighted in bold. Factor 1 was strongly related to landmark permanence, factor 2 to their memorableness, factor 3 to their size and factor 4 to the visual salience of landmarks. (B) The bar graphs to the left show how strongly each of the four factors was related to the various features rated by subjects in the post-scan debrief. The associated brain regions responding to these four factors in the first and last quarters of learning are shown to the right. All activations are shown on a structural MRI brain scan of single representative subject. Each factor's activations are shown on the same sagittal slice and using a whole brain uncorrected threshold of p < 0.00001 for display purposes. The colour bars indicate the Z-score associated with each voxel.
 
 The post-scan testing session also involved subjects volitionally navigating to the locations of target landmarks within Fog World. This was a challenging test given that subjects had only been exposed to the environment (with its five paths and 60 landmarks) for the previous 40 minutes or so. Participants were first shown an image of a landmark and instructed that they would have to navigate to where they thought it was located in the environment by as direct a route as possible. On each trial, subjects were placed within a version of the environment in which there was no fog and the target landmark had been removed. They moved their way to where they thought that landmark belonged (using the arrow keys on a keyboard) and then indicated their chosen location by pressing the space bar. There were 12 trials (nine involving permanent and three involving transient landmarks). If they thought the target landmark was transient (and so could not be placed in a single location), subjects were instructed to press the space bar and indicate that they thought it was transient. For the navigation task, each trial was scored out of 3, giving a maximum score of 36. One point was awarded for locating a landmark on the correct path, 1 point for the correct part and side of the path, and a final point was awarded if they had taken a direct route to the landmark. If they correctly identified that the target landmark was transient (and so could not be located in a single position), they were awarded 3 points.
 
@@ -72,17 +200,17 @@ The variance in thought revealed by this feedback was not just large between par
 
 In summary, the behavioural data showed that participants learned the basic identities of landmarks. There was a brief discrepancy in learning to recognise permanent and transient landmarks in the second and third quarters in favour of the permanent landmarks, but overall the rates of learning were similar. Participants possessed excellent knowledge of landmark permanence/transience by the end of the scanning, as well as landmark size and visual salience. They also demonstrated some knowledge, with variance across subjects, about the overall layout of Fog World, in the volitional navigation task. We next asked what underpinned this learning in the brain.
 
-## fMRI: permanent vs transient landmarks
+### fMRI: permanent vs transient landmarks
 
 We first examined the fMRI data by directly comparing permanent with transient landmarks across the whole scanning experiment. There were numerous large clusters of increased activity more for permanent than transient landmarks: one including left RSC and PHC (−21, −49, −8, z = 6.01; −12, −43, 1, z = 5.72), another including right RSC and PHC (9, −52, 4, z = 5.10; 30, −49, −5, z = 5.14), and others in left occipital cortex (−15, −88, 25, z = 5.78; −9, −85, 4, z = 4.95), left and right superior posterior parieto-occipital sulcus (POS; −3, −76, 40, z = 5.24; 15, −61, 19, z = 4.94) as well as left lateral temporal cortex (−51, −43, 4, z = 5.61), right occipital cortex (18, −88, 22, z = 5.50; 27, −82, 31) and posterior parietal cortex/precuneus (0, −34, 46, z = 4.89). No regions were more active for transient than permanent landmarks.
 
-Having established the brain areas that were more active overall for permanent landmarks compared to transient, we then investigated when these differences arose. By the final quarter of learning (the last three learning sweeps) there were significantly greater responses to the permanent landmarks compared to the transient in right (6, −53, 5; Z = 5.41) and left (−6, −55, 10; Z = 5.90) RSC, as well as right POS (9, −73, 31; Z = 5.01) and posteriorly in the left occipital lobe (−6, −79, −8; Z = 5.00) (
+Having established the brain areas that were more active overall for permanent landmarks compared to transient, we then investigated when these differences arose. By the final quarter of learning (the last three learning sweeps) there were significantly greater responses to the permanent landmarks compared to the transient in right (6, −53, 5; Z = 5.41) and left (−6, −55, 10; Z = 5.90) RSC, as well as right POS (9, −73, 31; Z = 5.01) and posteriorly in the left occipital lobe (−6, −79, −8; Z = 5.00) (Figure 4). There were also activations in the hippocampus (−21, −28, −11; Z = 3.71) and PHC (21, −37, −14; Z = 4.12) but at a reduced threshold (p < 0.0001 uncorrected; compared with the whole-brain FWE corrected p < 0.05 reported otherwise). The increased responses to permanent landmarks were even present as early as the third quarter of scanning (sweeps 7–9 of 12) in similar regions (right RSC: 12, −51, 3; Z = 5.31; left RSC: −12, −55, 6; Z = 5.72; left POS: −6, −76, 40; Z = 4.93; left occipital: −15, −76, −11; Z = 5.53), but not in the hippocampus or PHC. There were no differences between responses to permanent and transient landmarks in either of the first two quarters of learning. No regions were more active for transient than permanent landmarks.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig4-v2.jpg)
 
-**Figure 4.:** (A) Shows activations in retrosplenial cortex (RSC) and posterior parieto-occipital sulcus (POS) at the default threshold of p < 0.05 (FWE). The colour bar indicates Z-score associated with each voxel. (B) Shows a plot of mean blood oxygenation level-dependent (BOLD) responses (±1 SEM) within the RSC cluster (circled in green). In the first two quarters of scanning, responses to permanent (blue) and transient (red) landmarks did not differ, but as subjects learned landmark permanence, BOLD responses increased for permanent landmarks with a corresponding decrease for transient landmarks.DOI: http://dx.doi.org/10.7554/eLife.09031.008
+**Figure 4.:** (A) Shows activations in retrosplenial cortex (RSC) and posterior parieto-occipital sulcus (POS) at the default threshold of p < 0.05 (FWE). The colour bar indicates Z-score associated with each voxel. (B) Shows a plot of mean blood oxygenation level-dependent (BOLD) responses (±1 SEM) within the RSC cluster (circled in green). In the first two quarters of scanning, responses to permanent (blue) and transient (red) landmarks did not differ, but as subjects learned landmark permanence, BOLD responses increased for permanent landmarks with a corresponding decrease for transient landmarks.
 
-## fMRI: all landmark features
+### fMRI: all landmark features
 
 We next broadened the analyses to also include the other landmark features by considering how fMRI blood oxygenation level-dependent (BOLD) signals related to each of the four principal components from the factor analysis. We examined whether or not they had any identifiable neuronal correlates, and if so, how they might have evolved over the course of learning. We used the principal component scores from the factor analysis rather than the raw behavioural data because this allowed us to have fully orthogonalized regressors in the fMRI analyses. To do this, we created factor score estimates for every landmark corresponding to each of the four orthogonal principal components and then used these values to generate parametric regressors for a whole brain fMRI analysis (see ‘Materials and methods’). This enabled us to examine activity that was linearly modulated by each factor.
 
@@ -94,33 +222,33 @@ We then considered factor 2, the ‘memorableness’ factor, namely those landma
 
 Investigating the source of these changes showed that the more easily remembered landmarks (those with greater values for factor 2) did not produce any significant activation in the final quarter of learning. However, at the start of learning (in the first quarter), there was a greater response in POS to landmarks which participants went on to later remember better in both the right (15, −70, 31; Z = 5.35) and left (−9, −76, 28; Z = 5.30) hemispheres (second row of Figure 3B, in red). There were also similar significant activations in the middle two quarters of learning (second quarter, left: −3, −76, 40; Z = 4.94; right: 9, −67, 31; Z = 4.98; third quarter, left: −6, −64, 31; Z = 4.88; right: 3, −64, 37; Z = 4.76). Intriguingly, these bilateral regions both overlapped with those which later went on to respond to permanent items in the final quarter. No areas showed responses associated with decreasing values of the memorableness factor, either across the whole scanning session or in any of the four quarters.
 
-Thus, the POS initially responded to memorable landmarks but then switched its response to permanent ones (
+Thus, the POS initially responded to memorable landmarks but then switched its response to permanent ones (Figure 5A). Given this overlap, we plotted the response profiles of voxels in this overlapping region for the two factors. We extracted contrast estimates of the principal eigenvariate of responses within the overlapping voxels for factor one (permanence) and two (memorableness) in each of the four scanning runs using the MarsBaR toolbox and averaged across all subjects (see ‘Materials and methods’). Figure 5B shows the clear switch in responses within this region, with large activations initially present for the most memorable items (factor 2), but as subjects learned about the landmarks it instead (in the middle of the third quarter) became increasingly engaged by those which were permanent (factor 1).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig5-v2.jpg)
 
-**Figure 5.:** (A) POS responded to memorable landmarks (those with higher factor 2 values) in the first quarter of learning (red) and permanent ones (with higher values for factor 1) in the final quarter (blue). The overlap of these activations is shown in purple. (B) The response profile of the overlapping (purple) voxels for the two factors throughout whole scan. Responses were initially greater for memorable landmarks but then switched over the course of learning to eventually become responsive to permanence. Plots show mean BOLD responses ±1 SEM. Activations are shown on a structural MRI brain scan of single representative subject at the default threshold of p < 0.05 (FWE).DOI: http://dx.doi.org/10.7554/eLife.09031.009
+**Figure 5.:** (A) POS responded to memorable landmarks (those with higher factor 2 values) in the first quarter of learning (red) and permanent ones (with higher values for factor 1) in the final quarter (blue). The overlap of these activations is shown in purple. (B) The response profile of the overlapping (purple) voxels for the two factors throughout whole scan. Responses were initially greater for memorable landmarks but then switched over the course of learning to eventually become responsive to permanence. Plots show mean BOLD responses ±1 SEM. Activations are shown on a structural MRI brain scan of single representative subject at the default threshold of p < 0.05 (FWE).
 
 Responses to the size and visual salience related factors (factors 3 and 4 respectively) remained constant throughout learning, with the greatest activations (associated with increased values on these factors) consistently occurring in posterior, visual areas (Figure 3B in green and purple respectively). For example, average responses across learning were greatest for larger landmarks in a cluster located in superior posterior parts of the occipital lobes (18, −88, 22; Z = 7.71), whereas a smaller cluster in just the right hemisphere was most active for salient landmarks (21, −91, 16; Z = 5.54). No areas showed responses associated with decreasing values of these two factors.
 
 In summary, as subjects learned the permanence of landmarks, a representation emerged within the RSC (factor 1). POS also developed responses to permanent landmarks, but this region was also initially activated by landmarks which were subsequently better remembered (factor 2). The hippocampus and PHC were eventually more engaged by the most stable items, but later on and less strongly than RSC and POS. Perceptual features of the landmarks, their visual salience and size, were associated with tonic responses throughout learning in posterior visual areas (factors 3 and 4).
 
-## fMRI: accounting for subject-specific learning differences
+### fMRI: accounting for subject-specific learning differences
 
 In the above fMRI analyses, we used the amount of time that people had been exposed to the environment to probe the development of neural representations of the various landmark features. However, even though subjects would inevitably have learned more about the landmarks with more exposure to them, this measure does not account for individual differences in how much participants had learned at different points throughout the experiment. This variation between individuals was important for allowing us to examine permanence-related fMRI activity in greater detail. It enabled us to identify fMRI responses which might directly track the variation in learning of landmark permanence (both between subjects and within individual people over time). This would provide more compelling evidence of whether activity in any brain region(s) might have a direct relationship with learning of landmark permanence, rather than looking at more simple, generalised associations.
 
-To characterise the dynamics of each subject's learning more precisely, we used their scores from each sweep's questioning period to construct a range of different models of their learning-state throughout the experiment. Of the models tested (see ‘Materials and methods’) a Bayesian implementation of a ‘state-space’ model provided the best fit to the data (
+To characterise the dynamics of each subject's learning more precisely, we used their scores from each sweep's questioning period to construct a range of different models of their learning-state throughout the experiment. Of the models tested (see ‘Materials and methods’) a Bayesian implementation of a ‘state-space’ model provided the best fit to the data (Smith et al., 2007). We used this to create subject-specific parametric regressors of each subject's estimated learning state during each sweep of the scan, examples of which are shown in Figure 6. We used these regressors to look for regions, anywhere in the brain, where responses matched how well a subject knew about the permanence of landmarks. The greatest activation was in the RSC (9, −58, 22; Z = 4.38), a second peak was also present in the body of the caudate nucleus (18, −10, 25; Z = 4.03). Therefore as subjects learned to distinguish permanent from transient landmarks, responses within their RSC directly reflected their knowledge of this difference.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig6-v2.jpg)
 
-**Figure 6.:** Data from three examples subjects are shown. Learning curves were calculated and used to create subject-specific parametric regressors corresponding to the amount of permanence knowledge acquired throughout the scan. A whole brain comparison of fMRI responses to permanent vs transient landmarks according to how well subjects knew their permanence revealed responses only in RSC which were directly related to these curves. The learning curves show the estimated learning state (coloured line) and the 95% confidence interval (coloured shaded area). The activation is shown on a structural MRI brain scan of single representative subject using a whole brain uncorrected threshold of p < 0.001 for display purposes. The colour bars indicate the Z-score associated with each voxel.DOI: http://dx.doi.org/10.7554/eLife.09031.010
+**Figure 6.:** Data from three examples subjects are shown. Learning curves were calculated and used to create subject-specific parametric regressors corresponding to the amount of permanence knowledge acquired throughout the scan. A whole brain comparison of fMRI responses to permanent vs transient landmarks according to how well subjects knew their permanence revealed responses only in RSC which were directly related to these curves. The learning curves show the estimated learning state (coloured line) and the 95% confidence interval (coloured shaded area). The activation is shown on a structural MRI brain scan of single representative subject using a whole brain uncorrected threshold of p < 0.001 for display purposes. The colour bars indicate the Z-score associated with each voxel.
 
-## Connectivity analyses
+### Connectivity analyses
 
 We next examined changes in the functional connectivity between regions associated with learning landmark permanence using psychophysiological interactions (PPI). A PPI analysis asks whether anywhere in the brain has a stronger relationship with a seed region during one condition compared to another. In this instance, we performed separate whole brain PPI analyses using the parts of RSC and POS which responded to landmark permanence (Figure 4) as seed regions. In the second half of learning both regions showed increased functional coupling with the hippocampus when viewing permanent compared to transient landmarks. For both RSC (right RSC: 21, −16, −23; Z = 4.23; left RSC: −30, −10, −26; Z = 3.42) and POS (right POS: 30, −7, 20; Z = 3.70; left POS: −30, −13, −20; Z = 3.89), this greater functional connectivity was with anterior parts of the hippocampus bilaterally. Neither RSC nor POS showed any differences in connectivity related to permanence during the first half of learning; these only emerged as subjects learned the stability of landmarks. Moreover, there were no other brain areas that showed functional connectivity with RSC and POS.
 
 To directly assess changes in connectivity associated with learning of permanence, we performed a further PPI analysis using the subject-specific permanence learning models. Using the same parts of RSC where greater responses emerged as subjects learned the permanence of landmarks as a seed region (Figure 6), the greatest increase in functional coupling developed with the left hippocampus (−30, −28, −14; Z = 3.99). Thus, as subjects learned the permanence of landmarks, their RSC not only developed greater responses to the permanent landmarks but also increased its functional connectivity with the hippocampus. In other words, the more that subjects learned about landmark permanence, the more their RSC-hippocampal functional coupling increased when viewing permanent landmarks.
 
-## Representations related to knowledge of permanent landmark locations
+### Representations related to knowledge of permanent landmark locations
 
 We next sought to go beyond features of the landmarks and consider whether information about landmark locations was present within different brain regions. This required us to assess the multi-voxel representations in relation to a continuous variable (i.e., how much individuals knew about permanent landmark locations). Widely-used approaches based on linear support vector machines, such as multi-voxel pattern analysis, can only be used to make categorical classifications, and so were not appropriate for our purpose. We therefore employed an alternative type of multivariate analysis method known as multivariate Bayes (MVB). This is a model-based decoding method (Friston et al., 2008; FitzGerald et al., 2012; Chadwick et al., 2014) which compares competing hypotheses about the mapping between multi-voxel response patterns to a psychological target variable using a hierarchical approach known as parametric empirical Bayes (see ‘Materials and method’). Specifically, we used MVB to look for patterns of voxel activity within permanence responsive regions which mapped onto knowledge of permanent landmark locations as assessed in the post-scan navigation test.
 
@@ -128,11 +256,11 @@ We reasoned that a representation relating to knowledge of permanent landmark lo
 
 RSC, POS, hippocampus and PHC had all been engaged by permanent items in some shape or form during the experiment so we focused these regions. RSC, hippocampus and PHC were defined independently using bilateral anatomical masks delineated by an experienced researcher, not involved in this project, guided by Duvernoy (1999) and Vann et al. (2009) on an averaged structural brain scan from a different set of n = 30 participants. For the one permanence-responsive region which did not relate to an easily defined anatomical locus—namely the POS—we used the cluster of voxels which were activated there in the main contrast of permanent vs transient landmarks outlined at the start of the fMRI results above.
 
-RSC, POS and PHC did not have any activity related to knowledge of permanent landmark locations at any point throughout the scanning experiment (
+RSC, POS and PHC did not have any activity related to knowledge of permanent landmark locations at any point throughout the scanning experiment (Figure 7). Similarly, there were no significant results for the hippocampus during the first three quarters of learning. However, in the final quarter of the learning period, hippocampal responses emerged which were significantly related to the amount of information about the locations of permanent landmarks (log model evidence = 12.8; posterior probability = 1.0). Using the permutation function within MVB, with 100 samples, the hippocampal result in the final quarter of scanning gave a significant randomisation p value (p = 0.0396,), whereas all others were not significant.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/09031/elife-09031-fig7-v2.jpg)
 
-**Figure 7.:** The log model evidence values for response patterns within the RSC (blue), posterior POS (red), hippocampus (HC; green) and parahippocampal cortex (PHC; purple) relating to knowledge of permanent landmark locations are shown in each of the four quarters of scanning. By the final quarter of learning, the pattern of activity in the HC mapped onto the amount subjects knew about where permanent landmarks were located in the environment. The dashed black line indicates the threshold at which log model evidence values are considered to be strong (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.09031.011
+**Figure 7.:** The log model evidence values for response patterns within the RSC (blue), posterior POS (red), hippocampus (HC; green) and parahippocampal cortex (PHC; purple) relating to knowledge of permanent landmark locations are shown in each of the four quarters of scanning. By the final quarter of learning, the pattern of activity in the HC mapped onto the amount subjects knew about where permanent landmarks were located in the environment. The dashed black line indicates the threshold at which log model evidence values are considered to be strong (see ‘Materials and methods’).
 
 In summary, in contrast to the RSC which responded to accruing knowledge of landmark permanence per se, by the end of the learning phase, activity patterns within the hippocampus mapped onto how much subjects knew about where those permanent landmarks were located within Fog World.
 
@@ -142,7 +270,7 @@ In this study we set out to ascertain how knowledge of landmark features, includ
 
 We found that as the ‘alien’ landmarks were learned, RSC became selectively engaged by non-moving, permanent landmarks and not those which constantly changed their location. Furthermore, modelling how much individual subjects knew about the permanence of landmarks throughout the course of learning revealed that this was directly related to activity in RSC. The POS initially responded to the most memorable landmarks, but as more was learned about them, it switched to instead become engaged by the permanent items. For perceptual features, like size and visual salience, areas within occipital cortex were engaged, and activity remained constant throughout scanning. The hippocampus was eventually activated by the permanent landmarks at the end of the scanning experiment. At the same time as this hippocampal response to permanent landmarks emerged, anterior hippocampus also showed increased functional coupling with the RSC, and activity patterns within the hippocampus mapped onto how much subjects knew about where the permanent landmarks were located within Fog World.
 
-## Representation of landmark permanence in RSC
+### Representation of landmark permanence in RSC
 
 Given the short timescale over which subjects learned the permanence of completely novel landmarks within an alien VR world, it is notable how strong the RSC permanence representations were. It did not even take the whole scanning session for RSC to develop robust and selective sensitivity to the stable landmarks. This demonstrates the remarkable adaptability of the process and hints at it being fundamental for learning about and orientating within our surroundings. Reassuringly, there was no difference in recognition of the permanent and transient landmarks in the first or final quarters. There was a brief discrepancy in the recognition of permanent and transient landmarks in the second and third quarters of learning, in favour of the permanent landmarks. We are not sure why this is the case, but speculate that perhaps when faced with entirely novel items, we remember them better if they are in a consistent setting.
 
@@ -154,13 +282,13 @@ By scanning subjects as they learned about Fog World, we also uncovered new info
 
 Modelling the learning-state of each individual subject throughout the experiment provided further insight into how RSC processes landmark permanence. Activity in the RSC was directly related to how well people knew the permanence of items. This reveals that the permanence representation that emerges is not just a simple binary response which indicates whether or not an item is known to be stable. Instead it appears to be more informative, relating to the precision with which the permanence of landmarks is known. In addition, therefore, to identifying the most stable environmental cues, the RSC could also indicate how reliable subsequent representations based upon such cues might be. Overall, these results point to sophisticated, selective and specific processing of landmarks within RSC based upon their permanence.
 
-## Role of the POS
+### Role of the POS
 
 As noted above, superior posterior parts of POS displayed an intriguing profile of response; first activated by the items which were subsequently better remembered by subjects, and only later becoming engaged by the stable landmarks once their permanence was known. This region was not implicated in processing permanent landmarks in previous experiments (e.g., Auger et al., 2012; Auger and Maguire, 2013). So what is it about the memorable landmarks at the start and permanent landmarks by the end of learning in this study which engaged POS?
 
 It is not entirely clear, but we can speculate about several possible reasons. For example, it could be that POS is tuned to navigationally ‘useful’ landmarks. Early in learning, in the absence of knowledge about landmark permanence, the memorable landmarks may have seemed more useful. Focus would then be expected to shift to the permanent landmarks which ultimately had greater utility for navigating and orienting. Alternatively, our results could indicate POS plays a role in relating landmarks with a specific location. This view is in keeping with a previous interpretation of processing within ‘retrosplenial complex’ (Vass and Epstein, 2013), which often extends into posterior parts of the POS. At the start of the learning process, encounters with the most memorable landmarks (and the location they were experienced in) would have been particularly evident and so elicited the largest early responses. The level of activity for memorable landmarks would then diminish as those which are not fixed are repeatedly encountered in conflicting locations. The region would, at the same time, become increasingly engaged by the permanent landmarks with repeated experience of them in the same place. The large response at the start of the scan to the most memorable landmarks also explains why, unlike RSC, activity in POS was not directly related to the permanence learning-state. This interpretation also accounts for the lack of POS engagement in previous experiments (e.g., Auger et al., 2012; Auger and Maguire, 2013), where the stimuli were never associated with specific locations. Therefore, while RSC appears specialised in processing the permanence of landmarks, the response profile of POS is more consistent with it playing some role in indexing navigational utility, or perhaps relating landmarks with the discrete locations where they have been encountered.
 
-## Role of the hippocampus
+### Role of the hippocampus
 
 Another region which responded to permanent landmarks in the present study was the hippocampus. In contrast to POS, the hippocampus was not activated by any landmarks early on, only later becoming engaged once the permanent landmarks became apparent. Furthermore, unlike RSC, activity in the hippocampus was not directly related to how well subjects had learned the permanence of landmarks. Whereas RSC tracked the acquisition of permanence knowledge, the hippocampus was only engaged by landmarks which were both known to be permanent and associated with a specific place.
 
@@ -168,7 +296,7 @@ The MVB analysis indicated that once the hippocampal representation had emerged,
 
 We observed increased functional coupling between RSC and hippocampus towards the end of the experiment, when the hippocampus started to come online. It seems then that the RSC may code for the stability of features within an environment, potentially providing this as an input to the hippocampus, which could in turn utilise the information to build detailed spatial representations based upon the most reliable cues. In terms of RSC-hippocampus connectivity, very few anatomical tracer studies have been conducted in humans. In the macaque monkey, RSC sends extensive cortical efferent projections to the medial temporal lobes (presubiculum, parasubiculum, entorhinal and PHC cortex; Kobayashi and Amaral, 2007). It receives inputs from similar regions, most notably the hippocampal formation (entorhinal cortex, subiculum, presubiculum and parasubiculum), PHC and perirhinal cortices. In particular, Area 29 receives a large majority of projections from the hippocampus (both subiculum and presubiculum) and entorhinal cortex (Aggleton et al., 2012). Thus, it is not surprising then that we observe functional connectivity between RSC and the hippocampus, and in particular anterior hippocampus. This is also in keeping with many studies that have reported RSC and anterior hippocampus co-activing in fMRI studies (e.g., Zeidman et al., 2014). In addition, inactivation of RSC in rats is associated with disruption of hippocampal place fields (Cooper and Mizumori, 2001), and previous studies have reported hippocampal involvement in retrieving spatial information about objects (Save et al., 1992; Manns and Eichenbaum, 2009; Baumann et al., 2010; Ekstrom et al., 2011). We did not find responses relating to the landmarks in any other brain regions, but object-centred firing has also been observed in rodent lateral entorhinal (Deshmukh and Knierim, 2012) and anterior cingulate cortex (Weible et al., 2012), even for locations formerly (but no longer) occupied by objects (Tsao et al., 2013). It will be interesting for future work to explore whether similar representations may also exist in humans and how they relate to the current findings.
 
-## Uses of the RSC permanence representation
+### Uses of the RSC permanence representation
 
 The present study provides an alternative interpretation of previous work which found that RSC is engaged when making judgements about locations relative to stable items (Committeri et al., 2004; Sulpizio et al., 2013). These previous studies concluded that activity within the RSC reflected coding of space relative to stable landmarks. However, our findings suggest it could in fact indicate a more fundamental representation of the landmark itself, specifically that of its inherent permanence. We suggest that the elementary discrimination between stable and moving landmarks demonstrated here within RSC is used to anchor representations of surrounding space. Sulpizio et al. (2013) also found RSC to be sensitive to viewpoint direction within a room but not relative to unstable objects. This could be linked to the presence of head direction cells within the rodent RSC (Chen et al., 1994; Cho and Sharp, 2001), perhaps suggesting that head direction cell firing is centred upon permanent landmarks and this information is integrated within RSC.
 
@@ -176,13 +304,13 @@ The discrimination between permanent and transient landmarks in RSC could play a
 
 The specificity of the RSC permanence response may also provide insights into failures of spatial navigation. Auger et al. (2012) and Auger and Maguire (2013) found that otherwise healthy individuals who were poor navigators had difficulty reliably identifying permanent landmarks, and had reduced responses in RSC compared to good navigators when viewing permanent landmarks. In neuropsychological studies, damage involving the RSC is never focal, but nevertheless leaves patients unable to derive orientation information from landmarks which they can otherwise recognise (Maguire, 2001a; Vann et al., 2009). Metabolic and structural changes in Alzheimer's Disease/Mild Cognitive Impairment have been found to be first centred upon RSC (Villain et al., 2008; Pengas et al., 2010, 2012; Tu et al., 2015), and spatial disorientation is often one of the first signs of the disease. If representations of space are founded upon permanence information from RSC, as seems to be indicated by our results, then it needs to be dependable. If this is not the case, afflicted individuals may be falling at the first hurdle, so to speak, and one can understand why spatial disorientation then arises, because upstream regions that rely on good quality input cannot perform optimally to build reliable environmental representations.
 
-## Conclusions
+### Conclusions
 
 We believe that the current results provide compelling evidence that the RSC may be fundamentally concerned with coding for permanent landmarks. We further propose that this may account for its involvement in scene processing, navigation, autobiographical memory and future-thinking, providing input for upstream areas such as the hippocampus to then construct models of the world based upon reliable cues (Maguire and Mullally, 2013; Zeidman et al., 2014). Future studies will be needed to establish the boundaries within which the RSC operates, for instance, does its permanence coding only function within the spatial domain? The mechanisms underpinning the permanence response we report here also needs to be determined. While head direction cells have been found in rodent RSC (Chen et al., 1994; Cho and Sharp, 2001), it has been estimated that these only account for approximately 8% of cells (Chen et al., 1994). What are the other 92% of cells in RSC doing, and how does this relate to landmark permanence? Intracranial recordings from human RSC have also been recently reported, showing increased responsivity to autobiographical memory retrieval (Foster et al., 2013). We hope that the current results will encourage those conducting electrophysiological recording in humans and non-humans to explore the RSC and in particular its response to landmark permanence. By giving RSC its chance to be centre stage, we believe that new and important insights into how the brain performs the fundamental computations involved in representing and adapting to changes in the world will be forthcoming.
 
 ## Materials and methods
 
-## Landmark characterisation experiment
+### Landmark characterisation experiment
 
 Ten subjects (five female, mean age 28 years, SD 4.8) took part in a landmark characterisation study. None of these subjects took part in the subsequent fMRI study. All were healthy, right-handed, highly proficient in English, and had normal vision. Each participant gave written informed consent for participation in the study, for data analysis and for publication of the study results. ‘Materials and methods’ were approved by the University College London Research Ethics Committee.
 
@@ -190,11 +318,11 @@ We created 134 unique 3D ‘alien’ items to be used as potential landmarks in 
 
 Using these ratings, we selected two groups of 30 landmarks each (from the original set of 134) to be used as the permanent and transient landmarks within the VR environment. These object groups were carefully selected to ensure that they did not differ in terms of any of the features rated (t-tests of the two landmark groups: Salience: t58 = 0.669, p = 0.51; Other associations: t58 = 0.000, p = 1.0; Likeableness: t58 = 0.312, p = 0.76; Animateness: t58 = −1.089, p = 0.28; Memorableness: t58 = 0.247, p = 0.81). The landmarks groups did not differ on two other factors—the actual size of the items (when in the VR environment: Small/Medium/Large; [t58 = 0.000, p = 1.0] and mean spatial frequency [t58 = −0.562, p = 0.58]). Having selected the two groups of landmarks, one was randomly allocated as the permanent set of landmarks and the other as the transient set.
 
-## fMRI experiment participants
+### fMRI experiment participants
 
 32 different subjects (16 female, mean age 23.7 years, SD 2.4) took part in the fMRI study. All were healthy, right-handed, highly proficient in English, and had normal vision. Each participant gave written informed consent for participation in the study, for data analysis and for publication of the study results. ‘Materials and methods’ were approved by the University College London Research Ethics Committee.
 
-## Fog World
+### Fog World
 
 Fog World was created using the jMonkeyEngine 3.0 beta game engine (http://jmonkeyengine.org), Java JDK 1.6 (Sun Microsystems, Santa Clara, California) and Blender (Stichting Blender Foundation, Amsterdam). The world (Figure 1) contained five different coloured intersecting straight paths (yellow, red, grey, blue and green). Each path had 12 landmarks (six permanent, six transient) evenly distributed alongside it. A trial consisted of travelling along one of these paths. There were 60 trials in total, with the five paths being travelled 12 times each (i.e., once per learning sweep). Permanent landmarks remained in the same location on each trial, whereas transient landmarks appeared in a different location on every exposure. The locations in which all 60 landmarks appeared on each of the 60 trials were meticulously designed so that permanent and transient landmarks were equally distributed either side and along the whole length of each path. This ensured that the permanent and transient landmarks, as well as being matched for their perceptual features (size, visual salience, and other features—see above), were placed in equivalent locations within the environment.
 
@@ -202,7 +330,7 @@ Having determined the identities and precise locations of permanent and transien
 
 To encourage subjects to learn an integrated representation of the whole environment, the paths intersected one another. Each path intersected with two others (Figure 1C). The first intersection was located three landmarks after the start of the path and the second was three landmarks before the end, with six landmarks between the two intersections. When the videos came to one of these intersections, the camera turned either left or right and the fog cleared enough to reveal three landmarks on the adjoining path. After 3 s, the landmarks were obscured by the fog again with the camera returning to the centre while continuing along the route. There were equal numbers of left and right turns at each intersection throughout the whole experiment and the ordering of the turns was pseudorandomised to ensure it was not predictable. The number of times each landmark was viewed during one of these intersection turns was also controlled so that overall exposure to all the landmarks remained identical. These 60 videos (corresponding to the 60 trials) were each approximately 1 min in length.
 
-## Task and procedure
+### Task and procedure
 
 Before scanning, subjects were shown an example trial (containing landmarks and a path which did not appear during the main experiment) to familiarise them with the general format of the main fMRI task. The main fMRI task has been described earlier. To summarise, once all five paths had been travelled once, there came a questioning period to gauge how much information subjects had learned by that point in the experiment. The combination of a 13 landmark questioning period and videos of the five different paths preceding it are referred to as a learning ‘sweep’. In the questioning period between learning sweeps, the ordering of the three types of landmark (permanent, transient or unseen) was also pseudorandomised. There were a total of 12 learning sweeps throughout the experiment (divided into four scanning runs, or ‘quarters’, comprising three sweeps each). Each 3-sweep scanning run lasted 15–20 min and subjects could take a short break (while remaining in the scanner) between scanning runs when necessary.
 
@@ -210,27 +338,27 @@ Once out of the scanner after the learning experiment had concluded, subjects we
 
 A final active navigation task provided a thorough examination of how well participants had learned the layout of the whole environment. This task and scoring are described in the main text.
 
-## Behavioural analyses
+### Behavioural analyses
 
 During scanning, two ratings were collected from subjects to gauge how well they recognised landmarks and knew their permanence. We assessed the rates at which subjects came to recognise permanent and transient landmarks. To do this, we performed separate linear regression analyses for permanent and transient landmarks to assess how the accuracy with which subjects recognised them changed throughout the learning phase in the scanner. Using a paired t-test (threshold p < 0.05) we then directly compared the slopes using these linear estimates across all subjects in order to establish whether or not subjects had learned to recognise the two types of landmark equally.
 
 The principal components factor analysis was conducted using the mean ratings for each feature of all 60 landmarks from every subject; it used a varimax rotation and Kaiser normalisation. We then generated orthogonal factor score estimates using the Anderson-Rubin method for use in a whole brain fMRI analysis. The factor analysis and all statistical tests were performed using SPSS version 20 (http://www.spss.com).
 
-## Scanning parameters and preprocessing
+### Scanning parameters and preprocessing
 
 T2*-weighted single-shot echo-planar images with BOLD contrast were acquired on a 3T Magnetom Allegra head-only MRI scanner (Siemens Healthcare, Erlangen, Germany) operated with the standard transmit-receive head coil. fMRI data were acquired across four sessions with a sequence which was optimized to minimize signal dropout in the medial temporal lobe and used a descending slice acquisition order with a slice thickness of 2 mm, an interslice gap of 1 mm, and an in-plane resolution of 3 × 3 mm (Weiskopf et al., 2006). 48 slices angled at −45° to the anterior–posterior axis were collected covering the entire brain, with a repetition time of 2.88 s, 30 ms echo time and 90° flip angle. A 3D MDEFT T1-weighted structural scan was also acquired for each participant with 1 mm isotropic resolution (Deichmann et al., 2004). The first 6 ‘dummy’ volumes from each of the four sessions were discarded to allow for T1 equilibration effects. FMRI data were analysed using SPM8 (www.fil.ion.ucl.ac.uk/spm). Images were realigned and unwarped using field maps which were acquired with a double-echo gradient field map sequence (TE = 10 and 12.46 ms, TR = 1020 ms, matrix size 64 × 64, with 64 slices, voxel size = 3 mm3) and then normalised to a standard EPI template in MNI space with a resampled voxel size of 3 × 3 × 3 mm and smoothed using an 8 mm FWHM Gaussian kernel.
 
-## fMRI analyses: permanent vs transient landmarks
+### fMRI analyses: permanent vs transient landmarks
 
 We compared fMRI responses while subjects viewed images of individual, isolated landmarks displayed during the questioning periods at the end of each sweep. Our primary interest was in seeing whether a neural representation of landmark stability emerged for previously unseen items over the course of the scanning experiment. We therefore directly contrasted fMRI BOLD responses to permanent and transient landmarks in the whole brain. We first considered responses across the whole scanning session, and in a second analysis divided the scanning experiment into quarters (which corresponded to the four scanning runs each consisting of three learning sweeps) in order to assess changes as subjects learned about the items. Potential issues associated with incidental changes in the BOLD signal over time were avoided by specifically comparing changes in the difference between permanent and transient landmarks. Permanent and transient landmark regressors were convolved with the haemodynamic response function. A separate regressor was created for the learning video time periods. This, along with participant-specific movement regressors were treated as covariates of no interest. We calculated subject-specific parameter estimates pertaining to each regressor of interest (β) for each voxel. Second level random effects analyses were then run using one-sample t-tests on these parameter estimates. We report all fMRI results at a whole brain threshold of p < 0.05 (FWE), unless otherwise stated.
 
-## fMRI: all landmarks features
+### fMRI: all landmarks features
 
 We also examined fMRI responses in relation to the four factors from the principal components analysis. As above, we first analysed fMRI BOLD responses across the whole scanning session, and in a second analysis divided the scanning experiment into quarters. We created parametric regressors from the orthogonal factor score coefficients for every landmark for each of the four principal components using the Anderson-Rubin method. Parametric regressors from these scores were then entered into a whole brain GLM fMRI analysis. This enabled us to examine activity that was linearly modulated by each factor. These parametric regressors were each convolved with the haemodynamic response function. Analyses were then run in the same way as for the permanent vs transient landmark comparison described above.
 
 We used the MarsBaR toolbox for analysing responses within the overlapping voxels for the permanence and memorableness factors. MarsBaR is an SPM toolbox which extracts fMRI data from specified regions of interest. We defined the region of interest (purple in Figure 5A) as the contiguous voxels which showed significant activation for both the memorableness factor in the first quarter of learning and the permanence factor in the fourth quarter. For each subject, we then extracted the principal eigenvariate of responses within this region for the memorableness and permanence factor parametric regressors, in each of the four quarters of the scanning period. The mean ±1 SEM of these subjects' responses are plotted in Figure 5B.
 
-## fMRI: accounting for subject-specific learning differences
+### fMRI: accounting for subject-specific learning differences
 
 The ‘state-space’ learning models were created with the MATLAB- and WinBUGS-based software provided at http://www.neurostat.mit.edu. We compared the mean squared error (MSE, in arbitrary units) and percentage variance explained by three different types of learning model: a ‘state-space’ model estimated by maximum likelihood using an expectation maximisation algorithm (Smith et al., 2004), a ‘state-space’ model estimated by a Bayesian approach (Smith et al., 2007) and a moving average of accuracy across each sweep and the sweeps immediately preceding and following it. A Bayesian implementation of a ‘state-space’ model provided the best fit (Smith et al., 2007) by both accuracy measures (MSE = 204, SD = 88; r2 = 64) than the ‘state-space’ model estimated by maximum likelihood (MSE = 226, SD = 85; r2 = 44) and the moving averages model (MSE = 221, SD = 86; r2 = 36).
 
@@ -238,11 +366,11 @@ As the state-space model estimated by a Bayesian approach (Smith et al., 2007) p
 
 As SPM automatically mean centres parametric regressors within each scanning block, we concatenated the four sessions into one and added extra regressors to model the mean signal for each session. Parametric regressors are additionally mean centred by SPM at the first-level, so in order to accurately reflect between-subject differences in the overall extent of learning across the whole experiment, we added their overall performance on the post-scan navigation test as a second-level covariate of interest. Significant clusters are reported at a whole brain uncorrected threshold of p < 0.001 for the RSC and p < 0.05 FWE corrected for the rest of the brain. We chose this statistical threshold for the RSC given the more subtle nature of this specific contrast (compared to the simpler categorical comparison of all permanent with all transient landmarks) and our specific prior hypotheses about RSC processing landmark permanence. However, it should be noted that the RSC activation was also significant after applying small volume correction within a bilateral RSC mask (threshold FWE corrected p = 0.01).
 
-## Connectivity analyses
+### Connectivity analyses
 
 Functional connectivity was examined using the gPPI toolbox (McLaren et al., 2012). We looked for changes in the functional connectivity of regions associated with learning landmark permanence. The seed regions and contrasts used for these analyses were all based upon the corresponding univariate whole-brain comparisons described above. First, for any regions responsive to landmark permanence, we looked for brain areas with which they showed increased functional coupling for permanent compared to transient landmarks. Early and late parts of the scanning session were compared separately (learning sweeps 1–6 and 7–12 respectively). We analysed the two halves instead of four quarters in order to increase the number of trials and power with which to detect these potentially subtle effects. In a second connectivity analysis, implemented in the same way, we used a seed region and contrast which additionally accounted for inter-individual differences in learning.
 
-## Representations related to knowledge of permanent landmark locations (MVB analysis)
+### Representations related to knowledge of permanent landmark locations (MVB analysis)
 
 The MVB analysis uses the same design matrix as a standard univariate SPM analysis, with columns for experimental variables of interest as well as regressors of no interest. A contrast is then specified (in this instance from subjects' scores on the post-scan navigation task) and a ‘target’ variable is derived from this after accounting for potential confounds (e.g., head movement). The patterns of voxel activity within each region of interest are then fitted to this target variable, producing a model evidence value. These model evidence values are then compared to a null model to determine the log model evidence.
 

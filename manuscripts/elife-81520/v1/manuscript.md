@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04bgfm609 Stowers Institute for Medical Research Kansas City United States
-2. https://ror.org/036c9yv20 Department of Molecular and Integrative Physiology, University of Kansas Medical Center Kansas City United States
+1. Stowers Institute for Medical Research Kansas City United States ([ROR:04bgfm609](https://ror.org/04bgfm609))
+2. Department of Molecular and Integrative Physiology, University of Kansas Medical Center Kansas City United States ([ROR:036c9yv20](https://ror.org/036c9yv20))
 
 † Corresponding author
 

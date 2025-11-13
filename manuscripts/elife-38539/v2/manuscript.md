@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.38539.001 Homeostasis at mucosal surfaces requires cross-talk between the environment and barrier epithelial cells. Disruption of barrier function typifies mucosal disease. Here we elucidate a bifunctional role in coordinating this cross-talk for the inflammatory bowel disease risk-gene INAVA . Both activities require INAVA’s DUF3338 domain (renamed CUPID). CUPID stably binds the cytohesin ARF-GEF ARNO to effect lateral membrane F-actin assembly underlying cell-cell junctions and barrier function. Unexpectedly, when bound to CUPID, ARNO affects F-actin dynamics in the absence of its canonical activity as a guanine nucleotide-exchange factor. Upon exposure to IL-1β, INAVA relocates to form cytosolic puncta, where CUPID amplifies TRAF6-dependent polyubiquitination and inflammatory signaling. In this case, ARNO binding to CUPID negatively-regulates polyubiquitination and the inflammatory response. INAVA and ARNO act similarly in primary human macrophages responding to IL-1β and to NOD2 agonists. Thus, INAVA-CUPID exhibits dual functions, coordinated directly by ARNO, that bridge epithelial barrier function with extracellular signals and inflammation.
+Homeostasis at mucosal surfaces requires cross-talk between the environment and barrier epithelial cells. Disruption of barrier function typifies mucosal disease. Here we elucidate a bifunctional role in coordinating this cross-talk for the inflammatory bowel disease risk-gene INAVA. Both activities require INAVA’s DUF3338 domain (renamed CUPID). CUPID stably binds the cytohesin ARF-GEF ARNO to effect lateral membrane F-actin assembly underlying cell-cell junctions and barrier function. Unexpectedly, when bound to CUPID, ARNO affects F-actin dynamics in the absence of its canonical activity as a guanine nucleotide-exchange factor. Upon exposure to IL-1β, INAVA relocates to form cytosolic puncta, where CUPID amplifies TRAF6-dependent polyubiquitination and inflammatory signaling. In this case, ARNO binding to CUPID negatively-regulates polyubiquitination and the inflammatory response. INAVA and ARNO act similarly in primary human macrophages responding to IL-1β and to NOD2 agonists. Thus, INAVA-CUPID exhibits dual functions, coordinated directly by ARNO, that bridge epithelial barrier function with extracellular signals and inflammation.
 
 ## Introduction
 
@@ -45,37 +45,69 @@ In this study, we address the mechanism of INAVA action in polarized intestinal 
 
 ## Results
 
-## INAVA affects the epithelial barrier
+### INAVA affects the epithelial barrier
 
 To investigate the function of INAVA, we first generated INAVA shRNA knockdown and CRISPR knockout Caco2BBe human intestinal cells (Figure 1—figure supplement 1A,B). Caco2BBe cells lacking INAVA show enhanced cell spreading, while cells stably expressing INAVA-GFP are similar to wild type (Figure 1A; Figure 1—figure supplement 1A,C). When grown on permeable supports as polarized monolayers, INAVA-deficient cells display increased permeability to 4 kDa FITC dextran and reduced transepithelial electrical resistance (TEER) (Figure 1—figure supplement 1D–F), implicating defects in paracellular permeability and intercellular junctions. Conversely, Caco2BBe monolayers that overexpress INAVA exhibit evidence of increased integrity of intercellular junctions as measured by higher TEER and greater tolerance to depletion of intercellular adherens junctions caused by exposure to low Ca2+ (Figure 1—figure supplement 1G). These phenotypes are consistent with a recent study using INAVA knock-out mice that supports a role for INAVA in maintenance of intercellular epithelial junctions responsible for mucosal barrier function (Mohanan et al., 2018).
 
 To understand how INAVA acts on epithelial junctions, we first examined the localization of INAVA constructs fused to GFP that were stably expressed in Caco2BBe cells. Humans express two isoforms of INAVA. The short-isoform (INAVA-S) lacks a 99-amino-acid segment N-terminal to CUPID (Figure 1B). Both long INAVA-GFP and short INAVA-S-GFP isoforms localized to cell-cell contacts (Figure 1C,D; Figure 1—figure supplement 1H). Notably, leading edges of migratory cells were uniformly devoid of INAVA. In well-differentiated polarized Caco2BBe monolayers, INAVA localized to tight and adherens junctions, as evidenced by co-localization with E-cadherin and ZO-1 (Figure 1—figure supplement 1I,J). When expressed on its own, the C-terminal region flanking the INAVA-CUPID domain (aa 261–677) also localized to lateral membranes (Figure 1D, bottom panels). The CUPID domain on its own localized to the cytosol, and the CUPID domain together with the N-terminal flanking region (aa 1–260) localized to cytosolic puncta (Figure 1D). Thus, the C-terminal region of INAVA is necessary and sufficient for lateral membrane targeting. Lateral membrane localization did not depend upon association with the E-cadherin complex. This was evidenced in cells treated with 6 mM EGTA to disassemble adherens junctions and induce E-cadherin endocytosis. While E-cadherin localized to endocytic vesicles upon EGTA treatment, INAVA remained at lateral membranes (Figure 1E). Staining for the tight junction protein ZO-1 as a control also remained unchanged. Thus, INAVA localizes to lateral membranes independently of E-cadherin. Overall, these results support a critical role for INAVA in maintaining or regulating epithelial barrier integrity.
 
-## CUPID-domain directly interacts with cytohesin family members
+![Figure 1.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain architecture of the long and short INAVA isoforms.(B) Brightfield images of Caco2BBe WT, INAVA-GFP over-expressing, and INAVA CRISPR knockout cells grown 2 days on coverslips. Scalebar = 200 μm. (C) Localization of stably expressed long isoform INAVA-GFP in Caco2BBe grown on coverslips. Cells stained with F-actin (TRITC-phalloidin) and nuclei (DRAQ5). (D) Localization of stably expressed GFP tagged INAVA constructs in Caco2BBe cells.(E) Localization of Caco2BBe polarized epithelial monolayers stably expressing INAVA-GFP on 2-D transwells. Cells were treated for 5 min with 6 mM EGTA and then immediately fixed with 4% paraformaldehyde and stained for E-cadherin (adherens junction, red) and ZO-1 (tight junction, blue). Scalebar 10 μm (see also Figure 1—figure supplement 1I,J).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Verification of Caco2BBe INAVA knockdown by qPCR. (B) Genomic DNA PCR of INAVA locus in Caco2BBe WT and INAVA exon deleted CRISPR knockout lines. (C) Top, brightfield images of control or INAVA stable knockdown Caco2BBe grown 2 days sparsely on coverslips. Scalebar = 200 μm. Bottom, confocal images of the above cells stained for F-actin (phalloidin-TRITIC). Scalebar = 10 μm. (D) Permeability assay with 4 kDa FITC-Dextran in control or INAVA knockdown Caco2BBe cells. Cells were cultured on 2-D transwell inserts in triplicate for 3 days and treated apically with 4 kDa FITC-Dextran for 2 hr. Basal chambers were collected and measured for fluorescence. Data representative of two independent experiments, (n = 2). (E) As in (D) but with INAVA CRISPR knockout cells in triplicate. Data representative of two independent experiments. (F) Transepithelial electrical resistance (TEER) of Caco2BBe WT, INAVA knockout, and INAVA-GFP, ARNO expressing lines grown on 2-D transwell inserts for 3 days. Representative data from two independent experiments are shown. (G) Relative TEER measurements of Caco2BBe WT and INAVA-GFP stably expressing cells before and after overnight low calcium (50 μM) treatment, Data representative of two independent experiments. Error bars ± SEM. (H) Confocal images of INAVA-S expressing cells grown sparsely on coverslips for 2 days. (I and J) Confocal images of Caco2BBe cells expressing INAVA-GFP grown on 2-D transwells for 2 weeks. (I) Anti-E-cadherin (adherens junction) and (J) anti-ZO-1 (tight junctions) are cell junction markers. c, TRITC-phalloidin was used to stain F-actin. Scalebar = 10 μm.
+
+### CUPID-domain directly interacts with cytohesin family members
 
 To understand the mechanism of action underlying this phenotype, we focused on the single signature feature of INAVA, the CUPID domain. As all four CUPID-containing human proteins are implicated in binding the cytohesins (Ikenouchi and Umeda, 2010; Klarlund et al., 2001; Mohanan et al., 2018; Torii et al., 2014), we tested if cytohesin-binding is involved in INAVA function and explained by CUPID. We first screened the cytohesins 1–3 for binding to INAVA-CUPID (aa 100–261) using a yeast-based protein-protein interaction platform (Schmitz et al., 2009). In all cases, as evidenced by intracellular puncta formation, CUPID assembled with each of the cytohesins: cytohesin 1, cytohesin 2 (ARNO), and cytohesin 3 (GRP1), (Figure 2—figure supplement 1A,B). Coiled-coil domains of the cytohesins were sufficient for direct interaction with CUPID. In a purified system, recombinant INAVA-CUPID was sufficient to pull down the coiled-coil domains of Cytohesin-1, ARNO, and GRP1 (Figure 2A; Figure 2—figure supplement 1C). Thus, cytohesin binding by INAVA is direct and dependent upon CUPID.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig2-v2.jpg)
+
+**Figure 2.:** (A) GST pulldowns with recombinant GST-INAVA-CUPID domain and His-MBP-CC (coiled-coil) of cytohesin members (see also Figure 2—figure supplement 1C). (B) Immunoblot of Caco2BBe stably transduced with lentiviral vector driving myc-ARNO and myc-GRP1 expression under constitutive CMV promoter. Cells were additionally transduced with lentivirus expressing HA-GFP-INAVA or treated with phorbol-12-myristate-13-acetate (PMA). (C) Confocal microscopy images of Caco2BBe stably expressing doxycycline inducible myc-ARNO alone or with constitutively expressed INAVA-GFP. Scalebar = 10 μm. (D) Confocal images of coculture of Caco2BBe WT and stably expressing INAVA-GFP with myc-ARNO. Cells were stained with (E) Quantification of peak fluorescence intensity of cell-cell junction F-actin line scans as in (F), from Caco2BBe WT or Caco2BBe stably expressing INAVA-GFP (top), myc-ARNO (middle), or INAVA-GFP coexpressed with myc-ARNO (bottom). Right panel shows representative profiles of F-actin line scans. (F) F-actin line scans with Caco2BBe cocultured with Caco2BBe co-expressing INAVA-GFP and mutant ARNO constructs including GEF mutant (E156K), ARF6-GTP mutant (K366A), PIP2 mutant (K268A). Error bars indicate ± SEM. *p<0.05, †p<0.0001, NS not significant (two-tailed Student’s t-test), n = 8–10. (G) Cartoon display domain architecture of INAVA and ARNO and three ARNO activity states. Inactive ARNO is autoinhibited and cytosolically localized. The GEF dependent positive feedback mechanism of ARNO promotes robust levels of trafficking and actin assembly at the plasma membrane. In the context of a polarized epithelial cells this positive feedback mechanism disrupts barrier integrity that leads to epithelial breakdown and cell spreading. In contrast, CUPID domain mediated INAVA-ARNO complex permits non-canonical GEF independent function that allow fine control of lateral actin to maintain barrier homeostasis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Protein interaction Platform (PIP) Assay in Yeast. ARNO full length, CC-SEC7 and CC domain constructs were fused to YFP, and INAVA was fused to μNS, and transformed in yeast. Yeast were mated and induced with galactose for 4 hr and imaged. Empty vector μNS was used as negative control. (B) As in (A) but with b, PIP assay with INAVA and full length Cytohesin 1, or GRP1. (C) GST pulldown control with recombinant GST and His-MBP tagged coiled-coil (CC) region of Cytohesin 1, ARNO, or GRP1. (D) Recombinant ARNO CC-SEC7 alone or complexed with GST-INAVA-CUPID (1 μM) were incubated with MANT-GTP (25 μM) and ΔN17ARF1-GDP (40 μM) for 15 min at 25°C in duplicate. Guanine exchange reactions were measured by fluorescence at ex/em 355/445 nm. Background from control samples with MANT-GTP and ΔN17ARF1-GDP was subtracted. GEF assays with Cytohesin 1, GRP1, or Cytohesin 4 CC-SEC7 with or without GST-INAVA-CUPID. Data representative of 3 independent experiments. Error bars ± SD. (E) Immunoblot of endogenous ARNO and actin in Caco2BBe wildtype and cells expressing INAVA (anti-GFP). ImageJ was used to quantify relative band intensity. (F) As in (E) but with INAVA knockout lines. (G) MDMs (n = 6) were transfected with empty vector (EV) or WT HA-INAVA, and Myc-ARNO at the indicated concentrations. Summary graph with mean fluorescent intensity (MFI) values of ARNO expression (as detected by Myc antibody using intracellular flow cytometry)+SEM (similar results seen in an additional n = 6). Tx, treatment. ††, p<1×10−5. (H) Confocal images of Caco2BBe expressing INAVA-GFP-CUPID (aa 100–261) with ARNO. Cells were stained with anti-myc (ARNO) and TRITC-phalloidin (F-actin). (I) As in (H) but with MCF7 cells stably expressing INAVA-GFP. (J) As in (I) but with MCF7 cells expressing doxycycline induced ARNO. (K) As in (I) but with MCF7 cells stably coexpressing INAVA-GFP with ARNO wild type, GEF mutant (E156K), ARF6-GTP mutant (K336A), or PIP2 mutant (K268A). Scalebar = 10 μM.
+
 CUPID binding to the coiled-coil regions of the cytohesins, however, did not affect their GEF activity, as assessed biochemically using recombinant proteins in vitro (Figure 2—figure supplement 1D). To test how INAVA may affect cytohesin function, we generated Caco2BBe intestinal cells stably expressing myc-tagged ARNO or GRP1. These cells, however, rapidly suppressed ARNO and GRP1 expression, as evidenced by the lack of protein detected upon transduction. PMA (phorbol-12-myristate-13-acetate), which strongly activates the CMV promotors used in these transductions, rescued ARNO and GRP1 protein expression, presumably by overcoming the endogenous mechanism(s) of epigenetic gene silencing operating in these cell lines (Figure 2B, compare lanes 1 and 3; and lanes 5 and 7) (Löser et al., 1998). Strikingly, when co-expressed in the same cells, INAVA rescued ARNO expression in the absence of PMA (Figure 2B, compare lanes 1 and 2), implicating a stabilizing interaction between the two proteins. The effect was specific to ARNO as INAVA did not rescue the cytohesin GRP1 against gene-suppression (compare lanes 5 and 6). Over-expression of INAVA-GFP increased endogenous ARNO protein levels with no apparent changes in TEER or paracellular flux when compared to wildtype cells (Figure 1—figure supplement 1E,F; Figure 2—figure supplement 1E). Two independently created INAVA KO Caco2BBe cell lines showed no evidence for increased ARNO levels (Figure 2—figure supplement 1F), unlike the results recently reported for INAVA’s effect on cytohesin 1, a closely related ARF-GEF member of the cytohesin family. In accord with these results, we found durable expression of ARNO in primary human macrophages over-expressing INAVA (Figure 2—figure supplement 1G). Thus, INAVA interacts with and appears to stabilize ARNO expression in intact cells, consistent with our biochemical data, but in contrast to a recent report that INAVA induces the ubiquitin-dependent degradation of the cytohesins (Mohanan et al., 2018).
 
-## INAVA-ARNO promotes non-canonical GEF-independent lateral membrane actin assembly
+### INAVA-ARNO promotes non-canonical GEF-independent lateral membrane actin assembly
 
 To circumvent the problem of gene silencing in cells stably expressing ARNO and enable further mechanistic studies on INAVA-ARNO interactions, we generated stable doxycycline (dox) inducible myc-tagged ARNO expressing Caco2BBe cells. Upon induction with dox, ARNO localized to the cytosol, consistent with the molecule folding in an auto-inhibited inactive state (Figure 2C top panels) (Cohen et al., 2007). Co-expression of INAVA-GFP recruited ARNO to lateral membranes, consistent with our findings that ARNO and INAVA form stable protein complexes (Figure 2C bottom panels). Unexpectedly, given ARNO’s canonical actions in regulating F-actin assembly and membrane dynamics (Turner and Brown, 2001), the INAVA-ARNO complex did not cause epithelial cell spreading or disassembly of intercellular contacts. Intercellular junctions remained fully intact as assessed by TEER (Figure 1—figure supplement 1F). We did, however, find enhancement of lateral membrane F-actin assembly (Figure 2D,E), consistent with the anticipated effects of ARF activation on cortical F-actin (Myers and Casanova, 2008). In these studies, to properly compare the densities of cortical F-actin, we co-cultured cells stably expressing INAVA, or ARNO, or both proteins, along-side non-transduced wild type (WT) Caco2BBe cells (Figure 2D). Relative densities of lateral membrane F-actin stained with TRITC-phalloidin was measured by imaging both cell types on the same cover slip under the same conditions (Figure 2E right panels, peak intensities plotted in left panels). Cells expressing INAVA alone showed modest amplified F-actin density at lateral membranes. Expression of ARNO alone had no detectable effect. In contrast, expression of both INAVA and ARNO together strongly amplified lateral membrane cortical F-actin (>2 fold). Remarkably, the effects of INAVA-ARNO on F-actin assembly did not require ARF-GTP binding to ARNO or ARNO’s enzymatic GEF activity (Figure 2F), as we observed the same enhanced densities of lateral membrane F-actin in Caco2BBe cells expressing the ARNO GEF mutant (E156K) or the ARF-GTP binding mutant (K366A). In contrast, ARNO mutants lacking the ability to bind PIP2 (K268A) failed to enhance F-actin (Figure 2F, right). Thus, in intact cells, when complexed with INAVA, only PIP binding by ARNO is required for effecting F-actin assembly.
 
 To identify the INAVA region required for ARNO-mediated F-actin effects, we examined cortical F-actin assemblies in Caco2BBe cells expressing ARNO together with just the INAVA-CUPID domain. In this case, because CUPID alone cannot target ARNO to lateral membranes (Figure 1D), we found evidence for increased F-actin on intracellular vesicles, where both CUPID and ARNO co-localized (Figure 2—figure supplement 1H). This phenotype was amplified and more easily observed in human mammary epithelial MCF7 cells. In MCF7 cells, both INAVA and ARNO colocalized on intracellular vesicles, and both proteins were required for the induction of F-actin rich vesicles. Expression of each protein alone did not induce the vesicle phenotype (Figure 2—figure supplement 1I,J). The ARNO-GEF (E156K) and ARF-GTP binding (K336A) mutants also promoted formation of F-actin coated vesicles, consistent with our earlier results. In contrast, as in the Caco2BBe model, INAVA and the ARNO PIP2-binding mutant did not promote actin assembly (Figure 2—figure supplement 1K). Thus, the GEF and ARF-binding activities of ARNO are dispensable (Figure 2F; Figure 2—figure supplement 1K), again implicating a unique and non-canonical mechanism of action for the cytohesins in regulating F-actin dynamics when bound to INAVA. In other words, instead of the substantial ARNO GEF-dependent hyperactivation of ARFs leading to massive F-actin rearrangement, cell spreading, and epithelial breakdown (Stalder and Antonny, 2013; White et al., 2010), CUPID binding to ARNO displaces the positive-feedback hyperactivation of ARFs to enable instead a smaller (modulated) effect on cortical F-actin assembly, which we propose is required for barrier integrity (Figure 2G). Canonically, activated ARNO localizes to the leading edge to drive cell motility, but here we show INAVA localizes ARNO to lateral membranes, where regulation of cell-cell contacts and mucosal barrier function occurs.
 
-## INAVA-ARNO regulates IL-1β signaling
+### INAVA-ARNO regulates IL-1β signaling
 
 ARNO has been implicated in IL-1β signaling (Zhu et al., 2012), and given the association of INAVA with inflammatory bowel disease, we examined the effect of IL-1β on INAVA-ARNO function. We found that IL-1β rapidly within 30 min induced the relocalization of INAVA-GFP from lateral membranes to cytosolic puncta in Caco2BBe cells (Figure 3A). IL-1β-induced cytosolic puncta were also found in human colon HCT8 cells where we found a stronger phenotype (Figure 3B). In this case, puncta were assembled from cytosolic pools of INAVA-GFP as HCT8 cells do not form intercellular junctions (Vermeulen et al., 1997) where INAVA-GFP normally localizes. INAVA puncta appeared to be associated with IL-1β signaling as IL-1β-induced INAVA-puncta were not efficiently formed in HCT8 cells lacking TRAF6 (CRISPR-Cas9 KO), the ubiquitin E3 ligase required for IL-1β signal transduction (Figure 3B; Figure 3—figure supplement 1A) (Cao et al., 1996; Lomaga et al., 1999). TNFα, another inflammatory cytokine, induced INAVA puncta to a much lower extent (Figure 3—figure supplement 1B), suggesting selectivity for INAVA action in different inflammatory cascades. Notably, the short INAVA-S isoform rarely induced puncta formation in Caco2BBe or HCT8 intestinal cells (Figure 3A,B). We conclude the N-terminal region of INAVA is required for puncta formation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig3-v2.jpg)
+
+**Figure 3.:** (A and B) Confocal images of (A) Caco2BBe and (B) HCT8 or HCT8 TRAF6 KO cells stably expressing INAVA-GFP long isoform treated with or without 10 ng/ml IL-1β for 30 min. Graph display quantification of %GFP positive puncta of long and short INAVA, n = 73–125 cells. Scalebar = 10 μm (see also Figure 3—figure supplement 1A,B). (C) NF-κB reporter assays in HEK293T transfected with INAVA long or short INAVA-S and stimulated with 10 ng/ml IL-1β for 4 hr, left, or co-transfected with TRAF6, right graph. Reporter data is average of duplicates and representative of three independent experiments. (D) As in (C) but with long INAVA isoform, INAVA without CUPID domain and CUPID only. (E) As in (C) but with TRAF6 knockout, left graph and TRAF6 ligase mutant C70A, right graph (see also Figure 3—figure supplement 1C). (F) As in (C) but with stably expressed ARNO.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Verification of HCT8 TRAF6 knockout cells. Immunoblot of p65 activation in HCT8 wildtype and TRAF6 knockout cells treated with IL-1β (10 ng/ml) for 15 min. (B) Quantification of %positive GFP puncta of stably expressed INAVA-GFP and INAVA-S-GFP with TNFα stimulation at 1 ng/ml, 2.5 ng/ml and 25 ng/ml for 30 min, n = 70–85 cells. (C) Immunoblot of p65 activation in Caco2BBE wildtype and INAVA KO lines. Cells were mock treated or stimulated with IL-1β (10 ng/ml) for 5 and 15 min. (D) Verification of HEK293T TRAF6 exon deleted knockout cells by genomic DNA PCR.
 
 To test if INAVA affects IL-1β signaling, we used HEK293T cells expressing INAVA together with a NF-κB-dependent luciferase reporter. The cells were treated with IL-1β or co-transfected with TRAF6, which also induces an inflammatory response. Cells expressing INAVA responded to IL-1β or TRAF6 overexpression by enhanced NF-κB activation, as assessed using luciferase expression (Figure 3C; numerical values Figure 3—source data 1). Cells expressing the short INAVA-S isoform, however, did not. This result aligns with our finding that the short isoform cannot assemble into cytosolic puncta, further implicating puncta formation in the signaling cascade. We also found that cells expressing INAVA lacking the CUPID domain (CUPID Δ) or cells expressing only the CUPID domain failed to show amplified IL-1β signal transduction (Figure 3D; numerical values Figure 3—source data 2). Thus, the CUPID domain is required, but not sufficient.
 
 Based on these studies, we conclude INAVA-puncta mark the formation of multiprotein signalosomes required for affecting inflammatory responses. Though INAVA is not essential for IL-1β induced signaling, as further evidenced in Caco2BBe INAVA KO cells lacking INAVA entirely (Figure 3—figure supplement 1C), INAVA is required for amplifying the inflammatory response. The signalosomes mediating this activity depend on the INAVA-N-terminal and CUPID domains (Figure 3D; numerical values Figure 3—source data 2), and on the enzymatic activity of TRAF6. This is best evidenced in HEK293T cells lacking TRAF6, or in cells over-expressing its enzymatic mutant (C70A). Both cell lines failed to mediate the enhancement of IL-1β signal transduction (Figure 3E; Figure 3—figure supplement 1D; numerical values Figure 3—source data 3). Remarkably, we also found that ARNO over-expression blocked INAVA’s activity in IL-1β signal transduction (Figure 3F; numerical values Figure 3—source data 4), presumably by tightly binding the INAVA CUPID domain and interfering with signalosome function. This result uncovers a second previously unappreciated function for ARNO as a negative regulator of INAVA-dependent inflammatory cascades.
 
-## INAVA-ARNO amplifies inflammatory signaling in human macrophages
+### INAVA-ARNO amplifies inflammatory signaling in human macrophages
 
 To further address the relevance of these findings, we prepared primary monocyte-derived human macrophages (MDMs) from individuals carrying the INAVA-IBD rs7554511 CC risk allele. These cells have reduced INAVA expression and impaired signaling and cytokine secretion in response to PRR stimulation (Yan et al., 2017). We asked if similar genotype-dependent regulation was observed in response to IL-1β treatment. As predicted from our previous results (Yan et al., 2017), IL-1β-treated MDMs from rs7554511 CC IBD risk carriers showed reduced INAVA protein expression compared to MDMs derived from AA carriers (Figure 4A). Also consistent with our in vitro results, both IL-1β-induced NF-κB and MAPK signaling (Figure 4B), and cytokine secretion (Figure 4C), were reduced in MDMs from rs7554511 CC IBD risk carriers. To then define the role of the CUPID domain of INAVA in human MDMs, we transfected MDMs from rs7554511 CC IBD risk carriers (low INAVA-expressing carriers) with the various INAVA constructs (Figure 4—figure supplement 1A–B); cell survival was unchanged under these transfected conditions (Figure 4—figure supplement 1C). Compared to MDMs transfected with empty vector (EV), MDMs expressing wild type INAVA responded to IL-1β or MDP treatment by robust activation (phosphorylation) of NF-κB and the MAP-kinases ERK, p38, and JNK (Figure 4D,E, black bars; Figure 4—figure supplement 1D). The same results were obtained when measuring IL-1β- and MDP-induced cytokine release (Figure 4F,G). Cells expressing INAVA lacking the CUPID domain (CUPID Δ), or MDMs expressing CUPID only, failed to respond, as compared to empty vector controls (Figure 4D,E, grey bars; Figure 4F,G). We also found that in all cases the expression of ARNO (Figure 4—figure supplement 1E–G) blocked the IL-1β- and MDP-induced, INAVA-dependent NF-κB and MAPK activation and TNF secretion in a dose-dependent manner (Figure 4H, black bars; Figure 4I; Figure 4—figure supplement 1H,I). Thus, primary human macrophages also exhibit INAVA-ARNO mediated regulation of IL-1β (and MDP) signaling. Moreover, as in unstimulated MDMs, INAVA did not reduce ARNO expression under inflamed conditions (Figure 4—figure supplement 1F), consistent with our findings that INAVA stabilizes rather than degrades ARNO.
 
-## INAVA enhances protein ubiquitination in cells and in vitro
+![Figure 4.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) MDMs from rs7554511 AA (INAVA high-expressing) and CC (INAVA low-expressing) (n = 10/genotype) carriers were treated with 10 ng/ml IL-1β. (A) Summary graph of INAVA expression as assessed by flow cytometry. Mean fluorescent intensity (MFI) + SEM. (B) Summary graphs of fold MFI of the indicated phospho-kinases + SEM. (C) Mean cytokine secretion at 24h + SEM. Significance is compared to IL-1β-treated, rs7554511 AA carrier MDMs. (D–G) MDMs from rs7554511 CC homozygote (low-expressing) INAVA carriers were transfected with empty vector (EV) or the indicated HA-INAVA constructs. Cells were treated with (D and F) 10 ng/ml IL-1β or (E and G) 100 μg/ml MDP. (D and E) Summary graphs of MFI fold change of the indicated phospho-proteins at 15min + SEM (n = 6, similar results seen in an additional n = 10 for (E)). (F and G) Mean cytokine secretion at 24 hr + SEM (n = 6, similar results seen in an additional n = 10 for (G)) (see also Figure 4—figure supplement 1A-D). (H and I) As in (D and F) but with Myc-ARNO vector at the indicated concentrations. (H) Summary graphs with MFI fold change of indicated phospho-proteins at 15 min +SEM. (I) Mean TNF secretion at 24 hr + SEM. Significance is compared to: treated, EV-transfected cells for (D–G), and treated cells without ARNO transfection (EV) for each respective condition for (H and I). Tx, treatment; EV, empty vector, NS, not significant; **, p<0.01; ***, p<0.001; †, p<1×10−4; ††, p<1×10−5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/38539/elife-38539-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) MDMs from rs7554511 CC homozygote (low-expressing) INAVA carriers were transfected with empty vector (EV) or the indicated HA-INAVA constructs. (A) Representative flow cytometry of INAVA constructs with mean fluorescent intensity (MFI) values as indicated. (B) Summary graph of INAVA expression (as detected by HA antibody) with MFI +SEM (n = 6, similar results seen in an additional n = 10). (C) Cells were stained with annexin V (BD Biosciences). Percent dead cells + SEM. UV stimulation at 50–100 J/m2 served as a positive control. (D) Representative flow cytometry for Figure 4D with MFI values as indicated. (E–I) MDMs (n = 6) from rs7554511 CC homozygote (low-expressing) INAVA carriers were transfected with empty vector (EV) or HA-INAVA, and Myc-ARNO vector at the indicated concentrations. (E and F) Cells were left untreated or treated with 10 ng/ml IL-1β or 100 μg/ml MDP for 24 hr. (E) Representative flow cytometry with MFI values as indicated, and (F) summary graphs with MFI values of ARNO expression (as detected by Myc antibody)+SEM (similar results seen in an additional n = 6 for MDP-treated conditions). (G) Cells were stained with annexin V. Percent dead cells + SEM. UV stimulation at 50–100 J/m2 served as a positive control. (H–I) Cells were treated with 100 μg/ml MDP. (H) Summary graphs with fold MFI of indicated phospho-kinases at 15 min +SEM. (I) Mean TNF secretion at 24 hr + SEM. Significance is compared to treated cells without ARNO transfection (EV) for each respective condition for (H and I). Tx, treatment; EV, empty vector; NS, not significant; **, p<0.01; ***, p<0.001; †, p<1×10−4; ††, p<1×10−5.
+
+### INAVA enhances protein ubiquitination in cells and in vitro
 
 Because we find a dependence on TRAF6 for INAVA puncta formation and IL-1β inflammatory responses, we hypothesized that INAVA may function in the TRAF6 ubiquitin ligase cascade essential for IL-1β signaling (Xia et al., 2009). To test this, we examined protein polyubiquitination in HEK293T cells expressing HA-tagged ubiquitin. Cells expressing both TRAF6 and INAVA exhibited much higher levels of protein ubiquitination as assessed by anti-HA immunoblot (Figure 5A, compare lane 4 with lanes 1–3). Cells expressing the short INAVA-S isoform lacked this response (Figure 5A, compare lanes 5 and 6 with lane 4), consistent with the evidence that INAVA-S cannot form cytosolic puncta or mediate IL-1β inflammatory responses. We also found that overexpression of ARNO strongly inhibited INAVA-TRAF6 induced ubiquitination (Figure 5B, compare lane 8 with lane 6), consistent with our discovery that ARNO can act as a negative regulator in this pathway. Thus, INAVA appears to act as an enhancer of the ubiquitin-cascades induced by TRAF6, and this is blocked by ARNO.
 
@@ -103,92 +135,779 @@ In summary, our results delineate the molecular activities of CUPID and uncover 
 
 ## Materials and methods
 
-## INAVA genetic information
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti- Ecadherin</td>
+      <td>Sigma</td>
+      <td>U3254</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-HA</td>
+      <td>Sigma</td>
+      <td>11867423001</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-HA</td>
+      <td>Cell Signaling</td>
+      <td>C29F4</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP</td>
+      <td>Sigma</td>
+      <td>G1544</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-b-actin</td>
+      <td>Sigma</td>
+      <td>A5441</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ARNO</td>
+      <td>Sigma</td>
+      <td>SAB1404698</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse HRP</td>
+      <td>Sigma</td>
+      <td>A4416</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit HRP</td>
+      <td>Sigma</td>
+      <td>A6154</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rat HRP</td>
+      <td>Sigma</td>
+      <td>A9037</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-p65</td>
+      <td>Cell Signaling</td>
+      <td>3033</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-phospho- p65</td>
+      <td>Cell Signaling</td>
+      <td>4764</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-myc</td>
+      <td>Cell Signaling</td>
+      <td>9B11</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse phospho-ERK</td>
+      <td>Cell Signaling</td>
+      <td>E10</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse phospho-p38</td>
+      <td>Cell Signaling</td>
+      <td>3D7</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse phospho-JNK</td>
+      <td>Cell Signaling</td>
+      <td>G9</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit phospho-IkBa</td>
+      <td>Cell Signaling</td>
+      <td>14D4</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Traf6</td>
+      <td>Santa Cruz</td>
+      <td>sc-8409</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DRAQ5</td>
+      <td>ThermoFisher</td>
+      <td>62251</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa-647</td>
+      <td>ThermoFisher</td>
+      <td>A21237</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-ZO-1</td>
+      <td>Thermo Fisher</td>
+      <td>339100</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse AntiT-TNF</td>
+      <td>BD Bioscience</td>
+      <td>MAb1; MAb11</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti- IL6</td>
+      <td>BD Bioscience</td>
+      <td>MQ2-13A5; MQ2-39C3</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-IL8</td>
+      <td>BD Bioscience</td>
+      <td>G265-5; G265-8</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti- IL10</td>
+      <td>BD Bioscience</td>
+      <td>JES3-9D7; JES3-12G8</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-IL-1b</td>
+      <td>Thermo Fisher</td>
+      <td>CRM56; CRM57</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-IL12</td>
+      <td>Thermo Fisher</td>
+      <td>C8.3; C8.6</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-INAVA</td>
+      <td>Abcam</td>
+      <td>ab121945</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>MCF7</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>Caco2BBe (C2BBe1)</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell Line (Homo sapiens)</td>
+      <td>HCT8</td>
+      <td>ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ (https://i magej.nih.gov/ij/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Graphpad Prism (https://www.graphpad .com/scientific- software/prism/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Slidebook</td>
+      <td>Intelligent Imaging Innovations (https://www.inte lligent-imaging.com/)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>INAVA</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cytohesin1</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ARNO</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GRP1</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cytohesin 4</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TRAF6</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE-CMV-MCS- IRES-ZsGreen</td>
+      <td>Harvard Plasmid Repository</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEXTEV</td>
+      <td>Kim Orth, UT Southwestern</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-Puro</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-EF1α- AcGFP-N1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-EF1α -AcGFP-C1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG413 Gal-YFP</td>
+      <td>Cammie Lesser, Mass Gen. Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG413Gal- mcherry</td>
+      <td>Cammie Lesser, Mass Gen. Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pag413Gal-μNS</td>
+      <td>Cammie Lesser, Mass Gen. Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTY-shRNA- EF1a-Puro2a-GFP</td>
+      <td>Yi Zhang, Harvard Medical School</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SV40- Renilla</td>
+      <td>Promega</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NF-κB luciferase</td>
+      <td>Jonathan Kagan, Boston Children's Hospital</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCW57.1</td>
+      <td>Addgene, gift from David Root</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2</td>
+      <td>Addgene, gift from Didier Trono</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSVG</td>
+      <td>Addgene, gift from Bob Weinberg</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UBE1</td>
+      <td>Addgene, gift from Cynthia Wolberger</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UBC13</td>
+      <td>Addgene, gift from Cynthia Wolberger</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UEV1a</td>
+      <td>Addgene, gift from Cheryl Arrowsmith</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>plentiC RISPRv2</td>
+      <td>Addgene, gift from Feng Zhang</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.0</td>
+      <td>ThermoFisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapien)</td>
+      <td>Human Peripheral Blood Mononuclear Cells</td>
+      <td>this study</td>
+      <td></td>
+      <td>Donors recruited at Yale University</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UbiquitinΔ 2G-HA-His6</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-ΔN17ARF1</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-INAVA-CUPID</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-MBP- INAVA-CUPID</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UBC13</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>UEV1a</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-Cytohesin- CC-SEC7</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Traf6-R ING-His6</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ubiquitin</td>
+      <td>Boston Biochem</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MANT-GTP</td>
+      <td>Jena Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRITC-phalloidin</td>
+      <td>American Peptide</td>
+      <td></td>
+      <td>92014A</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>gRNAs</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>shRNAs</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>qPCR-primers</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>genotyping primers</td>
+      <td>this study</td>
+      <td></td>
+      <td>Recombinantly expressed in house</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta2D E3pLyS</td>
+      <td>EMD Millipore</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E.coli)</td>
+      <td>Shuffle T7 Express</td>
+      <td>New England Biolabs</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiTrap QHP</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### INAVA genetic information
 
 GeneID: 55765. INAVA constructs amino acid numbering follows NCBI reference sequence NP_060735.3 INAVA isoform one and NP_001136041.1 for INAVA isoform 2.
 
-## Patient recruitment and genotyping
+### Patient recruitment and genotyping
 
 Informed consent was obtained per protocol approved by the institutional review board at Yale University. Healthy individuals were recruited and rs7554511 genotyping was performed by Taqman (Life Technologies, Grand Island, NY).
 
-## Plasmids
+### Plasmids
 
 Template plasmids for INAVA, Cytohesin 1, ARNO, GRP1, Cytohesin 4, TRAF6 was obtained from Harvard Plasmid Repository. pGEX-TEV was a gift from Kim Orth (UT Southwestern). pHAGE-CMV-MCS-IRES-ZsGreen was obtained from Harvard Plasmid Repository. pLVX-Puro, pLVX-EF1α-AcGFP-N1, pLVX-EF1α-AcGFP-C1, pET24a, pET28a are form Clontech. Yeast protein interaction plasmids: pAG413Gal-YFP, pAG413Gal-mcherry and pag413Gal-μNS for PIP assays were a gift from Cammie Lesser (Mass. General Hospital). pTY-shRNA-EF1a-Puro2a-GFP was originally from Yi Zhang (Harvard Medical School). SV40-Renilla was from Promega and NF-κB luciferase was provided by Jonathan Kagan (Boston Children’s Hospital). pCW57.1 (Addgene plasmid 41393) was a gift from David Root. psPAX2 (Addgene plasmid 12260) was a gift from Didier Trono. pCMV-VSVG (Addgene 8454) was a gift from Bob Weinberg. UBE1 (Addgene plasmid 34965) and UBC13 (Addgene plasmid 51131) was a gift from Cynthia Wolberger. UEV1a (Addgene plasmid 25619) was a gift from Cheryl Arrowsmith. plentiCRISPRv2 (Addgene plasmid 52961) was a gift from Feng Zhang.
 
-## Antibodies
+### Antibodies
 
 Antibodies anti-E-cadherin (U3254), anti-HA (11867423001) anti-GFP (G1544), anti-actin (A5441), anti-ARNO (), anti-mouse HRP (A4416), anti-rabbit HRP (A6154) and anti-rat HRP (A9037) were purchased from Sigma, unless noted. Antibodies anti-ZO-1 (339100), anti-mouse Alexa-647 (A21237) and DRAQ5 (62251) were purchased from ThermoFisher. Antibodies p65 (3033), phospho-p65 (4764) and anti-myc (2276S) were purchased from Cell Signaling, unless noted. Traf6 (sc-8409) antibody was purchased from Santa Cruz. TRITC-phalloidin (92014A) was obtain from AmericanPeptide.
 
-## Cell culture
+### Cell culture
 
 HEK293T and MCF7 were grown on DMEM 10% FBS with pen/strep. Caco2BBe were grown with DMEM 15% FBS with pen/strep. HEK293T, MCF7 and Caco2BBe were authenticated using Short Tandem Repeat (STR) analysis and tested negative for mycoplasma contamination. Human peripheral blood mononuclear cells (PBMCs) were prepared from peripheral blood using Ficoll-Paque (GE Dharmacon, Lafayette, CO), and monocytes then isolated and cultured for 1 week for monocyte derived macrophages (MDMs).
 
-## Confocal and cell imaging
+### Confocal and cell imaging
 
 Brightfield images were taken using an inverted microscope coupled to a Nikon camera. Confocal images were taken using a spinning disk confocal head (CSU-X1, PerkinElmer, Boston, MA) coupled to an inverted Zeiss Axiovert 200M microscope (Carl Zeiss, Jena, Germany). Imaging system was operated using Slidebook (Intelligent Imaging Innovations, Denver, CO).
 
-## Confocal imaging line scans
+### Confocal imaging line scans
 
 Caco2BBe WT cells were cocultured with stably expressed INAVA or INAVA-GFP and myc-ARNO constructs. Cells were grown on coverslips for 2 days, fix and stain as above. F-actin was stained with TRITC-phalloidin. ImageJ plot histogram function was used for line scans analysis. Line width was set at 10 pixels and the fluorescence F-actin intensity across cell-cell junctions. Peak positions were aligned based on the maximum peak value along the line.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Cells plated either on glass coverslips or transwell filters were washed with PBS and fixed with 4% paraformaldehyde for 30 min. Cells were washed with PBS, permeabilize with PBS + 0.2% saponin and blocked with PBS + 0.2% saponin+5% normal goat for 1 hr. Primary antibodies were incubated for at least 1 hr at room temperature to overnight at 4°C. Cells were washed several times with PBS + 0.2% saponin and then incubated for 30 min with Alexa Fluor secondary antibodies, TRITC-phalloidin and DRAQ5 where indicated. Cells were washed and mounted on to slides.
 
-## Protein purification
+### Protein purification
 
 Plasmids were transformed into Rosetta2DE3pLys (EMD Millipore) and grown on 2XYT (BD) plates with appropriate antibiotics. Bacterial colonies were scrapped and inoculated onto starter liquid culture of 2XYT + antibiotics and grown at 37°C for 3–5 hr. The 5–10 ml starter culture were inoculated into large scale flasks containing 2XYT + antibiotics flasks and grown to OD600 = 0.8–1.0. Cultures were induced with 0.4 mM IPTG overnight at room temperature. Cells were harvested resuspended in 10 mM Tris pH8.0+150 mM NaCl 0.5 mM Triton-X100 +1 mM PMSF and lysed with an Emulsiflex-5 (Avestin). Cells were spun 16 kg for 10 min and supernatant transfer to Cobalt beads (Goldbio.com) or Glutathione resin (Goldbio.com) depending if the protein were His-tagged or GST-tagged, respectively. HiTrap QHP (GE Life Sciences) buffer A = 20 mM Tris pH 8.5 and buffer B = 20 mM Tris pH 8.5 + 1M NaCl. Superdex 200 10/300 GL buffer = 20 mM Tris pH 7.5, 100 mM NaCl. UBC13-UEV1a was purified as a complex where the plasmids were cotransformed and coexpressed. UBC13-UEV1a complex was purified by cobalt purification and then onto HiTrap QHP. Cytohesin constructs were purified by cobalt and onwards to HiTrap QHP where bound fractions were collected. GST-INAVA-CUPID (pGEX-TEV) and His-MBP-INAVA-CUPID (pET24a) constructs were purified by glutathione or cobalt respectively and onwards to HiTRAP QHP where bound fractions were collected. GST-INAVA-CUPID+His-Cytohesin-CC-SEC7 (pET28a) complex were coexpressed in Rosetta2DE3pLlys and purified by tandem cobalt to glutathione resin and then onto Hi-Trap QHP. Complex fractions were collected. Traf6-His (aa 50–211) in pET24a was transformed into SHuffle T7 Express (NEB). Starter culture, inoculating of large culture and induction with IPTG was performed as above with addition of 50 μM zinc chloride added to the expression media. Purification of Traf6-His6 (aa 50–211) was purified with cobalt purification and samples were further purified by size exclusion Superdex 200. UbiquitinΔ2G-HA-His6 (pET24a) was expressed in Rosetta2DE3pLys, expressed and purified with cobalt and Superdex200. His-ΔN17ARF1 was purified by cobalt resin and chelated with 2 mM EDTA. GDP nucleotide was added at 20 molar excess of His-ΔN17ARF1 protein concentration along with 60 mM MgCl2. Protein was then dialyzed to 10 mM Tris pH 8, 150 mM NaCl +5 mM MgCl2. All proteins were flash frozen with liquid nitrogen and stored in aliquots at −80°C.
 
-## Guanine exchange assays
+### Guanine exchange assays
 
 Recombinant HisARNO-CC-SEC7 alone or complexed with GST-INAVA-CUPID (1 μM) were incubated with MANT-GTP (25 μM) and ΔN17ARF1-GDP (40 μM) for 15 min at 25°C. Guanine exchange reactions were measured by fluorescence at ex/em 355/445 nm using a TECAN fluorescent plate reader. Background from control samples with MANT-GTP and ΔN17ARF1-GDP was subtracted.
 
-## Knockdown and CRISPR knockout generation
+### Knockdown and CRISPR knockout generation
 
 shRNAs were cloned into pTY-shRNA-EF1a-Puro2a-GFP. Guides were cloned into plentiCRISPRv2 and lentivirus was generated in HEK293T cells by cotransfection with psPAX2 and pVSVG by polyethyleneimine (PEI) transfection. For each INAVA knockout line, two unique pair of guides were designed to target the introns that flank exon 2 of INAVA which knockout both isoforms. Lentivirus that target the 5-prime and 3-prime ends were pooled and co-transduced into Caco2BBe cells. Cells were selected with puromycin 5 μg/ml and single cell cloned into 96-well plates by manual pipetting. Caco2BBe INAVA knockout lines were screen by genomic PCR, clones were genotyped by TA cloning with pGEM-T (Promega) and individual bacterial colonies were sequenced. TRAF6 knockout line in HEK293T cells were generated with two unique pair of guides targeting exon two with lentiviral transduction. Knockout clones were screened by genomic PCR and functionally by NF-κB luciferase reporter. HCT8 TRAF6 knockout line were generated with same guides are above. HCT8 cells tend not to have exon removal upon introduction of 2 pair of guides and so knockout clones were screened using downstream NF-κB phospho-p65 immunoblot upon IL-1β treatment at 10 ng/ml for 15 min.
 
-INAVA shRNA-1 Fwdtttgctatgcttctgctctgagaattcaagagat tctcagagcagaagcatagctttttaINAVA shRNA-1 Revagcttaaaaagctatgcttctgctctgaga atctcttgaattctcagagcagaagcatagINAVA shRNA-2 Fwdtttgtgcaagtctttgtacctgaattcaaga gattcaggtacaaagacttgcactttttaINAVA shRNA-2 Revagcttaaaaagtgcaagtctttgtacctga atctcttgaattcaggtacaaagacttgcaControl shRNA-Fwdtttgagtacttcgaaatgtccgttttcaaga gaaacggacatttcgaagtactctttttaControl shRNA-Revagcttaaaaagagtacttcgaaatgtccg tttctcttgaaaacggacatttcgaagtactINAVA qPCR FwdcaccttgccagcggagtatcINAVA qPCR RevcctgcctgctgaggttctcINAVA KO guide-1 Fwd1caccgggggcaggagattctggcacINAVA KO guide-1 Rev1aaacgtgccagaatctcctgcccccINAVA KO guide-1 Fwd2caccgggaccagggactagggactaINAVA KO guide-1 Rev2aaactagtccctagtccctggtcccINAVA KO guide-2 Fwd1caccgaagctagatatgaaccatctINAVA KO guide-2 Rev1aaacagatggttcatatctagcttcINAVA KO guide-2 Fwd2caccggagccctcaggcactagggcINAVA KO guide-2 Rev2aaacgccctagtgcctgagggctccINAVA KO genotyping FwdtataggtgtgacaacacagaggcINAVA KO genotyping RevgatggacacagcaaagtccctatTRAF6 KO guide Fwd1caccgtttgtttctgttagggatgcTRAF6 KO guide Rev1aaacgcatccctaacagaaacaaacTRAF6 KO guide Fwd2caccgacgtgagattctttctctgaTRAF6 KO guide Rev2aaactcagagaaagaatctcacgtcTRAF6 KO genotyping FwdtataggtgtgacaacacagaggcTRAF6 KO genotyping Revgatggacacagcaaagtccctat
+<table>
+  <tbody>
+    <tr>
+      <td>INAVA shRNA-1 Fwd</td>
+      <td>tttgctatgcttctgctctgagaattcaagagat tctcagagcagaagcatagcttttta</td>
+    </tr>
+    <tr>
+      <td>INAVA shRNA-1 Rev</td>
+      <td>agcttaaaaagctatgcttctgctctgaga atctcttgaattctcagagcagaagcatag</td>
+    </tr>
+    <tr>
+      <td>INAVA shRNA-2 Fwd</td>
+      <td>tttgtgcaagtctttgtacctgaattcaaga gattcaggtacaaagacttgcacttttta</td>
+    </tr>
+    <tr>
+      <td>INAVA shRNA-2 Rev</td>
+      <td>agcttaaaaagtgcaagtctttgtacctga atctcttgaattcaggtacaaagacttgca</td>
+    </tr>
+    <tr>
+      <td>Control shRNA-Fwd</td>
+      <td>tttgagtacttcgaaatgtccgttttcaaga gaaacggacatttcgaagtactcttttta</td>
+    </tr>
+    <tr>
+      <td>Control shRNA-Rev</td>
+      <td>agcttaaaaagagtacttcgaaatgtccg tttctcttgaaaacggacatttcgaagtact</td>
+    </tr>
+    <tr>
+      <td>INAVA qPCR Fwd</td>
+      <td>caccttgccagcggagtatc</td>
+    </tr>
+    <tr>
+      <td>INAVA qPCR Rev</td>
+      <td>cctgcctgctgaggttctc</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-1 Fwd1</td>
+      <td>caccgggggcaggagattctggcac</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-1 Rev1</td>
+      <td>aaacgtgccagaatctcctgccccc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-1 Fwd2</td>
+      <td>caccgggaccagggactagggacta</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-1 Rev2</td>
+      <td>aaactagtccctagtccctggtccc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-2 Fwd1</td>
+      <td>caccgaagctagatatgaaccatct</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-2 Rev1</td>
+      <td>aaacagatggttcatatctagcttc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-2 Fwd2</td>
+      <td>caccggagccctcaggcactagggc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO guide-2 Rev2</td>
+      <td>aaacgccctagtgcctgagggctcc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO genotyping Fwd</td>
+      <td>tataggtgtgacaacacagaggc</td>
+    </tr>
+    <tr>
+      <td>INAVA KO genotyping Rev</td>
+      <td>gatggacacagcaaagtccctat</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO guide Fwd1</td>
+      <td>caccgtttgtttctgttagggatgc</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO guide Rev1</td>
+      <td>aaacgcatccctaacagaaacaaac</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO guide Fwd2</td>
+      <td>caccgacgtgagattctttctctga</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO guide Rev2</td>
+      <td>aaactcagagaaagaatctcacgtc</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO genotyping Fwd</td>
+      <td>tataggtgtgacaacacagaggc</td>
+    </tr>
+    <tr>
+      <td>TRAF6 KO genotyping Rev</td>
+      <td>gatggacacagcaaagtccctat</td>
+    </tr>
+  </tbody>
+</table>
 
-## Calcium chelation
+### Calcium chelation
 
 Caco2BBe WT and stable cells were grown on 0.4 μM polycarbonate filters for 10–14 days. 6 mM EGTA final concentration was added to basolateral chamber for 3 min. Cells were immediately washed with PBS and fixed with 4% PFA for 30 min. Cells were stained with E-cadherin and ZO-1 and Alexa Fluor secondary.
 
-## Low calcium assay
+### Low calcium assay
 
 Caco2BBe lines were grown on 24-well 0.4 μM polycarbonate transwell filters were grown at least 1 week. Cells were washed and grown in DMEM calcium free media, supplemented with 50 μM calcium +10% FBS. Transepithelial electrical resistance was measured before and 24 hr after low calcium treatment.
 
-## Permeability assays
+### Permeability assays
 
 Caco2BBe lines were grown on 24-well 0.4 μM polycarbonate transwell filters for three days. Cells were washed and changed to DMEM + 10% FBS no phenol red media. 1 mg/ml FITC-dextran 4 Da was added apically. Cells were incubated for 2 hr at 37°C + 5% CO2. Basolateral media was collected and read in a 6-well plate reader ex/em 490/525 nm.
 
-## qRT-PCR
+### qRT-PCR
 
 RNA was isolated by QIAshredder and RNeasy Mini kit (Qiagen), reverse transcribed with SuperScript II (ThermoFisher) and qPCR by SYBR Green (BioRad) on a CFX96 (BioRad). Samples were normalized to actin.
 
-## Luciferase assays
+### Luciferase assays
 
 Firefly luciferase was assayed using Bright-Glo (Promega) or with homemade luciferase reagent as stated previously (Baker and Boyce, 2014). Renilla luciferase reagent was made and assayed as stated previously (Baker and Boyce, 2014).
 
-## MDM stimulation
+### MDM stimulation
 
 Cultured MDMs were treated with MDP (Bachem, Torrance, CA) or recombinant human IL-1β (BioLegend, San Diego, CA). Supernatants were assayed for TNF (clones MAb1 and Mab11), IL6 (clones MQ2-13A5 and MQ2-39C3), IL8 (clones G265-5 and G265-8), IL10 (clones JES3-9D7 and JES3-12G8) (BD Biosciences, San Jose, CA) or IL1β (clones CRM56 and CRM57) and IL12 (clones C8.3 and C8.6) (ThermoFisher, Waltham, MA) by ELISA.
 
-## Transfection of DNA vectors in MDMs
+### Transfection of DNA vectors in MDMs
 
 INAVA was subcloned from BC106877 (ORD3016) plasmid (Transomic, Huntsville, AL) into pcDNA3.0 along with an HA tag. HA-INAVA CUPID deletion (CUPID Δ) and CUPID only variants were generated through site-directed mutagenesis (QuikChange Lightning Kit; Agilent Technologies). For plasmid transfection, 4.5 μg empty vector (pcDNA3.0) or INAVA variants, or the indicated concentrations of ARNO vector were transfected into MDMs by Amaxa nucleofector technology.
 
-## Phosphoprotein and total protein detection in MDMs
+### Phosphoprotein and total protein detection in MDMs
 
 Intracellular proteins were detected in permeabilized MDMs by flow cytometry with Alexa Fluor 488-, phycoerythrin-, Alexa Fluor 647- or biotin-labeled antibodies to phospho-ERK (clone E10), phospho-p38 (clone 3D7), phospho-JNK (clone G9), phospho-IκBα (clone 14D4), HA (clone C29F4), Myc (clone 9B11) (Cell Signaling Technology, Danvers, MA) or INAVA (Abcam, Cambridge, MA).
 
-## Cells-based polyubiquitination assays
+### Cells-based polyubiquitination assays
 
 HEK293T wild type or stably expressed INAVA-GFP constructs were transfected with HA-Ubiquitin and where indicated myc-INAVA, myc-TRAF6 or FLAG-TRAF6 and myc-ARNO constructs by PEI transfection method between 16–20 hr. Stable INAVA-GFP lines had better comparable INAVA expression to each other than transient transfection. Cells were washed two times with PBS and lysed in RIPA +2 mM EDTA +protease inhibitors. Lysate were spun 20 kg for 5 min and supernatant was collected. Sample buffer was added and heated for 10 min at 95°C. Samples were load loaded onto SDS-PAGE gels and immunoblotted with anti-HA and detected by HRP using SuperSignal West Femto (Fisher Scientific). Images were taken with the Azure c300 system.
 
-## Cell-free in vitro ubiquitination assay
+### Cell-free in vitro ubiquitination assay
 
 Ubiquitination assay were performed as follows: UBE1 (250 nM), heterodimer UBC-UEV1a (1 μM), TRAF6-RING (2 μM), His-MBP-CUPID (350 nM), ARNO-CC-SEC7 (4 μM), wild type ubiquitin (15 μM, Boston Biochem) and UbiquitinΔ2G-HA (5 μM) were incubated at 25°C for 2 hr in buffer 25 mM HEPES pH 7.5, 10 mM NaCl, 2 mM ATP, 7 mM MgCl2, 1 mM DTT. Reactions with UBC13 as the E2 enzyme used 15 μM protein along with increased TRAF6-RING (4 μM) and His-MBP-CUPID (2 μM). Ubiquitination reactions were stopped with sample buffer. Samples were load loaded onto SDS-PAGE gels and immunoblotted and imaged as above.
 
-## Statistical analysis
+### Statistical analysis
 
 Significance was assessed using two-tailed t-test or two-way ANOVA where indicated p<0.05 was considered significant. Lines over multiple bars indicate same significance values for these bars. Graphs were generated using GraphPad Prism.

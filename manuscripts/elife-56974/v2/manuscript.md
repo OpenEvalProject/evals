@@ -22,7 +22,7 @@
 
 ## Abstract
 
-As countries in the Greater Mekong Sub-region (GMS) increasingly focus their malaria control and elimination efforts on reducing forest-related transmission, greater understanding of the relationship between deforestation and malaria incidence will be essential for programs to assess and meet their 2030 elimination goals. Leveraging village-level health facility surveillance data and forest cover data in a spatio-temporal modeling framework, we found evidence that deforestation is associated with short-term increases, but long-term decreases confirmed malaria case incidence in Lao People’s Democratic Republic (Lao PDR). We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity. Results appear driven by deforestation in densely forested areas and were more pronounced for infections with Plasmodium falciparum ( P. falciparum ) than for Plasmodium vivax ( P. vivax ). These findings highlight the influence of forest activities on malaria transmission in the GMS.
+As countries in the Greater Mekong Sub-region (GMS) increasingly focus their malaria control and elimination efforts on reducing forest-related transmission, greater understanding of the relationship between deforestation and malaria incidence will be essential for programs to assess and meet their 2030 elimination goals. Leveraging village-level health facility surveillance data and forest cover data in a spatio-temporal modeling framework, we found evidence that deforestation is associated with short-term increases, but long-term decreases confirmed malaria case incidence in Lao People’s Democratic Republic (Lao PDR). We identified strong associations with deforestation measured within 30 km of villages but not with deforestation in the near (10 km) and immediate (1 km) vicinity. Results appear driven by deforestation in densely forested areas and were more pronounced for infections with Plasmodium falciparum (P. falciparum) than for Plasmodium vivax (P. vivax). These findings highlight the influence of forest activities on malaria transmission in the GMS.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ To date, no prior studies have quantified the relationship between deforestation
 
 ## Results
 
-## Forest and environmental data
+### Forest and environmental data
 
 Figure 1 shows the average tree crown cover within 10 km for the year 2016 and the percent area within 10 km that experienced forest loss between 2011 and 2016 in two regions of southern and northern Lao PDR. Overall, the forest cover was denser in the north than in the south and deforestation over this period was higher in the north than in the south. Appendix 1—figure 6 and Appendix 1—figure 7 show the distribution of forest and deforestation variables as the temporal scales and spatial scales around study villages were varied. For example, the cumulative percent area within 30 km of a village that experienced forest loss between 2011 and 2016 ranged from 0 to 10% in the north, whereas it rarely exceeded 2.5% in the south. Deforestation rate in 2015 within 10 km of a village was of about 1% in the south and 2.5% in the north. The average tree crown cover increased with increasing buffer radius around villages (1, 10, and 30 km). However, the relationship with the percent area that experienced forest loss was less clear because both the area that experienced forest loss (numerator) and the area around villages (denominator) increased. Appendix 1—figure 15 and Appendix 1—figure 16 show the raw time series of forest cover and percent area with forest loss.
 
@@ -52,13 +52,13 @@ Figure 1 shows the average tree crown cover within 10 km for the year 2016 and t
 
 The 284 villages in the north were overall less populated (mean 2015 population size: 498, IQR: [241; 548]) than the 207 villages in the south (2015 mean: 1095, IQR: [584; 1384]), but with some highly populated outliers. As expected, altitude differed substantially between villages of the mountainous northern region (mean: 557 m, IQR: [378; 679]) and the lowlands of the south (mean: 120 m, IQR: [98; 130]). Although both regions exhibited similar seasonal trends in precipitation and temperature, with a rainy season spanning from April to October, villages in the south experienced higher monthly precipitation and temperature than in the north over the study period (Appendix 1—figure 8).
 
-## Treatment-seeking data
+### Treatment-seeking data
 
 For villages with an estimated travel time of 0 hr to the closest health facility (same 300 m2 pixel), the predicted probability of seeking treatment for fever was 0.87 (95% CI: [0.79; 0.92]) in the north and 0.78 (95% CI: [0.63; 0.89]) in the south. A 1 hr increase in travel time to the closest health facility was associated with a similar 0.79 (95% CI: [0.55; 1.13]) reduction in the odds of seeking treatment in the north and 0.76 (95% CI: [0.43; 1.34]) in the south, almost reaching statistical significance when pooling data from both regions: 0.77 (95% CI: [0.56; 1.04]). See detailed results in Appendix 1 - S2.
 
-## Malaria case data
+### Malaria case data
 
-## Malaria infections
+#### Malaria infections
 
 A total of 63,040 patient records were abstracted from the malaria registries of all public health facilities in four southern districts between October 2013 and October 2016 and 1754 from all health facilities in four northern districts between January 2013 and December 2016.
 
@@ -66,29 +66,185 @@ In the south, 91.2% of the patients in the registries were tested for malaria, o
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig2-v2.jpg)
 
-**Figure 2.:** Upper left boxed indent zooms in malaria incidence in the North to better show the temporal variation (see y axis for scale).Figure 2—source data 1.Figure 2.
+**Figure 2.:** Upper left boxed indent zooms in malaria incidence in the North to better show the temporal variation (see y axis for scale).
 
 In the north, 92.1% of the patients in the registries were tested for malaria, of which 96.3% were tested by RDT and 9.6% by microscopy. Overall test positivity was 23.8% for any infection, 2.8% for P. falciparum and 22.5% for P. vivax. Monthly malaria incidence in the north was very low, never exceeding 0.3 per 1000 people. Most infections in the north were P. vivax cases with only a few seasonal P. falciparum cases (Figure 2).
 
 Appendix 1—figure 9 shows the number of patients and cases recorded per month in health facility malaria registries as well as how the smoothed test positivity rates varied over time.
 
-## Socio-demographics
+#### Socio-demographics
 
 Age, gender, and occupation of patients seeking treatment at health facilities were also recorded in the malaria registries. On average, patients in the south were older than patients in the north with mean age of 28 years and 23 years, respectively. In the north, about half of the patients were male (53.1%), while most patients in the south were male (71.1%). Finally, the vast majority (68.2%) of patients in the south were farmers, whereas only 8% of patients in the north were farmers. Most patients in the north reported being unemployed (41.7%) or a student (31.2%) (Appendix 1—figure 10).
 
-## Geo-referencing
+#### Geo-referencing
 
 Overall, 88.1% of malaria records were matched to one of the 491 villages in study districts. The remaining (11.7% in the south and 17.3% in the north) were removed from the analysis because of ambiguous village names, local nicknames for small villages and dissolving and grouping of villages over time. Test positivity in the south was similar in matched (33.1%) and unmatched (34.2%) records but higher in matched (26.5%) than unmatched (10.5%) records in the north. No substantial difference was found in the distribution of socio-demographic variables available in malaria registries between matched and unmatched records (Appendix 1—figure 11). Fewer than 0.3% of matched malaria records were missing dates and also removed from the analysis.
 
-## Spatio-temporal analysis
+### Spatio-temporal analysis
 
-## Deforestation
+#### Deforestation
 
 Table 1 and Figure 3 show the adjusted incidence rate ratio (IRR) associated with deforestation, measured by a 0.1% increase in the percent area that experienced forest loss, in the previous 1–5 years within 1, 10, and 30 km of villages. Models controlled for various environmental factors and accounted for the probability of seeking treatment and the spatio-temporal structure of the data.
 
+**Table 1.**
+ IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 1, 10, or 30 km (left-right) of a village in the previous 1– 5 years (top-down) in northern and southern Lao PDR.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Table 1—source data 1.Data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">South</th>
+      <th colspan="3">North</th>
+    </tr>
+    <tr>
+      <th>Time lag</th>
+      <th colspan="3">Buffer radius</th>
+      <th colspan="3">Buffer radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1 km</td>
+      <td>10 km</td>
+      <td>30 km</td>
+      <td>1 km</td>
+      <td>10 km</td>
+      <td>30 km</td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>1.01</td>
+      <td>1.16</td>
+      <td>1</td>
+      <td>1.03</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.99; 1.04]</td>
+      <td>[1.10; 1.22]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.99; 1.06]</td>
+      <td>[0.94; 1.08]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.08</td>
+      <td>1</td>
+      <td>1.01</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>2 years</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.98; 1.01]</td>
+      <td>[1.04; 1.13]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.99; 1.04]</td>
+      <td>[0.95; 1.03]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.93</td>
+      <td>1</td>
+      <td>1.01</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>3 years</td>
+      <td>[0.99; 1]</td>
+      <td>[0.97; 1]</td>
+      <td>[0.90; 0.97]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.99; 1.02]</td>
+      <td>[0.94; 0.99]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.94</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>4 years</td>
+      <td>[0.99; 1]</td>
+      <td>[0.97; 0.99]</td>
+      <td>[0.92; 0.97]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.99; 1.02]</td>
+      <td>[0.94; 0.99]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>0.97</td>
+      <td>0.94</td>
+      <td>1</td>
+      <td>1.01</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>5 years</td>
+      <td>[0.99; 1]</td>
+      <td>[0.96; 0.99]</td>
+      <td>[0.91; 0.97]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.99; 1.02]</td>
+      <td>[0.93; 0.98]</td>
+    </tr>
+  </tbody>
+</table>
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig3-v2.jpg)
 
-**Figure 3.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Figure 3—source data 1.Figure 3.
+**Figure 3.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.
 
 Deforestation within 1 or 10 km of a village was not associated with malaria incidence rate in either the south or the north, regardless of the temporal lag. However, in the south, deforestation within 30 km of a village in the previous 1 and 2 years was associated with higher malaria incidence rates (e.g. 1 year lag, IRR = 1.16, 95% CI: [1.10; 1.22]). In the north, where incidence was much lower, the results were not as clear, but a similar trend was observed with wide confidence intervals compatible with a short term increased risk. On the other hand, deforestation within 30 km of a village in the previous 3, 4, or 5 years was associated with approximately a 5% lower malaria incidence rate both in the south (e.g. 5 year lag, IRR = 0.94, 95% CI: [0.91; 0.97]) and in the north (e.g. 5 year lag, IRR = 0.96, 95% CI: [0.93; 0.98]).
 
@@ -96,7 +252,7 @@ These results suggest deforestation around villages, but not in the near vicinit
 
 The IRR effect estimates in Table 1 assume a linear relationship between deforestation and malaria. Appendix 1—figure 5 shows a few of these relationships when such linearity isn’t assumed in the models. The functional forms reveal that they can be reasonably well summarized linearly, especially in the south. In the north, the functional forms highlight potential non-linearities for long-term temporal lags but come with wide confidence intervals at extreme levels of deforestation.
 
-## P. falciparum and P. vivax
+#### P. falciparum and P. vivax
 
 In addition to different overall levels of transmission in the north and south, the relative species composition also differs by region. In the north, P. vivax is more prevalent with only a few sporadic and seasonal P. falciparum infections, whereas P. falciparum and P. vivax are co-endemic in the south (Figure 2). We used the co-endemicity and the larger amount of malaria case data collected in the south to assess the relationship between deforestation and malaria for both species separately.
 
@@ -104,19 +260,345 @@ Table 2 and Figure 4 show that the pattern of adjusted spatio-temporal associati
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig4-v2.jpg)
 
-**Figure 4.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Figure 4—source data 1.Figure 4.
+**Figure 4.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.
+
+**Table 2.**
+ IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 1, 10, or 30 km (left-right) of a village in the previous 1–5 years (top-down) in southern Lao PDR, differentiated by malaria species.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Table 2—source data 1.Data for Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">P. falciparum</th>
+      <th colspan="3">P. vivax</th>
+    </tr>
+    <tr>
+      <th>Time lag</th>
+      <th colspan="3">Buffer radius</th>
+      <th colspan="3">Buffer radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>1 km</td>
+      <td>10 km</td>
+      <td>30 km</td>
+      <td>1 km</td>
+      <td>10 km</td>
+      <td>30 km</td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>1.04</td>
+      <td>1.27</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>[0.99; 1.02]</td>
+      <td>[1.01; 1.07]</td>
+      <td>[1.18; 1.36]</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.97; 1.02]</td>
+      <td>[1.01; 1.13]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>1.01</td>
+      <td>1.15</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.06</td>
+    </tr>
+    <tr>
+      <td>2 years</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.99; 1.03]</td>
+      <td>[1.08; 1.22]</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.98; 1.01]</td>
+      <td>[1.01; 1.11]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.99</td>
+      <td>0.99</td>
+      <td>0.85</td>
+      <td>1</td>
+      <td>0.99</td>
+      <td>1.02</td>
+    </tr>
+    <tr>
+      <td>3 years</td>
+      <td>[0.98; 1]</td>
+      <td>[0.97; 1.01]</td>
+      <td>[0.80; 0.90]</td>
+      <td>[0.99; 1.01]</td>
+      <td>[0.98; 1.01]</td>
+      <td>[0.97; 1.06]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.85</td>
+      <td>1</td>
+      <td>0.99</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>4 years</td>
+      <td>[0.98; 1]</td>
+      <td>[0.96; 0.99]</td>
+      <td>[0.81; 0.88]</td>
+      <td>[0.99; 1]</td>
+      <td>[0.98; 1.01]</td>
+      <td>[0.98; 1.04]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1</td>
+      <td>0.97</td>
+      <td>0.83</td>
+      <td>1</td>
+      <td>0.99</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>5 years</td>
+      <td>[0.99; 1]</td>
+      <td>[0.95; 0.98]</td>
+      <td>[0.80; 0.87]</td>
+      <td>[1; 1.01]</td>
+      <td>[0.98; 1]</td>
+      <td>[0.98; 1.04]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 On the other hand, all the associations were attenuated for P. vivax infections. In the previous 2 years and within 30 km of villages, deforestation is still associated with a higher incidence of P. vivax (e.g. 1 year lag, IRR = 1.07, 95% CI: [1.01; 1.13]) but less so than for P. falciparum. However, regardless of the temporal lag or spatial scale, deforestation was no longer associated with lower P. vivax malaria risks.
 
 Appendix 1—figure 17 plots the species-specific relationships when not assuming linearity in the models.
 
-## Alternative definitions of deforestation and interaction with forest cover
+#### Alternative definitions of deforestation and interaction with forest cover
 
 In previous models, our definition of deforestation did not distinguish between forest losses in densely forested areas and less forested areas. To explore potential interactions between deforestation and baseline forest cover, Table 3 and Figure 5 show how the adjusted IRR estimates vary as we consider deforestation in more densely forested pixels only (tree crown cover over 68% and 87% – see Materials and methods for rationale on thresholds). We conducted this secondary analysis only for the non-null relationships previously identified, that is, when considering a 30 km buffer radius around villages.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig5-v2.jpg)
 
-**Figure 5.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Figure 5—source data 1.Figure 5.
+**Figure 5.:** Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.
+
+**Table 3.**
+ IRR between malaria incidence and a 0.1% increase in the area that experienced deforestation within 30 km of a village in the previous 1–5 years (top-down) and within areas with tree crown cover density above 0%, 68%, and 87% (left-right) in Lao PDR.Adjusted for the probability of seeking treatment, the spatio-temporal structure of the data, the environmental covariates selected in the model and forest cover within 30 km in the year before the deforestation temporal scale considered as well as for malaria incidence in the previous 1 and 2 years. See Materials and methods for details.Table 3—source data 1.Data for Table 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">South</th>
+      <th colspan="3">North</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="3">Deforestation within areas</th>
+      <th colspan="3">Deforestation within areas</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">with tree crown cover density above</td>
+      <td colspan="3">with tree crown cover density above</td>
+    </tr>
+    <tr>
+      <td>Time lag</td>
+      <td>0%</td>
+      <td>68%</td>
+      <td>87%</td>
+      <td>0%</td>
+      <td>68%</td>
+      <td>87%</td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1.16</td>
+      <td>1.32</td>
+      <td>1.28</td>
+      <td>1.01</td>
+      <td>1.04</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>1 year</td>
+      <td>[1.10; 1.22]</td>
+      <td>[1.14; 1.53]</td>
+      <td>[1; 1.64]</td>
+      <td>[0.94; 1.08]</td>
+      <td>[0.96; 1.14]</td>
+      <td>[0.99; 1.81]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>1.08</td>
+      <td>1.18</td>
+      <td>1.35</td>
+      <td>0.99</td>
+      <td>0.98</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>2 years</td>
+      <td>[1.04; 1.13]</td>
+      <td>[1.08; 1.28]</td>
+      <td>[1.15; 1.59]</td>
+      <td>[0.95; 1.09]</td>
+      <td>[0.93; 1.03]</td>
+      <td>[0.80; 1.11]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.93</td>
+      <td>0.93</td>
+      <td>0.89</td>
+      <td>0.96</td>
+      <td>0.96</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>3 years</td>
+      <td>[0.90; 0.97]</td>
+      <td>[0.89; 0.97]</td>
+      <td>[0.81; 0.99]</td>
+      <td>[0.94; 0.99]</td>
+      <td>[0.92; 0.99]</td>
+      <td>[0.76; 0.98]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.94</td>
+      <td>0.94</td>
+      <td>0.87</td>
+      <td>0.97</td>
+      <td>0.96</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>4 years</td>
+      <td>[0.92; 0.97]</td>
+      <td>[0.91; 0.97]</td>
+      <td>[0.80; 0.94]</td>
+      <td>[0.94; 0.99]</td>
+      <td>[0.93; 0.99]</td>
+      <td>[0.78; 0.96]</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Previous</td>
+      <td>0.94</td>
+      <td>0.93</td>
+      <td>0.83</td>
+      <td>0.96</td>
+      <td>0.95</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>5 years</td>
+      <td>[0.91; 0.97]</td>
+      <td>[0.90; 0.96]</td>
+      <td>[0.76; 0.90]</td>
+      <td>[0.93; 0.98]</td>
+      <td>[0.92; 0.98]</td>
+      <td>[0.75; 0.92]</td>
+    </tr>
+  </tbody>
+</table>
 
 The associations with deforestation became more pronounced as we restricted forest losses to more forested areas: the adjusted IRR for deforestation in the previous 1 year, within 30 km of southern villages, increased from 1.16 (95% CI: [1.10; 1.22]) to 1.28 (95% CI: [1; 1.64]) when considering deforestation in areas with more than 0% and 87% tree crown cover respectively. On the other hand, the adjusted IRR for deforestation in the previous 5 years, within 30 km of southern villages, decreased from 0.94 (95% CI: [0.91; 0.97]) to 0.83 (95% CI: [0.76; 0.90]) when considering deforestation in areas with more than 0% and 87% tree crown cover, respectively. A similar trend was observed in the north, although statistical significance was not reached as frequently as in the south.
 
@@ -144,7 +626,7 @@ In conclusion, this study assessed the relationship between deforestation and ma
 
 ## Materials and methods
 
-## Study site and population
+### Study site and population
 
 Lao PDR has seen a 92% reduction in cases between 2000 (280,000) and 2010 (23,000) (Lao PDR, 2016). Much of this progress has been attributed to heightened funding and better testing and treatments (Okayas, 2018).
 
@@ -158,23 +640,29 @@ The four districts in the south were selected within a larger cluster randomized
 
 When designing the study, in collaboration with the national control program, we purposefully excluded regions where we knew large programmatic activities where being implemented.
 
-## Malaria data
+### Malaria data
 
-## Malaria case data
+#### Malaria case data
 
 We conducted a retrospective review of malaria registries recorded at all health centers in the study districts between January 2013 and December 2016 in the north and between October 2013 and October 2016 in the south. The registries included information on every patient that was tested (RDT and/or microscopy) for malaria at the health center. Date, species-specific test results, demographic variables (age, gender, and occupation) and the village of residence of the patient were recorded in the registries. With help from local Lao experts, village names were matched to a geo-registry of all villages in Lao PDR compiled from the 2005 and 2015 national census Lao national census, 2020 and provided by the Center for Malariology, Parasitology and Entomology (CMPE). The geo-registry contains GPS coordinates and population of Lao PDR’s villages. Unmatched records and records with missing date were removed from the analysis. Finally, these data were aggregated to extract the monthly village-level malaria incidence.
 
-## Treatment-seeking data
+#### Treatment-seeking data
 
 One issue with using passive surveillance data is that not everyone will seek treatment at a public health facility for a febrile illness, which can lead to an underestimate of the true incidence, if not accounted for. To correct for that, we modeled the probability that an individual in a given village of the study’s district would seek treatment at a public health facility when febrile. We assumed that such probability is essentially driven by the travel time to the closest health facility. See Appendix 1 - S1 for methods used to calculate travel times to closest health facilities.
 
 To model the probability of seeking treatment, we used data from two cross-sectional household surveys conducted in the eight districts where registries were collected. In the north, 1480 households across 100 villages were surveyed in September-October 2016 (Lover et al., 2018). In the south, 1230 households across 56 villages were surveyed in the baseline assessment of the RCT (Lover et al., 2019) in December 2017. In particular, survey respondents were asked whether or not they would seek treatment at the closest health facility for a febrile illness and GPS coordinates of their household were recorded.
 
-We then used the cross-sectional surveys to model the probability of seeking treatment (at a public health facility, implicit from now on), θ, as a function of travel time to the closest health facility, τ (Equation 1). To account for the correlation structure induced by the stratified sampling approach used in the surveys, we modeled the number of successes (febrile patients seeking treatment), Sh,v, at the household level and included a random intercept for village in the logistic regression.(1)Sh,v∼Bin(θh,v,Nh,v)logit(θh,v)=α0+α1∗τh,v+αvwhere Nh,v is the number of febrile individuals in household h of village v and αv∼𝒩⁢(0,σα).
+We then used the cross-sectional surveys to model the probability of seeking treatment (at a public health facility, implicit from now on), $\theta$, as a function of travel time to the closest health facility, $\tau$ (Equation 1). To account for the correlation structure induced by the stratified sampling approach used in the surveys, we modeled the number of successes (febrile patients seeking treatment), $S_{h,v}$, at the household level and included a random intercept for village in the logistic regression.
+
+$$
+S_{h,v}∼Bin(\theta_{h,v},N_{h,v})logit(\theta_{h,v})=\alpha_{0}+\alpha_{1}∗\tau_{h,v}+\alpha_{v}
+$$
+
+where $N_{h,v}$ is the number of febrile individuals in household h of village v and $\alpha_{v}∼𝒩⁢(0,\sigma_{\alpha})$.
 
 We fit the models separately in the north and in the south and used the region-specific model to predict the probability of seeking treatment at all villages of the study districts based on their distance to the closest health facility. The population who seek treatment was then calculated by multiplying the village population by the probability of seeking treatment. See Appendix 1 - S2 for travel times and treatment-seeking probabilities results.
 
-## Forest data
+### Forest data
 
 For every 30 m pixel in Lao PDR, tree crown cover density for the year 2000 and year of forest loss between 2000 and 2017, were obtained from Hansen et al., 2013. These layers were produced using decision tree classifiers on Landsat remote sensing imagery (Hansen et al., 2013). Trees are defined as ‘all vegetation taller than 5 m in height’ (Hansen et al., 2013) and forest loss as ‘the removal or mortality of all tree cover in a Landsat pixel’ (Hansen et al., 2014). For example, as depicted in Figure 7, the Hansen data indicates that the tree crown cover in 2000 in pixel 1 is 54%, meaning that 54% of the 30 m pixel is covered by vegetation taller than 5 m. The Hansen data also indicates that forest loss occurred in pixel in 2013, meaning that all of the tree canopy disappeared in 2013.
 
@@ -182,15 +670,15 @@ For every 30 m pixel in Lao PDR, tree crown cover density for the year 2000 and 
 
 **Figure 7.:** The two upper plots highlight the raw data at two example pixels from the lower plot.
 
-## Deforestation variable
+#### Deforestation variable
 
 To define our primary exposure variable, for all villages in the study districts and year of the study period, we calculated the percent area within a buffer radius of 1, 10, and 30 km that experienced forest loss in the previous 1, 2, 3, 4, and 5 years (Figure 7). These distances were chosen to explore a range of spatial scales at which the forest environment may be differentially relevant for village-based populations and forest-goers. To explore potential interactions between deforestation and forest cover, we computed an alternate exposure variable, restricting to areas that both experienced forest loss and had a tree crown cover density above 68% and 87%. Those thresholds are limits of the inter-quartile range (IQR) of the distribution of tree crown cover density in any 30 m pixels within 10 km of study’s villages that experienced forest loss between 2000 and 2017. This alternate definition captures deforestation activities occurring in areas with denser forest cover.
 
-## Forest cover variable
+#### Forest cover variable
 
 We also combined the two Hansen layers to produce annual tree crown cover maps of the study districts, assuming no changes prior to the year of forest loss but setting to 0 the pixel tree crown cover density afterwards (Figure 7). For all villages in the study districts and year of the study period, we calculated the average tree crown cover density within a buffer radius of 1, 10, and 30 km and for 0, 1, 2, and 3 year lags. This is a secondary exposure, adjusted for in the primary analysis.
 
-## Environmental covariates
+### Environmental covariates
 
 Village population sizes were needed to estimate monthly malaria incidence. 2005 and 2015 population estimates for the 491 villages of study districts were obtained from the national census Lao national census, 2020. The annual population growth rate (3.7%) was used to impute population values for two villages missing 2005 estimates and for two villages missing 2015 estimates. Then, village-level population growth rates were used to estimate villages’ population per year between 2008 and 2016, assuming linear annual growth rate (median = 1.7%, IQR = [0%; 4.5%]).
 
@@ -198,25 +686,31 @@ Altitude, temperature, rainfall, and access to health care were considered as po
 
 Altitude was missing for one village and we used an online elevation finder tool (FreeMapTools) for imputation. Temperature was missing for 2.4% of the village-months over the study period, most likely because of cloud coverage of the MODIS imagery. Monthly temperature was never missing more than 2 years in a row at villages of the study’s districts and we imputed the temperature of the same month of the following year (or prior year when needed), adjusting for average district-level monthly temperature differences between the 2 consecutive years. Monthly rainfall was not missing at any of the villages.
 
-## Statistical analysis
+### Statistical analysis
 
-## Statistical model
+#### Statistical model
 
-To model malaria incidence (Equation 2), the number of positive cases Yv,t at village v over month t was modeled using a generalized additive model (GAM) (Wood, 2017). To account for overdispersion, a negative binomial distribution was used, including an additional variance parameter ν. The probability of seeking treatment θv, estimated from the treatment-seeking model, was multiplied by the village population P⁢o⁢pv,t to derive the population seeking treatment, P⁢o⁢pv,ts⁢e⁢e⁢k. This was included as an offset term in the incidence model. Spatial autocorrelation was accounted for by the bivariate thin plate spline smoothing function on coordinates, f⁢(L⁢a⁢t,L⁢o⁢n⁢g) and village random intercepts were included. A non-linear temporal trend was also included with the smoothing function on month, f⁢(t). Finally, the primary exposure, deforestation, and potential environmental confounders, including forest cover, were modeled with splines in f⁢(Xv,ti). Splines add up polynomial basis functions in between knots and allow to control for very flexible relationships with covariates and spatio-temporal trends. Regularization was used to integrate model selection into the model fitting step by adding an extra penalty to each term so that the coefficients for covariates can be penalized to zero, also meaning that splines can be kept minimal if the data does not support more flexibility. See Figure 8 for a graphical visualization of our conceptual model for this analysis.(2)Yv,t∼NegBin(E[Yv,t],ν)log⁡(E[Yv,t])=log⁡(μv,t∗Popv,tseek)=log⁡(μv,t)+log⁡(Popv,t∗θv)log⁡(μv,t)=∑iβi∗f(Xv,ti)+f(t)+f(Lat,Long)+βvwith βv∼𝒩⁢(0,σβ).
+To model malaria incidence (Equation 2), the number of positive cases $Y_{v,t}$ at village v over month t was modeled using a generalized additive model (GAM) (Wood, 2017). To account for overdispersion, a negative binomial distribution was used, including an additional variance parameter $ν$. The probability of seeking treatment $\theta_{v}$, estimated from the treatment-seeking model, was multiplied by the village population $P⁢o⁢p_{v,t}$ to derive the population seeking treatment, $P⁢o⁢p_{v,t}^{s⁢e⁢e⁢k}$. This was included as an offset term in the incidence model. Spatial autocorrelation was accounted for by the bivariate thin plate spline smoothing function on coordinates, $f⁢(L⁢a⁢t,L⁢o⁢n⁢g)$ and village random intercepts were included. A non-linear temporal trend was also included with the smoothing function on month, $f⁢(t)$. Finally, the primary exposure, deforestation, and potential environmental confounders, including forest cover, were modeled with splines in $f⁢(X_{v,t}^{i})$. Splines add up polynomial basis functions in between knots and allow to control for very flexible relationships with covariates and spatio-temporal trends. Regularization was used to integrate model selection into the model fitting step by adding an extra penalty to each term so that the coefficients for covariates can be penalized to zero, also meaning that splines can be kept minimal if the data does not support more flexibility. See Figure 8 for a graphical visualization of our conceptual model for this analysis.
+
+$$
+Y_{v,t}∼NegBin(E[Y_{v,t}],ν)log⁡(E[Y_{v,t}])=log⁡(\mu_{v,t}∗Pop_{v,t}^{seek})=log⁡(\mu_{v,t})+log⁡(Pop_{v,t}∗\theta_{v})log⁡(\mu_{v,t})=\sumi\beta^{i}∗f(X_{v,t}^{i})+f(t)+f(Lat,Long)+\beta_{v}
+$$
+
+with $\beta_{v}∼𝒩⁢(0,\sigma_{\beta})$.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/56974/elife-56974-fig8-v2.jpg)
 
 We ran 15 models separately in the north and the south, each varying the buffer radius (1, 10, and 30 km) and temporal scale for deforestation (previous 1, 2, 3, 4, and 5 years). The coefficients of the linear effect for deforestation were extracted and exponentiated to get the incidence rate ratio (IRR) associated with a 0.1% increase in the percent area that experienced forest loss around villages.
 
-## Secondary analyses
+#### Secondary analyses
 
 As secondary analyses, we ran the same models, separately by malaria species (P. falciparum and P. vivax), leveraging the large amount of data and co-endemicity in the south. We also used our alternative definitions for deforestation, restricted to areas that both experienced forest loss and had a tree crown cover density above 68% and 87%, to explore the interaction between deforestation and the amount of forest cover.
 
 To further strengthen the robustness of our analysis, we conducted a sensitivity analysis where villages’ populations in the surveillance system registries were not adjusted for the probability of seeking treatment. See Appendix 1 - S3.
 
-## Details on covariates
+#### Details on covariates
 
-To prevent collinearity in the final model, for each of the three monthly climatic variables (precipitation, day and night temperature), we first selected the one of its seven ‘short-term’ variations (in current month, in previous 1, 2, or 3 months and aggregated over current and previous 1, 2, or 3 months) that provided the best AIC fit in an univariate model, solely adjusted for the spatio-temporal structure of the data (f⁢(t), f⁢(L⁢a⁢t,L⁢o⁢n⁢g) and village random intercepts). See Appendix 1 - S6.
+To prevent collinearity in the final model, for each of the three monthly climatic variables (precipitation, day and night temperature), we first selected the one of its seven ‘short-term’ variations (in current month, in previous 1, 2, or 3 months and aggregated over current and previous 1, 2, or 3 months) that provided the best AIC fit in an univariate model, solely adjusted for the spatio-temporal structure of the data ($f⁢(t)$, $f⁢(L⁢a⁢t,L⁢o⁢n⁢g)$ and village random intercepts). See Appendix 1 - S6.
 
 Malaria incidence in the previous 1 and 2 months were included in the model. Results in Appendix 1 - S4 show this was necessary to fully address temporal autocorrelation and led to a better AIC fit. Different shape of the temporal trend f(t) were also explored (up to 25 spline knots, auto-regressive, cyclic cubic spline) but none accounted for temporal autocorrelation better.
 

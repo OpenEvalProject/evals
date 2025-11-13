@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Lack of early infection-exposure has been associated with increased allergy-related disease (ARD) susceptibility. In tropical Africa, little is known about which infections contribute to development of ARDs, and at which time. We used latent class analysis to characterise the early infection-exposure of participants in a Ugandan birth cohort and assessed ARDs in later childhood. Of 2345 live births, 2115 children (90%) had data on infections within the first year of life while 1179 (50%) had outcome data at 9 years. We identified two latent classes of children based on first-year infection-exposure. Class 1 (32% membership), characterised by higher probabilities for malaria (80%), diarrhoea (76%), and lower respiratory tract infections (LRTI) (22%), was associated with lower prevalence of wheeze, eczema, rhinitis, and Dermatophagoides skin prick test (SPT) positivity at 9 years. Based on 5-year cumulative infection experience, class 1 (31% membership), characterised by higher probabilities for helminths (92%), malaria (79%), and LRTI (45%), was associated with lower probabilities of SPT positivity at 9 years. In this Ugandan birth cohort, early childhood infection-exposure, notably to malaria, helminths, LRTI, and diarrhoea, is associated with lower prevalence of atopy and ARDs in later childhood. This work was supported by several funding sources. The Entebbe Mother and Baby Study (EMaBS) was supported by the Wellcome Trust, UK, senior fellowships for AME (grant numbers 064693, 079110, 95778) with additional support from the UK Medical Research Council. LL is supported by a PhD fellowship through the DELTAS Africa Initiative SSACAB (grant number 107754). ELW received funding from MRC Grant Reference MR/K012126/1. SAL was supported by the PANDORA-ID-NET Consortium (EDCTP Reg/Grant RIA2016E-1609). HM was supported by the Wellcome’s Institutional Strategic Support Fund (grant number 204928/Z/16/Z).
+Background:Lack of early infection-exposure has been associated with increased allergy-related disease (ARD) susceptibility. In tropical Africa, little is known about which infections contribute to development of ARDs, and at which time.Methods:We used latent class analysis to characterise the early infection-exposure of participants in a Ugandan birth cohort and assessed ARDs in later childhood.Results:Of 2345 live births, 2115 children (90%) had data on infections within the first year of life while 1179 (50%) had outcome data at 9 years. We identified two latent classes of children based on first-year infection-exposure. Class 1 (32% membership), characterised by higher probabilities for malaria (80%), diarrhoea (76%), and lower respiratory tract infections (LRTI) (22%), was associated with lower prevalence of wheeze, eczema, rhinitis, and Dermatophagoides skin prick test (SPT) positivity at 9 years. Based on 5-year cumulative infection experience, class 1 (31% membership), characterised by higher probabilities for helminths (92%), malaria (79%), and LRTI (45%), was associated with lower probabilities of SPT positivity at 9 years.Conclusions:In this Ugandan birth cohort, early childhood infection-exposure, notably to malaria, helminths, LRTI, and diarrhoea, is associated with lower prevalence of atopy and ARDs in later childhood.Funding:This work was supported by several funding sources. The Entebbe Mother and Baby Study (EMaBS) was supported by the Wellcome Trust, UK, senior fellowships for AME (grant numbers 064693, 079110, 95778) with additional support from the UK Medical Research Council. LL is supported by a PhD fellowship through the DELTAS Africa Initiative SSACAB (grant number 107754). ELW received funding from MRC Grant Reference MR/K012126/1. SAL was supported by the PANDORA-ID-NET Consortium (EDCTP Reg/Grant RIA2016E-1609). HM was supported by the Wellcome’s Institutional Strategic Support Fund (grant number 204928/Z/16/Z).
 
 ## Introduction
 
@@ -39,17 +39,17 @@ We therefore investigated the role of common early childhood infections in the d
 
 ## Materials and methods
 
-## Study design and population
+### Study design and population
 
 The EMaBS has been described previously (Elliott et al., 2007). Briefly, the EMaBS, based at Entebbe General Hospital, Uganda, originated as a trial of anthelminthic treatment in pregnancy and early childhood, in a 2 × 2 (×2) factorial design. Between 2003 and 2005, women in their second or third trimester of pregnancy were randomised to single-dose albendazole (400 mg) vs. placebo and single-dose praziquantel (40 mg/kg) vs. placebo; their children were randomised to quarterly albendazole vs. placebo from age 15 months to 5 years (Webb et al., 2011Elliott et al., 2007). Cohort participants continue under follow-up and had detailed data on ARDs collected at age 9 years. Our earlier study showed no effect of the anthelminthic intervention during pregnancy and early childhood on allergy-related outcomes at 9 years (Namara et al., 2017). The geography of the study area has been described previously (Hillier et al., 2008) the main zones of maternal residence at enrolment included Kigungu (a relatively isolated fishing village, at the tip of the Entebbe peninsula, n = 267), Entebbe (a commercial town, n = 1018), Manyago and Kabale (peri-urban, n = 687), and Katabi (comprised of peri-urban and rural areas, n = 486) (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66022/elife-66022-fig1-v1.jpg)
 
-## Ethical approval
+### Ethical approval
 
 The study was approved by ethics committees of the Uganda Virus Research Institute, London School of Hygiene and Tropical Medicine, and Uganda National Council for Science and Technology. Written informed consent and assent were obtained.
 
-## Exposure variables
+### Exposure variables
 
 The main exposures for this study were children’s most common clinical illnesses (malaria, diarrhoea, upper and lower respiratory tract infections [URTI and LRTI], intestinal helminths), and seroprevalence of herpes simplex virus (HSV), cytomegalovirus (CMV), and norovirus, in the first 5 years of life.
 
@@ -61,13 +61,13 @@ Norovirus seropositivity was determined using immunoglobulin (Ig)G responses to 
 
 HSV and CMV seropositivity were determined using IgG responses, from standard commercially available ELISAs (DiaSorin, Saluggia, Italy). All plasma samples available at 2 and 5 years were assayed. Children whose samples were positive at 2 years had their 1-year samples tested. Those with negatives samples at 2 years were further assessed at years 3 and 4 until a positive response was detected.
 
-## ARD outcomes and atopy at 9 years
+### ARD outcomes and atopy at 9 years
 
 ARDs and atopy at 9 years were the outcomes for this analysis. This is because there was a specific effort to collect data on ARDs, skin prick test (SPT) reactivity, and allergen-specific immunoglobulin E (asIgE) during the 9-year annual visit. We used the International Study on Allergy and Asthma in Children (ISAAC) questionnaire (Asher et al., 1995) to collect data on recent (last 12 months) reported wheeze, eczema (recurrent itchy rash with typical flexural distribution), and rhinitis, classified according to responses from caregivers for their children (Namara et al., 2017).
 
 Atopy was assessed by SPT and asIgE as previously reported (Lule et al., 2017; Namara et al., 2017). SPT reactivity to Dermatophagoides mix (D. farinae and D. pteronyssinus), Blomia tropicalis, German cockroach, cat, mould, grass pollen, Bermuda grass, and peanut (ALK-Abelló, Laboratory Specialities (Pty) Ltd, Randburg, South Africa) was assessed using standard methods (Heinzerling et al., 2013). A test was classified as positive if there was a papule of average size >3 mm, in the presence of saline (negative) and histamine (positive) controls. Plasma IgE to the commonest allergens in this setting (house dust mite [D. pteronyssinus] and German cockroach [Blatella germanica]) (Mpairwe et al., 2008) was measured using an in-house ELISA as previously described (Mpairwe et al., 2011; Nkurunungi et al., 2018). Because of the dynamic range of our in-house assay, it was not possible to use undiluted plasma, hence we optimised our assay to work with 20-fold diluted samples, with a lower detection limit of 15.625 ng/ml (equivalent to 312.5 ng/ml in undiluted plasma). We have previously shown that results from our ELISA were positively correlated with those from ImmunoCAP for both dust mite and cockroach (Sanya et al., 2019).
 
-## Statistical analysis
+### Statistical analysis
 
 Analyses aimed to classify participants into LCs based on infection-exposure during the first 5 years of life and to study the association between early infection-exposure and ARDs and atopy at 9 years. Since infection experience is an unobservable construct which can be inferred from multiple observed infections, we used the LC analysis (LCA) framework which has been shown to flexibly divide a population into mutually exclusive subgroups (Goodman, 1974; Lanza et al., 2007; Nylund-Gibson and Choi, 2018; Velicer et al., 1996; Ryoo et al., 2018).
 
@@ -87,7 +87,7 @@ Of 2345 live births in the EMaBS cohort, 2115 had data on illnesses during their
 
 Maternal and infant characteristics of the cohort participants, during the first 5 years of life, have been described previously (Mpairwe et al., 2014). Briefly, 52% of the children were male, 90% were of normal birth weight, 57% were second to fourth born; maternal characteristics included 55% with none/primary education, 3% with history of asthma, 3% with history of eczema, 44% with hookworm infections, 21% with Mansonella perstans, 18% with S. mansoni, and 12% with Strongyloides stercoralis (Mpairwe et al., 2014); 1214 children were seen at 9 years, 52% of whom were male and 1179 had data collected on atopy and ARDs (Lule et al., 2017). Children seen at 9 years were similar to those not seen in terms of maternal marital status, BMI and worm infection at enrolment, and child’s sex, eczema diagnosis (before age 1 year), and atopy (3 years) (Lule et al., 2017). Compared to mothers whose children did not attend the 9-year visit, mothers of children seen at 9 years were older, more likely to be Baganda (the tribe traditionally based in central Uganda), multiparous, and with higher SES at enrolment (Lule et al., 2017; Namara et al., 2017).
 
-## Prevalence of childhood infections during the first five years of life
+### Prevalence of childhood infections during the first five years of life
 
 Diarrhoea and LRTI were common in the first year of life but declined by the fifth year, malaria was most common in the second year of life and then declined, URTI were consistently common throughout the first 5 years, helminth infections increased slightly, HSV increased steadily over the 5 years while CMV and norovirus seropositivity increased to over 85% by the second year (Figure 3).
 
@@ -97,13 +97,13 @@ Considering cumulative experience of the various infections, over 95% of the coh
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66022/elife-66022-fig4-v1.jpg)
 
-## LCA models
+### LCA models
 
 We conducted a sequence of models, considering additional classes gradually up to a seven-class solution. Models were fitted separately considering infection-exposure during the first year of life (infancy) and then using cumulative experience of infections over all the first 5 years. Supplementary file 1a summarises LCA results for the two different sets of models. Based on BIC, CAIC, and ABIC, two-class solution models were favoured for both first-year and 5-year cumulative infection experience. Although the entropy, which measures certainty in classifying latent statuses, favoured seven-class and six-class solutions for the two sets of models, we chose the two-class solutions for easy interpretation in addition to being favoured by other statistics.
 
 Multiple-group LCA showed that measurement invariance by sex holds, based on the likelihood ratio difference test (p-value = 0.379 and p-value = 0.558 at year 1 and year 5, respectively) (Supplementary file 1b).
 
-## Definition of LCs
+### Definition of LCs
 
 Figure 5 shows the probability of having been diagnosed with any of the infections, conditional on membership in either of the LCs, during the first year of life. The probabilities of membership in LC 1 and LC 2 are estimated as 32% and 68%, respectively. LC 1 was characterised by higher probabilities for malaria, diarrhoea, and LRTI (80% vs. 0.6%, 76% vs. 65%, and 22% vs. 12%, respectively) compared to LC 2. Conditional probabilities for other infections were similar between the LCs.
 
@@ -115,23 +115,530 @@ Figure 6 shows the probability of having been diagnosed with any of the infectio
 
 We labelled the class with higher probabilities for various infections as LC 1 and the other as LC 2. Membership of LC 1 was 32% in year 1 and 31% in year 5 (considering cumulative infection experience) (Table 1).
 
-## Effects of covariates on LC membership
+**Table 1.**
+ Number (and proportion) of children in each latent class at year 1 and at year 5 considering cumulative infection experience.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LC 1</th>
+      <th>LC 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Number (%)</td>
+      <td>Number (%)</td>
+    </tr>
+    <tr>
+      <td>Year 1 (n = 2077)</td>
+      <td>665 (32)</td>
+      <td>1412 (68)</td>
+    </tr>
+    <tr>
+      <td>Year 5 (n = 1668)</td>
+      <td>517 (31)</td>
+      <td>1151 (69)</td>
+    </tr>
+  </tbody>
+</table>
+
+_LC is latent class. LC 1 represents the class with higher probabilities for various infections as compared to LC 2, however, the profile of infections changes at each time period._
+
+### Effects of covariates on LC membership
 
 At year 1, compared to children born in Entebbe town, those born in Kigungu fishing village were less likely to be in LC 1 [odds ratio (OR) = 0.33 (95% confidence interval (CI): 0.18, 0.62)], while those born in Katabi (peri-urban and rural areas) were more likely to be in LC 1 [OR = 2.43 (1.62, 3.65)] (Table 2).
 
+**Table 2.**
+ Odds ratio estimates for effects of covariates on membership in latent class 1 at year 1 and at year 5 considering cumulative infection experience.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th colspan="2">Year 1 exposure</th>
+      <th colspan="2">5-Year cumulative exposure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Covariate</td>
+      <td>Odds ratio</td>
+      <td>(95% CI)</td>
+      <td>Odds ratio</td>
+      <td>(95% CI)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Mother’s social economic status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Higher vs. lower</td>
+      <td>0.77</td>
+      <td>(0.58, 1.02)</td>
+      <td>0.51</td>
+      <td>(0.31, 0.82)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Household’s social economic status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Higher vs. lower</td>
+      <td>0.87</td>
+      <td>(0.66, 1.14)</td>
+      <td>0.58</td>
+      <td>(0.25, 0.92)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Maternal history of asthma or eczema</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>History present vs. absent</td>
+      <td>0.74</td>
+      <td>(0.43, 1.27)</td>
+      <td>0.50</td>
+      <td>(0.24, 1.53)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Area of residence at birth</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kigungu vs. Entebbe</td>
+      <td>0.33</td>
+      <td>(0.18, 0.62)</td>
+      <td>5.73</td>
+      <td>(3.24, 8.12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Manyago vs. Entebbe</td>
+      <td>1.20</td>
+      <td>(0.88, 1.63)</td>
+      <td>1.08</td>
+      <td>(0.88, 1.63)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Katabi vs. Entebbe</td>
+      <td>2.43</td>
+      <td>(1.62, 3.65)</td>
+      <td>2.04</td>
+      <td>(1.07, 3.54)</td>
+    </tr>
+  </tbody>
+</table>
+
+_CI is confidence interval. Bold values indicate statistically significant values at the 5% level._
+
 Considering the LCA model for 5-year cumulative infection experience, children with higher maternal SES and those with higher household SES were less likely to be in LC 1 [OR = 0.51 (0.31, 0.82) and OR = 0.58 (0.25, 0.92), respectively] (Table 2). Children born in Kigungu and Katabi were more likely to be in LC 1 [OR = 5.73 (3.24, 8.12) for Kigungu and OR = 2.04 (1.07, 3.54) for Katabi] (Table 2). Maternal history of asthma or eczema was not associated with LC membership.
 
-## Prevalence of atopy and ARD outcomes at 9 years
+### Prevalence of atopy and ARD outcomes at 9 years
 
 Prevalence of atopy and ARDs at 9 years has been reported elsewhere (Lule et al., 2017; Namara et al., 2017). Briefly, out of 1179 children for whom data on ARDs was collected at 9 years, prevalence of reported recent wheeze was 3.8%, eczema 4.9%, allergic rhinitis 4.6%, SPT positivity for at least one allergen 25%, for Dermatophagoides 18%, for Blomia 15%, for German cockroach 12%, for peanut 1.4%, for Bermuda grass 1.2%, for cat 1.1%, for pollen 0.9%, and for mould 0.3% (Lule et al., 2017). Prevalence of detectable IgE to house dust mite was 29.4%, to cockroach 32.3%, or to any of the two 44.1% (Lule et al., 2017; Namara et al., 2017).
 
-## Associations between LC membership and atopy and ARD outcomes at 9 years
+### Associations between LC membership and atopy and ARD outcomes at 9 years
 
 Based on covariate adjusted LCA of infection data collected during the first year of life, LC 1 membership was associated with lower probabilities of wheeze, eczema, rhinitis, and SPT positivity for Dermatophagoides; there was some suggestion of difference between the two LCs for SPT positivity overall and for Blomia (with SPT positivity less common for LC 1 children) but for cockroach and the IgE outcomes there was no suggestion of a difference (Table 3).
+
+**Table 3.**
+ Probability of allergy-related disease (ARD) outcomes and atopy at 9 years by latent class membership at year 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">95% CI*</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARD outcomes at 9 years</td>
+      <td>Latent class</td>
+      <td>Estimate</td>
+      <td>Lower CI</td>
+      <td>Upper CI</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>Wheeze</td>
+      <td>LC† 1</td>
+      <td>0.02</td>
+      <td>0.007</td>
+      <td>0.043</td>
+      <td>0.030</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.05</td>
+      <td>0.038</td>
+      <td>0.071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eczema</td>
+      <td>LC 1</td>
+      <td>0.03</td>
+      <td>0.013</td>
+      <td>0.056</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.06</td>
+      <td>0.047</td>
+      <td>0.084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rhinitis</td>
+      <td>LC 1</td>
+      <td>0.02</td>
+      <td>0.007</td>
+      <td>0.044</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.06</td>
+      <td>0.045</td>
+      <td>0.081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-any‡</td>
+      <td>LC 1</td>
+      <td>0.22</td>
+      <td>0.178</td>
+      <td>0.278</td>
+      <td>0.201</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.27</td>
+      <td>0.235</td>
+      <td>0.304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-Dermatophagoides</td>
+      <td>LC 1</td>
+      <td>0.14</td>
+      <td>0.103</td>
+      <td>0.188</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.20</td>
+      <td>0.171</td>
+      <td>0.232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-cockroach</td>
+      <td>LC 1</td>
+      <td>0.11</td>
+      <td>0.074</td>
+      <td>0.149</td>
+      <td>0.760</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.11</td>
+      <td>0.091</td>
+      <td>0.141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-Blomia</td>
+      <td>LC 1</td>
+      <td>0.12</td>
+      <td>0.089</td>
+      <td>0.169</td>
+      <td>0.144</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.16</td>
+      <td>0.138</td>
+      <td>0.196</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-Dermatophagoides</td>
+      <td>LC 1</td>
+      <td>0.26</td>
+      <td>0.214</td>
+      <td>0.322</td>
+      <td>0.261</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.31</td>
+      <td>0.271</td>
+      <td>0.343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-cockroach</td>
+      <td>LC 1</td>
+      <td>0.30</td>
+      <td>0.249</td>
+      <td>0.361</td>
+      <td>0.429</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.33</td>
+      <td>0.295</td>
+      <td>0.370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-any§</td>
+      <td>LC 1</td>
+      <td>0.42</td>
+      <td>0.357</td>
+      <td>0.478</td>
+      <td>0.395</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.45</td>
+      <td>0.411</td>
+      <td>0.490</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*CI is confidence interval.†LC is latent class. LC 1 represents the class with higher probabilities for various infections as compared to LC 2.‡SPT-any is skin prick test reactivity to any of Dermatophagoides mix, Blomia tropicalis, German cockroach, cat, mould, grass pollen, Bermuda grass, or peanut.§IgE-any is allergen-specific plasma IgE (asIgE) to any of house dust mite (HDM, Dermatophagoides pteronyssinus) or German cockroach._
 
 Estimates are adjusted for maternal area of residence, maternal history of asthma or eczema, and maternal and household SES at enrolment.
 
 Based on covariate adjusted LCA of cumulative infection-exposure data collected throughout the first 5 years of life, LC 1 membership was associated with lower probabilities of SPT positivity for Dermatophagoides and for any of the other allergens (any of Dermatophagoides mix, B. tropicalis, German cockroach, cat, mould, grass pollen, Bermuda grass or peanut); there was some suggestion of difference between the two LCs for eczema but for SPT positivity for Blomia, or cockroach, wheeze, rhinitis, and the IgE outcomes there was no suggestion of a difference (Table 4).
+
+**Table 4.**
+ Probability of allergy-related disease (ARD) outcomes and atopy at 9 years by latent class membership across the first 5 years.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="2">95% CI*</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ARD outcomes at 9 years</td>
+      <td>Latent class</td>
+      <td>Estimate</td>
+      <td>Lower CI</td>
+      <td>Upper CI</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td>Wheeze</td>
+      <td>LC† 1</td>
+      <td>0.02</td>
+      <td>0.009</td>
+      <td>0.065</td>
+      <td>0.272</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.05</td>
+      <td>0.032</td>
+      <td>0.066</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Eczema</td>
+      <td>LC 1</td>
+      <td>0.02</td>
+      <td>0.004</td>
+      <td>0.062</td>
+      <td>0.056</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.07</td>
+      <td>0.050</td>
+      <td>0.090</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rhinitis</td>
+      <td>LC 1</td>
+      <td>0.02</td>
+      <td>0.008</td>
+      <td>0.067</td>
+      <td>0.139</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.06</td>
+      <td>0.042</td>
+      <td>0.080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-any‡</td>
+      <td>LC 1</td>
+      <td>0.17</td>
+      <td>0.121</td>
+      <td>0.240</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.29</td>
+      <td>0.249</td>
+      <td>0.325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-Dermatophagoides</td>
+      <td>LC 1</td>
+      <td>0.11</td>
+      <td>0.069</td>
+      <td>0.169</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.21</td>
+      <td>0.180</td>
+      <td>0.248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-cockroach</td>
+      <td>LC 1</td>
+      <td>0.08</td>
+      <td>0.048</td>
+      <td>0.135</td>
+      <td>0.184</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.12</td>
+      <td>0.099</td>
+      <td>0.154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPT-Blomia</td>
+      <td>LC 1</td>
+      <td>0.11</td>
+      <td>0.070</td>
+      <td>0.169</td>
+      <td>0.096</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.17</td>
+      <td>0.143</td>
+      <td>0.206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-Dermatophagoides</td>
+      <td>LC 1</td>
+      <td>0.32</td>
+      <td>0.256</td>
+      <td>0.398</td>
+      <td>0.416</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.28</td>
+      <td>0.247</td>
+      <td>0.325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-cockroach</td>
+      <td>LC 1</td>
+      <td>0.34</td>
+      <td>0.271</td>
+      <td>0.414</td>
+      <td>0.658</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.32</td>
+      <td>0.279</td>
+      <td>0.359</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>IgE-any§</td>
+      <td>LC 1</td>
+      <td>0.48</td>
+      <td>0.403</td>
+      <td>0.555</td>
+      <td>0.316</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>LC 2</td>
+      <td>0.43</td>
+      <td>0.386</td>
+      <td>0.471</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*CI is confidence interval.†LC is latent class. LC 1 represents the class with higher probabilities for various infections as compared to LC 2.‡SPT-any is skin prick test reactivity to any of Dermatophagoides mix, Blomia tropicalis, German cockroach, cat, mould, grass pollen, Bermuda grass, or peanut.§IgE-any is allergen-specific plasma IgE (asIgE) to any of house dust mite (HDM, Dermatophagoides pteronyssinus) or German cockroach._
 
 Estimates are adjusted for maternal area of residence, maternal history of asthma or eczema, and maternal and household SES at enrolment.
 
@@ -151,6 +658,6 @@ Another intriguing result was that based on 5-year cumulative infection-exposure
 
 A limitation of our study could be in the potential influence of missing data. The LCA models employ a maximum-likelihood routine which operates under a missing at random assumption. This assumption is inherently untestable, however, we consider it reasonable since the amount of missing data for each indicator variable, during each time period, was relatively low. Another limitation is that it was not possible to account for multiple exposure to infections (under the LCA approach) due to data on different infections being collected through different approaches. Some infections (HSV, norovirus, CMV, and helminths) were only captured (once, by serology) at the scheduled annual visits, while others (malaria, diarrhoea, LRTI, and URTI) were recorded every time a participant was presented to the study clinic. Another possible limitation could be in the use of 2077 and 1668 participants for determining LC membership in infancy, and between years 1 and 5, respectively, while only 1179 participants had outcome data at 9 years. In the analysis plan, which was developed before data analysis, we specified that we would use all available data to define LCs. We felt that this was appropriate because it would describe the infection-exposure experience of the whole cohort, before going ahead to assess associations between this infection-exposure experience and the 9-year outcomes. We had detailed data on important potential confounders which we adjusted for in this analysis, however we cannot rule out the possibility of residual confounding.
 
-## Conclusion
+### Conclusion
 
 In conclusion, we show that in this tropical African birth cohort children can be classified into two LCs based on their early childhood infection experience and that exposure to common infections, mainly malaria, during the first year of life, was associated with lower proportions of ARDs in later childhood. With cumulative infection experience over all the first 5 years, exposure to infections, mainly helminths, was associated with lower probabilities of SPT positivity in later childhood.

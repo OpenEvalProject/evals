@@ -18,18 +18,18 @@
 
 ### Affiliations
 
-1. https://ror.org/04a7f6w43 Department of Neurogenetics, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-2. https://ror.org/03av75f26 Neuroproteomics Group, Department of Molecular Neurobiology, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-3. https://ror.org/021ft0n22 Translational Neuroproteomics Group, Department of Psychiatry and Psychotherapy, University Medical Center Göttingen, Georg-August-University Göttingen Germany
-4. https://ror.org/04dkp9463 University of Amsterdam, Swammerdam Institute for Life Sciences, Brain Plasticity Group Amsterdam Netherlands
-5. https://ror.org/05csn2x06 Neuroimmunology Group, Netherlands Institute for Neuroscience Amsterdam Netherlands
-6. https://ror.org/03av75f26 Electron Microscopy Unit, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
+1. Department of Neurogenetics, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:04a7f6w43](https://ror.org/04a7f6w43))
+2. Neuroproteomics Group, Department of Molecular Neurobiology, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+3. Translational Neuroproteomics Group, Department of Psychiatry and Psychotherapy, University Medical Center Göttingen, Georg-August-University Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+4. University of Amsterdam, Swammerdam Institute for Life Sciences, Brain Plasticity Group Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+5. Neuroimmunology Group, Netherlands Institute for Neuroscience Amsterdam Netherlands ([ROR:05csn2x06](https://ror.org/05csn2x06))
+6. Electron Microscopy Unit, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
 
 † Corresponding author
 
 ## Abstract
 
-Human myelin disorders are commonly studied in mouse models. Since both clades evolutionarily diverged approximately 85 million years ago, it is critical to know to what extent the myelin protein composition has remained similar. Here, we use quantitative proteomics to analyze myelin purified from human white matter and find that the relative abundance of the structural myelin proteins PLP, MBP, CNP, and SEPTIN8 correlates well with that in C57Bl/6N mice. Conversely, multiple other proteins were identified exclusively or predominantly in human or mouse myelin. This is exemplified by peripheral myelin protein 2 (PMP2), which was specific to human central nervous system myelin, while tetraspanin-2 (TSPAN2) and connexin-29 (CX29/GJC3) were confined to mouse myelin. Assessing published scRNA-seq-datasets, human and mouse oligodendrocytes display well-correlating transcriptome profiles but divergent expression of distinct genes, including Pmp2, Tspan2, and Gjc3 . A searchable web interface is accessible via www.mpinat.mpg.de/myelin . Species-dependent diversity of oligodendroglial mRNA expression and myelin protein composition can be informative when translating from mouse models to humans.
+Human myelin disorders are commonly studied in mouse models. Since both clades evolutionarily diverged approximately 85 million years ago, it is critical to know to what extent the myelin protein composition has remained similar. Here, we use quantitative proteomics to analyze myelin purified from human white matter and find that the relative abundance of the structural myelin proteins PLP, MBP, CNP, and SEPTIN8 correlates well with that in C57Bl/6N mice. Conversely, multiple other proteins were identified exclusively or predominantly in human or mouse myelin. This is exemplified by peripheral myelin protein 2 (PMP2), which was specific to human central nervous system myelin, while tetraspanin-2 (TSPAN2) and connexin-29 (CX29/GJC3) were confined to mouse myelin. Assessing published scRNA-seq-datasets, human and mouse oligodendrocytes display well-correlating transcriptome profiles but divergent expression of distinct genes, including Pmp2, Tspan2, and Gjc3. A searchable web interface is accessible via www.mpinat.mpg.de/myelin. Species-dependent diversity of oligodendroglial mRNA expression and myelin protein composition can be informative when translating from mouse models to humans.
 
 ## Introduction
 
@@ -43,37 +43,85 @@ In this study, we used quantitative mass spectrometry to systematically examine 
 
 ## Results
 
-## Proteome analysis of human CNS myelin
+### Proteome analysis of human CNS myelin
 
 To systematically identify and quantify the protein constituents of human CNS myelin, we biochemically purified a myelin-enriched lightweight membrane fraction from the subcortical normal-appearing white matter of five human subjects post mortem. By electron microscopic assessment of the myelin fraction, constituents other than multilamellar myelin sheaths were largely absent (Figure 1—figure supplement 1), confirming that other membrane fractions had been efficiently removed.
 
 We then subjected both the myelin fraction and the corresponding brain homogenate to solubilization using ASB-14 and high urea concentration, automated in-solution tryptic digest by filter-aided sample preparation (FASP), peptide fractionation by nanoUPLC, and ESI-QTOF mass spectrometry involving data-independent acquisition (DIA) of data. The utilized MSE mode facilitates simultaneous quantification and identification of all peptides entering the mass spectrometer. Proteins can thus be quantified by correlating signal intensities of peptides with those of a spike-in protein of known concentration (TOP3 method; Silva et al., 2006). When assessing myelin by MSE, we quantified 332 proteins (Figure 1—source data 1; labeled in green in Figure 1a) with a false discovery rate (FDR) of <1% and an average sequence coverage of 39.6%. When using the ultra-definition (UD)MSE mode, in which ion mobility spectrometry enables an additional separation of peptides after chromatography and before mass measurement, we identified and quantified 835 proteins with an average sequence coverage of 37.0% (Figure 1—source data 1; labeled in blue in Figure 1a). The MSE mode quantified myelin proteins with a dynamic range of over four orders of magnitude parts per million (ppm), thereby allowing the reliable quantification of all myelin constituents, including the exceptionally abundant PLP, MBP, and CNP. The UDMSE mode identified over twice as many proteins as MSE, though with a compressed dynamic range of only about three orders of magnitude ppm. Expectedly, the MSE and UDMSE datasets correlated well with a correlation coefficient of >0.8 (Figure 1b, Figure 1—figure supplement 2). Both datasets taken together, we identified 848 proteins in human CNS myelin by liquid chromatography–mass spectrometry (LC-MS) analysis. Importantly, the strategy of direct label-free quantification provides information about the relative abundance of identified proteins. When comparing the relative abundance of proteins in the myelin fraction and the corresponding homogenate, we found known myelin markers enriched in the myelin fraction (Figure 1c). Markers for other cell types or compartments were either reduced in abundance in the myelin fraction compared to brain lysate or not identified at all (Figure 1—figure supplement 3). This indicates that the fraction is suited for proteomic analysis of human myelin.
 
-## Relative abundance of CNS myelin proteins in humans
+![Figure 1.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig1-v1.jpg)
+
+**Figure 1.:** (a) Number and relative abundance of proteins identified in myelin purified from human normal-appearing white matter according to two data-independent acquisition (DIA) mass spectrometric modes (MSE, UDMSE). Note that UDMSE (blue) identifies a larger number of proteins in myelin but provides a lower dynamic range of quantification. MSE (lime green) identifies fewer proteins, but the comparatively higher dynamic range of quantification provides information about the relative abundance of the exceptionally abundant myelin proteins proteolipid protein 1 (PLP1), myelin basic protein (MBP), and cyclic nucleotide phosphodiesterase (CNP). See Figure 1—source data 1 for datasets. ppm, parts per million. (b) Scatter plot comparing the log2-transformed relative abundance of proteins identified in myelin by MSE against their abundance as identified by UDMSE. Data points highlighted in blue represent known myelin proteins, some of which are indicated. The correlation coefficient (r) was calculated for all proteins identified by MSE (gray) and known myelin proteins (blue). The regression line serves as navigational mean. Note that PLP, MBP, and CNP deviate the most from the regression line due to the limitations of UDMSE in the correct quantification of such exceptionally abundant myelin proteins. (c) Heatmap comparing the relative abundance of known myelin proteins in purified myelin compared to white matter homogenate. Mass spectrometric quantification based on five biological replicates (M1, M2, M3, M4, M5) as the average of two technical replicates each. Each horizontal line displays the fold change (FC) of a known myelin protein of which the abundance is increased (magenta) or reduced (turquoise) in human myelin compared to its average abundance in white matter lysate plotted on a log2 color scale. As to the technical quality of the proteomic data and the purity of the myelin fraction, also see Pearson’s correlation coefficients in Figure 1—figure supplement 2 and heatmap comparisons for marker proteins representing other cell types and organelles in Figure 1—figure supplement 3. (d) Pie chart showing the relative abundance of proteins identified by MSE in myelin purified from the human white matter. Relative abundance is given in percentage with relative standard deviation (% ±RSD). Note that known myelin proteins constitute approximately 82% of the total myelin protein; proteins so far not known as myelin proteins constitute about 18%.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative electron micrograph of the myelin-enriched lightweight membrane fraction purified from the normal-appearing white matter of a human subject. Myelin sheaths are identified by their typical multimembrane structure; cellular compartments other than myelin were virtually undetectable.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Clustered heatmap of Pearson’s correlation coefficients for protein abundance comparing myelin-enriched fraction and white matter homogenate by two data acquisition modes MSE in (a); UDMSE in (b). The sex of the human subjects is indicated above the heatmap (female, light gray; male, dark gray). Note that the groups ‘lysate’ (Control_L) and ‘myelin’ (Control_M) as expected cluster with a high correlation of >0.9, and that the two technical replicates cluster together adjacently. See Figure 1—source data 1 for datasets. n = 5 biological replicates analyzed as two technical replicates each.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a–h) Fold change (FC) comparing the abundance in myelin purified from human normal-appearing white matter with that in white matter homogenate according to the MSE dataset of marker proteins selected on the basis of prior knowledge for neurons (a), synapses (b), astrocytes (c), microglia (d), antioxidative proteins (e), nuclear-encoded mitochondrial proteins (f), mitochondrial-encoded proteins (g), and constituents of the extracellular matrix (h). In the heatmap, each horizontal line corresponds to the FC of the abundance of a protein in purified myelin compared to its average abundance in white matter homogenate plotted on a log2 color scale with increased (magenta) or decreased (turquoise) abundance in purified myelin. Heatmaps display five biological replicates (M1, M2, M3, M4, M5) as the average of two technical replicates each. See Figure 1—source data 1 for datasets. Note that most marker proteins for cell types or compartments other than myelin are reduced in abundance or not detected (n.d., marked with a diagonally crossed field) in myelin.
+
+### Relative abundance of CNS myelin proteins in humans
 
 We used the MSE dataset to calculate the relative abundance of myelin proteins in the human white matter (Figure 1d), considering that quantification of exceptionally abundant proteins requires a high dynamic range. The most abundant myelin proteins were the structural constituents PLP, MBP, and CNP, which accounted for 44.8, 28.4, and 4.5% of the total myelin proteins, respectively. In addition, numerous known myelin proteins were identified and quantified at lower abundance (Figure 1d). Previously known myelin proteins constituted approximately 82% of the total human myelin protein (Figure 1d), while the remaining 18% were accounted for by other proteins, including occasional contaminants from other cellular sources (Figure 1—figure supplement 3).
 
-## Comparison to the mouse myelin proteome
+### Comparison to the mouse myelin proteome
 
 We hypothesized that the protein composition of human and mouse myelin displays some degree of divergence. To compare human and mouse myelin, we first separated myelin of both species by SDS-PAGE. By silver staining, the band patterns were roughly comparable but not identical (Figure 2a), supporting the hypothesis that some differences exist. To elucidate differences at the molecular level, we compared the present human mass spectrometric data (ProteomeXchange Consortium PRIDE partner repository, dataset identifier PXD029727) with those of our recent proteomic analysis of myelin purified from the brains of C57Bl/6N mice using the same workflow and methodology (Jahn et al., 2020) (dataset identifier PXD020007). As expected, the majority of known myelin proteins were identified in myelin of both species (Figure 2b). However, a subset of known myelin proteins was identified only in either human or mouse myelin (Figure 2b), in agreement with the hypothesis that the protein composition of myelin is not identical across these species.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig2-v1.jpg)
+
+**Figure 2.:** (a) Silver-stained SDS-PAGE (0.9 μg protein load) of myelin purified from human normal-appearing white matter and C57Bl/6N mouse brains. Note that the band patterns are roughly comparable but not identical. Gel shows n = 3 biological replicates per species. (b) Venn diagram comparing 65 selected known myelin proteins identified by MSE and UDMSE in myelin purified from human white matter (blue) and C57Bl/6N mouse brains (orange) as recently established using the same methods (Jahn et al., 2020). Note that most known myelin proteins were identified in myelin of both species, while multiple myelin proteins were identified in myelin of only one species. (c, d) Scatter plots of the log2-transformed relative abundance of proteins identified in human myelin by MSE (c) or UDMSE (d) plotted against their relative abundance in mouse myelin as recently established using the same methods (Jahn et al., 2020). Correlation coefficients (r) were calculated for all proteins identified in human myelin (gray) or known myelin proteins (blue). Regression lines serve as navigational mean. (e) Heatmap comparing the relative abundance of known myelin proteins identified by MSE in human myelin with that in mouse myelin according to the same method (Jahn et al., 2020). Each horizontal line displays the fold change (FC) of a protein in five biological replicates (M1–M5) of human myelin compared to its average abundance in CNS myelin of mice plotted on a log2-color scale. Note that several proteins display higher abundance in human (blue) or mouse (orange) myelin, while others show approximately similar relative abundance (white). (f) Immunoblot analysis confirms comparatively higher abundance in human myelin of PMP2, CRYAB, CD9, and PADI2, approximately equal abundance of PLP, CNP, SEPTIN2, SEPTIN7, and SEPTIN8, and comparatively higher abundance in mouse myelin of TSPAN2, GPM6B, GJC3, ASPA, MOBP, IGSF8, SIRT2, CLDN11, CA2, MAG, and MOG, as implied by the MSE analysis. Note that immunoblot-based comparison of the relative abundance of MBP across species is not straightforward because MBP displays one dominant isoform (18.5 kDa) in human CNS myelin but three main isoforms (14.0, 17.0, and 18.5 kDa) in mouse CNS myelin due to species-dependent alternative splicing. Blots show n = 3 biological replicates per species. For immunohistochemistry detecting PMP2 in human optic nerve cross sections, see Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Immunoblot analysis of myelin purified from human normal-appearing white matter (CNS), C57Bl/6N mouse brains (CNS), and C57Bl/6N mouse sciatic nerves (peripheral nervous system [PNS]) using antibodies specific for PMP2. Blot shows two biological replicates per condition. Note that PMP2 was readily detected in human CNS myelin and mouse PNS myelin but not in mouse CNS myelin. SIRT2 was detected as a control. (b) Confocal micrograph of immunohistochemistry detecting PMP2 (green) and TUJ1 (magenta) in paraffin-embedded cross-sectioned optic nerves of a human subject. Note that PMP2 labels myelin sheaths (arrowheads), while TUJ1 labels neuron-specific beta-III tubulin, that is, axonal microtubules in this cross section. Nuclear staining (DAPI) is in blue. Shown is one biological replicate representative of three biological replicates. Scale bar, 20 µm.
 
 For example, we noted that peripheral myelin protein 2 (PMP2, also termed P2 or fatty acid binding protein [FABP8]) was identified in human CNS myelin (Figure 2b). PMP2 has long been known as a constituent of myelin in the peripheral nervous system (PNS) synthesized by Schwann cells (Greenfield et al., 1973; Uusitalo et al., 2021) but based on rodent studies was assumed to be absent from CNS myelin. Yet, PMP2 was readily detected in human CNS myelin by both immunoblotting (Figure 2—figure supplement 1a) and immunohistochemistry (Figure 2—figure supplement 1b), thus confirming its mass spectrometric identification. In contrast, PMP2 was not detected in mouse CNS myelin by immunoblot (Figure 2—figure supplement 1a). In agreement with prior work (Greenfield et al., 1973), PMP2 was readily detected in mouse PNS myelin (Figure 2—figure supplement 1a), indicating that the utilized antibodies detect PMP2 of either species. Together, this substantiates the existence of species-dependent differences in the protein composition of CNS myelin between humans and mice.
 
 Next, we plotted all proteins identified in human CNS myelin, that is, the present MSE and UDMSE datasets, against those identified in mouse myelin as recently established using the same methodology (Jahn et al., 2020) (dataset identifier PXD020007). Indeed, the datasets correlated well with correlation coefficients of >0.7 (MSE, Figure 2c; UDMSE, Figure 2d) but clearly diverged to some extent. We therefore cross-compared the abundance of individual myelin proteins in human and mouse myelin by MSE using heatmap visualization (Figure 2e). We found that major structural myelin proteins, including PLP, MBP, CNP, SEPTIN2, SEPTIN7, and SEPTIN8, displayed a similar relative abundance in myelin of both species. However, several other myelin proteins were comparatively more abundant in human myelin, as exemplified by crystallin-αB (CRYAB), CD9 (also termed tetraspanin-29 [TSPAN29]), and peptidyl arginine deiminase (PADI2), or in mouse myelin, including myelin-associated oligodendrocyte basic protein (MOBP), sirtuin-2 (SIRT2), and carbonic anhydrase 2 (CA2). Importantly, when detecting these proteins by immunoblotting in myelin of both species (Figure 2f), these results were generally consistent with the mass spectrometric comparison (Figure 2e). Yet, quantitative mass spectrometry emerged as more straightforward than immunoblotting when comparing the relative abundance of proteins across species if species-dependent differences in splice isoforms exist. This is exemplified by MBP, which – owing to species-dependent alternative splicing (Campagnoni, 1988) – displays three main isoforms (14.0, 17.0, and 18.5 kDa) in mouse CNS myelin but only one dominant isoform (18.5 kDa) in human CNS myelin, in agreement with previous observations (Waehneldt and Malotka, 1980; Ishii et al., 2009). Taken together, the protein composition of human and mouse CNS myelin is similar with respect to the relative abundance of major structural proteins but displays remarkable qualitative and quantitative differences regarding many other myelin proteins.
 
-## Integrated scRNA-seq profile of human and mouse MOL
+### Integrated scRNA-seq profile of human and mouse MOL
 
 To identify species-dependent transcriptional differences that may underlie the diversity of the myelin proteome, we utilized high-resolution mRNA-abundance profiles to assess the oligodendrocyte lineage in both humans and mice. To this aim, we retrieved previously published scRNA-seq datasets from the CNS of humans (Jäkel et al., 2019; Zhou et al., 2020; Lake et al., 2018; Habib et al., 2017; Grubman et al., 2019; Wheeler et al., 2020) and mice (Falcão et al., 2018; Wheeler et al., 2020; Marques et al., 2016; Saunders et al., 2018; Zeisel et al., 2018; Zeisel et al., 2015; Ximerakis et al., 2019) and evaluated all cells designated as oligodendrocyte progenitor cells (OPCs), newly formed oligodendrocytes (NFOs), and MOL from nondiseased subjects (Figure 3—figure supplement 1a and b, Figure 3—source data 1). Using the SCTransform pipeline within the R toolkit Seurat, it was possible to integrate cells from all available human and mouse datasets into respective single objects (Figure 3—figure supplement 1a and b). Importantly, cells from all studies distributed well across the uniform manifold approximation and projection (UMAP) plots (Figure 3—figure supplement 1a and b), implying suitability for integration and further assessment. Indeed, when highlighting marker gene expression on UMAPs, cells expressing markers for OPCs (CSPG4, PCDH15, PDGFRA, PTPRZ1) or MOL (ANLN, CNP, MBP, PLP1) clustered well in both the human and mouse integrated datasets (Figure 3—figure supplement 1c and e). Notably, however, multiple myelin-related transcripts displayed considerable expression only in human or mouse oligodendrocytes, as exemplified by TSPAN2, GJC3, and PMP2 (Figure 3—figure supplement 1f). We noted that cells expressing established NFO markers (BMP4, ENPP6, FYN, GPR17) clustered well in the mouse but not the human integrated dataset (Figure 3—figure supplement 1d), probably owing to the low number of NFO in the latter. Indeed, only 132 cells designated as NFO were comprised in the available human scRNA-seq datasets, considerably fewer compared to 10,391 NFO recovered from the mouse datasets (Figure 3—source data 1). Considering that the number of cells designated as NFO in the human datasets is probably too low for a reasonable bioinformatic comparison, we focused on MOL for a more thorough species-dependent comparison of transcriptional profiles of myelin-related genes.
 
 To this aim, we subset all cells annotated as MOL from control samples in all datasets of both species (Falcão et al., 2018; Jäkel et al., 2019; Zhou et al., 2020; Lake et al., 2018; Habib et al., 2017; Grubman et al., 2019; Wheeler et al., 2020; Marques et al., 2016; Saunders et al., 2018; Zeisel et al., 2018; Zeisel et al., 2015; Ximerakis et al., 2019; Figure 3a) for integration via SCTransform. Mouse gene symbols were translated to human gene symbols prior to data integration. Importantly, cells from both species distributed well across the UMAPs (Figure 3b and c), providing the basis for assessing the transcriptional profiles of 41,517 human and 95,966 mouse MOL. At the level of gene expression, cells expressing myelin marker transcripts (ANLN, CNP, GSN, MBP, PLLP, PLP1) distributed similarly across human and mouse MOL (Figure 3d), as did transcripts encoding myelination-related transcription factors (MYRF, SOX10) (Figure 3e). Notably, multiple myelin-related transcripts displayed exclusive or predominant expression in MOL of only one of the species, as exemplified by PMP2, PADI2, CA2, TSPAN2, and GJC3 (Figure 3f). Also, when assessed in the species-separately integrated datasets of all oligodendroglial cells, including OPC, NFO, and MOL, these genes displayed little or no expression in the respective other species (Figure 3—figure supplement 1f).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig3-v1.jpg)
+
+**Figure 3.:** (a–c) Uniform manifold approximation and projection (UMAP) plot of the scRNA-seq profile of MOL integrated from previously established human (b) and mouse (c) datasets. In (a), cells contributed by distinct studies are highlighted in different colors; the corresponding references are given. (d, e) UMAP feature plots highlighting expression of selected MOL marker genes (d) and transcription factors (e) in the integrated object comprising MOL of both humans (blue) and mice (orange). (f) UMAP feature plots and violin plots exemplify genes that display preferential expression in MOL of humans (PMP2, PADI2) or mice (GJC3, TSPAN2, CA2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a, b) Uniform manifold approximation and projection (UMAP) plots of the scRNA-seq profiles of oligodendrocyte lineage cells integrated separately for humans (a) and mice (b) from previously published datasets. Cells contributed by distinct studies are highlighted in different colors; the corresponding references are given. (c–f) UMAP plots highlighting expression of marker genes for oligodendrocyte precursor cells (OPCs; c), newly formed oligodendrocytes (NFOs; d), and mature oligodendrocytes (MOL; e) in the integrated human (blue) and mouse (orange) datasets. Note that some genes display preferential expression in human (PMP2, CD9, CRYAB) or mouse (GJC3, TSPAN2, CA2) oligodendrocytes (f).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Scatter plot comparing the van der Waerden (vdW) score-transformed average expression of 3000 integration features (i.e., genes) between human and mouse MOLs. Data points of 37 known myelin-related transcripts that encode proteins represented in the myelin proteome are highlighted in blue (25 of which are annotated with gene name); 3 known myelin-related transcripts of which the protein product is not present in the myelin proteome are highlighted in orange; 4 myelination-related transcription factors are highlighted in green; other transcripts are displayed in gray. Pearson’s correlation coefficient is given for known myelin-related transcripts (as highlighted in blue) or all transcripts (in gray). Regression line represents fit of data for navigational purpose.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** van der Waerden (vdW) scores calculated from the mean abundance of integration features (n = 3000) in integrated scRNA-seq datasets of human (a, b) and mouse (c, d) MOL, and in the central nervous system (CNS) myelin proteome in the respective species as acquired using the MSE (a, c) and UDMSE (b, d) modes. vdW-normalized data were subjected to Pearson’s correlation analysis and visualized as scatter plot. Known myelin proteins are highlighted, and the distribution of normalized protein and RNA profiles is illustrated by density plots along the axes.
+
 To compare the transcriptome profiles between human and mouse MOL without the influence of sequencing batch effects, we first applied van der Waerden (vdW)-ordered quantile transformation to the mean mRNA abundance values of 3000 integration features (i.e., genes) in all cells designated as MOL in the utilized datasets. We then plotted the average relative transcript abundance in human versus mouse MOL (Figure 3—figure supplement 2). When comparing all 3000 integration features, the averaged vdW-normalized mRNA-abundance profiles correlated reasonably well with a coefficient of 0.59 (gray data points in Figure 3—figure supplement 2). However, a comparatively higher correlation coefficient of 0.84 was found when comparing only known myelin-related transcripts (n = 37 transcripts; highlighted as blue data points in Figure 3—figure supplement 2). This implies that the transcriptional profiles of known myelin-related transcripts are more similar between humans and mice than those of the other transcripts expressed in MOL. In particular, the abundance of several transcripts encoding structural myelin proteins, including PLP1, MBP, and CNP, was essentially equal between human and mouse MOL. In similarity, the abundance of transcripts for myelin-related transcription factors (MYRF, OLIG1, OLIG2, SOX10) was also roughly similar (labeled in green in Figure 3—figure supplement 2). We noted that the most abundant transcripts in MOL also included genes of which the protein products were not mass spectrometrically identified in myelin – and thus not comprised in the myelin proteome. As an example, the abundance of the Mal-transcript encoding myelin and lymphocyte protein (MAL) correlates well between human and mouse MOL (labeled in orange Figure 3—figure supplement 2). MAL is a known myelin protein (Schaeren-Wiemers et al., 2004), which, however, is not identified by mass spectrometry because of its nonsuitable tryptic digest pattern. Taken together, the integrated scRNA-seq profiles of MOL generally correlated well between humans and mice, particularly with respect to known myelin-related mRNAs. However, several transcripts displayed a qualitatively or quantitatively divergent abundance when compared between the species (Figure 3f, Figure 3—figure supplement 1f, Figure 3—figure supplement 2).
 
 Next, we compared our human (Figure 1—source data 1) and mouse myelin (Jahn et al., 2020) proteome datasets (by MSE or UDMSE) with the averaged vdW-normalized mRNA abundance profile of MOL in the respective same species. We calculated correlation coefficients of <0.5 (Figure 3—figure supplement 3). The degree of correlation between the myelin proteome and the MOL transcriptome within the same species is thus considerably lower than that between the myelin proteome (Figure 2c and d) or the MOL transcriptome (Figure 3—figure supplement 2), respectively, across the two species.
 
-## Subpopulation analysis of integrated human and mouse MOL scRNA-seq profile
+### Subpopulation analysis of integrated human and mouse MOL scRNA-seq profile
 
 Previously, multiple transcriptome studies have identified distinct subpopulations of MOL in both humans and mice (Falcão et al., 2018; Jäkel et al., 2019; Marques et al., 2016), which were correlated according to the expression of marker genes. Here, we tested whether similar subpopulations also manifest if evaluating the merged and integrated scRNAseq profiles, thereby not only allowing cross-species comparison but also increasing the dimensionality of assessed MOL per species. Indeed, k-nearest neighbor (KNN) clustering identified five potential subpopulations of MOL (labeled as clusters 0, 1, 2, 3, and 4 in Figure 4a–c). Notably, all subpopulations displayed approximately similar expression levels of marker genes encoding structural myelin proteins (PLP1, MBP, CNP, CLDN11, MAG) (Figure 4b). However, the subpopulations were defined by varying degrees of expression of other transcripts, including the myelin-related CD9 and OPALIN (cluster 0), APOD, KLK6, and S100B (cluster 1), APOE and CST3 (cluster 2), CA2 and PTGS (cluster 3), and SIRT2 and NFASC (cluster 4) (Figure 4b). Considering the larger number of evaluated cells compared to the prior individual studies on which the present assessment is based, these findings support the previously identified subpopulations of MOL (Jäkel et al., 2019; Marques et al., 2016). Based on Gene Ontology (GO) term enrichment analysis of biological processes (Figure 4—figure supplement 1), one may speculate that MOL in clusters 2–4 are associated with GO terms grouped as protein synthesis, electron transport, and immune activation, respectively. However, their functional specialization and relevance remain to be shown. Less speculatively, both human and mouse MOL comprise all five subpopulations to an approximately similar extent (Figure 4c), implying that none of these MOL subpopulations is restricted to either one of these species.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig4-v1.jpg)
+
+**Figure 4.:** (a) Uniform manifold approximation and projection (UMAP) plot showing five subpopulations of MOL identified upon integrating all human and mouse scRNA-seq datasets. (b) Bubble plot showing the top five subpopulation marker genes. All cells in all clusters also express high levels of known myelin-related marker transcripts (CNP, PLP1, MBP, MAG, CLDN11). (c) Relative proportion of mature oligodendrocyte subpopulations in humans and mice. Note that the MOLs of both species contribute to all subpopulations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77019/elife-77019-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** GO terms of biological processes (small circles) were grouped as topics (large circles). Colors represent association with mature oligodendrocyte (MOL) clusters displayed in Figure 4. False discovery rate (FDR) < 0.05.
 
 ## Discussion
 
@@ -95,27 +143,131 @@ In conclusion, both oligodendroglial mRNA abundance profiles and the CNS myelin 
 
 ## Materials and methods
 
-## Human samples
+### Human samples
 
 Postmortem brain tissue was provided by the Netherlands Brain Bank. Donors gave informed consent to perform autopsy and for the use of clinical and pathological information by researchers, approved by the medical ethics committee of the VU Medical Center (Amsterdam, The Netherlands) decided by the Tissue Advisory Board with project number 1191. The diagnoses were confirmed by a neuropathologist.
 
 The following subjects were used for myelin purification and proteome analysis of lysate (L) and purified myelin (M) as well as for immunoblotting:
 
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Sex</th>
+      <th>Age (years)</th>
+      <th>Diagnosis</th>
+      <th>PMD (hr)</th>
+      <th>Brain region</th>
+      <th>Sample name in mass spectrometry</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1995-106</td>
+      <td>Male</td>
+      <td>74</td>
+      <td>Non-demented control</td>
+      <td>08:00</td>
+      <td>Subcortical white matter</td>
+      <td>Control_L1/2Control_M1/2</td>
+    </tr>
+    <tr>
+      <td>1996-052</td>
+      <td>Male</td>
+      <td>73</td>
+      <td>Non-demented control</td>
+      <td>09:10</td>
+      <td>Subcortical white matter</td>
+      <td>Control_L3/4Control_M3/4</td>
+    </tr>
+    <tr>
+      <td>2002-024</td>
+      <td>Female</td>
+      <td>75</td>
+      <td>Non-demented control</td>
+      <td>05:30</td>
+      <td>Subcortical white matter</td>
+      <td>Control_L5/6Control_M5/6</td>
+    </tr>
+    <tr>
+      <td>2010-015</td>
+      <td>Female</td>
+      <td>73</td>
+      <td>Non-demented control</td>
+      <td>07:45</td>
+      <td>Subcortical white matter</td>
+      <td>Control_L7/8Control_M7/8</td>
+    </tr>
+    <tr>
+      <td>2017-124</td>
+      <td>Female</td>
+      <td>55</td>
+      <td>Non-demented control</td>
+      <td>07:30</td>
+      <td>Subcortical white matter</td>
+      <td>Control_L9/10Control_M9/10</td>
+    </tr>
+  </tbody>
+</table>
+
 The following subjects were used for immunohistochemical analysis:
 
-## Animal welfare
+<table>
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Sex</th>
+      <th>Age (years)</th>
+      <th>Diagnosis</th>
+      <th>PMD (hr)</th>
+      <th>Brain region</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2019-026</td>
+      <td>Male</td>
+      <td>55</td>
+      <td>Parkinson Disease</td>
+      <td>05:55</td>
+      <td>Optic nerve</td>
+      <td>No pathology of the optic nerve</td>
+    </tr>
+    <tr>
+      <td>2019-077</td>
+      <td>Female</td>
+      <td>91</td>
+      <td>Non-demented control</td>
+      <td>09:30</td>
+      <td>Optic nerve</td>
+      <td>Immunolabeled section shown in Figure 2—figure supplement 1 originates from this subject</td>
+    </tr>
+    <tr>
+      <td>2019-106</td>
+      <td>Female</td>
+      <td>80</td>
+      <td>Non-demented control</td>
+      <td>06:50</td>
+      <td>Optic nerve</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal welfare
 
 For the procedure of sacrificing vertebrates for preparation of tissue, all regulations given in the German animal welfare law (TierSchG §4) are followed. Since sacrificing of vertebrates is not an experiment on animals according to §7 Abs. 2 Satz 3 TierSchG, no specific ethical review and approval or notification is required for this work. All procedures were supervised by the animal welfare officer and the animal welfare committee for the Max Planck Institute for Multidisciplinary Sciences, Göttingen, Germany. The animal facility at the Max Planck Institute for Multidisciplinary Sciences is registered according to §11 Abs. 1 TierSchG.
 
-## Myelin purification
+### Myelin purification
 
 A lightweight membrane fraction enriched for myelin was purified from pieces of normal-appearing white matter of human subjects post mortem as specified above, brains of C57Bl/6N mice, and sciatic nerves of C57Bl/6N mice using an established protocol involving two steps of sucrose density gradient centrifugation and osmotic shocks (Erwig et al., 2019a). Myelin accumulates at the interface between 0.32 M and 0.85 M sucrose.
 
-## Electron microscopy of purified myelin
+### Electron microscopy of purified myelin
 
 For assessment of the human myelin fraction by electron microscopy, myelin purified from the white matter of subjects 1995-106 and 1996-052 was used. 75 μl of each myelin sample was mixed with 75 μl 2× concentrated fixative composed of 5% glutaraldehyde, 8% formaldehyde, and 1.0% NaCl in 100 mM phosphate buffer pH 7.3. Then, the fixed fraction was spun down and resuspended in 2% agarose Super LM (Roth, Karlsruhe, Germany). After solidification, the pellet was cut into two halves and embedded in Epon after postfixation in 2% OsO4. Ultrathin sections across the pellet were prepared using a UC7 ultramicrotome (Leica Microsystems, Vienna, Austria) equipped with a 35° diamond knife (Diatome, Biel, Switzerland). Images were taken with a LEO912 transmission electron microscope (Carl Zeiss Microscopy, Oberkochen, Germany) using a 2k on-axis CCD camera (TRS, Moorenweis, Germany).
 
-## Label-free quantification of myelin proteins
+### Label-free quantification of myelin proteins
 
 In-solution digestion of myelin proteins according to an automated FASP protocol (Erwig et al., 2019a) and LC-MS-analysis by different MSE-type DIA mass spectrometry approaches was performed as recently established for mouse PNS (Siems et al., 2020) and CNS (Jahn et al., 2020) myelin. Briefly, protein fractions corresponding to 10 μg myelin protein were dissolved in lysis buffer (1% ASB-14, 7 M urea, 2 M thiourea, 10 mM DTT, 0.1 M Tris pH 8.5) and processed according to a CHAPS-based FASP protocol in centrifugal filter units (30 kDa MWCO, Merck Millipore). After removal of the detergents, protein alkylation with iodoacetamide, and buffer exchange to digestion buffer (50 mM ammonium bicarbonate [ABC], 10% acetonitrile), proteins were digested overnight at 37°C with 400 ng trypsin. Tryptic peptides were recovered by centrifugation and extracted with 40 µl of 50 mM ABC and 40 µl of 1% trifluoroacetic acid (TFA), respectively. Combined flow-throughs were directly subjected to LC-MS analysis. For quantification according to the TOP3 approach (Silva et al., 2006), aliquots were spiked with 10 fmol/μl of Hi3 EColi standard (Waters Corporation), containing a set of quantified synthetic peptides derived from the Escherichia coli chaperone protein ClpB.
 
@@ -123,38 +275,38 @@ Nanoscale reversed-phase UPLC separation of tryptic peptides was performed with 
 
 For post-identification analysis, including TOP3 quantification of proteins, ISOQuant (Distler et al., 2014; software freely available at www.isoquant.net/) was used as described previously (Jahn et al., 2020; Siems et al., 2020). Only proteins represented by at least two peptides (minimum length six amino acids, score ≥5.5, identified in at least two runs) were quantified as ppm, that is, the relative amount (w/w) of each protein with respect to the sum over all detected proteins. FDR for both peptides and proteins was set to 1% threshold and at least one unique peptide was required. Human myelin fractions and the corresponding white matter homogenates were assessed as five biological replicates (n = 5) each. The proteome analysis was repeated as an independent replicate experiment from the same protein fractions, resulting in 10 LC-MS runs per condition. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with dataset identifier PXD029727.
 
-## Visualization of proteomic data
+### Visualization of proteomic data
 
 Proteomic data were visualized and analyzed as in Jahn et al., 2020 and Siems et al., 2020. In more detail, heatmaps and scatter plots were prepared in Microsoft Excel 2016 and GraphPad Prism 9. The area-proportional Venn diagram was prepared using BioVenn (Hulsen et al., 2008).
 
-## Gel electrophoresis and silver staining of gels
+### Gel electrophoresis and silver staining of gels
 
 Protein concentrations were determined using the DC Protein Assay kit (Bio-Rad, Hercules, CA). Samples were diluted in 1× SDS sample buffer with dithiothreitol and separated on a 12% SDS-PAGE for 1 hr at 200 V using the Bio-Rad system; gels were fixated overnight in 10% (v/v) acetic acid/40% (v/v) ethanol, and then washed in 30% ethanol (2 × 20 min) and ddH2O (1 × 20 min). For sensitization, gels were incubated 1 min in 0.012% (v/v) Na2S2O3 and subsequently washed with ddH2O (3 × 20 s). For silver staining, gels were impregnated for 20 min in 0.2% (w/v) AgNO3/0.04% formaldehyde, washed with ddH2O (3 × 20 s), and developed in 3% (w/v) Na2CO3/0.02% (w/v) formaldehyde. The reaction was stopped by exchanging the solution with 5% (v/v) acetic acid. Gels were kept in ddH2O until documentation.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was performed as described (Patzig et al., 2016). Primary antibodies were specific for connexin-29 (GJC3, Invitrogen 34-4200, 1:500), TSPAN2 (ProteinTech #20463-1-AP, 1:500), ASPA (ProteinTech #13244-1-AP, 1:500), tetraspanin-28 (CD81, BD Biosciences-US #559517, 1:500), SIRT2 (Abcam #ab67299, 1:500), immunoglobulin superfamily member 8 (IGSF8, Thermo Scientific #PA5-71693, 1:500), CA2 (kind gift from Said Ghandour, 1:1000), MOBP (LS-Bio #LS-C164262/43727, 1:500), MBP (Serotec #PO2687, 1:500), CNP (Sigma #SAB1405637, 1:1000), PLP/DM20, A431 (kind gift from Martin Jung, 1:5000), myelin-associated glycoprotein (MAG, clone 513, Chemicon #MAB1567, 1:500), myelin oligodendrocyte glycoprotein (MOG, clone 8-18C5, kind gift from Christopher Linington 1:500), claudin-11 (CLDN11, Abcam #ab53041, 1:500), PADI2 (ProteinTech #12110-1-AP, 1:1000), tetraspanin-29 (CD9, Abcam #ab92726, 1:500), alpha-crystallin B chain (CRYAB, ProteinTech #15808-1-AP, 1:500), and PMP2 (ProteinTech #12717-1-AP, 1:500). Appropriate secondary anti-mouse or anti-rabbit antibodies conjugated to HRP were from Dianova (HRP goat-anti-mouse, #115-035-003, 1:5000; HRP goat-anti-rabbit, #111-035-003, 1:5000; HRP goat-anti-rat, #112-035-167, 1:5000). Immunoblots were developed using the Enhanced Chemiluminescence Detection kit (Western Lightning Plus, Perkin Elmer, Waltham, MA) and the Super Signal West Femto Maximum Sensitivity Substrate (Thermo Fisher Scientific, Rockford, IL). Signal was detected using the Intas ChemoCam system (INTAS Science Imaging Instruments GmbH, Göttingen, Germany). Original immunoblots are provided in Figure 2—source data 1.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Paraffinized human optic nerves were cut into 5 μm sections using the microtome RM2155 (Leica, Wetzlar, Germany) and placed on 1-mm-thick microscope slides (Marienfeld, #1000000, Lauda/Königshofen, Germany). Immunolabeling of the paraffinized cross sections was performed as follows: sections were incubated for 10 min at 60°C, deparaffinized in a series of incubations in xylol, xylol, xylol/isopropanol (1:1 ratio) for 10 min each, incubated in a series of steps in decreasing ethanol concentration (100, 90, 70, and 50%) for 5 min each, and finally washed in ddH2O for 5 min. Afterward, the sections were incubated for 5 min in 0.01 M citrate buffer (pH 6.0). Then, the sections with citrate buffer were microwaved at 600 W for 10 min. Finally, the slides were left to cool down, rinsed 1 × 5 min with 0.05 M Tris buffer (pH 7.6) containing 2% milk powder, and then blocked with 10% goat serum (Gibco/Thermo Fisher Scientific #16210064, Waltham, MA) diluted 1:4 in PBS (pH 7.4)/1% BSA. Primary antibodies were diluted in PBS/BSA and applied overnight at 4°C. Samples were washed 3 × 5 min in Tris buffer with 2% milk powder (Frema Instant Magermilchpulver, granoVita, Radolfzell, Germany). Secondary antibodies were applied in incubation buffer (1:500 in PBS/BSA) with 4′,6-diamidino-2-phenylindole (DAPI, Thermo Fisher Scientific, 1:2000). Slides were then rinsed 1 × 5 min with Tris buffer without milk powder and mounted using Aqua-Poly/Mount (Polysciences, Eppelheim, Germany). Antibodies were specific for PMP2 (ProteinTech #12717-1-AP; 1:200) and human β-Tubulin 3 (TUJ1; BioLegend #MMS-435P; 1:500). Secondary antibodies were donkey anti-mouse Alexa 555 (Invitrogen #A31570, 1:1000) and goat anti-rabbit DyLight 633 (Invitrogen #35562, 1:500). The labeled sections were imaged using the confocal microscope LSM880 (Zeiss, Oberkochen, Germany). The signal was collected with the objective Plan-Apochromat 40×/1.4 Oil DIC M27 using oil (Immersol 518F, Zeiss) and an additional zoom of 1.5. To observe the samples with the light source Colibri (Zeiss), an FS90 filter was used. DAPI was excited at 405, and signal was collected between 431 nm and 495 nm. Alexa 555 was excited with a DPSS 561-10 laser at an excitation of 561 nm, and signal was collected between 571 nm and 615 nm. Then, DyLight 633 was excited with a HeNe633 laser at an excitation of 633 nm and an emission between 647 nm and 687 nm. Finally, the MBS 488/561/633 beam splitter was used to detect Alexa 555 and DyLight 633 and MBS-405 for DAPI, respectively. Images were processed with ImageJ software.
 
-## Retrieval of publicly available scRNA-seq datasets
+### Retrieval of publicly available scRNA-seq datasets
 
 Eight mouse and six human scRNA-seq datasets published between 2015 and early 2020 were collected for transcriptome analysis. Datasets were selected based on the number of cells designated as oligodendrocytes, and the reported health condition of specimen. Dataset expression matrices and, if available, corresponding metadata were recovered for mouse datasets GSE60361 (Zeisel et al., 2015), GSE775330 (Marques et al., 2016), GSE113973 (Falcão et al., 2018), GSE116470 (Saunders et al., 2018), SRP135960 (Zeisel et al., 2018), GSE129788 (Ximerakis et al., 2019), GSE130119 (Wheeler et al., 2020), and GSE140511 (Zhou et al., 2020). Human scRNA datasets were retrieved for the Single Cell Portal DroNC-Seq human archived brain (Habib et al., 2017), GSE97930 (Lake et al., 2018), GSE138852 (Grubman et al., 2019), GSE118257 (Jäkel et al., 2019), GSE130119 (Wheeler et al., 2020), and syn21125841 (Zhou et al., 2020). For quality control, each of the retrieved datasets was analyzed using the Seurat R package (version 3.1.4; Butler et al., 2018) in an analysis pipeline, including validating sequencing quality, filtering for outlier cells (as specified in Figure 3—source data 1), log-normalizing the expression matrix with a scale factor 10,000, high variable gene selection and data scaling, linear dimensionality reduction using principal component analysis (PCA), and neighboring embedding using UMAP to ensure accurate cell type annotation and detect any potential batch effect. Marker genes used for annotating the oligodendrocyte lineage were CSPG4, PCDH15, PDGFRA, PTPRZ1, and VCAN for OPCs, BCAS1, ENPP6, and GPR17 for NFO, and CA2, CLDN11, CNP, CMTM5, MAG, MBP, MOBP, PLP1, and SIRT2 for MOL. Specific parameters applied to individual datasets and the number of recovered cells are listed in Figure 3—source data 1.
 
-## Merging and integration of scRNA-seq profiles of human and mouse MOL
+### Merging and integration of scRNA-seq profiles of human and mouse MOL
 
 Cells designated as MOL were subset from each dataset and focused for downstream analysis. Before merging human and mouse datasets, 16255 mouse gene symbols were translated into human gene symbols using a reference gene list from Mouse Genome Informatics (The Jackson Laboratory, version 6.16; retrieved from http://www.informatics.jax.org/downloads/reports/HOM_MouseHumanSequence.rpt on 28 October 2020). 32952 additional mouse gene symbols were translated into human gene symbols by capitalizing the lettering. Gene symbol synchronized human and mouse MOL profiles were first merged and proceeded with the general analysis pipeline for identifying possible batch effects. PCA was performed using the top 2000 most variable genes, and UMAP analysis was performed with the top 20 principal components (PCs); the results implied that the different studies introduced the largest variability for data separation. For integrating all selected human and mouse datasets, the SCTransform (Hafemeister and Satija, 2019) pipeline implemented in Seurat was applied. Each dataset underwent SCTransform normalization, and all datasets were integrated using 3000 identified integration features. PCA was conducted downstream and UMAP calculation was performed using the first 20 PCs. Cluster analysis was based on the KNN algorithm calculated with resolution 0.1, and clusters of differentially expressed genes were calculated using the model-based analysis of single-cell transcriptomics (MAST) algorithm (Figure 4—source data 1).
 
-## Human and mouse transcriptome correlation analysis
+### Human and mouse transcriptome correlation analysis
 
 Transcriptome correlation analysis of human and mouse MOL scRNA-seq profiles was performed using the vdW score-transformed average expression of integration features (n = 3000) in each dataset. Subsequently, human and mouse gene average vdW scores were visualized using scatter plot (Figure 3—figure supplement 2); Pearson’s correlation was calculated for annotated known myelin genes and all genes, respectively.
 
-## GO enrichment analysis
+### GO enrichment analysis
 
 The resulting cluster marker gene lists were input for GO enrichment analysis to detect potential regulated biological processes terms using the gprofiler2 R package (version 0.2.0; Raudvere et al., 2019). GO terms with an FDR-corrected p<0.05 were considered as enriched and visualized using EnrichmentMap and AutoAnnotate plugins in Cytoscape (version 3.8.2; Merico et al., 2010; Kucera et al., 2016; Shannon et al., 2003).
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Pie charts, heatmaps, and scatter plots were prepared in Microsoft Excel 2016 and GraphPad Prism 9. For the scatter plots, Pearson’s correlation and regression line were calculated using GraphPad Prism 9. Relative sample proteomic profile distances were evaluated using Pearson’s correlation based on log2-transformed ppm values. scRNA-seq cluster marker analysis was conducted using MAST algorithm. Data analysis and visualization were performed using GraphPad Prism 9 and R software.

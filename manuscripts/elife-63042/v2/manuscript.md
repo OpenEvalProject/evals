@@ -28,6 +28,14 @@ Nonsense-mediated mRNA decay (NMD) is a surveillance pathway that degrades aberr
 
 RUVBL1 and RUVBL2 are two closely related AAA-type ATPases that assemble as hetero-hexameric structures made of alternating subunits and comprising six ADP/ATP-binding domains (Figure 1A). RUVBL1 and RUVBL2 contain a unique domain II (DII) that protrudes from one side of the hexamer and defines two distinct faces of the ring, named ATPase-face and DII-face hereafter (Cheung et al., 2010; Ewens et al., 2016; Gorynia et al., 2011; Lakomek et al., 2015; López-Perrote et al., 2012). DII domains comprise an oligonucleotide/oligosaccharide-binding (OB) fold domain (DII external) that connects to the hexameric ring by a flexible region containing a ß-stalk and a helical bundle (DII internal). Each RUVBL1 and RUVBL2 subunit contains a nucleotide-binding pocket and the adjacent subunit in the hexamer provides the arginine finger motif required for hydrolysis. Several structures of RUVBL1-RUVBL2 complexes reveal that nucleotides are present in the complex even if they were not supplemented during purification (Gorynia et al., 2011; Lakomek et al., 2015; Matias et al., 2006; Muñoz-Hernández et al., 2019).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top panels: Schematic representation of RUVBL1 (blue) and RUVBL2 (pink) domains and catalytic motifs. Bottom panel: structure of the human RUVBL1-RUVBL2 hetero-hexameric ring with protruding domain II (DII), generated from atomic structures of RUVBL1 (PDB 2C9O) and RUVBL2 (PDB 6H7X) (Matias et al., 2006; Silva et al., 2018). Top and bottom views are shown with the color code from top panel. The ATPase-face and DII-face of the ring as well as the internal and external regions of DIIs are indicated. (B) Pull-down experiment testing the interaction of purified His-RUVBL1-RUVBL2 with DHX34, using His-tag affinity purification. Proteins bound to affinity beads were eluted and analyzed by SDS-PAGE and stained using Oriole Fluorescent Gel Stain (Bio-Rad). DHX34 was found to elute specifically only when His-RUVBL1-RUVBL2 was present. (C, D) Immunoprecipitation (IP) of transiently transfected HEK293T cells with T7-DHX34 from HEK293T cells was performed in the presence of RNase A. Inputs (0.5%) and anti-FLAG-IPs (20%) were subjected to western analysis using the indicated antibodies. Proteins bound to T7 tag affinity beads were eluted and analyzed by SDS-PAGE and western blot using antibodies against the T7 tag in DHX34 and RUVBL1 (C) or RUVBL2 (D). For Inputs (0.5%) and anti-T7 IP (20%) are shown. (E) IP experiment testing the interaction of FLAG-RUVBL1 and HA-RUVBL2 co-expressed in HEK293T cells with T7-DHX34. Inputs (0.5%) and anti-FLAG-IPs (20%) were analyzed by SDS-PAGE and western blot using antibodies against DHX34, RUVBL1 and RUVBL2. These antibodies detected both transfected and endogenous proteins and are indicated on the left site of the panel.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative 2D averages of purified His-RUVBL1-RUVBL2 analyzed by cryo-EM. Scale bar, 10 nm. Features of the RUVBL1-RUVBL2 complex are indicated. (B) Pull-down experiment testing the interaction of purified His-RUVBL1-RUVBL2 with UPF1115-914, UPF2, UPF3b, and EJC using His-tag affinity purification. Proteins bound to affinity beads were eluted and analyzed by SDS-PAGE and stained using Quick Coomassie (Generon). None of these proteins interacted with RUVBL1-RUVBL2. Some elution detected for UPF2 (lane 14) corresponded to background binding by the beads since a similar elution was observed in the control experiment lacking His-RUVBL1-RUVBL2 (lane 10). (C) Immunoprecipitation assay testing the interaction of UPF1 and UPF2 with RUVBL1 and RUVBL2 using overexpressed FLAG-UPF1 and FLAG-UPF2 in cell extracts. Pulldowns show no increased signal for RUVBL1 and RUVBL2 compared to the negative control. (D) Immunoprecipitation experiment testing the interaction of endogenous UPF1 and UPF2 with RUVBL1 and RUVBL2 from cell extracts, using antibodies against endogenous UPF1 and UPF2. This experiment suggests that RUVBL1 and RUVBL2 do not interact with UPF1 or UPF2. Together with the lack of direct interaction detected in ‘C’ and when using purified proteins in ‘B’, these experiments were interpreted as indicating a lack of interaction between RUVBL1-RUVBL2 and either UPF1 or UPF2. (E) 4–15% SDS-PAGE showing a Ni-NTA agarose resin pull-down experiment of His-RUVBL1-RUVBL2 incubated with FLAG-SMG1-SMG8-SMG9 (FLAG-SMG1-8-9), stained with Oriole Fluorescent Gel Stain (Bio-Rad). Lanes 1 and 3 correspond to the input and elution of an experiment containing only FLAG-SMG1-SMG8-SMG9. Lanes 2 and 4 correspond to the input and elution of an experiment containing FLAG-SMG1-SMG8-SMG9 incubated with His-RUVBL1-RUVBL2. (F) SDS-PAGE of pull-down experiment as in (B) but using the FLAG tag in SMG1 as bait. Lanes 1 and 3 correspond to the input and elution of an experiment containing FLAG-SMG1-SMG8-SMG9 and His-RUVBL1-RUVBL2. Lanes 2 and 4 corresponds to input and elution of an experiment containing only His-RUVBL1-RUVBL2. (G) 4–15% SDS-PAGE and Quick Coomassie (Generon) staining of purified DHX34 constructs used: wild-type (wt) DHX34 and the DHX34 mutant lacking the CTD domain (ΔCTD) used in Figure 4—figure supplement 1D.
+
 RUVBL1 and RUVBL2 are essential constituents of several large complexes. In various chromatin-remodeling complexes such as INO80 and SRCAP, these ATPases form a scaffold that organizes the architecture of other subunits in the complex (Aramayo et al., 2018; Eustermann et al., 2018; Feng et al., 2018). RUVBL1 and RUVBL2 also interact with RPAP3 and PIH1D1 proteins to form the R2TP complex, a HSP90 co-chaperone involved in the assembly and maturation of some large complexes including RNA polymerase II and members of the Phosphatidylinositol 3-kinase-related kinase (PIKK) family such as ATR, ATM, SMG1, and mTOR (Houry et al., 2018; Martino et al., 2018; Maurizy et al., 2018; Muñoz-Hernández et al., 2019; Rivera-Calzada et al., 2017). In all these complexes, the DII-face of the RUVBL1-RUVBL2 ring is used as scaffold platform for the interaction with other proteins, which are recruited by the DII domains. One exception is the C-terminal domain of RPAP3 that binds at the ATPase-face of the ring through the interaction with RUVBL2 but not RUVBL1 (Martino et al., 2018; Maurizy et al., 2018; Muñoz-Hernández et al., 2019).
 
 ATP binding or hydrolysis by RUVBL1 and/or RUVBL2 is essential to all the reported activities in cells (Izumi et al., 2010; Rajendra et al., 2014; Venteicher et al., 2008), but the purified proteins display very weak ATPase activity in vitro (Nano et al., 2020; Gorynia et al., 2011). Little is known about the function of RUVBL1-RUVBL2-mediated ATP hydrolysis or how this is regulated within the cell. Inhibition of the RUVBL1-RUVBL2 ATPase stabilizes interactions with clients and proteins involved in mTOR assembly in cells (Yenerall et al., 2020). This and the low rates of ATP hydrolysis indicates that RUVBL1-RUVBL2 might not function as a processive ATPase but rather as a switch regulated through interacting partners. Recent structures suggest that the interaction of proteins with the DII domains can alter the conformation of the RUVBL1-RUVBL2 hexameric ring. PIH1D1 in the R2TP complex and the insertion domain of Ino80 in the INO80 complex interact with the DII domains, inducing conformational changes in regions of the ATPase ring (Aramayo et al., 2018; Muñoz-Hernández et al., 2019). In the R2TP complex, the interaction of PIH1D1 also induces changes in a region at the N-terminus of one RUVBL2 subunit that contains two histidine residues (His25 and His27) that contribute to the interaction with the nucleotide. However, it has not been demonstrated whether these changes could regulate the ATPase activity of RUVBL1-RUVBL2.
@@ -42,7 +50,7 @@ Here, we demonstrate that RUVBL1-RUVBL2 hetero-hexamers can bind directly to DHX
 
 ## Results
 
-## RUVBL1-RUVBL2 and DHX34 form a complex in vitro and in cells
+### RUVBL1-RUVBL2 and DHX34 form a complex in vitro and in cells
 
 To uncover the function of RUVBL1 and RUVBL2 in NMD, we sought to address whether these AAA-ATPases can interact directly with some of the core protein factors involved in the initiation of NMD. Pull-down experiments from cell extracts cannot easily differentiate direct interactions from those associations that are mediated by connecting partners. Thus, we first tested which NMD factors could bind directly to RUVBL1-RUVBL2 using purified proteins and in vitro interaction assays, and subsequently verified them in cell lysates.
 
@@ -52,27 +60,287 @@ We also analyzed the interaction with SMG1, the kinase that phosphorylates UPF1,
 
 Together, these results indicate that RUVBL1-RUVBL2 can interact directly with the NMD factors SMG1 and DHX34. In this work, we focused on the characterization of how DHX34 binds to RUVBL1-RUVBL2 and the consequences of this interaction.
 
-## Cryo-EM of the RUVBL1-RUVBL2-DHX34 complex
+### Cryo-EM of the RUVBL1-RUVBL2-DHX34 complex
 
 To gain deeper insight into the consequences of the interaction of DHX34 with RUVBL1 and RUVBL2, we purified the RUVBL1-RUVBL2-DHX34 complex for structural characterization. The purification was optimized so that yields and homogeneity of the complex were suitable for structural studies (Figure 2A). For this, we coupled the purification of DHX34 from HEK293 cells with its binding to RUVBL1-RUVBL2. FLAG-DHX34 from cell extracts was bound to an immunoaffinity anti-FLAG resin and the beads were washed and incubated with purified RUVBL1-RUVBL2 prior to elution. Next, we used cryo-EM to determine the structure of the RUVBL1-RUVBL2-DHX34 complex. Freshly purified RUVBL1-RUVBL2-DHX34 was applied to holey-carbon grids, vitrified and cryo-EM images were collected.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig2-v2.jpg)
+
+**Figure 2.:** (A) Purified RUVBL1-RUVBL2-DHX34 complex used for structural studies in a 4–15% SDS-PAGE stained with Quick Coomassie (Generon). (B) Representative reference-free 2D averages from cryo-EM images of the complex. Side views clearly show the projection of one ring with some density attached to the DII face (close-up right panel). Scale bar represents 10 nm. (C) Several views of the cryo-EM density obtained for RUVBL1-RUVBL2-DHX34 (RUVBL1 in blue, RUVBL2 in pink, and DHX34 in gray). ATPase core and DII domains in RUVBL1-RUVBL2 are indicated. Scale bar represents 25 Å.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** After some initial steps of image ‘cleaning’ and classification, a consensus refinement for 83.8% of the particles was obtained. From these initial stages, image processing was divided in two branches. To resolve the structure of the RUVBL1-RUVBL2 without the effect of DHX34 and the OB-fold domains, we removed the influence of the density of these flexible regions by using a mask, and refinements and classifications were focused only in the ring. In parallel, we refined the structure of the full complex. For this, particles were first classified according to the quality of the DHX34 density, removing those particles were the density was too small to accommodate DHX34. Then, these particles were classified and refined using the information of the whole complex. Scale bar represents 25 Å.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Fourier Shell Correlation (FSC) curves estimating the average resolution of the cryo-EM volume of the RUVBL1-RUVBL2-DHX34 complex after refinement using the gold standard defined in RELION-3 (Zivanov et al., 2018). (B) Local resolution estimates map of RUVBL1-RUVBL2-DHX34 complex as provided by RELION. Bottom and side views of the complex are shown using the color scale shown on the right. Scale bar, 25 Å.
+
 2D averages of RUVBL1-RUVBL2-DHX34 revealed hexameric RUVBL1-RUVBL2 complexes with putative density for DHX34 located at the DII-face of the ring. The interaction of DHX34 disrupts the RUVBL1-RUVBL2 dodecameric double-ring complexes, an effect observed before in the assembly of R2TP (Martino et al., 2018; Muñoz-Hernández et al., 2019; Figure 2B). An extensive 2D and 3D classification strategy of the images revealed that DHX34 attaches to the DII-face of the RUVBL1-RUVBL2 ring flexibly and we selected the most homogenous sub-group of particles for refinement (Figure 2—figure supplement 1, Table 1). The structure of RUVBL1-RUVBL2-DHX34 was determined at an average resolution of 5.0 Å (Figure 2—figure supplement 2A), with local resolutions up to 4.1 Å for the core RUVBL1-RUVBL2 whereas the resolution of DHX34 in the complex was around 8–10 Å (Figure 2—figure supplement 2B — Figure 2—video 1). The disparity in resolution between DHX34 and RUVBL1-RUVBL2 in the complex was a strong indication of the flexible attachment of DHX34 to the ATPases. Thus, the cryo-EM density for DHX34 could represent an average of several conformations if the hexameric RUVBL1-RUVBL2 directs alignment during image processing. Local resolution estimation for the OB folds in the DII domains of RUVBL1-RUVBL2 showed a similar resolution distribution (8–10 Å) due to their intrinsic flexibility (Figure 2—figure supplement 2B; Martino et al., 2018).
+
+**Table 1.**
+ Cryo-EM data collection and parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Data collection and processing</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Structure</th>
+      <th>RUVBL1-RUVBL2-DHX34 (EMD-11788)</th>
+      <th>RUVBL1-RUVBL2 ATPase core (EMD-11789) (PDB ID 7AHO)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Gatan K2 (counting mode)</td>
+      <td>Gatan K2 (counting mode)</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>47756</td>
+      <td>47756</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td>48.1 (40 fractions)</td>
+      <td>48.1 (40 fractions)</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.5 to −3.0</td>
+      <td>−1.5 to −3.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.047</td>
+      <td>1.047</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>353 057</td>
+      <td>353 057</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>41237</td>
+      <td>101774</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å) FSC threshold</td>
+      <td>4.97 0.143</td>
+      <td>4.18 0.143</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Å)</td>
+      <td>4.0–12.0</td>
+      <td>3.8–6.0</td>
+    </tr>
+  </tbody>
+</table>
 
 DHX34 binds to the internal regions of the DII domains in the hetero-hexameric RUVBL1-RUVBL2 ring. The DII external domains (OB-folds) are mostly free and potentially accessible for interaction with other partners (Figure 2C). DHX34 contacts several RUVBL1 and RUVBL2 subunits of the complex, thus inducing global conformational changes in the structure of the ATPases (see below).
 
-## DHX34 induces conformational changes in the N-termini of RUVBL2
+### DHX34 induces conformational changes in the N-termini of RUVBL2
 
 We first analyzed the structure of the RUVBL1-RUVBL2 ring using a mask that removed the influence of DHX34 and the protruding OB-fold domains during image processing (Figure 2—figure supplement 1). This way the average resolution of RUVBL1-RUVBL2 improved to 4.2 Å (Figure 3A, Figure 3—figure supplement 1A,B, Table 1) detecting the presence or absence of nucleotide in the nucleotide-binding pockets of both subunits (Figure 3—figure supplement 1C,D). The resolution was sufficient to model the structure of the RUVBL1-RUVBL2 ring after its interaction with DHX34 with the help of the crystal structure of RUVBL1-RUVBL2 (PDB 2XSZ) (Figure 3—figure supplement 2A–C, Tables 2–3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-v2.jpg)
+
+**Figure 3.:** (A) Side and bottom views of the RUVBL1-RUVBL2 ring obtained after refinement without the influence of DHX34 and the OB-fold domains. Squares highlight N-terminal segments of RUVBL1 (blue) and RUVBL2 (pink). Scale bar represents 25 Å. The presence and absence of RUVBL1 and RUVBL2 N-terminal regions is indicated only in one copy of each subunit, but it applied to all the subunits in the complex. (B) Bottom view of the atomic structure of RUVBL1-RUVBL2 ring modeled from the cryo-EM density. Color codes are as in (A). (C) Right panel: a view of the nucleotide binding region in RUVBL2 from the crystal structure of RUVBL1-RUVBL2 (PDB 2SXZ) in gray color; left panel: similar view of RUVBL2 in RUVBL1-RUVBL2 after DHX34 binding (this work, pink). (D) Close-up view of the nucleotide-binding regions in RUVBL1, comparing the structure after DHX34 binding (left panel) and the crystal structure of the RUVBL1-RUVBL2 complex (PDB 2SXZ) (right panel) in gray. N-terminal histidines (H18 and H20) are indicated in gray, Walker A residues in orange, Walker B in red, and the Arg finger in yellow. (E) As in (D) but for the RUVBL2 subunit. Color codes for relevant and catalytic motifs are represented as in (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Fourier Shell Correlation (FSC) curves for the hexameric ring after refinement removing the influence of DHX34 and the OB-fold domains. (B) Local resolution estimates for the hexameric ring of RUVBL1-RUVBL2 as provided by RELION. Bottom and side views of the map are shown using the color scale shown on the right. Scale bar, 25 Å. (C) Close-up of the local resolution estimates centered in the nucleotide binding pockets of RUVBL1, showing all three subunits. Top panels show the density of the local resolution map using the same color code as in (B). Bottom panels show the same region but as a mesh with the atomic model fitted. (D) As ‘C’, but for each RUVBL2 subunit.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fourier Shell Correlation (FSC) curves for the atomic model versus the cryo-EM density of the RUVBL1-RUVBL2 ATPase core using for modeling. (B) Close-up views of RUVBL1 (left) and RUVBL2 (right) internal DII domains superimposed with the structure of unliganded RUVBL1-RUVBL2 (PDB 2SXZ) in gray color. (C) Selected areas showing high-resolution features with side chain of some residues shown. Scale bar, 5 Å.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Experiment 1. RUVBL1-RUVBL2-DHX34 particles were classified in six groups with a mask that removed the influence of DHX34 and the flexible DII domains from the analysis. Each sub-group was analyzed by fitting the atomic structure of the RUVBL1-RUVBL2 core domains (PDB 2XSZ). Cryo-EM density for RUVBL1-RUVBL2 is shown as a white transparency, RUVBL1 is shown in blue color and RUVBL2 in pink color. The percentage of particles in each subgroup is indicated. All groups showed density for the N-termini of RUVBL1. The N-termini of RUVBL2 present in the crystal structure is not present in the cryo-EM density of any subunit in any of the groups. The positions of the N-termini of RUVBL2 are indicated with asterisks.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Experiment 2. RUVBL1-RUVBL2-DHX34 particles were classified in six groups with a mask centered in only one RUVBL1-RUVBL2 dimer at a time. Each sub-group was analyzed by fitting the atomic structure of the RUVBL1-RUVBL2 core domains (PDB 2XSZ). Cryo-EM density for RUVBL1-RUVBL2 is shown as a white transparency, RUVBL1 is shown in blue color and RUVBL2 in pink color. The percentage of particles in each subgroup is indicated. All groups showed density for the N-termini of RUVBL1. The N-termini of RUVBL2 present in the crystal structure is not present in the cryo-EM density of any subunit in any of the groups. The positions of the N-termini of RUVBL2 are indicated with asterisks.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Experiment 3. The conformation of each RUVBL1-RUVBL2 dimer was analyzed using a symmetry expansion strategy. Each particle was rotated twice along its longitudinal axis so that each of the three RUVBL1-RUVBL2 dimers in each particle locates in the same position. After the expansion the data set is triplicated. Then, particles were locally classified in six groups using a mask focused in only one dimer. Each sub-group was analyzed by fitting the atomic structure of the RUVBL1-RUVBL2 core domains (PDB 2XSZ). Cryo-EM density for RUVBL1-RUVBL2 is shown as a white transparency, RUVBL1 is shown in blue color and RUVBL2 in pink color. The percentage of particles in each subgroup is indicated. All groups showed density for the N-termini of RUVBL1. The N-termini of RUVBL2 present in the crystal structure is not present in the cryo-EM density of any subunit in any of the groups. The positions of the N-termini of RUVBL2 are indicated with asterisks. A small percentage of particles (2.1%) showed a partial loss of density for RUVBL2 N-termini, which can be due in most part to the lower resolution of this subset.
+
+**Table 2.**
+ Validation statistics for the atomic model of RUVBL1-RUVBL2 ATPase core.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Refinement RUVBL1-RUVBL2 ATPase core</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software</td>
+      <td>phenix.real_space_refine Coot</td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>2XSZ</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>4.1</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−222.98</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td>13521</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>1748</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>13521</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>1748</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>ADP (3)</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.911</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.70</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>6.95</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>95.39</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>4.61</td>
+    </tr>
+    <tr>
+      <td>Disallowed</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Correlation Coefficients (CC) of the atomic after model refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Correlation Coefficients (CC) after model refinement of RUVBL1-RUVBL2_core map</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CC (mask)</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>CC (box)</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>CC (peaks)</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>CC (volume)</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>Mean CC for ligands</td>
+      <td>0.84</td>
+    </tr>
+  </tbody>
+</table>
+
 The most striking feature in the cryo-EM map is that the N-terminal regions that contribute to nucleotide binding (Muñoz-Hernández et al., 2019; Silva et al., 2018) are visualized in RUVBL1 but not in any of the three RUVBL2 subunits (Figure 3A,B). We performed several experiments to fully verify that every RUVBL2 in the complex lacked density for the N-terminal region. We first searched for heterogeneity in RUVBL1-RUVBL2 by classifying the images of the ring in several 3D subgroups using a mask and we did not find sub-populations of particles where the N-terminal region of RUVBL2 was visible (Figure 3—figure supplement 3). Next, we classified every position of RUVBL1-RUVBL2 dimers in six subclasses to search for heterogeneities within each position (Figure 3—figure supplement 4). More than 70% of particles in every position corresponded to particles clearly missing density of RUVBL2 N-terminus. Density for the N-terminus was not well defined for a small fraction of particles, but these corresponded to low-resolution structures due to the small number of images in these sub-groups. Finally, we applied a symmetry expansion strategy as described before (Martino et al., 2018). For this, we rotated each particle around the 3-fold symmetry axis three times (0°, 120°, and 240°) to place all RUVBL1-RUVBL2 dimers in the same position, thus triplicating the data set. Next, by placing a mask around one position now containing all existing RUVBL1-RUVBL2 dimers, we subjected the symmetry-expanded data to classification, searching for heterogeneity in all the available RUVBL1-RUVBL2 dimers regardless of its position in the ring (Figure 3—figure supplement 5). This analysis further confirmed that all dimers lack the RUVBL2 N-terminal regions. Based on these observations, we conclude that DHX34 induce changes that affect the conformation of RUVBL2 N-terminal regions in all three subunits of the complex.
 
-## DHX34 induces the loss of nucleotide in every RUVBL2 subunit
+### DHX34 induces the loss of nucleotide in every RUVBL2 subunit
 
 The conformational changes in the N-terminus of RUVBL2 were coupled to the loss of nucleotide (Figure 3C). We and others have observed that RUVBL1-RUVBL2 co-purifies with nucleotides bound to all six subunits (Gorynia et al., 2011; Lakomek et al., 2015; Matias et al., 2006; Muñoz-Hernández et al., 2019), but whereas nucleotide remains bound to RUVBL1 in the RUVBL1-RUVBL2-DHX34 complex (Figure 3D), this is lost in all three RUVBL2 subunits (Figure 3E). The absence of density for nucleotide in RUVBL2 could not be attributed to a lack of sufficient resolution because nucleotides are clearly present in all RUVBL1 subunits in the same complex at similar resolution (Figure 3—figure supplement 1C,D).
 
 DHX34 induces conformational changes in other regions of RUVBL1 and RUVBL2 besides the N-termini of RUVBL2 (Figure 3—figure supplement 2B — Video 1). These changes affect mostly to the internal regions of the DII domains and regions in the AAA-ring. These changes do not affect key residues of the RUVBL1 nucleotide-binding pocket, which explains why ADP remains bound to RUVBL1 after the interaction with DHX34 (Figure 3D). The structure of the nucleotide-binding pocket in RUVBL2 is not altered significantly with respect to the crystal structure of RUVBL2 bound to nucleotide (Figure 3E). This suggests that it is the displacement of the N-termini of RUVBL2 that is mostly responsible for the loss of nucleotide. Together, our results reveal that DHX34 affects nucleotide binding of every RUVBL2 subunit in the complex by stabilizing a conformation that displaces the N-termini of RUVBL2.
 
-## DHX34 makes multiple contacts through different domains with RUVBL1-RUVBL2
+![Video 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-video1.mp4.jpg)
+
+**Video 1.:** Several views of the atomic model for RUVBL1-RUVBL2 to show the conformational changes in the hexameric ring after the interaction with DHX34. During the video, the structure is superimposed to the atomic structure of the RUVBL1-RUVBL2 ATPase ring (PDB 2SXZ) in gray color, to highlight the differences in RUVBL2 and RUVBL1, and the loss of nucleotide in RUVBL2. In the final part of the video, the morphing between the crystal structure of the RUVBL1-RUVBL2 ATPase ring (PDB 2SXZ) and the structure described is this work highlights the conformational changes induced by DHX34 in the polypeptide chains. During morphing, nucleotides in both subunits and both conformations have been removed, as well as the N-terminal region of RUVBL2, which is only present in the crystal structure and it cannot be modeled in the DHX34-bound structure.
+
+### DHX34 makes multiple contacts through different domains with RUVBL1-RUVBL2
 
 Next, we focused on the analysis of the structure of DHX34, whose resolution was lower than that of the RUVBL1-RUVBL2 hexameric ring. In an attempt to improve the resolution of DHX34, we extracted the density corresponding to the protein in each particle by applying density subtraction methods. These images were processed and classified without the influence of RUVBL1-RUVBL2 (Figure 4—figure supplement 1A,B). Despite our efforts, we were unable to improve the structure of DHX34. We suspect this could be a consequence of the limited number of images since small proteins need large datasets that allow classification and identification of the best particles in a homogenous conformation. This also indicates that the density of DHX34 of the cryo-EM map resolved in the context of the full RUVBL1-RUVBL2-DHX34 complex could be affected by the alignment of the AAA ring.
 
@@ -80,9 +348,33 @@ In isolation and at low resolution using negative-stain electron microscopy meth
 
 Next, we tested whether any individual domain of DHX34 could have a significant role in mediating the interactions with RUVBL1-RUVBL2 in cultured cells. For this, we analyzed several DHX34 mutants (Figure 4A). We first tested a series of systematic domain deletion mutants and found that all single domain deletions retained binding to RUVBL1 and RUVBL2 to a measurable degree (Figure 4B). In order to test the importance of several DHX34 domains for RUVBL1 and RUVBL2 binding, we next analyzed larger truncated versions of DHX34 (Figure 4C). As shown by the quantification in Figure 4D, no domain is sufficient and necessary on its own to mediate the interaction with RUVBL1-RUVBL2. Heavily N- and C- terminal truncated versions of DHX34 showed a pronounced reduction in binding to RUVBL1-RUVBL2 but they could still bind to the ATPases (Figure 4D). Overall this analysis indicated that several interactions through different domains are made between DHX34 and RUVBL1-RUVBL2, which agrees with the structure of the complex that shows multiple regions of contact between DHX34 and the ATPases.
 
-## DHX34 down-regulates RUVBL2 ATPase activity
+![Figure 4.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cartoon depicting the functional domains of DHX34, showing the residue numbers that define their boundaries. Names of the domains are: N-terminal (NTD), L, RecA1, RecA2, winged-helix (WH), Ratchet, OB-fold and C-terminal (CTD). (B–C) Effect of domain deletions of DHX34 (B) and larger truncation including several domains (C) on the interaction with RUVBL1 and RUVBL2 using cell extracts. The Immunoprecipitation (IP) of T7-tagged versions of DHX34 was analyzed by western blot using antibodies against the T7 tag, RUVBL1 and RUVBL2. (D) Quantification of the experiments shown in ‘B’ and ‘C’. The protein levels in the IP were quantified and normalized to the levels in the Input. Binding is expressed as IP enrichment compared to the empty vector control (-). For each expressed polypeptide, at least two independent experiments were analyzed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Workflow for the image processing of DHX34 extracted from the images of the RUVBL1-RUVBL2-DHX34 complex. Scale bar, 25 Å. (B) Fourier Shell Correlation (FSC) curves for the DHX34 structure after refinement removing the influence of RUVBL1-RUVBL2 ring using density subtraction protocols. (C) Comparison between the structure of isolated DHX34 (Melero et al., 2014) and the DHX34 in complex with RUVBL1-RUVBL2 resolved at low-resolution structure. Left panel, structure of isolated DHX34 as a solid density (Melero et al., 2014). Right panel, structure of isolated DHX34 as mesh fitted with the low-resolution DHX34 from this work. Scale bar, 25 Å. (D) Effect of the truncation of the C-terminal domain (CTD) of DHX34 in the formation of a complex with RUVBL1-RUVBL2. The experiment was performed by pull-down of the His-tag in RUVBL1 in RUVBL1-RUVBL2 after incubation with DHX34-ΔCTD using purified proteins. SDS-PAGE was stained using Oriole Fluorescent Gel Stain (Bio-Rad).
+
+### DHX34 down-regulates RUVBL2 ATPase activity
 
 We analyzed if the conformational changes induced by DHX34 correlate with changes in the ATPase activity of the His-RUVBL1-RUVBL2 complex (Figure 5). For these experiments, we expressed and purified the ATP-hydrolysis deficient His-RUVBL1E303Q-RUVBL2E300Q mutant (Gorynia et al., 2011; Lakomek et al., 2015; Matias et al., 2006). We investigated whether these mutations affect the oligomerization of the complex using electron microscopy (Figure 5—figure supplement 1A). We found that His-RUVBL1E303Q-RUVBL2E300Q forms similar oligomers to the wild-type complex and, in addition, it behaves similarly to His-RUVBL1-RUVBL2 when their intrinsic fluorescence was measured using a thermal denaturation assay (Figure 5—figure supplement 1B). In addition, we purified His-RUVBL1E303Q-RUVBL2 and His-RUVBL1-RUVBL2E300Q containing the mutation in either RUVBL1 or RUVBL2. We also purified ATP-hydrolysis-dead mutant (DHX34D279A) to remove the effects of ATP hydrolysis by DHX34 in our experiments (Hug and Cáceres, 2014). DHX34D279A showed an ATP consumption of 24.2% compared with wild-type (Figure 5—figure supplement 1C–E). We also monitored DHX34 stability when incubated at 37°C, measured as changes in the intrinsic fluorescence during a thermal ramp. We found that DHX34 is not affected by 20 min incubation time but it is by 40 min when compared to freshly purified DHX34 (Figure 5—figure supplement 1F). This suggested that the protein might not be stable over long incubation times. Thus, ATPase measurements were restricted to 20 min using fresh preparations for which linearity of ATPase rates were maintained.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig5-v2.jpg)
+
+**Figure 5.:** (A) Graph comparing the ATPase activity for His-RUVBL1-RUVBL2, His-RUVBL1E303Q-RUVBL2, His-RUVBL1-RUVBL2E300Q and His-RUVBL1E303Q-RUVBL2E300Q shown as percentage of the rate measured for wild-type RUVBL1-RUVBL2. Standard deviations from three independent experiments are indicated. (B) Graph comparing the ATP activity of His-RUVBL1-RUVBL2 in the presence and absence of DHX34D279A, indicated as percentage of ATPase activity, assuming 100% activity for His-RUVBL1-RUVBL2. Standard deviations from four independent experiments are indicated. Sample His-RUVBL1-RUVBL2 used in these experiments contains a His-tag at the N-terminus of RUVBL1. (C) Graph showing the ATP activity for His-RUVBL1-RUVBL2 complexes where either RUVBL1 or RUVBL2 contains a mutation that abolished ATP hydrolysis (RUVBL1303Q or RUVBL1E300Q) and the effect after incubation with DHX34D279A. In all the experiments the ATPase activity for His-RUVBL1-RUVBL2 shown in ‘B’ is considered as 100%. Standard deviations from three independent experiments are indicated. (D) Model for the regulation of the ATPase activity of RUVBL1-RUVBL2 by DHX34. N-terminal regions in RUVBL1 (blue color) and RUVBL2 (pink color) subunits contribute interactions with the nucleotides in the nucleotide-binding pocket. DHX34 binds to the DII-face of the RUVBL1-RUVBL2 ring and induces large conformational changes in the N-termini of all RUVBL2 subunits promoting the loss of nucleotide and a down-regulation of the ATPase activity. Source files containing the data used for the time course measurements for ATP consumption in Figure 5 and the figure supplement are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The oligomeric state of His-RUVBL1E303Q-RUVBL2E300Q mutant was monitored by using negative stain electron microscopy. His-RUVBL1E303Q-RUVBL2E300Q mutant assembled complexes similar to the wild-type complex when observed in the electron microscope (Figure 1—figure supplement 1). (B) The stability of the His-RUVBL1-RUVBL2 mutants was analyzed using nano-scanning fluorimetry. Graph represents the first derivative of the fluorescence ratios (F350/F330) along the temperature for His-RUVBL1-RUVBL2 (solid line), and His-RUVBL1E303Q-RUVBL2E300Q (dot line). Inflection temperatures (Ti) are indicated on top. (C) 4–15% SDS-PAGE and Quick Coomassie (Generon) staining of purified DHX34D279A. (D) Time course measurements for ATP consumption monitored as absorbance at 340 nm using the pyruvate kinase-lactate dehydrogenase-coupled assay to measure the ATPase activity of DHX34 and ATP-hydrolysis-dead mutant DHX34D279A. (E) Graph comparing the ATP activity in ‘D’ indicated as a percentage of wild-type DHX34. ATP-hydrolysis-dead mutant DHX34D279A mutant shows 24.2% of the ATPase activity measured for wild-type DHX34. Standard deviations from three independent experiments are indicated. (F) The stability of DHX34 after incubation at 37°C was analyzed by nano scanning fluorimetry. These experiments revealed that the protein was not affected after 20 min at 37°C (dot line) but it was significantly affected after 40 min (dashed line), where a second unfolding process is observed at a higher Ti. Source files containing the data used for the time course measurements for ATP consumption in Figure 5 and the figure supplement are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Time course measurements for ATP consumption monitored as absorbance at 340 nm using the pyruvate kinase-lactate dehydrogenase-coupled assay for His-RUVBL1-RUVBL2 (black line) and ATPase-dead mutants of His-RUVBL1E303Q-RUVBL2, His-RUVBL1-RUVBL2E300Q, and His-RUVBL1E303Q-RUVBL2E300Q. (B–D) Time course measurements were performed as in (A) in experiments measuring the ATPase activity of each mutant in the absence or presence of DHX34D279A. Source files containing the data used for the time course measurements for ATP consumption in Figure 5 and the figure supplement are available in Figure 5—source data 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/63042/elife-63042-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Time course measurements for ATP activity monitored as absorbance at 340 nm for untagged RUVBL1-RUVBL2 (red line) compared to His-RUVBL1-RUVBL2 (black line). (B) Graph representing the ATPase activity for the experiments in (A) using the values of His-RUVBL1-RUVBL2 as the 100%. (C, D) As in ‘A’ and ‘B’ respectively but after adding DHX34D279A. (E, F) As in ‘A’ and ‘B’ but using two ATPase-dead mutants RUVBL1-RUVBL2E300Q and RUVBL1E303Q-RUVBL2. (G) Graph summarizing the ATPase activity of RUVBL1-RUVBL2 and several mutants in the absence or presence of DHX34D279A. This graph is similar to the one shown in Figure 4 but using untagged RUVBL1-RUVBL2 complex. Source files containing the data used for the time course measurements for ATP consumption in Figure 5 and the figure supplement are available in Figure 5—source data 1.
 
 The ATPase activity of His-RUVBL1-RUVBL2 was determined using a spectrophotometric pyruvate kinase-lactate dehydrogenase-coupled assay that regenerates ATP so that the amount remains constant. The weak ATPase activity of His-RUVBL1-RUVBL2 that we measured at 37°C (4.9 ± 0.8 min−1 of ATP turnover) is similar to what had been determined previously by others (Gorynia et al., 2011; Lakomek et al., 2015; Matias et al., 2006; Figure 5—figure supplement 2A), and this value was set as 100% activity for comparison with subsequent measurements (Figure 5A). We verified that the activity measured corresponded to His-RUVBL1-RUVBL2 using His-RUVBL1E303Q-RUVBL2E300Q (Figure 5A, Figure 5—figure supplement 2A). His-RUVBL1-RUVBL2E300Q and His-RUVBL1E303Q-RUVBL2 complexes that are mutants in only one of the two subunits showed a significant reduction of their ATPase activity as expected if not all the subunits in each oligomer are active (43% and 20% ATPase activity for His-RUVBL1-RUVBL2E300Q and His-RUVBL1E303Q-RUVBL2, respectively, compared to wild-type His-RUVBL1-RUVBL2) (Figure 5A, Figure 5—figure supplement 2A).
 
@@ -106,25 +398,76 @@ Together, our results reveal that DHX34, an NMD factor involved in NMD initiatio
 
 ## Materials and methods
 
-## Transfections, immunoprecipitations, and western blotting
+### Transfections, immunoprecipitations, and western blotting
 
 For interactions studies in cell extracts HEK293T cells were transfected with pcG-T7-DHX34 (WT and deletion mutants), pcDNA3-3xFLAG-UPF1 as described previously (Hug and Cáceres, 2014; Melero et al., 2016), pCDNA-3xHA-Reptin or pCDNA-3xFLAG-Pontin (Izumi et al., 2010; Rajendra et al., 2014; Venteicher et al., 2008) (Addgene plasmids), pcIneoFLAG-UPF2 (generous gift from Andreas Kulozik, Heidelberg) using Lipofectamine 2000 (Life Technologies) according to the manuals instructions. Cells were harvested and lysed 48 hr after transfection. Immunoprecipitation were performed, as previously described (Hug and Cáceres, 2014). Briefly, cells were lysed in IP buffer (10 mM Tris-HCl pH 8, 150 mM NaCl, 1 mM EGTA, 1% (v/v) NP-40, 0.2% (v/v) Na-Deoxycholate, Complete Protease Inhibitor (Roche), 1 mM dithiothreitol (DTT), 20 μg/ ml RNase A (ThermoScientific)). After Immunoprecipitations using T7 agarose (69026, MERCK Millipore), Anti-FLAG M2 Affinity Gel (A2220, Sigma-Aldrich) or antibodies against UPF1 (A300-038A, Bethyl) or UPF2 (sc-20227, Santa Cruz) coupled to protein G, immunoprecipitated proteins were separated by SDS-PAGE and detected by Western Blotting. RUVBL1 and RUVBL2 were detected with the following commercial antibodies: anti-Pontin (06–1299, Sigma Aldrich), anti-Reptin (SAB4200115, Sigma-Aldrich). FLAG and T7 affinity tags were detected with anti-FLAG (F3165, M2 clone, Sigma-Aldrich) and anti-T7 antibody (69522, Sigma Aldrich) respectively. The anti-DHX34 antibody has been previously described (Hug and Cáceres, 2014). Signals were detected with the ImageQuant LAS 4000 system (GE Healthcare) and quantified using the ImageQuant software.
 
-## Cell culture
+### Cell culture
 
 HEK293T cells were grown in high glucose Dulbecco's modified Eagle's medium (Life Technologies) supplemented with 10% (v/v) fetal calf serum (Life Technologies) and penicillin-streptomycin (Life Technologies) and incubated at 37°C in the presence of 5% CO2.
 
-## Cloning
+### Cloning
 
 For mapping experiments, a C-terminal His-tagged version of human RUVBL2 was produced. The cDNA of RUVBL2 (NM_006666) was PCR amplified from previously described pCDFDuet-1-RUVBL2 plasmid (López-Perrote et al., 2012) and inserted into pET21b vector (Novagen) using the IVA cloning system (García-Nafría et al., 2016), including 10 histidine residues at the C-terminus of the protein. RUVBL1 and RUVBL2 ATPase-dead mutants RUVBL1E303Q and RUVBL2E300Q unable to hydrolyze ATP were generated by site-directed mutagenesis of the original plasmids previously described (pETEV15b-RUVBL1 and pCDFDuet-1-RUVBL2) using standard protocols (López-Perrote et al., 2012). Oligonucleotides used for cloning are shown in Table 4.
 
-## Expression and purification of recombinant proteins in bacteria
+**Table 4.**
+ Oligonucleotides used for cloning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Name</th>
+      <th>Sequence 5´- 3´</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">pET21b-RUVBL2_H10</td>
+      <td>pET21b_FW</td>
+      <td>CACCACCACCACCACCACTG</td>
+    </tr>
+    <tr>
+      <td>RUVBL2_H10_FW</td>
+      <td>ATGGCAACCGTTACAGCCACTGTTTAACTTTAAGAAGGAGATATACAT</td>
+    </tr>
+    <tr>
+      <td>RUVBL2_H10_RV</td>
+      <td>GGAGGTGTCCATGGTCTCGCGTGGTGGTGGTGGTGATGGTGATGGTGAGGTCCCTGGAACAGCACCTCCAG</td>
+    </tr>
+    <tr>
+      <td>pET21b_RV</td>
+      <td>ATGTATATCTCCTTCTTAAAGTTAAACAAAATT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">pETEV15b-RUVBL1_E303Q</td>
+      <td>R1_E303Q_FW</td>
+      <td>AGGTCCACATGCTGG</td>
+    </tr>
+    <tr>
+      <td>R1_E303Q_RV</td>
+      <td>CATGTGGACCTGATCAACAAACAGCACACC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">pCDFDuet-1-RUVBL2_E300Q</td>
+      <td>R2_E300Q_FW</td>
+      <td>AGGTCCACATGCTGGAC</td>
+    </tr>
+    <tr>
+      <td>R2_E300Q_RV</td>
+      <td>GCATGTGGACCTGGTCGATGAACAGCACTCC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Expression and purification of recombinant proteins in bacteria
 
 RUVBL2 including C-terminal His-tag (RUVBL2-His) was expressed in BL21 (DE3) E. coli cells (NZYTech) grown in LB medium. Expression of the protein was induced by addition of IPTG (Isopropyl β-D-1-thiogalactopyranoside) at a final concentration of 0.1 mM at 28°C for 4 hr when cells reached an optical density (OD) of 0.5. Cells were collected by centrifugation at 8000 rpm during 10 min at 4°C, and the pellet was resuspended in lysis buffer (50 mM Tris-HCl pH 7.4, 300 mM NaCl, 10% (v/v) glycerol, 0.1% (v/v) NP-40) supplemented with a cocktail of proteases inhibitors (cOmplete EDTA-free, Roche) and lysozyme (final concentration 0.1 mg/ml) (Sigma-Aldrich). Cells were lysed by sonication and clarified by centrifugation at 35,000 rpm for 1 hr at 4°C. Supernant containing soluble proteins was filtered using a 0.45 μm device and applied to a HisTrap HP affinity column (GE Healthcare) equilibrated in buffer A (40 mM Tris-HCl pH 7.4, 200 mM NaCl, 10% (v/v) glycerol, 40 mM imidazole). Elution was performed using a gradient of increasing concentrations of imidazole with buffer B (40 mM Tris-HCl pH 7.4, 200 mM NaCl, 10% (v/v) glycerol, 500 mM imidazole). Fractions containing purified RUVBL2-His were pooled and dialyzed in buffer QA (40 mM Tris-HCl pH 7.4, 150 mM NaCl, 5% (v/v) glycerol) at 4°C during 16 hr. As a second purification step, dialyzed sample was applied on a HiTrap HP Q column (GE Healthcare) equilibrated in buffer QA and eluted in a gradient with increasing concentrations of NaCl using buffer QB (40 mM Tris-HCl pH 7.4, 1 M NaCl, 5% (v/v) glycerol). Fractions containing purified RUVBL2-His were dialyzed in buffer 40 mM Tris-HCl pH 7.4, 300 mM NaCl, 5% (v/v) glycerol at 4°C for 16 hr, freeze in liquid nitrogen, and storage at −80°C.
 
 Expression and purification of His-RUVBL1 and His-RUVBL1-RUVBL2 complex were performed as previously described (López-Perrote et al., 2012). ATPase-dead mutants His-RUVBL1E303Q-RUVBL2, His-RUVBL1-RUVBL2E300Q, and His-RUVBL1E303Q-RUVBL2E300Q were expressed and purified using the same protocol as for wild-type RUVBL1-RUVBL2. Untagged RUVBL1-RUVBL2 complexes including ATPase-dead mutants were obtained by TEV protease digestion as previously described (López-Perrote et al., 2012). Untagged UPF1115-914 (UPF1 lacking residues 115–914 to increase protein stability), UPF2, UPF3b, and EJC (composed of eIF4AIII, Btz, MAGO and Y14 proteins) were produced as previously described (Melero et al., 2012). Chromatographic experiments were analyzed by 4–15% SDS-PAGE (MINI-PROTEAN TGX stain-free, Bio-Rad) and Quick Coomassie (Generon) staining.
 
-## Expression and purification of recombinant proteins in mammalian cells
+### Expression and purification of recombinant proteins in mammalian cells
 
 SMG1-SMG8-SMG9 complex was produced in HEK293T cells following previously published protocols, including tandem FLAG-SBP-HA tags at the N-terminus of SMG1, and Strep-HA tags at the N-terminus of SMG8 and SMG9. The SBP-tag at the N-terminus of SMG1 was used for purification by affinity chromatography as described before (Melero et al., 2014).
 
@@ -134,17 +477,17 @@ Supernatant was incubated with ANTI-FLAG M2 affinity resin (Sigma-Aldrich) previ
 
 For the reconstitution of the RUVBL1-RUVBL2-DHX34 complex for structural studies, ANTI-FLAG M2 affinity resin loaded with 3xFLAG-DHX34 and after the washes, was incubated with a 6-fold molar excess of purified His-RUVBL1-RUVBL2 diluted in TBS buffer, further washed four times with TBS buffer, and eluted with 3xFLAG peptide as indicated for the 3xFLAG-DHX34 purification. In some preparations, endogenous HSP70 chaperone was detected as a contaminant in the elution of the complex, but this could be removed by incubating DHX34-loaded beads with ATP and Mg2+ and subsequent washes in a buffer without nucleotide, prior to binding RUVBL1-RUVBL2.
 
-## In vitro pull-down experiments
+### In vitro pull-down experiments
 
 In vitro interaction assays were performed using pull-down experiments with purified proteins. For histidine affinity pull-down of His-RUVBL1-RUVBL2 and NMD factors, 7.5 μM of His-RUVBL1-RUVBL2 (containing a 10 histidine tag at the N-terminus of RUVBL1 and wild-type RUVBL2) were mixed with 2-fold molar excess of either UPF1115-914, UPF2, UPF3b, EJC, SMG1-SMG8-SMG9 or DHX34 in 30 μl reactions in binding buffer (20 mM HEPES pH 7, 125 mM NaCl, 1 mM MgCl2, 10 mM imidazole, 2.5% (v/v) glycerol, 0.1% (v/v) NP-40). After 15 min incubation at 4°C, Ni-NTA agarose resin (Qiagen) previously equilibrated in binding buffer was added to the mixtures and further incubated for 30 min at 4°C with agitation. Mixtures were included on centrifugation columns (SigmaPrep spin columns, Sigma-Aldrich), and unbound proteins were washed times with 10 resin volumes of binding buffer supplemented with 50 mM imidazole, followed by elution with binding buffer supplemented with 500 mM imidazole. Inputs (2 μl) and elutions (10 μl) samples were analyzed by 4–15% SDS-PAGE (MINI-PROTEAN TGX stain-free, Bio-Rad) and staining with Quick Coomassie (Generon) or Oriole Fluorescent Gel Stain (Bio-Rad). Similar protocols were used in interactions assays between His-RUVBL1-RUVBL2 complex and 3xFLAG-DHX34_ΔCTD truncated mutant, and between either His-RUVBL1 (10 histidines tag at N-terminus) or RUVBL2-His (10 histidines tag at C-terminus) and 3xFLAG-DHX34.
 
 For immunoaffinity pull-down experiments using FLAG or 3xFLAG tagged proteins, similar reaction mixtures were prepared for FLAG-SMG1-SMG8-SMG9 or 3xFLAG-DHX34 and His-RUVBL1-RUVBL2 complex. ANTI-FLAG M2 affinity resin (Sigma-Aldrich) previously equilibrated in TBS buffer was added to the mixtures and incubated for 2 hr at 4°C with agitation. After that, resin was washed 4 times with 10 resin volumes of TBS buffer, and elution was performed by incubation for 30 min at room temperature with TBS buffer supplemented with either FLAG peptide (for FLAG-tagged proteins) or 3xFLAG peptide (for 3xFLAG-tagged proteins) at a final concentration of 0.15 μg/ml.
 
-## Cryo-EM
+### Cryo-EM
 
 3 μl of freshly purified RUVBL1-RUVBL2-DHX34 complex were applied to Quantifoil 300 mesh R1.2/1.3 grids after glow discharge, and the sample was flash frozen in liquid ethane using FEI Vitrobot MAG IV (Thermo Fisher Scientific). 3047 movies were collected in a Titan Krios at eBIC (Diamond Light Source, Oxford, UK) using a GATAN K2 Summit detector in counting mode, and a slit width of 20 eV on a GIF-Quantum energy filter. Cryo-EM images were collected as part of proposal EM20135 (Stop cancer - structural studies of macromolecular complexes involved in cancer by cryo-EM). Microscope calibrations and automatic data acquisition were performed with EPU software (Thermo Fisher Scientific) at a nominal magnification of ×47756, physical pixel size of 1.047 Å, a total dose of 48.1 e−/Å2, 6 e−/Å2/s, 40 fractions, and three images per hole. Autofocus was performed using an objective defocus range between −1.5 and −3.0 μm. The oligomeric state of RUVBL1-RUVBL2 ATPase dead-mutants His-RUVBL1E303Q-RUVBL2E300Q was analyzed by EM of negative stained samples. 3 μl microliters of freshly purified complexes (0.01 mg/ml) were deposited onto freshly glow-discharged carbon-coated 400 mesh copper electron microscopy (EM) grids (Electron Microscopy Sciences) and stained using 2% (w/v) uranyl acetate. Grids were visualized on a Tecnai 12 transmission electron microscope (Thermo Fisher Scientific Inc) with a lanthanum hexaboride cathode operated at 120 keV. Micrographs were recorded at x61320 nominal magnification and 2.5 A/pix on a 4k × 4 k TemCam-F416 CMOS camera (TVIPS).
 
-## Image processing
+### Image processing
 
 MotionCor2 was used for local drift correction (5 × 5 patches) and dose-weighting of fraction stacks (Zheng et al., 2017). Parameters for the contrast transfer function (CTF) of drift-corrected images were determined with Gctf (Zhang, 2016). A subset of manually picked particles was used to generate reference-free 2D averages in RELION (Zivanov et al., 2018) that were further used for template-based automatic particle picking using Gautomatch (K. Zhang, Yale University). Initial data set containing 353 057 particles was 2D-classified in RELION, and best quality particles were selected (121449). Ab initio 3D model was generated from the selected particles using cryoSPARC (Punjani et al., 2017), and used as reference for 3D-classification in RELION-3 (Zivanov et al., 2018). After some 2D classification to select the most homogenous sub-class, image processing was divided in two branches (Figure 2—figure supplement 1). To determine the structure of the full complex, we first classified the images using a mask to remove those particles with density too small to account for DHX34, obtaining a data sub-set of 41237 particles. These were classified in 3D and refined in RELION to generate a cryo-EM map with an estimated average resolution of 5.0 Å using gold-standard methods and the Fourier Shell Correlation (FSC) cut-off of 0.143. Due to the large difference in resolution within the map, showing high resolution in the AAA-ring and lower resolution in DHX34, the final volume was sharpened using LocalDeblur, an automatic local resolution-based sharpening, as implemented in Scipion (Ramírez-Aportela et al., 2020).
 
@@ -154,18 +497,18 @@ To analyze the structure of DHX34 in the complex, the density was subtracted fro
 
 Negative staining EM micrographs obtained for His-RUVBL1E303Q-RUVBL2E300Q ATPase-dead mutants were used for extracting 55776 particles after CTF parameters estimation and correction, and 2D reference-free averages for each complex were obtained using cisTEM (Grant et al., 2018).
 
-## Atomic model building
+### Atomic model building
 
 Atomic model building on the high-resolution cryo-EM maps of the RUVBL1-RUVBL2 ATPase ring was performed using the human RUVBL1-RUVBL2 crystal structure as starting model (PDB 2XSZ). After an initial rigid fitting in USCF Chimera, manual refinement for all the six chains was done using Coot (Emsley et al., 2010). The quality of the maps allowed the modeling of the majority of the side chains in the ATPase core of RUVBL1-RUVBL2 and the identification of the empty nucleotide pockets in all the three RUVBL2 present in the hexamer. Some regions of the DII domains were not as well defined in all the subunits, and we used the information of the three copies of each subunit in the ring to solve some of the ambiguities during modeling. A final step of automatic refinement was done in phenix.real_space_refinement to improve the geometries of the model (Afonine et al., 2018).
 
-## ATPase assays
+### ATPase assays
 
 ATP hydrolysis by His-RUVBL1-RUVBL2 was measured in a continuous spectrophotometric pyruvate kinase-lactate dehydrogenase-coupled assay, based on the regeneration of the hydrolyzed ATP coupled to oxidation of NADH (Nørby, 1998). NADH absorbance at 340 nm was measured using a Jasco V-550 UV/VIS Spectrophotometer with a Jasco EHC-477T Temperature Controller and monitored using the ND-1000 and Spectra Manager software in time course experiments, and its decrease was used to determine ATP hydrolysis rates. Assays were performed at 37°C in 100 μl reactions in buffer 50 mM Tris-HCl pH 7.4, 150 mM NaCl, 20 mM MgCl2, containing 2 mM phosphoenolpyruvate (PEP), 0.5 mM NADH, 0.04 U/μl pyruvate kinase/0.05 U/μl lactic dehydrogenase (Sigma-Aldrich) and 5 mM ATP. The reaction components without the protein of study where incubated for 10 min until stabilization of the absorbance at 340 nm to allow the system to regenerate contaminant ADP. ATP hydrolysis reactions were started by addition of 3 μM of His-RUVBL1-RUVBL2 (concentration calculated considering monomers), either wild-type or ATPase-dead mutants, and in the absence or presence of 1 μM DHX34D279A, and carried out for 20 min. We used the following ATPase-dead mutants: His-RUVBL1E303Q-RUVBL2, His-RUVBL1-RUVBL2E300Q and His-RUVBL1E303Q-RUVBL2E300Q. A similar set of the experiments were performed with untagged RUVBL1-RUVBL2 complexes (wild-type and ATPase-dead mutants) after removal of the histidine tag present in RUVBL1. We also performed control experiments using wild-type DHX34 and the DHX34D279A mutant, and only buffer. Assays were performed at least by triplicate. ATP turnover (mol ATP/mol protein) indicated in min−1 was calculated for a time interval during which the absorbance decrease was linear. Values in the graph are indicated as percentage of the rate of the wild-type protein.
 
-## Thermal stability determination
+### Thermal stability determination
 
 Samples thermostability was measured by nano differential scanning fluorimetry using a Tycho NT.6 instrument (NanoTemper Technologies) that measures the intrinsic fluorescence from tryptophan and tyrosine residues detected at emission wavelengths of 350 and 330 nm, as a 30°C · min−one thermal ramp is applied from 35°C to 95°C. The observed changes in fluorescence signal allows to monitor the unfolding process of the protein. The temperature at which a transition occurs, the inflection temperature (Ti), was determined by detecting the maximum of the first derivative of the fluorescence ratios (F350/F330) after fitting experimental data with a polynomial function.
 
-## Accession numbers
+### Accession numbers
 
 The cryo-EM maps of the RUVBL1-RUVBL2-DHX34 complex and the RUVBL1-RUVBL2 ring have been deposited in the EM database with accession codes EMD-11788 and EMD-11789 respectively. The structure of RUVBL1-RUVBL2 heterohexameric ring after binding of RNA helicase DHX34 has been deposited as PDB ID 7AHO.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.09960.001 Hippocampome.org is a comprehensive knowledge base of neuron types in the rodent hippocampal formation (dentate gyrus, CA3, CA2, CA1, subiculum, and entorhinal cortex). Although the hippocampal literature is remarkably information-rich, neuron properties are often reported with incompletely defined and notoriously inconsistent terminology, creating a formidable challenge for data integration. Our extensive literature mining and data reconciliation identified 122 neuron types based on neurotransmitter, axonal and dendritic patterns, synaptic specificity, electrophysiology, and molecular biomarkers. All ∼3700 annotated properties are individually supported by specific evidence (∼14,000 pieces) in peer-reviewed publications. Systematic analysis of this unprecedented amount of machine-readable information reveals novel correlations among neuron types and properties, the potential connectivity of the full hippocampal circuitry, and outstanding knowledge gaps. User-friendly browsing and online querying of Hippocampome.org may aid design and interpretation of both experiments and simulations. This powerful, simple, and extensible neuron classification endeavor is unique in its detail, utility, and completeness. DOI: http://dx.doi.org/10.7554/eLife.09960.001
+Hippocampome.org is a comprehensive knowledge base of neuron types in the rodent hippocampal formation (dentate gyrus, CA3, CA2, CA1, subiculum, and entorhinal cortex). Although the hippocampal literature is remarkably information-rich, neuron properties are often reported with incompletely defined and notoriously inconsistent terminology, creating a formidable challenge for data integration. Our extensive literature mining and data reconciliation identified 122 neuron types based on neurotransmitter, axonal and dendritic patterns, synaptic specificity, electrophysiology, and molecular biomarkers. All ∼3700 annotated properties are individually supported by specific evidence (∼14,000 pieces) in peer-reviewed publications. Systematic analysis of this unprecedented amount of machine-readable information reveals novel correlations among neuron types and properties, the potential connectivity of the full hippocampal circuitry, and outstanding knowledge gaps. User-friendly browsing and online querying of Hippocampome.org may aid design and interpretation of both experiments and simulations. This powerful, simple, and extensible neuron classification endeavor is unique in its detail, utility, and completeness.
 
 ## Introduction
 
@@ -33,13 +33,13 @@ The ‘Description of resource’ section of this article aims to offer a clear 
 
 ## Description of resource
 
-## Identifying neuron types by axonal and dendritic patterns
+### Identifying neuron types by axonal and dendritic patterns
 
-As a first step in the knowledge-base design, we sought the optimal level of description to capture the largest possible extent of available information. For example, just distinguishing neurons into projection cells and local interneurons is too coarse to reflect the known variety of hippocampal neuron types. In contrast, demanding a detailed quantification of axonal and dendritic morphology and connectivity excludes the majority of available scientific reports that only depict neuronal arbors qualitatively. An intermediate approach is to describe axons and dendrites based on the specific areas and layers they invade. The orderly anatomical organization of the hippocampal formation is commonly delineated into 26 cytoarchitectural parcels (
+As a first step in the knowledge-base design, we sought the optimal level of description to capture the largest possible extent of available information. For example, just distinguishing neurons into projection cells and local interneurons is too coarse to reflect the known variety of hippocampal neuron types. In contrast, demanding a detailed quantification of axonal and dendritic morphology and connectivity excludes the majority of available scientific reports that only depict neuronal arbors qualitatively. An intermediate approach is to describe axons and dendrites based on the specific areas and layers they invade. The orderly anatomical organization of the hippocampal formation is commonly delineated into 26 cytoarchitectural parcels (Figure 1A,B): DG outer stratum (s.) moleculare (SMo), inner s. moleculare (SMi), s. granulosum (SG), hilus (H); CA3 s. lacunosum-moleculare (SLM), s. radiatum (SR), s. lucidum (SL), s. pyramidale (SP), s. oriens (SO); 4 each in CA2 and CA1 (same as CA3 except SL); Sub s. moleculare (SM), SP, polymorphic layer (PL); and EC layers I–VI. Most publications that report morphological information on hippocampal neurons include evidence of axonal and dendritic presence in at least a subset of these parcels in the form of reconstructions, tracings, microscopic images, schematics, or text descriptions (Figure 1C–E).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig1-v2.jpg)
 
-**Figure 1.:** (A, B) Nissl staining of a P56 mouse (coronal sections 74 and 85 from the Allen Brain Atlas) overlaid by color-coded parcels (in accord with Temporal-Lobe.com) of (A) the hippocampus proper and (B) the rest of the hippocampal formation. See main text for abbreviations. (C–E) Example morphological reconstructions from NeuroMorpho.Org (left) with red axons and blue dendrites; their estimated axonal and dendritic breakdown by layers (middle); and Hippocampome.org representation (right) with blue square and vertical line (|) indicating dendritic presence, red square and horizontal line (−) indicating axonal presence, purple square and cross (+) indicating both axonal and dendritic presence, and a black dot (•) indicating soma location. (C) Dentate gyrus (DG) Outer Molecular Layer cell with axons in SMo and dendrites in all layers (NMO_00179; [Mott et al., 1997]). (D) CA1 O-LM cell with axons in SLM and dendrites in SO (NMO_02347; [Cossart et al., 2003]). (E) MEC LII Pyramidal-Multiform cell with axons in layers II–VI and dendrites in layers I-III (NMO_07252; (Quilichini et al., 2010]). (F) Axon and dendrite locations for 100 representative neuron types (glutamatergic: black; GABAergic: gray; full matrix: hippocampome.org/morphology or hippocampome.org/php/images/morphology/Morphology_Matrix.jpg).DOI: http://dx.doi.org/10.7554/eLife.09960.003
+**Figure 1.:** (A, B) Nissl staining of a P56 mouse (coronal sections 74 and 85 from the Allen Brain Atlas) overlaid by color-coded parcels (in accord with Temporal-Lobe.com) of (A) the hippocampus proper and (B) the rest of the hippocampal formation. See main text for abbreviations. (C–E) Example morphological reconstructions from NeuroMorpho.Org (left) with red axons and blue dendrites; their estimated axonal and dendritic breakdown by layers (middle); and Hippocampome.org representation (right) with blue square and vertical line (|) indicating dendritic presence, red square and horizontal line (−) indicating axonal presence, purple square and cross (+) indicating both axonal and dendritic presence, and a black dot (•) indicating soma location. (C) Dentate gyrus (DG) Outer Molecular Layer cell with axons in SMo and dendrites in all layers (NMO_00179; [Mott et al., 1997]). (D) CA1 O-LM cell with axons in SLM and dendrites in SO (NMO_02347; [Cossart et al., 2003]). (E) MEC LII Pyramidal-Multiform cell with axons in layers II–VI and dendrites in layers I-III (NMO_07252; (Quilichini et al., 2010]). (F) Axon and dendrite locations for 100 representative neuron types (glutamatergic: black; GABAergic: gray; full matrix: hippocampome.org/morphology or hippocampome.org/php/images/morphology/Morphology_Matrix.jpg).
 
 This relatively simple description is surprisingly effective to map neuronal diversity in the hippocampus. Specifically, the binary representation (present or not) of both axons and dendrites across the 26 hippocampal parcels (see ‘Materials and methods’) is sufficient to identify >100 unique morphological profiles based on existing literature (selection in Figure 1F; complete data: hippocampome.org/morphology). A key assumption of this framework is that neurons differing in axonal or dendritic patterns are different types. The same morphological pattern is further separated into distinct types if the neurons can be discriminated by neurotransmitter, synaptic selectivity, or consistent molecular and electrophysiological differences (see below), giving rise to 122 neuron types distinguished so far (18 in DG, 25 in CA3, 5 in CA2, 40 in CA1, 3 in Sub, and 31 in EC). The soma layer location is annotated for all neuron types, but neurons are not considered of separate types solely due to this feature if their other main characteristics are the same. Several neuron types have somata distributed across both sides of, or just along, a layer boundary, such as CA1 quadrilaminar cells (Pawelzik et al., 2002) or DG hilar commissural-associational pathway (HICAP) cells (Mott et al., 1997).
 
@@ -49,7 +49,7 @@ Hippocampome.org links information from various publications to specific neuron 
 
 An advantage of defining neuron types by their axonal and dendritic patterns is the practical cross-species invariance of these features, at least within rodents. Hippocampome.org collates data from all healthy young or adult rats, mice, and guinea pigs, but all evidence is meta-annotated with species and age information to allow separate tracking. The few cross-species morphological differences identified so far, such as the extent of CA3c infrapyramidal mossy fibers (Blaabjerg and Zimmer, 2007), are immaterial to the current granularity of the knowledge base.
 
-## Major neurotransmitter distinctions
+### Major neurotransmitter distinctions
 
 Hippocampal neurons mainly release glutamate or gamma-aminobutyric acid (GABA) (Kullmann, 2007). When the literature does not present explicit evidence for determining the neurotransmitter, a neuron type is deemed putatively glutamatergic or GABAergic depending on ancillary characteristics including (a)symmetry of synapses, excitatory or inhibitory effect, relative somatic abundance within an area, presence of dendritic spines, and local or projecting nature of the axons. Although exceptions exist for all these criteria, taken together, they are sufficiently indicative to enable the tentative inference of the main neurotransmitter for all identified neuron types based on published information (Figure 1F: black, presumed glutamatergic; gray, presumed GABAergic).
 
@@ -57,13 +57,13 @@ Neurons with the same axonal and dendritic patterns, but different neurotransmit
 
 Although most excitatory neurons in all hippocampal areas have long-range axons, Hippocampome.org also includes several local glutamatergic types in DG, CA3, and CA1. Similarly, a substantial minority of GABAergic types in these areas (16/71) have projecting axons. Knowledge is sparser in CA2, Sub, and EC. The axons of several presumed glutamatergic types in EC have not been reconstructed beyond layer VI or the angular bundle, so their participation in long-range pathways remains largely unknown (Canto and Witter, 2012a, 2012b).
 
-## Synaptic specificity
+### Synaptic specificity
 
 Certain interneurons selectively discriminate between GABAergic and glutamatergic post-synaptic partners. Like the neurotransmitter, preferential connectivity profoundly affects circuit function. This characteristic is thus essential to distinguish neuron types with the same axonal–dendritic pattern. For example, Axo-axonic and Basket cells in CA3 and CA1 have dendrites spanning all layers and axons limited to SP (e.g., Freund and Buzsáki, 1996; Klausberger and Somogyi, 2008). Axo-axonic cells, however, contact exclusively Pyramidal cells on the axon initial segments (Li et al., 1992; Ganter et al., 2004), whereas Basket cells synapse perisomatically on both principal neurons and interneurons (Buhl et al., 1994; Vida, 2010). The separation of Axo-axonic and Basket cells yields two additional types with the same axonal–dendritic patterns.
 
 Several ‘interneuron-specific’ neuron types preferentially target other GABAergic neurons over glutamatergic types. Since all known cases correspond to unique morphological patterns, such selectivity does not separate further neuron types. However, this core property is indicated in their adopted names, as in CA1 Interneuron-specific O-R cells (cf. Gulyás et al., 1996).
 
-## Other properties distinguishing neuron types
+### Other properties distinguishing neuron types
 
 The hippocampal literature offers a wealth of biochemical and electrophysiological data (see below) that are linked in the knowledge base to specific morphologically defined neuron types (‘Materials and methods’). Differences in individual molecular or biophysical features, such as the presence/absence of a single biomarker or the high/low value in one membrane property, are frequently reported for a given axonal–dendritic pattern. These cases are consistently annotated in Hippocampome.org as indicating potential sub-types, but do not establish full neuron types.
 
@@ -71,13 +71,13 @@ In contrast, when opposite expression of multiple markers and large discrepancie
 
 Similarly, both CA1 Bistratified and Ivy cells have axons and dendrites extending from SO to SR, but the former are positive for PV and somatostatin (SOM) and negative for neuronal nitric oxide synthase (nNOS), while the opposite holds for the latter; furthermore, relative to Ivy cells, Bistratified cells have lower firing threshold (Vthresh) and maximum firing rates (maxFR), larger action potential amplitude (APampl), and narrower APwidth (Fuentealba et al., 2008; Tricoire et al., 2011). Equally convincing data support the distinction of CA3 Ivy and Bistratified cells as well as the separation of basket cells in DG and CA3. In all, five additional types with non-unique axonal–dendritic patterns are established on the basis of clear and substantial molecular and electrophysiological information.
 
-## Molecular markers
+### Molecular markers
 
-Expression data are obtained from studies detecting proteins (immunohistochemistry) or mRNA (in situ hybridization, promoter constructs, or single-cell RT-PCR). The knowledge base has information on 96 biomarkers, and positive or negative expression of at least one biomarker is known for two-thirds (81/122) of the neuron types (
+Expression data are obtained from studies detecting proteins (immunohistochemistry) or mRNA (in situ hybridization, promoter constructs, or single-cell RT-PCR). The knowledge base has information on 96 biomarkers, and positive or negative expression of at least one biomarker is known for two-thirds (81/122) of the neuron types (Figure 2; extended listing: hippocampome.org/markers). The most cited biomarker is parvalbumin (PV), appearing in ∼25% of the biomarker sources in Hippocampome.org, and whose expression is known for 56 neuron types.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig2-v2.jpg)
 
-**Figure 2.:** hippocampome.org/markers or hippocampome.org/php/images/marker/Marker_Matrix.jpg; complete list of abbreviations: hippocampome.org/help).Positive expression: left green flags; negative expression: right blue; mixed expression (possible subtypes): left/right green blue; mixed expression (different experimental protocols, species, or sub-cellular localization): top orange; unresolved mixed expression: bottom red; empty gray boxes indicate that morphologically linkable information was not found. The right summary column reports the number of additional biomarkers with known expression for each neuron type. Bottom values are counts of neuron types with available information for each biomarker.DOI: http://dx.doi.org/10.7554/eLife.09960.004
+**Figure 2.:** Positive expression: left green flags; negative expression: right blue; mixed expression (possible subtypes): left/right green blue; mixed expression (different experimental protocols, species, or sub-cellular localization): top orange; unresolved mixed expression: bottom red; empty gray boxes indicate that morphologically linkable information was not found. The right summary column reports the number of additional biomarkers with known expression for each neuron type. Bottom values are counts of neuron types with available information for each biomarker.
 
 In 79 of the 566 cases with available expression data for the 20 most cited biomarkers (non-gray squares in Figure 2 and hippocampome.org/markers), evidence exists for a neuron type to both express and not express a given biomarker. In 13 of these cases, the incongruity can be attributed to species, technique, or sub-cellular localization differences (Figure 2, orange, down-facing flags). For example, mossy cells express calretinin (CR) in mice (Blasco-Ibáñez and Freund, 1997), but not in rats (Freund et al., 1997). In another case, in situ hybridization showed GABAA-α1 expression in rat CA1 Pyramidal cells (Miralles et al., 1994), yet somatic immunohistochemistry of these neurons is negative; however, their dendrites show positive expression (Lopez-Tellez et al., 2004).
 
@@ -85,59 +85,741 @@ Another 58 mixed cases are designated as possible subtypes (Figure 2, blue and g
 
 In the remaining eight cases of mixed expression (red, upward-facing flags), data come from multiple sources that use the same species and technique (e.g., rat immunohistochemistry); however, non-identical experimental details (e.g., the antibodies used) prevent conclusive interpretation.
 
-## Electrophysiology
+### Electrophysiology
 
-Electrophysiological characteristics vary extensively across hippocampal neurons. Passive, spike, and other response parameters are commonly recorded in the slice preparation. Slice recording is highly dependent on experimental method (patch clamp or sharp microelectrode), animal species and age, bathing and intra-electrode solution, and temperature. Thus, summary values (Table 1 for 50 representative neuron types; complete listing: hippocampome.org/electrophysiology) are not averaged across all studies, but rather reflect data from a single report under ‘preferred’ conditions (operationally defined as rat patch clamp at body temperature) with the largest number of measurements (n). These settings represent 61% of the data in Table 1. If these conditions are unavailable, the precedence order is patch clamp over microelectrodes, body temperature over room temperature, and rats over mice over guinea pigs. However, all collected parameter values (preferred or otherwise) for every neuron type are accessible at Hippocampome.org, each complete with metadata, available statistics, and direct links to underlying experimental evidence. Three-quarters of the neuron types (93/122) have measurements reported for four or more parameters, the most common being APampl, fast afterhyperpolarization amplitude (fAHP), and Vthresh.10.7554/eLife.09960.005Table 1.Electrophysiological properties for 50 representative neuron types (full table: hippocampome.org/electrophysiology or hippocampome.org/php/images/electrophysiology/Electrophysiology_Table.jpg)DOI: http://dx.doi.org/10.7554/eLife.09960.005Vrest (mV)Rin (MΩ)τm (ms)Vthresh (mV)fAHP (mV)APampl (mV)APwidth (ms)maxFR (Hz)sAHP (mV)Sag ratioDG (8)Granule−75 ± 2(16) ∈ 5228 ± 79.1(31) ∈ 526.9 ± 6.7(31) ∈ 535 ∈ 511.7 ± 1.1(16) ∈ 391 ∈ 50.87 ± 0.06(16) ∈ 272 ± 8(16)0.6 ± 0.4(16) ∈ 30.97 ± 0.01(16) ∈ 3Mossy−62 ± 1(9)199 ± 19(9)41 ± 3(8)23.76.2 ± 0.9(9)62.50.78 ± 0.04(9)50 ± 6(9)2.8 ± 0.7(9)0.81 ± 0.03(9)AIPRIM−64 ± 2(4)363 ± 62(4)30 ± 6(4)1612.3 ± 2.3(4)[76, 77.9]0.5 ± 0.02(4)81 ± 9(4)9 ± 2.7(4)0.8 ± 0.04(4)DG Axo-axonic−65.1 ± 3.9(14)e73.9 ± 23.8(14)e7.7 ± 3.8(14)e13r ∈ 27r ∈ 278r ∈ 20.42r ∈ 285r4.5r ∈ 2–DG Basket−62 ± 3(3)43 ± 5(3) ∈ 310 ± 1(3) ∈ 2[17.6, 19.0] ∈ 320 ± 2.3(3) ∈ 2[71.6, 73.6] ∈ 20.25 ± 0.04(3) ∈ 2230 ± 15(3) ∈ 22.3 ± 0.2(3)0.97 ± 0.02(3) ∈ 2HIPROM−65 ± 6(3)371 ± 47(3)35[25.1, 27.3]13.1 ± 3.0(3)80.80.72 ± 0.08(3)69 ± 4(3)3.1 ± 1.0(3)0.82 ± 0.02(3)MOLAX−54.5 ± 1.9(13) ∈ 2198.2 ± 23.8(13) ∈ 218.4 ± 1.1(13)15.2 ∈ 211 ∈ 2[43.2, 44.4] ∈ 2[1.26, 1.64]503.5mr ∈ 2–Total Molecular Layer−54.5 ± 1.9(13)198.2 ± 23.8(13)18.4 ± 1.1(13)15.211[43.2, 44.4][1.26, 1.64]504.5–CA3 (8)CA3 Pyramidal−60.5 ± 5.4(43) ∈ 8126 ± 8(35) ∈ 861 ± 24(36) ∈ 713 ∈ 510.2 ± 0.5(43) ∈ 397.6 ± 1.9(43) ∈ 41 ± 0.1(43) ∈ 440 ± 20.8(3)7.5m ∈ 31.01 ± 0.01(7) ∈ 4CA3 Giant−57 ± 1.2(28)r595 ± 224(28)r67 ± 23(28)r22r14r76 ± 7.5(28)r1.1 ± 0.1(28)r>50 ± 3(13)7.1r0.68rCA3 Granule−78 ± 0.5(15)139 ± 11(15)17.1 ± 1.8(15)27.47.95104.3[0.821, 1.072]>1001.750.99CA3 Basket−58.5 ± 2.8(6)mr122.9 ± 26.7(6)mr11.2 ± 2.9(6)mr25.6mr35mr77.1mr0.54 ± 0.1(8)mr33.6 ± 6.4(6)mr3mr0.93mrLucidum ORAX−61 ± 6(9) ∈ 2284 ± 180(9) ∈ 242 ± 17(8) ∈ 216.3 ∈ 215 ± 6.6(9) ∈ 277.7 ∈ 20.53 ± 0.2(9) ∈ 275 ± 28.3(8) ∈ 26.6 ± 3.9(9) ∈ 20.9 ± 0.1(8) ∈ 2MFA ORDEN−57 ± 5(13)225 ± 93(13)29.1 ± 14.6(13)2013.1 ± 1.9(13)740.72 ± 0.15(13)73 ± 16(13)6.5–CA3 O-LM−60 ± 12(15)mr315.1 ± 161.1(15)mr33.3 ± 5.4(15)mr[16, 37]mr34.8mr109mr0.84 ± 0.2(15)mr182 ± 161.1(15)mr1.3mr0.79 ± 0.1(10)mrCA3 Trilaminar−61.2 ± 13(8)mr167.3 ± 59.1(8)mr16.9 ± 8.8(8)mr12mr30mr[69, 99]mr0.57 ± 0(8)mr101.5 ± 62.2(8)mr0.1mr0.88mrCA2 (4)CA2 Basket−71.2 ± 4(6)e77 ± 19.3(6)e8.2 ± 3.2(6)e[17, 27]e22 ± 5.1(6)e62.7 ± 9(6)e0.5 ± 0.1(6)e>180e3e0.99eCA2 Wide-arbor BC−74.9 ± 5.6(10)e111.8 ± 36.7(10)e12.6 ± 4.2(10)e[26, 34]e19.5 ± 9(10)e65.5 ± 7.1(10)e0.6 ± 0.1(10)e>125e7e0.55eCA2 Bistratified−72.7 ± 1.1(3)e83.3 ± 16.7(3)e13.7 ± 10(3)e[42, 56]e14.4 ± 11.8(3)e65.2 ± 7.8(3)e0.4 ± 0.1(3)e–3.2e0.99eCA2 SP-SR−71 ± 4.5(8)e82.6 ± 24.4(8)e12.7 ± 3.8(8)e19e11.5e67e0.5 ± 0.1(8)e>160e3.3e0.86eCA1 (16)CA1 Pyramidal−62.4 ± 2.4(21) ∈ 765.6 ± 4.4(20) ∈ 722.4 ± 1.5(20) ∈ 616.6 ∈ 76.8 ∈ 290 ∈ 41 ∈ 3>321.7 ∈ 30.74 ∈ 3CA1 Radiatum Giant−66 ± 3.6(16) ∈ 256 ± 14(25) ∈ 250 ± 7.9(7)r ∈ 231 ∈ 28 ∈ 270 ∈ 21.9 ± 0.2(7)r>268.3r ∈ 20.86 ∈ 2CA1 Horizontal AA−57 ± 5(15)m[186, 252]r[16, 32]r25m[6.0, 13.7]r[71.4, 90.2]r[0.7, 1.1]r87r ∈ 26.1m0.74mCA1 Basket−57 ± 5(15)m ∈ 2116 ± 63(15)m ∈ 213 ± 8(15)m ∈ 219 ∈ 310 ∈ 362 ∈ 30.54 ± 0.11(15)m ∈ 2>602e ∈ 30.84 ± 0.06(15)mCA1 BC CCK+−61.4 ± 3.2(5)281.68 ± 79.7(5)25.07 ± 5.6(5)21.5 ∈ 315.17 ± 3.4(5) ∈ 376.92 ± 11.7(5) ∈ 30.84 ± 0.1(5)>307 ∈ 20.825CA1 Horizontal BC−55.4 ± 9.5(17) ∈ 2[116, 199] ∈ 2[15.4, 25.5] ∈ 224 ∈ 211 ∈ 2130 ∈ 20.77 ± 0.10(18)m ∈ 2>50m4.8m ∈ 20.6 ∈ 2CA1 Ivy−7172.8 ± 53.6(5)7.6 ± 4.1(5)30.113.6 ± 3.8(5)440.8 ± 0.2(5)–30.98CA1 LMR−53.1 ± 4.0(48)r ∈ 3352 ± 107(49)r ∈ 332.9 ± 12.7(11)r ∈ 313.2r ∈ 321.5r ∈ 386.9 ± 11.0(49)r ∈ 31.3r ∈ 3–0.2r ∈ 40.92 ± 0.11(15)r ∈ 3CA1 Neurogliaform−63.1 ± 5.6(33) ∈ 2215.3 ± 92.8(32) ∈ 212.43 ± 4.59(32) ∈ 232.4 ∈ 220.4 ± 4.1(34) ∈ 273 ∈ 20.9 ± 0.18(26) ∈ 252.8 ± 31.0(26)9 ∈ 20.99 ∈ 2CA1 NGF Projecting−63.1 ± 5.6(33)215.3 ± 92.8(32)12.43 ± 4.59(32)32.420.4 ± 4.1(34)730.9 ± 0.18(26)52.8 ± 31.0(26)90.99CA1 Recurrent O-LM[−85, −65]e70 ± 13.72(8)e12.8 ± 1.5(8)e25e16.1 ± 10.7(8)e58.75 ± 7.2(8)e0.6 ± 0.3(8)e>150e5e0.71eCA1 PPA QuadD−64 ± 7(23)m216 ± 124(23)m46 ± 18(23)m27m22 ± 3(23)m61 ± 7(23)m0.77 ± 0.12(23)m>40m1.3m0.79 ± 0.09(23)mSchaffer Collateral-Assoc−55.8 ± 2.8(10)e ∈ 296.3 ± 36.0(10)e ∈ 216.2 ± 8.9(10)e ∈ 211e ∈ 211.4 ± 2.8(10)e ∈ 270.8 ± 8.0(10)e ∈ 20.74 ± 0.1(10)e ∈ 2>1005.5e ∈ 20.86eCA1 SO–SO−59 ± 10(19)m ∈ 2401 ± 212(19)m38 ± 13(19)m24m ∈ 215 ± 4(19)m ∈ 248 ± 10(19)m ∈ 21.12 ± 0.14(19)m>160m4.8m ∈ 20.69m ∈ 2CA1 Trilaminar−64 ± 7(23)m216 ± 124(23)m46 ± 18(23)m27m22 ± 3(23)m61 ± 7(23)m0.77 ± 0.12(23)m>130m4.7m0.79mCA1 Radial Trilaminar−57 ± 5(15)m116 ± 63(15)m13 ± 8(15)m29m ∈ 325 ± 4(15)m ∈ 348 ± 8(15)m ∈ 30.54 ± 0.11(15)m>120m0.82m ∈ 30.89mEC (14)LI-II Multipolar-Pyramidal[−70, −56]430 ± 121.7(37)25 ± 15.2(37)[8.1, 23.1][3.7, 7.3]77.5 ± 15.2(37)1.22 ± 0.4(37)>504.70.78 ± 0.06(37)LI-II Pyramidal-Fan[−62, −59] ∈ 2400 ± 98(96) ∈ 215.8 ± 14.2(96) ∈ 2[7.5, 8.4] ∈ 2[7.1, 7.3] ∈ 269 ± 19.6(96) ∈ 21.25 ± 0.49(96) ∈ 2>40[0, 6] ∈ 20.66 ± 0.05(96) ∈ 2MEC LII PC-Multiform[−70, −56]430 ± 121.7(37)25 ± 15.2(37)[8.1, 23.1][3.7, 7.3]77.5 ± 15.2(37)1.22 ± 0.4(37)>254.70.78 ± 0.06(37)MEC LII Oblique Pyramidal[−62, −59]400 ± 98(96)15.8 ± 14.2(96)[7.5, 8.4][7.1, 7.3]69 ± 19.6(96)1.25 ± 0.49(96)>40[0, 6]0.66 ± 0.05(96)MEC LII Stellate[−62, −59] ∈ 230.2 ± 12.5(112)e ∈ 28.9 ± 1.9(112)e ∈ 2[7.5, 8.4] ∈ 2[7.1, 7.3] ∈ 269 ± 19.6(96) ∈ 21.25 ± 0.49(96) ∈ 2>40[0, 6]0.66 ± 0.05(96) ∈ 2LII-III Pyramidal-Tripolar[−70, −56] ∈ 2400 ± 98(96) ∈ 215.8 ± 14.2(96) ∈ 2[8.1, 23.1] ∈ 2[3.7, 7.3] ∈ 269 ± 19.6(96) ∈ 21.25 ± 0.49(96) ∈ 2>404.7 ∈ 20.66 ± 0.05(96) ∈ 2LEC LIII Multipolar Principal[−68, −65]450 ± 78(27)29 ± 12.5(27)[21.17, 26.03][10.23, 11.04]70 ± 15.6(27)1.38 ± 0.26(27)>254.060.9 ± 0.1(27)LEC LIII Complex Pyramidal[−68, −65]450 ± 78(27)29 ± 12.5(27)[21.17,26.03][10.23,11.04]70 ± 15.6(27)1.38 ± 0.26(27)>254.060.9 ± 0.1(27)LIII Pyramidal-Stellate[−68, −65] ∈ 2450 ± 78(27) ∈ 229 ± 12.5(27) ∈ 2[21.17, 26.03] ∈ 2[10.23, 11.04] ∈ 270 ± 15.6(27) ∈ 21.38 ± 0.26(27) ∈ 2[85, 105]e ∈ 24.06 ∈ 20.9 ± 0.1(27)LIII-V Bipolar Pyramidal[−69, −67]490 ± 79(28)36 ± 16(28)[18.2, 21.8][5.6, 8.7]70 ± 15.9(28)1.48 ± 0.2(28)>29[2, 7]0.86 ± 0.11(28)LIV-VI Deep Multipolar−59.8 ± 6.8(8) ∈ 4272.3 ± 105.8(8) ∈ 426.6 ± 6.5(8) ∈ 436 ∈ 415 ∈ 475 ∈ 41.39 ± 0.6(8) ∈ 4>704.4 ∈ 40.9 ∈ 3LV Deep Pyramidal−65.02 ± 3.8(38)e ∈ 275.67 ± 28.72(38)e ∈ 212.83 ± 3.65(38)e ∈ 222.14e ∈ 217.44 ± 2.64(38)e ∈ 264.96 ± 6.53(38)e ∈ 21.53 ± 0.28(38)e ∈ 2>700.1e ∈ 20.88e ∈ 2MEC LV-VI PC-Polymorph−63480 ± 94(14)41 ± 19(14)[26.7, 28.7][7.1, 9.1]73 ± 8 (14)2.1 ± 0.8(14)>331.60.91 ± 0.09(14)LEC LVI Multipolar-PC−64450 ± 90(13)26 ± 14(13)[26.8, 29.0][6.0, 8.8]74 ± 14 (13)1.7 ± 0.4(13)>101.20.9 ± 0.1(13)Values are mean values ± standard deviations or [range]; parentheses indicate the number of data points (default = 1; 2 for ranges). Values of maxFR reported as relative lower limits (e.g., >30 Hz) are measured from limited spike trains. The data are selected from a set (∈) of available values based on experimental conditions and number of measurements. Preferred conditions (rat/body temperature/patch clamp) are not indicated; otherwise, m = mice, r = room temperature, e = microelectrodes.
+Electrophysiological characteristics vary extensively across hippocampal neurons. Passive, spike, and other response parameters are commonly recorded in the slice preparation. Slice recording is highly dependent on experimental method (patch clamp or sharp microelectrode), animal species and age, bathing and intra-electrode solution, and temperature. Thus, summary values (Table 1 for 50 representative neuron types; complete listing: hippocampome.org/electrophysiology) are not averaged across all studies, but rather reflect data from a single report under ‘preferred’ conditions (operationally defined as rat patch clamp at body temperature) with the largest number of measurements (n). These settings represent 61% of the data in Table 1. If these conditions are unavailable, the precedence order is patch clamp over microelectrodes, body temperature over room temperature, and rats over mice over guinea pigs. However, all collected parameter values (preferred or otherwise) for every neuron type are accessible at Hippocampome.org, each complete with metadata, available statistics, and direct links to underlying experimental evidence. Three-quarters of the neuron types (93/122) have measurements reported for four or more parameters, the most common being APampl, fast afterhyperpolarization amplitude (fAHP), and Vthresh.
 
-## Summary of design criteria
+**Table 1.**
+ Electrophysiological properties for 50 representative neuron types (full table: hippocampome.org/electrophysiology or hippocampome.org/php/images/electrophysiology/Electrophysiology_Table.jpg)
 
-Although
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Vrest (mV)</th>
+      <th>Rin (MΩ)</th>
+      <th>τm (ms)</th>
+      <th>Vthresh (mV)</th>
+      <th>fAHP (mV)</th>
+      <th>APampl (mV)</th>
+      <th>APwidth (ms)</th>
+      <th>maxFR (Hz)</th>
+      <th>sAHP (mV)</th>
+      <th>Sag ratio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">DG (8)</td>
+      <td>Granule</td>
+      <td>−75 ± 2(16) ∈ 5</td>
+      <td>228 ± 79.1(31) ∈ 5</td>
+      <td>26.9 ± 6.7(31) ∈ 5</td>
+      <td>35 ∈ 5</td>
+      <td>11.7 ± 1.1(16) ∈ 3</td>
+      <td>91 ∈ 5</td>
+      <td>0.87 ± 0.06(16) ∈ 2</td>
+      <td>72 ± 8(16)</td>
+      <td>0.6 ± 0.4(16) ∈ 3</td>
+      <td>0.97 ± 0.01(16) ∈ 3</td>
+    </tr>
+    <tr>
+      <td>Mossy</td>
+      <td>−62 ± 1(9)</td>
+      <td>199 ± 19(9)</td>
+      <td>41 ± 3(8)</td>
+      <td>23.7</td>
+      <td>6.2 ± 0.9(9)</td>
+      <td>62.5</td>
+      <td>0.78 ± 0.04(9)</td>
+      <td>50 ± 6(9)</td>
+      <td>2.8 ± 0.7(9)</td>
+      <td>0.81 ± 0.03(9)</td>
+    </tr>
+    <tr>
+      <td>AIPRIM</td>
+      <td>−64 ± 2(4)</td>
+      <td>363 ± 62(4)</td>
+      <td>30 ± 6(4)</td>
+      <td>16</td>
+      <td>12.3 ± 2.3(4)</td>
+      <td>[76, 77.9]</td>
+      <td>0.5 ± 0.02(4)</td>
+      <td>81 ± 9(4)</td>
+      <td>9 ± 2.7(4)</td>
+      <td>0.8 ± 0.04(4)</td>
+    </tr>
+    <tr>
+      <td>DG Axo-axonic</td>
+      <td>−65.1 ± 3.9(14)e</td>
+      <td>73.9 ± 23.8(14)e</td>
+      <td>7.7 ± 3.8(14)e</td>
+      <td>13r ∈ 2</td>
+      <td>7r ∈ 2</td>
+      <td>78r ∈ 2</td>
+      <td>0.42r ∈ 2</td>
+      <td>85r</td>
+      <td>4.5r ∈ 2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>DG Basket</td>
+      <td>−62 ± 3(3)</td>
+      <td>43 ± 5(3) ∈ 3</td>
+      <td>10 ± 1(3) ∈ 2</td>
+      <td>[17.6, 19.0] ∈ 3</td>
+      <td>20 ± 2.3(3) ∈ 2</td>
+      <td>[71.6, 73.6] ∈ 2</td>
+      <td>0.25 ± 0.04(3) ∈ 2</td>
+      <td>230 ± 15(3) ∈ 2</td>
+      <td>2.3 ± 0.2(3)</td>
+      <td>0.97 ± 0.02(3) ∈ 2</td>
+    </tr>
+    <tr>
+      <td>HIPROM</td>
+      <td>−65 ± 6(3)</td>
+      <td>371 ± 47(3)</td>
+      <td>35</td>
+      <td>[25.1, 27.3]</td>
+      <td>13.1 ± 3.0(3)</td>
+      <td>80.8</td>
+      <td>0.72 ± 0.08(3)</td>
+      <td>69 ± 4(3)</td>
+      <td>3.1 ± 1.0(3)</td>
+      <td>0.82 ± 0.02(3)</td>
+    </tr>
+    <tr>
+      <td>MOLAX</td>
+      <td>−54.5 ± 1.9(13) ∈ 2</td>
+      <td>198.2 ± 23.8(13) ∈ 2</td>
+      <td>18.4 ± 1.1(13)</td>
+      <td>15.2 ∈ 2</td>
+      <td>11 ∈ 2</td>
+      <td>[43.2, 44.4] ∈ 2</td>
+      <td>[1.26, 1.64]</td>
+      <td>50</td>
+      <td>3.5mr ∈ 2</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Total Molecular Layer</td>
+      <td>−54.5 ± 1.9(13)</td>
+      <td>198.2 ± 23.8(13)</td>
+      <td>18.4 ± 1.1(13)</td>
+      <td>15.2</td>
+      <td>11</td>
+      <td>[43.2, 44.4]</td>
+      <td>[1.26, 1.64]</td>
+      <td>50</td>
+      <td>4.5</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td rowspan="8">CA3 (8)</td>
+      <td>CA3 Pyramidal</td>
+      <td>−60.5 ± 5.4(43) ∈ 8</td>
+      <td>126 ± 8(35) ∈ 8</td>
+      <td>61 ± 24(36) ∈ 7</td>
+      <td>13 ∈ 5</td>
+      <td>10.2 ± 0.5(43) ∈ 3</td>
+      <td>97.6 ± 1.9(43) ∈ 4</td>
+      <td>1 ± 0.1(43) ∈ 4</td>
+      <td>40 ± 20.8(3)</td>
+      <td>7.5m ∈ 3</td>
+      <td>1.01 ± 0.01(7) ∈ 4</td>
+    </tr>
+    <tr>
+      <td>CA3 Giant</td>
+      <td>−57 ± 1.2(28)r</td>
+      <td>595 ± 224(28)r</td>
+      <td>67 ± 23(28)r</td>
+      <td>22r</td>
+      <td>14r</td>
+      <td>76 ± 7.5(28)r</td>
+      <td>1.1 ± 0.1(28)r</td>
+      <td>&gt;50 ± 3(13)</td>
+      <td>7.1r</td>
+      <td>0.68r</td>
+    </tr>
+    <tr>
+      <td>CA3 Granule</td>
+      <td>−78 ± 0.5(15)</td>
+      <td>139 ± 11(15)</td>
+      <td>17.1 ± 1.8(15)</td>
+      <td>27.4</td>
+      <td>7.95</td>
+      <td>104.3</td>
+      <td>[0.821, 1.072]</td>
+      <td>&gt;100</td>
+      <td>1.75</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>CA3 Basket</td>
+      <td>−58.5 ± 2.8(6)mr</td>
+      <td>122.9 ± 26.7(6)mr</td>
+      <td>11.2 ± 2.9(6)mr</td>
+      <td>25.6mr</td>
+      <td>35mr</td>
+      <td>77.1mr</td>
+      <td>0.54 ± 0.1(8)mr</td>
+      <td>33.6 ± 6.4(6)mr</td>
+      <td>3mr</td>
+      <td>0.93mr</td>
+    </tr>
+    <tr>
+      <td>Lucidum ORAX</td>
+      <td>−61 ± 6(9) ∈ 2</td>
+      <td>284 ± 180(9) ∈ 2</td>
+      <td>42 ± 17(8) ∈ 2</td>
+      <td>16.3 ∈ 2</td>
+      <td>15 ± 6.6(9) ∈ 2</td>
+      <td>77.7 ∈ 2</td>
+      <td>0.53 ± 0.2(9) ∈ 2</td>
+      <td>75 ± 28.3(8) ∈ 2</td>
+      <td>6.6 ± 3.9(9) ∈ 2</td>
+      <td>0.9 ± 0.1(8) ∈ 2</td>
+    </tr>
+    <tr>
+      <td>MFA ORDEN</td>
+      <td>−57 ± 5(13)</td>
+      <td>225 ± 93(13)</td>
+      <td>29.1 ± 14.6(13)</td>
+      <td>20</td>
+      <td>13.1 ± 1.9(13)</td>
+      <td>74</td>
+      <td>0.72 ± 0.15(13)</td>
+      <td>73 ± 16(13)</td>
+      <td>6.5</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CA3 O-LM</td>
+      <td>−60 ± 12(15)mr</td>
+      <td>315.1 ± 161.1(15)mr</td>
+      <td>33.3 ± 5.4(15)mr</td>
+      <td>[16, 37]mr</td>
+      <td>34.8mr</td>
+      <td>109mr</td>
+      <td>0.84 ± 0.2(15)mr</td>
+      <td>182 ± 161.1(15)mr</td>
+      <td>1.3mr</td>
+      <td>0.79 ± 0.1(10)mr</td>
+    </tr>
+    <tr>
+      <td>CA3 Trilaminar</td>
+      <td>−61.2 ± 13(8)mr</td>
+      <td>167.3 ± 59.1(8)mr</td>
+      <td>16.9 ± 8.8(8)mr</td>
+      <td>12mr</td>
+      <td>30mr</td>
+      <td>[69, 99]mr</td>
+      <td>0.57 ± 0(8)mr</td>
+      <td>101.5 ± 62.2(8)mr</td>
+      <td>0.1mr</td>
+      <td>0.88mr</td>
+    </tr>
+    <tr>
+      <td rowspan="4">CA2 (4)</td>
+      <td>CA2 Basket</td>
+      <td>−71.2 ± 4(6)e</td>
+      <td>77 ± 19.3(6)e</td>
+      <td>8.2 ± 3.2(6)e</td>
+      <td>[17, 27]e</td>
+      <td>22 ± 5.1(6)e</td>
+      <td>62.7 ± 9(6)e</td>
+      <td>0.5 ± 0.1(6)e</td>
+      <td>&gt;180e</td>
+      <td>3e</td>
+      <td>0.99e</td>
+    </tr>
+    <tr>
+      <td>CA2 Wide-arbor BC</td>
+      <td>−74.9 ± 5.6(10)e</td>
+      <td>111.8 ± 36.7(10)e</td>
+      <td>12.6 ± 4.2(10)e</td>
+      <td>[26, 34]e</td>
+      <td>19.5 ± 9(10)e</td>
+      <td>65.5 ± 7.1(10)e</td>
+      <td>0.6 ± 0.1(10)e</td>
+      <td>&gt;125e</td>
+      <td>7e</td>
+      <td>0.55e</td>
+    </tr>
+    <tr>
+      <td>CA2 Bistratified</td>
+      <td>−72.7 ± 1.1(3)e</td>
+      <td>83.3 ± 16.7(3)e</td>
+      <td>13.7 ± 10(3)e</td>
+      <td>[42, 56]e</td>
+      <td>14.4 ± 11.8(3)e</td>
+      <td>65.2 ± 7.8(3)e</td>
+      <td>0.4 ± 0.1(3)e</td>
+      <td>–</td>
+      <td>3.2e</td>
+      <td>0.99e</td>
+    </tr>
+    <tr>
+      <td>CA2 SP-SR</td>
+      <td>−71 ± 4.5(8)e</td>
+      <td>82.6 ± 24.4(8)e</td>
+      <td>12.7 ± 3.8(8)e</td>
+      <td>19e</td>
+      <td>11.5e</td>
+      <td>67e</td>
+      <td>0.5 ± 0.1(8)e</td>
+      <td>&gt;160e</td>
+      <td>3.3e</td>
+      <td>0.86e</td>
+    </tr>
+    <tr>
+      <td rowspan="16">CA1 (16)</td>
+      <td>CA1 Pyramidal</td>
+      <td>−62.4 ± 2.4(21) ∈ 7</td>
+      <td>65.6 ± 4.4(20) ∈ 7</td>
+      <td>22.4 ± 1.5(20) ∈ 6</td>
+      <td>16.6 ∈ 7</td>
+      <td>6.8 ∈ 2</td>
+      <td>90 ∈ 4</td>
+      <td>1 ∈ 3</td>
+      <td>&gt;32</td>
+      <td>1.7 ∈ 3</td>
+      <td>0.74 ∈ 3</td>
+    </tr>
+    <tr>
+      <td>CA1 Radiatum Giant</td>
+      <td>−66 ± 3.6(16) ∈ 2</td>
+      <td>56 ± 14(25) ∈ 2</td>
+      <td>50 ± 7.9(7)r ∈ 2</td>
+      <td>31 ∈ 2</td>
+      <td>8 ∈ 2</td>
+      <td>70 ∈ 2</td>
+      <td>1.9 ± 0.2(7)r</td>
+      <td>&gt;26</td>
+      <td>8.3r ∈ 2</td>
+      <td>0.86 ∈ 2</td>
+    </tr>
+    <tr>
+      <td>CA1 Horizontal AA</td>
+      <td>−57 ± 5(15)m</td>
+      <td>[186, 252]r</td>
+      <td>[16, 32]r</td>
+      <td>25m</td>
+      <td>[6.0, 13.7]r</td>
+      <td>[71.4, 90.2]r</td>
+      <td>[0.7, 1.1]r</td>
+      <td>87r ∈ 2</td>
+      <td>6.1m</td>
+      <td>0.74m</td>
+    </tr>
+    <tr>
+      <td>CA1 Basket</td>
+      <td>−57 ± 5(15)m ∈ 2</td>
+      <td>116 ± 63(15)m ∈ 2</td>
+      <td>13 ± 8(15)m ∈ 2</td>
+      <td>19 ∈ 3</td>
+      <td>10 ∈ 3</td>
+      <td>62 ∈ 3</td>
+      <td>0.54 ± 0.11(15)m ∈ 2</td>
+      <td>&gt;60</td>
+      <td>2e ∈ 3</td>
+      <td>0.84 ± 0.06(15)m</td>
+    </tr>
+    <tr>
+      <td>CA1 BC CCK+</td>
+      <td>−61.4 ± 3.2(5)</td>
+      <td>281.68 ± 79.7(5)</td>
+      <td>25.07 ± 5.6(5)</td>
+      <td>21.5 ∈ 3</td>
+      <td>15.17 ± 3.4(5) ∈ 3</td>
+      <td>76.92 ± 11.7(5) ∈ 3</td>
+      <td>0.84 ± 0.1(5)</td>
+      <td>&gt;30</td>
+      <td>7 ∈ 2</td>
+      <td>0.825</td>
+    </tr>
+    <tr>
+      <td>CA1 Horizontal BC</td>
+      <td>−55.4 ± 9.5(17) ∈ 2</td>
+      <td>[116, 199] ∈ 2</td>
+      <td>[15.4, 25.5] ∈ 2</td>
+      <td>24 ∈ 2</td>
+      <td>11 ∈ 2</td>
+      <td>130 ∈ 2</td>
+      <td>0.77 ± 0.10(18)m ∈ 2</td>
+      <td>&gt;50m</td>
+      <td>4.8m ∈ 2</td>
+      <td>0.6 ∈ 2</td>
+    </tr>
+    <tr>
+      <td>CA1 Ivy</td>
+      <td>−71</td>
+      <td>72.8 ± 53.6(5)</td>
+      <td>7.6 ± 4.1(5)</td>
+      <td>30.1</td>
+      <td>13.6 ± 3.8(5)</td>
+      <td>44</td>
+      <td>0.8 ± 0.2(5)</td>
+      <td>–</td>
+      <td>3</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>CA1 LMR</td>
+      <td>−53.1 ± 4.0(48)r ∈ 3</td>
+      <td>352 ± 107(49)r ∈ 3</td>
+      <td>32.9 ± 12.7(11)r ∈ 3</td>
+      <td>13.2r ∈ 3</td>
+      <td>21.5r ∈ 3</td>
+      <td>86.9 ± 11.0(49)r ∈ 3</td>
+      <td>1.3r ∈ 3</td>
+      <td>–</td>
+      <td>0.2r ∈ 4</td>
+      <td>0.92 ± 0.11(15)r ∈ 3</td>
+    </tr>
+    <tr>
+      <td>CA1 Neurogliaform</td>
+      <td>−63.1 ± 5.6(33) ∈ 2</td>
+      <td>215.3 ± 92.8(32) ∈ 2</td>
+      <td>12.43 ± 4.59(32) ∈ 2</td>
+      <td>32.4 ∈ 2</td>
+      <td>20.4 ± 4.1(34) ∈ 2</td>
+      <td>73 ∈ 2</td>
+      <td>0.9 ± 0.18(26) ∈ 2</td>
+      <td>52.8 ± 31.0(26)</td>
+      <td>9 ∈ 2</td>
+      <td>0.99 ∈ 2</td>
+    </tr>
+    <tr>
+      <td>CA1 NGF Projecting</td>
+      <td>−63.1 ± 5.6(33)</td>
+      <td>215.3 ± 92.8(32)</td>
+      <td>12.43 ± 4.59(32)</td>
+      <td>32.4</td>
+      <td>20.4 ± 4.1(34)</td>
+      <td>73</td>
+      <td>0.9 ± 0.18(26)</td>
+      <td>52.8 ± 31.0(26)</td>
+      <td>9</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>CA1 Recurrent O-LM</td>
+      <td>[−85, −65]e</td>
+      <td>70 ± 13.72(8)e</td>
+      <td>12.8 ± 1.5(8)e</td>
+      <td>25e</td>
+      <td>16.1 ± 10.7(8)e</td>
+      <td>58.75 ± 7.2(8)e</td>
+      <td>0.6 ± 0.3(8)e</td>
+      <td>&gt;150e</td>
+      <td>5e</td>
+      <td>0.71e</td>
+    </tr>
+    <tr>
+      <td>CA1 PPA QuadD</td>
+      <td>−64 ± 7(23)m</td>
+      <td>216 ± 124(23)m</td>
+      <td>46 ± 18(23)m</td>
+      <td>27m</td>
+      <td>22 ± 3(23)m</td>
+      <td>61 ± 7(23)m</td>
+      <td>0.77 ± 0.12(23)m</td>
+      <td>&gt;40m</td>
+      <td>1.3m</td>
+      <td>0.79 ± 0.09(23)m</td>
+    </tr>
+    <tr>
+      <td>Schaffer Collateral-Assoc</td>
+      <td>−55.8 ± 2.8(10)e ∈ 2</td>
+      <td>96.3 ± 36.0(10)e ∈ 2</td>
+      <td>16.2 ± 8.9(10)e ∈ 2</td>
+      <td>11e ∈ 2</td>
+      <td>11.4 ± 2.8(10)e ∈ 2</td>
+      <td>70.8 ± 8.0(10)e ∈ 2</td>
+      <td>0.74 ± 0.1(10)e ∈ 2</td>
+      <td>&gt;100</td>
+      <td>5.5e ∈ 2</td>
+      <td>0.86e</td>
+    </tr>
+    <tr>
+      <td>CA1 SO–SO</td>
+      <td>−59 ± 10(19)m ∈ 2</td>
+      <td>401 ± 212(19)m</td>
+      <td>38 ± 13(19)m</td>
+      <td>24m ∈ 2</td>
+      <td>15 ± 4(19)m ∈ 2</td>
+      <td>48 ± 10(19)m ∈ 2</td>
+      <td>1.12 ± 0.14(19)m</td>
+      <td>&gt;160m</td>
+      <td>4.8m ∈ 2</td>
+      <td>0.69m ∈ 2</td>
+    </tr>
+    <tr>
+      <td>CA1 Trilaminar</td>
+      <td>−64 ± 7(23)m</td>
+      <td>216 ± 124(23)m</td>
+      <td>46 ± 18(23)m</td>
+      <td>27m</td>
+      <td>22 ± 3(23)m</td>
+      <td>61 ± 7(23)m</td>
+      <td>0.77 ± 0.12(23)m</td>
+      <td>&gt;130m</td>
+      <td>4.7m</td>
+      <td>0.79m</td>
+    </tr>
+    <tr>
+      <td>CA1 Radial Trilaminar</td>
+      <td>−57 ± 5(15)m</td>
+      <td>116 ± 63(15)m</td>
+      <td>13 ± 8(15)m</td>
+      <td>29m ∈ 3</td>
+      <td>25 ± 4(15)m ∈ 3</td>
+      <td>48 ± 8(15)m ∈ 3</td>
+      <td>0.54 ± 0.11(15)m</td>
+      <td>&gt;120m</td>
+      <td>0.82m ∈ 3</td>
+      <td>0.89m</td>
+    </tr>
+    <tr>
+      <td rowspan="14">EC (14)</td>
+      <td>LI-II Multipolar-Pyramidal</td>
+      <td>[−70, −56]</td>
+      <td>430 ± 121.7(37)</td>
+      <td>25 ± 15.2(37)</td>
+      <td>[8.1, 23.1]</td>
+      <td>[3.7, 7.3]</td>
+      <td>77.5 ± 15.2(37)</td>
+      <td>1.22 ± 0.4(37)</td>
+      <td>&gt;50</td>
+      <td>4.7</td>
+      <td>0.78 ± 0.06(37)</td>
+    </tr>
+    <tr>
+      <td>LI-II Pyramidal-Fan</td>
+      <td>[−62, −59] ∈ 2</td>
+      <td>400 ± 98(96) ∈ 2</td>
+      <td>15.8 ± 14.2(96) ∈ 2</td>
+      <td>[7.5, 8.4] ∈ 2</td>
+      <td>[7.1, 7.3] ∈ 2</td>
+      <td>69 ± 19.6(96) ∈ 2</td>
+      <td>1.25 ± 0.49(96) ∈ 2</td>
+      <td>&gt;40</td>
+      <td>[0, 6] ∈ 2</td>
+      <td>0.66 ± 0.05(96) ∈ 2</td>
+    </tr>
+    <tr>
+      <td>MEC LII PC-Multiform</td>
+      <td>[−70, −56]</td>
+      <td>430 ± 121.7(37)</td>
+      <td>25 ± 15.2(37)</td>
+      <td>[8.1, 23.1]</td>
+      <td>[3.7, 7.3]</td>
+      <td>77.5 ± 15.2(37)</td>
+      <td>1.22 ± 0.4(37)</td>
+      <td>&gt;25</td>
+      <td>4.7</td>
+      <td>0.78 ± 0.06(37)</td>
+    </tr>
+    <tr>
+      <td>MEC LII Oblique Pyramidal</td>
+      <td>[−62, −59]</td>
+      <td>400 ± 98(96)</td>
+      <td>15.8 ± 14.2(96)</td>
+      <td>[7.5, 8.4]</td>
+      <td>[7.1, 7.3]</td>
+      <td>69 ± 19.6(96)</td>
+      <td>1.25 ± 0.49(96)</td>
+      <td>&gt;40</td>
+      <td>[0, 6]</td>
+      <td>0.66 ± 0.05(96)</td>
+    </tr>
+    <tr>
+      <td>MEC LII Stellate</td>
+      <td>[−62, −59] ∈ 2</td>
+      <td>30.2 ± 12.5(112)e ∈ 2</td>
+      <td>8.9 ± 1.9(112)e ∈ 2</td>
+      <td>[7.5, 8.4] ∈ 2</td>
+      <td>[7.1, 7.3] ∈ 2</td>
+      <td>69 ± 19.6(96) ∈ 2</td>
+      <td>1.25 ± 0.49(96) ∈ 2</td>
+      <td>&gt;40</td>
+      <td>[0, 6]</td>
+      <td>0.66 ± 0.05(96) ∈ 2</td>
+    </tr>
+    <tr>
+      <td>LII-III Pyramidal-Tripolar</td>
+      <td>[−70, −56] ∈ 2</td>
+      <td>400 ± 98(96) ∈ 2</td>
+      <td>15.8 ± 14.2(96) ∈ 2</td>
+      <td>[8.1, 23.1] ∈ 2</td>
+      <td>[3.7, 7.3] ∈ 2</td>
+      <td>69 ± 19.6(96) ∈ 2</td>
+      <td>1.25 ± 0.49(96) ∈ 2</td>
+      <td>&gt;40</td>
+      <td>4.7 ∈ 2</td>
+      <td>0.66 ± 0.05(96) ∈ 2</td>
+    </tr>
+    <tr>
+      <td>LEC LIII Multipolar Principal</td>
+      <td>[−68, −65]</td>
+      <td>450 ± 78(27)</td>
+      <td>29 ± 12.5(27)</td>
+      <td>[21.17, 26.03]</td>
+      <td>[10.23, 11.04]</td>
+      <td>70 ± 15.6(27)</td>
+      <td>1.38 ± 0.26(27)</td>
+      <td>&gt;25</td>
+      <td>4.06</td>
+      <td>0.9 ± 0.1(27)</td>
+    </tr>
+    <tr>
+      <td>LEC LIII Complex Pyramidal</td>
+      <td>[−68, −65]</td>
+      <td>450 ± 78(27)</td>
+      <td>29 ± 12.5(27)</td>
+      <td>[21.17,26.03]</td>
+      <td>[10.23,11.04]</td>
+      <td>70 ± 15.6(27)</td>
+      <td>1.38 ± 0.26(27)</td>
+      <td>&gt;25</td>
+      <td>4.06</td>
+      <td>0.9 ± 0.1(27)</td>
+    </tr>
+    <tr>
+      <td>LIII Pyramidal-Stellate</td>
+      <td>[−68, −65] ∈ 2</td>
+      <td>450 ± 78(27) ∈ 2</td>
+      <td>29 ± 12.5(27) ∈ 2</td>
+      <td>[21.17, 26.03] ∈ 2</td>
+      <td>[10.23, 11.04] ∈ 2</td>
+      <td>70 ± 15.6(27) ∈ 2</td>
+      <td>1.38 ± 0.26(27) ∈ 2</td>
+      <td>[85, 105]e ∈ 2</td>
+      <td>4.06 ∈ 2</td>
+      <td>0.9 ± 0.1(27)</td>
+    </tr>
+    <tr>
+      <td>LIII-V Bipolar Pyramidal</td>
+      <td>[−69, −67]</td>
+      <td>490 ± 79(28)</td>
+      <td>36 ± 16(28)</td>
+      <td>[18.2, 21.8]</td>
+      <td>[5.6, 8.7]</td>
+      <td>70 ± 15.9(28)</td>
+      <td>1.48 ± 0.2(28)</td>
+      <td>&gt;29</td>
+      <td>[2, 7]</td>
+      <td>0.86 ± 0.11(28)</td>
+    </tr>
+    <tr>
+      <td>LIV-VI Deep Multipolar</td>
+      <td>−59.8 ± 6.8(8) ∈ 4</td>
+      <td>272.3 ± 105.8(8) ∈ 4</td>
+      <td>26.6 ± 6.5(8) ∈ 4</td>
+      <td>36 ∈ 4</td>
+      <td>15 ∈ 4</td>
+      <td>75 ∈ 4</td>
+      <td>1.39 ± 0.6(8) ∈ 4</td>
+      <td>&gt;70</td>
+      <td>4.4 ∈ 4</td>
+      <td>0.9 ∈ 3</td>
+    </tr>
+    <tr>
+      <td>LV Deep Pyramidal</td>
+      <td>−65.02 ± 3.8(38)e ∈ 2</td>
+      <td>75.67 ± 28.72(38)e ∈ 2</td>
+      <td>12.83 ± 3.65(38)e ∈ 2</td>
+      <td>22.14e ∈ 2</td>
+      <td>17.44 ± 2.64(38)e ∈ 2</td>
+      <td>64.96 ± 6.53(38)e ∈ 2</td>
+      <td>1.53 ± 0.28(38)e ∈ 2</td>
+      <td>&gt;70</td>
+      <td>0.1e ∈ 2</td>
+      <td>0.88e ∈ 2</td>
+    </tr>
+    <tr>
+      <td>MEC LV-VI PC-Polymorph</td>
+      <td>−63</td>
+      <td>480 ± 94(14)</td>
+      <td>41 ± 19(14)</td>
+      <td>[26.7, 28.7]</td>
+      <td>[7.1, 9.1]</td>
+      <td>73 ± 8 (14)</td>
+      <td>2.1 ± 0.8(14)</td>
+      <td>&gt;33</td>
+      <td>1.6</td>
+      <td>0.91 ± 0.09(14)</td>
+    </tr>
+    <tr>
+      <td>LEC LVI Multipolar-PC</td>
+      <td>−64</td>
+      <td>450 ± 90(13)</td>
+      <td>26 ± 14(13)</td>
+      <td>[26.8, 29.0]</td>
+      <td>[6.0, 8.8]</td>
+      <td>74 ± 14 (13)</td>
+      <td>1.7 ± 0.4(13)</td>
+      <td>&gt;10</td>
+      <td>1.2</td>
+      <td>0.9 ± 0.1(13)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are mean values ± standard deviations or [range]; parentheses indicate the number of data points (default = 1; 2 for ranges). Values of maxFR reported as relative lower limits (e.g., >30 Hz) are measured from limited spike trains. The data are selected from a set (∈) of available values based on experimental conditions and number of measurements. Preferred conditions (rat/body temperature/patch clamp) are not indicated; otherwise, m = mice, r = room temperature, e = microelectrodes._
+
+### Summary of design criteria
+
+Although Hippocampome.org primarily categorizes neuron types according to their morphologies (locations of axons and dendrites across the 26 parcels of the hippocampal formation), several other properties are also considered (Figure 3). When evaluating publications describing a neuron type, we first apply a set of interpretive rules to the morphological information (see ‘Materials and methods’ and hippocampome.org/full-interp). We then follow a series of systematic criteria that can result in one of three end points: the mined information is consistent with (and supplementary of) a currently active, fully defined neuron type (hippocampome.org/supplemental); the information is distinct enough to establish a new active neuron type; or the information is insufficient, thus generating an ‘on hold’ neuron type (hippocampome.org/on-hold).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig3-v2.jpg)
 
-**Figure 3.:** Beginning with a reconstruction, schematic, or text description of a neuron morphology, the flow chart ends with either a new ‘on hold’ neuron type, supplemental information for an existing active neuron type, or a new active neuron type. Intermediate decision points evaluate the presence of both axons and dendrites, the determination of the main neurotransmitter, the uniqueness of the new type, and whether information is sufficient to create a new active type.DOI: http://dx.doi.org/10.7554/eLife.09960.006
+**Figure 3.:** Beginning with a reconstruction, schematic, or text description of a neuron morphology, the flow chart ends with either a new ‘on hold’ neuron type, supplemental information for an existing active neuron type, or a new active neuron type. Intermediate decision points evaluate the presence of both axons and dendrites, the determination of the main neurotransmitter, the uniqueness of the new type, and whether information is sufficient to create a new active type.
 
-## A digital storehouse of explicit knowledge
+### A digital storehouse of explicit knowledge
 
-Hippocampome.org provides free, user-friendly online access to the entire information content. The annotated evidence supports 3697 distinct ‘pieces of knowledge’ (PoK) regarding the presence or absence of axons or dendrites within any of the 26 parcels (e.g.,
+Hippocampome.org provides free, user-friendly online access to the entire information content. The annotated evidence supports 3697 distinct ‘pieces of knowledge’ (PoK) regarding the presence or absence of axons or dendrites within any of the 26 parcels (e.g., Granule cells axons are found in CA3 SL represents one PoK), the expression or non-expression of a biomarker (e.g.,Granule cells are positive for CB), and individual electrophysiological properties (e.g., the APwidth of Granule cells is 1.71 ± 0.58 ms, mean ± standard deviation). This knowledge exceeds by 2–3 orders of magnitude (Figure 4A); the average numbers of PoK collated from relevant articles (∼5) and reviews (∼27). Integration of published information from multiple sources, by linking together molecular, electrophysiological, and morphological data, produces an explicit knowledge web of references, properties, and neuron types interlaced in a many-to-many fashion (Figure 4B). Of equal importance, this resource explicitly highlights the non-uniform distribution of knowledge among neuron types and across morphological, molecular, and electrophysiological properties (Figure 4C). The approximate ratio of morphological, molecular, and electrophysiological PoK is 5:3:2. While CA1 is the most studied hippocampal area (1321 PoK), outstanding knowledge gaps remain on interneuron diversity in subiculum (only Axo-axonic cells have enough information for inclusion as an active neuron type in Hippocampome.org) and EC (no GABAergic cells characterized with either soma or axons in deep layers).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig4-v2.jpg)
 
-**Figure 4.:** Hippocampome.org about morphology, biomarkers, and electrophysiology of hippocampal neuron types.(A) Histograms comparing the sum of pieces of knowledge (PoK) in relevant journal articles or book chapters, in reviews, and in Hippocampome.org. (B) Interconnected knowledge graph of neuron type properties mined from two typical journal articles. (C) Balloon plot of collated knowledge for a majority of GABAergic neuron types. The balloon size indicates the sum of PoK for that type across all three dimensions; balloon color denotes the subregion (as in Figure 1). Note the dearth of biomarker information in entorhinal cortex (EC) and the uneven distribution of data between CA3 and CA1.DOI: http://dx.doi.org/10.7554/eLife.09960.007
+**Figure 4.:** (A) Histograms comparing the sum of pieces of knowledge (PoK) in relevant journal articles or book chapters, in reviews, and in Hippocampome.org. (B) Interconnected knowledge graph of neuron type properties mined from two typical journal articles. (C) Balloon plot of collated knowledge for a majority of GABAergic neuron types. The balloon size indicates the sum of PoK for that type across all three dimensions; balloon color denotes the subregion (as in Figure 1). Note the dearth of biomarker information in entorhinal cortex (EC) and the uneven distribution of data between CA3 and CA1.
 
-The massive amount of knowledge and online availability of
+The massive amount of knowledge and online availability of Hippocampome.org enable both broad-scope analytics and quick-use information checks. All information can be browsed or searched. Browsing starts with summaries of morphological (hippocampome.org/morphology), molecular (hippocampome.org/markers), or electrophysiological (hippocampome.org/electrophysiology) data, similar to hyperlinked versions of Figures 1F, 2, and Table 1, respectively. Searching for neuron types is accomplished through selections from dynamically updated pull-down menus of any combination of properties, such as ‘axons located in DG’, ‘PV-negative’, and ‘Vthresh > 20 mV’ (Figure 5A). Compound queries with AND & OR Boolean connectors can uncover unexpected results even for the most experienced hippocampal researchers. Searches can also be conducted by PubMed identifiers or author names (Figure 5B). Returned results contain full bibliographic information, a link to the article, and a list of neuron types with information from the article.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig5-v2.jpg)
 
-**Figure 5.:** Hippocampome.org enables searching neuron types by neurotransmitter; axon, dendrite, and soma locations; molecular expression; electrophysiological parameters; and input/output connectivity.(A) Sample query for parvalbumin-negative neuron types with axons in DG and firing threshold >20 mV. (B) The knowledge base may also be queried for a specific PubMed ID or author name (e.g., ‘Fuentealba P’). (C, D) Returned results link to (C) neuron type summary pages (Figure 1A from Price et al., 2005, J. Neurosci. 25:6775–6786 [permission to reuse granted by SfN]) and (D) evidence from published figures, tables, and text quotes supporting all reported properties (Figure 6B from Fuentealba et al., 2010, J. Neurosci. 30:1595–1609; Table 2 and Figure 3A from Price et al., 2005, J. Neurosci. 25:6775–6786 [permission to reuse granted by SfN]).DOI: http://dx.doi.org/10.7554/eLife.09960.008
+**Figure 5.:** (A) Sample query for parvalbumin-negative neuron types with axons in DG and firing threshold >20 mV. (B) The knowledge base may also be queried for a specific PubMed ID or author name (e.g., ‘Fuentealba P’). (C, D) Returned results link to (C) neuron type summary pages (Figure 1A from Price et al., 2005, J. Neurosci. 25:6775–6786 [permission to reuse granted by SfN]) and (D) evidence from published figures, tables, and text quotes supporting all reported properties (Figure 6B from Fuentealba et al., 2010, J. Neurosci. 30:1595–1609; Table 2 and Figure 3A from Price et al., 2005, J. Neurosci. 25:6775–6786 [permission to reuse granted by SfN]).
 
 Both browsing and searching lead to summaries of all information associated with a given neuron type (Figure 5C): synonyms, morphology, electrophysiology, biomarkers, a representative figure, and known pre- and post-synaptic connectivity (see below). Every property on each neuron page or browse summary links to an evidence page that lists all supporting bibliographic citations complete with extracted quotes, figures, tables, and exact pointers to the relevant pages and paragraphs (Figure 5D). Hippocampome.org contains 13,888 pieces of evidence, including all known sources for many neuron types and properties, but only an adequate number of sources to firmly support established knowledge (e.g., we have only annotated a fraction of all published evidence that granule cells extend axons in CA3 SL).
 
-## Pairwise correlations
+### Pairwise correlations
 
 Knowledge integration facilitates the discovery of relations between neuronal properties that would ordinarily remain hidden in the scattered literature. Most PoK in Hippocampome.org, such as axonal presence in a layer or expression of a biomarker, are categorical, and their statistical co-occurrence can be analyzed with contingency tables (‘Materials and methods’). To allow comparison across experiments, electrophysiological parameters are converted (for this analysis only) from continuous to categorical variables by labeling values in the top and bottom one-third of the range, respectively, as high and low. This approach reveals several interesting relationships (Box 1): for example, positive or negative expression of neuropeptide Y (NPY) tends to co-occur, respectively, with high or low fAHP (p < 0.001 with Barnard's exact test; post hoc t-test p < 0.02 with real values from all n = 42 pieces of evidence); vasoactive intestinal polypeptide (VIP) is mutually exclusive with CB (p < 0.04); and of 31 entorhinal neuron types, only Oblique Pyramidal cells in LII of medial EC have no layer overlap between axons and dendrites.10.7554/eLife.09960.009Box 1.Trends assessed from data collated in the Hippocampome.The trend across clear expression patterns of calbindin (CB), calretinin (CR), and parvalbumin (PV) supports the general idea that only one of these calcium binding proteins is expressed at a time within a cell. While CB is never co-expressed with either CR (p < 0.05, n = 19) or PV (NS, n = 31), PV and CR do co-occur in 2 out of 12 neuron types known to express at least one of them (p > 0.49, n = 31). A less known but more stringent relationship exists between CB and vasoactive intestinal peptide (VIP): among the 24 neuron types for which the expression information on both of these markers is known, 14 are positive for either CB or VIP, but none express both (p < 0.04, n = 24).Clearly positive expression of neuropeptide Y (NPY) tends to coincide with very high values of the fast afterhyperpolarization (fAHP) (p < 0.001, n = 23) and membrane firing threshold (Vthresh) (p < 0.005, n = 21), and clearly negative expression tends to be associated with very low values of both parameters. fAHP is similarly related also to expression of chicken ovalbumin upstream promoter transcription factor II (CoupTF II) (p < 0.005, n = 14), which tends to clearly co-express either both positively or both negatively with NPY (p < 0.005, n = 18).Confirming a well-known relationship, of 45 cell types with extreme values of input resistance (Rin) and membrane time constant (τm) (p < 0.001, n = 45), 43 are positively correlated (R2 = 0.70). Likewise, high values of the spike width (APwidth) are associated with high values of Rin (p < 0.001, n = 45), and vice versa for the low values of both (R2 = 0.36).Of the 69 cell types with axons in more than one layer, only DG Granule and CA1 O-LMR do not have overlapping axons and dendrites (p < 0.001, n = 122). All of the 43 cell types that have axons in three or more layers have axons that overlap with their dendrites (p < 0.001, n = 122). Furthermore, cell types with axons in three or more layers tend to have very high Rin (p < 0.001, n = 58) and τm (p < 0.001, n = 59).Clear expression of cannabinoid receptor 1 (CB1) implies (in 5/5 cases) clear expression of cholecystokinin (CCK) (if known), and clear absence of CCK implies (in 8/8 cases) clear absence of CB1 (if known) (p < 0.005, n = 15). Of the two neuron types expressing CCK and not CB1, one expresses VIP; however, independent of CCK expression, CB1 and VIP are not co-expressed in any of the eight types that are positive for either biomarker (NS, n = 17). Overall, these patterns suggest that CCK+/VIP+ and CCK+/CB1+ neurons constitute completely separate groups.The p values and sample sizes (n) pertain to Bernard's exact test on 2 × 2 contingency tables (see ‘Materials and methods’).DOI: http://dx.doi.org/10.7554/eLife.09960.009
 
 Many observed trends also reinforce expected associations and serve as validation for the dataset. For example, 96% (43/45) of neuron types with high or low input resistance have correspondingly high or low τm, consistent with RC-circuit theory. The two outliers correspond to data from a paper on CA1 Radiatum Giant cells (Kirson and Yaari, 2000), for which the particularly high τm/Rin ratio is explained by the oversized soma and consequently large capacitance.
 
-## Potential connectivity
+### Potential connectivity
 
 Hippocampome.org contains known connectivity information (synapses or lack thereof, established e.g., by electron microscopy or paired electrophysiological recordings) among its neuron types. Such data, however, are only available for 202 out of 14,884 possible pairs (<2%). In the remaining cases, co-existence of axons and dendrites across parcels allows inference of ‘potential connectivity’ between cell types (Braitenberg, 1991). Specifically, potential connectivity is computed as the dot-product of the 26-dimensional binary vectors encoding the presence/absence of axons for one neuron and dendrites for another across hippocampal parcels. The possibility of connections can be tentatively excluded for 11,668 pairs of neuron types (78.4%) based on non-overlapping distributions of their respective axons and dendrites. However, incomplete axons and the binary thresholding of the morphological encoding (see ‘Materials and methods’) might yield false negatives. In 3014 pairs (20%) the axons and dendrites of the two neuron types share at least one parcel. Although the connection probability may not be estimated in the absence of experimental evidence, even the opportunity to make synapses is computationally relevant due to the superior structural plasticity of the hippocampal formation throughout the lifespan (Leuner and Gould, 2010).
 
-All (known and potential) connectivity data are summarized in a matrix with rows as pre-synaptic and columns as post-synaptic neuron types (100 neuron types in
+All (known and potential) connectivity data are summarized in a matrix with rows as pre-synaptic and columns as post-synaptic neuron types (100 neuron types in Figure 6A; complete data: hippocampome.org/connectivity). Filled boxes along the main diagonal, corresponding to neurons with axons and dendrites co-located in any parcel (purple boxes in Figure 1F), indicate within-type connectivity (not necessarily autapses), and are more frequent among excitatory (87%) than inhibitory (67%) types.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig6-v2.jpg)
 
-**Figure 6.:** Figure 1).(A) Known and potential connections for 100 neuron types (full matrix: hippocampome.org/connectivity or hippocampome.org/php/images/connectivity/Connectivity_Matrix.jpg), with pre-synaptic types in rows and post-synaptic types in columns. Black squares indicate potential glutamatergic connections and gray squares GABAergic. Pairs of neuron types with experimentally established and refuted synapses are shown using green and red squares, respectively. Colored boundaries demarcate intra-area connections. (B) Regional pathways with 33 glutamatergic connections (full lines ending in arrows) and 20 GABAergic connections (dashed lines ending in open circles); line thickness represents the numbers of connected neuron types between areas.DOI: http://dx.doi.org/10.7554/eLife.09960.010
+**Figure 6.:** (A) Known and potential connections for 100 neuron types (full matrix: hippocampome.org/connectivity or hippocampome.org/php/images/connectivity/Connectivity_Matrix.jpg), with pre-synaptic types in rows and post-synaptic types in columns. Black squares indicate potential glutamatergic connections and gray squares GABAergic. Pairs of neuron types with experimentally established and refuted synapses are shown using green and red squares, respectively. Colored boundaries demarcate intra-area connections. (B) Regional pathways with 33 glutamatergic connections (full lines ending in arrows) and 20 GABAergic connections (dashed lines ending in open circles); line thickness represents the numbers of connected neuron types between areas.
 
-Neuron type connectivity as depicted in
+Neuron type connectivity as depicted in Figure 6A constitutes an intermediate level of description between the neuron-by-neuron connectome (‘synaptome’) and the region-by-region connectome (‘projectome’). In order for two regions to be connected, there must be at least one neuron type in one region connecting to one neuron type in the other (Martone and Ascoli, 2013). Within the hippocampal formation, this relationship is illustrated explicitly in Figure 6B: all six areas have potential excitatory, and with the exception of Sub and EC, inhibitory connections to at least one other area, most of which are not considered in the canonical trisynaptic loop (cf. Burns and Young, 2000; van Strien et al., 2009). The only potential monosynaptic connection between DG and CA1 is inhibitory. While this regional wiring diagram appears simpler than the corresponding seminal illustration for the visual cortex (Felleman and Van Essen, 1991), the underlying neuron type circuitry is highly complex. In fact, the explicit wiring diagram of all neuron type potential connections is impractical to render on a single page. Selecting only 15 representative neuron types in the DG entails 253 connections among 43 somatic and dendritic compartments (Figure 7A). This compartmental representation of network connectivity captures the computationally distinct subunits that emerge from layer-specific axonal targeting, a key component of mesoscopic neuron type circuitry.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/09960/elife-09960-fig7-v2.jpg)
 
-**Figure 7.:** (A) Circuit diagram of selected neuron types in DG (full diagram: hippocampome.org/php/images/connectivity/DG_Circuit_Diagram.jpg or hippocampome.org/php/images/connectivity/DG_Circuit_Diagram.graffle.zip). Axonal connections from pre-synaptic somata (orange glutamatergic, green GABAergic) to post-synaptic somata or dendrites (blue) have unique line colors for each pre-synaptic type for clarity. Lines ending in arrows and open circles indicate, respectively, glutamatergic and GABAergic connections; 22 known (thick lines) and 231 potential (thin) connections are depicted. 1: Granule. 2: Semilunar Granule. 3: Mossy. 4: AIPRIM. 5: Axo-axonic. 6: Basket. 7: Basket CCK+. 8: HICAP. 9: HIPP. 10: HIPROM. 11: MOCAP. 12: MOLAX. 13: MOPP. 14: Neurogliaform. 15: Outer Molecular Layer. (B) Pre- and post-synaptic connections for DG Granule and CA3 Basket cells. Red lines ending in arrows indicate glutamatergic connections, and blue lines ending in open circles indicate GABAergic connections. Thick and thin lines indicate, respectively, known and potential connections. Neuron types are color coded by area of origin (as in Figure 1).DOI: http://dx.doi.org/10.7554/eLife.09960.011
+**Figure 7.:** (A) Circuit diagram of selected neuron types in DG (full diagram: hippocampome.org/php/images/connectivity/DG_Circuit_Diagram.jpg or hippocampome.org/php/images/connectivity/DG_Circuit_Diagram.graffle.zip). Axonal connections from pre-synaptic somata (orange glutamatergic, green GABAergic) to post-synaptic somata or dendrites (blue) have unique line colors for each pre-synaptic type for clarity. Lines ending in arrows and open circles indicate, respectively, glutamatergic and GABAergic connections; 22 known (thick lines) and 231 potential (thin) connections are depicted. 1: Granule. 2: Semilunar Granule. 3: Mossy. 4: AIPRIM. 5: Axo-axonic. 6: Basket. 7: Basket CCK+. 8: HICAP. 9: HIPP. 10: HIPROM. 11: MOCAP. 12: MOLAX. 13: MOPP. 14: Neurogliaform. 15: Outer Molecular Layer. (B) Pre- and post-synaptic connections for DG Granule and CA3 Basket cells. Red lines ending in arrows indicate glutamatergic connections, and blue lines ending in open circles indicate GABAergic connections. Thick and thin lines indicate, respectively, known and potential connections. Neuron types are color coded by area of origin (as in Figure 1).
 
 The richness of connectivity is also revealed when focusing on a specific interaction between two neuron types. For instance, in a dual recording of a Granule cell and a CA3 Basket cell, circuit dynamics are potentially affected by many contributors (Figure 7B). Granule cells can receive input from 26 neuron types (9 excitatory) across DG, CA3, CA1, and EC. CA3 Basket cells can receive input from 31 types (8 excitatory), including Granule cells and other Basket cells. The above numbers include five neuron types that provide possible input to both Granule and CA3 Basket cells. Granule cells potentially send output to 29 neuron types, counting all 13 that could receive information from CA3 Basket cells, including CA3 Basket cells themselves.
 
-## Use cases
+### Use cases
 
 Hippocampome.org can deliver valuable information in many day-to-day research scenarios (Box 2) and at multiple stages of a neuroscience study (hippocampome.org/usage). They include determining whether a hippocampal neuron with a particular morphological pattern is known, obtaining a list of candidate neuron types based on partial reconstructions, and finding biomarker and electrophysiological properties for most neuron types. In all highlighted use cases, Hippocampome.org delivers the needed information with very few mouse clicks, in a matter of seconds. Even queries that are nearly impossible with literature search engines (e.g., finding an unnamed neuron by its axonal pattern) allow, at Hippocampome.org, straightforward retrieval of the original evidence.10.7554/eLife.09960.012Box 2.Representative Hippocampome.org use case scenarios.Property-based recognition of known neuron typesWhile patching in DG stratum granulosum (SG), a researcher encounters several interneurons with high input resistance (Rin), membrane time constant (τm), and spike amplitude (APampl). Biocytin filling reveals both axonal and dendritic presences in the inner stratum moleculare (SMi) but only axons in the hilus (H). Is this a newly discovered neuron type?Hippocampome.orgThese characteristics are consistent with those reported for MOCAP neurons, first described by Markwardt et al. (2011) as non-Ivy/NG cells.Comprehensive listing of potential pre-synaptic sourcesIn the presence of outward channel blockers, CA1 Pyramidal cells display rebound spikes upon repeated GABA puffing on their distal apical dendrites. What neurons besides O-LM and Neurogliaform cells might trigger such post-inhibitory firing?Hippocampome.org14 different interneurons have axons in stratum lacunosum-moleculare (SLM), including CA1 Quadrilaminar, Back-projection, Radiatum-receiving Apical-targeting, Perforant Path-associated, Oriens-Bistratified Projecting, and LMR cells.Comprehensive listing of potential post-synaptic targetsGlutamatergic Cajal–Retzius neurons have recently been observed in the adult rodent hippocampus in larger numbers than previously assumed. What interneurons could they excite in CA1?Hippocampome.orgAlthough the axons of CA1 Cajal–Retzius are confined to SLM, they could nonetheless contact no fewer than 17 types of distinct GABAergic cells, such as Basket, Axo-axonic, Radial Trilaminar, Oriens/Alveus, Schaffer Collateral-associated, as well as several interneuron-specific interneurons.Discrimination of perisomatic neuron types by electrophysiological measuresCA3 Basket and Axo-axonic neurons have similar somatic locations, dendritic tree shapes (invading all layers from stratum oriens (SO) to SLM), and overall axonal patterns. Short of the labor-intensive determination of their post-synaptic targets, could they be tentatively distinguished by patch-clamp recording?Hippocampome.orgWhile CA3 Axo-axonic and Basket cells have practically indistinguishable resting potential (Vrest), τm, and APampl, the former tend to display lower firing threshold (Vthresh) as well as greater slow afterhyperpolarizations (sAHP) and Rin.Positive identification of neuronal phenotypesTwo varieties of CA2 basket cells have been described: a classic type with dendrites confined within CA2 and a ‘wide-arbor’ type, whose dendrites enter CA1 and CA3. How can the borders between CA2 and adjacent subregions be reliably demarcated?Hippocampome.orgCA2 pyramidal neurons, unlike their CA1 and CA3 counterparts, are positive for Purkinje cell protein 4 (PCP4). Conversely, pyramidal neurons in CA1 and CA3 express α-mannosidase-1 (Man1a), while those in CA2 do not. Immunostaining with either of these markers can thus delineate CA2 boundaries.Constraining simulation parametersTo build a circuit model of grid cell activity, a computational neuroscientist is searching for plausible values for Vrest, Vthresh, fast afterhyperpolarizations (fAHP), and APampl for the principal cells and main interneurons above the lamina dissecans (LIV) of the medial entorhinal cortex (MEC).Hippocampome.orgThese data are available for MEC LII Stellate cells and EC LIII Pyramidal cells (the two major glutamatergic neurons), for EC LII Basket-Multipolar and MEC LIII Superficial Trilayered interneurons (the major perisomatic and dendritic-targeting GABAergic cells, respectively), as well as for eight additional, if less prominent, neuron types (5 excitatory and 3 inhibitory) of layers I-III.Distilling information relevant to specific hypothesesA novel theory of hippocampal function requires direct feedback inhibition from CA3 and CA1 to DG Granule cells, contrary to the canonical trisynaptic loop and the common assumption of non-projecting GABAergic cells. Does the literature provide any experimental evidence to support the new assumption?Hippocampome.orgBased on axonal–dendritic overlap, both the Granule cell page and the connectivity matrix indicate as (potential) sources of monosynaptic input one CA3 (Spiny Lucidum) and three CA1 (LMR Projecting, Perforant Path-associated, and Neurogliaform Projecting) neurons. Of these, Perforant Path-associated neurons have already been shown to form synapses onto DG Granule cells (Vida et al., 1998).See hippocampome.org/usage for an extended example.DOI: http://dx.doi.org/10.7554/eLife.09960.012
 
@@ -161,7 +843,7 @@ At the same time, Hippocampome.org is well equipped to manage the expected ‘da
 
 ## Materials and methods
 
-## Anatomical parcels and neuron type identification
+### Anatomical parcels and neuron type identification
 
 Several attempts are underway to establish definitive layer and area boundaries through molecular expression (Thompson et al., 2008; Boccara et al., 2014). Until formal definitions are in place, generally agreed upon anatomical and histochemical characteristics provide for the delineation of the hippocampal formation into six areas (DG, CA3, CA2, CA1, Sub, and EC) and their respective layers (e.g., CA1 SO, SR, etc.; Figure 1A,B). Most of these parcels are standard and can be found in all reviews of the hippocampal formation.
 
@@ -175,7 +857,7 @@ Hippocampome.org neuron types are primarily distinguished by criterion 3 (axonal
 
 When incomplete information prevents inclusion in Hippocampome.org, neuron types are placed ‘on hold’ (hippocampome.org/on-hold). For example, none of the references providing evidence for cholinergic neurons in CA1 clearly describe the axonal and dendritic arbors of individual neurons. On-hold types also include neurons from animals younger than P13 (e.g., DG Cajal–Retzius cells).
 
-## Encoding of neuronal morphology
+### Encoding of neuronal morphology
 
 Hippocampome.org binarizes the locations of axons and dendrites in the 26 parcels: neurites either have ‘sufficient’ presence in a given parcel or they do not. Lexical and visual thresholds, briefly described here, specify sufficiency criteria (full explanation and examples: hippocampome.org/full-interp). For neuronal reconstructions and schematics, a layer must contain either ≥15% of the overall arbor or at least half the amount included in the most abundant layer. Moreover, the neurite must penetrate ≥15% of the layer depth. In particular, the axonal tree of the CA1 basket cell can spill over from SP into SO and SR, but the penetration threshold is not crossed (cf. Figure 3E from Pawelzik et al., 2002). Thus, if the layers are not delineated, the figure may be unusable for neuron typing.
 
@@ -185,7 +867,7 @@ Although the authors of an article may group a set of neurons together, differin
 
 Conversely, neurons assigned to different groups in a paper might belong to the same Hippocampome type, such as R-LM and P-LM cells (Oliva et al., 2000), that differing only in somatic location, are merged into a single CA1 OR-LM type in Hippocampome.org.
 
-## Nomenclature
+### Nomenclature
 
 Hippocampome.org neuron names were assigned progressing from the most to the least prominent types. When a single name is used in the literature, that name is adopted into the Hippocampome.org neuron name. For example, DG granule cells in the knowledge base are referred to as DG (e)2201p-CA3_00110 Granule, a formal name encoding the pattern of axons and dendrites (hippocampome.org/brief-interp), and Granule, a common name.
 
@@ -195,32 +877,32 @@ Common neuron names in Hippocampome.org are assigned a prefix denoting their hip
 
 When multiple names appear in the literature for the same neuron type, the most frequent or best-known is selected, such as CA1 O-LM over CA1 oriens interneurone of the second type (McBain et al., 1994) or CA1 horizontal oriens-alveus interneurone (Ali and Thomson, 1998). If no literature name clearly emerges, or if all suitable names are already adopted for more prominent neuron types, we adopt or combine multiple author-originated names, as in EC LI-II Pyramidal-Fan (Germroth et al., 1991; Lingenhöhl and Finch, 1991; Empson et al., 1995; Tahvildari and Alonso, 2005). All terms used in publications are always reported as synonyms in Hippocampome.org.
 
-## Linking molecular and electrophysiological data to neuronal morphology
+### Linking molecular and electrophysiological data to neuronal morphology
 
 To search for molecular and electrophysiological data, the articles defining the axonal–dendritic pattern of each Hippocampome.org neuron type are mined first. All references citing (webofknowledge.com) or cited by these sources are mined next. Lastly, full-text searches using all known synonyms of the target property and neuron type are performed (scholar.google.com and previously scirus.com). If these searches fail to return usable molecular or electrophysiological information for a given neuron type, the corresponding property is labeled as ‘currently unknown’ (gray boxes in Figure 2 and empty entries in Table 1).
 
 For inclusion in the knowledge base, molecular and electrophysiological data must be linked to a morphologically defined neuron type. As with the establishment of morphological types, the linking process is blind to neuron names used by authors. Rather, links require either the co-presentation of axonal–dendritic information or the citation, for that specific evidence, of a source that has a morphological description of the neuron. Only in two cases can linking be achieved without complete knowledge of the morphology. The first applies to principal cells within their layers (i.e., granule cells in DG and pyramidal cells in CA1 SP). These neuron types are readily identified as positive or negative for a biomarker because the layers are >90% homogeneous for the principal cells (Czéh et al., 2013) and the somata are densely packed. In the second case, certain groups of neurons can be identified by their axonal tracts, for example, granule cells by their mossy fibers and medial EC LII stellate cells by their perforant path projection. In all cases, the linking information is explicitly included with the evidence reported at Hippocampome.org.
 
-## Molecular biomarker expression
+### Molecular biomarker expression
 
 The 20 most studied biomarkers in hippocampal research (Figure 2; extended listing: hippocampome.org/markers) were targeted for literature searches across all 122 neuron types. These include calcium-binding proteins (PV, CB, CR), receptors and transporters (CB1, sub P rec, muscarinic receptor 2, serotonin receptor 3, vesicular glutamate transporter 3, metabotropic glutamate receptor 1α, GABAA-α1 subunit), neuropeptides (CCK, SOM, enkephalin, NPY, VIP, neurogranin), and a miscellaneous group of cytoskeletal and extracellular matrix proteins (α-actinin 2, reelin), transcription factors (COUP-TFII), and enzymes (nNOS).
 
 When information is available, a particular neuron type is characterized as positive, negative, or mixed positive-negative for a biomarker. In the case of mixed expression, the data are evaluated to determine whether the mixed information might be attributed to differences in species (e.g., rats vs mice), techniques (e.g., protein detection vs mRNA detection), or subcellular expression localization (soma vs neurite). When a single population of neurons is shown to be divisible into clearly negative and clearly positive subpopulations, this is taken as an indication of biomarker subtypes. When we are unable to determine whether mixed biomarker data is attributable to species/technique/subcellular localization differences or subtypes, the data are annotated as unresolved.
 
-## Electrophysiological properties
+### Electrophysiological properties
 
 Electrophysiological property values are extracted from the literature and compiled, when available, for all Hippocampome.org neuron types. The knowledge base includes passive (Rin, τm, resting membrane potential or Vrest), spike (APampl, APwidth, Vthresh, fAHP), and other response parameters (maxFR, sAHP, hyperpolarization sag ratio). Values are extracted from published reports either from text (or tables) or by digitizing figures (plotdigitizer.sourceforge.net) and reported as mean, range, standard deviation, and number of measurements. Although these properties can be defined and measured in multiple ways, Hippocampome.org standardizes the data according to a single definition (hippocampome.org/ephys-defs). This standardization, along with full hand-curation, distinguishes our approach from the semi-automated mining by NeuroElectro (Tripathy et al., 2014).
 
-## Maintenance and further development
+### Maintenance and further development
 
 The growth, evolution, and accuracy of Hippocampone.org content rely on two main mechanisms: continuous literature mining (hippocampome.org/ongoing-mining) and community feedback (hippocampome.org/feedback). We update the bibliographic listing at quarterly intervals (based on citation alerts for many of the core review articles as well as perusals of new issues of most mainline neuroscience publications), adding new relevant references and linking to the knowledge base the articles that have been annotated. Moreover, we welcome suggestions for improvements, corrections, and additions. Addressing of this feedback will also be incorporated into the Frequently Asked Questions (FAQs) listing (hippocampome.org/FAQ) for future reference by all users. In order to ensure reliable resource citation, we adopt a numbered versioning system to release additions of new neuron types and specification of additional properties for existing neuron types. Publication of this article marks the v.1.0 release of Hippocampome.org.
 
-## Web portal and database
+### Web portal and database
 
 The web portal and associated database infrastructures facilitate access to and utilization of morphological, molecular, electrophysiological, and connectivity information. The implementation leverages the model-view-control software design. The model component, which defines the database interface, is provided solely by server-side code. The view component, which renders the web pages, and the control code, which implements decision logic, are both served up by the server, but are run in the user's browser. The underlying relational database ensures flexibility in establishing relations between data records.
 
 Hippocampome.org is deployed on a CentOS 5.11 server running Apache 2.2.22 and runs on current versions of Firefox, Chrome, Safari, and Explorer. Knowledge base content is served up to the PHP 5.3.27 website from a MySQL 5.1.73 database. Django 1.7.1 and Python 3.4.2 provide database ingest capability of comma separated value annotation files derived from human-interpreted peer-reviewed literature. Hippocampome.org code is available open source at github.com/Hippocampome.org.
 
-## Pairwise correlation analysis
+### Pairwise correlation analysis
 
 We explored pairwise correlations between 205 properties of Hippocampome neuron types, including neurotransmitter; axonal, dendritic, and somatic locations in the 26 partitions and 6 areas; the projecting (inter-areas) or local (intra-area) nature of axons and dendrites; axon and dendrite co-presence within any partition; axonal and dendritic presence in a single layer only or in ≥3 layers; clear positive or negative expression of any biomarkers; and high (top third) or low (bottom third) values for seven electrophysiological properties (excluding highly stimulus-dependent sag ratio, sAHP, and maxFR). To evaluate the correlations between these categorical properties, we use 2 × 2 contingency matrices with Barnard's exact test, which provides the greatest statistical power when row and column totals are free to vary (Lydersen et al., 2009).

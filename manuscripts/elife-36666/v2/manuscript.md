@@ -48,7 +48,7 @@
 
 ## Abstract
 
-10.7554/eLife.36666.001 The hepatitis B virus (HBV) is one of the most widespread human pathogens known today, yet its origin and evolutionary history are still unclear and controversial. Here, we report the analysis of three ancient HBV genomes recovered from human skeletons found at three different archaeological sites in Germany. We reconstructed two Neolithic and one medieval HBV genome by de novo assembly from shotgun DNA sequencing data. Additionally, we observed HBV-specific peptides using paleo-proteomics. Our results demonstrated that HBV has circulated in the European population for at least 7000 years. The Neolithic HBV genomes show a high genomic similarity to each other. In a phylogenetic network, they do not group with any human-associated HBV genome and are most closely related to those infecting African non-human primates. The ancient viruses appear to represent distinct lineages that have no close relatives today and possibly went extinct. Our results reveal the great potential of ancient DNA from human skeletons in order to study the long-time evolution of blood borne viruses.
+The hepatitis B virus (HBV) is one of the most widespread human pathogens known today, yet its origin and evolutionary history are still unclear and controversial. Here, we report the analysis of three ancient HBV genomes recovered from human skeletons found at three different archaeological sites in Germany. We reconstructed two Neolithic and one medieval HBV genome by de novo assembly from shotgun DNA sequencing data. Additionally, we observed HBV-specific peptides using paleo-proteomics. Our results demonstrated that HBV has circulated in the European population for at least 7000 years. The Neolithic HBV genomes show a high genomic similarity to each other. In a phylogenetic network, they do not group with any human-associated HBV genome and are most closely related to those infecting African non-human primates. The ancient viruses appear to represent distinct lineages that have no close relatives today and possibly went extinct. Our results reveal the great potential of ancient DNA from human skeletons in order to study the long-time evolution of blood borne viruses.
 
 ## Introduction
 
@@ -64,9 +64,132 @@ Here, we report the analysis of three complete HBV genomes recovered from human 
 
 We detected evidence for presence of ancient HBV in three human tooth samples as part of a metagenomic screening for viral pathogens that was performed on shotgun sequencing data from 53 skeletons using the metagenomic alignment software MALT (Vågene et al., 2018). The remains of the individuals were excavated from the Neolithic sites of Karsdorf (Linearbandkeramik [LBK], 5056–4959 cal BC) and Sorsum (Tiefstichkeramik group of the Funnel Beaker culture, 3335–3107 cal BC) as well as from the medieval cemetery of Petersberg/Kleiner Madron (1020–1116 cal AD), all located in Germany (Figure 1, Figure 1—figure supplements 1–3). After the three aDNA extracts had appeared HBV-positive in the initial virus screening, they were subjected to deep-sequencing without any prior enrichment resulting in 367 to 419 million reads per sample (Table 1). A principal component analysis (PCA) of the human DNA recovered from Karsdorf (3-fold genomic coverage) revealed that the sample clusters tightly with other contemporary early Neolithic individuals from the LBK (Figure 1—figure supplement 4). The genetic makeup of the early LBK agriculturalists was previously found quite distinct from the preceding western hunter-gatherers of Europe. The genetic shift between both populations was interpreted as a result of early farmers migrating from Western Anatolia into Central Europe introducing agriculture (Lazaridis et al., 2014; Haak et al., 2015). The almost 2000 years younger Sorsum individual (1.2-fold genomic coverage) clusters in the PCA most closely with individuals from the contemporary Funnel Beaker culture that inhabited Northern Germany at the end of the fourth millennium BCE (Figure 1—figure supplement 4). This population was previously shown to be quite admixed, as a result of a spatial and temporal overlap of early Neolithic farmers and remaining western hunter-gatherers for almost 2000 years (Bollongino et al., 2013; Haak et al., 2015). The Petersberg individual (2.9-fold genomic coverage), however, showed genetic affinities in the PCA with modern day central European populations. All three ancient human individuals are therefore in agreement with the archeological evidence and radiocarbon dates for their respective time of origin. Together with typical aDNA damage patterns (Figure 1—figure supplements 5–6), the human population genetic investigation supports the ancient origin of the obtained datasets.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-v2.jpg)
+
+**Figure 1.:** Geographic location of the samples from which ancient HBV genomes were isolated. Radiocarbon dates of the specimens is given in two sigma range. Icons indicate the sample material (tooth or mummy). HBV genomes obtained in this study are indicated by black frame.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp5-v2.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** References shown in Supplementary file 1 were used to carry out the alignment.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** ([M + 2 hr]2+): m/z = 1237.6429 Da. Mass accuracy of the precursor peptide = 0.56 ppm.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp8-v2.jpg)
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig1-figsupp9-v2.jpg)
+
+**Table 1.**
+ Results of the genome reconstruction
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>*Merged reads</th>
+      <th>Length of HBV consensus sequence</th>
+      <th>Mean HBV coverage</th>
+      <th>Gaps in the consensus sequence at nt position</th>
+      <th>*Mapped reads HBV</th>
+      <th>*Mapped reads human</th>
+      <th>Mean human coverage</th>
+      <th>Human genomes/HBVgenomes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Karsdorf</td>
+      <td>386,780,892</td>
+      <td>3183</td>
+      <td>104X</td>
+      <td>2157–2175; 3107–3128; 3133–3183</td>
+      <td>10,718</td>
+      <td>122,568,310</td>
+      <td>2.96X</td>
+      <td>1: 35.1</td>
+    </tr>
+    <tr>
+      <td>Sorsum</td>
+      <td>367,574,767</td>
+      <td>3182</td>
+      <td>47X</td>
+      <td>-</td>
+      <td>3249</td>
+      <td>9,856,001</td>
+      <td>1.17X</td>
+      <td>1: 40.2</td>
+    </tr>
+    <tr>
+      <td>Petersberg</td>
+      <td>419,413,082</td>
+      <td>3161</td>
+      <td>46X</td>
+      <td>880–1000; 1232–1329; 1331–1415; 1420–1581; 1585–1598</td>
+      <td>2125</td>
+      <td>105,476,677</td>
+      <td>2.88X</td>
+      <td>1: 16</td>
+    </tr>
+  </tbody>
+</table>
+
+_*number.nt, nucleotide._
+
 For successful HBV genome reconstruction, we mapped all metagenomic sequences to 16 HBV reference genomes (eight human genotypes (A-H) and 8 NHPs from Africa and Asia) that are representative of the current HBV strain diversity (Supplementary file 6). The mapped reads were used for a de novo assembly, resulting in contigs from which one ancient HBV consensus sequence per sample was constructed. The consensus genomes are 3161 (46-fold coverage), 3182 (47-fold coverage), and 3183 (104-fold coverage) nucleotides in length, which falls in the length range of modern HBV genomes and suggests that we successfully reconstructed the entire ancient HBV genomes (Table 1, Figure 2—figure supplements 1–3). Further, when we conducted liquid chromatography-mass spectrometry (LC-MS) based bottom-up proteomics on tooth material from the three individuals, we identified in the Karsdorf and Petersberg samples a peptide that is part of the very stable HBV core protein, supporting the presence and active replication of HBV in the individuals’ blood (Figure 1—figure supplement 7).
 
 Phylogenetic network analysis was carried out with a dataset comprised of 493 modern HBV strains representing the full genetic diversity. Strikingly, the Neolithic HBV genomes did not group with any human strain in the phylogeny. Instead, they branched off in two lineages and were most closely related to the African NHP genomes (Figure 2, 93% similarity). Although the two Neolithic strains were recovered from humans who had lived about 2000 years apart, they showed a higher genomic similarity to each other than to any other human or NHP genotype. Still, their genomes differed by 6% from each other and may therefore be considered representatives of two separate lineages. They did, however, differ less than 8% from the African NHP strains and should therefore not be called a separate genotype (Figure 2—figure supplement 4). The genome from the 1000-year-old Petersberg individual clustered with modern D4 genotypes.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-v2.jpg)
+
+**Figure 2.:** Network of 493 modern, two published ancient genomes (light yellow box), and three ancient hepatitis B virus (HBV) obtained in this study (grey box). Colors indicate the eight human HBV genotypes (A–H), two monkey genotypes (Monkeys I, African apes and Monkeys II, Asian monkeys) and ancient genomes (red).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Organization of overlapping open reading frames and approximate location of single-stranded portion of plus strand are indicated. Gaps in the sequence are marked in red. The green plot depicts the coverage of the re-mapping of raw reads against the consensus. Circular plots were generated using circos-0.69-6 and coverage information from the re-mapping.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Organization of overlapping open reading frames and approximate location of single-stranded portion of plus strand are indicated. Gaps in the sequence are marked in red. The green plot depicts the coverage of the re-mapping of raw reads against the consensus. Circular plots were generated using circos-0.69-6 and coverage information from the re-mapping.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Organization of overlapping open reading frames and approximate location of single-stranded portion of plus strand are indicated. Gaps in the sequence are marked in red. The green plot depicts the coverage of the re-mapping of raw reads against the consensus. Circular plots were generated using circos-0.69-6 and coverage information from the re-mapping.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Gaps or non-called sites (’N') were ignored.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** In each case, sequence fragments of 200 bases incrementing by 20 bases, 100 bootstrap replicates, were compared with sequence groups of (a) the eight human genotypes, two primate genotypes, and four ancient genomes and (b) the eight human genotypes, two primate genotypes (color coded as described in the legend).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** In each case, sequence fragments of 200 bases incrementing by 20 bases, 100 bootstrap replicates, were compared with sequence groups or 50% consensus sequences of (a) the eight human genotypes, two primate genotypes, and four ancient genomes and (b) the eight human genotypes, two primate genotypes (color coded as described in the legend).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** In each case, sequence fragments of 200 bases incrementing by 20 bases, 100 bootstrap replicates, were compared with sequence groups or 50% consensus sequences of (a) the eight human genotypes, two primate genotypes, and four ancient genomes and (b) the eight human genotypes, two primate genotypes (color coded as described in the legend).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** In each case, sequence fragments of 200 bases incrementing by 20 bases, 100 bootstrap replicates, were compared with sequence groups of the eight human genotypes, four primate genotypes and four ancient genomes (color coded as described in the legend).
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/36666/elife-36666-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** Each dot represents one sample.
 
 Owing to continuous recombination over time, different gene segments or modules of the ancestral genomes can show up in various subsequent virus generations. Such precursors have been postulated (Simmonds and Midgley, 2005) and their existence is supported by the results of our recombination analysis (Figure 2—figure supplements 5–8, Figure 2—source data 1). Some fragments of the Karsdorf sequences appeared to be very similar to modern human (G, E) and African NHP genotypes, and the Sorsum genome partially showed a high similarity to the human genotypes G, E and B. (Figure 2—figure supplements 5–8, Figure 2—source data 1). Given the close relationship between the two Neolithic virus genomes, it is also conceivable that the older HBV from Karsdorf could have been a distant source for the younger Sorsum virus (Figure 2—figure supplements 5–8, Figure 2—source data 1). The closer relationship between the Neolithic and the NHP strains compared to other human strains is noteworthy and may have involved reciprocal cross-species transmission at one or possibly several times in the past (Simmonds and Midgley, 2005; Souza et al., 2014; Rasche et al., 2016).
 
@@ -80,7 +203,7 @@ In view of the unexpected complexity of our findings, we envisage future diachro
 
 ## Materials and methods
 
-## Human remains
+### Human remains
 
 The LBK settlement of Karsdorf, Saxony-Anhalt, Germany, is located in the valley of the river Unstrut. Between 1996 and 2010 systematic excavations were conducted at Karsdorf that led to the discovery of settlements and graves from the Neolithic to the Iron Age (Behnke, 2007; 2011; 2012). The LBK is represented by 24 longhouses in north-west to south-east orientation that were associated with settlement burials (Veit, 1996). The investigated individual 537 is a male with an age at death of around 25–30 years (Figure 1—figure supplement 1), dated to 5056–4959 cal BC (KIA 40357–6116 ± 32 BP) (Brandt et al., 2014; Nicklisch, 2017).
 
@@ -88,13 +211,13 @@ The gallery grave of Sorsum, Lower-Saxony, Germany, is typologically dated to th
 
 The medieval cemetery of Petersberg/Kleiner Madron, Bavaria, Germany, lies on a hill top at 850 meters asl and 400 meters above the floor of the Inn Valley. On the eastern part of the cemetery members of a priory were buried that was most likely established in the late 10th century. Written sources document its existence from 1132 onwards (Meier, 1998). During systematic excavations (1997–2004) in the southeastern part of the churchyard the remains of individuals buried in 99 graves were uncovered. The examined individual in grave 820 is a male with an age at death of around 65–70 years (Lösch, 2009 - Figure 1—figure supplement 3) dating to 1020–1116 cal AD (MAMS 33642–982 ± 17 BP).
 
-## DNA extraction and sequencing
+### DNA extraction and sequencing
 
 The DNA extractions and pre-PCR steps were carried out in clean room facilities dedicated to aDNA research. Teeth were used for the analyses. The samples from Petersberg and Sorsum were processed in the Ancient DNA Laboratory at Kiel University and the sample from Karsdorf in the Ancient DNA Laboratory of the Max Planck Institute for the Science of Human History (MPI SHH) in Jena. All procedures followed the guidelines on contamination control in aDNA studies (Warinner et al., 2017; Key et al., 2017). The teeth were cleaned in pure bleach solution to remove potential contaminations prior to powdering. Fifty milligrams of powder were used for extraction following a silica-based protocol (Dabney et al., 2013). Negative controls were included in all steps.
 
 From each sample, double-stranded DNA sequencing libraries (UDGhalf) were prepared according to an established protocol for multiplex high-throughput sequencing (Meyer and Kircher, 2010). Sample-specific indices were added to both library adapters via amplification with two index primers. Extraction and library blanks were treated in the same manner. For the initial screening, the library of the individual from Karsdorf was sequenced on 1/50 of a lane on the HiSeq 3000 (2 × 75 bp) at the MPI SHH in Jena and the libraries from Petersberg and Sorsum were sequenced on the Illumina HiSeq 4000 (2 × 75 bp) platform at the Institute of Clinical Molecular Biology, Kiel University, using the HiSeq v4 chemistry and the manufacturer’s protocol for multiplex sequencing. Deep-sequencing for each of the three samples was carried out on two lanes on the Illumina HiSeq 4000 platform at the Institute of Clinical Molecular Biology, Kiel University.
 
-## Clip and merge
+### Clip and merge
 
 The datasets produced for all ancient samples contained paired-end reads with varying numbers of overlapping nucleotides as well as artificial adapter sequences. We used ClipAndMerge version 1.7.3, a module of the EAGER pipeline (Peltzer et al., 2016), to clip adapter sequences, merge corresponding paired-end reads in overlapping regions and to trim the resulting reads. We used the default options with the following command:
 
@@ -108,19 +231,19 @@ java -jar ClipAndMerge.jar -in1 $FASTQ1 -in2 $FASTQ2 \
 
 where $FASTQ1 and $FASTQ2 are the two gzipped FASTQ input files
 
-## Adapter clipping
+### Adapter clipping
 
 ClipAndMerge uses an overlap alignment of the respective forward or reverse adapter with the 3’ end of each read in order to remove sequencing adapter sequences. Regions at the 3’ end of each read that were contained in the alignment were clipped. Reads that were shorter than 25 nucleotides after adapter clipping or contained only adapter sequences (adapter dimers) were removed. All remaining reads were then used in the merging step.
 
-## Merging of overlapping paired reads
+### Merging of overlapping paired reads
 
 Merging was performed for all remaining paired reads with a minimum overlap of 10 nucleotides and at most 5% mismatches in the overlap region. The algorithm selected the maximal overlap fulfilling these criteria. The consensus sequence was generated using the nucleotides in the overlap regions from the read with the higher PHRED quality score, maximizing the quality of the resulting read.
 
-## Quality trimming
+### Quality trimming
 
 In a final step, ClipAndMerge performed quality trimming of the reads and all nucleotides with PHRED scores smaller than 20 were trimmed from the 3’ end of each read. Finally, all reads with fewer than 25 nucleotides after quality trimming were removed. The resulting high-quality reads were used for the alignment.
 
-## Virus screening
+### Virus screening
 
 Screening of the datasets was carried out with the software MALT using the ncbi-viral database as a reference. A sequence identity threshold of 85% was set and the alignment mode was changed to SemiGlobal. The analysis was carried out using the following command:
 
@@ -130,7 +253,7 @@ where $index is the index file, $FASTQCM is the clipped and merged file and $OUT
 
 The resulting alignments were visually inspected using MEGAN 6. Reads mapping to the hepatitis B reference in the database (NC_003977.2) were extracted and verified using a discontiguous megablast against the virus taxa (taxid: 10239) with default parameters.
 
-## HBV alignment
+### HBV alignment
 
 For identification of the genotypes, samples were aligned against one reference for each of the eight hepatitis B genotypes available in the NCBI hepatitis B genotyping project (https://www.ncbi.nlm.nih.gov/projects/genotyping/view.cgi?db=2) (Supplementary file 1). Additionally, eight NHP strains were used. All references were combined in one FASTA file and a competitive mapping was performed using BWA. The mapping was carried out using the following command:
 
@@ -140,7 +263,7 @@ where $INDEX is the reference, $FASTQCM is the input file and $OUT is the output
 
 Minimum mapping quality was set to 0.
 
-## Duplicate removal
+### Duplicate removal
 
 We used DeDup version 0.11.3, part of the EAGER pipeline,Peltzer et al., 2016 to identify and remove all duplicate reads in the sample specific BAM files (Supplementary file 2) with the default options and the following command:
 
@@ -148,7 +271,7 @@ java -jar DeDup.jar -i $IN -o $OUT
 
 where $IN is the input BAM file and $OUT is the output BAM file.
 
-## Extracting mapped reads
+### Extracting mapped reads
 
 After duplicate removal the resulting BAM files were converted to SAM files using SAMtools version 0.1.19-96b5f2294a with default parameters and the following command:
 
@@ -158,7 +281,7 @@ where $OUT is the SAM output file and $IN is the BAM input file. Reads from the 
 
 awk '/^[FMR]/{print ‘@”$1’\n’$10’\n+\n’$11}' $IN > $OUT where $IN is a SAM file and $OUT is the resulting FASTQ file containing all the mapped reads.
 
-## De novo assembly
+### De novo assembly
 
 The de novo assembly was performed using the SPAdes genome assembler version v3.9.0 (Bankevich et al., 2012) with the following settings:
 
@@ -170,7 +293,7 @@ where $IN is a FASTQ file containing the mapped reads and $OUT is the output fol
 
 Resulting contigs for each K-value were checked and the one which spawned the longest contig was selected for further processing (Supplementary file 3).
 
-## Mapping of contigs
+### Mapping of contigs
 
 Contigs were mapped against the multi FASTA file containing all 16 references. The following command was used:
 
@@ -178,11 +301,11 @@ bwa mem $INDEX $IN $OUT
 
 where $INDEX is the reference, $IN the file containing the contig/contigs and $OUT is the resulting BAM file.
 
-## Consensus generation
+### Consensus generation
 
 For genomic reconstruction of the ancient HBV strains, the results of the alignments were inspected visually with IGV version 2.3.92 (Thorvaldsdóttir et al., 2013). Information about contig order and direction were used for the construction of a consensus sequence. Bases that were soft clipped in the alignment were cut off using SeqKit software version 0.7.0 and realigned to the 16 references as described above. This was done because of the circular genome structure of HBV. Big contigs needed to be split to preserve genomic order with respect to the reference sequences (Supplementary file 4).
 
-## Remapping raw reads against the consensus sequence
+### Remapping raw reads against the consensus sequence
 
 Raw reads of each sample were mapped to their corresponding consensus sequence using the software CircularMapper version 1.93.4 and the following command line:
 
@@ -202,7 +325,7 @@ java -jar realign-1.93.4.jar -e $E -i $IN -r $OR
 
 where $E is the length of elongation, $IN is the output of bwa samse and $OR is the unmodified consensus.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Hepatitis B reference strains for apes were collected using edirect with the following command:
 
@@ -226,15 +349,15 @@ Megacc -a $MAO -d $IN -o $OUT
 
 where $MAO is the megacc configuration file, $IN is the multiple alignment and $OUT is the output directory. For both trees 1408 informative sites and Jukes-Cantor substitution model were used. Bootstrap replicates are 2000 for ML and 10000 for NJ. The trees are provided in Figure 2—source data 3 and 4.
 
-## Molecular clock analysis
+### Molecular clock analysis
 
 The evolution of hepatitis B virus over time is unclear with regard to its evolutionary rate and the role of recombination. Previous studies have attempted to detect a molecular clock-like signature without success. We investigate if the ancient genomes presented here allow a molecular clock analysis using TempEst v1.5.1 (Rambaut et al., 2016). The data set shows little positive correlation between genetic divergence and sampling time (correlation coefficient 0.075) and there is very little temporal signal (TempEst R^2 = 0.006, see Figure 2—figure supplement 9). Therefore, we refrain from further dating analysis.
 
-## Recombination analysis
+### Recombination analysis
 
 We performed recombination analysis using all modern full reference genomes (n = 493) and five ancient genomes used for the network analysis (see above in Phylogenetic analysis). The methods RDP, GENECOV, Chimera, MaxChi, BootScan, SiScan, 3Seq within RDP v4 (Martin et al., 2015) with a window size of 100 nt and the parameter set to circular genome with and without outgroup reference (results are provided in Figure 2—source data 1) and SimPlot v 3.5.1 (Lole et al., 1999, Figure 2—figure supplements 5–8) were applied to the data set.
 
-## LC-MS/MS analysis and database searches
+### LC-MS/MS analysis and database searches
 
 Proteins were extracted from powdered tooth samples (50 mg) using a modified filter-aided sample preperation (FASP) protocol as previously described (Warinner et al., 2014; Cappellini et al., 2014). In-filter trypsin digested samples were analyzed on a Dionex Ultimate 3000 nano-HPLC coupled to a Q Exactive mass spectrometer (Thermo Scientific, Bremen). The samples were washed on a trap column (Acclaim Pepmap 100 C18, 10 mm ×300 μm, 3 μm, 100 Å, Dionex) for 5 min with 3% acetonitrile (ACN)/0.1% TFA at a flow rate of 30 μL/min prior to peptide separation on an Acclaim PepMap 100 C18 analytical column (15 cm ×75 μm, 3 μm, 100 Å, Dionex). A flow rate of 300 nL/min using eluent A (0.05% formic acid (FA)) and eluent B (80% ACN/0.04% FA) was used for gradient separation as follows: linear gradient 5 ± 50% B in 60 min, 50 ± 95% B in 5 min, 95% B for 10 min, 95 ± 5% B in 1 min, and equilibration at 5% B for 12 min. Spray voltage applied on a metal-coated PicoTip emitter (30 μm tip size, New Objective, Woburn, Massachusetts, US) was 1.25 kV, with a source temperature of 250°C. Full scan MS spectra were acquired from 5 to 145 min between 300 and 2,000 m/z at a resolution of 60,000 at m/z 400 (automatic gain control [AGC] target of 1E6; maximum ion injection time [IIT] of 500 ms). The five most intense precursors with charge states 2 + used were selected with an isolation window of 1.6 m/z and fragmented by HCD with normalized collision energies of 25. The precursor mass tolerance was set to 10 ppm, and dynamic exclusion (30 s) was enabled.
 
@@ -244,7 +367,7 @@ A nearly complete y-ion series and two b-ion fragments allow for an assignment o
 
 Note that the MS/MS method applied here does not allow us to distinguish leucine (L) or isoleucine (I) residues. Manual permutation of the leucine residues in the above stated sequence followed by a BLAST search (default search parameters) led to the identification of the HBV-protein external core antigen in all cases with the exception of the combinations DIIDTASALYR and DLLDTASAIYR; these two variants were reported by BLAST search as the proteins hypothetical protein CR988_04570 [Treponema sp.] and anti-GFP antibody [synthetic construct] with the HBV-protein external core antigen listed at rank 3. However, these proteins were not found in the genomic data. Hence, despite the uncertainty of the I/L assignment, the MS/MS data support the genomic finding of an HBV infection.
 
-## Human population genetic analyses
+### Human population genetic analyses
 
 Mapping of the adapter-clipped and merged FASTQ files to the human reference genome hg19 was done using BWA (Li and Durbin, 2010) with the following command line:
 
@@ -254,6 +377,6 @@ where $INDEX is the reference, $FASTQCM is the input file and $OUT is the output
 
 The mapped sequencing data were transformed into the Eigenstrat format (Price et al., 2006) and merged with a dataset of 1,233,013 SNPs (Haak et al., 2015; Mathieson et al., 2015). Using the software Smartpca (Patterson et al., 2006) the three samples and previously published ancient populations were projected onto a base map of genetic variation calculated from 32 West Eurasian populations (Figure 1—figure supplements 4, 8 and 9).
 
-## Sex determination
+### Sex determination
 
 Sex was assessed based on the ratio of sequences aligning to the X and Y chromosomes compared to the autosomes (Skoglund et al., 2013).

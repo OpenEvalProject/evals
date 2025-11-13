@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.33953.001 Although the human gut microbiome plays a prominent role in xenobiotic transformation, most of the genes and enzymes responsible for this metabolism are unknown. Recently, we linked the two-gene ‘cardiac glycoside reductase’ ( cgr ) operon encoded by the gut Actinobacterium Eggerthella lenta to inactivation of the cardiac medication and plant natural product digoxin. Here, we compared the genomes of 25 E. lenta strains and close relatives, revealing an expanded 8-gene cgr -associated gene cluster present in all digoxin metabolizers and absent in non-metabolizers. Using heterologous expression and in vitro biochemical characterization, we discovered that a single flavin- and [4Fe-4S] cluster-dependent reductase, Cgr2, is sufficient for digoxin inactivation. Unexpectedly, Cgr2 displayed strict specificity for digoxin and other cardenolides. Quantification of cgr2 in gut microbiomes revealed that this gene is widespread and conserved in the human population. Together, these results demonstrate that human-associated gut bacteria maintain specialized enzymes that protect against ingested plant toxins.
+Although the human gut microbiome plays a prominent role in xenobiotic transformation, most of the genes and enzymes responsible for this metabolism are unknown. Recently, we linked the two-gene ‘cardiac glycoside reductase’ (cgr) operon encoded by the gut Actinobacterium Eggerthella lenta to inactivation of the cardiac medication and plant natural product digoxin. Here, we compared the genomes of 25 E. lenta strains and close relatives, revealing an expanded 8-gene cgr-associated gene cluster present in all digoxin metabolizers and absent in non-metabolizers. Using heterologous expression and in vitro biochemical characterization, we discovered that a single flavin- and [4Fe-4S] cluster-dependent reductase, Cgr2, is sufficient for digoxin inactivation. Unexpectedly, Cgr2 displayed strict specificity for digoxin and other cardenolides. Quantification of cgr2 in gut microbiomes revealed that this gene is widespread and conserved in the human population. Together, these results demonstrate that human-associated gut bacteria maintain specialized enzymes that protect against ingested plant toxins.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ Here, we used a combination of comparative genomics, heterologous expression, bi
 
 ## Results
 
-## Identification of a single genetic locus conserved in all digoxin-reducing strains
+### Identification of a single genetic locus conserved in all digoxin-reducing strains
 
 E. lenta strains vary in their ability to reduce digoxin (Haiser et al., 2013; Haiser et al., 2014); however, our prior attempts at identifying the minimal genetic machinery necessary for metabolism were limited by the availability of just a single strain capable of this activity (E. lenta DSM 2243). Through public repositories and isolation of novel strains, we curated, sequenced, and annotated a collection of 25 E. lenta and closely related Coriobacteriia strains (Bisanz et al., 2018). These bacteria were isolated from 22 individuals in 6 countries across three continents spanning the years of 1938–2015 (Figure 1—source data 1).
 
@@ -42,17 +42,33 @@ We used liquid chromatography-tandem mass spectrometry (LC-MS/MS) to quantify th
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig1-v1.jpg)
 
-**Figure 1.:** cgr operon.(A) Survey of digoxin reduction in 21 strains of E. lenta (El#), 2 strains of Gordonibacter spp. (Gs#), E. sinensis (Es1), and Paraeggerthella hongkongesis (Ph1) (Figure 1—source data 1 and 2) revealed eight strains capable of reducing digoxin to dihydrodigoxin (*p<0.05, ANOVA with Dunnett’s test vs. vehicle controls). Data represents mean ± standard error of the mean (SEM) over three biological replicates. (B) Digoxin reduction did not correlate with phylogeny in E. lenta species (cladogram displayed with bootstrap values indicated at nodes; p=0.275, K = 0.049, Blomberg’s K). (C) Comparative genomics using a random forest classifier (see Materials and methods) revealed seven genes with perfect predictive accuracy for digoxin reduction. The orthologous cluster identified as hypothetical corresponds to an open reading frame present at position 299442..2995131 in the DSM 2243 reference genome. (D) Analysis of genomic context revealed a highly conserved 10.4 kb locus of 7 genes that flank a short, conserved hypothetical gene, herein termed the cgr-associated gene cluster (cac). (E) Analysis of gene expression in the cgr-associated gene cluster revealed only the cgr-locus was significantly upregulated by exposure to digoxin. * FDR < 0.1 (Figure 1—source data 3).10.7554/eLife.33953.004Figure 1—source data 1.Acronyms: ND (Not Detected), NA (Not Available), BHI (Brain Heart Infusion), BHIA (Brain Hearth Infusion with supplemented arginine), FAA (Fastidious Anaerobe Agar), GAM (Gifu Anaerobic Medium), DDMM (Dopamine Dehydroxylation Minimal Medium), Nag (Nutrient Agar).10.7554/eLife.33953.005Figure 1—source data 2.E.lenta and related bacterial isolates.10.7554/eLife.33953.006Figure 1—source data 3.cgr-associated genes in E.lenta DSM 2243.
+**Figure 1.:** (A) Survey of digoxin reduction in 21 strains of E. lenta (El#), 2 strains of Gordonibacter spp. (Gs#), E. sinensis (Es1), and Paraeggerthella hongkongesis (Ph1) (Figure 1—source data 1 and 2) revealed eight strains capable of reducing digoxin to dihydrodigoxin (*p<0.05, ANOVA with Dunnett’s test vs. vehicle controls). Data represents mean ± standard error of the mean (SEM) over three biological replicates. (B) Digoxin reduction did not correlate with phylogeny in E. lenta species (cladogram displayed with bootstrap values indicated at nodes; p=0.275, K = 0.049, Blomberg’s K). (C) Comparative genomics using a random forest classifier (see Materials and methods) revealed seven genes with perfect predictive accuracy for digoxin reduction. The orthologous cluster identified as hypothetical corresponds to an open reading frame present at position 299442..2995131 in the DSM 2243 reference genome. (D) Analysis of genomic context revealed a highly conserved 10.4 kb locus of 7 genes that flank a short, conserved hypothetical gene, herein termed the cgr-associated gene cluster (cac). (E) Analysis of gene expression in the cgr-associated gene cluster revealed only the cgr-locus was significantly upregulated by exposure to digoxin. * FDR < 0.1 (Figure 1—source data 3).
 
 The 10.4 kb cgr gene cluster was highly conserved between strains with an average global nucleotide identity of 99.95 ± 0.05% (mean ± standard deviation (SD)). Both cgr+ and cgr- strains share a short 174 bp hypothetical gene (cac2) that is conserved with 100% global nucleotide identity in cgr+ strains, while cgr- strains are 90.20–91.37% identical to cgr+ cac2. This conservation and genomic context may be indicative of multiple translocations in the region creating the cgr-associated gene cluster although obvious markers of recent translocation of the cgr gene cluster are absent.
 
-## Cgr2 is sufficient for digoxin reduction
+### Cgr2 is sufficient for digoxin reduction
 
 Multiple lines of evidence suggested that the cgr operon encodes the enzymes responsible for digoxin metabolism. Of the eight genes in the cgr gene cluster, only three show primary sequence homology to reductases: cgr1, cgr2, and cac4. RNA sequencing (Haiser et al., 2013) demonstrated that the cgr operon (cgr1 and cgr2) is highly upregulated (>165 fold) in response to digoxin, whereas cac4 is not significantly induced (1.3-fold change relative to vehicle controls, p=0.83) (Figure 1E). The remainder of the cgr-associated cluster is largely transcriptionally dormant during exponential growth both with and without the presence of digoxin (<6 normalized counts per gene) and is therefore unlikely to be linked to digoxin metabolism. Initial annotations of Cgr1 and Cgr2 suggested both proteins might mediate digoxin reduction. Cgr1 is a putative membrane-anchored protein that belongs to the cytochrome c3 superfamily (Pfam 14537) and is predicted to harbor covalently bound heme groups (CXXCH motif). It most closely resembles the NapC/NirT (NrfH) family of proteins that transfer electrons from the membrane quinone pool to associated reductases, facilitating reduction of terminal electron acceptors such as nitrite and sulfite (Kemp et al., 2010; Kern et al., 2008). We also identified a close homolog of Cgr1 (Elen_2528) in E. lenta DSM 2243 (91.75% amino acid identity, BLASTP) that is a component of the E. lenta core genome (99.39 ± 0.81% global identity mean ± SD). The presence of this highly similar protein in both metabolizing and non-metabolizing strains further indicates that Cgr1 is involved in a more general function (e.g. electron transfer, membrane docking) rather than direct reduction of digoxin. On the other hand, Cgr2 is unique to the genomes of cgr+ E. lenta, and the closest homologs of Cgr2 display <28% amino acid identity. Cgr2 is a homolog of flavin adenine dinucleotide (FAD)-dependent fumarate reductases (Pfam 00890; Interpro 003953/027477) and is predicted to undergo secretion via the twin arginine translocation (Tat) pathway. Taken together, these observations led us to hypothesize that Cgr1 and Cgr2 form a membrane-associated complex that catalyzes reduction of the α,β-unsaturated butyrolactone of digoxin.
 
 Heterologous expression of Cgr1 and Cgr2 in the model Actinobacterium Rhodococcus erythropolis L88 (Mitani et al., 2005; Nakashima and Tamura, 2004a, 2004b) allowed us to test whether these proteins were sufficient for digoxin reduction. After inducing protein expression, cultures were incubated with 10 µM of digoxin and dihydrodigoxin production was quantified by LC-MS/MS (Figure 2A). The Cgr2 expressing strains showed a significant increase in dihydrodigoxin levels relative to empty vector controls (Figure 2A; Figure 2—source data 1). In contrast, no activity was observed for the strain expressing only Cgr1, although this could be due to a lack of protein, as no overexpression of Cgr1 could be detected in either clarified lysates or membrane fractions. These results show that Cgr2 is sufficient for digoxin reduction in R. erythropolis cells, and endogenous redox active proteins and/or metabolites in this heterologous host may fulfill the putative function of Cgr1 as an electron donor.
 
-## Cgr2 activity depends on [4Fe-4S] cluster(s)
+![Figure 2.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig2-v1.jpg)
+
+**Figure 2.:** (A) Whole cell assays using R. erythropolis expressing Cgr1 and Cgr2 constructs demonstrated that Cgr2 is sufficient for reducing digoxin. Data represents the mean ± SEM (n = 3 biological replicates). Asterisks indicate statistical significance of each variant as compared to empty vector by Student’s t test (**p<0.01, ***p<0.001) (Figure 2—source data 1). (B) Annotation and amino acid numbering of Cgr2, including the predicted Tat secretion signal and three conserved flavin-binding motifs from the glutathione reductase family (X = any amino acid; h = hydrophobic residue). (C) In vitro activity of Cgr2 for digoxin reduction using reduced methyl viologen as an electron donor, analyzed by liquid chromatography-tandem mass spectrometry (LC-MS/MS). [Fe-S] cluster reconstitution, FAD, and anaerobic conditions are required for Cgr2 activity. Data represents the mean ± SEM (n = 3 independent experiments) (Figure 2—source data 2). FAD = flavin adenine dinucleotide; FMN = flavin mononucleotide. (D) Ultraviolet-visible (UV-Vis) absorption spectra of Cgr2 revealed an oxygen-sensitive peak centered around 400 nm that increased upon [Fe-S] cluster reconstitution, supporting the presence of [4Fe-4S] clusters in Cgr2. (E) Electron paramagnetic resonance (EPR) spectra of sodium dithionite-reduced Cgr2 reconstituted with iron ammonium sulfate hexahydrate ((NH4)2Fe(SO4)2·6H20) and sodium sulfide (Na2S·9H20). G-values and decreased EPR signal intensity at higher temperatures (10 – 40 K) indicated the presence of low potential [4Fe-4S]1+ clusters. Experimental conditions were microwave frequency 9.38 GHz, microwave power 0.2 mW, modulation amplitude 0.6 mT, and receiver gain 40 dB.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) SDS-PAGE analysis of heterologously expressed Cgr2(–48aa)-NHis6 constructs (expected mass = 55 kDa) purified on HisPur Ni-NTA resin. Heat-generating lysis methods (e.g. sonication) led to substantial protein degradation as compared to cell disruption. (B) Analytical fast protein liquid chromatography (FPLC) performed under aerobic and anaerobic conditions. Colored bars highlight molecular weights corresponding to dimeric (blue) or monomeric (pink) Cgr2. (C) Thermal melt curves displaying relative fluorescence of Sypro Orange bound to purified and (D) reconstituted Cgr2 in various pH buffers. Protein melting temperature (Tm) of purified protein was < 37°C before reconstitution and increased to 40 – 50°C after reconstitution.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Ultraviolet-visible (UV-Vis) spectra of reconstituted Cgr2 in the absence or presence of reducing agent sodium dithionite (NaDT) revealed that the [Fe-S] clusters in Cgr2 are redox active. (B) Purified Cgr2 did not exhibit a detectable EPR signal. Upon reduction with NaDT, an EPR signal corresponding to [4Fe-4S]1+ clusters was detected in purified Cgr2. This signal was amplified in reconstituted Cgr2, showing incorporation of additional [4Fe-4S] cluster(s). Samples contained 200 µM protein, 0.2 mM sodium dithionite, and EPR measurements were conducted at 10 K. (C) EPR spectra of dithionite-treated Cgr2 samples that had been reconstituted with 0 (purified), 2, 4, or 8 equivalents of iron and sulfide for 5 hours or overnight (O/N). Samples contained 150 µM protein, 0.3 mM sodium dithionite, and measurements were conducted at 10 K. Number of EPR-active clusters per Cgr2 monomer under each reconstitution condition is shown in parentheses. Spin quantitation was determined against a 150 µM Cu2+-EDTA standard measured under non-saturating conditions. (D) In vitro reaction rates of Cgr2 reconstituted under different conditions revealed increasing activity with higher reconstitution equivalents. Data represents mean ± SEM (n = 3 independent experiments).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Whole cell assays of R. erythropolis expressing individual cysteine to alanine point mutants and incubated with digoxin demonstrated that six cysteine residues are important for activity. Data represents mean ± SEM (n = 3 biological replicates). Asterisks indicate statistical significance of each variant compared to wild-type Cgr2 by Student’s t test (*p<0.05, **p<0.01) (Figure 2—source data 4). (B) Mass spectrometry analysis of in vitro assays (quenched at 15 min) containing reconstituted wild-type Cgr2 or single cysteine to alanine point mutants. Data represents mean ± SEM (n = 3 independent experiments). Asterisks indicate statistical significance of each variant compared to wild-type Cgr2 by Student’s t test (***p<0.001) (Figure 2—source data 5). (C) SDS-PAGE analysis of clarified lysate from R. erythropolis cells transformed with empty pTipQC vector or expressing cytoplasmic wild-type Cgr2 (wt) or individual cysteine to alanine point mutants (~55 kDa). All point mutants were soluble. (D) [4Fe-4S]1+ clusters were detected by EPR in all Cgr2 point mutants treated with sodium dithionite. Spin quantitation against a Cu2+-EDTA standard revealed similar levels of [4Fe-4S]1+ clusters per Cgr2 monomer for all variants. Number of clusters shown in parentheses. (E) Divalent metal cations (Fe2+, Mg2+, Mn2+) stimulated the activity of Cgr2 in vitro. Data represents mean ± SEM (n = 3 independent experiments). (F) Addition of Fe2+ stimulated the activity of three cysteine residues, potentially implicating C92, C265, and C535 in metal binding. Data represents mean ± SEM (n = 3 independent experiments).
+
+### Cgr2 activity depends on [4Fe-4S] cluster(s)
 
 Having identified Cgr2 as the critical reductase enzyme, we next aimed to reconstitute its activity in vitro. Examining multiple tagged versions and truncations of Cgr2 in R. erythropolis revealed that a Cgr2(–48aa)-NHis6-tagged construct lacking the Tat secretion signal gave the highest yield and purity (Figure 2—figure supplement 1A). This construct, hereafter referred to as ‘wild-type’ Cgr2, was used for all in vitro studies. Computational analysis of Cgr2 predicted that it would bind flavin through a Rossmann fold (Dym and Eisenberg, 2001), and the three motifs required for cofactor binding are conserved in all 8 Cgr2 sequences (Figure 2B). However, Cgr2 did not co-purify with flavin. Moreover, Cgr2 obtained from initial purifications was thermally unstable (melting temperature <37°C), was prone to degradation during cell lysis (Figure 2—figure supplement 1), and displayed low activity for digoxin reduction (Figure 2C); Figure 2—source data 2). Together, these observations indicated that an essential cofactor was likely missing. We also noticed that purified Cgr2 was light brown in color, suggesting the presence of a metallocofactor. Certain flavin-dependent reductases use metallocofactors to mediate the transfer of electrons to the active site, including cytochromes c in soluble enzymes and oxygen-sensitive iron-sulfur ([Fe-S]) clusters in membrane-bound enzymes (Kern et al., 2008; Iverson et al., 2002; Leys et al., 1999). The combination of the brown color and the presence of 16 cysteines in the mature Cgr2 sequence led us to hypothesize that this enzyme contained one or more [Fe-S] clusters. However, we were unable to detect any canonical [2Fe-2S], [3Fe-4Fe], or [4Fe-4S] cluster binding motifs within the Cgr2 sequence (Figure 2—source data 3) (Zhang et al., 2010; Nakamaru-Ogiso et al., 2002; Lee et al., 2004; Pandelia et al., 2011; Schnackerz et al., 2004; Leech et al., 2003; Gorodetsky et al., 2008; Lee et al., 2010; Weiner et al., 2007; Klinge et al., 2007; Dickert et al., 2002; Conover et al., 1990; Schneider and Schmidt, 2005; Iwasaki et al., 2000; Banci et al., 2013; Dailey and Dailey, 2002; Jung et al., 2000).
 
@@ -64,7 +80,7 @@ Although these UV-vis experiments indicated the presence of [Fe-S] cluster(s) in
 
 Next, we sought to determine how many [4Fe-4S] clusters were present in Cgr2. Using a Cu2+-EDTA standard, we determined that purified, unreconstituted Cgr2 contains 0.02–0.03 [4Fe-4S]1+ clusters per protein monomer. After reconstitution with iron and sulfide, the intensity of the EPR signal increased to 0.13–0.25 [4Fe-4S]1+ clusters per Cgr2. Though these data may suggest the presence of one [4Fe-4S] cofactor per Cgr2, they do not exclude the possibility of multiple [Fe-S] centers. Indeed, the in vitro activity of Cgr2 increases upon reconstitution with increasing equivalents of iron and sulfide (Figure 2—figure supplement 2C–D). Additional spectroscopic or structural characterization (e.g. crystallography) will be required to definitively determine the number of [Fe-S] cluster(s) present in Cgr2.
 
-## Identification of amino acids required for Cgr2 function
+### Identification of amino acids required for Cgr2 function
 
 As motif analysis could not identify putative [4Fe-4S] cluster binding sites in Cgr2, we attempted to use site-directed mutagenesis to reveal the cysteine residues required for cofactor assembly. Individually mutating each of the 16 cysteines present in wild-type Cgr2 to alanine revealed six residues that, when mutated, significantly decreased dihydrodigoxin production by both heterologously expressed and purified Cgr2 (Figure 2—figure supplement 1A; Figure 2—figure supplement 3A–C; ﻿Figure 2—source data 4; Figure 2—source data 5). EPR analysis of these six Cgr2 mutants revealed comparable levels of [4Fe-4S]1+ cluster incorporation relative to the wild-type enzyme (Figure 2—figure supplement 3D), which may argue against the involvement of these cysteines in [4Fe-4S] cluster ligation. However, substitution of a single cysteine residue may not always be sufficient to prevent [4Fe-4S] cluster formation (Iismaa et al., 1991; Hewitson et al., 2002; Martín et al., 1990).
 
@@ -72,23 +88,61 @@ Alternatively, these six cysteines may be critical for protein structure (e.g. t
 
 To identify additional amino acids that may be important for Cgr2 function, we compared the Cgr2 sequences encoded within our collection of E. lenta genomes. Strikingly, only two cgr2 nucleotide variants were detected, which were validated by targeted Sanger sequencing. One of these variants is only found in the DSM 2243 type strain resulting in a conservative methionine (M) to valine (V) substitution at position 381. The other results in either aromatic tyrosine (Y) as in the type strain DSM 2243 or neutral asparagine (N) at position 333 (Figure 3A). We were also able to fully or partially reconstruct 14 additional cgr2 sequences using reads mapping to the cgr gene cluster from 96 gut microbiome datasets with a high abundance of E. lenta (>1x coverage or >0.001 proportional abundance). These metagenome fragments confirmed the presence of both Y333 and N333 variants in a 9:5 ratio (Figure 3A) while the DSM 2243 M381 variant was not observed. To avoid biases against lower E. lenta coverage metagenomes, we also applied an assembly-free method based on calling variants from aligned reads (Figure 3B). This uncovered 49 metagenomes with at least one read mapping over the variant position, confirming the bi-allelic nature with 15 Y333 and 34 N333 metagenomes. Nearly all metagenomes (41/42) with reads mapping to position 381 supported the valine residue suggesting that the DSM 2243 M381 variant is rare. Given that this analysis confirmed the highly conserved nature of the cgr locus, we analyzed the conservation of cgr2 in the context of the E. lenta pan-genome (based on 24 sequenced isolates) finding that it is at the 67th percentile of conservation. These results suggest that cgr2 sequence conservation is not unusual for this species, with the caveat that relatively few genomes were available for analysis (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig3-v1.jpg)
+
+**Figure 3.:** (A) Analysis of Cgr2 amino acid sequence composition of isolate genomes (n = 8) and reconstructed sequences from gut microbiome datasets (n = 14) revealed a single non-conservative Y333N variant in isolate strains supported by metagenomes (12Y/10N). (B) Nucleotide variation in the cgr-associated gene cluster. Reads aligned from both isolate genomes (iso) and metagenomes were aligned to the DSM 2243 reference assembly and plotted if there was coverage of the Y333N variant position (CP001726.1: 2959294 bp). Variants were called when at least one read was mapped to the position and > 50% of reads supported an alternative base. Read depth at any given position is indicated by shading. Confirming assembly-based methods, cgr2 amino acid position 333 was bi-allelic with 5 of 8 isolate genomes and 15 of 49 metagenomes showing the N333 variant (four metagenomes have evidence of both alleles) and minimal variation in other regions of the cluster. (C) Average amino acid conservation in the E. lenta core (n = 1832) and non-singleton accessory genome (n = 2557) demonstrates that cgr2 is in the 67th percentile for conservation in the pan-genome (78.8th in the core genome, and 58.5th in the non-singleton accessory genome) with higher average conservation observed in the core genome (98.6 ± 2.41% core, 97.4 ± 5.6% accessory, mean ± SD). (D) Comparison of digoxin metabolism in culture by E. lenta cgr2- (n = 13 strains), Cgr2Y333 (n = 3 strains), and Cgr2N333 (n = 5 strains). Control refers to digoxin in BHI media. Each point represents the mean percent conversion to dihydrodigoxin of each individual strain cultured in biological triplicate. Bars represent the mean ± SEM percent conversion per E. lenta group. Statistical significance between Y333 and N333 groups was calculated using two-tailed Welch’s t test (p=0.052) (Figure 3—source data 1). (E) Michaelis–Menten kinetics of Cgr2 towards digoxin revealed that the Y333 variant is significantly more active than the N333 variant. Data represents mean ± SEM (n = 3 independent experiments) (Figure 3—source data 2; Figure 3—source data 4). (F) In vitro time course (0 – 4.5 hr) of the conversion of digoxin to dihydrodigoxin by Cgr2 Y333 and N333 variants. Reaction aliquots were quenched in methanol and analyzed by liquid chromatography-tandem mass spectrometry. Values represent mean ± SEM (n = 3 independent experiments). Asterisks indicate statistical significance at each timepoint of Y333 vs. N333 percent conversion, by Student’s t test (*p<0.05, ***p<0.001) (Figure 3—source data 3).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig3-figsupp1-v1.jpg)
+
 Given the ubiquity of variation at position 333, we assessed its functional consequences by comparing the activity of the two Cgr2 variants in vivo and in vitro. E. lenta strains encoding the N333 variant show a trend towards a decreased ability to metabolize digoxin as compared to Y333-encoding strains (Figure 3D; Figure 3—source data 1; p=0.052 Welch’s t-test). This decreased activity was more readily apparent following incubation of digoxin with Cgr2 proteins in vitro (Figure 3E; Figure 3—source data 2). While kinetic parameters for wild-type Cgr2 (Y333) were KM = 94.6 ± 7.1 µM and a catalytic efficiency of 2.4 ± 0.8×103 M−1 s−1, saturating Vmax conditions could not be reached for the N333 variant within the range of concentrations where digoxin is soluble (≤0.5 mM). Despite its lower activity, Cgr2 N333 converted digoxin to dihydrodigoxin at a comparable efficiency to Y333 after 4.5 hr (Figure 3F; Figure 3—source data 3). Compared to the activity of other FAD-dependent reductases towards their native substrates, the Y333 Cgr2 variant is less efficient for digoxin reduction (Kemp et al., 2010; Rohman et al., 2013; Morris et al., 1994; Bogachev et al., 2012) (Figure 3—source data 4). This decreased activity could arise from impaired cofactor binding or reconstitution, or inefficient electron transfer in vitro in the absence of Cgr1. Alternatively, these results could indicate that digoxin is not the endogenous substrate of Cgr2.
 
-## Cgr2 is a novel enzyme that preferentially reduces cardenolides
+### Cgr2 is a novel enzyme that preferentially reduces cardenolides
 
 To systematically test for additional Cgr2 substrates, we assessed the enzyme’s activity toward 28 small molecules using a colorimetric assay (Figure 4; Figure 4—figure supplement 1). These molecules were selected based on their chemical similarity to digoxin and their relevance in the context of the human gut. Cgr2 displayed robust activity only toward cardenolides, the family of plant toxins that includes the pharmaceutical agents digoxin and digitoxin as well as ouabain, which is used as an arrowhead poison (Michalak et al., 2017). The cardenolide aglycones digoxigenin and ouabagenin were metabolized at a significantly faster rate than their glycosylated forms digoxin and ouabain, respectively (**p<0.01, Student’s t test). The isolated lactone 2(5H)-furanone was minimally processed by Cgr2, indicating that an intact steroid core is important for activity. However, the qualitatively similar rates observed for reduction of the various cardenolides demonstrates that the enzyme tolerates differences in the number and position of hydroxyl groups on the steroid scaffold. Overall, these results suggest that Cgr2 activity is restricted to cardenolide toxins and does not extend to other structurally related endogenous or exogenous compounds.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig4-v1.jpg)
+
+**Figure 4.:** Rate of methyl viologen oxidation coupled to substrate reduction by Cgr2. Colors denote different substrate classes. With the exception of the cardenolides, a representative substrate structure is shown. Values represent mean ± SEM (n = 3 independent experiments). **p<0.01, Student’s t test (Figure 4—source data 1). The heatmap generated in ChemMine (Backman et al., 2011) represents the structural similarity of each compound relative to digoxin. Structural distance matrix is calculated as (1- Tanimoto coefficient), where lower values represent more structurally similar compounds.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Plant-derived cardenolides. (B) Bufadienolides. (C) Dietary furanones, including sotolon (4,5-dimethyl-3-hydroxy-2,5-dihydrofuran-2-one), emoxyfuranone (5-ethyl-3-hydroxy-4-methyl-2(5 hr)-furanone), DMMF (2,5-dimethyl-4-methoxy-3(2 hr)-furanone), MHF (4-hydroxy-5-methyl-3-furanone), DMHF (4-Hydroxy-2,5-dimethyl-3(2 hr)-furanone), and EMHF (5-ethyl-4-hydroxy-2-methyl-3(2 hr)-furanone). (D) α,β-unsaturated carboxylic acids, including the antibiotic fusidic acid and substrates of similar bacterial reductases. (E) Ketosteroids, including naturally occurring hormones, synthetic steroid drugs, and putative cholesterol metabolites. (F) Unsaturated prostaglandins involved in host inflammation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** E. lenta DSM 2243 growth in (A) rich media or in basal media lacking terminal electron acceptors and including (B) 5% H2 or (C) 10 mM sodium acetate as electron donors. Cells were grown in 10 mL of media supplemented with 10 µM of each substrate or an equivalent volume (0.1% v/v) of solvent (DMSO and DMF) at 37°C. DMSO serves as a positive control to show that E. lenta is capable of anaerobic respiration. Data represents mean ± SEM (n = 3).
+
 Additionally, neither fumarate nor any of the metabolized cardenolides conferred a growth advantage to cgr2+ E. lenta in minimal or rich medias, suggesting that these compounds are not used as alternative terminal electron acceptors (Figure 4—figure supplement 2). The inability of Cgr2 to reduce fumarate, a common electron acceptor used during bacterial anaerobic respiration, led us to revisit the original annotation of Cgr2 as a ‘fumarate reductase’ (Saunders et al., 2009). To more systematically assess the relationship between Cgr2 and biochemically characterized reductases, we constructed a sequence similarity network (SSN) using the 5000 most similar sequences from the UniProtKB protein database. Within the network, there were seven enzymes that had been biochemically characterized (UniProtKB IDs: Q07WU7, Q9Z4P0, 8CVD0, P71864), biochemically and structurally characterized (PDB IDs: 1D4D, 1E39), or genetically characterized (UniProtKB ID: Q7D5C1) (Figure 5—source data 1) (Leys et al., 1999; Bogachev et al., 2012; Brzostek et al., 2005; Doherty et al., 2000; Knol et al., 2008; Rothery et al., 2003; Pealing et al., 1992; Dobbin et al., 1999). At all thresholds at which Cgr2 remained connected to other protein sequences, all characterized enzymes within the SSN were co-clustered, precluding the resolution of unique biochemical functions at this cutoff (Figure 5A). At higher alignment thresholds that separated these characterized enzymes into discrete isofunctional clusters, Cgr2 was always present as a ‘singleton’ with no links to other protein sequences (Figure 5B). Our SSN also revealed that reductase enzymes are widespread among human gut bacteria, with three validated enzymatic activities and 113 distinct clusters with uncharacterized biochemical functions detected in sequenced gut bacterial genomes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig5-v1.jpg)
+
+**Figure 5.:** The SSN was constructed using the top 5000 most similar proteins to Cgr2 from the UniprotKB database. Nodes represent proteins with 100% sequence identity. (A) SSN displayed with an e-value threshold of 10−50. The seven previously characterized enzymes (PDB ID: 1D4D, 1E39; UniProtKB ID: Q07WU7, Q9Z4P0, 8CVD0, P71864, Q7D5C1) and Cgr2 are colored according to biochemical function. (B) SSN displayed with an e-value threshold of 10−130. All nodes that co-clustered with characterized enzymes are shown in the same color, denoting putative isofunctional activity. With the exception of Cgr2, if a node comes from a gut bacterium, it is colored red rather than the color of the corresponding cluster.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** UniProtKB ID numbers are shown in parentheses. Active site residues (marked with an asterisk) were conserved in characterized fumarate reductases and clustered proteins from the sequence similarity network. These residues were not conserved in Cgr2 and another predicted fumarate reductase (Cac4) associated with the cgr gene cluster.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** UniProtKB ID numbers are shown in parentheses. Active site residues (marked with an asterisk) were conserved in characterized urocanate reductases and clustered proteins from the sequence similarity network and were not conserved in Cgr2.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** UniProtKB ID numbers are shown in parentheses. Active site residues (marked with an asterisk) were conserved in characterized ketosteroid dehydrogenases and clustered proteins from the sequence similarity network. Two residues involved in substrate binding and activation were conserved in Cgr2 (Y532, G536).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) General mechanism of catalysis by Cgr2 homologs. Cgr2 appeared to lack most of the conserved active site residues found in the most similar related enzymes, including (B) 6/7 residues utilized by fumarate reductases, (C) 4/5 residues utilized by urocanate reductases, and (D) 3/5 residues utilized by ketosteroid dehydrogenases. Active site residues are shown with numbering based on S. putrefaciens fumarate reductase, S. oneidensis MR-1 urocanate reductase, and R. erythropolis SQ1 ketosteroid dehydrogenase. Residues shown in red were conserved in Cgr2. (E) Two residues involved in substrate binding and activation in ketosteroid dehydrogenases were conserved in Cgr2 (Y532, G536). Whole cell assays in R. erythropolis overexpressing putative active site mutants in Cgr2 showed that Y532 was not essential for Cgr2 activity towards digoxin. Data represents mean ± SEM (n = 3 biological replicates).
 
 We validated our SSN by aligning the biochemically characterized enzymes within the network with additional co-clustered sequences to assess conservation of essential active site residues (Figure 5—figure supplements 1–3). Comparing the sequence of Cgr2 with sequences of biochemically characterized reductases revealed that Cgr2 lacks active site residues required for the activity of fumarate reductases (6/7 divergent residues), urocanate reductases (4/5 divergent residues), and ketosteroid dehydrogenases (3/5 divergent residues) (Figure 5—figure supplement 4A–D) (Leys et al., 1999; Rohman et al., 2013; Bogachev et al., 2012; Knol et al., 2008; Reid et al., 2000). Individually mutating the two residues shared between Cgr2 and ketosteroid dehydrogenases confirmed that one amino acid involved in substrate binding (G536 backbone) was also important for the activity of Cgr2 but the other (Y532) was not (Figure 5—figure supplement 4E). Together, the location of Cgr2 within the SSN and the differences in its sequence indicate that this enzyme is distinct from characterized bacterial reductases and may use a unique set of residues to catalyze cardenolide reduction.
 
-## Cgr2 is widespread in the human gut microbiome
+### Cgr2 is widespread in the human gut microbiome
 
 To assess the broader relevance of this cardenolide-metabolizing enzyme, we quantified the prevalence, conservation, and genomic context of cgr2 in the human gut microbiome. We mined gut microbiome datasets from 1872 individuals sampled in 6 countries across three continents (Nayfach et al., 2015). Analysis of the E. lenta pan-genome led to the discovery of a single copy marker gene (referred to here as elnmrk1) conserved in all sequenced strains that serves as a proxy for E. lenta abundance in both sequencing and quantitative PCR (qPCR) assays (Bisanz et al., 2018). The abundance of elnmrk1 was significantly associated with E. lenta abundance across the individuals (R2 = 0.973, p<2.2e-16). Using this marker gene, we detected E. lenta in 41.5% of subjects at abundances of −3.5 ± 0.58 mean ± SD log10(elnmrk1 copies/cell) (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/33953/elife-33953-fig6-v1.jpg)
 
-**Figure 6.:** (A) Analysis of the cgr-associated gene cluster and E. lenta (via elenmrk1) prevalence in the gut metagenomes of 1872 individuals (see Materials and methods) revealed that both E. lenta and cgr2 are highly prevalent (41.5% and 27.7% respectively) but frequently low in abundance. (B) Quantification of E. lenta and cgr2 abundances in individual gut metagenomes revealed a tight correlation between the two, providing evidence that cgr2 is restricted to E. lenta and that individuals may harbor sub-populations of both cgr2+ and cgr2- strains. Red line denotes the expected linear relationship and dashed lines represent a ± half log deviation. (Inset) Histogram of cgr-ratio (cgr/elnmrk1) demonstrates a significant skew away from communities that would have more cgr2 than expected by E. lenta abundance (p<0.001, D’Agostino skewness test). (C) Replication in an additional 158 individuals located in the USA (n = 85) and Germany (n = 73) via duplexed qPCR increased prevalence estimates to 74.7% and 81.6% at the extremes of detection limit (1e3 copies/g). qPCR samples were run in technical triplicate (Figure 6—source datas 1 and 2). (D) Similarly, qPCR-derived abundances of E. lenta and cgr2 were correlated, corroborating metagenome-based analysis. (Inset) Histogram of cgr-ratio demonstrating significant skew (p<0.001).10.7554/eLife.33953.033Figure 6—source data 1.E. lenta and cgr2 prevalence.Prevalence based on median of abundance in individuals with repeated sampling.10.7554/eLife.33953.034Figure 6—source data 2.cgr2 and elnmrk1 in human fecal samples.
+**Figure 6.:** (A) Analysis of the cgr-associated gene cluster and E. lenta (via elenmrk1) prevalence in the gut metagenomes of 1872 individuals (see Materials and methods) revealed that both E. lenta and cgr2 are highly prevalent (41.5% and 27.7% respectively) but frequently low in abundance. (B) Quantification of E. lenta and cgr2 abundances in individual gut metagenomes revealed a tight correlation between the two, providing evidence that cgr2 is restricted to E. lenta and that individuals may harbor sub-populations of both cgr2+ and cgr2- strains. Red line denotes the expected linear relationship and dashed lines represent a ± half log deviation. (Inset) Histogram of cgr-ratio (cgr/elnmrk1) demonstrates a significant skew away from communities that would have more cgr2 than expected by E. lenta abundance (p<0.001, D’Agostino skewness test). (C) Replication in an additional 158 individuals located in the USA (n = 85) and Germany (n = 73) via duplexed qPCR increased prevalence estimates to 74.7% and 81.6% at the extremes of detection limit (1e3 copies/g). qPCR samples were run in technical triplicate (Figure 6—source datas 1 and 2). (D) Similarly, qPCR-derived abundances of E. lenta and cgr2 were correlated, corroborating metagenome-based analysis. (Inset) Histogram of cgr-ratio demonstrating significant skew (p<0.001).
 
 Cgr2 was detectable in 48.5% of the E. lenta-positive individuals, while detection occurred in 27.7% of all subjects (−3.7 ± 0.64 mean ± SD log10(cgr2 copies/cell)) (Figure 6A), and the abundance of E. lenta and cgr2 was significantly associated (rho = 0.455, p<0.001; Figure 6B). The distributions were skewed towards participants with less cgr2 than expected based on the abundance of E. lenta [(skew = −0.773, p=2.5e-8, n = 375, D’Agostino skewness test of log10(cgr/elnmrk1) with quantifiable elnmrk1 and cgr2], consistent with prior data suggesting that many individuals are colonized by a mixture of cgr2+ and cgr2- E. lenta strains (Haiser et al., 2013). These results were validated by qPCR in an independent set of 158 individuals (228 samples) from multiple sites in the USA and Germany (Figure 6—source data 1) revealing a similar skew towards higher E. lenta abundances versus cgr2 (skew = −0.65, p<0.001, n = 165). Using this more sensitive detection method, we detected E. lenta in 81.6% of individuals (1.5e7 ± 3.5e6 copies/g feces) and cgr2 in 74.7% (1.5e6 ± 3.5e6 copies/g feces) (Figure 6C–D). Similar to the sequence-based analysis, the outliers were skewed towards samples with less cgr2 than expected based on the abundance of E. lenta. Overall, both the qPCR- and metagenomic sequencing-based analyses show that E. lenta and cgr2 are widely distributed in the human microbiome.
 
@@ -116,7 +170,301 @@ These studies also provide new insights into the chemistry made possible by comp
 
 ## Materials and methods
 
-## Genome analysis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Eggerthella lenta)</td>
+      <td>cgr1</td>
+      <td>PMCID: PMC3035228</td>
+      <td>cgr1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Eggerthella lenta)</td>
+      <td>cgr2</td>
+      <td>PMCID: PMC3035228</td>
+      <td>cgr2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Eggerthella lenta)</td>
+      <td>16S rRNA</td>
+      <td>Ref 11</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Eggerthella lenta)</td>
+      <td>E. lenta marker gene</td>
+      <td>Ref 11</td>
+      <td>elnmrk1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>One Shot Top10</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Rhodococcus erythropolis)</td>
+      <td>L88</td>
+      <td>doi: 10.1128/JB.187.8.2582–2591.2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella lenta)</td>
+      <td>Eggerthella lenta strains</td>
+      <td>Ref 11</td>
+      <td>El1 - El21</td>
+      <td rowspan="4">see Figure 1—source data 1 for full descriptions</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Eggerthella sinensis)</td>
+      <td>Eggerthella sinensis DSM16107</td>
+      <td>Ref 11</td>
+      <td>Es1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Gordonibacter)</td>
+      <td>Gordonibacter strains</td>
+      <td>Ref 11</td>
+      <td>Gs1, Gs2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Paraeggerthella hongkongensis)</td>
+      <td>Paraeggerthella hongkongensis</td>
+      <td>Ref 11</td>
+      <td>Ph1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTip expression vectors</td>
+      <td>doi: 10.1128/AEM.70.9.5557–5568.2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Amplification cgr1, cgr2</td>
+      <td>Integrated DNA technologies</td>
+      <td></td>
+      <td>see Table 1 for primers and constructs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Point mutants of Cgr2</td>
+      <td>Integrated DNA technologies</td>
+      <td></td>
+      <td>see Table 2 for primers and mutants</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cgr2 sequencing primer</td>
+      <td>This work</td>
+      <td></td>
+      <td>Confirmed sequence of E. lenta isolates with primers: cgr2_fwd (TGCAATCAAGACAACCACGA), cgr2_internal (TCGGTGTACAACCACAATGC), and cgr2_rev (GTTGCGCTGTGATTAGACTG)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers cgr2</td>
+      <td>This work</td>
+      <td></td>
+      <td>cgr2_F (GAGGCCGTCGATTGGATGAT), cgr2_R (ACCGTAGGCATTGTGGTTGT), and cgr2_probe ([HEX]CGACACGGAGGCCGATGTCG[BHQ1])</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primers elnmrk</td>
+      <td>This work</td>
+      <td></td>
+      <td>ElentaUni_F (GTACAACATGCTCCTTGCGG), ElentaUni_R (CGAACAGAGGATCGGGATGG), ElentaUni_Probe ([6FAM]TTCTGGCTGCACCGTTCGCGGTCCA[BHQ1]),</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BBL Brain Heart Infusion (BHI) media</td>
+      <td>Becton Dickinson</td>
+      <td>BD:L007440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-arginine</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:A5006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxin</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:D6003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrodigoxin</td>
+      <td>doi: 10.1126/science.1235872</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitoxin</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:D5878</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxigenin</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:D9026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ouabain</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:O3125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ouabagenin</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:O2627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sypro Orange protein gel stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>SA:S6650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiostrepton</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:T8902</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl viologen</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:856177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dithionite</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:157953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FAD</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:F6625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iron (II) ammonium sulfate hexahydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:F1543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium sulfide nonahydrate</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:208043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dithothreitol</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:D0632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Sigma Aldrich</td>
+      <td>SA:RDD002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape</td>
+      <td>doi:10.1101/gr.1239303</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism software</td>
+      <td>Prism software</td>
+      <td>Graphpad Software v 7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anaerobic chambers</td>
+      <td>Coy Laboratory products; Mbraun</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LC-MS/MS</td>
+      <td>Agilent</td>
+      <td>Agilent:6410 Triple Quad LC/MS</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electron paramagentic resonance (EPR) spectrometer</td>
+      <td>Bruker</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CFX96 Touch Real-Time PCR machine</td>
+      <td>Bio-Rad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PowerWave HT Microplate Spectrophotometer</td>
+      <td>BioTek</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Genome analysis
 
 Publically available genomes were retrieved from NCBI (E. lenta DSM 2243, PRJNA21093; E. lenta FAA1-3-56 PRJNA40023). New isolates were sequenced as described elsewhere (Bisanz, et al. 2018). Genomes were assembled with SPAdes 3.11.1 (84) and annotated with Prokka 1.12 (Seemann, 2014). All E. lenta strains studied were identified as E. lenta based on 16S rRNA sequencing and were de-replicated at the strain level by considering a pairwise average nucleotide identity (ANI) >99.99% as the same strain (github.com/widdowquinn/pyani). The maximum and minimum ANI between studied E. lenta strains were 97.9% and 99.6% respectively. The phylogenetic tree was prepared using a set of 400 conserved proteins (Segata et al., 2013) rooted on the Gordonibacter strains. Newly sequenced strains were included as part of Bioproject PRJNA412637.
 
@@ -124,76 +472,390 @@ Global nucleotide and amino acid identity and related statistics were determined
 
 For the purposes of comparative genomics, gene conservation was calculated by first clustering into orthologous clusters with proteinortho5 (Lechner et al., 2011) with a minimum 60% amino acid identity and 80% coverage. A presence/absence matrix de-replicated for co-occurring features was then used as the input for a random forest classifier (randomForest 4.6–12). Variable importance (mean decrease GINI) was used to extract the 15 most important features. A tool for this comparative genomic analysis is available as ElenMatchR (jbisanz.shinyapps.io/elenmatchr; copy archived at https://github.com/elifesciences-publications/ElenMatchR) (Bisanz and Turnbaugh, 2018) with digoxin reduction available as a demonstration dataset.
 
-## Bacterial culturing
+### Bacterial culturing
 
 Eggerthella lenta and related strains were grown in BBL Brain Heart Infusion (BHI) media (BD, Franklin Lakes, NJ) supplemented with L-arginine (Sigma-Aldrich, St. Louis, MO) under an atmosphere of 2–5% H2, 2–5% CO2, and balance N2. Strains were streaked onto BHI agar plates supplemented with 1% arginine (w/v) in an anaerobic chamber (Coy Laboratory Products, Grass Lakes, MI). Individual colonies were inoculated into 16 × 125 mm Hungate tubes (Chemglass Life Sciences, Vineland, NJ) containing 5–10 mL of BHI supplemented with 1% arginine and grown at 37°C for 2–3 days. Cardiac glycoside substrates were dissolved at a concentration of 10 mM in dimethylformamide (DMF) and added to cultures at a final concentration of 10 µM. Starter cultures were diluted into 10 mL of BHI + substrate to a starting of OD600 of 0.05 and grown anaerobically at 37°C for 2 days. Experiments were performed in biological triplicate.
 
 For growth assays, E. lenta DSM 2243 was grown in either rich (BHI) or defined media. Basal media lacking terminal electron acceptors was prepared as previously described (Löffler et al., 2005) with the following modifications: yeast extract and tryptone were each added to 0.1% (w/v), L-cysteine concentration was 0.4 mM, sodium sulfide was not added, and either 5% H2 or 10 mM sodium acetate were used as electron donors. Starter cultures were prepared as described above in BHI media supplemented with 1% arginine, and diluted 1:100 into media that had been supplemented with substrates (dissolved in DMF) to a final concentration of 10 µM. Cultures were grown anaerobically at 37°C in biological triplicate. OD600 measurements were recorded on a Genesys20 spectrophotometer (Thermo Fisher Scientific, Waltham, MA).
 
-## Extraction and LC-MS/MS detection of digoxin and dihydrodigoxin
+### Extraction and LC-MS/MS detection of digoxin and dihydrodigoxin
 
 Bacterial cultures were centrifuged (10 min x 4000 rpm), 1 mL of supernatant was extracted three times with 1 mL of dichloromethane and the pooled organic fractions were concentrated using a rotary evaporator. Samples were resuspended in 1 mL of 50% methanol in water and diluted 10x prior to liquid chromatography-tandem mass spectrometry (LC-MS/MS) analysis.
 
 Metabolites were detected on an Agilent 6410 Triple Quad LC/MS using electrospray ionization in negative ion mode. The mass spectrometer settings were as follows: gas temperature (300°C), gas flow (10 L/min), nebulizer pressure (25 psi), capillary voltage (4000 V), and chamber current (0.1 µA). Digoxin was monitored using a 779.4 → 649.3 m/z transition with a fragmentor voltage of 250V and collision energy of 52, and dihydrodigoxin was monitored using a 781.4 → 521.3 m/z transition with a fragmentor voltage of 200V and collision energy of 20. Standard curves were prepared using 0.01–1 µM samples of each compound. Digoxin was purchased from Sigma-Aldrich (St. Louis, MO), and a dihydrodigoxin standard was obtained through chemical hydrogenation of digoxin as previously described (Haiser et al., 2013). Liquid chromatography was performed on an Acclaim Polar Advantage II column with a flow rate of 0.125 mL/min, 5 µL sample injection, solvent A (10% methanol + 1 mM ammonium hydroxide) and solvent B (100% methanol + 1 mM ammonium hydroxide), and a gradient: 70–100% B over 10 min, 100% B for 1.5 min, 100–70% B over 3.5 min, and 70% B for 7 min.
 
-## Construction of cgr1 and cgr2 vectors in Escherichia coli
+### Construction of cgr1 and cgr2 vectors in Escherichia coli
 
 E. lenta DSM 2243 was grown in 5 mL of BHI + 1% arginine at 37°C. After 2 days, the culture was pelleted and genomic DNA (gDNA) was purified with the UltraClean Microbial DNA Isolation Kit (QIAGEN, Germantown, MD) according to the manufacturer’s protocol. The cgr operon was amplified from 50 ng of gDNA in a 50 µL reaction volume with 0.5 µM of each primer (Table 1) and Phusion High-Fidelity PCR master mix with HF buffer (New England Biolabs, Ipswich, MA). The following thermocycling parameters were used: denaturation at 98°C for 3 min; 35 cycles of 98°C for 15 s, 71°C for 20 s, and 72°C for 75 s; and a final extension at 72°C for 5 min. The PCR reaction was analyzed by agarose gel electrophoresis (1% agarose gel), and the cgr amplicon was excised and purified with the Illustra GFX PCR DNA and Gel Band Purification kit (GE Healthcare, Chicago, IL). Cgr1 and cgr2 variants were amplified in 20 µL PCR reactions using 1 ng of purified cgr operon as template, 0.5 µM primer pairs and Phusion High-Fidelity PCR master mix with HF buffer (New England Biolabs, Ipswich, MA) (Table 1). PCR conditions were as follows: denaturation at 98°C for 2 min; 35 cycles of 10 s at 98°C, 10 s at specified annealing temperature, and 72°C for the specified extension time; and a final extension at 72°C for 5 min. Cgr amplicons were digested in a 30 µL reaction with 1.5 µL of each restriction enzyme (New England Biolabs, Ipswich, MA) for 2.5 hr at 37°C. pTip vectors were similarly digested, and the linearized vector was excised from a 1% agarose gel and purified. Insert and vector pairs were ligated at a 1:3 ratio at room temperature for 2 hr with T4 DNA ligase (New England Biolabs, Ipswich, MA). 2.5 µL of the ligation reaction was transformed into chemically competent One Shot Top10 E. coli cells (Thermo Fisher Scientific, Waltham, MA) and plated on LB agar with ampicillin. Plasmid inserts were sequenced using the primers listed in Table 1.
 
-## Site-directed mutagenesis of Cgr2
+**Table 1.**
+ Primers and constructs for heterologous expression of Cgr proteins in R. erythropolis.Restriction sites are bolded.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Construct</th>
+      <th>For/</th>
+      <th rowspan="2">Sequence</th>
+      <th rowspan="2">Restriction sites</th>
+      <th rowspan="2">Vector</th>
+      <th rowspan="2">Anneal temp (°C)</th>
+      <th rowspan="2">Extend time (s)</th>
+    </tr>
+    <tr>
+      <th>Rev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">cgr operon</td>
+      <td>For</td>
+      <td>ACTGACCCATGGATGGAATACGGAAAGTGCC</td>
+      <td rowspan="2">n/a</td>
+      <td rowspan="2">n/a</td>
+      <td rowspan="2">71</td>
+      <td rowspan="2">75</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTTTTACTGCAGTTACGCCGCCGTCGAA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr1 + Cgr2</td>
+      <td>For</td>
+      <td>TGACGAATTCTAATGGAATACGGAAAGTGCCG</td>
+      <td>EcoRI,</td>
+      <td rowspan="2">pTipQT2</td>
+      <td rowspan="2">70</td>
+      <td rowspan="2">90</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TTATAAGATCTCGCCGCCGTCGAAAG</td>
+      <td>BglII</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr1</td>
+      <td>For</td>
+      <td>TCGAACATATGATGGCTGAGGAACCTGTGG</td>
+      <td>NdeI,</td>
+      <td rowspan="2">pTipQT1</td>
+      <td rowspan="2">65</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>ATAACTCGAGTCACGCCGCCGTCGAAA</td>
+      <td>XhoI</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr2 (native)</td>
+      <td>For</td>
+      <td>ACTGACCCATGGGCATGGAATACGGAAAGTGCC</td>
+      <td rowspan="2">NcoI, HindIII</td>
+      <td rowspan="2">pTipQC2</td>
+      <td rowspan="2">65</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>ATTAGAAGCTTTCACTCCCACGGCTCGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr2-CHis6 (native)</td>
+      <td>For</td>
+      <td>ACTGACCCATGGGCATGGAATACGGAAAGTGCC</td>
+      <td rowspan="2">NcoI, HindIII</td>
+      <td rowspan="2">pTipQC1</td>
+      <td rowspan="2">65</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTTAGAAGCTTCTCCCACGGCTCGAG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr2(−48aa)-NHis6</td>
+      <td>For</td>
+      <td>TATTACCATGGATCAGACCGCGCCTGC</td>
+      <td rowspan="2">NcoI, HindIII</td>
+      <td rowspan="2">pTipQC2</td>
+      <td rowspan="2">65</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>ATACTAAGCTTCTCCCACGGCTCGA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cgr2(−48aa)-CHis6</td>
+      <td>For</td>
+      <td>TATTACCATGGATCAGACCGCGCCTGC</td>
+      <td rowspan="2">NcoI, HindIII</td>
+      <td rowspan="2">pTipQC1</td>
+      <td rowspan="2">65</td>
+      <td rowspan="2">60</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>ATACTAAGCTTTTACTCCCACGGCTCGA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sequencing primers</td>
+      <td>For</td>
+      <td>CGTGGCACGCGGAAC</td>
+      <td rowspan="2">n/a</td>
+      <td rowspan="2">All pTip vectors</td>
+      <td rowspan="2">n/a</td>
+      <td rowspan="2">n/a</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTGCAGGTTTCGCGTG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Site-directed mutagenesis of Cgr2
 
 Site-directed mutagenesis was performed in 25 µL reactions using 200 ng of template DNA (Cgr2(–48aa)-NHis6 in pTipQC2), 0.5 µM of each primer pair (Table 2), 0.5 mM dNTP, and 1 µL of Pfu Turbo polymerase AD (VWR, Radnor, PA). The following thermocycling parameters were used: denaturation at 95°C for 1 min; 18 cycles of 95°C for 30 s, 65°C for 50 s, and 68°C for 22 min (2 min/kb); and a final extension at 68°C for 7 min. The template plasmid was digested with 1 µL of DpnI (New England Biolabs, Ipswich, MA) for 1 hr at 37°C, and 2 µL of the reaction were transformed into chemically competent One Shot Top10 E. coli cells (Thermo Fisher Scientific, Waltham, MA).
 
-## Heterologous expression of Cgr proteins in Rhodococcus erythropolis L-88
+**Table 2.**
+ Primers for site-directed mutagenesis of Cgr2.Amino acid numbering is based on full length Cgr2 sequence. Introduced mutations are bolded.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Mutant</td>
+      <td>F/R</td>
+      <td>Sequence</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C82A</td>
+      <td>For</td>
+      <td>CAGCGGCGGCACGGCCGCGGCCATCG</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCTCGATGGCCGCGGCCGTGCCGCCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C111A</td>
+      <td>For</td>
+      <td>GCGGCAACTCGGCACTAGCCGGTGGATACAT</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCAGCATGTATCCACCGGCTAGTGCCGAGTTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C158A</td>
+      <td>For</td>
+      <td>ATATGATCCGCGAGGCGGCCTTGCGCTCCGGC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCCTCGCCGGAGCGCAAGGCCGCCTCGCGGAT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C187A</td>
+      <td>For</td>
+      <td>GCCCCCGGTCTGGTCAGCCGGCGACACGG</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GGCCTCCGTGTCGCCGGCTGACCAGACCGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C231A</td>
+      <td>For</td>
+      <td>CGAAATCGAGATGGGCGCCGAGGTGGCGCAC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GATGTGCGCCACCTCGGCGCCCATCTCGAT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C265A</td>
+      <td>For</td>
+      <td>GGCGTGGTCATGGCGGCCGCTTCGGTGGA</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTTGTCCACCGAAGCGGCCGCCATGACCA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C321A</td>
+      <td>For</td>
+      <td>GATCGGTGCTGAGCTTGCCATGCAGCAGGC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CACGGCCTGCTGCATGGCAAGCTCAGCACC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C327A</td>
+      <td>For</td>
+      <td>CATGCAGCAGGCCGTGGCCATGAACGATTCT</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GATAGAATCGTTCATGGCCACGGCCTGCTG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C371A</td>
+      <td>For</td>
+      <td>GACCGGCAGACGGTTTGCCCAGGACGATGCCG</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CTCGGCATCGTCCTGGGCAAACCGTCTGCC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C384A</td>
+      <td>For</td>
+      <td>CTATGTCATGCACGAGGCCGCGCAAGCTGCA</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CCATGCAGCTTGCGCGGCCTCGTGCATGAC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C425A</td>
+      <td>For</td>
+      <td>CATACGCCCGACACGGCCGATACTACGTTC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CGAGAACGTAGTATCGGCCGTGTCGGGCGT</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C443A</td>
+      <td>For</td>
+      <td>GCCGAGTTTATCGGCGCCGATCCGACCGC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GAGGGCGGTCGGATCGGCGCCGATAAACTC</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C459A</td>
+      <td>For</td>
+      <td>GAGGTGGAACTCTTTCGCCGAGGCCGGTTTG</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CATCCAAACCGGCCTCGGCGAAAGAGTTCCA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C483A</td>
+      <td>For</td>
+      <td>GACGCCGCCGTTCTACGCCGATGTCGTGCGC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GGGGCGCACGACATCGGCGTAGAACGGCGG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C521A</td>
+      <td>For</td>
+      <td>CTGTACGGCGCCGGGGCCATCATCGGGGGT</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTTACCCCCGATGATGGCCCCGGCGCCGTA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">C535A</td>
+      <td>For</td>
+      <td>GCCTTCTACTTCGGCGCCGGCTGGTCCATC</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>CGTGATGGACCAGCCGGCGCCGAAGTAGAA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Y333N</td>
+      <td>For</td>
+      <td>GCATGAACGATTCTATCAACGTAGGCGGCATCA</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>TCGCTGATGCCGCCTACGTTGATAGAATCGTTCA</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Y532F</td>
+      <td>For</td>
+      <td>GATGCCGAGTGGGGCTTTGTCATGCACG</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GCACTCGTGCATGACAAAGCCCCACTCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G536A</td>
+      <td>For</td>
+      <td>TTCTACTTCGGCTGCGCCTGGTCCATCA</td>
+    </tr>
+    <tr>
+      <td>Rev</td>
+      <td>GTTCGTGATGGACCAGGCGCAGCCGAAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Heterologous expression of Cgr proteins in Rhodococcus erythropolis L-88
 
 All Rhodococcus strains and expression vectors were obtained from the National Institute of Advanced Industrial Science and Technology (Tokyo, Japan). 40 ng of plasmid DNA were added to 400 µL of R. erythropolis L-88 electrocompetent cells in 30% PEG 1000 (Sigma-Aldrich, St. Louis, MO) in a 2 mm gap electroporation cuvette (VWR, Radnor, PA). Cells were transformed in a MicroPulser electroporator (Bio-Rad, Hercules, CA) with a 2.5 kV pulse (time constant ~4.8 – 5.2), rescued with 0.6 mL of LB (Lennox) broth (Alfa Aesar, Tewksbury, MA), and incubated for 4 hr at 28°C, 175 rpm. Cells were plated onto LB agar plates +antibiotic (17 µg/mL chloramphenicol for pTipQC plasmids; 8 µg/mL tetracycline for pTipQT plasmids) and incubated at 28°C for 5–7 days. Single colonies were inoculated into 50–75 mL of LB +antibiotic (34 µg/mL chloramphenicol or 8 µg/mL tetracycline) and grown for 3–5 days at 28°C, 175 rpm until reaching saturation. For gain of function studies, 50 mL of LB and antibiotic were inoculated to a starting OD600 of 0.2 and grown at 28°C, 175 rpm. Experiments were performed in biological triplicate. When cultures reached an OD600 of 0.6 (~6–8 hr), protein expression was induced with thiostrepton (Sigma-Aldrich, St. Louis, MO) at a final concentration of 0.01 µg/mL, and cultures were incubated at 15°C, 175 rpm. In cultures where Cgr1 was overexpressed, media was supplemented with the heme precursor δ-amino levulinic acid hydrochloride (50 µg/mL final concentration) (Frontier Scientific, Logan, Utah). After 16–20 hr, digoxin was added to cultures as a solution in DMF at a final concentration of 10 µM and incubated for either 7 days at 15°C, or 2 days at 28°C, 175 rpm. Culture supernatants were extracted and analyzed as previously described. For large-scale purifications, 2 L of LB-chloramphenicol in a 4 L baffled flask were inoculated to a starting OD600 of 0.02 and grown to an OD600 of 0.6 (~18–25 hr). Protein expression was induced with 0.01 µg/mL thiostrepton, and cultures were incubated at 15°C, 175 rpm for approximately 21 hr before harvesting cells by centrifugation (10,800 rpm x 20 min). Cell pellets were frozen and stored at –80°C.
 
-## Cgr2 purification and [Fe-S] cluster reconstitution
+### Cgr2 purification and [Fe-S] cluster reconstitution
 
 All protein purification steps were carried out at 4°C. Harvested cells were resuspended in 5 mL/g of cell pellet in lysis buffer (50 mM Tris, pH 8, 1 mM MgCl2, 25 mM imidazole) containing Pierce EDTA-free protease inhibitor cocktail (Thermo Fisher Scientific, Waltham, MA). Cells were passaged through a cell disruptor (Avestin EmulsiFlex-C3) five times at 15,000–25,000 psi and centrifuged for 20 min at 13,000 rpm. The clarified lysate was incubated on a nutating mixer with 5–10 mL of HisPur Ni-NTA resin (Thermo Fisher Scientific, Waltham, MA) for 1 hr and then applied to a gravity flow column. The resin was washed with 50 mL of wash buffer (25 mM HEPES, 0.5 M NaCl, pH 8, 25 mM imidazole) and eluted with 25 mL of elution buffer (25 mM HEPES, 0.5 M NaCl, pH 8, 200 mM imidazole). Eluted protein was concentrated using a 20 mL Spin-X UF 30 k MWCO PES spin filter (Corning, Corning, NY) to a volume of 1–2.5 mL, and then desalted on a Sephadex G-25 PD-10 desalting column (GE Healthcare, Chicago, IL) that had been equilibrated with desalting buffer (50 mM HEPES, 100 mM NaCl, pH 8). Desalted protein was sparged with argon on ice for 30–45 min. Chemical reconstitution of [Fe-S] cluster(s) in Cgr2 was carried out at 4°C in an anaerobic chamber (Coy Laboratory Products, Grass Lakes, MI) under an atmosphere of 2% hydrogen and 98% nitrogen. A 30 µM solution of Cgr2 was prepared in reconstitution buffer (50 mM HEPES, 100 mM NaCl, pH 8, and 2 mM dithiothreitol (DTT)). Fe(NH4)2(SO4)2·6H2O (Sigma-Aldrich, St. Louis, MO) was added in four aliquots over 60 min, followed by addition of Na2S·9H20 (Sigma-Aldrich, St. Louis, MO) in four aliquots over 60 min to final concentrations of 0.24 or 0.375 mM (8 or 12.5 equivalents relative to Cgr2), and stirred for 16–24 hr. The reaction was filtered through a 0.25 mm, 0.2 µM pore-size PES syringe filter (VWR, Radnor, PA) to remove precipitant and concentrated in a 6 mL Spin-X UF 30 k MWCO PES spin filter inside a 50 mL conical-bottom centrifuge tube with plug seal cap (Corning, Corning, NY). The concentrated protein (1–2.5 mL) was desalted on a PD-10 column into desalting buffer. Protein was aliquoted into 0.5 mL PP conical tubes with skirt (Bio Plas), sealed inside 18 × 150 mm Hungate tubes (Chemglass Life Sciences, Vineland, NJ) and stored at –80°C. Protein concentration was determined by Bradford using Protein Assay Dye Reagent (Bio-Rad, Hercules, CA) and bovine serum albumin (BSA) (Sigma-Aldrich, St. Louis, MO) as a reference standard. Typical protein yields were ~20 mg/L of culture for both wild-type and point mutants of Cgr2(–48aa)-NHis6,~8 mg/L for Cgr2(–48aa)-CHis6, and ~1 mg/L for Cgr2-CHis6. The iron and sulfur content of Cgr2 samples (protein concentrations between 20–50 µM) was determined using previously reported colorimetric assays (Craciun et al., 2014).
 
-## Thermal denaturation assays
+### Thermal denaturation assays
 
 Thermal denaturation assays of purified and reconstituted Cgr2 were prepared on ice in 0.2 mL skirted 96-well PCR plates (VWR, Radnor, PA) sealed with optical adhesive covers (Life Technologies, Woburn, MA). Each reaction contained 10 µg of purified or reconstituted Cgr2, Sypro Orange protein gel stain (Thermo Fisher Scientific, Waltham, MA) diluted 5000-fold, and buffer containing 100 mM buffering agent and 100 mM NaCl in a total volume of 30 µL. The following buffering agents were used: acetate/acetic acid for pH 4–6, HEPES for pH 7, Tris-HCl for pH 8–9, and glycine-NaOH for pH 10. For metal binding assays, metal salts (Sigma-Aldrich, St. Louis, MO) were dissolved in pH 8 buffer to generate 100 mM stock solutions and added to a final concentration of 48 µM (8 equivalents relative to Cgr2). Data was collected on a CFX96 Touch Real-Time PCR machine (Bio-Rad, Hercules, CA) using the ‘FRET’ filter setting with FAM excitation and HEX emission channels (485 nm and 556 nm respectively). The following temperature-scan protocol was used: 25°C for 30 s, then ramp from 25°C to 100°C at a rate of 0.1 °C/ s.
 
-## Gel filtration
+### Gel filtration
 
 Gel filtration experiments were carried out on a Superdex 200 10/300 GL column (GE Healthcare, Chicago, IL) attached to a BioLogic DuoFlow chromatography system (Bio-Rad, Hercules, CA). Experiments were carried out either aerobically or anaerobically inside a Coy anaerobic chamber (Coy Laboratory Products, Grass Lakes, MI). 100 µL protein samples (50–100 µM) were loaded onto the column at a rate of 0.2 mL/min for 1 mL followed by an isocratic flow of 0.33 mL/min for 30 mL with 50 mM HEPES, 100 mM NaCl, pH 8. The molecular weight for Cgr2(–48aa)-NHis6 is 55.7 kDa. A gel filtration standard (Bio-Rad, Hercules, CA) containing thyroglobulin (670 kDa), γ-globulin (158 kDa), ovalbumin (44 kDa), myoglobin (17 kDa), and vitamin B12 (1.35 kDa) was used to determine the molecular weight of Cgr2-containing peaks.
 
-## UV-vis spectroscopy
+### UV-vis spectroscopy
 
 Cgr2 was diluted to a final concentration of 50–100 µM in UV-Star UV-transparent 96-well microplates (Greiner Bio-One, Monroe, NC). The absorbance was measured between 250–750 nm using a PowerWave HT Microplate Spectrophotometer (BioTek, Winooski, VT) inside of an anaerobic glovebox (Mbraun, Stratham, NH). Curves were baseline subtracted using respective absorbance values at 700 nm. To determine whether the [Fe-S] cluster(s) were redox active, Cgr2 was incubated with 10 equivalents of sodium dithionite (Sigma-Aldrich, St. Louis, MO) for 15 min at room temperature prior to taking additional absorption spectra. To assess the oxygen sensitivity of [Fe-S] cluster(s), Cgr2 was taken out of the anaerobic chamber and exposed to oxygen, and the absorption spectra was measured aerobically on a PowerWave HT Microplate Spectrophotometer (BioTek, Winooski, VT). Oxygen-exposed Cgr2 was then sparged for 30 min with argon (on ice) and brought back into the Mbraun glovebox for activity assays.
 
-## EPR spectroscopy
+### EPR spectroscopy
 
 All samples were prepared in 50 mM HEPES, 100 mM NaCl, pH 8 under oxygen-free conditions in an anaerobic glovebox (Mbraun, Stratham, NH). For all EPR experiments the final concentration of Cgr2 was either 150 or 200 µM. When required, the samples were reacted with an excess of sodium dithionite (10–20 equivalents) for 20–30 min at 22°C prior to freezing in liquid N2. Spin quantification was carried out against a Cu2+-EDTA standard containing an equimolar concentration of CuSO4 in 10 mM EDTA (150 or 200 µM), under non-saturating conditions. Samples (250 µL) were loaded into 250 mm length, 4 mm medium wall diameter Suprasil EPR tubes (Wilmad LabGlass, Vineland, NJ) and frozen in liquid N2 under oxygen-free conditions. EPR spectra were acquired on a Bruker E500 Elexsys continuous wave (CW) X-Band spectrometer (operating at approx. 9.38 GHz) equipped with a rectangular resonator (TE102) and a continuous-flow cryostat (Oxford 910) with a temperature controller (Oxford ITC 503). The spectra were recorded at variable temperatures between 10–40 K at a microwave power of 0.2 mW, using a modulation amplitude of 0.6 mT, a microwave frequency of 9.38 GHz, a conversion time of 82.07 ms, and a time constant of 81.92 ms.
 
-## In vitro substrate reduction assays
+### In vitro substrate reduction assays
 
 Methyl viologen (paraquat) dichloride hydrate (Sigma-Aldrich, St. Louis, MO) that had been reduced with sodium dithionite was used as an artificial electron donor (Watanabe and Honda, 1982) to initiate anaerobic Cgr2-mediated reduction of digoxin in vitro. Assays were carried out at 25°C in an anaerobic glovebox (Mbraun, Stratham, NH) under an atmosphere of nitrogen and < 5 ppm oxygen. Reagents were brought into the glovebox as solids or sparged liquids and resuspended in anoxic buffer inside the chamber: flavin (FAD or FMN) and methyl viologen (MV) were resuspended in 50 mM HEPES, 100 mM NaCl, pH 7 to generate stock solutions of 1 mM and 50 mM respectively; sodium dithionite was resuspended in 50 mM HEPES, 100 mM NaCl, pH 8 to generate a stock solution of 25 mM; all substrates (Figure 4—figure supplement 1) were dissolved in DMF to generate stock solutions of 25 mM, with the exception of sodium fumarate dibasic and urocanic acid which were dissolved in water. All substrates and reagents were purchased from Sigma-Aldrich (St. Louis, MO) except for the bufadienolides (Enzo Life Sciences, Farmingdale, NY) and prostaglandins (Cayman Chemicals, Ann Arbor, MI). The final assay mixture (100 µL) contained 5 µM Cgr2, 50 µM flavin, 0.375 mM MV, 0.25 mM dithionite, and was initiated by addition of 0.5 mM substrate. For metal activation studies, metal salts were dissolved in pH 7 buffer (1 mM) and added to a final concentration of 40 µM. Assays were prepared in a 96-well polysterene microplate (Corning, Corning, NY) and activity was continuously monitored by measuring the absorbance at 600 nm on a PowerWave HT Microplate Spectrophotometer (BioTek, Winooski, VT); a decrease in the absorbance at 600 nm corresponded to MV oxidation coupled to substrate reduction. For endpoint assay, reactions were quenched in methanol, diluted to a final concentration of 1 µM in 50% methanol, and analyzed by LC-MS/MS as previously described.
 
-## Kinetic assays
+### Kinetic assays
 
 Kinetic assays were performed in an anaerobic glovebox (Mbraun, Stratham, NH) at 25°C. Reactions were run in triplicate (200 µL) in assay buffer containing 5 µM Cgr2, 500 µM FAD, 1.5 mM MV, and 1 mM sodium dithionite, and were initiated by addition of digoxin as a solution in DMF to a final concentration of 0.01, 0.025, 0.05, 0.1, 0.2, 0.25, 0.3, and 0.5 mM. 20 µL reaction aliquots were quenched in 180 µL of ice-cold methanol in Costar flat bottom polysteryene 96-well plates (Corning, Corning, NY). The plates were sealed with adhesive aluminum foil for 96-well plates (VWR, Radnor, PA), brought out of the anaerobic chamber, and further diluted (50-fold) into 50% methanol. Digoxin and dihydrodigoxin standard curves were prepared in the full reaction matrix and processed identically such that final concentrations (after 500x total dilution) generated a standard curve between 0.01–1 µM. Plates were centrifuged (4000 rpm x 10 min, 4°C) and 200 µL of each reaction were transferred to a 0.5 mL PP 96-well plate (Agilent Technologies, Santa Clara, CA) sealed with EPS easy piercing seals (BioChromato, San Diego, CA). The reactions were monitored by LC-MS/MS as previously described, except that samples were directly injected (no column), and isocratic flow was used with 75% methanol with 1 mM ammonium hydroxide.
 
-## Chemical similarity analysis
+### Chemical similarity analysis
 
 The chemical similarity of all substrates was assessed using the ChemMine software (http://chemminetools.ucr.edu) (Backman et al., 2011). Substrates were imported into ChemMine in SMILES format. The hierarchical clustering tool was used to generate a heatmap visualizing the structural distance matrix between each substrate and digoxin.
 
-## Cgr2 sequence analysis
+### Cgr2 sequence analysis
 
 The full length Cgr2 protein sequence from E. lenta DSM 2243 was used as a query for BLASTP (Atlschul et al., 1997) using the NCBI non-redundant protein sequence database (search performed 9/26/17). Cgr2 was also used to query the HHPred prediction tool (https://toolkit.tuebingen.mpg.de/#/tools/hhpred) to identify additional remote protein homologs using hidden Markov models (Alva et al., 2016). The PDB_mmCIF70_27_Aug database was used (search performed 9/26/17).
 
-## Construction of sequence similarity network (SSN)
+### Construction of sequence similarity network (SSN)
 
 A SSN was generated using the EFI-EST tool (http://efi.igb.illinois.edu/efi-est/) (Gerlt et al., 2015). The full length (native) Cgr2 protein sequence was used as an input to generate a network with the 5000 most similar sequences from the UniProtKB protein database. An initial alignment score cutoff of 10−66 generated a SSN with 2018 nodes (with 100% identity) and 317,130 edges. The SSN was imported into Cytoscope v 3.2.1 and visualized with the ‘Organic layout’ setting. Seven characterized enzymes were present within the network (UniProtKB IDs: fumarate reductases: P83223, P0C278, Q07WU7, Q9Z4P0; urocanate reductase: Q8CVD0; 3-oxosteroid-1-dehydrogenase: P71864; Q7D5C1). The alignment score cutoff was increased to e-value <10−130, until enzymes with known functions separated into putatively isofunctional clusters. At this threshold, Cgr2 appears as a singleton. The network shown in Figure 5A was generated with a cutoff of e-value <10−50, a threshold at which nearly all protein sequences form one cluster. Multiple sequence alignments were generated in Geneious and visualized in Jalview (clustalx coloring). To validate that the clusters in the SSN likely contained isofunctional proteins, Cgr2 was aligned with characterized enzymes and additional selected proteins within the corresponding clusters of the SSN, and the alignment was analyzed for the presence of conserved active site residues involved in substrate binding, activation and proton transfer (Leys et al., 1999; Rohman et al., 2013; Bogachev et al., 2012; Knol et al., 2008; Reid et al., 2000).
 
-## E. lenta and cgr2 abundance and prevalence
+### E. lenta and cgr2 abundance and prevalence
 
 E. lenta and cgr2 prevalence were determined using the copy number abundance (gene copies/cell) as derived from Metaquery2 (Nayfach et al., 2015) using the median abundance from individuals with repeated sampling. E. lenta abundance was determined from a single copy E. lenta marker gene described elsewhere (elnmrk1) (Bisanz et al., 2018). Matches were required to have a minimum 90% nucleotide identity and query/target coverage. Reconstruction of metagenomic cgr2 sequences was carried out by quality trimming reads from 96 metagenomes with >0.001 proportional abundance of E. lenta or >1 fold coverage using default sliding window settings with Trimmomatic (Bolger et al., 2014) and extracting reads which mapped to the cgr cluster and associated intergenic space (2957889..2968387) in the reference DSM 2243 assembly with Bowtie 2. These were assembled and annotated as above. Alignments to Cgr2 in metagenomic coding sequences were filtered by a global alignment identity of >80% to position 333 ± 60 residues. For assembly-free variant calling, reads were filtered for a minimum mapping quality of 10 and a pileup was created (SAMtools). 49 metagenomes had at least one read mapping to the variant position (2959294). Variants were called when > 50% of reads at a site supported an alternative sequence from the reference. Conservation of nucleotide sequence in isolates was independently confirmed via Sanger sequencing (GENEWIZ, San Francisco, CA, USA) using the following primers: cgr2_fwd (TGCAATCAAGACAACCACGA), cgr2_internal (TCGGTGTACAACCACAATGC), and cgr2_rev (GTTGCGCTGTGATTAGACTG). PCR was carried out with high-fidelity Q5 enzyme (New England Biolabs, Ipswich, MA).
 
 To validate metagenomics inquiries, qPCR analysis with double-dye probes was carried out in a duplexed fashion using the following primers and probes: ElentaUni_F (GTACAACATGCTCCTTGCGG), ElentaUni_R (CGAACAGAGGATCGGGATGG), ElentaUni_Probe ([6FAM]TTCTGGCTGCACCGTTCGCGGTCCA[BHQ1]), cgr2_F (GAGGCCGTCGATTGGATGAT), cgr2_R (ACCGTAGGCATTGTGGTTGT), and cgr2_probe ([HEX]CGACACGGAGGCCGATGTCG[BHQ1]). Reactions were carried out in triplicate using 10 µL reactions with 200 nM primers and probes using BioRad Universal Probes Supermix on a BioRad CFX 384 thermocycler according to the manufacturer’s suggested settings for fast cycles with a 60 °C annealing temperature. The estimated assay detection limit based on spike-in experiments is 1.4 × 103 GE/g after accounting for DNA extraction. Human samples were collected for the purpose of microbiome analysis as part of the following registered studies: NCT03022682, NCT01967563, and NCT01105143 and approved by their respective institutional review boards. DNA was extracted with variable methods using either MoBio Power Soil (QIAGEN, Germantown, MD), Qiagen Fast Stool (QIAGEN, Germantown, MD), or Promega Wizard (Promega, Madison, WI) SV 96 kits.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis was carried out using either Student’s t-test as implemented in Graphpad Prism version 7 (La Jolla, CA, USA) or R version 3.4.0 using appropriate base functions for Welch’s t-test, Pearson and Spearman correlations, and ANOVA with multcomp version 1.4–6 for Dunnett’s multiple comparison test. Graphing was carried out with Graphpad Prism and R using ggplot2 version 2.2.1. Skewedness was calculated using the R package Moments version 0.14.

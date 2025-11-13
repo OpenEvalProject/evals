@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/04gyf1771 Institute for Immunology, University of California, Irvine Irvine United States
-2. https://ror.org/04gyf1771 Department of Molecular Biology and Biochemistry, University of California, Irvine Irvine United States
-3. https://ror.org/02k3smh20 Department of Microbiology, Immunology, and Molecular Genetics, University of Kentucky Lexington United States
-4. https://ror.org/009avj582 Division of Cardiometabolic Health, Oregon National Primate Research Center, Oregon Health & Science University Beaverton United States
-5. https://ror.org/009avj582 Maternal-Fetal Medicine, Oregon Health & Science University Portland United States
+1. Institute for Immunology, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+2. Department of Molecular Biology and Biochemistry, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
+3. Department of Microbiology, Immunology, and Molecular Genetics, University of Kentucky Lexington United States ([ROR:02k3smh20](https://ror.org/02k3smh20))
+4. Division of Cardiometabolic Health, Oregon National Primate Research Center, Oregon Health & Science University Beaverton United States ([ROR:009avj582](https://ror.org/009avj582))
+5. Maternal-Fetal Medicine, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
 
 † Corresponding author
 
@@ -36,141 +36,266 @@ In this study, we extended these earlier clinical studies and interrogated the i
 
 ## Methods
 
-## Subjects and experimental design
+### Subjects and experimental design
 
 This study was approved by the Institutional Ethics Review Board of Oregon Health and Science University and the University of California, Irvine. Written consent was obtained from all subjects. The mean age of the 43 lean women was 33.1±4.4 years with an average pre-pregnancy BMI of 21.9±1.7 kg/m2 and gestation age at delivery of 39.6±1.4 weeks; mean age of the 36 obese women was 30.7±4.9 years with an average pre-pregnancy BMI of 38.2±8.4 kg/m2 and gestation age at delivery of 39.3±1.4 weeks (Table 1). The racial distribution of the lean cohort was 2.32% Asian American, 6.97% Hispanic, 88.37% Caucasian, and 2.32% declined to report. The obese cohort consisted of 25.00% Hispanic, 66.67% Caucasian, 2.77% with more than one race, and 5.55% who declined to report. Exclusion criteria included active maternal infection, documented fetal congenital anomalies, substance abuse, chronic illness requiring regular medication use, preeclampsia, gestational diabetes, chorioamnionitis, and significant medical conditions (active cancers, cardiac, renal, hepatic, or pulmonary diseases), or an abnormal glucose tolerance test. Women underwent a fasting blood draw and body composition via air displacement plethysmography using a BodPod (Life Measurement Inc, Concord, CA).
 
-## Umbilical cord blood mononuclear cell (UCBMC) isolation
+**Table 1.**
+ Cohort characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"></th>
+      <th>Lean</th>
+      <th>Obese</th>
+      <th>Stats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">* Enrolled</td>
+      <td>43</td>
+      <td>36</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Maternal age at delivery (years)</td>
+      <td>33.1±4.4</td>
+      <td>30.7±4.9</td>
+      <td>0.058*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pre-pregnancy BMI (kg/m²)</td>
+      <td>21.9±1.7</td>
+      <td>38.2±8.4</td>
+      <td>&lt;0.0001*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Gestational age at delivery (weeks)</td>
+      <td>39.6±1.4</td>
+      <td>39.3±1.4</td>
+      <td>0.374*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Fetal sex (Female %)</td>
+      <td>39.5</td>
+      <td>38.9</td>
+      <td>0.47†</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Mode of delivery (%)</td>
+      <td>Cesarean</td>
+      <td>30.23</td>
+      <td>55.55</td>
+      <td rowspan="3">0.003†</td>
+    </tr>
+    <tr>
+      <td>Vaginal</td>
+      <td>62.79</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>6.97</td>
+      <td>19.44</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Ethnicity (%)</td>
+      <td>Asian</td>
+      <td>2.32</td>
+      <td>0.00</td>
+      <td rowspan="5">0.094†</td>
+    </tr>
+    <tr>
+      <td>Hispanic</td>
+      <td>6.97</td>
+      <td>25.00</td>
+    </tr>
+    <tr>
+      <td>Caucasian (non-hispanic)</td>
+      <td>88.37</td>
+      <td>66.66</td>
+    </tr>
+    <tr>
+      <td>More than one race</td>
+      <td>0.00</td>
+      <td>2.77</td>
+    </tr>
+    <tr>
+      <td>Unknown/Declined to state</td>
+      <td>2.32</td>
+      <td>5.55</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mann-Whitney T-test.†Chi-squared test._
+
+### Umbilical cord blood mononuclear cell (UCBMC) isolation
 
 Complete blood counts were obtained by Beckman Coulter Hematology analyzer (Brea, CA) before cell isolation. Umbilical cord blood mononuclear cells (UCBMC) and plasma were obtained by standard density gradient centrifugation over Ficoll (GE Healthcare, Chicago, IL). UCBMC were frozen in 10% DMSO/FetalPlex (GeminiBio, Sacramento, CA) and stored in liquid nitrogen until analysis. Plasma was stored at –80 °C until analysis.
 
-## Cord blood immunophenotyping
+### Cord blood immunophenotyping
 
 106 UCBMC were stained using the following cocktail of antibodies to enumerate innate immune cells and their subsets: PE-CD3, PE-CD19, PB-CD16, PE-Cy7-CD11c, AF700-CD14, PCP-Cy5.5-CD123, BV711-CD56, and APC-Cy7-HLA-DR. All samples were acquired with the Attune NxT Flow Cytometer (ThermoFisher Scientific, Waltham, MA) and analyzed using FlowJo 10.5.0 (Ashland, OR). Monocyte subsets (classical, non-classical, and intermediate) were enumerated based on expression of CD14 and CD16.
 
-## Intracellular cytokine assay
+### Intracellular cytokine assay
 
 To measure cytokine responses of monocytes and dendritic cells, 106 UCBMC were stimulated for 16 hr at 37 °C in RPMI 1640 medium supplemented with 10% FBS in the presence or absence of 1 µg/mL LPS (TLR4 ligand, E. coli 055:B5; Invivogen, San Diego CA). Brefeldin A (Sigma, St. Louis MO) was added after 1 hr incubation. Cells were stained for APC-Cy7-CD14 and PCP-Cy5.5-HLA-DR, ﬁxed, permeabilized, and stained intracellularly for APC-TNFα and PE-IL-6. All samples were acquired with the Attune NxT Flow Cytometer (ThermoFisher Scientific, Waltham, MA) and analyzed using FlowJo 10.5.0 (Ashland, OR).
 
-## Pathogen stimulation
+### Pathogen stimulation
 
 Approximately 5x105 MACS purified UCB monocytes were cultured with RSV (Human respiratory syncytial virus ATCC VR-1540, Manassas, VA) or E. coli (Escherichia coli (Migula) Castellani and Chalmers ATCC 11775, Manassas, VA) or left untreated in RP10 medium for 16 hr at 37 °C. RSV was added at a multiplicity of infection (MOI) of 5 and E. coli at 6x105 cfu/mL. Following the 16 hr incubation, cells were spun down. Cell pellets were frozen in QIAzol lysis reagent (Qiagen, Hilden Germany) to generate RNA-Seq libraries. Cell supernatants were frozen at –80°C to measure the concentrations of chemokines and cytokines using Luminex.
 
-## Luminex and ELISA
+### Luminex and ELISA
 
 Immune mediators in plasma were measured using a customized multiplex human factor panel (R & D Systems, Minneapolis MN) measuring cytokines (IFNβ, IFNγ, IL-1β, IL-10, IL-12p70, IL-13, IL-15, IL-17A, IL-18, IL-1RA, IL-2, IL-21, IL-4, IL-5, IL-7, TNFα, IL-23, IL-31, IL-22, IL-27), chemokines (CCL2/MCP-1, CCL3/MIP-1α, CCL4/MIP-1β, CCL5/RANTES, CCL11/Eotaxin, CXCL1/GROα, CXCL8/IL-8, CXCL9/MIG, CXCL10/IP-10, CXCL11/I-TAC, CXCL12/SDF-1α, CXCL13/BCA-1), growth factors (BDNF, GM-CSF, HGF, EGF, VEGF, PDGF-BB) and additional molecules (PD-L1, S100). Metabolic hormones were measured using a 3-plex kit measuring insulin, leptin, and PYY (Millipore, Burlington MA). Adipokines were assayed using a 5-plex kit measuring adiponectin, adipsin, lipocalin-2, total PAI-1, and resistin (Millipore, Burlington MA). CRP and IL-6 were measured in UCB plasma using a high-sensitivity ELISA (Life Technologies, Carlsbad CA) per the manufacturer’s instructions.
 
 Supernatants from fetal rhesus macaque monocyte stimulation experiments were analyzed using an NHP XL Cytokine Premixed 36-plex kit (Bio-Techne, Minneapolis MN). Samples were diluted per the manufacturer’s instructions and analyzed in duplicate on the Magpix Instrument (Luminex, Austin, TX). Data were fit using a 5P-logistic regression on xPONENT software.
 
-## Bulk RNA-Seq library generation
+### Bulk RNA-Seq library generation
 
 Total RNA was isolated from monocytes using an mRNeasy kit (Qiagen, Valencia CA). Quality and concentrations were measured using Agilent 2100 Bioanalyzer. Libraries were generated using the TruSeq Stranded Total RNA-Seq kit (Illumina, San Diego CA). Briefly, following rRNA depletion, mRNA was fragmented for 8 min, converted to double-stranded cDNA, and adapter ligated. Fragments were then enriched by PCR amplification and purified. The size and quality of the library were verified using Qubit and Bioanalyzer. Libraries were multiplexed and sequenced on the HiSeq4000 platform (Illumina, San Diego CA) to yield an average of 20 million 100 bp single-end reads per sample.
 
-## Bulk RNA-Seq analysis
+### Bulk RNA-Seq analysis
 
 Quality control of raw reads was performed using FASTQC retaining bases with quality scores of ≥20 and reads ≥35 base pairs long. Reads were aligned to the human genome (hg38) using splice-aware aligner TopHat using annotations available from ENSEMBL (GRCh38.85) database. Lowly expressed genes were filtered at the counting stage, eliminating genes with 0 counts in at least three samples regardless of the group. Quantification of read counts was performed using the GenomicRanges package in R and normalized to derive transcripts per million (TPM) counts.
 
 Responses to RSV and E. coli were modeled pairwise relative to unstimulated samples using negative binomial GLMs following low read count filtering. Genes with log2 fold change ≥1 in either direction and corrected expression difference FDR <0.05 were considered differentially expressed genes (DEG). Functional enrichment of DEG was performed using Metascape (Zhou et al., 2019). Heatmaps of fold change or TPMs and bubble plots of enrichment of Gene Ontology (GO) terms were generated using ggplot in R.
 
-## Cell Sorting and library generation for single cell (sc)RNA-seq
+### Cell Sorting and library generation for single cell (sc)RNA-seq
 
 UCBMC were thawed then washed twice in PBS with 0.04% BSA and incubated with individual 3’ CellPlex oligos (10 X Genomics) per manufacturer’s instructions for 5 min at room temperature. Pellets were washed three times in PBS with 1% BSA, resuspended in 300 µL FACS buffer, and sorted on BD FACS Aria Fusion into RPMI (supplemented with 30% FBS) following the addition of SYTOX Blue stain (1:1000, ThermoFisher) for live versus dead discrimination. Sorted cells were counted in triplicates and resuspended in PBS with 0.04% BSA in a final concentration of 1200 cells/µL. Cells were immediately loaded in the 10 X Genomics Chromium with a loading target of 17,600 cells. Libraries were generated using the V3.1 chemistry (gene expression) and Single Cell 3ʹ Feature Barcode Library Kit per the manufacturer’s instructions (10 X Genomics, Pleasanton CA). Libraries were sequenced on Illumina NovaSeq 6000 with a sequencing target of 50,000 gene expression reads and 5000 multiplexed CellPlex reads per cell.
 
-## scRNA-seq data analysis
+### scRNA-seq data analysis
 
 For 3’ gene expression with CellPlex, raw reads were aligned and quantified using Cell Ranger (version 6.0.2, 10 X Genomics) against the human reference genome (GRCh38) using the multi option and CMO information. Only singlets identified from each sample were included in downstream analyses. Droplets with ambient RNA (cells fewer than 400 detected genes), potential doublets (cells with more than 4000 detected genes) and dying cells (cells with more than 20% total mitochondrial gene expression) were excluded during initial QC. Data objects from lean and obese groups were integrated using Seurat. Data normalization and variance stabilization was performed using the SCTransform function using a regularized negative binomial regression, correcting for differential effects of mitochondrial and ribosomal gene expression levels and cell cycle. Dimension reduction was performed using the RunPCA function to obtain the first 30 principal components followed by clustering using the FindClusters function in Seurat. Visualization of clusters was performed using the UMAP algorithm as implemented by Seurat’s runUMAP function. Cell types were assigned to individual clusters using the FindMarkers function with a fold change cutoff of at least 0.5 and using a known catalog of well-characterized scRNA markers for PBMC (Zheng et al., 2017).
 
 Differential expression analysis was tested using the Wilcoxon rank sum test followed by Bonferroni correction using all genes in the dataset. For gene scoring analysis, we compared gene signatures and pathways from KEGG (https://www.genome.jp/kegg/pathway.html) in subpopulations using Seurat’s AddModuleScore function. All graphs were generated in R.
 
-## Phagocytosis assay
+### Phagocytosis assay
 
 To quantify the phagocytic ability of UCB monocytes, monocytes were isolated using magnetically activated cell sorting and anti-CD14 antibody coupled to magnetic beads per the manufacturer’s recommendation (MACS, Miltenyi Biotech, San Jose, CA). Cells were activated with 1 µg/ml LPS for 16 hr, then cultured with E. coli particles conjugated with HRP (horseradish peroxidase) in 96-well plates per manufacturer’s protocol (CytoSelect 96-well phagocytosis assay, Cell Biolabs, San Diego CA) for 3 hr in 37 °C incubator with 5% CO2. Cells were washed, fixed, permeabilized, incubated with substrate, and quantified using colorimetry (CytoSelect 96-well phagocytosis assay, Cell Biolabs, San Diego CA).
 
-## Cell migration assay
+### Cell migration assay
 
 The migratory potential of monocytes to supernatants containing chemokines was measured using the CytoSelect 96-well Cell Migration Assay Cell Migration assay (Cell Biolabs, San Diego CA). Briefly, 2x105 purified UCB monocytes isolated using anti-CD14 antibody coupled to magnetic beads per the manufacturer’s recommendation (MACS, Miltenyi Biotech, San Jose, CA) were incubated in serum-free media in the upper wells of the migration plate, while supernatants collected following PMA (phorbol myristate acetate) stimulation of adult PBMC were placed in lower wells and incubated at 37 °C and 5% CO2 for 5 hr. The number of cells that migrated into the lower wells was quantified using CyQuant cell proliferation assay per the manufacturer’s instructions. Absolute numbers of migrated cells were calculated using a standard curve for CyQuant assay with a linear range of fluorescence limited from 50 to 50,000 cells. Cell-free media served as a negative control.
 
-## Bulk ATAC-Seq
+### Bulk ATAC-Seq
 
 ATAC-Seq libraries were generated using OMNI-ATAC to reduce mitochondrial reads (Araujo et al., 2011). Briefly, 50,000 purified UCB monocytes were stimulated with 1 µg/mL LPS for 16 hr before being lysed in lysis buffer (10 mM Tris-HCl (pH 7.4), 10 mM NaCl, 3 mM MgCl2), for 3 min on ice to prepare the nuclei. Immediately after lysis, nuclei were spun at 500 g for 10 min to remove the supernatant. Nuclei were then incubated with a transposition mixture (100 nM Tn5 transposase, 0.1% Tween-20, 0.01% Digitonin, and TD Buffer) at 37 °C for 30 min. Transposed DNA was then purified with AMPure XP beads (Beckman Coulter) and partially amplified for five cycles using the following PCR conditions - 72 °C for 3 min; 98 °C for 30 s and thermocycling at 98 °C for 10 s, 63 °C for 30 s, and 72 °C for 1 min. To avoid overamplification, qPCR was performed on 5 µL of partially amplified library. Additional cycles of amplification for the remainder of the sample were calculated from the saturation curves (cycles corresponding to a third of the saturation value). Fully amplified samples were purified with AMPure beads and quantified on the Bioanalyzer (Agilent Technologies, Santa Clara CA). Libraries were sequenced on the HiSeq4000 platform (Illumina, San Diego CA).
 
-## Analysis of bulk ATAC-Seq data
+### Analysis of bulk ATAC-Seq data
 
 Paired reads from sequencing were quality-checked using FASTQC and trimmed to retain reads with quality scores of ≥20 and minimum read lengths of 50 bp. Trimmed paired reads were aligned to the human genome (hg38) using Bowtie2 (–X 2000 –k 1 –very-sensitive –no-discordant –no-mixed). Reads aligning to mitochondrial genome and allosomes were removed using samtools. PCR duplicate artifacts were then removed using Picard. Finally, poor quality alignments and improperly mapped reads were filtered using samtools (samtools view –q 10 –F 3844). To reflect the accurate read start site due to Tn5 insertion, BAM files were repositioned using the ATACseqQC package in R. The positive and negative strands were offset by +4 bp and –5 bp, respectively. Samples within a group were merged and sorted using samtools.
 
 Sample QC and statistics for merged BAM files were generated using HOMER makeTagDirectory function. Transcription Start Site (TSS enrichment) for each sample was assessed using ChIP-Seeker. Accessible chromatin peaks were called for mapped paired reads using the HOMER findpeak function (-minDist 150 –region –fdr 0.05). Differentially accessible regions (DAR) in either direction were captured using HOMER getDiffererentialPeaks function (-q 0.05). DAR were annotated using the human GTF annotation file (GRCh38.85) and ChIPSeeker with a promoter definition of –1000 bp and +100 bp around the transcriptional start site (TSS). Peaks overlapping 5’UTRs, promoters, first exons, and first introns were pooled for functional enrichment of genes. For intergenic changes, the genes closest to the intergenic DAR were considered. Functional enrichment of this pooled list of genes was performed using DAVID (Fisher p-value <0.05). BAM files were converted to bigWig files using bedtools and visualized on the new WashU EpiGenome browser. Finally, motif analyses of over-representative transcription factor binding sites for differential regions were analyzed using HOMER’s FindMotifsGenome function with -size parameter set at 75, optimized for transcription factors.
 
-## scATAC sample preparation
+### scATAC sample preparation
 
 One to two million UCBMC (n=4/group) were incubated for 4 hr at 37 °C in the presence or absence of 1 µg/mL LPS. Cell pellets were then washed, and surface-stained with monocyte markers CD14-AF700 and HLA-DR APC-Cy7 for 30 min. Stained cells were washed, resuspended in FACS buffer, and stained for live-dead exclusion (SYTOX Blue, 1:1000 dilution). Equal numbers of monocytes (CD14 +HLA-DR+) were sorted and pooled by group (lean/obese) into RPMI supplemented with 30% FBS. Cells were washed thoroughly, and nuclei were isolated using the low cell input nuclei isolation protocol (10 X Genomics). Nuclei were counted and verified for integrity then resuspended in PBS with 0.04% BSA at 1000 nuclei/µL concentration. Monocyte nuclei were loaded onto the 10 X Genomics Chromium according to the manufacturer’s protocol using the single-cell ATAC kit (v2). Library preparation was performed per the manufacturer’s protocol prior to sequencing on Illumina NovaSeq 6000 platform.
 
-## scATAC data analysis
+### scATAC data analysis
 
 Basecall files were used to generate FASTQ files with cellranger-atac (v1; 10 X Genomics). Reads were aligned to the human genome using cellranger-atac count with the cellranger-atac-GRCh38.1.1.0 reference. Mapped Tn5 insertion sites from cellranger were read into ArchR (version 1.0.1) R package retaining barcodes with at least 1000 fragments per cell and a TSS enrichment score >4. Doublets were identified and filtered using addDoubletScores and filterDoublets (filter ratio = 1.4) respectively before iterative LSI dimensionality reduction (iterations = 2, res = 0.2, variable features = 25000, dim = 30). Clustering was then performed (addClusters, res = 0.8) before UMAP dimensionality reduction (nNeighbors = 30, metric = cosine, minDist = 0.4). One cluster enriched for high doublet scores and was removed. Peaks for each cluster were calculated using MACS2, using the addReproduciblePeakSet function. Marker peaks for each cluster and differential peaks with stimulation were calculated using the getMarkerFeatures function using the Wilcoxon test. A cluster of activated monocytes was identified by pileups and feature plots of canonical cytokine and activation markers.
 
-## Cut&Tag
+### Cut&Tag
 
 Chromatin immunoprecipitation sequencing (ChIP-seq) was performed using the Cleavage Under Targets and Tagmentation (CUT&Tag) approach using roughly 150–200 K purified resting monocytes (n=3/group). Further processing, chromatin extraction, fragmentation, antibody precipitation, and library preparation for H3K9me3 (Cat # 39765) were performed at Active Motif (Carlsbad, CA). Libraries were sequenced on the Illumina NextSeq550. Paired ended reads (38 bp) were aligned to human genome hg38 using BWA with default settings (bwa mem). Peaks were called using the MACS algorithm at a cutoff of p-vaue 1e-7, without control file. Due to the low numbers of peaks in several samples, aligned BAM files were merged by group (n=3/group). Peaks were determined using HOMER’s findPeaks function. Differential analysis between the two groups was performed using HOMER’s getDifferentialPeaks function. Peaks were annotated using ChIPseeker.
 
-## Metabolic assays
+### Metabolic assays
 
 Oxygen Consumption Rate (OCR) and Extracellular Acidification Rate (ECAR) were measured using Seahorse XF Glycolysis Rate Assay on Seahorse XFp Flux Analyzer (Agilent Technologies, Santa Clara, CA) following the manufacturer’s instructions. Briefly, 200,000 purified monocytes (pooled n=3/group) were seeded in glucose-free media and cultured in the presence/absence of 1 µg/mL LPS for 1 hr in a 37 °C incubator without CO2 on Cell-Tak (Corning, Corning, NY) coated eight-well culture plates in phenol-free RPMI media containing 2 mM L-glutamine, 1 mM sodium pyruvate, and 5 mM HEPES. Plates were run on the XFp for 8 cycles of basal measurements, followed by acute injection of L-glucose (100 mM), oligomycin (50 uM), and 2-DG (500 mM). Data were analyzed on Seahorse Wave desktop software (Agilent Technologies, Santa Clara, CA).
 
-## Histone ELISA
+### Histone ELISA
 
 Nuclear extracts from 2 × 105 UCB monocytes purified using an anti-CD14 antibody coupled to magnetic beads per the manufacturer’s recommendation (MACS, Miltenyi Biotech, San Jose, CA) were isolated per the manufacturer’s instructions (Abcam, Cambridge UK) and quantified using a micro-BCA assay protein assay kit (ThermoFisher Scientific, Waltham, MA). Histone modifications were measured using a Histone H3 modification Multiplex Assay (Abcam, Cambridge UK). The input was normalized based on total protein concentration, and 20  ng of nuclear extract was added to each well. Given limited sample availability, only a subset of histone methylation marks were assayed (H3K4me1, H3K4me2, H3K4me3, H3K9me3, H3K9Ac, and total H3). Optical density was measured at 450  nm. All values are reported as percentages of the total H3 signal.
 
-## Histone flow
+### Histone flow
 
 Activation-induced changes in histone post-translational modifications were assayed using flow cytometry (n=8/group). Briefly, 106 UCBMC were stimulated with 1 μg/mL LPS or left untreated for 2 hr in a 37 °C incubator with 5% CO2. Cell pellets were washed with FACS buffer, surface stained for monocytes (CD14 AF700, HLA-DR APC-Cy7) for 20 min, washed, and fixed using Foxp3/Transcription factor Fix/Perm buffer (Tonbo Biosciences, San Diego, CA) for 1 hr at 4 °C. Pellets were then stained intracellularly overnight with antibodies against H3K4me3-AF647 (Clone EPR20551-225, Abcam, Cambridge UK) and H3K9me3-PE (Clone D4W1U, Cell Signaling Technology, Danvers, MA). Cells were washed twice with Perm buffer (Tonbo Biosciences, San Diego, CA), followed by FACS buffer. After the final wash, pellets were resuspended in FACS buffer and analyzed on Attune NxT flow cytometer (ThermoFisher Scientific, Waltham, MA).
 
-## Phospho-Flow
+### Phospho-Flow
 
 Activation-induced changes in signaling mediators downstream of TLR4 were measured using flow cytometry. Briefly, 106 UCBMC (n=8/group) were stimulated either for 30 min or 2 hr with 1 μg/mL LPS or left untreated in a 37 °C incubator with 5% CO2. Cells were washed with FACS buffer and surface stained for CD14 and HLA-DR in FACS tubes. Pellets were washed in FACS buffer and resuspended in 100 μL prewarmed PBS (Ca + Mg + free). Cells were fixed immediately by the addition of equal volumes of prewarmed Cytofix Buffer (BD Biosciences, Brea, CA) and thorough mixing and incubating at 37 °C for 10 min. Cells were then centrifuged at 600 g for 8 min. Supernatants were removed leaving no more than 50 μL residual volume. Cells were then permeabilized by the addition of 1 mL 1 X BD PermWash Buffer I, mixed well, and incubated at room temperature for 30 min. Pellets were then washed and stained intranuclearly with antibodies against NF-kB p65 pS529 AF647 (Clone K10-895.12.50, Cell Signaling Technology, Danvers, MA) (for 30 min stimulation samples) or IkBa PE (Clone MFRDTRK, eBioscience, San Diego CA) and Phospho-p38 MAPK-APC (Clone 4NIT4KK, eBioscience, San Diego CA) for 1 hr at room temperature in the dark. Samples were washed twice in Permwash Buffer I, resuspended in FACS buffer, and analyzed on Attune NxT flow cytometer.
 
-## Imaging flow cytometry
+### Imaging flow cytometry
 
 Nuclear translocation of p50 was measured using the Amnis NFkB Translocation kit (Luminex Corporation, Austin TX). Briefly, 1–2 x 106 UCBMC were stimulated with 1 μg/mL LPS for 4 hr in a 37 °C incubator with 5% CO2. Cell pellets were washed thoroughly and stained for dead cell exclusion (Ghost Violet 510, 1:1000 dilution Tonbo Biosciences, San Diego, CA) for 30 min at 4 °C. Cells were then washed, and surface stained for 20 min at 4 °C (CD14-APC, HLA-DR-APC-Cy7). Cells were washed in 1 X Assay Buffer (Luminex Corporation, Austin TX) and fixed using 1 X Fixation buffer for 10 min at room temperature. Washed pellets were then stained intranuclearly for p50-AF488 (1:20 dilution) in 1 X Assay Buffer for 30 min at room temperature in the dark. At the end of the incubation, cells were washed twice in 1 X Assay buffer and resuspended in 50 μL 0.25 X Fixation Buffer in polypropylene Eppendorf tubes. Samples were analyzed on the Amnis Imagestream XMark II imaging flow cytometry platform and analyzed on the IDEAS Software using the nuclear translocation wizard.
 
-## Fetal rhesus macaque samples macrophage isolation and stimulation
+### Fetal rhesus macaque samples macrophage isolation and stimulation
 
 PBMC, ileal lamina propria lymphocytes (LPL), and splenocytes from gestational day (GD) 130 rhesus macaque fetuses born to obese and lean dams (n=3/group) were isolated and cryopreserved from animals described in Sureshchandra et al., 2022. PBMC were stimulated with 1 µg/mL LPS for 16 hr in a 37 °C incubator with 5% CO2. The frequency of responding monocytes was determined using intracellular cytokine staining for IL-6 and TNFɑ following surface staining for CD14 + HLA-DR + cells. Ileal LPLs and splenocytes were stained using a antibodies directed against: CD14, HLA-DR, CD206, CD209, CD169, CD163, and CD64. Additionally, 10,000 CD14highHLA-DR+ splenic macrophages and 5,000 ileal CD14highHLA-DR+ macrophages from each sample were plated and subsequently stimulated with E. coli (6x105 cfu/mL) or left untreated for 16 hr at 37 °C. Plates were spun and supernatants were collected for analysis of secreted cytokines and chemokines using Luminex.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were conducted in Prism 8 (GraphPad, San Diego CA). For cord blood cytokine, immune phenotyping, and ex vivo responses readouts, data was tested for normality using the Shapiro-Wilk test (alpha = 0.05), analysis of equal variance (F-test) and all outliers in two-way and four-way comparisons identified using ROUT analysis (Q=0.1%). If data were normally distributed across all groups, differences with obesity and pregnancy were tested using ordinary one-way ANOVA with unmatched samples. Multiple comparisons were corrected using the Holm-Sidak test adjusting the family-wise significance and confidence level at 0.05. If the Gaussian assumption was not satisfied, differences were tested using the Kruskal-Wallis test (alpha = 0.05) followed by Dunn’s multiple hypothesis correction tests. Differences in normally distributed datasets were tested using an unpaired t-test with Welch’s correction (assuming different standard deviations). Two group comparisons that failed normality tests were carried out using the Mann-Whitney test. All bar graphs report mean and ± standard error of the mean (SEM).
 
 ## Results
 
-## Cord blood monocytes from babies born to mothers with obesity exhibit attenuated responses to TLR stimulation
+### Cord blood monocytes from babies born to mothers with obesity exhibit attenuated responses to TLR stimulation
 
 To dissect the mechanisms by which pregravid obesity impacts functional responses in cord blood monocytes, we carried out a multi-pronged systems immunology approach (Figure 1A). We began by characterizing immune cell composition and phenotypes in cord blood of subjects stratified by their pre-pregnancy body mass index (BMI) – babies born to lean mothers (BMI <25) and babies born to mothers with obesity (BMI >30). As previously reported, maternal obesity did not alter the frequencies of white blood cells (WBC) or their subsets in the cord blood (Wilson et al., 2015; Sureshchandra et al., 2021c; Sureshchandra et al., 2017; Wilson and Messaoudi, 2015; Figure 1—figure supplement 1A). Additionally, no changes were observed in cord blood plasma levels of inflammatory markers (IL-6, CRP) or insulin (Figure 1—figure supplement 1B–C). Leptin levels were, however, significantly higher in the obese group (Figure 1—figure supplement 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental design for the study. Cord blood samples were obtained from neonates born to lean and mothers with obesity (n=43 lean and n=36 obese, Table 1). UCBMC and plasma were isolated and used to assess the impact of pregravid obesity on fetal immunity using genomic (bulk and single-cell RNA and ATAC-Seq, ChIP-Seq) and functional assays (flow cytometry, ex vivo stimulations, phagocytosis, and migration). (B) UMAP of term cord blood mononuclear cells collected from lean mothers and mothers with obesity (n=4/group). Samples were hashed using CellPlex (10 X Genomics), sorted for live cells, and analyzed using a 10 X single-cell 3’ gene expression assay. (C) Heatmap of top 30 markers of monocyte and conventional DC clusters in UCBMC. (D) Box and whisker plots comparing relative frequencies of monocyte subsets (mean and ± SEM). (E–F) Violin plots of the top differentially expressed genes (FDR p<0.0001) in cord blood classical monocytes – (E) upregulated and (F) downregulated with maternal obesity. (G) Violin plots comparing module scores of TLR, cytokine, and chemokine signaling in cord blood classical monocytes with maternal obesity. (H) Bar graph comparing migration potential of UCB monocytes in response to supernatants from PMA-stimulated adult PBMC. Fold changes were calculated relative to no stimulation controls (mean and± SEM). * - p<0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Complete blood cell counts of umbilical cord blood samples obtained from babies born to 34 lean or 26 mothers with obesity. (B) Circulating levels of CRP and IL-6 were measured using an ELISA. (C) Circulating levels of insulin and leptin were measured using a metabolic Luminex panel. * - p<0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gating strategy for identification of dendritic cells and monocyte subsets in cord blood. (B–C) Frequencies of (B) total dendritic cells and its (C) subsets in cord blood. (D) Frequencies of total CD14 + monocytes in cord blood. (E) Proportions of classical (CD14 + + CD16 dim), non-classical (CD14 + CD16++) and intermediate (CD14 +CD16+) monocytes in cord blood with maternal obesity. (F) Frequencies of IL-6 + TNFa + producing monocytes following overnight LPS stimulation measured using intracellular cytokine staining and flow cytometry and (G) stratified by mode of delivery (H) Post thaw viability of UCBMC measured using flow cytometry.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Violin plot delineating top markers used to define major immune cell subsets in cord blood samples. Candidate genes were selected from the list of top markers predicted by FindAllMarkers function in Seurat (B) UMAP of UCBMC profiles colored by the group – lean (blue) and obese (orange). (C) UMAP of UCBMC profiles split by donor type – lean (top) and obese (bottom). (D) Bar graph comparing relative frequencies of individual immune cell clusters within all cells on the UMAP (E) Feature plot highlighting the relative distribution of module scores in various clusters on the UMAP split by group.
+
 Multi-parameter flow cytometry analysis of innate immune cells within umbilical cord blood mononuclear cells (UCBMC, Figure 1—figure supplement 2A) revealed no differences in dendritic cell frequencies (Figure 1—figure supplement 2B) but a significant drop in plasmacytoid DCs (pDCs) in the obese group (Figure 1—figure supplement 2C). Additionally, proportion of total monocytes (CD14 + HLA-DR+) within live mononuclear cells was significantly lower in the obese group (Figure 1—figure supplement 2D). However, monocyte subsets - classical, non-classical, and intermediate remained comparable between the two groups (Figure 1—figure supplement 2D). Finally, UCB monocytes from the obese group responded poorly to ex vivo LPS (TLR4 agonist) stimulation (Figure 1—figure supplement 2F), recapitulating the phenotype observed in previously reported studies (Wilson et al., 2015; Sureshchandra et al., 2021c; Sureshchandra et al., 2017; Wilson and Messaoudi, 2015). These differences were not driven by differences in the mode of delivery or the viability of cells between the two groups (Figure 1—figure supplement 2G–H).
 
-## Single-cell RNA sequencing reveals maternal obesity-associated transcriptional shifts in the UCB monocytes
+### Single-cell RNA sequencing reveals maternal obesity-associated transcriptional shifts in the UCB monocytes
 
 We next asked if cord blood monocyte subsets were transcriptionally primed to respond poorly to ex vivo stimulation signals. To test this, we performed droplet-based single-cell RNA sequencing (scRNA-Seq) of UCBMC from lean and obese groups (n=4/group, hashed using Cell Plex). Integration of all donors using Recursive Principal Component Analysis (rPCA) and Uniform Manifold Approximation and Projection (UMAP) analysis revealed the expected major immune subsets (Figure 1B) including T cells (CD3D, CD8A), comprised mostly of naïve cells (CCR7, IL7R) and some memory T cells lacking CCR7; B cells (CD79A, MS4A1); NK cells (NCAM1); conventional dendritic cells (cDCs, HLA-DRA, FCER1A); plasmacytoid dendritic cells (pDCs, IRF8); monocytes (CD14); erythroid cells (HBB); and a small subset of proliferating cells (MKI67) (Figure 1—figure supplement 3A). Assessment of individual group (Figure 1—figure supplement 3B) and donor contributions (Figure 1—figure supplement 3C and Supplementary file 1) highlighted representation of every sample (lean and obese) in individual clusters identified, with modest increases in proportions of naïve CD4 and CD8 T cell in obese group (Figure 1—figure supplement 3D).
 
 A closer look at the monocytes revealed the presence of 3 clusters (Figure 1B), all expressing CD14: classical monocytes (Mono C) expressing higher S100A8, S100A9, and VCAN; non-classical monocytes (Mono NC) expressing higher levels of FCGR3A and interferon-stimulated genes; and a cluster of classical monocytes (Mono (C) cytokine) with elevated levels of inflammatory transcripts IL1B, CCL3, CXCL2, and CXCL8 (Figure 1C). Comparisons of the relative abundance of these subsets revealed a decrease in Mono C (p=0.05) and a non-significant decrease in Mono (C) cytokine clusters (p=0.1) with pregravid obesity (Figure 1D and Figure 1—figure supplement 3D). This shift in UCB monocyte cell states is further demonstrated by differential gene expression analysis (Figure 1E and F) and module score comparisons (Figure 1G and Figure 1—figure supplement 3E) within UCB monocyte clusters. Specifically, pregravid obesity resulted in elevated expression of genes important for antigen presentation and immune regulation (Figure 1E). On the other hand, immune signatures associated with cytokine (IL6), chemokine (CCL2, CCL3, CXCL3), and TLR signaling were attenuated in the obese group (Figure 1F and G), in line with reduced TLR responses reported here (Figure 1—figure supplement 2F) and prior studies (Sureshchandra et al., 2017). Finally, dampened chemokine signaling translated to a reduction in the migration capacity of purified monocytes (Figure 1H).
 
-## Pregravid obesity compromises cord blood monocyte responses to bacteria
+### Pregravid obesity compromises cord blood monocyte responses to bacteria
 
 Given the increased incidence of bacterial and viral infections in babies born to mothers with obesity (Griffiths et al., 2016; Rastogi et al., 2015; Suk et al., 2016), we next interrogated if the reduced UCB monocyte response to LPS stimulation (Wilson et al., 2015; Sureshchandra et al., 2021c; Sureshchandra et al., 2017; Wilson and Messaoudi, 2015) extended to anti-microbial response. To that end, monocytes were purified from UCBMC and cultured with E. coli for 16 hr at 37 °C. Secreted cytokines and chemokines were profiled using Luminex, while the transcriptional response to infection was recorded using bulk RNA sequencing (Figure 2A). While comparable levels of TNFɑ were secreted by both groups in absence of stimulus, an infection-induced increase in the secretion of pro-inflammatory cytokines (IL-6, IL12p70), regulatory cytokines (IL-10, PD-L1), chemokines (CCL4, CCL11, CXCL11), and growth factors (GM-CSF) was only detected in the lean group after E. coli stimulation (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental design for in vitro bacterial and viral stimulation. Purified monocytes were cultured in the presence/absence of E. coli or RSV for 16 hr. Cell pellets were used for bulk RNA-Seq analyses and supernatants were used for Luminex analyses of secreted cytokines and chemokines. (B) Bubble plot of key secreted factors significantly different following E. coli infection. The size of the bubble represents the quantity of the secreted analyte (log-transformed) whereas color represents statistical significance relative to no stimulation controls. Statistically significant analytes between lean and obese groups are highlighted with # - p<0.05. (C) Venn diagram (right) and corresponding functional enrichment (left) of genes upregulated with E. coli infection in lean and obese groups (Green denotes common DEG, blue DEG unique to lean group, and yellow DEG unique to the obese group) using metascape. The length of the bar indicates the number of genes in each gene ontology (GO) term. Color represents the statistical significance of each GO term. (D) Heatmap comparing fold changes of the genes upregulated in both groups (77 genes) that mapped to GO terms ‘myeloid cell differentiation’, ‘inflammatory response to antigenic stimulus’, ‘leukocyte apoptotic process’, ‘regulation of leukocyte activity’, ‘cytokine activity’, and ‘positive regulation of protein phosphorylation’. (E) Heatmap comparing normalized transcript counts (blue – low to red – high) of genes exclusively upregulated in the lean group following E. coli infection. (F) Experimental design for measuring ex vivo phagocytosis by cord blood monocytes. (G) Bar graph depicting colorimetric readout of phagocytosed E. coli particles by UCB monocyte. * or /#- p<0.05, #### - p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Bar graph representing the number of upregulated (red) or downregulated (blue) differentially expressed genes (DEG) in each group. (B) Venn diagram representing the number of downregulated DEG following E. coli stimulation in each group. (C) Functional enrichment of downregulated DEG detected in both groups (top, green), or exclusively in the lean (middle, blue) and obese (bottom, orange) groups. (D) Violin plots comparing fold changes of DEGs downregulated following E. coli stimulation and involved in antigen presentation.
 
 Next, we examined differences in transcriptional responses to E. coli. The number of differentially expressed genes (DEG) relative to no stimulation was higher in the lean group (Figure 2—figure supplement 1A). While ~30% of genes up-regulated with infection (160 genes) were shared between the lean and obese groups (Figure 2C), the fold change of several of these genes involved in myeloid cell activation (CSF2, CSF3, CCR7) and cytokine signaling (IL6, IL23A, IL10, IL12B, CCL2, CCL3, CCL4, CCL8, CCL20) was lower in the obese group (Figure 2D). Importantly, functional enrichment of genes upregulated in the lean group alone revealed an over-representation of pathways associated with immune regulation (positive regulation of protein phosphorylation and regulation of cellular response to stress) (Figure 2C). DEG enriching to these pathways include cytokines (IL1B, IL1RN), chemokines (CXCL1, CXCL3), growth factors (VEGFA, FGF2), and signaling molecules (CASP5, NFKBIZ, SOCS3, TLR8, MMP9) indicating a robust innate immune response in the lean group (Figure 2E). We also observed ~50% overlap in genes downregulated with infection (Figure 2—figure supplement 1B). These gene signatures enriched to GO terms associated with myeloid cell activation and negative regulation of differentiation (Figure 2—figure supplement 1C). Interestingly, downregulation of MHC class II molecules (HLA-DPA1, DPB1, DQB1, DRA, DRB1, DRB5) was observed exclusively in the lean group (Figure 1—figure supplement 2C and D).
 
 Given the modest inflammatory response to E. coli infection by UCB monocytes from the obese group, we next compared their phagocytic ability (Figure 2F). Purified UCB monocytes were cultured with labeled E. coli and probed for internalization. UCB monocytes from the obese group were more phagocytic compared to the lean group (Figure 2G), suggesting a more regulatory phenotype.
 
-## Attenuated antiviral transcriptional responses in UCB monocytes with pregravid obesity
+### Attenuated antiviral transcriptional responses in UCB monocytes with pregravid obesity
 
 Previous studies in rodent models have reported dysregulated inflammatory responses in the lungs of pups born to obese dams following RSV infection (Griffiths et al., 2016). Given that RSV is sensed by myeloid cells via TLR4/TLR8 pathways, we asked if maternal obesity compromises fetal myeloid cell responses to ex vivo RSV infection (Figures 2A and 3). Interestingly, we saw no differences between the lean and obese groups in terms of immune mediator production 16 hr post-stimulation (Figure 3A). UCB monocytes from the obese group generated a larger transcriptional response than those from the lean group (Figure 3—figure supplement 1A). While gene signatures associated with a robust response to the virus were observed in both groups (Figure 3B and C), significant differences in DEGs upregulated with RSV stimulation were noted (Figure 3B). Particularly, DEGs unique to the lean group were associated with anti-viral effector responses (Figure 3C). This list included genes involved in TLR signaling (MYD88, GSDMD, CASP1), cytokine and chemokine signaling (CCL2, IL1RN, IL10), and effector molecules that initiate a robust Th1 response (STAT4, CXCL10, IL15, IL27) (Figure 3C and D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bar graphs comparing levels (mean and ± SEM) of key secreted factors by purified UCB monocytes in response to RSV infection measured using Luminex (n=4/group) compared to no stimulation (NS). (B) Venn diagram comparing DEG upregulated in response to RSV infection relative to no stim controls in lean and obese groups. (C) Functional enrichment of differentially expressed genes (DEG) detected in both groups (green, top), lean only (blue, middle), and obese group only (yellow, bottom) predicted using Metascape. (D) Heatmap comparing normalized transcript counts (blue – low to red – high) of genes exclusively upregulated in the lean group following RSV infection, mapping to GO terms ‘antigen processing and presentation’, ‘negative regulation of cell differentiation’, and ‘myeloid cell differentiation’. (E) Experimental design for testing monocyte responses to type-I IFN (n=8/group). UCBMC were stimulated with a mix of human IFNɑ and IFNβ for 16 hr and activation markers were measured using flow cytometry (n=7–8/group). (F) Bar graphs comparing activation markers on cord blood monocytes in response to type-I IFN. *- p<0.05, **- p<0.01, ***- p<0.001, ****-p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bar graph representing the number of upregulated (red) or downregulated (blue) DEG in each group. (B) Heatmap of upregulated genes involved in interferon signaling pathway. (C) Surface protein levels of interferon receptor 1 (IFNAR1) represented as the fraction of positive cells (top) or median fluorescent intensity (bottom). *- p<0.05, ***- p<0.001. (D) Venn diagram representing the number of downregulated DEG following RSV stimulation. (E) Functional enrichment of downregulated DEG detected in both groups (top, green), or exclusively in the lean group (top, blue) and obese group (bottom, orange). (F) Four-way venn comparing overall gene expression (both up- and down-regulated genes) changes following E. coli and RSV infections. (G) Five way functional enrichment of unique DEG and the 79 DEG induced in all groups induced following in vitro infection with E. coli and RSV.
 
 Moreover, following RSV infection, several interferon-associated genes (ISGs) (STAT4, IFNA1, IRF1, and IRF5) were upregulated exclusively in the lean group (Figure 3D) while other ISGs were poorly induced in the obese group (Figure 3—figure supplement 1B). Given comparable levels of secreted type-I IFN following 16 hr RSV infection (Figure 3A), these data suggested potential defects in the response to type I IFN in UCB monocytes from the obese group. To test this hypothesis, we stimulated total UCBMC with a cocktail of IFNɑ and IFNβ for 6 hr and measured activation markers using flow cytometry (Figure 3E). The frequency of cells expressing IFN receptor (IFNAR1) was comparable between the groups and treatment conditions as was the increase in mean fluorescence intensity (MFI) following stimulation (Figure 3—figure supplement 1C). Nevertheless, activation markers CCR7, CD40, and CD86 were upregulated to a lesser extent in the obese group (Figure 3F). Finally, analysis of DEG downregulated after RSV stimulation (Figure 3—figure supplement 1D) in the lean group showed enrichment to transcription and translation while DEG unique to the obese group enriched to fatty acid and immunoglobulin binding (Figure 3—figure supplement 1E).
 
 Finally, a comparison of overall transcriptional responses to E. coli and RSV revealed limited overlap in DEG, an expected outcome given the different nature of the pathogens (Figure 3—figure supplement 1F). Interestingly, the inflammatory response to RSV was less pronounced compared to that generated in response to E. coli (Figure 3—figure supplement 1G). However, overall responses to both E. coli and RSV were dampened with maternal obesity.
 
-## UCB monocytes from babies born to mothers with obesity are epigenetically and metabolically poised to respond poorly to LPS
+### UCB monocytes from babies born to mothers with obesity are epigenetically and metabolically poised to respond poorly to LPS
 
 Prior studies from our laboratory have shown that maternal obesity is associated with loss of promoter methylation of several negative regulators of monocyte activation such as PPARɣ (Sureshchandra et al., 2017; Sureshchandra et al., 2019) in UCB monocytes. Given the prominent role of chromatin accessibility changes during acute responses to pathogens, we asked if UCB monocytes from babies born to mothers with obesity are epigenetically poised for dysfunctional responses to TLR ligands. To test this, we isolated nuclei from purified resting CD14 +monocytes and identified global differences in baseline chromatin profiles using bulk ATAC-Seq. The analysis revealed significantly less open chromatin within promoter regions in the obese group relative to the lean group (Figure 4A). Genes regulated by promoters that were less accessible in the obese group were primarily involved in ‘myeloid cell activation’, ‘antigen processing and presentation’, and ‘neutrophil degranulation’ (Figure 4B), which included proinflammatory CD55, ITGAL, and CCL3L (Figure 4C). In contrast, the few promoters that were more open in the obese group overlapped genes with regulatory roles such as ‘regulation of leukocyte activation’ and ‘chronic inflammatory response’ (Figure 4B), which included IL10 and TFGBI loci (Figure 4D). A direct comparison of baseline chromatin accessibility differences with previously reported transcriptional responses to LPS (Sureshchandra et al., 2017) revealed limited overlap. However, maternal obesity associated increase in IL10 and a decrease in CD55 promoter accessibility correlated with their transcript levels post LPS stimulation (Figure 4E).
 
@@ -180,9 +305,17 @@ Prior studies from our laboratory have shown that maternal obesity is associated
 
 We next measured baseline differences in histone modifications that could potentially explain the differences in chromatin accessibility. Nuclear extracts from purified UCB monocytes were probed for specific methylation and acetylation signatures on histone H3K4 and H3K9 using ELISA. No differences in promoter-associated H3K4 mono-, di-, or tri-methylation were observed (Figure 4F). While H3K9 acetylation levels were comparable between the groups, heterochromatin-associated H3K9 trimethylation was significantly elevated in UCB monocytes from the obese group (Figure 4G). We confirmed these differences by chromatin immunoprecipitation followed by sequencing (ChIP-Seq) of H3K9 trimethyl regions in purified UCB monocytes, with 5612 peaks (vs. 3888) enriched in the obese group compared to the lean group (Figure 4H). Roughly 11% of these repressive marks enriched in the obese group overlapped promoters compared to 1.9% in the lean group (Figure 4I). Key genes regulated by impacted promoter mapped to key processes such as ‘immune system development’ (PTPN6, VEGFA, TNFSF13B, MAPK3), ‘immune effector process’ (IRF7, IRF8, FCER1G), and ‘NF-kB signaling’ (TRAF1, TFRC, PRKD1) (Figure 4J).
 
-## Epigenetic constraints to UCB monocyte activation with maternal obesity
+### Epigenetic constraints to UCB monocyte activation with maternal obesity
 
 We next asked if signaling defects downstream of TLR activation contribute to functional differences in UCB monocyte responses with maternal obesity. We began by measuring LPS-induced early phosphorylation events using flow cytometry. No differences in induction of MAPK-p38 or loss of IKBa phosphorylation signals were observed (Figure 5A). However, the increase in phosphorylation levels of NF-kB subunit p65 post LPS stimulation was less significant in the obese group (Figure 5A). To probe the impact of this modest difference, we measured nuclear NF-kB translocation using imaging flow cytometry. Fewer cells with translocated p50 were detected 4 hr following LPS stimulation (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig5-v2.jpg)
+
+**Figure 5.:** (A) Dot plots comparing median fluorescence intensity (MFI) ± SEM of phosphorylated signaling molecules downstream of TLR4 sensing (n=5/group). *- p<0.05, **- p<0.01. (B) Representative brightfield and fluorescent images of stimulated and unstimulated UCB monocytes profiled using imagine flow cytometry (n=3–4/group). NF-kB (p50–AF488) and nucleus (7-AAD) are shown in green and red respectively. Surface stains for CD14 and HLA-DR are shown in aqua and fuchsia respectively. Overlay of NF-kB and nuclei stain was used to determine translocation within CD14 + HLA-DR+monocytes. Bar graph comparing percentage translocated cells following LPS stimulation in lean and obese groups. (C) Bar graph comparing changes in trimethyl modification on H3K9 residues following LPS stimulation (relative to no stimulation controls) detected using flow cytometry. (D) Graph representing the kinetics of ECAR of stimulated monocytes following glucose injection and blockade of glycolysis. (E) Bar graph comparing DAR frequencies in each group following LPS stimulation. (F) Heatmap demonstrating overall accessibility differences following LPS stimulation around the promoter. (G) Over-represented transcription factors identified from motif analysis of DARs more open in lean compared to obese groups following LPS stimulation. X-axis represented percentage of peaks with motifs identified and color represents p-value on log10 scale (H) Pileups of key inflammatory loci post LPS stimulation (I) Four-way Venn of genes accessible (ATAC-Seq) exclusively in the lean group post LPS stimulation with genes exclusively upregulated (RNA-Seq) in the lean group following LPS, E. coli and RSV infection. Select overlapping genes are highlighted. (J) UMAP of single nuclei ATAC-Seq of LPS stimulated and sorted monocytes. (K) Feature plots demonstrating a cluster of activated monocytes (cluster 1). Color intensity represents fragments mapping to open chromatin regions. (L) Proportions of monocytes within each group mapping to activated monocyte cluster. (M) Pileups of inflammatory loci in activated monocytes with/without LPS stimulation. * - p<0.05; ** - p<0.01.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81320/elife-81320-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Comparison of surface glucose transporter GLUT1 and (B) glucose uptake using glucose analog 2-NBDG (n=7–8/group). Error bars represent medians with interquartile ranges. (C) Transcription Start Site (TSS) enrichment (3000 Kb around transcription start site) of ATAC-Seq peaks in LPS stimulated samples. (D) Pileups of key inflammatory loci post LPS stimulation. (E) UMAP of single-cell chromatin profiles of sorted cord blood monocyte nuclei. Clusters represent the pool of nuclei from lean and obese groups before and after stimulation. (F) MA plots comparing fold changes in chromatin accessibility changes following LPS stimulation in lean (left) and obese (right) groups with upregulated genes in red, downregulated genes in blue, and not differentiated genes in grey.
 
 We next asked if maternal obesity was associated with a dampened epigenetic remodeling in response to immune activation. Loss of the repressive of histone H3K9 trimethylation following LPS stimulation was reduced in UCB monocytes from the obese group (Figure 5C). Since metabolic changes precede epigenetic changes, we next measured the overall increase in ECAR (a readout for glycolysis) following 1 hr LPS stimulation using a glycolytic stress assay. Following glucose injection, levels of ECAR increased significantly less in the obese group compared to the lean group (Figure 5D). These differences were observed despite the lack of differences in baseline metabolic demands of fetal monocytes as evidenced by both surface expression of primary glucose transporter GLUT1 (Figure 5—figure supplement 1A) and overall uptake of extracellular glucose (Figure 5—figure supplement 1B) remaining comparable between the two groups.
 
@@ -190,7 +323,7 @@ We next asked if suboptimal changes in chromatin accessibility correlate with at
 
 To capture differences in the heterogeneity of epigenetic response to LPS, we used single-cell ATAC-Seq of resting monocytes or following 4 hr LPS stimulation (Figure 5—figure supplement 1E). We identified four major clusters including a cluster of activated monocytes (Figure 5J, cluster 1) at baseline, as observed in scRNA-seq (Figure 1B). Cells within this cluster had significantly more open promoters that regulate inflammatory genes such as IL6, IL1B, CCL2, and HLA-DRA (Figure 5K). We observed a twofold increase in the frequencies of this activated monocytes cluster in the lean group but no change in the obese group following LPS stimulation (Figure 5L). Moreover, as seen with bulk ATAC-seq, overall changes in chromatin accessibility profiles in response to LPS were more robust in the lean group within all monocyte clusters (Figure 3—figure supplement 1F). This included promoter regions of early inflammatory cytokine loci IL1B, chemokine CCL2, and alarmins S100A9 and S100A12 (Figure 5M).
 
-## Poor fetal monocyte responses are recapitulated in a non-human primate model of western style diet (WSD)-induced maternal obesity
+### Poor fetal monocyte responses are recapitulated in a non-human primate model of western style diet (WSD)-induced maternal obesity
 
 It is unclear if maternal obesity exerts the same impact on fetal monocytes cells in utero and if this hyporesponsive phenotype extends to tissue-resident macrophages. To address this, we leveraged access to samples from a rhesus macaque model of western-diet-induced obesity (Figure 6A). We analyzed fetal PBMCs, splenic, and gut (ileal) macrophages from rhesus macaques obtained at gestational day (GD) 130 from lean dams fed a control chow (CHOW) or obese dams fed a western diet (WSD) (Figure 6A). The average length of gestation is 166 days in rhesus macaques, therefore a GD130 time point is considered mid third trimester. Despite a lack of difference in the frequency of circulating monocytes, the frequency of TNFɑ+IL-6+producing monocytes obtained from the WSD group was significantly reduced following LPS stimulation (Figure 6B) as we reported previously (Sureshchandra et al., 2017) and Figure 2—figure supplement 1 for human UCB monocytes.
 

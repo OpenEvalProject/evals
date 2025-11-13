@@ -34,7 +34,7 @@
 
 ## Abstract
 
-10.7554/eLife.28899.001 Here we report multiple lines of evidence for a comprehensive model of energy metabolism in the vertebrate eye. Metabolic flux, locations of key enzymes, and our finding that glucose enters mouse and zebrafish retinas mostly through photoreceptors support a conceptually new model for retinal metabolism. In this model, glucose from the choroidal blood passes through the retinal pigment epithelium to the retina where photoreceptors convert it to lactate. Photoreceptors then export the lactate as fuel for the retinal pigment epithelium and for neighboring Müller glial cells. We used human retinal epithelial cells to show that lactate can suppress consumption of glucose by the retinal pigment epithelium. Suppression of glucose consumption in the retinal pigment epithelium can increase the amount of glucose that reaches the retina. This framework for understanding metabolic relationships in the vertebrate retina provides new insights into the underlying causes of retinal disease and age-related vision loss.
+Here we report multiple lines of evidence for a comprehensive model of energy metabolism in the vertebrate eye. Metabolic flux, locations of key enzymes, and our finding that glucose enters mouse and zebrafish retinas mostly through photoreceptors support a conceptually new model for retinal metabolism. In this model, glucose from the choroidal blood passes through the retinal pigment epithelium to the retina where photoreceptors convert it to lactate. Photoreceptors then export the lactate as fuel for the retinal pigment epithelium and for neighboring Müller glial cells. We used human retinal epithelial cells to show that lactate can suppress consumption of glucose by the retinal pigment epithelium. Suppression of glucose consumption in the retinal pigment epithelium can increase the amount of glucose that reaches the retina. This framework for understanding metabolic relationships in the vertebrate retina provides new insights into the underlying causes of retinal disease and age-related vision loss.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ The findings of those in vivo studies appear puzzling and seemingly contradictor
 
 ## Results
 
-## Photoreceptors express a glucose transporter
+### Photoreceptors express a glucose transporter
 
 Uptake of glucose into cells requires a protein that can transport glucose. We used immunoblotting of mouse tissues to evaluate expression of glucose transporters (Figure 1A) and confirmed previous findings (Badr et al., 2000; Gospe et al., 2010) that retina and RPE express GLUT1. The protein immunoreactive with the GLUT1 antibody was confirmed to be membrane associated (Figure 1B). GLUT3 was detected only in brain. GLUT4 was detected in heart and muscle as expected, but not in the retina.
 
@@ -62,7 +62,7 @@ Uptake of glucose into cells requires a protein that can transport glucose. We u
 
 Immunohistochemistry (IHC) of mouse retinas shows that GLUT1 immunoreactivity overlaps with cytochrome oxidase subunit 1 (MT-COX1) (Figure 1C), which identifies rod inner segments by the unique elongated shape of their mitochondria (Figure 1E). These mitochondria extend beyond the ends of the Müller glial cell (MGC) apical processes (Figure 1E). There are no mitochondria within these fine MGC apical processes. Instead, small spherical-shaped mitochondria line up within the MGCs along the outer limiting membrane, just beneath the apical processes (Figure 1F and arrowheads in Figure 1C). MGCs, labeled with an antibody to glutamine synthetase (GS) in Figure 1D, extend from the outer limiting membrane to the ganglion cell side of the retina. Most GLUT1 immunoreactivity in MGCs is in the inner retina (Figure 1D). GLUT1 immunoreactivity also overlaps with a marker specific for rod photoreceptors, rod arrestin (Figure 1G), and it overlaps with GFP expressed from the rod-specific Nrl promoter (Figure 1H). Taken altogether, the distribution of GLUT1 immunoreactivity supports the idea that photoreceptors can take up glucose released from the apical side of the RPE.
 
-## Dietary glucose enters the retina primarily through photoreceptors
+### Dietary glucose enters the retina primarily through photoreceptors
 
 Next, we asked which cells in the retina take up glucose in the context of an eye within a living animal. We used oral gavage to introduce a fluorescent derivative of 2-deoxy glucose (2-NBDG) (Yoshioka et al., 1996) into stomachs of mice. We harvested the retinas either 20 or 60 min after gavage, mounted them on filter paper, and cut 300–400 μm slices for imaging by confocal microscopy (Giarmarco et al., 2017). Figure 2A shows that 2-NBDG fluorescence is strongest in the photoreceptor layer, suggesting that most of the glucose from the blood that enters a retina is taken up by photoreceptors. Surprisingly, 2-NBDG fluorescence is stronger in the outer retina than in the inner retina even though mouse inner retinas are vascularized. We noted that 2-NBDG fluorescence does not overlap with MGC’s, which were labeled in these experiments by transgenic expression of tdTomato (Wohl and Reh, 2016), though in rare instances there was overlap at a MGC end foot. These results are summarized and quantified in Figure 2C. They show that glucose that reaches the outer retina is taken up primarily by photoreceptors. There appears to be little overlap of the NBDG signal with the tdTomato label in MGC’s.
 
@@ -72,7 +72,7 @@ Next, we asked which cells in the retina take up glucose in the context of an ey
 
 The images in Figure 2A were made from live, unfixed mouse retinas. Most photoreceptors in mouse retinas are rods. It is difficult in these images to resolve whether cones also import 2-NBDG. To address this, we also introduced 2-NBDG by oral gavage into adult zebrafish, whose retinas are more enriched with cones (Raymond et al., 2014). Figure 2B shows that cones become intensely fluorescent 30 min after gavage. As in mouse retinas, there was no indication of fluorescent glucose uptake into MGCs, which in these retinas were marked with tdTomato expressed from a GFAP promoter (Shin et al., 2014). Figure 2D reports quantification and summarizes the zebrafish retina results.
 
-## Carbons from glucose are metabolized in RPE cells differently than in retina
+### Carbons from glucose are metabolized in RPE cells differently than in retina
 
 Previous studies showed that most of the glucose taken up into a retina is used to make lactic acid (Du et al., 2016a; Krebs, 1927; Warburg et al., 1924; Medrano and Fox, 1995; Wang et al., 1997; Winkler, 1981). Within the eye of a living animal, glucose from the choroidal blood first must pass through the monolayer of RPE cells before it can reach the retina. We hypothesized that the energy metabolism of RPE cells might be able to minimize its consumption of glucose in order to maximize the amount of glucose that can pass through the RPE to reach the retina.
 
@@ -84,7 +84,7 @@ We also incubated mRetina and hfRPE with U-13C glucose because this isotopomer 
 
 The findings in Figure 3 support our hypothesis that retina and RPE cells metabolize glucose differently. In a previous study, we showed that RPE cells also use an alternative pathway, reductive carboxylation, to make NADPH (Du et al., 2016b). We propose that these differences are adaptations that give RPE cells the ability to minimize consumption of glucose so that they can maximize transport of glucose from the choroid to the retina.
 
-## Confirmation of metabolic specializations of the retina and RPE in a mouse eye
+### Confirmation of metabolic specializations of the retina and RPE in a mouse eye
 
 The analyses of RPE metabolism in Figure 3 focused on the cultured hfRPE cell. This is a well characterized model that has been used to evaluate RPE metabolism (Adijanto and Philp, 2014). In vitro studies have focused on cultured hfRPE cells because RPE cells isolated from adult eyes can de-differentiate in culture. A recent report compared human adult RPE, fetal RPE, and native adult RPE and found some differences in gene expression and trans-epithelial resistance. However, the results indicate that the cultured adult human RPE is not better than hfRPE as a representation of native RPE (Blenkinsop et al., 2015). hfRPE cells also have been used as a cell culture model for studying various diseases, including age-related macular degeneration (Johnson et al., 2011). The hfRPE cultures used in the experiments reported here are of a similar age in culture as the ones used in other published studies, including those used to model AMD.
 
@@ -96,7 +96,7 @@ Nevertheless, it is important to confirm that the metabolic differences between 
 
 The data shown in Figure 3 report the amounts of intracellular metabolites. Some of the 13C-labeled metabolites made from 13C glucose, most notably 13C lactate, could be exported to the medium. To quantify exported metabolites, we incubated retinas, eyecups and hfRPE cells with U-13C glucose and quantified 13C labeled lactate and pyruvate as they accumulated in the medium (Figure 4B; Figure 4C). After a ~ 5 min delay, retinas, hfRPE cells and eyecups exported 13C lactate and 13C pyruvate. Retina releases 13C lactate into the medium ~20 times faster than either hfRPE or mEC.
 
-## RPE cells can use lactate as a fuel
+### RPE cells can use lactate as a fuel
 
 In previous reports we confirmed that mouse retinas convert most of the glucose they consume into lactate (Du et al., 2016a) and retinas release more lactate than other neuronal tissues (Du et al., 2013a). Figures 3,4 in this report show that mouse retinas produce and release more lactate than RPE cells. We considered the possibility that the RPE can use lactate exported from a retina as an alternative fuel to minimize consumption of glucose by the RPE. To determine if hfRPE can use lactate, we incubated monolayers of hfRPE cells either with 5 mM U-13C glucose or with 10 mM U-13C lactate/1 mM unlabeled glucose for 5 or 10 min. We then quantified incorporation of 13C into glycolytic and TCA cycle metabolites. Figure 5A shows that 13C incorporates rapidly into the pyruvate pool from both 13C glucose and 13C lactate. However, in the citrate pools, 13C from lactate accumulates at least 20 times faster than 13C from glucose. We also noted that substantial amounts of m3 malate form, indicating that carboxylation of pyruvate is a significant metabolic pathway in hfRPE. Figure 5B quantifies the rates of incorporation of 13C from lactate into TCA cycle intermediates in hfRPE cells. To confirm that utilization of lactate is similar in hfRPE and mEC we measured incorporation of 13C from U-13C lactate into metabolic intermediates in hfRPE and compared its incorporation into mRetina and mEC. Figure 6 shows that 13C lactate metabolism in hfRPE is more similar to mEC metabolism than to retina metabolism.
 
@@ -106,13 +106,13 @@ In previous reports we confirmed that mouse retinas convert most of the glucose 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28899/elife-28899-fig5-v2.jpg)
 
-**Figure 5.:** 13C from lactate into metabolic intermediates in hfRPE cells.(A) Comparison of initial rates of labeling (at 5 and 10 min after introduction of labeled fuel) from 5 mM U-13C glucose vs. from 10 mM U-13C lactate (with 1 mM unlabeled glucose also present). Citrate and malate take up label faster from lactate than from glucose. (B) Time courses of incorporation of 13C from 10 mM U-13C lactate (with 1 mM unlabeled glucose also present) into hfRPE metabolites accompanied by schematic illustrations of the labeled species in the context of the TCA cycle. (n = 2–3 for each time point; error bars represent range or standard deviation).
+**Figure 5.:** (A) Comparison of initial rates of labeling (at 5 and 10 min after introduction of labeled fuel) from 5 mM U-13C glucose vs. from 10 mM U-13C lactate (with 1 mM unlabeled glucose also present). Citrate and malate take up label faster from lactate than from glucose. (B) Time courses of incorporation of 13C from 10 mM U-13C lactate (with 1 mM unlabeled glucose also present) into hfRPE metabolites accompanied by schematic illustrations of the labeled species in the context of the TCA cycle. (n = 2–3 for each time point; error bars represent range or standard deviation).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28899/elife-28899-fig6-v2.jpg)
 
 **Figure 6.:** The high relative abundance of m3 metabolites derived from carboxylation reactions and the high abundance of fumarate, malate and aspartate in hfRPE cells resemble the metabolite distributions in the RPE enriched eyecup more than the distributions in retina. Each preparation was incubated with 10 mM U-13C lactate for the specified times and metabolites were extracted, derivatized and quantified by GC-MS. (n = 2 for hfRPE, n = 3 for mEyecup and n = 4 for mRetina; error bars represent range or standard deviations.).
 
-## Lactate can suppress glucose catabolism in RPE cells.
+### Lactate can suppress glucose catabolism in RPE cells.
 
 Figures 5,6 show that RPE cells can consume lactate as an alternative to using glucose for fuel. We next asked whether lactate also can suppress consumption of glucose. We hypothesized (Figure 7A) that lactate dehydrogenase (LDH) in RPE cells can use lactate to reduce cytosolic NAD+ to NADH as it does in other cells (Hung et al., 2011). Since NAD+ is required for glycolysis, depletion of NAD+ by lactate and LDH could suppress glycolysis so that RPE cells would consume less glucose.
 
@@ -130,9 +130,9 @@ Lactate at a concentration of 20 mM may seem non-physiological because it is hig
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/28899/elife-28899-fig8-v2.jpg)
 
-**Figure 8.:** 13C glucose in hfRPE cells.Each bar graph compares the ratio of metabolites with vs. without the addition of 10 mM of either unlabeled lactate (A,B) pyruvate (C,D) or alanine (E,F). A, C, and E report the ratios for the total of all isotopomers of each metabolite and B, D and F report the ratios for specific labeled metabolites (m2 or m3). Panel G shows the effects of adding unlabeled lactate, pyruvate or alanine on the release of 13C lactate generated by glycolysis of U-13C glucose. Metabolites were extracted, derivatized and quantified after 5 min incubation with 5 mM U-13C glucose (n = 3) or 5 mM U-13C glucose plus 10 mM unlabeled lactate (n = 3), pyruvate (n = 3) or alanine (n = 3). Error bars report StDev. *p<0.05; **p<0.01.
+**Figure 8.:** Each bar graph compares the ratio of metabolites with vs. without the addition of 10 mM of either unlabeled lactate (A,B) pyruvate (C,D) or alanine (E,F). A, C, and E report the ratios for the total of all isotopomers of each metabolite and B, D and F report the ratios for specific labeled metabolites (m2 or m3). Panel G shows the effects of adding unlabeled lactate, pyruvate or alanine on the release of 13C lactate generated by glycolysis of U-13C glucose. Metabolites were extracted, derivatized and quantified after 5 min incubation with 5 mM U-13C glucose (n = 3) or 5 mM U-13C glucose plus 10 mM unlabeled lactate (n = 3), pyruvate (n = 3) or alanine (n = 3). Error bars report StDev. *p<0.05; **p<0.01.
 
-## Lactate can enhance transport of glucose across a monolayer of hfRPE cells
+### Lactate can enhance transport of glucose across a monolayer of hfRPE cells
 
 We hypothesized that lactate can enhance the net flow of glucose across the RPE because lactate can suppress glycolysis. The simplest version of this hypothesis is that the suppression of glycolysis by lactate (as shown in Figures 7 and 8) minimizes consumption of glucose, so that more glucose can diffuse successfully from the basolateral to the apical side of the RPE.
 
@@ -148,7 +148,7 @@ Unlabeled lactate in the apical compartment also suppresses accumulation of 13C 
 
 ## Discussion
 
-## Model for a network of metabolic interdependence between the retina and RPE
+### Model for a network of metabolic interdependence between the retina and RPE
 
 Figure 10 summarizes our model for the retina-RPE metabolic ecosystem. We propose that lactate from photoreceptors suppresses glycolysis in the RPE so more glucose can reach the retina.
 
@@ -156,25 +156,25 @@ Figure 10 summarizes our model for the retina-RPE metabolic ecosystem. We propos
 
 **Figure 10.:** Photoreceptors convert glucose into lactate and release the lactate into the interphotoreceptor matrix. Lactate suppresses glycolysis in RPE cells by depleting NAD+. Lactate also fuels metabolic activity in Müller cells, which lack key enzymes that would be required for glycolysis.
 
-## Previous evidence that cells in the retina have specific metabolic roles
+### Previous evidence that cells in the retina have specific metabolic roles
 
 The distributions of metabolic enzymes in mouse retina indicate that photoreceptors have the enzymes and transporters they need for glycolysis, but MGCs do not. Glycolysis requires pyruvate kinase (PK). The M2 isoform of PK (PKM2) is highly enriched in photoreceptors (Lindsay et al., 2014; Chinchore et al., 2017; Rajala et al., 2016; Rueda et al., 2016; Casson et al., 2016) but MGCs in mouse retinas do not express substantial amounts of any PK isoform (Lindsay et al., 2014). MGCs also do not express hexokinase (Rueda et al., 2016). Furthermore, lactate, rather than glucose, is the most effective source (Lindsay et al., 2014) of carbon for glutamine synthesis by MGCs (Riepe and Norenburg, 1977) in mouse retinas. Based on these observations, we proposed that MGCs in a retina are fueled by lactate from photoreceptors (Hurley et al., 2015). Altogether, those findings and the results described in this report, indicate that the central metabolic role of photoreceptors in retinal energy metabolism is to convert glucose to lactate, which then is distributed to both RPE and MGCs to be used as fuel (Figure 10).
 
-## Significance of aerobic glycolysis in the retina
+### Significance of aerobic glycolysis in the retina
 
 Enhanced capacity for anabolic metabolism has been proposed as the purpose of aerobic glycolysis in photoreceptors (Lindsay et al., 2014; Chinchore et al., 2017; Rajala et al., 2016) but our model suggests an additional purpose. We propose that the laminated structure of the eye, in which the RPE separates the retina from its source of nutrients, requires photoreceptors to produce and release lactate to fuel MGC’s and suppress glycolysis in the RPE so that sufficient glucose can flow through the RPE.
 
-## The relationship between the ‘retinal ecosystem’ model and recent in vivo findings from genetically altered photoreceptors and RPE
+### The relationship between the ‘retinal ecosystem’ model and recent in vivo findings from genetically altered photoreceptors and RPE
 
 The in vitro experiments in Figures 7 and 8 identify the metabolic effects on glucose consumption of adding additional fuels like lactate, pyruvate and alanine. The in vitro experiments in Figure 9B and C show that lactate can protect glucose from consumption by RPE cells. However, more direct evidence will be needed to test whether the model in Figure 10 accurately describes the metabolic relationships in the eye of a living animal. Genetic manipulations of photoreceptor and RPE cells and in vivo analyses of their phenotypes are needed. In fact, recent genetic studies do support the model in Figure 10. Photoreceptors engineered to be more glycolytic are more robust than normal and RPE cells engineered to be more glycolytic cause photoreceptors to degenerate (Zhang et al., 2016; Venkatesh et al., 2015; Kurihara et al., 2016; Zhao et al., 2011). According to our model (Figure 10) when photoreceptors are made to be more glycolytic than normal they produce more lactate, which more effectively suppresses glycolysis in the RPE. More glucose reaches the retina. When photoreceptors are in a stressed state the improved availability of glucose may enhance their survival. In contrast, when RPE cells are engineered to be more glycolytic they consume more glucose, leaving less glucose available for the retina. Photoreceptors become starved, stressed and ultimately they degenerate.
 
-## The concept of a metabolic ecosystem and its relationship to retinal disease
+### The concept of a metabolic ecosystem and its relationship to retinal disease
 
 The ‘retina ecosystem’ model in Figure 10 suggests an explanation for the linkage between Age-Related Macular Degeneration and accumulation of mitochondrial DNA damage in RPE cells (Terluk et al., 2015). Photoreceptors may starve when RPE mitochondria fail because the RPE becomes more dependent on glycolysis, which prevents glucose from reaching the retina.
 
 The concept of a metabolic ecosystem also has implications for other types of retinal disease. Mutations that affect genes expressed only in rods can cause rods to degenerate. However, cones subsequently degenerate as a consequence of the loss of rods, even though the cones are not affected directly by the mutant gene (Punzo et al., 2012). One reason for this is that loss of a cone viability factor that normally is produced by rods may contribute to cone degeneration in this type of disease state (Aït-Ali et al., 2015). The model in Figure 10 suggests another factor that also can contribute to the secondary loss of cones when rods degenerate. A retina without rods makes less lactate (Du et al., 2016a). We have shown in this report that, without lactate to suppress glycolysis, RPE cells oxidize more glucose. This may explain why rods and cones that are genetically normal are shorter and dysmorphic when they are in an environment where most of the surrounding photoreceptors have degenerated (Koch et al., 2017; Lewis et al., 2010). The loss of lactate production in rod-deficient retinas may limit the rate at which glucose can reach cones. This is consistent with starvation of cones (Punzo et al., 2009) and accumulation of 2-NBDG in RPE cells (Wang et al., 2016) when rods degenerate. Also in support of the model in Figure 10, an alternative supply of glucose can rescue those cones from degeneration (Wang et al., 2016).
 
-## The importance of other fuels in the metabolic ecosystem
+### The importance of other fuels in the metabolic ecosystem
 
 This study highlights one way that RPE, photoreceptors and MGCs can work together as an ecosystem of metabolically specialized and interdependent cells. Our investigation focused on lactate because so much of it is exported from the retina, but glycogen (Senanayake et al., 2006), fatty acids (Joyal et al., 2016; Reyes-Reveles et al., 2017), ketone bodies (Adijanto et al., 2014), glutamine (Du et al., 2016b), proline (Chao et al., 2017), and metabolites from other metabolic pathways (Rueda et al., 2016; Chao et al., 2017) also must contribute significantly to this metabolic ecosystem. Future investigations should focus on optimizing conditions to reliably quantify the kinetics of glucose transport across RPE cells.
 
@@ -184,13 +184,13 @@ A recent study showed that oxidation of fatty acids by the RPE can supply the re
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All research was authorized by the University of Washington Institutional Animal Care and Use Committee. Mice in the C57BL/6J background were maintained in the University of Washington South Lake Union vivarium at 27.5°C on a 14 hr/10 hr light-dark cycle. C57BL/6J does not carry the rd8 mutation in the Crb1 gene (Mattapallil et al., 2012). Transgenic mice expressing eGFP under the Nrl promoter (Akimoto et al., 2006) (RRID:IMSR_JAX:021232), or tdTomato under the Rlbp-CRE promoter (Wohl and Reh, 2016) were described previously.
 
 Transgenic heterozygote zebrafish in the AB background were maintained in the University of Washington South Lake Union aquatics facility at 27.5°C on a 14 hr/10 hr light-dark cycle. Fish used for experiments were male and female siblings between 12–24 months old. A transgenic line stably expressing tdTomato in Müller cells (GFAP:tdTomato) was described previously (Shin et al., 2014). Prior to gavage experiments, fish were fasted >18 hr and dark-adapted >12 hr.
 
-## Antibodies
+### Antibodies
 
 Arrestin1, D9F2 (from Larry Donoso and Cheryl Craft)
 
@@ -218,62 +218,62 @@ MTCO1 (Abcam, ab14705; RRID:AB_2084810)
 
 IHC: 1:2000
 
-## Tissue preparations for immunoblotting
+### Tissue preparations for immunoblotting
 
 Frozen tissue samples were homogenized in RIPA buffer (150 mM NaCl, 1% Triton X-100, 0.05% sodium deoxycholate, 0.1% SDS, 50 mM Tris, pH 8.0) with a mixed phosphatase and protease inhibitor cocktail (ThermoFisher 88668), briefly sonicated, then rocked at 4°C for 30 min. Samples were then spun at 13,300 RPM at 4°C for 15 min, and the supernatant was normalized for loading by BCA assay to 20 μg/tissue. RPE protein lysate was prepared according to a described protocol (Wei et al., 2016).
 
 To prepare membrane fractions, frozen tissue samples were homogenized in PBS (0.14 M, pH 7.4) with a mixed phosphatase/protease inhibitor cocktail, then rocked at 4°C for 30 min. Samples were then spun at 45,000 rpm at 4°C, the supernatant (cytosolic fraction) drawn off and saved, and the pellet (membrane fraction) was resuspended in an equal volume of PBS. After mixing with 5X Laemmli loading buffer, 1 μl benzonase (Millipore 70746) was added. Each tissue was then loaded with equal volumes of cytosolic and membrane fraction.
 
-## Immunoblotting
+### Immunoblotting
 
 Samples were run on 12%, self-cast acrylamide gels and transferred onto PVDF membranes (Millipore IPFL00010). Following protein transfer, membranes were blocked with LI-COR Odyssey Blocking Buffer (LI-COR, 927–40000) for 1 hr at room temperature. Primary antibodies were diluted in blocking buffer and incubated overnight at 4°C. Membranes were washed, incubated with secondary antibody (LI-COR IRDye 800CW, 926–32210, (RRID:AB_621842), and 926–32211, (RRID:AB_621843),1:5000 1 hr at room temperature, and washed again. Imaging was performed using the LI-COR Odyssey CLx Imaging System (RRID:SCR_014579).
 
-## Immunohistochemistry:
+### Immunohistochemistry:
 
 Retinal eyecups were micro-dissected from C57BL/6J mice and were fixed in 4% paraformaldehyde in PBS, rinsed with PBS, incubated in a sucrose gradient (5%, 10%, and 20%), embedded into OCT and cryosectioned at 20 μm. Mouse sections were washed in PBS, then blocked in IHC buffer (5% normal donkey serum diluted in PBS with 2 mg/mL BSA and 0.3% Triton X-100) for 1 hr. Primary antibodies were diluted in IHC blocking buffer as specified, and applied to blocked cryosections overnight at 4°C. Secondary antibodies were diluted at 1:3000 in IHC blocking buffer, and applied to mouse retina sections for 1 hr in darkness. Sections were washed in PBS three times, and mounted with SouthernBiotech Fluoromount-G (Fisher Scientific) under glass coverslips and visualized using a Leica SP8 confocal microscope with a 63X oil objective. Images were acquired at a 4096 × 4096 pixel resolution with a 12-bit depth using Leica LAS-X software (RRID:SCR_013673).
 
-## RPE cell culture
+### RPE cell culture
 
 Human fetal eyes with a gestational age of 16–20 weeks were harvested and shipped overnight on ice in RPMI media containing antibiotics from Advanced Bioscience Resources Inc. (Alameda, CA). Dissections of fetal tissue were performed within 24 hr of procurement and followed a modified version of the dissection protocol in order to isolate the retinal pigment epithelium (RPE) (Sonoda et al., 2009). The fetal RPE sheets were incubated at 37°C with 5% CO2 and cultured in RPE media. The RPE media consisted of Minimum Essential Medium alpha (Life Technologies) supplemented with 5% (vol/vol) fetal bovine serum (Atlanta Biologicals), N1-Supplement (Sigma-Aldrich), Nonessential Amino Acids (Gibco), and a Penicillin-Streptomycin solution (Gibco). Isolated fetal RPE reached confluency about 3–4 weeks after dissection and was then passaged using a 0.25% Trypsin-EDTA solution (Gibco) and passed through a 40 μm nylon cell strainer (BD Falcon) in order to collect a suspension of single cells. After counting, the RPE cells were plated onto 0.3 cm2 cell culture inserts (Falcon) coated with Matrigel (Corning) at a seeding density of 100,000 cells per insert. Cells grown on these inserts were cultured in RPE media containing 1% (vol/vol) FBS. Transepithelial resistance was measured weekly after 2 weeks in culture using a Millicell ERS-2 Epithelial Volt-Ohm Meter (Millipore).
 
-## Oral gavage
+### Oral gavage
 
 Mice were fasted overnight in the dark, and gavaged the next morning in ambient light. A micro-syringe fitted with a 22 gauge 1.5’ straight 1.25 mm ball-tip needle was used to orally administer 100 μl of 50 mM 2-NBDG (Invitrogen, Carlsbad, CA) dissolved in water. Successfully gavaged mice were returned to darkness during the 2-NBDG incubation period.
 
 Zebrafish were gavaged using methods described previously (Collymore et al., 2013) under red light. Briefly, overnight fasted adult zebrafish were anaesthetized >1 min with 150 mg/mL MS-222 in fish water. Fish were placed in a slit cut in a cellulose sponge soaked with MS-222 solution, and the sponge was rotated to orient the fish mouth up. A micro-syringe fitted with thin, flexible 1 mm OD plastic tubing was used to orally administer 5 μl of either fish water or 30 mM 2-NBDG. Gavaged fish were immediately placed into a recovery tank of fresh fish water and monitored briefly using a UV flashlight for regurgitation of 2-NBDG. Successfully gavaged fish were returned to darkness during the 2-NBDG incubation period.
 
-## Tissue slicing and imaging
+### Tissue slicing and imaging
 
 Gavaged mice were euthanized by asphyxiation with CO2. Zebrafish were euthanized in an ice bath followed by cervical dislocation. Euthanized animals were enucleated, and the retinas dissected away under red light into cold Ringer’s solution (133 mM NaCl, 2.5 mM KCl, 1.5 mM NaH2PO4, 2 mM CaCl2, 1.5 mM MgCl2, 10 mM HEPES, 10 mM D-glucose, 1 mM sodium lactate, 0.5 mM L-glutamine, 0.5 mM reduced glutathione, 0.5 mM sodium pyruvate, 0.3 mM sodium ascorbate, pH 7.4). Isolated retinas were mounted on filter paper (0.45 μm pore, mixed cellulose, Millipore) and flattened with gentle suction. After peeling away remaining RPE, flat-mounted retinas were sliced into 300–400 μm slices using a tissue slicer (Stoelting). Slices were rotated 90° and the filter paper edges buried in strips of wax on a coverslip for imaging at room temperature. Fresh retinal slices were imaged at room temperature using a Leica SP8 confocal microscope with a 40X water objective; excitation/emission wavelengths were 488/525–575 nm for 2-NBDG, and 559/580–630 nm for tdTomato. Leica LAS-X (RRID:SCR_013673) software was used to acquire images at 2048 × 2048 pixel resolution with 12 bit depth, and Z-stacks imaged every 0.5 μm over a tissue depth of 10–30 μm.
 
-## Image analysis
+### Image analysis
 
 ImageJ software (RRID:SCR_002285) was used for quantification of 2-NBDG fluorescence in fresh retinal slices. 10 slices of each Z-stack were maximum intensity projected, and retinal layers were identified by morphology and expression of transgenic markers. For every slice, 3 small uniformly sized rectangular regions of interest (ROIs) were placed randomly in each retinal layer, and mean fluorescence intensity of each ROI was measured. Average 2-NBDG fluorescence in each layer was divided by the autofluorescence of corresponding retinal layers from animals gavaged with saline or water.
 
-## Metabolic flux analysis
+### Metabolic flux analysis
 
 Isolated mouse retina or confluent human fetal RPE cells were changed into pre-warmed Krebs-Ringer bicarbonate buffer (KRB) containing, depending on the experiment, [1,2] 13C glucose, U-13C glucose, or U-13C lactate (Sigma) as described elsewhere (Du et al., 2013a; Du et al., 2015; Du et al., 2016b). Both retinas and RPE cells were incubated for the specified time points. Metabolites from each time point were extracted and analyzed by gas chromatography mass spectrometry (GC-MS, Agilent 7890/5975C) as described in detail (Du et al., 2013a; Du et al., 2013b).
 
-## Measurement of U-13C glucose transport across hfRPE cells on transwell filters
+### Measurement of U-13C glucose transport across hfRPE cells on transwell filters
 
 After maturation for 4–6 weeks in culture, hfRPE cells grown on transwell filters (Millicell HA 0.45 μm pore size 0.6 cm2) were changed into 500 μl of DMEM containing 1% FBS on each side. 5 mM U-13C glucose (Cambridge Isotope Laboratories) was included in the medium in the basolateral side while various concentrations of sodium lactate were added to the apical side, while maintaining a constant pH. Apical side medium was collected at 8 hr to analyze the transported U-13C glucose by liquid chromatography coupled with triple quadrupole mass spectrometry (Waters Xevo TQ Tandem mass spectrometer with a Waters ACQUITY system with UPLC) as reported in detail (Du et al., 2015).
 
-## Live-cell imaging NAD(P)H autofluorescence
+### Live-cell imaging NAD(P)H autofluorescence
 
 Cultured hfRPE cells were attached to cover slips that were previously coated with a thin layer of Matrigel (Corning, Corning NY) diluted 1:30 1–2 days prior to the imaging experiment. NAD(P)H was imaged and quantified similarly to a previous study (Jung et al., 2009). Cells were perifused with KRB (supplemented with 0.1% bovine serum albumin and 1% penicillin streptomycin fungizone (Invitrogen)) at a flow rate of ∼0.1 ml/min at 37°C on the stage of a Nikon Eclipse TE-200 inverted microscope. Fluorescence imaging of NAD(P)H was measured with emission detected at 460 nm by a CoolSnap HQ2 CCD camera (Photometrics, Tucson, AZ) through a 40X Super Fluor Nikon objective (DIC H/N2) during excitation at 360 nm via a Xenon lamp (Lambda LS-1620, Sutter Instrument Company, Novato, CA). NAD(P)H fluorescence integration time was 50 msec. The software package Elements (Nikon) was used to drive the data acquisition. At the completion of each protocol, the steady-state levels of relative fluorescence (RFU) during exposure of KCN and subsequently FCCP were measured and this data was used to normalize the relative fluorescence unit (RFU) data. The normalization of the NAD(P)H signal was as a percent of RFUFCCP and RFUKCN, defined as 0% and 100% respectively for each cell.
 
-## Serial block face scanning SEM
+### Serial block face scanning SEM
 
 Mouse eyes were enucleated, the anterior half was dissected away, and the eyecup was cut in half. Tissue was fixed in 4% glutaraldehyde in 0.1 M sodium cacodylate buffer, pH 7.2, at room temperature (RT), then stored overnight at 4°C. Samples were washed 4 times in sodium cacodylate buffer, postfixed in osmium ferrocyanide (2% osmium tetroxide/3% potassium ferrocyanide in buffer) for 1 hr on ice, washed, incubated in 1% thiocarbohydrazide for 20 min, and washed again. After incubation in 2% osmium tetroxide for 30 min at RT, samples were washed and en bloc stained with 1% aqueous uranyl acetate overnight at 4°C. Samples were finally washed and en bloc stained with Walton’s lead aspartate for 30 min at 60°C, dehydrated in a graded ethanol series, and embedded in Durcupan resin. Serial sections were cut at 60 nm thickness and imaged with 6 nm pixel size using a Zeiss Sigma VP scanning electron microscope fitted with a Gatan 3View2XP ultramicrotome apparatus. Imaged stacks were concatenated and aligned using TrakEM2 (RRID:SCR_008954). Unless stated otherwise, five washes with water were used for all wash steps.
 
-## Statistical analyses
+### Statistical analyses
 
 R (RRID:SCR_001905) with R Commander was used to perform one-way ANOVA for NBDG gavage experiments.
 
-## Reproducibility
+### Reproducibility
 
 Each set of data has been reproduced the number of times (n) described in each figure legend. ‘n’ refers to the number of retinas, eyecups or hfRPE wells that were analyzed. We did not make comparisons between mutant animals so n refers to the number of technical replicates, not the number of biological replicates.
 
-## Data availability
+### Data availability
 
 All data supporting the findings of this study are available within the paper.

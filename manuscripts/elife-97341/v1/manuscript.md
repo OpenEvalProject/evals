@@ -18,23 +18,23 @@
 
 ### Affiliations
 
-1. https://ror.org/02xf66n48 Laboratory of Cellular and Molecular Physiology, Department of Physiology, Faculty of Medicine, University of Debrecen Debrecen Hungary
+1. Laboratory of Cellular and Molecular Physiology, Department of Physiology, Faculty of Medicine, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
 2. Laboratory of Ion Channel Research, Department of Cellular and Molecular Medicine Leuven Belgium
-3. https://ror.org/045c7t348 VIB Center for Brain & Disease Research Leuven Belgium
-4. https://ror.org/02xf66n48 Doctoral School of Molecular Medicine, Faculty of Medicine, University of Debrecen Debrecen Hungary
-5. https://ror.org/02xf66n48 Department of Pharmaceutical Chemistry, University of Debrecen Debrecen Hungary
-6. https://ror.org/02xf66n48 MTA-DE Molecular Recognition and Interaction Research Group, University of Debrecen Debrecen Hungary
-7. https://ror.org/05kb8h459 Department of Chemistry, University of Umeå Umeå Sweden
-8. https://ror.org/02xf66n48 Department of Inorganic and Analytical Chemistry, University of Debrecen Debrecen Hungary
-9. https://ror.org/022dvs210 Laboratory of Chemical Biology, Institute of Biochemistry, HUN-REN Biological Research Centre Szeged Hungary
-10. https://ror.org/01pnej532 Theoretical Medicine Doctoral School, Faculty of Medicine, University of Szeged Szeged Hungary
-11. https://ror.org/02xf66n48 Department of Immunology, Faculty of Medicine, University of Debrecen Debrecen Hungary
+3. VIB Center for Brain & Disease Research Leuven Belgium ([ROR:045c7t348](https://ror.org/045c7t348))
+4. Doctoral School of Molecular Medicine, Faculty of Medicine, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+5. Department of Pharmaceutical Chemistry, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+6. MTA-DE Molecular Recognition and Interaction Research Group, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+7. Department of Chemistry, University of Umeå Umeå Sweden ([ROR:05kb8h459](https://ror.org/05kb8h459))
+8. Department of Inorganic and Analytical Chemistry, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
+9. Laboratory of Chemical Biology, Institute of Biochemistry, HUN-REN Biological Research Centre Szeged Hungary ([ROR:022dvs210](https://ror.org/022dvs210))
+10. Theoretical Medicine Doctoral School, Faculty of Medicine, University of Szeged Szeged Hungary ([ROR:01pnej532](https://ror.org/01pnej532))
+11. Department of Immunology, Faculty of Medicine, University of Debrecen Debrecen Hungary ([ROR:02xf66n48](https://ror.org/02xf66n48))
 
 † Corresponding author
 
 ## Abstract
 
-Rapamycin (sirolimus), a macrolide compound isolated from the bacterium Streptomyces hygroscopicus , is widely used as oral medication for the prevention of transplant rejection and the treatment of lymphangioleiomyomatosis. It is also incorporated in coronary stent coatings to prevent restenosis and in topical preparations for the treatment of skin disorders. Rapamycin’s in vivo activities are generally ascribed to its binding to the protein FKBP12, leading to potent inhibition of the mechanistic target of rapamycin kinase (mTOR) by the FKBP12-rapamycin complex. The specific rapamycin-induced interaction between domains from mTOR and FKBP12 is also frequently employed in cell biological research, for rapid chemically-induced protein dimerization strategies. Here, we show that rapamycin activates TRPM8, a cation channel expressed in sensory nerve endings that serves as the primary cold sensor in mammals. Using a combination of electrophysiology, Saturation Transfer Triple-Difference (STTD) NMR spectroscopy, and molecular docking-based targeted mutagenesis, we demonstrate that rapamycin directly binds to human TRPM8. We identify a rapamycin-binding site in the groove between voltage sensor-like domain and the pore domain, distinct from the interaction sites of cooling agents and known TRPM8 agonists menthol and icilin. Related macrolide immunosuppressants act as partial TRPM8 agonists, competing with rapamycin for the same binding site. These findings identify a novel molecular target for rapamycin and provide new insights into the mechanisms of TRPM8 activation, which may assist in the development of therapies targeting this ion channel. Moreover, our findings also indicate that caution is needed when using molecular approaches based on rapamycin-induced dimerization to study ion channel regulation.
+Rapamycin (sirolimus), a macrolide compound isolated from the bacterium Streptomyces hygroscopicus, is widely used as oral medication for the prevention of transplant rejection and the treatment of lymphangioleiomyomatosis. It is also incorporated in coronary stent coatings to prevent restenosis and in topical preparations for the treatment of skin disorders. Rapamycin’s in vivo activities are generally ascribed to its binding to the protein FKBP12, leading to potent inhibition of the mechanistic target of rapamycin kinase (mTOR) by the FKBP12-rapamycin complex. The specific rapamycin-induced interaction between domains from mTOR and FKBP12 is also frequently employed in cell biological research, for rapid chemically-induced protein dimerization strategies. Here, we show that rapamycin activates TRPM8, a cation channel expressed in sensory nerve endings that serves as the primary cold sensor in mammals. Using a combination of electrophysiology, Saturation Transfer Triple-Difference (STTD) NMR spectroscopy, and molecular docking-based targeted mutagenesis, we demonstrate that rapamycin directly binds to human TRPM8. We identify a rapamycin-binding site in the groove between voltage sensor-like domain and the pore domain, distinct from the interaction sites of cooling agents and known TRPM8 agonists menthol and icilin. Related macrolide immunosuppressants act as partial TRPM8 agonists, competing with rapamycin for the same binding site. These findings identify a novel molecular target for rapamycin and provide new insights into the mechanisms of TRPM8 activation, which may assist in the development of therapies targeting this ion channel. Moreover, our findings also indicate that caution is needed when using molecular approaches based on rapamycin-induced dimerization to study ion channel regulation.
 
 ## Introduction
 
@@ -48,9 +48,29 @@ While performing experiments involving rapamycin-induced membrane translocation 
 
 ## Results
 
-## Rapamycin activates TRPM8
+### Rapamycin activates TRPM8
 
 When performing Fura-2-based intracellular Ca2+ concentration ([Ca2+]i) measurements in HEK293 cells stably expressing human TRPM8 channels (HEK-M8 cells), we observed that rapamycin (10 µM) caused a robust increase in [Ca2+]i, comparable in amplitude to the response evoked by the prototypical TRPM8 agonist menthol at a concentration of 50 µM (Figure 1A). Responses to both rapamycin and menthol were fully inhibited by the specific TRPM8 antagonist AMTB N-(3-aminopropyl)–2-[(3-methylphenyl) methoxy] -N-(2-thienylmethyl) benzamide hydrochloride; 2 µM (Lashinger et al., 2008; Figure 1A). The effect of rapamycin was concentration-dependent, with saturating responses at concentrations ≥10 µM and an EC50 value of 3.8±2.0 µM (Figure 1B). Similar results were obtained using a 96-well plate-based assay, where we obtained an EC50 value of 6.0±0.3 µM at room temperature, which shifted to 10.1±0.2 µM at 37 °C (Figure 1—figure supplement 1). Likewise, in whole-cell patch-clamp measurements on HEK-M8 cells at room temperature, rapamycin (10 µM) evoked robust TRPM8 currents, which rapidly returned to baseline upon washout of rapamycin and were fully inhibited by AMTB (2 µM; Figure 1C). Half-maximal activation of whole-cell currents at + 120 mV was obtained at a rapamycin concentration of 4.5±1.8 µM (Figure 1D). Importantly, menthol and rapamycin did not evoke any detectable calcium signal or current increase in non-transfected HEK293 cells (Figure 1—figure supplement 2 and Figure 3C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig1-v1.jpg)
+
+**Figure 1.:** (A) Time course of the intracellular calcium concentration in HEK293 cells expressing TRPM8, showing robust responses to rapamycin (10 µM) and menthol (50 µM), and inhibition of the responses by AMTB (2 µM). Shown are mean ± SEM, N=63 cells. (B) Concentration dependence of rapamycin-evoked calcium responses. The dashed line represents the best fit using a Hill equation (EC50=3.1; nH = 3.8). Shown are mean ± SEM, N=52–95 cells/concentration. The red symbol indicates the lack of response to rapamycin (10 µM) in non-transfected HEK293 cells (N=23). (C) Left, time course of whole-cell currents in HEK293 cells expressing TRPM8 evoked by repetitive voltage steps to +120 and –80 mV, showing the activation of outwardly rectifying currents by rapamycin (10 µM) and inhibition by AMTB (2 µM). Right, voltage steps recorded at the indicated time points. (D) Concentration dependence of rapamycin-evoked whole-cell currents at +120 mV. The dashed line represents the best fit using a Hill equation (EC50=3.8; nH = 1.0). Shown are mean ± SEM, N=5 cells per concentration. (E) Examples of calcium signals in individual DRG neurons from Trpm8+/+ and Trpm8-/- mice in response to rapamycin (Rapa; 10 µM), menthol (Menth; 50 µM), pregnenolone sulphate (PS; 40 µM), cinnamaldehyde (CIN; 10 µM), capsaicin (Caps; 100 nM), or high K+ (50 Mm). (F) Fraction of sensory neurons from Trpm8+/+ and Trpm8-/- mice that responded to rapamycin and menthol. *p<0.05 and **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Concentration dependence of rapamycin-evoked calcium responses measured by a microplate reader at room temperature (23 °C) (A) and 37 °C (B). Shown are mean ± SEM; N=5 wells for each concentration. The lines represent the best fit using a Hill equation, yielding EC50 values of 6.0±0.3 µM and 10.1±0.2 µM, and Hill coefficients of 1.9 and 4.8, at 23°C and 37 °C respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Time course of the intracellular calcium concentration in non-transfected HEK293 cells, when stimulated with rapamycin (10 µM), menthol (50 µM), and the positive control stimulus ionomycin (2 µM). Shown are mean ± SEM, N=23 cells. (B) Whole-cell current-voltage relations obtained in non-transfected HEK293 cells, using the same approach as used for wild type and mutant TRPM8 in Figure 3D. In N=5 similar experiments, changes in current amplitude upon addition of menthol or rapamycin never exceeded 50 pA at –100 and +100 mV.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A–C) Representative whole-cell current-voltage relations in CHO cells expressing mouse TRPA1 (A), HEK293 cells expressing mouse TRPM3 (B) or HEK293 cells expressing human TRPV1 (C) upon stimulation with rapamycin (30 µM) or the respective agonists Allyl isothiocyanate (AITC), pregnenolone sulphate (PS; 40 µM) and capsaicin (Caps; 100 nM). Current responses to rapamycin where <5% of the response to the respective channel agonists in n=5 cells.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Representative examples of Fura2-based calcium signals in two sensory neurons that were stimulated three times at the indicated times with rapamycin (10 µM) or menthol (50 µM). During the second application, the TRPM8 antagonist AMTB was present at a concentration of 2 µM. (B) Average ratio between the response to menthol in the presence and absence of AMTB (second response/first response) in neurons that did or did not respond to rapamycin. ***p<0.001.
 
 Next, we tested other TRP channels involved in chemo- and thermosensation (Bamps et al., 2021) for their sensitivity to rapamycin (Figure 1—figure supplement 3). We did not observe any sizeable current responses to 30 µM rapamycin in HEK293 cells expressing TRPA1, TRPV1, or TRPM3, whereas large currents were measured in response to their respective agonists allyl isothiocyanate (AITC; 373±173 pA/pF at +120 mV; N=5), capsaicin (1733±677 pA/pF at +120 mV; N=4) and pregnenolone sulfate (PS; 270±71 pA/pF at +120 mV; N=5), respectively.
 
@@ -60,19 +80,51 @@ Notably, a subset (~7%) of both Trpm8+/+ and Trpm8-/- neurons responded to menth
 
 Taken together, these data show that rapamycin activates TRPM8 in a heterologous expression system and in sensory neurons and indicate that rapamycin is a more selective tool than menthol to identify TRPM8-positive sensory neurons.
 
-## Rapamycin is an agonist ligand directly binding to TRPM8
+#### Rapamycin is an agonist ligand directly binding to TRPM8
 
 We initially considered the possibility that the rapamycin-induced activation of TRPM8 in both HEK293 cells and sensory neurons could occur downstream of its effects on mTOR. However, the rapid onset and reversibility of rapamycin’s effect on TRPM8 currents, and the observation that low micromolar concentrations of rapamycin were required to induce detectable current activation (compared to the nanomolar concentrations of rapamycin required for mTOR inhibition; Abraham and Wiederrecht, 1996; Varnai et al., 2006) spoke against an mTOR-dependent effect. Notably, rapamycin also activated TRPM8 when applied to the cytoplasmic surface of excised inside-out patches (Figure 2A), indicating that it acts on TRPM8 in a membrane-delimited manner. Based on these observations, we examined whether rapamycin could exert an agonistic action on TRPM8 via direct binding of the compound to the channel protein.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig2-v1.jpg)
+
+**Figure 2.:** (A) Left, time course of currents in a cell-free inside-out patch pulled from a HEK293 cell expressing TRPM8 evoked by repetitive voltage steps to +80 and –80 mV, showing the activation of outwardly rectifying currents by rapamycin (10 µM) and menthol (50 µM) applied from the cytosolic side. Right, voltage steps recorded at the indicated time points. This example is representative of five similar experiments. (B) Cartoon representing the steps to obtain the direct interaction of rapamycin with TRPM8. Individual STD spectra were recorded on different sample compositions, then non-specific interactions were filtered out with multiple subtractions resulting in the double difference spectra (STDD-1,2) and the final triple difference spectrum (STTD) shown on the right side. (C) The four STD spectra (STD-1,2,3,4) are overlayed for comparison. Double difference spectra were computed from the respective STD pairs showing the specific and non-specific binding of rapamycin (STDD-1, green) and the non-specific binding of rapamycin alone (STDD-2, purple). All non-specific interactions were filtered out in the final STTD spectrum (red) computed by subtracting STDD-2 from STDD-1. Here, only one experimental set is shown (dataset B), spectra on the replicates can be found in the supplementary (Figure 2—figure supplements 1 and 2). (D) Rapamycin resonances involved in the direct interaction with TRPM8 were assigned by the comparison of the reference 1H NMR spectra of rapamycin (black) with the computed STDD effects (red). The reference spectrum was recorded on a 0.2 mM rapamycin sample in a D2O buffer solution at 25 °C. The number of scans was 256 and a watergate sequence was used to suppress the residual water signal. (E) Hydrogen atoms involved in the interaction with TRPM8 are mapped to the structure of rapamycin (yellow circles).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Reference 1H experiments are shown on three individual sets of samples from which later three parallel STTD spectra were computed by the linear combinations of STD experiments. Conditions and sample numbering are shown in the right corner of the plots. The size of the spectra varied significantly despite the strict production protocol due to the complexity of the samples. Therefore, the scaling of the follow-up STD experiments was performed prior to the linear combinations based on the peak integral sums from the 0–4 ppm region of 1H experiments. The corresponding STD spectra were scaled to an external spectrum recorded on a cell sample with an overexpressed ion channel and rapamycin. The following factors were used for multiplication: Dataset A: (1): 0.29, (2): 0.24, (3): 0.48, (4): 0.40. Dataset B: (5): 0.70, (6): 0.82, (7): 1.05, (8): 4.92. Dataset C: (9): 0.34, (10): 0.28, (11): 0.60, (12): 0.46.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) An STTD spectrum obtained by the linear combinations of scaled STD spectra [(4-3) - (2-1)]. A direct interaction between rapamycin and the ion channel is confirmed, and interaction sites of rapamycin were revealed upon peak assignments (presented in Figure 2). (B) An STTD spectrum obtained by the linear combinations of scaled STD spectra [(8-7) - (6-5)]. A direct interaction between rapamycin and the ion channel is confirmed, and the same interaction sites of rapamycin were revealed upon peak assignments. (C) An STTD spectrum obtained by the linear combinations of scaled STD spectra [(12-11) - (10-9)]. Here, there is no reliable STD effect confirming the direct interaction between TRPM8 and rapamycin. Increased cell sedimentation was observed in sample 12 after measurements, an uncontrolled process that might have reduced the detected STD effects. Consequently, the extent of non-specific binding outweighed specific binding, resulting in zero or ‘negative’ effects in the STTD spectrum.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Representative examples of whole-cell currents in HEK293 cells expressing TRPM8, in response to a 200 ms voltage step from –80 to +120 mV and back to –80 mV, in control conditions and in the presence of the indicated concentrations of rapamycin or menthol. (B) Zoomed-in time course of current relaxation at +120 mV. Dashed lines indicate monoexponential fits. (C) Zoomed-in time course of current relaxation at –80 mV. Dashed lines indicate monoexponential fits. (D) Monoexponential time constants for current activation at +120 mV in control conditions and in the presence of the indicated concentrations of menthol or rapamycin. (E) Monoexponential time constants for current deactivation at –80 mV in control conditions and in the presence of the indicated concentrations of menthol or rapamycin. **, ***: p<0.01, p<0.001 versus control. ##, ###: p<0.01, p<0.001 versus menthol. Mean ± SD, dots represent individual cases.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Representative examples of whole-cell currents in HEK293 cells expressing TRPM8, in response to a 200 ms voltage step from –120 to +120 mV and back to –120 mV, in control conditions, in the presence of rapamycin (10 μM) and in the combined presence of rapamycin (10 μM) and menthol (50 μM). (B) Mean current deactivation, calculated as the fraction of the peak current upon the final step to –120 mV that deactivated after 100ms. Data from N=6 cells.
 
 To test a direct molecular interaction between rapamycin and TRPM8, and to obtain insights into the parts of the rapamycin molecule involved in the interaction, we developed the Saturation Transfer Triple-Difference NMR (STTD-NMR) method. (Figure 2B–E). This new approach allowed us to obtain a clean 1H-STTD NMR spectrum, eliminating interference from any non-specific interactions present in complex cellular systems. The basic principle of the classical, one-dimensional saturation transfer difference 1H NMR (1D STD-NMR) is that resonances are saturated by selective irradiation, and this saturation spreads over the whole protein molecule and its bound ligands via spin diffusion (Meyer and Peters, 2003). The signal attenuation of ligand 1H resonances upon binding is evident in the saturation transfer difference (STD) spectrum, which is obtained by subtraction of two spectra, one recorded with and the other without the saturation of protein resonances. We calculated the difference of STD spectra (double-difference STD, STDD; Claasen et al., 2005), one recorded on a cellular sample with rapamycin added (sample 1, STD-1 in Figure 2B and C) and the other without rapamycin (sample 2, STD-2 in Figure 2B and C). The resulting double-difference spectrum (STDD-1 in Figure 2C) reports both TRPM8-specific and non-specific binding interactions of rapamycin. To remove the STD signals arising from non-specific interactions of rapamycin, we recorded two more STD spectra on cells lacking TRPM8 expression (naïve HEK293 cells), namely in the presence (sample 3, STD-3) and absence (sample 4, STD-4) of rapamycin, yielding the second double-difference (STDD-2) spectrum (Figure 2C). Finally, the difference of STDD-1 and STDD-2 spectra yielded the triple-difference spectrum (STTD), which is free of interfering signals arising from any non-specific interactions (Figure 2C). To address the effect of the inherent variability of cellular samples on peak heights, STD effects were normalized based on the comparison of independent 1H experiments (Figure 2—figure supplement 1). Three STTD replicates were computed, unambiguously confirming direct binding to TRPM8 in two datasets (Figure 2—figure supplement 2A and B). The signals assigned in the STTD spectra (numbered according to the schematic structure of rapamycin; Figure 2D) unveil the rapamycin H atoms that correspond to the binding epitopes of the molecule to TRPM8 (Figure 2E). Taken together, these findings indicate that rapamycin binds to TRPM8, acting as a direct channel agonist independently of mTOR.
 
 In earlier work, we have classified TRPM8 agonists into two types based on their effect on the channel’s gating kinetics (Janssens et al., 2016). According to this classification, Type I agonists such as menthol induce a slowing of the gating kinetics, which is most prominently observed as slowly deactivating tail currents following repolarization, whereas Type II agonists such as AITC cause an acceleration of the kinetics of channel activation upon depolarization, with little or no effect on the kinetics of deactivating tail currents. These differences in kinetics can be explained by a gating model where type I agonists cause a relative stabilization of the open state, whereas type II agonists rather destabilize the closed state (Janssens et al., 2016). Whole-cell current recordings in HEK-M8 cells revealed a pronounced effect of rapamycin on the kinetics of current relaxation in response to voltage steps (see e.g. Figure 1C; Figure 2—figure supplement 3). In particular, rapamycin caused a concentration-dependent slowing of the time course of voltage-dependent activation and deactivation, resulting in long-lasting tail currents upon repolarization from a strongly depolarizing voltage step to +120 mV, and these effects were more pronounced than for menthol (Figure 2—figure supplement 3). Overall, these characteristics classify rapamycin as a type I agonist, stabilizing the channel’s open conformations. Notably, rapamycin and menthol had a synergistic effect on channel gating: application of menthol (50 μM) in the continued presence of rapamycin (10 μM) caused a further slowing down of channel deactivation (Figure 2—figure supplement 4).
 
-## Rapamycin binds to a unique binding site on TRPM8
+#### Rapamycin binds to a unique binding site on TRPM8
 
 Site-directed mutagenesis studies and high-resolution cryo-EM structures have delineated binding sites for several TRPM8 ligands, including agonists such as icilin, AITC, cryosim-3 and the menthol analog WS-12, as well as antagonists such as AMTB or TC-I 2014 (Bandell et al., 2006; Diver et al., 2019; Voets et al., 2007; Yin et al., 2019; Yin et al., 2018; Yin et al., 2022). These compounds all bind in the cavity between the four alpha-helices of the voltage sensor-like domain (S1-S4), with the exception of the type II agonist AITC, which binds outside the voltage sensor-like domain at a site between S3 and the S4-S5 linker (Yin et al., 2022).
 
 Since rapamycin, like menthol, acts as a type I agonist, and both compounds contain a substituted cyclohexyl moiety, we initially examined the possibility that rapamycin would interact with the menthol-binding site. However, considering the much larger size of rapamycin (molecular weight of 914.2 g/mol) compared to agonists such as menthol, WS-12, or cryosim-3 (molecular weights of 154.3, 260.4, and 289.4 g/mol, respectively), binding of rapamycin in the relatively narrow cavity in the voltage sensor-like domain appeared unlikely. In agreement with this notion, initial experiments revealed that mutations in the menthol binding site that strongly reduce responses to menthol, icilin, Cooling Agent 10, WS-3, or cryosim-3 (Y745H and R842H; Bandell et al., 2006; Voets et al., 2007; Malkia et al., 2009; Beccari et al., 2017; Plaza-Cayón et al., 2022; Yin et al., 2022; Palchevskyi et al., 2023) did not affect the channel’s sensitivity to rapamycin (see Figure 3). Therefore, we hypothesized that rapamycin interacts at a different ligand binding site on TRPM8.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative time courses of the intracellular calcium concentration in HEK293 cells expressing wild type TRPM8 or the indicated mutants, when stimulated with rapamycin (10 µM), menthol (50 µM), and the calcium ionophore ionomycin (2 µM). (B) Quantification of the relative calcium response to rapamycin and menthol for wild type and the indicated TRPM8 mutants. Values indicate the ratio between the calcium response amplitude to rapamycin, divided by the sum of the responses to rapamycin and menthol. The dotted line represents the mean value for wild type TRPM8. Values above this line (in yellow) indicate a relative reduction in the response to menthol, whereas values below the line (cyan) indicate a relative reduction in the response to rapamycin. (C) Amplitude of the calcium response to the agonist (menthol or rapamycin) that gave the largest response for wild type and the indicated TRPM8 mutants. Data in B and C represent mean ± SEM, N=34–156/group. (D) Whole-cell current-voltage relations for the currents in control, and in the presence of rapamycin (10 µM) or menthol (50 µM) in HEK293 cells expressing wild type TRPM8 or the indicated mutants. (E) *, **, *** indicate p<0.05, p<0.01, and p<0.001 compared to WT. (F) Quantification of the relative current response to rapamycin and menthol for wild type and the indicated TRPM8 mutants. Values indicate the ratio between the current amplitude increase at +80 mV to rapamycin, divided by the sum of the responses to rapamycin and menthol. The dotted line represents the mean value for wild type TRPM8. Values above this line (in yellow) indicate a relative reduction in the response to menthol, whereas values below the line (cyan) indicate a relative reduction in the response to rapamycin. Data in represent mean ± SEM; N=5–8 per mutant.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) site 1, (C, D) site 2, (E, F) site 3. Rapamycin was docked onto the structure of full-length TRPM8 from the collared flycatcher (Ficedula albicollis; pdb code: 6NR2). For clarity, the amino acid numbering refers to the corresponding residues in the human TRPM8 ortholog.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Time course of the intracellular calcium concentration in HEK293 cells expressing TRPM8F847A, showing moderate responses to rapamycin (10 µM) but no response to menthol (50 µM). Ionomycin was used as positive control. Shown are mean ± SEM, N=114 cells. (B) Statistical analysis on the amplitude of Ca2+ transients evoked by menthol (50 µM), rapamycin (10 µM), and ionomycin. Shown are mean ± SEM; N=114 cells.
 
 To identify potential rapamycin interaction sites, we performed blind, multistep dockings of rapamycin to a model of the human TRPM8 channel based on a cryo-EM structure of mouse TRPM8. Initial pilot dockings revealed several potential rapamycin interaction sites, either at the bottom of the voltage sensor-like domain or in the groove between the voltage sensor-like domain and the pore region (Figure 3—figure supplement 1). Based on these initial results, we made a series of point mutations at strategic residues in these potential rapamycin interaction sites and used Fura-2-based [Ca2+]i measurements to test these mutants for their responses to menthol (50 µM) and rapamycin (10 µM; Figure 3A–C). All mutant channels yielded robust calcium responses to at least one of the two agonists, indicating that they expressed as functional channels (Figure 3C). Wild type and most mutants showed maximal responses (Δ[Ca2+]i) to at least one of the agonists of >1 µM. One exception was mutant F847A, which did not respond to menthol but showed a consistent but relatively small (Δ[Ca2+]i≈ 200 nM) to rapamycin (Figure 3C, Figure 3—figure supplement 2).
 
@@ -82,15 +134,33 @@ Several mutants yielded a significantly higher response ratio compared to wild t
 
 Oppositely, we identified four mutants with a significantly lower rapamycin response ratio compared to wild type (response ratios <0.3), indicating reduced rapamycin sensitivity. These include D796A (located in the S2-S3 linker), D802A and G805A (located in S3), and Q861A (located in the S5 pore helix; Figure 3A and B). The strongly reduced sensitivity of these mutants to rapamycin was confirmed in whole-cell patch-clamp recordings, revealing robust current responses to menthol but very limited responses to rapamycin (Figure 3D and E). These results further confirm that rapamycin binds directly to the TRPM8 channel and are in agreement with a model where rapamycin binds in the groove between the voltage sensor-like domain and the pore region. These results and the publication of the cryo-EM structure of the mouse TRPM8 during our experiments prompted the further refinement of dockings, resulting in the rapamycin binding site illustrated in Figure 4, Figure 4—figure supplement 1 (the pdb-file of the model is available via https://doi.org/10.5281/zenodo.17143202). In this model, rapamycin interacts with residues from a single subunit. Note that this proposed mode of interaction also largely aligns with the results from the 1H-STTD NMR study, with several of the H atoms that show saturation transfer being effectively in close contact with the channel protein (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig4-v1.jpg)
+
+**Figure 4.:** (A) Side view (left) and top view (right) of TRPM8, showing the known interaction site for menthol (green) and the proposed rapamycin interaction site (red) based on our present molecular docking and mutagenesis studies. (B) Closer view of rapamycin docked onto the TRPM8 structure. Amino acid residues that, when mutated, influence rapamycin responses are indicated in green. (C) 2D projection of interactions between rapamycin and TRPM8 created using Ligplot+.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) 2D projection of interactions between rapamycin and TRPM8 created using Ligplot+. The yellow circles mark the carbon atoms of the rapamycin which the interacting hydrogen atoms identified by STTD NMR belong to. (B) Structure of rapamycin indicating hydrogen atoms involved in the interaction with TRPM8. The interacting hydrogen atoms proposed by the STTD NMR experiments are marked by the yellow circles.
+
 Mutants D802A and G805A mutations were originally identified due to their ability to reduce icilin-induced activation of TRPM8 (Chuang et al., 2004). Interestingly, structural studies indicated that these residues are not directly involved in binding icilin. Instead, D802 is involved in calcium binding, which strongly potentiates activation of TRPM8 by icilin, while the flexibility invoked by a glycine at position 805 allows enlargement of the VSLD cavity to accommodate the hydroxyphenyl moiety of icilin (Yin et al., 2019). We therefore tested whether rapamycin activation is also modulated by intracellular calcium, by using UV flash-induced release of caged Ca2+ during whole-cell current recordings (Mahieu et al., 2010). In these experiments, a 1 ms UV flash was applied during a 800 ms voltage step to +80 mV, either in the absence of ligand or in the presence of rapamycin (10 µM) or icilin (10 µM). The UV flash caused a rapid increase in intracellular Ca2+, as indicated by the change in Fura-FF fluorescence ratio (Figure 5A). In line with our earlier work (Mahieu et al., 2010), at low cytosolic calcium, icilin evokes a sizable current response, which is robustly potentiated of inward and outward currents in the presence of icilin (Figure 5A–D). In contrast, currents recorded in the absence of ligand or in the presence of rapamycin were not directly affected by flash-induced calcium uncaging (Figure 5A–D). These results demonstrate that rapamycin activation of TRPM8 is not calcium-dependent and indicate that the reduced rapamycin sensitivity of the D802A mutant is unrelated to this residue’s involvement in Ca2+ binding.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig5-v1.jpg)
 
-**Figure 5.:** (A) Whole-cell currents during 800 ms voltage steps from –80 to +80 mV under control conditions and in the presence of rapamycin (10 µM) or icilin (10 µM). At the time points indicated by the arrows, a 1 ms UV flash was applied, leading to a rapid increase in intracellular calcium. Magenta lines and scale bar indicate Fura-FF fluorescence ratios at the indicated time points. (B) Whole-cell current-voltage relations measured during voltage ramps 2 s before and 1 s after the UV flashes shown in panel A. (C) Current amplitudes at +80 and –80 mV before and after UV uncaging of calcium, under control conditions and in the presence of rapamycin or icilin. (D) Quantification of the relative potentiation of inward and outward currents following UV uncaging of calcium. Data in C and D represent the mean ± SEM from five experiments. *,**, ***: p<0.05 in a paired t-test comparing currents before and after UV flash.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Whole-cell currents during 800 ms voltage steps from –80 to +80 mV under control conditions and in the presence of rapamycin (10 µM) or icilin (10 µM). At the time points indicated by the arrows, a 1 ms UV flash was applied, leading to a rapid increase in intracellular calcium. Magenta lines and scale bar indicate Fura-FF fluorescence ratios at the indicated time points. (B) Whole-cell current-voltage relations measured during voltage ramps 2 s before and 1 s after the UV flashes shown in panel A. (C) Current amplitudes at +80 and –80 mV before and after UV uncaging of calcium, under control conditions and in the presence of rapamycin or icilin. (D) Quantification of the relative potentiation of inward and outward currents following UV uncaging of calcium. Data in C and D represent the mean ± SEM from five experiments. *,**, ***: p<0.05 in a paired t-test comparing currents before and after UV flash.
 
-## Effect of rapamycin analogs on TRPM8
+#### Effect of rapamycin analogs on TRPM8
 
 According to the proposed binding mode (Figure 4), the substituted cyclohexane ring (trans-2-methoxycyclohexan-1-ol) of rapamycin is tightly involved in the interaction with TRPM8. In particular, the model predicts a hydrogen bond formed between Q861 and the hydroxyl group on the cyclohexane ring (i.e. on carbon 40 in the rapamycin structure). A number of rapamycin analogs, also known as rapalogs Lamming et al., 2013, have been developed as immunosuppressants, in which the hydroxyl group on the cyclohexane ring has been substituted by other functional groups. When tested using Fura-2-based calcium imaging, we found that everolimus, zotarolimus, ridaforolimus, and temsirolimus were much less effective than rapamycin in activating TRPM8, with amplitudes that were <10% of that to rapamycin at a concentration of 10 µM (Figure 6A and B). The efficacy order was rapamycin >>zotarolimus > ridaforolimus >everolimus > temsirolimus. These results reveal the importance of the substituted cyclohexane ring, and in particular the hydroxyl group on carbon 40, for the activation of TRPM8 by rapamycin.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig6-v1.jpg)
+
+**Figure 6.:** (A) Overview of the macrolides tested in this study. (B) Relative calcium response to rapamycin and the indicated analogs tested at 10 µM. N≥6 in each group. (C) Fura2-based calcium response to rapamycin (10 µM) in the presence of everolimus (10 µM) or vehicle. N=6 in each group. (D) Fura2-based calcium response to menthol (50 µM) in the presence of everolimus (10 µM) or vehicle. N=6 in each group. (E) Summary of the responses to menthol (50 µM) and rapamycin (10 µM) in the absence or presence of everolimus (10 µM). Responses were normalized to the response to a saturating concentration of menthol (300 µM). N=6 in each group. ***: p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) In silico molecular docking indicates that everolimus binds to TRPM8 in a similar pose as rapamycin, albeit with lower binding energy (–8.5 kcal/mol for everolimus versus –11.6 kcal/mol for rapamycin). (C, D) A zoom-in on the binding site shows the hydrogen bond between the hydroxyl group on the cyclohexane ring in rapamycin (C) and the side-chain amide of residue Gln861, whereas no such hydrogen bond can be formed between the longer hydroxyethyl moiety on everolimus (D).
 
 The calcineurin inhibitors FK506 (tacrolimus) and its structural analog ascomycin contain the same substituted cyclohexane ring (trans-2-methoxycyclohexan-1-ol) as rapamycin, but have a different, smaller macrolactam ring than rapamycin and the rapalogs (Figure 6A). Confirming earlier research (Arcas et al., 2019), we found that FK506 evoked robust calcium responses in HEK-M8 cells, albeit less potently than rapamycin (Figure 6B). We also measured substantial responses to ascomycin, which were intermediate between the responses to FK506 and to the most effective rapalog zotarolimus (Figure 6B). Pimecrolimus, a derivative of ascomycin in which a chloride substitutes for the corresponding hydroxyl group on the cyclohexane ring, did not evoke any detectable calcium response (Figure 6A and B). Taken together, these findings demonstrate that rapamycin is the most effective of the tested macrolides and illustrate the importance of the hydroxyl group at position 40 on the cyclohexane ring of rapamycin for activating TRPM8.
 
@@ -114,13 +184,261 @@ In conclusion, our study reveals a hitherto undiscovered pharmacological propert
 
 ## Methods
 
-## Cell culture and isolation of sensory neurons
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TRPM8</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/79054</td>
+      <td>79054</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>C57BL/6</td>
+      <td>Janvier Labs</td>
+      <td>RRID:MGI:2159769</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Trpm8-/, -C57BL/6</td>
+      <td>Dhaka et al., 2007</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>TRPM8</td>
+      <td>https://www.ncbi.nlm.nih.gov/nuccore/NM_024080.5/</td>
+      <td>NM024080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC, Janssens et al., 2016</td>
+      <td>ATCC: CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK-M8 (HEK293T stably overexpressing hTRPM8)</td>
+      <td>Janssens et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGSM2-IRES-GFP vector</td>
+      <td>Addgene</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TransIT-293 transfection reagent</td>
+      <td>Mirus</td>
+      <td>Cat#: MIR 2700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GDNF</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: 450–44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>NT4</td>
+      <td>PeproTech</td>
+      <td>Cat#: 450–04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>trans-1,2-cyclohexanediol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 1460577</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin (Sirolimus)</td>
+      <td>LC Laboratories</td>
+      <td>CAS: 53123889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FK506 (Tacrolimus)</td>
+      <td>LC Laboratories</td>
+      <td>CAS: 104987113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ascomycin</td>
+      <td>LC Laboratories</td>
+      <td>CAS: 104987124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Everolimus</td>
+      <td>LC Laboratories</td>
+      <td>CAS: 159351696</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Temsirolimus</td>
+      <td>LC Laboratories</td>
+      <td>CAS: 162635043</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ridaforolimus</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 572924540</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zotarolimus</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 221877549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pimecrolimus</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 137071320</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Icilin</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 36945989</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Menthol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAS: 2216515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA Elektronik</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Autodock 4.2</td>
+      <td>https://autodock.scripps.edu/</td>
+      <td>RRID:SCR_012746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gromacs 5.1.4</td>
+      <td>https://manual.gromacs.org/documentation/5.1.4/index.html</td>
+      <td>RRID:SCR_014565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Yasara</td>
+      <td>https://www.yasara.org</td>
+      <td>RRID:SCR_017591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL Molecular Graphics System, Version 2.5.2</td>
+      <td>https://www.pymol.org</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LigPlot</td>
+      <td>EMBL’s European Bioinformatics Institute</td>
+      <td>RRID:SCR_018249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Topspin, Version 4.0.5</td>
+      <td>Bruker Corporation</td>
+      <td>RRID:SCR_014227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin software (9.0 or 2023)</td>
+      <td>OriginLab</td>
+      <td>RRID:SCR_002815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glass-bottom microwell dish</td>
+      <td>Fluorodish, World Precision Instruments</td>
+      <td>Cat#: FD35-100</td>
+      <td>Specific dish to measure fluorescence in cell cultures</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura-2-AM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: F14185</td>
+      <td>Ratiometric fluorescent Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fura-2FF</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-218544</td>
+      <td>Ratiometric fluorescent Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>96-well black wall/clear-bottom plates</td>
+      <td>Greiner Bio-One</td>
+      <td>Cat#: 655090</td>
+      <td>Specific plastic ware to measure fluorescence in cell cultures</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and isolation of sensory neurons
 
 Naive HEK293T cells and HEK293T cells stably overexpressing the human TRPM8 (HEK-M8 cells) were cultured at 37 °C in DMEM medium supplemented with 10% fetal bovine serum, 50 U/ml penicillin, 50 μg/ml streptomycin, 10 mM Glutamax, Non-Essential-Amino-Acids (all from Invitrogen/Thermo Fisher). G418 (500 μg/ml) was added to the medium of HEK-M8 cells. HEK293T cells were obtained from ATCC (CRL-3216) and used only up to passage number 25 without further verifying their identity. The cells were tested monthly for the lack of mycoplasma.
 
 Experiments using mice were approved by the KU Leuven Ethical Committee Laboratory Animals under project number P006/2014. All experimental procedures and animal husbandry were conducted following the European Parliament and the Council Directive (2010/63/EU) and national legislation. Sensory neurons from the dorsal root and trigeminal ganglia (DRGs and TGs) were isolated from 8- to 16-week-old wild type (Trpm8+/+) and TRPM8-deficient (Trpm8-/-) C57BL/6 mice, as described before (Vandewauw et al., 2018). Briefly, mice were euthanized by CO2, DRGs or TGs were isolated and digested with 1 mg/ml collagenase and 2.5 mg/ml dispase dissolved in ‘basal medium’ (Neurobasal A medium supplemented with 10% FCS) (all from Gibco/Thermo Fisher) at 37 °C for ca. 45–60 min. Digested ganglia were gently washed once in ‘basal medium’ and twice in ‘complete medium’ (Neurobasal A medium supplemented with 2% B27 [Invitrogen/Thermo Fisher], 2 ng/ml GDNF [Invitrogen/Thermo Fisher] and 10 ng/ml NT4 [PeproTech, London, UK]) and mechanically dissociated by mixing with syringes fitted with increasing needle gauges. The suspension of sensory neurons was seeded on poly-L-ornithine/laminin-coated glass bottom chambers (Fluorodish, World Precision Instruments, Sarasota, FL USA) and maintained at 37 °C for 24–36 hr before experiments.
 
-## Microfluorimetric intracellular Ca2+ imaging
+### Microfluorimetric intracellular Ca2+ imaging
 
 Fluorescent measurement of the cytoplasmic Ca2+ concentration in HEK cells and in individual sensory neurons was performed using the fluorescent Ca2+-sensitive dye Fura-2 AM in various configurations, as reported earlier (Kelemen et al., 2021; Vandewauw et al., 2018).
 
@@ -128,25 +446,25 @@ To measure cytoplasmic Ca2+ concentration in individual neurons or HEK-M8 cells,
 
 To generate dose response curves and investigate rapalogs and other macrolides, we used a fluorescent microplate reader and monitored a population of HEK-M8 cells in each well. HEK-M8 cells were seeded in Poly-L-Lysine HBr coated 96-well black wall/clear-bottom plates (Greiner Bio-One, Frickenhausen, Germany) at a density of 100,000 cells per well in normal cell culture medium and incubated overnight. The next day, cells were loaded with 2 μM Fura-2-AM at 37 °C for 30 min and washed three times with Ca2+-buffer. Then, changes in cytoplasmic Ca2+ concentration (indicated by the ratio of fluorescence measured at λEX1: 340  nm, λEX2: 380 nm, λEM: 510  nm (F340/F380)) were measured using either a FlexStation 3 fluorescent microplate reader (Molecular Devices, Sunnyvale, CA, USA) or an FDSS/μCell analysis system (Hamamatsu Kinetic Plate Imager C13299). In some experiments, fluorescence signals were normalized to baseline values (F₀), and results were expressed as ΔF/F₀ to reflect the relative calcium dynamics. During the measurements, the tested compounds were applied in various concentrations using the built-in pipetting robot of the equipment. In each well, only one given concentration of the agents tested was applied. These measurements were carried out at ambient temperature or at 37 °C.
 
-## Patch clamp electrophysiology
+### Patch clamp electrophysiology
 
 HEK-M8 cells were seeded on poly-L-lysine-coated glass coverslips and transmembrane currents were recorded in the whole-cell or inside-out configurations of the patch-clamp technique using a HEKA EPC-10 amplifier and Patchmaster software (HEKA Elektronik, Lambrecht/Pfalz, Germany). Data were sampled at 5–20 kHz and digitally filtered off-line at 1–5 kHz. Pipettes with final resistances of 2–5 MΩ were fabricated and used to establish a giga-seal access to the membrane. Unless mentioned otherwise, the holding potential was 0 mV and the following voltage step protocol was applied at 0.5 Hz: –80 mV for 200ms,+120 mV for 200ms, and –80 mV for 200ms. In the whole-cell mode, between 70 and 90% of the series resistance was compensated. Whole-cell recordings were performed using an intracellular solution in the patch pipette containing (in mM) 150 NaCl, 5 MgCl2, 5 EGTA and 10 HEPES, pH 7.4 with NaOH. The extracellular solution contained (in mM) 150 NaCl, 1 MgCl2, and 10 HEPES, pH 7.4 with NaOH. In inside-out recordings, the extracellular solution was used as pipette solution, and ligands were applied via the intracellular bath solution.
 
 In patch-clamp experiments where intracellular Ca2+ was manipulated through flash photolysis of caged Ca2+, the pipette solution contained (in mM): 120 NaCl, 2 Fura-2FF and 20 HEPES, pH 7.4 with NaOH. This solution was further supplemented with 2 mM of the photolysable calcium chelator DM-nitrophen and 1.5 mM CaCl2. Intracellular Ca2+ was monitored using a mono-chromator based system consisting of a Polychrome IV monochromator and photodiode detector (TILLPhotonics, Gräfelfing, Germany), controlled by Patchmaster software. Fluorescence was measured during excitation at alternating wavelengths (350 and 380 nm), corrected by subtraction of the background fluorescence before establishing the whole-cell configuration, and represented as F350/F380. Rapid photolytic release of Ca2+ was achieved by subjecting the cell to brief (∼1ms) UV flashes applied from a JML-C2 flash lamp system (Rapp OptoElectronic GmbH, Hamburg, Germany), leading to step-wise, spatially uniform increases in intracellular Ca2+ (Mahieu et al., 2010).
 
-## Saturation transfer triple-difference (STTD) NMR spectroscopy
+### Saturation transfer triple-difference (STTD) NMR spectroscopy
 
 1H STD NMR experiments were performed on a Bruker Avance Neo 700 MHz spectrometer equipped with a 5 mm z-gradient Prodigy TCI cryoprobe. The temperature was maintained at 298 K. The 1H reference experiments were run with 256 number of scans, a 1.2 s relaxation delay, and a watergate sequence was utilized for water suppression. These spectra were used to assess sample stability and to scale STD effects (Figure 2—figure supplement 1). A train of 50 ms Eburp1 (with B1 field strength of 75 Hz) was employed for selective irradiation of protein 1H resonances in a total of 3 s. The saturation of aliphatic and aromatic proton regions of TRPM8 was carried out in separate experiments by setting the irradiation (on-resonance) frequencies of –1.8 ppm and 8.8 ppm, respectively, at least 2 ppm away from the resonances of rapamycin to avoid any partial saturation of rapamycin 1H resonances. Reference spectra were recorded by setting the irradiation frequency off-resonance at –40 ppm. A spin-lock filter of 20ms was applied to reduce the broad signals of the receptor and cell components in the resulting STD spectra. For each STD spectrum (the two on-resonance and one off-resonance), 640 number of scans was acquired in an interleaved fashion to average out any sample and/or spectrometer instability during the measurement, resulting in a total experiment time of 3 hr. All spectra were processed with Topspin version 4.0.5.
 
 NMR samples: 25x106 HEK293T or HEK-M8 cells/sample were used. Cells were counted by a NovoCyte flow cytometer (Agilent Technologies), and the number of the functional TRPM8 channels was estimated as ca. 5000 channels/cell based on average whole cell currents and single channels conductance available in the literature. 5 μl of rapamycin was added from a 22 mM stock solution resulting in a final concentration of 0.2 mM in D2O PBS solution, providing ca. 4.8x107 fold excess of ligand to TRPM8 ion-channels for the STD NMR measurements. The final volume of each sample was 550 μl. NMR data was recorded in three replicates, and a total of 12 individual samples were used to compute three independent STTD spectra (Figure 2—figure supplement 2).
 
-## Synthesis of trans-2-Methoxycyclohexan-1-ol
+### Synthesis of trans-2-Methoxycyclohexan-1-ol
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/97341/elife-97341-scheme1-v1.jpg)
 
 Trans-2-Methoxycyclohexan-1-ol was synthesized based on the method of Winstein and Henderson, 1943. To the solution of trans-1,2-cyclohexanediol (500 mg, 4.304 mmol) in dry DMF (19 mL) NaH (413 mg, 10.329 mmol, 60 m/m%, 1.2 equiv./OH) was added at 0 °C. After 30 min stirring at that temperature, 308 μl MeI (4.949 mmol, 1.15 equiv.) was added to the mixture and stirred for 24 hr. When the TLC analysis (9:1 CH2Cl2/MeOH) showed complete consumption of the starting material, the reaction mixture was quenched by the addition of MeOH (2.5 mL). The solution was concentrated under reduced pressure, and the residue was dissolved in CH2Cl2 (150 mL), washed with H2O, dried on MgSO,4 and concentrated. The crude product was purified by column chromatography on silica gel (9:1 CH2Cl2/MeOH) to give trans-2-methoxycyclohexan-1-ol (80 mg, 14%) as a colorless syrup. [α]d −6.54 (c 0.26, CHCl3); Rf 0.47 (95:5 CH2Cl2/MeOH); 1H NMR (400 MHz, CDCl3) δ=3.44–3.38 (m, 4 H, OCH3, H-1), 3.10 (s, 1 H, H-1-OH), 2.94 (ddd, J=10.6 Hz, J=8.7 Hz, J=4.4 Hz, 1 H, H-2), 2.14–1.03 (m, 8 H, 4 x CH2), ppm; 13C NMR (100 MHz, CDCl3) δ=85.0 (1C, C-2), 73.6 (1C, C-1), 56.3 (1C, OCH3), 32.2, 28.4, 24.1, 24.0 (4C, 4 x CH2) ppm; MS (UHR ESI-QTOF): m/z calcd for C7H14NaO2, [M+Na]+ 153.0886; found: 153.0885.
 
-## Molecular docking
+### Molecular docking
 
 Initial docking simulations were performed using the cryo-EM structure of the full-length collared flycatcher (Ficedula albicollis) TRPM8 (pdb code: 6NR2, 83% sequence identity to human TRPM8) (Yin et al., 2019) high-resolution structures of rapamycin (pdb codes: 5FLC, 5GPG) retrieved from the RCSB Protein Data Bank.
 
@@ -158,18 +476,22 @@ The three most populated and plausible binding poses were further refined by a t
 
 The initial dockings were further refined upon the publication of Cryo-EM structures of the mouse TRPM8 variant (Yin et al., 2022). The hTRPM8 protein sequence Q7Z2W7 was downloaded from the Universal Protein Resource (UniProt) and template Cryo-EM structures of mTRPM8 cold receptor in apo state C1 (PDB ID: 8E4N) and apo state C0 (PDB ID: 8E4P) were downloaded from the Protein Data Bank. The homology modeling was performed with the standard homology modeling protocol implemented in Yasara (https://www.yasara.org). Homology model based on these cryo-EM structures was performed using Swiss model as well with GMQE = 0.71 and sequence identity = 93.74%. All the structures were repaired using the FoldX plugin in YASARA, where RepairPDB identifies those residues which have bad torsion angles, or VanderWaals' clashes, or total energy, and repairs them. Visualization of the molecules was also done with Yasara. Figures were drawn with the open source Pymol (The PyMOL Molecular Graphics System, Version 2.5.2 Schrödinger, LLC; available at https://www.pymol.org). The global docking procedure was accomplished with Autodock VINA algorithms, implemented in Yasara, in which a total of 900 docking runs were set and clustered around the putative binding sites. The grid volumes and parameters were similar to those used for the third pass of docking, described above. The Yasara pH command was set to 7.0, to ensure that molecules preserved their pH dependency of bond orders and protonation patterns. The best binding energy complex in each cluster was stored, analyzed, and used to select the best orientation of the interacting partners. Using a similar docking strategy, we reproduced binding of menthol into the reported menthol binding site based on the cryo-EM structure of TRPM8 in complex with the menthol-analog WS-12 (Yin et al., 2019).
 
-## Generation of hTRPM8 mutants
+### Generation of hTRPM8 mutants
 
 Based on the results of the in silico studies, mutations were introduced at strategic sites within the putative ligand-binding domains. Single amino acids in the full-length human TRPM8 sequence were mutated using the standard PCR overlap extension technique (Voets et al., 2007), and the nucleotide sequences of all mutants were verified by DNA sequencing. Constructs were cloned in the bicistronic pCAGGSM2-IRES-GFP vector, transiently expressed in HEK293 cells using TransIT-293 transfection reagent (Mirus, Madison, WI), and characterized using whole-cell patch-clamp electrophysiology and single cell calcium microfluorimetry as described above.
 
-## Chemicals
+### Chemicals
 
 Rapamycin, FK506, ascomycin, everolimus, and temsirolimus were purchased from LC Laboratories (Woburn, MA USA). Unless indicated otherwise, all other chemicals were obtained from Sigma-Aldrich.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Data analysis and statistical tests were performed using Origin software (9.0 or 2023; OriginLab). Data are represented as mean  ± SEM from n cells. One-way ANOVA with a Tukey post-hoc test was used to compare the effect of multiple mutations on TRPM8 ligand responses. Differences in the response profile of somatosensory neurons between genotypes were analyzed using Fisher’s exact test. p<0.05 was considered as statistically significant.
 
-Concentration-response curves were fitted using the Hill equation of the form:Response=Responsemax1+(EC50[C])nH\begin{document}$$\displaystyle Response=\frac{Response_{max}}{1+\left (\frac{EC_{50}}{\left [C\right ]}\right)^{n_{H}}}$$\end{document}
+Concentration-response curves were fitted using the Hill equation of the form:
+
+$$
+Response=\frac{Response_{max}}{1+(\frac{EC_{50}}{[C]})^{n_{H}}}
+$$
 
 where the calculated parameters are the maximal calcium or current response (Responsemax), the concentration for half-maximal activation (EC50), and the Hill coefficient (nH). To quantify ligand-induced changes in the time course of voltage-dependent current relaxation during voltage steps, mono-exponential functions were fitted to the current traces. While currents in the presence of agonists such as menthol or rapamycin become multiexponential, the monoexponential fits provide a robust quantification of changes in relaxation kinetics.

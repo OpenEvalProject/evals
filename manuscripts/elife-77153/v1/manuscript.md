@@ -15,12 +15,12 @@
 
 ### Affiliations
 
-1. https://ror.org/01bmjkv45 Friedrich Miescher Institute for Biomedical Research Basel Switzerland
-2. https://ror.org/002pd6e78 Gene Delivery Technology Core, Massachusetts General Hospital Cambridge United States
-3. https://ror.org/0244rem06 Department of Molecular and Cellular Physiology, Institute of Medicine, Academic Assembly, Shinshu University Nagano Japan
-4. https://ror.org/05q8wtt20 National Institutes of Natural Sciences, Exploratory Research Center on Life and Living Systems, National Institute for Basic Biology Okazaki Japan
+1. Friedrich Miescher Institute for Biomedical Research Basel Switzerland ([ROR:01bmjkv45](https://ror.org/01bmjkv45))
+2. Gene Delivery Technology Core, Massachusetts General Hospital Cambridge United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+3. Department of Molecular and Cellular Physiology, Institute of Medicine, Academic Assembly, Shinshu University Nagano Japan ([ROR:0244rem06](https://ror.org/0244rem06))
+4. National Institutes of Natural Sciences, Exploratory Research Center on Life and Living Systems, National Institute for Basic Biology Okazaki Japan ([ROR:05q8wtt20](https://ror.org/05q8wtt20))
 5. Graduate University for Advanced Studies Okazaki Japan
-6. https://ror.org/02s6k3f65 Faculty of Natural Sciences, University of Basel Basel Switzerland
+6. Faculty of Natural Sciences, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
@@ -34,11 +34,31 @@ The zebrafish is an important vertebrate model in systems neuroscience because i
 
 ## Results
 
-## Optimization of the temperature regime for viral gene transfer
+### Optimization of the temperature regime for viral gene transfer
 
 Previous studies demonstrated that adeno-associated viruses (AAVs), which are widely used for gene transfer in mammals and other amniotes, fail to infect neurons in the zebrafish brain (Zhu et al., 2009). Infection of zebrafish neurons by other viruses has been reported but efficiency was usually low and viral vectors for conditional gene expression in transgenic fish have not been described. To improve upon these points, we first focused on herpes simplex virus 1 (HSV1), a DNA virus that can infect zebrafish neurons both locally and retrogradely via projecting axons without obvious signs of cytotoxicity (Zou et al., 2014). We first explored whether HSV1-mediated gene transfer can be further improved by optimizing the temperature regime. Zebrafish are usually kept at 26–28.5 °C but the temperature range of natural habitats is broad (up to >38 °C) and temperature tolerance in the laboratory extends up to ~41 °C (Engeszer et al., 2007; López-Olmeda and Sánchez-Vázquez, 2011). We therefore tested whether viral gene expression is more efficient at temperatures near those of mammalian hosts (37 °C).
 
 We injected amplicon type HSV1 viruses into the brain of adult or larval zebrafish using established procedures (Zou et al., 2014) and thereafter kept fish at standard laboratory temperatures (26–28.5 °C) or at 35–37 °C (Figure 1A). Results were compared to fish that received no injection or buffer alone. In adult fish, survival rates were 100% for 10 days post injection in all treatment groups, independent of temperature (N=5 fish per treatment group; Figure 1—figure supplement 1). In larvae, some mortality occurred in all groups, which is likely to be natural. Mortality was slightly enhanced at elevated temperatures but survival during the first three days, which are most relevant for viral gene transfer (see below), was always >90% (N=30 fish per group; Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig1-v1.jpg)
+
+**Figure 1.:** (A) Procedure to test temperature-dependence of HSV1-mediated gene expression. (B) Maximum intensity projection after injection of HSV1[LTCMV:DsRed] into one OB (arrow) of a Tg[vglut1:GFP] fish and incubation at 36 °C. White arrowhead indicates the OB-projecting area in the dorsal telencephalon used for quantification in (C) and Figure 2F. vglut1:GFP expression served as a morphological marker. (C) Mean number of labeled neurons in the dorsal telencephalon after injection of HSV1[LTCMV:DsRed] into the ipsilateral olfactory bulb and incubation at different temperatures. In this and similar plots, black dots represent data from individual fish, box plot indicates median and 25th and 75th percentiles, circles and error bars indicate mean and s.d., respectively, over individual fish. N: number of fish.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Survival rates of fish as a function of time after different treatments. The number of fish in each treatment group is given in the legend. Larvae were injected at 5 dpf.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Comparison of swimming speed, vertical position in the water column (Z position), and social distance in groups of five fish at room temperature (RT; 25 – 26 °C) and at 36 °C. Fish were kept at the indicated temperature for 15 min. Each datapoint represents the mean value during a one-minute time window (10 time windows in total). Box plots show median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over time windows. Swimming trajectories were analyzed in two dimensions using DeepLabCut. Z position is normalized to the distance between the bottom of the tank (0) and the water surface (1). Social distance is the mean distance between all pairs of fish in the group. (Swimming speed: p<0.001, Z position: p<0.001, p=0.53, Wilcoxon rank sum test). (B) Swimming speed of adult fish kept individually in 1 L tanks measured at 27 °C. Fish were either kept at 27 °C or at 36 °C for 7 days prior to measurements and received different treatments (no injection, buffer injection, or HSV1 injection). Plot symbols represent data from individual fish; box plots show median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual fish. N: number of fish. No significant differences were observed (p>0.54; ANOVA test). (C) Sequence of virus injections, temperature changes and associative conditioning to assess effects of experimental manipulations on discrimination learning. (D) Learning index (behavioral discrimination score) on the last day of training. Plot symbols represent data from individual fish; box plots show median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual fish. N: number of fish. Control fish (group 1) were not injected and kept at standard laboratory temperature. The experimental group (group 2) was injected with HSV1[LTCMV:jGCaMP7b], an amplicon type of HSV1 with an insert encoding the calcium indicator GCamp7b (Dana et al., 2019) under the control of a non-specific promoter for long-term expression (LTCMV), and subsequently kept at 36 °C for 2 days before training (A). Performance was not significantly different between groups (p=0.76, Wilcoxon rank sum test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Expression of DsRed (magenta) 6 days after injection of HSV1[LTCMV:DsRed] into the OB (arrow) of an adult Tg[vglut1:GFP] fish kept at 26 °C (maximum projection of confocal stack). Boxed areas (OB and Dp) are enlarged below. The number of DsRed-expressing neurons is low compared to DsRed expression at 36 °C (Figure 1). (B) DsRed expression in the dorsal telencephalon at different timepoints after injection of HSV1[LTCMV:DsRed] into the ipsilateral OB. Fish were kept at 36 °C. Black dots represent data from individual fish, box plot indicates median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual fish. N: number of fish.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Expression of GFP 48 hr after injection of HSV1[LTCMV:GFP] into the optic tectum of zebrafish larvae (3 dpf; maximum intensity projection of confocal stack). Larvae were kept after the injection at 28.5, 32, or 35 °C. (B) Expression of GFP 48 hr after injection of HSV1[LTCMV:GFP] into the optic tectum of a larva at 5 dpf (maximum intensity projection of confocal stack). The larva was kept after the injection at 35 °C. (C) Expression of GFP 48 hr after injection of HSV1[LTCMV:GFP] into the optic tectum of a larva at 14 dpf (maximum intensity projection of confocal stack). The larva was kept after the injection at 35 °C. (D) Expression of GFP 48 hr after injection of HSV1[LTCMV:GFP] into trunk muscles at 7 dpf (maximum intensity projection of confocal stack). The larva was kept after the injection at 35 °C. Note retrograde labeling of motor neurons (M.N.). (E) Expression of GFP 48 hr after injection of HSV1[UAS:GFP] into the hindbrain of a Tg[gad1b:Gal4; gad1b:DsRed] larva at 7 dpf (maximum intensity projection of confocal stack). The larva was kept after the injection at 35 °C. Note co-localization of DsRed and GFP in hindbrain and cerebellum.
 
 At 36 °C, the mean swimming speed of adult fish was increased and fish stayed, on average, slightly higher in the water column than at 26 °C (Speed: p<0.001, Z position: p<0.001; Wilcoxon rank sum test). However, the general swimming pattern appeared similar (Figure 1—videos 1–4) and social distance was not significantly different (p=0.53, Wilcoxon rank sum test; Figure 1—figure supplement 2A). No significant effects on swimming speed were observed when fish were returned to standard laboratory temperatures after seven days at 36 °C (Figure 1—figure supplement 2B). To examine effects of transient temperature changes on a more complex behavior, we trained two groups of adult zebrafish in an odor discrimination task (Frank et al., 2019; Namekawa et al., 2018) that comprised 1 day of acclimatization to the setup followed by 5 days of appetitive conditioning (nine training trials with a rewarded odor [CS+] and with a non-rewarded odor [CS-] each per day). Group 1 (control) underwent no surgery and was kept at the standard laboratory temperature. Group 2 was injected with an HSV1 and subsequently kept at 36 °C for 2 days before training commenced (Figure 1—figure supplement 2C). Learning was assessed by a standard discrimination score and not significantly different between groups (p=0.76; Mann–Whitney U test; Figure 1—figure supplement 2D). These results confirm that swimming behavior and olfactory discrimination learning were not significantly impaired by virus injection with subsequent incubation at temperatures near 37 °C.
 
@@ -46,9 +66,29 @@ To examine the temperature-dependence of HSV1-mediated gene expression, we injec
 
 To explore viral gene delivery at earlier developmental stages we injected HSV1[LTCMV:GFP] into the optic tectum of zebrafish larvae at 3 days post fertilization (dpf) and examined expression 48 hr later. As observed in adult fish, swimming behavior appeared normal (Figure 1—video 5). Consistent with previous observations (Zou et al., 2014), expression of GFP was detected at 28.5 °C (N=3 fish) but the number of GFP-positive cells increased when temperature was raised to 32 °C (N=5) or 35 °C (N=10; Figure 1—figure supplement 4A). Strong and widespread expression was also observed when the virus was injected at 5 dpf (N=14) or 14 dpf (N=9) and fish were subsequently kept at 35 °C for 48 hr (Figure 1—figure supplement 4B, C). When HSV1[LTCMV:GFP] was injected into muscles of the trunk at 5 dpf, strong and selective retrograde labeling of motor neurons in the spinal cord was observed after keeping fish at 35 °C for 48 hr (N=4; Figure 1—figure supplement 4D). These results indicate that HSV1 can be used for gene delivery and retrograde neuronal tracing throughout development.
 
-## Intersection of HSV1 with the Gal4/UAS system
+### Intersection of HSV1 with the Gal4/UAS system
 
 As viral vectors such as HSV1 can infect a broad spectrum of cell types including neurons and non-neuronal cells they may be used for a wide range of applications. However, for specific manipulations it is often desired to target genetically defined subsets of cells or cell types. This is usually achieved by combining viral gene transfer with transgenic lines using two-component expression systems (e.g. injection of a Cre-dependent viral construct into Cre-expressing mice). In zebrafish, the most widely used two-component expression system is the Gal4/UAS system. We therefore explored the possibility to combine viral delivery of UAS-dependent expression constructs with Gal4-expressing driver lines. We first created a Gateway expression vector (Reece-Hoyes and Walhout, 2018) to simplify the construction of HSV1 for UAS-dependent expression (Figure 2A). We then generated HSV1[UAS:TVA-mCherry] to expresses a fusion of the transmembrane protein TVA and the red fluorescent protein mCherry under UAS control. This virus did not drive expression when injected into the brain of wildtype zebrafish (N=3; Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig2-v1.jpg)
+
+**Figure 2.:** (A) Construction of the UAS vector for HSV packaging. Genes of interest (GOI) are inserted downstream of the 5xUAS sequences by recombination cloning using the Gateway system. The transcriptional blocker minimizes leaky expression (Eggermont and Proudfoot, 1993). (B) Injection of HSV1[UAS:TVA-mCherry] into the cerebellum of Tg[gad1b:Gal4; gad1b:GFP] double transgenic fish. Note co-localization of mCherry and GFP in Purkinje cells (arrowheads) and putative Golgi cells (arrows). ML: molecular layer; PL: Purkinje layer; GL: granular layer. (C) Fraction of mCherry-positive neurons that co-expressed GFP after injection of HSV1[UAS:TVA-mCherry] into the cerebellum or Dp of Tg[gad1b:Gal4; gad1b:GFP] double transgenic fish. N: number of fish. (D) Injection of HSV1[UAS:Venus-CAAX] into the optic tectum of Tg[th:Gal4; UAS:tdTomato-CAAX] fish. Venus-CAAX was expressed by a small number of neurons with somata in the locus coeruleus and extensive projections to the optic tectum and other brain areas. Images on the right are close-ups of the boxed region showing co-expression of Venus-CAAX (green) with tdTomato (red) in the locus coeruleus. (E) Injection of HSV1[LTCMV:Gal4] into the OB and HSV1[UAS:GFP] into the dorsal telencephalon of wildtype fish. Note selective expression of GFP in OB-projecting neurons. The region containing GFP-expressing neurons is indicated by the dashed outline and enlarged on the right. (F) Number of neurons labeled in the dorsal telencephalon by a single injection of HSV1[LTCMV:DsRed] into the OB (‘One way’) or by two injections using the two-component Gal4/UAS system (‘Gal4/UAS’). N: number of fish.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Injection of HSV1[UAS:TVA-mCherry] into the telencephalon of adult wildtype fish. No expression of TVA-mCherry was detectable (granular particles are autofluorescent endogenous objects). (B) Coronal section through the telencephalon at the level of Dp after injection of HSV1[UAS:TVA-mCherry] into Tg[gad1b:Gal4; gad1b:GFP] double transgenic fish. The injection was targeted to a volume around Dp. mCherry was expressed predominantly in a cluster of GFP-positive neurons associated with Dp. Note long-range projections of mCherry-expressing neurons to multiple telencephalic areas. (C) Enlargements of boxed region in (a). Arrowheads indicate GFP+/mCherry +neurons.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Expression of GFP and mCherry after injection of HSV1[UAS:GFP & UAS:TVA-mCherry] into the cerebellum of Tg[gad1b:Gal4] fish. In this virus, two expression constructs, UAS:GFP and UAS:TVA-mCherry, are packaged into the same virus particles. Expression is observed in Purkinje neurons and in putative Golgi cells. Note high rate of co-expression of GFP and mCherry. ML: molecular layer; PL: Purkinje layer; GL: granular layer. (B) Expression of GFP and mCherry in the Purkinje layer after co-injection of two independent viruses (HSV1[UAS:GFP] and HSV1[UAS:TVA-mCherry]) into the cerebellum of Tg[gad1b:Gal4] fish. Note that the rate of co-expression was high even though GFP and mCherry were delivered by separate viruses. Note also that the overall expression was sparse, implying that co-expression was unlikely to occur by chance. (C) Percentage of GFP and mCherry-expressing neurons among all fluorescent neurons. Filled circles represent data from individual fish, box plot indicates median and the 25th and 75th percentiles, and open circles indicate mean over individual fish. N: number of fish.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Schematic: injection of HSV1[LTCMV:Gal4] into the OB and subsequent co-injection of HSV1[UAS:GCaMP6f] and HSV1[UAS:Chrimson-tdTomato] into the dorsal telencephalon of wildtype fish.(B) Simultaneously recorded calcium transients evoked by optical stimulation of different light intensity (vertical lines) in three example neurons. (C) Mean change GCaMP6f evoked by optical stimulation of different light intensity (11–18 light stimuli at each intensity). Left: GCaMP6f +/tdTomato- neurons (N=8 out of 21 GCaMP6f+ neurons). Right: GCaMP6f +/tdTomato+ neurons (N=13 out 21 GCaMP6f+ neurons). Shading shows SEM. Responses to light stimulation were seen in all individual tdTomato+ neurons (N=13; not shown).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Top: Expression of GFP in the cerebellum after injection of HSV1[UAS:GFP] into the cerebellum of Tg[gad1b:Gal4] fish. Bottom: Expression of TeNT-GFP after injection of HSV1[UAS:TeNT-GFP] into the cerebellum of Tg[gad1b:Gal4] fish. (B) Examples of swimming trajectories (15 min) of individual Tg[gad1b:Gal4] fish that received injections of HSV1[UAS:GFP] (left) or HSV1[UAS:TeNT-GFP] into the cerebellum. Note that the fish injected with HSV1[UAS:TeNT-GFP] covered less territory, showed fewer long straight swims, and showed a tendency to stay lower in the water column. (C) Mean swimming speed and 2D space occupancy of Tg[gad1b:Gal4] fish that received injections of HSV1[UAS:GFP] (left) or HSV1[UAS:TeNT-GFP] into the cerebellum. Plot symbols represent data from individual fish; box plots show median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual fish. N: number of fish. p=0.03 for swimming speed, p=0.0012 for space occupancy, Wilcoxon rank sum test.
 
 We injected HSV1[UAS:TVA-mCherry] into the cerebellum of adult Tg[gad1b:GFP; gad1b:Gal4] fish (Frank et al., 2019), which express Gal4 and GFP under the control of the gad1b promoter, a marker of GABAergic neurons. Consistent with the distribution of GABAergic neurons in the cerebellum, GFP was expressed in Purkinje neurons and in a sparse neuronal population in the granular layer, presumably Golgi cells. mCherry was co-expressed with GFP in a subset of Purkinje neurons and putative Golgi cells (97.7% ± 1.2% of mCherry-positive neurons were also GFP-positive; mean ± s.d.; N=4 fish; Figure 2B and C). No expression was detected in the dense population of GFP-negative granule cells in the granular layer.
 
@@ -62,7 +102,7 @@ We also tested HSV1 as a tool for functional manipulations of neurons and behavi
 
 We have so far assembled a collection of 26 different HSV1s for applications in zebrafish (Figure 2—source data 1 file1). Fifteen of these drive expression of fluorescent markers, calcium indicators, Gal4 or optogenetic probes under the control of the non-specific LTCMV promoter for regional transgene expression and retrograde tracing. The remaining 11 HSV1s drive expression of fluorescent markers, optogenetic probes, toxins and other proteins under UAS control for intersectional targeting of neurons using the Gal4/UAS system. Although not all constructs have been tested yet, this toolbox is available and can be further expanded using our UAS-containing expression vector (Figure 2A).
 
-## Transneuronal viral tracing in zebrafish
+### Transneuronal viral tracing in zebrafish
 
 The ability of some viruses to cross synapses has been exploited to express transgenes in synaptically connected cohorts of neurons. In zebrafish and other species, neurons can be traced across one or multiple synapses using engineered vesicular stomatitis viruses (VSVs), and modifications have been introduced to limit transneuronal spread to one synapse in anterograde direction (Kler et al., 2021; Ma et al., 2019; Mundell et al., 2015). In rodents, modified rabies viruses have become important tools to analyze connectivity and structure-function relationships in neuronal circuits. These vectors can infect specific ‘starter’ neurons and are transmitted retrogradely to presynaptic neurons across one synapse. Specific infection is achieved by expressing the receptor protein TVA in the starter neuron and pseudotyping the virus with the envelope protein EnvA (Wickersham et al., 2007a). To limit retrograde transfer to one synapse, an essential glycoprotein (G) is deleted from the viral genome and supplied in trans only in the starter neurons. In zebrafish, the G-deleted rabies virus (RVΔG) has been reported to infect neurons (Zhu et al., 2009) and to cross synapses when complemented with G but the efficiency of retrograde synaptic transfer appeared very low (Dohaku et al., 2019).
 
@@ -70,9 +110,41 @@ To enhance the efficiency of viral infection and transneuronal tracing, we first
 
 To target defined starter neurons we co-injected HSV1[UAS:TVA] and EnvA-RVΔG-GFP into adult fish expressing Gal4 in neurons of interest. Survival rates were high (Figure 1—figure supplement 1). To assess potential toxicity of RVΔG at the cellular level we injected EnvA-RVΔG-GFP into the OB of Tg[gad1b:Gal4; UAS:TVA-mCherry] fish as before. After 3–4 days, we dissociated the OB and performed RNA sequencing after fluorescence-activated cell sorting. The incubation period was chosen to approximately match the duration of RVΔG infection in neurons that received the virus by transneuronal spread using a typical experimental schedule (Materials and methods; see below). This approach allowed us to compare transcriptomes of GABAergic neurons infected by RVΔG (green and red) to transcriptomes of non-infected GABAergic neurons expressing only the TVA receptor (red only; Figure 3—figure supplement 3). Of 19,819 endogenous genes analyzed, 522 were significantly downregulated while 27 were significantly upregulated in infected cells (see Materials and methods for details on statistics). Among these, stress markers occurred with approximately average frequency (downregulated: 27 out of 471 stress marker genes; upregulated: 1/471) and cell death markers were underrepresented (downregulated: 14/651 genes; upregulated: 4/651; Figure 3A–B; Figure 3—source data 1 file1). The 65 gene ontology (GO) terms that were significantly associated with the set of regulated genes were primarily related to immune responses while GO terms related to stress, cell death, electrophysiological properties or synapses were rare or absent (Figure 3A–B; Figure 3—source data 2 file2). The observed changes in gene expression may therefore reflect a general immune response but they do not suggest major effects of RVΔG on physiological functions or cellular stress levels. However, further experiments would be required to understand the mechanisms and consequences of these changes in more detail.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig3-v1.jpg)
+
+**Figure 3.:** (A) Fraction of genes that were significantly up- or down-regulated genes in RVΔG-infected cells out of all 19,819 genes, out of the 471 stress markers (GO:0033554), and out of the 651 cell-death markers (GO:0008219). Differences in expression level were considered significant when abs(logFC (fold change))>3, log(counts per million reads mapped)>3, and FDR <0.05. The FDR (False Discovery Rate) corrects for multiple testing. (B) Volcano plots displaying differential gene expression in RVΔG-infected and uninfected cells. Colored dots indicate stress markers (left) and cell death markers (right) (orange: upregulated, blue: downregulated). Yellow outline depicts statistically significant difference in expression level. (C) OGB-1 labeling and mCherry expression in the deep (granule cell) layer of the adult zebrafish OB after injection of EnvA-RVΔG-mCherry into the OB of Tg[gad1b:Gal4; UAS:TVA-mCherry] fish and bolus loading of OGB-1. The two red fluorescent labels were distinguishable because fluorescence of TVA-mCherry is localized to the membrane and weak whereas fluorescence of virus-driven mCherry is strong and includes the nucleus. (D) Ca2+ signals evoked by two different odors in the same optical plane (single trials). Odors: alanine (Ala), taurodeoxycholic acid (TDCA). (E) Randomly selected responses of seven infected (magenta) neurons and seven uninfected (green) neurons from the same optical plane to two odors (single trials). (F) Odor-evoked Ca2+ signals of infected (N=559) and uninfected (N=1293) OB cells from N = 4 fish, averaged over all odors (N=6) and repetitions (N=3 for each odor). Shading indicates s.e.m.; bar indicates odor stimulation. (G) Distribution of response amplitudes in non-infected and infected cells to different odors (N=6), averaged over trials (N=3). Distributions of were not significantly different (p=0.24, Kolmogorov–Smirnov test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Absence of expression after injection of EnvA-RVΔG-GFP into the telencephalon of adult wildtype fish.(B) Absence of expression after injection of EnvA-RVΔG-GFP into the optic tectum of wildtype fish at 7 dpf.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Experimental scheme: Rabies virus (EnvA-RVΔG-GFP) was injected into the telencephalon of transgenic fish expressing TVA-mCherry in GABAergic neurons (Tg[gad1b:Gal4; UAS:TVA-mCherry]). (B) Expression of TVA-mCherry and GFP when fish were kept at 26 °C for 6 days after injection. Note almost complete absence of GFP expression.(C) Expression of TVA-mCherry and GFP when fish were kept at 36 °C for 6 days after injection. Note strong GFP expression.(D) Expression of TVA-mCherry and GFP six days after injection when the housing temperature was increased from 26 °C to 36 °C 3 days after injection. GFP expression was weak and sparse.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Schematic: injection of EnvA-RVΔG-GFP into the OB of adult Tg[gad1b:Gal4;UAS:TVA-mCherry] fish. (B) Example of FACS analysis of GFP and mCherry expression. Boxes depict cells selected as mCherry+/GFP+ (EnvA-RVΔG-GFP infected gad1b neurons), mCherry+/GFP- (non-infected gad1b neurons), mCherry-/GFP- (negative control containing other OB cells). gad1b is one of two isoforms of gad1 that are expressed differentially in GABAergic neurons. (C) Expression of marker genes (x-axis) in infected gad1b neurons (mCherry+/GFP+; green), non-infected gad1b neurons (mCherry+/GFP-; magenta), and other OB cells (mCherry-/GFP-; black). Cells classified as gad1b-positive by fluorescence markers, but not other cells, expressed gad1b but not gad1a, the other gad1 isoform. Expression of fluorescent marker genes followed the detection of fluorescent markers by FACS. The neuronal marker elav3 was present in all three pools. Plot symbols represent data from individual samples; box plots show median and 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual samples (N=8 samples). (D) Expression of negative markers for GABAergic neurons. The selected marker genes (slc17a6a, slc17a6b, tbx21, lhx2b, and lhx9) should be expressed in mitral cells of the OB and other excitatory neurons but not in GABAergic neurons. Consistent with this expectation, expression of all negative markers was low or absent in pools of gad1b cells selected by FACS (N=8 samples).
+
 To directly compare neuronal activity of infected and uninfected neurons, we targeted the dense population of GABAergic interneurons in the deep layers of the OB. We injected EnvA-RVΔG-mCherry into the OB of adult Tg[gad1b:Gal4; UAS:TVA-mCherry] fish and detected infection in a subset of neurons by the strong cytoplasmic and nuclear expression of mCherry, which could easily be distinguished from the weak, membrane-associated background expression of TVA-mCherry (Figure 3C). We then loaded neurons non-specifically with the green-fluorescent calcium indicator Oregon Green 488 BAPTA-1 (OGB1) by bolus injection of the AM ester (Yaksi and Friedrich, 2006) and measured odor responses of all neurons simultaneously (Figure 3D). No obvious differences were detected in the time course or amplitude distribution of odor responses between infected neurons (N=1293 neurons from four fish) and uninfected neurons (N=559 from the same four fish; Figure 3E–G). Together, these results indicate that infection with RVΔG did not compromise the health or physiological function of neurons.
 
 Efficient transneuronal spread of the rabies virus depends on the expression level of the viral glycoprotein in starter cells (Kim et al., 2016; Miyamichi et al., 2013). We therefore took two steps to enhance glycoprotein expression. First, we optimized codon usage for zebrafish. Second, we expressed TVA and the codon-optimized glycoprotein (zoSADG) using HSV1 because viral vectors typically reach higher expression levels than transgenics (Zou et al., 2014). In rodents, starter neurons expressing high levels of G often disappear in parallel with the emergence of transneuronal expression, presumably because long-term expression of G is toxic (Faber et al., 2002; Ohara et al., 2013). We therefore determined the time course of transgene expression under different experimental conditions. We first focused on the cerebellum where GABAergic Purkinje neurons receive local synaptic input from different types of cerebellar neurons and long-range input from neurons in the contralateral inferior olive (climbing fibers; Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the cerebellar circuit. Glutamatergic neurons are shown in red colors, GABAergic neurons in blue colors. Purkinje cells receive extra-cerebellar input exclusively from the inferior olive. (B) Co-injection of EnvA-RVΔG-GFP and HSV1[UAS:TVA-mCherry] into the cerebellum of Tg[gad1b:Gal4] fish in the absence of glycoprotein. Left: schematic. Center: expression of TVA-mCherry (magenta) and GFP (green) in the cerebellum. Regions in the Purkinje and granular layers (dashed rectangles) are enlarged. Unfilled white arrowheads indicate GFP+/mCherry +neurons. Right: expression of GFP in the hindbrain. Region covering the inferior olive (dashed rectangle) is enlarged. Expression of GFP was restricted to putative starter neurons; no expression was detected in the inferior olive. ML: molecular layer; PL: Purkinje layer; GL: granular layer. (C) Same as in (B) but the glycoprotein (zoSADG) was supplied to starter neurons in trans by co-injection of HSV1[UAS:zoSADG]. Filled white arrowheads indicate GFP+/mCherry- neurons. Note expression of GFP in putative granule cells and in neurons of the inferior olive, indicating transneuronal spread. (D) Number of neurons that expressed GFP and mCherry (putative starter neurons) or GFP alone (putative presynaptic neurons) at different time points after injection of EnvA-RVΔG and HSV1[UAS:TVA-mCherry] into the cerebellum of Tg[gad1b:Gal4] fish. Left: without glycoprotein; right: with trans-complementation of zoSADG in starter neurons. Note that labeling of putative presynaptic neurons emerged between 6 and 10 days post injection only when zoSADG was trans-complemented in starter neurons. In all plots, black dots represent data from individual fish, box plot indicates median and the 25th and 75th percentiles, circles and error bars indicate mean and s.d. over individual fish. N: number of fish. (E) Convergence index for the projection from the inferior olive to the cerebellum at different time points. The convergence index is the numerical ratio of transneuronally labeled neurons (GFP+/mCherry- neurons in the inferior olive) and putative starter cells in the cerebellum (GFP+/mCherry +Purkinje neurons). N: number of fish. (F) Schematic of the putative circuitry in telencephalic area Dp. Glutamatergic neurons are shown in red colors, GABAergic neurons in blue colors. Long-range projections from mitral cells in the olfactory bulb terminate on glutamatergic neurons and on GABAergic interneurons in Dp. Additional long-range projections originate in other telencephalic areas. (G) Co-injection of EnvA-RVΔG and HSV1[UAS:TVA-mCherry] into Dp of Tg[gad1b:Gal4] fish in the absence of glycoprotein. Coronal section through the injected telencephalic hemisphere at the level of Dp. Area outlined by dashed rectangle is enlarged. Co-expression of GFP (green) and mCherry (magenta) indicates starter cells. (H) Same as in (G) but with trans-complementation of zoSADG in starter neurons by co-injection of HSV1[UAS:zoSADG]. Left: coronal section through the injected telencephalic hemisphere. Right: coronal section through the ipsilateral OB. Expression of GFP only (green) indicates transneuronally labeled neurons. (I) Number of neurons in the telencephalon that expressed GFP and mCherry (putative starter neurons) or GFP alone (putative presynaptic neurons) after injection of EnvA-RVΔG and HSV1[UAS:TVA-mCherry] into Dp with (+) or without (-) trans-complementation with zoSADG in starter neurons (HSV1[UAS:zoSADG]). Left: injection into Tg[gad1b:Gal4] fish; right: injection into Tg[vglut1:Gal4] fish (right). Expression was analyzed 10 days post injection. N: number of fish. (J) Convergence index for the projection of transneuronally labeled neurons in the OB to Dp when EnvA-RVΔG was targeted to GABAergic neurons (viral injections into Tg[gad1b:Gal4] fish) or to glutamatergic neurons (injections into Tg[vglut1:Gal4] fish) in Dp. Expression was analyzed at 10 days post injection. N: number of fish.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Expression of GFP in the cerebellum after sequential injection of (1) HSV1[UAS:TVA-mCherry] and HSV1[UAS:zoSADG] and (2) EnvA-RVΔG-GFP into the cerebellum of Tg[gad1b:Gal4] fish. Outlined regions are enlarged. Only few labeled neurons were detected. Left: EnvA-RVΔG-GFP was injected 2 days after HSV1 injection. Right: EnvA-RVΔG-GFP was injected 4 days after HSV1 injection.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Co-injection of EnvA-RVΔG-GFP and HSV1[UAS:TVA-mCherry] into Dp of Tg[vglut1:Gal4] fish in the absence of glycoprotein. Coronal section through the injected telencephalic hemisphere at the level of Dp. Area outlined by dashed rectangle is enlarged below and red channel is enhanced. Co-expression of GFP (green) and mCherry (magenta) indicates starter cells. (B) Same as in (A) but with trans-complementation of zoSADG in starter neurons by co-injection of HSV1[UAS:zoSADG]. Left: coronal section through the injected telencephalic hemisphere. Right: coronal section through the ipsilateral olfactory bulb. Expression of GFP only (green) indicates transneuronally labeled neurons.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/77153/elife-77153-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Coronal cross sections through the OB and anterior telencephalon from Tg[vglut2a:RFP; vglut1:GFP] double transgenic fish. Note that vglut2a (magenta) is expressed by axons of olfactory sensory neurons innervating glomeruli in the OB and by a subset of mitral cells, while expression of vglut1 (green) in the OB is weak or absent. Dotted lines outline OBs. (B) More posterior coronal cross sections through the telencephalon of the same fish at the level of Dp. Note that expression of vglut2a and vglut1 in the telencephalon are largely complementary. Neurons in Dp express primarily vglut1. Dotted areas indicate the dorsal lateral telencephalic area (Dl) and Dp.
 
 We injected a mixture of HSV1[UAS:TVA-mCherry] and EnvA-RVΔG-GFP into the cerebellum of Tg[gad1b:Gal4] fish and examined expression for up to 10 days. As observed before (Figure 2B), mCherry expression was localized to Purkinje neurons and putative Golgi cells. Neurons expressing GFP were concentrated around the injection site and usually co-expressed mCherry (Figure 4B and D). Rarely, GFP expression was observed in mCherry-negative neurons (Figure 4D), which may indicate TVA-independent viral entry. However, as no GFP expression was observed when EnvA-RVΔG-GFP was injected into wildtype animals (Figure 3—figure supplement 1), it appears more likely that GFP+/mCherry- neurons initially expressed TVA but subsequently lost expression due to the slight decline of expression driven by the viral promoter (Figure 1—figure supplement 3B). Co-expression of mCherry and GFP was stable for at least 10 days after injection and GFP+/mCherry- neurons remained very rare (Figure 4D). These results confirm the specificity of EnvA-RVΔG-GFP infection and provide additional evidence that expression of TVA-mCherry or the infection by RVΔG alone are not toxic in the absence of glycoprotein. No expression of GFP was observed in the inferior olive, consistent with the expectation that RVΔG does not spread in the absence of glycoprotein.
 
@@ -92,7 +164,7 @@ To examine transneuronal viral spread at early developmental stages, we injected
 
 ## Discussion
 
-## Viral gene transfer in zebrafish
+### Viral gene transfer in zebrafish
 
 We developed procedures for viral gene transfer in zebrafish that are expected to meet the needs for a wide range of applications in neuroscience and other disciplines. We found that viral infection and transgene expression can be significantly enhanced by adjusting the temperature to that of the natural viral host. Furthermore, we show that HSV1 vectors can be combined with the Gal4/UAS system for intersectional gene expression strategies. We applied HSV1s to target the expression of multiple transgenes to different brain areas and neuron types in the adult zebrafish brain and in larvae. Hence, HSV1-mediated gene transfer and retrograde tracing has a wide range of potential of applications in zebrafish.
 
@@ -102,7 +174,7 @@ Our results show that HSV1 can be combined with the Gal4/UAS system for two-comp
 
 We have generated a collection of HSV1s for the direct or conditional expression of different transgenes including fluorescent markers, calcium indicators, optogenetic probes, and toxins (Figure 2—source data 1 file1). This toolbox opens novel opportunities for the fast and flexible interrogation of neurons in zebrafish. For example, the toolbox can be used to express genetically encoded calcium indicators for measurements of neuronal activity from defined types of neurons or to express optogenetic probes for functional manipulations of specific neurons. Such applications are useful to examine how neuronal circuits process information and control behavior.
 
-## Transneuronal tracing in zebrafish
+### Transneuronal tracing in zebrafish
 
 We further established procedures for retrograde monosynaptic tracing using rabies viruses that greatly enhanced the efficiency of transneuronal transfer compared to a previous study in zebrafish (Dohaku et al., 2019). Temperature adjustments were important but unlikely to be the only factor underlying the enhanced transneuronal spread because the temperature difference to the previous study was only 1.5 °C (Dohaku et al., 2019). We therefore assume that increased glycoprotein expression by codon optimization, viral gene delivery, and possibly small differences in the experimental schedule also contributed significantly.
 
@@ -112,7 +184,7 @@ Transneuronal spread of rabies viruses was glycoprotein-dependent and labeled su
 
 Retrograde tracing of connected neuronal cohorts using rabies viruses has become an important approach to decipher the functional logic of neuronal connectivity in rodents. Our results pave the way for applications of this approach in zebrafish. The small size of zebrafish facilitates the combination of neuronal circuit tracing with other methods such high-resolution imaging of neuronal activity patterns throughout large brain areas. Transneuronal tracing in the anterograde direction from starter neurons that were not genetically defined has previously been achieved using VSVs in larval zebrafish (Kler et al., 2021; Ma et al., 2019; Mundell et al., 2015). Hence, anterograde transneuronal tracing using VSVs may complement retrograde transneuronal tracing by rabies viruses.
 
-## Conclusions and outlook
+### Conclusions and outlook
 
 Our experiments were designed primarily to explore HSV1 and rabies viruses as tools for structural and functional analyses of neuronal circuits and behavior. While our experiments were performed in adult zebrafish, we found that viral gene transfer and tracing can also be performed in larvae. Viral gene transfer may therefore be used also for developmental studies but the temporal resolution will be limited by the time required for viral gene expression (days). Hence, we expect that viral gene transfer will be most useful for the analysis of neuronal circuit structure and function in juvenile or adult fish, similar to the application of viral tools for systems neuroscience in rodents.
 
@@ -120,7 +192,143 @@ The ability to target gene expression to specific neurons opens new opportunitie
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>AbtuTL x WIK</td>
+      <td>European zebrafish stock center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Basel-golden</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain this line, please contact Friedrich lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[UAS:TVA-mCherry]</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain this line, please contact Friedrich lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[vglut1:GFP]</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain this line, please contact Higashijima lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[vglut1:Gal4]</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain this line, please contact Higashijima lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[gad1b:GFP]</td>
+      <td>Satou et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[gad1b:Gal4]</td>
+      <td>Frank et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg [vglut2a:loxP-DsRed-loxP-GFP]</td>
+      <td>Satou et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[th:Gal4]</td>
+      <td>Li et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Zebrafish)</td>
+      <td>Tg[UAS:tdTomato-CAAX]</td>
+      <td>Miyasaka et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent (plasmid)</td>
+      <td>UAS:TVA-mCherry</td>
+      <td>Created in this study</td>
+      <td>Addgene plasmid # 187,823</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Chicken polyconal)</td>
+      <td>Thermofisher</td>
+      <td>A10262</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mCherry (Rat monoclonal)</td>
+      <td>chromotek</td>
+      <td>5F8</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>EnvA-RVΔG-GFP</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain viruse, please contact to FMI virus core.</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>HSV1 (See Figure 2—source data 1 file1)</td>
+      <td>Created in this study</td>
+      <td></td>
+      <td>To obtain viruses, please contact to Neve lab.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>matlab</td>
+      <td>2021b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepLabCut</td>
+      <td>version 2.2.1</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Experiments were performed in adult (5–15  months old) zebrafish (Danio rerio). Fish of both sexes were used in an approximately 50:50 ratio to minimize potential sex-dependent biases. Fish were bred under standard laboratory conditions (26–27°C, 13  hr/11  hr light/dark cycle). All experiments were approved by the Veterinary Department of the Canton Basel-Stadt (Switzerland).
 
@@ -128,7 +336,7 @@ The following transgenic fish lines were used: Tg[gad1b:GFP] (Satou et al., 2013
 
 Optogenetic experiments and odor discrimination training were performed in fish with low pigmentation that were derived by selection from a wildtype population. We refer to this genetic background as ‘Basel-golden’. These fish facilitate non-invasive optical access to the brain in adults and show no obvious impairments or behavioral alterations.
 
-## Transgenic fish, DNA constructs, and virus production
+### Transgenic fish, DNA constructs, and virus production
 
 Tg[UAS:TVA-mCherry] fish were created using standard procedures based on the Tol2 transposon (Urasaki et al., 2006). TVA-mCherry was amplified by PCR from a plasmid gift from Dr. Uchida, Addgene plasmid #38044; http://n2t.net/addgene:38044; RRID:Addgene_38044, (Watabe-Uchida et al., 2012) and inserted into a 5xUAS vector (Asakawa et al., 2008). Tg[vglut1:GFP] fish were established using the CRISPR/Cas9 method (Kimura et al., 2014). Insertion of a construct containing the hsp70 promoter was targeted at a site upstream of the vglut1 gene using the target sequence gagagagactcgggcgcgcg. The same procedure and target sequence was used to generate Tg[vglut1:loxP-mCherry-loxP-Gal4]. This line was then crossed to Tg[hspa8:Cre-mCherry-NLS] (ZFIN ID: ZDB-ALT-201210–1), which expresses Cre ubiquitously, to generate Tg[vglut1:Gal4].
 
@@ -136,7 +344,7 @@ For HSV1 production, constructs containing LTCMV:DsRed, LTCMV:GFP, LTCMV:Gal4 an
 
 All HSV1 viruses were produced by Gene Delivery Technology Core in the Massachusetts General Hospital (https://researchcores.partners.org/mvvc/about, titer: 5 × 109 iu/ml). EnvA-RVΔG-GFP (titer: 2.2 × 109 iu/ml) and EnvA-RVΔG-mCherry (titer: 4.2 × 108 iu/ml) were produced by the FMI viral core. The titers used were the highest titers available.
 
-## Virus injection
+### Virus injection
 
 Virus injections were performed as described (Zou et al., 2014) with minor modifications. Adult fish were anesthetized in 0.03% tricaine methanesulfonate (MS-222) and placed under a dissection microscope. MS-222 (0.01 %) was continuously delivered into the mouth through a small cannula. A small craniotomy was made over the dorsal telencephalon near the midline, over the OBs, or over the cerebellum. If multiple viruses were injected in the same region, virus suspensions were mixed. Phenol red (0.05 %) was added to the suspension to visualize the injection. Micropipettes pulled from borosilicate glass were inserted vertically through the craniotomy. The depth of injections was approximately 100 μm in the dorsal telencephalon, 50 μm in the OB, 100–150 μm in the cerebellum, 300–500 μm in Dp and 50–200 μm in the tectum. The injected volume was 50 nl – 100 nl. After surgery, fish were kept in standard holding tanks at 35 °C – 37 °C unless noted otherwise.
 
@@ -146,21 +354,21 @@ For transneuronal rabies tracing, all components were co-injected. To test wheth
 
 Transneuronal spread of the rabies virus was determined by quantitative analyses of neurons that expressed GFP but not TVA-mCherry. In theory, some of these neurons could be two (or more) synapses away from the starter cell if they target other neurons that received only the glycoprotein but not TVA-mCherry, if these neurons in turn were presynaptic to a starter neuron. However, because labeling was sparse and because the number of neurons receiving G only should be low, the probability of such events should be very low. Moreover, because transneuronal gene expression is observed only after a delay of >6 days, multi-step events should be very rare 10 days post infection. Multi-step events were therefore not taken into account in our quantitative analyses.
 
-## Clearing of brain samples
+### Clearing of brain samples
 
 We adapted the original Cubic protocol (Susaki et al., 2014) to small samples such as adult zebrafish brains. After fixation with 4% paraformaldehyde overnight, samples were soaked with reagent 1 A (10% w/v Triton, 5 wt% NNNN-tetrakis (2HP) ethylenediamine and 10 %w/v urea) for 2.5 hr at room temperature and for 6 hr at 37 °C with mild shaking and multiple solution exchanges. Subsequently, samples were washed in PBS overnight at room temperature. On the next day, samples were treated with reagent 2 (25 % w/v urea, 50 % w/v sucrose and 10 % w/v triethanolamine) for refractive index matching, mounted in glass bottom dishes, and covered by 16 × 16 mm cover glasses to avoid drift. Images were acquired using a Zeiss 10 x water-immersion objective lens (N.A.=0.45) on an upright Zeiss LSM 700 confocal microscope.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 For rabies virus tracing in the cerebellar circuit, GFP and mCherry signals were detected by immunocytochemistry. Brain samples were fixed overnight in 4% paraformaldehyde and sectioned (100 μm) on a Leica VT1000 vibratome. Primary antibodies were anti-GFP (Thermofisher, A10262, 1:200) and anti-RFP (5F8, chromotek, 1:200). Secondary antibodies were conjugated to Alexa Fluor 488 or 594 (Invitrogen, 1:200).
 
-## Neuron counts
+### Neuron counts
 
 For whole brain imaging (Figure 1C and G and S1D), z stacks (7–10 μm steps) were acquired using an upright Zeiss LSM 700 confocal microscope with a 10 x objective (water, N.A.=0.45, pixel size 1.25 μm). GFP or DsRed-expressing neurons in the dorsal telencephalon were counted manually.
 
 Z stacks from individual brain slices (1–2 μm steps, Figures 2F, 4D, I and J, and Figure 2—figure supplement 1) were acquired using an upright Zeiss LSM 700 confocal microscope with a 20 x objective (air, N.A.=0.8, pixel size 0.625 um). For non-rabies injections, a single slice, containing the largest number of labelled neurons, was chosen from each brain sample for cell counting. For rabies injections, all slices were used for cell counting. Cells expressing GFP and/or mCherry in specific regions (cerebellum, telencephalon, olfactory bulb) were counted manually.
 
-## Optogenetics and imaging in vivo
+### Optogenetics and imaging in vivo
 
 Multiphoton calcium imaging and simultaneous ChrimsonR stimulation was performed as described (Attinger et al., 2017) using a modified B-scope (Thorlabs) with a 12 kHz resonant scanner (Cambridge Technology) at excitation wavelengths of 930 nm (GCaMP6f) or 1100 nm (tdTomato) and an average power under the objective of 30 mW at 930 nm. Optogenetic stimulation with ChrimsonR was performed using an LED (UHP-T-595, Prizmatix; 595 nm). Light paths for imaging and stimulation were combined using a dichroic mirror (ZT775sp-2p, Chroma). Emitted light was split using a second dichroic mirror (F38-555SG, Semrock), band-pass filtered with a 525/50 filter (Semrock) for GCaMP6f imaging and with a 607/70 filter (Semrock) for tdTomato, and focused onto a GaAsP photomultiplier (H7422, Hamamatsu). The signal was amplified (DHPCA-100, Femto), digitized at 800 MHz (NI5772, National Instruments), and band-pass filtered around 80 MHz using a digital Fourier-transform filter implemented on an FPGA (NI5772, National Instruments). LED activation was synchronized to the turnaround phase of the resonant scanner when no data were acquired. Images were acquired at 60 Hz with a resolution of 750 × 400 pixels, corresponding to a field of view of 300 µm x 250 µm. Images were acquired sequentially in four different focal planes by moving the objective (Nikon 16 x, 0.8 NA) with a piezo-electric linear actuator (Physik Instrumente; effective frame rate: 15 Hz per plane). Anatomical snapshots were generated by averaging 1,000 images in the absence of optogenetic stimulation.
 
@@ -168,19 +376,19 @@ Basel-golden fish were head-fixed in a custom chamber and neurons in the dorsal 
 
 Raw images were full frame registered to correct for motion. Regions of interest were manually selected based on neuronal co-expression of GCaMP6f and ChrimsonR-tdTomato (N=11 neurons). Raw fluorescence traces were calculated as mean of the pixel values in a given region of interest in each imaging frame. Raw traces were then corrected for slow drift in fluorescence using an 8th-percentile filtering with a 15 s window (Dombeck et al., 2007). ΔF/F traces were computed by dividing raw fluorescence trace by the median calculated over the entire fluorescence distribution for each region of interest. Responses were pooled across neurons and pulses of the same intensity, and the resulting population responses were normalized by subtracting average population activity in a 1 s baseline window prior to the pulse. The standard error of the mean population response was computed over average responses of individual neurons.
 
-## Calcium imaging in the OB
+### Calcium imaging in the OB
 
 Calcium imaging in the adult OB was performed 4–10 days after viral injections in an explant preparation of the entire brain and nose (Frank et al., 2019; Jacobson et al., 2018) that was continuously superfused with artificial cerebrospinal fluid (ACSF) containing (in mM) 124 NaCl, 2 KCl, 1.25KH2PO4, 1.6 MgSO4, 22 D-(+)-Glucose, 2 CaCl2, 24 NaHCO3, pH 7.2 (Mathieson and Maler, 1988). Oregon Green 488 1,2-bis-(o-aminophenoxy)-ethane-N,N,N,N-tetraacetic acid, tetraacetoxymethyl ester (OGB-1; Thermo Fisher Scientific) was injected into the OB as described (Frank et al., 2019). Two-photon calcium imaging started >1 hr after dye injection. Odors were prepared and delivered to the nose for 5 s as described (Rupprecht and Friedrich, 2018). Inter-stimulus intervals (ISIs) were >2 min.
 
 Multiphoton calcium imaging was performed using a custom-built microscope with a 20 x water immersion objective (NA 1.0; Zeiss) and galvo scanners (Jacobson et al., 2018). Excitation wavelengths were 930 nm (OGB-1) or 1010 nm (mCherry). The average power under the objective was 50 mW at 930 nm and 20 mW at 1010 nm. The emitted light was split by a dichroic mirror (DMSP550L, Thorlabs), band-pass filtered with a 515/30 filter (Chroma) or with a 641/75 filter (Semrock), and collected with a GaAsP photomultiplier (H7422-40MOD or H11706P-40, Hamamatsu). Images were acquired at 8 Hz using Scanimage 5.5–1 (Vidrio Technologies, LLC) (Pologruto et al., 2003) with a resolution of 256 × 256 pixels.
 
-## Tissue dissociation and cell sorting
+### Tissue dissociation and cell sorting
 
 EnvA-RVΔG-GFP was injected into one or both OBs of Tg[gad1b:Gal4;UAS:TVA-mCherry] fish. Fish were then kept at 36 °C for 3–4 days before preparation of cells. The incubation period was chosen to approximately match the duration of RVΔG infection in neurons that received the virus by transneuronal spread 10 days after virus injection when G is complemented in starter neurons. Because expression in transneuronally labeled neurons appears after >6 days (Figure 4D), we assume that transneuronally labeled were infected for approximately 3–4 days.
 
 Cells were dissociated and sorted as described previously (Hempel et al., 2007) with modifications for fish. Briefly, fish were anesthetized by cooling to 4 °C and decapitated and dissected in ACSF supplemented with 50 mM 2-Amino-5-phosphonovaleric acid (APV), 20 mM 6,7-Dinitroquinoxaline-2,3-dione (DNQX), 5 mg/ml actinomycin D (ACT-D), tetrodotoxin (TTX) 100 nM and 10 g/l Trehalose. After pooling OB samples from 3 to 5 fish, samples were treated with pronase-mix (1 g/l protease type xiv and 33 mg/l of collagenase in ACSF) for 10 minutes and the solution was replaced with fresh ACSF containing 1% FBS. Samples were then triturated gently with small custom-made glass pipettes and stored on ice. DAPI was added to the samples to detect dead cells and cells were sorted based on GFP and mCherry fluorescence using a 70 or 100 μm nozzle (BD FACSAria III; BD Biosciences). Sorted cells were kept in a lysate buffer and stored at –80 °C until further processing.
 
-## RNA sequencing
+### RNA sequencing
 
 RNA was purified using a single-cell RNA purification Kit (Norgen). mRNA-seq libraries were generated using the SmartSeq2 approach (Picelli et al., 2014a) with the following modifications: For cDNA pre-amplification, up to 10 ng of RNA was used as input and reverse transcription was performed using Superscript IV (Thermo Fisher Scientific - 50 °C for 10 min, 80 °C for 10 min). Amplified cDNA (1 ng) was converted to indexed sequencing libraries by tagmentation, using in-house purified Tn5 (Picelli et al., 2014b) and Illumina Nextera primers. Libraries were sequenced on an Illumina HiSeq2500, as 50 bp single-end reads.
 
@@ -188,15 +396,15 @@ Sequenced reads were pre-processed with preprocessReads from the Bioconductor pa
 
 Raw gene counts were obtained using qCount (QuasR) with default parameters and ZFIN gene models (https://zfin.org/downloads/zfin_genes.gff3, downloaded 18-Jul-2019) or the auxiliary file as query. The count table was filtered to remove genes which had less than 2 samples with at least 1 cpm. Differential gene expression was calculated with the Bioconductor package edgeR (version 3.26.4)(Robinson et al., 2010) using the quasi-likelihood F-test after applying the calcNormFactors function, obtaining the dispersion estimates and fitting the negative binomial generalized linear models. The following threshold was applied: Significant differences in gene expression were detected by applying a threshold of abs logFC (fold change)>3, logCPM (counts per million reads mapped to the annotation)>3, and FDR (False Discovery Rate)<0.05. Stress marker genes (GO:0033554) and cell death marker genes (GO:0008219) were chosen from Gene Ontology database (AmiGo2: http://amigo.geneontology.org/amigo/landing). Gene ontology term for differentially expressed genes were found using GENERIC GENE ONTOLOGY (GO) TERM FINDER (https://go.princeton.edu/cgi-bin/GOTermFinder).
 
-## Odor discrimination training and analysis of behavior
+### Odor discrimination training and analysis of behavior
 
 In the experimental group, Basel-golden fish were injected with HSV1[LTCMV:jGCaMP7b] into both OBs and kept at 36 °C for 2 days prior to behavioral training. Associative conditioning was performed as described (Frank et al., 2019; Namekawa et al., 2018). Briefly, individual fish were acclimated to the behavioral setup without food for 1–3  days and subsequently trained to associate one odor stimulus (CS+: alanine) with a food reward, whereas a second odor stimulus (CS−: tryptophan) was not rewarded. Each odor was infused into the tank for 30 s nine times per day in an alternating sequence (inter-trial interval: 20  min) for 5 consecutive days. A small amount of food was delivered at a specific location at the end of the presentation of the CS+ but not the CS-. 3D swimming trajectories were reconstructed from videos acquired by two orthogonal cameras (Logitech HD Pro C920). The following behavioral components were extracted from the trajectories: swimming speed, elevation in water column, presence in the reward zone, surface sampling, distance to the odor inflow and rhythmic circular swimming. The components were combined into a compound score of appetitive behavior as described (Namekawa et al., 2018). The learning index was calculated as the difference between the mean behavioral scores in response to the CS+ and CS− during the final day of training (last nine trials with each odor) in each fish.
 
-## Statistical analysis
+### Statistical analysis
 
 Sample sizes have not been predetermined but were chosen to be similar to those in previous studies. Numbers of biological and technical replicates for each experiment are reported in figure legends and in the text. No outliers or other data were excluded unless noted otherwise.
 
-## Quantification of swimming behavior
+### Quantification of swimming behavior
 
 Fish were placed in a standard home tank with a divider (effective dimensions: Width 24 cm x Hight 10 cm x Depth 5 cm) and video data was recorded with an iphone 12 pro camera (3840 × 2160 pixels, 60fps) attached to a tripod (Joby). For tetanus toxin experiments, Tg[gad1b:Gal4] fish were injected with either HSV1[UAS:GFP] (N=6) or HSV1[UAS:TeNT-GFP] (N=18). Three days following the injection, individual fish were filmed for 15 min. Video data was down-sampled to 1920 × 1080 pixels and 30 Hz, and each fish was tracked using standard DeepLabCut. To this end, video data from all fish were pooled, and 20 random frames were extracted from each video for a total of 480 training frames. 5 key points, corresponding to the nose, dorsal fin, tail, ventral fin and center of body were manually identified, and the network was trained with default parameters (600,000 iterations). Only the nose key point was used for subsequent analysis, and only frames where the nose key point was tracked with a confidence of >0.9 (as reported by DeepLabCut) were used for analysis (99.3%+/-1.15% SEM of frames per video).
 

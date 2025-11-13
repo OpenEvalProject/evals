@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.31226.001 Membrane-assisted amyloid formation is implicated in human diseases, and many of the aggregating species accelerate amyloid formation and induce cell death. While structures of membrane-associated intermediates would provide tremendous insights into the pathology and aid in the design of compounds to potentially treat the diseases, it has not been feasible to overcome the challenges posed by the cell membrane. Here, we use NMR experimental constraints to solve the structure of a type-2 diabetes related human islet amyloid polypeptide intermediate stabilized in nanodiscs. ROSETTA and MD simulations resulted in a unique β-strand structure distinct from the conventional amyloid β-hairpin and revealed that the nucleating NFGAIL region remains flexible and accessible within this isolated intermediate, suggesting a mechanism by which membrane-associated aggregation may be propagated. The ability of nanodiscs to trap amyloid intermediates as demonstrated could become one of the most powerful approaches to dissect the complicated misfolding pathways of protein aggregation.
+Membrane-assisted amyloid formation is implicated in human diseases, and many of the aggregating species accelerate amyloid formation and induce cell death. While structures of membrane-associated intermediates would provide tremendous insights into the pathology and aid in the design of compounds to potentially treat the diseases, it has not been feasible to overcome the challenges posed by the cell membrane. Here, we use NMR experimental constraints to solve the structure of a type-2 diabetes related human islet amyloid polypeptide intermediate stabilized in nanodiscs. ROSETTA and MD simulations resulted in a unique β-strand structure distinct from the conventional amyloid β-hairpin and revealed that the nucleating NFGAIL region remains flexible and accessible within this isolated intermediate, suggesting a mechanism by which membrane-associated aggregation may be propagated. The ability of nanodiscs to trap amyloid intermediates as demonstrated could become one of the most powerful approaches to dissect the complicated misfolding pathways of protein aggregation.
 
 ## Introduction
 
@@ -39,9 +39,36 @@ In order to better study integral membrane proteins in a near-native lipid bilay
 
 Here, we evaluated hIAPP, a 37-residue model amyloidogenic peptide, in order to explore the ability of lipid nanodiscs to stabilize distinct, membrane-associated amyloid oligomers. hIAPP aggregation is strongly associated with the progression of type II diabetes (Westermark et al., 1987). Furthermore, its aggregation on lipid bilayers has been previously demonstrated to destabilize the membrane through multiple mechanisms, suggesting the existence of discrete, non-fibrillar oligomeric species which may be pathogenic and potential targets for isolation via nanodisc stabilization (Brender et al., 2012). Similar to many other amyloids, hIAPP aggregation kinetics and intermediates depend on both the solution conditions and membrane composition; nanodisc-mediated stabilization of folded intermediates may also exhibit a similar dependency. Thus, a thioflavin-T (ThT)-based fluorescence screen was initially used to characterize hIAPP aggregation in the presence of three different membrane scaffold protein-based nanodisc compositions (Table 1) and buffer conditions (Hagn et al., 2013). Varying the ratio of negatively charged phosphatidylglycerol (PG) and zwitterionic phosphatidylcholine (PC) lipids may tune the affinity of hIAPP for the nanodisc surface (Zhang et al., 2017). Temperature was also modulated to alter the bilayer fluidity, which has previously been demonstrated to modulate the ability of peptides to insert into lipid bilayers (Barrera et al., 2012; Sani et al., 2012). Finally, the effect of solution pH on hIAPP aggregation in the presence of various nanodiscs was analyzed given the ability of slightly lower pH to dramatically alter hIAPP’s aggregation behavior (Jha et al., 2014). The optimal combination of nanodisc composition, temperature, and solution pH was subsequently subjected to biochemical characterization and structural analysis by NMR. Through chemical shift analysis, we identified, for the first time, a non-fibrillar β-sheet conformation of hIAPP directly associated with the nanodisc lipid bilayer. This represents the first high-resolution structural model based on experimental constraints of hIAPP associated with a native lipid bilayer and demonstrates the great potential of nanodiscs as a tool to trap and stabilize membrane-associated aggregates of amyloidogenic peptides and proteins in a native, planar bilayer environment.
 
+**Table 1.**
+ Nanodisc identity and composition.All nanodiscs were formed at a protein (MSP):lipid ratio of 1:50 and purified by size exclusion chromatography prior to use.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nanodisc</th>
+      <th>Lipid composition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ND1</td>
+      <td>90% DMPC/10% DMPG</td>
+    </tr>
+    <tr>
+      <td>ND2</td>
+      <td>75% DMPC/25% DMPG</td>
+    </tr>
+    <tr>
+      <td>ND3</td>
+      <td>50% DMPC/50% DMPG</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Assembly kinetics of hIAPP with nanodiscs
+### Assembly kinetics of hIAPP with nanodiscs
 
 ThT is a ubiquitous fluorescent probe in the interrogation of amyloid aggregation kinetics and mechanisms, and it is commonly used to characterize the aggregation of various amyloidogenic peptides in the presence of lipid bilayers, making ThT an ideal tool for the initial identification of a lipid bilayer and buffer system suitable for the stabilization and subsequent structural characterization of a membrane-associated hIAPP intermediate (Galvagnion et al., 2015; Zhang et al., 2017). After verifying that the fluorescent properties of ThT are minimially perturbed by the presence of nanodiscs in solution (Figure 1a), a suite of conditions, including varied lipid nanodisc compositions, pH, and temperature were evaluated for their ability to influence the kinetics of hIAPP aggregation as observed by ThT (Figure 1b and Figure 2). Resulting curves were subsequently fit to a logarithm to extrapolate their lag time (tlag) which correlates to the time required for peptide to convert from its monomeric state to an aggregation-competent oligomer (Figure 1c) (Batzli and Love, 2015). If a set of conditions is capable of promoting a stable membrane-associated intermediate it is likely that the observed tlag will increase and/or fibrillation will be completely halted due to the newly stabilized species inhibiting aggregation.
 
@@ -57,7 +84,7 @@ These preliminary results revealed a number of factors regarding hIAPP-nanodisc 
 
 Based upon the ThT screening results, it was determined that utilizing ND1 (90% DMPC/10% DMPG) in acetate buffer (pH 5.3) would most likely yield a stable, nanodisc associated hIAPP intermediate. Under these conditions, regardless of the temperature studied, fibrillation was not observed, even after 2000 min. To confirm the ability of ND1 to block large aggregate formation, transmission electron microscopy (TEM) was employed (Figure 1d). While hIAPP incubated at pH 5.3 for 1 week generated conventional amyloid fibrils, hIAPP co-incubated with 1 equiv. of ND1 did not form large fibrillar aggregates during the same incubation time. Instead, nanodiscs of increased size, relative to peptide-free ND1, were observed. This increase in size suggests that hIAPP successfully interacted with and incorporated into ND1 to generate a larger, stable complex, similar to size increases observed for other protein complexes contained within nanodiscs (Xu et al., 2013). The ability of ND1 to stabilize a non-fibrillar intermediate was further investigated through solution NMR. During amyloid formation, the intensity of the observable resonances originating from the monomeric protein decreased due to the formation of larger, NMR invisible aggregates (Figure 1e). Inhibition of this aggregation would maintain the signal from monomeric protein for an extended period of time. The NMR signal for monomeric hIAPP in solution decayed rapidly and reached 50% of its initial intensity after 25 hr. However, freshly prepared, monomeric hIAPP in the presence 1 equiv. of ND1 maintained a relative intensity of ~70% following a rapid initial decay, possibly due to early oligomer formation. These data suggest that ND1 under slightly acidic conditions is capable of blocking conventional amyloid formation by hIAPP and may successfully stabilize a membrane-associated intermediate. This combination of buffer and lipid conditions was used exclusively in subsequent analysis of hIAPP-membrane interactions.
 
-## Stabilization and structural characterization of an hIAPP intermediate
+### Stabilization and structural characterization of an hIAPP intermediate
 
 While ND1 is capable of blocking hIAPP fibrillation, applying the optimized conditions to stabilize a distinct, highly populated intermediate state requires further optimization. The aggregation pathway and intermediates formed by amyloidogenic peptides have been previously shown to depend on conditions, particularly peptide concentration and preparation prior to experimentation (Brender et al., 2015; Serra-Batiste et al., 2016). To explore the effects of peptide preparation on unique intermediate stabilization, both freshly prepared monomer and a mixed population of oligomers were both prepared, analyzed by both size exclusion chromatography (SEC) and gel electrophoresis, and analyzed for their unique interactions with ND1 (Figure 3a–c). While the oligomeric preparation generated a variety of differently sized species in solution, when separated by both SEC and gel electrophoresis, a single population of hIAPP was observed when the oligomeric population was incubated with ND1, suggesting the stabilization of a unique intermediate. Additionally, dynamic light scattering (DLS) indicates that incubation of the oligomeric hIAPP with ND1 generates species with a larger hydrodynamic radius than free ND1, suggesting that hIAPP is able to interact directly with ND1 under these conditions and generate a larger, stable complex (Figure 3d). Additionally, when oligomeric hIAPP was incubated with ND1 and its NMR signal monitored over time, it stabilized at approximately 80% relative intensity after a rapid drop off, a trend similar to monomeric hIAPP but with a larger percentage of the signal remaining visible (Figure 1e). This suggests that while both preparations are capable of binding to ND1 and stabilizing non-fibrillar intermediates, they may be stabilized at different points or the size of the stabilized population may differ.
 
@@ -87,7 +114,7 @@ To further refine the model of folded hIAPP interacting with ND1, Chemical Shift
 
 **Figure 7.:** The relative energy plot of the CS-Rosetta calculation, including an overlay of 10 lowest energy structures.
 
-## Oligomerization model and membrane orientation of hIAPP
+### Oligomerization model and membrane orientation of hIAPP
 
 With a structural model in hand, it is important to determine its membrane orientation to fully understand the roles of the intermediate structure as well as the lipid membrane. Unlike an amphipathic helical fold, a common feature of other amyloidogenic peptides interacting with a lipid bilayer, the proposed β-sheet structure of hIAPP does not possess explicit hydrophobic and hydrophilic surfaces (Nath et al., 2011). Therefore, we used NMR line broadening caused by binding to ND1 or paramagnetic probes to identify regions in the folded hIAPP species that directly interact with the membrane surface or the surrounding solvent (Figure 8).
 
@@ -119,45 +146,55 @@ The differences between these four structures highlight the challenges associate
 
 ## Materials and methods
 
-## Recombinant hIAPP expression and purification
+### Recombinant hIAPP expression and purification
 
 Full-length hIAPP (KCNTATCATQRLANFLVHSSNNFGAILSSTNVGSNTY-NH2, disulfide bridge 2–7), both unlabeled and uniformly, isotopically labeled, was expressed following a previously described protocol (Rodriguez Camargo et al., 2015). Briefly, hIAPP is expressed in E. coli as a fusion with an N-terminal solubility tag and a C-terminal affinity tag. Following affinity purification, the C-terminal amide of native hIAPP is formed by incubating the fusion protein in a solution containing ammonium bicarbonate. The N-terminal solubility tag is then cleaved by V8 protease and the cleavage products are separated by filtration and reverse phase-HPLC. Finally, the disulfide bond is formed by treating the purified peptide with H2O2 in acetate buffer. Molecular biology reagents were obtained from New England Biolabs, Roche and from Sigma-Aldrich (St. Louis, MO). Isotopically labeled components for minimal media were purchased from Cambridge Isotope Laboratories (CIL).
 
-## Nanodisc preparation
+### Nanodisc preparation
 
 Nanodiscs have been assembled with a truncated version of MSP1D1, called MSP1D1ΔH5, as described previously (Hagn et al., 2013). A MSP-to-lipid ratio of 1:50 was used for DMPC (1,2-dimyristoyl-sn-glycero-3-phosphocholine) and DMPG (1,2-dimyristoyl-sn-glycero-3-phospho-(1'-rac-glycerol)) lipids. The percentage of negatively charged DMPG in the lipid blend was varied from 10% to 50%, as described in Table 1. All lipids were purchased from Avanti Polar Lipids (Alabaster, AL) or Cayman Chemical (Ann Arbor, MI). The final concentrations of MSP1D1ΔH5 was 200 µM, lipid concentration was 10 mM. Sodium cholate, that is required for lipid solubilization, was kept at a concentration of 20 mM in the assembly mixture in MSP-Buffer (20 mM Tris pH 7.5, 100 mM NaCl, 0.5 mM EDTA). After incubation for one hour at room temperature (RT), 0.7 g / mL of Biobeads-SM2 (Biorad) were added and the mixture was gently shaken for two more hours at RT. After removal of biobeads, the assembled nanodiscs were concentrated in an Amicon centrifugal device (50 kDa cut-off) (Merck-Millipore, Billerica, MA) to a final volume of 1 mL and purified on an S200a size excluzsion column. One symmetric peak was obtained and concentrated to a 800 µL volume, yielding a nanodisc concentration of 260 µM (70% yield).
 
-## Thioflavin-T assay
+### Thioflavin-T assay
 
 Amyloid aggregation kinetics in the presence of various nanodiscs were monitored by the amyloid-specific dye Thioflavin-T (ThT). Samples were prepared by initially dissolving unlabeled expressed hIAPP in a dilute HCl solution (pH 4) to a final concentration of 150 μM and maintained on ice. The peptide was further diluted into the appropriate buffer (either 20 mM PO4, pH 7.4 or 30 mM Acetate, pH 5.3) in the presence of both 50 mM NaCl and 10 μM ThT to a final peptide concentration of 5 μM. The solutions also contained either 0, 0.5, 1, 2, 5, or 10 eq of either ND1, ND2, or ND3. Samples were subsequently plated in triplicate on uncoated Fisherbrand 96-well polystyrene plates and readings were taken on a Biotek Synergy two microplate reader. Samples were incubated for 48 hr in the instrument at either 25 or 35°C with continuous, slow orbital shaking. Wells were read from the bottom with an excitation wavelength of 440 nm (30 nm bandwidth) and an emission wavelength of 485 nm (20 nm bandwidth) at 4-min intervals.
 
-Following data acquisition, the raw fluorescence traces were background corrected and normalized. Normalized curves were subsequently fit to Eq. q and Equation 2 in order to calculate the lag time (tlag) for each curve (Batzli and Love, 2015). The tlag values for each experimental condition were subsequently averaged across three separate trials.(1)F(t)=Finf+F0−Finf(1+ek(t−t50))(2)tlag=t50−2k
+Following data acquisition, the raw fluorescence traces were background corrected and normalized. Normalized curves were subsequently fit to Eq. q and Equation 2 in order to calculate the lag time (tlag) for each curve (Batzli and Love, 2015). The tlag values for each experimental condition were subsequently averaged across three separate trials.
 
-## Transmission electron microscopy (TEM)
+$$
+F(t)=F_{inf}+\frac{F_{0}−F_{inf}}{(1+e^{k(t−t_{50})})}
+$$
+
+
+
+$$
+t_{lag}=t_{50}−\frac{2}{k}
+$$
+
+#### Transmission electron microscopy (TEM)
 
 Samples of freshly purified ND1 (50 μM), ND1incubated with hIAPP (50 μM of each) for one week, and fibers formed by incubating 50 μM hIAPP in buffer for one week were prepared. TEM grids were prepared by adding 10 μL of the sample were placed on the grid (Formvar/Carbon 300 mesh copper coated grids from Electron Microscopy Sciences) for 1 min followed by the removal of excess liquid by filter paper. Grids were then stained for 2 min with 10 μL of 1% uranyl acetate solution. The excess liquid was again dried using filter paper. The grid was again treated with 10 mL of 1% uranyl acetate solution for 30 s before the liquid was dried with filter paper. Samples were immediately measured on Transmission Electron Microscopy employing a Zeiss EM 10 CR (Zeiss, Germany).
 
-## Size exclusion chromatography (SEC)
+### Size exclusion chromatography (SEC)
 
 SEC was performed on samples of freshly prepared nanodisc, monomeric hIAPP, oligomeric hIAPP, and mixtures of hIAPP and nanodiscs with a flow rate of 0.5 mL/min on an Äkta Pure protein purifier (GE Healthcare) using a semi-preparative Superdex S200 Increase 10/300 GL column (24 mL bed volume, GE Healthcare) equilibrated in MSP buffer.
 
-## Gel electrophoresis
+### Gel electrophoresis
 
 Tricine-SDS-PAGE gel electrophoresis was performed using 16% Tris-tricine-SDS gels (Schägger, 2006). Gels was run at 10W for approximately 1 hr, followed by fixation for 10 min in a solution of 50% methanol and 20% acetic acid. The gels were stained for 10 min with a 0.25% solution of the dye Coomassie (Serva) dissolved in 15% methanol and 10% acetic acid. Gels were subsequently washed with de-ionized water, and destained for 10 min with 10% acetic acid. The final gel was stored in water and imaged.
 
-## NMR sample preparation
+### NMR sample preparation
 
 A lyophilized aliquot of expressed hIAPP was dissolved into the NMR buffer containing 30 mM deuterated Acetate (pH 5.3) with 10% D2O. After NMR measurements, the samples were measured and stored at 4°C when the peptide was along. However, to work with the nanodiscs, we stored the samples at room temperature and NMR experiments were carried out at 35°C. The formation of the intramolecular disulfide bond was confirmed by NMR. The formation of the intramolecular disulfide bond was confirmed by NMR. To perform NMR experiments with the nanodiscs. The hIAPP powder was dissolved in a small amount of buffer, vortexed and mixed with a concentrated solution of ND to the desired final ratio, completed the final volume with buffer until 250 μM. The final hIAPP concentration was 50 μM in all cases. Samples were directly transferred into a Shigemi NMR tubes (Shigemi Inc., Allison Park) for NMR measurements. In experiments utilizing the monomeric preparation of hIAPP, peptide expression, purification, and oxidation were completed one day prior to starting NMR measurements. The freshly prepared hIAPP peptide was dissolved directly into buffer right before beginning NMR data acquisition. In contrast, hIAPP oligomers were generated from expressed, purified, and oxidized peptide prepared 4 weeks prior to experimental measurement, but the peptide was stored at −20°C which allowed the semi-hydrated peptide powder to form an early aggregate. ESI-MS was performed to ensure that no degradation occurred during oligomer formation.
 
-## NMR experiments
+### NMR experiments
 
 NMR experiments employing Bruker Avance 500, 600, 750 MHz spectrometers were performed at 35°C. The proton chemical shifts were referenced to the water resonance frequency while the 15N and 13C shifts were referenced indirectly. Backbone and side chain assignments were obtained using triple resonance experiments HNCA and HNCOCA. (Sattler et al., 1999) Side-chain assignments and chemical shifts were obtained from 13C HSQC assignment transposition. Overall, an assignment completeness of 97% was obtained. NMR spectra were processed using the software TopSpin (Bruker) and NMRPIPE (Goddard and Kneller, 1997). Spectra were analyzed using ccpNMR analysis (Vranken et al., 2005).
 
-## Structural model calculation
+### Structural model calculation
 
 A structural model for the folded subunit of hIAPP was calculated using the Chemical-Shift-ROSETTA (CS-ROSETTA Version 4.8) server from the Biological Magnetic Resonance Data Bank Rosetta. CS-ROSETTA is a robust tool for de novo protein structure generation, using 13C, 15N and 1H NMR chemical shifts as input. The CS-ROSETTA approach utilizes SPARTA-based selection of protein fragments from the PDB, in conjunction with a regular ROSETTA Monte Carlo assembly and relaxation procedure, to generate structures of minimized energies. In addition, an alternative CS-ROSETTA fragment selection protocol is provided that improves robustness of the method for proteins with missing or erroneous NMR chemical shift input data (Lange et al., 2012; Shen et al., 2008, Shen et al., 2010, Shen et al., 2009).
 
-## Molecular dynamics simulation
+### Molecular dynamics simulation
 
 Molecular dynamics (MD) simulations using Gromacs 5.1.2 were performed to determine the membrane interaction and orientation of the peptide (Abraham et al., 2015). Two peptide models based on NMR determined structures were created: a helix fold and the β-strand intermediate structure of hIAPP. To describe the protein interaction, the Martini force field version 2.2 was used together with an elastic network to conserve the secondary structure information (de Jong et al., 2013; Marrink et al., 2007). To mimic the experimental condition, a pH value of 5.3 was taken into account by neutralizing the N and C termini and placing a positive charge on the His-18 side chain. A 9:1 DMPC:DMPG lipid bilayer was created using the insane script (Wassenaar et al., 2015) and Martini 2.0 lipids parameters. The standard Martini water model was used (Marrink et al., 2007).
 

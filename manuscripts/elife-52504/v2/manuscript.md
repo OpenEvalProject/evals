@@ -40,31 +40,75 @@ Molecular profiling of naïve hESCs has suggested that these cells may harbor a 
 
 ## Results
 
-## Naïve hESCs exhibit increased trophoblast potential during embryoid body formation
+### Naïve hESCs exhibit increased trophoblast potential during embryoid body formation
 
 As a first step toward examining the trophoblast potential of naïve and primed hESCs, we measured the expression levels of trophoblast-associated markers during embryoid body (EB) formation (Figure 1A), which provides a rapid assessment of spontaneous differentiation capacity into early lineages (Allison et al., 2018). Previous studies reported limited induction of embryonic lineage markers in EBs formed from naïve hESCs, but did not examine the expression of trophoblast-associated genes (Liu et al., 2017; Rostovskaya et al., 2019). We generated naïve hESCs in 5i/L/A (Theunissen et al., 2014) from two genetic backgrounds, H9 and WIBR3, confirmed their upregulation of naïve-specific markers and downregulation of primed-specific markers (Figure 1—figure supplement 1A), and aggregated them to form EBs in growth factor- and inhibitor-free media for 12 days (Figure 1A; Figure 1—figure supplement 1B). The mRNA expression levels of six trophoblast markers, ELF5, KRT7, TFAP2C, GATA3, TEAD4, and CDX2 (Hemberger et al., 2010; Lee et al., 2016; Ng et al., 2008; Strumpf et al., 2005), were measured by quantitative real time PCR (qRT-PCR) analysis (Figure 1B; Figure 1—figure supplement 1C). Significantly enriched expression of trophoblast markers was observed in EBs derived from naïve compared to primed hESCs (Figure 1B; Figure 1—figure supplement 1C). Furthermore, many of the examined trophoblast markers were already elevated in naïve versus primed hESCs prior to EB formation (Figure 1B; Figure 1—figure supplement 1C), consistent with our prior transcriptome analysis (Theunissen et al., 2016). These findings support the notion that naïve hESCs harbor increased spontaneous trophoblast differentiation potential compared to primed hESCs.
 
-## Naïve hESCs require capacitation or re-priming to respond to BMP4-directed trophoblast differentiation
+![Figure 1.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig1-v2.jpg)
+
+**Figure 1.:** (A) The experimental scheme for assessing spontaneous trophoblast differentiation potential of primed and naïve hPSCs by using EB formation assay. (B) Quantitative gene expression analysis for trophoblast marker genes ELF5, KRT7, TFAP2C, and GATA3 in H9 primed and naïve hPSCs and EBs generated from the respective hPSCs. Error bars indicate ±1 SD of technical replicates. ‘*' indicates a p-value<0.05, ‘**' indicates a p-value<0.01, and ‘***' indicates a p-value<0.001. (C) The experimental scheme for assessing BMP4-mediated trophoblast differentiation potential of naive hESCs (top). Phase contrast image of H9 naïve hESCs and H9 naïve hESCs following the 6 day step I protocol for BMP4-mediated CTB differentiation (bottom). The scale bars indicate 75 μm. (D) The experimental scheme of re-priming naïve hESCs and assessing their BMP4-mediated trophoblast differentiation potential (top). Phase contrast images of H9 re-primed hESCs and H9 re-primed hESCs following the 6 day step I protocol for BMP4-mediated CTB differentiation (bottom). The scale bars indicate 75 μm. (E) Immunofluorescence staining for CDX2, ZO1, and KRT7 in CTBs generated from H9 primed and re-primed hESCs. The scale bars indicate 75 μm. (F) The experimental scheme of capacitating naïve hESCs and assessing their BMP4-mediated trophoblast differentiation potential (top). Phase contrast images of H9 capacitated hESCs and H9 capacitated hESCs following the 6 day step I protocol for BMP4-mediated CTB differentiation (bottom). The scale bars indicate 75 μm. (G) Quantitative gene expression analysis for trophoblast marker genes GATA3, CDX2, KRT7, MMP2, hCGB, and SDC1 in H9 primed and capacitated hESCs and trophoblasts differentiated from the respective hPSCs. Error bars indicate ± 1 SD of technical replicates. ‘***' indicates a p-value<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantitative gene expression analysis for naïve marker genes KLF17 and DNMT3L, and primed marker genes ZIC2 and SFRP2 in H9 primed and naïve hESCs. Error bars indicate ±1 SD of technical replicates. ‘**' indicates a p-value<0.01, and ‘***' indicates a p-value<0.001. (B) Phase contrast images of H9 and WIBR3 primed and naïve hESCs, and EBs generated from the respective hESCs. The scale bars indicate 75 μm. (C) Quantitative gene expression analysis for trophoblast marker genes ELF5, KRT7, TFAP2C, GATA3, CDX2, and TEAD4 in H9 and WIBR3 primed and naïve hESCs, and EBs generated from the respective hESCs. Error bars indicate ±1 SD of technical replicates. ‘***' indicates a p-value<0.001. (D) The experimental scheme of step II protocol for BMP4-mediated terminal EVT and STB differentiation from CTBs (top). Quantitative gene expression analysis for trophoblast marker genes TFAP2C, ELF5, and HLA-G in H9 primed and capacitated hPSCs and trophoblasts differentiated from the respective hESCs. Error bars indicate ± 1 SD of technical replicates. ‘*' indicates a p-value<0.05, and ‘***' indicates a p-value<0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Immunofluorescence staining for TEAD4 and KRT7 in CTBs, and ZO1 and MMP2 in terminally differentiated trophoblasts derived from H9 primed hESCs. The scale bars indicate 75 μm. The white arrow indicates multinucleation. (B) Immunofluorescence staining for ZO1, MMP2, and hCG in terminally differentiated trophoblasts derived from H9 re-primed hESCs. The scale bars indicate 75 μm. The white arrow indicates multinucleation. (C) Immunofluorescence staining for hCG, ZO1, and MMP2 in terminally differentiated trophoblasts derived from H9 capacitated hPSCs. The scale bars indicate 75 μm. The white arrow indicates multinucleation.
+
+### Naïve hESCs require capacitation or re-priming to respond to BMP4-directed trophoblast differentiation
 
 We next assessed the trophoblast potential of naïve relative to primed hESCs using a protocol for directed trophoblast differentiation that utilizes a low dose of bone morphogenetic protein 4 (BMP4) (Horii et al., 2016). It has long been known that primed hPSCs acquire certain trophoblast characteristics upon stimulation with BMP4 (Amita et al., 2013; Horii et al., 2016; Xu et al., 2002). However, when naïve hESCs were subjected to a protocol for BMP4-directed differentiation into cytotrophoblast (CTB) progenitors (Horii et al., 2016), the cells did not survive (Figure 1C). This recalcitrance to BMP4 is reminiscent of the delayed response of naïve hPSCs to embryonic inductive cues (Liu et al., 2017; Rostovskaya et al., 2019). We examined whether naïve hESCs would gain the capacity for BMP4-directed differentiation upon returning to the primed state, a process referred to as ‘re-priming’ (Theunissen et al., 2016). Indeed, naïve hESCs treated with StemPro for five passages re-gained competence for BMP4-directed trophoblast differentiation, as shown by the expression of several CTB markers (Figure 1D,E; Figure 1—figure supplement 2A,B). When these CTBs were further differentiated using feeder-conditioned medium supplemented with BMP4, we observed the expected induction of extravillous trophoblast (EVT) and syncytiotrophoblast (STB) marker genes, as observed for differentiation from primed hESCs (Horii et al., 2016; Figure 1G; Figure 1—figure supplements 1D and 2A,B). We also examined whether capacitation of naïve hESCs using the Wnt inhibitor, XAV939 (Rostovskaya et al., 2019), would confer responsiveness to BMP4-directed trophoblast differentiation. Capacitated cells could not only readily undergo Step I CTB differentiation, but did so more efficiently than primed hESCs based on analysis of trophoblast-specific transcripts and proteins (Figure 1F,G; Figure 1—figure supplements 1D and 2C). These results indicate that an efficient response to BMP4-directed trophoblast differentiation requires exit from naïve human pluripotency, and appears to be most efficient when initiated from the formative phase.
 
-## Human trophoblast stem cells can be derived from naïve, but not primed, hPSCs
+### Human trophoblast stem cells can be derived from naïve, but not primed, hPSCs
 
 The above experiments indicate that naïve hESCs efficiently upregulate trophoblast markers during spontaneous EB differentiation, but require transition into a formative pluripotent state to become competent for BMP4-directed trophoblast differentiation. This led us to consider whether naïve hESCs might be directly responsive to alternative conditions for trophoblast differentiation that are independent of BMP4. A recent study reported the derivation of hTSCs from blastocysts and first-trimester placental tissues in the presence of recombinant epidermal growth factor (EGF) and Wnt activator (CHIR), and inhibitors of transforming growth factor beta (TGFβ), histone deacetylase (HDAC), and Rho-associated kinase (ROCK) (Okae et al., 2018). We seeded isogenic lines of naïve and primed hPSCs on Collagen IV and examined their response to hTSC media (Figure 2A). Naïve hPSCs acquired a typical hTSC-like morphology within several passages and could be expanded for at least 20 passages while maintaining a high proliferation rate (Figure 2B; Figure 2—figure supplement 1A). Similar results were obtained using three independent naïve hPSC lines derived from H9 hESCs, WIBR3 hESCs, and AN1 induced pluripotent stem cells (iPSCs). In contrast, the parental primed hPSCs did not acquire an hTSC-like morphology, even after prolonged culture in hTSC media (Figure 2B). These observations indicate that naïve hPSCs are capable of adapting to the specific culture environment of hTSCs, whereas primed hPSCs are not.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig2-v2.jpg)
+
+**Figure 2.:** (A) The experimental scheme for deriving hTSCs from primed and naïve hPSCs. (B) Phase contrast images of H9 and AN_1.1 hTSC-like cells derived from naïve hPSCs, as well as H9 and AN_1.1 primed hPSCs following culture in hTSC medium. All H9 cells were at passage 8, and all AN_1.1 cells were at passage 10. The scale bars indicate 75 μm. (C) Flow cytometry analysis for TSC markers ITGA6 and EGFR in H9 naïve hPSCs, H9 hTSC-like cells derived from naïve hPSCs, H9 primed hPSCs, and H9 primed hPSCs cultured in hTSC medium. (D) Quantitative gene expression analysis for trophoblast marker genes ELF5, KRT7, GATA3, TFAP2C, TEAD4, and CDX2 in H9 primed and naïve hPSCs, H9 hTSC-like cells derived from naïve hPSCs, and H9 primed hPSCs cultured in hTSC medium. Error bars indicate ±1 SD of technical replicates. ‘***' indicates a p-value<0.001. (E) Immunofluorescence staining for TSC markers KRT7, TEAD4, and TP63 in H9 hTSC-like cells derived from naïve hPSCs. The scale bars indicate 75 μm. (F) Flow cytometry analysis for naïve hPSC markers SUSD2 and CD75 in H9 and AN_1.1 naïve hPSCs and hTSC-like cells derived from naïve hPSCs. (G) Quantitative gene expression analysis for naïve hPSC marker KLF17 in H9 primed and naïve hPSCs, hTSC-like cells derived from naïve hPSCs, and primed hPSCs cultured in hTSC medium. Error bars indicate ±1 SD of technical replicates. ‘***' indicates a p-value<0.001. (H) Quantitative gene expression analysis for the embryonic germ layer markers PAX6, VIM, and SOX17 in H9 primed and naïve hPSCs, hTSC-like cells derived from naïve hPSCs, and primed hPSCs cultured in hTSC medium. Error bars indicate ± 1 SD of technical replicates. ‘*' indicates a p-value<0.05, ‘***' indicates a p-value<0.001, and ‘n.s.’ indicates a p-value>0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Phase contrast images of WIBR3 hTSC-like cells derived from naïve hPSCs. The scale bars indicate 75 μm. (B) Flow cytometry analysis for TSC markers ITGA6 and EGFR in AN_1.1 naïve hPSCs, hTSC-like cells derived from naïve hPSCs, primed hPSCs, and primed hPSCs cultured in hTSC medium. (C) Quantitative gene expression analysis for trophoblast marker genes ELF5, KRT7, GATA3, TFAP2C, TEAD4, and CDX2 in AN_1.1 primed and naïve hPSCs, hTSC-like cells derived from naïve hPSCs, and primed hPSCs cultured in hTSC medium. Error bars indicate ±1 SD of technical replicates. ‘*' indicates a p-value<0.05, and ‘***' indicates a p-value<0.001. (D) Immunofluorescence staining for TSC markers KRT7, TEAD4, and TP63 in AN_1.1 hTSC-like cells derived from naïve hPSCs. The scale bars indicate 75 μm. (E) Quantitative gene expression analysis for naïve hPSC marker KLF17 in AN_1.1 primed and naïve hPSCs, hTSC-like cells derived from naïve hPSCs, and primed hPSCs cultured in hTSC medium. Error bars indicate ±1 SD of technical replicates. ‘***' indicates a p-value<0.001. (F) Quantitative gene expression analysis for the three embryonic germ layer markers PAX6, VIM, and SOX17 in AN_1.1 primed and naïve hPSCs, hTSC-like cells derived from naïve hPSCs, and primed hPSCs cultured in hTSC medium. Error bars indicate ±1 SD of technical replicates. ‘**' indicates a p-value<0.01, ‘***' indicates a p-value<0.001, and ‘n.s.’ indicates a p-value>0.05. (G) Phase contrast images of H9 naïve hPSCs cultured in PXGL (left) and H9 hTSC-like cells derived from naïve hPSCs cultured in PXGL (right). The scale bars indicate 75 μm. (H) Flow cytometry analysis for TSC markers ITGA6 and EGFR in H9 naïve hPSCs cultured in PXGL (left) and H9 hTSC-like cells derived from naïve hPSCs cultured in PXGL (right). (I) Quantitative gene expression analysis for trophoblast marker genes KRT7, GATA3, TFAP2C, TEAD4, CDX2, and ELF5 in H9 naïve hPSCs, H9 hTSC-like cells derived from naïve hPSCs cultured in 5i/L/A, and H9 hTSC-like cells derived from naïve hPSCs cultured in PXGL. Error bars indicate ±1 SD of technical replicates. ‘**' indicates a p-value<0.01, and ‘n.s.’ indicates a p-value>0.05. (J) Immunofluorescence staining for TSC markers KRT7, TEAD4, and TP63 in H9 hTSC-like cells derived from naïve hPSCs cultured in PXGL. The scale bars indicate 75 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Phase contrast images of single-cell expanded H9 naïve hPSC clones A1, A2, and A3 (top), and naïve hTSCs derived from A1, A2, and A3 naïve hPSCs (bottom). The scale bars indicate 75 μm. (B) Flow cytometry analysis for naïve hPSC markers SUSD2 and CD75 in A1, A2, and A3 naïve hPSCs (top) and A1, A2, and A3 naïve hTSCs (bottom). (C) Flow cytometry analysis for TSC markers ITGA6 and EGFR in A1, A2, and A3 naïve hPSCs (top) and A1, A2, and A3 naïve hTSCs (bottom).
 
 We proceeded to further characterize the naïve hPSC-derived hTSC-like cells (from here referred to as naïve hTSCs). We found that naïve hTSCs uniformly express ITGA6 and EGFR, two commonly used cell surface markers that mark both CTBs and hTSCs (Bischof and Irminger-Finger, 2005; Horii et al., 2016; Okae et al., 2018), in contrast to primed hPSCs that had been expanded in hTSC media (Figure 2C; Figure 2—figure supplement 1B). The naïve hTSCs also expressed significantly higher levels of ELF5, KRT7, GATA3, TFAP2C, and TEAD4 transcripts (Figure 2D; Figure 2—figure supplement 1C). Notably, naïve hTSCs exhibited almost no CDX2 expression, which is consistent with hTSCs derived from blastocysts or first-trimester placental tissues (Okae et al., 2018; Figure 2D; Figure 2—figure supplement 1C). Naïve hTSCs also expressed the hTSC markers KRT7, TEAD4, and TP63 at the protein level (Lee et al., 2016; Li et al., 2013; Figure 2E; Figure 2—figure supplement 1D). Flow cytometry analysis for CD75 and SUSD2, two naïve-specific cell surface markers (Bredenkamp et al., 2019a; Collier et al., 2017), confirmed the loss of naïve identity in naïve hTSCs (Figure 2F), which was further corroborated by downregulation of KLF17 transcript (Figure 2G; Figure 2—figure supplement 1E). These findings indicate that naïve hPSCs directly give rise to a uniform population of cells that closely resemble hTSCs based on gross morphology, surface markers, and trophoblast-specific gene expression. Conversely, primed hPSCs did not upregulate trophoblast markers when cultured in hTSC media, but instead exhibited increased expression of VIM and PAX6, suggesting the acquisition of a neuroectodermal fate (Figure 2H; Figure 2—figure supplement 1F).
 
 To confirm that the ability of naïve hPSCs to give rise to hTSC-like cells is not specific to the 5i/L/A culture condition, we attempted to derive naïve hTSCs from naïve hPSCs cultured in an alternative naïve medium, PXGL (Bredenkamp et al., 2019b; Figure 2—figure supplement 1G). Both morphological and molecular analyses indicated that naïve hTSCs derived from PXGL-cultured naïve hPSCs closely resemble those derived from 5i/L/A-cultured naïve hPSCs (Figure 2—figure supplement 1G–J). This suggests that naïve hTSC-derivation is likely an intrinsic property of the naïve state of human pluripotency, regardless of the specific culture condition used. Additionally, we investigated whether naïve hPSCs can give rise to naïve hTSCs on a clonal level, which would preclude that hTSCs arise from a small population of pre-existing trophoblast-like cells in the culture. We therefore picked and expanded three single-cell H9 naïve hPSC clones (Figure 2—figure supplement 2A), and confirmed their naïve molecular characteristics and lack of hTSC marker expression (Figure 2—figure supplement 2B,C). Subsequently, naïve hTSCs were derived from these clonally expanded naïve hPSCs. All of these clonally derived naïve hTSCs exhibit a typical hTSC morphology (Figure 2—figure supplement 2A), and are negative for naïve hPSC markers but positive for hTSC markers (Figure 2—figure supplement 2B,C). These results lend further support to the notion that the ability to give rise to hTSCs is an intrinsic property of naïve hPSCs.
 
-## hTSCs derived from naïve hPSCs have bipotent differentiation potential
+### hTSCs derived from naïve hPSCs have bipotent differentiation potential
 
 Since naïve hTSCs exhibit numerous characteristics of hTSCs derived from blastocysts or placental tissues, we sought to examine their differentiation potential into specialized trophoblast cells. First, we performed directed differentiation of naïve hTSCs into EVTs, which invade the endometrium to increase blood flow between the mother and fetus (James et al., 2012; Watson and Cross, 2005). Following application of a culture system for EVT differentiation from hTSCs that contains Neuregulin 1 (NRG1), the TGF-β inhibitor A83-01, and Matrigel (Okae et al., 2018), naïve hTSCs acquired a characteristic EVT-like morphology (Figure 3A,B). We tested whether the naïve hTSC-derived EVT-like cells expressed two EVT-specific protein markers, HLA-G and MMP2 (Horii et al., 2016; Lee et al., 2016). Flow cytometry analysis demonstrated that about 90% of EVT-like cells were positive for HLA-G (Figure 3C). Similarly, expression and secretion of MMP2 was detected by ELISA and immunofluorescence staining (Figure 3D; Figure 3—figure supplement 1A). The induction of HLA-G and MMP2 in naïve hTSC-derived EVT-like cells was also confirmed at the mRNA level by qRT-PCR (Figure 3E; Figure 3—figure supplement 1B). Finally, since invasiveness is a prominent property of EVTs (Burton et al., 2009; James et al., 2012; McEwan et al., 2009), we performed a transwell-based Matrigel invasion assay. The results indicate that our EVT-like cells have invasive potential, in contrast to the naïve hTSCs from which they were derived (Figure 3F; Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig3-v2.jpg)
+
+**Figure 3.:** (A) The experimental scheme for EVT differentiation from naïve hPSC-derived hTSCs. (B) Phase contrast image of H9 and AN_1.1 hTSC-like and EVT-like cells. The scale bars indicate 75 μm. (C) Flow cytometry analysis for EVT marker HLA-G in H9 and AN_1.1 hTSC-like cells and EVT-like cells. (D) Levels of MMP2 secreted by H9 and AN_1.1 hTSC-like cells and EVT-like cells as measured by ELISA. Error bars indicate ±1 SD of technical replicates. (E) Quantitative gene expression analysis for EVT marker gene MMP2 in H9 and AN_1.1 hTSC-like cells and EVT-like cells. Error bars indicate ± 1 SD of technical replicates. ‘***' indicates a p-value<0.001. (F) Matrigel invasion assay of H9 and AN_1.1 hTSC-like cells and EVT-like cells. (G) The experimental scheme for STB differentiation from naïve hPSC-derived hTSCs. (H) Phase contrast image of H9 and AN_1.1 hTSC-like and 3D STB-like cells. The scale bars indicate 75 μm. (I) Quantitative gene expression analysis for STB marker genes CGB and SDC1 in H9 and AN_1.1 hTSC-like cells and 3D STB-like cells. Error bars indicate ±1 SD of technical replicates. ‘*' indicates a p-value<0.05, and ‘**' indicates a p-value<0.01. (J) Immunofluorescence staining for STB markers hCG and SDC1 in H9 3D STB-like cells. The scale bars indicate 75 μm. (K) Immunofluorescence staining for STB markers hCG and SDC1 in AN_1.1 3D STB-like cells. The scale bars indicate 75 μm. (L) Quantitative gene expression analysis for TSC marker gene TEAD4 in H9 and AN_1.1 hTSC-like cells and 3D STB-like cells. Error bars indicate ± 1 SD of technical replicates. ‘***' indicates a p-value<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunofluorescence staining for EVT marker MMP2 in H9 and AN_1.1 EVT-like cells. The scale bars indicate 75 μm. (B) Quantitative gene expression analysis for EVT marker gene HLA-G in H9 and AN_1.1 hTSC-like cells and EVT-like cells. Error bars indicate ±1 SD of technical replicates. ‘***' indicates a p-value<0.001. (C) The relative fold change of the number of invading cells following Matrigel invasion assay of H9 and AN_1.1 hTSC-like cells and EVT-like cells. Error bars indicate ±1 standard error of technical replicates. ‘**' indicates a p-value<0.01, and ‘***' indicates a p-value<0.001. (D) Phase contrast and fluorescence image of AN_1.1 2D STB-like cells, which exhibit multinucleation. The scale bars indicate 75 μm. (E) Immunofluorescence staining for STB marker hCG in H9 and AN_1.1 2D STB-like cells. The scale bars indicate 75 μm.
+
 Second, we performed directed differentiation of naïve hTSCs into STBs, which are multinucleated cells that produce placental hormones and mediate maternal-fetal communication. We applied two protocols for differentiation of hTSCs into STBs involving either 2D or 3D culture in the presence of Forskolin (Okae et al., 2018; Figure 3G). The naïve hTSC-derived 2D STB-like cells showed characteristic morphological features, including multinucleation (Figure 3—figure supplement 1D). They also expressed the STB marker human chorionic gonadotropin (hCG) (Figure 3—figure supplement 1E). The naïve hTSC-derived 3D STB-like cells exhibited a cyst-like morphology typical for 3D STBs (Okae et al., 2018; Figure 3H), and expressed the STB markers hCG and SDC1 based on immunofluorescence and qRT-PCR analysis (Jokimaa et al., 1998; Strumpf et al., 2005; Figure 3I–K). Finally, qRT-PCR analysis confirmed downregulation of the hTSC-specific marker TEAD4 (Figure 3L), indicating the loss of hTSC identity. These morphological and molecular data demonstrate that hTSCs derived from naïve hPSCs are capable, at least at the population level, of undergoing further differentiation into two specialized trophoblast cell types, EVT and STB.
 
-## Global transcriptome and chromatin accessibility profiles of hTSCs derived from naïve hPSCs
+### Global transcriptome and chromatin accessibility profiles of hTSCs derived from naïve hPSCs
 
 To examine whether naïve hTSCs and their differentiated derivatives possess transcriptomic signatures of the trophoblast lineage, we sequenced total RNA isolated from three types of hPSCs (naïve, capacitated, and primed), blastocyst-derived BT5 hTSCs (Okae et al., 2018), naïve hTSCs and their differentiated progeny (EVT and STB), and primed hPSCs cultured in hTSC media. Principal component analysis (PCA) revealed that the samples clustered together based on cell type, rather than genetic background (Figure 4A). Pluripotent and trophoblast identities were predominantly divided along principal component 1 (PC1), which accounted for 41% of the variation in gene expression. In addition, naïve, capacitated, and primed hPSCs formed clearly defined clusters that were separated along PC2. It is worth noting that naïve hTSCs and BT5 hTSCs clustered together very closely on the PCA plot (Figure 4A). Further examination indicated that naïve hTSCs express key trophoblast marker genes at comparable or even higher levels than the bona fide, BT5 hTSCs (Figure 4—figure supplement 1A). Whereas naïve hTSCs were well-separated from the pluripotent samples, primed hPSCs acquired a very distinct transcriptional profile in hTSC media compared to naïve hTSCs. Naïve hTSCs displayed strong upregulation of many transcripts associated with trophoblast development, whereas primed cells instead acquired neuroectodermal characteristics in hTSC media (Figure 4B and Supplementary file 1). Hence, exposure to hTSC media induces a drastically different transcriptomic profile when applied to either naïve or primed hPSCs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig4-v2.jpg)
+
+**Figure 4.:** (A) Principal component analysis (PCA) of primed, capacitated, and naïve hPSCs, BT5 hTSCs, naïve hTSCs, EVTs, STBs, and primed hPSCs cultured in hTSC medium based on RNA-seq data. Circles were drawn around samples cultured in the same media. (B) Volcano plots showing fold change (X axis) between naïve hTSCs and primed hPSCs cultured in hTSC medium. The light blue dots represent genes that are the most significantly upregulated in primed hTSCs (defined as those that have a log fold change < −1 and wherein p<0.05). The red dots represent genes that are the most significantly upregulated in naïve hPSCs cultured in hTSC medium (defined as those that have a log fold change >1 and wherein p<0.05). (C) Heatmap of RNA-seq data from naïve hPSCs, naïve hTSCs, EVTs, and STBs (DEGs with more than 2X fold change and p-adj < 0.05 are analyzed). Cluster one represents genes highly expressed in naïve hPSCs only. Cluster two represents genes highly expressed in both naïve hPSCs and naïve hTSCs. Cluster three represents genes highly expressed in naïve hTSCs only. Cluster four represents genes highly expressed in both naïve hTSCs and EVTs. Cluster five represents genes highly expressed in EVTs only. Cluster six represents genes highly expressed in STBs only. (D) Expression levels of key marker genes associated with clusters 1–6. (E) Heatmap indicating the correlation among scRNA-seq data from published day 6, day 8, day 10, and day 12 TE, EPI, and PE (Zhou et al., 2019), as well as RNA-seq data from naïve and BT5 hTSCs. Genes specifically expressed in the TE, EPI, or PE lineages were analyzed (Zhou et al., 2019). (F) Heatmap of ATAC-seq data from naïve hESCs and naïve hTSCs (Pearson correlations were calculated based on genome-wise ATAC-seq signal). Naïve hESC ATAC-seq data were retrieved from a published dataset (Pastor et al., 2018). (G) Transcription factor binding motifs enriched in the promoter and non-promoter regions of the DARs specific to naïve hESCs vs. naïve hTSCs and naïve hESCs vs. BT5 hTSCs.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Expression levels of known trophoblast markers genes in H9 naïve hTSCs, AN_1.1 naïve hTSCs, WIBR3 naïve hTSCs, and BT5 hTSCs. (B) Heatmap indicating the correlation among scRNA-seq data from published day 6, day 8, day 10, and day 12 TE (Zhou et al., 2019), as well as RNA-seq data from naïve hTSCs. TE genes with stage-specific expression patterns were analyzed (Zhou et al., 2019). (C) Heatmap of scRNA-seq data from published day 10 and day 12 Epiblast (EPI) and Trophectoderm (TE) (Zhou et al., 2019), as well as RNA-seq data from naïve hPSCs and naïve hTSCs. Genes specifically expressed in the TE or EPI lineage at day 10 or 12 were analyzed (Zhou et al., 2019). (D) Complete list of GO terms (biological processes) and their p-values. The top 10% most upregulated genes in naïve hTSC relative to naïve hPSC in C were analyzed.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52504/elife-52504-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The genomic distribution of DARs specific to naïve hESCs and naïve hTSCs. (B) The distribution of distance from the transcriptional start site (TSS) to the DARs specific to naïve hESCs and naïve hTSCs. (C) ATAC-seq signal at promoter regions of genes within cluster 1 (enriched in naïve hESCs) and cluster 3 (enriched in naïve hTSCs) in naïve hESCs and naïve hTSCs (Mann-Whitney U test). (D) Phase contrast images of the maintenance of H9 naïve hPSCs (top) and the derivation of H9 naïve hTSCs (bottom). 5i/L/A (top) and hTSC media (bottom) were supplemented with Verteporfin at the indicated concentration. The scale bars indicate 75 μm. (E) Immunofluorescence staining for YAP in H9 naïve hPSCs and H9 naïve hTSCs. The scale bars indicate 75 μm.
 
 To further understand gene expression dynamics during naïve hTSC derivation and terminal EVT and STB differentiation, we identified six clusters of genes based on differential expression in naïve hPSCs, naïve hTSCs, and naïve hTSC-derived EVTs and STBs (Figure 4C). Cluster one includes genes that are enriched in naïve hPSCs, such as DPPA5, KLF4, NANOG, POU5F1, SUSD2, and ZFP42 (Figure 4D and Supplementary file 2). This cluster is enriched in gene ontology (GO) terms associated with transcriptional regulation and embryonic development (Supplementary file 3). Cluster two includes genes such as LRP5 and TEAD4 that are enriched in both naïve hPSCs and naïve hTSCs (Figure 4D and Supplementary file 2). Cluster three includes genes that are enriched in naïve hTSCs, such as CCR7, CTNNB1, ELF5, EPCAM, TFAP2C, ITGA6, OVOL1, and TP63 (Figure 4D and Supplementary file 2), and is enriched in GO terms associated with cytoskeletal remodeling (Supplementary file 3). Cluster four includes genes such as IGF1R, IGF2R, and KRT7 that are enriched in both naïve hTSCs and EVTs (Figure 4D and Supplementary file 2). Finally, clusters 5 and 6 include genes that are enriched in either EVTs or STBs derived from naïve hTSCs, respectively. EVT-specific genes include FN1, HLA-G, ITGA1, ITGA5, and MMP2, while STB-specific genes include CGA, CGB1, INHA, PSG1, SDC1, and TBX3 (Figure 4D and Supplementary file 2). Notably, CGA and CGB1 encode the α and β chains of the placental hormone hCG, while TBX3 was recently identified as a transcriptional regulator of STB differentiation (Lv et al., 2019). EVT-specific genes are enriched in GO terms related to cell migration and invasion, while STB-specific genes are enriched in terms related to membrane fusion and interferon signaling (Supplementary file 3). Many, if not all, of the genes highlighted in these clusters have the same specific gene expression profiles reported for primary hTSCs, EVTs, and STBs derived from human blastocysts (Okae et al., 2018). We conclude that the derivation of hTSCs from naïve hPSCs and their subsequent, cell-type-specific differentiation recapitulate the processes of hTSC derivation from the human embryo and its differentiation into EVT and STB cell types.
 
@@ -90,11 +134,294 @@ Third, our work provides a robust methodology for a renewable, patient-specific 
 
 ## Materials and methods
 
-## Cell line verification and testing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KRT7 (Rabbit monoclonal)</td>
+      <td>Cell signaling</td>
+      <td>4465</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TP63 (Goat monoclonal)</td>
+      <td>R and D system</td>
+      <td>AF1916</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TEAD4 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab58310</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SDC1 (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab34164</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ZO1 (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>33–9100</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-hCG (Mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>14650882</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MMP2 (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>40994</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SUSD2-PE</td>
+      <td>BioLegend</td>
+      <td>327406</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CD75-eFluor 660</td>
+      <td>Thermo Fisher</td>
+      <td>50-0759-42</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ITG6-FITC</td>
+      <td>Miltenyi</td>
+      <td>130-097-245</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGFR-APC</td>
+      <td>BioLegend</td>
+      <td>352905</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HLA-G-PE</td>
+      <td>Abcam</td>
+      <td>ab24384</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-YAP (Rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>14074</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse-Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>A-21202</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit-Alexa 647</td>
+      <td>Invitrogen</td>
+      <td>A-31573</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat-Alexa 555</td>
+      <td>Invitrogen</td>
+      <td>A-21432</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>H9 hESC</td>
+      <td>WashU GEiC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>AN_1.1 iPSC</td>
+      <td>WashU GEiC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>WIBR3 hESC</td>
+      <td>Whitehead Institute</td>
+      <td></td>
+      <td>Dr. Jaenisch</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>BT5 hTSC</td>
+      <td>(Okae et al., 2018)</td>
+      <td></td>
+      <td>Drs. Okae, Arima, and Pastor</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>EGF</td>
+      <td>Rockland</td>
+      <td>009–001 C26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>NRG1</td>
+      <td>Cell signaling</td>
+      <td>5218SC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Activin A</td>
+      <td>Peprotech</td>
+      <td>120–14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>BMP4</td>
+      <td>R and D Systems</td>
+      <td>314 BP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CHIR99021</td>
+      <td>Stemgent</td>
+      <td>04–0004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>A83-01</td>
+      <td>BioVision</td>
+      <td>1725</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SB431542</td>
+      <td>BioVision</td>
+      <td>1674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>VPA</td>
+      <td>Tocris</td>
+      <td>2815</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Forskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3917</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Y-27632</td>
+      <td>Stemgent</td>
+      <td>04–0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>PD0325901</td>
+      <td>Stemgent</td>
+      <td>04–0006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>IM-12</td>
+      <td>Enzo</td>
+      <td>BML-WN102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>SB590885</td>
+      <td>Tocris</td>
+      <td>2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>WH4-023</td>
+      <td>A Chemtek</td>
+      <td>H620061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>XAV939</td>
+      <td>Selleckchem</td>
+      <td>S1180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Gö6983</td>
+      <td>Tocris</td>
+      <td>2285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Verteporfin</td>
+      <td>Tocris</td>
+      <td>5305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MMP2 ELISA kit</td>
+      <td>Abcam</td>
+      <td>ab100606</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell line verification and testing
 
 The identities of the cell lines used in this study were authenticated using Short Tandem Repeat (STR) profiling. The cell culture is regularly tested and negative for mycoplasma contamination.
 
-## Culture of naïve and primed hPSCs
+### Culture of naïve and primed hPSCs
 
 Primed hPSCs were cultured in mTeSR1 (STEMCELL Technologies, 85850) on Matrigel (Corning, 354277) coated wells and passaged using ReLeSR (STEMCELL Technologies, 05872) every 4 to 6 days. Primed hPSCs were cultured in 5% CO2 and 20% O2. Naive hPSCs were cultured on mitomycin C-inactivated mouse embryonic fibroblast (MEF) feeder cells, and were passaged by a brief PBS wash followed by single-cell dissociation using 5 min treatment with TrypLE Express (Gibco, 12604) and centrifugation in fibroblast medium [DMEM (Millipore Sigma, #SLM-021-B) supplemented with 10% FBS (Millipore Sigma, ES-009-B), 1X GlutaMAX (Gibco, 35050), and 1% penicillin-streptomycin (Gibco, 15140)]. Naive hPSCs were cultured in the 5i/L/A media as previously described (Theunissen et al., 2014). 500 mL of 5i/L/A was generated by combining: 240 mL DMEM/F12 (Gibco, 11320), 240 mL Neurobasal (Gibco, 21103), 5 mL N2 100X supplement (Gibco, 17502), 10 mL B27 50X supplement (Gibco, 17504), 10 μg recombinant human LIF (made in-house), 1X GlutaMAX, 1X MEM NEAA (Gibco, 11140), 0.1 mM β-mercaptoethanol (Millipore Sigma, 8.05740), 1% penicillin-streptomycin, 50 µg/ml BSA Fraction V (Gibco, 15260), and the following small molecules and cytokines: 1 μM PD0325901 (Stemgent, 04–0006), 1 μM IM-12 (Enzo, BML-WN102), 0.5 μM SB590885 (Tocris, 2650), 1 μM WH4-023 (A Chemtek, H620061), 10 μM Y-27632 (Stemgent, 04–0012), and 10 ng/mL Activin A (Peprotech, 120–14). Naïve hPSCs were cultured in 5% O2, 5% CO2. For indicated experiments, 1 or 2 μM Verteporfin was added to 5i/L/A. For primed to naïve hPSC conversion, 2 × 105 single primed cells were seeded on a 6-well plate with MEF feeder layer in 2 mL mTeSR1 supplemented with 10 μM Y-27632. Two days later, medium was switched to 5i/L/A. After 7 to 10 days from seeding, the cells were expanded polyclonally using TrypLE Express on a MEF feeder layer. Tissue culture media were filtered using a 0.22 μm filter. Media were changed every 1–2 days. Naïve hPSCs before passage 10 were used for experiments.
 
@@ -102,27 +429,27 @@ For naïve hPSC clonal expansion experiments, naïve cells were passaged and see
 
 For indicated experiments, naïve hPSCs were cultured in PXGL [N2B27 supplemented with 1 μM PD0325901, 2 μM XAV939 (Selleckchem, S1180), 2 μM Gö6983 (Tocris, 2285), and 10 ng/mL human LIF] as previously described (Bredenkamp et al., 2019b). 10 μM Y-27632 was added during passaging. Primed hPSCs were first converted to the naïve state using 5i/L/A, then the media was switched to PXGL for eight passages before the cells were used for experiments. Cells were cultured on inactivated MEF feeder layers and in 5% O2, 5% CO2. Media were changed every 1–2 days.
 
-## Capacitation of naïve hPSCs
+### Capacitation of naïve hPSCs
 
 Capacitation of naïve hPSCs was performed as previously described (Rostovskaya et al., 2019). Briefly, around 0.5 × 106 naïve hPSCs were seeded on one well of a Geltrex (Thermo Fisher, A1413201) coated 6-well plate. The cells were first cultured in 5i/L/A for 2 days, then cultured in capacitation media [N2B27 supplemented with 2 μM XAV939] for 10 more days. Media were changed every 1–2 days. The cells were passaged once using TrypLE Express during capacitation at a ratio of 1:2 when confluent, usually after 4 or 5 days of culture in capacitation media. 10 μM of Y-27632 was added for 24 hr following passaging. After 10 days of treatment with capacitation media, the cells were used for subsequent analysis.
 
-## Embryoid body formation
+### Embryoid body formation
 
 hPSCs were single-cell dissociated using TrypLE, and 3.0 × 106 cells were aggregated in EB media [DMEM/F12 supplemented with 20% FBS, 1X GlutaMax, 1X MEM NEAA, 0.1 mM β-mercaptoethanol, and 1% penicillin-streptomycin] supplemented with 10 μM Y-27632 in 24-well 800 μm Aggrewell plates (STEMCELL Technologies, 34811). After 24 hr, the aggregates were flushed from the Aggrewell using EB media, and cultured on ultra-low attachment 6-well plates in EB media only. Media were changed every 2 days. After 12 days of culture, the EBs were collected for downstream analysis.
 
-## BMP4-directed trophoblast differentiation
+### BMP4-directed trophoblast differentiation
 
 Trophoblast differentiation from hPSCs using BMP4 was performed as previously described (Horii et al., 2016). Prior to differentiation, primed or naïve hPSCs were adapted to culture in StemPro (Thermo Fisher, A1000701) medium with 12 ng/mL recombinant basic FGF (bFGF) (Thermo Fisher, PHG0261) on Geltrex coated plates. Naïve and capacitated hPSCs were directly subjected to trophoblast differentiation conditions. Briefly, 2.0 × 104 to 1.0 × 105 primed, re-primed, naïve, or capacitated hPSCs were seeded on Geltrex coated 24-well plates in EMIM medium [DMEM/F12 supplemented with 1X MEM NEAA, 2% BSA (Sigma-Aldrich, A9418), 2 mM L-Glutamine (Corning, 25–005 CI), 1% ITS (Gibco, 41400), and 100 ng/mL heparin sulfate (Stemcell Technologies, 07980] for 2 days. They were cultured in EMIM supplemented with 10 ng/mL human BMP4 (R and D Systems, 314 BP) for four more days, at which point they were designated as CTBs. For terminal EVT and STB differentiation, the CTBs were further cultured in FCM [DMEM/F12 supplemented with 1X GlutaMAX, and 1% non-essential amino acid, 0.1 mM β-mercaptoethanol; conditioned on irradiated MEFs for 24 hr] supplemented with 10 ng/mL human BMP4 for 6 days. Media were changed every 1–2 days. Cells were cultured in 5% CO2 and 20% O2.
 
-## Culture of hTSCs
+### Culture of hTSCs
 
 hTSCs were cultured as previously described (Okae et al., 2018). Briefly, a 6-well plate was coated with 5 μg/mL Collagen IV (Corning, 354233) at 37°C overnight. Cells were cultured in 2 mL TS medium [DMEM/F12 supplemented with 0.1 mM 2-mercaptoethanol, 0.2% FBS, 0.5% Penicillin-Streptomycin, 0.3% BSA, 1% ITS-X (Gibco, 51500), 1.5 μg/ml L-ascorbic acid (Wako, 013–12061), 50 ng/ml EGF (Rockland, 009–001 C26), 2 μM CHIR99021 (Stemgent, 04–0004), 0.5 μM A83-01 (BioVision, 1725), 1 μM SB431542 (BioVision, 1674), 0.8 mM VPA (Tocris, 2815), and 5 μM Y-27632] and in 5% CO2 and 20% O2. Media were changed every 2 days, and cells were passaged using TrypLE Express every 3 days at a ratio of 1:4. Unless otherwise specified, hTSCs between passage 10 and 20 were used for experiments.
 
-## Derivation of hTSCs from naïve hPSCs
+### Derivation of hTSCs from naïve hPSCs
 
 Naïve and primed hPSCs were single-cell dissociated by TrypLE Express, and 0.5–1.0 × 106 cells were seeded in a 6-well plated pre-coated with 5 μg/mL Collagen IV and cultured in 2 mL TS medium. Cells were cultured in 5% CO2 and 20% O2, media was changed every 2 days, and passaged upon 80–100% confluency at a ratio of 1:2 to 1:4. For indicated experiments, 1 or 2 μM Verteporfin was added to TS medium during the derivation process. For derivation from naïve hPSCs, the cells grew slowly during the initial few passages. Between passage 5 and 10, highly proliferative hTSCs emerged. In contrast, for derivation from primed hPSCs, the cells did not appear to gain any hTSC characteristic even following 20+ passages.
 
-## EVT and STB differentiation from hTSCs
+### EVT and STB differentiation from hTSCs
 
 Differentiation of hTSCs into terminal cell types were performed as previously described (Okae et al., 2018), with minor modifications. Prior to differentiation, hTSCs were grown to about 80% confluency, and then single-cell dissociated using TrypLE Express. For EVT differentiation, 6-well plates were coated with 1 μg/mL Collagen IV overnight. 0.75 × 105 hTSCs were seeded per well in 2 mL EVT basal medium [DMEM/F12 supplemented with 0.1 mM β-mercaptoethanol, 0.5% penicillin-streptomycin, 0.3% BSA, 1% ITS-X, 7.5 μM A83-01, 2.5 μM Y27632] supplemented with 4% KSR (Gibco, 10828) and 100 ng/mL NRG1 (Cell signaling, 5218SC). Matrigel was added to a 2% final concentration shortly after resuspending hTSCs in the medium. At day 3, the media were replaced with 2 mL EVT basal medium supplemented with 4% KSR, and Matrigel was added to a 0.5% final concentration. At day 6, the media were replaced with 2 mL EVT basal medium, and Matrigel was added to a 0.5% final concentration. At day 8, the cells were ready for downstream analysis.
 
@@ -130,34 +457,163 @@ For 2D STB differentiation, 6-well plates were coated with 2.5 μg/mL Collagen I
 
 For 3D STB differentiation, 2.5 × 105 hTSCs were seeded per well in 3 mL 3D STB medium [DMEM/F12 supplemented with 0.1 mM β-mercaptoethanol, 0.5% penicillin-streptomycin, 0.3% BSA, 1% ITS-X, 2.5 μM Y-27632, 50 ng/ml EGF, 2 μM Forskolin, and 4% KSR] in an ultra-low attachment 6-well plate. At day 3, another 3 mL of 3D STB medium was added per well. At day 6, the cells were passed through a 40 μm cell strainer, and the cells remaining on the strainer were collected and used for downstream analysis.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells were fixed with 4% paraformaldehyde for 20 min at room temperature, then washed with PBS three times. The 3D STBs were resuspended in a small amount of PBS and seeded on plus-charged slides. PBS was allowed to air dry, and immunostaining was performed directly on the slides. For other types of cells, immunostaining was performed directly in the wells. The cells were permeabilized with 0.1% Triton X-100 (Sigma, T8787) in PBS for 5 min, then blocked with blocking buffer [PBS supplemented with 0.5% BSA and 0.1% Triton X-100] for one hour. Cells were then incubated with primary antibodies diluted in the blocking buffer overnight at 4°C. The following primary antibodies were used: anti-KRT7, 1:100 (Cell signaling, 4465); anti-TP63, 1:20, (R and D system, AF1916); anti-TEAD4, 1:400 (Abcam, ab58310); anti-SDC1, 1:100 (Abcam, ab34164); anti-ZO1, 1:100 (Invitrogen, 33–9100); anti-hCG, 1:100 (Invitrogen, 14650882); anti-MMP2, 1:800 (Cell Signaling, 40994); anti-YAP, 1:100 (Cell signaling, 14074). The cells were washed 3 times in PBS, then incubated with secondary antibodies diluted in blocking buffer for 1 hr at room temperature. The following secondary antibodies were used: anti-mouse-Alexa 488, 1:500 (Invitrogen, A-21202); anti-rabbit-Alexa 647, 1:500 (Invitrogen, A-31573); anti-goat-Alexa 555, 1:500 (Invitrogen, A-21432). The nuclei were stained with Hoechst 33258 (Thermo Fisher, H3569). Cells were washed 3 times in PBS, then imaged with a Leica DMi-8 fluorescence microscope. Some images were globally adjusted for brightness and/or contrast.
 
-## Flow cytometry
+### Flow cytometry
 
 Cells were single-cell dissociated using TrypLE Express and washed once in FACS buffer [PBS supplemented with 5% FBS]. The cells were then resuspended in 100 μL fresh FACS buffer, and incubated with antibodies for 30 min on ice. The following antibodies were used: anti-SUSD2-PE, 1:100 (BioLegend, 327406); anti-CD75-eFluor 660, 1:100 (Thermo Fisher, 50-0759-42); anti-ITG6-FITC, 1:100 (Miltenyi, 130-097-245); anti-EGFR-APC, 1:20 (BioLegend, 352905); anti-HLA-G-PE, 1:100 (Abcam, ab24384). Following antibody incubation, the cells were washed once with FACS buffer, resuspended in fresh FACS buffer, and passed through a cell strainer. Unstained cells that have undergone the same procedures were used as controls. Flow cytometry was performed using a BD LSRFortessa X-20, and the data were analyzed using the FlowJo software.
 
-## Measurement of MMP2 levels in media
+### Measurement of MMP2 levels in media
 
 At day 8 of EVT differentiation, the media supernatants which had been in culture for 2 days were collected, and stored at −80°C. As controls, 0.75 × 105 hTSCs were seeded per well in 2 mL TS medium. After 2 days of culture, the media supernatants were collected and stored at −80°C. The amount of secreted MMP2 was measured using a commercial MMP2 ELISA kit (Abcam, ab100606). Each experiment was performed with two biological replicates, and each biological replicate contains two technical replicates.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was isolated using the E.Z.N.A. total RNA kit I (Omega, D6834), and cDNA synthesis was performed from total RNA using the high capacity cDNA reverse transcription kit (Applied Biosystems, 4368814). Real-time PCR was performed using PowerUp SYBR green master mix (Applied Biosystems, A25743) on the StepOnePlus Real-Time PCR System (Applied Biosystems). All analyses were done in triplicate. Gene expression was normalized to RPLP0. Error bars represent the standard deviation (SD) of the mean of triplicate reactions. Student’s t test was performed for statistical analysis. Primer sequences are included in the following primer table:
 
-GenePrimer sequence (5’- 3’)RPLP0-FGCTTCCTGGAGGGTGTCCRPLP0-RGGACTCGTTTGTACCCGTTGKLF17-FCTGCCTGAGCGTGGTATGAGKLF17-RTCATCCGGGAAGGAGTGAGAPax6-FCTTTGCTTGGGAAATCCGAGPax6-RAGCCAGGTTGCGAAGAACTCVIM-FTGTCCAAATCGATGTGGATGTTTCVIM-RTTGTACCATTCTTCTGCCTCCTGSox17-FCGCACGGAATTTGAACAGTASox17-RGGATCAGGGACCTGTCACACCDX2-FTTCACTACAGTCGCTACATCACCCDX2-RTTGATTTTCCTCTCCTTTGCTCTEAD4-FCAGGTGGTGGAGAAAGTTGAGATEAD4-RGTGCTTGAGCTTGTGGATGAAGTFAP2C-FTCTTGGAGGACGAAATGAGATGGTFAP2C-RGGGCTTCTTTGATGTAGTTCTGCELF5-FAGTCTGCACTGACATTTTCTCATCELF5-RCAGAAGTCCTAGGGGCAGTCKRT7-FAGGATGTGGATGCTGCCTACKRT7-RCACCACAGATGTGTCGGAGAGATA3-FTGCAGGAGCAGTATCATGAAGCCTGATA3-RGCATCAAACAACTGTGGCCAGTGAMMP2-FTGGCACCCATTTACACCTACACMMP2-RATGTCAGGAGAGGCCCCATAGAHLA-G-FCAGATACCTGGAGAACGGGAHLA-G-RCAGTATGATCTCCGCAGGGTCGB-FACCCTGGCTGTGGAGAAGGCGB-RATGGACTCGAAGCGCACASDC1-FGCTGACCTTCACACTCCCCASDC1-RCAAAGGTGAAGTCCTGCTCCC
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Primer sequence (5’- 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RPLP0-F</td>
+      <td>GCTTCCTGGAGGGTGTCC</td>
+    </tr>
+    <tr>
+      <td>RPLP0-R</td>
+      <td>GGACTCGTTTGTACCCGTTG</td>
+    </tr>
+    <tr>
+      <td>KLF17-F</td>
+      <td>CTGCCTGAGCGTGGTATGAG</td>
+    </tr>
+    <tr>
+      <td>KLF17-R</td>
+      <td>TCATCCGGGAAGGAGTGAGA</td>
+    </tr>
+    <tr>
+      <td>Pax6-F</td>
+      <td>CTTTGCTTGGGAAATCCGAG</td>
+    </tr>
+    <tr>
+      <td>Pax6-R</td>
+      <td>AGCCAGGTTGCGAAGAACTC</td>
+    </tr>
+    <tr>
+      <td>VIM-F</td>
+      <td>TGTCCAAATCGATGTGGATGTTTC</td>
+    </tr>
+    <tr>
+      <td>VIM-R</td>
+      <td>TTGTACCATTCTTCTGCCTCCTG</td>
+    </tr>
+    <tr>
+      <td>Sox17-F</td>
+      <td>CGCACGGAATTTGAACAGTA</td>
+    </tr>
+    <tr>
+      <td>Sox17-R</td>
+      <td>GGATCAGGGACCTGTCACAC</td>
+    </tr>
+    <tr>
+      <td>CDX2-F</td>
+      <td>TTCACTACAGTCGCTACATCACC</td>
+    </tr>
+    <tr>
+      <td>CDX2-R</td>
+      <td>TTGATTTTCCTCTCCTTTGCTC</td>
+    </tr>
+    <tr>
+      <td>TEAD4-F</td>
+      <td>CAGGTGGTGGAGAAAGTTGAGA</td>
+    </tr>
+    <tr>
+      <td>TEAD4-R</td>
+      <td>GTGCTTGAGCTTGTGGATGAAG</td>
+    </tr>
+    <tr>
+      <td>TFAP2C-F</td>
+      <td>TCTTGGAGGACGAAATGAGATGG</td>
+    </tr>
+    <tr>
+      <td>TFAP2C-R</td>
+      <td>GGGCTTCTTTGATGTAGTTCTGC</td>
+    </tr>
+    <tr>
+      <td>ELF5-F</td>
+      <td>AGTCTGCACTGACATTTTCTCATC</td>
+    </tr>
+    <tr>
+      <td>ELF5-R</td>
+      <td>CAGAAGTCCTAGGGGCAGTC</td>
+    </tr>
+    <tr>
+      <td>KRT7-F</td>
+      <td>AGGATGTGGATGCTGCCTAC</td>
+    </tr>
+    <tr>
+      <td>KRT7-R</td>
+      <td>CACCACAGATGTGTCGGAGA</td>
+    </tr>
+    <tr>
+      <td>GATA3-F</td>
+      <td>TGCAGGAGCAGTATCATGAAGCCT</td>
+    </tr>
+    <tr>
+      <td>GATA3-R</td>
+      <td>GCATCAAACAACTGTGGCCAGTGA</td>
+    </tr>
+    <tr>
+      <td>MMP2-F</td>
+      <td>TGGCACCCATTTACACCTACAC</td>
+    </tr>
+    <tr>
+      <td>MMP2-R</td>
+      <td>ATGTCAGGAGAGGCCCCATAGA</td>
+    </tr>
+    <tr>
+      <td>HLA-G-F</td>
+      <td>CAGATACCTGGAGAACGGGA</td>
+    </tr>
+    <tr>
+      <td>HLA-G-R</td>
+      <td>CAGTATGATCTCCGCAGGGT</td>
+    </tr>
+    <tr>
+      <td>CGB-F</td>
+      <td>ACCCTGGCTGTGGAGAAGG</td>
+    </tr>
+    <tr>
+      <td>CGB-R</td>
+      <td>ATGGACTCGAAGCGCACA</td>
+    </tr>
+    <tr>
+      <td>SDC1-F</td>
+      <td>GCTGACCTTCACACTCCCCA</td>
+    </tr>
+    <tr>
+      <td>SDC1-R</td>
+      <td>CAAAGGTGAAGTCCTGCTCCC</td>
+    </tr>
+  </tbody>
+</table>
 
-## Matrigel invasion assay
+### Matrigel invasion assay
 
 In vitro invasion assay was performed in Matrigel-coated transwell inserts with 8.0 μm pores (Corning, 354480). EVTs or hTSCs were single cell dissociated, and seeded at density of 2 × 105 cells per well into the upper chamber of Matrigel-coated transwells in 200 μl EVT basal medium or TS medium. The lower chamber was filled with 800 μl of the same type of medium containing 20% FBS. Cells were cultured at 37°C in 5% CO2 and 20% O2. After 36 hr, cells on the upper chamber were carefully removed with a cotton swab. The lower chamber was fixed with 4% paraformaldehyde, washed with PBS, and then stained with crystal violet. Invaded cells were imaged on a Leica DMi1 microscope. Thereafter, the stained cells from five random fields were counted to calculate the relative fold change in the number of invading cells. Student’s t test was performed for statistical analysis. Each experiment was performed in triplicate.
 
-## RNA-seq
+### RNA-seq
 
 Total RNA was isolated using the E.Z.N.A. total RNA kit I. Library construction was performed using the SMARTer Directional cDNA Library Construction Kit (Clontech, 634933). Libraries were sequenced on an Illumina HiSeq3000 1 × 50 platform. RNA-seq reads were aligned to the human genome hg38 with STAR version 2.5.4b (Dobin et al., 2013). Gene counts were derived from the number of uniquely aligned unambiguous reads by Subread:featureCount (Liao et al., 2013), version 1.4.6, with hg38 gene annotation ENCODE V27 (Harrow et al., 2012). All gene-level transcript counts were then imported into the R/Bioconductor package DESeq2 (Love et al., 2014). Transcripts with CPM > 1.0 were converted into a DESeq2 dataset and then regularized log transformed using the rlog function from the DESeq2 package. Adjusted p-values for DGE were determined by DESeq2 using the R stats function p.adjust using the Benjamini and Hochberg correction to determine the false discovery rate with a 2- fold expression change and FDR < 0.05 required to consider a gene differentially expressed. Principal Component Analysis was performed using plotPCA also from the DESeq2 package and plotted using ggplot2. The differentially expressed gene lists from pairwise comparisons between conditions were merged along with their RPKMs. RPKMs were z-score scaled for each gene, and k-means clustering was performed using the kmeans function from the R stats package to separate genes into six clusters with options ‘iter.max=1000’ and ‘nstart = 1000’ specified to maximize reproducibility of clustering.
 
 Human pre- and post-implantation embryo single cell gene expression data (transcript per million, TPM) were downloaded from GEO with accession number GSE109555 (Zhou et al., 2019). Gene expressions of single cells in the TE, EPI, and PE lineages were further averaged for days 6, 8, 10, and 12 based on cell identification. The bulk RNA-seq gene expressions data of BT5 hTSC, naïve hTSC, and naïve hPSC were scaled to TPM and combined with the human embryo single cell gene expression data based on the common gene symbols. The expression of TE, EPI, and PE marker genes (from Zhou et al. supplemental table 5) in all the samples was isolated to calculate the Pearson correlation between all sample pairs. The correlation coefficients were plotted in R using gplots heatmap.2 function. The gene expression ratios of TE and EPI marker genes in naïve hTSC/naïve hPSC and TE/EPI (days 10 and 12) were calculated and plotted in R using gplots heatmap.2.
 
-## ATAC-seq
+### ATAC-seq
 
 ATAC-seq was performed as previously described with minor modifications (Corces et al., 2017). Cells were harvested by TrypLE Express dissociation and centrifuged at 500 RCF for 5 min at 4°C. The supernatant was aspirated. Cells were washed once with cold PBS. Cell pellets were then lysed in 100 µL ATAC-seq RSB [10 mM Tris pH 7.4, 10 mM NaCl, 3 mM MgCl2] containing 0.1% NP40, 0.1% Tween-20, and 0.01% Digitonin by pipetting up and down and incubating on ice for 3 min. 1 mL of ATAC-seq RSB containing 0.1% Tween-20 was added and mixed with the lysis reaction. Nuclei were then pelleted by centrifuging at 800 RCF for 5 min at 4°C. Supernatant was removed, and the nuclear pellets were resuspended in 20 µL 2x TD buffer [20 mM Tris pH 7.6, 10 mM MgCl2, 20% Dimethyl Formamide]. Nuclei were counted, and 50,000 counted nuclei were then transferred to a tube with 2x TD buffer filled up to 25 µL. 25 µL of transposition mix [2.5 µL Transposase (100 nM final) (Illunina, 20034197, 16.5 µL PBS, 0.5 µL 1% Digitonin, 0.5 µL 10% Tween-20, 5 µL H2O) was then added. Transposition reactions were mixed and incubated at 37°C for 30 min with gentle tapping every 10 min. Reactions were cleaned up with the Zymo DNA Clean and Concentrator-5 kit (Zymo Research, D4014). The ATAC-seq library was prepared by amplifying for nine cycles on a PCR machine. The PCR reaction was purified with Ampure XP beads (Beckman Coulter, A63880) using double size selection following the manufacturer’s protocol, in which 27.5 µL beads (0.55X sample volume) and 50 µL beads (1.55X sample volume) were used based on 50 µL PCR reaction. The ATAC-seq libraries were quantitated by Qubit assays and sequenced on an Illumina NextSeq platform. QC and analysis on ATAC-seq libraries was performed using AIAP (Liu et al., 2019). The generated peaks files for each library were merged using bedtools merge, and counts on each peak were quantified for all libraries using bedtools coverage. Differentially accessible region (DAR) analysis was performed as described above for DEG analysis on RNA-seq libraries with the following modifications: peaks with an average read density < 5 CPM across all libraries were excluded and a significance cutoff of |L2FC| > 1 and padj < 1×10−3 was required for a region to be considered differentially accessible. DARs were split based on the direction of increased accessibility and annotated using the annotatePeaks.pl function from HOMER (Heinz et al., 2010). Annotated DARs were classified as promoter or non-promoter peaks DARs on their distance to the nearest transcription start site (TSS) using a cutoff of 2 kb from a TSS. Motif analysis was performed on these DARs using the findMotifGenome.pl function from HOMER with the option ‘-size given’. The transcription factor (TF) motifs were selected if the motif can be identified in at least 10% of input DARs and the matching score of TF motif is > 0.9. The motif occupancy heatmap was plotted in R using pheatmap function. Promoter regions for genes from the RNA-seq k-means clustering were determined by their genomic location in the GENCODE gene annotation file (hg38, V27).

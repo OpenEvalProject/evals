@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04waqzz56 Center for Translational Neuroscience, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran
-2. https://ror.org/04waqzz56 Isfahan Neuroscience Research Center, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran
-3. https://ror.org/04xreqs31 School of Cognitive Sciences, Institute for Research in Fundamental Sciences (IPM) Tehran Islamic Republic of Iran
-4. https://ror.org/04waqzz56 Department of Neurology, School of Medicine, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran
+1. Center for Translational Neuroscience, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran ([ROR:04waqzz56](https://ror.org/04waqzz56))
+2. Isfahan Neuroscience Research Center, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran ([ROR:04waqzz56](https://ror.org/04waqzz56))
+3. School of Cognitive Sciences, Institute for Research in Fundamental Sciences (IPM) Tehran Islamic Republic of Iran ([ROR:04xreqs31](https://ror.org/04xreqs31))
+4. Department of Neurology, School of Medicine, Isfahan University of Medical Sciences Isfahan Islamic Republic of Iran ([ROR:04waqzz56](https://ror.org/04waqzz56))
 
 † Corresponding author
 
@@ -43,13 +43,151 @@ In the MGL paradigm (Figure 1A), 45patients (19 relapsing-remitting MS [RRMS] an
 
 **Figure 1.:** (A) In the memory-guided localization (MGL) paradigm, participants were asked to memorize and then localize the position of the target circle following a random delay interval of 0.5, 1, 2, 4, or 8 s. Following their response, visual feedback was presented. (B) In the sequential paradigm with 3 bar (high memory load condition), a sequence of three colored bars was presented consecutively. Participants were asked to match the orientation of the probe bar to the previously presented bar with the same color. Visual feedback was displayed following their response. (C) The 1 bar paradigm (low memory load condition) has the same structure as the 3 bar paradigm except for presenting one bar instead of three.
 
-## Recall error in multiple sclerosis
+**Table 1.**
+ Demographic and clinical profiles of participants in the MGL paradigm.Table 1—source data 1.Clinical and demographic data of participants in the memory-guided localization (MGL) paradigm.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HC (n = 23)</th>
+      <th>RRMS (n = 16)</th>
+      <th>SPMS (n = 25)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender (F:M)</td>
+      <td>13:10</td>
+      <td>14:2</td>
+      <td>17:8</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Age (year)</td>
+      <td>35.9 ± 8.34</td>
+      <td>37.25 ± 6.63</td>
+      <td>39.28 ± 5.56</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>13.30 ± 2.74</td>
+      <td>13.69 ± 3.34</td>
+      <td>13.56 ± 3.22</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Cognitive ability† (NL:MCI)</td>
+      <td>23:0</td>
+      <td>14:2</td>
+      <td>19:6</td>
+      <td>&lt;0.05*</td>
+    </tr>
+    <tr>
+      <td>Disease duration (years)</td>
+      <td>N/A</td>
+      <td>8.562 ± 3.20</td>
+      <td>11.56 ± 3.28</td>
+      <td>&lt;0.02*</td>
+    </tr>
+    <tr>
+      <td>EDSS</td>
+      <td>N/A</td>
+      <td>1.28 ± 0.79</td>
+      <td>2.740 ± 1.23</td>
+      <td>&lt;0.0002*</td>
+    </tr>
+    <tr>
+      <td>DMT (platform: non-platform)</td>
+      <td>N/A</td>
+      <td>2:14</td>
+      <td>0:25</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+_All data, except for the categorical information, are presented as mean ± standard deviation.Gender, cognitive ability, and DMT were compared using the chi-square test. Age and education were compared using one-way ANOVA and Kruskal–Wallis H test, respectively. Disease duration and EDSS score were compared using Mann–Whitney U test and independent-sample t-test, respectively.HC = healthy control, RRMS = relapsing-remitting multiple sclerosis, SPMS = secondary progressive multiple sclerosis, NL = normal (MoCA score ≥26), MCI = mild cognitive impairment (MoCA score = 18–25), EDSS = expanded disability status scale, DMT = disease-modifying therapy, platform treatment = interferon β-1a and glatiramer acetate, non-platform treatment = rituximab, ocrelizumab, fingolimod, dimethyl fumarate, and natalizumab, N/A = not applicable.*p<0.05.†Assessed based on the Montreal Cognitive Assessment (MoCA) test classification._
+
+**Table 2.**
+ Demographic and clinical profiles of participants in the sequential paradigms.Table 2—source data 1.Clinical and demographic data of participants in the sequential paradigms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>HC (n = 46)</th>
+      <th>RRMS (n = 39)</th>
+      <th>SPMS (n = 32)</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender (F:M)</td>
+      <td>16:30</td>
+      <td>23:16</td>
+      <td>22:10</td>
+      <td>&lt;0.008*</td>
+    </tr>
+    <tr>
+      <td>Age (year)</td>
+      <td>30.5 ± 10.37</td>
+      <td>32.03 ± 6.72</td>
+      <td>39.00 ± 6.43</td>
+      <td>&lt;10–6*</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>16.95 ± 2.23</td>
+      <td>13.87 ± 3.41</td>
+      <td>13.67 ± 2.73</td>
+      <td>&lt;10–7*</td>
+    </tr>
+    <tr>
+      <td>Cognitive ability† (NL: MCI)</td>
+      <td>42:4</td>
+      <td>28:11</td>
+      <td>18:13</td>
+      <td>&lt;0.003*</td>
+    </tr>
+    <tr>
+      <td>Disease duration (years)</td>
+      <td>N/A</td>
+      <td>6.60 ± 3.84</td>
+      <td>9.37 ± 4.43</td>
+      <td>&lt;0.007*</td>
+    </tr>
+    <tr>
+      <td>EDSS</td>
+      <td>N/A</td>
+      <td>1.49 ± 1.01</td>
+      <td>3.86 ± 1.74</td>
+      <td>&lt;10–7*</td>
+    </tr>
+    <tr>
+      <td>DMT (platform: non-platform)</td>
+      <td>N/A</td>
+      <td>5:34</td>
+      <td>1:31</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
+
+_All data, except for the categorical information, are presented as mean ± standard deviation.One MoCA value in the SPMS group is missing. Gender, cognitive ability, and DMT were compared using the chi-square test. Age and education were compared using the Kruskal–Wallis H test. Disease duration and EDSS score were compared using an independent-sample t-test and Mann–Whitney U test, respectively. Dunn’s post hoc test was performed following significant results of age and education, and the adjusted p-value following Bonferroni correction for multiple tests are reported: Age: healthy vs. RRMS: p=0.27, healthy vs. SPMS: p<10–6*, and RRMS vs. SPMS: p<0.005*. Education: healthy vs. RRMS: p<10–5*, healthy vs. SPMS: p<10–5*, and RRMS vs. SPMS: p=1.HC = healthy control, RRMS = relapsing-remitting multiple sclerosis, SPMS = secondary progressive multiple sclerosis, NL = normal (MoCA score ≥26), MCI = mild cognitive impairment (MoCA score = 18–25), EDSS = expanded disability status scale, DMT = disease-modifying therapy, platform treatment = interferon β-1a and glatiramer acetate, non-platform treatment = rituximab, ocrelizumab, fingolimod, dimethyl fumarate, and natalizumab, N/A = ot applicable.*p<0.05.†Assessed based on the Montreal Cognitive Assessment (MoCA) test classification._
+
+### Recall error in multiple sclerosis
 
 In the MGL paradigm (Figure 1A), recall error was evaluated as a function of distance using a mixed-model ANOVA. Recall error was significantly different between groups (F(2,61) = 14.57, p<10–5) and distances (F(2,61) = 85.03, p<10–23, Figure 2A). A significant interaction was also observed between group and distance (F(4,61) = 7.24, p<10–4). Tukey post hoc test determined that recall error was significantly higher in SPMS (1.86° ± 0.92° visual degree) compared to healthy control (0.97 ± 0.26, p<10–4) and RRMS (1.09 ± 0.27, p<10–3). No significant difference was detected between RRMS and healthy control (p=0.83). Similarly, recall error as a function of delay interval was also evaluated. Recall error was significantly different between delay intervals (F(4,61) = 18.89, p<10–12, Figure 2D). No significant interaction was observed between group and delay interval [F(8,61) = 0.69, p=0.70]. After adjusting for cognitive ability, assessed by the Montreal Cognitive Assessment (MoCA) screening tool (cognitive performance was significantly different between groups), the effect of group on recall error remained significant (Supplementary file 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87442/elife-87442-fig2-v1.jpg)
 
-**Figure 2.:** (A) Recall error, (B) recall precision, and (C) reaction time as a function of distance for the memory-guided localization (MGL) paradigm. (D–F) The same as a function of delay interval. (G) Recall error, (H) recall precision, and (I) reaction time as a function of bar order in the sequential paradigms with 3 bar (left of each subplot) and 1 bar (right of each subplot). Data are represented as mean ± SEM.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Recall error, (B) recall precision, and (C) reaction time as a function of distance for the memory-guided localization (MGL) paradigm. (D–F) The same as a function of delay interval. (G) Recall error, (H) recall precision, and (I) reaction time as a function of bar order in the sequential paradigms with 3 bar (left of each subplot) and 1 bar (right of each subplot). Data are represented as mean ± SEM.
 
 While reaction time (RT) was significantly different between groups (F(2,61) = 26.44, p<10–8) and distances (F(2,61) = 25.94, p<10–9, Figure 2C), it was not significantly different between delay intervals (F(4,61) = 0.97, p=0.43, Figure 2F). No significant interaction was observed between group and distance (F(4,61) = 2.06, p=0.09) or group and delay interval (F(8,61) = 0.86, p=0.55). The statistical results of RT are summarized in Supplementary file 2.
 
@@ -57,7 +195,7 @@ Recall error was evaluated for sequential tasks using the same method. In the �
 
 In the ‘low memory load’ condition (i.e., 1 bar paradigm, Figure 1C), recall error was significantly different between groups (F(2,114) = 36.85, p<10–12, Figure 2G). Tukey post hoc test showed that recall error was significantly higher in RRMS (0.33 ± 0.12 radian) and SPMS (0.43 ± 0.12) compared to healthy control (0.22 ± 0.08, p<10–4, p<10–8, respectively). We also observed a significant difference between RRMS and SPMS (p<10–3). After adjusting for gender, age, education, and cognitive ability, the group’s effect on recall error remained significant (Supplementary file 5). Correspondingly, RT differed significantly between groups (F(2,114) = 12.59, p<10–4, Figure 2I). The statistical results of RT are summarized in Supplementary file 4.
 
-## Recall precision in multiple sclerosis
+### Recall precision in multiple sclerosis
 
 In the MGL paradigm, recall precision was also significantly different between groups (F(2,61) = 13.74, p<10–4) and distances (F(2,61) = 23.39, p<10–8, Figure 2B). No significant interaction was observed between group and distance (F(4,61) = 0.91, p=0.46). Post hoc analysis determined that recall precision was significantly lower in SPMS (0.87 ± 0.52/°) than in both RRMS (1.32 ± 0.51, p<0.039) and healthy control (1.70 ± 0.60, p<10–5). Recall precision was not significantly different between RRMS and healthy control (p=0.08). Moreover, this effect remained significant after adjusting for cognitive ability (Supplementary file 1). We also determined the effects of delay interval on recall precision. In this analysis, groups (F(2,61) = 14.57, p<10–5), delay intervals (F(4,61) = 7.30, p<10–4), and their interaction (F(8,61) = 2.44. p<0.02) had significant effects on recall precision (Figure 2E). Post hoc analysis showed the same pattern of result (SPMS = 0.84 ± 0.47; RRMS = 1.39 ± 0.46; healthy = 1.63 ± 0.61; SPMS vs. RRMS: p<0.005; SPMS vs. healthy: p<10–5, RRMS vs. healthy: p=0.34). This effect remained significant after adjusting for cognitive ability (Supplementary file 1).
 
@@ -65,9 +203,17 @@ Similarly, in the high memory load condition, recall precision was significantly
 
 Accordingly, the low memory load condition showed the same pattern. Recall precision significantly differed between groups (F(2,114) = 25.48, p<10–9, Figure 2H). Post hoc analysis determined that recall precision was significantly higher in healthy control [6.10 ± 2.41/radian] than in RRMS (4.16 ± 1.98, p<10–4) and SPMS (2.95 ± 1.05, p<10–8). Moreover, there was a significant difference between RRMS and SPMS (p<0.031), which, after adjusting for gender, age, education, and cognitive ability, remained significant (Supplementary file 5).
 
-## Distribution of error in recalling information in multiple sclerosis
+### Distribution of error in recalling information in multiple sclerosis
 
 The distribution of error in recalling information was assessed further to investigate the underlying mechanisms of WM impairment in MS. In this regard, the recorded data from the sequential paradigms was fitted to a probabilistic model developed by Bays et al., 2009. In line with the results of recall error and precision, for the high memory load condition, circular standard deviation (SD) of von Mises distribution of recall error was significantly different between groups (F(2,114) = 26.79, p<10–9) and bar orders (F(2,114) = 14.95, p<10–6, Figure 3A). At the same time, they had no significant interaction (F(4,114) = 1.19, p=0.31). von Mises SD of recall error was lower in healthy control (0.51 ± 0.12) than both RRMS (0.69 ± 0.20, p<10–5) and SPMS (0.76 ± 0.15, p<10–8). There was no difference between RRMS and SPMS in the von Mises SD parameter (p=0.16). In the low memory load condition, von Mises SD was affected by groups (F(2,114) = 33.07, p<10–11, Figure 3A). Again, von Mises SD was lower in healthy control (0.25 ± 0.10) than both RRMS (0.38 ± 0.14, p<10–5) and SPMS (0.47 ± 0.12, p<10–8). There was a significant difference between RRMS and SPMS in von Mises SD (p<0.02). After adjusting for gender, age, education, and cognitive ability, the group’s effect on von Mises SD remained significant in both high and low memory load conditions (Supplementary file 3 and Supplementary file 5).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87442/elife-87442-fig3-v1.jpg)
+
+**Figure 3.:** (A) von Mises SD (circular standard deviation of von Mises distribution), (B) Target response (probability of response around the target value), (C) swap error (probability of response around the non-target values), and (D) uniform response (probability of random response) for healthy control and multiple sclerosis (MS) subtypes in the sequential paradigms with 3 bar (left of each subplot) and 1 bar (right of each subplot). Data are represented as mean ± SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87442/elife-87442-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The nearest-neighbor analysis determined the isolated effect of orientation for healthy control, relapsing-remitting multiple sclerosis (RRMS), and secondary progressive multiple sclerosis (SPMS) in the high memory load condition (left of each subplot). The effect of orientation for the same groups in the low memory load condition (right of each subplot).
 
 According to the study by Bays et al., 2009, there are three sources of error for recalling information. The sources of these errors were defined as Gaussian variability in response around (i) target (target response proportion, Figure 3B) and (ii) non-target values (swap error, Figure 3C) and (iii) random responses (uniform response proportion, Figure 3D). In the high memory load condition, target response proportion was significantly different between groups (F(2,114) = 11.04, p<10–4) and bar orders (F(2,114) = 10, p<10–4, Figure 3B). No significant interaction was observed between group and bar order (F(4,114) = 0.43, p=0.78). Target proportion was higher in healthy control (0.88 ± 0.11) than both RRMS (0.79 ± 0.12, p<0.003) and SPMS (0.76 ± 0.14, p<10–4). There was no significant difference in target proportion between RRMS and SPMS groups (p=0.54). After adjusting for gender, age, years of education, and cognitive ability, the effect of group on target proportion remained significant (Supplementary file 3). Moreover, the nearest-neighbor analysis was performed to further evaluate the effect of target proportion in the absence of swap error. Removing the effect of swap error allowed us to assess the isolated effect of orientation recall. The findings from the nearest-neighbor analysis showed a similar pattern of results (Figure 3—figure supplement 1). The isolated effect of orientation was significantly different between groups (F(2,114) = 29.26, p<10–10) among different bar orders (F(2,114) = 7.07, p<0.002). No significant interaction was observed between group and bar order (F(4,114) = 0.58, p=0.67). After adjusting for gender, age, education, and cognitive ability, the results of nearest-neighbor analysis remained significant (Supplementary file 3).
 
@@ -75,13 +221,13 @@ In the low memory load condition, group significantly affected target response p
 
 In line with the above findings, swap error was higher in the MS population. In the high memory load condition, swap error was significantly different between groups (F(2,114) = 7.11, p<0.002) and bar orders (F(2,114) = 31.05, p<10–11, Figure 3C). No significant interaction was observed between group and bar order (F(4,114) = 1.45, p=0.22). Swap error was lower in healthy control (0.07 ± 0.06) than in both RRMS (0.11 ± 0.09, p<0.05) and SPMS patients (0.14 ± 0.09, p<0.002). There was no significant difference in swap error between RRMS and SPMS (p=0.41). After adjusting for gender, age, years of education, and cognitive ability, the group’s effect on swap error remained significant (Supplementary file 3). Moreover, while in the high memory load condition the uniform response proportion was different between groups (F(2,114) = 5.50, p<0.006, Figure 3D), no such differences were observed between bar orders (F(2,114) = 0.81, p=0.45) or the interaction between them (F(4,114) = 0.18, p=0.95). Post hoc analysis revealed that uniform proportion was lower in healthy control (0.05 ± 0.08) than both RRMS (0.09 ± 0.08, p<0.03) and SPMS (0.10 ± 0.08, p<0.02). Moreover, there was no significant difference in uniform response proportion between RRMS and SPMS groups (p=0.95). Additionally, although after adjusting for gender, the effect of group on uniform proportion remained significant, adding age, years of education, or cognitive ability made this effect insignificant (Supplementary file 3). The result of uniform response proportion in the low memory load condition is mathematically same as the target proportion (uniform proportion = 1 – target proportion, since there was no swap error in the 1 bar condition).
 
-## Dissociable function of MGL and sequential paradigms
+### Dissociable function of MGL and sequential paradigms
 
 The classifying ability of MGL and sequential paradigms in differentiating healthy control from MS patients was assessed based on recall error parameters using the receiver operating characteristic (ROC) analysis (Figure 4A–C). The accuracy of MGL and sequential paradigms with 3 bar and 1 bar in differentiating MS patients from healthy participants was 80% (Figure 4A), 83.4% (Figure 4B), and 86.2% (Figure 4C), respectively. A closer look at Figure 2A, D and G suggested that these paradigms differentiate MS and healthy control with distinct patterns. Hence, we separately applied ROC analysis to healthy control vs. RRMS, healthy control vs. SPMS, and RRMS vs. SPMS for MGL (Figure 4D) and sequential paradigms with 3 bar (Figure 4E) and 1 bar (Figure 4F). While the MGL paradigm had good performance in differentiating SPMS from healthy control (90.1%) and SPMS from RRMS (84.7%), it had poor ability in distinguishing healthy control from RRMS (64.1%, Figure 4D). Accordingly, although the 3 bar paradigm also had good accuracy in differentiating healthy control from SPMS (88.4%) and better results (compared to MGL) in discriminating healthy control from RRMS (79.3%), it did a poor job in discriminating MS subtypes (62%, Figure 4E). Complementary to the above findings, the 1 bar paradigm showed an in-between pattern of results. The 1 bar paradigm accurately discriminates healthy control from SPMS (94.4%), while it also performed well in differentiating healthy control from RRMS (79.6%). However, compared to MGL, it had a weaker ability to discriminate MS subtypes (72.3%, Figure 4F).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/87442/elife-87442-fig4-v1.jpg)
 
-**Figure 4.:** Receiver operating characteristic (ROC) curve demonstrated the accuracy of (A) memory-guided localization (MGL) and sequential paradigms with (B) 3 bar and (C) 1 bar in distinguishing healthy control from MS patients. The precision of these paradigms in dissociating healthy control from MS subtypes (relapsing-remitting MS [RRMS] and secondary progressive MS [SPMS]) and MS subtypes from each other is represented as the area under the curve (AUC) for (D) MGL and sequential paradigms with (E) 3 bar and (F) 1 bar.Figure 4—source data 1.Figure 4.
+**Figure 4.:** Receiver operating characteristic (ROC) curve demonstrated the accuracy of (A) memory-guided localization (MGL) and sequential paradigms with (B) 3 bar and (C) 1 bar in distinguishing healthy control from MS patients. The precision of these paradigms in dissociating healthy control from MS subtypes (relapsing-remitting MS [RRMS] and secondary progressive MS [SPMS]) and MS subtypes from each other is represented as the area under the curve (AUC) for (D) MGL and sequential paradigms with (E) 3 bar and (F) 1 bar.
 
 ## Discussion
 
@@ -107,11 +253,11 @@ In summary, using the resource-based model paradigms, we demonstrated that recal
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 121 patients with confirmed MS (61 RRMS and 60 SPMS) and 73 healthy control volunteers participated in this study. Patients were recruited in a full-census manner from the Comprehensive Multiple Sclerosis Clinic at Kashani Hospital in Isfahan between February 2021 and January 2022. The following criteria were used for participant selection: diagnosis based on the 2017 McDonald criteria (Thompson et al., 2018), age between 18–55 y, diagnosis within 1–18 y prior to entering the study, an expanded disability status scale (EDSS) score of 0–6.5, no history of clinical relapse or corticosteroid therapy within 2 mo before entering the study, normal or corrected-to-normal visual acuity and color vision (based on the recorded bedside neurological examination in their profile), and no impairment in factors that could interfere with the study including visual acuity, visual field, extraocular movement, scotoma, nystagmus, or tremor in the upper extremity, assessed as part of the EDSS examination. Additionally, normal performance in the Nine-Hole Peg Test (9-HPT < 45 s), the absence of a history of brain surgeries, major neurological disorders (stroke, epilepsy, brain tumor, or CNS infection), psychiatric disorders (major depressive disorder, bipolar disorder, or schizophrenia), drug or alcohol abuse, and chronic systemic disorders (diabetes, renal failure, liver failure, chronic obstructive pulmonary disorder [COPD], hypothyroidism, or hyperthyroidism) were required for participation in this study. Moreover, the control group should not have a family history of MS in their first-degree relatives.
 
-## Procedure
+### Procedure
 
 The study began with a clinical interview and neurological examination to collect clinical and demographic information from the participants. Participants also completed 9-HPT and the Persian version of the MoCA test (Badrkhahan et al., 2020; Goodkin et al., 1988; Nasreddine et al., 2005). MoCA is a standard cognitive screening tool with a scoring system ranging from 0 to 30, where distinct ranges correspond to different levels of cognitive function. Scores of ≥26 indicate normal cognitive performance, 18–25 denote mild cognitive impairment, 10–17 determine moderate cognitive impairment, and ≤10 is considered severe impairment.
 
@@ -119,19 +265,19 @@ Participants received verbal and written instructions before beginning the asses
 
 Written informed consent and consent for publication have been obtained from all participants before the start of the study. This study followed the latest update of the Declaration of Helsinki (World Medical Association, 2013) and was approved by the Iranian National Committee of Ethics in Biomedical Research (approval ID: IR.MUI.MED.REC.1400.441).
 
-## Visual working memory paradigms
+### Visual working memory paradigms
 
 Visual WM was assessed using two analog recall tasks, MGL and analog recall paradigms with sequential bar presentation. Stimuli were presented on a 15ʺ cathode ray tube (CRT, 75 Hz refresh rate) monitor at a distancing view of 48 cm. The paradigms were run in a dimly lit room on a computer with a Linux operating system and MATLAB software (MATLAB 2019a, The MathWorks, Inc, Natick, MA) with Psychtoolbox 3 extension (Brainard, 1997; Pelli, 1997).
 
-## Memory-guided localization
+#### Memory-guided localization
 
 Each trial was initiated by presenting a central fixation point (diameter of 0.51°) for 2 s, followed by the presentation of a target (a filled green circle with a diameter of 1.29°) for 1 s. The target randomly appeared at different eccentricities (3.22°, 6.44°, or 9.66°) on each trial. In each block, targets were presented with equal probability at each eccentricity in random order (pseudo-random selection). While encouraging participants to maintain fixation on the central fixation point, participants were asked to memorize the location of the target circle for a delay period of 0.5, 1, 2, 4, or 8 s (chosen pseudo-randomly). After the delay period, the fixation point changed from a circle to a cross, indicating the end of the delay period. Participants were asked to locate the target’s position using the computer mouse and confirm their response by pressing the left button on the mouse. Subsequently, visual feedback was presented, showing them the correct position of the target and their response (Figure 1A). Participants completed six blocks of 30 trials. They also completed a 10-trial training block before the start of the study. Recall error (absolute error), Euclidian distance between the target’s location and subject response in visual degree, and RT were recorded for further assessment.
 
-## Sequential paradigm with bar stimuli
+#### Sequential paradigm with bar stimuli
 
 Two designs of analog report tasks with sequential bar presentation, that is, the low memory load condition (1 bar) and high memory load condition (3 bar), were developed to evaluate the visual WM deficit in MS. In the high memory load condition, each trial started with a small central fixation point (0.26°) for 2 s, followed by a sequence of three distinguishable colored bars (red, green, and blue) at the center of the screen in a pseudo-random order. Each bar (2.57° by 0.19°) was presented for 500 ms, followed by a 500 ms blank interval. The minimum angular difference between the consecutively presented bars was 10°. Participants were asked to memorize both the orientation and color of the presented bars. After the bars were presented, a single bar, the ‘probe bar’ cued with the color of one of the presented bars, was displayed. Participants were asked to adjust the orientation of the probe bar, presented vertically, to match the orientation of the bar with the same color (target bar). To do that, they used a computer mouse and confirmed their response by clicking the right button. They received visual feedback, which showed the correct orientation of the target bar, their response, and the difference between them in angular degree (Figure 1B). The high memory load condition consisted of six blocks, each with 30 trials. The low memory load condition had the same structure as the high memory load condition except for presenting one bar instead of three (Figure 1C). After the high memory load condition, subjects participated in 30 trials of the low memory load condition. Due to the 1 bar design of low memory load condition, the swap error was absent, so fewer trials were needed (Peich et al., 2013). Before starting the paradigm, they also participated in a 10-trial training block with the same structure as the low memory load condition. The orientation of presented bars, subject response, recall error (absolute error), angular difference between the target value and subject response, and RT were recorded.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were conducted using IBM SPSS Statistics for Mac, version 26 (IBM Corp., Armonk, NY). The values were reported as mean ± standard deviation (SD). Data with extreme outliers (values greater than third quartile +3× interquartile range or less than first quartile – 3× interquartile range) in MGL and sequential paradigm with 3 bar were excluded from further analysis. The level of significance was set at p-value<0.05.
 

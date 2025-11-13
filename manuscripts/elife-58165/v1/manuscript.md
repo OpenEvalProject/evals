@@ -40,19 +40,43 @@ Here, we first elucidated the spatial profiles of RhoA-Rac1 interactions in moti
 
 ## Results
 
-## Spatially variable topology of the RhoA-Rac1 interaction network
+### Spatially variable topology of the RhoA-Rac1 interaction network
 
 The Rac1 effector PAK inhibits RhoA, and the RhoA effector ROCK inhibits Rac1 (Guilluy et al., 2011a). Here, we tested how the other RhoA effector, DIA, influences the Rac1 and RhoA activities. We first downregulated DIA using small interfering RNA (siRNA) and measured the resulting changes in the Rac1-GTP and RhoA-GTP levels. Downregulation of DIA increased the RhoA abundance and decreased Rac1 abundance, while decreasing relative activities of both RhoA and Rac1 (Figure 1—figure supplement 1, panels A and B). The decrease of relative Rac1 and RhoA activities induced by DIA knockdown shows that DIA activates Rac1 and also supports the existence of a positive feedback loop between DIA and RhoA described earlier (Kitzing et al., 2007). In addition, the GTPase network features another positive feedback from PAK to Rac1 through several molecular mechanisms (Baird et al., 2005; DerMardirossian et al., 2004; Feng et al., 2002; Obermeier et al., 1998). Summing up the interactions between RhoA and Rac1 mediated by their effectors ROCK and PAK (Byrne et al., 2016) and RhoA - Rac1 interactions through DIA, we arrive at the intertwined negative and positive feedback circuitry of the RhoA-Rac1 network shown in Figure 1—figure supplement 1, panel C.
 
 To explain the distinct GTPase activities at the leading and trailing edges, we hypothesized that these diverse feedforward and feedback mechanisms may be spatially controlled. Therefore, we explored how the interactions of active RhoA with its effectors vary spatially in polarized MDA-MB-231 cells. Using a proximity ligation assay (PLA), which visualizes protein interactions in situ (Gustafsdottir et al., 2005; Söderberg et al., 2006), we measured RhoA-DIA and RhoA-ROCK complexes (Figure 1A and B). Based on the commonly considered morphology of the long, narrow cell rear and the wide leading edge (Caswell and Zech, 2018), we segmented each polarized cell into three parts: the rear (about 20% of the cell length), intermediate region (next 70% of the cell length), and front (the rest 10% of the length). The density of the RhoA-effector complexes was quantified by dividing the number of PLA reactions by the area of the corresponding compartment.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig1-v1.jpg)
+
+**Figure 1.:** (A, B) Representative PLA images. Each red spot within a cell represents a fluorescent signal from a single RhoA-DIA1 (A) or RhoA-ROCK1 (B) complex. Yellow lines indicate bounds for the leading edge, intermediate region and rear. Bar graphs at the right show the average density of these complexes in different cell regions (the rear, middle and leading edge)± S.E.M. of four independent experiments with 25 cells analyzed per experiment. The asterisk * indicates that p<0.05 calculated using unpaired t-test. (C, D) Representative images of DIA1 and ROCK1 immunostaining. Bar graphs at the right show quantified immunostaining density signals for different cellular compartments ± S.E.M. of four independent experiments with one cell analyzed per experiment. The asterisk * indicates that p<0.05 calculated using unpaired t-test. (E) A schematic wiring diagram of the RhoA-Rac1 network, showing positive (blue) and negative (magenta) feedback loops. Spatially varying RhoA interactions with its effectors DIA and ROCK are shown by dashed lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Pulled-down active forms of RhoA (RhoA-GTP) and Rac1 (Rac1-GTP) and the abundances of DIA, RhoA and Rac1 were measured by western blot in cells transfected with non-targeting siRNA (control) or siRNA against DIA1 (siDIA1). GST beads were used as negative control, and lipopolysaccharide (LPS) treatment known to activate RhoA was used as positive control for the RhoA-GTP pull-down assay. Numbers 1, 2 and 3 indicate biological replicates. GAPDH was used as loading control. Quantified abundances of RhoA and Rac1 and their relative activities (normalized by the abundances) are shown by bar plots, Asterisks (*) indicate p<0.05 calculated using unpaired t-test. (C) Schematic diagram of positive and negative influences in the RhoA-Rac1 network.
+
 The results show that the RhoA-DIA complexes are predominantly localized at the cell front, whereas their density is markedly decreased at the rear (Figure 1A). In contrast, the density of the RhoA-ROCK complexes increases toward the cell rear and decreases at the leading edge (Figure 1B). These results are in line with protein staining data in polarized cells, which suggest that DIA is mainly localized at the leading edge (Figure 1C), whereas ROCK is abundant at the rear and cell body (Figure 1D; Brandt et al., 2007; Goulimari et al., 2005; Newell-Litwa et al., 2015; Watanabe et al., 1997; Wheeler and Ridley, 2004). For MDA-MB-231 cells, our quantitative proteomics data showed that the RhoA abundance is at least 10-fold larger than the abundance of DIA and ROCK isoforms combined (Byrne et al., 2016). Thus, as shown in the Modeling section of Materials and methods, the RhoA-effector concentrations depend approximately linearly on the DIA and ROCK abundances. Taken together, these results suggest a protein interaction circuitry of the GTPase network, where competing effector interactions are spatially controlled (Figure 1E). In order to analyze how this differential spatial arrangement of GTPase-effector interactions can accomplish the dynamic coordination between the leading and trailing edges, we constructed a mechanistic mathematical model and populated it by quantitative mass spectrometry data on protein abundances (Supplementary file 1).
 
-## Analyzing the dynamics of the RhoA-Rac1 interaction network
+### Analyzing the dynamics of the RhoA-Rac1 interaction network
 
 The changes in ROCK and DIA abundances along the longitudinal axis of polarized cells (Figure 1C and D) could plausibly encode the distinct RhoA-Rac1 temporal behaviors in different cellular segments. Therefore, we explored these possible dynamics of the GTPase network for different DIA and ROCK abundances prevailing at different spatial positions along the cell length. We first used a spatially localized, compartmentalized model where different DIA and ROCK abundances corresponded to distinct spatial locations (see Modeling section of Materials and methods for a detailed description of this model).
 
 Using the model, we partitioned a plane of the ROCK and DIA abundances into the areas of different temporal dynamics of RhoA and Rac1 activities (Figure 2A). This partitioning is a two-parameter bifurcation diagram where the regions of distinct GTPase dynamics are separated by bifurcation boundaries at which abrupt, dramatic changes in the dynamic behavior occur (Holmes and Edelstein-Keshet, 2016). The blue region 1 in Figure 2A corresponds to the self-perpetuating oscillations of the RhoA and Rac1 activities at the leading edge. The ROCK abundance is markedly lower and the DIA abundance is higher at the leading edge than in the cell body (Figure 1C and D). Thus, a combination of Rac1 activation by RhoA via DIA and RhoA inhibition by Rac1 via PAK (Figure 2B) results in sustained oscillations of RhoA and Rac1 activities at the leading edge (Figure 2D). This periodic Rac1 activation drives actin polymerization at the leading edge pushing protrusion-retraction cycles (Machacek et al., 2009; Martin et al., 2016; Pertz, 2010; Tkachenko et al., 2011).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig2-v1.jpg)
+
+**Figure 2.:** (A) Distinct dynamic regimes of the RhoA-Rac1 network dynamics for different DIA and ROCK abundances. Oscillations of RhoA and Rac1 activity exist within area 1 (regime 1). In area 3, sustained GTPase oscillations and a stable steady state with high RhoA and low Rac1 activities coexist. Regimes 0, 2, 5 and 6 have only one stable steady state. Notably, regime 2 is excitable. Steady state solutions with high RhoA activity exist in areas 2–4, and 6–8. Stable steady state solutions with high Rac1 activity exist in areas 0 and 5–8. Regimes 4, 7 and 8 are bistable with two stable steady states. (B, C) Wiring diagrams of the RhoA-Rac1 network for the cell leading edge (B) and the cell body and rear (C). Dashed blue lines indicate weak activating connections. (D–F) Typical time courses of RhoA and Rac1 activity in regimes 1 (D), and 2 (E). (F) In area 3, depending on the initial state, the GTPase network evolves either to a stable steady state (right) or a stable oscillatory regime (left).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Domains of the distinct RhoA-Rac1 dynamics partition the planes of the abundances of (A) ROCK and DIA, (B) PAK and DIA, (C) PAK and ROCK. (D) Steady-state RhoA-GTP and Rac1-GTP dependences on the ROCK abundance are presented along a 1-D section of the PAK, ROCK plane ($PAK/PAK^{tot}=p=0.3$, Equation 12) shown by white dashed line in (C). The amoeboid shape characterized by high RhoA activity emerges in mono-stable region 6 corresponding to the high RhoA-GTP and low Rac1-GTP when ROCK is non-inhibited. (E) Wiring diagram of the RhoA-Rac1 signaling network where the dimensionless multipliers, $\alpha_{Y}^{X}$, specify the regulatory influence of protein Y on protein X (see Star*Materials and methods for details).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–I) Nullclines and vector fields are calculated for a 2-D system given by Equation 12 for regimes 0–8, as indicated. The RhoA-GTP and Rac1-GTP nullclines are shown by red and blue curves, respectively. Projections of limit cycles of a 5-D system in Equation 6 into a 2-D space of the RhoA and Rac1 activities are shown by green curves. Circles show stable steady states; triangles represent unstable steady states. Inserts in panels (B–D, F, H) show the area near y-axis at a larger magnification.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A–F) Minimum and maximum values of RhoA (A, C, E) and Rac1 (B, D, F) activity for the oscillatory regimes (dashed lines) and steady state values of RhoA (A, C, E) and Rac1 (B, D, F) activity (solid lines) are plotted against DIA (C–F) and ROCK (A–B) abundances. Black dashed lines represent borders of corresponding zones in Figure 2A.
 
 The green region 2 in Figure 2A is an area of stable high RhoA and low Rac1 activities at the rear and intermediate cell regions. Within this region, RhoA inhibits Rac1 via ROCK, and Rac1 inhibits RhoA via PAK (Figure 2C). After perturbations, the GTPase network converges to steady-state levels of high RhoA-GTP and particularly low Rac1-GTP (Figure 2E). Unlike other dynamical regimes with only a single stable steady state, region 2 corresponds to an excitable an medium, which cannot generate pulses itself, but supports the propagation of excitable activity pulses (see Materials and methods section).
 
@@ -60,13 +84,27 @@ The red region 3 corresponds to the coexistence of GTPase oscillations and a sta
 
 In addition to these dynamic regimes, the spatially localized model predicts other emergent non-linear dynamic behaviors (Figure 2A, Figure 2—figure supplement 1, panels A-D, and Figure 2—figure supplement 2), which the GTPase network may execute under large perturbations of the RhoA and Rac1 effector abundances to coordinate GTPase signaling at the leading and trailing edges (see Modeling section of Materials and methods for a detail description of these regimes). Therefore, we next analyzed how the leading and trailing edge GTPase dynamics are coupled.
 
-## Spatiotemporal dynamics of the RhoA-Rac1 network reconciles the distinct temporal behaviors at the cell front and rear
+### Spatiotemporal dynamics of the RhoA-Rac1 network reconciles the distinct temporal behaviors at the cell front and rear
 
 Different active GTPase concentrations in the cell rear and the leading edge induce diffusion fluxes (Das et al., 2015), which in turn influence the emerging behavior of these GTPases and coordinate their dynamics in distinct cellular segments. As a multitude of dynamic behaviors is possible, we systematically explored the behavior of the RhoA-Rac1 network in space and time using a spatiotemporal model of the GTPase network interactions (referred to as a reaction-diffusion model, see Materials and methods). Starting from experimental observations to rationalize which behaviors are likely with physiological boundaries, we digitized 2D images of polarized cells and incorporated the DIA and ROCK abundances as functions of the spatial coordinate along the cell length, based on the quantitative imaging data (Figure 3A–C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig3-v1.jpg)
+
+**Figure 3.:** (A) A 2-D calculation domain obtained by digitizing cell images. Different cellular compartments are indicated. The x-axis represents the direction of cell polarization, the y-axis represents the perpendicular direction. (B, C) The abundance profiles of DIA and ROCK used in simulations (red lines) are superimposed on the experimental spatial profiles (bar graphs in Figure 1C and D). (D–G) Model-predicted spatial patterns of the RhoA and Rac1 activities for different phases of the cell movement cycle. (D, F) Rac1 and RhoA activity snapshots during a protrusion-retraction cycle at the leading edge (t = 175 s from the start of the moving cycle). (E, G) represent snapshots when the Rac1 and RhoA activity wave have spread over the entire cell, reaching the rear (t = 1518 s). (H) The RhoA activity at the leading edge and cell body during a protrusion-retraction phase measured by RhoA FRET probe in space and time. The arrows compare model-predicted and experimentally measured patterns, indicating zones of RhoA oscillatory and high constant activities and a ‘dark zone’ of low RhoA activity. (I) Spatiotemporal pattern of the RhoA activity during further RhoA wave propagation into the cell. (J) The number of RhoA activity bursts at the cell body and rear during 10 min measured using the RhoA FRET probe. Error bars represent 1st and 3rd quartiles, *** indicate p<0.001 calculated using unpaired t-test. (K–M) Fluorescent microscopy images of Rac1 activity (red), combined with staining for F-actin (phalloidin, white) and the nucleus (DAPI, blue) in fixed cells for different phases of the cell movement cycle; (K) a protrusion-retraction cycle at the leading edge, and (L, M) present Rac1 activity wave propagation into the cell body. The images (L, M) were obtained by super-resolution microscopy.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Model-predicted snapshots of the RhoA and Rac1 activities for the final phase of the cell movement cycle, when the RhoA-Rac1 wave has reached the cell rear. (C) A different biological replicate of a kymograph of the RhoA dynamics measured by RhoA FRET probe during a protrusion-retraction phase and the corresponding kymograph of the RhoA dynamics at the leading edge and cell body predicted by the model. (D) Spatiotemporal pattern of the RhoA activity during the rear contraction. (E) A different biological replicate of a super-resolution fluorescent microscopy image of Rac1 activity (red), combined with staining for F-actin (phalloidin, white) and the nucleus (DAPI, blue) in fixed cells. The image shows the Rac1 activity wave propagation into the cell body. (F) Computational mesh used in calculations for a given cell shape.
+
 The model predicts autonomous, repeating cycles of the spatiotemporal GTPase dynamics (Figure 3D–G and Video 1). For a substantial part of a dynamic cycle, high RhoA-GTP and low Rac1-GTP persist at the cell rear and maintain the rear contraction, whereas active RhoA and Rac1 oscillate at the leading edge, resulting in actin (de)polarization cycles and protrusion-retraction cycles (Figure 3D and F; Wang et al., 2013). At the same time, a wave of oscillating Rac1 and RhoA activities slowly propagates from the leading edge toward the cell rear (Figure 3E and G). Between the oscillatory RhoA-GTP zone and the areas of high RhoA activity, a zone of low RhoA activity emerges (Figure 3F). As time progresses, the wave of oscillating GTPase activities and the area of low RhoA activity spread to the rear (Figure 3—figure supplement 1, panels A and B), leading to re-arrangement of the cytoskeleton (Warner et al., 2019). Because of the oscillations, zones of low Rac1 activities emerge, which give rise to high RhoA-GTP that interacts with ROCK and leads to the rear retraction (Video 1). Subsequently, RhoA returns to its initial high stable activity, and the dynamic pattern of RhoA-GTP and Rac1-GTP over the entire cell returns to its initial state. These model simulations could plausibly explain how the different GTPase dynamics at the cell front and rear are coordinated to enable successful cell migration.
 
+![Video 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-video1.mp4.jpg)
+
 Therefore, it was important to test the prediction arising from the model simulations in biological experiments. For this, we used cells stably expressing the mTFP-YFP RhoA-GTP FRET-probe (Kim et al., 2015) allowing us to determine the RhoA-GTP dynamics using ratiometric, live-cell spinning disk microscopy. We imaged the cells with a frequency of one image every 5 s and constrained the measurement time to 10 min to limit phototoxic effects. Due to this time limitation, a full cycle of cellular movement (around 45 min on average, Video 2) could not be followed in an individual cell, and the full spatiotemporal RhoA activity cycle during a cell movement was compiled from several cells observed in different phases of cellular movement. In the initial phase of the cell movement cycle, the spatiotemporal RhoA activity showed three different zones: (i) oscillations at the leading edge, (ii) dark zone of low activity and (iii) light zone of high activity (Figure 3H and Figure 3—figure supplement 1, panel C) in the cell body and rear, matching the model prediction (Figsure 3F and Figure 3—figure supplement 1, panel C). As time progressed, the GTPase activity wave propagated further into the cell (Figure 3I), forming zones of high and low RhoA activities. In the space-time coordinates, the slope of the boundaries of these zones suggests that they travel from the leading edge to the cell rear, confirming the model predictions (Video 1 and Figure 3I). When the wave of oscillatory GTPase activities finally reaches the cell rear, it induces several RhoA-GTP spikes (Figure 3G and I), periods of low RhoA activity (Figure 3—figure supplement 1, panels A-B and D), and subsequent return to the original, high RhoA-GTP at the rear and part of the cell body (Figure 3F and H). Figure 3—figure supplement 1, panel D experimentally captures this transition from a low RhoA activity to the original high activity as the final step of the cell movement cycle predicted by the model.
+
+![Video 2.](https://cdn.elifesciences.org/articles/58165/elife-58165-video2.mp4.jpg)
+
+**Video 2.:** Red color represents staining of the nuclei. Frame increment is 10 min.
 
 The model predicts that during a single cellular movement cycle, multiple bursts of RhoA activity appear at the leading edge, whereas at the cell rear, RhoA activity bursts occur only after the RhoA-Rac1 wave has spread through the cell (Video 1). Measuring the number of RhoA bursts at the leading edge and cell rear during observation time (10 min) corroborated model predictions, showing a ca. fivefold larger number of bursts at the leading edge than at the cell rear (Figure 3J). On average, at the leading edge a burst of RhoA activity happens every minute, while at the cell rear only 1 or 2 bursts happen during 10 min (Figure 3J).
 
@@ -74,11 +112,19 @@ Although spatially resolved Rac1 activity can be determined using exogenous prob
 
 The spatiotemporal activation dynamics of Rac1 and RhoA underlie the morphological events during cell migration, that is protrusion-retraction cycles at the front and the retraction cycle at the rear (Ridley et al., 2003; Video 2). These mechanical processes, involving cytoskeleton proteins, can be coordinated by periodic propagating waves of RhoGTPase activities described by our model.
 
-## Hysteresis of Rac1 and RhoA activities and cell shape features
+### Hysteresis of Rac1 and RhoA activities and cell shape features
 
 We previously showed that PAK inhibition could change the cell shape of MDA-MB-231 cells from mesenchymal to amoeboid (Byrne et al., 2016). The mesenchymal mode of migration features an elongated cell morphology and high Rac1 activity, whereas the amoeboid mode is hallmarked by a rounded morphology and high RhoA activity (Sanz-Moreno et al., 2008). These morphologies and migration types are mutually exclusive but can transition into each other. Our previous study showed that this transition correlated with the hysteresis of active RhoA and Rac1 upon PAK inhibition (Byrne et al., 2016). Hysteresis is the hallmark of bistability: if a parameter, such as the PAK abundance, reaches a threshold value, then the system flips from one stable state to another stable state, at which it remains for a prolonged period of time even when this parameter has returned to its initial value (Markevich et al., 2004; Sha et al., 2003).
 
 Our model now allows us to examine the exact spatiotemporal kinetics of the GTPase network in response to changes in PAK abundance or activity. Varying PAK causes Rac1 and RhoA activities to move through different dynamic regimes (shown by the line connecting points I – II – III in Figure 4A). In unperturbed cells, GTPase activities oscillate at the leading edge. This initial network state corresponds to point I in region 1n and unperturbed ROCK, PAK and DIA abundances and activities (the point I coordinates are (1, 1) in Figure 4A). Because Rac1 and RhoA are difficult to target for therapeutic interventions, we used a small molecule PAK inhibitor (IPA-3) in our previous study (Byrne et al., 2016). As PAK abundance gradually decreases (or PAK inhibition increases), the system moves from the oscillatory region 1 to the BiDR region 3, before reaching a bistable regime (regions 7 and 8), as shown by point II. In the BiDR region, (i) a stable high RhoA-GTP, low Rac1-GTP state and (ii) a stable oscillatory state with a high average Rac1-GTP coexist at the leading edge (Figure 2F and Figure 2—figure supplement 2, panel D). While moving from point I into area 3, the system continues to display the stable oscillatory state with high average Rac1-GTP. In the bistable regions 7 and 8, two stable states co-exist (i) high RhoA-GTP, low Rac1-GTP and (ii) low RhoA-GTP, high Rac1-GTP (Figure 2—figure supplement 2, panels H and I). Entering area 7 from the BiDR area 3, the system relaxes to the steady state with the higher Rac1-GTP level. Only with the further PAK decrease, a saddle-node bifurcation (see Materials and methods) shifts the system to the alternative steady state with the much lower Rac1-GTP level.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distinct dynamic regimes of the RhoA-Rac1 network for different DIA and ROCK abundances. Colors and numbers of dynamic regimes are the same as in Figure 2A. (B, C) Model-predicted dependencies of the RhoA and Rac1 activities on the PAK abundance for gradually decreasing (blue) and increasing (red) PAK abundances. The network evolution occurs through two different routes (blue and red curves in B and C). It is calculated by averaging the GTPase activities over the time and cell volume based on western blot data reported in our previous study (Byrne et al., 2016). Points I, II and III shown in black (A) are also indicated on the network trajectories (B, C). (D–F) Snapshots of simulated RhoA-GTP and Rac1-GTP spatiotemporal patterns that emerge for different PAK abundances are shown for a 1-D section of a cell. The x axis corresponds to the normalized cell length (Figure 3A). Arrows in panel (D) illustrate oscillations and the wave propagation along a cell.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Model-predicted dependencies of the RhoA and Rac1 activities on the concentration of PAK inhibitor ($I^{PAK}=IPA-3/K_{I}^{PAK}$) for gradually increasing (blue) and decreasing (red) PAK inhibitor concentrations. The network evolution occurs through two different routes (blue and red curves in, panels A and B). It is calculated by averaging the GTPase activities over time and the cell volume based on Western blot measurements in our previous work (Byrne et al., 2016).
 
 To illustrate the network evolution in response to a gradual decrease in the PAK abundance, we have plotted the trajectories of the Rac1 and RhoA activities, averaged over the cell volume and time (blue curves in Figure 4B and C). Figure 4B shows that the average Rac1 activity first slowly decreases and then abruptly decays after passing point II (Figure 4B). If we follow the Rac1-GTP trajectory in response to increasing PAK inhibitor doses, we obtain a similar curve (Figure 4—figure supplement 1). The average RhoA-GTP behaves oppositely, steadily increasing and then jumping to the peak activity after the network passes the BiDR and bistable regions (blue curves in Figure 4C and Figure 4—figure supplement 1, panel B showing the RhoA-GTP trajectories in response to PAK abundance decrease or IPA-3 increase, respectively). A further decrease in the PAK abundance moves the RhoA-Rac1 network into point III of region 6 with a single steady state of active RhoA and low Rac1 activity (Figure 4A–C).
 
@@ -88,13 +134,27 @@ What about the transition back, from point III to point I? Because the underlyin
 
 Summarizing, the experimentally observed hysteresis of RhoA and Rac1 activities upon PAK inhibition is explained by the network evolution through the BiDR and bistable regions. The morphological cell shape changes also follow this pattern. Importantly, bistability in the RhoA-Rac1 network only can be achieved through PAK inhibition, and only when PAK is largely inhibited, cells leave the bistable regions and reach a stable state III where their cell shape becomes amoeboid (Edelstein-Keshet, 2016). Our model allows us to systematically dissect the biochemical states that program the GTPase dynamics and resulting cell movement.
 
-## ROCK inhibition results in multiple competing lamellipodia and multi-polar cell shapes
+### ROCK inhibition results in multiple competing lamellipodia and multi-polar cell shapes
 
 Having investigated the consequences of PAK inhibition, we next studied the effects of ROCK inhibition. The model predicts that a decrease in ROCK activity below a certain threshold results in the formation of several oscillatory centers of GTPase activities featuring high (averaged over time) Rac1 activity (Video 3). In contrast to periodic RhoGTPase waves propagating from a single Rac1 oscillatory center at the leading edge, several oscillatory Rac1 activity centers result in the uncoordinated and chaotic emergence of waves, thereby preventing a single wave propagation along a cell (compare Videos 1 and 3). These findings might imply the emergence of multi-polar cells that extend lamellipodia in several different directions. In fact, multiple competing lamellipodia emerging as a result of ROCK inhibition were previously reported (Worthylake and Burridge, 2003).
 
+![Video 3.](https://cdn.elifesciences.org/articles/58165/elife-58165-video3.mp4.jpg)
+
 To determine if ROCK inhibition could induce multiple Rac1-GTP foci, we seeded MDA-MB-231 cells on collagen and treated the cells with the pan-ROCK inhibitor Y-27632. After 15 min, we fixed the cells and stained for active Rac1 and F-actin. Spatially resolved Rac1 activity showed two or three Rac1-GTP poles, whereas cells not incubated with the inhibitor were exclusively mono-polar (Figure 5A and Figure 5—figure supplement 1, panel A). Using the RhoA-GTP FRET-probe to measure RhoA activity in a spatially resolved manner, Figure 5B showed the existence of several centers of uncoordinated RhoA activities. These dynamics are in line with model-predicted patterns (Video 3), and in a sharp contrast to cells where ROCK is not inhibited (Figure 3, and Video 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fluorescent microscopy images of Rac1 activity (red), and F-actin (phalloidin, white) and nuclear (DAPI, blue) staining in fixed MDA-MB-213 cells treated or not with 2.5 µM Y-27632 ROCK inhibitor for 15 min. (B) Spatiotemporal pattern of the RhoA activity in cells treated with 2.5 µM of ROCK inhibitor Y-27632 measured by the RhoA FRET probe.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58165/elife-58165-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) A different biological replicate of fluorescent microscopy image of Rac1 activity (red), and F-actin (phalloidin, white) and nuclear (DAPI, blue) staining in fixed MDA-MB-213 cells treated with 2.5 µM Y-27632 ROCK inhibitor for 15 min. (B) Model-predicted numbers of RhoA activity bursts during 10 min at the leading edge and the rear for control cells and cells where ROCK was inhibited by 2.5 μM of Y-27632. (C) The number of experimentally observed RhoA activity bursts during 10 min measured using the RhoA FRET probe at the leading edge and the rear for control cells and cells treated with the ROCK inhibitor Y-27632. Error bars represent 1st and 3rd quartiles, asterisks *** indicate p<0.001 calculated using unpaired t-test. (D) Quantification of the total distance travelled by the control cells and cells treated with a ROCK inhibitor. Results were similar for two different ROCK inhibitors, 10 μM Y-27632 and 1 μM GSK269962A. (E) Model predicted lower threshold of DIA abundance for induction of RhoA-Rac1 oscillations (region 1 in Figure 2A) in control and DIA knockdown conditions. DIA knockdown conditions were modeled by changing of RhoA and Rac1 abundance according to experimental data (Figure 1—figure supplement 1, panels A and B).
+
 In the absence of ROCK inhibitor, the RhoA-GTP bursts at the cell rear only occur when a propagating wave reaches the rear, that is at low frequency. These bursts cause the cell tail retraction and are associated with the last step of the movement cycle of a polarized elongated cell. When ROCK is inhibited, a GTPase oscillatory center emerges in the tail with the corresponding increase in the frequency of RhoA-GTP bursts (Figure 5—figure supplement 1, panels B and C). As a result, a cell loses the ability to retract the tail. These cells do not lose polarity but exhibit substantial morphological changes, acquiring largely elongated shapes (compare Videos 2 and 4). In line with these results, our experiments suggest that the total migration distance is smaller for cells treated with ROCK inhibitor than for untreated cells (Figure 5—figure supplement 1, panel D). This decrease can be explained by the formation of multiple lamellipodia and the inability of ROCK-inhibited cells to retract their tail.
+
+![Video 4.](https://cdn.elifesciences.org/articles/58165/elife-58165-video4.mp4.jpg)
+
+**Video 4.:** Red color represents staining of the nuclei.
 
 Summing up, these data suggest that the ROCK activity above a certain threshold is necessary for the formation of a single high Rac1 activity center at the leading edge and avoiding the appearance of multiple high Rac1 activity centers in a cell. Thus, ROCK cooperates with PAK to maintain the polarized lamellipodia formation and the cell shape typical for mesenchymal cell movement.
 
@@ -124,77 +184,435 @@ In summary, our spatiotemporal model of RhoA-Rac1 signaling proposes how differe
 
 ## Materials and methods
 
-## Experiments
+**Key resources table**
 
-## Tissue Culture and cell treatment
 
-## Cells
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rac1 clone 23A8 (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>cat.05–389</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RhoA (26C4) (Mouse monoclonal)</td>
+      <td>Santa-Cruz Biotechnology</td>
+      <td>cat.sc-418</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (D16H11) XP (Rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>cat.5174</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIA1 (Rabbit polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat.PA5-21409</td>
+      <td>WB (1:1500) IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ROCK1 (Rabbit polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat.PA5-22262</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Rac-GTP (Mouse monoclonal)</td>
+      <td>New East Bio</td>
+      <td>cat.26903</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse F(ab')2 Fragment Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat. A-21237</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit F(ab')2 Fragment Alexa Fluor 594 (Goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat. A-11072</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor-488 (Donkey polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat. A-21206</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa Fluor-594 (Goat polyclonal)</td>
+      <td>Thermo</td>
+      <td>cat. A-11012</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-linked (Goat polyclonal)</td>
+      <td>CST</td>
+      <td>cat.7074</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG, HRP-linked (Horse polyclonal)</td>
+      <td>CST</td>
+      <td>cat.7076</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lentivirus)</td>
+      <td>IncuCyte NucLight Red Lentivirus Reagent</td>
+      <td>Essen</td>
+      <td>Cat. 4625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.Y0503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GSK 269962</td>
+      <td>Selleckchem</td>
+      <td>Cat.S7687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4,6-Diamidino-2-phenylindole dihydrochloride (DAPI), stain</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.10236276001</td>
+      <td>(1 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine Phalloidin</td>
+      <td>Thermo</td>
+      <td>Cat. R415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin- Alexa Fluor-488</td>
+      <td>Thermo</td>
+      <td>Cat. A12379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat. P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polibrene</td>
+      <td>Millipore</td>
+      <td>Cat.TR-1003-G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>Thermo</td>
+      <td>Cat.13778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GST-Beads</td>
+      <td>Sigma Aldrich</td>
+      <td>G.4510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s Modified Eagle Medium (DMEM)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.D6429</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FluoroBrite DMEM Media</td>
+      <td>Thermo</td>
+      <td>Cat. A1896701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Gibco</td>
+      <td>Cat.10270</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Collagen (rat tail)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat.11179179001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>MDA-MB-231</td>
+      <td>ATCC</td>
+      <td>Cat.HTB-26</td>
+      <td>Authenticated by the Beatson Institute, Glasgow, UK</td>
+    </tr>
+    <tr>
+      <td>Transfected Construct (Human)</td>
+      <td>DIAPH1 siRNA SMART Pool</td>
+      <td>Dharmacon</td>
+      <td>cat. L-010347-00-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-rhotekin-RBD</td>
+      <td>Dr. Mike Olson gift (Beatson Institute, Glasgow, UK)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GST-PAK-CRIB</td>
+      <td>Dr. Piero Crespo gift (IBBTEC,University of Cantanbria, Spain)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mTFP-YFP RhoA activity probe</td>
+      <td>Prof. Olivier Pertz Gift (Institute of Cell Biology, Bern, Switzerland)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX-2</td>
+      <td>Prof. Olivier Pertz Gift</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>VsVg</td>
+      <td>Prof. Olivier Pertz Gift</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>https://imagej.net/Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenFOAM</td>
+      <td>Weller et al., 1998</td>
+      <td>https://www.openfoam.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ParaView</td>
+      <td>Ayachit, 2015</td>
+      <td>https://www.paraview.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Salome</td>
+      <td>Ribes and Caremoli, 2007</td>
+      <td>https://www.salome-platform.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td></td>
+      <td>https://www.python.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>Virtanen et al., 2020</td>
+      <td>https://www.scipy.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MatplotLib</td>
+      <td>Hunter, 2007</td>
+      <td>https://matplotlib.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenCV</td>
+      <td>Bradski, 2000</td>
+      <td>https://opencv.org/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DYVIPAC</td>
+      <td>Nguyen et al., 2015</td>
+      <td>https://bitbucket.org/andreadega/dyvipac-python/src/master/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BioNetGen</td>
+      <td>Blinov et al., 2004; Harris et al., 2016</td>
+      <td>https://www.csb.pitt.edu/Faculty/Faeder/?page_id=409</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experiments
+
+#### Tissue Culture and cell treatment
+
+##### Cells
 
 MDA-MB-231 breast cancer cells (a gift from Brad Ozanne, Beatson Institute) were cultured in DMEM supplemented with 2 mM glutamine and 10% fetal calf serum at 37°C in a humidified atmosphere containing 5% CO2. MDA-MB-231 expressing the RhoA activity probe were generated by lentiviral infection of the mTFP-YFP RhoA activity probe (Fritz et al., 2013) and selected with puromycin at 2 µg/ml for 3 days. MDA-MB-231 cells with constitutive expression of nuclear mKATE2 were generated by infecting MDA-MB-231 cells with IncuCyte NucLight Red Lentivirus Reagent (Cat. No. 4625) in the presence of polybrene (6 μg/ml, Sigma). After 48 hr, selection was performed by supplement the media with puromycin (2 µg/ml, Sigma). All aforementioned cell lines were mycoplasma negative and tested on a monthly basis when in culture.
 
-## ROCK inhibition
+##### ROCK inhibition
 
 Cells were incubated with either vehicle, 1 µM GSK 269962 (Tocris) or 2.5, 5 or 10 µM (as indicated in manuscript) Y-27632 (Sigma) for 20 min before the experiments were carried out.
 
-## Knock down by siRNA
+### Knock down by siRNA
 
 Knock-down of DIA1 was achieved by transfecting a smartpool of three siRNAs targeting the human DIAPH1 mRNA and non-targeting siRNA control (Dharmacon cat. L-010347-00-0010). Both siRNAs were transfected at a final concentration of 50 nM using Lipofectamine RNAiMax (Cat.13778) in a 1:2 (v/v) ratio. Cells were kept for 48 hr before the experiments were carried out.
 
-## Rac1 and RhoA pulldowns
+### Rac1 and RhoA pulldowns
 
 MDA-MB-231 and MDA-MB-231 transfected with siRNAs against DIAPH1 were seeded in a 6-well plate coated with rat-tail collagen (see siRNA experiments section) and lysed in 500 µl ice-cold lysis buffer (50 mM Tris-HCl, pH 7.5, 0.2% (v/v) Triton X-100, 150 mM NaCl, 10 mM MgCl2) supplemented with 1 mM protease inhibitors PMSF and leupeptin (Sigma). Cell lysates were cleared of debris by centrifugation for 10 min at 20,000xg at 4°C. 10 µl of the cleared lysate were kept as loading control. The remainder of the lysates were incubated with 6 µl of GST-PAK-CRIB beads for Rac1 pulldowns or GST-Rhotekin-RBD beads for RhoA pulldowns for 1 hr at 4°C under end-to-end rotation. The GST-PAK-CRIB and GST-Rhotekin-RBD beads were produced as described by Pellegrin and Mellor, 2008. The beads were washed with one volume of lysis buffer. The beads and an aliquot of the total lysate as input control were separated by SDS gel electrophoresis using 4–12% NuPAGE precast gels according to the manufacturer’s instructions. Gels were electroblotted onto PVDF membranes (Sartorius). Blots were blocked in TBST (50 mM Tris, pH 7.5, 150 mM NaCl, 0.05% Tween-20) containing 5% milk powder and incubated overnight with primary antibody followed by secondary antibodies linked to horse radish peroxidase (HRP). Antibodies used included: Rac1 antibody (Millipore, clone 238A, 1:500), anti-RhoA antibody (Santa Cruz Biotechnology 26C4, sc-418, 1 µg/ml), anti-GAPDH (CST D16H11 XP, diluted 1:3000) and anti-DIA1 (Thermo Fisher cat.PA5-21409, 1 µg/ml). Secondary anti-rabbit and anti-mouse HRP-conjugated antibodies were obtained from CST and used at 1:10,000 dilution. Western Blots were developed using SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher). Images of the blots were acquired in a Bio-Rad ChemiDoc Imager. The western blot bands were quantified using ImageJ.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were seeded onto high performance glass coverslip, thickness 1 1/2 (Zeiss, cat.474030-9000-000) coated with 0.01% collagen. For ROCK inhibition cells were pretreated as indicated in the corresponding section with Y-27632. Cells were washed twice with PBS, fixed and permeabilized with 3.7% formaldehyde, 0.025% NP-40 in 50 mM Pipes pH6.8, 10 mM MgCl2 for 5 min and blocked in TBS (50 mM Tris, pH 7.5, 150 mM NaCl) containing 2% BSA for 1 hr. Coverslips were incubated overnight in TBS containing 1% BSA with primary anti-Rac1-GTP (New East Bio cat.26903) (1:100), anti-ROCK1 (Thermo cat.PA5-22262) (1:100) or anti-DIA1 (1:200) antibodies. Slides were washed twice with TBS and then incubated for 1 hr at room temperature with secondary antibodies anti-mouse F(ab')2 Fragment Alexa Fluor 647 Conjugate (Thermo cat. A-21237), Donkey anti-rabbit Alexa fluor-488 (Cat. A-21206) or anti-rabbit Alexa fluor-594 (Thermo cat. A-11012) for confocal; anti-rabbit F(ab')2 Fragment Alexa Fluor 594 Conjugate (Thermo cat. A-11072) and anti-mouse F(ab')2 Fragment Alexa Fluor 647 Conjugate for super-resolution microscopy. Slides were washed twice with TBS and incubated with DAPI, 1:100, and phalloidin, conjugated with rhodamine or Alexa Fluor-488 (1:100) (Thermo A12379) for 5 min, washed two times and mounted using VECTASHIELD antifade mounting media (Vector labs Cat. H-1000). Confocal images were taken with an Olympus FV100 or a Nikon A1+ confocal, with 60x oil objective. Super-resolution images were taken with a N-SIM microscope using a with 100x oil objective.
 
-## Proximity ligation assay
+### Proximity ligation assay
 
 The Proximity Ligation Assay (PLA) visualizes an interaction between two proteins that co-localize within < 40 nm by an oligonucleotide-mediated ligation and enzymatic amplification reaction whose product is subsequently recognized by a fluorescent probe. Consequently, each fluorescent spot indicates that two proteins are in proximity. The mouse/rabbit Duolink in situ red starter kit (Olink, Uppsala, Sweden) was used according to the manufacturer’s instructions. MDA-MB-231 cells were seeded at 1 × 104 cells per well in a 6-well plate. The cells were fixed and permeabilized as described above for immunofluorescence studies. Then, the cells were incubated with a 1:100 dilution of the primary antibodies (RhoA and DIA) in PBS containing 0.01% BSA overnight at 4°C. For the rest of the protocol the manufacturer’s instructions were followed. Briefly, the cells were washed in Buffer A (supplied with the kit) three times for 15 min and incubated with the PLA probes for 1 hr at 37°C in a humidified chamber. This was followed by a 10 min and a 5-min wash in Buffer A. The ligation reaction was carried out at 37°C for 1 hr in a humidified chamber followed by a 10 and 5 min wash in Buffer A. The cells were then incubated with the amplification mix for two hours at 37°C in a darkened humidified chamber. After washing with 1x Buffer B (supplied with the kit) for 10 min and 1 min wash with 0.01x buffer B, followed by 488 phalloidin staining (Molecular Probes Catalog number: A12379) to visualize cellular F-actin, the cells were mounted using the mounting media (containing DAPI to visualize cell nucleus) supplied with the kit. Images were quantified using Fiji distribution of ImageJ. A longitudinal axis emanating at the cell front was drawn through selected cells. Along this axis, the cell was divided into three segments: 10% corresponding to the cell front, 70% corresponding to the cell middle, and 20% corresponding to the cell rear. Then the image was converted into a 2-bit image and masks over PLA reactions were drawn. Finally, the number of PLA reactions per segment as well as the total area occupied by PLA signals per segment were quantified. All the statistical analyses for PLA were done in Excel.
 
-## Random migration assays
+### Random migration assays
 
 Cell migration assays were performed with cell lines stably expressing nuclear mKATE2 (a red fluorescence protein allowing cell tracking) treated with either vehicle, the ROCK inhibitors Y-27632 (10 µM) or GSK-269962 (1 µM). Cells were seeded on IncuCyte ImageLock 96-well plates (cat.4379) at 100 cells per well and placed into an IncuCyte ZOOM with a dual color filter unit. Images were captured every 10 min using phase contrast and red channel with an 10×/0.25 ph1 objective, over a 24 hr period. Stacks of the red florescence channel were created. ImageJ software was used to enhance contrast, subtract background and transform the images to 8-bit greyscale. Random migration trajectories were obtained from the images using the FastTracks Matlab plugin (DuChez, 2018), subsequent statistical analysis and plotting were done in Python.
 
-## Assaying RhoA activity by live-cell FRET imaging
+### Assaying RhoA activity by live-cell FRET imaging
 
 MDA-MB-231 stably expressing the mTFP-YFP RhoA-GTP FRET biosensor (Kim et al., 2015) were seeded in Fluorodish glass-bottomed plate (cat.FD35-100) coated with collagen. Cells were treated as indicated for siRNA or ROCK inhibition experiments (Y-27632 2.5 µM). The biosensor-expressing cells were imaged at 5 s intervals for 10 min in an Andor Dragonfly spinning disk confocal microscope with a 60x/1.4 - Oil objective. An excitation wavelength (445 nm) was used for both mTFP and FRET channels, while 480 and 540 nm emission filters were used for the mTFP and FRET channels, respectively, with the Confocal 40 µm High Sensitivity imaging mode. A cell-free area using the same settings for exposure and time was acquired for background correction. The raw images were de-noised with the ImageJ PureDenoise plugin (Luisier et al., 2010), and ratiometric images were generated. Kymographs were built using MultiKymographr plugin.
 
-## Modeling
+### Modeling
 
-## Relating the PLA data to the total effector concentrations
+#### Relating the PLA data to the total effector concentrations
 
-The PLA data showed that RhoA interactions with its effectors DIA and ROCK change along the cell from the cell rear to the leading edge (Figures 1A and B). This correlates with our experimental data (Figures 1C and D) and the literature data on DIA and ROCK localization, suggesting that the concentrations of DIA and ROCK are different at the leading edge, in the middle of the cell, and at the cell rear (Watanabe et al., 1997; Wheeler and Ridley, 2004; Brandt et al., 2007; Goulimari et al., 2005; Newell-Litwa et al., 2015). The steady-state concentration of the complex of RhoA-GTP ([Rho-T]) and DIA ([DIA-Rho-T]) can be derived using the rapid equilibrium approximation and the dissociation constant (KdRhoDIA). Taking into account the moiety conservation for DIA, we obtain,(1)[DIA]⋅[Rho-T]=KdRhoDIA⋅[DIA-Rho-T]DIAtot=[DIA]+[DIA-Rho-T]
+The PLA data showed that RhoA interactions with its effectors DIA and ROCK change along the cell from the cell rear to the leading edge (Figures 1A and B). This correlates with our experimental data (Figures 1C and D) and the literature data on DIA and ROCK localization, suggesting that the concentrations of DIA and ROCK are different at the leading edge, in the middle of the cell, and at the cell rear (Watanabe et al., 1997; Wheeler and Ridley, 2004; Brandt et al., 2007; Goulimari et al., 2005; Newell-Litwa et al., 2015). The steady-state concentration of the complex of RhoA-GTP $([Rho-T])$ and DIA $([DIA-Rho-T])$ can be derived using the rapid equilibrium approximation and the dissociation constant ($K_{d}^{RhoDIA}$). Taking into account the moiety conservation for DIA, we obtain,
 
-Our quantitative proteomic data suggest that the RhoA abundance is at least 10-fold higher than the abundance of all DIA isoforms combined, Supplementary file 1 (Byrne et al., 2016). Therefore, in Equation 1 we can neglect the changes in the RhoA-GTP concentration caused by the RhoA-GTP sequestration into the complex with DIA. The KdRhoDIA is at least two orders of magnitude smaller than the RhoA abundance (Lammers et al., 2008), which leads to an approximate, linear dependence of the complex concentration on the total DIA abundance(2)[DIA-Rho-T]=DIAtot⋅[Rho-T]KdRhoDIA+[Rho-T]∼DIAtot
+$$
+[DIA]⋅[Rho-T]=K_{d}^{RhoDIA}⋅[DIA-Rho-T]DIA^{tot}=[DIA]+[DIA-Rho-T]
+$$
+
+Our quantitative proteomic data suggest that the RhoA abundance is at least 10-fold higher than the abundance of all DIA isoforms combined, Supplementary file 1 (Byrne et al., 2016). Therefore, in Equation 1 we can neglect the changes in the RhoA-GTP concentration caused by the RhoA-GTP sequestration into the complex with DIA. The $K_{d}^{RhoDIA}$ is at least two orders of magnitude smaller than the RhoA abundance (Lammers et al., 2008), which leads to an approximate, linear dependence of the complex concentration on the total DIA abundance
+
+$$
+[DIA-Rho-T]=\frac{DIA^{tot}⋅[Rho-T]}{K_{d}^{RhoDIA}+[Rho-T]}∼DIA^{tot}
+$$
 
 Thus, our data on the changes in the RhoA-DIA complexes along the cell length at the constant RhoA-GTP level can be interpreted as the changes in the abundance of DIA that can bind RhoA-GTP in the plasma membrane, corroborating the literature data (Brandt et al., 2007; Goulimari et al., 2005; Newell-Litwa et al., 2015; Watanabe et al., 1997; Wheeler and Ridley, 2004).
 
-The abundance of all ROCK isoforms is also much smaller than the RhoA abundance (see Supplementary file 1), which together with the cooperative binding of ROCK domains to active RhoA (Blumenstein and Ahmadian, 2004) allows us to conclude that the RhoA-GTP-ROCK complex concentration can also be approximated as a linear function of the total ROCK abundance (ROCKtot). Consequently, in the model the total abundances of DIA and ROCK depend on the spatial coordinate along the cell, as shown in Figures 3B and C. Associating the x axis with the cell length and considering the y axis along the cell width, we use the following distribution of the DIA and ROCK abundances along the x-axis,(3)DIAtot(x)=(DIAh−DIAl)⋅xL+DIAl,DIAh>DIAlROCKtot(x)={ROCKl, 0≤x≤xlROCKh, xl≤x≤L,ROCKh>ROCKlwhere L is the cell length.
+The abundance of all ROCK isoforms is also much smaller than the RhoA abundance (see Supplementary file 1), which together with the cooperative binding of ROCK domains to active RhoA (Blumenstein and Ahmadian, 2004) allows us to conclude that the RhoA-GTP-ROCK complex concentration can also be approximated as a linear function of the total ROCK abundance ($ROCK^{tot}$). Consequently, in the model the total abundances of DIA and ROCK depend on the spatial coordinate along the cell, as shown in Figures 3B and C. Associating the x axis with the cell length and considering the y axis along the cell width, we use the following distribution of the DIA and ROCK abundances along the x-axis,
 
-## Modeling the RhoA - Rac1 network dynamics
+$$
+DIA^{tot}(x)=(DIA_{h}−DIA_{l})⋅\frac{x}{L}+DIA_{l},DIA_{h}>DIA_{l}
+$$
+
+
+
+$$
+ROCK^{tot}(x)={ROCK_{l}, 0\leqx\leqx_{l}ROCK_{h}, x_{l}\leqx\leqL,ROCK_{h}>ROCK_{l}
+$$
+
+where $L$ is the cell length.
+
+### Modeling the RhoA - Rac1 network dynamics
 
 The spatiotemporal dynamics of the RhoA - Rac1 network are governed by a partial differential equation (PDE) system, referred to as a reaction-diffusion model. To derive this PDE system, we first consider ordinary differential equation (ODE) systems that describe biochemical reactions and RhoA and Rac1 interactions with their effectors at any fixed point in the cellular space. The difference between the ODE systems at distinct spatial points is brought about by the changes in the total abundances of ROCK1 and DIA along the longitudinal axis of polarized cells given by Equation 3 (see also Figure 3B and C). These ODE equations are then converted to a PDE system by accounting for the diffusion fluxes of active and inactive protein forms.
 
 The model was populated by the protein abundances from our quantitative mass spectrometry data (Byrne et al., 2016). The data suggested that Rac1 and RhoA were the most abundant Rac and Rho isoforms and that their levels exceed the abundances of PAK, ROCK and DIA isoforms combined by an order of magnitude (Supplementary file 1). The abundances of ROCK1 and ROCK2 were comparable, DIA1 was the most abundant DIA isoform, and PAK2 was the only detected PAK isoform.
 
-We considered the time scale on which the total abundances of RhoA (Rhotot), DIA (DIAtot), ROCK (ROCKtot), Rac1 (Ractot) and PAK (PAKtot) are conserved. We denote active, GTP-bound forms of RhoA and Rac1 by [Rho-T] and [Rac-T], and inactive GDP-bound forms by [Rho-D] and [Rac-D]. Active forms of DIA, ROCK and active (phosphorylated) PAK are denoted by DIA*, ROCK* and pPAK, respectively. Because of the conservation constraints, the concentrations of active forms can be approximately expressed as the corresponding total abundances minus concentrations of inactive forms. Then, assuming the Michaelis-Menten kinetics for the rates of activation and deactivation reactions of the active forms of the GTPases and their effectors (DIA*, ROCK* and pPAK), the temporal kinetics of the network are given by the following system of ODEs,(4)d[Rho-T]dt=αDIARhoαPAKRhoVGEFRho(Rhotot−[Rho-T])/KGEFRho1+(Rhotot−[Rho-T])/KGEFRho−VGAPRho[Rho-T]/KGAPRho1+[Rho-T]/KGAPRhod[DIA∗]dt=αRhoDIAVaDIA(DIAtot−[DIA∗])/KaDIA1+(DIAtot−[DIA∗])/KaDIA−ViDIA[DIA∗]/KiDIA1+[DIA∗]/KiDIAd[ROCK∗]dt=αRhoROCKVaROCK(ROCKtot−[ROCK∗])/KaROCK1+(ROCKtot−[ROCK∗])/KaROCK−ViROCK[ROCK∗]/KiROCK1+[ROCK∗]/KiROCKd[Rac-T]dt=αDIARacαPAKRacVGEFRac(Ractot−[Rac-T])/KGEFRac1+(Ractot−[Rac-T])/KGEFRac−αROCKRacVGAPRac[Rac-T]/KGAPRac1+[Rac-T]/KGAPRacd[pPAK]dt=αRacPAKVaPAK(PAKtot−[pPAK])/KaPAK1+(PAKtot−[pPAK])/KaPAK−ViPAK[pPAK]/KiPAK1+[pPAK]/KiPAK
+We considered the time scale on which the total abundances of RhoA ($Rho^{tot}$), DIA ($DIA^{tot}$), ROCK ($ROCK^{tot}$), Rac1 ($Rac^{tot}$) and PAK ($PAK^{tot}$) are conserved. We denote active, GTP-bound forms of RhoA and Rac1 by $[Rho-T]$ and $[Rac-T]$, and inactive GDP-bound forms by $[Rho-D]$ and $[Rac-D]$. Active forms of DIA, ROCK and active (phosphorylated) PAK are denoted by $DIA^{*}$, $ROCK^{*}$ and $pPAK,$ respectively. Because of the conservation constraints, the concentrations of active forms can be approximately expressed as the corresponding total abundances minus concentrations of inactive forms. Then, assuming the Michaelis-Menten kinetics for the rates of activation and deactivation reactions of the active forms of the GTPases and their effectors ($DIA^{*}$, $ROCK^{*}$ and $pPAK$), the temporal kinetics of the network are given by the following system of ODEs,
 
-Here, the maximal rates and the Michaelis-Menten constants are denoted by the capital letters V’s and K’s with relevant indices. These V’s values correspond to the maximal rates in the absence of positive or negative regulatory interactions between GTPases, which modify reaction rates. We describe the regulatory interactions, which specify the negative or positive influence of the active form of protein Y on protein X, by the dimensionless multipliers αYX (illustrated in Figure 2—figure supplement 1, panel E) (Tsyganov et al., 2012). Assuming general hyperbolic modifier kinetics, each multiplier αYX has the same functional form Cornish-Bowden, 2012,(5)αYX=1+γYX∙Ya/KYX1+Ya/KYX
+$$
+\frac{d[Rho-T]}{dt}=\alpha_{DIA}^{Rho}\alpha_{PAK}^{Rho}V_{GEF}^{Rho}\frac{(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}{1+(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}−V_{GAP}^{Rho}\frac{[Rho-T]/K_{GAP}^{Rho}}{1+[Rho-T]/K_{GAP}^{Rho}}\frac{d[DIA^{∗}]}{dt}=\alpha_{Rho}^{DIA}V_{a}^{DIA}\frac{(DIA^{tot}−[DIA^{∗}])/K_{a}^{DIA}}{1+(DIA^{tot}−[DIA^{∗}])/K_{a}^{DIA}}−V_{i}^{DIA}\frac{[DIA^{∗}]/K_{i}^{DIA}}{1+[DIA^{∗}]/K_{i}^{DIA}}\frac{d[ROCK^{∗}]}{dt}=\alpha_{Rho}^{ROCK}V_{a}^{ROCK}\frac{(ROCK^{tot}−[ROCK^{∗}])/K_{a}^{ROCK}}{1+(ROCK^{tot}−[ROCK^{∗}])/K_{a}^{ROCK}}−V_{i}^{ROCK}\frac{[ROCK^{∗}]/K_{i}^{ROCK}}{1+[ROCK^{∗}]/K_{i}^{ROCK}}\frac{d[Rac-T]}{dt}=\alpha_{DIA}^{Rac}\alpha_{PAK}^{Rac}V_{GEF}^{Rac}\frac{(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}{1+(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}−\alpha_{ROCK}^{Rac}V_{GAP}^{Rac}\frac{[Rac-T]/K_{GAP}^{Rac}}{1+[Rac-T]/K_{GAP}^{Rac}}\frac{d[pPAK]}{dt}=\alpha_{Rac}^{PAK}V_{a}^{PAK}\frac{(PAK^{tot}−[pPAK])/K_{a}^{PAK}}{1+(PAK^{tot}−[pPAK])/K_{a}^{PAK}}−V_{i}^{PAK}\frac{[pPAK]/K_{i}^{PAK}}{1+[pPAK]/K_{i}^{PAK}}
+$$
 
-Here, Ya is active form of protein Y. The coefficient γYX > 1 indicates activation; γYX< 1 inhibition; and γYX = 1 denotes the absence of regulatory interactions, in which case the modifying multiplier αYX equals 1. KYX is the activation or inhibition constant.
+Here, the maximal rates and the Michaelis-Menten constants are denoted by the capital letters V’s and K’s with relevant indices. These V’s values correspond to the maximal rates in the absence of positive or negative regulatory interactions between GTPases, which modify reaction rates. We describe the regulatory interactions, which specify the negative or positive influence of the active form of protein Y on protein X, by the dimensionless multipliers $\alpha_{Y}^{X}$ (illustrated in Figure 2—figure supplement 1, panel E) (Tsyganov et al., 2012). Assuming general hyperbolic modifier kinetics, each multiplier $\alpha_{Y}^{X}$ has the same functional form Cornish-Bowden, 2012,
 
-## Model-predicted different temporal dynamics of the GTPase activities
+$$
+\alpha_{Y}^{X}=\frac{1+\gamma_{Y}^{X}∙Y_{a}/K_{Y}^{X}}{1+Y_{a}/K_{Y}^{X}}
+$$
 
-Substituting the expressions for modifying multipliers (Equation 5) into Equations 4, we obtain the following equations governing the temporal dynamics of the active protein forms.(6)d[Rho-T]dt=VGEFRho1+γDIARho[DIA∗]/KDIARho 1+[DIA∗]/KDIARho1+γPAKRho[pPAK]/KPAKRho 1+[pPAK]/KPAKRho(Rhotot−[Rho-T])/KGEFRho1+(Rhotot−[Rho-T])/KGEFRho−VGAPRho[Rho-T]/KGAPRho1+[Rho-T]/KGAPRhod[DIA∗]dt=VaDIA1+γRhoDIA[Rho-T]/KRhoDIA 1+[Rho-T]/KRhoDIA(DIAtot−[DIA∗])/KaDIA1+(DIAtot−[DIA∗])/KaDIA−ViDIA[DIA∗]/KiDIA1+[DIA∗]/KiDIAd[ROCK∗]dt=VaROCK1+γRhoROCK[Rho-T]/KRhoROCK 1+[Rho-T]/KRhoROCK(ROCKtot−[ROCK∗])/KaROCK1+(ROCKtot−[ROCK∗])/KaROCK−ViROCK[ROCK∗]/KiROCK1+[ROCK∗]/KiROCKd[Rac-T]dt=VGEFRac1+γDIARac[DIA∗]/KDIARac 1+[DIA∗]/KDIARac1+γPAKRac[pPAK]/KPAKRac 1+[pPAK]/KPAKRac(Ractot−[Rac-T])/KGEFRac1+(Ractot−[Rac-T])/KGEFRac−VGAPRac1+γROCKRac[ROCK∗]/KROCKRac 1+[ROCK∗]/KROCKRac[Rac-T]/KGAPRac1+[Rac-T]/KGAPRacd[pPAK]dt=VaPAK1+γRacPAK[Rac-T]/KRacPAK 1+[Rac-T]/KRacPAK(PAKtot−[pPAK])/KaPAK1+(PAKtot−[pPAK])/KaPAK−ViPAK[pPAK]/KiPAK1+[pPAK]/KiPAK
+Here, $Y_{a}$ is active form of protein Y. The coefficient $\gamma_{Y}^{X}$ > 1 indicates activation; $\gamma_{Y}^{X}$< 1 inhibition; and $\gamma_{Y}^{X}$ = 1 denotes the absence of regulatory interactions, in which case the modifying multiplier $\alpha_{Y}^{X}$ equals 1. $K_{Y}^{X}$ is the activation or inhibition constant.
 
-Because DIAtot and ROCKtot depend on the spatial coordinate along the cell (Equation 3), and DIAtot, ROCKtot, and PAKtot were perturbed experimentally, we first explored the different possible types of the network temporal dynamics (Equation 6) in the parameter space of these three effector abundances. We obtained bifurcation diagrams in each of the three planes of the two effector abundances and classified different types of the dynamic regimes that can be detected (Figure 2C, Figure 4A, and Figure 2—figure supplement 1, panels A-C). We used BioNetGen (Blinov et al., 2004; Harris et al., 2016) and DYVIPAC (Nguyen et al., 2015), software packages, and SciPy (Oliphant, 2007) and Matplotlib Python libraries (Hunter, 2007). In brief, the sbml file (Hucka et al., 2018) describing our ODE model was prepared using BioNetGen software (Blinov et al., 2004; Harris et al., 2016). Then, the DYVIPAC python software package (Nguyen et al., 2015) was used to sample a 2-D parameter space and to determine the number and the stability types of steady states for each sample point in this parameter space. The DYVIPAC algorithm allowed detecting only local bifurcations (Kuznetsov, 2004), and the obtained sampling data served as an input to a python script, which plotted initial two-paramter bifurcation diagrams. To reveal the borders of non-local bifurcations, for example saddle homoclinic bifurcation (Nekorkin, 2015), we analyzed the phase portraits of the system by plotting nullclines, vector fields and limit cycles generated using python scripts. Then, the necessary changes to the bifurcation diagrams were done manually to include borders for non-local bifurcations. The code that performs calculations is provided in the Supplemental Information.
+### Model-predicted different temporal dynamics of the GTPase activities
 
-To get initial insights into different dynamic regimes of this 5 ODE system (Equation 6), we analyzed the vector fields and the nullclines for a 2 ODE system, obtained using the quasi steady-state approximation. Because the concentrations of active forms of DIA, ROCK and PAK are an order of magnitude less than the GTPase concentrations, this allows us to introduce a small parameter into our ODE system. Using the Tikhonov theorem (Tikhonov, 1952; Tikhonov et al., 1985), we can express these active effector concentrations in terms of Rho-T and Rac-T by applying the quasi steady-state approximation, as follows (Tsyganov et al., 2012),(7){d[DIA∗]dt=0d[ROCK∗]dt=0d[pPAK]dt=0 →{[DIA∗]=fDIA([Rho-T], [Rac-T])[ROCK∗]=fROCK([Rho-T], [Rac-T])[pPAK]=fPAK([Rho-T], [Rac-T])
+Substituting the expressions for modifying multipliers (Equation 5) into Equations 4, we obtain the following equations governing the temporal dynamics of the active protein forms.
 
-To find the functions, fDIA, fROCK, and fPAK, Equation 7 were solved numerically for each value of active RhoA and Rac1. The solutions were substituted into the equations governing the dynamics of RhoA-GTP and Rac1-GTP (see Equation 6) to obtain the following system of only two differential equations.(8)d[Rho-T]dt=VGEFRho1+γDIARhofDIA/KDIARho 1+fDIA/KDIARho1+γPAKRhofPAK/KPAKRho 1+fPAK/KPAKRho(Rhotot−[Rho-T])/KGEFRho1+(Rhotot−[Rho-T])/KGEFRho−VGAPRho[Rho-T]/KGAPRho1+[Rho-T]/KGAPRhod[Rac-T]dt=VGEFRac1+γDIARacfDIA/KDIARac 1+fDIA/KDIARac1+γPAKRacfPAK/KPAKRac 1+fPAK/KPAKRac(Ractot−[Rac-T])/KGEFRac1+(Ractot−[Rac-T])/KGEFRac−VGAPRac1+γROCKRacfROCK/KROCKRac 1+fROCK/KROCKRac[Rac-T]/KGAPRac1+[Rac-T]/KGAPRac
+$$
+\frac{d[Rho-T]}{dt}=V_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}[DIA^{∗}]/K_{DIA}^{Rho} }{1+[DIA^{∗}]/K_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}[pPAK]/K_{PAK}^{Rho} }{1+[pPAK]/K_{PAK}^{Rho}}\frac{(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}{1+(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}−V_{GAP}^{Rho}\frac{[Rho-T]/K_{GAP}^{Rho}}{1+[Rho-T]/K_{GAP}^{Rho}}\frac{d[DIA^{∗}]}{dt}=V_{a}^{DIA}\frac{1+\gamma_{Rho}^{DIA}[Rho-T]/K_{Rho}^{DIA} }{1+[Rho-T]/K_{Rho}^{DIA}}\frac{(DIA^{tot}−[DIA^{∗}])/K_{a}^{DIA}}{1+(DIA^{tot}−[DIA^{∗}])/K_{a}^{DIA}}−V_{i}^{DIA}\frac{[DIA^{∗}]/K_{i}^{DIA}}{1+[DIA^{∗}]/K_{i}^{DIA}}\frac{d[ROCK^{∗}]}{dt}=V_{a}^{ROCK}\frac{1+\gamma_{Rho}^{ROCK}[Rho-T]/K_{Rho}^{ROCK} }{1+[Rho-T]/K_{Rho}^{ROCK}}\frac{(ROCK^{tot}−[ROCK^{∗}])/K_{a}^{ROCK}}{1+(ROCK^{tot}−[ROCK^{∗}])/K_{a}^{ROCK}}−V_{i}^{ROCK}\frac{[ROCK^{∗}]/K_{i}^{ROCK}}{1+[ROCK^{∗}]/K_{i}^{ROCK}}\frac{d[Rac-T]}{dt}=V_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}[DIA^{∗}]/K_{DIA}^{Rac} }{1+[DIA^{∗}]/K_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}[pPAK]/K_{PAK}^{Rac} }{1+[pPAK]/K_{PAK}^{Rac}}\frac{(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}{1+(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}−V_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}[ROCK^{∗}]/K_{ROCK}^{Rac} }{1+[ROCK^{∗}]/K_{ROCK}^{Rac}}\frac{[Rac-T]/K_{GAP}^{Rac}}{1+[Rac-T]/K_{GAP}^{Rac}}\frac{d[pPAK]}{dt}=V_{a}^{PAK}\frac{1+\gamma_{Rac}^{PAK}[Rac-T]/K_{Rac}^{PAK} }{1+[Rac-T]/K_{Rac}^{PAK}}\frac{(PAK^{tot}−[pPAK])/K_{a}^{PAK}}{1+(PAK^{tot}−[pPAK])/K_{a}^{PAK}}−V_{i}^{PAK}\frac{[pPAK]/K_{i}^{PAK}}{1+[pPAK]/K_{i}^{PAK}}
+$$
 
-Figure 2—figure supplement 2, panels A-I illustrate the vector fields and nullclines for a 2-D system describing the temporal dynamics of RhoA-GTP and Rac1-GTP. Each dynamic regime shown in Figures 2C and 4A and Figure 2—figure supplement 1, panels A-C has the corresponding phase portrait in Figure 2—figure supplement 2. The red line represents the solution for the equation dRho-T/dt=0 (the RhoA nullcline), and the blue line represents the solution for the equation dRac-T/dt=0 (the Rac1 nullcline).
+Because $DIA^{tot}$ and $ROCK^{tot}$ depend on the spatial coordinate along the cell (Equation 3), and $DIA^{tot}$, $ROCK^{tot}$, and $PAK^{tot}$ were perturbed experimentally, we first explored the different possible types of the network temporal dynamics (Equation 6) in the parameter space of these three effector abundances. We obtained bifurcation diagrams in each of the three planes of the two effector abundances and classified different types of the dynamic regimes that can be detected (Figure 2C, Figure 4A, and Figure 2—figure supplement 1, panels A-C). We used BioNetGen (Blinov et al., 2004; Harris et al., 2016) and DYVIPAC (Nguyen et al., 2015), software packages, and SciPy (Oliphant, 2007) and Matplotlib Python libraries (Hunter, 2007). In brief, the sbml file (Hucka et al., 2018) describing our ODE model was prepared using BioNetGen software (Blinov et al., 2004; Harris et al., 2016). Then, the DYVIPAC python software package (Nguyen et al., 2015) was used to sample a 2-D parameter space and to determine the number and the stability types of steady states for each sample point in this parameter space. The DYVIPAC algorithm allowed detecting only local bifurcations (Kuznetsov, 2004), and the obtained sampling data served as an input to a python script, which plotted initial two-paramter bifurcation diagrams. To reveal the borders of non-local bifurcations, for example saddle homoclinic bifurcation (Nekorkin, 2015), we analyzed the phase portraits of the system by plotting nullclines, vector fields and limit cycles generated using python scripts. Then, the necessary changes to the bifurcation diagrams were done manually to include borders for non-local bifurcations. The code that performs calculations is provided in the Supplemental Information.
+
+To get initial insights into different dynamic regimes of this 5 ODE system (Equation 6), we analyzed the vector fields and the nullclines for a 2 ODE system, obtained using the quasi steady-state approximation. Because the concentrations of active forms of DIA, ROCK and PAK are an order of magnitude less than the GTPase concentrations, this allows us to introduce a small parameter into our ODE system. Using the Tikhonov theorem (Tikhonov, 1952; Tikhonov et al., 1985), we can express these active effector concentrations in terms of $Rho-T$ and $Rac-T$ by applying the quasi steady-state approximation, as follows (Tsyganov et al., 2012),
+
+$$
+{\frac{d[DIA^{∗}]}{dt}=0\frac{d[ROCK^{∗}]}{dt}=0\frac{d[pPAK]}{dt}=0 →{[DIA^{∗}]=f_{DIA}([Rho-T], [Rac-T])[ROCK^{∗}]=f_{ROCK}([Rho-T], [Rac-T])[pPAK]=f_{PAK}([Rho-T], [Rac-T])
+$$
+
+To find the functions, $f_{DIA}$, $f_{ROCK}$, and $f_{PAK}$, Equation 7 were solved numerically for each value of active RhoA and Rac1. The solutions were substituted into the equations governing the dynamics of RhoA-GTP and Rac1-GTP (see Equation 6) to obtain the following system of only two differential equations.
+
+$$
+\frac{d[Rho-T]}{dt}=V_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}f_{DIA}/K_{DIA}^{Rho} }{1+f_{DIA}/K_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}f_{PAK}/K_{PAK}^{Rho} }{1+f_{PAK}/K_{PAK}^{Rho}}\frac{(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}{1+(Rho^{tot}−[Rho-T])/K_{GEF}^{Rho}}−V_{GAP}^{Rho}\frac{[Rho-T]/K_{GAP}^{Rho}}{1+[Rho-T]/K_{GAP}^{Rho}}\frac{d[Rac-T]}{dt}=V_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}f_{DIA}/K_{DIA}^{Rac} }{1+f_{DIA}/K_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}f_{PAK}/K_{PAK}^{Rac} }{1+f_{PAK}/K_{PAK}^{Rac}}\frac{(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}{1+(Rac^{tot}−[Rac-T])/K_{GEF}^{Rac}}−V_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}f_{ROCK}/K_{ROCK}^{Rac} }{1+f_{ROCK}/K_{ROCK}^{Rac}}\frac{[Rac-T]/K_{GAP}^{Rac}}{1+[Rac-T]/K_{GAP}^{Rac}}
+$$
+
+Figure 2—figure supplement 2, panels A-I illustrate the vector fields and nullclines for a 2-D system describing the temporal dynamics of RhoA-GTP and Rac1-GTP. Each dynamic regime shown in Figures 2C and 4A and Figure 2—figure supplement 1, panels A-C has the corresponding phase portrait in Figure 2—figure supplement 2. The red line represents the solution for the equation $dRho-T/dt=0$ (the RhoA nullcline), and the blue line represents the solution for the equation $dRac-T/dt=0$ (the Rac1 nullcline).
 
 Points of intersection of the nullclines are network steady states for both 5 ODE and 2 ODE systems. These states can be stable or unstable (shown by bold points or triangles, respectively in Figure 2—figure supplement 2, panels A-I). For each of dynamic regimes 0, 1 and 6 there is only a single steady state, which is a stable focus for regime 0, stable node for regime 6 and an unstable focus for regime 1 (points 1 at Figure 2—figure supplement 2, panels A, B and G). If a steady state is unstable focus, self-sustained oscillations (a limit cycle) may or may not exist in the system, depending on the global topology of the vector fields. In our system, although unstable focus steady states are observed in regimes 1–5 and 7, self-sustained oscillations exist only in regimes 1 and 3. For these oscillatory regimes, we plotted projections of the limit cycle trajectory calculated for a five-dimensional ODE system (Equation 6) to a two-dimensional space of active RhoA and active Rac1 concentrations (green curves in Figure 2—figure supplement 2, panels B and D). 1-D bifurcation diagrams presented in Figure 2—figure supplement 3 illustrate transitions between these different regimes.
 
@@ -210,11 +628,15 @@ Regime 6 has a single steady state that is a stable node, to which all solutions
 
 Summarizing, the above analysis of a 2-D system (Equation 8) helped us comprehend the dynamic behaviors and parameter bifurcation diagrams obtained for a 5-D system (Equation 6, in Figures 2C and 4A and Figure 2—figure supplement 1, panels A-C).
 
-## Describing spatiotemporal dynamical regimes in the model
+### Describing spatiotemporal dynamical regimes in the model
 
-To explore the spatiotemporal behavior of the RhoA-Rac1 network in an entire cell, we took into account diffusion fluxes and spatial distribution of RhoA, Rac1 and their effectors. The spatiotemporal dynamics of the system is described by the following system of partial differential equations (PDEs). Since active and inactive forms of RhoA and Rac1 GTPases can have different diffusion coefficients, the PDEs include both protein forms.(9)∂[Rho-T]∂t=VGEFRho1+γDIARho[DIA∗]/KDIARho1+[DIA∗]/KDIARho1+γPAKRho[pPAK]/KPAKRho1+[pPAK]/KPAKRho[Rho-D]/KGEFRho1+[Rho-D]/KGEFRho−VGAPRho[Rho-T]/KGAPRho1+[Rho-text−T]/KGAPRho−∇(−DRhoT∇[Rho-T])∂[Rho-D]∂t=−VGEFRho1+γDIARho[DIA∗]/KDIARho1+[DIA∗]/KDIARho1+γPAKRho[pPAK]/KPAKRho1+[pPAK]/KPAKRho[Rho-D]/KGEFRho1+[Rho-D]/KGEFRho+VGAPRho[Rho-T]/KGAPRho1+[Rho-T]/KGAPRho−∇(−DRhoD∇[Rho-D])∂[DIA∗]∂t=VaDIA1+γRhoDIA[Rho-T]/KRhoDIA1+[Rho-T]/KRhoDIA(DIAtot(x→)−[DIA∗])/KaDIA1+(DIAtot(x→)−[DIA∗])/KaDIA−ViDIA[DIA∗]/KiDIA1+[DIA∗]/KiDIA∂[ROCK∗]∂t=VaROCK1+γRhoROCK[Rho-T]/KRhoROCK1+[Rho-T]/KRhoRock(ROCKtot(x→)−[ROCK∗])/KaROCK1+(ROCKtot(x→)−[ROCK∗])/KaROCK−ViROCK[ROCK∗]/KiROCK1+[ROCK∗]/KiROCK∂[Rac-T]∂T=VGEFRac1+γDIARac[DIA∗]/KDIARac1+[DIA∗]/KDIARac1+γPAKRac[pPAK]/KPAKRac1+[pPAK]/KPAKRac[Rac-D]/KGEFRac1+[Rac-D]/KGEFRac−VGAPRac1+γROCKRac[ROCK∗]/KROCKRac1+[ROCK∗]/KROCKRac[Rac-T]/KGAPRac1+[Rac-T]/KGAPRac−∇(−DRacT∇[Rac-T])∂[Rac-D]∂T=−VGEFRac1+γDIARac[DIA∗]/KDIARac1+[DIA∗]/KDIARac1+γPAKRac[pPAK]/KPAKRac1+[pPAK]/KPAKRac[Rac-D]/KGEFRac1+[Rac-D]/KGEFRac+VGAPRac1+γROCKRac[ROCK∗]/KROCKRac1+[ROCK∗]/KROCKRac[Rac-T]/KGAPRac1+[Rac-T]/KGAPRac−∇(−DRacD∇[Rac-D])∂[pPAK]∂t=VaPAK1+γRacPAK[Rac-T]/KRacPAK1+[Rac-T]/KRacPAK(PAKtot−[pPAK])/KaPAK1+(PAKtot−[pPAK])/KaPAK−ViPAK[pPAK]/KiPAK1+[pPAK]/KiPAK
+To explore the spatiotemporal behavior of the RhoA-Rac1 network in an entire cell, we took into account diffusion fluxes and spatial distribution of RhoA, Rac1 and their effectors. The spatiotemporal dynamics of the system is described by the following system of partial differential equations (PDEs). Since active and inactive forms of RhoA and Rac1 GTPases can have different diffusion coefficients, the PDEs include both protein forms.
 
-Here, DRhoT and DRhoD are the diffusion coefficients of active and inactive forms of RhoA, and DRacT and DRacD are the diffusion coefficients of active and inactive forms of Rac1. For all forms of RhoA and Rac1, zero-gradient boundary conditions are considered at the boundaries of the computational domain, describing no flux conditions at the cell borders. The spatial profiles of the total DIA and ROCK concentrations are set by Equation 3 that describes their distribution along the cell length (the x-axis). No other total abundances vary with the cell length in our reaction-diffusion model.
+$$
+\frac{∂[Rho-T]}{∂t}=V_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}[DIA^{∗}]/K_{DIA}^{Rho}}{1+[DIA^{∗}]/K_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}[pPAK]/K_{PAK}^{Rho}}{1+[pPAK]/K_{PAK}^{Rho}}\frac{[Rho-D]/K_{GEF}^{Rho}}{1+[Rho-D]/K_{GEF}^{Rho}}−V_{GAP}^{Rho}\frac{[Rho-T]/K_{GAP}^{Rho}}{1+[Rho-text−T]/K_{GAP}^{Rho}}−∇(−D_{RhoT}∇[Rho-T])\frac{∂[Rho-D]}{∂t}=−V_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}[DIA^{∗}]/K_{DIA}^{Rho}}{1+[DIA^{∗}]/K_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}[pPAK]/K_{PAK}^{Rho}}{1+[pPAK]/K_{PAK}^{Rho}}\frac{[Rho-D]/K_{GEF}^{Rho}}{1+[Rho-D]/K_{GEF}^{Rho}}+V_{GAP}^{Rho}\frac{[Rho-T]/K_{GAP}^{Rho}}{1+[Rho-T]/K_{GAP}^{Rho}}−∇(−D_{RhoD}∇[Rho-D])\frac{∂[DIA^{∗}]}{∂t}=V_{a}^{DIA}\frac{1+\gamma_{Rho}^{DIA}[Rho-T]/K_{Rho}^{DIA}}{1+[Rho-T]/K_{Rho}^{DIA}}\frac{(DIA^{tot}(x→)−[DIA^{∗}])/K_{a}^{DIA}}{1+(DIA^{tot}(x→)−[DIA^{∗}])/K_{a}^{DIA}}−V_{i}^{DIA}\frac{[DIA^{∗}]/K_{i}^{DIA}}{1+[DIA^{∗}]/K_{i}^{DIA}}\frac{∂[ROCK^{∗}]}{∂t}=V_{a}^{ROCK}\frac{1+\gamma_{Rho}^{ROCK}[Rho-T]/K_{Rho}^{ROCK}}{1+[Rho-T]/K_{Rho}^{Rock}}\frac{(ROCK^{tot}(x→)−[ROCK^{∗}])/K_{a}^{ROCK}}{1+(ROCK^{tot}(x→)−[ROCK^{∗}])/K_{a}^{ROCK}}−V_{i}^{ROCK}\frac{[ROCK^{∗}]/K_{i}^{ROCK}}{1+[ROCK^{∗}]/K_{i}^{ROCK}}\frac{∂[Rac-T]}{∂T}=V_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}[DIA^{∗}]/K_{DIA}^{Rac}}{1+[DIA^{∗}]/K_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}[pPAK]/K_{PAK}^{Rac}}{1+[pPAK]/K_{PAK}^{Rac}}\frac{[Rac-D]/K_{GEF}^{Rac}}{1+[Rac-D]/K_{GEF}^{Rac}}−V_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}[ROCK^{∗}]/K_{ROCK}^{Rac}}{1+[ROCK^{∗}]/K_{ROCK}^{Rac}}\frac{[Rac-T]/K_{GAP}^{Rac}}{1+[Rac-T]/K_{GAP}^{Rac}}−∇(−D_{RacT}∇[Rac-T])\frac{∂[Rac-D]}{∂T}=−V_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}[DIA^{∗}]/K_{DIA}^{Rac}}{1+[DIA^{∗}]/K_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}[pPAK]/K_{PAK}^{Rac}}{1+[pPAK]/K_{PAK}^{Rac}}\frac{[Rac-D]/K_{GEF}^{Rac}}{1+[Rac-D]/K_{GEF}^{Rac}}+V_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}[ROCK^{∗}]/K_{ROCK}^{Rac}}{1+[ROCK^{∗}]/K_{ROCK}^{Rac}}\frac{[Rac-T]/K_{GAP}^{Rac}}{1+[Rac-T]/K_{GAP}^{Rac}}−∇(−D_{RacD}∇[Rac-D])\frac{∂[pPAK]}{∂t}=V_{a}^{PAK}\frac{1+\gamma_{Rac}^{PAK}[Rac-T]/K_{Rac}^{PAK}}{1+[Rac-T]/K_{Rac}^{PAK}}\frac{(PAK^{tot}−[pPAK])/K_{a}^{PAK}}{1+(PAK^{tot}−[pPAK])/K_{a}^{PAK}}−V_{i}^{PAK}\frac{[pPAK]/K_{i}^{PAK}}{1+[pPAK]/K_{i}^{PAK}}
+$$
+
+Here, $D_{RhoT}$ and $D_{RhoD}$ are the diffusion coefficients of active and inactive forms of RhoA, and $D_{RacT}$ and $D_{RacD}$ are the diffusion coefficients of active and inactive forms of Rac1. For all forms of RhoA and Rac1, zero-gradient boundary conditions are considered at the boundaries of the computational domain, describing no flux conditions at the cell borders. The spatial profiles of the total DIA and ROCK concentrations are set by Equation 3 that describes their distribution along the cell length (the x-axis). No other total abundances vary with the cell length in our reaction-diffusion model.
 
 At the leading edge, the total concentrations of DIA and ROCK correspond to oscillatory regimes 1 and 3 observed for a well-mixed system (Figure 2A, B and F, and Figure 2—figure supplement 2, panels B and D). In the spatial case, the PDE equations (Equation 9) with these parameters generate excitable media, where self-sustained waves of the RhoA and Rac1 activities are formed periodically. Thus, the leading edge can be considered as a ‘pacemaker’ of the GTPase cellular machinery (Huang et al., 2013), by analogy to the sinoatrial node in the heart (Mangoni and Nargeot, 2008).
 
@@ -222,18 +644,30 @@ At the cell body and rear the total concentration of DIA is lower, and the total
 
 Thus, high excitability at the leading edge and low excitability in the cell body and at the rear result in a cyclic dynamic pattern, in which multiple protrusion-retraction cycles are generated at the leading edge before a migrating cell moves.
 
-## Modeling the mechanisms of PAK and ROCK inhibition
+### Modeling the mechanisms of PAK and ROCK inhibition
 
-The mechanism of PAK inhibition by allosteric inhibitor IPA-3 was modeled similarly as in our previous study (Byrne et al., 2016). IPA-3 reversibly binds to an inactive PAK conformation, and prevents PAK activation (Deacon et al., 2008; Viaud and Peterson, 2009). Assuming rapid equilibrium of inactive PAK – inhibitor complex, the effect of PAK inhibitor IPA-3 is modelled by considering the concentration of inactive PAK as the following function of [IPA-3],(10)[PAK]([IPA-3])=PAK|[IPA-3]=0(1+[IPA-3]KIPAK)
+The mechanism of PAK inhibition by allosteric inhibitor IPA-3 was modeled similarly as in our previous study (Byrne et al., 2016). IPA-3 reversibly binds to an inactive PAK conformation, and prevents PAK activation (Deacon et al., 2008; Viaud and Peterson, 2009). Assuming rapid equilibrium of inactive PAK – inhibitor complex, the effect of PAK inhibitor IPA-3 is modelled by considering the concentration of inactive PAK as the following function of [IPA-3],
 
-Both, ATP competitive ROCK inhibitor Y-27632 and ATP bind to an active conformation of the ROCK kinase (Yamaguchi et al., 2006; Ishizaki et al., 2000). Thus when Y-27632 is present, the decrease in the ROCK kinase activity can be described by the following multiplier, β<1,(11)β=1+ATPKdATP/1+ATPKdATP+Y-27632KIROCK
+$$
+[PAK]([IPA-3])=\frac{PAK|_{[IPA-3]=0}}{(1+\frac{[IPA-3]}{K_{I}^{PAK}})}
+$$
 
-## Dimensionless equations
+Both, ATP competitive ROCK inhibitor Y-27632 and ATP bind to an active conformation of the ROCK kinase (Yamaguchi et al., 2006; Ishizaki et al., 2000). Thus when Y-27632 is present, the decrease in the ROCK kinase activity can be described by the following multiplier, $\beta<1$,
 
-To reduce the number of parameters, we express the PDE system, Equation 9, in a dimensionless form, Equation 10 (Barenblatt, 2003). To simplify the interpretation of numerical results, we left the time as the only dimensional variable (measured in seconds) that directly corresponds to the time, measured in experiments.(12)∂rho∂t=vGEFRho1+γDIARhodia/kDIARho1+dia/kDIARho1+γPAKRhopak/kPAKRho1+pak/kPAKRhorhod/kGEFRho1+rhod/kGEFRho−vGAPRhorho/kGAPRho1+rho/kGAPRho−∇(−dRho∇rho)∂rhod∂t=−vGEFRho1+γDIARhodia/kDIARho1+dia/kDIARho1+γPAKRhopak/kPAKRho1+pak/kPAKRhorhod/kGEFRho1+rhod/kGEFRho+vGAPRhorho/kGAPRho1+rho/kGAPRho−∇(−dRhoD∇rhoD)∂dia∂t=vaDIA1+γRhoDIArho/kRhoDIA1+rho/kRhoDIA(d(X→)−dia)/kaDIA1+(d(X→)−dia)/kaDIA−viDIAdia/kiDIA1+dia/kiDIA∂rock∂t=vaRock1+γRhoROCKrho/kRhoROCK1+rho/kRhoROCK(r(X→)−rock)/kaROCK1+(r(X→)−rock)/kaROCK−viROCKrock/kiROCK1+rock/kiROCK∂rac∂t=vGEFRac1+γDIARacdia/kDIARac1+dia/kDIARac1+γPAKRacpak/kPAKRac1+pak/kPAKRacracd/kGEFRac1+racd/kGEFRac−vGAPRac1+γROCKRacβrock/kROCKRac1+βrock/kROCKRacrac/kGAPRac1+rac/kGAPRac−∇(−dRac∇rac)∂racd∂t=−vGEFRac1+γDIARacdia/kDIARac1+dia/kDIARac1+γPAKRacpak/kPAKRac1+pak/kPAKRacracd/kGEFRac1+racd/kGEFRac+vGAPRac1+γROCKRacβrock/kROCKRac1+βrock/kROCKRacrac/kGAPRac1+rac/kGAPRac−∇(−dRacD∇racd)∂pak∂t=vaPAK1+γRacPAKrac/kRacPAK1+rac/kRacPAK(p−pak)/(KaPAK(1+IPAK))1+(p−pak)/(KaPAK(1+IPAK))−viPAKpak/kiPAK1+pak/kiPAKrho=[Rho-T]Rhotot,rhod=[Rho-D]Rhotot,rac=[Rac-T]Ractot,racd=[Rac-D]Ractot,pak=[pPAK]PAKtotdia=[DIA∗]DIAtot,rock=[ROCK∗]ROCKtot,p=PAKtotPAKtotal,X→=x→/L,IPAK=[IPA-3]KIPAKβ=(1+[ATP]KdATP)/(1+[ATP]KdATP+IROCK),IROCK=[Y-27632]KIROCKdRho=DRhoTL2,dRhoD=DRhoDL2,dRac=DRacTL2,dRacD=DRacDL2d(x)=(dh−dl)⋅X+dl,r={rl, 0≤X≤Xlrh, Xl≤X≤1vYX=VYX/Xtot,X=Rho,DIA,ROCK,Rac,PAK,Y=GEF,GAP,a,ikYX=KYX/Xtot,X=Rho, DIA, ROCK, Rac, PAKY=Rho, DIA, ROCK, Rac, PAK, GEF, GAP, i, a
+$$
+\beta=1+\frac{ATP}{K_{d}^{ATP}}/1+\frac{ATP}{K_{d}^{ATP}}+\frac{Y-27632}{K_{I}^{ROCK}}
+$$
+
+### Dimensionless equations
+
+To reduce the number of parameters, we express the PDE system, Equation 9, in a dimensionless form, Equation 10 (Barenblatt, 2003). To simplify the interpretation of numerical results, we left the time as the only dimensional variable (measured in seconds) that directly corresponds to the time, measured in experiments.
+
+$$
+\frac{∂rho}{∂t}=v_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}dia/k_{DIA}^{Rho}}{1+dia/k_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}pak/k_{PAK}^{Rho}}{1+pak/k_{PAK}^{Rho}}\frac{rhod/k_{GEF}^{Rho}}{1+rhod/k_{GEF}^{Rho}}−v_{GAP}^{Rho}\frac{rho/k_{GAP}^{Rho}}{1+rho/k_{GAP}^{Rho}}−∇(−d_{Rho}∇_{rho})\frac{∂rhod}{∂t}=−v_{GEF}^{Rho}\frac{1+\gamma_{DIA}^{Rho}dia/k_{DIA}^{Rho}}{1+dia/k_{DIA}^{Rho}}\frac{1+\gamma_{PAK}^{Rho}pak/k_{PAK}^{Rho}}{1+pak/k_{PAK}^{Rho}}\frac{rhod/k_{GEF}^{Rho}}{1+rhod/k_{GEF}^{Rho}}+v_{GAP}^{Rho}\frac{rho/k_{GAP}^{Rho}}{1+rho/k_{GAP}^{Rho}}−∇(−d_{RhoD}∇_{rhoD})\frac{∂dia}{∂t}=v_{a}^{DIA}\frac{1+\gamma_{Rho}^{DIA}rho/k_{Rho}^{DIA}}{1+rho/k_{Rho}^{DIA}}\frac{(d(X→)−dia)/k_{a}^{DIA}}{1+(d(X→)−dia)/k_{a}^{DIA}}−v_{i}^{DIA}\frac{dia/k_{i}^{DIA}}{1+dia/k_{i}^{DIA}}\frac{∂rock}{∂t}=v_{a}^{Rock}\frac{1+\gamma_{Rho}^{ROCK}rho/k_{Rho}^{ROCK}}{1+rho/k_{Rho}^{ROCK}}\frac{(r(X→)−rock)/k_{a}^{ROCK}}{1+(r(X→)−rock)/k_{a}^{ROCK}}−v_{i}^{ROCK}\frac{rock/k_{i}^{ROCK}}{1+rock/k_{i}^{ROCK}}\frac{∂rac}{∂t}=v_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}dia/k_{DIA}^{Rac}}{1+dia/k_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}pak/k_{PAK}^{Rac}}{1+pak/k_{PAK}^{Rac}}\frac{racd/k_{GEF}^{Rac}}{1+racd/k_{GEF}^{Rac}}−v_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}\betarock/k_{ROCK}^{Rac}}{1+\betarock/k_{ROCK}^{Rac}}\frac{rac/k_{GAP}^{Rac}}{1+rac/k_{GAP}^{Rac}}−∇(−d_{Rac}∇_{rac})\frac{∂racd}{∂t}=−v_{GEF}^{Rac}\frac{1+\gamma_{DIA}^{Rac}dia/k_{DIA}^{Rac}}{1+dia/k_{DIA}^{Rac}}\frac{1+\gamma_{PAK}^{Rac}pak/k_{PAK}^{Rac}}{1+pak/k_{PAK}^{Rac}}\frac{racd/k_{GEF}^{Rac}}{1+racd/k_{GEF}^{Rac}}+v_{GAP}^{Rac}\frac{1+\gamma_{ROCK}^{Rac}\betarock/k_{ROCK}^{Rac}}{1+\betarock/k_{ROCK}^{Rac}}\frac{rac/k_{GAP}^{Rac}}{1+rac/k_{GAP}^{Rac}}−∇(−d_{RacD}∇_{racd})\frac{∂pak}{∂t}=v_{a}^{PAK}\frac{1+\gamma_{Rac}^{PAK}rac/k_{Rac}^{PAK}}{1+rac/k_{Rac}^{PAK}}\frac{(p−pak)/(K_{a}^{PAK}(1+I_{PAK}))}{1+(p−pak)/(K_{a}^{PAK}(1+I_{PAK}))}−v_{i}^{PAK}\frac{pak/k_{i}^{PAK}}{1+pak/k_{i}^{PAK}}rho=\frac{[Rho-T]}{Rho^{tot}},rhod=\frac{[Rho-D]}{Rho^{tot}},rac=\frac{[Rac-T]}{Rac^{tot}},racd=\frac{[Rac-D]}{Rac^{tot}},pak=\frac{[pPAK]}{PAK^{tot}}dia=\frac{[DIA^{∗}]}{DIA^{tot}},rock=\frac{[ROCK^{∗}]}{ROCK^{tot}},p=\frac{PAK^{tot}}{PAK^{total}},X→=x→/L,I_{PAK}=\frac{[IPA-3]}{K_{I}^{PAK}}\beta=(1+\frac{[ATP]}{K_{d}^{ATP}})/(1+\frac{[ATP]}{K_{d}^{ATP}}+I_{ROCK}),I_{ROCK}=\frac{[Y-27632]}{K_{I}^{ROCK}}d_{Rho}=\frac{D_{RhoT}}{L^{2}},d_{RhoD}=\frac{D_{RhoD}}{L^{2}},d_{Rac}=\frac{D_{RacT}}{L^{2}},d_{RacD}=\frac{D_{RacD}}{L^{2}}d(x)=(d_{h}−d_{l})⋅X+d_{l},r={r_{l}, 0\leqX\leqX_{l}r_{h}, X_{l}\leqX\leq1v_{Y}^{X}=V_{Y}^{X}/X^{tot},X=Rho,DIA,ROCK,Rac,PAK,Y=GEF,GAP,a,ik_{Y}^{X}=K_{Y}^{X}/X^{tot},X=Rho, DIA, ROCK, Rac, PAKY=Rho, DIA, ROCK, Rac, PAK, GEF, GAP, i, a
+$$
 
 The parameters are listed in Supplementary file 2. Many parameters were taken from our previous mechanistic model of the RhoA-Rac1 network, which was tailored to MDA-MB-231 cells (Byrne et al., 2016), – the same cell line we used in this work. As in the previous model, we used quantitative mass spectrometry data to determine the prevailing protein isoforms of the RhoA-Rac1 network in MDA-MB-231 cells, as well as the protein abundances. The parameters of activation and deactivation of RhoA, Rac1 and PAK were estimated based on the literature data (Lyda et al., 2019; Tang et al., 2018). The parameters of activation and deactivation of DIA and ROCK were estimated based on typical association and dissociation constants of protein-protein interactions (Kholodenko et al., 1999). The parameters of hyperbolic multipliers (Equation 5) were estimated based on the parameters used in Tsyganov et al., 2012. The diffusion coefficients of RhoA and Rac1 were taken from Das et al., 2015. The cell shape and size parameters were taken from the imaging data, generated in present study.
 
-## Numerical methods for solving PDE equations
+### Numerical methods for solving PDE equations
 
 The PDE system (Equation 10) was solved numerically by the finite volume method (Patankar, 1980) aided by the splitting technique (Oran and Boris, 1987), and using the OpenFOAM platform (Jasak, 2009). A computational 2D domain was obtained by extracting contours of cells from experimental cell images using the OpenCV library (Bradski, 2000) and meshed by non-structured triangular meshes using the Salome platform (Ribes and Caremoli, 2007). An example of the computational mesh is presented in Figure 3—figure supplement 1, panel F. The x and y axes were set along the cell length and width as depicted in Figure 3A. Distributions of the total concentrations of DIA and ROCK were set according to Equations 3 and 10. For equations describing spatiotemporal dynamics of active and inactive forms of Rho and Rac1, zero-gradient boundary conditions were applied. The diffusion term was discretized using unstructured triangular meshes by means of the ‘over-relaxed correction’ technique (Jasak, 1996). ODE systems describing chemical kinetics were solved using fifth-order Cash-Karp embedded Runge-Kutta scheme with error control and adjusted time-step size (Press et al., 1992). The simulation results were visualized using the ParaView software package (Henderson, 2007).

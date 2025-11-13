@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.46464.001 The dorsal raphe nucleus (DRN) is an important source of neuromodulators and has been implicated in a wide variety of behavioral and neurological disorders. The DRN is subdivided into distinct anatomical subregions comprised of multiple cell types, and its complex cellular organization has impeded efforts to investigate the distinct circuit and behavioral functions of its subdomains. Here we used single-cell RNA sequencing, in situ hybridization, anatomical tracing, and spatial correlation analysis to map the transcriptional and spatial profiles of cells from the mouse DRN. Our analysis of 39,411 single-cell transcriptomes revealed at least 18 distinct neuron subtypes and 5 serotonergic neuron subtypes with distinct molecular and anatomical properties, including a serotonergic neuron subtype that preferentially innervates the basal ganglia. Our study lays out the molecular organization of distinct serotonergic and non-serotonergic subsystems, and will facilitate the design of strategies for further dissection of the DRN and its diverse functions.
+The dorsal raphe nucleus (DRN) is an important source of neuromodulators and has been implicated in a wide variety of behavioral and neurological disorders. The DRN is subdivided into distinct anatomical subregions comprised of multiple cell types, and its complex cellular organization has impeded efforts to investigate the distinct circuit and behavioral functions of its subdomains. Here we used single-cell RNA sequencing, in situ hybridization, anatomical tracing, and spatial correlation analysis to map the transcriptional and spatial profiles of cells from the mouse DRN. Our analysis of 39,411 single-cell transcriptomes revealed at least 18 distinct neuron subtypes and 5 serotonergic neuron subtypes with distinct molecular and anatomical properties, including a serotonergic neuron subtype that preferentially innervates the basal ganglia. Our study lays out the molecular organization of distinct serotonergic and non-serotonergic subsystems, and will facilitate the design of strategies for further dissection of the DRN and its diverse functions.
 
 ## Introduction
 
@@ -35,15 +35,27 @@ Here we dissect the cellular composition of the DRN and relate molecular profile
 
 ## Results
 
-## Cell type composition of the DRN by transcriptomic profiling
+### Cell type composition of the DRN by transcriptomic profiling
 
 To survey the cell type composition of the DRN, we used the droplet-based inDrop platform (Klein et al., 2015; Zilionis et al., 2017) to perform transcriptomic profiling with single-cell resolution (Figure 1A). The DRN and surrounding areas were dissected from acute coronal brain sections spanning the rostro-caudal extent of the DRN, and dissociated cell suspensions were prepared by digesting the dissected tissue in a protease cocktail containing inhibitors of neural activity, transcription, and translation to reduce the effects of the dissociation procedure on gene expression (Hrvatin et al., 2018). Cells were sequenced to an average read depth of 48,805 reads per cell (median = 31,286 reads), and low-quality cells were removed prior to clustering (see Materials and methods). Aligned reads were filtered using unique molecular identifiers (UMIs) and quantified as UMI filtered mapped read (UMIFM) counts. Clustering using a graph-based algorithm and a shared-nearest-neighbors distance metric grouped yielded 17 major clusters (Figure 1B). These major clusters were identified and assigned to cell classes based their expression of previously-described marker gene combinations that were extensive cross-referenced with published datasets (Marques et al., 2016; Okaty et al., 2015; Poulin et al., 2014; Saunders et al., 2018; Vanlandewijck et al., 2018; Zeisel et al., 2018) (Figure 1C, Supplementary file 1). Smaller clusters containing putative doublets were identified based on co-expression of marker genes from different cell types and were removed manually. The processed dataset contained 39,411 cells from eight mice (4 male and 4 female, age range 8–10 weeks) with a median UMIFM count of 2,333 counts per cell (min. = 548; max. = 17,976; IQR = 1,903) and median gene detection rate of 1,034 genes per cell (min. = 216; max. = 5,765; IQR = 693). Cells from male and female mice were pooled for analysis as no major transcriptional sex differences were observed (Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic for scRNA-seq using the inDrop platform. (1) Tissue containing the DRN and surrounding regions was microdissected from acute coronal brain slices prepared from adult C57BL/6J mice. (2) Tissue chunks were digested in a cocktail of proteases and inhibitors of neuronal spiking, transcription, and translation. Digestion was followed by trituration and filtration to obtain a cell suspension. (3) Single cells were encapsulated using a droplet-based microfluidic device for cell barcoding and RNA capture. (B) t-SNE plot of the processed dataset containing 39,411 cells from eight animals. Cells are color-coded according to the cluster labels shown in (C). (C) Left: Dendrogram with cell class labels corresponding to clusters shown in (B). Right: Dot plot displaying expression of example genes used to identify each major cell class. The color of each dot (blue to red) indicates the average expression of each gene whereas the dot size indicates the fraction of cells expressing the gene. Additional genes used for identifying cell classes/types are listed in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) t-SNE plot of the dataset with cells color-coded by experiment batch. All clusters contain cells from both batches. (B) t-SNE plot of the dataset with cells color-coded by the sex of the mouse from which the sample was acquired. (C) Bar plots showing the percentage of cells in each batch (left) or sex (right) that are categorized into each of the 17 major cell types.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) t-SNE plots of the dataset, with cells color-coded by their expression of genes identifying different subsets of ependymal cell. Hdc is expressed in all ependymal cells, whereas genes such as Cdhr4, Ucma, and Pdyn are expressed in distinct subsets. (B) Images of coronal ISH from the Allen Brain Atlas showing expression of Hdc and Pdyn at various parts of the ventricular system. Hdc is expressed by ependymal cells lining most of the ventricular system. Pdyn expression is specific to the cells lining the ventromedial part of the posterior ventricular system, where it is highly expressed in the cerebral aqueduct, but not the lateral ventricles or 3rd ventricle.
 
 The majority of cells in the dataset were non-neuronal cells that included astrocytes, oligodendrocyte precursor cells (or polydendrocytes), differentiating and mature oligodendrocytes, ependymal cells of the cerebral aqueduct, lymphocytes, microglia, perivascular macrophages (pvMΦs), fibroblast-like or mesenchymal cells, endothelial cells, pericytes, and smooth muscle cells. Iterative subclustering identified subtypes of cells within each major non-neuronal class that included novel subpopulations – in addition to resolving different subtypes of endothelial cells (Vanlandewijck et al., 2018) and developmental stages of oligodendrocytes (Marques et al., 2016), we found multiple subtypes or states of astrocytes, oligodendrocytes, and ependymal cells. Ependymal cells shared expression of the histamine synthesis gene Hdc, but were further divided into distinct subtypes that differed in expression of cell adhesion and matrix-associated genes as well as signaling peptides such as Pdyn (Figure 1—figure supplement 2A). In situ hybridization (ISH) analyses of these differentially expressed genes revealed that these ependymal cell subtypes are topographically organized along major anatomical axes – Pdyn-expressing ependymal cells are restricted to ventromedial ventricular walls of the midbrain and hindbrain but are absent from the lateral and third ventricles in the forebrain (Figure 1—figure supplement 2B), suggesting zonation of functionally specialized ependymal cell subtypes throughout the ventricular system. Furthermore, the presence of these molecules used for both paracrine and synaptic communication suggests a locally specialized function of ependymal cells in signaling directly to neurons and other cells that express the appropriate G-protein coupled receptors, such as κ-opioid and histamine receptors.
 
 Neurons (n = 2,041 cells), identified by expression of genes required for chemical synaptic transmission such as Snap25, clustered into 5 main classes that could be distinguished by their neurotransmitter usage. The 5 major neuronal classes (in decreasing order of abundance) are 5-HT, dopaminergic (DA), GABAergic, glutamatergic, and peptidergic neurons. Peptidergic neurons were depleted of genes for the synthesis and release of small molecule neurotransmitters (e.g. Slc6a4, Slc6a3, Slc32a1, Slc17a6, Slc17a8), but were highly enriched for the genes encoding neuropeptides such as Cck, Cartpt, Ucn, and Postn. Inspection of ISHs from the Allen Brain Atlas (Lein et al., 2007) indicated that these neurons were located in the Edinger-Westphal nucleus, which is adjacent to the DRN, confirming that our dissection region spanned most of the DRN along the anterior-posterior axis. Inspection of rhombomere-specific marker gene expression in the 5-HT neuron cluster showed a lack of markers for R2 (Hoxa2) and R3/5 (Egr2) derived neurons in contrast to the expression of R1 markers (En1 and En2), indicating that our dissection, as intended, excluded most of the median raphe nucleus (Okaty et al., 2015).
 
-## Serotonin receptor expression in neuronal and non-neuronal cell types
+### Serotonin receptor expression in neuronal and non-neuronal cell types
 
 Analysis of single cell transcriptomic data allowed us to infer signaling between cell types based on expression of receptors and known ligands. As 5-HT can be released somatodendritically and from 5-HT axon terminals in the DRN (Colgan et al., 2012; de Kock et al., 2006; Kaushalya et al., 2008), we examined the expression patterns of 5-HT receptors in the dataset to infer local 5-HT signaling. Transcripts encoding 8 of the 15 5-HT receptors in the mouse genome were detected in our dataset (Figure 2A). Of these Htr1a, Htr1b, Htr2c, Htr5b, and Htr7 were strongly expressed in different subsets of cells. The autoinhibitory Gi-coupled receptor Htr1a was expressed primarily in 5-HT neurons, whereas the Gq-coupled Htr2c receptor was expressed in both GABAergic and glutamatergic neurons (Figure 2B). Additionally, we unexpectedly observed expression of the Gi-coupled Htr1b receptor in both 5-HT neurons and pvMΦs of the DRN (Figure 2C). Examination of Htr1b expression in cortex, striatum, and ventral midbrain suggests that expression of this receptor in pvMΦs is unique to the DRN and its close surroundings (Hrvatin et al., 2018; Saunders et al., 2018; Zeisel et al., 2018). Additionally, the absence of abundant neuronal marker genes (e.g. Snap25) in pvMΦs indicates that the presence of Htr1b transcripts was unlikely to be a result of engulfment of neuronal debris containing mRNA (Figure 2D). Htr5b, which is a pseudogene in humans (Grailhe et al., 2001), was found in ependymal cells and a subset of 5-HT neurons. The Gs-coupled Htr7 receptor was also found in a small subset of GABAergic and glutamatergic neurons.
 
@@ -51,9 +63,17 @@ Analysis of single cell transcriptomic data allowed us to infer signaling betwee
 
 **Figure 2.:** (A) Dot plots showing expression of the serotonin receptors present in the scRNA-seq dataset in each major cell class. Htr1a is expressed specifically in 5-HT neurons, whereas Htr1b is expressed in both 5-HT neurons and perivascular macrophages. Htr2c is expressed in both GABAergic and glutamatergic neurons. Htr5b is expressed in ependymal cells and a subset of 5-HT neurons. Htr7 is expressed in subsets of GABAergic and glutamatergic neurons. The remaining 5-HT receptors were detected at low levels. (B) t-SNE plots with the region containing neuronal clusters enlarged to show expression of Htr1a (bottom, left) or Htr2c (bottom, right) in individual cells. Cells are color-coded by expression of each transcript. Scale bars are in log-normalized UMI-filtered counts for the respective transcripts. (C) t-SNE plots with cells color-coded by their expression of Htr1b. Regions containing neuronal or perivascular macrophage clusters are enlarged. (D) t-SNE plots with cells color-coded by their expression of the neuron-specific transcript Snap25. Regions containing neuronal or perivascular macrophage clusters are enlarged. Snap25 transcripts are abundant in all neuronal clusters but not in perivascular macrophages, suggesting that Htr1b transcripts in perivascular macrophages are unlikely to be a result of engulfment of neuronal debris.
 
-## Molecularly distinct neuronal subtypes in the DRN
+### Molecularly distinct neuronal subtypes in the DRN
 
 To further resolve the neuronal clusters into separate cell types or subtypes, we analyzed the neuronal clusters separately from the full dataset (see Materials and methods). Subclustering conservatively separated the 2,041 neurons into 18 distinct clusters, which we aggregated into 5 major groups based on similarities in their expression of genes, most notably those involved in the synthesis and release of different neurotransmitters (Figure 3A). These groups corresponded to the 5 major neuronal classes that were identified from clustering the full dataset, suggesting that neurotransmitter usage is a primary attribute for neuronal cell type identification. However, we also noted significant overlaps in the expression of genes whose loci are typically exploited for the generation of cell type-specific driver lines (Figure 3B, Figure 3—figure supplement 1). These genes included Gad1 and Gad2, which encode GABA synthetic enzymes and are expressed in GABAergic neurons and a subset of both 5-HT and glutamatergic DRN neurons, as well as Slc17a6, which encodes a vesicular glutamate transporter and is expressed in most DRN glutamatergic and DA neurons. These overlaps in expression of ‘canonical’ marker genes are consistent with the release of multiple neurotransmitters by individual neurons, especially by monoaminergic neurons (Granger et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig3-v2.jpg)
+
+**Figure 3.:** (A) t-SNE plot of 2,041 neurons. The main neuron types were defined by the expression of genes necessary to make or release specific neurotransmitters or neuropeptides, and are highlighted by the shaded regions. Several subtypes of each class of neuron, designated by the cell color, can be contained in each shaded region. Color codes for subtype identities correspond to column headers in (B). The cluster outlined in red corresponds to cells expressing both glutamatergic and GABAergic markers. (B) Heatmap showing the cluster average Z-scored expression of selected genes that are enriched in each neuron subtype. Genes used to identify major neuronal cell types by their neurotransmitters are labeled in red. (C) Fluorescent in situ hybridization validating the existence of cells expressing both GABAergic and glutamatergic markers. Cells expressing Slc32a1, Slc17a6, and Crhbp were found in anterior regions of the DRN in the caudal linear nucleus (CLi) and dorsomedial DRN in close proximity to the cerebral aqueduct. The regions indicated by the yellow boxes are shown enlarged on the right.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Dot plot showing the log-scaled expression for each gene shown in Figure 3B. The color of each dot represents the average log-transformed UMI counts for each gene after normalizing for the total transcript count per cell, while the size of the dot represents the fraction of cells in each neuron subtype cluster in which transcripts for that gene were detected.
 
 All of the major neuronal cell classes, with the exception of the peptidergic neurons, were comprised of several subclusters that each represent a distinct neuron subtype (Figure 3B); we found 5 5-HT neuron subtypes, 3 DA neuron subtypes, 5 glutamatergic neuron subtypes, 3 GABAergic neuron subtypes, and 1 cluster co-expressing markers for both GABAergic and glutamatergic neurotransmission (GABA/Glu cluster). To validate the existence of these mixed GABAergic/glutamatergic neurons, we performed multiplexed fluorescent in situ hybridization (FISH) for Slc32a1 and Slc17a6 as well as Crhbp, which was predicted to be strongly expressed by this cluster (Figure 3C). Cells co-expressing the three transcripts were found within the caudal-linear nucleus (CLi) and dorsal regions of the anterior DRN. Thus, this cluster, representing just 0.08% (32 of 39,411) of cells in the scRNA-seq dataset, corresponds to a bona fide and previously unrecognized neuronal cell type within the DRN that may be a caudal extension of the recently described GABA/Glu neuron group of the ventral midbrain (Root et al., 2018).
 
@@ -61,9 +81,25 @@ GABAergic and glutamatergic neurons shared the most similarities despite differe
 
 Monoaminergic neurons were well separated into distinct DA and 5-HT classes. Although Vip was found in all 3 DA neuron subtypes, as previously reported for DRN and CLi DA neurons (Dougalis et al., 2012; Poulin et al., 2018; Poulin et al., 2014), Vip expression varied between the 3 subtypes. The Viplow DA-I subtype showed more similarities in gene expression with the GABA/Glu neurons of CLi as compared to the Viphigh DA-III subtype, indicating a corresponding topographical organization of these DA neuron subtypes along the anterior-posterior axis from the CLi to DRN. Viplow DA-I subtype neurons also expressed nicotinic receptors including Chrna4 and Chrnb3 that are also found in GABA/Glu neurons, suggesting differences in nicotinic cholinergic activation of these DA neuron subtypes along the anterior-posterior axis and between DA neurons in CLi versus DRN. The DRN DA neurons lacking expression of nicotinic receptors separated into two subtypes, DA-II and DA-III, that differed in expression of genes related to neurotransmission including peptides, such as Npw, and the vesicular glutamate transporter Slc17a6, suggesting that DRN DA neurons are functionally heterogeneous.
 
-## Genes differentially expressed between DRN 5-HT neuron subtypes
+### Genes differentially expressed between DRN 5-HT neuron subtypes
 
 DRN 5-HT neurons (n = 704 cells) separated into five distinct subtypes. We constructed a cluster dendrogram using the averaged cluster gene expression to examine the molecular differences between these subtypes (Figure 4A, Figure 4—figure supplement 1). We found 333 differentially expressed genes (DE genes) by performing differential expression tests at each node on the cluster dendrogram at a 5% false discovery rate (Benjamini-Hochberg correction). Enrichment tests for gene ontology (GO) terms and analysis of DE genes with annotated functions showed that genes involved in neuronal development and identity specification, such as transcription factors, and genes involved in specifying neuronal connectivity, such as cell adhesion and axon guidance molecules, were overrepresented in the transcripts differentiating the 5-HT subtypes (Figure 4—figure supplement 2). A large proportion of DE genes encoded for membrane proteins (GO:0016020 – membrane, 193 of 333 DE genes) with functions in neurotransmission and regulating intrinsic cellular excitability, such as neurotransmitter receptors, ion channels, vesicular transporters, neuropeptides, and other proteins involved in the synthesis or reuptake of neurotransmitters (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig4-v2.jpg)
+
+**Figure 4.:** (A) Z-scored expression heatmaps of selected genes with functional annotations that are differentially expressed between DRN 5-HT neuron subtypes. A total of 333 differentially expressed (DE) genes were found (5% false discovery rate, Benjamini-Hochberg correction). A large proportion of DE genes encode for cell surface and transmembrane proteins. Genes shown are categorized into five groups: transcription factors, cell adhesion and axon guidance molecules, transmembrane receptors, ion channels, and neurotransmission-related genes. (B-F) In situ hybridizations from the Allen Brain Atlas showing the expression patterns of selected DE genes enriched in each of the five 5-HT neuron subtypes. Many DE genes are not expressed uniformly throughout the DRN and are instead spatially heterogenous along the anterior-posterior, medial-lateral, and dorsal-ventral axes, suggesting that 5-HT neuron subtypes are differentially distributed across spatial domains. (G) Confocal images from a representative DRN coronal section (AP = −4.40 mm) stained for mRNA transcripts of Trh (magenta), Pdyn (green), and Slc6a4 (blue) using RNAscope single molecule fluorescent in situ hybridization (FISH). Regions marked in yellow are enlarged in images (i)-(iii) and show differential expression of Trh and Pdyn in three DRN subregions. Trh and Pdyn expression is low in the ventromedial DRN (vmDRN), whereas 5-HT neurons expressing high levels of Trh or Pdyn can be found in the dorsomedial DRN (dmDRN) and dorsolateral DRN (dlDRN). Cells expressing both Pdyn and Trh were occasionally observed in the regions bordering dmDRN and dlDRN. (H) Proportion of 5-HT neurons (Slc6a4+) containing Pdyn or Trh transcripts (minimum of 3 puncta). Trh transcripts were detected in a small proportion of Pdyn+ 5-HT neurons. (I) Probability distribution maps of Slc6a4+ 5-HT neurons containing transcripts for Pdyn (green), Trh (red), or Cbln2 (blue) across multiple FISH experiments. Cells of each category were separately mapped to a reference atlas and counted in 50 µm x 50 µm bins. Bin counts were normalized to the total cell count for each category to obtain the probability maps that are displayed as heatmaps overlaid on the average coronal Nissl template from the Allen Brain Atlas. Pdyn-expressing 5-HT neurons are enriched along the midline, whereas Trh-expressing 5-HT neurons are enriched in dorsolateral regions. Cbln2-expressing 5-HT neurons are distributed more ventrally, and are also found in the posterior B6 tail of the DRN (panel I7). Positions of Slc6a4- cells are not shown. Scale bars: 500 µm, unless otherwise stated.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Dot plot showing the log-scaled expression for each gene shown in Figure 4A. Genes are sorted into four separate dot plots based on their functional grouping. The color of each dot represents the average log-transformed UMI counts for each gene after normalizing for the total transcript count per cell, while the size of the dot represents the fraction of cells in each 5-HT neuron subtype cluster in which transcripts for that gene were detected.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Selected gene ontology (GO) terms that were significantly enriched (Q < 0.05, Benjamini-Hochberg correction) were sorted by ontology category and arranged in order of increasing Q values. Q values and the proportion of differentially expressed genes associated with each GO term, expressed as a percentage of genes in the background list associated with the GO term, are shown as bar plots. The majority of genes differentially expressed between 5-HT neuron subtypes were membrane proteins (GO:0016020, 193 of 333 genes) that included transporters, cell adhesion molecules, receptors, and synaptic proteins.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A-D) Confocal images from representative DRN coronal sections stained for transcripts of interest using multiplexed single molecule FISH. All sections were stained for Slc6a4 (blue) to identify 5-HT neurons, and counterstained using DAPI (gray). For panels A and B, regions outlined in yellow are enlarged in the images on the right labeled (i), (ii), and (iii), which correspond to the ventromedial DRN (vmDRN), dorsomedial DRN (dmDRN), and dorsolateral DRN (dlDRN), respectively. (A) 5-HT neurons expressing Slc17a8 (green) are enriched along the midline in both vmDRN and dmDRN. 5-HT neurons expressing Gad1 (magenta) were found in dmDRN and dlDRN. (B) Cbln2 (green) is expressed in 5-HT neurons along the midline, but is largely absent from dlDRN. 5-HT neurons expressing both Cbln2 and Pdyn were also found in both vmDRN and dmDRN. 5-HT neurons in dmDRN expressed higher levels of Pdyn compared to Pdyn+ 5-HT neurons in vmDRN. (C) Putative 5-HT-V neurons expressing high levels of both Cbln2 (green) and Trpc3 (magenta) were found in the posterior B6 subregion of the DRN, which is enlarged in the image on the right. Cells co-expressing Cbln2 and Trpc3 also showed reduced staining for Slc6a4 transcripts compared to 5-HT neurons in other subregions, consistent with reduced expression of Slc6a4 in the 5-HT-V cluster from the scRNA-seq data. (D) Putative 5-HT-I neurons expressing Trh (green) are a subset of Prkcq+ (magenta) 5-HT neurons. Prkcq+;Trh- 5-HT neurons are putative 5-HT-II neurons. (E) Spatial distribution of 5-HT neurons from a single FISH experiment co-staining for Cbln2, Pdyn, and Slc6a4 (n = 5,806 cells, 3 mice). The locations of 5-HT neurons positive for Cbln2 only (blue; n = 1,926 cells), Pdyn only (green; n = 1,048 cells), or double-positive for both transcripts (magenta; n = 1,517 cells) are displayed as probability heatmaps overlaid on the coronal averaged Nissl template. (F) Probability heatmaps from a separate FISH experiment co-staining for Trh, Pdyn, and Slc6a4 (n = 6304 cells, 3 mice). Heatmaps show the spatial distribution of 5-HT neurons positive for Trh only (red; n = 355 cells), Pdyn only (green; n = 1,867 cells), or double-positive for both transcripts (orange; n = 339 cells). Scale bars: 500 µm, unless otherwise stated.
 
 The cluster dendrogram for 5-HT neuron subtypes showed that the smallest subtype cluster 5-HT-V (n = 7 cells) was the most transcriptionally distinct, was marked by expression of genes such as Met, P2ry1, and Trpc3 (Figure 4—figure supplement 3C), and lacked expression of genes for GABA co-transmission. Inspection of ISHs probing these genes suggests that 5-HT-V subtype neurons are located in the posterior B6 tail of the DRN (Figure 4B).
 
@@ -71,17 +107,45 @@ The remaining four subtypes separated into two groups: the first was comprised o
 
 ISHs for genes enriched in these four subtypes revealed expression patterns that were consistent with the hypothesis that the two groups 5-HT-I/II and 5-HT-III/IV largely separated along the medial-lateral axis, with the added separation of 5-HT-IV from the other three subtypes along the dorsal-ventral axis. Genes enriched in subtypes 5-HT-I and 5-HT-II were expressed in lateral parts of the DRN (Figure 4C–D), whereas genes enriched in subtypes 5-HT-III and 5-HT-IV showed enrichment in medial parts of the DRN along the midline (Figure 4E–F). Additionally, the genes that were differentially expressed between subtypes 5-HT-III and 5-HT-IV showed graded expression along the dorsal-ventral axis along the midline. Multiplexed fluorescent ISH (FISH) further validated the differential expression of several subtype-enriched genes between 5-HT neurons in different spatial subregions of the DRN (Figure 4G–I, Figure 4—figure supplement 3).
 
-## Spatial distribution of 5-HT neuron subtypes in the DRN
+### Spatial distribution of 5-HT neuron subtypes in the DRN
 
 Anatomical features are lost during the dissociation of tissue for droplet-based scRNA-seq techniques. ISH against a small set of marker genes expressed exclusively in one cell type can be used to localize the putative location of cell types in complex tissue. However, this approach ignores the full information contained in the many dozens or hundreds of genes whose expression differs in a graded manner across different cellular subtypes. In order to exploit information from many genes differentially expressed across 5-HT neuron subtypes to infer the spatial distribution of transcriptionally defined subtypes, we utilized large imaging datasets from the Allen Brain Atlas, which contain the brain-wide spatial expression profiles of nearly every gene. We built a matrix of spatially binned gene expression for DE genes using images of coronal ISH spanning the DRN registered to the Allen Brain Atlas Common Coordinate Framework (see Materials and methods, Figure 5—figure supplement 1A–B, and Supplementary file 2). We first used the spatial distribution of Tph2 expression to define spatial bins (voxels) within the Common Coordinate Framework that contain DRN 5-HT neurons. Spatial ISH expression data was additionally filtered to retain only spatially variable genes within the region defined by the Tph2 expression mask (Figure 5—figure supplement 1C). Subsequently, correlation coefficients between the normalized expression scores for 112 DE genes for each of these voxels and each 5-HT neuron subtype cluster were calculated (Figure 5—figure supplement 1D, Figure 5—figure supplement 2). Collections of voxels with high positive correlation coefficients represented the inferred spatial distribution of each subtype within the DRN (Figure 5). Missing data in the Allen Brain Atlas dataset as well as artifacts apparently introduced in tissue processing that hampered alignment to the Common Coordinate Framework prevented us from analyzing the full 333 DE genes.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig5-v2.jpg)
+
+**Figure 5.:** Inferred spatial distributions of 5-HT neuron subtypes displayed as a map of correlation coefficients between profiles of gene expression of each subtype and each spatial bin. Each column shows the correlation map for each 5-HT neuron subtype at different coronal sections along the anterior-posterior axis of the DRN (rows). Only bins with positive correlation coefficients greater than 0.1 are shown, and maps were smoothed using a 2D Gaussian filter (1SD) for display. Correlation maps are overlaid on the averaged Tph2 expression (grayscale, based on ISH data from the Allen Brain Atlas). Anatomical landmarks visible in the averaged Nissl template, such as the cerebral aqueduct and fiber tracts, are outlined and overlaid on each coronal image. Correlation maps for subtypes 5-HT-I and 5-HT-II suggest that they are largely intermingled in the dorsolateral DRN, with some overlap in the anterior DRN with 5-HT-III in the dorsomedial DRN. 5-HT-IV was enriched in the ventral regions of the DRN, while 5-HT-V was highly restricted to the posterior B6 tail of the DRN that was highly enriched in expression of the 5-HT-V enriched gene Met. Scale bars: 500 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Overview of workflow for processing ISH images from the Allen Brain Atlas to generate the spatial expression matrix. Coronal images spanning the DRN in each ISH experiment were downsampled and centered on the brain slice. The midline in each slice was identified and the image was rotated to align the midline vertically. Rotated images were cropped and assigned to corresponding positions along the anterior-posterior axis relative to the Allen Brain Atlas coronal template. Cells positive for the ISH signal were identified using a spot detection algorithm and counted in 50 × 50 µm bins to generate 2D histograms for each image. 2D histograms, representing the spatial expression profile of the probed gene in a given coronal section, were aligned and cropped along the dorsal-ventral axis to retain only the region containing the DRN (36 X bins x 36 Y bins). Cropped histograms were averaged with the left-right reflection and combined with the other histograms generated from other images in the same experiment image series to generate the volume data (36 X bins x 36 Y bins x 12 images) including NaN values for missing data. Volume data for each gene was unrolled into a single row vector (of 15,552 entries), and row vectors were concatenated to generate the spatial expression matrix for spatial correlation analysis. (B) Sum of 2D histograms generated by the workflow in (A), displayed as a series of 12 coronal sections showing the summed count of cells detected across all ISH images analyzed. Anatomical landmarks such as the cerebral aqueduct, fiber tracts, periaqueductal gray, and DRN are easily discerned from the images of the histograms, suggesting that the histograms were well aligned and have good coverage of the DRN. (C) Scatter plot of the total expression and mean-normalized variance for genes in the spatial expression matrix within the Tph2+ region. Each dot represents 1 of the 123 genes in the expression matrix. Genes with low spatial variability within the masked region, such as Tph2 (marked red), and low total expression were excluded from the spatial correlation analysis. Met, which showed the most spatial variability since its expression is restricted to the posterior cluster, is also marked on the plot. (D) Plot of the number of genes used for the spatial correlation analysis at each of the 12 coronal sections (genes per 2D histogram). Genes with missing data at a given coronal section (i.e. no image or damaged slice) were not included in the count. Approximately 80 genes on average were used for calculating the correlation coefficient for each spatial bin.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Spatial correlation maps displayed as heatmaps arranged in columns for each 5-HT neuron subtype. Heatmaps correspond to coronal sections, and are arranged vertically in order along the anterior-posterior axis. The averaged Tph2 ISH signal is included in the left-most column as a reference for the DRN outline. Anatomical landmarks visible in the averaged Nissl template, such as the cerebral aqueduct and fiber tracts, are outlined and overlaid on each coronal image. Spatial bins in the heatmaps with positive correlations (green) indicate the most likely locations of each 5-HT neuron subtype. Spatial correlation maps have been smoothed using a 2D Gaussian filter (1SD) for visualization. Since only differentially expressed genes were used for this analysis, negative correlations are also seen. These reflect the locations of 5-HT neurons of other subtypes from which, by definition, the differentially expressed genes that define one subtype are excluded. Scale bars: 500 µm.
+
 Correlation maps showed that the 5-HT neuron subtypes identified from the scRNA-seq dataset have distinct but overlapping spatial distributions spread along all three major anatomical axes. Most subtypes were not confined to a specific DRN subregion, with the exception of subtype 5-HT-V (Figure 5, purple) that showed a tight distribution within the dorsomedial posterior B6 tail of the DRN. The remaining four 5-HT neuron subtypes were found within the larger anterior B7 part of the DRN, and were segregated along both the medial-lateral axis and the dorsal-ventral axis. Subtypes 5-HT-I and 5-HT-II showed the greatest similarities in spatial distribution – both subtypes occupied the dorsolateral subregions in the posterior half of the DRN where they are likely spatially intermingled, consistent with their higher expression of GABAergic transmission genes Gad1 and Gad2. In the more anterior DRN where the lateral wings are absent, subtypes 5-HT-I (Figure 5, red) and 5-HT-II (Figure 5, orange) were also be found within the dorsomedial subregion. This overlaps with the distribution of the Pdyn-enriched subtype 5-HT-III (Figure 5, green), which showed the highest correlations with voxels in the dorsomedial part of the DRN in its anterior half. Both subtypes 5-HT-III and 5-HT-IV (Figure 5, blue) showed higher correlations with voxels along the midline, but were separated along the dorsal-ventral axis with the Slc17a8-enriched 5-HT-IV subtype occupying most of the ventral DRN. Subtype 5-HT-IV was also most evenly distributed along the anterior-posterior axis compared to the other subtypes.
 
-## 5-HT neuron subtype distributions coincide with different projection-defined subpopulations
+### 5-HT neuron subtype distributions coincide with different projection-defined subpopulations
 
 The nuclei of the basal ganglia are major targets of DRN 5-HT neurons, with approximately one-third of all DRN 5-HT neurons innervating the striatum (Str) (Steinbusch et al., 1981). In addition to the extensive anatomical connectivity between the basal ganglia and DRN, both structures have motor and cognitive functions, and have been implicated in disorders that affect motor control and motivation such as impulsivity, obsessive-compulsive disorder, and major depressive disorder (Di Matteo et al., 2008; Miguelez et al., 2014; Pauls et al., 2014; Schilman et al., 2010). Although the DRN has many shared functions with the basal ganglia, DRN neurons are also involved in modulation of sensory pathways, limbic and neuroendocrine systems, and brainstem motor nuclei, and it has been proposed that anatomically segregated subsets of DRN 5-HT neurons form separate efferent pathways to perform these different functions (Hale and Lowry, 2011; Lowry, 2002; Muzerelle et al., 2016; Waselus et al., 2011). Therefore to compare the distribution of the 5-HT neuron subtypes from our scRNA-seq dataset with those of projection-defined neuron subpopulations in the DRN, we performed retrograde tracing from several nuclei of the basal ganglia, structures connected to basal ganglia circuits such as frontal and prefrontal cortical regions, as well as more functionally and anatomically distant structures that include thalamic sensory nuclei, such as the dorsal lateral geniculate nucleus (dLGN).
 
 To map the distribution of projection-defined DRN neuron subpopulations, we performed retrograde tracing using glycoprotein-deleted rabies viruses (RbV) injected into brain regions known to receive inputs from DRN 5-HT neurons (Figure 6A). Cells infected via their axons by RbV were fluorescent, and their positions were manually registered onto an averaged Nissl coronal template from the Allen Brain Atlas (Figure 6B–C). Cells were counted in 50 × 50 µm bins, and bin counts were normalized by the total cell count to obtain the probability distributions for each projection-defined subpopulation. Probability distributions are displayed as heatmaps overlaid on reference template images to compare their distributions.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of retrograde tracing experiments in which unpseudotyped rabies viruses (SADΔG B19 stain) were used to infect and label neurons whose axons innervate the virus-injected target region (GPe in this example). (B) Image of a coronal section of the DRN showing rabies-labeled, GPe-projecting neurons. Brains were fixed 7 days post-injection for histology, and 5-HT neurons in the DRN were visualized using immunohistochemistry against TPH2. Sections were counterstained using a fluorescent Nissl stain (Neurotrace). (C) The location of all rabies-labeled cells within the DRN and vlPAG, such as the GPe-projecting cells in (B), were manually registered onto a coronal template derived from the averaged Allen Brain Atlas coronal Nissl stain. Labeled neurons outside of this region of interest, such as the PPN and dorsal PAG, were not included. (D1-5) Distributions of Str-projecting (green), M1-projecting (blue), and dLGN-projecting (red) subpopulations, displayed as a probability density map (50 µm x 50 µm bins) overlaid on the coronal template. Coronal sections shown are centered in panel D3 at the maximum density of the Str-projecting population. Str- and M1-projecting populations were largely separated along the dorsal-ventral axis, with some overlap. Co-labeled neurons projecting to both Str and M1 were typically found in the ventrolateral DRN, outlined in cyan in D3, and the ventromedial DRN. (E) Pairwise correlations between the distributions of projection-defined subpopulations. Correlations between the Str-projecting subpopulation were higher with other subpopulations that also innervate nuclei of the basal ganglia, compared with subpopulations innervating functionally distinct targets such as M1 or dLGN. (F-G) Overlap between the distributions of neurons innervating Str (F) or M1 (G) and the 5-HT neuron subtype distributions at AP = −4.30 mm. Distributions of each projection-defined subpopulation are represented as probability maps (magenta) overlaid on the averaged Tph2 expression. Subtype distributions are represented as color-coded outlines corresponding to the colors used in Figure 4 for each subtype. Str-projecting neurons largely fell into regions occupied by both 5-HT-III and 5-HT-IV subtypes, suggesting molecular heterogeneity within this projection-defined population. M1-projecting neurons were more confined to the ventral DRN, overlapping with the distribution of the 5-HT-IV subtype. Scale bars: 500 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Distributions of all projection-defined subpopulations in Figure 5 displayed as probability density maps. Distributions for each subpopulation were projected onto either the horizontal or sagittal plane (50 × 100 µm bins). The midline in horizontal projections is indicated by a straight gray line at 0 mm, and distances from the midline are negative for the hemisphere ipsilateral to the injection site. The region occupied by the cerebral aqueduct is shaded in solid gray in sagittal projections, and the depth indicated is relative to the origin of the PIR space in the Allen Brain Atlas. The flattened projection of the region containing Tph2+ cells is outlined by the gray dashed line in each image. Str-projecting and GPe-projecting subpopulations were the most similar, whereas the Str-projecting and NAc-projecting subpopulations were mostly overlapping in the anterior DRN but differed in the posterior DRN. Cells outside of the ventrolateral periaqueductal gray and DRN, such as cells in the pedunculopontine nucleus or dorsal periaqueductal gray, were excluded from the probability maps. Abbreviations: Str: striatum; GPe: globus pallidus, external; NAc: nucleus accumbens; LHA: lateral hypothalamic area; M1: primary motor cortex; mPFC: medial prefrontal cortex; dLGN: dorsal lateral geniculate nucleus; Hb: habenula.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic of double retrograde tracing experiment using unpseudotyped rabies viruses. RbV-tdTomato was injected into primary motor cortex, and RbV-EGFP was injected into the ipsilateral striatum. Tissue collection for histology was performed 7 days post-injection. (B) Representative fluorescent image of a coronal section through the anterior DRN containing both M1- and Str-projecting neurons. 5-HT neurons were labeled by an antibody stain for TPH2. Neurons innervating both M1 and Str were co-labeled by RbV-tdTomato and RbV-EGFP, and were typically found in the ventrolateral DRN and the dorsal border of the ventromedial DRN. Inset (i) is a confocal image of the ventrolateral DRN region in (B) marked by the white dashed box, and inset (ii) is a confocal image of the ventromedial DRN region in (B) marked by the yellow dashed box. Both insets are centered on TPH2+ cells co-labeled by RbV-tdTomato and RbV-EGFP.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Distributions of Str-projecting (A), NAc-projecting (B), and mPFC-projecting (C) neurons displayed as probability density maps overlaid on the Allen Brain Atlas coronal template. Str-projecting and NAc-projecting are both found in the dorsomedial DRN at anterior sections (columns 1–2). Str-projecting neurons are more restricted to anterior sections of the DRN, whereas the NAc-projecting neurons are also found in posterior sections of the DRN (columns 3–5) where they overlap with the distribution of mPFC-projecting neurons.
 
 Most projection-defined subpopulations were located either ipsilateral to the injection site or along the midline, with the exception of the habenula-projecting neurons which were found in both ipsilateral and contralateral lateral wings of the DRN (Figure 6—figure supplement 1). Within the cortical-projecting group, frontal- and prefrontal-projecting subpopulations were differentially distributed along the anterior-posterior axis of the DRN – M1-projecting neurons were relatively confined to the anterior half of the DRN, whereas mPFC-projecting neurons were found in both anterior and posterior halves. Consistent with previous reports (Ren et al., 2018; Waterhouse et al., 1986), we found that most subcortical-projecting neurons were located in the dorsal DRN, whereas most cortical-projecting neurons were located in the ventral DRN. Although there was a crude separation of cortical- and subcortical-projecting subpopulations along the dorsal-ventral axis, there were considerable overlaps between their distributions, preventing the delineation of a clear boundary between cortical- and subcortical-projecting groups. The Str-projecting and M1-projecting subpopulations were largely segregated into the dorsal and ventral DRN respectively. However, there were overlaps in their distributions at intermediate levels – both Str-projecting and M1-projecting neurons were found in the ventrolateral DRN (outlined in cyan in Figure 6D column 3) and dorsal border of the ventromedial DRN. Double retrograde tracing experiments also showed that DRN neurons innervating both Str and M1 were often found in these regions (Figure 6—figure supplement 2).
 
@@ -91,21 +155,37 @@ Differential expression of many axon guidance and cell adhesion molecules betwee
 
 It has been reported that cortical-projecting subpopulations of DRN 5-HT neurons express Slc17a8, in agreement with the extensive overlap between the spatial distribution of cortical-projecting neurons and Slc17a8 expression (Ren et al., 2018). This suggests that cortical-projecting subpopulations should correspond to subtype 5-HT-IV from the scRNA-seq dataset, which is Slc17a8-expressing and distributed to the ventral DRN. Additionally, we would predict that the Str-projecting subpopulation corresponds to the subtype 5-HT-III, since their distributions overlap extensively in the dorsomedial DRN. Consistent with our hypothesis that 5-HT neuron subtypes innervate different brain regions, we found that the inferred distributions of each 5-HT neuron subtype coincides with a different set of projection-defined subpopulations – the distribution of subtype 5-HT-III was most similar to the distribution of Str-projecting neurons (Figure 6F), whereas the distribution of subtype 5-HT-IV was more similar to that of M1-projecting neurons (Figure 6G). However, neither Str-projecting nor M1-projecting subpopulations were fully contained within the distribution of a single 5-HT neuron subtype. Str-projecting neurons in the ventrolateral DRN (marked cyan in Figure 6D,F,G), where neurons innervating both Str and M1 are located, fell within the distribution of subtype 5-HT-IV but not of subtype 5-HT-III. This suggests that Str is a target of multiple molecular subtypes of 5-HT neurons, and supports the model that some structures are innervated by multiple 5-HT neuron subtypes due to overlaps in the axonal projection fields of different subtypes.
 
-## Striatal-projecting 5-HT neurons are transcriptionally heterogeneous
+### Striatal-projecting 5-HT neurons are transcriptionally heterogeneous
 
 To determine the molecular identities of individual projection-defined DRN neurons, we combined RbV-mediated retrograde tracing with multiplexed FISH for genes enriched in different 5-HT neuron subtypes. We focused on determining the subtype identity of Str-projecting 5-HT neurons, since their location overlaps with the distributions of multiple 5-HT neuron subtypes. Neurons projecting to Str were labeled using axon-infecting unpseudotyped SADΔG B19 rabies viruses (B19G-SADΔG-tdTomato) injected into the ventrolateral Str. Rabies-infected neurons were identified by expression of the viral transcript B19N using FISH (RNAscope probe: RABV-gp1), and 5-HT neurons were identified based on expression of the serotonin reuptake transporter gene Slc6a4 (Figure 7—figure supplement 1). The subtype identity of RbV-infected 5-HT neurons was identified by expression of genes that were highly enriched in each subtype: Trh for subtype 5-HT-I, Pdyn for subtype 5-HT-III, Cbln2 and Slc17a8 for subtype 5-HT-IV. ISH for each of these subtype-enriched genes was performed on separate sets of RbV-labeled cells (Figure 7).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig7-v2.jpg)
+
+**Figure 7.:** Multiplexed FISH was used to identify rabies-infected Str-projecting 5-HT neurons in the DRN and quantify their expression of 5-HT subtype enriched genes. Rabies-infected neurons are identified by expression of the virus transcript B19N. Confocal images of the DRN from representative coronal sections are shown in column 1, and regions marked in yellow are expanded and separated by channel in columns 2–4. In columns 2–4, rabies-infected cells (B19N+) are outlined in yellow, whereas uninfected 5-HT neurons are outlined in white. The proportions of DRN 5-HT neurons that express each subtype-enriched gene are summarized in pie charts in column 5. Approximately half of the Str-projecting 5-HT neurons express the 5-HT-III enriched gene Pdyn (row A), and a similar proportion express 5-HT-IV enriched genes such as Slc17a8 (row B) and Cbln2 (row C). Most Str-projecting 5-HT neurons do not express the 5-HT-I enriched gene Trh (row D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Scatter plots with marginal histograms showing the quantification of the number of single molecule FISH puncta (RNAscope) in each Str-projecting cell. Each dot represents a single RbV-labeled cell. RbV-labeled cells were categorized based on expression of Slc6a4 and one of four 5-HT subtype enriched genes: Pdyn (A) for 5-HT-III, Slc17a8 (B) and Cbln2 (C) for 5-HT-IV, and Trh (D) for 5-HT-I. Dashed lines in the scatter plots and marginal histograms indicate the thresholds used to binarize expression. Separate RNAscope experiments were performed for each 5-HT subtype enriched gene. All RbV-labeled cells in the analyzed images were included, including some cells in the pedunculopontine nucleus, and the number of RbV-labeled cells in each experiment is indicated in the plot.
+
 We found that Str-projecting DRN 5-HT neurons expressed the subtype 5-HT-III enriched gene Pdyn (52%, 39 of 75 RbV-labeled 5-HT neurons) or the 5-HT-IV enriched gene Cbln2 (46%, 49 of 106 RbV-labeled 5-HT neurons), consistent with the overlap in the distribution of this projection-defined subpopulation with the inferred distributions of these two distinct subtypes. A subset of Str-projecting neurons also expressed Slc17a8 (57%, 70 of 123 RbV-labeled 5-HT neurons), which is enriched in 5-HT-IV but also expressed in 5-HT-III at lower levels. Few Str-projecting neurons expressed Trh (4%, 4 of 102 RbV-labeled 5-HT neurons). This low proportion of Trh-expressing neurons is consistent with the low Trh expression in a small proportion of Pdyn+ 5-HT neurons (Figure 4H), and suggests that Str-projecting 5-HT neurons are unlikely to be subtype 5-HT-I neurons. Therefore, our results support the hypothesis that the Str-projecting DRN 5-HT neuron subpopulation is molecularly heterogeneous, and is comprised of at least 2 transcriptionally distinct 5-HT neuron subtypes.
 
-## Innervation of basal ganglia by a Pdyn-expressing 5-HT neuron subtype
+### Innervation of basal ganglia by a Pdyn-expressing 5-HT neuron subtype
 
 The distribution of 5-HT-III subtype neurons overlapped with that of several projection-defined subpopulations that innervated nuclei of the basal ganglia beyond Str. To validate that the 5-HT-III subtype innervates the basal ganglia, we used an intersectional genetic targeting strategy to perform anterograde tracing from this subtype based on its enriched expression of Pdyn. We generated Pet1-Flpe;Pdyn-IRES-Cre;LSL-FSF-ReaChR:mCitrine mice in which Pdyn+;Pet1+ co-expressing neurons and their processes are fluorescently labeled by mCitrine-tagged ReaChR. To compare the innervation patterns of this subtype with that of the full DRN 5-HT neuron population, we also performed anterograde tracing from DRN Pet1+ neurons by injecting Cre-dependent adeno-associated viruses (AAVs) into the DRN of Pet1-Cre mice, labeling Pet1+ neurons in the dorsal and ventral DRN with EGFP and tdTomato respectively (Figure 8A). mCitrine-labeled axons from Pdyn+;Pet1+ neurons were found in a subset of regions innervated by DRN Pet1+ neurons (Figure 8B–F, Figure 8—figure supplement 1). Of the regions innervated by both DRN Pet1+ neurons and Pdyn+;Pet1+ neurons, the output nuclei of the basal ganglia, including the ventral pallidum (VP), entopeduncular nucleus (EP), and substantia nigra pars reticulata (SNr), were most densely innervated by Pdyn+;Pet1+ neurons (Figure 8B–D). In contrast, sensory structures, such as the dLGN (Figure 8E), and limbic structures, such as the hypothalamus (Figure 8F) were not innervated by Pdyn+;Pet1+ neurons, despite receiving dense input from DRN Pet1+ neurons. These results therefore demonstrate that the Pdyn+ subtype 5-HT-III neurons broadly but selectively innervate structures that are either a part of or functionally linked to the basal ganglia, and are unlikely to be involved in sensory modulation.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig8-v2.jpg)
+
+**Figure 8.:** (A) Conditional anterograde tracing from subsets of 5-HT neurons. Anterograde tracing from Pet1+ DRN neurons was performed by injecting AAV2/1-CAG-FLEX-EGFP into the dorsal DRN and AAV2/1-CAG-FLEX-tdTomato into the ventral DRN of ePet1-Cre mice. A coronal section from the DRN injection site containing Pet1+ cells expressing either EGFP or tdTomato is shown on the left in (A1). Pdyn+;Pet1+ neurons were labeled by intersectional genetic targeting with a Cre- and Flp-dependent reporter line R26-LSL-FSF-ReaChR:mCitrine crossed to Pdyn-IRES-Cre;Pet1-Flpe mice. Pdyn+;Pet1+ expressing ReaChR:mCitrine in the DRN are shown on the right in (A2). 5-HT neurons are labeled by immunostaining for TPH2. (B-F) Axonal projections of Pdyn+;Pet1+ neurons were compared to projections of DRN Pet1+ neurons using separate approaches for conditional anterograde tracing. Pdyn+;Pet1+ neurons densely innervate many output nuclei of the basal ganglia, including VP (B2), EP (C2), and SNr (D2), which are also structures innervated by DRN Pet1+ neurons (B1, C1, and D1). Pdyn+;Pet1+ axons were not found in structures that were functionally distant from basal ganglia circuits, such as dLGN (E2) and hypothalamic nuclei (F2), although these structures received dense inputs from DRN Pet1+ neurons (E1 and F1). Regions outlined in yellow in B1 – F1 are enlarged in the insets showing EGFP+/tdTomato+ axon fibers in each region. Abbreviations: DRN – dorsal raphe nucleus. VP – ventral pallidum. EP – entopeduncular nucleus. SNr – substantia nigra pars reticulata. dLGN – dorsal lateral geniculate nucleus. LH – lateral hypothalamus. VMH – ventromedial hypothalamus. All tissue sections are counterstained with fluorescent Neurotrace (Nissl).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/46464/elife-46464-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Images of cortical and subcortical regions in the forebrain from conditional anterograde tracing of axons from DRN Pet1+ neurons and Pdyn+;Pet1+ neurons. Axons from Pdyn+;Pet1+ neurons were also found in frontal and prefrontal cortical regions (A-B), but were absent from thalamic nuclei that were innervated by DRN Pet1+ neurons (D-G) and subcortical regions outside of the basal ganglia, such as SC (H). Within Str, Pdyn+;Pet1+ axons were not uniformly distributed, with the highest density in the ventrolateral regions of Str. Abbreviations: ACC: anterior cingulate cortex; M1: primary motor cortex; S1: primary somatosensory cortex; Str: striatum; Sub: submedius thalamic nucleus; Re: nucleus reuniens; Hb: habenula; PF: parafascicular thalamic nucleus; MGN: medial geniculate nucleus; APT: anterior pretectal nucleus; SC: superior colliculus. Scale bars: 500 µm.
 
 ## Discussion
 
 Here we present a transcriptomic map of cell types in and around the DRN, and outline the spatial organization of these cell types based on information contained in their molecular profiles. By overlaying transcriptional and anatomical features onto a common reference atlas, we describe the molecular basis for the organization of DRN 5-HT neurons into distinct subsystems. We uncovered 5 subtypes of DRN 5-HT neurons based on their gene expression profiles and showed that these are organized into distinct spatial domains within the DRN that are segregated along all three major anatomical axes. However, the spatial organization of molecularly defined 5-HT neurons does not conform to anatomical subdivisions as defined by cytoarchitecture of the DRN or the projection targets of 5-HT axons. The overlapping spatial distributions of 5-HT subtypes demonstrate the need for precise molecular and genetic approaches to dissect the function of each subtype. We also define a Pdyn-enriched 5-HT neuron subtype that is well-positioned to broadly but specifically alter the input and output of basal ganglia circuits, potentially mediating the modulation of motor control, decision making, and reinforcement learning by internal state.
 
-## Anatomical organization of DRN 5-HT neuron subtypes
+### Anatomical organization of DRN 5-HT neuron subtypes
 
 We present a physical map combining both transcriptional and anatomical features and show that molecularly distinct DRN 5-HT neuron subtypes are spatially segregated into distinct anatomical subdomains and innervate different but overlapping targets. We reconstructed the spatial distribution of each 5-HT subtype using spatial correlation analysis of gene differentially expressed between subtypes and showed that each cytoarchitecturally-defined DRN subregion contains different molecularly-defined 5-HT subtypes. The subregional distribution of 5-HT subtypes relates well to past studies reporting subregion-specific anatomical and molecular differences that are consistent with our integrative map of 5-HT subtype features.
 
@@ -117,13 +197,13 @@ In comparison, the dorsolateral DRN, also called the lateral wings of the DRN (l
 
 Although we show that 5-HT subtypes have distinct spatial locations, we also found considerable overlaps in their distributions, particularly within the dorosmedial subregion in the anterior DRN that contains many basal ganglia-projecting 5-HT neurons. While the Pdyn-expressing 5-HT-III subtype was localized to the dorsomedial subregion, subtypes 5-HT-I and 5-HT-II were also found in this subregion in the anterior third of the DRN despite being distributed to dorsolateral subregions in more posterior sections. Furthermore, a detailed comparison of the 5-HT subtype distributions with cytoarchitecturally-defined subregion boundaries showed that subtype distributions are not confined within these subregion boundaries, especially in the anterior half of the DRN. The poor correspondence between molecularly-inferred and cytoarchitecturally-defined spatial domains cautions against the use of anatomical subregions for targeting 5-HT subsystems.
 
-## Molecular organization of DRN 5-HT subsystems
+### Molecular organization of DRN 5-HT subsystems
 
 5-HT neurons are organized into discrete subsystems that (i) have distinct and dissociable behavioral functions, and (ii) are comprised of 5-HT neurons possessing unique molecular, physiological, and anatomical properties. However, the complex architecture of the DRN has impeded efforts to understand the interrelationship of these three aspects of 5-HT diversity, as necessary to study the differential properties and functions of each subsystem and its distinct subtype of 5-HT neuron. Given the extensive overlaps in the distribution of different 5-HT neuron subsets at the anatomical level, we were motivated by the hypothesis that a transcriptome-based molecular definition of 5-HT neuron subtypes was required to both understand the organization of heterogeneous 5-HT neuron subtypes as well as to enable their precise targeting for functional analyses. Consistent with this hypothesis, our results suggest that many of the physiological and anatomical differences between 5-HT neuron subtypes are a result of molecular differences specified by expression of overlapping but distinct transcriptional networks.
 
 Some key technical limitations of scRNA-seq, particularly for droplet-based methods such as the inDrop platform used in this study, are the relatively low transcript capture efficiency and low number of reads per cell. The higher occurrence of drop-out events, which are failures in detecting expressed transcripts in a cell, also makes it more difficult to detect low copy transcripts that may be important for distinguishing between highly similar subtypes, such as the 5-HT-I and 5-HT-II subtypes in our study. Thus our study does not seek to present a definitive catalogue of all neuron subtypes present in the DRN, since the techniques used are limited in their ability to resolve finer levels of heterogeneity and differential expression of low copy transcripts. In spite of these limitations, our study still successfully captures a substantial amount of transcriptional heterogeneity to resolve differences between neuron subtypes that are informative of their diverse morphological and functional features. Furthermore, we find differential expression of transcription factors across subtypes that may underlie many of these molecular differences that are specified during the development of each subtype. The dynamics of these gene expression programs can be further elucidated by future studies that sample multiple time points along the developmental trajectory of the DRN. Further studies incurring a trade-off on cell count and the number of cell types captured for higher sequencing depth may also resolve additional transcriptional heterogeneity between subtypes within specific populations. Eventually these molecular approaches will be well complemented by whole-brain reconstructions of axons of single neurons (Economo et al., 2016; Gong et al., 2016) as well as spatial transcriptomics (Chen et al., 2015; Wang et al., 2018).
 
-## Local interactions between DRN cell types
+### Local interactions between DRN cell types
 
 Our scRNA-seq dataset yields predictions about local interactions involving DRN cells, including those with non-neuronal cells, based the expression patterns of known receptor-ligand pairs. For example, the expression of Hdc in ependymal cells suggests that ependymal cells may signal to nearby neurons via non-synaptic release of histamine. Histaminergic paracrine signaling from ependymal cells can exert differential effects on various neuronal subtypes based on proximity to the cerebral aqueduct and differential expression of histaminergic receptors. Notably, the histamine receptors Hrh1 and Hrh3 are expressed in 5-HT subtypes 5-HT-I, 5-HT-II, and 5-HT-III, which are all located in dorsal DRN subregions in close proximity to the cerebral aqueduct. In contrast, 5-HT-IV subtype neurons, which are in ventral subregions further from the aqueduct, do not express detectable levels of Hrh1 and express Hrh3 at very low levels. Enrichment of the Gi-coupled Hrh3 receptor in 5-HT-III further suggests that histamine may inhibit this subtype while increasing the excitability of 5-HT-I and 5-HT-II neurons. Release of peptides such as Pdyn from a subset of ependymal cells can also have differential effects dependent on the expression pattern of the κ-opioid receptor. Additionally, ependymal cells may communicate via secretion of these transmitters and peptides into the CSF. Transmitters and peptides released into the ventricular system can have long range effects facilitated by the flow of CSF and signal to neuronal cells extending processes to the ventricular walls, including some 5-HT neurons, as well as non-neuronal cells including ventricular immune cells and choroid plexus cells.
 
@@ -131,7 +211,7 @@ We also found that pvMΦs within or in close proximity to the DRN express the Gi
 
 The diversity of neuronal subtypes in and around the DRN also highlights the importance of elucidating local circuitry with knowledge of the molecular identity of both pre- and post-synaptic neurons. For direct signaling between 5-HT neurons, somatodendritic release of 5-HT and activation of inhibitory 5-HT1A receptors on adjacent 5-HT neurons is likely to mediate lateral inhibition between the 5-HT neurons of the same subtype, due to the spatial clustering of the subtypes. However, GABAergic and/or glutamatergic neurons may be excited by adjacent 5-HT neurons via activation of their 5-HT2C and 5-HT7 receptors to mediate indirect interactions between 5-HT neuron subtypes. These interactions may be either synergistic if mediated by glutamatergic neurons innervating other 5-HT subtypes, or antagonistic in a form of lateral inhibition via GABAergic interneurons. Subtype-specific connections between 5-HT neurons and local GABAergic and glutamatergic neurons can mediate interactions between different subsystems and may contribute to the contrasting and opposing functions ascribed to the DRN as a whole. Although 5-HT neurons have been reported to form local connections (Weissbourd et al., 2014), it is currently unknown how the 18 neuronal subtypes we have described are organized into local circuits. To generate models of these local circuits, the connectivity between DRN and ventrolateral PAG neurons will need to be mapped with subtype-level molecular resolution. This will likely require the use of retrograde tracing techniques with improved specificity for targeting neuronal subtypes in combination with spatial transcriptomic methods that are compatible with the large volume of the DRN. These methods can also be extended to examine the interactions between larger networks of 5-HT subsystems distributed across the raphe nuclei, which have been shown to be interconnected based on conditional anterograde tracing using intersectional targeting of 5-HT neurons originating from different embryonic rhombomeres (Bang et al., 2012).
 
-## A 5-HT subsystem targeting basal ganglia circuits
+### A 5-HT subsystem targeting basal ganglia circuits
 
 The transcriptomic information we obtained on DRN 5-HT neuron subtypes allowed us to access a specific 5-HT subsystem that innervates circuits of the basal ganglia. We showed that the subsystem comprised of the Pdyn-enriched subtype 5-HT-III sends broad projections to both input and output nuclei of the basal ganglia, while avoiding other sensory and limbic structures, which have distinct functions from the basal ganglia and are likely to receive inputs from other DRN 5-HT neuron subtypes. Although we also showed that the basal ganglia receives inputs from multiple 5-HT neuron subtypes, particularly in the case of the Str-projecting subpopulation, the dense innervation of basal ganglia output nuclei by 5-HT-III neurons suggests that this 5-HT subsystem has a prominent role in the regulation of motor output and action selection through its effects on the activity of basal ganglia output nuclei. We also speculate that 5-HT release from this subsystem may have different effects on distinct output channels of the basal ganglia, given the differential expression of 5-HT receptors on distinct subpopulations of SNr and EP projection neurons (Saunders et al., 2018; Wallace et al., 2017). The targeting of distinct channels or subcircuits within the basal ganglia may also be consistent with the innervation of the striatum by multiple 5-HT neuron subtypes given the topographical arrangement of convergent cortical inputs into distinct domains within the striatum (Hintiryan et al., 2016), since it is plausible that distinct striatal domains are each innervated by a different but functionally related 5-HT neuron subtype. Subcircuit-specific effects of 5-HT within the basal ganglia would also have implications on models for the function of 5-HT in decision-making and motor control (Miguelez et al., 2014; Reed et al., 2013), although further work is needed to elucidate the structural and functional organization of these subcircuits in the basal ganglia (Calabresi et al., 2014).
 
@@ -139,72 +219,320 @@ Our results provide a resource for the design of intersectional strategies for t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:000664, RRID:IMSR_JAX:000664</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pet1-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:012712, RRID:IMSR_JAX:012712</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pet1-Flpe</td>
+      <td>PMID: 18344997</td>
+      <td>RRID:MGI:5004974</td>
+      <td>Lab of Susan Dymecki</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Pdyn-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:027958, RRID:IMSR_JAX:027958</td>
+      <td>Lab of Bradford Lowell</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>R26-LSL-FSF-ReaChR:mCitrine</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat# JAX:024846, RRID:IMSR_JAX:024846</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Adeno-associated virus)</td>
+      <td>AAV2/1-CAG-FLEX-EGFP</td>
+      <td>Penn Vector Core</td>
+      <td>RRID:Addgene_51502</td>
+      <td>1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Adeno-associated virus)</td>
+      <td>AAV2/1-CAG-FLEX-tdTomato</td>
+      <td>Penn Vector Core</td>
+      <td>RRID:Addgene_51503</td>
+      <td>1012 GC/ml</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (G-deleted rabies virus)</td>
+      <td>B19G-SADΔG-EGFP; RbV-EGFP</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>Generated in-house (see Materials and methods) 109 IU/ml</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (G-deleted rabies virus)</td>
+      <td>B19G-SADΔG-tdTomato; RbV-tdTomato</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>Generated in-house (see Materials and methods) 109 IU/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TPH2 (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# ABN60, RRID:AB_10806898</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit A647 (goat polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# A-21244, RRID:AB_2535812</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 0247</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris Bioscience</td>
+      <td>Cat# 1069</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# K3375</td>
+      <td>0.9 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triptolide</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# T3652</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Actinomycin D</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# A9415</td>
+      <td>5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anisomycin</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# A5862</td>
+      <td>30 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pronase</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# 10165921001</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Papain Dissociation System, without EBSS</td>
+      <td>Worthington</td>
+      <td>Cat# LK003163</td>
+      <td>20 U/ml papain 0.05 mg/ml DNAse I</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAscope V1 fluorescent multiplex detection assay reagents</td>
+      <td>ACDBio</td>
+      <td>Cat# 320851</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>RNAscope V1 fluorescent multiplex detection assay probes</td>
+      <td>ACDBio</td>
+      <td>Cat# 428551; Cat# 498971; Cat# 400951; Cat# 318771; Cat# 525191; Cat# 319171; Cat# 431261; Cat# 319191; Cat# 315851; Cat# 436811; Cat# 525201; Cat# 456781</td>
+      <td>Cbln2 Crhbp Gad1 Pdyn Prkcq Slc17a6 Slc17a8 Slc32a1 Slc6a4 Trh Trpc3 V-RABV-gp1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>inDrops pipeline (Python)</td>
+      <td>PMID: 26000487</td>
+      <td>N/A</td>
+      <td>https://github.com/indrops/indrops</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R 3.4.4</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://cran.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat 2.3.1</td>
+      <td>PMID: 29608179</td>
+      <td>RRID:SCR_016341</td>
+      <td>https://satijalab.org/seurat/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MAST 1.4.1</td>
+      <td>PMID: 26653891</td>
+      <td>RRID:SCR_016340</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/MAST.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>goseq 1.30.0</td>
+      <td>PMID: 20132535</td>
+      <td>RRID:SCR_017052</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/goseq.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (R2016b, R2018b)</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ilastik 1.2.2</td>
+      <td>DOI: 10.1109/ISBI.2011.5872394</td>
+      <td>RRID:SCR_015246</td>
+      <td>https://www.ilastik.org/index.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CellProfiler 3.1.5</td>
+      <td>PMID: 17269487</td>
+      <td>RRID:SCR_007358</td>
+      <td>https://cellprofiler.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurotrace 435</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# N21479</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VectaShield mounting media</td>
+      <td>Vector Labs</td>
+      <td>Cat# H-1000, RRID:AB_2336789</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold mounting media</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# P36934</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The following mouse strains/lines were used in this study: C57BL/6J (The Jackson Laboratory, Stock # 000664), Pet1-Cre (The Jackson Laboratory, Stock # 012712), Pet1-Flpe (from the lab of Susan Dymecki [Jensen et al., 2008]), Pdyn-IRES-Cre (The Jackson Laboratory, Stock # 027958), and R26-LSL-FSF-ReaChR:mCitrine (The Jackson Laboratory, Stock # 024846). Animals were kept on a 12:12 regular light/dark cycle under standard housing conditions. All procedures were performed in accordance with protocols approved by the Harvard Standing Committee on Animal Care following guidelines described in the U.S. National Institutes of Health Guide for the Care and Use of Laboratory Animals.
 
-## Adeno-Associated viruses (AAVs)
+### Adeno-Associated viruses (AAVs)
 
 Recombinant AAVs used for anterograde tracing experiments (AAV2/1-CAG-FLEX-EGFP, AAV2/1-CAG-FLEX-tdTomato) were commercially obtained from the Penn Vector Core. Virus aliquots were stored at −80°C, and were injected at a concentration of approximately 1012 GC/ml.
 
-## Rabies viruses
+### Rabies viruses
 
 Rabies viruses used for retrograde tracing (B19G-SADΔG-EGFP, B19G-SADΔG-tdTomato) were generated in-house (Osakada and Callaway, 2013; Wickersham et al., 2010). Virions were amplified from existing stocks in several rounds of low-MOI passaging through BHK-B19G cells by transferring filtered supernatant, with 3 to 4 days between passages a maximum of 3 passages. Cells were grown at 35°C and 5% CO2 in DMEM with GlutaMAX (Thermo Scientific, #10569010) supplemented with 5% heat-inactivated FBS (Thermo Scientific #10082147) and antibiotic-antimycotic (Thermo Scientific #15240–062). Media containing virions were collected at the end of the last passaging round and incubated with benzonase nuclease (1:1000, Millipore #70664) at 37°C for 30 min, followed by filtration through a 0.22 µm PES filter. Filtered supernatant was transferred to ultracentrifuge tubes (Beckman Coulter #344058) with 2 ml of a 20% sucrose in dPBS cushion and ultracentrifugated at 20,000 RPM (Beckman Coulter SW 32 Ti rotor) at 4°C for 2 hr. The supernatant was discarded and the pellet was resuspended in dPBS for 6 hr on an orbital shaker at 4°C before aliquots were prepared and frozen for long-term storage at −80°C. Unpseudotyped rabies virus titers were estimated using a serial dilution method counting infected HEK 293 T cells and quantified as infectious units per ml (IU/ml).
 
-## Stereotaxic surgeries
+### Stereotaxic surgeries
 
 Mice were initially anesthetized with 5% isoflurane (80% oxygen) and maintained at 1–2.5% isoflurane after placement on the stereotaxic frame (David Kopf Instruments, Model 1900 Stereotaxic Alignment System). The scalp was cleaned and sterilized before an incision was made to expose the skull, and sterile ophthalmic ointment was applied to the eyes. For leveling the horizontal plane, a stereotaxic alignment tool (David Kopf Instruments, Model 1905) was used to zero the relative dorsoventral displacement of Bregma and Lambda, as defined in the Paxinos and Franklin Mouse Brain Altas (Paxinos and Franklin, 2001), for adjusting tilt of the anterior-posterior axis, and of two points equidistant to the left and right of Bregma for adjusting the tilt of the medial-lateral axis. Craniotomies were prepared using a mounted drill (David Kopf Instruments, Model 1911) with careful removal of the bone flap and overlying dura using forceps and a fine needle tip, and were covered with sterile 0.9% saline before and during the injection to prevent desiccation. Viruses were front-filled into a pulled glass pipette (Drummond Scientific, #5-000-2005) filled with mineral oil (Millipore Sigma, M3516) and connected to a 5 µl Hamilton syringe (Hamilton #84850) via polyethylene tubing filled with mineral oil. Glass pipettes were pulled to obtain a tip size of approximately 40–60 µm on a pipette puller (Sutter Instrument Co., P-97). Viruses were infused into target regions at approximately 100 nl/min using a syringe pump (Harvard Apparatus, #883015), and pipettes were slowly withdrawn (<10 µm/s) at least 10 min after the end of the infusion. Following wound closure, mice were placed in a cage with a heating pad until their activity was recovered before returning to their home cage. Mice were given pre- and post-operative oral carprofen (MediGel CPF, 5 mg/kg/day) as an analgesic, and monitored daily for at least 4 days post-surgery.
 
-## Stereotaxic injection coordinates and volumes
+### Stereotaxic injection coordinates and volumes
 
 All coordinates are relative to Bregma along the anterior-posterior axis and medial-lateral axis, and relative to the pial surface along the dorsoventral axis. ‘BL’ denotes the distance between Bregma and Lambda (as defined in the Paxinos mouse brain atlas). Angles for DV coordinates are relative to the dorsoventral axis along the sagittal plane, with 0° being a straight vertical approach and negative values denoting a posterior-to-anterior approach. Dorsal raphe nucleus (DRN): AP = -(6.25 * BL/4.35) mm, ML = 0.00 mm, DV = −3.33 mm at −40°, 200–300 nl. Ventrolateral striatum (vlStr): AP = +0.40 mm, ML = ±2.45 mm, DV = −3.10 mm at 0°, 300 nl. Dorsal lateral geniculate nucleus (dLGN): AP = -(2.00 * BL/4.20) mm, ML = ±2.25 mm, DV = −3.00 mm at 0°, 150 nl. Globus pallidus, external (GPe): AP = +0.14 mm, ML = ±2.34 mm, DV = −3.90 mm at 0°, 200 nl. Lateral hypothalamic area (LHA): AP = −1.46 mm, ML = ±1.10 mm, DV = −5.10 mm at 0°, 150 nl. Habenula (Hb): AP = -(1.30 * BL/4.2) mm, ML = ±0.43 mm, DV = −2.80 mm at 0°, 50 nl. Nucleus accumbens core (NAcc): AP = +1.54 mm, ML = ±1.10 mm, DV = −4.00 mm at 0°, 300 nl. Primary motor cortex (M1), six sites: AP = {+2.10 mm, +1.60 mm, +1.10 mm}, ML = {±1.75 mm, ±1.60 mm,±1.60 mm}, DV = {[−1.20 mm, −0.60 mm], [−1.10 mm, −0.50 mm], [−1.00 mm, −0.40 mm]} at 0°, 150 nl per site. Medial prefrontal cortex (mPFC), four sites: AP = {+2.4 mm, +1.8 mm}, ML = ±0.40 mm, DV = {−1.65 mm, −1.25 mm} at 0°, 150 nl per site.
 
-## Single cell dissociation and RNA sequencing
+### Single cell dissociation and RNA sequencing
 
 8-to 10 week old C57BL/6J mice were pair-housed in a regular 12:12 light/dark cycle room prior to tissue collection. Mice were transcardially perfused with an ice-cold choline cutting solution containing neuronal activity blockers (110 mM choline chloride, 25 mM sodium bicarbonate, 12 mM D-glucose, 11.6 mM sodium L-ascorbate, 10 mM HEPES, 7.5 mM magnesium chloride, 3.1 mM sodium pyruvate, 2.5 mM potassium chloride, 1.25 mM sodium phosphate monobasic, 10 µM (R)-CPP, 1 µM tetrodotoxin, saturated with bubbling 95% oxygen/5% carbon dioxide, pH adjusted to 7.4 using sodium hydroxide). Brains were rapidly dissected out and sliced into 250 µm thick coronal sections on a vibratome (Leica Biosystems, VT1000) in a chilled cutting chamber filled with choline cutting solution. Coronal slices containing the DRN were then transferred to a chilled dissection dish containing a choline-based cutting solution for microdissection. Fiber tracts were used for guiding the microdissection but were excluded from the collected tissue chunk. Dissected tissue chunks were transferred to cold HBSS-based dissociation media (Thermo Fisher Scientific Cat. # 14170112, supplemented to final content concentrations: 138 mM sodium chloride, 11 mM D-glucose, 10 mM HEPES, 5.33 mM potassium chloride, 4.17 mM sodium bicarbonate, 2.12 mM magnesium chloride, 0.9 mM kynurenic acid, 0.441 mM potassium phosphate monobasic, 0.338 mM sodium phosphate monobasic, 10 µM (R)-CPP, 1 µM tetrodotoxin, saturated with bubbling 95% oxygen/5% carbon dioxide, pH adjusted to 7.35 using sodium hydroxide) supplemented with an additional inhibitor cocktail (10 µM triptolide, 5 µg/ml actinomycin D, 30 µg/ml anisomycin) and kept on ice until dissections were completed. Dissected tissue chunks for each sample were pooled into a single tube for the subsequent dissociation steps. Tissue chunks were first mixed with a digestion cocktail (dissociation media, supplemented to working concentrations: 20 U/ml papain, 1 mg/ml pronase, 0.05 mg/mL DNAse I, 10 µM triptolide, 5 µg/ml actinomycin D, 30 µg/ml anisomycin) and incubated at 34°C for 90 min with gentle rocking. The digestion was quenched by adding dissociation media supplemented with 0.2% BSA and 10 mg/ml ovomucoid inhibitor (Worthington Cat. # LK003128), and samples were kept chilled for the rest of the dissociation procedure. Digested tissue was collected by brief centrifugation (5 min, 300 g), re-suspended in dissociation media supplemented with 0.2% BSA, 1 mg/ml ovomucoid inhibitor, and 0.05 mg/mL DNAse I. Tissue chunks were then mechanically triturated using fine-tip plastic micropipette tips of progressively decreasing size. The triturated cell suspension was filtered in two stages using a 70 µm cell strainer (Miltenyi Biotec Cat # 130-098-462) and 40 µm pipette tip filter (Bel-Art Cat. # H136800040) and washed in two repeated centrifugation (5 min, 300 g) and re-suspension steps to remove debris before a final re-suspension in dissociation media containing 0.04% BSA and 15% OptiPrep (Sigma D1556). Cell density was calculated based on hemocytometer counts and adjusted to approximately 100,000 cells/ml. Single-cell encapsulation and RNA capture on the InDrop platform was performed at the Harvard Medical School ICCB Single Cell Core using v3 chemistry hydrogels based on previously described protocols (Zilionis et al., 2017). Suspensions were kept chilled until the cells were flowed into the microfluidic device. Libraries were prepared and indexed following the protocols referenced above, and sequencing-ready libraries were stored at −80°C. Libraries from different samples were pooled and sequenced on an Illumina NextSeq 500 (High Output v2 kits).
 
-## Sequencing data processing
+### Sequencing data processing
 
 NGS data were processed using a previously published pipeline in Python available at https://github.com/indrops/indrops (Klein et al., 2015). Briefly, reads were filtered by expected structure and sorted by the corresponding library index. Valid reads were then demultiplexed and sorted by cell barcodes. Cell barcodes containing fewer than 250 total reads were discarded, and remaining reads were aligned to a reference mouse transcriptome (Ensembl GRCm38 release 87) using Bowtie 1.2.2 (m = 200, n = 1, l = 15, e = 100). For alignment, the mouse transcriptome was modified with the addition of genes from the SAD B19 rabies viruses and transgenes (B19N, B19P, B19M, B19L, EGFP, tdTomato, AmCyan1). Aligned reads were then quantified as UMI-filtered mapped read (UMIFM) counts. UMIFM counts and quantification metrics for each cell were combined into a single file sorted by library and exported as a gunzipped TSV file.
 
-## Pre-Clustering filtering and normalization
+### Pre-Clustering filtering and normalization
 
 Analysis of the processed NGS data was performed in R (version 3.4.4) using the Seurat package (version 2.3.1) (Butler et al., 2018; Satija et al., 2015). A custom R script was used to combine the expression data and metadata from all libraries corresponding to a single batch, and cells with fewer than 500 UMIFM counts were removed. The expression data matrix (Genes x Cells) was filtered to retain genes with >5 UMIFM counts, and then loaded into a Seurat object along with the library metadata for downstream processing. The percentage of mitochondrial transcripts for each cell (percent.mito) was calculated and added as metadata to the Seurat object. Cells in the object were further filtered using the following parameters: Reads – min. 20000, max. Inf; nUMI – min. 500, max. 18000; nGene – min. 200, max. 6000; percent.mito – min. -Inf, max. 0.1. Low quality libraries identified as outliers on scatter plots of quality control metrics (e.g. unusually low gradient on the nGene vs. nUMI) were also removed from the dataset. Filtered Seurat objects were then log-normalized at 10,000 transcripts per cell. Effects of latent variables (nUMI, percent.mito, Sex, orig.ident) were estimated and regressed out using a GLM (ScaleData function, model.use = ‘linear’), and the scaled and centered residuals were used for dimensionality reduction and clustering.
 
-## Dimensionality reduction and batch effect correction
+### Dimensionality reduction and batch effect correction
 
 Canonical correlation analysis (CCA) was used for dimensionality reduction and mitigation of batch effects. We used the union of the top 2000 highly variable genes from each batch dataset (3341 genes) and used the RunCCA function in Seurat to calculate 50 canonical variates (CVs). After inspection of the CVs, the first 35 CVs were used for subspace alignment when merging datasets from different batches into a single Seurat object. Cells with expression profiles not well explained by CVs (var.ratio.pca <0.5) were removed from the dataset before clustering.
 
-## Cell clustering and cluster identification
+### Cell clustering and cluster identification
 
 Initial clustering was performed on the merged and CCA-aligned dataset using the first 35 CVs, and t-SNE was used only for data visualization. Clustering was run using the SNN-based FindClusters function using the SLM algorithm and 10 iterations. Clustering was performed at varying resolution values, and we chose a final value of 2 for the resolution parameter for this stage of clustering. Clusters were assigned preliminary identities based on expression of combinations of known marker genes for major cell classes and types. A list genes used for identifying major cell classes and types is provided in Supplementary file 1. Low quality cells were identified based on a combination of low gene/UMIFM counts and high levels of mitochondrial and nuclear transcripts (e.g. Malat1, Meg3, Kcnq1ot1) typically clustered together and were removed. Following assignment of preliminary identities, cells were divided into data subsets as separate Seurat objects (neurons, astrocytes, ependymal cells, vascular cells, immune cells, oligodendrocytes and polydendrocytes) for further subclustering. The expression matrix for each data subset was further filtered to include only genes expressed by the cells in the subset (minimum cell threshold of 0.5% of cells in the subset).
 
 Subclustering was performed iteratively on each data subset to resolve additional cell types and subtypes. Briefly, clustering was run at high resolution, and the resulting clusters were ordered in a cluster dendrogram built using the Ward2 method in hclust using cluster-averaged gene expression for calculating the Eucliean distance matrix. Putative doublets/multiplets were identified based on co-expression of known marker genes for different cell types (e.g. neuronal and glial markers, or endothelial cell and pericyte markers). Putative doublets tended to separate from other cells and cluster together, and these clusters were removed from the dataset. Cluster separation was evaluated using the AssessNodes function and inspection of differentially expressed genes at each node. Clusters with poor separation, based on high OOBE scores and differential expression of mostly housekeeping genes, were merged to avoid over-separation of the data. The dendrogram was reconstructed after merging or removal of clusters, and the process of inspecting and merging or removing clusters was repeated until all resulting clusters could be distinguished based on a set of differentially expressed genes that we could validate separately. For small clusters that were previously identified in preliminary analysis of the separate batches, such as the Met-expressing 5-HT neuron subtype, or expected clusters based on existing literature, such as the Slc17a8+;Fev- neurons, manual identification and clustering was performed if these cells were not separated by the clustering algorithm.
 
-## Differential expression tests
+### Differential expression tests
 
 Tests for differential gene expression were performed using MAST version 1.4.1 (Finak et al., 2015) through the FindMarkersNode function in Seurat (logfc.threshold = 0.25, min.pct = 0.1). P values were corrected using the Benjamini-Hochberg method and filtered a 5% false discovery rate (Q < 0.05).
 
-## Gene Ontology term enrichment tests
+### Gene Ontology term enrichment tests
 
 GO term enrichment tests were performed using the goseq package version 1.30.0 in R (Young et al., 2010). Genes differentially expressed between 5-HT neuron subtypes were used as the target list, and all genes expressed in the 5-HT neuron dataset were used for the background list. Enrichment scores were calculated using the Wallenius approximation method in goseq, and terms were filtered using Q values at a 5% false discovery rate (Benjamini-Hochberg correction).
 
-## Spatial correlation analysis
+### Spatial correlation analysis
 
 Spatial correlation analysis was performed in MATLAB (MathWorks, R2016b and R2018b). A spatial expression matrix for the differentially expressed (DE) genes was constructed using in situ hybridization images from the Allen Brain Atlas. Only DE genes with coronal imaging data were included in the matrix to achieve sufficient resolution along the dorsal-ventral and medial-lateral axes. For each gene, ISH images spanning the DRN were downsampled by a factor of 2 before registration and expression quantification using a custom MATLAB script. The midline of each slice was vertically aligned and centered, and images were and cropped to retain a region spanning approximately 1 mm across the midline containing the DRN. Cropped images were each assigned to a position along the anterior-posterior axis corresponding to a coronal section from the Allen Brain Atlas averaged coronal template (100 µm intervals). Expression was binarized by thresholding the image, and positive cells were detected using a Laplacian-of-Gaussian spot detection algorithm. Spatial expression patterns were obtained from two-dimensional histograms (bin size = 50 µm x 50 µm) of positive cells counts in each slice. Fine alignment of each 2D histogram along the dorsal-ventral axis was adjusted manually using Tph2 ISH images as the reference. Anatomical landmarks visible in the Nissl or background stain, such as the cerebral aqueduct and fiber tracts, were used for the fine adjustment. Aligned histograms were cropped to retain a square region (36 bins x 36 bins) containing the DRN. Cropped 2D histograms were averaged with the left-right reflection, and the ISH count data for each experiment (36 bins x 36 bins x 12 sections) was unrolled into a row vector. Row vectors for the same gene were averaged, ignoring NaN values from missing ISH data, to obtain a single row vector for each gene. Row vectors for each gene were concatenated to generate the spatial expression matrix. The spatial expression matrix (Genes x Bins) was further filtered in two stages: bins with no Tph2 expression were removed, and genes were filtered based on total expression and mean-normalized variance (Figure 5—figure supplement 1). Pearson correlation coefficients were calculated between the averaged gene expression of each 5-HT neuron subtype cluster from the scRNA-seq dataset and each spatial bin in the filtered spatial expression matrix.
 
-## Histology for anatomical tracing
+### Histology for anatomical tracing
 
 Mice were deeply anesthetized with isoflurane and transcardially perfused with 5–10 ml chilled 0.1 M PBS, followed by 10–15 ml chilled 4% paraformaldehyde in 0.1 M PBS. Brains were dissected out and post-fixed overnight at 4°C, followed by incubation in a storing/cryoprotectant solution of 30% sucrose and 0.05% sodium azide in 0.1 M PBS for at least 1–2 days to equilibrate. 50 µm coronal slices were prepared on a freezing microtome (Leica Biosystems, SM2010 R). Slices were either immunostained (see section on Immunohistochemistry), or counterstained using Neurotrace 435 (ThermoFisher Scientific N21479) at a concentration of 1:100 in 0.1 M PBS with 0.5% Triton X-100. Slices were mounted in VectaShield mounting media (Vector Labs, H-1000) and imaged on an Olympus VS120 slide scanning microscope. Confocal images were taken on an Olympus FV1000 or FV1200 confocal microscope for assessing co-localization.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 50 µm thick free-floating tissue sections were rinsed 3 × 5 min with 0.1 M PBS containing 0.5% Triton X-100 (PBST) and blocked in a PBST-based solution containing 6% normal goat serum for 1 hr at room temperature. The blocking solution was then removed, and slices were incubated overnight at 4°C in a PBST-based antibody carrier solution containing 3% normal goat serum and rabbit anti-TPH2 primary antibodies (Millipore, ABN60) diluted 1:1000. After incubation in the primary antibody carrier solution, slices were rinsed 4 × 5 min with PBST, and then incubated in carrier solution containing goat anti-rabbit Alexa Fluor 647 at 1:500 (ThermoFisher Scientific, A-21244) and Neurotrace 435 at 1:100 for 2 hr at room temperature. Slices were then rinsed 2 × 5 min in PBST and 2 × 5 min in PBS before mounting with VectaShield mounting media (Vector Labs, H-1000).
 
-## Fluorescent in situ Hybridization (FISH)
+### Fluorescent in situ Hybridization (FISH)
 
 Animals were deeply anesthetized with isoflurane before decapitation. Brains then were rapidly removed, frozen on dry ice, and embedded in tissue freezing media (Tissue-Tek O.C.T. compound). 20 µm coronal sections were prepared on a cryostat (Leica Biosystems, CM1950) and mounted onto SuperFrost Plus glass slides (VWR) at 100 µm intervals between slices in a set. Slices were rapidly refrozen once mounted, and stored at −80°C before staining. Multiplexed fluorescent in situ hybridization was performed using the ACDBio RNAscope V1 reagents and protocols. Briefly, slices were fixed in 4% paraformaldehyde at 4°C for 15 min and dehydrated through washing steps in ethanol at increasing concentrations (50%, 70%, 100%) before protease digestion (Protease III, 10 min at room temperature). Probes and amplification/detection reagents were applied to the tissue sections and incubated under conditions stated in the V1 detection protocol provided by ACDBio. Sections were counterstained using DAPI provided in the V1 detection reagent kits and mounted in ProLong Gold mounting media (ThermoFisher Scientific P36934). Single-plane tiled images covering the DRN were scanned using a confocal microscope (Leica SP8X, 1.40 NA 63X magnification oil immersion objective). Tile merging was performing in the Leica LAS X software, with a 10% tile overlap and statistical blending.
 
-## FISH image analysis
+### FISH image analysis
 
 Confocal images were first processed in Fiji. A custom macro was written to convert Leica image files (.lif format) into TIFF format for downstream analysis steps. Channels in the merged tile images were processed separately. For each channel, a median filter (one pixel radius) was applied before images were cropped and downsampled by a factor of 2 with bicubic interpolation. A rolling ball background subtraction (50 pixel radius) was then applied before images for each channel was saved as a separate 8-bit TIFF file. A pixel classifier run in Ilastik (version 1.2.2) was applied on the output TIFF files to generate probability maps of B19N-expressing cell bodies for automated segmentation of rabies-infected cells. Cell segmentation and RNAscope puncta quantification was performed using a custom pipeline in CellProfiler (version 3.1.5). Puncta counts were exported as TSV files for further analysis and data visualization using custom scripts written in R and MATLAB.

@@ -35,13 +35,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill of Medicine Chapel Hill United States
-2. https://ror.org/0130frc33 Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States
-3. https://ror.org/021skqj79 EpiCypher, Inc Durham United States
-4. https://ror.org/02pttbw34 Verna & Marrs McLean Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States
-5. https://ror.org/0130frc33 Curriculum in Genetics and Molecular Biology, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States
-6. https://ror.org/04p491231 Pennsylvania State University State College United States
-7. https://ror.org/040kfrw16 Department of Biochemistry and Molecular Biology, Upstate Medical University Syracuse United States
+1. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. EpiCypher, Inc Durham United States ([ROR:021skqj79](https://ror.org/021skqj79))
+4. Verna & Marrs McLean Department of Biochemistry and Molecular Biology, Baylor College of Medicine Houston United States ([ROR:02pttbw34](https://ror.org/02pttbw34))
+5. Curriculum in Genetics and Molecular Biology, University of North Carolina at Chapel Hill, School of Medicine Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+6. Pennsylvania State University State College United States ([ROR:04p491231](https://ror.org/04p491231))
+7. Department of Biochemistry and Molecular Biology, Upstate Medical University Syracuse United States ([ROR:040kfrw16](https://ror.org/040kfrw16))
 
 † Corresponding author
 
@@ -59,27 +59,127 @@ Considerable research effort has focused on dissecting the direct (and multivale
 
 ## Results
 
-## PHD finger readers show narrowed selectivity for histone tail PTMs on mononucleosomes versus peptides
+### PHD finger readers show narrowed selectivity for histone tail PTMs on mononucleosomes versus peptides
 
 How histone readers engage nucleosomes is an extensively researched area of chromatin biology. Most investigators characterize reader binding with PTM-defined histone peptides, although the domains often display a refined preference for similarly modified nucleosomes (Marunde et al., 2022b; Marunde et al., 2022a; Morgan et al., 2021; Morrison et al., 2018). To further assess this potential, we used the dCypher approach (Jain et al., 2020; Marunde et al., 2022b; Morgan et al., 2021; Weinberg et al., 2021) to measure the interactions of three PHD readers (from KDM7A, DIDO1, and MLL5: the queries) with PTM-defined peptides and nucleosomes (the potential targets). As might be expected (Jain et al., 2020), each GST-PHD fusion showed a preference for H3K4-methylated peptides and, particularly, for higher methyl states (i.e. KDM7A bound me2/me3, DIDO1 bound me1/me2/me3, and MLL1 bound me1/me2/me3; Figure 1A). In contrast, each GST-PHD reader was restricted to H3K4me3 over the lower methyl states on nucleosomes (Figure 1B) and displayed weaker relative binding (EC50rel: calculated as in Methods) to this PTM (Figure 1—figure supplement 1C–D). On further examination, we observed no impact of co-incident acetylation on H3K4me3 binding in the peptide context (Figure 1A: compare H3K4me3 to H3K4me3K9acK14acK18ac [hereafter H3K4me3triac]). In stark contrast, the binding of each GST-PHD reader to nucleosomal H3K4me3 was dramatically enhanced (~10–15 fold) by co-incident acetylation (i.e. H3K4me3triac; Figure 1B and Figure 1—figure supplement 1A–B). Additionally, there was no significant reader domain interaction with either nucleosome lacking H3K4 methylation or 147X601 DNA (nucleosomal DNA) alone (Figure 1—figure supplement 1B). A similar observation has also been made for the BPTF PHD domain (Marunde et al., 2022a; Morrison et al., 2018), suggesting the potential for a general mechanism. This led us to consider the possibility that histone tail lysine acetylation (Kac) might function beyond the recruitment of readers, and perhaps also impact H3K4 writers.
 
-## H3 N-terminal acetylation enhances MLL1C-mediated methylation of nucleosomal H3K4
+![Figure 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig1-v2.jpg)
+
+**Figure 1.:** dCypher assay alpha counts for the interaction of GST-PHD queries (9.5 nM KDM7A (Uniprot #Q6ZMT4; residues 1–100); 2.4 nM DIDO1 (Uniprot #Q9BTC0; residues 250–340); 18 nM MLL5 (Uniprot #Q8IZD2; residues 100–180)) with PTM-defined peptides (A) vs. nucleosomes (B) (the potential targets). All error bars represent the range of two replicates. Key: H3.1 ∆2, H3.1 ∆32, and H4 ∆15 are nucleosomes assembled with histones lacking the indicated N-terminal residues of H3.1 or H4. All data were plotted using GraphPad Prism 9.0. Of note, each reader query showed minimal interaction-free DNA (147 bp or 199 bp: Figure 1—figure supplement 1B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Binding curves to determine the optimal concentration for screening reader queries (GST-KDM7A PHD, GST-DIDO1 PHD, and GST-MLL5 PHD) to indicate post-translational modification (PTM)-defined nucleosome targets. (B) Library binding screen with indicated GST-PHD queries and PTM-defined nucleosome or free DNA (147 bp (Widom 601 sequence) or 199 bp (Widom 601 sequence flanked by 21 bp linkers)) targets. Error bars represent the range of two replicates. Key: H3.1N ∆2, H3.1N ∆32, and H4N ∆15 are nucleosomes assembled with histones lacking the indicated N-terminal residues of H3.1 or H4. (C) Relative EC50 (EC50Rel) binding values (in nM) (calculated as in Methods) between GST-PHD reader proteins and select histone peptides; 95% confidence intervals are represented parenthetically. (D) EC50Rel binding values (in nM) between GST-PHD proteins and select nucleosomes; 95% confidence intervals are represented parenthetically. ND = not determined.
+
+### H3 N-terminal acetylation enhances MLL1C-mediated methylation of nucleosomal H3K4
 
 To investigate if acetylation might enable a more catalytically accessible H3 N-terminus, we performed enzymatic assays with the MLL1 core complex (MLL1C; responsible for H3K4me3) (Rao and Dou, 2015; Sha et al., 2020) and defined nucleosome substrates ± accompanying acetylation (H3K9acK14acK18ac; hereafter H3triac) (see Methods). In an endpoint assay at constant enzyme and substrate concentrations (and [methyl-3H]-SAM donor), we observed a significant increase in net methylation when the H3 tail was also acetylated (Figure 2A). As expected, methylation by MLL1C sequentially decreased towards H3K4 mono-, di-, and tri-methylated nucleosomal substrates, being undetectable on H3K4me3 (which also confirmed MLL1C targeting of this specific residue). Despite this, methyl group incorporation to each H3K4 methyl state substrate was consistently enhanced by accompanying H3triac (Figure 2A). Of note, we also tested the viability of methyllysine analogs (MLAs) (Simon and Shokat, 2012) ± H3triac as MLL1C substrates and observed no activity, indicating their unsuitability for such studies (Figure 2—figure supplement 1D–E).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig2-v2.jpg)
+
+**Figure 2.:** (A) Endpoint methylation assays of H3K4me0 [H3 • H3]-me1-me2-me3 nucleosomes and their cognate H3K9ac14ac18ac (H3triac) partners (all 100 nM) with MLL1 Complex (MLL1C; 4 nM). Reactions performed in triplicate with error bars as SEM. p-values were determined using a two-tailed t-test: ****=<0.0001, ***=0.0008, **=0.0038. (B) MLL1C (4 nM) methylation activity on H3K4me0-me1-me2-me3 nucleosomes and their cognate H3triac partners (all substrates: 1.5-fold serial dilution, 0–0.4 μM). Reactions performed in triplicate with error bars as SEM (see also Figure 2—figure supplement 1). (C) MLL1C does not differentially associate with post-translational modification (PTM)-defined nucleosome substrates under study conditions. dCypher binding curves of hexahistidine (6HIS)-tagged MLL1C (concentrations noted) with PTM-defined nucleosomes (20 nM). Error bars represent the range of two replicates. (D) MLL1C-mediated methylation is enhanced on cis but not trans-acetylated nucleosomal H3 tails. Endpoint methylation assays of MLL1C (4 nM) with homotypic [H3 • H3] vs. heterotypic (e.g., [H3 • H3tetraac]; see Methods) nucleosome substrates (all 100 nM). Reactions performed in triplicate with error bars as SEM. p-values were determined using a two-tailed t-test: ****=<0.0001. Key: H3triac = H3K9acK14acK18ac. H3tetraac = H3K4acK9acK14acK18ac.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) MLL1C activity on 2 μg chicken oligonucleosomes (2 μg) was 2D-titration tested by enzyme [0, 4, and 40 nM] and salt [0, 50, and 300 mM NaCl] in the presence of [methyl-3H]-SAM donor. Methylation (in fmol) is graphed as a function of [MLL1C]. N=2 and error bars are SD. (B) Replicate SDS-PAGE Coomassie-stained gels for methylation data from panel (A). Resolved subunits of MLL1C and nucleosomes are indicated. (C) Steady-state kinetic data for MLL1C activity with nucleosome substrates as shown in Figure 2B but fit to the Michaelis-Menten equation. (D) Endpoint methylation activity of MLL1C (4 nM) with MLA (methyl-lysine analog) nucleosome substrates (100 nM) in triplicate; error bars are SD. (E) Replicate SDS-PAGE Coomassie-stained gels for methylation data from panel (D); Lanes marked with ‘*’ and ‘+’ in the Replicate three gel are switched. (F) Replicate SDS-PAGE Coomassie-stained gels for methylation data from Figure 2B and (C). 0.5 μg BSA was loaded as a lane marker to each quenched reaction (except for H3K4me3triac). (G) SDS-PAGE Coomassie-stained gel for methylation data from Figure 2C. (H) EC50rel binding values (in nM) between MLL1C and select nucleosomes; 95% confidence intervals (CI) are represented parenthetically. Note: gel images in grayscale and blue are both Coomassie-stained gels. All data were plotted using GraphPad Prism 9.0.
+
 We next measured the steady-state methylation kinetics of MLL1C towards nucleosomes with each H3K4 methyl state ± H3triac, and again observed that acetylation increased methyltransferase activity (Figure 2B). Using an extra sum-of-squares F-test, methylation for the H3triac nucleosomes was indicative of positive cooperativity because of better fit (p=0.0216) to the Hill equation (Weiss, 1997) (compare Figure 2B and Figure 2—figure supplement 1C; Table 1 and Supplementary file 1). Because of the low level of enzymatic activity towards the unacetylated nucleosomes we could not make a statistically significant comparison between the Hill and Michaelis-Menten fits. There have been limited studies of MLL1C activity on nucleosomes (Park et al., 2019; Patel et al., 2011; Xue et al., 2019), so an overlooked potential allostery is understandable given the many possible interactions between this enzyme complex and substrate (Lee et al., 2021; Park et al., 2019).
+
+**Table 1.**
+ Steady-state Hill kinetic parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>K0.5 (μM)</th>
+      <th>kcat (min–1)</th>
+      <th>h (Hill coefficient)</th>
+      <th>R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H3 • H3</td>
+      <td>0.13 ± 0.06</td>
+      <td>0.0018 ± 0.0004</td>
+      <td>1.213 ± 0.3430</td>
+      <td>0.8810</td>
+    </tr>
+    <tr>
+      <td>H3 K9ac/14ac/18ac</td>
+      <td>0.12 ± 0.02</td>
+      <td>0.0304 ± 0.0036</td>
+      <td>1.741 ± 0.3528</td>
+      <td>0.9228</td>
+    </tr>
+    <tr>
+      <td>H3K4me1</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>0.3186</td>
+    </tr>
+    <tr>
+      <td>H3K4me1 K9ac/14ac/18ac</td>
+      <td>0.14 ± 0.008</td>
+      <td>0.0092 ± 0.0004</td>
+      <td>2.032 ± 0.1333</td>
+      <td>0.9920</td>
+    </tr>
+    <tr>
+      <td>H3K4me2</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>–0.1746</td>
+    </tr>
+    <tr>
+      <td>H3K4me2 K9ac/14ac/18ac</td>
+      <td>0.042 ± 0.005</td>
+      <td>0.0005 ± 0.00004</td>
+      <td>5.349 ± 2.682</td>
+      <td>0.8155</td>
+    </tr>
+    <tr>
+      <td>H3K4me3</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+    </tr>
+    <tr>
+      <td>H3K4me3 K9ac/14ac/18ac</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+      <td>n.d.*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*= methylation signal was indistinguishable from the background: kinetic parameters could not be determined._
 
 On examining enzymatic parameters in detail, we noted that although overall kcat was ~17 fold greater for homotypic H3triac (over unmodified, H3 • H3) nucleosomes, the K0.5 values (substrate concentration at half-maximal velocity/half-saturation for an allosterically regulated enzyme) were indistinguishable (Table 1). Therefore, although MLL1C catalytic efficiency toward H3triac nucleosomes was enhanced by an increase in kcat, this catalytic efficiency was not driven by K0.5, which suggested no increase in relative binding affinity. To further examine this, we returned to the dCypher approach to examine potential binding between the MLL1C query and a selection of nucleosome targets: H3 • H3, H3N∆32 (lacking the first 32 residues of H3), Tailless (trypsin-digested nucleosomes to remove N- and C-terminal histone tails), and H3triac. At 50 mM NaCl, we observed no compelling difference in MLL1C binding to any of these targets (Figure 2C and Figure 2—figure supplement 1E). This is agreed with structural studies where binding between MLL1C and the nucleosome occurs primarily through interactions with DNA and, to a lesser degree, the H4 N-terminal tail (Lee et al., 2021; Park et al., 2019). Thus, the increased H3K4 methylation observed when the H3 N-terminal tail was acetylated is not due to enhanced MLL1C-nucleosome binding. Instead, H3 acetylation likely released the histone tail from the nucleosome, thereby increasing the apparent H3K4 concentration for MLL1C and enhancing methylation.
 
 To definitively explore if the MLL1C methylation of H3K4 in H3triac nucleosomes was responding to cis and/or trans tail acetylation, we synthesized heterotypic substrates with only one H3K4 residue available in the cis or trans H3ac context (i.e. [H3triac • H3K4me3] vs. [H3 • H3tetraac]). Using these substrates with MLL1C, we observed >threefold enhanced methylation (over [H3 • H3] or [H3 • H3K4me3]) when H3 tail acetylation was cis but no significant impact when trans (Figure 2D). This would support a model where H3 acetylation on the same tail releases H3K4 for methylation by MLL1C and appear to exclude a significant contribution from trans-tail mechanisms.
 
-## Cellular level of H3K4 methylation is coupled to H3 N-terminal tail hyperacetylation
+### Cellular level of H3K4 methylation is coupled to H3 N-terminal tail hyperacetylation
 
 The above data suggested a molecular model for how the H3 N-terminal tail, via cis acetylation, becomes available for H3K4 reader binding or enzymatic modification in vitro. To determine if such acetylation could function as an accessibility switch in vivo, we developed a novel targeted middle-down mass spectrometry method to provide a single molecule quantitative measure of histone tail modification. We applied this method to acid-extracted histones from asynchronous MCF-7 breast cancer cells to measure the relationship between H3K4 methylation and tail acetylation on the same H3 proteoforms (Holt et al., 2021; Smith et al., 2013). As expected (Garcia et al., 2007; Peach et al., 2012; Young et al., 2009), the absolute amounts of H3K4me3 and higher Kac states (3ac, 4ac, and 5ac) across adjacent lysine residues were extremely low (Figure 3—figure supplement 1A). Nonetheless, H3K4me3 (<1% of total H3) was strictly associated with molecules that contained multiple acetylations (also <1% of total H3; Figure 3A). Given this relationship, we next addressed the hypothesis that increased lysine acetylation may release the H3 tail for more effective H3K4 methylation (i.e. acetylation precedes methylation). We treated MCF-7 cells with the KDAC inhibitor sodium butyrate and collected samples at multiple time points to measure the levels of H3K4 methylation with cis acetylation. H3 poly-acetylation rapidly increased upon butyrate treatment (Figure 3—figure supplement 1B and Supplementary file 2), as expected (Holt et al., 2019; Young et al., 2009). We observed an increase in all H3K4 methyl states relative to the unmodified state concomitant with increasing states of H3 acetylation (Figure 3B–C and Supplementary file 2), while H3K4me3 levels most dramatically increased in tandem with the 5ac H3 state (Figure 3D). An example of tandem mass spectra at each acetyl degree, showing the C4+1 ion series from which K4 stoichiometry is measured, is shown in Figure 3C. These findings support a direct link, where acetylation releases nucleosome-bound H3 tails to localized H3K4 methyltransferases for subsequent methylation (Figure 4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig3-v2.jpg)
+
+**Figure 3.:** (A) Occupancy of H3K4 methyl states (me0-1-2-3) within each H3 acetyl state (0ac to 5ac) in asynchronous MCF-7 cells. (B) Occupancy of H3K4 methyl states within each H3 acetyl state after butyrate treatment (60 min). Asterisks represent <i>p-values <0.05. (C) Representative tandem mass spectra of the targeted C4+1 fragment ion series (474 m/z unmodified; 488 m/z me1; 502 m/z me1; 516 m/z me3). Each spectrum is an average of MS2 spectra of the indicated H3 acetyl states after 60 min of butyrate treatment. K4 occupancy stoichiometry is directly correlated with H3 acetylation state and the targeted MS approach provides excellent signal-to-noise for confident quantitation. (D) Time course of H3K4me3 accumulation with respect to each H3 acetyl state after butyrate treatment. See Methods for further information on data acquisition and analysis. All data were collected in biological triplicate with error bars representing SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A - B) Each acetyl state of acid-extracted H3 from 0ac to 5ac is represented as a percent of total H3 before/after 60 min treatment of asynchronous MCF-7 cells with 5 mM sodium butyrate. (C) Occupancy of H3K4 methyl states (me0-1-2-3) within each H3 acetyl state (0ac to 5ac) in asynchronous HEK-293 cells. (D) Occupancy of H3K4 methyl states within each H3 acetyl state after butyrate treatment (120 min) in asynchronous HEK-293 cells. (E) Percentage of (K9ac, K14ac, K18ac) proteoforms within 3ac to 5ac acetyl states of H3.1 ± butyrate treatment in HEK-293 cells. N=3 and error bars are SEM for all data.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/82596/elife-82596-fig4-v2.jpg)
 
-**Figure 4.:** cis-tail H3 acetylation.Nucleosomal DNA is represented in black; each histone is labeled, with the core histone N-terminal tails colored to distinguish. MLL1 complex (MLL1C) is in purple.
+**Figure 4.:** Nucleosomal DNA is represented in black; each histone is labeled, with the core histone N-terminal tails colored to distinguish. MLL1 complex (MLL1C) is in purple.
 
 To explore whether other H3 lysine methyl marks are similarly affected by H3 acetylation, we examined the co-occurrence of H3K9me1-me2-me3 with increasing H3 acetyl states ± butyrate treatment in asynchronous HEK-293 cells (Figure 3—figure supplement 1C–D; Supplementary file 3). In contrast to findings with H3K4me3, H3K9me3 did not accumulate with hyperacetylated H3 proteoforms (i.e. 3ac, 4ac, and 5ac). Recent in vitro studies showed tested H3K9 methyltransferases have increased activity to partially acetylated substrates (Trush et al., 2022), so our MS data would suggest this is not a common in vivo mechanism: explanations could include that K9 was generally acetylated (and thus occupied) during histone tail release (all penta-acetylated (5ac) H3 proteoforms consisted of acetylation at H3K9, K14, and K18 at minimum (Figure 3, Figure 3—figure supplement 1E and Supplementary file 4)); or that H3K9 methyltransferases, in contrast to H3K4 methyltransferases, were not generally localized to regions that will accumulate butyrate-induced hyperacetylation.
 
@@ -99,11 +199,11 @@ Finally, we note that multiple studies have identified H3K4 methylation and H3 a
 
 ## Methods
 
-## Expression and purification of GST-tagged PHD reader proteins
+### Expression and purification of GST-tagged PHD reader proteins
 
 Expression constructs for GST-tagged PHD domains from KDM7A (Uniprot #Q6ZMT4; residues 1–100), DIDO1 (Uniprot #Q9BTC0; residues 250–340), and MLL5 (Uniprot #Q8IZD2; residues 100–180) were synthesized in a pGEX-4T-1 vector (BioMatik Corporation) and provided by Dr. Mark T. Bedford (UT MD Anderson Cancer Center). Recombinant proteins were expressed and purified as described (Jain et al., 2020). See Supplementary file 5 for details about the constructs.
 
-## Expression, purification, and assembly of the MLL1 core complex (MLL1C)
+### Expression, purification, and assembly of the MLL1 core complex (MLL1C)
 
 Methods for the expression, purification, and assembly of the MLL1 core complex (MLL1C: MLL1 SET domain, WDR5, RbBP5, Ash2L, and DPY30) were adapted from published protocols (Usher et al., 2021). A polycistronic recombinant expression construct containing the MLL1 SET domain (Uniprot Q03164; residues 3745–3969), WDR5 (Uniprot P61964; residues 2–334), RbBP5 (Uniprot Q15291; residues 1–538), and Ash2L (Uniprot Q9UBL3-3; residues 1–534) in pST44 vector (aka. MWRA construct) was a kind gift from Dr. Song Tan (Tan et al., 2005). WDR5 was cloned with an N-terminal hexahistidine (6HIS) tag and TEV protease site to enable purification by immobilized metal affinity chromatography (IMAC), and tag removal by enzymatic cleavage. See Supplementary file 5 for details about the constructs. Rosetta pLysS E. coli cells were transformed with the plasmid and grown on LB plates with 50 μg/mL carbenicillin. Single colonies were used to inoculate 50 mL starter cultures of Terrific Broth (TB) containing 50 μg/mL carbenicillin and grown at 37 °C for 16 hr. This culture was transferred to 1 L of TB+ carbenicillin and grown to OD600 ~0.6 (37°C, 200 RPM, ~4 hr). Recombinant protein expression was induced with 1 mM Isopropyl β-D-1-thiogalactopyranoside (IPTG, Sigma; 16 °C, 200 RPM, 20 hr). Cells were harvested by centrifugation (5000 RPM, 4 °C) and flash frozen in liquid nitrogen.
 
@@ -111,11 +211,11 @@ Frozen cell pellets were resuspended in 50 mL of lysis buffer (50 mM Tris-HCl pH
 
 HisDPY30 was expressed, purified, and cleaved to remove the 6HIS-tag as described (Patel et al., 2009; Usher et al., 2021). A twofold molar excess of DPY30 was added to the MWRA sub-complex and incubated on ice for 1 hr. Following incubation, the resulting MLL1C was isolated by gel filtration as described for MWRA, with fractions containing the stoichiometric complex identified by SDS-PAGE, pooled, concentrated to ~10 µM, and flash frozen. For dCypher experiments with MLL1C, the 6HIS-tag was retained on DPY30.
 
-## Peptides
+### Peptides
 
 All peptides were synthesized at the UNC peptide synthesis core facility (RRID: SCR_017837), using Fmoc solid phase synthesis, on an automated peptide synthesizer (PTI Symphony or CEM Liberty Blue). The peptides were purified by preparative RP-HPLC and characterized by MALDI-TOF MS and analytical HPLC.
 
-## PTM-defined nucleosomes
+### PTM-defined nucleosomes
 
 All PTM-defined nucleosomes (Supplementary file 5; homotypic unless stated otherwise) were from the dNuc or versaNuc portfolios (EpiCypher). PTMs were confirmed by mass-spectrometry and immunoblotting (if an antibody was available) (Goswami et al., 2021; Marunde et al., 2022b; Marunde et al., 2022a; Weinberg et al., 2019).
 
@@ -123,7 +223,7 @@ Nucleosomes with methyllysine analogs (MLA) at H3K4 were created by the versaNuc
 
 Heterotypic nucleosomes were assembled from PTM-defined histone octamers containing N-terminally bridged H3 dimers, and the bridge was removed in a scarless manner by approaches to be described elsewhere (Manuscript in Preparation). Heterotypic identity was confirmed at all synthesis steps by analyses additional to those used for homotypics, including Nuc-MS on representative final nucleosomes (Schachner et al., 2021). Heterotypic nomenclature describes each PTM-defined histone in the nucleosome, such that [H3K4me3K9acK14acK18ac • H3] vs. [H3K4me3 • H3K9acK14acK18ac] contain the same total PTM complement but distributed cis or trans on the H3 N-termini.
 
-## dCypher assays
+### dCypher assays
 
 dCypher binding assays with PTM-defined nucleosomes were performed under standard conditions that titrate query (e.g. epitope-tagged reader domain(s)) to a fixed concentration of target (e.g. biotinylated PTM-defined nucleosome) with the appropriate Alpha Donor and Acceptor beads (Perkin Elmer) (Jain et al., 2020; Marunde et al., 2022b; Weinberg et al., 2019). Binding curves [query: target] were generated using a non-linear 4PL curve fit in Prism 9.0 (GraphPad). For each query, the relative EC50 (EC50rel) and hillslope values were derived from the best binding target. EC50rel is the half-maximal signal for the specified target. Where necessary, we excluded query concentration values determined to be beyond a query’s hook point (signal inhibition due to query exceeding bead saturation). The EC80rel was selected as the optimal probing concentration for discovery screens because of the robust signal-to-background and to provide the best opportunity to bind targets without saturating the primary target signal. To compute EC80rel values, we used the formula ECFrel = (F/(100 – F))1/H × EC50rel; F=80; and H=hillslope.
 
@@ -131,11 +231,11 @@ Briefly, 5 μL of GST-tagged reader domain was incubated with 5 μL of 10 nM bio
 
 MLL1C binding assays (Figure 2C) were performed as above except using Nickel-chelate acceptor beads (10 μg/mL; Perkin Elmer AL108M), streptavidin donor beads (20 μg/mL; Perkin Elmer) and modified assay buffer (20 mM Tris pH 7.5 + 50 mM NaCl, 0.01% BSA, 0.01% NP-40, and 1 mM DTT); [NaCl] was optimized via a titration assay and 50 mM chosen for subsequent analyses.
 
-## In vitro methylation assays
+### In vitro methylation assays
 
 Methylation assays (Shinsky et al., 2015) were performed at 15 °C for 3 hr using purified MLL1C enzyme and nucleosome substrate in a reaction volume of 20 µL [in 50 mM HEPES, pH 8.0, 1 mM DTT, 1 µM ZnCl2; 10 µM of 9:1 S-adenosyl-L-methionine (SAM) p-toluenesulfonate salt (Sigma) to S-adenosyl-L-[methyl-3H]-methionine ([methyl-3H]-SAM) (PerkinElmer)]. Concentrations of MLL1C and NaCl were optimized from 2D-titration methylation assays at [0, 4, and 40 nM MLL1C] and [0, 50, and 300 mM NaCl] with 2 µg of the chicken oligo-nucleosome substrate (Figure 2—figure supplement 1A–B; Morris et al., 2007). It is notable that, across a range of concentrations, MLL1C stability decreases as temperature increases and methyltransferase activity has been reported to be enhanced in sub-physiological NaCl concentrations (Namitz et al., 2019; Shinsky et al., 2015). For endpoint methylation assays, 4 nM MLL1C and 100 nM nucleosome substrates were tested as above. For steady-state kinetics, 4 nM MLL1C was incubated with a nucleosome substrate titration (0, 23.4, 35.1, 52.7, 79, 119, 178, 267, and 400 nM) and reactions quenched with 5 µL of 5 X SDS loading dye. For steady-state kinetic assays, 0.5 µg bovine serum albumin was added to each reaction after quenching to act as a loading guide. To analyze methylation, quenched reactions were resolved by 15% Tris-Glycine SDS-PAGE. Gels were stained with Coomassie dye and bands containing mononucleosomes were excised (with serum albumin as a supporting lane marker) and incubated in a solution of 50% Solvable (PerkinElmer) and 50% water at 50 °C for 3 hr. Mixture and gel slices were then combined with 10 mL of Hionic-Fluor scintillation fluid (PerkinElmer), dark-adapted overnight, and radioactivity measured on a Liquid Scintillation Counter (Beckman Coulter).
 
-## Middle-down mass spectrometry of MCF-7 and HEK-293 cells ± KDAC inhibition
+### Middle-down mass spectrometry of MCF-7 and HEK-293 cells ± KDAC inhibition
 
 MCF-7 breast cancer cells (ATCC HTB-22) were grown in MEM (Gibco) supplemented with 10% fetal bovine serum (VWR), 100 I.U. penicillin, 100 µg/mL streptomycin (Corning), 0.01 mg/mL human recombinant insulin (Gibco), and 5 µg/mL plasmocin (Invivogen) at 37 °C and 5% CO2. HEK-293 (ATCC CRL-1573) was grown in DMEM (Gibco) supplemented with 10% fetal bovine serum (Corning), 100 I.U. penicillin, and 100 µg/mL streptomycin (Gibco) at 37 °C and 5% CO2. Both cell lines were authenticated via STR profiling and confirmed to be Mycoplasma negative.
 

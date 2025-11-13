@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.14294.001 The resection of DNA strand with a 5´ end at double-strand breaks is an essential step in recombinational DNA repair. RecJ, a member of DHH family proteins, is the only 5´ nuclease involved in the RecF recombination pathway. Here, we report the crystal structures of Deinococcus radiodurans RecJ in complex with deoxythymidine monophosphate (dTMP), ssDNA, the C-terminal region of single-stranded DNA-binding protein (SSB-Ct) and a mechanistic insight into the RecF pathway. A terminal 5´-phosphate-binding pocket above the active site determines the 5´-3´ polarity of the deoxy-exonuclease of RecJ; a helical gateway at the entrance to the active site admits ssDNA only; and the continuous stacking interactions between protein and nine nucleotides ensure the processive end resection. The active site of RecJ in the N-terminal domain contains two divalent cations that coordinate the nucleophilic water. The ssDNA makes a 180° turn at the scissile phosphate. The C-terminal domain of RecJ binds the SSB-Ct, which explains how RecJ and SSB work together to efficiently process broken DNA ends for homologous recombination. DOI: http://dx.doi.org/10.7554/eLife.14294.001
+The resection of DNA strand with a 5´ end at double-strand breaks is an essential step in recombinational DNA repair. RecJ, a member of DHH family proteins, is the only 5´ nuclease involved in the RecF recombination pathway. Here, we report the crystal structures of Deinococcus radiodurans RecJ in complex with deoxythymidine monophosphate (dTMP), ssDNA, the C-terminal region of single-stranded DNA-binding protein (SSB-Ct) and a mechanistic insight into the RecF pathway. A terminal 5´-phosphate-binding pocket above the active site determines the 5´-3´ polarity of the deoxy-exonuclease of RecJ; a helical gateway at the entrance to the active site admits ssDNA only; and the continuous stacking interactions between protein and nine nucleotides ensure the processive end resection. The active site of RecJ in the N-terminal domain contains two divalent cations that coordinate the nucleophilic water. The ssDNA makes a 180° turn at the scissile phosphate. The C-terminal domain of RecJ binds the SSB-Ct, which explains how RecJ and SSB work together to efficiently process broken DNA ends for homologous recombination.
 
 ## Introduction
 
@@ -34,43 +34,254 @@ Here, we report three crystal structures of D. radiodurans RecJ (drRecJ) in comp
 
 ## Results
 
-## Protein characterization and crystallization
+### Protein characterization and crystallization
 
-DHH family proteins can be divided into three subfamilies based on their sequence similarity and domain arrangement (
+DHH family proteins can be divided into three subfamilies based on their sequence similarity and domain arrangement (Figure 1A). These subfamilies share a conserved N-terminal DHH domain that consists of consecutive DHH residues, which give rise to the name this family of proteins. The subfamily 1 group includes RecJ and nanoRNase (RecJ-like protein), a nuclease that degrades short RNA, and has a distinct DHHA1 domain following the DHH domain (Srivastav et al., 2014; Wakamatsu et al., 2010). In contrast, the DHHA2 domain is present in the subfamily 2 group (e.g., exopolyphosphatase PPX1 and Drosophila Prune protein) (Ugochukwu et al., 2007). The subfamily 3 group is defined by the RecJ eukaryotic orthologue CDC45, which has large insertions between the DHH domain and the C-lobe (Krastanova et al., 2012). Notably, bacterial RecJ nucleases have an additional OB fold domain next to the nuclease core (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig1-v2.jpg)
 
-**Figure 1.:** (A) Schematic of the domain arrangements of three DHH subfamilies. (B) Denaturing PAGE gel showing that drRecJ degrades different substrates, as shown at the top of the panel. 3′-Fluorescent labeled DNA or RNA (100 nM) were incubated with drRecJ (0, 5 and 20 nM) in the presence of 100 nM Mn2+ (see methods).DOI: http://dx.doi.org/10.7554/eLife.14294.003
+**Figure 1.:** (A) Schematic of the domain arrangements of three DHH subfamilies. (B) Denaturing PAGE gel showing that drRecJ degrades different substrates, as shown at the top of the panel. 3′-Fluorescent labeled DNA or RNA (100 nM) were incubated with drRecJ (0, 5 and 20 nM) in the presence of 100 nM Mn2+ (see methods).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Names of species are dra, Deinococcus radiodurans; ttj, Thermus thermophilus; eco, Escherichia Coli; Homo, Homo sapiens; Drosophila, Drosophila melanogaster. Structural elements of RecJ are shown in distinct colors. Predicted secondary structure of human Cdc45 is shown at bottom (grey). Conserved motifs (I-VII) are labeled. Conserved key residues are highlighted in distinct colors.DOI: http://dx.doi.org/10.7554/eLife.14294.004
+**Figure 1—figure supplement 1.:** Names of species are dra, Deinococcus radiodurans; ttj, Thermus thermophilus; eco, Escherichia Coli; Homo, Homo sapiens; Drosophila, Drosophila melanogaster. Structural elements of RecJ are shown in distinct colors. Predicted secondary structure of human Cdc45 is shown at bottom (grey). Conserved motifs (I-VII) are labeled. Conserved key residues are highlighted in distinct colors.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** 3′-fluorescent labeled 20 nt ssDNA (KY08, 100 nM) was incubated with drRecJ (10 nM) in the presence of Mn2+ and Mg2+. For the metal competition assays, drRecJ was pre-incubated with 0.1 mM Mn2+ before addition of Mg2+.DOI: http://dx.doi.org/10.7554/eLife.14294.005
+**Figure 1—figure supplement 2.:** 3′-fluorescent labeled 20 nt ssDNA (KY08, 100 nM) was incubated with drRecJ (10 nM) in the presence of Mn2+ and Mg2+. For the metal competition assays, drRecJ was pre-incubated with 0.1 mM Mn2+ before addition of Mg2+.
 
 drRecJ is conserved within bacteria, which shares 42% and 32% amino acid identity with ttRecJ and ecRecJ, respectively (Figure 1—figure supplement 1). The sequence alignment revealed that drRecJ contains all the seven signature motifs of the RecJ family nucleases, which belongs to the DHH (motifs I-V) domain and the DHHA1 domain (motifs VI and VII) (Figure 1—figure supplement 1). Compared with ecRecJ, drRecJ has an additional C-terminal domain that is conserved in the Deinococcus-Thermus phylum (Figure 1A and Figure 1—figure supplement 1). To determine the metal preference, various concentrations of Mn2+ and Mg2+were applied to reactions (Figure 1—figure supplement 2). In contrast to the degradation of DNA by ecRecJ in a reaction that requires Mg2+, both Mn2+ and Mg2+ can activate the nuclease activity of drRecJ. However, the drRecJ activity in a reaction buffer containing 10 µM Mn2+ is substantially higher than that contains 10 mM Mg2+ (Figure 1—figure supplement 2). Overwhelming Mg2+ (10 mM) does not affect the nuclease activity when drRecJ is pre-incubated with Mn2+ (0.1 mM), which suggests that Mn2+ ions are employed for drRecJ catalysis. To test the substrate specificity, drRecJ was incubated with different types of synthetic DNA fluorescence-labeled at the 3′ end in the presence of Mn2+ (Figure 1B). drRecJ is able to processively digest ssDNA and DNA with a 5´-ssDNA overhang (14 nt overhang) to a single nucleotide (Figure 1B). In contrast, drRecJ cannot resect ssRNA or DNA with a blunt end or 3´-ssDNA overhang (6 nt overhang), which indicates that a free 5´-ssDNA is essential for drRecJ nuclease activity.
 
-To characterize the RecJ recognition and incision of the DNA substrate, we crystallized three types of drRecJ complexes: wild-type drRecJ complexed with dTMP (complex I), a catalytic inactive mutant (H160A) RecJ complexed with DNA bearing a 5´-ssDNA overhang (complex II), and the ternary complex of RecJ-ssDNA and the SSB-Ct (complex III). The crystals were grown in the presence of Mn
+To characterize the RecJ recognition and incision of the DNA substrate, we crystallized three types of drRecJ complexes: wild-type drRecJ complexed with dTMP (complex I), a catalytic inactive mutant (H160A) RecJ complexed with DNA bearing a 5´-ssDNA overhang (complex II), and the ternary complex of RecJ-ssDNA and the SSB-Ct (complex III). The crystals were grown in the presence of Mn2+ ions and diffracted X-rays to 2.3–2.7 Å resolution. The structures are validated by the appearance of a well-formed active site with two catalytic metal ions and DNA or dTMP at the active site (Figure 2A,B). The crystal data, together with the data collection and refinement statistics, are summarized in Table 1.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig2-v2.jpg)
 
-**Figure 2.:** (A) Overall structure of drRecJ complex viewed from the side. Protein domains of drRecJ are labeled and shown in distinct colors. The DNA and SSB-Ct are colored orange and yellow, respectively. Two Mn2+ in the active site are shown as magenta spheres. Two regions that are disordered in the ttRecJ structures (PDB code: 2ZXP) are highlighted in cyan. Three helices that form a helical gateway are also labeled. (B) Overall structure of the drRecJ complex viewed from the top of the DNA. The downstream nucleotides stack well to mimic the double-stranded DNA. (C) Denaturing PAGE gel showing the nuclease activities of different truncations of drRecJ. 3′-Fluorescence-labeled 20 nt ssDNA (100 nM) was incubated with various concentrations of different truncations of drRecJ proteins (see methods).DOI: http://dx.doi.org/10.7554/eLife.14294.006
+**Figure 2.:** (A) Overall structure of drRecJ complex viewed from the side. Protein domains of drRecJ are labeled and shown in distinct colors. The DNA and SSB-Ct are colored orange and yellow, respectively. Two Mn2+ in the active site are shown as magenta spheres. Two regions that are disordered in the ttRecJ structures (PDB code: 2ZXP) are highlighted in cyan. Three helices that form a helical gateway are also labeled. (B) Overall structure of the drRecJ complex viewed from the top of the DNA. The downstream nucleotides stack well to mimic the double-stranded DNA. (C) Denaturing PAGE gel showing the nuclease activities of different truncations of drRecJ. 3′-Fluorescence-labeled 20 nt ssDNA (100 nM) was incubated with various concentrations of different truncations of drRecJ proteins (see methods).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Comparison of complex II and ttRecJ structures. The ttRecJ (PDB code: 2ZXP) is colored white. Protein domains of drRecJ are shown in distinct colors and labeled. The DNA and ordered β3-α6 loop are colored orange and cyan, respectively. Loops and helices showing noticeable deviations are labeled. The relative domain movements are shown by the arrowheads. (B) Overall structure of complex II viewed from the top of the DNA entrance. Protein domains of drRecJ are shown in distinct colors and labeled. The DNA and SSB-Ct are colored orange and yellow, respectively. Two Mn2+ in the active site are shown as magenta spheres. Three helices (α13, α15 and α16) that form a helical gateway are also labeled.DOI: http://dx.doi.org/10.7554/eLife.14294.007
+**Figure 2—figure supplement 1.:** (A) Comparison of complex II and ttRecJ structures. The ttRecJ (PDB code: 2ZXP) is colored white. Protein domains of drRecJ are shown in distinct colors and labeled. The DNA and ordered β3-α6 loop are colored orange and cyan, respectively. Loops and helices showing noticeable deviations are labeled. The relative domain movements are shown by the arrowheads. (B) Overall structure of complex II viewed from the top of the DNA entrance. Protein domains of drRecJ are shown in distinct colors and labeled. The DNA and SSB-Ct are colored orange and yellow, respectively. Two Mn2+ in the active site are shown as magenta spheres. Three helices (α13, α15 and α16) that form a helical gateway are also labeled.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Structural comparison among the nuclease fold from drRecJ, NrnA (PDB code: 4LS9), PpxI (PDB code: 2QB6) and hFen1 (PDB code: 3Q8K). The nuclease fold of each enzyme is shown in rainbow colors from the blue N- to the red C-terminus. The residues involved in catalysis are shown as sticks. The topologies of β-strands are also labeled. (B) Structural comparison between the DHHA1 domain (drRecJ, NrnA) and the DHHA2 domain (PpxI, Pyrophosphatase (PDB code: 1WPM)). The topologies of β-strands and two inserted α-helices (A and B) are labeled.DOI: http://dx.doi.org/10.7554/eLife.14294.008
+**Figure 2—figure supplement 2.:** (A) Structural comparison among the nuclease fold from drRecJ, NrnA (PDB code: 4LS9), PpxI (PDB code: 2QB6) and hFen1 (PDB code: 3Q8K). The nuclease fold of each enzyme is shown in rainbow colors from the blue N- to the red C-terminus. The residues involved in catalysis are shown as sticks. The topologies of β-strands are also labeled. (B) Structural comparison between the DHHA1 domain (drRecJ, NrnA) and the DHHA2 domain (PpxI, Pyrophosphatase (PDB code: 1WPM)). The topologies of β-strands and two inserted α-helices (A and B) are labeled.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** The active site of subfamily 1 group is formed between DHH domain and β3 to β5 of DHHA1 domain (A). While the β1 of DHHA2 domain and DHH domain form the active site of subfamily 2 group proteins (B). DNA and phosphate group are colored orange and DHH motif is shown as red stick. The helical gateway in DHHA1 domain and C-terminal α-helix in DHHA2 are also labeled.DOI: http://dx.doi.org/10.7554/eLife.14294.009
+**Figure 2—figure supplement 3.:** The active site of subfamily 1 group is formed between DHH domain and β3 to β5 of DHHA1 domain (A). While the β1 of DHHA2 domain and DHH domain form the active site of subfamily 2 group proteins (B). DNA and phosphate group are colored orange and DHH motif is shown as red stick. The helical gateway in DHHA1 domain and C-terminal α-helix in DHHA2 are also labeled.
 
-## Architecture of the RecJ nuclease
+**Table 1.**
+ Statistics from crystallographic analysis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RecJ-dTMP</th>
+      <th>RecJd-DNA</th>
+      <th>RecJd-DNA-SSBct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Complex I</td>
+      <td>Complex II</td>
+      <td>Complex III</td>
+    </tr>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 3221</td>
+      <td>P 3221</td>
+      <td>P 3221</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions a, b, c (Å)</td>
+      <td>106.53</td>
+      <td>105.83</td>
+      <td>102.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>106.53</td>
+      <td>105.82</td>
+      <td>102.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>161.90</td>
+      <td>165.40</td>
+      <td>166.12</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9792</td>
+      <td>0.9792</td>
+      <td>0.9792</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>30–2.7 (2.77–2.70)</td>
+      <td>30–2.6 (2.66–2.60)</td>
+      <td>30–2.3 (2.35–2.30)</td>
+    </tr>
+    <tr>
+      <td>R-meas</td>
+      <td>5.5 (64.1)</td>
+      <td>6.5 (79.1)</td>
+      <td>7.4 (63.7)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>27.0 (4.0)</td>
+      <td>22.6 (3.0)</td>
+      <td>17.0 (2.9)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>98.9 (99.5)</td>
+      <td>99.6 (99.4)</td>
+      <td>99.4 (94.1)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>8.9</td>
+      <td>8.3</td>
+      <td>7.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>30–2.7</td>
+      <td>30–2.6</td>
+      <td>30–2.3</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>29747</td>
+      <td>33594</td>
+      <td>45296</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>20.61/25.20</td>
+      <td>18.47/22.84</td>
+      <td>22.56/23.89</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein/DNA</td>
+      <td>5262/-</td>
+      <td>5373/286</td>
+      <td>5342/182</td>
+    </tr>
+    <tr>
+      <td>Ligand/Ion</td>
+      <td>21/2</td>
+      <td>35/2</td>
+      <td>55/2</td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>12</td>
+      <td>-</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>B factors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein/DNA</td>
+      <td>79.8/-</td>
+      <td>70.4/103.9</td>
+      <td>58.2/93.7</td>
+    </tr>
+    <tr>
+      <td>Ligand/Ion</td>
+      <td>66.7/76.6</td>
+      <td>99.8/68.2</td>
+      <td>74.5/61.9</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>62.7</td>
+      <td>-</td>
+      <td>48.9</td>
+    </tr>
+    <tr>
+      <td>Rmsd</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.012</td>
+      <td>0.005</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Bond Angle (°)</td>
+      <td>1.085</td>
+      <td>0.849</td>
+      <td>1.464</td>
+    </tr>
+    <tr>
+      <td>Ramachandran statitics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>98.0 0</td>
+      <td>99.1</td>
+      <td>98.9</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.0</td>
+      <td>0.9</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses refer to the highest resolution shell.R factor = Σ||F(obs)- F(calc)||/Σ|F(obs)|.Rfree = R factor calculated using 5.0% of the reflection data randomly chosen and omitted from the start of refinement.RecJd denotes catalytic inactive drRecJ (H160A)_
+
+### Architecture of the RecJ nuclease
 
 drRecJ contains four domains: an N-terminal DHH domain (residues 49–295), a DHHA1 domain (residues 328–424), an OB fold domain (residues 1–48 and residues 425–532), and an extended C-terminal domain (residues 533–705; Figure 2A–B and Figure 1—figure supplement 1). The DHH domain and DHHA1 domain are interconnected by a long linker α-helix (α15; residues 296–327) to form the nuclease core, as previously observed for the structure of ttRecJ (Yamagata et al., 2002). The overall structure and conformation of the drRecJ complexes can be virtually superimposed on the ttRecJ (PDB code: 2ZXP) with the rmsd value of 1.937–2.307 Å over 476 Cα atoms (Figure 2—figure supplement 1A). Although the DHHA1 domain and OB fold domain can be adequately superimposed, the DHH domain and linker α-helix further shift towards the DHHA1 domain, resulting in a much narrower cleft that accommodates the substrate DNA (Figure 2—figure supplement 1A). The C-terminal domain shows large movement relative to the nuclease core, which is most likely due to the crystal lattice contacts. Three loops, which are located at the OB fold domain, also show noticeable deviations due to interactions with the substrate DNA binding (Figure 2—figure supplement 1A). Above the active site, the β3-α6 loop, which is disordered in the ttRecJ structures, caps the DNA (Figure 2A). The C-terminal-most α-helix (α-CT) also becomes ordered in all the drRecJ structures (Figure 2A).
 
@@ -78,73 +289,162 @@ Recognition of the ssDNA (complex II and III) by the drRecJ is mediated by nucle
 
 As the representative member of the DHH family proteins, the DHH domain of drRecJ consists of α/β repeats, in which five central parallel β-strands (β2 to β6 in drRecJ) are surrounded by α-helices (Figure 2—figure supplement 2A). The order of the parallel β-strands is 21345, which is shared by all the DHH family proteins (e.g., NrnA in Figure 2—figure supplement 2A) (Uemura et al., 2013; Ugochukwu et al., 2007; Yamagata et al., 2002). The signature DHH residues (motif III) are located at the end of the fourth strand. The residues at the end of the first and third β-strands and the DHH motif coordinate two catalytic metal ions to form the active site (Figure 2—figure supplement 2A). The arrangement of the catalytic residues appears to be employed by many other nucleases (Figure 2—figure supplement 2A). For example, despite the different topology of the β-strands (32145), the catalytic residues of human flap endonuclease 1 (hFen1) are also located between the end of three central parallel β-strands (Tsutakawa et al., 2011). As noted above, subfamily 1 and subfamily 2 DHH family proteins have distinct domains next to the DHH domain, which are denoted DHHA1 and DHHA2, respectively (Figure 1A). Both the DHHA1 domain and the DHHA2 domain are structurally similar with a mixed five-stranded central β-sheet surrounded by α-helices (Figure 2—figure supplement 2B). The topologies of the β-strands, however, are different from DHHA1 (12354, ↑↑↓↑↓) and DHHA2 (12345, ↑↓↓↑↓). In addition, the β1-β2 and β3-β4 strands in the DHHA1 domain have two inserted α-helices (A and B in RecJ and NrnA, respectively, in Figure 2—figure supplement 2B); in the DHHA2 domain, the α-helices are located between the β2-β3 and β4-β5 strands (bottom two panels in Figure 2—figure supplement 2B). In drRecJ, the first (A) α-helix (α16) of DHHA1 is critical to the composition of the helical gateway (Figure 2A), which may explain the varying substrate specificity between these two subfamilies.
 
-## Helical gateway and stacking interactions between DNA and RecJ nuclease
+### Helical gateway and stacking interactions between DNA and RecJ nuclease
 
-drRecJ primarily contacts DNA with helix and loop elements (
+drRecJ primarily contacts DNA with helix and loop elements (Figure 3 and Figure 3—figure supplement 1A). In both complex II and complex III structures, a positively charged groove between the DHH domain and the DHHA1 domain was observed to bind 5 nt 5´-upstream ssDNA in the same manner (Figure 3A and Figure 3—figure supplement 1B). Multiple loops located at the interface between the DHH domain and the DHHA1 domain bind the first two nucleotides (Figure 3—figure supplement 1A). In contrast, the helical gateway, which is composed of three α-helices, primarily binds the +3 to +5 nucleotides (Figure 3C,D). Ala substitutions of key residues in the helical gateway (Arg280 in α13; Arg313/Arg314 in α15, and Lys353 in α16) reduce the DNA-binding and nuclease activity with multi-stops at 5–7 nt (Figure 3E and Figure 3—figure supplement 2), which suggests that the helical gateway is essential for DNA binding and translocation. The interactions between the nuclease core and DNA phosphate groups are primarily formed by a number of Arg, His, and Asn residues (Figure 3A,D). Notably, four side chain residues form stacking interactions to the 5´-upstream DNA bases (Figure 3D). Tyr114 and Tyr80 (motif I) interact with the +1 base at the active site. The substitution of deoxyribose sugar with ribose sugar clashes with the Tyr114 residue, which is consistent with the notion that drRecJ nuclease only acts on DNA (Figure 1B). Val224 (motif IV) and Phe269 (motif V) insert between the +2/+3 base and +4/+5 base. Ala substitutions of these two residues also impair the DNA-binding, nuclease activity and processivity of drRecJ (Figure 3E and Figure 3—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of the numbered DNA substrate used for complex II crystallization. Interactions between nucleotides and DHH domain, DHHA1 domain and OB fold domain are colored pink, blue and red, respectively. Hydrogen bonds are defined as within 3.2 Å and van der Waals contacts within 4.2 Å (dashed lines). Solid lines indicate residues that stack with DNA bases. (B) drRecJ surface and 2Fo−Fc electron density of DNA contoured at 1σ. The C7-G12 base pair is labeled. (C) The helical gateway is labeled and shown in cyan. Key residues interacting with DNA are labeled and shown as sticks. Nucleotides are labeled as in (A). (D) Interactions between drRecJ and DNA in complex II structure. Protein side chains involved in the protein-DNA interactions are shown as sticks, and the key residues that form stacking interactions are highlighted in yellow. Nucleotides are labeled as in (A). C7 and G12 (orange) form Watson-Crick base pair, as indicated by the dark dashed line. (E) Denaturing PAGE gel showing the reduced nuclease activity and processivity of mutant drRecJ proteins (alanine substitutions of key residues involved in DNA binding). 3′-Fluorescence-labeled 46 nt ssDNA (100 nM) was incubated with drRecJ proteins (0, 5 and 20 nM) in the presence of 100 nM Mn2+ (see methods).DOI: http://dx.doi.org/10.7554/eLife.14294.011
+**Figure 3.:** (A) Schematic of the numbered DNA substrate used for complex II crystallization. Interactions between nucleotides and DHH domain, DHHA1 domain and OB fold domain are colored pink, blue and red, respectively. Hydrogen bonds are defined as within 3.2 Å and van der Waals contacts within 4.2 Å (dashed lines). Solid lines indicate residues that stack with DNA bases. (B) drRecJ surface and 2Fo−Fc electron density of DNA contoured at 1σ. The C7-G12 base pair is labeled. (C) The helical gateway is labeled and shown in cyan. Key residues interacting with DNA are labeled and shown as sticks. Nucleotides are labeled as in (A). (D) Interactions between drRecJ and DNA in complex II structure. Protein side chains involved in the protein-DNA interactions are shown as sticks, and the key residues that form stacking interactions are highlighted in yellow. Nucleotides are labeled as in (A). C7 and G12 (orange) form Watson-Crick base pair, as indicated by the dark dashed line. (E) Denaturing PAGE gel showing the reduced nuclease activity and processivity of mutant drRecJ proteins (alanine substitutions of key residues involved in DNA binding). 3′-Fluorescence-labeled 46 nt ssDNA (100 nM) was incubated with drRecJ proteins (0, 5 and 20 nM) in the presence of 100 nM Mn2+ (see methods).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Key structural elements in complex II. Structural elements of DNA binding and metal ions are indicated and colored according to the scheme in Figure 2A. Loops involved in nucleotide binding are also indicated. (B) The distribution of the electrostatic surface of drRecJ. Blue and red represent the positive and negative charge potential at the + and −10 kTe−1 scale, respectively. Electropositive patch were observed as DNA and SSB-Ct binding sites. (C) Denaturing PAGE gel showing that mutations of key residues involved in nuclease core-DNA interactions impaired the nuclease activity, processivity and the digestion of DNA with 5´-ssDNA overhang (stops at ss-dsDNA junction). For the reaction, 3′-fluorescent labeled DNA containing 5′-ssDNA overhang (KY04, 100 nM) were incubated with wild-type or mutant drRecJ proteins (10 and 20 nM) in the presence of 100 nM Mn2+.DOI: http://dx.doi.org/10.7554/eLife.14294.012
+**Figure 3—figure supplement 1.:** (A) Key structural elements in complex II. Structural elements of DNA binding and metal ions are indicated and colored according to the scheme in Figure 2A. Loops involved in nucleotide binding are also indicated. (B) The distribution of the electrostatic surface of drRecJ. Blue and red represent the positive and negative charge potential at the + and −10 kTe−1 scale, respectively. Electropositive patch were observed as DNA and SSB-Ct binding sites. (C) Denaturing PAGE gel showing that mutations of key residues involved in nuclease core-DNA interactions impaired the nuclease activity, processivity and the digestion of DNA with 5´-ssDNA overhang (stops at ss-dsDNA junction). For the reaction, 3′-fluorescent labeled DNA containing 5′-ssDNA overhang (KY04, 100 nM) were incubated with wild-type or mutant drRecJ proteins (10 and 20 nM) in the presence of 100 nM Mn2+.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Figure 3E.(A) Electrophoretic mobility shift assays were performed with 100 nM 3′-fluorescent labeled 20 nt poly (dA) and different concentrations of RecJ (31.5, 62.5, 125, 250, 500, 1000 and 2000 nM). (B) A plot of quantified relative band intensities of the RecJ-DNA complex bands from (A). Data are represented as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.14294.013
+**Figure 3—figure supplement 2.:** (A) Electrophoretic mobility shift assays were performed with 100 nM 3′-fluorescent labeled 20 nt poly (dA) and different concentrations of RecJ (31.5, 62.5, 125, 250, 500, 1000 and 2000 nM). (B) A plot of quantified relative band intensities of the RecJ-DNA complex bands from (A). Data are represented as mean ± SEM.
 
-The OB fold domain of drRecJ at the side of the DNA entrance interacts with three downstream nucleotides (+8 to +10;
+The OB fold domain of drRecJ at the side of the DNA entrance interacts with three downstream nucleotides (+8 to +10; Figure 3A,D). This domain comprises an N-terminal region and a typical OB fold located next to the DHHA1 domain (Figure 2A). Five β-strands (β13 to β17) in the OB fold are orthogonally located to form a mixed β-barrel (Figure 4A), which has a Greek topology (12354) that is identical to the topology of other proteins (Figure 4—figure supplement 1) (Bernstein et al., 2004; Bochkareva et al., 2002; Leiros et al., 2005; Raghunathan et al., 2000). Compared with the canonical OB fold involved in ssDNA binding, the OB fold of drRecJ exhibits certain discrepancies. The L2 loop (β14-β15 loop) is short and the top of the β-barrel is capped by an additional α helix (Figure 4A and Figure 4—figure supplement 1). Conversely, the bottom α helix that connects the L3 loop (β15-β16 loop) is absent in drRecJ (Figure 4A and Figure 4—figure supplement 1). Interestingly, a similar structural features were observed in the previously solved drRecO structure (Leiros et al., 2005) (Figure 4—figure supplement 1E), suggesting the possible coevolution of the RecF pathway. Surprisingly, no direct interaction between the side chain residues and the DNA phosphate group was observed (Figure 3A,D). Two conserved aromatic residues, Tyr496 and Trp517 from the L3 and the L4 loop (β16-β17 loop), with residues (Met494, Arg475 and Val477) between the end of the first three β-strands form the downstream DNA-binding surface, which interacts with the nucleotide bases (Figure 4A,B). Ala substitutions of these residues reduce the nuclease activity of drRecJ on both ssDNA and DNA with 5´-ssDNA overhangs (Figure 4C). Notably, Y496A mutant protein exhibits more severely impaired nuclease activity on DNA bearing 5´-ssDNA overhang compared with ssDNA (Figure 4C), suggesting that the OB fold is critical for the drRecJ resection of DNA with 5´-ssDNA overhang.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig4-v2.jpg)
 
-**Figure 4.:** (A) The OB fold domain is shown in rainbow-colored diagrams. Residues involved in DNA binding are labeled and shown as sticks. (B) A comparison of DNA in the complex II (DNA with 5´-ssDNA overhang; orange) with complex III (ssDNA; white). Two conserved aromatic residues Tyr496 and Trp517 are shown as sticks (yellow). The black arrowhead indicates the position of stacking interaction between Tyr496 and the guanine base. (C) Quantification and plot of ssDNA and DNA with 5´-ssDNA overhang, which are processed by wild-type and mutant drRecJ proteins (alanine substitutions of key residues in the OB fold domain), using the same DNA substrate and reaction conditions as in Figure 1B. Data are represented as mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.14294.014
+**Figure 4.:** (A) The OB fold domain is shown in rainbow-colored diagrams. Residues involved in DNA binding are labeled and shown as sticks. (B) A comparison of DNA in the complex II (DNA with 5´-ssDNA overhang; orange) with complex III (ssDNA; white). Two conserved aromatic residues Tyr496 and Trp517 are shown as sticks (yellow). The black arrowhead indicates the position of stacking interaction between Tyr496 and the guanine base. (C) Quantification and plot of ssDNA and DNA with 5´-ssDNA overhang, which are processed by wild-type and mutant drRecJ proteins (alanine substitutions of key residues in the OB fold domain), using the same DNA substrate and reaction conditions as in Figure 1B. Data are represented as mean ± SEM.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** E. coli SSB (ecSSB), D. radiodurans SSB subunits (drSSB_NTD and drSSB_CTD), D. radiodurans RecO (drRecO) and human replication protein A subunits (RPA14, RPA32 and RPA70).Their PDB accession codes are shown in parentheses and references can be found in the main text. The mixed five β-strands are labeled and shown in distinct colors. Four loops are labeled as L1-L4. Conserved aromatic residues in loop3 and loop4 are shown as sticks.DOI: http://dx.doi.org/10.7554/eLife.14294.015
+**Figure 4—figure supplement 1.:** Their PDB accession codes are shown in parentheses and references can be found in the main text. The mixed five β-strands are labeled and shown in distinct colors. Four loops are labeled as L1-L4. Conserved aromatic residues in loop3 and loop4 are shown as sticks.
 
-Despite the disorder of the last four nucleotides, the G12, G13 and C14 in complex II structure stack well, which mimic the double stranded DNA (Figure 2B and Figure 3D). Unexpectedly, while drRecJ continuously interacts with the ssDNA (complex III structure, Figure 4B), the C7 base in the 5´-ssDNA overhang of complex II is flipped out into the solvent (Figure 3D and Figure 4B). The flipped out cytosine forms the Watson-Crick base pair with G12, which causes severe bending at approximately 100° at the ss-dsDNA junction (Figure 2A, Figure 3D and Figure 4B). This base flipping is most likely attributed to the stacking interaction between Tyr496 and the purine base (G8 in complex II and G7 in complex III; Figure 4B). Poly(dA) and poly(dT) oligomers were synthesized to confirm the interaction between Tyr496 and purine base. Indeed, wild-type drRecJ exhibits approximate 2-fold increase in the catalytic efficiency (kcat/Km) for the poly(dT) substrate compared to the poly(dA) substrate (Table 2). When Tyr496 is replaced by Ala, the mutant drRecJ has a reduced Km and kcat but is no longer sensitive to the substrate sequence context, confirming the preferred stacking interaction between Tyr496 and purine base.10.7554/eLife.14294.016Table 2.Kinetic parameters of wild-type and mutant drRecJ proteins.DOI: http://dx.doi.org/10.7554/eLife.14294.016Protein-substrateKm (nM)kcat (min-1)kcat/Km (µM-1 min-1)WT-KY09 (poly(dT))74.9 ± 7.61.61 ± 0.0321.5WT-KY08 (poly(dA))100.3 ± 5.51.15 ± 0.0211.5Y496A -KY09 (poly(dT))102.2 ± 10.90.32 ± 0.013.1Y496A -KY08 (poly(dA))109.1 ± 8.40.27 ± 0.012.5WT-KY0390.3 ± 4.51.55 ± 0.0117.1Y80A-KY03223.1 ± 12.20.25 ± 0.021.1Y114A-KY03349.4 ± 23.80.77 ± 0.052.2R109A-KY03158.3 ± 19.90.25 ± 0.021.6S371A-KY03104.4 ± 8.80.78 ± 0.037.5R373A-KY03349.6 ± 26.20.61 ± 0.031.7R393A-KY03105.8 ± 6.91.51 ± 0.0214.2H397A-KY03321.3 ± 22.00.77 ± 0.032.4
+Despite the disorder of the last four nucleotides, the G12, G13 and C14 in complex II structure stack well, which mimic the double stranded DNA (Figure 2B and Figure 3D). Unexpectedly, while drRecJ continuously interacts with the ssDNA (complex III structure, Figure 4B), the C7 base in the 5´-ssDNA overhang of complex II is flipped out into the solvent (Figure 3D and Figure 4B). The flipped out cytosine forms the Watson-Crick base pair with G12, which causes severe bending at approximately 100° at the ss-dsDNA junction (Figure 2A, Figure 3D and Figure 4B). This base flipping is most likely attributed to the stacking interaction between Tyr496 and the purine base (G8 in complex II and G7 in complex III; Figure 4B). Poly(dA) and poly(dT) oligomers were synthesized to confirm the interaction between Tyr496 and purine base. Indeed, wild-type drRecJ exhibits approximate 2-fold increase in the catalytic efficiency (kcat/Km) for the poly(dT) substrate compared to the poly(dA) substrate (Table 2). When Tyr496 is replaced by Ala, the mutant drRecJ has a reduced Km and kcat but is no longer sensitive to the substrate sequence context, confirming the preferred stacking interaction between Tyr496 and purine base.
 
-## Nucleotide binding site and the catalytic mechanism
+**Table 2.**
+ Kinetic parameters of wild-type and mutant drRecJ proteins.
 
-In complex I (drRecJ-dTMP) structure, the dTMP is located at the interface between the DHH domain and the DHHA1 domain (
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein-substrate</th>
+      <th>Km (nM)</th>
+      <th>kcat (min-1)</th>
+      <th>kcat/Km (µM-1 min-1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT-KY09 (poly(dT))</td>
+      <td>74.9 ± 7.6</td>
+      <td>1.61 ± 0.03</td>
+      <td>21.5</td>
+    </tr>
+    <tr>
+      <td>WT-KY08 (poly(dA))</td>
+      <td>100.3 ± 5.5</td>
+      <td>1.15 ± 0.02</td>
+      <td>11.5</td>
+    </tr>
+    <tr>
+      <td>Y496A -KY09 (poly(dT))</td>
+      <td>102.2 ± 10.9</td>
+      <td>0.32 ± 0.01</td>
+      <td>3.1</td>
+    </tr>
+    <tr>
+      <td>Y496A -KY08 (poly(dA))</td>
+      <td>109.1 ± 8.4</td>
+      <td>0.27 ± 0.01</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>WT-KY03</td>
+      <td>90.3 ± 4.5</td>
+      <td>1.55 ± 0.01</td>
+      <td>17.1</td>
+    </tr>
+    <tr>
+      <td>Y80A-KY03</td>
+      <td>223.1 ± 12.2</td>
+      <td>0.25 ± 0.02</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>Y114A-KY03</td>
+      <td>349.4 ± 23.8</td>
+      <td>0.77 ± 0.05</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>R109A-KY03</td>
+      <td>158.3 ± 19.9</td>
+      <td>0.25 ± 0.02</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>S371A-KY03</td>
+      <td>104.4 ± 8.8</td>
+      <td>0.78 ± 0.03</td>
+      <td>7.5</td>
+    </tr>
+    <tr>
+      <td>R373A-KY03</td>
+      <td>349.6 ± 26.2</td>
+      <td>0.61 ± 0.03</td>
+      <td>1.7</td>
+    </tr>
+    <tr>
+      <td>R393A-KY03</td>
+      <td>105.8 ± 6.9</td>
+      <td>1.51 ± 0.02</td>
+      <td>14.2</td>
+    </tr>
+    <tr>
+      <td>H397A-KY03</td>
+      <td>321.3 ± 22.0</td>
+      <td>0.77 ± 0.03</td>
+      <td>2.4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nucleotide binding site and the catalytic mechanism
+
+In complex I (drRecJ-dTMP) structure, the dTMP is located at the interface between the DHH domain and the DHHA1 domain (Figure 5A). The thymine base and the deoxyribose are coordinated by Tyr80, Tyr114 and two β-strands (β10 and β11) from the DHHA1 domain (Figure 5A,B). The phosphate group of the dTMP is held in place by Arg109, Arg280 (motif V), Ser371 and Arg373 (motif VI; Figure 5B). This mononucleotide-binding pocket is situated immediately above the active site, which is consistent with the translocation of the DNA by one nucleotide required for the exonuclease activity to proceed. Mutations of the binding pocket dramatically impair the enzymatic activity (Figure 5C and Table 2). The catalytic center of the complex I consists of two metal ions and two bridging ligands, a water molecule and the side chain of Asp135 (motif II; Figure 5B). These two metal ions are bound by five aspartate residues and one histidine: one metal ion (A) is coordinated by Asp83 (motif I), Asp135, Asp223 (motif IV) and His159 (motif III), whereas Asp79, Asp81 (motif I) and Asp135 are the ligands to the other metal ion (B; Figure 5C). Alanine substitutions of these metal-binding residues caused an almost complete inactivation of drRecJ (Figure 5—figure supplement 1), which is consistent with the results of equivalent mutations in ecRecJ (Sutera et al., 1999). In addition, two conserved positively charged residues (His397 and Arg393) from motif VII are situated at the entrance and exit to the active site (Figure 5A,B). Alanine substitution of Arg393 shows a modest effect on drRecJ catalytic efficiency.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig5-v2.jpg)
 
-**Figure 5.:** (A) dTMP binding pocket between the DHH domain and DHHA1 domain. dTMP is shown as stick (orange). Two conserved residues His397 and Arg393 at the entrance and exit to the active site are labeled and shown as sticks. (B) Close-up of the active site of drRecJ-dTMP (complex I). Two Mn2+ ions (A and B; magenta) are coordinated by a water molecule (red sphere) and conserved Asp and His residues (magenta dashed lines). Asp158 forms a hydrogen bond with His160, as indicated by the pink dashed line. The phosphate of the dTMP is held by Arg109, Arg280, Ser371 and Arg373 (blue dashed lines). (C) Catalytic efficiency of wild-type and mutant drRecJ as a bar graph showing the relative severity of the mutations. The Michaelis-Menten kinetics data are from Table 2. Data are represented as mean ± SEM. (D) Close-up of the active of site of complex III. The scissile phosphate centered on two catalytic Mn2+ is highlighted in cyan. The red arrowhead indicates the position of P-O bond breakage. Interaction between His397 and the oxygen atom of the scissile phosphate group is indicated by blue dashed line. (E) A comparison of the active sites in the complex I (white) with complex III (same color as in panel D). The nucleophilic water molecule observed in complex III occupies the position close to the His160 in drRecJ-dTMP structure (complex I). The red arrowhead indicates the position of P-O bond breakage and the black arrowhead indicates the direction of nucleophilic attack.DOI: http://dx.doi.org/10.7554/eLife.14294.017
+**Figure 5.:** (A) dTMP binding pocket between the DHH domain and DHHA1 domain. dTMP is shown as stick (orange). Two conserved residues His397 and Arg393 at the entrance and exit to the active site are labeled and shown as sticks. (B) Close-up of the active site of drRecJ-dTMP (complex I). Two Mn2+ ions (A and B; magenta) are coordinated by a water molecule (red sphere) and conserved Asp and His residues (magenta dashed lines). Asp158 forms a hydrogen bond with His160, as indicated by the pink dashed line. The phosphate of the dTMP is held by Arg109, Arg280, Ser371 and Arg373 (blue dashed lines). (C) Catalytic efficiency of wild-type and mutant drRecJ as a bar graph showing the relative severity of the mutations. The Michaelis-Menten kinetics data are from Table 2. Data are represented as mean ± SEM. (D) Close-up of the active of site of complex III. The scissile phosphate centered on two catalytic Mn2+ is highlighted in cyan. The red arrowhead indicates the position of P-O bond breakage. Interaction between His397 and the oxygen atom of the scissile phosphate group is indicated by blue dashed line. (E) A comparison of the active sites in the complex I (white) with complex III (same color as in panel D). The nucleophilic water molecule observed in complex III occupies the position close to the His160 in drRecJ-dTMP structure (complex I). The red arrowhead indicates the position of P-O bond breakage and the black arrowhead indicates the direction of nucleophilic attack.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** KY08 was incubated with drRecJ proteins (0, 5 and 20 nM) in the presence of 100 nM Mn2+.DOI: http://dx.doi.org/10.7554/eLife.14294.018
+**Figure 5—figure supplement 1.:** KY08 was incubated with drRecJ proteins (0, 5 and 20 nM) in the presence of 100 nM Mn2+.
 
 The active site of the drRecJ-DNA can be virtually superimposed well with that of the drRecJ-dTMP (Figure 5D,E). The DNA scissile phosphate in drRecJ-DNA is centered on two Mn2+ ions and the A site metal ion seems to be in a position on the nucleophile side (Figure 5D). The deoxyribonucleioside in complex I occupies almost the same place as the +1 nucleotide observed in drRecJ-DNA (Figure 5E). Despite of the slightly movements, the coordination of the two catalytic metal ions is almost identical, except for an additional coordination between the A site metal ion and a water molecule (Figure 5D,E). This water molecule is located directly below the scissile phosphate at a distance of 3.3 Å and is a probable nucleophile candidate for the nucleophilic attack. However, the angle between the water, scissile phosphate and 3´-O leaving group is ~115 degree (Figure 5E), which explains the inactivity of the drRecJ-DNA complex. This DNA conformation is possibly attributed to the Ala substitution of His160, which most likely serves as the general base essential for catalysis (Figure 5E). Alanine substitutions of the conserved His160 and Asp158, which is hydrogen bonded to His160 (Figure 5B,E), inactivate drRecJ nuclease activity (Figure 5—figure supplement 1), which suggests that the DHH motif is critical for the catalysis. In addition, His397 from β10 undergoes a substantial rotamer change during DNA binding (Figure 5E). This residue, which is located opposite to the direction of the nucleophilic attack in drRecJ-DNA complex, is hydrogen bonded to the oxygen atom of the scissile phosphate group (Figure 5D,E). Alanine substitution of His397 drastically reduced the rate of the drRecJ-catalyzed reaction (Figure 5C), suggesting that this residue may serve as a general acid to protonate the 3´-O leaving group.
 
-## The C-terminal domain of RecJ is critical for protein-protein interaction
+### The C-terminal domain of RecJ is critical for protein-protein interaction
 
-Inspection of the complex III electron density map reveals an additional electron density corresponding to the C-termini of the SSB-Ct peptide associated with the drRecJ C-terminal domain (
+Inspection of the complex III electron density map reveals an additional electron density corresponding to the C-termini of the SSB-Ct peptide associated with the drRecJ C-terminal domain (Figure 6A). Clear electron density was observed as the last four residues of SSB-Ct peptide (residues 298–301, EDDLPF) used for co-crystallization. In contrast, the first two residues (Glu296 and Asp297) of the SSB-Ct appear to be disordered. Three helices α20, α21 and α23 form the SSB-Ct peptide-binding site, which anchors the last SSB-Ct residue (Phe301) in a deep hydrophobic pocket (Figure 6A). The aromatic Phe side chain is packed against Pro553, Pro628 and the side chains of Met557, Val572, Tyr575 and Tyr600 from drRecJ (Figure 6B). Moreover, Asp298 of SSB-Ct forms an apparent ionic bond with the Lys629 side chain, which composes an electropositive patch near the N-terminus of SSB-Ct (Figure 6B and Figure 3—figure supplement 1B). These SSB-Ct binding site features are similar to those found in the ribonuclease HI SSB-Ct binding site and appears to be shared by other SSB partner proteins (Figure 6—figure supplement 2) (Marceau et al., 2011; Petzold et al., 2015; Ryzhikov et al., 2011). Y575A mutant drRecJ (RecJ575), wild-type drSSB (SSBWT) and drSSB, which lacks eight C-terminal residues (SSBΔC), were purified to confirm the interactions between the SSB-Ct domain and the C-terminal domain (Figure 6C and Figure 6—figure supplement 1). drRecJ or RecJ575 alone can not process DNA with a 3´-ssDNA overhang (Figure 6C, lanes 2–3 and 8–9), which is consistent with previous biochemical observations of ecRecJ (Morimatsu and Kowalczykowski, 2014). For wild-type drRecJ, this nuclease activity is enhanced by SSBWT (lanes 4–5) but not by SSBΔC (lanes 6–7). In contrast, neither SSBWT (lanes 10–11) nor SSBΔC (lanes 12–13) stimulate the RecJ575 resection of DNA with a 3´-ssDNA overhang substantially, indicating that the interactions between drRecJ and drSSB are required for the stimulation of drRecJ resection of DNA with a 3´-ssDNA overhang. For ssDNA, the stimulation is similar to that of the resection of the DNA with a 3´-ssDNA overhang, suggesting that the SSB-RecJ interaction is required for RecJ to resect SSB-covered ssDNA (Figure 6—figure supplement 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig6-v2.jpg)
 
-**Figure 6.:** (A) SSB-Ct binding pocket. SSB-Ct is shown as stick. The electron density of SSB-Ct is shown in blue with the refined 2Fo-Fc map contoured at 1σ. (B) Interactions of the SSB-Ct and C-terminal domain. Both SSB-Ct (yellow) and residues involved in SSB-Ct interactions (green) are shown as sticks. The ionic bond between the Asp298 of SSB-Ct and Lys629 of drRecJ is indicated by a yellow dashed line. (C) SSB enhances wild-type drRecJ degradation. Y575A mutant drRecJ (RecJ575), wild-type drSSB (SSBWT) and drSSB lacking eight C-terminal residues (SSBΔC) were purified to perform the nuclease assays. For the reaction, DNA with a 3´-ssDNA overhang was pre-incubated with 200 nM SSBWT or SSBΔC and treated with drRecJ or RecJ575 (5 and 20 nM) (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.14294.019
+**Figure 6.:** (A) SSB-Ct binding pocket. SSB-Ct is shown as stick. The electron density of SSB-Ct is shown in blue with the refined 2Fo-Fc map contoured at 1σ. (B) Interactions of the SSB-Ct and C-terminal domain. Both SSB-Ct (yellow) and residues involved in SSB-Ct interactions (green) are shown as sticks. The ionic bond between the Asp298 of SSB-Ct and Lys629 of drRecJ is indicated by a yellow dashed line. (C) SSB enhances wild-type drRecJ degradation. Y575A mutant drRecJ (RecJ575), wild-type drSSB (SSBWT) and drSSB lacking eight C-terminal residues (SSBΔC) were purified to perform the nuclease assays. For the reaction, DNA with a 3´-ssDNA overhang was pre-incubated with 200 nM SSBWT or SSBΔC and treated with drRecJ or RecJ575 (5 and 20 nM) (see Materials and methods).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** Y575A mutant drRecJ (RecJ575), wild-type drSSB (SSBWT) and drSSB lacking eight C-terminal residues (SSBΔC) were purified to perform the nuclease assays. For the reaction, 100 nM ssDNA was pre-incubated with 200 nM SSBWT or SSBΔC and treated with drRecJ or RecJ575 (2.5 and 5 nM, or 10 and 20 nM) (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.14294.020
+**Figure 6—figure supplement 1.:** Y575A mutant drRecJ (RecJ575), wild-type drSSB (SSBWT) and drSSB lacking eight C-terminal residues (SSBΔC) were purified to perform the nuclease assays. For the reaction, 100 nM ssDNA was pre-incubated with 200 nM SSBWT or SSBΔC and treated with drRecJ or RecJ575 (2.5 and 5 nM, or 10 and 20 nM) (see Materials and methods).
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig6-figsupp2-v2.jpg)
 
-**Figure 6—figure supplement 2.:** The SSB-Ct are shown as sticks and colored in yellow. Residues interact with SSB-Ct are labeled, shown as sticks and colored in green.DOI: http://dx.doi.org/10.7554/eLife.14294.021
+**Figure 6—figure supplement 2.:** The SSB-Ct are shown as sticks and colored in yellow. Residues interact with SSB-Ct are labeled, shown as sticks and colored in green.
 
-The α-CT is located outside the C-terminal domain and exposed to solvent, which has no effect on drRecJ nuclease activity (
+The α-CT is located outside the C-terminal domain and exposed to solvent, which has no effect on drRecJ nuclease activity (Figure 2C). To test whether the α-CT is required for drRecJ function in vivo, we performed the phenotypic assays (Figure 7A). Cells that lack recJ (ΔrecJ) are thermosensitive and sensitive to MMC treatment (Figure 7A). Interestingly, while complementation of the entire RecJ in ΔrecJ strain (ΔrecJ/pk-recJ) completely recovered the WT phenotype, overexpression of RecJ that lacks α-CT (ΔrecJ/pk-recJΔCα), only partially recovered the phenotype, suggesting the essential role of the α-CT for drRecJ function in vivo (Figure 7A). It has been shown that RecQ and RecJ biochemically cooperate to process DNA with 3´-ssDNA overhang in E. coli (Morimatsu and Kowalczykowski, 2014). However, drRecQ is able to activate both wild-type drRecJ and drRecJ lacking α-CT resection of DNA with 3´-ssDNA overhang (unpublished data) similarly, suggesting that the α-CT is possibly involved in the interaction between drRecJ and other helicases in vivo. Moreover, although both drSSB and drRecQ can enhance drRecJ nuclease activity on DNA with 3´-ssDNA overhang, the resection is substantially stimulated when both drRecQ and drSSB were present (Figure 7B), which suggests that the DNA with 3´-ssDNA overhang is most likely processed by the combined activities of RecJ, RecQ and SSB in vivo (Figure 7C).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/14294/elife-14294-fig7-v2.jpg)
 
-**Figure 7.:** (A) Functional analysis of the drRecJ α-CT in vivo. Wild-type (WT), recJ mutant (ΔrecJ) and recJ complementary (ΔrecJ/pk-recJ for the entire RecJ and ΔrecJ/pk-recJΔCα for RecJ lacking α-CT) strains were spotted on TGY medium following high-temperature (37 degrees) and MMC treatments. (B) drRecJ processes DNA bearing 3´-ssDNA overhang together with drRecQ and drSSB. The reaction contained drRecJ (5, 10 and 20 nM), drRecQ (100 nM) and drSSB (100 nM). (C) A model for DSB end resection by RecJ, RecQ and SSB proteins in D. radiodurans. RecQ (yellow) is bound to the ss-dsDNA junction, which unwinds them to generate 5´-tailed ssDNA. Following RecJ digestion, the SSB (homodimer, white and grey) is recruited to the resultant 3´-ssDNA overhang, which facilitates further strand exchange reaction.DOI: http://dx.doi.org/10.7554/eLife.14294.022
+**Figure 7.:** (A) Functional analysis of the drRecJ α-CT in vivo. Wild-type (WT), recJ mutant (ΔrecJ) and recJ complementary (ΔrecJ/pk-recJ for the entire RecJ and ΔrecJ/pk-recJΔCα for RecJ lacking α-CT) strains were spotted on TGY medium following high-temperature (37 degrees) and MMC treatments. (B) drRecJ processes DNA bearing 3´-ssDNA overhang together with drRecQ and drSSB. The reaction contained drRecJ (5, 10 and 20 nM), drRecQ (100 nM) and drSSB (100 nM). (C) A model for DSB end resection by RecJ, RecQ and SSB proteins in D. radiodurans. RecQ (yellow) is bound to the ss-dsDNA junction, which unwinds them to generate 5´-tailed ssDNA. Following RecJ digestion, the SSB (homodimer, white and grey) is recruited to the resultant 3´-ssDNA overhang, which facilitates further strand exchange reaction.
 
 ## Discussion
 
-## Unified understanding of DHH family members
+### Unified understanding of DHH family members
 
 DHH family proteins have been found widespread in bacteria, archaea and eukaryotes, which contain five conserved motifs. Analyses of the conserved DHH domain and the nonconserved DHHA1 domain in drRecJ structures provide insight into the conserved catalysis mechanism but different substrate specificity of these proteins. As a family of proteins, they share the conserved topology of β-strands in the DHH domain, the signature DHH motif at the end of the fourth strand and the catalytic residues (Figure 2—figure supplement 2A). The core of the DHH domain, which consists of a central five parallel β-strands sandwiched by surrounding α helices, appears to be shared by many other nucleases. The similar Rossmann-like arrangement of the active site suggests that these nucleases may employ similar two-metal-ion catalysis (Figure 2—figure supplement 2A).
 
@@ -152,7 +452,7 @@ The DHHA1 domain in the subfamily 1 group, however, shows distinct features from
 
 CDC45, which is in the subfamily 3 group, is a eukaryotic orthologue of RecJ with no nucleolytic cleavage activity but retaining ssDNA binding capability (Krastanova et al., 2012; Petojevic et al., 2015; Szambowska et al., 2014). In eukaryotes, CDC45, the Mcm2-7 helicase and GINS proteins form the CMG complex, which is involved in DNA replication (Miller et al., 2014; Pacek et al., 2006). Recent studies revealed that CDC45 may guard the gate of Mcm2/5 helicase and capture the errant leading strand (Petojevic et al., 2015). Based on sequence alignment, secondary structure prediction and our drRecJ structures (Figure 1—figure supplement 1), we provide a possible mechanism of CDC45 binding ssDNA. CDC45 exhibits sequence homology to the drRecJ DHH domain, which possesses five conserved motifs. However, three key residues (Asp79, Asp135 and His159 in drRecJ) that coordinate catalytic metal ions are not conserved in CDC45, which is consistent with the inactivation and the absence of metal ion in purified CDC45 proteins (Krastanova et al., 2012). Second, residues that compose the terminal 5´-phosphate-binding pocket (Arg109, Ser371 and Arg373 in drRecJ) are missing in CDC45, which may explain the opposite 3´-5´ DNA binding polarity of CDC45 compared with RecJ (Szambowska et al., 2014). Moreover, DNA binding for RecJ is metal ion independent (Figure 3—figure supplement 2) (Han et al., 2006). The residues involved in protein-DNA stacking interactions (Tyr114, Val224 and Phe269 in drRecJ) and the helical gateway (Arg280, R313, R314 and Lys353 in drRecJ) are conserved in CDC45, which suggests that the DNA binding of CDC45 is possibly similar to that of RecJ.
 
-## RecJ substrate recognition, processivity and catalysis
+### RecJ substrate recognition, processivity and catalysis
 
 The structures presented in this study reveal an elegant mechanism for how RecJ binding to DNA initiates DSB end resection in a 5´-3´ direction. First, the terminal of ssDNA is anchored to the 5´-phosphate binding pocket above the active site, which explains the RecJ hydrolyzing DNA with 5´-3´ polarity. This terminal 5´-phosphate-binding pocket appears to be shared by other 5´-3´ exonucleases such as the λ exonuclease (Zhang et al., 2011), XrnI (Jinek et al., 2011) and RNaseJ (Zhao et al., 2015). Second, the active site encloses a single deoxyribonucleioside, which renders RecJ an exonuclease discriminating DNA over RNA. Third, the entrance to the RecJ active site is guarded by the helical gateway, which prevents dsDNA from entering the active site. Fourth, a number of residues form stacking interactions with every two DNA bases. Biochemically, the end resection by the RecJ nuclease is processive. Alanine substitution of these residues resulted in multiple intermediate digestion bands, which indicates that the protein-DNA staking interactions are required for the mechanism of processivity of the RecJ nuclease. Fifth, the OB fold domain is located on the side of the DNA entrance, which positions the downstream DNA towards the active site.
 
@@ -160,7 +460,7 @@ It has recently been shown that RecJ alone is able to process DNA with a 5´-ssD
 
 Our drRecJ:DNA and drRecJ:dTMP structures suggest that RecJ nucleases employ the two-metal-ion catalysis observed for many nucleic acid processing enzymes (Nakamura et al., 2012; Yang, 2011; Zhao et al., 2013; 2015). In summary, after deprotonation, a water molecule serves as the nucleophile poised on the 5´-side to attack the scissile phosphate. After bond breakage, His397, which is located at the opposite side of the nucleophilic attack, stabilizes the 3´-O leaving group. The resultant mononucleotide and one or both metal ions can be directly exported through the exit tunnel (Arg393). The newly exposed 5´-phosphate, which is generated in each cycle of the exonuclease reaction, further translocates into the terminal 5´-phosphate-binding pocket, making the next nucleotide ready for the cleavage. RecJ is able to digest DNA that contains abasic sites (Dianov et al., 1994); this binding pocket is located right above the active site, which indicates that the attraction of 5´-phosphate to this binding pocket helps to accurately position the scissile phosphodiester bond of the DNA substrate in the active site.
 
-## Implication for DSB repair in D. radiodurans
+### Implication for DSB repair in D. radiodurans
 
 D. radiodurans is capable of surviving high doses of ionizing radiation, which shatters its genome into several hundred fragments. The resulting numerous DSBs can be rapidly repaired by its super-efficient RecA-mediated DNA repair system (Bentchikou et al., 2010; Slade et al., 2009). The functional RecF pathway is required for the RecA-mediated DSB repair in vivo, as D. radiodurans naturally lacks RecB and RecC enzymes. E. coli has a minimum of three 5´-3´ exonucleases (RecJ, RecBCD and ExoVII), whereas RecJ is the only 5´-3´ exonuclease in D. radiodurans, which plays an essential role in DSB end resection (Lovett, 2011). In contrast to the use of Mg2+ for DNA digestion by ecRecJ, Mn2+ appears to be preferred for drRecJ catalysis. This metal-ion preference may be attributed to the following two properties: First, the ionic radius of Mn2+ is similar to that of Mg2+ but with less-rigid coordination requirements (Harding, 2000), making it suitable for His159 coordination. In fact, only one Mg2+ was observed in crystal form that contains Mg2+ instead of Mn2+ (unpublished data), which is consistent with the extremely low drRecJ nuclease activity in the presence of Mg2+ (Figure 1—figure supplement 2). Second, Daly and co-workers noted that D. radiodurans contained about 300 times more intracellular Mn2+ than that in E. coli, which plays a critical role in reactive oxygen species detoxification and protein protection (Daly et al., 2004; Daly, 2009). Thus, the Mn2+ preference of drRecJ may also be an example of the evolution adaptation. Indeed, in D. radiodurans, many enzymes involved in DNA repair (e.g., PolI, PolX) prefer to use Mn2+ for catalysis (Cheng et al., 2015a; Heinz and Marx, 2007; Lecointe et al., 2004; Zhang et al., 2014; Zhao et al., 2015), which indicates that the accumulation of Mn2+ may also contribute to the robust DSB repair.
 
@@ -170,26 +470,26 @@ Collectively, we report the crystal structure of drRecJ in complex with SSB-Ct p
 
 ## Materials and methods
 
-## Cloning and strain constructions
+### Cloning and strain constructions
 
 Full-length (residues 1-705aa), nuclease-core (drRecJcore, residues 48-431aa), C-terminal domain truncation (drRecJΔC, residues 1-531aa), and C-terminal α helix truncation (drRecJΔα-CT, residues 1-690aa) of drRecJ were amplified by PCR and cloned to the modified pET28a expression vector, pET28-HMT, which contains a fused N-terminal 6×His-tag, a MBP-tag and a TEV protease recognition sequence (His-MBP-TEV) as described (Austin et al., 2009). Full-length drSSB (residues 1-301aa), C-terminal truncated drSSB (drSSBΔC, residues 1-293aa), and full-length drRecQ (residues 1-824aa) were also cloned to pET28-HMT expression vector. All the constructed expression vectors were transformed into Escherichia coli Rossetta (DE3) strain. For phenotypic assays, drrecJΔCα was also cloned to the shuttle vector pRADK, named as pk-recJΔCα. drrecJ complemented strain (ΔrecJ/pk-recJΔCα) was constructed by transforming pk-recJΔCα into drrecJ knockout strain (ΔrecJ) as described previously (Jiao et al., 2012), followed by sequencing identification. Site directed mutagenesis was performed with a QuikChangeTM Site-Directed Mutagenesis Kit from Stratagene (La Jolla, CA) as described (Cheng et al., 2015a). Primers used for cloning and mutageneses are listed in Supplementary file 1. All bacterial strains and plasmids used in this study are listed in Supplementary file 2.
 
-## Protein preparation
+### Protein preparation
 
 All the drRecJ proteins were expressed and purified in a similar way as reported previously (Cheng et al., 2015b; Jiao et al., 2012). In brief, transformed Escherichia coli Rossetta (DE3) clones were grown at 37°C in LB medium containing 50 μg/ml Kanamycin to an optical density at 600 nm of 0.6–0.8. Protein expression was induced at 30°C for 5 hr by adding isopropyl-β-D-thioga-lactopyranoside (IPTG) with a final concentration of 0.4 mM. After harvesting, cells were resuspended in lysis buffer (20 mM Tris (pH 7.5), 1 M NaCl, 5% (w/v) glycerol, 3 mM β-ME and 10 mM imidazole), lysed by sonication and centrifuged at 15,000 × g for 30 min at 4°C. The supernatant was purified by HisTrap HP column (GE Healthcare), equilibrated with buffer A (20 mM Tris (pH 7.5), 1 M NaCl, 5% (w/v) glycerol and 10 mM imidazole), washed with 30 mM imidazole and finally eluted with 300 mM imidazole. After TEV-tag-removal using TEV protease, the protein was loaded onto the MBPTrap HP column (GE Healthcare, Fairfield, CT) to remove the uncleaved protein. The flow-through fractions were collected and loaded onto a Heparin HP column (GE Healthcare, Fairfield, CT) pre-equilibrated with buffer B (20 mM Tris (pH 7.5), 100 mM NaCl, 1 mM DTT, 5% (w/v) glycerol). Fractions containing drRecJ proteins were eluted with a linear gradient from 100 mM to 500 mM NaCl. The protein was finally purified by Superdex 200 10/300 GL column (GE Healthcare, Fairfield, CT) with buffer C (20 mM Tris (pH 7.5), 100 mM NaCl, 0.1 mM EDTA and 1 mM DTT) and stored at −80°C. drSSB and drSSBΔC were expressed similar as drRecJ, and purified as reported previously (Cheng et al., 2014). drRecQ was induced at 16°C for 16 hr by adding isopropyl-β-D-thioga-lactopyranoside (IPTG) with a final concentration of 0.4 mM. The purification procedure of drRecQ was similar as drSSB, expect that Superdex 200 column was used instead of Superdex 75 in the final purification step.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Crystallization trials were carried out by the sitting drop vapor diffusion method at 293 K. Fresh purified drRecJ was concentrated to ~18 mg/ml and centrifuged to remove insoluble fraction before crystallization. After a series of screening tests and optimizations, crystals of RecJ-dTMP (complex I) were obtained in 1.3 M Li2SO4, 100 mM MES (pH 6.5), 2.5 mM MnCl2 and 10 mM dTMP. For RecJ:DNA complex, protein was mixed with DNA (Supplementary file 3) at a 1:1.2 molar ratio and concentrated to ~18 mg/ml. Complex II crystals were grown in 1.5 M Li2SO4, 100 mM MES (pH 6.5), and 2.5 mM MnCl2. Complex III crystals were grown in similar condition, followed by soaking with 0.2 mg/mlSSB-Ct (EDDLPF) peptide for 24 hr. Cryocooling was achieved by stepwise soaking the crystals in reservoir solution containing 10, 20, and 30% (w/v) glycerol for 3 min and flash freezing in liquid nitrogen. Diffraction intensities were recorded on beamline BL17U at Shanghai Synchrotron Radiation Facility (Shanghai, China) and were integrated and scaled with the XDS suite (Kabsch, 2010). The structures were determined by molecular replacement using ttRecJ (2ZXP) as the search model (McCoy et al., 2007). Structures were refined using PHENIX (Adams et al., 2010) and interspersed with manual model building using COOT (Emsley et al., 2010). Later stages of refinement utilized TLS group anisotropic B-factor refinement. The refined model contained one drRecJ molecule in the asymmetric unit. Two catalytic Mn2+ ions and dTMP (complex I), DNA (complex II) or DNA/SSBct (complex III) were observed. The statistics for data collection and refinement are listed in Table 1. All the residues are in the most favorable and allowed regions of the Ramachandran plot. All structural figures were rendered in PyMOL (www.pymol.org).
 
-## Nuclease activity
+### Nuclease activity
 
 All the oligo DNA and RNA were purchased from Sangon (Shanghai, China) and Takara (Dalian, China) with 3′-end labeled by 6-carboxfluorescein (6-FAM). The sequences of oligos were listed in the Supplementary file 3. DNA with 3′- (KY06, 6 nt overhang) or 5′-overhang (KY04, 14 nt overhang) ssDNA was obtained by annealing in annealing buffer (10 mM HEPES (pH 8.0), 50 mM NaCl, 0.1 mM EDTA) by heating (95°C) for 5 min and slow cooling to 4°C. KY03-KY07 were used to determine the drRecJ substrate preference (Figure 1B). KY08 was used to test the nuclease activities of different truncations of drRecJ (Figure 2C). KY03 was used to test the nuclease activities of mutant drRecJ proteins (Figure 3E and 5C). KY03 and KY04 were used to test the nuclease activity of drRecJ on ssDNA and DNA with 5´-ssDNA overhangs (Figure 4C and Figure 3—figure supplement 1C). KY08 and KY09 were used to test the different digestion efficiency of drRecJ on poly (dA) and poly (dT). KY06 was used to test the stimulation of drRecJ nuclease activities by drSSB and drRecQ (Figure 6C and 7B). For a typical nuclease assay, 100 nM DNA was incubated with various concentrations (2.5–500 nM) of freshly prepared full-length, truncated or mutant drRecJ proteins in a 10 μl reaction volume containing 50 mM Tris (pH 7.5), 60 mM KCl, 0.1 mg/ml BSA, 1 mM DTT, 5% (v/v) glycerol and 0.1 mM MnCl2 at 30°C for 20–30 min, in the presence or absence of 100–200 nM drSSB or drRecQ proteins. The reactions were stopped with 2×stop buffer (10 mM EDTA, 98% formamide), incubating at 95°C for 10 min and flash cooled on ice. Reaction products were resolved on 12–20% polyacrylamide gels containing 7 M urea. The gels were imaged at fluorescence mode (FAM) on Typhoon FLA 9500 (GE), and bands were analyzed using Image J Software (National Institutes of Health, USA). To determine the metal preference, KY08 was used and MnCl2 (0.01–10 mM), MgCl2 (0.01–10 mM) or EDTA (10 mM) was added in the reaction buffer. Additional Mg2+ (2 mM) and ATP (2 mM) were present in the reaction buffer when drRecQ was needed. For steady state measurements, typically 5–10 nM drRecJ were incubated with saturated substrate (KY03, 0–2 µM) at 30°C for 20 min. All reactions were independently repeated at least three times. The kcat and KM were derived from generalized nonlinear least-squares using Michaelis-Menten equation, from which the apparent second order rate constant (kcat/KM) was determined from a plot of normalized initial rate (v/[E]) versus substrate concentration ([S]). Kinetic parameters of wild-type and mutant drRecJ proteins can be found in Table 2.
 
-## Electrophoretic mobility shift assays
+### Electrophoretic mobility shift assays
 
 100 nM 3′-labeled ssDNA (KY08) was incubated with different concentrations of RecJ (31.5, 62.5, 125, 250, 500, 1000 and 2000 nM) in a 20 μl reaction volume containing 50 mM Tris (pH 7.5), 60 mM KCl, 0.1 mg/ml BSA, 1 mM DTT and 5% (v/v) glycerol at 30°C for 20 min. Samples were separated on 8% native polyacrylamide gels in 1 × TBE buffer. The gels were imaged at fluorescence mode (FAM) on Typhoon FLA 9500 (GE). The bands were analyzed using Image J Software (National Institutes of Health, USA) and the graph was created by Graphpad Prism 6 Software.
 
-## Phenotypic assay
+### Phenotypic assay
 
 D. radiodurans wild type strain R1 and its derivatives were grown at 30°C either in TGY broth (0.5% tryptone, 0.1% glucose, 0.3% yeast extract) or on TGY agar plate (with 1.25% agar). Phenotypic assays were performed as described previously (Cheng et al., 2015b). Cells were grown to early exponential phase (OD600 = 0.6-0.8) and incubated with 20 mg/ml of MMC at 30°C for 20 min, diluted to various concentrations and dotted onto TGY plates. Plates were cultured at 30°C for 2–3 days. The cells without MMC treatment were set as control. For temperature-dependent assay, a plate was cultured at 37°C for 2–3 days.

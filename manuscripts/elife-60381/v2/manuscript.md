@@ -32,41 +32,143 @@ In this work, we use a rat embryonic fibroblast (REF) cell line (REF-52) as a mo
 
 ## Results
 
-## REF 2c cells align radially on circular mesoscale patterns
+### REF 2c cells align radially on circular mesoscale patterns
 
 We first sought to investigate whether various types of cells with different intra- and intercellular forces and cell shapes have similar self-organization behavior under confinement. We found that when REF 2c cells, a subclone of the REF52 cell line, were placed on circular micro-contact printed patterns (diameter = 344 µm), the boundary cells radially aligned over a period of 48 hr after cell seeding (Figure 1A). Video tracking of individual inner and boundary cells showed that the radial alignment of boundary cells was not caused by oriented cell migration toward or away from the center (Figure 1—figure supplement 1A, Figure 1—video 1), as most boundary cells stayed on the periphery of the pattern. Moreover, both the innermost and boundary cells migrated longer and faster between 24 and 36 hr than 36 and 48 hr (Figure 1—figure supplement 1B–C). This reduced cell migration coincided with the formation of radial alignment of cells on the pattern boundary. In contrast, 3T3 fibroblasts maintained circumferential alignment on the boundary at both 24 and 48 hr (Figure 1A), consistent with previous reports. To quantify the cell alignment, we traced the cell outlines and measured the cell angle deviation, defined as the angle between the long axis of an ellipse-fitted cell and the line that connects the pattern center and the centroid of the cell; cell elongation, defined as the ratio of the major axis to the minor axis of the ellipse-fitted cells; and projected cell area using an ellipse-fitting-based method (Figure 1—figure supplement 2). We found that at 48 hr, the REF 2c cells were more compact compared to 24 hr, and much more compact than 3T3 cells, as indicated by the smaller elongation parameter (Figure 1C, Figure 1—figure supplement 3). Further, for REF 2c cells, the boundary cells were significantly more aligned with the radial direction than the inner cells at 48 hr, although these cells showed circumferential alignment similar to 3T3 cells at 24 hr (Figure 1B). Boundary cells were also significantly more elongated and had a significantly larger cell area than inner cells (Figure 1C,D). The boundary 3T3 cells were significantly more circumferentially aligned and elongated than the inner cells but did not have any significant differences in cell area (Figure 1B–D). Confocal fluorescence images of REF 2c cells stained with a cell membrane permeable dye CellTracker-Green suggested that the average tissue thickness increased slightly due to the cell radial alignment, while the boundary cells had a wedge-shape with a drastically reduced cell thickness on the pattern boundary side (Figure 1—figure supplement 4). The change in tissue thickness suggests cell volume conservation as the whole pattern condensed slightly while boundary cell area increased.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phase images showing REF 2c and 3T3 cells cultured on patterns for 24 and 48 hr. Scale bar: 100 µm. Cell tracing showed the cell boundaries at 48 hr. (B) REF 2c and 3T3 cell angle deviation at 48 hr as a function of normalized distance from the center of the pattern. n = 16 patterns. (C) REF 2c and 3T3 cell elongation at 48 hr as a function of the normalized distance from the center of the pattern. n = 16 patterns. (D) REF 2c and 3T3 cell area at 48 hr as a function of normalized distance from the center of the pattern. Cell area is defined as the area of the ellipse-fitted cells. n = 16 patterns. Data are represented as mean ± s.e.m. *, p < 0.05; ***, p < 0.001; n.s., p > 0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The 3D and 2D migration trajectories of REF 2c cells over 24–36 hr (n = 42) and 36–48 hr (n = 30) after seeding. Scale bar, 100 μm. (B-C) Migration speed (B) and migration length (C) of inner and boundary cells over 24–36 hr (inner cell, n = 21; boundary cell, n = 21) and 36–48 hr (inner cell, n = 15; boundary cell, n = 15) after seeding. Data are presented as mean ± s.e.m. **, p < 0.01; ***, p < 0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Each cell from the phase contract images was hand-traced to produce a clear outline. (B) Tracing was imported into ImageJ and thresholded to create a black background with white cell outlines. (C) Ellipses were created using the ‘analyze particles’ tool. Location of pattern centroid was also measured using the circle fit tool. Ellipse attributes (centroid, angle, axes lengths, area) combined with the pattern centroid were used to find cell angle deviation from the radial direction, cell area, and cell elongation as a function of distance from the center of the pattern.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Bar plot showing the elongation of REF 2c cells cultured on patterns for 24 hr as a function of normalized distance from the center of the pattern. n = 15 patterns. (B) Bar plot showing statistical comparison of the elongation between 24 hr and 48 hr. Data are represented as mean ± s.e.m. **, p < 0.01; ***, p < 0.001; n.s., p > 0.05.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The top view and side view of REF 2c labeled with CellTracker-Green dye at 24 hr and 48 hr. Scale bar, 100 μm. (B) Zoomed side view of REF 2c labeled with CellTracker-Green dye at 24 hr and 48 hr. Scale bar, 10 μm. (C) Bar plot showing the tissue thickness at 24 hr (n = 12) and 48 hr (n = 12). **, p < 0.01. (D) Plot showing the mean thickness across the REF colony at 24 hr (n = 12) and 48 hr (n = 12).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Representative actin (green) and DAPI (blue) images of REF 2c on PMA substrates with different post heights. Cells were fixed and imaged at 4 hr and 48 hr, respectively. Scale bar: 100 μm. (B) Total cell area on each micropattern as functions of time and substrate stiffness. n = 20 patterns for each condition. Data are presented as mean ± s.e.m. ***, p < 0.001; n.s., p > 0.05.
+
 As cells were patterned on PDMS substrates (Young’s modulus E = 2.5 MPa), which are significantly stiffer than physiological extracellular matrices, we next tested whether a similar phenomenon could be observed on substrates with physiologically relevant stiffness. Here we applied a well-established PDMS micropost array (PMA) system with identical surface geometry and different post heights to tune substrate rigidity (Figure 1—figure supplement 5; Sun et al., 2014). We found that on soft PMA substrates (E = 5 kPa, post height = 8.4 µm), REF 2c cells became polarized at 48 hr and condensed towards the center of patterns, resulting in reduced total cell area on each pattern. On stiff PMA substrates (E = 1 MPa, post height = 0.7 µm), however, the total cell area on each pattern did not change between 4 and 48 hr, and only cells on the boundary became radially aligned, which is consistent with the results on flat PDMS substrates. To accurately quantify the cell shape and angle deviation changes, we used rigid (E > 1 MPa) PDMS substrates for the rest of the experiments.
 
-## Cell contractility and cell-cell adhesion are required for radial alignment
+### Cell contractility and cell-cell adhesion are required for radial alignment
 
 As all previous works demonstrated circumferential alignment of non-epithelial cells on circular patterns, we asked what factors contribute to the radial alignment of REF 2c cells. We isolated and expanded several subclones of the REF cell line, and identified one subclone, named REF 11b, which did not radially align at 48 hr on circular patterns (Figure 2A). RNA-seq data revealed that while most genes have similar expression levels in REF 11b and REF 2c subclones, a small subset of genes were expressed significantly differently (Figure 2—figure supplement 1). As some of these genes are associated with cell-substrate adhesion and contraction (e.g. INTEGRIN α7 and α8, MYL9, and COL16A1), we then measured the cell contractility of these two subclones. Traction force measurements for single cells of REF 2c and 11b showed that for both total force and force per area, REF 11b cells were significantly less contractile than REF 2c cells (Figure 2B). To verify that the cell contractility was required for radial alignment, we treated patterned REF 2c cells with Blebbistatin (to inhibit myosin ATPase activity) and Y27632 (to inhibit Rho kinase activity), drugs known to reduce cell contractility (Beningo et al., 2006), at 24 hr, and then imaged the patterned cells at 48 hr (Figure 2C). The boundary cells of the Blebbistatin and Y27632-treated groups were not significantly more radially aligned than the inner cells, compared to the vehicle control group with DMSO (Figure 2C). These results suggest that cell contractility is required for radial alignment formation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig2-v2.jpg)
+
+**Figure 2.:** (A) Phase images of REF 11b at 24 hr and 48 hr after cell seeding. Average cell angle deviation is quantified with respect to distance from the center of the pattern. n = 16 patterns. Scale bar: 100 μm. (B) Representative images showing single REF cells cultured on PMA substrates and vector map of deduced traction forces. Plots show the total traction force per cell and traction force per cell area of individual REF 2c and 11b cells. n = 15 cells per subclone. (C) Phase images of REF 2c treated with DMSO, Blebbistatin, and Y27632 at 48 hr. Average cell angle deviation is quantified with respect to distance from the center of the pattern. n = 16 patterns per group. Scale bar: 100 μm. (D) Immunofluorescence images showing the expression of β-catenin in REF 2c, 3T3, and REF 11b cells at 48 hr. Scale bar: 100 μm. (E) Phase and fluorescence images showing cell orientation and β-catenin expression in EGTA treated REF 2c cells at 48 hr. Average cell angle deviation is quantified with respect to distance from the center of the pattern. Scale bar: 100 μm. Data are represented as mean ± s.e.m. *, p < 0.05; **, p < 0.01; ***, p < 0.001; n.s., p > 0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative fluorescence images showing cell nuclei, Actin, β-catenin, and merged actin and β-catenin. Scale bar: 100 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Fluorescence images and vector maps showing the traction forces of single REF 2c cells cultured on PMA substrates and treated with vehicle control or EGTA. (B-C) Bar plots showing the total traction force per cell (B) or total traction force per cell area (C) for control and EGTA treated cells. At least 15 cells were analyzed per condition. Data are presented as mean ± s.e.m. n.s., p > 0.05.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Phase images showing untreated cells at 24 hr and aphidicolin treated cells at 48 hr on patterned surfaces. Scale bar: 100 μm. (B) Bar plots showing cell numbers per pattern for untreated cells at 24 hr and aphidicolin-treated cells at 48 hr. (C) Angle deviation of cells as a function of distance from the center of the pattern for untreated control and aphidicolin-treated cells. Data are presented as mean ± s.e.m. **, p < 0.01, ***, p < 0.001; n.s., p > 0.05.
+
 As 3T3 cells have a similar level of contractility compared with REF 2c cells (Ghibaudo et al., 2008), we rationalized that other factors must also contribute to the radial alignment. Staining with β-catenin suggested that there were cadherin-mediated cell-cell interactions among REF 2c and REF 11b cells while overlapping and empty spaces could be found among 3T3 cells without clear cell-cell junctions (Figure 2D, Figure 2—figure supplement 2). These observations suggested that such cell-cell adhesion may be required for the establishment of radial alignment. To confirm this, we treated REF 2c cells with EGTA, which reduced cadherin-based cell-cell adhesion without significantly affecting cell adhesion to substrates (Pérez-González et al., 2019; Ohgushi et al., 2010; Rothen-Rutishauser et al., 2002; Al-Kilani et al., 2011; Koutsouki et al., 2005; Charrasse et al., 2002), at 24 hr and then examined the cell alignment at 48 hr. We found that when treated with EGTA, the boundary cells were significantly more circumferentially aligned than the inner cells (Figure 2E). To confirm that EGTA treatment did not significantly affect cell substrates interactions, we measured the contractility of single cells using the PMAs. As shown in Figure 2—figure supplement 3, EGTA treatment did not change the total traction force per cell or per cell area, suggesting calmodulin-mediated contractility does not predominate this system. Together, we identify that cell contractility and cell-cell adhesion are two essential factors required for the establishment of radial alignment of patterned cells. Importantly, REF 2c cells form aggregates on soft substrates and show similar tendency on rigid substrates (reflected by the radial alignment). We define this collective cell behavior as ‘condensation tendency’, which requires both cell contractility and cell-cell adhesion.
 
-## Cell proliferation is not required for the formation of cell radial alignment
+### Cell proliferation is not required for the formation of cell radial alignment
 
 It is notable that cell proliferation between 24 and 48 hr after cell seeding may lead to the remodeling and dissipation of elastic energy. To test this, we treated REF 2c cells with aphidicolin (1 µg/ml), an inhibitor of DNA replication (Ikegami et al., 1978). We found that with aphidicolin treatment, the cell number did not increase significantly from 24 to 48 hr (Figure 2—figure supplement 4A,B). In this condition, we still observed the radial alignment of boundary cells, which is quantitatively comparable with untreated controls (Figure 2—figure supplement 4C). Thus, we believe that the cell proliferation mediated remodeling is unimportant for the formation of cell radial alignment.
 
-## A graded isotropic actin meshwork was established in patterned REF cells
+### A graded isotropic actin meshwork was established in patterned REF cells
 
 The REF 2c tissue is reminiscent of the epithelial cell monolayers with coherent intercellular junctions. However, previous studies showed that no alignment was found when epithelial cells were confined on similar circular patterns (Doxzen et al., 2013). A critical difference between epithelial cells and fibroblasts is that the actomyosin network mainly distributes on the cell-cell boundaries in epithelial cell monolayer with apical-basal polarity while fibroblast cells have continuous actin meshwork. Thus, we investigate the spatial organization of actin filaments and the concentration of phosphorylated myosin light chain in confined REF monolayers. Surprisingly, we found a decrease in actin intensity occurred near the boundary of patterns for REF 2c cells, in the same location as the transition between isotropically oriented inner cells and radially aligned boundary cells. (Figure 3). To evaluate the statistical significance of this intensity gradient, we divided the pattern into six segments with the same width, and quantified actin intensity and actin intensity per cell as a function of distance to pattern center (Figure 3—figure supplement 1A). Our Analysis of Variance (ANOVA) results clearly demonstrated that the actin intensity in the outmost layer was significantly lower than that of the inner cells. To exclude the possibility that such actin intensity gradient is simply a result of cell density difference, we also quantified the total actin intensity and actin intensity per cell in inner cells and the outmost boundary cells. Consistently, a significant difference was found between inner and boundary cells, suggesting this actin intensity gradient was not simply a result of cell density differences (Figure 3—figure supplement 1B,C). In contrast, for REF 11b, there was a continued decrease in intensity from the center of the pattern to the outermost edge (Figure 3). This is in sharp contrast to the actin distribution of 3T3 cells, in which no actin gradient was identified (Figure 3). Notably, the sharp drop in the intensity profiles near the very end of the intensity plot for actin was an artifact as the outermost cells did not fully cover the pattern boundary. We further analyzed the correlation between actin gradient in individual patterns and corresponding angle deviation of boundary cells (Figure 3—figure supplement 2). Our results showed that increasing steepness of the actin gradient negatively correlates with boundary cell angle deviation (r = − 0.533), suggesting actin gradient may contribute to the boundary cell radial alignment.
 
-## A Voronoi-cell model demonstrated that the condensation tendency with actin gradient is sufficient for establishing cell radial alignment at the pattern boundary
+![Figure 3.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig3-v2.jpg)
+
+**Figure 3.:** Top: fluorescence images showing the actin staining of REF 2c, REF 11b, and 3T3 cells. Scale bar: 100 μm. Middle: colorimetric maps showing the average actin intensity profiles obtained by overlapping actin staining images. n = 20 patterns per group. Bottom: normalized mean intensity of these overlapping images plotted as a function of the normalized distance from the center of the pattern.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Bar plot showing actin intensity as a function of distance from the pattern center. The whole pattern was divided into six zones with the same width. The intensities were all normalized to the maximum intensity in the analyzed 20 patterns. (B) Dot plots showing the average actin intensity in the boundary cells (cells located in the outmost zone) and inner cells (cells located in the rest zones). (C) Dot plots showing the average actin intensity per cell in the inner cells and boundary cells. The actin intensity per cells were determined by normalization using cell numbers in each layer. n = 20 pattens. Data are presented as mean ± s.e.m. ***, p < 0.001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Actin fluorescence images and actin intensity plots of two typical colonies with different actin gradients (the left two panels). The phase and cell tracing images showing the radial alignment of boundary cells on patterned surfaces (the right two panels). Scale bar: 100 μm. (B) The scatterplot showing actin gradient (defined by the average intensity difference between the outmost cell layer and the inner cells) versus angle deviation of REF 2c cells on the pattern boundary. n = 16 colonies. r, Pearson correlation coefficient.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A-C) Representative fluorescence image, heatmap, and intensity plots showing the average phosphorylated-myosin intensity as a function of distance from the pattern center, from a total of 27 images. The intensity of p-myosin peaked at 138 µm, which is within the boundary cell layer. (D) Line plot showing the average phosphorylated-myosin intensity by dividing the whole pattern into six zones. The intensities were all normalized to the maximum intensity in the analyzed 20 patterns. Myosin intensities in inner zones were compared with the outmost zone. (E) Dot plots showing the average phosphorylated-myosin intensity in the inner cells and boundary cells. (F) Dot plot showing the average phosphorylated-myosin intensity per cell in the inner cells and boundary cells. The phosphorylated-myosin intensity per cell is determined by normalization using cell numbers in each layer. Data are presented as mean ± s.e.m., ***, p < 0.001; n.s., p > 0.05.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Schematic of fiber angle deviation calculation. (B) Actin fiber angle deviation as a function of normalized distance from center of the pattern. Data is presented as mean ± s.e.m. (C) Histograms of the actin fiber orientation distribution as a function of distance from the center of the pattern. n = five patterns. (D) Structure parameter (kH) as a function of the distance from the pattern center (see Materials and methods for kH). n = five patterns.
+
+### A Voronoi-cell model demonstrated that the condensation tendency with actin gradient is sufficient for establishing cell radial alignment at the pattern boundary
 
 We next asked what are the deterministic factors that dictate the polar alignment of REF 2c cells. On one hand, the experimental data suggest that the condensation tendency is essential for the polar alignment (Figure 2). In addition, the data shows that the alignment is associated with the elongation of the boundary cells (Figure 1), which suggests that these boundary cells are stretched more along the radial direction than along the circumferential direction. On the other hand, the actin gradient decreasing towards the boundary (Figure 3) suggests that there is a stiffness differential between the inner and boundary cells, given it is well-documented that actin intensity is proportional to the local cell stiffness (Tavares et al., 2017; Rotsch and Radmacher, 2000; Nawaz et al., 2012; Gavara and Chadwick, 2016). To examine the possibility that increased actin intensity is associated with increased contractility, we examined the distribution of contractility levels in confined REF 2c cells by immunostaining phosphorylated myosin (p-myosin). It was found that unlike actin distributions, the p-myosin distribution was almost uniform across the whole pattern, with only a small increase near the pattern boundary (Figure 3—figure supplement 3). Thus, we hypothesize that the radial alignment and elongation at the boundary in mechanical equilibrium is due to the condensation tendency and the cell stiffness differential between the inner and boundary cells.
 
-We developed a Voronoi-cell model (Bi et al., 2016; Olaranont, 2019) to test our hypothesis (see Materials and methods). Given the actin orientation being neither radially nor circumferentially aligned (see Figure 3—figure supplement 4 and Materials and methods), we assume that the stiffness of the cells is isotropic. Similarly, we introduce an isotropic prestretch parameter 0 < g ≤1 to describe the global condensation tendency in the patterned fibroblasts, which is a factor of the intrinsic cell area. The more g deviates from 1, the larger the condensation tendency. As suggested by the direction of actin gradient (Figure 3), we introduce the stiffness differential between the boundary and the inner cells as 0<ρ≤1. Noticeably, although the mechanical interaction between the cell monolayer and the substrate has been experimentally measured previously (Tambe et al., 2011), it is challenging in our case because to accurately measure the traction forces using PMA substrates, the effective Young’s modulus of the substrates needs to be less than 5 kPa, on which REF cells form aggregates due to the condensation tendency we described previously. Thus, we consider the mechanical equilibrium as a result of cell-cell mechanical interactions and the confinement at the tissue boundary (see Materials and methods for numerical implementation).
+We developed a Voronoi-cell model (Bi et al., 2016; Olaranont, 2019) to test our hypothesis (see Materials and methods). Given the actin orientation being neither radially nor circumferentially aligned (see Figure 3—figure supplement 4 and Materials and methods), we assume that the stiffness of the cells is isotropic. Similarly, we introduce an isotropic prestretch parameter 0 < $g$ ≤1 to describe the global condensation tendency in the patterned fibroblasts, which is a factor of the intrinsic cell area. The more $g$ deviates from 1, the larger the condensation tendency. As suggested by the direction of actin gradient (Figure 3), we introduce the stiffness differential between the boundary and the inner cells as $0<ρ\leq1$. Noticeably, although the mechanical interaction between the cell monolayer and the substrate has been experimentally measured previously (Tambe et al., 2011), it is challenging in our case because to accurately measure the traction forces using PMA substrates, the effective Young’s modulus of the substrates needs to be less than 5 kPa, on which REF cells form aggregates due to the condensation tendency we described previously. Thus, we consider the mechanical equilibrium as a result of cell-cell mechanical interactions and the confinement at the tissue boundary (see Materials and methods for numerical implementation).
 
-Our simulations show the radial alignment emerges when both condensation tendency g and stiffness differential ρ deviate from 1 (Figure 4A, Figure 4—figure supplement 1). Our shape analysis shows that in the radial-alignment case, the boundary cells are larger in size and more elongated (Figure 4B), consistent with the experiments (see Figure 1C,D, REF 2c cells). The results also explain the cell morphology observed in REF 11b cells, where no radial alignment is observed without contractility (see Figure 4B and Figure 4—figure supplement 1A, top rows). In addition, we show that when the value of g is smaller in the boundary cells than that in the inner cells, and without stiffness differential (ρ=1), boundary cells have smaller areas but do not align in the radial direction (Figure 4—figure supplement 2). This suggests that the slight elevation of p-myosin in the boundary cells (Figure 3—figure supplement 3) is not the cause of the radial alignment.
+Our simulations show the radial alignment emerges when both condensation tendency $g$ and stiffness differential $ρ$ deviate from 1 (Figure 4A, Figure 4—figure supplement 1). Our shape analysis shows that in the radial-alignment case, the boundary cells are larger in size and more elongated (Figure 4B), consistent with the experiments (see Figure 1C,D, REF 2c cells). The results also explain the cell morphology observed in REF 11b cells, where no radial alignment is observed without contractility (see Figure 4B and Figure 4—figure supplement 1A, top rows). In addition, we show that when the value of $g$ is smaller in the boundary cells than that in the inner cells, and without stiffness differential ($ρ=1$), boundary cells have smaller areas but do not align in the radial direction (Figure 4—figure supplement 2). This suggests that the slight elevation of p-myosin in the boundary cells (Figure 3—figure supplement 3) is not the cause of the radial alignment.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-v2.jpg)
+
+**Figure 4.:** (A) Voronoi cell modeling results from varying condensation tendency parameter $g$ and cell stiffness differential parameter $ρ$. Smaller $g$ and $ρ$ contribute to larger cell area along the boundary. (B) 3D Scatter plots of three cell-morphological parameters: angle deviation, cell area, and cell elongation. The three parameters on inner (orange) and boundary cells (blue) become significantly different when both $ρ$ and $g$ are small (e.g. $ρ=0.4$ and $g=0.5$; the stars represent the mean values among each cell group). n = 5 patterns.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Angle deviation is only polarized when both $ρ$ and $g$ are small (e.g. $ρ=0.4$ and $g=0.5,$ plotted as a function of distance from the center of the pattern). n = 5 patterns. (B) Cell area is only polarized when both $ρ$ and $g$ are small. n = 5 patterns. (C) Boundary cell is more elongated when both $ρ$ and $g$ are small. n = 5 patterns. Data were compared with the outmost zone. Data are represented as mean ± s.e.m. *, p < 0.05, **, p < 0.01, ***, p < 0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Voronoi cell modeling results from varying condensation tendency parameter $g$ and cell contractility differential parameter $ρ_{g}$. Smaller $g$ (higher global contractility) and $ρ_{g}$ (higher contractility differential) only contribute to smaller cell areas along the boundary. (B) Bar plots showing the cell angle deviation as a function of distance from the pattern center, suggesting the change of the two parameters do not result in radial alignment. Data were compared with the outmost zone. See Materials and methods for $ρ_{g}$. Data are presented as mean ± s.e.m.; n.s., p > 0.05.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A-B) Larger contractility ($g=0.5$) contributes to overall larger strains (both major and minor strains) in the pattern. The cell strains are only polarized at the boundary with large contractility and stiffness differential ($ρ=0.4$ and $g=0.5$). (C-D) Larger contractility ($g=0.5$) contributes to overall larger tensile stresses (both major and minor stresses) in the pattern. The cell stresses are only polarized at the boundary with large contractility and stiffness differential ($ρ=0.4$ and $g=0.5$). (E) 3D Scatter plots of angle deviation, radial stress, and circumferential stress among cells. The three parameters on inner (orange) and boundary cells (blue) become significantly different when both $ρ$ and $g$ are small (e.g. $ρ=0.4$ and $g=0.5$; the stars represent the mean values among each cell group). (F) 3D Scatter plots of angle deviation, major and minor strains among cells. The three parameters on inner (orange) and boundary cells (blue) become significantly different when both $ρ$ and $g$ are small. See Materials and methods for stress and strain quantifications. n = 5 patterns. Data are represented as mean ± s.e.m. *, p < 0.05, **, p < 0.01, ***, p < 0.001, n.s., p > 0.05.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A-C) Representative fluorescence image (A), colorimetric map (B), and intensity plot (C) showing the average vinculin intensity as a function of distance from pattern center. Data were collected from a total of 36 images. (D) Dot plots showing the vinculin intensity per cell in the inner cells and boundary cells in the outmost layer. Data are presented as mean ± s.e.m.; n.s., p > 0.05.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Representative phase-contrast and fluorescence images showing cell nuclei, YAP, and merged signals for unpatterned or patterned REF 2c cells at 24 hr or 48 hr. Scale bar: 100 μm.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Colorimetric maps (A) and intensity plots (B) showing the average actin intensity as a function of distance from the center of ring-shaped patterns of REF 2c (n = 19 thick ring patterns, n = 20 thin ring patterns), REF 11b (n = 20 both patterns), and 3T3 cells (n = 20 both patterns). Scale bar: 100 μm.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Structure parameter (kH) as functions of the distance from the pattern centers for ring patterns. The closer kH is to 1, the more circumferentially aligned the actin bundles are (see Materials and methods for more details of kH). n = 5 patterns.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** Fluorescent images showing β-catenin signals, phase contrast images, and schematics of REF 2c, REF 11b, and 3T3 cells at 48 hr. Angle deviation is quantified as a function of normalized distance from center. n = 16 patterns per group. Scale bar: 100 μm. Data are represented as mean ± s.e.m. *, p < 0.05, ***, p < 0.001.
+
+![Figure 4—figure supplement 9.](https://cdn.elifesciences.org/articles/60381/elife-60381-fig4-figsupp9-v2.jpg)
+
+**Figure 4—figure supplement 9.:** Cell area is plotted as a function of distance from the center of the pattern for thick and thin rings. Data are represented as mean ± s.e.m. ***, p < 0.001.
 
 The stress and strain analysis on individual cells from simulations show that the boundary cells and the inner cells are under different mechanical cues (Figure 4—figure supplement 3). Compared to the inner cells, the boundary cells are under more significant and anisotropic strains but more minor tensile stresses, on average. The differences in mechanical cues, especially the anisotropic stretch of the boundary cells might induce the actin cytoskeleton reorganization in cells. Thus, the observed radial alignment may also be due to the adaption of cell shapes to mechanical cues. To evaluate this possibility, we stained a focal adhesion protein, vinculin (Goldmann, 2016; Figure 4—figure supplement 4), and a canonical mechanosensor, YAP (Dupont et al., 2011) at 48 hr when radial alignment is prominent (Figure 4—figure supplement 5). If mechanotransduction is involved, we expect to see higher intensities of vinculin (Sigaut et al., 2018) and/or nuclear YAP (Elosegui-Artola et al., 2017) in the boundary cells. However, we found that the distribution of vinculin was uniform across the pattern area, except for reduced vinculin intensity near the pattern boundary. The overall vinculin intensity per cell in the outmost layer of cells was still comparable with inner cells. We also found that most of the REF 2c cells expressed nuclear YAP, which is independent of confinement and cell alignment status (24 hr vs. 48 hr). These results suggest local activation of these mechanotransduction pathways in boundary cells is unlikely the cause for cell radial alignment, although we cannot rule out the involvement of other mechanotransduction pathways, such as those mediated by mechanosensitive ion channels and certain G protein coupled-receptors (Martino et al., 2018; Holle and Engler, 2011; Marullo et al., 2020).
 
 In summary, we have shown that condensation tendency with stiffness differential near the pattern boundary is sufficient to replicate the radial alignment and increased elongation and area of the boundary cells compared to inner cells in the REF 2c in vitro.
 
-## Actin gradient and condensation tendency maintain under the change of tissue topology
+### Actin gradient and condensation tendency maintain under the change of tissue topology
 
-Our results demonstrated that the emergence of a cell stiffness gradient along the radial direction is critical for cell alignment. We next investigated whether such gradient maintains at the outer boundary under the change of the topology. To do so, we designed two ring patterns with different inner diameters (200 µm and 300 µm) and the same outer diameter (400 µm). We found that surprisingly, both REF 2c and 11b cultured on ring patterns robustly showed an actin intensity gradient from the center to the boundary, regardless of the change of topology and the radius of the inner boundary. In contrast, 3T3 cells did not have an actin gradient for any ring patterns (Figure 4—figure supplement 6). Similar to the circular patterns, we calculated the actin fiber angle deviation and the structure parameter kH for REF 2c cells (Figure 4—figure supplement 7). Compared to the full circle pattern, the distribution of the structure parameter kH in ring patterns reveals that the actin fibers are mostly aligned along the tangential direction at the inner boundary and the tangential alignment decreases along the radius, suggesting a complex interaction between the actin network and the inner boundary. For the thicker ring pattern, the actin network almost becomes isotropic (kH~0.65) at the outer boundary. We then sought to investigate whether changing tissue topology to ring shapes change the REF 2c cell alignment. We found that for both thick and thin ring patterns, the outermost boundary REF 2c cells radially aligned, but not REF 11b cells or 3T3 cells, which are quantified using angle deviation (Figure 4—figure supplement 8). The cell area increased significantly near the exterior pattern boundary for REF 2c (Figure 4—figure supplement 9). Interestingly, the innermost boundary cells aligned circumferentially along the inner boundary.
+Our results demonstrated that the emergence of a cell stiffness gradient along the radial direction is critical for cell alignment. We next investigated whether such gradient maintains at the outer boundary under the change of the topology. To do so, we designed two ring patterns with different inner diameters (200 µm and 300 µm) and the same outer diameter (400 µm). We found that surprisingly, both REF 2c and 11b cultured on ring patterns robustly showed an actin intensity gradient from the center to the boundary, regardless of the change of topology and the radius of the inner boundary. In contrast, 3T3 cells did not have an actin gradient for any ring patterns (Figure 4—figure supplement 6). Similar to the circular patterns, we calculated the actin fiber angle deviation and the structure parameter kH for REF 2c cells (Figure 4—figure supplement 7). Compared to the full circle pattern, the distribution of the structure parameter kH in ring patterns reveals that the actin fibers are mostly aligned along the tangential direction at the inner boundary and the tangential alignment decreases along the radius, suggesting a complex interaction between the actin network and the inner boundary. For the thicker ring pattern, the actin network almost becomes isotropic ($k_{H}~0.65$) at the outer boundary. We then sought to investigate whether changing tissue topology to ring shapes change the REF 2c cell alignment. We found that for both thick and thin ring patterns, the outermost boundary REF 2c cells radially aligned, but not REF 11b cells or 3T3 cells, which are quantified using angle deviation (Figure 4—figure supplement 8). The cell area increased significantly near the exterior pattern boundary for REF 2c (Figure 4—figure supplement 9). Interestingly, the innermost boundary cells aligned circumferentially along the inner boundary.
 
 ## Discussion
 
@@ -82,85 +184,165 @@ In summary, this work reports a unique behavior of REF cells that develop radial
 
 ## Materials and methods
 
-## Cell culture
+### Cell culture
 
 Original Rat Embryo Fibroblast cell line (REF-52; RRID:CVCL_6848) stably expressing yellow fluorescent protein (YFP) - paxillin fusion protein is a gift from Dr. Jianping Fu. REF 11b and 2c subclones were generated by single-cell clone selection. Cells were maintained in high-glucose Dulbecco’s modified Eagle’s medium (DMEM, no glutamine; Invitrogen) supplemented with 10% fetal bovine serum (FBS; Invitrogen), 4 mM L-glutamine (Invitrogen), 100 units/mL penicillin (Invitrogen), and 100 μg/mL streptomycin (Invitrogen). NIH/3T3 cells (a gift from Dr. Mingxu You; RRID:CVCL_0594) were cultured in DMEM medium (with glutamine, Invitrogen) supplemented with 10% calf serum as suggested by ATCC, 100 units/mL penicillin (Invitrogen), and 100 μg/mL streptomycin (Invitrogen). Although not recommended, culturing 3T3 cells using media containing FBS did not significantly change experimental outcomes. Both 3T3 and REF cells were subcultured at about 80% confluency following standard cell culture procedures. All cells were cultured at 37°C and 5% CO2. NIH-3T3 cells were authenticated using the STR profiling service provided by ATCC. All the cell lines have been tested for mycoplasma contamination using PCR-based methods and negative testing results were obtained.
 
-## RNA sequencing and data analysis
+### RNA sequencing and data analysis
 
 Total RNA was extracted from REF subclones 2c and 11b using the Aurum Total RNA Mini Kit (Bio-rad) following the manufacturer's instructions. RNA quality was assessed using 6000 Nano Agilent 2100 Bioanalyzer (Agilent Technologies, Santa Clara, CA). The concentration of the libraries was measured using Qubit 3.0 fluorometer (Life Technologies, Carlsbad, CA). cDNA libraries were single-end sequenced in 76 cycles using a NextSeq 500 Kit v2 (FC-404–2005, Illumina, San-Diego, CA). High-throughput sequencing was performed using NextSeq500 sequencing system (Illumina, San-Diego, CA) in the Genomic Resource Laboratory of the University of Massachusetts, Amherst. All sequencing data were uploaded to the GEO public repository (https://www.ncbi.nlm.nih.gov/geo/) and were assigned series GSE148155. Validation of sequence quality was performed using the BaseSpace cloud computing service supported by Illumina (BaseSpace Sequence Hub, https://basespace.illumina.com/home/index). RNA-seq reads were aligned to the rat reference genome (Rattus norvegicus UCSC rn5) using TopHat Alignment. Then, the differential gene expression analyses were performed by Cufflinks Assembly and DE using previous alignment results produced by the TopHat app as input. Shortlists of significantly differentially expressed genes were identified by applying thresholds of 2-fold differential expression and false discovery rate q ≤ 0.05.
 
-## Cell migration assay
+### Cell migration assay
 
 To track the migration of patterned REF 2c cells, brightfield live-cell imaging was performed at 37°C, 5% CO2 using an automated digital microscope with a 10× objective with a gas controller (Cytation three microplate reader, BioTek Instruments Inc, Winooski, VT, USA). Images were collected every 10 min for 24 hr. Acquired brightfield images were merged and corrected for frame drift. To analyze cell migration, individual cell positions were manually tracked using CellTracker software (Piccinini et al., 2016) implemented in MATLAB (MATLAB R2020a, MathWorks). The average speed for each cell was calculated as the total migration length of each cell divided by the total time. Mann–Whitney test was used to compare the migration length and average speed of the cells since the data were not normally distributed (Shapiro-Wilk test). Statistical differences were defined as where *, p < 0.05; **, p <0.01; ***, p <0.001.
 
-## Microcontact printing
+### Microcontact printing
 
 Soft lithography was used to generate patterned polydimethylsiloxane (PDMS) stamps from negative SU8 molds that were fabricated using photolithography. These PDMS stamps were used to generate patterned cell colonies using microcontact printing, as described previously (Zhu et al., 2019). Briefly, to generate patterned cell colonies on flat PDMS surfaces, round glass coverslips (diameter = 25 mm, Fisher Scientific) were spin-coated (Spin Coater; Laurell Technologies) with a thin layer of PDMS prepolymer comprising of PDMS base monomer and curing agent (10:1 w/w; Sylgard 184, Dow-Corning). PDMS coating layer was then thermally cured at 110°C for at least 24 hr. In parallel, PDMS stamps were incubated with a fibronectin solution (50 µg·ml−1, in deionized water) for 1 hr at room temperature before being blown dry with a stream of nitrogen. Excess fibronectin was then washed away by distilled water and the stamps were dried under nitrogen. Fibronectin-coated PDMS stamps were then placed on top of ultraviolet ozone-treated PDMS (7 min, UV-ozone cleaner; Jetlight) on coverslips with a conformal contact. The stamps were pressed gently to facilitate the transfer of fibronectin to PDMS-coated coverslips. After removing stamps, coverslips were disinfected by submerging in 70% ethanol. Protein adsorption to PDMS surfaces without printed fibronectin was prevented by incubating coverslips in 0.2% Pluronic F127 solution (P2443-250G, Sigma) for 30 min at room temperature. Coverslips were rinsed with PBS before placed into tissue culture plates for cell seeding. For patterned cell colonies, PDMS stamps containing circular patterns with a diameter of 344 µm, and ring patterns with an outer diameter of 400 µm and inner diameter of either 200 µm (thick ring) or 300 µm (thin ring) were used.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Four percent paraformaldehyde (Electron Microscopy Sciences) was used for cell fixation before permeabilization with 0.1% Triton X-100 (Fisher Scientific). Cells were blocked in 10% donkey serum for 1 hr at room temperature. Primary antibodies used were anti-β-catenin from rabbit (51067–2-AP, Proteintech), anti-α-tubulin from mouse (66031–1-Ig, Proteintech), anti-p-myosin from rabbit (3671T, Cell Signalling), anti-vinculin from mouse (V9131, Sigma), and anti-YAP from mouse (sc-101199, Santa Cruz). For immunolabeling, donkey-anti goat Alexa Fluor 488, donkey-anti rabbit Alexa Fluor 555, and donkey-anti mouse Alexa Fluor 647 were used. For actin filaments visualization, Alexa Fluor 488 conjugated phalloidin (Invitrogen) was used. Samples were counterstained with 4,6-diamidino-2- phenylindole (DAPI; Invitrogen) to visualize the cell nucleus.
 
-## Small-molecule drugs treatment assays
+### Small-molecule drugs treatment assays
 
 Blebbistatin (10 µM, Cayman Chemical, cat.no.13013), Y27632 (10 µM, Cayman Chemical, cat.no.10005583), and Aphidicolin (1 µg/ml, Cayman Chemical, cat.no.14007) were dissolved in DMSO. Ethylene Glycol Tetraacetic Acid, (EGTA, 2 mM, Santa Cruz Biotechnology, cat.no. sc-3593A) was prepared in distilled water. Cells were treated with these drugs for 24 hr at 37°C.
 
-## Traction force measurement
+### Traction force measurement
 
-The protocol for generating microposts and measuring traction force has been published previously (Xie et al., 2017). For single cell traction force measurement, REF cells were incubated for 48 hr on DiI stained micropost arrays, then live-cell imaged. Microposts with a diameter of 2 µm and a height of 8.4 µm (effective modulus Eeff =5 kPa) were used. Custom MATLAB script was written to quantify post deflection using Equation 1:(1)F=(3EIL3)x,where F is the force applied to the tip of the post, E is the elastic modulus of PDMS, I is the area moment of inertia, L is the post height, and x is the deflection of the post tip (MathWorks; https://www.mathworks.com/).
+The protocol for generating microposts and measuring traction force has been published previously (Xie et al., 2017). For single cell traction force measurement, REF cells were incubated for 48 hr on DiI stained micropost arrays, then live-cell imaged. Microposts with a diameter of 2 µm and a height of 8.4 µm (effective modulus Eeff =5 kPa) were used. Custom MATLAB script was written to quantify post deflection using Equation 1:
 
-## Image analysis
+$$
+F=(\frac{3EI}{L^{3}})x,
+$$
+
+where F is the force applied to the tip of the post, E is the elastic modulus of PDMS, I is the area moment of inertia, L is the post height, and x is the deflection of the post tip (MathWorks; https://www.mathworks.com/).
+
+### Image analysis
 
 Phase contrast and fluorescence images of patterned cell colonies were recorded using an inverted epifluorescence microscope (Leica DMi8; Leica Microsystems) equipped with a monochrome charge-coupled device (CCD) camera. Since the cell colonies were circle-like in shape and the approximate radii of the circles were known, the centers of the colonies could be found using the circle Hough transformation which is the MATLAB function imfindcircles. The distance vector between the center of each cell colony and the center of the image frame shifted each pixel of the image. Using the shifted images, the stacked images could be generated by adding the values at the same position of the pixels. The fluorescence intensity of each pixel in stacked images was normalized by the maximum intensity identified in each image. To plot average intensity as a function of distance from the pattern centroid, the stacked intensity maps were divided into 310, 186, and 91 concentric zones for the circle, thick ring, and thin ring, respectively, with single pixel width. The average pixel intensity in each concentric zone was calculated and plotted against the normalized distance of the concentric zone from the pattern centroid.
 
-## Fiber angle deviation
+### Fiber angle deviation
 
 The vector module of the Orientation J plug-in (Rezakhaniha et al., 2012) was used with Fiji (Schneider et al., 2012) to quantify the angle deviation of actin and α-tubulin stained fibers in REF cell images. Five images were analyzed for each group (circle, thick ring, thin ring). The mean fiber angle deviation was plotted versus the normalized distance from the center of the pattern. A step size of 172/31 ≈ 5.55 µm for the circle, 100/18 ≈ 5.56 µm for the thick ring, and 50/9 ≈ 5.56 µm for the thin ring patterns were used to generate approximately the same number of points respective to the size of the pattern. The schematic of (α), fiber angle deviation from the radius, was drawn in Figure 3—figure supplement 4.
 
-## Structure tensor
+### Structure tensor
 
-The structure parameter, kH, was calculated from histograms developed from the variation of fiber angle deviation at each concentric distance from the center or innermost edge of the patterns (Figure 3—figure supplement 4 and Figure 4—figure supplement 7). We used a 2D structure tensor H to quantify the averaged fiber orientation of the fibers at each point along the radius (Wu and Ben Amar, 2015):(2)H=1π∫−π/2π/2ρ(α)Eα⊗Eαdα=kHI+(1−2kH)ER⊗ERwhere α is the angle between the outward radial direction ER and actin fiber direction Eα (See Figure 3—figure supplement 4) and ρ(α) is the normalized orientation density function satisfying ρα=ρ(-α) and 1π∫-π/2π/2ραdα=1. As I is the 2 × 2 identity matrix and ER⊗ER=[1000], the structure tensor H can be represented by the structure parameter(3)kH=1π∫-π/2π/2ρ(α)(sin⁡α)2dα.
+The structure parameter, kH, was calculated from histograms developed from the variation of fiber angle deviation at each concentric distance from the center or innermost edge of the patterns (Figure 3—figure supplement 4 and Figure 4—figure supplement 7). We used a 2D structure tensor $H$ to quantify the averaged fiber orientation of the fibers at each point along the radius (Wu and Ben Amar, 2015):
 
-By definition, 0 ≤ kH ≤ 1, and the ﬁber distribution is more aligned with the radial (circumferential) direction as kH decreases (increases). kH = 0.5 indicates that the actin ﬁber distribution is not aligned with either direction. From the actin intensity field, our quantification shows that kH is approximately 0.4 ~ 0.6 along the radius, suggesting an isotropic distribution of the fiber orientation (Figure 3—figure supplement 4D). The scripts for structure tensor calculation are available through Github, copy archived at swh:1:rev:0a5972451e8e747ea755cba6613ef0d81c8aabfd (St Pierre and Wu, 2021).
+$$
+H=\frac{1}{\pi}\int_{−\pi/2}^{\pi/2}ρ(\alpha)E_{\alpha}⊗E_{\alpha}d\alpha=k_{H}I+(1−2k_{H})E_{R}⊗E_{R}
+$$
 
-## Voronoi cell mathematical model
+where $\alpha$ is the angle between the outward radial direction $E_{R}$ and actin fiber direction $E_{\alpha}$ (See Figure 3—figure supplement 4) and $ρ(\alpha)$ is the normalized orientation density function satisfying $ρ\alpha=ρ(-\alpha)$ and $\frac{1}{\pi}\int_{-\pi/2}^{\pi/2}ρ\alphad\alpha=1.$ As $I$ is the 2 × 2 identity matrix and $E_{R}⊗E_{R}=[1000]$, the structure tensor H can be represented by the structure parameter
 
-## Cell-tissue configurations
+$$
+k_{H}=\frac{1}{\pi}\int_{-\pi/2}^{\pi/2}ρ(\alpha)(sin⁡\alpha)^{2}d\alpha.
+$$
 
-We begin with a 2D domain and generate polygonal cells from the 2D Voronoi tessellation to represent the cell configurations. The graph of Voronoi cell tessellation is dual to the Delaunay triangulations. In particular, the relation between a trio of adjacent Voronoi cell centers (<ri, rj, rk>) and its corresponding vertex (ω<i,j,k>) is given by the following equations (Bi et al., 2016, Olaranont, 2019):(4)ω→<i,j,k>=ar→i+br→j+cr→kwherea=‖r→j−r→k‖2(r→i−r→j)⋅(r→i−r→k)/D,b=‖r→i−r→k‖2(r→j−r→i)⋅(r→j−r→k)/D,c=‖r→i−r→j‖2(r→k−r→i)⋅(r→k−r→j)/D,(5)D=2‖(r→i−r→j)×(r→j−r→k)‖2.
+By definition, 0 ≤ kH ≤ 1, and the ﬁber distribution is more aligned with the radial (circumferential) direction as kH decreases (increases). kH = 0.5 indicates that the actin ﬁber distribution is not aligned with either direction. From the actin intensity field, our quantification shows that $k_{H}$ is approximately 0.4 ~ 0.6 along the radius, suggesting an isotropic distribution of the fiber orientation (Figure 3—figure supplement 4D). The scripts for structure tensor calculation are available through Github, copy archived at swh:1:rev:0a5972451e8e747ea755cba6613ef0d81c8aabfd (St Pierre and Wu, 2021).
 
-## Cell prestretch and differential stiffness
+### Voronoi cell mathematical model
 
-To describe the monolayer mechanics, we define a total energy that is generally a function of the areas of cells Aα and lengths of junctions lβα:(6)Etotal=∑αEα;Eα=12Kα(gA0α)(AαgA0α-1)2+∑β∈Γλlβα,where α indicates each cell, β indexes junctions of cell α, and Γ is the set of junctions of cell α with tension. For modeling epithelial cells, the tension is considered on each intercellular junction to represent the net mechanical effect of actomyosin contraction and intercellular adhesion at the apical surface of the tissue. We apply tension to the intercellular junctions, and on the junctions located at the boundaries of the micropattern to ensure the circularity of the microtissue (see Geometric confinement below). To model the condensation tendency, we introduce the prestretch 0<g≤1 which decreases the intrinsic cell size A0α of each cell. To describe the stiffness gradient between the boundary cells and interior cells (Figure 4A, the stiffness of boundary cells is smaller than or equal to that of the interior cells), we introduce the stiffness differential parameter 0<ρ≤1, which is the ratio of the stiffness Kα between boundary and interior cells. To describe the contractility gradient between the boundary cells and interior cells (Figure 4—figure supplement 2), the contractility of boundary cells is larger than or equal to that of the interior cells, meaning the prestretch of the boundary cells is smaller than or equal to that of the interior cells, we introduce the contractility differential parameter 0<ρg≤1, which is the ratio of the prestretch between boundary and interior cells.
+#### Cell-tissue configurations
 
-## Mechanical equilibrium among cells
+We begin with a 2D domain and generate polygonal cells from the 2D Voronoi tessellation to represent the cell configurations. The graph of Voronoi cell tessellation is dual to the Delaunay triangulations. In particular, the relation between a trio of adjacent Voronoi cell centers (<ri, rj, rk>) and its corresponding vertex (ω<i,j,k>) is given by the following equations (Bi et al., 2016, Olaranont, 2019):
 
-Etotal is a function of the coordinates of vertices via its dependence on lengths of junctions and areas of cells. In particular, the length of each junction is lβα=‖ω→β,1−ω→β,2‖ where 1 and 2 indicate the adjacent vertices of β junction, and the area of each cell is Aα=12∑m=0zα−1‖ω→mα×ω→m+1α‖, where zα is the number of vertices of cell α (Notice that ω→zαα=ω→0α). In addition, the coordinates of vertices depend on the coordinates of a trio of neighboring Voronoi cell centers through Equations (4) and (5). By the chain rule, we can solve the cell configurations by minimizing the energy Etotal following the dynamics of cell centers:drxαdt=Fxα≡−∂Etotal∂rxα=−(∑m∂Eα∂ωmxa∂ωmxa∂rxα+∑m∂Eα∂ωmyα∂ωmya∂rxα),(7)dryαdt=Fyα≡−∂Etotal∂ryα=−(∑m∂Eα∂ωmxa∂ωmxa∂rya+∑m∂Eα∂ωmya∂ωmya∂rya)where m is the index of the vertices of cell α. The subscripts x and y indicate the component x or y of the vector we are considering.
+$$
+\omega→_{<i,j,k>}=ar→_{i}+br→_{j}+cr→_{k}
+$$
 
-## Geometric confinement at the boundary
+where
 
-We define a full circle or annulus inside the squared domain to initialize the micropattern, by calibrating the size ratio between individual cell and the micropattern according to the in vitro setup. Initially, there are 625 cells in the squared domain. From the experiments, the number of cells in the circular pattern is approximately 121 cells. Therefore, to simulate the results, the circular domain is demarcated by thresholding the distance of cells from the origin which covers around 120–124 cells depending on the random initial configuration. To round up the circular border, we minimize the following energy:Einitial=∑αEα+12kbA0(AA0-1)2;Eα=12KαA0α(AαA0α-1)2+∑β∈Γλlβα+∑β∈Γoutλoutlβαwith Kα=1,λ=15,λout=20, and kb=0.1. The tension term ∑β∈Γoutλoutlβα is included to ensure the circularity of the boundary, and the term 12kbA0(AA0-1)2 is included to ensure that the total area A of the micropattern is close to the initial tissue area A0. Once Einitial reached a local minimum, the centroids of the boundary cells and cells outside of the circular domain were fixed. When the prestretch, stiffness differential and tension on the intercellular junctions are considered in Equation (6), all the non-boundary cell centers move and reach equilibrium following Equation (7).
+$$
+a=‖r→_{j}−r→_{k}‖^{2}(r→_{i}−r→_{j})⋅(r→_{i}−r→_{k})/D,
+$$
 
-## Cell geometry analysis
 
-For the cell elongation parameter and angle deviation (Figure 4B), we first compute the shape tensor Sα=1Zα∑i=1Zαz→αi⊗z→αi where z→αi is the vector from the cell centroid to vertex i (Nestor-Bergmann et al., 2018). The shape tensor comes with two positive eigenvalues λa and λb and their corresponding eigenvectors.
 
-The cell elongation parameter is computed by max(λa,λb)/min(λa,λb). The angle deviation is quantified between the eigenvector of max(λa,λb) and the local radial vector.
+$$
+b=‖r→_{i}−r→_{k}‖^{2}(r→_{j}−r→_{i})⋅(r→_{j}−r→_{k})/D,
+$$
 
-## Stress and strain analysis
 
-We compute the average stress and strain on each Voronoi-cell by the following procedure. The average stress on the cell α is calculated asσα=1Aα∬∂Ωα∪ΩασdA=1Aα∑β=1ZαΛβα2t^βα⊗t^βαlβα+K(AαgαA0α−1)Iwhere t^βα denotes the unit vector along the junction β. Zα denotes the total number of junctions (or vertices) of the cell (Batchelor, 1970). The radial and circumferential stresses (Figure 4—figure supplement 3) are computed by r^⋅σαr^ and θ^⋅σαθ^, respectively, where r^ is the local unit radial vector and θ^ is the local unit tangential vector.
 
-For the strain, we rescale the two eigenvalues of the shape tensor Sα by Aα/πλaλb such that the rescaled λa and λb represent the two principal axes of the ellipses with cell area Aα. By assuming the stress-free cell configuration as a circle with area gA0α, we compute the two principal cell strains of the cell as λa/gA0α/π and λb/gA0α/π (Figure 4—figure supplement 3).
+$$
+c=‖r→_{i}−r→_{j}‖^{2}(r→_{k}−r→_{i})⋅(r→_{k}−r→_{j})/D,
+$$
+
+
+
+$$
+D=2‖(r→_{i}−r→_{j})\times(r→_{j}−r→_{k})‖^{2}.
+$$
+
+### Cell prestretch and differential stiffness
+
+To describe the monolayer mechanics, we define a total energy that is generally a function of the areas of cells $A^{\alpha}$ and lengths of junctions $l_{\beta}^{\alpha}$:
+
+$$
+E_{total}=\sum\alphaE^{\alpha};E^{\alpha}=\frac{1}{2}K^{\alpha}(gA_{0}^{\alpha})(\frac{A^{\alpha}}{gA_{0}^{\alpha}}-1)^{2}+\sum\beta\inΓ\lambdal_{\beta}^{\alpha},
+$$
+
+where $\alpha$ indicates each cell, $\beta$ indexes junctions of cell $\alpha$, and $Γ$ is the set of junctions of cell $\alpha$ with tension. For modeling epithelial cells, the tension is considered on each intercellular junction to represent the net mechanical effect of actomyosin contraction and intercellular adhesion at the apical surface of the tissue. We apply tension to the intercellular junctions, and on the junctions located at the boundaries of the micropattern to ensure the circularity of the microtissue (see Geometric confinement below). To model the condensation tendency, we introduce the prestretch $0<g\leq1$ which decreases the intrinsic cell size $A_{0}^{\alpha}$ of each cell. To describe the stiffness gradient between the boundary cells and interior cells (Figure 4A, the stiffness of boundary cells is smaller than or equal to that of the interior cells), we introduce the stiffness differential parameter $0<ρ\leq1$, which is the ratio of the stiffness $K^{\alpha}$ between boundary and interior cells. To describe the contractility gradient between the boundary cells and interior cells (Figure 4—figure supplement 2), the contractility of boundary cells is larger than or equal to that of the interior cells, meaning the prestretch of the boundary cells is smaller than or equal to that of the interior cells, we introduce the contractility differential parameter $0<ρ_{g}\leq1$, which is the ratio of the prestretch between boundary and interior cells.
+
+### Mechanical equilibrium among cells
+
+$E_{total}$ is a function of the coordinates of vertices via its dependence on lengths of junctions and areas of cells. In particular, the length of each junction is $l_{\beta}^{\alpha}=‖\omega→_{\beta,1}−\omega→_{\beta,2}‖$ where 1 and 2 indicate the adjacent vertices of $\beta$ junction, and the area of each cell is $A^{\alpha}=\frac{1}{2}\summ=0z^{\alpha}−1‖\omega→_{m}^{\alpha}\times\omega→_{m+1}^{\alpha}‖$, where $z^{\alpha}$ is the number of vertices of cell $\alpha$ (Notice that $\omega→_{z^{\alpha}}^{\alpha}=\omega→_{0}^{\alpha}$). In addition, the coordinates of vertices depend on the coordinates of a trio of neighboring Voronoi cell centers through Equations (4) and (5). By the chain rule, we can solve the cell configurations by minimizing the energy $E_{total}$ following the dynamics of cell centers:
+
+$$
+\frac{dr_{x}^{\alpha}}{dt}=F_{x}^{\alpha}≡−\frac{∂E_{total}}{∂r_{x}^{\alpha}}=−(\summ\frac{∂E^{\alpha}}{∂\omega_{mx}^{a}}\frac{∂\omega_{mx}^{a}}{∂r_{x}^{\alpha}}+\summ\frac{∂E^{\alpha}}{∂\omega_{my}^{\alpha}}\frac{∂\omega_{my}^{a}}{∂r_{x}^{\alpha}}),
+$$
+
+
+
+$$
+\frac{dr_{y}^{\alpha}}{dt}=F_{y}^{\alpha}≡−\frac{∂E_{total}}{∂r_{y}^{\alpha}}=−(\summ\frac{∂E^{\alpha}}{∂\omega_{mx}^{a}}\frac{∂\omega_{mx}^{a}}{∂r_{y}^{a}}+\summ\frac{∂E^{\alpha}}{∂\omega_{my}^{a}}\frac{∂\omega_{my}^{a}}{∂r_{y}^{a}})
+$$
+
+where $m$ is the index of the vertices of cell $\alpha$. The subscripts x and y indicate the component x or y of the vector we are considering.
+
+### Geometric confinement at the boundary
+
+We define a full circle or annulus inside the squared domain to initialize the micropattern, by calibrating the size ratio between individual cell and the micropattern according to the in vitro setup. Initially, there are 625 cells in the squared domain. From the experiments, the number of cells in the circular pattern is approximately 121 cells. Therefore, to simulate the results, the circular domain is demarcated by thresholding the distance of cells from the origin which covers around 120–124 cells depending on the random initial configuration. To round up the circular border, we minimize the following energy:
+
+$$
+E_{initial}=\sum\alphaE^{\alpha}+\frac{1}{2}k_{b}A_{0}(\frac{A}{A_{0}}-1)^{2};
+$$
+
+
+
+$$
+E^{\alpha}=\frac{1}{2}K^{\alpha}A_{0}^{\alpha}(\frac{A^{\alpha}}{A_{0}^{\alpha}}-1)^{2}+\sum\beta\inΓ\lambdal_{\beta}^{\alpha}+\sum\beta\inΓ_{out}\lambda_{out}l_{\beta}^{\alpha}
+$$
+
+with $K^{\alpha}=1,\lambda=15,\lambda_{out}=20,$ and $k_{b}=0.1.$ The tension term $\sum\beta\inΓ_{out}\lambda_{out}l_{\beta}^{\alpha}$ is included to ensure the circularity of the boundary, and the term $\frac{1}{2}k_{b}A_{0}(\frac{A}{A_{0}}-1)^{2}$ is included to ensure that the total area $A$ of the micropattern is close to the initial tissue area $A_{0}$. Once $E_{initial}$ reached a local minimum, the centroids of the boundary cells and cells outside of the circular domain were fixed. When the prestretch, stiffness differential and tension on the intercellular junctions are considered in Equation (6), all the non-boundary cell centers move and reach equilibrium following Equation (7).
+
+### Cell geometry analysis
+
+For the cell elongation parameter and angle deviation (Figure 4B), we first compute the shape tensor $S_{\alpha}=\frac{1}{Z_{\alpha}}\sumi=1Z_{\alpha}z→_{\alpha}^{i}⊗z→_{\alpha}^{i}$ where $z→_{\alpha}^{i}$ is the vector from the cell centroid to vertex i (Nestor-Bergmann et al., 2018). The shape tensor comes with two positive eigenvalues $\lambda_{a}$ and $\lambda_{b}$ and their corresponding eigenvectors.
+
+The cell elongation parameter is computed by $max(\lambda_{a},\lambda_{b})/min(\lambda_{a},\lambda_{b})$. The angle deviation is quantified between the eigenvector of $max(\lambda_{a},\lambda_{b})$ and the local radial vector.
+
+### Stress and strain analysis
+
+We compute the average stress and strain on each Voronoi-cell by the following procedure. The average stress on the cell $\alpha$ is calculated as
+
+$$
+\sigma^{\alpha}=\frac{1}{A^{\alpha}}∬∂Ω^{\alpha}∪Ω^{\alpha}\sigmadA=\frac{1}{A^{\alpha}}\sum\beta=1Z^{\alpha}\frac{Λ_{\beta}^{\alpha}}{2}t^_{\beta}^{\alpha}⊗t^_{\beta}^{\alpha}l_{\beta}^{\alpha}+K(\frac{A^{\alpha}}{g^{\alpha}A_{0}^{\alpha}}−1)I
+$$
+
+where $t^_{\beta}^{\alpha}$ denotes the unit vector along the junction $\beta$. $Z_{\alpha}$ denotes the total number of junctions (or vertices) of the cell (Batchelor, 1970). The radial and circumferential stresses (Figure 4—figure supplement 3) are computed by $r^⋅\sigma^{\alpha}r^$ and $\theta^⋅\sigma^{\alpha}\theta^$, respectively, where $r^$ is the local unit radial vector and $\theta^$ is the local unit tangential vector.
+
+For the strain, we rescale the two eigenvalues of the shape tensor $S_{\alpha}$ by $\sqrt{A^{\alpha}/\pi\lambda_{a}\lambda_{b}}$ such that the rescaled $\lambda_{a}$ and $\lambda_{b}$ represent the two principal axes of the ellipses with cell area $A^{\alpha}$. By assuming the stress-free cell configuration as a circle with area $gA_{0}^{\alpha}$, we compute the two principal cell strains of the cell as $\lambda_{a}/\sqrt{gA_{0}^{\alpha}/\pi}$ and $\lambda_{b}/\sqrt{gA_{0}^{\alpha}/\pi}$ (Figure 4—figure supplement 3).
 
 The scripts for the Voronoi cell model are available through Github, copy archived at swh:1:rev:c943c5d773d4748b9fbc96c9c846279e04173d12 (Olaranont and St Pierre, 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 Student’s t-test was used when there were two groups. One-way ANOVA and post-hoc Tukey’s test were used for three or more groups. Mann–Whitney test was used for data that was found not normally distributed. Data are represented as mean ± s.e.m. The n values are determined using G*Power, using the standard deviation and effect size from pilot experiments, with a type I error rate α = 0.05 and power of 80%. In all cases, the actual n values are significantly larger than the desired n value. All the experiments were repeated at least three times independently (biological replicates), and in each experiment, at least two technical replicates (replicates within each experiment) were used. Samples were randomly allocated into experimental groups in the drug treatment experiments, while masking was not used during group allocation, data collection, and/or data analysis.
 
-## Customized MATLAB scripts
+### Customized MATLAB scripts
 
 The MATLAB scripts used in the modeling and quantification of this work were made available to the research community.
 

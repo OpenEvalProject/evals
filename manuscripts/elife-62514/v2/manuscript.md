@@ -35,9 +35,21 @@ Here using simultaneous optical trapping and confocal fluorescence microscopy, w
 
 ## Results
 
-## Piconewton tension across individual actin filaments directly activates binding by α-catenin
+### Piconewton tension across individual actin filaments directly activates binding by α-catenin
 
 To determine whether the actin-binding activity of vinculin or α-catenin could be regulated solely by force across F-actin, we performed correlative force and fluorescence measurements with a commercial instrument (Hashemi Shabestari et al., 2017) that combines dual-trap optical tweezers and confocal fluorescence microscopy (Figure 1A). In these experiments, Alexa-555 phalloidin-stabilized biotinylated actin filaments were captured from a laminar stream across a microfluidic flow-cell between two optically trapped streptavidin-coated beads. Tethered filaments were then transferred to a reservoir containing Halo-tagged ABD labeled with Alexa-488 and subjected to a constant velocity pulling protocol while simultaneously recording confocal movies of both the actin and ABD fluorescence signals.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig1-v2.jpg)
+
+**Figure 1.:** (A) Top: Geometry of the microfluidic chamber. Bottom: Cartoon of correlative single-filament force and fluorescence assay. (B and C) Representative single-filament constant velocity pulling experiments (0.1 µm/s) for vinculin ABD (B) and α-catenin ABD (C). Top: Force versus time plot. Red dots, raw data; black dots, force values binned to an interval of confocal frames. Middle: Montage of confocal frames of actin and ABD channels. Positions of beads are indicated with yellow circles (diameter, 4 μm). Bottom: IABD/Iactin ratio versus time plot. High-force: Average of five intensity ratios before actin breakage; low-force: average of five intensity ratios immediately before high-force average. Concentration of vinculin ABD or α-catenin ABD: 2 μM. (D and E) Paired analysis of low-force and high-force averages across trials for vinculin ABD (D) (N = 6, p=0.84) and α-catenin ABD (E) (N = 7, p=0.0156). Wilcoxon signed-rank test: *p<0.05; n.s. (not significant), p>0.05. (F and G) Scatter plots of normalized fluorescence ratios versus force. Statistical comparisons are between intensity ratios divided into two bins: force below and above 1 pN or 2.2 pN (dotted lines) for vinculin ABD (F) (1 pN: below: n = 62, above: n = 20, p=0.65; 2.2 pN: below: n = 72, above: n = 10, p=0.74), and force below and above 1 pN or 1.8 pN (dotted lines) for α-catenin ABD (G) (1pN: below: n = 53, above: n = 15, p<0.0001; 1.8 pN: below: n = 59, above: n = 9, p=0.0002). KS test: ****p<0.0001; ***p<0.001; n.s., p>0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence alignment (see Materials and methods) of human vinculin, αE-catenin, αN-catenin, and αT-catenin. (B) Sequence alignment of human vinculin and metavinculin.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bar plots of mean ± standard deviation of high-force and low-force averages for all trials displayed in Figure 1D and E. (B–D) Single-filament analysis was achieved by excluding actin bundles from the dataset, including multiple actin filaments of different lengths attached to both beads (B); multiple actin filaments of different lengths not all attached to both beads (C); and multiple actin filaments of the same length attached to both beads (D).
 
 We frequently observed a monotonic increase in force once a threshold extension was reached, followed by an instantaneous return to baseline (Figure 1B,C; Figure 1—figure supplement 2A,B), consistent with resistance from a tether composed of one or more actin filaments extended beyond their resting length (visible as straightening in the actin fluorescence channel) followed by force-induced breakage. To correlate force with ABD binding, we calculated the background-subtracted ratio of the ABD fluorescence intensity to the actin intensity (which we refer to as ‘IABD/Iactin’) in each frame of the confocal movies (Materials and methods; Figure 1B,C, bottom), as well as the corresponding average force during frame acquisition (Figure 1B,C, top, black connected points). Apparent binding by the vinculin ABD fluctuated and did not change in response to load during individual pulling trajectories (Figure 1B), consistent with a previous report that mechanical stimulation does not promote cytoskeletal localization of vinculin in cells (Schiffhauer et al., 2016). However, we observed an apparent steady increase in binding along individual tethers by the α-catenin ABD (Figure 1C), consistent with force-activated binding. To quantify this phenomenon, due to the inherent fluctuations of individual IABD/Iactin traces in this assay (potentially due to dynamic changes in ABD binding density along individual tethers and instability in the focus during confocal imaging), we first focused our analysis on a subset of long-lived tethers which featured at least 10 frames. We examined the difference between a ‘high-force’ average, defined as the mean IABD/Iactin value from the five frames before the final tether rupture, and a ‘low-force’ average, defined as the mean IABD/Iactin value from the five preceding frames during each recording (Figure 1B,C). Paired analysis of low-force/high force averages (Materials and methods) showed a significant increase consistent with force-activated binding only by the α-catenin ABD (Figure 1D and E; Figure 1—figure supplement 2A).
 
@@ -47,9 +59,25 @@ Based on these criteria, only 21 tethers (11 vinculin ABD and 10 α-catenin ABD)
 
 To quantify this phenomenon, we initially examined the distribution of intensity ratios above and below the subjectively identified 1 pN threshold, finding a significant difference only for the α-catenin ABD (Figure 1F,G). To objectively define the threshold force, we performed K-means clustering analysis (Materials and methods) which revealed that the α-catenin ABD force-fluorescence distribution could be optimally divided into two clusters with a threshold force of 1.8 pN. We found that the intensity ratios were also significantly different between these clusters (Figure 1G). Although there was no obvious correlation between force and binding by the vinculin ABD, as a control we nevertheless used K-means to divide the data into two clusters, which separated at a threshold force of 2.2 pN. Consistent with the lack of a force-binding correlation for the vinculin ABD, we find no significant difference between the distribution of intensity ratios in these two clusters (Figure 1F). This analysis, which is insensitive to the exact force threshold employed, supports a force-dependent increase in F-actin binding only for the α-catenin ABD. Collectively, these data suggest that piconewton-level tensile force along individual actin filaments is sufficient to activate α-catenin’s F-actin binding.
 
-## Physiological forces generated by myosin motors activate F-actin binding by α-catenin
+### Physiological forces generated by myosin motors activate F-actin binding by α-catenin
 
 As ~1 pN is the magnitude of force generated by individual myosin motor domains (Finer et al., 1994), we hypothesized α-catenin’s F-actin binding would also be enhanced by physiological forces generated by myosins. To test this hypothesis, we developed a novel adaptation of the gliding filament assay (Kron and Spudich, 1986) to apply force to filaments mimicking actomyosin contractility in vivo (Figure 2A). In our preparation, plus-end directed myosin V motor proteins and minus-end directed myosin VI motor proteins are randomly surface-immobilized inside a flow chamber assembled on a cover glass for TIRF, resulting in a configuration where the motors are poised to engage in tug-of-war along non-stabilized, rhodamine-labeled actin filaments. A Halo-tagged, JF-646 (Grimm et al., 2015) labeled ABD is then flowed into the chamber in the absence of ATP, and a 2-color TIRF movie is recorded to visualize the basal level of actin binding when filaments are anchored by the rigor-state motors. The ABD is then re-introduced into the same chamber in the presence of ATP to activate the motors, and a second movie is recorded to visualize binding in the presence of force generation. Visual inspection of -ATP/+ATP TIRF movie pairs for the vinculin and α-catenin ABDs suggest they respond to motor-generated forces on F-actin distinctly. Actin localization of the vinculin ABD did not change in response to motor activity (Figure 2B; Figure 2—video 1); however, α-catenin ABD’s actin localization was enhanced upon motor activation, indicative of force-activated actin binding (Figure 2C; Figure 2—video 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon of TIRF force reconstitution assay utilizing surface-anchored myosin motor proteins with opposing directionality. (B and C) TIRF assays of vinculin ABD (B) and α-catenin ABD (C). Left: Representative movie frames of actin and ABD channels in the absence (top) and presence (bottom) of ATP to activate motors. Scale bar, 20 μm. Right: Montages of individual filament regions. Scale bar, 5 μm. Concentration of vinculin ABD or α-catenin ABD: 2 μM. (D and E) Time-averaged IABD/Iactin intensity ratio distributions of filament regions before and after ATP addition for vinculin ABD (D, quantification of (B)) and α-catenin ABD (E, quantification of (C)). (F and G) Paired analysis of the overall average intensity ratio change before and after ATP addition for vinculin ABD (F) (N = 9, p=0.50) and α-catenin ABD (G) (N = 6, p=0.031). Wilcoxon signed-rank test: *p<0.05; n.s. (not significant), p>0.05.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Workflow of quantifying and comparing single-filament region intensity ratios (IABD/Iactin) in the TIRF assay. Scale bar, 20 μm. (B) Time-averaged IABD/Iactin intensity ratio distributions of single-filament regions before and after ATP addition for vinculin ABD (left) and α-catenin ABD (right). Along with data presented in Figure 1D and E, these data were used in the analysis presented in Figure 1F and G. (C) Representative TIRF-assay movie frames of actin (left) and metavinculin ABD (right) channels in the absence (top) and presence (bottom) of ATP to activate motors. Scale bar, 40 μm. Concentration of metavinculin ABD: 2 μM. (D) Paired analysis of the overall average intensity ratio change before and after ATP addition for metavinculin ABD (N = 7, p=0.47). Wilcoxon signed-rank test: n.s. (not significant), p>0.05.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Related to Figure 2. TIRF force reconstitution assays performed with only myosin VI (first panel) or myosin V motor (second panel). Top: Representative movie frames in the presence and absence of ATP. Scale bar, 40 μm. Bottom: Paired analysis of the overall intensity ratio changes upon ATP addition. Wilcoxon signed-rank test: n.s. (not significant), p>0.05. Constructs assayed were: vinculin ABD (myosin VI, N = 6, p=0.43); vinculin ABD (myosin V, N = 6, p=0.15); α-catenin ABD (myosin VI, N = 6, p=0.56); α-catenin ABD (myosin V, N = 6, p=0.84). Concentration of vinculin ABD or α-catenin ABD: 2 μM.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Bar plots of mean ± SEM of high-force and low-force averages for all trials displayed in Figure 2 and its supplements.
 
 As we expected the random deposition and inherent stochasticity of molecular motors in our assay to give rise to a distribution of forces and ABD binding states, we implemented an image analysis procedure to quantify ABD association by automatically identifying and tracking tens to hundreds of ‘filament regions’ through time (Materials and methods, Figure 2—figure supplement 1A). For each region, IABD/Iactin was calculated in each frame, then averaged over all frames in which the region was detected. Consistent with our qualitative interpretation, histograms of IABD/Iactin distributions before and after ATP addition to individual flow chambers showed no shift for the vinculin ABD (Figure 2D, Figure 2—figure supplement 1B). However, this analysis demonstrated a clear shift toward higher values upon ATP addition for the α-catenin ABD, supporting force-activated binding (Figure 1E, Figure 2—figure supplement 1B). While the reported trends were consistent across experiments for both ABDs, we nevertheless observed variability between trials (Figure 2—figure supplement 1B), potentially due to differences in the background intensities in both channels resulting from inconsistencies in cover-glass surface preparation (Materials and methods). We thus performed paired analysis of the mean IABD/Iactin between the -ATP/+ATP conditions for each chamber (Figure 2F and G), which demonstrated a significant increase only for the α-catenin ABD (Figure 2G).
 
@@ -61,9 +89,217 @@ Additionally, we note that there are caveats associated with our TIRF experiment
 
 Regardless, the data we present here collectively suggest physiological forces generated by myosin motor proteins in an appropriate configuration can directly activate α-catenin binding to F-actin, and that force-activated α-catenin binding also occurs in the context of actin bundles, the primary cytoskeletal architecture engaged by the protein in vivo.
 
-## Cryo-EM structures of the metavinculin ABD-F-actin and α-catenin ABD-F-actin complexes
+### Cryo-EM structures of the metavinculin ABD-F-actin and α-catenin ABD-F-actin complexes
 
 Hypothesizing that differences in the F-actin-binding interfaces of vinculin and α-catenin could underlie their differential force-activated actin binding, we pursued structural studies of both ABDs bound to F-actin with cryo-EM (Figure 3; Figure 3—figure supplement 1; Table 1). As optimizing the density of fully-decorated, well-separated individual filaments in cryo-EM images is a major bottleneck for single-particle analysis of F-actin-ABP complexes, we chose to use the ABD of the vinculin splice variant metavinculin for these studies, where a 68 amino-acid insert displaces the H1 helix and replaces it with helix H1’, producing a protein which retains actin binding but completely loses actin bundling activity (Janssen et al., 2012; Kim et al., 2016; Oztug Durer et al., 2015; Figure 1—figure supplement 1B). Previous studies have suggested these isoforms engage an essentially identical site on the F-actin surface with equivalent affinity (Janssen et al., 2012; Kim et al., 2016), and we further found the metavinculin ABD lacks force-activated actin-binding activity in our TIRF assay, validating its use in these studies (Figure 2—figure supplement 1C,D). We were able to obtain fields of individual decorated filaments using this construct (Figure 3A, top). After careful optimization (Materials and methods), we were also able to acquire cryo-EM images of filaments decorated with the α-catenin ABD (Figure 3A, bottom), although persistent bundling by this construct necessitated the collection of substantially more images to obtain a sufficient dataset of individual segments to obtain a high-resolution reconstruction (Table 1; Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative cryo-EM micrographs of F-actin decorated with metavinculin ABD (top) and α-catenin ABD (bottom). Scale bars, 100 nm. (B) Segmented regions of reconstructed density maps of F-actin decorated with metavinculin ABD (left) and α-catenin ABD (right), colored as indicated. (C) Overlay of the metavinculin ABD-actin complex and α-catenin ABD-actin complex atomic models, superimposed on actin and colored as in (B). Actin subunits from the α-catenin structure are displayed in varying shades.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Cryo-EM processing workflow for metavinculin ABD–F-actin complex (A) and α-catenin ABD–F-actin complex (B) datasets. Scale bars, 100 nm. (C and D) Left: Gold-standard Fourier Shell Correlation (FSC) between independent half maps (top, FSC 0.143) and FSC between map and model (bottom, FSC 0.5). Right: Reconstruction colored by local resolution for metavinculin ABD–F-actin reconstruction (C) and α-catenin ABD–F-actin reconstruction (D).
+
+**Table 1.**
+ Cryo-EM data collection, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Metavinculin ABD‒F-actin (EMDB-20844, PDB 6UPW)</th>
+      <th>α-catenin ABD‒F-actin (EMDB-20843, PDB 6UPV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Data collection and processing</td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>Titan Krios</td>
+      <td>Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>K2 Summit</td>
+      <td>K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>29,000</td>
+      <td>29,000</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e‒/Å2)</td>
+      <td>60</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>Exposure rate (e–/pixel/ s)</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Calibrated pixel size (Å)</td>
+      <td>1.03</td>
+      <td>1.03</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>‒1.5 to ‒3.5</td>
+      <td>‒1.5 to ‒3.5</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Helical symmetry</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>27.06 Å rise</td>
+      <td>27.03 Å rise</td>
+    </tr>
+    <tr>
+      <td>−167.07° twist</td>
+      <td>−166.88° twist</td>
+    </tr>
+    <tr>
+      <td>Initial filament segments (no.)</td>
+      <td>237,503</td>
+      <td>540,533</td>
+    </tr>
+    <tr>
+      <td>Final filament segments (no.)</td>
+      <td>215,369</td>
+      <td>414,486</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>2.94</td>
+      <td>3.24</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td colspan="3">Refinement</td>
+    </tr>
+    <tr>
+      <td>Initial model (PDB ID)</td>
+      <td>3JBK, 3J8A</td>
+      <td>4IGG, 3J8A</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>2.98</td>
+      <td>3.28</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>‒58</td>
+      <td>‒85</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td colspan="2">5 actin protomers, 2 actin-binding domains</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>16,896</td>
+      <td>17,233</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>2152</td>
+      <td>2201</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td colspan="2">5 Mg.ADP</td>
+    </tr>
+    <tr>
+      <td colspan="3">B factors (Å2)</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>53.41</td>
+      <td>71.59</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>47.29</td>
+      <td>56.65</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.M.S. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.012</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.860</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <td colspan="3">Validation</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.23</td>
+      <td>1.33</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td>3.32</td>
+      <td>4.63</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>0.06</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td colspan="3">Ramachandran plot</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.46</td>
+      <td>97.56</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.54</td>
+      <td>2.44</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.00</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>EMRinger Score</td>
+      <td>4.40</td>
+      <td>3.87</td>
+    </tr>
+  </tbody>
+</table>
 
 Using the Iterative Helical Real Space Reconstruction (IHRSR) approach (Egelman, 2007) as implemented in Relion 3.0 (He and Scheres, 2017; Zivanov et al., 2018; Materials and methods, Figure 3—figure supplement 1), we obtained reconstructions of the metavinculin ABD (residues 879–1134)–F-actin complex (Figure 3B, left) at 2.9 Å overall resolution (Figure 3—figure supplement 1) and the α-catenin ABD (residues 664–906)–F-actin complex (Figure 3B, right) at 3.2 Å overall resolution (Figure 3—figure supplement 1). As local resolutions ranged from 2.7 Å to 3.6 Å, radially decaying outward from the helical axis (Figure 3—figure supplement 1C,D) for both reconstructions, atomic models for the complete sequence of Mg-ADP α-actin and continuous segments of ABD residues 981–1131 for metavinculin (Figure 3C) and 699–871 for α-catenin (Figure 3C) were built and refined into the maps (Figure 3—figure supplement 1). In their contemporary work, Xu and colleagues also reported a 3.6 Å resolution cryo-EM reconstruction of the α-catenin ABD bound to F-actin (Xu et al., 2020), which shows a highly similar conformation of the complex to that presented here (actin, 0.5 Å RMSD; α-catenin residues 711–842, corresponding to helices H2–H5, 1.0 Å RMSD).
 
@@ -71,29 +307,53 @@ Superposition of the actin-bound metavinculin ABD with the full-length vinculin 
 
 Next, we compared the metavinculin ABD-F-actin and α-catenin ABD-F-actin structures (Figure 3C), confirming previous low- and moderate-resolution studies (Janssen et al., 2006; Janssen et al., 2012; Kim et al., 2016; Thompson et al., 2014) that both ABDs engage a major site spanning the longitudinal interface of 2 actin protomers, which we term Actin I and Actin II (numbered from the plus end of the filament). In turn, each actin protomer also contacts 2 ABDs, leading to a 1:1 binding stoichiometry at saturation. Our structures establish this region is almost identical between the two ABDs, comprising 2040 Å2 of buried surface area for the metavinculin ABD and 1920 Å2 for the α-catenin ABD. However, our high-resolution models also reveal a previously unobserved minor interface for each ABD (confirming a recent computational prediction in the case of metavinculin [Krokhotin et al., 2019]), mediated by residues in their flexible C-terminal extensions (CTEs), which are entirely distinct between the two proteins (Figure 1—figure supplement 1A).
 
-## Differential conformational remodeling is linked to unique features of actin binding
+### Differential conformational remodeling is linked to unique features of actin binding
 
 Consistent with our previous medium-resolution structural studies (Kim et al., 2016), we find the metavinculin ABD undergoes substantial conformational remodeling upon F-actin engagement, characterized by displacement of helix H1’ from the 5-helix bundle to license a rearrangement of helices H2–H5 to relieve clashes with F-actin (Figure 4A,B; Figure 4—video 1 and Figure 4—video 2). N-terminal residues 879–980 are not visible in the map (Figure 4A, transparent brown), and are presumably disordered in the actin-bound state, while residues 981–985 (Figure 4A, brown) undergo a slight rearrangement, extending helix H2 by 1.5 turns (five residues). Our high-resolution map reveals this contact to be mediated by the (meta)vinculin CTE (Figure 4). The CTE is released from its pre-bound position, extending helix H5 by two turns (six residues), then undergoing an approximately 60° swing to engage a site along actin subdomain one proximal to H5 (Figure 4A and B; Figure 5—video 1). Coupled to this transition, helices H2–H5 slightly rearrange to accommodate actin binding and avoid steric clashes (Figure 4B and C; Figure 4—video 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig4-v2.jpg)
+
+**Figure 4.:** (A) Cartoons and crystal structures of pre-bound (meta)vinculin ABD (PDB 1st6, dark orange, top) and α-catenin ABD (PDB 4igg chain B, dark pink, bottom). Regions that undergo major rearrangements are highlighted in brown (metavinculin) or magenta (α-catenin); regions not resolved in the actin-bound cryo-EM structures are transparent. (B) Cryo-EM structures of metavinculin ABD (orange, top) and α-catenin ABD (pink, bottom). Flexible regions colored as in (A); actin, shades of blue. (C) Superimposed pre-bound and post-bound structures of metavinculin ABD (top) and α-catenin ABD (bottom). Green arrows indicate displacement of helices; rotation angles indicate repositioning of C-terminal extensions (CTEs).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A and B) Superimposed pre-bound full-length vinculin crystal structure (PDB 1st6) and post-bound metavinculin ABD cryo-EM structure in the absence of actin (A), or in the presence of actin (B). (C, D, E, and F) Superimposed pre-bound full-length α-catenin crystal structures (PDB 4igg: C and D: Chain B; E and F: Chain A) and post-bound α-catenin ABD cryo-EM structure without (C and E) or with (D and F) actin. (G) Superimposed pre-bound full-length vinculin crystal structure (PDB 1st6) and post-bound α-catenin ABD cryo-EM structure in the presence of actin highlights the similar orientations of their CTEs.
 
 We find that the α-catenin ABD also undergoes an order-to-disorder transition at its N-terminus upon actin binding (Figure 4A,B; Figure 4—video 1), as no density for residues 664–698, the majority of H0-H1, is present in our map (Figure 3D; Figure 4A,B; Figure 4—video 1), confirming recent reports that this region is important for activating α-catenin’s actin engagement (Ishiyama et al., 2018; Xu et al., 2020). This is accompanied by a twisting rearrangement of helices H2–H4 reminiscent of that found in (meta)vinculin (Figure 4B; Figure 4—video 2), as well as the extension of H4 by three turns (nine residues) through folding of the H3-H4 loop, to sculpt a major actin-binding interface sterically compatible with the filament (Figure 4B; Figure 4—video 1). This suggests that N-terminal helix release allosterically coupled to ABD helical-bundle rearrangement is a fundamentally conserved mechanistic feature of actin binding by members of the vinculin/α-catenin family. However, we observe distinct rearrangements in the α-catenin CTE, which undergoes a slight lateral shift and helical unfurling, rather than a swing, to engage a site spanning a different surface of actin subdomain 1 (Figure 4A and B; Figure 5—video 1).
 
 Metavinculin H5 extension is facilitated by binding interactions with Actin I (Figure 5A,B; Figure 5—video 1), notably a hydrophobic interaction between metavinculin I1114 and Actin Y91, and a salt bridge between metavinculin R1117 and actin E100. This positions the CTE to form an extended interface with actin subdomain 1, contiguous with that mediated by H5, with metavinculin W1126 buried in a proximal hydrophobic pocket formed by actin residues A7, P102, P130, A131, and W356, bolstered by a distal salt bridge between metavinculin R1128 and actin E361 (Figure 5B). By contrast, the α-catenin CTE retains an overall conformation similar to its pre-bound state (Figure 5A and C; Figure 5—video 1). An extensive hydrophobic network we term a ‘tryptophan latch’ embraces CTE residue W859 in both pre-bound and post-bound states, preventing α-catenin CTE unfurling (Figure 5C, right; Figure 5—video 1). A single turn of helix H1 on the N-terminal side of the ABD remains folded, with H1 residue W705 packing against CTE residue M861, encircling W859 along with CTE residues L852 and L854, as well as residues W705, I712, I763, L776, P768, V833, and Y837 from neighboring regions of the helical bundle, facilitating coordinated conformational transitions between the N- and C-terminal flexible regions of the α-catenin ABD upon actin binding. A putative hydrogen bond is also maintained between S840 and the single nitrogen atom in W859’s indole ring, maximizing the binding potential of this residue.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overlay of the metavinculin ABD-actin complex and α-catenin ABD-actin complex atomic models highlighting C-terminal extensions (CTEs) of metavinculin ABD and α-catenin ABD, superimposed on Actin I and colored as in Figure 4. Actins from α-catenin structure are displayed. (B and C) Detailed views of key contacts at minor interfaces: metavinculin CTE and actin (B); within the α-catenin tryptophan latch (right) and between its CTE and actin (left) (C). (D) Overlay of the metavinculin ABD-actin complex and α-catenin ABD-actin complex atomic models highlighting helical binding interfaces of metavinculin ABD and α-catenin ABD, superimposed and colored as in (A). Actins from α-catenin structure are displayed. (E, F, and G) Detailed views of key contacts at the major interface between metavinculin/α-catenin helices H4–H5 and Actin I (E); Actin II (F); Actin II D-loop (G). (H) Actin Cα traces colored by per-residue RMSD from the indicated comparisons. For superposition, segmented actin density from the cryo-EM maps was first aligned, followed by fitting the atomic models into their corresponding maps.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Representative TIRF-assay movie frames of actin (left) and α-catenin ABD ‘triple mutant’ (α-cat ABD-tm) (right) channels in the absence (top) and presence (bottom) of ATP to activate motors. As the ABD did not visibly associate with F-actin in either condition, these data were not quantified. Scale bar, 20 μm. Concentration of triple mutant ABD: 2 μM. (B and C) Views of potential contacts between longitudinally-adjacent actin-bound ABDs mediated by CTEs for metavinculin (B) and α-catenin (C). Left: Segmented density maps highlighting contact regions (boxes). Right: Detailed view of putative contacts, with the density map shown in gray transparent representation. The distal end of the metavinculin CTE (residues W1132, Y1133, Q1134), which is positioned to mediate inter-ABD contacts, was not modeled due to weak density (red).
+
 The latch positions the neighboring region of the CTE to bind a distinct site on Actin I’s subdomain 1 (Figure 5C, left; Figure 5—video 1) mediated by proximal salt bridges (α-catenin E865 – actin R28, α-catenin K866 – actin D24/D25, α-catenin K867 – actin E93) and distal hydrophobic interactions (α-catenin L869/V870 – actin P333/Y337). Consistent with a key role for the latch in coordinating conformational transitions that enable F-actin binding, Xu et al. report that mutating W859 to alanine reduces α-catenin’s F-actin-binding affinity 10-fold (Xu et al., 2020). Superposition of the actin-bound conformation of the α-catenin ABD with the pre-bound conformation of the (meta)vinculin ABD (Figure 4—figure supplement 1G) reveals a striking positional overlap between α-catenin W859 and metavinculin W1126 (vinculin W1058 is identically positioned, not shown), which is also engaged by a sparser latch in the pre-bound conformation (Figure 5—video 1). We thus speculate the extensive latch of α-catenin prevents W859 release and the extension of its CTE to engage the same site as metavinculin W1126.
 
-## Major filament binding interfaces discriminate actin D-loop conformations
+### Major filament binding interfaces discriminate actin D-loop conformations
 
 The complete non-overlap of the (meta)vinculin and α-catenin minor actin-binding interfaces mediated by their CTEs lead us to hypothesize that the CTEs could be involved in differential force-activated actin binding. To identify other potential contributing structural elements, we undertook a detailed comparison of their major actin-binding interfaces mediated by helices H4–H5 in both proteins (Figure 5D). The Actin II binding interface is almost identical between the two ABDs (Figure 5E), mediated by an extensive series of conserved hydrophobic contacts: α-catenin I792/metavinculin I1065 – actin I345, α-catenin V796/metavinculin V1069 – actin I341, and α-catenin V800/metavinculin M1073 – actin P333/E334. The Actin I interface, on the other hand, is more variable and characterized by few clear residue-level binding interactions (Figure 5F), notably likely weak long-distance salt bridges (metavinculin R1044 – actin E83 and α-catenin K845 – actin E99) specific to each protein, despite the overall shape complementarity across the interface. Each ABD also features a unique hydrophobic interaction with actin Y91 (metavinculin I1114/α-catenin V838).
 
 The Actin I interface extends into contacts with the actin D-loop (Figure 5G), a flexible region of actin which mediates structurally polymorphic longitudinal interactions between protomers (Galkin et al., 2010b) reported to be modulated by actin nucleotide state (Chou and Pollard, 2019; Merino et al., 2018) and ABPs (Dominguez and Holmes, 2011; Oda et al., 2019). Both ABDs form a potential weak long-distance interaction with actin D-loop residue K50: in metavinculin, a hydrogen bond through N1048, and in α-catenin, a salt bridge through D775. The D-loop then adopts subtly different conformations between the two interfaces centered at M47. Although clear residue-level binding interactions are not readily apparent, the conformation of M47 at the metavinculin interface would clash with α-catenin Y786, a position occupied by the smaller residue I1059 in metavinculin, suggesting local sterics unique to each ABD determine compatibility with a distinct D-loop conformation. Comparison of the actin conformation observed in a similar-resolution structure of ADP F-actin in isolation (‘F-actin alone’, M.S. in preparation) versus when bound to metavinculin or α-catenin, as well as comparison of the metavinculin-bound and α-catenin-bound conformations reveals minimal rearrangements throughout the majority of the structure (Figure 5H). This contrasts with a previous report of α-catenin-induced structural changes in F-actin inferred from low-resolution cryo-EM analysis (Hansen et al., 2013), but it is consistent with the high-resolution studies of Xu et al., 2020. The sole region featuring rearrangements greater than 1 Å RMSD is a 3–4 residue stretch of the D-loop centered on M47. As force across the filament could feasibly modulate D-loop structure to regulate ABP binding, we hypothesized ABD residues mediating D-loop interactions could also mediate differential force-activated actin binding.
 
-## The α-catenin C-terminal extension is a force-detector element
+### The α-catenin C-terminal extension is a force-detector element
 
 To investigate whether D-loop interactions contribute to α-catenin force-activated binding, we designed a triple point-mutant α-catenin ABD construct where three residues in close proximity to the D-loop were replaced by those in vinculin: α-cat ABDA778Q Y779V Y786I. In force reconstitution assays, this construct did not visibly associate with actin in either the –ATP or +ATP condition in the concentration regime accessible by TIRF (Figure 5—figure supplement 1A). While these data suggest that the α-catenin D-loop interactions contribute to overall affinity for F-actin, the complete lack of binding is refractory to determining whether this interface has a separable role in force-activated actin binding.
 
 We thus returned to our initial hypothesis that differential force-activated binding could be mediated by the CTEs. Although we were unable to accurately model the final three residues of the metavinculin CTE, weak density is clearly present (Figure 5—figure supplement 1B, red), suggesting the entire CTE engages F-actin. By contrast, density for the α-catenin CTE is only present until K871 (Figure 5C; Figure 5—figure supplement 1C). Notably, all three human α-catenin isoforms have highly homologous CTEs that extend an additional 35 amino acids (Figure 1—figure supplement 1A), diverging in sequence and length from the vinculin CTE. Consistent with previous primary-structure-function analysis (Pokutta et al., 2002) showing that residues after P864, which bear no homology to vinculin, are necessary for actin binding, our structure shows that residues 865–871 are in direct contact with actin (Figure 5C; Figure 5—video 1), forming an extensive interface. We therefore hypothesized that distal residues 872–906, a 35-residue element unique to α-catenin (Figure 1—figure supplement 1A) that was not resolved in our cryo-EM analysis and is thus presumably conformationally flexible, could uniquely contribute to force-activated actin binding.
 
 To test whether distal residues 872–906 have a separable role in force-activated binding, that is as a ‘force detector’, we first truncated them from the α-catenin ABD (α-cat ABDΔC). Consistent with a regulatory role for this segment, α-cat ABDΔC constitutively associated with F-actin in TIRF assays (Figure 6A; Figure 6—figure supplement 1A; Figure 6—video 1), with no significant increase in binding upon ATP addition, suggesting that this region is necessary for force-activated binding by negatively-regulating low-force binding. This contrasts with the observations of Xu et al., who report a modest (~2-fold) reduction in F-actin-binding affinity when this region is truncated in solution co-sedimentation assays, notably in the background of a construct where H0 has also been truncated in order to boost affinity overall (Xu et al., 2020). Possible sources of this discrepancy include differences in α-catenin binding behavior between solution assays and our TIRF assays, where filaments are immobilized. Additionally, coordination between rearrangements in the CTE and H0–H1 (potentially through allosteric mechanisms) may be necessary to mediate the force-detector’s negative regulatory effects.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig6-v2.jpg)
+
+**Figure 6.:** (A, B, and C) TIRF force reconstitution assays. Left: Representative movie frames in the presence and absence of ATP. Scale bar, 30 μm. Right: Cartoon of ABD construct (left) and paired analysis of the overall intensity ratio change upon ATP addition (right). Wilcoxon signed-rank test: *p<0.05; n.s. (not significant), p>0.05. Constructs assayed were: α-cat ABDΔC (A) (αE-catenin664-871, N = 5, p=0.81); Vinc ABD-NCSwap (B) (αE-catenin664-708-vinculin916-1041-αE-catenin837-906, N = 6, p=0.031); Vinc ABD-NCSwapΔC (C) (αE-catenin664-708-vinculin916-1041-αE-catenin837-871, N = 5, p=0.63). Concentration of ABD constructs: 2 μM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62514/elife-62514-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B, and C) Time-averaged IABD/Iactin intensity ratio distributions of single-filament regions before and after ATP addition for α-catenin ABDΔC (A); Vinc ABD-NCSwap (B); Vinc ABD-NCSwapΔC (C). These data were used for the analysis presented in Figure 6A–C. (D) Bar plots of mean ± SEM of high-force and low-force averages for all trials displayed in Figure 6.
 
 To investigate the sufficiency of the force-detector, we generated chimeric ABDs featuring the H2–H5 bundle region of vinculin and the flexible termini of α-catenin. A vinculin ABD construct where only the CTE was substituted was non-functional (data not shown). However, consistent with structural coordination between the α-catenin N-terminal segment and the CTE through the tryptophan latch (Figure 5C; Figure 5—video 1), a construct featuring both the α-catenin N-terminal segment and the CTE (vinc ABD-NCSwap, Materials and methods) gained force-activated binding activity, with diminished low-force binding observed (Figure 6B; Figure 6—figure supplement 1B; Figure 6—video 2) in contrast to the wild-type vinculin ABD (Figure 1B). A C-terminal truncation of this construct (vinc ABD-NCSwapΔC) equivalent to α-cat ABDΔC reverted to constitutive binding regardless of force (Figure 6C; Figure 6—figure supplement 1C; Figure 6—video 3), supporting the α-catenin CTE as the key determinant of force-activated binding, in which 872–906 serves as the force-detector. We thus conclude that the distal C-terminus (residues 872–906) of α-catenin is necessary and sufficient for force-activated actin binding through negative regulation of low-force binding.
 
@@ -103,7 +363,7 @@ Our studies reveal that α-catenin preferentially binds tensed F-actin, using it
 
 We further provide evidence that actin filaments are themselves tension sensors that can transduce mechanical force into regulated partner binding. Our finding that the force-detector element of α-catenin can be functionally transplanted to vinculin demonstrates that force-activated F-actin binding is a modular activity that can be conferred by short sequence motifs. We thus speculate there may be other actin-binding proteins with functionally analogous force-detectors, which could broadly mediate mechanotransduction through the cytoskeleton.
 
-## Molecular mechanism for detecting force on actin through a flexible structural element
+### Molecular mechanism for detecting force on actin through a flexible structural element
 
 While our studies pinpoint the final 35 amino acids of α-catenin as a force-detector, the exact molecular mechanism by which this segment negatively regulates low-force binding to F-actin remains to be elucidated. Here we propose two potential, non-exclusive conceptual models for this modulation. As we observe the distal tip of the ordered region of the CTE to be in close apposition to the next ABD binding site along the actin filament, with potential contacts between CTE residues V870 and K871 with the H4–H5 loop and the N-terminal tip of H5 in longitudinally adjacent ABD (Figure 5—figure supplement 1C), the first model invokes steric exclusion (Figure 7A). In the absence of force, the force-detector (Figure 6; Figure 7) physically blocks the adjacent binding site through steric hindrance, which can be relieved by an increase in protomer axial spacing in the presence of tension, consistent with prior truncation studies suggesting residues 884–906 may inhibit α-catenin’s actin binding (Pappas and Rimm, 2006). As the force-detector likely represents a flexibly tethered conformational ensemble, in the presence of thermal fluctuations we envision this would manifest as a tension-dependent increase of the binding on-rate at the site due to its increased fractional availability. Although saturating the filament for structural studies could lead to non-physiological inter-ABD interactions, cooperative F-actin binding by the α-catenin ABD has previously been reported under non-saturating conditions (Hansen et al., 2013), and supplemental soluble ABD enhanced catch-bonding by the cadherin complex (Buckley et al., 2014), suggesting communication between actin-bound ABDs is likely to be physiologically relevant. We note that cooperative and inhibitory inter-ABD communication are not a priori mutually exclusive, and the interplay of these opposing effects could produce differential outcomes as a function of ABD concentration and filament load, an important subject for future studies.
 
@@ -113,7 +373,7 @@ While our studies pinpoint the final 35 amino acids of α-catenin as a force-det
 
 The second model invokes a conformational change in the actin protomer that specifically occurs in the presence of mechanical load, which is recognized and preferentially bound by the force-detector, relieving inhibition (Figure 7B). Although our studies suggest only minor actin conformational changes when the binding is driven by mass action (Figure 5H), they do not rule out as yet unobserved actin conformations specifically evoked by force. Furthermore, while for simplicity we have framed both models in terms of discrete transitions between structural states, low piconewton forces could also modulate the intrinsic structural fluctuations of F-actin to control α-catenin engagement through either mechanism, as has previously been speculated for cofilin (Galkin et al., 2012; Hayakawa et al., 2011; Wioland et al., 2019). Although currently technically prohibitive, structural studies of the α-catenin ABD–F-actin interface in the presence of active force generation, as well as supporting functional experiments, will be necessary to dissect the interplay of these models.
 
-## Mechanically-regulated adhesion through α-catenin and vinculin
+### Mechanically-regulated adhesion through α-catenin and vinculin
 
 Our finding that approximately 1 pN of tension along individual filaments is sufficient for force-activated binding suggests that the actin-binding interface of α-catenin has been evolutionarily optimized to sense contractile forces generated by myosin motors (Finer et al., 1994). We speculate force-activated binding enables the cadherin-catenin complex to recognize and preferentially engage pre-stressed actomyosin cables adjacent to the plasma membrane at adherens junctions (Figure 7C), providing a mechanism for initial engagement between actin and the cadherin-associated population of α-catenin, as well as rapidly strengthening adhesion after preliminary attachments are formed. This could facilitate the transition from nascent cell-cell contacts to mature adherens junctions, as punctate nascent adhesions associated with radial actin cables coalesce and spread along a developing circumferential band of tensed actomyosin bundles (Vaezi et al., 2002), as well as support dynamic adherens junction remodeling during epithelial morphodynamics (Lecuit and Yap, 2015). It also provides a mechanism for concentrating the soluble, cytoplasmic α-catenin population at sites of cytoskeletal tension (Figure 7C). Previous studies have demonstrated this population is enriched on actomyosin bundles linked to adherens junctions, where it suppresses lamellipodium activity and promotes adhesion maturation (Drees et al., 2005). While enrichment has been speculated to occur via local release from the cadherin complex, this model is difficult to reconcile with its low cellular concentration and the high concentration of soluble α-catenin required to inhibit Arp2/3-mediated actin branching in vitro (Drees et al., 2005). Force-activated binding provides a feasible cellular mechanism for this enrichment of the homodimeric cytoplasmic α-catenin population, driven by enhanced affinity for tensed F-actin rather than mass action effects due to local concentration. Our identification of a functionally separable force-detector in α-catenin with amino-acid level precision will facilitate a detailed examination of these models in cell lines and in vivo.
 
@@ -121,31 +381,230 @@ We note that force-activated binding is an additional, rather than alternative, 
 
 In their parallel work, Xu et al. speculate that the displacement of H1 from the α-catenin ABD upon actin binding could be stabilized or induced by force (Xu et al., 2020), providing a possible structural mechanism for catch-bond formation which we have previously proposed could also be employed by vinculin (Kim et al., 2016; Swaminathan et al., 2017). This model predicts that the force required to dissociate H1 from the α-catenin ABD should be lower than the force required to displace the ABD in the mechanically-reinforced, strongly bound state from F-actin. It furthermore predicts that the constitutive high F-actin affinity α-catenin ABD construct (residues 711–842) lacking H0-H1 reported by Xu et al., which they propose mimics the strongly-bound state (Xu et al., 2020), should no longer form catch bonds with F-actin due to its anticipated inability to switch between weakly and strongly bound states. Thus, this proposed structural mechanistic framework is now well-positioned to be subjected to explicit experimental scrutiny. We believe dissecting the interplay between force-activated binding and catch-bond formation in vitro and in vivo, as well as the structural basis for coordinated actin catch-bonding by α-catenin and vinculin, are important subjects for future studies.
 
-## Implications for cytoskeletal mechanotransduction
+### Implications for cytoskeletal mechanotransduction
 
 Our direct observation of force-activated binding to F-actin mediated by a short, flexible sequence element suggests this mechanism could feasibly be employed by other ABPs. Proteins from the large Calponin Homology (CH) domain ABP superfamily have diverse functions as cytoskeletal cross-linkers and plasma membrane/organelle tethers (Liem, 2016; Razinia et al., 2012). Their ABDs have also been reported to have sequence elements that undergo folding transitions associated with filament engagement (Avery et al., 2017; Galkin et al., 2010a; Iwamoto et al., 2018) which can sterically regulate their actin binding (Harris et al., 2019). This suggests members of this family could plausibly employ force-activated binding mechanisms similar to α-catenin to coordinate diverse mechanotransduction pathways throughout the cell, as could other ABPs with similar properties. The experimental strategy established here should be broadly useful for identifying force-sensitive ABPs and defining their force-detector-F-actin interfaces, such as the α-catenin CTE-F-actin interaction, in atomistic detail. This will facilitate elucidating the molecular and cellular mechanisms of cytoskeletal mechanotransduction with sufficient precision for guiding inhibitor development.
 
 ## Materials and methods
 
-## Contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pET His-Strep-TEV and pET His-Strep-TEV-Halo vectors</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Ampicillin resistance; expression vectors for E. coli Contact Alushin Lab for distribution</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pFastBac Dual Expression Vector</td>
+      <td>ThermoFisher</td>
+      <td>10712024</td>
+      <td>Expression vectors for sf9 insect cells</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Vinculin; HsVCL isoform 1</td>
+      <td>Synthesized by Genewiz</td>
+      <td>UniProt:P18206-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>Metavinculin; HsVCL isoform 2</td>
+      <td>Synthesized by Genewiz</td>
+      <td>UniProt:P18206-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>αE-catenin; HsCTNNA1</td>
+      <td>Addgene # 24194</td>
+      <td>UniProt:P35221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>Rosetta2 (DE3)</td>
+      <td>Novagen</td>
+      <td>71400–4</td>
+      <td>E. coli strain for protein expression</td>
+    </tr>
+    <tr>
+      <td>Cell line (S. frugiperda)</td>
+      <td>Gibco Sf9 insect cell</td>
+      <td>ThermoFisher</td>
+      <td>11496015</td>
+      <td>Insect cell line for protein expression</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (S. frugiperda)</td>
+      <td>Gibco Bac-to-Bac Baculovirus Expression System</td>
+      <td>ThermoFisher</td>
+      <td>10359016</td>
+      <td>Insect cell line transfection kit for protein expression</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halo-tag ligand amine O4</td>
+      <td>Promega</td>
+      <td>P6741</td>
+      <td>Synthetic precursor for the fluorescent dye JF-646-Halo</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>JF-646 NHS-ester building block</td>
+      <td>TOCRIS</td>
+      <td>6148</td>
+      <td>Synthetic precursor for the fluorescent dye JF-646-Halo</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HaloTag Alexa Fluor 488 Ligand</td>
+      <td>Promega</td>
+      <td>G1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 555-Phalloidin</td>
+      <td>ThermoFisher</td>
+      <td>A34055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (O. cuniculus)</td>
+      <td>Actin Protein (Rhodamine): Rabbit Skeletal Muscle</td>
+      <td>Cytoskeleton, Inc</td>
+      <td>AR05-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (O. cuniculus)</td>
+      <td>Actin Protein (Biotin): Rabbit Skeletal Muscle</td>
+      <td>Cytoskeleton, Inc</td>
+      <td>AB07-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin Coated Polystyrene Particles</td>
+      <td>Spherotech</td>
+      <td>SVP-40–5</td>
+      <td>Used in optical trapping experiments</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C-flat Holey Carbon Grids for TEM - Gold Only</td>
+      <td>EMS</td>
+      <td>CF313-100-Au</td>
+      <td>Used in cryo-EM experiments</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>C-trap viewer</td>
+      <td>LUMICKS</td>
+      <td></td>
+      <td>http://www.nat.vu.nl/~iheller/download.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TWOM viewer</td>
+      <td>LUMICKS</td>
+      <td></td>
+      <td>http://www.nat.vu.nl/~iheller/download.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.5</td>
+      <td>Schneider et al., 2012 https://doi.org/10.1038/nmeth.2089</td>
+      <td>RRID:SCR_003070</td>
+      <td>ImageJ plugin for TIRF image analysis:https://github.com/alushinlab/ActinEnrichment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0</td>
+      <td>He and Scheres, 2017 https://doi.org/10.1016/j.jsb.2017.02.003 Schneider et al., 2012 https://doi.org/10.1016/j.jmb.2011.11.010 Zivanov et al., 2018 https://doi.org/10.7554/eLife.42166</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND 4.1.5</td>
+      <td>Rohou and Grigorieff, 2015 https://doi.org/10.1016/j.jsb.2015.08.008</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix 1.17.1</td>
+      <td>Afonine et al., 2018 https://doi.org/10.1107/S2059798318006551</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot 0.8.9</td>
+      <td>Emsley et al., 2010 https://doi.org/10.1107/S0907444910007493</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera 1.14</td>
+      <td>Pettersen et al., 2004 https://doi.org/10.1002/jcc.20084</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX 1.0</td>
+      <td>Goddard et al., 2018 https://doi.org/10.1002/pro.3235</td>
+      <td>RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software, Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact and materials availability
 
 Further information and requests for resources and reagents should be directed to the corresponding author, Gregory M. Alushin (galushin@rockefeller.edu). All reagents generated in this study are available from the corresponding author without restriction.
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Globular actin (G-actin) monomers were purified from chicken skeletal muscle as described previously (Pardee and Spudich, 1982) and maintained in G-Ca buffer: G buffer (2 mM Tris-Cl pH 8, 0.5 mM DTT, 0.2M ATP, 0.01% NaN3) supplemented with 0.1 mM CaCl2, at 4°C before use. C-terminally GFP-tagged mouse myosin V HMM and myosin VI S1 were purified from SF9 insect cells using published protocols (Wang et al., 2000). All other proteins were heterologously expressed in Rosetta2(DE3) E. coli cells (Novagen) grown in LB media as described in Method details.
 
-## Method details
+### Method details
 
-## F-actin preparation
+#### F-actin preparation
 
 Filamentous actin (F-actin) was polymerized fresh for each experiment from actin monomers in G-Mg (G buffer supplemented with 0.1 mM MgCl2) and KMEI (50 mM KCl, 1 mM MgCl2, 1 mM EGTA, 10 mM imidazole pH 7.0, 1 mM DTT) buffers as described previously (Gurel et al., 2017); 30% rhodamine-labeled actin filaments used in TIRF microscopy assays were prepared by copolymerizing unlabeled actin monomers and rhodamine-labeled actin monomers (Cytoskeleton catalog # AR05) at a 7:3 molar ratio (total actin concentration 1 μM) at room temperature for 2 hr in the dark. For optical trapping/confocal microscopy assays, 10% biotinylated actin filaments were prepared by copolymerizing purified unlabeled actin monomers and biotinylated actin monomers (Cytoskeleton catalog # AB07) at a 9:1 molar ratio (total actin concentration 1 μM) at room temperature for 2 hr. The biotinylated F-actin was subsequently stabilized and fluorescently labeled by adding 1.2 molar equivalents of Alexa Fluor 555 Phalloidin (ThermoFisher catalog # A34055).
 
-## Expression cloning
+#### Expression cloning
 
 Vectors for expression of WT H. sapiens vinculin ABD (879–1066), H. sapiens metavinculin ABD (879–1134), H. sapiens α-catenin ABD (αE-catenin664-906), α-catenin ABDΔC (αE-catenin664-871), vinculin ABD-NCSwap (αE-catenin664-708-vinculin916-1041-αE-catenin837-906), and vinculin ABD-NCSwapΔC (αE-catenin664-708-vinculin916-1041-αE-catenin837-871) were constructed by inserting the corresponding cDNA sequence into a pET bacterial expression vector with an N-terminal His6-tag, Strep-tag, TEV cleavage site, and, for proteins used in fluorescence imaging experiments, a subsequent C-terminal Halo-tag by Gibson assembly (Gibson et al., 2009). Constructs for proteins used in Cryo-EM structural studies are not Halo-tagged. Three WT α-catenin TIRF trials were performed with a previously reported Halo-tagged α-catenin ABD construct (αE-catenin671-906), and no difference was observed.
 
-## Expression and purification of actin-binding proteins
+#### Expression and purification of actin-binding proteins
 
 C-terminally GFP-tagged mouse myosin V HMM and myosin VI S1 were purified from SF9 cells using published protocols (Wang et al., 2000). Human calmodulin (CaM) was purified from Rosetta2(DE3) E. coli cells using a published protocol (Putkey et al., 1985) and stored in gel filtration buffer (20 mM Tris-Cl pH 8.0, 100 mM NaCl, 2 mM β-mercaptoethanol) supplemented with 5% v/v glycerol.
 
@@ -155,13 +614,13 @@ Protein was then sequentially purified by a HiTrapQ HP anion exchange column (GE
 
 After rapid thawing before use, proteins were clarified by ultracentrifugation at 45,000 rpm in a TLA100 rotor for 10 min at 4°C. All protein concentrations were estimated using the Bradford colorimetric assay (Pierce), calibrated with BSA.
 
-## Synthesis of Halo-JF-646 and labeling of ABPs
+### Synthesis of Halo-JF-646 and labeling of ABPs
 
 Fluorescent dye JF-646 (Grimm et al., 2015) NHS-ester building block (TOCRIS) was conjugated with Halo-tag ligand amine O4 (Promega) by synthetic chemistry according to published protocols (Grimm et al., 2017). Briefly, 1.5 equivalents of amine O4 ligand were added to one equivalent of the JF-646 NHS-ester in DMF followed by adding 5% triethylamine. The reaction was vigorously stirred for 16 hr at room temperature and the product was purified by silica gel chromatography, dried by SpeedVac (ThermoFisher), and reconstituted in DMSO.
 
 For optical trapping/confocal microscopy assays, HaloTag Alexa Fluor 488 Ligand (Promega) was utilized as described above, followed by desalting through a PD SpinTrap G-25 column (GE Healthcare) according to the manufacturer’s protocol to remove unreacted dye before use. To label the Halo-tagged actin-binding proteins with Halo-JF-646 for TIRF microscopy assays, two equivalents of synthesized Halo-JF-646 dye was added to the protein solution, followed by incubation for at least 2 hr in the dark at 4°C before use. Subsequent removal of excess dye was not required, as JF-646 is a fluorogenic dye (Grimm et al., 2015).
 
-## Correlative force spectroscopy and confocal microscopy assays
+### Correlative force spectroscopy and confocal microscopy assays
 
 Experiments were performed at room temperature (approximately 25°C) on a LUMICKS C-Trap instrument combining confocal fluorescence with dual-trap optical tweezers (Hashemi Shabestari et al., 2017; Wasserman et al., 2019). The optical traps were cycled through pre-set positions in the five channels of a microfluidic flow cell by an automated stage (Figure 1A). Channels 1–3 were separated from each other by laminar flow, which we utilized to form actin filament tethers between two 4 μm-diameter streptavidin-coated polystyrene beads (Spherotech) held in optical traps with a stiffness of 0.3 pN/nm. We first captured a single bead in each trap in channel 1. The traps were then transferred to channel 2, containing 5–20 nM Alexa 555 phalloidin-stabilized, 10% biotinylated F-actin in motility buffer (‘MB’: 20 mM MOPS pH7.4, 5 mM MgCl2, 0.1 mM EGTA, 1 mM DTT) supplemented with 1 µM dark phalloidin, where tethers were formed by briefly moving 1 of the two traps toward the other trap against the direction of flow, followed by rapidly moving the traps to channel 3, which contained only buffer (MB + 1 μM dark phalloidin). The presence of a tether was verified by carefully separating the traps and observing an associated increase in force when monitoring the force-extension curve, applying the minimum extension feasible to avoid prematurely rupturing the tether.
 
@@ -169,7 +628,7 @@ The traps were then moved to orthogonal channel 4 or 5, which contained 2 μM fl
 
 Data analysis was performed using ImageJ and custom software provided by LUMICKS. Force data from the two traps were averaged and binned to the confocal frame interval. The intensity values are measured by drawing a box in ImageJ to measure the fluorescence intensities of actin and ABP in both channels with background subtraction, calculating the background from an equal-sized box from that frame in an area devoid of filaments or beads. For paired analysis, the ‘high-force’ and ‘low-force’ averages were calculated only from the final tether to rupture, as long as the entire force trace has at least 10 quantifiable confocal image frames. For fluorescence-force correlation plots, only single-filament tethers selected based on Figure 1—figure supplement 2A–C were used. IABP/IActin values were normalized by dividing the values in each recording by the largest value observed during that recording. K-means clustering analysis was performed to identify the cutoff force in the correlation plots for each ABP. Briefly, the force-fluorescence data were grouped into two clusters using scikit-learn (Pedregosa et al., 2011). For both α-catenin and vinculin, the data separated along the force axis, providing a threshold force for each ABP. Furthermore, a silhouette analysis for both ABPs confirmed that the data should not be clustered into more than two clusters (Kaufman and Rousseeuw, 2009).
 
-## TIRF force reconstitution assays
+### TIRF force reconstitution assays
 
 Glass coverslips (Rectangular: Corning 22 × 50 mm #1½ Cover Glass; Square: Fisherbrand 22 × 22 mm #1½ Microscope Cover Glass) were cleaned by 30 min 100% acetone wash, 10 min 100% ethanol wash, and 2 hr 2% Hellmanex III liquid cleaning concentrate (HellmaAnalytics) wash in a bath sonicator followed by rinsing with water. The cleaned glass coverslips were coated with 1 mg/mL mPEG5K-Silane (Sigma) in a 96% ethanol, 10 mM HCl solution for at least 16 hr. After coating, the coverslips were rinsed with 96% ethanol and water, then air-dried and stored at 4°C until use. Flow cells were prepared with one square and one rectangular coverslip, both coated with mPEG-Silane. Double-sided adhesive tape (3M) was used to make ~4 mm-wide flow chambers between the coverslips, which were open on both sides to facilitate buffer exchange when adding components for imaging.
 
@@ -177,7 +636,7 @@ For each assay, 6 mg/mL anti-GFP antibody (Sigma #G1546) solution reconstituted 
 
 Dual-color TIRF image sequences (movies) were recorded at room temperature (approximately 25°C) using a Nikon TiE inverted microscope equipped with an H-TIRF module and an Agilent laser launch, driven by Nikon Elements software. Images were taken every 2 s with an Apo TIRF 60 × 1.49 NA objective (Nikon) on an Andor iXon EMCCD camera; Rhodamine and JF646 fluorophores were excited by laser lines at 561 nm and 640 nm, respectively.
 
-## Filament region quantification
+### Filament region quantification
 
 To quantify ABP association with individual ‘filament regions’ of TIRF movies, we developed a custom ImageJ (Schneider et al., 2012) plugin (Figure 2—figure supplement 1A) which features a graphical user interface (GUI). The plugin takes as input two movie files, the actin channel and the ABP channel from a dual-color TIRF experiment, as well as an adjustable set of parameters (set by default in the GUI to the optimized values used in this study).
 
@@ -185,7 +644,7 @@ To identify regions of interest (ROIs) in each frame, the actin channel image se
 
 Intensity in both the actin channel and the ABP channel were then quantified for each region. For each channel, the local background for each filament region in each frame was calculated as the mean gray value of the pixels from a 60 by 60 pixel box centered on the region’s centroid, excluding pixels belonging to the region itself or any other filament region detected in the frame. Background-subtracted mean gray values were then calculated, followed by the ratio of these values across all frames in which the filament region was detected and their average, which we here report as the overall IABP/IActin for that filament region. The program then outputs all frame and average IABP/IActin values of the tracked filaments sorted by filament number for analysis, as well as a file containing all tracked regions.
 
-## Cryo-EM sample preparation and data collection
+### Cryo-EM sample preparation and data collection
 
 F-actin was polymerized in G-Mg and KMEI from 5 µM unlabeled actin monomers at room temperature for 1 hr and then diluted to 0.6 μM in KMEI before use. Purified metavinculin ABD (879–1134) was diluted in KMEI to 10 μM before use. After screening grids prepared with finely sampled ABP concentrations, we found diluting purified α-catenin ABD (664-906) to 20 μM in KMEI before use gave an optimal balance between filament decoration and bundling.
 
@@ -193,7 +652,7 @@ Immediately before sample preparation, CF-1.2/1.3-3Au 300-mesh gold C-flat holey
 
 Cryo-EM data were recorded on a Titan Krios (ThermoFisher/FEI) operated at 300 kV equipped with a Gatan K2 Summit camera. SerialEM (Mastronarde, 2005) was used for automated data collection. Movies were collected at a nominal magnification of 29,000X in super-resolution mode resulting in a calibrated pixel size of 1.03 Å/pixel (superresolution pixel size of 0.515 Å/pixel), over a defocus range of −1.5 to −3.5 μm; 40 frames were recorded over 10 s of exposure at a dose rate of 6 electrons per pixel per second (1.5 electrons per Å2 per second) for a cumulative dose of 60 electrons per Å2.
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 Unless otherwise noted, all image processing was performed within the RELION-3.0 package (Zivanov et al., 2018). Movie frames were aligned and summed with 2 × 2 binning using the MotionCor2 algorithm (Zheng et al., 2017) as implemented in RELION (Zivanov et al., 2019), utilizing subframe motion correction with 5 × 5 patches. Contrast transfer function (CTF) parameters were estimated from non-doseweighted summed images with CTFFIND4 (Rohou and Grigorieff, 2015). Bimodal angular searches around psi angle priors were utilized in all subsequent 2D and 3D alignment/classification procedures. Around 2000 segments were initially manually picked, extracted, and subjected to 2D classification to generate templates for auto-picking. Helical auto-picking was then performed utilizing a step-size of 3 asymmetric units with a 27 Å helical rise. Segments were extracted from dose-weighted (Grant and Grigorieff, 2015) sum images in 512 × 512 pixel boxes which were not further down-sampled, then a second round of 2D classification followed by auto-picking with featureful class averages was performed.
 
@@ -207,23 +666,23 @@ The final reconstructions converged with helical rise of 27.1 Å and twist of �
 
 Asymmetric focused classification (without alignment) utilizing masks isolating the ABD region showed no evidence of segments with unoccupied binding sites (data not shown), suggesting that decoration of actin filaments by both 10 μM metavinculin ABD and 20 μM α-catenin ABD was essentially complete, with 100% occupancy at the limit of detection of current methods.
 
-## Model building and refinement
+### Model building and refinement
 
 Sharpened, local-resolution filtered maps as described above were used for model building. The 2.9 Å and 3.2 Å density maps were of sufficient quality for de novo atomic model building. As structures of components were available, initial models of actin (PDB 3j8a), metavinculin ABD (PDB 3jbk) truncated to residues 981–1131 and α-catenin ABD (PDB 4igg chain B) truncated to residues 699–871 were fit into the density map using Rosetta (Wang et al., 2016). Models were subsequently inspected and adjusted with Coot (Brown et al., 2015; Emsley et al., 2010), and regions that underwent significant conformational rearrangements were manually rebuilt. The models were then subjected to several rounds of simulated annealing followed by real-space refinement in Phenix (Adams et al., 2010; Afonine et al., 2018) alternating with manual adjustment in Coot. A final round of real-space refinement was performed without simulated annealing. The key statistics summarizing model building, refinement, and validation are reported in Table 1.
 
-## Molecular graphics and structure analysis
+### Molecular graphics and structure analysis
 
 Structural figures and movies were prepared with ChimeraX (Goddard et al., 2018). Per-residue RMSD analysis was performed with UCSF Chimera (Pettersen et al., 2004) as previously described (Zhang et al., 2015). The surface area of actin-binding interfaces was calculated with PDBePISA (Krissinel and Henrick, 2007; (EMBL-EBI). Model quality was assessed with EMRinger (Barad et al., 2015) and MolProbity (Chen et al., 2010) as implemented in Phenix.
 
-## Sequence alignments
+### Sequence alignments
 
 Protein sequences of human vinculin (UniProt Accession Code P18206-2), human metavinculin (P18206-1), human αE-catenin (P35221), human αN-catenin (P26232), and human αT-catenin (Q9UI47) were aligned with ClustalOmega (Sievers and Higgins, 2014; EMBL-EBI).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Plotting and statistical analysis of data from TIRF force reconstitution assays and force-spectroscopy/confocal microscopy assays was performed with GraphPad Prism 8. All the details can be found in the figure legends of these figures and in the Method details. The data collection and refinement statistics of the cryo-EM structures can be found in Table 1. Resolution estimations of cryo-EM density maps and statistical validation performed on the deposited models are described in the Method details.
 
-## Data and code availability
+### Data and code availability
 
 The atomic coordinates for the metavinculin ABD–F-actin complex and α-catenin ABD–F-actin complex have been deposited in the Protein Data Bank (PDB) with accession codes 6UPW and 6UPV, and the corresponding cryo-EM density maps in the Electron Microscopy Data Bank (EMDB) with accession codes EMD-20844 and EMD-20843.
 

@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Office of Graduate Education, University of North Carolina Chapel Hill United States
+1. Office of Graduate Education, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 2. Strategic Evaluation, Inc Durham United States
-3. https://ror.org/031vnay14 Department of Community and Public Health, Mountain Area Health Education Center (MAHEC) Asheville United States
-4. https://ror.org/01azfw069 The University of Texas Tyler United States
-5. https://ror.org/0130frc33 Cell Biology and Physiology, University of North Carolina Chapel Hill United States
+3. Department of Community and Public Health, Mountain Area Health Education Center (MAHEC) Asheville United States ([ROR:031vnay14](https://ror.org/031vnay14))
+4. The University of Texas Tyler United States ([ROR:01azfw069](https://ror.org/01azfw069))
+5. Cell Biology and Physiology, University of North Carolina Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -43,9 +43,9 @@ The internship program has enjoyed remarkable success since its start in 2015 an
 
 A rigorous program evaluation plan consisting of internal (program staff) and external (Strategic Evaluations, Inc) evaluation components was built into ImPACT from the beginning and allowed us to answer the following research questions using a mixed-methods approach (cross-stakeholder surveys and focus groups): (1) What are the benefits of the internship to each stakeholder group (interns, research advisors, and internship hosts)? (2) What long-term career outcomes are positively impacted by the internship experience? (3) Do faculty attitudes shift in a positive direction during the establishment of an effective internship program? We also captured lessons learned about program development annually to support formative changes, as well as to inform summative best practices. Results presented include graphical representations of quantitative survey results. The response rate for the 123 survey invitations sent to interns and their current research advisors and internship hosts ranged from 61% for research advisors to 73% for hosts, and about 66% for interns (averaging pre- and post-survey responses). In addition to quantitative surveys, qualitative themes and exemplars were collected from focus groups (see ‘Methods’ for details).
 
-## Part 1: Internship benefits
+### Part 1: Internship benefits
 
-## Benefits to intern
+#### Benefits to intern
 
 By design, the main beneficiaries of the internships are the interns themselves. The intended impact was for interns to gain valuable skills, build a professional network of colleagues and mentors, learn how scientific and technical development occur in non-academic sectors, and get to prove themselves as valuable employees; indeed, the data support this (see Figure 1). To assess internship benefits, interns received pre- and post-surveys, and research advisors and hosts received post-surveys only (see ‘Methods’).
 
@@ -53,15 +53,15 @@ By design, the main beneficiaries of the internships are the interns themselves.
 
 **Figure 1.:** (a–h) Benefits to interns documented through post surveys. (i–m) Benefits to interns documented through pre- and post-surveys. (n–u) Benefits to internship hosts documented through post surveys. (v–x) Benefits to research advisors documented through post surveys. Mean values for the benefits to the interns documented through pre- and post- (i–m) were tested for significance using an independent samples t-test. Asterisk(s) indicate(s) differences were statistically significant (*p<0.05; **p<0.01; ***p<.001).
 
-## Well-received/well-implemented
+#### Well-received/well-implemented
 
 Overall ratings from interns show that 90% were highly satisfied with their internship (Figure 1e). Ninety percent of interns also rated the support they received from their supervisor as good or very good, with less than 2% rating support as poor (Figure 1a). Ninety-seven percent of interns agreed that the internship provided networking and professional development opportunities that they would not have received otherwise (Figure 1c), and nearly 80% reported that they received coaching specific to their career path (Figure 1b).
 
-## Benefits
+#### Benefits
 
 Nearly all (95%) of interns agreed that the internship positively impacted their competitiveness for the job market (Figure 1f) as well as helped them build a network that they would rely upon for their career advancement (Figure 1g). Interestingly, 42% of interns agreed that the internship improved their research productivity, and another 34% said that it neither improved nor decreased their productivity (Figure 1d). Lastly, 33% of interns agreed that the internships improved the quality of their research and an additional 41% stated that it neither increased nor decreased the quality of their research (Figure 1h).
 
-## Impacts (pre and post)
+#### Impacts (pre and post)
 
 Survey data indicate that internships increased interns’ knowledge of the career area they were exploring. The percentage of interns agreeing that they understood the benefits and challenges associated with a career in the field in which their internship focused doubled from pre- to post-surveys (Figure 1i), with only 48% of interns agreeing with this item on the pre-survey (mean = 3.4) versus 97% on the post (mean = 4.3). A similar increase was documented from pre- to post- as interns rated their awareness of career possibilities (Figure 1j) in the field of the internship. Only 59% of interns agreed with this item on the pre-survey (mean = 3.5) versus 97% on the post (mean = 4.2). Both areas, understanding benefits and challenges with career and awareness of possibilities in internship field, showed statistically significant increases from pre- to post-internship (p<0.001).
 
@@ -75,7 +75,7 @@ The external evaluation team conducted focus group interviews with research advi
 
 **Figure 2.:** Stakeholder interviews were moderated by an external evaluation team, with participants’ identity remaining confidential. Interviews were transcribed and imported into Atlas.ti, with the evaluator developing codes for key themes. Representative quotes supporting each major theme that emerged are presented in the figure.
 
-## Benefits to lab
+#### Benefits to lab
 
 The benefits of the internships extended beyond the interns themselves. Survey data from all the research advisors and interns also identified positive impacts in the lab. For instance, data suggested that the interns’ labs also benefited when trainees implemented specific techniques learned during their internship. Moreover, in some cases the interns had renewed enthusiasm for their work after seeing other career paths, and their excitement enhanced the overall culture of the lab. Finally, internships provided opportunities to foster collaborations between the research lab and industry.
 
@@ -85,7 +85,7 @@ Research advisors also indicated that their trainees’ exposure to different wo
 
 Alumni focus group interviews (see ‘Methods’ for details) revealed that a subset of interns returned to the lab with a better understanding of techniques and new instrumentation. In some cases, these new skills strengthened their work on their project, while in other cases the skills served them well as they transitioned into their career positions.
 
-## Benefits to internship host
+#### Benefits to internship host
 
 An analysis of internship hosts’ initial motivations to host an intern shows that most of them participated for two primary reasons: (1) to enjoy the fulfillment of mentoring a junior scientist (89%) (Figures 1n and 2) to attract a quality applicant to their field (84%) (Figure 1o). Roughly two-thirds of supervisors were also motivated to host an intern to build a relationship with UNC as well as interact with a potential future hire (Figure 1p and q). Lowest on the list in terms of motivations for internship hosts to host an intern was the fulfillment of a service obligation (i.e., they were asked to do so by a supervisor, Figure 1u).
 
@@ -93,7 +93,7 @@ Furthermore, internship hosts were asked to rate the extent to which their initi
 
 Interacting with a potential hire (p<0.001) increased significantly, which indicates that the internships were even more valuable than expected in accomplishing one of the primary goals of the program. In addition, interns were even more valuable than expected by hosts in assisting with a product (p<0.001) and providing fresh ideas (p<0.05). Lastly, a largely unanticipated benefit which also significantly increased pre- to post-internship hosting experience was fulfilling a service obligation (p<0.05), which perhaps came with recognition post participation from their organization. Interestingly, while gaining fulfillment in mentoring a junior scientist was initially high and maintained high levels, it still showed a significant decrease from pre- to post-internship, suggesting that the actual hosting of an intern may have been less fulfilling than hosts initially anticipated.
 
-## Part 2: Career outcomes
+### Part 2: Career outcomes
 
 We expected that a primary benefit of completing an internship would be that interns are more likely, compared to controls, to find a match between their desired career path and their first position post-training period (e.g., after graduate/postgraduate program or position). Trainees who had completed either (1) an entrance survey documenting their career interests or (2) a pre-internship career interest survey, and who had transitioned to their first-destination job, were included in this analysis. This allowed for a comparison of first-destination career outcomes for trainees who completed an internship with controls who did not do an internship. NIH BEST entrance survey data and pre-internship survey data were used to assess career interests, and first job placement title and employer were gathered using publicly available information (i.e., LinkedIn profiles, see ‘Methods’ for details; career classifications based on the UCOT, Stayart et al., 2020). This analysis compared matches between interns and control trainees who did not complete an internship (non-interns). A match was defined as the overlap between the field of first position post-training and the field of career interest as reported in the pre-internship survey or the NIH entrance survey.
 
@@ -101,29 +101,310 @@ Logistic regression was used to test if participation in the internship signific
 
 The overall model was statistically significant (χ2 = 92.39, R2Nagelkerke = 0.195, p<0.001). While controlling for the number of career interests and trainee type, we found that internship participation significantly predicted an identical match between an intern’s first job placement and their career interests as defined before the internship. The odds ratio for a match after doing an internship was 2.99, indicating that interns were nearly three times more likely to match with their career interests than non-interns (p<0.001, Table 1). Unsurprisingly, for interns and controls, more career interests were associated with an increased chance of a match (p<0.001, OR = 1.20). Of note, postdocs, whether they did an internship or not, were nearly six times more likely to match their career interest than graduate students (p<0.001, OR = 5.82). This is likely due to the proximity of the career interest survey response to when the postdoc finds themself on the job market. It also is indicative of postdocs, in general, having better-defined career interests compared to graduate students. Because of the variable timing between pre-internship career interest surveys among interns and control trainees and securing the first job, future studies could more rigorously evaluate changes in career preferences between pre and post internship with an analysis that considers the time that has elapsed between career interest noted pre-internship versus post-internship career placement.
 
+**Table 1.**
+ Logistic regression model of internship participation, number of career interests, and trainee type (graduate student versus postdoc) on identical interest match - (Model 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variables</th>
+      <th rowspan="2">p-Value</th>
+      <th rowspan="2">OR</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+    <tr>
+      <th>Lower</th>
+      <th>Upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Internship participation</td>
+      <td>&lt;0.001</td>
+      <td>2.99</td>
+      <td>1.48</td>
+      <td>6.06</td>
+    </tr>
+    <tr>
+      <td>Number of career interests</td>
+      <td>&lt;0.001</td>
+      <td>1.20</td>
+      <td>1.11</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <td>Trainee type (postdoc)</td>
+      <td>&lt;0.001</td>
+      <td>5.82</td>
+      <td>3.76</td>
+      <td>9.01</td>
+    </tr>
+  </tbody>
+</table>
+
 When these same data are examined as percentages of trainees whose first position matches their top career interest, we find that 51 out of 130 (39%) interns had an exact match, whereas only 165 out of 578 (29%) non-interns had an exact match (see Table 2).
+
+**Table 2.**
+ Matches between career interest and first job placement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">All interns</th>
+      <th>n</th>
+      <th>Exact match (%)</th>
+    </tr>
+    <tr>
+      <th>130</th>
+      <th>51 (39%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Graduate students</td>
+      <td>109</td>
+      <td>42 (39%)</td>
+    </tr>
+    <tr>
+      <td>Postdocs</td>
+      <td>21</td>
+      <td>9 (43%)</td>
+    </tr>
+    <tr>
+      <td>Non-interns</td>
+      <td>578</td>
+      <td>165 (29%)</td>
+    </tr>
+    <tr>
+      <td>Graduate students</td>
+      <td>251</td>
+      <td>57 (23%)</td>
+    </tr>
+    <tr>
+      <td>Postdocs</td>
+      <td>327</td>
+      <td>108 (33%)</td>
+    </tr>
+  </tbody>
+</table>
 
 Furthermore, post hoc tests explored the potential impact of social identity groups on career matching, but trends were nearly identical, hence the original, simple Model 1 was retained. Model 2 included demographic information (race/ethnicity [UR/WR], gender [female/male], and citizenship [citizen/international]). Race/ethnicity and citizenship did not impact the model, indicating that UR and international applicants were as likely as WR and citizen applicants to match their career interests (p<0.52, OR = 1.00 and p<0.26, OR = 1.00, respectively). For this reason, we ran a simplified model including only gender as a demographic variable. The trends were similar for career interests and trainee type (Table 3). The overall model remained statistically significant while controlling for gender, trainee type, and career interests, with nearly identical patterns and significance levels for the impact participation (OR = 3.51, p<0.001) (χ2 = 97.57, R2Nagelkerke = 0.21, p<0.001). Interestingly, applicants who identified as female were nearly one and a half times more likely to match their career interests when compared with applicants who identified as male (p=0.02, OR = 1.58).
 
+**Table 3.**
+ Summary for regression model controlling for demographic variables race/ethnicity (UR/WR), gender (female/male), and citizenship (citizen/international) (Model 2).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Variables</th>
+      <th rowspan="2">p-Value</th>
+      <th rowspan="2">OR</th>
+      <th colspan="2">95% CI</th>
+    </tr>
+    <tr>
+      <th>Lower</th>
+      <th>Upper</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Internship participation</td>
+      <td>&lt;0.001</td>
+      <td>3.51</td>
+      <td>1.71</td>
+      <td>7.21</td>
+    </tr>
+    <tr>
+      <td>Number of career interests</td>
+      <td>&lt;0.001</td>
+      <td>1.20</td>
+      <td>1.11</td>
+      <td>1.29</td>
+    </tr>
+    <tr>
+      <td>Trainee type (Pd)</td>
+      <td>&lt;0.001</td>
+      <td>5.03</td>
+      <td>2.94</td>
+      <td>8.60</td>
+    </tr>
+    <tr>
+      <td>Gender*</td>
+      <td>0.02</td>
+      <td>1.58</td>
+      <td>1.07</td>
+      <td>2.33</td>
+    </tr>
+    <tr>
+      <td>Race/ethnicity (ns)</td>
+      <td>0.52</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.01</td>
+    </tr>
+    <tr>
+      <td>Citizenship (ns)</td>
+      <td>0.26</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>1.00</td>
+    </tr>
+  </tbody>
+</table>
+
 One goal of the internship program is to decrease the percentage of graduate students who pursue postdoctoral training when such training is not necessary. Postdoctoral training is an excellent and required training for some research-intensive career paths, namely academic tenure track positions. However, some graduate students enter postdoctoral training by default because they are unsure of what profession they plan to pursue, and they see a postdoc as the best way to keep ‘all their doors open’. Not all career paths require postdoctoral training, some hiring managers in the industry view a lengthy postdoc training period negatively when considering candidates, and postdoctoral training has been shown to decrease lifetime earnings and delay retirement savings (Kahn and Ginther, 2017). We analyzed whether interns were more likely to enter the biomedical workforce directly instead of doing a postdoc when compared to non-interns and found that 38 of 107 interns (36%) who had graduated between 2015 and 2021 continued their training in a postdoctoral position. Looking at non-intern controls who graduated during that same time span, we found that of 499 graduation date-matched non-interns, 283 (57%) pursued postdoctoral training (Table 4).
+
+**Table 4.**
+ Rates of postdoctoral training for interns and non-interns.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Graduate student participant status</th>
+      <th>n</th>
+      <th>Postdoc rate (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interns (participants)</td>
+      <td>107</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Controls (non-participants)</td>
+      <td>499</td>
+      <td>57</td>
+    </tr>
+  </tbody>
+</table>
 
 Without a doubt, trainees who elect to do an internship are a self-selected population with career biases. Interns are less likely to want to pursue an academic tenure track position, they are more likely to have for-profit career aspirations, and, in the case of our program at least, they must have the support of the research advisor for doing the internship. Despite these inherent biases, it is valuable to examine the different career outcomes of interns versus non-interns (Table 5). For this analysis, only graduate student interns and graduate student controls (matched by graduation year) were examined. Nineteen percent of interns were employed in the academic sector as their first position post-graduation compared to 46% for non-intern controls. In contrast, 75% of interns were employed in the for-profit sector compared to 42% of non-interns. When examining career type, the numbers were not as disparate; 57% of interns took primarily research positions defined as positions where they are generating or analyzing scientific data. Non-interns took primarily research positions at a slightly higher rate – 68%. Interns were more likely to take positions in science-related careers (37%) compared to non-interns (24%).
 
-## Publication profiles of interns and non-interns
+**Table 5.**
+ Job sector and career type of first job after graduate student internships.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Tier</th>
+      <th>Interns</th>
+      <th>Non-interns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Job sector</td>
+      <td>Total n=107</td>
+      <td>Total n=499</td>
+    </tr>
+    <tr>
+      <td>Academia</td>
+      <td>30 (28%)</td>
+      <td>271 (54%)</td>
+    </tr>
+    <tr>
+      <td>For-profit</td>
+      <td>67 (63%)</td>
+      <td>156 (31%)</td>
+    </tr>
+    <tr>
+      <td>Government</td>
+      <td>2 (2%)</td>
+      <td>41 (8%)</td>
+    </tr>
+    <tr>
+      <td>Non-profit</td>
+      <td>5 (5%)</td>
+      <td>30 (6%)</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>3 (3%)</td>
+      <td>1 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td>Career type</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primarily research</td>
+      <td>65 (61%)</td>
+      <td>381 (76%)</td>
+    </tr>
+    <tr>
+      <td>Primarily teaching</td>
+      <td>6 (6%)</td>
+      <td>19 (4%)</td>
+    </tr>
+    <tr>
+      <td>Science related</td>
+      <td>32 (30%)</td>
+      <td>89 (18%)</td>
+    </tr>
+    <tr>
+      <td>Not related to science</td>
+      <td>0 (%)</td>
+      <td>1 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td>Other/unknown</td>
+      <td>4 (4%)</td>
+      <td>9 (2%)</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Publication profiles of interns and non-interns
 
 One concern cited by faculty reluctant to support a trainee’s internship is the potential for reduced productivity on the part of the intern. Results from a previous study across 10 institutions (Brandt et al., 2021) show no delay in graduate training nor a reduction in research productivity (first author or total publications), for trainees participating in professional development activities including internships. We tested this hypothesis again on local programmatic data in an expanded group with a larger number of both interns and controls. To give graduates time to complete publications with their research advisor, interns and controls were only included in this analysis if they had graduated 2 years or more prior to the analysis date. In this larger study, 54 interns have, on average, slightly more first-author publications and slightly fewer total publications but neither difference is statistically significant (Table 6).
 
+**Table 6.**
+ Type and quantity of publications between graduate student interns and non-interns.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Graduate studentparticipant status</th>
+      <th>n</th>
+      <th>Average first-author publications (p=0.52)</th>
+      <th>Average total publications (p=0.66)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interns (participants)</td>
+      <td>54</td>
+      <td>1.94</td>
+      <td>3.65</td>
+    </tr>
+    <tr>
+      <td>Controls (non-participants)</td>
+      <td>410</td>
+      <td>1.81</td>
+      <td>3.85</td>
+    </tr>
+  </tbody>
+</table>
+
 We also examined average time to degree (defined as the start date to date of degree conferral for 107 graduate student interns and 420 non-interns, date-matched controls). The average time to degree conferral for interns was 67.1 months and for controls was 69.3 months (independent samples t-test, p=0.09). Therefore, as in our previous work (Brandt et al., 2021), we find no evidence of any deleterious effect on graduate trainee productivity as a consequence of participating in a 1-month internship program.
 
-## Part 3: Changes in faculty attitude toward internships
+### Part 3: Changes in faculty attitude toward internships
 
 Before the internship program began (Year 0), we surveyed active training faculty to ask them how likely they would be to support one of their students in good standing if the student asked permission to participate in an externally paid 1- or 3-month internship. Five years later we asked the same group of faculty the same question. Independent samples t-tests were used to compare faculty attitudes toward both lengths of internship at Year 0 and Year 5. Significant improvements in faculty support were observed for both durations of internship participation (3-month internship, t(229)=2.54, p=0.01; 1-month internship, t(212)=2.00, p<0.01); unequal variances accounted for as appropriate. Across the 3- and 1-month options, responses of both highly unlikely and unlikely decreased, and a higher portion of those in the likely category moved to highly likely (Figure 3). It is noteworthy that support for 1-month internships grew to 92% by Year 5 of the program.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/91011/elife-91011-fig3-v1.jpg)
 
-## Part 4: Lessons learned and advice for emerging internship programs
+### Part 4: Lessons learned and advice for emerging internship programs
 
-## Length and structure of the internship
+#### Length and structure of the internship
 
 UNC’s ImPACT internship program was started in 2015 and at the writing of this article has placed 175 interns with 80 partnering organizations. The program is well-known and appreciated among trainees and research advisors, and it is a major recruiting tool for UNC’s life science PhD programs. Many of the lessons we have learned from the program’s success may be helpful to others who are developing their own life science internship programs for PhD trainees and postdocs. The structure of the internship experience is integral to its success as a win-win experience for the three major stakeholders – interns, research advisors, and internship hosts. Research advisors, as stated above, are widely supportive of 1-month internships and most consider any internship longer than 3 months a non-starter. Companies, on the other hand, are used to 3–6-month-long internships, especially when they are paying for the intern. Interns’ preferences for length of experience typically lie somewhere in between. They want to stay on track in their own research projects, but they also want to get as much skill development and networking as possible in the internship.
 
@@ -139,7 +420,7 @@ A poster session highlighting aspects of each internship project (non-confidenti
 
 It is important that all stakeholders agree to the scope and deliverables of the internship. To facilitate this, a written agreement detailing the expectations of the internship experience is collaboratively drafted and signed by the intern, the internship host, and the research advisor. The so-called Scope of Work also contains the names and contact details of the parties, the start and end dates of the internship, a description of the project, the deliverables expected at the end of the internship, and other details as applicable. Common deliverables include a written report submitted by the intern to the host or a slide presentation by the intern given to the hosting unit. In some cases, the entire internship project is dedicated to the deliverable such as writing an NIH Small Business Research Innovation grant for a startup company or creating a competitor analysis report for an emerging product. The scope of work is signed by the intern, the research advisor, and the internship supervisor.
 
-## Stakeholder engagement and satisfaction
+#### Stakeholder engagement and satisfaction
 
 Ensuring a positive experience for all stakeholders is critical to the success and sustainability of an internship program. Figure 4 shows the results of surveys completed by internship hosts and research advisors and provides insight into the challenges of meeting all stakeholder needs. Overall, 95% of internship hosts were satisfied with the internship program (Figure 4h), with 96% being highly likely to supervise an intern in the future (Figure 4a). Nearly all (92%) of internship hosts indicated that they were highly likely to extend the internship if funding was made available (Figure 4b) and 63% indicated they were highly likely to extend the internship even if they had to provide the funding (Figure 4d). Overall, 98% of internship hosts rated communication with their intern as good, very good, or excellent (Figure 4e), and 97% of hosts rated their intern’s overall progress similarly positive (Figure 4f). Satisfaction with the intern was extremely high, with 94% surpassing hosts’ expectations (Figure 4g). Nearly three-quarters (73%) were highly likely to offer their intern a career position within their organization after completion of UNC training (Figure 4c).
 
@@ -149,11 +430,11 @@ Ensuring a positive experience for all stakeholders is critical to the success a
 
 Nearly 80% of research advisors indicated they were satisfied with the program (Figure 4j). Trainees’ skills across several areas were rated as about the same or better compared to others in the lab, including their work ethic, intellectual contributions, day-to-day lab maintenance, feedback, independence, communication of progress and challenges, and overall productivity (Figure 4n–q). Ratings of independence (Figure 4r) and communication (Figure 4s) trended higher for interns than their peers with 42% and 33%, respectively, being rated as higher or much higher than non-interns. On survey items about the impact of the program on interns’ research, 92% of research advisors believed that the program had a neutral or positive impact on the quantity of research their trainees were able to accomplish (Figure 4m), and 96% reported a neutral or positive impact on the quality of research (Figure 4l). Overall, 85% of interns met or exceeded their research advisors’ expectations in the lab (Figure 4k), and 89% of research advisors were somewhat to very likely to encourage a trainee to participate in the future (Figure 4i).
 
-## Challenge of matching dissertation project to internship focus
+#### Challenge of matching dissertation project to internship focus
 
 Alumni interview data suggest that when internships strongly align with students’ dissertation projects the benefit for interns increases. However, in some cases close alignment introduces tension due to the company’s interest in protecting their intellectual property from being exposed prematurely by the intern. For example, one issue that surprised many research advisors was the host sites’ requirement of confidentiality, which was particularly stringent for industry-based research and development internships. Some interns felt they could not discuss any aspects of the internship with their research advisor, because they were unclear what, if any information they could share, and this frustrated some research advisors. Because of this potential complication, our advice to interns is to choose an internship project that is tangential to their dissertation research. Furthermore, in our experience, the ideal internship project overlaps on a technical level, but not a scientific question. This allows the acquisition of new experience and skills without complicating the completion of degree-related research.
 
-## Communication with the research advisor
+#### Communication with the research advisor
 
 Most research advisors indicated that they had received no communication from the hosts of their trainees at the internship sites, and they would have liked to have had some interaction. They reasoned that if they are the research advisor, they should receive some information on the internship training received. Research advisors emphasized that they did not want long reports or face-to-face meetings, but rather a summary of what had occurred during the internship. This is a simple change that we plan to implement going forward.
 
@@ -161,11 +442,11 @@ Most research advisors stated in focus groups that they had no recollection of a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/91011/elife-91011-fig5-v1.jpg)
 
-## Challenges for international trainees
+#### Challenges for international trainees
 
 During the life of the ImPACT program, federal immigration statutes and the university’s interpretation of those guidelines have been dynamic. This has made it difficult, and sometimes impossible, for international trainees to participate in internships. An advantage of the funding model in which interns remain on institutional payroll during the internship is that it is easier for international students to be approved for some internships. We have also had limited success with creating a credit-bearing course that international students can enroll in during their internship; however, in that case, a tradeoff is that additional tuition credits must be paid for by the research advisor or the intern. Credit-bearing courses can make it easier for trainees on visas to use their allowance of Curricular Practical Training (CPT) during an internship. CPT is more freely available than Optional Curricular Training (OPT) allowances for most visa holders, and CPT can be approved by the university’s international student office whereas OPT must be approved by the federal government. At times, the only option for an international trainee to participate in an internship has been to use OPT allowances, but this process is expensive and time-consuming to apply for and is usually not the preferred path. In addition, data from alumni interviews suggest that the movement into desired careers, irrespective of career sector, may be particularly difficult for international students, even if they had very productive internships. Overall, it is important to fully explore opportunities that may work for international trainee internships at each institution and make as many available as possible to customize the best-fit options for each trainee.
 
-## Funding challenges and options
+#### Funding challenges and options
 
 The funding for the ImPACT internship program – while coming from institutional sources – was made possible from 2015 to 2019 by savings in other areas due to UNC’s NIH BEST award. Due to the success of the program during the grant period, the UNC School of Medicine has continued to fund the program since 2020. Regardless of the funding source, our model was designed to maximize faculty support by ensuring that research advisor grant funds were not used to support the trainee during the internship. Removing the burden of deciding how much time out of the lab is acceptable while paid on a research grant can make it easier for faculty to support a trainee’s internship.
 
@@ -175,43 +456,43 @@ Since the inception of the internship program, we have experimented with multipl
 
 This mixed-methods study evaluating the benefits of UNC’s internship program for doctoral-level trainees and postdocs demonstrated a wide range of positive results. Both qualitative and quantitative data pointed to definitive benefits for each of the stakeholder groups (trainees/interns, research advisors/faculty/labs, and internship hosts). Career outcomes were positively impacted by participating in the internship program. Finally, faculty attitudes show a significant shift toward supporting trainee participation in an internship program following the initial implementation.
 
-## Summary of benefits to stakeholders
+### Summary of benefits to stakeholders
 
-## Benefits to interns
+#### Benefits to interns
 
 Overall, interns found the internship experience highly valuable, with nearly all (95–97%) agreeing that the internship experience provided networking and professional development opportunities, expanded their network, and increased their competitiveness for the job market. The internship program was purposefully designed to provide career exploration and skill training, not job placement; nonetheless, positive career matches between internship field and first job placement were expected and achieved. Participation in the internship program increased the likelihood of matching one’s career interest with a first job placement in the trainees’ field of choice by threefold in comparison to non-participants.
 
 Second, the program was explicitly designed to minimize any potential negative impacts on the trainees’ research experience – this was achieved in that a large portion of interns even agreed that their research productivity and quality increased (42% and 33%, respectively; Figure 4d and h). Likewise, any negative impacts were minimized in that even for the minority (23% and 27%) that may have experienced temporary reductions in research productivity or quality, our empirical evidence suggests that no long-term deleterious effects were detected in publication rates for total or first-author publications or in terms of time to degree. This is in line with and expands upon our previous work showing no detriment to trainees’ productivity and efficiency based on overall professional development participation across 10 institutions nationally (Brandt et al., 2021). The current data extend and replicate our initial findings in the aforementioned report that trainee productivity was not negatively impacted by participating in internships. The absence of a measurable cost to time or productivity suggests that internships provide a multitude of measurable benefits to multiple stakeholder groups and have a high cost-to-benefit payoff.
 
-## Benefits to host companies
+#### Benefits to host companies
 
 Hosts generally had positive expectations of accepting an intern, which was reinforced by their experiences. While hosts ranked mentoring opportunities as the top initial motivator for taking on an intern, they found better than expected experiences with intern assistance with products and gaining fresh ideas. Furthermore, while they expected a benefit from interacting with a potential future hire, this expectation was ranked even more positively than expected by the end of the hosting experience.
 
-## Benefits to research advisors
+#### Benefits to research advisors
 
 As a stakeholder group, it is important to acknowledge that faculty research advisors take on the most risk and have the least to gain from encouraging their trainees to participate in internships outside of the lab. Yet, research advisors reported tangible benefits to the lab in both quantitative survey results and qualitative focus group responses.
 
 Recruiting high-quality, career-motivated, students to graduate programs is an indirect benefit of having an internship program. Prospective and incoming graduate students consistently rate professional development offerings as a major factor in choosing UNC on our annual recruitment surveys (Dave McDonald, unpublished data). The increasing quality of incoming students, especially those who communicate their interest in internships from the beginning, is recognized by the faculty and is an important driver of faculty support for the program. Another ancillary benefit of experiential career exploration programs, including internships, is the advantage that such programs offer to a university in securing and maintaining institutional training grants such as T32 Institutional Research Training Grants from the NIH.
 
-## Sustainability and faculty support
+### Sustainability and faculty support
 
 It is important for internship programs to lay the groundwork for a successful program by encouraging trainees to strategize their choice of internship timing to maximize gain and minimize impacts on their productivity. In addition, communicating with faculty before and after implementation is critical to gain widespread buy-in, manage expectations, and change course as needed. Even though the internship program began with relatively strong faculty support, that support increased substantially for both the 1-month (more popular) and the 3-month (less popular) internship formats as measured in a survey of active training faculty after the program was 5 years old. We believe this support is a result of successfully balancing stakeholders’ interests and concerns appropriately, especially keeping the length of the internship relatively short and ensuring that there is a minimal financial cost to research advisors.
 
 There tends to be a concern among faculty that exploring other career options could dissuade trainees from pursuing a tenure-track faculty career. While this may be true for some trainees, evidence suggests that career exploration can lead other trainees who were initially not considering academic careers to in fact seek out academic opportunities once they understand their options in more detail (Layton et al., 2020). This is likely due to non-academic career paths holding inflated appeal due to the ‘grass-is-greener-elsewhere’ phenomenon. When trainees engage in experiential career exploration, they return with a more realistic understanding of workplace realities. Wherever such experiences direct a trainee, an informed career decision is in the best interest of the trainee and their future employer.
 
-## Other programmatic considerations
+### Other programmatic considerations
 
 One consideration when planning for an internship program is the level of resources and personnel that are needed to build and sustain the program. Staff time allocation and personnel effort were cited by some BEST programs as impediments to developing internship programs (Lenzi et al., 2020). At UNC, one PhD-level staff director is primarily responsible for the internship program, which takes about 40% of their full-time effort. One other PhD level director lends their time as needed (e.g., supporting exploration of niche careers/internships, assisting with placements to unusual internship formats, connecting interns to additional networks). Importantly, there is also an active faculty advisor and advocate who devotes 5–10 hr per month to support the program (e.g., strategic planning, program evaluation analysis, administrative oversight, connecting with faculty, and answering common questions). The most time-consuming parts of program administration are handled by the primary program director, and include managing and growing partnerships; communicating with interns, supervisors, and research advisors; coaching interns; overseeing the application and matching process; and coordinating financial funding source management.
 
 During the first 5 years of the internship program, internships were available to postdoctoral trainees and graduate students. After 2020, our funding mandate no longer allowed us to fund postdoctoral internships even though a fraction of internship hosts have a stated preference for more senior postdoctoral trainees. When postdocs were included, roughly one in five (21%) of interns were postdocs. We found that research advisors of postdoc interns were less likely to be supportive of the program for several reasons. First, a 160 hr internship may represent a greater percentage of the typical postdoc employment period, given the variation of postdoctoral training length. Second, some advisors view the postdoctoral experience as less amenable to career exploration. Third, given the at-will employment designation of postdocs, they are more likely to end their training abruptly if offered a full-time position by the host company. Another challenge of funding postdoctoral internships is that a senior postdoc’s salary can be close to twice that of a graduate student’s stipend. Notwithstanding these challenges, postdoc interns rated their experience highly and often transitioned seamlessly into employment with their internship host.
 
-## Ongoing challenge: Integrating off-campus skill acquisition into graduate and postdoctoral training
+### Ongoing challenge: Integrating off-campus skill acquisition into graduate and postdoctoral training
 
 Without a doubt, most any trainee would benefit from an off-campus internship, even if they plan to remain in an academic career setting. Indeed, internships are ubiquitous in many other professional training programs, such as law, business, nursing, computer science, and engineering programs (Van Wart et al., 2020). However, due to the scarcity of resources and the current structure and incentives inherent to biological and biomedical graduate and postdoctoral training, the internship process is a highly competitive process accessible only to a fraction of trainees and at only a minority of academic institutions. The competitive process benefits internship hosts and program reputation, but it leads to other challenges. For example, some research advisors maintain the view that an internship is an experience that only the most productive students should benefit from. One research advisor in a focus group interview stated, ‘Research advisors use the internship opportunity as a reward for outstanding students’. As the value of internships for life science PhD and postdoc trainees become more evident, and as graduate/postdoc training programs and science workforce employers experience the benefits firsthand, we expect to see continued systemic changes that will increase access to internships and shift some of the costs away from training programs and universities. We hope that our experiences and lessons learned from the implementation of the internship program will help to encourage other institutions to either initiate or extend their biomedical internship possibilities.
 
 Successful internship models at other universities that should be considered by universities developing their own programs include the University of California San Francisco (Schnoes et al., 2018), which places their interns after dissertation defense and PhD graduation. This removes potential conflicts of interest between the research advisor and student, but it may require that the intern be applying for full-time positions before the full benefit of the internship is realized. Other models include shorter internships, unpaid internships, and company-paid internships (e.g., Rutgers iJobs program, University of Rochester BEST internships, the ASPIRE program at Vanderbilt University, Cornell University BEST Internships). Future work should include evaluating whether the stakeholder benefits and faculty buy-in are similar or different from these and other internship models. The current model has the benefit of occurring in the midst of training, which allows follow-up skill-building and reflection before the trainee enters the job market. On the other hand, from the perspective of a company that views the internship as a hiring mechanism, the delay between the end of the internship and the start date of the trainee could be a downside of this model.
 
-## Limitations
+### Limitations
 
 Limitations to the generalizability of our program and results include differing institutional climate and culture, the local economic environment, and the number and type of local employers. First, there may be funding structures and sustainability plans that are a better fit to universities of different sizes and compositions. We acknowledge the need for future studies to evaluate the feasibility and outcomes of internship programs funded via different models to see if faculty support and student outcomes would be comparable under different models. Second, not all universities may be able to create a local internship program, especially those not situated near a strong biotech or pharma hub. Third, geographic challenges can be overcome by alternate program designs, including virtual internships, that utilize partnerships with institutions or companies in other locations. Another alternative is traveling to biotech and pharma hubs such as Boston and San Francisco, either for short or longer experiential learning opportunities. Such programs have been piloted by the University of Chicago and Vanderbilt University (see Van Wart et al., 2020). Another alternative is to find internship partners in areas of strong economic opportunity in the local area, even if those may not be a direct match to the disciplinary skill sets. Transferrable skills of graduate students can be emphasized when exploring these partnerships (e.g., Christine and Judith, 2020).
 
@@ -219,55 +500,203 @@ A potential limitation inherent to this type of observational research is a self
 
 Furthermore, a key component of experiential learning includes reflection to reinforce the benefits of experiential learning to trainees (Van Wart et al., 2020). While trainees had the experience to reflect on their internship while providing feedback during program evaluation, a more structured and in-depth guided reflection might provide additional benefits. Future programs and studies should systematically examine to what extent additional post-internship reflections and/or ongoing regular reflections during the internship experience may provide a richer gain in perspectives. Other future studies could probe faculty advisor support for internships at institutions beyond our own since training culture and faculty perspectives are influenced by many factors and vary from institution to institution.
 
-## Adapting to national trends: Customizable program design
+### Adapting to national trends: Customizable program design
 
 Global events, including the COVID-19 pandemic, added to the need for creative and innovative experiential career development opportunities amid an ever-changing academic job market (Mathur, 2020). Hence, during later cohorts, we needed to keep our model nimble to adapt to changing workforce needs, current job market trends, as well as limitations to in-person internship opportunities. As we emerged from the negative job market impacts during earlier phases of the pandemic, we are now entering a phase of increased hiring and the unexpectedly high level of opportunity for trainees now entering the job market (e.g., the Great Resignation, multiple job opportunities per person available nationally; Gewin, 2022) we consider future directions for the internship program model to expand into new territories and develop partnerships between institutes and organizations. This includes job location flexibility (e.g., remote, hybrid, in-person), adjusting company needs/interests to still meet the needs of trainee career interests, and multiple funding models that have worked to create sustainable programming.
 
-## Conclusions
+### Conclusions
 
 Internship programs for PhD and postdoctoral level life scientists provide a myriad of benefits to interns, the research advisors’ lab climate and productivity, and the internship host organizations. A customized internship program that maximizes an institution’s resources, location, and access to partner organizations can result in a sustainable internship program. Implementation of the program in a manner that aligns and balances the interests of all three principal stakeholders as well as secures research advisors’ support is critical to the success of the program.
 
 ## Methods
 
-## Overview
+### Overview
 
 The methods used span stakeholder groups and research questions; hence, they are not presented as separate studies but rather referred to as relevant when each topic, theme, or relevant stakeholder group is discussed. An overview of each method of data collection is included here, with additional detail about planned analyses and results included within each subsequent section. Qualitative data collection included focus groups and open-ended survey response options, whereas quantitative data collection included Likert-type survey responses and career outcome data and matchings. Since these data were collected across multiple types of surveys and databases, the ‘Methods’ section details each data collection methodology for the reader to refer to.
 
-## Stakeholder data elements
+### Stakeholder data elements
 
-## Faculty attitude survey (pre-/post-program implementation)
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Stakeholder</th>
+      <th colspan="2">Faculty attitude survey</th>
+      <th colspan="2">Internship surveys</th>
+      <th colspan="2">Focus group interviews</th>
+      <th rowspan="2">NIH BESTentrance survey</th>
+      <th rowspan="2">Career outcomes census</th>
+    </tr>
+    <tr>
+      <th>(Pre)</th>
+      <th>(Post)</th>
+      <th>(Pre)</th>
+      <th>(Post)</th>
+      <th>(Year 1)</th>
+      <th>(Year 5)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Trainees</td>
+      <td>Current intern</td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Alumniintern</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All trainee alumni</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Faculty</td>
+      <td>Active training faculty</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Research advisors</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Industry</td>
+      <td>Internship hosts</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+#### Faculty attitude survey (pre-/post-program implementation)
 
 Identical surveys asking current active training faculty to provide their opinions on trainees participating in 1-month-long and 3-month-long internships were administered approximately 5 years apart (pre- and post-NIH BEST funding and the corresponding implementation of the internship program). Surveys were administered via Qualtrics before BEST award (2014, n = 112–114) and following-NIH BEST intervention (2019, n = 117–118), with comparable response rates each iteration. Emailed survey links requested voluntary completion of the survey via the biomedical sciences umbrella program listserv which reaches roughly 300 active training faculty across 14 departments.
 
-## Internship surveys (pre-/post-survey data collection)
+#### Internship surveys (pre-/post-survey data collection)
 
 For program evaluation, responses were requested from all participating interns, hosts, and research advisors via personalized email invitation. Data was collected via SurveyMonkey by the external evaluator to ensure confidentiality and candor. Two reminders were sent to urge non-completers to respond.
 
-## Focus group interviews
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Research advisors</th>
+      <th>Internshiphosts</th>
+      <th>Currentinterns (pre)</th>
+      <th>Currentinterns (post)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cohort 1</td>
+      <td>12</td>
+      <td>15</td>
+      <td>–</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Cohort 2</td>
+      <td>14</td>
+      <td>19</td>
+      <td>23</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Cohort 3</td>
+      <td>21</td>
+      <td>22</td>
+      <td>27</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Cohort 4</td>
+      <td>15</td>
+      <td>17</td>
+      <td>13</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td>Cohort 5</td>
+      <td>13</td>
+      <td>17</td>
+      <td>20</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>75</td>
+      <td>90</td>
+      <td>83</td>
+      <td>80</td>
+    </tr>
+  </tbody>
+</table>
 
-## Faculty (Year 1 and Year 5)
+### Focus group interviews
+
+#### Faculty (Year 1 and Year 5)
 
 A subset of seven research advisors who were mentoring trainees in the program during the 2015–2016 academic year were interviewed in a focus group format in March 2016. Interviewees included mentors of both postdocs and graduate students, some of whom had completed their internships and some of whom were still in the planning stages, as well as one faculty member who had not yet mentored an intern. A follow-up focus group session was conducted in June 2020, with five of the seven original research advisors available to offer reflective thoughts on the program.
 
-## Intern (Year 1 and Year 5)
+#### Intern (Year 1 and Year 5)
 
 A subset of 10 trainees in the program during the 2015–2016 academic year were interviewed in a focus group format in March 2016. Interviewees included both postdocs and graduate students, some of whom had completed their internships and some of whom were still in the planning stages. Follow-up focus group interviews were conducted with a random sample of program alumni who had completed internships in the 2015–2016 academic year. A total of eight alumni of the program were interviewed across two focus groups sessions in September 2020.
 
 Interviews conducted during the 2015–2016 academic year were in person, while all interviews in 2020 were virtual through the Zoom platform. During the interviews, no project leaders or university administrators were present for either format, and each focus group session lasted roughly an hour. All sessions were audio-recorded, transcribed, and analyzed for themes. We used ATLAS.ti version 6, a computer-assisted qualitative data analysis software package (GmbH, Germany, 1993–2020). Two members of the external evaluation team (K. Wood and D. Whittington) developed the list of themes and prepared summaries without identifiers for project leaders.
 
-## NIH BEST entrance survey
+#### NIH BEST entrance survey
 
 Career interests for controls and interns were gathered from NIH entrance survey sent to all UNC life science graduate students in 2015 included 342 students who initiated the survey and 301 who completed it; for postdocs, 332 initiated and 273 completed the survey. For any interns who did not complete the entrance survey (such as those who entered UNC after 2015), a proxy interest match was determined using a pre-internship career interest rating submitted as part of the internship application (n = 69 of 116 total interns in the matching analysis).
 
-## Career outcomes census
+#### Career outcomes census
 
 Career outcomes were collected for all graduate student alumni on the bi-annual census, along with all postdocs who either completed an entrance questionnaire or pre-internship questionnaire indicating career interests. Career outcomes were collected using publicly available information found on LinkedIn, laboratory websites, personal websites, company websites, social media (e.g., Twitter), PubMed, Google Scholar, etc. Whenever possible, two sources of information were used to corroborate the current job title and employer.
 
-## Participants
+#### Participants
 
 Survey data was requested from all interns, their respective faculty advisors, and internship hosts. Faculty attitude surveys invited all active training faculty to participate (defined as all faculty who have supervised graduate students in the previous 5-year period). Focus groups included interns, alumni, and faculty invited to participate to provide program feedback.
 
-## Career interests and first position matching analysis
+#### Career interests and first position matching analysis
 
 Career outcomes matches were evaluated for those who had exited the program to attain a first-position title (all interns and non-interns from the BBSP program are included in our career outcomes database from our bi-annual census). For any trainee who stayed in their graduate lab as a postdoctoral trainee for less than 12 months, their first position outside the organization was instead defined as the first position. This sample included graduates and postdoctoral scholars who transitioned to their first career position between May 2014 and August 2021.
 
@@ -275,11 +704,11 @@ Career matches were calculated by the match between career interests with career
 
 The 20 career interests reported on the NIH BEST baseline survey were indexed to align with the 24 bins in the Job Function tier of the 2017 Unified Career Outcomes Taxonomy (UCOT Exp2, Stayart et al). See OSF File 3: ‘First position logistic regression data.xlsx’ for a crosswalk between the 20 entrance survey options and the 24 job functions from NIH BEST career taxonomy. Group matches were defined by sorting the 20 or 24 categories respectively into eight umbrella career groups (see OSF File 3: ‘First position logistic regression data.xlsx’).
 
-## Publication analysis
+#### Publication analysis
 
 PubKeeper (Strategic Evaluations, Inc) was used to submit trainee and research advisor name pairings for automated publication hit queries on NCBI’s PubMed database. PubKeeper returns PubMed IDs, PubMed Central IDs, author lists, and citation details including whether the trainee is a first author. This data was used to count the number of first-author publications and total publications for each trainee. Any trainee who had more than nine papers or less than one was analyzed by a member of the team to be sure that the number of publications was accurate. For any publication where the trainee was a second author, the PDF was accessed and examined for evidence that the trainee was a co-first author. If so, the publication was counted as a first-author paper. See OSF File 7: ‘PubKeeper publication output plus analysis 2-14-2023.xlsx’ for publication data.
 
-## Data analysis
+#### Data analysis
 
 All survey data were stored and analyzed using SPSS (IBM, New York, NY). In the cases where survey data were collected at one-timepoint (e.g., internship hosts, exit-only items for current interns), the team computed descriptive statistics. Survey data collected across two-timepoints were tested for statistical significance using t-tests. To maximize sample size due to partial responses, independent samples t-tests were used for the pre-and post-survey data collected from the interns. Independent samples t-tests were used for the Faculty Attitude Survey data set, given those identifiers were not collected to allow a pairing of responses across the two-timepoints. Independent samples t-tests were also used for trainee publication to compare participant (interns) versus non-participant graduate students on productivity (first author and total publications), including any program alumni who entered during the time range that the internship was offered (e.g., same start date as any participating interns in our sample). When testing for statistical significance, alpha criterion used was 0.05 (level of significance indicated for p-values<0.05, 0.01, or 0.001).
 

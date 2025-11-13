@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.36307.001 Allostery is an inherent feature of proteins, but it remains challenging to reveal the mechanisms by which allosteric signals propagate. A clearer understanding of this intrinsic circuitry would afford new opportunities to modulate protein function. Here, we have identified allosteric sites in protein tyrosine phosphatase 1B (PTP1B) by combining multiple-temperature X-ray crystallography experiments and structure determination from hundreds of individual small-molecule fragment soaks. New modeling approaches reveal 'hidden' low-occupancy conformational states for protein and ligands. Our results converge on allosteric sites that are conformationally coupled to the active-site WPD loop and are hotspots for fragment binding. Targeting one of these sites with covalently tethered molecules or mutations allosterically inhibits enzyme activity. Overall, this work demonstrates how the ensemble nature of macromolecular structure, revealed here by multitemperature crystallography, can elucidate allosteric mechanisms and open new doors for long-range control of protein function.
+Allostery is an inherent feature of proteins, but it remains challenging to reveal the mechanisms by which allosteric signals propagate. A clearer understanding of this intrinsic circuitry would afford new opportunities to modulate protein function. Here, we have identified allosteric sites in protein tyrosine phosphatase 1B (PTP1B) by combining multiple-temperature X-ray crystallography experiments and structure determination from hundreds of individual small-molecule fragment soaks. New modeling approaches reveal 'hidden' low-occupancy conformational states for protein and ligands. Our results converge on allosteric sites that are conformationally coupled to the active-site WPD loop and are hotspots for fragment binding. Targeting one of these sites with covalently tethered molecules or mutations allosterically inhibits enzyme activity. Overall, this work demonstrates how the ensemble nature of macromolecular structure, revealed here by multitemperature crystallography, can elucidate allosteric mechanisms and open new doors for long-range control of protein function.
 
 ## Introduction
 
@@ -47,37 +47,518 @@ Overall, by highlighting promising allosteric sites and ligands that bind to the
 
 ## Results
 
-## Identifying allosterically coupled residues with multitemperature crystallography
+### Identifying allosterically coupled residues with multitemperature crystallography
 
 To identify allosteric sites in PTP1B that can communicate with the active site, we searched for regions of the protein whose conformational heterogeneity is coupled to that of the active site. We began by examining the conformational heterogeneity of the active-site WPD loop. Transition of this loop from the open to the closed state is rate-limiting for catalysis (Whittier et al., 2013). In the only available apo crystal structure of PTP1B in which the WPD loop is free from crystal-lattice contacts (PDB ID 1sug) (Pedersen et al., 2004), the loop is modeled in the closed state. However, low-contour electron density can reveal hidden alternative conformations in protein crystal structures (Lang et al., 2010; Fraser et al., 2011). We therefore investigated the electron density near the WPD loop in the apo structure more closely (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig2-v2.jpg)
+
+**Figure 2.:** (A) The active-site WPD loop in PTP1B adopts either a closed conformation (example from PDB ID 1sug) or an open conformation (example from PDB ID 1t49). View from the ‘front side’ of PTP1B. (B) In the previously published apo structure of PTP1B, solved at 100 K (PDB ID 1sug), 0.8 σ 2Fo-Fc electron density (cyan) supports the modeled closed conformation, but substantial electron density remains unexplained (arrow). (C) Adding the open conformation of the WPD loop as a secondary conformation at partial occupancy accounts for this electron density. In structures solved at different elevated temperatures, electron density for the open conformation becomes more prominent as its occupancy (labeled) relative to the closed conformation increases. (D) The occupancy of the open conformation increases non-linearly with temperature. (E) Overall roadmap of allostery on the ‘back side’ of PTP1B, with the allosteric 197 site and loop 16 (L16) site highlighted in the context of the larger allosteric network including the previously established BB site, a7 helix, and WPD loop. Sidechains are shown in stick representation for several key residues in the WPD loop and allosteric regions. For those residues with alternative conformations at 278 K, both open-state (darker hues) and closed-state (lighter hues) conformations are shown. The viewing orientation in (A–C) is as in Figure 1A (‘front side’ of PTP1B), except zoomed in on the active site (labeled in Figure 1A). The viewing orientation in (E) is as in Figure 1B (‘back side’ of PTP1B).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** 36 structures from the PDB in the same space group as our datasets (P3121), originally modeled as only-open or only-closed, were naively re-refined with open and closed WPD loops modeled as alternative conformations with occupancies constrained to sum to 1. Almost all models have an active-site inhibitor bound. In P3121 the loop is free from any crystal contacts. (A-C) Representative examples of structures with the WPD loop originally modeled as closed or open (left, blue or red), and our re-refined dual-conformation models (right, purple). 1.0 σ 2Fo-Fc (cyan) and ±3.0 σ Fo-Fc electron density (green/red) are shown. (A) PDB ID 1sug: apo PTP1B; originally closed. 2Fo-Fc electron density supports the dual-conformation model; residual Fo-Fc density reflects partial-occupancy waters (Figure 2—figure supplement 2). (B) PDB ID 2f70: PTP1B in complex with an active-site inhibitor; originally closed. Fo-Fc electron density suggests the dual-conformation model is a poor fit. (C) PDB ID 2f6f: PTP1B in complex with another active-site inhibitor; originally open. Fo-Fc electron density suggests the dual-conformation model is a poor fit. (D) Loop occupancies for the re-refined dual-conformation models are bimodal: either ~fully open (left) or ~fully closed (right). The curve is a fit to the histogram using kernel density estimation, and is shown to emphasize the bimodal nature of the distribution. The only exception is the one published apo structure in this space group (1sug), which can be successfully refined with partial open and closed occupancies. The viewing orientation in (A-C) is as in Figure 1A (‘front side’ of PTP1B), except zoomed in on the active site (labeled in Figure 1A).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Although both closed and open WPD loop states are supported by 0.8 σ 2Fo-Fc electron density (cyan volume) in the 100 K apo PTP1B structure, several +3.2 σ Fo-Fc electron density (green mesh) remain unexplained (arrows). (B) Partial-occupancy waters (red spheres) with the opposite ‘altloc’ alternative conformation label as the closest protein atoms (‘A’ vs. ‘B’) dramatically reduce the difference density and better explain the data. See (Pedersen et al., 2004). The waters modeled here resemble water networks from either the closed-only (2f70) or the open-only (2f6f) structures. The viewing orientation in A–C) is as in Figure 1A (‘front side’ of PTP1B), except zoomed in on the active site (labeled in Figure 1A).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Plots of Rd (Diederichs, 2006) versus frame-number difference for each dataset reveal little evidence for radiation damage. Statistics for WT apo at 100 K, which is from PDB ID 1sug, are not shown.
 
 Surprisingly, upon closer inspection, the electron density strongly suggests a significant population for the open state as well (Figure 2C, left). Our re-refined model with both open and closed states as alternative conformations visually accounts for the electron density around this loop much better than the original model (Figure 2C, left). By contrast, when we re-refined 36 other available crystal structures of PTP1B complexed with active-site inhibitors using both open and closed loop states as putative alternative conformations, Fo-Fc difference electron density and the bimodal distribution of refined occupancies indicated the single-state models were a better fit (Figure 2—figure supplement 1). These results suggest that, even in the crystal, apo PTP1B samples both WPD loop states and that active-site inhibitors then lock the loop either fully open or fully closed.
 
 To better characterize the conformational heterogeneity of the WPD loop in apo PTP1B, we collected X-ray datasets at several elevated temperatures including 180 K, 240 K, and 278 K (‘room temperature’) in addition to the 100 K (‘cryogenic’) model from the PDB, all at better than 2 Å resolution (Table 1). Each complete dataset was obtained from a single crystal, and crystallographic statistics indicated that radiation damage was not a concern even at the elevated temperatures (Diederichs, 2006) (Figure 2—figure supplement 3). We built an initial multiconformer model for each temperature using the automated algorithm qFit (Keedy et al., 2015a). These models are parsimonious in that each atom has alternative positions only if justified by the experimental data, and a single position otherwise. Such models are equally good and usually better explanations of the experimental X-ray data (Keedy et al., 2015a; van den Bedem et al., 2009), and have been used to understand many biologically relevant phenomena at protein:water interfaces (Keedy et al., 2014), dynamic enzyme active sites (Keedy et al., 2015b; Fraser et al., 2009), and allosteric networks perturbed by mutations (van den Bedem et al., 2013). We then manually refined alternative conformations for protein, buffer components, and solvent. In particular, we took advantage of the wealth of available structures of PTP1B in the PDB (Berman et al., 2000) to sample coordinates for putative alternative conformations; in many cases, these conformations explained missing regions with positive Fo-Fc electron density that would have otherwise been difficult to model. Removing the alternative conformations and re-refining the resulting single-conformer models, either with or without automated solvent placement, yields deteriorated statistics (Table 1— source data 1), which confirms that the multiconformer models are appropriate explanations of the experimental data at each temperature.
 
+**Table 1.**
+ Crystallographic statistics for multitemperature and mutant X-ray datasets.Overall statistics given first (statistics for highest-resolution bin in parentheses). For WT apo, 100 K: statistics are taken from our remodeled structure where appropriate, or from the original PDB ID 1sug when possible otherwise, or given as ‘---” where unavailable.Table 1—source data 1.Multiconformer models best explain PTP1B X-ray data across temperatures.R-factors are reported for the deposited multiconformer models for multitemperature datasets in Table 1 vs. single-conformer models derived by removing alternative conformations and re-refining with Phenix either with default parameters (‘without solvent picking’) or with automated water placement turned on by adding the flag ‘ordered_solvent = True’ (‘with solvent picking’) for 12 macro-cycles. For the new single-conformer models, R-factors are given both for state A with state B’s alternative conformations removed, and for state B with state A’s alternative conformations removed, to confirm that either option for a single-conformer model is worse than a multiconformer model. Overall, regardless of the choice of solvent parameters, at each temperature the multiconformer model has lower (better) Rwork and Rfree.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>WT apo, 100 K</th>
+      <th>WT* apo, 180 K</th>
+      <th>WT* apo, 240 K</th>
+      <th>WT* apo, 278 K</th>
+      <th>WT* with BB3, 278 K</th>
+      <th>K197C apo, 100 K</th>
+      <th>K197C tethered to 2, 100 K</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID</td>
+      <td>6B90</td>
+      <td>6B8E</td>
+      <td>6B8T</td>
+      <td>6B8X</td>
+      <td>6B8Z</td>
+      <td>6BAI</td>
+      <td>6B95</td>
+    </tr>
+    <tr>
+      <td>Number of crystals used</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.8110</td>
+      <td>1.115869</td>
+      <td>1.115869</td>
+      <td>0.9795</td>
+      <td>1.11583</td>
+      <td>1.11583</td>
+      <td>1.11583</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>33.60–1.95 (2.02–1.95)</td>
+      <td>19.18–1.82 (1.89–1.82)</td>
+      <td>62.54–1.85 (1.92–1.85)</td>
+      <td>31.31–1.74 (1.80–1.74)</td>
+      <td>43.88–1.8 (1.86–1.8)</td>
+      <td>75.57–1.95 (2.02–1.95)</td>
+      <td>43.98–1.95 (2.02–1.95)</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+      <td>P 31 2 1</td>
+    </tr>
+    <tr>
+      <td>Unit cell (Å, °)</td>
+      <td>88.12 88.12 103.90 90 90 120</td>
+      <td>88.57 88.57 104.32 90 90 120</td>
+      <td>89.44 89.44 106.00 90 90 120</td>
+      <td>89.52 89.52 106.25 90 90 120</td>
+      <td>89.65 89.65 106.39 90 90 120</td>
+      <td>87.27 87.27 104.10 90 90 120</td>
+      <td>87.96 87.96 104.63 90 90 120</td>
+    </tr>
+    <tr>
+      <td>Total reflections</td>
+      <td>---</td>
+      <td>339461 (33574)</td>
+      <td>256701 (25484)</td>
+      <td>299041 (30678)</td>
+      <td>771858 (76158)</td>
+      <td>653798 (63759)</td>
+      <td>170094 (16845)</td>
+    </tr>
+    <tr>
+      <td>Unique reflections</td>
+      <td>34486 (3371)</td>
+      <td>42866 (4223)</td>
+      <td>42343 (4156)</td>
+      <td>50486 (4960)</td>
+      <td>46311 (4561)</td>
+      <td>33409 (3296)</td>
+      <td>34596 (3387)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>7.4 (---)</td>
+      <td>7.9 (7.9)</td>
+      <td>6.1 (6.1)</td>
+      <td>5.9 (6.2)</td>
+      <td>16.7 (16.7)</td>
+      <td>19.6 (19.3)</td>
+      <td>4.9 (5.0)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.9 (100.0)</td>
+      <td>99.9 (100.0)</td>
+      <td>100.0 (100.0)</td>
+      <td>99.0 (98.3)</td>
+      <td>100.0 (100.0)</td>
+      <td>98.06 (98.51)</td>
+      <td>99.81 (99.88)</td>
+    </tr>
+    <tr>
+      <td>Mean I/sigma(I)</td>
+      <td>26.4 (4.4)</td>
+      <td>21.40 (1.46)</td>
+      <td>15.89 (1.46)</td>
+      <td>17.15 (1.49)</td>
+      <td>11.69 (0.75)</td>
+      <td>25.06 (0.94)</td>
+      <td>12.04 (0.81)</td>
+    </tr>
+    <tr>
+      <td>Wilson B (Å2)</td>
+      <td>24.12</td>
+      <td>23.69</td>
+      <td>28.48</td>
+      <td>19.48</td>
+      <td>34.96</td>
+      <td>46.3</td>
+      <td>38.82</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.073 (0.515)</td>
+      <td>0.089 (1.483)</td>
+      <td>0.079 (1.215)</td>
+      <td>0.098 (1.209)</td>
+      <td>0.148 (2.664)</td>
+      <td>0.076 (3.056)</td>
+      <td>0.088 (1.852)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>---</td>
+      <td>0.096 (1.585)</td>
+      <td>0.086 (1.329)</td>
+      <td>0.108 (1.318)</td>
+      <td>0.153 (2.748)</td>
+      <td>0.078 (3.138)</td>
+      <td>0.098 (2.071)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>---</td>
+      <td>0.034 (0.556)</td>
+      <td>0.035 (0.535)</td>
+      <td>0.044 (0.520)</td>
+      <td>0.038 (0.672)</td>
+      <td>0.018 (0.705)</td>
+      <td>0.044 (0.916)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>---</td>
+      <td>0.999 (0.520)</td>
+      <td>0.999 (0.560)</td>
+      <td>0.999 (0.496)</td>
+      <td>0.997 (0.366)</td>
+      <td>1.000 (0.438)</td>
+      <td>0.999 (0.292)</td>
+    </tr>
+    <tr>
+      <td>CC*</td>
+      <td>---</td>
+      <td>1.000 (0.827)</td>
+      <td>1.000 (0.847)</td>
+      <td>1.000 (0.814)</td>
+      <td>0.999 (0.732)</td>
+      <td>1.000 (0.781)</td>
+      <td>1.000 (0.672)</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>34486 (3371)</td>
+      <td>42862 (4223)</td>
+      <td>42343 (4156)</td>
+      <td>50486 (4959)</td>
+      <td>46309 (4561)</td>
+      <td>33302 (3296)</td>
+      <td>34576 (3386)</td>
+    </tr>
+    <tr>
+      <td>Reflections used for Rfree</td>
+      <td>1356 (128)</td>
+      <td>1689 (165)</td>
+      <td>1669 (163)</td>
+      <td>1993 (196)</td>
+      <td>1820 (176)</td>
+      <td>1310 (135)</td>
+      <td>1362 (135)</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td>0.1580 (0.1881)</td>
+      <td>0.1708 (0.2781)</td>
+      <td>0.1674 (0.2760)</td>
+      <td>0.1752 (0.3511)</td>
+      <td>0.1675 (0.3116)</td>
+      <td>0.2061 (0.3365)</td>
+      <td>0.1858 (0.3295)</td>
+    </tr>
+    <tr>
+      <td>Rfree</td>
+      <td>0.1926 (0.2090)</td>
+      <td>0.1997 (0.2911)</td>
+      <td>0.2123 (0.2869)</td>
+      <td>0.2059 (0.3888)</td>
+      <td>0.1978 (0.3017)</td>
+      <td>0.2569 (0.3292)</td>
+      <td>0.2307 (0.3686)</td>
+    </tr>
+    <tr>
+      <td>CCwork</td>
+      <td>---</td>
+      <td>0.963 (0.753)</td>
+      <td>0.958 (0.789)</td>
+      <td>0.964 (0.673)</td>
+      <td>0.964 (0.709)</td>
+      <td>0.934 (0.618)</td>
+      <td>0.957 (0.574)</td>
+    </tr>
+    <tr>
+      <td>CCfree</td>
+      <td>---</td>
+      <td>0.948 (0.744)</td>
+      <td>0.908 (0.677)</td>
+      <td>0.948 (0.739)</td>
+      <td>0.961 (0.757)</td>
+      <td>0.994 (0.484)</td>
+      <td>0.938 (0.294)</td>
+    </tr>
+    <tr>
+      <td>Non-H atoms</td>
+      <td>2997</td>
+      <td>3021</td>
+      <td>3149</td>
+      <td>3260</td>
+      <td>2709</td>
+      <td>2502</td>
+      <td>2541</td>
+    </tr>
+    <tr>
+      <td>Macromolecule atoms</td>
+      <td>2657</td>
+      <td>2687</td>
+      <td>2875</td>
+      <td>3011</td>
+      <td>2460</td>
+      <td>2377</td>
+      <td>2370</td>
+    </tr>
+    <tr>
+      <td>Ligand atoms</td>
+      <td>46</td>
+      <td>40</td>
+      <td>34</td>
+      <td>24</td>
+      <td>82</td>
+      <td>16</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Solvent atoms</td>
+      <td>294</td>
+      <td>294</td>
+      <td>240</td>
+      <td>225</td>
+      <td>167</td>
+      <td>109</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>298</td>
+      <td>298</td>
+      <td>299</td>
+      <td>298</td>
+      <td>289</td>
+      <td>282</td>
+      <td>285</td>
+    </tr>
+    <tr>
+      <td>RMS bonds (Å)</td>
+      <td>0.010</td>
+      <td>0.011</td>
+      <td>0.011</td>
+      <td>0.012</td>
+      <td>0.011</td>
+      <td>0.015</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>RMS angles (°)</td>
+      <td>1.01</td>
+      <td>1.02</td>
+      <td>1.10</td>
+      <td>1.08</td>
+      <td>1.14</td>
+      <td>1.30</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Ramachandran favored (%)</td>
+      <td>97.64</td>
+      <td>97.64</td>
+      <td>97.98</td>
+      <td>95.95</td>
+      <td>97.19</td>
+      <td>95.00</td>
+      <td>95.76</td>
+    </tr>
+    <tr>
+      <td>Ramachandran allowed (%)</td>
+      <td>2.03</td>
+      <td>2.03</td>
+      <td>1.68</td>
+      <td>3.72</td>
+      <td>2.11</td>
+      <td>4.64</td>
+      <td>2.83</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.34</td>
+      <td>0.34</td>
+      <td>0.34</td>
+      <td>0.34</td>
+      <td>0.70</td>
+      <td>0.36</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td>1.35</td>
+      <td>2.67</td>
+      <td>1.87</td>
+      <td>2.38</td>
+      <td>2.19</td>
+      <td>6.44</td>
+      <td>4.91</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>2.79</td>
+      <td>3.31</td>
+      <td>3.62</td>
+      <td>2.98</td>
+      <td>2.79</td>
+      <td>6.06</td>
+      <td>3.36</td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.24</td>
+      <td>1.52</td>
+      <td>1.36</td>
+      <td>1.65</td>
+      <td>1.47</td>
+      <td>2.29</td>
+      <td>1.95</td>
+    </tr>
+    <tr>
+      <td>Average B (Å2)</td>
+      <td>29.35</td>
+      <td>30.22</td>
+      <td>36.50</td>
+      <td>28.06</td>
+      <td>43.58</td>
+      <td>55.81</td>
+      <td>49.66</td>
+    </tr>
+    <tr>
+      <td>Average B, macromolecule (Å2)</td>
+      <td>28.14</td>
+      <td>29.11</td>
+      <td>35.51</td>
+      <td>27.01</td>
+      <td>43.30</td>
+      <td>56.02</td>
+      <td>49.53</td>
+    </tr>
+    <tr>
+      <td>Average B, ligands (Å2)</td>
+      <td>47.43</td>
+      <td>48.08</td>
+      <td>60.29</td>
+      <td>67.33</td>
+      <td>41.13</td>
+      <td>45.41</td>
+      <td>53.91</td>
+    </tr>
+    <tr>
+      <td>Average B, solvent (Å2)</td>
+      <td>37.46</td>
+      <td>37.90</td>
+      <td>44.96</td>
+      <td>38.01</td>
+      <td>48.96</td>
+      <td>52.76</td>
+      <td>50.82</td>
+    </tr>
+  </tbody>
+</table>
+
 The WPD loop adopts both the open and closed conformations across this range (Figure 2C) and the population of the open vs. closed states was sensitive to temperature (Figure 2D). The loop is approximately 67% closed at 100 K, but 65% open at 278 K. These occupancies evolve non-linearly (Keedy et al., 2015b) at intermediate temperatures.
 
 Overall, we also observed temperature-dependent conformational heterogeneity for several other regions of PTP1B, including the previously characterized BB allosteric site, plus additional sites we refer to as the ‘197 site’ and the ‘loop 16 (L16) site’. These regions are all contiguous in the structure (Figure 2E), suggesting that they together constitute an expanded collective allosteric network in PTP1B that is coupled to the WPD loop. The manner in which they are connected is described in detail in the following sections.
 
-## Multitemperature crystallography of the BB allosteric site
+### Multitemperature crystallography of the BB allosteric site
 
 To connect these multitemperature structures to known allosteric regulatory mechanisms, we first turned to a benzbromarone derivative compound (here referred to as BB2) that binds to an allosteric site >12 Å away from the active site and inhibits enzyme activity (Wiesmann et al., 2004). The authors of the study reporting BB2 described a series of induced conformational changes that begins with BB2 directly displacing Trp291 to disorder the entire C-terminal α7 helix, and ends with Phe191 χ2 dihedral-angle rotations clashing with the WPD loop anchor residue Trp179 to stabilize the open state. We tested the hypothesis that these allosterically inhibited conformations pre-exist in apo PTP1B by examining these regions in our multitemperature apo crystal structures. Indeed, in apo PTP1B the α7 helix is more ordered at lower temperatures but more disordered at higher temperatures (Figure 3A). Also, Trp179 and Phe191 adopt dual conformations at higher temperatures (Figure 3B) that coincide well with the apo and allosterically inhibited conformations (Figure 3C). We also see alternative conformations at high temperatures for several residues within and directly flanking the WPD loop (Arg221, Pro185, Trp179, Phe269) which have been implicated as being important for a CH/π switch during WPD loop opening/closing (Choy et al., 2017) (Figure 3—figure supplement 1). Multiple conformations for Leu192 were more difficult to detect at higher temperatures in apo PTP1B. This is likely because Leu192 shifts more subtly between the 100 K apo and allosterically inhibited conformations, which is also consistent with a recent report that Leu192 is a relatively static inter-helical ‘wedge’ (Choy et al., 2017). Taken together, these results suggest that BB2 stabilizes a subset of pre-existing conformations in apo PTP1B.
 
 We additionally solved a high-resolution (1.80 Å, Table 1) structure of PTP1B in complex with BB3 (which differs from BB2 only by an extra terminal aminothiazole group) at 273 K and found it to be very similar to the 100 K structures with BB3 (PDB ID 1t4j) and with BB2 (PDB ID 1t49) despite the difference in temperature (Figure 3—figure supplement 2). However, two interesting features are evident at 273 K. First, at 273 K but not at 100 K, modeling BB3 with a single conformer leads to Fo-Fc difference electron density peaks at both ends of the molecule (Figure 3—figure supplement 3A). To account for these peaks in the map, it is necessary to add a second alternative conformer to the model, which includes a translation at one end and dihedral-angle changes at the other end (Figure 3—figure supplement 3B). Chemical changes to BB3 designed to eliminate this remaining heterogeneity could potentially improve affinity and inhibition.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig3-v2.jpg)
+
+**Figure 3.:** (A) In apo PTP1B, the occupancy of the α7 helix decreases (i.e. the helix becomes more disordered) with temperature. The helix was modeled with one conformation and its occupancy was refined; the remaining occupancy corresponds to the disordered state of the helix. (B) Several residues that allosterically link α7 and the active-site WPD loop also undergo shifts with temperature. (C) These additional conformations match the state trapped by the allosteric inhibitor BB2 (PDB 1t49) (Wiesmann et al., 2004) which binds >12 Å away from the active site. The viewing orientation in (B–C) is as in Figure 1A (‘front side’ of PTP1B), except slightly zoomed in.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Alternative conformations in our 278 K apo structure corresponding to the open state (red) vs. closed state (dark blue) recapitulate conformational changes for several residues (labeled) in the active site that undergo a CH/π-mediated switch between the open state (pink, 5k9v) and TCS401-inhibitor-bound closed state (light blue, 5k9w) (Choy et al., 2017). The viewing orientation is as in Figure 1A (‘front side’ of PTP1B), except zoomed in on the active site (labeled in Figure 1A).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The pose of BB3 in our new 1.80 Å 273 K structure (red) is well-justified by 2Fo-Fc electron density contoured at 0.75 σ (cyan volume) and at 1.5 σ (blue mesh). The pose is also essentially identical to the poses in previously published 100 K structures with BB3 (1t4j, magenta) and BB2 (1t49, pale green), which is very similar in structure and inhibition to BB3 (Wiesmann et al., 2004). (B) 2Fo-Fc electron density contoured at 0.75 σ (cyan) supports only a single conformation along the previously characterized allosteric pathway, rather than the multiple conformations seen at 278 K from our multitemperature apo PTP1B series (Figure 3); a 100 K structure in the closed state (1sug, blue) is shown for comparison. This confirms that inhibitor binding quenches conformational heterogeneity essentially completely, locking the protein in the open state. The viewing orientation in A) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the BB site (labeled in Figure 1B). The viewing orientation in B) is as in Figure 1A (‘front side’ of PTP1B), except slightly zoomed in.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) At 273 K, despite a good fit to 2Fo-Fc electron density, shown contoured at 0.75 σ (cyan volume), the allosteric inhibitor BB3 cannot be sufficiently modeled with a single conformer, as evidenced by +3.5 σ (green mesh) and −3.5 σ (red mesh) Fo-Fc difference electron density. These features are absent from the 100 K structure with BB3 (1t4j). (B) These unexplained difference features disappear when a second alternate conformer is added with a translation at the ‘bottom’ of the molecule (from this viewing angle) and dihedral-angle changes at the ‘top right’. (C) The disordered α7 helix is reordered above the BB binding site in various structures: 273 K with BB3 (pink; BB3 molecule in green), 100 K with BB1 (pale blue, PDB ID 1t48), 100 K with the S295F mutation (orange, PDB ID 2f6f), and 100 K with the L192A mutation and the TCS-401 active-site inhibitor (yellow, PDB ID 5ka9). The normal ordered α7 conformation (blue, PDB ID 1sug) is shown for reference. See Figure 7A for another example of a reordered α7 conformation. (D–G) Evidence for some of the conformations in C. (D) At 273 K, 2Fo-Fc electron density contoured at 1.0 σ (cyan volume) and Fo-Fc difference electron density contoured at +3.5 σ (green mesh) and −3.5 σ (red mesh) suggest something remains unmodeled above the bound BB3 molecule. (E) Modeling a reordered portion of the disordered α7 helix, including Trp291 (pink), fits the 2Fo-Fc density, removes the positive Fo-Fc peaks, and has reasonable interactions with nearby sidechains on α3 (left). (F–G) At 100 K, the electron density (shown at the same contour levels) suggests a different reordered conformation of α7 above BB1 (PDB ID 1t48). Both reordered α7 conformations (D–E) vs. (F–G) place residues 290–292, including Trp291, in the same place. However, the C-terminal portion of the reordered conformation with BB1 at 100 K, including His296 (right), is sterically incompatible with the N-terminal portion of the α6-α7 junction with BB3 at 278 K, including Ser286. Neither conformation is compatible with the electron density for the other, suggesting that differences in temperature and/or inhibitor dictate different α7 conformations. The viewing orientation in C–G) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the BB site (labeled in Figure 1B).
+
 Second, at 273 K, we observe significant electron density just above BB3 (Figure 3—figure supplement 3C). Modeling a reordered, non-helical conformation of α7 explains this density well, and places Trp291 in good position for aromatic stacking interactions with BB3 and other interactions with nearby sidechains on the α3 helix (Figure 3—figure supplement 3D). Trp291 is displaced by BB3 or BB2 binding in a striking example of molecular mimicry (Wiesmann et al., 2004) (Figure 3C). Our 273 K data suggest that a subsequent reordering of the α7 polypeptide occurs, which may contribute to the affinity of BB3 for PTP1B. In contrast to our 273 K data, electron density in this region is weak in the 100 K structures with BB3 and BB2. However, in the 100 K structure with BB1, a different derivative of the BB scaffold, α7 also reorders -- but adopts a significantly different conformation than we observe at 273 K with BB3 (Figure 3—figure supplement 3E,G). Together, these results suggest that in addition to being a major allosteric hub when ordered (Choy et al., 2017), α7 is also quite malleable when disordered, and may interact in diverse ways with bound ligands -- behavior which is similar to the mechanism proposed for inhibitors that bind via the disordered C-terminus beyond α7 (Krishnan et al., 2014).
 
-## Multitemperature crystallography of the allosteric loop 16 site
+### Multitemperature crystallography of the allosteric loop 16 site
 
 We also observed temperature-dependent ordering in a loop (loop 16, L16; residues 237–243) that sits underneath the α6-α7 junction just beyond the BB binding site. By contrast to lower temperature (Figure 4A), the electron density for L16 at higher temperature (Figure 4B) clearly reveals an alternative conformation with its backbone shifted by >5 Å from the primary conformation (Figure 4D). Modeling this alternative loop conformation back into the lower-temperature models and refining its occupancy reveals a temperature dependence (Figure 4E, Figure 4—figure supplement 1) that is qualitatively similar to the temperature dependences of the WPD loop. Remarkably, this L16 alternative conformation sampled by apo PTP1B matches the L16 conformation when PTP1B is allosterically inhibited by BB2 (Figure 4C). This rearrangement provides further evidence that BB2 selects pre-existing, globally dispersed conformations rather than inducing new ones.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig4-v2.jpg)
+
+**Figure 4.:** (A) At low temperature, loop 16 (residues 237–243, bottom right) is single-conformer, as evidenced by 2Fo-Fc electron density contoured at 1.0 σ (cyan volume) and at 1.0 σ (blue mesh). (B) At high temperature, when the protein is modeled as single-conformer, the electron density suggests the existence of an alternative conformation. (C) The structure with BB2 bound (>12 Å away) (PDB ID 1t49) perfectly explains the mysterious electron density. (D) The final 278 K dual-conformation model is a good explanation of the data. (E) The refined occupancy of the alternative conformation (state ‘B’) in apo PTP1B increases continuously but non-linearly with temperature. The viewing orientation in (A–D) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the loop 16 site (labeled in Figure 1B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The loop consisting of residues 237–243 (bottom right) is single-conformer at low temperatures including (A) 100 K and (B) 180 K, as evidenced by 2Fo-Fc electron density contoured at 1.0 σ (cyan volume) and at 1.0 σ (blue mesh). By contrast, it adopts multiple conformations at higher temperatures including (C) 240 K and (D) 278 K. The viewing orientation is as in Figure 4.
 
 The L16 site is seemingly coupled to the α6 helix: Lys239 from L16 H-bonds with Ile281 from α6 in the global closed state, but not in the global open state in which L16 adopts its alternative conformation. Because α6 is directly coupled to the α7 order-disorder transition, we therefore propose that the L16 site is a component of the collective allosteric network in PTP1B.
 
 The L16 site was not identified as part of the allosteric network in PTP1B based on a study using mutagenesis, NMR, and MD (Choy et al., 2017). However, in a more recent study, several residues lining what we call the L16 site (including Met3, Lys237, and Ser242) were included in a region called ‘Cluster II’, which was suggested to be a previously unidentified allosteric site based on reciprocal NMR chemical shift perturbations upon mutation of this site or the WPD loop (Cui et al., 2017). Our work here using multitemperature crystallography complements these findings by independently identifying this allosteric site using a new methodology, and by revealing in atomic detail how multiple conformational states at the L16 site may aid communication with the active site. Interestingly, a separate approach combining molecular dynamics and machine learning also recently pointed to this area as a potential ‘cryptic’ binding site (Cimermancic et al., 2016a). Therefore, the L16 site may be not only energetically coupled to the active site, but also capable of forming an under-appreciated small-molecule binding pocket via the conformational heterogeneity we observe.
 
-## Multitemperature crystallography of the allosteric 197 site
+### Multitemperature crystallography of the allosteric 197 site
 
 In addition to the temperature-dependent conformational heterogeneity observed at the BB site and L16 site, we observed residues with temperature-sensitive conformational heterogeneity in the ‘197 site’ (Figure 5). Moreover, the alternative conformations of several residues in this region have a pattern of steric incompatibility with multiple states of the WPD loop and α7 helix, suggesting that the 197 site may be mechanistically linked to the active site in a similar way as the BB binding site.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig5-v2.jpg)
+
+**Figure 5.:** (A) Several residues distinct from both the active site and a previously characterized allosteric network each have minor alternative conformations that become more populated with temperature. This is quantified by the sum of 2Fo-Fc electron density values for the centers of atoms that are unique to the minor state (defined as being at least 1.0 Å away from any atoms in the major state), normalized across temperatures from 0 to 1 for each residue. (B) These residues colocalize to a region of the protein surrounded by loop 11 (top-left), the quasi-ordered α7 helix (top-right), and the α3 helix (right), including the eponymous K197. 2Fo-Fc electron density contoured at 0.6 σ (cyan volume) and at 0.8 σ (blue mesh) justify multiple conformations for these residues in our 278 K apo model, as quantified in (A). The alternative conformations of these residues appear to interact with one another and thus may be allosterically coupled. Ordered crystallization mother liquor or cryoprotectant molecules (glycerols in pink, from the PDB and our structures, or MPD molecules in green, from the PDB) can be present at the terminus of this allosteric pathway, suggesting it may be amenable to binding other small molecules. The viewing orientation in B) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the 197 site (labeled in Figure 1B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Structures of the apo open state (yellow, 5k9v) and the closed state with the active-site inhibitor TCS401 (pink, 5k9w) (Choy et al., 2017) feature coupled movements of the loop 11 backbone, including Tyr152, and Asn193 within α7. (B–D) In our 278 K apo structure, we also observe coupling between these residues. However, Tyr152 is best fit with a ‘down’ plus an ‘up’ rotamer as alternative conformations for the open-state backbone, and only a down rotamer for the closed-state backbone. This is borne out by 2Fo-Fc electron density contoured at 0.3 σ (cyan volume) and Fo-Fc electron density contoured at +2.8 σ (green mesh) and −2.8 σ (red mesh) after refinement with either the down rotamer (C) or the up rotamer (D) omitted. A partial-occupancy water that is mutually exclusive with the up rotamer is also present (transparent red sphere). Note: Asn193 may also adopt another low-occupancy rotamer. (E) The down Tyr152 rotamer in the WPD-closed-compatible L11 backbone conformation (red) would sterically clash (pink pillows) with Thr178 in the open state of the WPD loop (orange). Both Tyr152 rotamers in the WPD-open state (orange) would sterically clash with the ordered conformation of the α7 helix (red). The viewing orientation in all panels is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on loop 11, the α3 helix, and the α7 helix (labeled in Figure 1B).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Several amino acids in the allosteric 197 site in PTP1B (gray) are different at the equivalent positions in the closest homolog, TCPTP (orange). The viewing orientation is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the 197 site (labeled in Figure 1B).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Point mutations to several residues along the allosteric pathway from the allosteric 197 site to the active site reduce activity to varying degrees. Data represent the mean of four independent assays ± standard deviation. (B) Michaelis-Menten kinetics for WT* vs. allosteric point mutants ± the standard error of the mean. See Materials and methods for details.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Conformational heterogeneity for Tyr176 links Tyr152 in the allosteric 197 site to Phe191 in the previously reported allosteric pathway (Wiesmann et al., 2004) and Trp179 in the WPD loop, thus completing an allosteric circuit. (A-D) In apo PTP1B, 2Fo-Fc electron density contoured at 0.8 σ (cyan volume) and at 0.8 σ (blue mesh) generally justifies a single conformation these aromatic residues at low temperatures, but multiple conformations at high temperatures -- especially for Tyr176 and Tyr152. (E) These individual conformations are evident in the previously published 100 K apo (blue, 1sug) or BB2-bound (green, 1t49) structures, respectively. The viewing orientation in all panels is as in Figure 1B (‘back side’ of PTP1B), except looking down from the top of that image into the core of the protein.
 
 A major link between the WPD loop and the 197 site is Tyr152. When the WPD loop is closed and the α7 helix is ordered, Tyr152 adopts a ‘down rotamer’ (Figure 5—figure supplement 1, red). By contrast, when the WPD loop is open and the α7 helix is disordered, the 278 K electron density suggests that Tyr152 adopts an ‘up rotamer’ (Figure 5—figure supplement 1C, orange). However, difference electron density peaks remain (Figure 5—figure supplement 1C) that indicate the presence of the down rotamer as an alternative conformation. Consistent with this interpretation, modeling just the additional down rotamer is insufficient to explain the density (Figure 5—figure supplement 1D). These two rotamers are accommodated in the WPD-loop-open state by a shift of the L11 backbone (Figure 5—figure supplement 1). The down rotamer is sterically incompatible with phosphorylation of Tyr152, which occurs in vivo (Bandyopadhyay et al., 1997; Rhee et al., 2001), suggesting that the up rotamer may have additional regulatory roles. Tyr152 in the L11 backbone conformation with just the down rotamer (red in Figure 5—figure supplement 1) is sterically incompatible with the open WPD loop conformation (Figure 5—figure supplement 1E). Similarly, the Tyr152 up rotamer is sterically incompatible with the ordered α7 conformation (Figure 5—figure supplement 1E). In turn, α7 is conformationally synchronized with the WPD loop (Figure 3A and Figure 2D) and is a key hub connecting loop 11 and the WPD loop (Choy et al., 2017). These results together suggest that the allosteric circuitry of PTP1B involving Tyr152 is complex and multibody. Tyr152 likely exemplifies a population shuffling mechanism whereby mixtures of microstates (rotameric state of Tyr152) exchange on a fast timescale as the protein transitions between macrostates (WPD loop state, α7 ordering, and L11 backbone shifting) on a slower timescale (Smith et al., 2015). Our findings thus shed additional light on the mechanism by which loop 11 allosterically communicates with the active site, thus complementing other recent studies using mutagenesis, MD, and NMR to map allostery in PTP1B (Choy et al., 2017; Cui et al., 2017).
 
@@ -93,15 +574,31 @@ To test whether more directed perturbations to the 197 site can allosterically m
 
 Overall, we describe a large, collectively coupled allosteric network on one contiguous face of the protein (Figure 2E). This network is interconnected not only on the surface, but also within the hydrophobic core. For example, Tyr176 adopts alternative sidechain conformations at higher temperatures that differ by a small rotation of the relatively non-rotameric χ2 dihedral angle (Lovell et al., 2000) (Figure 5—figure supplement 4). The two conformations of Tyr176 are structurally compatible with different conformations of the surface-exposed Tyr152 (Choy et al., 2017; Cui et al., 2017) in one direction, and of the buried Trp179 in the WPD loop and BB allosteric pathway (Wiesmann et al., 2004) in the other direction (Figure 5—figure supplement 4). Thus, surface residues such as Tyr152 may be conformationally coupled to the buried underside of the WPD loop via a similar mechanism as BB binding -- remotely modulating the Trp179 anchor via coordinated hydrophobic shifts -- but from a different angle of attack, via Tyr176. Overall, such coordinated local shifts within the hydrophobic core likely ‘lubricate’ the transition between discrete global states of PTP1B.
 
-## Assessing the ligandability of the surface of PTP1B using automated crystallography
+### Assessing the ligandability of the surface of PTP1B using automated crystallography
 
 Although the results described above establish a conformationally coupled network within the structure of PTP1B, allosteric inhibition also requires binding sites for small molecules that can conformationally bias this network to modulate function. To identify potential allosteric ligand-binding sites in PTP1B, we mapped the small-molecule binding potential or ‘ligandability’ of the entire protein surface. Specifically, we used small-molecule fragments, which by virtue of their small size provide a relatively large sampling of drug-like chemical space (Murray and Blundell, 2010). Astex Pharmaceuticals has previously explored fragment-based drug design for PTP1B (Hartshorn et al., 2005); however, that screen used molecules pre-selected to enrich for binders to phosphatase active sites, which contrasts with our goal of exploring the surface outside of the active site. To determine cocrystal structures of hundreds of fragments with PTP1B, we used the high-throughput fragment-soaking and crystallographic pipeline available at Diamond Light Source (Collins et al., 2017) to individually soak 1918 apo PTP1B crystals with small-molecule fragments in DMSO from several curated libraries, and another 48 with just DMSO. We then used robotic sample handling to automatically collect complete X-ray datasets at 100 K (Figure 6—source data 1). Of the 1966 total soaks, 1774 yielded diffraction data that could be successfully processed. The data were generally high-resolution: the average resolution was 2.1 Å, 65% of resolutions were better than 2.0 Å, and 87% were better than 2.5 Å (Figure 6A, Figure 6—source data 1). The large number of datasets enabled us to use the new Pan-Dataset Density Analysis (PanDDA) algorithm (Pearce et al., 2017) to reveal bound fragments. PanDDA performs weighted subtractions of the ‘background’ electron density (computed from apo and unbound datasets) from each electron density map (Figure 6B–C). The optimal subtraction, chosen by a heuristic, yields electron density corresponding to the ligand-bound fraction of unit cells in the crystal.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig6-v2.jpg)
+
+**Figure 6.:** (A) Histogram of X-ray resolution for 1774 structures of PTP1B soaked with small-molecule fragments (gray) vs. the 110 structures from that set with small-molecule fragments bound to PTP1B (green). (B) For one example fragment, a traditional 2Fo-Fc map contoured at 1.25 σ (cyan volume) and at 3.5 σ (blue mesh) provides no clear evidence for a bound fragment. (C) By contrast, a background-subtracted PanDDA event map (85% background subtraction in this case) contoured at the same levels clearly reveals the precise pose of the bound fragment, plus additional ordered water molecules that accompany it (red spheres). (D) PanDDA analysis and manual inspection reveal 110 fragment-bound structures of PTP1B, with bound fragments clustered into 12 non-overlapping binding sites. Some structures contain multiple bound copies of the same fragment. Several sites of interest are labeled. (E) Overview of bound fragments across the PTP1B surface. Left: front of protein, facing active site (WPD loop open and closed conformations in red). Right: back of protein, facing several fragment-binding hotspots: the 197 site, BB site, and L16 site. The viewing orientation in E) (left) is as in Figure 1A (‘front side’ of PTP1B). The viewing orientation in E) (right) is as in Figure 1B (‘back side’ of PTP1B).
 
 Our PanDDA analysis of 1774 datasets revealed 381 putative binding events. We manually inspected each putative binding event, and were able to confidently model the fragment in atomic detail for 110 hits (Figure 6D). Overall, 12 different sites in PTP1B were observed to bind fragments (Figure 6E). These sites are structurally distinct from one another -- that is, they share no residues in common, and fragments bound within different sites do not overlap with each other. They are also widely distributed across the protein surface. Twenty-five fragments bind to multiple sites, but promiscuous binding is not unexpected from such small fragments, and still provides valuable information about favorable binding poses in each site.
 
 PanDDA initially identified >80 putative binding events in the active site. Many of these can be attributed to movements of the WPD loop (Figure 2), often induced by oxidation of the catalytic Cys215, which is a natural regulatory mechanism (van Montfort et al., 2003). Apart from these protein events and other false positives, we observe four fragments bound in the active site. This number is relatively low likely because our libraries were not customized to bind to the highly charged active site of PTP1B, as was the case in the Astex study (Hartshorn et al., 2005).
 
 To identify allosteric binders, we examined sites outside of the active site. Strikingly, we observed 24 bound fragments in the BB allosteric site (Figure 7A). The poses of many of these fragments overlap portions of the BB scaffold (Figure 7A, Figure 7—figure supplement 1). However, many of them also contain chemical groups that suggestively protrude in new directions from the BB scaffold (Figure 7—figure supplement 1). This retrospective result validates the idea that fragment screening identifies binding sites, and specific fragment poses in those sites, that can be fruitfully exploited for allosteric inhibition. Interestingly, in one structure with a fragment bound in the BB site, the α7 helix adopts a reordered conformation that covers the binding site (Figure 7A), reminiscent of other examples in published structures and in our high-temperature datasets (Figure 3—figure supplement 3). These compounds could also inspire design of modified BB2 derivatives that may overcome the low affinity that limited the development of that series.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig7-v2.jpg)
+
+**Figure 7.:** (A) Twenty-four fragments (green) bind to the same site and in similar poses as the BB2 inhibitor (orange, PDB ID 1t49), and similarly displace the α7 helix (foreground, transparent blue, PDB ID 1sug). BB2 is also shown in the following panels to emphasize that its binding site is distinct from the other fragment-binding hotspots. One structure with a fragment bound in this site features a reordered conformation of the α7 helix (pink). (B) Seventeen fragments bind to the L16 site, where they may modulate the conformations of loop 16, the α6 helix, and the protein’s N-terminus on the α1 helix. (C) Thirty fragments bind to the 197 site in one primary subsite contacting K197, or a distinct secondary subsite nearby. The viewing orientation in (A) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the BB site (labeled in Figure 1B). The viewing orientation in (B) is also as in Figure 1B, except looking left from the right of that image and zoomed in on the L16 and BB site site. The viewing orientation in A) is as also in Figure 1B, except zoomed in on the 197 site and BB site (labeled in Figure 1B). See also Figure 6E (right) for orientation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Out of the 24 fragments that bind in the same site as BB2 (PDB ID 1t49, orange), two example fragments (green) are shown that overlap parts of BB2’s pose (asterisks), but also have chemical extensions that may be fruitfully added to the BB scaffold (arrows). (A) The first fragment has aromatic rings in roughly the same positions as does BB2 and a carbon matching a methyl extension in BB2, but in the fragment that carbon is part of two additional protruding rings. (B) The second fragment places two oxygens and a methyl in the same position as the equivalent atom types in BB2, but has a unique ethyl extension.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Fifteen fragments (green) in the primary subsite of the 197 site occupy a similar region of space as ordered glycerols (red) from our 278 K apo structure. The viewing orientation is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the 197 site (labeled in Figure 1B). See also Figure 6E (right) for orientation.
 
 We also examined fragments bound to the L16 site and the 197 site, which were suggested to be allosteric sites by our multitemperature analysis of apo PTP1B. Excitingly, both sites are fragment-binding hotspots: 17 fragments bind to the L16 site (Figure 7B) and 30 fragments bind to the 197 site (Figure 7C). Thus, independent methods to assess allosteric coupling and ligandability converge on the same sites in PTP1B. Our results agree with previous studies, based on mutagenesis and NMR, which implicated several residues in the L16 site (Cui et al., 2017) and in the 197 site (Choy et al., 2017; Cui et al., 2017) as participating in an active-site-linked allosteric network. We also add value to those studies in another way: by reporting the binding poses of a few dozen small-molecule ligands that bind to these sites in atomic detail. Because these two sites are both conformationally coupled to the active site and capable of binding a variety of small molecules, they may be promising sites to explore for small-molecule allosteric inhibition of PTP1B activity.
 
@@ -111,11 +608,25 @@ The 197 site is on the opposite side of the BB site, near α3 (including Lys197)
 
 To assess the effect of the bound fragments on the structure of PTP1B more globally, for each dataset we built an ensemble structure consisting of both the ground state and the bound state. Each dataset was modeled with an innovative PDB format as a multiconformer structure that represents both a heterogeneous apo state and a heterogeneous holo state. Due to limitations in the PDB model format and in the ability of conventional refinement programs to interpret and create reasonable restraints for this model type, either one conformation or four alternative conformations were used to describe each residue, often when only two were necessary. Due to this forced degeneracy, refinement of coordinates, occupancy, and B-factors must be highly restrained. We interpret the resulting occupancies as a good approximation of the fraction of unit cells that have a ligand present. Refining these ensemble structures using restraints that avoid overfitting allowed for some structural differences between the two states to emerge. In principle, these structural differences could give some prediction of the functional effects one might expect upon developing a higher affinity version of the molecule. The refined ensemble structures were of high quality (Figure 7—source data 1). However, generally speaking, the structural differences were subtle: the global backbone RMSD (N, Cα, C atoms) between the ground state and bound state ranged from 0.7 to 1.7 Å. Cases with larger RMSD (>1.25 Å) generally involved either active-site fragments that directly shift the WPD loop, or fortuitous oxidation of the active-site Cys215 (van Montfort et al., 2003). Thus, fragment binding did not dramatically shift PTP1B from the open to the closed state in many of these structures. Many of these fragments are certainly benign binders that bind to non-allosteric sites. However, the strong preference for the open state even with fragments that bind to allosteric sites is likely due to the absence of glycerol, which is present in our multitemperature structures (see Materials and methods). It is likely that weak fragments do not overcome this energetic preference, and instead elicit conformational changes primarily in their immediate vicinity. Including glycerol to place the protein in a regime in which the open vs. closed states are more nearly isoenergetic during fragment soaks could potentially interfere with fragment binding to the 197 site, since ordered glycerols also fortuitously bind there (Figure 7—figure supplement 2).
 
-## Validating a functional allosteric linkage with covalent tethering
+### Validating a functional allosteric linkage with covalent tethering
 
 The small-molecule fragments described above were identified by a naive screen and are not optimized for high-affinity binding to the 197 site or L16 site of PTP1B. Nevertheless, we selected 20 fragments that were deemed to bind in either site during early rounds of iterative PanDDA analysis (see Materials and methods) (Figure 7—source data 2) and tested whether they have allosteric effects using enzyme activity assays. Unsurprisingly, we did not observe inhibition of enzyme activity by the fragments up to the maximum concentrations we were able to assay due to solubility of the fragments. It is important to note that this is not surprising due to the fragments’ small sizes, relatively simple chemical structures, and low affinities (soaking with fragments at 30–150 mM concentrations resulted in observed occupancies of only 10–30% in the crystal structures). However, looking ahead, the dozens of cocrystal structures with small-molecule fragments bound at these promising allosteric sites (and at the previously explored BB2 site) that we have reported here offer a foothold for future medicinal chemistry efforts to design allosteric inhibitors for PTP1B.
 
 Instead, here we focus on an alternative strategy to validate the concept of allosteric inhibition at the 197 site: covalent binding to enhance ligand occupancy. Specifically, we used ‘Tethering’ (Erlanson et al., 2000; Erlanson et al., 2004), in which a residue near the site of interest is mutated to cysteine, then the mutant is mixed with disulfide fragments under partially reducing conditions. Affinity of the fragments for the site of interest drives the formation of a disulfide bond between the fragment and the adjacent cysteine. The extent of cysteine labeling can be measured using whole-protein mass spectrometry, and serves as a metric to rank the affinity of fragments for a given site. One major advantage of Tethering over other fragment-based approaches is that it can leverage low-affinity binding events into quantitatively labeled protein species, whose enzymatic activity can then be assayed. Here, we used Tethering to successfully identify a covalent allosteric inhibitor at the 197 site of PTP1B (Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig8-v2.jpg)
+
+**Figure 8.:** (A) The chemical structure of our covalent disulfide fragment 2. (B) Tethering and Inhibition of K197C at varying concentrations of 2. The tethering EC50 observed was 7.8 ± 1.1 µM and the Ki for pNPP activity was 7.1 ± 1.1 µM with a maximum inhibition of ~60%. Tethering data represents all tethering events combined. (C) Tethering and Inhibition of WT* at varying concentrations of 2. The tethering EC50 and the Ki for pNPP activity were both >50 µM. Tethering data represents all tethering events combined. Data represent the mean of three independent assays ± the standard error of the mean. All assays were performed in the presence of 100 µM of β-mercaptoethanol.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) 1600 disulfide fragments were screened for their ability to covalently label K197C. The location of 1 in the data is highlighted. Data represents a single experiment. The % Tethering data reported is for the 1:1 (2:K197C) adduct only. (B) Follow up tethering and pNPP inhibition assays of the top 50 fragments from the initial screen. 1, showed the second best inhibition of pNPP activity and correlated well with percent tethering. This suggested the activity was specific through K197C. Other fragment tested showed either poor, or non-specific inhibition of pNPP activity. Percent tethering represents a single experiment. The % Tethering data reported is for the 1:1 (2:K197C) adduct only. Percent inhibition represents the average of three independent assays ± the standard error of the mean. Both assays were performed in the presence of 50 µM of 1 and 100 µM of β-mercaptoethanol. (D) Structure of 1 as well as the closely related analog 2. Molecular differences between 1 and 2 are highlighted in red.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Percent tethering of K197C at varying concentrations of 2. The vast majority of labeled K197C appears to have only a single tethering event of 2, supporting specific labeling of K197C. Observation of more than one tethering event suggests nonspecific labeling of native cysteines in PTP1B. (B) Percent tethering of WT* at varying concentrations of 2. Very little tethering of WT* is observed (<10%) with the total coming from a combination of different adducts, supporting nonspecific labeling. (C) Michaelis–Menten kinetic analysis of K197C in the presence and absence of 2 (50 µM). Compound 2 causes a ~ 54% reduction in Vmax relative to DMSO but almost no change in KM, supporting a non-competitive allosteric mechanism of inhibition. (D) Michaelis–Menten kinetic analysis of WT* in the presence and absence of 2 (50 µM). Compound 2 causes only a ~ 20% reduction in Vmax relative to DMSO but almost no change in KM. This background inhibition does not correlate with labeling and may be caused by nonspecific factors, such as aggregation of 2 at higher concentrations (≥50 µM). (E) Tethering of compound 2 to K197C reduces the Vmax observed for dephosphorylation of pNPP. Values are derived from the data shown in (C). Vmax was calculated using the Michaelis-Menten nonlinear fit in Graphpad Prism 7. (F) Tethering of compound 2 to K197C shows no effect on the KM observed for dephosphorylation of pNPP. Values are derived from data shown in (C). KM was calculated using the Michaelis-Menten nonlinear fit in Graphpad Prism 7. Data represent the mean of three independent assays ± the standard error of the mean. All p-values and significance was calculated using a FDR-Approach Multiple t-test in Graphpad Prism 7. All assays were performed in the presence of 100 µM of β-mercaptoethanol.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig8-figsupp3-v2.jpg)
 
 For the allosteric 197 site in PTP1B, we chose to tether to a K197C mutant for several reasons. First, K197 is on the α3 helix, which is a key allosteric element in PTP1B (Choy et al., 2017). We predicted that small-molecule tethering to our site could could perturb the helix via K197C, perhaps mimicking the effects of a free molecule binding to the WT protein and altering the K197 conformational distribution. Second, K197 and E200 are the two residues on α3 whose Cα-Cβ vectors point in roughly the correct direction toward the allosteric 197 site we describe; however, E200 engages in crystal-lattice contacts which would interfere with tethering in our P3121 space group, so we focused on K197C instead.
 
@@ -124,6 +635,14 @@ To efficiently explore the chemical space of covalent small molecules for the 19
 When assayed, 2 showed improved tethering and inhibition of K197C relative to 1. 2 exhibited dose-dependent tethering and partial noncompetitive allosteric inhibition of K197C with a tethering EC50 of 7.8 ± 1.1 µM and a Ki for pNPP activity of 7.1 ± 1.1 µM (maximum inhibition of ~60%) (Figure 8B and Figure 8—figure supplement 2A). Importantly, 2 appeared to show little to no tethering of WT* and minimal inhibition, supporting that 2’s activity is specific to the 197 site and not due to tethering of the active-site cysteine found in both K197C and WT/WT* (Figure 8C and Figure 8—figure supplement 2B). In fact, the inhibition that is observed for WT* does not correlate with tethering, suggesting the inhibition may be from nonspecific factors, such as aggregation, at higher concentrations of 2 (≥50 µM). Michaelis-Menten kinetic analysis of K197C in the presence of 2 (50 µM) showed a statistically significant ~50% reduction in Vmax relative to DMSO treatment, but no significant effect on KM for the pNPP substrate (Figure 8—figure supplement 2C,E,F). This supports a noncompetitive allosteric mechanism of inhibition. The effect on WT* kinetics was similar to the nonspecific inhibition observed in the dose titration experiment (Figure 8—figure supplement 2D), once again supporting that the activity of 2 is specific for the K197 site on PTP1B. To further profile the inhibitory effect of tethering of 2 on K197C, we assayed the ability of the tethered complex to dephosphorylate the alternative substrate DiFMUP (Welte et al., 2005). As with pNPP, the tethered complex was inhibited, with kinetic analysis showing a dramatic reduction in Vmax, but no significant effect on KM (Figure 8—figure supplement 3). These results once again support a partial noncompetitive allosteric mechanism of inhibition.
 
 To futher validate that 2 acts specifically through the K197 site and to explore the mechanism of inhibition by 2, we solved a high-resolution (1.95 Å, Table 1) crystal structure of K197C tethered with 2. The structure confirms that 2 tethers to K197C rather than to the active-site catalytic Cys215, and also that tethered 2 resides in the 197 site (Figure 9A) rather than in the relatively nearby BB site, which is also theoretically within reach of the tethering linker on the other side of the α3 helix. We modeled 2 as partially populated and, indeed, the 83% refined occupancy in the crystal structure was very similar to the ~85% conjugation measured after tethering in solution prior to crystallization. 2 adopts a conformation in which the two rings are nearly coplanar. This interpretation is further validated by a ‘polder map’, in which both the ligand and bulk solvent are omitted (Liebschner et al., 2017) (Figure 9—figure supplement 1). While coplanar biphenyl rings are typically believed to be disfavored due to steric clashes, it is possible that hydrogen bonding of D148 with the phenol combined with the electronegativity of the para-fluoro leads to delocalization of the rings’ electrons and promotes a coplanar conformation. Additionally, 2 packs against the hydrophobic floor, centered on Leu172, of the relatively shallow binding pocket in the 197 site. Trapping of coplanar biphenyl rings covalently attached to a protein has previously been reported (Pearson et al., 2015).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig9-v2.jpg)
+
+**Figure 9.:** (A) The tethered inhibitor 2 is highly ordered (~85% occupancy) in the 197 site, as seen by 2Fo-Fc electron density for our 1.90 Å structure contoured at 0.75 σ (cyan volume) and at 1.5 σ (blue mesh) that is continuous to the K197C sidechain. A few waters (transparent red spheres) which appear to be mutually exclusive with the molecule are likely displaced by binding. (B) Many fragments from WT* cocrystal structures (transparent orange) overlay well with 2 in the K197C cocrystal structure (green). One fragment in particular (solid orange) has a ring substructure that overlays very closely with a ring substructure of 2. (C) The K197C 2-tethered structure (green) is similar to the K197C apo structure (gray), but upon tethering there are several conformational changes (arrows and asterisk) in the α3 helix: the whole backbone shifts up in this view slightly leading back into the WPD loop (top), N193 switches rotamers, and the sidechains of F196 and E200 move within rotameric wells. The end of the α6 helix, including E276 and F280, appears to respond in concert. (D) Several of these changes mirror changes from open-to-closed apo PTP1B (arrows and asterisk) as seen in the two conformations of our 278 K model (red/orange). (E) Overview as in Figure 2E for context. The viewing orientation in (A) is as in Figure 1B (‘back side’ of PTP1B), except zoomed in on the 197 site (labeled in Figure 1B). The viewing orientation in (C–E) is as in Figure 1B.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/36307/elife-36307-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Tethering of 2 to K197C (>90% tethered) inhibits dephosphorylation of DiFMUP. As expected, WT*, which is not capable of being tethered by 2, shows no inhibition. (B) Michaelis–Menten kinetic analysis of K197C either after tethering with 2 (>90% tethered) or being treated with a DMSO control. (C) Tethering of compound 2 to K197C reduces the Vmax observed for dephosphorylation of DiFMUP. Values are derived from the data shown in (B). Vmax was calculated using the Michaelis-Menten nonlinear fit in Graphpad Prism 7. (D) Tethering of compound 2 to K197C shows no significant effect on the KM observed for dephosphorylation of DiFMUP. Values are derived from data shown in (B). KM was calculated using the Michaelis-Menten nonlinear fit in Graphpad Prism 7. Data represent the mean of three independent assays ± the standard error of the mean. ΔF is the change in fluorescent signal from DiFMUP upon dephosphorylation. All p-values and significances were calculated using a FDR-Approach Multiple t-test in Graphpad Prism 7.
 
 To elucidate confomational changes induced by 2, we also solved a high-resolution (1.95 Å, Table 1) crystal structure of apo K197C in the same crystal form for comparison. As mentioned previously, PTP1B remains in the open state without glycerol; glycerol was absent from the tethered K197C structure (to avoid competition for binding in the 197 site) and from the K197C apo structure (for consistency), so we are unable to see any dramatic shifts in the global open-closed equilibrium that 2 may induce. Tyr153 shifts its position slightly and Tyr152 responds by shifting fully to its up rotamer, but this is likely due to the loss of interactions with the WT K197 upon mutation. Beyond these mutation-induced effects, we see some conformational changes associated with tethering of 2. The key residue Asn193 (Choy et al., 2017) changes rotamers, the sidechain of Phe196 on α3 ‘slides’ to change its aromatic stacking arrangement with Phe280 on α6 (Figure 9C), and Glu276 -- which contacts the wedge residue Leu192 (Choy et al., 2017) -- rotates sidechain dihedral angles. These sidechain movements appear to couple to subtle, more distributed backbone shifts (Deis et al., 2014) of the α3 helix, several residues of which move up toward the WPD loop by ~0.5 Å (Figure 9C). Interestingly, these sidechain and particularly backbone movements are somewhat similar to those between the two macrostates of apo PTP1B at high temperature (Figure 9D). Thus, although the mechanistic details remain unclear, allosteric inhibition by 2 may involve conformational changes, especially of α3, that are similar to those that occur during the global transition from the open to the closed state (Choy et al., 2017). This interpretation is consistent with a recent report that mutations (Y153A, M282A) in what we here recognize as the 197 site and L16 site alter the equilibrium between the WPD loop’s open and closed states (Cui et al., 2017). We note that the non-competitive allosteric mechanism observed suggests that tethering 2 to K197C may shift the protein’s energy landscape in such a way as to alter the kinetics of WPD loop motions. Future work to explore this issue would nicely complement the crystallographic and functional analysis we provide here.
 
@@ -151,7 +670,7 @@ Finally, it is interesting to note that different protein tyrosine phosphatases 
 
 ## Materials and methods
 
-## Cloning, expression, and purification
+### Cloning, expression, and purification
 
 For all ‘wild-type’ PTP1B experiments here, we used what we refer to as the WT* construct: residues 1–321, with the C32S/C92V double mutation (Erlanson et al., 2003) to prevent off-target tethering reactions, in a pET24b vector with a kanamycin resistance gene. K197C, K197A, Y152G, and Y153A were created using site-directed mutagenesis from the WT* construct.
 
@@ -159,7 +678,7 @@ Protein was expressed and purified as previously reported (Pedersen et al., 2004
 
 For purification, we first performed cation exchange with an SP FF 16/10 cation exchange column (GE Healthcare Life Sciences) in lysis buffer (100 mM MES pH 6.5, 1 mM EDTA, 1 mM DTT) with a multi-stage 0–1 M NaCl gradient (shallow at first for elution of PTP1B, then steeper); PTP1B eluted around 200 mM NaCl. We then performed size exclusion with a Superdex 75 size exclusion column (GE Healthcare Life Sciences) in size exclusion buffer (100 mM MES pH 6.5, 1 mM EDTA, 1 mM DTT, 200 mM NaCl). PTP1B appeared highly pure in SDS-PAGE gels.
 
-## Crystallization
+### Crystallization
 
 WT* PTP1B was dialyzed into crystallization buffer (10 mM Tris pH 7.5, 0.2 mM EDTA, 25 mM NaCl, 3 mM DTT) with at least a 200x volume ratio overnight at 4°C. We were unable to grow apo WT* PTP1B crystals initially, so we synthesized the active-site inhibitors OBA and OTP as in (Andersen et al., 2002) (OBA = compound 3a, OTP = compound 12h). We were unable to solubilize OTP as used in (Pedersen et al., 2004). Instead, we co-crystallized PTP1B with OBA (Andersen et al., 2000). We first solubilized OBA to 250 mM in DMSO, then created a 10:1 molar ratio of PTP1B:OBA. Crystallization drops were set in 96-well sitting- or hanging-drop format at 4°C with 10–15 mg/mL protein with 1 μL of protein solution + 1 μL of well solution (0.2–0.4 M magnesium acetate, 0.1 M HEPES pH 7.3–7.6, 12–17% PEG 8000), then trays were incubated at 4°C. Crystals several hundred μm long grew within a few days, and often continued to grow bigger for several more days. We created seed stocks from these crystals by pipetting the entire drop into 50 μL of well solution, iterating between vortexing for 30 s and sitting on ice for 30 s several times, and performing serial 10-fold dilutions in well solution. Apo crystals were grown by introducing seed stock (0x, 10x, or 100x diluted) into freshly set drops, either by streaking with a cat whisker or pipetting a small amount (e.g. 0.1 μL into a 2 μL drop). Serial seeding using new apo crystals successively improved crystal quality. We also added ethanol to the well solution based on an additive screen (Hampton Research), and added glycerol to mimic the previously published apo structure protocol (Pedersen et al., 2004), resulting in the following final WT* PTP1B crystallization well solution: 0.3 M magnesium acetate, 0.1 M HEPES pH 7.5, 0.1% β-mercaptoethanol, 16% PEG 8000, 2% ethanol, 10% glycerol. The resulting crystals were used for our WT* PTP1B multitemperature analysis.
 
@@ -169,7 +688,7 @@ We crystallized apo K197C in the microbatch format with Al’s oil covering all 
 
 We crystallized K197C tethered to 2 in the 96-well hanging-drop format. Protein was at 15 mg/mL in the same crystallization buffer as WT* but without DTT. The well solution was 0.2 M magnesium acetate tetrahydrate, 20% PEG 3350. Drops were set at room temperature with 100 nL protein solution + 100 nL well solution, then trays were incubated at 4°C. Crystals appeared within a few days.
 
-## X-ray data collection
+### X-ray data collection
 
 We used PDB ID 1sug for the apo WT 100 K dataset. The apo WT* 278 K dataset was collected at Stanford Synchrotron Radiation Lightsource (SSRL) beamline 12–2. All fragment-soaked datasets were collected at Diamond Light Source beamline I04-1. All other datasets were collected at Advanced Light Source (ALS) beamline 8.3.1.
 
@@ -185,13 +704,13 @@ For fragment-soaked PTP1B, WT* PTP1B crystals in MRC SwissCi 3-well sitting-drop
 
 Most crystals stuck to the bottoms of wells regardless of construct and tray format, but it was often possible to gently dislodge them, or to physically break them off then expose the unperturbed portion of the crystal to the X-ray beam. Each dataset in this study was collected from a single crystal.
 
-## X-ray data processing
+### X-ray data processing
 
 To process the multitemperature and tethered datasets, we used XDS (Kabsch, 2010). In each case we chose a resolution cutoff for which CC1/2 (Karplus and Diederichs, 2012) was statistically significant at the 0.1% level (above 0.4). We created a new set of Rfree flags for the 278 K WT* apo dataset, then transferred them to the MTZ file of every other dataset with the reflection file editor in PHENIX (Adams et al., 2010) (for PDB ID 1sug, we first deleted the existing Rfree flags). We solved each structure by molecular replacement with Phaser (McCoy et al., 2007). One solution was obtained for each dataset. For WT*, we used PDB ID 1c83 with all waters and the WPD loop removed. For K197C, we used a refined WT* PTP1B model for molecular replacement.
 
 For fragment-soaked datasets, we used XDS and a custom script [80; copy archived at https://github.com/elifesciences-publications/xds_iter] to automatically determine resolution cutoffs for all datasets. The resolution cutoff was initialized at 1.4 Å and incremented until the following criteria were met for the highest-resolution bin: at least 1.0 I/σ(I), at least 50% CC1/2 (Karplus and Diederichs, 2012), and at least 90% completeness. Rfree flags were created for the highest-resolution dataset by transferring and extending the flags from the 278 K WT* apo dataset using the PHENIX reflection file editor. These Rfree flags were then transferred from that highest-resolution dataset to every other dataset in the fragment-soaking experiment. For PanDDA to accept the MTZ files as inputs, it was necessary to modify each file so that all columns (H, K, L, structure factors, map coefficients, and R-free flags) had the same number of indices; no observations were omitted in this step. We then phased each dataset with Phaser using a reference model that was created by interpreting a high-resolution DMSO-soaked apo dataset. Next, we refined each initial model from Phaser using phenix.refine with the following flags to prevent excessive coordinate drift: ‘reference_coordinate_restraints.enabled=True ‘reference_coordinate_restraints.sigma=0.1’. Structure factors were then dropped from MTZ files, leaving map coefficients as inputs to PanDDA. Filled map coefficients (from PHENIX) were used to avoid Fourier series truncation effects in PanDDA maps. The resulting models were used as input to PanDDA (see below).
 
-## Structure modeling
+### Structure modeling
 
 For Figure 2—figure supplement 1, we re-refined the following 36 structures of PTP1B from the PDB either as-is, or with a dual-conformation WPD loop: 1bzj 1kak 1oem 1oeo 1sug 1t48 1t49 1t4j 2azr 2b07 2bgd 2f6f 2f6t 2f6v 2f6w 2f6y 2f6z 2f70 2f71 2h4k 2hb1 2qbp 2qbq 2qbr 2qbs 2zmm 2zn7 3cwe 3d9c 3eax 3eb1 3eu0 3i7z 3i80 3sme 4i8n. For the dual-conformation refinements, we constrained occupancies of the open + closed conformations of the WPD loop to 1.
 
@@ -215,27 +734,27 @@ To refine structures for the 110 datasets with one or more modeled fragments, fi
 
 For refinement of the ensembles representing multiconformer models of the apo and bound states, we first refined each ensemble structure with phenix.refine to obtain water positions. The first stage of PHENIX refinement was 10 macrocycles with no removal or addition of waters (‘ordered_solvent = False’) to let the existing waters relax into local minima. The second stage of PHENIX refinement was another 10 macrocycles with automated removal and addition of waters (‘ordered_solvent = True’) to remove waters that were unable to reach local minima and add waters that were clearly missing. Adding and removing waters, when compared to only removing them, generally had negligible effect on MolProbity scores, but improved Rwork and Rfree. During this first PHENIX refinement stage to obtain water positions, occupancies were fixed to the original PanDDA BDC value for the ground state and 1-BDC for the bound state; occupancy was distributed evenly between substates when the ground state or the bound state had alternative conformations for some residues. We observed coordinate drift and unstable B-factors for the protein with PHENIX refinement. Therefore, we copied the water positions obtained from PHENIX into the initial ensemble models, and refined with Refmac (Murshudov et al., 2011). To do so, we first set all B-factors to 40 Å2, set bound-state occupancies to 2*(1-BDC) and unbound-state occupancies to 1–2*(1-BDC) (with occupancy evenly distributed across alternative conformations within each state), and generated new restraints files that included the water molecules by running the PanDDA utility giant.make_restraints with the same RMSD parameter as with giant.merge_conformations: ‘duplicates.rmsd_cutoff = 0.4’. Then, each ensemble model was refined with Refmac using giant.quick_refine with the ligand CIF and custom giant.make_restraints restraint parameter files using the protocol herein. First, each model was refined for the default 10 cycles, with the extra arguments to Refmac ‘MAKE HOUT Yes’, to preserve hydrogens, and ‘HOLD 0.001 100 100’ to restrain XYZ coordinates but still allow for some geometry regularization and encourage B-factor and occupancy convergence. Next, the output from that refinement was fed into a loop of Refmac refinement with the default 10 cycles per run, and the ‘HOLD 0.0001 100 100’ argument, essentially fixing the XYZ coordinates, while letting occupancies and B-factors refine. Our output was the result of the 4th round (1 round + 3 rounds) of refinement in Refmac. However, the occupancies refined with these refinements did not converge to the correct occupancy (as seen by huge difference peaks describing the ligand). We then refined these structures with PHENIX, fixing the XYZ coordinates and manually scanning across possible occupancies while refining B-factors with the following settings: refinement.refine.strategy = individual_adp, hydrogens.optimize_scattering_contribution = False, main.number_of_macro_cycles = 10, optimize_mask = True, optimize_adp_weight = True. While in principle one could interpret the difference density to pick an optimal refined occupancy, no other statistics calculated provided a clear choice of occupancy. We ultimately chose to deposit occupancies of the bound state at 2.2 times the event map occupancy (1-BDC). This occupancy choice was motivated by the trend previously found by Pearce et al. (2017). In cases where the total bound occupancy was 50% or higher, the models were manually inspected, and a few dropped to low occupancies that minimized difference features of the ligand. The resulting final ensemble structures of the unbound state plus the fragment-bound state were converted from PDB to mmCIF format and deposited in the PDB using the new multimodel submission procedure.
 
-## Visualization
+### Visualization
 
 Coot (Emsley et al., 2010) was instrumental to visualizing and interactively modeling all structures. PyMOL (Schrödinger, 2016) was used for all molecular graphics after initial modeling. We frequently used the volume rendering feature for low-contour electron density alongside the traditional mesh for higher-contour electron density.
 
-## Synthesis of tethered compounds
+### Synthesis of tethered compounds
 
-## Synthesis of 3-amino-2',4'-difluoro-[1,1'-biphenyl]−4-ol
+#### Synthesis of 3-amino-2',4'-difluoro-[1,1'-biphenyl]−4-ol
 
 A solution of 2,4-difluorophenyl boronic acid (188 mg, 1 mmol, 1.0 equiv), 2-amino-4-bromophenol (7.2 mg, 0.62 mmol, 1.2 equiv), Pd(PPh3)4 (57.8 mg, 0.05 mmol, 0.05 equiv), and Na2CO3 (318 mg, 3 mmol, three equiv) in THF (8 mL) was stirred at 90 ˚C overnight. The reaction was allowed to cool, taken up in water, and then extracted 3x with EtoAC. Organic layers were combined, washed with brine, dried over Na2SO4, concentrated in vacuo and purified using flash chromatography (MeOH/DCM) to obtain 22.1 mg of product (10% yield). Calcd for C12H10F2NO (M+H+): 222.07; Found 222.8.
 
-## Synthesis of 2
+#### Synthesis of 2
 
 To a mixture of 3-amino-2',4'-difluoro-[1,1'-biphenyl]−4-ol (22.1 mg, 0.1 mmol, one equiv), dithiodiglycolic acid (9.1 mg, 0.05 mmol, 0.5 equiv), HOBt·H2O (19.9 mg, 0.13 mmol, 1.3 equiv), and DIPEA (0.226 µL, 1.3 mmol, 1.3 equiv) in THF (300 µL), EDCI·HCl (25 mg, 0.13 mmol, 1.3 equiv) was added. The reaction was stirred at room temperature overnight. To this was added a solution of bis[2-(N,N-dimethylamino)ethyl]disulfide dihydrochloride (70.3 mg, 0.25 mmol, 2.5 equiv) and TCEP (2.5 mg, 0.01 mmol, 0.01 equiv) in THF/H2O (8:3, 275 µL). The reaction was stirred at room temperature overnight. The reaction was taken up in EtoAC/H2O, and extracted three times with EtOAc. Organic layers were combined, washed with brine, dried over Na2SO4, concentrated in vacuo and purified using flash chromatography (DCM/MeOH) followed by preparative HPLC (C18 column (50 × 19 mm), Methanol/Water–0.05% formic acid gradient: 10:90 to 100:0 over 12 min; 20 mL/min; 254 nm detection for 18 min.) to obtain 9.1 mg of 2 (23% yield). 1H NMR (400 MHz, Acetone-d6) δ 9.55 (s, 1H), 8.17 (s, 1H), 8.06–8.04 (m, 1H), 7.54–7.45 (m, 1H), 7.22–7.19 (m, 1H), 7.12–7.00 (m, 3H), 3.94–3.78 (m, 2H), 3.15–2.99 (m, 4H), 2.54–2.52 (m, 6H). Calcd for C18H21F2N2O2S2 (M+H+): 399.1; Found 398.93.
 
-## Tethering
+### Tethering
 
 We screened K197C against a previously synthesized library of 1600 disulfide fragments made available by the UCSF Small Molecule Discovery Center (SMDC) (Kathman et al., 2014; Burlingame et al., 2011b).
 
 For the screen, tethering reactions were performed using the following conditions: 1x tethering buffer (25 mM Tris pH 7.5, 100 mM NaCl), with 500 nM of K197C, 1 mM β-mercaptoethanol, and 100 µM of fragment (0.2% DMSO), 1 hr at rt. Unless otherwise noted, tethering reactions for follow-up experiments and activity assays were performed using the following conditions: 1x tethering buffer, 1 µM of K197C, 0.1 mM β-mercaptoethanol, and 50 µM of fragment (2% DMSO), 1 hr at rt. For DiFMUP assays 100 µM of fragment (0.2% DMSO) was used during tethering. For crystallography, tethering reactions were performed using the following conditions: 1x tethering buffer, 0.76 mg/mL of K197C, 0.1 mM β-mercaptoethanol, 500 µM of TCS401, and 250 µM of fragment (2% DMSO), 2 hr at rt. A total reaction size of 3.5 mL was used for preparation of crystallography samples. Following labeling, the reaction was dialyzed into crystallization buffer overnight to remove TCS401 and unbound fragment. In all cases, the percent of tethering was measured using a Waters Xevo G2-XS Mass Spectrometer, and calculated by comparing the relative peak heights of the unmodified and modified protein. Tethering EC50 values were calculated using nonlinear fitting in Prism 7 (Graphpad), n = 3.
 
-## Activity assays
+### Activity assays
 
 For activity assays of WT* PTP1B vs. allosteric mutants (Figure 5—figure supplement 3), protein was diluted to 269 nM (WT*) or 200 nM (mutants) in a variant of pNPP activity assay buffer (50 mM HEPES pH 7, 100 mM NaCl, 1 mM EDTA, and 1 mM DTT). WT* assays were performed at 269 nM protein and mutant assays were performed at 200 nM, so WT* data is normalized to 200 nM in both panels in Figure 5—figure supplement 3. Enzyme activity assays were performed across 10 p-nitrophenyl phosphate (pNPP) concentrations obtained by serial two-fold dilutions starting from 20 mM. A no-enzyme well was also assayed. Absorbance at 405 nm for each reaction was monitored every 30 s for 5 min using a Tecan Infinite M200 Pro. The rate (mAU/min) of each reaction was calculated over the 5 min. Michaelis-Menten parameters were then calculated using Prism 7 (Graphpad). kcat values were calculated using an pNPP extinction coefficient of 18,000 M−1 cm−1 and a path length of 0.29 cm. These parameters for WT* PTP1B were similar to those reported previously for WT (Choy et al., 2017); small discrepancies may be due in part to differences in the length of the protein construct being used.
 
@@ -251,7 +770,7 @@ For DiFMUP inhibition experiments with tethered complexes, completed K197C and W
 
 For DiFMUP kinetics experiments with tethered complexes, completed K197C tethering reactions (post 1 hr incubation) were diluted to a final concentration of 2 nM K197C with a variant of DiFMUP activity assay buffer (50 mM HEPES pH 7, 100 mM NaCl, 1 mM EDTA, 0.05% Tween-20), and 11 DiFMUP concentrations obtained by serial two-fold dilutions starting from 300 µM. Fluorescence at 450 nm with 358 nm excitation for each reaction was monitored every 30 s for 3 min using a Tecan Infinite M200 Pro. The rate (ΔF/min) of each reaction was calculated over the 3 min. Data was plotted and fit using Prism 7 (Graphpad), n = 3. Vmax and KM values were calculated using the Michaelis-Menten nonlinear fit in Prism 7 (Graphpad). All p-values and significances were calculated using a FDR-Approach Multiple t-test in Prism 7 (Graphpad).
 
-## Data availability
+### Data availability
 
 Multiconformer models and structure factors for the multitemperature WT and WT* (6B90, 6B8E, 6B8T, 6B8X), BB3-bound (6B8Z), K197C apo (6BAI) and tethered (6B95) datasets have been deposited in the Protein Data Bank (Berman et al., 2000).
 

@@ -43,7 +43,7 @@
 
 ## Abstract
 
-10.7554/eLife.17716.001 The role of mammalian skin in harbouring and transmitting arthropod-borne protozoan parasites has been overlooked for decades as these pathogens have been regarded primarily as blood-dwelling organisms. Intriguingly, infections with low or undetected blood parasites are common, particularly in the case of Human African Trypanosomiasis caused by Trypanosoma brucei gambiense . We hypothesise, therefore, the skin represents an anatomic reservoir of infection. Here we definitively show that substantial quantities of trypanosomes exist within the skin following experimental infection, which can be transmitted to the tsetse vector, even in the absence of detectable parasitaemia. Importantly, we demonstrate the presence of extravascular parasites in human skin biopsies from undiagnosed individuals. The identification of this novel reservoir requires a re-evaluation of current diagnostic methods and control policies. More broadly, our results indicate that transmission is a key evolutionary force driving parasite extravasation that could further result in tissue invasion-dependent pathology. DOI: http://dx.doi.org/10.7554/eLife.17716.001
+The role of mammalian skin in harbouring and transmitting arthropod-borne protozoan parasites has been overlooked for decades as these pathogens have been regarded primarily as blood-dwelling organisms. Intriguingly, infections with low or undetected blood parasites are common, particularly in the case of Human African Trypanosomiasis caused by Trypanosoma brucei gambiense. We hypothesise, therefore, the skin represents an anatomic reservoir of infection. Here we definitively show that substantial quantities of trypanosomes exist within the skin following experimental infection, which can be transmitted to the tsetse vector, even in the absence of detectable parasitaemia. Importantly, we demonstrate the presence of extravascular parasites in human skin biopsies from undiagnosed individuals. The identification of this novel reservoir requires a re-evaluation of current diagnostic methods and control policies. More broadly, our results indicate that transmission is a key evolutionary force driving parasite extravasation that could further result in tissue invasion-dependent pathology.
 
 ## Introduction
 
@@ -55,53 +55,202 @@ Detection of trypanosomes in the skin is not well documented, although there are
 
 ## Results
 
-In order to investigate the potential for extravascular skin invasion by
+In order to investigate the potential for extravascular skin invasion by T. brucei, BALB/c mice were inoculated via IP injection with the low virulence STIB247 strain of T. brucei and skin sections were assessed over a 36-day time-course. The presence and relative quantities of extravascular parasites were evaluated by semi-quantitative scoring of the histological samples (Figure 1—source data 1) and compared to blood parasitaemia (Figure 1—source data 2). Extravascular parasites were first observed in the skin 12 days post-infection and remained throughout the experiment. Skin parasite numbers fluctuated to a lesser extent than blood parasitaemia and the apparent periodicity in the skin may be due to one particularly high data point on day 24 (Figure 1). Parasites were found in the dermis, subcutaneous adipose tissue (Figure 2) and in fascia beneath the panniculus carnosus muscle. We did not detect any particular clustering around dermal adipocytes. The presence of parasites in the skin was not associated with major inflammation (Supplementary file 1). To confirm that skin invasion by this parasite was not strain or sub-species specific, the more virulent TREU927 strain of T. brucei and the human-infective T.b. gambiense strain, PA, were used to infect mice. Extravascular skin invasion of the dermis, subcutaneous adipose tissue and fascial planes (Figure 2—figure supplement 1) was evident with associated mild to moderate inflammation (Supplementary file 2), in some instances the degree of skin invasion in the T.b. gambiense infected mice was far greater than T.b. brucei, perhaps suggesting a greater propensity for sequestration in this sub-species.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig1-v2.jpg)
 
-**Figure 1.:** The blood parasitaemia of T.b. brucei strain STIB247 (red) and the semi-quantitative score of extravascular parasites in the skin (blue) are shown over a 36-day time-course following infection in Balb/C mice. Blood parasitaemia was measured using phase microscopy using methodology outlined in (Lumsden, 1963). Skin parasite burden is an average of five high-power fields scored by histological analysis (0 = no parasites detectable; 1 = low numbers of parasites; 2 = moderate numbers of parasites; 3 = large numbers of parasites). Standard error shown (n = 3).DOI: http://dx.doi.org/10.7554/eLife.17716.00210.7554/eLife.17716.003Figure 1—source data 1.brucei infection, five mice were culled (three infected, two control) and skin sections stained with parasite-specific anti-IGS65 antibody. Parasite burden was assessed by two pathologists blinded to group assignment and experimental procedures. Presence of parasites defined as intravascular (parasites within the lumen of dermal or subcutaneous small to medium-sized vessels) and extravascular (parasites located outside blood vessels, scattered in the connective tissue of the dermis or in the subcutis) was evaluated in 5 high-power fields at x40 magnification with a 0 to 3 semi-quantitative grading scale (0 = no parasites detectable; 1 = low numbers of parasites; 2 = moderate numbers of parasites; 3 = large numbers of parasites).DOI: http://dx.doi.org/10.7554/eLife.17716.00310.7554/eLife.17716.004Figure 1—source data 2.brucei infection was estimated using phase microscopy and methodology outlined in (Lumsden, 1963).DOI: http://dx.doi.org/10.7554/eLife.17716.004
+**Figure 1.:** The blood parasitaemia of T.b. brucei strain STIB247 (red) and the semi-quantitative score of extravascular parasites in the skin (blue) are shown over a 36-day time-course following infection in Balb/C mice. Blood parasitaemia was measured using phase microscopy using methodology outlined in (Lumsden, 1963). Skin parasite burden is an average of five high-power fields scored by histological analysis (0 = no parasites detectable; 1 = low numbers of parasites; 2 = moderate numbers of parasites; 3 = large numbers of parasites). Standard error shown (n = 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig2-v2.jpg)
 
-**Figure 2.:** Histological sections of dorsal skin from uninfected and infected Balb/C mice stained with trypanosome-specific anti-ISG65 antibody (brown), counterstained with Gill’s Haematoxylin stain (blue) at 12 days and 24 days post-inoculation with T.b. brucei strain STIB247. Parasites are visible in extravascular locations of the skin including the deep dermis and subcutaneous adipose tissue from day 12. The scale bar represents 20 µm.DOI: http://dx.doi.org/10.7554/eLife.17716.005
+**Figure 2.:** Histological sections of dorsal skin from uninfected and infected Balb/C mice stained with trypanosome-specific anti-ISG65 antibody (brown), counterstained with Gill’s Haematoxylin stain (blue) at 12 days and 24 days post-inoculation with T.b. brucei strain STIB247. Parasites are visible in extravascular locations of the skin including the deep dermis and subcutaneous adipose tissue from day 12. The scale bar represents 20 µm.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Histological sections of dorsal skin from a mouse infected with T.b. brucei strain TREU927 at 20x magnification and two mice infected with T.b. gambiense strain PA at 40x magnification 10-days post-inoculation. Trypanosome-specific anti-ISG65 antibody reveals the presence of extravascular parasites (brown) and the slides were counterstained with Gill’s Haematoxylin stain (blue) to reveal host skin structure.DOI: http://dx.doi.org/10.7554/eLife.17716.006
+**Figure 2—figure supplement 1.:** Histological sections of dorsal skin from a mouse infected with T.b. brucei strain TREU927 at 20x magnification and two mice infected with T.b. gambiense strain PA at 40x magnification 10-days post-inoculation. Trypanosome-specific anti-ISG65 antibody reveals the presence of extravascular parasites (brown) and the slides were counterstained with Gill’s Haematoxylin stain (blue) to reveal host skin structure.
 
-To confirm that the extravascular distribution of parasites was not an artefact of the route of inoculation, infections by natural vector transmission were carried out using a bioluminescent
+To confirm that the extravascular distribution of parasites was not an artefact of the route of inoculation, infections by natural vector transmission were carried out using a bioluminescent T.b. brucei strain, AnTat1.1E AMLuc/tdTomato. Mice were infected by a single infective bite of an individual G.m. morsitans. After 4 to 11 days and up to the end of the experiment, parasites were observed in the skin with a dynamic distribution (Figure 3A) and a variable density (Figure 3B). Parasites were first detected in the blood between 5 and 19 days after natural transmission and parasitaemia remained lower than 10 (Kanmogne et al., 1996) parasites/ml. Observed bioluminescence directly reflects the total number of living parasites in the entire organism, including blood and viscera, but the intensity of the signal decreases with tissue depth. Therefore, at the end of each experiment, mice were sacrificed and their organs were checked for bioluminescence. The presence of extravascular parasites in cutaneous and subcutaneous tissues was first demonstrated by bioluminescence imaging in entire dissected skins (Figure 3C) and was not necessarily localised to the bite site. In addition to the skin, only the spleen, some lymph nodes and adipose tissue were observed to be positive for bioluminescence in several individuals (Figure 3—figure supplement 1). This suggests that the observed bioluminescence is likely to originate predominantly, but not solely, from parasites in the skin. In addition, only mild inflammation was observed after 29 days (Figure 3—figure supplement 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig3-v2.jpg)
 
-**Figure 3.:** A total of seven mice were infected by the single infective bite of an individual G.m. morsitans on the belly with the T.b. brucei AnTat1.1E AMLuc/tdTomato strain. Panels A and C depict representative patterns. (A) Examples of bioluminescence profiles of 3 mice (+ bitten by an infected fly, - bitten by an uninfected fly and 0 not bitten) 6, 12, 20 and 26 days after the bite are shown. (B) Ventral (blue) and dorsal (green) bioluminescence (BL) intensities (in p/s/cm2/sr on the left Y-axis) and parasitaemia (in parasites/ml in red on the right Y-axis) were measured daily for 29 days and plotted as mean ± SD (n = 7 mice). (C) The entire skins of mice (+) and (-) were dissected for bioluminescence imaging 29 days after the bite. For the mouse (+), Figure 3—figure supplement 1 shows the bioluminescence profile of dissected organs, Figure 3—figure supplement 2 presents the skin inflammation, and Figure 3—figure supplement 3 shows labelled parasites in skin sections.DOI: http://dx.doi.org/10.7554/eLife.17716.007
+**Figure 3.:** A total of seven mice were infected by the single infective bite of an individual G.m. morsitans on the belly with the T.b. brucei AnTat1.1E AMLuc/tdTomato strain. Panels A and C depict representative patterns. (A) Examples of bioluminescence profiles of 3 mice (+ bitten by an infected fly, - bitten by an uninfected fly and 0 not bitten) 6, 12, 20 and 26 days after the bite are shown. (B) Ventral (blue) and dorsal (green) bioluminescence (BL) intensities (in p/s/cm2/sr on the left Y-axis) and parasitaemia (in parasites/ml in red on the right Y-axis) were measured daily for 29 days and plotted as mean ± SD (n = 7 mice). (C) The entire skins of mice (+) and (-) were dissected for bioluminescence imaging 29 days after the bite. For the mouse (+), Figure 3—figure supplement 1 shows the bioluminescence profile of dissected organs, Figure 3—figure supplement 2 presents the skin inflammation, and Figure 3—figure supplement 3 shows labelled parasites in skin sections.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Mouse (+) was sacrificed and dissected for bioluminescence imaging 29 days after the infective bite. Figure 3C shows the bioluminescence profile of its entire skin and dissected organs are shown here.DOI: http://dx.doi.org/10.7554/eLife.17716.008
+**Figure 3—figure supplement 1.:** Mouse (+) was sacrificed and dissected for bioluminescence imaging 29 days after the infective bite. Figure 3C shows the bioluminescence profile of its entire skin and dissected organs are shown here.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** After 29 days, the most bioluminescent skin region of mouse (+) was dissected, fixed in paraformaldehyde, embedded in paraffin and stained with HE. Multifocal inflammatory infiltrates containing neutrophils were located in the dermis and subcutaneous tissue and associated with oedema (arrows in A). Inflammatory foci were generally centred on blood vessels (arrows in B).DOI: http://dx.doi.org/10.7554/eLife.17716.009
+**Figure 3—figure supplement 2.:** After 29 days, the most bioluminescent skin region of mouse (+) was dissected, fixed in paraformaldehyde, embedded in paraffin and stained with HE. Multifocal inflammatory infiltrates containing neutrophils were located in the dermis and subcutaneous tissue and associated with oedema (arrows in A). Inflammatory foci were generally centred on blood vessels (arrows in B).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** After 29 days, the most bioluminescent skin region of mouse (+) was dissected, fixed in paraformaldehyde, embedded in paraffin and treated for IFA with the anti-CRD antibody that predominately labels parasites expressing VSGs (A–B), or the anti-PAD1 antibody specific to transmission form 'stumpy' cells (C–D).DOI: http://dx.doi.org/10.7554/eLife.17716.010
+**Figure 3—figure supplement 3.:** After 29 days, the most bioluminescent skin region of mouse (+) was dissected, fixed in paraformaldehyde, embedded in paraffin and treated for IFA with the anti-CRD antibody that predominately labels parasites expressing VSGs (A–B), or the anti-PAD1 antibody specific to transmission form 'stumpy' cells (C–D).
 
-To confirm that trypanosomes in the skin are a viable population, fluorescent parasites were monitored by two intravital imaging methods following IP injection and natural transmission (
+To confirm that trypanosomes in the skin are a viable population, fluorescent parasites were monitored by two intravital imaging methods following IP injection and natural transmission (Figure 4). First, IP-injected fluorescent T. brucei STIB247 were imaged in vivo using 2-photon microscopy (Figure 4A). Extravascular trypanosomes observed in the dermal layer of dorsal skin were highly motile, consistent with viability (Video 1). Second, naturally-transmitted fluorescent T. brucei AnTat1.1E AMLuc/tdTomato were imaged in vivo using spinning-disk confocal microscopy in the C57BL/6J-Flk1-EGFP mouse line that has green fluorescent endothelial cells in the lymphatic and blood vessels (Ema et al., 2006) (Figure 4B). Extravascular trypanosomes were observed in the dermal layer of the ear and were highly motile (Videos 2, 3 and 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig4-v2.jpg)
 
-**Figure 4.:** A) and spinning-disk confocal microscopy (B).(A) Still-image extracted from video (Video 1) of multi-photon live imaging of dorsal skin during a trypanosome infection. Intravenous non-targeted quantum dots (white) highlight blood vessels. T.b. brucei STIB 247 parasites transfected with mCherry to aid visualisation (red) are clearly visible and motile outside the vasculature and within the extravascular skin matrix (green). (B) Still-image extracted from (Video 3) of spinning-disk confocal live imaging of the ear of an Kdr (Flk1) C57BL/6J Rj mouse during a trypanosome infection. T.b. brucei AnTat1.1E AMLuc/tdTomato parasites expressing tdTomato (red) are moving in the extravascular region surrounding a vessel of the dermis (green).DOI: http://dx.doi.org/10.7554/eLife.17716.011
+**Figure 4.:** (A) Still-image extracted from video (Video 1) of multi-photon live imaging of dorsal skin during a trypanosome infection. Intravenous non-targeted quantum dots (white) highlight blood vessels. T.b. brucei STIB 247 parasites transfected with mCherry to aid visualisation (red) are clearly visible and motile outside the vasculature and within the extravascular skin matrix (green). (B) Still-image extracted from (Video 3) of spinning-disk confocal live imaging of the ear of an Kdr (Flk1) C57BL/6J Rj mouse during a trypanosome infection. T.b. brucei AnTat1.1E AMLuc/tdTomato parasites expressing tdTomato (red) are moving in the extravascular region surrounding a vessel of the dermis (green).
+
+![Video 1.](https://cdn.elifesciences.org/articles/17716/elife-17716-media1.mp4.jpg)
+
+**Video 1.:** Intravital multi-photon imaging of the flank skin during trypanosome infection 10 days after IP inoculation. An intravenous injection of non-targeted quantum dots prior to imaging allowed visualisation of blood vessels. mCherry STIB247 T.b. brucei parasites (red) are observed moving in the extravascular region surrounding blood vessels of the dermis (white). Collagen auto-fluorescence is visible as green.
+
+![Video 2.](https://cdn.elifesciences.org/articles/17716/elife-17716-media2.mp4.jpg)
+
+**Video 2.:** Spinning-disk confocal live imaging of the ear of anKdr (Flk1) C57BL/6J Rj mouse during a trypanosome infection after natural transmission. T.b. brucei AnTat1.1E AMLuc/tdTomato parasites expressing tdTomato (red) are observed moving in the extravascular region surrounding blood and / or lymphatic vessels of the dermis (green).
+
+![Video 3.](https://cdn.elifesciences.org/articles/17716/elife-17716-media3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/17716/elife-17716-media4.mp4.jpg)
 
 Differentiation of dividing trypanosomes to non-dividing stumpy forms is essential for transmission to the tsetse. Using the relative transcript abundance of the stumpy marker Protein Associated with Differentiation 1 (PAD1) (Dean et al., 2009) to an endogenous control, Zinc Finger Protein 3 (ZFP3) (Walrad et al., 2009), we estimated that approximately 20% of skin-dwelling parasites were stumpy (Supplementary file 3). To directly determine the proportion of stumpy forms in skin sections, histological staining for PAD1 was also performed (Table 1—source data 4). PAD1-positive cells were observed in variable proportions (from 8 to 80%) in all bioluminescent skin samples examined after IP injection (Supplementary file 4). Following natural transmission, up to 38% of parasites detected using VSG surface markers (Figure 3—figure supplement 3A–B) also expressed PAD1 (Figure 3—figure supplement 3C–D) (n = 441 cells from 8 skin sections). In all skin sections, stumpy parasites were homogenously distributed in the dermis and subcutaneous adipose tissues.
 
-We next assessed the ability of skin-dwelling parasites to infect tsetse flies. Teneral flies (immature flies that have not yet taken a blood meal) were fed on different regions of skin from mice infected with AnTat1.1E AMLuc/TY1/tdTomato with differing levels of bioluminescence across the skin (Table 1—source data 1 and Table 1—source data 2). This was repeated in 20 mice with differing levels of parasitaemia. Flies were dissected and checked for the presence of fluorescent trypanosomes after two days (Table 1). In mice with undetectable or low parasitaemia (<5 × 104 parasites/ml), no parasites were found in flies fed on non-bioluminescent regions. Conversely, a median of 36% (± 23%, n = 70) of flies that fed on bioluminescent regions of low parasitaemic mice became infected (Table 1 and Table 1—source data 3). This demonstrates that skin parasites, from mice without visible parasitaemia, can contribute to tsetse infection, possibly reflecting human asymptomatic infections. When parasites were detected in the blood and skin, tsetse infection rates increased up to 100% (median of 61% ± 22%, n = 120) (Table 1 and Table 1—source data 3). Parasites taken-up from the skin were able to further develop through the life-cycle to early procyclic forms in the fly as evidenced by GPEET-procyclin marker on the parasites surface (n = 721 cells from 16 flies) (Table 1—source data 4 and Supplementary file 4).10.7554/eLife.17716.016Table 1.Skin parasites are ingested during tsetse pool-feeding. Mice were IP infected with T.b. brucei AnTat1.1E AMLuc/TY1/tdTomato and the parasitaemia and bioluminescence were monitored daily until the day of xenodiagnosis. The number of parasites in the blood was determined using a haemocytometer or a flux cytometer. The number of parasites in the skin was estimated from the measured bioluminescence intensity by using a standard curve (Table 1—source data 1 and Table 1—source data 2). Batches of teneral flies were fed on different skin regions of mice infected with differing levels of bioluminescence across the skin and with differing levels of parasitaemia (Table 1—source data 2 and Table 1—source data 3). Fly batches A4A, A2A, B1A, 3B and 3A were used to assess tsetse transmission in hosts with low numbers of blood parasites but high numbers skin parasites, while fly batches 1B, 1A, 4B, 4A, 2B, 2A, B2B and B4A were used to investigate the impact of high numbers of parasites in both the skin and blood. Flies were dissected and their midguts checked for the presence of fluorescent trypanosomes after two days to determine the proportion of infected flies (Table 1—source data 4A–B). For some of these experiments, results of an in-depth quantification of parasite stages by IFA is provided in Supplementary file 4. Stumpy forms were observed only in the blood of mice with parasitaemia values highlighted in purple. Bioluminescence was detected in the skin of mice with values highlighted in grey.DOI: http://dx.doi.org/10.7554/eLife.17716.01610.7554/eLife.17716.017Table 1—source data 1.Characterisation of the AnTat 1.1E AMLuc/TY1/tdTomato sub-clone.(A) The in vitro growth of the selected AnTat1.1E AMLuc/TY1/tdTomato sub-clone (red) was similar to that of the parental wild-type strain (blue). Bloodstream forms were cultured in HMI11, counted daily in a Muse cytometer (Merck-Millipore) and diluted after 4 days. (B) A parasite density / bioluminescence intensity analysis was performed by measuring the bioluminescence in successive 2-fold dilutions in 96-micro-well plates with an IVIS Spectrum imager (Perkin Elmer). When plotted as mean ± SD (n = 3), parasite densities and bioluminescence intensities were correlated when the bioluminescence levels were higher than 10 (Berthier et al., 2016) p/s/cm²/sr, corresponding to about 10 (Koffi et al., 2006) parasites, allowing estimation of the parasite density from in vivo imaging over this threshold. This standard curve was used to estimate the number of parasites in the skin from measured values of bioluminescence. (C) This correlation was verified by quantification in a microplate reader Infinite 200 (Tecan) at the very beginning of the first in vivo experiment as well as the end of the last one (mean ± SD, n = 3).DOI: http://dx.doi.org/10.7554/eLife.17716.01710.7554/eLife.17716.018Table 1—source data 2.Parasite densities in extravascular tissue of the skin and in the blood of mice used for differential xenodiagnosis.Mice were injected IP with AnTat1.1E AMLuc/TY1/tdTomato and monitored daily for bioluminescence and parasitaemia. (A) Bioluminescence profile of four mice (- uninfected control and (1–3) three infected mice) four days after infection. (B) The entire skins of the uninfected control mouse (-) and mouse 3 were dissected for bioluminescence imaging four days after infection. (C) Parasite densities in the blood and in the skin (calculated from the mean dorsal bioluminescence intensity measurement and from the standard curve in Table 1—source data 1, in parasites/cm (Fakhar, 2013) in blue) were calculated daily over one week and plotted as mean ± SD (n = 13 mice).DOI: http://dx.doi.org/10.7554/eLife.17716.01810.7554/eLife.17716.019Table 1—source data 3.Skin parasites are sufficient to initiate a tsetse infection.Schematics summarising the principal results from the xenodiagnosis experiment. In a mouse with no detected transmissible parasites in the blood (absence of stumpy forms by IFA and absence of infection of flies fed on a non-bioluminescent region of the skin), flies can ingest transmissible parasites from the bioluminescent region of the skin (left panel). When a mouse presents transmissible forms in the blood, fly infection rates increase with the concomitant ingestion of parasites from the skin (right panel). Values correspond to those obtained for mouse A4 and B4.DOI: http://dx.doi.org/10.7554/eLife.17716.01910.7554/eLife.17716.020Table 1—source data 4.Parasite stage determination by labelling of specific surface markers.Parasites recovered from infected tsetse midguts (A–B) or included in bloodsmears (C) were fixed in methanol for 5 s and stained either with the anti-GPEET antibody detecting early procyclic forms (red in A–B) and the L8C4 antibody labelling the flagellum PFR (green in A–B), or with the anti-PAD1 antibody detecting intermediate and stumpy forms (green in C), respectively.DOI: http://dx.doi.org/10.7554/eLife.17716.020Fly batchesParasites in blood (per ml)Parasites in skin (per cm2)Dissected fliesFly infection rates (%)C100320%C0080%A4B< 104< 103160%B1B2.2 × 104< 103130%A4A< 1046.6 × 1051735%A2A1.1 × 1043.8 × 106786%B1A2.2 × 1044.6 × 1071631%3B4.4 × 1042.6 × 1041436%3A4.4 × 1042.6 × 1041638%1B1.8 × 1058.0 × 1031267%1A1.8 × 1058.0 × 1031479%4B2.2 × 1051.2 × 1041753%4A2.2 × 1051.2 × 1041856%2B1.6 × 1068.0 × 1031436%2A1.6 × 1063.2 × 1041839%B4B4.3 × 1066.7 × 1071080%B4A4.3 × 1066.7 × 10717100%
+We next assessed the ability of skin-dwelling parasites to infect tsetse flies. Teneral flies (immature flies that have not yet taken a blood meal) were fed on different regions of skin from mice infected with AnTat1.1E AMLuc/TY1/tdTomato with differing levels of bioluminescence across the skin (Table 1—source data 1 and Table 1—source data 2). This was repeated in 20 mice with differing levels of parasitaemia. Flies were dissected and checked for the presence of fluorescent trypanosomes after two days (Table 1). In mice with undetectable or low parasitaemia (<5 × 104 parasites/ml), no parasites were found in flies fed on non-bioluminescent regions. Conversely, a median of 36% (± 23%, n = 70) of flies that fed on bioluminescent regions of low parasitaemic mice became infected (Table 1 and Table 1—source data 3). This demonstrates that skin parasites, from mice without visible parasitaemia, can contribute to tsetse infection, possibly reflecting human asymptomatic infections. When parasites were detected in the blood and skin, tsetse infection rates increased up to 100% (median of 61% ± 22%, n = 120) (Table 1 and Table 1—source data 3). Parasites taken-up from the skin were able to further develop through the life-cycle to early procyclic forms in the fly as evidenced by GPEET-procyclin marker on the parasites surface (n = 721 cells from 16 flies) (Table 1—source data 4 and Supplementary file 4).
 
-To demonstrate that skin invasion by trypanosomes can occur in humans as well as the murine model, slides of historical skin biopsies, taken as part of a diagnostic screening programme for
+**Table 1.**
+ Skin parasites are ingested during tsetse pool-feeding. Mice were IP infected with T.b. brucei AnTat1.1E AMLuc/TY1/tdTomato and the parasitaemia and bioluminescence were monitored daily until the day of xenodiagnosis. The number of parasites in the blood was determined using a haemocytometer or a flux cytometer. The number of parasites in the skin was estimated from the measured bioluminescence intensity by using a standard curve (Table 1—source data 1 and Table 1—source data 2). Batches of teneral flies were fed on different skin regions of mice infected with differing levels of bioluminescence across the skin and with differing levels of parasitaemia (Table 1—source data 2 and Table 1—source data 3). Fly batches A4A, A2A, B1A, 3B and 3A were used to assess tsetse transmission in hosts with low numbers of blood parasites but high numbers skin parasites, while fly batches 1B, 1A, 4B, 4A, 2B, 2A, B2B and B4A were used to investigate the impact of high numbers of parasites in both the skin and blood. Flies were dissected and their midguts checked for the presence of fluorescent trypanosomes after two days to determine the proportion of infected flies (Table 1—source data 4A–B). For some of these experiments, results of an in-depth quantification of parasite stages by IFA is provided in Supplementary file 4. Stumpy forms were observed only in the blood of mice with parasitaemia values highlighted in purple. Bioluminescence was detected in the skin of mice with values highlighted in grey.Table 1—source data 1.Characterisation of the AnTat 1.1E AMLuc/TY1/tdTomato sub-clone.(A) The in vitro growth of the selected AnTat1.1E AMLuc/TY1/tdTomato sub-clone (red) was similar to that of the parental wild-type strain (blue). Bloodstream forms were cultured in HMI11, counted daily in a Muse cytometer (Merck-Millipore) and diluted after 4 days. (B) A parasite density / bioluminescence intensity analysis was performed by measuring the bioluminescence in successive 2-fold dilutions in 96-micro-well plates with an IVIS Spectrum imager (Perkin Elmer). When plotted as mean ± SD (n = 3), parasite densities and bioluminescence intensities were correlated when the bioluminescence levels were higher than 10 (Berthier et al., 2016) p/s/cm²/sr, corresponding to about 10 (Koffi et al., 2006) parasites, allowing estimation of the parasite density from in vivo imaging over this threshold. This standard curve was used to estimate the number of parasites in the skin from measured values of bioluminescence. (C) This correlation was verified by quantification in a microplate reader Infinite 200 (Tecan) at the very beginning of the first in vivo experiment as well as the end of the last one (mean ± SD, n = 3).Table 1—source data 2.Parasite densities in extravascular tissue of the skin and in the blood of mice used for differential xenodiagnosis.Mice were injected IP with AnTat1.1E AMLuc/TY1/tdTomato and monitored daily for bioluminescence and parasitaemia. (A) Bioluminescence profile of four mice (- uninfected control and (1–3) three infected mice) four days after infection. (B) The entire skins of the uninfected control mouse (-) and mouse 3 were dissected for bioluminescence imaging four days after infection. (C) Parasite densities in the blood and in the skin (calculated from the mean dorsal bioluminescence intensity measurement and from the standard curve in Table 1—source data 1, in parasites/cm (Fakhar, 2013) in blue) were calculated daily over one week and plotted as mean ± SD (n = 13 mice).Table 1—source data 3.Skin parasites are sufficient to initiate a tsetse infection.Schematics summarising the principal results from the xenodiagnosis experiment. In a mouse with no detected transmissible parasites in the blood (absence of stumpy forms by IFA and absence of infection of flies fed on a non-bioluminescent region of the skin), flies can ingest transmissible parasites from the bioluminescent region of the skin (left panel). When a mouse presents transmissible forms in the blood, fly infection rates increase with the concomitant ingestion of parasites from the skin (right panel). Values correspond to those obtained for mouse A4 and B4.Table 1—source data 4.Parasite stage determination by labelling of specific surface markers.Parasites recovered from infected tsetse midguts (A–B) or included in bloodsmears (C) were fixed in methanol for 5 s and stained either with the anti-GPEET antibody detecting early procyclic forms (red in A–B) and the L8C4 antibody labelling the flagellum PFR (green in A–B), or with the anti-PAD1 antibody detecting intermediate and stumpy forms (green in C), respectively.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fly batches</th>
+      <th>Parasites in blood (per ml)</th>
+      <th>Parasites in skin (per cm2)</th>
+      <th>Dissected flies</th>
+      <th>Fly infection rates (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>32</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>A4B</td>
+      <td>&lt; 104</td>
+      <td>&lt; 103</td>
+      <td>16</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>B1B</td>
+      <td>2.2 × 104</td>
+      <td>&lt; 103</td>
+      <td>13</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td>A4A</td>
+      <td>&lt; 104</td>
+      <td>6.6 × 105</td>
+      <td>17</td>
+      <td>35%</td>
+    </tr>
+    <tr>
+      <td>A2A</td>
+      <td>1.1 × 104</td>
+      <td>3.8 × 106</td>
+      <td>7</td>
+      <td>86%</td>
+    </tr>
+    <tr>
+      <td>B1A</td>
+      <td>2.2 × 104</td>
+      <td>4.6 × 107</td>
+      <td>16</td>
+      <td>31%</td>
+    </tr>
+    <tr>
+      <td>3B</td>
+      <td>4.4 × 104</td>
+      <td>2.6 × 104</td>
+      <td>14</td>
+      <td>36%</td>
+    </tr>
+    <tr>
+      <td>3A</td>
+      <td>4.4 × 104</td>
+      <td>2.6 × 104</td>
+      <td>16</td>
+      <td>38%</td>
+    </tr>
+    <tr>
+      <td>1B</td>
+      <td>1.8 × 105</td>
+      <td>8.0 × 103</td>
+      <td>12</td>
+      <td>67%</td>
+    </tr>
+    <tr>
+      <td>1A</td>
+      <td>1.8 × 105</td>
+      <td>8.0 × 103</td>
+      <td>14</td>
+      <td>79%</td>
+    </tr>
+    <tr>
+      <td>4B</td>
+      <td>2.2 × 105</td>
+      <td>1.2 × 104</td>
+      <td>17</td>
+      <td>53%</td>
+    </tr>
+    <tr>
+      <td>4A</td>
+      <td>2.2 × 105</td>
+      <td>1.2 × 104</td>
+      <td>18</td>
+      <td>56%</td>
+    </tr>
+    <tr>
+      <td>2B</td>
+      <td>1.6 × 106</td>
+      <td>8.0 × 103</td>
+      <td>14</td>
+      <td>36%</td>
+    </tr>
+    <tr>
+      <td>2A</td>
+      <td>1.6 × 106</td>
+      <td>3.2 × 104</td>
+      <td>18</td>
+      <td>39%</td>
+    </tr>
+    <tr>
+      <td>B4B</td>
+      <td>4.3 × 106</td>
+      <td>6.7 × 107</td>
+      <td>10</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>B4A</td>
+      <td>4.3 × 106</td>
+      <td>6.7 × 107</td>
+      <td>17</td>
+      <td>100%</td>
+    </tr>
+  </tbody>
+</table>
+
+To demonstrate that skin invasion by trypanosomes can occur in humans as well as the murine model, slides of historical skin biopsies, taken as part of a diagnostic screening programme for Onchocerca microfilaria in the trypanosomiasis-endemic Democratic Republic of the Congo, were examined for trypanosomes. At the time of sampling, the incidence of trypanosomiasis was 1.5–2% and we hypothesised that some individuals may have harboured undiagnosed infections. Re-examination of 1121 skin biopsies by microscopy revealed six individuals with trypanosomes in their skin (Figure 5). These individuals had not previously been diagnosed with human trypanosomiasis by clinical signs or the presence of blood parasites.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/17716/elife-17716-fig5-v2.jpg)
 
-**Figure 5.:** Histological sections of skin collected from previously unidentified cases of human trypanosomiasis from the Democratic Republic of Congo, showing the presence of extravascular parasites in biopsies from three individuals (A, B and C). Skin biopsies were collected as part of a national onchocerciasis screening programme that took place in the same geographic region as an active trypanosomiasis focus. Slides were stained with Giemsa and examined under oil immersion at 100x magnification. In addition to visible slender forms (black arrows) in the extravascular tissue of the skin, a clearly identifiable stumpy transmission form with typical morphology and an unattached undulating membrane is also present in the skin of one individual (red arrow in A). The scale bar represents 5 µm.DOI: http://dx.doi.org/10.7554/eLife.17716.021
+**Figure 5.:** Histological sections of skin collected from previously unidentified cases of human trypanosomiasis from the Democratic Republic of Congo, showing the presence of extravascular parasites in biopsies from three individuals (A, B and C). Skin biopsies were collected as part of a national onchocerciasis screening programme that took place in the same geographic region as an active trypanosomiasis focus. Slides were stained with Giemsa and examined under oil immersion at 100x magnification. In addition to visible slender forms (black arrows) in the extravascular tissue of the skin, a clearly identifiable stumpy transmission form with typical morphology and an unattached undulating membrane is also present in the skin of one individual (red arrow in A). The scale bar represents 5 µm.
 
 ## Discussion
 
@@ -113,7 +262,7 @@ HAT was once widespread across much of sub-Saharan Africa but concerted control 
 
 ## Materials and methods
 
-## Trypanosome strains and cultures
+### Trypanosome strains and cultures
 
 All strains used in this study are pleomorphic. STIB247 is a low virulence T.b. brucei strain that induces a chronic infection and was isolated from a hartebeest in the Serengeti in 1971 (Geigy et al., 1973). TREU927 is the genome reference strain for T. brucei and is more virulent than STIB247. This strain was isolated from a tsetse fly in Kenya in 1969/1970 (Goedbloed et al., 1973). PA is a human-infective group 1 T.b. gambiense strain isolated from a patient in the Democratic Republic of the Congo in 1975 (Tait et al., 1984). mCherry STIB247 was created by transfection of STIB247 with pHD1034-mCherry (Myburgh et al., 2013). This strain constitutively expresses fluorescent mCherry from the ribosomal RNA promoter and its expression is stable over repeated passage.
 
@@ -123,66 +272,66 @@ For the first AnTat 1.1E strain, the pTbAMLuc plasmid (M. Taylor, London School 
 
 The second AnTat 1.1E strain expressing the 3.1 Kb chimeric multiplex reporter protein PpyRE9H::TY1::tdTomato was named AnTat 1.1E AMLuc/TY1/tdTomato. This cytoplasmic reporter is composed of three distinct markers: the red-shifted luciferase (PpyRE9H) is fused to the tdTomato red fluorescent protein by a TY1 tag. Briefly, the 1.68 Kb optimised version of the North American firefly Photinus pyralis luciferase (Branchini et al., 2005) was fused with a 10-bp sequence known as TY1-tag (Bastin et al., 1996) and cloned into the pTSARib plasmid (Xong et al., 1998) by using XhoI and HindIII restriction enzymes to obtain the pTSARib-PpyRE9H-TY1 plasmid. Finally, the 1.4 Kb coding region of the tdTomato fluorescent protein was inserted downstream using HindIII and BamHI. The resulting 8.9 Kb vector, containing a blasticidin S resistance cassette, was linearised with SphI to integrate the rDNA promoter locus. Bloodstream parasites were transformed with an Amaxa Nucleofector (Lonza) (Burkard et al., 2007), sub-cloned by limiting dilution, and clone selection was performed by measuring both bioluminescence in a microplate reader Infinite 200 (Tecan) and fluorescence with a Muse cell Analyzer (Merck-Millipore). The selected AnTat 1.1E AMLuc/TY1/tdTomato sub-clone was comparable to the parental wild-type strain in terms of growth rate (Table 1—source data 1A), pleomorphism (Table 1—source data 4C), tsetse infectivity and virulence in mice (Table 1—source data 2). In order to verify the reliability of the bioluminescent marker as well as to define the bioluminescence detection threshold of the AnTat 1.1E AMLuc/TY1/tdTomato selected sub-clone, a parasite density / bioluminescence intensity analysis was performed in 96-micro-well plates with an IVIS Spectrum imager (Perkin Elmer). Parasite density and bioluminescence intensity were correlated when bioluminescence levels were higher than 104 p/s/cm²/sr, corresponding to about 103 parasites, allowing estimation of the parasite density from in vivo imaging over this threshold (Table 1—source data 1B). This correlation was verified by quantification in a microplate reader Infinite 200 (Tecan) at the very beginning of the first in vivo experiment as well as the end of the last one, demonstrating the stability of the triple reporter expression in the AnTat 1.1E AMLuc/TY1/tdTomato selected sub-clone over time, especially after at least one full in vivo parasite cycle in the tsetse fly and the mammalian host (Table 1—source data 1C). This strain was used for xenodiagnosis experiments and quantification of parasite densities.
 
-## Mouse strains
+### Mouse strains
 
 BALB/c and C57BL/6J mice were used as models for chronic disease (Magez and Caljon, 2011). In addition, to allow for further 3D intravital imaging of the lymphatic and blood systems, C57BL/6J-Flk1-EGFP mice expressing a GFP tagged Kdr (Flk1) gene encoding the vascular endothelial growth factor receptor 2 (VEGFR-2) were used (Ema et al., 2006).
 
-## Ethical statements
+### Ethical statements
 
 This study was conducted under Home Office and SAPO regulations in the UK and in strict accordance with the recommendations from the Guide for the Care and Use of Laboratory Animals of the European Union (European Directive 2010/63/UE) and the French Government. The protocol was approved by the 'Comité d’éthique en expérimentation animale de l’Institut Pasteur' CETEA 89 (Permit number: 2012–0043 and 2016–0017) and undertaken in compliance with Institut Pasteur Biosafety Committee (protocol CHSCT 12.131).
 
-## Skin invasion time-course
+### Skin invasion time-course
 
 A total of 36 eight-week old BALB/c mice (Harlan, UK) were inoculated by intra-peritoneal (IP) injection with 104 parasites of strain STIB 247. Parasitaemia was assayed on each subsequent day using phase microscopy (Lumsden, 1963). Twenty-four uninfected animals served as controls. Every three days for 36 days, three infected animals and two uninfected animals were culled and 2 cm2 skin samples removed from the dorsum. Skin samples were fixed in 10% neutral buffered formalin prior to histological analysis.
 
-## Natural infections using tsetse flies
+### Natural infections using tsetse flies
 
 Tsetse flies (Glossina morsitans morsitans) were maintained, infected and dissected at the Institut Pasteur as described previously (Rotureau et al., 2012). Flies were infected with AnTat1.1E AMLuc/tdTomato parasites. Positive flies were selected first by screening the abdominal fluorescence (midgut infection) 15 days after the infective meal, and then by a salivation test (mature salivary gland infection) after one month. Single flies with salivary gland infections were used to infect the abdomen of mice anaesthetised by IP injection of ketamine (Imalgene 1000 at 125 mg/kg) and xylazine (Rompun 2% at 12.5 mg/kg) and feeding was confirmed by visual observation of the fly abdomen full of blood. Control mice were either not bitten or bitten by uninfected flies. The presence and density of parasites in the blood was determined daily by automated fluorescent cell counting with a Muse cytometer (Merck-Milllipore, detection limit 5.102 parasites/ml) or by direct examination under a phase microscope with standardised one-use haemocytometers (Hycor Kova, detection limit 104 parasites/ml), according to the manufacturer’s recommendations.
 
-## Infection for xenodiagnosis
+### Infection for xenodiagnosis
 
 A total of 20 seven-week-old male C57BL/6J Rj mice (Janvier, France) were IP injected with 10 (Jamonneau et al., 2012) AnTat 1.1E AMLuc/TY1/tdTomato bloodstream forms. Parasitaemia was assayed daily by automated fluorescent cell counting with a Muse cytometer (Merck-Millipore, detection limit 5.102 parasites/ml) according to the manufacturer’s recommendations.
 
-## PAD1/ZFP3 relative expression
+### PAD1/ZFP3 relative expression
 
 Three BALB/c were infected with T.b. brucei strain TREU927 and culled at day 11. The mice were perfused and a 2 cm2 region of skin removed from the flank. Skin sections were lysed using a Qiagen Tissuelyzer LT and RNA extracted using a Qiagen RNAeasy kit following the manufacturer’s instructions. 100 ng of RNA from each sample was reverse-transcribed using an Invitrogen Superscript III RT kit. qPCR was performed on each sample using 5 µl of cDNA using a protocol and primers validated previously (MacGregor et al., 2011) on an Agilent Technologies Stratagene Mx3005P qPCR machine. The ratio of PAD1 to ZFP3, and hence the proportion of cells transcribing the PAD1 gene, was estimated using the Agilent Technologies MXPro software.
 
-## Xenodiagnosis
+### Xenodiagnosis
 
 Mice were first anaesthetised by IP injection of ketamine (Imalgene 1000 at 125 mg/kg) and xylazine (Rompun 2% at 12.5 mg/kg). Batches of 10 teneral male tsetse flies (from 8 to 24 hr post-eclosion) were then placed in 50 ml Falcon tubes closed with a piece of net through which they were allowed to feed directly on mouse skin regions of interest for 10 min. The selection of the skin regions for fly feeding was based on mice bioluminescence profiles and parasitaemia. Unfed flies were discarded and fed flies were maintained as previously described. Anaesthetised mice were finally sacrificed by cervical dislocation and their skin was dissected for controlling bioluminescence with an IVIS Spectrum imager (Perkin Elmer). All the flies were dissected and checked for the presence of trypanosomes either 2 or 14 days after their meal on mouse skin by two entomologists blinded to group assignment and experimental procedures. Dissections were performed as previously described (Rotureau et al., 2012), entire midguts were scrutinised by fluorescence microscopy to detect and count living red fluorescent parasites, and positive midguts were further treated for IFA. A total of 420 flies were used in 3 independent xenodiagnosis experiments.
 
-## In vitro bioluminescence imaging
+### In vitro bioluminescence imaging
 
 To perform the parasite density / bioluminescence intensity assay with AnTat 1.1E AMLuc/TY1/tdTomato bloodstream forms, parasites were counted, centrifuged and resuspended in fresh HMI11 medium at 10.106 cells/ml. Then, 100 μl (or 106 parasites) of this suspension were transferred into black clear-bottom 96-well plates and serial 2-fold dilutions were performed in triplicate adjusting the final volume to 200 μl of HMI11 with 300 μg/ml of beetle luciferin (Promega, France). Luciferase activity was quantified after 10 min of incubation with a microplate reader Infinite 200 (Tecan), following the instructions of the Promega Luciferase Assay System. After background removal, results were analysed as mean ± SD of three independent experiments.
 
-## In vivo bioluminescence imaging
+### In vivo bioluminescence imaging
 
 Infection with bioluminescent parasites was monitored daily by detecting the bioluminescence in whole animals with the IVIS Spectrum imager (Perkin Elmer). The equipment consists of a cooled charge-coupled camera mounted on a light-tight chamber with a nose cone delivery device to keep the mice anaesthetised during image acquisition with 1.5% isofluorane. D-luciferin potassium salt (Promega) stock solution was prepared in phosphate buffered saline (PBS) at 33.33 mg/ml, filter-sterilised and stored in a −20°C freezer. To produce bioluminescence, mice were inoculated IP with 150 μl of D-luciferin stock solution (250 mg/kg). After 10 min of incubation to allow substrate dissemination, all mice were anaesthetised in an oxygen-rich induction chamber with 2% isofluorane, and images were acquired by using automatic exposure (30 s to 5 min) depending on signal intensity. Images were analysed with Living Image software version 4.3.1 (Perkin Elmer). Data were expressed in average radiance (p/s/cm²/sr) corresponding to the total flux of bioluminescent signal according to the selected area (total body of the mouse here). The background noise was removed by subtracting the bioluminescent signal of the control mouse from the infected ones for each acquisition.
 
-## 2-photon microscopy
+### 2-photon microscopy
 
 Intravital multi-photon microscopy studies were carried out using a Zeiss LSM7 MP system equipped with a tuneable titanium:sapphire solid-state two-photon excitation source (4W, Chameleon Ultra II, Coherent Laser Group) coupled to an Optical Parametric Oscillator (Chameleon Compact OPO; Coherent). Movies were acquired for 10 to 15 min with an X:Y pixel resolution of 512 × 512 in 2 μm Z increments producing up to 40 μm stacks. 3D tracking was performed using Volocity 6.1.1 (Perkin Elmer, Cambridge, UK). Values representing the mean velocity, displacement and meandering index were calculated for each object. Mice were anaesthetised IP using medetomidine (Domitor 0.5 mg/kg) and ketamine (50 mg/kg) and placed on a heated stage. Following removal of hair with a depilatory cream, dorsal skin was imaged. An intravenous injection of non-targeted quantum dots (Qdot705) (Life Technologies, UK) prior to imaging allowed visualisation of blood vessels.
 
-## Spinning-disk confocal microscopy
+### Spinning-disk confocal microscopy
 
 AnTat1.1E AMLuc/tdTomato parasites were monitored in the ear of Kdr (Flk1) C57BL/6J Rj mice by spinning-disk confocal microscopy as described previously (Rotureau et al., 2012). Briefly, mice were first anaesthetised by IP injection of ketamine (Imalgene 1000 at 125 mg/kg) and xylazine (Rompun 2% at 12.5 mg/kg). Mice were wrapped in a heating blanket and placed on an aluminium platform with a central round opening of 21 mm in diameter. A coverslip was taped on the central hole and the mouse was positioned so that the ear was lying on this oiled coverslip. Imaging was performed using an UltraView ERS spinning-disk confocal system (Perkin Elmer) with a x40 oil objective (1.3 numerical aperture). Movies were acquired by an EM-CCD camera (Hamamatsu) controlled by the Volocity software (Perkin Elmer) with an exposure time of 500 ms for a total of 30 to 120 s. Images were analysed using ImageJ 1.48v and its plugin Bio-formats importer (NIH).
 
-## Histological and immunohistochemical evaluation of the skin
+### Histological and immunohistochemical evaluation of the skin
 
 Paraformaldehyde-fixed skin samples were trimmed and processed into paraffin blocks. Sections were stained with Haematoxylin and Eosin (HE). Additional serial sections were processed for immunohistochemical staining using a polyclonal rabbit antibody raised against the invariant surface glycoprotein 65 (IGS65) (M. Carrington, Cambridge, UK) using a Dako Autostainer Link 48 (Dako, Denmark) and were subsequently counterstained with Gill’s Haematoxylin.
 
-## Histopathological assessment of inflammation in the skin
+### Histopathological assessment of inflammation in the skin
 
 The extent of cutaneous inflammatory cell infiltration was assessed in haematoxylin and eosin stained sections with a semi-quantitative scoring system applied by two pathologists blinded to group assignment and experimental procedures. The extent of mixed inflammatory cell infiltration in the dermis and/or subcutis was assessed on a 0 to 3 grading scale (0 = no inflammation or only few scattered leukocytes; 1 = low numbers of inflammatory cells; 2 = moderate numbers of inflammatory cells; 3 = large numbers of inflammatory cells). Ten high-power fields were scored for each skin sample. An inflammation score calculated as the average of the scores in the 10 high-power fields was determined for each sample.
 
-## Semi-quantitative evaluation of the parasite burden in skin sections
+### Semi-quantitative evaluation of the parasite burden in skin sections
 
 Parasite burden was assessed in skin sections stained with anti-IGS65 antibody by two pathologists blinded to group assignment and experimental procedures. Presence of parasites defined as intravascular (parasites within the lumen of dermal or subcutaneous small to medium-sized vessels) and extravascular (parasites located outside blood vessels, scattered in the connective tissue of the dermis or in the subcutis) was evaluated in 5 randomly selected high-power fields at x40 magnification with a 0 to 3 semi-quantitative grading scale (0 = no parasites detectable; 1 = low numbers of parasites (<20); 2 = moderate numbers of parasites (20 < 50); 3 = large numbers of parasites (>50). An average parasite burden score was calculated for each sample.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Cells were treated for immunofluorescence after paraformaldehyde or methanol fixation as described previously (Dean et al., 2009). Parasites were stained with one or two of the following antibodies: (i) the anti-CRD polyclonal rabbit antibody (1:300) to label the cross-reactive determinant of the glycosylphosphatidylinositol anchors of proteins, predominantly the variant surface glycoproteins (Zamze et al., 1988), (ii) the anti-PAD1 polyclonal rabbit antibody (1:100) targeting the carboxylate-transporter Proteins Associated with Differentiation 1 (PAD1) (Keith Matthews, Edinburgh, UK) (Dean et al., 2009), (iii) the anti-GPEET mouse IgG3 monoclonal antibody (1:500) targeting the T. brucei GPEET-rich procyclin (Acris Antibodies GmbH, San Diego, USA), (iv) the L8C4 mouse IgG1 monoclonal antibody labelling an epitope of the PFR2 protein (Kohl et al., 1999). Specific antibodies with minimal cross-reactions with mice and coupled to AlexaFluor 488, Cy3 or Cy5 (Jackson ImmunoResearch, USA) were used as secondary antibodies. DNA was stained with 4,6-diamidino-2-phenylindole (DAPI). IFA image acquisition was carried out on a Leica 4000B microscope with a x100 objective lens using a Hamamatsu ORCA-03G camera controlled by Micro-manager and images were normalised and analysed with ImageJ 1.49v (NIH).
 
-## Histopathology of historical human skin samples
+### Histopathology of historical human skin samples
 
 Historical human skin samples were collected from 1991 to 1995 as part of The National Onchocerciasis Task Force (NOTF) (Makenga Bof et al., 2015). Of this collection, 1121 paraffin embedded skin samples were cut into 2.5 micron sections and stained with Giemsa (Sigma-Aldrich). Slides were screened for the presence of parasites by two pathologists independently and representative images taken at x100 magnification.

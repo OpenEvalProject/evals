@@ -78,7 +78,7 @@
 
 ## Abstract
 
-Transmission of respiratory pathogens such as SARS-CoV-2 depends on patterns of contact and mixing across populations. Understanding this is crucial to predict pathogen spread and the effectiveness of control efforts. Most analyses of contact patterns to date have focused on high-income settings. Here, we conduct a systematic review and individual-participant meta-analysis of surveys carried out in low- and middle-income countries and compare patterns of contact in these settings to surveys previously carried out in high-income countries. Using individual-level data from 28,503 participants and 413,069 contacts across 27 surveys, we explored how contact characteristics (number, location, duration, and whether physical) vary across income settings. Contact rates declined with age in high- and upper-middle-income settings, but not in low-income settings, where adults aged 65+ made similar numbers of contacts as younger individuals and mixed with all age groups. Across all settings, increasing household size was a key determinant of contact frequency and characteristics, with low-income settings characterised by the largest, most intergenerational households. A higher proportion of contacts were made at home in low-income settings, and work/school contacts were more frequent in high-income strata. We also observed contrasting effects of gender across income strata on the frequency, duration, and type of contacts individuals made. These differences in contact patterns between settings have material consequences for both spread of respiratory pathogens and the effectiveness of different non-pharmaceutical interventions. This work is primarily being funded by joint Centre funding from the UK Medical Research Council and DFID (MR/R015600/1).
+Background:Transmission of respiratory pathogens such as SARS-CoV-2 depends on patterns of contact and mixing across populations. Understanding this is crucial to predict pathogen spread and the effectiveness of control efforts. Most analyses of contact patterns to date have focused on high-income settings.Methods:Here, we conduct a systematic review and individual-participant meta-analysis of surveys carried out in low- and middle-income countries and compare patterns of contact in these settings to surveys previously carried out in high-income countries. Using individual-level data from 28,503 participants and 413,069 contacts across 27 surveys, we explored how contact characteristics (number, location, duration, and whether physical) vary across income settings.Results:Contact rates declined with age in high- and upper-middle-income settings, but not in low-income settings, where adults aged 65+ made similar numbers of contacts as younger individuals and mixed with all age groups. Across all settings, increasing household size was a key determinant of contact frequency and characteristics, with low-income settings characterised by the largest, most intergenerational households. A higher proportion of contacts were made at home in low-income settings, and work/school contacts were more frequent in high-income strata. We also observed contrasting effects of gender across income strata on the frequency, duration, and type of contacts individuals made.Conclusions:These differences in contact patterns between settings have material consequences for both spread of respiratory pathogens and the effectiveness of different non-pharmaceutical interventions.Funding:This work is primarily being funded by joint Centre funding from the UK Medical Research Council and DFID (MR/R015600/1).
 
 ## Introduction
 
@@ -90,17 +90,17 @@ Here, we carry out a systematic review of contact surveys (conducted prior to th
 
 ## Materials and methods
 
-## Systematic review
+### Systematic review
 
-## Data sources and search strategy
+#### Data sources and search strategy
 
 Two databases (Ovid MEDLINE and Embase) were searched on 26 May 2020 to identify studies reporting on contact patterns in LICs, LMICs, and UMICs (Supplementary file 1). Collated records underwent title and abstract screening for relevance, before full-text screening using pre-determined criteria. Studies were included if they reported on any type of face-to-face or close contact with humans and were carried out in LICs, LMICs, or UMICs only. No restrictions on collection method (e.g. prospective diary-based surveys or retrospective surveys based on a face-to-face/phone interview or questionnaire) were applied. Studies were excluded if they did not report contacts relevant to air-borne diseases (e.g. sexual contacts), were conducted in HICs, were contact tracing studies of infected cases, or were conference abstracts. All studies were screened independently by two reviewers (AM and CW). Differences were resolved through consensus and discussion. The study protocol can be accessed through PROSPERO (registration number: CRD42020191197). Income group classification (LIC/LMIC, UMIC, or HIC) was based on 2019 World Bank data (fiscal year 2021) (World Bank Group, 2020).
 
-## Data extraction
+##### Data extraction
 
 Individual-level data were obtained from publication supplementary data, as well as online data repositories such as Zenodo, figshare, and OSF. When not publicly available, study authors were contacted to request data. Extracted data included the participant’s age, gender, employment, student status, household size, and total number of contacts, as well as the day of the week for which contacts were reported. Some studies reported information at the level of individual contacts and included the age, gender, location, and duration of the contact, as well whether it involved physical contact. Individual-level data from HICs, not systematically identified, were used for comparison, and included three studies from Hong Kong (Kwok et al., 2018; Kwok et al., 2014; Leung et al., 2017) and the eight European countries from the POLYMOD study (Mossong et al., 2008). Data were collated, cleaned, and standardised using Stata version 14. Country-specific average household size was obtained from the United Nations Database on Household Size and Composition (United Nations Department of Economic and Social Affairs Population Division, 2019). Gross domestic product based on purchasing power parity (GDP PPP) was obtained from the World Data Bank database (World Bank International Comparison Programme, 2021). Findings are reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) checklist of items specific to IPD meta-analyses (Supplementary file 2). Risk of bias was assessed using the AXIS critical appraisal tool used to evaluate quality of cross-sectional studies (Downes et al., 2016), modified to this study’s objectives (Supplementary file 3). Each item was attributed a zero or a one, and a quality score was assigned to each study, ranging from 0% (‘poor’ quality) to 100% (‘good’ quality). The individual-level data across all studies and analysis code are available at https://github.com/mrc-ide/contact_patterns (Whittaker, 2021; copy archived at swh:1:rev:0b732099d66b2788ae6da5cf0e8185b25de70868; see Supplementary file 4 for data assumptions and Supplementary file 5 for data dictionary).
 
-## Statistical analysis
+### Statistical analysis
 
 The mean, median, and interquartile range of total daily unique contacts were calculated for subgroups including country income status, individual study, survey methodology (diary-based or questionnaire/interview-based), survey day (weekday/weekend), and respondent characteristics such as age, sex, employment/student status, and household size. Detailed description of data assumptions for each study can be found in Supplementary file 4.
 
@@ -110,15 +110,759 @@ All analyses were done in a Bayesian framework using the probabilistic programmi
 
 ## Results
 
-## Systematic review and IPD meta-analysis
+### Systematic review and IPD meta-analysis
 
 A total of 3409 titles and abstracts were retrieved from the databases, and 313 full-text articles were screened for eligibility (Appendix 1—figure 1). This search identified 19 studies with suitable contact data from LIC, LMIC, and UMIC settings – individual-level data were obtained from 16 of these studies, including one study from an LIC, six studies from an LMIC, and nine studies from an UMIC. These were analysed alongside four HIC studies from Hong Kong and Europe. The majority of the studies collected data representative of the general population, through random sampling and included a combination of both rural and urban sites (see Appendix 1 for further details). Although most studies included respondents of all ages, one study restricted their participants to ages over 18 years (Dodd et al., 2016), one to ages over 15 years (Mahikul et al., 2020), one to ages over 6 months (Huang et al., 2020), one study only collected contact data on infants under 6 months (Oguz et al., 2018), and another on contacts of children under 6 years and their caregivers (Neal et al., 2020). The distribution of participant age groups in each study was also dependent on the sampling method. For instance, two studies focused on school and university students and their contacts, thereby oversampling older children and young adults (Ajelli and Litvinova, 2017; Stein et al., 2014). Details of the identified studies and a full description of the systematic review findings can be found in Appendix 1 and Supplementary file 6.
 
 In total, this meta-analysis yielded 28,503 participants reporting on 413,069 contacts. All studies contained information on main demographic variables such as age and gender. Availability of other variables analysed here for each study are listed in Supplementary file 7. All studies reported the number of contacts made in the past 24 hr of (or day preceding) the survey. The definitions of contacts were broadly similar across studies (Supplementary file 6). Specifically, contacts were defined as skin-to-skin (physical) contact or a two-way conversation in the physical presence of another person. All studies scored above 65% of the items on the AXIS risk of bias tool, suggesting good or fair quality (Supplementary file 3). Among all participants 47.5% were male, 30.1% were aged under 15 years and 7.2% were aged over 65 years. The majority (83.4%) of participants were asked to report the number of contacts they made on a weekday. A large proportion (34.1%) of respondents lived in large households of six or more people but this was largely dependent on income setting (LIC/LMIC = 63.2%, UMIC = 35.9%, HIC = 4.9%). Among school-aged children (5–18 years), 88.1% were students, and 59.1% of adults aged over 18 were employed.
 
-## Total number of contacts and contact location
+### Total number of contacts and contact location
 
 The median number of contacts made per day across all the studies was 9 (IQR = 5–17), and was similar across income strata (LIC/LMIC = 10[5–17], UMIC = 8[5–16], HIC = 9[5–17]; Table 1). There was a large variation in contact rates across different studies, with the median number of daily contacts ranging from 4 in a Zambian setting (Dodd et al., 2016) to 24 in an online Thai survey (Stein et al., 2014). When stratifying by study methodology, median daily contacts was higher in diary-based surveys compared to interview-/questionnaire-based surveys, which was true across all income strata (Table 1, Appendix 2—figure 1).
+
+**Table 1.**
+ Summary table of total daily contacts.The total number of observations, as well as the mean, median, and interquartile range (p25 and p75) of total daily contacts shown by participant and study characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>N</th>
+      <th></th>
+      <th>Mean</th>
+      <th></th>
+      <th>p25</th>
+      <th>Median</th>
+      <th>p75</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Overall</td>
+      <td></td>
+      <td>28,503</td>
+      <td></td>
+      <td>14.5</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Gender</td>
+      <td>Male</td>
+      <td>13,218</td>
+      <td></td>
+      <td>15.3</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Female</td>
+      <td>14,598</td>
+      <td></td>
+      <td>13.7</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Age</td>
+      <td>&lt;15</td>
+      <td>8,561</td>
+      <td></td>
+      <td>14.6</td>
+      <td></td>
+      <td>6</td>
+      <td>10</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>15–65</td>
+      <td>17,841</td>
+      <td></td>
+      <td>14.9</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&gt;65</td>
+      <td>2,047</td>
+      <td></td>
+      <td>10.4</td>
+      <td></td>
+      <td>3</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Income status</td>
+      <td>LIC/LMIC</td>
+      <td>9,906</td>
+      <td></td>
+      <td>15.4</td>
+      <td></td>
+      <td>5</td>
+      <td>10</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>UMIC</td>
+      <td>8,330</td>
+      <td></td>
+      <td>14.4</td>
+      <td></td>
+      <td>5</td>
+      <td>8</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>HIC</td>
+      <td>10,267</td>
+      <td></td>
+      <td>13.7</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Survey Methodology</td>
+      <td>Diary</td>
+      <td>12,226</td>
+      <td></td>
+      <td>13.9</td>
+      <td></td>
+      <td>6</td>
+      <td>10</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Interview/survey</td>
+      <td>16,227</td>
+      <td></td>
+      <td>15.0</td>
+      <td></td>
+      <td>4</td>
+      <td>8</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Day type</td>
+      <td>Weekend</td>
+      <td>4,308</td>
+      <td></td>
+      <td>14.7</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Weekday</td>
+      <td>21,579</td>
+      <td></td>
+      <td>14.1</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Employment</td>
+      <td>Yes</td>
+      <td>8,879</td>
+      <td></td>
+      <td>15.4</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td colspan="2">(in those aged &gt; 18)</td>
+      <td>No</td>
+      <td>6,158</td>
+      <td></td>
+      <td>9.8</td>
+      <td></td>
+      <td>4</td>
+      <td>7</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Student</td>
+      <td>Yes</td>
+      <td>4,438</td>
+      <td></td>
+      <td>18.4</td>
+      <td></td>
+      <td>8</td>
+      <td>14</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td colspan="2">(in those aged 5–18)</td>
+      <td>No</td>
+      <td>600</td>
+      <td></td>
+      <td>10.4</td>
+      <td></td>
+      <td>5</td>
+      <td>8</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Household size</td>
+      <td>1</td>
+      <td>1,479</td>
+      <td></td>
+      <td>10.4</td>
+      <td></td>
+      <td>3</td>
+      <td>6</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>3,220</td>
+      <td></td>
+      <td>11.8</td>
+      <td></td>
+      <td>4</td>
+      <td>7</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>4,130</td>
+      <td></td>
+      <td>12.0</td>
+      <td></td>
+      <td>4</td>
+      <td>7</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>5,240</td>
+      <td></td>
+      <td>13.4</td>
+      <td></td>
+      <td>5</td>
+      <td>8</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5</td>
+      <td>3,109</td>
+      <td></td>
+      <td>12.5</td>
+      <td></td>
+      <td>4</td>
+      <td>8</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>6+</td>
+      <td>8,873</td>
+      <td></td>
+      <td>17.7</td>
+      <td></td>
+      <td>7</td>
+      <td>11</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Study</td>
+      <td>Belgium</td>
+      <td>Mossong</td>
+      <td>750</td>
+      <td></td>
+      <td>11.8</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>China</td>
+      <td>Read</td>
+      <td>1,821</td>
+      <td></td>
+      <td>18.6</td>
+      <td></td>
+      <td>7</td>
+      <td>13</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>China</td>
+      <td>Zhang</td>
+      <td>965</td>
+      <td></td>
+      <td>18.8</td>
+      <td></td>
+      <td>4</td>
+      <td>10</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fiji</td>
+      <td>Neal</td>
+      <td>2,019</td>
+      <td></td>
+      <td>6.4</td>
+      <td></td>
+      <td>4</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Finland</td>
+      <td>Mossong</td>
+      <td>1,006</td>
+      <td></td>
+      <td>11.1</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Germany</td>
+      <td>Mossong</td>
+      <td>1,341</td>
+      <td></td>
+      <td>7.9</td>
+      <td></td>
+      <td>4</td>
+      <td>6</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hong Kong</td>
+      <td>Kwok et al., 2014</td>
+      <td>762</td>
+      <td></td>
+      <td>18.3</td>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hong Kong</td>
+      <td>Kwok et al., 2018</td>
+      <td>1,066</td>
+      <td></td>
+      <td>11.9</td>
+      <td></td>
+      <td>3</td>
+      <td>7</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hong Kong</td>
+      <td>Leung</td>
+      <td>1,149</td>
+      <td></td>
+      <td>14.4</td>
+      <td></td>
+      <td>3</td>
+      <td>7</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>India</td>
+      <td>Kumar</td>
+      <td>2,943</td>
+      <td></td>
+      <td>27.0</td>
+      <td></td>
+      <td>12</td>
+      <td>17</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Italy</td>
+      <td>Mossong</td>
+      <td>849</td>
+      <td></td>
+      <td>19.8</td>
+      <td></td>
+      <td>10</td>
+      <td>17</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Kenya</td>
+      <td>Kiti</td>
+      <td>568</td>
+      <td></td>
+      <td>17.7</td>
+      <td></td>
+      <td>10</td>
+      <td>15</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Luxembourg</td>
+      <td>Mossong</td>
+      <td>1,051</td>
+      <td></td>
+      <td>17.5</td>
+      <td></td>
+      <td>8</td>
+      <td>14</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>The Netherlands</td>
+      <td>Mossong</td>
+      <td>269</td>
+      <td></td>
+      <td>13.9</td>
+      <td></td>
+      <td>6</td>
+      <td>11</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Peru</td>
+      <td>Grijalva</td>
+      <td>588</td>
+      <td></td>
+      <td>15.3</td>
+      <td></td>
+      <td>8</td>
+      <td>12</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Poland</td>
+      <td>Mossong</td>
+      <td>1,012</td>
+      <td></td>
+      <td>16.3</td>
+      <td></td>
+      <td>7</td>
+      <td>13</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Russia</td>
+      <td>Ajelli</td>
+      <td>502</td>
+      <td></td>
+      <td>18.0</td>
+      <td></td>
+      <td>6</td>
+      <td>11</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>South Africa</td>
+      <td>Dodd</td>
+      <td>1,276</td>
+      <td></td>
+      <td>5.2</td>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>South Africa</td>
+      <td>Wood</td>
+      <td>571</td>
+      <td></td>
+      <td>15.6</td>
+      <td></td>
+      <td>9</td>
+      <td>14</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Senegal</td>
+      <td>Potter</td>
+      <td>1,417</td>
+      <td></td>
+      <td>19.7</td>
+      <td></td>
+      <td>10</td>
+      <td>15</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Thailand</td>
+      <td>Mahikul</td>
+      <td>369</td>
+      <td></td>
+      <td>22.6</td>
+      <td></td>
+      <td>13</td>
+      <td>20</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Thailand</td>
+      <td>Stein</td>
+      <td>219</td>
+      <td></td>
+      <td>58.5</td>
+      <td></td>
+      <td>15</td>
+      <td>24</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Uganda</td>
+      <td>Le Polain de Waroux</td>
+      <td>568</td>
+      <td></td>
+      <td>7.0</td>
+      <td></td>
+      <td>5</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>United Kingdom</td>
+      <td>Mossong</td>
+      <td>1,012</td>
+      <td></td>
+      <td>11.7</td>
+      <td></td>
+      <td>6</td>
+      <td>10</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vietnam</td>
+      <td>Horby</td>
+      <td>865</td>
+      <td></td>
+      <td>7.7</td>
+      <td></td>
+      <td>5</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Zambia</td>
+      <td>Dodd</td>
+      <td>2,300</td>
+      <td></td>
+      <td>4.8</td>
+      <td></td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Zimbabwe</td>
+      <td>Melegaro</td>
+      <td>1,245</td>
+      <td></td>
+      <td>10.7</td>
+      <td></td>
+      <td>6</td>
+      <td>9</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Overall, children aged 5–15 had the highest number of daily contacts (Figure 1A–C), although there was substantial variation between studies and across income strata in how the number of daily contacts varied with age (Figure 1A–C). Across UMICs and HICs, the number of daily contacts made by participants decreased with age, with this decrease most notable in the oldest age groups (adjCRR for 65+ vs. <15 years [95%CrI]: UMIC = 0.67[0.63–0.71] and HIC = 0.57[0.54–0.60]). By contrast, there was no evidence of contact rates declining in the oldest age groups in LICs/LMICs (adjCRR for 65+ vs. < 15 years [95%CrI] = 0.94[0.89–1.00]). We observed contrasting effects of gender on the number of daily contacts, with men making more daily contacts compared to women in LICs/LMICs after accounting for age (adjCRR = 1.17, 95%CrI:1.15–1.20; Figure 1D), but no effect of gender on total daily contacts for other income strata (CRR[95%CrI]: UMIC = 1.01[0.98–1.04], HIC = 0.99[0.97–1.02]). There were also differences in the number of daily contacts made according to the methodology used and whether the survey was carried out on a weekday or over the weekend – in both instances, contrasting effects of these factors on the number of daily contacts according to income strata were observed (Figure 1D,F).
 
@@ -134,7 +878,7 @@ We also examined the influence of factors that might influence both the total nu
 
 Motivated by this suggestion of strong, location-related (school, work, and household) effects on total daily contact rates, we further explored the locations in which contacts were made. Contact location was known for 314,235 contacts, 42.7% of which occurred at home (13.1% at work, 12.5% at school, and 31.7% in other locations). Across income strata, there was significant variation in the proportion of contacts made at home – being highest in LICs/LMICs (68.3%) and lowest in HICs (37.0%) (Figure 2B). Age differences were also observed in the number of contacts made at home, particularly for LICs/LMICs (Figure 2C,D). Relatedly, a higher proportion of contacts occurred at work and school (14.6% and 11.3%) in HICs compared to LICs/LMICs (3.9% and 5.2%, respectively; Appendix 2—figure 4). Strong, gender-specific patterns of contact location were also observed. Across all income strata males made a higher proportion of their contacts at work compared to females, although this difference was largest for LICs/LMICs (Appendix 2—figure 4 and Appendix 2—figure 5). Further, we found significant variation between income strata in median household size (seven in LICs/LMICs, five in UMICs, and three in HICs). This trend of decreasing household size with increasing country income was consistent with global data (Figure 2E). The larger households observed for LIC/LMIC settings were also more likely to be intergenerational – in LICs/LMICs, 59.4% of participants aged over 65 lived in households of at least six members compared to 17.5% in UMICs and only 2.2% in HICs.
 
-## Type and duration of contact
+### Type and duration of contact
 
 Data on the type of contacts (physical and non-physical) were recorded for 20,910 participants. The mean percentage of physical contacts across participants was 56.0% and was the highest for LICs/LMICs (64.5%). At the study level, the highest mean percentage of physical contacts was observed for a survey of young children and their caregivers conducted in Fiji (Neal et al., 2020) (84.0%) and the lowest in a Hong Kong contact survey (Leung et al., 2017) (18.9%). Physical contact was significantly less common among adults compared to children under 15 years in all settings (ORs ranged between 0.22 and 0.48) (Figure 3A–F). Despite the proportion of physical contacts generally decreasing with age, there was a higher proportion observed for adults aged 80 or over (Figure 3A–C). Contacts made by male participants were more likely to be physical compared to female participants in UMICs (adjOR = 1.13, 95%CrI = 1.10–1.16) and HICs (adjOR = 1.09, 95%CrI = 1.07–1.12), but in LICs/LMICs men had a lower proportion of physical contacts than women (adjOR = 0.81, 95%CrI = 0.79–0.83; Figure 3D–F). Most physical contacts made by women in LICs were made at home (73.5%), whilst for HICs this was just 41.4% – similar differences across income strata were observed for men, although the proportions were always lower than observed for women (62.4% for LIC/LMICs and 36.4% for HICs). Increasing household size was generally associated with a higher proportion of contacts being physical (for households of 6+ members compared to one member: adjCRR[95%CrI]: LIC/LMIC = 1.73[1.48–2.02], UMIC = 1.30[1.12–1.52], HIC = 1.57[1.48–1.67]; Figure 3D–F). Employment was associated with having a significantly lower proportion of physical contacts in LICs/LMICs (adjOR = 0.83, 95%CrI:0.79–0.87) and HICs (adjOR = 0.71, 95%CrI:0.69–0.73), but not in UMICs (adjOR = 1.11, 95%CrI:1.03–1.19). The proportion of physical contacts among all contacts was the highest for households (70.4%), followed by schools (58.5%), community (55.7%), and work (33.6%) (Appendix 2—figure 6).
 
@@ -148,7 +892,7 @@ Data on the duration of contact (<1 or ≥1 hr) were available for 22,822 partic
 
 **Figure 4.:** Mean proportion of contacts that last at least an hour shown by gender (right) and 5-year age groups up to ages 80+ shown for (A) lower-income countries (LICs)/lower-middle countries (LMICs), (B) upper-middle-income countries (UMICs), and (C) high-income countries (HICs). Grey lines denote individual studies and the solid black line is the mean across all studies of within that income group. Studies with a diary-based methodology are represented by a solid grey line and those with a questionnaire or interview design are shown as a dashed line. Odds ratios and associated 95% credible intervals from a logistic regression model with random study effects are shown in (D) (LICs/LMICs), (E) (UMICs), and (F) (HICs). All models were adjusted for age and gender and were ran separately for each key variable (weekday/weekend, household size, survey methodology, student/employment status).
 
-## Assortativity by age and gender
+### Assortativity by age and gender
 
 Twelve studies collected information on the gender of the contact and eight studies contained information on age allowing assignment of contacts to one of the three age groups described in Materials and methods (Appendix 2). We found evidence to suggest that contacts were assortative by gender for all income strata, as participants were more likely to mix with their own gender (Appendix 2—table 2 and Appendix 2—table 3). Mixing was also assortative by age, with participants more likely to contact individuals who belonged to the same age group this degree of age assortativity was lowest for LICs/LMICs, where only 29% of contacts made by adults were with individuals of the same age group. By contrast, in HICs we observed a higher degree of assortative mixing, with most contacts (51.4%) made by older adults occurring with individuals belonging to the same age group.
 

@@ -38,7 +38,7 @@ In the present study, we found that presynaptic PTPσ trans-synaptically regulat
 
 ## Results
 
-## Largely normal neurodevelopmental phenotypes in Emx1-Cre;Ptprsfl/fl mice
+### Largely normal neurodevelopmental phenotypes in Emx1-Cre;Ptprsfl/fl mice
 
 Previously studied PTPσ-null (Ptprs–l–) mice display strong neurodevelopmental deficits, including neonatal death, retarded postnatal growth, and neurological and neuroendocrine deficits (Elchebly et al., 1999; Wallace et al., 1999). To circumvent these extreme phenotypes and allow more in-depth study of PTPσ function, we developed conditional knockout (cKO) mice in which a PTPσ deletion was restricted to excitatory neurons in the cortex and hippocampus by crossing Ptprsfl/fl mice (exon four floxed) with Emx1-Cre mice (Gorski et al., 2002; Figure 1—figure supplement 1A). The resulting Emx1-Cre;Ptprsfl/fl mice were genotyped by PCR (Figure 1—figure supplement 1B). Reductions in PTPσ protein levels in PTPσ-mutant mice were confirmed by immunoblot analysis of hippocampal samples (Figure 1—figure supplement 1C).
 
@@ -46,17 +46,25 @@ Emx1-Cre;Ptprsfl/fl mice showed largely normal postnatal growth and survival, wi
 
 The gross morphology of the brain of Emx1-Cre;Ptprsfl/fl mice was normal, as revealed by staining with the nuclear marker DAPI (4’,6-diamidino-2-phenylindole) (Figure 1—figure supplement 1F). The distribution pattern of PTPσ in the brain, revealed by X-gal staining of PTPσ-mutant mice carrying the β-Geo cassette (see Figure 1—figure supplement 1A for details), indicated widespread PTPσ distribution in various brain regions, including the cortex, hippocampus, striatum, thalamus, and amygdala (Figure 1—figure supplement 1G). These results suggest that excitatory neuron-restricted deletion of PTPσ, unlike global KO, minimally affects neurodevelopmental phenotypes.
 
-## Normal spontaneous and basal excitatory synaptic transmission in the Emx1-Cre;Ptprsfl/fl hippocampus
+### Normal spontaneous and basal excitatory synaptic transmission in the Emx1-Cre;Ptprsfl/fl hippocampus
 
 Because previous in vitro results showed that presynaptic PTPσ regulates synapse development by interacting with multiple postsynaptic adhesion molecules (Choi et al., 2016; Kwon et al., 2010; Li et al., 2015; Takahashi et al., 2011; Takahashi et al., 2012; Woo et al., 2009; Yim et al., 2013), we first measured spontaneous transmission in the Emx1-Cre;Ptprsfl/fl hippocampus, a brain region with strong PTPσ expression (Figure 1—figure supplement 1G).
 
 The frequency and amplitude of miniature excitatory postsynaptic currents (mEPSCs) and miniature inhibitory postsynaptic currents (mIPSCs) were normal in CA1 pyramidal neurons from Emx1-Cre;Ptprsfl/fl mice (Figure 1A,B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig1-v2.jpg)
+
+**Figure 1.:** (A) Normal mEPSCs in CA1 pyramidal neurons from Emx1-Cre;Ptprsfl/fl mice (P18–22). (n = 27 cells from six mice [WT] and 28, 7 [cKO], ns, not significant, Mann-Whitney test). (B) Normal mIPSCs in CA1 pyramidal neurons from Emx1-Cre;Ptprsfl/fl mice (P18–22). (n = 18, 4 [WT] and 20,4 [cKO], ns, not significant,Student’s t-test [amplitude], Welch’s correction [frequency]). (C) Normal evoked basal excitatory transmission at Schaffer collateral-CA1 pyramidal cell (SC-CA1) synapses in Emx1-Cre;Ptprsfl/fl mice (P26-30), as shown by fEPSP slopes plotted against fiber volley amplitude. (n = 14 slices from 5 mice and 14, 6 [WT, cKO], ns, not significant, repeated measures two-way ANOVA). (D) Normal paired-pulse ratio at SC-CA1 synapses of Emx1-Cre;Ptprsfl/fl mice (P26–30), as shown by percent facilitation plotted against inter-pulse intervals. (n = 17, 5 [WT] and 15, 5 [cKO], ns, not significant, repeated-measures/RM two-way ANOVA). (E) Suppressed HFS-LTP at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P26-32). (n = 11, 6 [WT] and 11, 6 [cKO], *p<0.05, Student’s t-test). (F) Suppressed TBS-LTP at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P26-32). (n = 11, 4 [WT] and 9, 4 [cKO], **p<0.01, Student’s t-test). (G) Suppressed LFS-LTD at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P16-19). (n = 11, 6 [WT] and 10, 5 [cKO], *p<0.05, Student’s t-test). (H) Normal mGluR-LTD induced by DHPG (50 μM) at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (2–3 weeks). (n = 8, 7 [WT] and 8, 6 [cKO], ns, not significant, Student’s t-test). (I) Decreases in the ratio of NMDAR-EPSCs and AMPAR-EPSCs and the decay tau of NMDAR-EPSCs at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P18-23). (n = 11 cells from five mice [WT] and 12, 5 [cKO], *p<0.05, Student’s t-test [NMDA/AMPA ratio], Mann-Whitney test [decay tau]). (J) Decreased levels of the GluN2B, but not GluN1 or GluN2A, subunit of NMDARs in crude synaptosomal (P2) and PSD I fractions, but not in total lysates, of the Emx1-Cre;Ptprsfl/fl hippocampus (3 weeks), compared with those in WT mice. α-tubulin was blotted for controls. GluA1, AMPAR subunit. (n = 7 mice (WT/cKO total lysates, 6,4 [WT and cKO P2], n = 3, 3 [WT and cKO PSD], *p<0.05, one sample t-test). (K) D-cycloserine (20 μM) rescues the NMDA/AMPA ratio at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P19–22). (n = 7 cells from four mice [WT-V/vehicle], 7, 3 [WT-D/D-cycloserine], 9, 4 [cKO-V], 9, 4 [cKO-D], *p<0.05, ns, not significant, two-way ANOVA with Sidak’s test). (L) D-cycloserine (20 μM) rescues TBS-LTP at at Emx1-Cre;Ptprsfl/fl SC-CA1 synapses (P28–32), without affecting TBS-LTP at WT synapses. (n = 15 slices from six mice [WT-V], 13, 5 [cKO-V], 9, 3 [WT-D], 10, 3 [cKO-D], *p<0.05, ns, not significant, two-way ANOVA with Sidak’s test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Conditional KO strategy for the production of Emx1-Cre;Ptprsfl/fl cKO mice. (B) PCR genotyping of Ptprsfl/fl and Emx1-Cre alleles. (C) Reduced levels of PTPσ proteins in hippocampal lysates of global Ptprs-mutant mice (gHT/Ptprs+l–, heterozygotes; gKO/Ptprs–l–, homozygotes) and Emx1-Cre;Ptprsfl/fl cKO mice at P21, compared with WT and Ptprsfl/fl mice, as revealed by immunoblot analyses using anti-PTPσ antibodies directed against N-terminal (Ig1+two domains) and C-terminal (last 30 aa residues) regions of the PTPσ protein. A non-specific band recognized by the C-terminal antibody is indicated by an asterisk. (D) Reduced body weights of global Ptprs-mutant mice, but largely normal body weights of Emx1-Cre;Ptprsfl/fl mice, during the first three postnatal weeks. (n = 37/10 mice for WT/gKO, 22/23 mice for WT/cKO, ***p<0.001, two-way ANOVA with Sidak’s test). (E) Abnormal walking patterns in Ptprs-mutant mice, but normal walking patterns of Emx1-Cre;Ptprsfl/fl mice, as revealed by monitoring the walking of mice with painted feet (blue, fore; red, hind) on paper. (F) Normal gross morphology of the brain of Emx1-Cre;Ptprsfl/fl mice (8 weeks), as shown by DAPI staining. Scale bar, 2 mm. (G) Distribution patterns of PTPσ–β-galactosidase fusion proteins, as revealed by X-gal staining of coronal brain slices from WT mice targeted with the β-geo + Ptprs flox vector (8 weeks). Scale bar, 2 mm.
+
 Evoked EPSCs at Schaffer collateral-CA1 pyramidal cell (SC-CA1) synapses in Emx1-Cre;Ptprsfl/fl mice were also comparable to those at wild-type (WT) synapses (Figure 1C). In addition, paired-pulse facilitation, a measure of presynaptic function, was normal at mutant SC-CA1 synapses (Figure 1D).
 
 These results suggest that excitatory neuron-restricted deletion of PTPσ does not affect spontaneous or evoked basal excitatory synaptic transmission at SC-CA1 synapses in mice. These results differ from previous results obtained using global PTPσ-null mice, which exhibit increased mEPSC frequency and increased paired-pulse facilitation at SC-CA1 synapses (Horn et al., 2012).
 
-## Decreased NMDAR-dependent synaptic transmission and plasticity at Emx1-Cre;Ptprsfl/fl hippocampal synapses
+### Decreased NMDAR-dependent synaptic transmission and plasticity at Emx1-Cre;Ptprsfl/fl hippocampal synapses
 
 Because synaptic organizers often regulate synaptic plasticity in addition to synapse development (Südhof, 2018), and LTP, but not LTD (long-term depression), is suppressed in global PTPσ-KO mice (Horn et al., 2012), we measured NMDAR-dependent synaptic plasticity at SC-CA1 hippocampal synapses in Emx1-Cre;Ptprsfl/fl mice.
 
@@ -72,7 +80,7 @@ The reduced synaptic plasticity (LTP and LTD) in Emx1-Cre;Ptprsfl/fl mice may be
 
 These results collectively suggest that excitatory neuron-restricted deletion of PTPσ leads to decreases in NMDAR-mediated synaptic transmission and NMDAR-dependent synaptic plasticity, without affecting AMPAR-mediated transmission, in the hippocampal CA1 region. In addition, considering the extents of the decreases in HFS-LTP, TBS-LTP, and LFS-LTD (~44%,~66%, and ~53%, respectively) and the decrease in the NMDA/AMPA ratio (~45%) at the mutant synapses under naïve and D-cycloserine rescue conditions (Figure 1E–I and K,L), the decreased LTP and LTD seem to mainly involve decreased NMDAR currents rather than signaling pathways downstream of NMDAR activation. In addition, the decreased levels of GluN2B in the PSD fraction (~20%) may contribute partly to the decrease in NMDAR currents (~45%).
 
-## Presynaptic, but not postsynaptic, deletion of PTPσ suppresses hippocampal LTP
+### Presynaptic, but not postsynaptic, deletion of PTPσ suppresses hippocampal LTP
 
 Because presynaptic PTPσ trans-synaptically interacts with postsynaptic adhesion molecules (e.g., NGL-3, TrkC, Slitrks, and IL1RAPL1) (Choi et al., 2016; Kwon et al., 2010; Li et al., 2015; Takahashi et al., 2011; Takahashi et al., 2012; Woo et al., 2009; Yim et al., 2013), we tested the possibility that presynaptic loss of PTPσ suppresses postsynaptic LTP.
 
@@ -80,13 +88,21 @@ To this end, we deleted PTPσ in presynaptic neurons in the hippocampal CA3 regi
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig2-v2.jpg)
 
-**Figure 2.:** (A) Diagram depicting deletion of presynaptic PTPσ in the CA3 region or postsynaptic PTPσ in the CA1 region, induced by local injection of AAV1-hSyn-Cre-eGFP (Cre recombinase fused to EGFP); mice injected with AAV1-hSyn-ΔCre-eGFP (lacking Cre) served as controls. TBS-LTP experiments were conducted ~2.5 weeks later. Local expression of Cre recombinase was further confirmed by EGFP fluorescence in controls co-injected with AAV1-hSyn-eGFP (right) and by reduced PTPσ protein levels (panel B). (B) Decreased PTPσ protein levels in CA3 and CA1 regions of Ptprs mice injected with AAV1-hSyn-Cre-eGFP (CA3/CA1-Cre) compared with those in fl/flPtprs mice injected with AAV1-hSyn-ΔCre-eGFP (CA3/CA1-EGFP). (n = 5 mice [CA3-eGFP], 5 [CA3-Cre], 4 [CA1-eGFP] and 3 [CA1-Cre], *p<0.05, **p<0.01, one-sample t-test). (fl/flC) Suppressed TBS-LTP at SC-CA1 synapses of Ptprs mice (4 weeks) induced by knocking out PTPσ in the CA3 region (but not CA1 region) by local injection of AAV1-hSyn-Cre-eGFP, compared with TBS-LTP in control fl/flPtprs mice injected with AAV-hSyn-ΔCre-eGFP. (n = 8 slices from five mice [CA3-eGFP], 10, 4 [CA3-Cre], 10, 4 [CA1-eGFP] and 11, 5 [CA1-Cre], *p<0.05, ns, not significant, two-way ANOVA with Sidak’s test).fl/fl
+**Figure 2.:** (A) Diagram depicting deletion of presynaptic PTPσ in the CA3 region or postsynaptic PTPσ in the CA1 region, induced by local injection of AAV1-hSyn-Cre-eGFP (Cre recombinase fused to EGFP); mice injected with AAV1-hSyn-ΔCre-eGFP (lacking Cre) served as controls. TBS-LTP experiments were conducted ~2.5 weeks later. Local expression of Cre recombinase was further confirmed by EGFP fluorescence in controls co-injected with AAV1-hSyn-eGFP (right) and by reduced PTPσ protein levels (panel B). (B) Decreased PTPσ protein levels in CA3 and CA1 regions of Ptprsfl/fl mice injected with AAV1-hSyn-Cre-eGFP (CA3/CA1-Cre) compared with those in Ptprsfl/fl mice injected with AAV1-hSyn-ΔCre-eGFP (CA3/CA1-EGFP). (n = 5 mice [CA3-eGFP], 5 [CA3-Cre], 4 [CA1-eGFP] and 3 [CA1-Cre], *p<0.05, **p<0.01, one-sample t-test). (C) Suppressed TBS-LTP at SC-CA1 synapses of Ptprsfl/fl mice (4 weeks) induced by knocking out PTPσ in the CA3 region (but not CA1 region) by local injection of AAV1-hSyn-Cre-eGFP, compared with TBS-LTP in control Ptprsfl/fl mice injected with AAV-hSyn-ΔCre-eGFP. (n = 8 slices from five mice [CA3-eGFP], 10, 4 [CA3-Cre], 10, 4 [CA1-eGFP] and 11, 5 [CA1-Cre], *p<0.05, ns, not significant, two-way ANOVA with Sidak’s test).
 
 LTP experiments indicated that Cre-induced deletion of PTPσ in the CA3 region suppresses TBS-LTP at SC-CA1 synapses in Ptprsfl/fl mice compared with control synapses expressing EGFP alone (no Cre) (Figure 2C). In contrast, deletion of PTPσ in the CA1 region had no effect on TBS-LTP. These results suggest that PTPσ in the presynaptic (CA3) region, but not the postsynaptic (CA1) region, is important for normal LTP at SC-CA1 synapses.
 
-## Re-expression of presynaptic PTPσ rescues postsynaptic LTP in the hippocampus
+### Re-expression of presynaptic PTPσ rescues postsynaptic LTP in the hippocampus
 
 To further test the hypothesis that presynaptic PTPσ regulates postsynaptic LTP, we re-expressed PTPσ in presynaptic CA3 neurons by locally injecting AAV-eIF1a-Ptprs into the CA3 region of Emx1-Cre;Ptprsfl/fl mice (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig3-v2.jpg)
+
+**Figure 3.:** (A) Diagram depicting re-expression of WT and mutant PTPσ proteins in the CA3 region of the hippocampus by local injection of AAV(php.eB)-eIF1a-Ptprs (WT and mutants), followed by measurement of TBS-LTP. (B) Diagram depicting the domain structures of PTPσ and extracellular and cytoplasmic regions/domains involved in protein-protein interactions or tyrosine phosphatase activity. The first three Ig domains are important for trans-synaptic adhesions with Slitrk1, TrkC, CSPG/HSPG or SALM5, and the residues Y224 and K68/K69/K71/K72 are important for Slitrk1 and CSPG/HSPG interactions, respectively. (C) Specific PTPσ mutants used in our experiments, with point mutations or small deletions in the extracellular domains. All binding partners of PTPσ affected by the mutations/deletions are also indicated. (D) Expression levels and sizes of PTPσ mutants, revealed by immunoblot analysis of HEK293T cell lysates using two independent PTPσ antibodies targeting the N-terminal region (~Ig1-2) and C-terminus (last 30 residues) that can detect all PTPσ mutants, except for PTPσ-ΔIg12, which is not detected by the N-terminal antibody. (E) Rescue of TBS-LTP at SC-CA1 synapses by re-expression of WT PTPσ as well as mutant PTPσ (lacking CSPG/HSPG and Slitrk1 interactions) in the CA3 region of Emx1-Cre;Ptprsfl/fl mice (P28–32) through local injection of AAV-eIF1a-Ptprs-WT/mut. In control experiments, AAV-hSyn-eGFP was injected into the CA3 region of both Ptprsfl/fl (WT) and Emx1-Cre;Ptprsfl/fl mice. (n = 14 slices from four mice [WT-eGFP], 13, 5 [cKO-eGFP], 14, 6 [cKO-PTPσ-WT], 11, 4 [cKO-PTPσ−4A], and 11, 4 [cKO-PTPσ-Y224S], *p<0.05, **p<0.01, ns, not significant, one-way ANOVA with Dunnett’s test). (F) Full and partial rescue of TBS-LTP at SC-CA1 synapses by re-expression of mutant PTPσ lacking Ig1+2 (ΔIg12), Ig3 (ΔIg3), or FNIII1+2 (ΔFN12) domains in the CA3 region of Emx1-Cre;Ptprsfl/fl mice (P28–32) by local injection of AAV-eEF1-Ptprs. Note that expression of PTPσ-ΔIg3 induces a partial rescue. Control virus (AAV-eIF1a-eGFP) was injected into the CA3 region of both Ptprsfl/fl (control) and Emx1-Cre;Ptprsfl/fl mice. (n = 12 slices from four mice [WT-eGFP], 13, 4 [cKO-eGFP], 16, 5 [cKO-PTPσ-ΔIg12], 20, 6 [cKO-PTPσ-ΔIg3], and 13, 5 [cKO-PTPσ-ΔFn12], *p<0.05, **p<0.01, ns, not significant, one-way ANOVA with Dunnett’s test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) PTPσ adhesions with known postsynaptic partners based on reported complex structures and molecular modeling of the SALM5-PTPσ complex. (B) Amino acid residues involved in the interactions between PTPσ and PTPσ-binding postsynaptic adhesion molecules based on reported or modeled complex structures. Note that IL1RAPL1 and IL-1RAcP have been shown to interact with PTPδ but not PTPσ (Yamagata et al., 2015; Yoshida et al., 2012; Yoshida et al., 2011).
 
 In addition to WT PTPσ constructs, we used constructs of mutant PTPσ with extracellular mutations that abrogate trans-synaptic interactions with postsynaptic/extracellular adhesion molecules (TrkC, Slitrk1, HSPG, and CSPG) (Figure 3B,C; Figure 3—figure supplement 1). Expression levels and molecular weights of these PTPσ mutants were verified by immunoblot analysis of HEK293T cell lysates using two different PTPσ antibodies (targeting N- and C-termini) (Figure 3D).
 
@@ -94,15 +110,23 @@ In control experiments, in which control virus without PTPσ (AAV-hSyn-eGFP) was
 
 Re-expression of WT PTPσ in the CA3 region of Emx1-Cre;Ptprsfl/fl mice by local injection of AAV-eIF1a-Ptprs rescued TBS-LTP at SC-CA1 synapses, restoring it to levels comparable to those in Ptprsfl/fl (control) mice injected with control virus (AAV-hSyn-eGFP) (Figure 3E). These results suggest that acute presynaptic re-expression of PTPσ in CA3 rescues postsynaptic LTP in the CA1 region.
 
-## Extracellular regions of PTPσ are not important for postsynaptic LTP regulation
+### Extracellular regions of PTPσ are not important for postsynaptic LTP regulation
 
 We next tested whether trans-synaptic adhesions of PTPσ are important for postsynaptic LTP regulation using mutant PTPσ proteins that lack HSPG/CSPG or Slitrk1/TrkC interactions (K68A/K69A/K71A/K72A and Y224S, respectively) (see Supplementary file 1 for details) (Coles et al., 2014; Coles et al., 2011; Han et al., 2018; Um et al., 2014; Won et al., 2017). Surprisingly, re-expression of either PTPσ mutant in the CA3 region by local AAV injection rescued TBS-LTP to an extent similar to that of WT PTPσ injection (Figure 3E), suggesting that HSPG/CSPG and Slitrk1 interactions are not important for the rescue of LTP.
 
 However, these PTPσ mutants might not cover as yet unknown trans-synaptic or extracellular binding partners of PTPσ and their contribution to postsynaptic LTP regulation. We thus generated PTPσ mutants carrying small deletions of Ig1+2, Ig3, or FNIII1-2 domains (Figure 3C) (Supplementary file 1). However, all of these PTPσ mutants rescued TBS-LTP at SC-CA1 synapses in the Emx1-Cre;Ptprsfl/fl hippocampus when re-expressed in the CA3 region, although the PTPσ mutant containing an Ig3 deletion produced only partial rescue (Figure 3F). These results collectively suggest that the extracellular domains or regions of PTPσ are not important for PTPσ-dependent postsynaptic regulation of LTP.
 
-## Synaptic proteins with altered pTyr levels in the Emx1-Cre;Ptprsfl/fl cortex and hippocampus
+### Synaptic proteins with altered pTyr levels in the Emx1-Cre;Ptprsfl/fl cortex and hippocampus
 
 Presynaptic PTPσ-dependent regulation of postsynaptic LTP does not involve extracellular regions of PTPσ, suggesting that the cytoplasmic region of PTPσ is important. This region contains the D1 and D2 domains, which are known to possess tyrosine phosphatase activity and mediate interactions with cytoplasmic proteins, respectively, with the latter (D2 domain) potentially linking the D1 domain with its pTyr substrates. We thus employed a proteomic approach to perform an unbiased search of proteins with altered pTyr levels in the Emx1-Cre;Ptprsfl/fl cortex and hippocampus using anti-pTyr antibodies followed by liquid chromatography tandem mass spectrometry (LC-MS/MS) to pull down and identify pTyr proteins (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig4-v2.jpg)
+
+**Figure 4.:** (A) Diagram showing procedures for the identification of proteins with altered pTyr levels. (B) A volcano plot showing proteins with significantly up- or downregulated pTyr levels (fold change >1.5, p<0.05) in the cortex and hippocampus of Emx1-Cre;Ptprsfl/fl (P21). Samples from three WT or KO mice were pooled for each analysis. Note that a single protein can be linked to multiple dots (different pTyr motifs); conversely, the same peptide can belong to two different proteins (e.g., Erbin and LRRC7). (C) Functional analysis (DAVID GO analysis) of proteins from Emx1-Cre;Ptprsfl/fl mice with significantly altered pTyr levels. Note that synapse-related GO terms are strongly enriched. (D–F) Sunburst plots from SynGO analyses of specific pre- and postsynaptic localizations of proteins with altered pTyr levels (total, upregulated, and downregulated) from the Emx1-Cre;Ptprsfl/fl cortex and hippocampus. Note that upregulated proteins tend to be those that localize to presynaptic sites, whereas downregulated proteins tend to be those that localize to postsynaptic sites. (G) Volcano plots showing that presynaptic proteins, determined by SynGO analyses, showed mainly increased pTyr levels, whereas postsynaptic proteins showed mainly decreased pTyr levels. (H) Largely normal synaptic levels of PTPσ-related proteins in the hippocampus of Emx1-Cre;Ptprsfl/fl mice (3 weeks), as shown by immunoblot analyses of crude synaptosomes. (n = 6 mice for WT and cKO and for some, 6, five mice for WT and cKO, *p<0.05, ns, not significant, one-sample t-test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Sunburst plots from SynGO analyses of the function of proteins with altered pTyr levels (total, upregulated, and downregulated) from the Emx1-Cre;Ptprsfl/fl cortex and hippocampus. Note that proteins with upregulated pTyr proteins are strongly associated with ‘organization’ and ‘presynapse’ functions, whereas those with downregulated pTyr levels are associated with ‘organization’ and ‘postsynapse’ functions.
 
 This proteomic analysis revealed that, of 1549 proteins (3894 pTyr motifs), 57 proteins (80 pTyr motifs) showed significant changes in pTyr levels in mutant mice compared with WT mice (p<0.05; fold change >1.5), as indicated by a volcano plot (Figure 4B; Supplementary file 2). These significant changes included both upregulation (29 proteins/33 motifs) and downregulation (29 proteins/47 motifs) of pTyr levels. Among the proteins with significantly changed pTyr levels in mutant mice was LRRTM3, which showed both up and downregulation of phosphorylation at different pTyr motifs.
 
@@ -122,9 +146,17 @@ Changes in pTyr levels in the abovementioned synaptic proteins may influence the
 
 To test these possibilities, we investigated whether synaptic levels of PTPσ-related proteins are decreased by performing immunoblot analyses of crude synaptosomes from WT and Emx1-Cre;Ptprsfl/fl mice. We found no changes in the synaptic levels of D2 domain-interacting proteins (liprin-α1/2 and Caskin 1/2) or known substrates of PTPσ (N-cadherin and β-catenin) (Siu et al., 2007; Figure 4H). Moreover, there were no changes in the synaptic levels of postsynaptic scaffolding proteins (PSD-95, PSD-93, SynGAP, and Shank3) or postsynaptic binding partners of PTPσ (SALM5 and NGL-3), although there was a moderate increase in NGL-3 levels. These results suggest that deletion of PTPσ has minimal impacts on the synaptic localization of PTPσ-related proteins.
 
-## Suppressed novelty recognition in Emx1-Cre;Ptprsfl/fl mice
+### Suppressed novelty recognition in Emx1-Cre;Ptprsfl/fl mice
 
 Hippocampal NMDAR-dependent LTP and LTD have been linked to multiple types of learning and memory behaviors (Bliss et al., 2003; Malenka and Bear, 2004). We thus first subjected Emx1-Cre;Ptprsfl/fl mice to novel object-recognition tests, in which a subject mouse is exposed to two identical objects on day 1, and one of the two objects is replaced with a new object on day 2. Unlike WT mice, Emx1-Cre;Ptprsfl/fl mice failed to recognize the novel object on day 2 (Figure 5A). The increase in baseline object exploration (~2 folds) in the mutant mice, partly attributable to the increased locomotion and object exploration (~20% and~30%, respectively, n = 16 mice), is less likely to affect the relative exploration of familiar and novel objects.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig5-v2.jpg)
+
+**Figure 5.:** (A) Impaired novel-object recognition in Emx1-Cre;Ptprsfl/fl mice (2–3 months). (n = 16 mice for WT and cKO, *p<0.05, ns, not significant, Student’s t-test). (B) Normal social approach, but suppressed social-novelty recognition, in Emx1-Cre;Ptprsfl/fl mice (2–3 months) in the three-chamber test. S1, first/initial social stranger; O, object; S2, second/new social stranger. (n = 19 [WT] and 15 [cKO], **p<0.01, ***p<0.001, ns, not significant, RM two-way ANOVA with Sidak’s test). (C) Normal social recognition and habituation, but suppressed social-novelty recognition, in Emx1-Cre;Ptprsfl/fl mice (2–3 months) in a modified three-chamber test, in which the subject mouse was exposed to the initial stranger mouse for four consecutive days and introduced to a new stranger mouse on day 5. (D) Suppressed reward-arm recognition in the reversal, but not initial, phase of the Y-maze in Emx1-Cre;Ptprsfl/fl mice (2–3 months). (n = 21 [WT] and 22 mice [cKO] for initial session, n = 17, 19 for reversal session, *p<0.05, ns, not significant, RM two-way ANOVA [initial/reversal] and Mann-Whitney test [test on day 2]). (E) Impaired learning and memory in the reversal, but not initial, phase of the Morris water maze in Emx1-Cre;Ptprsfl/fl mice (3–4 months). (n = 19 [WT] and 18 [cKO], *p<0.05, ***p<0.001, ns, not significant, RM two-way ANOVA with Sidak’s test [latency to escape], Student’s t-test [platform visit number] and Mann-Whitney test [platform visit latency]).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Moderately decreased locomotor activity in Emx1-Cre;Ptprsfl/fl mice (2 months) in Laboras cages, representing a familiar environment, as indicated by distance moved. (n = 10 mice [WT] and 15 mice [cKO], *p<0.05, **p<0.01, RM two-way ANOVA with Sidak’s test). (B) Normal motor coordination and learning in Emx1-Cre;Ptprsfl/fl mice (2 months) in the rota-rod test. (n = 12 mice [WT] and 13 [cKO], ns, not significant, RM two-way ANOVA). (C) Moderately increased locomotor activity in Emx1-Cre;Ptprsfl/fl mice (2 months) in the open-field test (a novel environment), as indicated by distance moved. Note that the time spent in the center region of the open-field arena is moderately increased, as supported by the genotype difference, although not by the total center time, suggesting modereatley increased anxiolytic-like behavior. (n = 23 [WT] and 23 [cKO], *p<0.05, **p<0.01, ns, not significant, RM two-way ANOVA with Sidak’s test [distance moved, center time], Student’s t-test [total distance moved, total time spent in center]). (D) Normal anxiety-like behaviors in Emx1-Cre;Ptprsfl/fl mice (2 months) in the light-dark chamber test. (n = 17 [WT] and 19 [cKO], ns, not significant, Mann-Whitney test). (E) Anxiolytic-like behaviors in Emx1-Cre;Ptprsfl/fl mice (2 months) in the elevated plus-maze, as supported by decreased close-arm time and increased open-arm time. (n = 16 [WT] and 16 [cKO], *p<0.05, **p<0.01, ns, not significant, Student’s t-test, Mann-Whitney test [time in open arms]). (F) Normal self-grooming and rearing in Emx1-Cre;Ptprsfl/fl mice (2 months) in home cages. (n = 15 [WT] and 14 [cKO], in rearing, 15, 16 mice for WT, cKO, ns, not significant, Student’s t-test). (G) Normal prepulse inhibition in Emx1-Cre;Ptprsfl/fl mice (3 months). (n = 9 [WT] and 13 [cKO], ns, not significant, two-way ANOVA).
 
 To test if this lack of novel-object preference is specific for an object but not for a novel mouse, we next subjected mice to a three-chamber test, designed to test for social approach and social-novelty recognition (Silverman et al., 2010). Emx1-Cre;Ptprsfl/fl mice showed normal social approach, as indicated by the preference for a social target (stranger mouse) over an object, but failed to show normal social novelty preference, similarly exploring new and old stranger mice (Figure 5B). These results suggest that Emx1-Cre;Ptprsfl/fl mice fail to recognize both a novel object and a novel mouse.
 
@@ -134,7 +166,7 @@ In the Y-maze test, where the reward arm on day one was switched to another arm 
 
 These results indicate that Emx1-Cre;Ptprsfl/fl mice display decreases in the ability to recognize a novel object (novel-object recognition test), a novel social target (three-chamber test), a novel reward-arm location (Y-maze test) and a novel platform location (Morris water maze), collectively suggesting that the mutant mice have suppressed novelty recognition.
 
-## Presynaptic PTPσ-dependent regulation of postsynaptic NMDARs is important for novelty recognition
+### Presynaptic PTPσ-dependent regulation of postsynaptic NMDARs is important for novelty recognition
 
 The impaired novel recognition in Emx1-Cre;Ptprsfl/fl mice may involve PTPσ-dependent regulation of postsynaptic LTP. To assess this possibility, we first tested whether pharmacological activation of NMDARs could rescue the impaired social-novelty recognition in Emx1-Cre;Ptprsfl/fl mice.
 
@@ -142,7 +174,7 @@ Acute treatment with the NMDAR agonist D-cycloserine (20 mg/kg; i.p.) rescued so
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/54224/elife-54224-fig6-v2.jpg)
 
-**Figure 6.:** Emx1-Cre;Ptprs mice.fl/fl(A) D-cycloserine (DCS) treatment (20 mg/kg; i.p.) rescues social-novelty recognition in Emx1-Cre;Ptprs mice (2–3 months) without affecting social approach. Note that DCS has no effect on social approach or novelty recognition in WT mice. (n = 13, 14, 14, 14 mice for WT-V/vehicle, WT-D/D-cycloserine, cKO-V, cKO-D, *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (fl/flB and C) Impaired social-novelty recognition in Ptprs mice injected with AAV1-hSyn-Cre-eGFP in the CA3 region, but not the CA1 region, in the three-chamber test compared with control fl/flPtprs mice injected with AAV1-hSyn-ΔCre-eGFP in CA3 or CA1 regions. Note that social approach (left panel) is unaffected by either CA3- or CA1-specific PTPσ KO. EGFP fluorescence indicates virus injection sites in CA3/CA1 regions. (n = 13, 11, 15, 14 mice for CA3-EGFP, CA3-Cre, CA1-EGFP and CA1-Cre, respectively, *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (fl/flD) Impaired recognition of novel, but not initial, reward-arm location in Ptprs mice injected with AAV1-hSyn-Cre-eGFP in the CA3, but not CA1, region in the Y-maze test (3 months), compared with control fl/flPtprs mice injected with AAV1-hSyn-ΔCre-eGFP. (n = 9, 7, 16, 17 mice for CA3-EGFP, CA3-Cre, CA1-EGFP and CA1-Cre, respectively, during learning phase, n = 6, 3, 13, 11 mice for reversal phase, two-way ANOVA with Sidak’s test) (fl/flE and F) Knockdown of the GluN1 subunit of NMDARs in the CA1 region of WT mice (C57/BL6J) by injection of AAV(php.eB)-pU6-shGluN1 suppresses social-novelty recognition but not social approach, a finding that contrasts with the normal social-novelty recognition observed in control WT mice injected with AAV(php.eB)-pU6-shCtrl (scrambled control). (n = 13, 11 mice for shCtrl and shGluN1, respectively, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (G) GluN1 knockdown in the CA1 region of WT mice (C57/BL6J) by injection of AAV(php.eB)-pU6-shGluN1 suppresses novel, but not initial, reward-arm recognition compared with control WT mice injected with AAV(php.eB)-pU6-shCtrl. (n = 17 [shGluN1-initial], 19 [shCtrl-initial], 15 [shGluN1-reversal], 15 [shCtrl-reversal], **p<0.01, ***p<0.001, ns, not significant, RM two-way ANOVA with Sidak’s test). (H) Validation of AAV(php.eB)-pU6-shGluN1/shCtrl viruses by immunoblot analysis of the GluN1 protein from the injected hippocampus. GluN1 levels were normalized to α-tubulin levels. (n = 3, three mice for ShCtrl and shGluN1, *p<0.05, one sample t-test).
+**Figure 6.:** (A) D-cycloserine (DCS) treatment (20 mg/kg; i.p.) rescues social-novelty recognition in Emx1-Cre;Ptprsfl/fl mice (2–3 months) without affecting social approach. Note that DCS has no effect on social approach or novelty recognition in WT mice. (n = 13, 14, 14, 14 mice for WT-V/vehicle, WT-D/D-cycloserine, cKO-V, cKO-D, *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (B and C) Impaired social-novelty recognition in Ptprsfl/fl mice injected with AAV1-hSyn-Cre-eGFP in the CA3 region, but not the CA1 region, in the three-chamber test compared with control Ptprsfl/fl mice injected with AAV1-hSyn-ΔCre-eGFP in CA3 or CA1 regions. Note that social approach (left panel) is unaffected by either CA3- or CA1-specific PTPσ KO. EGFP fluorescence indicates virus injection sites in CA3/CA1 regions. (n = 13, 11, 15, 14 mice for CA3-EGFP, CA3-Cre, CA1-EGFP and CA1-Cre, respectively, *p<0.05, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (D) Impaired recognition of novel, but not initial, reward-arm location in Ptprsfl/fl mice injected with AAV1-hSyn-Cre-eGFP in the CA3, but not CA1, region in the Y-maze test (3 months), compared with control Ptprsfl/fl mice injected with AAV1-hSyn-ΔCre-eGFP. (n = 9, 7, 16, 17 mice for CA3-EGFP, CA3-Cre, CA1-EGFP and CA1-Cre, respectively, during learning phase, n = 6, 3, 13, 11 mice for reversal phase, two-way ANOVA with Sidak’s test) (E and F) Knockdown of the GluN1 subunit of NMDARs in the CA1 region of WT mice (C57/BL6J) by injection of AAV(php.eB)-pU6-shGluN1 suppresses social-novelty recognition but not social approach, a finding that contrasts with the normal social-novelty recognition observed in control WT mice injected with AAV(php.eB)-pU6-shCtrl (scrambled control). (n = 13, 11 mice for shCtrl and shGluN1, respectively, **p<0.01, ***p<0.001, ns, not significant, two-way ANOVA with Sidak’s test). (G) GluN1 knockdown in the CA1 region of WT mice (C57/BL6J) by injection of AAV(php.eB)-pU6-shGluN1 suppresses novel, but not initial, reward-arm recognition compared with control WT mice injected with AAV(php.eB)-pU6-shCtrl. (n = 17 [shGluN1-initial], 19 [shCtrl-initial], 15 [shGluN1-reversal], 15 [shCtrl-reversal], **p<0.01, ***p<0.001, ns, not significant, RM two-way ANOVA with Sidak’s test). (H) Validation of AAV(php.eB)-pU6-shGluN1/shCtrl viruses by immunoblot analysis of the GluN1 protein from the injected hippocampus. GluN1 levels were normalized to α-tubulin levels. (n = 3, three mice for ShCtrl and shGluN1, *p<0.05, one sample t-test).
 
 We next tested whether presynaptic, but not postsynaptic, deletion of PTPσ affects novelty recognition by injecting AAV1-hSyn-Cre-eGFP or control AAV1-hSyn-ΔCre-eGFP into the CA3 or CA1 region of Ptprsfl/fl mice (8–11 weeks). Cre-induced PTPσ deletion in the CA3 region resulted in impaired social-novelty recognition in Ptprsfl/fl mice in the three-chamber test compared with control Ptprsfl/fl mice expressing EGFP alone, without affecting social approach (Figure 6B,C). In contrast, Cre-induced PTPσ deletion in the CA1 region had no effect on social-novelty recognition or social approach.
 
@@ -174,11 +206,189 @@ In conclusion, our results suggest that presynaptic PTPσ regulates postsynaptic
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Ptprs</td>
+      <td></td>
+      <td>19280 in ncbi</td>
+      <td>For iteration of next studies.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; C57BL/6J)</td>
+      <td>Emx1-Cre;Ptprsfl/fl;Ptprs–l– mice</td>
+      <td>ES-Cell from KOMP: Ptrpstm1a(KOMP)Mbp</td>
+      <td>RRID: MGI_5797751</td>
+      <td>gKO/cKO mice used in this study</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Emx1-Cre</td>
+      <td>JAX</td>
+      <td>#005628</td>
+      <td>Cre-expressing line used in this study</td>
+    </tr>
+    <tr>
+      <td>Transfected virus (Mus musculus)</td>
+      <td>pAAV1-hSyn-Cre-eGFP</td>
+      <td>Addgene</td>
+      <td>#105540</td>
+      <td>Experimental virus for Cre injection (Figure 2 and Figure 6)</td>
+    </tr>
+    <tr>
+      <td>Transfected virus (Mus musculus)</td>
+      <td>pAAV1-hSyn-ΔCre-eGFP</td>
+      <td>Addgene</td>
+      <td>#105539</td>
+      <td>Control virus for Cre injection (Figure 2 and Figure 6)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pAAV-nEFCas9</td>
+      <td>Addgene</td>
+      <td>#87115</td>
+      <td>Vector for WT/Mut Ptprs expression (Figure 3).</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>Ptprs WT gene</td>
+      <td>Li et al., 2015</td>
+      <td>Ptprs(meA-/meB-)</td>
+      <td>Detailed sequence is added in Supplementary file 1. This used for mutagenesis and WT Ptprs rescue injection</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pAV-pU6-shGluN1#1-GFP</td>
+      <td>Vigene</td>
+      <td>#SH836303</td>
+      <td>Experimental virus for Cre injection (Figure 6)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pAV-pU6-shscrambled-GFP</td>
+      <td>Vigene</td>
+      <td>#SH836303</td>
+      <td>Control virus for Cre injection (Figure 6)</td>
+    </tr>
+    <tr>
+      <td>Comparative phosphor-proteomic analysis</td>
+      <td>PhosphoSCAN service</td>
+      <td>Cell Signalling Technology</td>
+      <td>Phospho-tyrosine(pY-1000)</td>
+      <td>Used in Figure 4</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PTPσ (Guinea Pig polyclonal)</td>
+      <td>This paper</td>
+      <td>#2135 for N-term epitope, #2138 for C-term epitope</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PSD93/SynGAP1/NGL3/SALM5/GluA1); (Rabbit,mouse polyclonal)</td>
+      <td>Home-made; used in previous studies from our group.</td>
+      <td>#1634(PSD93);#1682(SynGAP1);#2020(NGL3)#1943(SALM50;#1193(GluA1)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tubulin (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>12G10</td>
+      <td>WB(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GluN1(mouse))/GluN2A(rabbit)) monoclonal</td>
+      <td>Millipore</td>
+      <td>Mab363(GluN1);07-632(GluN2A)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GluN2B(mouse)/PSD95(mouse) monoclonal</td>
+      <td>NeuromAb</td>
+      <td>73-101(GluN2B);75-028(PSD95)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Shank3(Rabbit;poly)/Synaptophysin(Mouse;mono)</td>
+      <td>Santa Cruz</td>
+      <td>H160(Shank3);D4(Synaptophysin)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-linprinα3/caskin1 (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>169 102(Liprin α3); 185 003(caskin1)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-liprinα2(Rabbit)/Trio(Mouse) polyclonal</td>
+      <td>Abcam</td>
+      <td>Ab155411(liprinα2);194365(Trio)</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-βcatenin(Mouse monoclonal)</td>
+      <td>BD Science</td>
+      <td>610154</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-N-Cadherin (Mouse monoclonal)</td>
+      <td>Thermo</td>
+      <td>33–3900</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-TrkC (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>3376</td>
+      <td>WB(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7.0</td>
+      <td>GraphPad</td>
+      <td>Ver 7.0</td>
+      <td>Used for all statistics used in the current study.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID analysis</td>
+      <td>David.ncifcrf.gov</td>
+      <td>DAVID analysis</td>
+      <td>Used for statistics in proteomics</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 We received ES cells containing a Ptprs-targeted allele from KOMP (RRID:MGI:5797751; Ptrpstm1a(KOMP)Mbp), and transgenic mice were generated through ES injection. We backcrossed it with C57BL/6J strains for more than five generations before we conduct experiments. After mating with Protamine-Flp, the resulting Ptprsfl/+ mice were crossed with Emx1-Cre mice (JAX #005628) to produce Emx1-Cre;Ptprsfl/fl mice. For Ptprs global knockout mice (Ptprs gKO mice), we treated fertilized eggs at the two-cell embryo stage with purified HTNC, a cell-permeable Cre recombinase (Histidine-TAT-Nuclear localization-Cre fusion peptide (Peitz et al., 2002), in a media at the final concentration of 0.3 μM for 30–40 mins. Emx1-Cre;Ptprsfl/fl mice were genotyped by polymerase chain reaction (PCR) using the following primer sets: Ptprs allele, forward, 5’-CTCCTTCCTCTCCAAACGG-3', reverse, 5’-TGAGCGTCTGAATGGAGCAC-3', Cre allele, forward, 5’-GATCTCCGGTATTGAAACTCCAGC-3’, reverse, 5’-GCTAAACATGCTTCATCGTCGG-3’. Appropriate expression patterns of Emx1-Cre was confirmed by crossing with ROSA-tdTomato mice (JAX #7909). All mice were housed and bred at the mouse facility of Korea Advanced Institute of Science and Technology (KAIST) and maintained according to the Animal Research Requirements of KAIST. All animals were fed ad libitum and housed under 12 hr light/dark cycles (light phase during 1 am to one pm). We crossed Ptprsfl/fl male mice and Emx1-Cre;Ptprsfl/fl female mice to produce littermate pairs of wild-type (WT) and KO mice. Mice were weaned at the age of postnatal day 21, and mixed-genotype littermates in the same gender were housed together until experiments. All procedures were approved by the Committee of Animal Research at KAIST (KA2016-33).
 
-## Electrophysiology
+### Electrophysiology
 
 For electrophysiological experiments for the hippocampus, sagittal hippocampal slices (400 μm thickness for extracellular recordings and 300 μm for intracellular recordings) from Emx1-Cre;Ptprsfl/fl mice, or virus-injected mice, and their appropriate controls (see each figures) were prepared using a vibratome (Leica VT1200) in ice-cold dissection buffer containing (in mM) 212 sucrose, 25 NaHCO3, 5 KCl, 1.25 NaH2PO4, 0.5 CaCl2, 3.5 MgSO4, 10 D-glucose, 1.25 L-ascorbic acid and 2 Na-pyruvate bubbled with 95% O2/5% CO2. For virus-injected samples, slices with fluorescence signals derived from co-injected AAV1-hSyn-eGFP were used. The slices were recovered at 32°C for 1 hr in normal ACSF (in mM: 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 10 glucose, 2.5 CaCl2 and 1.3 MgCl2 oxygenated with 95% O2/5% CO2). For electrophysiological recordings, a single slice was moved to and maintained in a submerged-type chamber at 28°C, continuously perfused with ACSF (2 ml/min) saturated with 95% O2/5% CO2. Stimulation and recording pipettes were pulled from borosilicate glass capillaries (Harvard Apparatus) using a micropipette electrode puller (Narishege).
 
@@ -188,11 +398,11 @@ Whole-cell patch-clamp recordings of hippocampal CA1 pyramidal neurons were made
 
 Somatic whole-cell recordings of mEPSCs were obtained in hippocampal CA1 pyramidal neurons at a holding potential of −70 mV. TTX (1 μM) and picrotoxin (100 μM) were added to ACSF to inhibit spontaneous action potential-mediated synaptic currents and IPSCs, respectively. For mIPSCs in hippocampal CA1 pyramidal neurons, recording pipettes (2.5–3.5 MΩ) were filled with an internal solution containing (in mM): 120 CsCl, 10 TEA-Cl, 8 NaCl, 10 HEPES, 5 QX-314-Cl, 4 Mg-ATP, 0.3 Na-GTP, and 10 EGTA, with pH 7.35, 280 mOsm. TTX (1 μM), NBQX (10 μM) and D-AP5 (50 μM) were added to ACSF to inhibit spontaneous action potential-mediated synaptic currents, AMPAR-mediated currents, and NMDAR-mediated currents, respectively. Data were acquired using Clampex 10.2 (Molecular Devices) and analyzed using Clampfit 10 (Molecular Devices). Drugs were purchased from Abcam (TTX), Tocris (NBQX, D-AP5) and Sigma (picrotoxin, DCS).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 P2 (crude synaptosomes) and PSD I (postsynaptic density I) samples were prepared, as previously described (Cho et al., 1992; Huttner et al., 1983). CA1 and CA3 regions of the hippocampus were dissected from sagittal slices (300 μm sections). Samples from six slices were pooled and centrifuged at 3000 x g for 1 min, and the pellet was resuspended in homogenization buffer and boiled for 15 min. Antibody used in this papers are followings: PTPσ (home-made, #2135(N-term), #2138(C-term)), PSD-93 (#1634)/SynGAP1 (#1682)/NGL-3 (#2020)/SALM5 (#1943)/GluA1(#1193) (home-made), tubulin (12G10, DSHB), GluN1 (mab363)/GluN2A (07–632) (Millipore), GluN2B (73-101)/PSD-95 (75-028) (neuromab), Shank3 (H160)/Synaptophysin (D4) (Santa Cruz), liprin-α3 (169 102)/caskin 1 (185 003) (Synaptic Systems), liprin-α2 (ab155411)/Trio (194365) (abcam), β-catenin (610154, BD Science)/N cadherin (33–3900, Thermo), TrkC (3376, Cell Signaling), and β-actin (a5316, Sigma).
 
-## Virus preparation and injection
+### Virus preparation and injection
 
 AAV1-hSyn-Cre-eGFP (pENN.AAV.hSyn.HI.eGFP-Cre.WPRE.SV40) and AAV1-hSyn-ΔCre-eGFP (pENN.AAV.hSyn.eGFP.WPRE.bGH) were a gift from James M. Wilson (Addgene #105539-AAV1, #105540-AAV1). WT mouse Ptprs cDNA (Li et al., 2015) was subcloned into pAAV-nEFCas9. Point and domain-deleting mutations were introduced to the Ptprs cDNA using overlapping PCR (see Supplementary file 1 for details). Plasmids containing the shRNA of GluN1 and its scrambled control were purchased (pAV-pU6-shGluN1-GFP; Vigene SH836303, sh#2; 5’-AAGAGAGTGCTGATGTCTTCCAA-3’).
 
@@ -202,54 +412,54 @@ For virus injection for Figure 6, mice were anesthetized in 1.2% tribromoethanol
 
 qRT-PCR cDNAs were synthesized using TOPscript Cdna synthesis kit (Enzynomics, EZ005). qPCR was performed using SsoAdvanced SYBR Green Supermix (BIORAD, 170-8882AP) and CFX96 Real-Time system. The following primer sets were used in PCR; GAPDH allele, forward, 5’-GTCAGTGGTGGACCTGACCT-3', reverse, 5’-AGGGGAGATTCAGTGTGGTG-3'; GluN1 allele, forward, 5’-AGAGCCCGACCCTAAAAAGAA-3’, reverse, 5’-CCCTCCTCCCTCTCAATAGC-3’.
 
-## Brain imaging
+### Brain imaging
 
 To examine the gross morphology of the brain, coronal sections (50 μm) of mouse brains were prepared using a vibratome (Leica) and mounted on DAPI-containing Vectashield (Vector Laboratory). For X-gal staining, coronal sections (100 μm) of mouse brains were prepared using a vibratome (Leica) followed by X-gal staining for 30 min (20 mg/mL X-gal; in 2 mM MgCl2, 5 mM K4Fe(CN)6.3H2O(Sigma #P-8131), 5 mM K3Fe(CN)6, 0.01% DOC, 0.02% NP-40 in 1 x PBS). For immunofluorescence imaging of brain sections after electrophysiological and behavioral experiments, coronal brain sections (50 μm) were prepared and used for image acquisition without staining using a confocal microscope (LSM-780, Zeiss).
 
-## Phosphoscan proteomic analysis
+### Phosphoscan proteomic analysis
 
 Changes in phospho-tyrosine levels in proteins from Emx1-Cre;Ptprsfl/fl mice were determined using PhosphoScan service (Cell Signaling Technology). Briefly, mouse brain samples containing the cortex and hippocampus were dissected in ice-cold dissection buffer (see the Materials and methods for electrophysiology) with protease/phosphatase inhibitor cocktails. Brain samples from three different mice were pooled to make n number of one. Brain samples were snap-frozen in liquid nitrogen were protease-digested and fractionated by solid-phase extraction. The fractionated peptides were incubated with designated immobilized PTM (post-translational modification)-motif antibodies, and the peptides containing the corresponding PTM-sequences were eluted and analyzed using LC-MS/MS. Mass spectra were assigned to peptide sequences using Socerer program. Finally, the peptide sequence assignment was linked to parent ion peak intensities to measure approximate fold-changes in validated peptides between paired samples.
 
-## Novel object recognition test
+### Novel object recognition test
 
 Novel object recognition test was performed in the open-field box. On day 1, mice were allowed to explore a novel object (white cylinder) On day 2, mice explored two identical objects (blue cylinder or silver-colored box) for 20 min. On day 3, mice were placed in the same box where one of the two objects was replaced with a new object (blue cylinder and silver-colored box). Sniffing time for each object was measured. Object exploration was defined by the mouse’s nose being oriented toward the object and came within 2 cm of the target as measured by EthoVision XT12 program (Noldus).
 
-## Three-chamber test
+### Three-chamber test
 
 The three-chambered apparatus, designed to measure social approach and social novelty recognition (Silverman et al., 2010), had the dimensions of 40 cm W x 20 cm H x 26 cm D with a center chamber of 12 cm W and side chambers of 14 cm W. In the first session, the mouse could freely move around the whole three-chambered apparatus with two small containers in the left or right corner for 10 min (Session #1). The mouse was then gently guided to the center chamber while a novel ‘Object’ and a wild-type stranger mouse ‘Stranger 1 (129Sv strain)’ were placed in the two plastic containers. The subject mouse was then allowed to freely explore all three chambers for 10 min (Session #2). In the third session, the subject mouse was again gently guided to the center chamber while the ‘Object’ was replaced with a wild-type ‘Stranger 2’ mouse. The subject mouse again freely explored all three chambers for 10 min (Session #3). Object/Stranger exploration was defined by the mouse’s nose being oriented toward the target and came within 2 cm of it as measured by EthoVision XT 12 program (Noldus). Three-chamber tests over 5-consecutive days were performed as described previously (Bariselli et al., 2018). For this experiment, we used mice that did not experience other behavioral tests to minimize potential confounds. The same stranger was exposed to the subject mouse during the first four days. Minor differences in this test, compared with the above mentioned three-chamber test, were the lack of session #3, the use of empty space instead of an object, and 5-min-long session #1 during days 2–5 (10 min for session #1 on day 1).
 
-## Water-based Y-maze
+### Water-based Y-maze
 
 The Y-maze test was performed as described previously (Trinh et al., 2012). The Y-maze apparatus was composed of three identical arms (35cm-long, 10cm-wide, 25 cm high). The Y-maze apparatus was placed at the center of a water tank (120 cm diameter) and the platform was placed in one of the three arms and hidden 2 cm under the water (20–22°C) made invisible by white paint. On day 1, a subject mouse was placed in an arm without the hidden platform and allowed to freely swim until it finds the platform. Mice that cannot find the platform in 2 min were guided to the platform. Each session consisted of 5 swim trials, and four sessions were performed on each day. On day 2, a subject mouse was tested for the memory of the platform location for one session. Only the mice that were successful in identifying the correct arm over 80% of the time were used for the following experiments, where the platform location was changed to the opposite arm that was empty on the previous day. The day two experiments consisted of four sessions (five swims per session).
 
-## Morris water maze
+### Morris water maze
 
 Mice were trained to find the hidden platform (10 cm diameter) in a white plastic tank (120 cm diameter). Mice were given three trials per day with an inter-trial interval of 30 min. Experiments for the learning phase of the water maze were performed for seven consecutive days, followed by the probe test on day eight where mice were given 1 min to find the removed platform. For reversal training (days 9–13), the location of the platform was switched to the opposite position from the previously trained location, and mice were allowed to re-learn the new position of the platform. Target quadrant occupancy and the exact number of crossings over the former platform location during the probe test were measured using EthoVision XT12 program (Noldus).
 
-## Laboras test
+### Laboras test
 
 For long-term measurements of mouse movements, we used the LABORAS system (Metris) (Quinn et al., 2006), designed to detect and analyze vibrations delivered from a cage with a mouse to a carbon-fiber vibration-sensitive plate placed underneath the cage. Each mouse was placed in the LABORAS cage without habituation, and its movements were recorded for 72 consecutive hours. The data during the last 48 hr, a period after full habituation to the environment, were analyzed by the software.
 
-## Open-field test
+### Open-field test
 
 Mice were placed in an open field box (40×40×40 cm) and recorded with a video camera for 60 min. The center zone lines were 10 cm apart from the edge. The testing room was illuminated at ~50 lux or 0 lux. Mice movements were analyzed using EthoVision XT12 program (Noldus).
 
-## Rotarod test
+### Rotarod test
 
 Mice were placed on the rotating rod for 10 s, followed by the start of rod rotation. The rotating speed of rod was gradually increased from 4 to 40 rpm over 5 min. The assay was performed for five consecutive days, while measuring the latencies of mice falling from the rod or showing 360-degree rotation on the rod.
 
-## Elevated plus-maze test
+### Elevated plus-maze test
 
 The elevated plus-maze consisted of two open arms, two closed arms, and a center zone, and was elevated to a height of 50 cm above the floor. Mice were placed in the center zone and allowed to explore the space for 8 min. The data were analyzed using EthoVision XT12 program (Noldus).
 
-## Light-dark test
+### Light-dark test
 
 The light-dark apparatus consisted of light (~200 lux) and dark (~0 lux) chambers adhered to each other. The size of the light chamber was 20×30×20 cm, and that of the dark chamber was 20×13×20 cm. An entrance enabled mice to freely move across the light and dark chambers. Mice were introduced to the center of the light chamber and allowed to explore the apparatus freely for 5 min. The time spent in dark and light chambers and the number of transitions were measured using EthoVision XT12 program (Noldus).
 
-## Prepulse inhibition
+### Prepulse inhibition
 
 A subject mouse was placed in a startle chamber (SR-LAB). For acclimation, a background noise of 65 dB pulse was given for 5 min. After acclimation, 57 testing sound pulses with varying inter-trial intervals (7–23 s) were given. The testing sound pulses consist of 4 pulses (4 × 120 ms, 120 dB) in the beginning and end stage of the test, and seven pulses (120 ms, 120 dB each) paired with prepulses (20 ms 100 ms prior to) at 70, 75, 80, 85 and 90 dB (total 35 paired pulses).
 
-## Statistics
+### Statistics
 
 For statistical comparison of two samples (e.g., WT vs. cKO), Student’s t-test or Mann-Whitney test was used. The normality of data distributions was tested using the D’Agostino and Pearson normality test or Shapiro-Wilk normality test. Mann-Whitney tests were used for any column in either of the two tests in which the p-value was less than 0.05. For immunoblot and qRT-PCR results, a one-sample t-test was used. For results with one independent variable [e.g., cKO-eGFP vs. cKO-Ptprs(4A) vs. cKO-Ptprs(Y224S)], one-way analysis of variance (ANOVA) with Dunnett’s multiple comparison test was used. For results with two independent variables (e.g., WT-Veh vs. WT-DCS vs. cKO-Veh vs. cKO-DCS), two-way ANOVA with Sidaks’ multiple comparison test was used. For additional information on gender and number of mice/samples, detailed test information and statistical results, see Supplementary file 3. GraphPad Prism seven was used for all statistical analyses, except for the DAVID analysis (http://david.ncifcrf.gov).

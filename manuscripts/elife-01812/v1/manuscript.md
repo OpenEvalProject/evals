@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.01812.001 Centrioles are cylindrical cell organelles with a ninefold symmetric peripheral microtubule array that is essential to template cilia and flagella. They are built around a central cartwheel assembly that is organized through homo-oligomerization of the centriolar protein SAS-6, but whether SAS-6 self-assembly can dictate cartwheel and thereby centriole symmetry is unclear. Here we show that Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel and provide the X-ray structure of this assembly at a resolution of 3.5 Å. We furthermore demonstrate that oligomerization of Leishmania SAS-6 can be inhibited by a small molecule in vitro and provide indications for its binding site. Our results firmly establish that SAS-6 can impose cartwheel symmetry on its own and indicate how this process might occur mechanistically in vivo. Importantly, our data also provide a proof-of-principle that inhibition of SAS-6 oligomerization by small molecules is feasible. DOI: http://dx.doi.org/10.7554/eLife.01812.001
+Centrioles are cylindrical cell organelles with a ninefold symmetric peripheral microtubule array that is essential to template cilia and flagella. They are built around a central cartwheel assembly that is organized through homo-oligomerization of the centriolar protein SAS-6, but whether SAS-6 self-assembly can dictate cartwheel and thereby centriole symmetry is unclear. Here we show that Leishmania major SAS-6 crystallizes as a 9-fold symmetric cartwheel and provide the X-ray structure of this assembly at a resolution of 3.5 Å. We furthermore demonstrate that oligomerization of Leishmania SAS-6 can be inhibited by a small molecule in vitro and provide indications for its binding site. Our results firmly establish that SAS-6 can impose cartwheel symmetry on its own and indicate how this process might occur mechanistically in vivo. Importantly, our data also provide a proof-of-principle that inhibition of SAS-6 oligomerization by small molecules is feasible.
 
 ## Introduction
 
@@ -30,65 +30,317 @@ As in other eukaryotes, the flagellum of the Trypanosomatids is templated from c
 
 ## Results
 
-## Leishmania major SAS-6 is highly similar to other SAS-6 homologues
+### Leishmania major SAS-6 is highly similar to other SAS-6 homologues
 
-The genomes of
+The genomes of Trypanosoma brucei, Trypanosoma cruzi, and Leishmania major have recently been sequenced (Berriman et al., 2005; El-Sayed et al., 2005; Ivens et al., 2005). BLAST searches identified the likely SAS-6 homologues in these organisms with similar domain architectures (Figure 1A, Figure 1—figure supplement 1) and sequence identities to human SAS-6 of 21.0 ± 1.4% in 459 ± 21 aligned residues. Multiple sequence alignment of their N-terminal domains (Figure 1—figure supplement 1B) shows that key residues are well conserved compared to zebrafish SAS-6, the closest homologue of human SAS-6 for which high-resolution structures are available (van Breugel et al., 2011). Different from zebrafish SAS-6, they have long N-terminal extensions (Figure 1A, Figure 1—figure supplement 1A,B) that vary in length and are poorly conserved. Since these extensions hindered our crystallization attempts, we largely removed them in the constructs used in this manuscript. The part of the extensions still present did not show electron density in our crystal structures.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-v1.jpg)
 
-**Figure 1.:** L. major SAS-6.(A) Domain overview of L. major SAS-6. Lines indicate constructs that were used in this work. (B and C) Left: ribbon presentation of the head-to-head dimers of L. major SAS-6’s N-terminal domain present in the SAS-697–274 crystal. Shown are the dimers formed between chain B and chain C (B) and chain A and symmetry-related chain A (C). α-helices (α) and β-sheets (β) are numbered sequentially. Right: detailed views of the corresponding dimerization interfaces. Interface residues are labelled and shown in sticks, dotted orange lines indicate hydrogen bonds. The two dimers show largely identical side-chain orientations in their interfaces. Note, however, that F257 (ringed in blue) in the B–C dimer inserts into a hydrophobic pocket, while in the A–A dimer Y215 is flipped into this pocket and displaces F257. To better illustrate this, a semi-transparent molecular surface of one of the subunits is also presented (grey). (D) Sedimentation-equilibrium analytical ultracentrifugation data for 400 µM L. major SAS-697–274 wild-type (blue circles) and F257E mutant (green circles) and Y215K mutant (red circles) obtained at 11300, 17000, and 21200 rpm. Data for the F257E mutant were fitted to an ideal single-species model (solid line). Analysis of multiple concentrations gave a molecular weight of 17,727 ± 219 Da, close to the expected molecular weight for the monomer of 19,640 Da. As initial fits to a similar model for the WT and Y215K data gave higher molecular weights of 27,589 ± 209 Da and 30,951 ± 595 respectively, the data were fitted to a monomer–dimer equilibrium model (solid line) giving dissociation constants, KD, of 622 ± 70 µM for the WT and 190 ± 27 µM for Y215K mutant. The plots on the right show the residuals of the fits to the data for the wild-type (blue circles) and the corresponding F257E mutant (green circles) and Y215K mutant (red circles). (E) Left: ribbon presentation of the L. major SAS-697–320 F257E coiled-coil dimer structure (chain A: red, chain B: green). Right: detailed view of the region boxed on the left. Interaction interface between N-terminal head domain and the coiled-coil stalk. Residues that make contact are labelled and are shown as sticks, dotted orange lines indicate hydrogen bonds.DOI: http://dx.doi.org/10.7554/eLife.01812.003
+**Figure 1.:** (A) Domain overview of L. major SAS-6. Lines indicate constructs that were used in this work. (B and C) Left: ribbon presentation of the head-to-head dimers of L. major SAS-6’s N-terminal domain present in the SAS-697–274 crystal. Shown are the dimers formed between chain B and chain C (B) and chain A and symmetry-related chain A (C). α-helices (α) and β-sheets (β) are numbered sequentially. Right: detailed views of the corresponding dimerization interfaces. Interface residues are labelled and shown in sticks, dotted orange lines indicate hydrogen bonds. The two dimers show largely identical side-chain orientations in their interfaces. Note, however, that F257 (ringed in blue) in the B–C dimer inserts into a hydrophobic pocket, while in the A–A dimer Y215 is flipped into this pocket and displaces F257. To better illustrate this, a semi-transparent molecular surface of one of the subunits is also presented (grey). (D) Sedimentation-equilibrium analytical ultracentrifugation data for 400 µM L. major SAS-697–274 wild-type (blue circles) and F257E mutant (green circles) and Y215K mutant (red circles) obtained at 11300, 17000, and 21200 rpm. Data for the F257E mutant were fitted to an ideal single-species model (solid line). Analysis of multiple concentrations gave a molecular weight of 17,727 ± 219 Da, close to the expected molecular weight for the monomer of 19,640 Da. As initial fits to a similar model for the WT and Y215K data gave higher molecular weights of 27,589 ± 209 Da and 30,951 ± 595 respectively, the data were fitted to a monomer–dimer equilibrium model (solid line) giving dissociation constants, KD, of 622 ± 70 µM for the WT and 190 ± 27 µM for Y215K mutant. The plots on the right show the residuals of the fits to the data for the wild-type (blue circles) and the corresponding F257E mutant (green circles) and Y215K mutant (red circles). (E) Left: ribbon presentation of the L. major SAS-697–320 F257E coiled-coil dimer structure (chain A: red, chain B: green). Right: detailed view of the region boxed on the left. Interaction interface between N-terminal head domain and the coiled-coil stalk. Residues that make contact are labelled and are shown as sticks, dotted orange lines indicate hydrogen bonds.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** L. major SAS-6 and Danio rerio SAS-6 are highly similar.(A) Schematic representation of Leishmania major and Danio rerio SAS-6. Both proteins show a similar overall architecture with an N-terminal head domain and a coiled-coil domain of comparable lengths. The bar indicates the aligned SAS-6 region shown in (B). (B) Multiple sequence alignment of the N-terminal head domains of SAS-6 from Trypanosoma brucei, Trypanosoma cruzi, Leishmania major, and Danio rerio. The numbering refers to L. major SAS-6. The alignment is colored according to the Clustal coloring scheme. Red stars indicate key residues of the interaction interface of the homo-dimer of this domain. (C) Overlay of the structures of L. major SAS-697–274 (green) and Danio rerio N-SAS-61–156 (blue). Face-on view onto the hydrophobic pocket into which a highly conserved phenylalanine (F257 in L. major, F131 in D. rerio SAS-6) is inserted in the homo-dimerized form of this domain. Residues of this pocket are labelled and are shown as sticks. (D) Detailed view of the interaction interface between N-terminal head domain and the coiled-coil stalk of SAS-6. Overlay of this interface from L. major SAS-697–320 F257E (green) with that from Danio rerio N-SAS-61–179 F131D (blue). Residues that make contact are labelled and are shown as sticks, dotted yellow lines indicate hydrogen bonds.DOI: http://dx.doi.org/10.7554/eLife.01812.004
+**Figure 1—figure supplement 1.:** (A) Schematic representation of Leishmania major and Danio rerio SAS-6. Both proteins show a similar overall architecture with an N-terminal head domain and a coiled-coil domain of comparable lengths. The bar indicates the aligned SAS-6 region shown in (B). (B) Multiple sequence alignment of the N-terminal head domains of SAS-6 from Trypanosoma brucei, Trypanosoma cruzi, Leishmania major, and Danio rerio. The numbering refers to L. major SAS-6. The alignment is colored according to the Clustal coloring scheme. Red stars indicate key residues of the interaction interface of the homo-dimer of this domain. (C) Overlay of the structures of L. major SAS-697–274 (green) and Danio rerio N-SAS-61–156 (blue). Face-on view onto the hydrophobic pocket into which a highly conserved phenylalanine (F257 in L. major, F131 in D. rerio SAS-6) is inserted in the homo-dimerized form of this domain. Residues of this pocket are labelled and are shown as sticks. (D) Detailed view of the interaction interface between N-terminal head domain and the coiled-coil stalk of SAS-6. Overlay of this interface from L. major SAS-697–320 F257E (green) with that from Danio rerio N-SAS-61–179 F131D (blue). Residues that make contact are labelled and are shown as sticks, dotted yellow lines indicate hydrogen bonds.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Ribbon presentation of the SAS-6 octamer present in the L. major SAS-697–320 F257E crystal. The ASU of the crystal contained four SAS-6 monomers that are labelled from A–D. The arrow specifies the view direction shown as a close-up in (B). (B) Left: ribbon presentation of the B–C head-to-head homo-dimer in the L. major SAS-697–320 F257E crystal. Right: corresponding detailed view of the homo-dimer interface. The other head-to-head dimers in the crystal showed similar arrangements to the ones presented here. Interface residues are labelled and shown in sticks. Dotted yellow lines indicate hydrogen bonds. Highlighted in lemon and ringed in blue is the mutated E257 residue. Note that Y215 is swung into the hydrophobic pocket, whereas E257 points outwards. The remainder of the interface residues show similar side-chain orientations as observed in the wild-type SAS-697–274 crystal (Figure 1).DOI: http://dx.doi.org/10.7554/eLife.01812.005
+**Figure 1—figure supplement 2.:** (A) Ribbon presentation of the SAS-6 octamer present in the L. major SAS-697–320 F257E crystal. The ASU of the crystal contained four SAS-6 monomers that are labelled from A–D. The arrow specifies the view direction shown as a close-up in (B). (B) Left: ribbon presentation of the B–C head-to-head homo-dimer in the L. major SAS-697–320 F257E crystal. Right: corresponding detailed view of the homo-dimer interface. The other head-to-head dimers in the crystal showed similar arrangements to the ones presented here. Interface residues are labelled and shown in sticks. Dotted yellow lines indicate hydrogen bonds. Highlighted in lemon and ringed in blue is the mutated E257 residue. Note that Y215 is swung into the hydrophobic pocket, whereas E257 points outwards. The remainder of the interface residues show similar side-chain orientations as observed in the wild-type SAS-697–274 crystal (Figure 1).
 
-To elucidate the structural organization of L. major SAS-6, we solved the structure of its N-terminal domain (Lm SAS-697–274) by X-ray crystallography to a resolution of 2.2 Å (Table 1, Table 2; Figure 1B). The asymmetric unit (ASU) of the crystal contained three molecules that were virtually identical to each other (139 ± 2 selected pairs superpose with an rmsd of 0.70 ± 0.13 Å in secondary structure matching). Our structure demonstrates a high similarity of L. major SAS-6 to previously solved SAS-6 structures (Kitagawa et al., 2011; van Breugel et al., 2011) (secondary structure matching to the D. rerio SAS-6 head domain results in an rmsd of 1.59 ± 0.09 Å with 133 ± 2 selected pairs). Like these, the N-terminal domain of L. major SAS-6 consists of a 7-stranded β-barrel, capped by a helix-turn-helix motif, that forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface (Figure 1B, Figure 1—figure supplement 1B,C). In this dimer, the β-hairpins formed by β-strands β6 and β7 pack antiparallelly against each other. Phenylalanine 257 at the tip of this hairpin is inserted into a conserved hydrophobic pocket that is constituted by the helix-turn-helix motif and the base of this hairpin in the B-C homo-dimer (formed by chain B and chain C in the crystal, Figure 1B). Dimerization is also observed in solution, as judged by equilibrium ultracentrifugation, and then depends on the presence of F257 (Figure 1D). The measured KD of this dimerization is ∼600 μM and therefore approximately 5- to 10-fold weaker than seen for other SAS-6 homologues (Kitagawa et al., 2011; van Breugel et al., 2011).10.7554/eLife.01812.006Table 1.Native dataset analysis and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.01812.006L. major SAS-697–274 WTL. major SAS-697–320 F257EL. major SAS-697–320 WTBeamlineDiamond I04ESRF ID29ESRF BM14Space GroupP43212C121H3Wavelength (Å)0.97940.900.97813Monomers in the asymmetric unit346Unit Cell dimensions (Å)a = 84.25 b = 84.25 c = 239.94 α = 90.0 β = 90.0 γ = 90.0a = 108.9 b = 81.25 c = 133.1 α = 90.0 β = 91.5 γ = 90.0a = 482.7 b = 482.7 c = 43.13 α = 90.0 β = 90.0 γ = 120.0Resolution (Å)48.9–2.246.91–2.9/3.4 (anisotropy)66.9–3.5/4.2 (anisotropy)Completeness (overall/inner/outer shell)99.9/98.9/10099.9/99.1/99.9100/99.1/100Rmerge (overall/inner/outer shell)0.144/0.064/1.5050.152/0.032/2.5700.335/0.074/3.061Rpim (overall/inner/outer shell)0.065/0.030/0.6570.061/0.013/1.0330.073/0.016/0.704Mean I/σI (overall/inner/outer shell)7.6/18.6/1.410.6/41.4/0.98.2/33.3/1.5Multiplicity (overall/inner/outer shell)5.9/5.5/6.07.2/6.7/7.122.3/21.9/19.8Number of reflections45,56924,09048,521Number of atoms353656538777Waters14100Rwork/Rfree (% data used)20.8/24.5 (5.0%)23.7/25.6 (5.0%)22.4/24.2 (5.1%)rmsd from ideal values: bond length/angles0.010/1.3490.008/1.2550.006/1.348Mean B value51.592.8150.6Average Real-space correlation coefficient0.9760.9240.881Molprobity Score1.14 (100th percentile)1.33 (100th percentile)1.41 (100th percentile)10.7554/eLife.01812.007Table 2.SeMet L. major SAS-697−274 WT dataset analysisDOI: http://dx.doi.org/10.7554/eLife.01812.007BeamlineDiamond I03Space groupP43212Wavelength (Å)0.9794 (Peak)0.9796 (Inflection)0.9393 (Remote)Unit Cell dimensions (Å)a = 84.19 b = 84.19 c = 239.6 α = 90.0 β = 90.0 γ = 90.0a = 84.24 b = 84.24 c = 239.7 α = 90.0 β = 90.0 γ = 90.0a = 84.22 b = 84.22 c = 239.7 α = 90.0 β = 90.0 γ = 90.0Resolution (Å)68.9–2.368.9–2.368.9–2.3Completeness (overall/inner/outer shell)99.8/99.9/99.799.7/99.9/99.799.8/99.7/99.7Rmerge (overall/inner/outer shell)0.130/0.066/0.9420.122/0.048/1.0010.131/0.052/0.973Rpim (overall/inner/outer shell)0.066/0.036/0.4670.062/0.026/0.4970.066/0.028/0.486Mean I/sd(I) (overall/inner/outer shell)7.4/18.8/1.77.8/21.8/1.77.2/20.2/1.6Multiplicity (overall/inner/outer shell)4.8/4.1/4.94.7/4.1/4.94.7/4.0/4.8Se sites found/expected14/12
+To elucidate the structural organization of L. major SAS-6, we solved the structure of its N-terminal domain (Lm SAS-697–274) by X-ray crystallography to a resolution of 2.2 Å (Table 1, Table 2; Figure 1B). The asymmetric unit (ASU) of the crystal contained three molecules that were virtually identical to each other (139 ± 2 selected pairs superpose with an rmsd of 0.70 ± 0.13 Å in secondary structure matching). Our structure demonstrates a high similarity of L. major SAS-6 to previously solved SAS-6 structures (Kitagawa et al., 2011; van Breugel et al., 2011) (secondary structure matching to the D. rerio SAS-6 head domain results in an rmsd of 1.59 ± 0.09 Å with 133 ± 2 selected pairs). Like these, the N-terminal domain of L. major SAS-6 consists of a 7-stranded β-barrel, capped by a helix-turn-helix motif, that forms a curved cross-handshake homo-dimer within the crystal through a highly conserved interaction interface (Figure 1B, Figure 1—figure supplement 1B,C). In this dimer, the β-hairpins formed by β-strands β6 and β7 pack antiparallelly against each other. Phenylalanine 257 at the tip of this hairpin is inserted into a conserved hydrophobic pocket that is constituted by the helix-turn-helix motif and the base of this hairpin in the B-C homo-dimer (formed by chain B and chain C in the crystal, Figure 1B). Dimerization is also observed in solution, as judged by equilibrium ultracentrifugation, and then depends on the presence of F257 (Figure 1D). The measured KD of this dimerization is ∼600 μM and therefore approximately 5- to 10-fold weaker than seen for other SAS-6 homologues (Kitagawa et al., 2011; van Breugel et al., 2011).
+
+**Table 1.**
+ Native dataset analysis and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>L. major SAS-697–274 WT</th>
+      <th>L. major SAS-697–320 F257E</th>
+      <th>L. major SAS-697–320 WT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>Diamond I04</td>
+      <td>ESRF ID29</td>
+      <td>ESRF BM14</td>
+    </tr>
+    <tr>
+      <td>Space Group</td>
+      <td>P43212</td>
+      <td>C121</td>
+      <td>H3</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9794</td>
+      <td>0.90</td>
+      <td>0.97813</td>
+    </tr>
+    <tr>
+      <td>Monomers in the asymmetric unit</td>
+      <td>3</td>
+      <td>4</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Unit Cell dimensions (Å)</td>
+      <td>a = 84.25 b = 84.25 c = 239.94 α = 90.0 β = 90.0 γ = 90.0</td>
+      <td>a = 108.9 b = 81.25 c = 133.1 α = 90.0 β = 91.5 γ = 90.0</td>
+      <td>a = 482.7 b = 482.7 c = 43.13 α = 90.0 β = 90.0 γ = 120.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.9–2.2</td>
+      <td>46.91–2.9/3.4 (anisotropy)</td>
+      <td>66.9–3.5/4.2 (anisotropy)</td>
+    </tr>
+    <tr>
+      <td>Completeness (overall/inner/outer shell)</td>
+      <td>99.9/98.9/100</td>
+      <td>99.9/99.1/99.9</td>
+      <td>100/99.1/100</td>
+    </tr>
+    <tr>
+      <td>Rmerge (overall/inner/outer shell)</td>
+      <td>0.144/0.064/1.505</td>
+      <td>0.152/0.032/2.570</td>
+      <td>0.335/0.074/3.061</td>
+    </tr>
+    <tr>
+      <td>Rpim (overall/inner/outer shell)</td>
+      <td>0.065/0.030/0.657</td>
+      <td>0.061/0.013/1.033</td>
+      <td>0.073/0.016/0.704</td>
+    </tr>
+    <tr>
+      <td>Mean I/σI (overall/inner/outer shell)</td>
+      <td>7.6/18.6/1.4</td>
+      <td>10.6/41.4/0.9</td>
+      <td>8.2/33.3/1.5</td>
+    </tr>
+    <tr>
+      <td>Multiplicity (overall/inner/outer shell)</td>
+      <td>5.9/5.5/6.0</td>
+      <td>7.2/6.7/7.1</td>
+      <td>22.3/21.9/19.8</td>
+    </tr>
+    <tr>
+      <td>Number of reflections</td>
+      <td>45,569</td>
+      <td>24,090</td>
+      <td>48,521</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>3536</td>
+      <td>5653</td>
+      <td>8777</td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>141</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (% data used)</td>
+      <td>20.8/24.5 (5.0%)</td>
+      <td>23.7/25.6 (5.0%)</td>
+      <td>22.4/24.2 (5.1%)</td>
+    </tr>
+    <tr>
+      <td>rmsd from ideal values: bond length/angles</td>
+      <td>0.010/1.349</td>
+      <td>0.008/1.255</td>
+      <td>0.006/1.348</td>
+    </tr>
+    <tr>
+      <td>Mean B value</td>
+      <td>51.5</td>
+      <td>92.8</td>
+      <td>150.6</td>
+    </tr>
+    <tr>
+      <td>Average Real-space correlation coefficient</td>
+      <td>0.976</td>
+      <td>0.924</td>
+      <td>0.881</td>
+    </tr>
+    <tr>
+      <td>Molprobity Score</td>
+      <td>1.14 (100th percentile)</td>
+      <td>1.33 (100th percentile)</td>
+      <td>1.41 (100th percentile)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ SeMet L. major SAS-697−274 WT dataset analysis
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td colspan="3">Diamond I03</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td colspan="3">P43212</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9794 (Peak)</td>
+      <td>0.9796 (Inflection)</td>
+      <td>0.9393 (Remote)</td>
+    </tr>
+    <tr>
+      <td>Unit Cell dimensions (Å)</td>
+      <td>a = 84.19 b = 84.19 c = 239.6 α = 90.0 β = 90.0 γ = 90.0</td>
+      <td>a = 84.24 b = 84.24 c = 239.7 α = 90.0 β = 90.0 γ = 90.0</td>
+      <td>a = 84.22 b = 84.22 c = 239.7 α = 90.0 β = 90.0 γ = 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>68.9–2.3</td>
+      <td>68.9–2.3</td>
+      <td>68.9–2.3</td>
+    </tr>
+    <tr>
+      <td>Completeness (overall/inner/outer shell)</td>
+      <td>99.8/99.9/99.7</td>
+      <td>99.7/99.9/99.7</td>
+      <td>99.8/99.7/99.7</td>
+    </tr>
+    <tr>
+      <td>Rmerge (overall/inner/outer shell)</td>
+      <td>0.130/0.066/0.942</td>
+      <td>0.122/0.048/1.001</td>
+      <td>0.131/0.052/0.973</td>
+    </tr>
+    <tr>
+      <td>Rpim (overall/inner/outer shell)</td>
+      <td>0.066/0.036/0.467</td>
+      <td>0.062/0.026/0.497</td>
+      <td>0.066/0.028/0.486</td>
+    </tr>
+    <tr>
+      <td>Mean I/sd(I) (overall/inner/outer shell)</td>
+      <td>7.4/18.8/1.7</td>
+      <td>7.8/21.8/1.7</td>
+      <td>7.2/20.2/1.6</td>
+    </tr>
+    <tr>
+      <td>Multiplicity (overall/inner/outer shell)</td>
+      <td>4.8/4.1/4.9</td>
+      <td>4.7/4.1/4.9</td>
+      <td>4.7/4.0/4.8</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td>Se sites found/expected</td>
+      <td colspan="3">14/12</td>
+    </tr>
+  </tbody>
+</table>
 
 To ascertain the role of the coiled-coil domain of L. major SAS-6, we tried to crystallize constructs that included both the N-terminal domain and parts of the coiled-coiled domain, but initially failed to obtain diffraction-grade crystals. However, by introducing the F257E mutation to strongly weaken head-to-head dimerization we managed to crystallize construct Lm SAS-697–320 F257E that contained the N-terminal head domain and the first seven heptad-repeats of the coiled-coil domain. We subsequently solved its X-ray structure to a resolution of 2.9 Å (Table 1; Figure 1E). The asymmetric unit of the crystal contained four molecules that were highly similar to each other and superposed with an rmsd of 1.17 ± 0.50 Å in secondary structure matching with 165 ± 16 selected pairs. The crystal structure revealed that the L. major SAS-6 coiled-coil domain is a parallel dimer and packs via conserved interactions against the N-terminal head-domains as seen in other SAS-6 homologues (Figure 1E, Figure 1—figure supplement 1D). Thus, our structural analyses demonstrate that L. major SAS-6 is highly similar to other SAS-6 homologues.
 
-## Alternative dimerization arrangements of Leishmania major SAS-6 reveal a dimerization-impaired state
+### Alternative dimerization arrangements of Leishmania major SAS-6 reveal a dimerization-impaired state
 
 Our structural analysis also revealed the presence of an alternative arrangement of the head-to-head homo-dimer of L. major SAS-6. In the Lm SAS-697–274 crystal, the A–A homo-dimer (formed by chain A and symmetry-related chain A) shares the features of the B–C homo-dimer described above. However, in the A–A homo-dimer, the Y215 sidechain is flipped into its own hydrophobic pocket resulting in the displacement from this pocket of residue F257 of its homo-dimer partner (Figure 1C) probably weakening the interaction. Intriguingly, we found a similar arrangement in the Lm SAS-697–320 F257E crystal. The F257E mutation abolishes head-to-head dimerization in solution (Figure 1D), yet, in the crystal, due to the high protein and precipitant concentrations, some of the SAS-6 molecules present are found nevertheless in head-to-head dimers and form a curved octamer. In this octamer residues Y215 are also swung into their own hydrophobic pockets, while E257 point away from them (Figure 1—figure supplement 2). These data suggest that the closed Y215 conformation corresponds to a low-affinity dimerization state of the head domains and might therefore constitute a potential regulatory mechanism of SAS-6 oligomerization. In solution, the presence of a dimerization-impaired state could also explain the relatively low affinity of head-to-head dimerization of wild-type L. major SAS-6 apparent in analytical ultracentrifugation (∼600 μM compared to 50–100 μM observed for other species) since other SAS-6 homologues do not have aromatic residues at the equivalent position of Y215 that could play such a role.
 
 To test whether the Y215 closed conformation significantly compromises dimerization in solution, we mutated Y215 in Lm SAS-697–274 to lysine that is unable to block the hydrophobic pocket in a similar way. Subsequently, we subjected the purified protein to analytical ultracentrifugation (Figure 1D). The measured KD of head-to-head dimerization of the Y215K mutant was ∼200 μM and therefore approximately threefold lower than for the corresponding wild-type protein. We conclude that Y215 acts to partially inhibit head-to-head dimerization of L. major SAS-6.
 
-## Leishmania major SAS-6 crystallizes as ninefold symmetric rings that are highly similar to centriolar cartwheels in vivo
+### Leishmania major SAS-6 crystallizes as ninefold symmetric rings that are highly similar to centriolar cartwheels in vivo
 
-The presence of curved SAS-6 octamers in the crystal of the Lm SAS-6
+The presence of curved SAS-6 octamers in the crystal of the Lm SAS-697–320 F257E mutant that is strongly impaired in its ability to form head-to-head dimers suggests that wild-type versions of SAS-6 would adopt even larger assemblies. The low affinity of head-to-head dimerization together with the concomitant sample heterogeneity makes EM studies of the resulting assemblies technically challenging. To overcome these limitations we tried to crystallize L. major SAS-6 constructs with both dimerization interfaces intact. Obtaining crystals that diffracted well enough to solve their structure proved difficult. However, with the wild-type construct of Lm SAS-697–320, we finally succeeded to find a crystal form of the space-group H3 that diffracted to a resolution of ∼3.5 Å along the l-axis with anisotropy limiting the resolution along the h-k plane to ∼4.2 Å. Using the structure of the Lm SAS-697–274 B–C homo-dimer as a search model, a molecular replacement solution could be found that allowed the subsequent placement of the coiled-coil part present in the construct (Figure 2). The unit cell of the Lm SAS-697–320 crystal form contained three 9-fold symmetric SAS-6 rings with three SAS-6 dimers constituting the ASU. These three dimers were highly similar to each other and overlayed with an rmsd of 0.88 ± 0.29 Å in secondary structure matching with 357 ± 14 selected pairs. No electron density was seen inside the SAS-6 rings. The inner diameters of the SAS-6 rings are ∼19 nm and correspond well to the diameters of cartwheel hubs observed in vivo (Lacomble et al., 2009; Guichard et al., 2010, 2012). In the crystal, SAS-6 rings are stacked onto each other. Neighbouring rings interact through inter-digitation of their coiled-coil domains in an antiparallel way (Figure 2—figure supplement 1). We confirmed our structural model by calculating a phased anomalous map using the refined phases based on our model and the amplitudes of an isomorphic dataset collected from crystals of the selenomethionine derivative (Figure 2B; Table 3). Peaks in this map correlated with the positions of methionines in our model. Thus, under appropriate conditions, L. major SAS-6 can adopt ninefold symmetric rings that are highly similar to cartwheels observed in vivo.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-v1.jpg)
 
-**Figure 2.:** L. major SAS-697–320 crystallizes as a ninefold symmetric ring with dimensions similar to those of centriolar cartwheels observed in vivo.(A) Ribbon presentation of the L. major SAS-697–320 structure. Shown is the ring assembly present in the unit cell of the L. major SAS-697–320 crystal. Protein chains are colored alternatingly in green and red to allow easier comparison with Figure 1. Top: side-view, bottom: face-on view of the L. major SAS-697–320 ring structure. The nonagon in the center of the ring indicates the (quasi-) ninefold symmetry axis. The ASU of the crystal contained six SAS-6 monomers that are labelled from A–F. No clear electron density could be seen for the distal part of the coiled-coil of the A–B dimer, probably due to the lack of stabilizing crystal packing interactions compared to the C–D and E–F dimer (Figure 2—figure supplement 1B). (B) Detailed view of the region boxed in (A). Shown in blue sticks are the methionine-side chains of the SAS-697–320 model. In magenta, iso-mesh representation of the phased anomalous difference map at a contour level of σ = 5 showing the selenium positions in the crystallized selenomethionine derivate of L. major SAS-697–320.DOI: http://dx.doi.org/10.7554/eLife.01812.008
+**Figure 2.:** (A) Ribbon presentation of the L. major SAS-697–320 structure. Shown is the ring assembly present in the unit cell of the L. major SAS-697–320 crystal. Protein chains are colored alternatingly in green and red to allow easier comparison with Figure 1. Top: side-view, bottom: face-on view of the L. major SAS-697–320 ring structure. The nonagon in the center of the ring indicates the (quasi-) ninefold symmetry axis. The ASU of the crystal contained six SAS-6 monomers that are labelled from A–F. No clear electron density could be seen for the distal part of the coiled-coil of the A–B dimer, probably due to the lack of stabilizing crystal packing interactions compared to the C–D and E–F dimer (Figure 2—figure supplement 1B). (B) Detailed view of the region boxed in (A). Shown in blue sticks are the methionine-side chains of the SAS-697–320 model. In magenta, iso-mesh representation of the phased anomalous difference map at a contour level of σ = 5 showing the selenium positions in the crystallized selenomethionine derivate of L. major SAS-697–320.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** wild-type L. major SAS-697–320 crystal.(A) Stacking of the L. major SAS-697–320 rings in the crystal. Rings are stacked directly onto each other through interactions of the N-terminal domains of SAS-6. Left: face-on view, right: turned by 90° around the x-axis. (B) Lateral interactions of the L. major SAS-697–320 rings in the crystal. Top: face-on view, the arrow indicates the view direction shown at the bottom as a close-up. The coiled-coil stalks interact in an antiparallel way with each other. Their termini touch the head domains of adjacent rings.DOI: http://dx.doi.org/10.7554/eLife.01812.009
+**Figure 2—figure supplement 1.:** (A) Stacking of the L. major SAS-697–320 rings in the crystal. Rings are stacked directly onto each other through interactions of the N-terminal domains of SAS-6. Left: face-on view, right: turned by 90° around the x-axis. (B) Lateral interactions of the L. major SAS-697–320 rings in the crystal. Top: face-on view, the arrow indicates the view direction shown at the bottom as a close-up. The coiled-coil stalks interact in an antiparallel way with each other. Their termini touch the head domains of adjacent rings.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** wild-type L. major SAS-697–320 crystal are similar in orientation to those observed in the SAS-697–320 F257E and the SAS-697–274 crystals.(A) Overlay of the wild-type L. major SAS-697–320 ring structure (green) with the two dimers present in the ASU of the L. major SAS-697–320 F257E crystal (A–B dimer in magenta, C–D dimer in red). The SAS-697–320 F257E A–B/C–D dimer superposed to wild-type L. major SAS-697–320 with an rmsd of 0.91 Å/1.62 Å in secondary structure matching with 330/319 selected pairs respectively. (B) Overlay of the wild-type L. major SAS-697–320 ring structure (green) with the B–C dimer present in the ASU of the L. major SAS-697–274 crystal (blue). Secondary structure matching of these two structures resulted in an rmsd of 0.77 Å (283 selected pairs).DOI: http://dx.doi.org/10.7554/eLife.01812.010
+**Figure 2—figure supplement 2.:** (A) Overlay of the wild-type L. major SAS-697–320 ring structure (green) with the two dimers present in the ASU of the L. major SAS-697–320 F257E crystal (A–B dimer in magenta, C–D dimer in red). The SAS-697–320 F257E A–B/C–D dimer superposed to wild-type L. major SAS-697–320 with an rmsd of 0.91 Å/1.62 Å in secondary structure matching with 330/319 selected pairs respectively. (B) Overlay of the wild-type L. major SAS-697–320 ring structure (green) with the B–C dimer present in the ASU of the L. major SAS-697–274 crystal (blue). Secondary structure matching of these two structures resulted in an rmsd of 0.77 Å (283 selected pairs).
 
-## A small compound can inhibit SAS-6 oligomerization in vitro
+**Table 3.**
+ SeMet L. major SAS-697−320 WT dataset analysis
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>ESRF BM14</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>H3</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.97872 (Peak)</td>
+    </tr>
+    <tr>
+      <td>Unit Cell dimensions (Å)</td>
+      <td>a = 481.7 b = 481.7 c = 42.9 α = 90.0 β = 90.0 γ = 120.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>48.2–4.0/5.4 (anisotropy)</td>
+    </tr>
+    <tr>
+      <td>Completeness (overall/inner/outer shell)</td>
+      <td>100.0/98.8/100.0</td>
+    </tr>
+    <tr>
+      <td>Rmerge (overall/inner/outer shell)</td>
+      <td>0.194/0.054/2.118</td>
+    </tr>
+    <tr>
+      <td>Rpim (overall/inner/outer shell)</td>
+      <td>0.091/0.026/0.987</td>
+    </tr>
+    <tr>
+      <td>Mean I/sd(I) (overall/inner/outer shell)</td>
+      <td>3.8/13.7/0.9</td>
+    </tr>
+    <tr>
+      <td>Multiplicity (overall/inner/outer shell)</td>
+      <td>5.6/5.5/5.6</td>
+    </tr>
+  </tbody>
+</table>
+
+### A small compound can inhibit SAS-6 oligomerization in vitro
 
 To find out whether we could inhibit SAS-6 oligomerization, we conducted a small-scale fragment screen using a custom library of halogenated fragments (HEFLib) (Wilcken et al., 2012). First, pools of compounds were screened for their ability to bind to and thereby cause a shift perturbation in the {1H,15N}-HSQC NMR spectrum of 15N labelled Lm SAS-6. To avoid ambiguities in the interpretation of shift perturbations that could stem from the partial presence of oligomers, we used the Lm SAS-697–274 F257E mutant for these binding studies that is monomeric in solution (Figure 1D). One dimensional spin-echo experiments provided a crude estimate of 18 ms for the backbone amide 1H T2 relaxation time constants, consistent with the molecular mass of the construct (∼20 kDa) (Anglister et al., 1993).
 
-To determine the putative interaction sites of binding candidates, we assigned the backbone resonances of Lm SAS-6
+To determine the putative interaction sites of binding candidates, we assigned the backbone resonances of Lm SAS-697–274 F257E using 13C,15N double-labelled protein and mapped the HSQC chemical shift perturbations onto the crystal structure of wild-type Lm SAS-697–274. Strong perturbations in chemical shifts are most consistent with compound PK9119 ((5-bromo-7-ethyl-1H-indol-3-ylmethyl)-dimethyl-amine, Figure 3A) binding adjacent to the head-to-head dimerization interface of Lm SAS-697–274 (Figure 3B, Figure 3—figure supplement 1A,B). Smaller, but significant shift changes indicate that binding may alter this interface by affecting the conformation of the helix-turn-helix motif that constitutes a part of it. We also examined aromatic side chain 1H resonances of the Phe and Tyr residues using Cβ–Hδ correlation maps, which enabled us to identify two side-chains (F199, F212) that are perturbed on binding of PK9119 (Figure 3B, Figure 3—figure supplement 1C). These two side-chains cluster together around the helix-turn-helix motif. HSQC chemical shift titration experiments with PK9119 and L. major SAS-697–274 F257E suggest a millimolar binding affinity; the low solubility of PK9119 in aqueous solutions and lack of a reference compound for competition binding assays makes more accurate KD determinations technically challenging.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-v1.jpg)
 
-**Figure 3.:** (A) The chemical structure of compound PK9119 as a structure formula (top) or three-dimensional model (bottom). (B) Heat map of the chemical shift perturbations in the {1H-15N}-HSQC spectrum of 15N-labelled L. major SAS-697–274 F257E in the presence of 2 mM PK9119. Data are plotted onto the crystal structure of wild-type L. major SAS-697–274. Higher shift perturbation is depicted in warmer colors, whilst prolines (not observable in the HSQC) are colored grey, and unassigned/untraced residues are colored white. The magenta F257 is from the homo-dimer partner and is inserted into the hydrophobic pocket of the dimerization interface. Note that the chemical shift perturbations cluster close to this pocket. Side-chains are drawn for F199 and F212 that showed robust perturbations in (HB)CB(CGCD)HD correlation spectra in the presence of 1 mM PK9119 (Figure 3—figure supplement 1C). (C) SEC-MALS chromatogram of L. major SAS-697–424 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. L. major SAS-697–424 displayed a distribution of masses from that of the dimer up to >200 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119 the maximal mass was almost halved. The F257E mutant displayed a constant mass of 71 kDa in the absence and presence of PK9119 consistent with the mass of a dimer of L. major SAS-697–424. All samples were injected on SEC-MALS at 25 mg/ml (675 μM in monomer). Due to dilution during SEC the peak concentrations achieved were a factor of ∼10 lower than this (∼68 μM in monomer).DOI: http://dx.doi.org/10.7554/eLife.01812.012
+**Figure 3.:** (A) The chemical structure of compound PK9119 as a structure formula (top) or three-dimensional model (bottom). (B) Heat map of the chemical shift perturbations in the {1H-15N}-HSQC spectrum of 15N-labelled L. major SAS-697–274 F257E in the presence of 2 mM PK9119. Data are plotted onto the crystal structure of wild-type L. major SAS-697–274. Higher shift perturbation is depicted in warmer colors, whilst prolines (not observable in the HSQC) are colored grey, and unassigned/untraced residues are colored white. The magenta F257 is from the homo-dimer partner and is inserted into the hydrophobic pocket of the dimerization interface. Note that the chemical shift perturbations cluster close to this pocket. Side-chains are drawn for F199 and F212 that showed robust perturbations in (HB)CB(CGCD)HD correlation spectra in the presence of 1 mM PK9119 (Figure 3—figure supplement 1C). (C) SEC-MALS chromatogram of L. major SAS-697–424 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. L. major SAS-697–424 displayed a distribution of masses from that of the dimer up to >200 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119 the maximal mass was almost halved. The F257E mutant displayed a constant mass of 71 kDa in the absence and presence of PK9119 consistent with the mass of a dimer of L. major SAS-697–424. All samples were injected on SEC-MALS at 25 mg/ml (675 μM in monomer). Due to dilution during SEC the peak concentrations achieved were a factor of ∼10 lower than this (∼68 μM in monomer).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) {1H-15N}-HSQC overlay of 15N-labelled L. major SAS-697–274 F257E in the presence or absence of 1 mM or 2 mM PK9119. (B) Graphical representation of the chemical shift perturbations from the data in panel A, 2 mM PK9119. Perturbation is quantified as a weighted combination Δδ1H + (Δδ15N/5). The blue line indicates that the trajectory of the S170 correlation is not quantified, as its peak could not be traced in the presence of PK9119. (C) Overlay of (HB)CB(CGCD)HD spectra for 13C/15N labelled protein in the presence or absence of 1 mM PK9119, showing Cβ–Hδ correlations for Phe and Tyr side chain resonances. Cβ resonance frequencies of three unperturbed correlations (F184, F185 and Y230), indicated by a horizontal line, are unresolved to within the 0.2 ppm/point resolution of the Cβ assignment spectra, and are not assigned.DOI: http://dx.doi.org/10.7554/eLife.01812.013
+**Figure 3—figure supplement 1.:** (A) {1H-15N}-HSQC overlay of 15N-labelled L. major SAS-697–274 F257E in the presence or absence of 1 mM or 2 mM PK9119. (B) Graphical representation of the chemical shift perturbations from the data in panel A, 2 mM PK9119. Perturbation is quantified as a weighted combination Δδ1H + (Δδ15N/5). The blue line indicates that the trajectory of the S170 correlation is not quantified, as its peak could not be traced in the presence of PK9119. (C) Overlay of (HB)CB(CGCD)HD spectra for 13C/15N labelled protein in the presence or absence of 1 mM PK9119, showing Cβ–Hδ correlations for Phe and Tyr side chain resonances. Cβ resonance frequencies of three unperturbed correlations (F184, F185 and Y230), indicated by a horizontal line, are unresolved to within the 0.2 ppm/point resolution of the Cβ assignment spectra, and are not assigned.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/01812/elife-01812-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** SEC-MALS chromatogram of Danio rerio SAS-61–326 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. Dr SAS-61–326 displayed a distribution of masses from that of the dimer up to ∼250 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119, the maximal observed mass was reduced to ∼160 kDa. The F131D mutant displayed a constant mass of 75 kDa in the absence and presence of PK9119 consistent with the mass of a Dr SAS-61–326 dimer. All samples were injected on SEC-MALS at 10 mg/ml (263 μM in monomer). Due to dilution during SEC, the peak concentrations were a factor of ∼10 lower than this (∼26 μM in monomer). The largest species seen for Dr SAS-61–326 are bigger than seen for L. major SAS-697–424 (Figure 3C), despite a threefold lower concentration in monomer. This observation is consistent with the weaker head-to-head dimerization KD for L. major SAS-6 seen by analytical ultracentrifugation when compared with measurements on D. rerio SAS-6 (van Breugel et al., 2011).DOI: http://dx.doi.org/10.7554/eLife.01812.014
+**Figure 3—figure supplement 2.:** SEC-MALS chromatogram of Danio rerio SAS-61–326 showing the refractive index signal with the derived molar masses indicated by the thicker horizontal lines. Dr SAS-61–326 displayed a distribution of masses from that of the dimer up to ∼250 kDa consistent with a concentration driven self-association equilibrium. In the presence of 1 mM PK9119, the maximal observed mass was reduced to ∼160 kDa. The F131D mutant displayed a constant mass of 75 kDa in the absence and presence of PK9119 consistent with the mass of a Dr SAS-61–326 dimer. All samples were injected on SEC-MALS at 10 mg/ml (263 μM in monomer). Due to dilution during SEC, the peak concentrations were a factor of ∼10 lower than this (∼26 μM in monomer). The largest species seen for Dr SAS-61–326 are bigger than seen for L. major SAS-697–424 (Figure 3C), despite a threefold lower concentration in monomer. This observation is consistent with the weaker head-to-head dimerization KD for L. major SAS-6 seen by analytical ultracentrifugation when compared with measurements on D. rerio SAS-6 (van Breugel et al., 2011).
 
 To determine whether PK9119 affects oligomerization of L. major SAS-6, we subjected wild-type and F257E mutant protein to size-exclusion chromatography—multi-angle light scattering (SEC-MALS) in the presence or absence of 1 mM PK9119 (Figure 3C). Since we were unable to make full length L. major SAS-6 recombinantly, we used a L. major SAS-6 construct that contained the N-terminal domain and approximately half of its coiled-coil domain (Lm SAS-697–424) for this assay. Similar to the previous findings (Gopalakrishnan et al., 2010; Kitagawa et al., 2011; van Breugel et al., 2011), we did not find evidence for a stable ring-fraction of SAS-6 in solution, but found a complex equilibrium of SAS-6 oligomers (ranging up to approximately SAS-6 hexamers) for the wild-type construct in the absence of PK9119, while the F257E mutant was a stable dimer under these conditions, in agreement with stable dimer formation through its coiled-coil domain. When the runs were repeated in the presence of PK9119, we saw a clear shift in the elution volume for the wild-type but not the F257E SAS-6 construct towards smaller molecular weights and a decrease in the analysed mass from MALS, demonstrating that PK9119 partially affects head-to-head dimerization. We also repeated this experiment with the equivalent constructs of zebrafish SAS-6 (Dr SAS-61–326, wild-type and F131D) under similar conditions. The results showed that zebrafish SAS-6 oligomerization was also affected by the presence of PK9119, although to a lesser extent than L. major SAS-6 oligomerization (Figure 3—figure supplement 2). Thus, PK9119 appears to be a general inhibitor of SAS-6 oligomerization in vitro with some preference for the L. major variant, and represents a starting point for further screening of chemical analogs or fragment evolution.
 
@@ -108,11 +360,11 @@ Finally, as a proof-of-principle we show that oligomerization of SAS-6 can be in
 
 ## Materials and methods
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 All L. major constructs were made synthetically as codon-optimized genes (IDT, Coralville, Iowa). Zebrafish SAS-6 constructs were described earlier (van Breugel et al., 2011). All constructs were N-terminally His-tagged. Proteins were expressed in E. coli BL21 Rosetta and purified using standard methods via NiNTA (Qiagen, Hilden, Germany) chromatography, proteolytic tag cleavage, size-exclusion chromatography and ion-exchange chromatography. The L. major SAS-697–274 and SAS-697–320 selenomethionine derivatives were purified in the same way, but expression was in M9 medium supplemented with 2 mM MgSO4, 0.4% (wt/vol) glucose, 25 µg/ml FeSO4.7H2O, 40 µg/ml amino acid mix (excluding Methionine), 1 µg/ml riboflavin, 1 µg/ml niacinamide, 0.1 µg/ml pyridoxine monohydrochloride, 1 µg/ml thiamine and 40 µg/ml seleno-L-methionine. All purified L. major constructs included the extra sequence GP, zebrafish SAS-6 GPH at their N-termini from the cloning/protease cleavage site.
 
-## Crystallization
+### Crystallization
 
 SeMet L. major SAS-697–274 crystals were obtained using the sitting drop method with a reservoir solution of 100 mM bisTris pH 5.1, 200 mM MgCl2, 20% (wt/vol) PEG-3350 at 16°C. Drops were set up using 100 nl protein solution and 100 nl of reservoir solution. After half a day, the crystals were mounted in 100 mM bisTris pH 5.1, 200 mM MgCl2, 10% (wt/vol) PEG-3350, 25% (wt/vol) Glycerol and flash-frozen in liquid nitrogen.
 
@@ -126,22 +378,22 @@ SeMet L. major SAS-697–320 WT crystals were obtained using the sitting drop me
 
 The protein concentrations of the crystallized constructs were determined by the Bradford assay with BSA as a standard and were: 80.3 mg/ml (SeMet L. major SAS-697–274), 29.3 mg/ml (L. major SAS-697–274), 94.7 mg/ml (L. major SAS-697–320 F257E), 50.3 mg/ml SeMet L. major SAS-697–320 and 50.1 mg/ml (L. major SAS-697–320).
 
-## Data collection and processing
+### Data collection and processing
 
 Data sets were integrated and scaled using MOSFLM (Leslie and Powell, 2007) (SeMet and native L. major SAS-697–274, L. major SAS-697–320) or XDS (Kabsch, 2010) (L. major SAS-697–320 F257E and SeMet L. major SAS-697–320). Data sets were scaled using SCALA or AIMLESS (Evans, 2006; Evans and Murshudov, 2013). The L. major SAS-697–274 structure was solved from the corresponding 3-wavelength SeMet dataset by MAD using the SHELX CDE pipeline in HKL2MAP (Pape and Schneider, 2004), resulting in clear electron density into which an initial model was built using BUCANNEER (Cowtan, 2006, 2008) and manual building. REFMAC (Murshudov et al., 2011) was used to refine the model against the native data set with manual building done in Coot (Emsley and Cowtan, 2004). L. major SAS-697–320 WT and F257E were solved by molecular replacement in Phaser (McCoy et al., 2007) using the L. major SAS-697–274 structure as a search model (SAS-697–274 monomer (F257E) or the BC-dimer (WT). The models were subsequently further built in Coot (Emsley and Cowtan, 2004) and refined in REFMAC (Murshudov et al., 2011) and Phenix.refine (Afonine et al., 2005) using NCS and (for WT L. major SAS-697–320) TLS refinement with separate TLS groups for the globular N-terminal and the coiled-coil domains and also using as a reference model restraint the B chain of L. major SAS-697–274 (residue 130–271). Refinement yielded clear density for the missing coiled-coil part of these constructs.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Equilibrium sedimentation experiments were performed on an Optima XL-I analytical ultracentrifuge (Beckmann, Brea, California) using An50Ti rotors. Sample volumes of 110 µl with protein concentrations of 100, 200, and 400 μM were loaded in 12 mm 6-sector cells and centrifuged at 11300, 17000, and 21200 rpm until equilibrium was reached at 4°C. At each speed, comparison of several scans was used to judge whether or not equilibrium had been reached. Buffer conditions were 50 mM Tris, 100 mM NaCl, pH 8.0. The solvent density and viscosity (ρ = 1.00557 g/ml and η = 1.6056 mPa⋅s) were calculated using Sednterp (Dr Thomas Laue, University of New Hampshire, Sednterp server available at: http://sednterp.unh.edu. Desktop version can be downloaded from: http://bitcwiki.sr.unh.edu/index.php/Downloads). Data were processed and analysed using UltraSpin software (available at: http://www.mrc-lmb.cam.ac.uk/dbv/ultraspin2/) and SEDPHAT (Schuck, 2003).
 
-## NMR experiments
+### NMR experiments
 
 Small molecules were screened for binding to approximately 40 µM 15N-labelled protein in aqueous phosphate buffer (25 mM Phosphate, 150 mM NaCl, 2 mM DTT, pH 7.2) and up to 2 mM ligand concentration, with a total of 5% (vol/vol) DMSO-d6. {1H-15N}-fast-HSQC spectra (Mori et al., 1995) were recorded using a Bruker Avance spectrometer operating at 800 MHz 1H frequency, with a 5 mm cryogenic inverse probe and sample temperature of 298 K. The digital resolution of the processed data was 3.2 and 5.3 Hz/point in f2 and f1, respectively. Backbone resonance assignments were obtained from HNCACB, CBCA(CO)NH, HN(CA)CO, HNCO and HNCANH spectra at 600 MHz 1H frequency, acquired using unmodified Bruker pulse programs and a protein concentration of 400 µM. Aromatic sidechain resonances were assigned from a (HB)CB(CGCD)HD spectrum. Data were processed using TopSpin version 3 (commercially available from Bruker, Billerica, Massachusetts, details available at http://www.bruker.com/products/mr/nmr/nmr-software/software/topspin/) and analysed using Sparky (Goddard & Kneller, UCSF, San Francisco, available at http://www.cgl.ucsf.edu/home/sparky/).
 
-## HADDOCK calculations
+### HADDOCK calculations
 
 Models of the complex between SAS-6 and PK9119 were generated by submitting the crystal structure coordinates of a L. major SAS-697–274 monomer to the WeNMR server (available at: https://www.wenmr.eu) (de Vries et al., 2010; Wassenaar et al., 2012), using default HADDOCK parameters and CNS topology parameters for PK9119 based on the PRODRG predictions provided on the HADDOCK server (available at http://haddock.science.uu.nl/services/HADDOCK/haddock.php).
 
-## Size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS)
+### Size exclusion chromatography coupled to multi-angle light scattering (SEC-MALS)
 
 The mass in solution of L. major SAS-697–424, wild-type and F257E mutant, Dr SAS-61−326, wild-type and F131D mutant, was determined by SEC-MALS measurements using a Wyatt Heleos II 18 angle light scattering instrument coupled to a Wyatt Optilab rEX online refractive index detector. Detector 12 in the Heleos instrument was replaced with Wyatt’s QELS detector for dynamic light scattering measurement. Protein samples (100 μl) were resolved on a Superdex S-200 10/300 analytical gel filtration column (GE Healthcare, Little Chalfont, UK) running at 0.5 ml/min in 50 mM bisTris, 100 mM NaCl, pH 7.0 buffer, containing 0.126% (vol/vol) DMSO and ±1 mM chemical compound PK9119 ((5-bromo-7-ethyl-1H-indol-3-ylmethyl)-dimethyl-amine, Sigma-Aldrich, St. Louis, Missouri) before passing through the light scattering and refractive index detectors in a standard SEC-MALS format. Buffers were filtered through a 0.22-μm filter before usage to remove any PK9119 precipitates. Protein concentration was determined from the excess differential refractive index based on 0.186 RI increment for 1 g/ml protein solution. The concentration and the observed scattered intensity at each point in the chromatograms were used to calculate the absolute molecular mass from the intercept of the Debye plot using Zimm’s model as implemented in Wyatt’s ASTRA software (commercially available from Wyatt technology, Santa Barbara, California, details at: http://www.wyatt.com/products/software/astra.html).

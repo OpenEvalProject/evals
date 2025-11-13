@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.34348.001 In birds and higher mammals, auditory experience during development is critical to discriminate sound patterns in adulthood. However, the neural and molecular nature of this acquired ability remains elusive. In fruit flies, acoustic perception has been thought to be innate. Here we report, surprisingly, that auditory experience of a species-specific courtship song in developing Drosophila shapes adult song perception and resultant sexual behavior. Preferences in the song-response behaviors of both males and females were tuned by social acoustic exposure during development. We examined the molecular and cellular determinants of this social acoustic learning and found that GABA signaling acting on the GABA A receptor Rdl in the pC1 neurons, the integration node for courtship stimuli, regulated auditory tuning and sexual behavior. These findings demonstrate that maturation of auditory perception in flies is unexpectedly plastic and is acquired socially, providing a model to investigate how song learning regulates mating preference in insects.
+In birds and higher mammals, auditory experience during development is critical to discriminate sound patterns in adulthood. However, the neural and molecular nature of this acquired ability remains elusive. In fruit flies, acoustic perception has been thought to be innate. Here we report, surprisingly, that auditory experience of a species-specific courtship song in developing Drosophila shapes adult song perception and resultant sexual behavior. Preferences in the song-response behaviors of both males and females were tuned by social acoustic exposure during development. We examined the molecular and cellular determinants of this social acoustic learning and found that GABA signaling acting on the GABAA receptor Rdl in the pC1 neurons, the integration node for courtship stimuli, regulated auditory tuning and sexual behavior. These findings demonstrate that maturation of auditory perception in flies is unexpectedly plastic and is acquired socially, providing a model to investigate how song learning regulates mating preference in insects.
 
 ## Introduction
 
@@ -28,7 +28,7 @@ In this study, we examined whether Drosophila IPI selectivity was tuned by the a
 
 ## Results
 
-## Experience-dependent tuning of IPI preference in male fruit flies
+### Experience-dependent tuning of IPI preference in male fruit flies
 
 In Drosophila melanogaster, IPIs ranging from 35 ms to 75 ms induce the sexual behavior of males vigorously (Yoon et al., 2013). Since the mean IPI of the courtship song in D. melanogaster is about 35 ms (Cowling and Burnet, 1981), it seems noteworthy that 75 ms IPI, which is out of the melanogaster IPI range (Arthur et al., 2013) and likely comes from another Drosophila species (for example, an evolutionarily far species Drosophila rosinae in fasciola subgroup) (Costa and Sene, 2002), induces sexual behavior as strongly as 35 ms IPI. We noticed that male flies that showed similar levels of response to both 35 ms and 75 ms IPI songs had been wing-clipped soon after eclosion and thus lacked experiences of wing-emitted sound (Yoon et al., 2013). Because Drosophilids gather in groups in feeding sites (Powell, 1997), we reasoned that flies probably had experiences of the courtship songs of other males in social interactions, and tested how the auditory experience affected the IPI selectivity.
 
@@ -44,7 +44,7 @@ To investigate whether the prior sound experience modifies the IPI selectivity, 
 
 **Figure 2.:** (A) Protocol for the training and test sessions. (B) Setup for the training and chaining test. In the training session, single-housed male flies were exposed to a training song for the first 6 days after eclosion. In the test session, song was delivered from a loudspeaker. Appropriate song typically drove the male flies to form male-male chains (chaining). Males in a chain are marked with red dots. (C, D) Chaining response to the conspecific song (C) or heterospecific song (D) after training. N, naïve group with no sound training (blue); E, experienced group with conspecific song training (red) or heterospecific song training (orange). The way to show the time courses of chaining behavior and the boxplot is similar to that depicted in Figure 1. N.S., not significant, p>0.05; ***p<0.001; Mann-Whitney U test versus naïve group.
 
-## Experience-dependent tuning of IPI preference in female fruit flies
+### Experience-dependent tuning of IPI preference in female fruit flies
 
 Females decide whether to mate with courting males (Dickson, 2008). To test whether the mating decision of females could also be tuned by a prior auditory experience, we probed song effects on copulation behavior (Figure 3A). First, we paired naïve females with naïve wing-clipped males to confirm the IPI selectivity in promoting copulation as reported (Bennet Clark and Ewing, 1969). Compared with the test condition without sound playback, either conspecific (35 ms) or heterospecific (75 ms) song playback promoted copulation significantly (Figure 3B). Both songs promoted copulation equally, showing that naïve females had no selectivity between these two songs. In contrast, playback of songs with shorter (15 ms) or longer (105 ms) IPIs did not promote copulation. These results are consistent with previous findings that only songs with certain IPIs in a specific range promoted copulation(Bennet Clark and Ewing, 1969).
 
@@ -60,15 +60,23 @@ Then we tested whether previous sound experience affects female copulation behav
 
 Taken together, previous experience of the conspecific song renders females more selective about the song when deciding to accept mating. Apparently, prior experience of the conspecific song fine-tunes the selectivity of the sound-evoked behavioral responses of both males and females, while prior experience of the heterospecific song does not.
 
-## Experience-dependent IPI tuning requires GABA synthesis
+### Experience-dependent IPI tuning requires GABA synthesis
 
 We next sought to identify the mechanism of this experience-dependent tuning of auditory behavior. In mammals, auditory experience governs the maturation of GABAergic inhibition that tunes the perception of sound in the auditory cortex (Dorrn et al., 2010). Thus we asked whether GABA signaling was involved in the auditory plasticity that we found, by testing the receptivity of female flies with reduced GABA synthesis. We knocked down Glutamic acid decarboxylase 1 (Gad1), a gene encoding the major GABA synthesis enzyme, in putative GABAergic neurons (Gad1-GAL4 > UAS-Gad1 RNAi; see Materials and methods for fly strains) in females, and trained them with conspecific or heterospecific song. The copulation tests with conspecific song playback revealed that both Gad1 knockdown and control (Gad1-GAL4 > RNAi background w1118) females in experienced groups responded to conspecific song as strongly as naïve females, irrespective of training experience (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34348/elife-34348-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Cumulative copulation rate in the conspecific song test (A) or heterospecific song test (B) after training Gad1 knockdown (left) and control (right) females. Naïve group (no sound training) and experienced groups (conspecific song training and heterospecific song training) are shown. The color code is the same with that in Figure 2. N, naïve; E, experienced. N.S., not significant, p>0.05; *p<0.05; ***p<0.001; Log rank test versus naïve group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34348/elife-34348-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The time-courses of the chain index in response to playback of conspecific song in Gad1 knockdown group (red, Gad1-GAL4/+; UAS-Gad1 RNAi/+) and control group (blue, Gad1-GAL4/+; +/+) are shown. The way to perform chaining test is similar to that described in the Method part. Sound playback starts at 5 min and lasts until 60 min. Error bars denotes s.e.m. n, number of behavioral chambers examined.
 
 In contrast, when we used heterospecific song in the tests, Gad1 knockdown females showed two phenotypes different from the control group (Figure 5B). The first phenotype came after training of conspecific song (Figure 5B, red lines); while control females reduced receptivity like wild-type females (Figure 5B, right), receptivity of Gad1 knockdown females stayed at the same level as in naïve females (Figure 5B, left). This result suggests the necessity of GABA in this experience-dependent IPI tuning. The second phenotype appeared after heterospecific song training (Figure 5B, orange lines); Gad1 knockdown flies decreased their copulation rate dramatically when compared with naïve flies (Figure 5B, left), whereas control flies (Figure 5B, right) and wild-type flies (Figure 4B) did not. These results demonstrate that although the response to the conspecific song in females was neither interrupted by Gad1 knockdown nor by training (Figure 5A), the response to heterospecific song was vulnerable to Gad1 knockdown and training (Figure 5B). Training with both conspecific song and heterospecific song might have modified properties of the neural circuit for the processing of heterospecific song. GABA synthesis is necessary to show the plasticity induced by conspecific song training, and to defend against the modulation induced by heterospecific song training as well.
 
 Together, these results prove that GABA synthesis is necessary for the IPI tuning induced by conspecific song training, which is reminiscent of the involvement of GABA in auditory plasticity exhibited in mammals and songbirds (Dorrn et al., 2010; Kotak et al., 2008; Yanagihara and Yazaki-Sugiyama, 2016).
 
-## GABA mediates the experience-dependent plasticity via Rdl receptors in pC1 neurons
+### GABA mediates the experience-dependent plasticity via Rdl receptors in pC1 neurons
 
 P1 neurons, a male-specific subset of pC1 neurons, are the mating command-like neurons that receive multimodal input from olfactory, gustatory, and auditory systems (Auer and Benton, 2016). Multimodal sensory information is transmitted to P1 neurons through excitatory and inhibitory pathways to achieve a stringent control of courtship decision-making in males (Clowney et al., 2015; Koganezawa et al., 2016). In these pathways, GABA transmits inhibitory signals to P1 neurons via GABAA-type Rdl receptors (Kallman et al., 2015; Koganezawa et al., 2016). Similarly, female pC1 neurons, the counterpart of male pC1 neurons (Koganezawa et al., 2016), regulate female receptivity by evaluating sexual signals from males including the courtship song and the male-specific pheromone cVA (Zhou et al., 2014). Under the hypothesis that GABA signaling via Rdl receptors might also regulate female pC1 neurons, we asked whether pC1 neurons in females were the target neurons of GABA that mediates the experience-dependent IPI tuning. We knocked down the expression of Rdl by driving Rdl RNAi specifically in female pC1 neurons, defined by the intersection of an enhancer trap line NP2631 and dsxFLP (Koganezawa et al., 2016). Consistent with the aforementioned results, in the conspecific song test both Rdl knockdown and control females in experienced groups responded similarly as naïve females did, irrespective of training experiences (Figure 6A). In the heterospecific song test, however, Rdl knockdown females, but not control and wild-type ones, kept the receptivity to the heterospecific song even after training with the conspecific song (Figure 6B). Accordingly, knockdown of Rdl in pC1 neurons abolishes the experience-dependent tuning of the IPI, indicating that GABA mediates this IPI tuning via GABAA receptors in pC1 neurons of females.
 
@@ -82,7 +90,7 @@ Interestingly, training with heterospecific song induced no changes in both Rdl 
 
 The courtship behavior of Drosophila melanogaster provides a simple model to understand how the innate perception of sensory signals is configured to direct the higher cognitive functions. Especially, the perception of auditory signals has attracted much attention from researchers because acoustic communication plays important roles in species identification and reproductive isolation of not only fruit flies, but also other animals such as birds (Catchpole, 1987), fishes (Amorim et al., 2015), frogs (Backwell and Jennions, 1993), and crickets (Hedwig, 2006). Here we identify a novel phenomenon revealing the experience-dependent auditory plasticity that shapes sexual preference in fruit flies (D. melanogaster). Analogous to the regulatory role of GABA in shaping auditory circuits of zebra finch (Yanagihara and Yazaki-Sugiyama, 2016), we demonstrate that GABA signaling also shapes auditory selectivity in flies. We further identify the receptors responsible for this signaling on a small subset of central neurons that mediate the tuning of IPI perception. Our findings document how the experience-dependent mechanism is incorporated with an innate auditory system and accordingly establish the fruit fly, with its abundant molecular-genetic tools, as a powerful model to investigate the mechanisms of auditory plasticity on the molecular and cellular levels.
 
-## Song experience shapes the IPI preference
+### Song experience shapes the IPI preference
 
 Temporal pattern of sound is a crucial feature in the communication signals of many animals, such as in bird songs, frog calls, cricket chirps, and human speech (Pollack, 2001). Particularly in lower-vertebrates and insects, understanding the simple patterns of sounds used in communication, such as the specific pulse rate, is important in deciphering the meanings of these signals (Alexander, 1962; Bass and McKibben, 2003; Schöneich et al., 2015). Fruit flies use the pulse songs with a species-specific IPI during courtship (Ewing and Bennet-Clark, 1968). In this study, we found that the flies’ initial wide-ranging IPI preference was refined by early auditory experience. Since the IPI distribution in the recorded natural courtship song is particularly enriched at around 35 ms (Arthur et al., 2013), young adult flies are highly likely to be exposed to this conspecific IPI emitted by other males. This experience might tune the IPI preference and predispose partner selection in sexual behavior later in life. Indeed, our results prove that social interaction during early adulthood tunes the IPI preference towards the conspecific IPI (35 ms) (Figure 1). This beautiful coordination between innate preference and experience-dependent refinement allows enough flexibility in mating, and reduces the risk of crossbreeding between species, which contributes to species isolation.
 
@@ -90,19 +98,17 @@ We find that only the experience of conspecific song tunes the auditory preferen
 
 We previously reported that male D. melanogaster showed equal behavioral preference towards IPIs between 35 ms and 75 ms (Yoon et al., 2013), which were used as conspecific and heterospecific songs in the present study. However, another report showed that male D. melanogaster preferentially responded to 35 ms over all other IPIs (Zhou et al., 2015). This discrepancy can now be explained by the experimental difference between these two studies, whether the male flies kept in a group have the experience of carrying wings (Zhou et al., 2015) or not (Yoon et al., 2013). As for how long the necessary experience is, and whether a critical period exists, further study is needed to answer these questions.
 
-## Experience-dependent learning refines the mating preference
+### Experience-dependent learning refines the mating preference
 
 Whether nature or nurture plays dominant roles in the formation of animal behavior has been debated for a long time, yet the courtship behavior of D. melanogaster, including its underlying sensory perception, has long been recognized to be innate. Numerous empirical evidences have supported the capability of single-reared flies to perform all the courtship steps spontaneously and completely (Auer and Benton, 2016; Baker et al., 2001; Hall, 1994). However, our results reveal that the specific sound experience is necessary to refine the auditory preference in sexual behavior, which for the first time suggests a mechanism of learning in the song discrimination of flies.
 
 In fact, animals in many species learn their mating preferences. One notable example is sexual imprinting, the process whereby mating preferences are affected by learning the species-specific characteristics at a very young age (Irwin and Price, 1999). As observed in birds (Ten Cate, 1999), fishes (Kozak et al., 2011), and sheep and goats (Owens et al., 1999), an early period of social interaction with parents or siblings helps the learner discriminate sex and species by learned phenotypic traits, and affects mating preference in the future (Verzijden et al., 2012). Here we provide evidence that fruit flies refine the IPI preference by sexual imprinting, which would reinforce reproductive isolation together with innate auditory perception. This sexual imprinting of courtship song is apparently different from the lessons learned from the successful courtship experience (Saleem et al., 2014) or unsuccessful courtship attempts (Griffith and Ejima, 2009), by which male flies become more competitive over other males, or learn to avoid either mated or heterospecific females. Previous behavioral studies also indicated that social experience in juvenile stage affected adult courtship behaviors of insects. In crickets, juvenile experience of acoustic sexual signals influenced the development of three traits in adult: reproductive tactics, reproductive investment, and body condition (Bailey et al., 2010). In fruit flies, young males courted by mature males with intact wings mated significantly faster than those that had been stored alone, suggesting auditory experience in immature stage might affect later courtship (McRobert and Tompkins, 1988). Consistent with these observations and going deeper, our study directly demonstrated, with the underlying mechanisms, that auditory experience during the immature stage shaped perception of courtship song, and directed the sexual behavior at the adult stage.
 
-## A new model to study auditory plasticity
+### A new model to study auditory plasticity
 
 Our findings greatly expand the understanding of the experience-dependent auditory plasticity in insects, whose mechanism is consistent with that of mammals and finches. In vertebrates, maturation of excitation-inhibition balance that governs sound perception requires acoustic experience. In rats, developmental sensory experience balances the excitation and inhibition in the primary auditory cortex (A1) (Dorrn et al., 2010), whose stereotyped sequential occurrence sharpens spike timing (Wehr and Zador, 2003). Hearing loss hinders the maturation of GABAergic transmission mediated by GABAA receptors in the auditory cortex of gerbils (Kotak et al., 2008). In zebra finch, experience-dependent recruitment of GABAergic inhibition in the auditory cortex is necessary to form the memory template of the tutor song (Yanagihara and Yazaki-Sugiyama, 2016). In flies, our results also suggest that song experience recruits GABAergic inhibition on the auditory pathway, and the coordination of excitation and inhibition controls auditory responses and behavioral output (Figure 7). Interestingly, the phenotypes of Gad1 knockdown in GABAergic neurons and Rdl knockdown in pC1 neurons were different when females were tested with heterospecific song (Figures 5 and 6). This finding suggests that there are at least two distinct GABAergic pathways to control the experience-dependent auditory plasticity. How these GABAergic pathways are organized cooperatively to shape the IPI preference awaits further analysis.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/34348/elife-34348-fig7-v1.jpg)
-
-**Figure 7.:** Drosophila.
 
 Interestingly, the combination of excitation and inhibition that modulates the mating decision in flies is not restricted to the auditory system, but is also conserved in olfactory and gustatory systems (Auer and Benton, 2016; Clowney et al., 2015; Kallman et al., 2015). The difference is that the sexual circuitry in the chemosensory modalities is thought to be hard-wired (Auer and Benton, 2016; Hall, 1994; Pan and Baker, 2014), while the inhibition we find in the auditory system matures with experience. Intriguingly, all these inhibitions found in olfactory, gustatory, and auditory pathways function directly on the pC1 neurons, strengthening the role of pC1 neurons as a crucial neural circuit node for multimodal integration (Auer and Benton, 2016; Clowney et al., 2015; Kallman et al., 2015).
 
@@ -110,17 +116,104 @@ The discovery that only the training of conspecific song refines the IPI prefere
 
 ## Materials and methods
 
-## Experimental animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>Rdl</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0004244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>GAD1</td>
+      <td>NA</td>
+      <td>FLYB: FBgn0004516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>other</td>
+      <td></td>
+      <td>gift from K. Ito</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>Gad1-GAL4</td>
+      <td>PMID: 12408848</td>
+      <td></td>
+      <td>gift from K. Ito</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>UAS-Gad1 RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 32344; RRID: Fly-Base_FBst0459538</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 60000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>UAS-Rdl RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDRC: 52903; RRID: BDSC_52903</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>TRiP RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDRC: 36304; RRID: BDSC_36304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>tubP&gt;GAL80&gt;; NP2631-GAL4/CyO; dsxFLP/TM2</td>
+      <td>PMID: 27185554</td>
+      <td></td>
+      <td>gift from D. Yamamoto</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ChaIN (ver. 3)</td>
+      <td>PMID: 28701929</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental animals
 
 D. melanogaster was raised on standard yeast-based media at 25°C and in 40% to 60% relative humidity on a 12 hr light/dark cycle. Canton-S (Hotta-lab strain, a gift from K. Ito) was used as a wild-type strain. For knockdown experiments, the following transgenic flies were used: w; Gad1-GAL4 (Ng et al., 2002) (a gift from K. Ito), UAS-Gad1 RNAi (GD line; RRID: FlyBase_FBst0459538) and its control line w1118 (VDRC ID: 60000) (Vienna Drosophila Resource Center), UAS-Rdl RNAi (VALIUM20; RRID: BDSC_52903) and its control line TRiP RNAi (RRID: BDSC_36304) (Bloomington Drosophila Stock Center), and tubP>GAL80>; NP2631-GAL4/CyO; dsxFLP/TM2 (Koganezawa et al., 2016) (a gift from D. Yamamoto). Genotypes of flies used for each experiment are listed in Supplementary file 1. Flies that were 6 to 7 day after eclosion were used for behavioral tests. The wings of males were clipped on the day of eclosion, unless otherwise noted.
 
 The neurons labeled by Gad1-GAL4 show essentially consistent distributions with those identified by in situ hybridization against Gad1 mRNA (Okada et al., 2009). Silencing these Gad1-GAL4 positive neurons in the adult stage did not affect fly survival (Muthukumar et al., 2014). The Gad1 RNAi used in this study was reported to knock down the Gad1 mRNA level to approximately 60% of wild type (Jeong et al., 2016). In our study, no obvious behavioral defects were observed in Gad1 knockdown flies, and male Gad1 knockdown flies still responded normally to conspecific courtship song when tested at 7 days after eclosion (Figure 5—figure supplement 1). The efficacy of UAS-Rdl RNAi has been demonstrated (Franco et al., 2017; Koganezawa et al., 2016).
 
-## Male experiment without the training session
+### Male experiment without the training session
 
 Virgin males were collected within 10 hr after eclosion, and then housed in three different conditions: (1) grouped without wings, (2) grouped with intact wings, and (3) single-reared with intact wings. Flies housed in the first condition (grouped without wings) were prepared as described previously (Yoon et al., 2013). In brief, their wings were clipped with forceps during brief anesthesia on ice soon after eclosion and the males were kept in a male-only group of 6 to 8. Flies housed in the second (grouped with intact wings) and third (single with intact wings) conditions were kept with intact wings for 5 to 6 days, either in a group of 6 to 8 male flies or singly. Only one day before the test, the wings of flies housed in the second and third conditions were also clipped. The chaining behavior of all the males housed in three conditions was tested 6 to 7 days after eclosion.
 
-## Training
+### Training
 
 Training session started on the day of eclosion. Adult virgin males and females were collected within 8 hr after eclosion under anesthesia on ice, and the wings of males were clipped. Each fly, whether a male or a female, was introduced gently to a training capsule and placed in front of a loudspeaker (FF225WK, FOSTEX, Foster Electric Company, Tokyo, Japan). As experienced group, flies were continuously exposed to one particular training song for 6 days of training (Figure 2A). Training song was an artificial pulse song comprised of the repetition of 1 s pulse burst and a subsequent 2 s pause, in which the pulses in the pulse burst had an IPI of 35 ms (‘conspecific song’) or an IPI of 75 ms (‘heterospecific song’) (Yoon et al., 2013). Intrapulse frequency (IPF) of both IPI songs was set to be 167 Hz. As naïve group, flies were placed in front of the loudspeaker for 6 days after eclosion but not given any sound exposure.
 
@@ -132,16 +225,16 @@ Sound playback was controlled by the Windows Media Player on a tablet PC (Window
 
 After the 6 day training, male flies were collected into a group of seven without anesthesia, and transferred to a vial containing fly food. Female flies were still kept in the training capsules singly without sound playback until the copulation test. After one-night rest without any sound playback, all flies (7 days after eclosion) were subjected to the behavioral tests in the next morning (ZT 0–3) (Figure 2A).
 
-## Behavioral tests
+### Behavioral tests
 
-## Male-male chaining test
+#### Male-male chaining test
 
 For males, the sound-evoked chaining test was performed as described (Yoon et al., 2013) (Figure 2B). Six flies were loaded into one lane of an acoustic behavior chamber (Inagaki et al., 2010) and placed in front of a loudspeaker with a distance of about 11 cm. As the test song, the artificial pulse song with 35 ms IPI or 75 ms IPI as used in the training session was delivered from a loudspeaker with an amplifier (Lepai LP-2020A + NFJ Edition, Bukang Electrics, Jieyang, China). Mean baseline-to peak amplitude of its particle velocity was 9.2 mm/s (Ishikawa et al., 2017). The flies’ contour was outlined by a backlit LED light box (ComicMaster Tracer, Too Marker Products, Tokyo, Japan), and captured by a monochrome camera (Himawari GE60, Library, Tokyo, Japan) with a zoom lens (Lametar 2.8/25 mm, Jenoptik GmbH, Jena, Germany). Flies were not exposed to sound for 5 min, and then exposed to an acoustic stimulus that lasted for 6.5 min. The recorded video was then down-sampled to 1 Hz and analyzed off-line using ChaIN method (Yoon et al., 2013). We measured the number of only the follower flies in chains as the chain index using ChaIN version 3 (Ishikawa et al., 2017), which is available at http://www.bio.nagoya-u.ac.jp/~NC_home/chain_E.html. The chain index between 5 min and the end of the sound playback were summed for comparison (summed chain index).
 
-## Female copulation test
+#### Female copulation test
 
 For females, their receptivity was evaluated by the time course of cumulative copulation and the latency to accept copulation. To monitor the training effect on females, we paired naïve or trained females with the naïve wild-type males (7 day old, wings clipped). The test chamber, made of plexiglass, was made up by eight circular chambers (15 mm diameter, 3 mm depth) with their bottom covered with mesh for sound penetration (Figure 3A). A pair of female and male flies was gently aspirated into one of the eight chambers without anesthesia. A pulse song was delivered to flies by a loudspeaker (Daito Voice AR-10N, Tokyo Cone Paper MFG. Co. Ltd. Saitama, Japan) placed 3.9 cm underneath the chambers. The sound particle velocity was 9.2 mm/s. Song playback was started at the same time as video recording was started. Behaviors of flies were recorded for 30 min with a web camera (Logicool HD Webcam C270, Tokyo, Japan). Copulation timing was analyzed manually from the video playback. Inhibition index = (copulation ratioNaïve - copulation ratioExperienced)/copulation ratioNaïve.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed with R (version 3.0.3). Mann-Whitney U test (two-tailed) was used to compare two groups of samples in the chaining behavior. Kaplan-Meier curves were generated using R and Log rank test was performed to compare females’ accumulative copulation rate between two groups in the copulation tests. The Kruskal–Wallis test (two-tailed) followed by Scheffe’s test was used to compare the copulation latency. The detailed statistical results are shown in Supplementary file 2. The boxplot was drawn with ggplot2 package of R. Boxplots display the median of each group with the 25th and 75th percentiles and whiskers denote 1.5x the inter-quartile range.

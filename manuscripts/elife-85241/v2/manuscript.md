@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05qbk4x57 State Key Laboratory of Mycology, Institute of Microbiology, Chinese Academy of Sciences Beijing China
-2. https://ror.org/05qbk4x57 College of Life Sciences, University of the Chinese Academy of Sciences Beijing China
-3. https://ror.org/0040axw97 School of Life Sciences, Yunnan University, Kunming Yunnan China
-4. https://ror.org/0064kty71 Key Laboratory of Gene Engineering of the Ministry of Education, State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China
+1. State Key Laboratory of Mycology, Institute of Microbiology, Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+2. College of Life Sciences, University of the Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+3. School of Life Sciences, Yunnan University, Kunming Yunnan China ([ROR:0040axw97](https://ror.org/0040axw97))
+4. Key Laboratory of Gene Engineering of the Ministry of Education, State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
 5. MOA Key Laboratory of Soil Microbiology, College of Biological Sciences, China Agricultural University Beijing China
 6. Department of Physiology, University of Texas Southwestern Medical Center Dallas United States
 
@@ -28,7 +28,7 @@
 
 ## Abstract
 
-Circadian clocks are evolved to adapt to the daily environmental changes under different conditions. The ability to maintain circadian clock functions in response to various stresses and perturbations is important for organismal fitness. Here, we show that the nutrient-sensing GCN2 signaling pathway is required for robust circadian clock function under amino acid starvation in Neurospora . The deletion of GCN2 pathway components disrupts rhythmic transcription of clock gene frq by suppressing WC complex binding at the frq promoter due to its reduced histone H3 acetylation levels. Under amino acid starvation, the activation of GCN2 kinase and its downstream transcription factor CPC-1 establish a proper chromatin state at the frq promoter by recruiting the histone acetyltransferase GCN-5. The arrhythmic phenotype of the GCN2 kinase mutants under amino acid starvation can be rescued by inhibiting histone deacetylation. Finally, genome-wide transcriptional analysis indicates that the GCN2 signaling pathway maintains robust rhythmic expression of metabolic genes under amino acid starvation. Together, these results uncover an essential role of the GCN2 signaling pathway in maintaining the robust circadian clock function in response to amino acid starvation, and demonstrate the importance of histone acetylation at the frq locus in rhythmic gene expression.
+Circadian clocks are evolved to adapt to the daily environmental changes under different conditions. The ability to maintain circadian clock functions in response to various stresses and perturbations is important for organismal fitness. Here, we show that the nutrient-sensing GCN2 signaling pathway is required for robust circadian clock function under amino acid starvation in Neurospora. The deletion of GCN2 pathway components disrupts rhythmic transcription of clock gene frq by suppressing WC complex binding at the frq promoter due to its reduced histone H3 acetylation levels. Under amino acid starvation, the activation of GCN2 kinase and its downstream transcription factor CPC-1 establish a proper chromatin state at the frq promoter by recruiting the histone acetyltransferase GCN-5. The arrhythmic phenotype of the GCN2 kinase mutants under amino acid starvation can be rescued by inhibiting histone deacetylation. Finally, genome-wide transcriptional analysis indicates that the GCN2 signaling pathway maintains robust rhythmic expression of metabolic genes under amino acid starvation. Together, these results uncover an essential role of the GCN2 signaling pathway in maintaining the robust circadian clock function in response to amino acid starvation, and demonstrate the importance of histone acetylation at the frq locus in rhythmic gene expression.
 
 ## Introduction
 
@@ -44,59 +44,103 @@ In this study, we discovered that the disruption of the GCN2 (CPC-3) signaling p
 
 ## Results
 
-## CPC-3 and CPC-1 are required for robust circadian rhythms under amino acid starvation
+### CPC-3 and CPC-1 are required for robust circadian rhythms under amino acid starvation
 
 To investigate whether the nutrient-sensing GCN2 pathway is involved in regulating circadian clock function under amino acid starvation, we created the cpc-3 and cpc-1 knockout mutants (see Materials and methods). In Neurospora, cpc-3 and cpc-1 encode for the GCN2 and GCN4 homolog, respectively. As expected, the CPC-3-mediated eIF2α phosphorylation and CPC-1 induction by 3-aminotriazole (3-AT) treatment were completely abolished in the cpc-3KO strain (Figure 1—figure supplement 1A). 3-AT is an inhibitor of the histidine synthesis enzyme encoded by his-3 which triggers the amino acid starvation response (Natarajan et al., 2001). On the other hand, CPC-1 expression and its induction by 3-AT were eliminated in the cpc-1KO mutant (Figure 1—figure supplement 1B). The circadian conidiation rhythms of the cpc-3KO and cpc-1KO mutants were examined by race tube assays. Under a normal growth condition (0 mM 3-AT), cpc-3 deletion had no effect on the circadian period but cpc-1 deletion led to the period lengthening of ~1.7 hr (Figure 1A). The long period of cpc-1KO strain could be rescued by the expression of Myc.CPC-1 (Figure 1—figure supplement 1C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig1-v2.jpg)
+
+**Figure 1.:** (A) Race tube assay showing that amino acid starvation (3-aminotriazole [3-AT] treatment) disrupted circadian conidiation rhythm of the cpc-3KO and cpc-1KO strains. 0 mM 3-AT is the normal growth condition. (B) Luciferase reporter assay showing that amino acid starvation disrupted rhythmic expression of frq promoter-driven luciferase of the cpc-3KO and cpc-1KO strains. A frq-luc transcriptional fusion construct was expressed in cpc-3KO and cpc-1KO strains grown on the fructose-glucose-sucrose FGS-Vogel’s medium with the indicated concentrations of 3-AT, and the luciferase signal was recorded using a LumiCycle in constant darkness (DD) for more than 7 days. Normalized data with the baseline luciferase signals subtracted are shown. (C) Western blot showing that amino acid starvation dampened rhythmic expression of FRQ protein of the cpc-3KO and cpc-1KO strains at the indicated time points in DD (n = 3; WT: p = 5.00E−08, cpc-3KO: p = 0.0016, cpc-1KO: p = 0.0004, RAIN; WT vs cpc-3KO: mesor p = 0.1421, amplitude p = 0.0774, phase p = 0.4319; WT vs cpc-1KO: mesor p = 0.0614, amplitude p = 0.1920, phase p = 0.4404, CircaCompare). The left panel showing that protein extracts were isolated from WT, cpc-3KO, and cpc-1KO strains grown in a circadian time course in DD and probed with FRQ antibody. The right panel showing that the densitometric analyses of the results of three independent experiments. (D) Northern blot showing that amino acid starvation dampened rhythmic expression of frq mRNA of the cpc-3KO and cpc-1KO strains at the indicated time points in DD (n = 3; WT: p = 6.56E−05, cpc-3KO: p = 0.0039, cpc-1KO: p > 0.05, RAIN; WT vs cpc-3KO: mesor p = 0.1153, amplitude p = 0.4316, phase p = 0.0788, CircaCompare). The densitometric analyses of the results from three independent experiments were shown on the right panel. Error bars indicate standard deviation (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) eIF2α was phosphorylated and CPC-1 was activated in WT but not cpc-3KO strain in the presence of 3 mM 3-aminotriazole (3-AT). Western blot of proteins from WT and cpc-3KO strains treated (+) or not (−) with 3-AT using P-eIF2α and CPC-1 antibodies. Mem: stained membrane (loading control). (B) CPC-1 was activated in the presence of 3 mM 3-AT. Western blot of proteins from WT and cpc-1KO strains harvested in the indicated hours after 3-AT treatment using CPC-1 antibody. Mem: stained membrane. (C) Race tube assay showing that expression of Myc-CPC-1 rescued the prolonged circadian period of cpc-1KO strain. (D) Race tube assay showed that the his-3− strain could grow with 1.0 × 10−2 mg/ml histidine, and exhibited normal circadian conidiation rhythm, however, the cpc-3KO his-3− strains lost circadian conidiation rhythm with limited histidine at the concentration of 1.0 × 10−2 mg/ml.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Luciferase reporter assay showing loss of circadian rhythm in the cpc-3KO and cpc-1KO strain with 3-aminotriazole (3-AT; raw data are shown). (B) Luciferase reporter assay showing normal circadian period of cpc-3KO strain and prolonged circadian period of cpc-1KO strain without 3-AT. Raw data (up panels) and normalized data (down panels) with the baseline luciferase signals subtracted are shown. A frq-luc transcriptional fusion construct was expressed in cpc-3KO and cpc-1KO strains grown on the FGS-Vogel’s medium, and the luciferase signal was recorded using a LumiCycle in constant darkness (DD) for more than 7 days. (C) Western blot assay showing the rhythmic expression of FRQ protein in the cpc-3KO and cpc-1KO strains at the indicated time points in DD (n = 3; WT: p = 4.49E−05, cpc-3KO: p = 0.0003, cpc-1KO: p = 0.0017, RAIN; WT vs cpc-3KO: mesor p = 0.3923, amplitude p = 0.9627, phase p = 0.3164; WT vs cpc-1KO: mesor p = 0.8562, amplitude p = 0.3505, phase p = 0.2841, CircaCompare). The left panel showing that protein extracts were isolated from WT, cpc-3KO, and cpc-1KO strains grown in a circadian time course in DD and probed with FRQ antibody. The right panel showing that the densitometric analyses of the results of three independent experiments. (D) Northern blot assay showing the rhythmic expression of frq mRNA in the cpc-3KO and cpc-1KO strains at the indicated time points in DD (n = 3; WT: p = 0.0153, cpc-3KO: p = 0.0026, cpc-1KO: p = 0.0031, RAIN; WT vs cpc-3KO: mesor p = 0.0416, amplitude p = 0.7082, phase p = 0.4328; WT vs cpc-1KO: mesor p = 0.1113, amplitude p = 0.8360, phase p = 0.1145, CircaCompare). The densitometric analyses of the results from three independent experiments are shown on the right panel. Error bars indicate standard deviations (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
 
 To investigate how amino acid starvation affects circadian clock, we treated the wild-type (WT), cpc-3KO, and cpc-1KO strains with different concentrations of 3-AT. As shown in Figure 1A, although treatment with 3 or 4 mM 3-AT resulted in modest inhibition of the WT growth rate, the robust circadian conidiation rhythms were maintained. In the cpc-3KO and cpc-1KO strains, however, addition of 3 or 4 mM 3-AT resulted in severe inhibition of growth rates and the loss of circadian conidiation rhythms. To exclude the effect of 3-AT on other target genes, we examined the circadian rhythm of the his-3− strain, which contained a single mutation in the his-3 gene required for histidine synthesis and could not grow in the medium without histidine. Race tube assays showed that the his-3− strain grew normally and exhibited a robust circadian conidiation rhythm in the presence of histidine (1.0 × 10−2 mg/ml). Although addition of the same amount of histidine could rescue the growth of the cpc-3KO his-3− strain, it could not rescue its circadian conidiation rhythm (Figure 1—figure supplement 1D), indicating that CPC-3 is required for robust circadian rhythms under histidine starvation stress.
 
 To confirm the loss of circadian rhythms at the molecular level, we introduced a frq promoter-driven luciferase reporter into the cpc-3KO and cpc-1KO strains. As shown in Figure 1B and Figure 1—figure supplement 2A, B, the robust circadian rhythms of luciferase activity seen in the WT strain were severely dampened or arrhythmic in the cpc-3KO and cpc-1KO strains upon 3 mM 3-AT treatment. Consistent with these results, western blot analysis showed that, after the initial light/dark transition, rhythms of FRQ levels and its phosphorylation were dampened in the cpc-3KO and cpc-1KO strains in the presence of 3-AT (WT: p = 5.00E−08, cpc-3KO: p = 0.0016, cpc-1KO: p = 0.0004) (Figure 1C and Figure 1—figure supplement 2C). The statistical tests of circadian rhythms were performed using a circadian statistical analysis tool CircaCompare (Parsons et al., 2020) (see Materials and methods). Northern blot analysis showed that the circadian rhythms of frq mRNA in the cpc-3KO and cpc-1KO strains were also dampened in the presence of 3-AT (WT: p = 6.56E−05, cpc-3KO: p = 0.0039, cpc-1KO: p > 0.05) and the levels of frq mRNA were constantly low in DD (Figure 1D and Figure 1—figure supplement 2D). Together, these results suggest that the GCN2 pathway is required for a functional clock by regulating rhythmic frq transcription in response to amino acid starvation.
 
-## CPC-3 and CPC-1 are required for rhythmic WCC binding in response to amino acid starvation
+### CPC-3 and CPC-1 are required for rhythmic WCC binding in response to amino acid starvation
 
 Since 3-AT treatment resulted in low frq mRNA levels in the cpc-3KO and cpc-1KO strains (Figure 1D), we first examined the protein levels of WC-1 and WC-2 and found that their levels were higher in the mutants than those in the WT strain at different time points (Figure 2A, B). We then performed WC-2 chromatin immunoprecipitation (ChIP) assays to examine whether the WCC binding to the frq promoter was affected. As shown in Figure 2—figure supplement 1A, WC-2 rhythmically bound to the frq C-box in the WT, cpc-3KO, and cpc-1KO strains without 3-AT treatment (WT: p = 2.60E−07, cpc-3KO: p = 0.0016, cpc-1KO: p = 1.06E−05). However, 3-AT treatment resulted in constant low levels of WC-2 binding to the frq C-box during a circadian cycle in both cpc-3KO and cpc-1KO strains (Figure 2C, D). These results indicate that the loss of circadian rhythms in the cpc-3KO and cpc-1KO strains under amino acid starvation is caused by loss of rhythmic frq transcription, due to impaired WCC binding at the frq promoter.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig2-v2.jpg)
+
+**Figure 2.:** Western blot assay showing that WCC protein levels were elevated in the cpc-3KO (A) and cpc-1KO (B) strains after 3 mM 3-aminotriazole (3-AT) treatment. Protein extracts were isolated from WT, cpc-3KO, and cpc-1KO strains grown in the indicated time points in DD and probed with WC-1 and WC-2 antibodies. Chromatin immunoprecipitation (ChIP) assay showing that amino acid starvation disrupted rhythmic WC-2 binding at the promoter of frq gene in the cpc-3KO (n = 3; WT: p = 1.84E−05, cpc-3KO: p > 0.05) (C) or cpc-1KO strains (n = 3; WT: p = 0.0025, cpc-1KO: p > 0.05) (D). Samples were grown for the indicated number of hours in DD prior to harvesting and processing for ChIP using WC-2 antibody. Occupancies were normalized by the ratio of ChIP to Input DNA. Error bars indicate standard deviation (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Chromatin immunoprecipitation (ChIP) assay showing that deletion of cpc-3 or cpc-1 did not dramatically affect WC-2 binding at the promoter of frq gene without 3-aminotriazole (3-AT; n = 3; WT: p = 2.60E−07, cpc-3KO: p = 0.0016, cpc-1KO: p = 1.06E−05, RAIN; WT vs cpc-3KO: mesor p = 0.4797, amplitude p = 0.0238, phase p = 0.7395; WT vs cpc-1KO: mesor p = 0.1151, amplitude p = 0.1311, phase p = 0.0039, CircaCompare). Samples were grown for the indicated number of hours in DD prior to harvesting and processing for ChIP using WC-2 antibody. Occupancies were normalized by the ratio of ChIP to Input DNA. Error bars indicate standard deviation (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used. Western blot assay showing that WCC was hypophosphorylated in the cpc-3KO (B) and cpc-1KO (C) strains in the presence of 3 mM 3-AT. Proteins were extracted by protein extraction buffer with PPase inhibitors and loaded in each protein lane of 7.5% sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gels containing a ratio of 149:1 acrylamide/bisacrylamide. The faster mobility shift indicated hypophosphorylation levels of WC-1 and WC-2. (D) ChIP assay showing slightly decreased histone H3ac levels at the promoter of frq gene in the cpc-1KO strain without 3-AT at the indicated time points in DD (n = 3; WT: p = 0.0025, cpc-1KO: p > 0.05). Error bars indicate standard deviations (n = 3). *p < 0.05; Student’s t test was used.
+
 Because WCC phosphorylation inhibited its transcriptional activation activity (He et al., 2006; He and Liu, 2005; Lee et al., 2000; Schafmeier et al., 2005; Wang et al., 2019), we also examined WCC phosphorylation profiles and found that 3-AT treatment resulted in hypophosphorylation of WC-1 and WC-2 (which is usually associated with WCC activation) in the cpc-3KO and cpc-1KO strains (Figure 2—figure supplement 1B, C). Thus, their reduced WCC binding at the frq promoter is not caused by WCC hyperphosphorylation. It should be noted that the overall phosphorylation status of WCC does not always reflect its activity in driving frq transcription, which is possibly due to the unknown function of multiple key phosphosites on WCC (Wang et al., 2019; Zhou et al., 2018).
 
-## CPC-1 is required for the maintenance of chromatin structure in response to amino acid starvation
+### CPC-1 is required for the maintenance of chromatin structure in response to amino acid starvation
 
 The low WC-2 binding at the frq promoter prompted us to examine the chromatin structure of the frq promoter. We first performed ChIP assay to examine the histone and its acetylation levels at the frq promoter in the WT strain. Although amino acid starvation had little effect on the histone H2B levels (Figure 3A), it led to significantly decreased histone H3 acetylation levels (H3 acetylated at the N-terminus) at the frq promoter at high concentrations of 3-AT (Figure 3B). These results suggest that amino acid starvation can affect frq transcription by reducing the histone acetylation levels at the frq promoter.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig3-v2.jpg)
 
-**Figure 3.:** Chromatin immunoprecipitation (ChIP) assay showing that amino acid starvation slightly increased histone H2B levels (A) and dramatically decreased histone H3ac levels (B) at the promoter of frq gene in the WT strain at DD18 at the indicated concentration of 3-aminotriazole (3-AT). Relative H3ac levels were normalized with H2B levels. (C, D) ChIP assay showing that amino acid starvation slightly increased histone H2B levels (n = 3; WT: p = 3.85E−04, cpc-1: p = 0.0364, RAIN; WT vs KOcpc-1: mesor p = 0.0312, amplitude p = 0.2155, phase p = 0.2995, CircaCompare) (KOC) and dramatically decreased histone H3ac levels (n = 3; WT: p = 0.0168, cpc-1: p > 0.05) (KOD) at the promoter of frq gene in the cpc-1 strain at the indicated time points in DD. Error bars indicate standard deviations (KOn = 3). *p < 0.05; ***p < 0.001; Student’s t test was used.Figure 3—source data 1.Figure 3A.Figure 3—source data 2.Figure 3B.Figure 3—source data 3.Figure 3C.Figure 3—source data 4.Figure 3D.
+**Figure 3.:** Chromatin immunoprecipitation (ChIP) assay showing that amino acid starvation slightly increased histone H2B levels (A) and dramatically decreased histone H3ac levels (B) at the promoter of frq gene in the WT strain at DD18 at the indicated concentration of 3-aminotriazole (3-AT). Relative H3ac levels were normalized with H2B levels. (C, D) ChIP assay showing that amino acid starvation slightly increased histone H2B levels (n = 3; WT: p = 3.85E−04, cpc-1KO: p = 0.0364, RAIN; WT vs cpc-1KO: mesor p = 0.0312, amplitude p = 0.2155, phase p = 0.2995, CircaCompare) (C) and dramatically decreased histone H3ac levels (n = 3; WT: p = 0.0168, cpc-1KO: p > 0.05) (D) at the promoter of frq gene in the cpc-1KO strain at the indicated time points in DD. Error bars indicate standard deviations (n = 3). *p < 0.05; ***p < 0.001; Student’s t test was used.
 
 We then examined whether the CPC-3 and CPC-1 signaling pathway was involved in regulating chromatin structure at the frq promoter in response to amino acid starvation. Histone H2B and H3ac ChIP assays at different circadian time points showed that the relative histone H3ac levels were slightly decreased in the cpc-1KO strain compared to the WT strain under normal condition (Figure 2—figure supplement 1D). H2B levels were not markedly different between the WT and cpc-1KO strains in the presence of 3 mM 3-AT (Figure 3C). However, the relative histone H3ac levels were very different in these two strains in the presence of 3 mM 3-AT: it was rhythmic with a peak at DD18 in the WT strain but was dramatically reduced and arrhythmic in the cpc-1KO strain at different time points in DD (WT: p = 0.0168, cpc-1KO: p > 0.05) (Figure 3D). These results indicate that CPC-1 is required for maintaining the proper histone acetylation status at the frq promoter under amino acid starvation. The low H3ac levels at the frq promoter, which is critical for transcription activation, results in constant low WCC binding and arrhythmic frq transcription in the cpc-1KO strain.
 
-## CPC-1 recruits GCN-5 to activate frq transcription in response to amino acid starvation
+### CPC-1 recruits GCN-5 to activate frq transcription in response to amino acid starvation
 
 To determine how CPC-1 is involved in regulating histone acetylation levels at the frq locus, we examined the occupancy of CPC-1 at the frq promoter by ChIP assays using CPC-1 antibody. As shown in Figure 4A and Figure 4—figure supplement 1A, CPC-1 was found to be rhythmically enriched at the frq promoter in the WT strain but not in the cpc-1KO strain under normal (WT: p = 8.37E−06, cpc-1KO: p > 0.05) or amino acid starvation (WT: p = 7.64E−05) conditions in DD, peaking at ~DD14, a time point corresponding to the peak of frq mRNA levels. Co-immunoprecipitation (Co-IP) assay showed that CPC-1 did not associate with WC-1 or WC-2 (Figure 4—figure supplement 1B), suggesting that CPC-1 and WCC bind independently to the frq promoter.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig4-v2.jpg)
+
+**Figure 4.:** (A) Chromatin immunoprecipitation (ChIP) assay showing that CPC-1 rhythmically bound at the promoter of frq gene (n = 3; WT: p = 8.37E−06, cpc-1KO: p > 0.05). WT and cpc-1KO strains grown for the indicated number of hours in DD. Samples were crosslinked with formaldehyde and harvested for ChIP using CPC-1 antibody. CPC-1 ChIP occupancies were normalized by the ratio of ChIP to Input DNA. (B) Co-immunoprecipitation (Co-IP) assay showing that Flag.ADA-2 interacted with Myc.GCN-5 with or without 3 mM 3-aminotriazole (3-AT). Flag.ADA-2 and Myc.GCN-5 were co-expressed in the WT strain and immunoprecipitation was performed using Flag antibody. (C) Co-IP assay showing that Flag.ADA-2 interacted with Myc.CPC-1 with or without 3 mM 3-AT. Flag.ADA-2 and Myc.CPC-1 were co-expressed in the WT strain and immunoprecipitation was performed using Flag antibody. (D) ChIP assay showing that rhythmic GCN-5 binding at the promoter of frq gene was dampened in the cpc-1KO strain (n = 3; WT: p = 0.0006, cpc-1KO: p > 0.05). Samples were grown for the indicated number of hours in DD prior to harvesting and processing for ChIP as described in (A). Error bars indicate standard deviations (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Chromatin immunoprecipitation (ChIP) assay showing that CPC-1 rhythmically bound at the promoter of frq gene with 3 mM 3-aminotriazole (3-AT) (n = 3; WT: p = 7.64E−05). WT and cpc-1KO strains grown with 3 mM 3-AT for the indicated number of hours in DD. Samples were crosslinked with formaldehyde and harvested for ChIP using CPC-1 antibody. CPC-1 ChIP occupancies were normalized by the ratio of ChIP to Input DNA. Error bars indicate standard deviation (n = 3). **p < 0.01; ***p < 0.001; Student’s t test was used. (B) IP assay showing that CPC-1 did not interact with WCC. Myc-CPC-1 was expressed in the WT strain and immunoprecipitation was performed using Myc antibody. (C) Co-immunoprecipitation (Co-IP) assay showing that GCN-5 interacted with WC-1 and WC-2. Myc-GCN-5 was expressed in the WT strain and immunoprecipitation was performed using Myc antibody.
 
 How does the GCN2 signaling pathway regulate histone acetylation in response to amino acid starvation? The yeast GCN4 was previously shown to recruit the histone acetyltransferase GCN5 containing (Spt-Ada-Gcn5 acetyltransferase) SAGA complex to selective gene promoters, likely through its physical interaction with the ADA2 subunit (Barlev et al., 1995; Drysdale et al., 1998; Kuo et al., 2000). To test this possibility, we performed Co-IP assay to check the interaction between CPC-1 and the SAGA complex in Neurospora in strains expressing the epitope-tagged Neurospora SAGA homologs. As shown in Figure 4B, Myc-tagged GCN-5 was efficiently immunoprecipitated by the Flag-tagged ADA-2, indicating the existence of an SAGA complex in Neurospora. Although the Myc.GCN-5, MYC.CPC-1 or Flag.ADA-2 protein levels were repressed by 3 mM 3-AT treatment (potentially due to global translational inhibition by eIF2α phosphorylation) (Karki et al., 2020), the interaction between GCN-5 and ADA-2 was almost the same under either normal or amino acid starved conditions (IP was normalized with Input). Importantly, Myc.CPC-1 was also found to associate specifically with Flag.ADA-2 with/without 3-AT treatment (Figure 4C), suggesting that CPC-1 can recruit the SAGA complex to the frq promoter through its ADA-2 subunit to regulate histone acetylation levels at the frq locus under normal or amino acid starvation conditions. Furthermore, immunoprecipitation assays showed that WC-1 and WC-2 also interacted with Myc.GCN-5 (Figure 4—figure supplement 1C). These results suggest that CPC-1 can regulate histone acetylation by recruiting the SAGA complex to the frq promoter.
 
 To further confirm if CPC-1 can recruit GCN5 to the frq promoter, we performed ChIP assay to examine the occupancy of GCN-5 at the frq promoter. As shown in Figure 4D, Myc-tagged GCN-5 rhythmically bound at the frq promoter in DD in the WT strain but its binding was constantly low and arrhythmic in the cpc-1KO strain (WT: p = 0.0006, cpc-1KO: p > 0.05), suggesting that CPC-1 recruits the GCN-5 containing SAGA complex to the frq promoter to allow rhythmic histone acetylation levels, which maintain rhythmic WC-2 binding and thus rhythmic frq transcription.
 
-## GCN-5 is required for rhythmic H3ac at the frq promoter
+### GCN-5 is required for rhythmic H3ac at the frq promoter
 
 GCN-5 has been shown to regulate light induction and oxidative stress response in Neurospora (Grimaldi et al., 2006; Qi et al., 2018), but its role in the circadian clock remains unclear. To determine the function of GCN-5 in the circadian clock, we created the gcn-5 knockout mutant, and found that it exhibited slow growth and lacked a conidiation rhythm (Figure 5A). To determine its circadian clock at the molecular level, we introduced the FRQ-LUC reporter (luciferase fused at the C terminus of the FRQ protein) into the gcn-5KO strain (Larrondo et al., 2015). As shown in Figure 5B and Figure 5—figure supplement 1B, a robust circadian rhythm of luciferase activity was observed in the WT strain, but it was quickly dampened after 1 day in DD and became arrhythmic in the gcn-5KO strain. Western blot analysis showed that, after the initial light/dark transition, the rhythmic FRQ abundance and phosphorylation were significantly dampened in the gcn-5KO mutant (WT: p = 5.00E−8, gcn-5KO: p = 0.0016) (Figure 5C). Reverse Transcription Quantitative PCR RT-qPCR analysis showed that the circadian rhythms of frq mRNA were also severely dampened in the gcn-5KO strain without (WT: p = 8.37E−06, gcn-5KO: p > 0.05) or with 3 mM 3-AT (WT: p = 5.39E−12, gcn-5KO: p > 0.05) (Figure 5D, E). Together, these results indicate that GCN-5 is critical for maintaining the function of circadian clock.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig5-v2.jpg)
+
+**Figure 5.:** (A) Race tube assay showing that the conidiation rhythm in gcn-5KO strain was lost compared with WT strain. (B) Luciferase assay showing that the luciferase activity rhythm was impaired in the gcn-5KO strain after 1 day transition from light to dark. A FRQ-LUC translational fusion construct was expressed in WT and gcn-5KO strains, and the luciferase signal was recorded in DD for more than 7 days. Normalized data with the baseline luciferase signals subtracted are shown. (C) Western blot assay showing that rhythmic expression of FRQ protein was dampened in the gcn-5KO strain (n = 3; WT: p = 5.00E−08, gcn-5KO: p = 0.0016, RAIN; WT vs gcn-5KO: mesor p = 0.1421, amplitude p = 0.0774, phase p = 0.4319, CircaCompare). RT-qPCR analysis showing that rhythmic expression of frq mRNA was dampened in the gcn-5KO strain without 3-aminotriazole (3-AT; n = 3; WT: p = 8.37E−06, gcn-5KO: p > 0.05) (D) or with 3-AT (n = 3; WT: p = 5.39E−12, gcn-5KO: p > 0.05) (E). (F) Chromatin immunoprecipitation (ChIP) assay showing decreased histone H3ac levels at the promoter of frq gene in the gcn-5KO strain at the indicated time points in DD (n = 3; WT: p = 8.10E−05, gcn-5KO: p > 0.05). Relative H3ac levels were normalized with H2B levels. (G) ChIP assay showing decreased WC-2 levels at the promoter of frq gene in the gcn-5KO strain at the indicated time points in DD (n = 3; WT: p = 0.0003, gcn-5KO: p = 0.0459, RAIN; WT vs gcn-5KO: mesor p = 0.2939, amplitude p = 0.0010, phase p = 0.6933, CircaCompare). Error bars indicate standard deviations (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Race tube assay showing that the conidiation rhythm in ada-2KO strains was lost compared with WT strains. (B) Luciferase assay showing that the luciferase activity rhythm was impaired in the gcn-5KO strain after 1 day transition from light to dark (raw data are shown). (C) Luciferase assay showing that the luciferase activity rhythm was impaired in the ada-2KO strain after 1 day transition from light to dark. Raw data (up panels) and normalized data (down panels) with the baseline luciferase signals subtracted are shown. A FRQ-LUC translational fusion construct was expressed in WT and ada-2KO strains, and the luciferase signal was recorded in DD for more than 7 days. (D) Western blot assay showing that rhythmic expression of FRQ protein was dampened in the ada-2KO strain (n = 3; WT: p = 3.00E−05, ada-2KO: p = 0.0003, RAIN; WT vs ada-2KO: mesor p = 8.27E−05, amplitude p = 0.7450, phase p = 0.0914, CircaCompare). The right panel showing that the densitometric analyses of the results of three independent experiments. The densitometric analyses of Northern blot from three independent experiments showing dampened rhythmic expression of frq mRNA in the ada-2KO strain without 3-aminotriazole (3-AT) (E) (n = 3; WT: p = 0.0155, ada-2KO: p = 0.0207, RAIN; WT vs ada-2KO: mesor p = 0.9646, amplitude p = 0.7405, phase p = 0.0672, CircaCompare) or with 3 mM 3-AT (F) (n = 3; WT: p = 2.92E−05, ada-2KO: p = 0.0208, RAIN; WT vs ada-2KO: mesor p = 0.0167, amplitude p = 0.4307, phase p = 0.3926, CircaCompare) at the indicated time points in DD. Error bars indicate standard deviation (n = 3). *p < 0.05; **p < 0.01; ***p < 0.001; Student’s t test was used.
 
 ChIP assay results showed that the H3ac levels were significantly decreased at the frq promoter, and their rhythmic occupancies were severely dampened in the gcn-5KO strain compared with the WT strain (WT: p = 8.10E−05, gcn-5KO: p > 0.05) (Figure 5F). Furthermore, the rhythmic WC-2 binding at the frq C-box of the WT strain was dramatically reduced in the gcn-5KO strain in DD (WT: p = 0.0003, gcn-5KO: p = 0.0459) (Figure 5G). These results indicate that GCN-5 is critical for circadian clock function by regulating rhythmic chromatin structure changes to allow rhythmic WC-2 binding at the frq promoter to drive rhythmic frq transcription.
 
 Since ADA-2 interacts with GCN-5 and it is a subunit of the SAGA complex, we also created the Neurospora ada-2 knockout mutant and examined the function of ADA-2 in the circadian clock. As expected, we found that the circadian phenotypes and frq expression of the ada-2KO strain were very similar to those of the gcn-5KO strain (Figure 5—figure supplement 1A–F). Together, these results demonstrate the importance of GCN-5 and ADA-2 in the Neurospora circadian clock function.
 
-## Elevated histone acetylation partially rescues circadian clock defects caused by amino acid starvation
+### Elevated histone acetylation partially rescues circadian clock defects caused by amino acid starvation
 
 Our results above suggest that amino acid starvation results in low histone acetylation levels at the frq promoter, which impairs the WC-2 binding and rhythmic frq transcription in the cpc-3KO and cpc-1KO mutants. To further confirm this conclusion, we hypothesized that the circadian clock defects under amino acid starvation should be rescued by increasing the histone acetylation levels. Trichostatin A (TSA) is a histone deacetylase (HDACs) inhibitor, which can inhibit HDACs activity and increase the histone acetylation levels in Neurospora (Selker, 1998). We treated the WT strain with different concentrations of 3-AT and TSA, and found that high concentrations of 3-AT lengthened the circadian period of the WT strain to ~24 hr (Figure 6A), but high concentrations of TSA resulted in a slight period shortening to 21 hr (Figure 6B). When TSA was used together with a high concentration of 3-AT (7.5 mM), the long period phenotype can be gradually rescued by increasing TSA concentrations (Figure 6C), which is consistent with our conclusion that the histone acetylation levels changes are responsible for the circadian clock defects caused by amino acid starvation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig6-v2.jpg)
 
-**Figure 6.:** (A) Race tube assay showing that high concentrations of 3-aminotriazole (3-AT) treatment elongated circadian conidiation period of WT strain. (B) Race tube assay showing that the high concentrations of Trichostatin A (TSA) treatment shortened circadian conidiation period of WT strain. (C) TSA treatment rescued prolonged circadian period of WT strain caused by 3-AT treatment. WT strain was grown on the race tube medium containing 7.5 mM 3-AT and indicated concentrations of TSA in DD. (D) Chromatin immunoprecipitation (ChIP) assay showing that H3ac levels were decreased in gcn-5 strains and increased in KOhda-1 strains at the promoter of KOfrq gene. Error bars indicate standard deviations (n = 3). *p < 0.05; **p < 0.01; Student’s t test was used. (E) The hda-1 strain exhibited near normal circadian period in the presence of 3-AT. KOhda-1 strains were grown on the race tube medium containing the indicated concentrations of 3-AT in DD. (KOF) TSA treatment rescued the impaired circadian rhythm of cpc-3 strain caused by 3-AT treatment. KOcpc-3 strains were grown on the race tube medium containing 3 mM 3-AT and indicated concentrations of TSA in DD.KOFigure 6—source data 1.Figure 6D.
+**Figure 6.:** (A) Race tube assay showing that high concentrations of 3-aminotriazole (3-AT) treatment elongated circadian conidiation period of WT strain. (B) Race tube assay showing that the high concentrations of Trichostatin A (TSA) treatment shortened circadian conidiation period of WT strain. (C) TSA treatment rescued prolonged circadian period of WT strain caused by 3-AT treatment. WT strain was grown on the race tube medium containing 7.5 mM 3-AT and indicated concentrations of TSA in DD. (D) Chromatin immunoprecipitation (ChIP) assay showing that H3ac levels were decreased in gcn-5KO strains and increased in hda-1KO strains at the promoter of frq gene. Error bars indicate standard deviations (n = 3). *p < 0.05; **p < 0.01; Student’s t test was used. (E) The hda-1KO strain exhibited near normal circadian period in the presence of 3-AT. hda-1KO strains were grown on the race tube medium containing the indicated concentrations of 3-AT in DD. (F) TSA treatment rescued the impaired circadian rhythm of cpc-3KO strain caused by 3-AT treatment. cpc-3KO strains were grown on the race tube medium containing 3 mM 3-AT and indicated concentrations of TSA in DD.
 
 GCN-5 is the major histone acetyltransferase responsible for histone acetylation at the frq locus in response to amino acid starvation. On the other hand, the histone deacetylase HDA-1 was previously reported as a major histone deacetylase that can antagonize and compete with GCN-5 for recruitment to promoters to deacetylate H3 (Islam et al., 2011; Vogelauer et al., 2000). ChIP assays showed that H3ac levels were indeed significantly decreased in the gcn-5KO strain and were markedly increased in the hda-1KO strain at the frq promoter region (Figure 6D), indicating that HDA-1 is responsible for histone deacetylation at the frq locus. Race tube assays showed that in contrast to period lengthening in the WT strain by 3-AT (Figure 6A), the hda-1KO strain exhibited nearly normal circadian period even in the presence of high 3-AT concentrations (Figure 6E), suggesting that reduced histone deacetylation can partially rescue the circadian clock defects in response to amino acid starvation. To further confirm our conclusion, we treated the cpc-3KO strains with different concentrations of TSA and found that the arrhythmic circadian conidiation rhythm caused by 3-AT treatment could be partially rescued by TSA treatments (Figure 6F). Together, these results strongly suggest that the amino acid starvation induced clock defects in the GCN2 signaling pathway mutants are largely due to the decreased histone acetylation at the frq promoter, which prevents efficient WC-2 binding and disrupts the rhythmic frq transcription.
 
-## Rhythmic expression of CPC-1 activated metabolic genes under amino acid starvation
+### Rhythmic expression of CPC-1 activated metabolic genes under amino acid starvation
 
 Circadian clock has been shown to control metabolic processes and rhythmic transcription of metabolic genes (Baek et al., 2019; Hurley et al., 2014; Hurley et al., 2018). To determine the role of the GCN2 pathway in controlling gene expression under amino acid starvation, we performed RNA-seq experiments to analyze the genome-wide mRNA levels in the WT and cpc-1KO strains in the presence of 3-AT (12 mM). As shown in Figure 7A, 22.1% of genes were found to be upregulated and 11.2% of genes were downregulated in the WT strain after 3-AT treatment compared with normal condition. Specifically, those genes involved in the regulation of oxidoreductase and amino acid metabolism were particularly enriched and were mostly upregulated during the amino acid starvation (Figure 7B). However, the differential expression of the 148 upregulated and 127 downregulated genes found in the WT strain was abolished in the cpc-1KO strain after 3-AT treatment, suggesting that these genes were regulated by CPC-1 under amino acid starvation (Figure 7D and Figure 7—figure supplement 1A, B). Similar to those in Saccharomyces cerevisiae (Natarajan et al., 2001), genes of amino acid biosynthetic pathways, vitamin biosynthetic enzymes, peroxisomal components, and mitochondrial carrier proteins were also identified as CPC-1 targets. Among them, the genes involved in amino acid and vitamin metabolism were particularly enriched and were mostly upregulated during the amino acid starvation (Figure 7E). For example, amino acid synthesis genes his-3 (NCU03139), arg-1 (NCU02639), trp-3 (NCU08409), and ser-2 (NCU01439) were upregulated in the WT strain, but unchanged in the cpc-1KO strain under amino acid starvation (Figure 7A, C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig7-v2.jpg)
+
+**Figure 7.:** (A) Comparison of the transcript expression profiles of the WT strains with and without 12 mM 3-aminotriazole (3-AT) treatment. (B) Gene functional enrichment analysis based on the mRNA levels changes for the up- and downregulated genes in the WT strains with and without 12 mM 3-AT treatment. (C) Comparison of the transcript expression profiles of the cpc-1KO strains with and without 12 mM 3-AT treatment. (D) Pie charts showing the overlaps of upregulated genes in the WT strain, but stable genes in the cpc-1KO strains after 12 mM 3-AT treatment. (E) Gene functional enrichment analysis based on the mRNA levels changes for the overlaps of upregulated genes in the WT strain, but stable genes in the cpc-1KO strains after 12 mM 3-AT treatment. (F) RT-qPCR analysis showing that amino acid synthetic genes his-3 (NCU03139) (n = 3; WT: p = 2.21E−05, cpc-1KO: p>0.05), arg-1 (NCU02639) (n = 3; WT: p = 0.0097, cpc-1KO: p > 0.05), and trp-3 (NCU08409) (n = 3; WT: p = 0.0009, cpc-1KO: p > 0.05) were activated by CPC-1 and were rhythmic expressed with 3 mM 3-AT treatment. The primers used for RT-qPCR are shown in Key Resources Table.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Pie charts showing the overlaps of downregulated genes in the WT strain, but unchanged genes in the cpc-1KO strains. (B) Gene functional enrichment analysis based on the mRNA levels changes for the overlaps of downregulated genes in the WT strain, but stable genes in the cpc-1KO strains. (C) Chromatin immunoprecipitation (ChIP) assay showing that the CPC-1 occupancy at the his-3 (n = 3; WT (0 mM 3-aminotriazole [3-AT]): p > 0.05, WT (3 mM 3-AT): p > 0.05, cpc-1KO (0 mM 3-AT): p > 0.05), trp-3 (n = 3; WT (0 mM 3-AT): p > 0.05, WT (3 mM 3-AT): p > 0.05, cpc-1KO (0 mM 3-AT): p > 0.05), and ser-2 (n = 3; WT (0 mM 3-AT): p > 0.05, WT (3 mM 3-AT): p > 0.05, cpc-1KO (0 mM 3-AT): p > 0.05) promoters was not rhythmic. WT and cpc-1KO strains were grown for the indicated number of hours in DD. Samples were crosslinked with formaldehyde and harvested for ChIP using CPC-1 antibody. CPC-1 ChIP occupancies were normalized by the ratio of ChIP to Input DNA. (D) RT-qPCR analysis showing that amino acid synthetic gene ser-2 (NCU01439) was activated by CPC-1 and was rhythmic expressed with 3 mM 3-AT treatment (n = 3; WT: p = 2.25E−05, cpc-1KO: p > 0.05). (E) RT-qPCR analysis showing that amino acid synthetic genes arg-1 (NCU02639) (n = 3; WT: p = 0.0353, cpc-1KO: p > 0.05), trp-3 (NCU08409) (n = 3; WT: p = 0.0436, cpc-1KO: p = 0.0288, RAIN; WT vs cpc-1KO: mesor p = 1.83E−14, amplitude p = 0.1326, phase p = 0.4851, CircaCompare), and ser-2 (NCU01439) genes (n = 3; WT: p = 0.0008, cpc-1KO: p = 0.0151, RAIN; WT vs cpc-1KO: mesor p = 2.35E−13, amplitude p = 0.0009, phase p = 0.2833, CircaCompare), but not the his-3 (NCU03139) gene (n = 3; WT: p > 0.05), were rhythmic expressed under normal condition (0 mM 3-AT).
 
 To examine whether these CPC-1 activated genes were controlled by circadian clock, we re-analyzed and compared our identified CPC-1 target genes with previously published RNA-seq data of rhythm samples (Hurley et al., 2014; Hurley et al., 2018). As shown in Supplementary file 1, we summarized the rhythmic expression of 79 upregulated and 67 downregulated CPC-1 target genes based on the eJTK Cycle results of Hurley et al., 2018 (its Supplemental Datasets 1 and 2). We re-analyzed the rhythmicity of CPC-1-targeted genes (148 upregulated and 127 downregulated) using CircaSingle (Parsons et al., 2020), and added the p-values in Supplementary file 1. There were 146 rhythmic genes based on the eJTK Cycle, and 132 rhythmic genes based on the CircaSingle. As expected, there were 106 overlapping genes between these two sets of data, confirming the results using eJTK Cycle. Thus, we performed further analysis based on the data from eJTK Cycle. There were about 146/275 (53%) of the CPC-1 up- and downregulated genes under amino acid starvation exhibiting rhythmicity, indicating a highly significant enrichment of CPC-1 regulated genes as clock-controlled genes (p = 3.341905e−06, hypergeometric distribution test). Furthermore, we performed ChIP experiments to examine whether CPC-1 directly activates the expression of amino acid synthetic genes. As shown in Figure 7—figure supplement 1C, CPC-1 was found to be constitutively enriched at the promoters of his-3 (NCU03139), trp-3 (NCU08409), and ser-2 (NCU01439) genes (WT (0 mM 3-AT): p > 0.05, WT (3 mM 3-AT): p > 0.05, cpc-1KO (0 mM 3-AT): p > 0.05), and the enrichment was enhanced by 3-AT treatment. Because the CPC-1 binding was not rhythmic, we performed RT-qPCR experiments to re-analyze whether those genes were rhythmically transcribed in DD. Consistent with the published RNA-seq analysis results, we found that frq and the amino acid synthetic genes such as his-3 (NCU03139) (WT: p = 2.21E−05, cpc-1KO: p > 0.05), arg-1 (NCU02639) (WT: p = 0.0097, cpc-1KO: p > 0.05), and trp-3 (NCU08409) (WT: p = 0.0009, cpc-1KO: p > 0.05) were rhythmically expressed in the WT but not cpc-1KO strain under amino acid starvation (Figure 7F). In addition, we also found that ser-2 (NCU01439) (WT: p = 2.25E−05, cpc-1KO: p > 0.05) exhibited rhythmic expression in the WT but not in the cpc-1KO strain under amino acid starvation (Figure 7—figure supplement 1D), even though it was not previously shown to be rhythmic in the published RNA-seq analysis study. These results suggest that many CPC-1-activated metabolic genes under amino acid starvation are regulated by circadian clock. Next, we performed RT-qPCR experiments to detect the mRNA levels of amino acid synthesis genes under normal condition (0 mM 3-AT), and found that arg-1 (NCU02639) (WT: p = 0.0353), trp-3 (NCU08409) (WT: p = 0.0436), and ser-2 (NCU01439) (WT: p = 0.0008) genes, but not the his-3 (NCU03139) (WT: p > 0.05) gene, were rhythmic in the WT strain in DD (Figure 7—figure supplement 1E). Together, these results suggest that the GCN2 signaling pathway functions to maintain the robust circadian clock and rhythmic expression of metabolic genes under amino acid starvation.
 
@@ -106,7 +150,7 @@ Circadian clock drives robust rhythmic gene expression and activities in differe
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/85241/elife-85241-fig8-v2.jpg)
 
-**Figure 8.:** Neurospora circadian rhythm in response to amino acid starvation.Under normal conditions, CPC-1 is expressed at its basal levels in the WT (Left) or cpc-3 (Right) strain, which is required for rhythmic expression of KOfrq gene by recruiting the histone acetyltransferase GCN-5 containing SAGA complex to the frq promoter. Under amino acid starvation conditions, the chromatin in the frq promoter of the WT strain is constitutively compacted (due to decreased H3ac), likely due to activation of histone deacetylases or inhibition of histone acetyltransferases. CPC-3 and CPC-1 signaling pathway was activated by amino acid starvation and the elevated CPC-1 protein would efficiently recruit the histone acetyltransferase GCN-5 containing SAGA complex to promote the histone acetylation levels, which permitted rhythmic WCC binding at the frq promoter (Left). Disruption of the CPC-3 and CPC-1 signaling pathway resulted in decreased histone acetylation levels of the frq gene promoter, reduced WCC binding and damped circadian oscillations in response to the amino acid starvation stress (Right).
+**Figure 8.:** Under normal conditions, CPC-1 is expressed at its basal levels in the WT (Left) or cpc-3KO (Right) strain, which is required for rhythmic expression of frq gene by recruiting the histone acetyltransferase GCN-5 containing SAGA complex to the frq promoter. Under amino acid starvation conditions, the chromatin in the frq promoter of the WT strain is constitutively compacted (due to decreased H3ac), likely due to activation of histone deacetylases or inhibition of histone acetyltransferases. CPC-3 and CPC-1 signaling pathway was activated by amino acid starvation and the elevated CPC-1 protein would efficiently recruit the histone acetyltransferase GCN-5 containing SAGA complex to promote the histone acetylation levels, which permitted rhythmic WCC binding at the frq promoter (Left). Disruption of the CPC-3 and CPC-1 signaling pathway resulted in decreased histone acetylation levels of the frq gene promoter, reduced WCC binding and damped circadian oscillations in response to the amino acid starvation stress (Right).
 
 Maintaining robust rhythmic gene expression and circadian activities in response to various environmental and nutritional stresses is important for the health or survival of different organisms. Circadian clock synchronizes metabolic processes and systemic metabolite levels, while nutrients and energy signals also feedback to circadian clocks to adapt their metabolic state (Bass, 2012; Hurley et al., 2014; Klemz et al., 2017; Reinke and Asher, 2019). Amino acid starvation is known to inhibit the global translation efficiency through activating GCN2-mediated eIF2α phosphorylation, which conserves energy and allows cells to reprogram gene expression to relieve stress damage. It was recently shown that circadian clock control of GCN2-mediated eIF2α phosphorylation was necessary for rhythmic translation initiation in Neurospora (Ding et al., 2021; Karki et al., 2020). However, it was previously unknown whether circadian clock would be affected by amino acid starvation stress. After activation of the GCN2-mediated eIF2α phosphorylation by amino acid starvation, a subset of transcripts containing overlapping upstream open reading frames (uORFs) in their 5′ untranslated region (5′ UTR) are efficiently translated, including the yeast transcription factor GCN4, the Neurospora CPC-1 and their mammalian ortholog ATF4, which activate the transcription of various amino acid biosynthetic genes (Hinnebusch, 1984; Paluh et al., 1988; Vattem and Wek, 2004). Our ChIP results showed that CPC-1 could rhythmically bind to the region close to C-box at the frq promoter to activate frq transcription (Figure 4A). WCC binding at the frq C-box region was slightly decreased under normal condition (Figure 2—figure supplement 1A), and dramatically decreased under amino acid starvation in the cpc-1KO strain (Figure 2D), suggesting that CPC-1 cooperates with WCC to promote frq transcription in response to amino acid starvation. Although CPC-1 rhythmically bound at the frq promoter, ChIP experiments showed that CPC-1 binding at several selected amino acid biosynthetic genes did not appear to be rhythmic (Figure 7—figure supplement 1C). However, our RT-qPCR results (Figure 7F and Figure 7—figure supplement 1) and the previous RNA-seq data showed that many CPC-1-targeted metabolic genes were rhythmic expressed (Hurley et al., 2018). It is possible that the binding of CPC-1 to these promoters is still rhythmic but with low amplitudes. As a result, the limited sensitivity of our ChIP assays failed to detect these rhythms. Alternatively, the rhythmic transcription of these genes might be controlled by the rhythmic transcriptional activation activity of CPC-1 rather than its binding. In addition, the rhythmic binding of WCC or WCC-controlled transcription factors (Hurley et al., 2014) might also contribute to their rhythmic transcription.
 
@@ -116,7 +160,388 @@ The nutrient-sensing GCN2 signaling pathway is highly conserved in eukaryotic ce
 
 ## Materials and methods
 
-## Strains, culture conditions, and race tube assay
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>87-3 (ras-1bd, a)</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>301-6 (ras-1bd, his-3-, A)</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;cpc-3KO</td>
+      <td>Fungal Genetics Stock Center</td>
+      <td>NCU01187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;cpc-1KO</td>
+      <td>Fungal Genetics Stock Center</td>
+      <td>NCU04050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;gcn-5KO</td>
+      <td>Fungal Genetics Stock Center</td>
+      <td>NCU10847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;ada-2KO</td>
+      <td>Fungal Genetics Stock Center</td>
+      <td>NCU04459</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;hda-1KO</td>
+      <td>Fungal Genetics Stock Center</td>
+      <td>NCU01525</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;cpc-1KO, cpc-1-Myc.CPC-1</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>301-6, cfp-Myc.CPC-1, cfp-Flag.ADA-2</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>301-6, cfp-Myc.GCN-5, cfp-Flag.ADA-2</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>frq-luc</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;cpc-3KO, frq-luc</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;cpc-1KO, frq-luc</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>FRQ-LUC</td>
+      <td>Dr. Luis Larrondo’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;gcn-5KO, FRQ-LUC</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Neurospora crassa)</td>
+      <td>ras-1bd;ada-2KO, FRQ-LUC</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Histone H2B</td>
+      <td>Abcam</td>
+      <td>Cat# ab1790</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Histone H3ac</td>
+      <td>Millipore</td>
+      <td>Cat# 06-599</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-c-Myc</td>
+      <td>TransGen</td>
+      <td>Cat# HT101</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Flag</td>
+      <td>Sigma</td>
+      <td>Cat# F1804</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-P-eIF2α</td>
+      <td>Abcam</td>
+      <td>Cat# ab32157</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CPC-1</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td></td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-FRQ</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-WC-1</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-WC-2</td>
+      <td>Dr.Yi Liu’s Laboratory</td>
+      <td></td>
+      <td>1:8000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>GCAGTGTCATTGACGACTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>CCTCCAACTCACGTTTCTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>his-3-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>CCTCGTTCGTCAAGCACATTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>his-3-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>CTCCTCAACCTTAGCCAACTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trp-3-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>ACCTATATCCTTCAGAACCAATACG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trp-3-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>GCTCGGTATCCTTCCAGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ser-2-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>GCTGCTAACGGTGACTACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ser-2-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>GGTGAGGATGATGTTGTTGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>arg-1-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>CCCATCATTGCCCGTGCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>arg-1-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>TGACGACCCTGGAAGCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-tubulin-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>GCGTATCGGCGAGCAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-tubulin-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>RT-qPCR</td>
+      <td>CCTCACCAGTGTACCAATGCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq C-box-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>GTCAAGCTCGTACCCACATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq C-box-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>CCGAAAGTATCTTGAGCCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq promoter-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>GTTGCCGTGACTCCCCCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq promoter-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>CCGAAAGTATCTTGAGCCTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>his-3 ChIP-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>TTTTCATAAAGCCCGAGTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>his-3 ChIP-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>CAGGTATTGTGCTGTTCCCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trp-3 ChIP-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>AATCGGGTGAGTCAAAGGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>trp-3 ChIP-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>CGAGCAAGAGGGAGAGGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ser-2 ChIP-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>GGGACAAAAGCAGTGATTCTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>ser-2 ChIP-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>ChIP-qPCR</td>
+      <td>CGATTTACATCCATCTGAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq northern-F</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>Northern blot</td>
+      <td>TAATACGACTCACTATAGGGCCTTCGTTGGATATCCATCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>frq northern-R</td>
+      <td>Dr.Xiao Liu’s Laboratory</td>
+      <td>Northern blot</td>
+      <td>GAATTCTTGCAGGGAAGCCGG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LumiCycle</td>
+      <td>https://actimetrics.com/products/lumicycle/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CircaCompare</td>
+      <td>https://github.com/RWParsons/circacompare/; Parsons et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains, culture conditions, and race tube assay
 
 The 87-3 (ras-1bd, a) and 301-6 (ras-1bd, his-3−, A) strain was used as the wild-type (WT) strain in this study. Knockout mutants were all generated based on the ras-1bd background (Belden et al., 2007). cpc-3KO (NCU01187), cpc-1KO (NCU04050), gcn-5KO (NCU10847), ada-2KO (NCU04459), and hda-1KO (NCU01525) strains were obtained from the Fungal Genetic Stock Center (FGSC) and were crossed with a ras-1bd strain to create the ras-1bd;cpc-3KO, ras-1bd;cpc-1KO, ras-1bd;gcn-5KO, ras-1bd;ada-2KO, and ras-1bd;hda-1KO strains (Colot et al., 2006). Constructs with the cpc-1 promoter driving expression of Myc.CPC-1 were introduced into the cpc-1KO strains at the his-3 (NCU03139) locus by homologous recombination. Constructs with the cfp promoter driving expression of Flag.ADA-2 were introduced into the 301-6, cfp-Myc.CPC-1 or 301-6, cfp-Myc.GCN-5 strains by random insertion with nourseothricin selection (He et al., 2020). Positive transformants were identified by western blot analyses, and homokaryon strains were isolated by microconidia purification with 5 µm filters.
 
@@ -124,42 +549,42 @@ Liquid cultures were grown in minimal media (1× Vogel’s, 2% glucose). For rhy
 
 The medium for race tube assay contained 1× Vogel’s salts, 0.1% glucose, 0.17% arginine, 50 ng/ml biotin, and 1.5% agar. After entrainment of 24 hr in the constant light condition, race tubes were transferred to constant darkness conditions and marked every 24 hr. The circadian period of the Neurospora strain could be calculated according to the ratio between the distance of marked conidia band positions and the distance of conidiation bands.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 The luciferase reporter assay was performed as reported previously (Gooch et al., 2008; Larrondo et al., 2015; Liu et al., 2017). The luciferase reporter construct (frq-luc) containing the luciferase gene under the control of the frq promoter, was introduced into 301-6, cpc-3KO or cpc-1KO strains by transformation. The luciferase reporter construct (FRQ-LUC) containing a luciferase fused to the C terminus of the FRQ protein, was introduced into gcn-5KO or ada-2KO strains by crossing. Firefly luciferin (final concentration of 50 μM) was added to autoclaved FGS-Vogel’s medium containing 1× FGS (0.05% fructose, 0.05% glucose, 2% sorbose), 1× Vogel’s medium, 50 μg/l biotin, and 1.8% agar. Conidia suspension was placed on autoclaved FGS-Vogel’s medium and grown in constant light overnight. The cultures were then transferred to constant darkness, and luminescence was recorded in real time using a LumiCycle after 1 day in DD. The data were then normalized with LumiCycle analysis software by subtracting the baseline luciferase signal, which increases as cell grows.
 
-## Protein analysis
+### Protein analysis
 
 Protein extraction, quantification, and western blot analyses were performed as previously described (Liu et al., 2017). Briefly, tissues were ground in liquid nitrogen with a mortar and pestle and suspended in ice-cold extraction buffer (50 mM Hydroxyethylpiperazine Ethane Sulfonic Acid HEPES (pH 7.4), 137 mM NaCl, 10% glycerol) with protease inhibitors (1 μg/ml Pepstatin A, 1 μg/ml Leupeptin, and 1 mM phenylmethylsulfonyl fluoride PMSF). After centrifugation, protein concentrations were measured using protein assay dye (Bio-Rad). For western blot analyses, equal amounts of total protein (40 μg) were loaded in each protein lane of 7.5% or 10% sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) gels containing a ratio of 37.5:1 acrylamide/bisacrylamide. After electrophoresis, proteins were transferred onto PVDF membranes, and western blot analyses using FRQ, WC-1, WC-2, P-eIF2α (Abcam, ab32157), and CPC-1 antibodies were performed. Western blot signals were detected by X-ray films and scanned for quantification.
 
 To detect the phosphorylation levels of WC-1 and WC-2, PPase inhibitors (25 mM NaF, 10 mM Na4P2O7·10H2O, 2 mM Na3VO4, 1 mM ethylenediaminetetraacetic acid EDTA) were made fresh and added to the protein extraction buffer. Proteins were loaded in each protein lane of 7.5% SDS–PAGE gels containing a ratio of 149:1 acrylamide/bisacrylamide.
 
-## RNA analysis
+### RNA analysis
 
 RNA was extracted with Trizol and further purified with 2.5 M LiCl as described previously (Liu et al., 2017). For Northern blot analysis, equal amounts of total RNA (20 μg) were loaded onto agarose gels. After electrophoresis, the RNA was transferred onto nitrocellulose membrane. The membrane was probed with [32P] UTP (PerkinElmer)-labeled RNA probes specific for frq. RNA probes were transcribed in vitro from PCR products by T7 RNA polymerase (Invitrogen, AM1314M) with the manufacturer’s protocol. The frq primers used for the template amplification are shown in Key Resources Table.
 
 For RT-qPCR, the cultures of WT and cpc-1KO strains were collected at the indicated time points in constant darkness in liquid growth medium (1× Vogel’s, 2% glucose). RT-qPCR were performed as previously described (Cui et al., 2020). Each RNA sample (1 μg) was subjected to reverse transcription with HiScript II reverse transcriptase (Vazyme, R223), and then amplified by real-time PCR (Bio-Rad, CFX96). For RT-qPCR, primers target the coding genes of frq (NCU02265), his-3 (NCU03139), ser-2 (NCU01439), trp-3 (NCU08409), his-4 (NCU06974), arg-1 (NCU02639), and arg-10 (NCU08162) were designed, and the β-tubulin (NCU04054) was used as an internal control. The primers used for RT-qPCR are shown in Key Resources Table.
 
-## Generation of antiserum against CPC-1
+### Generation of antiserum against CPC-1
 
 Two CPC-1 peptides (SELDLLDFATFDGG and RDKPLPPIIVEDPS) were synthesized and used as the antigens to generate rabbit polyclonal antisera (ABclonal) as described previously (Cui et al., 2020; Zhou et al., 2013).
 
-## Co-IP analysis
+### Co-IP analysis
 
 Immunoprecipitation analyses were performed as previously described (Cao et al., 2018; Cheng et al., 2001b). Briefly, Neurospora proteins were extracted as described above. For each immunoprecipitation reaction, 2 mg protein and 2 μl c-Myc (TransGen, HT101), 2 μl Flag (Sigma, F1804), or 2 μl WC-2 antibody (Cheng et al., 2001a) were used. After incubation with antibody for 3 hr, 40 μl GammaBind G Sepharose beads (GE Healthcare, 17061801) were added, and samples were incubated for 1 hr. Immunoprecipitated proteins were washed three times using extraction buffer before western blot analysis. IP experiments were performed using cultures harvested in constant light.
 
-## ChIP analysis
+### ChIP analysis
 
 ChIP assays were performed as previously described (Cui et al., 2020; Zhou et al., 2013) with 1 mg protein used for each immunoprecipitation reaction. The ChIP reaction was carried out with 2 μl WC-2 (Cheng et al., 2001a), CPC-1, H2B (Abcam, ab1790), or H3ac (Millipore, 06-599) antibody. Immunoprecipitated DNA was quantified by real-time qPCR. Occupancies were normalized by the ratio of ChIP to Input DNA. ChIP was performed using 2 μl c-Myc monoclonal antibody (TransGen, HT101) to examine occupancy of Myc.GCN-5. Occupancies of ChIP were normalized using IgG. The primers used for ChIP-qPCR are shown in Key Resources Table.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 The WT and cpc-1KO strains were cultured with or without 12 mM 3-AT treatment in constant light. Total RNAs were extracted using Trizol reagents. Libraries were prepared according to the manufacturer’s instructions and analyzed using 150 bp paired-end Illumina sequencing (Annoroad Gene Technology, Beijing). After sequencing, the raw data were treated and mapped to the genome of Neurospora crassa and transformed into expression value. The gene expression levels were scored by fragments per kb per million (FPKM) method. The differences in gene expression between samples was compared by comparing FPKM values, and those with fold change more than 1 (False Discovery Rate FDR <0.1) were thought to be differentially expressed genes. The functional category enrichments, including Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes KEGG terms, were analyzed. The KEGG pathway enrichment was evaluated based on hypergeometric distribution, and the R package ‘ggplot2’ version 3.3.6 was used to visualize the enrichment results.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Quantification of western blot data were performed using Image J software. Error bars are standard deviations for ChIP assays from at least three independent technical experiments, and standard error of means for race tube assays from at least three independent biological experiments, unless otherwise indicated. Statistical significance was determined by Student’s t test. Statistical tests for the presence of rhythmicity and differences between two rhythms in parameters, including amplitude, phase, and mesor (the midline estimating statistic of rhythms) were analyzed using CircaSingle and CircaCompare (https://rwparsons.shinyapps.io/circacompare/) (Liu et al., 2021; Parsons et al., 2020). CircaCompare was used to compare the differences between two rhythmic datasets, and CircaSingle was used to re-analyze the rhythmic parameters of the RNA-seq results by eJTK Cycle. Amplitude refers to half of the difference between the peak and trough of a given response variable, phase refers to the time at which the response variable peaks, and mesor refers to the rhythm-adjusted mean level of a response variable around which a wave function oscillates. Statistical tests for the presence of rhythmicity and statistically significant differences between two groups of rhythmic parameters are indicated by p-values. A p-value <0.05 indicates the presence of rhythmicity, but a p-value >0.05 indicates the loss of rhythmicity. The results of the CircaSingle statistical tests are added in Supplementary file 1. The results of the CircaCompare statistical tests are summarized in Supplementary file 2.
 
-## Data and materials availability
+### Data and materials availability
 
 All data generated or analyzed during this study are included in the manuscript and supporting files. Our generated RNA sequencing data have been deposited in GEO under accession code GSE220169. RNA sequencing data from Hurley et al., 2014 were previously deposited to the NCBI SRA under accession number SRP046458 (Hurley et al., 2014). Materials are available from the corresponding authors upon reasonable request.

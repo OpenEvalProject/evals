@@ -52,7 +52,47 @@ The SARS-CoV-2 Spike protein is heavily glycosylated with both complex and oligo
 
 We started our research by creating 3D models of the trimeric Spike in complex with human ACE2 (hACE2). The RBD of Spike exists in two distinct conformations, referred to as ‘up’ and ‘down’ (Walls et al., 2020; Wrapp et al., 2020). The ‘up’ conformation corresponds to the receptor-accessible state with the RBD of one monomer exposed. By superimposing the RBD from the RBD-hACE2 complex (Yan et al., 2020) with the single RBD in the ‘up’ conformation (monomer 3) of the trimeric Spike (Walls et al., 2020), an initial model was obtained. Of note, although cryo-EM structures with more than one RBD in the ‘up’ conformation were shown to bind to two separate hACE2 molecules (rather than one single hACE2 dimer) (Benton et al., 2020), we decided to study the effect of the glycans on the Spike hACE2 interaction using the model with a single RBD in the ‘up’ conformation. To assess the impact of all seven individual N-glycosylation sites of hACE2 on its interaction with Spike, we first elucidated the entire glycome of rshACE2 (Figure 1—figure supplement 1). This also provided information on the glycans attached to N690, a glycosylation site not covered in previous glycoproteomic studies of soluble hACE2 (Zhao et al., 2020; Allen et al., 2021). For recombinant trimeric Spike, the glyco-analysis has been reported elsewhere (Hoffmann et al., 2021; Watanabe et al., 2020; Zhao et al., 2020; Sun et al., 2021). Based on the site-specific glycosylation profiles, we added complex or oligo-mannosidic glycan trees to the respective sites of Spike and ACE2 (Supplementray File 1). We hence constructed fully glycosylated atomistic models of the trimeric Spike glycoprotein, free dimeric ACE2 and of the Spike glycoprotein in complex with dimeric hACE2 (Figure 1). As glycans are known to be particularly flexible, and these were modeled in a single low-energy conformation, we subsequently performed molecular dynamics simulations of the Spike-ACE2 complex (Video 1), and of free hACE2. This allowed us to study the conformational distribution of the glycans on the surface of the proteins and their dynamic effects on the interaction between Spike and hACE2. Inspection of the most important interacting residues on Spike and ACE2, their average distances and the electrostatic potential of the interface area identified critical contact sites (Figure 1—figure supplements 2 and 3).
 
+![Video 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-video1.mp4.jpg)
+
+**Video 1.:** The movie highlights a three nano-second time segment of the molecular dynamics simulation (from 25 to 28 ns). Trimeric Spike is shown in green, RBD in dark green, and human ACE2 in gray. Complex glycosylation is shown in magenta, Man5 N-glycans in light blue and Man9 N-glycans in orange. Glycans of ACE2 at N53, N90, N322, and N546 are shown in blue, yellow, black, and red, respectively.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-v2.jpg)
+
+**Figure 1.:** (a) 3D model of the Spike trimer (in green, with RBD of monomer three in dark green) binding to ACE2 (in gray) with complex glycosylation in magenta, Man5 glycans in light blue and Man9 glycans in orange. (b) Close-up view of the glycans at N122 (orange sticks) and N165 (dark green sticks) on monomer 3 of Spike. (c) Close-up view of the glycans at N331 (yellow sticks) and N343 (purple sticks) on monomer 3 of Spike. (d) Close-up view of the glycans at N53 (blue sticks) and N90 (yellow sticks) on ACE2. (e) Close-up view of the glycans at N53 (blue sticks), N90 (yellow sticks), N322 (black sticks), and N546 (red sticks).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Prior to analysis by LC-ESI-MS, reduced and S-alkylated rshACE2 was digested in-solution with chymotrypsin and trypsin. Glycan compositions are denoted as the sum of hexoses (H), N-acetyl-hexosamines (N), N-acetyl-neuraminic acids (i.e. sialic acids; S) and fucoses (F). Molecular ion-species detected as ammonium adducts (i.e. +17 amu) are indicated by asterisks.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Black squares correspond to an average distance of 0 nm and white squares to an average distance of 6 nm. Residues which differ in mouse ACE2 are highlighted in red, residues known to be genetically polymorphic (Stawiski, E. W., Diwanji, D., Suryamohan, K., Gupta, R., Fellouse, F. A., Sathirapongsasuti, F., Liu, J., Jiang, Y., Ratan, A., Mis, M., Santhosh, D., Somasekar, S., Mohan, S., Phalke, S., Kuriakose, B., Antony, A., Junutula, J. R., Schuster, S. C., Jura, N., & Seshagiri, S. (2020). Human ACE2 receptor polymorphisms predict SARS-CoV-2 susceptibility. BioRxiv. doi:10.1101/2020.04.07.024752) are shown in bold.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Electrostatic potential surface of human ACE2. Red corresponds to a negative charge and blue to a positive charge. A bundle of glycan conformations is shown in sticks for the glycans at N53 (blue), N90 (yellow), N322 (black), and N546 (red).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The glycan at N234 (yellow spheres) of monomer 2 (red) is partially inserting into the core of the Spike trimer. The vacant space in the core is created by the receptor-binding domain of monomer 3 (blue) residing in the up conformation (in the dashed circle). Monomer 1 is shown in green.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Residue T324 (in spheres) of ACE2 (gray) is directly interacting with the RBD of Spike (dark green surface). Ablation of the glycan (black sticks) at N322 (gray sticks) was therefore achieved through the mutation N322Q.
+
 We next quantified the complete solvent-accessible surface area (SASA) of the Spike protein in complex with ACE2, both with and without glycans. The average accessible area of protein atoms for non-glycosylated and glycosylated Spike was 1395 nm² and 864 nm², respectively, indicating that glycans shield about 38% of the protein surface of Spike, a value that is comparable to what was previously found in simulations of Spike alone (Sikora et al., 2021; Grant et al., 2020). The area of protein atoms that are shielded by the individual glycans are shown in Figure 2a and Figure 2—figure supplement 1.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig2-v2.jpg)
+
+**Figure 2.:** (a) Normalized distribution of the area of Spike protein atoms that is shielded by each of its glycans on monomer 1 (see Figure 2—figure supplement 1 for monomers 2 and 3). (b) Normalized distribution of the number of atoms in contact with ACE2 and (c) the number of hydrogen bonds with ACE2 for glycans on monomer 3 of Spike (see Figure 2—figure supplement 2 for monomers 1 and 2).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The distributions were obtained from the molecular dynamics simulations for the individual monomers of Spike. For every Spike glycosite, the area of Spike protein atoms that is shielded by the glycan during the simulation is indicated. For instance, the glycan at N331 on monomer 1 shields between 7.5 and 10.0 nm2 of the Spike surface (see also Figure 1c of the main manuscript).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Normalized distribution of the number of atoms of glycans of the indicated Spike monomers that are in contact with human ACE2. (b) Normalized distribution of the number of hydrogen bonds formed between Spike glycans and human ACE2, shown for 2 Spike monomers. Glycans of the second monomer did not form H-bonds with human ACE2. (c) Normalized distribution of the number of atoms of Spike glycans that are in contact with Spike protein atoms, shown for all three Spike monomers. (d) Normalized distribution of the number of hydrogen bonds formed between Spike glycans and Spike for all three Spike monomers. Monomer 3 is the interacting monomer containing the RBD. The number of interacting atoms and the number of hydrogen bonds observed during the MD simulations are represented as normalized distribution for the individual glycosites on Spike on the different monomers.
 
 Further analysis showed that glycans at N122, N165, and N343 on Spike directly interact with ACE2 or its glycans (Figures 1b, c, 2b and c). It has been reported that Spike mutants lacking the glycans at N331 and N343 display reduced infectivity, while elimination of the glycosylation motif at N234 results in increased resistance to neutralizing antibodies, without reducing infectivity of the virus (Li et al., 2020). The equilibrium between the ‘up’ and ‘down’ conformations of Spike involves various stabilizing and destabilizing effects, with possible roles for the glycans at N165, N234, N331, and N343 (Casalino et al., 2020; Sztain et al., 2021; Mori et al., 2021). Removing the glycans at N165, N234 and N343 was experimentally seen to reduce binding to ACE2 by 10%, 40%, and 56%, respectively (Casalino et al., 2020; Sztain et al., 2021). In our MD simulations, the glycan at position N343 interacts directly with ACE2 (Figure 2), while the glycan at N331 interacts with a neighboring Spike monomer (Figure 1c, Figure 2—figure supplement 2), indicating that the N331 glycosylation site only indirectly affects the interaction of Spike with ACE2. In our model, the glycan at N234 also does not interact directly with ACE2, but seems to stabilize the ‘up’ conformation. Its removal could favor the ‘down’ conformation of the RBD, possibly explaining the observed more effective shielding against neutralizing antibodies. In agreement with previous simulations (Casalino et al., 2020) the Man9 glycan at N234 of Spike partially inserts itself into the vacant space in the core of the trimer that is created when the RBD of monomer three is in the ‘up’ conformation (Figure 1—figure supplement 4). In our simulations, the free space created by the ‘up’ conformation seems slightly smaller for Spike in complex with ACE2, suggesting that binding to ACE2 has a stabilizing effect on the Spike monomer.
 
@@ -60,15 +100,79 @@ The N165Q mutant was experimentally found to be more sensitive to neutralization
 
 Since our modeling clearly confirmed that ACE2 glycosylation plays a significant role in its binding to Spike (Figure 1d and e), we also determined the area of the Spike-ACE2 interface region, by subtracting the SASA of the complex from the SASA of the individual proteins and dividing by two. The total interface area was 24.6 nm², with glycans accounting for up to 51% of the interface area, that is 12.6 nm², contributed by the four most relevant glycans at positions N53, N90, N322, and N546 of ACE2 (Figure 3). Furthermore, we scored the number of atoms of each ACE2 glycan in contact with Spike. A contact was defined as a distance of less than 0.4 nm between two atoms. This allowed us to identify the glycans at N53, N90, N322, and N546 as interacting with Spike, with the glycan at position N53 having the weakest interaction. Notably, N546 interacted with Spike for a significant amount of time only in one of the two independent simulations. See Figure 3—figure supplement 1 for an analysis of the individual MD simulations and for separate analysis of the first and second half of the simulations. Remarkably, the interactions of the glycan at N90 seem to be more pronounced in the second, as compared to the first simulation. The degree of interaction correlated with the spatial proximity between the glycans and the RBD (Figure 1e and f). Assessing the number of hydrogen bonds that formed during the simulations, the glycans at N90 and N322 appear most prominent (Figure 3b) with a maximum occurrence of 10 hydrogen bonds existing concurrently. Interestingly, the glycans at N90 and N322 interact directly with Spike protein atoms, while the glycan at N546 (red sticks in Figure 1f) interacts with the glycans at N122 and N165 of Spike (dark green and orange sticks in Figure 1b). The glycans are highly dynamic, as can be seen in the breadth of the distributions of hydrogen bond occurrences and the multimodal character of the distributions for the interface area between the glycans and Spike (Figure 3c). A single glycan at N90 is observed to form up to 30 hydrogen bonds to Spike and to be responsible for an interface area of up to 10 nm2, representing almost 40% of the average total interface area between Spike and ACE2. These findings are in agreement with previously reported simulations of the complexes (Zhao et al., 2020; Mehdipour and Hummer, 2021) but raise the question if the glycans contribute favorably to the binding of the two proteins by mediating relevant interactions or unfavorably because of steric restraints and a loss of conformational freedom upon binding.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig3-v2.jpg)
+
+**Figure 3.:** (a) Normalized distribution of the number of atoms of glycans at N53, N90, N322, and N546 of ACE2 that are in contact with Spike (distance <0.4 nm). (b) Normalized distribution of the number of hydrogen bonds between glycans at N53, N90, N322, N546 of ACE2 and Spike. (c) Normalized distribution of the interface area between Spike and glycans at N53, N90, N322, and N546 of ACE2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The first column shows the normalized distribution of the number of atoms of glycans at N53, N90, N322, and N546 of ACE2 that are in contact with Spike (distance <0.4 nm). The second column shows the normalized distribution of the number of hydrogen bonds between glycans at N53, N90, N322, N546 of ACE2 and Spike. The third column shows the normalized distribution of the interface area between Spike and glycans at N53, N90, N322, and N546 of ACE2.
+
 Next, we assessed the conformational freedom of ACE2 glycans upon binding to Spike and compared their respective density maps in the simulations of free ACE2, and ACE2 in complex with Spike (Figure 4). The density map of the unbound ACE2 (Figure 4a) shows a continuous density of glycans, largely covering the interface area. Formation of the ACE2-Spike complex significantly reduces the conformational freedom of the glycans, in particular the ones at N90 and N322 (Figure 4b). We predict that the glycans at N90 and N322 hamper binding to Spike, either sterically or through an entropic penalty upon binding due to a loss of conformational freedom. These glycans have been implicated as being relevant for binding before (Zhao et al., 2020), as well as the glycan at N53 (Barros et al., 2021), but no conclusions were drawn if they contribute positively or negatively to binding. Mehdipour and Hummer predicted the glycan at N322 to contribute favorably to binding, because of the favorable interactions of this glycan with the Spike surface (Mehdipour and Hummer, 2021). We did not observe a significantly more pronounced interaction with Spike for the glycan at N322, compared to the one at N90 (Figure 3). Based on conformational considerations, we therefore rather predict a negative impact on binding for both glycans (Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig4-v2.jpg)
+
+**Figure 4.:** (a) The density map (gray mesh) of the glycans at N53, N90, N322, and N546 as observed in the simulations of unbound ACE2 are superimposed onto the ACE2 – Spike complex. (b) The density map of the same glycans, as observed in the simulation of the ACE2 – Spike complex. ACE2 in gray, Spike in green. Single, randomly selected conformations of the glycans are shown in blue (N53), yellow (N90), black (N322), and red (N546).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The density map (red mesh) of sialic acids at the termini of the glycans at N53, N90, N322, and N546 as observed in the simulations of unbound ACE2 are superposed onto the ACE2 – Spike complex. (b) The density map of the same glycans, as observed in the simulation of the ACE2 – Spike complex. ACE2 in gray, Spike in green. Single, randomly selected conformations of the glycans are shown in blue (N53), yellow (N90), black (N322), and red (N546).
 
 Since only the glycans at N90 and N322 directly interact with the protein atoms of the Spike proteins, while the glycan on N546 forms hydrogen bonds with glycans present on Spike, we set out to confirm the negative influence of N90 and N322 glycosylation on the interactions with Spike experimentally. First, we ablated N-glycosylation at N90 and N322 individually using the ACE2-Fc fusion constructs ACE2-T92Q-Fc (Chan et al., 2020) and ACE2-N322Q-Fc. Note that (Chan et al., 2020) indeed suggests that removal of the glycan at N90 through a mutation of T92 leads to enhanced interaction with Spike. The same data set, however, suggests that removal of the glycan at N322 through a mutation of T324 most likely leads to reduced affinity to Spike. However, T324 is itself part of the interface with Spike (Figure 1—figure supplement 5), and any mutation of this residue could easily disrupt ACE2 – Spike binding directly, rather than through its effect on the N322 glycosite. We therefore decided to mutate N322 into glutamine to prevent glycosylation at this position.
 
 The wild-type and mutant ACE2-Fc constructs were expressed in HEK293-6E cells and purified from the culture supernatants by protein A affinity chromatography to apparent homogeneity (Figure 5—figure supplement 1). Analysis by size-exclusion chromatography combined with detection by multi-angle light scattering (SEC-MALS) demonstrated that all purified proteins were dimers of the expected native molecular mass (Figure 5—figure supplement 2). The impact of the introduced mutations on the overall fold of ACE2-Fc was tested with differential scanning calorimetry (DSC), a sensitive biophysical method for the assessment of the thermal stability of proteins. Three thermal transitions could be discriminated. The first midpoint of transition (Tm1) is due to the unfolding of ACE2, whereas the second and third midpoints of transitions (Tm2 and Tm3) reflect the thermal denaturation of the CH2 and CH3 domains of the Fc part of the fusion proteins (Lobner et al., 2017). The Tm1 midpoint transition temperatures of the ACE2-Fc glycomutants (53.3°C–54.0°C) were slightly higher than for the wild-type protein (52.2 °C), while Tm2 and Tm3 remained unchanged (Figure 5). This indicates that removal of the N90 and N322 glycans does not compromise the structural integrity of ACE2.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig5-v2.jpg)
+
+**Figure 5.:** Raw data (black) were smoothened (red) and then fitted using a non-two-state thermal unfolding model (gray). Data are presented as mean ± SEM of three independent experiments. Cp, heat capacitance; rshACE2, clinical-grade recombinant soluble human ACE2; deglyco-rshACE2, enzymatically deglycosylated rshACE2; deglyco-ACE2-wt-Fc, enzymatically deglycosylated wild-type ACE2-Fc; desialo-ACE2-wt-Fc, enzymatically desialylated wild-type ACE2-Fc.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Analysis of 1 µg of each purified protein by SDS-PAGE. M, molecular mass markers.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** A total of 50 µg of Spike was loaded onto a Superose 6 Increase 10/300 GL column at a flow rate of 0.25 mL min–1. All other proteins were analyzed by injection of a total of 25 µg of the respective protein onto a Superdex 200 10/300 GL column at a flow rate of 0.75 mL min–1. The elution time of ACE2-wt-Fc is marked with a dashed line. Molecular masses (red traces) were determined by MALS. dRI, change in refractive index.
+
 The Spike-binding properties of the purified ACE2-Fc variants were characterized by biolayer interferometry (BLI). For this, ACE2-wt-Fc, ACE2-T92Q-Fc, and ACE2-N322Q-Fc were biotinylated, immobilized on streptavidin biosensor tips and dipped into serial dilutions of trimeric Spike. Since we did not observe appreciable dissociation of ACE2-Fc/trimeric Spike complexes in our analyses (Figure 6—figure supplement 1), we evaluated the association rates (kobs; Figure 6a). To determine equilibrium affinity constants (KD), we analyzed the interactions between the immobilized ACE2-Fc constructs and monomeric RBD (Figure 6b, Figure 6—figure supplement 2). The BLI data are in good agreement with our computational models, confirming that the removal of protein N-glycosylation at either N90 or N322 results in up to twofold higher binding affinities, when compared to ACE2-wt-Fc (ACE2-wt-Fc: KD = 16.2 ± 0.7 nM; ACE2-T92Q-Fc: KD = 8.0 ± 0.7 nM; ACE2-N322Q-Fc: KD = 11.4 ± 0.3 nM; Figure 6b; Figure 6—figure supplement 2). Thus, structure-guided glyco-engineering at N90 and N322 results in ACE2 forms with increased affinity for SARS-CoV-2 Spike binding.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig6-v2.jpg)
+
+**Figure 6.:** (a) Binding of Spike to glyco-engineered ACE2 variants as determined by biolayer interferometry (BLI). Plots of kobs (observed association rate) as a function of Spike concentration were generated by fitting the association data to a 1:1 binding model. Binding analysis was performed by dipping ACE2-loaded biosensors into twofold serial dilutions of purified Spike (1.6–50 nM). All measurements were performed in triplicates. rshACE2, clinical-grade recombinant soluble human ACE2; deglyco-rshACE2, enzymatically deglycosylated rshACE2; deglyco-ACE2-wt-Fc, enzymatically deglycosylated wild-type ACE2-Fc. (b) KD values for the interaction of the indicated glyco-engineered ACE2 variants with monomeric RBD. Data are presented as mean ± SEM of 3 independent experiments. Desialo-ACE2-wt-Fc, enzymatically desialylated wild-type ACE2-Fc.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Binding analysis was performed by dipping biosensors loaded with different ACE2 variants into twofold serial dilutions of purified Spike (1.6–50 nM). Black lines represent the response curves of the association and dissociation phases. The data were fitted to a 1:1 binding model (red lines). For each ACE2 variant, one representative experiment out of three is shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Black lines represent the response curves of the association and dissociation phases. The data were fitted to a 1:1 binding model (red lines). KD, kon, and koff values represent the mean ± SEM of three independent experiments. For each ACE2 variant, one representative experiment is shown.
+
 Next, we tested the virus neutralization properties of ACE2-wt-Fc, ACE2-T92Q-Fc, and ACE2-N322Q-Fc. For this, we infected Vero E6 cells with 60 plaque-forming units (PFU; multiplicity of infection (MOI): 0.002) of SARS-CoV-2 in the presence of 10–50 µg/mL ACE2-wt-Fc, ACE2-T92Q-Fc, or ACE2-N322Q-Fc. The extent of SARS-CoV-2 infection and replication was quantified by RT-qPCR detection of viral RNA present in the culture supernatants. Untreated SARS-CoV-2 infected cells released up to 10 times more viral RNA than ACE2-wt-Fc-treated cells. Importantly, co-incubation of cells with SARS-CoV-2 and ACE2-T92Q-Fc resulted in significant further reduction of the viral load when compared to ACE2-wt-Fc. Enhanced SARS-CoV-2 neutralization was also observed for ACE2-N322Q-Fc. However, this mutant was less effective in promoting virus neutralization than ACE2-T92Q-Fc (Figure 7 and Figure 7—figure supplement 1). Similar results were obtained when SARS-CoV-2 neutralization assays were performed with much larger amounts of inoculated virus (MOI: 20) and concomitantly increased ACE2-Fc concentrations (Figure 7—figure supplement 2). Hence, in line with our structural glycan interaction map, the removal of either of the N-glycans attached to N90 and N322 gives rise to ACE2 decoy receptors with improved SARS-CoV-2 neutralization properties.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-v2.jpg)
+
+**Figure 7.:** Inhibition of SARS-CoV-2 infection of Vero E6 cells using wild-type ACE2-Fc and the indicated glyco-engineered ACE2-Fc variants at final concentrations of 10–50 µg/mL. The viral RNA content of the culture supernatants was quantified by RT-qPCR and expressed as fold change reduction relative to untreated controls. With the exception of ACE2-T92Q-Fc, all data are presented as mean ± SEM of three independent experiments each performed in triplicates. In the case of ACE2-T92Q-Fc, only two independent experiments could be performed due to the limited availability of this protein. Deglyco-ACE2-wt-Fc, enzymatically deglycosylated wild-type ACE2-Fc; desialo-ACE2-wt-Fc, desialylated wild-type ACE2-Fc. *p < 0.05; **p < 0.01; ***p < 0.001 (Kruskal-Wallis).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Inhibition of SARS-CoV-2 infection of Vero E6 cells (MOI: 0.002) using wild-type ACE2-Fc and the indicated glyco-engineered ACE2-Fc variants at final concentrations of 10–100 µg/mL. The viral RNA content of the culture supernatants was quantified by RT-qPCR. Data are derived from 1 to 4 experiments performed in triplicates. Deglyco-ACE2-wt-Fc, enzymatically deglycosylated wild-type ACE2-Fc; desialo-ACE2-wt-Fc, enzymatically desialylated wild-type ACE2-Fc.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Inhibition of SARS-CoV-2 infection of Vero E6 cells (MOI: 20) using wild-type ACE2-Fc and the indicated glyco-engineered ACE2-Fc variants at final concentrations of 50–200 µg/mL. The viral RNA content of the infected cells was quantified by RT-qPCR and expressed as neutralization efficiency relative to ACE2-wt-Fc (set to 100%). Data are presented as mean ± SD of triplicates. Deglyco-ACE2-wt-Fc, enzymatically deglycosylated wild-type ACE2-Fc.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Prior to analysis by LC-ESI-MS/MS, the indicated reduced and S-alkylated ACE2-Fc variants were digested in-solution with chymotrypsin and trypsin. Comparative analysis of extracted ion chromatograms of glycopeptides confirmed the absence of glycans attached to N90 and/or N322 in ACE2-T92Q-Fc, ACE2-N322Q-Fc, and ACE2-T92Q-N322Q-Fc. The peptide sequences surrounding the different glycosites are shown.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Prior to analysis by LC-ESI-MS/MS, native and deglycosylated (deglyco) ACE2-wt-Fc and rshACE2 were reduced, alkylated and then digested in-solution with chymotrypsin and trypsin. Comparative analysis of extracted ion chromatograms of glycopeptides confirmed the absence of N-glycans attached to N53, N90, N103, and N322 of deglyco-ACE2-wt-Fc and deglyco-rshACE2. Peptide sequences surrounding the different glycosites are shown.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** The absence of sialic acids attached to N53, N90, N103, N322, N432, and N546 of desialo-ACE2-wt-Fc was confirmed by ESI-LC-MS/MS. Peptide sequences surrounding the different glycosites are shown.
 
 To investigate a potential additive effect of simultaneous elimination of N-glycosylation at N90 and N322, we generated a double mutant ACE2-T92Q-N322Q-Fc construct. We also digested ACE2-wt-Fc with peptide-N4-(N-acetyl-beta-glucosaminyl)asparagine amidase F (PNGase F) to remove all accessible N-glycans (deglyco-ACE2-wt-Fc) and neuraminidase to release terminal sialic acid residues (desialo-ACE2-wt-Fc). Purity and homogeneity of these additional ACE2-Fc variants was ascertained by SDS-PAGE and SEC-MALS (Figure 5—figure supplements 1 and 2). The absence of N-glycans attached to N90 and/or N322 in ACE2-T92Q-N322Q-Fc and the respective single mutants was demonstrated by LC-ESI-MS (Figure 7—figure supplement 3). Quantitative release of sialic acids and complete removal of N-glycans from all ACE2-wt-Fc N-glycosylation sites with the exception of N546 was also confirmed (Figure 7—figure supplements 4 and 5). The glycans at N546 of ACE2-wt-Fc exhibited partial resistance (40%) to PNGase F treatment (Figure 7—figure supplement 4). Combined introduction of the mutations T92Q and N322Q as well as enzymatic desialylation did not reduce the thermal stability of ACE2-Fc as assessed by DSC, while close-to-complete removal of N-glycans by PNGase F led to a slightly decreased midpoint transition temperature of the ACE2 domain (Figure 5). Studies of the interaction between ACE2-T92Q-N322Q-Fc and deglyco-ACE2-wt-Fc with RBD by BLI analysis yielded KD values similar to those determined for the single mutant ACE2-T92Q-Fc (ACE2-T92Q-N322Q-Fc: KD = 8.2 ± 0.2 nM; deglyco-ACE2-wt-Fc: KD = 7.6 ± 0.3 nM). The affinity of desialo-ACE2-wt-Fc for RBD (KD = 11.3 ± 0.4 nM) was also higher than that of native ACE2-wt-Fc (Figure 6b). The increased affinities of these ACE2-Fc variants for Spike correlate with their potencies to neutralize SARS-CoV-2, with deglyco-ACE2-wt-Fc followed by ACE2-T92Q-N322Q-Fc displaying the highest neutralization potencies (Figure 7 and Figure 7—figure supplement 2). The effect of desialo-ACE2-wt-Fc on SARS-CoV-2 infections of Vero E6 cells was less pronounced and comparable to that of the single mutant ACE2-N322Q-Fc (Figure 7), in good agreement with the almost identical RBD-binding affinities of these two ACE2-Fc variants (Figure 6b). Taken together, these data identify critical glycans at position N90 and N322 of ACE2 that structurally and functionally interfere with Spike-ACE2 binding; ablation of these glycans via site-directed mutagenesis or enzymatic deglycosylation generated ACE2 variants with improved Spike-binding properties and increased neutralization strength.
 
@@ -86,6 +190,14 @@ Besides serving as a soluble decoy receptor to prevent SARS-CoV-2 infection of A
 
 Interestingly, deglyco-ACE2-wt-Fc (149% ± 1 %) and desialo-ACE2-wt-Fc (160% ± 2 %) exhibited higher enzymatic activities than native ACE2-wt-Fc (Figure 10 and Figure 10—figure supplement 1). A similar observation was made for deglyco-rshACE2, although the enhancing effects of enzymatic deglycosylation on catalytic efficiency were less pronounced (113% ± 2% as compared to native rshACE2; Figure 10). These results show that enzymatic removal of N-glycans from ACE2-Fc and clinical-grade rshACE2 results in increased Spike binding and enhanced SARS-CoV-2 neutralization while preserving its potentially critical enzymatic activity.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig10-v2.jpg)
+
+**Figure 10.:** Hydrolysis of 100 µM 7-methoxycoumarin-4-yl-acetyl-Ala-Pro-Lys-2,4-dinitrophenyl was continuously monitored by spectrofluorimetry. Hydrolytic activity is plotted as relative fluorescence units (RFU) over ACE2 concentration (in nM). All assays were performed in technical triplicates. One representative experiment out of two is shown.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/73641/elife-73641-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Hydrolysis of 100 µM 7-methoxycoumarin-4-yl-acetyl-Ala-Pro-Lys-2,4-dinitrophenyl was continuously monitored by spectrofluorimetry. Hydrolytic activity is plotted as relative fluorescence units (RFU) over ACE2 concentration (in nM). All assays were performed in triplicates. One representative experiment out of three is shown.
+
 ## Discussion
 
 Our data demonstrate that structure-guided glycoengineering is a powerful means to develop ACE2 variants with improved SARS-CoV-2 neutralization properties without compromising the structural stability and catalytic activity of the enzyme. Our in silico models of the Spike-ACE2 complex combined with simulations of its spatial and temporal dynamics rationalized previously published data and led to predictions that were confirmed by in vitro binding studies and cell-based SARS-CoV-2 neutralization assays. However, it requires further explanation how the moderately enhanced affinity of ACE2 glycovariants for monomeric RBD observed in biolayer interferometry experiments can relate to a far more pronounced increase of their virus-neutralization potency in Vero E6 cells. First, while the binding affinity is represented by an equilibrium constant, which is the ACE2 concentration at which 50% is in a bound state, the inhibitory strength in cell-based assays is measured at three distinct concentrations, at which one protein may show little inhibition (the relative concentration in the assay is below the Kd) while another variant shows strong inhibition (the relative concentration in the assay is above the Kd). Second, a cooperative effect may be expected for the association of trimeric Spike molecules present in the viral envelope with ACE2 dimers. In this supramolecular setting, a subtle increase in the affinity of ACE2 for RBD can lead to a dynamic equilibrium of binding and unbinding events with up to six potential interactions, leading to an overall much stronger avidity effect. The dynamic equilibrium of the RBDs between ‘down’ and ‘up’ conformations can further steepen the dose-response curves (Monod et al., 1965). Third, a slight advantage of the soluble ACE2 decoy receptor over endogenous native ACE2 may be sufficient to tip the balance between SARS-CoV-2 attachment and shedding of viral particles from the host cell surface. The inhibitory strength is not a function of the number of Spike proteins that are bound, but of the probability that a high enough fraction of Spike proteins is bound, potentiating a small increase in affinity (Magnus, 2013). Fourth, the SARS-CoV-2 neutralization assays shown in Figure 7 were performed at a low multiplicity of infection. This can lead to complete neutralization of all virus particles in the inoculum (Monteil et al., 2020) as becomes evident from the individual data points of our experiments (Figure 7—figure supplement 1). Hence, the data are presented as medians and not as arithmetic means, which potentially accentuates the numeric differences between individual samples. Finally, it is possible that the N-glycan moiety of ACE2 also modulates other aspects of viral entry besides promoting the docking of Spike to the cell surface (Yang et al., 2020).
@@ -98,53 +210,266 @@ In line with other reports (Chan et al., 2020; Chu et al., 2021), our results in
 
 ## Materials and methods
 
-## Modeling of the Spike-hACE2 complex
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-6E</td>
+      <td>National Research Council of Canada</td>
+      <td>RRID: CVCL_HF20</td>
+      <td>Durocher et al., 2002</td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>Vero E6</td>
+      <td>ATCC</td>
+      <td>CRL-1586;RRID: CVCL_0574</td>
+      <td>also known as VERO C1008</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PCAGGS-RBD (plasmid)</td>
+      <td>Florian Krammer, Icahn School of Medicine at Mount Sinai</td>
+      <td></td>
+      <td>Amanat et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAGGS-Spike (plasmid)</td>
+      <td>Florian Krammer, Icahn School of Medicine at Mount Sinai</td>
+      <td></td>
+      <td>Amanat et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-sACE2(WT)-Fc(IgG1) (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat #: 145163;RRID:Addgene_145163</td>
+      <td>Chan et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-sACE2-T92Q-Fc(IgG1) (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat #: 145170;RRID:Addgene_145170</td>
+      <td>Chan et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-sACE2-N322Q-Fc(IgG1) (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-sACE2-T92Q-N322Q-Fc(IgG1) (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>soluble human ACE2</td>
+      <td>Apeiron Biologicals, Vienna, Austria</td>
+      <td>APN01</td>
+      <td>Monteil et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Severe acute respiratory syndrome coronavirus 2)</td>
+      <td>SARS-CoV-2</td>
+      <td>Monteil et al., 2020</td>
+      <td></td>
+      <td>GenBank MT093571</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Severe acute respiratory syndrome coronavirus 2)</td>
+      <td>SARS-CoV-2</td>
+      <td>Charité, Berlin, Germany</td>
+      <td>Ref-SKU #: 026 V-03883</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Lightning Site-Directed Mutagenesis kit</td>
+      <td>Agilent Technologies</td>
+      <td>Cat #: 210,518</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-Link Sulfo-NHS-LC-Biotin kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: 21,435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QiaAmp Viral RNA Minikit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 52,904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Multiplex RT-qPCR Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 204,443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2019-nCoV_N1-F</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>GACCCCAAAATCAGCGAAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2019-nCoV_N1-R</td>
+      <td>This paper</td>
+      <td>qPCR primer</td>
+      <td>TCTGGTTACTGCCAGTTGAATCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2019-nCoV_N1-P</td>
+      <td>This paper</td>
+      <td>qPCR probe</td>
+      <td>FAM-ACCCCGCATTACGTTTGGTGGACC-BHQ1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FreeStyle F17 medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A1383502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PNGase F</td>
+      <td>New England BioLabs</td>
+      <td>Cat #: P0705</td>
+      <td>180,000 U mL–1</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neuraminidase</td>
+      <td>New England BioLabs</td>
+      <td>Cat #: P0720</td>
+      <td>2,500 U mL–1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mca-Ala-Pro-Lys (Dnp)-OH</td>
+      <td>Bachem, Bubendorf, Switzerland</td>
+      <td>Cat #: 4042638</td>
+      <td>7-methoxycoumarin-4-yl-acetyl-Ala-Pro-Lys-2,4-dinitrophenyl</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gromacs</td>
+      <td>https://www.gromacs.org/</td>
+      <td>2019.4;RRID: SCR_014565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMOS</td>
+      <td>http://www.gromos.net/</td>
+      <td>1.5.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Octet data analysis software</td>
+      <td>ForteBio</td>
+      <td>11.1.1.39</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ASTRA six software</td>
+      <td>Wyatt Technology</td>
+      <td>6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 7.0 for DSC software</td>
+      <td>Malvern Panalytical</td>
+      <td>7.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td>8;RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Modeling of the Spike-hACE2 complex
 
 To model the fully glycosylated SARS-CoV-2 Spike-human ACE2 (hACE2) complex, a protein model was created using partial experimental structures deposited in the protein databank (PDB). The Spike RBD domain in complex with hACE2 (Yan et al., 2020) (PDB: 6M17) was superimposed with the opened RBD domain in a Spike structure with one open RBD domain (Walls et al., 2020) (PDB: 6VYB). Alternative Spike structures have been published, which show very similar conformations (Wrapp et al., 2020). Similarly, further structures of the Spike RBD-hACE2 complex Wang et al., 2020, Lan et al., 2020 have been reported which show very similar conformations to the templates used. Missing residues in Spike were modeled using SWISS-MODEL (Waterhouse et al., 2018) and the superimposed structure as template based on the complete SARS-CoV-2 S sequence (GenBank QHD43416.1).
 
 Different types of glycans were added to Spike and hACE2. For Spike, the assignments of Watanabe et al., 2020 were followed, selecting oligomannosidic (Man5 or Man9) or complex (bi-antennary di-sialylated core fucosylated; NaNaF) glycans according to the majority of the glycans detected at the respective site. This was largely confirmed by our own analysis (Hoffmann et al., 2021). For hACE2, complex (i.e. bi-antennary di-sialylated core fucosylated) N-glycans were added. See Supplementary file 1 for the exact assignments. Initial conformations of the glycans were selected following previously derived procedures (Turupcu and Oostenbrink, 2017). In brief, molecular dynamics simulations were performed of mini-peptides with the glycans attached. Local Elevation (Huber et al., 1994) was used to enhance the sampling of all glycosidic linkages, during simulations of 100 ns. The entire glycan trees were clustered based on the conformations of the individual glycosidic linkages (Perić-Hassler et al., 2010). This resulted in conformational bundles containing 1301, 1340, and 2413 distinct conformations of Man5, Man9, and NaNaF, respectively. These conformations were fitted onto the respective glycosylation site in the Spike-hACE2 complex using a superposition of the backbone of the asparagine residues and the non-bonded interaction energy between the glycan and protein atoms or previously added glycans was computed. The lowest energy conformation was retained. Topologies and initial conformations were generated using the gromos ++ suite of pre- and post-MD tools (Eichenberger et al., 2011). Glycans were added to the complex sequentially, to avoid collisions between individual glycans. A few modeled glycans were incompatible with loops of the Spike protein not resolved in the experimental structures. Loops involved in these structural incompatibilities (residues 141–165 and 471–490) were partially re-modeled in the fully glycosylated model using the RCD+ loop modeling server (Chys and Chacón, 2013; López-Blanco et al., 2016). The final model was energy-minimized with the GROMOS 54A8 protein force-field (Reif et al., 2012; Reif et al., 2013), the GROMOS 53A6glyc glycan force-field (Turupcu and Oostenbrink, 2017; Pol-Fachin et al., 2012; Pol-Fachin et al., 2014) and the GROMOS simulation software using the steepest decent algorithm (Schmid et al., 2012).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Molecular dynamics simulations were performed using the simulation package Gromacs (Version 2019.5) and the indicated force field parameters. hACE2 was reduced to residues 21–730 in the models, to reduce its overall size prior to simulation. The models were placed in rhombic dodecahedron simulation boxes and solvated by explicit SPC water molecules (Berendsen et al., 1981). This resulted in simulation systems of 5.9 × 105 and 2.2 × 106 atoms for hACE2 and the Spike-hACE2 complex, respectively. Two independent 100-ns molecular dynamics simulations were performed for hACE2 and for the Spike-hACE2 complex each. The equations of motion were integrated using a leapfrog integration scheme (Hockney, 1970) with a time-step of 2 fs. Non-bonded interactions were calculated within a cutoff sphere of 1.4 nm and electrostatic interactions were computed using a particle-particle particle-mesh (P3M) approach (Hockney and Eastwood, 1988). Bond-lengths were constrained to their optimal values using the Lincs algorithm (Hess et al., 1997). Temperature was maintained at a constant value using a velocity-rescaling algorithm (Berendsen et al., 1984; Bussi et al., 2007) with a relaxation time of 0.1 ps. Pressure was maintained constant using a Parrinello-Rahman barostat (Parrinello and Rahman, 1981; Nosé and Klein, 2006) with a relaxation time of 2.0 ps and an estimated isothermal compressibility of 4.5 × 10–5 bar–1. Configurations were stored every 10 ps for subsequent analyses. Hydrogen bonds were identified using a geometric criterion. A hydrogen bond was logged if the donor-acceptor distance is within 0.25 nm and the donor-hydrogen-acceptor angle was larger than 135 degrees. The solvent-accessible surface area was determined by rolling a probe with diameter 0.14 nm over the surface of the protein, using slices of 0.005 nm width. An atom contact was assigned if the distance between two atoms were within 0.4 nm. The distributions of atom contacts, hydrogen bonds and solvent-accessible surface area were estimated using a kernel density estimator with gaussian kernels. Distributions obtained from the first and second half of the simulations were compared to ensure convergence. Glycan densities were calculated using the program GROmaps (Briones et al., 2019).
 
-## Recombinant expression of proteins
+### Recombinant expression of proteins
 
 Soluble recombinant human ACE2 (rshACE2) was provided by Apeiron Biologicals (Vienna, Austria). Recombinant expression of all other proteins was performed by transient transfection of HEK293-6E cells, licensed from National Research Council (NRC) of Canada, as previously described (Lobner et al., 2017; Durocher et al., 2002). Cells were cultivated in FreeStyle F17 expression medium supplemented with 0.1% (v/v) Pluronic F-68 and 4 mM L-glutamine (all from Thermo Fisher Scientific, United States) in shaking flasks at 37 °C, 8% CO2, 80% humidity and 130 rpm in a Climo-Shaker ISF1-XC (Adolf Kühner AG, Switzerland). pCAGGS vector constructs containing either the sequence of the SARS-CoV-2 RBD (residues R319-F541) or the complete luminal domain of Spike, modified in terms of removal of the polybasic furin cleavage site and introduction of two stabilizing point mutations (K986P and V987P), were kindly provided by Florian Krammer, Icahn School of Medicine at Mount Sinai (New York, United States) (Amanat et al., 2020; Stadlbauer et al., 2020). Plasmid constructs pcDNA3-sACE2(WT)-Fc(IgG1) and pcDNA3-sACE2-T92Q-Fc(IgG1) were obtained from Addgene (United States). The N322Q mutation was introduced into ACE2-wt-Fc and ACE2-T92Q-Fc using the QuikChange Lightning Site-Directed-Mutagenesis kit (Agilent Technologies, United States) according to the manufacturer’s instructions and the respective parental vector as template. High-quality plasmid preparations for expression of ACE2-Fc variants were prepared using the PureYield Plasmid Midiprep System (Promega, United States). Transient transfection of the cells was performed at a cell density of approximately 1.7 × 106 cells mL–1 culture volume using a total of 1 μg of plasmid DNA and 2 μg of linear 40 kDa polyethylenimine (Polysciences Inc, Germany) per mL culture volume. Forty-eight hr and 96 hr after transfection, cells were supplemented with 0.5% (w/v) tryptone N1 (Organotechnie, France) and 0.25% (w/v) D(+)-glucose (Carl Roth, Germany). Soluble proteins were harvested after 120–144 hr by centrifugation (10 000 g, 15 min, 4 °C).
 
-## Purification of recombinantly expressed proteins
+### Purification of recombinantly expressed proteins
 
 After filtration through 0.45 μm membrane filters (Merck Millipore, Germany), supernatants containing RBD or soluble Spike were concentrated and diafiltrated against 20 mM sodium phosphate buffer containing 500 mM NaCl and 20 mM imidazole (pH 7.4) using a Labscale TFF system equipped with a 5 kDa cut-off Pellicon XL device (Merck Millipore). The His-tagged proteins were captured using a 5 mL HisTrap FF crude column connected to an ÄKTA pure chromatography system (both from Cytiva, United States). Bound proteins were eluted by applying a linear gradient of 20–500 mM imidazole over 20 column volumes. ACE2-Fc variants were purified by affinity chromatography using a 5 mL HiTrap Protein A column (Cytiva) according to the manufacturer’s instructions and 0.1 M glycine-HCl (pH 3.5) for elution. Eluate fractions were immediately neutralized using 2 M Tris (pH 12.0). Fractions containing the protein of interest were pooled, concentrated using Vivaspin 20 Ultrafiltration Units (Sartorius, Germany) and dialyzed against PBS (pH 7.4) at 4 °C overnight using SnakeSkin Dialysis Tubing (Thermo Fisher Scientific). The RBD was further purified by size exclusion chromatography (SEC) using a HiLoad 16/600 Superdex 200 pg column (Cytiva) eluted with PBS. All purified proteins were stored at –80 °C until further use.
 
-## Enzymatic deglycosylation and desialylation of ACE2
+### Enzymatic deglycosylation and desialylation of ACE2
 
 For deglycosylation of ACE2-wt-Fc and rshACE2, proteins (2 mg mL–1) were incubated with 180,000 U mL–1 PNGase F (New England Biolabs, Unites States) in PBS (pH 7.4) for 24 hr at 37 °C. Desialylation of ACE2-wt-Fc was performed with 2500 U mL–1 neuraminidase (New England Biolabs) in 50 mM sodium citrate (pH 5.0) under otherwise identical conditions. The deglycosylated or desialylated ACE2 variants were purified by preparative SEC using a HiLoad 16/600 Superdex 200 pg column eluted in PBS. The extent of enzymatic deglycosylation and desialylation was assessed by SDS-PAGE (Figure 5—figure supplement 1), SEC-MALS (Figure 5—figure supplement 2), and ESI-LC-MS/MS (Figure 7—figure supplements 4 and 5).
 
-## Bio-layer interferometry (BLI) measurements
+### Bio-layer interferometry (BLI) measurements
 
 Interaction studies were performed on an Octet RED96e system using high precision streptavidin (SAX) biosensors (both from ForteBio, United States). Thus, all capture molecules (ACE2-wt-Fc, ACE2-T92Q-Fc, ACE2-N322Q-Fc, ACE2-T92Q-N322Q-Fc, deglyco-ACE2-wt-Fc, desialo-ACE2-wt-Fc, rshACE2, and deglyco-rshACE2) were biotinylated using the EZ-Link Sulfo-NHS-LC-Biotin kit (Thermo Fisher Scientific). Excess sulfo-NHS-LC-biotin was quenched by adding Tris-HCl buffer (800 mM, pH 7.4) to a final concentration of 3 mM. Biotinylated proteins were further purified using PD-10 desalting columns (Cytiva) according to the manufacturer’s protocol. All assays were conducted in PBS supplemented with 0.05% (v/v) Tween 20% and 0.1% (w/v) BSA (PBST-BSA) at 25 °C with the plate shaking at 1000 rpm. The SAX biosensors were first equilibrated in PBST-BSA and then dipped into a 34 nM solution of the respective biotinylated capture molecule until a signal threshold of 0.8 nm was reached. Subsequently, the biosensors were dipped into PBST-BSA for 90 s to record a baseline, before they were submerged into different concentrations of RBD or the Spike protein to record association rates. For binding analysis of trimeric Spike, all biosensors were dipped into twofold serial dilutions of the protein (1.6–50 nM). To determine KD values, titration of RBD was performed at different concentrations to cover a broad concentration range around the respective KD value (Hulme and Trevethick, 2010). Biosensors loaded with ACE2 variants were submerged into twofold (6.25–200 nM) or threefold (0.8–200 nM) serial dilutions of RBD as appropriate for 600 s. For dissociation, the biosensors were dipped into PBST-BSA for 300 s (for analysis of Spike) or 100 s (for analysis of RBD). Each experiment included a baseline measurement using PBST-BSA (negative control) as well as a positive control (RBD). Of note, no unspecific binding of RBD or the Spike protein to SAX biosensors was observed. Data were evaluated under consideration of the limit of detection (LOD) and limit of quantification (LOQ) as reported elsewhere (Armbruster and Pry, 2008; Carvalho et al., 2018). Each experiment was performed three times. Analysis was performed using the Octet data analysis software version 11.1.1.39 (ForteBio) according to the manufacturer’s guidelines.
 
-## SDS-PAGE
+### SDS-PAGE
 
 SDS-PAGE was carried out using a 4–15% MINI-PROTEAN TGX Stain-Free Protein Gel, the Mini-PROTEAN Tetra Vertical Electrophoresis Cell (both from Bio-Rad Laboratories Inc, United States) and SDS-PAGE running buffer (20 mM Tris, 200 mM glycine, 0.1% (w/v) SDS). One μg of each purified protein was mixed with SDS sample buffer (62.5 mM Tris/HCl (pH 6.8), 2.5% (w/v) SDS, 10% (w/v) glycerol, 0.01% (w/v) bromophenol blue), heated to 70 °C for 10 min and loaded onto the gel. For reducing conditions purified samples were mixed with SDS-PAGE sample buffer containing 0.75 M β-mercaptoethanol and heated to 95 °C for 5 min prior to loading. The PageRuler Unstained Protein Ladder (Thermo Fisher Scientific) was used as a size marker. Protein bands were visualized with the Gel Doc XR + Imager (Bio-Rad Laboratories).
 
-## Size-exclusion chromatography - multi-angle light scattering (SEC-MALS)
+### Size-exclusion chromatography - multi-angle light scattering (SEC-MALS)
 
 Size-exclusion chromatography combined with multi-angle light scattering was performed to determine the homogeneity and the native molecular mass of all proteins under study. Analyses were performed on an LC20 Prominence HPLC equipped with a refractive index detector RID-10A and the photodiode array detector SPD-M20A (all from Shimadzu, Japan). In-line MALS was analyzed either with a miniDAWN TREOS II MALS (for analysis of Spike) or a Heleos Dawn8+ plus QELS apparatus (Wyatt Technology, United States). Prior to analysis, all proteins were centrifuged (16,000 g, 10 min, 20 °C) and filtered (0.1 µm Ultrafree-MC filter, Merck Millipore). Proper performance of the MALS detectors was validated with bovine serum albumin. Purified Spike was analyzed by injection of a total of 50 µg onto a Superose 6 Increase 10/300 GL column (Cytiva) at a flow rate of 0.25 mL min–1. The mobile-phase buffer used was PBS supplemented with 10% glycerol (pH 7.4). All other proteins were analyzed by using a Superdex 200 10/300 GL column (Cytiva) equilibrated with PBS plus 200 mM NaCl (pH 7.4). A total of 25 µg of each protein was injected and experiments were performed at a flow rate of 0.75 mL min–1. Data were analyzed using the ASTRA six software (Wyatt Technology).
 
-## Differential scanning calorimetry (DSC)
+### Differential scanning calorimetry (DSC)
 
 DSC experiments were performed using a MicroCal PEAQ-DSC Automated system (Malvern Panalytical, Germany), using 2.5 µM protein solutions in PBS (pH 7.4). The heating was performed from 20°C to 100°C at a rate of 1 °C/min. The protein solution was then cooled in situ and an identical thermal scan was run to obtain the baseline for subtraction from the first scan. All measurements were performed in triplicates. Fitting was done with Origin 7.0 for DSC software using the non-2-state transition model.
 
-## Peptide mapping and glycopeptide analysis
+### Peptide mapping and glycopeptide analysis
 
 All samples were analysed as in-solution proteolytic digests of the respective proteins by LC-ESI-MS/MS. For this, the pH of the samples was first adjusted to pH 7.8 by the addition of 1 M HEPES (pH 7.8) to a final concentration of 100 mM. The samples were then chemically reduced and S-alkylated, using a final concentration of 10 mM dithiothreitol for 30 min at 56 °C, and a final concentration of 20 mM iodoacetamide for 30 min at room temperature in the dark. To maximize sequence coverage, proteins were digested for 18 hr at 37 °C with chymotrypsin (Roche, Germany), followed by 3 hr at 37 °C using trypsin (Promega). All proteolytic digests were acidified to pH two by addition of 10% formic acid and directly analyzed by LC-ESI-MS/MS, using a capillary BioBasic C18 reversed-phase column (BioBasic-18, 150 × 0.32 mm, 5 μm, Thermo Fisher Scientific), installed in a Dionex Ultimate U3000 HPLC system (Thermo Fisher Scientific), developing a linear gradient from 95% eluent A (80 mM ammonium formate, pH 3.0, in HPLC-grade water) to 65% eluent B (80% acetonitrile in 80 mM ammonium formate, pH 3.0) over 50 min, followed by a linear gradient from 65% to 99% eluent B over 15 min, at a constant flow rate of 6 μL/min, coupled to a maXis 4 G Q-TOF instrument (Bruker Daltonics, Germany; equipped with the standard ESI source). For (glyco)peptide detection and identification, the mass spectrometer was operated in positive-ion DDA mode (i.e. switching to MS/MS mode for eluting peaks), recording MS scans in the m/z range from 150 to 2200 Th, with the six highest signals selected for MS/MS fragmentation. Instrument calibration was performed using a commercial ESI calibration mixture (Agilent Technologies). Site-specific profiling of protein glycosylation was performed using the dedicated Q-TOF data-analysis software packages Data Analyst (Bruker Daltonics) and Protein Scape (Bruker Daltonics), in conjunction with the MS/MS search engine MASCOT (Matrix Sciences Inc, United States) for automated peptide identification.
 
-## ACE2 activity assays
+### ACE2 activity assays
 
 Enzymatic activity of ACE2 was determined and quantified as described previously (Vickers et al., 2002), using 100 µM 7-methoxycoumarin-4-yl-acetyl-Ala-Pro-Lys-2,4-dinitrophenyl (Bachem, Switzerland) as substrate.
 
-## SARS-CoV-2 neutralization assays
+### SARS-CoV-2 neutralization assays
 
 All work with infectious SARS-CoV-2 was performed under BSL-3 conditions. Vero E6 cells (ATCC, United States) were grown in Minimum Essential Medium (MEM) containing Earle’s Salts, 1% penicillin/streptomycin stock solution and 2 mM L-glutamine (all from Thermo Fisher Scientific), supplemented with 5% fetal bovine serum (FBS), at 37 °C and 5% CO2 and regularly tested for mycoplasma contaminations. A German 2019-nCoV isolate (Ref-SKU: 026 V-03883, Charité, Berlin, Germany) was propagated in Vero E6 cells. The TCID50 titer of virus stocks was determined by the Reed-Munch method (Ramakrishnan, 2016) and converted to plaque-forming units (pfu) using the conversion factor 0.7 (https://www.atcc.org/support/technical-support/faqs/converting-tcid-50-to-plaque-forming-units-pfu). Vero E6 cells were seeded in 48-well cell culture plates (3 × 104 cells per well) in MEM supplemented with 2% FBS overnight to reach approximately 80% confluence on the day of infection. ACE2 variants (final concentrations: 10–100 µg/mL) were preincubated with 60 pfu SARS-CoV-2 for 30 min at 37 °C under constant shaking (300 rpm). After preincubation, Vero E6 cells were infected for 1 h at 37 °C with samples containing either SARS-CoV-2 and ACE2 variants or solely SARS-CoV-2 (untreated controls) at a multiplicity of infection (MOI) of 0.002. Subsequently, cells were washed two times with MEM to remove unadsorbed virus. After incubation for 24 hr at 37 °C in MEM supplemented with 2% FBS, viral RNA was extracted from the culture supernatant using the QiaAmp Viral RNA Minikit (Qiagen, Germany), according to the manufacturer’s protocol. SARS-CoV-2 replication was quantified via RT-qPCR using the QuantiTect Multiplex RT-qPCR Kit (Qiagen) with a Rotor Gene Q cycler (Qiagen). The reactions were performed in a total volume of 25 µL at 50 °C for 30 min followed by 95 °C for 15 min and 45 cycles of 95 °C for 3 s and 55 °C for 30 s. Forward primer: 2019-nCoV_N1-F 5’-GACCCCAAAATCAGCGAAAT-3’; reverse primer: 2019-nCoV_N1-R 5’-TCTGGTTACTGCCAGTTGAATCTG-3’; probe: 2019-nCoV_N1-P 5’-FAM-ACCCCGCATTACGTTTGGTGGACC-BHQ1-3’. Statistical analyses were conducted using GraphPad Prism 8. Significance was determined by Kruskal-Wallis, comparing the mean rank of the ACE2-wt-Fc group with the mean rank of every other group (*, p < 0.05; **, p < 0.01; ***, p < 0.001).
 

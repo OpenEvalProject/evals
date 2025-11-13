@@ -25,7 +25,7 @@
 
 ## Abstract
 
-The TMEM175 family constitutes recently discovered K + channels that are important for autophagosome turnover and lysosomal pH regulation and are associated with the early onset of Parkinson Disease. TMEM175 channels lack a P-loop selectivity filter, a hallmark of all known K + channels, raising the question how selectivity is achieved. Here, we report the X-ray structure of a closed bacterial TMEM175 channel in complex with a nanobody fusion-protein disclosing bound K + ions. Our analysis revealed that a highly conserved layer of threonine residues in the pore conveys a basal K + selectivity. An additional layer comprising two serines in human TMEM175 increases selectivity further and renders this channel sensitive to 4-aminopyridine and Zn 2+ . Our findings suggest that large hydrophobic side chains occlude the pore, forming a physical gate, and that channel opening by iris-like motions simultaneously relocates the gate and exposes the otherwise concealed selectivity filter to the pore lumen.
+The TMEM175 family constitutes recently discovered K+channels that are important for autophagosome turnover and lysosomal pH regulation and are associated with the early onset of Parkinson Disease. TMEM175 channels lack a P-loop selectivity filter, a hallmark of all known K+ channels, raising the question how selectivity is achieved. Here, we report the X-ray structure of a closed bacterial TMEM175 channel in complex with a nanobody fusion-protein disclosing bound K+ ions. Our analysis revealed that a highly conserved layer of threonine residues in the pore conveys a basal K+ selectivity. An additional layer comprising two serines in human TMEM175 increases selectivity further and renders this channel sensitive to 4-aminopyridine and Zn2+. Our findings suggest that large hydrophobic side chains occlude the pore, forming a physical gate, and that channel opening by iris-like motions simultaneously relocates the gate and exposes the otherwise concealed selectivity filter to the pore lumen.
 
 ## Introduction
 
@@ -35,49 +35,125 @@ Selectivity for K+ ions, with the exception of the very weakly selective trimeri
 
 ## Results
 
-## Crystallization and general architecture of MtTMEM175
+### Crystallization and general architecture of MtTMEM175
 
 From an expression screen of over 30 bacterial TMEM175 channels we identified several homologues as candidates for a structural characterization. However, the crystals for all of the tested homologues, including MtTMEM175, were diffracting maximally to a resolution of 10 Å even in complex with nanobodies (Nbs). Finally, MtTMEM175 was crystallized in complex with a Nb that in turn was engineered by fusing an N-terminally truncated Maltose Binding Protein (MBP) to its C-terminus (Figure 1a,b and Figure 1—figure supplement 1a,b) which greatly improved diffraction. We solved the structure at a resolution of 2.4 Å using highly redundant data by molecular replacement based on this novel Nb-MBP chaperone, with structures of Nbs and maltose-bound MBP as search models (Supplementary file 1) and could build a map of high quality (Figure 1—figure supplement 2, Figure 1—figure supplement 3 and Figure 1—figure supplement 4). We named this chaperone scaffold ‘macrobody’ (Mb) and termed the Mb used in this study Mb51H01. Macrobodies could develop into a promising tool for structural biology applications, especially in electron cryo-microscopy, similar to the recently reported megabodies (Laverty et al., 2019). Each MtTMEM175 subunit is composed of six transmembrane helices (Figure 1c) which assemble to form a tetrameric channel as verified using SEC-MALLS of uncomplexed MtTMEM175 (Figure 1—figure supplement 1c). Helix one is the pore-lining helix, as predicted earlier (Cang et al., 2015), and constitutes the highest degree of conservation (Figure 1c and Figure 1—figure supplement 1d).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig1-v2.jpg)
+
+**Figure 1.:** (a) Side view of the complex with MtTMEM175 channel and macrobody. Approximate membrane boundaries are indicated. (b) Left: Size exclusion chromatogram of MtTMEM175 (grey) and MtTMEM175-Mb51H01 complex (green). Right: Coomassie-stained SDS-PAGE gel of the peak fraction (green triangle) indicating complex formation of MtTMEM175 (red triangle) with Mb51H01 (black triangle). (c) Arrangement of transmembrane helices 1–6 in MtTMEM175. N- and C-termini are indicated. Two subunits are omitted for clarity. (d, e) MtTMEM175 tetramer (d) and close-up view on interacting residues with corresponding numbering (e). Distances are given in Å. The view is from the intracellular side.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Dimensions of the Mb51H01 fusion protein and a Fab (anti-KcsA, 5J9P) in comparison. (b) Macrobody expression construct. PelB: PelB leader sequence, His10: deca histidine-tag, MBP: maltose binding protein, 3C: 3C protease cleavage site, Nb: nanobody. (c) Multi angle laser light scattering (MALLS) coupled to a Superdex 200 (10/300) column, injected with MtTMEM175, after removal of tags. The molar mass is indicated: red, MtTMEM175, blue, detergent micelle of DDM, green, MtTMEM175 with DDM detergent micelle. The calculated molecular weight of the MtTMEM175 tetramer is 116 kDa. Grey line: UV absorption at 280 nm, dashed grey line: refractive index, black line: light scattering. (d) Sequence alignment of the N-terminal part of characterized TMEM175 family members. Mt: Marivirga tractuosa, Cm: Chamaesiphon minutus, Cb: Chryseobacterium sp., Sc: Streptomyces collinus, h: human. For hTMEM175 both repeats (R1, R2) were included in the alignment. Transmembrane helices from the MtTMEM175 structure are indicated by orange bars with corresponding numbering. Identical amino acids are marked in grey. Residues participating in a conserved hydrogen bond network between helices 1–3 are colored in green. Residues of the ion binding site are colored red while residues that confer K+ selectivity in MtTMEM175 and hTMEM175 are indicated in blue and cyan. Residues that form the gate are shown in magenta. (e,f) Tetramer assembly in CmTMEM175 (5VRE) (e) and close-up view on interacting residues with corresponding numbering (f). Distances are given in Å. The view is from the intracellular side. (g) Interactions of the conserved arginine in helix one in MtTMEM175 and CmTMEM175. The view is from the intracellular side. Left: Close-up view of Arg24 in helix 1 of MtTMEM175, showing the interaction with His77 and Asp30 of the adjacent subunit. The 2Fo-Fc electron density is shown as blue mesh (at 2.4 Å, contoured at 1.8 σ, sharpened with b=-25). Right: Negative difference electron density in the structure of CmTMEM175 at the position of Arg12. The 2Fo-Fc electron density (at 3.3 Å, contoured at 1.55 σ, blue) and the Fo-Fc density (contoured at −3 σ, red) are depicted. (h) Defective tetramer assembly. Left: Size exclusion chromatograms from a Superdex 200 5/150 column of MtTMEM175 Arg24 mutant proteins compared to a WT chromatogram. Right: Coomassie-stained SDS-PAGE gel of purified R24A and R24K mutant proteins that were subjected to SEC.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Electron density map in helices 1–6 with the model superimposed. Selected residues are labelled. The Fo-Fc density (at 2.4 Å, contoured at 1.5–1.8 σ after sharpening with b=-25, blue) is displayed.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Electron density map at various regions with the model superimposed. Selected residues are labelled. (a) K+ hydrate (1K+) and surrounding. (b) 2K+ and surrounding. (c) A section of helix one showing the electron density for Thr38. (d) Hydrogen-bond network in helices 1–3. The view is from the extracellular side. (e) Interactions of maltose with MBP. The 2Fo-Fc density (at 2.4 Å, contoured at 1.8–2.0 σ after sharpening with b=-25, blue) is displayed.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Plots of I/sigI vs. resolution for the different crystallographic data sets. (a) Native. (b) Potassium/Sulfur. (c) Cesium. (d) Rubidium. (e) Zinc (f) T38A_Native. (g) T38A_Zinc. A black box in the small insets marks the zoomed main panels at high resolution.
+
 The MtTMEM175 structure reveals a network of hydrogen bonds in proximity to the intracellular pore entrance that positions helices 1–3 relative to each other and interconnects adjacent subunits (Figure 1d,e). The network is similar to the one of a recently reported structure of a TMEM175 homologue (CmTMEM175, PDB accession 5VRE) (Lee et al., 2017; Figure 1—figure supplement 1e,f) and involves most of the highly conserved residues in TMEM175 channels, also the FSD motif (Phe28, Ser29, Asp30 in MtTMEM175), three consecutive amino acids at the N-terminus of helix one that were originally proposed to play a role in ion conduction (Figure 1—figure supplement 1d; Cang et al., 2015). Generally, the level of conservation for TMEM175 channels is strikingly low in transmembrane helices 4–6, persuading us to exclude this region largely from our analysis. The interactions of Ser29, His77 and Asn95 are present in both structures and position the first three transmembrane helices relative to each other. Trp74 from helix two is interacting with Asp30 in helix 1 of the same subunit in MtTMEM175, whereas in CmTMEM175 this tryptophan is more involved in a cation-π stack with the phenylalanine from the FSD motif of the adjacent subunit (Figure 1e and Figure 1—figure supplement 1e,f). Different from CmTMEM175, Arg24 (another highly conserved residue in TMEM175 channels) is interacting with His77 and Asp30 of the adjacent subunit, thereby connecting neighboring subunits (Figure 1—figure supplement 1g). Gel filtration profiles of Arg24 mutant proteins support a role in tetramer assembly (Figure 1—figure supplement 1h). We can thus assign at least one role for most of the highly conserved residues in MtTMEM175, which makes us confident that MtTMEM175 provides a clear case to characterize the TMEM175 family in general. Importantly, the conservation of these key residues in human TMEM175 suggests an overall very similar architecture. None of the aforementioned residues seems to play a distinct role in selectivity that would be immediately apparent from the structure.
 
-## MtTMEM175 is a weakly selective K+ channel
+### MtTMEM175 is a weakly selective K+ channel
 
 For electrophysiological characterization MtTMEM175 was expressed in HEK293 cells as previously done with homologues from Streptomyces collinus and Chryseobacterium sp. (ScTMEM175 and CbTMEM175) (Cang et al., 2015). In whole cell patch clamp experiments we recorded only from transfected cells non-rectifying, non-inactivating K+ currents that showed no signs of voltage-dependence (Figure 2a). These currents were blocked by Zn2+ ions and at the applied concentration of 5 mM also in a voltage-independent manner (Figure 2b). Similar to ScTMEM175 and CbTMEM175, MtTMEM175 has also a low selectivity for K+ (PK/PNa ~ 4.3). It conducts Cs+ and Rb+ with a similar efficiency as K+, and to lesser extent, similar to Na+, also Li+ (Figure 2c and Figure 2—figure supplement 1). The channel has no apparent permeability for anions; the reversal voltage was not significantly different when the same recordings were done with standard bath solution containing the large anion methanesulfonate (+0.64 ± 3 mV n = 18) or in a bath with 150 mM KCl (2.4 ± 4, n = 7). We obtained a few single channel recordings from MtTMEM175-transfected cells that revealed a unit conductance of ~70 pS and showed channel flickering (Figure 2d). We do not have definitive proof that these currents originate from MtTMEM175, however several arguments support this view. First, we recorded them only in transfected cells, which exhibited typical MtTMEM175 macroscopic currents after breaking into the whole cell configuration. Second, like the macroscopic MtTMEM175 current also the single channel I/V relation reverses around 0 mV (Figure 2d). Finally, the unitary conductance of the channels at −100 mV is in the range of the conductance of mock transfected HEK293 cells in whole cell mode (Figure 2a), making it unlikely that the currents originate from endogenous channels. The presence of gating events is inconsistent with the definition of a leak channel and has significance for the interpretation of the structure.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig2-v2.jpg)
+
+**Figure 2.:** (a) Current responses to standard voltage pulse protocol in mock (○) and MtTMEM175 (⚫) transfected HEK293 cells (upper panel) and corresponding steady state I/V relations (lower left). Plot of currents recorded in same manner at −100 mV for individual cells (small symbols) and mean ±s.d. (large symbols) (lower right). Number of cells in brackets. (b) HEK293 cells expressing MtTMEM175 before (⚫) and after (○) adding 5 mM ZnSO4 to the bath solution containing 150 mM K+ (upper panel). Mean I/V relation (bottom left) of n = 4 cells (±s.d.). To compare the effect on different cells the I/V relation was normalized to currents at −100 mV in the absence of blocker (bottom left). The voltage dependency of the Zn2+ block was estimated by dividing currents in the presence and absence of Zn2+ (I+Zn/I-Zn) (bottom right) (c) HEK293 cells expressing MtTMEM175 (top row) before (left) and after (middle) replacing Na+ (○) with K+ (⚫) in the external buffer and corresponding I/V relation (bottom left). Same experiments were performed by exchanging K+ in external buffer by other cations. The mean reversal voltage (Erev) (±s.d., number of cells in brackets) is depicted in lower right panel. (d) Exemplary channel fluctuations at ±100 mV measured in cell-attached configuration on HEK293 cells expressing MtTMEM175 (upper) and pooled unitary I/V relation of single channel events from 10 measurements in four different cells (lower right) using standard bath and pipette solutions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Current responses of ScTMEM175 transfected HEK293 cells to voltage steps between ±100 mV (left). Cells were measured with 150 mM Na+ and 150 mM K+ in the bath and pipette solution, respectively. Mean steady state I/V relation (±s.d.) from 4 cells measured under the same condition. Data were normalized to currents at +100 mV. The mean reversal voltage of the 4 cells is −37 ± 9 mV (right). (b) Residual density on the extracellular entrance of MtTMEM175 was attributed to a detergent molecule (DDM or DM). The 2Fo-Fc density (at 2.4 Å, contoured at 1.5 σ after sharpening with b=-40, blue) is displayed. Only one subunit is shown. (c) Close-up views on the maltoside with overlaid 2Fo-Fc density. (d) Current responses of HEK293 cells expressing MtTMEM175 to voltage steps from 0 mV to +80 /- 100 mV before (black) and after (red) adding 10 mM maltose to the bath solution with 150 mM Na+.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Expression profile of C-terminally vYFP-tagged MtTMEM175 in HEK293 cells. (b) TIRF images of membrane patches from decapitated HEK293 cells. Patches were obtained from cells transiently expressing C-terminally vYFP-tagged hTMEM175 (A), MtTMEM175 (B) or MtTMEM175 T38A mutant (C). Untransfected cells served as a negative control (D). Columns from left to right: ER stained with ER tracker blue, plasma membrane (PM) stained red with CMDR, vYFP-tagged TMEM175 proteins. Last column shows merged images of different vYFP-tagged TMEM175 variants with ER and PM stain. Scale bar = 2 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) SDS Page of purified vYFP-tagged Nb51H01 before application in (b,c,f). (b,c,f) Bright field (top row) and GFP-channel images (bottom row) after application of purified Nb51H01-vYFP to MOCK (b) or MtTMEM175 (c,f) transfected HEK cells. (d,e) Enlarged sections of epifluorescence images in (c). In (f) the Nb51H01-vYFP was pre-absorbed with an excess of purified non-fluorescent MtTMEM175 before application to the cells.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Coomassie stained SDS-PAGE of purified MtTMEM175 from HEK cells before subjecting to size exclusion chromatography in (b). (b) Size exclusion chromatography with MtTMEM175 purified from HEK cells (blue) in comparison with MtTMEM175 purified from E. coli (red). The difference in the retention volumes between the two samples arises from the presence (blue) or absence (red) of the purification tags. The peak heights are normalized.
+
 Albeit currents have been recorded of HEK cells transfected with CbTMEM175, ScTMEM175 and MtTMEM175 ( [Cang et al., 2015] and this study) functional expression of these bacterial channels at the plasma membrane has not been confirmed by other methods. Overexpressed MtTMEM175 with a C-terminal Venus-YFP (vYFP) indicated a wide distribution, without a prominent presence at the plasma membrane (Figure 2—figure supplement 2a). Thus, we generated plasma membrane patches by decapitation of cells with ice cold distilled water (Biel et al., 2016). In the membrane from transfected and control cells we could show with TIRF microscopy that vYFP-tagged MtTMEM175 and hTMEM175 also co-localize with specific plasma membrane stains in HEK293 cells (Figure 2—figure supplement 2b). In a second experiment we purified C-terminally vYFP-tagged Nb51H01 (Nb51H01-vYFP) from transiently transfected HEK cells (Figure 2—figure supplement 3a) and incubated unfixed HEK cells that were mock-transfected or transfected with non-fluorescent MtTMEM175 with the purified fluorescent Nb51H01-vYFP. Nb51H01 recognizes an extracellular epitope of MtTMEM175 (Figure 1a) and is thus suitable to label non-permeabilized cells that expose MtTMEM175 on the plasma membrane. Figure 2—figure supplement 3 clearly shows that Nb51H01-vYFP is only labeling HEK cells transfected with MtTMEM175 and provides evidence for at least partial plasma membrane localization and correctly folded MtTMEM175 channels. Further, non-fluorescent MtTMEM175 purified from transiently transfected HEK cells elutes as a tetramer in SEC at near identical volumes as bacterially expressed MtTMEM175 (Figure 2—figure supplement 4). Together, these results are in support of functional plasma membrane expression of MtTMEM175 in HEK cells and in concordance with our electrophysiology data.
 
-## The MtTMEM175 structure reveals hydrated and dehydrated K+ ions
+### The MtTMEM175 structure reveals hydrated and dehydrated K+ ions
 
 The structure of MtTMEM175 revealed two densities attributable to K+ ions, termed 1K+ and 2K+ (Figure 3a–c). The presence of K+ is supported by data collection at higher wavelengths of 2.02460 Å (Figure 3—figure supplement 1a,b and Supplementary file 1). In contrast, the structure of CmTMEM175, which was solved at 3.3 Å did not reveal bound ions, even in crystals soaked with heavier monovalent and divalent ions (Lee et al., 2017). One K+ ion (1K+, occupancy ~1) in the MtTMEM175 structure, is located at an ion binding site at the extracellular pore entrance (Figure 3b). This binding site resembles a short selectivity filter (Chen et al., 2017; Guo et al., 2017; Shen et al., 2016). The K+ ion is complexed by eight water molecules in an anti-prismatic geometry (Figure 3—figure supplement 1c) that are coordinated by backbone oxygens of Leu42, Ser43 and Ser44 (Figure 3b,d and Figure 3—figure supplement 1d). The respective backbone oxygens of these residues are 12, 13.1 and 14.9 Å apart (Figure 3d). Except for the conserved Leu42, no obvious motif for this region is apparent (Figure 1—figure supplement 1d).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig3-v2.jpg)
+
+**Figure 3.:** (a–c) Side view on MtTMEM175 (a) and close-up views of the ion binding site with a hydrated K+ ion at position 1K+ (b) and another K+ ion within the pore at position 2K+(c). In (a), K+ ions and water molecules are displayed as purple and red spheres, respectively. In (b) and (c) the 2Fo-Fc electron density is depicted as blue mesh at the position 1K+ and 2K+ (at 2.4 Å, contoured at 1.8 σ, sharpened with b=-25). Two subunits are omitted for clarity. (d) Top view of the ion binding site. Distances between opposing backbone oxygens of Leu42, Ser43 and Ser44 are indicated in Å. Side chains are omitted and the size of the spheres is reduced for clarity. (e) Substitution of K+ in the ion binding site with Cs+ and Rb+. The 2Fo-Fc electron density (as in (b) and (c), blue mesh) marks the position of the K+ ion. Anomalous difference electron densities of Cs+ (at 3.8 Å, contoured at 7 σ) and Rb+ (at 3.6 Å, contoured at 7 σ, blurred with b = 125) are shown in yellow and magenta, respectively. (f) Illustration of the surface electrostatic potential across the pore.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a–b) Anomalous difference electron density measured at 2.02460 Å in crystals of MtTMEM175. (a) Verification of K+ ions at positions 1K+ at the extracellular entrance and 2K+ within the pore close to the intracellular entrance. The anomalous difference density map at +3 σ is shown as green mesh (at 3.5 Å, blurred with b = 165). For comparison, the 2Fo-Fc electron density from the best dataset (at 2.4 Å, contoured at 1.8 σ, sharpened with b=-25) is illustrated as blue mesh at the respective positions of 1K+ and 2K+. In (b), all methionine and cysteine positions are shown. (c,d) Geometry and dimensions of the hydrated K+ in MtTMEM175. Angles and atom-to-atom distances are indicated in degrees (°) and Å, respectively. (e) Coordination of K+ in KcsA by backbone oxygens (left, 1K4C, S2 position) and geometry of a hydrated K+ ion in the KcsA vestibule in proximity to the selectivity filter (right, 1K4C). (f) Extracellular tips of helix one in CmTMEM175 (cyan) and MtTMEM175 (orange) shown as stick/cartoon representation. Only backbone atoms are displayed. In MtTMEM175 four residues complete a helical turn (alpha helical) while in CmTMEM175 three residues complete a helical turn (310-helix). (g,h) The loop following the 310-helix in CmTMEM175 is colored in green and participates in the formation of crystal contacts (h). Reference residues are displayed in a sequence alignment in (g). (i,k) Superposition of the extracellular ends of helix one in MtTMEM175 and CmTMEM175 with approximate deviations indicated in Å (side and top view of the ion binding site). Thr38 and Leu35 (MtTMEM175, orange) were aligned with corresponding Thr26 and Ile23 (CmTMEM175, cyan). Only main chain atoms are shown. The K+ hydrate from the MtTMEM175 structure is shown as spheres.
 
 The second K+ ion (2K+, occupancy ~0.5) is not coordinated by water molecules which suggests the permeation of dehydrated K+ ions in these channels. The K+ ion at position 2K+ is located between the layers of Leu35 and Thr27 (Figure 3a,c). It is likely that this K+ ion is trapped in the pore due to the restriction at Thr27 and the lack of clear interactions with the protein. It is further worth to note that the density at 2 K+ is likely also partly constituted by Na+ ions. The anomalous signal (Figure 3—figure supplement 1a,b) at this position is proportionally weaker in comparison to the signal at 1K+ than in the native data set (Figure 3b,c). We can therefore only estimate that the occupancy at 2K+ is approximately ~0.5. By soaking crystals with Cs+ and Rb+ we detected clear anomalous density for both ions at the position of 1K+ (Figure 3e) providing additional evidence for an affinity towards monovalent cations with similar properties as K+ at this extracellular ion-binding site. No significant anomalous signal for Cs+ or Rb+ was found at the 2K+ position, indicating that the channel would have to open for diffusion of these generally permeable ions to this position. Collectively, these results advocate the existence of a conductive conformation with a wider pore that is different from the crystal structure. Additional density in the 2Fo-Fc map on the extracellular side in proximity to the ion binding-site was attributed to a maltose moiety from a detergent molecule. We tested for potential influence of maltose on the conductance by electrophysiology, but could not detect any effects (Figure 2—figure supplement 1).
 
 The hydrated K+ ion in the MtTMEM175 crystal is reminiscent of the one in the vestibule of a high-resolution structure of KcsA in close proximity to the selectivity filter entrance (Zhou et al., 2001). In comparison, the two planes in the K+-hydrate in MtTMEM175 are skewed, due to interactions with the surrounding backbone oxygens (Figure 3—figure supplement 1c–e). The eightfold coordination of K+ ions in square antiprism is also seen inside the canonical selectivity filter, where it is mediated by backbone oxygens (Figure 3—figure supplement 1e; Doyle et al., 1998; Zhou et al., 2001). MtTMEM175 crystallized in the presence of equimolar amounts of Na+ and K+ which apparently did not interfere with K+ coordination at 1K+. The ion binding site thus recapitulates a number of central elements seen in K+ coordination of ion channels, in particular the coordination geometry. However, the low conservation, its simplicity, the indirect coupling of the K+ ion to the backbone oxygens and the single binding site make it questionable that this region determines selectivity. It could be that this binding site serves to attract monovalent ions with similar properties as K+ and plays a role in the resolvation or desolvation of K+ ions that pass through the pore. Apart from the ion binding site, the negative electrostatic potential in the pore lumen would be another property promoting cation permeation (Figure 3f).
 
-## Bulky residues constrict the pore and form a physical gate in the closed state
+### Bulky residues constrict the pore and form a physical gate in the closed state
 
 In the structure of MtTMEM175 Leu35 is occluding the pore to such an extent that K+ ions could not pass (Figure 4). This bulky residue is thus likely constituting a hydrophobic physical gate. From single channel recordings and the lack of exchangeability of 2K+ with Cs+ or Rb+ we have indications for open and closed conformations in support of a gate in TMEM175 channels. Due to the highly constricted pore, the structure of MtTMEM175 thus very likely represents a closed state and this implies that structural rearrangements have to take place in order for the channel to become conductive. Opening of the channel would inevitably require displacement of the hydrophobic side chain of Leu35 from the pore center, probably by a helix-rotation as seen in the NaK channel (Alam and Jiang, 2009a) or in TRPV6 (McGoldrick et al., 2018). Previously, the homologous residues in CmTMEM175 (Ile23) or human TMEM175 (Ile46 and Ile271) were described as the determinants for selectivity (Lee et al., 2017), however we propose that this position is generally occupied by a residue that acts as a physical gate for ions as discussed below in more detail. Furthermore, the pore-lining residues that physically interact with passing ions and determine conduction or selectivity would likely show the highest degree of conservation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig4-v2.jpg)
+
+**Figure 4.:** (a) The ion conduction pathway is illustrated as grey surface and pore-lining residues are displayed. K+ ions and water molecules are shown as purple and red spheres, respectively. (b) The pore radius along the central axis is shown in Å. Dashed lines indicate the radii of K+ and Na+ ions without inner hydration shell.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a–d) Conservation in TMEM175 projected onto the structure of MtTMEM175 (using AL2CO). Highly conserved residues are indicated and labelled. In (a) and (b), a side view is shown and one subunit has been omitted for clarity. (c, d) View from the intracellular side into the pore. Key residues are shown and pore-lining Leu35 is displayed for orientation. (e) Sequence alignment of helix 1. A BLAST search within the prokaryotic phyla was done using the sequence of hTMEM175 as query and the first 100 hits were aligned against each other. The conservation between helix 1 of the bacterial homologs with helix 1 of MtTMEM175 (top sequence) and hTMEM175 (repeat 2, bottom sequence) is given in percent in a bar chart. Conserved residues between MtTMEM175 and hTMEM175 are marked in grey. Color coding in the alignment is as in Figure 1—figure supplement 1d.
+
 When we plotted the conservation of residues from an AL2CO analysis of randomly chosen TMEM175 proteins onto the structure of MtTMEM175 (see Materials and methods section) we found that the most highly conserved residues are not the bulky hydrophobic residues that face the pore in the observed conformation. The more conserved residues are located to the side of the pore-lining helix, facing helix 1 of the next subunit (Figure 4—figure supplement 1). In MtTMEM175, these are the residues Thr38, Ala34 and Asp30 (the latter being part of the FSD motif and involved in hydrogen bonds to Arg24 and Trp74). Threonine38 and Ala34 do not show any particular interaction with their respective environments, for example with the adjacent helix that they are facing, raising the question why these residues have such a high degree of conservation. In particular Thr38 is of interest since it is the most conserved residue among all TMEM175 proteins (Figure 4—figure supplement 1e and Figure 5a,c). Threonine38 forms a layer that is interspersed between Leu35 and Leu39 and participates in a bifurcated hydrogen bond with the main-chain oxygen of Ala34 (Figure 5—figure supplement 1a,b). A rotation of helix 1 (in clockwise direction when viewed from intracellular) as part of an iris-like opening of the gate (Leu35), would expose the side chain of Thr38 to the pore lumen. Following this line of thoughts, we reasoned that K+ ions could interact with the side chain of Thr38 in a conductive conformation of MtTMEM175 and mutated Thr38 to alanine.
 
-## The highly conserved Thr38 confers K+ selectivity to the MtTMEM175 channel
+![Figure 5.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig5-v2.jpg)
+
+**Figure 5.:** (a) Subunit organization of MtTMEM175 and alignment of bacterial sequences highlighting the most conserved residues in helix 1. (b) Lower left: representative currents elicited by a ramp protocol (−80 to +40 mV in 200 ms) from HEK293 cells transfected with the MtTMEM175 T38A in external solution with 150 mM K+ (black) or Na+ (red); currents normalized to values at +33 mV. Right: plot of the average reversal potentials (Erev ±s.d.) for T38A or L35A mutants in comparison to WT in symmetrical buffer with 150 mM K+ (□) or in external buffer with 150 mM Na+ (■). Number of patched cells in brackets. (c) Subunit organization of hTMEM175 and alignment highlighting conserved residues. m: mouse, Ss: Sus scrofa, Cf: Canis familiaris, Gg: Gallus gallus, Dr: Danio rerio (d) Lower left: representative currents elicited by a ramp protocol as in (a) from HEK293 cells transfected with hTMEM175 WT (blue) or mutants S45A (green), T49A/T274A (red) or S45A/T49A/T274A (grey) in external solution with 150 mM Na+; currents normalized to values at +33 mV. Right: plot of the respective average reversal potentials (Erev ±s.d.) for each construct in symmetrical buffer with 150 mM K+ (□) or in external buffer with 150 mM Na+ (■). Number of patched cells in brackets.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a, b) Position of the highly conserved Thr38 in the tetramer. Side view on the pore-forming helices (a) and close-up view of the bifurcated hydrogen bond between Thr38 and Ala34 (b). The 2Fo-Fc density (at 2.4 Å, contoured at 1.8 σ after sharpening with b=-25, blue) is displayed. Distances between carbonyl oxygens and hydrogens are given in Å. (c, d) Overlay of mutant T38A and WT MtTMEM175 structures (c) and close-up view on helix 1 (d). Only one subunit is shown. Key residues Thr38/T38A are indicated. The 2Fo-Fc density of WT (as in b) and of the T38A mutant (at 3.4 Å, contoured at 1.3 σ, grey) are shown. (e, f), Layers comprising selectivity in MtTMEM175 (e) and hTMEM175 (f) with key residues colored in cyan and blue. Front subunit is omitted for clarity.
+
+### The highly conserved Thr38 confers K+ selectivity to the MtTMEM175 channel
 
 When analyzed in whole cell patch clamp recordings in HEK293 cells the T38A mutant of MtTMEM175 showed a strongly impaired selectivity for K+ ions, as exchanging K+ in the bath solution for Na+ caused only a minor shift of the reversal potential by –15 ± 2 mV (n = 4), corresponding to a PK/PNa < 2 (Figure 5b). For comparison, the WT protein responds to a replacement of K+ for Na+ with a shift of –37 ± 6 mV (n = 22) (Figure 2c and Figure 5b). When we mutated Leu35 to alanine the channel showed only a slightly reduced selectivity compared to WT channels (Erev = −31 ± 2 mV, n = 6) (Figure 5b), in contrast to the findings on Ile23 for CmTMEM175 and Ile46/Ile271 in hTMEM175 (Lee et al., 2017). Our data speaks against a primary function in selectivity for these bulky hydrophobic residues as discussed below. We thus conclude that Thr38 plays a pivotal role for K+ selectivity and conductance in MtTMEM175, reflected also in its high degree of conservation (Figure 4—figure supplement 1e). Notably, the side chain of a conserved threonine is also essential for the coordination of K+ ions at the S4 position in the selectivity filter of canonical K+ channels. Hence, not only carbonyl ligands, but also the threonine side chain is suited to coordinate K+ ions with impact on selectivity and conductance (Zhou and MacKinnon, 2003; Zhou and MacKinnon, 2004; Krishnan et al., 2008; Chatelain et al., 2009). We found no obvious differences in a crystal structure of this mutant in the closed conformation (Figure 5—figure supplement 1c,d and Supplementary file 2). Overall, a significant contribution to K+ selectivity by the extracellular ion binding site is contradicted by the results for the T38A mutant protein - whether the residual selectivity is arising from this motif remains open. Ascribing a function to the extracellular ion binding site is thus currently difficult. Structural insight into the conductive conformation, which might reveal rearrangements at both ends of helix 1, will help to gain insight into potential functions of this region. The binding site could also serve an unrelated function, for example sensing of ions to modulate the open-probability.
 
-## A layer of threonines also accounts for K+ selectivity in human TMEM175 channels
+### A layer of threonines also accounts for K+ selectivity in human TMEM175 channels
 
 The layer of threonines is also conserved in vertebrate TMEM175 proteins (Figure 5c) and we thus tested if mutating the corresponding residues to alanine in the human TMEM175 channel would affect selectivity. Human TMEM175 is more selective than the bacterial counterparts with reported values of PK/PNa of 35-20 (Cang et al., 2015; Lee et al., 2017). We measured currents from cells expressing hTMEM175 at the plasma membrane as previously done (Lee et al., 2017). From the shift in the reversal voltage after replacing K+ for Na+ in the external medium (−58 ± 3, n = 7) we estimate a PK/PNa value of ~10 (Figure 5d), somewhat lower than the previously reported PK/PNa values of hTMEM175. Mutating Thr49 in the first repeat and Thr274 in the second repeat of hTMEM175 to alanine resulted in strongly reduced selectivity with a reversal potential of −17 ± 3 (n = 8) when exchanging K+ for Na+ in the external solution (Figure 5d), providing evidence for a conserved role of the threonine-layer in selectivity. Since the human channel is 2–3 times more selective as the known bacterial counterparts there must thus be an additional factor that accounts for the increased selectivity, probably in conjunction with the threonine layer.
 
-## Serine45 increases K+ selectivity in human TMEM175
+### Serine45 increases K+ selectivity in human TMEM175
 
 When comparing the primary sequences of vertebrate genes, we found that the position that is corresponding to the highly conserved Ala34 in MtTMEM175 is occupied by serine in repeat one for all of the analyzed vertebrate species (Ser45 in hTMEM175), while in repeat 2, like in bacterial channels, the corresponding residue is an alanine (Ala270 in hTMEM175) (Figure 5c and Figure 5—figure supplement 1e,f). We have thus suspected that Ser45 might also play a role for selectivity in hTMEM175 in an analogous manner as the threonines. The side chain of these serines could contribute to coordination of K+ ions in close proximity to the threonine layer to increase selectivity, that is six ligands would be involved in ion coordination instead of only four as in MtTMEM175. In the S45A mutant dimer, selectivity was indeed reduced with a reversal potential of −27 ± 2 (n = 24) upon changing the major cation in the bath solution from K+ to Na+. This mutant is very similar to bacterial TMEM175 channels in its primary sequence of helix one and intriguingly also with respect to its preference for K+. Consequently, a triple mutant where all of the threonine and serine residues in these two layers of the pore are exchanged for alanine (S45A/T49A/T274A) shows a similar reduction of selectivity (Erev = −22 ± 3 mV, n = 8) (Figure 5d) as the double mutant T49A/T249A and the T38A mutant protein of MtTMEM175 (Figure 5b). We thus conclude that Ser45 in the first repeat is accounting for the increased selectivity of the human TMEM175 channel, but in conjunction with the threonine layer.
 
 As the total number and geometry of the coordinating ligands accounts for selectivity, it is not surprising that mutation of the threonine layer suffices to lose selectivity since the remaining two serine residues alone could not effectively coordinate K+ ions. Generally, reduction of sequential ion binding sites is known to attenuate the K+ selectivity in the canonical K+ selectivity filter, whereas introducing additional binding sites can increase selectivity (Derebe et al., 2011; Sauer et al., 2013; Kast et al., 2011; Lee and MacKinnon, 2017; Alam and Jiang, 2009b; Gouaux and Mackinnon, 2005), a principle that apparently also accounts for the different K+ selectivity of bacterial and vertebrate TMEM175 channels.
 
-## Zinc ions and 4-aminopyridine act as pore blockers at the selectivity filter of hTMEM175
+### Zinc ions and 4-aminopyridine act as pore blockers at the selectivity filter of hTMEM175
 
 Next, we sought to gain insight into the mechanism of channel blocking in TMEM175 proteins. In comparison to bacterial TMEM175 channels, the human TMEM175 channel is substantially more sensitive to Zn2+ ions (IC50 ~38 µM compared to an estimated IC50 of ~0.5 mM for bacterial homologues [Cang et al., 2015]). In addition, the human channel is also inhibited by the potassium-channel blocker 4-AP (IC50 ~35 µM) (Cang et al., 2015), indicating significant differences between human and bacterial homologues and suggesting a more specific interaction of the blockers with the human channel. The equally effective block of human TMEM175 by Zn2+ and 4-AP regardless of extracellular or intracellular application (Cang et al., 2015; Lee et al., 2017) is a good indication that the block is occurring in the pore. We have shown that the increased selectivity for K+ in hTMEM175 is founded on Ser45, and thus assumed that the pronounced sensitivity for Zn2+ and the potency of 4-AP could also be based on this difference. To address this question, we analyzed the response of the S45A mutant of hTMEM175 for these blockers in comparison with the WT protein. As shown in Figure 6a and b, the S45A mutant is not blocked by Zn2+ ions and also lost its sensitivity for 4-AP at a concentration of 100 µM.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig6-v2.jpg)
+
+**Figure 6.:** (a) Currents elicited by a ramp protocol (−80 to +40 mV in 200 ms) in HEK293 cells expressing hTMEM175 WT (upper left) or hTMEM175 S45A mutant (lower left) in absence (black) and presence (red) of 5 mM ZnSO4 in external bath solution (150 mM K+). Columns (lower right) summarize average inhibition (± s.d.) of current amplitudes at −60 mV from 3 and 4 recordings in the hTMEM175 WT and S45A mutant, respectively. The ratio of currents in the presence and absence of Zn2+ (I+Zn/I-Zn) show the voltage independence of channel block (upper right). (b), same as in (a) with representative measurements in absence (black) or presence (red) of 100 µM 4-AP in external bath solution (150 mM K+) for hTMEM175 WT (upper left) and S45A mutant (lower left), respectively. Columns show average inhibition (± s.d.) of current amplitudes at −60 mV from four measurements in the hTMEM175 S45A mutant and WT, respectively.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Representative currents elicited by a ramp protocol (−80 to +40 mV in 200 ms) in HEK293 cells transfected with the MtTMEM175 T38A mutant in absence (black) and presence (red) of 5 mM ZnSO4 in external bath solution containing 150 mM K+. Column summarizes average inhibition (± s.d.) of current amplitudes at −60 mV from four recordings in the MtTMEM175 T38A mutant and WT, respectively. (b) Location of zinc ions within the pore of MtTMEM175. Anomalous difference electron density of Zn2+ is illustrated as cyan mesh (at 2.88 Å, contoured at 4 σ, blurred with b = 200). Front and rear subunits are omitted for clarity. (c) No zinc ions can be detected in the T38A mutant of MtTMEM175 (Fo-Fc density at 3.2 Å, contoured at 4 σ (left) or at 2 σ (right), respectively, blurred with b = 200).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/53683/elife-53683-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Overlay of helix one from MtTMEM175 (orange) and CmTMEM175 (5VRE, cyan) with close-up view on residues Leu35, Leu39 and Leu42 in MtTMEM175 and Ile23, Leu27 and Leu30 in CmTMEM175, respectively. Deviations between the side chains and backbone oxygens of Leu42 in MtTMEM175 and Leu30 in CmTMEM175 are shown in Å. The view is from the side. (b) The corresponding 2Fo-Fc densities are shown for MtTMEM175 (left, at 2.4 Å, contoured at 1.8 σ after sharpening with b=-25) and CmTMEM175 (right, at 3.3 Å, contoured at 1.55 σ). A sequence alignment of helix one in MtTMEM175 and CmTMEM175 with the respective residues numbered is displayed. (c) Comparison of a HOLE analysis of the pore in MtTMEM175 and CmTMEM175. The pore radius along the central axis is shown in Å. Dashed lines indicate the radii for K+ and Na+ without inner hydration shell. The structures used in the HOLE analysis were aligned to superimpose Leu35 and Thr38 in MtTMEM175 with Ile23 and Thr26 in CmTMEM175. (d) HOLE calculation of MtTMEM175 WT and the mutant L35A. Leu35 corresponds to Ile23 in CmTMEM175. The pore radius along the central axis is shown in Å. Dashed lines indicate the radii for K+ and Na+ without inner hydration shell.
 
 These data confirm that both Zn2+ and 4-AP act as pore blockers at the selectivity filter, at very similar locations. The size of the 4-AP molecule further suggests that this block can only take place in a widened pore which again implies a different conductive conformation where bulky side chains do not occlude the ion path and Ser45 is facing the pore.
 
@@ -87,7 +163,7 @@ Bacterial channels are only weakly inhibited by Zn2+(Cang et al., 2015) and th
 
 The TMEM175 family of non-canonical potassium channels has recently been identified to confer a K+ selective conductance to lysosomes and late endosomes (Cang et al., 2015). Importantly, it has been shown that this channel is presumably involved in the early onset of PD (Jinn et al., 2017; Nalls et al., 2014; Chang et al., 2017; Jinn et al., 2019). Even though its exact function in lysosomal physiology still needs to be clarified the available experimental evidence shows that aberrant processing of autophagosomes as well as an increased lysosomal pH under conditions of starvation is the prominent phenotype of TMEM175-loss (Cang et al., 2015; Jinn et al., 2017) and likely connects this lysosomal pathology to PD. In combination with an electrophysiological analysis the high-resolution MtTMEM175 structure provides a solid framework on which we identify the residues that confer K+ selectivity in this channel family.
 
-## Selectivity in TMEM175 channels
+### Selectivity in TMEM175 channels
 
 From the structural analysis we divide the pore of TMEM175 channels into functional layers (Figure 7a), conceptually different from a previous interpretation (Lee et al., 2017): The TMEM175 ion pathway is built from an ion binding site for monovalent cations (with properties similar to K+ ions) at the extracellular pore entrance, a major gate at the position of Leu35 (MtTMEM175) and, rather unusual, by one (in prokaryotes) or two interspersed polar layers (in vertebrates) that tune K+ selectivity. Our observations and conclusions are based on two important considerations. First, scrutiny of the pore in the structure of MtTMEM175 shows that it is too narrow for the passage of ions. This demands that conformational changes have to take place in order to make the channel conductive. Second, there are highly conserved hydrophilic side chains (from threonine and additionally serine in vertebrate counterparts) that would be suited for coordinating ions on their passage. But since these residues do not face the pore lumen we anticipate a rotation of helix 1, resulting in an iris-like opening in assembled TMEM175 channels as a plausible route for transitioning into a conductive conformation. Such a rotation simultaneously exposes the hydroxyl-groups of the threonines (Thr38 in MtTMEM175 and Thr49/Thr274 in hTMEM175) and serines (Ser45 in hTMEM175) to the pore lumen and swings the bulky hydrophobic residues (Leu35 in MtTMEM175) out of the conducting pathway (Figure 7b). Indeed, mutating the respective threonine and serine residues strongly reduced the K+ selectivity both in bacterial and vertebrate TMEM175 channels (Figure 5b,d).
 
@@ -103,7 +179,7 @@ Another unusual finding is the voltage independence of the pore block in hTMEM17
 
 In summary, our data advocate a model which provides a coherent description of selectivity, blocking and channel opening. However, definite conclusions have to await additional evidence from an open channel structure.
 
-## Structural differences between MtTMEM175 and CmTMEM175
+### Structural differences between MtTMEM175 and CmTMEM175
 
 Comparison of the previously reported structure of CmTMEM175 (Lee et al., 2017), with the model of MtTMEM175 highlights a number of significant differences, which potentially bear information on the function of TMEM175 type channels.
 
@@ -113,51 +189,306 @@ Another difference between the structures is apparent at the extracellular tip o
 
 It is furthermore worth noting, that the short helix between the helices 1 and 2 of CmTMEM175 is involved in major crystal contacts, which might be responsible for a displacement of the tips of helix1 and formation of the 310-helix (Figure 3—figure supplement 1h). Even though our results indicate that the coordinated K+ ion has no direct impact on the selectivity of the MtTMEM175 channel, this configuration may still be relevant for function. However, the 310-helix in CmTMEM175 has also an influence on the position of other pore lining side chains when compared to MtTMEM175. This is in particular true for Leu30, which is facing the pore in contrast to the equivalent Leu42 in MtTMEM175 (Figure 6—figure supplement 2a,b). Leucine30, Leu27 and Ile23 in CmTMEM175 are thereby forming three layers of pore-lining hydrophobic residues. This scenario is reminiscent of the structures of bestrophins, for example a channel to which CmTMEM175 was primarily compared in literature (Lee et al., 2017). It was proposed that Ile23, which is part of the triad of bulky pore lining residues in CmTMEM175, conveys the K+ selectivity as a hydrophobic selectivity filter, as initially also proposed for bestrophins (Yang et al., 2014; Kane Dickson et al., 2014). Mutation of Ile23 or corresponding residues in hTMEM175 to small or hydrophilic residues indeed resulted in a loss of K+ selectivity (Lee et al., 2017). If Ile23 however acts as a gate to keep the channel closed, a role that we suggest for the corresponding Leu35 in MtTMEM175, an exchange for asparagine or alanine would likely result in a permanently open channel (Figure 6—figure supplement 2d). For instance, in bestrophins, mutation of three layers of bulky residues along the ion path to alanine resulted in an open channel, without the requirement for activation (Vaisey et al., 2016; Rao et al., 2017). This supported a function of these residues as a gate instead of contributing to selectivity. Similarly, mutation of a gate built from phenylalanine in the NaK channel strongly increased flux (Alam and Jiang, 2009a). More recently a cryo-EM structure of chicken bestrophin in a conductive conformation provided evidence against a role of the bulky pore-occluding residues as hydrophobic selectivity filters but instead revealed that these residues are indeed physical gates (Miller et al., 2019). Hence mutation of hydrophobic gates with small and/or hydrophilic residues can have substantial impact on the closure and conduction of ion channels (Rao et al., 2017; Rao et al., 2018; Aryal et al., 2014). When we mutated Leu35 to alanine we could only see small effects on the selectivity, speaking against a role in selectivity (Figure 5b). Probably this mutant allows for some non-specific permeation in closed state due to the loss of the leucine-gate which results in slightly reduced selectivity in whole-cell recordings when compared to WT.
 
-## Conclusions
+### Conclusions
 
 TMEM175 channels are not as enigmatic as anticipated earlier but instead recapitulate classical structure-function correlates of other ion channel families: Large hydrophobic residues are acting as gates and polar contacts from side chains and the backbone are coordinating ions in the conducting pathway. On the other hand, it is remarkable that the selectivity is mediated by cryptic hydroxyl-bearing side chains inside the pore that are only available for selective ion solvation in an open conformation by concerted repositioning. In conclusion, the conductive state must thus deviate substantially from the closed state in order to be permeable to ions. This is strongly supported by the localization of the residues that mediate K+ selectivity and sensitivity to the blockers Zn2+ and 4-AP. Collectively this study provides insight into an alternative solution for conduction of K+ ions and an unusual selectivity filter. But with respect to the geometry, chemistry and the number of ligands the channel architecture also recapitulates established concepts of K+ channel biophysics.
 
 ## Materials and methods
 
-## Cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Marivirga tractuosa)</td>
+      <td>MtTMEM175</td>
+      <td>DSM 4126</td>
+      <td>E4TN31</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>hTMEM175</td>
+      <td>Sourcebioscience</td>
+      <td>Q9BSA9, IRAUp969F1019D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Streptomyces collinus)</td>
+      <td>scTMEM175</td>
+      <td>Synthesized by GenScript</td>
+      <td>S5VBU1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBXC3H</td>
+      <td>Dutzler lab</td>
+      <td>Addgene # 47068</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDXC3M</td>
+      <td>Dutzler lab</td>
+      <td>Addgene #49030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDXC3GMS</td>
+      <td>Dutzler lab</td>
+      <td>Addgene #49031</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBXNPHM3</td>
+      <td>Dutzler lab</td>
+      <td>Addgene #110099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>Germ. Collection Microorg. &amp; cell cultures, Braunschweig, Germany</td>
+      <td>ACC 305, tested mycoplasma negative</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MC1061</td>
+      <td>Dutzler lab</td>
+      <td>Made by Malcolm Casadaban https://cgsc.biology.yale.edu/Strain.php?ID=11225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 10/300</td>
+      <td>GE healthcare</td>
+      <td>Cat#17517501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Streptavidin Plus UltraLink resin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#53117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ni-NTA resin</td>
+      <td>Qiagen</td>
+      <td>Cat#30230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 5/150 increase</td>
+      <td>GE healthcare</td>
+      <td>Cat#28990945</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Strep-Tactin Superflow high capacity 50% suspension</td>
+      <td>Iba lifesciences</td>
+      <td>Cat#2-1208-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>Cat#5056489001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-dodecyl-β-d-maltopyranoside, Solgrade</td>
+      <td>Anatrace</td>
+      <td>Cat#D310S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-decyl-β-d-maltopyranoside, Solgrade</td>
+      <td>Anatrace</td>
+      <td>Cat#D322S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desthiobiotin</td>
+      <td>Iba lifesciences</td>
+      <td>Cat#2-1000-002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>E. coli polar lipids</td>
+      <td>Avanti polar lipids</td>
+      <td>Cat#100600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene</td>
+      <td>Promega</td>
+      <td>Cat#E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CellMask Deep Red</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#C10046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ER-tracker Blue-white DPX</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#E12353</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Accutase</td>
+      <td>Thermo Fischer</td>
+      <td>Cat#A1110501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco’s modified Eagle’s medium</td>
+      <td>Sigma</td>
+      <td>Cat#D5671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine</td>
+      <td>Sigma</td>
+      <td>Cat#G7513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GeneJuice Transfection Reagent</td>
+      <td>Millipore Corp</td>
+      <td>Cat#70967-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Sigma</td>
+      <td>Cat#BCBV7601 and Cat#F7524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>EPC-9 Amplifier</td>
+      <td>Heka Electronics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>http://imagej.net/Fiji</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PulseFit</td>
+      <td>Heka Electronics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PatchMaster V2x90,3</td>
+      <td>Heka Electronics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FitMaster V2x90,1</td>
+      <td>Heka Electronics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR version 6.3.7.2</td>
+      <td>WaveMetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JPCalcWin version 1.01</td>
+      <td>https://medicalsciences.med.unsw.edu.au/research/research-services/ies/jpcalcwin</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning
 
 Thirty TMEM175 genes were cloned from genomic DNA of various eubacteria. The genes were flanked by a 3C protease cleavage site, a myc-tag and a StrepTagII, either on the N- or C-terminus. The TMEM175 gene of Marivirga tractuosa (UniProt accession # E4TN31) was cloned from the strain DSM 4126. The TMEM175 cDNA of Streptomyces collinus (UniProt accession # S5VBU1) was synthesized by GenScript. For expression in MC1061 E. coli, TMEM175 genes were expressed from the FX-cloning plasmid pBXC3H (Geertsma and Dutzler, 2011) (Addgene # 47068) with a stop codon. For electrophysiology and expression in HEK293 cells, the TMEM175 genes were cloned without tags into the plasmids pcDXC3MS (Brunner et al., 2014; Schenck et al., 2017) (Addgene #49030) followed by a stop-codon as well as into the vector pcDXC3GMS (Brunner et al., 2014; Schenck et al., 2017) (Addgene #49031) (where EGFP was replaced by Venus-YFP (vYFP) using the KpnI sites) to obtain a C-terminally vYFP tagged channel. Both, tagged and untagged versions yielded similar results. For TIRF microscopy the TMEM175 genes were cloned into the vector pcDXC3GMS (Brunner et al., 2014; Schenck et al., 2017) (Addgene #49031) to produce a fusion to vYFP. For cell surface labeling of MtTMEM175 with Nb51H01 and for size exclusion profiles of MtTMEM175 expressed in HEK cells, MtTMEM175 was cloned into pcDXC3MS (Brunner et al., 2014; Schenck et al., 2017) (Addgene #49030) to include a streptavidin binding peptide tag for purification (SBP) (Keefe et al., 2001). Nb51H01 was cloned into pcDXC3GMS (Addgene #49031) to include a vYFP tag in addition to the purification tag. For the selection of nanobodies, the MtTMEM175 gene was cloned into pBXC3H to purify the protein using a deca- histidine tag. An Avi-Tag for biotinylation was introduced by PCR preceding the histidine tag at the C-terminus. Positive nanobodies were subcloned into the plasmid pBXNPHM3 (Schenck et al., 2017; Ehrnstorfer et al., 2014; Geertsma et al., 2015) (Addgene #110099) for expression. C-terminally MBP (malE, Escherichia coli K12) tagged versions of nanobodies were generated by cloning nanobody genes and N-terminally truncated MBP genes into pBXNPHM3. The last four amino acids of MBP (RITK) were replaced with PG. The resulting expression construct consists of a nanobody, a valine linker that connects the N-terminally truncated MBP, preceded by the pelB leader sequence, a deca- histidine tag, an MBP and a 3C protease cleavage site as depicted in Figure 1—figure supplement 1b. Mutant proteins were generated by site directed mutagenesis. All constructs were verified by Sanger sequencing.
 
-## Cell culture and transfection protocol
+### Cell culture and transfection protocol
 
 Membrane currents were recorded from HEK cells transiently expressing TMEM175 proteins. For this low passage human embryonic kidney (HEK293) cells were cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum, 100 IU/mL of penicillin, 100 μg/ml of streptomycin, and stored in a 37°C humidified incubator with 5% CO2. Transfections were performed with GeneJuice Transfection Reagent (Millipore Corp) according the producer protocol: The MtTMEM175 genes inserted in pcDXC3MS (Brunner et al., 2014; Schenck et al., 2017) were co-transfected with a plasmid containing green fluorescent protein (GFP) and incubated in dark. Human TMEM175 constructs were cloned into pcDXC3GMS (Brunner et al., 2014; Schenck et al., 2017) with a C-terminal vYFP tag.
 
-## Patch clamp recordings
+### Patch clamp recordings
 
 One to two days after transfection, cells were dispersed by accutase treatment and seeded on 35 mm plastic petri dishes (on 15 mm cover slips) to allow single cell measurements. Green fluorescent cells were selected for patch clamp measurements. Membrane currents were recorded in whole cell configuration using an EPC9 or EPC10 patch-clamp amplifier (HEKA Electronics) controlled by the PatchMaster software (HEKA). Micropipettes with a resistance of about 2 MΩ were made from 1.5 mm thin-walled glass and fire-polished. The pipette solution contained (in mM) 150 KOH, 5 HCl, 10 HEPES, pH 7.4, titrated with methanesulfonic acid. The standard bath solution contained (in mM) 150 KOH, 1 CaCl2, 1 MgCl2, 10 TEA, 10 HEPES/KOH, pH 7.4, titrated with methanesulfonic acid. For measurements of selectivity K+ was replaced by other cations of interest. Relevant liquid junction voltages were calculated with JPCalcWin (UNSW Sydney). Differences in osmolarity between pipette and bath solution were compensated by D-mannitol. Membrane currents were either measured by voltage step- or ramp protocols. In standard step protocol the cell was clamped for 200 ms in 20 mV steps from holding voltage (0 mV, 100 ms) to test voltages between ±100 mV before returning to holding voltage (100 ms). The steady state current at the test voltages was measured during the final 20 ms of clamp steps. In ramp protocols the voltage increased from a holding voltage (−80 mV, 20 ms) in 200 ms to +40 mV (20 ms).
 
-## Expression and purification of MtTMEM175 from E. coli
+### Expression and purification of MtTMEM175 from E. coli
 
 MC1061 E. coli cells harboring the C-terminally tagged MtTMEM175 gene were grown in terrific broth with 100 µg/ml ampicillin to an OD600 of 0.5 at 37°C. Expression was induced with 0.02% Arabinose and continued over night at 18°C. Cells were harvested and resuspended in 150 mM NaCl, 50 mM Hepes-NaOH pH 7.6, 10% glycerol containing protease inhibitors (Complete, Roche), DNase I and 5 mM MgCl2. Cells were lysed at 15000–25000 p.s.i. Cell debris was removed by centrifugation at 8000 g for 30 min. Membranes in the supernatant were harvested by centrifugation using a 45 TI rotor (Beckmann) at 42000 r.p.m. for 1 hr and resuspended in 250 mM KCl, 20 mM Hepes-NaOH pH 7.6, 15% glycerol. Extraction of the protein was carried out using 2% n-dodecyl-β-d-maltopyranoside (DDM, Anatrace) and protease inhibitors (Roche) for 1 hr and subsequently centrifuged at 42000 r.p.m. using a 45 Ti rotor (Beckmann). The supernatant was incubated in batch with Strep-Tactin resin (Strep-Tactin Superflow high capacity, iba/Göttingen) for 1 hr, washed with 150 mM KCl, 10 mM Hepes-NaOH pH 7.6, 10% glycerol, 50 µg ml−1 E. coli polar lipids (Avanti) and 0.03% DDM, and MtTMEM175 was eluted with the wash buffer containing 5 mM d-Desthiobiotin (Sigma-Aldrich). The protein was cleaved using HRV 3C protease and concentrated to 10–20 mg/ml using Amicon concentrators (Millipore) with a 100 kDa cutoff. The MtTMEM175 protein was mixed with Mb51H01 in a molar ratio of 2.2–2.5. For this, concentrated Mb51H01 was supplemented with 3 mM maltose to keep MBP in the substrate-bound conformation and DDM was added to 0.03%. After that, concentrated MtTMEM175 was added for complex formation. The mixture was left on ice for 30 min and applied to a Superdex 200 10/300 column (GE healthcare) equilibrated with 150 mM KCl, 5 mM Hepes-NaOH pH 7.6, 2.5 mM Maltose and 0.03% DDM. The peak fractions were pooled and concentrated to 8–16 mg/ml for crystallization. All Steps were performed on ice or at 4°C. Mutant proteins were purified in the same way.
 
-## Expression and purification of MtTMEM175/fluorescent Nb51H01 from HEK293 cells
+### Expression and purification of MtTMEM175/fluorescent Nb51H01 from HEK293 cells
 
 Low passage HEK293 cells were transiently transfected with MtTMEM175 (cloned into pcDXC3MS [Brunner et al., 2014; Schenck et al., 2017], Addgene #49030) or Nb51H01 (cloned into pcDXC3GMS [Brunner et al., 2014; Schenck et al., 2017], Addgene #49031) using Fugene following the manufacturers protocol. 40 hr after transfection, the cells were harvested. The proteins containing a streptavidin-binding peptide (SBP) tag (Keefe et al., 2001) were purified using Pierce Streptavidin Plus UltraLink resin as described (Brunner et al., 2014; Schenck et al., 2017) but using the same buffers as described for the purification of MtTMEM175 from E. coli expressions, except that 5 mM d-desthiobiotin in the elution buffer was replaced with 3 mM biotin. Size exclusion chromatography was performed using a Superdex200 increase 5/150 column.
 
-## Multi angle laser light scattering (MALLS) measurements
+### Multi angle laser light scattering (MALLS) measurements
 
 3C-protease cleaved MtTMEM175 protein was purified as described above except that the peak fraction after size exclusion chromatography was diluted to 35 μM (1 mg/ml) before subjecting it to MALLS-SEC using a Superdex 200 10/300 column (GE healthcare) with an Agilent LC-1100 system coupled to an Optilab rEX refractometer (Wyatt Technology) and a miniDAWN 3-angle light-scattering detector (Wyatt Technology). The SEC buffer contained 150 mM KCl, 10 mM Hepes-NaOH and 0.03% DDM at pH 7.6 at RT. Data was analyzed with ASTRA software (Wyatt Technology).
 
-## Generation of nanobodies in alpacas
+### Generation of nanobodies in alpacas
 
 Nanobodies against MtTMEM175 were raised in alpacas (Vicugna pacos) at the Nanobody Service Facility of the University of Zurich, NSF/UZH) as previously described (Schenck et al., 2017). Briefly, alpacas were immunized four times with 14 day intervals by injecting 100 µg of purified MtTMEM175 protein at a concentration of 35 μM (in 150 mM KCl, 10 mM Hepes-NaOH pH 7.6, 0.03% DDM, 15% glycerol) subcutaneously. A blood sample was used to generate lymphocyte cDNA by reverse transcription. Nanobody genes were cloned into a phagemid vector to create a phage library which was screened by biopanning against biotinylated MtTMEM175 immobilized on Neutravidin-coated plates. Biotinylation was performed as described using recombinant BirA enzyme (Ehrnstorfer et al., 2014; Geertsma et al., 2015). Positive binders were identified using ELISA and subcloned into pBXNPHM3 for expression.
 
-## Expression and purification of nanobodies/macrobodies
+### Expression and purification of nanobodies/macrobodies
 
 For expression of nanobodies in the vector pBXNPHM3, MC1061 E. coli cells were grown to an OD600 of 0.75 at 37°C in terrific broth containing 100 µg/ml ampicillin. Protein expression was started by addition of 0.02% Arabinose and continued for 3.5 hr at 37°C. Cells were harvested and resuspended in 150 mM NaCl, 50 mM Tris-HCl pH 8, 20 mM imidazole, 5 mM MgCl2, 10% glycerol, 10 µg/ml DNAse I and protease inhibitors (Complete, Roche). Cells were lysed at 15000–25000 p.s.i. Cell debris was removed by centrifugation at 42000 r.p.m in a 45 Ti rotor. The supernatant was applied in batch to NiNTA-resin for 1 hr, washed with 150 mM KCl, 40 mM imidazole pH7.6, 10% glycerol and eluted with 150 mM KCl, 300 mM imidazole pH 7.6, 10% glycerol. The protein was cleaved over-night using HRV 3C protease during dialysis against 150 mM KCl, 10 mM Hepes-NaOH, 20 mM imidazole, pH 7.6, 10% glycerol. The MBP–His10-fragment was removed by binding to NiNTA resin and the flow-through containing the nanobodies was concentrated (Amicon) and applied to a Superdex 200 column (GE healthcare) equilibrated in 150 mM KCl, 5 mM Hepes 7.6. The peak fractions were concentrated to 10–25 mg/ml before mixing with MtTMEM175 for complex formation. Complex formation of purified nanobodies with MtTMEM175 was analyzed by SEC, where Nb51H01 (corresponding macrobody is Mb51H01) was identified as a MtTMEM175 binder with a 1:1 stoichiometry. Macrobodies were expressed and purified in the same way.
 
-## Crystallization of the MtTMEM175-Mb51H01 complex
+### Crystallization of the MtTMEM175-Mb51H01 complex
 
 Expression and monodispersity of purified TMEM175 proteins in small scale was analyzed by SDS-PAGE and SEC. Several TMEM175 proteins were expressed at reasonable rates and eluted as monodisperse species from SEC. Expression was scaled up and we could crystallize several homologues readily. However, all of the crystallized proteins, including MtTMEM175, diffracted not beyond 20 Å, even after extensive optimization of the crystallization conditions. To improve crystallization, we generated nanobodies against MtTMEM175 as described above. Nb51H01, identified by ELISA and SEC, was used for complex formation with MtTMEM175 and this complex was subjected to crystallization. The best crystals of this complex diffracted not beyond 10 Å. To improve crystallization further we decided to fuse MBP to the C-terminus of Nb51H01 in order to increase possible crystal contacts and the chance for advantageous crystal lattices. We fused the Nb at the C-terminus with an N-terminally truncated MBP (starting at Lys [Cang et al., 2015] without the signal sequence) linked by a valine residue as depicted in Figure 1—figure supplement 1b. This resulted in the interfacial sequence PVTVVKLVIWIN (Nb C-terminus underlined, linker in bold and MBP N-terminus in italics) and we named the construct Mb51H01. A complex of Mb51H01 and MtTMEM175 was purified by SEC. Before subjecting the sample to SEC the mixture was left on ice for 15–30 min and eluted in 150 mM KCl, 5 mM Hepes-NaOH, 2.5 mM maltose and 0.03% DDM. The fractions containing the complex were concentrated to 8–16 mg/ml and subjected to crystallization trials.
 
 Prior to crystallization the purified MtTMEM175-Mb51H01 complex was mixed with E. coli polar lipids (Avanti) and with n-decyl-β-d-maltopyranoside (DM, Anatrace) to a final concentration of 100 µg/ml and 0.3% respectively. Best crystals were obtained in a condition composed of 100 mM Tris-HCl pH 8.5, 150 mM NaCl, 150 mM MgCl2 and 28–30% PEG400 grown at 20°C. After 14 days, the crystals were dehydrated for 3–4 hr using mother liquor with 36% PEG400, cryo-protected and flash-frozen in liquid propane or liquid nitrogen with similar results. The crystals giving the best datasets were additionally soaked in a cryo-protecting solution containing 5 mM KPtCl4 followed by back-soaking in the cryo-protecting solution to get rid of excess platinum. For soaking in cesium and rubidium, 150 mM KCl in the cryo-protecting solution was replaced by 150 mM CsCl and 150 mM RbCl respectively. For the anomalous signal of zinc, crystals of MtTMEM175 WT protein were soaked for 15 min in a cryo-protecting solution containing 0.5 mM ZnSO4 while the T38A mutant was soaked in 0.5–2.5 mM ZnSO4. The mutant MtTMEM175 with a T38A substitution was crystallized in the same condition and crystals were flash frozen in liquid nitrogen.
 
-## Data collection and structure determination
+### Data collection and structure determination
 
 X-ray diffraction data was collected on the X06SA beamline at the Swiss Light Source (SLS) of the Paul Scherrer Institute (PSI) equipped with an EIGER 16M detector (Dectris) at 100K. Data reduction was performed using XDS (Kabsch, 2010a) and XSCALE (Kabsch, 2010b). The resolution cut off was determined by CC1/2 criterion (Karplus and Diederichs, 2012). Crystals of MtTMEM175 in complex with Mb51H01 belong to space group P4212 (a = 131.2 Å, b = 131.2 Å, c = 132.6 Å), with a solvent content of 64%. Best diffracting crystals of MtTMEM175 WT were obtained after soaking in KPtCl4, but no anomalous platinum signal was detected. For the native data set seven datasets from a single crystal were merged together. Phases were obtained by molecular replacement in PHASER (McCoy et al., 2007), using the individual atomic coordinates of MBP (PDB ID: 1ANF) (Quiocho et al., 1997), and the nanobody Nb60 (PDB ID: 5JQH) (Staus et al., 2016). An initial round of model refinement was performed using REFMAC5 (CCP4 program suite) (Murshudov et al., 2011; Winn et al., 2011), followed by density modification with Parrot (Cowtan, 2010) and automated model building by Buccaneer (Cowtan, 2006). The initial model was improved by iterative cycles of manual model building in Coot (Emsley et al., 2010) and refined in Buster-TNT (Blanc et al., 2004), yielding excellent geometry (Ramachandran favored/outliers:=95.9%/0.0%) and Rwork/Rfree values of 0.209/0.253 (Supplementary files 1 and 2). Potassium ion positions were verified by the anomalous signal at high wavelengths (λ = 2.02460 Å). Refinements using Buster-TNT indicated a high occupancy for K+ at the position of 1K+ and lower occupancy for K+ at 2K+. Thus, the presence of both, K+ and Na+, at 2K+ is possible. Native crystals were soaked with cesium, rubidium, and zinc and the respective ion position determined by the anomalous signal. The anomalous signal for cesium and rubidium ions was strong and identified their positions at the extracellular ion channel entrance (at 1K+). The anomalous signal for the data measured at the zinc K-edge (λ = 1.24610 Å) was weak, suggesting only partial occupancy. The MtTMEM175 model and structure factors (code 6HD8, 6HD9, 6HDA, 6HDB, 6HDC, 6SWR) have been deposited in the Protein Data Bank.
 
@@ -165,14 +496,14 @@ Regions not defined in the electron density include residues 1–3, 283–301 an
 
 The program HOLE (Smart et al., 1993) was used to analyze the pore radius in the MtTMEM175 ion conduction pathway and the electrostatic potentials were calculated with the program APBS (Baker et al., 2001) with a grid spacing of 0.5 in a range of −5 to +5 kTe. Figure preparation was carried out in PyMOL (Schrödinger LLC). Maps were exported from Coot for use in PyMOL.
 
-## Projection of sequence conservation on the MtTMEM175 structure
+### Projection of sequence conservation on the MtTMEM175 structure
 
 Fifteen bacterial TMEM175 sequences were aligned: Nine bacterial sequences obtained from a BLAST search using the sequence of hTMEM175, and five randomly chosen bacterial TMEM175 sequences were aligned with MtTMEM175. The conservation index from this multiple sequence alignment was calculated using AL2CO (Pei and Grishin, 2001) and was then used to replace the values for the B-factors in the PDB file of MtTMEM175. Missing parts between the different sequences were assigned a value of −1 by default. More negative values as from the AL2CO conservation index output were set to −1. Conservation index was visualized in the MtTMEM175 structure using cyan-white-magenta colors and with the minimum set to −1 (least conservation, cyan) and the maximum set to 2.8 (maximal conservation, magenta). Sequences used for the alignment were: Marivirga tractuosa, Lactobacillus rossiae, Mycobacterium sp., Humibacillus sp., Micromonospora chaiyaphumensis, Oscillatoria sp., Azospirillum brasilense, Niastella vici, Streptomyces collinus, Chryseobacterium sp., Streptacidiphilus carbonis, Fulvivirga imtechensis, Methylobacterium extorquens, Deinococcus geothermalis, Paenibacillus curdlanolyticus.
 
-## TIRF microscopy
+### TIRF microscopy
 
 HEK293 cells transiently expressing vYFP-tagged TMEM175 proteins were grown on cover slips and decapitated by cold distilled water as described previously (Biel et al., 2016). The remaining isolated plasma membrane patches on the glass cover slips were imaged on a Nikon Ti-E microscope (Nikon, Konan, Minato-ku, Tokyo, Japan) with a CFI Apo TIRF 100x objective (NA 1.49, WD 0.12 mm). For TIRF imaging the focus in the back focal plane was moved off-center by controlling the position of a mirror with a single-axis stage M-126. DG controlled by a C-863 Mercury Servo Controller (Physik Instrumente (PI), Karlsruhe, Germany). Plasma membrane patches and potential contamination of remaining cortical ER were stained with red fluorescent CellMask Deep Red (CMDR) and ER-tracker Blue-white DPX (both from Thermo Fisher) respectively. The fluorescent markers were excited/detected as follows: vYFP (488 nm/ 500–550 nm), ER-Tracker (561 nm/ 577.5–646.5 nm), CMDR (647 nm/ 662.5–799.5 nm).
 
-## Cell surface labeling of MtTMEM175 in HEK293 cells using fluorescent Nb51H01
+### Cell surface labeling of MtTMEM175 in HEK293 cells using fluorescent Nb51H01
 
 Low passage HEK293 cells were grown in µ-Slides VI 0.4 (Ibidi) and transiently transfected with plasmid encoding MtTMEM175 or mock transfected using Fugene following the manufacturer’s protocol. 40 hr after transfection, the cells were washed twice with phosphate buffered saline (PBS) containing 10% fetal bovine serum (FBS) (PBS/FBS) before they were incubated with purified Nb51H01-vYFP in PBS/FBS at a concentration of 10 µg/ ml for 20 min. Unbound Nb51H01-vYFP was removed by two wash steps (PBS/FBS) before imaging using a Nikon Eclipse Ti2 epifluorescence microscope and a 40x Plan Fluor objective (Nikon) with an iXonEM+ 885 EMCCD camera (Andor). For the pre-absorption experiment of Nb51H01-vYFP with MtTMEM175, a 4-fold molar excess of MtTMEM175 (from E. coli) was incubated with Nb51H01-vYFP for 20 min and then applied to the cells as described for the treatment with Nb51H01-vYFP alone (DDM concentration in the wells was below the cmc due to dilution).

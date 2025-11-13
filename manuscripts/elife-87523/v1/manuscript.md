@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03rmrcq20 Department of Cellular and Physiological Sciences, Life Sciences Institute, The University of British Columbia Vancouver Canada
-2. https://ror.org/03rmrcq20 Department of Chemistry, The University of British Columbia Vancouver Canada
-3. https://ror.org/02y72wh86 Department of Biology, Queen’s University Kingston Canada
+1. Department of Cellular and Physiological Sciences, Life Sciences Institute, The University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+2. Department of Chemistry, The University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
+3. Department of Biology, Queen’s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
 
 † Corresponding author
 
 ## Abstract
 
-Drosophila is a powerful model to study how lipids affect spermatogenesis. Yet, the contribution of neutral lipids, a major lipid group which resides in organelles called lipid droplets (LD), to sperm development is largely unknown. Emerging evidence suggests LD are present in the testis and that loss of neutral lipid- and LD-associated genes causes subfertility; however, key regulators of testis neutral lipids and LD remain unclear. Here, we show LD are present in early-stage somatic and germline cells within the Drosophila testis. We identified a role for triglyceride lipase brummer ( bmm ) in regulating testis LD, and found that whole-body loss of bmm leads to defects in sperm development. Importantly, these represent cell-autonomous roles for bmm in regulating testis LD and spermatogenesis. Because lipidomic analysis of bmm mutants revealed excess triglyceride accumulation, and spermatogenic defects in bmm mutants were rescued by genetically blocking triglyceride synthesis, our data suggest that bmm -mediated regulation of triglyceride influences sperm development. This identifies triglyceride as an important neutral lipid that contributes to Drosophila sperm development, and reveals a key role for bmm in regulating testis triglyceride levels during spermatogenesis.
+Drosophila is a powerful model to study how lipids affect spermatogenesis. Yet, the contribution of neutral lipids, a major lipid group which resides in organelles called lipid droplets (LD), to sperm development is largely unknown. Emerging evidence suggests LD are present in the testis and that loss of neutral lipid- and LD-associated genes causes subfertility; however, key regulators of testis neutral lipids and LD remain unclear. Here, we show LD are present in early-stage somatic and germline cells within the Drosophila testis. We identified a role for triglyceride lipase brummer (bmm) in regulating testis LD, and found that whole-body loss of bmm leads to defects in sperm development. Importantly, these represent cell-autonomous roles for bmm in regulating testis LD and spermatogenesis. Because lipidomic analysis of bmm mutants revealed excess triglyceride accumulation, and spermatogenic defects in bmm mutants were rescued by genetically blocking triglyceride synthesis, our data suggest that bmm-mediated regulation of triglyceride influences sperm development. This identifies triglyceride as an important neutral lipid that contributes to Drosophila sperm development, and reveals a key role for bmm in regulating testis triglyceride levels during spermatogenesis.
 
 ## Introduction
 
@@ -35,33 +35,69 @@ To address these knowledge gaps, we used Drosophila to investigate the regulatio
 
 ## Results
 
-## LD are present in early-stage somatic and germline cells
+### LD are present in early-stage somatic and germline cells
 
 We previously reported the presence of small LD (<1 μm) at the apical tip of the testis (Wat et al., 2020), a finding we reproduced in w1118 males using neutral lipid stain BODIPY (Figure 1A). These LD were present in the region that contains stem cells, early-stage somatic cells, and germline cells (Figure 1A, A', arrows). LD were also present in the hub, an organizing center and stem cell niche in the Drosophila testis (Figure 1A'', A''', arrows) (de Cuevas and Matunis, 2011), but largely absent within the area occupied by spermatocytes (Figure 1A, A', arrowheads). This LD distribution was reproduced in two independent genetic backgrounds and at two additional ages (Figure 1B, C). While LD may contain multiple neutral lipid species (Walther et al., 2017), cholesterol-binding fluorescent polyene antibiotic filipin III did not detect cholesterol within testis LD (Figure 1—figure supplement 1A), suggesting triglyceride is the main neutral lipid in Drosophila testis LD.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig1-v1.jpg)
+
+**Figure 1.:** (A) Testis LD in w1118 animals visualized with neutral lipid dye BODIPY. (A, A') Scale bar = 50 μm; (A'', A''') scale bar = 15 μm. Asterisk indicates hub in all images. Arrows point to LD; arrowheads point to spermatocytes in A, B. Spermatocytes were identified as described in methods section. (B) Testis LD visualized with BODIPY in newly eclosed males from two wild-type genotypes. Scale bars: main image = 50 μm; inset image = 10 μm. (C) Testis LD from w1118 animals at different times post-eclosion. Scale bars = 50 μm. (D) Testis LD visualized with LipidTox Red in animals with somatic cell overexpression of GFP-LD (Tj-GAL4>UAS-GFP-LD). Green fluorescent protein (GFP)- and LipidTox Red-positive punctae are somatic LD (D–D'' arrows); LipidTox punctae without GFP indicate germline LD (D–D'' arrowheads). Scale bars = 10 μm. (E) Histogram showing the spatial distribution of somatic cell LD; error bars represent standard error of the mean (SEM). (F) Cumulative frequency distributions of somatic LD (blue line, data reproduced from E), zfh-1-positive somatic cells (zfh-1+ cells, orange line), and Eya-positive somatic cells (Eya+ cells, gray line). (G) Testis LD visualized with LipidTox Red in males with germline overexpression of GFP-LD (nos-GAL4>UAS-GFP-LD). GFP- and LipidTox Red-positive punctae indicate germline LD (arrows); LipidTox punctae without GFP indicate non-germline LD (arrowheads). Scale bars = 10 μm. (H) Histogram representing the spatial distribution of LD within the germline; error bars represent SEM. (I) Histogram representing the spatial distribution of LD and GFP fluorescence (green line) (arbitrary units, a.u.) in a representative testis of a bam-GFP animal (panel J). (J) Testis LD in a bam-GFP animal; arrows point to LD and arrowheads point to spermatocytes. Scale bar = 50 μm. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Testes stained with BODIPY (A) to detect neutral lipids and Filipin III (A') to detect free cholesterol. Scale bars = 50 μm.
+
 Drosophila spermatogenesis requires the co-development and differentiation of the germline and the somatic lineages (Boyle and DiNardo, 1995). To identify LD in each lineage, we used the GAL4/UAS system to overexpress a GFP transgene fused to the LD-targeting motif of motor protein Klarsicht (UAS-GFP-LD) (Yu et al., 2011). Somatic overexpression of UAS-GFP-LD using Traffic jam (Tj)-GAL4 revealed that the majority of somatic LD in 0-day-old males were located <30 μm from the hub (Figure 1D, E). Because the somatic LD distribution coincided with a marker for somatic stem cells and their immediate daughter cells (Zinc finger homeodomain 1, Zfh-1) (Figure 1F; two-sample Kolmogorov–Smirnov test) (Leatherman and Dinardo, 2008), but not with a marker for late somatic cells (Eyes absent, Eya) (Amoyel et al., 2016; Fabrizio et al., 2003), our data suggest LD are present in early somatic cells. Germline overexpression of UAS-GFP-LD using nanos (nos)-GAL4 demonstrated the presence of LD within germline cells near the apical tip of the testis in 0-day-old males (Figure 1G, H). Specifically, the disappearance of germline LD coincided with peak expression of a GFP reporter that reflects the expression of Bag-of-marbles (Bam) protein in the testis (Bam-GFP) (Chen and McKearin, 2003; Figure 1I, J). Because peak Bam expression signals the last round of transient amplifying mitotic cell cycle prior to the germline’s transition into the meiotic cell cycle (Insco et al., 2009; Chen et al., 2014b; Gönczy et al., 1997), our data suggest that germline LD, like somatic LD, are present in cells at early stages of development.
 
-## brummer plays a cell-autonomous role in regulating testis LD
+### brummer plays a cell-autonomous role in regulating testis LD
 
 Adipose triglyceride lipase (ATGL) is a critical regulator of neutral lipid metabolism and LD (Athenstaedt and Daum, 2003; Chitraju et al., 2013; Grönke et al., 2005; Haemmerle et al., 2006; Haemmerle et al., 2011; Huijsman et al., 2009; Korbelius et al., 2019; Kurat et al., 2006; Zimmermann et al., 2004; Attané et al., 2016). Loss of ATGL in many cell types triggers LD accumulation, and ATGL overexpression decreases LD number (Grönke et al., 2007; Grönke et al., 2005; Haemmerle et al., 2006; Korbelius et al., 2019; Zimmermann et al., 2004; Lee et al., 2014; Tuohetahuntila et al., 2016). Given that the Drosophila ATGL homolog brummer (bmm) regulates testis LD induced by mitochondrial stress (Sênos Demarco et al., 2019), we explored whether bmm regulates testis LD under normal physiological conditions. We first examined bmm expression in the testis by isolating this organ from flies carrying a bmm promoter-driven GFP transgene (bmm-GFP) that recapitulates many aspects of bmm mRNA regulation (Men et al., 2016). GFP expression was present in the germline of bmm-GFP testes, and we found germline GFP levels were higher in spermatocytes than at earlier stages of sperm development (Figure 2A, B; one-way analysis of variance [ANOVA] with Tukey multiple comparison test). In further support of this observation, we analyzed a publicly available single-cell RNA sequencing dataset from the male reproductive organ (Li et al., 2021). Using pseudotime analysis, we arranged the germline (Figure 2—figure supplement 1A) and somatic cells (Figure 2—figure supplement 1B) based on their annotated developmental trajectory. The expression pattern of bmm in the germline matched our observation with the bmm-GFP reporter (Figure 2—figure supplement 1C). While levels of the bmm-GFP reporter were lower in somatic cells, single-cell RNA sequencing data identified bmm expression in the somatic lineage that was higher in cells at later stages of development (Figure 2—figure supplement 1D). Additional neutral lipid- and lipid droplet-associated genes such as lipid storage droplet-2, Seipin, Lipin, and midway also showed differential regulation during differentiation in the testis (Figure 2—figure supplement 1C, D). Combined with our data on the location of testis LD, these gene expression data suggest that bmm upregulation in both somatic and germline cells during differentiation corresponds to the downregulation of testis LD. Supporting this, germline GFP levels were negatively correlated with testis LD in bmm-GFP flies (Figure 2A, C), suggesting regions with higher bmm expression had fewer LD.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig2-v1.jpg)
+
+**Figure 2.:** (A–A'''') Testis LD indicated by LipidTox Red in bmm-GFP animals. Arrows point to LD in all images. Arrowheads point to spermatocytes. Scale bars = 50 μm. Asterisks indicate the hub in all images. (B) Quantification of nuclear GFP intensity in testes isolated from bmm-GFP animals (n = 3). Germline stem cell (GSC), spermatogonia (SG), spermatocyte (SC). (C) Spatial distribution of LD (gray histogram) and GFP expression (green line) in testes from bmm-GFP animals as a function of distance from the hub (n = 3). LD near the apical region of the testis in bmmrev (D) or bmm1 (E) animals. (F) LD further away from the apical tip in bmm1animals. (D–F) Scale bars = 50 μm. (G) Histogram representing testis LD size distribution in bmmrev (gray) and bmm1 (orange). (B,C,G) Error bars represent standard error of the mean (SEM). (H) Apical tip of the testes is at the left of the graph; individual dots represent a single LD and its relative position to the hub marked by an asterisk. Cumulative frequency distribution of the distance between LD and the apical tip of the testes are drawn as solid lines. See also Figure 2—figure supplement 1 and Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Pseudotime trajectory of germline (black line) based on single-cell RNA sequencing data (Li et al., 2021). Individual cells are labeled according to the annotation within the dataset. (B) Pseudotime trajectory of the somatic cells (black line) based on publicly available single-cell RNA sequencing data (Li et al., 2021). Individual cells are labeled according to the annotation within the dataset. Only one trajectory (branch b) is marked and used for panel D. (C) Rolling average of normalized transcript counts in the germline along the trajectory shown in panel A are plotted as a black line on the upper panel. Composition of cell types mapped on to the trajectory at each time point is shown at the bottom of panel B. (D) Rolling average of normalized transcript counts in somatic cells plotted as a black line along the trajectory shown in C (upper panel). Composition of cell types mapped on to the trajectory at each time point is shown at the bottom of panel D.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative images of bmmrev (A and B) and bmm1 (C and D) testes with somatic overexpression of GFP-LD (Tj-GAL4>UAS-GFP-LD). Panels B and D contain magnified images of the area indicated by the boxes in panels A and C, respectively. In bmmrev testes, LD were restricted to a region near the apical tip (A) of the testis in both somatic (B–B''', arrows) and germline cells (B–B''', arrowheads). In bmm1 testes, LD were present in both somatic (C, D, arrows) and germline cells (C, D, arrowheads), near the apical tip of the testis in a region corresponding to early-stage germ cells and in the region corresponding to spermatocytes. (A, C) Scale bars = 50 μm; (B, D) scale bars = 20 μm.
 
 To test whether bmm regulates testis LD, we compared LD in testes from 0-day-old males carrying a loss-of-function mutation in bmm (bmm1) to control male testes (bmmrev) (Grönke et al., 2005). bmm1 males had significantly more LD across all LD sizes compared with control males at the apical tip of the testis (Figure 2D–G; Welch two-sample t-test with Bonferroni correction) and showed a significantly expanded LD distribution (Figure 2D–F, H; two-sample Kolmogorov–Smirnov test). This suggests bmm normally restricts LD to the apical tip of the testis, an observation we confirmed in both somatic and germline lineages using lineage-specific expression of GFP-LD (Figure 2—figure supplement 2A–D). Importantly, after inducing homozygous bmmrev or bmm1 clones in the testes using the FLP-FRT system (Figure 3A, B; Xu and Rubin, 1993), we found bmm1 spermatocyte clones had significantly more LD at 3 days post-clone induction (Figure 3C; Welch two-sample t-test), a stage at which LD were absent from bmmrev clones. Because we observed no significant effect of cell-autonomous bmm loss on LD at any other stage of germline development (Figure 3C), this suggests bmm function is not required to regulate LD at early stages of germ cell development. Instead, our data suggest bmm plays a role in regulating LD at the spermatogonia–spermatocyte transition. While we were unable to assess LD in bmm1 somatic clones, our data reveal a previously unrecognized cell-autonomous role for bmm as a regulator of LD in germline cells.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig3-v1.jpg)
 
-**Figure 3.:** bmm regulates germline lipid droplets (LD) in a cell-autonomous manner.(A, B) Single confocal slices through a representative testis isolated from an individual carrying clones induced using the FLP-FRT system at 3 days post-clone induction. Clones are homozygous for an allele that encodes a functional bmm protein product (bmm; revA–A''') or a loss-of-function bmm allele (bmm 1,B–B'''). GFP-negative areas mark homozygous clones in panels A and B; the boxed areas in A, A'' and B, B'' are shown in A', A''' and B', B''', respectively. In homozygous bmm spermatocyte clones we detected no LD using neutral lipid dye LipidTox (revA'', A'''). In contrast, spermatocyte clones homozygous for bmm have detectable LD (1B'', B''', arrows). Scale bars = 50 μm in A, A'' and B, B''; scale bars = 10 μm in A', A''' and B', B'''. (C) Number of testis LD in bmm (gray) or revbmm (orange) in FLP-FRT clones 3 days post-clone induction; dots represent measurements from a single clone. The number of cells in each cyst (CC) counted is indicated. There were significantly more LD in 1bmm spermatocyte (SC) clones (p = 0.026; Welch two-sample 1t-test) but not at other stages of development. Error bars represent standard error of the mean (SEM).
+**Figure 3.:** (A, B) Single confocal slices through a representative testis isolated from an individual carrying clones induced using the FLP-FRT system at 3 days post-clone induction. Clones are homozygous for an allele that encodes a functional bmm protein product (bmmrev; A–A''') or a loss-of-function bmm allele (bmm1, B–B'''). GFP-negative areas mark homozygous clones in panels A and B; the boxed areas in A, A'' and B, B'' are shown in A', A''' and B', B''', respectively. In homozygous bmmrev spermatocyte clones we detected no LD using neutral lipid dye LipidTox (A'', A'''). In contrast, spermatocyte clones homozygous for bmm1 have detectable LD (B'', B''', arrows). Scale bars = 50 μm in A, A'' and B, B''; scale bars = 10 μm in A', A''' and B', B'''. (C) Number of testis LD in bmmrev (gray) or bmm1 (orange) in FLP-FRT clones 3 days post-clone induction; dots represent measurements from a single clone. The number of cells in each cyst (CC) counted is indicated. There were significantly more LD in bmm1 spermatocyte (SC) clones (p = 0.026; Welch two-sample t-test) but not at other stages of development. Error bars represent standard error of the mean (SEM).
 
-## brummer plays a cell-autonomous role in regulating germline development
+### brummer plays a cell-autonomous role in regulating germline development
 
 To determine the physiological significance of bmm-mediated regulation of testis LD, we investigated testis and sperm development in males without bmm function. In 0-day-old bmm1 males reared at 25°C, testis size was significantly smaller than in age-matched bmmrev controls (Figure 4A, B; Welch two-sample t-test), and the number of spermatid bundles was significantly lower (Figure 4C; Kruskal–Wallis rank sum test). When the animals were reared at 29°C, a temperature that exacerbates spermatogenesis defects associated with changes in lipid metabolism (Ben-David et al., 2015), bmm1 phenotypes were more pronounced (Figure 4—figure supplement 1A, B; Welch two-sample t-test, Kruskal–Wallis rank sum test). Defects in testis size were also observed at 14 days post-eclosion; suggesting testis size defects persist later into the life course (Figure 4—figure supplement 1C; Welch two-sample t-test). In contrast, the number of spermatid bundles per testis was not significantly different between bmm1 and bmmrev males at this age (Figure 4—figure supplement 1D; Welch two-sample t-test), potentially due to a large decrease in the number of spermatid bundles in 14-day-old bmmrev males (Figure 4C, Figure 4—figure supplement 1D). Together, these data suggest loss of bmm affects testis development and spermatogenesis. Similar phenotypes are observed in male mice without ATGL (Masaki et al., 2017), and supplementing the diet of bmm1 males with medium-chain triglycerides partially rescued the testis and spermatogenic defects we observed in flies (Figure 4—figure supplement 1E, F; one-way ANOVA with Tukey multiple comparison test), as it does in mice (Masaki et al., 2017; Kim et al., 2017). This identifies similarities between flies and mice in fertility-related phenotypes associated with whole-body loss of bmm/ATGL.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig4-v1.jpg)
+
+**Figure 4.:** Testes isolated from bmmrev (A) and bmm1 (A') animals raised at 25°C stained with phalloidin. Scale bars = 100 μm. (B) Testis size in bmm1 and bmmrev animals raised at 25°C. (C) Spermatid bundle number in bmm1 and bmmrev testes from animals reared at 25°C. Representative images of bmmrev (D) or bmm1 (E) testes stained with 4′,6-diamidino-2-phenylindole (DAPI) and anti-Vasa antibody. Arrows indicate germline stem cells (GSCs). Scale bar = 50 μm. The hub is marked by an asterisk in all images. (F) GSC number in bmm1 and bmmrev testes. (G) Proportion of GSCs that were either bmm1 or bmmrev clones at 3 and 14 days post-clone induction. (H) Representative images of bmmrev (H) and bmm1 (H') testes carrying bam-GFP; data quantified in Figure 4—figure supplement 1J. Arrows indicate regions with high Bam-GFP. Scale bars = 50 μm. (I) Representative images of bmmrev (I) or bmm1 (I', I'') testes stained with anti-Vasa antibody. Arrows indicate Vasa-positive cysts in bmm1 testis. Panel I'' is magnified from the boxed region in I'. (I, I') Scale bars = 100 μm; (I'') scale bar = 50 μm. Maximum projection of bmmrev (J) or bmm1 (J') testes stained with anti-Boule antibody (green) and DAPI (blue). Scale bars = 100 μm. Number of bmm1 and bmmrev spermatocyte clones (K) or post-meiotic clones (L) at 3 and 14 days post-clone induction. (B,C,F,G,K,L) Error bars indicate standard error of the mean (SEM). See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Testis size was smaller in bmm1 mutant animals compared with bmmrev controls at <24 hr post-eclosion when raised at 29°C (Welch two-sample t-test). (B) The number of spermatid bundles was significantly lower in bmm1 mutant animals compared with bmmrev controls at <24 hr post-eclosion when raised at 29°C (Kruskal–Wallis rank sum test). (C) Testis size was significantly smaller in bmm1 mutant males compared with bmmrev control males at 14 days post-eclosion (Welch two-sample t-test). (D) While the median number of spermatid bundles was not significantly different between bmm1 mutant males and bmmrev control males at 14 days post-eclosion (Welch two-sample t-test), 8/27 bmm1 testis had no spermatid bundles, a phenotype absent in age-matched bmmrev males (0/22) (p = 0.0163, Pearson’s Chi-squared test), suggesting a subtle defect is present. (E) Food supplemented with 4% medium-chain triglyceride (MCT), but not long-chain triglyceride (LCT), significantly increased testis length in bmm1 animals but had no effect on this phenotype in bmmrev control animals (one-way analysis of variance [ANOVA] with Tukey multiple comparison test). (F) Food supplemented with 4% medium-chain triglyceride significantly increased the number of spermatid bundles in bmm1 testes but had no effect on this phenotype in bmmrev control animals (one-way ANOVA with Tukey multiple comparison test). (G) Representative images of bmmrev (G, G') or bmm1 (G'', G''') testes stained for FasIII (G, G'') and Vas (G', G'''). Scale bars = 25 μm. (H) Quantification of hub area in bmmrev or bmm1 testes showed a significantly larger hub size in bmm1 testes (Welch two-sample t-test). (I) The number of germline stem cells (GSCs) undergoing mitosis (phospho-histone H3+ GSC/total GSC) was not significantly different between bmm1 and bmmrev testes (Kruskal–Wallis rank sum test). (J) The distance between the hub and the first Bam-GFP-positive cyst (Figure 3H) was significantly higher in bmm1 testes than in bmmrev testes (Welch two-sample t-test). (K) All bmmrev testes and most bmm1 testes contained spermatids when raised at 25°C; however, the most advanced stage of spermatogenesis observed in the majority of bmm1 testes isolated from animals reared at 29°C was the spermatocyte stage. (L) Testes isolated from bmm1 animals showed a significantly smaller Boule-positive area than control testes (Welch two-sample t-test). (M) Testes isolated from bmm1 animals contain fewer individualization complexes than bmmrev control testes (Kruskal–Wallis rank sum test). (N) Fewer waste bags were present in testes isolated from bmm1 animals compared with bmmrev control testes (Kruskal–Wallis rank sum test). (O) Proportion of Zfh-1-positive clones that were homozygous for either bmm1 or bmmrev at 3 and 14 days post-clone induction (Kruskal–Wallis rank sum test). (P) The location of Zfh-1-positive clones homozygous for either bmm1 or bmmrev at 3 and 14 days post-clone induction measured as the distance from the center of the hub. Clones homozygous for bmm1 locate significantly closer to the hub than the wild-type clones (Kruskal–Wallis rank sum test). Error bars indicate standard error of the mean (SEM).
 
 To explore spermatogenesis in bmm1 animals, we used an antibody against the germline cell-specific marker Vasa to visualize the germline in the testes of bmm1 and bmmrev males (Figure 4D, E; Lasko and Ashburner, 1988). We observed a significant increase in the number of GSCs (Figure 4F; Kruskal–Wallis rank sum test) and higher variability in GSC number in bmm1 males (p = 5.7 × 10−12 by F-test). Given that GSC number is affected by hub size and GSC proliferation (Resende et al., 2013; Kiger et al., 2000), we monitored both parameters in bmm1 and bmmrev controls. While hub size in bmm1 testes was significantly larger than in testes from bmmrev controls (Figure 4—figure supplement 1G, H; Welch two-sample t-test), the number of phosphohistone H3-positive GSCs, which indicates proliferating GSCs, was unchanged in bmm1 animals (Figure 4—figure supplement 1I; Kruskal–Wallis rank sum test). While this indicates a larger hub may partly explain bmm’s effect on GSC number, bmm also plays a cell-autonomous role in regulating GSCs, as we recovered a higher proportion of bmm1 clones in the GSC pool compared with bmmrev clones at 14 days after clone induction (Figure 4G; Welch two-sample t-test). Given that we detected no effect of cell-autonomous bmm loss on the number of GSC LD (Figure 3C), more work will be needed to understand how bmm regulates GSCs at a stage prior to its effects on LD number. Future studies will also need to confirm whether bmm1 mutant GSCs show an increased ability to occupy space at the hub.
 
 Beyond GSCs, we uncovered additional spermatogenesis defects in bmm1 testes. Peak Bam-GFP expression in germline cells of the testes from 0-day-old bmm1 and bmmrev males showed GFP-positive cysts were significantly further away from the hub in bmm1 testes (Figure 4H, Figure 4—figure supplement 1J; Welch two-sample t-test). Indeed, 15/18 bmm1 testes contained Vasa-positive cysts with large nuclei in the distal half of the testis (Figure 4I, arrows), a phenotype not present in bmmrev testes (0/8) (p = 0.0005 by Pearson’s Chi-square test). Because these phenotypes are also seen in testes with differentiation defects (Fairchild et al., 2017; Lin et al., 1996), we recorded the stage of sperm development reached by the germline in bmm1 testes. Most bmm1 testes contained post-meiotic cells in males raised at 25°C (Figure 4—figure supplement 1K); however, germline development did not progress past the spermatocyte stage in most bmm1 testes from animals raised at 29°C (Figure 4—figure supplement 1K). Testes from bmm1 males reared at 25°C also had a smaller Boule-positive area (Figure 4J, Figure 4—figure supplement 1L; Welch two-sample t-test) and fewer individualization complexes and waste bags (Figure 4—figure supplement 1M, N; Kruskal–Wallis rank sum test). Because Boule-positive area, individualization complexes, and waste bags are all markers for later stages in sperm development, these data indicate that loss of bmm caused a reduction in differentiated cell types. Because we observed significantly fewer bmm1 spermatocyte and spermatid clones at 14 days after clone induction (Figure 4K, L; p = 0.0496, Kruskal–Wallis rank sum test), these effects on germline development may represent a cell-autonomous role for bmm in regulating spermatogenesis in this cell type. Given that the statistical significance of this finding was not as strong as for our other data, future studies should repeat this experiment with more samples. We also reveal a potential non-cell-autonomous role for somatic bmm. While there was no difference in the ratio of Zfh-1-positive cells between homozygous clones and heterozygous clones in animals carrying the bmm1 or bmmrev alleles at 14 days post-clone induction (Figure 4—figure supplement 1O; Kruskal–Wallis rank sum test), the distance from the hub to the Zfh-1-positive clones was significantly decreased in bmm1 homozygous clones (Figure 4—figure supplement 1P; Kruskal–Wallis rank sum test). Together, these data indicate bmm may play a cell-autonomous role in germline cells, and potentially a non-cell-autonomous role in somatic cells, to regulate spermatogenesis.
 
-## brummer-dependent regulation of testis triglyceride levels affects spermatogenesis
+### brummer-dependent regulation of testis triglyceride levels affects spermatogenesis
 
 ATGL catalyzes the first and rate-limiting step of triglyceride hydrolysis (Zimmermann et al., 2004; Eichmann et al., 2012; Schweiger et al., 2006). Loss of this enzyme or its homologs leads to excess triglyceride accumulation (Wat et al., 2020; Grönke et al., 2007; Grönke et al., 2005; Zimmermann et al., 2004; Lee et al., 2014) and shifts in multiple lipid classes (Chitraju et al., 2013; Missaglia et al., 2017; Williams et al., 1991; Yang et al., 2020). To determine how loss of bmm affects spermatogenesis, we carried out whole-body mass spectrometry (MS)-based untargeted lipidomic profiling of bmm1 and bmmrev males. Hierarchical clustering of lipid species suggests that bmm1 and bmmrev males show distinct lipidomic profiles (Figure 5A). Overall, we detected 2464 and 1144 lipid features with high quantitative confidence in positive and negative ion modes, respectively. By matching experimental m/z, isotopic ratio, and tandem MS spectra to lipid libraries, we confirmed 293 unique lipid species (Supplementary file 5). We found 107 lipids had a significant change in abundance between bmm1 and bmmrev males (padj < 0.05): 85 species were upregulated in bmm1 males and 22 lipid species were downregulated. Among differentially regulated species from different lipid classes, triglyceride had the largest residual above expected proportion (p = 5.00 × 10−4 by Pearson’s Chi-squared test). This suggests triglyceride was the lipid class most affected by loss of bmm (Figure 5B, C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig5-v1.jpg)
+
+**Figure 5.:** (A) Hierarchical clustering of lipid species detected in bmmrev and bmm1 animals. (B) Histograms showing the proportion of significant species in each lipid class with different levels between bmm1 and bmmrev. Numbers on histograms indicate the number of species with differences in abundance. (C) Volcano plot showing fold change in abundance of triglyceride (green; 97 species) and non-triglyceride lipids (gray; 186 species) in our dataset. (D) Arrows indicate testis lipid droplets (LD) stained with LipidTox Red in bmmrev (D), bmm1 (D'), or mdyQX25/k03902; bmm1 (D'') animals. (E) Whole testes isolated from bmmrev (E), bmm1 (E'), or mdyQX25/k03902;bmm1 (E'') animals stained with anti-Vasa antibody (red) and DAPI (blue). Arrowheads indicate spermatid bundles. Scale bars = 100 μm. (F) Testis size in bmmrev, bmm1, and mdyQX25/k03902;bmm1 animals. Spermatid bundles (G) and number of germline stem cells (H) in bmmrev, bmm1, and mdyQX25/k03902;bmm1 animals. (I) Testis size in animals with germline-specific mdy knockdown (nos-GAL4>mdy RNAi; bmm1) compared with controls (nos-GAL4>+; bmm1 and +>mdy RNAi; bmm1). Error bars indicate standard error of the mean (SEM). See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Higher fold-changes of triglycerides in bmm1 animals were associated with less saturation in the acyl-groups (Kendall’s rank correlation test). (B) Higher fold-changes of triglycerides in bmm1 animals were associated with higher number of carbons in the acyl-groups (Kendall’s rank correlation test). Each dot represents a single triglyceride species for panels B and C. (C) Volcano plot of identified lipids; monoglycerides shown in blue and diglycerides shown in orange. Many monoglycerides and diglycerides show increase in fold-change in bmm1 males. (D) The number of carbon and the degree of saturation of monoglycerides (MAG) and diglycerides (DAG) with significant changes in abundance between bmm1 and bmmrev males. (E) Volcano plot of identified lipids; fatty acids shown in magenta and acyl-carnitine shown in green. Many fatty acids show an increase in fold-change while many acyl-carnitines show a decrease in fold-change in bmm1 males. (F) The number of carbon and the degree of saturation of fatty acids (FA) and acyl-carnitines (ACar) with significant changes in abundance between bmm1 and bmmrev males. (G) Volcano plot of identified lipids; membrane lipids shown in yellow. (H) The number of carbon and the degree of saturation of membrane lipids with significant changes in abundance between bmm1 and bmmrev males. For panels G and H, PC: phosphatidylcholine; PE: phosphatidylethanolamine; PI: phosphatidylinositol; LPC: lysophosphatidylcholine; LPE: lysophosphatidylethanolamine; SM: sphingomyelin; PG: phosphatidylglycerol. (I) Loss of mdy function rescued the elevated number of lipid droplets (LD) in bmm1 testes to control levels (one-way analysis of variance [ANOVA] with Tukey multiple comparison test). (J) Germline-specific loss of mdy in bmm1 animals did not reduce germline stem cell (GSC) numbers, but the variance in GSC numbers was significantly rescued (nos-GAL4>+; bmm1 vs nos-GAL4>mdy RNAi; bmm1: p = 4.5 × 10−5;+>mdy RNAi; bmm1 vs nos-GAL4 >mdy RNAi; bmm1: p = 0.0082 by F-test). Error bars indicate standard error of the mean (SEM).
 
 In bmm1 males, the majority of triglyceride species (55/97) were significantly higher in abundance compared with bmmrev control males. Because we observed a positive correlation between the fold increase in triglyceride abundance with both the number of double bonds (p = 7.52 × 10−8 by Kendall’s rank correlation test; Figure 5—figure supplement 1A) and the number of carbons (p = 2.77 × 10−10 by Kendall’s rank correlation test; Figure 5—figure supplement 1B), our data align well with bmm/ATGL’s known role in regulating triglyceride levels (Grönke et al., 2005; Haemmerle et al., 2006; Zimmermann et al., 2004) and its substrate preference of long-chain polyunsaturated fatty acids (Eichmann et al., 2012). While we also detected changes in species such as fatty acids, acylcarnitine, and membrane lipids (Figure 5—figure supplement 1C–H), in line with recent Drosophila lipidomic data (Nazario-Yepiz et al., 2021; Giedt et al., 2021), the striking accumulation of triglyceride in bmm1 males suggested that excess testis triglyceride in bmm1 males may contribute to their spermatogenic defects. To test this, we examined spermatogenesis in bmm1 males carrying loss-of-function mutations in midway (mdy). mdy is the Drosophila homolog of diacylglycerol O-acyltransferase 1 (DGAT1), and whole-body loss of mdy reduces whole-body triglyceride levels (Beller et al., 2010; Buszczak et al., 2002; Martínez et al., 2020). Importantly, testes isolated from males with global loss of both bmm and mdy (mdyQX25/k03902;bmm1) had fewer LD than testes dissected from bmm1 males (Figure 5D, Figure 5—figure supplement 1I; one-way ANOVA with Tukey multiple comparison test).
 
@@ -75,41 +111,233 @@ One key outcome of our study was increased knowledge of LD regulation and functi
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87523/elife-87523-fig6-v1.jpg)
 
-**Figure 6.:** bmm-mediated lipid droplet regulation in the Drosophila testis.Schematic representation summarizing bmm-mediated lipid droplet regulation in the testis during development.
+**Figure 6.:** Schematic representation summarizing bmm-mediated lipid droplet regulation in the testis during development.
 
 A more comprehensive understanding of neutral lipid metabolism during sperm development will also emerge from studies on the upstream signaling networks that regulate testis LD and triglyceride. Given that we show an important and cell-autonomous role for bmm in regulating testis LD and triglyceride, future studies will need to identify factors that regulate bmm in the testis. Based on public single-cell RNAseq data and the bmm-GFP reporter strain, our data suggest bmm mRNA levels are differentially regulated between early and later stages of sperm development. Candidates for mediating this regulation include the insulin/insulin-like growth factor signaling pathway (IIS), target of rapamycin (TOR) pathway, and nuclear factor κB/Relish pathway (NFκB), as all of these pathways influence bmm mRNA levels in nongonadal cell types (Birse et al., 2010; Molaei et al., 2019; Alic et al., 2011; Jünger et al., 2003; Zinke et al., 2002; Puig and Tjian, 2005; Kang et al., 2017). Beyond mRNA levels, Bmm protein levels and post-translational modifications may also be differentially regulated during spermatogenesis. For example, studies show that the proteins encoded by bmm homologs in other animals are regulated by phosphorylation (Bartz et al., 2007) mediated by kinases such as adenosine monophosphate-activated protein kinase (AMPK) and protein kinase A (PKA) (Pagnon et al., 2012; Narbonne and Roy, 2009; Ahmadian et al., 2011). Importantly, many of these pathways, including IIS, TOR, AMPK, NFκB, and possibly PKA influence Drosophila sperm development (Amoyel et al., 2014; Hof-Michel et al., 2020; Couderc et al., 2017; Steinhauer et al., 2019). Identifying the signaling networks that influence bmm regulation during sperm development will therefore lead to a deeper understanding of how testis LD and triglyceride are coordinated with physiological factors to promote normal spermatogenesis. Because pathways such as IIS and AMPK, and others, regulate sperm development in other species (Tartarin et al., 2012; Martin-Hidalgo et al., 2018; Pitetti et al., 2013), these insights may reveal conserved mechanisms that govern the regulation of cellular neutral lipid metabolism during sperm development.
 
 ## Materials and methods
 
-## Materials and resource availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vasa (rabbit, polyclonal)</td>
+      <td>Gift from Dr. R. Lehman, MIT</td>
+      <td></td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Eya (mouse monoclonal)</td>
+      <td>Developmental StudiesHybridoma Bank (DSHB)</td>
+      <td>eya10H6</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-zfh1(mouse polyclonal)</td>
+      <td>Gift from Dr. J. Skeath, WUSTL</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-boule(rabbit polyclonal)</td>
+      <td>Gift from Dr. S. Wasserman, UCSD</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-histone H3 (mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>05-1354</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>3605</td>
+      <td>3605</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>CantonS</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>64349</td>
+      <td>64349</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>OregonR</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>25211</td>
+      <td>25211</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>bmm1</td>
+      <td>Gift from Dr. R. Kühnlein; Grönke et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>bmmrev</td>
+      <td>Gift from Dr. R. Kühnlein; Grönke et al., 2005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>mdy[Qx25], cn[1], bw[1]/CyO, I(2)DTS513[1]</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>5095</td>
+      <td>5095</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>y[1],w[67c23];P{lacW}Cse1[k03802],mdy[k03902]/CyO</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>10536</td>
+      <td>10536</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>w[1118];P{GD1749}v6367 (UAS-mdy-RNAi)</td>
+      <td>Vienna Drosophila resource center</td>
+      <td>6367</td>
+      <td>6367</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>nos-GAL4::VP16</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>7303</td>
+      <td>7303</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>Tj-GAL4</td>
+      <td>Gift from Dr. D. Godt, University of Toronto</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>c587-GAL4</td>
+      <td>Bloomington Drosophila stock center</td>
+      <td>67747</td>
+      <td>67747</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>Bam-GFP</td>
+      <td>Chen and McKearin, 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>bmm-GFP</td>
+      <td>Gift from Dr. K. Kamei; Men et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>GFP-LD</td>
+      <td>Gift from Dr. M. Welte; Yu et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>P{neoFRT}82B, bmm[1]</td>
+      <td>This study</td>
+      <td></td>
+      <td>Flies available from E. Rideout, made as in ‘Fly Husbandry’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>P{neoFRT}82B, bmm[rev]</td>
+      <td>This study</td>
+      <td></td>
+      <td>Flies available from E. Rideout, made as in ‘Fly Husbandry’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>bam-GFP, bmm[1]</td>
+      <td>This study</td>
+      <td></td>
+      <td>Flies available from E. Rideout, made as in ‘Fly Husbandry’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>bam-GFP, bmm[rev]</td>
+      <td>This study</td>
+      <td></td>
+      <td>Flies available from E. Rideout, made as in ‘Fly Husbandry’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://cran.r-project.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials and resource availability
 
 Drosophila strains and their source are listed in the Key Resources table. Further information and requests for resources and reagents should be directed to, and will be fulfilled by, lead contact Dr. Elizabeth J. Rideout (elizabeth.rideout@ubc.ca).
 
-## Fly husbandry
+### Fly husbandry
 
 Fly stocks were maintained at room temperature in 12:12 hr light:dark cycle. Unless otherwise indicated, all flies were raised at 25°C with a density of 50 larvae per 10 ml fly media. Because this project examines sperm development, we used male flies in all experiments. Fly media contained 20.5 g sucrose (SU10, Snow Cap), 70.9 g Dextrose (SUG8, Snow Cap), 48.5 g cornmeal (AO18006, Snow Cap), 30.3 g baker’s yeast (NB10, Snow Cap), 4.55 g agar (DR-820-25 F, SciMart), 0.5 g calcium chloride dihydrate (CCL302.1, BioShop Canada), 0.5 g magnesium sulfate heptahydrate (MAG511.1, BioShop Canada), 4.9 ml propionic acids (P1386, Sigma-Aldrich), and 488 μl phosphoric acid (P5811, Sigma-Aldrich) per 1 l of media. For diets with medium- or long-chain triglyceride, 4 g of coconut oil (medium-chain triglyceride) or olive oil (long-chain triglyceride) was added per 100 ml of media described above prior to cooling. Males were collected and dissected within 24 hr of eclosion unless otherwise indicated. Fixations were performed at room temperature with 4% paraformaldehyde (CA11021-168, VWR) in phosphate-buffered saline (PBS) for 20 min on a rotating platform followed by washing in PBS twice before staining. Fly strains used in our study are listed in a Key Resources table, and fly strains prepared in this study were made using standard Drosophila genetic crossing techniques.
 
-## Testis cell stage classification and measurements
+### Testis cell stage classification and measurements
 
 Cells at an early stage of development (stem cells and early-stage somatic and germline cells) were located in the apical region of the testis, and were identified by their small and dense nuclei (White-Cooper, 2004). GSCs were defined as Vasa-positive cells in direct contact with the hub; proliferating GSCs were identified as Vasa-positive cells in direct contact with the hub that were also phospho-H3 positive. Cells in the testis region occupied by primary spermatocytes were identified by their large cell size and decondensed chromosome staining occupying three nuclear domains (White-Cooper, 2004). Spermatid bundles were identified by their condensed and needle-shaped nuclei, which roughly corresponds to nuclei with protamine-based chromatin (Fabian and Brill, 2012). The hub was identified as the FasIII-positive area of the testis. Hub size was estimated by measuring the FasIII-positive area in a Z-projected image of the hub in each testis. Z-projections were made using the ‘sum slices’ function in Fiji. Testis size was measured by quantifying the length of a line drawn down the middle of a testis image; starting from the apical tip of the testis and ending where the testis meets the seminal vesicle.
 
-## FLP-FRT clone induction
+### FLP-FRT clone induction
 
 Adult males were collected at 3–5 days post-eclosion and heat shocked three times at 37°C for 30 min followed by a 10-min rest period at room temperature between heat shocks. After heat shock, the flies were incubated at room temperature until dissection.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Fixed samples were rinsed three times with blocking solution containing 0.2% bovine serum albumin (A4503, Sigma-Aldrich), 0.3% Triton-X in PBS, then blocked for 1 hr on a rotating platform at room temperature. During the incubation, the blocking solution was changed every 15 min. After blocking, the sample was resuspended in blocking solution with the appropriate concentration of primary antibody (see Key Resources table), and incubated overnight at 4°C. Samples were rinsed three times with blocking solution after removing primary antibody, and blocked for 1 hr on a rotating platform in blocking solution. Secondary antibody was applied in blocking solution and left on the rotating platform at room temperature for 40 min. The sample was rinsed with blocking solution three more times, and washed four times for 15 min per wash in blocking solution. Testis samples were resuspended in Vectashield mounting media with DAPI (H-1200-10, Vector Laboratory) or SlowFade Diamond mounting media (S36972, Thermo Fisher Scientific) prior to mounting.
 
-## Lipid droplet staining
+### Lipid droplet staining
 
 Fixed testes were briefly permeabilized with 0.1% Triton-X in PBS for 5 min prior to applying phalloidin. For BODIPY (4,4-Difluoro-1,3,5,7,8-Pentamethyl-4-Bora-3a,4a-Diaza-s-Indacene) staining, samples were suspended in PBS containing 10 μg/ml DAPI (2879083-5 mg, PeproTech), 1:500 BODIPY 495/503 (Thermo Fisher Scientific D3922), and 1:1000 phalloidin iFluor647 (ab176759, Abcam) or 1:40 phalloidin TexasRed (T7471, Thermo Fisher Scientific). For staining with LipidTox Red, samples were suspended in PBS containing 10 μg/ml DAPI (2879083-5 mg, PeproTech), 1:200 LipidTox Red (H34476, Thermo Fisher Scientific), and 1:1000 phalloidin iFluor647 (ab176759, Abcam). For staining free sterols, samples were prepared as for BODIPY staining with 50 μg/ml filipin in place of BODIPY for 30 min. Samples were incubated on a rotating platform for 40 min at room temperature. After incubation, samples were washed twice with PBS, then resuspended in SlowFade Diamond mounting media (Thermo Fisher Scientific S36972) prior to mounting.
 
-## Image acquisition and processing
+### Image acquisition and processing
 
 All images were acquired on a Leica SP5 confocal microscope system with ×20 or ×40 objectives and quantified with Fiji image analysis software (Schindelin et al., 2012).
 
-## Drosophila lipidomics
+### Drosophila lipidomics
 
 Drosophila extracts were prepared following the previously reported protocol (Yu et al., 2020). Briefly, 10 Drosophila males (~10 mg) were weighed, 300 µl of ice-cold methanol/water mixture (9:1, vol:vol) was added to these males, and the samples were homogenized with glass beads using a bead beater (mini-beadbeater-16, BioSpec, Bartlesville, OK, USA). Sample weight was used for sample normalization. Fly lysate was kept at −20°C for 4 hr for protein precipitation. Then, 900 µl of methyl tert-butyl ether was added and the solution was shaken for 5 min to extract lipids. To induce phase separation 285 µl of water was added, followed by centrifugation. The upper layer was separated, dried, and reconstituted in isopropanol/acetonitrile (1:1, vol:vol) for liquid chromatography (LC)–MS analysis. The volume of reconstitution solution was proportional to sample weight for normalization. Quality control (QC) samples were prepared by pooling 20 μl aliquot from each sample. The method blank sample was prepared using an identical workflow but without adding Drosophila.
 
@@ -117,6 +345,6 @@ Drosophila extracts were analyzed on an UHR-QqTOF (Ultra-High Resolution Qq-Time
 
 The raw LC–MS data were processed using MS-DIAL (ver. 4.38) (Tsugawa et al., 2015). The detailed MS-DIAL parameters are: MS1 tolerance, 0.01 Da; MS/MS tolerance, 0.05; mass slice width, 0.05 Da; smoothing method, linear weighted moving average; smoothing level, 3 scans; minimum peak width, 5 scans. Lipid features with high quantitative confidence were selected by the following criteria: retention time was within the gradient elution time (<23 min); average intensity in QC samples is larger than fivefold of the intensity in method blank sample. Lipid identification was performed by matching experimental precursor m/z, isotopic ratio and MS/MS spectrum against the LipidBlast libraries embedded in MS-DIAL. To improve the quantification accuracy, the measured MS signal intensities were corrected using serial diluted QC samples following the reported workflow (Yu and Huan, 2021).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All microscopy images were quantified using Fiji software (Schindelin et al., 2012). For lipid droplet counts, a single optical slice through the middle of the testis containing the hub was used with the exception of FLP-FRT experiment where all LD within a GFP-negative cyst were counted (Figure 2I). All statistical analyses were done using R (obtained from https://cran.r-project.org). With exception of data concerning spatial distribution, and lipidomic data, Shapiro–Wilk test (via shapiro.test in base R) was used to assess normality of distribution prior to testing for significance. Kruskal–Wallis rank sum test (from the R package coin) and Dunn’s test (from the R package dunn.test) were used in place of Welch two-sample t-test and Tukey’s multiple comparison test when the assumption of normality was not met. For testing differences in variance between two populations, F-test (via var.test in base R) was used. For testing differences in spatial distribution, two-sample Kolmogorov–Smirnov test (via ks.test in base R) was used. All p-values are indicated in figures; extremely small p-values are listed as p < 2.2 × 10−16.

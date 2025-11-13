@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03xjacd83 Department of Pain Management, Cleveland Clinic Cleveland United States
-2. https://ror.org/03xjacd83 Department of Neuroscience, Cleveland Clinic Cleveland United States
+1. Department of Pain Management, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+2. Department of Neuroscience, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
 
 † Corresponding author
 

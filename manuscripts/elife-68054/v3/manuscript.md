@@ -56,7 +56,7 @@
 
 ## Abstract
 
-Spinal muscular atrophy (SMA) is a neuromuscular disorder characterized by the degeneration of the second motor neuron. The phenotype ranges from very severe to very mild forms. All patients have the homozygous loss of the SMN1 gene and a variable number of SMN2 (generally 2–4 copies), inversely related to the severity. The amazing results of the available treatments have made compelling the need of prognostic biomarkers to predict the progression trajectories of patients. Besides the SMN2 products, few other biomarkers have been evaluated so far, including some miRs. We performed whole miRNome analysis of muscle samples of patients and controls (14 biopsies and 9 cultures). The levels of muscle differentially expressed miRs were evaluated in serum samples (51 patients and 37 controls) and integrated with SMN2 copies, SMN2 full-length transcript levels in blood and age (SMA-score). Over 100 miRs were differentially expressed in SMA muscle; 3 of them (hsa-miR-181a-5p, -324-5p, -451a; SMA-miRs) were significantly upregulated in the serum of patients. The severity predicted by the SMA-score was related to that of the clinical classification at a correlation coefficient of 0.87 (p<10 -5 ). miRNome analyses suggest the primary involvement of skeletal muscle in SMA pathogenesis. The SMA-miRs are likely actively released in the blood flow; their function and target cells require to be elucidated. The accuracy of the SMA-score needs to be verified in replicative studies: if confirmed, its use could be crucial for the routine prognostic assessment, also in presymptomatic patients. Telethon Italia (grant #GGP12116).
+Background:Spinal muscular atrophy (SMA) is a neuromuscular disorder characterized by the degeneration of the second motor neuron. The phenotype ranges from very severe to very mild forms. All patients have the homozygous loss of the SMN1 gene and a variable number of SMN2 (generally 2–4 copies), inversely related to the severity. The amazing results of the available treatments have made compelling the need of prognostic biomarkers to predict the progression trajectories of patients. Besides the SMN2 products, few other biomarkers have been evaluated so far, including some miRs.Methods:We performed whole miRNome analysis of muscle samples of patients and controls (14 biopsies and 9 cultures). The levels of muscle differentially expressed miRs were evaluated in serum samples (51 patients and 37 controls) and integrated with SMN2 copies, SMN2 full-length transcript levels in blood and age (SMA-score).Results:Over 100 miRs were differentially expressed in SMA muscle; 3 of them (hsa-miR-181a-5p, -324-5p, -451a; SMA-miRs) were significantly upregulated in the serum of patients. The severity predicted by the SMA-score was related to that of the clinical classification at a correlation coefficient of 0.87 (p<10-5).Conclusions:miRNome analyses suggest the primary involvement of skeletal muscle in SMA pathogenesis. The SMA-miRs are likely actively released in the blood flow; their function and target cells require to be elucidated. The accuracy of the SMA-score needs to be verified in replicative studies: if confirmed, its use could be crucial for the routine prognostic assessment, also in presymptomatic patients.Funding:Telethon Italia (grant #GGP12116).
 
 ## Introduction
 
@@ -76,7 +76,171 @@ We identified three deregulated miRs (miR-181a-5p, miR-324-5p, miR-451a: SMA-miR
 
 ## Methods
 
-## Samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SMN1</td>
+      <td>GenBank</td>
+      <td>HGNC:HGNC:11,117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SMN2</td>
+      <td>GenBank</td>
+      <td>HGNC:HGNC:11,118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>miR (Homo sapiens)</td>
+      <td>hsa-miR-181a-5p</td>
+      <td>miRBase</td>
+      <td>MIMAT0000256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>miR (Homo sapiens)</td>
+      <td>hsa-miR-324-5p</td>
+      <td>miRBase</td>
+      <td>MIMAT0000761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>miR (Homo sapiens)</td>
+      <td>hsa-miR-451a</td>
+      <td>miRBase</td>
+      <td>MIMAT0001631</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>SMNΔ7 miceFVB.Cg-Grm7Tg(SMN2)89Ahmb Smn1tm1Msd Tg(SMN2*delta7)4,299Ahmb/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock number: 005025</td>
+      <td>Hum Mol Genet 14(6):845–57, 2005</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>miRCURY LNA microRNA mimic: hsa-miR-181a-5p, hsa-miR-324-5p, hsa-miR-451a</td>
+      <td>Exiqon</td>
+      <td></td>
+      <td>50–100–200 nM</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>miRCURY LNA microRNA antogomiR: hsa-miR-181a-5p, hsa-miR-324-5p, hsa-miR-451a</td>
+      <td>Exiqon</td>
+      <td></td>
+      <td>0.1 nM</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Primary myoblasts</td>
+      <td>Italian Telethon Network of Genetic Biobanks</td>
+      <td>6756, 6760, 6762, 6816, 7147, 8823, 8655, 8537</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Muscular biopsies</td>
+      <td>Italian Telethon Network of Genetic Biobanks</td>
+      <td>10370, 10351, 8023, 4688, 10543, 10583, 7669, 5944, 5824, 5717, 6760, 6438, 6082, 5379, 7689, 5842, 9814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See Supplementary file 3</td>
+      <td>IDT (Integrated DNA Technologies)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Small RNA Sample Preparation kit</td>
+      <td>Illumina</td>
+      <td>TruSeq Small RNA Library Prep Kit –RS-200-0024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRCURY RNA Isolation Kit – Biofluids</td>
+      <td>Exiqon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Universal cDNA synthesis kit II</td>
+      <td>Exiqon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pick-&amp;-Mix miRNA PCR Panel 96-well</td>
+      <td>Exiqon</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>E.Z.N.A PX Blood RNA Kit</td>
+      <td>Omega bio-tek</td>
+      <td>SKU: R1057-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Capacity cDNA Reverse Transcription Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog number: 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illumina Genome Analyzer</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RealTime StatMinerVersion 4.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Statgraphics Centurion XV software</td>
+      <td>StatPoint Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS 18.0 software</td>
+      <td>SPSS</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Samples
 
 Muscle biopsies from seven SMA patients (three SMA I, two SMA II, and two SMA III) were obtained from the Italian Telethon Network of Genetic Biobanks, held at Istituto Neurologico Carlo Besta in Milan. The characteristics of subjects are specified in Supplementary file 1. The selection criteria of specimens were as follows: (1) unique site of sampling (femoral quadriceps) and (2) first stage of disease (defined as onset of the first clinical signs that prompted the diagnostic workflow) to minimize the presence of fibrosis. Seven muscle biopsies were selected as controls among morphologically normal samples of age-matched subjects who underwent muscular biopsy for neonatal hypotonia (for type I) or hyper-CKemia (for types II and III).
 
@@ -90,23 +254,23 @@ This study was approved by the Ethics Committee of Fondazione Policlinico Univer
 
 For SMA mice, the original breeding pairs of SMNΔ7 mice were purchased from Jackson Laboratory (stock number 005025). The colony was maintained by interbreeding carrier mice, and the offspring were genotyped by PCR assays on tail DNA according to the protocols provided by Jackson Laboratory. According to the ARRIVE guidelines, procedures were carried out to minimize discomfort and pain in compliance with national (D.L. 116 Suppl 40/1992 and D.L. 26/2014) and international guidelines and laws (2010/63/EU Legislation for the protection of animals used for scientific purposes). The experimental protocols were approved by the Ethics Committee of the Fondazione IRCCS Istituto Neurologico C. Besta and by the Italian Ministry of Health (protocol numbers: 962/2016-PR and 1039/2020-PR).
 
-## Cell cultures
+### Cell cultures
 
 Myoblasts (passages from 5 to 15) were cultured in high-glucose Dulbecco Modified Eagle’s Medium (DMEM), 20% fetal bovine serum (FBS), 100 u/ml of penicillin, 100 mg/ml of streptomycin, 2 mM L-glutamine, 10 ng/ml of epidermal growth factor (EGF), and 10 µg/ml of bovine insulin in 5% CO2 atmosphere. For myotube differentiation, we have used a standard protocol of serum deprivation (5% FBS) for 2 weeks.
 
 SH-SY5Y (human neuroblastoma) were already present in-house for previous studies and were tested for mycoplasma contamination. We verified the identity of SH-SY5Y cell line by evaluation of neuronal phenotype, following differentiation with 10 pM retinoic acid for 7 days. Cells were cultured in 1:1 DMEM/Ham’s F12 nutrient medium with 20% FBS, 100 u/ml of penicillin, 100 mg/ml of streptomycin, and 2 mM L-glutamine.
 
-## Patients
+### Patients
 
 The patients included in the present study were in routine clinical follow-up in the four participating Italian referral neuromuscular centers (Fondazione Policlinico Universitario IRCCS “A. Gemelli,” Istituto Neurologico IRCCS “Carlo Besta,” Ospedale Pediatrico Bambino Gesù, Istituto Giannina Gaslini). Subjects were evaluated by expert neurologists/pediatric neurologists/physiotherapists: SMA type was first attributed to each patient, according to the usual classification (types I–IV). Three of us (MP, GC, EM) were requested to assign each patient to a SMA subtype, based on the clinical data, according to the decimal classification for types I and II (Zerres and Rudnik-Schöneborn, 1995; Dubowitz, 1995). For type III, due to the lack of a decimal classification, we arbitrarily assigned the value 3 to type IIIa and 3.5 to type IIIb.
 
-## Whole miRNome sequencing
+### Whole miRNome sequencing
 
 Total RNA from muscle biopsies and myoblast/myotube cultures was extracted by TRIzol Reagent (Life Technologies) as specified in the manufacturer’s protocol. Libraries were obtained through the TruSeq Small RNA Sample Preparation kit (Illumina). Next-generation sequencing (NGS) miRNome analysis was performed by Illumina Genome Analyzer (GAIIX) platform.
 
 For miRNome analysis, we have used the following pipeline. The sequencing raw data (.bcl files) were processed by the Illumina Casava software (v1.8.0) to convert the data into fastq files (raw data of miRSeq have been deposited at NCBI-SRA database; BioProject PRJNA748014). The fastq files (31-base single-end reads) were first filtered by quality using the FASTX-toolkit (fastq_quality_filter: -q28 p50) and then trimmed to remove the adapter from their 3′ end (TrimGalore tool). Only reads longer than 15 bases were retained and mapped on the miR-precursor sequences annotated in the miRBase repository (v19). The Bowtie2 algorithm was used for the alignment, allowing no more than two mismatches. Quantification, TMM normalization, and significant differential expression test of the known mature miRs were performed using the edgeR package (v2.4.1). Only miRs with >1 count per million (cpm) in at least one condition and in a minimum number of samples (depending on group size) were retained. Multiplicity correction was performed by applying the Benjamini–Hochberg method on the p-values to control the false discovery rate (FDR). The significantly up- and downregulated miRs were selected at FDR < 0.05.
 
-## Molecular biomarkers
+### Molecular biomarkers
 
 Genomic DNA was extracted from whole blood by conventional salting out method. SMN2 copy number and RNA analyses were carried out as previously reported (Tiziano et al., 2010). The presence of the exon 7 splicing modifier variants (rs121909192 and rs1454173648; Vezain et al., 2010; Wu et al., 2017) was assessed by Sanger sequencing with the R111 primer (Lefebvre et al., 1995), following PCR amplification with primers R111 and C1120 (Lefebvre et al., 1995).
 
@@ -118,7 +282,7 @@ Commercial relative qPCR assays were purchased at Exiqon (Pick-&-Mix miRNA PCR P
 
 For absolute qPCR assays, specific forward primers were designed based on the target mature miR sequence reported in http://www.mirbase.org. The reverse primer was shared by all assays and was complementary to the tag of the Universal cDNA synthesis kit II. The melting temperature (Tm) of primers was established by the OligoAnalyzer 3.1 tool (available at the Integrated DNA Technologies website, http://www.idtdna.com). In case of forward oligo Tm <60°C, the latter was optimized by adding a (GACT)n tail at the 5′ end. For external standard construction, we proceeded as previously described (Tiziano et al., 2013). Amplicons for cloning were obtained by PCR-filling of two partially overlapping sequences (Supplementary file 3).
 
-## In silico, in vitro, and in vivo experiments
+### In silico, in vitro, and in vivo experiments
 
 miR-181a-5p, miR-324-5p, miR-451a mimics and scramble, and the respective antagomiRs were purchased at Exiqon (miRCURY LNA microRNA mimicS/antogomiR). For in vivo experiments, antagomiRs were resuspended in artificial cerebrospinal fluid (aCSF: NaCl 119 mM, NaHCO3 26.2 mM, KCl 2.5 mM, NaH2PO4, 1 mM, MgCl2 1.3 mM, glucose 10 mM).
 
@@ -126,11 +290,11 @@ SH-SY5Y cells were transfected with three different concentrations (50–100–2
 
 At postnatal day 1 (P1), SMA-like pups (Smn−/−, hSMN2+/+, SMNΔ7+/+) were cryo-anesthetized and injected with 5 μl of 0.1 nmol of each specific antagomiR, into the cerebral lateral ventricle. Injections were performed with a pulled capillary needle under the guidance of a transilluminator as reported (Glascock et al., 2011) All the litters were culled so that each litter contained six siblings, daily weighted, and controlled. miRwalk 3.0 (Dweep et al., 2014) was used to identify miRs binding the 3′-UTR of the SMN2 genes.
 
-## Sequencing analysis of SMA-miR genes
+### Sequencing analysis of SMA-miR genes
 
 We have amplified the genomic regions of interest by PCR in a final volume of 12.5 µl using the 2X GoTaq Hot Start Colorless Mastermix (Promega) and 0.4 µM of each primer pair (Supplementary file 3). The amplification cycle was : 95°C 5′; (95°C 45′′; 60°C 45′′; 72°C 30′′) × 35; 72°C 5′; 4°C. Thereafter, following purification of PCR products by ExoSap-IT (USB Corporation), sequencing reactions were performed by the BigDye Terminator v3.1 Cycle Sequencing Kit (Applied Biosystems) and purified by the BigDye XTerminator Purification Kit (Applied Biosystems). DNA sequencing was performed by capillary electrophoresis using the ABI-Prism 3130 instrument (Applied Biosystems). Electropherograms were analyzed with the Sequencing Analysis Software 6 (Applied Biosystems).
 
-## Statistical analysis
+### Statistical analysis
 
 Relative qPCR data were analyzed using RealTime StatMinerVersion 4.1 software and Benjamini–Hochberg FDR method. Grubbs’ test was employed to exclude the outliers. miR levels in patients and controls were compared by non-parametric tests (Wilcoxon test); miRs were identified as significantly differentially expressed at FDR <0.05.
 
@@ -144,17 +308,17 @@ For all tests, p≤0.05 was considered significant.
 
 ## Results
 
-## miRNome profile suggests a primitive muscular defect in SMA patients
+### miRNome profile suggests a primitive muscular defect in SMA patients
 
 The analysis of the whole miRNome of muscle biopsies showed a distinct clusterization of patient and control samples (Figure 1A). Similar findings were obtained also for myoblast and myotube cultures (Figure 1B–C). Globally, miR production was preserved; at α ≤ 0.05, 99, 20, and 19 miRs were differentially expressed in SMA biopsies, myoblast, and myotube cultures, respectively (Supplementary file 4).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig1-v3.jpg)
 
-**Figure 1.:** A), myoblasts (B), and myotubes (C) of spinal muscular atrophy (SMA) patients and controls; patient and control samples display a separate clusterization.99, 20, and 19 miRs were found deregulated in SMA in muscle biopsies, myoblasts, and myotubes, respectively; (D) Venn’s diagram showing the five miRNAs shared among the three groups, three between myoblasts and myotubes, two between myoblasts and biopsies, and three between myotubes and biopsies.
+**Figure 1.:** 99, 20, and 19 miRs were found deregulated in SMA in muscle biopsies, myoblasts, and myotubes, respectively; (D) Venn’s diagram showing the five miRNAs shared among the three groups, three between myoblasts and myotubes, two between myoblasts and biopsies, and three between myotubes and biopsies.
 
 The three groups of samples shared five upregulated miRs (hsa-miR-1, -133a, -133b, -204-5p, -208b, Figure 1D), mostly belonging to myomiRs (except for hsa-miR-204-5p). Three differentially expressed miRs were in common between myoblasts and myotubes (hsa-miR-206, -483-5p, and -4697-3p); two were shared between myoblasts and biopsies (hsa-miR-146a-5p and -184), and three between myotubes and biopsies (hsa-miR-378a-3p, -378f, -501-5p) (Figure 1D); hsa-miR-378a-3p and -378f had opposite trend (upregulated in myotubes, downregulated in biopsies).
 
-## Serum levels of miR-181a-5p, miR-324-5p, and miR-451a are candidate biomarkers for SMA
+### Serum levels of miR-181a-5p, miR-324-5p, and miR-451a are candidate biomarkers for SMA
 
 Based on the data above, we determined serum levels of miRs that were differentially expressed in muscle samples of patients to identify potential SMN-independent biomarkers for SMA. The validation pipeline is schematized in Figure 2; the results are summarized in Supplementary file 5. Briefly, as a first-tier test we determined the levels of the 99 deregulated miRs in serum samples from 10 patients (one SMA I, 9 SMA II; median age 1.8 years; five females) and 10 age-matched controls. This subgroup of patients has been selected by homogeneity of age and severity. We included 11 additional miRs that were identified in SMA patients in other studies (Kye et al., 2014; Valsecchi et al., 2015; Murdocca et al., 2016; Catapano et al., 2016; Wertz et al., 2016; O’Hern et al., 2017; Sison et al., 2017; Kaifer et al., 2019; Bonanno et al., 2020; Haramati et al., 2010; Gonçalves et al., 2018; Kirby and McCarthy, 2013) or with key function in skeletal muscle. For 74 miRs, qPCR assays were commercially available: the 24 miRs that were differentially expressed were validated in a larger cohort. Globally, we developed in-house absolute qPCR assays for 60 miRs: 24 for the miRs to be validated from the first-tier test, and 36 for the remaining.
 
@@ -164,35 +328,139 @@ Based on the data above, we determined serum levels of miRs that were differenti
 
 The validation step has been performed in 51 patients (3 SMA I, 21 SMA II, 26 SMA III, 1 SMA IV) and 37 age- and sex-matched controls (Supplementary file 2). Most miRs were undetectable in serum samples or did not display different expression levels in the two groups. Three miRs were significantly upregulated in SMA patients: miR-181a-5p, miR-324-5p, and miR-451a (SMA-miRs; Mann–Whitney U test, p=4.3 * 10–4; 0.02; 0.004, respectively; Figure 3A–C). To rule out that the observed differential expression could be biased by RNA quality/quantity, we performed linear correlation analysis among the three miRs: miR-181a-5p and miR-451a levels were related in both patients and controls, while miR-324-5p levels were independent from the two others (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig3-v3.jpg)
+
+**Figure 3.:** Receiver operating characteristic (ROC) curves showed that the quantification of SMA-miRs has 80% sensitivity and 75% specificity in distinguishing patients from controls (D). Correlation of miR-324-5p with SMA type (E): the levels in SMA II and SMA III patients were significantly increased compared to those of SMA I patients (p=0.03 and 0.04, respectively).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** In red, the only significant correlation, between miR-181a-5p and miR-451a (p=0.0002).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig3-figsupp2-v3.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig3-figsupp3-v3.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** In spite of the huge increase in SMA-miR levels (A), SMN1/SMN2 transcripts remained unchanged, except for the SMNΔ7 isoform in cells treated with miR-324-5p, which was reduced by 50%, independently of the mimic concentration (B).
+
 We evaluated sensitivity and specificity of the quantification of the SMA-miRs by using the ROC curves: the highest predictive value was found for miR-181a-5p, with 75% and 61% of sensitivity and specificity, respectively (cutoff 70.5 molecules/µl of serum, p<10–4, Figure 3D). To evaluate whether the combination of the SMA-miRs could be more predictive than the levels of the single miR, we constructed the ROC curves of the sum and found an increase in both sensitivity and specificity, up to 80 and 75%, respectively (cutoff 380 molecules/µl of serum, p<10–4, Figure 3D).
 
 Globally, the SMA-miRs did not show any correlation with age or sex (p>0.05, Figure 3—figure supplements 1 and 2); in patient samples, miR-181a-5p levels were significantly increased in females compared to males (p=0.024, Figure 3—figure supplement 2).
 
 Regarding the correlation between SMA-miR levels and the severity of the disease, only the levels of miR-324-5p were significantly decreased in type I compared to types II and III (p=0.03 and 0.04, respectively; Figure 3E). Finally, we compared miR levels in type II and III patients with three SMN2 copies. The difference in miR levels was not significant; however, the two groups were significantly different by age (p=0.0092; Figure 3—figure supplement 3A and B).
 
-## SMA-miRs do not modulate SMN transcript levels
+### SMA-miRs do not modulate SMN transcript levels
 
 To evaluate whether SMA-miRs could modify SMN1 or SMN2 expression levels, we performed transient transfections of SH-SY5Y neuroblastoma cells with commercial mimics or scramble. The transfection of the single mimics, at the final concentration of 50 or 100 nM, led to an increase of SMA-miR levels from 0 to 1 mol/ng of total RNA in untreated cells, up to 60–100 or 160–200 mol/ng, respectively (Figure 3—figure supplement 4A). Despite the huge increase in SMA-miR levels, SMN1/SMN2 transcripts remained unchanged, except for the SMNdel7 isoform in cells treated with miR-324-5p, which was reduced by 50% independently of the mimic concentration (Figure 3—figure supplement 4B). Since in untreated cells SMA-miR levels were almost undetectable, we did not perform experiments with the antagomiRs.
 
-## SMA-miRs, in the absence of SMN-modifying treatments, do not improve the survival of SMA-like mice
+### SMA-miRs, in the absence of SMN-modifying treatments, do not improve the survival of SMA-like mice
 
 To test the hypothesis of the retrograde effect of the secretion of SMA-miRs on spinal cord cells, we evaluated the survival of SMNΔ7 mice in the absence of any modification of SMN levels. We first treated at P1 five affected mice by intrathecal injection of each specific SMA-miR antagonist. Anti-miR-324-5p and anti-miR-451a did not affect mice survival and were not further studied, although the first led to a significant transient increase in body weight (between P7 and P10, p=0.002; Figure 4—figure supplement 1). Conversely, since anti-miR-181a-5p significantly improved the survival, we increased the cohort of treated animals (n = 36), which were compared with untreated animals (n = 71), and with those treated with the scramble (n = 31). The overall survival remained unchanged (p>0.05, Figure 4).
 
-## SMA-miRs do not display gene variants in patients
+![Figure 4.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig4-v3.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig4-figsupp1-v3.jpg)
+
+### SMA-miRs do not display gene variants in patients
 
 We tested whether sequence variation in genes encoding the SMA-miRs could be related to SMA phenotype. We did not identify any variant in 38 samples of patients affected from different forms of SMA (3 type I, 17 type II, 18 type III).
 
-## Hsa-miR-9, -19a-3p, -23a-3p, -146a, and -206 were not differentially expressed in SMA serum samples
+### Hsa-miR-9, -19a-3p, -23a-3p, -146a, and -206 were not differentially expressed in SMA serum samples
 
 Some miRs were previously reported to be differentially expressed in serum samples of SMA patients (hsa-miR-9, -19a-3p, -23a-3p, -132, -146a, -183, -206, -431) (Kye et al., 2014; Valsecchi et al., 2015; Murdocca et al., 2016; Catapano et al., 2016; Wertz et al., 2016; O’Hern et al., 2017; Sison et al., 2017; Kaifer et al., 2019; Bonanno et al., 2020; Haramati et al., 2010). We evaluated whether these miRs were differentially expressed also in our samples (results are schematized in Table 1). miR-9, -132, -183, -206, and -431 were not differentially expressed in muscle samples, whereas miR-19a-3p and -146a were upregulated; miR-23a-3p was downregulated. miR-19a-3p, -146a, and -23a-3p were upregulated in serum samples of patients when evaluated by r-qPCR; these preliminary data were not confirmed by a-qPCR. Also miR-206 and -9 were not differentially expressed by a-qPCR. At the time of study design, miR-132, -183, and -431 were not identified yet and thus have not been tested.
 
-## The SMA-score: phenotypic severity can be predicted by combining SMN2 copy number, SMN2-fl, miR-181a-5p, miR-324-5p, miR-451a, and age
+**Table 1.**
+ miRs differentially expressed in spinal muscular atrophy (SMA), as reported in previous studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>hsa-miR</th>
+      <th>miRNome</th>
+      <th>Relative qPCR</th>
+      <th>Absolute qPCR*</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>miR-19a-3p</td>
+      <td>Upregulated</td>
+      <td>Upregulated</td>
+      <td>&lt;10 molecules/µl serum; p=0.42</td>
+      <td>Haramati et al., 2010; Gonçalves et al., 2018</td>
+    </tr>
+    <tr>
+      <td>miR-23a-3p</td>
+      <td>Downregulated</td>
+      <td>Upregulated</td>
+      <td>150–200 molecules/µl serum; 10 patients/controls analyzed; p=0.62</td>
+      <td>Kaifer et al., 2019</td>
+    </tr>
+    <tr>
+      <td>miR-206</td>
+      <td>Nonsignificant</td>
+      <td>Upregulated</td>
+      <td>50–100 molecules/µl serum; 15 patients/controls analyzed; p=0.24</td>
+      <td>Valsecchi et al., 2015; Catapano et al., 2016; Bonanno et al., 2020</td>
+    </tr>
+    <tr>
+      <td>miR-9</td>
+      <td>Nonsignificant</td>
+      <td>Not tested</td>
+      <td>&lt;10 molecules/µl serum; p=0.30</td>
+      <td>Catapano et al., 2016</td>
+    </tr>
+    <tr>
+      <td>miR-132</td>
+      <td>Nonsignificant</td>
+      <td>Not tested</td>
+      <td>Not tested</td>
+      <td>Catapano et al., 2016</td>
+    </tr>
+    <tr>
+      <td>miR-146a</td>
+      <td>Upregulated</td>
+      <td>Upregulated</td>
+      <td>&lt;5 molecules/µl serum; p=0.10</td>
+      <td>Sison et al., 2017</td>
+    </tr>
+    <tr>
+      <td>4miR-431</td>
+      <td>Nonsignificant</td>
+      <td>Not tested</td>
+      <td>Not tested</td>
+      <td>Wertz et al., 2016</td>
+    </tr>
+    <tr>
+      <td>miR-183</td>
+      <td>Nonsignificant</td>
+      <td>Not tested</td>
+      <td>Not tested</td>
+      <td>Kye et al., 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-Values refer to the significance of comparison of the miR levels in patients and controls by Mann–Whitney U-test. p-values < 0.05 were considered significant._
+
+### The SMA-score: phenotypic severity can be predicted by combining SMN2 copy number, SMN2-fl, miR-181a-5p, miR-324-5p, miR-451a, and age
 
 We evaluated whether SMA-miR levels in serum could improve the accuracy of phenotype prediction with respect to the available molecular biomarkers. SMN2 copy number determination alone provided a moderate accuracy when related to SMA type (R2 = 52.45%, n = 41, p<10–5; Figure 5—figure supplement 1A); the use of the decimal classification of SMA raised the R2 up to 67.04% (n = 39, p<10–5; Figure 5—figure supplement 1B). None of the patients had the rs121909192 or rs1454173648 variants. Considering also age at sampling in a multiple regression model, R2 raised to 61.58% (R2 = 53.16%, n = 22, p=0.0005, in patients < 6 years). When including also SMN2-fl levels and the sum of SMA-miRs as covariates, R2 further raised up to 67.04% (n = 40, p<10–5); more importantly, when considering only patients < 6 years, R2 raised to 72.17% (n = 21, p=0.0001). The equations describing the multivariate models were as follows.
 
 We compared by linear regression models the SMA-scores obtained with the two equations above in patients < 6 years; the correlation coefficient was 0.90, and R2 80.31 (p<10–5, n = 21, Figure 5—figure supplement 1D).
 
 Then, we related the SMA subtype for each patient as from the equations above, with the decimal classification obtained from the blind evaluation. We found a correlation coefficient of 0.87 (R2 = 75.77%, n = 38, p<10–5) for the whole group and 0.87 (R2 = 77.14%, n = 21, p<10–5) for patients < 6 years (Figure 5A and B). When evaluating patients with three SMN2 copies only, the decimal classification and the SMA-score were significantly related (R2 = 30.04, p=0.008, n = 21, Figure 5—figure supplement 1C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig5-v3.jpg)
+
+**Figure 5.:** Correlation between the SMA-score and the clinical decimal SMA subtype in the whole cohort (A) and aged <6 years (B). Red circles are individual samples, the blue line indicates the expected distribution, the green line indicates the 95% confidence interval, and the black lines are the prediction interval.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68054/elife-68054-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Correlation with SMA-score and SMA type estimated by the decimal classification in patients with three SMN2 copies (C; R2 = 30.04, n = 21, p=0.008). Linear correlation analysis among SMA-scores obtained with the two equations (all ages vs. <6 years) (D; R2 = 80.31, n = 21, p<10-5). Red circles are individual samples, the blue line indicates the expected distribution, the green line indicate the 95% confidence interval, and the black lines are the prediction interval.
 
 ## Discussion
 

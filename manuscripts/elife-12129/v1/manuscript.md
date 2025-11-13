@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.12129.001 External and internal morphological characters of extant and fossil organisms are crucial to establishing their systematic position, ecological role and evolutionary trends. The lack of internal characters and soft-tissue preservation in many arthropod fossils, however, impedes comprehensive phylogenetic analyses and species descriptions according to taxonomic standards for Recent organisms. We found well-preserved three-dimensional anatomy in mineralized arthropods from Paleogene fissure fillings and demonstrate the value of these fossils by utilizing digitally reconstructed anatomical structure of a hister beetle. The new anatomical data facilitate a refinement of the species diagnosis and allowed us to reject a previous hypothesis of close phylogenetic relationship to an extant congeneric species. Our findings suggest that mineralized fossils, even those of macroscopically poor preservation, constitute a rich but yet largely unexploited source of anatomical data for fossil arthropods. DOI: http://dx.doi.org/10.7554/eLife.12129.001
+External and internal morphological characters of extant and fossil organisms are crucial to establishing their systematic position, ecological role and evolutionary trends. The lack of internal characters and soft-tissue preservation in many arthropod fossils, however, impedes comprehensive phylogenetic analyses and species descriptions according to taxonomic standards for Recent organisms. We found well-preserved three-dimensional anatomy in mineralized arthropods from Paleogene fissure fillings and demonstrate the value of these fossils by utilizing digitally reconstructed anatomical structure of a hister beetle. The new anatomical data facilitate a refinement of the species diagnosis and allowed us to reject a previous hypothesis of close phylogenetic relationship to an extant congeneric species. Our findings suggest that mineralized fossils, even those of macroscopically poor preservation, constitute a rich but yet largely unexploited source of anatomical data for fossil arthropods.
 
 ## Introduction
 
@@ -33,41 +33,99 @@ Several types of preservation or certain combinations of them are known for arth
 
 Abundant arthropod fossils preserved by mineralization of calcium phosphate are known from the Oligocene fissure fillings of Ronheim (Hellmund and Hellmund, 1996), the Late Oligocene/Early Miocene limestones of Riversleigh (QLD, Australia) (Duncan and Briggs, 1996) and from Paleogene deposits at Quercy (south-central France) (Filhol, 1877; Gervais, 1877; Flach, 1890; Thévenin, 1903; Handschin, 1944). These localities have long been famous for their rich vertebrate fossils as well (e.g. Legendre et al., 1997; Laloy et al., 2013). The arthropod fossils of Quercy were documented by Swiss entomologist Eduard Handschin (1944). He described the hister beetle Onthophilus intermedius (Coleoptera: Histeridae) from eight specimens, and considered it distinct but closely related to the extant European species O. striatus (Forster, 1771). The description, however, was vague and based mainly on the external morphology of the two best-preserved specimens (Handschin, 1944).
 
-X-ray microtomography has become established for the detailed examination of both extant (e.g.
+X-ray microtomography has become established for the detailed examination of both extant (e.g. Betz et al., 2007; Bosselaers et al., 2010; van de Kamp et al., 2011; 2014; 2015; Brehm et al., 2015; Sombke et al., 2015) and extinct (Sutton, 2008; Sutton et al., 2014) arthropods, including fossils preserved in amber (Lak et al., 2009; Pohl et al., 2010; Soriano et al., 2010; Perreau and Tafforeau, 2011; Riedel et al., 2012). We explored the application of this technique to mineralized fossils by re-examination of Handschin's specimens of Onthophilus intermedius. To ensure a direct morphological comparison, we performed tomographic scans (Figure 1) of ethanol-fixed and air-dried O. striatus using the same experimental setup. Furthermore we tested the hypothesis that the two are closely related with a global phylogenetic analysis of Onthophilus Leach, 1817.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig1-v1.jpg)
 
-**Figure 1.:** Onthophilus intermedius (A, D, G) and EtOH-fixed (B, E, H) and air-dried (C, F , I) specimens of O. striatus.Slices of tomographic volumes showing head region (), thorax (A–C) and abdomen (D–F). ae = aedeagus; ag = accessory gland; bpae = basal part of aedeagus; hg = hindgut; m = musculature; ml = median lobe; mr = muscles remnants; mscx = mesocoxa; msf = mesofemur; mst = mesotibia; mt = muscle tissue; mtcx = metacoxa; mtf = metafemur; mtt = metatibia; pcx = procoxa; sph = spherical particle; sm = stony matrix; t8 = 8G–Ith abdominal tergite; t9 = 9th abdominal tergite; t10 = 10th abdominal tergite; te = tentorium; tr = trachea.DOI: http://dx.doi.org/10.7554/eLife.12129.003
+**Figure 1.:** Slices of tomographic volumes showing head region (A–C), thorax (D–F) and abdomen (G–I). ae = aedeagus; ag = accessory gland; bpae = basal part of aedeagus; hg = hindgut; m = musculature; ml = median lobe; mr = muscles remnants; mscx = mesocoxa; msf = mesofemur; mst = mesotibia; mt = muscle tissue; mtcx = metacoxa; mtf = metafemur; mtt = metatibia; pcx = procoxa; sph = spherical particle; sm = stony matrix; t8 = 8th abdominal tergite; t9 = 9th abdominal tergite; t10 = 10th abdominal tergite; te = tentorium; tr = trachea.
 
 ## Results and discussion
 
-We found internal characters in all fossils (
+We found internal characters in all fossils (Table 1). Three specimens show remains of inner organs, especially of the sclerotized genitalia, allowing their identification as two males and one female. The outer surfaces of most specimens appear smooth (Figure 2); the distinct punctuation found in extant Onthophilus species (Kovarik and Caterino, 2005) is faint.
+
+**Table 1.**
+ Notes on the fossil Onthophilus intermedius specimens from Quercy and their preservation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Internal structures preserved</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F1951</td>
+      <td>some sclerites (incl. coxa-trochanteral joints) and tracheae</td>
+      <td>the only specimen depicted by Handschin (1944); but not explicitly designated as holotype</td>
+    </tr>
+    <tr>
+      <td>F1992</td>
+      <td>some sclerites and small tracheae</td>
+      <td>head, prothorax missing</td>
+    </tr>
+    <tr>
+      <td>F1993</td>
+      <td>some sclerites (incl. coxa-trochanteral joints)</td>
+      <td>head, pygidia missing; elytra partly abraded</td>
+    </tr>
+    <tr>
+      <td>F1994</td>
+      <td>most sclerites, muscle parts, tracheae, parts of alimentary system, large parts of male genitals</td>
+      <td>the only specimen of the collection that is ventrally encrusted by a stone matrix</td>
+    </tr>
+    <tr>
+      <td>F1995</td>
+      <td>some sclerites, parts of male genitals</td>
+      <td>head present; abdomen deeply abraded dorsally</td>
+    </tr>
+    <tr>
+      <td>F1996</td>
+      <td>some sclerites</td>
+      <td>head, prothorax missing</td>
+    </tr>
+    <tr>
+      <td>F1997</td>
+      <td>some sclerites, remains of muscles below the elytra</td>
+      <td>head, prothorax partly abraded</td>
+    </tr>
+    <tr>
+      <td>F1998</td>
+      <td>some sclerites (incl. coxa-trochanteral joints), parts of female genitalia</td>
+      <td>head, prothorax partly abraded</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig2-v1.jpg)
 
-**Figure 2.:** Onthophilus intermedius specimens.Note the unique encrustation of F1994.DOI: http://dx.doi.org/10.7554/eLife.12129.005
+**Figure 2.:** Note the unique encrustation of F1994.
 
-The specimen F1994 (
+The specimen F1994 (Figures 1A,D,G, 2, 3, Supplementary file 1) differs from all other samples by the presence of a stony matrix, covering the ventral part of the beetle. Its dorsal part and head are exposed; the elytra are missing and were probably detached before embedding. The exposed surface is partly eroded, especially in the anterior region of the head, and no appendages are visible from the outside. The matrix, however, concealed the best-preserved fossil from the collection, which we examine here in detail.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig3-v1.jpg)
 
-**Figure 3.:** () Photograph of AOnthophilus intermedius (F1994) ventrally embedded in a stony matrix. () Digital reconstruction showing fossilized beetle (green) and matrix (brown). (B) Beetle digitally isolated from the stone, revealing well-preserved morphology hidden by the matrix. (C) Perspective view of the fossil showing parts of exoskeleton, tracheal network, alimentary canal and genitals. (DE, F) Comparison of the male genitals of the extant O. striatus () and the fossil EO. intermedius (); outer sclerites cut to reveal internal anatomy. See FSupplementary file 1 for an interactive version of the 3D reconstruction.DOI: http://dx.doi.org/10.7554/eLife.12129.006
+**Figure 3.:** (A) Photograph of Onthophilus intermedius (F1994) ventrally embedded in a stony matrix. (B) Digital reconstruction showing fossilized beetle (green) and matrix (brown). (C) Beetle digitally isolated from the stone, revealing well-preserved morphology hidden by the matrix. (D) Perspective view of the fossil showing parts of exoskeleton, tracheal network, alimentary canal and genitals. (E, F) Comparison of the male genitals of the extant O. striatus (E) and the fossil O. intermedius (F); outer sclerites cut to reveal internal anatomy. See Supplementary file 1 for an interactive version of the 3D reconstruction.
 
-The ventral portion of the beetle covered by the matrix reveals an extraordinary preservation of exoskeletal fine structures and internal anatomy (
+The ventral portion of the beetle covered by the matrix reveals an extraordinary preservation of exoskeletal fine structures and internal anatomy (Figures 3, 4 and 5; Supplementary file 1). While some fractions of the cuticle appear to be mineralized, the latter is mostly represented by air-filled spaces in the fossil (Figure 1A,D,G). The surface of the exoskeleton is preserved as a three-dimensional imprint of remarkable detail; the body sclerites show characteristic punctuation of the genus. The right foreleg is not preserved; the left one is truncated from the trochanter; distal parts of the leg were lost prior to fossilization. The right mid and hind legs are eroded at the edge of the matrix, but their encrusted left counterparts appear complete except for the most distal part of the metafemur of the hind leg that would protrude from the matrix. Moreover, many anatomical characters can be recognized inside the fossil (Figure 3D). Apart from internal invaginations of the exoskeleton (e.g. tentorium, furcal arms and metendosternite), large parts of the alimentary canal and tracheal system are visible. The oesophagus appears to be shrunken and is connected to the crop, which is truncated posteriorly. The anterior part of the hindgut is hollow, while the middle part is apparently filled with mineral matrix but well-defined. Conspicuous spherical particles may constitute remnants of gut content (Figure 1G). The hindmost part of the gut can be roughly retraced by aggregations of tiny holes inside the mineral matrix. Like in the alimentary canal, some large tracheae appear to be filled with matrix, while others are hollow. Except for the musculature connecting the right pro- and mesofurcal arms (Figure 1D), most muscles can only be recognized by remnants at the insertion areas (Figure 1G). The genitals are extraordinary well-preserved (Figure 3F). While testes and Ductus ejaculatorius could not be recognized, other soft tissues such as the spiral accessory glands and parts of the gland ducts are conspicuous. The genital sclerites, including aedeagus, median lobe, gonopore, tergites 8-10 and sternites 8 & 9 are almost perfectly preserved as imprints.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig4-v1.jpg)
 
-**Figure 4.:** Comparison of the joints (cut) of the left mid- (, A) and hind leg (B, C) of DOnthophilus striatus (, A) and CO. intermedius (, B), showing coxae (green) and trochanters (yellow).DDOI: http://dx.doi.org/10.7554/eLife.12129.007
+**Figure 4.:** Comparison of the joints (cut) of the left mid- (A, B) and hind leg (C, D) of Onthophilus striatus (A, C) and O. intermedius (B, D), showing coxae (green) and trochanters (yellow).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig5-v1.jpg)
 
-**Figure 5.:** Onthophilus intermedius (specimen F1994).A digital endocast (, A) artificially created from tomography data resembles the shape of the other fossils (BFigure 2) much closer than the original surface of the beetle (, C) hidden by the stony matrix.DDOI: http://dx.doi.org/10.7554/eLife.12129.008
+**Figure 5.:** A digital endocast (A, B) artificially created from tomography data resembles the shape of the other fossils (Figure 2) much closer than the original surface of the beetle (C, D) hidden by the stony matrix.
 
 The remarkable preservation state of the fossil is emphasized when its morphological characters are compared to those of an extant ethanol-fixed specimen of the same genus (Figures 1, 3E,F and 4). The new anatomical data from this specimen facilitated an extended description of the species according to modern taxonomic standards (Appendix 1).
 
+Handschin (1944) hypothesized a close relationship (‘particularly striking similarity’) between Onthophilus intermedius and O. striatus based on then-observable external morphology. However, phylogenetic analysis (Material and methods) of the more diverse character set now accessible places these species in distinct clades. The analysis resulted in 72 most parsimonious trees of length 185 (CI 0.27, RI 0.61). The strict consensus of these trees (Figure 6) is well resolved apart from a few rearrangements of some outgroup taxa and within a relatively derived group related to O. niponensis Lewis, 1907. O. intermedius is part of a trichotomy involving O. silvae Lewis, 1884 and a large group of species descended from the common ancestor of O. giganteus Heleva, 1978 and O. niponensis, though in reweighted trees it is resolved as sister to O. silvae alone. In all analyses O. striatus is nested within a lineage of Nearctic and far-eastern Palaearctic species, including O. flavicornis Lewis, 1884, O. flohri Lewis, 1888 and others.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/12129/elife-12129-fig6-v1.jpg)
 
-**Figure 6.:** The analysis places Onthophilus striatus within a lineage of Nearctic and far-eastern Palaearctic species (red), while O. intermedius is a member of a separate Holarctic lineage (blue). Four internal (purple) and three external (orange) unambiguous synapomorphies supporting their respective placements are mapped onto the cladogram - Onthophilus striatus group: Character 22:2, mesoventrite wide and short; 30:1, pygidial median carina absent; 35:2, tegmen of aedeagus abruptly downturned apically. O. intermedius group: 29:2, pygidium laterally impunctate; 36:2, tegmen of aedeagus abruptly narrowing apically; 40:2, lateral halves of eighth sternite large and nearly meeting at midline; 41:2, stem of spiculum gastrale broad throughout its length.DOI: http://dx.doi.org/10.7554/eLife.12129.009
+**Figure 6.:** The analysis places Onthophilus striatus within a lineage of Nearctic and far-eastern Palaearctic species (red), while O. intermedius is a member of a separate Holarctic lineage (blue). Four internal (purple) and three external (orange) unambiguous synapomorphies supporting their respective placements are mapped onto the cladogram - Onthophilus striatus group: Character 22:2, mesoventrite wide and short; 30:1, pygidial median carina absent; 35:2, tegmen of aedeagus abruptly downturned apically. O. intermedius group: 29:2, pygidium laterally impunctate; 36:2, tegmen of aedeagus abruptly narrowing apically; 40:2, lateral halves of eighth sternite large and nearly meeting at midline; 41:2, stem of spiculum gastrale broad throughout its length.
 
 Inclusion of diverse characters revealed by microtomography of Onthophilus intermedius yields a well-supported topology and a more comprehensive picture of the biogeographic and morphological history of the group. Of the characters scored for both O. intermedius and O. striatus, there are seven by which their states differ, three external and four internal. Of these, two external (chars. 29 & 30) and one internal (char. 36) are reconstructed as autapomorphies (Figure 6). Only one external synapomorphy (char. 22) separates them, while three of the four genitalic differences (chars. 35, 40, and 41) represent synapomorphies of their respective lineages. Exclusion of internal characters for O. intermedius did not affect the topology, but did prevent genitalic characters from supporting its larger containing clade. Critical diagnostic differences in external morphology, such as mesoventral proportions and pygidial sculpturing, were also revealed by visualization of features previously obscured by matrix.
 
@@ -81,20 +139,20 @@ Our results demonstrate that mineralized arthropod fossils from a sedimentary co
 
 ## Materials and methods
 
-## Synchrotron X-ray microtomography
+### Synchrotron X-ray microtomography
 
 3D X-ray micro-computed tomography scans with synchrotron radiation (µCT) were performed at the TOPO-TOMO beamline (Rack et al., 2009) of the ANKA Synchrotron Radiation Facility at Karlsruhe Institute of Technology (KIT). The measurements consisted of the acquisition of 2500 equiangularly spaced radiographic projections of the sample in a range of 180°. The frame rate was set to 150 images per second, resulting in an overall scan duration of 16.67 seconds per sample. The parallel polychromatic X-ray beam produced by a 1.5 T bending magnet was spectrally filtered by 0.2 mm aluminum to obtain a peak at about 15 keV. The sample was placed 20 cm upstream of the detector, which in turn was located about 33 m from the source. The detector consists of a thin, plan-parallel lutetium aluminum garnet single crystal scintillator doped with cerium (LuAG:Ce), optically coupled via a Nikon Nikkor 85/1.4 photo-lens to a pco.dimax camera with a pixel matrix of 2008x2008 pixels. The lens was stopped down to F/4 to remove optical aberrations and to increase its depth of focus, permitting the use of a thicker scintillator to collect a higher fraction of the incident X-ray photons. The magnification of the optical system was adjusted to 3X, yielding an effective X-ray pixel size of 3.66 µm (dos Santos Rolo et al., 2014). Tomographic reconstruction was performed with the GPU-accelerated filtered back projection algorithm implemented in the software framework UFO (Vogelgesang et al., 2012). Microtomographic image data are deposited in Morph·D·Base (www.morphdbase.de; accession numbers T_vandeKamp_20151216-M-12.1 to T_vandeKamp_20151216-M-22.1).
 
-## 3D reconstructions
+### 3D reconstructions
 
 3D reconstruction followed the protocol described by Ruthensteiner and Heß (2008) and van de Kamp et al., (2014); using Amira (versions 5.5, 6, FEI) and Avizo (version 8.1, FEI) for segmentation of the tomographic volumes and CINEMA 4D R15 (Maxon Computer GmbH) for assembly of components and rendering of figures. The ‘digital endocast’ (Figure 5) was created from the tomographic stack of specimen F1994 by segmenting solely the dorsal stony matrix, ventrally confined by the inner impression of the beetle’s cuticle.
 
 The number of surface polygons was reduced to 10% of its original value in CINEMA 4D: the raw mesh of F1994 contains approx. 30 million polygons, the reduced version (Figure 3D) ca. 3 million. Segmentation artifacts were carefully removed using the sculpting tools of the software. For the interactive 3D model (Supplementary file 1), the polygon count was further reduced to 800,000 (without the stony matrix); the digital mesh was imported into Deep Exploration (version 6; Right Hemisphere), saved as Universal 3D file (U3D) and embedded into a PDF document with Adobe® Acrobat® 9 Pro Extended.
 
-## Phylogenetic analysis of Onthophilus intermedius
+### Phylogenetic analysis of Onthophilus intermedius
 
 Our phylogenetic analysis was performed to test Handschin’s (1944) hypothesis of a close relationship of Onthophilus intermedius to the extant and sympatric O. striatus. Although his hypothesis was not presented in strictly phylogenetic terms (‘particularly striking similarity’; our translation), the suggestion is of a direct lineal relationship between these heterochronic species. This would be revealed in a cladistic analysis as a sister group relationship between them. Thus, the hypothesis would be rejected by any resolution in which O. intermedius and O. striatus were not found to be sister species. We compiled a character set comprising 41 characters (Source code 1) of internal and external morphology visible in one or more specimens of O. intermedius, as visualized following X-ray microtomography. We scored these characters for a set of 29 of the 39 currently described species in the genus Onthophilus (Mazur, 2011), as well as seven outgroup Onthophilinae (including the recently described Cretaceous Cretonthophilus tuberculatus (Caterino et al., 2015). Most were scored from direct examination of specimens. However, some taxa were scored from illustrations and descriptions in the literature (Reichardt, 1941; Helava and Howden, 1977; Helava, 1978; Ôhara and Nakane, 1986; Ôhara, 1989; Howden and Laplante, 2003).
 
-## Characters and states
+### Characters and states
 
 Data were analyzed under parsimony using PAUP* 4.0a144 (Swofford, 2002), using a heuristic search with 1000 random addition sequence replicates. Characters were all treated as unordered. We examined the effects of character reweighting (by rescaled consistency indices), and exclusion of various character subsets (internal vs. external). Character transitions were mapped using Mesquite v. 3.03 (Maddison and Maddison, 2015). The tree was rooted with either Anapleus (Dendrophilinae: Anapleini), considered to exhibit plesiomorphic states in many higher level histerid characters (Caterino and Vogler, 2002), or Cretonthophilus, a recently described taxon from Cretaceous Burmese amber representing the oldest known Onthophiline histerid (Caterino et al., 2015) (Source code 1).

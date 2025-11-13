@@ -17,20 +17,20 @@
 
 ### Affiliations
 
-1. https://ror.org/04h81rw26 Department of Pathology, Penn State College of Medicine Hershey United States
-2. https://ror.org/04h81rw26 Jake Gittlen Laboratories for Cancer Research, Penn State College of Medicine Hershey United States
-3. https://ror.org/04h81rw26 Department of Family & Community Medicine, Penn State College of Medicine Hershey United States
-4. https://ror.org/04h81rw26 Department of Biochemistry and Molecular Biology, Penn State College of Medicine Hershey United States
-5. https://ror.org/04h81rw26 Department of Pharmacology, Penn State College of Medicine Hershey United States
-6. https://ror.org/04h81rw26 Institute of Personalized Medicine, Penn State College of Medicine Hershey United States
-7. https://ror.org/04h81rw26 Department of Public Health Sciences, Penn State College of Medicine Hershey United States
+1. Department of Pathology, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+2. Jake Gittlen Laboratories for Cancer Research, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+3. Department of Family & Community Medicine, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+4. Department of Biochemistry and Molecular Biology, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+5. Department of Pharmacology, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+6. Institute of Personalized Medicine, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
+7. Department of Public Health Sciences, Penn State College of Medicine Hershey United States ([ROR:04h81rw26](https://ror.org/04h81rw26))
 8. Salybia Mission Project Saint David Parish Dominica
 
 † Corresponding author
 
 ## Abstract
 
-Our interest in the genetic basis of skin color variation between populations led us to seek a Native American population with genetically African admixture but low frequency of European light skin alleles. Analysis of 458 genomes from individuals residing in the Kalinago Territory of the Commonwealth of Dominica showed approximately 55% Native American, 32% African, and 12% European genetic ancestry, the highest Native American genetic ancestry among Caribbean populations to date. Skin pigmentation ranged from 20 to 80 melanin units, averaging 46. Three albino individuals were determined to be homozygous for a causative multi-nucleotide polymorphism OCA2 contained within a haplotype of African origin; its allele frequency was 0.03 and single allele effect size was –8 melanin units. Derived allele frequencies of NW273KV SLC24A5 and A111T SLC45A2 were 0.14 and 0.06, with single allele effect sizes of –6 and –4, respectively. Native American genetic ancestry by itself reduced pigmentation by more than 20 melanin units (range 24–29). The responsible hypopigmenting genetic variants remain to be identified, since none of the published polymorphisms predicted in prior literature to affect skin color in Native Americans caused detectable hypopigmentation in the Kalinago. L374F
+Our interest in the genetic basis of skin color variation between populations led us to seek a Native American population with genetically African admixture but low frequency of European light skin alleles. Analysis of 458 genomes from individuals residing in the Kalinago Territory of the Commonwealth of Dominica showed approximately 55% Native American, 32% African, and 12% European genetic ancestry, the highest Native American genetic ancestry among Caribbean populations to date. Skin pigmentation ranged from 20 to 80 melanin units, averaging 46. Three albino individuals were determined to be homozygous for a causative multi-nucleotide polymorphism OCA2NW273KV contained within a haplotype of African origin; its allele frequency was 0.03 and single allele effect size was –8 melanin units. Derived allele frequencies of SLC24A5A111T and SLC45A2L374F were 0.14 and 0.06, with single allele effect sizes of –6 and –4, respectively. Native American genetic ancestry by itself reduced pigmentation by more than 20 melanin units (range 24–29). The responsible hypopigmenting genetic variants remain to be identified, since none of the published polymorphisms predicted in prior literature to affect skin color in Native Americans caused detectable hypopigmentation in the Kalinago.
 
 ## Introduction
 
@@ -48,35 +48,115 @@ Early in our genetic and phenotypic survey of the Kalinago, we noted an albino i
 
 Our search for a population admixed for Native American/African ancestries with minimal European admixture led us to the ‘Carib’ population in the Commonwealth of Dominica. Observations from an initial trip to Dominica suggested wide variation in Kalinago skin color. Pursuit of the genetic studies described here required learning about oral and written histories, detailed discussion with community leadership, IRB approval from Ross University (until Hurricane Maria in 2017, the largest medical school in Dominica) and the Department of Health of the Commonwealth of Dominica, and relationship-building with three administrations of the Kalinago Council over 15 years.
 
-## Population sample
+### Population sample
 
 Our DNA and skin color sampling program encompassed 458 individuals, representing 15% of the population of the territory and all three known albino individuals. Ages ranged from 6 to 93 (Appendix 1—table 1 and Figure 1—figure supplement 3). We were able to obtain genealogical information for about half of the parents (243 mothers and 194 fathers). Community-defined ancestry (described as ‘Black,’ ‘Kalinago,’ or ‘Mixed’) for both parents was obtained for 426 individuals (92% of sample), including 108 parents from whom DNA samples were obtained (72 Kalinago, 36 Mixed, and 0 Black). They described themselves as Black, Kalinago, or Mixed from their perceived understanding of their parents or grandparents skin color.
 
-## Kalinago genetic ancestry
+### Kalinago genetic ancestry
 
 The earliest western mention of the Kalinago (originally as ‘Caribs’) was in Christopher Columbus’s journal dated November 26, 1492 (Honychurch, 2012). Little is known about the detailed cultural and genetic similarities and differences between them and other Caribbean pre-contact groups such as the Taino. African admixture in the present Kalinago population derived from the African slave trade; despite inquiry across community, governmental, and historical sources, we were unable to find documentation of specific regions of origin in Africa or well-defined contributions from other groups. The population’s linguistics are uninformative, as they speak, in addition to English, the same French-based Antillean Creole spoken on the neighboring islands of Guadeloupe and Martinique.
 
 To study Kalinago population structure, we analyzed an aggregate of our Kalinago SNP genotype data and HGDP data (Li et al., 2008) using ADMIXTURE (Figure 1 and Figure 1—figure supplement 1) as described in Materials and methods. At K=3, the ADMIXTURE result confirmed the three major clusters, corresponding roughly to Africans (black cluster), European/Middle Easterners/Central and South Asians (yellow cluster), and East Asians/Native Americans (green cluster). At K=4 and higher, the red component that predominates Native Americans separates the Kalinago from the East Asians (green cluster). Consistent with prior work (Li et al., 2008), a purple cluster (Oceanians) appears at K=5 and a brown cluster (Central and South Asians) appears at K=6; both are minor sources of genetic ancestry in our Kalinago sample (average <1%) (Appendix 1—table 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig1-v2.jpg)
+
+**Figure 1.:** Results are depicted using stacked bar plots, with one column per individual. At K=3, the Kalinago, Native Americans, Oceanians, and East Asians fall into the same green cluster. At K=4, the Native Americans (red cluster) are separated from the East Asians (green cluster). Figure 1—figure supplement 1 shows the expanded admixture plot for K=6 with each populations labeled. Figure 1—figure supplement 2 shows the location of Kalinago Territory where fieldwork was performed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Expended admixture plot at K=6 labeled each of the populations used, from panels (A) to (F).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Dominica, also known as Wai’tu kubuli in the Kalinago language, is clustered with the Leeward Islands in the Lesser Antilles archipelago of the Caribbean Sea. Main map situates Dominica within the Eastern Caribbean. Inset shows Dominica, with location of Kalinago Reservation (blue) in relation to parishes and principal towns. (Map modified from SESA CROP Report and Google Maps.)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Histogram shows age in years at last birthday for all sampled individuals for whom this information was collected (n=455).
+
 At K=4 to K=6, the Kalinago show on average 55% Native American, 32% African, and 11–12% European genetic ancestry. Estimates from a two-stage admixture analysis are similar, as are results from local genetic ancestry analysis (see Materials and methods) (Appendix 1—table 3), leading to estimates of 54–56% Native American, 31–33% African, and 11–13% European genetic ancestry. The individual with the least admixture has approximately 94% Native American and 6% African genetic ancestry. The results of the principal component (PC) analysis (PCA) (Figure 2—figure supplement 1) were consistent with ADMIXTURE analysis. The first two PCs suggest that most Kalinago individuals show admixture between Native American and African genetic ancestry, with a smaller but highly variable European contribution apparent in the displacement in PC2 (Figure 2—figure supplement 1). A smaller number of Kalinago individuals with substantial East Asian genetic ancestry exhibit displacement in PC3 (Figure 2—figure supplement 1).
 
 Our analysis of Kalinago genetic ancestry revealed considerably more Native American and less European genetic ancestry than the Caribbean samples of Benn Torres et al., 2013, and the admixed populations from the 1000 Genomes Project (1KGP) (Auton et al., 2015; Figure 2). Some Western Hemisphere Native Americans reported in Reich et al., 2012, have varying proportions of European but very little African admixture (Figure 2B). Overall, the Kalinago have more Native American and less European genetic ancestry than any other Caribbean population.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig2-v2.jpg)
+
+**Figure 2.:** Ternary plots of genetic ancestry from our work and the literature show estimated proportions of African (AFR), European (EUR), and Native American (NAM) genetic ancestry. (A) Comparison of individuals (n=452, omitting 6 individuals with EAS >0.1) genotyped in this study to individuals (n=38) from southern Dominica sampled by Benn Torres et al., 2013. (B) Comparison of the Kalinago average genetic ancestry with other Native American populations. Kalinago, this study (n=458); Islands (BT) indicates Caribbean islanders reported in Benn Torres et al., 2013, with Dominica labeled; admixed (adm) AFR (1000 Genomes Project [1KGP]) and admixed NAM (1KGP) represent admixed populations from Auton et al., 2015, with Caribbean samples PUR (Puerto Rico) and ACB (Barbados) labeled; and AMR (Reich) indicates mainland Native American samples reported in Reich et al., 2012. Inset (top left) shows ancestries at vertices.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** PCA was performed on HGDP sample (940 individuals), with 458 Kalinago individuals projected on the same axes. (A) PC1 and PC2; (B) PC1 and PC3. In both panels, HGDP individuals are colored to indicate cluster membership (AFR, African; nAFR/ME, Northern Africa and Middle East; EUR, Europe; CSA, Central and Southern Asia; EAS, East Asia; OCE, Oceania; NAM, Native American). Genetic ancestry was represented by the first 10 PCs because AFR and NAM ancestries are not independent of each other. The first PC correlated strongly with AFR or NAM genetic ancestry (r2=0.94 and 0.97, respectively), but also with EUR genetic ancestry (r2=0.32). Several other PCs displayed considerably lower levels of correlation with genetic ancestry (r2<0.1 for EUR and r2<0.05 for EAS). Individuals homozygous for the albino variant were excluded from association analyses. Association analysis did not reveal any novel variants that reached genome-wide significance, after correction for statistic inflation. The inflation factor (lambda) for the full genotyped sample excluding the albinos (n=444) sample was 1.349. Values of lambda for the nine N=50 subsets ranged from 1.001 to 1.184 (median 1.075), suggesting that the elimination of second-order relatives did not remove all effects of relatedness.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Individual genetic ancestry fraction was estimated using admixture (K=4) as described. Individuals identified as (A) ‘Kalinago’ (n=72) have higher NAM and lower AFR and EUR genetic ancestry than those identified as (B) ‘Mixed’ (n=36). Despite considerable overlap in genetic ancestry proportions between individuals, the distributions are distinctly different. Compared to individuals identified as ‘Mixed,’ those identified as ‘Kalinago’ have on average more Native American genetic ancestry (67% vs 51%), less European genetic ancestry (10% vs 14%), and less African genetic ancestry (23% vs 34%). Similarly, the phenotypic distributions of the two groups differed.
 
 The 55% Native American genetic ancestry calculated from autosomal genotype in the Kalinago is greater than the reported 13% in Puerto Rico (Gravel et al., 2013), 10–15% for Tainos across the Caribbean (Schroeder et al., 2018), and 8% for Cubans (Marcheco-Teruel et al., 2014). This is also considerably higher than the reported 6% Native American genetic ancestry found in Bwa Mawego, a horticultural population that resides south of the Kalinago Territory (Keith et al., 2021). However, this result is lower than the 67% Native American genetic ancestry reported by Crawford et al., 2021, for an independently collected Kalinago samples based on the mtDNA haplotype analysis. This difference suggests a paternal bias in combined European and/or African admixture. Since our Illumina SNP-chip genotyping does not yield reliable identification of mtDNA haplotypes, we are currently unable to compare maternal to autosomal genetic ancestry proportions for our sample. Samples genotyped using 105 genetic ancestry informative markers from Jamaica and the Lesser Antilles (Benn Torres et al., 2015) yielded an average of 7.7% Native American genetic ancestry (range 5.6%–16.2%), with the highest value from a population in Dominica sampled outside the Kalinago reservation. Relevant to the potential mapping of Native American light skin color alleles, the Kalinago population has among the lowest European genetic ancestry (12%) compared to other reported Caribbean Native Americans in St. Kitts (8.2%), Barbados (11.5%), and Puerto Rico (71%) (Benn Torres et al., 2013). Contributing to the high percentage of Native American genetic ancestry in the Kalinago is their segregation within the 3700 acre Kalinago Territory in Dominica granted by the British in 1903, and the Kalinago tradition that women marrying non-Kalinago are required to leave the Territory; non-Kalinago spouses of Kalinago men are allowed to move to the Territory (KCA, KCC, Personal Communication with Kalinago Council, 2014). These factors help to explain why samples collected outside the Kalinago Territory (Benn Torres et al., 2013) show lower fractional Native American genetic ancestry.
 
 During our fieldwork, it was noted that members of the Kalinago community characterized themselves and others in terms of perceived genealogical ancestry as ‘Black,’ ‘Kalinago,’ or ‘Mixed.’ Compared to individuals self-identified as ‘Mixed,’ those self-identified as ‘Kalinago’ have on average more Native American genetic ancestry (67% vs 51%), less European genetic ancestry (10% vs 14%), and less African genetic ancestry (23% vs 34%) (Figure 2—figure supplement 2). Thus, these folk categories based on phenotype are reflected in some underlying differences in genetic ancestry.
 
-## Kalinago skin color variation
+### Kalinago skin color variation
 
 Melanin index unit (MI) calculated from skin reflectance measured at the inner upper arm (see Materials and methods) was used as a quantitative measure of melanin pigmentation (Ang et al., 2012; Diffey et al., 1984). MI determined in this way is commonly used as a measure of constitutive skin pigmentation (Choe et al., 2006; Park and Lee, 2005). The MI in the Kalinago ranged from 20.7 to 79.7 (Figure 4—figure supplement 1), averaging 45.7. The three Kalinago albino individuals sampled had the lowest values (20.7, 22.4, and 23.8). Excluding these, the MI ranged between 28.7 and 79.7 and averaged 45.9. For comparison, the MI averaged 25 and 21 for people of East Asian and European genetic ancestry, respectively, as measured with the same equipment in our laboratory (Ang et al., 2012; Tsetskhladze et al., 2012). This range is similar to that of another indigenous population, the Senoi of Peninsular Malaysia (MI 24–78; mean = 45.7) (Ang et al., 2012). The Senoi are believed to include admixture from Malaysian Negritos whose pigmentation is darker (mean = 55) (Ang et al., 2012) than that of the average Kalinago. In comparison, the average MI was 53.4 for Africans in Cape Verde (Beleza et al., 2012) and 59 for African-Americans (Shriver et al., 2003). Individuals self-described as ‘Kalinago’ were slightly lighter and had a narrower MI distribution (42.5± 5.6, mean ± SD) compared to ‘Mixed’ (45.8± 9.6) (Figure 4—figure supplement 2).
 
-## An OCA2 albinism allele in the Kalinago
+### An OCA2 albinism allele in the Kalinago
 
 OCA is a genetically determined condition characterized by nystagmus, reduced visual acuity, foveal hypoplasia, and strabismus as well as hypopigmentation of the skin, hair, and eye (Dessinioti et al., 2009; van Geel et al., 2013). The three sampled albino individuals had pale skin (MI 20.7, 22.4, and 23.8 vs. 29–80 for non-albino individuals), showed nystagmus, and reported photophobia and high susceptibility to sunburn. In contrast to the brown irides and black hair of most Kalinago, including their parents, the albino individuals had blonde hair and gray irides with varying amounts of green and blue.
 
 To identify the albinism variant in the Kalinago, we first determined that none of the albino individuals carried any of 28 mutations previously found in African or Native American albino individuals (Carrasco et al., 2009; King et al., 2003; Stevens et al., 1997; Yi et al., 2003), including a 2.7 kb exon 7 deletion in OCA2 found at high frequency in some African populations. Whole exome sequencing of one albino individual and one parent (obligate carrier) revealed polymorphisms homozygous in the albino individuals and heterozygous in the parent, an initial approach that assumes that the albino individual was not a compound heterozygote. We identified 12 variant alleles in 7 OCA genes (or genomic regions) that met these criteria (summarized in Appendix 1—table 4). None were nonsense or splice site variants. Five of the twelve variants were intronic, one was synonymous, one was located in 5’UTR, and three were in the 3’UTR (Appendix 1—table 4). Two missense variants were found in OCA2: SNP rs1800401 (c.913C>T or p.Arg305Trp in exon 9), R305W, and multi-nucleotide polymorphism rs797044784 in exon 8 (c.819_822delCTGGinsGGTC; p.Asn273_Trp274delinsLysVal), NW273KV.
 
 Among 458 Kalinago OCA2 genotypes, 26 carried NW273KV and 60 carried R305W (Table 1). Only NW273KV homozygotes were albino individual. We know that the allele responsible for albinism was NW273KV because neither of the two individuals, homozygous for R305W but not NW273KV, was albino individual. In further support of this conclusion is that one individual who was homozygous for R305W and homozygous ancestral for NW273 had an MI of 72, among the darkest in the entire population. R305W is notably present with frequency >0.10 in some African, South Asian, and European populations (Auton et al., 2015), predicting a Hardy-Weinberg frequency of homozygotes above 1%. This is far greater than the observed frequency of individuals with albinism and therefore inconsistent with the idea that this is not a variant responsible for albinism. The fact that R305W scores incorrectly as pathogenic using SIFT, Polyphen 2.0, and PANTHER that R305W (Kamaraj and Purohit, 2014) suggests a need for refinement of these methods. The universal association of R305W with the NW273KV haplotype indicates that the founder haplotype of the NW273KV albinism mutation carried the silent R305W variant.
+
+**Table 1.**
+ Albinism among NW273KV and R305W genotypes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2">Allele/genotype</th>
+      <th colspan="4">NW273KV genotype</th>
+    </tr>
+    <tr>
+      <th>Homozygous ancestral*</th>
+      <th>Heterozygous</th>
+      <th>Homozygous derived</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">R305W genotype</td>
+      <td>Homozygous ancestral</td>
+      <td>398</td>
+      <td>0</td>
+      <td>0</td>
+      <td>398</td>
+    </tr>
+    <tr>
+      <td>Heterozygous</td>
+      <td>33</td>
+      <td>22</td>
+      <td>0</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Homozygous derived</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3†</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>432</td>
+      <td>23</td>
+      <td>3†</td>
+      <td>458</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Ancestral = reference allele and derived = alternate allele for both variants.†Albino phenotype. Notably, none of the other genotypic categories are albino individuals._
 
 To identify the origin of the albino allele, albino individuals and carriers were analyzed for regions exhibiting homozygosity, and identity-by-descent and local genetic ancestry was estimated (see Materials and methods). All three albino individuals share a homozygous segment of ~1.7 Mb that encompasses several genes in addition to OCA2 (Figure 3). The albino haplotype defined by homozygosity in individuals 2 and 3 extends ~11 Mb; comparison to local genetic ancestry shows that this haplotype is clearly of African origin.
 
@@ -86,9 +166,21 @@ To identify the origin of the albino allele, albino individuals and carriers wer
 
 The Kalinago albino individuals are the only reported individuals where the albinism was caused by homozygosity for the NW273KV allele of OCA2. Two reported albino individuals of African-American/Dutch descent were compound heterozygotes for the OCA2 mutation, with one allele being the NW273KV variant chromosome (Garrison et al., 2004; Lee et al., 1994). Conservation of the NW sequence among vertebrates and its inclusion in a potential N-linked glycosylation site (Rinchik et al., 1993) that is eliminated by the mutation supports the variant’s pathogenicity. The NW273KV frequency in our sample (0.03) translates into a Hardy-Weinberg albinism frequency (p2=0.0009) of ~1 per 1000, as observed (3 in a population of about 3000). Examination of publicly available data reveals three OCA2NW273KV heterozygotes in the 1000 Genome Project, a pair of siblings from Barbados (ACB) and one individual from Sierra Leone (MSL). The three 1KGP individuals share a haplotype of ~1.5 Mb, of which ~1.0 Mb matches the albino haplotype in the Kalinago. The phasing for the OCA2NW273KV variant in the public data is inconsistent, with the variant assigned to the wrong chromosome for the ACB siblings.
 
-## Genetic contributions to Kalinago skin color variation
+### Genetic contributions to Kalinago skin color variation
 
 One motivation for undertaking this work was to characterize genetic contributions to skin pigmentation in a population with primarily Native American and African genetic ancestry, so that we could focus on the effect of Native American hypopigmenting alleles without interference from European alleles. The Kalinago population described here comprises the only population we are aware of that fits this genetic ancestry profile. To control for the effects of the major European pigmentation loci, all Kalinago samples were genotyped for SLC24A5A111T and SLC45A2L374F. The phenotypic effects of these variants and OCA2NW273KV are shown in Figure 4. Each variant decreases melanin pigmentation, with homozygotes being lighter than heterozygotes. The greatest effect is seen in the OCA2NW273KV homozygotes (the albino individuals), as previously noted. The frequencies of the derived alleles of SLC24A5A111T and SLC45A2L374F in the Kalinago sample are 0.14 and 0.06, respectively.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig4-v2.jpg)
+
+**Figure 4.:** The ‘triple ancestral’ plot is individuals ancestral for three pigmentation loci (SLC24A5111A, SLC45A2374L, and OCA2273NW). In the other plots, heterozygosity or homozygosity is indicated for the variants: OCA2NW273KV; SLC24A5A111T; and SLC45A2L374F. Individuals depicted in the second through fourth panels are repeated if they carry variants at more than one locus. M-index of the Kalinago ranged from 20.7 to 79.7 (Figure 4—figure supplement 1) and the histogram of skin color based on community-defined ancestry are shown in Figure 4—figure supplement 2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** We collected 462 Kalinago who live in the Kalinago Reservation. Each participant was asked a set of questions about their genealogical ancestry, gave their saliva sample, and have their skin color measured under their arm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Individuals described as (A) ‘Kalinago’ (n=72) were slightly lighter and had a narrower melanin index unit (MI) distribution (42.5±5.6, mean ± SD) than those described as (B) ‘Mixed’ (45.8±9.6).
 
 The markedly higher frequency of SLC24A5A111T compared to SLC45A2L374F is not explained solely by European admixture, given that most Europeans are nearly fixed for both alleles (Soejima and Koda, 2007). This deviation can be explained by the involvement of source populations that carry the SLC24A5A111T variant but not SLC45A2L374F. Although some sub-Saharan West African populations (the likeliest source of AFR genetic ancestry in the Kalinago) have negligible SLC24A5A111T frequencies, moderate frequencies are found in the Mende of Sierra Leone (MSL, allele frequency = 0.08) (Micheletti et al., 2020; Auton et al., 2015), while some West African populations such as Hausa and Mandinka who have allele frequencies of 0.11 and 0.15, respectively (Cheung et al., 2000; Rajeevan et al., 2012). Such African individuals carrying the SLC24A5A111T allele could potentially cause the observed frequencies by founder effect. In addition, the region of chromosome 5 containing SLC45A2 exhibits low European genetic ancestry (6.5%) that is consistent with low observed SLC45A2L374F frequency.
 
@@ -96,7 +188,57 @@ In order to investigate the potential effect of the SLC25A5A111T allele on the a
 
 The strong dependence of pigmentation on Native American genetic ancestry is clarified by focusing on individuals lacking the hypopigmenting alleles SLC24A5A111T, SLC45A2L374F, and OCA2NW273KV (Figure 5). Although positive deviations from the best fit are apparent at both high and low Native American genetic ancestry, the trend toward lighter pigmentation as Native American genetic ancestry increases is clear. The net difference between African and Native American contributions to pigmentation appears likely to be bounded by the magnitudes of the slope vs NAM genetic ancestry (24 units) and the slope vs AFR genetic ancestry (29 units, not shown). The difference in melanin index value is expected to be explained by genetic variants that are highly differentiated between African and Native American populations.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig5-v2.jpg)
+
+**Figure 5.:** Only individuals who are ancestral for SLC24A5111A, SLC45A2374L, and OCA2273NW alleles are shown (n=279). The dotted red line represents the best fit (linear regression). Slope is –24.3 (melanin index unit [MI] = –24.3*NAM+61.9); r2=0.2722.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Simulations were performed as described in Materials and methods, using genotyped SNPs with estimated frequency difference between African and Native American ancestral populations of at least 0.7 and adjusted p-value of at least 0.1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77514/elife-77514-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** All estimates (blue dots) were calculated using SLC24A5A111T, SLC45A2L374F, OCA2NW273KV, and sex as covariates. Plotted values are not corrected for statistical inflation. Statistical inflation appears to exceed that predicted from the median when using LMM approaches, for our dataset. The red line shows expected values; dashed red line shows expected values based on statistical inflation (lambda) calculated from the median. (A) Linear regression with 10 principal components (PCs) included as covariates, lambda = 1.342; (B) linear mixed model (LMM) with no PCs, standard genetics relatedness matrix (GRM), lambda = 1.024; (C) LMM with 10 PCs, standard GRM, lambda = 1.031; (D) LMM with 10 PCs, REAP GRM. Lambda = 1.068. Results are consistent regardless of the test used. Blue, flat dots on the top right of the charts are SNPs found in the same gene and having the same p-value. While the LMM-based methods meet the conventional criterion of 5e-08 for genome wide significance (Appendix 3—table 1), our interpretation is that none of these variants warrant further investigation. Low observed minor allele frequencies (<2%) are inconsistent with those expected for variants responsible for pigmentation differences between the African and Native American populations.
+
 To further investigate the contributions of genetic variation to skin color, we performed association analyses using an additive model for melanin index, conditioning on sex, genetic ancestry (using 10 PCs), and genotypes for SLC24A5A111T, SLC45A2L374F, and OCA2NW273KV. Assuming likely epistasis of albinism alleles over other hypopigmenting alleles, these analyses omitted the three albino individuals. Employing a linear regression model, we found that sex and all three genotyped polymorphisms were statistically significant (Table 2 and Figure 2—figure supplement 2). However, only SLC24A5A111T reaches genome-wide significance. PC1, which strongly correlated with Native American vs African genetic ancestry, exhibits the lowest p-value. Effect sizes were about –6 units (per allele) for SLC24A5A111T, –4 units for SLC45A2L374F, and –8 units for the first OCA2NW273KV allele.
+
+**Table 2.**
+ Effect sizes for covariates in linear regression model with 10 principal components.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Covariate</th>
+      <th>Effect size (MI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs1426654 (SLC24A5A111T)</td>
+      <td>–5.8</td>
+      <td>1.5E-12</td>
+    </tr>
+    <tr>
+      <td>rs16891982 (SLC45A2L374F)</td>
+      <td>–4.4</td>
+      <td>6.7E-05</td>
+    </tr>
+    <tr>
+      <td>Albino allele (OCA2NW273KV)</td>
+      <td>–7.7</td>
+      <td>2.2E-05</td>
+    </tr>
+    <tr>
+      <td>Sex (female vs male)</td>
+      <td>–2.4</td>
+      <td>5.0E-04</td>
+    </tr>
+  </tbody>
+</table>
+
+_aPer allele effect size, in melanin units, for A111T and L374F; effect of first allele for albino variant._
 
 Additional covariates were considered but not included in our standard model. Skin pigmentation exhibited a decreasing trend with age, but its contribution was not statistically significant (adjusted p-value = 0.08). Estimated effect sizes for significant covariates were little affected by the inclusion of age as a covariate (Appendix 1—table 5). Analysis of SNPs that were previously reported as relevant to pigmentation are shown in Appendix 2—table 1. The lowest (adjusted) p-value for this collection of variants is about 0.001, considerably larger than the p-values for the variants included as covariates in our standard model. Inclusion of the SNP of lowest p-value from each of the five regions containing BCN2, TYR, OCA2, MC1R, and OPRM1 only modestly altered effect sizes for the other covariates (Appendix 1—table 5).
 
@@ -112,31 +254,31 @@ Additional Native American hypopigmenting alleles of significant effect size rem
 
 ## Materials and methods
 
-## Recruitment
+### Recruitment
 
 Participants from among the Kalinago populations were recruited with the help of nurses from the Kalinago Territory in 2014. Recruitment took place throughout the territory’s eight hamlets. Place and date of birth, reported genealogical ancestry of parents and grandparents, number of siblings, and response to sun exposure (tanning ability, burning susceptibility) were obtained by interview. Hair color and texture and eye color (characterized as black, brown, gray, blue, green, hazel, no pigment) were noted visually but not measured quantitatively.
 
-## Skin reflectometry
+### Skin reflectometry
 
 Skin reflectance was measured using a Datacolor CHECKPLUS spectrophotometer and converted to melanin unit as we have previously described (Ang et al., 2012; Diffey et al., 1984). To minimize the confounding effects of sun exposure and body hair, skin color measurements were measured on each participant’s inner arm, and the average of triplicate measurements was generated. Before skin color measurements were taken, alcohol wipes were used to minimize the effect of dirt and/or oil. In order to minimize blanching due to occlusion of blood from the region being measured, care was taken not to apply only sufficient pressure to the skin to prevent ambient light from entering the scanned area (Fullerton et al., 1996).
 
-## DNA collection
+### DNA collection
 
 Saliva samples were collected using the Oragene Saliva kit, and DNA was extracted using the prepIT.L2P kit, both from DNA Genotek (Ottawa, Canada). DNA integrity was checked by agarose gel electrophoresis and quantitated using a NanoDrop spectrophotometer (Thermo Fisher Scientific, Waltham, MA, USA). Further quantification was done using Qubit Fluorometer (Thermo Fisher Scientific, Waltham, MA, USA) as needed, following the manufacturer’s instructions.
 
-## Genotyping
+### Genotyping
 
 OCA variants previously identified in African and Native Americans (Carrasco et al., 2009; King et al., 2003; Stevens et al., 1997; Yi et al., 2003) were amplified by PCR in all albino individuals as well as control samples using published conditions. Selected alleles of SLC24A5, SLC45A2, OCA2, and MFSD12 were amplified in all sampled individuals as described in Appendix 1—table 6. Amplicons generated by 30 cycles of PCR using an Eppendorf thermocycler were sequenced (GeneWiz, South Plainfield, NJ, USA) and the chromatograms viewed using Geneious software.
 
 Illumina SNP genotyping using the Infinium Omni2.5–8 BeadChip was performed for all the individuals sampled. This was performed in three cohorts, using slightly different versions of the array, and the results combined. Due to ascertainment differences between the cohorts, analysis is presented here only for the combined sample. After quality control to eliminate duplicates and monomorphic variants, and to remove variants and individuals with genotype failure rates >0.05, 358 Kalinago individuals and 1,638,140 unique autosomal SNPs remained.
 
-## Whole exome sequencing of albino individual and obligate carrier
+### Whole exome sequencing of albino individual and obligate carrier
 
 In order to identify the causative variant for albinism in the Kalinago, two samples (one albino individual and one parent) were selected for whole exome sequencing. Following shearing of input DNA (1 µg) using a Covaris E220 Focused-ultrasonicator (Woburn, MA, USA), exome enrichment and library preparation was done using the Agilent SureSelect V5+UTR kit (Santa Clara, CA, USA). The samples were sequenced at 50× coverage using a HiSeq 2500 sequencer (Illumina, San Diego, CA, USA).
 
 The fastq files were aligned back to Human Reference Genome GRCh37 (HG19) using BWA (Li and Durbin, 2009) and bowtie (Langmead et al., 2009). Candidate SNP polymorphisms were identified using GATK’s UnifiedGenotyper (McKenna et al., 2010), while the IGV browser was used to examine the exons of interest for indels (Thorvaldsdóttir et al., 2013). Variants with low sequence depth (<10) in either sample were excluded from further consideration.
 
-## Computational analysis
+### Computational analysis
 
 Basic statistics, merges with other datasets, and association analysis by linear regression were performed using plink 1.9 (Chang et al., 2015; Purcell et al., 2007). Phasing and imputation, as well as analysis of regions of homozygosity by descent and identity by descent were performed with Beagle 4.1 (Browning and Browning, 2013; Browning and Browning, 2007), using 1KGP phased data (Auton et al., 2015) as reference.
 

@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.49291.001 Neurons form bona fide synapses with oligodendrocyte precursor cells (OPCs), but the circuit context of these neuron to OPC synapses remains incompletely understood. Using monosynaptically-restricted rabies virus tracing of OPC afferents, we identified extensive afferent synaptic inputs to OPCs residing in secondary motor cortex, corpus callosum, and primary somatosensory cortex of adult mice. These inputs primarily arise from functionally-interconnecting cortical areas and thalamic nuclei, illustrating that OPCs have strikingly comprehensive synaptic access to brain-wide projection networks. Quantification of these inputs revealed excitatory and inhibitory components that are consistent in number across brain regions and stable in barrel cortex despite whisker trimming-induced sensory deprivation.
+Neurons form bona fide synapses with oligodendrocyte precursor cells (OPCs), but the circuit context of these neuron to OPC synapses remains incompletely understood. Using monosynaptically-restricted rabies virus tracing of OPC afferents, we identified extensive afferent synaptic inputs to OPCs residing in secondary motor cortex, corpus callosum, and primary somatosensory cortex of adult mice. These inputs primarily arise from functionally-interconnecting cortical areas and thalamic nuclei, illustrating that OPCs have strikingly comprehensive synaptic access to brain-wide projection networks. Quantification of these inputs revealed excitatory and inhibitory components that are consistent in number across brain regions and stable in barrel cortex despite whisker trimming-induced sensory deprivation.
 
 ## Introduction
 
@@ -29,19 +29,35 @@ Excitatory and inhibitory synapses between neurons and OPCs are well-established
 
 ## Results
 
-## Development and validation of retrograde monosynaptic OPC tracing strategy
+### Development and validation of retrograde monosynaptic OPC tracing strategy
 
 Owing to the lack of viral tools to achieve specific transgene expression in OPCs, we employed a transgenic strategy by crossing Pdgfra::CreER mice (Kang et al., 2010), which permit OPC-specific Cre recombinase expression, with a Cre-inducible RABVgp4/TVA mouse (Takatoh et al., 2013). Offspring of this cross express rabies virus glycoprotein 4 (gp4) and the avian TVA receptor specifically in OPCs upon tamoxifen administration (Pdgfra::CreER-(gp4-TVA)fl). Subsequently, we performed stereotaxic injection of ASLV-A (EnvA)-pseudotyped gp4-deleted rabies virus encoding EGFP (SADΔG-EGFP(EnvA)). EnvA’s highly specific interaction with the TVA receptor ensures restriction of primarily-transduced cells – hereafter named starter cells – to the Pdgfra+ OPC cell population. Because these OPCs also express rabies gp4, virions can be assembled within these starter cells and spread retrogradely across single synaptic connections to presynaptic input neurons; however, because these input neurons do not express gp4, there is no additional spread of virus beyond these monosynaptic connections (Figure 1A) (Wickersham et al., 2007). A caveat to this approach is that OPCs that differentiate to oligodendrocytes (Ye et al., 2009) between tamoxifen administration and virus injection would still be susceptible to infection; likewise, infected OPCs that undergo differentiation could skew histological assessment of input to starter cell ratios. To mitigate these concerns, we followed a narrow injection time course (Figure 1A) beginning in adult (6 month old) mice, when rates of OPC differentiation are substantially lower than in juveniles (Young et al., 2013).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49291/elife-49291-fig1-v1.jpg)
+
+**Figure 1.:** (a) Outline of experimental strategy used to label inputs to Pdgfra+ OPCs. (b) Injection of SADΔG-EGFP(EnvA) into sub-cingular corpus callosum results in widespread labeling of EGFP+ input neurons (representative injection site image from n = 10 animals. Green = EGFP, white = DAPI). (c) Injection of SADΔG-EGFP(EnvA) into animals lacking Pdgfra::CreER driver allele results in only minimal transduction, likely resulting from minimal quantities of EnvA- viral particles (representative image of n = 4 animals. Green = EGFP, white = DAPI). (d) Pdgfra+/Olig2+ OPC starter cells (left) are transduced with SADΔG-EGFP(EnvA) (right, same cell. Magenta = Pdgfra, white = Olig2, green = EGFP). (e) Immunostaining confirms Cre recombinase expression in Pdgfra+ OPCs (green) but not NeuN+ neurons (blue). Scale bars in (d,e) represent 10 microns.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49291/elife-49291-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Immunofluorescence staining for the white matter and reactive astrocyte marker Gfap (white; top panels) and the macrophage marker Iba1 (white; bottom panels) does not identify substantial evidence of EGFP+ (green) astroglial/microglial cells despite evidence of reactive gliosis in the injection site. (b) Quantification of colocalization studies represented in (a) demonstrates minimal overlap concentrated to the injection site that is not increased in Cre+ animals compared with minimal expected background labeling in Cre WT controls. Bars indicate the mean, n = 6 animals (Cre WT) or nine animals (Cre+) respectively; error bars represent SEM. (c) Example of EGFP+Pdgfra+Olig2+ starter cells with disrupted morphology. Blue = DAPI, green = EGFP; red = Pdgfra; white = Olig2. (d) Representative micrograph of SADΔG-mCherry compared against SADΔG-EnvA-GFP injections in Pdgfra::CreER and Cre WT animals after tamoxifen injection. In the absence of EnvA, widespread transduction occurs independently of Cre expression, confirming that viral EnvA confers starter cell specificity in Pdgfra::CreER animals. (e) Representative micrograph of CASPR (red) colocalization (indicated with white arrow) along myelinated GFP+ (green) input neurons, as well as unmyelinated axonal profiles lacking CASPR (green arrows). (f) Depth of Pdgfra+GFP+ OPC starter cells as measured from the pia. Histogram divided into 100 micron bins, with y-axis labels indicating center of bin; n = 68, 75, 93 cells respectively with injection site indicated by legend color. Scale bars in (a) are 50 microns, in (c) are 10 microns, in (d) are 500 microns, and in (e) is five microns.
+
 Viral injection occured three days following a single dose of tamoxifen. At 5 days following injection of SADΔG-EGFP(EnvA) into the genu of the corpus callosum inferior to the cingulum bundle, we observed substantial labeling of presynaptic neuronal inputs (Figure 1B). In control (gp4-TVA)fl mice lacking the Pdgfra::CreER transgene, injection of tamoxifen and modified rabies virus achieved only minor, local background labeling expected to result from small fractions of EnvA negative viral particles (Figure 1C). Pdgfra+/Olig2+/EGFP+ starter cells were present in the injection site (Figure 1D), while other glial subtypes including Gfap+ white matter astrocytes as well as Iba1+ macrophages and microglia were EGFP negative, confirming the specificity of glial infection to the targeted OPC population (Figure 1—figure supplement 1A,B). Immunostaining for Cre expression at this timepoint confirmed previously-reported driver specificity to OPCs (Kang et al., 2010), with no expression of Cre in NeuN+ neurons in this context (Figure 1E). Thus, the starter cell population is limited to the oligodendroglial lineage, with no evidence of non-synaptic ‘leak’ of virus into other cell populations. While viral infection did result in limited toxicity to infected OPCs as suggested by morphology, expression of the identifying markers, Pdgfra and Olig2, was retained (Figure 1—figure supplement 1C). To further confirm specificity of OPC transduction, we performed comparison injections with SADΔG-mCherry lacking EnvA – and therefore capable of unrestricted transduction – into Pdgfra::CreER and Cre WT control animals (Figure 1—figure supplement 1D). In stark contrast to (EnvA)-bearing virus, broad cortical transduction is observed in both animals. This difference in transduction patterns between EnvA-bearing virus and non-psuedotyped virus indicates that TVA expression in OPCs successfully restricts EnvA-bearing virus transduction.
 
-## OPCs in corpus callosum receive brain-wide synaptic input
+### OPCs in corpus callosum receive brain-wide synaptic input
 
 Quantification of input neurons revealed extensive neuronal territories that synapse onto starter OPCs in the corpus callosum (Figure 2A,B). Summing all inputs identified to these white matter OPCs, viral input/starter ratios in this context are approximately 23 (slope of linear regression 23.46 ± 2.8 standard error, Figure 2C), with neuronal input cells clearly identifiable by morphology and EGFP expression (Figure 2D). To corroborate this ratio, we performed immunofluorescence staining of PSD95 puncta in the corpus callosum and quantified colocalized puncta with Pdgfra+ OPCs with the aid of 3D modeling software (Figure 2—figure supplement 1A). Assessing 95 cells across nine animals, we found a distribution of PSD95-colocalized puncta from 0 to 67, with a mean of 21.62 puncta ±2.8 standard error per OPC (Figure 2—figure supplement 1B,C). Both myelinated and non-myelinated input axons are present as indicated by immunofluorescence staining for paranodal CASPR (Figure 1—figure supplement 1E). Measuring starter OPC depth relative to the pia confirmed their subcortical location (Figure 1—figure supplement 1F). Neuronal inputs to OPCs in the genu of the corpus callosum inferior to the cingulum bundle are concentrated in dorsal and ventral mPFC (defined here to include anterior cingulate, pre- and infralimbic regions) and secondary motor cortex (MOs) (Figure 2E). Inputs from primary motor (MOp) and primary somatosensory (SSp) cortices are also present, along with substantial connectivity from the thalamus (TH, Figure 2E). These thalamic inputs are most consistently localized to ventroanterolateral (VAL), anteromedial (AM), and anterodorsal (AD) nuclei, consistent with thalamocortical projection neurons targeting motor and prefrontal cortical areas (Figure 5). The majority of inputs identified arise ipsilateral to the viral injection site; however, the relatively high contribution of inputs arising in the contralateral mPFC combined with high overall labeling densities in this region suggest that callosal OPCs are substantially innervated by contralateral intracortical projections (Figure 2F). By contrast, thalamic inputs are ipsilaterally restricted, further supporting the monosynaptic restriction of viral labeling (Figure 2F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/49291/elife-49291-fig2-v1.jpg)
+
+**Figure 2.:** (a) Representative sections of neuronal input labeling to OPCs following stereotaxic injection of SADΔG-EGFP(EnvA) to corpus callosum underlying the secondary motor area. Green = EGFP, white = DAPI. (b) Schematic of injection site. (c) Linear regression fit of neuronal input/Pdgfra+ OPC starter cells. Each point represents one animal, n = 12 animals, R2 = 0.8732, slope = 23.46 ± 2.8 standard error. (d) Representative confocal micrograph of EGFP+ (green) input neurons in medial prefrontal (mPFC) cortex. (e) Inputs to callosal OPCs largely arise from frontal association cortices but also include primary motor and somatosensory areas and thalamic nuclei. Each bar represents mean input percentage, error bars indicate SEM, n = 10 total. mPFC = medial prefrontal cortex (anterior cingulate, prelimbic, infralimbic regions), MOs = secondary motor area, MOp = primary motor area, SSp = primary somatosensory area, TH = thalamus (including all thalamic nuclei). (f) Percent of input neurons ipsilateral or contralateral to the OPC starter cells. Bars indicate mean, error bars indicate SEM, n = 10 animals. (g) Representative image of parvalbumin+ (PV+, magenta) GFP+ (green) input neuron (arrowhead) and quantification of percentage of input neurons that co-label with immunofluorescence makers for PV, somatostatin (SOM), or vasoactive intestinal peptide (VIP). Bars represent mean, error bars indicate SEM, n = 6 animals total. Scale bars in (d,g) represent 20 microns.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49291/elife-49291-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Representative micrograph of PSD95 puncta (red) and Pdgfra+ (green) OPC in corpus callosum, with subsequent rendering of 3D filament model of OPC and colocalized puncta generated in Imaris. Scale bars 10 microns, (b) Frequency distribution of PSD95 colocalized puncta across all OPCs imaged in corpus callosum and rendered as in (a); bars indicate relative frequency, n = 95 cells across nine animals. (c) Comparison of mean PSD95 colocalized puncta per OPC calculated from the nine animals investigated with neuronal input:OPC starter ratio estimated by linear regression as in (Figure 2C). Error bars indicate standard error of each respective measurement.
+
 While GABAergic inputs to OPCs have been described (Kukley et al., 2008; Lin and Bergles, 2004), the majority of evidence for neuron-OPC synaptic connectivity in the corpus callosum arises from recordings of glutamatergic excitation either spontaneously or following callosal fiber stimulus (Ziskin et al., 2007; De Biase et al., 2010). Immunostaining for characteristic non-overlapping cortical inhibitory subpopulation markers accounting for the majority of total cortical inhibitory neurons (Pfeffer et al., 2013) – parvalbumin (PV), vasoactive intestinal peptide (VIP), and somatostatin (SOM) – revealed PV+/GFP+ co-labeled inputs encompassing approximately 3% of inputs to OPCs in CC (Figure 2G). The majority of these PV+GFP+ inputs were present ipsilaterally in the overlying MOs/mPFC. SOM or VIP co-labeled GFP+ input neurons comprised 1% or less of total inputs to OPCs in the CC. The excitatory to inhibitory neuron ratio of inputs to callosal OPCs is ~20:1, with inhibitory neurons defined by PV, VIP or SOM-expression.
 
-## OPCs in premotor cortex receive synaptic input from premotor cortical and thalamic neurons
+### OPCs in premotor cortex receive synaptic input from premotor cortical and thalamic neurons
 
 Examining the afferents to cortical OPCs in the secondary motor (premotor, MOs, M2) cortex, injection of SADΔG-EGFP(EnvA) into MOs of Pdgfra::CreER-(gp4-TVA)fl mice (Figure 3B) again resulted in infection of Pdgfra+/EGFP+ starter OPCs. Labeled input neurons were strikingly predominant within cortical territory defining the boundaries of MOs (Figure 3A,D). Input to starter cell ratios for these gray matter OPCs were not substantially different from those in CC-injected animals (slope of best-fit linear regression = 18.76 ± 4.4 standard error, Figure 3C). Beyond MOs, a smaller fraction of inputs arise from primary motor cortex (MOp), nearby medial prefrontal cortex (mPFC), and to a lesser extent, projections from SSp, and thalamocortical projection neurons (Figure 3D,E), illustrating brain-wide premotor circuit inputs to premotor cortical OPCs. Immunostaining for markers of interneuron identity revealed PV+/GFP+ inputs averaging 6% of total input neurons to mPFC OPCs, while SOM+/GFP+ or VIP+/GFP+ costaining was present in approximately 1% or less of total inputs (Figure 3F). Input neurons to MOs OPCs are primarily ipsilateral, with a smaller proportion of afferent projections arising contralaterally than observed in OPCs within the CC (Figure 3G). Like CC OPCs, the excitatory to inhibitory ratio of inputs to premotor cortical OPCs is ~20:1, with inhibitory neurons defined by PV, VIP or SOM-expression.
 
@@ -49,7 +65,7 @@ Examining the afferents to cortical OPCs in the secondary motor (premotor, MOs, 
 
 **Figure 3.:** (a) Representative sections of neuronal input labeling to OPCs following stereotaxic injection of SADΔG-EGFP(EnvA) to MOs. Green = EGFP, white = DAPI. (b) Schematic of injection site. (c) Linear regression fit of neuronal input/Pdgfra+ starter cells. Each point represents one animal, R2 = 0.7486, slope = 18.76 ± 4.4 standard error). (d) Representative confocal micrographs of EGFP+ (green) input neurons in secondary motor cortex (MOs) and thalamus. (e) Inputs to gray matter OPCs found in MOs are chiefly located within MOs, n = 8 animals total. mPFC = medial prefrontal cortex (anterior cingulate, prelimbic, infralimbic regions), MOs = secondary motor area, MOp = primary motor area, SSp = primary somatosensory area, TH = thalamus (including all thalamic nuclei). (f) Percentage of input neurons that co-label with immunofluorescence makers for parvalbumin (PV), somatostatin (SOM), or vasoactive intestinal peptide (VIP), n = 5 animals total. (g) Percent of input neurons ipsilateral or contralateral to OPC starter cells. Bars indicate mean, error bars indicate SEM, each point represents an individual animal (n = 8). Scale bars in (d) represent 20 microns.
 
-## OPCs in primary somatosensory cortex receive synaptic input from ipsilateral sensory cortex and thalamic neurons
+### OPCs in primary somatosensory cortex receive synaptic input from ipsilateral sensory cortex and thalamic neurons
 
 To assess whether the pattern of cortical OPC inputs arising from local cortical neurons and functionally-associated thalamic nuclei was specific to MOs, we injected SADΔG-EGFP(EnvA) into primary somatosensory cortex (SSp) of Pdgfra::CreER-(gp4-TVA)fl mice (Figure 4B). As in MOs and CC, this resulted in primary infection of Pdgfra+/EGFP+ starter OPCs, and as in MOs, inputs were confined primarily to sensory cortical territory (SSp) (Figure 4A). Input to starter cell ratios at this site did not differ significantly from injections in CC or MOs (slope of best-fit linear regression = 22.57 ± 3.8 standard error, Figure 4C). Examination of GFP+ input neurons revealed inputs arising primarily from SSp across multiple cortical layers and from the thalamus (Figure 4D,E). In contrast to OPCs residing in CC, and to a lesser extent MOs, input neurons to OPCs in SSp are almost entirely ipsilaterally-restricted, and there is a small (<5%) contribution of input neurons from mPFC, MOs, or MOp. As in MOs, immunostaining for markers of interneuron identity revealed approximately 4% of GFP+ input neurons colabeled with PV, while SOM+ or VIP+ inputs comprised 1% or less of total GFP+ inputs (Figure 4F). Like CC and promotor cortex OPCs, the excitatory to inhibitory ratio of inputs to somatosensory cortical OPCs is ~20:1, with inhibitory neurons defined by PV, VIP or SOM-expression.
 
@@ -57,7 +73,7 @@ To assess whether the pattern of cortical OPC inputs arising from local cortical
 
 **Figure 4.:** (a) Representative sections of neuronal input labeling to OPCs following stereotaxic injection of SADΔG-EGFP(EnvA) to SSp. Green = EGFP, white = DAPI. (b) Schematic of injection site. (c) Linear regression fit of neuronal input/Pdgfra+ starter cells. Each point represents one animal, R2 = 0.8145, slope = 22.57 ± 3.8 standard error). (d) Representative confocal micrographs of EGFP+ (green) input neurons in primary somatosensory cortex (SSp) and thalamus. (e) Inputs to gray matter OPCs found in SSp are chiefly located within SSp. n = 9 animals total. mPFC = medial prefrontal cortex (anterior cingulate, prelimbic, infralimbic regions), MOs = secondary motor area, MOp = primary motor area, SSp = primary somatosensory area, TH = thalamus (including all thalamic nuclei). (f) Percentage of input neurons that co-label with immunofluorescence makers for parvalbumin (PV), somatostatin (SOM), or vasoactive intestinal peptide (VIP), n = 5 animals. Bars indicate mean, error bars indicate SEM. Scale bars in (d) represent 20 microns.
 
-## Thalamic input neurons to OPCs arise from functionally-related thalamic nuclei
+### Thalamic input neurons to OPCs arise from functionally-related thalamic nuclei
 
 For OPCs in all brain regions studied, a substantial fraction of synaptic inputs arise from thalamic neurons. To assess whether these thalamic inputs arise from functionally-related nuclei, we registered acquired image tiles to the Allen Institute reference adult mouse brain atlas (Lein et al., 2007) and localized identified GFP+ inputs (Figure 5). Thalamic projections providing synaptic input to OPCs located in the corpus callosum underlying primary and secondary motor cortex arise primarily from ventral anterior-lateral (VAL) and anteromedial (AM) nuclei, consistent with known projections to motor planning territories (Figure 5A), along with projections from the anterodorsal (AD) nucleus. Strikingly, thalamic inputs to MOs OPCs also arose primarily from VAL and AM nuclei (Figure 5B). This is largely distinct from thalamic projections to SSp OPCs, which arise primarily within ventral posterolateral (VPL) and ventral posteromedial (VPM) regions, consistent with known projections to somatosensory targets (Figure 5C). Together, this suggests that particularly in the case of cortical OPCs, these thalamocortical synaptic inputs arise from functionally-related thalamic nuclei, consistent with expected thalamocortical projection patterns.
 
@@ -65,7 +81,7 @@ For OPCs in all brain regions studied, a substantial fraction of synaptic inputs
 
 **Figure 5.:** Tiled immunofluorescence images of GFP+ input neurons were registered to the Allen Brain Atlas to determine the thalamic nuclei from which the inputs arise. Nuclei are color-coded here according to the primary function of their cortical projection targets – motor (yellow), sensory (blue), or mixed (green). (a) Thalamic inputs to OPCs in the CC underlying primary and secondary motor cortices arise primarily from ventral anterior-lateral (VAL) and anteriomedial (AM) nuclei. (b) Thalamic inputs to OPCs in MOs arise primarily from VAL and AM nuclei. (c) Thalamic inputs to SSp arise primarily from ventral posterolateral (VPL) and ventral posteromedial (VPM) nuclei. All bars indicate mean, error bars indicate SEM. Scale bars represent 100 microns. N = 10 mice (CC), eight mice (MOs), and six mice (SSp) respectively. Thalamic nuclei defined as presented in the Allen Brain Atlas and abbreviated as follows: VAL = ventral anterior-lateral, AMd = anteromedial dorsal part, AMv = anteromedial ventral part, VPL = ventral posterolateral, VPM = ventral posteromedial, PO = posterior complex, MD = mediodorsal, AD = anterodorsal.
 
-## Total synaptic connectivity to OPCs is consistent across brain regions despite reduced input neuron activity
+### Total synaptic connectivity to OPCs is consistent across brain regions despite reduced input neuron activity
 
 To assess whether the degree of synaptic connections to OPCs varied across the injection sites assessed, we compared the average neuronal input ratios, assessed as the slope of the best-fit linear regression to total GFP+ inputs versus starter Pdgfra+/GFP+ OPCs. We found no significant difference in the synaptic input ratios between OPCs in the CC, MOs, or SSp (Figure 6A). To assess whether perturbations of synaptic input activity might modify the degree of synaptic connectivity, we performed daily whisker trimming of Pdgfra::CreER-(gp4-TVA)fl mice for 11 days prior to tamoxifen injection (Figure 6B). Anticipating that input activity to the cortical barrel field would be reduced in whisker-trimmed animals, we then injected SADΔG-EGFP(EnvA) into barrel field of trimmed and matched untrimmed control animals. Five days after viral injection, the animals were euthanized and total GFP+ input neurons and Pdgfra+/GFP+ starter OPCs were quantified. We found no significant difference in neuronal input to starter ratio between whisker-trimmed and untrimmed control animals as assessed by the slope of best-fit linear regression (Figure 6C,D). Moreover, we found no significant difference in the distribution of input neurons between trimmed and untrimmed animals, with primarily somatosensory cortical inputs and approximately 10% of inputs arising from thalamus (Figure 6E). Quantification of immunostaining for interneuron markers revealed PV+GFP+ inputs in equal proportion (3–4%) in trimmed and untrimmed groups (Figure 6F), indicating an unchanged excitatory to inhibitory (PV+ neuron) ratio of OPC inputs regardless of whisker trimming at this time point. Taken together, neither OPC location across white and gray matter territories, nor modification of input activity in barrel field by whisker trimming modified the quantity or pattern of neurons providing synaptic input to OPCs at this time point.
 
@@ -87,26 +103,141 @@ An important limitation of our current study is the inability to delineate the c
 
 ## Materials and methods
 
-## Animal breeding
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pdgfra (goat polyclonal)</td>
+      <td>R and D systems</td>
+      <td>AF1062 RRID:AB_2236897</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Olig2 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>EPR2673 RRID:AB_10861310</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab13970 RRID:AB_300798</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-parvalbumin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab11427 RRID:AB_298032</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-somatostatin (rat monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB354 RRID:AB_2255365</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VIP (rabbit polyclonal)</td>
+      <td>Immunostar</td>
+      <td>20077 RRID:AB_572270</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1 (rabbit polyclonal)</td>
+      <td>Wako</td>
+      <td>019–19741 RRID:AB_839504</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Cre recombinase (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB3120 RRID:AB_2085748</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD95 (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>51–6900 RRID:AB_2533914</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CASPR (rabbit monoclonal)</td>
+      <td>Cell Signaling Technologies</td>
+      <td>97736 RRID:AB_2800288</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Imaris</td>
+      <td>Bitplane/Oxford Instruments</td>
+      <td>v8.1.2 RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Matlab</td>
+      <td>Mathworks</td>
+      <td>R2017b RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>B6N.Cg-Tg(Pdgfra-cre/ERT)467Dbe/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>018280 RRID:IMSR_JAX:018280</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>B6;129P2-Gt(ROSA)26Sortm1(CAG-RABVgp4,-TVA)Arenk/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>024708 RRID:IMSR_JAX:024708</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal breeding
 
 All animal studies were approved by the Stanford Administrative Panel on Laboratory Animal Care (APLAC). Animals were housed on a 12 hr light cycle according to institutional guidelines. Mice expressing CreER under the control of Pdgfra promoter/enhancer regions (Pdgfra::Cre/ERT) were purchased from The Jackson Laboratory (stock number 018280) and have been previously described (Kang et al., 2010). Mice expressing a recombinant rabies G glycoprotein gene (RABVgp4) along with the gene encoding avian leucosis and sarcoma virus subgroup A receptor (TVA) preceded by a loxP-flanked STOP fragment and inserted into the GT(ROSA)26Sor locus (R26(gp4-TVA)fl/fl) have been previously described (Takatoh et al., 2013) and were purchased from The Jackson Laboratory (stock number 024708). Hemizygous Pdgfra::Cre/ERT mice were then crossed with homozygous R26(gp4-TVA)fl/fl mice to generate animals used in subsequent experiments. Genotyping was performed by PCR according to supplier protocols.
 
-## Viral tracing
+### Viral tracing
 
 EGFP-expressing G-deleted rabies virus pseudotyped with EnvA (SADΔG-EGFP(EnvA)) (Wickersham et al., 2007) was prepared at and obtained from the Salk Institute Gene Transfer, Targeting, and Therapeutics Facility vector core (GT3). Virus used in these studies originated in two lots with reported titers of 7.92 × 107 and 1.94 × 109 TU/mL. 3 days prior to stereotaxic injections, Cre/ERT-mediated recombination was induced by a single IP injection of 100 mg/kg of tamoxifen (Sigma) solubilized in corn oil. Stereotaxic delivery of virus occurred under isofluorane anesthesia in BSL2+ conditions. 300 nL of SADΔG-EGFP(EnvA) was delivered to the corpus callosum (coordinates AP +1 mm, ML – 1 mm, DV −1.2 mm) or the overlying secondary motor area (coordinates AP + 1 mm, ML – 0.8 mm, DV −0.5 mm) or primary somatosensory cortex (coordinates AP −1 mm, ML −3 mm, DV −0.7 mm) over 5 min (Stoelting stereotaxic injector). Animals were monitored for general health, and no adverse symptoms of viral administration were observed. 5 days following viral injection, animals were deeply anesthetized with tribromoethanol and transcardially perfused with PBS followed by 4% PFA, then brains were removed and post-fixed overnight in 4% PFA. Brains were then transferred to 30% sucrose, and after sinking serial 40 micrometer floating coronal sections were prepared on a freezing-stage microtome for subsequent immunolabeling and imaging.
 
-## Whisker trimming
+### Whisker trimming
 
 Pdgfra::CreERT; R26(gp4-TVA)fl mice generated as described above were trimmed of whiskers bilaterally to the level of the skin using electric clippers daily beginning at P25. At P37, tamoxifen was injected as described above, and whisker trimming continued daily until P40, when SADΔG-EGFP(EnvA) was injected as described above. Animals were then sac’d and perfused at P45 as described above.
 
-## Immunofluorescence and confocal microscopy
+### Immunofluorescence and confocal microscopy
 
 Antibodies and dilutions used for immunofluorescence staining were as follows: polyclonal goat anti-mouse Pdgfra (R and D Systems, AF1062, 1:500), monoclonal rabbit anti-mouse Olig2 (Abcam EPR2673, 1:500), polyclonal chicken anti-GFP (Abcam, ab13970, 1:1000), polyclonal rabbit anti-parvalbumin (Abcam, ab11427, 1:250), monoclonal rat anti-somatostatin (Millipore, MAB354, 1:200), polyclonal rabbit anti-VIP (Immunostar 20077, 1:500), polyclonal rabbit anti-Iba1 (Wako, 1:500), mouse anti-Cre recombinase (Millipore, MAB3120, clone 2D8, 1:1000), rabbit anti-PSD95 (Invitrogen, 51–6900, 1:100), and rabbit anti-CASPR (Cell Signaling Technologies, clone D813V). Tissues collected at serial intervals of 1 in every six sections were blocked and permeabilized with 3% normal donkey serum and 0.3% Triton X-100 in Tris-Buffered Saline (3%NDS/TBST) for 30 min at room temperature, followed by incubation with antibodies at the indicated dilution factors in 1%NDS/TBST for 18 hr at four degrees C. For mouse anti-Cre recombinase staining, NDS block was followed by treatment with mouse-on-mouse staining reagent (Vector Laboratories, BMK-2202) prior to incubation with primary antibody. Following a series of washes, secondary AlexaFluor-tagged antibodies raised in donkey (Jackson Immunoresearch) in 1%NDS/TBST were incubated for 4 hr at room temperature, and following a series of washes, sections were counterstained with DAPI (1 ug/mL) and mounted on slides with ProlongGold media (ThermoFisher Scientific). Tile scanning images were acquired at 10X magnification on a Zeiss AxioObserver upright fluorescence microscope with automated stage and tile-scanning capability (Microbrightfield). For identification of atlas regions for labeling quantification, acquired images were manually registered to the closest available section from the Allen Brain Mouse Reference Atlas (Lein et al., 2007) (ImageJ) using DAPI fluorescence of the section outline and major neuroanatomical structures to guide fitting. Analysis participants were blinded to injection conditions, and independent adjustment of atlas registration maps did not substantially impact counting results. Cell counting was performed by two independent reviewers on every 6th 40 micrometer tissue section throughout the brain, and total cell count estimates were derived by multiplying the number of counted cells by 6. Multichannel immunofluorescence microscopy to identify starter cell populations, neuronal identity, and other high-resolution imaging was conducted by acquiring Z-stacks through the target region with a Zeiss LSM710 confocal microscope.
 
-## PSD95 colocalization
+### PSD95 colocalization
 
 Floating sections immunostained for Pdgfra and PSD95 as above were imaged as Z stacks on a Zeiss LSM710 confocal microscope with a 63X objective. Acquired Z-stacks were loaded in Imaris software (Bitplane) with MATLAB integration. Filament models were constructed using the Imaris Filament plugin. PSD95 puncta were selected with the Imaris Spots plugin. Colocalized puncta were identified with the MATLAB plugin for Imaris ‘Find spots close to filament.’ Modeling parameters were held consistent across individual cohorts.
 
-## Statistics and reproducibility
+### Statistics and reproducibility
 
 Stereotaxic injections were repeated in three independent cohorts (litters) of animals for each injection location, and both male and female mice were used. Sample sizes were established based upon similar studies in the literature and were not pre-determined. Cell counters were blinded to injection location, and counts were performed independently by two reviewers. All statistical tests were performed using Graphpad Prism software and details of individual tests are described in figure legends.

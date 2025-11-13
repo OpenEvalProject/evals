@@ -39,35 +39,358 @@ Recently, the first PP2A:B56 specific SLiM, the LxxIxE motif, was identified (He
 
 ## Results
 
-## A subset of PP2A:B56 specific substrates depend on a conserved acidic patch in B56 for PP2A:B56 binding
+### A subset of PP2A:B56 specific substrates depend on a conserved acidic patch in B56 for PP2A:B56 binding
 
 An analysis of the amino acid conservation among 150 distinct B56 sequences shows that the residues that comprise the concave surface of B56 are exceptionally conserved (Figure 1A). This conserved region includes the deep, hydrophobic binding pocket that specifically binds the LxxIxE SLiM (Figure 1A; Hertz et al., 2016; Wang et al., 2016). However, the conserved region is much larger, suggesting that regions adjacent to the LxxIxE pocket might also contribute to regulator/substrate binding. An examination of the electrostatic potential of the same region led to the identification of a surface adjacent to the LxxIxE pocket that is not hydrophobic, but instead is highly negatively charged (Figure 1B). This surface is defined by multiple acidic residues that are perfectly conserved in B56, both among its various isoforms and throughout evolution (Figure 1A, Figure 1—figure supplement 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-v2.jpg)
+
+**Figure 1.:** (A) PP2A:B56γ holoenzyme (PDBID 2NPP): scaffolding subunit A (beige) and catalytic subunit C (grey; bound metals shown as pink spheres) illustrated as cartoons with transparent surfaces. The regulatory B subunit, B56, is shown as a surface and colored by sequence conservation. An LxxIxE peptide (RepoMan: 588PLLpSPIPELPE598; p indicates residue is phosphorylated) bound to B56γ is shown in green (PDBIDs 5SW9 and 2NPP superimposed using B56). The location of the conserved acidic patch in B56 (see B) is highlighted with a dashed, yellow square. (B) The B56γ:LxxIxE complex (PDBID 5SW9) colored according to electrostatic potential; LxxIxE peptide is in green. The B56 residues that comprise the conserved acidic patch (yellow dashed square) are shown as sticks and labeled (right; residues mutated in the ‘2R’ mutants underlined). (C) Sequences of B56α and B56γ that comprise the acidic patch, with the acidic residues colored red. The B56 ‘2R’ variants indicate the acidic residues mutated to arginine ‘R’. (D) Volcano plot representing the mass spectrometry-identified proteins co-purifying with YFP-B56α versus YFP-B56α2R (E335R/D338R) from mitotic HeLa cells expressing YFP-B56α or YFP-B56α2R. PPP2R1A (PP2A regulatory subunit A, α isoform), PPP2CA (PP2A catalytic subunit, α isoform) are labeled in grey. Predicted and confirmed LxxIxE containing proteins (Hertz et al., 2016; Wang et al., 2016) are highlighted in orange. Four of the six most significantly affected LxxIxE containing B56 interactors selected for further study [NHS, AIM1, CDCA2 (RepoMan) and KIF4A] are labeled. (E) Same as (D) except for YFP-B56γ versus YFP-B56γ2R (E310R/D313R).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Human B56 variants. (B) B56 from various organisms. Residues that define the acidic patch are highlighted in red (human B56α1: E301, E334, E335, D338, E341). The species are: Homo sapiens (human), Mus musculus (mouse), Gallus gallus (chicken), Danio rerio (fish), and Xenopus laevis (frog), Candida albicans (Candida), Arabidopsis thaliana (A. thaliana), Chlamydomonas reinhardtii (Algae).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Protocols by which endogenous B56 (all isoforms except β) was depleted by RNAi and complemented with the indicated YFP-B56 variants. (B) Depletion efficiency of endogenous B56 using RNAi. (C) The time spent from the nuclear envelope breakdown (NEBD) to the completion of anaphase was determined from at least two independent experiments. Circles represent single cells. The number of cells and median (red line) times are indicated. Mann–Whitney test was used to determine the p-values indicated. ∗∗∗∗ p<0.0001; *p<0.05; ns, not significant.
 
 To identify if PP2A:B56 substrates/regulators are affected by mutating the conserved B56 acidic patch, we mutated two acidic amino acids in this negatively charged area to arginines (B56α2R: E335R/D338R, B56γ2R: E310R/D313R; Figure 1C) and identified proteins associated with YFP-B56α/γ or YFP-B56α/γ2R from mitotic HeLa cells using quantitative label free mass spectrometry (MS). The MS analysis shows that a subset of the LxxIxE-containing B56 interactors are regulated specifically by the acidic patch for B56 binding in both isoforms. This includes the mitotic regulators KIF4A, RepoMan (CDCA2), Nance-Horan syndrome protein (NHS) and absent in melanoma 1 protein (AIM1), (ratio WT/2R > 9, p-value<0.05; Figure 1D,E, Figure 1—source data 1). While the perturbation of these interactions is not sufficient to perturb B56 function in supporting mitotic timing in HeLa cells (Figure 1—figure supplement 2A,B,C), it does reveal that the B56 acidic patch is a key binding determinant for a subset of LxxIxE containing PP2A-B56 interactors (Figure 1D,E).
 
 To delineate the contribution of the acidic patch, we investigated the molecular site in KIF4A, RepoMan, NHS and AIM1 that is responsible for binding the B56 acidic patch. We reasoned that the B56 acidic patch interacts with a complementary basic patch in B56 interactors. Analysis of the primary sequences of these regulators highlighted the presence of a conserved basic charged rich region within ~15 amino acid N-terminal to an established LxxIxE motif, which we defined as a basic patch (Figure 2A, Figure 2—figure supplement 1). To measure the contribution of each basic patch to B56 binding, we used isothermal titration calorimetry (ITC). The data showed that mutating the KIF4A basic patch (bpm, basic patch mutant: 1208KKK1210 to AAA) reduced the affinity of KIF4A1192-1232 for B56γ by ~4 fold (Figure 2B,C,D, Table 1, Figure 2—figure supplement 2A,B). Similarly statistically significant reduced affinities were observed when the basic patch motif of RepoMan, NHS and AIM1 were mutated (CDCA2/RepoMan 563RKKK566 to AAAA; NHS 1618RCR1620 to ACA; AIM1 716KRKKAR721 to AAAAAA; Table 1, Figure 2—figure supplement 2C–H). Together, these data illustrate that the key role of proximally located basic patches for B56 binding.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-v2.jpg)
+
+**Figure 2.:** (A) B56 interactors with the basic patch (blue) and LxxIxE motif (green) sequences shown; Δ indicates the number of residues between the basic patch and the LxxIxE motif. (B) Binding isotherm of WT KIF4A1192-1232 with B56γ. (C) Binding isotherm of KIF4A1192-1232,bpm (1208KKK1210 to AAA) with B56γ. (D) Cartoon representation of the effect of mutating the basic patch (BP) of the bp-dependent interactors on their interaction with B56 (AP, acidic patch). (E) Immunoprecipitation of YFP-B56α from cells stably expressing YFP-B56α and transfected with the indicated myc-tagged full-length KIF4A variants; asterisk indicates YFP, which was used as a control. The amounts of myc-KIF4AFL co-purified with YFP-B56α were normalized to the band intensity of YFP. The wt is set to 1. (F) Immunoprecipitation of YFP-B56α from cells stably expressing YFP-B56α and transfected with the indicated myc-tagged AIM1625-900 variants. The amounts of myc- AIM1625-900 co-purified with YFP-B56α were normalized to the band intensity of YFP. (G) Immunoprecipitation of YFP-B56α from cells stably expressing YFP-B56α and transfected with the indicated myc-tagged NHS1419-1631 variants. The amounts of myc-NHS1419-1631 co-purified with YFP-B56α were normalized to the band intensity of YFP.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Sequence alignment of the basic patch and the proximal LxxIxE motif of KIF4A, RepoMan, NHS and Aim1 (Residue are numbered based on human proteins).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) ITC data for B56WT with KIF4AWT(1192–1232). (B) ITC data for B56WT with KIF4Abpm(1192–1232; 1208KKK1210 to AAA). (C) ITC data for B56WT with RepoMan (533-603; RM). (D) ITC data for B56WT with RMbpm(533–603, 563RKKK566 to AAAA). (E) ITC data for B56WT with NHS (1616–1635). (F) ITC data for B56WT with NHSbpm(1616–1635, 1618RCR1620 to AAA). (G) ITC data for B56WT with AIM1 (716–741). (F) ITC data for B56WT with AIM1bpm (716-741; 716KRKKAK721 to AAAAA). (I) ITC data for B56WT with KIF4ALE(1192–1232; 1224CS1225 to LE). (J) ITC data for B56WT with KIF4ALE,PE(1192–1232; 1224CS1225 to LE, 1231AH1232 to PE). (K) ITC data for B56WT with KIF4ALE,PE, bpm(1192–1232; 1224CS1225 to LE, 1231AH1232 to PE, 1208KKK1210 to AAA). (L) ITC data for B56γ2R (E310R/D313R) with KIF4ALE,PE. (M) ITC data for B56γ3R (E276R/E310R/D313R) with KIF4ALE,PE.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Mutating the basic patch or the LxxIxE motif of KIF4A1001-1232 reduces KIF4A:B56α binding. Immunoprecipitation of YFP-B56α from cells stably expressing YFP-B56α and transfected with the indicated myc-tagged KIF4A1001-1232 C-terminal variants (bpm: 1209KKK1211 to AAA). (B) Mutating the basic patch or the LxxIxE motif of KIF4ALE also reduces KIF4A:B56α binding. Immunoprecipitation of YFP-B56α from cells stably expressing YFP-B56α and transfected with the indicated myc-tagged KIF4AFL variants (LE: 1224CS1225 to LE).
+
+**Table 1.**
+ Isothermal titration calorimetry (ITC) measurements between B56γ and KIF4A.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>B56γ12-380</th>
+      <th>Titrant</th>
+      <th>KD (µM)*</th>
+      <th>ΔH (kcal/mol)</th>
+      <th>TΔS (kcal/mol)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>KIF4A‡ WT</td>
+      <td>15.2 ± 0.1</td>
+      <td>−11.7 ± 0.7</td>
+      <td>−5.1 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>KIF4Abpm† (K1208A/K1209A/K1210A)</td>
+      <td>55.6 ± 16.8</td>
+      <td>−11.5 ± 2.2</td>
+      <td>−5.6 ± 2.4</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>KIF4ALE (C1224L/S1225E)</td>
+      <td>0.32 ± 0.01</td>
+      <td>−10.0 ± 0.1</td>
+      <td>−2.0 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>
+      <td>0.10 ± 0.01</td>
+      <td>−13.1 ± 1.1</td>
+      <td>−3.6 ± 1.1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>KIF4ALE,PE,bpm (K1208A/K1209A/K1210A/C1224L/ S1225E/A1231P/H1232E)</td>
+      <td>0.22 ± 0.02</td>
+      <td>−10.7 ± 0.1</td>
+      <td>−1.6 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>E310R D313R</td>
+      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>
+      <td>0.19 ± 0.01</td>
+      <td>−11.7 ± 0.1</td>
+      <td>−2.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>E276R E310R D313R</td>
+      <td>KIF4ALE,PE (C1224L/S1225E/A1231P/H1232E)</td>
+      <td>0.21 ± 0.01</td>
+      <td>−8.2 ± 0.4</td>
+      <td>−0.9 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>RM§ WT</td>
+      <td>0.13 ± 0.01</td>
+      <td>−6.0 ± 0.1</td>
+      <td>3.3 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>RMbpm (R563A/K564A/K565A/K566A)</td>
+      <td>0.28 ± 0.01</td>
+      <td>−7.5 ± 0.1</td>
+      <td>1.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>NHS¶WT</td>
+      <td>4.9 ± 0.9</td>
+      <td>−17.0 ± 2.2</td>
+      <td>−9.8 ± 2.1</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>NHSbpm (R1618A/R1620A)</td>
+      <td>54.5 ± 16.9</td>
+      <td>−18.1 ± 2.7</td>
+      <td>−12.2 ± 2.5</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>AIM1** WT</td>
+      <td>0.80 ± 0.09</td>
+      <td>−9.2 ± 0.4</td>
+      <td>−0.9 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>WT</td>
+      <td>AIM1bpm (K716A/R717A/K718A/K719A/K721A)</td>
+      <td>14.9 ± 1.8</td>
+      <td>−8.2 ± 0.2</td>
+      <td>−1.6 ± 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All reported measurements are performed with ITC buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP). Errors are from duplicate or triplicate measurements.† bpm, basic patch mutant.‡KIF4A variants, KIF4A1192-1232.§RepoMan (RM) variants, RM533-603.¶NHS variants, NHS1616-1635.**AIM1 variants, AIM1716-741._
+
 To determine if this change in affinity also alters B56 binding in cells, we generated myc-tagged constructs of KIF4A, NHS and AIM1 either as WT or a version where the basic patch was mutated (bpm). For KIF4A, we also mutated the LxxIxE motif by mutating the key Ile residue to Ala (I1227A). We then expressed these variants in a cell line stably expressing inducible YFP-B56α and the binding to the myc-tagged variants monitored by affinity purifying YFP-B56α and blotting against the myc-tag. Although all three KIF4A variants (wt, bpm and I1227A) expressed to similar levels, only the WT KIF4A co-purified efficiently with B56α (Figure 2E). Similar results were obtained for a myc-tagged basic patch and LxxIxE containing fragment of KIF4A1001-1232 (Figure 2—figure supplement 3A), AIM1625-900 (Figure 2F) and NHS1419-1631 (Figure 2G). Together, these data show that, for a subset of PP2A-B56 interactors, the basic patch motif contributes significantly to B56 binding.
 
-## The binding contribution of the basic patch motif is independent of the strength of the LxxIxE motif
+### The binding contribution of the basic patch motif is independent of the strength of the LxxIxE motif
 
 One possible role of the basic patch motif is to selectively enhance B56 affinity for more weakly binding LxxIxE motifs. The LxxIxE motifs have a range of affinities for B56, from stronger (i.e., TLSIKKL(pS)PIIEDDREADH, phosphorylated BUBR1: KD, 0.55 μM) to weaker (i.e., LSTLREQSSQS, Emi2: KD,41 μM) (Hertz et al., 2016). The KIF4A LxxIxE motif peptide (CSPIEEEAH), like that of Emi2, was previously shown to bind B56 weakly (KD, 32 μM) (Hertz et al., 2016). The basic charged motif may not contribute significantly to B56 binding in presence of a tight LxxIxE motif. In order to test this, the KIF4A sequence was mutated to the stronger LxxIxE motif by mutating 1224CS1225 to LE (KIF4ALE; the structures of B56γ:LxxIxE complexes show that the ‘L, Leu’ binds the deep hydrophobic pocket on B56γ while the ‘E, Glu’ mimics a phosphorylated Ser, which forms multiple salt bridges with B56γ residues H187, R188 [these residues are conserved in all B56 isoforms]). The affinity of KIF4A1192-1232,LE for B56γ increased 50-fold compared to WT KIF4A (Table 1, Figure 2—figure supplement 2I; KD of 0.32 μM). Mutating KIF4ALE residues 1231AH1232 to PE (KIF4ALE,PE: the ‘P, Pro’ positions the ‘E, Glu’ to form a bidentate salt bridge with B56γ R201 Wang et al., 2016) further enhanced KIF4A binding (KD of 0.10 µM; Table 1, Figure 2—figure supplement 2J). To determine if the basic patch also contributed to B56γ-KIF4A binding in a tight LxxIxE background, we used ITC. Mutating the KIF4ALE,PE basic patch (1208KKK1210 to AAA) again reduced the binding affinity by ~2 fold (KD of 0.22 µM; Table 1, Figure 2—figure supplement 2K), a reduction similar to that observed for WT KIF4A (Table 1, Figure 2B,C, Figure 2—figure supplement 2A,B). This was further confirmed with myc-tagged KIF4ALE and KIF4ALE,bpm variants in cells, showing that while the KIF4ALE variant binds more tightly to B56α compared to WT, mutating the basic patch (KIF4ALE,bpm) again reduced binding (Figure 2—figure supplement 3B). Together, these data show that the basic patch, together with the LxxIxE motif, are critical for a subset of regulators, including KIF4A, to stably interact with B56, independent of the strength of the LxxIxE motif.
 
-## The basic patch retains its structural disorder when bound to PP2A:B56
+### The basic patch retains its structural disorder when bound to PP2A:B56
 
 To understand how, at a molecular level, the 1208KKKKR1212 basic patch binds B56, we used NMR spectroscopy. An overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence and absence of B56γ showed that multiple peaks disappear upon complex formation (Figure 3A). Specifically, KIF4A residues 1207 to 1232, which includes the basic patch and the LxxIxE motif, were broadened beyond detection upon binding B56γ. The peaks corresponding to the residues between the two motifs (residues 1213 to 1224) were also broadened beyond detection, indicating this region either is involved in binding or that the conformational freedom of the linker is limited, due to the anchoring of the basic patch and the LxxIxE motifs to B56γ. A crystal structure of the KIF4A1192-1232,LEPE:B56γ complex (Figure 3—figure supplement 1; Table 2) showed that while the LxxIxE motif is well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was, as expected, not observed. A crystal structure of the AIM1716-741:B56γ complex (Figure 3—figure supplement 1; Table 2) was similar. Namely, while the AIM1 LxxIxE motif was well-ordered, electron density corresponding to a single conformation of the basic patch bound to B56 was not observed. Together, these data, coupled with the ITC results, show that the KIF4A basic patch interaction with B56 belongs to an emerging class of biomolecular complexes in which one or more partners of the complex retains their structural disorder upon complex binding. That is, the basic charged patch of KIF4A binds B56γ but does so via dynamic, rapidly interchanging conformations even when bound to B56.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence (red) and absence (black) of B56γ (1:1 ratio); basic patch and LxxIxE residues labeled blue and green, respectively. (B) Overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4A1192-1232,LE,PE in the presence (red) and absence (black) of B56γ3R E276R/E310R/E316R (1:1 ratio); basic patch and LxxIxE residues highlighted in blue and green, respectively. (C) [1H,15N] HSQC peak intensity ratios for spectra shown in A, B (black, red, respectively). (D) Cartoon representation of the effect of mutating the acidic patch (AP) of B56 on KIF4A:B56 binding (AP: acidic patch, BP: basic patch). (E) Immunoprecipitation of stably expressed YFP-B56α variants (wt, B56α2R: E335R/D338R, and B56α3R E301R/E335R/D338R and probed for endogenous KIF4A, PP2AC (PP2A catalytic subunit) and GFP (YFP-B56α). (F) Immunoprecipitation of transiently transfected myc-tagged KIF4A1001-1232 C-terminal variants (A1: K1208A; A2: 1208KK1209 to AA; A3: 1208KKK1210 to AAA; A4: 1208KKKK1211 to AAAA) from cells stably expressing YFP-B56α or YFP-B56γ. The amounts of myc-KIF4A co-purified with YFP-B56 were normalized to the band intensity of YFP.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) KIF4ALE,PE peptide (1192–1232; 1224CS1225 to LE, 1231AH1232 to PE; yellow sticks) binds B56 between heat repeats 3 and 4 (HR3 and 4; lavender and blue; B56 heat repeat schematic, with corresponding helices numbered, is shown below). (B) The KIF4ALE,PE:B56γ and AIM1:B56γ complexes are superimposed on the pS-RepoMan:B56γ complex (PDB: 5SW9) via B56γ. B56γ is colored according to electrostatic potential; KIF4A, AIM1 and RepoMan peptides are shown as yellow, purple and green sticks, respectively. The sequences of KIF4ALE,PE, AIM1, and RepoMan that include the basic patch (colored in blue) and the LxxIxE motif are shown below. The residues with electron density in the KIF4ALE,PE:B56γ, AIM1:B56γ, and pS-RepoMan:B56γ complexes are highlighted in yellow, purple and green, respectively. (C) Electrostatic and hydrogen bonding interactions between phosphomimetic KIF4ALE,PE S1225E (yellow) and B56γ H187/R188 (orange). (D) Electrostatic and hydrogen bonding interactions between RepoMan pS591 (green) and B56γ H187/R188 (blue, 5SW9). (E) The B56γ LxxIxE binding pocket (colored in light blue) and the electron density (2Fo–Fc, σ = 1.0) of the AIM1 peptide; 14 residues of the AIM1 peptide were modeled into the electron density (purple: 716KRKKARMPNSPAPHFAMPPIHEDHLE741). (F) The C-terminal residues of AIM1 peptide also interact with B56γ, with the formation of a bidentate salt bridge between AIM1 E741 and B56γ R201.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Overlay of the 2D [1H,15N] HSQC spectra of 15N-labeled KIF4ALE,PE(1192–1232; 1224CS1225 to LE, 1231AH1232 to PE) in the presence (red) and absence (black) of B564R (B56γ E276R/E310R/D313R/E316R; 1:1 ratio).The residues corresponding to the basic patch of KIF4A are labeled in blue and those corresponding to the LxxIxE motif are labeled in green. The rest are labeled in black.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Immunoprecipitation of YFP-B56 from cells stably expressing YFP-B56γWT or YFP-B56γ2R (E310R/D313R) and probed for the indicated proteins: KIF4A, GFP (YFP-B56) and PP2AC (PP2A catalytic subunit). (B) Immunoprecipitation of YFP-B56 from cells stably expressing YFP-B56γWT, YFP-B56γ2R (E310R/D313R) YFP-B56αWT, YFP-B56α2R (E3335R/D338R) and probed for the indicated proteins: RepoMan, GFP (YFP-B56) and PP2AC (PP2A catalytic subunit).
+
+**Table 2.**
+ Data collection and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>B56:KIF4ALE,PE*,†</th>
+      <th>B56:AIM1*,‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB Data collection</td>
+      <td>6OYL</td>
+      <td>6VRO</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 21 21 21</td>
+      <td>I4</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>53.3, 108.0, 117.8</td>
+      <td>111.0, 111.0, 108.9</td>
+    </tr>
+    <tr>
+      <td>Α, β, γ(°)</td>
+      <td>90, 90, 90</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>39.52–3.15</td>
+      <td>39.26–2.45</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.100 (1.104)</td>
+      <td>0.091 (1.721)</td>
+    </tr>
+    <tr>
+      <td>Mean I /σI</td>
+      <td>11.5 (1.8)</td>
+      <td>12.4 (1.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>96.6 (83.1)</td>
+      <td>99.8 (99.4)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>8.2 (7.7)</td>
+      <td>7.0 (7.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.999 (0.730)</td>
+      <td>0.999 (0.673)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>39.52–3.15 (3.26–3.15)</td>
+      <td>38.88–2.45 (2.54–2.45)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>11868</td>
+      <td>24208</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.22 (0.36)/0.24 (0.41)</td>
+      <td>0.22 (0.33)/0.23 (0.38)</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2796</td>
+      <td>2777</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>7</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>66.4</td>
+      <td>70.1</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>60.4</td>
+      <td>62.1</td>
+    </tr>
+    <tr>
+      <td>RMS deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.54</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td>Ramachandran</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0.3</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>5.8</td>
+      <td>3.4</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>93.9</td>
+      <td>95.7</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>4.3</td>
+      <td>2.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Data was collected from a single crystal.†KIF4ALE,PE 1192ELKHVATEYQENKAPGKKKKRALASNTSFFSGLEPIEEEPE1232.‡AIM1 716KRKKARMPNSPAPHFAMPPIHEDHLE741.*Values in parentheses are for highest-resolution shell._
+
 The current data suggest that this emerging class of biomolecular interactions is driven almost exclusively by electrostatics (Borgia et al., 2018). To confirm that the KIF4A basic patch interacts dynamically with the conserved acidic patch on B56 (Figure 1B), we used mutagenesis coupled with NMR spectroscopy. Specifically, the interaction of 15N-labeled KIF4A1192-1232,LE,PE with four distinct B56γ acidic patch variants was tested: (1) B562R, E310R/D313R, (2) B562Rb, E276R/E316R, (3) B563R, E276R/E310R/E316R and (4) B564R, E276R/D313R/E310R/E316R (Figure 3B, Figure 3—figure supplement 2). The NMR data showed that the peaks corresponding to the KIF4A basic patch residues are present only with B56 variants with mutated acidic patch residues (Figure 3B,C). That is, they no longer interact with these variants of B56 (Figure 3D). Consistent with these results, ITC showed that KIF4A binds the B56γ acidic patch variants more weakly (Table 1, Figure 2—figure supplement 2L,M). Interestingly, mutating only E310R/D313R was sufficient to reduce the binding affinity to the same extent as mutating the basic patch in KIF4A (KD: 0.19 ± 0.01 μM and 0.21 ± 0.01 μM for B56γ2R:KIF4ALEPE, and B56γ:KIF4ALEPE,bpm, respectively, Table 1, Figure 2—figure supplement 2L); additional mutations (i.e., E276R/E310R/D313R) did not further affect the binding (Table 1, Figure 2—figure supplement 2M). In agreement with this result, we found that the binding of KIF4A and other bp-containing B56 interactors to B56 in cells was dependent on both an intact acidic patch in B56 (Figure 3E, Figure 3—figure supplement 3) and an intact basic patch in KIF4A, as even single amino acid substitutions in the KIF4A basic patch lowered binding (Figure 3F). This requirement of the acidic patch for binding is consistent with a charge-charge interaction where KIF4A interacts with B56 in a dynamic manner and each amino acid contributes similarly to the overall KD. Together, these data show that the KIF4A basic patch interacts directly with the B56 conserved acidic patch and this interaction is critical for KIF4A binding.
 
-## KIF4A dephosphorylation by PP2A:B56 requires the KIF4A basic patch
+### KIF4A dephosphorylation by PP2A:B56 requires the KIF4A basic patch
 
 To determine if the basic charge motif in KIF4A affects dephosphorylation of KIF4A T799, a residue phosphorylated by Aurora B kinase during cytokinesis, we generated a T799 phospho-specific antibody (Bastos et al., 2014). Strikingly, the observed phosphorylation level of T799 was inversely correlated with affinities of PP2A-B56 for the different KIF4A variants in mitotic cells (Figure 4A). Specifically, mutating either the LxxIxE motif (I1227A) or the basic patch (1209KKK1211 to AAA) resulted in an increase of phosphorylation of T799, as less PP2A-B56 was recruited to counteract the activity of Aurora B kinase. Further, this phenotype was rescued by enhancing the LxxIxE motif binding affinity; namely, introducing the 1224CS1225 to LE mutation in KIF4Abpm (KIF4ALE,bpm) increased the amount of PP2A recruited and, in turn, the amount of KIF4A dephosphorylated. Together, these data show that the dephosphorylation of KIF4A T779 by PP2A-B56 requires the basic patch as the PP2A-B56 dephosphorylation efficacy is directly correlated with PP2A-B56 affinity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55966/elife-55966-fig4-v2.jpg)
 
-**Figure 4.:** (A) The indicated YFP-KIF4A constructs were purified using GFP-Trap and analyzed for phosphorylation by immunoblotting. The T799-phospho signal was normalized to YFP. YFP only was used as a control. (B) Endogenous KIF4A was depleted by RNAi and complemented with the indicated YFP-KIF4A variants. (C) Live cell imaging of cells expressing YFP-KIF4A variants as they go through mitosis. The beginning of the NEBD was considered as time 0 (min). Bar represents 5 μm. CFP, cyan fluorescent protein. (D) Quantification of mitotic duration. Circles represent single cells. The number of cells and median (red line) times are indicated from at least two independent experiments. Mann-Whitney test was used to determine the p-values indicated. ∗∗∗∗ p<0.0001; *p<0.05; ns, not significant. (E) The mass spectrometry-identified condensin complex associated proteins co-purifying with YFP-KIF4Awt versus KIF4Abpm or KIF4AI1227A from mitotic HeLa cells stably expressing YFP-KIF4A variants. (F) The binding of chromosome and B56 to KIF4A is mutually exclusive because both binding events strictly require the basic patch.Figure 4—source data 1.
+**Figure 4.:** (A) The indicated YFP-KIF4A constructs were purified using GFP-Trap and analyzed for phosphorylation by immunoblotting. The T799-phospho signal was normalized to YFP. YFP only was used as a control. (B) Endogenous KIF4A was depleted by RNAi and complemented with the indicated YFP-KIF4A variants. (C) Live cell imaging of cells expressing YFP-KIF4A variants as they go through mitosis. The beginning of the NEBD was considered as time 0 (min). Bar represents 5 μm. CFP, cyan fluorescent protein. (D) Quantification of mitotic duration. Circles represent single cells. The number of cells and median (red line) times are indicated from at least two independent experiments. Mann-Whitney test was used to determine the p-values indicated. ∗∗∗∗ p<0.0001; *p<0.05; ns, not significant. (E) The mass spectrometry-identified condensin complex associated proteins co-purifying with YFP-KIF4Awt versus KIF4Abpm or KIF4AI1227A from mitotic HeLa cells stably expressing YFP-KIF4A variants. (F) The binding of chromosome and B56 to KIF4A is mutually exclusive because both binding events strictly require the basic patch.
 
-## KIF4A chromosome targeting and PP2A-B56 binding are mutually exclusive as both KIF4A functions strictly require the basic patch
+### KIF4A chromosome targeting and PP2A-B56 binding are mutually exclusive as both KIF4A functions strictly require the basic patch
 
 KIF4A is a chromosome-binding kinesin that is important for maintaining normal chromosome architecture during cell division (Mazumdar et al., 2004). To determine if the KIF4A basic patch has a mitotic function, we performed RNAi complementation assays in cells where we depleted KIF4A and hKid and then induced the expression of the different YFP-tagged KIF4A variants (Figure 4B,C,D; KIF4A and hKid are simultaneously depleted because they have nearly fully redundant functions during mitosis Wandke et al., 2012). Depleting both KIF4A and hKid resulted in a strong mitotic delay, with multiple unaligned chromosomes. As expected, this phenotype was fully rescued by complementation with WT YFP-KIF4A. However, mutating the basic patch (bpm) resulted in a non-functional KIF4A and this variant failed to localize to mitotic chromosomes (Figure 4C, bottom panel). Further analysis revealed that this defect in KIF4A function due to the bpm was not due to a lack of PP2A-B56 binding, as evidenced by the observation that the I1127A variant fully rescued both the mitotic timing and the chromosome alignment phenotypes (Figure 4C, middle panel, Figure 4D). This demonstrates that the KIF4A basic patch has a function in mitosis, which is distinct from its role in PP2A-B56 binding.
 
@@ -87,72 +410,72 @@ In the case of KIF4A, we also show that the basic patch motif has a second funct
 
 ## Materials and methods
 
-## Sequence alignment
+### Sequence alignment
 
 The ConSurf server (using 150 unique B56 sequences with the lowest E values) was used to calculate the conservation scores illustrate in Figure 1A (Ashkenazy et al., 2016). Clustal Omega (Madeira et al., 2019) was used to generate sequence alignments in Figure 1C, Figure 1—figure supplement 1 and Figure 2—figure supplement 2. The following species are included in Figure 1—figure supplement 1: Homo sapiens (human), Mus musculus (mouse), Gallus gallus (chicken), Danio rerio (fish), and Xenopus laevis (frog), Candida albicans (Candida), Arabidopsis thaliana (A. thaliana), Chlamydomonas reinhardtii (Algae).
 
-## Cloning and expression
+### Cloning and expression
 
 Human B56γ1 (B56γ12-380 and B56γ31-380) was sub-cloned into the pRP1b vector (Peti and Page, 2007). B56γ12-380 and B56γ31-380 were expressed in E. coli BL21 (DE3) (Agilent). Cells were grown in Luria Broth in the presence of selective antibiotics at 37°C to an OD600 of ~0.8, and expression was induced by the addition of 0.5 mM isopropyl β-D-thiogalactoside (IPTG). Induction proceeded for ~18–20 hr at 18°C prior to harvesting by centrifugation at 6000 xg. Cell pellets were stored at −80°C until purification. Human KIF4A (KIF4A1192-1232) and RepoMan (RepoMan560-603) were sub-cloned into a MBP-fusion vector. Mutants were generated using the QuikChange site-directed mutagenesis kit (Agilent) and sequence confirmed. KIF4A1192-1232 and RepoMan560-603 variants were expressed in E. coli BL21 (DE3-RIL) (Agilent). Cells were grown in Luria Broth in the presence of selective antibiotics at 37°C to an OD600 of ~0.6, and expression was induced by the addition of 0.5 mM isopropyl β-D-thiogalactoside (IPTG). Induction proceeded for 5 hr at 37°C prior to harvesting by centrifugation at 6000 xg. Cell pellets were stored at −80°C until purification.
 
 Mammalian expression constructs were cloned into pcDNA5/FRT/TO and derivatives of this vector using standard cloning procedures. Point mutations were introduced by whole plasmid PCR using complementary primers containing the mutations and confirmed by full sequencing of insert. YFP tagged versions of B56α and B56γ were described previously (Kruse et al., 2013).
 
-## Generation of stable cell lines
+### Generation of stable cell lines
 
 The generation of stable HeLa cell lines expressing constructs under the control of a doxycycline-inducible promoter was carried out as previously described (Hein and Nilsson, 2014).
 
-## Cell culture
+### Cell culture
 
 HeLa-FRT stable cell lines and HeLa cells were passaged in DMEM supplemented with 10% fetal bovine serum (FBS, HyClone) and 1% penicillin-streptomycin (Life Technologies). Protein expression was induced by the addition of doxycycline (Clontech Laboratories) at final concentration of 4 ng/ml.
 
-## Transfection and RNAi
+### Transfection and RNAi
 
 For biochemical experiments cells were transfected with 1.5 µg plasmid and Lipofectamine 2000 (2 μl/ml) for 5 hr, where applicable.
 
-## B56 RNAi rescue
+### B56 RNAi rescue
 
 B56 RNAi depletion was done using the following protocol: 250 μl transfection mix with 2 μl siRNA Max (Invitrogen) and 1 μl siRNA oligo (stock concentration 10 μmol) in Optimem (Life Technologies) was added to 750 μl Optimem in 6-well dishes with cells. After 5–6 hr of treatment, FBS was added (10%) until the medium was changed the next day. B56 isoforms were depleted using Dharmacon oligonucleotides against B56α (UGAAUGAACUGGUUGAGUAUU), B56γ (GGAAGAUGAACCAACGUUAUU), B56δ (UGACUGAGCCGGUAAUUGUUU) and B56ε (GCACAGCUGGCAUAUUGUAUU) and used at final concentration of 20 nmol (80 nmol total for all four isoforms). Luciferase (Sigma) was used as control. In live cell experiments, YFP-B56 expressing Hela FRT cell lines were depleted by RNAi 48 hr and 24 hr prior to filming. For KIF4A live cell experiments cells were treated with RNAi 48 hr prior to imaging. YFP-tagged proteins were induced before imaging by the addition of 0.5 ng/ml Doxycycline.
 
-## KIF4A RNAi rescue
+### KIF4A RNAi rescue
 
 HeLa cells were seeded in 6-well plates and synchronized by thymidine the day before transfection. Double RNAi against Kid (CAAGCUCACUCGCCUAUUGTT) and KIF4A (GAAAGATCCTGGCTCAAGA) were performed at 48 and 24 hr before live cell imaging analysis. 800 ng of YFP-tagged wild type KIF4A and mutant plasmids were co-transfected with 30 ng of CFP-Histone3 and RNAi oligos in the first RNAi. Thymidine was added again in the second transfection. After the second RNAi, the cells were re-seeded into 8-well chamber dishes (Ibidi). Cells were released from thymidine in the morning for live cell imaging, which was performed 5 hr later on a DeltaVision Microscope (GE Healthcare).
 
-## Microscopy
+### Microscopy
 
 Cells were seeded in an 8-well chamber dishes (Ibidi) the day before imaging. After changing the medium to L-15 (Life Technologies) supplemented with 10% FBS and 0.5 ng/ml Doxycycline (where applicable) cells were imaged on a DeltaVision Elite microscope (GE Healthcare) using a 40 × oil immersion objective (1.35 NA, WD 0.10). DIC and YFP channels where imaged with 5 min intervals for 17 hr, taking three z-stacks 5 μm apart. SoftWork software (GE Healthcare) was used for data analysis. Cells expressing within a certain YFP expression window was all analyzed while cells expressing high levels of YFP tagged proteins was excluded from the analysis. ImageJ (NIH) was used to extract still images.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells were seeded and transfected with myc-tagged constructs (where applicable) on the day after seeding. Following 24 hr thymidine (2.5 mM) block, cells were released into Nocodazole (200 ng/ml) overnight. Inducible cell-lines (YFP-B56, YFP-KIF4A or YFP) were induced 24 hr prior collection with 4 ng/ml Doxycycline. Mitotic cells were collected by shake-off. Cells were lysed in low salt lysis buffer (50 mM Tris pH 7.4, 50 mM NaCl, 1 mM EDTA, 1 mM DTT, 0.1% vol/vol NP40), supplemented with protease and phosphatase inhibitors (Roche) for 25 min on ice. Lysates were cleared for 15 min at 20,000 xg. Lysates were incubated with 10 μl pre-equilibrated GFP-trap beads (Chromotek) for 1 hr at 4°C and rotation. Beads were washed three times with lysis buffer and eluted in 25 μl 2x LSB (Life Technology) supplemented with 10% β-mercaptoethanol.
 
-## Western blotting
+### Western blotting
 
 Following SDS–PAGE separation, gels were blotted onto Immobilion FL membrane (Millipore). Membranes were incubated with the indicated primary antibody and subsequently with IRDye 800 or 680 secondary antibodies (Li-Cor). Membranes were scanned using the Odyssey Sa imaging system (Li-Cor) and quantification was carried out using the Odyssey Sa Application software (Li-Cor). Representative images from at least two independent experiments is shown in all figures.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used for western-blotting: KIF4A rabbit (Cat# A301-074A; 1:1000, Bethyl laboratories), KIF4A T799 rabbit (raised against peptide CLRRR(pT)FSLT, 1:100, Moravian biotechnology), PP2A-C mouse monoclonal (Cat# 05–421, 1:2,000, Merck), C-myc mouse monoclonal (Cat# SC-40, 1:1000, Santa Cruz), GFP rabbit (raised against full length GFP, 1:10000, Moravian Biotechnology), GFP mouse monoclonal (Cat# 11814460001, 1:1000, Roche), B56α mouse monoclonal (Cat# 610615, 1:1000, BD Transduction Laboratories), BubR1 mouse monoclonal (raised against BubR1 TPR domain, 1:1000, BRIC monoclonal antibody facility), CDC2A rabbit (Cat# HPA030049, 1:1000, Sigma).
 
-## Protein purification
+### Protein purification
 
 B56γ cell pellets were resuspended in ice-cold lysis buffer (50 mM Tris pH 8.0, 0.5 M NaCl, 5 mM imidazole, 0.1% Triton X-100 containing EDTA-free protease inhibitor tablet [Sigma]), lysed by high-pressure cell homogenization (Avestin C3 Emulsiflex) and centrifuged (35,000 xg, 40 min, 4°C). The supernatant was loaded onto a HisTrap HP column (GE Healthcare) pre-equilibrated with Buffer A (50 mM Tris pH 8.0, 500 mM NaCl and 5 mM imidazole) and was eluted using a linear gradient of Buffer B (50 mM Tris pH 8.0, 500 mM NaCl, 500 mM imidazole). Fractions containing the protein were pooled and dialyzed overnight at 4°C (50 mM Tris pH 8.0, 500 mM NaCl) with TEV protease to cleave the His6-tag. The cleaved protein was incubated with Ni2+-NTA beads (GEHealthcare) and the flow-through collected. The protein was concentrated and purified using size exclusion chromatography (SEC; Superdex 75 26/60 [GE Healthcare]) pre-equilibrated in ITC buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP) or crystallization buffer (20 mM HEPES pH 7.8, 500 mM NaCl, 0.5 mM TCEP). Fractions were pooled, concentrated to designated concentration for experiments or stored at −80 °C. KIF4A1192-1232 was purified similarly except that it was heated at 80°C for 10 min and centrifuged (15,000 xg, 10 min, 4°C) prior to SEC purification (SEC buffer: 20 mM HEPES pH 7.8, 500 mM NaCl, 0.5 mM TCEP).
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Pooled B56γ31-380 (hereafter, B56) in SEC buffer was concentrated and combined with KIF4A1192-1232,LE,PE or AIM1 peptide (716KRKKARMPNSPAPHFAMPPIHEDHLE741, Bio-Synthesis Inc), in the same buffer at a 1:5 molar ratio to a final concentration of 10 mg/ml. Crystals of the complex were identified in 0.1 M HEPES pH 7.75, 0.8 M LiCl and 8% PEG8K (B56: KIF4A1192-1232,LE,PE) or 0.1 M Tris pH 8.0, 0.9 M LiCl and 9% PEG6K (B56: AIM1) using vapor diffusion hanging drops. Crystals were cryo-protected by a 30 s soak in mother liquor with 30% glycerol and immediately flash frozen. Data were collected at SSRL beamline 12.2 at 100 K and a wavelength of 0.98 Å using a Pilatus 6M PAD detector. The data were processed using XDS (Kabsch, 2010), Aimless (Evans and Murshudov, 2013) and truncate (French and Wilson, 1978). The structures of the complexes were solved by molecular replacement using Phaser (Adams et al., 2010), using B56 (PDBID 5K6S) as the search model (Wang et al., 2016). A solution was obtained in space group P212121 (B56: KIF4A1192-1232,LE,PE) or I4 (B56: AIM1); strong electron density for both peptides was visible in the initial maps. The initial models of the complex were built without the peptide using AutoBuild, followed by iterative rounds of refinement in PHENIX and manual building using Coot (Emsley and Cowtan, 2004). The peptide coordinates were then added followed by iterative rounds of refinement in PHENIX and manual building using Coot. Data collection and refinement details are provided in Table 2.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 SEC was performed to polish B56γ12-380, RepoMan, KIF4A and exchange into ITC Buffer (50 mM sodium phosphate pH 7.5, 150 mM NaCl, 0.5 mM TCEP). Purified or purchased peptides were titrated into B56γ12-380 (30 µM) using an Affinity ITC SV microcalorimeter at 25°C (TA Instruments). Data were analyzed using NITPIC, SEDPHAT and GUSSI (Scheuermann and Brautigam, 2015; Zhao et al., 2015).
 
-## Nuclear magnetic resonance spectroscopy
+### Nuclear magnetic resonance spectroscopy
 
 NMR data were recorded at 283 K using a Bruker Neo 600 MHz (1H Larmor frequency) NMR spectrometer equipped with a HCN TCI active z-gradient cryoprobe. NMR Measurements of KIF4A were recorded using either 15N- or 15N,13C-labeled protein at a final concentration of 0.1 or 3 mM in NMR buffer (20 mM sodium phosphate pH 6.8, 200 or 50 mM NaCl, 0.5 mM TCEP) and 90% H2O/10% D2O. Unlabeled B56γ12-38 and 1H,15N-labeled KIF4A complex was formed via co-SEC (20 mM sodium phosphate pH 6.8, 200 mM NaCl, 0.5 mM TCEP). The sequence-specific backbone assignments of KIF4A and variants were achieved using 3D triple resonance experiments including 2D [1H,15N] HSQC, 3D HNCA, 3D HN(CO)CA, 3D HN(CO)CACB and 3D HNCACB. All NMR data were processed using Topspin 4.0.5 and analyzed using Cara. NMR chemical shifts have been deposited in the BioMagResBank (BMRB: 27913).
 
-## Mass spectrometry
+### Mass spectrometry
 
 Pulldowns were performed in triplicates and analyzed by SDS gel electrophoresis followed by label-free LC-MS/MS on a Q-Exactive Plus quadrupole Orbitrap mass spectrometer (ThermoScientific) equipped with an Easy-nLC 1000 (ThermoScientific) and nanospray source (ThermoScientific) as previously described (Petrone et al., 2016). Peptides were resuspended in 5% methanol/1.5% formic acid and loaded on to a trap column (1 cm length, 100 μm inner diameter trap packed with ReproSil C18 AQ 5 μm 120 Å pore beads (Dr. Maisch, Ammerbuch, Germany)) vented to waste via a micro-tee and eluted across a fritless analytical resolving column (35 cm length, 100 μm inner diameter fused silica packed with ReproSil C18 AQ 3 μm 120 Å pore beads) pulled in-house (Sutter P-2000, Sutter Instruments, San Francisco, CA) with a 60 min gradient of 5–30% LC-MS buffer B (LC-MS buffer A: 0.0625% formic acid, 3% ACN; LC-MS buffer B: 0.0625% formic acid, 95% ACN). The Q-Exactive Plus was set to perform an Orbitrap MS scan (R = 70K; AGC target = 3e6) from 350 to 1500 Thomson, followed by HCD MS2 spectra on the 10 most abundant precursor ions detected by Orbitrap scanning (R = 17.5K; AGC target = 1e5; max ion time = 75 ms) before repeating the cycle. Precursor ions were isolated for HCD by quadrupole isolation at width = 0.8 Thomson and HCD fragmentation at 26 normalized collision energy (NCE). Charge state 2, 3 and 4 ions were selected for MS2. Precursor ions were added to a dynamic exclusion list +/- 20 ppm for 20 s. Raw data were searched using COMET in high resolution mode (Eng et al., 2013) against a target-decoy (reversed)(Elias and Gygi, 2007) version of the human (UniProt; downloaded 2/2013, 40482 entries of forward and reverse protein sequences) with a precursor mass tolerance of +/- 1 Da and a fragment ion mass tolerance of 0.02 Da, and requiring fully tryptic peptides (K, R; not preceding P) with up to three mis-cleavages. Static modifications included carbamidomethyl cysteine and variable modifications included: oxidized methionine. Searches were filtered using orthogonal measures including mass measurement accuracy (+/- 3 ppm), Xcorr for charges from +two through +4, and dCn targeting a < 1% FDR at the peptide level. Quantification of LC-MS/MS spectra was performed using MassChroQ (Valot et al., 2011) and the iBAQ method (Schwanhäusser et al., 2011). Keratin and proteins with a maximum total peptide count of 1 were removed from further analysis. IBAQ quantifications were imported into Perseus (Tyanova et al., 2016), and log2 transformed. Missing values were imputed from a normal distribution to enable statistical analysis and visualization by volcano plot. Statistical analysis of protein quantification was carried out in Perseus by two-tailed Student’s t-test.
 
-## Data and software availability
+### Data and software availability
 
 All NMR chemical shifts have been deposited in the BioMagResBank (BMRB 27913). Atomic coordinates and structure factors have been deposited in the Protein Data Bank (6OYL, 6VRO). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium (Vizcaíno et al., 2014) through the PRIDE partner repository (PXD013886).

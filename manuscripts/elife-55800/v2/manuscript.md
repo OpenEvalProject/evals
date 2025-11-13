@@ -39,11 +39,27 @@ Herein, we demonstrate that following cecal ligation and puncture (CLP), mice ha
 
 ## Results
 
-## Sepsis reduces EAE disease severity and the number of CNS infiltrating pathogenic effector CD4 T cells
+### Sepsis reduces EAE disease severity and the number of CNS infiltrating pathogenic effector CD4 T cells
 
 The influence of the immunoparalysis phase of sepsis, which follows the resolution of the cytokine storm, on the ability of the host to develop autoimmunity is undefined. To address this relationship, we employed well-established models of polymicrobial sepsis and inducible autoimmunity, CLP and EAE, respectively. CLP effectively mimics the pathophysiology of acute peritonitis and corresponding septic inflammation, with the capacity to modulate disease severity through adjustment of surgical parameters (Dejager et al., 2011; Sjaastad et al., 2020a). Likewise, EAE presents an ideal model system to study the impact of sepsis on the development of autoimmune disease since it is a robust, inducible system allowing for manipulations prior to disease initiation (Stinissen et al., 1997).
 
 CLP, sham, and non-surgery mice were immunized with MOG35-55 peptide 5 days post-surgery, a time when the cytokine storm has resolved (Danahy et al., 2019b), to induce EAE and disease progression was monitored (Figure 1a). Of note: unless otherwise stated, experimental timepoints are defined with respect to EAE immunization. Importantly, while sham and no surgery control groups of mice developed robust EAE clinical disease, CLP survivors (day 5 CLP group) had substantially diminished disease severity (Figure 1b,c) and delayed disease onset (Figure 1d). Further, CLP hosts do not achieve similar disease severity even when disease course is prolonged (40 days) (Figure 1—figure supplement 1) indicating that diminished disease is not due to delayed disease onset.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig1-v2.jpg)
+
+**Figure 1.:** (A) Experimental design: C57Bl/6 mice were either left naive or underwent sham or CLP surgery. All groups were immunized s.c. with MOG35-55 emulsified in complete Freunds adjuvant (CFA) on both flanks 5 days after surgery and given pertussis toxin (PTX) i.p. on the day of immunization as well as 2 days later to induce EAE. An additional group of mice that underwent CLP 25 days prior were also immunized on the same day. Disease onset and severity were monitored over the subsequent 14 days. (B) Average EAE disease score following EAE induction for mice that had either no surgery (gray), Sham surgery (black), D5 CLP surgery (white), or D25 CLP surgery (red). (C) Area under the curve (AUC) of disease scores in panel B following EAE induction. (D) Time to onset of first EAE symptoms following EAE induction in no surgery (gray), Sham surgery (black), D5 CLP surgery (dashed), and D25 CLP (red) mouse groups. (E) Representative photomicrographs of the lumbar spine from mice with EAE that underwent either sham or D5 CLP surgery. Thick arrows indicate areas of inflammation that was scored on H and E stained slides. Luxol fast blue (LFB) stains were also performed and showed subtle demyelination and axonal sheath swelling in sham mice (red box). Vacuolation is indicated in the inserts by the thin arrows. Bars = 200 µm (inset bars = 50 µm). Mean H and E inflammation score of the (F) spinal cord and (G) meninges of mice 15 days-post EAE induction. Data are representative from three independent experiments with 8–12 mice per group. D25 CLP data are from a single experiment. *p<0.05. Error bars represent the standard error of the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental design: C57Bl/6 mice were either left naive or underwent sham or CLP surgery. Both groups were immunized s.c. with MOG35-55 emulsified in complete Freunds adjuvant (CFA) on both flanks 5 days after surgery and given pertussis toxin (PTX) i.p. on the day of immunization as well as 2 days later to induce EAE. Disease onset and severity were monitored over the subsequent 40 days. (B) Average EAE disease score following EAE induction for mice that had either Sham surgery (black) or CLP surgery (white). (C) Area under the curve (AUC) of disease scores in panel B following EAE induction. (D) Time to onset of first EAE symptoms following EAE induction in Sham surgery (black) or CLP surgery (dashed) groups. Data are representative from two independent experiments with 8–15 mice per group. *p<0.05. Error bars represent the standard error of the mean.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Sham and CLP mice were immunized s.c. with MOG35-55 emulsified in complete Freunds adjuvant (CFA) on both flanks 5 days after surgery and given pertussis toxin (PTX) i.p. on the day of immunization as well as 2 days later to induce EAE. Plasma was collected prior to immunization and 15 days post-immunization. Plasma cytokine response was assessed by multiplex cytokine assay. (A) Heatmap comparing day 0 to day 15 post-immunization mean z-scores of plasma cytokines for sham and CLP mice. Plasma (B) IFNγ, (C) IL-17, (D) TNF, (E) IL-10, (F) IL-12p70, (G) IL-12p40, (H) G-CSF, and (I) GM-CSF concentrations for sham and CLP hosts at days 0 and 15 post-immunization. Data are from one experiment with 9–10 mice per group. *p<0.05. Error bars represent the standard error of the mean. Heatmap comparisons are made by multiple t tests.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Sham and CLP mice were immunized s.c. with MOG35-55 emulsified in complete Freunds adjuvant (CFA) on both flanks 5 days after surgery and given pertussis toxin (PTX) i.p. on the day of immunization as well as 2 days later to induce EAE. Mice were perfused 15 days post-EAE induction and CNS was harvested. (A) Representative gating of CNS monocytes/macrophages and microglia as well as expression of MHCII by gated cells. Frequency (B) and number (C) of microglia in the CNS. Frequency (D) and number (E) of monocytes and macrophages in the CNS. Frequency (F) and number (G) of MHCII-expressing microglia in the CNS. Frequency (H) and number (I) of MHCII-expressing monocytes and macrophages in the CNS. Data are from one experiment with five mice per group. *p<0.05. Error bars represent the standard error of the mean.
 
 Sepsis can lead to long-term functional deficits by immune cells (Jensen et al., 2018a). Therefore, to address whether the CLP-induced reduction in EAE disease was a durable phenomenon, we included a group of mice that had undergone CLP surgery 25 days prior to EAE immunization and evaluated the development of EAE disease (Figure 1a). Interestingly, even at this later time point CLP survivors continued to exhibit reduced disease severity (Figure 1b,c) and delayed disease onset (Figure 1d) relative to sham or no surgery controls, though disease severity was increased relative to day 5 CLP mice. The more severe disease relative to day 5 mice was due to a noted variability among the day 25 CLP mice, wherein some individuals developed severe disease and others had minimal disease. This difference in EAE severity suggests that the influence of the immunoparalysis state may wain with time, at least in some of the mice. Therefore, to capture the maximal state of suppression, we focused on comparisons of day five sham and CLP hosts.
 
@@ -57,37 +73,57 @@ To address whether the reduction in histological inflammatory cell infiltrate re
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig2-v2.jpg)
 
-**Figure 2.:** (A) Experimental design: C57Bl/6 mice underwent either sham or CLP surgery. EAE induction occurred 5 days after surgery. Mice were perfused 15 days post-EAE induction and CNS was harvested. (B) Representative flow plots for CNS CD4 T cells, gated on lymphocytes, from sham and CLP mice. (C) Frequency and (D) number of CNS CD4 T cells in sham and CLP mice. (E) Representative flow plots for CNS MOG-specific CD4 T cells, gated on total CD4 T cells, from Naive (staining control), sham, and CLP mice. (F) Frequency and (G) number of CNS MOG-specific CD4 T cells in sham and CLP mice. Dashed line indicates staining and number from naive control mouse. Data are representative from two independent experiments with 8–10 mice per group. *p<0.05. Error bars represent the standard error of the mean.  Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Experimental design: C57Bl/6 mice underwent either sham or CLP surgery. EAE induction occurred 5 days after surgery. Mice were perfused 15 days post-EAE induction and CNS was harvested. (B) Representative flow plots for CNS CD4 T cells, gated on lymphocytes, from sham and CLP mice. (C) Frequency and (D) number of CNS CD4 T cells in sham and CLP mice. (E) Representative flow plots for CNS MOG-specific CD4 T cells, gated on total CD4 T cells, from Naive (staining control), sham, and CLP mice. (F) Frequency and (G) number of CNS MOG-specific CD4 T cells in sham and CLP mice. Dashed line indicates staining and number from naive control mouse. Data are representative from two independent experiments with 8–10 mice per group. *p<0.05. Error bars represent the standard error of the mean.
 
 These data suggest that the reduction in disease severity was potentially due to lack of autoantigen-specific CD4 T cells infiltrating the CNS; however, sepsis is also known to influence T cell function. Thus, direct ex vivo analysis of the MOG-specific CD4 T cells in the CNS was evaluated by intracellular cytokine staining at the same timepoint. No differences were observed in the frequencies of MOG-specific CD4 T cells producing pathogenic effector cytokines IFNγ, IL-17A, and TNFα without further stimulation directly ex vivo (Figure 3a,b; Figure 3—figure supplement 1; Lee et al., 2019). However, the numerical deficit in MOG-specific CD4 T cells led to a significant reduction in the number of IFNγ- and TNFα-producing cells with a trending decrease in IL-17A-producing cells (Figure 3c). This finding indicates the autoantigen-specific CD4 T cells present in the CNS after CLP surgery are functionally competent and potentially were the least impacted by the septic event. In summary, the data presented so far suggest that the numerical deficit in CNS-infiltrating pathogenic effectors might stem from insufficient priming and/or expansion of encephalitogenic CD4 T cells in the draining lymph node in the periphery.
 
-## Sepsis-induced loss of naive CD4 T cells is associated with a reduced number of autoantigen-specific CD4 T cell precursors
+![Figure 3.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig3-v2.jpg)
+
+**Figure 3.:** (A ) Representative flow plots of direct ex vivo IFNγ, IL-17A, and TNFα producing cells, gated on MOG-specific CD4 T cells, from sham (left) and CLP (right) mice. Numbers indicate frequency of cytokine-positive cells per quadrant. (B) Frequency and (C) number of IFNγ-, IL-17A-, and TNFα-producing MOG-specific CD4 T cells in the CNS of sham and CLP mice. Data are representative from two independent experiments with 8–10 mice per group. *p<0.05. Error bars represent the standard error of the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative flow plots of direct ex vivo IFNγ, IL-17A, and TNFα producing cells, gated on MOG-specific CD4 T cells, from sham (black) mice. Gray profiles indicate ‘fluorescence minus one’ (FMO) controls for each respective cytokine. Numbers indicate frequency of cytokine-positive cells for sham cells.
+
+### Sepsis-induced loss of naive CD4 T cells is associated with a reduced number of autoantigen-specific CD4 T cell precursors
 
 To address whether the CLP hosts had a priming deficit for autoantigen-specific CD4 T cells, MOG-specific CD4 T cells were evaluated in the draining inguinal lymph node (iLN), 7 days after EAE induction (Figure 4a). This is a time during which CD4 T cells are being primed and expanding that precedes the development of clinical disease (Bischof et al., 2004). Similar to the CNS during peak disease, both the frequency (Figure 4b) and number (Figure 4c) of MOG-specific CD4 T cells were decreased in the iLN of CLP hosts.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig4-v2.jpg)
 
-**Figure 4.:** (A) Experimental design: C57Bl/6 mice underwent sham or CLP surgery. EAE induction occurred 5 days after surgery. Draining inguinal lymph nodes (iLN) were harvested 7 days after EAE disease induction. (B) Frequency and (C) number of MOG-specific CD4 T cells in the iLN of sham and CLP mice. Data are representative from three independent experiments with five mice per group. *p<0.05. Error bars represent the standard error of the mean.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Experimental design: C57Bl/6 mice underwent sham or CLP surgery. EAE induction occurred 5 days after surgery. Draining inguinal lymph nodes (iLN) were harvested 7 days after EAE disease induction. (B) Frequency and (C) number of MOG-specific CD4 T cells in the iLN of sham and CLP mice. Data are representative from three independent experiments with five mice per group. *p<0.05. Error bars represent the standard error of the mean.
 
 Since lymphopenia is a hallmark of sepsis and differentially affects CD4 T cell precursor populations (Cabrera-Perez et al., 2015), a reduction in precursor numbers is one possibility for the decreased number of autoantigen-specific CD4 T cells in the iLN at the day 7 priming timepoint. Thus, the precursor frequency of MOG-specific naive CD4 T cells was interrogated through tetramer enrichment of splenic CD4 T cells 5 days after surgery (i.e. the day of EAE induction, Figure 5a). This analysis revealed a significant numerical loss of MOG-specific CD4 T cell precursors in CLP hosts. These data suggest CLP-induced lymphopenia may protect against the development of EAE by reducing the number of naive autoantigen-specific CD4 T cells. The subsequent loss of these naive cells would explain the corresponding reduction in the number of effector cells present in the both the lymph node and CNS following immunization.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig5-v2.jpg)
 
-**Figure 5.:** (A) Experimental design: C57Bl/6 mice underwent sham or CLP surgery. MOG-specific CD4 T cell precursors were enriched from the spleen 5 days after surgery via tetramer pulldown and enumerated. (B) Representative gating strategy for identifying MOG-specific CD4 T cell precursors from sham and CLP mice. Number of splenic MOG-specific CD4 T cell precursors in sham and CLP mice (B) 5 and (C) 25 days post-surgery. Frequency of antigen-experienced (CD44hi) (E) total and (F) MOG-specific CD4 T cells. Data are combined from two independent experiments with 8–13 mice per group. *p<0.05. Error bars represent the standard error of the mean.  Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Experimental design: C57Bl/6 mice underwent sham or CLP surgery. MOG-specific CD4 T cell precursors were enriched from the spleen 5 days after surgery via tetramer pulldown and enumerated. (B) Representative gating strategy for identifying MOG-specific CD4 T cell precursors from sham and CLP mice. Number of splenic MOG-specific CD4 T cell precursors in sham and CLP mice (B) 5 and (C) 25 days post-surgery. Frequency of antigen-experienced (CD44hi) (E) total and (F) MOG-specific CD4 T cells. Data are combined from two independent experiments with 8–13 mice per group. *p<0.05. Error bars represent the standard error of the mean.
 
 To address whether the prior observation, that CLP hosts have a lasting decrease in the severity of EAE disease (Figure 1b–d), is also associated with a lasting numerical deficit, the number of MOG-specific CD4 T cells was enumerated in sham and CLP hosts 25 days post-surgery. Consistent with our observation of disparate disease development among CLP hosts, we observed a corresponding bifurcation in the number of MOG-specific CD4 T cells in individual mice (Figure 5d) further suggesting that the ability to initiate EAE disease might correspond to the number of MOG-specific CD4 T cells available. Additionally, similar to prior reports (Cabrera-Perez et al., 2016; Jensen et al., 2018a; Skirecki et al., 2020), an increased frequency of activated (CD44hi) CD4 T cells was observed in CLP hosts (Figure 5e). Importantly, this extended to an increase in the frequency of memory-like CD44hi cells among MOG-specific CD4 T cells in CLP hosts (Figure 5f). This increase in CD44 expression could occur either be through homeostatic proliferation following the severe lymphodepletion that occurs following a septic event or potentially through antigen release due to sepsis-induced tissue damage (Cabrera-Perez et al., 2016; Cabrera-Perez et al., 2015). Thus, even for those cells that do recover in numbers they are phenotypically and functionally distinct, which may further contribute to the differences in EAE disease development and progression following immunization.
 
-## Loss of autoantigen-specific naive CD4 T cells is the determining factor in sepsis-induced impediment of EAE
+### Loss of autoantigen-specific naive CD4 T cells is the determining factor in sepsis-induced impediment of EAE
 
 To further delineate the contributions of the sepsis influence directly on CD4 T cells or their environment, we utilized an adoptive transfer system wherein naive MOG-specific, TCR-transgenic 2D2 CD4 T cells were transferred into congenically distinct recipient mice. By having the fixed TCR of the 2D2 cells, the function of the 2D2 cells could be equally assessed between sham and CLP hosts. Mice receiving 2D2 cells 1 day prior to surgery (6 days prior to EAE induction) were part of the ‘pre-transfer’ group. Alternatively, a second cohort of mice received 2D2 cells 4 days post-surgery (1 day prior to EAE induction), a time at which sepsis-associated inflammation has resolved and the immunoparalysis state is established (Danahy et al., 2019b), were in the ‘post-transfer’ group. 2D2 cells in the pre-transfer group are exposed to both the intrinsic and extrinsic changes that sepsis induces. In contrast, the 2D2 cells in the post-transfer experiments were only influenced by the sepsis-induced changes in the environment, such as reduced DC function (Strother et al., 2016), reduced capacity to traffic across endothelium (Danahy et al., 2017), and alterations in the proportion of regulatory CD4 and CD8 T cells (Sharma et al., 2015; Sinha et al., 2015). These impairments are all likely to be present in the context of post-septic environment and may influence the development of EAE. Thus, the post-septic environmental factors which influence CD4 T cells can be assessed by transferring cells into the host after the immunoparalysis state has been established. Further, by comparing the pre- and post-transfer cells from sham and CLP mice the intrinsic and extrinsic influences of sepsis can be parsed.
 
 Thus, to address the intrinsic and extrinsic impact of sepsis on priming of CD4 T cells, 2D2 cell number, proliferation, as assessed by recent proliferation marker Ki67 (Miller et al., 2018), and apoptosis, as assessed by presence of active caspase 3/7 (FLICA+) and membrane depolarization (PI+), were evaluated in the iLN 7 days post-EAE induction (Figure 6a,b). Notably, cells that were transferred prior to surgery were numerically diminished in CLP hosts relative to sham counterparts (Figure 6c) recapitulating the observations with endogenous MOG-specific CD4 T cells (see Figure 5). Strikingly, 2D2 cells that were transferred after surgery were numerically equivalent between sham and CLP hosts, suggesting the septic environment (e.g. diminished DC number/function, increased proportion of regulatory CD8 and/or CD4 T cells) did not limit their capacity to expand (Figure 6c). Further, the transferred 2D2 cells from all groups had a similar proportion of recently proliferated as well as apoptotic (FLICA+ PI+) cells (Figure 6d,e). Given that the post-transfer groups had equivalent cell numbers, proliferation, and apoptosis; these data demonstrate that autoantigen CD4 T cells are not limited by the post-septic environment in their capacity to be primed and expand. Thus, while sepsis notably induces a variety of T-cell-extrinsic immunologic impairments (Danahy et al., 2017; Sharma et al., 2015; Sinha et al., 2015; Strother et al., 2016), these impairments can be overcome in the context of EAE immunization. In addition, there was no observed difference in the expression of several canonical extrinsic death-inducing proteins known to limit the expansion of CD4 T cells (i.e. Fas, FasL, TRAIL) between sham and CLP hosts for either the pre- or post-transfer groups (Figure 6—figure supplement 1) further supporting the notion that survival differences do not account for the numerical deficit in CD4 T cells exposed to sepsis. Therefore, pre-transfer 2D2 cells proliferate and die equivalently in both sham and CLP hosts, indicating that sepsis does not intrinsically impair the capacity of these cells to proliferate in response to cognate antigen recognition.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design: Thy1.2 C57Bl/6 mice were separated into Pre- and Post-transfer groups. The Pre-transfer group received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 1 day before sham or CLP surgery. The Post-transfer group underwent sham or CLP surgery then received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 4 days later. EAE was induced in both the Pre- and Post-transfer groups 5 days after surgery (Pre: 6 days post 2D2 T cell transfer; Post: 1 day post 2D2 T cell transfer). iLN were harvested 7 days after the transfer. (B) Representative gating strategy for identifying transferred 2D2 TCR-Tg CD4 T cells, their expression of the proliferation marker Ki67, and markers of apoptosis (activated caspase3/7 with propidium iodide) from sham and CLP mice. (C) Number of transferred 2D2 TCR-Tg CD4 T cells in the iLN of sham and CLP mice. (D) Frequency of 2D2 TCR-Tg CD4 T cells expressing Ki67. (D) Frequency of apoptotic (FLICA+ PI+) 2D2 TCR-Tg CD4 T cells. Data are representative from two independent experiments with four to five mice per group. *p<0.05. Error bars represent the standard error of the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Thy1.2 C57Bl/6 mice were separated into Pre- and Post-transfer groups. The Pre-transfer group received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 1 day before sham or CLP surgery. The Post-transfer group underwent sham or CLP surgery then received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 4 days later. EAE was induced in both the Pre- and Post-transfer groups 5 days after surgery (Pre: 6 days post 2D2 T cell transfer; Post: 1 day post 2D2 T cell transfer). iLN were harvested 7 days after the transfer. (A) Representative gating of Fas, FasL, and TRAIL expression by 2D2 CD4s. Frequency (B) and number (C) of Fas, FasL, and TRAIL expressing cells in the pre-transfer group. Frequency (D) and number (E) of Fas, FasL, and TRAIL expressing cells in the post-transfer group. Data are from 1 experiment with five mice per group. *p<0.05. Error bars represent the standard error of the mean.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Thy1.2 C57Bl/6 mice were separated into Pre- and Post-transfer groups. The Pre-transfer group received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 1 day before sham or CLP surgery. The Post-transfer group underwent sham or CLP surgery then received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 4 days later. EAE was induced in both the Pre- and Post-transfer groups 5 days after surgery (Pre: 6 days post 2D2 T cell transfer; Post: 1 day post 2D2 T cell transfer). iLN were harvested 7 days after the transfer. (A) Representative gating of RORγT, Tbet, and FoxP3 expression by 2D2 CD4s. Number of RORγT, Tbet, and FoxP3 2D2 CD4 T cells in pre- (B) and post-transfer (C) groups. Fold change in the number of RORγT, Tbet, and FoxP3 (D) 2D2 CD4 T cells and (E) endogenous CD4 T cells relative to sham controls in the pre- and post-transfer groups. Data are from 1 experiment with five mice per group. *p<0.05. Error bars represent the standard error of the mean.
+
 To directly compare the survival and expansion potential of autoantigen-specific CD4 T cells, congenically distinct Thy1.1 2D2 mice underwent either sham or CLP surgery. The same number of 2D2 cells from sham and CLP mice (1:1 mix) were then adoptively transferred into naive Thy1.2 C57Bl/6-recipient mice. A day later, recipients were either left unimmunized or immunized to induce EAE to address the survival and expansion potential of both subsets of 2D2 CD4 T cells, respectively. Survival potential was assessed in the lymph node 5 days post-transfer, while expansion was assessed at both 5- and 7 days post-transfer (Figure 7a). Importantly, no difference was observed in either the survival or expansion potential of 2D2 cells acquired from CLP mice relative to those acquired from sham controls (Figure 7b,c). Thus, these data demonstrate that CLP does not change the capacity of autoantigen-specific CD4 T cells to exert their effector function(s) upon transfer into a non-septic environment.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig7-v2.jpg)
 
-**Figure 7.:** (A) Experimental design: Thy1.1/1.1 2D2 TCR-Tg mice underwent sham surgery while Thy1.1/1.2 2D2 TCR-Tg mice underwent CLP surgery. 2D2 mice were euthanized 4 days post-surgery and splenic 2D2 cells were mixed at a 1:1 ratio prior to transfer into naive Thy1.2/1.2 B6 mice. Non-EAE mice received 5 × 106 of each 2D2 population, whereas EAE mice received 5 × 103 of each 2D2 population. A day after transfer, EAE was either induced or not in the respective recipient group. Survival of the transferred 2D2 cells (assessed in non-EAE hosts) was assessed in the iLN 5 days after transfer. Expansion of the transferred 2D2 cells (assessed in EAE hosts) was assessed in the iLN 5 and 7 days after transfer. (B) Representative profiles of the 2D2 input and output on indicated days for both EAE and non-EAE hosts. (C) The ratio of Sham to CLP 2D2 cells in the input and output at indicated days for both EAE and non-EAE hosts. Data are from 1 experiment with two to five mice per group. *p<0.05. Error bars represent the standard error of the mean.  Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A) Experimental design: Thy1.1/1.1 2D2 TCR-Tg mice underwent sham surgery while Thy1.1/1.2 2D2 TCR-Tg mice underwent CLP surgery. 2D2 mice were euthanized 4 days post-surgery and splenic 2D2 cells were mixed at a 1:1 ratio prior to transfer into naive Thy1.2/1.2 B6 mice. Non-EAE mice received 5 × 106 of each 2D2 population, whereas EAE mice received 5 × 103 of each 2D2 population. A day after transfer, EAE was either induced or not in the respective recipient group. Survival of the transferred 2D2 cells (assessed in non-EAE hosts) was assessed in the iLN 5 days after transfer. Expansion of the transferred 2D2 cells (assessed in EAE hosts) was assessed in the iLN 5 and 7 days after transfer. (B) Representative profiles of the 2D2 input and output on indicated days for both EAE and non-EAE hosts. (C) The ratio of Sham to CLP 2D2 cells in the input and output at indicated days for both EAE and non-EAE hosts. Data are from 1 experiment with two to five mice per group. *p<0.05. Error bars represent the standard error of the mean.
 
 Given the aforementioned differences in the systemic cytokine milieu between sham and CLP hosts following immunization (Figure 1—figure supplement 1), it is possible that autoantigen-specific CD4 T cells may be unable to form the relevant effector cell populations of Th1, Th17, and Treg cells known to influence EAE disease development (Dendrou et al., 2015). To address this possibility, pre- and post-transfer groups were generated as in Figure 6 and the number of RORγT (Th17), Tbet (Th1), and FoxP3 (Treg) 2D2s were enumerated in the lymph node 7 days post-immunization (Figure 6—figure supplement 2a). As shown in Figure 6 and Figure 6—figure supplement 1, the numerical loss of 2D2 cells during sepsis influenced the number of each of these effector populations within the pre-transfer group but did not impact the number of post-transfer 2D2 cells for each of the effector populations (Figure 6—figure supplement 2b,c). Therefore, relative to the pre-transfer group, the post-transfer 2D2s recovered their capacity to develop each of these populations (Figure 6—figure supplement 2d). In contrast, endogenous CD4 T cells exposed to septic event remained impaired in their capacity to generate these effector populations (Figure 6—figure supplement 2e).
 
@@ -95,7 +131,7 @@ Finally, to determine whether the sepsis-induced loss of MOG-specific CD4 T cell
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/55800/elife-55800-fig8-v2.jpg)
 
-**Figure 8.:** (A) Experimental design: Thy1.2 C57Bl/6 mice were separated into Pre- and Post-transfer groups. The Pre-transfer group received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 1 day before sham or CLP surgery. The Post-transfer group underwent sham or CLP surgery then received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 4 days later. EAE was induced in both the Pre- and Post-transfer groups 5 days after surgery (Pre: 6 days post 2D2 T cell transfer; Post: 1 day post 2D2 T cell transfer). EAE disease onset and severity were monitored. (B) Average EAE disease score following EAE induction for mice that were Pre-transfer sham (black circle), Post-transfer sham (black square), Pre-transfer CLP (white circle), or Post-transfer CLP (white square). (C) Area under the curve (AUC) of disease scores in panel B following EAE induction. Number of 2D2 TCR-Tg CD4 T cells in the CNS of sham and CLP (D) Pre-transfer and (E) Post-transfer groups as well as endogenous MOG-specific CD4 T cells in the CNS of sham and CLP for (F) Pre-transfer and (G) Post-transfer groups. Data are representative from two independent experiments with 10–14 mice per group for panels B and C, and five mice per group for panels D-G. *p<0.05. Error bars represent the standard error of the mean.  Figure 8—source data 1.Figure 8.  Figure 8—source data 2.Figure 8.
+**Figure 8.:** (A) Experimental design: Thy1.2 C57Bl/6 mice were separated into Pre- and Post-transfer groups. The Pre-transfer group received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 1 day before sham or CLP surgery. The Post-transfer group underwent sham or CLP surgery then received 5 × 103 naive Thy1.1 2D2 TCR-Tg CD4 T cells 4 days later. EAE was induced in both the Pre- and Post-transfer groups 5 days after surgery (Pre: 6 days post 2D2 T cell transfer; Post: 1 day post 2D2 T cell transfer). EAE disease onset and severity were monitored. (B) Average EAE disease score following EAE induction for mice that were Pre-transfer sham (black circle), Post-transfer sham (black square), Pre-transfer CLP (white circle), or Post-transfer CLP (white square). (C) Area under the curve (AUC) of disease scores in panel B following EAE induction. Number of 2D2 TCR-Tg CD4 T cells in the CNS of sham and CLP (D) Pre-transfer and (E) Post-transfer groups as well as endogenous MOG-specific CD4 T cells in the CNS of sham and CLP for (F) Pre-transfer and (G) Post-transfer groups. Data are representative from two independent experiments with 10–14 mice per group for panels B and C, and five mice per group for panels D-G. *p<0.05. Error bars represent the standard error of the mean.
 
 ## Discussion
 
@@ -115,27 +151,303 @@ The novel characterization of how infection, in the form of a septic insult, can
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL6/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No: 000664 (RRID:IMSR_JAX:000664)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>B6.PL(84NS)/Cy</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No: 000983 (RRID:IMSR_JAX:000406)</td>
+      <td>C57BL6/J Thy1.1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock No: 006912 (RRID:IMSR_JAX:006912)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Thy1.1/1.1- C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J</td>
+      <td>This paper</td>
+      <td>Thy1.1/1.1 2D2</td>
+      <td>Can be acquired through lab contact or breeding of above commercially available strains</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Thy1.1/1.2- C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J</td>
+      <td>This paper</td>
+      <td>Thy1.1/1.2 2D2</td>
+      <td>Can be acquired through lab contact or breeding of above commercially available strains</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MOG35-55</td>
+      <td>GenScript</td>
+      <td>SC1208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CFA containing M. tuberculosis H37Ra</td>
+      <td>Difco</td>
+      <td>DF3114-33-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pertussis toxin from Bordetella pertussis</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>GK1.5 (AB_312689)</td>
+      <td>FACs (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11a (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>M17/4 (AB_312776)</td>
+      <td>FACs (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IFNγ (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>XMG1.2 (AB_465410)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IL-17A (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>eBio17B7 (AB_906240)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TNFα (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>MP6-XT22 (AB_465416)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8a (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>5H10-1 (AB_312762)</td>
+      <td>FACs (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67 (Mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>B56 (AB_2858243)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Thy1.1 (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>HIS51 (AB_1257173)</td>
+      <td>FACs (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Thy1.2 (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>53–2.1 (AB_467378)</td>
+      <td>FACs (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD44 (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>IM7 (AB_469715)</td>
+      <td>FACs (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>104 (AB_469724)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F4/80 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>BM8 (AB_893499)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>M1/70 (AB_468883)</td>
+      <td>FACs (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IA-b (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>M5/114.15.2 (AB_529608)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3e (Armenian Hamster monoclonal)</td>
+      <td>eBioscience</td>
+      <td>145–2 C11 (AB_467048)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD19 (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>MB19-1 (AB_467145)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FAS (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>SA367H8 (AB_2629777)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FASL (Armenian Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>MFL3 (AB_313276)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TRAIL (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>N2B2 (AB_345271)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RORγT (Rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>AFKJS-9 (AB_1834470)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tbet (Mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>eBio4b10 (AB_763636)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FoxP3 (Rat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>FJK-16S (AB_467576)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11c (Armenian Hamster monoclonal)</td>
+      <td>Biolegend</td>
+      <td>N418 (AB_313772)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>B220 (Rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>RA3-6B2 (AB_312989)</td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>MOG40-48 I-Ab linked (Drosophila melanogaster S2 cells)</td>
+      <td>NIH tetramer core</td>
+      <td></td>
+      <td>FACs (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3 / Transcription Factor Staining Buffer Set</td>
+      <td>Invitrogen</td>
+      <td>00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant FAM Caspase-3 and −7 assay kit</td>
+      <td>Thermo-Fischer</td>
+      <td>V35118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BioRad Bio-plex Pro Mouse Cytokine 23-plex</td>
+      <td>Biorad</td>
+      <td>M60009RDPD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism 8</td>
+      <td>Version 8.4.2 (464) (RRID:SCR_002798)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Inbred C57Bl/6 (B6; Thy1.2/1.2) were purchased from the National Cancer Institute (Frederick, MD) and maintained in the animal facilities at the University of Iowa at the appropriate biosafety level. 2D2 (C57BL/6-Tg(Tcra2D2,Tcrb2D2)1Kuch/J) mice on the C57BL6/J background were purchased from Jackson Laboratories and bred with C57BL6/J (Thy1.1/1.1), purchased from the National Cancer Institute (Frederick, MD), to generate heterozygotes for 2D2 and Thy1.1. F1 mice were bred together to generate 2D2 Thy 1.1/1.1 and 2D2 Thy1.1/1.2 mice. Expression of the 2D2 TCR and Thy1.1/1.1 were confirmed by flow cytometric staining.
 
-## Cecal ligation and puncture (CLP) model of sepsis induction
+### Cecal ligation and puncture (CLP) model of sepsis induction
 
 Mice were anesthetized with ketamine/xylazine (University of Iowa, Office of Animal Resources), the abdomen was shaved and disinfected with Betadine (Purdue Products), and a midline incision was made. The distal third of the cecum was ligated with Perma-Hand Silk (Ethicon), punctured once using a 25-gauge needle, and a small amount of fecal matter extruded. The cecum was returned to abdomen, the peritoneum was closed with 641G Perma-Hand Silk (Ethicon), and skin sealed using surgical Vetbond (3M). Following surgery, 1 mL PBS was administered s.c. to provide post-surgery fluid resuscitation. Lidocaine was administered at the incision site, and flunixin meglumine (Phoenix) was administered for postoperative analgesia. This procedure created a septic state characterized by loss of appetite and body weight, ruffled hair, shivering, diarrhea, and/or periorbital exudates with 0–10% mortality rate. Sham mice underwent identical surgery excluding cecal ligation and puncture.
 
-## EAE disease induction and evaluation
+### EAE disease induction and evaluation
 
 EAE was induced and evaluated as shown previously (Mangalam et al., 2009). Briefly, mice were immunized s.c. on day 0 on the left and right flank with 100 µg of MOG35-55 emulsified in Complete Freund's Adjuvant followed by 80 ng of pertussis toxin (PTX) i.p. on days 0 and 2. Disease severity was scored as follows: 0, no clinical symptoms; 1, loss of tail tonicity; 2, hind limb weakness; 3, hind limb paralysis; 4, fore limb weakness; 5, moribund or death.
 
-## Cell isolation
+### Cell isolation
 
 Single-cell suspensions from lymph nodes and spleens were generated after mashing tissue through 70-μm cell strainer without enzymatic digestion. To isolate CNS leukocytes, mice were anesthetized with CO2 and quickly perfused through the left ventricle with cold PBS. Brains were removed from the skull and spinal cords were flushed through the vertebral canal with cold RPMI media. To isolate immune cells from the CNS, brain and spinal cords were combined, homogenized, and isolated by Percoll gradient centrifugation. Following centrifugation, CNS leukocytes were collected from the interface, washed, and prepared appropriately for further use.
 
-## Histology
+### Histology
 
 Mice were euthanized using CO2 and intravascularly perfused using a gravity fed system with 10% neutral buffered (10% NBF) formalin via intracardiac puncture. Spinal cords were then emersion fixed in 10% NBF for another 24–48 hr. Spinal cords were left in situ, demineralized with 14% EDTA for ~4 days and then embedded in paraffin and routine processed. Sections (4 µm thick) were stained with hemotoxylin and eosin (H and E) and Luxol fast blue (LFB) and analyzed by a board-certified veterinary pathologist. Spinal cord sections were scored for cord pathology and meningeal inflammation. The meningeal score was a 0 to 4 scale where 0 = no pathology; 1 = rare, scattered, mild meningeal inflammatory cell infiltrates; 2 = mild, multifocal and obvious meningeal inflammatory cell infiltrates; 3 = multifocal to coalescing meningeal inflammatory cell infiltrates; 4 = marked, diffuse, thick bands of meningeal inflammatory cell infiltrates. The spinal cord score identifies how much of the cord at that level was affected and was also a 0 to 4 scale where 0 = no pathology; 1 = 1–25% of the spinal cord is affected with pathology consistent with EAE; 2 = 30–50% of the spinal cord is affected with pathology consistent with EAE; 3 = 60–90% of the spinal cord is affected with pathology consistent with EAE; 4 = >90% of the spinal cord is affected with pathology consistent with EAE.
 
-## Flow cytometry and intracellular protein detection
+### Flow cytometry and intracellular protein detection
 
 Flow cytometry data were acquired on a FACSCanto (BD Biosciences, San Diego, CA) and analyzed with FlowJo software (Tree Star, Ashland, OR). To determine expression of cell surface proteins, mAb were incubated at 4°C for 20–30 min and cells were fixed using Cytofix/Cytoperm Solution (BD Biosciences) and, in some instances followed by mAb incubation to detect intracellular proteins. The following mAb clones were used: CD4 (GK1.5, Biolegend), CD11a (M17/4, Biolegend), IFNγ (XMG1.2; eBioscience), IL-17A (eBio17B7, eBioscience), TNFα (MP6-XT22, eBioscience), CD8a (5H10-1, Biolegend), Ki67 (B56, BD Pharmingen), Thy1.1 (HIS51, eBioscience), Thy1.2 (53–2.1, eBioscience), CD44 (IM7, eBioscience), CD45 (104, eBioscience), F4/80 (BM8, Biolegend), CD11b (M1/70, eBioscience), IA-b (M5/114.15.2, eBioscience), CD3e (145–2 C11, eBioscience), CD19 (MB19-1, eBioscience), FAS (SA367H8, Biolegend), FASL (MFL3, Biolegend), TRAIL (N2B2, Biolegend), RORγT (AFKJS-9, eBioscience), Tbet (eBio4B10, eBioscience), FoxP3 (FJK-16S, Invitrogen), and Dump [CD11b (M1/70), CD11c (N418), B220 (RA3-6B2), F4/80 (BM8), BioLegend].
 
@@ -147,14 +459,14 @@ Ki67 staining: Following surface staining cells were fixed overnight with FoxP3 
 
 Propidium Iodide and active Caspase 3/7 staining: Vybrant FAM Caspase-3 and −7 assay kit (Thermo-Fischer) was used to identify apoptotic cells via expression of active caspase3/7 and propidium iodide according to the manufacturer’s instructions. Briefly cells were incubated with FLICA reagent for 30 min at 37°C followed by surface staining with antibodies as well as propidium iodide at 4°C for 20 min. Cells were immediately analyzed after staining without fixation by flow cytometry.
 
-## Adoptive transfer (AT) of 2D2 cells
+### Adoptive transfer (AT) of 2D2 cells
 
 For 2D2 transfers 200 μl of blood was collected from Thy1.1/1.1 or Thy1.1/1.2 2D2 mice in heparin-coated capillary tubes or spleens were harvested and homogenized. Red blood cells were lysed and the frequency of naive CD4 T cells was determined by flow cytometric analysis of a portion of the samples. Remaining cells were then enumerated and then adjusted to transfer 5 × 103 naive CD4 T cells per mouse prior to immunization or 5 × 106 naive CD4 T cells per mouse to assess cell survival in non-immunized mice. Cells were transferred via retroorbital injection.
 
-## Multiplex cytokine analysis
+### Multiplex cytokine analysis
 
 Multiplex cytokine analysis was performed via BioRad Bio-plex Pro Mouse Cytokine 23-plex according to the manufacturer’s instructions for plasma cytokine analysis. Multiplex was analyzed on BioRad Bio-Plex (Luminex 200) analyzer in the university of Iowa Flow Cytometry core facility.
 
-## Statistical analysis
+### Statistical analysis
 
 Unless stated otherwise data were analyzed using Prism eight software (GraphPad) using two-tailed Student t-test (for two individual groups, if variance was unequal variance then Mann-Whitney U test), one-way ANOVA with Bonferroni post-hoc test (for >2 individual groups, if variance was unequal variance then Kruskal-Wallis with Dunn’s post-hoc test was used), two-way ANOVA (for multiparametric analysis of two or more individual groups, pairing was used for samples that came from the same animal) with a confidence interval of >95% to determine significance (*p<0.05). Log-rank (Mantel-Cox) curve comparisons was used to determine significant difference in time to disease EAE disease onset (*p<0.05). Data are presented as standard error of the mean.

@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Debates have arisen as to whether non-human animals actually can learn abstract non-symbolic numerousness or whether they always rely on some continuous physical aspect of the stimuli, covarying with number. Here, we investigated archerfish ( Toxotes jaculatrix ) non-symbolic numerical discrimination with accurate control for covarying continuous physical stimulus attributes. Archerfish were trained to select one of two groups of black dots (Exp. 1: 3 vs 6 elements; Exp. 2: 2 vs 3 elements); these were controlled for several combinations of physical variables (elements’ size, overall area, overall perimeter, density, and sparsity), ensuring that only numerical information was available. Generalization tests with novel numerical comparisons (2 vs 3, 5 vs 8, and 6 vs 9 in Exp. 1; 3 vs 4, 3 vs 6 in Exp. 2) revealed choice for the largest or smallest numerical group according to the relative number that was rewarded at training. None of the continuous physical variables, including spatial frequency, were affecting archerfish performance. Results provide evidence that archerfish spontaneously use abstract relative numerical information for both small and large numbers when only numerical cues are available.
+Debates have arisen as to whether non-human animals actually can learn abstract non-symbolic numerousness or whether they always rely on some continuous physical aspect of the stimuli, covarying with number. Here, we investigated archerfish (Toxotes jaculatrix) non-symbolic numerical discrimination with accurate control for covarying continuous physical stimulus attributes. Archerfish were trained to select one of two groups of black dots (Exp. 1: 3 vs 6 elements; Exp. 2: 2 vs 3 elements); these were controlled for several combinations of physical variables (elements’ size, overall area, overall perimeter, density, and sparsity), ensuring that only numerical information was available. Generalization tests with novel numerical comparisons (2 vs 3, 5 vs 8, and 6 vs 9 in Exp. 1; 3 vs 4, 3 vs 6 in Exp. 2) revealed choice for the largest or smallest numerical group according to the relative number that was rewarded at training. None of the continuous physical variables, including spatial frequency, were affecting archerfish performance. Results provide evidence that archerfish spontaneously use abstract relative numerical information for both small and large numbers when only numerical cues are available.
 
 ## Introduction
 
@@ -42,9 +42,17 @@ In our study, archerfish were trained to select one of two arrays, involving eit
 
 ## Results
 
-## Experiment 1
+### Experiment 1
 
 Eight archerfish were trained to discriminate between two groups of black dots in a 3 vs 6 numerical comparison; four fish were trained to select the number 3, while the other four were rewarded with the number 6. Learning curves for each individual animal are reported in Figure 2. No difference has been found in the number of trials needed to reach the learning criterion between the group trained with three elements (mean ± standard error of the mean [SEM] = 451.25 ± 106.77) and the group trained with six elements (mean ± SEM = 413.25 ± 73.14) (independent samples t-test: t(6) = 0.294, p = 0.779).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig2-v2.jpg)
+
+**Figure 2.:** Learning criterion (blue dotted line) was reached after two consecutive sessions ≥75%. The red dotted line refers to chance level.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Type of choices 0 and 1 corresponds to uncorrect and correct choices, respectively (training data refer to the last two training sessions, when learning criterion was reached).
 
 When the learning criterion was reached (at least 75% of correct choices for two consecutive sessions), an analysis focused on evaluating whether archerfish' performance was influenced by the different non-numerical control conditions (i.e. overall area, overall perimeter, elements radius, elements’ convex-hull, and inter-distance) was performed (see Figure 2—figure supplement 1 for individual fish’ performance in each control condition). Choices in the last two sessions (over criterion) were analyzed using a ‘generalized linear mixed model’ (GLMM, see Methods section). Three fixed effects (type of training – 3 dots, 6 dots; type of geometrical control – radius fixed, overall area controlled, overall perimeter controlled; type of spatial disposition control – inter-distance controlled, convex-hull controlled) and one random intercept effect (fish ID) were considered; the independent variable was the choice for the reinforced numerosity. Analysis of the random effect showed not to affect the model (random intercept variance of the best fit: 1.14 × 10−12). No significant differences were found between effects of groups, nor group interactions, suggesting to adopt the simplest model considering the choices with no contribution from any effect. The best model final estimate (logarithmic odds ratio) was 1.510 ± 0.097, corresponding to 0.82 in natural units (fraction of choices) as confirmed by a binomial test (probability of success: 81.9%, p < 0.001, 95% confidence intervals (CIs): 78.9–84.6). The corresponding Cohen’s g (see Methods section) was 0.32, indicating a large effect size.
 
@@ -58,19 +66,43 @@ Test 3: In the last test, fish behaviour was observed in a comparison involving 
 
 Results at tests for Experiment 1 are reported in Figure 3 (see also Figure 3—figure supplement 1 for individual fish’ performance in each control condition). Choices for the relative numerosity were analyzed using a GLMM (see Methods section). Four fixed effects (type of training – 3 dots, 6 dots; type of test – 2 vs 3, 5 vs 8, and 6 vs 9; type of geometrical control – radius fixed, overall area controlled, overall perimeter controlled; type of spatial disposition control – inter-distance controlled, convex-hull controlled) and one random intercept effect (fish ID) were considered. Analysis of the random effect showed not to affect the model (random intercept variance of the best fit: 4 × 10−14), and no significant differences were found between effects of groups, nor group interactions, suggesting to adopt the simplest model considering the choices with no contribution from any effect. Only a trend for the contribution of the type of geometrical control was observed, driven by a non-significant difference between the ‘radius fixed’ and ‘overall area controlled’ conditions (post hoc non-parametric tests adjusted with Tukey method: p = 0.063). Within this trend, every single condition was statistically significant by chance level in the direction of the relative choice (log odds ratio estimates: 0.90 ± 0.13 for radius; 1.47 ± 0.21 for overall area; 1.03 ± 0.19 for overall perimeter), as confirmed by exact binomial tests for each different group (‘radius’ estimate in natural units: 0.71, probability of success: 71.2%, p < 0.001, 95% CI: 65.6–76.3; ‘overall area’ estimate in natural units: 0.81, probability of success: 81.3%, p < 0.001, 95% CI: 79.3–87.3; ‘overall perimeter’ in natural units: 0.74, probability of success: 73.6%, p < 0.001, 95% CI: 65.6–80.6. The corresponding Cohen’s g (see Methods section) was, respectively, 0.21 – medium effect size – for ‘radius’, 0.31 – large effect size – for ‘overall area’, and 0.24 – medium effect size – for ‘overall perimeter’).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig3-v2.jpg)
+
+**Figure 3.:** Coloured dots represent the individual performance for each fish.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Type of choices A and R corresponds to choices for absolute and relative numerosity.
+
 Considering the previous discussion, a binomial test shrinking all the data together was performed to investigate the final findings: fish showed an overall strong significant preference for the relative numerosity (probability of success: 74.3%, p < 0.001, 95% CI: 70.5–77.8, Cohen’s g = 0.24 medium effect size).
 
 The result obtained in Experiment 1 showed that archerfish, when trained to select one of two simultaneously displayed groups of dots with different numerosities (i.e. 3 vs 6 dots), use a relative numerical rule to perform novel numerical comparisons. These results confirm findings in other fish species such as angelfish (Miletto Petrazzini et al., 2016) and guppy (Miletto Petrazzini et al., 2015), but they are different from those obtained in bees which showed instead a preference for the absolute number (Bortot et al., 2019). An important difference between fish and bees studies is related to the numerical comparison used: respectively, large numbers (>4 elements) for fish and small numbers (≤4 elements) with bees. This might engage different systems (as reported in Introduction section), explaining the discrepancy. The training discrimination used in Experiment 1 involved two numbers (3 vs 6) that belong to the hypothesized ‘small’ and ‘large’ systems, respectively. This is different than in previous fish studies which employed only large numerosities; thus, it remains to be tested how fish would deal when trained with small numerosities only. In principle, the presence of a large number in the comparison in Experiment 1 may be enough to lead the archerfish to follow a relative rule. If trained with a numerical discrimination involving only small numbers, would the animals still use a relative numerosity judgement or would they turn to absolute judgement? This was tested in Experiment 2.
 
-## Experiment 2
+### Experiment 2
 
 Four subjects were trained to select the largest number in a 2 vs 3 comparison (i.e. the number 3). Fish judgement was then observed in two tests (i.e. 3 vs 4 and 3 vs 6) involving a comparison between the previously trained numerosity (3) and a novel numerosity (4 or 6).
 
 All fish reached the learning criterion, showing an ability to discriminate between the two numbers (trials to criterion ± SEM = 506.5 ± 97.8; Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig4-v2.jpg)
+
+**Figure 4.:** Learning criterion (blue dotted line) was reached after two consecutive sessions ≥75%. The red dotted line refers to chance level.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Type of choices 0 and 1 corresponds to uncorrect and correct choices, respectively (training data refer to the last two training sessions, when learning criterion was reached).
+
 Choices during the last two sessions (over criterion) were analyzed using a GLMM (see also Figure 4—figure supplement 1 for individual fish’ performance in each control condition). Two fixed effects (type of geometrical control – radius fixed, overall area controlled, overall perimeter controlled; type of spatial disposition control – inter-distance controlled, convex-hull controlled) and one random intercept effect (fish ID) were considered; the independent variable was the choice for the reinforced numerosity. Analysis of the random effect showed not to affect the model (zero variance for the random intercept of the best fit). No significant differences were found between effects of groups, nor group interactions, suggesting to adopt the simplest model (i.e. considering the fish’ choices with no contribution from any effects). The best model final estimate (logarithmic odds ratio) was 1.12 ± 0.12, corresponding to 0.75 in natural units (fraction of choices) as confirmed by a binomial test (probability of success: 75.5%, p < 0.001, 95% CIs: 70.8–79.8, Cohen’s g = 0.25 large effect size).
 
 Results at test are reported in Figure 5 (see Figure 5—figure supplement 1 for individual fish’ performance in each control condition). A GLMM model with three fixed effects (type of test – 3 vs 4, 3 vs 6; type of geometrical control – radius fixed, overall area controlled, overall perimeter controlled; type of spatial disposition control – inter-distance controlled, convex-hull controlled) and one random intercept effect (fish ID) showed no random effect of fish (zero variance of random intercept for the best fit), neither significant differences between groups and groups’ interactions, suggesting to adopt the simplest model (i.e. considering the fish’ choices with no contribution from any effects).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig5-v2.jpg)
+
+**Figure 5.:** Coloured dots represent the individual performance for each fish.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Type of choices A and R corresponds to choices for absolute and relative numerosity.
 
 The best model final estimate (logarithmic odds ratio) was 0.84 ± 0.16, corresponding to 0.70 in natural units, as confirmed by a binomial test (probability of success: 69.8%, p < 0.001, 95% CIs: 62.7–76.2, Cohen’s g = 0.2 medium effect size).
 
@@ -78,19 +110,86 @@ In Experiment 2, archerfish showed to be able to discriminate between two differ
 
 Considering the results of Experiments 1 and 2, it is apparent that archerfish can easily discriminate between small and large numerosity using the same rules, providing evidence in favour of a unique system underlying numerical discrimination as found in other fish species (Stancher et al., 2013; Potrich et al., 2015).
 
-## Accuracy is not influenced by non-numerical magnitudes
+### Accuracy is not influenced by non-numerical magnitudes
 
 The control of non-numerical magnitudes applied to our stimuli considers all the possible combinations associating the geometry and the spatial disposition of the numerical dots’ array. Given that it is empirically impossible to control for all these physical factors at once, as a consequence, when some are balanced, others may be free to covary congruently with numerosity (i.e. as the numerosity increases, the non-numerical information increases as well). A previous study led by Leibovich-Raveh et al. in archerfish (Leibovich-Raveh et al., 2021) aimed to study whether the spontaneous choice for two numerically different groups of dots was influenced by how many physical variables were positively correlating with numerosity. By manipulating the geometry and spatial disposition of the elements, several stimuli with different congruity levels were created, ranging from 1 to 5 (i.e. from congruity level 1: only one physical variable was correlating positively with numerosity, to congruity level 5: all the five physical variables considered in the study were positively correlating with numerical information). The results showed that archerfish’ choice for the largest or smallest numerosity in the study by Leibovich-Raveh and colleagues was indeed influenced by the non-numerical variables that positively correlated with numerosity. Using a similar approach, we checked whether the archerfish’ performance accuracy in detecting one of the two numerical sets correlated with the number of non-numerical information that were positively covarying with numerosity.
 
 Analyzing the characteristics of our stimuli, the levels of congruity (i.e. the number of physical factors positively correlating with numerosity) ranged from 1 to 3, depending on the different stimuli configurations (see Table 1).
 
+**Table 1.**
+ Schematic representation of the levels of congruity for each control condition (reported in the table rows) applied in the study; the columns represent the different variables that could covary with numerosity (C: congruent with number, IC: incongruent with number).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Control condition</th>
+      <th>Overall area</th>
+      <th>Overall perimeter</th>
+      <th>Convex-hull (CH)</th>
+      <th>Inter-distance (ID)</th>
+      <th>Congruency level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Perimeter – CH</td>
+      <td>IC</td>
+      <td>=</td>
+      <td>=</td>
+      <td>C</td>
+      <td>1a</td>
+    </tr>
+    <tr>
+      <td>Perimeter – ID</td>
+      <td>IC</td>
+      <td>=</td>
+      <td>C</td>
+      <td>=</td>
+      <td>1b</td>
+    </tr>
+    <tr>
+      <td>Area – CH</td>
+      <td>=</td>
+      <td>C</td>
+      <td>=</td>
+      <td>C</td>
+      <td>2a</td>
+    </tr>
+    <tr>
+      <td>Area – ID</td>
+      <td>=</td>
+      <td>C</td>
+      <td>C</td>
+      <td>=</td>
+      <td>2b</td>
+    </tr>
+    <tr>
+      <td>Radius fixed – CH</td>
+      <td>C</td>
+      <td>C</td>
+      <td>=</td>
+      <td>C</td>
+      <td>3a</td>
+    </tr>
+    <tr>
+      <td>Radius fixed – ID</td>
+      <td>C</td>
+      <td>C</td>
+      <td>C</td>
+      <td>=</td>
+      <td>3b</td>
+    </tr>
+  </tbody>
+</table>
+
 To evaluate the influence of different congruency levels on the fish’ choice, an analysis was performed fitting a GLMM with the levels of congruency as fixed factor. The results (reported in Figure 6) proved that no correlation was present between the levels of congruity and the choices for the larger/smaller numerosity, both for Experiments 1 and 2 (differences between groups, given by a post hoc analysis with Tukey correction showed p values >0.05; see Figure 6—source data 1). This evidence suggests again that fish accuracy was not influenced by non-numerical variables, confirming that the relative rule adopted was mainly driven by the numerical cue. At first sight, this result could seem discordant from what established by Leibovich et al., who found that the increasing number of variables influenced archerfish performance. However, in our study, archerfish were trained to select the stimuli with specific numerosity, while in the Leibovich-Raveh’s study, fish were observed in a spontaneous choice task always rewarded, irrespective of the chosen stimulus. Taken together, these pieces of evidence might suggest that magnitude information matter and are particularly salient to archerfish, but they do not interfere when numerical rules are specifically engaged.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/74057/elife-74057-fig6-v2.jpg)
 
-**Figure 6.:** In Experiment 1, data are grouped by training condition (circles for fish trained with three dots, triangles for fish trained with six dots). Coloured points represent single fish performance with standard error bars (i.e. data are mediated over trials with the same congruency level, per each fish), while black points represent the overall mean (i.e. data are mediated over all the trials with the same congruency level). Red dotted lines represent chance levels.Figure 6—source data 1.
+**Figure 6.:** In Experiment 1, data are grouped by training condition (circles for fish trained with three dots, triangles for fish trained with six dots). Coloured points represent single fish performance with standard error bars (i.e. data are mediated over trials with the same congruency level, per each fish), while black points represent the overall mean (i.e. data are mediated over all the trials with the same congruency level). Red dotted lines represent chance levels.
 
-## Numerosity and spatial frequency
+### Numerosity and spatial frequency
 
 The stimuli used in our experiments were visual collections of black dots differing in numerosity. As described in Methods section, for each numerical comparison, the physical properties of each array were equalized for the geometry (radius, area, and perimeter) and spatial disposition (inter-distance and convex-hull; see Figure 1). Since we are dealing with images, each figure could also be described in terms of spatial frequency. Spatial frequency can be thought of as the number of repeating elements in a pattern per unit distance, and it is mathematically described by the Fourier transform theory. No control was applied to the spatial frequency of our stimuli. Thus, in order to check whether spatial frequency could influence archerfish choice, we calculated its variation across all different numerosities and control conditions (see Methods section). Within each numerical test comparison, different spatial frequencies were found (see Figure 7). The different constraints applied to the stimuli (control of the area, perimeter, or elements radius) showed to differently influence the spatial frequency between the two numerosities. In detail, when the elements’ radius was fixed between the two numerical arrays, the total power of the spatial frequency was higher in the smaller group than in the larger one, while the opposite was found in the groups in which the overall perimeter was balanced (total power higher in the more numerous group). Interestingly, this trend was maintained in all the numerical comparisons used, irrespective of the number of elements to be compared.
 
@@ -126,11 +225,11 @@ In conclusion, our results provide clear evidence that under conditions of stric
 
 ## Materials and methods
 
-## Subjects and rearing conditions
+### Subjects and rearing conditions
 
 Sixteen adult archerfish, T. jaculatrix (fish size ranged between 8 and 10 cm in length) were provided by a local commercial supplier (‘Acquario G di Segatta Stefano’, Trento, Italy). A group of fish (N = 8) took part in Experiment 1, while a second group (N = 4) took part in Experiment 2. Fish were randomly assigned to the two training conditions. The other four animals were excluded because they did not show any consistent motivation in hitting the screen, failing to get through the different steps of the pre-training phase (see ‘General procedure’ paragraph). All fish were housed in large aquariums (100 × 40 × 40 cm) in groups of 10 individuals. Prior to the experiment, each archerfish was moved into individual aquaria (40 × 30 × 50 cm) filled with freshwater maintained at 25°C and enriched with gravel and a shelter. Water quality was kept by suitable filters (Sera fil 60). The system was illuminated under a 10:14 light/dark cycle (Sylvania luxline plus F36W/840 cool white). Fish were fed with food pellets (Hikari cichlid gold baby pellet).
 
-## Apparatus
+### Apparatus
 
 Both the apparatus and the training method were set up based on previous studies conducted with archerfish on visual discrimination tasks (i.e. Karoubi et al., 2017; Newport et al., 2013; Ben-Tov et al., 2015). Each experimental tank consisted of a rectangular aquarium with a monitor screen located above it (20″, DELL 2009Wt), held at 30 cm from the water level (Figure 8a). Each tank was surrounded by white opaque panels to ensure that the fish was not distracted by external cues. Each tank was raised 8 cm off the table thanks to lateral supports, allowing the positioning of a video camera under the centre of the pavement’s tank to record a bottom view of the fish and the screen (see Videos 1 and 2 examples in the supplement materials).
 
@@ -138,17 +237,25 @@ Both the apparatus and the training method were set up based on previous studies
 
 **Figure 8.:** (a) Schematic representation of the experimental apparatus. (b) Bottom view of the tank from the camera placed below the tank’s pavement.
 
-## Stimuli
+![Video 1.](https://cdn.elifesciences.org/articles/74057/elife-74057-video1.mp4.jpg)
+
+**Video 1.:** The video camera records a bottom view of the fish and the screen.
+
+![Video 2.](https://cdn.elifesciences.org/articles/74057/elife-74057-video2.mp4.jpg)
+
+**Video 2.:** The video camera records a lateral view of the fish and the screen.
+
+### Stimuli
 
 The stimuli presented in the training phase consisted of groups of black dots confined into a black outline circle (6 cm diameter). The dots size was ranging between 3 and 12 mm, and the visual angle was in the range 0.43° and 1.72°, which has been proven to be well perceived by archerfish (Ben-Simon et al., 2012). In every trial, a couple of stimuli was simultaneously presented in the centre of the screen (horizontally aligned to the shortest monitor’s side, see Figure 8b). All the stimuli were created using the software GeNEsIS (Zanon et al., 2021), a Matlab program that allows to create numerical collections of stimuli controlled for several non-numerical magnitudes. Given that it is mathematically impossible to balance all the non-numerical magnitudes simultaneously in two different numerical groups (e.g. when the convex-hull of the stimuli increases, the density decreases and vice versa; similarly, when the overall area of two sets of elements with different numerousness is balanced, their overall perimeter differ, etc.), different sets of stimuli were created for each numerosity, controlling for some visual physical property; all the possible properties were covered across the different sets during a session (see Figure 1 for a view of all the combinations applied in a session and Table 1 to see the variables balanced and not balanced in each condition). Doing so, even some physical variables were not controlled in one specific condition (e.g. when the overall area of the two sets was balanced, their overall perimeter differ; when the convex-hull of the stimuli increases, the density decreases, and vice versa), the use of different randomized control conditions allowed us not to make any of the physical variables systematically reliable and rewarded. Pictures from each set were randomly presented, making the numerical information the only reliable cue to differentiate the two stimuli across all the various trials.
 
-## General procedure
+### General procedure
 
-## Pre-training phase
+#### Pre-training phase
 
 Before starting the experiment, fish underwent a pre-training phase in which they were gradually habituated to spit (hit with a jet of water) at the training stimulus on the screen. This was accomplished throughout a shaping procedure to facilitate the task. The silhouette of an insect was initially presented, inducing the fish reaction to spit at the prey; once hit, fish were rewarded with a food pellet. The insect was gradually replaced by a black dot and finally with the effective training stimulus. Once the fish accomplished all these stages, the training phase was initiated. As mentioned above, four animals did not achieve this phase, due to the fact that animals were rarely interested in hitting at the screen (mostly motivated when the insect silhouette was presented but not with images depicting a dot). After 10 consecutive sessions with the aforementioned passive behavior, animals were excluded from the study.
 
-## Training phase
+#### Training phase
 
 Fish were trained to spit at the correct target presented on the monitor above the tank. The stimuli to discriminate consisted of two groups of dots with different numerosity. Every trial started with the appearance of a blinking black square (1.6 cm, three blinks of 100 ms) at the centre of the screen to catch the fish’s attention towards the screen. Then, the two training stimuli were displayed one next to the other (distance 7 cm) on the two sides of the monitor. Only one of the two numerosities was rewarded with a food pellet when hit, while the choice for the incorrect stimulus caused the stop of the trial, which in every case, in absence of choice, was stopped after 5 min. At the end of each trial, the screen was cleaned from the water drops and a new trial started.
 
@@ -158,11 +265,11 @@ Fish were trained with daily sessions of 48 trials, in which continuous physical
 
 Fish generally responded 70–100% of the trials. The learning phase was considered completed when the fish reached a learning criterion of at least 75% of correct choices for two consecutive days (binomial test: p < 0.01), allowing the fish to take part in the test phase.
 
-## Test phase
+#### Test phase
 
 Generally, each test condition consisted of the presentation of a couple of stimuli with a novel numerical comparison, aiming to see if the target numerosity learned in the training phase was represented as a relative or an absolute numerical information. Each test was composed of 24 probe trials not rewarded, divided into three testing days of 8 randomized trials containing all the control conditions (2 trials for each condition ‘radius fixed – inter-distance’ and ‘radius fixed – convex-hull’; one trial for each condition ‘area – inter-distance’, ‘area – convex-hull’, ‘perimeter – inter-distance’, and ‘perimeter – convex-hull’). In each test session, the eight test trials were shuffled and interspersed with rewarded recall training trials (32 recall in total) to maintain the fish motivation high during the whole test duration. The order of the tests was randomized among the fish to exclude that the performance could be influenced by their order. At the end of each test, the fish underwent a complete daily session of retraining to further exclude potential interference among the tests.
 
-## Statistical analyses and data analysis
+### Statistical analyses and data analysis
 
 Data were analyzed using R software (R-4.1.0). In Experiment 1, an independent t-test was used to compare the number of trials to reach the criterion between the two groups at training. For the last two training trials (over criterion) and at test, choices for the relative numerosity were analyzed using a GLMM fit by maximum likelihood (Laplace Approximation), binomial GLMM with a logit link. The best model was selected after a back elimination procedure, removing interactions and factors iteratively, and comparing the different models based on AIC and BIC information criteria. A final binomial test was used to compare the distribution of the choices for the relative and absolute numerosities when no factors were significantly contributing to the results. Log odds ratios from the best fits were reported as GLMM estimates with their errors and converted in natural scales to give a more straightforward interpretation of the effect size (which for our binomial distributions corresponds to the sample proportion). 95% CIs were also reported for a cleaner interpretation of the final results. Moreover, following Cohen, 2013, the chance proportion of 0.5 was subtracted to our binomial sample proportion to obtain a final Cohen’s g effect size (interpretable as: <0.05 negligible, 0.1–0.15 small, 0.2–0.25 medium, >0.25 large). To obtain an estimate of the spatial frequency, we adopted an approach already performed in other studies (MaBouDi et al., 2021; Adriano et al., 2021; Felisatti et al., 2020): the fast Fourier transform of our images was calculated, a radial average of the signal amplitude in the frequency domain was performed, and lastly, all the frequency contributions of its power spectrum were summed up. In this way, a value related to the total energy of each frequency component inside a given image is obtained.
 

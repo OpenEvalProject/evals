@@ -18,9 +18,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05td3s095 Key Lab of Organic-based Fertilizers of China and Jiangsu Provincial Key Lab for Solid Organic Waste Utilization, Nanjing Agricultural University Nanjing China
-2. https://ror.org/05td3s095 College of Life Science, Nanjing Agricultural University Nanjing China
-3. https://ror.org/040af2s02 Department of Microbiology, University of Helsinki Helsinki Finland
+1. Key Lab of Organic-based Fertilizers of China and Jiangsu Provincial Key Lab for Solid Organic Waste Utilization, Nanjing Agricultural University Nanjing China ([ROR:05td3s095](https://ror.org/05td3s095))
+2. College of Life Science, Nanjing Agricultural University Nanjing China ([ROR:05td3s095](https://ror.org/05td3s095))
+3. Department of Microbiology, University of Helsinki Helsinki Finland ([ROR:040af2s02](https://ror.org/040af2s02))
 
 † Corresponding author
 
@@ -38,23 +38,226 @@ Here, we used a combination of genetics, molecular biology, and biodiversity-eco
 
 ## Results
 
-## Effects of transposon insertions on B. amyloliquefaciens T-5 mutant traits measured in vitro and in vivo
+### Effects of transposon insertions on B. amyloliquefaciens T-5 mutant traits measured in vitro and in vivo
 
 We first quantified the phenotypic effects of transposon insertions on B. amyloliquefaciens T-5 mutant traits across the whole mutant library (1999 mutants in total, Figure 1—figure supplement 1, Supplementary file 1a). To make the number of mutants more manageable for in vivo experiment, we randomly selected a subset of 479 mutants for further analyses (Supplementary file 1b). While we likely lost certain unique mutants in the process, the sampled subset was phenotypically representative of the original collection based on four measured traits (Mantel test; r=0.7591, p=0.04167). Within this subset, most insertions had negative effects on the four measured phenotypic traits, with more than half of the mutants showing reduced swarming (58.7%), biomass production (67.2%), and biofilm formation (60.8%) compared to the wild-type strain (Figure 1A). In contrast, the median effect of insertions affecting the pathogen suppression was neutral, and 51.1% of the mutants showed only a moderate increase in their suppressiveness (Figure 1A, Supplementary file 1b). In line with this finding, the distribution of effects of insertions on each trait was skewed, where beneficial mutations resulted mainly in a moderate improvement, while harmful mutations often led to severe reductions in measured traits (Figure 1A). Moreover, several insertions caused trade-offs, where improvement in one trait led to a reduction in another trait (Figure 1B). For example, swarming motility correlated negatively with biomass production, while biomass production led to a trade-off with both biofilm production and pathogen suppression (Figure 1B). These results thus suggest that transposon insertions constrained the simultaneous improvement of multiple traits, leading to specialized B. amyloliquefaciens T-5 mutants, which could be clustered in three phenotypic groups based on K-means clustering (Adonis test: R2=0.5283, p<0.001, Figure 1C, Figure 1—figure supplement 2). Compared to the other two clusters, mutants belonging to the cluster 1 showed significant increases in biofilm formation and pathogen suppression but reduced biomass production (Figure 1D, Supplementary file 2a). Mutants in the cluster 2 showed improved swarming motility and reduced pathogen suppression, while mutants in the cluster 3 had poor performance overall, showing highly reduced swarming motility and pathogen suppression (Figure 1D, Supplementary file 2a).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig1-v2.jpg)
+
+**Figure 1.:** (A) shows distribution of fold changes regarding mutants’ swarming motility, biomass production, biofilm formation, and pathogen suppression relative to the wild-type strain (black dashed line equaling 1). (B) displays pairwise covariance matrix between individual traits, where red cells indicate negative trait correlations (trade-offs) and blue cells positive traits correlations; white cells indicate no correlation between the given traits. (C) shows principal coordinates analysis showing the clustering of all mutants and the wild-type (black point). Mutants were assigned to different clusters based on K-means algorithm of four measured traits. (D) shows mean trait differences between clusters based on unpaired two-samples Wilcoxon test. The wild-type was assigned in the cluster 1 based on K-means clustering and its trait values are shown as dashed black lines. (E) displays root colonization of representative 47 B. amyloliquefaciens mutants from clusters 1–3 relative to the wild-type strain (black dashed line) based on cell densities in the root system 30 days post pathogen inoculation (dpi). (F) shows plant protection of representative 47 B. amyloliquefaciens mutants from clusters 1–3 relative to the wild-type strain (black dashed line), and negative ‘pathogen-only’ control (red dashed line), quantified as bacterial wilt disease incidence 30 dpi. Shaded areas in (E and F) represent the mean ± SEM. Since (D) displays the normalized trait values, variation for the wild-type strain is not shown. Pairwise differences in (D–F) were analyzed using unpaired two-samples Wilcoxon test: *** denotes for statistical significance at p<0.001; ** denotes for statistical significance at p<0.01; * denotes for statistical significance at p<0.05; ns denote for no significance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) shows the distribution of fold changes regarding mutants’ swarming motility, biomass production, biofilm formation and pathogen suppression relative to the wild-type strain (dashed black line equaling 1). Of these mutants, around 64.5% showed reduction in swarming motility, 76.2% in biomass production, 84.5% in biofilm formation, and 85.5% in pathogen suppression compared to the wild-type strain. (B) shows pairwise covariance matrix between individual traits, where the red cells indicate negative trait correlations (trade-offs) and the blue cells positive traits correlations; white cells indicate no correlation between given traits.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) shows graphical circular map of B. amyloliquefaciens T-5 genome. Moving from the outside to the center, different circles denote for: genes of the forward strand (colored by COG categories), genes of the reverse strand (colored by COG categories), RNA genes (tRNAs green, rRNAs red, other RNAs black), GC content and GC skew. (B) shows the distribution of disrupted gene functions of a subset of 47 mutants based on GO categories and K-means cluster identity (detailed gene sequences of the disrupted genes is provided in Supplementary file 1c).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig1-figsupp4-v2.jpg)
+
 To test if the mutants clustered in different phenotypic groups also differed in their tomato root colonization and ability to protect plants from R. solanacearum infections, 47 mutants representing a subset of three clusters were randomly selected for a greenhouse experiment (the specific effects of insertions on biological processes, cellular components, and molecular function for all mutants are shown in Figure 1—figure supplement 3B and Supplementary file 1c). Compared to the wild-type, 57% of these mutants (27/47) reached lower population densities in the rhizosphere (30 days post-pathogen inoculation [dpi]), and this was especially clear for mutants belonging to clusters 2 and 3. In contrast, mutants belonging to the cluster 1 retained more efficient root colonization compared to mutants from the other clusters, and more than half (16 of 27) of the cluster 1 mutants showed improved root colonization relative to the wild-type (30 dpi, Figure 1E, Supplementary file 2b). Around 93% of all mutants (44/47) exhibited reduced plant protection relative to the wild-type strain. However, mutants from the cluster 1 showed higher plant protection compared to the other two clusters, and specifically, two of the cluster 1 mutants showed improved plant protection relative to the wild-type strain (30 dpi, Figure 1F, Supplementary file 2b). Together, these results show that while most transposon mutants had reduced performance relative to the wild-type strain, some of the mutants showed improvement in at least in one plant growth promotion trait, which often resulted in trade-offs with some other traits.
 
-## Phenotypic trait variation explains mutant success in rhizosphere colonization and plant protection in vivo with tomato
+### Phenotypic trait variation explains mutant success in rhizosphere colonization and plant protection in vivo with tomato
 
 To test if phenotypic trait variation measured in vitro correlates with beneficial effects on plants in vivo, the rhizosphere colonization and plant protection of 47 phenotypically distinct mutants was quantified after 5, 15, and 30 dpi in a greenhouse experiment. Results showed that B. amyloliquefaciens inoculations led to approximately 20.6% mean reduction in bacterial wilt disease incidence at the final time point of the experiment (30 dpi, Figure 2A–B). To establish a link between phenotypic variation measured in vitro and in vivo, we correlated mutant trait variation with root colonization and plant protection during different phases of the experiment. Trait correlations with the root colonization and plant protection became more significant in time and the most significant correlations were observed at the final time point (30 dpi), followed by middle (15 dpi) and early (5 dpi) sampling time points (Table 1). Specifically, swarming motility predicted the root colonization during the seedling stage (5 dpi, Table 1; Figure 2C, F1,46=7.65, R2=0.1239, p=0.0082), while swarming motility was positively associated with plant protection at the flowering stage (30 dpi, Table 1; Figure 2H, F1,46=15.08, R2=0.2306, p<0.001). Similarly, biofilm formation had positive associations with root colonization (Table 1; Figure 2E, 15 dpi: F1,46 = 4.40, R2=0.0675, p=0.0416, 30 dpi: F1,46 = 7.62, R2=0.1209, p=0.0089) and plant protection during vegetative and flowering stages (at 15 and 30 dpi), respectively (Table 1; Figure 2J, 15 dpi: F1,46 = 6.44, R2=0.1038, p=0.0146, 30 dpi: F1,46 = 8.69, R2=0.1406, p=0.0050). Pathogen suppression was positively associated with root colonization and plant protection at 30 dpi (Table 1; Figure 2F, F1,46=7.65, R2=0.1239, p=0.0082; Figure 2K, F1,46=15.65, R2=0.2538, p<0.001), while biomass production was not significantly associated with either root colonization or plant protection at any time points (Table 1; Figure 2D and I). As a result, the mean performance of mutants (‘Monoculture average performance’ index based on mean of all traits; see Materials and methods) was significantly positively correlated with both root colonization (Figure 2G, F1,46=7.77, R2=0.1259, p=0.0077) and plant protection (Figure 2L, F1,46=28.26, R2=0.3671, p<0.001) at the flowering stage (30 dpi). Together, these results suggest that while mutants with high trait values in biofilm formation, swarming motility, and pathogen suppression had positive effects on root colonization and plant protection, their relative importance varied depending on the growth stage of the plant.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig2-v2.jpg)
 
-**Figure 2.:** B. amyloliquefaciens mutants based on their trait values measured in vitro at different sampling time points.(A and B) show the dynamics of root colonization and plant protection, respectively. The red and black lines in (B) show the disease incidence of pathogen-only control and B. amyloliquefaciens mutant treatments, respectively. (C–G) and (H–L) show root colonization and plant protection, respectively, correlated with different traits at 5 days post pathogen inoculation (dpi) (gray), 15 dpi (light blue), and 30 dpi (dark blue) time points. Significant relationships and R-squared values are shown in panels with colors corresponding to the sampling time points (‘ns’ denotes for non-significant relationship).
+**Figure 2.:** (A and B) show the dynamics of root colonization and plant protection, respectively. The red and black lines in (B) show the disease incidence of pathogen-only control and B. amyloliquefaciens mutant treatments, respectively. (C–G) and (H–L) show root colonization and plant protection, respectively, correlated with different traits at 5 days post pathogen inoculation (dpi) (gray), 15 dpi (light blue), and 30 dpi (dark blue) time points. Significant relationships and R-squared values are shown in panels with colors corresponding to the sampling time points (‘ns’ denotes for non-significant relationship).
 
-## Designing and testing the performance of mutant consortia in vitro and in vivo
+**Table 1.**
+ Analysis of variance (ANOVA) table summarizing the effects of mutant traits measured in vitro on the root colonization and plant protection.Separate models were run for each dependent variable at different time points (5, 15, and 30 days post pathogen inoculation [dpi]) and all response variables were treated as continuous variables (bacterial abundances were log-transformed before the analysis). Table data represent only the most parsimonious models based on the Akaike’s information criterion (AIC) where ‘NA’ denotes variables that were not retained in the ﬁnal models, ‘df’ denotes degrees of freedom, and ‘R2’ denotes total variance explained by regression coefﬁcient of determination. The arrows represent the direction of coefficient values: ↑: coefficient >0; ↓: coefficient <0. Significant effects (p<0.05) are highlighted in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="9">Day post pathogen inoculation (dpi)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th colspan="3">5 dpi</th>
+      <th colspan="3">15 dpi</th>
+      <th colspan="3">30 dpi</th>
+    </tr>
+    <tr>
+      <th>Mutant trait</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+      <th>df</th>
+      <th>F</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="10">Root colonization (Bacillus abundance – log CFU g–1 rhizosphere soil)</td>
+    </tr>
+    <tr>
+      <td>Swarming motility</td>
+      <td>1</td>
+      <td>5.32</td>
+      <td>0.0259↑</td>
+      <td>1</td>
+      <td>0.006</td>
+      <td>0.9404↑</td>
+      <td>1</td>
+      <td>0.008</td>
+      <td>0.9302↑</td>
+    </tr>
+    <tr>
+      <td>Biomass production</td>
+      <td>1</td>
+      <td>0.46</td>
+      <td>0.5032↓</td>
+      <td>1</td>
+      <td>0.58</td>
+      <td>0.4512↑</td>
+      <td>1</td>
+      <td>0.07</td>
+      <td>0.7886↓</td>
+    </tr>
+    <tr>
+      <td>Biofilm formation</td>
+      <td>1</td>
+      <td>0.69</td>
+      <td>0.4103↑</td>
+      <td>1</td>
+      <td>4.34</td>
+      <td>0.0433↑</td>
+      <td>1</td>
+      <td>5.64</td>
+      <td>0.0220↑</td>
+    </tr>
+    <tr>
+      <td>Pathogen suppression</td>
+      <td>1</td>
+      <td>2.04</td>
+      <td>0.1609↓</td>
+      <td>1</td>
+      <td>0.006</td>
+      <td>0.9410↓</td>
+      <td>1</td>
+      <td>8.10</td>
+      <td>0.0068↑</td>
+    </tr>
+    <tr>
+      <td rowspan="2">No. of residuals</td>
+      <td rowspan="2">43</td>
+      <td colspan="2">R2=0.0875</td>
+      <td rowspan="2">43</td>
+      <td colspan="2">R2=0.0193</td>
+      <td rowspan="2">43</td>
+      <td colspan="2">R2=0.1730</td>
+    </tr>
+    <tr>
+      <td colspan="2">AIC: 16.18</td>
+      <td colspan="2">AIC: 3.82</td>
+      <td colspan="2">AIC: 25.06</td>
+    </tr>
+    <tr>
+      <td colspan="10">Plant protection (disease incidence [%])</td>
+    </tr>
+    <tr>
+      <td>Swarming motility</td>
+      <td></td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>0.34</td>
+      <td>0.5620↑</td>
+      <td>1</td>
+      <td>6.89</td>
+      <td>0.0119↓</td>
+    </tr>
+    <tr>
+      <td>Biomass production</td>
+      <td></td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>0.94</td>
+      <td>0.3369↓</td>
+      <td>1</td>
+      <td>0.23</td>
+      <td>0.6339↑</td>
+    </tr>
+    <tr>
+      <td>Biofilm formation</td>
+      <td></td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>5.71</td>
+      <td>0.0213↓</td>
+      <td>1</td>
+      <td>12.34</td>
+      <td>0.0016↓</td>
+    </tr>
+    <tr>
+      <td>Pathogen suppression</td>
+      <td></td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>0.14</td>
+      <td>0.7090↓</td>
+      <td>1</td>
+      <td>20.90</td>
+      <td>&lt;0.001↓</td>
+    </tr>
+    <tr>
+      <td rowspan="2">No. of residuals</td>
+      <td rowspan="2"></td>
+      <td colspan="2">NA</td>
+      <td rowspan="2">43</td>
+      <td colspan="2">R2=0.0625</td>
+      <td rowspan="2">43</td>
+      <td colspan="2">R2=0.4294</td>
+    </tr>
+    <tr>
+      <td colspan="2">NA</td>
+      <td colspan="2">AIC: –101.24</td>
+      <td colspan="2">AIC: –112.38</td>
+    </tr>
+  </tbody>
+</table>
+
+### Designing and testing the performance of mutant consortia in vitro and in vivo
 
 As transposon insertions mainly improved the performance of mutants regarding only one phenotypic trait, we tested if B. amyloliquefaciens T-5 performance could be improved by using mutants as phenotypically diverse consortia. To this end, we chose eight mutants that showed improved performance relative to the wild-type strain regarding one of the plant-beneficial traits measured in vitro (Figure 3—figure supplement 1, Supplementary file 2d; two representative mutants per each measured trait were included). We first tested if these mutants showed negative effects on each other growth in vitro. Based on agar overlay assays, none of the strains clearly inhibited each other in direct contact in co-cultures. Similarly, only slightly negative (up to 12.7%) or positive (up to 7.1%) effects on strains’ growth were observed in supernatant exposure experiments (Figure 3—figure supplement 2, Supplementary file 2d). While direct co-culture experiments are needed to quantify the level of competitiveness between the mutants in the future, this data suggests that transposon insertions made mutants only slightly more inhibitory to each other. Mutants were then used to assemble a total of 37 consortia that varied in their richness level (1, 2, 4, or 8 mutants) and community composition, following a substitutive design where each mutant was equally often present at each richness level (see left panel key of Figure 3—figure supplement 3 for detailed composition of consortia). We hypothesized that consortia could show improved performance due to phenotypic complementarity or multifunctionality, where different mutants would ‘specialize’ respective to one of the four phenotypic traits, overcoming trade-offs and potential antagonistic pleiotropy experienced at the individual strain level (Figure 1B). We first tested the consortia performance regarding the four traits measured in vitro. We found that relative to wild-type strain, only a few consortia showed improved performance regarding swarming motility (8 of 37), biomass production (2 of 37), biofilm formation (4 of 37), or pathogen suppression (15 of 37) (Figure 3—figure supplement 3A–D). Moreover, consortia performance did not show clear relationship with increasing richness regarding to any of the measured traits (Figure 3—figure supplement 4). We further tested if the consortia performance could be predicted based on the trait averages of individually grown mutants, assuming that mutant performance is not affected by interactions between the consortia members. Only one significant positive relationship was found between the predicted pathogen suppressiveness, and the size of the inhibition halo observed in vitro lab measurements (Figure 3A–D). This suggest that individually measured mutant traits poorly predicted observed consortia performance in vitro except for the pathogen suppression.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-v2.jpg)
+
+**Figure 3.:** (A–F) show correlations between predicted and observed consortia performance regarding swarming motility, biomass production, biofilm formation, pathogen suppression, root colonization, and plant protection, respectively (blue dashed lines show 1:1 theoretical fit and solid black lines show the fitted regression between predicted and observed values). (G and H) show regression models where root colonization and plant protection were explained by B. amyloliquefaciens consortia richness, respectively. (I and J) show regression models where root colonization and plant protection were explained by B. amyloliquefaciens consortia average performance measured in vitro, respectively. In all panels, the black dashed lines show the performance of the wild-type strain, while red dashed lines in (F, H, and J) show the disease incidence of pathogen-only control treatment. In all panels, shaded areas show the confidence interval around the mean.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Blue, red, and gray cells denote for normalized trait values of mutants that showed increase, decrease, or no change (ns) relative to the wild-type strain (Student’s t-test at p<0.05; see details in Supplementary file 2c). The rightmost column (*) shows the functional categories (based on clusters of orthologous genes; COG) of different genes in parentheses, where capital letters denote for: C: energy production and conversion; E: amino acid transport and metabolism; R: general function prediction only; Q: secondary metabolites biosynthesis, transport, and catabolism; L: replication, recombination, and repair; K: transcription.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** In (A), Y-axis denotes the growth of different mutants on their own (diagonal) and other mutants’ supernatant (mutants on X-axis) relative to growth in the fresh 50% LB; the magnitude is shown as color gradient from red (negative effects) to blue (positive effects). In (B), no inhibition halos were found when mutants were spotted on top of each soft agar overlays.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Panels show: (A) swarming motility, (B) biomass production, (C) biofilm formation, (D) pathogen suppression, (E) root colonization, and (F) plant protection. In (A–F), the black vertical dashed lines represent the performance of the wild-type strain, while the vertical red line in (F) represents pathogen-only control treatment; shaded areas represent the mean ± SEM; consortia richness gradient is shown on a grayscale as symbol colors from light to dark (low to high richness). Mean differences between consortia and the wild-type strain were analyzed using Student’s t-test (n=3): *** denotes for statistical significance at p<0.001; ** denotes for statistical significance at p<0.01; * denotes for statistical significance at p<0.05. Left panel key shows the ‘trait specialism’ of eight mutants (colored circles) and the composition of each consortium; consortia richness increases when moving from top to bottom.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The panels denote for swarming motility (A), biomass production (B), biofilm formation (C), and pathogen suppression (D), and consortia average performance (E; mean of all traits). In all panels, Y-axis show the normalized trait values, the black dashed line represents the performance of the wild-type strain, and solid black line shows the fitted regression; ns denotes for non-significant relationship.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/90726/elife-90726-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** The mutant identity effects were analyzed comparing consortia root colonization (A) and plant protection (B) in the absence (n=25) and presence (n=12) of each mutant. In both panels, the black dashed lines represent the performance of the wild-type strain, while red dashed line in (B) represents disease incidence in pathogen-only control treatment. Shaded areas represent the mean ± SEM. The mutants’ ‘trait specialism’ is shown in parentheses on X-axis. Differences were analyzed using unpaired two-sample Wilcoxon test, where * denotes for statistical significance at p<0.05; ns denotes for no significant (see details in Supplementary file 2e).
 
 We next tested the consortia performance regarding root colonization and plant protection in vivo. While only 7 of 37 of consortia showed improved rhizosphere colonization, around half of them (18 of 37) exhibited a clear increase in plant protection compared to the wild-type strain (at 30 dpi, Figure 3—figure supplement 3E–F). While root colonization or plant protection could not be predicted based on the consortia performance measured in vitro (Figure 3E–F), increasing consortia richness improved both root colonization (Figure 3G, F1,35 = 6.52, R2=0.1330, p=0.0152) and plant protection (Figure 3H, F1,35 = 18.64, R2=0.3289, p<0.001), which were also positively correlated with the consortia average performance measured in vitro (root colonization: F1,35 = 6.47, R2=0.1319, p=0.0156; plant protection: F1,35 = 8.82, R2=0.1786, p=0.0053; Figure 3I–J). We also analyzed the significance of mutant identity effect on the consortia performance in vivo by excluding each strain from the dataset and comparing model fit and significance of explanatory variables. The presence of M54 mutant (efficient in biofilm formation) significantly increased consortia root colonization, while the presence of mutants M59 (efficient in biomass production) and M143 (efficient in biofilm formation) significantly improved plant protection (Figure 3—figure supplement 5, Supplementary file 2e). Crucially, the effect of consortia richness remained significant after sequential removal of each mutant and refitting of the model, which demonstrates that the diversity effect was robust and relatively more important in explaining root colonization and plant protection compared to mutant identity effects (Supplementary file 2f). Together, these data suggest that mutant consortia diversity was positively linked with consortia performance in vivo, indicative of positive diversity-ecosystem functioning relationship.
 
@@ -78,15 +281,15 @@ In conclusion, we here demonstrate that the beneficial effects provided by a sin
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+### Bacterial strains and culture conditions
 
 We used phytopathogenic R. solanacearum QL-Rs1115 (Wei et al., 2011) and B. amyloliquefaciens T-5 biocontrol strains (Tan et al., 2013; Wang et al., 2017) as our model bacterial species. The B. amyloliquefaciens T-5 can suppress the growth of R. solanacearum QL-Rs1115 by competing for space and nutrients in the rhizosphere (Tan et al., 2016) and by producing various antibacterial secondary metabolites (Yang et al., 2019). Both bacterial stocks were cryopreserved at –80°C in 30% glycerol stocks. Prior starting the experiments, active cultures were prepared as follows: B. amyloliquefaciens T-5 was grown at 37°C in Lysogeny Broth (LB-Lennox, 10.0 g L–1 Tryptone, 5.0 g L–1 yeast extract, 5.0 g L–1 NaCl, pH = 7.0) and R. solanacearum QL-Rs1115 was grown at 30°C in Nutrient Broth (NB, 10.0 g L–1 glucose, 5.0 g L–1 peptone, 0.5 g L–1 yeast extract, 3.0 g L–1 beef extract, pH = 7.0) for 24 hr.
 
-## Generation of B. amyloliquefaciens T-5 transposon mutant library
+### Generation of B. amyloliquefaciens T-5 transposon mutant library
 
 To increase the intra-species diversity of B. amyloliquefaciens, we generated a random transposon insertion mutant library by using a TnYLB-1 transposon derivative, carried in the thermosensitive shuttle plasmid pMarA (Supplementary file 2g), which was electrotransformed to bacteria as previously described by Zakataeva et al., 2010; Ito and Nagane, 2001. The cells with intact pMarA plasmid contained resistance cassettes to both erythromycin and kanamycin, while the cells with integrated transposons were resistant only to kanamycin. Transposon mutant library was created as follows. An overnight B. amyloliquefaciens T-5 cell culture grown in neutral complex medium (NCM, 17.4 g L–1 K2HPO4, 11.6 g L–1 NaCl, 5 g L–1 glucose, 5 g L–1 tryptone, 1 g L–1 yeast extract, 0.3 g L–1 trisodium citrate, 0.05 g L–1 MgSO4.7H2O, and 91.1 g L–1 sorbitol, pH = 7.2) was diluted 25-fold with fresh NCM supplemented with 5 mg mL–1 of glycine and grown at 30°C for 3 hr on a rotary shaker (170 rpm). After 1 hr incubation (at an optical density OD600∼ 0.8), cells were cooled on ice, harvested by centrifugation (8000×g for 6 min at 4°C) and washed four times with ice-cold electrotransformation buffer (ETM, 0.5 M sorbitol, 0.5 M mannitol, and 10% glycerol). Resulting pellets were resuspended in ETM buffer supplemented with 10% PEG 6000 and 1 mM MgCl2, yielding approximately 1010 cells mL–1. Cells were then mixed with 500 ng of plasmid DNA in an ice-cold electrotransformation cuvette (2 mm electrode gap), and after 1–3 min incubation at room temperature, exposed to a single electrical pulse using a MicroPulser Electroporator (Bio-Rad Laboratories) at field strength of 7.5 kV cm–1 for 4.5–6 ms. Immediately after the electrical discharge, cells were transferred into 1 mL of LB, incubated with gentle shaking at 30°C for 3–8 hr, and plated on LB agar containing 10 μg mL−1 erythromycin. Transformants were selected after 36–48 hr incubation at 30°C. To generate final transposon library, erythromycin-resistant colonies with plasmids were individually transferred to fresh LB and incubated overnight at 30°C, after cultures were diluted, spread on LB plates supplemented with 10 μg mL−1 kanamycin, and incubated for 24 hr at 46°C. As the plasmid cannot replicate at 46°C, only cells with an integrated transposons grew and could be separated. A total of 1999 transformed colonies were isolated and individually cryopreserved in 30% glycerol at –80°C.
 
-## Phenotypic characterization of B. amyloliquefaciens T-5 mutant library in vitro
+### Phenotypic characterization of B. amyloliquefaciens T-5 mutant library in vitro
 
 The wild-type strain and 1999 mutants were phenotyped for following plant-growth promoting traits: swarming motility, biomass production, biofilm formation, and pathogen suppression via production of antimicrobials (see below). These traits were selected due to their known importance for B. amyloliquefaciens competitiveness in the rhizosphere and their involvement in pathogen suppression (Chen et al., 2013; Huang et al., 2020; Fira et al., 2018; Moreno-Velandia et al., 2019). To prepare bacterial inoculants, frozen colonies were picked and pre-grown overnight in LB at 37°C, washed three times in 0.85% NaCl and adjusted to initial OD600 of 0.5 (∼ 107 cells mL–1, based on OD vs colony forming unit [CFU] calibration curve, Figure 1—figure supplement 4). In addition to each individual trait, we also calculated the average of all measured traits and used the resulting ‘monoculture average performance’ (Wagg et al., 2014) index to compare mutants’ overall performance. Of the 1999 phenotyped mutants, a subset of 479 mutants were randomly selected for more detailed analysis and probiotic bioinoculant design. While we likely missed certain mutants with this method, the 479 mutants represented a similar phenotypic diversity as the 1999 mutant collection (Mantel test; r=0.7591, p=0.04167), indicating that our sampling captured a phenotypically representative subsample of mutants (Supplementary file 1a and b).
 
@@ -98,30 +301,38 @@ Biofilm formation was assessed as described previously (Hamon and Lazazzera, 200
 
 Pathogen suppression via production of antibiotics was assessed as inhibition of R. solanacearum QL-Rs1115 strain using an agar overlay assay (Parret et al., 2005). Briefly, small volume drops (2 μL) of each B. amyloliquefaciens mutant and wild-type strain were spotted on NA soft agar plates and incubated for 24 hr at 30°C. Next, these plates were chloroform-fumigated to kill all the bacteria (Parret et al., 2005), leaving only the secreted antimicrobials and then fully covered with R. solanacearum suspension (with a ﬁnal concentration of approximately 107 cells mL–1). The pathogen suppression of each mutant was defined as the area of R. solanacearum inhibition halo around the B. amyloliquefaciens colony (in mm2), which is proportional to antibiotic production (Delignette-Muller and Flandrois, 1994). Three replicates were used for each mutant.
 
-## Selecting a representative subset of B. amyloliquefaciens T-5 mutants for greenhouse experiments
+### Selecting a representative subset of B. amyloliquefaciens T-5 mutants for greenhouse experiments
 
 In order to select a representative subset of mutants for greenhouse experiments, we first used K-means clustering (Hartigan and Wong, 1979) to divide the wild-type and 479 phenotyped mutants into clusters based on swarming motility, biomass production, biofilm formation, and pathogen suppression (Supplementary file 1b). Briefly, K-means clustering assigns n observations into k clusters where each observation (in our case mutant) belongs to a cluster with the nearest mean (cluster centers or cluster centroid). According to the gap statistic method (Tibshirani et al., 2001), three clusters was the optimum number (k) for this dataset (Figure 1—figure supplement 2). With this method, each mutant was hence assigned to one of the clusters. Clustering was further visualized using principal component analysis (PCA) based on the first two principal components to show the variety of mutants. We randomly selected approximately 10% of strains from each cluster, resulting in a subset of 47 mutants, which were used for greenhouse experiments (26, 11, and 10 mutants from clusters 1, 2, and 3, respectively, Supplementary file 1c). These 47 mutants were further analyzed to determine the disrupted genes by TnYLB-1 transposon insertion using the inverse polymerase chain reaction (IPCR) method as previously described by Le Breton et al., 2006. First, 5 μg of genomic DNA isolated from each respective transposon mutant was digested with Taq I and circularized using ‘Rapid Ligation’ kit (Fermentas, Germany). IPCR was carried out with ligated DNA (100 ng), using oIPCR1 and oIPCR2 primers (Supplementary file 2h). The cloned sequences were then purified using PCR purification kit (Axygen, UK) and the flanking genomic regions surrounding the transposon insertion sites were sequenced using the primer oIPCR3 (Supplementary file 2h). Obtained DNA sequences were compared against available databases (GenBank and Bacillus Genome Data-base) using the BLASTX and BLASTN available at the NCBI, and against the complete ancestral B. amyloliquefaciens T-5 genome sequence (Accession: CP061168, Figure 1—figure supplement 3A, Supplementary file 1c). The functional classiﬁcation of disrupted genes for all 47 transposon mutants is summarized in Figure 1—figure supplement 3B.
 
-## Assessing the performance of individual B. amyloliquefaciens T-5 mutants in a greenhouse experiment
+### Assessing the performance of individual B. amyloliquefaciens T-5 mutants in a greenhouse experiment
 
 All selected 47 mutants and the wild-type strain were individually screened for their ability to colonize tomato rhizosphere and protect plants against infection by R. solanacearum QL-Rs1115 pathogen strain in a 50-day-long greenhouse experiment. Surface-sterilized tomato seeds (Lycopersicum esculentum, cultivar ‘Jiangshu’) were germinated on water agar plates in the dark at 28°C for 2 days, before sowing to sterile pots containing wet vermiculite (Huainong, Huaian Soil and Fertilizer Institute, Huaian, China). Ten-day-old tomato seedlings (at three-leaves stage) were then transplanted to seedling trays containing natural, non-sterile soil collected from a tomato field in Qilin Town, Nanjing, China (Chen et al., 2013). Plants were inoculated with individual B. amyloliquefaciens mutants by drenching, resulting in a final concentration of 107 CFU g–1 soil (Wei et al., 2013). The R. solanacearum strain was inoculated using the same method 1 week later at a final concentration of 106 CFU g–1 soil. Positive control plants were treated only with R. solanacearum, while negative control plants received no bacterial inoculants. Three replicated trays were set up for each treatment, with 20 seedlings (in individual cells) per tray. Each tray was considered as one biological replicate. Tomato plants were grown for 30 dpi with natural temperature (ranging from 25°C to 35°C) and lighting variation (around 16 hr of light and 8 hr of dark). Seedling trays were rearranged randomly every second day and regularly watered with sterile water.
 
-## Quantifying B. amyloliquefaciens mutants’ root colonization and plant protection in the rhizosphere
+### Quantifying B. amyloliquefaciens mutants’ root colonization and plant protection in the rhizosphere
 
 The root colonization and plant protection of 47 B. amyloliquefaciens T-5 mutants was quantified individually as a change in their population densities in the tomato rhizosphere after 5, 15, and 30 days of R. solanacearum pathogen inoculation (‘dpi’). At each sampling time point, three independent plants per inoculated mutant were randomly selected and sampled destructively by carefully uprooting the plant and gently removing the soil from the root system by shaking. After determining plant fresh weight, the root system of each plant was thoroughly ground in 5 mL of 10 mM MgSO4·7H2O using a mortar, and serial dilutions of root macerates were plated on a semi-selective Bacillus medium consisting of 326 mL L–1 vegetable juice (V8, Campbell Soup Co., USA), 33 g L–1 NaCl, 0.8 g L–1 dextrose, 16 g L–1 agar (pH 5.2, adjusted with NaOH) supplemented with 45 mg L–1 cycloheximide and 22.5 mg L–1 polymyxin B (Kinsella et al., 2009). This media was used to count the densities of B. amyloliquefaciens T-5 wild-type, and the same media supplemented with 10 μg mL–1 kanamycin was used to count the densities of mutant strains. Plates were incubated at 30°C for 30 hr and bacterial densities expressed as CFU per gram of root biomass. The effect of B. amyloliquefaciens wild-type and mutants on plant protection was measured as the reduction of bacterial wilt disease symptoms during the experiment (based on the proportion of plants showing wilting symptoms). The first wilting symptoms appeared 7 dpi and the proportion of diseased plants quantified at 5, 15, and 30 dpi were used in analyses. Plant protection was expressed as the relative reduction in the number of wilted plants compared to the positive control (only R. solanacearum inoculated in the absence of B. amyloliquefaciens T-5 mutants or wild-type).
 
-## Assembly of phenotypically dissimilar B. amyloliquefaciens mutant consortia
+### Assembly of phenotypically dissimilar B. amyloliquefaciens mutant consortia
 
-To test if the performance of B. amyloliquefaciens T-5 mutants could be improved by using consortia of phenotypically dissimilar mutants, a subset of eight best-performing mutants excelling at different phenotypic traits were selected (Figure 3—figure supplement 1, Supplementary file 2c). Specifically, these included two mutants that showed high swarming motility (M108: pare and M124: DeoR), high biomass production (M59: comQ and M109: hutI), high biofilm formation (M54: hutU and M143: YsnB), and slightly improved pathogen suppression (M38: nhaC and M78: dfnG) relative to the wild-type strain (Figure 3—figure supplement 1, Supplementary file 2c). To test the effect of transposon insertions on potential antagonism between the mutants, we conducted two types of assays: direct growth inhibition by (1) spotting each strain on top of the others using agar overlays and(2) growing each strain in the supernatant of the other strains. With agar overlay assays, 2 μL of each mutant with density OD600 of 0.5 (∼107 cells mL–1) was spotted on the soft agar overlay of the other mutants and direct antagonistic effect was measured as the size of the inhibition halo observed on the soft agar plates (Fields et al., 2022). For the supernatant assay, we first cultured each mutant in liquid LB for 2 days and collected supernatants by using 0.22 μm filters. In the growth assays, 2 μL of each strain with initial concentration of 107 cells mL–1 was mixed with 20 μL of each supernatant and 178 μL of 50% LB. The growth of each strain was measured after 24 hr as optical density (OD600), and inhibition calculated as the relative growth of each strain in its own or other strains’ supernatant compared to strains’ growth in the fresh 50% LB (diluted with sterile water). Here, the reduced growth in other strains’ supernatant relative to the growth in the fresh medium was deemed as inhibition between mutants. A following formula was used where OD600 sup and OD600 LB denote for mutants’ growth in other mutants’ supernatant or in 50% fresh LB after 24 hr:Relativegrowth=OD600sup−OD600LBOD600LB×100%
+To test if the performance of B. amyloliquefaciens T-5 mutants could be improved by using consortia of phenotypically dissimilar mutants, a subset of eight best-performing mutants excelling at different phenotypic traits were selected (Figure 3—figure supplement 1, Supplementary file 2c). Specifically, these included two mutants that showed high swarming motility (M108: pare and M124: DeoR), high biomass production (M59: comQ and M109: hutI), high biofilm formation (M54: hutU and M143: YsnB), and slightly improved pathogen suppression (M38: nhaC and M78: dfnG) relative to the wild-type strain (Figure 3—figure supplement 1, Supplementary file 2c). To test the effect of transposon insertions on potential antagonism between the mutants, we conducted two types of assays: direct growth inhibition by (1) spotting each strain on top of the others using agar overlays and(2) growing each strain in the supernatant of the other strains. With agar overlay assays, 2 μL of each mutant with density OD600 of 0.5 (∼107 cells mL–1) was spotted on the soft agar overlay of the other mutants and direct antagonistic effect was measured as the size of the inhibition halo observed on the soft agar plates (Fields et al., 2022). For the supernatant assay, we first cultured each mutant in liquid LB for 2 days and collected supernatants by using 0.22 μm filters. In the growth assays, 2 μL of each strain with initial concentration of 107 cells mL–1 was mixed with 20 μL of each supernatant and 178 μL of 50% LB. The growth of each strain was measured after 24 hr as optical density (OD600), and inhibition calculated as the relative growth of each strain in its own or other strains’ supernatant compared to strains’ growth in the fresh 50% LB (diluted with sterile water). Here, the reduced growth in other strains’ supernatant relative to the growth in the fresh medium was deemed as inhibition between mutants. A following formula was used where OD600 sup and OD600 LB denote for mutants’ growth in other mutants’ supernatant or in 50% fresh LB after 24 hr:
+
+$$
+Relativegrowth=\frac{OD_{600sup}−OD_{600LB}}{OD_{600LB}}\times100%
+$$
 
 These eight mutants were then used to assemble a total of 29 consortia with 2, 4, or 8 mutants, following a substitutive design where each mutant was equally often present at each community richness level (see left panel key of Figure 3—figure supplement 3 for detailed consortia assembly). Mutants were mixed in equal proportions in each consortium with final total bacterial density OD600 of 0.5 (e.g., 50:50% or 25:25:25:25% in two and four mutant consortia, respectively; ∼ 107 cells mL–1). This design has previously been used to investigate biodiversity-ecosystem functioning relationships in plant-associated bacterial communities (Hu et al., 2016; Becker et al., 2012), allowing disentangling the effects due to consortia richness, composition, and mutant strain identity. In addition, to compare the performance of optimized 8-member consortium (assembled based on phenotypic dissimilarity; see above) with non-optimized 8-mutant consortia, we assembled eight additional 8-mutant consortia randomly from the 479 mutant collection, which were used in in vitro lab and in vivo greenhouse experiments.
 
-## Phenotypic characterization of B. amyloliquefaciens consortia performance in vitro and consortia root colonization and plant protection in the tomato rhizosphere
+### Phenotypic characterization of B. amyloliquefaciens consortia performance in vitro and consortia root colonization and plant protection in the tomato rhizosphere
 
-The performance of each mutant and assembled consortium was assessed in vitro in the lab by measuring traits as mono- and co-cultures following the same methods as described previously (swarming motility, biomass production, biofilm formation, and pathogen suppression). Mutant strains were prepared individually from frozen stocks by growing overnight in liquid LB, pelleted by centrifugation (4000×g, 3 min), washed three times with 0.85% NaCl and adjusted to OD600 of 0.5 (107 cells mL–1). Consortia were then assembled following the substitutive design describe earlier (Figure 3—figure supplement 3) by mixing mutants in equal proportions for each consortium with total bacterial density OD600 of 0.5 (107 cells mL–1; e.g., 50:50% or 25:25:25:25% in two and four mutant communities, respectively). Consortia traits were characterized as described previously and compared with the ancestral B. amyloliquefaciens wild-type strain. The root colonization and plant protection of B. amyloliquefaciens T-5 consortia were quantified in greenhouse experiments following previously described methods. Predicted performances were calculated following the additive model, equaling the sum of different trait values of each member divided by the richness value of the given consortium. To link the performance of single mutant with functioning of consortia, we used the relative performance measure, which included the magnitude and direction of difference relative to the wild-type strain. The difference and direction in magnitude to the wild-type strain were calculated based on the Euclidean distance and average performance using following formula:Relative performance=∑i=1n(Di×APi−APwt|APi−APwt|)n,
+The performance of each mutant and assembled consortium was assessed in vitro in the lab by measuring traits as mono- and co-cultures following the same methods as described previously (swarming motility, biomass production, biofilm formation, and pathogen suppression). Mutant strains were prepared individually from frozen stocks by growing overnight in liquid LB, pelleted by centrifugation (4000×g, 3 min), washed three times with 0.85% NaCl and adjusted to OD600 of 0.5 (107 cells mL–1). Consortia were then assembled following the substitutive design describe earlier (Figure 3—figure supplement 3) by mixing mutants in equal proportions for each consortium with total bacterial density OD600 of 0.5 (107 cells mL–1; e.g., 50:50% or 25:25:25:25% in two and four mutant communities, respectively). Consortia traits were characterized as described previously and compared with the ancestral B. amyloliquefaciens wild-type strain. The root colonization and plant protection of B. amyloliquefaciens T-5 consortia were quantified in greenhouse experiments following previously described methods. Predicted performances were calculated following the additive model, equaling the sum of different trait values of each member divided by the richness value of the given consortium. To link the performance of single mutant with functioning of consortia, we used the relative performance measure, which included the magnitude and direction of difference relative to the wild-type strain. The difference and direction in magnitude to the wild-type strain were calculated based on the Euclidean distance and average performance using following formula:
+
+$$
+Relative performance=\frac{\sumi=1n(D_{i}\times\frac{AP_{i}−AP_{wt}}{|AP_{i}−AP_{wt}|})}{n},
+$$
 
 Di, Euclidean distance between each consortium member and wild-type based on four traits; APi, average performance of each community member; APwt, average performance of wild-type; n, community richness.
 
-## Statistical analyses
+### Statistical analyses
 
 Data were analyzed with a combination of analysis of variance (ANOVA), PCA, linear regression models, unpaired two-sample Wilcoxon tests, and Student’s t-test. Individually measured mutant traits data was normalized between 0 and 1 across the all collection using min-max normalization (Jain et al., 2005). In addition, the different phenotypic traits were combined into a ‘Monoculture average performance’ index, which was calculated as the mean of the four standardized traits for each mutant. Monoculture average performance and consortia traits values were also min-max normalized between 0 and 1 for subsequent analyses. To classify mutants into different functional groups, K-means clustering algorithm (‘fviz_nbclust’ in ‘factoextra’ package and ‘kmeans’ function) was used and clusters were visualized using PCA (‘princomp’ in ‘vegan’ package) based on multivariate trait data. The phenotypic dissimilarity between the same mutants and the wild-type strain was calculated using ‘vegdist’ based on ‘Euclidean’ algorithm. The B. amyloliquefaciens T-5 abundance data measured in root colonization assays were log10-transformed and disease incidence data were arcsine square root-transformed prior the analyses. Linear regression models were used to explain root colonization and plant protection with mutant traits, average performance, consortia richness, and consortia relative performance. Treatment mean differences were analyzed using two-sample Wilcoxon test (‘wilcox.test’ function) or Student’s t-test (‘t.test’ function) depending on the unequal or equal sample sizes, respectively. The temporal effects of four traits on root colonization and plant protection were assessed separately for different time points using ANOVA (‘aov’ function). All statistical analyses were performed using R 3.5.2 (R core Development Team, Vienna, Austria). All code used in this study is available on request from corresponding authors.

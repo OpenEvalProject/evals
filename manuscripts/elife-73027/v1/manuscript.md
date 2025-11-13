@@ -66,7 +66,7 @@ To date, there are 453 nanobodies available against SARS-CoV-2 spike and those t
 
 ## Results and discussion
 
-## Maximizing the size and diversity of anti-SARS-CoV-2 spike nanobody repertoire
+### Maximizing the size and diversity of anti-SARS-CoV-2 spike nanobody repertoire
 
 We sought to isolate a large repertoire of highly diverse nanobodies against SARS-CoV-2 spike protein. Thus, we built on our existing nanobody generation pipeline (Fridy et al., 2014), further optimizing each step, explicitly designing it to yield hundreds of high-quality, highly diverse nanobody candidates (Figure 1A). In this way, we took advantage both of the straightforward procedure of llama immunization and the powerful natural affinity maturation processes in vivo (Thompson et al., 2016).
 
@@ -80,17 +80,1414 @@ To maximize sequence diversity and thus the paratope space being explored, we cl
 
 Of the several hundred positives, 180 high-confidence candidates were selected for expression and screening. Of these, 66 were from S1 affinity purification, 63 from S2, and 51 from RBD, numbered S1-n, S2-n, and S1-RBD-n, respectively. These were then expressed with periplasmic secretion in bacteria, and crude periplasmic fractions were bound in large excess to the corresponding immobilized spike antigen to assay recombinant expression, specific binding, and degree of binding (Figure 2—figure supplements 1 and 2). 138 candidates were validated by this screen: 52 against S1, 42 against S2, and 44 against RBD (Figure 1B). To eliminate candidates with weaker expression and binding affinity, only nanobodies in lysates with binding intensity >20% of the observed maximum across all those screened were chosen for follow-up study. This filtering identified the top 116 nanobodies that were purified for further characterization (Tables 1 and 2). Note that these selections were designed to provide a strict cutoff in the interests of maximizing the quality of the repertoire selected for thorough characterization, but eliminated many additional nanobodies that nevertheless specifically bind to S1 and S2. While a few of these 116 nanobodies were chosen to share similar paratopes, overall, the group retained a high sequence and paratope diversity (Figure 1C).
 
-## High-affinity nanobodies across the entire spike ectodomain that are refractory to common spike escape mutants
+**Table 1.**
+ S1 nanobody characterization; related to Figures 2 and 4.Nanobodies against S1 were determined to bind RBD or non-RBD epitopes by their affinity for recombinant full-length S1 and/or S1 RBD protein. Binding kinetics against these two recombinant proteins were determined by surface plasmon resonance (SPR), with on rates, off rates, and KDs determined by Langmuir fits to binding sensorgrams unless otherwise noted. Nanobody melting temperatures (Tm) were determined by differential scanning fluorimetry (DSF). Nanobodies were assayed for neutralization activity against a SARS-CoV-2 spike pseudotyped HIV-1 virus (PSV), with IC50s calculated from neutralization curves. Standard error of the mean (s.e.m.) is reported when available.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Epitope</th>
+      <th>S1 Kon(M–1 s–1)</th>
+      <th>S1 Koff(s–1)</th>
+      <th>S1 KD (M)</th>
+      <th>RBD Kon(M–1 s–1)</th>
+      <th>RBD Koff(s–1)</th>
+      <th>RBD KD (M)</th>
+      <th>Tm (°C)</th>
+      <th>SARS-CoV-2 PSV IC50 (s.e.m.)(nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-1</td>
+      <td>RBD</td>
+      <td>4.14E+05</td>
+      <td>2.98E-05</td>
+      <td>7.20E-11</td>
+      <td>6.50E+05</td>
+      <td>5.98E-07</td>
+      <td>9.20E-12</td>
+      <td>66.5</td>
+      <td>6.7 (1.0)</td>
+    </tr>
+    <tr>
+      <td>S1-2</td>
+      <td>Non-RBD</td>
+      <td>1.59E+06</td>
+      <td>1.88E-03</td>
+      <td>1.18E-09</td>
+      <td colspan="3">No interaction detected</td>
+      <td>66.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-3</td>
+      <td>Non-RBD</td>
+      <td>5.08E+05</td>
+      <td>4.32E-04</td>
+      <td>8.51E-10</td>
+      <td colspan="3">No interaction detected</td>
+      <td>64</td>
+      <td>1030 (666)</td>
+    </tr>
+    <tr>
+      <td>S1-4</td>
+      <td>RBD</td>
+      <td>1.25E+06</td>
+      <td>1.06E-04</td>
+      <td>8.46E-11</td>
+      <td>1.26E+06</td>
+      <td>1.26E-04</td>
+      <td>1.37E-10</td>
+      <td>66</td>
+      <td>41.5 (3.7)</td>
+    </tr>
+    <tr>
+      <td>S1-5</td>
+      <td>RBD</td>
+      <td>1.33E+05</td>
+      <td>1.15E-03</td>
+      <td>8.61E-09</td>
+      <td colspan="3">–</td>
+      <td>65.25</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-6</td>
+      <td>RBD</td>
+      <td>1.02E+06</td>
+      <td>5.75E-04</td>
+      <td>5.65E-10</td>
+      <td>5.92E+05</td>
+      <td>3.69E-04</td>
+      <td>6.22E-10</td>
+      <td>65</td>
+      <td>56.1 (20.7)</td>
+    </tr>
+    <tr>
+      <td>S1-7</td>
+      <td>Non-RBD</td>
+      <td>7.59E+05</td>
+      <td>9.90E-04</td>
+      <td>1.30E-09</td>
+      <td colspan="3">No interaction detected</td>
+      <td>60.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-9</td>
+      <td>Non-RBD</td>
+      <td>9.51E+051.25E+05</td>
+      <td>4.28E-071.57E-04</td>
+      <td>4.50E-13*1.25E-09</td>
+      <td colspan="3">–</td>
+      <td>47.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-10</td>
+      <td>Non-RBD</td>
+      <td>8.35E+04</td>
+      <td>1.82E-03</td>
+      <td>2.19E-08</td>
+      <td colspan="3">–</td>
+      <td>64</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-11</td>
+      <td>Non-RBD</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>60</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-12</td>
+      <td>RBD</td>
+      <td>2.90E+05</td>
+      <td>8.92E-04</td>
+      <td>3.07E-09</td>
+      <td>2.33E+05</td>
+      <td>2.24E-04</td>
+      <td>9.63E-10</td>
+      <td>68</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-14</td>
+      <td>RBD</td>
+      <td>1.08E+06</td>
+      <td>1.10E-03</td>
+      <td>1.02E-09</td>
+      <td>5.37E+05</td>
+      <td>7.99E-04</td>
+      <td>1.49E-09</td>
+      <td>57.5</td>
+      <td>135.8 (36.4)</td>
+    </tr>
+    <tr>
+      <td>S1-17</td>
+      <td>Non-RBD</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>65</td>
+      <td>1271 (888)</td>
+    </tr>
+    <tr>
+      <td>S1-19</td>
+      <td>RBD</td>
+      <td>1.30E+063.55E+04</td>
+      <td>8.86E-032.41E-04</td>
+      <td>6.81E-09*6.81E-09</td>
+      <td colspan="3">–</td>
+      <td>64.5</td>
+      <td>139 (9.6)</td>
+    </tr>
+    <tr>
+      <td>S1-20</td>
+      <td>RBD</td>
+      <td>1.48E+07</td>
+      <td>4.37E-03</td>
+      <td>2.95E-10</td>
+      <td colspan="3">–</td>
+      <td>69</td>
+      <td>51.8 (3.7)</td>
+    </tr>
+    <tr>
+      <td>S1-21</td>
+      <td>RBD</td>
+      <td>4.77E+06</td>
+      <td>1.58E-04</td>
+      <td>3.31E-11</td>
+      <td>1.22E+06</td>
+      <td>2.45E-04</td>
+      <td>2.00E-10</td>
+      <td>70.5</td>
+      <td>226 (158)</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>RBD</td>
+      <td>2.82E+06</td>
+      <td>4.91E-05</td>
+      <td>1.74E-11</td>
+      <td>1.09E+06</td>
+      <td>1.07E-04</td>
+      <td>9.78E-11</td>
+      <td>64</td>
+      <td>5.7 (2.2)</td>
+    </tr>
+    <tr>
+      <td>S1-24</td>
+      <td>Non-RBD</td>
+      <td>6.49E+05</td>
+      <td>2.89E-04</td>
+      <td>4.45E-10</td>
+      <td colspan="3">No interaction detected</td>
+      <td>71.5</td>
+      <td>724 (144)</td>
+    </tr>
+    <tr>
+      <td>S1-25</td>
+      <td>Non-RBD</td>
+      <td>2.15E+05</td>
+      <td>3.39E-05</td>
+      <td>1.57E-10</td>
+      <td colspan="3">No interaction detected</td>
+      <td>58</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-27</td>
+      <td>RBD</td>
+      <td>3.15E+06</td>
+      <td>4.52E-04</td>
+      <td>1.43E-10</td>
+      <td>2.89E+06</td>
+      <td>6.30E-04</td>
+      <td>2.18E-10</td>
+      <td>54</td>
+      <td>19.5 (4.9)</td>
+    </tr>
+    <tr>
+      <td>S1-28</td>
+      <td>RBD</td>
+      <td>1.38E+06</td>
+      <td>7.97E-04</td>
+      <td>5.76E-10</td>
+      <td>1.79E+06</td>
+      <td>1.03E-03</td>
+      <td>5.77E-10</td>
+      <td>66</td>
+      <td>66.0 (10.9)</td>
+    </tr>
+    <tr>
+      <td>S1-29</td>
+      <td>RBD</td>
+      <td>2.39E+05</td>
+      <td>1.01E-03</td>
+      <td>4.21E-09</td>
+      <td>1.73E+05</td>
+      <td>8.89E+04</td>
+      <td>5.12E-09</td>
+      <td>61.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-30</td>
+      <td>Non-RBD</td>
+      <td>6.21E+05</td>
+      <td>1.48E-03</td>
+      <td>2.38E-09</td>
+      <td colspan="3">No interaction detected</td>
+      <td>57</td>
+      <td>717 (388)</td>
+    </tr>
+    <tr>
+      <td>S1-31</td>
+      <td>RBD</td>
+      <td>2.17E+06</td>
+      <td>5.63E-04</td>
+      <td>2.59E-10</td>
+      <td>1.94E+06</td>
+      <td>9.37E-04</td>
+      <td>4.84E-10</td>
+      <td>72</td>
+      <td>78.7 (3.5)</td>
+    </tr>
+    <tr>
+      <td>S1-32</td>
+      <td>Non-RBD</td>
+      <td>2.73E+05</td>
+      <td>4.66E-04</td>
+      <td>1.71E-09</td>
+      <td colspan="3">No interaction detected</td>
+      <td>79</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-35</td>
+      <td>RBD</td>
+      <td>2.46E+06</td>
+      <td>2.11E-05</td>
+      <td>8.60E-12</td>
+      <td>2.70E+06</td>
+      <td>9.77E-05</td>
+      <td>3.62E-11</td>
+      <td>70.5</td>
+      <td>12.5 (0.1)</td>
+    </tr>
+    <tr>
+      <td>S1-36</td>
+      <td>RBD</td>
+      <td>2.28E+06</td>
+      <td>3.92E-04</td>
+      <td>1.72E-10</td>
+      <td>7.87E+06</td>
+      <td>1.72E-03</td>
+      <td>2.18E-10</td>
+      <td>63</td>
+      <td>48.5 (21.1)</td>
+    </tr>
+    <tr>
+      <td>S1-37</td>
+      <td>RBD</td>
+      <td>4.03E+06</td>
+      <td>2.75E-04</td>
+      <td>6.82E-11</td>
+      <td>4.14E+06</td>
+      <td>2.09E-04</td>
+      <td>5.05E-11</td>
+      <td>65</td>
+      <td>6.8 (0.7)</td>
+    </tr>
+    <tr>
+      <td>S1-38</td>
+      <td>RBD</td>
+      <td>5.34E+06</td>
+      <td>1.12E-03</td>
+      <td>2.10E-10</td>
+      <td colspan="3">–</td>
+      <td>64</td>
+      <td>66.1 (2.9)</td>
+    </tr>
+    <tr>
+      <td>S1-39</td>
+      <td>RBD</td>
+      <td>2.14E+06</td>
+      <td>8.11E-04</td>
+      <td>3.79E-10</td>
+      <td>1.68E+06</td>
+      <td>1.06E-03</td>
+      <td>6.30E-10</td>
+      <td>55</td>
+      <td>111 (4.0)</td>
+    </tr>
+    <tr>
+      <td>S1-41</td>
+      <td>Non-RBD</td>
+      <td>8.73E+05</td>
+      <td>1.38E-03</td>
+      <td>1.58E-09</td>
+      <td colspan="3">No interaction detected</td>
+      <td>62.5</td>
+      <td>679 (53.4)</td>
+    </tr>
+    <tr>
+      <td>S1-46</td>
+      <td>RBD</td>
+      <td>1.68E+05</td>
+      <td>2.94E-04</td>
+      <td>1.75E-09</td>
+      <td>2.22E+05</td>
+      <td>1.70E-04</td>
+      <td>7.66E-10</td>
+      <td>68</td>
+      <td>312 (14.0)</td>
+    </tr>
+    <tr>
+      <td>S1-48</td>
+      <td>RBD</td>
+      <td>2.61E+06</td>
+      <td>6.22E-05</td>
+      <td>2.39E-11</td>
+      <td>1.66E+06</td>
+      <td>1.64E-04</td>
+      <td>9.85E-11</td>
+      <td>60.5</td>
+      <td>5.82 (0.5)</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>Non-RBD</td>
+      <td>1.94E+06</td>
+      <td>3.63E-03</td>
+      <td>1.87E-09</td>
+      <td colspan="3">–</td>
+      <td>49, 74‡</td>
+      <td>356 (32.8)</td>
+    </tr>
+    <tr>
+      <td>S1-50</td>
+      <td>Non-RBD</td>
+      <td>3.33E+053.34E-03</td>
+      <td>1.39E-023.94E-04</td>
+      <td>4.40E-09†</td>
+      <td colspan="3">No interaction detected</td>
+      <td>66</td>
+      <td>13(11)</td>
+    </tr>
+    <tr>
+      <td>S1-51</td>
+      <td>RBD</td>
+      <td>9.28E+04</td>
+      <td>4.22E-04</td>
+      <td>4.54E-09</td>
+      <td>3.77E+06</td>
+      <td>2.01E-03</td>
+      <td>5.33E-10</td>
+      <td>56</td>
+      <td>555.8 (52.5)</td>
+    </tr>
+    <tr>
+      <td>S1-52</td>
+      <td>RBD</td>
+      <td>4.22E+05</td>
+      <td>3.13E-04</td>
+      <td>7.74E-09</td>
+      <td>4.53E+04</td>
+      <td>1.94E-04</td>
+      <td>4.36E-09</td>
+      <td>57.5</td>
+      <td>3343 (291)</td>
+    </tr>
+    <tr>
+      <td>S1-53</td>
+      <td>RBD</td>
+      <td>1.40E+062.36E+04</td>
+      <td>8.46E-032.19E-04</td>
+      <td>6.05E-099.27E-09</td>
+      <td colspan="3">–</td>
+      <td>51.5</td>
+      <td>2466 (939)</td>
+    </tr>
+    <tr>
+      <td>S1-54</td>
+      <td>RBD</td>
+      <td>1.13E+06</td>
+      <td>6.58E-05</td>
+      <td>5.84E-11</td>
+      <td>2.55E+04</td>
+      <td>2.88E-04</td>
+      <td>1.13E-08</td>
+      <td>69</td>
+      <td>1699 (1554)</td>
+    </tr>
+    <tr>
+      <td>S1-55</td>
+      <td>RBD</td>
+      <td>3.98E+063.53E+04</td>
+      <td>5.41E-035.31E-06</td>
+      <td>1.36E-09*1.51E-10</td>
+      <td>5.03E+051.84E+04</td>
+      <td>1.11E-021.82E-04</td>
+      <td>2.21E-08*9.89E-09</td>
+      <td>54.5</td>
+      <td>5725 (3372)</td>
+    </tr>
+    <tr>
+      <td>S1-56</td>
+      <td>RBD</td>
+      <td>1.46E+044.45E-03</td>
+      <td>2.99E-037.90E-05</td>
+      <td>3.57E-09†</td>
+      <td>2.21E+03</td>
+      <td>1.05E-04</td>
+      <td>4.73E-08</td>
+      <td>54</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-58</td>
+      <td>Non-RBD</td>
+      <td>5.73E+05</td>
+      <td>1.66E-04</td>
+      <td>2.90E-10</td>
+      <td colspan="3">–</td>
+      <td>53.5</td>
+      <td>940 (795)</td>
+    </tr>
+    <tr>
+      <td>S1-60</td>
+      <td>Non-RBD</td>
+      <td>3.30E+054.61E+04</td>
+      <td>5.24E-063.67E-03</td>
+      <td>1.59E-11*9.58E-08</td>
+      <td colspan="3">–</td>
+      <td>62</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-61</td>
+      <td>RBD</td>
+      <td>9.87E+058.23E+02</td>
+      <td>1.81E-021.10E-04</td>
+      <td>1.84E-08*1.34E-07</td>
+      <td>4.46E+04</td>
+      <td>1.88E-04</td>
+      <td>4.21E-09</td>
+      <td>60</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-62</td>
+      <td>RBD</td>
+      <td>2.68E+06</td>
+      <td>9.51E-05</td>
+      <td>3.54E-11</td>
+      <td>3.30E+06</td>
+      <td>6.30E-05</td>
+      <td>2.08E-11</td>
+      <td>71.5</td>
+      <td>3.3 (0.8)</td>
+    </tr>
+    <tr>
+      <td>S1-63</td>
+      <td>RBD</td>
+      <td>1.09E+063.39E+04</td>
+      <td>1.12E-021.67E-04</td>
+      <td>1.02E-08*4.94E-09</td>
+      <td>5.10E+04</td>
+      <td>2.23E-04</td>
+      <td>4.37E-09</td>
+      <td>65</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-64</td>
+      <td>Non-RBD</td>
+      <td>6.97E+05</td>
+      <td>1.58E-04</td>
+      <td>2.26E-10</td>
+      <td colspan="3">–</td>
+      <td>66</td>
+      <td>16.4 (11.7)</td>
+    </tr>
+    <tr>
+      <td>S1-65</td>
+      <td>Non-RBD</td>
+      <td>1.06E+06</td>
+      <td>1.67E-04</td>
+      <td>1.57E-10</td>
+      <td colspan="3">–</td>
+      <td>60</td>
+      <td>7.3 (6.0)</td>
+    </tr>
+    <tr>
+      <td>S1-66</td>
+      <td>Non-RBD</td>
+      <td>4.66E+05</td>
+      <td>2.74E-04</td>
+      <td>5.87E-10</td>
+      <td colspan="3">–</td>
+      <td>59</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-3</td>
+      <td>RBD</td>
+      <td>8.81E+057.36E+04</td>
+      <td>1.76E-021.13E-03</td>
+      <td>2.00E-08*1.53E-08</td>
+      <td colspan="3">–</td>
+      <td>72</td>
+      <td>384 (18.7)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-4</td>
+      <td>RBD</td>
+      <td>2.02E+06</td>
+      <td>1.64E-04</td>
+      <td>8.09E-11</td>
+      <td>2.83E+06</td>
+      <td>8.16E-04</td>
+      <td>2.89E-10</td>
+      <td>64.5</td>
+      <td>17.5 (1.98)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-5</td>
+      <td>RBD</td>
+      <td>1.94E+06</td>
+      <td>1.63E-04</td>
+      <td>8.38E-11</td>
+      <td>7.21E+06</td>
+      <td>1.05E-03</td>
+      <td>1.45E-10</td>
+      <td>64</td>
+      <td>174 (3.3)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-6</td>
+      <td>RBD</td>
+      <td>1.55E+06</td>
+      <td>1.63E-04</td>
+      <td>1.05E-10</td>
+      <td>3.48E+06</td>
+      <td>1.13E-03</td>
+      <td>3.24E-10</td>
+      <td>66.5</td>
+      <td>77.2 (21.8)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-9</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>2.85E+05</td>
+      <td>1.23E-04</td>
+      <td>4.30E-10</td>
+      <td>69</td>
+      <td>235 (97.5)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-10</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>–</td>
+      <td>52.9</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-11</td>
+      <td>RBD</td>
+      <td>2.22E+07</td>
+      <td>2.94E-04</td>
+      <td>1.32E-11</td>
+      <td>2.06E+07</td>
+      <td>4.06E-04</td>
+      <td>1.97E-11</td>
+      <td>65</td>
+      <td>13.5 (5.5)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-12</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.10E+04</td>
+      <td>3.39E-05</td>
+      <td>3.10E-09</td>
+      <td>67</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-14</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.33E+04</td>
+      <td>3.34E-04</td>
+      <td>2.51E-08</td>
+      <td>65</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>RBD</td>
+      <td>5.37E+06</td>
+      <td>1.50E-04</td>
+      <td>2.79E-11</td>
+      <td>7.52E+06</td>
+      <td>4.95E-04</td>
+      <td>6.58E-11</td>
+      <td>59.5, 80‡</td>
+      <td>4.6 (1.2)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-16</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.68E+04</td>
+      <td>6.25E-05</td>
+      <td>3.73E-09</td>
+      <td>61</td>
+      <td>79.2 (4.2)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-18</td>
+      <td>RBD</td>
+      <td>2.28E+06</td>
+      <td>6.25E-04</td>
+      <td>2.74E-10</td>
+      <td>4.43E+06</td>
+      <td>1.27E-03</td>
+      <td>2.87E-10</td>
+      <td>69.5</td>
+      <td>67.2 (1.9)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-19</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>60</td>
+      <td>2124 (1451)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-20</td>
+      <td>RBD</td>
+      <td>2.37E+06</td>
+      <td>2.23E-04</td>
+      <td>9.43E-11</td>
+      <td>3.05E+06</td>
+      <td>7.91E-04</td>
+      <td>2.59E-10</td>
+      <td>49, 70‡</td>
+      <td>12.4 (1.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-21</td>
+      <td>RBD</td>
+      <td>3.50E+06</td>
+      <td>1.31E-03</td>
+      <td>3.73E-10</td>
+      <td>3.15E+06</td>
+      <td>1.71E-03</td>
+      <td>5.45E-10</td>
+      <td>48.5, 70.5‡</td>
+      <td>17.3 (3.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-22</td>
+      <td>RBD</td>
+      <td>9.34E+05</td>
+      <td>2.28E-04</td>
+      <td>2.44E-10</td>
+      <td>9.24E+05</td>
+      <td>4.42E-04</td>
+      <td>4.78E-10</td>
+      <td>57.5</td>
+      <td>100 (0.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-23</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>2.89E+06</td>
+      <td>4.61E-05</td>
+      <td>1.59E-11</td>
+      <td>61</td>
+      <td>7.31 (0.4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-24</td>
+      <td>RBD</td>
+      <td>1.61E+06</td>
+      <td>1.40E-03</td>
+      <td>8.65E-10</td>
+      <td>2.12E+06</td>
+      <td>1.22E-03</td>
+      <td>5.75E-10</td>
+      <td>46, 67‡</td>
+      <td>221 (4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-25</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>8.41E+04</td>
+      <td>1.16E-02</td>
+      <td>1.38E-07</td>
+      <td>–</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-26</td>
+      <td>RBD</td>
+      <td>1.06E+05</td>
+      <td>4.58E-06</td>
+      <td>4.32E-11</td>
+      <td>2.15E+05</td>
+      <td>1.33E-05</td>
+      <td>6.19E-11</td>
+      <td>66</td>
+      <td>241 (81.4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-27</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>6.19E+06</td>
+      <td>1.24E-02</td>
+      <td>2.00E-09</td>
+      <td>71</td>
+      <td>163 (71.4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-28</td>
+      <td>RBD</td>
+      <td>1.80E+06</td>
+      <td>4.27E-04</td>
+      <td>2.38E-10</td>
+      <td>1.80E+06</td>
+      <td>4.27E-04</td>
+      <td>2.38E-10</td>
+      <td>64.5</td>
+      <td>32.7 (3.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-29</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>5.36E+05</td>
+      <td>1.35E-03</td>
+      <td>2.51E-09</td>
+      <td>74</td>
+      <td>9.53 (1.0)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-30</td>
+      <td>RBD</td>
+      <td>2.15E+06</td>
+      <td>6.66E-05</td>
+      <td>3.10E-11</td>
+      <td>3.77E+06</td>
+      <td>4.82E-04</td>
+      <td>1.28E-10</td>
+      <td>65</td>
+      <td>25.0 (3.6)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-32</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.05E+05</td>
+      <td>7.90E-03</td>
+      <td>7.52E-08</td>
+      <td>65</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-34</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>5.71E+04</td>
+      <td>4.88E-03</td>
+      <td>8.54E-08</td>
+      <td>64</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-35</td>
+      <td>RBD</td>
+      <td>8.01E+05</td>
+      <td>1.68E-04</td>
+      <td>2.10E-10</td>
+      <td>1.33E+06</td>
+      <td>2.50E-04</td>
+      <td>1.88E-10</td>
+      <td>57, 68‡</td>
+      <td>12.3 (2.4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-36</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td colspan="3">–</td>
+      <td>71</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-37</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>3.60E+05</td>
+      <td>8.88E-04</td>
+      <td>2.47E-09</td>
+      <td>71</td>
+      <td>523 (93.4)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-38</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.12E+06</td>
+      <td>9.84E-04</td>
+      <td>8.79E-10</td>
+      <td>68.5</td>
+      <td>84.6 (22.7)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-39</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>4.92E+05</td>
+      <td>7.77E-05</td>
+      <td>1.58E-10</td>
+      <td>67.5</td>
+      <td>90.4 (8.9)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-40</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>7.47E+05</td>
+      <td>2.77E-05</td>
+      <td>3.71E-11</td>
+      <td>70</td>
+      <td>25.6 (5.9)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-41</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>4.37E+05</td>
+      <td>1.39E-04</td>
+      <td>3.17E-10</td>
+      <td>–</td>
+      <td>17.0</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-43</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>6.21E+05</td>
+      <td>1.82E-04</td>
+      <td>2.92E-10</td>
+      <td>68</td>
+      <td>33.6 (1.3)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-44</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.91E+05</td>
+      <td>6.97E-05</td>
+      <td>3.65E-10</td>
+      <td>57.5</td>
+      <td>93.4</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-45</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>4.43E+05</td>
+      <td>4.14E-05</td>
+      <td>9.30E-11</td>
+      <td>53</td>
+      <td>22.6</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-46</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>4.69E+05</td>
+      <td>5.79E-04</td>
+      <td>1.23E-09</td>
+      <td>75.5</td>
+      <td>48.0</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-47</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>2.11E+05</td>
+      <td>6.45E-04</td>
+      <td>3.06E-09</td>
+      <td>53.5</td>
+      <td>127 (11.6)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-48</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>1.05E+05</td>
+      <td>2.42E-04</td>
+      <td>2.30E-09</td>
+      <td>58, 63‡</td>
+      <td>68.7 (14.2)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-49</td>
+      <td>RBD</td>
+      <td>3.24E+05</td>
+      <td>3.24E-04</td>
+      <td>1.00E-09</td>
+      <td>3.15E+05</td>
+      <td>5.34E-04</td>
+      <td>1.69E-09</td>
+      <td>66.5</td>
+      <td>37.6 (5.6)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-51</td>
+      <td>RBD</td>
+      <td colspan="3">–</td>
+      <td>3.77E+06</td>
+      <td>2.01E-03</td>
+      <td>5.33E-10</td>
+      <td>52, 61‡</td>
+      <td>70.9 (29.3)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Curves were fit to a heterogeneous ligand model. Respective Kon, Koff, and KD values are shown for each component.†Curves were fit to a two-state reaction model. Respective Kon, Koff, and KD values are shown for each binding state.‡Two peaks were observed in the melting curve. Tms for both are reported.–, not determined; NA, no activity._
+
+**Table 2.**
+ S2 nanobody characterization; related to Figures 2 and 4.Binding kinetics of S2 nanobodies were determined by surface plasmon resonance (SPR) using recombinant S2 protein, with on rates, off rates, and KDs determined by Langmuir fits to binding sensorgrams unless otherwise noted. Nanobody melting temperatures (Tm) were determined by differential scanning fluorimetry (DSF). Nanobodies were assayed for neutralization activity against a SARS-CoV-2 or SARS-CoV-1 spike pseudotyped HIV-1 virus (PSV), with IC50s calculated from neutralization curves with standard error of the mean (s.e.m.).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Kon(M–1 s–1)</th>
+      <th>Koff(s–1)</th>
+      <th>KD (M)</th>
+      <th>Tm (°C)</th>
+      <th>SARS-CoV-2 PSV IC50 (s.e.m.) (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S2-1</td>
+      <td>6.32E+04</td>
+      <td>3.79E-04</td>
+      <td>6.00E-09</td>
+      <td>65.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-2</td>
+      <td>1.26E+06</td>
+      <td>9.35E-05</td>
+      <td>7.41E-11</td>
+      <td>64.5</td>
+      <td>4460 (901)</td>
+    </tr>
+    <tr>
+      <td>S2-3</td>
+      <td>2.62E+05</td>
+      <td>7.21E-05</td>
+      <td>2.76E-10</td>
+      <td>65</td>
+      <td>2234 (751)</td>
+    </tr>
+    <tr>
+      <td>S2-4</td>
+      <td>2.44E+06</td>
+      <td>2.62E-04</td>
+      <td>1.08E-10</td>
+      <td>56</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-5</td>
+      <td>9.35E+05</td>
+      <td>2.74E-04</td>
+      <td>2.93E-10</td>
+      <td>66</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-6</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>61.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-7</td>
+      <td>1.66E+06</td>
+      <td>9.36E-05</td>
+      <td>5.62E-11</td>
+      <td>61</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-9</td>
+      <td>9.29E+05</td>
+      <td>2.32E-04</td>
+      <td>2.50E-10</td>
+      <td>64.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>9.31E+04</td>
+      <td>3.13E-04</td>
+      <td>3.37E-09</td>
+      <td>59, 64.5*</td>
+      <td>5269 (1418)</td>
+    </tr>
+    <tr>
+      <td>S2-11</td>
+      <td>7.94E+06</td>
+      <td>1.12E-03</td>
+      <td>1.41E-10</td>
+      <td>69.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-13</td>
+      <td>7.02E+05</td>
+      <td>1.05E-04</td>
+      <td>1.49E-10</td>
+      <td>64.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-14</td>
+      <td>3.16E+06</td>
+      <td>1.28E-03</td>
+      <td>4.07E-10</td>
+      <td>72.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-15</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>70</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-18</td>
+      <td>1.63E+06</td>
+      <td>4.87E-04</td>
+      <td>2.99E-10</td>
+      <td>47, 54.5*</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-22</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-26</td>
+      <td>4.45E+05</td>
+      <td>8.15E-05</td>
+      <td>1.83E-10</td>
+      <td>76.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-33</td>
+      <td>3.68E+05</td>
+      <td>5.58E-05</td>
+      <td>2.33E-10</td>
+      <td>70</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-35</td>
+      <td>2.36E+05</td>
+      <td>4.72E-05</td>
+      <td>2.00E-10</td>
+      <td>77</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-36</td>
+      <td>4.39E+06</td>
+      <td>3.69E-04</td>
+      <td>8.41E-11</td>
+      <td>74</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-39</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>58</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-40</td>
+      <td>5.08E+04</td>
+      <td>7.16E-05</td>
+      <td>1.41E-09</td>
+      <td>69.5</td>
+      <td>1712 (828)</td>
+    </tr>
+    <tr>
+      <td>S2-42</td>
+      <td>5.12E+05</td>
+      <td>3.77E-06</td>
+      <td>7.36E-12</td>
+      <td>69</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-47</td>
+      <td>3.86E+05</td>
+      <td>1.14E-04</td>
+      <td>2.96E-10</td>
+      <td>40, 65*</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-57</td>
+      <td>2.33E+06</td>
+      <td>7.18E-04</td>
+      <td>3.08E-10</td>
+      <td>67</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-59</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>37.5, 60*</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-62</td>
+      <td>1.65E+06</td>
+      <td>1.12E-04</td>
+      <td>6.81E-11</td>
+      <td>64, 77.5*</td>
+      <td>7177 (5801)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Two peaks were observed in the melting curve. Tms for both are reported.–, not determined; NA, no activity._
+
+### High-affinity nanobodies across the entire spike ectodomain that are refractory to common spike escape mutants
 
 Surface plasmon resonance (SPR) was used to detail the kinetic properties and affinities of the selected nanobodies (Table 1 and 2). All bound with high affinity, with >60% binding with KDs < 1 nM, and two with single-digit picomolar affinities (Figure 2). While most S1-binding nanobodies bind RBD (71 nanobodies), 19 targeted non-RBD regions of S1 and 26 bind S2 (Figure 2). The lower number of non-RBD S1 and S2 nanobodies likely reflects the highly antigenic nature of the RBD and the occlusion of non-RBD S1 regions and S2 due to the glycan shield of SARS-CoV-2 spike (Grant et al., 2020; Watanabe et al., 2020). At the same time, we observed no obvious bias in nanobody affinities for these different domains. While both high on rates and low off rates contributed to these high affinities, kinetic analyses underscore the generally fast association rates (many with kon ≥ 10+6) of these nanobodies (likely due to their small size and proportionally large paratope surface area), with many surpassing the kon of high-performing monoclonal antibodies (kon ~ 10+5) (Tian et al., 2020; Figure 2), a property that would benefit translation of these nanobodies into rapid therapeutics and diagnostics (Carter, 2006). For those nanobodies with apparently homologous paratopes (Figure 1C), we found no correlation in their kinetic properties (Tables 1 and 2), demonstrating that even small paratope changes can strongly alter behaviors (Fridy et al., 2014).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig2-v1.jpg)
+
+**Figure 2.:** (A) Each nanobody plotted against their affinity (KD) for their antigen separated into three groups based on their binding region on SARS-CoV-2 spike protein. The data points highlighted in blue correspond to nanobodies that neutralize. The majority of nanobodies have high affinity for their antigen with KDs below 1 nm. 10 nanobodies are not included in this plot as they were unable to be analyzed successfully using surface plasmon resonance (SPR). (B) SPR sensorgrams for each of the three targets on SARS-CoV-2 spike protein of our nanobody repertoire, showing three representatives for each binding region. (C) The association rate of each nanobody (kon) versus the corresponding dissociation rate (koff). The majority of our nanobodies have fast association rates (~10+5–10+7 M–1 s–1), with many surpassing the kon of high-performing monoclonal antibodies (~10+4–10+5 M–1 s–1). (D) Each nanobody plotted against their Tm as measured by differential scanning fluorimetry (DSF), revealing all but two nanobodies fall within a Tm range between 50 and 80°C, where the bulk of our nanobodies have a Tm ≥ 60°C. No data could be collected for two nanobodies, and 10 nanobodies exhibited two dominant peaks in the thermal shift assay and were not included in this plot (a full summary of this data can be seen in Tables 1–3). The KD (E) and Tm (F) of six nanobodies were assessed pre- and post-freeze-drying, revealing no significant change in affinity or Tm after freeze-drying. (G) SPR sensorgrams comparing the kinetic and affinity analysis of seven nanobodies against wild-type spike S1 (Wuhan strain), spike 20I/S1 501Y.V1 (alpha variant), and 20H/spike S1 501Y.V2 (beta variant).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** All nanobody candidates identified by (a) S1, (b) S1-RBD, or (c) S2 purification were expressed in bacterial periplasm, which was bound to the respective immobilized antigen protein. After washes, loaded input (L) and elution (E) samples were analyzed by Coomassie stained SDS-PAGE. Positive binders (blue) displayed a nanobody band in the elution, while negative candidates (gray) had none.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** All nanobody candidates were expressed in bacterial periplasm, which was bound to immobilized S1, S1-RBD, or S2 antigen protein. Bound nanobody was quantified by Coomassie staining after SDS-PAGE. Binding intensity against each antigen was normalized to the maximum observed binding among all nanobodies. Candidates with >20% maximum activity (blue) were selected for follow-up, while others (gray) were generally discarded.
+
 A worrying development is the continuing emergence of viral variants, including mutations in RBD that minimize or nullify binding of many currently available monoclonal antibodies and nanobodies, which solely target RBD (Weisblum et al., 2020; Wang et al., 2021b; Diamond et al., 2021; Jangra et al., 2021; Garcia-Beltran et al., 2021; Liu et al., 2021b; Sun et al., 2021). Indeed, in one study, the efficacy of 14 out of the 17 most potent monoclonal antibodies tested was compromised by such common RBD mutants (Wang et al., 2021b). Here, based on the large size of our repertoire and its extensive binding across the available epitope space of spike, nanobodies or combinations thereof show great potential to be particularly resistant to these variants (Sun et al., 2021). RBD mutants represent a significant class of escape variants (Garcia-Beltran et al., 2021; Greaney et al., 2021), leading us to employ two strategies to ensure the generation of numerous nanobodies whose binding (and virus-neutralizing activities) are resistant to emerging variants. First, we isolated a large diversity of high-quality anti-RBD nanobodies to maximize the probability of identifying ones that are refractory to escape. Second, to reveal additional nanobody-neutralizing potential, we deliberately targeted non-RBD regions of spike (see below) (Elshabrawy et al., 2012; Greaney et al., 2021). To test the first strategy, we sampled RBD-binding nanobodies covering non-overlapping epitopes on RBD (Figure 3) and examined their binding to SARS-CoV-2 variants B.1.1.7/20I/501Y.V1/alpha (United Kingdom) and B.1.351/20H/501Y.V2/beta (South Africa) (Wang et al., 2021a; Ho et al., 2021; Figure 2, Table 3). Of the seven nanobodies tested, six of these (S1-1, S1-6, S1-RBD-9, S1-RBD-11, S1-RBD-15, and S1-RBD-35) retained their very strong binding to both variants, with only a modest reduction in affinity for S1-RBD-11 binding to variant B.1.351/20H/501Y.V2/beta (20–161 pM). For the seventh nanobody, S1-23, binding to variant B.1.1.7/20I/501Y.V1/alpha was only reduced from a KD of 17 pM to a still-respectable 230 pM, although its binding to variant B.1.351/20H/501Y.V2/beta was abolished (Figure 2). As expected (VanCott et al., 1994; Magnus, 2013; Steckbeck et al., 2005), it is the off rates that are most affected by these variants. Nevertheless, based on epitope mapping (below) and our identification of nanobodies that recognize epitopes not altered in the emerging variant strains, we expect that a high percentage of our nanobodies will remain resistant to these escape mutants; this would now include the B.1.617.2/21A/delta variant (Campbell et al., 2021), making our collection a powerful resource for potential prophylactics and therapeutics.
 
-## The nanobody repertoire has favorable stability properties
+![Figure 3.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig3-v1.jpg)
+
+**Figure 3.:** (A) Major epitope bins are revealed by a clustered heat map of Pearson’s correlation coefficients computed from the response values of nanobodies binding to the spike RBD in pairwise cross-competition assays on a biolayer interferometer. Correlated values (red) indicate that the two nanobodies respond similarly when measured against a panel of 11 RBD nanobodies that bind to distinct regions of the RBD. A strong correlation score indicates binding to a similar/overlapping region on the RBD. Anticorrelated values (blue) indicate that a nanobody pair responds divergently when measured against nanobodies in the representative panel and indicate binding to distinct or non-overlapping regions on the RBD. (B) As in (A), but for 16 S1 non-RBD-binding nanobodies. (C) As in (A), but for 19 S2-binding nanobodies. (D) A network visualization of anti-S1-RBD nanobodies. Each node is a nanobody and each edge is a response value measured by biolayer interferometry from pairwise cross-competition assays. Orange nodes represent 11 nanobodies used as a representative panel for clustering analysis in (A). Blue nodes represent the other nanobodies in the dataset. The average shortest distance between any nanobody pair in the dataset is 1.64. An average clustering coefficient of 0.831 suggests that the measurements are well distributed across the dataset. The small world coefficient of 1.031 indicates that the network is more connected than to be expected from random, but the average path length is what you would expect from a random network, together indicating that the relationship between nanobody pairs not actually measured can be inferred from the similar/neighboring nanobodies. (E, F) As in (D) but for S1 non-RBD and S2 nanobodies, respectively. These are complete networks with every nanobody measured against the others in the dataset. (G) Mass photometry (MP) analysis of spike S1 monomer incubated with different anti-spike S1 nanobodies. Two examples of an increase in mass as spike S1 monomers (black line) are incubated with 1–3 nanobodies. The accumulation in mass upon addition of each different nanobody on spike S1 monomer is due to each nanobody binding to non-overlapping space on spike S1, an observation consistent with Octet binning data. As a control, using MP, each individual nanobody was shown to bind spike S1 monomers on its own (data not shown).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** MP analysis of spike S1 monomer incubated with different non-RBD-binding anti-spike S1 nanobodies. There is either an accumulation in mass upon addition of each different nanobody on spike S1 monomer that is due to each nanobody binding to non-overlapping space on spike S1 or not, suggesting overlapping epitopes. These results, coupled with surface plasmon resonance (SPR) binning data, assisted the binning analysis for non-RBD anti-S1 nanobodies.
+
+**Table 3.**
+ Nanobody binding activity against spike S1 variants; related to Figure 2.Binding kinetics against wild-type spike S1 or two variants of concern were determined by surface plasmon resonance (SPR), with on rates, off rates, and KDs determined by Langmuir fits to binding sensorgrams.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Spike S1 variant</th>
+      <th>Kon(M–1 s–1)</th>
+      <th>Koff(s–1)</th>
+      <th>KD (M)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">S1-1</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>4.14E+05</td>
+      <td>2.98E-05</td>
+      <td>7.20E-11</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>2.71E+05</td>
+      <td>1.21E-05</td>
+      <td>4.44E-11</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>2.78E+05</td>
+      <td>1.25E-05</td>
+      <td>4.51E-11</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-6</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>1.02E+06</td>
+      <td>5.75E-04</td>
+      <td>5.65E-10</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>3.55E+06</td>
+      <td>6.27E-04</td>
+      <td>1.77E-10</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>1.03E+06</td>
+      <td>3.29E-04</td>
+      <td>3.20E-10</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-23</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>2.82E+06</td>
+      <td>4.91E-05</td>
+      <td>1.74E-11</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>5.96E+06</td>
+      <td>1.36E-03</td>
+      <td>2.29E-10</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-9</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>2.85E+05</td>
+      <td>1.23E-04</td>
+      <td>4.30E-10</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>4.84E+04</td>
+      <td>3.88E-05</td>
+      <td>8.01E-10</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>1.34E+05</td>
+      <td>9.55E-05</td>
+      <td>7.13E-10</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-11</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>2.22E+07</td>
+      <td>2.94E-04</td>
+      <td>1.32E-11</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>3.84E+06</td>
+      <td>2.87E-04</td>
+      <td>7.46E-11</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>6.85E+06</td>
+      <td>1.10E-03</td>
+      <td>1.61E-10</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-15</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>5.37E+06</td>
+      <td>1.50E-04</td>
+      <td>2.79E-11</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>2.99E+06</td>
+      <td>1.26E-04</td>
+      <td>4.22E-11</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>4.02E+06</td>
+      <td>2.22E-04</td>
+      <td>5.53E-11</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-35</td>
+      <td>WT (Wuhan 2019)</td>
+      <td>8.01E+05</td>
+      <td>1.68E-04</td>
+      <td>2.10E-10</td>
+    </tr>
+    <tr>
+      <td>20I/501Y.V1</td>
+      <td>1.33E+07</td>
+      <td>2.40E-03</td>
+      <td>1.80E-10</td>
+    </tr>
+    <tr>
+      <td>20H/501Y.V2</td>
+      <td>5.94E+06</td>
+      <td>2.65E-03</td>
+      <td>4.46E-10</td>
+    </tr>
+  </tbody>
+</table>
+
+_NA, no activity._
+
+### The nanobody repertoire has favorable stability properties
 
 A key consideration for possible biological therapeutics and diagnostics for SARS-CoV-2 is their stability under potentially denaturing conditions (McConnell et al., 2014). To address this, we performed differential scanning fluorimetry (DSF) experiments to determine the thermal stability (Tm) of each of our nanobodies. These studies revealed a thermal stability range between 50 and 80°C, similar to published results of other properly folded nanobodies and indicative of their generally high stability (Muyldermans, 2013). In contrast to many conventional antibodies, nanobodies are also reported to remain fully active upon reconstitution after lyophilization, particularly in buffers lacking cryoprotectants (Schoof et al., 2020; Xiang et al., 2020). A representative sample from our repertoire was thus freeze-dried without cryoprotectants, reconstituted, then analyzed via SPR and DSF to determine whether their properties were compromised due to lyophilization. The results revealed no significant effect on stability, kinetics, and affinity (Figure 2E and F). Taken together, these data suggest that our nanobodies, like those published in other contexts (Xiang et al., 2020; Schoof et al., 2020), are able to withstand various temperatures and storage conditions without affecting their stability and binding. These are essential requirements for downstream applications (e.g., use in a nebulizer) and ease of storage – important considerations if these are to be used for mass distribution, including in resource-poor settings (Peeling and McNerney, 2014).
 
-## Nanobodies explore the major domains of the spike ectodomain
+### Nanobodies explore the major domains of the spike ectodomain
 
 We applied a multifaceted approach to physically distinguish nanobodies that target common regions on the surface of the RBD. Using an eight-channel biolayer interferometer, we tested for pairwise competitive binding of nanobodies that bind the RBD, as well as for those that bind outside of the RBD (i.e., within the S1 non-RBD and S2 domains) (Figure 3). Label-free binding of antibodies to antigens measured in a ‘dip-and-read’ mode provides a real-time analysis of affinity and the kinetics of the competitive binding of nanobody pairs and can distinguish between those that bind to similar or overlapping epitopes versus distinct, non-overlapping epitopes (Estep et al., 2013). 56 anti-RBD nanobodies were screened in pairwise combinations. The response values were used to assist the discovery of nanobody groups that most likely bind non-overlapping epitopes by ensuring that the least response of pairwise nanobodies within the group was maximized. Eleven representative anti-RBD nanobodies were used as a foundation, selecting two or more representative nanobodies from each group to bin the remaining RBD nanobodies in our collection. Overlapping pairs from the foundation group and the remaining RBD binders were used to measure if a nanobody pair behaved similarly against other nanobodies measured in the dataset (Figure 3A), to comprehensively map nanobody competition and epitope bins (Figure 3D). Pearson’s correlation coefficients were derived based on their binding characteristics, and the data were used to hierarchically cluster and group all RBD binders into bins. This approach revealed three large, mostly non-overlapping bins. However, each bin contained smaller, better-correlated clusters of nanobodies, reflected by the dendrogram, indicating the presence of numerous distinct sub-epitope bins present within each larger bin, that is, discrete epitopes that partially overlap with other discrete epitopes in the same bin. We calculated the gap statistic (Tibshirani et al., 2001), to estimate the optimal cluster number, discerning at least eight epitope bins (Figure 3A).
 
@@ -98,25 +1495,614 @@ Nanobodies binding to regions outside of the RBD of S1 were binned in a similar 
 
 The binning data from pairwise combinations suggest numerous epitope bins, and thus it is reasonable to hypothesize that more than two nanobodies can bind a single domain at the same time. To test this hypothesis, we used mass photometry (MP) (Soltermann et al., 2020; Wu and Piszczek, 2021; Young et al., 2018), which can accurately measure multiple binding events to a single antigen. This allowed us to determine which nanobodies share epitope space on spike S1 monomer through detection of additive mass accumulation of a nanobody (or nanobodies) on spike S1 depending on whether or not nanobodies share epitope space on spike S1. Several representative nanobodies that sample across the epitope space of our nanobody repertoire that bind the RBD were chosen for MP studies based on the epitope binning data (Figure 3G). These data confirmed the separation of our major epitope bins, and furthermore demonstrated that we can bind at least three different nanobodies simultaneously to the RBD, contrasting with the much larger conventional immunoglobulins, which may be too large to simultaneously bind either monomer or trimer S protein (Corti et al., 2021; Stewart et al., 1997; Xu et al., 2021). This is a critical consideration for the design of complementary nanobody cocktails and multimers with synergistic-neutralizing activities (see below).
 
-## Anti-RBD nanobodies are highly effective neutralizing agents
+### Anti-RBD nanobodies are highly effective neutralizing agents
 
 We used a SARS-CoV-2 pseudovirus neutralization assay to screen and characterize our nanobody repertoire for antiviral activities (Figure 4). The lentiviral-based, single-round infection assay robustly measures the neutralization potential of a candidate nanobody and is a validated surrogate for replication competent SARS-CoV-2 (Riepler et al., 2020; Schmidt et al., 2020). Because measured IC50s are dependent on assay conditions and so cannot be readily compared across laboratories (Cheng and Prusoff, 1973), we included four other published nanobodies in this assay for comparison (Xiang et al., 2020; Wrapp, 2020a; Figure 4G). Overall, 36% of our monomeric nanobody repertoire neutralized with IC50s ≤ 100 nM, while 23% showed neutralization with IC50s < 50 nM and 17 potent neutralizers at 20 nM or lower (Figure 4A). Similarly, the four published nanobodies span the range of neutralization observed within our repertoire from potent (<20 nM) to relatively weak (between 1 and 10 µM). As a further comparison and validation of our IC50 values, we evaluated a subset of our nanobodies in a complementary neutralization assay (Weisblum et al., 2020), which revealed a strong correlation between these two assays with a Pearson’s correlation coefficient of 0.98 and p-value < 0.0001 (Figure 4—figure supplement 1). Our most potent neutralizing nanobodies mapped to the RBD; neutralizing activity mapped to each of the major epitope bins of the RBD and were of similar efficacy to the most potent of the comparison nanobodies; importantly, nanobodies binding outside of the RBD also possess neutralizing activity (for example S1-64 and S1-65).
 
-## Nanobody-based neutralization beyond the RBD
+![Figure 4.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig4-v1.jpg)
+
+**Figure 4.:** Nanobodies targeting the S1-RBD, S1 non-RBD, and S2 portions of spike effectively neutralize lentivirus pseudotyped with various SARS-CoV spikes and their variants from infecting ACE2 expressing HEK293T cells. (A) Of the 116 nanobodies, monomers that neutralize SARS-CoV-2 pseudovirus with IC50 values 20 nM and lower are displayed. (B) Representative nanobodies targeting the non-RBD portions of S1 and (C) the S2 domain of SARS-CoV-2 neutralize SARS-CoV-2 pseudovirus. (D–F) Oligomerization of RBD, S1 non-RBD, and S2 nanobodies significantly increases neutralization potency. (G) Summary scatter plot of all nanobody IC50s across the major domains of SARS-CoV-2 spike and where tested, across SARS-CoV-2 variant 20H/501Y.V2 and SARS-CoV-1. Representative published nanobodies were also tested in our neutralization assays and show similar potency towards SARS-CoV-2 pseudovirus. From Xiang et al., 2020: (1) Nb-21 (IC50 2.4 nM); (2) Nb-34 (IC50 5.6 nM); and (3) Nb-93 (IC50 123 nM). From Wrapp, 2020a: (4) VHH-72 (IC50 2.5 μM). (H–K) Representative SARS-CoV-2 RBD targeting nanobodies cross-neutralize the 20I/501Y.V1/alpha variant with H69-, V70-, Y144- amino acid deletions and N501Y, A570D, D614G, P681H, T716I, S982A, and D1118H amino acid substitutions in spike (H); the 20H/501Y.V2/beta variant with L18F, D80A, K417N, E484K, and N501Y amino acid substitutions in spike; (I) 20J/501Y.V3/gamma variant with L18F, T20N, P26S, D138Y, R190S, K417T, E484K, N501Y, D614G, H655Y, T1027I, and V1176F amino acid substitutions in spike (J); and SARS-CoV-1 spike pseudotyped lentivirus (K). In all cases, n ≥ 2 biological replicates of each nanobody monomer/oligomer with a representative biological replicate with n = 4 technical replicates per dilution are displayed. See also Table 1, Table 2, Table 4, and Table 5.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** IC50s of the 25 nanobodies tested in both lentiviral and VSV-based pseudovirus assays with wild-type SARS-CoV-2 spike were plotted to compare the values obtained from each system, showing a strong correlation.
+
+### Nanobody-based neutralization beyond the RBD
 
 Notably, nanobodies mapping outside of the RBD on S1 (anti-S1, non-RBD) and to S2 also neutralized the pseudovirus in our assay, albeit with somewhat higher IC50s (Figure 4B and C). This is the first evidence of nanobody neutralization activity mapping outside of the RBD. As nanobodies are monomeric, the mechanism of this neutralization does not involve viral aggregation and likely reflects disruption of the virus binding or spike-driven fusion of viral and cellular membranes. Nanobodies, especially directed against relatively invariant regions of coronavirus spike proteins, may have broadly binding/neutralizing activities and are therefore important targets for optimization. Such optimization includes their use in cocktails and as oligomers.
 
-## Oligomerization strongly enhances the affinity and neutralization activity of nanobodies
+### Oligomerization strongly enhances the affinity and neutralization activity of nanobodies
 
 A distinct advantage of nanobodies is the facility by which oligomers can be produced to improve their affinities and avidities (Fridy et al., 2014; Schoof et al., 2020; Xiang et al., 2020; Koenig et al., 2021). Oligomerization of most of our nanobodies significantly improved their IC50s and measured affinities (Table 4). For example, dimerization and trimerization of S1-RBD-35 improved neutralization activity from IC50s of ~12 nM to ~150 pM and ~70 pM, respectively. Similar results were found with S1-23, improving neutralization from ~6 nM to ~220 pM and ~90 pM, respectively (Figure 4D). Dimerization of the anti-S1 non-RBD nanobody S1-49 improved IC50s from ~350 nM to ~9 nM, and trimerization improved its activity an additional ~10-fold. Multimerization of some nanobodies directed against regions outside of the RBD on both S1 and S2 led to nanomolar range IC50s (Figure 4E and F). This includes S2-7, for which dimerization converted a nanobody that we considered to be a non-neutralizer to one having a respectable neutralizing activity (IC50 ~ 250 nM), with further potency achieved by trimerization and tetramerization, down to an IC50 of ~30 nM (Figure 4F). While these results show that multimerization can dramatically improve their activities, importantly this was not always the case (Table 4), indicating that enhancement by multimerization is not a given, but must be determined empirically.
 
-## Nanobodies neutralize SARS-CoV-2 variants and SARS-CoV-1
+**Table 4.**
+ Characterization of oligomerized spike nanobodies; related to Figure 4.Nanobody oligomers (1–4 nanobody repeats) were assayed for neutralization activity against a SARS-CoV-2 spike pseudotyped HIV-1 virus (PSV), with IC50s calculated from neutralization curves. Standard error of the mean (s.e.m.) is reported where replicates were available. Epitopes were determined by relative affinity for recombinant S1 or S1 RBD protein.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Epitope</th>
+      <th>SARS-CoV-2 PSV IC50 (s.e.m.)(nM)</th>
+      <th>SARS-CoV-1 PSV IC50 (s.e.m.) (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-1</td>
+      <td>RBD</td>
+      <td>6.7 (1.0)</td>
+      <td>8.6 (7.2)</td>
+    </tr>
+    <tr>
+      <td>S1-1dimer</td>
+      <td>RBD</td>
+      <td>4.9 (0.1)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-1trimer</td>
+      <td>RBD</td>
+      <td>5.7 (0.1)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>RBD</td>
+      <td>5.7 (2.2)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-23dimer</td>
+      <td>RBD</td>
+      <td>0.22 (0.05)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-23trimer</td>
+      <td>RBD</td>
+      <td>0.089 (0.019)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-35</td>
+      <td>RBD</td>
+      <td>12.3 (2.4)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-35dimer</td>
+      <td>RBD</td>
+      <td>0.15 (0.11)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-35trimer</td>
+      <td>RBD</td>
+      <td>0.068 (0.043)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-3</td>
+      <td>S1 non-RBD</td>
+      <td>1,030 (666)</td>
+      <td>4161</td>
+    </tr>
+    <tr>
+      <td>S1-3dimer</td>
+      <td>S1 non-RBD</td>
+      <td>429</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <td>S1-3trimer</td>
+      <td>S1 non-RBD</td>
+      <td>411</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-30</td>
+      <td>S1 non-RBD</td>
+      <td>717 (388)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-30dimer</td>
+      <td>S1 non-RBD</td>
+      <td>18.3</td>
+      <td>662</td>
+    </tr>
+    <tr>
+      <td>S1-30trimer</td>
+      <td>S1 non-RBD</td>
+      <td>77.5 (3.6)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-7</td>
+      <td>S1 non-RBD</td>
+      <td>NA</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-7dimer</td>
+      <td>S1 non-RBD</td>
+      <td>NA</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-7trimer</td>
+      <td>S1 non-RBD</td>
+      <td>NA</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-17</td>
+      <td>S1 non-RBD</td>
+      <td>1271 (888)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-17dimer</td>
+      <td>S1 non-RBD</td>
+      <td>2144</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>S1 non-RBD</td>
+      <td>356 (32.8)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-49dimer</td>
+      <td>S1 non-RBD</td>
+      <td>9.1 (1.2)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-49trimer</td>
+      <td>S1 non-RBD</td>
+      <td>0.87 (0.08)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-7</td>
+      <td>S2</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-7dimer</td>
+      <td>S2</td>
+      <td>246</td>
+      <td>3516</td>
+    </tr>
+    <tr>
+      <td>S2-7trimer</td>
+      <td>S2</td>
+      <td>112</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-7tetramer</td>
+      <td>S2</td>
+      <td>29.7</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>S2</td>
+      <td>5269 (1418)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-10dimer</td>
+      <td>S2</td>
+      <td>48.0 (27.5)</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-10trimer</td>
+      <td>S2</td>
+      <td>34.3</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_–, not determined; NA, no activity._
+
+### Nanobodies neutralize SARS-CoV-2 variants and SARS-CoV-1
 
 Certain mutations in spike, appearing in ‘variants of concern’ (VOC) associated with rapidly increasing case numbers in certain locales, have been demonstrated to reduce the neutralization potency of some monoclonal antibodies and polyclonal plasma, increase the frequency of serious illness, and are spreading rapidly (Wang et al., 2021b; Wibmer et al., 2021). We therefore tested a subset of our neutralizing nanobodies against pseudovirus carrying the spike protein of the alpha variant (B.1.1.7 /20I/501Y.V1) (Figure 4H); the beta variant (B.1.351/20H/501Y.V2) (Tegally et al., 2021; Stamatatos et al., 2021; Figure 4I); and the gamma variant (P.1/20J/501Y.V3) (Figure 4J, Table 5). These VOCs have mutations resulting in amino acid substitutions in spike, which impact the neutralization efficacy for some of the tested nanobodies. While all nanobodies neutralize the alpha variant, S1-23 showed an almost 14-fold drop in potency (Figure 4A and I). S1-23 and S1-62 failed to neutralize the beta and gamma variants, while S1-1 and S1-RBD-15 were as efficacious against all three VOCs as they were against wild-type spike (Figure 4I). Both S1-RBD-21 and -35 also remained effective neutralizers of spike VOC pseudotypes, albeit with reduced IC50s compared to the wild-type spike (Figure 4I). Remarkably, S1-RBD-9 showed increased neutralization activity against all three VOC, improving ~2-fold against alpha, ~6-fold against beta, and ~10-fold against gamma (Figure 4H–J). These results are in accord with our SPR studies, which showed that S1-1, S1-RBD-9, -15, and -35 retained very strong binding to the alpha and beta VOC, whereas binding of S1-23 was reduced against alpha and completely abolished against beta (Figure 2G). The B.1.617.2/21A/delta VOC has L452R and T478K as unique RBD amino acid substitutions (Campbell et al., 2021), which, based on our epitope binning and escape mutants (below), we would predict to impact neutralization of S1-RBD-11 and S1-RBD-35 (T478K) or S1-RBD-23 and S1-36 (L452F). However, the great majority of nanobodies in our repertoire would be predicted to show similar high neutralization efficacy against all these VOCs as compared to the wild-type virus. Overall, these data indicate that comprehensive mining of our repertoire and multimerization can lead to nanobody-based therapies that remain fully effective against common and even potentially yet-to-emerge variants of SARS-CoV-2 and with broad-spectrum coronavirus inhibition activities.
 
+**Table 5.**
+ Nanobody neutralization activity against spike variants; related to Figure 4.Nanobodies were assayed for neutralization activity against a pseudotyped HIV-1 virus (PSV) expressing SARS-CoV-1 or SARS-CoV-2 wild-type or variant spike, with IC50s calculated from neutralization curves. Standard error of the mean (s.e.m.) is reported where replicates were available.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Epitope</th>
+      <th>SARS-CoV-2 PSV IC50 (s.e.m.)(nM)</th>
+      <th>SARS-CoV-1 PSV IC50 (s.e.m.) (nM)</th>
+      <th>SARS-CoV-2 20H/501Y.V2 PSV IC50 (s.e.m.) (nM)</th>
+      <th>SARS-CoV-2 20I/501Y.V1 PSV IC50 (s.e.m.) (nM)</th>
+      <th>SARS-CoV-2 20J/501Y.V3 PSV IC50 (s.e.m.) (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-1</td>
+      <td>RBD</td>
+      <td>6.7 (1.0)</td>
+      <td>8.6 (6.4)</td>
+      <td>7.2 (1.6)</td>
+      <td>8.5 (4.2)</td>
+      <td>2.9 (0.2)</td>
+    </tr>
+    <tr>
+      <td>S1-3</td>
+      <td>Non-RBD</td>
+      <td>1030 (666)</td>
+      <td>3598 (563)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-4</td>
+      <td>RBD</td>
+      <td>41.5 (3.7)</td>
+      <td>179</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-6</td>
+      <td>RBD</td>
+      <td>56.1 (20.7)</td>
+      <td>227 (205)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-17</td>
+      <td>Non-RBD</td>
+      <td>1271 (888)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-20</td>
+      <td>RBD</td>
+      <td>51.8 (3.7)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>13.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>RBD</td>
+      <td>5.7 (2.2)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>78.3</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-24</td>
+      <td>Non-RBD</td>
+      <td>868</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-27</td>
+      <td>RBD</td>
+      <td>19.5 (4.9)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-30</td>
+      <td>Non-RBD</td>
+      <td>717.8 (387)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-31</td>
+      <td>RBD</td>
+      <td>78.7 (3.5)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-35</td>
+      <td>RBD</td>
+      <td>12.5 (0.1)</td>
+      <td>386.8 (350)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-36</td>
+      <td>RBD</td>
+      <td>48.5 (21.1)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-37</td>
+      <td>RBD</td>
+      <td>6.8 (0.7)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>13.5</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-39</td>
+      <td>RBD</td>
+      <td>111 (4.0)</td>
+      <td>22.1 (18.5)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-41</td>
+      <td>Non-RBD</td>
+      <td>679 (53.4)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-48</td>
+      <td>RBD</td>
+      <td>5.82 (0.5)</td>
+      <td>NA</td>
+      <td>20.9 (1.4)</td>
+      <td>7.3 (1.5)</td>
+      <td>14.2 (3.5)</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>Non-RBD</td>
+      <td>356 (32.8)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-51</td>
+      <td>RBD</td>
+      <td>555.8 (52.5)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-58</td>
+      <td>Non-RBD</td>
+      <td>940 (795)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-62</td>
+      <td>RBD</td>
+      <td>3.3 (0.8)</td>
+      <td>–</td>
+      <td>NA</td>
+      <td>6.4 (4.5)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-6</td>
+      <td>RBD</td>
+      <td>77.2 (21.8)</td>
+      <td>89.7 (4.2)</td>
+      <td>75.8</td>
+      <td>78.3</td>
+      <td>43.5</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-9</td>
+      <td>RBD</td>
+      <td>235 (97.5)</td>
+      <td>149.4 (54.1)</td>
+      <td>115.7 (18.9)</td>
+      <td>35.9 (5.1)</td>
+      <td>24.5 (5.8)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-11</td>
+      <td>RBD</td>
+      <td>13.5 (5.50)</td>
+      <td>NA</td>
+      <td>40.4 (2.5)</td>
+      <td>100.6</td>
+      <td>138.6</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>RBD</td>
+      <td>4.6 (1.2)</td>
+      <td>NA</td>
+      <td>3.4 (1.4)</td>
+      <td>5.2 (1.0)</td>
+      <td>1.3 (0.03)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-16</td>
+      <td>RBD</td>
+      <td>79.2 (4.2)</td>
+      <td>–</td>
+      <td>1612 (1303)</td>
+      <td>81.2 (10.9)</td>
+      <td>35.7 (23.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-20</td>
+      <td>RBD</td>
+      <td>12.4 (1.1)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>49.6</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-21</td>
+      <td>RBD</td>
+      <td>17.3 (3.1)</td>
+      <td>NA</td>
+      <td>128.5 (16.8)</td>
+      <td>24.3 (0.7)</td>
+      <td>40.7 (7.0)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-23</td>
+      <td>RBD</td>
+      <td>7.3 (0.4)</td>
+      <td>NA</td>
+      <td>16.3 (1.9)</td>
+      <td>2.8</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-27</td>
+      <td>RBD</td>
+      <td>163 (71.4)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99.8</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-29</td>
+      <td>RBD</td>
+      <td>9.5 (1.0)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-35</td>
+      <td>RBD</td>
+      <td>12.3 (2.4)</td>
+      <td>NA</td>
+      <td>51.2 (4.2)</td>
+      <td>11.5 (1.1)</td>
+      <td>17.7 (4.0)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-37</td>
+      <td>RBD</td>
+      <td>523 (93.4)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-40</td>
+      <td>RBD</td>
+      <td>25.6 (3.4)</td>
+      <td>NA</td>
+      <td>299.8 (200)</td>
+      <td>10.5 (0.2)</td>
+      <td>32.2 (7.1)</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-47</td>
+      <td>RBD</td>
+      <td>127 (11.6)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>206 (123)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-48</td>
+      <td>RBD</td>
+      <td>68.7 (14.2)</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>106.6 (65.6)</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>S2-2</td>
+      <td>S2</td>
+      <td>4460 (901)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-3</td>
+      <td>S2</td>
+      <td>2234 (751)</td>
+      <td>6277</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-40</td>
+      <td>S2</td>
+      <td>1712 (828)</td>
+      <td>NA</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>S2-62</td>
+      <td>S2</td>
+      <td>7177 (5801)</td>
+      <td>1954 (364)</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+  </tbody>
+</table>
+
+_–, not determined; NA, no activity._
+
 Both SARS-CoV-1 and SARS-CoV-2 share the same host receptor, ACE2, and the RBDs of the viruses share ~74% identity. As a result, some antibodies and nanobodies have been shown to be cross-neutralizing (Liu et al., 2021b; Wrapp, 2020a). We therefore tested the ability of our nanobodies to neutralize SARS-CoV-1 in the pseudovirus assay. Of the nanobodies tested in this assay, several (7 of 27 tested) of our anti-RBD monomer nanobodies also displayed excellent neutralizing activities against SARS-CoV-1 spike pseudotyped virus (Figure 4K). S1-1, S1-39 and S1-RBD-6 had similar IC50s against both pseudotypes, while S1-35 and S1-6 showed reduced activity against SARS-CoV-1 pseudotypes. Notably, S1-23, S1-37, and S1-48 showed no activity against SARS-CoV-1 spike pseudotypes. These three nanobodies are highly correlated with one another in our epitope binning analysis, indicating their binding to proximal epitopes on the RBD (Figure 3A). Beyond nanobodies that bind to the RBD, 3 of 11 nanobodies that bind to non-RBD regions of S1 and S2 also neutralized SARS-CoV-1 spike pseudotypes (Table 5).
 
-## Nanobodies effectively neutralize SARS-CoV-2 infection in human primary airway epithelium
+### Nanobodies effectively neutralize SARS-CoV-2 infection in human primary airway epithelium
 
 Nanobody and antibody neutralizations have been reported to yield similar results when performed with pseudovirus versus authentic virus (Schoof et al., 2020; Xiang et al., 2020; Schmidt et al., 2020). However, discrepancies have also been reported, particularly for antibodies targeting regions outside the RBD (Chi et al., 2020; Huo et al., 2020b). We therefore selected a panel of exemplar (monomeric) nanobodies, which target the RBD and domains outside of the RBD, to test for neutralization with authentic SARS-CoV-2. All nanobodies tested that neutralized pseudovirus also showed potent neutralization by plaque and focus reduction assays and correlated well with our pseudovirus assays (Figure 5A, Table 6).
 
@@ -124,23 +2110,761 @@ Nanobody and antibody neutralizations have been reported to yield similar result
 
 **Figure 5.:** (A) Nanobodies neutralize the authentic SARS-CoV-2 virus with similar kinetics as the SARS-CoV-2 pseudovirus. Neutralization curves are plotted from the results of a focus-forming reduction neutralization assay with the indicated nanobodies. Serial dilutions of each nanobody were incubated with SARS-CoV-2 (MOI 0.5) for 60 min and then overlaid on a monolayer of Vero E6 cells and incubated for 24 hr. LaM2, an anti-mCherry nanobody (Fridy et al., 2014), was used as a non-neutralizing control. After 24 hr, cells were collected and stained with anti-spike antibodies and the ratio of infected to uninfected cells was quantified by flow cytometry. (B) A schematic of an air-liquid interface (ALI) culture of primary human airway epithelial cells (AECs) as a model for SARS-CoV-2 infection. Cells were incubated with nanobodies and then challenged with SARS-CoV-2 (MOI 0.5). After daily treatment with nanobodies for three more days, the cultures are harvested to isolate RNA and quantify the extent of infection. (C) Potent neutralization of authentic SARS-CoV-2 in AECs. The AECs were infected with the indicated concentrations of anti-SARS-CoV-2 spike nanobodies. The infected cultures were maintained for 5 days with a daily 1 hr incubation of nanobodies before being harvested for RNA isolation and determination of the SARS-CoV-2 copy number by qPCR. SARS-CoV-2 copy number was normalized to total RNA measured by spectrophotometry. Mock-treated samples exposed to infectious and UV-inactivated SARS-CoV-2 virions served as positive and negative controls. Recombinant soluble angiotensin converting enzyme 2 (rACE2) was used as a positive treatment control. The indicated nanobodies were used at 1, 10, and 100× their IC50 values determined in pseudovirus neutralization assays (Table 1 and Table 4).
 
+**Table 6.**
+ Nanobody neutralization activity against SARS-CoV-2; related to Figure 5.Nanobodies were assayed for neutralization activity against authentic SARS-CoV-2, with IC50s calculated from neutralization curves.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Epitope</th>
+      <th>SARS-CoV-2 IC50(nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-1</td>
+      <td>RBD</td>
+      <td>1.1</td>
+    </tr>
+    <tr>
+      <td>S1-4</td>
+      <td>RBD</td>
+      <td>1310</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>RBD</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-4</td>
+      <td>RBD</td>
+      <td>5.4</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-11</td>
+      <td>RBD</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-23</td>
+      <td>RBD</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>Non-RBD</td>
+      <td>91.2</td>
+    </tr>
+    <tr>
+      <td>LaM2</td>
+      <td>Non-target ctrl</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_NA, no activity._
+
 To mimic human infection, we exploited human air-liquid interface (ALI) cultures of primary airway epithelium as an ex vivo model system of viral infection (Barrow et al., 2021). This system mimics the lung environment as it contains pseudostratified, ciliated, and mucous-secreting cells that express ACE2 (Murphy et al., 2020) and has several advantages over animal models including representing the relevant physiological site of initial SARS-CoV-2 infection in humans (and associated innate responses), while enabling experimental control over infection, nanobody delivery, and quantification of viral RNA at the site of infection. We thus tested a subset of our nanobodies for their ability to block SARS-CoV-2 infection and spread in this model (Figure 5B). We treated the air-exposed apical surface of the culture with serial dilutions of S1-1 and S1-23 and then challenged them with SARS-CoV-2 at an MOI of 0.5. ALI cultures were then treated with nanobodies at 24 hr intervals for an additional 3 days before harvesting the cells, extracting RNA, and measuring SARS-CoV-2 levels by qPCR (Figure 5B). S1-1 potently neutralized SARS-CoV-2 at each concentration tested while S1-23 inhibited SARS-CoV-2 in a dose-dependent manner (Figure 5C). The efficacy of the S1-23 nanobody was strongly enhanced when provided to cells as a trimer, potently inhibiting viral replication (Figure 5C). As an additional comparator and as a control, we determined the inhibition of replication upon addition of recombinant competitor, ACE2. Nanobodies inhibited at lower doses than recombinant ACE2, reflective of our measured low KD of nanobody interactions with spike (<1 nM) compared to a reported KD of 14.7 nM or greater for ACE2 with spike (Huang and Chai, 2020; Shang et al., 2020; Chan et al., 2020; Rogers et al., 2020; Liu et al., 2020b; Cao et al., 2020). These data highlight the potential for nanobodies to function as single-agent therapies against COVID-19, with efficacies comparable to monoclonal immunoglobulins.
 
-## Escape-resistant nanobody cocktails
+### Escape-resistant nanobody cocktails
 
 With the emerging variants of concern, our goal is to develop nanobody multimers and cocktails that are maximally refractory to escape by such variants. To do so, we used a previously employed method that drives the selection of antibody-resistant populations of rVSV/SARS-CoV-2 chimeric virus harboring variants of spike and measured the ability of the chimeric virus to escape nanobody-mediated neutralization (Weisblum et al., 2020). This approach simultaneously maps the escape potential of spike and the epitopes responsible for neutralization by nanobody binding (Figure 6—figure supplement 1), with the goal of discovering spike variants that resist the neutralizing activity of individual nanobodies. Based on this information, we could then predict pairs of nanobodies whose escape mutants do not map to the same region of spike, the combination of which would thus likely prevent escape. Specifically, we prepared large and diversified populations (106 infectious units) of a recombinant VSV derivative (rVSV/SARS-CoV-2/GFP wt2E1) that encodes SARS-CoV-2 spike protein in place of VSV-G, and recapitulates the neutralization properties of authentic SARS-CoV-2 (Schmidt et al., 2020). The rVSV/SARS-CoV-2/GFP wt2E1 populations were incubated with each of the nanobodies at a nanobody concentration that was 10–100× the IC50, to neutralize susceptible variants. Then the nanobody-virus mixture was plated on 293T/ACE2cl.22 cells, and neutralization-resistant variants thereby selected and amplified by virus replication. Individual viral escape variants were then isolated by limiting dilution, amplified, and their sensitivity to neutralization by the selecting nanobody compared to the sensitivity of the starting rVSV/SARS-CoV-2/GFP wt2E1 virus. We thus identified 32 unique rVSV-SARs-CoV-2/GFP mutants that exhibited resistance to one or more of 22 representative neutralizing nanobodies against diverse spike epitopes (Table 7). For some of the non-RBD epitope nanobodies, we used dimeric or trimeric forms of the nanobodies to further enhance their activity, but in each case the selected viral isolates exhibited resistance to monomeric, dimeric, or trimeric forms. While some of the mutations that arose in the selection experiments were likely passenger mutations (Table 7), a number of mutations clustered on the spike surface close to each other on RBD (Figure 6—figure supplement 1; Weisblum et al., 2020; Muecksch et al., 2021; Wang et al., 2021b). Some of the most potently neutralizing nanobodies selected resistant mutations at the same positions (e.g., E484K) as those selected by potent neutralizing antibodies that have been cloned from SARS-CoV-2 convalescents and vaccine recipients, confirming that the ACE2 binding site is a point of particular vulnerability for potent neutralization. Additionally, however, other nanobodies selected mutations that have not previously been encountered in human antibody selection experiments (Table 7).
 
+**Table 7.**
+ Nanobody neutralization of rVSV/SARS-CoV-2 and selected resistant mutants; related to Figure 6.Neutralization assays were carried out using rVSV/SARS-CoV-2 and 293T/ACE2cl.22 target cells treated with the denoted nanobodies. Pseudovirus with either wild-type or variant spike (with escape mutants selected using the corresponding nanobody) was used. Escape mutants and IC50s are listed. Amino acid substitutions contributing to loss of neutralization activity are indicated in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nanobody</th>
+      <th>Epitope</th>
+      <th>rVSV/SARS-CoV-2 variant</th>
+      <th>IC50 (nM)± s.e.m.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">S1-1</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>2.63 ± 0.23</td>
+    </tr>
+    <tr>
+      <td>Y369N</td>
+      <td>122 ± 3.0</td>
+    </tr>
+    <tr>
+      <td>G404E</td>
+      <td>40.8 ± 1.01</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-6</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>13.0 ± 3.47</td>
+    </tr>
+    <tr>
+      <td>D574N*, Q792H, Q992H</td>
+      <td>587 ± 31.1</td>
+    </tr>
+    <tr>
+      <td>S371P, H66R, N969T</td>
+      <td>202 ± 29.9</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1-23</td>
+      <td rowspan="4">RBD</td>
+      <td>wt</td>
+      <td>0.58 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>F490S, E484K, Q493K</td>
+      <td>&gt; 1000</td>
+    </tr>
+    <tr>
+      <td>Q493R, G252R</td>
+      <td>&gt; 1000</td>
+    </tr>
+    <tr>
+      <td>E484K†</td>
+      <td>&gt; 1000</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1-36</td>
+      <td rowspan="4">RBD</td>
+      <td>wt</td>
+      <td>3.69 ± 0.14</td>
+    </tr>
+    <tr>
+      <td>W64R,L452F</td>
+      <td>262 ± 10.1</td>
+    </tr>
+    <tr>
+      <td>W64R,F490L,I931G</td>
+      <td>870 ± 202</td>
+    </tr>
+    <tr>
+      <td>W64R, F490S</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-37</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>1.83 ± 0.59</td>
+    </tr>
+    <tr>
+      <td>W64R, F490S</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-48</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>1.75 ± 0.43</td>
+    </tr>
+    <tr>
+      <td>Y449H, F490S, Q787R</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>S494P</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-62</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>0.65 ± 0.16</td>
+    </tr>
+    <tr>
+      <td>E484K</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-3trimer</td>
+      <td rowspan="3">S1 non-RBD</td>
+      <td>wt</td>
+      <td>60.0</td>
+    </tr>
+    <tr>
+      <td>W64R, Y170H, V705M</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>W64R, Y170H, Q787H</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-30trimer</td>
+      <td rowspan="2">S1 non-RBD</td>
+      <td>wt</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>T315I</td>
+      <td>2400</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-49</td>
+      <td rowspan="2">S1 non-RBD</td>
+      <td>wt</td>
+      <td>146 ± 53.8</td>
+    </tr>
+    <tr>
+      <td>S172G</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-49dimer</td>
+      <td rowspan="2">S1 non-RBD</td>
+      <td>wt</td>
+      <td>3.38 ± 2.44</td>
+    </tr>
+    <tr>
+      <td>S172G</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-49trimer</td>
+      <td rowspan="2">S1 non-RBD</td>
+      <td>wt</td>
+      <td>0.47 ± 0.00</td>
+    </tr>
+    <tr>
+      <td>S172G</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S2-10</td>
+      <td rowspan="2">S2</td>
+      <td>wt</td>
+      <td>6649 ± 2,545</td>
+    </tr>
+    <tr>
+      <td>W64R, S982R</td>
+      <td>&gt;100,000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S2-10dimer</td>
+      <td rowspan="2">S2</td>
+      <td>wt</td>
+      <td>1015 ± 236</td>
+    </tr>
+    <tr>
+      <td>W64R, S982R</td>
+      <td>&gt;40,000</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1-RBD-9</td>
+      <td rowspan="4">RBD</td>
+      <td>wt</td>
+      <td>30.2 ± 7.43</td>
+    </tr>
+    <tr>
+      <td>T259K, K378Q</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>W64R, K378Q</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>K378Q</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1-RBD-11</td>
+      <td rowspan="4">RBD</td>
+      <td>wt</td>
+      <td>1.44 ± 0.53</td>
+    </tr>
+    <tr>
+      <td>F486S</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>T478R</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>T478I</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-RBD-15</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>1.21 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Y508H</td>
+      <td>549 ± 36.9</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-RBD-16</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>268 ± 162</td>
+    </tr>
+    <tr>
+      <td>N354S</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-21</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>9.61 ± 1.90</td>
+    </tr>
+    <tr>
+      <td>F486L</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>Y489H</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-RBD-22</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>31.5 ± 11.8</td>
+    </tr>
+    <tr>
+      <td>K378Q</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-23</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>14.8 ± 3.55</td>
+    </tr>
+    <tr>
+      <td>L452R</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>H245R, S349P, H1083Y</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-24</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>58.0 ± 0.00</td>
+    </tr>
+    <tr>
+      <td>P384Q</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>K378Q†</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">S1-RBD-29</td>
+      <td rowspan="3">RBD</td>
+      <td>wt</td>
+      <td>18.0 ± 1.80</td>
+    </tr>
+    <tr>
+      <td>E484G</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>E484K</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td rowspan="4">S1-RBD-35</td>
+      <td rowspan="4">RBD</td>
+      <td>wt</td>
+      <td>1.80 ± 0.15</td>
+    </tr>
+    <tr>
+      <td>T478I</td>
+      <td>&gt;1000</td>
+    </tr>
+    <tr>
+      <td>F486L†</td>
+      <td>306 ± 17.2</td>
+    </tr>
+    <tr>
+      <td>Y489H†</td>
+      <td>57.4 ± 4.5</td>
+    </tr>
+    <tr>
+      <td rowspan="2">S1-RBD-40</td>
+      <td rowspan="2">RBD</td>
+      <td>wt</td>
+      <td>38.9 ± 11.7</td>
+    </tr>
+    <tr>
+      <td>W64R, F490S</td>
+      <td>&gt; 500</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Residue 574 is outside the structurally covered region of the RBD (residues 333–526) and, therefore, was not used in the Integrative Modeling Platform modeling.†Variant was separately identified by selection against a different nanobody._
+
 Nanobody cocktails are expected to be resistant to escape as they recognize multiple epitopes (Baum et al., 2020; De Gasparo et al., 2021; Weisblum et al., 2020). As proof of principle, we generated sets of two-nanobody cocktails by combining specific nanobodies that selected spatially distinct resistance mutations on the RBD (Figure 3A). When rVSV/SARS-CoV-2/GFP was passaged in the presence of the single nanobodies, resistant mutants were rapidly selected, as before. Indeed, the yield of infectious virus obtained after two passages in the presence of the single nanobody was nearly indistinguishable from that when rVSV/SARS-CoV-2/GFP was passaged in the absence of nanobodies. In contrast, when nanobodies were combined in cocktails containing two nanobodies, at the same total concentration as was used for the individual nanobodies, in eight out of nine cases, no infectious rVSV/SARS-CoV-2/GFP was recovered after two passages (Figure 6—figure supplement 1E). In the ninth case in which S1-48 and RBD-15 were combined and virus was still recovered, sequence analysis revealed that this virus contained two amino acid substitutions, F490V and Y508H, in the RBD. These substitutions were similar or identical to the individual substitutions found in the selection experiments with the single S1-48 and S1-RBD-15 nanobodies, which gave escape variants carrying the substitutions F490S and Y508H, respectively (Table 7). These results show that simply combining two nanobodies imposed the requirement for a minimum of two amino acid substitutions to confer resistance to the nanobody cocktail, greatly elevating the genetic barrier for escape. Such mixtures or derived multimers may represent powerful escape-resistant therapeutics, and even more escape resistance should be possible using three or more carefully chosen nanobodies in cocktails or multimers.
 
-## Integrative structural modeling reveals that the nanobody repertoire explores the available spike epitopes
+### Integrative structural modeling reveals that the nanobody repertoire explores the available spike epitopes
 
 We have taken an integrative modeling approach to generate structural maps of representative nanobody-spike complexes from our repertoire, allowing us to infer likely mechanisms by which our different nanobodies and combinations inhibit the virus. We used the Integrative Modeling Platform (IMP) (Webb et al., 2018) to generate structures using multiple atomic resolution structures available for both spike and the invariant framework of nanobodies as our starting point. Spatial restraints for these calculations were based on our escape mutant data (Table 7) because for each nanobody its escape mutants cluster around a highly restricted area of its binding epitope on spike (Garrett et al., 2021); additional residue-specific distance restraints were generated by cross-linking with MS readout (XL-MS) using the amine-specific bifunctional cross-linkers DSS and BS3 (Shi et al., 2015; Table 8). We also incorporated our epitope binning and MP findings (Figure 3, Figure 3—figure supplement 1) to provide excluded volume validation data (Webb and Sali, 2021; Webb et al., 2018). We benchmarked this modeling approach using a published nanobody with escape mutant data and a solved cryo-EM structure (Figure 6—figure supplement 2; Sun et al., 2021). These models provide sufficient resolution to map the size and position of the epitopes bound by each nanobody; however, future higher-resolution studies using cryo-EM or crystallization are warranted for the highest priority nanobodies (Schoof et al., 2020; Pymm et al., 2021; Xiang et al., 2020; Wrapp, 2020a).
 
+**Table 8.**
+ Cross-linked residues used in integrative modeling; related to Figure 6.The indicated nanobodies were bound to RBD, NTD, or the spike ectodomain and cross-linked with disuccinimidyl suberate (DSS). Cross-linked complexes were excised from SDS-PAGE gels, reduced, alkylated, and digested with either trypsin or chymotrypsin. Peptides were extracted and analyzed by mass spectrometry. Cross-linked residues (listed) were identified using pLink, and spectra were manually validated to eliminate false positives.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Nanobody</th>
+      <th>Nanobody residue #</th>
+      <th>Spike construct</th>
+      <th>7KRQ residue number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-49</td>
+      <td>49</td>
+      <td>NTD</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>70</td>
+      <td>NTD</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>70</td>
+      <td>NTD</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>70</td>
+      <td>NTD</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>81</td>
+      <td>NTD</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>81</td>
+      <td>NTD</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>81</td>
+      <td>NTD</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>81</td>
+      <td>NTD</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>462</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>386</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>91</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>105</td>
+      <td>RBD</td>
+      <td>386</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>462</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>462</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>91</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>91</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>91</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>S1-46</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-46</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>386</td>
+    </tr>
+    <tr>
+      <td>S1-46</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>S1-46</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>RBD-9</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>RBD-9</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>386</td>
+    </tr>
+    <tr>
+      <td>RBD-9</td>
+      <td>69</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>RBD-9</td>
+      <td>80</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>RBD-9</td>
+      <td>114</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>47</td>
+      <td>RBD</td>
+      <td>462</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>62</td>
+      <td>RBD</td>
+      <td>417</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>62</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>68</td>
+      <td>RBD</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>RBD-35</td>
+      <td>68</td>
+      <td>RBD</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>69</td>
+      <td>Spike ectodomain</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>80</td>
+      <td>Spike ectodomain</td>
+      <td>835</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>115</td>
+      <td>Spike ectodomain</td>
+      <td>854</td>
+    </tr>
+    <tr>
+      <td>S2-10</td>
+      <td>115</td>
+      <td>Spike ectodomain</td>
+      <td>964</td>
+    </tr>
+    <tr>
+      <td>S2-40</td>
+      <td>69</td>
+      <td>Spike ectodomain</td>
+      <td>814</td>
+    </tr>
+    <tr>
+      <td>S2-40</td>
+      <td>69</td>
+      <td>Spike ectodomain</td>
+      <td>786</td>
+    </tr>
+    <tr>
+      <td>S2-40</td>
+      <td>69</td>
+      <td>Spike ectodomain</td>
+      <td>790</td>
+    </tr>
+  </tbody>
+</table>
+
 In sum, we solved integrative structures for 21 different neutralizing nanobodies that, based on our epitope binning data, appeared to collectively explore much of the spike surface, with 18 recognizing RBD, 1 recognizing the NTD of S1, and 2 recognizing S2 (Figure 6). It should be noted that these represent only a small fraction of our total repertoire and so total coverage is greater than what is represented by these maps. Based on overlapping footprints, these 21 nanobodies are classified into 10 groups. Figure 6 summarizes the position of binding and the relative neutralization activity of each of the 21 mapped nanobodies in a heatmap format. As expected, neutralizing nanobodies bind at sites that are complementary to sites of glycosylation, which entropically shield larger zones than represented (Casalino et al., 2020), and are instead concentrated at the largely glycan-free RBD. Indeed, among our entire repertoire, epitope binning shows that neutralization activity, corresponding escape mutants, and the mapped epitopes are heavily concentrated on the RBD (Figures 3, 4 and 6); ~80% of our anti-RBD nanobodies are neutralizing, with many escape mutants mapping adjacent to the receptor-binding motif (RBM), the region of RBD that interacts directly with ACE2 and is most lightly glycosylated (Shajahan et al., 2020; Watanabe et al., 2020), whereas ~20% of our anti-S2 nanobodies and ~60% of our non-RBD anti-S1 nanobodies are neutralizing. We note that, based on the fact that glycosylation obscures a considerable fraction of the spike surface (Watanabe et al., 2020; Zhang et al., 2020), our repertoire explores much of the remaining available epitope space. The neutralization bias that we observe also likely reflects the most obvious mechanism of viral inhibition, namely, blocking the binding of spike’s RBD domain to ACE2 on host membranes to preclude viral fusion, but the non-RBD-based neutralization also underscores that other important mechanisms for viral inhibition exist.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig6-v1.jpg)
+
+**Figure 6.:** (A) The structure of SARS-CoV-2 full spike (PDB ID: 6VYB) solved via cryo-EM with one RBD in the up position overlaid with the crystal structure of RBD bound to ACE2 (PDB ID: 6M0J). Key elements of spike are colored as follows: RBD (white), S1-NTD (gray), and S2 (light blue). All 21 modeled nanobody footprints are colored gold on full spike with the ACE2 footprint (RBM) colored green. Full coverage of the 18 anti-RBD modeled nanobody footprints on RBD is seen in four different orientations. All 21 nanobodies are categorized into 10 groups based on their footprint on spike where groups 1–7 are anti-RBD nanobodies; group 8 contains an anti-S1-NTD nanobody and groups 9 and 10 contain anti-S2 nanobodies. (B) Heatmap of neutralizing epitopes on the structure of SARS-CoV-2 full spike (PDB ID: 6VYB). Epitopes are colored from pale yellow (epitopes with weak neutralization against SARS-CoV-2) to dark red (strong neutralization against SARS-CoV-2).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Mapped on to the structure of SARS-CoV-2 spike trimer in complex with one ACE2 molecule (PDB ID: 7KNB, used for all SARS-CoV-2 spike trimer representations) is the position of neutralization-resistant amino acid substitutions (in red), also known as ‘escape mutants’ that were generated in response to cultivation of rVSV/SARS-CoV-2/GFP in the presence of each nanobody, and were subsequently shown to confer resistance to the same nanobody. (B) Structure of the SARS-CoV-2 RBD (PDB ID: 6M0J) showing the positions of amino acid residues (in green) that form the ACE2 binding site, for reference. (C) Structure of the SARS-CoV-2 RBD (PDB ID: 6M0J) showing the positions (in red) of the location of substitutions that confer resistance for each nanobody tested in two orientations 90° apart. For structure pairs of S1-RBD-16 and S1-RBD-23 escape mutants, the rotation is 90° from the structure to the left in the pair. (D) The location of four key non-RBD escape mutants S172G, Y170H, T315I, and S982R resulting from assays performed with the anti-S1 non-RBDs S1-49, S1-3, S1-30, and anti-S2 (S2-10) nanobodies, respectively. (E) Infectious rVSV/SARS-CoV-2/GFP yield (IU/ml) following two passages in the presence of the indicated individual nanobodies or nanobody combinations, at 100 IC50 of the individual nanobodies, or 50 IC50 of each of the nanobodies in the combinations. Each data point represents an independent titer measurement. Red open circles represent virus escapes while blue circles represent nanobody combinations for which no escapes (titer = 0) were detected. The location of two escape mutants K378Q (F) and Y508H (G) mapped onto SARS-CoV-2 spike trimer for the two corresponding nanobodies S1-RBD-9 and S1-RBD-15, respectively, revealing an exposed putative nanobody binding site on RBD when in the ‘up’ position that is hidden when RBD is in the ‘down’ position. (H) A close-up of escape mutant S172G on each monomer of SARS-CoV-2 spike trimer revealing a larger crevice between the NTD of spike S1 and RBD when the RBD is in the ‘down’ position compared to the ‘up’ position. (I) Three orientations of SARS-CoV-2 spike trimer revealing the position in all three orientations of escape mutant S982R revealing the putative binding site for nanobody S2-10 is accessible regardless of whether the RBD is the ‘up’ or ‘down’ position.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** IMP modeling was done using the 6M0J.E structure of the RBD (residues 333–526), which was subsequently aligned with the corresponding region of the down RBD from 7N9B.A, to compare the modeled and experimental binary complexes. (A) and (B) show the binding modes and the epitopes on the whole spike while (C) and (D) focus on just the 333–526 region of the RBD. Based on the observation that the point mutation E484K/Q significantly inhibits Nb21 binding (Sun et al., 2021), we treat E484 as an effective escape mutant for Nb21 to benchmark our computational model developed in IMP. Both the epitope (defined as all RBD residues within 6 Å of any Nb21 residue) and the binding mode (i.e., relative orientation) of Nb21 agree between the IMP model and the cryo-EM structure to within 2.1 Å backbone RMSD.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Color-coded and mapped on the structure of SARS-CoV-2 spike trimer with one RBD in the ‘up’ conformation (PDB ID: 7BNN) are the footprints of eight nanobody groups determined, which are mapped relative to the mutations found on four key SARS-CoV-2 VOC. Summarized are the nanobodies that make up each group and where applicable their degree of neutralization. The nanobody footprints are taken from the integrative modeling of these nanobodies on SARS-CoV-2 spike trimer (see Figure 6). (B) Neutralization of authentic SARS-CoV-2 isolate WA-1 and an isolate of the delta variant of concern (B.1.617.2) in a plaque reduction neutralization test assay. Serial dilutions of S1-1 and S1-RBD-35 were incubated with each SARS-CoV-2 variant for 60 min and then overlaid on a monolayer of Vero E6 cells and incubated for 90 min. Following infection, the cell cultures incubated for 48 hr before the number of visualized plaques were counted to determine the half maximal inhibitory concentration of each nanobody.
 
 Our RBD-binding nanobodies fall into at least seven groups (Figure 6A). Many of our mapped nanobodies bind epitopes that partially overlap with previously defined classes of IgG-binding epitopes, but are more compact due to the smaller nanobody paratopes (Corti et al., 2021; Barnes et al., 2020; Xu et al., 2021); however, many others define previously unreported binding sites. Overlapping with the RBM are groups 3 (S1-48, S1-RBD-40, S1-23, S1-37, S1-36) and 4 (S1-RBD-29, S1-RBD-21, S1-62); group 3 partially overlaps with previously defined site Ia/class I and group 4 partially overlaps with site Ib/class 2; however, S1-48 uniquely extends beyond the site Ia/class 1 sitting in the saddle of the RBM. Moving further out from the RBM, group 5 (S1-RBD-16 and S1-RBD-23) binds adjacent to the RBM (on the right of the RBD in Figure 6) and partially overlaps with site IV/class 3. Group 1 (S1-RBD-15, S1-1, S1-RBD-22, S1-RBD-24, S1-RBD-9) overlaps with site IIa/class 4 and partially overlaps with the opposite side of the RBM as groups 3 and 4. This site appears to be a common nanobody epitope and is shared by VHH-U, VHH-V, and WNb 10 (Koenig et al., 2021; Pymm et al., 2021). However, a number of our nanobodies map to epitopes that appear distinct from those previously described: group 6 is represented by a single nanobody (S1-RBD-35) and also binds the RBM at a site partially overlapping with site Ib/class 2 (Corti et al., 2021; Tortorici et al., 2020; Dejnirattisai et al., 2021), but is distinguished by its binding to the tip of the RBM at the left of this representation (Figure 6). S1-46 represents group 7 and defines a unique binding site, adjacent to site IIc/class 4, but higher on the RBD and closer to the RBM. Adjacent and to the right of group 1 is a unique binding site we define as group 2, represented by S1-6. Outside of the RBD, group 8 (represented by S1-49), like many IgGs, binds to the NTD of spike (McCallum et al., 2021). However, groups 9 (S2-10) and 10 (S2-40) are unique in binding to S2, with S2-10 binding to a region proximal to spike’s heptad repeat 1 and S2-40 binding to a cleft between subunits on the stalk of S2 (Wrapp et al., 2020b; Walls et al., 2020). Of the 10 groups into which our nanobodies were classified, 7 (groups 1, 2, 5, and 7 targeting RBD; group 8 targeting the S1-NTD; groups 9 and 10 targeting S2) do not overlap with the mutations that distinguish alpha, beta, gamma, and delta SARS-CoV-2 VOCs (Figure 6—figure supplement 3A). Thus, to further validate our predictions for delta virus we tested two nanobodies against the virus in a plaque reduction neutralization assay. As predicted, the group 1 nanobody S1-1 effectively neutralized delta, whereas the group 6 nanobody S1-RBD-35 did not (Figure 6—figure supplement 3B). This confirms the potency of our repertoire against key VOC and underscoring the importance of generating large, diverse nanobody repertoires as presented here.
 
-## Multiple modes of nanobody binding and neutralization
+### Multiple modes of nanobody binding and neutralization
 
 A subset of the 21 modeled nanobodies bind sites that interfere with ACE2 binding, preventing the virus from initial binding to its host cell (Wrapp et al., 2020b; Walls et al., 2020; Starr et al., 2020). Even here, more than one mechanism of inhibition can exist. The RBD is tethered to spike through a hinge, allowing it to fluctuate between either a ‘down’ conformation, hiding the vulnerable RBM from the host immune system, or an ‘up’ conformation, exposing the RBM for potential ACE2 binding and so spike activation/disassembly (Corti et al., 2021; Cai et al., 2020). Group 1, with overlapping and adjacent epitopes to the RBM, should only bind to the RBD when it is in the ‘up’ conformation (Figure 6). In contrast, groups 3, 4, and 6 also have overlapping and adjacent epitopes to the RBM, but appear agnostic to RBD conformation and may bind to both ‘up’ and ‘down’ positions of the RBD. For nanobodies whose epitopes actually overlap significantly with the RBM (e.g., S1-48, S1-62, S1-RBD-15, or S1-RBD-35) (Figure 6), neutralization may occur by directly competing with ACE2 and preventing its binding. For nanobodies within these groups with epitopes more adjacent to the RBM (e.g., S1-36, S1-1, or S1-RBD-9), neutralization may occur through sterically occluding ACE2 binding. However, interestingly, several nanobodies sharing similar epitope bins as S1-RBD-9 (group 1), such as S1-RBD-34, S1-RBD-19, S1-RBD-25, S1-RBD-32, and S1-RBD-36, do not neutralize spike (Table 1), suggesting that neutralization may occur via an additional mechanism. Alternatively, different nanobodies can engage a shared epitope with different binding orientations that may or may not hinder ACE2 binding. Additionally, the binding of nanobodies in groups 1, 3, 4, and 6 may mimic ACE2 binding, thus trapping the RBD in its ‘up’ position to either catalyze the spike trimer rearrangements that prematurely convert spike into a post-fusion state, suppressing viral fusion, or destabilizing the trimer to cause its premature disassembly (Huo et al., 2020b; Walls et al., 2019; Liu et al., 2020a; Turoňová et al., 2020; Benton et al., 2020; Cai et al., 2020; Koenig et al., 2021).
 
@@ -152,13 +2876,199 @@ The S2 domain is also a prime, but largely unexplored, therapeutic target (Elsha
 
 Nanobodies, as monomeric proteins, can provide a unique opportunity to define possible mechanisms of activity that may otherwise be difficult to distinguish. For example, the dimeric nature of conventional antibodies can introduce ambiguities regarding the mechanisms of neutralization because they can operate either as individual or pairwise binders. In the latter case, they may operate, for example, by aggregation (Thomas et al., 1986), increased avidity, enhanced steric hindrance via the larger binding entity, or by simultaneously binding and locking two separate moieties within a viral particle. In some cases, for example, S1-7 and S1-25 (which are non-neutralizing as monomers), dimerization did not convert them into neutralizers. In other cases, dimerization and trimerization can engender several folds to orders of magnitude increased neutralization potency (e.g., S1-RBD-35 and S1-23, respectively) (Figure 4, Table 4). We even have a curious case where a nanobody such as S2-7 that is essentially non-neutralizing as a monomer becomes strongly neutralizing upon dimerization (Figure 4). In this latter case, aggregation is a possible contributory mechanism, both between virions – which would lower effective virion concentration – or within a virion, with adjacent spike trimers being cross-linked to each other, inhibiting their function. Although a tremendous range in neutralization improvements by oligomerization is observed both by us and others, there is likely a limit to how much improvement can be induced by oligomerization as, for example, the trimers of S1-23 and S1-RBD-35 do not show a similar fold improvement as to what was observed for the monomer to dimer transition (Figure 4D, Table 4; Schoof et al., 2020; Xiang et al., 2020; Koenig et al., 2021; Xu et al., 2021; Ma et al., 2021).
 
-## Synergistic activity with nanobody combinations
+### Synergistic activity with nanobody combinations
 
 Drugs are often combined to improve single-agent therapies and dramatically enhance the therapeutic potential of either drug alone while reducing the drug concentrations to be administered. Synergy occurs when the combination of drugs has a greater effect than the sum of the individual effects of each drug. For example, tixagevimab and cilgavimab, two human monoclonal antibodies that target non-overlapping regions of the RBD, function synergistically and show promise as prophylactic and therapeutic agents against COVID-19 (Dong et al., 2020; Zost et al., 2020).
 
 A major advantage of a large repertoire of nanobodies that bind to different epitopes on spike is their strong potential for cooperative activity among nanobody pairs (or higher-order combinations), leading to synergistic viral-neutralizing effects. The small size of nanobodies also provides a great advantage over much larger immunoglobulins in this context as the binding of a nanobody has a lower chance of sterically occluding the binding of a second nanobody to a distinct epitope and because they are monovalent. Moreover, as discussed above, nanobodies binding to the RBD may stabilize the otherwise ‘up’-‘down’ fluctuating RBD in its ‘up,’ ACE2-engaging, position (Figure 6; Xiang et al., 2020; Schoof et al., 2020; Bracken et al., 2021). This can have three effects, all of which can potentially promote nanobody synergy: first, it will increase the effective on rate for spike trimer to that measured for monomer, and therefore, make it easier for complementary nanobodies to bind and inhibit; second, by stabilizing this ‘up’ for any one of the three RBDs in each spike trimer, it destabilizes the ‘down’ position for the remaining two RBDs, again making nanobody binding from the second class more likely; and third, the ‘up’ position exposes additional nanobody epitopes that would otherwise be buried (Figure 6; Xiang et al., 2020; Sun et al., 2021).
 
 Using an automated platform, we titrated pairwise combinations of nanobodies in a 2D dilution format and measured their IC50s in the pseudovirus assay. IC50s were modeled using a multifaceted synergy framework (Wooten et al., 2021), including a parameterized version of the equivalent dose model (Zimmer et al., 2016), the Bivariate Response to Additive Interacting Doses (BRAID) model (Twarog et al., 2016), and the multidimensional synergy of combinations (MuSyC) model, which models a two-dimensional (2D) Hill equation and extends it to a 2D surface plot (Meyer et al., 2019). Synergy is evidenced by the parameters of the respective models (Table 9). To select nanobody pairs to test for synergy, we took advantage of epitope mapping, structural data, and biophysical characterization. We tested pairwise combinations of nanobodies that bind to similar epitopes, to different epitopes on RBD, and to regions outside and within the RBD (Figure 7, Figure 7—figure supplement 1, Table 9). Based on our structural mapping (Figure 6), we were able to infer some of the major molecular mechanisms by which these synergistic effects may occur.
+
+**Table 9.**
+ Nanobody synergy of neutralization activity; related to Figure 7.Parameters from modeling the synergy observed for the indicated nanobody pairs. Multidimensional synergy of combinations (MuSyC), equivalent dose, and Bivariate Response to Additive Interacting Doses (BRAID) models were used to determine if statistically significant synergy was evident from the neutralization response in a 2D grid of nanobody concentrations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>First nanobody</th>
+      <th>Second nanobody</th>
+      <th>(Nanobody #1) experimental range</th>
+      <th>(Nanobody #2) experimental range</th>
+      <th>h1</th>
+      <th>h2</th>
+      <th>C1 (nM)</th>
+      <th>C2 (nM)</th>
+      <th>alpha12</th>
+      <th>alpha21</th>
+      <th>a12</th>
+      <th>a21</th>
+      <th>Kappa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>S1-23</td>
+      <td>S1-27</td>
+      <td>4.1 pM to 717 nM, 0 µM</td>
+      <td>3.4 pM to 600 nM, 0 µM</td>
+      <td>1.80</td>
+      <td>1.46</td>
+      <td>25.0</td>
+      <td>20.0</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s.</td>
+      <td>n.s</td>
+    </tr>
+    <tr>
+      <td>S1-1</td>
+      <td>S1-23</td>
+      <td>2.2 pM to 387 nM, 0 µM</td>
+      <td>4.1 pM to 717 nM, 0 µM</td>
+      <td>0.93</td>
+      <td>1.51</td>
+      <td>4.2</td>
+      <td>18.6</td>
+      <td>21.4</td>
+      <td>31.8</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>S1-23</td>
+      <td>3 pM -to 527 nM, 0 µM</td>
+      <td>4.1 pM to 717 nM, 0 µM</td>
+      <td>1.32</td>
+      <td>1.42</td>
+      <td>3.7</td>
+      <td>10.3</td>
+      <td>300.0</td>
+      <td>10.2</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>S1-RBD-23</td>
+      <td>3 pM to 527 nM, 0 µM</td>
+      <td>1.8 pM to 325 nM, 0 µM</td>
+      <td>1.44</td>
+      <td>1.00</td>
+      <td>4.4</td>
+      <td>7.9</td>
+      <td>523</td>
+      <td>2.9</td>
+      <td>Synergy</td>
+      <td>n.s.</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>S1-46</td>
+      <td>4.1 pM to 717 nM, 0 µM</td>
+      <td>7.55 pM to 1.34 µM, 0 µM</td>
+      <td>1.76</td>
+      <td>0.75</td>
+      <td>3.3</td>
+      <td>273.0</td>
+      <td>50.1</td>
+      <td>1.0</td>
+      <td>Synergy</td>
+      <td>Antagonism</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>S1-46</td>
+      <td>39.7 pM to 7.04 µM, 0 µM</td>
+      <td>7.55 pM to 1.34 µM, 0 µM</td>
+      <td>1.10</td>
+      <td>0.75</td>
+      <td>4.9</td>
+      <td>164</td>
+      <td>10.7</td>
+      <td>0.9</td>
+      <td>Synergy</td>
+      <td>Antagonism</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-23</td>
+      <td>S2-10-dimer</td>
+      <td>4.1 pM to 717 nM, 0 µM</td>
+      <td>5.1 pM to 897 nM, 0 µM</td>
+      <td>1.48</td>
+      <td>1.14</td>
+      <td>5.4</td>
+      <td>45.4</td>
+      <td>4232.0</td>
+      <td>2.8</td>
+      <td>Synergy</td>
+      <td>n.s.</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>S1-1</td>
+      <td>2.1 pM to 367 nM, 0 µM</td>
+      <td>2.2 pM to 387 nM, 0 µM</td>
+      <td>0.77</td>
+      <td>1.62</td>
+      <td>152.0</td>
+      <td>1.7</td>
+      <td>1,147</td>
+      <td>18.1</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-49</td>
+      <td>S1-RBD-15</td>
+      <td>2.1 pM to 367 nM, 0 µM</td>
+      <td>39.7 pM to 7.04 µM, 0 µM</td>
+      <td>0.85</td>
+      <td>1.20</td>
+      <td>629.0</td>
+      <td>2.2</td>
+      <td>243.5</td>
+      <td>20.3</td>
+      <td>n.s.</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+    </tr>
+    <tr>
+      <td>S1-RBD-15</td>
+      <td>S2-10-dimer</td>
+      <td>3 pM to 527 nM, 0 µM</td>
+      <td>5.1 pM to 897 nM, 0 µM</td>
+      <td>1.57</td>
+      <td>1.00</td>
+      <td>1.9</td>
+      <td>56</td>
+      <td>4,110</td>
+      <td>2.2</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+      <td>Synergy</td>
+    </tr>
+  </tbody>
+</table>
+
+_n.s., not significant; h1, h2, Hill slope; C1, C2, IC50 (nM);alpha12, alpha21, synergistic/antagonistic fold change of potency from MuSyC model; a12, a21, equivalent dose model synergy/antagonism; kappa, BRAID model synergy/antagonism._
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig7-v1.jpg)
+
+**Figure 7.:** (A) An example of additive effects between two anti-SARS-CoV-2 spike nanobodies. S1-23 and S1-27 were prepared in a two-dimensional serial dilution matrix and then incubated with SARS-CoV-2 pseudovirus for 1 hr before adding the mixture to cells. After 56 hr, the expression of luciferase in each well was measured by addition of Steady-Glo reagent and read out on a spectrophotometer. The left panel shows a heatmap of pseudovirus neutralization by a two-dimensional serial dilution of combinations of S1-23 and S1-27. Lines and red numbers demarcate the % inhibition, that is, inhibitory concentration where X% of the virus is neutralized, e.g., IC50. Dark blue regions are concentrations that potently neutralize the pseudovirus, as per the heatmap legend. The right panel shows neutralization curves (with 90% confidence interval bands) and the calculated IC50 of each nanobody alone, or in a 1:1 combination was determined along with a calculated IC50 based on the theoretical additive mixture model of the pair (curve with dotted gray line). The inset shows a difference (synergy) map calculated as the difference between the parameterized 2D neutralization response and that expected in a null model of only additive effects. Here, no difference is observed. (B) S1-1 synergizes with S1-23 in neutralizing SARS-CoV-2 pseudovirus. The left panel shows the heatmap of pseudovirus neutralization observed by a two-dimensional serial dilution of combinations of S1-1 and S1-23. The middle panel shows a heatmap mapping the synergy of neutralization observed for this pair. The lines bounding the darker purple areas demarcate regions in the heatmap where the observed neutralization is greater than additive by the indicated percentages (yellow numbers), as per the heatmap legend. The right panel shows two representations of spike with the accessible S1-1 (salmon) and S1-23 (steel blue) epitopes (PDB ID: 6VYB). (C–J) Examples of synergy between nanobodies binding the S1-RBD, or between the S1-RBD and S1-NTD or S2 domains of spike. The layout is as found in (B), but comparing S1-RBD-15 with S1-23 (C), S1-RBD-15 with S1-RBD-23 (D), S1-23 with S1-46 (E), S1-RBD-15 with S1-46 (F), S1-49 with S1-1 (G), S1-49 with S1-RBD-15 (H), S1-23 with S2-10-dimer (I), and S1-RBD-15 with S2-10-dimer (J).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73027/elife-73027-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Neutralization of pseudovirus harboring the SARS-CoV-2 spike by pairs of nanobodies. The normalized % neutralization is visualized on a 2D grid of nanobody concentrations where each nanobody has been titrated in the background of the other tested nanobody. Nanobody concentrations are indicated on their respective axes for (A) S1-23 and S1-27, (B) S1-23 and S1-1, (C) S1-RBD-15 and S1-23, (D) S1-RBD-15 and S1-RBD-23, (E) S1-23 and S1-46, (F) S1-RBD-15 and S1-46, (G) S1-49 and S1-1, (H) S1-49 and S1-RBD-15, (I) S1-23 and S2-10-dimer, and (J) S1-RBD-15 and S2-10-dimer.
 
 Combinations of S1-27 and S1-23 showed simple additive effects (Figure 7A). These nanobodies belong to the same epitope bin (Figure 3A); their additive effect is as expected for two nanobodies accessing the same site on S1-RBD, but, for example, in equal concentrations, effectively doubling the concentration of a single nanobody. The potential for synergy resides instead in nanobodies that bind to different epitopes and can bind to spike monomers simultaneously. We therefore tested combinations that bind to different epitopes, first focusing on the RBD. Indeed, powerfully synergistic effects were observed between numerous nanobody pairs. For example, the combination of S1-23 and S1-1, which bind to opposite sides of the RBD, dramatically increased the potency of both nanobodies by ~32- and ~ 21-fold, respectively (Figure 7B, Table 9). S1-1 is expected to bind to RBD in its ‘up’ position, while S1-23 can bind to both ‘up’ and ‘down’ RBDs. We interpret this reciprocal synergy observed as S1-23 promoting the ‘up’ position and S1-1 stabilizing the ‘up’ position. S1-RBD-15, which binds to a similar epitope as S1-1, shows corresponding synergy with S1-23, suggesting that synergy may be predictable based on epitope mapping (Figure 7C). In this case, however, S1-RBD-15 had a greater influence on S1-23, promoting its potency by ~300-fold. S1-RBD-15 showed a comparable synergy profile against S1-RBD-23, which binds to the opposite side of the RBD, and adjacent to the site occupied by S1-23 (Figures 3A, 6A and 7D). The synergy profiles observed by these pairs of nanobodies highlight how stabilizing the RBD in the ‘up’ position can have a dramatic effect on their ability to neutralize spike activity. However, it should not be taken for granted that simply binding to distinct epitopes on RBD simultaneously will always be sufficient to generate a strongly synergistic response. For example, S1-46 failed to show synergy with either S1-23 or S1-RBD-15 (Figure 7E and F). Indeed, synergy modeling indicates that S1-46 actually mildly antagonizes both S1-23 and S1-RBD-15 (Table 9). S1-46 binds an epitope on RBD only in the ‘up’ position (Figure 6), but in this case binding hinders the movement of adjacent RBDs, and therefore reduces the activity of nanobodies depending on the dynamics of adjacent RBDs.
 
@@ -168,31 +3078,31 @@ We also tested for synergy between nanobodies targeting the S1-RBD and S2, which
 
 Our repeated observation of strong synergistic effects between nanobodies is especially noteworthy, reflecting the unique properties of nanobodies such as their small size that are not shared by, for example, human monoclonal antibodies. For example, we structurally aligned human IgGs with the S1-23 and S1-1 paratopes and found the same binding characteristics would not be predicted to act synergistically because they could not bind the same monomer simultaneously as they would clash with other RBDs on the spike trimer. In the case of S1-23 and S1-RBD-15 epitopes, structural alignment of IgGs with nanobody paratopes suggested a strong inter-IgG steric clash in addition to a clash with other RBDs in the down position. While native nanobodies’ small size and lack of an Fc domain affect their pharmacokinetic behavior in comparison to standard IgGs when used therapeutically, numerous studies have demonstrated that various modifications, such as albumin-binding domains or a synthetic Fc, are available to tune half-life and other behaviors upon either intravenous or intranasal delivery (Tijink et al., 2008; Nambulli et al., 2021; Pymm et al., 2021; Shen et al., 2021).
 
-## Perspectives
+### Perspectives
 
 The data presented here demonstrate the power of raising large and diverse repertoires of nanobodies against the entire ectodomain of SARS-CoV-2 spike to maximize the likelihood of generating potent reagents for prophylactics and therapeutics. Moreover, several neutralizing nanobodies in our current repertoire are, or are predicted to be, effective against current circulating variants (Figure 6—figure supplement 3). However, our escape experiments support the idea that the current circulating variants are not yet necessarily exploring the full potential of the virus to escape our current and emerging therapeutic arsenals, and that even if antibodies or nanobodies are resistant to the current variants, they will not necessarily be resistant to variants as they continually emerge. To counteract this eventuality, we show that judicious choice of nanobody combinations that can synergize and have orthogonal and complementary neutralization mechanisms have the potential to result in potent and broadly neutralizing reagents that are resistant to viral escape. Collectively, this unique and readily modifiable repertoire has the potential to complement vaccines, drugs and single epitope reagents, and guard against single-molecule failure in human trials even in the face of emerging variants. Most urgently, it paves the way to develop therapeutics for hospitalized patients with acute disease, and address the unmet needs of patients in the developing world, many of which will not see a COVID-19 vaccine before 2023 (Padma, 2021).
 
 ## Materials and methods
 
-## Key resources table
+### Key resources table
 
-## Summary of key improvements to nanobody generation pipeline
+### Summary of key improvements to nanobody generation pipeline
 
 To maximize the purity of the serum HCAb sample, we explored different binding conditions to select for the tightest VHH binders – a key step not generally available to display panning methods (Fridy et al., 2014). We also used an additional HCAb purification step to deplete VH IgG by incubation with immobilized Protein M, a mycoplasma protein specific for IgG light chain (Grover et al., 2014). To further enrich the VHH sample for MS analysis and remove Fc, we performed a digest with IdeS, a protease that cleaves the VHH domain from the HCAb with higher specificity than conventionally used papain (von Pawel-Rammingen et al., 2002). Greater peptide coverage for LC-MS was attained by using complementary digestion with trypsin and chymotrypsin (Xiang et al., 2021), augmented by partial SDS-PAGE gel-based separation of different VHHs to reduce the VHH complexity and to give more complete peptide coverage and candidate selection. We redesigned PCR primers to maximize coverage of VHH sequences for our cDNA libraries. Also, to increase the reliability of the library, singletons were not considered as candidates and priority was given to sequences with high counts. Finally, we refined our Llama-Magic software package (Fridy et al., 2014) to include improved scoring functions, weighting the length, uniqueness, and quality of the MS data especially for complementarity-determining regions. This optimized protocol allowed us to identify 374 unique CDR3 sequences (from 847 unique VHH candidates). Details are provided below.
 
-## Antigens
+### Antigens
 
 Recombinant Fc-tagged SARS-CoV-2 spike S1 and S2 proteins purified from HEK293 cells were used for llama immunization (The Native Antigen Company; REC31806 and REC31807). For affinity isolation, binding screens, SPR analysis, and MP, recombinant spike S1-His, untagged RBD, or S2-His proteins expressed in HEK293 (S1 and RBD), or insect cells (S2) were used (Sino Biological; 40591-V08H, 40592-VNAH, and 40590-V08B). Native mass spectrometry (Olinares et al., 2016; Olinares et al., 2021) was used to confirm the quality of these proteins and determine their glycosylation state, with S1 and S2 observed to be heavily glycosylated (at least 10 kDa of attached glycans). RBD was observed to be monomeric, S1-His likely monomeric, and S2-His, a mix of monomer and trimer.
 
-## Immunization and isolation of VHH antibody fractions
+### Immunization and isolation of VHH antibody fractions
 
 We used a pre-screening protocol to select llamas with naturally strong immune responses, as determined by activity against standard animal vaccines (Thompson et al., 2016). Two llamas, Marley (9-year-old male) and Rocky (5-year-old male), were immunized with recombinant SARS-CoV-2 spike S1 and SARS-CoV-2 spike S2 expressed in HEK293 cells as Fc fusion proteins. Llamas were injected subcutaneously with 0.25 mg of each antigen with CFA, then boosted with the same amounts with IFA at intervals of 14, 7, 21, and 10 days. Serum bleeds and bone marrow aspirates were obtained 9 days after the final injection. From the production serum bleeds, HCAb fractions of IgG were obtained by purification with immobilized Protein A and Protein G as previously described (Fridy et al., 2014). Residual light-chain-containing IgG was removed from this fraction by incubating with 25 µl of 10 mg/ml Protein M-Sepharose per mg of HCAb (Grover et al., 2014). After a 30 min incubation, the HCAb flow-through was collected. 12 mg of this HCAb fraction was then incubated with Sepharose-conjugated recombinant SARS-CoV-2 spike S1-His, RBD, or S2-His protein. This resin was washed with (1) 20 mM sodium phosphate, pH 7.4 + 500 mM NaCl; (2) 2 M MgCl2 in 20 mM Tris, pH 7.5; (3) PBS + 0.5 % Triton X-100; and (4) PBS. The resin was then resuspended in a 200 μl solution of 2 U/µl IdeS enzyme (Genovis) in PBS and digested for 3.5 hr at 37°C on an orbital shaker. The resin was then washed with (1) PBS, (2) PBS plus 0.1% Tween-20, and (3) PBS. Bound protein was eluted by incubating 10 min at 72°C in 1× NuPAGE LDS sample buffer (Thermo Fisher). The samples were reduced with DTT and alkylated with iodoacetamide, then run on a 4–12% Bis-Tris gel. Bands at ~15 kDa and ~20 kDa corresponding to digested VHH region were then cut out and prepared for MS.
 
-## RT-PCR and DNA sequencing
+### RT-PCR and DNA sequencing
 
 Bone marrow aspirates were obtained from immunized llamas concurrent with production serum bleeds. Bone marrow plasma cells were isolated on a Ficoll gradient using Ficoll-Paque (Cytiva). RNA was isolated from approximately 3–4 × 107 cells using TRIzol reagent (Thermo Fisher), according to the manufacturer’s instructions. cDNA was synthesized using SuperScript IV reverse transcriptase (Thermo Fisher). A PCR was then performed with VHH IgG specific primers and Deep Vent polymerase (New England Biolabs). Forward primers 6N_CALL001 5′-NNNNNNGTCCTGGCTGCTCTTCTACAAGG-3′ and 6N_CALL001B 5′-NNNNNNGTCCTGGCTGCTCTTTTACAAGG-3′ target the leader sequence (Conrath et al., 2001) while reverse primers 6N_VHH_SH_rev 5′-NNNNNNCTGGGGTCTTCGCTGTGGTGC-3′ and 6N_VHH_LH_rev 5′-NNNNNNGTGGTTGTGGTTTTGGTGTCTTGGG-3′ target short and long hinge sequences at the 3′ side of VHH. Primers included six random bases (N) to aid cluster identification. The approximately 350–450 bp product of this reaction was gel purified, then ligated to Illumina adaptors before library preparation using Illumina kits, before MiSeq sequencing using two 300 bp paired end reads.
 
-## Identification of nanobodies by mass spectrometry
+### Identification of nanobodies by mass spectrometry
 
 Trypsin (Roche) or chymotrypsin (Promega) solution was added to previously reduced, alkylated, diced, destained, and dehydrated gel pieces at ~1:4–3:1 enzyme to substrate mass ratios. Gel pieces were allowed to rehydrate with enzyme solution for 10 min on ice. 45 μl of digestion buffer (trypsin: 50 mM ammonium bicarbonate, 10% acetonitrile; chymotrypsin: 100 mM Tris pH 7.8, 10 mM CaCl2) were then added, and samples were incubated for 6 hr at 37°C (trypsin) or 25°C (chymotrypsin). Supernatant was then removed from gel pieces and transferred to a new tube. 150 μl of a 1.67% FA, 67% ACN, 0.05% TFA solution were added to gel pieces, and shaken at 4°C for ~6 hr. Supernatant was removed from gel pieces, transferred to the tube with previous supernatant, and evaporated in a speedvac until dry. Samples were resuspended in 5% formic acid, 0.1% TFA, and cleaned on StageTips (Rappsilber, 2012).
 
@@ -200,31 +3110,31 @@ Samples were analyzed with a nano-LC 1200 (Thermo Fisher) using an EASYspray Pep
 
 The initial identification of nanobody sequences was performed as described (Fridy et al., 2014) using the program Llama-Magic (https://github.com/FenyoLab/llama-magic) with a few added features (including being able to deal with chymotryptic proteolysis and to rank VHHs by corresponding read counts in high-throughput sequencing data), where 23 MS datasets (concatenated from all MS acquisition data according to antigens, animal individuals, gel band positions and proteases) were independently searched. The results were filtered with criteria including read counts, uniqueness score, and quality and coverage of MS/MS fragments to generate a collection of high-confidence nanobody sequences. A CDR3 network graph was created by connecting nodes (unique high-confidence CDR3 sequences) by edges where a CDR3 pair has a Damerau–Levenshtein distance of no more than three by using NetworkX 2.5 (https://networkx.org) and pyxDamerauLevenshtein (https://github.com/gfairchild/pyxDamerauLevenshtein; Fairchild, 2013). The diversity of nanobodies for screening was maximized by selecting CDR3 sequences from isolated components of the network graph, together with varying CDR3 lengths and animal individual origin.
 
-## Cloning and purification of nanobodies
+### Cloning and purification of nanobodies
 
 Nanobody sequences were codon-optimized for expression in Escherichia coli and synthesized as gene fragments (IDT), incorporating BamHI and XhoI restriction sites at 5′ and 3′ ends, respectively. Nanobody sequences were then subcloned into pET21-pelB using BamHI and XhoI restriction sites as previously described (Fridy et al., 2014). pelB-fused nanobodies were expressed and purified using Arctic Express (DE3) cells (Agilent) as previously described using TALON metal affinity resin (Takara) (Fridy et al., 2014).
 
 Nanobodies to be oligomerized were ordered from IDT as minigenes incorporating at the 5′ end a SalI site followed by codon optimized sequence for the linker GGGGSGGGGSGGGGSGGGGS upstream of the start codon of the nanobody cDNA, and at the 3′ end of the nanobody the coding sequence a XhoI site was added. The minigene was cut with SalI and XhoI, the linker-nanobody insert was gel purified and ligated with the XhoI linearized recipient nanobody expression vector (pET21-pelB + nanobody). Restriction digests and sequencing was performed to identify two (dimer) and three (trimer) oligomers.
 
-## Nanobody screening
+### Nanobody screening
 
 To validate nanobody candidates, pelB-fused nanobodies were expressed in 50 ml cultures of Arctic Express (DE3) cells, and the periplasmic fractions were isolated by osmotic shock as previously described (Fridy et al., 2014). Spike S1-His, RBD, or S2-His proteins (Sino Biological 40591-V08H, 40592-VNAH, and 40590-V08B) were conjugated to cyanogen bromide-activated Sepharose 4 Fast Flow resin (Cytiva) according to the manufacturer’s instructions using 100 µg protein per mg of resin. Periplasm was incubated with 15 µl of the corresponding antigen-conjugated Sepharose for 30 min while rotating at room temperature (RT). The resin was then transferred to a spin column and washed twice with buffer TBT-100 (20 mM HEPES pH 7.4, 100 mM NaCl, 110 mM KOAc, 2 mM MgCl2, 0.1% Tween 20). Bound protein was eluted with 1.2× NuPAGE LDS sample buffer (Thermo Fisher) for 10 min at 72°C, then reduced with 50 mM DTT (10 min at 72°C). Input and elution samples were separated by SDS-PAGE, and Coomassie-stained bands were quantified using ImageJ software.
 
-## Surface plasmon resonance
+### Surface plasmon resonance
 
 KDs were determined via SPR experiments. Measurements were either taken on a Proteon XPR36 Protein Interaction Array System (Bio-Rad) or a Biacore 8k (Cytiva). Recombinant spike S1, RBD, and spike S2 were immobilized at 5 µg/ml, 5 µg/ml, and 12.5 µg/ml, respectively, using the ProteOn Amine Coupling Kit (EDC/NHS coupling chemistry, Bio-Rad) according to the respective manufacturer’s guidelines either on a ProteOn GLC sensor chip or a Series S CM5 sensor chip. All purified nanobodies in a final buffer containing 20 mM HEPES pH 7.4, 150 mM NaCl, 0.02% Tween, were prepared in 5–8 concentrations. For experiments performed on the Proteon XPR36, protein was then injected at 50 μl/min for 120 s, followed by a dissociation time of 600 s. Residual bound proteins were removed by regenerating the chip surface using glycine pH 3 + 1 M MgCl2. Data were processed and analyzed using the ProteOn Manager software. For experiments performed on the Biacore 8k, protein was injected at 60 μl/min for 120 s, followed by a dissociation time of either 1200 s or 2400s. Residual bound proteins were removed by regenerating the chip surface using glycine pH 2.5 + 1 M MgCl2. Data were processed and analyzed using the Biacore Insight Evaluation software.
 
-## Differential scanning fluorimetry
+### Differential scanning fluorimetry
 
 Nanobody melting temperatures (Tm) were measured by DSF using a CFX96 Real‐Time PCR Detection System (Bio‐Rad, Hercules, CA). A 96‐well thin‐wall hard-shell PCR plate (Bio‐Rad) was set up with each well containing 10–40 µM of protein in 20 mM HEPES, 150 mM NaCl buffer (pH 7.4), 5× SyproOrange Protein Gel Stain (Sigma-Aldrich). Fluorescence variation was measured from 25 to 95°C at a ramp rate of 0.5°C/5 s. Excitation was between 515 and 535 nm, and emission was monitored between 560 and 580 nm. Tm was the transition midpoint value, calculated using the manufacturer’s software (Niesen et al., 2007).
 
-## Lyophilization
+### Lyophilization
 
 Nanobodies in 20 mM HEPES, 150 mM NaCl, pH 7.4 at concentrations between 0.33 mg/ml and 0.63 mg/ml were snap-frozen in liquid nitrogen and dried in a speed-vac to replicate lyophilization conditions. Nanobodies were then reconstituted in ddH2O and characterized using SPR and DSF.
 
-## Epitope mapping of nanobodies
+### Epitope mapping of nanobodies
 
-## Biolayer interferometry for epitope binning anti-RBD nanobodies
+#### Biolayer interferometry for epitope binning anti-RBD nanobodies
 
 Epitope mapping studies were carried out using the Octet system (ForteBio, USA, version 7) that measures biolayer interferometry (BLI). All steps were performed at 30°C with shaking at 1300 rpm in a black 96-well plate containing 300 μl kinetics buffer (PBS; 0.2% BSA; 0.02% sodium azide) in each well. AMC-coated biosensors were loaded with mFc tagged RBD (Sino Biological) at 40 μg/ml to reach >1 nm wavelength shift following binding and washing. The sensors were then reacted for ~300 s with reference nanobodies and then transferred to kinetics buffer-containing wells for another 180 s. A new baseline was set, sensors were then reacted for 180 s with analyte nanobodies (association phase), and then transferred to buffer-containing wells for another 180 s (dissociation phase). Binding and dissociation were measured as changes over time in light interference after subtraction of parallel measurements from unloaded biosensors. Sensorgrams of analyte association/dissociation responses were analyzed using the Octet data analysis software 7.1 (Fortebio, USA, 2015). Analyte binding to mFc RBD was also measured in parallel to get response levels in the absence of the reference nanobodies.
 
@@ -232,65 +3142,65 @@ Octet response values were used to compute a Pearson’s correlation coefficient
 
 The undirected unweighted network graph of Octet response values was constructed by treating each nanobody as a node, adding an edge to each measured pair of different nanobodies, and setting the maximum response value of a nanobody pair as an attribute to the edge, by using NetworkX 2.5 (https://networkx.org). The least responses of pairwise nanobodies within all fully measured nanobody subsets were computed by iterating through all network cliques of size 2–14 by using NetworkX’s ‘find_cliques’ function, and taking the minimum value of edge attributes within each clique. Network coefficients (average shortest path length, average clustering coefficient, and small-world coefficient sigma) were computed using NetworkX’s ‘average_shortest_path_length,’ ‘average_clustering,’ and ‘sigma’ functions. Network visualization was created by using D3.js (https://d3js.org).
 
-## Mass photometry
+#### Mass photometry
 
 Select nanobodies were binned using MP. Experiments were performed on a Refeyn OneMP instrument (Refeyn Ltd). The instrument was calibrated with a mix of BSA (Sigma-Aldrich), thyroglobulin (Sigma-Aldrich), and beta-amylase (Sigma-Aldrich). Coverslips (Thorlabs) and gaskets (Grace Bio-Labs) were prepared by washing with 100% IPA followed by ddH2O, repeated three times, followed by drying with HEPA filtered air. 12 μl of buffer was added to each well to focus the instrument after which 8 μl of protein solution was added and pipetted up and down to briefly mix after which movies/frame acquisition was promptly started. The final concentration in each experiment of recombinant spike S1 monomer (Sino Biological) and each nanobody was 30 nM and between 25 and 40 nM, respectively. Movies were acquired for 60 s (6000 frames) using AcquireMP (version 2.3.0; Refeyn Ltd) using standard settings. All movies were processed, analyzed, and masses estimated by fitting a Gaussian distribution to the data using DiscoverMP (version 2.3.0; Refeyn Ltd).
 
-## Epitope mapping of anti-S2 and non-RBD anti-S1 nanobodies
+#### Epitope mapping of anti-S2 and non-RBD anti-S1 nanobodies
 
 SPR was utilized to perform epitope binning experiments using a Biacore 8k (Cytiva) supplemented with the Biacore Insight Epitope Binning Extension. All nanobodies’ concentrations were ≥20× the concentration of their KD for binning experiments, with the majority surpassing their KD by 50×. For non-RBD anti-S1 nanobodies, experiments were performed utilizing either the tandem method or dual-tandem method for epitope binning, whereas for anti-S2 nanobodies, only the tandem method was utilized. Series S CM5 sensor chips immobilized with spike S1 and spike S2 were used (see ‘Surface plasmon resonance’ section above for full details). For the tandem method, nanobody ‘1’ was injected at 10 μl/min for 240 s, followed by a brief wash, after which nanobody ‘2’ was injected at 10 μl/min for 240 s and dissociated for 30 s. Residual bound proteins were removed by washing the chip surface four times with 10 mM glycine pH 2 + 1 M MgCl2 at 60 μl/min for 60 s. For the dual-tandem method, nanobody ‘1’ was injected at 10 μl/min for 120 s, followed by nanobody ‘2,’ which was injected at 10 μl/min for 150 s and dissociated for 30 s. Residual bound proteins were removed by washing the chip surface three times with 10 mM glycine pH 2 + 1 M MgCl2 at 60 μl/min for 60 s. For the anti-S2 nanobody binning experiments, residual bound proteins were removed by washing the chip surface first with 0.1 M HCl at 60 μl/min for 60 s, followed by a second wash with 3 M MgCl2 at 60 μl/min for 60 s. Data were processed and analyzed using the Biacore Insight Evaluation software utilizing the Epitope Binning Extension.
 
-## Cell lines
+### Cell lines
 
 Vero E6 cells (ATCC) were cultured at 30°C in the presence of 5% CO2 in medium composed of high-glucose Dulbecco’s modified Eagle’s medium (DMEM, Gibco) supplemented with 5% (v/v) heat-inactivated fetal bovine serum (FBS) (VWR). TMPRSS expressing Vero E6 cells (gift from Rhea Coler) were cultured in DMEM supplemented with 5% (v/v) FBS and 1 mg/ml geneticin. 293T/17 and 293T-hACE2 (Cawford et al., 2020) cells (Life Technologies; Cat# R70007; RRID:CVCL_6911) were cultured in DMEM (Gibco) supplemented with 10% FBS, penicillin/streptomycin, 10 mM HEPES, and with 0.1 mM MEM non-essential amino acids (Thermo Fisher). All experiments were performed with cells passaged less than 15 times. The identities of cell lines were confirmed by chromosomal marker analysis and tested negative for mycoplasma using a MycoStrip (InvivoGen).
 
-## Production of SARS-CoV-1, SARS-CoV-2, and SARS-CoV-2 variant pseudotyped lentiviral reporter particles
+### Production of SARS-CoV-1, SARS-CoV-2, and SARS-CoV-2 variant pseudotyped lentiviral reporter particles
 
 Pseudovirus stocks were prepared using a modified protocol published by Cawford et al., 2020; Qing et al., 2020. Briefly, pseudovirus stocks were prepared by cotransfecting 4.75 µg pHAGE-CMV-Luc2-IRES-ZsGreen-W (BEI Cat # NR-52516) (Cawford et al., 2020), 3.75 µg psPAX and 1.5 µg spike containing plasmid using lipofectamine 3000 (Thermo Fisher). 4 × 106 cells were plated 16–24 hr prior to transfection. 60 hr post transfection, pseudovirus containing media was collected, cleared by centrifugation at 1000 × g, and filtered through a 0.45 µm syringe filter to clear debris. 1 ml aliquots were frozen at –80°C. Pseudovirus was titered by threefold serial dilution on 293T-hACE2 cells (Cawford et al., 2020), treated with 2 µg/ml polybrene (Sigma). Infected cells were processed between 52 and 60 hr by adding equal volume of Steady-Glo (Promega), and firefly luciferase signal was measured using the Biotek Model N4 with integration at 0.5 ms.
 
-## SARS-CoV-2 pseudovirus neutralization assay
+### SARS-CoV-2 pseudovirus neutralization assay
 
 All periplasmic purified nanobodies were treated with Triton X-114 to remove any residual endotoxins so as to not have endotoxins contribute to the effective neutralization (Aida and Pabst, 1990), and residual detergent was removed using Pierce Detergent Removal Resin according to the manufacturer’s instructions (Thermo Fisher). 293-hACE2 cells were plated at 2500–4000 cells per well on 384 solid white TC-treated plates. Threefold serially diluted nanobodies (10 dilutions in total) were incubated with 40,000–60,000 RLU equivalents of pseudotyped SARS-CoV-2-Luc for 1 hr at 37°C. Mock treatment and a sham treatment with LaM2 nanobodies (Fridy et al., 2014) that do not bind to spike were included as negative controls while untreated wells were used to monitor background levels. The nanobody-pseudovirus mixtures were then added in quadruplicate to 293T-hACE2 cells along with 2 µg/ml polybrene (Sigma). Cells were incubated at 37°C with 5% CO2. Infected cells were processed between 52 and 60 hr as described above. Data were processed using Prism 7 (GraphPad), using four-parameter nonlinear regression (least-squares regression method without weighting). All nanobodies were tested at least two times and with more than one pseudovirus preparation.
 
-## Nanobody synergy
+### Nanobody synergy
 
 Experiments were performed as per our pseudovirus neutralization assay. A robotic liquid handler was used to prepare 2D matrices of serial dilutions of two nanobodies and then mix these with SARS-CoV-2 pseudovirus for 1 hr. After incubation with the virus, the mixture was overlaid on a monolayer of 293-hACE2 cells and left to incubate for 56 hr. Luminescence was quantified as described above. Data were processed using synergy software (Wooten et al., 2021).
 
-## Structural analysis
+### Structural analysis
 
 Integrative structural modeling proceeded through the standard four-stage protocol (Russel et al., 2012; Kim et al., 2018; Rout and Sali, 2019; Saltzberg et al., 2021), which was scripted using the Python Modeling Interface package, a library for modeling macromolecular complexes based on the Integrative Modeling Platform software (Russel et al., 2012), version develop-31a0ad09b4 (https://integrativemodeling.org). Separate models were computed for rigid-receptor-rigid ligand-type binary docking of (1) 18 nanobodies (S1-RBD-[9,15,16,21,22,23,24,29,35,40] and S1-[1,6,23,36,37,46,48,62]) on a monomeric S1-RBD domain, (2) the S1-49 nanobody on a monomeric S1-NTD domain, and (3) S2-10 and S2-40 nanobodies on the trimeric S2 domain of the spike protein. Monomeric S1-RBD, spanning amino acids T333-G526, was represented using the crystal structure of the co-complex of ACE2 bound RBD (PDB ID: 6M0J; Lan et al., 2020). Monomeric S1-NTD, spanning amino acids V16-S305, was represented using the crystal structure of the S2M28 Fab bound NTD (PDB ID: 7LY3; McCallum et al., 2021). Trimeric S2 was represented using the residues S689-P1162 (for each monomer) from a 2.9 Å cryo-EM structure with PDB ID: 6XR8 (Cai et al., 2020, McCallum et al., 2021). Comparative models of all 21 nanobodies were built from the crystal structure of the human Vsig4 targeting nanobody Nb119 (PDB ID: 5IML; Wen et al., 2017) as template using MODELLER (Sali and Blundell, 1993), and their CDR3 regions were refined using MODELLER’s loop modeling algorithm (Fiser et al., 2000). To maximize the efficiency of structural sampling while avoiding too much information loss, the system was represented at a resolution of one bead per residue, and the receptors and all nanobodies were treated as rigid bodies. For each nanobody, alternate binding modes were scored using spatial restraints enforcing receptor-ligand shape complementarity, cross-link satisfaction and proximity of CDR3 loops on the nanobodies to escape mutant residues on the corresponding receptor. With the receptor fixed in space, 1,200,000 alternate docked nanobody models were produced through 20 independent runs of replica exchange Gibbs sampling based on the Metropolis Monte Carlo algorithm, where each Monte Carlo step consisted of a series of random rotations and translations of rigid nanobodies. The initial set of models was filtered to select a random subsample of 30,000 models, which were clustered by the similarity of their interfaces to the receptor. The fraction of common contacts (fcc) between receptor and nanobody was used to characterize interface similarity between alternate nanobody poses (Fiser et al., 2000; Rodrigues et al., 2012). Binding poses belonging to only the most populated cluster were selected for further analysis. Five independent random subsamples of 30,000 models each were generated from the set of all models post-structural sampling, and the entire protocol of interface similarity-based clustering and top cluster selection was repeated each time. However, no significant changes were observed in the satisfaction of restraints. Integrative models of nanobody epitopes on the spike protein were computed on the Wynton HPC cluster at UCSF. Receptor epitopes were visualized in UCSF ChimeraX (Pettersen et al., 2021; Rodrigues et al., 2012). Files containing input data, scripts and output results are available at https://github.com/integrativemodeling/nbspike (Sanyal, 2021; copy archived at swh:1:rev:2607a97503e1d7641079641142734f4075d334e2).
 
-## SARS-CoV-2 stocks and titers
+### SARS-CoV-2 stocks and titers
 
 SARS-related coronavirus 2, isolate USA-WA1/2020, NR-52281, was deposited by the Centers for Disease Control and Prevention and obtained through BEI Resources, NIAID, NIH. SARS-CoV-2, isolate USA (B.1.617.2), was a kind gift from Rhea Coler. Viral stocks were propagated in Vero E6 cells. All experimental work involving live SARS-CoV-2 was performed at Seattle Children’s Research Institute (SCRI) in compliance with SCRI guidelines for BioSafety Level 3 (BSL-3) containment. An initial inoculum was diluted in Opti-MEM (Gibco) at 1:1000, overlaid on a monolayer of Vero E6 and incubated for 90 min. Following the incubation, the supernatant was removed and replaced with 2% (v/v) FBS in Opti-MEM medium. The cultures were inspected for cytopathic effects, which were prominent after 48 hr of infection. After 72 hr, infectious supernatants were collected, cleared of cellular debris by centrifugation, and stored at –80°C until use. Viral titers were determined by plaque assay using a liquid overlay and fixation-staining method, as described (Mendoza et al., 2020; Case et al., 2020). Briefly, serially diluted virus stocks were used to infect confluent monolayers of Vero E6 cells (~1.2 × 106 cells per well) cultured in six-well plates. After a 90 min incubation, the virus was removed, and the cell monolayer overlaid with a medium composed of 3% (w/v) carboxymethylcellulose and 4% (v/v) FBS in phenyl-free Opti-MEM. 96 hr post infection, the viscous carboxymethylcellulose medium was removed and the cells were washed once with Dulbecco’s phosphate buffered saline (DPBS; Gibco) before being fixed with 4% (w/v) paraformaldehyde in DPBS. After a 30 min incubation, the fixative was removed, and the cells were rinsed with DBPS before being stained with 1% (w/v) crystal violet in 20% (v/v) ethanol. Contrast was enhanced by successive washes with DPBS, and clear plaques representing individual viral infections were visualized as spots lacking the stain. Plaques were enumerated by first identifying the dilution factor of the well containing 10–100 plaques. After counting the plaques, the average number of plaque forming units (pfus) from three experiments was used to determine the viral titer by dividing the average by the dilution factor and volume of virus delivered per well.
 
-## Focus forming reduction assay with authentic SARS-CoV-2
+### Focus forming reduction assay with authentic SARS-CoV-2
 
 Nanobody neutralization of infectious SARS-CoV-2 was performed using a focus forming reduction assay. Briefly, eight threefold serial dilutions of nanobodies were incubated with ~7.5 × 104 focus forming units of SARS-CoV-2 for 1 hr at RT. The mixture was then added to a confluent monolayer of Vero E6 cells or 293-ACE2 (Cawford et al., 2020) plated at ~1.5 × 105 cells per well and seeded in 48-well plates. 24 hr post infection, the cells were washed once with DPBS, trypsinized with 0.05% trypsin (Gibco), and fixed for 30 min with 4% paraformaldehyde in DPBS. After fixation, the cells were permeabilized with 1% (w/v) Triton X-100 (Sigma Aldrich) for 30 min. After permeabilization, the cells were incubated with a blocking buffer (1% [w/v] bovine serum albumin [Calbiochem] and 0.5% [w/v] Triton X-100 in DBPS) for 60 min, and then stained with primary anti-spike CR3022 (Absolute Antibody) monoclonal antibodies (1:1000), and secondary anti-human IgG antibodies (1:2000) conjugated to Alexa Fluor 488 (Invitrogen). Cells staining positive for spike were measured by flow cytometry on a Becton Dickinson BD LSR II Special Order System Flow Cytometer With HTS Sampler. The percentage of spike-positive cells from triplicate wells for each dilution was used to determine the half maximal inhibitory concentrations (IC50) using a parametric 1D Hill fitting algorithm with synergy (Wooten et al., 2021). A mock treatment, sham treatment with LaM2 nanobodies (Fridy et al., 2014), and untreated cells were used as controls.
 
-## Plaque reduction neutralization test with authentic SARS-CoV-2
+### Plaque reduction neutralization test with authentic SARS-CoV-2
 
 Nanobody neutralization of infectious SARS-CoV-2 was performed using a plaque reduction neutralization test (PRNT) assay. Briefly, 10 threefold serial dilutions of nanobodies were incubated with ~100–300 pfus of SARS-CoV-2 for 1 hr at RT. The mixture was then added to a confluent monolayer of TMPRSS2+ Vero E6 cells (~6 × 105 cells per well) in 12-well plates. After a 90 min incubation, the virus was removed, and the cell monolayer overlaid with a medium composed of 3% (w/v) carboxymethylcellulose and 4% (v/v) FBS in phenyl-free Opti-MEM. 96 hr post infection, the viscous carboxymethylcellulose medium was removed and the cells were washed once with DPBS (Gibco) before being fixed with 4% (w/v) paraformaldehyde in DPBS. After a 30 min incubation, the fixative was removed, and the cells were rinsed with DBPS before being stained with 1% (w/v) crystal violet in 20% (v/v) ethanol. Contrast was enhanced by washing with DPBS, and clear plaques representing individual viral infections were visualized as spots lacking the stain. The number of plaques at each dilution was used to determine the IC50s of each nanobody.
 
-## SARS-CoV-2 neutralization in primary airway epithelial cell (AEC) cultures
+### SARS-CoV-2 neutralization in primary airway epithelial cell (AEC) cultures
 
 Assays with primary airway epithelial cell cultures were performed as described (Barrow et al., 2021). Briefly, bronchial AECs were obtained under study #12490 approved by the Seattle Children’s Institutional Review Board, with investigations carried out following the rules of the Declaration of Helsinki of 1975. AECs were differentiated for 21 days at an ALI on 12-well collagen-coated Corning plates with permeable transwells in PneumaCult ALI media (Stemcell, Vancouver, BC, Canada). Differentiated AECs were treated with nanobodies diluted in PBS, or PBS alone for 60 min, the liquid was removed, and the AECs were then infected with SARS-CoV-2 at a multiplicity of infection (MOI) of 0.5. At 24 hr intervals, the cells were treated with nanobodies or PBS for 60 min. After 96 hr of infection, SARS-CoV-2 viral replication was measured in AEC cultures by quantitative PCR, with triplicate assays of harvested RNA from each SARS-CoV-2-infected AEC donor cell line (Genesig Coronavirus Strain 2019-nCoV Advanced PCR Kit, Primerdesign, Southampton, UK). The concentration of RNA harvested from AECs was used to normalize the qPCR data and was measured on a spectrophotometer (NanoDrop).
 
-## rVSV/SARS-CoV-2 neutralization assays
+### rVSV/SARS-CoV-2 neutralization assays
 
 Nanobodies were fivefold serially diluted and then incubated with rVSV/SARS-CoV-2/GFP wt2E1 or plaque-purified selected variants for 1 hr at 37°C. The nanobody/recombinant virus mixture was then added to 293T/ACE2.cl22 cells. After 16 hr, cells were harvested, and GFP-positive cells quantified by flow cytometry. The percentage of GFP-positive cells was normalized to that derived from cells infected with rVSV/SARS-CoV-2 in the absence of nanobodies. The half-maximal inhibitory concentrations (IC50) for the nanobodies were determined using four-parameter nonlinear regression (least-squares regression method without weighting) (GraphPad Prism).
 
-## Sequence analyses
+### Sequence analyses
 
 To identify putative nanobody resistance mutations, RNA was isolated from aliquots of supernatant containing selected viral populations or individual plaque purified variants using NucleoSpin 96 Virus Core Kit (Macherey-Nagel). The purified RNA was subjected to reverse transcription using random hexamer primers and SuperScript VILO cDNA Synthesis Kit (Thermo Fisher Scientific). The cDNA was amplified using KOD Xtreme Hot Start DNA 396 Polymerase (MilliporeSigma) flanking the spike encoding sequences. The PCR products were gel-purified and sequenced using Sanger sequencing.
 
-## Selection of virus variants in the presence of nanobodies
+### Selection of virus variants in the presence of nanobodies
 
 For selection of spike variants that were resistant to nanobodies, rVSV/SARS-CoV-2/GFP wt2E1 was passaged to generate diversity and populations containing 106 infectious particles were used. The rVSV/SARS-CoV-2/GFP wt2E1 populations were incubated with dilutions of nanobodies (10× to 100× the IC50 excess) for 1 hr at 37°C. Then, the virus-nanobody mixtures were incubated with 5 × 105 293T/ACE2.22 cells in six-well plates. Two days later, the cells were imaged and supernatant were harvested from cultures that showed evidence of viral replication (GFP-positive foci) or large numbers of GFP-positive cells. A 100 μl of the cleared supernatant was incubated with the same dilution of nanobodies and then used to infect 5 × 105 293T/ACE2.22 cells in six-well plates, as before. rVSV/SARS-CoV-2/GFP wt2E1 were passaged in the present combination of nanobodies two times before complete escape was evaluated.
 
 To isolate individual mutant viruses, selected rVSV/SARS-CoV-2/GFP wt2E1 populations were serially diluted in medium without nanobodies and individual viral variants isolated by visualizing single GFP-positive plaques at limiting dilutions in 96-well plates containing 1 × 104 293T/ACE2.22 cells. These plaque-purified viruses were expanded and further characterized using sequencing and nanobody neutralization assays.
 
-## Cross-linking mass spectrometry
+### Cross-linking mass spectrometry
 
 Nanobodies and antigens were incubated together at a 2× molar excess of nanobody at RT for 10 min in 20 mM HEPES pH 7.4 and 150 mM NaCl. Cross-linker was then added to a final concentration of 5 mM bissulfosuccinimidyl suberate (BS3) or 1 mM disuccinimidyl suberate (DSS), and samples were cross-linked for 30 min (RBD, NTD) or 18 min (ectodomain trimer) at RT. Reactions were quenched, reduced, and alkylated, and run on an SDS-PAGE gel. The band corresponding to the cross-linked nanobody-antigen complex was then excised from the gel and subjected to in-gel digestion at 37°C with trypsin (Roche, 1 μg, 4 hr) or chymotrypsin (Roche, 0.5 μg, 1.5 hr).
 

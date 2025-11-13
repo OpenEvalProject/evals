@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.45946.001 To encode light-dependent changes in membrane potential, rod and cone photoreceptors utilize synaptic ribbons to sustain continuous exocytosis while making rapid, fine adjustments to release rate. Release kinetics are shaped by vesicle delivery down ribbons and by properties of exocytotic Ca 2+ sensors. We tested the role for synaptotagmin-1 (Syt1) in photoreceptor exocytosis by using novel mouse lines in which Syt1 was conditionally removed from rods or cones. Photoreceptors lacking Syt1 exhibited marked reductions in exocytosis as measured by electroretinography and single-cell recordings. Syt1 mediated all evoked release in cones, whereas rods appeared capable of some slow Syt1-independent release. Spontaneous release frequency was unchanged in cones but increased in rods lacking Syt1. Loss of Syt1 did not alter synaptic anatomy or reduce Ca 2+ currents. These results suggest that Syt1 mediates both phasic and tonic release at photoreceptor synapses, revealing unexpected flexibility in the ability of Syt1 to regulate Ca 2+ -dependent synaptic transmission.
+To encode light-dependent changes in membrane potential, rod and cone photoreceptors utilize synaptic ribbons to sustain continuous exocytosis while making rapid, fine adjustments to release rate. Release kinetics are shaped by vesicle delivery down ribbons and by properties of exocytotic Ca2+ sensors. We tested the role for synaptotagmin-1 (Syt1) in photoreceptor exocytosis by using novel mouse lines in which Syt1 was conditionally removed from rods or cones. Photoreceptors lacking Syt1 exhibited marked reductions in exocytosis as measured by electroretinography and single-cell recordings. Syt1 mediated all evoked release in cones, whereas rods appeared capable of some slow Syt1-independent release. Spontaneous release frequency was unchanged in cones but increased in rods lacking Syt1. Loss of Syt1 did not alter synaptic anatomy or reduce Ca2+ currents. These results suggest that Syt1 mediates both phasic and tonic release at photoreceptor synapses, revealing unexpected flexibility in the ability of Syt1 to regulate Ca2+-dependent synaptic transmission.
 
 ## Introduction
 
@@ -36,17 +36,17 @@ The identity of the molecular Ca2+ sensors that mediate different forms of relea
 
 ## Results
 
-## Syt1 expression was specifically abolished in either rods or cones using conditional knockout mice
+### Syt1 expression was specifically abolished in either rods or cones using conditional knockout mice
 
 Mice lacking Syt1 die within 48 hr of birth (Geppert et al., 1994) and the retina is not fully developed until P14. To probe the potential function of Syt1 in mouse photoreceptors, we therefore generated a conditional, Cre-dependent Syt1 knockout mouse line with LoxP sites flanking exon 6 of Syt1 (Quadros et al., 2017) (Figure 1A–B). PCR experiments showed proper insertion of both LoxP sites (Quadros et al., 2017). 5’ LoxP PCR results are illustrated in Figure 1B. This line was crossed with mice that express Cre recombinase specifically in rods under control of the rhodopsin promoter (Rho-iCre) (Li et al., 2005) or in cones under control of the human red-green pigment promoter (HRGP-Cre) (Le et al., 2004). To facilitate targeting of cones for single-cell recordings (described below), we also crossed HRGP-Cre; Syt1 mice with a Cre-dependent tdTomato-expressing reporter line (Ai14).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45946/elife-45946-fig1-v2.jpg)
 
-**Figure 1.:** Syt1CKO and ConeSyt1CKO retinas, respectively.(A) Top: Syt1 locus showing crRNA sequences used for inserting LoxP sites flanking exon 6; ‘/” in the amino acid sequence indicates the nucleotide positions where LoxP sites were inserted. Bottom: schematic of the Syt1 allele showing location of genotyping primers and floxLoxP sites. (B) 5’ LoxP PCR of the Syt1 allele from WT (Syt1) and +/+Syt1 floxed mice (Syt1: heterozygous, +/fSyt1: homozygous). Expected band sizes are 484 bp for the WT allele and 524 bp for the floxed allele. (f/fC) Diagram illustrating fluorescent labels used for different cell types. Rod and cone terminals can be labeled with antibodies to PSD95. The base of cone terminals can be labeled with fluorescently-conjugated peanut agglutinin (PNA). Rod and cone ribbons were labeled with antibodies to CtBP2. Horizontal cells (HCs), rod bipolar cells (RBCs), and cone bipolar cells (CBCs) were labeled with antibodies to calbindin, PKCα, and secretagogin, respectively. (D) Images of control, RodSyt1CKO, and ConeSyt1CKO retinas labeled with PNA (cyan) to mark cone terminals as well as antibodies to PSD95 (green) and Syt1 (magenta). Bottom images show magnified regions outlined in the top images. Arrowheads indicate cone terminals. Scale bars = 10 µm. ONL: outer nuclear layer, INL: inner nuclear layer.
+**Figure 1.:** (A) Top: Syt1 locus showing crRNA sequences used for inserting LoxP sites flanking exon 6; ‘/” in the amino acid sequence indicates the nucleotide positions where LoxP sites were inserted. Bottom: schematic of the Syt1flox allele showing location of genotyping primers and LoxP sites. (B) 5’ LoxP PCR of the Syt1 allele from WT (Syt1+/+) and Syt1 floxed mice (Syt1+/f: heterozygous, Syt1f/f: homozygous). Expected band sizes are 484 bp for the WT allele and 524 bp for the floxed allele. (C) Diagram illustrating fluorescent labels used for different cell types. Rod and cone terminals can be labeled with antibodies to PSD95. The base of cone terminals can be labeled with fluorescently-conjugated peanut agglutinin (PNA). Rod and cone ribbons were labeled with antibodies to CtBP2. Horizontal cells (HCs), rod bipolar cells (RBCs), and cone bipolar cells (CBCs) were labeled with antibodies to calbindin, PKCα, and secretagogin, respectively. (D) Images of control, RodSyt1CKO, and ConeSyt1CKO retinas labeled with PNA (cyan) to mark cone terminals as well as antibodies to PSD95 (green) and Syt1 (magenta). Bottom images show magnified regions outlined in the top images. Arrowheads indicate cone terminals. Scale bars = 10 µm. ONL: outer nuclear layer, INL: inner nuclear layer.
 
 To test for Syt1 protein in rods and cones, we examined immunohistochemical labeling for Syt1 using an antibody that labels the C2A domain. In control retinas, Syt1 immunoreactivity was evident in both rod and cone terminals in the outer plexiform layer (OPL) (Figure 1D), consistent with previous studies (Berntson and Morgans, 2003; Fox and Sanes, 2007; von Kriegstein and Schmitz, 2003). Syt1 immunoreactivity in Syt1 heterozygote retinas (Rho-iCre; Syt1+/flox and HRGP-Cre; Syt1+/flox) was indistinguishable from controls (Syt1flox/flox or Cre+, Syt1+/+; data not shown). As illustrated by the diagram in Figure 1C, PSD95 was used to label presynaptic rod and cone terminals in the OPL (Koulen et al., 1998) while fluorescently-conjugated peanut agglutinin (PNA) was used to label the base of cone terminals (Blanks and Johnson, 1984). Cone terminals are indicated by arrowheads in Figure 1D. In contrast to control retinas, Rho-iCre; Syt1flox/flox homozygous mutant (hereafter called RodSyt1CKO) retinas exhibited robust Syt1 expression in cone terminals but Syt1 was completely absent from rod spherules (Figure 1D, middle). Conversely, in HRGP-Cre; Syt1flox/flox homozygous mutant (hereafter called ConeSyt1CKO) retinas, Syt1 was absent from cone terminals but strongly expressed in rod spherules (Figure 1D, right). These results confirm that Syt1 is expressed robustly in mouse photoreceptors and show that Syt1 expression was abolished specifically from rods and cones in RodSyt1CKO and ConeSyt1CKO retinas, respectively.
 
-## Removal of Syt1 from photoreceptors diminishes ERG b-waves
+### Removal of Syt1 from photoreceptors diminishes ERG b-waves
 
 We first examined the functional impact of the absence of Syt1 from rods and cones by evaluating light-evoked ERG responses using an ex vivo eyecup preparation (Newman and Bartosch, 1999). We focused on the ERG a-wave, a negatively-polarized wave that reflects the hyperpolarizing light responses of rod and cone photoreceptors, and the b-wave, a positively-polarized wave that reflects the depolarization of ON bipolar cells arising from the light-evoked cessation of tonic glutamate release from photoreceptors. The bath solution was supplemented with 100 µM BaCl2 to block the Müller cell-mediated slow PIII component of the ERG (Bolnick et al., 1979). A-waves were measured from baseline to the negative going inflection. B-waves were measured from the trough of the a-wave to the peak of the positive-going b-wave (see arrows in Figure 2A–B). Using brief (20 ms) flashes without background illumination, control retinas exhibited a b-wave intensity-response function composed of rod-driven responses at low intensities and a mixture of rod- and cone-driven activity at higher intensities (Figure 2A–B). Figure 2A shows example responses evoked by a low intensity light flash (10−4 of maximum) in control, RodSyt1CKO, and ConeSyt1CKO retinas. The small a-wave evoked at this intensity is obscured by the b-wave so only the b-wave is evident. Figure 2B shows responses to a bright flash (10−4 of maximum) that evokes large a- and b-waves in control mice. In control retinas, the b-wave became significantly non-zero at a flash intensity 10−5 of maximum (p=0.003, one-sample t-test). RodSyt1CKO retinas, in which rods lack Syt1, exhibited markedly diminished or no b-wave activity at the dimmest flash intensities; a much higher flash intensity was required for RodSyt1CKO b-waves to become significantly non-zero (p>0.05 at intensities below 10−3 of maximum; Figure 2B, maroon data). Conversely, ConeSyt1CKO retinas exhibited rod-mediated b-waves at low intensities that were as sensitive as controls; the threshold for b-wave detection was the same as controls (10−5 of maximum intensity; p=0.004; Figure 2B, blue data). However, b-wave amplitudes from ConeSyt1CKO retinas did not increase to the amplitude of control b-waves when evoked by higher intensity flashes, suggesting a diminished cone contribution to b-waves in ConeSyt1CKO retinas. The effect of Syt1 deletion from cones was partially masked by increasing rod-driven responses at bright flash intensities (Ronning et al., 2018).
 
@@ -66,7 +66,7 @@ Two alternate approaches were used to further test the role of Syt1 in mediating
 
 B-waves evoked by the second bright flash of the double flash protocol in ConeSyt1CKO retinas were nearly undetectable (Figure 3C), suggesting that synaptic output from cones lacking Syt1 was abolished. As a further test of cone function, we recorded the ERG evoked by a 25 Hz on/off square-wave stimulus at a bright intensity. Unlike cones, rods are incapable of following rapidly flickering changes at this high frequency (Tanimoto, 2009) and quickly adapt to the mean luminance of the bright stimulus. ERGs from control mice were able to follow 25 Hz flickering stimuli, but ERGs from ConeSyt1CKO retinas were not (Figure 3E). The absence of any detectable flicker response provides further evidence that release from cones was eliminated by the loss of Syt1 in ConeSyt1CKO retinas. Together, the results in Figure 2 and Figure 3 demonstrate that Syt1 is required for continuous exocytosis from photoreceptors in darkness.
 
-## Exocytosis from cones is markedly reduced in the absence of Syt1
+### Exocytosis from cones is markedly reduced in the absence of Syt1
 
 The ERG results suggested a significant role for Syt1 in rod and cone neurotransmission, but ERG recordings reflect the simultaneous activity of entire neuronal populations. To probe Syt1 function on a cellular level, we measured synaptic release from individual rods and cones with whole-cell recordings. Exocytosis was assessed in two ways: 1) measuring the inhibition of ICa produced by the release of protons upon synaptic vesicle fusion, and 2) recording anion currents generated by the activity of presynaptic glutamate transporters.
 
@@ -74,9 +74,9 @@ We examined the transient inhibition of ICa caused by the release of vesicular p
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45946/elife-45946-fig4-v2.jpg)
 
-**Figure 4.:** Ca by vesicular H+.(A) Image of tdTomato+ cones in an ex vivo retinal slice. One cone was filled with a patch pipette solution supplemented with Lucifer yellow (arrowhead). (B) Average ICa recorded from 12 control and 7 Syt1-deficient cones evoked by a depolarizing step. The arrow points to transient ICa inhibition in control cones. (C) ICa traces from a control cone in response to a depolarizing step in control conditions, in the presence of 20 mM HEPES, and after washout of HEPES. (D) The paired-pulse protocol used to isolate Iinhibition in E–F) and an example of ICa recorded from a control cone (same cell as shown in C). (E) Average Iinhibition obtained by subtracting ICa during the second step (ICa(2)) from the first step (ICa(1)) of the paired-pulse protocol (subtraction traces were smoothed for clarity). Dashed lines indicate the duration of the depolarizing step. (F) Peak amplitude of Iinhibition from control cones in control conditions, control cones with 20 mM HEPES, control cones after washout, and ConeSyt1CKO cones in control conditions. Inset image shows Iinhibition amplitude measurement for the control condition. Control: 23.5 ± 3.6, n = 5; HEPES: 2.8 ± 0.5, n = 5; washout: 14.5 ± 3.8, n = 4; ConeSyt1CKO: 0, n = 4. Control vs. HEPES: p=0.04, control vs. wash: p=0.07 (repeated measures one-way ANOVA); control vs. ConeSyt1CKO: p=0.02 (Mann-Whitney test). One cone was lost before washout so it could not be included in ANOVA analysis. *p≤0.04.
+**Figure 4.:** (A) Image of tdTomato+ cones in an ex vivo retinal slice. One cone was filled with a patch pipette solution supplemented with Lucifer yellow (arrowhead). (B) Average ICa recorded from 12 control and 7 Syt1-deficient cones evoked by a depolarizing step. The arrow points to transient ICa inhibition in control cones. (C) ICa traces from a control cone in response to a depolarizing step in control conditions, in the presence of 20 mM HEPES, and after washout of HEPES. (D) The paired-pulse protocol used to isolate Iinhibition in E–F) and an example of ICa recorded from a control cone (same cell as shown in C). (E) Average Iinhibition obtained by subtracting ICa during the second step (ICa(2)) from the first step (ICa(1)) of the paired-pulse protocol (subtraction traces were smoothed for clarity). Dashed lines indicate the duration of the depolarizing step. (F) Peak amplitude of Iinhibition from control cones in control conditions, control cones with 20 mM HEPES, control cones after washout, and ConeSyt1CKO cones in control conditions. Inset image shows Iinhibition amplitude measurement for the control condition. Control: 23.5 ± 3.6, n = 5; HEPES: 2.8 ± 0.5, n = 5; washout: 14.5 ± 3.8, n = 4; ConeSyt1CKO: 0, n = 4. Control vs. HEPES: p=0.04, control vs. wash: p=0.07 (repeated measures one-way ANOVA); control vs. ConeSyt1CKO: p=0.02 (Mann-Whitney test). One cone was lost before washout so it could not be included in ANOVA analysis. *p≤0.04.
 
-## Glutamate release is reduced in Syt1-deficient photoreceptors
+### Glutamate release is reduced in Syt1-deficient photoreceptors
 
 As a second technique to evaluate exocytosis in rods and cones, we utilized a retinal flatmount preparation to record presynaptic glutamate transporter-mediated anion tail currents (IA(Glu)) evoked by depolarizing stimuli of varying duration (Hasegawa et al., 2006; Szmajda and Devries, 2011). Rod ribbons are surrounded by glutamate transporters EAAT2 and EAAT5 (Arriza et al., 1997; Eliasof et al., 1998; Hasegawa et al., 2006) while cones express two EAAT2 splice variants (Eliasof et al., 1998; Rowan et al., 2010; Schneider et al., 2014). Glutamate reuptake into the presynaptic terminal by any of these isoforms activates a robust uncoupled anion conductance (Arriza et al., 1997; Schneider et al., 2014) in rods and cones (Grant and Werblin, 1996; Picaud et al., 1995). In our experiments, Cl- was replaced with the permeant anion isothiocyanate in the patch pipette solution to potentiate IA(Glu) (Eliasof and Jahr, 1996).
 
@@ -98,15 +98,15 @@ In the absence of stimulation, we observed spontaneous fast, monophasic inward c
 
 **Figure 7.:** (A) Traces showing spontaneous IA(Glu) events from control and ConeSyt1CKO cones held at −70 mV. Frequency: control: 5.8 ± 0.96 Hz, n = 7 cones; ConeSyt1CKO: 6.6 ± 1.09 Hz, n = 9 cones; p=0.62 (t-test). Amplitude: control: 10.8 ± 1.34 pA, n = 7 cones; ConeSyt1CKO: 7.8 ± 0.95 pA, n = 9 cones; p=0.08 (t-test). (B) Traces showing spontaneous IA(Glu) events from control and RodSyt1CKO rods held at −70 mV. Frequency: control: 0.9 ± 0.25 Hz, n = 14 rods; RodSyt1CKO: 5.3 ± 1.25 Hz, n = 6 rods; p=0.004 (Mann-Whitney test). Amplitude: control: 6.6 ± 0.70 pA, n = 14 rods; RodSyt1CKO: 6.4 ± 0.57 pA, n = 6 rods; p=0.87 (t-test). *p=0.004.
 
-## The absence of Syt1 does not reduce rod or cone ICa
+### The absence of Syt1 does not reduce rod or cone ICa
 
 The results described above strongly suggested that Syt1 is the chief mediator linking Ca2+ influx to exocytosis in rods and cones. Another possible explanation for reduced neurotransmission by Syt1-deficient cells could be impaired ICa, although results above suggested this was not the case (Figure 4). We compared the amplitude and voltage dependence of ICa in control and Syt1-deficient rods and cones. In cones, ICa was measured using both a voltage ramp and depolarizing step series (Figure 8A–C). The current-voltage relationship obtained in cones with the voltage ramp (−90 to +60 mV, 0.5 mV/ms) closely matched the charge-voltage relationship (QCa = ICa integrated over the step duration) evoked by a series of 50 ms depolarizing voltage steps (Figure 8A). ICa and QCa magnitudes were slightly larger in ConeSyt1CKO cones compared to control cones; this difference was statistically significant for ICa but not QCa (Figure 8D). Voltage at half-maximum (V0.5) values (obtained by fitting voltage-activation relationships with Boltzmann functions) of ICa and QCa in Syt1-deficient cones did not differ significantly from controls but tended to be shifted slightly negative. Because H+-mediated inhibition of ICa reduces current amplitude and shifts voltage dependence positively (Barnes et al., 1993), these small differences in amplitude and V0.5 likely arose because control cones were subject to H+-mediated ICa inhibition but ConeSyt1CKO cones were not (Figure 4). Furthermore, such differences would be expected to confer a small gain-of-function to Syt1-deficient cones and potentiate, rather than reduce, exocytosis. Unlike cones that have multiple ribbons, mouse rods possess only a single ribbon and accordingly ICa was much smaller in rods than cones. The amplitude of ICa measured using voltage ramps did not differ between control and Syt1-deficient rods, and the two genotypes did not appear to differ in voltage dependence (Figure 8E–F). These results confirm that the marked neurotransmission defects in photoreceptors lacking Syt1 were not due to a reduction in presynaptic Ca2+ influx.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/45946/elife-45946-fig8-v2.jpg)
 
-**Figure 8.:** Ca is not reduced in photoreceptors lacking Syt1.(A) Example current-voltage relationship of ramp-evoked ICa and step-evoked QCa (a Boltzmann function adjusted for Ca2+ driving force was fit to QCa) in a control cone. (B) Average QCa as a function of step voltage for control and ConeSyt1CKO cones. No means differed significantly (t-tests corrected for multiple comparisons). (C) Example ramp-evoked ICa traces from a control and ConeSyt1CKO cone. (D) Ramp-evoked ICa peak amplitude (left) and V0.5 values (middle), and step-evoked QCa V0.5 values (right) from control and ConeSyt1CKO cones. ICa amplitude: Control: 33.1 ± 2.63 pA, n = 12; ConeSyt1CKO: 42.5 ± 3.43 pA, n = 12; p=0.04 (t-test). ICa V0.5: Control: −36.6 ± 0.83 mV, n = 12; ConeSyt1CKO: −38.8 ± 0.84 mV, n = 11; p=0.07 (t-test). QCa V0.5: Control: −33.2 ± 0.98 mV, n = 12; ConeSyt1CKO: −34.1 ± 2.01 mV, n = 7; p=0.67 (t-test). (E) Average ICa traces from control and RodSyt1CKO rods. (F) Ramp-evoked ICa peak amplitude from control and RodSyt1CKO rods. Control: 4.6 ± 0.87 pA, n = 7; RodSyt1CKO: 4.2 ± 0.88 pA, n = 11; p=0.76 (t-test).
+**Figure 8.:** (A) Example current-voltage relationship of ramp-evoked ICa and step-evoked QCa (a Boltzmann function adjusted for Ca2+ driving force was fit to QCa) in a control cone. (B) Average QCa as a function of step voltage for control and ConeSyt1CKO cones. No means differed significantly (t-tests corrected for multiple comparisons). (C) Example ramp-evoked ICa traces from a control and ConeSyt1CKO cone. (D) Ramp-evoked ICa peak amplitude (left) and V0.5 values (middle), and step-evoked QCa V0.5 values (right) from control and ConeSyt1CKO cones. ICa amplitude: Control: 33.1 ± 2.63 pA, n = 12; ConeSyt1CKO: 42.5 ± 3.43 pA, n = 12; p=0.04 (t-test). ICa V0.5: Control: −36.6 ± 0.83 mV, n = 12; ConeSyt1CKO: −38.8 ± 0.84 mV, n = 11; p=0.07 (t-test). QCa V0.5: Control: −33.2 ± 0.98 mV, n = 12; ConeSyt1CKO: −34.1 ± 2.01 mV, n = 7; p=0.67 (t-test). (E) Average ICa traces from control and RodSyt1CKO rods. (F) Ramp-evoked ICa peak amplitude from control and RodSyt1CKO rods. Control: 4.6 ± 0.87 pA, n = 7; RodSyt1CKO: 4.2 ± 0.88 pA, n = 11; p=0.76 (t-test).
 
-## OPL architecture is maintained when rods or cones lack Syt1
+### OPL architecture is maintained when rods or cones lack Syt1
 
 Mutations of active zone proteins in the presynaptic terminals of photoreceptors—especially those associated with Ca2+ channels—often lead to disordered synaptic structure, with malformed ribbons and defective photoreceptor wiring (Bech-Hansen et al., 1998; Haeseleer et al., 2004; Kerov et al., 2018; Mansergh et al., 2005; Strom et al., 1998; Wang et al., 2017). These mutated proteins not only disrupt vesicle release (e.g., due to altered ICa), but also play important roles in maintaining structural integrity of the ribbon or release sites. The role of synaptic communication per se in promoting and maintaining synaptic integrity remains unclear.
 
@@ -114,7 +114,7 @@ Photoreceptor synapses of 4–6 week old mice were examined using transmission e
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/45946/elife-45946-fig9-v2.jpg)
 
-**Figure 9.:** (A) TEM images of two rod synapses each from a control and RodSyt1CKO retina with pseudocoloring of presumed horizontal cell (blue) and rod bipolar cell (magenta) dendrites. Scale bars = 200 nm. (B) Images centered on the OPL of RodSyt1CKO and ConeSyt1CKO retinas co-labeled with antibodies to CaV1.4 (magenta) and CtBP2 (ribbons, green). Solid arrowheads indicate exemplar rod ribbon complexes and the open triangle points to numerous ribbon complexes within a cone terminal. Scale bars = 5 µm. (C) Measurements of ONL, OPL, and INL thickness from RodSyt1CKO, ConeSyt1CKO, and their respective control retinas. ONL: rod control: 49.6 ± 3.79 μm, n = 4; RodSyt1CKO: 48.1 ± 1.56 μm, n = 5; p=0.69; cone control: 53.5 ± 2.88 μm, n = 6; ConeSyt1CKO: 49.5 ± 3.84 μm, n = 4; p=0.42. OPL: rod control: 5.7 ± 0.26 μm, n = 4; RodSyt1CKO: 5.3 ± 0.27 μm, n = 5; p=0.34; cone control: 5.6 ± 0.10 μm, n = 5; ConeSyt1CKO: 5.5 ± 0.31 μm, n = 5; p=0.88. INL: rod control: 43.4 ± 4.42 μm, n = 4; RodSyt1CKO: 36.0 ± 1.58 μm, n = 5; p=0.13; cone control: 45.8 ± 2.64 μm, n = 7; ConeSyt1CKO: 42.4 ± 4.49 μm, n = 4; p=0.50 (t-tests). (D) Density of cone terminals per 0.01 mm2 in control and ConeSyt1CKO retinas. Control: 132.2 ± 9.81, n = 4 retinas; ConeSyt1CKO: 122.1 ± 2.59, n = 5 retinas; p=0.30 (t-test).10.7554/eLife.45946.011Figure 9—source data 1.Figure 9C: Measurements of outer nuclear layer (ONL), outer plexiform layer (OPL, and inner nuclear layer (INL) thickness from RodSyt1CKO, ConeSyt1CKO, and their respective control retinas.Data for Figure 9D. Density of cone terminals per 0.01 mm2 in control and ConeSyt1CKO retinas.
+**Figure 9.:** (A) TEM images of two rod synapses each from a control and RodSyt1CKO retina with pseudocoloring of presumed horizontal cell (blue) and rod bipolar cell (magenta) dendrites. Scale bars = 200 nm. (B) Images centered on the OPL of RodSyt1CKO and ConeSyt1CKO retinas co-labeled with antibodies to CaV1.4 (magenta) and CtBP2 (ribbons, green). Solid arrowheads indicate exemplar rod ribbon complexes and the open triangle points to numerous ribbon complexes within a cone terminal. Scale bars = 5 µm. (C) Measurements of ONL, OPL, and INL thickness from RodSyt1CKO, ConeSyt1CKO, and their respective control retinas. ONL: rod control: 49.6 ± 3.79 μm, n = 4; RodSyt1CKO: 48.1 ± 1.56 μm, n = 5; p=0.69; cone control: 53.5 ± 2.88 μm, n = 6; ConeSyt1CKO: 49.5 ± 3.84 μm, n = 4; p=0.42. OPL: rod control: 5.7 ± 0.26 μm, n = 4; RodSyt1CKO: 5.3 ± 0.27 μm, n = 5; p=0.34; cone control: 5.6 ± 0.10 μm, n = 5; ConeSyt1CKO: 5.5 ± 0.31 μm, n = 5; p=0.88. INL: rod control: 43.4 ± 4.42 μm, n = 4; RodSyt1CKO: 36.0 ± 1.58 μm, n = 5; p=0.13; cone control: 45.8 ± 2.64 μm, n = 7; ConeSyt1CKO: 42.4 ± 4.49 μm, n = 4; p=0.50 (t-tests). (D) Density of cone terminals per 0.01 mm2 in control and ConeSyt1CKO retinas. Control: 132.2 ± 9.81, n = 4 retinas; ConeSyt1CKO: 122.1 ± 2.59, n = 5 retinas; p=0.30 (t-test).
 
 Unlike mutations of postsynaptic proteins in ON bipolar cell dendrites (Ball et al., 2003; Dhingra et al., 2000; Pinto et al., 2007; Ray et al., 2014; Tagawa et al., 1999), mutations in critical presynaptic proteins at photoreceptor ribbon synapses typically cause horizontal and bipolar cells to extend dendrites beyond their normal site of termination in the OPL and form ectopic synapses in the ONL (Cao et al., 2015; Haeseleer et al., 2004; Kerov et al., 2018; Mansergh et al., 2005; tom Dieck et al., 2005; tom Dieck et al., 2012). We compared the anatomy of horizontal cell and bipolar cell dendrites in control, RodSyt1CKO, and ConeSyt1CKO retinas and found no evidence for sprouting of dendrites or an increase of ectopic synapses in the ONL. The diagram in Figure 1C illustrates the molecules used to identify different cell types. Triple labeling with antibodies to CtBP2 (to label ribbons), Syt1, and calbindin (to label horizontal cells, Figure 10) or secretagogin (to label cone bipolar cells, Figure 11); and double labeling of ribbons (with antibodies to CtBP2) and rod bipolar cells (with antibodies to PKCα, Figure 12) demonstrated that postsynaptic elements continued to make proper contacts with rod and cone ribbons in the OPL whether or not Syt1 was present in the associated presynaptic terminals. The ribbon protein Ribeye is an alternate transcript of a transcription factor, CtBP2. These proteins share a common B-domain, but Ribeye contains an additional A-domain. Antibodies to CtBP2 used to label Ribeye at synaptic ribbons therefore also label CtBP2 in the nucleus. We adjusted CtBP2 signal intensity to maximize visibility of the ribbons, causing some differences among preparations in nuclear staining; however, this variability did not appear to be systematically related to mouse phenotype. While we focused on mice 4–6 weeks of age, photoreceptor synapses of 10-week-old RodSyt1CKO and ConeSyt1CKO mice also appeared unchanged (data not shown). These results revealed that both rod and cone synapses develop and are maintained normally in RodSyt1CKO and ConeSyt1CKO mice, suggesting that neither Syt1-mediated activity nor Syt1 itself are required for establishing or maintaining photoreceptor ribbon structures or their contact with postsynaptic neurons, even weeks after synaptic maturation.
 
@@ -128,13 +128,13 @@ Unlike mutations of postsynaptic proteins in ON bipolar cell dendrites (Ball et 
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/45946/elife-45946-fig12-v2.jpg)
 
-**Figure 12.:** Syt1CKO retinas.Images of control and RodSyt1CKO retinas labeled with antibodies to CtBP2 (ribbons, green) and PKCα (rod bipolar cells, magenta). Boxes within images on the top indicate the boundaries of high magnification images shown below. Exemplar rod ribbon-rod bipolar cell dendrite contacts are indicated with arrowheads. Scale bars = 10 µm.
+**Figure 12.:** Images of control and RodSyt1CKO retinas labeled with antibodies to CtBP2 (ribbons, green) and PKCα (rod bipolar cells, magenta). Boxes within images on the top indicate the boundaries of high magnification images shown below. Exemplar rod ribbon-rod bipolar cell dendrite contacts are indicated with arrowheads. Scale bars = 10 µm.
 
 ## Discussion
 
 Our data demonstrate that Syt1 is the major Ca2+ sensor linking presynaptic Ca2+ and vesicular exocytosis at photoreceptor synaptic ribbon active zones. In both rods and cones, Syt1 appears to mediate fast, synchronous release evoked by brief depolarizing stimuli. Because the ERG b-wave reflects ON bipolar cell light responses, suppression of the b-wave without changes in the a-wave or photoreceptor ICa in RodSyt1CKO and ConeSyt1CKO retinas suggests that Syt1 also mediates continuous release in darkness in both rods and cones. The persistence of IA(Glu) evoked by 25 ms steps in rods lacking Syt1 suggests they may be capable of some slow, Syt1-independent evoked release. Spontaneous release also persisted in both rods and cones.
 
-## Other possible Ca2+ sensors in photoreceptors
+### Other possible Ca2+ sensors in photoreceptors
 
 Consistent with other synapses where Syt1 has been shown to inhibit spontaneous fusion of vesicles (Kavalali, 2015), the frequency of spontaneous miniature release events increased in rods lacking Syt1 (Figure 7). This result supports the hypothesis that Syt1 functions as a clamp of spontaneous fusion and that another Ca2+ sensor, perhaps Doc2, triggers spontaneous release (Courtney et al., 2018; Groffen et al., 2010). Syt1-deficient cones did not exhibit a similar increase in frequency suggesting that interactions between Syt1 and other exocytotic proteins differ in rods and cones.
 
@@ -142,7 +142,7 @@ Our results also suggest that a slower form of release, similar to asynchronous 
 
 The exocytotic Ca2+ sensor in amphibian photoreceptors shows a higher Ca2+ affinity and lower Ca2+ cooperativity (n = 2–3) than most other synapses (Duncan et al., 2010; Rabl et al., 2003; Rieke and Schwartz, 1996). Unlike mammals, amphibian photoreceptors do not possess Syt1. Do these unusual properties arise from use of a different Ca2+ sensor in amphibians or do other factors shape properties of release in mammalian and amphibian photoreceptors? Syt4 does not bind Ca2+ ions but nevertheless imparts a linear Ca2+ dependence to release from mature hair cells that involves the protein otoferlin with six Ca2+-binding sites (Cho et al., 2011; Johnson et al., 2010). Interactions between Syt1 and other SNARE complex members and intracellular signaling pathways have also been shown to influence cooperativity (Sørensen et al., 2002; Stewart et al., 2000; Yang et al., 2005).
 
-## Implications of Syt1-mediated photoreceptor neurotransmission
+### Implications of Syt1-mediated photoreceptor neurotransmission
 
 Conventional and ribbon synapses both exhibit fast and slow components to exocytosis. At conventional synapses, these different kinetic components often involve the use of different Ca2+ sensors, such as Syt1 or Syt2 for fast release and Syt7 or Doc2 for slow release (Bacaj et al., 2013; Jarsky et al., 2010; Luo et al., 2015). At ribbon synapses, kinetics of fast and slow release at bipolar and photoreceptor ribbon synapses are thought to be limited by the speed at which vesicles can be delivered to release sites at the base of the ribbon, which would not require different Ca2+ sensors to mediate fast and slow release (Bartoletti et al., 2010; Sterling and Matthews, 2005). Consistent with this, release at mature ribbon synapses of cochlear hair cells appears to involve only a single sensor, otoferlin, and not Syt1, Syt2 or Syt7 (Beurg et al., 2010). On the other hand, like conventional synapses, Syt1 appears to mediate fast release from bipolar cell ribbon synapses while Syt7 contributes to slow asynchronous release (Luo et al., 2015). In cones, both phasic and tonic release are understood to occur exclusively at ribbons (Jackman et al., 2009; Snellman et al., 2011) and our results did not uncover any Syt1-independent release from cones. This suggests that Syt1-mediated release at ribbons, with kinetics dictated by vesicle delivery, is the dominant mechanism of both fast and slow exocytosis in mouse cones.
 
@@ -150,7 +150,7 @@ Fast release from rods uses ribbon-mediated mechanisms similar to cones (Li et a
 
 Exocytosis mediated by the fast sensor Syt1 could help to ensure that vesicles that reach release sites are released with minimal delay. While fast sensors like Syt1 can promote fusion within a few hundred microseconds after Ca2+ elevation, slower sensors generally take much longer (Kaeser and Regehr, 2014). The use of Syt1 may promote a close temporal association between the formation of Ca2+ nanodomains and vesicle release (Bartoletti et al., 2011; Van Hook and Thoreson, 2015), even during continuous release in darkness.
 
-## Maintained integrity of photoreceptor synapses lacking Syt1
+### Maintained integrity of photoreceptor synapses lacking Syt1
 
 Syt1-deficient photoreceptors exhibit undiminished ICa and maintain synaptic contacts with postsynaptic horizontal and bipolar cells despite diminished synaptic communication. Immunohistochemistry and TEM data showed that photoreceptor synapses were morphologically indistinguishable in control, RodSyt1CKO, and ConeSyt1CKO retinas (Figures 9–12). Previous studies of mouse photoreceptors examining mutations or the absence of critical ribbon-associated proteins CaBP4 (Haeseleer et al., 2004), CAST (tom tom Dieck et al., 2012), Bassoon (Specht et al., 2007), and the CaV1.4 channel subunits α1 (Chang et al., 2006; Mansergh et al., 2005), β2 (Ball et al., 2002; Katiyar et al., 2015), and α2δ4 (Wang et al., 2017; Wycisk et al., 2006) have all demonstrated reduced synaptic contacts, malformed ribbons, and/or ectopic photoreceptor synapses with postsynaptic dendritic sprouting into the ONL, with concomitant synaptic transmission defects. It has also been suggested that photoreceptor synaptic dysfunction is the initiating event that causes horizontal cells to sprout ectopic dendrites in retinal degeneration (Soto and Kerschensteiner, 2015). That the absence of Syt1 from photoreceptors did not affect the development or maintenance (up to 10 postnatal weeks) of rod or cone synapses was surprising given its integral role in photoreceptor neurotransmission. However, consistent with our results, Cao et al. (2015) found that expressing tetanus toxin to silence mouse photoreceptors throughout development caused only subtle morphological changes to photoreceptor ribbons and occasional ectopic sprouting of postsynaptic dendrites without major changes in ONL/OPL architecture. When the integral ribbon protein RIBEYE was deleted in mice, neurotransmission was diminished but OPL anatomy was not markedly altered (Maxeiner et al., 2016). Another study that deprived developing mice of visual experience found only a subtle effect on the formation of cone synapses, but not rod synapses (Dunn et al., 2013). Finally, mutations of postsynaptic mGluR6 signaling cascade members disrupt communication, but not synaptic anatomy, between photoreceptors and ON bipolar cells (McCall and Gregg, 2008). These results support the hypothesis that ribbon-associated Ca2+ channel complexes, ribbon structural components, trans-synaptic protein interactions, or other Ca2+-dependent processes (i.e., as a second messenger) may be the dominant factors establishing photoreceptor synaptic connectivity (Joiner and Lee, 2015; Schmitz, 2009). Because Syt1 is a vesicular protein with no direct association with the ribbon complex, our results are consistent with previous studies emphasizing the importance of proteins involved in active zone organization while suggesting a limited role for light-evoked neurotransmission in maintaining photoreceptor synapse integrity.
 
@@ -158,11 +158,161 @@ Spontaneous activity is understood to play a key role in synaptogenesis within t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>HRGP-Cre</td>
+      <td>PMID: 15635292</td>
+      <td>NA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Syt1flox</td>
+      <td>PMID: 28511701</td>
+      <td>NA</td>
+      <td>Syt1: MGI:99667</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Ai14</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td>PMID: 20023653</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>Rho-iCre</td>
+      <td>Jackson Laboratories</td>
+      <td>RRID:IMSR_JAX:015850</td>
+      <td>PMID: 15682388</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-calbindin</td>
+      <td>Swant</td>
+      <td>CB38; RRID:AB_2721225</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CtBP2</td>
+      <td>BD</td>
+      <td>612044; RRID:AB_399431</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-CtBP2</td>
+      <td>Santa Cruz</td>
+      <td>sc-5966; RRID:AB_2086774</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CaV1.4</td>
+      <td>Dr. Amy Lee, U. of Iowa</td>
+      <td>RRID:AB_2650487</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peanut agglutinin (PNA, FITC conjugated)</td>
+      <td>Bionexus</td>
+      <td>BN-F44</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peanut agglutinin (PNA, Cy-5 conjugated)</td>
+      <td>Vector Laboratories</td>
+      <td>CL-1075</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-PKC</td>
+      <td>Santa Cruz</td>
+      <td>sc-10800; RRID:AB_2168560</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-PSD95</td>
+      <td>Abcam</td>
+      <td>ab18258; RRID:AB_444362</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-secretagogin</td>
+      <td>Biovendor</td>
+      <td>RD181120100; RRID:AB_2034060</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Syt1*Oyster550</td>
+      <td>Synaptic Systems</td>
+      <td>105 011C3; RRID:AB_887827</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat secondary (Alexa Fluor 488 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11055; RRID:AB_142672</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse-FITC</td>
+      <td>BD</td>
+      <td>554001; RRID:AB_395197</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit secondaries (Alexa Fluor 488 and 568 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11008, A11011; RRID:AB_143165, AB_143157</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit secondary (Alexa Fluor 568 conjugated)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10042; RRID:AB_2534017</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit secondary (Alexa Fluor 647 conjugated)</td>
+      <td>Abcam</td>
+      <td>Ab150075; RRID:AB_2752244</td>
+      <td>1:200</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Control and mutant mice were bred on predominantly or wholly C57/Bl6J backgrounds. Mice were kept on 12 hr dark-light cycles. HRGP-Cre and Syt1flox (Syt1: MGI:99667) mice have been described previously (Le et al., 2004; Quadros et al., 2017). Rho-iCre (RRID:IMSR_JAX:015850) and td-Tomato Cre reporter Ai14 (RRID:IMSR_JAX:007914) mice were obtained from Jackson Labs (Li et al., 2005; Madisen et al., 2010). Control mice for ERGs and rod single-cell recordings were Rho-iCrenegative, Syt1flox/flox mice. Control mice for cone single-cell recording experiments were HRGP-Cre+, Syt1+/flox, tdTomato+ mice. Mice aged 3–6 weeks of both sexes were used. Euthanasia was conducted in accordance with AVMA Guidelines for the Euthanasia of Animals by CO2 asphyxiation followed by cervical dislocation. All animal care and handling protocols were approved by the University of Nebraska Medical Center Institutional Animal Care and Use Committee.
 
-## Electroretinography (ERG)
+### Electroretinography (ERG)
 
 Ex vivo ERGs were recorded using an enucleated eyecup preparation and chamber as described in detail by Newman and Bartosch (1999). Mice were dark-adapted for >30 min and then euthanized and dissected in darkness under infrared illumination. Eyes were enucleated with Graefe forceps and placed in Ames’ solution bubbled with 95% O2/5% CO2. The anterior portion of the eye and the lens were removed while bathed in Ames’ solution and discarded. Relieving cuts were made in the back half of the eye which was then everted over a Ag/AgCl pellet embedded in a small mound of dental wax in the bottom half of the recording chamber. The top half of the recording chamber with another Ag/AgCl electrode was then placed carefully over the eye and secured as described (Newman and Bartosch, 1999). The chamber was kept in darkness while it was transferred to the microscope stage. The eyecup was superfused with ~35°C Ames’ solution bubbled with 95% O2/5% CO2 supplemented with BaCl2 and glutamic acid (both 100 µM) for the duration of the experiment. Once in the recording configuration, the eyecup preparation was dark-adapted >20 min before light stimuli were delivered.
 
@@ -170,20 +320,20 @@ Light stimuli were generated by a 50 W halogen lamp focused onto a fiber optic w
 
 For most experiments, single flash ERGs were evoked using a 20 ms flash. At low light intensity (<103 below maximum), stimulus trials were separated by at least 10 s. At higher light intensities, trials were separated by minutes. For flicker experiments, flashes of 20 ms duration with an equal duration of darkness between flashes (on-off square wave) were delivered. In flicker trials, responses to 25 consecutive square wave periods were recorded and the average ERG response was calculated by averaging the ERG from periods 5–25 to avoid contamination from the larger initial light-evoked waveform. These average flicker responses were normalized by dividing by the amplitude of the b-wave evoked by the first flash applied during the trial and corrected for non-zero slope (arising from slow ERG components or drift) to facilitate comparison among samples. ERGs were recorded using PClamp software (Axon Instruments/Molecular Devices; RRID:SCR_011323) in current clamp configuration, AC coupled at 0.1 Hz, and lowpass filtered at 3 kHz. A-wave amplitudes were measured from the pre-stimulus baseline and b-wave amplitudes were measured from the a-wave trough to the b-wave peak.
 
-## Electrophysiology
+### Electrophysiology
 
 Slice and flatmount experiments were performed on an upright fixed-stage microscope (Nikon E600FN) under a water-immersion objective (60×, 1.0 NA). Cell bodies were identified morphologically for rods or using tdTomato fluorescence for cones. Recording electrodes were positioned with Huxley-Wall micromanipulators (Sutter Instruments). Rods and cones were recorded in flatmount retinal preparations and cones were also recorded using vertical retinal slices prepared similarly to salamander slices (Van Hook and Thoreson, 2013). After obtaining a gigaohm seal, the patch was ruptured with gentle suction. Photoreceptor recordings were performed in voltage clamp using an Axopatch 200B (Axon Instruments, Molecular Devices) amplifier. Cone membrane currents from the Axopatch were filtered at 2 kHz. Some membrane currents were low-pass filtered post-hoc at 600 Hz to facilitate data presentation. Signals were digitized with a Digidata 1322A (Molecular Devices) and acquired with pClamp 10 software (Molecular Devices). Passive membrane resistance was subtracted from ICa and IA(Glu) currents using P/8 subtraction. Voltages were not corrected for liquid junction potentials (CsGluconate pipette solution: 12.3 mV, KSCN pipette solution: 3.9 mV). For V0.5 calculations, ICa and QCa measurements were fit with Boltzmann functions adjusted for Ca2+ driving force assuming a Ca2+ reversal potential of +50 mV. IA(Glu) charge transfer was measured from the end of the test step until the current returned to baseline.
 
 Whole cell recordings were performed at room temperature. Preparations were constantly superfused at ~1 mL/min with Ames solution (US Biological) bubbled with 95% O2/5% CO2. The solution in Figure 5 in which 20 mM HEPES was supplemented to the Ames solution was prepared to maintain consistent [Ca2+] and osmolarity by first dividing the control Ames medium into two portions. 20 mM HEPES was then added to one portion, its pH was readjusted to 7.3 with NaOH, and the solution was diluted with H2O to reach an osmolarity of 275–280 (approximately 10% dilution). The control solution was then also diluted 10% and its osmolarity was returned to 275–280 with NaCl. The intracellular pipette solution for ICa measurements contained (in mM): 120 CsGluconate, 10 TEACl, 10 HEPES, 2 EGTA, 1 CaCl2, 1 MgCl2, 0.5 NaGTP, 5 MgATP, five phosphocreatine, pH 7.2–7.3. For IA(Glu) measurements, KSCN replaced CsGluconate in the intracellular solution and EGTA was raised to 5 mM. All chemical reagents were obtained from Sigma-Aldrich unless indicated otherwise. Membrane capacitance, membrane resistance, and access resistance values for cones in slices using the CsGluconate pipette solution averaged 9.4 ± 0.4 pF, 1.1 ± 0.07 GΩ, and 74 ± 4.0 MΩ (n = 30); and for cones in flatmounts using the KSCN solution were 6.2 ± 0.2 pF, 0.53 ± 0.05 GΩ, and 77 ± 6.5 MΩ (n = 27). For rods using the CsGluconate pipette solution these values averaged 3.3 ± 0.2 pF, 2.0 ± 0.4 GΩ, and 55 ± 12 MΩ (n = 8); and for the KSCN solution were 3.6 pF ± 0.2, 1.9 ± 0.2 GΩ, and 56 ± 7.9 MΩ (n = 12, all rods were recorded in flatmounts).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice aged 4–6 weeks were euthanized as described and eyes were enucleated in Ames solution. For immunohistochemistry sections, the anterior portion of the eye was removed and the posterior eyecup was fixed in 4% paraformaldehyde for 30–40 min, washed 6 times for 10 min each in PBS, and cryoprotected overnight at 4°C in 30% sucrose. Eyecups were embedded in OCT compound (Sakura Finetek USA) and stored at −80°C until sectioning at 20–30 µm with a cryostat (Leica CM 1800). For experiments in which tdTomato+ cone terminal density was quantified, retinas were removed from the eyecup, fixed for 15 min in 4% paraformaldehyde, washed in PBS, and flatmounted photoreceptor side up. For antibody staining, retinal sections were treated with a blocking solution of 1% Triton X-100% and 6% donkey serum (Jackson Labs) before both the primary and secondary antibody application steps. Primary and secondary antibodies were diluted to working concentrations in blocking solution. Sections were incubated in primary antibodies at 4°C for 1–3 nights and in secondary antibodies at room temperature for 2–3 hr. Both retinal sections and flatmount retinas were mounted with Vectashield (Vector Labs, RRID:AB_2336787) before imaging. The specificities of anatomical markers have been described previously: calbindin (Massey and Mills, 1996), CtBP2 (Schmitz et al., 2000), PKCα (Greferath et al., 1990), PNA (Blanks and Johnson, 1984), PSD95 (Koulen et al., 1998), and secretagogin (Puthussery et al., 2010). Primary and secondary antibodies plus dilutions are listed in the Key Resources table. Confocal imaging was performed using NIS Elements software (Nikon, RRID:SCR_014329) and a laser confocal scanhead (Perkin Elmer Ultraview LCI) equipped with a cooled CCD camera (Hamamatsu Orca ER, RRID:SCR_017105) mounted on a Nikon E600FN microscope. Fluorescent excitation was delivered from an argon/krypton laser at 488, 568, or 648 nm wavelengths and emission was collected at 525, 607, and 700 nm, respectively. Filters were controlled using a Sutter Lambda 10–2 filter wheel and controller. The objective was controlled using a E662 z-axis controller (Physik Instrumente). Images were analyzed and adjusted using Nikon Elements, Fiji, and Adobe Photoshop software. TdTomato+ cone terminal densities were quantified by averaging the density of multiple separate 0.01 mm2 areas of random eccentricity per retina. Retinal layer thickness measurements were made using clear boundaries of layer-specific antibodies (e.g., Syt1 in control retinas clearly defines the boundaries of the OPL and IPL) measured every 10 μm on two different confocal planes (separated by >2 μm) from each cryosection, producing average thicknesses calculated from 20 to 40 measurements per mouse.
 
-## Electron microscopy
+### Electron microscopy
 
 Retinal pieces were fixed overnight at 4 deg C in 2% glutaraldehyde, 2% paraformaldehyde, and 0.1 M Sorensen’s phosphate buffer (pH 7.4). After fixation, retinas were washed three times in phosphate-buffered saline and then placed in 1% osmium tetroxide. Samples were dehydrated through a graded ethanol series with each concentration (50%, 70%, 90%, 95%, 100%) applied for 3 min. Retinas were then washed three times with 100% propylene oxide. Samples were left overnight in a 1:1 mixture of Araldite embedding medium and propylene oxide, embedded in fresh Araldite in silicon rubber molds, and then placed in an oven at 65°C overnight. Resulting blocks were thin sectioned on a Leica UC6 ultramicrotome and placed on 200 mesh copper grids. Sections were stained with 1% uranyl acetate and Reynold’s lead citrate. Sections were examined in a FEI Tecnai G2 TEM operated at 80 kV.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis and data visualization were done using GraphPad Prism. Where applicable, p values were adjusted for multiple comparisons using the Holm-Šídák method for multiple one-way ANOVA and t-tests. Post-hoc testing for one-way ANOVAs was done using Dunnett’s tests. The criterion for statistical significance was set at α = 0.05. Data is presented as mean ± SEM.

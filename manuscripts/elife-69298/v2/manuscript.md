@@ -23,7 +23,7 @@
 
 ## Abstract
 
-Landscape fire smoke (LFS) has been associated with reduced birthweight, but evidence from low- and middle-income countries (LMICs) is rare. Here, we present a sibling-matched case–control study of 227,948 newborns to identify an association between fire-sourced fine particulate matter (PM 2.5 ) and birthweight in 54 LMICs from 2000 to 2014. We selected mothers from the geocoded Demographic and Health Survey with at least two children and valid birthweight records. Newborns affiliated with the same mother were defined as a family group. Gestational exposure to LFS was assessed in each newborn using the concentration of fire-sourced PM 2.5 . We determined the associations of the within-group variations in LFS exposure with birthweight differences between matched siblings using a fixed-effects regression model. Additionally, we analyzed the binary outcomes of low birthweight (LBW) or very low birthweight (VLBW). According to fully adjusted models, a 1 µg/m 3 increase in the concentration of fire-sourced PM 2.5 was significantly associated with a 2.17 g (95% confidence interval [CI] 0.56–3.77) reduction in birthweight, a 2.80% (95% CI 0.97–4.66) increase in LBW risk, and an 11.68% (95% CI 3.59–20.40) increase in VLBW risk. Our findings indicate that gestational exposure to LFS harms fetal health. PKU-Baidu Fund, National Natural Science Foundation of China, Peking University Health Science Centre, and CAMS Innovation Fund for Medical Sciences.
+Background:Landscape fire smoke (LFS) has been associated with reduced birthweight, but evidence from low- and middle-income countries (LMICs) is rare.Methods:Here, we present a sibling-matched case–control study of 227,948 newborns to identify an association between fire-sourced fine particulate matter (PM2.5) and birthweight in 54 LMICs from 2000 to 2014. We selected mothers from the geocoded Demographic and Health Survey with at least two children and valid birthweight records. Newborns affiliated with the same mother were defined as a family group. Gestational exposure to LFS was assessed in each newborn using the concentration of fire-sourced PM2.5. We determined the associations of the within-group variations in LFS exposure with birthweight differences between matched siblings using a fixed-effects regression model. Additionally, we analyzed the binary outcomes of low birthweight (LBW) or very low birthweight (VLBW).Results:According to fully adjusted models, a 1 µg/m3 increase in the concentration of fire-sourced PM2.5 was significantly associated with a 2.17 g (95% confidence interval [CI] 0.56–3.77) reduction in birthweight, a 2.80% (95% CI 0.97–4.66) increase in LBW risk, and an 11.68% (95% CI 3.59–20.40) increase in VLBW risk.Conclusions:Our findings indicate that gestational exposure to LFS harms fetal health.Funding:PKU-Baidu Fund, National Natural Science Foundation of China, Peking University Health Science Centre, and CAMS Innovation Fund for Medical Sciences.
 
 ## Introduction
 
@@ -37,27 +37,39 @@ All risk factors for adverse birth outcomes should be screened thoroughly to pro
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig1-v2.jpg)
 
-**Figure 1.:** 2.5 concentrations (average for 2000–2014) and the locations of the analyzed livebirths (gray dots).The circles represent the rate of very low birthweight births among the analyzed livebirths by country.
+**Figure 1.:** The circles represent the rate of very low birthweight births among the analyzed livebirths by country.
 
 ## Methods
 
-## Study population
+### Study population
 
 The birthweight data and relevant individual variables were extracted from 113 individual Demographic and Health Surveys (DHSs) representing 54 LMICs from 2000 to 2014 (Figure 1). The DHSs were conducted by the US Agency for International Development to characterize the demography and health of more than 90 developing countries. DHSs are usually conducted every 5 years in each country using a two-stage sampling design. Information on demographic factors, socioeconomic factors, and health status was collected from a nationally representative probability sample of households. Well-trained fieldworkers conducted the surveys using uniformly designed questionnaires in the native language. The primary sampling units (e.g., villages or blocks) have begun to be geocoded in recent waves using global positioning systems (GPSs). The GPS-enhanced DHSs were matched with environmental exposure and thus included in our analyses. Please refer to the open-access website for detailed information on the DHS database: https://www.dhsprogram.com/.
 
 All females aged 15–49 years within each selected household were eligible respondents of the survey. The health outcome analyzed in this study was birthweight. The DHSs asked the screened mothers to recall the birthweight of all children born during the 5 years leading up to the survey date. To characterize different levels of reduced birthweight, we examined two binary outcomes: LBW (birthweight <2500 g) and, other covariates, such as maternal age and birth time (in months), were extracted from the relevant questionnaires.
 
-## Exposure assessment
+### Exposure assessment
 
 We assessed ambient exposure to LFS as the PM2.5 concentration attributable to landscape fires (hereafter, defined as fire-sourced PM2.5), referring to a previous study (Stowell et al., 2019). The fire-sourced PM2.5 concentrations were estimated using the GEOS-Chem . The detailed settings of the GEOS-Chem are provided in the previous publication (Xue et al., 2021b) and briefly summarized here. We used the 11-01 version of GEOS-Chem model (https://geos-chem.seas.harvard.edu/). The meteorological fields to drive the model were directly obtained from Modern-Era Retrospective analysis for Research and Applications Version 2 (MERRA-2), which is freely distributed by the Goddard Earth Sciences Data and Information Services Center (https://disc.gsfc.nasa.gov/). Anthropogenic emissions inputted into the model were obtained from the global inventory of Community Emissions Data System (CEDS) (Hoesly et al., 2018), from 2000 to 2014; the fire emissions during the same period were collected from the Global Fire Emission Database (GFED4s, https://www.globalfiredata.org/). The GEOS-Chem finally simulated the ground-surface concentrations of PM2.5 in a regular grid of 2° × 2.5° across the world.
 
-The fire-sourced PM2.5 was derived from a comparison between two GEOS-Chem model runs. The two models were identical except for switching on and off fire emissions. We quantified the fraction (ρm) of fire-attributed PM2.5 using the following equation:(1)ρmy=(PM2.5,myon−PM2.5,myoff)/PM2.5,myom
+The fire-sourced PM2.5 was derived from a comparison between two GEOS-Chem model runs. The two models were identical except for switching on and off fire emissions. We quantified the fraction (ρm) of fire-attributed PM2.5 using the following equation:
+
+$$
+ρ_{_{my}}=(PM_{2.5,my}^{on}−PM_{2.5,my}^{off})/PM_{2.5,my}^{om}
+$$
 
 where the superscripts on and off denote the two simulations switching on and off fire emissions, respectively; and the subscripts m and y are month and year indicators, respectively.
 
-Additionally, considering the potential errors in the CTM procedure (Solazzo et al., 2012), the bias correction approach has been widely applied to improve CTM performance in exposure assessments using ground-surface observational data (Zhang et al., 2020). We utilized a well-developed and widely utilized product of satellite-based PM2.5 estimates (van Donkelaar et al., 2016) (PM2.5, ysatellite) in the bias correction. This product has a spatial resolution of 0.05° × 0.05° and was publicly available from 1998 to 2018 as the gridded annual mean (https://sites.wustl.edu/acag/datasets/surface-pm2-5/#V4.GL.03). However, since a key input into the product, satellite measurements of aerosol from the Moderate Resolution Imaging Spectroradiometer are only available after February 2000, we believe that the estimates after the date have a better quality than those before. Therefore, we utilized the product to calibrate the monthly GEOS-Chem simulations from February 2000 to December 2014. We prepared the GEOS-Chem simulations (ρm,y and PM2.5, m,yon) in the same 0.05° × 0.05° grid using an inversed distance-weighted downscaling approach before bias correction. The bias correction rate (ηy) was calculated as.(2)η=PM2.5,ysatellite÷(1/12∗∑mPM2.5,m,yon)
+Additionally, considering the potential errors in the CTM procedure (Solazzo et al., 2012), the bias correction approach has been widely applied to improve CTM performance in exposure assessments using ground-surface observational data (Zhang et al., 2020). We utilized a well-developed and widely utilized product of satellite-based PM2.5 estimates (van Donkelaar et al., 2016) (PM2.5, ysatellite) in the bias correction. This product has a spatial resolution of 0.05° × 0.05° and was publicly available from 1998 to 2018 as the gridded annual mean (https://sites.wustl.edu/acag/datasets/surface-pm2-5/#V4.GL.03). However, since a key input into the product, satellite measurements of aerosol from the Moderate Resolution Imaging Spectroradiometer are only available after February 2000, we believe that the estimates after the date have a better quality than those before. Therefore, we utilized the product to calibrate the monthly GEOS-Chem simulations from February 2000 to December 2014. We prepared the GEOS-Chem simulations (ρm,y and PM2.5, m,yon) in the same 0.05° × 0.05° grid using an inversed distance-weighted downscaling approach before bias correction. The bias correction rate (ηy) was calculated as
 
-The monthly exposure indicator of fire-sourced or non-fire-sourced PM2.5 was finally derived as(3)[Fire−sourcedPM2.5]m,y=ηy×ρm,y×PM2.5,m,yon,[Non−fire−sourcedPM2.5]m,y=ηy×(1−ρm,y)×PM2.5,m,yon
+$$
+η=PM_{2.5,y}^{satellite}\div(1/12∗\sum_{m}PM_{2.5,m,y}^{on})
+$$
+
+The monthly exposure indicator of fire-sourced or non-fire-sourced PM2.5 was finally derived as
+
+$$
+[Fire−sourcedPM_{2.5}]_{m,y}=η_{y}\timesρ_{m,y}\timesPM_{2.5,m,y}^{on},[Non−fire−sourcedPM_{2.5}]_{m,y}=η_{y}\times(1−ρ_{m,y})\timesPM_{2.5,m,y}^{on}
+$$
 
 We utilized the non-fire-sourced PM2.5 as a potential confounder in the subsequent epidemiological analysis. We also collected other environmental variables, including ambient temperature and humidity data, from an assimilated dataset called Modern-Era Retrospective analysis for Research and Applications, version 2 (please refer to the supplemental text for more details). The variables were downloaded as monthly gridded values and prepared in the 0.05° × 0.05° grid in the same way as we processed the GEOS-Chem outputs.
 
@@ -65,27 +77,35 @@ Since fire-sourced PM2.5 is mixed with particles from other sources, it cannot b
 
 To understand the associations between birthweight and environmental variables, we focused on exposure during gestation. As the DHSs did not record the specific duration of gestation, we utilized the 9-month average preceding the birth month as exposure time during pregnancy.
 
-## Study design
+### Study design
 
 To evaluate the association between fire-sourced PM2.5 and birthweight, we applied a sibling-matched case–control study, similar to our previous work (Xue et al., 2021b; Xue et al., 2021c; Xue et al., 2021c; Xue et al., 2019). We defined the descendants of the same mother as a family group of matched siblings and compared birthweights within each group. The family-level baseline birthweight (defined as the mean birthweight within each group) can be affected by many complex factors, including genetics, socioeconomic position, and quality of local medical services, which can be difficult to measure. We matched the mothers to control for those unmeasured confounders in the study design. A sibling-matched case–control design is a simple, robust, and cost-efficient method, particularly for large population data with potential heterogeneity (Colley et al., 2019; Curtis, 1997).
 
 We extracted the females with at as least two valid records of newborns from all available individual DHSs. Each valid record was defined using the following inclusion criteria: (1) a valid birthweight, (2) a record of the GPS coordinates, (3) a valid birthdate, and (4) valid environmental exposure values (some of the satellite-based PM2.5 estimates were not available for some locations, such as small islands). Finally, our dataset assembled 113 individual surveys from 54 countries (Figure 1) and included 227,948 newborns classified into 109,137 groups according to their mothers.
 
-## Statistical analyses
+### Statistical analyses
 
-According to the sibling-matched method, we used a fixed-effects regression model to evaluate the associations between fire-sourced PM2.5 and LBW or VLBW. The model was specified as(4)yi,j∼xi,jβ+zi,j+Θi
+According to the sibling-matched method, we used a fixed-effects regression model to evaluate the associations between fire-sourced PM2.5 and LBW or VLBW. The model was specified as
+
+$$
+y_{i,j}∼x_{i,j}\beta+z_{i,j}+Θ_{i}
+$$
 
 where the subscripts i and j denote the indices of the mother-affiliated group and child, respectively; xi,j denotes the concentration of fire-sourced PM2.5; zi,j denotes the adjusted covariates; yi,j denotes the outcome variable; and θi is a nuisance parameter for the fixed effect to control for group-specific unmeasured confounders. The model was specified as Gaussian regression when setting yi,j as the birthweight and as logit regression when setting yi,j as the logit-transformed probability of LBW or VLBW. The adjusted covariates included maternal age; child sex; multiple births; non-fire-sourced PM2.5; spline terms of birth order (with 5 degrees of freedom [DF]), of temperature (3 DF), of humidity (3 DF), of the calendar year (5 DF), and of the monthly index (4 DF); and a spatiotemporal effect parameterized by the interaction between country and calendar year. The nonlinear effects of month and year controlled for the seasonal periodic variation and long-term trend in child health, respectively. The spatiotemporal effect captured country-specific trends. The association between birthweight and LFS was evaluated by the regression coefficient β for 1 μg/m3 increases in fire-sourced PM2.5. The association with LBW or VLBW was evaluated by excess risk [ = (1 – exp(β)) × 100%] for a 1 μg/m3 increase in fire-sourced PM2.5. All environmental exposures were quantified using the same time window. The major time window was the 9 months before birth. We also calculated the alternative exposure indicator as an average during the 3 or 6 months preceding birth.
 
 In sensitivity analyses, we first derived the lag-distributed model to explore how the association varied during the exposure time window. As the specific duration of gestation was not recorded, before actual data analysis, we utilized the 9-month average preceding the birth month as the major exposure time window. After conducting the major analysis, we re-estimated the effects of fire-sourced PM2.5 on birthweight change, LBW, or VLBW, by different time windows using the lag-distributed model. Next, subpopulation-specified associations were estimated using interaction analyses to detect potential heterogeneity. Third, we developed nonlinear associations by replacing the linear term of fire-sourced PM2.5 using a set of thin-plate spline functions. Fourth, to examine potential recall bias, we estimated the associations by strata of the durations from birth to survey time (the duration is defined as recall period in this study). We assumed a shorter recall period indicated for a lower likelihood of outcome misclassification. Fifth, to test whether the estimated associations were attributable to LFS exposure or other direct damage related to landscape fires (e.g., destroying human habitats), we derived an indicator for the transported fire-sourced PM2.5, according to a satellite image of the burned area (MCD64A1, https://lpdaacsvc.cr.usgs.gov/appeears/). The fire-sourced PM2.5 at the pixels with the zero-burned area during gestation were defined as smoke transported from other locations. The associations with transported fire-sourced PM2.5 could be indicative of the effect of LFS exposure via the inhalation pathway.
 
-Family-level baseline birthweight and the correlated gestation length can be determined by factors such as genetics and socioeconomic level, which may also affect the association between the within-group change in birthweight and LFS exposure. The fixed-effects regression models actually infer an association by examining the coherence between derivation of individual-level birthweight from the family-level mean (i.e., the expected birthweight given a specific family) and the corresponding exposure. To show that, we defined the family-level baseline birthweight as yi. Equation (4) was equivalently transformed as Δyi,j = (yi,j − yi) ~ xi,j β+ zi,jγ + (θi − yi), where (θi − yi) is viewed as a new nuisance parameter θi*. The nature of fixed-effects model made it possible to explore how the effect of fire-sourced PM2.5 varied according to family-level mean birthweight. Accordingly, we derived a baseline-varying association model as follows:(5)△yi,j∼f(yi)xi,j+zi,jy+Θi∗
+Family-level baseline birthweight and the correlated gestation length can be determined by factors such as genetics and socioeconomic level, which may also affect the association between the within-group change in birthweight and LFS exposure. The fixed-effects regression models actually infer an association by examining the coherence between derivation of individual-level birthweight from the family-level mean (i.e., the expected birthweight given a specific family) and the corresponding exposure. To show that, we defined the family-level baseline birthweight as yi. Equation (4) was equivalently transformed as Δyi,j = (yi,j − yi) ~ xi,j β+ zi,jγ + (θi − yi), where (θi − yi) is viewed as a new nuisance parameter θi*. The nature of fixed-effects model made it possible to explore how the effect of fire-sourced PM2.5 varied according to family-level mean birthweight. Accordingly, we derived a baseline-varying association model as follows:
+
+$$
+△y_{i,j}∼f(y_{i})x_{i,j}+z_{i,j}y+Θ_{i}^{∗}
+$$
 
 All analyses were performed in R (version 4.0.2; The R Foundation for Statistical Computing, Vienna, Austria). Inference for the fixed-effects models was performed using the fixest package. The lag-distributed effect was parameterized using the dlnm package, and the thin-plate splines for the nonlinear association and baseline-varying effect were parameterized using the mgcv package. Source data for figures and R codes for the epidemiological models are documented in Source code 1.
 
 ## Results
 
-## Descriptive summary
+### Descriptive summary
 
 Among the 227,948 livebirths analyzed from 54 LMICs, there were 109,137 groups of siblings who were matched to their mothers. Each group had an average of 2.13 (standard deviation [SD] 0.36) livebirths. Approximately half of the livebirths were from Sub-Saharan Africa and one-quarter from South Asia. The mean birthweight was 3,082 (SD 724) g. There were 31,854 LBW births and 2,912 very low birthweight (VLBW) births. More statistics on the analyzed livebirths are shown in Supplementary file 1b.
 
@@ -93,21 +113,79 @@ The spatial distribution of the long-term average fire-sourced PM2.5 concentrati
 
 Gestational exposure to fire-sourced PM2.5 varied widely between family groups; it was higher in those living closer to hotspot regions (e.g., forests). Approximately 92% of the variation in fire-sourced PM2.5 exposure was between family groups and 8% was within family groups. For the total variation in birthweight, 71.7% was between groups and 28.3% within groups (Table 1). The within- or between-group variations reflected temporal or spatial changes in those variables, respectively. Birthweight and fire-sourced PM2.5 were negatively correlated in the temporal dimension but positively correlated in the spatial dimension. As the spatial patterns in birthweight and fire-sourced PM2.5 were determined by geographic, socioeconomic, and cultural factors, the between-group correlations may have been confounded by their common determiners, such as urbanization level. The complex correlations between birthweight and LFS suggest that statistical inference of their associations should be cautiously determined based on well-designed epidemiological analysis.
 
-## Association between LFS and birthweight
+**Table 1.**
+ Between- or within-group variations in birthweight and gestational exposure to fire-sourced PM2.5 and their correlations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2">Standard deviation (% of total variance)</th>
+      <th rowspan="2">Correlation (R)</th>
+    </tr>
+    <tr>
+      <th>Birthweight(g)</th>
+      <th>Fire-sourced PM2.5 g/m3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total</td>
+      <td>724 (100%)</td>
+      <td>5.53 (100%)</td>
+      <td>0.1594</td>
+    </tr>
+    <tr>
+      <td>Between groups of matched siblings</td>
+      <td>613 (71.7%)</td>
+      <td>5.30 (91.7%)</td>
+      <td>0.1973</td>
+    </tr>
+    <tr>
+      <td>Within groups of matched siblings</td>
+      <td>386 (28.3%)</td>
+      <td>1.59 (8.3%)</td>
+      <td>−0.0035</td>
+    </tr>
+  </tbody>
+</table>
+
+### Association between LFS and birthweight
 
 Although the fully adjusted model indicated that a 1 µg/m3 increase in exposure to fire-sourced PM2.5 during the 9 months before birth was significantly associated with a 2.17 g (95% CI 0.56–3.77) birthweight reduction, the association was sensitive to differences in the adjusted covariates and exposure time window (Figure 2). For example, the unadjusted model reported the estimated effect as a birthweight reduction of 0.84 g (95% CI −0.53 to 2.22). The lag-specific associations did not display a clear time-varying pattern (Figure 2—figure supplement 1), which suggests a linear increase in strength in the association with increased length of the exposure time window (Figure 2, Figure 2—figure supplement 2). The subpopulation-specific results suggest that the association was potentially heterogeneous (Figure 2—figure supplement 3). The association was stronger for female infants, newborns of nulliparous mothers, or newborns of unemployed mothers compared with the corresponding references (i.e., male infants, newborns of multiparous mothers, or newborns of employed mothers, respectively). The nonlinear analysis confirmed the adverse effect of LFS on birthweight (Figure 3). The sublinear association suggests a saturated effect of an ~60 g birthweight reduction for exposure to extreme fires, which contributed to a PM2.5 concentration >~20 µg/m3.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig2-v2.jpg)
+
+**Figure 2.:** The dots with error bars show the estimated associations between gestational exposure to fire-sourced PM2.5 and birthweight change, low birthweight, or very low birthweight. The dots represent the point estimates, and bars represent the corresponding 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The nth lagged exposure is defined as the concentration of fire-sourced PM2.5 during the nth month before birth. The results are estimated from the lag-distributed models.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig2-figsupp3-v2.jpg)
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig3-v2.jpg)
 
-**Figure 3.:** 2.5 and change in birthweight.The solid line represents the point estimates, the dashed line represents the 95% confidence intervals, the boxplots represent the distributions of different exposure levels by regions, and the red dots represent the mean exposure level.
+**Figure 3.:** The solid line represents the point estimates, the dashed line represents the 95% confidence intervals, the boxplots represent the distributions of different exposure levels by regions, and the red dots represent the mean exposure level.
 
-## Association between LFS and VLBW
+### Association between LFS and VLBW
 
 Our fully adjusted models suggested that LFS exposure during the 9 months before birth was significantly associated with an increased risk of LBW or VLBW. According to the estimates, the risks of LBW and VLBW increased by 2.80% (95% CI 0.97–4.66) and 11.68% (95% CI 3.59–20.40), respectively, for each 1 µg/m3 increase in exposure to fire-sourced PM2.5. Compared to LBW, VLBW was more strongly associated with fire-sourced PM2.5. The estimated association for LBW was sensitive to different covariate adjustments (Figure 2) and was potentially heterogeneous among subpopulations (Figure 2—figure supplement 3). The association for VLBW was robust, given the adjustments for different covariates (Figure 2), and was less heterogeneous (Figure 2—figure supplement 3). Among all effect modifiers, only the type of cooking energy, which was indicated for indoor sources of particulate matter, significantly changed the association between VLBW and fire-sourced PM2.5 (p-value = 0.02, Figure 2—figure supplement 3). The use of unclear cooking energy, as a competing risk factor for fire-sourced PM2.5, significantly weakened the association between VLBW and fire-sourced PM2.5.
 
 To further explore why VLBW was more strongly associated with fire-sourced PM2.5 than was LBW, we developed a model to estimate the baseline-varying association between birthweight and fire-sourced PM2.5. As a result, the absolute change in birthweight for per unit exposure to fire-sourced PM2.5 varied with the baseline of family-level mean birthweight (Figure 4—figure supplement 1). Livebirths with an extremely low or high baseline birthweight were more susceptible to fire-sourced PM2.5 than were those with a moderate baseline birthweight in terms of the absolute birthweight change (Figure 4—figure supplement 1). As a reduction in birthweight and a family-level baseline co-determined the increased incidence of LBW or VLBW, the relative change in birthweight reflected the relevant risk. Newborns from families with a lower baseline were more susceptible to fire-sourced PM2.5 in terms of a relative birthweight reduction (Figure 4). This finding partially explains why gestational exposure to fire-sourced PM2.5 was robustly and strongly associated with VLBW. According to our estimates, a 1 µg/m3 increase in fire-sourced PM2.5 was associated with a relative birthweight reduction of 1.47% (95% CI 0.06–2.88), 0.54% (95% CI 0.03–1.05), 0.16% (95% CI 0.01–0.31), or 0.03% (95% CI −0.04–0.10) for livebirths with a baseline birthweight of 1500, 2000, 2500, or 3000 g, respectively.
 
-## Sensitivity analyses
+![Figure 4.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig4-v2.jpg)
+
+**Figure 4.:** The lines show the estimated association (y-axis) between gestational exposure to fire-sourced PM2.5 and relative change in birthweight, given different baseline birthweights (x-axis). The solid line represents the point estimates, the dashed line represents the 95% confidence intervals, and the boxplots represent the distributions of different birthweights by region.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69298/elife-69298-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The solid line presents the point estimates, the dashed line presents the 95% confidence intervals, and the boxplots present the distributions of different birthweight levels by regions.
+
+### Sensitivity analyses
 
 First, we explored potential recall bias using sensitivity analyses, and the estimated associations were not significantly different according to recall period (Figure 2—figure supplement 3). Second, we examined the spatial variations in the estimated associations. Although analysis of differences in region-specific associations reported nonsignificant results (Figure 2—figure supplement 3), we could not completely rule out the possibility of spatial heterogeneity in the estimated results. As most of our analyzed livebirths were from Sub-Saharan Africa, only those estimates were significant, and the remaining region-specific results had wide-ranging 95% CIs (Figure 2—figure supplement 3). Third, we explored whether the estimated adverse effects were attributable to ambient LFS exposure or other impacts (e.g., social stress) relevant to landscape fires. The estimated effects of exposure to fire-sourced PM2.5 were not significantly different between locations without burning and those with burning (Figure 2—figure supplement 3). These results confirm that ambient exposure was the major exposure pathway for our analyzed outcomes.
 

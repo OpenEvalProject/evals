@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01e94xy17 Northern New Mexico College Española United States
-2. https://ror.org/05fs6jp91 Department of Molecular Genetics and Microbiology, University of New Mexico School of Medicine Albuquerque United States
-3. https://ror.org/017zqws13 Department of Microbiology and Immunology, University of Minnesota Medical School Minneapolis United States
-4. https://ror.org/05fs6jp91 Department of Computer Science, University of New Mexico Albuquerque United States
-5. https://ror.org/05fs6jp91 Autophagy, Inflammation, and Metabolism Center of Biomedical Research Excellence, University of New Mexico School of Medicine Albuquerque United States
+1. Northern New Mexico College Española United States ([ROR:01e94xy17](https://ror.org/01e94xy17))
+2. Department of Molecular Genetics and Microbiology, University of New Mexico School of Medicine Albuquerque United States ([ROR:05fs6jp91](https://ror.org/05fs6jp91))
+3. Department of Microbiology and Immunology, University of Minnesota Medical School Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+4. Department of Computer Science, University of New Mexico Albuquerque United States ([ROR:05fs6jp91](https://ror.org/05fs6jp91))
+5. Autophagy, Inflammation, and Metabolism Center of Biomedical Research Excellence, University of New Mexico School of Medicine Albuquerque United States ([ROR:05fs6jp91](https://ror.org/05fs6jp91))
 
 † Corresponding author
 
 ## Abstract
 
-T cells are required to clear infection, and T cell motion plays a role in how quickly a T cell finds its target, from initial naive T cell activation by a dendritic cell to interaction with target cells in infected tissue. To better understand how different tissue environments affect T cell motility, we compared multiple features of T cell motion including speed, persistence, turning angle, directionality, and confinement of T cells moving in multiple murine tissues using microscopy. We quantitatively analyzed naive T cell motility within the lymph node and compared motility parameters with activated CD8 T cells moving within the villi of small intestine and lung under different activation conditions. Our motility analysis found that while the speeds and the overall displacement of T cells vary within all tissues analyzed, T cells in all tissues tended to persist at the same speed. Interestingly, we found that T cells in the lung show a marked population of T cells turning at close to 180 o , while T cells in lymph nodes and villi do not exhibit this “reversing” movement. T cells in the lung also showed significantly decreased meandering ratios and increased confinement compared to T cells in lymph nodes and villi. These differences in motility patterns led to a decrease in the total volume scanned by T cells in lung compared to T cells in lymph node and villi. These results suggest that the tissue environment in which T cells move can impact the type of motility and ultimately, the efficiency of T cell search for target cells within specialized tissues such as the lung.
+T cells are required to clear infection, and T cell motion plays a role in how quickly a T cell finds its target, from initial naive T cell activation by a dendritic cell to interaction with target cells in infected tissue. To better understand how different tissue environments affect T cell motility, we compared multiple features of T cell motion including speed, persistence, turning angle, directionality, and confinement of T cells moving in multiple murine tissues using microscopy. We quantitatively analyzed naive T cell motility within the lymph node and compared motility parameters with activated CD8 T cells moving within the villi of small intestine and lung under different activation conditions. Our motility analysis found that while the speeds and the overall displacement of T cells vary within all tissues analyzed, T cells in all tissues tended to persist at the same speed. Interestingly, we found that T cells in the lung show a marked population of T cells turning at close to 180o, while T cells in lymph nodes and villi do not exhibit this “reversing” movement. T cells in the lung also showed significantly decreased meandering ratios and increased confinement compared to T cells in lymph nodes and villi. These differences in motility patterns led to a decrease in the total volume scanned by T cells in lung compared to T cells in lymph node and villi. These results suggest that the tissue environment in which T cells move can impact the type of motility and ultimately, the efficiency of T cell search for target cells within specialized tissues such as the lung.
 
 ## Introduction
 
@@ -39,15 +39,226 @@ In this study, we quantitatively analyze T cell movement as one way to interroga
 
 ## Results
 
-## Speed
+### Speed
 
 We began our analysis with a comparison of the cell-based and displacement speeds of T cells in multiple tissues including naive CD4 and CD8 T cells in the LN in the absence of infection (Fricke et al., 2016) (LN) (Video 1); effector CD8 T cells moving in the villi in response to lymphocytic choriomeningitis virus infection at day 8 post infection (Thompson et al., 2019) (Villi) (Video 2); effector CD8 T cells moving in Lipopolysaccharide (LPS)-inflamed lung at days 7–8 post infection (Mrass et al., 2017) (Lung LPS) (Video 3); and effector CD8 T cells in influenza-infected lung at days 7–8 post infection (Lung Flu) (Video 4). Specifics about the cell tracks analyzed for each condition are found in Table 1. Table 2 shows statistics for a reduced data set where outliers are eliminated.
 
+![Video 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-video1.mp4.jpg)
+
+**Video 1.:** Naive T cells were isolated from LNs and spleen of Ubiquitin-GFP animals and adoptively transferred into naive C57Bl/6 recipients, then imaged using two-photon microscopy as described in Fricke et al., 2016, PLoS Computational Biology. GFP+ naive T cells were imaged as described, tracked, and analyzed. The video contains a representative image from multiple fields of LNs imaged. The data are reproduced under the Creative Commons CC-BY 4.0 license.
+
+![Video 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-video2.mp4.jpg)
+
+**Video 2.:** Naive P14-GFP CD8 T cells were transferred to B6 mice that were infected with LCMV 1 day later. At days 5 and 8 after infection, the jejunum was imaged via TPLSM. The representative time-lapse videos show P14-GFP CD8 T cells (cyan) at the indicated time points. Hoechst stain (blue) was injected prior to imaging. Reproduced from Thompson et al. Cell Reports 2019 Video S1 under CC BY-NC-ND 4.0 license. Only D8 T cells are shown and D5 movie removed from original file.
+
+![Video 3.](https://cdn.elifesciences.org/articles/84916/elife-84916-video3.mp4.jpg)
+
+**Video 3.:** Left panel: Maximum projection of movie‐sequence capturing adoptively transferred T cells (green) within an explanted lung. Trajectories (white lines) show the position of analyzed cells over time. Hours:minutes:seconds are shown in the left bottom corner. Right panel: 3D depiction of cell positions (green circles) and trajectories (blue lines) over time. To improve depth perception, the image volume is rotating during replay. Reproduced from Supplementary Movie 1 in Mrass et al., 2017, Nature Communications, Supplementary Movie 1 under Creative Commons CC-BY 4.0 license.
+
+![Video 4.](https://cdn.elifesciences.org/articles/84916/elife-84916-video4.mp4.jpg)
+
+**Video 4.:** Naive CD8 T cells from Ubiquitin-GFP animals were isolated and adoptively transferred into naive C57Bl/6 mice, then infected with $1\times10^{3}$ HKx31. At d8 post infection, lungs were removed and imaged with a heated and oxygenated chamber.
+
+**Table 1.**
+ Two-photon microscopy T cell data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Lymph node (LN)</th>
+      <th>Small intestine (villi)</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of T cells</td>
+      <td>4400</td>
+      <td>425</td>
+      <td>355</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>Type of T cell</td>
+      <td>Naive</td>
+      <td>Activated</td>
+      <td>Activated</td>
+      <td>Activated</td>
+    </tr>
+    <tr>
+      <td>Mode of activation</td>
+      <td>Not activated</td>
+      <td>In vivo</td>
+      <td>In vitro</td>
+      <td>In vivo</td>
+    </tr>
+    <tr>
+      <td>T cell specificity</td>
+      <td>Polyclonal</td>
+      <td>TCR transgenic</td>
+      <td>Polyclonal and TCR transgenic</td>
+      <td>Polyclonal</td>
+    </tr>
+    <tr>
+      <td>Imaging modality</td>
+      <td>Tissue explant</td>
+      <td>In situ</td>
+      <td>Tissue explant</td>
+      <td>In situ and tissue explant</td>
+    </tr>
+    <tr>
+      <td>Source</td>
+      <td>Fricke et al., 2016; Tasnim et al., 2018</td>
+      <td>Thompson et al., 2019</td>
+      <td>Mrass and Cannon</td>
+      <td>Mrass et al., 2017</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Comparison of inter-tissue versus intra-tissue variability in cell motility.We performed an analysis of variance (ANOVA) study which computes a ratio of differences in means between groups and within groups. The ANOVA test uses a F-distribution which computes a ratio of between- and within-group variance. We previously showed that in the lymph node (LN), motility of T cells captured in different fields and on different days from different LNs of different mice did not contribute significantly to variation within T cell movement of the data set (Letendre et al., 2015). To test intra-tissue variability, the groups consisted of frames composed of two-photon tracks within the same tissue of a single mouse. To test inter-tissue variability, the sets consisted of the aggregated frames of two-photon tracks of all mice imaged in the same tissue. To assess intra-tissue variability compared with inter-tissue variability, we performed an ANOVA analysis of cell-based speed. ANOVA analysis shows that while there exist significant differences in T cell motility between the different tissues (Column 3, Row 2), ANOVA analysis also shows that there exist even more significant differences within frames of each individual tissue, particularly of T cells in the LN (Column 3, Rows 3–6). We found the same trend when performing the ANOVA test with the displacement speed and volume per time. To decrease the variability within a tissue type, we selected a reduced set of frames from each tissue based on statistical variability. Twenty-one frames of the most variable frames were removed from the 40 LN frames which increased the ANOVA p-value from $1.7\times10^{-204}$ to $4.8\times10^{-5}$ when the ANOVA test was re-run with the remaining nineteen frames using the cell-based speed (Row 3, Column 5). Two variable frames were removed from the ten villi frames which increased the ANOVA p-value from $7.7\times10^{-19}$ to $8.2\times10^{-4}$ (Row 4, Column 5). One frame was removed from the five lung (Flu) frames which increased the ANOVA p-value from $7.6\times10^{-7}$ to 0.38 (Row 5, Column 5). No frames were removed from the lung (LPS) data set as none were statistically variable from the other frames. The remaining number of T cells for each tissue is shown in Column 4. The dramatic increase in p-value demonstrates that the removed frames were outliers compared with the data from the same tissue. The data set with outlier frames removed is called the ‘reduced data set’. As the variability within each tissue is reduced, the inter-tissue p-value decreased from $3.5\times10^{-11}$ to $2.1\times10^{-20}$ in Row 2 when the reduced set of files is analyzed. The new inter-tissue p-value $2.1\times10^{-20}$ is significantly smaller than the p-values measuring the intra-tissue variability in Column 5, Rows 3–6 .
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Complete data set</th>
+      <th colspan="2">Reduced data set</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Col 1</td>
+      <td>Col 2</td>
+      <td>Col 3</td>
+      <td>Col 4</td>
+      <td>Col 5</td>
+    </tr>
+    <tr>
+      <td>Row 1</td>
+      <td>Groups</td>
+      <td>Number of cells and frames</td>
+      <td>ANOVA p-value</td>
+      <td>Number of cells and frames</td>
+      <td>ANOVA p-value</td>
+    </tr>
+    <tr>
+      <td>Row 2 Inter-tissue variability</td>
+      <td>Aggregated frames from LN, villi, lung (Flu), lung (LPS)</td>
+      <td>5371</td>
+      <td>3.5×10-11</td>
+      <td>2443</td>
+      <td>2.1×10-20</td>
+    </tr>
+    <tr>
+      <td>Row 3 Intra-tissue</td>
+      <td>LN frames</td>
+      <td>4400 cells 40 frames</td>
+      <td>1.7×10-204</td>
+      <td>1659 cells 19 frames</td>
+      <td>4.8×10-5</td>
+    </tr>
+    <tr>
+      <td>Row 4 Intra-tissue</td>
+      <td>Villi frames</td>
+      <td>425 cells 10 frames</td>
+      <td>7.7×10-19</td>
+      <td>296 cells 8 frames</td>
+      <td>8.2×10-4</td>
+    </tr>
+    <tr>
+      <td>Row 5 Intra-tissue</td>
+      <td>Lung (Flu) frames</td>
+      <td>355 cells 5 frames</td>
+      <td>7.6×10-7</td>
+      <td>297 cells 4 frames</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Row 6 Intra-tissue</td>
+      <td>Lung (LPS) frames</td>
+      <td>191 cells 3 frames</td>
+      <td>7.9×10-3</td>
+      <td>191 cells 3 frames</td>
+      <td>7.9×10-3</td>
+    </tr>
+  </tbody>
+</table>
+
 We previously found no difference in motility speed and patterns of naive CD4 and CD8 T cells in LNs (Fricke et al., 2016). To ensure consistency across analyses, we normalized time steps to 90 s for all data sets (for details, see Materials and methods). Figure 1A, B show the box-and-whisker plot of cell-based speed and displacement speed from each tissue.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig1-v2.jpg)
+
+**Figure 1.:** (A) Box-and-whisker plot of cell-based speed (µm/min) of T cells moving in lymph node (LN) (median 6.2), villi (median 6.5), lung (Flu infected) (median 5.2), and lung (LPS) (median 4.3). (B) Box-and-whisker plot of displacement speed (µm/min) of T cells in lymph (median 3.7), villi (median 3.3), lung (Flu infected) (median 1.1), and lung (LPS instilled) (median 1.6). (C) Distribution plot of probability to persist at the same speed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Relative frequency distribution of cell-based speed in lymph, villi, lung (Flu activated), and lung (LPS activated). The distributions use the cell-based speed of each T cell. (B) Relative frequency distribution of T cell displacement speed in lymph, villi, lung (Flu activated), and lung (LPS activated).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Box-and-whisker plot of cell-based speed (µm/min) of T cells moving in villi d5 (median 4.6), villi d8 (median 6.5), p-value < 2.0 x 10-16.(B) Box-and-whisker plot of displacement speed (µm/min) of T cells in d5 villi (median 2.2), d8 villi (median 3.3), p-value $<2.0\times10^{−16}$. (C) Distribution plot of probability to persist at the same speed.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Box-and-whisker plot of cell-based speed (µm/min) of T cells moving in lymph node (LN) (median 7.2), villi (median 7.2), lung (Flu infected) (median 6.0), and lung (LPS) (median 4.3). (B) Box-and-whisker plot of displacement speed (µm/min) of T cells in lymph (median 4.5), villi (median 4.1), lung (Flu infected) (median 1.4), and lung (LPS instilled) (median 1.6). (C) Distribution plot of probability to persist at the same speed. (D) Table of p-values of pairwise comparisons of cell-based speed as shown in Figure 1—figure supplement 3 using Wilcoxon rank sum test. (E) Table of p-values of pairwise comparisons of displacement speed shown in Figure 1—figure supplement 3 using Wilcoxon rank sum test.
 
 The median cell-based speed for naive T cells in the LN was 6.2 µm/min, CD8 effector T cells in the villi 6.5 µm/min, CD8 effector T cells from influenza-infected lung (Flu) 5.2 µm/min and CD8 effector T cells from LPS-inflamed lung (LPS) 4.3 µm/min. Pairwise p-values based on cell-based average speeds from two different tissues are reported in Table 3 . The p-values are computed using the paired Wilcoxon rank sum test (otherwise known as the Mann–Whitney U-test) using the statistical package R with the Bonferroni correction for multiple comparisons. The correction was used for all tables showing p-values.
 
-Figure 1A shows that naive T cells in LNs and effector CD8 T cells in the gut villi moved at similar speeds (Figure 1A; LN (6.2 µm/min); villi (6.5 µm/min); Table 3). Both naive T cells in the LN and effector CD8 T cells in the gut villi moved significantly faster than effector CD8 cells in LPS-inflamed lung (4.3 µm/min) (Table 3). Effector CD8 T cells in the influenza-infected lung moved slightly faster than effector CD8 T cells in the LPS-inflamed lung (Figure 1A: lung (Flu) 5.2 µm/min versus lung (LPS) 4.3 µm/min (p=4.9×10−5)). Figure 1—figure supplement 1A in the Supplementary Data shows the frequency distribution of cell-based speeds for T cells moving in each tissue type. The figure shows that T cells in either influenza-infected lung or LPS-inflamed lung have a large proportion of cells moving at slower speeds compared to T cells in LNs or villi, with T cells in LPS-inflamed lung showing the largest proportion of cells moving at slow speeds.
+**Table 3.**
+ Table of p-values of pairwise comparisons of cell-based speed as shown in Figure 1A using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>0.51</td>
+      <td>1.0</td>
+      <td>5.4×10-14</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>0.51</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>7.8×10-14</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>4.9×10-5</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>5.4×10-14</td>
+      <td>7.8×10-14</td>
+      <td>4.9×10-5</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+Figure 1A shows that naive T cells in LNs and effector CD8 T cells in the gut villi moved at similar speeds (Figure 1A; LN (6.2 µm/min); villi (6.5 µm/min); Table 3). Both naive T cells in the LN and effector CD8 T cells in the gut villi moved significantly faster than effector CD8 cells in LPS-inflamed lung (4.3 µm/min) (Table 3). Effector CD8 T cells in the influenza-infected lung moved slightly faster than effector CD8 T cells in the LPS-inflamed lung (Figure 1A: lung (Flu) 5.2 µm/min versus lung (LPS) 4.3 µm/min ($p=4.9\times10^{−5}$)). Figure 1—figure supplement 1A in the Supplementary Data shows the frequency distribution of cell-based speeds for T cells moving in each tissue type. The figure shows that T cells in either influenza-infected lung or LPS-inflamed lung have a large proportion of cells moving at slower speeds compared to T cells in LNs or villi, with T cells in LPS-inflamed lung showing the largest proportion of cells moving at slow speeds.
 
 We also analyzed effector CD8 T cells moving in the villi at day 5 (d5) post infection and compared with effector T cells moving in villi at day 8 (d8) post infection (Supplementary Data, Figure 1—figure supplement 2). A direct comparison of effector T cells moving d5 versus d8 post infection in the villi show that some motility parameters remain similar, including persistence (Figure 1—figure supplement 2). Effector T cells in the villi move slightly faster at d8 compared to d5 (Figure 1—figure supplement 2A, B), likely reflecting decreasing antigen load with clearance of virus at later times post infection.
 
@@ -57,43 +268,471 @@ We also analyzed the intra-tissue variation in T cell motility within each tissu
 
 We then calculated the displacement speed of T cells in each tissue, which measures the speed at which the cell moves away from an initial location and is smaller than the cell-based speed in all the tissues (Figure 1B). The displacement speed is statistically similar between naive T cells in LN (median 3.7 µm/min) and effector CD8 T cells within the villi (3.3 µm/min). The p-values of comparisons between each T cell type are reported in Table 4. We found that the displacement speed of effector CD8 T cells in the lung in both influenza infection and LPS treatment are similar to each other and both statistically significantly lower than T cells in the LNs and villi (influenza-infected lung 1.1 µm/min, LPS lung 1.6 µm/min). Figure 1—figure supplement 1B shows the frequency distribution of T cell displacement speed. These results suggest that the lung environment leads to lower displacement speed of T cells.
 
-## Persistence
+**Table 4.**
+ Table of p-values of pairwise comparisons of displacement speed shown in Figure 1B using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>1.0</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>0.13</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Persistence
 
 We calculated the likelihood that an individual T cell will persist in moving at the same speed in each tissue (Figure 1C). We quantified the likelihood that a T cell will continue to move at the same speed as the previous time step and termed this ‘persistence’ (for detailed methods, see Tendency to persist at a speed). For example, Figure 1C shows that for the T cells in the LN, a T cell is 3.5 times more likely to continue moving at a slow speed (<1 µm/min) given that it was moving slowly (<1 µm/min) in the previous time step.
 
-We observed a similar trend to persist at very low speeds (<2μm/min) for T cells moving in all tissues observed and at very high speeds (>8μm/min) in all the tissues. T cells in the villi exhibited a decrease in persistence at speeds above 10 µm/min while T cells in LN and lung showed similar increase in persistence above 8 µm/min with no decrease at higher speeds. The increased persistence at high speeds in the villi was seen for effector T cells at d5 post infection (Figure 1—figure supplement 2). At very low speeds (<2μm/min), T cells in the LN and villi show a higher likelihood of persistently moving at a slow speed compared to T cells in the lung. Figure 1C shows that at intermediate speeds (between 3-7⁢μ⁢m/min), T cells in the lung and villi exhibit lower persistence likelihood than T cells in the LN, suggesting that the lung and gut environment can hinder the ability of T cells to move persistently at these intermediate speeds.
+We observed a similar trend to persist at very low speeds ($<2\mum$/min) for T cells moving in all tissues observed and at very high speeds ($>8\mum$/min) in all the tissues. T cells in the villi exhibited a decrease in persistence at speeds above 10 µm/min while T cells in LN and lung showed similar increase in persistence above 8 µm/min with no decrease at higher speeds. The increased persistence at high speeds in the villi was seen for effector T cells at d5 post infection (Figure 1—figure supplement 2). At very low speeds ($<2\mum$/min), T cells in the LN and villi show a higher likelihood of persistently moving at a slow speed compared to T cells in the lung. Figure 1C shows that at intermediate speeds (between $3-7⁢\mu⁢m$/min), T cells in the lung and villi exhibit lower persistence likelihood than T cells in the LN, suggesting that the lung and gut environment can hinder the ability of T cells to move persistently at these intermediate speeds.
 
-## Mean squared displacement
+### Mean squared displacement
 
 We then determined the MSD for T cells moving in each tissue. Figure 2A plots the MSD for a representative cell versus time from each tissue type. The linear regression line is shown with the scatter plot whose slope is computed using the log of the MSD and the log of time. We then calculated the slope of the linear regression line for each T cell from a tissue. All T cell slopes from a tissue are used to create the box-and-whisker plot shown in Figure 2B. T cells are tracked for a maximum of 10.5 min to ensure consistency of analysis across tissues (Krummel et al., 2016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig2-v2.jpg)
+
+**Figure 2.:** (A) Plots of mean square displacement (MSD) versus time and linear regression lines of individual representative cells near median from B. (B) Box-and-whisker plots of linear regression cell slopes of log transformed mean squared displacement versus time. The median values are LN (1.3), villi (1.3), lung (Flu) (0.88), and lung (LPS) (0.94).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Box-and-whisker plots of linear regression cell slopes of log transformed mean squared displacement versus time. The median values are villi d5 (1.1), villi d8 (1.3), p-value $=2.6\times10^{-4}$.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Plots of MSD versus time and linear regression lines of individual representative cells near median from Figure 2—figure supplement 2. (B) Box-and-whisker plots of linear regression cell slopes of log transformed MSD versus time. The median values are LN (1.35), villi (1.2), lung (Flu) (0.93), and lung (LPS) (0.94). (C) Table showing mean square displacement p-values as pairwise comparisons from Figure 2—figure supplement 2 using Wilcoxon rank sum test.
+
 As shown in Figure 2B, T cell motion in the LN and villi could be characterized as superdiffusive with values >1. In contrast, the slope of T cells in the LPS-inflamed lung was close to one (0.94) while the slope of T cells in the influenza-infected lung is <1 (0.88) and would be considered diffusive and subdiffusive (Krummel et al., 2016). The p-values comparing the differences between the mean square displacement slopes of T cells moving in individual tissues are shown in Table 5. The slope of MSD between T cells moving in LN and villi was similar, and significantly different from T cells moving in the lung (Table 5). This result remained similar even if outlier frames are removed (Figure 2—figure supplement 2).
 
-## Turning angle and dependence of speed on turning angle
+**Table 5.**
+ Table showing mean square displacement p-values as pairwise comparisons from Figure 2B using Wilcoxon rank sum test.
 
-As persistence in cell motion is related to turning angles, we analyzed the turning angles of T cells in individual tissues. Figure 3A plots the relative frequency of all turning angles of T cells moving in different tissues. We did not include T cells moving at speeds <1 µm/min. We reasoned that turning angles are not relevant when a cell is moving very slowly (<1μm/min). Also small speeds will emphasize turning angles in increments of 45° degrees due to the pixel resolution of the microscope. Since the distribution is not uniform or flat in Figure 3A, the cell motion cannot be considered Brownian.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>0.88</td>
+      <td>&lt;2.0×10−16</td>
+      <td>1.8×10-15</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>0.88</td>
+      <td>1.0</td>
+      <td>1.6×10-15</td>
+      <td>5.5×10-9</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2.0×10−16</td>
+      <td>1.6×10-15</td>
+      <td>1.0</td>
+      <td>9.6×10-2</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>1.8×10-15</td>
+      <td>5.5×10-9</td>
+      <td>9.6×10-2</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Turning angle and dependence of speed on turning angle
+
+As persistence in cell motion is related to turning angles, we analyzed the turning angles of T cells in individual tissues. Figure 3A plots the relative frequency of all turning angles of T cells moving in different tissues. We did not include T cells moving at speeds <1 µm/min. We reasoned that turning angles are not relevant when a cell is moving very slowly ($<1\mum$/min). Also small speeds will emphasize turning angles in increments of 45° degrees due to the pixel resolution of the microscope. Since the distribution is not uniform or flat in Figure 3A, the cell motion cannot be considered Brownian.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig3-v2.jpg)
+
+**Figure 3.:** (A) Relative frequency distribution of turning angles in each tissue. T cells moving in the lung show a peak at approximately 160°. (B) Plot of speed (µm/min) versus angle (degrees). The speed tends to decrease as the turning angle increases in all tissues except for T cells in the LPS-inflamed lung. Error bars show plus and minus 1/8 of the standard deviation within each 9° angle bin.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Relative frequency distribution of turning angles in each tissue. (B) Plot of speed (µm/min) versus angle (degrees). The speed tends to decrease as the turning angle increases. Error bars show plus and minus 1/8 of the standard deviation within each 9° angle bin.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Relative frequency distribution of turning angles in each tissue. (B) Plot of speed (µm/min) versus angle (degrees). The speed tends to decrease as the turning angle increases in all tissues except for T cells in the LPS-inflamed lung. Error bars show plus and minus 1/8 of the standard deviation within each 9° angle bin. (C) Table of p-values of pairwise comparisons of proportion of turning angles <90° shown in Figure 3—figure supplement 2 using Wilcoxon rank sum test.
 
 We found that while T cells in all tissues show some preference for turning angles between 40° and 50°, many more T cells in the LN and villi showed the preference to turn at smaller angles compared to T cells in the lung. There was no statistical difference between the LN and villi (see Table 6 for a list of all the p-values). Interestingly, T cells moving in the lung showed a peak at approximately 160°, a behavior not seen in T cells moving in LN and villi. This peak is likely due to the ‘back and forth’ motion observed in T cells in the lung which we have previously described (Mrass et al., 2017). The higher percentage of T cells turning at smaller angles in the LNs and villi suggests that these organs allow for a broader range of turning motion, potentially enabling broader search areas.
+
+**Table 6.**
+ Table of p-values of pairwise comparisons of proportion of turning angles <90° shown in Figure 3A using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2.0×10−16</td>
+      <td>&lt;2.0×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2.0×10−16</td>
+      <td>&lt;2.0×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2.0×10−16</td>
+      <td>&lt;2.0×10−16</td>
+      <td>1.0</td>
+      <td>2.6×10-3</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2.0×10−16</td>
+      <td>&lt;2.0×10−16</td>
+      <td>2.6×10-3</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 We extended our analysis by determining if there exists a relationship between speed and the turning angle. Maiuri et al., 2015 and Jerison and Quake, 2020 previously found that T cells that move faster generally move persistently in one direction and show a small turning angle while slower T cells show higher turning angles. Our results confirmed that T cells in the LN, villi, and influenza-infected lung moving with faster speeds exhibit smaller turning angles while T cells moving with slower speeds exhibit larger turning angles for all tissues (Figure 3B). Interestingly, effector CD8 T cells moving in the LPS-inflamed lung did not show the speed-turning angle correlation (Figure 3B, cyan), suggesting that the relationship between speed and turning angle may not be universal.
 
 The behavior in the LPS lung could be due to the fact that T cells in the LPS-inflamed lung have a slow cell-based speed; however, the flatness of the line suggests that even slow T cells in LPS-inflamed lung may not be subject to the same mechanisms that regulate the speed-angle behavior seen in faster moving cells. We also note that T cells in the influenza-infected lung experience a small increase in speeds for turning angles between 160° and 180°.
 
-## Directionality and confinement
+### Directionality and confinement
 
 The turning angle determines the directionality of cell movement. While the displacement speed is lower than the cell-averaged speed in all tissues, the amount of reduction from cell based to displacement speed differs from tissue to tissue. This suggests that directional persistence in T cell movement may differ in the different tissues analyzed. We assessed directionality by calculating a ‘meandering ratio’ which quantified how likely a T cell deviates from its original direction. Figure 4 shows the box-and-whisker plot of the meandering ratio of T cells moving within the different tissues. T cells in the LN and villi move significantly more directionally than T cells in the lung (median values for the meandering ratio are LN: 0.70, villi: 0.63, lung (Flu): 0.22, and lung (LPS): 0.37). Pairwise p-value comparisons are reported in Table 7. The meandering ratio remained the same even after outlier frames were removed (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig4-v2.jpg)
+
+**Figure 4.:** The median values are LN (0.70), villi (0.63), lung (Flu) (0.22), and lung (LPS) (0.37).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The median values are villi d5 (0.53), villi d8 (0.63), p-value $=1.1\times10^{-7}$.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Meandering ratio from the reduced data set. The median values are LN (0.70), villi (0.66), lung (Flu) (0.24), and lung (LPS) (0.37). (B) Table shows p-values of pairwise comparisons of meandering ratio as shown in Figure 4—figure supplement 2 using Wilcoxon rank sum test.
+
+**Table 7.**
+ Table shows p-values of pairwise comparisons of meandering ratio as shown in Figure 4 using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>1.6×10-4</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>1.6×10-4</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>1.0</td>
+      <td>4.3×10-9</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>4.3×10-9</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
 We have previously shown that T cells can alternate between confined motion in which the search area is localized and ballistic motion in which motion is fast and persistent in a direction (Mrass et al., 2017). We calculated the confined ratio as defined by the time a T cell spends confined versus moving in Figure 5A. We found that naive T cells in the LN spend very little time confined and most of the time moving, showing a median confined ratio of 0.15. The confined ratio of effector CD8 T cells in the villi was slightly higher (0.2). Effector CD8 T cells in the influenza-infected lung had a confined ratio of 0.53 while effector T cells in LPS-inflamed lung showed the highest confined ratio of 0.60 (p-values are reported in Table 8).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig5-v2.jpg)
+
+**Figure 5.:** (A) Box-and-whisker plot of confined ratios. Median values: LN 0.15, villi 0.2, lung (Flu) 0.53, and lung (LPS) 0.60. (B) Box-and-whisker plot of confined time. Median values (min): LN 1.6, villi 1.7, lung (Flu) 2.2, and lung (LPS) 2.4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Box-and-whisker plot of confined ratios. Median values: d5 villi (0.53), d8 villi (0.2), p-value $<2.0\times10^{−16}$ . (B) Box-and-whisker plot of confined time. Median values (min): d5 villi (2.0), d8 villi (1.7), p-value $<2.0\times10^{−16}$.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Box-and-whisker plot of confined ratios. Median values: LN 0.05, villi 0.13, lung (Flu) 0.46, and lung (LPS) 0.60. (B) Box-and-whisker plot of confined time. Median values (min): LN 1.5, villi 1.6, lung (Flu) 2.0, and lung (LPS) 2.4. (C) Table showing p-values of pairwise comparisons of confined ratios from Figure 5—figure supplement 2 using Wilcoxon rank sum test. (D) Table showing p-values of pairwise comparisons of confined time from Figure 5—figure supplement 2 using Wilcoxon rank sum test.
+
+**Table 8.**
+ Table showing p-values of pairwise comparisons of confined ratios from Figure 5A using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.3×10-11</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2×10−16</td>
+      <td>1.3×10-11</td>
+      <td>1.0</td>
+      <td>1.8×10-2</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>1.8×10-2</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 We also calculated the average amount of time T cells from each tissue spend confined which is reported as confined time in Figure 5B (p-values reported in Table 9). We found that T cells in the lung (Flu) and lung (LPS) showed significantly longer confined times than T cells in LN or villi. Effector T cells in the villi at d5 post infection showed significantly higher confinement ratio and confined time compared with d8 (Figure 5—figure supplement 1A, B). Both confined ratios and confined time remained similar even if outlier frames were removed (Figure 5—figure supplement 2).
 
+**Table 9.**
+ Table showing p-values of pairwise comparisons of confined time from Figure 5B using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>2.2×10-3</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>2.2×10-3</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>1.0</td>
+      <td>5.4×10-2</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>5.4×10-2</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+
 These data show that effector CD8 T cells in LPS-inflamed lung were most confined followed by T cells in influenza-infected lung (Flu) and T cells in the villi. Naive T cells in the LN were the least confined. The low confinement of naive T cells in the LN environment may contribute to the high meandering ratio while confinement as well as antigen in the lung (Flu) likely decrease the ability of T cells to move directionally (Figure 4) and lead to low meandering ratios.
 
-## Patrolled volume per time
+### Patrolled volume per time
 
-A key function of T cell movement is surveillance of tissues. To assess whether differences we identified in cell speed, directionality, turning angle, and confined ratio ultimately translate into differences in the ability of T cells to survey tissue, we calculated the volume per time patrolled by a T cell residing in different tissues. Volume per time is a way of incorporating all the different motility parameters we previously identified. Figure 6A shows the amount of volume per time patrolled by the T cells in individual tissues. The volume surveyed is highest for naive T cells in LN (median 9.4 μm3 /s) and d8 CD8 effector T cells in villi (9.4 μ⁢m3/s). Effector CD8 T cells in villi at d5 were intermediate at 6.5 μ⁢m3/s (Figure 6—figure supplement 1A). Effector CD8 T cells in the lung showed the lowest volume patrolled: the volume patrolled by T cells in the influenza-infected lung (5.3 μ⁢m3/s) was statistically similar to the volume patrolled by T cells in the LPS-inflamed lung (5.1 μ⁢m3/s). See Table 10 for the p-values.
+A key function of T cell movement is surveillance of tissues. To assess whether differences we identified in cell speed, directionality, turning angle, and confined ratio ultimately translate into differences in the ability of T cells to survey tissue, we calculated the volume per time patrolled by a T cell residing in different tissues. Volume per time is a way of incorporating all the different motility parameters we previously identified. Figure 6A shows the amount of volume per time patrolled by the T cells in individual tissues. The volume surveyed is highest for naive T cells in LN (median 9.4 $\mum^{3}$ /s) and d8 CD8 effector T cells in villi (9.4 $\mu⁢m^{3}$/s). Effector CD8 T cells in villi at d5 were intermediate at 6.5 $\mu⁢m^{3}$/s (Figure 6—figure supplement 1A). Effector CD8 T cells in the lung showed the lowest volume patrolled: the volume patrolled by T cells in the influenza-infected lung (5.3 $\mu⁢m^{3}$/s) was statistically similar to the volume patrolled by T cells in the LPS-inflamed lung (5.1 $\mu⁢m^{3}$/s). See Table 10 for the p-values.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig6-v2.jpg)
+
+**Figure 6.:** (A) Box-and-whisker plot of median volume per time (µm3/s) patrolled by T cells in LN (9.4), villi (9.4), lung (Flu) (5.3), and lung (LPS) (5.1). (B) Relative frequency distribution of volume per time (µm3/s) patrolled by T cells in each tissue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Box-and-whisker plot of median volume per time (µm3/s) patrolled by T cells in villi d5 (6.5), villi d8 (9.4), p-value $<2.0\times10^{−16}$. (B) Relative frequency distribution of volume per time (µm3/s) patrolled.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Box-and-whisker plot of median volume per time (µm3/s) patrolled by T cells in LN (10.7), villi (10.6), lung (Flu) (6.4), and lung (LPS) (5.1). (B) Relative frequency distribution of volume per time (µm3/s) patrolled by T cells in each tissue. (C) Table of p-values of pairwise comparisons of volume per time from Figure 6—figure supplement 2 using Wilcoxon rank sum test. (D) Table of p-values of pairwise comparisons of volume per time distributions from Figure 6—figure supplement 2 using Kolmogorov–Smirnov test.
+
+**Table 10.**
+ Table of p-values of pairwise comparisons of volume per time from Figure 6A using Wilcoxon rank sum test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>6.9×10-12</td>
+      <td>&lt;2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2×10−16</td>
+      <td>6.9×10-12</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2×10−16</td>
+      <td>&lt;2×10−16</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 We also analyzed the full distribution of volume patrolled by T cells in each individual tissue (Figure 6B). The full distribution showed that T cells in LNs and villi at d8 post infection show the largest volume patrolled per time, with T cells in villi at d5 post infection showing a similar distribution of volume scanned (Figure 6—figure supplement 1B). Interestingly, although the median patrolled volume is similar between T cells in the LPS-inflamed lung (LPS) and T cells in influenza-infected lung (Flu), T cells in the influenza-infected lung actually show a large number of cells patrolling at both low and large volumes while T cells in LPS-inflamed lung mostly show low patrol volumes. The Kolmogorov–Smirnov test compares the distributions and shows statistically significant differences in all pairwise comparisons (Table 11). The results were similar with outlier frames removed (Figure 6—figure supplement 2A, B). These data demonstrate that the combination of speed, turning angle, directional movement, and confinement times all contribute to the ability of T cells to search tissue environments for potential targets.
+
+**Table 11.**
+ Table of p-values of pairwise comparisons of volume per time distributions from Figure 6B using Kolmogorov–Smirnov test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>LN</th>
+      <th>Villi</th>
+      <th>Lung (Flu)</th>
+      <th>Lung (LPS)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LN</td>
+      <td>1.0</td>
+      <td>0.07</td>
+      <td>&lt;2.2×10−16</td>
+      <td>&lt;2.2×10−16</td>
+    </tr>
+    <tr>
+      <td>Villi</td>
+      <td>0.07</td>
+      <td>1.0</td>
+      <td>&lt;2.2×10−16</td>
+      <td>&lt;2.2×10−16</td>
+    </tr>
+    <tr>
+      <td>Lung (Flu)</td>
+      <td>&lt;2.2×10−16</td>
+      <td>&lt;2.2×10−16</td>
+      <td>1.0</td>
+      <td>3.7×10-9</td>
+    </tr>
+    <tr>
+      <td>Lung (LPS)</td>
+      <td>&lt;2.2×10−16</td>
+      <td>&lt;2.2×10−16</td>
+      <td>3.7×10-9</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -109,7 +748,7 @@ We find that T cells moving in the lung show specific motility features that dif
 
 Our results also show that there can be significant variability of T cell movement patterns within an individual tissue (Table 2). However, despite large differences amongst individual T cell movements within any specific tissue, the overall patterns of T cell motility remain similar within tissue and across tissues.
 
-The volume patrolled by a T cell is dependent not only on its speed but also on turning angles, the cell’s tendency to meander, and the amount of time the cell spends confined to a location. The higher percentage of T cells turning at smaller angles in the LNs and villi suggests that these organs allow a broader range of turning motion, potentially enabling broader search areas as reflected in the larger volumes patrolled. We found that naive T cells and CD8 effector cells in the villi at d8 post infection patrol a larger volume (9.4 u⁢m3/s) due to a combination of fast speed, less confinement, more superdiffusive motion, and smaller turning angles. Analysis of effector T cells at days 5 and 8 post infection in the gut suggest that antigen abundance likely increases confinement and thus decrease T cell speed, leading to a smaller volume patrolled at d5 post infection despite comparable values in meandering ratio and MSD. The patrol volume is significantly smaller for effector T cells in the lung due to greater confinement, more Brownian-like motion, and a greater proportion of large turning angles, particularly angles that suggest a ‘back and forth’ motion. However, T cells in the influenza-infected lung and LPS-inflamed lung show differences in the frequency distribution of volume per time, with T cells in the influenza-infected lung showing more T cells patrolling at higher volumes than T cells in LPS-inflamed lung. These results suggest that a combination of back and forth motion and slightly faster cell-based speeds can affect the search efficiency for T cells in the influenza-infected lung. Previous results using computational modeling suggests that intermittent and back and forth motion can improve search times (Bénichou et al., 2011). Effector T cells moving in LPS-infected lung show the lowest volume covered (5.1 u⁢m3/s) due to low speeds, higher turning angles, low directionality and high confinement times. The lack of coupling between speed and turning angle may also lead to low search efficiency.
+The volume patrolled by a T cell is dependent not only on its speed but also on turning angles, the cell’s tendency to meander, and the amount of time the cell spends confined to a location. The higher percentage of T cells turning at smaller angles in the LNs and villi suggests that these organs allow a broader range of turning motion, potentially enabling broader search areas as reflected in the larger volumes patrolled. We found that naive T cells and CD8 effector cells in the villi at d8 post infection patrol a larger volume (9.4 $u⁢m^{3}$/s) due to a combination of fast speed, less confinement, more superdiffusive motion, and smaller turning angles. Analysis of effector T cells at days 5 and 8 post infection in the gut suggest that antigen abundance likely increases confinement and thus decrease T cell speed, leading to a smaller volume patrolled at d5 post infection despite comparable values in meandering ratio and MSD. The patrol volume is significantly smaller for effector T cells in the lung due to greater confinement, more Brownian-like motion, and a greater proportion of large turning angles, particularly angles that suggest a ‘back and forth’ motion. However, T cells in the influenza-infected lung and LPS-inflamed lung show differences in the frequency distribution of volume per time, with T cells in the influenza-infected lung showing more T cells patrolling at higher volumes than T cells in LPS-inflamed lung. These results suggest that a combination of back and forth motion and slightly faster cell-based speeds can affect the search efficiency for T cells in the influenza-infected lung. Previous results using computational modeling suggests that intermittent and back and forth motion can improve search times (Bénichou et al., 2011). Effector T cells moving in LPS-infected lung show the lowest volume covered (5.1 $u⁢m^{3}$/s) due to low speeds, higher turning angles, low directionality and high confinement times. The lack of coupling between speed and turning angle may also lead to low search efficiency.
 
 Three-dimensional migration of T cells is a complex interplay of internal cell signaling, the surrounding extracellular tissue environment, molecular signaling and chemokines. We have quantitatively analyzed how T cells move in different tissues using multiple metrics. These metrics provide a way of quantitatively capturing underlying complex features of three-dimensional T cell movement.
 
@@ -125,27 +764,43 @@ For imaging of GFP+CD8+ T cells in influenza-infected lungs, mice were euthanize
 
 Below we summarize the time step sampling and the various metrics used to analyze the T cell motion. These metrics include speed (cell-based and displacement speed), tendency to persist at the same speed, MSD, directionality through the meandering ratio, confined ratio and time, and volume patrolled per time.
 
-## Sampling
+### Sampling
 
-Due to the different time steps used in the two-photon microscopy of the different tissues, we sample the position data every 90 s (or as close to 90 s as possible) for each of the tissues to normalize and equalize T cell analyses. Also for tissues which were sampled at a higher frequency, we are able to use all the data for results involving the turning angle by revisiting times that are skipped in an initial 90 s sampling. For example, suppose observations are made at the following times {t0,t1,t2,t3,t4,…} where t0=0s, t1=45s, t2=90s, t3=135s, t4=180s and so on. The first sampling of the data retains {t0,t2,t4,…} and the second sampling uses {t1,t3,t5,…}. We do not subsample the LPS-inflamed lung data since the time steps are initially 90 s. After this sampling is done, the LN mean time step was 89.9 s with a standard deviation of 2.9 s, the villi mean time step was 93.0 s with a standard deviation of 7.9 s, the lung (Flu) mean time step was 90.0 s with a standard deviation of 0.12 s, and the unsampled lung (LPS) mean time step was 90.0 s with a standard deviation of 0.10 s.
+Due to the different time steps used in the two-photon microscopy of the different tissues, we sample the position data every 90 s (or as close to 90 s as possible) for each of the tissues to normalize and equalize T cell analyses. Also for tissues which were sampled at a higher frequency, we are able to use all the data for results involving the turning angle by revisiting times that are skipped in an initial 90 s sampling. For example, suppose observations are made at the following times ${t_{0},t_{1},t_{2},t_{3},t_{4},…}$ where $t_{0}=0s$, $t_{1}=45s$, $t_{2}=90s$, $t_{3}=135s$, $t_{4}=180s$ and so on. The first sampling of the data retains ${t_{0},t_{2},t_{4},…}$ and the second sampling uses ${t_{1},t_{3},t_{5},…}$. We do not subsample the LPS-inflamed lung data since the time steps are initially 90 s. After this sampling is done, the LN mean time step was 89.9 s with a standard deviation of 2.9 s, the villi mean time step was 93.0 s with a standard deviation of 7.9 s, the lung (Flu) mean time step was 90.0 s with a standard deviation of 0.12 s, and the unsampled lung (LPS) mean time step was 90.0 s with a standard deviation of 0.10 s.
 
-## Speed
+### Speed
 
-If (xi,yi,zi) refers to the position of a cell at time ti and (xi+1,yi+1,zi+1) refers to the position of the cell at time ti+1, let di,i+1 represent the distance between the two positions(1)di,i+1=(xi+1−xi)2+(yi+1−yi)2+(zi+1−zi)2.
+If $(x_{i},y_{i},z_{i})$ refers to the position of a cell at time ti and $(x_{i+1},y_{i+1},z_{i+1})$ refers to the position of the cell at time $t_{i+1}$, let $d_{i,i+1}$ represent the distance between the two positions
+
+$$
+d_{i,i+1}=\sqrt{(x_{i+1}−x_{i})^{2}+(y_{i+1}−y_{i})^{2}+(z_{i+1}−z_{i})^{2}}.
+$$
 
 Two different types of speeds are computed using the positions and times from a T cell: a cell-based speed and displacement-based speed.
 
-## Cell-based speed
+#### Cell-based speed
 
-If a cell is tracked for n positions and times, the cell-based speed sc⁢e⁢l⁢l of a cell is computed by summing all the distances traveled by the cell and dividing by the total elapsed time tn-t1,(2)scell=∑i=1n−1di,i+1tn−t1.
+If a cell is tracked for $n$ positions and times, the cell-based speed $s_{c⁢e⁢l⁢l}$ of a cell is computed by summing all the distances traveled by the cell and dividing by the total elapsed time $t_{n}-t_{1}$,
 
-## Displacement speed
+$$
+s_{cell}=\frac{\sumi=1n−1d_{i,i+1}}{t_{n}−t_{1}}.
+$$
 
-The displacement speed sd⁢i⁢s⁢p⁢l⁢a⁢c⁢e⁢m⁢e⁢n⁢t is computed using the first and last locations of the cell,(3)sdisplacement=d1,ntn−t1.
+#### Displacement speed
 
-## Turning angle and directionality
+The displacement speed $s_{d⁢i⁢s⁢p⁢l⁢a⁢c⁢e⁢m⁢e⁢n⁢t}$ is computed using the first and last locations of the cell,
 
-The turning angle θ for a T cell given the three positions of the cell {1,2,3} enclosed within circles is shown in Figure 7A. If v1 is the vector formed from positions (x1,y1,z1) and (x2,y2,z2), v1=(x2−x1,y2−y1,z2−z1) and v2 is the vector formed from positions (x2,y2,z2) and (x3,y3,z3), v2=(x3−x2,y3−y2,z3−z2), the turning angle θ is computed using(4)θ=arccos(v2⋅v1||v1||||v2||).
+$$
+s_{displacement}=\frac{d_{1,n}}{t_{n}−t_{1}}.
+$$
+
+#### Turning angle and directionality
+
+The turning angle $\theta$ for a T cell given the three positions of the cell {1,2,3} enclosed within circles is shown in Figure 7A. If $v_{1}$ is the vector formed from positions $(x_{1},y_{1},z_{1})$ and $(x_{2},y_{2},z_{2})$, $v_{1}=(x_{2}−x_{1},y_{2}−y_{1},z_{2}−z_{1})$ and $v_{2}$ is the vector formed from positions $(x_{2},y_{2},z_{2})$ and $(x_{3},y_{3},z_{3})$, $v_{2}=(x_{3}−x_{2},y_{3}−y_{2},z_{3}−z_{2})$, the turning angle $\theta$ is computed using
+
+$$
+\theta=arccos(\frac{v_{2}⋅v_{1}}{||v_{1}||||v_{2}||}).
+$$
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84916/elife-84916-fig7-v2.jpg)
 
@@ -153,29 +808,37 @@ The turning angle θ for a T cell given the three positions of the cell {1,2,3} 
 
 We did not include speeds <1 µm/min as these cells are likely to be considered stopped and turning angles with very small speeds can lead to artifactual angle measurements; for example, small speeds will emphasize turning angles in increments of 45° due to the pixel resolution of the microscope.
 
-Suppose a T cell visits the four locations enclosed within the circles (Figure 7B). One can compute the total distance traveled by summing up the distance from location 1 to location 2, d1,2, the distance from location 2 to location 3, d2,3, and the distance from location 3 to location 4, d3,4. The straight line distance can also be computed from the original location 1 to the final location 4, d1,4. One measure of a cell’s tendency to maintain its direction is the meandering ratio (Lambert Emo et al., 2016)M=d1,4d1,2+d2,3+d3,4.
+Suppose a T cell visits the four locations enclosed within the circles (Figure 7B). One can compute the total distance traveled by summing up the distance from location 1 to location 2, $d_{1,2}$, the distance from location 2 to location 3, $d_{2,3}$, and the distance from location 3 to location 4, $d_{3,4}$. The straight line distance can also be computed from the original location 1 to the final location 4, $d_{1,4}$. One measure of a cell’s tendency to maintain its direction is the meandering ratio (Lambert Emo et al., 2016)
 
-If the ratio M is close to 1, the cell deviates very little from one direction, whereas if M is much <1, the cell moves along a meandering path. In general for n locations, directionality can be measured using the ratio(5)M=d1,n∑i=1n−1di,i+1.
+$$
+M=\frac{d_{1,4}}{d_{1,2}+d_{2,3}+d_{3,4}}.
+$$
 
-## Confined ratio and confined time
+If the ratio $M$ is close to 1, the cell deviates very little from one direction, whereas if $M$ is much <1, the cell moves along a meandering path. In general for $n$ locations, directionality can be measured using the ratio
 
-We denote the amount of time a T cell lingers in one location as confined time. Given a time ti and location (xi,yi,zi), we count the time difference between ti and tj>ti as confined time if the difference tj-ti is >150 s and the distance di,j is <5 µm. Once the cell exits (say at time tk) the 5 µm radius centered about (xi,yi,zi), the cell is tracked anew and the confined time is computed from tk and location (xk,yk,zk). We call the ratio of confined time to the total time the confined ratio.
+$$
+M=\frac{d_{1,n}}{\sumi=1n−1d_{i,i+1}}.
+$$
+
+### Confined ratio and confined time
+
+We denote the amount of time a T cell lingers in one location as confined time. Given a time ti and location $(x_{i},y_{i},z_{i})$, we count the time difference between ti and $t_{j}>t_{i}$ as confined time if the difference $t_{j}-t_{i}$ is >150 s and the distance $d_{i,j}$ is <5 µm. Once the cell exits (say at time tk) the 5 µm radius centered about $(x_{i},y_{i},z_{i})$, the cell is tracked anew and the confined time is computed from tk and location $(x_{k},y_{k},z_{k})$. We call the ratio of confined time to the total time the confined ratio.
 
 In regards to confined time, we calculate the amount of time required to leave a 5-µm radius for each cell position. The time is then averaged over all positions to find the confined time.
 
-## Tendency to persist at a speed
+### Tendency to persist at a speed
 
-Let sb and sa be two consecutive frame speeds (before and after) in μm/min from a T cell track. If Bi represents the event that sb lies between iμm/min and (i+1)μm/min, then the probability of event Bi occurring is P⁢(Bi)=mb/m, where mb represents the number of times iμm/min ≤sb<(i+1)μm/min and m represents the total number of tracks. If Ai represents the event that iμm/min ≤sa<(i+1)μm/min, then the probability P⁢(Ai)=ma/m where ma represents the number of times iμm/min ≤sa<(i+1)μm/min. Finally, it follows that P⁢(Ai⁢a⁢n⁢d⁢Bi)=ma⁢b/m where ma⁢b represents the number of times both criteria are satisfied: iμm/min≤sa,sb<(i+1)μm/min in consecutive frames. According to the definition of conditional probability P⁢(Ai|Bi)=P⁢(Ai⁢a⁢n⁢d⁢Bi)/P⁢(Bi)=ma⁢b/mb. The increased likelihood of persisting at the same speed is then calculated as the ratio P⁢(Ai|Bi)/P⁢(Ai)=(m⋅ma⁢b)/(ma⋅mb).
+Let sb and sa be two consecutive frame speeds (before and after) in $\mum/min$ from a T cell track. If $B_{i}$ represents the event that sb lies between $i\mum/min$ and $(i+1)\mum/min$, then the probability of event $B_{i}$ occurring is $P⁢(B_{i})=m_{b}/m$, where mb represents the number of times $i\mum/min$ $\leqs_{b}<(i+1)\mum/min$ and $m$ represents the total number of tracks. If $A_{i}$ represents the event that $i\mum/min$ $\leqs_{a}<(i+1)\mum/min$, then the probability $P⁢(A_{i})=m_{a}/m$ where ma represents the number of times $i\mum/min$ $\leqs_{a}<(i+1)\mum/min$. Finally, it follows that $P⁢(A_{i}⁢a⁢n⁢d⁢B_{i})=m_{a⁢b}/m$ where $m_{a⁢b}$ represents the number of times both criteria are satisfied: $i\mum/min\leqs_{a},s_{b}<(i+1)\mum/min$ in consecutive frames. According to the definition of conditional probability $P⁢(A_{i}|B_{i})=P⁢(A_{i}⁢a⁢n⁢d⁢B_{i})/P⁢(B_{i})=m_{a⁢b}/m_{b}$. The increased likelihood of persisting at the same speed is then calculated as the ratio $P⁢(A_{i}|B_{i})/P⁢(A_{i})=(m⋅m_{a⁢b})/(m_{a}⋅m_{b})$.
 
-## Mean squared displacement
+### Mean squared displacement
 
-Values of the log of the MSD (d1,n)2 are plotted against the log of the elapsed time. We limit the elapsed time to 10.5 min. The slope of the linear regression line is computed from the scatter plot and used to characterize the type of motion. Slope values near 1.0 are associated with Brownian motion, values between 1.0 and 2.0 are associated with Lévy walks, and values <1.0 are considered subdiffusive (Krummel et al., 2016).
+Values of the log of the MSD $(d_{1,n})^{2}$ are plotted against the log of the elapsed time. We limit the elapsed time to 10.5 min. The slope of the linear regression line is computed from the scatter plot and used to characterize the type of motion. Slope values near 1.0 are associated with Brownian motion, values between 1.0 and 2.0 are associated with Lévy walks, and values <1.0 are considered subdiffusive (Krummel et al., 2016).
 
-## Rate of volume patrolled
+### Rate of volume patrolled
 
 The volume patrolled by a T cell is computed by dividing a 400 µm x 400 µm x 400 µm volume within which a T cell moves into 2.5 µm × 2.5 µm × 2.5 µm cubes. If the distance between a cube center and the T cell center is <5 µm, the cube volume is assumed to be patrolled. We also connect each two successive cell positions with a straight line and assume the cell patrols volume along the straight line. The total volume patrolled is then divided by the time the T cell is tracked.
 
-## Statistical methods
+### Statistical methods
 
 When comparing two groups, p-values were computed using the paired Wilcoxon rank sum test (otherwise known as the Mann–Whitney U-test) using the statistical package R with the Bonferroni correction for multiple comparisons.
 

@@ -32,7 +32,7 @@ To test this hypothesis, the current study investigated the impact of pharmacolo
 
 ## Results
 
-## Opioid antagonism reduces wanting ratings
+### Opioid antagonism reduces wanting ratings
 
 We analyzed the data of healthy young volunteers who rated how much they wanted or liked everyday items in the MRI scanner. We collected wanting and liking ratings for all items in the MRI scanner twice, once before (pre-test session) and once after (post-test session) participants played a game on the computer where they won or lost 50% of the items (in order to have equal numbers of won and lost items for the statistical analysis). This allowed us to assess whether participants behaviorally distinguished between wanting and liking ratings, because based on our previous findings we expected that winning and losing items has dissociable effects on wanting and liking (Weber et al., 2018). Participants actually received the won items at the end of the experiment (i.e., after the post-test session). We therefore selected everyday items (e.g., batteries or candles – for the full list of items, see Weber et al., 2018) that should be both wanted and liked by the majority of our participants from the Zurich student population. To test the impact of pharmacologically manipulating dopaminergic and opioidergic receptor activation on wanting and liking, participants received either naltrexone (N = 37), amisulpride (N = 40), or placebo (N = 39) prior to performing the task in the scanner.
 
@@ -42,19 +42,363 @@ First, we performed a sanity check whether participants distinguished between wa
 
 **Figure 1.:** (A) Participants rated in the MRI scanner how much they wanted or liked objects before (pre-test) or after (post-test) they won or lost these items in a game between the scanning sessions. (B) On each trial, a cue indicated whether a wanting or liking rating was required, followed by the presentation of the current object (here: a pick-up sticks game). Participants had to rate how much they wanted or liked the presented object within 3.5 s, then the next trial started after a variable inter-trial interval (mean = 3 s). (C) Liking ratings were significantly reduced for objects that were lost relative to won in the gamble, while wanting ratings did not significantly differ between lost versus won items. (D) The opioid antagonist naltrexone significantly reduced wanting ratings relative to placebo, while liking ratings were unaffected by naltrexone or the dopamine antagonist amisulpride. For illustration purposes, participant-specific mean wanting/liking ratings are plotted on a scale from 0 to 10, while the statistical analyses are conducted on the participant- and item-specific wanting and liking ratings. Error bars indicate standard error of the mean, black dots represent individual data points. *p < 0.05, ***p < 0.001.
 
+**Table 1.**
+ Results of mixed general linear model 1 (MGLM-1) on wanting and liking ratings in the post-test as function of Judgement (wanting versus liking), Item type (lost versus won), and Pre-test ratings.Standard errors of the mean (SE) are in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Beta (SE)</th>
+      <th>t-Value</th>
+      <th>df</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>0.21 (0.66)</td>
+      <td>0.32</td>
+      <td>119</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Judgement</td>
+      <td>–2.27 (0.64)</td>
+      <td>3.54</td>
+      <td>125</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Item type</td>
+      <td>0.07 (1.10)</td>
+      <td>0.07</td>
+      <td>98</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>Pre-test</td>
+      <td>79.87 (0.50)</td>
+      <td>158.30</td>
+      <td>124</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Judgement × Item type</td>
+      <td>2.01 (1.24)</td>
+      <td>1.62</td>
+      <td>109</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Judgement × Pre-test</td>
+      <td>2.41 (0.61)</td>
+      <td>3.93</td>
+      <td>289</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Item type × Pre-test</td>
+      <td>–1.62 (0.71)</td>
+      <td>2.26</td>
+      <td>133</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Judgement × Item type × Pre-test</td>
+      <td>0.91 (0.90)</td>
+      <td>1.01</td>
+      <td>288</td>
+      <td>0.31</td>
+    </tr>
+  </tbody>
+</table>
+
 Next, we assessed the impact of reducing dopamine and opioid receptor activity on wanting and liking judgements. We analyzed ratings (pre- and post-test) with predictors for Amisulpride (versus placebo), Naltrexone (versus placebo), Judgement, Session (pre-test versus post-test), and the interaction terms. This analysis provided evidence that reducing opioid neurotransmission differentially affected wanting and liking ratings, Naltrexone × Judgement, β = 7.02, t(125) = 2.36, p = 0.02, while we observed no significant effects for amisulpride, β = 3.79, t(126) = 1.30, p = 0.20 (Figure 1C and Table 2). Judgement type-specific analyses suggested that wanting ratings were significantly reduced under naltrexone (mean = 4.5, standard deviation [sd] = 1.0) relative to placebo (mean = 4.9, sd = 1.0), β = –13.85, t(115) = 2.12, p = 0.04, Cohen’s d = 0.47, whereas amisulpride (mean = 4.9, sd = 1.0) showed no significant effects on wanting ratings relative to placebo, β = –1.39, t(116) = 0.22, p = 0.83, Cohen’s d = 0.05. Neither naltrexone (mean = 5.2, sd = 0.9) nor amisulpride (mean = 5.4, sd = 0.8) showed significant effects on liking relative to placebo (mean = 5.2, sd = 0.8), for both t < 1.17, p > 0.24, Cohen’s d < 0.27. Taken together, our findings provide evidence for involvement of opioidergic neurotransmission in wanting judgements.
+
+**Table 2.**
+ Results for mixed general linear model 2 (MGLM-2) assessing drug effects on wanting and liking ratings as function of Drug (amisulpride versus placebo and naltrexone versus placebo), Judgement (wanting versus liking), and Session (pre-test versus post-test).Standard errors of the mean (SE) are in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Beta (SE)</th>
+      <th>t-Value</th>
+      <th>df</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>3.62 (5.50)</td>
+      <td>0.66</td>
+      <td>98</td>
+      <td>0.51</td>
+    </tr>
+    <tr>
+      <td>Amisulpride</td>
+      <td>2.37 (5.09)</td>
+      <td>0.47</td>
+      <td>114</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>Naltrexone</td>
+      <td>–6.80 (5.19)</td>
+      <td>1.31</td>
+      <td>114</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Judgement</td>
+      <td>4.38 (2.08)</td>
+      <td>2.11</td>
+      <td>125</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Session</td>
+      <td>–3.30 (1.98)</td>
+      <td>1.67</td>
+      <td>1612</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Amisulpride × Judgement</td>
+      <td>3.79 (2.92)</td>
+      <td>1.30</td>
+      <td>126</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Naltrexone × Judgement</td>
+      <td>7.02 (2.98)</td>
+      <td>2.36</td>
+      <td>125</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>Amisulpride × Session</td>
+      <td>0.02 (2.79)</td>
+      <td>0.00</td>
+      <td>1629</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Naltrexone × Session</td>
+      <td>2.70 (2.84)</td>
+      <td>0.95</td>
+      <td>1618</td>
+      <td>0.34</td>
+    </tr>
+    <tr>
+      <td>Judgement × Session</td>
+      <td>–1.09 (1.97)</td>
+      <td>0.55</td>
+      <td>1845</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <td>Amisulpride × Judgement × Session</td>
+      <td>–1.50 (2.78)</td>
+      <td>0.54</td>
+      <td>1856</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td>Naltrexone × Judgement × Session</td>
+      <td>–2.95 (2.83)</td>
+      <td>1.04</td>
+      <td>1853</td>
+      <td>0.30</td>
+    </tr>
+  </tbody>
+</table>
 
 Amisulpride can show both pre-synaptic and post-synaptic effects depending on the administered dose. To control for the possibility that the effective dose of amisulpride might vary between participants due to differences in body weight, we added the predictor body weight (as well as its interactions with all other factors) to the above reported regression model. While the Naltrexone × Judgement interaction remained significant, β = 7.99, t(124) = 2.69, p = 0.008, there were still no significant amisulpride effects, all t < 1.46, all p > 0.14. There was thus no evidence for dose-dependent effects of amisulpride on wanting or liking ratings.
 
 To assess the robustness of these findings, we conducted also a non-hierarchical analysis of pharmacological effects on wanting and liking ratings using the mean wanting and liking ratings across all items, determined separately for each participant and session (pre-test versus post-test). The analysis of wanting ratings replicated the significant main effect of naltrexone versus placebo, t(128) = 2.16, p = 0.03, while amisulpride showed no significant effect on mean wanting ratings, t(128) = 0.23, p = 0.82. Mean liking ratings were neither affected by naltrexone, t(126) = 0.03, p = 0.98, nor amisulpride, t(126) = 1.22, p = 0.23. Thus, also the non-hierarchical analysis of aggregated mean data provided no evidence for significant amisulpride effects.
 
-## Opioid antagonism reduces wanting-related frontostriatal connectivity
+### Opioid antagonism reduces wanting-related frontostriatal connectivity
 
 Next, we investigated the neural mechanisms underlying the impact of opioid antagonism on wanting. Following the procedures from our previous study (Weber et al., 2018), we first determined the neural correlates of wanting and liking by computing GLM-1 in which onset regressors for wanting and liking judgements were modulated by non-orthogonalized parametric modulators for wanting and liking ratings. Wanting ratings (independently of the required judgement type) correlated with activation in ventromedial prefrontal cortex (VMPFC; z = 7.32, whole-brain FWE-corrected, p < 0.001, peak = [0 44–7]), dorsolateral prefrontal cortex (DLPFC; z = 6.63, whole-brain FWE-corrected, p < 0.001, peak = [–21 38 44]), and posterior cingulate cortex (PCC; z = 5.29, whole-brain FWE-corrected, p = 0.002, peak = [–3 –37 38]) (Figure 2A and Table 3). Liking ratings correlated with BOLD signal changes in more posterior parts of PCC (z = 4.37, whole-brain FWE-corrected, p = 0.02, peak = [–9 –64 38]) (Figure 2B and Table 4). Moreover, we also replicated our previous finding that liking ratings correlate with activity in orbitofrontal cortex (OFC) when applying small-volume correction (SVC; anatomical mask for the OFC based on the wfupickatlas; z = 3.20, small-volume FWE-corrected, p = 0.046, peak = [–21 50–4]). Together, these data replicate our previous findings that wanting and liking are correlated with activation in VMPFC and OFC, respectively. However, we observed no significant effects of naltrexone or amisulpride (relative to placebo) on these neural representations of wanting or liking in these regions (or at the whole-brain level), even at lenient statistical thresholds (p < 0.001 uncorrected, cluster size >20 voxels).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71077/elife-71077-fig2-v2.jpg)
 
-**Figure 2.:** A) wanting and (B) liking independently of behavioral relevance.Wanting correlated with activation in dorsolateral prefrontal cortex (DLPFC), ventromedial prefrontal cortex (VMPFC), and posterior cingulate cortex (PCC) (whole-brain FWE-corrected). Liking correlated with activation in dorsal PCC (whole-brain FWE-corrected) and orbitofrontal cortex (small-volume FWE-corrected). (C) Wanting ratings significantly correlated with activation in the striatum during wanting judgements (small-volume FWE-corrected). Images are thresholded at p < 0.001 uncorrected.
+**Figure 2.:** Wanting correlated with activation in dorsolateral prefrontal cortex (DLPFC), ventromedial prefrontal cortex (VMPFC), and posterior cingulate cortex (PCC) (whole-brain FWE-corrected). Liking correlated with activation in dorsal PCC (whole-brain FWE-corrected) and orbitofrontal cortex (small-volume FWE-corrected). (C) Wanting ratings significantly correlated with activation in the striatum during wanting judgements (small-volume FWE-corrected). Images are thresholded at p < 0.001 uncorrected.
+
+**Table 3.**
+ Anatomical locations and MNI coordinates of the peak activations correlating with wanting ratings in general linear model 1 (GLM-1).We report activations surviving whole-brain FWE correction at peak level (p < 0.05). Hem = Hemisphere (L = left, R = right); BA = Brodmann area.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2"></th>
+      <th colspan="2"></th>
+      <th colspan="5">MNI coordinates</th>
+      <th colspan="2"></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td colspan="2">Hem</td>
+      <td colspan="2">BA</td>
+      <td colspan="2">X</td>
+      <td colspan="2">Y</td>
+      <td>Z</td>
+      <td colspan="2">k</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td>VMPFC</td>
+      <td>R/L</td>
+      <td colspan="2">10</td>
+      <td colspan="2">0</td>
+      <td colspan="2">44</td>
+      <td colspan="3">–7</td>
+      <td>439</td>
+      <td>7.32</td>
+    </tr>
+    <tr>
+      <td>DLPFC</td>
+      <td>L</td>
+      <td colspan="2">8</td>
+      <td colspan="2">–21</td>
+      <td colspan="2">38</td>
+      <td colspan="3">44</td>
+      <td>39</td>
+      <td>6.63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>L</td>
+      <td colspan="2">8</td>
+      <td colspan="2">–33</td>
+      <td colspan="2">23</td>
+      <td colspan="3">44</td>
+      <td>4</td>
+      <td>5.11</td>
+    </tr>
+    <tr>
+      <td>PCC</td>
+      <td>L</td>
+      <td colspan="2">23</td>
+      <td colspan="2">-3</td>
+      <td colspan="2">–37</td>
+      <td colspan="3">38</td>
+      <td>39</td>
+      <td>5.29</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>R/L</td>
+      <td colspan="2">23</td>
+      <td colspan="2">0</td>
+      <td colspan="2">–13</td>
+      <td colspan="3">35</td>
+      <td>1</td>
+      <td>4.79</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate cortex</td>
+      <td>R</td>
+      <td colspan="2">32</td>
+      <td colspan="2">6</td>
+      <td colspan="2">35</td>
+      <td colspan="3">11</td>
+      <td>3</td>
+      <td>5.27</td>
+    </tr>
+    <tr>
+      <td>Frontopolar cortex</td>
+      <td>L</td>
+      <td colspan="2">10</td>
+      <td colspan="2">–12</td>
+      <td colspan="2">65</td>
+      <td colspan="3">20</td>
+      <td>1</td>
+      <td>4.82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Anatomical locations and MNI coordinates of the peak activations correlating with liking ratings in general linear model 1 (GLM-1).We report activations surviving whole-brain FWE correction at peak level (p < 0.05). Hem = Hemisphere (L = left, R = right); BA = Brodmann area.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2"></th>
+      <th colspan="2"></th>
+      <th colspan="5">MNI coordinates</th>
+      <th colspan="2"></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Region</td>
+      <td colspan="2">Hem</td>
+      <td colspan="2">BA</td>
+      <td colspan="2">X</td>
+      <td colspan="2">Y</td>
+      <td>Z</td>
+      <td colspan="2">k</td>
+      <td>Z</td>
+    </tr>
+    <tr>
+      <td>Dorsal PCC</td>
+      <td>L</td>
+      <td colspan="2">31</td>
+      <td colspan="2">–9</td>
+      <td colspan="2">–64</td>
+      <td colspan="3">38</td>
+      <td>1</td>
+      <td>4.87</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 GLM-1 revealed no significant wanting- or liking-related striatal activation, which may appear surprising given the canonical role of the striatum for reward processing (Bartra et al., 2013). However, this might be due to the fact that the parametric modulators for wanting and liking only explained unique variance (regressors were not orthogonalized), while striatal activation might be shared by wanting and liking. To test this, we computed two further GLMs, one (GLM-3) where we orthogonalized liking with respect to wanting (such that the regressor for wanting explained the variance shared by wanting and liking) and one where we orthogonalized wanting with respect to liking (GLM-4). In GLM-3, we observed bilateral wanting-related activation in the striatum (z = 7.09, whole-brain FWE-corrected, p < 0.001, peak = [–9 11 –1]), PCC (z = 12.22, whole-brain FWE-corrected, p < 0.001, peak = [0 –28 25]), VMPFC (z = 11.13, whole-brain FWE-corrected, p < 0.001, peak = [0 47 –7]), posterior parietal cortex (z = 8.42, whole-brain FWE-corrected, p < 0.001, peak = [–45 –67 35]), and DLPFC (z = 5.59, whole-brain FWE-corrected, p < 0.001, peak = [24 32 47]). Likewise, in GLM-4 liking ratings (including the variance shared with wanting) correlated with activation in striatum (z = 6.19, whole-brain FWE-corrected, p < 0.001, peak = [–9 14 –1]), PCC (z = 10.95, whole-brain FWE-corrected, p < 0.001, peak = [0 –31 35]), DLPFC (z = 7.77, whole-brain FWE-corrected, p < 0.001, peak = [–18 32 50]), VMPFC (z = 7.69, whole-brain FWE-corrected, p < 0.001, peak = [–3 50 –4]), and posterior parietal cortex (z = 6.13, whole-brain FWE-corrected, p < 0.001, peak = [–45 –67 35]). Thus, both wanting and liking correlated with activation in regions belonging to the neural reward system. However, also in the GLMs with orthogonalized parametric modulators, we observed no effects of naltrexone or amisulpride (relative to placebo) on activations related to wanting (GLM-3) or liking (GLM-4) ratings even at lenient statistical thresholds (p < 0.001 uncorrected, cluster size >20 voxels).
 
@@ -92,36 +436,36 @@ Taken together, our findings deepen our understanding of the neurochemical mecha
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 A total of 121 healthy volunteers (58 females; Mage = 21.8 years, range = 18–30), recruited via email from the internal pool of the Laboratory for Social and Neural Systems Research (which includes mainly students from the University of Zurich and ETH Zurich), participated in the study. According to power analysis assuming the effect size (Cohen’s d = 0.65) from a previous study in our lab on the impact of amisulpride on value representations in the neural reward system (Kahnt et al., 2015), 38 participants per group allow detecting a significant effect (alpha = 5%) with a power of 80%. The goal of the power analysis was to optimize the sample size for finding drug effects on neural reward signals. However, given the differences between the current study design and the study by Kahnt et al., 2015, we note that the power might not have been optimal for all statistical tests in the current investigation (e.g., drug effects on explicit ratings or functional connectivity). Three participants were excluded from the analysis due to response omissions in more than 30% of all trials in the rating task (see below), two further participants were excluded because of excessive head movement (>5 mm in one of the six head motion parameters) in the scanner. Thus, the final sample comprised 116 participants (placebo: N = 39; naltrexone: N = 37; amisulpride: N = 40). Drug groups were matched with regard to age (p = 0.40), sex (p = 0.34), years of education (p = 0.45), and BMI (p = 0.29). Participants were screened prior to participation for exclusion criteria including history of brain disease or injury, surgery to the head or heart, and neurological or psychiatric diseases (including alcohol use disorder, depression, schizophrenia, bipolar disorders, claustrophobia, or Parkinson symptoms) via paper-pencil questionnaires. Further exclusion criteria were a severe medical disease such as diabetes, cancer, insufficiency of liver or kidneys, acute hepatitis, high or low blood pressure, any cardiovascular incidences, epilepsy, pregnancy or breastfeeding, past use of opiates or other drugs that may interact with amisulpride or naltrexone (such as stimulants). A qualitative drug urine screening test (M-10/5-DT, Diagnostik Nord, Schwerin, Germany) was performed to rule out illicit drug use prior the test session (amphetamines, barbiturates, buprenorphine, benzodiazepines, cannabis, cocaine, MDMA, methadone, and morphine/opiates). All participants provided written informed consent. For their participation, they received 40 Swiss francs per hour. The study was approved by the Ethics Committee of the Canton of Zurich and was part of a larger project where we investigated also pharmacological effects on Pavlovian-to-instrumental transfer and delay discounting (published in Weber et al., 2016). These tasks were administered after the rating task reported in the current manuscript (3 hr after drug intake). The larger project (though not the rating task) was preregistered on https://www.clinicaltrials.gov/ (NCT02557984).
 
-## Procedure
+### Procedure
 
 Participants received a pill containing either placebo (N = 40), 400 mg amisulpride (N = 41) or 50 mg naltrexone (N = 40) in a randomized and double-blind manner 3 hr before performance of the experimental tasks. Amisulpride is a selective dopamine D2/D3 receptor antagonist, whereas naltrexone is an unspecific opioid receptor antagonist that acts primarily on the μ- and κ-opioid receptors, with lesser and more variable effects on δ-opioid receptors (Rosenzweig et al., 2002; Weerts et al., 2008). We asked participants to fast for 6 hr before arrival at the lab. One hour after drug intake, participants started the wanting/liking rating task (see below) in the MRI scanner, which took approximately 90 min. The (first) peak in plasma concentration for amisulpride is after 60 min (Rosenzweig et al., 2002), whereas for naltrexone the peak is after 120 min (Verebey et al., 1976), such that participants performed the rating task around peaks in average plasma concentration. After task completion, participants answered post-experimental questionnaires, which probed whether they thought they had received a drug or placebo, and measured their mood (one rating was not recorded in the placebo group). We determined amisulpride and naltrexone blood plasma levels immediately before and after the behavioral tasks with high-performance liquid chromatography–mass spectrometry in order to control for the pharmacokinetics of the drugs.
 
-## Task design
+### Task design
 
 Participants performed a task in which they had to rate how much they wanted or liked 40 non-consumable everyday items (Weber et al., 2018). Before performing the rating task in the scanner, we familiarized participants with the items by physically presenting all items to them. The rating task was implemented in Matlab (The MathWorks, Natick, MA) and the Cogent 2000 toolbox. We asked participants to rate each item according to how much they wanted to have it, as well as how much they liked the item at that moment. In each trial, participants first saw a cue indicating the type of rating (wanting or liking) (1 s), followed by an image of the item (3 s), and finally the rating screen (3.5 s). Ratings were provided on a continuous scale using a trackball. Trials were separated by a variable intertrial interval (mean 3 s). Each item was rated twice for wanting and twice for liking, resulting in 160 trials split into four runs before the game (pre-test) and four runs after the game (post-test). Between the pre-test and post-test experimental sessions, participants played a game inside the scanner in which they could win the items. The game consisted of a perceptual task in which participants had to indicate whether the item was presented to the left or the right of the midpoint of the screen. Participants won items that they classified correctly. The difficulty of the game was calibrated such that participants won and lost 50% of the items.
 
-## MRI data acquisition and preprocessing
+### MRI data acquisition and preprocessing
 
 Whole-brain scanning was performed with a Philips Achieva 3T whole-body MRI scanner equipped with an eight-channel head coil (Philips, Amsterdam, The Netherlands). For each of the eight scanning runs, 227 T2*-weighted whole-brain EPI images were acquired in ascending order. Each volume consisted of 33 transverse axial slices, using field of view 192 mm × 192 mm × 108 mm, slice thickness 2.6 mm, 0.7 mm gap, in-plane resolution 2 mm × 2 mm, matrix 96 × 96, repetition time (TR) 2000 ms, echo time (TE) 25 ms, flip angle 80°. Additionally, a T1-weighted turbo field echo structural image was acquired for each participant with the same angulation as applied to the functional scans (181 slices, field of view 256 mm × 256 mm × 181 mm, slice thickness 1 mm, no gap, in-plane resolution 1 mm × 1 mm, matrix 256 × 256, TR 8.4 ms, TE 3.89 ms, flip angle 8°).
 
 Preprocessing was performed with SPM 12 (https://www.fil.ion.ucl.ac.uk/spm/). The functional images of each participant were motion corrected, unwarped, slice-timing corrected (temporally corrected to the middle image), and co-registered to the anatomical image. Following segmentation, we spatially normalized the data into standard MNI space. Finally, data were smoothed with a 6 mm FWHM Gaussian kernel and high-pass filtered (filter cutoff = 128 s).
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 Behavioral data in the rating task were analyzed with mixed general linear models (MGLMs) using the lme4 package in R. The alpha threshold was set to 5% (two-tailed). Degrees of freedom and p-values were computed using the Satterthwaite approximation with the lmerTest package. To replicate our previous findings that winning versus losing items has dissociable effects on wanting and liking ratings, we regressed item-specific ratings in the post-test session on fixed-effect predictors for Judgement (wanting versus liking), Item type (lost versus won), z-transformed item-specific ratings in the pre-test, and all interaction terms (MGLM-1). All these predictors were also modeled as random slopes in addition to participant-specific random intercepts. We also performed separate analyses for wanting and liking ratings (MGLM-2) where post-test item-specific ratings were predicted by Item type and Pre-test ratings.
 
 To assess drug effects on wanting and liking ratings, we regressed session- and item-specific ratings on fixed-effect predictors for Drug (amisulpride versus placebo and naltrexone versus placebo), Judgement, Session (pre-test versus post-test), and the interaction effects (MGLM-3). All fixed effects varying on the individual level (i.e., Judgement, Session, and Judgement × Session) were also modeled as random effects in addition to participant-specific intercepts. Again, we performed separate analyses for wanting and liking (MGLM-4), which were identical to MGLM-3 but left out all predictors for Judgement.
 
-## MRI data analysis
+### MRI data analysis
 
 To investigate drug effects on neural activation related to wanting and liking ratings, we computed two GLMs, following previous procedures (Weber et al., 2018). GLM-1 included an onset regressor for the presentation of the current item and the rating bar (duration = 7 s). This onset regressor was modulated by three mean-centered parametric modulators, that is, mean session-specific and item-specific wanting and liking ratings as well as decision times (to control for choice difficulty). The mean item-specific correlation between wanting and liking ratings was r = 0.71. We did not orthogonalize the parametric modulators, such that the results for the regressors reflect the unique variance explained by wanting or liking ratings. A separate regressor modeled all items for which no session- and item-specific value could be computed due to response omissions. GLM-2 was identical to GLM-1 with the only difference that it included separate onset regressors for wanting and liking trials. In GLM-2, the onset regressors for wanting and liking trials were modulated by parametric modulators for both wanting and liking ratings, which allowed assessing judgement-specific (e.g., wanting ratings on wanting trials) and judgement-unspecific (e.g., liking ratings on wanting trials) neural correlates of wanting and linking (Weber et al., 2018). Finally, we computed two further models, one where the liking regressor in GLM-1 was orthogonalized with respect to wanting (such that the regressor for wanting contained the variance shared by wanting and liking; GLM-3) and one where wanting was orthogonalized with respect to liking (GLM-4). In all models, the regressors were convolved with the canonical hemodynamic response function in SPM. We also added six movement (three translation and three rotation) parameters as covariates of no interest.
 
 For statistical analysis, we first computed the following participant-specific contrasts: For GLM-1, we computed parametric contrasts for wanting ratings and liking ratings (independently of judgement type) in GLM-1. For the second-level analysis, we entered the contrast images from all participants in a between-participant, random effects analysis to obtain statistical parametric maps. First, we investigated the neural correlates of wanting and liking independently of administered drug and conducted whole-brain second-level analyses using one-sample t-tests. To assess drug effects, we employed second-level independent t-tests for naltrexone versus placebo as well as amisulpride versus placebo. For these analyses, we report results that survive whole-brain family-wise error corrections at the peak level. In the figures, we set the individual voxel threshold to p < 0.001 with a minimal cluster extent of k ≥ 20 voxels. Results are reported using the MNI coordinate system.
 
-## PPI analysis
+### PPI analysis
 
 To examine how our pharmacological manipulations modulated the frontostriatal connectivity of wanting and liking, we conducted a whole-brain PPI analysis with the striatum as seed region. We defined the seed region by building a sphere (diameter = 6 mm) around the coordinates of wanting-related striatum activation in GLM-2 (MNI coordinates: x = –6, y = 11, z = –1). To create the regressors for the PPI analysis, we first extracted the average time course from the seed region for each individual participant (physiological regressor). We then multiplied the physiological regressor with psychological regressors for (i) wanting ratings on wanting trials, (ii) liking ratings on wanting trials, (iii) liking ratings on liking trials, and (iv) wanting ratings on liking trials. Next, we computed a GLM (PPI-1) that included the interaction terms, the physiological regressor, and the psychological regressors. We also added separate onset regressors for wanting and liking trials as well as movement parameters as regressors of no interest. For the statistical analysis, we computed contrasts for wanting ratings on wanting trials, wanting > liking ratings on wanting trials, liking ratings on liking trials, and finally liking > wanting ratings on liking trials. We submitted these contrasts to a second-level analysis to yield statistical parametric maps with a one-sample t-test. Because GLM-1 revealed wanting ratings to correlate with activation in DLPFC and VMPFC, we tested whether the striatum seed region shows functional connectivity with DLPFC and VMPFC. For this purpose, we applied SVC with a mask that included the significant wanting-correlated voxels in bilateral VMPFC and DLPFC from GLM-1 (thresholded with FWE correction at the voxel level). Additionally, we also performed exploratory whole-brain analyses.

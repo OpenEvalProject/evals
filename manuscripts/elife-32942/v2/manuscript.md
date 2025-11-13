@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.32942.001 Dengue and Zika viral infections affect millions of people annually and can be complicated by hemorrhage and shock or neurological manifestations, respectively. However, a thorough understanding of the host response to these viruses is lacking, partly because conventional approaches ignore heterogeneity in virus abundance across cells. We present viscRNA-Seq (virus-inclusive single cell RNA-Seq), an approach to probe the host transcriptome together with intracellular viral RNA at the single cell level. We applied viscRNA-Seq to monitor dengue and Zika virus infection in cultured cells and discovered extreme heterogeneity in virus abundance. We exploited this variation to identify host factors that show complex dynamics and a high degree of specificity for either virus, including proteins involved in the endoplasmic reticulum translocon, signal peptide processing, and membrane trafficking. We validated the viscRNA-Seq hits and discovered novel proviral and antiviral factors. viscRNA-Seq is a powerful approach to assess the genome-wide virus-host dynamics at single cell level.
+Dengue and Zika viral infections affect millions of people annually and can be complicated by hemorrhage and shock or neurological manifestations, respectively. However, a thorough understanding of the host response to these viruses is lacking, partly because conventional approaches ignore heterogeneity in virus abundance across cells. We present viscRNA-Seq (virus-inclusive single cell RNA-Seq), an approach to probe the host transcriptome together with intracellular viral RNA at the single cell level. We applied viscRNA-Seq to monitor dengue and Zika virus infection in cultured cells and discovered extreme heterogeneity in virus abundance. We exploited this variation to identify host factors that show complex dynamics and a high degree of specificity for either virus, including proteins involved in the endoplasmic reticulum translocon, signal peptide processing, and membrane trafficking. We validated the viscRNA-Seq hits and discovered novel proviral and antiviral factors. viscRNA-Seq is a powerful approach to assess the genome-wide virus-host dynamics at single cell level.
 
 ## Introduction
 
@@ -34,27 +34,73 @@ Here we report the development of viscRNA-Seq, an approach to sequence and quant
 
 ## Results
 
-## viscRNA-Seq recovers mRNA and viral RNA from single cells
+### viscRNA-Seq recovers mRNA and viral RNA from single cells
 
 viscRNA-Seq is modified from the commonly used Smart-seq2 for single cell RNA-Seq (Picelli et al., 2014). Briefly, single human cells are sorted into 384-well plates pre-filled with lysis buffer (Figure 1C). In addition to ERCC (External RNA Controls Consortium) spike-in RNAs and the standard poly-T oligonucleotide (oligo-dT) that captures the host mRNA, the lysis buffer contains a DNA oligo that is reverse complementary to the positive-strand viral RNA (Figure 1D). The addition of a virus-specific oligo overcomes limitations of other approaches and enables studying of viruses that are not polyadenylated (Russell et al., 2018). Reverse transcription and template switching is then performed as in Smart-seq2, but with a 5’-blocked template-switching oligonucleotide (TSO) that greatly reduces the formation of artifact products (TSO concatemers). The cDNA is then amplified, quantified, and screened for virus presence via a qPCR assay (Figure 1E). Since many cells are not infected, this enables us to choose wells that contain both low and high vRNA levels and then to sequence their cDNA on an illumina NextSeq at a depth of ∼ 400,000 reads per cell (Figure 1F). This approach provides high coverage of transcriptome and allows high-quality quantitation of gene expression and intracellular virus abundance in a relatively large number of cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig1-v2.jpg)
+
+**Figure 1.:** (A to F) Experimental design: (A) human hepatoma (Huh7) cells are infected with dengue or Zika virus at time 0 at multiplicity of infection (MOI) 0 (control), 1, or 10, then (B) harvested at different time points, (C) sorted and lysed into single wells. (D) Both mRNA and viral RNA (vRNA) are reverse transcribed and amplified from each cell, then (E) cells are screened for virus infection by qPCR. (F) Libraries are made and sequenced on an illumina NextSeq 500 with a coverage of ~400,000 reads per cell. (G) The fraction of cells with more than 10 virus reads increases with MOI and time, saturating at 48 hr post infection. (H) Distributions of number of virus reads (left) and expression of an example stress response gene (right) inside single cells, showing the different dynamics of pathogen replication and host response. Whereas virus content can increase 1000 fold and shows no saturation, expression of DDIT3/CHOP saturates after a 10 fold increase.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ERCC spike-ins abundance distributions in single cells. (B) Number of genes detected above four reads in the sequenced cells. (C) Expression of some housekeeping genes. (D) comparison of qPCR and sequencing for vRNA content. (E) Coverage of the dengue genome for all experimental conditions during the DENV infection.
+
 We applied viscRNA-Seq to an infection time course in cultured cells. We infected human hepatoma (Huh7) cells with DENV (serotype 2, strain 16681) at multiplicity of infection (MOI) of 1 and 10. To assess reproducibility, we performed an independent experiment on DENV infection on a smaller scale (1/5th of the cell numbers) and obtained consistent results (see Figure 2—figure supplement 1). In a separate experiment, Huh7 cells were infected with ZIKV (Puerto Rico strain, PRVABC59) at an MOI of 1. Uninfected cells from the same culture were used as controls (Figure 1A). At four different time points after infection – 4, 12, 24, and 48 hr – cells were harvested, sorted, and processed with viscRNA-Seq (Figure 1B). Recovery of the ERCC spike-ins and number of expressed genes per cell confirmed that the libraries were of high quality (Figure 1—figure supplement 1, panels A-B). From each experimental condition, 380 cells were screened for virus and ~100 of those were sequenced. In total ~7500 single cells were screened and ~2100 were sequenced (see Supplementary file 1).
 
-## Intracellular virus abundance and gene expression are heterogeneous across cells
+### Intracellular virus abundance and gene expression are heterogeneous across cells
 
 First, we focused on infection by DENV. As expected, qPCR showed an increase in the fraction of infected cells with both MOIs over time (Figure 1G). Whereas most genes were rather homogeneously expressed, both intracellular virus abundance (number of vRNA reads per million transcripts) and expression of a subset of genes varied widely across infected cells (Figure 1H). Overall, between zero and a quarter of all reads from each cell (i.e. ~105 reads) are vRNA-derived, hence the dynamic range for intracellular virus abundance is extremely wide. On average, intracellular virus amount increased with time and MOI. The distribution of both intracellular virus abundance and gene expression are rather symmetric in logarithmic space (Figure 1H); as a consequence, mean expression as measured in a bulk assay is higher than the median and over-represents highly infected cells. The high coverage sequencing enables a quantitative measurement of the variation in the expression level of thousands of genes in each cell (Figure 1—figure supplement 1–1B). As a next step, we aimed at identifying which elements of this variation are induced by the infection.
 
-## Correlation between intracellular virus abundance and gene expression within single cells tracks infection-triggered host response
+### Correlation between intracellular virus abundance and gene expression within single cells tracks infection-triggered host response
 
 In a bulk assay each of the experimental conditions would be an average of all cells, making it difficult to extract clear statistical patterns. Leveraging both single-cell resolution and high throughput, we directly computed Spearman’s rank correlation coefficient between each gene expression and intracellular virus abundance across all cells. This metric does not require an explicit noise model for either expression or virus abundance and is therefore insensitive to outlier cells. To assess uncertainties, we performed 100 bootstraps over cells (see Materials and methods). As expected, most genes do not correlate with vRNA level and the distribution of their correlation coefficients decays rapidly away from zero (Figure 2A). In panels 2B-D examples of strong anticorrelation, strong correlation, and absence of correlation are shown. Both the level of vRNA at which each gene starts to correlate and the slope of the response vary across genes and may reflect different infection stages (see below). Genes with extreme correlation consistently represent specific cellular functions. Most of the top correlated genes (Figure 2A right inset) are involved in the ER unfolded protein response (UPR) (see e.g. DDIT3 in Figure 2C), consistent with ER stress response triggered by flavivirus translation and RNA replication on ER-derived membranes (Medigeshi et al., 2007). Numerous strongly anticorrelated genes (Figure 2A left inset) are components of actin and microtubules, indicating cytoskeleton breakdown (as an example, see ACTB in Figure 2B). Notice that anticorrelated genes appear to react at higher intracellular virus amounts than correlated genes, as exemplified by the higher threshold for ACTB than DDIT3 (see Figure 2B–C, Materials and methods, and Figure 2—figure supplements 2,3). Molecular chaperones are found in both categories suggesting a more nuanced regulation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distribution of Spearman correlation coefficients between dengue vRNA and mRNA from the same cell across all human genes. The insets list the top correlated (right) and anticorrelated (left) genes. Response to ER stress and apoptosis is activated as infection proceeds, whereas actin and microtubules pathways are downregulated. (B–E) Examples of correlation patterns observed across the transcriptome, as a scatter plot of vRNA amount versus gene expression. Each dot is a single cell and the green shades indicate the density of cells. Dashed lines indicate least-square piecewise-linear fits in log-log space (see Materials and methods): (B) Anticorrelation at high vRNA content, (C) correlation at medium to high vRNA content, (D) no correlation, and (E) time-dependent correlation dynamics. (F) Expression versus vRNA content for gene COPE, as shown in panel E but splitting cells by time after infection. Correlation at each time is shown in the top left corner of each plot, and switches from strongly negative to strongly positive as infection proceeds. (G) Correlation between expression and dengue vRNA content switches from negative to positive (< −0.3 to >+0.3) for six genes (left panel) and in the opposite direction for 11 genes (right panel), highlighting potential multiple roles of these genes during dengue virus infection. Error bars and numbers in parentheses are standard deviations of 100 bootstraps over cells (the latter indicates uncertainties on the last digit).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Each dot is a gene; x coordinate is the correlation of gene expression with virus reads per million transcripts in the small-scale experiment, y coordinate is the same in the large-scale experiment of Figure 2; genes with a correlation coefficient of 0.3 or more in magnitude are highlighted in blue. The legend indicates Pearson’s r coefficients for all genes and the highlighted ones.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The top rows show the most positively correlated genes, the two bottom rows the most anticorrelated genes (see Figure 2A, insets).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** This result is indicative that underexpression of cytoskeleton and metabolic genes mostly follows increased expression of ER stress response genes, and not vice versa. In the left panel, threshold is scattered against correlation with virus amount (each dot is a gene), limited to strongly anticorrelated or correlated genes. A gaussian kernel density estimate is overlayed as contour lines. In the right panel, histograms of thresholds (see Methods) and their medians for anticorrelated or correlated genes are shown, respectively.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Intracellular DENV abundance and the expression of two marker genes for G1-S versus G2-M are shown on top of a t-SNE representation of 23 marker genes (MCM2, UNG, CDC6, SLBP, PCNA, MCM6, RFC4, UBE2C, HMGB2, NUSAP1, BUB3, KIF22, ADGRG6, CCNB1, CKS2, KPNA2, UBE2S, CDC20, CENPF, HMGB3, PTTG1, BIRC5, SFPQ). Low expression/virus abundance is dark blue, intermediate expression/virus abundance is green, highest expression/virus abundance is yellow. Panel A is restricted to cells from the earliest time point (4 hr post-infection) and shows a clear separation of the two cell cycle phases, but cells from both can contain DENV RNA in similar amounts. Panel B includes all cells and highlights late infection; cells with high intracellular DENV abundance are negative for both cell cycle markers, indicating breakdown of normal cycling processes.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** We compared control cells with cells from infected cultures but which had zero viral reads themselves (‘bystander cells’), from the earliest two time points (4 and 12 hr post-infection - in later cultures almost all cells had virus reads). We performed nonparametric Kolmogorov-Smirnov test on gene expression to detect differentially expressed genes in bystanders and found no significant result after Bonferroni correction, however the three most significant genes are plotted together with two ‘time switchers’ (HM13 and SQSTM1) and one control gene. The P value of the statistical test is shown in the bottom left corner of each plot. Whereas the other two time switchers show no difference, COPE may to be downregulated in bystander cells.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig2-figsupp6-v2.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig3-v2.jpg)
+
+**Figure 3.:** (A) Correlation between gene expression and vRNA during Dengue virus versus Zika virus infection. Each dot is a gene and the contour lines indicate the an estimate of the density of genes. Most genes do not correlate with either virus, but some genes correlate strongly with different degrees of virus specificities. Only cells with 500 or more virus reads per million transcripts are used for this analysis (see main text). (B–E) Examples of genes with different behavior across the two viruses, as a scatter plot of gene expression versus vRNA content. Each dot is a single cell. Dengue plots are indicated by a D, Zika plots by a Z in the top left corner. Numbers in parentheses are standard deviations of 100 bootstraps over cells (uncertainties on the last digit).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In cells with more than 1000 virus reads per million transcripts, expression of clear effectors of apoptosis (e.g. caspases) does not show a strong correlation with virus amounts - CASP6 actually shows a negative correlation -, but DDIT3/CHOP and its downstream targets TRIB3 and PPP1R15A/GADD34, which are usually assumed as mediator of apoptosis, all show distinctive upregulation in cells with large intracellular virus amounts (Sano and Reed, 2013; Szegezdi et al., 2006). Positive regulator of apoptosis BBC3/PUMA shows a modest correlation of 0.17. Genes are sorted by correlation with intracellular DENV amount.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Similar to Figure 3—figure supplement 1 (which is for DENV). In cells with more than 10 Zika virus reads per million transcripts, expression of caspases is not correlated with intracellular virus amount with the exception of CASP3 (positive correlation, unlike for DENV) and CASP6 (negative correlation, like for DENV). A major difference between the two viruses is the expression of ATF4 and EDEM1, the other ER stress response genes behaving in a similar manner for both viruses. Genes are sorted by correlation with intracellular ZIKV amount.
+
 To understand whether correlated genes may represent pathways that are important for virus infection, we focused on the top 1% correlated subset of the transcriptome (correlation in excess of 0.3 in absolute value) and performed Gene Ontology (GO) enrichment analysis using the online service PANTHER (Mi et al., 2017). This statistical analysis confirmed the qualitative picture emerging from the top correlates. At 4 hr post-infection upregulation of genes involved in translation and suppression of mRNA processing is demonstrated. At 48 hr post-infection there is an upregulation of UPR, protein degradation via ERAD, and ER-to-Golgi anterograde transport via COPII-coated vesicles, and a downregulation of cytoskeleton organization and cell cycle genes related to both G1-S and G2-M phases (see Supplementary files 1–4). No clear effect of cell cycle genes on infection at early time points is observed, in agreement with previous reports in human cells (see Figure 2—figure supplement 4) (Helt and Harris, 2005).
 
-## Several genes switch role during dengue infection
+### Several genes switch role during dengue infection
 
 Naturally, cells that are infected for longer tend to harbor more vRNA. To disentangle the effect of time since infection from the vRNA level within each cell, we computed the same correlation coefficient within single time points. We discovered that most correlated genes exhibit either positive or negative correlation, but not both. This behavior is expected for generic stress response genes; the sign of the differential expression is a hardwired component of their physiological function. However, a group of 17 ‘time-switcher’ genes show both an anticorrelation of less than −0.3 and a correlation in excess of +0.3 at different time points post-infection, suggesting a more specific interaction with DENV. Of these, six genes transition from anticorrelation to correlation (e.g. COPE, Figure 2E–F), 10 show the opposite trend, and a single gene (PFN1) follows a nonmonotonic pattern (Figure 2G). Since more than two time points were sampled, a consistent increase (or decrease) in correlation likely stems from a biological change rather than a technical noise. Of the six proteins which switch from anticorrelated to correlated, RPN1 and HM13 localize to the ER. RPN1 is a non-catalytic member of the oligosaccharide transfer (OST) complex, which is required for N-linked glycosylation of some ER proteins, whereas HM13 is a protease that cleaves the signal peptide after translocation into the ER. Both of these factors have been shown to be essential for DENV infection (Marceau et al., 2016). Of the other four proteins that show a similar behavior, SQSTM1 is a scaffold protein involved in selective autophagy of polyubiquitinated substrates and has been shown to have a bimodal behavior in DENV infection (Metz et al., 2015), whereas UBC is a major source of ubiquitin. Lastly, GORASP2 and COPE play a role in Golgi assembly and/or membrane trafficking. In particular COPE is a subunit of the coatomer complex (COPI) that mediates both intra-Golgi and Golgi-to-ER retrograde vesicle transport; another subunit of this complex, COPB1, has recently been shown to be essential for DENV (Iglesias et al., 2015). Interestingly, COPE also appears to be downregulated during early infection in ‘bystander’ cells; i.e. cells that originate from an infected culture but are themselves not infected (Figure 2—figure supplement 5). No uninfected cells were recovered from infected cultures at late time points.
 
-## Host response difference between DENV and ZIKV infections
+### Host response difference between DENV and ZIKV infections
 
 Next we sought to address the question of which elements of the host response are common between DENV and ZIKV, and therefore potentially common with other evolutionarily related viruses as well. To do so, we replicated the time course experiment with ZIKV at MOI 0 (control) and 1. Although Huh7 cells were also infected at an MOI of 10, cell death precluded sorting. Figure 3A shows the correlations between gene expression (each dot represents a human gene) and vRNA for both experiments and represents the two-dimensional equivalent of Figure 2A. We discovered that the majority of genes are not correlated with either virus (contour lines indicate density of genes). Nevertheless, a clear pattern with genes along the positive diagonal emerged, such as ATF3 (Figure 3C) and ACTG1 (Figure 3D), demonstrating a similar behavior upon infection with either virus. A minority of genes are scattered away from the diagonal, indicating discordant behavior between DENV or ZIKV infection. For instance, ID2 expression decreases at high DENV level but increases at high ZIKV RNA level (Figure 3B), while the opposite trend is observed with the chaperone HSPA5 (Figure 3E and see below). A number of genes at the outskirts of the correlation plot are labeled and highlighted in red as they exhibit noteworthy expression patterns upon infection: i.e. either an extremely strong correlation with both viruses or a high degree of virus specificity. These outliers include two subunits of the SEC61 complex (B, and G), several subunits of the TRAP complex and the OST, previously shown to be essential for DENV and/or WNV infection (Marceau et al., 2016; Zhang et al., 2016), and other genes that may be relevant to infection with either virus.
 
@@ -64,9 +110,19 @@ To understand how these correlated genes shape the heterogeneity of infected cel
 
 **Figure 4.:** (A) t-SNE dimensionality reduction using all genes that correlate with at least one virus (<−0.4 or >0.4). Each dot is a cell and is colored by intracellular virus abundance (left panel) and time post-infection (right panel). Colors are shades of red for the dengue experiment, shades of blue for the Zika one. Arrows in the left panel indicate the average position of cells at increasing intracellular virus abundance. (B) Expression of four example genes as in Figure 3B–E on top of the t-SNE visualization. (C) Correlation between expression and Zika vRNA content switches from negative to positive (< −0.3 to >+0.3) for one gene (left panel) and in the opposite direction for 10 genes (right panel). Error bars are standard deviations of 100 bootstraps over cells. Unlike in dengue virus infection (Figure 2G), the temporal traces of Zika infection do not show a simple increase or decrease but rather complex dynamics.
 
-## Validation of proviral and antiviral host factors
+### Validation of proviral and antiviral host factors
 
 To probe the functional relevance of genes demonstrating correlations with DENV abundance, we first conducted loss-of-function screens. We measured the effects of siRNA-mediated depletion of 32 individual genes in Huh7 cells on DENV infection and on cellular viability (Figure 5A and Figure 5—figure supplement 1A). Using a cutoff of greater than 40% inhibition of viral infection as measured by luciferase assays normalized to cell viability in two independent screens, we identified multiple host factors that severely affect viral infection. These include a few components of the translocon previously shown to be essential for DENV: HM13 (Marceau et al., 2016) or WNV: SPCS2 (Zhang et al., 2016) as well as two novel components of the ER translocon: RPL31 and TRAM1 (Ng et al., 2010). Depletion of two proteins involved in membrane trafficking, TMED2 (secretory pathway) and COPE (retrograde, Golgi to ER) as well as the ER-resident chaperone and ERAD protein HSPA5 and the multifunctional transcription factor in ER stress, DDIT3 also reduced DENV infection.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig5-v2.jpg)
+
+**Figure 5.:** DENV infection relative to NT siRNA (A) or empty plasmid (B) controls following siRNA-mediated knockdown (A) or overexpression (B) of the indicated host factors measured by luciferase assays at 48 hr post-infection of Huh7 cells and normalized to cell viability. Both data sets are pooled from two independent experiments with three replicates each. The dotted lines represent the cutoffs for positivity. Cellular viability measurements are shown in Figure 2—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Overall DENV infection (black) measured by luciferase assays and relative cell viability (grey) measured by alamarBlue assays at 48 hr post-infection of siRNA-transfected or ectopically expressing Huh7 cells. Data are expressed relative to NT siRNA (A) or empty plasmid control (B). Data are an average of two independent screens with three replicates each. The dotted lines represent the cutoffs for positivity.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/32942/elife-32942-fig5-figsupp2-v2.jpg)
 
 In contrast, siRNA-mediated depletion of two genes that anticorrelate with intracellular virus abundance, ID2 and CTTNB1 (β-catenin), increased DENV infection, indicating that these proteins function as antiviral restriction factors, as previously reported in HIV (Kumar et al., 2008). Notably, ID2 and CTTNB1 are known interacting partners (Rockman et al., 2001), which may be acting via the interferon I pathway (Hillesheim et al., 2014). Suppression of another subset of overexpressed or underexpressed genes demonstrated no effect on DENV infection, suggesting that they were either non-essential or not restricting (possibly due to redundancy in host factors requirement) or that the level of knockdown was insufficient to trigger a phenotype.
 
@@ -98,78 +154,124 @@ Overall, our study highlights the potential of single-cell level, high-throughpu
 
 ## Materials and methods
 
-## Cells
+### Cells
 
 Human hepatoma (Huh7) cells were obtained from Apath LLC (Brooklyn, NY). Cells were grown in DMEM (Mediatech, Manassas, VA) supplemented with 10% FBS (Omega Scientific, INC, Tarzana, CA), nonessential amino acid, 1% l-glutamine, and 1% penicillin-streptomycin (ThermoFisher Scientific, Waltham, MA) and maintained in a humidified incubator with 5% CO2 at 37°C. C6/36 cells were obtained from ATCC (ATCC CRL-1660, Manassas, VA) and grown in Leibovitz’s L-15 media (Mediatech, Manassas, VA) supplemented with 10% FBS (Omega Scientific, INC, Tarzana, CA, USA) and 1% HEPES (ThermoFisher Scientific, Waltham, MA) in a humidified chamber at 28°C and 0% CO2. Cell lines identity was confirmed via phenotypic studies (low grade infection with hepatitis C virus (Huh7); syncytia formation upon DENV infection (C6/36) (Corner and Ng, 1987). Cells were tested negative for mycoplasma by the MycoAlert mycoplasma detection kit (Lonza, Morristown, NJ).
 
-## Plasmids and virus constructs
+### Plasmids and virus constructs
 
 The DENV 16681 infectious clone (pD2IC-30P-NBX) used in the single cell transcriptomic assays was a gift from Claire Huang (Centers for Disease Control and Prevention, Public Health Service, US Department of Health and Human Services, Fort Collins, Colorado, USA)(Huang et al., 2010). A Renilla reporter DENV2 New Guinea C strain (NGC) plasmid (pACYC-DENV2) used in the validation assays was a gift from Pei-Yong Shi (University of Texas Medical Branch, Galveston, Texas, USA)(Zou et al., 2011). ZIKV PRVABC59 was obtained from BEI Resources. Open reading frames (ORFs) encoding 26 hits were selected from the Human ORFeome library of cDNA clones(Rual et al., 2004) (Open Biosystems), three from Addgene and one from DNASU(Seiler et al., 2014) and recombined into a pFLAG (for FLAG tagging) vector using Gateway technology (Invitrogen).
 
-## Virus production
+### Virus production
 
 DENV2 16681 strain RNA was transcribed in vitro using mMessage/mMachine T7 kit (Ambion) from pD2IC-30P-NBX plasmid linearized by XbaI. DENV was produced by transfection of viral RNA into Huh7 cells and harvesting the culture supernatants at days 5–7. A Renilla reporter DENV2 NGC strain RNA was transcribed in vitro by mMessage/mMachine T7 kit (Ambion) from pACYC-Rluc2A-NGC linearized by XbaI. DENV was produced by electroporation of the viral RNA into BHK-21 cells and harvesting the supernatants at day 10. ZIKV, Puerto Rico strain (PRVABC59) was propagated in C6/36 insect cell. Titers of all viruses were measured via standard plaque assays on BHK-21 cells.
 
-## Infection assays
+### Infection assays
 
 Huh7 cells were infected with DENV or ZIKV for 4 hr at different MOIs (0, 1, and 10) and harvested at various time points post-infection. For the functional screens, Huh7 cells were infected with DENV in triplicates for 4 hr at MOI of 0.05. Overall infection was measured at 48 hr using standard luciferase assays.
 
-## RNA interference
+### RNA interference
 
 siRNAs (100 nM) were transfected into cells using silMPORTER (Millipore) 72 hr prior to infection with luciferase reporter DENV at MOI of 0.05. Custom Cherry-Pick ON-TARGETplus siRNA library against 32 genes was purchased from Dharmacon (see Supplementary file 4 for gene and siRNA sequence details).
 
-## Gain-of-function assays
+### Gain-of-function assays
 
 Plasmids expressing ORFs encoding human genes or empty vector control were ectopically expressed in Huh7 cells by transfection with TransIT-LT1 (Mirus) 24 hr prior to infection with luciferase reporter DENV at MOI of 0.05.
 
-## Viability assays
+### Viability assays
 
 Viability was assessed using alamarBlue reagent (Invitrogen) according to the manufacturer’s protocol. Fluorescence was detected at 560 nm on an Infinite M1000 plate reader (Tecan).
 
-## Single cell sorting
+### Single cell sorting
 
 At each time point, cells were trypsinized for 10 min, lifted them from the culture plate, pelleted and resuspended in 1 ml fresh media. After around 15 min, cells were pelleted again and resuspended in 2 ml 1X phosphate-buffered saline (PBS) buffer at a concentration of around 1 million cells per ml. Cells were filtered through a 40 um filter into a 5 ml FACS tube and sorted on a Sony SH800 sorter using forward and backscatter to distinguish living cells from dead cells and debris. Sorts were done into 384-well PCR plates containing 0.32–0.5 ul of lysis buffer (see below) using”Single cell’ purity mode. A total of 12 384-well plates of single cells were sorted for the Dengue time course (four uninfected, 4 MOI 1, and 4 MOI 10), and eight plates for the Zika time course (4 uninfected and 4 MOI 1), yielding a total of about 7500 cells.
 
-## Lysis buffer, reverse transcription, and PCR
+### Lysis buffer, reverse transcription, and PCR
 
 To capture and amplify both mRNA and viral RNA (vRNA) from the same cell, the Smart-seq2 protocol was adapted (Picelli et al., 2014). All volumes were reduced by a factor 12 compared to the original protocol to enable high-throughput processing of 384-well plates. ERCC spike-in RNA was added at a concentration of 1:10 of the normal amount. The lysis buffer contained, in addition to the oligo-dT primer at 100 nM final concentration, a virus specific reverse primer to capture the positive-stranded virus RNA at a concentration of 1 nM. The capture primer sequences were the following:
 
-VirusCapture primerDengueAAGCAGTGGTATCAACGCAGAGTACGAACCTGTTGATTCAACAGCZikaAAGCAGTGGTATCAACGCAGAGTACTCCRCTCCCYCTYTGGTCTTG
+<table>
+  <thead>
+    <tr>
+      <th>Virus</th>
+      <th>Capture primer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dengue</td>
+      <td>AAGCAGTGGTATCAACGCAGAGTACGAACCTGTTGATTCAACAGC</td>
+    </tr>
+    <tr>
+      <td>Zika</td>
+      <td>AAGCAGTGGTATCAACGCAGAGTACTCCRCTCCCYCTYTGGTCTTG</td>
+    </tr>
+  </tbody>
+</table>
 
 Different virus-specific primers and higher primer concentrations were tested but resulted in a large fraction of primer dimers. In order to reduce interference between the virus-specific primer and the Template Switching Oligo (TSO) used to extend the RT products, a 5’-blocked biotinylated TSO was used at the standard concentration. A large fraction of TSO concatemers was observed when testing reactions with a standard, non-biotinylated TSO. Reverse transcription (RT) and polymerase chain reaction (PCR) of the cDNA were performed in 1 ul and 2.5 ul, respectively: cells were amplified for 21 cycles. Lambda exonuclease was added to the PCR buffer at a final concentration of 0.0225 U/ul and the RT products were incubated at 37 C for 30 min before melting the RNA-DNA hybrid as it was observed that this reduced the amount of low-molecular weight bands from the PCR products. After PCR, the cDNA was diluted 1 to 7 in Tris buffer for a final volume of 17.5 ul. This dilution was used instead of the DNA purification by magnetic beads. In fact, we have tried to optimize purification by magnetic beads in 384-well plates but discovered that good libraries can be obtained without this step so we dropped it to maximize yield throughout the protocol, which allows fewer PCR cycles. All pipetting steps were performed using a TTPLabtech Mosquito HTS robotic platform.
 
-## cDNA quantification
+### cDNA quantification
 
 To quantify the amount of cDNA in each well after PCR, a commercial fluorimetric assay was used (ThermoFisher QuantIt Picogreen). Briefly, 80–300 nl of cDNA and 25 ul of 1:200 dye-buffer mix were pipetted together into a flat-bottom 384-well plate (Corning 3540). Six wells were used for a blank and five standard concentrations (0.1 to 2 ng/ul) in the same amount as the sample. The plate was briefly mixed, centrifuged, incubated in the dark for 5 min, and measured on a plate reader at wavelength 550 nm. cDna concentrations were calculated via an affine fit to the standard wells.
 
-## Detection of infected cells by qPCR
+### Detection of infected cells by qPCR
 
 Depending on the conditions (MOI and time since infection), the fraction of infected cells in each 384-well plate varies widely. In order to optimize sequencing on the widest possible dynamic range of virus amount per cell, we screen the amplified cDNA with a primer-probe based qPCR. Primer sequences are as follows:
 
-VirusForward primerReverse primerProbeDengueGARAGACCAGAGATCCTGCTGTCTACCATTCCATTTTCTGGCGTT6FAM-AGCATCATTCCAGGCAC-MGBZikaAARTACACATACCARAACAAAGTGGTTCCRCTCCCYCTYTGGTCTTG6FAM-CTYAGACCAGCTGAAR-MGB
+<table>
+  <thead>
+    <tr>
+      <th>Virus</th>
+      <th>Forward primer</th>
+      <th>Reverse primer</th>
+      <th>Probe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dengue</td>
+      <td>GARAGACCAGAGATCCTGCTGTCT</td>
+      <td>ACCATTCCATTTTCTGGCGTT</td>
+      <td>6FAM-AGCATCATTCCAGGCAC-MGB</td>
+    </tr>
+    <tr>
+      <td>Zika</td>
+      <td>AARTACACATACCARAACAAAGTGGT</td>
+      <td>TCCRCTCCCYCTYTGGTCTTG</td>
+      <td>6FAM-CTYAGACCAGCTGAAR-MGB</td>
+    </tr>
+  </tbody>
+</table>
 
 The qPCR sequences for Dengue and Zika virus were adapted from (Gurukumar et al., 2009) and (Faye et al., 2013). For Zika, a minor groove binder (MGB) probe was used instead of the LNA probe of the original publication. Notice that for both viruses, conserved regions in the virus genome are selected and degenerate bases are used to ensure that the qPCR assay works independently on the mutations happening in the virus population during the cell culture. In addition to the virus-specific primers-probe, a commercial primer-probe assay for ACTB with a VIC fluorophore is used in the same reactions as an additional checkpoint for bona fide cDNA quality. 250 nl of each cell’s cDNA were pipetted into a 5 ul reaction. The cycling protocol is 45 cycles of 95 C for 5 s followed by 60 C for 30 s. Synthetic single-stranded DNA sequences matching the qPCR primers-probe combinations were used in three concentrations (10 pM, 1 pM, 0.1 pM) and together with an additional blank well to calibrate the quantification (total of 4 wells for standards/blank). Each standard well included 250 nl of virus synthetic ssDNA and 250 nl of ACTB synthetic ssDNA covering the commercial assay, both at the same concentration. Notice that although RT-qPCR can be used directly on cell lysates to obtain an accurate quantification of cellular RNAs, this assay is performed on preamplified cDNA instead, hence it is expected to be at best semi-quantitative. Nonetheless, we found it useful both as an early quality control step during the experiments and as a rough screening criterion to cherry pick cells for sequencing (see below). Because we obtained a great dynamic range of number of virus reads from single cells after sequencing, the qPCR results were not used in the downstream data analysis.
 
-## Cherry picking of cDNA
+### Cherry picking of cDNA
 
 Not all 7500 sorted cells were sequenced; rather, to improve coverage at the same cost, around 2000 cells were cherry picked for sequencing. With the results of the cDNA quantification and the virus and ACTB qPCR at hand, cells were selected such that they cover the largest possible set of conditions. For instance, in a plate with infected cells we ensured that both qPCR negative cells (ACTB but no virus), cells with little virus, and cells with a high amount of vRNA were all represented in the sequencing data. The selection was designed in a semi-automatic way via JavaScript and Python scripts and implemented on TTPLabtech Mosquito HTS and X1 HV robotic platforms. At the same time as cherry picking, the cDNA from each cell was also diluted to around 0.4 ng/ul for Tn5 endonuclease library prep. Although this concentration is slightly higher than usual or this type of libraries, the cDNA was not purified so that a certain fraction of the DNA is residual short oligos from previous reactions, which is most likely too short to end up on the sequencer.
 
-## Library prep and sequencing
+### Library prep and sequencing
 
 Sequencing libraries were prepared using the illumina Nextera XT kit following manufacturer’s instructions, with the following exceptions: (1) we used a smaller reaction volume (around 1 ul per cell); (2) we chose a slightly higher cDNA concentration (0.4 ng/ul) as input, to compensate for the lack of bead purification upstream; (3) we designed, tested, and used a custom set of Nextera-compatible barcodes to increase plexity to 1536 cells per sequencing run, at an average depth of 250,000 reads per cell. The latter efforts allowed us to sequence each time course on a single illumina NextSeq sequencing run, reducing batch effects related to sequencing quality. We used the commercial 24 i7 barcodes and the 64 new i5 barcode sequences (see Supplementary file 6). We noticed a low level of cross-talk between these barcodes, indicated by up to five virus reads found in a few uninfected cells. However, considering that a sizeable fraction of cells in the same sequencing run (late infected and high MOI) had tens or even hundreds of thousand of virus reads, the amount of cross-talk between barcodes appears to be of the order of 1 in 10,000 or less. In terms of sequencing lengths, we sequenced eight bases from the standard i7 barcodes, 12 bases from the custom i5 barcodes, and 74 bases from each end of the insert (paired-end sequencing) using an illumina 150 cycles High Output kit for each of the two time courses.
 
-## Bioinformatics pipeline
+### Bioinformatics pipeline
 
 After sequencing was completed, we converted BCL files into gzipped FastQs via illumina’s bcl2fastq. Because this software struggles with very high plexity libraries, we wrote a custom demultiplexer that copes better with the ∼ 1000 cells per sequencing run of each time course. We then mapped the reads against the human GRCh38 genome with supplementary ERCC sequences using STAR Aligner (Dobin et al., 2013) and counted genes using htseq-count (Anders et al., 2015). Because the latter software was unmaintained at the time, one of us (FZ) took over the maintenance of the project, refactored the code, and added automated testing to check for software bugs. The reads that did not map to the human genome were remapped to the Dengue/Zika genome with rather permissive criteria using Stampy (Lunter and Goodson, 2011), filtered via custom scripts to eliminate artifacts, and counted to determine the viral reads per million transcripts (see below). The stanford high-performance computing clusters Sherlock and Sherlock 2.0 were used for the computations. Once the gene/virus counts were available, the downstream analysis was performed on a laptop using both custom Python scripts and the library singlet (https://github.com/iosonofabio/singlet; copy archived at https://github.com/elifesciences-publications/singlet), which is a second from-scratch implementation of the same functionality to minimize software bugs. The scientific data libraries numpy and scipy (van der Walt et al., 2011), pandas (McKinney, 2011), xarray (Hoyer and Hamman, 2017), SeqAn (Döring et al., 2008) and its derivative seqanpy (https://github.com/iosonofabio/seqanpy) were used for number crunching. Matplotlib (Hunter, 2007) and seaborn (Waskom et al., 2014) were used for plotting. The gene expression and virus counts as well as the sample metadata are availble in Supplementary file 7. The virus particles and cell culture images in Figure 1 are used under a Creative Common license from user Nossedotti and Y tambe at https://commons.wikimedia.org.
 
-## Incorporation of dying cells
+### Incorporation of dying cells
 
 We attempted to incorporate dying cells as much as possible via the following experimental design choices: (i) we did not use a stain to distinguish between live and dead cells; (ii) the scattering gates used in the sorter enabled elimination of most debris particles, yet were kept as wide as possible, thereby enabling inclusion of dying cells; (iii) while cherry picking cells for sequencing, we intentionally kept cells with the largest virus/ACTB RNA ratio (as measured via the qPCR assays) to capture cells at late apoptotic stages.
 
-## Error estimates and reproducibility
+### Error estimates and reproducibility
 
 Correlation coefficients are computed as Spearman’s rank correlation ρ. We estimate uncertainties by bootstrapping 100 times over cells and report the standard deviation in parentheses as errors on the last significant digit, or as error bars in graphs. To assess reproducibility, we performed an independent experiment on DENV infection on a smaller scale (1/5th of the cell numbers) and obtained consistent results (see Figure 2—figure supplement 1).
 
-## Piecewise-linear fits of gene expression versus intracellular virus amounts
+### Piecewise-linear fits of gene expression versus intracellular virus amounts
 
-To quantitate the gene expression changes in response to virus infection, we fit a parametric model to the single cell values of gene expression versus intracellular virus amount, using the following equation:log10 g =b +Θ(v − vt) (i + s ⋅log10v),where g is the expression of the focal gene in counts per million transcripts, v the intracellular virus amount in reads per million transcripts, Θ is the Heaviside step function that is zero for negative arguments and one for positive ones. The parameters are: b is the baseline gene expression level of uninfected cells, vt is the threshold, that is, the minimal intracellular virus amount required for gene expression to change, and i and s are the intercept and slope of the linear part of the curve, respectively. Minimization is performed via nonlinear least-squares. This model is arguably the simplest conceptualization of the thresholded response observed in out experiments for the genes with strongest correlation, see Figure 2B–C and Figure 2—figure supplement 2, and sheds light on the different thresholds for ER stress versus cytoskeleton gene sets, see Figure 2—figure supplement 3.
+To quantitate the gene expression changes in response to virus infection, we fit a parametric model to the single cell values of gene expression versus intracellular virus amount, using the following equation:
+
+$$
+log_{10} g =b +Θ(v − v_{t}) (i + s ⋅log_{10}v),
+$$
+
+where g is the expression of the focal gene in counts per million transcripts, v the intracellular virus amount in reads per million transcripts, $Θ$ is the Heaviside step function that is zero for negative arguments and one for positive ones. The parameters are: b is the baseline gene expression level of uninfected cells, $v_{t}$ is the threshold, that is, the minimal intracellular virus amount required for gene expression to change, and i and s are the intercept and slope of the linear part of the curve, respectively. Minimization is performed via nonlinear least-squares. This model is arguably the simplest conceptualization of the thresholded response observed in out experiments for the genes with strongest correlation, see Figure 2B–C and Figure 2—figure supplement 2, and sheds light on the different thresholds for ER stress versus cytoskeleton gene sets, see Figure 2—figure supplement 3.

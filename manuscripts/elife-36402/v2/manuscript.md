@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.36402.001 Parkinson’s disease is a progressive neuropathological disorder that belongs to the class of synucleinopathies, in which the protein alpha-synuclein is found at abnormally high concentrations in affected neurons. Its hallmark are intracellular inclusions called Lewy bodies and Lewy neurites. We here report the structure of cytotoxic alpha-synuclein fibrils (residues 1–121), determined by cryo-electron microscopy at a resolution of 3.4 Å. Two protofilaments form a polar fibril composed of staggered β-strands. The backbone of residues 38 to 95, including the fibril core and the non-amyloid component region, are well resolved in the EM map. Residues 50–57, containing three of the mutation sites associated with familial synucleinopathies, form the interface between the two protofilaments and contribute to fibril stability. A hydrophobic cleft at one end of the fibril may have implications for fibril elongation, and invites for the design of molecules for diagnosis and treatment of synucleinopathies.
+Parkinson’s disease is a progressive neuropathological disorder that belongs to the class of synucleinopathies, in which the protein alpha-synuclein is found at abnormally high concentrations in affected neurons. Its hallmark are intracellular inclusions called Lewy bodies and Lewy neurites. We here report the structure of cytotoxic alpha-synuclein fibrils (residues 1–121), determined by cryo-electron microscopy at a resolution of 3.4 Å. Two protofilaments form a polar fibril composed of staggered β-strands. The backbone of residues 38 to 95, including the fibril core and the non-amyloid component region, are well resolved in the EM map. Residues 50–57, containing three of the mutation sites associated with familial synucleinopathies, form the interface between the two protofilaments and contribute to fibril stability. A hydrophobic cleft at one end of the fibril may have implications for fibril elongation, and invites for the design of molecules for diagnosis and treatment of synucleinopathies.
 
 ## Introduction
 
@@ -46,13 +46,41 @@ Here, we report the atomic structure of α-Syn(1-121) fibrils determined by cryo
 
 ## Results and discussion
 
-## The 3D structure of α-Syn amyloid fibrils
+### The 3D structure of α-Syn amyloid fibrils
 
 Several preparations of recombinant human α-Syn fibril were screened by negative stain transmission electron microscopy (TEM; Figure 1—figure supplement 1). These included fibrils formed by full length α-Syn (Figure 1A), α-Syn phosphorylated at serine 129, N-terminally acetylated, and C-terminal truncated α-Syn comprised of residues 1–119 (α-Syn(1-119)), 1–121 (α-Syn(1-121)), or 1–122 (α-Syn(1-122)).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic depicting the sequence of human α-Syn. The positions of the known familial mutations are indicated. β-strand regions are indicated by arrows colored from blue to red. (B) Cryo-EM micrograph depicting the distribution and general appearance of α-Syn fibrils. (C) Cryo-EM reconstruction of α-Syn(1-121) fibrils showing two protofilaments (orange and blue). (D) Cross-section of (C) illustrating the clear separation of the β-strands, also shown in Figure 1—figure supplement 3A and B. (E) Cross-section of a fibril (along the axis) illustrating the arrangement of the two protofilaments (orange and blue) and fitted atomic model. Positions of the initial (L38) and final (V95) residues fitted are indicated, as well as the initial and final residue of the NAC region (E61 to V95). Arrows indicate the location of four of the five α-Syn residues where familial mutations associated with PD occur. (F) Distribution of β-strands in a single protofilament of the α-Syn fibril, corresponding to residues 42 to 95. Color scheme, as in (A). (G) As in (F) but a perpendicular view to the fibril axis illustrating height differences in some areas of a single protofilament.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Wildtype. (B) Ser129 Phosphorylated. (C) N-terminally acetylated. (D) C-terminally truncated (α-Syn(1-119)). (E) C-terminally truncated (α-Syn(1-121)). (F) C-terminally truncated (α-Syn(1-122)). 0.5 mg/ml fibril preparations were stained with 2% uranyl acetate. Scale bars: 100 nm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Cryo-EM map with local resolution estimation; the color scale indicates resolution ranging from 3.0 Å to 4.6 Å. (B) Fourier shell correlation curve between two independently-refined half-maps, indicating an overall resolution of 3.4 Å. (C) Three examples of reference-free 2D class averages from the original dataset with their respective power spectra on the right. (D) 2D projections and power spectra of the 3D map. (E) 2D projections and power spectra of the atomic model. Arrows in power spectrum panels show the layer line at 1/ (4.9 Å) with peak intensities on both sides of the meridian (Bessel order n = 1), resulting from an approximate 21 screw symmetry between adjacent α-Syn subunits.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) (B) Clearly resolved separation of individual β-strands along the fibril. (C) Extra density at the interface of adjacent protofilaments between the positively charged lysines K43 and K45 and lysine K58. (D) Hydrophilic region surrounding a tunnel filled with an additional density. (E) Phosphorylation site S87 showing the location of this residue towards the outside of the fibril. (F) Distal loop of a protofilament indicating residues G68, A69 and G93, which may contribute to loop stability. (G) Arrangement of G47 and A78, which may contribute to the interaction between E46 and K80. (H) Interaction between H50 and E57 in the interface region of two protofilaments, which may contribute to the stability of protofilament interaction.
 
 The diameters of the α-Syn fibrils produced varied from 5 nm to approximately 10 nm when studied by negative stain TEM. The fibrils formed by α-Syn(1-121) were straight, between 20 and 500 nm long and the only ones of consistent diameters of 10 nm (Figure 1B, Figure 1—figure supplement 1E). This fibrillar form α-Syn(1-121) has been described as an aggregation-prone species resulting from α-Syn truncation by caspase-1 (Wang et al., 2016). The recombinantly produced α-Syn(1-121) used here showed a similarly aggressive aggregation profile.
 
 Preparations of α-Syn(1-121) fibrils were quick-frozen in the holes of fenestrated carbon coated cryo-electron microscopy (cryo-EM) grids, and imaged with a Titan Krios 300kV cryo-EM instrument, equipped with a Quantum-LS energy filter and a K2 Summit direct electron detector. Helical image processing of recorded cryo-EM movies produced a 3D reconstruction of the α-Syn(1-121) fibril at an overall resolution of 3.4 Å (Figure 1C and D, Figure 1—figure supplement 2, Figure 2, and Video 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig2-v2.jpg)
+
+**Figure 2.:** (A) View along the axis of the fibril as indicated by the red rectangle on the ribbon diagram (bottom right). (B) (C) Side views of the fibril with orientations indicated by arrowheads in (A) and the ribbon diagram (bottom right). Panels (B) and (C) clearly illustrate the 21 screw symmetry that results from the staggered arrangement of subunits.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36402/elife-36402-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Close-up side views of the α-Syn fibril illustrating homo- and hetero-steric zippers present in the structure. Pointers in the cross-section panel (top left) indicate the points of view for panels (A) to (D).
+
+![Video 1.](https://cdn.elifesciences.org/articles/36402/elife-36402-video1.mp4.jpg)
+
+**Video 1.:** Details of the cryo-EM reconstruction of an alpha-synuclein fibril at 3.4 Å resolution, illustrating the interaction between two protofilaments, the 4.9 Å spacing between β-strands of a single protofilament and monomer topology in the protofilament core.
 
 Our 3D map shows that fibrils are formed by two protofilaments, each of 5 nm in diameter (Figure 1). These lack C2 symmetry, but are related by an approximate 21 screw symmetry, akin to the symmetry exhibited by the paired helical filaments of tau (Fitzpatrick et al., 2017) and by amyloid-ß(1-42) filaments (Gremer et al., 2017). α-Syn(1-121) fibrils are therefore polar, meaning that both protofibrils are aligned into the same direction. The position of a given ß-sheet in a protofilament is produced by the rotation of 179.5° of one sheet around its axis (helical twist), followed by a vertical translation of 2.45 Å (helical rise). This ß-sheet arrangement results in a spacing of 4.9 Å between α-Syn subunits in successive rungs of a single protofilament (Figure 1C and D). The quality of the EM map allowed an atomic model of the region between residues L38 and V95 to be built.
 
@@ -66,7 +94,7 @@ Two β-sheets (one from each protofilament) interact at the fibril core via a hy
 
 The outer surface of the ordered region of the fibrils is mostly hydrophilic, with a few exceptions (i.e. L38, V40, V82, A85, A90, F94, V95) (Figure 3A). The side chain of V66 should probably not be classified as surface exposed because of its interaction with β-strand β8 (Figure 1—figure supplement 2A). If we ignore the influence of the non-polar alanine residues due to the small size of their side chains, the surface of the fibrils has two highly hydrophobic regions formed by residues L38 and V40, and by residues F94 and V95. Other interesting properties of the surface are the salt bridge formed by the side chains of E46 and K80 (Figure 1—figure supplement 3G) and the rather highly positive clustering of K43, K45, K58, H50 that requests the binding of a counter-ion, as it is supported by an observed density (Figure 1—figure supplement 3C).
 
-## The familial PD mutations in the context of the 3D fibril structure
+### The familial PD mutations in the context of the 3D fibril structure
 
 Six familial mutations in α-Syn are known to be associated with PD and other synucleinopathies (i.e. A30P, E46K, H50Q, G51D, A53E, and A53T). Of these, all but A30P are located in the heart of the core of the fibril structure presented here (Figure 1A and E). E46 forms a salt bridge with K80 (Figure 1—figure supplement 3G). The mutation of the glutamic acid E46 to a positively charged lysine in an E46K mutant would thus induce a charge repulsion between β-strands β1 and β6, likely destabilizing this α-Syn fibril structure (Tuttle et al., 2016). The familial PD/DLB-causing mutation E46K was found to enhance phosphorylation in mice (Mbefo et al., 2015), and its toxic effect was increased by the triple-K mutation (E35K, E46K, E61K) in neuronal cells (Dettmer et al., 2017).
 
@@ -76,7 +104,7 @@ Several features of our structure, such as non-functional hydrophobic surface pa
 
 The artificial, highly toxic, but not synucleinopathy-related mutant E57K (Winner et al., 2011) is interesting to mention in the context of the 3D structure presented, because E57 is also at the inter-molecular interface (Figure 2). The presence of a positive lysine side chain at this position in the E57K mutant would significantly interfere with the formation of the interface and even the amyloid fibril (Winner et al., 2011). Indeed, this mutant was designed in a successful structure-based attempt to interfere with amyloid fibril formation (at least under some conditions) (Winner et al., 2011). Furthermore, both in a lentivirus-rat system as well as in a transgenic mouse model, the E57K mutant formed a significant amount of oligomers and was highly toxic, resulting in a large decay of TH-sensitive neurons in the substantia nigra of rats and a motor phenotype reminiscent of PD in mice (Winner et al., 2011). Thus, the artificial mutant E57K can be regarded as a ‘familial PD-like’ mutation both from the in vivo and from the structure/mechanism-based point of view.
 
-## Comparison with earlier structural data
+### Comparison with earlier structural data
 
 Full-length α-Syn subunits in a fibril studied by NMR ([Tuttle et al., 2016], PDB 2N0A) were found to be in a roughly similar secondary structure arrangement as in the here reported structure of α-Syn(1-121) (Figure 4A), even though the primary structure and the side-chain interactions of our here reported structure are very different from the NMR structure. Most importantly, the fibrils used for the NMR study were only approximately 5 nm wide, which corresponds to the diameter of a single protofilament. The larger diameter of our fibrils, 10 nm, results from the interaction between two protofilaments, which allowed us to hypothesize on the nature of α-Syn(1-121) protofilament interactions. Fibrils of 5 to 10 nm in diameter found in substantia nigra samples from the brain of PD patients, (Crowther et al., 2000), cingulate cortex of patients with DLB (Spillantini et al., 1998), cerebral cortex of PD patients (Kosaka et al., 1976), and in-vitro aggregated samples (Bousset et al., 2013). Crowther et al. (2000) had already suggested that the 10 nm filaments are the result of the interaction between 5 nm protofilaments.
 
@@ -92,7 +120,7 @@ We also observed the arrangement of G47 and A78 described by Tuttle et al. (2016
 
 A microED structure obtained from crystals produced from a 10-residue peptide simulating the core of α-Syn fibrils (PreNAC, from 47 to 56; Figure 4B) and including a threonine instead of an alanine at position 53 (i.e. A53T), also proposed that residue 53 forms the hydrophobic core within a protofilament (Rodriguez et al., 2015). In addition, the microED model suggested that the interaction between adjacent protofilaments would occur through residues 68 to 78 (referred to as NACore) (Rodriguez et al., 2015). However, their short peptides did not include most residues responsible for the α-Syn monomer topology that we observed. Instead, our cryo-EM structure reveals that the PreNAC is responsible for the interaction between protofilaments, and places the NACore at the very center (i.e.the core) of a single protofilament.
 
-## Possible mechanism of fibril elongation
+### Possible mechanism of fibril elongation
 
 Our 3D structure allows us to hypothesize a mechanism for fibril elongation (fibril growth). Because two different stacking modes are present (i.e. the half-stack at the intermolecular interface and the stacking of β-strand β6), the two ends of the fibrils are distinct, suggesting an end-dependent growth of the fibrils, as documented and also suggested for other amyloids (Lührs et al., 2005). One end of the fibril includes a hydrophobic cleft formed between β-strands β2/ β3 on one side and β7 on the other side (residues V49, V52, A88, I89), providing a hydrophobic entry point for the next incoming molecule, with the matching segment consisting of 5 hydrophobic residues (V74-V82, Figure 5). This suggests that the initial binding event of fibril elongation might be a hydrophobic interaction involving residues V74-V82. This peptide segment is the central part of the NAC region and strong experimental evidence suggests that it is critical for fibril formation (Giasson et al., 2001). In addition, it has been shown that β-synuclein, which lacks residues V74 to V82, is incapable of forming fibrils (Giasson et al., 2001).
 
@@ -106,25 +134,41 @@ In conclusion, we present the structure of recombinant α-Syn(1-121) fibrils det
 
 ## Materials and methods
 
-## Recombinant proteins
+### Recombinant proteins
 
 Recombinant full-length α-Syn was expressed from the pRT21 expression vector in BL21(DE3) competent Escherichia coli (E. coli). For N-terminal acetylation of α-Syn, cells were pre-transfected by pNatB vector coding for the N-terminal acetylase complex (plasmid kindly provided by Daniel Mulvihill, School of Biosciences, University of Kent, Canterbury, UK) (Johnson et al., 2010). C-terminally truncated forms of α-Syn(1-119), α-Syn(1-121), and α-Syn(1-122) were expressed in BL21-DE3-pLysS competent E. coli. Purification of α-Syn strains was performed by periplasmic lysis, ion exchange chromatography, ammonium sulfate precipitation, and gel filtration chromatography as previously described (Huang et al., 2005; Luk et al., 2009). Polo like kinase 2 (PLK2) was expressed in BL21-DE3-pLysS competent E. coli, isolated via its His-tag and immediately used to phosphorylate purified α-Syn. This was followed by standard ion exchange and gel filtration chromatography to separate phosphorylated from non-phosphorylated α-Syn. Endotoxins were removed from all α-Syn strains by Detoxi-Gel Endotoxin Removing Gel (Thermo Scientific) usually in one run or until endotoxin levels were below detection level. The sequence of the expressed α-Syn strains was verified by tryptic digestion followed by MALDI mass spectrometry (MS) or HPLC/ESI tandem MS for total mass was performed. Purity and monodispersity was determined by Coomassie blue or Silver staining of the SDS PAGE gel and analytical ultracentrifugation and the concentration was determined by the bicinchoninic acid (BCA) assay (Thermo Scientific) with bovine serum albumin as a standard. Dialyzed and lyophilized α-Syn(1-121) was prepared by dialyzing the purified protein in a 2 kD Slide-A-Lyzer unit (Thermo Scientific, for max. 3 ml) against HPLC-water (VWR). 500 µg protein aliquots were pipetted into 1.5 ml tubes, frozen on dry ice, and lyophilized for 2 hr using an Eppendorf concentrator (Eppendorf). Lyophilized samples were stored at −80°C until use.
 
-## Fibrillization
+### Fibrillization
 
 Fibrils were prepared by dissolving dialyzed and lyophilized, recombinant α-Syn protein at 5 mg/mL in incubation buffer (DPBS, Gibco; 2.66 mM KCL, 1.47 mM KH2PO4, 137.93 mM NaCl, 8.06 mM Na2HPO4-7H2O pH 7.0–7.3). Reactions of 200 µL per tube were incubated at 37°C with constant agitation (1,000 rpm) in an orbital mixer (Eppendorf). Reactions were stopped after 5 days, sonicated (5 min in a Branson 2510 water bath), aliquoted, and stored at −80°C until use. The presence of amyloid fibrils was confirmed by thioflavin T fluorimetry and high molecular weight assemblies were visualized by gel electrophoresis.
 
-## Electron microscopy
+### Electron microscopy
 
 Cryo-EM grids were prepared using a Vitrobot Mark IV (ThermoFisher Scientific) with 95% humidity at 4°C. Amyloid fibrils (3 µL aliquots) were applied onto glow-discharged, 300 mesh, copper Quantifoil grids. After blotting, grids were plunge frozen in liquid ethane cooled by liquid nitrogen. Samples were imaged on a Titan Krios (ThermoFisher Scientific) transmission electron microscope, operated at 300 kV and equipped with a Gatan Quantum-LS imaging energy filter (GIF, 20 eV energy loss window; Gatan Inc.). Images were acquired on a K2 Summit electron counting direct detection camera (Gatan Inc.) in dose fractionation mode (50 frames) using the Serial EM software (Mastronarde, 2005) at a magnification of 165,000× (physical pixel size 0.831 Å) and a total dose of ~69 electrons per square angstrom (e-/Å2) for each micrograph. Micrographs were drift-corrected and dose-weighted using MotionCor2 (Zheng et al., 2017) through the Focus interface (Biyani et al., 2017). Additional data collection parameters are detailed in Table 1.
 
-## Image processing
+**Table 1.**
+ Cryo-EM structure determination and model statistics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>165000 x</td>
+    </tr>
+  </tbody>
+</table>
+
+### Image processing
 
 Helical reconstruction was carried out with the RELION 2.1 software (Scheres, 2012), using methods described in He and Scheres (2017). Filaments were manually selected using the helix picker in RELION 2.1. Filament segments were extracted using a box size of 280 pixels (233 Å) and an inter-box distance of 28 pixels. A total of 18,860 segments were extracted from 792 fibrils manually picked from 118 micrographs (Table 1). 2D classification was carried out with a regularization value of T = 10, and 2D class averages with a clear separation of β-strands were selected for further data processing. Power spectra of 2D class averages show the layer line at 1/ (4.9 Å) with peak intensities on both sides of the meridian (Bessel order n = 1). This is the result of an approximate 21 screw symmetry between α-Syn subunits on the two protofilaments (Figure 1—figure supplement 2). Segments assigned to the best 2D classes were used for 3D classification using a regularization value of T = 8 and with optimization of the helical twist and rise. For both 3D classification and refinement, a helical_z_percentage parameter of 10% was used, which defines the size of the central part of the intermediate asymmetrical reconstruction that is used to apply real-space helical symmetry (He and Scheres, 2017). An initial reconstruction was calculated using a cylinder generated via the helix toolbox in RELION 2.1 as initial model. This reconstruction was low-pass filtered to 60 Å and employed as the initial model for a 3D classification with a single class (K = 1) and T = 20, an approach that allowed the successful reconstruction of amyloid filaments (Fitzpatrick et al., 2017). The handedness of the reconstruction was determined by comparison with atomic force microscopy images, which showed left-coiled surface patterns for the fibrils.
 
 Refinement was carried out by the auto-refine procedure with optimization of helical twist and rise. This resulted in a structure with overall resolution of 3.8 Å. Post-processing with a soft-edge mask and an estimated map sharpening B-factor of −82.6 Å gave a map with a resolution of 3.4 Å (by the FSC 0.143 criterion). An estimation of local resolution was obtained using RELION 2.1 and a local-resolution-filtered map was calculated for model building and refinement.
 
-## Model building and refinement
+### Model building and refinement
 
 A model of the α-Syn(1-121) fibril was built into the Relion local resolution-filtered map using COOT (Emsley and Cowtan, 2004), with the PDB ID 2N0A as an initial model for the early interpretation of the map. The structure helped to determine the directionality of the protein chain and facilitated the assignment of densities in the map to specific residues. However, due to the large differences between the NMR structure and our EM map, major rebuilding was necessary. The high quality of the EM map allowed us to unambiguously build residues 38–95. A comparison was also carried out between our structure and X-ray structures of α-Syn fragments 69–77 (PDB ID 4RIK), 68–78 (PDB ID 4RIL) and 47–56 (PDB ID 4ZNN; with the mutation A53T).
 

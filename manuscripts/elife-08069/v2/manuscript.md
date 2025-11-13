@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.08069.001 Developmental programs have the fidelity to form neural circuits with the same structure and function among individuals of the same species. It is less well understood, however, to what extent entire neural circuits of different individuals are similar. Previously, we reported the neuronal connectome of the visual eye circuit from the head of a Platynereis dumerilii larva ( Randel et al., 2014 ). We now report a full-body serial section transmission electron microscopy (ssTEM) dataset of another larva of the same age, for which we describe the connectome of the visual eyes and the larval eyespots. Anatomical comparisons and quantitative analyses of the two circuits reveal a high inter-individual stereotypy of the cell complement, neuronal projections, and synaptic connectivity, including the left-right asymmetry in the connectivity of some neurons. Our work shows the extent to which the eye circuitry in Platynereis larvae is hard-wired. DOI: http://dx.doi.org/10.7554/eLife.08069.001
+Developmental programs have the fidelity to form neural circuits with the same structure and function among individuals of the same species. It is less well understood, however, to what extent entire neural circuits of different individuals are similar. Previously, we reported the neuronal connectome of the visual eye circuit from the head of a Platynereis dumerilii larva (Randel et al., 2014). We now report a full-body serial section transmission electron microscopy (ssTEM) dataset of another larva of the same age, for which we describe the connectome of the visual eyes and the larval eyespots. Anatomical comparisons and quantitative analyses of the two circuits reveal a high inter-individual stereotypy of the cell complement, neuronal projections, and synaptic connectivity, including the left-right asymmetry in the connectivity of some neurons. Our work shows the extent to which the eye circuitry in Platynereis larvae is hard-wired.
 
 ## Introduction
 
@@ -29,35 +29,35 @@ Here, we use serial-section transmission electron microscopy (ssTEM) to quantify
 
 ## Results
 
-## Reconstruction of the visual eye circuit from a full-body ssTEM dataset of a Platynereis larva
+### Reconstruction of the visual eye circuit from a full-body ssTEM dataset of a Platynereis larva
 
-We acquired a full-body ssTEM dataset of a 72 hr post fertilization (hpf)
+We acquired a full-body ssTEM dataset of a 72 hr post fertilization (hpf) Platynereis larva (HT9-4) (Figure 1A), derived from the same batch as the previously described larva (HT9-3) (Randel et al., 2014). We imaged 5056 sections (40 nm/section) using conventional TEM. In this dataset, we traced the neuronal circuitry downstream of the visual eyes. The visual eye circuit of the second larva consists of 106 neurons, plus several ciliated and muscle effector cells (Video 1, Source code 1, and Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig1-v2.jpg)
 
-**Figure 1.:** (A) Scanning electron micrograph of a 72 hpf larva, dorsal view. (B, C) Blender visualization of the cell complement in ventral (B) and anterior (C) views. IN1, primary interneuron; INarc, arc interneuron; INdc, dorsal interneuron; INint, intrinsic interneuron; INsn, Schnörkel-interneuron; INton, trans-optic neuropil interneuron; INpro, projection interneuron; INvc, ventral interneuron; INvnc, ventral nerve cord interneuron; MN, ventral motor neuron; MNant, anterior motor neuron; MNvnc, ventral nerve cord motor neuron; PRC, photoreceptor cell of the visual eye; PRCle-r1/3, photoreceptor cell of the larval eye, expressing r-opsin3 or r-opsin1; a, anterior; p, posterior; l, left; r, right. Scale bar in (A) 50 μm.DOI: http://dx.doi.org/10.7554/eLife.08069.00210.7554/eLife.08069.003Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08069.003
+**Figure 1.:** (A) Scanning electron micrograph of a 72 hpf larva, dorsal view. (B, C) Blender visualization of the cell complement in ventral (B) and anterior (C) views. IN1, primary interneuron; INarc, arc interneuron; INdc, dorsal interneuron; INint, intrinsic interneuron; INsn, Schnörkel-interneuron; INton, trans-optic neuropil interneuron; INpro, projection interneuron; INvc, ventral interneuron; INvnc, ventral nerve cord interneuron; MN, ventral motor neuron; MNant, anterior motor neuron; MNvnc, ventral nerve cord motor neuron; PRC, photoreceptor cell of the visual eye; PRCle-r1/3, photoreceptor cell of the larval eye, expressing r-opsin3 or r-opsin1; a, anterior; p, posterior; l, left; r, right. Scale bar in (A) 50 μm.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.08069.004
+![Video 1.](https://cdn.elifesciences.org/articles/08069/elife-08069-media1.avi.jpg)
 
-## Inter-individual stereotypy of the connectomes
+### Inter-individual stereotypy of the connectomes
 
 The gross anatomy and cell complement of the HT9-4 eye circuit is very similar to that of HT9-3 (Figure 1C). We identified all cell types and groups of cells that we described for HT9-3. All cell types showed similar overall anatomical arrangement in the two individuals. For some cell types, including IN1 interneurons and six ventral MNs (MNl1–3 and MNr1–3), we could correlate the two individuals at a single-cell level.
 
-To test the stereotypy of synaptic connections, we compared patterns of connectivity between the two individuals (
+To test the stereotypy of synaptic connections, we compared patterns of connectivity between the two individuals (Figure 1B,C, Figure 2B, Figure 1—figure supplement 1, Figure 2—source data 1). We used several measures to compare the two connectomes. First, we defined a grouped connectivity matrix for HT9-4, similar to that of HT9-3 (Randel et al., 2014) (Figure 2—source data 1). We then correlated the two grouped matrices and found a strong correlation (Spearman's r = 0.62, p = 0.0001). For a more detailed comparison, we calculated the geometric mean of the two connectivity matrices and generated a combined matrix (Figure 2A). In this matrix, only connections are shown that are present in both animals. The combined matrix is similar to the individual matrices and we could find all major connections.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig2-v2.jpg)
 
-**Figure 2.:** (A) Geometric mean of the neuron types between both individuals, using the averaged synapse number of neuronal groups and the total synapse number on effectors. (B) Connectivity graph of the visual and larval eye circuit. Edges are weighted by averaged synapse number (neurons) or by sum of synapses (effectors). Nodes are colored using the color scheme of the neuron types. (C) Spearman correlation of the presynaptic and postsynaptic connections of cell groups in HT9-3 and HT9-4. Abbreviations are shown in Figure 1.DOI: http://dx.doi.org/10.7554/eLife.08069.00610.7554/eLife.08069.007Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08069.007
+**Figure 2.:** (A) Geometric mean of the neuron types between both individuals, using the averaged synapse number of neuronal groups and the total synapse number on effectors. (B) Connectivity graph of the visual and larval eye circuit. Edges are weighted by averaged synapse number (neurons) or by sum of synapses (effectors). Nodes are colored using the color scheme of the neuron types. (C) Spearman correlation of the presynaptic and postsynaptic connections of cell groups in HT9-3 and HT9-4. Abbreviations are shown in Figure 1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** Neuronal projections and synapse positions of (A) PRCar, (B) PRCal, (C) PRCpr, (D) PRCpl, (E) IN1ar, (F) IN1al, (G) IN1pr, (H) In1pl, (I) INtonr, (J) INtonl, (K) INsnr, (L) INsnl, (M) MNr1, (N) MNr2, (O) MNr3, (P) MNl1, (Q) MNl2, and (R) MNl3 cells in HT9-3 and HT9-4.DOI: http://dx.doi.org/10.7554/eLife.08069.008
+**Figure 2—figure supplement 1.:** Neuronal projections and synapse positions of (A) PRCar, (B) PRCal, (C) PRCpr, (D) PRCpl, (E) IN1ar, (F) IN1al, (G) IN1pr, (H) In1pl, (I) INtonr, (J) INtonl, (K) INsnr, (L) INsnl, (M) MNr1, (N) MNr2, (O) MNr3, (P) MNl1, (Q) MNl2, and (R) MNl3 cells in HT9-3 and HT9-4.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Strength is defined as the geometric mean of the number of synapses of a given neuron ‘A’ on another neuron ‘B’ and the number of synapses of neuron ‘B’ on neuron ‘A’. Single neuron identifiers are not shown for simplicity.DOI: http://dx.doi.org/10.7554/eLife.08069.009
+**Figure 2—figure supplement 2.:** Strength is defined as the geometric mean of the number of synapses of a given neuron ‘A’ on another neuron ‘B’ and the number of synapses of neuron ‘B’ on neuron ‘A’. Single neuron identifiers are not shown for simplicity.
 
 We also identified all reciprocal connections for HT9-4 and found the same strong reciprocal IN1 motif as that of HT9-3 (Figure 2—figure supplement 2, Figure 2—source data 1). Additionally, we scored the correlation of the synaptic maturation of the HT9-4 photoreceptor cells (PRCs) with photoreceptor-cell rhabdom volume and axon length and found similar relationships as in HT9-3 (Figure 3—figure supplement 1, Figure 3—figure supplement 1—source data 1). All these measures indicate that the Platynereis eye circuit is strongly stereotypical at the global level of its synaptic connectivity.
 
@@ -67,21 +67,21 @@ We found significant correlations between both pre- and post-synaptic submatrice
 
 To further test stereotypy at the single neuron level, we looked at the projection pattern and the distribution of pre- and post-synaptic sites in corresponding neurons between the two individuals. All neuron groups had similar projection patterns and spatial distribution of pre- and post-synaptic sites (Figure 2—figure supplement 1).
 
-We also analyzed certain circuit elements in more detail. We first compared the connectivity of the visual eye PRCs (
+We also analyzed certain circuit elements in more detail. We first compared the connectivity of the visual eye PRCs (Figure 3A) and IN1 cells. The visual eye PRCs showed very similar connectivity with the IN1 interneurons in both animals. The strongest connection for all eyes was from PRCs to the cross-wise IN1. However, we also identified a weak innervation of the ipsilateral IN1 by the posterior eye PRCs that was consistent between the two animals (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig3-v2.jpg)
 
-**Figure 3.:** (A–D) Connectivity graphs show the connectivity between selected neuron groups and effectors. Edges are weighted by the number of synapses. The number of synapses is also shown for each edge. Nodes are colored using the color scheme of the neuron types. In A–C, HT9-3 is left and HT9-4 right. (A) Connectivity graph of the grouped PRCs of the visual eyes with IN1 cells. The synapses of the PRCs from each eye are averaged. (B) Connectivity graph of INsn cells with MNs and INpro cells. The previous nomenclature of the INpro cells in HT9-3 identified as MNs is shown in brackets. (C) Connectivity graph of MNs and their effectors. The synapse numbers shown for ciliated cells and muscles represent the total number of synapses on groups of effector cells. (D) Connectivity graph of the MNs of the visual and larval eye circuit of HT9-4 with all ciliary bands. The synapse number of the metatroch and paratrochs are summed. Incompletely traced MNs are labeled with ‘X’. (E) Blender visualization of the MNs and prototroch cells, apical view. The prototroch cells are numbered in a clockwise fashion. The numbering of the MNs of the left and the right body side within a single larva is not consistent with anatomical pairs, to stick to the nomenclature introduced for HT9-3. Note that the prototroch cell in position 11 is unpaired. met, metatroch; par, paratroch; pro, prototroch; A, anterior; P, posterior. Additional abbreviations are shown in Figure 1.DOI: http://dx.doi.org/10.7554/eLife.08069.010
+**Figure 3.:** (A–D) Connectivity graphs show the connectivity between selected neuron groups and effectors. Edges are weighted by the number of synapses. The number of synapses is also shown for each edge. Nodes are colored using the color scheme of the neuron types. In A–C, HT9-3 is left and HT9-4 right. (A) Connectivity graph of the grouped PRCs of the visual eyes with IN1 cells. The synapses of the PRCs from each eye are averaged. (B) Connectivity graph of INsn cells with MNs and INpro cells. The previous nomenclature of the INpro cells in HT9-3 identified as MNs is shown in brackets. (C) Connectivity graph of MNs and their effectors. The synapse numbers shown for ciliated cells and muscles represent the total number of synapses on groups of effector cells. (D) Connectivity graph of the MNs of the visual and larval eye circuit of HT9-4 with all ciliary bands. The synapse number of the metatroch and paratrochs are summed. Incompletely traced MNs are labeled with ‘X’. (E) Blender visualization of the MNs and prototroch cells, apical view. The prototroch cells are numbered in a clockwise fashion. The numbering of the MNs of the left and the right body side within a single larva is not consistent with anatomical pairs, to stick to the nomenclature introduced for HT9-3. Note that the prototroch cell in position 11 is unpaired. met, metatroch; par, paratroch; pro, prototroch; A, anterior; P, posterior. Additional abbreviations are shown in Figure 1.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Relationship of rhabdom volume to photoreceptor axon length. (B) Relationship of rhabdom volume to photoreceptor synapse number. (C) Relationship of photoreceptor connectivity-maturation index to rhabdom volume. In A–C the black line shows linear regression with 95% confidence interval (red lines). Pearson r and p-value are shown.DOI: http://dx.doi.org/10.7554/eLife.08069.01110.7554/eLife.08069.012Figure 3—figure supplement 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.08069.012
+**Figure 3—figure supplement 1.:** (A) Relationship of rhabdom volume to photoreceptor axon length. (B) Relationship of rhabdom volume to photoreceptor synapse number. (C) Relationship of photoreceptor connectivity-maturation index to rhabdom volume. In A–C the black line shows linear regression with 95% confidence interval (red lines). Pearson r and p-value are shown.
 
 Next, we analyzed the pre- and post-synaptic partners of the MN cells. All MN cells, with the exception of MNr3, are strongly innervated by 2–3 ipsilateral, plus 2–3 contralateral, INsn cells in both animals (Figure 3B). MNr3 is also unique in another aspect of its connectivity. This neuron in both animals consistently displayed a highly left-right asymmetric connectivity pattern. MNr3 is anatomically similar to MNl1. Both cells are ciliomotor and muscle MNs, with strong connections to contralateral prototroch cells, to the longitudinal muscles and the paratrochs. However, MNr3's connectivity is unique in forming several synapses on contralateral MN cells (Figure 3C), being thus the only MN to potentially influence both contralateral and ipsilateral effectors. We could detect this asymmetric connectivity pattern for MNr3 in both individuals. These results show that synaptic stereotypy can be found at the single neuron level and also applies to left-right asymmetric motifs in the network.
 
 Our analysis shows that the visual eye connectome in Platynereis larvae has strong stereotypy both globally and at the single-neuron level. We could demonstrate this for patterns of neural projections, synapse distribution along neurites, identity of synaptic partners, strength of connections, and left-right asymmetries in connectivity. These results place the visual eye circuitry in a full-body context and establish the cellular-level stereotypy of neuronal circuitry in Platynereis larvae.
 
-## Differences between the two datasets
+### Differences between the two datasets
 
 The full-body dataset of HT9-4 allowed us to trace the projections of the ventral MNs in the trunk of the larva, a region that was not sectioned in HT9-3. This extended tracing revealed the presence of many more MN synapses to the trunk longitudinal muscles (maximum 68 synapses/MN) than were detected in HT9-3 (maximum 13 synapses/MN).
 
@@ -89,13 +89,13 @@ In HT9-4, we also identified a new interneuron type, which we named projection i
 
 The new dataset also provides full coverage of all ciliated locomotor cells. The larva has 23 prototroch cells, organized into an anterior and a posterior tier, formed by 11 cell pairs and one unpaired cell (at position 11 o'clock). There are 8 ventral metatroch cells, and three bands of paratrochsI–III, one in each segment. The paratrochs have 8I, 14II, and 12III ciliated cells (Figure 1B, Figure 3E). We analyzed the innervation of the ciliary bands by MNs in more detail. We found that only the posterior tier of the prototroch receives synapses by MN cells. We also found that several MNs projected to and formed synapses on the paratrochs both on the dorsal and the ventral side (Figure 3D, Source code 1).
 
-## Larval eyespot connectome reveals sensory-motor circuits of varying complexities
+### Larval eyespot connectome reveals sensory-motor circuits of varying complexities
 
-We also fully reconstructed the neuronal circuitry of the larval eyespots or ocelli (structures located ventrally in the head) in HT9-4 (
+We also fully reconstructed the neuronal circuitry of the larval eyespots or ocelli (structures located ventrally in the head) in HT9-4 (Figure 4). The larval eyespots develop in early trochophore larval stages and mediate positive phototaxis in early larval stages by innervating adjacent ciliary band cells (Jékely et al., 2008). In trochophore larvae (24–48 hpf), each larval eyespot consists of one pigment cell and one PRCr3, the latter of which expresses a rhabdomeric opsin, r-opsin3. A preliminary ssTEM analysis in HT9-3 (72 hpf) identified a second PRCr1 with an axon projecting towards the brain neuropil (a cerebral PRC), indicating changes in eyespot structure during development. The second PRC expresses another opsin, r-opsin1 (Randel et al., 2013).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/08069/elife-08069-fig4-v2.jpg)
 
-**Figure 4.:** Neurons that are also part of the visual eye circuit are marked by an ‘asterisk’. Connectivity graph of the r-opsin3-expressing PRCr3 (A) and r-opsin1-expressing PRCr1 (C). Connectivity graph edges are weighted by the number of synapses and synapse numbers are shown. Blender visualization of the left PRCr3l cell (B) and PRCr1r circuitry (D). Abbreviations are shown in Figure 1.DOI: http://dx.doi.org/10.7554/eLife.08069.013
+**Figure 4.:** Neurons that are also part of the visual eye circuit are marked by an ‘asterisk’. Connectivity graph of the r-opsin3-expressing PRCr3 (A) and r-opsin1-expressing PRCr1 (C). Connectivity graph edges are weighted by the number of synapses and synapse numbers are shown. Blender visualization of the left PRCr3l cell (B) and PRCr1r circuitry (D). Abbreviations are shown in Figure 1.
 
 Here, we have fully reconstructed the neuronal circuitry downstream of both eyespot PRCs in the 72 hpf larva. The two eyespot PRCs connect to very distinct downstream circuitries, suggesting functional specialization. PRCr3 forms en passant synapses on ipsilateral ciliary band cells, as previously described for both trochophore and nectochaete stages (Jékely et al., 2008; Randel et al., 2013). The distal part of the PRCr3 axon then turns and meets the secondary optic neuropil, forming synapses on the ipsil- and contralateral MNs. PRCr3 is therefore both a direct sensory-MN and a sensory neuron that connects to MNs.
 
@@ -111,19 +111,19 @@ The two connectomes are not identical and we could not compare every neuron at a
 
 In Platynereis, the different sensory-motor circuits of the visual eye PRCs and eyespot PRCs show different levels of complexity. We identified examples for all degrees of sensory-motor contact, from direct sensory-motor innervation through sensory-MN to sensory-IN-MN. The fine gradations in the connectome of the Platynereis larval and visual eyes suggest that circuit evolution may have proceeded through the intercalation of new layers of neurons between sensors and effectors.
 
-## Conclusion
+### Conclusion
 
 Our results indicate that the connectome of the larval visual system in Platynereis is highly stereotypical between individuals. These results support our previous findings on stereotypy through the intra-individual analysis of connectivity between neurons on the left and right body sides (Randel et al., 2014). Reconstructions from more than one individual can greatly benefit connectome projects.
 
 ## Materials and methods
 
-## ssTEM
+### ssTEM
 
 A 72 hpf Platynereis larva (HT9-4) was prepared for serial sectioning and imaging as previously described (Conzelmann et al., 2013; Randel et al., 2014). Sato's lead citrate was used for contrasting (Hanaichi et al., 1986). Images were obtained with SerialEM v3.2.2 (Gatan, Pleasanton, CA) imaging software in conjunction with Digital Micrograph (Gatan). We generated a full-body dataset consisting of 5056 sections, with a thickness of 40 nm per section (Figure 1—source data 1). Imaging was performed with a resolution of (5.7 nm/pixel). We lost 1.9% of the sections (98 layers) and the three biggest gaps encompassed five sections. 113 layers distributed across the series were not imaged. We could trace across these gaps using a combination of local and global cues. Additionally, to help the tracing in the neuropil, we re-imaged some of the sections (1229 layers) at high resolution (2.22 nm/pixel) (Figure 1—source data 1). Stitching and alignment of the images was carried out using TrakEM2 (Cardona et al., 2010). Reconstruction of the cells and connectivity was carried out using Catmaid (Saalfeld et al., 2009) (4845 layers). Neurons were traced and reviewed primarily by NR and GJ, with contributions from LABC, CV, and RS.
 
 Catmaid was installed on a Linux container (LXC; linuxcontainers.org) utilizing 8 CPUs (Intel Xeon 2.67 GHz, Intel, Santa Clara, CA) and 8 GB RAM. The server was setup using PostgreSQL (postgresql.org) and nginx/gunicorn (nginx.org; gunicorn.org). The image stacks (1 TB) were served from the same site.
 
-## Neuronal classification, visualization and network analyses
+### Neuronal classification, visualization and network analyses
 
 In order to quantify the stereotypy of synaptic connectivity between individuals, we reconstructed the circuitry of the four visual eyes. We traced neurons in synaptic paths downstream of the eye photoreceptors. Cells presynaptic to the eye circuit and weakly connected sensory neurons were not considered. 164 fragments could not be traced (100 fragments < 4 µm, 46 fragments 4–40 µm, and 18 fragments > 40 µm). Fragments are defined as neurons for which a soma could not be found.
 

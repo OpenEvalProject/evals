@@ -142,9 +142,7 @@ We have added the data (Figure 5—figure supplement 1A and B, Videos 15, 16) fo
 
 23) Figure 5, and Figure 5—figure supplement 1: I am concerned about the ezrin morpholino reagent. Do the embryos show signs of cell death in the head region? Is there appreciable cell death seen when imaging? Are blebs altered if cell death is inhibited?
 
-In response to concern raised by the reviewers, we performed caspase 3 staining on the ezrin morphants. However, we did not observe significant rates of cell death in the developing RNE.10.7554/eLife.22689.056Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.22689.056
-
-DOI: http://dx.doi.org/10.7554/eLife.22689.056
+In response to concern raised by the reviewers, we performed caspase 3 staining on the ezrin morphants. However, we did not observe significant rates of cell death in the developing RNE.10.7554/eLife.22689.056Author response image 1.
 
 Furthermore, in the transplantation experiments, cells were co-injected with the ezrin and p53 morpholino as it is known that otherwise hosts embryos often select against transplanted cells. However, ezrin morphant cells nevertheless formed blebs arguing against a direct role for cell death in bleb formation.
 

@@ -35,9 +35,21 @@ A major problem in studying the effects of diet on EEC physiology has been the l
 
 In this study, we utilized the zebrafish model to investigate the impact of dietary nutrients and microbiota on EEC function. The development and physiology of the zebrafish digestive tract are similar to those of mammals (Wallace et al., 2005; Wallace and Pack, 2003). Zebrafish hatch from their protective chorions at 3 days post-fertilization (dpf) and microbial colonization of the intestinal lumen begins shortly thereafter (Rawls et al., 2007). The zebrafish intestine becomes completely patent by 4 dpf and feeding and digestion begin around 5 dpf. The zebrafish intestine develops most of the same differentiated epithelial cell types as observed in mammals, including absorptive enterocytes, mucus-secreting goblet cells, and EECs (Ng et al., 2005; Wallace et al., 2005; Wallace and Pack, 2003). Absorption of dietary fat occur primarily in enterocytes within the proximal intestine of the zebrafish (Quinlivan and Farber, 2017) (yellow area in Figure 1D). These conserved aspects of intestinal epithelial anatomy and physiology are associated with a conserved transcriptional regulatory program shared between zebrafish and mammals (Lickwar et al., 2017). The zebrafish intestine is colonized by a complex microbiota which promotes intestinal absorption of dietary fat (Semova et al., 2012) but microbial and nutritional effects on zebrafish EEC physiology were unknown. To monitor EEC activity in zebrafish, we used a genetically encoded calcium indicator (Gcamp6f) expressed under control of an EEC gene promoter. The excitability of EECs upon luminal stimulation could be measured using in vivo fluorescence-based calcium imaging. By combining this in vivo EEC activity assay with diet and gnotobiotic manipulations, we show here that specific members of the intestinal microbiota mediate a novel physiologic adaption of EECs to high fat diet.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig1-v2.jpg)
+
+**Figure 1.:** (A) Confocal projection of zebrafish EECs marked by the TgBAC(neurod1:EGFP) transgenic line. (B) Confocal projection of zebrafish EECs marked by Tg(neurod1:RFP). TgBAC(cldn15la:GFP) marks intestinal epithelial cells. (C) Confocal image of zebrafish EECs marked by TgBAC(neurod1:EGFP) transgenic line. (C’) Subpanel image of zebrafish enterocyte marked by Tg(fabp2:DsRed). Note that neurod1+ EECs do not express the enterocyte marker fabp2. (D) Schematic diagram of 6 dpf larval zebrafish intestine. The anterior region of the intestine that is largely responsible for nutrient absorption is highlighted in yellow. (E–F) Confocal image of neurod1+ EECs stained for PYY (E,) and CCK (F). (E’–F’) Zoom view of PYY and CCK positive EECs. (G–H) Confocal image of neurod1+ EECs expressing somatostatin [marked by Tg(sst2:DsRed) in G] and proglucagon hormones [marked by Tg(gcga:EGFP) in H]. (G’–H’) Zoom view of sst2 and gcga positive EECs. (I–J) Quantification of PYY+ (n = 7) and CCK+ (n = 4) EECs in 6 dpf zebrafish intestines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fluorescence images of Tg(neurod1:RFP) 6 dpf zebrafish intestine. Neurod1 is expressed in islet cells of the pancreas and enteroendocrine cells in the intestine. (B) Confocal projection of zebrafish EECs marked by Tg(neurod1:RFP). Note that red neurod1+ EECs are not overlapping with green tp1+ cells. (C) Immunofluorescence staining of 6 dpf TgBAC(neurod1:EGFP) with the intestinal secretory cell marker 2F11 (red). (D) Confocal plane of zebrafish intestine from TgBAC(neurod1:EGFP). Goblet cells are identified by their specific cell shape in the white field (B’’) and EGFP labeled EECs do not overlap with goblet cells. (E) Confocal projection of zebrafish EECs marked by TgBAC(neurod1:EGFP). Mucus in goblet cells is labeled with WGA lectin (red). neurod1+ EECs do not stain with WGA. (F) Quantification of somatostatin+ cells that are labeled by Tg(sst2:RFP) in the 6 dpf zebrafish intestine. (G) Quantification of glucagon+ cells that are labeled by Tg(gcga:EGFP) in the 6 dpf zebrafish intestine. (H) Schematic depiction of EEC hormone distribution along the intestinal segments of 6 dpf zebrafish larvae.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** EdU was injected into the pericardiac sac region of 5 dpf TgBAC(neurod1:EGFP) zebrafish using previously described methods (Ye et al., 2015). Zebrafish were fixed at 1 hr, 4 hr, 20 hr, 30 hr, 45 hr, 54 hr, 7 days (168 hr) and 15 days post EdU injection. (A–D) Confocal images of EdU fluorescence staining in the TgBAC(neurod1:EGFP) zebrafish intestine. (E) Quantification of the percentage of EdU+ EECs in zebrafish intestine following EdU tracing. t = 0 (n = 6), t = 1 hr (n = 8), t = 4 hr (n = 5), t = 20 hr (n = 6), t = 30 hr (n = 11), t = 45 hr (n = 9), t = 54 hr (n = 6), t = 168 hr (n=5). No EdU+ EECs could be detected until 30 hr post EdU injection and some EdU+ EECs remained 15 days post EdU injection. (F) Schematic of our working model of EEC lifespan.
+
 ## Results
 
-## Establishing methods to study enteroendocrine cell function using an in vivo zebrafish model
+### Establishing methods to study enteroendocrine cell function using an in vivo zebrafish model
 
 We first developed an approach to identify and visualize zebrafish EECs in vivo. Previous mouse studies have shown that the transcription factor NeuroD1 plays an essential role to restrict intestinal progenitor cells to an EEC fate (Li et al., 2011; Ray and Leiter, 2007), and is expressed in almost all EECs without expression in other intestinal epithelial cell lineages (Li et al., 2012; Ray et al., 2014). We used transgenic zebrafish lines expressing fluorescent proteins under control of regulatory sequences from the zebrafish neurod1 gene, Tg(neurod1:RFP) (McGraw et al., 2012) and TgBAC(neurod1:EGFP) (Trapani et al., 2009). We found that both lines labeled cells in the intestinal epithelium of 6 dpf zebrafish (Figure 1A–B, Figure 1—figure supplement 1A), and that these neurod1+ cells do not overlap with goblet cells and express the intestinal secretory cell marker 2F11 (Crosnier et al., 2005) (Figure 1—figure supplement 1C–E). To further test whether these neurod1+ cells in the intestine label secretory but not absorptive cell lineages, we crossed Tg(neurod1:RFP) with the Notch reporter line Tg(tp1:EGFP) (Parsons et al., 2009). Activation of Notch signaling is essential to restrict intestinal progenitor cells to an absorptive cell fate (Crosnier et al., 2005; Li et al., 2012), suggesting tp1+ cells may represent enterocyte progenitors. In accord, we found that neurod1+ cells in the intestine do not overlap with tp1+ cells (Figure 1—figure supplement 1B). Additionally, our results demonstrated that neurod1+ cells in the intestine do not overlap with the mature enterocyte marker ifabp/fabp2 (Kanther et al., 2011) (Figure 1C). These results suggested that, similar to mammals, neurod1 expression in the zebrafish intestine occurs specifically in EECs. In addition, using EdU labeling in 5 dpf zebrafish larvae, we found that EECs in the intestine are post-mitotic and require about 30 hr to differentiate from proliferating progenitors (Figure 1—figure supplement 2).
 
@@ -45,19 +57,81 @@ Hormone expression is a defining feature of EECs, so we next evaluated the expre
 
 EECs are specialized sensory cells in the intestinal epithelium that can sense nutrient stimuli derived from the diet such as glucose, amino acids and fatty acids. Upon receptor-mediated nutrient simulation, EECs undergo membrane depolarization that results in transient increases in intracellular calcium that in turn induce release of hormones or neurotransmitters (Goldspink et al., 2018). Therefore, the transient increase in intracellular calcium concentration is an important mediator and indicator of EEC function. To investigate EEC function in zebrafish, we utilized Tg(neurod1:Gcamp6f transgenic zebrafish (Rupprecht et al., 2016), in which the calcium-dependent fluorescent protein Gcamp6f is expressed in EECs under control of the −5 kb neurod1 promoter (McGraw et al., 2012). Using this transgenic line, we established an in vivo EEC activity assay system which permitted us to investigate the temporal and spatial activity of EECs in vivo. Briefly, unanesthetized Tg(neurod1:Gcamp6f) zebrafish larvae were positioned under a microscope objective and a solution containing a stimulus was delivered onto their mouth. The stimulus was then taken up into the intestinal lumen and EEC Gcamp6f activity was recorded simultaneously (Figure 2A; see Materials and methods and Figure 2—figure supplement 1 for further details). Using this EEC activity assay, we first tested if zebrafish EECs were activated by fatty acids. We found that palmitate, but not the BSA vehicle control, activated a subset of EECs (Figure 2B–F, Video 1). Similar patterns of EEC activation in the proximal intestine were induced by the fatty acids linoleate and dodecanoate; whereas, the short chain fatty acid butyrate did not induce EEC activity (Figure 2D). The ability of EECs in the proximal intestine to respond to fatty acid stimulation is interesting because that region is the site of dietary fatty acid absorption (Carten et al., 2011). In this region EECs express CCK which regulates lipase and bile secretion and PYY which regulates food intake (Figure 1I and J). Our results further establish that activation by fatty acids is a conserved trait in zebrafish and mammalian EECs.
 
-## High fat feeding impairs enteroendocrine cell nutrient sensing
+![Figure 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig2-v2.jpg)
+
+**Figure 2.:** (A) Measurement of the EEC response to nutrient stimulation using Tg(neurod1:Gcamp6f). (B) Time lapse image of the EEC response to BSA conjugated palmitate stimulation in Tg(neurod1:Gcamp6f) using the EEC response assay. Note that palmitate responsive EECs are primarily in the proximal intestine. (C) Heat map image indicating the EEC calcium response at 0 and 3 min post palmitate stimulation from the highlighted area in B. (D) Change in Gcamp6f relative fluorescence intensity in 5 min with no stimulation or stimulation with egg water, BSA vehicle, palmitate, linoleate, dodecanoate or butyrate. Note that only palmitate, linoleate and dodecanoate induced EEC calcium responses. (E, F) Change in Gcamp6f relative fluorescence intensity in BSA stimulated (n = 4) and palmitate stimulated animals (n = 5). (G) Measurement of EEC calcium responses to palmitate stimulation following 4–8 hr of high fat (HF) meal feeding in 6 dpf Tg(neurod1:Gcamp6f) larvae. (H, I) Representative images of the EEC response to palmitate stimulation in control larvae (without HF meal feeding, (H) and 6 hr of HF feeding (I). (J) Measurement of EEC calcium responses to palmitate stimulation in Tg(neurod1:Gcamp6f) larvae following 4 and 8 hr HF feeding. Student t-test was used in F and one-way ANOVA with post-hoc Tukey test was used in J. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Experimental design of EEC activity assay using Tg(neurod1:Gcamp6f) zebrafish. (B) Representative images of EEC calcium fluorescence analysis using FIJI template matching and background subtraction in Tg(neurod1:Gcamp6f) zebrafish stimulated with palmitate. (C) Relative fluorescence intensity in the proximal intestine in a series of video images from zebrafish in B. (D) Spatial-temporal resolution of the EEC response to palmitate, glucose and cysteine stimulation. (E) Representative images of the EEC nutrient response in a regional specific manner. Palmitate and glucose primarily activated EECs in the proximal intestine where most lipid and nutrient absorption occurs. In contrast, cysteine activated EECs in the mid-intestine (segment 2) where proteins and other macromolecules are digested andabsorbed by specialized intestinal epithelial cells in this region (Nakamura et al., 2004; Wang et al., 2010; Park et al., 2019).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–C) Fatty acid was labeled with green fluorescence in BODIPY-C5 (Carten et al., 2011). BODIPY-C5 (in BSA complex) was delivered to zebrafish larvae that had been fed high fat (HF) meal for 6 hr, the same as the EEC activity assay. Within 5 min of delivery, green BODIPY-C5 was distributed throughout the entire zebrafish intestinal lumen. (D–F) Fatty acids were labeled with red fluorescence in BODIPY-C12 (Carten et al., 2011). BODIPY-C12 was delivered to zebrafish larvae that had been fed HF meal for 6 hr, the same as the EEC activity assay. Within 5 min of delivery, red BODIPY-C12 was distributed throughout the zebrafish intestinal lumen.
+
+![Video 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-video1.mp4.jpg)
+
+### High fat feeding impairs enteroendocrine cell nutrient sensing
 
 The vast majority of previous studies on EECs in all vertebrates has focused on acute stimulation with dietary nutrients including fatty acids. In contrast, we have very little information on the adaptations that EECs undergo during the postprandial process. To address this gap in knowledge, we applied an established model for high fat meal feeding in zebrafish (Carten et al., 2011; Semova et al., 2012). In this high fat (HF) meal model, zebrafish larvae are immersed in a solution containing an emulsion of chicken egg yolk liposomes which they ingest for a designated amount of time prior to postprandial analysis using our EEC activity assay (Figure 2G). Importantly, ingestion of a HF meal d not prevent subsequent nutrient stimuli such as fatty acids to be ingested and distributed along the length of the intestine (Figure 2—figure supplement 2). To our surprise, we found that the ability of EECs in the proximal intestine to respond to palmitate stimulation in our EEC activity assay was quickly and significantly reduced after 6 hr of HF meal feeding (Figure 2H–J, Video 2).
 
+![Video 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-video2.mp4.jpg)
+
 We next sought to test if HF feeding only impairs EEC sensitivity to fatty acids or if there are broader impacts on EEC nutrient sensitivity. First, we investigated EEC responses to glucose stimulation. Similar to fatty acids, glucose stimulation activated EECs only in the proximal intestine of the zebrafish under unfed control conditions (Figure 3A and B, Video 1). Previous mammalian cell culture studies reported that glucose-stimulated elevation of intracellular calcium concentrations and hormone secretion in EECs is dependent upon the EEC sodium dependent glucose cotransporter 1 (Sglt1), an apical membrane protein that is expressed in small intestine and renal tubules and actively transports glucose and galactose into cells (Song et al., 2016). Similarly, we found that Sglt1 is expressed on the apical surface of zebrafish intestinal epithelial cells including enterocytes and EECs (Figure 3E). In addition, co-stimulation with glucose and phlorizin, a chemical inhibitor of Sglt1, blocked the EEC activation induced by glucose (Figure 3F–G). Consistently, the EEC response to glucose stimulation was significantly increased by the addition of NaCl in the stimulant solution which will facilate sodium gradient dependent glucose transport by Sglt1 (Figure 3C). In addition, zebrafish EECs also responded to the other Sglt1 substrate, galactose, but not fructose (Figure 3D). These results suggest that glucose can induce EEC activity in a Sglt1 dependent manner in the zebrafish intestine.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig3-v2.jpg)
+
+**Figure 3.:** (A) Time lapse images of the EEC response to glucose (500 mM, dissolved in 100 mM NaCl solution) in 6 dpf Tg(neurod1:Gcamp6f) larvae using the EEC response assay. (B) Heat map image indicating the EEC calcium response at 0 and 1min 50s post glucose stimulation from the highlighted area in A. (C) Measurement of the EEC calcium response when stimulated with glucose (500 mM) dissolved in water or 100 mM NaCl vehicle. Note that the presence of NaCl significantly increased the glucose induced EEC calcium response. (D) Measurement of the EEC calcium response when stimulated with glucose (500 mM), fructose (500 mM) and galactose (500 mM). All of these stimulants were dissolved in 100 mM NaCl vehicle. Note that only glucose and galactose induced the EEC calcium response. (E) Confocal image of 6 dpf zebrafish intestine stained with Sglt1 antibody. EECs were marked by Tg(neurod1:RFP). Note that Sglt1 is located on the apical side of intestinal cells. (F, G) Representative image of the EEC calcium response in Tg(neurod1:Gcamp6f) when stimulated with 500 mM glucose or 500 mM glucose with a Sglt1 inhibitor (0.15 mM phloridzin). Note in G that when co-stimulated with glucose and Sglt1 inhibitor, the intestine appeared to dilate but no EEC activation was observed. (H,I) Representative image of the EEC calcium response to glucose stimulation in control larvae without high fat (HF) meal feeding (H) and 6 hr HF fed larvae (I). (J) Quantification of the EEC calcium response to glucose stimulation in control and 6 hr HF fed larvae. Student t-test was used in C,J. **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–B) Representative images of the EEC response to cysteine in control Tg(neurod1:Gcamp6f) zebrafish larvae. Note the location of responsive EECs in the mid-intestinal region (segment 2; yellow arrows) (C–D) Representative images of the EEC response to cysteine in 6 hr high fat (HF) meal fed Tg(neurod1:Gcamp6f) zebrafish larvae. (E) Quantification of the EEC response to cysteine in control and HF fed zebrafish. Student t-test was used in E for statistical analysis.
 
 We then examined if HF feeding impaired subsequent EEC responses to glucose, as we had observed for fatty acids (Figure 2G–J). Indeed, HF feeding significantly reduced EECs’ response to subsequent glucose stimulation (Figure 3H–J, Video 3). We extended these studies to investigate zebrafish EEC responses to amino acids. Among the twenty major amino acids we tested, we only observed significant EEC activity in response to cysteine stimulation under control conditions (Figure 3—figure supplement 1A–B, Video 1). However, in contrast to the fatty acid and glucose responses, zebrafish EECs that responded to cysteine were located primarily in the mid intestine (Figure 3—figure supplement 1A–B) and HF meal ingestion did not significantly impair subsequent EEC responses to cysteine (Figure 3—figure supplement 1C–E). These results collectively indicate that HF feeding impairs the function of palmitate and glucose responsive EECs in the proximal intestine, the region where fat absorption takes place.
 
-## High fat feeding induces morphological adaption in enteroendocrine cells
+![Video 3.](https://cdn.elifesciences.org/articles/48479/elife-48479-video3.mp4.jpg)
+
+### High fat feeding induces morphological adaption in enteroendocrine cells
 
 To further investigate how HF feeding impacts zebrafish EECs, we leveraged the transparency of the zebrafish to permit morphologic analysis of EECs. In zebrafish under control conditions, most EECs are in an open-type morphology (Figure 1B–G) with an apical process that extends to the intestinal lumen, allowing them to directly interact with the contents of the intestinal lumen (Figure 4A). When we examined the proximal zebrafish intestine after 6 hr of HF feeding, we discovered that most EECs had adopted a closed-type morphology that apparently lacked an apical extension and no longer had access to the lumenal contents (Figure 4B, Figure 4—figure supplement 1A–C). We first speculated this shift from open-type to closed-type EEC morphology may be due to cell turnover and loss of open-type EECs and replacement with newly differentiated closed-type EECs. To test this possibility, we created a new Tg(neurod1:Gal4); Tg(UAS:Kaede) photoconversion tracing system in which UV light can be used to convert the Kaede protein expressed in EECs from green to red emission (Figure 4—figure supplement 2A–C). This allowed us to label all existing differentiated neurod1+ EECs by UV light photoconversion immediately before HF feeding (Figure 4—figure supplement 2G), so that pre-existing EECs emit red and green Kaede fluorescence and any newly differentiated EECs emit only green Kaede fluorescence (Figure 4—figure supplement 2D–E). However, we did not observe the presence of any green EECs following HF feeding (Figure 4—figure supplement 2F–G). To test whether HF feeding induced EEC apoptosis, we used an in vivo apoptosis assay in which Tg(ubb:sec5A-tdTomato) zebrafish (Espenschied et al., 2019) were crossed with TgBAC(neurod1:EGFP) allowing us to determine if apoptosis occurred in EECs (Figure 4—figure supplement 3A–B). However, we did not detect activation of apoptosis in closed-type EECs following HF diet feeding (Figure 4—figure supplement 3C). Change of cell volume is an indicator of apoptotic cells. Consistently, we also did not observe a significant change in EEC cell volume following HF feeding (Figure 4—figure supplement 3D). These results suggest that the striking change in EEC morphology during HF feeding is not due to EEC turnover nor EEC apoptosis but is instead due to adaptation of the existing EECs.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Confocal projection of 6 dpf zebrafish intestine in control (A) and 6 hr high fat (HF) fed larvae (B). Enteroendocrine cells (EECs) are marked by TgBAC(neurod1:EGFP) and enterocytes are marked by Tg(fabp2:DsRed). (A’–B’) Subpanel images of neurod1+EECs in control larvae (A’) and 6 hr after high fat feeding (B’). (C–D) Confocal projection of 6 dpf zebrafish intestine in control (C) and 6 hr high fat fed larvae (D).The enteroendocrine cells are marked by Tg(neurod1:RFP) and the apical region of intestine cells are marked by Tg(gata5:lifeAct-EGFP). (C’–D’) Zoom view of EECs in control (C’) and HF fed larvae (D’). Note that in control intestine, the EECs have extensions that touch the apical lumen (yellow arrow in C’). Such apical extensions in EECs are lost following high fat meal feeding (D, D’). (E) Quantification of EEC morphology in control and 4–10 hr HF fed zebrafish larvae in Tg(gata5:lifeAct-EGFP);Tg(neurod1:RFP) double transgenic zebrafish. The EEC morphology score is defined as the ratio of the number of EECs with apical extensions over the number of total EECs. (F) Time lapse images showing loss of the EEC apical extension in 6 hr HF fed larvae using Tg(neurod1:lifeAct-EGFP). One-way ANOVA with post-hoc Tukey test was used in E for statistical analysis. **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Confocal projection of a typical EEC in the proximal intestine of control TgBAC(neurod1:EGFP); TgBAC(cd36-RFP) zebrafish. The white arrow indicates the apical projection that extends to the intestinal lumen. (B) Confocal image of an EEC in the proximal intestine 6 hr post high fat (HF) meal feeding in TgBAC(neurod1:EGFP); TgBAC(cd36-RFP) zebrafish. The white arrows indicate the discontinuous fragmentation of an apical projection that can only be observed in HF fed EECs. (C) Confocal image of ‘closed’ EECs in the proximal intestine after 6 hr post HF meal feeding in TgBAC(neurod1:EGFP); TgBAC(cd36-RFP) zebrafish. (F) Representative confocal projections of EECs in the proximal intestine following 8 hr of high fat feeding. (G) Representative confocal projections of EECs in the distal intestine (segments 2 and 3) following 8 hr HF feeding. (H) Quantification of EEC morphology in the distal-intestine in control and 8 hr HF fed zebrafish. (I) Quantification of sglt1 expression from the digestive tracts of control and 6 hr HF fed zebrafish. Student t-test was used in H and I for statistical analysis.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Epifluorescence image of in vivo EEC lineage tracing using Tg(neurod1:Gal4;cmlc2:EGFP); Tg(UAS:Kaede) (referred to as neurod1-Kaede). Before UV conversion, neurod1+ cells were labeled with green Kaede protein. Following UV exposure, green Kaede protein was converted into red Kaede protein and neurod1+ cells are labeled yellow. (C) Confocal image of live neurod1-Kaede zebrafish intestine 0.5 hr post UV conversion. All the EECs are labeled. (D) Confocal image of live neurod1-Kaede zebrafish intestine 2 days post UV conversion. Arrows indicate the EECs that were generated after UV conversion and exhibit green fluorescence only. (E) Confocal image of live neurod1-Kaede zebrafish intestine 6 hr post high fat (HF) meal. No green EECs were detected. (F) EEC neogenesis tracing at 0.5 hr, 6 hr and 2 days post UV conversion using the neurod1-Kaede system. (G) EEC neogenesis tracing at 6 hr post HF feeding.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Confocal projection of 6 dpf TgBAC(neurod1:EGFP); Tg(ubb:secA5-TdTomato) intestine. Apoptotic cells were labeled by secA5-TdTomato as red (yellow arrow). (B) Schematic view of labeling apoptotic cells using secA5-TdTomato (secreted Annexin5-TdTomato). During apoptosis, phosphatidylserine flips to the outer cellular membrane. The secA5-TdTomato is then able to bind to phosphatidylserine and label the apoptotic cells red. (C) Confocal image of TgBAC(neurod1:EGFP); Tg(ubb:secA5-TdTomato) zebrafish intestine following 6 hr of the high fat (HF) meal. In all the samples that were examined (n = 10), no apoptotic EECs were observed. (D) Quantification of average EEC cell volume in zebrafish from control, and 4 hours-10 hours post HF fed zebrafish. Each dot represents an individual animal with 30–60 EECs assessed per animal. One-way ANOVA with post-hoc Tukey test was used in F for statistical analysis.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Epifluoresence image of 5 dpf Tg(neurod1:lifeAct-EGFP). The pancreatic islet and enteroendocrine cells that were labeled by lifeAct-EGFP are designated by white arrows. (B) Confocal image of EEC labeled byTg(neurod1:lifeAct-EGFP) in live zebrafish mounted in 2% low melting agarose. The stronger lifeAct-EGFP signal was detected in the apical of EEC protrusion. (C, C’) Confocal image of Tg(neurod1:lifeAct-EGFP); TgBAC(cd36-RFP) zebrafish intestine. The EEC’s apical protrusion that labeled by a strong lifeAct-EGFP signal is labeled with white arrows. (D, D’) Confocal images of Tg(neurod1:lifeAct-EGFP); TgBAC(cd36-RFP) zebrafish intestine after 6 hr high fat (HF) meal feeding. The EECs’ apical protrusion labeled by strong lifeAct-EGFP signal was reduced.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A–B) Confocal image and confocal projection of EECs (magenta) in Tg(neurod1:RFP) adult zebrafish proximal intestine. (C–D) Confocal image and confocal projection of EECs (magenta) in Tg(neurod1:RFP) adult zebrafish proximal intestine after 10 hr high fat (HF) feeding. (E) Schematic of adult zebrafish intestine. (F) Quantification of EEC morphology score in control and 10 hr HF fed adult zebrafish. Each dot indicate average EEC morphology score from individual zebrafish. For each zebrafish, three representative areas were imaged and average EEC morphology score was quantified. Student T-test was used in F for statistical analysis. ***p<0.001.
+
 To analyze this adaptation of EEC morphology in greater detail, we used a new transgenic line TgBAC(gata5:lifeAct-EGFP) together with the Tg(neurod1:RFP) line. In these animals, the apical surface of EECs and other intestinal epithelial cells can be labeled by gata5:lifeAct-EGFP and the cytoplasmic extension of EECs to the apical lumen can be visualized and quantified through z-stack confocal imaging of the proximal intestine (Video 4). We measured the ratio of EECs with apical extensions to the total number of EECs, and defined that ratio as an ‘EEC morphology score’. In control larvae, most EECs are open-type and the morphology score is near 1 (Figure 4E). We found that the EEC morphology score gradually decreased upon HFfeeding (Figure 4E, Video 5), indicating that EECs had changed from an open-type to closed-type morphology. To further analyze the dynamics of the EEC apical response, we generated a new transgenic line Tg(neurod1:lifeAct-EGFP)(Figure 4—figure supplement 4A and B). Using in vivo confocal time-lapse imaging in Tg(neurod1:lifeAct-EGFP) zebrafish, we confirmed that EEC apical processes undergo dynamic retraction after HF feeding (Figure 4F), which was not observed in control animals (Figure 4—figure supplement 4C and D, Video 6). Interestingly, EECs in the distal-intestine retained their open-type morphology following HF feeding (Figure 4—figure supplement 1F–H), suggesting the adaptation from open- to closed-type EEC morphology is a specific response of EECs in the proximal intestine. This suggests that this EEC morphological adaption upon HF feeding is associated with impairment of EEC sensitivity to subsequent exposure to nutrients such as palmitate and glucose.
+
+![Video 4.](https://cdn.elifesciences.org/articles/48479/elife-48479-video4.mp4.jpg)
+
+**Video 4.:** The apical surface of the intestinal epithelium was labeled by gata5:lifeAct-EGFP. Note that the apical protrusion of EECs extend to the intestinal lumen.
+
+![Video 5.](https://cdn.elifesciences.org/articles/48479/elife-48479-video5.mp4.jpg)
+
+**Video 5.:** Note that the majority of EECs have lost their apical protrusions.
+
+![Video 6.](https://cdn.elifesciences.org/articles/48479/elife-48479-video6.mp4.jpg)
+
+**Video 6.:** (10 s/frame for 16 min).
 
 To investigate whether the diet-induced EEC morphology change is conserved in adult zebrafish, we performed a similar HF feeding paradigm in 1.5 year old Tg(neurod1:RFP) adult zebrafish and examined EEC morphology in whole mount zebrafish intestines. Our results demonstrated that, consistent with our observations in larvae zebrafish, 10 hr HF feeding triggered a similar open- to closed-type change in EEC morphology in adult zebrafish proximal intestine (Figure 4—figure supplement 5). This suggests that this diet-induced EEC adaptation is not restricted to larval stage animals but is a general postprandial physiological response. Next, we aimed to understand whether HF feeding-induced EEC functional and morphological adaptation is reversible. We performed similar HF feeding in Tg(neurod1:Gcamp6f) zebrafish larvae and transferred HF-fed zebrafish to fresh egg water for recovery. We observed that EECs’ calcium response to palmitate paralleled the clearance of the HF meal from the intestine (Figure 5A,B and G). Twenty hours after HF feeding, intestinal fat was almost completely cleared from the intestine and the EEC calcium response to palmitate was restored comparable to that of unfed controls (Figure 5B and H). HF feeding-induced changes in EEC morphology was also reversible. After 20 hr of recovery from HF feeding, the apical extension of most EECs had returned to the intestinal lumen and the EEC morphology score normalized (Figure 5C–F and I). To investigate whether restoration of these functional and morphological features was due to recovery of existing EECs or new EEC neogenesis, we performed similar Kaede photoconvertable EEC cell tracing using the Tg(neurod1:Gal4); Tg(UAS:Kaede) system (Figure 4—figure supplement 2). The existing EECs were labeled with UV after 6 hr of HF feeding. Following the photolabeling of EECs, the zebrafish were transferred to fresh egg water and intestines were imaged 20 hr after recovery. Almost all EECs in the recovered zebrafish were labeled with red Kaede (Figure 5J–K) indicating that HF feeding did not induce EEC apoptosis. In summary, our data suggest that EECs’ morphological and functional adaptations in response to HF feeding are transient and reversible. We operationally define this novel EEC morphological and functional postprandial adaption to HF feeding as ‘EEC silencing’.
 
@@ -65,25 +139,75 @@ To investigate whether the diet-induced EEC morphology change is conserved in ad
 
 **Figure 5.:** (A) Representative image of zebrafish after 6 hr of high-fat (HF) feeding, or HF feeding followed by 1, 3.5, and 20 hr of recovery in fresh egg water. (B) EEC palmitate-induced calcium response using Tg(neurod1:Gcamp6f) transgenic zebrafish after 6 hr of HF feeding, or HF feeding followed by 1, 3.5, and 20 hr of recovery. (C–E) Confocal projection of representative EECs (magenta) in Tg(neurod1:RFP) zebrafish under control conditions or 8 hr of HF feeding and HF fed zebrafish following 20 hr of recovery. (F) Confocal projection of representative EECs of Tg(neurod1:RFP); Tg(gata5:lifeAct-EGFP) in HF fed zebrafish following 20 hr of recovery. Yellow arrows indicate EECs’ apical extensions. (G) Change of Gcamp6f relative fluoresence intensity in response to palmitate stimulation in HF fed, and HF fed zebrafish following 1, 3.5, and 20 hr of recovery. (H) Quantification of EEC palmitate response in control and HF fed zebrafish following 20 hr of recovery. (I) Quantification of EEC morphology in control, HF fed and HF fed zebrafish following 20 hr of recovery. (J) Representative image of HF fed Tg(neurod1:Kaede) zebrafish following 20 hr recovery. Kaede+ EECs are photoconverted at 6 hr post HF feeding before and after recovery. (K) Quantification of the percentage of newly generated EECs (green Kaede only) in 3d post UV photoconversion, 20 hr post UV photoconversion and in HF fed zebrafish photoconverted before 20 hr recovery. Student t-test was used in H and one-way ANOVA with post-hoc Tukey test was used in I for statisitical analysis. ***p<0.001, ns p>0.05, not signficantly different.
 
-## Activation of ER stress following high fat feeding leads to EEC silencing
+### Activation of ER stress following high fat feeding leads to EEC silencing
 
 We next sought to identify the mechanisms underlying HF feeding-induced EEC silencing. Quantitative RT-PCR assays in dissected zebrafish digestive tracts 6 hr after HF feeding revealed broad increases in expression of transcripts encoding EEC hormones (Figure 6A). The largest increases were pyyb and ccka (Figure 6A), both of which are expressed by EECs in the proximal zebrafish intestine (Figure 1) and are important for the response to dietary lipid. However, HF feeding did not significantly alter expression of EEC specific transcription factors (neurod1, pax6b, isl1), nor the total number of EECs per animal (Figure 6A and C). We next assessed how soon after HF feeding EEC hormones were induced. We found that HF feeding led to gradual increases in ccka and pyyb transcript levelss which plateaued 6 hr after HF feeding (Figure 6—figure supplement 1E). Despite these increases in transcript level, PYY immunofluorescence revealed that reduced fluorescence intensity at 5 hr and 8 hr post HF fed zebrafish compared to control zebrafish (Figure 6—figure supplement 1A–D and F). This decreased PYY protein content in EECs may be due to depletion of protein contents after HF feeding-induced secretion of hormone or reduced protein translation (Moran-Ramos et al., 2012). We speculated that HF feeding challenges existing EECs to increase hormone secretion and synthesis which might place an elevated stress on the endoplasmic reticulum (ER), the organelle where hormone synthesis takes place. Induction of ER stress is known to activate ER membrane sensors Atf6, Perk and Ire1 and a series of downstream cell signaling responses as a negative feedback to block protein translation and reduce ER burden (Hetz, 2012; Xu et al., 2005). The activated ER stress sensor Ire1 then splices mRNA encoding the transcription factor Xbp1, which in turn induces expression of target genes involved in the stress response and protein degradation, folding and processing (Yoshida et al., 2001). Using quantitative RT-PCR analysis in dissected zebrafish digestive tracts, we found that HF feeding increased expression of UPR genes including chaperone proteins Gpr94 and Bip as early as 2 hr after HF feeding (Figure 6B, Figure 6—figure supplement 1E). To investigate whether ER stress is activated in EECs, we took advantage of a transgenic zebrafish line Tg(ef1α:xbp1δ-gfp) that permits visualization of ER stress activation by expressing GFP only in cells undergoing xbp1 splicing (Li et al., 2015). We crossed Tg(ef1α:xbp1δ-gfp) with Tg(neurod1:RFP) zebrafish and found that zebrafish larvae fed a HF meal, but not control larvae, displayed a significant induction of GFP in neurod1+ EECs (Figure 6L–N; Videos 7 and 8). Next, we tested if activation of ER stress in EECs is required for EEC silencing. Whereas HF feeding normally reduces the EEC morphology score, this did not occur in zebrafish treated with tauroursodeoxycholic acid (TUDCA), a known ER stress inhibitor (Uppala et al., 2017; Vang et al., 2014) (Figure 6O–Q).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig6-v2.jpg)
+
+**Figure 6.:** (A–B) Quantitative real-time PCR measurement of relative mRNA levels from dissected digestive tracts in control and 6 hr high fat (HF) meal larvae at 6dpf (n = 4 biological replicate pools of 20 fish per condition). The plot indicates the fold increase of relative mRNA levels of indicated genes. (C) Quantification of total EEC number in control (n = 8) and 6 hr HF fed larvae (n = 6). (D–G) Representative images of the EEC calcium response to glucose or palmitate stimulation in control (D, F) and 2 hr thapsigargin (ER stress inducer, 1 µM) treated larvae (E, G). (H, I) Quantification of the EEC calcium response toward glucose (H) and palmitate (I) in control and 2 hr thapsigargin (1 µM) treated larvae. (J–K) Quantification of EEC morphology score in control and 10 hr thapsigargin (0.75 µM) or brefeldin A (BFA, 9 µM) treated larvae Tg(gata5:lifeAct-EGFP);Tg(neurod1:RFP) double transgenic line. (L–M) Confocal projections of control (J) and 6 hr HF fed (K) zebrafish intestines. The EECs are marked by Tg(neurod1:RFP), the activation of ER stress is marked by Tg(ef1α:xbp1δ-GFP) and DNA is stained with Hoechst 33342 (blue). (L’–M’) Subpanel images showing the activation of ER stress in control (L’) and 6 hr HF fed (M’) zebrafish intestines. (M’’) Zoom in view of s-xbp1+ EECs that displayed typical closed morphology in HF fed zebrafish intestine. Yellow arrows in M, M’ and M’’ indicate EECs with xbp1 activation. (N) Quantification of s-xbp1+ EECs (%) in control and 6 hr HF fed zebrafish larvae. (O–P) Confocal projection of zebrafish intestine in 10 hours HF fed (O) and 10 hr HF fed treated animals receiving 0.5 mM TUDCA (P). EECs are marked with Tg(neurod1:RFP) and the apical region of the intestine is marked with Tg(gata5:lifeAct-EGFP). (O’–P’) Zoom view of EECs in indicated conditions. Yellow arrows in P’ indicate EECs’ apical extensions. (Q) Quantification of the EEC morphology score in zebrafish larvae following 10 hr of HF feeding and 10 hr of HF feeding with 0.5 mM TUDCA. Student t-test was performed for statistical analysis. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Confocoal projections of EECs in control and 8 hr HF fed TgBAC(neurod1:EGFP) zebrafish intestine stained with PYY antibody. (A’–B’) Confocal projections of PYY+ EECs in control and 8 hr HF fed zebrafish intestine. (C–D) Zoom view of PYY+ EECs in control and 10 hr HF fed TgBAC(neurod1:EGFP) zebrafish intestines. (C’–D’) Zoom view of PYY staining in control and 10 hr HF fed zebrafish intestines. Yellow arrows in D’ indicate that in contrast to the control EEC in C’ where PYY staining is distributed in the entire cell, PYY staining in this 10 hr HF fed EEC is only visible at basalateral membrane area. The images in A-D and A’-D’ are taken with the same confocal setting. (E) Quantitative real-time PCR of ccka, pyyb, grp94 and bip expression from control (n = 4), 2 hr (n = 3), 4 hr (n = 4), 6 hr (n = 4), 8 hr (n = 4) and 10 hr (n = 4) post HF fed zebrafish digestive tracts. (F) Quantification of PYY+ cell fluorescence intensity from control (47 cells from six fish), 5 hr (33 cells from seven fish), 8 hr (27 cells from six fish) and 10 hr (51 cells from eight fish) post HF fed zebrafish intestine. One-way ANOVA with post-hoc Tukey test was used in F for statistical analysis. *p<0.05, **p<0.01.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Representative heatmap image of Tg(neurod1:Gcamp6f) zebrafish in control (A) or 2 hr post Thapsigargin treated conditions. Yellow lines in A and B indicate the proximal intestine area that used to quantify the fluoresence intensity in C. (C) Quantification of basal fluoresence in the proximal intestine in control and Thapsigargin treatment zebrafish. (D) Representative EECs’ temporal response to glucose stimulation in control and 2 hr post Thapsigargin treated zebrafish. (E) Representative EECs’ temporal response to palmitate stimulation in control and 2 hr post Thapsigargin treated zebrafish.
+
+![Video 7.](https://cdn.elifesciences.org/articles/48479/elife-48479-video7.mp4.jpg)
+
+![Video 8.](https://cdn.elifesciences.org/articles/48479/elife-48479-video8.mp4.jpg)
+
+**Video 8.:** Note the induction of s-xbp1+ cells in the intestinal epithelium.
+
 To further test the hypothesis that ER stress activation can lead to EEC silencing, we tested if induction of ER stress is sufficient to cause EEC silencing independent of HF feeding. We treated 6 dpf Tg(neurod1:Gcamp6f) zebrafish larvae with thapsigargin, a chemical compound commonly used to induce ER stress by interrupting ER calcium storage and protein folding (Samali et al., 2010), and then performed the EEC response assay. Thaspisgargin treatment did not alter the basal EEC calcium level in the proximal intestine (Figure 6—figure supplement 2A–C). Thapsigargin treatment, however, reduced the EEC calcium response in that region to both glucose and palmitate (Figure 6D–I, Figure 6—figure supplement 2D–E) and decreased the EEC morphology score, both key phenomena associated with EEC silencing (Figure 6J). To confirm this result, we tested a second ER stress inducer brefeldin A (BFA), which inhibits anterograde ER export to Golgi and blocks protein secretion (Donaldson et al., 1992; Klausner et al., 1992). Similar to thapsigargin, treatment with BFA significantly decreased the EEC morphology score (Figure 6K). These results support a working model wherein increased hormone synthesis and secretion following HF feeding induce ER stress in EECs which leads to EEC silencing.
 
-## Blocking fat digestion and absorption inhibits EEC silencing following high fat feeding
+### Blocking fat digestion and absorption inhibits EEC silencing following high fat feeding
 
 We next sought to explore the physiological mechanisms within the gut lumen that may lead to EEC silencing after HF feeding. We reasoned that induction of ER stress in EECs after a HF meal is likely caused by over-stimulation with fatty acids and other nutrients derived from the meal. Fatty acids are liberated from dietary triglycerides in the gut lumen through the activity of lipases, so we predicted that lipase inhibition would block EEC silencing normally induced by HF feeding. We therefore treated zebrafish larvae with orlistat, a broad-spectrum lipase inhibitor commonly used to treat obesity (Ballinger, 2000; Hill et al., 1999). We found that treatment of Tg(neurod1:Gcamp6f) zebrafish with orlistat during HF feeding significantly increased the ability of EECs to subsequently respond to glucose and palmitate (Figure 7A–F). Next, we investigated the effect of orlistat on EEC morphology during HF feeding in Tg(gata5:lifeAct-EGFP); Tg(neurod1:RFP) zebrafish. We found that following 10 hr of HF feeding, EECs in control animals had switched from an open-type to a closed-type morphology and significantly reduced the EEC morphology score (Figure 7G and N). By contrast, treatment with orlistat prevented HF induced EEC morphological changes (Figure 7H and N), suggesting lipase activity is required for EEC silencing.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig7-v2.jpg)
+
+**Figure 7.:** (A–D) Representative image of the EEC calcium response to glucose (A, B) and palmitate (C, D) stimulation in 6 hr high fat (HF) fed and 6 hr HF fed with 0.5 mM orlistat treated Tg(neurod1:Gcamp6f) zebrafish larvae. (E, F) Quantification of the EEC calcium response to glucose and palmitate stimulation in 6 hr HF fed and 6 hr HF fed with 0.5 mM orlistat treated zebrafish larvae. (G–H) Confocal projection of Tg(neurod1:RFP); Tg(gata5:lifeAct-EGFP) zebrafish intestine in 10 hr HF fed larvae (G) and 10 hr HF fed with 0.1 mM orlistat treated larvae (H). (G’–H’) Zoom view of EECs in indicated conditions. The yellow arrows in G’ and H’ indicate the EECs’ apical extensions. (I–J) Confocal images of Tg(neurod1:RFP); Tg(ef1α:xbp1δ-GFP) zebrafish intestine in 6 hr HF fed larvae (I) and 6 hr HF fed with 0.5 mM orlistat treated larvae (J). (I’–J’) Zoom view of EECs in indicated conditions. Yellow arrows in I’ indicate the EECs with activated xbp1 in HF fed condition. (K–M) Confocal images of Tg(neurod1:RFP); Tg(NFΚB:EGFP) zebrafish intestine in 10 hr HF fed larvae (K), 10 hr HF fed larvae treated with 0.1 mM orlistat (L) and 10 hr HF fed larvae treated with 0.5 mM TUDCA (M). Yellow arrows indicate neurod1:RFP+ EECs co-labeled with the NFΚB reporter. (N) Quantification of the EEC morphology score in control, 10 hr HF fed and 10 hr HF fed with 0.1 mM orlistat treated larvae represented in G and H. (O) Quantification of s-xbp1+ EEC (%) in 6 hr HF fed larvae and 6 hr HF fed larvae treated with 0.5 mM orlistat represented in J and K. (P) Quantification of NF-κB+ EECs in control, 10 hr HF fed, 10 hr HF fed with 0.1 mM Orlistat and 10 hr HF fed with 0.5 mM TUDCA treated zebrafish larvae represented in K-M. Student t-test was performed in E, F, O and one-way ANOVA with post-hoc Tukey test was used in N, P for statistical analysis. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Confocal image of Tg(neurod1:RFP) zebrafish intestine in control and 6 hr post palmitate feeding zebrafish larvae at 6dpf. (B) EEC morphology score in control and palmitate fed zebrafish larvae. (D) EEC response to palmitate following different dietary manipulations. 6 dpf Tg(neurod1:Gcamp6f) zebrafish were untreated (n = 6) or fed for 6 hr with BSA (n = 3), ZM000 (larvae zebrafish food) (n = 4), HF meal (6.25% chicken egg yolk) (n = 11), or palmitate (n = 4). Only egg yolk and palmitate feeding reduced the EECsresponse to palmitate stimulation. (E) EEC response to glucose stimulation following 6 hr of palmitate feeding. (F–G) Representative confocal image of control (n = 5) and 6 hr palmitate treated (n = 7) intestine in Tg(neurod1:TagRPF); Tg(ef1α:xbp1δ-GFP) zebrafish. (H) Quantitative real-time PCR measurement of relative bip and grp94 mRNA levels from dissected tracts in control (n = 4 biological replicate pools of 20 fish, three technical replicates) and 6 hr palmitate treated (n = 3 biological replicate pools of 20 fish, three technical replicates). Student t-test was used in C, E and H, one-way ANOVA with post-hoc Tukey test was used in D for statisc analysis. *p<0.05, ns p>0.05, not signficicantly different.
 
 To investigate further how orlistat treatment inhibits EEC silencing, we analyzed its effect on ER stress in EECs following HF feeding using Tg(ef1α:xbp1δ-gfp) zebrafish. We found that orlistat treatment significantly reduced the percentage of EECs that are ef1α:xbp1δ-gfp+ following HF feeding (Figure 7I,J and O). We next sought to test if additional pathways are activated in EECs by HF feeding, and if those EEC responses are dependent on lipase activity or ER stress. Induction of ER stress can lead to activation of the transcription factor NF-κB through release of calcium from the ER, elevated reactive oxygen intermediates or direct Ire1 activity (Kim et al., 2015; Pahl and Baeuerle, 1997). After crossing a transgenic reporter of NF-κB activity Tg(NFkB:EGFP) (Kanther et al., 2011) with Tg(neurod1:RFP), we found that HF feeding significantly increased the number of NF-κB+ EECs (Figure 7K and P), but that this effect could be significantly reduced by treatment with orlistat or the ER stress inhibitor TUDCA (Figure 7L,M and P). These results indicate that EEC silencing and associated signaling events that follow ingestion of a HF meal require lipase activity.
 
 Lipases act on dietary triglycerides to liberate fatty acids and monoacylglycerols that are then available for stimulation of EECs (Hara et al., 2011; Lauffer et al., 2009). To test if free fatty acids are sufficient to induce EEC silencing, we treated 6 dpf zebrafish larvae with palmitate, a major fatty acid component in our HF meal (Poureslami et al., 2012). Treatment with palmitate for 6 hr significantly reduced the ability of EECs to respond to subsequent palmitate stimulation, but did not influence the EEC morphology score, nor the EEC response toward subsequent glucose stimulation (Figure 7—figure supplement 1A–E). Similary, using Tg(ef1α:xbp1δ-gfp) and real-time PCR to examine relative bip and grp94 expression, we found that palmitate treatment did not induce significant ER stress activation like HF feeding (Figure 7—figure supplement 1F–H). These results suggest that the fatty acid palmitate is sufficient to induce only a portion of the EEC silencing phenotype induced by a complex HF meal.
 
-## High fat feeding induces EEC silencing in a microbiota dependent manner
+### High fat feeding induces EEC silencing in a microbiota dependent manner
 
 Using the same HF feeding model in zebrafish, we previously showed that the gut microbiota promote intestinal absorption and metabolism of dietary fatty acids (Semova et al., 2012), and similar roles for microbiota have been established recently in mouse (Martinez-Guryn et al., 2018). We therefore predicted that the microbiota may also regulate EEC silencing after HF feeding. Using our established methods (Pham et al., 2008), we raised Tg(gata5:lifeAct-EGFP); Tg(neurod1:RFP) zebrafish larvae to 6 dpf in the absence of any microbes (germ free or GF) or colonized at 3 dpf with a complex zebrafish microbiota (ex-GF conventionalized or CV). In the absence of HF feeding, we observed no significant differences between GF and CV zebrafish in their EEC morphology score or EEC response to palmitate (Figure 8C,D,G and I). We then performed HF feeding in these 6 dpf GF and CV zebrafish larvae. In contrast to CV HF-fed zebrafish larvae, EECs in GF zebrafish did not show a change in morphology after HF feeding (Figure 8A,B and I) and exhibited significantly greater responses to palmitate stimulation (Figure 8E,F and H). In accord, the ability of HF feeding to induce reporters of ER stress and NF-κB activation was significantly reduced in GF compared to CV zebrafish (Figure 8J and K). These results indicate that colonization by microbiota mediates EEC silencing in HF fed zebrafish. EECs are known to express Toll-like receptors (TLRs) (Kanwal et al., 2014; Palti, 2011), which sense diverse microbe-associated molecular patterns and signal through the downstream adaptor protein Myd88 leading to activation of NF-κB and other pathways (Kawasaki and Kawai, 2014). To test if EEC silencing requires TLR signaling, we evaluated myd88 mutant zebrafish (Burns et al., 2017). We found that EECs’ response to palmitate after HF feeding was equivalent to that of wild type fish (Figure 8—figure supplement 1), suggesting microbiota promote EEC silencing in a Myd88-independent manner.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig8-v2.jpg)
+
+**Figure 8.:** (A–B) Confocal images of 6 dpf zebrafish intestines from conventionalized (CV) and germ free (GF) larvae following 10 hr of high fat (HF) feeding. EECs are marked with Tg(neurod1:RFP) and the apical lumen of intestine is marked with Tg(gata5:lifeAct-EGFP). (A’–B’) Zoom view of EECs from CV and GF zebrafish following HF feeding. Yellow arrows in B’ indicate EEC apical extensions in HF fed GF zebrafish. (C–F) Representative images of the EEC calcium response toward palmitate stimulation in CV and GF Tg(neurod1:Gcamp6f) larvae with or without 6 hr of HF feeding. (G–H) Quantification of the EEC calcium response to palmitate stimulation represented in C-F. (I) Quantification of the EEC morphology score in CV and GF zebrafish larvae with or without 10 hr of HF feeding represented in A and B. (J) Quantification of xpb1+ EECs (%) in CV and GF Tg(neurod1:RFP); Tg(ef1α:xbp1δ-GFP) zebrafish larvae with or without 6 hr HF feeding. (K) Quantification of NF-κB+ EECs (%) in CV and GF Tg(neurod1:RFP); Tg(NFkB:EGFP) zebrafish larvae with or without 10 hr HF feeding. Student t-test was used in G,H and one-way ANOVA with post-hoc Tukey test was used in I-K for statistical analysis. *p<0.05, **p<0.01, ****p<0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Tg(neurod1:Gcamp6f); myd88+/- fish were crossed with Tg(neurod1:Gcamp6f) fish and sorted at 3 dpf. Response to palmitate stimulation was assessed afterwhich the genotypes of zebrafish were determined. (A) Quantification of the EEC response to palmitate stimulation in 6 dpf Tg(neurod1:Gcamp6f) zebrafish under control conditions. No differences were observed among different genotypes. (B) Quantification of EECs’ response to palmitate stimulation in six dpf Tg(neurod1:Gcamp6f) zebrafish 6 hr after high fat (HF) feeding. One-way ANOVA with post-hoc Tukey test was used in A, B for statistical analysis and no statistical differences were observed among different genotypes.
+
 HF diets are known to significantly alter gut microbiota composition in humans, mice and zebrafish (David et al., 2014; Hildebrandt et al., 2009; Wong et al., 2015). We therefore hypothesized that HF feeding might alter the composition of the microbiota, which in turn might promote EEC silencing. To test this possibility, we first analyzed the effects of HF feeding on intestinal microbiota density through colony forming unit (CFU) analysis in dissected intestines from CV zebrafish larvae. Strikingly, we found that intestinal microbiota abundance had increased ~20 fold following 6 hr of HF feeding (Figure 9A). To determine if this increase in bacterial density was accompanied by alterations in bacterial community structure, we performed 16S rRNA gene sequencing. Since diet manipulations can alter microbiota composition in the zebrafish gut as well as their housing water media (Wong et al., 2015), we analyzed samples from dissected intestines of zebrafish larvae in control and HF fed groups as well as their respective housing media (Figure 9B). Analysis of bacterial community structure using the Weighted Unifrac method (Caporaso et al., 2010) revealed, as expected, relatively large differences between gut and media samples (PERMANOVA p<0.02 control gut vs. control media, p<0.005 HF gut vs HF media) (Figure 9C). The addition of HF feeding had a relatively smaller but consistent effect on overall bacterial community structure in both gut and media (PERMANOVA p=0.2 control gut vs HF gut, p=0.094 control media vs HF media) (Figure 9C). HF feeding caused a small reduction in within-sample diversity among media microbiotas as measured by Faith’s Phylogenetic Diversity (Kruskal-Wallis p=0.049), but no significant effects on gut microbiotas (p=0.29) (Faith and Baker, 2007). Taxonomic analysis of zebrafish gut and media samples revealed several bacterial taxa significantly affected by HF feeding (Supplementary file 2). Members of class Betaproteobacteria dominated the control media, but HF feeding markedly decreased their relative abundance (LDA effect size 5.45, p=0.049). Conversely, HF feeding increased the relative abundance of members of class Gammaproteobacteria (LDA effect size 5.49, p=0.049; Figure 9D) such as genera Acinetobacter (LDA effect size 5.13, p=0.049), Pseudomonas (LDA effect size 5.02, p=0.049) and Aeromonas (LDA effect size 4.78, p=0.049; Figure 9F; Supplementary file 2 and 3). HF feeding also increased the relative abundance in media of class Cytophagia from phylum Bacteroidetes (LDA effect size 4.66, p=0.049; Figure 9D) due to increases in the genus Flectobacillus (LDA effect size 4.76, p=0.049; Figure 9E; Supplementary file 2 and 3). The increased relative abundances of Aeromonas sp. and Pseudomonas sp. in HF fed medias was not recapitulated in the gut microbiotas (Figure 9F; Supplementary file 2). However, similar to the media, HF feeding significantly increased abundance of class Cytophagia (LDA effect size 4.01, p=0.018; Figure 9D) due to enrichment of Flectobacillus (LDA effect size 4.01, p=0.004; Figure 9F). Additionally, HF feeding resulted in a 100-fold increase the relative abundance of Acinetobacter sp. in the gut (average 0.04% in control gut, 4.28% in HF gut; LDA effect size 4.31, p=0.001; Figure 9G, Supplementary file 2 and 4). These results establish that HF feeding has diverse effects on the bacterial communities in the zebrafish gut and media, and raise the possibility that members of these affected bacterial genera may regulate EEC silencing in response to HF feeding.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig9-v2.jpg)
+
+**Figure 9.:** (A) Colony forming unit (CFU) quantification in GF and CV dissected intestines with or without 6 hr of high fat (HF) feeding. (B) Experimental design of 16S rRNA gene sequencing in control larvae dissected gut and medium and 6 hr HF fed larvae dissected gut and medium. (C) Weighted UniFrac principal coordinates analysis (PCoA) of 16S rRNA gene sequences from control and HF fed gut and media samples The % variation explained by principal components (PC) 1 and 2 are shown on their respective axes. (D) Relative abundance of bacterial classes in control and HF fed gut and media. (E–F) Change in representative bacterial genera following HF feeding in gut and media. Asterisks indicate taxa with p<0.05 by LEfSe analysis. (G) Schematic of monoassociation screening to investigate the effects of specific bacterial strains on EEC morphology. Three dpf zebrafish larvae were colonized with one of the isolated bacterial strains and EEC morphology was scored after 8 hr high fat meal feeding in 6 dpf GF and monoassociated animals. (H) EEC morphology score of GF and monoassociated zebrafish larvae following 8 hr high fat feeding. Data were pooled from three independent experiments, with each dot representing an individual animal. The EEC morphology score in Acinetobacter sp. ZOR0008 monoassociated animals was significantly lower than GF EECs (p<0.001). No consistent significant differences were observed in other monoassociated groups. One way ANOVA followed by Tukey’s post-test was used in H for statistical analysis.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Schematics of the experimental design. The digestive tracts from five zebrafish larvae were dissected and pooled, and CFU analysis was performed to assess the colonization efficiency for bacterial strains that were used for monoassociation. (B) CFU quantification of zebrafish larvae samples that were monoassociated with different bacterial strains. One-way ANOVA with post-hoc Tukey test was used in B for statistical analysis and no statistical differences among groups were observed (n = 4 for each group except for pseudomonas sp. ZWU0006 n = 3).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A–B) Representative images of the EEC calcium response to palmitate stimulation in HF fed GF zebrafish (A) and HF fed Acinetobacter sp. monoassoicated zebrafish (B). (C) Quantification of EEC calcium response toward palmitate stimulation. Student t-test was used in C for statistical analysis.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/48479/elife-48479-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** (A–D) Representative confocal projection images of EECs (magenta) in Tg(neurod1:RFP) zebrafish under control conditions, HF feeding, HF feeding with the ROS inhibitor N-acetylcysteine (NAC), and HF feeding with the NOS inhibitor N(gamma)-nitro-L-arginine methyl ester (L-NAME). (E–F) Representative images of intestines in GF, CV and Acinetobacter sp. ZOR0008 monoassociated control or 6 hr HF fed zebrafish. The intestinal luminal ROS was labeled with CM-H2DCFDA. (G) Quantification of EEC morphology in control, HF fed, HF fed with NAC or L-NAME treated zebrafish. (H) Quantification of proximal intestinal lumenal CM-H2DCFDA fluoresence intensity in GF, CV and Acinetobacter sp. monoassociated control or 6 hr HF fed zebrafish. (I) In vitro measurement of the H2O2 concentration in 1010 CFU Aeromonas sp. ZOR0002 and Acinetobacter sp. ZOR0008 that were cultured in Trypticase Soy Broth or 5% egg yolk in water (HF).
 
 We next tested if EEC silencing could be facilitated by representative members of the zebrafish microbiota, including those enriched by HF feeding. We selected a small panel of bacterial strains that were isolated previously from the zebrafish intestine (Stephens et al., 2016) and used them to monoassociate separate cohorts of GF Tg(gata5:lifeAct-EGFP); Tg(neurod1:RFP) zebrafish at 3 dpf (Figure 9I). These bacteria strains were from nine different genera including Acinetobacter sp. ZOR0008. We did not observe significant differences in colonization efficiency among these bacteria strains that were inoculated into GF zebrafish (Figure 9—figure supplement 1). At 6 dpf, we performed HF feeding and examined the EEC morphology score. Strikingly, only Acinetobacter sp. ZOR0008 was sufficient to significantly reduce the EEC morphology score upon HF feeding (Figure 9J) similar to conventionalized animals (Figure 8A,B and I). Consistently, we also found that monoassociation with Acinetobacter sp. ZOR0008 alone is sufficient to reduce EEC calcium response to palmitate stimulation following HF feeding compared with GF controls (Figure 9—figure supplement 2). These results indicate that the effects of microbiota on EEC silencing following HF feeding display strong bacterial species specificity, and suggest Acinetobacter bacteria enriched by HF feeding may mediate the effect of microbiota on HF sensing by EECs.
 
@@ -97,7 +221,7 @@ In this study, we established a new experimental system to directly investigate 
 
 **Figure 10.:** At early postprandial stages after consumption of a high fat (HF) meal, dietary triglyceride (TG) is hydrolyzed to monoglycerides and free fatty acids (FA) by lipases in the gut lumen. FA are taken up by enterocytes and re-esterified into TG which is packaged into chylomicrons (CM) for basolateral secretion. FA and dietary glucose stimulate EECs, increasing [Ca2+]i and inducing secretion of hormones like CCK, PYY and GLP-1. During and after HF feeding, FA taken up by enterocytes are stored in cytosolic lipid droplets (LD) in addition to secreted CM. Moving into later postprandial stages, HF feeding and presence of gut microbiota lead to ER stress in EECs. HF feeding also promotes overgrowth of the gut bacterial community including enrichment of Acinetobacter sp. Activation of ER stress pathways by these nutritional and microbial stimuli cause EECs to retract their apical processes and reduce their nutrient sensitivity at the late postprandial stage, a process we call ‘EEC silencing’.
 
-## EEC physiology in zebrafish
+### EEC physiology in zebrafish
 
 These studies provide important new tools for studying EECs in the context of zebrafish intestinal epithelial development and physiology. Similar to mammals, fish EECs are thought to arise from intestinal stem cells through a series of signals that govern the differentiation process (Aghaallaei et al., 2016). Delta-Notch signaling appears to control the differentiation of stem cells into absorptive and secretory cell lineages in both zebrafish and mammals (Crosnier et al., 2005). Activation of Notch signaling can block the differentiation of EECs by inhibiting the expression of key EEC bHLH transcription factors (Li et al., 2011). In mammals, the bHLH transcription factor Neurod1 that has been shown to regulate EEC terminal differentiation (Li et al., 2011; Ray and Leiter, 2007). Our results indicate that Neurod1 is expressed by and important in EEC differentiation in zebrafish as it is in mammals. Moreover, this finding enabled us to use neurod1 regulatory sequences to label and monitor zebrafish EECs.
 
@@ -105,7 +229,7 @@ The hallmark of EECs is their expression of hormones. In this study, using trans
 
 Our data also establish that zebrafish EECs develop striking regional specificity in the hormones they express along the intestine (Figure 1—figure supplement 1). For example, the CCK and PYY hormones that are important for regulating food digestion and energy homeostasis (Beglinger and Degen, 2006; Liddle, 1997; Raybould, 2007) were only expressed in the proximal intestine. In addition to hormonal regional specificity, we found that the EEC calcium responses to nutrients also display regional specificity. For example, glucose and long chain/medium chain fatty acids only stimulate EECs in the proximal intestine, a region in zebrafish where digestion and absorption of dietary fats primarily occurs (Carten et al., 2011). This hormonal and functional regional specificity suggests that distinct developmental and physiological programs govern EEC function along the intestinal tract, and that EECs in the proximal zebrafish intestine may play key roles in monitoring and adapting to dietary nutrients.
 
-## EEC silencing
+### EEC silencing
 
 In this study, we adopted a high fat feeding paradigm that is the most commonly used high fat diet in zebrafish larvae and adults for metabolic and obesity studies (Maddison and Chen, 2012; Minchin et al., 2018; Zang et al., 2018; Zhou et al., 2015). This high fat feeding paradigm consisting of 5% chicken egg yolk provides a rich source of dietary lipid (60% lipid by dry weight), and is a common dietary constituent for humans and other animals (Kuksis, 1992). We discovered that high fat feeding can induce a series of functional and morphological changes in EECs we refer to as ‘EEC silencing’. EEC silencing includes (1) reduced EEC sensitivity to nutrient stimulation (e.g., fatty acids and glucose) and (2) conversion of EEC morphology from an open to a closed type. To our knowledge, EEC silencing has not been observed in previous studies of EEC in any vertebrate. This underscores the unique power of in vivo imaging in zebrafish to reveal new physiologic and metabolic processes. Our results also demonstrated that EECs’ morphological and functional changes in response to HF feeding are reversible and reflect the recovery of pre-existing EECs. This together with other data presented here indicate that EEC silencing is a physiologically relevant postprandial adaptation, rather than acute toxicity in EECs stimulated by high fat feeding. Our evidence further suggests that EEC silencing is a response that EECs display following consumption of a high fat meal only in the presence of specific microbes. The physiologic function of EEC silencing remains unknown. EEC silencing might serve to protect EECs against excessive stress following consumption of a high fat meal. In neurons for example, similar desensitization has been shown to protect nerve cells from excitatory neurotransmitter induced toxicity (Gainetdinov et al., 2004; Quick and Lester, 2002) and blocking desensitization of excitatory neuronal receptors induces rapid neuronal cell death (Walker et al., 2009). High dietary fat can also lead to excessive production of excitatory stimuli like long-chain fatty acids. We speculate that EEC silencing provides an adaptive mechanism for EECs to avoid excessive stimuli and protect against cell stress and death.
 
@@ -115,7 +239,7 @@ Our observation that EECs can change their morphology from an ‘open’ to ‘c
 
 Our results reveal important roles for fat digestion in the induction of EEC silencing. Blocking fat digestion and subsequent lipid absorption through orlistat treatment prevented EEC silencing after high fat feeding. EEC function may be directly influenced by the products of lipolysis such as free fatty acids (Edfalk et al., 2008; Hirasawa et al., 2005; Katsuma et al., 2005). However, in our experiments, palmitate treatment was only sufficient to reproduce a portion of the EEC silencing phenotype (i.e. loss of palmitate sensitivity without elevation of ER stress nor change of EEC morphology). These differences in the EEC response to palmitate and a complex high fat meal could have several potential causes. Lipolysis of complex dietary fats yields fatty acid substrates like palmitate that stimulate free fatty acid receptors on EECs. Previous studies demonstrated that repeated or continuous stimulation of G-protein coupled receptors (GPCR) like free fatty acid receptors induces GPCR desensitation through receptor internalization into vesicles, degradation in lysosomes, and decreased receptor mRNA levels (Rajagopal and Shenoy, 2018). It is therefore possible that palmitate treatment or high fat meal induces free fatty acid receptor desensitization which prevents EECs’ response to further fatty acid stimulation. On the other hand, our data further indicate that high fat feeding but not palmitate treatment induced sustained ER stress in the digestive tract. The ER stress induced by high fat feeding required the presence of gut microbiota, and likely drives other EEC silencing phenotypes including altered EEC morphology or reduced glucose sensitivity. We find that ER stress markers are evident in EECs within 2 hr after high fat feeding, concomitant with increased hormone transcription, whereas EEC silencing is not established until 6 hr. The continuous ER stress which is induced throughout the high fat feeding as early as 2 hr appears to be a key mechanism leading to the later EEC silencing response. The specific molecular components that trigger ER stress in EECs in this model are yet to be identified. We speculate the signal(s) that promote ER stress in EECs either derives from other nutrients in the intestinal lumen or neighboring cells. In addition to free fatty acid, the digestion of dietary fats in the intestinal lumen increases local concentrations of glycerol, mono-acylglycerol, di-acylglycerol, cholesterol, sphingolipid as well as the complex lipid derivatives from microbial metabolism. These complex lipid species may directly or indirectly act on EECs to induce EEC ER stress and thereby promote EEC silencing. EEC silencing might also be caused by signals from neighboring cells. Within the intestinal epithelium, EECs are surrounded by absorptive enterocytes and these two cell types exhibit complex bi-directional communication (Hein et al., 2013; Hsieh et al., 2009; Okawa et al., 2009; Shimotoyodome et al., 2009). Following ingestion of a complex high fat meal, free fatty acids and glycerol liberated from triglyceride digestion are taken up by enterocytes and assembled into lipid droplets and chylomicrons (Phan, 2001). The subsequent enlargement of enterocytes from lipid droplet accumulation may exert mechanical pressure on EECs that could force the morphological changes associated with EEC silencing. Besides mechanical pressure, lipoproteins and free fatty acids released from enterocytes may act on EECs basolaterally to alter their function (Chandra et al., 2013; Okawa et al., 2009; Shimotoyodome et al., 2009).
 
-## The effects of diet and microbes on EEC silencing
+### The effects of diet and microbes on EEC silencing
 
 In this study, we have shown that both diet and microbes play important roles in inducing EEC silencing. Dietary manipulations and changes in gut microbiota have been shown to affect EEC cell number and GI hormone gene expression in mice and zebrafish (Arora et al., 2018; Rawls et al., 2004; Richards et al., 2016; Troll et al., 2018). However, it remains unclear from previous studies how environmental factors like diet and microbiota affect EEC function. We found that while the presence of microbiota did not influence EEC nutrient sensing under basal conditions, microbiota played an essential role in mediating EEC silencing as germ free EECs were resistant to high fat diet induced silencing. We speculate that EEC silencing may temporarily attenuate the host’s ability to accurately sense ingested nutrients and thereby control energy homeostasis. Our finding that gut microbiota play an essential role in high fat diet induced EEC silencing may provide a new mechanistic inroad for understanding the effects of gut microbiota in diet induced metabolic diseases including obesity and insulin resistance (Bäckhed et al., 2007; Rabot et al., 2010).
 
@@ -127,7 +251,241 @@ Third, gut microbiota might affect EEC function by promoting lipid digestion and
 
 ## Materials and methods
 
-## Zebrafish strains and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(neurod1:EGFP)nl1</td>
+      <td>PMID: 19424431</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(−5kbneurod1:TagRFP)w69</td>
+      <td>PMID: 22738203</td>
+      <td></td>
+      <td>Referred as Tg(neurod:RFP) in the paper</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(sst2:RFP)gz19</td>
+      <td>PMID: 19281772</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. rerio)</td>
+      <td>Tg(gcga:EGFP)ia1</td>
+      <td>PMID: 25852199</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(−5kbneurod1:Gcamp6f)icm05</td>
+      <td>PMID: 27231612</td>
+      <td></td>
+      <td>Referred as Tg(neurod1:Gcamp6f) in the paper</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(−4.5kbfabp2:DsRed)pd1000</td>
+      <td>PMID: 21439961</td>
+      <td></td>
+      <td>Referred as Tg(fabp2:DsRed) in the paper</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(gata5:lifeAct-EGFP)pd1007</td>
+      <td>this study</td>
+      <td></td>
+      <td>Generated in this study, Used in Figures 4, 5, 6, 7, 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(ef1α:xbp1δ-gfp)mb10</td>
+      <td>PMID: 25892297</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(NFΚB:EGFP)nc1</td>
+      <td>PMID: 21439961</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(−5kbneurod1:lifeAct-EGFP)rdu70</td>
+      <td>this study</td>
+      <td></td>
+      <td>Referred as Tg(neurod1:lifAct-EGFP) in the paper, Generated in this study, Used in Figure 4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(−5kbneurod1:Gal4; cmlc2:EGFP)rdu71</td>
+      <td>this study</td>
+      <td></td>
+      <td>Referred as Tg(neurod1:Gal4) in the paper, Generated in this study, Used in Figure 5</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(UAS:Kaede)rk8</td>
+      <td>PMID: 17406330</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(ubb:seca5-tdTomato)xt24</td>
+      <td>PMID: 31391308</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(cd36-RFP)pd1203</td>
+      <td>this study</td>
+      <td></td>
+      <td>Generated in this study, Used in Figure 4—figure supplement 4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>Tg(tp1bglob:EGFP)um14</td>
+      <td>PMID: 26153247</td>
+      <td></td>
+      <td>Referred as Tg(tp1:EGFP) in the paper</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>TgBAC(cldn15la:EGFP)pd1034</td>
+      <td>PMID: 24504339</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. rerio)</td>
+      <td>myd88b1354</td>
+      <td>PMID: 30398151</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-PYY (Rabbit Polycolonal)</td>
+      <td>PMID: 28614796</td>
+      <td></td>
+      <td>Custom antibody generated in Liddlelaboratory, aa4-21 (mouse), IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CCK (Goat Polycolonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-21617, RRID:AB_2072464</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sglt1 (Rabbit Polycolonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab14686, RRID:AB_301411</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (Chicken Polycolonal)</td>
+      <td>Aves Lab</td>
+      <td>Cat# GFP-1010, RRID:AB_2307313</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DsRed (Rabbit Polycolonal)</td>
+      <td>TAKARA</td>
+      <td>Cat# 632496, RRID:AB_10013483</td>
+      <td>IHC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CM-H2DCFDA</td>
+      <td>Thermofisher</td>
+      <td>C6827</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ROS colorimetric assay kit</td>
+      <td>Sigma</td>
+      <td>MAK311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>Phloridzin</td>
+      <td>Sigma</td>
+      <td>P3449</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>Thapsigargin</td>
+      <td>Sigma</td>
+      <td>T9033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>Brefeldin A</td>
+      <td>Sigma</td>
+      <td>B6542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>Sodium tauroursodeoxycholic acid</td>
+      <td>Sigma</td>
+      <td>T0266</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>Orlistat</td>
+      <td>Sigma</td>
+      <td>O4139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>N-acetylcysteine</td>
+      <td>Invitrogen</td>
+      <td>C10491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compond, drug</td>
+      <td>N(ω)-nitro-L-arginine methyl ester</td>
+      <td>Sigma</td>
+      <td>N5751</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish strains and husbandry
 
 All zebrafish experiments conformed to the US Public Health Service Policy on Humane Care and Use of Laboratory Animals, using protocol number A115-16-05 approved by the Institutional Animal Care and Use Committee of Duke University. Conventionally-reared adult zebrafish were reared and maintained on a recirculating aquaculture system using established methods (Murdoch et al., 2019). For experiments involving conventionally-raised zebrafish larvae, adults were bred naturally in system water and fertilized eggs were transferred to 100 mm petri dishes containing ~25 mL of egg water at approximately 6 hr post-fertilization. The resulting larvae were raised under a 14 hr light/10 hr dark cycle in an air incubator at 28°C at a density of 2 larvae/mL water. To ensure consistent microbiota colonization, 10 mL filtered system water (5 μm filter, SLSV025LS, Millipore) was added into 3 dpf zebrafish larva that were raised in 25 mL egg water. All the experiments performed in this study ended at 6 dpf unless specifically indicated. The strains used in this study are listed in Key resources table. All lines were maintained on a mixed Ekkwill (EKW) background.
 
@@ -135,7 +493,7 @@ Gateway Tol2 cloning approach was used to generate neurod1:lifeAct-EGFP and neur
 
 The construct used to generate the TgBAC(gata5:lifeAct-EGFP) line was made by inserting lifeact-GFP at the gata5 ATG in the BAC clone DKEYP-73A2 using BAC recombineering as previously described (Liu et al., 2003). The BAC was then linearized using I-SceI and injected to generate transgenic lines. Allele TgBAC(gata5:lifeAct-EGFP)pd1007 was selected for further analysis. The construct used to generate the TgBAC(cd36-RFP) lines was made by inserting link-RFP before the cd36 stop codon in the BAC clone DKEY-27K7 using the same BAC recombineering as previously described (Navis et al., 2013). Then, Tol2 sites were recombined into the BAC and the resulting construct was injected with transposase mRNA to generate the transgenic lines. Allele TgBAC(cd36-RFP)pd1203 was selected for further analysis.
 
-## Gnotobiotic zebrafish husbandry
+### Gnotobiotic zebrafish husbandry
 
 For experiments involving gnotobiotic zebrafish, we used our established methods to generate germ-free zebrafish using natural breeding (Pham et al., 2008) with the following exception: Gnotobiotic Zebrafish Medium (GZM) with antibiotics (AB-GZM) was supplemented with 50 μg/ml gentamycin (Sigma, G1264). Germ free zebrafish eggs were maintained in cell culture flasks with GZM at a density of 1 larvae/ml. From 3 dpf to 6 dpf, 60% daily media change and ZM000 (ZM Ltd.) feeding were performed as described (Pham et al., 2008).
 
@@ -143,25 +501,25 @@ To generate conventionalized zebrafish, 15 mL filtered system water (5 μm filte
 
 To generate monoassociated zebrafish, a single bacterial strain was inoculated into each flask containing 3dpf germ-free zebrafish. The respective bacterial strain was streaked on a TSA plate and cultured at 28°C overnight under aerobic conditions. A single colony was picked and cultured in 5 mL Tryptic soy broth media shaking at 30°C for 16 hr under aerobic conditions. 250 µL bacterial culture was pelleted and washed three times with sterile GZM and inoculated into flasks containing germ-free zebrafish. OD600 and CFU measurements were performed in each monoassociated culture. The final innoculation density in GZM was 108–109 CFU/mL. The colonization efficiency was determined at 6 dpf by CFU analysis from dissected zebrafish intestines as described above.
 
-## EEC response assay and image analysis
+### EEC response assay and image analysis
 
 This assay was performed in Tg(neurod1:Gcamp6f) 6 dpf zebrafish larvae. Unanesthetized zebrafish larvae were gently moved into 35 mm petri dishes that contained 500 µL 3% methylcellulose. Excess water was removed with a 200 µL pipettor. Zebrafish larvae were gently positioned horizontal to the bottom of the petri dish right side up carefully avoiding touching the abdominal region and moved onto an upright fluorescence microscope (Leica M205 FA microscope equipped with a Leica DFC 365FX camera). The zebrafish larvae were allowed to recover in that position for 2 min. One hundred µL of test agent was pipetted directly in front of the mouth region without making direct contact with the animal. Images were recorded every 10 s. For fatty acid stimulation, 30 frames (5mins) were recorded. For glucose stimulation, 60 frames (10mins) were recorded. The Gcamp6f fluorescence was recorded with the EGFP filter. The following stimulants were used in this study: palmitic acid/linoleate/dodecanoate (1.6 mM), butyrate (2 mM), glucose (500 mM), fructose (500 mM), galactose (500 mM), cysteine (10 mM). Since palmitic acid/linoleate/dodecanoate was not water soluble by itself, 1.6% BSA was used as a carrier to facilitate solubility. Solutions were filtered with 0.22 µm filter.
 
 Image processing and analysis was performed using FIJI software. The time-lapse fluorescent images of zebrafish EEC response to nutrient stimulation were first aligned to correct for experimental drift using the plugin ‘align slices in stack.’ Normalized correlation coefficient matching method and bilinear interpolation method for subpixel translation was used for aligning slices (Tseng et al., 2012). The plugin ‘rolling ball background subtraction’ with the rolling ball radius = 10 pixels was used to remove the large spatial variation of background intensities. The Gcamp6f fluorescence intensity in the proximal intestinal region was then calculated for each time point. The ratio of maximum fluorescence (Fmax) and the initial fluorescence (F0) was used to measure EEC calcium responsiveness.
 
-## High fat feeding
+### High fat feeding
 
 The HF feeding regimen was performed in 6 dpf zebrafish larvae using methods previously described (Semova et al., 2012). We used an emulsion of chicken egg yolk as our high fat feeding paradigm because it has been used extensively as a high fat diet in zebrafish larvae and adults for metabolic and obesity research (Carten et al., 2011; Maddison and Chen, 2012; Minchin et al., 2018; Tingaud-Sequeira et al., 2011; Zang et al., 2018; Zhou et al., 2015). We refer to this as a high fat meal because lipids comprise greater than 60% dry weight of chicken egg yolk (Wang et al., 2000). To perform HF feeding, ~25 zebrafish larvae were transferred into six well plates and 5 mL egg water (for gnotobiotic studies, GZM was used). Replicates were performed in three wells for each treatment group in each experiment. Chicken eggs were obtained from a local grocery store from which 1 mL chicken egg yolk was transferred into a 50 mL tube containing 15 mL egg water (for gnotobiotic studies, sterile GZM was used). Solutions were sonicated (Branson Sonifier, output control 5, Duty cycle 50%) to form a 6.25% egg yolk emulsion. 4 mL water from each well was removed and replenished with 4 mL egg yolk. 4 mL egg water was used to replenish the control group. The final concentration of egg yolk for HF feeding is 5%. For recovery HF feeding recovery experiments, following 6 or 8 hr of HF feeding, the zebrafish larvae were transferred to a new 6-well plate with clean egg water. Zebrafish larvae were incubated at 28°C for the indicated time. The HF meal was administered between 10am - 12pm to minimize circadian influences. To perform HF feeding in adult zebrafish, 5% egg yolk that is diluted in system water was made similarly as described above. Adult zebrafish raised in the same tank were transferred to 500 mL beakers. For the HF treated groups, the water is removed and 100 mL 5% egg yolk was immediately added to the beaker. For control groups, system water was added to the beaker as a vehicle control.
 
-## Chemical treatment
+### Chemical treatment
 
 To block Sglt1, phloridzin (0.15 mM, Sigma P3449) was used to pretreat zebrafish for 3 hr prior to glucose stimulation, and 0.15 mM phloridzin was co-administered with the glucose stimulant solution. To induce ER stress, thapsigargin (0.75 µM, Sigma T9033) and brefeldin A (9 µM, Sigma B6542) were added to egg water and zebrafish were treated for 10 hr prior to performing the EEC activity assay. To block HF meal induced EEC silencing, sodium tauroursodeoxycholic acid (TUDCA; 0.5 mM, Sigma T0266) or orlistat (0.1 mM or 0.5mM, Sigma O4139) were added to the HF meal solution and zebrafish were treated for the indicated time. To block ROS signaling, N-acetylcysteine (NAC, 1 mM, Invitrogen, C10491) or N(ω)-nitro-L-arginine methyl ester (L-NAME, 1 mM, Sigma N5751) were added to the HF meal solution and zebrafish were treated for the indicated time.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 The quantitative real-time PCR was performed as described previously (Murdoch et al., 2019). In brief, 20 zebrafish larvae digestive tracts were dissected and pooled into 1 mL TRIzol (ThermoFisher, 15596026). mRNA was then isolated with isopropanol precipitation and washed with 70% EtOH. 500 ng mRNA was used for cDNA synthesis using the iScript kit (Bio-Rad, 1708891). Quantitative PCR was performed in technical triplicate 25 μl reactions using 2X SYBR Green SuperMix (PerfeCTa, Hi Rox, Quanta Biosciences, 95055) run on an ABI Step One Plus qPCR instrument using gene specific primers (Supplementary file 1). Data were analyzed with the ΔΔCt method. 18S was used as a housekeeping gene to normalize gene expression.
 
-## 16S rRNA gene sequencing
+### 16S rRNA gene sequencing
 
 Wild-type adult EKW zebrafish were bred and clutches of eggs from three distinct breeding pairs were collected, pooled, derived into GF conditions using our standard protocol (Pham et al., 2008), then split into three replicate flasks with 30 ml GZM as described above. At 3 dpf 12.5 ml 5 μm-filtered system water was inoculated into each flask per our standard conventionalization method. ZM000 feeding and water changes were performed daily from 4 dpf to 5 dpf. At 6 dpf, zebrafish larvae from each flask were divided evenly into a control and a high fat fed group. High fat feeding was performed as described above for 6 hr. Then 1 mL water samples were collected from each flask and snap frozen on dry ice/EtOH bath. For intestinal samples, individual digestive tracts from 6 dpf zebrafish were dissected and flash frozen (3–4 larvae/flask, three flasks/condition). All samples were stored in −80°C for subsequent DNA extraction.
 
@@ -169,7 +527,7 @@ The Duke Microbiome Shared Resource extracted bacterial DNA from gut and water s
 
 Subsequent data analysis was conducted in QIIME2 (Caporaso et al., 2010; Bolyen et al., 2019). Paired reads were demultiplexed with qiime demux emp-paired, and denoised with qiime dada2 denoise-paired (Callahan et al., 2016). Taxonomy was assigned with qiime feature-classifier classify-sklearn (Pedregosa et al., 2011), using a naive Bayesian classifier, trained against the 99% clustered 16S reference sequence set of SILVA, v. 1.19 (Quast et al., 2013). A basic statistical diversity analysis was performed, using qiime diversity core-metrics-phylogenetic, including alpha- and beta-diversity, as well as relative taxa abundances in sample groups. The determined relative taxa abundances were further analyzed with LEfSe (Linear discriminant analysis effect size) (Segata et al., 2011), to identify differential biomarkers in sample groups.
 
-## Immunofluorescence staining and imaging
+### Immunofluorescence staining and imaging
 
 Whole mount immunofluorescence staining was performed as previously described (Ye et al., 2015). In brief, ice cold 2.5% formalin was used to fix zebrafish larvae overnight at 4°C. The samples were then washed with PT solution (PBS+0.75%Triton-100). The skin and remaining yolk was then removed using forceps under a dissecting microscope. The deyolked samples were then permeabilized with methanol for more than 2 hr at −20°C. The samples were then blocked with 4% BSA at room temperature for more than 1 hr. The primary antibody was diluted in PT solution and incubated at 4°C for more than 24 hr. Following primary antibody incubation, the samples were washed with PT solution and incubated overnight with secondary antibody with Hoechst 33342 for DNA staining. The imaging process was performed with a Zeiss 780 inverted confocal and Zeiss 710 inverted confocal microscopes with the 40× oil lenses. The following primary antibodies were used in this study: rabbit anti PYY (custom, aa4-21, 1:100 dilution) (Chandra et al., 2017), goat anti-CCK (Santa Cruz SC-21617, 1:100 dilution), rabbit anti-Sglt1 (Abcam ab14686, 1:100 dilution). The secondary antibodies used in this study were from Alexa Fluor Invitrogen. All the secondary antibodies were used at a dilution of 1:250.
 
@@ -181,11 +539,11 @@ To perform wholemount adult zebrafish intestine imaging in Tg(neurod1:RFP), foll
 
 To quantify EEC cell volume, the entire pixel volume of neurod1:RFP channel in a confocal z-stack was quantified using voxel counter plugin in FIJI software. The entire EEC pixel volume was then divided by EEC number to get the average EEC cell volume in each zebrafish.
 
-## In vivo and in vitro ROS measurement
+### In vivo and in vitro ROS measurement
 
 To measure intestinal ROS production in zebrafish in vivo, zebrafish were incubated with CM-H2DCFDA (0.5 µg/mL, Thermofisher C6827, diluted in gnotobiotic medium) for 1 hr as indicated by previous studies (Wu et al., 2011). The zebrafish were then washed with GZM and imaged immediately using an stereofluorescence microcope (Leica M205 FA microscope equipped with a Leica DFC 365FX camera). The mean fluoresence intensity in the proximal intestinal region was quantified using FIJI software. To measure bacterial ROS production in vitro, we used a colorimetric assay kit (Sigma MAK311) as described in previous studies (Ajiboye et al., 2018). Briefly, 1010 log-phase bacteria were harvested and washed with sterile water. The suspended bacteria were then lysed through three freeze/thaw cycles on dry ice. The remaining debris was pelleted and the supernatant was used for ROS measurement. To measure the effect of high fat condition on bacterial ROS production, 1010 log-phase bacteria were added to 5 mL 5% chicken egg yolk (diluted in GZM) and cutured at 30°C for 6 hr. ROS measurement was then performed similarly.
 
-## Statistical analyses
+### Statistical analyses
 
 The appropriate sample size for each experiment was suggested by preliminary experiments evaluating variance and effects. Using significance level of 0.05 and power of 80%, a biological replicate sample number 10 was suggested for EEC calcium response analysis and a biological replicate sample number 13 was suggested for EEC morphology analysis. For each experiment, wildtype or indicated transgenic zebrafish embryos were randomly allocated to test groups prior to treatment. In some EEC calcium response experiments, less than 10 biological replicate samples were used due to technical limitations associated with live sample imaging. In EEC morphology analysis, each experiment contained 8–15 biological replicates or individual fish samples. Individual data points, mean and standard deviation are plotted in each figure.
 

@@ -57,7 +57,7 @@ We developed a more translational mouse model that resembles the typical pattern
 
 ## Results
 
-## Impact of PME on pregnancy and litter characteristics
+### Impact of PME on pregnancy and litter characteristics
 
 An overview of model development and workflow representing the total animals used for these studies is found in Figure 1. Table 1 summarizes pregnancy and litter characteristics. Opioid treatment did not reduce pregnancy rates (chi square test: χ2(1, n=95)=0.904, p=0.34) or instances of obstructed labor (chi square test: χ2(1, n=70)=2.14, p=0.14). Litter sizes at birth (unpaired t test: t61 = 1.36, p=0.18) and total neonatal deaths (chi square test: χ2(1, n=406)=0.201, p=0.65) were not affected by opioid treatment. There was a trend for fewer PME males surviving to P7 (chi square test: χ2(1, n=336)=2.71, p=0.10). However, the proportion of sexes at birth between treatment groups was not significantly different (chi square test: χ2(1, n=284)=0.010, p=0.92) suggesting the reduction of male offspring at P7 may be attributed to the greater postnatal deaths in males relative to females in PME litters (chi square test: χ2(1, n=37)=4.79, p=0.03).
 
@@ -65,33 +65,128 @@ An overview of model development and workflow representing the total animals use
 
 **Figure 1.:** (a) Timeline briefly describing the generation of mice with prenatal methadone exposure (PME). Approximately 15 days prior to mating (pregestational day 14), female mice begin treatment with oxycodone to model recreational opioid use. Following nine days of oxycodone injections, mice began receiving methadone injections to simulate treatment of opioid use disorder (OUD). Following 5 days of methadone administration, the females were mated (gestational day 0) and treatment continued throughout gestation passively exposing the developing embryo and fetus to methadone. Following birth, dam methadone treatment continued which provided minimal, but measurable methadone exposure to offspring (see Figure 2. and Supplementary file 1). Offspring were weaned at approximately postnatal day 28. All doses were given subcutaneously twice daily. Control animals underwent an identical timeline with the exception of receiving saline injections. (b) Flow chart reviewing studies completed in the present study using offspring generated from the timeline in (a). Female mice were randomly assigned to either opioid (oxycodone → methadone) or saline treatment. Of the 45 opioid treated mice which became pregnant, six were removed from the study due to obstructed labor (dystocia), four litters were too small (<3 pups), and nine were chosen at random to assess methadone tissue and plasma concentrations. Of the 28 pregnant control mice, one experienced dystocia and two litters were too small. The offspring from the remaining litters (25–26 per exposure) were pseudo-randomly allocated to the behavioral and biological studies indicated in the black boxes (≥4 litters per exposure with equal representation of both sexes were used for each experiment). See Table 1 for detailed description of litter characteristics. PG, pregestation; G, gestation; P, postnatal, OUD, opioid use disorder; USVs, ultrasonic vocalizations; PPI, prepulse inhibition.
 
-## Methadone and EDDP concentrations in dams and offspring
+**Table 1.**
+ Pregnancy and litter characteristics.All data were analyzed using Chi-Square tests except litter size which was analyzed using an unpaired, independent t test (value represents mean ± SEM). Sex was not determined in earlier cohorts of animals until nipple marks began to appear (~P7). However, given the potential sex differences in survival, for later cohorts we began determining sex at P0 and P7 which led to a lower total sample size of litters at the P0 date of sex determination. Postnatal deaths occur within approximately 72 hr after birth. As not all litters survived to ~P7 when sex was determined in offspring, the total sample size of litters from which postnatal deaths were examined is larger than the total sample size of litters for P7 sexes. PME, Prenatal methadone exposure; PSE, Prenatal saline exposure, P0, P7, Postnatal day 0,7. Table 1—source data 1.Numerical data to support graphs in Table 1 describing pregnancy and litter characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PME</th>
+      <th>PSE</th>
+      <th>p-value​</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total pregnancies (%)</td>
+      <td>45/61 mated (73.8%)</td>
+      <td>28/34 mated (82.4%)</td>
+      <td>p=0.34</td>
+    </tr>
+    <tr>
+      <td>Obstructed labor (%)</td>
+      <td>6/42 pregnancies (14.3%)</td>
+      <td>1/27 pregnancies (3.6%)</td>
+      <td>p=0.14</td>
+    </tr>
+    <tr>
+      <td>Litter size​</td>
+      <td>7.50 ± 0.34 (n = 36 litters)</td>
+      <td>6.85 ± 0.31 (n = 27 litters)</td>
+      <td>p=0.18</td>
+    </tr>
+    <tr>
+      <td>P0 Male:Female Ratio (% Male) ​</td>
+      <td>96M:66F from 21 litters (59.3%)</td>
+      <td>73M:49F from 18 litters (59.8%)</td>
+      <td>p=0.58</td>
+    </tr>
+    <tr>
+      <td>P7 Male:Female Ratio (% Male) ​​</td>
+      <td>90M:90F from 26 litters (50.0%)</td>
+      <td>92M:64F from 25 litters (59.0%)</td>
+      <td>p=0.10</td>
+    </tr>
+    <tr>
+      <td>Postnatal deaths (%)</td>
+      <td>50/248 from 33 litters (20.2%)</td>
+      <td>29/158 from 27 litters (18.4%)</td>
+      <td>p=0.65</td>
+    </tr>
+    <tr>
+      <td>Male:Female Postnatal Death Ratio (% Male Deaths)</td>
+      <td>18M:5F from 21 litters (78.3%)</td>
+      <td>6M:8F from 18 litters (42.9%)</td>
+      <td>p=0.03</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methadone and EDDP concentrations in dams and offspring
 
 Methadone and 2-ethylidene-1,5-dimethyl-3,3-diphenylpyrrolidine (EDDP, main metabolite of methadone) concentrations in the placenta, plasma, and brain for dams and offspring on G18, P1, and P7 are presented in Supplementary file 1 and Figure 2a. Maternal brain and plasma levels were highest at G18 (248.9 ± 54.1 ng/g and 63.5 ± 11.3 ng/mL, respectively) and lower slightly after giving birth, remaining relatively stable at P1 and P7. Methadone accumulated in the brain relative to the plasma for dams at all timepoints (Figure 2a). The placenta significantly retained methadone (3862.1 ± 258.4 ng/g) and EDDP (1124.0 ± 84.4 ng/g; Figure 2a,b). The fetal brain methadone concentration was 2100.8 ± 237.6 ng/g which was substantially higher than the maternal brain on G18 (Figure 2a). Offspring brain levels dropped precipitously to 7.9 ± 0.6 ng/g and 3.1 ± 0.3 ng/g on P1 and P7, respectively. Although we were not able to collect a sufficient plasma volume on G18, minimal methadone plasma levels in offspring were quantified postnatally. Placental levels were predictive of fetal brain methadone levels at G18 (R2 = 0.39, p<0. 0078; Figure 2c). Offspring plasma methadone was predictive of offspring brain methadone at P1 (R2 = 0.45, p<0.0084; Figure 2d), but not on P7 (R2 = 0.008, p=0.74; Figure 2e).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig2-v2.jpg)
 
-**Figure 2.:** (a) Methadone and (b) EDDP (2-ethylidene-1,5-dimethyl-3,3-diphenylpyrrolidine, main metabolite of methadone) concentrations in the plasma, brain, and placenta of dams and offspring on G18 (approximately 1 day before birth), P1 (approximately 1 day after birth), and P7. Methadone highly accumulated in the fetal compartment relative to dam concentrations, but methadone concentrations dropped precipitously following birth. EDDP accumulated in the placenta. Data points indicate mean ± SEM. (c) Placental methadone concentrations predicted fetal brain concentrations on G18 (R2 = 0.39, p=0.0078). (d,e) Offspring plasma methadone concentrations predicted offspring brain methadone on P1 (R2 = 0.45, p=0.0084), but not on P7 (R2 = 0.008, p=0.736). All tissue and blood samples were collected 2.5 hr following the morning administration of methadone. (n = 3 dams + their respective litters per timepoint; n = 17–20 offspring samples at G18, n = 15 offspring at P1, n = 17–18 offspring at P7). Data are collapsed across offspring sex. The limit of quantification for methadone and EDDP detection was 0.1 ng/mL and 0.05 ng/mL in the plasma, respectively, and 0.08 ng/sample and 0.04 ng/sample of placenta and brain for both methadone and EDDP.  Figure 2—source data 1.Figure 2 describing placental, plasma, and brain methadone and metabolite levels in dams and offspring.
+**Figure 2.:** (a) Methadone and (b) EDDP (2-ethylidene-1,5-dimethyl-3,3-diphenylpyrrolidine, main metabolite of methadone) concentrations in the plasma, brain, and placenta of dams and offspring on G18 (approximately 1 day before birth), P1 (approximately 1 day after birth), and P7. Methadone highly accumulated in the fetal compartment relative to dam concentrations, but methadone concentrations dropped precipitously following birth. EDDP accumulated in the placenta. Data points indicate mean ± SEM. (c) Placental methadone concentrations predicted fetal brain concentrations on G18 (R2 = 0.39, p=0.0078). (d,e) Offspring plasma methadone concentrations predicted offspring brain methadone on P1 (R2 = 0.45, p=0.0084), but not on P7 (R2 = 0.008, p=0.736). All tissue and blood samples were collected 2.5 hr following the morning administration of methadone. (n = 3 dams + their respective litters per timepoint; n = 17–20 offspring samples at G18, n = 15 offspring at P1, n = 17–18 offspring at P7). Data are collapsed across offspring sex. The limit of quantification for methadone and EDDP detection was 0.1 ng/mL and 0.05 ng/mL in the plasma, respectively, and 0.08 ng/sample and 0.04 ng/sample of placenta and brain for both methadone and EDDP.
 
-## Maternal characteristics in opioid-treated dams
+### Maternal characteristics in opioid-treated dams
 
 The opioid treatment strategy did not significantly impact maternal weights during the course of the study (rmANOVA: Treatment, F(1,42)=0.00117, p=0.97; Time, F(2.92,122.4) = 266.1, p<0.0001; Interaction, F(22,924)=0.510, p=0.97; Figure 3a). Measures of food consumption revealed a significant effect of opioid treatment (rmANOVA: Treatment, F(1,33)=5.09, p=0.03; Time, F(7,231)=413, p<0.0001; Interaction, F(7,231)=2.48, p=0.02; Figure 3b) with an increased food consumption during the postnatal period in opioid-treated dams reaching significance on postnatal week 2 (Sidak’s post-hoc test, p=0.004). Maternal care-related behavior on P3 was assessed to examine the potential impact of methadone on offspring care. There were no apparent differences in nest quality (Mann-Whitney test: U = 53, p=0.15; Figure 3c) or average latency to retrieve pups removed from the nest (Mann-Whitney test: U = 77, p=0.97; Figure 3d). No placentas remained in the cages 24 hr after birth in either group indicating normal placentophagy. Oxycodone treatment prior to gestation (PG14-PG6; see Figure 1a) induced opioid dependency in dams as demonstrated by the significantly increased withdrawal behaviors following naloxone treatment (Figure 3e). Offspring from mothers that were assessed for oxycodone dependency were not used in subsequent analyses to avoid any impact that pregestational opioid withdrawal could have on offspring outcomes. Methadone maintained opioid dependency as evidenced by the significantly increased naloxone-precipitated withdrawal behaviors observed in opioid-treated females at post-weaning (ANOVA: Treatment, F(1,26)=38.1, p<0.0001; Stage, F(1,26)=0.361, p=0.55; Interaction, F(1,26)=0.337, p=0.56; Figure 3e).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig3-v2.jpg)
 
-**Figure 3.:** (a) Measures of maternal weights over the course of the study revealed no significant effects of opioid treatment (n = 23 opioid, 21 saline mice); however, (b) Maternal food consumption was not significantly affected during pregestation and gestation but was significantly increased in opioid-treated dams following birth (rmANOVA: Interaction, p=0.02; Sidak’s post hoc: P week 2, p=0.004, n = 19 opioid, 16 saline mice). (c,d) Opioid-treated dams demonstrated no differences in (c) nest quality or (d) latency to retrieve pups removed from the nest on P3 suggesting maternal care behavior was grossly intact (n = 12 opioid, 13 saline mice). (e) The nine days of pregestational oxycodone treatment induced maternal opioid dependency and the oxycodone treatment plus the transition to methadone throughout gestation and the pre-weaning period was sufficient to maintain opioid dependence as determined by measures of naloxone-precipitated withdrawal behaviors (ANOVA: Treatment, p<0.0001, n = 7–8 opioid, 7–8 saline mice). *p<0.05. (a,b) Data points indicate mean ± SEM. (c–e) box plots indicate 25th to 75th percentiles with whisker characterizing the minimum and maximum value.  Figure 3—source data 1.Figure 3 describing maternal characteristics and care behavior.
+**Figure 3.:** (a) Measures of maternal weights over the course of the study revealed no significant effects of opioid treatment (n = 23 opioid, 21 saline mice); however, (b) Maternal food consumption was not significantly affected during pregestation and gestation but was significantly increased in opioid-treated dams following birth (rmANOVA: Interaction, p=0.02; Sidak’s post hoc: P week 2, p=0.004, n = 19 opioid, 16 saline mice). (c,d) Opioid-treated dams demonstrated no differences in (c) nest quality or (d) latency to retrieve pups removed from the nest on P3 suggesting maternal care behavior was grossly intact (n = 12 opioid, 13 saline mice). (e) The nine days of pregestational oxycodone treatment induced maternal opioid dependency and the oxycodone treatment plus the transition to methadone throughout gestation and the pre-weaning period was sufficient to maintain opioid dependence as determined by measures of naloxone-precipitated withdrawal behaviors (ANOVA: Treatment, p<0.0001, n = 7–8 opioid, 7–8 saline mice). *p<0.05. (a,b) Data points indicate mean ± SEM. (c–e) box plots indicate 25th to 75th percentiles with whisker characterizing the minimum and maximum value.
 
-## Physical development of offspring
+### Physical development of offspring
 
 The clinical evidence for the effect of prenatal opioid exposure on fetal growth has revealed mixed findings (Yazdy et al., 2015); therefore, we first examined the impact of PME on offspring physical development. As there were no significant effects of sex, the data on weight and lengths during the pre-weaning period were pooled. PME significantly reduced weights and reduced weight gain during the pre-weaning period (rmANOVA: Exposure, F(1,111)=3.96, p=0.049; Time, F(1.344,149.2) = 3177, p<0.0001; Interaction, F(6,666)=2.89, p=0.0087; Figure 4a). The reduced body weight in PME offspring persisted into adolescence as weights remained consistently lower across sexes at P35 and P49 (rmANOVA: Exposure, F(1,50)=7.52, p=0.0085; Sex, F(1,50)=131, p<0.0001, Time, F(1,50)=673, p<0.0001; Time x Sex, F(1,50)=62.3, p<0.0001; Time x Exposure, F(1,50)=1.60, p=0.21; Exposure x Sex, F(1,50)=0.00956, p=0.92; Time x Exposure x Sex, F(1,50)=0.20, p=0.66; Figure 4a). Similarly, body length was reduced by PME (rmANOVA: Exposure, F(1,111)=12.24, p=0.0007; Time, F(2.676,297.0) = 4719, p<0.0001; Interaction, F(6,666)=0.987, p=0.433; Figure 4b).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig4-v2.jpg)
+
+**Figure 4.:** (a) PME reduced offspring weight during the preweaning period (rmANOVA: Exposure, p=0.049; Interaction, p=0.0087, n = 57 PME (25M:32F), 56 PSE (29M:27F)) and this effect on weight persisted into adolescence in both sexes (rmANOVA: Exposure, p=0.0085, n = 30 PME (16M:14F), 24 PSE (15M:9F)). (b) PME reduced offspring body length during the preweaning period (rmANOVA: Exposure, p=0.0007, n = 57 PME (25M:32F), 56 PSE (29M:27F)). *main effect of exposure p<0.05. From P0-P21, Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Data points indicate mean ± SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Femur length in P7 offspring did not differ between exposure groups. Right representative coronal CT image of P7 femur in PME and PSE offspring. (b) Femur whole bone volume was non-significantly reduced in P7 offspring with PME. Right representative CT image of P7 offspring demonstrating transaxial section of femur midshaft in PME and PSE offspring (unpaired t test: p=0.072, n = 13 PME (6M:7F), 12 PSE (6M:6F) at P7). At P35, structural bone measures including (c) distal metaphysis bone volume, (d) trabecular bone volume, (e) cortical bone area, and (f) cortical thickness did not differ between exposure groups. (n = 10 PME (5M:5F), 10 PSE (5M:5F) at P35). For (a,b) data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. For (c–f), Data were not collapsed on sex as analyses revealed some main effects of sex. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Mice were examined daily to examine progress of craniofacial milestone measures. PME did not delay the day when both eyes opened, both ears moved to their final erect position and external auditory canals were patent, or when the bottom incisor teeth erupted (n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
 
 As chronic opioid use is associated with bone pathology (Mattia et al., 2012), we collected femurs from P7 and P35 offspring to assess bone structure and density. Although femur length was not impacted by PME (unpaired t test: t23 = 1.126, p=0.27; Figure 4—figure supplement 1a), whole bone volume tended to be lower in P7 PME offspring (unpaired t test: t23 = 1.89, p=0.072; Figure 4—figure supplement 1b). By P35, structural bone measures were similar between exposure groups including distal femur metaphysis bone volume (ANOVA: Exposure, F(1,16)=1.94, p=0.18; Sex, F(1,16)=13.4, p=0.0021; Interaction, F(1,16)=2.17, p=0.16; Figure 4—figure supplement 1c), trabecular bone volume (ANOVA: Exposure, F(1,16)=1.30, p=0.27; Sex, F(1,16)=25.7, p=0.0001; Interaction, F(1,16)=0.126, p=0.73; Figure 4—figure supplement 1d), cortical bone area (ANOVA: Exposure, F(1,16)=0.000, p=0.99; Sex, F(1,16)=13.4, p=0.0021; Interaction, F(1,16)=2.04, p=0.17; Figure 4—figure supplement 1e), and cortical thickness (ANOVA: Exposure, F(1,16)=0.0435, p=0.84; Sex, F(1,16)=19.0, p=0.0005; Interaction, F(1,16)=0.790, p=0.39; Figure 4—figure supplement 1f).
 
 A recent report suggested opioid-exposed infants have a higher prevalence of orofacial clefting which may reflect an effect of prenatal drug exposure on craniofacial development (Mullens et al., 2019). However, we did not observe any effect on the day both eyes opened (unpaired t test: t49 = 1.67, p=0.10), both ears moved to their final erect position and external auditory canals were patent (unpaired t test: t49 = 0.910, p=0.37), or when bottom incisor teeth erupted (unpaired t test: t49 = 1.05, p=0.30; Figure 4—figure supplement 2) indicating measures of mouse postnatal craniofacial development progress normally in our PME model.
 
-## Behavioral development in offspring
+### Behavioral development in offspring
 
 As methadone levels rapidly dropped from G18 to P1 in offspring, we sought to determine if PME offspring demonstrated behaviors consistent with NOWS such as hyperthermia or myoclonic jerks (twitching or jerking of the limbs or whole-body) which are indicators of NOWS in humans (Kocherlakota, 2014). PME offspring displayed a relative hyperthermia at baseline that was maintained after two minutes of isolation (rmANOVA: Exposure, F(1,48)=34.1, p<0.0001; Time, F(1,48)=577, p<0.0001; Interaction, F(1,48)=0.127, p=0.723; Figure 5a). A higher number of twitches/jerks were observed in P1 PME offspring (unpaired t test: t49 = 2.04, p=0.047; Figure 5b) reminiscent of the myoclonic jerks which are common among human neonates experiencing NOWS from methadone (Kocherlakota, 2014). In association with a rapid drop in brain methadone levels from G18 to P1, the relative hyperthermia and increased twitches/jerks suggests PME offspring may experience opioid withdrawal at P1.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-v2.jpg)
+
+**Figure 5.:** (a) Offspring showed significantly higher surface body temperature when removed from the nest (baseline) and continued to maintain a higher surface body temperature following two minutes of isolation at P1 (rmANOVA: Exposure, p<0.0001, n = 25 (7M:18F) PME, 25 PSE (15M:10F) mice). (b) PME offspring show a greater number of twitches/jerks at P1 similar to the myoclonic jerks reportedly observed in human neonates experiencing opioid withdrawal (unpaired t test: p=0.047, n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). (c) Offspring were repeatedly tested in a modified open field during the first three weeks of life to examine the development of locomotor activity and ultrasonic vocalization (USV) production. (c) PME altered the development of locomotor activity (rmANOVA: Exposure, p=0.027; Interaction, p<0.0001) with PME offspring showing reduced activity at P1 but significantly greater activity at P7 and P21 (Sidak’s post hoc test: p=0.048, p=0.037, p=0.009, respectively, n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). (d) Subsequent manual scoring of videos on P21 revealed significantly greater number of vertical jumps during the 5-min session in PME mice further supporting a hyperactive phenotype at P21 (Mann-Whitney test: p<0.0001, n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). (e) PME offspring showed differences in the production of separation-induced USV calls (rmANOVA: Interaction, p=0.032) with less total calls emitted on P1 and significantly more calls emitted on P7 (Sidak’s post hoc test: p=0.079, p=0.015, n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). (f). Acquisition of the surface righting (unpaired t test: p<0.0001), forelimb grasp, and cliff aversion (Mann-Whitney test: p=0.0029 and p=0.0026, respectively) were significantly delayed in PME offspring (n = 26 (7M:19F) PME, 24 PSE (14M:10F) mice). *p<0.05, # p=0.079. Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex with the exception of USV results (See Figure 5—figure supplement 1 for results separated by sex). Data points indicate mean ± SEM. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) While the nearly all P1 offspring fell over by the end of the 5-min testing session (chi square test: p=0.41) (b) 14/26 PME compared to 7/25 PSE offspring had fallen over immediately upon placement into the arena (chi square test: p=0.061). (c) Similarly, PME offspring also display a nonsignificant reduction in the latency to fall over during the 5-min session (Mann-Whitney test: p=0.136 n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Bars indicate proportion of offspring that rolled over or remained upright. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (a) PME offspring spent significant more time near the arena walls at P7 (rmANOVA: Exposure, p=0.0001; Interaction, p<0.0001; Sidak’s post hoc test: p=0.0004), however no effect was observed on P14 or P21. As PSE animals were significantly less active at P7, it is likely that PSE animals did not leave the center of the arena where offspring were placed at the beginning of each trial. (b,c,d) Grooming and rearing were further assessed in P21 juvenile mice. (b) The total percentage of time grooming was significant reduced in PME mice (Mann Whitney test: p=0.0035). (c) PME offspring demonstrated significantly less unsupported rearing instances on P21 (unpaired t test: p=0.017), (d) but now differences in rearing supported by the arena walls was observed between exposure groups. (n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Data points indicate mean ± SEM and box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** While there was a significant time by exposure interaction on the development of USVs (rmANOVA: p=0.032), sex effects were present on the production of USVs (rmANOVA: p=0.045). Although female PME did not vocalize more than male PME offspring on P7 (Sidak’s post hoc test: p=0.60), female PME did emit more USVs than both male and female PSE offspring on P7 (Sidak’s post hoc test: p=0.0045 and p=0.026, respectively, n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). *p<0.05 for female PME vs female PSE; and p<0.05 for female PME vs male PSE offspring. Data points indicate mean ± SEM.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (a) A moderate correlation exists between total locomotor activity and total USV calls at P7 suggesting a relationship is present between the hyperactivity and increased vocalizations among PME animals. (b) DeepSqueak automated classification of USV call types on P7 revealed an increase in production of all eleven call types in PME offspring but the level of significance was reached for complex, flat, step down, and upward ramp calls (unpaired t tests: p=0.014, p=0.0045, p=0.0086, and p=0.041, respectively). (c) Syntax analysis was also completed with DeepSqueak to determine the probably of call type transitions on P7 in both exposure groups. The probability of call transitions for PME and PSE offspring exhibit qualitative differences in syntax patterns suggesting alterations in maternal-pup communication may be present in offspring with PME. Arrows represent the direction of call transition, and line thickness and color represent the transition probability (n = 26 (7M:19F) PME, 25 PSE (15M:10F) mice). *p<0.05. Data were collapsed on sex for clarity of focusing on prenatal exposure. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** PME did not disrupt the (a) acoustic startle response to any startle intensity examined or (b) alter prepulse inhibition (PPI) at any prepulse intensity studied in P28-P29 offspring (n = 19 (10M:9F) PME, 19 PSE (10M:9F) mice). Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Data points indicate mean ± SEM.
 
 Preclinical studies have indicated locomotor activity may be different in prenatal opioid-exposed offspring (Andersen et al., 2020); however, no studies to date have examined the trajectory of locomotor development during early life in opioid-exposed offspring. Using an open field, we measured the development of motor activity by repeatedly testing animals on P1, P7, P14, and P21. Locomotor activity was significantly altered during the pre-weaning period in PME offspring (rmANOVA: Exposure, F(1,49)=5.18, p=0.027; Time, F(1.38,67.84) = 299, p<0.0001; Interaction, F(3,147)=10.5, p<0.0001) with PME offspring demonstrating significantly reduced activity at P1 but greater activity at P7 and P21 (Sidak’s post hoc test: p=0.048, p=0.037, p=0.009, respectively; Figure 5c). Inspection of the P1 videos indicated the reduction in motor activity was likely a result of poor coordination as PME displayed a greater propensity to fall over earlier in the testing session. Although 88% of PME and 80% of PSE offspring fell over by the end of five-minute session on P1 (chi square test: χ2 (1, n=51)=0.690, p=0.41; Figure 5—figure supplement 1a), 53.5% of PME compared to 28% of PSE animals had fallen over immediately upon placement into the arena (chi square test: χ2(1, n=51)=0.30.52, p=0.061; Figure 5—figure supplement 1b). There was a nonsignificant reduction in the latency to fall over in PME offspring (Mann-Whitney test: U = 248.5, p=0.136; Figure 5—figure supplement 1c).
 
@@ -103,19 +198,55 @@ Beginning on P3 and through P14, offspring began a battery of daily developmenta
 
 A recent investigation of prenatal THC exposure revealed deficits in sensorimotor gating (Frau et al., 2019); therefore, as sensorimotor performance was impaired in PME offspring, we subsequently tested prepulse inhibition (PPI), a sensorimotor gating task. In a cohort of P28-P29 offspring, we found that PME did not alter the acoustic startle response (rmANOVA: Exposure, F(1,36)=0.129, p=0.72; Intensity, F(1.830,65.87) = 185.5, p<0.0001; Interaction, F(6,216)=0.147, p=0.99; Figure 5—figure supplement 5a). No exposure-related effects were found on the percent PPI suggesting sensorimotor gating is intact in this model (rmANOVA: Exposure, F(1,36)=0.282, p=0.60; Prepulse Intensity, F(1.860,66.97) = 30.8, p<0.0001; Interaction, F(2,72)=0.770, p=0.47; Figure 5—figure supplement 5b).
 
-## Brain anatomical development in offspring
+### Brain anatomical development in offspring
 
 Numerous brain regions and neural mechanisms could contribute to the altered activity and sensorimotor development described in PME offspring; therefore, we began our investigation by probing structural differences in gray matter regions across the brain using in vivo, ultra-high-field volumetric MRI. Volumes of interest (VOIs; See Figure 6—figure supplement 1 for segmentations) were used to determine if differences in various gray matter regions were present in offspring at P28-P30. No significant differences in VOIs across any of the brain regions examined were discovered suggesting gross gray matter structure is mostly unaffected by PME (unpaired t tests: see Supplementary file 2 for full test statistics; Figure 6).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig6-v2.jpg)
+
+**Figure 6.:** Volumetric findings from ultra-high-field MRI of P28-P30 offspring indicate that gross brain structure is primarily unaffected for both cortical and subcortical regions in PME offspring (unpaired t tests, n = 11 (4M:7F) PME, 11 PSE (6M:5F) mice). Data were collapsed on sex due to underpowering. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Volumes of interest (VOIs) are overlaid on a representative mouse brain. A total of 18 VOIs segmented including the whole cortex, striatum (L and R), hippocampus (L and R), thalamus, cerebellum, basal-forebrain septum, hypothalamus, amygdala (L and R), brain stem, superior colliculus, olfactory bulbs, midbrain (L and R), and inferior colliculus (L and R). R, Right; L, Left.
+
 To determine whether PME could alter cortical development, we examined cortical laminations and neuron densities in distinctive cortical layers of P22-P24 offspring with triple immunostaining of NeuN (neuronal marker), Cux1 (a cortical layer 2/3–4 marker), and Draq5 (nuclei stain). We focused on the anterior cingulate cortex (ACC), primary somatosensory cortex (S1), and primary motor cortex (M1) for their involvement in sensorimotor behavior (Hatsopoulos and Suminski, 2011; Paus, 2001; Umeda et al., 2019; Figure 7, Figure 7—figure supplement 1, Figure 7—figure supplement 2). In M1, there was no difference in the distributions of Cux1+ cells (ANOVA: Exposure, F(1,34)=0.0943, p=0.76; Sex, F(1,34)=1.68, p=0.20; Interaction, F(1,34)=0.334, p=0.57; Figure 7a–c). Interestingly, we found a significant reduction in NeuN densities in cortical layers 2/3–4 (ANOVA: Exposure, F(1,34)=4.40, p=0.044; Sex, F(1,34)=7.56, p=0.0095; Interaction, F(1,34)=5.014, p=0.032; Figure 7a,b,d) that was specific to PME females (Sidak’s post hoc: p=0.0098). However, NeuN densities were not reduced in layer 5 (ANOVA: Exposure, F(1,34)=0.673, p=0.42; Sex, F(1,34)=0.733, p=0.40; Interaction, F(1,34)=1.31, p=0.26; Figure 7a,b,e). In the ACC, there was a minor but significant Exposure x Bin interaction for both Cux1+ (rmANOVA: Exposure, F(1,32)=1.03, p=0.32; Bin, F(2.13,68.3) = 394.6, p<0.0001; Interaction, F(9,288)=2.12, p=0.028; Figure 7—figure supplement 1a–c) and NeuN+ cell densities (rmANOVA: Exposure, F(1,32)=0.424, p=0.52; Bin, F(4.88,156.0) = 142.2, p<0.0001; Interaction, F(9,288)=2.59, p=0.0070; Figure 7—figure supplement 1a,b,d). Although no posthoc tests quite reached the level of significance, there appeared to be an increase in NeuN+ cell densities in Bin 9 (corresponding to approximately to the layer 5/6 border; Sidak’s post hoc: p=0.050; Figure 7—figure supplement 1a,b,d). In S1, the distribution patterns of Cux1 did not differ (rmANOVA: Exposure, F(1,310)=0.498, p=0.48; Bin, F(9,310)=346.5, p<0.0001; Sex, F(1,310)=1.24, p=0.27; Bin x Exposure, F(9,310)=0.860, p=0.56; Bin x Sex, F(9,310)=1.54, p=0.13; Exposure x Sex, F(1,310)=1.21, p=0.27; Bin x Exposure x Sex, F(9,310)=1.72, p=0.08; Figure 7—figure supplement 2a–c); however, there was a slight exposure related effect on NeuN+ cell densities as a there was a complex three way interaction between Exposure, Bin, and Sex (rmANOVA: Exposure, F(1,310)=3.30, p=0.07; Bin, F(9,310)=63.6, p<0.0001; Sex, F(1,310)=2.72, p=0.10; Bin x Exposure, F(9,310)=0.811, p=0.61; Bin x Sex, F(9,310)=0.840, p=0.58; Exposure x Sex, F(1,310)=0.0007, p=0.98; Bin x Exposure x Sex, F(9,310)=2.68, p=0.0051; Figure 7—figure supplement 2a,b,d). Similar to the ACC, no posthoc tests reached the level of significance. These data suggest that there are subtle disruptions in cortical lamination development in PME for ACC, S1, and M1 regions with a notable reduction in neuronal density of the upper cortical layer of M1 in female PME.
 
-## M1 neuronal intrinsic properties and local circuitry
+![Figure 7.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig7-v2.jpg)
+
+**Figure 7.:** Representative slices of the M1 in (a) PSE and (b) PME offspring demonstrating Draq5 (blue, (a1,b1): marker of nuclei), NeuN (green, (a2,b): marker of post-mitotic neurons), and Cux1 (red, (a3,b3): marker of upper cortical layers, typically layer 2/3–4). White boxes represent the areas used for quantification. (c) No effect of Cux1+ cell densities were observed in L2/3-4. (d) A significant decrease in NeuN+ cells was found in layer 2/3-4 of Female PME offspring (ANOVA: Interaction, p=0.044; Sidak’s posthoc test, p=0.0098). (e) However, no differences were observed for NeuN+ cell densities in layer 5 (n = 9 (4M:5F) PME), 8 PSE (4M:4F). *p<0.05. Data were not collapsed on sex as analyses revealed both main-effects of sex and interactions with sex. Box plots indicate 25–75th percentiles with whisker characterizing the minimum and maximum value.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Representative slices of the ACC in (a) PSE and (b) PME offspring demonstrating Draq5 (blue, (a1,b1): marker of nuclei), NeuN (green, (a2,b),: marker of post-mitotic neurons), and Cux1 (red, (a3,b3): marker of upper cortical layers, typically layer 2/3-4). White boxes represent bins 1–10 for quantification with Bin one nearest to the pia and Bin 10 nearest internal white matter. There were subtle but significant effects of PME on (c) Cux1+-cell densities (rmANOVA: Interaction, p=0.028) and (d) NeuN+-cell densities (rmANOVA: Interaction, p=0.028; Sidak’s posthoc text for Bin 9, p=0.05) (n = 9 (4M:5F) PME, 8 PSE (4M:4F)). +Exposure x Bin Interaction, p=0.028 and 0.0070 for Cux1 and NeuN, respectively. #p=0.05. Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Data points indicate mean ± SEM.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Representative slices of the S1 in (a) PSE and (b) PME offspring demonstrating Draq5 (blue, (a1,b1): marker of nuclei), NeuN (green, (a2,b2): marker of post-mitotic neurons), and Cux1 (red, (a3,b3): marker of upper cortical layers, typically layer 2/3-4). White boxes represent bins 1–10 for quantification with Bin one nearest to the pia and Bin 10 nearest internal white matter. No effect of PME was present on (c) Cux1+- cell densities (d) but there was a slight Exposure x Bin x Sex interaction for NeuN+-cell densities (rmANOVA: Interaction, p=0.0051). However, no posthoc tests reached the level of significance (n = 9 (4M:5F) PME, 8 PSE (4M:4F)). Exposure x Bin x Sex interaction, p=0.0051. Data were not collapsed on sex as analyses revealed interactions with sex. Data points indicate mean ± SEM.
+
+### M1 neuronal intrinsic properties and local circuitry
 
 Given the significant alterations in sensorimotor and locomotor behavior in offspring with PME, we next examined intrinsic properties, local circuitry, and morphology of layer 5B thick-tufted pyramidal neurons of the M1 in P21-P26 offspring using whole-cell patch clamp electrophysiology and laser scanning photostimulation for optical mapping of local circuitry (see Figure 8a,b for schematic diagram). Thick-tufted layer 5B neurons indicate neurons with specific subcortical projection targets (Hattox and Nelson, 2007; Morishima et al., 2011; Oswald et al., 2013), and most likely represented M1 pyramidal tract corticospinal neurons (Suter et al., 2013). Representative current-clamp traces from whole-cell recordings of action potential firing and sub-threshold voltage responses are shown in Figure 8—figure supplement 1a and Figure 8c, respectively. Recording analyses showed that L5 M1 neurons from PME mice displayed significantly reduced firing rates (number of APs) in response to injected current compared to PSE offspring (rmANOVA: Exposure, F(1, 66)=0.707, p=0.40; Current, F(2.198, 145.1)=1109 p<0.0001; Interaction, F(12, 792)=1.78, p=0.047, Figure 8—figure supplement 1b). These findings suggest PME neurons are characterized by reduced intrinsic excitability at higher injected currents; however, no posthoc tests reached the level of significance. PME neurons exhibited significantly reduced input resistance compared to PSE cells (Figure 8d, see Supplementary file 3 for stats), indicating that current was translated into a smaller change in voltage across the membrane of PME neurons. Additionally, subthreshold responses of L5 M1 neurons showed prominent ‘sag’ and ‘overshoot’ of the membrane potential (Figure 8c), which is characteristic of hyperpolarization-activated cyclic nucleotide-gated (HCN) channel current (Ih) expression (Sheets et al., 2011). Both voltage sag and voltage overshoot percentage were larger in L5 M1 neurons from PME mice (Figure 8e,f, see Supplementary file 3 for stats), although voltage overshoot did not quite reach the level of significance. Additional intrinsic properties of L5 M1 neurons in offspring can be viewed in Supplementary file 3.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig8-v2.jpg)
+
+**Figure 8.:** (a) Brains were coronally sectioned to acquire M1 slices for patch clamp electrophysiology. (b) Representation of a M1 neuron recording (left) and example (4X bright field image) of a M1 neuron recording overlaid with the 16 × 16 stimulation grid (100 µm spacing) for local circuit mapping (center). Schematic of laser scanning photo-stimulation of local neurons connected to recorded L5 pyramidal neuron (right). (c) Representative current-clamp traces of sub-threshold responses from L5 M1 neurons from female mice. Step protocols and current values displayed below traces. (d-f) PME decreased input resistance (d), increased voltage sag (e), and increased voltage overshoots (f) (ANOVA: Exposure, p=0.030, p=0.027, and p=0.057; n = 13 PME mice (7M:6F), 41 cells (15M:26F) and n = 11 PSE mice (6M:5F), 28 cells (15M:13F)). (g-h, k-l) Average local input maps from PSE (n = 10 cells, 5 mice) and PME (n = 14 cells, 4 mice) female (g,h) and PSE (n = 8 cells, 5 mice) and PME (n = 10 cells, 5 mice) male (k,l) mice. Each pixel represents the mean amplitude of the response evoked by UV photolysis of MNI-glutamate at that location. (i,m) PME mice demonstrate differences in local circuitry as identified by the difference in PSE average map and PME average map for female (i) and male (m) mice. (j,n) This difference in local circuitry was further supported by a significant Row X Exposure (rmANOVA: Interaction, p=0.0025) indicating PME altered local synaptic input on L5 M1 neurons in a region dependent manner (n = 9 PME mice (5M:4F), 24 cells (10M:14F) and n = 10 PSE mice (5M:5F), 18 cells (8M:10F)). *p<0.05 for main effect of exposure. + p<0.05 for row by exposure interaction. Data were not collapsed on sex as analyses revealed both main-effects of sex and interactions with sex. Box plots indicate 25th to 75th percentiles with whisker characterizing the minimum and maximum value. Row average data points indicate mean ± SEM where rows are the average input from rows 1:16, columns 6:13.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (a) Representative current-clamp traces of action potential firing from L5 motor cortex neurons from PSE (blue traces) and PME (red traces) female mice. (b) The number of action potentials in response to injected current in L5 M1 neurons revealed PME mice exhibit altered excitability (rmANOVA: Interaction, p=0.047; n = 40 (15M:25F) PME, 28 PSE (15M:13F)). +: Current x Exposure Interaction, p=0.047. Data were collapsed on sex as initial analyses revealed no main-effects or interaction with sex. Data points indicate mean ± SEM.
 
 In addition to electrophysiological recordings, we measured the strength and organization of local synaptic inputs onto a single post-synaptic layer 5B M1 neuron by directing a UV laser beam (355 nm) to focally uncage glutamate across a 16 × 16 stimulation grid centered around the recorded neuron (Figure 8b). Compared to PSE (Figure 8g,h), PME (Figure 8k,l) modified the amplitude of local inputs onto layer 5 M1 neurons (see PME minus PSE amplitude difference images for females and males in Figure 8i & m, respectively). Row averages, which approximately correspond to subdivisions of cortex layers, were calculated by using the average amplitude of local inputs from rows 1:16, columns 6:13 of the stimulation grid. A significant interaction between exposure and row average was observed (rmANOVA: Exposure, F(1,38)=0.120, p=0.73; Row, F(3.759,142.8) = 16.79, p<0.0001; Sex, F(1,38)=5.168, p=0.029; Row x Exposure, F(15,570)=2.411, p=0.0021; Row x Sex, F(15,570)=0.561, p=0.905; Exposure x Sex, F(1,38)=0.397, p=0.532; Row x Exposure x Sex, F(15,570)=1.126, p=0.329; Figure 8j,n). In particular, increased amplitude of excitatory responses were observed following stimulation of local neurons in L2/3 (Figure 8i,j,m,n). These electro-anatomical results suggest that the L2/3 → L5 local pathway is slightly enhanced in the M1 of juvenile PME mice.
 
 Representative morphological reconstruction of recorded neurons can be viewed in Figure 9a,b (PSE and PME females, respectively) and Figure 9d,e (PSE and PME males, respectively) with all reconstructed thick-tufted L5 found in Figure 9—figure supplement 1. Sholl analyses suggest that morphology of layer 5 M1 neurons in PME mice is unchanged from PSE littermates as neither intersections (rmANOVA: Exposure, F(1,27)=0.602, p=0.44; Radius, F(16,432)=148, p<0.0001; Sex, F(1,27)=7.34, p=0.012; Radius x Exposure, F(16,432)=0.632, p=0.86; Radius x Sex, F(16,432)=3.87, p<0.0001; Exposure x Sex, F(1,27)=0.0821, p=0.78; Radius x Exposure x Sex, F(16,432)=0.666, p=0.83; Figure 9c,f top, for males and females, respectively) nor length (rmANOVA: Exposure, F(1,27)=1.09, p=0.30; Radius, F(5.43,146.6) = 119.6, p<0.0001; Sex, F(1,27)=6.56, p=0.016; Radius x Exposure, F(16,432)=0.659, p=0.83; Radius x Sex, F(16,432)=3.10, p<0.0001; Exposure x Sex, F(1,27)=0.305, p=0.59; Radius x Exposure x Sex, F(16,432)=0.586, p=0.89; Figure 9c,f bottom, for males and females, respectively) were different between PME and PSE treatments.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig9-v2.jpg)
+
+**Figure 9.:** (a-b, d-e) Representative morphological reconstruction and Sholl radii of motor cortex neurons filled with biocytin during whole-cell patch-clamp recordings in acute brain slices from PSE and PME female (a–b) and male (d-e) mice (concentric circles increase by 50 µm from 50 µm). (c) Analysis of PSE (n = 9) and PME (n = 10) intersections (top) and length (mm, bottom) in female mice by Sholl radius (µm, 50:50:700) revealed no significant differences related to exposure. (f) Analysis of PSE (n = 5) and PME (n = 7) intersections (top) and length (mm, bottom) in male mice by Sholl radius (µm, 50:50:850) also revealed no significant differences related to exposure. Data were not collapsed on sex as analyses revealed both main-effects or interaction with sex. Data points indicate mean ± SEM.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/66230/elife-66230-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Morphological reconstructions confirm thick-tufted layer V M1 neurons recorded from (a) female PSE, (b) female PME, (c) male PSE, and (d) male PME mice. Partially opaque neurons are represented in Supplementary file 1.
 
 ## Discussion
 
@@ -135,66 +266,223 @@ Although methadone may be a necessary and effective treatment for maternal OUD, 
 
 ## Materials and methods
 
-## Animals and model generation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus male and female)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td>B6/J</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Cux1 (polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# SC-13024, RRID:AB_2261231</td>
+      <td>(1:250 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-NeuN (monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB377, RRID:AB_2298772</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H+L), Alexa Fluor 488 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11001, RRID:AB_2534069</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG (H+L), Alexa Fluor 555 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-32732; RRID:AB_2633281</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Streptavidin, Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# S32354; RRID:AB_2315383</td>
+      <td>(1:1000 dilution)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Draq5</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 4084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methadone HCl</td>
+      <td>National Institute on Drug Abuse</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oxycodone HCl</td>
+      <td>National Institute on Drug Abuse</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MNI-caged glutamate</td>
+      <td>R and D Systems Inc (Tocris)</td>
+      <td>Cat# 295325-62-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>R and D Systems Inc (Tocris)</td>
+      <td>Cat# 126453-07-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8.2</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ethovision XT</td>
+      <td>Noldus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DeepSqueak</td>
+      <td>Coffey et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ephus software</td>
+      <td>Vidrio Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matlab</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida 360</td>
+      <td>MBF Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida Explorer</td>
+      <td>MBF Bioscience</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PMOD Ma-Benveniste-Mirrione mouse brain atlas</td>
+      <td>PMOD Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and model generation
 
 Animal care and research were conducted in accordance with guidelines established by the National Institutes of Health and protocols were approved by the Indiana University School of Medicine Institutional Animal Care and Use Committee. Eight-week-old female C57BL/6J mice were acquired from Jackson Laboratories (Bar Harbor, Maine), single housed, and randomly assigned to either saline (10 mL/kg) or oxycodone treatments. Oxycodone dependence was induced by a dose-ramping procedure with a dose of 10 mg/kg administered on pregestational day (PG) 14, 20 mg/kg on PG13, and then maintained on 30 mg/kg for PG12-6. All saline or oxycodone doses were administered subcutaneously twice daily at least 7 hr apart. On PG5, oxycodone-treated mice were transitioned to 10 mg/kg methadone while saline-treated animals continued to receive saline injections (s.c. b.i.d.). All oxycodone and methadone solutions were prepared in saline. Oxycodone and methadone were obtained from the National Institute on Drug Abuse Drug Supply Program. Five days following initiation of methadone treatment, an 8-week-old C57BL/6J male mouse (also acquired from Jackson Laboratories) was placed into the cage of each female for four days. Mucous plugs were assessed each morning to approximate gestational day (G) 0. Food consumption was examined weekly in a subset of these female mice. Female mice were weighed every Monday, Wednesday, and Friday throughout the study with the exception of the mating period.
 
 Cages were examined for the presence of pups at the time of each morning and afternoon injection, and the day of birth was designated postnatal day (P) 0. Data on litter size, sexes, and neonatal deaths were collected. The presence of unconsumed placentas at 24 hr following birth was also examined. Only litters between three and eight pups were used in subsequent studies of offspring. In an attempt to maintain a sufficient level of methadone exposure to the newborn pups during P0-P7, the dams were maintained at their highest gestational dose after giving birth and up to P7. After P7, the dose of methadone administered to dams was adjusted to their body weight. All treatments to dams were discontinued at weaning (~P28).
 
-## Methadone and metabolite concentrations
+### Methadone and metabolite concentrations
 
 All tissue and blood samples were collected 2.5 hr following morning administration of methadone. On G18, three dams were anesthetized with ketamine/xylazine and fetuses were rapidly removed from the uterine cavity to examine brain and placental drug levels. On P1 and P7, three dams and their litters were sacrificed for the collection of trunk blood and brains. Blood samples were centrifuged for five minutes at 4500 g to collect 20 µL of plasma. Plasma, placenta, and whole brains were frozen in isopentane on dry ice and stored in −80°C until processing. The samples were examined for the presence of methadone and EDDP via high-performance liquid chromatography tandem mass spectroscopy (HPLC–MS/MS; Sciex 5500 QTRAP, Applied Biosystems, Foster City, MA). The analytical method for plasma samples has previously been described (Metzger et al., 2020). Tissue samples and standards were prepared by adding diphenhydramine (internal standard, 0.1 ng/µL in methanol) and 0.1 M phosphate buffer (200 µL, pH 7.4) to tissue samples. Samples were then extracted using a liquid-liquid procedure with 3 mL ethyl acetate. The supernatant was transferred to a clean tube and evaporated to dryness, then reconstituted in acetonitrile with 0.1% formic acid (pH 6.5). Ten microliters of sample were then injected and the remaining protocol follows the previously published procedure (Metzger et al., 2020). The limit of quantification for methadone and EDDP detection was 0.1 ng/mL and 0.05 ng/mL in the plasma, respectively, and 0.08 ng/sample and 0.04 ng/sample of placenta and brain, respectively for methadone and EDDP.
 
-## Maternal characteristics
+### Maternal characteristics
 
 Dams were given a new compressed paper nestlet, and twelve hours later, the ability of dams to build a new nest on P3 was assessed using a five-point nest rating system where one represents a nestlet untouched and a five requires >90% of nestlet to be torn creating a crater with walls higher than the height of the mouse for >50% of the circumference. Further criterion are described elsewhere (Deacon, 2006). A pup retrieval task was completed by first removing one pup and the dam and then placing the pup at one end of the cage (~30 cm away). The dam was then released at the other end of the cage and the time required to retrieve the missing pup was recorded. This was repeated with two other pups and an average pup retrieval latency score was calculated.
 
 To demonstrate that the oxycodone dosing strategy induced dependency, a subset of mice underwent naloxone-precipitated withdrawal prior to methadone transition. Sixty to 90 min following the final 30 mg/kg oxycodone dose on PG6, all mice were administered naloxone (5 mg/kg, i.p.) and somatic signs of withdrawal were assessed for 10 min using a previously described protocol (Berrendero et al., 2003). These behavioral signs included number of paw shakes, wet dog shakes, and jumps and the presence of ptosis, body tremor, teeth chattering, piloerection, and diarrhea. The global withdrawal score was calculated using the following equation: (jumps*0.8+wetdogs shakes*1+diarrhea*1.5+paw shakes*0.35+ptosis*1.5+teeth chattering*1.5+body tremor*1.5+piloerection*1.5). These mice which underwent precipitated withdrawal were not used in any subsequent studies. Similarly, following the weaning of offspring, a subset of dams underwent the naloxone-precipitated withdrawal procedure to demonstrate that the transition to the 10 mg/kg methadone dosing regimen maintained opioid dependency.
 
-## Offspring physical development
+### Offspring physical development
 
 Beginning at P0 and throughout the pre-weaning period, offspring were marked for identification on the paws with a red or black marker. The progression of weight gain and body length on P0, P3, P7, P10, P14, P18, and P21 was examined. A subset of the offspring was also weighed at P35 and P49. From P3 to P18, offspring were examined for the first day both eyes were open, the first day both ear pinnae completely unfolded and the ear canal was patent, and the first day the lower incisors emerged.
 
 The right femur of P7 and P35 offspring was scanned on a SkyScan 1172 (Bruker, Billerica, MA, USA) with a 0.5 aluminum filter and a 6 µm voxel size. For P7 samples, mineralized femur length was obtained from a coronal view of the scan. Whole bone volume was obtained in the transaxial plane incorporating the entire mineralized bone. For P35 samples, a 0.5 mm region of interest at the distal femur was selected proximal to the growth plate. Distal femur metaphysis bone volume was obtained in the transaxial plane from this whole region including both trabecular and cortical bone. Trabecular bone was isolated in the same region for trabecular bone volume. Cortical bone in P35 samples was measured from five slices 2 mm proximal the end of the metaphysis region of interest. Cortical bone area and cortical thickness were measured at this site.
 
-## Offspring behavior
+### Offspring behavior
 
-## Open field
+#### Open field
 
 A modified open field (12.5 W x 15.8 L x 13.7 H cm) with a video recording device (Brio Ultra HD Pro Webcam, Logitech, Lausanne, Switzerland) and an ultrasound microphone (Pettersson Elektronik AB, Uppsala, Sweden) was used to assess locomotion and USVs development for five minutes on P1, P7, P14, and P21 in offspring. These sessions began at 8:00 A.M following a one-hour acclimation period. The arena was placed on a far infrared warming pad (Kent Scientific, Torrington, CT) that maintained the surface temperature between 35 and 37°C. The entire apparatus was located within an environmental control chamber (Omnitech Electronics Inc, Columbus, OH) that was layered with sound proofing material. USV audio files were processed using the open-source, deep-learning-based system DeepSqueak (Coffey et al., 2019). Video tracking analysis was accomplished with EthoVision XT software (Noldus, Leesburg, VA). P1 recorded videos were examined for the number of twitches/jerks (defined as sudden and rapid muscle contractions of the limbs and/or whole body), a behavior consistent with NOWS in humans and rodents (Kocherlakota, 2014; Ward et al., 2020). As temperature instability is also a symptom of NOWS (Kocherlakota, 2014), body temperature was assessed on P1. Without a heating source, body temperature was monitored in offspring at baseline and after 2 min of isolation. Due to the small size of pups preventing collection of rectal temperatures, a FLIR E8 infrared camera (FLIR Systems, Wilsonville, OR) was used to capture surface body temperature. Post-hoc analysis of duration of time spent near the walls of the arena was assessed using Noldus software. Noldus Automatic Behavior Recognition was used to track the frequency of jumping, unsupported and supported rearing, and grooming behavior.
 
-## Sensorimotor milestones
+#### Sensorimotor milestones
 
 Beginning on P3 and through P14, offspring were tested daily to examine acquisition of: surface righting to prone position within 5 s of release, expression of negative geotaxis within 15 s of release demonstrated by ascending a slight incline after initial placement facing downwards, display of cliff aversion within 10 s of release on a ledge demonstrated by moving backward off the cliff edge, ability to grasp a suspended rod with both forelimbs for at least 2 s, and extinguishing of pivoting behavior demonstrated by walking outside of a 12 cm diameter circle within 30 s. These assessments are well-established paradigms used to characterize the normal development of newborn mice (Hill et al., 2008). These sessions began at 1:00 P.M. following a one-hour acclimation period. Acquisition of these sensorimotor developmental milestones was considered complete by a successful demonstration of the behavior within the allotted time for 3 consecutive days in a row.
 
-## Acoustic startle and prepulse inhibition
+#### Acoustic startle and prepulse inhibition
 
 Acoustic startle responses and PPI were assessed in P28-P29 mice in isolated chambers (SR-LAB Startle Response System, SD Instruments, San Diego, CA). Following five 115 Db startle pulses for acclimation, mice were exposed to eight blocks consisting of either a single pulse at the background level, 65, 75, 85, 95, 105, or 115 Db to assess acoustic startle response or a prepulse of either 65, 75, or 85 Db followed by a 115 Db startle pulse to assess PPI in random order. The intertrial interval was randomly assigned with intervals between 10 and 40 s. An accelerometer detected changes in force due to jumping/flinching and the output was an excitation voltage change in millivolts (mV).
 
-## Magnetic resonance imaging
+### Magnetic resonance imaging
 
 Volumetric MRI studies were performed using a 9.4 T Bruker system (Bruker BioSpin MRI GmbH, Germany) equipped with a BGA-12S gradient. A Bruker two-channel surface mouse head coil was used for high resolution brain imaging. Animals were anesthetized and maintained with 1.5–2% isoflurane during MRI sessions. T2-weighted images with a three-dimensional Rapid Acquisition with Relaxation Enhancement (RARE) sequence were acquired for volumetric measurements (TR/TE = 1500/11 ms, Rare Factor = 12, FOV = 20×20 x 7 mm with an isotropic voxel of 120 µm3, number of averages = 1, scan time = 11.8 min).
 
 A mouse brain atlas for 4-week-old mice was created by modifying PMOD (PMOD Technologies LLC, Switzerland) Ma-Benveniste-Mirrione mouse brain atlas. Specifically, the T2-weighted MRI images of a 4-week-old control mouse were normalized to the PMOD built-in mouse brain template using a Deform function in the ‘Fuse It’ module. VOIs were then manually adjusted to fit the 4-week-old mouse brain and to create a 4-week mouse atlas for this study. To obtain the brain volume measurements, T2-weighted anatomical images from individual mouse in the native space were normalized to the 4-week mouse template and an inverse transformation matrix was saved in Fuse It module. The native space image data were loaded again in the View module then 4-week-mouse atlas with VOIs was loaded and inverse transformed to obtain the volume measurements (see Figure 6—figure supplement 1 for segmentation). Raw volume measurements were then utilized for statistical comparisons.
 
-## Immunostaining
+### Immunostaining
 
 On P22-24, offspring were anesthetized with isoflurane and perfused with 4% paraformaldehyde prepared in PBS for 10 min at a pump rate of ~2 mL/min. Fixed brains were sectioned into 100 μm sections in the coronal plane using a Leica VT-1000 vibrating microtome (Leica Microsystems) and stored in PBS until later analysis. Sections were permeabilized with 0.3% Triton X100, then incubated with a blocking solution (3% normal goat serum prepared in PBS with 0.3% Triton X-100) and then incubated overnight with primary antibody (see Key Resources Table) prepared in blocking solution. An appropriate secondary antibody conjugated with an Alexa series fluorophore (see Key Resources Table) was used to detect the primary antibody. Draq5 (1:10,000 dilution, Cell Signaling) was included in the secondary antibody solution to stain nuclei. Z-stack confocal images were acquired from both hemispheres with a Leica confocal microscope with a 10X/NA0.75 objective. The Z-stacks were taken at 0.5 µm intervals, 5 µm-total thickness was imaged. Projection images of 5 µm thickness were used for image quantification by using NIH ImageJ software. The regions of interest were defined as bins 1–10 for the ACC and S1 and defined as layer 2/3–4 and layer 5 in M1.
 
-## Electrophysiology, mapping, morphology, imaging
+### Electrophysiology, mapping, morphology, imaging
 
-## Electrophysiology and mapping
+#### Electrophysiology and mapping
 
 At P21-26, acute brain slices were prepared as described previously (Jones and Sheets, 2020; Sheets et al., 2011). For acquiring the electrophysiological profiles of neurons, patch pipettes contained potassium-based intracellular solution (in mM: 128 K-gluconate, 10 HEPES, 1 EGTA, 4 MgCl2, 4 ATP, and 0.4 GTP, 10 phosphocreatine, three ascorbate; pH 7.2). 3–4 mg biocytin (Sigma-Aldrich) was included in the intrapipette solution for morphological reconstruction. MNI-caged glutamate (Tocris Bioscience, 295325-62-1) [0.2 mM] was combined with recirculating solution for all recordings. The bath solution for recordings contained elevated concentrations of divalent cations [4 mM Ca2+ and 4 mM Mg2+] and NMDA receptor antagonist 3-(2-Carboxypiperazin-4-yl)propyl-1-phosphonic acid (CPP) [5 mM] (Tocris biosciences, 126453-07-4). Slices were used 1.5‒4.5 hr after preparation. Recordings were performed at room temperature. Pipette series resistance was between 2 and 5 MΩ. Pipette capacitance was compensated; series resistance was monitored but not compensated and required to be <25 MΩ for inclusion in the data set. Current-clamp recordings were bridge-balanced. Current was injected as needed to maintain the membrane potential near −70 mV during select stimulus protocols. Recordings were filtered at 4 kHz and sampled at 10 kHz using a Multiclamp 700B amplifier (Molecular Devices). Membrane potential values were not corrected for a calculated liquid junction potential of 11 mV. Ephys software (http://www.ephus.org) was used for hardware control and data collection (Suter et al., 2010). Methods for determining input resistance, voltage threshold for action potential (AP) firing, and voltage sag have been reported previously (Suter et al., 2013). Glutamate uncaging and laser scanning photo-stimulation (glu-LSPS) were performed as described previously (Cheriyan and Sheets, 2018). Once a patch recording of a labeled neuron was established, an image of the slice (4X objective) was acquired before mapping for precise registration of the mapping grid. The mapping grid (16 × 16; 100 µm spacing) was rotated with the top row of the grid flush with the exterior primary motor area layer one. The grid locations were sampled (every 0.4 s) with a UV stimulus 1.0 ms in duration and 20 mW at the specimen plane. Photo-stimulation sites resulting in activation of glutamate receptors on the dendrites of the recorded neuron were readily detected based on characteristically short onset latencies (7 ms) of responses (Anderson et al., 2010) and included in the map analyses as synaptic responses resulting from uncaged glutamate activation of presynaptic neurons within the local circuit. Responses overlapped by direct activation of the recorded neuron’s dendrites were excluded and rendered as black pixels in input color maps. These maps thus represent ‘images’ of the local sources of monosynaptic input arising from small clusters of ~100 neurons at each stimulus location. Excitatory (glutamatergic) responses were recorded at a command voltage of −70 mV. Excitatory input maps were constructed on the basis of the mean inward current over a 0–50 ms post-stimulus time window.
 
-## Morphology
+#### Morphology
 
 Following electrophysiology recordings, the pipette was removed slowly at an angle in voltage clamp mode while monitoring the capacitive transients in order to reestablish a seal. Following re-sealing of the final cell in a slice, the slice was removed from the recording chamber and left in oxygenated ACSF solution for up to 3 hr, to ensure transport of biocytin to distal processes. The slice was then placed in 4% paraformaldehyde solution in 0.1 M Phosphate Buffer (4% PFA/PB) for 24 hr. Slices were washed (3x for 5 min at room temperature) with 0.1 M PBS and 0.1% Triton-X-100 (Acros Organics, AC21568-2500), then nutated in blocking solution containing normal goat serum (Millipore Sigma, 566380) for one hour. Slices were washed again, then nutated in blocking solution with secondary antibody Streptavidin Alexafluor conjugate 488 (1:1000; Fisher Scientific, S32354) at room temperature for 1 hr. Slices were washed and mounted to glass slides. Images of recovered biocytin-filled neurons were taken using a Nikon A1R confocal microscope with ×40 oil immersion objective. Z-stack images were taken at a pitch of 1.5 µm and stitched together with 15% overlap. Neurolucida and Neurolucida 360 (MBF Bioscience) was used for reconstruction and Sholl analysis.
 
-## Data exclusion criteria
+#### Data exclusion criteria
 
 Of 125 neurons, 10 were excluded from analysis due to pipette series resistance >25 MΩ and instability over time, six of which were PME-treated neurons from male mice. After morphological reconstruction and image acquisition, additional inclusion criteria were established: (1) imaged M1 neurons with no pia-directed dendrite were excluded from all analyses (6/115), (2) imaged M1 neurons with no apical tuft at the end of a pia-directed dendrite were excluded from excitatory input map analysis on the assumption that vibratome slicing separated apical tuft from cell body (8/115) and (3) M1 neurons which did not reseal and were unable to be imaged (5/115), or neurons which did not have ‘maps’ collected (11/115), were excluded from excitatory input map analysis. 20/115 neurons were not processed for morphological reconstruction but were included in electrophysiology intrinsic data analysis. Thin-tufted neurons (23) were excluded from analysis on the basis of <20% voltage sag. Forty-two-thick-tufted neurons were utilized for map analysis and of these, 31 were reconstructed for morphological analysis.
 
-## Statistics
+### Statistics
 
 Experimenters were blinded to treatment/exposure group for data collection of all studies. Statistical analyses were conducted using GraphPad Prism 8 (San Diego, CA). Data are graphically presented as the mean ± SEM or as box plots extending from the 25th to 75th percentiles with whisker characterizing minimum and maximum values. The level of significance was set at p<0.05. All experiments were performed using both male and female offspring. To minimize potential litter effects in all completed studies, offspring from four or more litters per exposure were utilized as previously done (Ricalde and Hammer, 1990). For offspring weight and length, offspring from eight to nine litters per exposure were examined. For all behavioral studies, offspring were taken from four to five different litters per exposure. For neuroimaging and immunohistochemistry studies, offspring from four litters per exposure were utilized. For electrophysiology, mapping, morphology, and imaging, neurons were recorded and imaged from offspring of nine different litters per exposure. With the exception of MRI data, all studies were sufficiently powered to detect sex differences. Therefore, all analyses (with the exception of MRI data) were first completed treating sex as a factor. However, for clarity of focusing on the effect of prenatal exposure, when no main effects of sex or interactions with sex were found in offspring, the data was collapsed on sex and re-analyzed. Chi-square tests for categorical data was used for litter characteristics. A linear regression was performed to assess the relationship between placental methadone levels and offspring brain levels on G18, and offspring plasma and brain levels on P1 and P7. Two-tailed unpaired t-tests were used to analyze normally distributed data and Mann-Whitney U tests or Wilcoxon rank sum test (for electrophysiology data only) were used to analyze non-normally distributed data. For data with multiple groups and/or repeated measures, ANOVAs with Sidak’s post hoc tests were used.

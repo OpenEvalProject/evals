@@ -31,31 +31,83 @@ In this study, we screened for proteins that bind to POT-1 and identified two un
 
 ## Results
 
-## DTN-1 and DTN-2 form complexes with POT-1 and POT-2
+### DTN-1 and DTN-2 form complexes with POT-1 and POT-2
 
 In order to identify novel telomeric proteins in C. elegans, we used a yeast two-hybrid (Y2H) approach to screen for POT-1-binding proteins from the C. elegans mixed-stage cDNA library, and we identified two functionally uncharacterized proteins encoded by the R06A4.2 and T12E12.3 genes (Figure 1A and Figure 1—figure supplement 1). These proteins, hereafter referred as double-strand telomeric DNA-binding proteins 1 and 2 (DTN-1 and DTN-2), respectively, have three putative MYB domains tandemly aligned in their N-terminal regions followed by a cluster of acidic amino acids in the middle (Figure 1B and Figure 1—figure supplement 2), which is similar to the domain configuration of the canonical c-MYB transcription factor. The POT-1-binding region (PBR) identified by the Y2H screening is located at the C-termini of these proteins (Figure 1B and Figure 1—figure supplement 1), where the amino acid sequences are highly conserved between DTN-1 and DTN-2 (80% identity). We confirmed by the Y2H analysis that both DTN-1 and DTN-2 bind to POT-1, but not POT-2 (Figure 1C), in a manner dependent on the C-terminal PBR (Figure 1D). In order to verify their in vivo interactions, we integrated three tandem FLAG tags followed by a GFP tag onto the endogenous dtn-1 and dtn-2 loci using CRISPR-Cas9 gene editing, and we purified the endogenous protein complex by FLAG immunoprecipitation (IP). Western blot showed the specific enrichment of the DTN-1-FLAG-GFP and DTN-2-FLAG-GFP proteins in the knock-in strain extracts, but not in wild type (N2) (Figure 1E). Western blot with polyclonal antibodies against POT-1 and POT-2 showed that both endogenous POT-1 and POT-2 proteins were co-precipitated with both DTN-1-FLAG-GFP and DTN-2-FLAG-GFP, proving that they form stable complexes in vivo (Figure 1E). Quantitative mass spectrometry analysis, which is an antibody-independent approach and is more comprehensive, also confirmed the presence of POT-1 and POT-2 in the FLAG immunoprecipitates (Figure 1F). The reciprocal IP experiments of GFP-POT-1 and POT-2-GFP from endogenously tagged strains also showed that both GFP-POT-1 and POT-2-GFP co-precipitated endogenous DTN-1 and DTN-2 (Figure 1—figure supplement 3). Together these results suggest that DTN-1 and DTN-2 are telomeric proteins in C. elegans that directly bind to POT-1 and indirectly bind to POT-2 in vivo.
 
-## DTN-1 and DTN-2 bind to telomeric dsDNA
+![Figure 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig1-v2.jpg)
+
+**Figure 1.:** (A) Genes identified in the POT-1 Y2H screening with the number of identified clones. (B) Schematic of the DTN-1 and DTN-2 protein sequences highlighting the MYB domains, acidic domains, and C-terminus POT-1-binding regions (PBR). The amino acid identities between the full-length sequence and the PBR of DTN-1 and DTN-2 are shown. (C) Y2H interactions between POT-1 and POT-2 (prey) and DTN-1 and DTN-2 (bait). AH109 yeast cells containing plasmids encoding Gal4 BD, Gal4 BD-DTN-1, Gal4 BD-DTN-2, Gal4 AD, Gal4 AD-POT-1, and Gal4 AD-POT-2 were plated on non-selective (−L/−W) and selective (−L/−W/−A/−H) plates. (D) Y2H interactions between POT-1 (prey) and DTN-1, DTN-1ΔPBR, DTN-2, and DTN-2 ΔPBR (bait). AH109 yeast cells containing plasmids encoding Gal4 BD, Gal4 BD-DTN-1, Gal4 BD-DTN-1ΔPBR, Gal4 BD-DTN-2, Gal4 BD-DTN-2ΔPBR, Gal4 AD, and Gal4 AD-POT-1 were plated on non-selective (−L/−W) and selective (−L/−W/−A/−H) plates. (E) Immunoprecipitates with the FLAG antibody from wild type (N2) and knock-in worms (dtn-1::flag::gfp and dtn-2::flag::gfp). Input and immunoprecipitates (FLAG-IP) were immunoblotted with the indicated antibodies. Note that the input blotted with anti-POT-1 was less intense compared to the FLAG-IP blotted with anti-POT-1 in order to avoid saturation of the input bands. (F) Quantitative mass spectrometry of immunoprecipitates with the FLAG antibody from a mixture of knock-in worms (dtn-1::flag::gfp and dtn-2::flag::gfp) (vertical axis) and control IP (horizontal axis). Combined peptide intensities are plotted for each protein. The whole protein list is provided in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** POT-1-binding region (PBR) is identified as the highly conserved region within the C-terminus regions of DTN-1 and DTN-2, which are commonly identified in the Y2H screening.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The Phyre two program (http://www.sbg.bio.ic.ac.uk/phyre2/html/page.cgi?id=index) identified two MYB domains (MYB1 and MYB2) in DTN-1 and one MYB domain (MYB3) in DTN-2 by the structural modeling. The rest of MYB domains were manually identified by the sequence alignment of DTN-1 and DTN-2 (MYB1 and MYB2 of DTN-2 are corresponding regions of MYB1 and MYB2 of DTN-1 identified by Phyre two and MYB3 of DTN-1 is corresponding regions of MYB3 of DTN-2 identified by Phyre 2). We have confirmed that all six MYB domains are indeed composed of three alpha helixes, characteristics of MYB domains, by the secondary structure prediction using Jpred 4 program (http://www.compbio.dundee.ac.uk/jpred/). (B) Red bars indicate the three tandem MYB domains found at the N-terminus of each proteins. Green bars indicate the acidic domains at the middle of these proteins. Blue bars indicate the PBR.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Input and immunoprecipitates (GFP-IP) were immunoblotted with the indicated antibodies. Note that the inputs blotted with anti-DTN-1 and anti-DTN-2 were less intense compared to the GFP-IPs blotted with anti-DTN-1 and anti-DTN-2 in order to avoid saturation of the input bands.
+
+### DTN-1 and DTN-2 bind to telomeric dsDNA
 
 The three putative MYB domains in DTN-1 and DTN-2 are composed of three alpha helixes, which is characteristic of other MYB domains (Figure 2A). However, the sequence alignment of their MYB domains showed that their amino acids are highly divergent from those of known telomeric dsDNA-binding proteins found in other eukaryotes. The tryptophan residues in helices 1 and 2 (shown in the yellow rectangle in Figure 2A), which are known to be important for maintaining the helix-turn-helix structure and thus for the DNA-binding activity (Zargarian et al., 1999), are conserved in the second and third MYB domains in both DTN-1 and DTN-2. However, the basic amino acids in helix 3 (shown in the red rectangle in Figure 2A), which are known to make direct contact with the telomeric dsDNA (Nishikawa et al., 2001), are poorly conserved in DTN-1 and DTN-2. Phylogenetic analysis further confirmed that the MYB domains of DTN-1 and DTN-2 form a unique cluster that is branched from the canonical single MYB domain telomeric factors (i.e. the telobox found in TRF1/2 in mammals, RTBP1 in plants, and Taz1 in fission yeast) and the Rap1 protein in budding yeast, suggesting that DTN-1 and DTN-2 have distinct evolutionary origins from the known telomeric factors (Figure 2B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig2-v2.jpg)
+
+**Figure 2.:** (A) Sequence alignment of the MYB domains from budding yeast Rap1 (scRap1-MYB1 and MYB2), mouse and human TRF1 and TRF2 (mTRF1, mTRF2, hTRF1, and hTRF2), rice RTBP1, and C. elegans DTN-1 and DTN-2. The conserved tryptophan residues required for maintaining the helix-turn-helix structure are highlighted by the yellow rectangles. Amino acids that directly contact telomeric dsDNA identified in human TRF1 protein are highlighted by the red rectangles. (B) Phylogenetic tree of the MYB domains. (C) Coomassie-stained gel of MBP-DTN-1 and MBP-DTN-2. (D) EMSA with increasing amounts of MBP-DTN-1 (twofold steps up to 8.7 μM) and MBP-DTN-2 (twofold steps up to 3.3 μM). The labeled DNA probes were 0.2 nM of restriction fragment containing fifteen telomere repeats (TTAGGC)15 or scrambled repeats (GCTGTA)15. Quantifications of the EMSA are shown in the graph to the right. Error bars are ± SD from three independent experiments. Lines are Hill curves fit to the data. The apparent affinities of MBP-DTN-1 and MBP-DTN-2 for the DNA substrates were 0.93 ± 0.023 μM and 0.54 ± 0.047 μM, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The labeled DNA probes are 0.2 nM of ligated oligonucleotides containing one, two, and three telomere repeats.
+
 To test if DTN-1 and DTN-2 have direct DNA-binding activity, we purified recombinant proteins fused with the MBP tag (Figure 2C) and performed an in vitro electron mobility shift assay (EMSA). Notably, both MBP-DTN-1 and MBP-DTN-2 showed robust dsDNA-binding activity toward the C. elegans telomeric sequence (TTAGGC)15 but not to the scrambled sequence (GCTGTA)15 (Figure 2D). The quantification of the EMSA suggested that DTN-2 (Kd = 0.54 ± 0.047 μM) binds to telomeric dsDNA 1.7 times more strongly than DTN-1 (Kd = 0.93 ± 0.023 μM). Both MBP-DTN-1 and MBP-DTN-2 bound only very weakly to the shorter telomeric DNA containing 1, 2, or 3 telomeric repeats, suggesting that the robust binding requires longer (more than three repeats) dsDNA (Figure 2—figure supplement 1) and that these proteins preferentially bind to the terminal telomere repeats rather than to the interstitial telomeric sequences under physiological conditions.
 
-## DTN-1 and DTN-2 constitutively bind to telomeres in vivo
+### DTN-1 and DTN-2 constitutively bind to telomeres in vivo
 
 To determine the in vivo localization of DTN-1 and DTN-2, we analyzed the GFP signals in the knock-in worms expressing FLAG-GFP-tagged DTN-1 and DTN-2 under the control of their native promotors. Their embryos showed 18–29 punctate GFP foci specifically localized within the cell nuclei (Figure 3A). The average numbers of these foci per nucleus were 23 and 22 for DTN-1-FLAG-GFP and DTN-2-FLAG-GFP, respectively, which approximately corresponded to the number of telomeres in C. elegans (12 chromosomes and 24 telomeres). Further, the observation of pachytene oocytes in the knock-in worms’ germlines showed approximately half the number of foci (Figure 3A, average of 12 foci per nucleus for both DTN-1 and DTN-2), which was likely due to the occurrence of meiotic homologous synapsis that reduces the apparent numbers of telomeres by half. The close observation of condensed bivalent chromosomes at the later diakinesis stage of meiosis showed eight distinct foci located at the ends of condensed chromosomes, corresponding to the telomeres of the individual chromatids (Figure 3B). To further confirm that these foci represent the telomeres, we performed immunostaining of the knock-in worms with a GFP antibody followed by fluorescent in situ hybridization (FISH) with a C. elegans telomeric DNA probe (TTAGGC)3. In the embryonic nuclei, the observed GFP foci were almost completely colocalized with the telomeric FISH signals, proving that these GFP foci were bona fide telomeric signals (Figure 3C). In addition to embryos and germline cells, we also observed punctate GFP foci in all post-mitotic somatic nuclei in adult worms, including epidermal cells and intestinal cells (Figure 3—figure supplement 1). Intestinal cells in C. elegans become polyploid during post-embryonic development after undergoing several rounds of endomitosis (Hedgecock and White, 1985), and accordingly we observed numerous GFP foci in the adult intestinal nuclei (Figure 3—figure supplement 1) consistent with their larger telomere number compared to other somatic cells. Together, our data suggest that DTN-1 and DTN-2 localize to telomeres in both somatic and germ cells from embryo to adulthood and thus function as constitutive telomere-binding proteins in C. elegans.
 
-## DTN-1 and DTN-2 are required for germline immorality
+![Figure 3.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig3-v2.jpg)
+
+**Figure 3.:** (A) Embryos or germlines from knock-in worms (dtn-1::flag::gfp and dtn-2::flag::gfp) fixed and stained with DAPI. The graph shows the number of GFP foci per nucleus. The mean value ± SD is shown. n shows the analyzed number of nuclei pooled from more than 10 embryos or worms. Scale bars, 5 μm or 1 μm (magnified panel). (B) Bivalent chromosomes from diakinesis-stage oocytes from knock-in worms (dtn-1::flag::gfp and dtn-2::flag::gfp) fixed and stained with DAPI. Scale bars, 1 μm. (C) Immuno-FISH of embryonic nuclei, stained with GFP antibody, hybridized with PNA probe (TTAGGC)3, and stained with DAPI. Scale bars, 5 μm and 1 μm (magnified panel).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Adult knock-in worms (dtn-1::flag::gfp and dtn-2::flag::gfp) were fixed and stained with DAPI. Scale bars, 5 μm and 1 μm (magnified panel).
+
+### DTN-1 and DTN-2 are required for germline immorality
 
 To gain insights into the functions of DTN-1 and DTN-2, we made knockout (KO) worms by deleting almost the entire coding regions of the dtn-1 and dtn-2 genes using CRISPR-Cas9 gene editing (Figure 4A and B). Western blotting using polyclonal antibodies against DTN-1 and DTN-2 confirmed that the specific bands appeared between 100 kDa and 150 kDa (close to the expected molecular weights of 95 kDa for DTN-1 and 93 kDa for DTN-2) in wild type (N2) worm extracts and that these bands completely disappeared in extracts from both corresponding KO worms (Figure 4C), suggesting that the protein expression was abolished in these KO worms. The western blot showed that the expression level of DTN-1 in the dtn-2 KO worm was comparable to wild type (N2) and vice versa, suggesting that the protein stability of DTN-1 and DTN-2 is mutually independent (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of the dtn-1 and dtn-2 KO alleles. Exons are shown as gray rectangles with the start codon (ATG) and stop codon (STP). The deleted regions are marked by blue rectangles. Primer positions used for the genotyping are shown. (B) Agarose gel showing the PCR results for the dtn-1+⁄+ (N2; 154 bp), dtn-1−⁄− (301 bp), dtn-2+⁄+ (N2; 267 bp), and dtn-2−⁄− (337 bp) alleles. (C) Western blot with the indicated antibody for the extracts from wild type (N2) and each KO worm (dtn-1 and dtn-2). Yellow arrowheads indicate the DTN-1 and DTN-2 proteins. (D) Schematic of the fertility assay. The brood size of each F1 adult worm is quantified in the graph with the genotyping results, and n shows the analyzed number of F1 worms for the indicated genotypes. The mean value ± SD is shown. (E) The brood size of dtn-1 and dtn-2 double KO worms self-fertilized for successive generations. n shows the analyzed number of worms for the indicated generations (G). The mean value ± SD is shown. (F) Representative morphological defects seen in dtn-1 and dtn-2 double KO worms at generation 4 (G4). Scale bar, 0.5 mm. Analyses were with one-way ANOVA (D) or two-tailed t-tests (E). ns., not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Embryos or germlines from the indicated genotypes were fixed and stained with DAPI.Note, DTN-1-GFP signals are visible even in the dtn-2 mutant worms and vice versa. Scale bars, 5 μm and 1 μm (magnified panel).
 
 Notably, we observed no abnormalities in either of the single KO worms – they looked healthy, were maintained almost perpetually through self-fertilization under normal laboratory conditions, and had comparable numbers of progeny as wild type (N2) worms (Figure 4D, lane 3 and lane 7 in the graph). To investigate the possible redundancy in their functions, we crossed single KO worms to obtain double heterozygous hermaphrodites (dtn-1+⁄−; dtn-2+⁄−), which also appeared healthy and normal. From this parental strain, we isolated individual F1 progeny and performed the fertility assay. After confirming the cessation of egg laying, the genotypes of individual F1 worms were determined by single worm genotyping (Figure 4D). The double KO worms (dtn-1−⁄−; dtn-2−⁄−) appeared at the expected Mendelian ratio among the F1 progeny, suggesting that dtn-1 and dtn-2 are not essential for embryonic development (Figure 4D, lane nine in the graph). However, counting of brood size showed that the double KO worms exhibited severe fertility defects or were completely sterile (42% of the worms were completely sterile in the first generation). Intriguingly, retention of one intact allele of the dtn-1 or dtn-2 gene was sufficient to rescue the fertility defects, as shown by the normal brood sizes of dtn-1+⁄−; dtn-2−⁄− and dtn-1−⁄−; dtn-2+⁄− worms (Figure 4D, lane 6 and lane 8 in the graph), suggesting that these genes have redundant functions in the maintenance of fertility. We confirmed that the telomeric localization of DTN-1 and DTN-2 was mutually independent (Figure 4—figure supplement 1), further supporting their redundant roles at telomeres.
 
 Even though there were only a few offspring born from the double KO worms, the continuous self-fertilization of the double KO hermaphrodites in successive generations resulted in complete sterility within a few generations, suggesting that the defect is transgenerationally progressive (Figure 4E). In addition to the fertility defects, we could also see a variety of morphological defects in late-generation double KO worms, such as dumpy phenotype or larval arrest (Figure 4F), suggesting that some somatic defects had accumulated in these worms.
 
-## DTN-1 and DTN-2 are required for telomere length homeostasis
+### DTN-1 and DTN-2 are required for telomere length homeostasis
 
 C. elegans hermaphrodites have two X chromosomes (XX), which are stably maintained during self-fertilization. Spontaneous X chromosome non-disjunction during meiosis produces male (XO) progeny, which rarely appear (~0.2%) under normal conditions (Hodgkin et al., 1979). During the course of our experiments, we noticed that the double KO (dtn-1; dtn-2) hermaphrodites produced male progeny at an abnormally high frequency (10%), suggesting that chromosomal non-disjunction occurred more frequently in meiosis in the double KO worms (Figure 5A). Furthermore, close inspection of the somatic nuclei revealed the prevalence of chromosomal bridges, especially in large intestinal nuclei, in the double KO worms (Figure 5B and C). The chromosomal bridge is a characteristic phenotype that has also been reported in mutant worms lacking genes encoding the telomerase catalytic subunit TRT-1 and in mutant worms lacking genes required for DNA replication and thus is an indication of aberrant chromosomal fusion or catenation (Korzelius et al., 2011; Meier et al., 2006). Interestingly, single or multiple telomeric FISH signals always coincided with the stretched DNAs between the bridging nuclei (Figure 5D), suggesting that these bridges likely occurred due to fusion or replication defects in their telomeric DNAs.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig5-v2.jpg)
+
+**Figure 5.:** (A) The frequency of male worms among the progeny from the indicated genotypes. In total, 6551, 13270, 12317, and 1113 worms were analyzed from each genotype (dtn-1+⁄+; dtn-2+⁄+, dtn-1−⁄−; dtn-2+⁄+, dtn-1+⁄+; dtn-2−⁄− and dtn-1−⁄−; dtn-2−⁄−). The mean value ± SD (from five biological replicates) is shown. (B) Intestinal nuclei from adult worms of the indicated genotypes stained with DAPI. Scale bars, 5 μm or 1 μm (magnified panel). (C) Quantification of the number of intestinal nuclei with chromosomal bridges per adult. A total of 17 and 18 adults were analyzed for dtn-1+⁄+; dtn-2+⁄+ and dtn-1−⁄−; dtn-2−⁄−, respectively. The mean value ± SD is shown. (D) Adult intestinal nuclei hybridized with PNA probe (TTAGGC)3 and stained with DAPI. Yellow arrowheads indicate telomeric FISH signals on the bridged DNAs. Scale bar, 10 μm. (E) Adult somatic nuclei (epidermal and intestinal nuclei) hybridized with the PNA probe (TTAGGC)3 and stained with DAPI. Scale bar, 5 μm. The graph shows the quantification of individual telomeric FISH signals in epidermal nuclei. The average values are normalized to that of wild type (dtn-1+⁄+; dtn-2+⁄+). n shows the analyzed number of telomeres in 10 nuclei (10 telomeres from each nuclei) pooled from five different worms. The mean value ± SD is shown. (F) Southern blot analysis of telomere length for the wild type (N2) and each single KO worm (dtn-1 and dtn-2). The membrane was hybridized with DNA probes with four telomere repeats (TTAGGC)4. The ladder-like hybridization signals correspond to the internal telomere sequence. (G) Adult somatic nuclei (epidermal nuclei) hybridized with the PNA probe (TTAGGC)3 and stained with DAPI. Scale bar, 5 μm. The graph shows the quantification of individual telomeric FISH signals in epidermal nuclei. The average values are normalized to that of wild type (N2). n shows the analyzed number of telomeres in 20 nuclei (10 telomeres from each nuclei) pooled from 10 different worms. The mean value ± SD is shown. (H) Schematic summary of C. elegans telomere structures. Note that we did not detect any direct protein-protein interactions between DTN-1/2 and POT-2, thus they either form complexes only through DNA-mediated interactions or there are unidentified bridging proteins between them. All analyses were with two-tailed t-tests. ns, not significant.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The number of telomeric FISH foci per nucleus. The mean value is shown. n shows the analyzed number of nuclei pooled from five different worms. Analysis was with two-tailed t-tests. ns., not significant.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64104/elife-64104-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The band intensities were quantified from the bottom to the top of the membrane. The allows show the peak positions, indicating that telomeric DNA from dtn-1 and dtn-2 show slower and faster migration, respectively, compared to N2.
 
 Because of the severe fertility defects, we could not collect large amounts of DNA samples from the double KO worms, and thus the biochemical characterization of their telomeric DNA was experimentally unfeasible. As an alternative, we performed quantitative fluorescent in situ hybridization (Q-FISH) using the telomeric probe. To eliminate artifacts caused by differences in cell cycle stage, we focused on post-mitotic somatic nuclei found in adult worms. Notably, the double KO worms had stronger telomeric FISH signals compared to wild type (N2) worms, and quantification in epidermal nuclei showed that the signal intensities in double KO worms were 5.7 times stronger than in wild type (N2) worms, suggesting that telomeric DNAs were abnormally elongated in the double KO worms (Figure 5E). We confirmed that the number of telomeric FISH foci in each epidermal nucleus was comparable between wild type (N2) and double KO worms, suggesting that the stronger telomere FISH signal in the double KO worms was not due to telomere fusion (Figure 5—figure supplement 1). Southern blot experiments showed that dtn-1 single KO worms had abnormally elongated telomeres, while dtn-2 single KO worms had similar or even slightly shorter telomeres compared to wild type (N2) (Figure 5F and Figure 5—figure supplement 2), which was also confirmed by Q-FISH (Figure 5G) suggesting that DTN-1 but not DTN-2 is responsible for the negative regulation of telomere length. Collectively, we conclude that DTN-1 and DTN-2 are redundantly required for germline immortality, while having distinct roles in the maintenance of telomere length, and if they are deleted simultaneously the worms exhibit mortal germlines accompanied by multiple chromosomal defects, including X chromosome non-disjunction in meiosis, chromosomal bridges, and hyper-elongation of their telomeric DNAs (Figure 5H).
 
@@ -73,66 +125,489 @@ The primary role of DTN-1 and DTN-2 in the maintenance of telomere homeostasis r
 
 ## Materials and methods
 
-## Strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>R06A4.2 / dtn-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>(cloned from a mix stage cDNA library)</td>
+    </tr>
+    <tr>
+      <td>Gene (Caenorhabditis elegans)</td>
+      <td>T12E12.3 / dtn-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>(cloned from a mix stage cDNA library)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>N2 (wild type)</td>
+      <td>Caenorhabditis Genetics Center (CGC); https://cbs.umn.edu/cgc/home</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-1</td>
+      <td>This paper</td>
+      <td>Aelle; syb1925 Strain: PHX1925</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-2</td>
+      <td>This paper</td>
+      <td>Aelle; syb1886 Strain: PHX1886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-1::flag::gfp</td>
+      <td>This paper</td>
+      <td>Aelle; syb2016 Strain: PHX2016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-2::flag::gfp</td>
+      <td>This paper</td>
+      <td>Aelle; syb1995 Strain: PHX1995</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-1::flag::gfp; dtn-2</td>
+      <td>This paper</td>
+      <td>Aelle; dtn-1::flag::gfp; dtn-2 Strain: HS001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>dtn-1; dtn-2::flag::gfp</td>
+      <td>This paper</td>
+      <td>Aelle; dtn-1; dtn-2::flag::gfp Strain: HS002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>nT1[qIs51]/dtn-2; dtn-1/dtn-1</td>
+      <td>This paper</td>
+      <td>Aelle; nT1[qIs51]/syb1886; syb1925/syb1925 Strain: PHX2217</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>gfp::flag::pot-1</td>
+      <td>This paper</td>
+      <td>Aelle; syb3002 Strain: PHX3002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans, hermaphrodite)</td>
+      <td>pot-2::gfp</td>
+      <td>This paper</td>
+      <td>Aelle; syb889 Strain: PHX889</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A11122, LOT#2015993</td>
+      <td>IF (1:1000), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DTN-1 (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DTN-2 (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-POT-1 (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-POT-2 (Rabbit polyclonal)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-ACTIN (Mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#A2228-200UL, LOT#067M4856V</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Mouse monoclonal)</td>
+      <td>Roche</td>
+      <td>Cat#11814460001, LOT#42903200</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-Rabbit Alexa 488</td>
+      <td>Invitrogen</td>
+      <td>Cat#A21206, LOT#1834802</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase Goat Anti-Mouse IgG</td>
+      <td>Bio Rad</td>
+      <td>Cat#170–6516</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase Goat Anti-Rabbit IgG</td>
+      <td>Bio Rad</td>
+      <td>Cat#170–6515</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c5X-dtn-1 (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-c5X-dtn-2 (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28c+-dtn-1 (a.a. 441–837)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28c+-dtn-2 (a.a. 434–818)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28c+-pot-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-1-pot-1 (a.a. 100–300)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pB27-pot-1</td>
+      <td>Hybrigenics Services</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pP6-mix-staged C. elegans cDNA</td>
+      <td>Hybrigenics Services</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT-7-dtn-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT-7-dtn-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT-7-dtn-1ΔPBR(a.a. 1–736)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT-7-dtn-2ΔPBR(a.a. 1–715)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-POT-1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-POT-2</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1 genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- CGGCAATTTGGCACGATGTT −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1 genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- AATGACGGTCTTGACGGCTT −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1 genotype KO-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TGGCCCAAAATCAGCCTCAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2 genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TTGCGCTTTTGCTTCATCCG −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2 genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- CTCCGCCGTAAACACAGACT −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2 genotype KO-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- GGGCACCAGAGGTAACTTCA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1::flag::gfp genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- GGCAACGTCGAGAACGAGAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1::flag::gfp genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- ATGACTAGGGCGAGGGGTAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-1::flag::gfp genotype mutant-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- CACCCTCTCCACTGACAGAAAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2::flag::gfp genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- GCACAGAAGCCATCCGAAAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2::flag::gfp genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TAGGGCTGAGGCTAAAGAATGAA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>dtn-2::flag::gfp genotype mutant-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TCACCCTCTCCACTGACAGA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gfp::flag::pot-1 genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TATGCAACGAACGAGGCTCC −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gfp::flag::pot-1 genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- GACCCGGTACCAAATCCTGA −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gfp::flag::pot-1 genotype mutant-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- ATGTTGCATCACCTTCACCCT −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pot-2::gfp genotype Common-Forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- CGAAAACATTCGCTGAGGCT −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pot-2::gfp genotype WT-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- GCTAGCGCCACAACCAAAC −3'</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pot-2::gfp genotype mutant-Reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5'- TGTTGCATCACCTTCACCCT −3'</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SoftWoRx</td>
+      <td>GE healthcare life science</td>
+      <td></td>
+      <td>http://www.gelifesciences.com/webapp/wcs/stores/servlet/productById/en/GELifeSciences-se/29065728</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLUSTALW</td>
+      <td>https://www.genome.jp/tools-bin/clustalw</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>http://www.sbg.bio.ic.ac.uk/~phyre2/html/page.cgi?id=index</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jpred 4</td>
+      <td>http://www.compbio.dundee.ac.uk/jpred/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains
 
 Worms were grown at 20°C and maintained as described (Brenner, 1974). The following strains were used in this study: Bristol N2 wild strain, dtn-1(syb1925), dtn-2 (syb1886), dtn-1::flag::gfp (syb2016), dtn-2::flag::gfp (syb1995), HS001 (syb1925/syb1925; syb1995/syb1995), HS002 (syb2016/syb2016; syb1886/syb1886), PHX2217 (nT1[qIs51]/syb1886; syb1925/syb1925), gfp::flag::pot-1 (syb3002), pot-2::gfp (syb889). dtn-1(syb1925) was crossed with dtn-2 (syb1886) to isolate double heterozygous worms. The double KO worms (syb1925/syb1925; syb1886/syb1886) generated from the balancer strain (PHX2217) were used in all experiments shown in Figure 5. All mutant alleles were generated by CRISPR-Cas9 and verified by PCR and sequencing. PCR primers used for the genotyping are listed in the key resources table.
 
-## Homology search and structural prediction
+### Homology search and structural prediction
 
 The homology search for MYB domains and the subsequent pyrogenetic analysis were performed using the CLUSTALW program (https://www.genome.jp/tools-bin/clustalw). The presence of MYB domains in DTN-1 and DTN-2 was predicted by structural modeling using Phyre2 (http://www.sbg.bio.ic.ac.uk/~phyre2/html/page.cgi?id=index) and manual alignment. The prediction of protein secondary structure was performed using Jpred 4 (http://www.compbio.dundee.ac.uk/jpred/).
 
-## Y2H assay
+### Y2H assay
 
 Y2H screening was performed by Hybrigenics Services, Paris, France. The coding sequence for pot-1 was cloned into pB27 as a C-terminal fusion to LexA (LexA-pot-1). The construct was used as a bait to screen a random-primed C. elegans mixed-stage cDNA library constructed in pP6. Using a mating approach with YHGX13 and L40ΔGal4 yeast strains, 176 million clones were screened. A total of 82 positive colonies were selected on selective plates. The prey fragments of the positive clones were amplified by PCR and sequenced at their 5′ and 3′ junctions. The resulting sequences were used to identify the corresponding interacting proteins in the GenBank database (NCBI) using a fully automated procedure. For the yeast two-hybrid assay, dtn-1, dtn-2, dtn1ΔPBR (a.a. 1–736), and dtn2ΔPBR (a.a. 1–715) cDNAs were cloned into the pGBKT7 vector. pot-1 and pot-2 cDNAs were cloned into the pGADT7 vector. These bait and prey were co-transformed into the yeast strain AH109, and the positive transformants were selected on nutrition-restricted plates (SD-tryptophan-leucine-histidine-adenine).
 
-## Recombinant protein purification
+### Recombinant protein purification
 
 dtn-1 and dtn-2 cDNAs were cloned into pMAL-c5X (New England Biolabs) for expression with an N-terminal MBP tag. Constructs were expressed in BL21 (DE3) cells (Thermo Fisher Scientific) and induced with 0.4 mM IPTG for 16 hr at 15°C. Cell disruption was achieved by sonication in extraction buffer (50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 0.1% Triton X-100, and 1 mM β-mercaptoethanol), and cellular debris was removed by centrifugation at 40,000 × g. Fusion proteins were purified through amylose beads (NEB).
 
-## EMSA
+### EMSA
 
 To prepare the DNA probes, NotI/NdeI fragments containing 15 telomere repeats (TTAGGC) or scrambled repeats (GCTGTA) were radiolabeled with [γ-32P] ATP by T4 polynucleotide kinase (New England Biolabs). For preparation of shorter DNA probes with one, two, and three repeats of telomeric DNA, the complementary oligonucleotides were annealed and radiolabeled with [γ-32P] ATP by T4 polynucleotide kinase. Proteins were mixed with 0.2 nM of labeled probes for one reaction in binding buffer (10 mM Tris-HCl (pH 7.5), 50 mM NaCl, 4% glycerol, 0.5 mM EDTA, 1 mM MgCl2,0.5 μg poly[dI-dC], 0.5 mM DL-dithiothreitol) and electrophoresed in a 0.8% agarose gel in 0.5× Tris-borate-EDTA at room temperature.
 
-## Antibodies
+### Antibodies
 
 The following antibodies were used: rabbit antibodies against DTN-1 (this study) 1:1000, DTN-2 (this study) 1:1000, POT-1 (this study) 1:1000, POT-2 (this study) 1:1000, and GFP (Invitrogen; A11122) 1:1000, and mouse antibody against β-ACTIN (Sigma; A2228-100UL) 1:1000 and GFP (Roche; 11814460001).
 
-## Antibody production
+### Antibody production
 
 cDNAs encoding the C-terminus of dtn-1 (a.a. 441–837), the C-terminus of dtn-2 (a.a. 434–818), and full-length pot-2 were cloned into the pET28c+ vector (Millipore). cDNA encoding the C-terminus of pot-1 (a.a. 100–300) was cloned into the pGEX-6P-1 vector (Addgene). The HIS- or GST-tagged recombinant proteins were expressed in BL21 (DE3) cells, solubilized in extraction buffer (600 mM NaCl and 50 mM Tris-HCl (pH 7.5)), and purified with Ni-nitrilotriacetic acid (QIAGEN) for the HIS tag or with glutathione agarose (Thermo Fisher Scientific) for the GST tag. The recombinant proteins were dialyzed into PBS and used to immunize the animals. The polyclonal antibodies were affinity purified on antigen-coupled Sepharose beads (GE Healthcare).
 
-## Microscopy
+### Microscopy
 
 Images were obtained on a microscope (Olympus IL-X71 Delta Vision; Applied Precision) equipped with 100× NA 1.40 and 60× NA 1.42 objectives, a camera (CoolSNAP HQ; Photometrics), and softWoRx 5.5.5 acquisition software (Delta Vision). The acquired images were processed with deconvolution (softWoRx 5.5.5) and Photoshop (Adobe).
 
-## Histological analysis, FISH, and immuno-FISH
+### Histological analysis, FISH, and immuno-FISH
 
 Age-matched hermaphrodites, 16–20 hr post-L4 larval stage, were dissected on coverslips in 20 μl of 1× egg buffer (containing 0.1% Tween-20 and 15 mM NaAzide). A SuperFrost Plus slide (Fisher) was immediately applied to the sample followed by freezing on dry ice. The coverslips were removed, and the slides were immediately placed in cold methanol for 1 min. The slides were post-fixed with 4% formaldehyde (diluted from fresh 37% formaldehyde). After washing with PBST, the slides were stained with DAPI. For immuno-FISH, the fixed slides were stained with GFP antibody and FITC-labeled secondary antibodies and fixed with 4% formaldehyde again (this step was skipped for FISH). After dehydration, the PNA-(TTAGGC)3 probe was added to the slide. The slides were denatured at 85°C for 10 min and hybridized at 37°C for 4 hr. After sequential washing in 50% formamide/0.5×SSC (twice) and 1×SSC (twice) at 42°C for 5 min each time, the slides were stained with DAPI.
 
-## Southern blot
+### Southern blot
 
 Asynchronously cultured C. elegans samples were collected for the genomic DNA extraction. A total of 15 µg of C. elegans genomic DNA were digested with HinfI (New England Biolabs) and RsaI (New England Biolabs) and separated on a 0.6% agarose gel at 8 V/cm for 3 hr. After transfer to the membrane, southern blotting was performed using the DNA probes with four repeats of telomeric DNA (TTAGGC)4 radiolabeled with [γ-32P] ATP by T4 polynucleotide kinase.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Mixed-stage worms were collected and suspended in IP buffer (20 mM HEPES (pH 7.0), 200 mM KCl, 5 mM MgCl2, 10% glycerol, 0.1% Triton X-100, and 1 mM β-mercaptoethanol) supplemented with cOmplete Protease Inhibitor (Roche) and Phosphatase Inhibitor (Roche). After sonication, the cell extract was centrifuged at 50,000 × g for 30 min at 4°C and the supernatant was isolated. The extract was supplemented with Dynabeads protein A (Thermo Fisher Scientific) conjugated with 80 μg of antibodies or IgG as the negative control and incubated for 6 hr at 4°C. The beads were washed with high-salt buffer (20 mM HEPES (pH 7.0), 400 mM KCl, 5 mM MgCl2, 10% glycerol, 0.1% Triton X-100, and 1 mM β-mercaptoethanol) supplemented with cOmplete Protease Inhibitor (Roche) and Phosphatase Inhibitor (Roche). The samples were eluted with 0.1 M glycine (pH 2.5).
 
-## Fertility assay
+### Fertility assay
 
 Individual worms at the L4 larval stage were isolated and grown at 20°C. After reaching adulthood, the worms were transferred to a new plate every day until no eggs were laid, and viable progeny were counted approximately 24 hr after removing the parent. The parental strains, after the cessation of egg laying, were genotyped by PCR.
 
-## Sample preparation for MS analysis
+### Sample preparation for MS analysis
 
 The MS protocol was largely similar to the method described in our earlier publication (Zhang et al., 2020). The eluted samples were reduced with DL-dithiothreitol at a final concentration of 100 mM at 60°C for 30 min and supplemented with sodium dodecyl sulfate to a 1.5% final concentration. The samples were then processed according to the filter-aided sample preparation method modified from Wiśniewski et al., 2009. In short, reduced samples were diluted with 500 µl of 8 M urea and 50 mM triethylammonium bicarbonate (TEAB) solution, transferred onto Nanosep 30 k Omega filters (Pall Life Sciences), and washed once with 500 µl and twice with 200 µl of 8M urea and 50 mM TEAB solution and twice with the digestion buffer (0.5% sodium deoxycholate and 50 mM TEAB). The reduced cysteine side chains were alkylated with 10 mM methyl methanethiosulfonate diluted in digestion buffer for 30 min at room temperature and the samples were then repeatedly washed with digestion buffer. Trypsin in digestion buffer was added (300 ng) and the sample was incubated at 37°C for 4 hr, then another 300 ng portion of trypsin was added and the mixture was incubated overnight. Digested peptides were collected by centrifugation, followed by a wash with 20 µl of the digestion buffer and further centrifugation. The peptide samples were treated using the HiPPR detergent removal resin kit (PN 88305, Thermo Fisher Scientific, Waltham, MA, USA) according to the manufacturer’s instructions with 25 mM TEAB solution as the equilibration buffer. Sodium deoxycholate was precipitated and removed by acidification with 10% TFA and subsequent centrifugation. The supernatants were purified using Pierce peptide desalting spin columns (PN 89851, Thermo Fisher Scientific) according to the manufacturer’s instructions. The purified peptide samples were dried on Speedvac and reconstituted in 15 μl of 3% acetonitrile and 0.2% formic acid for the liquid chromatography-mass spectrometry (LC-MS) analysis.
 
-## LC-MS
+### LC-MS
 
 LC-MS experiments were performed on an Orbitrap Fusion Lumos mass spectrometer interfaced with an Easy-nLC1200 nanoflow liquid chromatography system (both from Thermo Fisher Scientific). A total of 8 µl out of 15 μl of each peptide sample were trapped on an Acclaim Pepmap 100 C18 trap column (100 μm × 2 cm, particle size 5 μm, Thermo Fischer Scientific) and separated on an analytical column (75 μm × 35 cm) packed in-house with Reprosil-Pur C18 material (particle size 3 μm, Dr. Maisch, Germany) using a gradient with 0.2% formic acid in water as solvent A and 80% acetonitrile with 0.2% formic acid as solvent B at a flow rate of 300 nL/min. The elution profile was as follows: 5% to 33% B in 77 min, 33% to 100% B in 3 min, and 100% B for 10 min. Precursor ion scans were performed at 120,000 target resolution with an m/z range of 375–1500 and an AGC target of 4e5. The most abundant precursors with charges 2–7 were selected for fragmentation with a maximum duty cycle of 3 s and a dynamic exclusion duration of 45 s. Precursors were isolated with a 1.0 Da window and fragmented by higher energy collision-induced dissociation at 30% collision energy with a maximum injection time of 150 ms and an AGC target 5e4, and the MS2 spectra were recorded at 30,000 resolution.
 
-## MS data analysis
+### MS data analysis
 
 Peptide and protein identification and quantification were performed using Proteome Discoverer version 2.4 (Thermo Fisher Scientific). The LC-MS files were matched against the C. elegans reference Uniprot database (May 2020) supplemented with common proteomic contaminants (26924 proteins in total) using Mascot 2.5.1 (Matrix Science, London, United Kingdom) as a database search engine with trypsin and one allowed missed cleavage as an enzyme rule, with the precursor tolerance of 10 ppm and fragment tolerance of 0.03 Da; methionine oxidation was set as a variable modification, and methylthiolation on cysteine was set as a fixed modification. Fixed Value PSM validator was used to assess the quality of peptide matches. Precursor ion quantification was accomplished via the Minora feature detection node in Proteome Discoverer 2.4, with the maximum peak intensity values used for quantification. Transfer of identifications between the runs was disabled. Abundance values for all unique peptides were used to calculate the protein abundances, and the intensity normalization was disabled.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 The experiments were not randomized, so no statistical method was used to predetermine sample size, and the investigators were not blinded to allocation during the experiments or to outcome assessment. Each conclusion in the manuscript was based on results that were reproduced in at least three independent experiments. Sample sizes, statistical tests, and p-values are indicated in the text, figures, and figure legends.

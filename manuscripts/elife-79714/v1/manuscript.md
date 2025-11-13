@@ -102,77 +102,77 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Biomedical Informatics Program, Stanford University Stanford United States
-2. https://ror.org/00f54p054 Department of Genetics, Stanford University Stanford United States
-3. https://ror.org/00b30xv10 Department of Genetics, University of Pennsylvania, Perelman School of Medicine Philadelphia United States
-4. https://ror.org/03prydq77 Department of Evolutionary Anthropology, University of Vienna Vienna Austria
-5. https://ror.org/03prydq77 Human Evolution and Archaeological Sciences, University of Vienna Vienna Austria
-6. https://ror.org/00f54p054 Stanford Archaeology Center, Stanford University Stanford United States
-7. https://ror.org/024mw5h28 University of Chicago, Department of Human Genetics Chicago United States
-8. https://ror.org/04pp8hn57 Department of History and Art History, Utrecht University Utrecht Netherlands
-9. https://ror.org/04z8k9a98 CIAS, Department of Life Sciences, University of Coimbra Coimbra Portugal
-10. https://ror.org/02be6w209 Dipartimento di Storia Antropologia Religioni Arte Spettacolo, Sapienza University Rome Italy
+1. Biomedical Informatics Program, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+2. Department of Genetics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+3. Department of Genetics, University of Pennsylvania, Perelman School of Medicine Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Department of Evolutionary Anthropology, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+5. Human Evolution and Archaeological Sciences, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
+6. Stanford Archaeology Center, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+7. University of Chicago, Department of Human Genetics Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+8. Department of History and Art History, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+9. CIAS, Department of Life Sciences, University of Coimbra Coimbra Portugal ([ROR:04z8k9a98](https://ror.org/04z8k9a98))
+10. Dipartimento di Storia Antropologia Religioni Arte Spettacolo, Sapienza University Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
 11. Archaeological Museum Zadar Zadar Croatia
-12. https://ror.org/02kb89c09 LBEIG, Population Genetics & Conservation Unit, Department of Cellular and Molecular Biology – Faculty of Biological Sciences, University of Sciences and Technology Houari Boumediene Algiers Algeria
-13. https://ror.org/02af4h206 National Academy of Sciences of Armenia, Institute of Archaeology and Ethnography Yerevan Armenia
+12. LBEIG, Population Genetics & Conservation Unit, Department of Cellular and Molecular Biology – Faculty of Biological Sciences, University of Sciences and Technology Houari Boumediene Algiers Algeria ([ROR:02kb89c09](https://ror.org/02kb89c09))
+13. National Academy of Sciences of Armenia, Institute of Archaeology and Ethnography Yerevan Armenia ([ROR:02af4h206](https://ror.org/02af4h206))
 14. French National Institute for Preventive Archaeological Research (INRAP)/CAGT UMR 5288 Toulouse France
-15. https://ror.org/001xj8m36 Centre for Applied Bioanthropology, Institute for Anthropological Research Zagreb Croatia
-16. https://ror.org/03x42jk29 Université Gustave Eiffel – Laboratoire ACP Paris France
+15. Centre for Applied Bioanthropology, Institute for Anthropological Research Zagreb Croatia ([ROR:001xj8m36](https://ror.org/001xj8m36))
+16. Université Gustave Eiffel – Laboratoire ACP Paris France ([ROR:03x42jk29](https://ror.org/03x42jk29))
 17. Palisada Ltd Split Croatia
-18. https://ror.org/00240q980 Dipartimento dei Beni Culturali, Archeologia, Storia dell'arte, del Cinema e della Musica, Università di Padova Padova Italy
-19. https://ror.org/05cq64r17 Department of Anthropology, Faculty of Biology and Environmental Protection, University of Lodz Łódź Poland
-20. https://ror.org/035xkbk20 Aix Marseille Université, CNRS, Centre Camille Jullian Aix-en-Provence France
+18. Dipartimento dei Beni Culturali, Archeologia, Storia dell'arte, del Cinema e della Musica, Università di Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+19. Department of Anthropology, Faculty of Biology and Environmental Protection, University of Lodz Łódź Poland ([ROR:05cq64r17](https://ror.org/05cq64r17))
+20. Aix Marseille Université, CNRS, Centre Camille Jullian Aix-en-Provence France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 21. Kaducej Ltd Split Croatia
-22. https://ror.org/00mv6sv71 Faculty of Humanities and Social Sciences, University of Zagreb Zagreb Croatia
+22. Faculty of Humanities and Social Sciences, University of Zagreb Zagreb Croatia ([ROR:00mv6sv71](https://ror.org/00mv6sv71))
 23. Bioarchaeology Service, Museum of Civilizations Rome Italy
 24. Museo Archeologico Nazionale di Tarquinia, Direzione Regionale Musei Lazio Rome Italy
-25. https://ror.org/01d2r8q06 Archaeological Museum in Zagreb Zagreb Croatia
-26. https://ror.org/004pv5w59 Institute of Archaeology, Slovak Academy of Sciences Nitra Slovakia
+25. Archaeological Museum in Zagreb Zagreb Croatia ([ROR:01d2r8q06](https://ror.org/01d2r8q06))
+26. Institute of Archaeology, Slovak Academy of Sciences Nitra Slovakia ([ROR:004pv5w59](https://ror.org/004pv5w59))
 27. Département des Monuments et des Sites Antiques - Institut National du Patrimoine INP Tunis Tunisia
-28. https://ror.org/05njb9z20 University of Ljubljana, Faculty of Arts, Department for Archaeology Ljubljana Slovenia
+28. University of Ljubljana, Faculty of Arts, Department for Archaeology Ljubljana Slovenia ([ROR:05njb9z20](https://ror.org/05njb9z20))
 29. Soprintendenza Archeologia, belle arti e paesaggio per le province di Sassari e Nuoro Sassari Italy
-30. https://ror.org/02be6w209 Department of Oriental Studies, Sapienza University of Rome Rome Italy
+30. Department of Oriental Studies, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
 31. Institute of Archaeology Belgrade Belgrade Serbia
-32. https://ror.org/03nadee84 Institute of Biomedical Sciences, Vilnius University Vilnius Lithuania
-33. https://ror.org/03vtpmc73 Institute of Archaeology Zagreb Croatia
-34. https://ror.org/00xngy573 Université de Lorraine, Centre de Recherche Universitaire Lorrain d' Histoire (CRULH) Nancy France
-35. https://ror.org/04mczx267 Department of Archaeologi, Shirak Centere of Armenological Studies, National Academy of Sciences Republic of Armenia Gyumri Armenia
+32. Institute of Biomedical Sciences, Vilnius University Vilnius Lithuania ([ROR:03nadee84](https://ror.org/03nadee84))
+33. Institute of Archaeology Zagreb Croatia ([ROR:03vtpmc73](https://ror.org/03vtpmc73))
+34. Université de Lorraine, Centre de Recherche Universitaire Lorrain d' Histoire (CRULH) Nancy France ([ROR:00xngy573](https://ror.org/00xngy573))
+35. Department of Archaeologi, Shirak Centere of Armenological Studies, National Academy of Sciences Republic of Armenia Gyumri Armenia ([ROR:04mczx267](https://ror.org/04mczx267))
 36. Institute of Archaeology and Ethnography of the National Academy of Sciences of the Republic of Armenia Yerevan Armenia
 37. Musée Archéologique de l'Oise Vendeuil-Caply France
-38. https://ror.org/02be6w209 Department of Environmental Biology, Sapienza University of Rome Rome Italy
+38. Department of Environmental Biology, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
 39. UMR 7041 ArScAn / French Institute of the Near East Beirut Lebanon
-40. https://ror.org/03d04qg82 Archaeology Division, Croatian Academy of Sciences and Arts Zagreb Croatia
-41. https://ror.org/04z8k9a98 CEF - University of Coimbra Coimbra Portugal
-42. https://ror.org/01c27hj86 UNIARQ - University of Lisbon Lisbon Portugal
+40. Archaeology Division, Croatian Academy of Sciences and Arts Zagreb Croatia ([ROR:03d04qg82](https://ror.org/03d04qg82))
+41. CEF - University of Coimbra Coimbra Portugal ([ROR:04z8k9a98](https://ror.org/04z8k9a98))
+42. UNIARQ - University of Lisbon Lisbon Portugal ([ROR:01c27hj86](https://ror.org/01c27hj86))
 43. Skupina STIK Zavod za preučevanje povezovalnih področij preteklosti in sedanjosti Ljubljana Slovenia
-44. https://ror.org/011r6gp69 Cardiolo-Oncology Research Collaborative Group (CORCG), Faculty of Medicine, Benyoucef Benkhedda University Algiers Algeria
-45. https://ror.org/02v6kpv12 Molecular Pathology, University Paul Sabatier Toulouse III Toulouse France
+44. Cardiolo-Oncology Research Collaborative Group (CORCG), Faculty of Medicine, Benyoucef Benkhedda University Algiers Algeria ([ROR:011r6gp69](https://ror.org/011r6gp69))
+45. Molecular Pathology, University Paul Sabatier Toulouse III Toulouse France ([ROR:02v6kpv12](https://ror.org/02v6kpv12))
 46. French National Institute for Preventive Archaeological Research (INRAP) Metz France
 47. Museum of Croatian Archaeological Monuments Split Croatia
-48. https://ror.org/02t9nm044 L’Institut français du Proche-Orient Beirut Lebanon
+48. L’Institut français du Proche-Orient Beirut Lebanon ([ROR:02t9nm044](https://ror.org/02t9nm044))
 49. Institute of Archaeology and Ethnology Polish Academy of Sciences, Centre of Interdisciplinary Archaeological Research Warsaw Poland
-50. https://ror.org/02be6w209 Department of Odontostomatological and Maxillofacial Sciences, Sapienza University of Rome Rome Italy
-51. https://ror.org/03anc3s24 Austrian Archaeological Institute, Austrian Academy of Sciences Vienna Austria
-52. https://ror.org/03prydq77 Institute of Prehistory and Early History, University of Vienna Vienna Austria
+50. Department of Odontostomatological and Maxillofacial Sciences, Sapienza University of Rome Rome Italy ([ROR:02be6w209](https://ror.org/02be6w209))
+51. Austrian Archaeological Institute, Austrian Academy of Sciences Vienna Austria ([ROR:03anc3s24](https://ror.org/03anc3s24))
+52. Institute of Prehistory and Early History, University of Vienna Vienna Austria ([ROR:03prydq77](https://ror.org/03prydq77))
 53. Thuringia State Service for Cultural Heritage and Archaeology Weimar Thuringia Germany
-54. https://ror.org/01y9bpm73 Institute of Anatomy and Cell Biology, University Medical Centre, Georg-August University of Göttingen Göttingen Germany
-55. https://ror.org/0432jq872 Mississippi State University Starkville United States
-56. https://ror.org/0406gha72 University of Nevada Las Vegas United States
+54. Institute of Anatomy and Cell Biology, University Medical Centre, Georg-August University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
+55. Mississippi State University Starkville United States ([ROR:0432jq872](https://ror.org/0432jq872))
+56. University of Nevada Las Vegas United States ([ROR:0406gha72](https://ror.org/0406gha72))
 57. Trogir Town Museum Trogir Croatia
-58. https://ror.org/002t25c44 Université Paris 1 Panthéon-Sorbonne Paris France
-59. https://ror.org/039bjqg32 Faculty of Archaeology, University of Warsaw Warsaw Poland
-60. https://ror.org/01q9h8k89 Dipartimento Asia, Africa e Mediterraneo, Università degli Studi di Napoli “L’Orientale” Naples Italy
+58. Université Paris 1 Panthéon-Sorbonne Paris France ([ROR:002t25c44](https://ror.org/002t25c44))
+59. Faculty of Archaeology, University of Warsaw Warsaw Poland ([ROR:039bjqg32](https://ror.org/039bjqg32))
+60. Dipartimento Asia, Africa e Mediterraneo, Università degli Studi di Napoli “L’Orientale” Naples Italy ([ROR:01q9h8k89](https://ror.org/01q9h8k89))
 61. Museum of Vojvodina Novi Sad Serbia
-62. https://ror.org/01tv5y993 Department of Anthropology, Natural History Museum Vienna Vienna Austria
-63. https://ror.org/01v1rak05 Chair and Department of Normal Anatomy, Faculty of Medicine and Dentistry, Pomeranian Medical University Szczecin Poland
+62. Department of Anthropology, Natural History Museum Vienna Vienna Austria ([ROR:01tv5y993](https://ror.org/01tv5y993))
+63. Chair and Department of Normal Anatomy, Faculty of Medicine and Dentistry, Pomeranian Medical University Szczecin Poland ([ROR:01v1rak05](https://ror.org/01v1rak05))
 64. Musée de La Cour d'Or, Eurométropole de Metz Metz France
 65. Department of Archeology, Center for Conservation and Archeology of Montenegro Cetinje Montenegro
-66. https://ror.org/011r6gp69 Insitut d’Archeologie, University Algiers 2 Algiers Algeria
+66. Insitut d’Archeologie, University Algiers 2 Algiers Algeria ([ROR:011r6gp69](https://ror.org/011r6gp69))
 67. Université de Franche Comté / UMR Chrono-Environnement Besançon France
-68. https://ror.org/03d04qg82 Anthropological Centre, Croatian Academy of Sciences and Arts Zagreb Croatia
-69. https://ror.org/0190ak572 Department of Anthropology, New York University New York United States
+68. Anthropological Centre, Croatian Academy of Sciences and Arts Zagreb Croatia ([ROR:03d04qg82](https://ror.org/03d04qg82))
+69. Department of Anthropology, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 70. Department of Genetics, Harvard Medical School Boston United States
-71. https://ror.org/00f54p054 Department of Biology, Stanford University Stanford United States
+71. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -194,7 +194,7 @@ We sequenced 204 new historical period genomes from across Europe and the Medite
 
 ## Results
 
-## 204 new historical genomes from Europe and the Mediterranean
+### 204 new historical genomes from Europe and the Mediterranean
 
 We collected whole genomes from 204 individuals across 53 archaeological sites in 18 countries spanning Europe and the Mediterranean (Figure 1—figure supplement 1), 26 of these individuals were recently reported (Moots et al., 2022). This collection includes the first historical genomes (Iron Age and later, i.e. after 1000 BCE) from present-day Armenia, Algeria, Austria, and France. Dates for 126 samples were directly determined through radiocarbon dating, and were used alongside archaeological contexts to infer dates for the remaining samples.
 
@@ -202,7 +202,15 @@ DNA was extracted from either the powdered cochlear portion of the petrous bone 
 
 For downstream integration with published data, pseudohaploid genotypes were called for the 1240 k SNP panel (Mathieson et al., 2015), resulting in a median of 685,058 SNPs (167,000–1,029,345) per sample. We analyzed newly reported genomes in conjunction with 2033 present-day genomes, 1998 prehistoric genomes, and 764 published historical period genomes (Clemente et al., 2021; Kovacevic et al., 2014, Mallick et al., 2023; Pagani et al., 2016; Saupe et al., 2021; Žegarac et al., 2021, primary AADR sources cited in Materials and methods). Genomes were grouped by regions and time periods (Figure 1) and analyzed using principal component analysis (PCA) and qpAdm modeling (Haak et al., 2015).
 
-## Local historical population structure varies across regions
+![Figure 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig1-v1.jpg)
+
+**Figure 1.:** (A) 204 newly reported genomes (black circles) are shown alongside published genomes (gray circles), ordered by time and region (colored the same way as in B). (B) Sampling locations of newly reported (black) and published (gray) genomes are indicated by diamonds, sized according to the number of genomes at each location.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Each circle represents a location, the size of the circle corresponds to the number of individuals sampled from that location. Circles are colored by their time period: Bronze Age is green (Pian Sultano), Iron Age is yellow (two recently reported sites Tarquinia and Kerkouane), Imperial Rome and Late Antiquity is dark blue, Medieval Ages and Early Modern are light blue (Palazzo della Cancelleria, Velić, Gardun, Mirine-Fulfinum). Note that the Bronze Age and Iron Age sites were recently reported in Moots et al., 2022.
+
+### Local historical population structure varies across regions
 
 To investigate historical population structure, we categorized the data into 14 geographical regions, split into three sub-periods of the historical period: Iron Age (1000–1 BCE), Imperial Rome & Late Antiquity (1–700 CE), and Medieval Ages & Early Modern (700–1950 CE). We then characterized inter-individual heterogeneity within these spatio-temporal groups by examining (1) variation of projections onto a PCA space of present-day genomes (Figure 2—figure supplement 1), (2) genetic groups identified by qpAdm and clustering across time within a region, and (3) admixture modeling of genetic groups.
 
@@ -210,7 +218,31 @@ A majority of regions have highly heterogeneous populations in at least one hist
 
 Regional vignettes reveal various patterns of historical population structure. In Armenia, for example, the population is highly homogeneous at any given time (Figure 2). After the Copper Age, there are two distinct genetic clusters, separated by a temporal split around 772–403 BCE (Figure 2BC). The earlier cluster (C1) includes newly reported samples (n=5) from Beniamin and published ones (n=6) from five other sites. This cluster cannot be modeled by any single source of ancestry using existing data. The later cluster (C3), which contains newly reported samples (n=12) from Beniamin dating between 403 BCE-500 CE, is genetically similar to present-day Armenians (excluding two Kurdish individuals; Figure 2C). Despite the split, there is evidence of partial continuity between the earlier and later clusters: the later (C3) can be modeled using around 50% of the earlier cluster (C1) and an additional source of Steppe ancestry. Historical genomes from Northern Europe, particularly newly reported genomes from Lithuania and Poland, exhibit a similar level of homogeneity (Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig2-v1.jpg)
+
+**Figure 2.:** (A) Sampling locations of ancient genomes (open circles) colored by their genetic cluster identified using qpAdm modeling. (B) Date ranges for the genomes: each line represents the 95% confidence interval for the radiocarbon date or the upper and lower limit of the inferred date, and the point represents the midpoint of that range. (C) Projections of the genomes onto a PCA of present-day genomes (gray points labeled by their population). Present-day genomes from Armenia are shown with dark gray open circles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** PCA was performed on 829 individuals (480,712 snps) using smartpca v1600. The following parameters were used: 5 outlier iterations (numoutlieriter), 10 principal components along which to remove outliers (numoutlierevec), altnormstyle set to NO, with least squares projection turned on (lsqproject set to YES).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Each row displays data from a single study region. The first column shows a map with the sampling locations for the individuals, while columns two through four show the individuals projected onto a PCA space of present-day genomes (gray points) (populations are labeled in the far right panel in row 1 and in Figure 2—figure supplement 1). Individual ancient genomes in the map and PCA panels are colored by ancestry clusters identified using qpAdm. Colors are not matched across regions. Star points are putative outliers, that is individuals with ancestry that is underrepresented in the region. They are not colored by ancestry clusters so as to reduce visual clutter.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (left) No significant correlation was detected between the median number of SNPs covered across the individuals in a cluster and cluster size. (right) There also was no significant difference in the number of SNPs covered between outlier and non-outlier clusters.
+
 In contrast to the homogeneity of the Armenian population, most of the regions, including Italy, Southeastern Europe, and Western Europe, had strikingly heterogeneous populations. Newly collected samples reinforce previous findings of high heterogeneity in Rome, including a large portion of the population having affinities for present-day Near Eastern populations (Antonio et al., 2019; Posth et al., 2021; Figure 3—figure supplement 1). Interestingly, Southeastern European and Western European individuals during the Imperial Roman & Late Antiquity period also exhibit high heterogeneity, on par with that of contemporaneous Italy (Figures 3 and 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig3-v1.jpg)
+
+**Figure 3.:** (A) Sampling locations of genetic clusters are represented by a single point per location. Outlier ancestries are black stars, all others are open circles colored by genetic cluster. (B) Colored bars span the minimum and maximum of the date ranges of samples (95% confidence interval from radiocarbon dating or archaeological range). Points are the mean of an individual’s date range. (C) Projections of the ancient genomes onto a PCA of present-day genomes (gray points). Population labels for the PCA reference space are shown in Figure 2C. Present-day genomes from Southeastern Europe are shown with dark gray open circles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Ancient Italian genomes (colored points) from the Imperial Roman and Late Antiquity period were projected onto principal components of present-day genomes (gray points, populations labeled in Figure 2—figure supplement 1). Present-day Italian genomes are highlighted by a gray filled ellipse. Star points are outliers and circle points are non-outliers. Outlier clusters that can be modeled using contemporaneous populations are labeled with the potential source region.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig4-v1.jpg)
 
@@ -220,15 +252,31 @@ Furthermore, these ancestries are often shared across regions. In Southeastern E
 
 Overall, we see remarkable local genetic heterogeneity as well as cross-regional similarities which point to common ancestry sources and, on a broader scale, demographic events affecting different regions in similar ways.
 
-## At least 7-11% of historical individuals are ancestry outliers
+### At least 7-11% of historical individuals are ancestry outliers
 
 The high regional genetic heterogeneity with long range, cross-regional similarities suggests historical populations were highly mobile. We therefore sought to quantify the amount of movement during the historical period by estimating the proportion of individuals who are ancestry outliers with respect to all individuals found in the same region. We considered an individual an outlier if they belonged to an ancestry cluster that is underrepresented (consisting of fewer than 5% of individuals in a region or at most two individuals) within their sampling region from the Bronze Age up to present-day. To focus on first-generation migrants as well as long-range movements, we further identified outlier individuals who can be modeled as 100% (i.e. ‘one-component model’) of a majority ancestry cluster found in a different region.
 
 In total, we identified 11% of individuals as outliers, and could connect 7% of individuals to a putative source in a different region (Figure 5A). Based on the regions where these outliers and their sources originated, we created a network to illustrate their movements (Figure 5B). This network reveals the interconnectedness of Europe and the Mediterranean during the historical period. For example, as discussed above, the Armenian population is quite homogeneous (Figure 2). Unsurprisingly, no outliers were found within Armenia; however, we found outlier individuals in the Levant and Italy who can be putatively traced back to Armenia according to their ancestry (Figure 5C; blue outgoing arrows from Armenia). In contrast, the heterogeneous population in Italy connects it to many other regions, with bi-directional movement in most cases. In North Africa, outliers found in Iron Age Tunisia (Moots et al., 2022) indicate movements from many regions in Europe, and North African-like outliers were found in Italy and Austria (Western Europe). North African ancestry in Italy is supported by a single previously reported individual from the Imperial Roman period (R132; Antonio et al., 2019). Similar North African ancestry in Western Europe is supported by a single individual, R10667, from Wels, Austria, a site located on the frontier of the Roman Empire (C28 in Figure 4). This individual from Austria can be modeled using Canary Islander individuals from the Medieval Ages or an Iron Age outlier (distinguished by having more sub-Saharan ancestry) from Kerkouane, a Punic city near Carthage in modern-day Tunisia.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig5-v1.jpg)
+
+**Figure 5.:** (A) The proportions of outliers in each region were determined by individual pairwise qpAdm modeling followed by clustering. (B) Sources were inferred by one component qpAdm modeling of resulting clusters with all genetic clusters in the dataset. In the network visualizations, nodes are regions and directed edges are drawn from sources to outliers (i.e. potential migrants). The full network of source to outlier is shown. (C) Examples of individual regions are shown in greater detail.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The proportions of males and females do not differ significantly between outlier and non-outlier groups (p=0.4117). When outliers (with and without source) are treated as one group, there is still no significant association with outlier status and sex (p=0.633).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Geographic distance between the sampling locations of ‘outlier with source’ and the location of their putative source was calculated for each outlier. The mean distance was calculated if there were multiple putative sources.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Routes and travel times were approximated using orbis.stanford.edu, a geospatial network model of the Roman Empire. Routes shown are the fastest routes during Summer for civilians, utilizing road, river, coastal sea, and open sea, and by foot if on road. Routes for military individuals (not shown) are marginally faster.
+
 The 7% estimate for outliers with source should be considered conservative for the proportion of ‘non-local’ individuals. There are several cases where a cluster comprises more than 5% of the individuals in the region, but are clearly of a different ancestry than the majority and seem to be transient (only found in a single sub-period of the historical period). For example, in Southeastern Europe (Figure 3B), Imperial Roman & Late Antiquity individuals in C8 are (1) of distant ancestry (Near Eastern) and (2) not found in previous or subsequent time periods. However, since there are five individuals in this cluster, it does not meet our strict criteria for outlier consideration. Additionally, many clusters of underrepresented ancestry cannot be modeled as one-component models because they are recently admixed (i.e. require two or more ancestry components) or of ancestry not sampled elsewhere. Thus, we expect the actual proportion of individuals involved in long distance movements to be higher than reported here.
 
-## Spatial population structure is relatively stable in the last 3,000 years
+### Spatial population structure is relatively stable in the last 3,000 years
 
 The remarkable amount of heterogeneity and mobility in the historical period leads to the question of what impact this might have had on population structure over time. To investigate this, we sought to quantify the overall change in population structure across time, from prehistoric to present-day. To assess the spatial structure of population differentiation, we calculated FST across groups of individuals on a sliding spatial grid in each time period and related it to their mean geographic distance. In each time period, we recovered the classical pattern of isolation-by-distance (Figure 6A), where individuals closer in geographic space are also more similar genetically. Across time periods, we see a large decrease in overall FST from the Mesolithic & Neolithic periods to the Bronze Age (approximately 10,000–2300 BCE), coinciding with the major prehistoric migrations (Haak et al., 2015; Lazaridis et al., 2014). From the Bronze Age onward, however, FST does not decrease further with time, indicating that the level of genetic differentiation across space is relatively stable from the Bronze Age to present-day.
 
@@ -239,6 +287,18 @@ The remarkable amount of heterogeneity and mobility in the historical period lea
 To assess not only the amount, but also the structure of geographic population differentiation, we compared the ‘genetic maps’ of historical period and present-day genomes. To construct these ‘maps’, we performed principal component analysis on 829 present-day European and Mediterranean genomes sampled across geographical space (Figure 6B, bottom) and projected historical period genomes onto the same PC space. Echoing close correspondence between genetic structure and geographic space in present-day Europeans (Novembre et al., 2008), we recovered similar spatial structure for historical samples as well, although noisier due to a narrower sampling distribution and higher local genetic heterogeneity (Figure 6B, middle). The similarity in structure between present-day and historical period is especially striking in comparison to a projection of prehistoric genomes, which shows much weaker correspondence to the present-day PCA as well as to geographic space (Figure 6B, top). Together, our analyses indicate that European and Mediterranean population structure has been relatively stable over the last 3000 years.
 
 This raises the question: is it surprising for stable population structure to be maintained in the presence of ~7–11% long-range migration? To address this, we simulated Wright-Fisher populations evolving neutrally in continuous space. In these simulations, spatial population structure is established through local mate choice and limited dispersal, which we calibrated to approximately match the spatial differentiation observed in historical-period Europe (Figure 6A, Figure 7A and Figure 7—figure supplement 1, maximum FST of ~0.03). We then allowed a proportion of the population to disperse longer distances, empirically matching the migration distances we observed in the data during the historical period (Figure 7—figure supplement 2). Even with long-range dispersal as low as 4%, we observe decreasing FST over 120 generations (~3000 years with a generation time of 25 years) as individuals become less differentiated genetically across space (Figure 7B). At 8%, FST decreases dramatically within 120 generations as spatial structure collapses to the point that it is hardly detectable in the first two principal components (Figure 7C). These simulations indicate that under a basic spatial population genetics model we would expect structure to collapse by present-day given the levels of movement we observe.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig7-v1.jpg)
+
+**Figure 7.:** (A) A base model of spatial structure is established by calibrating per-generation dispersal rate to generate a maximum FST of ~0.03 across the maximal spatial distance, and visualized using PCA. In addition to this base dispersal, either 4% (B) or 8% (C) of individuals disperse longer distances, and the effect is tracked by analyzing spatial FST through time, as well as PCA after 120 generations of long-range dispersal.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** We used the pair N=50,000 & sigmaDisp = 0.02 for all other simulations we report.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/79714/elife-79714-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** We used a value of 0.20 for all other simulations we report.
 
 ## Discussion
 
@@ -256,7 +316,7 @@ Based on genetic analyses and the rich historical record, we hypothesize that bo
 
 ## Materials and methods
 
-## Sample collection and archaeological sites
+### Sample collection and archaeological sites
 
 The archaeological context for ancient individuals reported in this study is detailed in Supplementary file 1. Site descriptions were written by the contributing archaeologists. Descriptions of individual-level burials are included where possible.
 
@@ -264,7 +324,7 @@ Sampling was performed to maximize coverage across Europe and the Mediterranean,
 
 Although we aimed to collect samples in the Imperial Roman and Late Antiquity period (approximately 1 CE-700 CE), some samples fall outside of this period due to limited sample availability and/or lack of date specificity at the time of sampling (prior to radiocarbon dating).
 
-## Date determination for individuals and time periods
+### Date determination for individuals and time periods
 
 Determination of time periods and boundaries were influenced by (1) the wide geographic range represented in the newly reported and published data (including historical changes in those regions), (2) the amount of data available in the proposed time periods, (3) the amount of genetic change observed during a time interval, and (4) the types of temporal comparisons made in the analysis.
 
@@ -274,11 +334,11 @@ For samples not directly dated, we assigned the range of directly dated samples 
 
 In the study we use a single date estimate (for both newly reported and published samples) which is the midpoint of the 95% confidence interval when using AMS dates, and the average of the lower and upper bound inference dates when using archaeological context for dating. The dating approach used for each sample is included in files Supplementary file 1 (archaeological context) and Supplementary file 2 (sample metadata). The full AMS and calibration results are reported in Supplementary file 3.
 
-## DNA extraction, library preparation, and sequencing
+### DNA extraction, library preparation, and sequencing
 
 The 204 ancient genomes reported in this study, 26 of which were recently reported in Moots et al., 2022, represent a subset of samples screened from 53 archaeological sites across 18 countries. We isolated and finely ground the cochlear regions of the petrous bones in dedicated clean room facilities at the University of Vienna following the protocols described in Pinhasi et al., 2019; Pinhasi et al., 2015. Using 50 mg of bone powder, DNA was extracted by 18 hr incubation of the powder in a solution of Proteinase-K and EDTA. DNA was eluted in 50 μl 10 mM Tris-HCl, 1 mM EDTA, 0.05% Tween-20, pH 8.0 as in Dabney et al., 2013; Rohland and Hofreiter, 2007. 12.5–25 µL of DNA extract was used to prepare partial uracil–DNA–glycosylase (UDG) double stranded libraries as described in Rohland et al., 2015. After a partial (30 minute) UDG treatment, library preparation followed a modified version of the Meyer and Kircher, 2010 protocol (Meyer and Kircher, 2010): the initial DNA fragmentation step was not required and MinElute PCR purification kits (Qiagen) were used for all library clean-up steps. Libraries were measured on a qPCR to determine the ideal cycle number to avoid over or under-amplification. 10-20 uL of library was then double indexed using Agilent PfuTurbo Cx HotStart DNA Polymerase with conditions: 95 °C for 5 min followed by the qPCR-determined cycles of 95 °C for 15 s, 60 °C for 30 s and 72 °C for 30 s with a final elongation at 72 °C for 5 min. After indexing, the libraries were purified using the MinElute system (Qiagen) and eluted in 25 μL of 1 mM EDTA, 0.05% Tween-20. Libraries were screened based on Qubit concentration and visual validation of Bioanalyzer peaks for an initial low coverage (NextSeq or Novaseq) screening run.
 
-## Processing sequence data and sample screening
+### Processing sequence data and sample screening
 
 Newly reported samples were initially sequenced to low coverage on MiSeq or NextSeq for screening. Following demultiplexing of the sequencing libraries, reads were trimmed, aligned, filtered for quality, and deduplicated. The following sequence data processing pipeline was applied to both screening and full sequencing runs for new data.
 
@@ -292,29 +352,29 @@ Contamination rates were estimated with three methods: (1) damage pattern and po
 
 For passing samples, processed data from all sequencing runs were merged into a single BAM file. The 204 new samples that passed quality filters have a median genome-wide depth of 0.92 x (0.16x to 2.38x).
 
-## Calling pseudohaploid genotypes
+### Calling pseudohaploid genotypes
 
 Pseudohaploid genotypes for study samples were called by randomly choosing one allele from each site where there was read coverage, following the approach and software provided by Stephan Schiffels (https://github.com/stschiff/sequenceTools; Schiffels, 2022). Variants were called for the 1240 k SNP panel, which is commonly used for capture-based sequencing of ancient samples (Mathieson et al., 2015). For the newly reported samples, a median of 685,058 SNPs (167,000–1,029,345) were covered per sample. Data was output in eigenstrat format. This pipeline was also used to call genotypes for two published ancient DNA datasets which at the time were only available in BAM (sequence read) format (Clemente et al., 2021; Žegarac et al., 2021).
 
-## Combining new genotypes with ancient and present-day published data
+### Combining new genotypes with ancient and present-day published data
 
 Newly processed pseudohaploid data was merged with several datasets. Most of the published data was retrieved from the Allen Ancient Data Resource (AADR) v44.3 (January 2021) (Allen Ancient DNA Resource, 2021; Mallick et al., 2023): a compilation of pseudohaploid and diploid genotypes for 5,225 ancient and 3,720 present-day individuals (1000 Auton et al., 2015; Agranat-Tamir et al., 2020; Allentoft et al., 2015; Amorim et al., 2018; Antonio et al., 2019; Bergström et al., 2020; Biagini et al., 2019; Brace et al., 2019; Broushaki et al., 2016; Brunel et al., 2020; Cassidy et al., 2020; Cassidy et al., 2016; Damgaard et al., 2018; de Barros Damgaard et al., 2018; Ebenesersdóttir et al., 2018; Feldman et al., 2019a; Feldman et al., 2019b; Fernandes et al., 2020; Fernandes et al., 2018; Fregel et al., 2018; Fu et al., 2016; Furtwängler et al., 2020; Gamba et al., 2014; Gokhman et al., 2020; González-Fortes et al., 2019; González-Fortes et al., 2017; Günther et al., 2018; Günther et al., 2015; Haber et al., 2020; Haber et al., 2019; Haber et al., 2017; Harney et al., 2018; Broushaki et al., 2016; Järve et al., 2019; Jeong et al., 2019; Jones et al., 2017; Jones et al., 2015; Keller et al., 2012; Kılınç et al., 2016; Krzewińska et al., 2018b; Krzewińska et al., 2018a; Lamnidis et al., 2018; Lazaridis et al., 2017; Lazaridis et al., 2016; Lazaridis et al., 2014; Linderholm et al., 2020; Lipson et al., 2017; Mallick et al., 2016; Malmström et al., 2019; Morrison et al., 2020; Margaryan et al., 2020; Martiniano et al., 2017; Martiniano et al., 2016; Mathieson et al., 2018; Mathieson et al., 2015; Mittnik et al., 2019; Mittnik et al., 2018; Narasimhan et al., 2019; Nikitin et al., 2019; Olalde et al., 2019; Olalde et al., 2018; Olalde et al., 2015; Olalde et al., 2014; Omrak et al., 2016; O’Sullivan et al., 2018; Patterson et al., 2012; Prüfer et al., 2017; Rivollat et al., 2020; Rodríguez-Varela et al., 2017; Saag et al., 2019; Saag et al., 2017; Sánchez-Quinto et al., 2019; Schiffels et al., 2016; Schroeder et al., 2019; Schuenemann et al., 2017; Sikora et al., 2017; Skoglund et al., 2014; Skourtanioti et al., 2020; Unterländer et al., 2017; Valdiosera et al., 2018; van den Brink et al., 2017; Veeramah et al., 2018; Villalba-Mouco et al., 2019; Wang et al., 2019; Zalloua et al., 2018). We also included relevant genetic data made available by authors that were not in the AADR: present-day genomes from the Balkans (Kovacevic et al., 2014), present-day genomes from 4 Poles, 3 Germans, and 2 Moldavians (Pagani et al., 2016), and Bronze Age Italian genomes (Saupe et al., 2021). Pseudohaploid genotypes for published Bronze Age Aegean genomes (Clemente et al., 2021) and Bronze Age Serbian genomes (Žegarac et al., 2021) were generated from BAM files using our pipeline. All published genomes were filtered for contamination based on reported contamination levels in the original study and SNP coverage based on the genomic data. All published samples that contributed to this study are listed in Supplementary file 4. To ensure maximum overlap with present-day and ancient samples in analyses, the merged dataset was subset to SNPs in the Human Origin Panel array, resulting in a total of 481,259 SNPs. For PCA and qpAdm modeling, SNPs that are transitions at CpG sites (n=76,678) were excluded since they may have arisen from DNA damage as opposed to true genetic variation.
 
-## Principal component analysis (PCA)
+### Principal component analysis (PCA)
 
-## Setting up the principal component analysis
+#### Setting up the principal component analysis
 
 Principal component analysis was performed on genotypes from present-day and Mediterranean individuals using smartpca v16000 (https://github.com/chrchang/eigensoft/blob/master/POPGEN/README; Chang, 2013). The following parameters were used: 5 outlier iterations (numoutlieriter), 10 principal components along which to remove outliers (numoutlierevec), altnormstyle set to NO, with least squares projection turned on (lsqproject set to YES). To calculate principal components only using present-day individuals, a file (poplistname) was provided with the population names of present-day individuals, randomly subsampled per population. After outlier removal (which removed 55 samples), 829 individuals and 480,712 SNPs were used in the initial analysis. All individuals (non ‘reference’ present-day genomes, and all of the ancient individuals) whose population was not listed in the poplistname file were projected onto the calculated principal components. In the paper, we refer to the individuals used in the calculation of principal components as belonging to the ‘reference PCA space’. These ‘reference’ genomes were used to calculate the PCs because (1) they represent a wide range of present-day variation and (2) the genotypes tend to be of high quality.
 
-## Visual representation of PCA
+#### Visual representation of PCA
 
 In the figures, present-day genomes used in the reference space are generally colored gray in order to illustrate the background space of genetic variation. To reduce visual clutter and emphasize the ancient genomes, these present-day ‘reference’ genomes are typically unlabeled. Labels for these populations are shown in Figure 2—figure supplement 1.
 
-## Calculation of FST
+### Calculation of FST
 
 To assess the extent of genetic differentiation across geographic space within a time period, we calculated the Fixation index (FST) between groups of individuals on a sliding spatial grid. Each grid cell measured 10 degrees longitude by 10 degrees latitude, and was slid by 1 degree in both directions (north and east) nine times to build a total of 10 spatial grids. For each of these grids, pairwise FST was calculated between all populated 10-by-10 grid cells using Hudson’s estimator, correcting for unequal sample size (Bhatia et al., 2013). In addition to FST, we also calculated the average geographic distance (in kilometers) between all individuals across pairs of grid cells to assess how spatial distance relates to genetic differentiation. To visualize this relationship, we used lowess smoothing as implemented in python’s statsmodels package (statsmodels.api.nonparametric.lowess, v. 0.12.2). To infer confidence intervals for the lowess smoothing estimates, we devised a spatial bootstrapping procedure. Our bootstrap approach samples pairs of grid cells in a way that always samples all overlapping cells or none of them, so individuals are either fully included in a bootstrap replicate or not at all. This prevents double-counting individuals since they contribute to several comparisons across space due to the sliding grid.
 
-## Modeling ancestry and identifying outliers using qpAdm
+### Modeling ancestry and identifying outliers using qpAdm
 
 We used the qpAdm tool of admixtools 2.0 to build a workflow that:
 
@@ -326,13 +386,13 @@ For our reference populations, we chose a set similar to those previously used t
 
 Mbuti.DG (n=4), WHG (n=8), Russia_Ust_Ishim.DG (n=1), CHG (n=2), EHG (n=3), Iran_GanjDareh_N (n=8), Israel_Natufian_published (n=3), Jordan_PPNB (n=6), Laos_Hoabinhian (n=1), Russia_EBA_Yamnaya_Samara (n=9), Onge (n=6), Spain_ElMiron (n=1), Turkey_N_published (n=8), Russia_MA1_HG (n=1), Morocco_Iberomaurusian (n=6), Czech_Vestonice16 (n=1).
 
-## Individual-based one-component models within regions
+#### Individual-based one-component models within regions
 
 In the first step of our workflow, we perform one-component qpAdm tests between all pairs of individuals from the same region, from the Copper Age (inclusive) up to present-day (exclusive). As mentioned above, this approach tests against the null hypothesis that the two individuals do form a clade, with low p-values indicating a rejection of that hypothesis. Low qpAdm p-values thus suggest that the test individuals are not more closely related to each other than to one or more populations in the reference set. To convert the qpAdm p-value into a measure of dissimilarity (d), we calculate d = -log10(p-value), where a large value of d indicates a low p-value, and thus a rejection of the null hypothesis of the two individuals forming a clade.
 
 To cluster individuals into groups of genetically similar individuals, we performed hierarchical clustering on the dissimilarity matrix constructed from all pairwise values of d within a region. Hierarchical clustering was performed using the UPGMA algorithm as implemented in python’s scipy.cluster.hierarchy (v. 1.6.1). The hierarchical clustering was then split into flat clusters using a dissimilarity cutoff of 1.3, which corresponds to a nominal p-value cutoff of 0.05. Intermediate results from the pairwise analysis and clustering are shown for each region in Appendix 1.
 
-## Identifying ancestry outliers and their potential sources
+#### Identifying ancestry outliers and their potential sources
 
 Once clusters within regions were identified as described above, we classified them into two groups based on size. Clusters consisting of less than 5% of the total population or no more than two individuals in the region (across time) were classified as outlier candidates, whose ancestry is underrepresented in the region they were sampled. All other clusters were classified as majority clusters. Following this classification of clusters, we then split each cluster by time period (Copper Age, Bronze Age, Iron Age, Imperial Rome & Late Antiquity, Middle Ages and Early Modern), to end up with a region_period_cluster sub-classification. All downstream analyses were done using these region_period clusters.
 
@@ -346,11 +406,11 @@ If there were still multiple valid sources following the model competition schem
 
 Among the outliers identified, we did not find a significant sex bias compared to non-outliers. Overall, there are more males than females in the dataset. However, the proportions of males in non-outliers, outliers with source, and outliers without source do not differ significantly by a Chi-squared test (p-value = 0.4117, df = 2; Figure 5—figure supplement 1). When outliers (with and without source) are treated as one group, there is still no significant association with outlier status and sex (p-value = 0.633, df = 1).
 
-## Admixture modeling with qpAdm
+#### Admixture modeling with qpAdm
 
 For targeted analyses of other clusters beyond just outlier candidates, for example to annotate Figures 2—4, we also used cluster-based qpAdm. In addition to one-component models as described above, we also used two-component models of admixture. These models test the hypothesis that a focal target cluster can be modeled as a two-way admixture of two sources (or ‘left’ populations). As above, a p-value below the threshold rejects this hypothesis, that is the proposed admixture model is not a good fit and a different model needs to be considered to disentangle the admixture scenario in question.
 
-## Simulations
+### Simulations
 
 To assess how spatial population structure would be impacted by different modes of dispersal, we set up forward simulations in continuous 2D space using SLiM v. 3.6 (Haller and Messer, 2019). The aim of these simulations was to approximate the extent of spatial population structure we observe by the beginning of the Iron Age in Western Eurasia, after the major prehistoric migrations had taken place. To achieve that, we decided not to attempt simulating the precise ancestry composition of populations in different regions at that time, but rather to simulate simply the extent of spatial structure as measured by the relationship of population differentiation (FST) and geographic distance. We chose the SLiM simulation framework to make use of its extensive feature set to simulate individuals in continuous space. We simulated diploid genomes made up of a single, 108 bp long chromosome, with recombination rate and mutation rate set to 10–8. We used the default Wright-Fisher simulation mode, where a single population of constant size N is simulated with non-overlapping populations, that is each generation is made up of offspring generated from the previous generation. Spatial structure is established by associating each individual with a continuous 2D coordinate (i.e. latitude and longitude), and by using these coordinates to govern three demographic processes: mate choice, competition, and dispersal. An overview of how these processes can be set up to interact in SLiM can be found in Recipe 15.4 of SLiM v. 3.6 (see e.g. here: https://github.com/MesserLab/SLiM/tree/v3.6/SLiMgui/Recipes; Haller, 2021). Briefly, for mate choice, a Gaussian interaction function with maxDistance = 0.1, maxStrength = 1.0, sigma = 0.02 is used to govern a mateChoice callback using the strength of that interaction function. For competition, another Gaussian interaction function with maxDistance = 0.3, maxStrength = 3.0, sigma = 0.1 is used to calculate competition using the totalNeighborStrength vector of that interaction function to scale an individual’s relative fitness as 1.1 - competition / N. Finally, we establish local dispersal through a modifyChild callback, where a newly generated offspring’s position is drawn from a Gaussian centered at the location of the maternal individual with standard deviation sigmaDisp.
 
@@ -368,6 +428,6 @@ We aimed to choose a sigmaDispLR that approximately matches the empirical distri
 
 Finally, we analyzed simulated ‘present-day’ genomes (i.e. after 2120 generations of SLiM) using PCA. We used the sklearn.decomposition.PCA module (scikit-learn v. 0.24.2) with the svd_solver == ‘arpack’ option to run non-probabilistic PCA to calculate the first 10 principal components. Similarly to how the empirical data was analyzed with smartpca, we also did 5 rounds of iterative outlier removal, removing individuals from the PCA that deviated by more than six standard deviations along any of the 10 principal components. The number of variants contributing to these PCA were 624,617, 625,669, and 626,052 for Figure 7A, B and C respectively, and thus comparable to the number of variants contributing to our data analysis.
 
-## Ethics
+### Ethics
 
 This study follows ethics guidelines adopted by the ancient DNA field (Alpaslan-Roodenberg et al., 2021). A clear plan of research was laid out before the collection of samples, leading us to focus on sampling from under-sampled historical regions in Eurasia and therefore minimize unnecessary destruction of human remains. The research intent for these samples was clearly communicated to caretakers of the samples prior to collection. Local anthropologists, archaeologists, and museum directors from each geographic region were involved in the sample acquisition, extraction from skeletal material, and interpretation of genetic results. The genetic findings regarding individual samples from each region were communicated to local collaborators, all of whom were included as co-authors on the paper and were supportive of the final results. The involvement of our local collaborators was essential for the interpretation of the genetic results through their input on the historical and archaeological characterization of the specimens. We have supported our local collaborators with immediate access to the raw genetic data, and by communicating results in written and oral forums. Authorities responsible for all archaeological sites provided written documentation for their specimens to be included in this study through collaboration with the Pinasi Lab (Vienna, Austria).

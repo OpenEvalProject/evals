@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Molecular & Cellular Biology, Harvard University Cambridge United States
-2. https://ror.org/03vek6s52 Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
-3. https://ror.org/03vek6s52 Howard Hughes Medical Institute, Harvard University Cambridge United States
+1. Department of Molecular & Cellular Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Howard Hughes Medical Institute, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
 ## Abstract
 
-Genetic variation is known to contribute to the variation of animal social behavior, but the molecular mechanisms that lead to behavioral differences are still not fully understood. Here, we investigate the cellular evolution of the hypothalamic preoptic area (POA), a brain region that plays a critical role in social behavior, across two sister species of deer mice ( Peromyscus maniculatus and P. polionotus ) with divergent social systems. These two species exhibit large differences in mating and parental care behavior across species and sex. Using single-nucleus RNA-sequencing, we build a cellular atlas of the POA for males and females of both Peromyscus species. We identify four cell types that are differentially abundant across species, two of which may account for species differences in parental care behavior based on known functions of these cell types. Our data further implicate two sex-biased cell types to be important for the evolution of sex-specific behavior. Finally, we show a remarkable reduction of sex-biased gene expression in P. polionotus , a monogamous species that also exhibits reduced sexual dimorphism in parental care behavior. Our POA atlas is a powerful resource to investigate how molecular neuronal traits may be evolving to give rise to innate differences in social behavior across animal species.
+Genetic variation is known to contribute to the variation of animal social behavior, but the molecular mechanisms that lead to behavioral differences are still not fully understood. Here, we investigate the cellular evolution of the hypothalamic preoptic area (POA), a brain region that plays a critical role in social behavior, across two sister species of deer mice (Peromyscus maniculatus and P. polionotus) with divergent social systems. These two species exhibit large differences in mating and parental care behavior across species and sex. Using single-nucleus RNA-sequencing, we build a cellular atlas of the POA for males and females of both Peromyscus species. We identify four cell types that are differentially abundant across species, two of which may account for species differences in parental care behavior based on known functions of these cell types. Our data further implicate two sex-biased cell types to be important for the evolution of sex-specific behavior. Finally, we show a remarkable reduction of sex-biased gene expression in P. polionotus, a monogamous species that also exhibits reduced sexual dimorphism in parental care behavior. Our POA atlas is a powerful resource to investigate how molecular neuronal traits may be evolving to give rise to innate differences in social behavior across animal species.
 
 ## Introduction
 
@@ -36,9 +36,45 @@ Evolution of the hypothalamus has been implicated in social behavior differences
 
 ## Results
 
-## A transcriptional cell atlas of Peromyscus POA
+### A transcriptional cell atlas of Peromyscus POA
 
 We performed droplet-based snRNA-seq on the POA of 6 males and 6 females from each of the P. maniculatus and P. polionotus species (Methods) (Figure 1A). An atlas of the POA in Mus musculus was previously developed that combined single-cell RNA-seq data with imaging-based spatial information and data on specific neuronal populations activated by social behaviors (Moffitt et al., 2018). To create a comparable dataset, we used a dissection strategy identical to that used for creating the Mus POA atlas to dissect a region containing the POA and surrounding nuclei (~2.5 mm × 2.5 mm × 0.75 mm equivalent to Mus Bregma +0.5 to –0.6) (Methods, Figure 1B). To reduce batch effect, thereby increasing statistical power for detecting species and sex differences, we took advantage of the genetic diversity of our outbred study system and pooled nuclei from a male and female from each of the P. maniculatus and P. polionotus species (i.e. 4 samples) into each snRNA-seq run (Figure 1C). We collected a total of 105,647 nuclei across 6 replicates (i.e. 24 samples) (Methods, Supplementary file 1). To computationally demultiplex the pooled data, we used bulk RNA-seq or whole genome sequencing data to call single nucleotide polymorphisms (SNPs) for each animal. We then used SNP data to assign sample information to each nucleus in the snRNA-seq dataset (Methods, Figure 1—figure supplements 1–3). In total, we were able to confidently assign a single sample to 95,057 nuclei. The remaining 10,590 nuclei appeared to be multiplets containing two or more samples and were removed from subsequent analyses.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-v1.jpg)
+
+**Figure 1.:** (A) Images of Peromyscus maniculatus and Peromyscus polionotus and summary of their social behavioral differences. (B) Schematic of the preoptic area of the hypothalamus. Dotted boxes indicate the area dissected. (C) Schematic of pooling and sample assignment strategy used for single-nucleus RNA-sequencing (snRNA-seq). (D) UMAP visualization of all 52,121 neuronal nuclei collected across 6 males and 6 females from each of the P. maniculatus and P. polionotus species, colored by cell cluster. (E) UMAP visualization of all neuronal nuclei, colored by the assigned Mus cell type label. Only Peromyscus clusters for which a homologous Mus cell type label could be found are colored; remaining nuclei are shown in gray. (F) Heatmap of the proportion of each Peromyscus cell cluster (rows) that are assigned to each Mus cell type label (columns). Only Peromyscus clusters for which a homologous Mus cell type label could be found are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Scatterplots of the number of reads that map to P. maniculatus (P. man, x-axis) and P. polionotus (P. pol, y-axis) for each droplet (dots) across six replicates. Color indicates the final sample assignment made by demuxlet (orange: P. maniculatus female; dark orange: P. maniculatus male; blue: P. polionotus female; dark blue: P. polionotus male; gray: multiplet).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Barplot of the number of droplets assigned to each sample. (B) Violin plot of the numbers of genes detected (>0 uniquely mapped read) per droplet across all samples (white dots: median). (C) Boxplot of the read counts of female-specific gene, Xist, across all samples.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) UMAP visualization of all clustered nuclei. (B) Dotplot of percentage of cells within each cluster expressing known marker genes (size of dots) and average expression level of marker genes (color of dots). Gene markers (x-axis) are colored by the cell class they represent (see C for key). (C, D) UMAP visualization and dotplot of same data, grouped by cell class as inferred by expression of marker genes.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp5-v1.jpg)
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** UMAP visualizations of all neuronal nuclei. Color bars indicate the expression level of Avp (red), Oxt (pink), Vip (purple), Nms (green), Grp (brown), and Pvalb (blue).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** UMAP visualization of all neuronal nuclei (gray) and expression level of inhibitory markers Gad1 and Gad2 (blue) and excitatory marker Slc17a6 (orange).
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Heatmap of the proportion of each Peromyscus cell cluster (rows) that are assigned to each Mus cell type label (columns) for inhibitory (A) and excitatory (B) cell clusters.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** Violin plots of number of reads mapped (top) and genes found (bottom) in each cell cluster. Bolded cluster numbers are clusters where Mus homology could be identified.
 
 We combined data across all samples and clustered the data using Seurat v4.1.3 (Hao et al., 2021) (Methods). We first performed a low-granularity clustering using the first 30 principal components (PCs) of our data and a low resolution parameter of 0.2 to obtain a small number of clusters. This procedure identified 21 major cell classes which were assigned as neurons, microglia, astrocytes, immature and mature oligodendrocytes, endothelial, and ependymal cells using known marker genes from Mus hypothalamus (Steuernagel et al., 2022; Figure 1—figure supplement 4). We then focused only on neuronal nuclei (52,121 nuclei), and reclustered the data at a higher granularity using the first 100 PCs of our data and a resolution parameter of 1.8 (Methods). This resulted in 53 neuronal cell clusters (Figure 1D). We did not find major biases in sex or species across our clusters, as shown by the even distribution of each sex and species across the UMAP (Figure 1—figure supplement 5). Our cell clusters reflect known cell types of the POA as well as surrounding nuclei of the anterior hypothalamus, including the paraventricular (PVN), supraoptic (SON), suprachiasmatic nuclei (SCN), and more. For example, arginine vasopressin (Avp) and oxytocin (Oxt) are exclusively and highly expressed in clusters 34 and 40 (Figure 1—figure supplement 6), respectively, and reflect the well-known populations of AVP and OXT neurons that are found in the PVN and SON. Additionally, vasoactive intestinal protein (Vip) is highly expressed in clusters 41 and 46 (Figure 1—figure supplement 6), which together represent the VIP neurons of the SCN that play a major role in regulating circadian rhythms. Further inspection of these two clusters finds specific expression of neuromedin S (Nms) only in cluster 41 and gastric releasing peptide (Grp) only in cluster 46 (Figure 1—figure supplement 6), suggesting that these two clusters actually represent two subpopulations of VIP neurons, Vip/Nms and Vip/Grp, that have recently been reported as genetically and functionally distinct cell types (Todd et al., 2020; Wen et al., 2020).
 
@@ -48,9 +84,17 @@ For each Peromyscus cluster, we calculated the proportion of nuclei within the c
 
 We were unable to assign Mus homology for 19 Peromyscus cell clusters. These cell clusters had similar numbers of reads and genes per nuclei compared to clusters for which we did find Mus homology (Figure 1—figure supplement 9), and therefore we do not believe the lack of homology assignment is due to technical artifacts. Instead, clusters unassignable to Mus cell types likely fall into two categories: First, dissection and/or anatomical differences between Peromyscus and Mus may influence the presence and absence of certain cell types. For example, cluster 2 forms a clear ‘island’ on our UMAP and is transcriptionally specified by high expression of Pvalb, Gad1, and Gad2 (Figure 1D, Figure 1—figure supplement 6, Figure 1—figure supplement 7). This cluster very likely consists of inhibitory interneurons that have been reported to reside primarily in the thalamus in Mus (Clemente-Perez et al., 2017) but may have been inadvertently captured in our dataset due to differences in dissection or differences in spatial distribution of these interneurons between species. Second, some cell types may not be transcriptionally well-defined and homology would not be assignable based on gene expression data alone. For example, cell clusters that lie in the middle of our UMAP (e.g. clusters 0, 13, 25, 8, etc.) likely do not have strong transcriptional signatures captured by our snRNA-seq and were also less likely to be mapped to a homologous Mus cell type. Still, we were able to assign homology for the majority of our nuclei enabling us to better interpret cellular and molecular changes in the context of their biological functions.
 
-## Differential abundance of cell clusters across species and sex
+### Differential abundance of cell clusters across species and sex
 
 With our Peromyscus POA cell atlas, we first asked if there were differences in cell abundance across species or sex (Figure 2A). To do so, we treated cell abundance as count data and used edgeR (Robinson et al., 2010) to fit a generalized linear model that included replicate, sex, and species as covariates (Figure 2A, Supplementary file 2, Methods). Importantly, edgeR controls for differential numbers of neurons sequenced across samples (Methods). We used edgeR to test for significant coefficients (i.e. differential abundance across species or sex) and accounted for multiple hypothesis testing with a false discovery rate (FDR) correction (Benjamini and Hochberg, 1995). Because we would later validate our results experimentally, we used a lenient FDR cutoff of 0.3 to initially identify candidate clusters showing differential abundance. We performed this analysis on all cell clusters, regardless of whether they were mapped to a homologous Mus cell type or not.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of procedure used to test for differential abundance of cell clusters. (B) Barplots of log2(fold change) across species (P. pol / P. man, left) and across sex (male/female, right) for each cell cluster. Bars are colored by -log10(FDR). (C) Boxplots of cell abundances (y-axis) of four cell types differentially abundant across species and (D) of two cell types differentially abundant across sex. Cell abundances across samples are normalized using TMM normalization (Methods).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Read count of Gal in each neuronal nucleus, visualized by UMAP. (B) Dot plot of normalized expression of Gal (color intensity) and the percent of nuclei for which Gal is expressed (dot size) in each neuronal cell cluster.
 
 Across our 53 neuronal clusters, we found four clusters that were called differentially abundant across species and two that were called differentially abundant across sexes (Figure 2B). Arginine vasopressin (AVP) and oxytocin (OXT) neurons (clusters 34 and 40, respectively) were both ~1.6 x more abundant (AVP FDR = 0.19; OXT FDR = 0.09) in the promiscuous P. maniculatus than the P. polionotus (Figure 2C). The AVP neuron number difference corroborates a previous finding that P. maniculatus had significantly more AVP neurons than P. polionotus (~1.7 x) in the medial paraventricular nucleus (Cushing, 2016). Furthermore, we previously reported based on bulk RNA-seq data that the expression level of Avp was nearly 3 x higher in P. maniculatus hypothalamus compared to P. polionotus, and that this expression difference mediates the different amounts of parental nesting behavior performed by each species (Bendesky et al., 2017). Our data suggests this difference in Avp expression and parental nesting behavior may be driven, at least in part, by a neuronal number difference across species.
 
@@ -62,11 +106,19 @@ Several of our differentially abundant cell types have known, highly-conserved g
 
 AVP and OXT neurons are formed from a common developmental lineage (Nakai et al., 1995; Schonemann et al., 1995) and both primarily reside in the PVN and the SON. Additionally, small numbers of AVP and OXT neurons were also found by immunostaining in the anterior hypothalamus area (AHA) and BNST (Figure 3—figure supplement 1). Our counts of AVP-immunoreactive (ir) neurons found 1.5 x more cells in the PVN (P=7.0e-4, one-sided Mann Whitney test) and 2.1 x more cells in SON (p=6.0e-6) (Figure 3A and B) in P. maniculatus compared to P. polionotus. Our counts of OXT-ir neurons found 3.1 x more cells in the PVN (p=2.8e-6) and 4.7 x more cells in SON (p=6.2e-5) (Figure 3C and D). Therefore, both regional populations of AVP and OXT neurons appear to be contributing to their differential abundance across species.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative images of immunoreactive (ir) staining of AVP+ neurons in the paraventricular (PVN) (top) and supraoptic (SON) (bottom) of P. maniculatus and P. polionotus. Scale bar represents 200 μm. (B) Boxplots of AVP+ neuron number counts in the PVN (left) and SON (right) of females and males of P. maniculatus (P. man) and P. polionotus (P.pol): *** p<0.001 (one-sided Mann Whitney test). (C, D) Same as A and B, but of OXT+ neurons. (E) Representative images of ir staining of CALB1+ neurons in the BNST (top) and SDN-POA (bottom) of a female and male P. maniculatus and P. polionotus. Scale bar represents 200 μm. (F) Boxplots of the area of CALB1+ in the bed nucleus of the stria terminalis (BNST) (left) or CALB1+ neuron number counts in the sexually dimorphic nucleus of the preoptic area (SDN-POA) (right) of females and males of P. maniculatus and P. polionotus: **p<0.01; *p<0.05; ns: not significant (one-sided Mann Whitney test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative image of immunoreactive staining of AVP + neurons and subregion definitions. AHA: Anterior hypothalamus area; BNST: Bed nucleus of the stria terminalis; PVN: Paraventricular nucleus; SON: Supraoptic nucleus. Scale bar represents 200 μm. (B) Boxplots of AVP+ (left) and OXT+ (right) neuron number counts in each subregion of the hypothalamus of P. maniculatus and P. polionotus. ***p<0.001; ns: not significant (one-sided Mann Whitney test).
+
 In contrast, when we examined CALB1-ir cells (marking i20:Gal/Moxd1), we found regional differences in differential abundance. As expected, CALB1-ir cells were found in the SDN-POA and BNST. Because the cell density of CALB1-ir cells is so high in the BNST, we calculated the area of immunoreactivity in the BNST rather than counting cells individually. We note that this metric may include fibers and terminals whose signal may originate from projections from regions outside the BNST. The area of immunoreactivity in the BNST was ~2 x larger in males in both P. maniculatus (p=0.004, one-sided Mann Whitney test) and P. polionotus species (p=0.03) (Figure 3E and F). However, in the SDN-POA, we found that the number of CALB1-ir cells was 1.8 x more abundant in the promiscuous P. maniculatus males (p=0.03, one-sided Mann Whitney test), but not significantly different across sexes in the monogamous P. polionotus (p=0.2) (Figure 3E and F). i20:Gal/Moxd1 cells of the SDN-POA and BNST cannot be transcriptionally differentiated (Moffitt et al., 2018), and the differential abundance observed in our scRNA-seq data was likely driven primarily by large numbers of i20:Gal/Moxd1 cells of the BNST masking the small number of i20:Gal/Moxd1 cells of the SDN-POA. However, using immunostaining to better capture spatial information, we actually find that the two subregions of i20:Gal/Moxd1 are evolving differently across species: while sex-bias in the BNST has remained conserved, sex-bias in the SDN-POA has become more reduced in the monogamous P. polionotus.
 
 In sum, we computationally identified six neuronal cell types of the hypothalamus that have changed in abundance across species or sex, and experimentally confirmed three cell types with abundance changes. Our findings align with previous work: we identified a species difference in AVP neurons, which had been reported to be differentially abundant across our focal species (Cushing, 2016), and sex-bias of i20:Gal/Moxd1, which is known to be male-biased across mammalian species. Our findings also identified four neuronal cell types with differential abundance across species, two of which are candidates for underlying species differences in behavior: differential abundance of AVP neurons may be partially responsible for a differential expression level of AVP across species, which we previously implicated in parental nesting behavior (Bendesky et al., 2017), and an increased abundance of a galanin-expressing cell type known to govern parental care behavior, i16:Gal/Th, was observed in the monogamous species that performs more parental care. Finally, our immunostaining found that regional populations of transcriptionally identical cell types may evolve differently across species, and suggests that regional-specificity of sex-bias in i20:Gal/Moxd1 cells may be important to the evolution of sex-specific behaviors.
 
-## Differential neuronal gene expression across species and sex
+### Differential neuronal gene expression across species and sex
 
 We next asked what gene expression differences there were across species and sex. To do this, we pseudobulked our single-nucleus expression data and summed up gene counts across cells within the same cell cluster and sample (Figure 4A). We again used edgeR to fit a generalized linear model that included replicate, sex, and species as covariates (Methods). Because edgeR normalizes for library size across samples, cell type abundance is controlled for in our differential expression analysis. Again, we performed this analysis on all cell clusters, regardless of whether they were mapped to a homologous Mus cell type or not.
 
@@ -77,6 +129,18 @@ We next asked what gene expression differences there were across species and sex
 Across species, we found a range of 18–3401 differentially expressed (DE) genes in each cell cluster (FDR <0.05), with no bias towards either species (Figure 4B, Supplementary file 3). The number of DE genes in each cell cluster was highly correlated with the abundance of that cell cluster (Figure 4C). This is expected given that larger abundances is analogous to deeper sequencing of a cell population and results in more genes detected and more accurate estimates of gene counts. In total, we found 8301 unique genes to be DE in one or more cell clusters. When compared to a background of expression-matched non-DE genes (Methods), DE genes were highly enriched in neuropeptide receptors (2.4 x enrichment, FDR = 7e-04), and modestly enriched in neuropeptides (1.5 x, FDR = 0.005), neurotransmitter receptors (1.3 x, FDR = 0.02), and voltage-gated channels (1.3 x, FDR = 0.03) (Figure 4D). We did not find a significant enrichment of genes involved in neurotransmitter synthesis or transport, and only a small, though marginally significant, enrichment of transcription factors (1.1 x, FDR = 0.04) (Figure 4D).
 
 Across sexes, we performed differential expression analysis separately for each species to identify changes in sex-biased expression across species (Supplementary file 4). Remarkably, we observed far fewer sex-biased genes in the monogamous species compared to the promiscuous species. We found a range of 0–40 DE genes (FDR <0.05) in P. maniculatus cell clusters and 2–27 DE genes (FDR <0.05) across P. polionotus cell clusters (Figure 5A). In total, we found 204 female- and 194 male-biased genes in P. maniculatus; in contrast, only 170 (83%) female- and 70 (36%) male-biased genes were detected in P. polionotus (Figure 5B). Our data suggest a substantial reduction of sex-biased genes in the monogamous species, driven primarily by a reduction of genes with male-biased expression.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig5-v1.jpg)
+
+**Figure 5.:** (A) Barplots of the number of sex-biased genes for each cell cluster (bars) in P. maniculatus (top) and P. polionotus (bottom), colored by female- or male-bias. (B) Barplot of the number of female- and male-biased genes aggregated across all cell clusters in P. maniculatus (orange), P. polionotus (blue), or shared across both species (gray). (C) Scatter plots of cell cluster abundance (x-axis) and number of differentially expressed (DE) genes (y-axis) identified in each cell cluster (dots) for P. maniculatus (left) and P. polionotus (right). Line of best fit (gray line) and 95% confidence interval (gray shading) are shown in each scatter plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Scatter plots of cell cluster abundance (x-axis) and number of differentially expressed (DE) genes (y-axis) identified in each cell cluster (dots) for P. maniculatus (top) and P. polionotus (bottom) using data downsampled so that cell abundance was equal across sexes. Line of best fit (gray line) and 95% confidence interval (gray shading) are shown in each scatter plot. (B) Dot plot of normalized expression of sex steroid receptors Esr1, Ar, Prir, and Pgr (color intensity) and the percent of nuclei in which they are expressed (dot size) in each neuronal cell.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103109/elife-103109-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Boxplots of gene expression level in log2(counts per million) (y-axis) of Esr1, Ar, Prlr, and Pgr in cell cluster 5 (top) and 9 (bottom) across females and males of P. maniculatus and P. polionotus. Significance represent p-values before correction for multiple hypothesis testing. ***p<0.001; **p<0.01; *p<0.05.
 
 Despite the short evolutionary timescales between our species, we found very few sex-biased genes shared across species (Figure 5B). Only eight genes were found to be female-biased in the same cell types in both species, including three known female-specific genes associated with X-inactivation (Xist, Tsix, and Jpx). Eleven genes were found to be conserved in male-bias including Nrip1 (cluster 5, homologous to i18:Gal/Tac2), a nuclear protein that mediates estrogen signaling (Nautiyal et al., 2013), and Ecel1 (cluster 9, homologous to i20:Gal/Moxd1), a neuronal protease (Kaneko et al., 2017) also known to be male-biased in the Mus musculus hypothalamus (Xu et al., 2012).
 
@@ -90,13 +154,87 @@ Finally, we performed a gene enrichment analysis on all sex-biased genes, compar
 
 **Figure 6.:** (A) Left: Volcano plot of log2(fold change) (x-axis) and log10(FDR) (y-axis) of sex-biased genes in P. maniculatus. Negative values of log2(fold change) indicate female bias and positive values indicate male bias. For genes sex-biased in more than one cell type, the cell type with the highest expression level is shown. Genes are colored by gene categories listed on the right. Select outlier genes are labeled. Right: Barplot of enrichment scores for each gene category. Dotted line at 1.0 indicates no enrichment or depletion. ***FDR <0.001; *FDR <0.05. (B) Same as A but for P. polionotus. (C) Venn diagrams of female- (top) and male-biased (bottom) neuropeptides, categorized by whether they are P. maniculatus specific, P. polionotus specific, or shared. Some neuropeptides (e.g. Nts, Tac1, Oxt, Gnrh1) are female-based in some cell types and male-biased in others. Neuropeptides that share sex-bias in the same cell type across species are starred and listed in more detail in.
 
+**Table 1.**
+ Neuropeptides conserved in sex-bias in same cell types across P. maniculatus and P. polionotus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuropeptide</th>
+      <th>Sex-bias</th>
+      <th>Cell Type</th>
+      <th>P. maniculatus fold change</th>
+      <th>P. maniculatus FDR</th>
+      <th>P. polionotus fold change</th>
+      <th>P. polionotus FDR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kiss1</td>
+      <td>female</td>
+      <td>i16:Gal/Th (cluster 20)</td>
+      <td>26.0</td>
+      <td>1.2E-54</td>
+      <td>14.9</td>
+      <td>6E-49</td>
+    </tr>
+    <tr>
+      <td>Tac1</td>
+      <td>female</td>
+      <td>i18:Gal/Tac2(cluster 5)</td>
+      <td>2.1</td>
+      <td>3.3E-21</td>
+      <td>1.4</td>
+      <td>1.9E-03</td>
+    </tr>
+    <tr>
+      <td>Gal</td>
+      <td>female</td>
+      <td>i18:Gal/Tac2(cluster 5)</td>
+      <td>1.6</td>
+      <td>3.4E-10</td>
+      <td>1.6</td>
+      <td>3.4E-08</td>
+    </tr>
+    <tr>
+      <td>Tac1</td>
+      <td>female</td>
+      <td>cluster 3</td>
+      <td>1.8</td>
+      <td>2.0E-09</td>
+      <td>1.5</td>
+      <td>8.9E-04</td>
+    </tr>
+    <tr>
+      <td>Tac1</td>
+      <td>male</td>
+      <td>i20:Gal/Moxd1(cluster 9)</td>
+      <td>3.5</td>
+      <td>1E-30</td>
+      <td>1.5</td>
+      <td>9.8E-03</td>
+    </tr>
+    <tr>
+      <td>Cck</td>
+      <td>male</td>
+      <td>i20:Gal/Moxd1(cluster 9)</td>
+      <td>1.7</td>
+      <td>1.08E-05</td>
+      <td>2.3</td>
+      <td>7.5E-16</td>
+    </tr>
+  </tbody>
+</table>
+
 Our differential expression analysis identifies striking sex differences in gene expression in the POA. Overall, we found a rapid turnover of sex-biased genes across closely-related species, including a significant reduction in the number of male-biased genes in the monogamous species. Conserved across species, however, we found an enrichment of sex-biased genes expressed in two cell types: cluster 9 (i20:Gal/Moxd1) and cluster 5 (i18:Gal/Tac2). These same cell types were also found to be differentially abundant across sexes in both species, further underscoring their potential significance in sex-specific biology. Finally, our data suggest that neuropeptides may be a central class of genes mediating sex differences in the brain.
 
 ## Discussion
 
 How the evolution of neuronal traits, such as cell type abundance and neuronal gene expression, contributes to variation in innate social behaviors is poorly understood. Here, we explored this question by performing single-nucleus RNA-sequencing in the POA of males and females of a monogamous, biparental species of Peromyscus and a species that is promiscuous and exhibits maternal-only care. We focused on the POA as it is a region known to be important for mating and parenting behaviors, and took advantage of an existing Mus POA single-cell atlas to assign homology between Peromyscus cell clusters and functionally characterized cell types.
 
-## Differential abundance of parenting-related cell types
+### Differential abundance of parenting-related cell types
 
 Of the four cell types differentially abundant across species, three have obvious ties to parenting behavior: AVP (cluster 34), OXT (cluster 40), and i16:Gal/Th (cluster 20) neurons. The differential abundance we observed in AVP neurons both supports our prior finding that variation in Avp levels appears to contribute to a parental nesting behavior difference across our focal species (Bendesky et al., 2017), and adds to our understanding of the evolutionary mechanisms involved. Bendesky et al., 2017 previously used Quantitative Trait Locus (QTL) analysis to link parental nest building to two genomic loci, one of which encompasses the Avp locus. With bulk RNA-sequencing, Bendesky et al., 2017 found Avp was 3 x more highly expressed in the promiscuous, less parental species (P. maniculatus), and further experimentally showed that an increase in intracerebroventricular Avp in Peromyscus inhibits parental nesting behavior. The genetic linkage between the Avp locus and parental nesting was partially attributed to a cis-effect that leads to differential expression across species, though this cis-effect changes expression by ~1.1 x and does not explain the full difference in expression across species.
 
@@ -106,7 +244,7 @@ We also found the OXT neuron number to be ~3 x higher in the promiscuous species
 
 Finally, we find a subtype of galanin neurons, i16:Gal/Th (cluster 20), to be more abundant in monogamous species. Galanin neurons of the MPOA were first reported to be specifically activated by parental care behavior in Mus (Wu et al., 2014), a finding that has since been replicated in cichlids (Butler et al., 2020) and frogs (Fischer et al., 2019). These findings suggest galanin has an evolutionarily conserved role in parenting behavior. In a study of biparental poison frogs (Ranitomeya imitator), frogs that performed parental behavior in a laboratory assay had significantly more galanin neurons than non-parental frogs, independent of sex (Fischer et al., 2019). This study and ours find a correlation between galanin neuronal number and increased propensity for parental care behavior, both within and across species. However, further investigation is required to understand whether these observations are causally linked.
 
-## Two cell types play important roles in sex-specific biology
+### Two cell types play important roles in sex-specific biology
 
 Across sexes, we found two cell types, i20:Gal/Moxd1 (cluster 9) and i18:Gal/Tac2 (cluster 5), that were sex-biased in cell abundance and had an enrichment of sex-biased genes across both Peromyscus species. i20:Gal/Moxd1 (cluster 9) is known to be more abundant in males across many mammalian species in two hypothalamic regions: BNST and SDN-POA (see Campi et al., 2013 for an overview). However, our immunohistochemistry experiments found the male-bias in abundance to be significantly reduced in the SDN-POA of the monogamous species, though conserved across species in the BNST.
 
@@ -114,13 +252,13 @@ Our findings mirror a previous study comparing sister species of polygamous and 
 
 Much less is known about the second sexually dimorphic cell type, i18:Gal/Tac2 (cluster 5). In Mus, it is activated by mating behaviors (Moffitt et al., 2018) and also reported to be enriched in estrogen receptor (Esr1) expression and sex-biased genes (Kaplan et al., 2024). Thus, this cell type appears to play conserved sex-specific roles, possibly in mating and copulatory behaviors.
 
-## Sexual dimorphism in gene expression is reduced in monogamous species
+### Sexual dimorphism in gene expression is reduced in monogamous species
 
 Finally, we found significantly fewer sex-biased genes in the monogamous species compared to the promiscuous species. A prevailing hypothesis, first proposed by Darwin, 1871, suggests that males of promiscuous species have a larger variance in reproductive success compared to those of monogamous species, leading to greater intrasexual competition and more extreme sexual dimorphisms. Correlations between monogamy and reduced sexual dimorphism have been repeatedly observed in morphological traits such as body size and animal ornamentation (e.g. coloration or plumage) across diverse taxa including primates, birds, fish, and insects (Andersson, 1994; Kvarnemo, 2018; Kraaijeveld et al., 2007). However, much less is known about whether the reduction of sexual dimorphism extends to molecular phenotypes such as gene expression. Work by us and others previously failed to find consistent genome-wide patterns in bulk RNA-sequencing data (Mishra et al., 2024; Kautt et al., 2024). The striking reduction we see in our snRNA-seq data highlights the importance of quantifying gene expression at the level of specific cell types to better understand evolution of gene expression and its relationship with organismal-level phenotypes.
 
 Across our study species, there is also a reduction of sexual dimorphism in behavior, with the emergence of biparental care in the monogamous species (in contrast to maternal-only care exhibited by the promiscuous species). Whether the reduced sexual dimorphism in neuronal gene expression may be actually mediating the reduced sexual dimorphism in social behavior is an interesting avenue for future research.
 
-## Conclusion
+### Conclusion
 
 This study begins to characterize molecular differences in a region of the brain responsible for mating and parenting behaviors across two species with divergent mating systems. Overall, we find cell abundance and gene expression changes across sex and species, both of which contribute to differential levels of neuronally-important proteins. Though not explored here, changes in cell abundance may additionally accompany neuronal circuitry changes that affect behavior. Finally, we find intriguing differences in neuropeptidergic cell types as well as cell types expressing high levels of sex steroid hormone receptors, implicating two key classes of signaling molecules – neuropeptides and sex hormones – as important evolutionary dials for modulating species and sex-specific behavior.
 
@@ -128,51 +266,117 @@ We note that while our two focal species most obviously differ in mating and par
 
 ## Methods
 
-## Animal husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Peromyscus maniculatus bairdii)</td>
+      <td>Dissections of preoptic area</td>
+      <td>Peromyscus Genetic Stock Center (Columbia, SC, USA)</td>
+      <td></td>
+      <td>Freshly isolated from Peromyscus maniculatus bairdii</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Peromyscus polionotus subgriseus)</td>
+      <td>Dissections of preoptic area</td>
+      <td>Peromyscus Genetic Stock Center (Columbia, SC, USA)</td>
+      <td></td>
+      <td>Freshly isolated from Peromyscus polionotus subgriseus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Avp (Rabbit polyclonal)</td>
+      <td>ImmunoStar</td>
+      <td>Cat# 20069RRID:AB_572219</td>
+      <td>IHC (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Oxt (Mouse monoclonal)</td>
+      <td>EMD Millipore</td>
+      <td>Cat# MAB5296</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Calb1 (Mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# C9848</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10 X Genomics 3’ V3 Chip</td>
+      <td>10 x Genomics</td>
+      <td></td>
+      <td>Nuclei were loaded at a target of 20,000 nuclei/run</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>CellRanger v5.0.0</td>
+      <td>10 x Genomics</td>
+      <td>RRID:SCR_023221</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry
 
 P. maniculatus bairdii and P. polionotus subgriseus animals were originally acquired from the Peromyscus Genetic Stock Center (Columbia, SC, USA). We weaned animals at 23 d of age into single-sex, same-species groups. We maintained animals on a 16 hr:8 hr light:dark cycle at 22 °C, housed them in standard mouse cages with corncob bedding, and provided them with food and water ad libitum. Animal husbandry and experimental procedures were approved by the Harvard University Faculty of Arts and Sciences Institutional Animal Care and Use Committee (protocol 27-15-3).
 
-## POA dissection
+### POA dissection
 
 Virgin animals between ages 60 and 103 d were euthanized by CO2 and brains were rapidly dissected, flash-frozen in Tissue-Tek Optimal Cutting Temperature Compound, and stored at –70 °C. The POA was dissected on a cryostat (Leica CM3050 S) at –20 °C. Brains were sectioned coronally until reaching the widening of the anterior commissure. The dorsal and lateral regions of the brain were removed so that only a ~2.5 mm × 2.5 mm region that contained the POA remained (Figure 1B). Five 150 μm thick sections were then made to capture the POA. Sections were placed in a 2 mL tube which was kept at –70 °C until the day of nuclei extraction.
 
-## Nuclei extraction and 10x library construction
+### Nuclei extraction and 10x library construction
 
 Nuclei were isolated as described in Kamath et al., 2022. Briefly, dissected frozen tissue was placed in a single well of a 6-well plate, with 2  ml of extraction buffer. Mechanical dissociation was performed by trituration using a P1000 pipette, pipetting 1  ml of solution slowly up and down, 20 times. Trituration was repeated five times, with 2 min of rest between each time. The entire volume of the well was then passed twice through a 26 gauge needle into the same well. The tissue solution was transferred into a 50 ml Falcon tube filled with 30 ml wash buffer and spun in a swinging-bucket centrifuge for 10 min at 600 g and 4 °C. Following spinning, the majority of supernatant was discarded, leaving 500 μl of tissue solution. DAPI was added (1:1,000) and debris was removed from nuclei by FACS before nuclei were loaded into a 10 X Genomics 3’ V3 Chip. A detailed protocol can be found at dx.doi.org/10.17504/protocols.io.bi62khge.
 
-## Single-nucleus RNA-sequencing
+### Single-nucleus RNA-sequencing
 
 Our snRNA-seq data consists of two experiments: a pilot experiment that aimed to obtain a single replicate of 10,000 nuclei which was sequenced on a NovaSeq S1 lane (rep01), and a full experiment that aimed to obtain five replicates of 20,000 nuclei which were sequenced on a NovaSeq S4 flowcell (rep02 - rep06). Each replicate contained pooled nuclei from a male and female from each of the P. maniculatus and P. polionotus species (Figure 1C). Our final dataset captured 105,647 nuclei across six replicates sequenced to a depth of 1623–2320 median UMI counts/cell (Supplementary file 1). The 10 x library construction and sequencing were performed by the Harvard Bauer Core Facility.
 
-## Bulk RNA-sequencing and genotyping
+### Bulk RNA-sequencing and genotyping
 
 For our pilot study (rep01), we dissected out a portion of the hypothalamus posterior to the POA from each animal for bulk RNA-sequencing. Samples were collected in Trizol (Invitrogen), and total RNA was extracted using the RNeasy mini kit (QIAGEN). Poly(A) enrichment, directional mRNA library preparation, and paired-end sequencing of 150 base pair reads on a NovaSeq 6000 were performed by Novogene. Samples were sequenced to a depth of ~35 million read pairs. Reads were mapped to their respective genomes, Pman_2.1.3 (GCA_003704035.1) or Ppol_1.3.3 (GCA_003704135.2), using STAR with default parameters (Dobin et al., 2013). Variants were then called using the joint genotyping procedure recommended by the Genome Analysis Toolkit (GATK) (Van der Auwera et al., 2013).
 
-## Whole genome sequencing (WGS) and genotyping
+### Whole genome sequencing (WGS) and genotyping
 
 For our full experiment (rep02 - rep06), we performed WGS on animals for genotyping. We extracted genomic DNA from tail tissue using proteinase K digestion followed by the Maxwell RSC (Promega) DNA extraction. We prepared DNA libraries using the Nextera DNA Flex kit with Illumina adapters. All samples were pooled into a single library and sequenced on two NovaSeq S4 lanes with paired-end sequencing of 100 base pair reads. Reads were mapped to their respective genomes using bwa-mem with default parameters (Li, 2013). The median read depth for these samples was 267,987,590 mapped reads per sample, which corresponds to ~20 X sequencing coverage across the genome. Variants were called using the GATK procedure described above.
 
-## Sample demultiplexing
+### Sample demultiplexing
 
 To demultiplex pooled scRNA-seq runs, we first used 10 x Genomics CellRanger v5.0.0 with default parameters to map reads to a combined P. maniculatus and P. polionotus transcriptome. Our in-house transcriptome annotations were generated using Comparative Annotational Toolkit (Fiddes et al., 2018) and GENCODE v15 annotations of Mus musculus (GRCm38 mm10) as reference. We used the standard CellRanger pipeline to filter out droplet barcodes associated with background noise (Zheng et al., 2017). For each droplet that passed the background filter, we preliminarily assigned each droplet to the species for which the majority of reads mapped to (which we refer to as the ‘primary’ species). Droplets clearly fell into two clusters: one cluster that represents singlets in which a small percentage of reads incorrectly maps to the secondary species and a second, sparser cluster of droplets that represent multiplets in which genetic material from two species were truly captured (Figure 1—figure supplement 1). To delineate between the two clusters, we examined the number of reads mapping to the primary genome and binned droplets in increments of 500 reads. Within each bin, we then plotted the distribution of reads mapping to the secondary genome. We fit this distribution with a mixture model of two Gaussians using normalmixEM (Benaglia et al., 2010) and identified the point at which the two distributions cross (Figure 1—figure supplement 1). We then found the line of best fit through all intersection points across the bins and used this line as the threshold between singlets and multiplets (Figure 1—figure supplement 1). Within each species, we next used demuxlet (Kang et al., 2018) to infer sample identity based on the known sample genotype data (Figure 1—figure supplement 2). Demuxlet additionally identifies multiplets when mixtures of sample genotypes are detected.
 
 For each 10 x run, we expected our detectable multiplet rate to be ~9% (Genomics, 2022) and our assigned detectable rate ranged from 8–13% across our replicates (Figure 1—figure supplement 2). We found that our assigned singlets were evenly distributed across the four samples (Figure 1—figure supplement 3A) and the distribution of the number of genes detected per droplet was similar across samples and replicates (Figure 1—figure supplement 3B). Finally, when we checked the expression level of the female-specific gene, Xist, we found that female-assigned cells had significantly higher Xist read counts than male-assigned cells and the median read counts of Xist across male-assigned cells was 0 (Figure 1—figure supplement 3C). After sample demultiplexing, we used CellRanger v5.0.0 to map reads from each nucleus to the transcriptome of its assigned species and used these read counts for all subsequent analyses.
 
-## Cell type clustering
+### Cell type clustering
 
 All normalization, data integration, and clustering of scRNA-seq data were performed with Seurat v4.1.3 (Hao et al., 2021). Within species, we normalized our scRNA-seq data using sctransform (Hafemeister and Satija, 2019; Choudhary and Satija, 2022) and then integrated data across species using Seurat’s integration workflow with default parameters. Briefly, Seurat learns a conserved gene correlation structure between two data sets using canonical correlation analysis and identifies pairwise correspondences between single nuclei across datasets in order to transform data sets into a shared space (Stuart et al., 2019). We created UMAPs using the runUMAP function, and clustered the integrated data by using the FindNeighbors function.
 
-## Homology mapping of inhibitory and excitatory cell types
+### Homology mapping of inhibitory and excitatory cell types
 
 We defined each cell cluster and all nuclei within that cluster as inhibitory or excitatory based on higher expression levels of Gad1 and Gad2 (inhibitory) or Slc17a6 (excitatory) (Figure 1—figure supplement 7). We then mapped inhibitory and excitatory cell type labels from the Mus POA atlas to inhibitory and excitatory nuclei, respectively, using Seurat’s label transfer workflow with default parameters (Stuart et al., 2019). Briefly, Seurat first identifies pairwise correspondences between single nuclei across datasets (‘anchors’) and then ‘transfers’ cell type labels by weighting the cell type identities of each anchor with their distance to the nuclei at hand. For each nuclei, this procedure calculates the probability that it belongs to each cell type label and assigns the cell type label which received the highest probability.
 
 To find cluster-to-cell-type mappings, we calculated the proportion of each cluster that was assigned to each Mus cell type label (Figure 1—figure supplement 8). We removed Mus cell type labels that lacked any notable marker genes and that indiscriminately mapped onto many of our clusters (e1:Glut, i1:Gaba, i7:Gaba, i9:Gaba, i11:Gaba, i13:Gaba, i12:Gaba, i15:Gaba, i39:Gaba) (Figure 1—figure supplement 8). We then retained only cell clusters and Mus cell type labels if 15% of a cluster or more were predicted to belong to the same Mus cell type label. The cutoff value was chosen empirically after examining clusters where homology to the Mus atlas that could be established by marker genes. The proportion of these clusters that mapped to Mus labels ranged from 17.3% (cluster 15 - i14:Avp/Cck) to 92.6% (cluster 38 – i4:Gaba/Mylk), and therefore a 15% cutoff was chosen. This resulted in 17 excitatory clusters mapping onto 11 Mus excitatory cell type labels and 17 inhibitory clusters mapping onto 18 Mus inhibitory cell type labels (Figure 1E and F).
 
-## Differential abundance of cell clusters
+### Differential abundance of cell clusters
 
 Differential abundance analysis was conducted with edgeR (Robinson et al., 2010). After clustering our neuronal snRNA-seq data, we created a count matrix of the number of nuclei within each cluster that belonged to each sample. Cluster sizes were normalized using TMM normalization, which relies on the assumption that there are minimal differences in cluster sizes across samples (Robinson and Oshlack, 2010). We used the estimateDisp function with default parameters to estimate the dispersions across cell abundance counts and calcNormFactors function with default parameters to control for the differential numbers of total neurons profiled per sample. We then fit a generalized linear model with glmQLFit function and a design that included replicate, species, and sex as covariates. Finally, we used glmQLFTest to test for significant coefficients and corrected p-values with an FDR correction (Benjamini and Hochberg, 1995).
 
-## Immunohistochemistry and cell counting
+### Immunohistochemistry and cell counting
 
 We transcardially perfused mice with ice-cold 1 x phosphate-buffered saline (PBS) with heparin (100 U/mL) and then with 4% paraformaldehyde in PBS. Brains were dissected out, postfixed for 24 hr at 4 °C, cryopreserved in 30% sucrose, and stored at −70 °C until subsequent use. To stain for protein, we sectioned brains at 30 μm. We aimed to capture the entire hypothalamus and collected sections beginning at the appearance of the corpus callosum until the appearance of the thalamus, keeping every second section (48 sections spanning ~3 mm). We blocked free-floating sections for 1 hr in 10% normal goat serum (NGS) and 0.5% Triton-X in PBS. We incubated sections overnight with either rabbit anti-Avp (1:4000, ImmunoStar 20069), mouse anti-Oxt (1:2000, EMD Millipore MAB5296), or mouse anti-Calb1 antibody (1:1000, Millipore Sigma C9848) and 10% NGS in PBS. We used either donkey anti-rabbit Alexa 647 antibody (1:1000, Thermo Fisher Scientific A31573) or donkey anti-mouse Alexa 546 (1:1000, Thermo Fisher Scientific A11003) for secondary detection and mounted tissues with DAPI Fluoromount-G (SouthernBiotech, 0100–20). Slides were imaged on an AxioScan.Z1 slide scanner (Zeiss).
 
@@ -180,10 +384,10 @@ Following imaging, we exported images to .tif format and renamed files so that c
 
 P. maniculatus brains are ~15% larger than P. polionotus brains by weight which could impact species comparisons of neuron numbers. However, because we were confirming species differences in AVP and OXT neurons, which were more abundant in P. polionotus, we did not normalize by brain size for those analyses.
 
-## Differential expression analysis
+### Differential expression analysis
 
 To obtain pseudobulked data, gene counts were summed across all cells belonging to the same cell cluster and sample resulting in a matrix of 30,704 genes by 24 samples by 53 cell clusters. Differential expression analysis was then performed with edgeR (Robinson et al., 2010), using the same procedure described above for differential abundance analysis. For differential expression analysis across species, we fit a generalized linear model with a design that included replicate, sex, and species as covariates. For differential expression analysis across sex, we performed edgeR analysis separately for each species and fit a generalized linear model that included only replicate and sex as covariates. We accounted for multiple hypothesis testing with an FDR correction (Benjamini and Hochberg, 1995) and used an FDR cutoff of 0.05 to define the significant differential expression.
 
-## Gene enrichment analysis
+### Gene enrichment analysis
 
 Gene lists were manually curated by using the Gene Ontology Resource (Blake et al., 2013) and are available in Supplementary file 5. To test for enrichments of each gene category, we compared foreground genes (i.e. a significantly differentially expressed gene) to background genes that were matched in expression level to control for the fact that genes that are more highly expressed are more accurately quantified and thus more likely to be identified as differentially expressed. We created backgrounds with the following procedure: We binned all genes by their expression level in bins of 0.5 log10(counts per million). For each gene in our foreground, we randomly chose a gene from our entire dataset from the same expression bin. If the same gene was DE in multiple cell types, we matched the highest expression level. To obtain an empirical p-value, we repeated this procedure 5000 times and calculated the number of times a background list contained equal or higher numbers of foreground genes within a gene category, and we accounted for multiple hypothesis testing of several gene categories using an FDR correction. We calculated the enrichment score by dividing the number of foreground genes by the mean number of background genes (across 5000 random samples) within each gene category.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.47142.001 The principles underlying the animacy organization of the ventral temporal cortex (VTC) remain hotly debated, with recent evidence pointing to an animacy continuum rather than a dichotomy. What drives this continuum? According to the visual categorization hypothesis, the continuum reflects the degree to which animals contain animal-diagnostic features. By contrast, the agency hypothesis posits that the continuum reflects the degree to which animals are perceived as (social) agents. Here, we tested both hypotheses with a stimulus set in which visual categorizability and agency were dissociated based on representations in convolutional neural networks and behavioral experiments. Using fMRI, we found that visual categorizability and agency explained independent components of the animacy continuum in VTC. Modeled together, they fully explained the animacy continuum. Finally, clusters explained by visual categorizability were localized posterior to clusters explained by agency. These results show that multiple organizing principles, including agency, underlie the animacy continuum in VTC.
+The principles underlying the animacy organization of the ventral temporal cortex (VTC) remain hotly debated, with recent evidence pointing to an animacy continuum rather than a dichotomy. What drives this continuum? According to the visual categorization hypothesis, the continuum reflects the degree to which animals contain animal-diagnostic features. By contrast, the agency hypothesis posits that the continuum reflects the degree to which animals are perceived as (social) agents. Here, we tested both hypotheses with a stimulus set in which visual categorizability and agency were dissociated based on representations in convolutional neural networks and behavioral experiments. Using fMRI, we found that visual categorizability and agency explained independent components of the animacy continuum in VTC. Modeled together, they fully explained the animacy continuum. Finally, clusters explained by visual categorizability were localized posterior to clusters explained by agency. These results show that multiple organizing principles, including agency, underlie the animacy continuum in VTC.
 
 ## Introduction
 
@@ -33,15 +33,23 @@ We find that visual categorizability and agency independently contribute to the 
 
 ## Results
 
-## Disentangling visual categorizability and agency
+### Disentangling visual categorizability and agency
 
 To create a stimulus set in which visual categorizability and agency are dissociated, we selected 12 animals from a total of 40 animals. Visual categorizability was quantified in two ways, using convolutional neural networks (CNNs) and human behavior, to ensure a comprehensive measure of visual categorizability. Agency was measured using a rating experiment in which participants indicated the degree to which an animal can think and feel. Familiarity with the objects was also assessed and controlled for in the final stimulus set used in the fMRI experiment.
 
-## Agency and familiarity
+#### Agency and familiarity
 
 Agency and familiarity measures were obtained through ratings (N = 16), in which participants indicated the thoughtfulness of, feelings of, and familiarity with the 40 animals (Figure 1A). The correlation between the thoughtfulness and feelings ratings (τ = 0.70) was at the noise ceiling of both those ratings (τthought = 0.69, τfeel = 0.70). We therefore averaged the thoughtfulness and feelings ratings and considered the averaged rating a measure of agency.
 
-## Visual categorizability
+![Figure 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig1-v1.jpg)
+
+**Figure 1.:** (A) Trials from the ratings experiment are shown. Participants were asked to rate 40 animals on three factors - familiarity, thoughtfulness, and feelings. The correlations between the thoughtfulness and feelings ratings are at the noise ceilings of both these ratings. Therefore, the average of these ratings was taken as a measure of agency. (B) A schematic of the convolutional neural network (CNN) VGG-16 is shown. The CNN contains 13 convolutional layers (shown in green), which are constrained to perform the spatially-local computations across the visual field, and three fully-connected layers (shown in blue). The network is trained to take RGB image pixels as inputs and output the label of the object in the image. Linear classifiers are trained on layer FC8 of the CNN to classify between the activation patterns in response to animate and inanimate images. The distance from the decision boundary, toward the animate direction, is the image categorizability of an object. (C) A trial from the visual search task is shown. Participants had to quickly indicate the location (in the left or right panel) of the oddball target among 15 identical distractors which varied in size. The inverse of the pairwise reaction times are arranged as shown. Either the distractors or the targets are assigned as features of a representational space on which a linear classifier is trained to distinguish between animate and inanimate exemplars (Materials and methods). These classifiers are then used to categorize the set of images relevant to subsequent analyses; the distance from the decision boundary, towards the animate direction, is a measure of the perceptual categorizability of an object.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The image categorizabilities evolve as we go deeper into the network, as evidenced by the two middle and late clusters (in green) which are not similar to each other. The image categorizabilities of the fully connected layers (FCs) are highly similar and all the findings described in the paper are robust to a change in layer-selection among the FCs.
+
+#### Visual categorizability
 
 The first measure of visual categorizability was based on the features extracted from the final layer (FC8) of a pre-trained CNN (VGG-16 [Simonyan and Zisserman, 2015]; Materials and methods). This layer contains rich feature sets that can be used to accurately categorize objects as animate or inanimate by a support vector machine (SVM) classifier. This same classifier was then deployed on the 40 candidate objects (4 exemplars each) of our experiment to quantify their categorizability. This resulted, for each object, in a representational distance from the decision boundary of the animate-inanimate classifier (Figure 1B). Because this measure was based on a feedforward transformation of the images, which was not informed by inferred agentic properties of the objects (such as thoughtfulness), we label this measure image categorizability.
 
@@ -49,15 +57,15 @@ The second measure of visual categorizability was based on reaction times in an 
 
 The two measures of visual categorizability were positively correlated for the 12 animals that were selected for the fMRI experiment (Kendall’s τ = 0.64), indicating that they partly reflect similar animate-selective visual properties of the objects. The correspondence between these two independently obtained measures of visual categorizability provides a validation of these measures and also shows that the image categorizability obtained from the CNN is meaningfully related to human perception.
 
-## Selection of image set
+#### Selection of image set
 
 The final set of 12 animals for the fMRI experiment were chosen from the set of 40 images such that the correlations between image categorizability, agency, and familiarity were minimized (Figure 2). This was successful, as indicated by low correlations between these variables (τ < 0.13, for all correlations). Because perceptual categorizability was not part of the selection procedure of the stimulus set, there was a moderate residual correlation (τ = 0.30) between perceptual categorizability and agency.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig2-v1.jpg)
 
-**Figure 2.:** The values of agency and image categorizability are plotted for the 40 animals used in the ratings experiment. We selected 12 animals such that the correlation between agency and image categorizability is minimized. Data-points corresponding to those 12 animals are highlighted in red.10.7554/eLife.47142.005Figure 2—source data 1.
+**Figure 2.:** The values of agency and image categorizability are plotted for the 40 animals used in the ratings experiment. We selected 12 animals such that the correlation between agency and image categorizability is minimized. Data-points corresponding to those 12 animals are highlighted in red.
 
-## Animacy in the ventral temporal cortex
+### Animacy in the ventral temporal cortex
 
 Participants (N = 17) in the main fMRI experiment viewed the 4 exemplars of the 12 selected animals while engaged in a one-back object-level repetition-detection task (Figure 3). The experiment additionally included 3 inanimate objects (cars, chairs, plants) and humans. In a separate block-design animacy localizer experiment, participants viewed 72 object images (36 animate, 36 inanimate) while detecting image repetitions (Figure 3).
 
@@ -67,6 +75,22 @@ Participants (N = 17) in the main fMRI experiment viewed the 4 exemplars of th
 
 In a first analysis, we aimed to replicate the animacy continuum for the objects in the main experiment. The VTC region of interest was defined anatomically, following earlier work (Haxby et al., 2011; Figure 4A; Materials and methods). An SVM classifier was trained on activity patterns in this region to distinguish between blocks of animate and inanimate objects in the animacy localizer, and tested on the 16 individual objects in the main experiment. The distances from the decision boundary, towards the animate direction, were taken as the animacy scores.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-v1.jpg)
+
+**Figure 4.:** (A) The region-of-interest, VTC, is highlighted. (B) The order of objects on the VTC animacy continuum, image categorizability (IC), perceptual categorizability (PC), and agency (Ag) are shown. (C) The within-participant correlations between VTC animacy and image categorizability (IC), perceptual categorizability (PC), visual categorizability (VC, a combination of image categorizability and perceptual categorizability; Materials and methods), and agency (Ag) are shown. All four models correlated positively with VTC animacy. (D) The left panel shows the correlations between VTC animacy and VC and Ag after regressing out the other measure from VTC animacy. Both correlations are positive, providing evidence for independent contributions of both agency and visual categorizability. The right panel shows the correlation between VTC animacy and a combination of agency and visual categorizability (Materials and methods). The combined model does not differ significantly from the VTC animacy noise ceiling (Materials and methods). This suggests that visual categorizability and agency are sufficient to explain the animacy organization in VTC. Error bars indicate 95% confidence intervals for the mean correlations.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Principal component analysis was performed on the average of the regression weights (VTC activations) for each of the 16 objects, which were computed using a general linear model for each run of the main experiment. (A) The average of the participant-wise percentage variance in the VTC activations explained by each of the 15 principal components is shown. (B) The average participant-wise correlations between the principal components (PCs) and VTC animacy are shown. Although the first PC captures more variance than the second PC, the second PC contributes more to VTC animacy than the first. None of the individual PCs can fully account for VTC animacy. (C) The average scores of the 16 objects on the first three PCs are shown. Animacy organizations are seen in all the three PCs, where humans and other mammals lie on one end, insects in the middle, and cars and other inanimate objects lie on the other end of the representational spaces.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Agency is regressed out of IC and PC and correlations of those two residuals (ICi and PCi) with VTC animacy are shown in (A) and (B), respectively. Both IC and PC explain variance in VTC animacy that is not accounted for by Ag (p < 0.05 for both correlations). IC and PC are also separately regressed out of Ag and the correlations of the two residuals with VTC animacy are shown in (A) and (B) respectively (p < 0.05 for both correlations). Echoing the observations in Figure 4C, agency contributes to VTC animacy independently of either IC, PC, or a combination of both (visual categorizability - VC in Figure 4C).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Eberhardt et al. (2016) showed that the image categorizability scores of objects (different images than the ones we used) from the second layer of the fifth group of convolutional layers (C5-2) of VGG-16 correlated highest with how quickly humans categorized those objects as animate or inanimate in a behavioral experiment. Results were highly similar when the image categorizability (IC) as used in Figure 4 was replaced by the image categorizability of C5-2. Specifically, the independent contributions of visual categorizability and agency to VTC animacy remained significant and the correlation between the combined model and VTC animacy was at VTC animacy noise ceiling.
+
 The mean cross-validated training accuracy (animacy localizer) of animate-inanimate classification in VTC was 89.6%, while the cross-experiment accuracy in classifying the 16 stimuli from the main fMRI experiment was 71.3%, indicating reliable animacy information in both experiments. Importantly, there was systematic and meaningful variation in the animacy scores for the objects in the main experiment (Figure 4B). Among the animals, humans were the most animate whereas reptiles and insects were the least animate (they were classified as inanimate, on average). These results replicate previous findings of an animacy continuum (Connolly et al., 2012; Sha et al., 2015).
 
 Now that we established the animacy continuum for the selected stimulus set, we can turn to our main question of interest: what are the contributions of visual categorizability and agency to the animacy continuum in VTC? To address this question, we first correlated the visual categorizability scores and the agency ratings with the VTC animacy scores (Figure 4C). VTC animacy scores correlated positively with all three measures: image categorizability (τ = 0.16; p = 10-3), perceptual categorizability (τ = 0.26; p < 10-4); and agency (τ = 0.30; p < 10-4). A combined model of image categorizability and perceptual categorizability (visual categorizability; Materials and methods) also positively correlated with VTC animacy (τ = 0.23; p < 10-4).
@@ -75,11 +99,19 @@ Because agency and visual categorizability scores were weakly correlated, it is 
 
 Finally, to test whether a combined model including visual categorizability and agency fully explained the animacy continuum, we performed leave-one-out regression on VTC animacy with all three factors as independent measures. The resultant combined model (derived separately for each left-out participant) had a higher correlation with VTC animacy than any of the three factors alone (within-participant comparisons - ΔIC = 0.21, p < 10-4; ΔPC = 0.10, p = 6 x 10-4, ΔAg = 0.07, p = 8.3 x 10-3). Furthermore, the correlation between the combined model and VTC animacy (τ = 0.37; Figure 4D) is at VTC animacy noise ceiling (τNC = 0.39; Materials and methods). This result suggests that a linear combination of the two models (visual categorizability and agency) fully explains the animacy continuum in VTC, but the single models alone do not.
 
-## Whole-brain searchlight analysis
+#### Whole-brain searchlight analysis
 
 Our results indicate that both visual categorizability and agency contribute to the animacy continuum in VTC as a whole. Can these contributions be anatomically dissociated as well? To test this, we repeated the analyses in a whole-brain searchlight analysis (spheres of 100 proximal voxels). To reduce the number of comparisons, we constrained the analysis to clusters showing significant above-chance animacy classification (Materials and methods). Our aim was to reveal spheres showing independent contributions of visual categorizability or agency. To obtain the independent contribution of agency, we regressed out both image categorizability and perceptual categorizability from each sphere's animacy continuum and tested if the residue reflected agency. Similarly, to obtain the independent contribution of visual categorizability, we regressed out agency from the sphere's animacy continuum and tested if the residue reflected either image categorizability or perceptual categorizability. The resulting brain maps were corrected for multiple comparisons (Materials and methods).
 
 Results (Figure 5) showed that both visual categorizability and agency explained unique variance in clusters of VTC, consistent with the region-of-interest analysis. Moreover, there was a consistent anatomical mapping of the two factors: the independent visual categorizability contribution (LH: 1584 mm3, center Montreal Neurological Institute (MNI) coordinates: x = -38, y = -80, z = 7; RH: 7184 mm3, center coordinates: x = 41, y = -71, z = 1) was located posterior to the independent agency contribution (LH: 592 mm3, center coordinates: x = -42, y = -56, z = -19; RH: 4000 mm3, center coordinates: x = 39, y = -52, z = -12), extending from VTC into the lateral occipital regions. The majority of the independent agency contribution was located in the anterior part of VTC. A similar posterior-anterior organization was observed in both hemispheres (Figure 5B), though stronger in the right hemisphere. These results provide converging evidence for independent contributions of visual categorizability and agency to the animacy continuum, and show that these factors explain the animacy continuum at different locations in the visual system.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig5-v1.jpg)
+
+**Figure 5.:** The analysis followed the approach performed within the VTC ROI (Figure 4C, middle panel) but now separately for individual spheres (100 voxels). The independent contribution of agency is observed within anterior VTC, while the independent contribution of visual categorizability extends from posterior VTC into the lateral occipital regions. Results are corrected for multiple comparisons (Materials and methods). (B) The correlations between agency and the animacy continuum in the searchlight spheres (variance independent of visual categorizability, in red) and the mean of the correlations between image and perceptual categorizabilities and the animacy continuum in the searchlight spheres (variance independent of agency, in blue), are shown as a function of the MNI y-coordinate. For each participant, the correlations are averaged across x and z dimensions for all the searchlight spheres that survived multiple comparison correction in the searchlight analysis depicted in (A). The blue and red bounds around the means reflect the 95% confidence bounds of the average correlations across participants. The green area denotes the anatomical bounds of VTC. Visual categorizability contributes more than agency to the animacy organization in the spheres in posterior VTC. This difference in contribution switches within VTC and agency contributes maximally to the animacy organization in more anterior regions of VTC.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/47142/elife-47142-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Both factors contribute to similar extents to the variance in the animacy continua.
 
 ## Discussion
 
@@ -103,13 +135,13 @@ In sum, our results provide evidence that two principles independently contribut
 
 ## Materials and methods
 
-## Neural network for image categorizability
+### Neural network for image categorizability
 
 Image categorizability was quantified using a convolutional neural network (CNN), VGG-16 (Simonyan and Zisserman, 2015), which had 13 convolutional layers and 3 fully-connected layers which map 224 × 224 × 3 RGB images to a 1000 dimensional object category space (each neuron corresponds to distinct labels such as cat and car). The CNN was taken from the MatConvNet package (Vedaldi and Lenc, 2015) and was pre-trained on images from the ImageNet ILSVRC classification challenge (Russakovsky et al., 2015).
 
 Activations were extracted from the final fully-connected layer, prior to the softmax operation, for 960 colored images obtained from Kiani et al. (2007) of which 480 contain an animal or animal parts and the rest contain inanimate objects or their parts. The dimensionality of the activations was reduced to 495 dimensions using principal component analysis in order to reduce the training time while keeping the captured variance high (more details can be found in Thorat, 2017). Support vector machines (SVMs) with linear kernels were trained (with the default parameters of the function fitcsvm in MATLAB r2017b, The MathWorks, Natick, MA) to distinguish between animate and inanimate object-driven activations. Training accuracies were quantified using 6-fold cross-validation. The average cross-validation accuracy was 92.2%. The image categorizability of an object was defined as the distance to the representation of that object from the decision boundary of the trained classifier. The stimuli used in the subsequent tasks, behavioral and fMRI, did not occur in this training set of 960 images.
 
-## Visual search task for perceptual categorizability
+### Visual search task for perceptual categorizability
 
 Perceptual categorizability was quantified using a visual search task adopted from Mohan and Arun (2012). 29 healthy adults participated in this experiment, of which 21 (9 females; age range: 19–62, median: 27) were selected according to the conditions specified below to obtain an estimate of perceptual categorizability. All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of Radboud University (ECSW2017-2306-517).
 
@@ -119,7 +151,7 @@ In order to obtain perceptual categorizability scores for the animate objects us
 
 For further analysis, only those participants who had both training (4-fold cross-validation) and test accuracies for animacy classification above 50% were selected. For the relevant 21 participants, the mean training accuracy was 63.4% (>50%, p < 10-4), and the mean test accuracy was 70.0% (>50%, p < 10-4). Each object’s perceptual categorizability was quantified as the average of its decision scores across participants.
 
-## Main ratings experiment for agency
+### Main ratings experiment for agency
 
 Agency was quantified using a ratings experiment. Sixteen healthy adults participated in this experiment (9 females; all students at the University of Trento). All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of the University of Trento (protocol 2013–015).
 
@@ -127,58 +159,58 @@ In each trial, four colored images of an animal from a set of 40 animals were sh
 
 As mentioned in the Results section, the feelings and thoughtfulness ratings co-varied substantially with each other (the within-participant correlations were at the noise ceilings of the two factors). Agency was quantified as the average of the ratings for feelings and thoughtfulness.
 
-## fMRI experiment
+### fMRI experiment
 
 A functional magnetic resonance imaging (fMRI) experiment was performed to obtain the animacy continua in high-level visual cortex, specifically the ventral temporal cortex (VTC). The design was adopted from Proklova et al. (2016). Schematics of the main experiment and the animacy localizer experiment are shown in Figure 3.
 
-## Participants
+#### Participants
 
 Seventeen healthy adults (6 females; age range: 20 − 32, median: 25) were scanned at the Center for Mind/Brain Sciences of the University of Trento. This sample size was chosen to be the same as in Proklova et al. (2016), as our animacy localizer and main experiment procedure were similar to theirs. All participants gave informed consent. All procedures were carried out in accordance with the Declaration of Helsinki and were approved by the ethics committee of the University of Trento (protocol 2013–015).
 
-## Main experiment procedure
+#### Main experiment procedure
 
 The stimuli consisted of colored images (4 exemplars each) of the 12 animals for which image categorizability and agency were orthogonalized, humans, and three inanimate objects (cars, plants, and chairs). There were a total of 64 images.
 
 The main experiment consisted of eight runs. Each run consisted of 80 trials that were composed of 64 object trials and 16 fixation-only trials. In object trials, a single stimulus was presented for 300 ms, followed by a 3700 ms fixation period. In each run, each of the 64 images appeared exactly once. In fixation-only trials, the fixation cross was shown for 4000 ms. Trial order was randomized, with the constraints that there were exactly eight one-back repetitions of the same category (e.g., two cows in direct succession) within the object trials and that there were no two fixation trials appearing in direct succession. Each run started and ended with a 16s fixation period, leading to a total run duration of 5.9 min. Participants were instructed to press a button whenever they detected a one-back object repetition.
 
-## Animacy localizer experiment procedure
+#### Animacy localizer experiment procedure
 
 In addition to the main experiment, participants completed one run of a functional localizer experiment. During the localizer, participants viewed grey-scale images of 36 animate and 36 inanimate stimuli in a block design. Each block lasted 16s, containing 20 stimuli that were each presented for 400 ms, followed by a 400 ms blank interval. There were eight blocks of each stimulus category and four fixation-only blocks per run. The order of the first 10 blocks was randomized and then mirror-reversed for the other 10 blocks. Participants were asked to detect one-back image repetitions, which happened twice during every non-fixation block.
 
-## fMRI acquisition
+#### fMRI acquisition
 
 Imaging data were acquired using a MedSpec 4-T head scanner (Bruker Biospin GmbH, Rheinstetten, Germany), equipped with an eight-channel head coil. For functional imaging, T2*-weighted EPIs were collected (repetition time = 2.0s, echo-time = 33 ms, 73° flip-angle, 3 mm × 3 mm × 3 mm voxel size, 1 mm gap, 34 slices, 192 mm field of view, 64 × 64 matrix size). A high-resolution T1-weighted image (magnetization prepared rapid gradient echo; 1 mm × 1 mm × 1 mm voxel size) was obtained as an anatomical reference.
 
-## fMRI data pre-processing
+#### fMRI data pre-processing
 
 The fMRI data were analyzed using MATLAB and SPM8. During preprocessing, the functional volumes were realigned, co-registered to the structural image, re-sampled to a 2 mm × 2 mm × 2 mm grid, and spatially normalized to the Montreal Neurological Institute 305 template included in SPM8. No spatial smoothing was applied.
 
-## Region of interest - Ventral temporal cortex
+#### Region of interest - Ventral temporal cortex
 
 VTC was defined as in Haxby et al. (2011). The region extended from −71 to −21 on the y-axis of the Montreal Neurological Institute (MNI) coordinates. The region was drawn to include the inferior temporal, fusiform, and lingual/parahippocampal gyri. The gyri were identified using Automated Anatomical Labelling (AAL) parcellation (Tzourio-Mazoyer et al., 2002).
 
-## Obtaining the animacy continua from fMRI data
+#### Obtaining the animacy continua from fMRI data
 
 Animacy continua were extracted from parts of the brain (either a region of interest such as VTC or a searchlight sphere) with a cross-decoding approach. SVM classifiers were trained on the BOLD images obtained from the animate and inanimate blocks of the localizer experiment, and tested on the BOLD images obtained from the main experiment. The degree of animacy of an object is given by the distance of its representation from the classifier decision boundary. As the BOLD response is delayed by seconds after stimulus onset, we had to decide the latency of the BOLD images we wanted to base our analysis on. The classification test accuracy and the animacy continuum noise ceiling for the objects from the main experiment were higher for the BOLD images at 4s latency than both 6s latency and the average of the images at 4 and 6s latencies. Therefore, we based our analysis on the BOLD images at 4s latency. The findings remain unchanged across the latencies mentioned.
 
 All the images of the brain shown in this article were rendered using MRIcron.
 
-## Comparing models with the animacy continua in the brain
+#### Comparing models with the animacy continua in the brain
 
 We compared the animacy continua in the brain (such as the animacy continuum in VTC and animacy continua in searchlight spheres) with image and perceptual categorizabilities (visual categorizability), agency, their combination, and their independent components. The comparisons were performed at participant-level with rank-order correlations (Kendall's τ). The comparison between an animacy continuum and the independent component of a model was performed by regressing out other models from the animacy continuum and correlating the residue with the model of interest, for each participant.
 
 Given a participant, the comparison between an animacy continuum and the combination of models was computed as follows. The animacy continuum was modeled as a linear combination of the models (with linear regression) for the rest of the participants. The regression weights associated with each model in the combination across those participants were averaged, and the animacy continuum of the participant of interest was predicted using a linear combination of the models using the averaged weights. The predicted animacy continuum was then correlated with the actual animacy continuum of this participant. This procedure was implemented iteratively for each participant to get a group estimate of the correlation between an animacy continuum and a combination of models.
 
-## Comparing visual categorizability with the animacy continua
+#### Comparing visual categorizability with the animacy continua
 
 The contribution of visual categorizability to an animacy continuum is gauged by the comparison between that animacy continuum and a combination of image and perceptual categorizabilities in a leave-one-participant-out analysis as mentioned above. The independent contribution of visual categorizability to an animacy continuum is gauged by regressing out agency from the image and perceptual categorizabilities and combining the residues to model the animacy continuum in a leave-one-participant-out analysis as mentioned above. When visual categorizability is to be regressed out of an animacy continuum (to obtain the independent contribution of agency), image and perceptual categorizabilities are regressed out. When visual categorizability is to be included in a combination of models, image and perceptual categorizabilities are added as models.
 
 To assess if a model or a combination of models explained all the variance in the animacy continuum across participants, for each participant we tested if the correlation between the model or the animacy continuum predicted by the combined model (in a leave-one-out fashion as above) and the average of animacy continua of the other participants was lower than the correlation between the participant’s animacy continuum and the average of animacy continua of the other participants. On the group level, if this one-sided test (see ‘Statistical tests in use’) was not significant (p > 0.05), we concluded that the correlation between the model or a combination of models hit the animacy continuum noise ceiling and thus explained all the variance in the animacy continuum across participants. In the comparisons in Figure 4C–D, only the correlation between VTC animacy and the combination of visual categorizability and agency was at VTC animacy noise ceiling.
 
-## Searchlight details
+#### Searchlight details
 
 In the whole-brain searchlight analysis, the searchlight spheres contained 100 proximal voxels. SVM classifiers were trained to distinguish between the BOLD images, within the sphere, corresponding to animate and inanimate stimuli from the localizer experiment. The classifiers were tested on the BOLD images, within the sphere, from the main experiment. Threshold-free cluster enhancement (TFCE; Smith and Nichols, 2009) with a permutation test was used to correct for multiple comparisons of the accuracies relative to baseline (50%). Further analysis was constrained to the clusters which showed above-chance classification (between-subjects, p < 0.05, on both localizer and main experiment accuracies) of animate and inanimate objects. Within each searchlight sphere that survived the multiple comparisons correction, the animacy continuum was compared with image and perceptual categorizabilities (after regressing out agency) and agency (after regressing out both image and perceptual categorizabilities). Multiple comparisons across spheres of correlations to baseline (0) were corrected using TFCE. The independent visual categorizability clusters were computed as a union of spheres that had a significant contribution (independent of agency) from either image or perceptual categorizabilities.
 
-## Statistical tests in use
+#### Statistical tests in use
 
 Hypothesis testing was done with bootstrap analysis. We sampled 10,000 times with replacement from the observations being tested. p-Values correspond to one minus the proportion of sample means that are above or below the null hypothesis (corresponding to the test of interest). The p-values reported in the paper correspond to one-sided tests. The 95% confidence intervals were computed by identifying the values below and above which 2.5% of the values in the bootstrapped distribution lay. Exact p-values are reported except when means of all the bootstrap samples are higher or lower than hypothesized in which case we mention p < 10-4.

@@ -19,18 +19,18 @@
 
 ### Affiliations
 
-1. https://ror.org/00afp2z80 GIGA-Cyclotron Research Centre-In Vivo Imaging, University of Liège Liège Belgium
-2. https://ror.org/00afp2z80 Psychology and Cognitive Neuroscience Research Unit, University of Liège Liège Belgium
+1. GIGA-Cyclotron Research Centre-In Vivo Imaging, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+2. Psychology and Cognitive Neuroscience Research Unit, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
 3. Physip SA Paris France
 4. Department of Neurology, University Hospital of Liège Liège Belgium
-5. https://ror.org/00afp2z80 GIGA-In Silico Medicine, University of Liège Liège Belgium
-6. https://ror.org/0161xgx34 Centre for Advanced Research in Sleep Medicine, Université de Montréal Montreal Canada
+5. GIGA-In Silico Medicine, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
+6. Centre for Advanced Research in Sleep Medicine, Université de Montréal Montreal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))
 
 † Corresponding author
 
 ## Abstract
 
-Sleep alteration is a hallmark of ageing and emerges as a risk factor for Alzheimer’s disease (AD). While the fine-tuned coalescence of sleep microstructure elements may influence age-related cognitive trajectories, its association with AD processes is not fully established. Here, we investigated whether the coupling of spindles and slow waves (SW) is associated with early amyloid-β (Aβ) brain burden, a hallmark of AD neuropathology, and cognitive change over 2 years in 100 healthy individuals in late-midlife (50–70 years; 68 women). We found that, in contrast to other sleep metrics, earlier occurrence of spindles on slow-depolarisation SW is associated with higher medial prefrontal cortex Aβ burden (p=0.014, r² β* =0.06) and is predictive of greater longitudinal memory decline in a large subsample (p=0.032, r² β* =0.07, N=66). These findings unravel early links between sleep, AD-related processes, and cognition and suggest that altered coupling of sleep microstructure elements, key to its mnesic function, contributes to poorer brain and cognitive trajectories in ageing.
+Sleep alteration is a hallmark of ageing and emerges as a risk factor for Alzheimer’s disease (AD). While the fine-tuned coalescence of sleep microstructure elements may influence age-related cognitive trajectories, its association with AD processes is not fully established. Here, we investigated whether the coupling of spindles and slow waves (SW) is associated with early amyloid-β (Aβ) brain burden, a hallmark of AD neuropathology, and cognitive change over 2 years in 100 healthy individuals in late-midlife (50–70 years; 68 women). We found that, in contrast to other sleep metrics, earlier occurrence of spindles on slow-depolarisation SW is associated with higher medial prefrontal cortex Aβ burden (p=0.014, r²β*=0.06) and is predictive of greater longitudinal memory decline in a large subsample (p=0.032, r²β*=0.07, N=66). These findings unravel early links between sleep, AD-related processes, and cognition and suggest that altered coupling of sleep microstructure elements, key to its mnesic function, contributes to poorer brain and cognitive trajectories in ageing.
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Investigating the coupling of spindles and SW, appropriately split between the s
 
 ## Results
 
-## Spindle onset on slow switcher SWs is linked to prefrontal Aβ burden
+### Spindle onset on slow switcher SWs is linked to prefrontal Aβ burden
 
 Following SW and spindle detections, we segregated SWs into those showing a slow or a fast down-to-up state transition, i.e., slow and fast switcher SWs (Figure 1a). Of the 341,836 detected slow switcher SWs, 75,910 co-occurred with a spindle (22%); while of the 78,235 fast switcher SWs, 26,912 (34%) were found to co-occur with a spindle. Regarding spindles, 563,928 spindles were detected over all the recordings, of which 102,822 were coupled to a SW (18%), 75,910 to slow switcher SWs (13%), and 26,912 to fast switcher SWs (5%). Table 1 gathers average characteristics of SW types and spindles in addition the demographic characteristics of our sample.
 
@@ -52,13 +52,136 @@ Following SW and spindle detections, we segregated SWs into those showing a slow
 
 **Figure 1.:** (a) Following a screening night and a regular sleep-wake schedule for 1 week, the participants (N=100; 59.4±5.3 years; 68 women) slept in the lab at their habitual times under electroencephalography (EEG) recording. We extracted the density and coupling of spindles and fast and slow switcher SWs over frontal derivations during N2 and N3 sleep stage from EEG recordings. (b) PET signal uptake was measured over the medial prefrontal cortex (MPFC) depicted in yellow. (c) Significant negative association between the MPFC Aβ burden and spindle-slow switcher SW coupling. (d) No association between the MPFC Aβ burden and spindle-fast switcher SW coupling. (e) Analysis of the anchoring of the spindles onto the SWs yielded a difference in preferential coupling phase of slow (red) and fast switcher SWs (light blue) (the y axis represents the number of spindles starting at a specific SW phase). (f) No association between the MPFC Aβ burden and slow switcher SW density. (g) No association between the MPFC Aβ burden and spindle density. (h) No association between the MPFC Aβ burden and the ratio between .5-to-1 Hz over 1-to-4 Hz overnight cumulated EEG power. Except for *, p-values and r²β* were computed from generalised linear mixed models (GLMMs) referred to in the text. Simple regressions were used only for a visual display and do not substitute the GLMM outputs. *Post-hoc test p-value is reported while Aβ burden-by-SW type interaction yielded p=0.009; r²β*=0.07 (see text). We used the cosine value of the phase of coupling in the GLMMs (see Materials and Methods).
 
+**Table 1.**
+ Sample characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Baseline (N=100)</th>
+      <th>Follow up (N=66)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex</td>
+      <td>68 ♀ / 32 ♂</td>
+      <td>44 ♀ / 22 ♂</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>59.4±5.3 (50–69)</td>
+      <td>59.9±5.4 (50–69)</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>15.2±3.0 (9–25)</td>
+      <td>14.9±3.3 (9–25)</td>
+    </tr>
+    <tr>
+      <td>Total sleep time (TST) (minutes, electroenchephalography [EEG])</td>
+      <td>392.8±45.9 (229–495.5)</td>
+      <td>390.4±45.9 (264.0–495.5)</td>
+    </tr>
+    <tr>
+      <td>Time spent in N1 sleep stage (% of TST, EEG)</td>
+      <td>6.2±2.8 (0.6–15.6)</td>
+      <td>6.4±3.0 (0.6–15.6)</td>
+    </tr>
+    <tr>
+      <td>Time spent in N2 sleep stage (% of TST, EEG)</td>
+      <td>51.6±8.9 (31.4–75.7)</td>
+      <td>50.3±8.5 (32.8–75.7)</td>
+    </tr>
+    <tr>
+      <td>Time spent in N3 sleep stage (% of TST, EEG)</td>
+      <td>19.2±6.4 (7.2–38.3)</td>
+      <td>19.7±6.5 (8.2–38.3)</td>
+    </tr>
+    <tr>
+      <td>Time spent in Rapid Eye Movement (REM) sleep (% of TST, EEG)</td>
+      <td>23.1±6.8 (6.5–39.8)</td>
+      <td>23.6±7.4 (6.5–39.8)</td>
+    </tr>
+    <tr>
+      <td>Mean slow waves (SW) density (number/minute of N2/N3)</td>
+      <td>7.1±4.3 (0.8–19.2)</td>
+      <td>6.9±4.0 (1.0–19.2)</td>
+    </tr>
+    <tr>
+      <td>Slow switchers</td>
+      <td>4.9±3.1 (0.6–15.9)***</td>
+      <td>4.9±3.1 (0.6–15.9)***</td>
+    </tr>
+    <tr>
+      <td>Fast switchers</td>
+      <td>2.1±1.6 (0.1–8.8)</td>
+      <td>2.0±1.3 (0.3–5.7)</td>
+    </tr>
+    <tr>
+      <td>Mean SW amplitude (µV)</td>
+      <td>101.5±12.4 (76.0–128.2)</td>
+      <td>101.0±12.3 (76.0–125.2)</td>
+    </tr>
+    <tr>
+      <td>Slow switchers</td>
+      <td>104.5±13.7 (77.7–131.3)***</td>
+      <td>104.0±13.5 (77.7–130.5)***</td>
+    </tr>
+    <tr>
+      <td>Fast switchers</td>
+      <td>94.0±11.0 (73.0–130.1)</td>
+      <td>93.0±10.1 (73.5–113.7)</td>
+    </tr>
+    <tr>
+      <td>Mean SW duration (1/frequency) (ms)</td>
+      <td>822±66 (619–966)</td>
+      <td>821±63 (642–948)</td>
+    </tr>
+    <tr>
+      <td>Slow switchers</td>
+      <td>906±46 (759–1,023)***</td>
+      <td>904±43 (807–1,003)***</td>
+    </tr>
+    <tr>
+      <td>Fast switchers</td>
+      <td>671±46 (552–794)</td>
+      <td>670±45 (559–783)</td>
+    </tr>
+    <tr>
+      <td>Mean SW transition frequency</td>
+      <td>1.4±0.1 (1.1–1.8)</td>
+      <td>1.4±0.1 (1.1–1.8)</td>
+    </tr>
+    <tr>
+      <td>Slow switchers</td>
+      <td>1.1±0.0 (1.0–1.2)***</td>
+      <td>1.1±0.0 (1.0–1.2)***</td>
+    </tr>
+    <tr>
+      <td>Fast switchers</td>
+      <td>2.0±0.1 (1.9–2.2)</td>
+      <td>2.0±0.1 (1.9–2.2)</td>
+    </tr>
+    <tr>
+      <td>Mean spindle density (number/minute of N2/N3)</td>
+      <td>8.3±1.1 (5.7–10.7)</td>
+      <td>8.1±1.0 (6.0–10.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI, alcohol consumption, anxiety, and depression scores as well as sleepiness levels of the sample can be found in Chylinski et al., 2021. TST: total sleep time. Average values ± SD [range: min–max values]. ***A significant difference between slow and fast switcher SW at a p<0.001._
+
 Our primary analysis tested whether the phase of coupling of spindles onto SWs, as the dependent variable, was differently associated with the accumulation of Aβ protein over the medial prefrontal cortex (MPFC) (Figure 1b) for slow and fast switcher SWs, controlling for age, sex, and total sleep time (TST) as well as for SW type overall duration, as it significantly differed across SW types and could condition the time available for the co-occurrence of a spindle and an SW (Table 1). The generalised linear mixed model (GLMM) yielded a significant difference between SW types (main effect of SW type: F1179.6=34.97, p<0.0001; r²β*=0.16) and no direct association with the burden of Aβ in the MPFC (main effect of Aβ burden: F198.49=0.09, p=0.76), while, importantly, the interaction between the burden of Aβ in the MPFC and the type of SWs was significant (Aβ burden by SW type interaction: F196=7.05, p=0.009; r²β*=0.07), controlling for all other covariates (age: F197.3=0.02, p=0.9; sex: F199.1=.75, p=0.4; TST: F199.1=0.75, p=0.4, SW duration: F1192.6=8.73, p=0.0035; r²β*=0.04). Post-hoc tests indicated that the link between the coupling of the spindles onto the SWs and the MPFC Aβ burden was significant for the slow switcher type (t149.8=−2.00, p=0.047) and not for the fast switcher type (t149.8=0.56, p=0.57) (Figure 1c–d). This primary result is in line with our initial hypothesis. In the following lines, we report additional statistical tests that were computed for a full understanding of this outcome.
 
 We assessed whether spindles showed a preferential phase of anchoring with both slow and fast switcher SWs. Qualitative appreciation of the distributions suggests that there is no preferential phase of anchoring of spindles onto the fast switcher SWs, while spindle initiation onto slow switcher SWs would show a clear preferred phase (Figure 1e). Watson U² tests indicate, however, that the phase of anchoring onto slow and fast SWs is non-uniformly distributed (see Materials and methods; slow switcher SWs: U²=904.29, p<0.001; fast switcher SWs: U²=136.76, p<0.001), i.e., they both show some phase preference. Importantly, further statistical analysis with Watson’s U² test showed that the distribution of spindles anchoring phase was significantly different between slow and fast switcher SWs (U²=71.143, p<0.001). This finding reinforces the idea that slow and fast switcher SWs constitute distinct realisations of NREM oscillations that are differently associated with brain aggregation of Aβ during the ageing process. This has likely contributed to previous failures to detect links between the coupling of spindles and SWs and the deposit of Aβ. In fact, when testing the association between the coupling of spindles and SWs, irrespective of the type of SWs, and PET Aβ burden over the MPFC, the statistical analysis only yields a weak negative association between the phase of the coupling of the spindles onto the SWs and Aβ burden (main effect of Aβ uptake: F196=3.96, p=0.049, r²β*=0.04; main effect of sex: F196=4.33, p=0.04, r²β*=0.04; main effect of age: F1,96=0.05, p=0.83), which could arguably go undetected in a smaller or different sample.
 
 We further assessed the specificity of our main finding and found that the density of slow switcher SWs (main effect of Aβ PET uptake: F196=0.14, p=0.71) or of spindles (main effect of Aβ PET uptake: F196=0.09, p=0.76) was not associated with the MPFC Aβ burden (Figure 1f–g) after correcting for age (F195≤3.71, p≥0.06), sex (F195≤7.78, p≥0.006), and TST (F195≤0.36, p≥0.55), further reinforcing the idea that it is the coupling of sleep microstructure elements that matters rather than their individual occurrence. Likewise, unlike previous reports (Mander et al., 2015; Winer, 2019), we did not find any association between the MPFC Aβ burden and the density of SWs, irrespective of their type (F195=1.18, p=0.28) or slow wave energy (SWE) – the cumulated power generated in the delta band: (F195=0.84, p=0.36), after correcting for age (F195≥4.2, p≤0.04, r²β*≥0.04), sex (F195≥6.63, p≤0.01, r²β*≥0.07), and TST (F195≤0.36, p≥0.34). This is true also when attempting to reproduce a previous finding made in a smaller and older sample than in the present study (Mander et al., 2015): in our sample, power in the 0.5–1 Hz EEG frequency band as well as the ratio between the power in the 0.5–1 Hz and 1–4 Hz bands were not associated with the burden of Aβ (main effect of Aβ burden: F195<2.85, p≥0.10) after correcting for age (F195≥3.28 p=0.014, r²β*=0.03), sex (F195≤0.25, p≥0.12), and TST (F195≤2.7, p≥0.10) (Figure 1h).
 
-## The anchoring of spindles onto slow-switcher SWs is associated to memory change over 2 years
+### The anchoring of spindles onto slow-switcher SWs is associated to memory change over 2 years
 
 A large subsample (N=66) completed a follow-up visit at 2 years which included the MST consisting in a pattern separation task targeting the ability to distinguish between highly resembling memory events, a hippocampus-dependent task which is very sensitive to early cognitive decline (Stark et al., 2013; Marks et al., 2017). We first observed an overall decline in performance between the baseline and follow-up performance at the MST (t65=2.19, p=0.032). We then explored whether the coupling of spindles with the slow switcher SWs was associated with memory performance decline over 2 years (Figure 2a). Statistical analyses revealed a significant negative link between the relative change in memory performance and the phase of spindle anchoring onto slow switcher SWs, indicating that an earlier spindle onset is predictive of a memory worsening over 2 years (main effect of spindle-slow switcher SW coupling: F161=4.80, p=0.032, r²β*=0.07), after correcting for age (F161=0.25, p=0.62), sex (F161=0.20, p=0.66), and education (F161=0.25, p=0.62) (Figure 2d–e). No such association was detected when considering spindle coupling to fast switcher SWs (main effect of spindle-fast switcher SW coupling: F161=2.51, p=0.12; main effect of age: F161=0.33, p=0.57; main effect of sex: F161=0.18, p=0.68; and main effect of education: F161=1.11, p=0.30). Further statistical analyses show that the memory performance change over the 2 year was not significantly related to the MPFC Aβ burden (main effect of Aβ burden: F160=2.33, p=0.13; main effect of age: F160=1.27, p=0.26; main effect of sex: F160=0.03, p=0.87; and main effect of education: F160=0.41, p=0.53). When considering baseline performance to the MST across the entire sample (N=100; i.e. assessed at the same time as the sleep measures), we found no significant link between the coupling of the spindles onto both SW types and the performance on the task (main effect of spindle-SW coupling: F196≥0.2, p≤0.61; main effect of age: F196≤0.36, p≥0.55; main effect of sex: F196≤0.54, p≥0.46; and main effect of education: F196≤0.47, p≥0.50 (Figure 2b–c)).
 
@@ -84,15 +207,15 @@ Together, our findings reveal that the timely occurrence of spindles onto a spec
 
 ## Materials and methods
 
-## Study design and participants
+### Study design and participants
 
 101 healthy participants aged from 50 to 70 years (68 women; mean ± SD = 59.4±5.3 years) were enrolled between 15 June 2016 and 2 October 2019 for a multimodal cross-sectional study taking place at the GIGA-Cyclotron Research Centre/In Vivo Imaging of the University of Liège (Cognitive fitness in ageing – COFITAGE – study) which has already led to several scientific publications (e.g. Chylinski et al., 2021; Rizzolo et al., 2021). One participant was excluded from analyses due to the lack of PET imaging data. The exclusion criteria were as follows: clinical symptoms of cognitive impairment (Mattis Dementia Rating Scale >130; Mini-Mental State Evaluation >27); recent psychiatric history, or severe brain trauma; self-reported or clinically diagnosed sleep disorder; ≤18 and ≥29; use of medication affecting sleep or the CNS; smoking; excessive alcohol (>14 units/week) or caffeine (>5 cups/day) consumption; shift work in the 6 months or transmeridian travel in the 2 months preceding the study. All participants gave their written informed consent prior to their participation. The study was registered with EudraCT 2016-001436-35. All procedures were approved by the Hospital-Faculty Ethics Committee of ULiège. All participants signed an informed consent prior to participating in the study.
 
-## Sleep assessment
+### Sleep assessment
 
 A first night of sleep was recorded at the laboratory under full polysomnography to avoid potential first night effects and exclude volunteers with sleep apnoea (Apnea Hypopnea Index ≥15 /hr). A second night of sleep was recorded with EEG, following 1 week of regular sleep-wake schedule based on each participant’s preferred bed and wake-up time (compliance was verified by actimetry and sleep diary – Actiwatch, Cambridge Neurotechnology, UK). Sleep was recorded with N7000 amplifiers (EMBLA, Natus, Planegg, Germany). The recording comprised 11 EEG derivations, placed according to the 10–20 system (F3, Fz, and F4; C3, Cz, and C4; P3, Pz, and P4; O1 and O2), two bipolar electrooculogram, and two bipolar submental electromyogram electrodes. Sampling was set at 200 Hz, and the signal was re-referenced to the mean of the two mastoids. Recordings were scored for sleep stages in 30 s windows using a validated automatic algorithm (ASEEGA, Physip, Paris, France) (Berthomier et al., 2007; Peter-Derex et al., 2021). Automatic arousal and artefact detection (Chylinski et al., 2020; ’t Wallant et al., 2016) were performed in order to remove EEG segments containing artefacts and arousals from further analysis.
 
-## Slow wave and spindle detections
+### Slow wave and spindle detections
 
 Only the frontal electrodes were considered because the frontal cortex is an early site showing Aβ deposit and is the primary generator of the SWs during sleep (Mander et al., 2015; Dang-Vu et al., 2005; Dang-Vu et al., 2010; Saletin et al., 2013) as well as to facilitate interpretations of future large-scale studies using headband EEG restricted to frontal electrodes (Lucey et al., 2019). SWs were automatically detected during N2 and N3 30s-epochs of NREM sleep devoid of artefacts/arousals >5 s long, using a previously developed algorithm (Rosinvil et al., 2021). Data were first band-filtered between 0.3 and 4.0 Hz with a linear phase finite impulse response (FIR) filter. Following recent work, SW detection criteria was adapted for age and sex (Rosinvil et al., 2021): peak to peak amplitude ≥70 µV (resp. ≥60.5 µV) and negative amplitude ≤–37 µV (resp. ≤–32 µV) was used for women (resp. for men), instead of the standard ≥75 µV and ≤–40 µV. The duration of the negative deflection had to fit in the range 125–1500 ms, and the duration of the positive deflection could not exceed 1000 ms. The SWs were sorted according to their transition frequency (Bouchard et al., 2021) (inverse of the duration between the hyperpolarised and depolarised state) into either slow or fast switchers (the critical value for distinguishing between the two types being the intersection between two Gaussian, around 1.2 Hz) (Figure 3).
 
@@ -104,21 +227,25 @@ Sleep spindles were also automatically detected over the same N2 and N3 epochs w
 
 After detection of SWs and spindles, analysis of their coincidence was performed. A coincidence was defined as to occurrence of the ignition of a spindle within the time frame of a SW: SW ignition at zero µV=phase 0°, SW maximum hyperpolarisation=π/2, zero crossing=π, SW maximum depolarisation=1.5π, and SW termination at zero µV=2π. This criterion was used on slow and fast switchers. All metrics related to SWs and spindles and to their coupling were averaged over F3, F4, and Fz derivations.
 
-## MRI data
+### MRI data
 
 Quantitative multi-parametric MRI acquisition was performed on a 3-Tesla MR scanner (Siemens MAGNETOM Prisma, Siemens Healthineers, Erlangen, Germany). Quantitative maps were obtained by combining the images using different parameters sensitive to distinct tissue properties. The multi-parameter mapping was based on multi-echo 3D fast low angle shot at 1 mm isotropic resolution (Weiskopf and Helms, 2008). This included three datasets with T1, proton density (PD), and magnetisation transfer (MT)-weighted contrasts imposed by the choice of the flip angle (FA = 6° for PD and MT, 21° for T1) and the application of an additional off-resonance Gaussian-shaped Radio Frequency (RF) pulse for the MT-weighted acquisition. MRI multi-parameter maps were processed with the hMRI toolbox (Tabelow et al., 2019) (http://hmri.info) and SPM12 (Welcome Trust Centre for Neuroimaging, London, UK) to obtain notably a quantitative MT map, which was segmented into grey matter, white matter, and CSF using unified segmentation (Ashburner and Friston, 2005). Flow-field deformation parameters obtained from DARTEL spatial normalisation of the individual MT maps were applied to the averaged co-registered PET images (Ashburner, 2007). The volumes of interest were determined using the automated anatomical labelling atlas (Tzourio-Mazoyer et al., 2002).
 
-## PET scan
+### PET scan
 
 Aβ PET imaging was performed using [18F] Flutemetamol, except for three volunteers for which [18F] Florbetapir was used. PET scans were performed on an ECAT EXACT +HR scanner (Siemens, Erlangen, Germany). Participants received a single dose of the radioligand in the antecubital vein (target dose 185±10% MBq); image acquisition started 85 min after the injection and consisted of four frames of 5 min, followed by a 10 min transmission scan using 68Ge line sources. Images were reconstructed using a filtered back-projection algorithm including corrections for the measured attenuation, dead time, random events, and scatter using standard software (Siemens ECAT – HR +V7.1, Siemens/CTI Knoxville, TN, USA). Individual PET average images were produced using all frames and were then manually reoriented according to MT-weighted structural MRI volumes and co-registered to the individual space structural MT map. Standardised uptake value ratio (SUVR) was computed using the whole cerebellum as reference region (Klunk et al., 2015). As images were acquired using two different radioligands, their SUVR values were converted into Centiloid units (Klunk et al., 2015) (the validation of the procedure in our sample was previously published Narbutas et al., 2021). The Aβ burden was averaged over a mask covering the MPFC, previously reported to undergo the earliest aggregation sites for Aβ pathology (Grothe et al., 2017).
 
-## Cognitive assessments
+### Cognitive assessments
 
 As part of an extensive neuropsychological assessment, participants were administered the MST (Stark et al., 2015), a visual recognition memory task. After an incidental encoding phase during which participants were randomly presented 128 common objects for a period of 2 s and were instructed to determine whether the object presented on the screen was rather an ‘indoor’ or ‘outdoor’ item, the recognition memory phase consisted in the presentation of 192 objects (64 old, presented previously – target items; 64 similar but not identical to the previously presented stimuli – lure; and 64 new objects – foil items). In this phase, participants were instructed to determine whether the presented object was new (foil), previously presented (old), or similar but not perfectly identical (lure). For statistical analyses, the recognition memory (RM) score was used, computed as the difference between the rate of calling a target item ‘old’ minus the rate of calling a foil item ‘old’ (P[‘old’|target]-P[‘old’|foil]) (Stark et al., 2013; Rizzolo et al., 2021).
 
-The MST was administered at two timepoints: the first time, the day preceding the baseline night, during a cognitive evaluation performed ~6.5 hr before habitual bedtime. The second neuropsychological evaluation was carried out ~24 months after the first one (mean 767±54 days) between 4 and 10h after wake up time. The memory decline score was computed as the baseline performance minus the follow-up performance, divided by the baseline performance, so that a higher score indicates a higher decline over the 2 years.Memory decline=RM baseline−RM follow-upRM baseline
+The MST was administered at two timepoints: the first time, the day preceding the baseline night, during a cognitive evaluation performed ~6.5 hr before habitual bedtime. The second neuropsychological evaluation was carried out ~24 months after the first one (mean 767±54 days) between 4 and 10h after wake up time. The memory decline score was computed as the baseline performance minus the follow-up performance, divided by the baseline performance, so that a higher score indicates a higher decline over the 2 years.
 
-## Statistics
+$$
+Memory decline=\frac{RM baseline−RM follow-up}{RM baseline}
+$$
+
+### Statistics
 
 Our primary analysis tested in a single model whether the phase of coupling, as dependent variable, would differ between SW types and would be associated with Aβ burden (independent variables), controlling for sex, age, TST, and SW duration. The phase of spindle-SW coupling was set as the phase of the onset of the spindle on the SW converted to its cosine value, to deal with the circularity of the phase variable and perform linear statistics (analysis using the phase in degrees yielded the same outcomes). As we tested our hypothesis in a single test, it did not require correction for multiple testing, and significance was set at p<0.05. Our main exploratory analysis was to assess whether spindle-SW coupling to a specific SW type was associated with longitudinal change in the performance to the memory test, controlling for sex, age, education, and TST. The remaining analyses were aimed a better characterising, the primary analysis, or the main exploratory analyses.
 
@@ -126,6 +253,6 @@ Statistical analyses were performed using GLMMs in SAS 9.4 (SAS Institute, Cary,
 
 Optimal sensitivity and power analyses in GLMMs remain under investigation (e.g. Kain et al., 2015). We nevertheless computed a prior sensitivity analysis to get an indication of the minimum detectable effect size in our main analyses given our sample size. According to G*Power 3 (version 3.1.9.4) (Faul et al., 2009), taking into account a power of 0.8, an error rate α of 0.05, and a sample size of 100 allowed us to detect small effect sizes r>0.27 (two-sided; absolute values; CI: 0.07–0.44; R²>0.07, R² CI:0.005–0.19) within a linear multiple regression framework including one tested predictor (Aβ) and two covariates (age and sex).
 
-## Data availability
+### Data availability
 
 The data and analysis scripts supporting the results included in this manuscript are publicly available via the following open repository: https://gitlab.uliege.be/CyclotronResearchCentre/Public/fasst/slow-wave-spindle-coupling-and-amyloid; Vandewalle, 2022. We used Matlab script for MRI and PET data processing and to detect slow wave and spindles as well as their coupling, while we used SAS for statistical analyses. The raw data could be identified and linked to a single subject and represent a huge amount of data (>200 Gb). Researchers willing to access to the raw should send a request to the corresponding author (GV). Data sharing will require evaluation of the request by the local Research Ethics Board and the signature of a data transfer agreement (DTA).

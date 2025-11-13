@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.14409.001 In our prior work by Hose et al. , we performed a genome-sequencing survey and reported that aneuploidy was frequently observed in wild strains of S. cerevisiae. We also profiled transcriptome abundance in naturally aneuploid isolates compared to isogenic euploid controls and found that 10–30% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression compared to gene copy number. In Hose et al., we argued that this gene group is enriched for genes subject to one or more modes of dosage compensation, where mRNA abundance is decreased in response to higher dosage of that gene. A recent manuscript by Torres et al. refutes our prior work. Here, we provide a response to Torres et al. , along with additional analysis and controls to support our original conclusions. We maintain that aneuploidy is well tolerated in the wild strains of S. cerevisiae that we studied and that the group of genes enriched for those subject to dosage compensation show unique evolutionary signatures. DOI: http://dx.doi.org/10.7554/eLife.14409.001
+In our prior work by Hose et al., we performed a genome-sequencing survey and reported that aneuploidy was frequently observed in wild strains of S. cerevisiae. We also profiled transcriptome abundance in naturally aneuploid isolates compared to isogenic euploid controls and found that 10–30% of amplified genes, depending on the strain and affected chromosome, show lower-than-expected expression compared to gene copy number. In Hose et al., we argued that this gene group is enriched for genes subject to one or more modes of dosage compensation, where mRNA abundance is decreased in response to higher dosage of that gene. A recent manuscript by Torres et al. refutes our prior work. Here, we provide a response to Torres et al., along with additional analysis and controls to support our original conclusions. We maintain that aneuploidy is well tolerated in the wild strains of S. cerevisiae that we studied and that the group of genes enriched for those subject to dosage compensation show unique evolutionary signatures.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Torres et al. take issue with the conclusions in our manuscript, arguing that a)
 
 ## Results and discussion
 
-## Aneuploidy is relatively common and well tolerated in natural isolates of S. cerevisiae
+### Aneuploidy is relatively common and well tolerated in natural isolates of S. cerevisiae
 
 Torres et al. argue that the wild strains analyzed in our study are not tolerant of aneuploidy, since the chromosome-wide average of the relative Illumina read depth measured for each amplified gene is not precisely 1.0, 1.5, or 2.0-fold higher than the euploid control (see Torres et al. Methods). They take this to reflect heterogeneous populations in which cells in the culture have lost the aneuploidy. However, this is not valid for several reasons. Due to technical biases in Illumina sequencing, it is highly unlikely that the mean value of relative gene copy number across whole chromosomes is a precise integer. Indeed, the plots shown by Torres et al. indicate the expected spread in relative read depth across the amplified chromosomes – similar to the spread in read counts of the euploid chromosomes – with mean values very close to the relative DNA abundance we reported. Furthermore, some genes on the chromosomes are not amplified (particularly those near the telomeres [Hose et al., 2015]), which can also slightly reduce the mean value away from a precise integer.
 
@@ -39,11 +39,129 @@ Instead, our data show that the wild strains we studied are tolerant of aneuploi
 
 Taken together, these results strongly support our conclusion that aneuploidy is relatively well tolerated in wild isolates of S. cerevisiae, at least for the strains and chromosomes we studied, but not in W303 as previously published (Sheltzer et al., 2012; Torres et al., 2007; 2010). It is certainly possible that some wild strains will not tolerate aneuploidy, and likely that some chromosome amplifications are more problematic than others, regardless of strain background. The prevalence of aneuploidy in our original study is consistent with other reports of aneuploidy in wild isolates (Tan et al., 2013; Strope et al., 2015; Sirr et al., 2015; Muller and McCusker, 2009) and certainly industrial strains (Bakalinsky and Snow, 1990; Bond et al., 2004; Hadfield et al., 1995). Aneuploidy commonly emerges in response to selective pressure (Mulla et al., 2014); interestingly, a recent study by Filteau et al. showed that aneuploidy was relatively frequent in a wild strain, but not a laboratory strain, subjected to the same selection conditions (Filteau et al., 2015). W303 harbors six auxotrophies, several of which affect but do not entirely explain the intolerance of Chr12 amplification (unpublished). Thus, while many nice studies have been done with the W303 laboratory strain, we caution against using it (or any single strain) as the sole representative of S. cerevisiae (Gasch et al., 2016).
 
-## A substantial fraction of amplified genes show lower-than-expected expression
+### A substantial fraction of amplified genes show lower-than-expected expression
 
 To examine expression effects in naturally aneuploid strains, we measured mRNA and DNA abundance in aneuploid isolates compared to closely related or isogenic euploid controls. We did three sets of analyses in Hose et al. We first surveyed expression in six naturally aneuploid strains compared to paired euploid relatives, in biological duplicate. Pooling data across the strains identified 838 out of 2,204 amplified genes (38% over all genes considered in the six strains) whose relative mRNA abundance was reproducibly lower than the relative DNA abundance measured in the strain pairs (Hose et al. Figure 4A). The reduced expression could be because of a response to the aneuploidy, a response to the increased gene copy number, or due to heritable polymorphisms that reduce expression – we emphasize the presentation in Hose et al. that these genes should not be taken as dosage compensated from this analysis alone.
 
-To distinguish the above possibilities, we performed two analyses on isogenic strain pairs, in which the only difference between strains was chromosome copy number. First, we measured mRNA abundance (in biological duplicate) for three aneuploid strains and their isogenic euploids and compared relative mRNA abundance to relative DNA abundance measured in those strain pairs (outlined in more detail below). This identified 163 of 882 genes (or 18% of the total set of genes assessed across these three strains) with lower-than-expected expression in aneuploid cells (Hose et al. Figure 4B and Supplementary File 3). Second, we generated isogenic strain panels for two other naturally aneuploid strains, in which diploid cells carried two, three, or four copies of the amplified chromosome. Using a mixture-of-linear regressions (MLR) model, we defined genes whose relative mRNA abundance did not increase proportionately to relative DNA abundance measured in the aneuploid versus isogenic euploid strains. The MLR analysis identified 172 genes in this class out of 773 genes (or 22% of the genes assessed in these two strain panels, Hose et al., Table 1, Class 3a). We then combined the gene groups from the two analyses of isogenic strain sets for downstream analysis. Because the paired strain analysis was less stringent (in part because only duplicates were analyzed), we required that genes be identified in both Figure 4B (isogenic strain pairs) and Figure 4A (non-isogenic strain pairs). This left 73 genes whose expression was lower-than-expected in four biological measurements from isogenic strain pairs plus the 172 genes identified by the more sensitive MLR analysis from the isogenic strain panels, for a combined total of 245 genes out of 1655 (15%) total genes assessed in the two analyses of isogenic strains. In Hose et al., we cited that 10–30% of genes, depending on strain and chromosome, met our criteria. There was an error in the abstract of the published article that we request to be changed, where '>30%' should have read 'up to 30%' of genes may be subjected to dosage compensation. We regret the error, but point out that the correct values are cited clearly throughout the manuscript.10.7554/eLife.14409.003Table 1.The center (mean) of log2 distributions for mRNA or DNA ratios measured across all unamplified genes in isogenic aneuploid-euploid strain comparisons are shown. mRNA data from each strain was normalized by either ‘spike-in’ of Sz. pombe cells to the S. cerevisiae cell collections or by reads-per-kb per million mapped reads (RPKM) of S. cerevisiae genes only. Normalized data were then compared across strain pairs to provide a log2 ratio of relative mRNA or DNA abundance for each gene.DOI: http://dx.doi.org/10.7554/eLife.14409.003Mean log2 mRNA ratios (spike-in)Mean log2 mRNA ratios (RPKM)Mean log2 DNA ratios (RPKM)1 SD used for thresholdT73_Chr8-4n vs -2n rep10.08−0.019−0.0720.197T73_Chr8-4n vs -2n rep20.102−0.020n.a.YJM428_Chr16-4n vs -2n rep1−0.401−0.037−0.1210.168YJM428_Chr16-4n vs -2n rep2−0.4570.004n.a.YPS163_Chr8-2n vs -1n rep1n.a.*-0.1460.0450.242YPS163_Chr8-2n vs -1n rep2n.a.*−0.135n.a.NCYC110_Chr8-3n vs -2n rep50.014−0.005n.a.NCYC110_Chr8-4n vs -2n rep50.2730.186n.a.NCYC110_Chr8-4n vs -2n rep1n.a.0.058−0.076NCYC110_Chr8-4n vs -2n rep2n.a.0.011−0.108NCYC110_Chr8-4n vs -2n rep3n.a.0.078n.a.YPS1009_Chr12-4n vs -2n rep1n.a.0.0140.003YPS1009_Chr12-4n vs -2n rep2n.a.-0.094−0.229YPS1009_Chr12-4n vs -2n rep3n.a.−0.184n.a.*We attempted spike-in normalization for haploid YPS163-disomic (‘2n’) and -monosomic (‘1n’) strains but were unable to accurately count cells due to differences in flocculation across aneuploid-euploid strains. As described in Hose et al. (2015), RPKM normalization produced data that agreed as well or better across replicates compared to spike-in normalization and in the case of YJM428_Chr16-4n agreed better with qPCR measurements of Chr16 abundance in the culture (not shown). Note data from NCYC110 replicate (rep) 5 were not used in the analysis but were generated during the Hose et al. manuscript revision stage for normalization controls. The SD of DNA ratios on the affected chromosome that were subtracted from gene-level measurements of relative DNA abundance (i.e. to generate the gene-specific thresholds, see text) are shown for reference where relevant.
+To distinguish the above possibilities, we performed two analyses on isogenic strain pairs, in which the only difference between strains was chromosome copy number. First, we measured mRNA abundance (in biological duplicate) for three aneuploid strains and their isogenic euploids and compared relative mRNA abundance to relative DNA abundance measured in those strain pairs (outlined in more detail below). This identified 163 of 882 genes (or 18% of the total set of genes assessed across these three strains) with lower-than-expected expression in aneuploid cells (Hose et al. Figure 4B and Supplementary File 3). Second, we generated isogenic strain panels for two other naturally aneuploid strains, in which diploid cells carried two, three, or four copies of the amplified chromosome. Using a mixture-of-linear regressions (MLR) model, we defined genes whose relative mRNA abundance did not increase proportionately to relative DNA abundance measured in the aneuploid versus isogenic euploid strains. The MLR analysis identified 172 genes in this class out of 773 genes (or 22% of the genes assessed in these two strain panels, Hose et al., Table 1, Class 3a). We then combined the gene groups from the two analyses of isogenic strain sets for downstream analysis. Because the paired strain analysis was less stringent (in part because only duplicates were analyzed), we required that genes be identified in both Figure 4B (isogenic strain pairs) and Figure 4A (non-isogenic strain pairs). This left 73 genes whose expression was lower-than-expected in four biological measurements from isogenic strain pairs plus the 172 genes identified by the more sensitive MLR analysis from the isogenic strain panels, for a combined total of 245 genes out of 1655 (15%) total genes assessed in the two analyses of isogenic strains. In Hose et al., we cited that 10–30% of genes, depending on strain and chromosome, met our criteria. There was an error in the abstract of the published article that we request to be changed, where '>30%' should have read 'up to 30%' of genes may be subjected to dosage compensation. We regret the error, but point out that the correct values are cited clearly throughout the manuscript.
+
+**Table 1.**
+ The center (mean) of log2 distributions for mRNA or DNA ratios measured across all unamplified genes in isogenic aneuploid-euploid strain comparisons are shown. mRNA data from each strain was normalized by either ‘spike-in’ of Sz. pombe cells to the S. cerevisiae cell collections or by reads-per-kb per million mapped reads (RPKM) of S. cerevisiae genes only. Normalized data were then compared across strain pairs to provide a log2 ratio of relative mRNA or DNA abundance for each gene.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean log2 mRNA ratios (spike-in)</th>
+      <th>Mean log2 mRNA ratios (RPKM)</th>
+      <th>Mean log2 DNA ratios (RPKM)</th>
+      <th>1 SD used for threshold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T73_Chr8-4n vs -2n rep1</td>
+      <td>0.08</td>
+      <td>−0.019</td>
+      <td>−0.072</td>
+      <td>0.197</td>
+    </tr>
+    <tr>
+      <td>T73_Chr8-4n vs -2n rep2</td>
+      <td>0.102</td>
+      <td>−0.020</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YJM428_Chr16-4n vs -2n rep1</td>
+      <td>−0.401</td>
+      <td>−0.037</td>
+      <td>−0.121</td>
+      <td>0.168</td>
+    </tr>
+    <tr>
+      <td>YJM428_Chr16-4n vs -2n rep2</td>
+      <td>−0.457</td>
+      <td>0.004</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YPS163_Chr8-2n vs -1n rep1</td>
+      <td>n.a.*</td>
+      <td>-0.146</td>
+      <td>0.045</td>
+      <td>0.242</td>
+    </tr>
+    <tr>
+      <td>YPS163_Chr8-2n vs -1n rep2</td>
+      <td>n.a.*</td>
+      <td>−0.135</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCYC110_Chr8-3n vs -2n rep5</td>
+      <td>0.014</td>
+      <td>−0.005</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCYC110_Chr8-4n vs -2n rep5</td>
+      <td>0.273</td>
+      <td>0.186</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCYC110_Chr8-4n vs -2n rep1</td>
+      <td>n.a.</td>
+      <td>0.058</td>
+      <td>−0.076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCYC110_Chr8-4n vs -2n rep2</td>
+      <td>n.a.</td>
+      <td>0.011</td>
+      <td>−0.108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NCYC110_Chr8-4n vs -2n rep3</td>
+      <td>n.a.</td>
+      <td>0.078</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YPS1009_Chr12-4n vs -2n rep1</td>
+      <td>n.a.</td>
+      <td>0.014</td>
+      <td>0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YPS1009_Chr12-4n vs -2n rep2</td>
+      <td>n.a.</td>
+      <td>-0.094</td>
+      <td>−0.229</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>YPS1009_Chr12-4n vs -2n rep3</td>
+      <td>n.a.</td>
+      <td>−0.184</td>
+      <td>n.a.</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*We attempted spike-in normalization for haploid YPS163-disomic (‘2n’) and -monosomic (‘1n’) strains but were unable to accurately count cells due to differences in flocculation across aneuploid-euploid strains. As described in Hose et al. (2015), RPKM normalization produced data that agreed as well or better across replicates compared to spike-in normalization and in the case of YJM428_Chr16-4n agreed better with qPCR measurements of Chr16 abundance in the culture (not shown). Note data from NCYC110 replicate (rep) 5 were not used in the analysis but were generated during the Hose et al. manuscript revision stage for normalization controls. The SD of DNA ratios on the affected chromosome that were subtracted from gene-level measurements of relative DNA abundance (i.e. to generate the gene-specific thresholds, see text) are shown for reference where relevant._
 
 Torres et al. disagree with our analysis methods, stating that i) the data were misnormalized, ii) the thresholds used were not valid, iii) the mixture of linear regressions (MLR) model was inappropriate, and iv) we did not correct for false discovery. They further propose that expression differences in aneuploid strains fit a normal distribution across the transcriptome, which they take as a null model for no dosage compensation. Below, we briefly address each of these points in turn.
 
@@ -61,7 +179,7 @@ Torres et al. perform their own analysis to identify potentially dosage compensa
 
 As published in Hose et al., there are genes on and off the amplified chromosome that have higher expression in the aneuploid strains. The MLR analysis reported nearly the same number of amplified genes with higher expression as with reduced expression (Hose et al. Table 1). We regret the magenta coloring to highlight amplified genes in Figure 4, which was added during the revisions to make a separate point and thus the genes were not selected with the same criteria as genes with lower expression. Nonetheless, as we describe in Hose et al., the two tails of the distribution are enriched for different functional groups: whereas amplified genes with lower-than-expected expression are enriched for particular functional groups (see below) and for genes that are toxic when over-expressed in the lab strain, the set of amplified genes with higher-than-expected expression is enriched for genes encoding membrane and cell-surface proteins. As we cited, the higher-than-expected expression of amplified genes (and of genes on unamplified chromosomes) is likely an indirect response to the known influence that ploidy has on cell size/shape and flocculence (Wu et al., 2010). Therefore, we do not believe that the distribution across all genes can be used to select individual genes subject to dosage compensation, nor did we focus on global averages or correlations. Instead, we identified individual genes that have the lower-than-expected expression phenotype and analyzed the pooled set to explore enriched features, as described below.
 
-## Unique features of selected genes suggest the group is enriched for dosage-compensated genes
+### Unique features of selected genes suggest the group is enriched for dosage-compensated genes
 
 A major point of our original manuscript that was not addressed by Torres et al. is that the genes we identified through the above analyses are strikingly enriched for unique patterns. The set of genes with lower-than-expected expression in aneuploid strains is strongly enriched for certain functional groups, including genes known to feedback on their own expression (see more below), genes that are toxic when over-expressed, and genes that are under higher expression constraint but display elevated copy number variation (CNV) in wild populations (Hose et al., 2015). Such non-random associations are unlikely to occur if the gene selection was truly random and driven by noisy data. We ruled out the possibility that these genes reflect a common, indirect response to aneuploidy. However, it is true that a subset of the genes we identified could be responding transcriptionally to the particular chromosome amplified, rather than the gene’s copy number per se. We attempted to minimize these effects in our original downstream analysis by pooling amplified genes from five aneuploid strains and across three amplified chromosomes. Here, we provide an additional series of controls to show that the trends seen for the gene group we identified cannot be explained as indirect transcriptional responses to aneuploidy.
 
@@ -69,11 +187,11 @@ As presented by Torres et al., chromosome-specific responses to aneuploidy shoul
 
 The revised set of amplified genes with lower-than-expected expression remains enriched for functional groups that cannot be explained by common or chromosome-specific responses, including cytosolic RPs (p=6e-7), other proteins involved in ribosome biogenesis (p=5e-4), and an overlapping gene set linked to translation (p=3e-6). RPs are known to feedback on their own expression (Warner et al., 1985; Vilardell and Warner, 1997; Dabeva and Warner, 1987; Dean et al., 1981; Tsay et al., 1988), and we validated the trend at two genes (Hose et al., 2015). The revised group is also weakly enriched for sequence-specific DNA binding proteins (p=0.006), including several transcription factors that bind their own promoters and/or regulate their own expression (including, Hap1, Stb5, Bdf1, and Rsc30 [Venters et al., 2011; Deckert et al., 1995; Hon et al., 2005; Denby et al., 2012]). Importantly, these enrichments remained significant when genes from each chromosome were held out (p<0.007, except for one case where DNA binding protein enrichment p=0.04), showing that the result is not skewed by one particular aneuploidy. As cited in Hose et al., these categories are not enriched among unamplified genes whose expression is affected by the common aneuploidy response (Hose et al., 2015). Thus, our analysis is clearly enriching for genes subject to dosage compensation.
 
-All of the evolutionary signatures we reported in the original manuscript remain statistically significant on this reduced gene group (
+All of the evolutionary signatures we reported in the original manuscript remain statistically significant on this reduced gene group (Figure 1). The revised gene set enriched for dosage-compensated genes displays significantly higher levels of CNV in S. cerevisiae populations, compared to all genes and compared to amplified genes with proportionately elevated expression (Figure 1A). They also have significantly higher CNV buffering scores (Figure 1B, see Methods and (Hose et al., 2015)), indicating a higher level of CNV despite increased expression constraint. If these trends are driven by genes subject to repression or indirect effects of aneuploidy, we would expect to see the same patterns for unamplified genes that show reduced expression compared to euploid controls. But this is not the case: unamplified genes with reduced expression (identified either by edgeR or by the identical methods used to call dosage-compensated genes) show no increase in CNV propensity or buffering scores compared to the control group. The trends for the affected amplified genes remain if we define genes using a more stringent threshold to call affected genes, if we remove from the analysis all genes belonging to any of the enriched functional groups, or if we separately hold out each amplified chromosome from the analysis (see Methods). A final prediction is that genes with larger effect sizes in terms of the level of compensation should have more striking evolutionary patterns, and this is indeed the case (Figure 1). Therefore, the results we report cannot be explained as a secondary transcriptional response to the amplified chromosome – we believe that the group is legitimately enriched for genes subject to dosage control and that dosage compensation has an important effect on genome evolution.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14409/elife-14409-fig1-v2.jpg)
 
-**Figure 1.:** Gene sets and the numbers contained within them are indicated by the key. The revised list of amplifed genes with lower-than-expected expression were partitioned into thirds, based on genes with the greatest (top third) or smallest (bottom third) reduction in expresison compared to expectation. (A) The fraction of genes in each group for which at least three of 103 strains showed gene amplification. (B) The distribution of Buffering Scores for genes with CNV. Here, Buffering Score represents the number of 103 strains with a gene duplication divided by expression constraint (Vg/Vm, see Hose et al. for details). Higher values indicate a higher propensity for CNV despite expression constraint. The orange line indicates the median value for amplified genes with proportionate expression as a reference point. Asterisks indicate statistical significance (p<0.035) compared to the amplified genes with proportionate expression. In some cases, the trends were consistent but not significant (likely owing to small sample sets).DOI: http://dx.doi.org/10.7554/eLife.14409.004
+**Figure 1.:** Gene sets and the numbers contained within them are indicated by the key. The revised list of amplifed genes with lower-than-expected expression were partitioned into thirds, based on genes with the greatest (top third) or smallest (bottom third) reduction in expresison compared to expectation. (A) The fraction of genes in each group for which at least three of 103 strains showed gene amplification. (B) The distribution of Buffering Scores for genes with CNV. Here, Buffering Score represents the number of 103 strains with a gene duplication divided by expression constraint (Vg/Vm, see Hose et al. for details). Higher values indicate a higher propensity for CNV despite expression constraint. The orange line indicates the median value for amplified genes with proportionate expression as a reference point. Asterisks indicate statistical significance (p<0.035) compared to the amplified genes with proportionate expression. In some cases, the trends were consistent but not significant (likely owing to small sample sets).
 
 Our original intention in Hose et al. was not to claim that dosage compensation is ‘widespread’ in S. cerevisiae, but rather that it exists at a significant number of genes and has an important role in evolution. We certainly agree with Torres et al. that dosage compensation does not function at most amplified genes, as seen for sex chromosomes in other organisms. Our goal was not to define individual genes subject to dosage compensation, but rather to investigate the group – we caution that no single gene from our lists should be taken as dosage compensated without orthogonal evidence. In the end, the revised gene set we identified here at the highest confidence encompasses 157 (13%) genes out of 1,243 interrogated across all the isogenic strain sets. It is true that some of the genes we identified, particularly those with only subtly reduced expression patterns, are false positive calls from our analysis. However, the number of genes we identified is inline with the 14% of dosage compensated genes reported by Springer and colleagues (Springer et al., 2010) (using GFP reporters for 730 genes interrogated) and is consistent with (but on the lower end) our original report of 10–30%. Future work will undoubtedly clarify the precise number and identity of genes subject to dosage compensation, as well as the genetic basis for phenotypic differences in aneuploidy tolerance in laboratory versus wild strains.
 

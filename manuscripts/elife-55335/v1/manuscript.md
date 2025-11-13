@@ -53,6 +53,79 @@ To address these two aims, a large sample (N = 100) of cognitively normal olde
 
 **Figure 1.:** Concurrent with fMRI, participants intentionally encoded word-picture pairs and completed an associative cued recall test. At test, they were presented with studied words intermixed with novel words, and instructed to recall the associate paired with each word, if old. Participants responded ‘Face’ or ‘Place’ if they could recollect the associated image; ‘Old’ if they recognized the word but could not recollect the associate; ‘New’ if they believed the word was novel. A post-scan cued recall test (not shown, visually identical to the ‘Test Phase’) further probed memory for the specific associate paired with each studied word (see Materials and methods).
 
+**Table 1.**
+ Demographics and neuropsychological test performance.Table 1—source data 1.Demographic information and behavioural data presented in Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Mean (SD)</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gender</td>
+      <td>61 F; 39 M</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Age (yrs)</td>
+      <td>67.96 (5.47)</td>
+      <td>60–82</td>
+    </tr>
+    <tr>
+      <td>Education (yrs)</td>
+      <td>16.84 (1.94)</td>
+      <td>12–20</td>
+    </tr>
+    <tr>
+      <td>MMSE</td>
+      <td>29.10 (.90)</td>
+      <td>26–30</td>
+    </tr>
+    <tr>
+      <td>CDR</td>
+      <td>0</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Logical Memory Delayed Recall (/50)</td>
+      <td>32.04 (6.16)</td>
+      <td>18–44</td>
+    </tr>
+    <tr>
+      <td>HVLT-R Delayed Recall (/12)</td>
+      <td>10.49 (1.68)</td>
+      <td>5–12</td>
+    </tr>
+    <tr>
+      <td>BVMT-R Delayed Recall (/12)</td>
+      <td>9.80 (2.16)</td>
+      <td>5–12</td>
+    </tr>
+    <tr>
+      <td>Old/New d’</td>
+      <td>2.26 (0.68)</td>
+      <td>0.86–4.78</td>
+    </tr>
+    <tr>
+      <td>Associative d’</td>
+      <td>1.64 (0.73)</td>
+      <td>−0.27–3.92</td>
+    </tr>
+    <tr>
+      <td>Exemplar-Specific Recall (proportion correct, post-scan)</td>
+      <td>0.29 (0.19)</td>
+      <td>0.00–0.84</td>
+    </tr>
+  </tbody>
+</table>
+
+_BVMT-R = Brief Visuospatial Memory Test-Revised; CDR = Clinical Dementia Rating; HVLT-R = Hopkins Verbal Learning Test-Revised; MMSE = Mini Mental State Examination. See Supplementary file 1 for summary of full neuropsychological test battery scores, and Supplementary file 1 for a summary of retrieval reaction time data and trial counts by memory outcome._
+
 To measure pattern completion during retrieval, we used univariate and multivariate analyses focused on a priori regions of interest (ROIs; Figure 2). To measure hippocampal function, our primary analyses examined univariate activity in the whole hippocampus bilaterally. In addition, we measured activity in three subfields within the body of the hippocampus — dentate gyrus/CA3 (DG/CA3), CA1, and subiculum (SUB) — given prior work suggesting that aging may differentially affect individual hippocampal subfields (Yassa et al., 2011; Carr et al., 2017; Reagh et al., 2018) and models predicting differential subfield involvement in pattern completion, including a key role for subfield CA3 (Nakazawa et al., 2002; Grande et al., 2019). To measure cortical reinstatement, we focused on two cortical regions — ventral temporal cortex (VTC) and angular gyrus (ANG) — which we predicted would support content-rich representations during memory retrieval based on prior evidence in healthy younger adults. In particular, while VTC has traditionally been associated with content coding during memory encoding and retrieval (Nyberg et al., 2000; Wheeler et al., 2000; Polyn et al., 2005; Johnson and Rugg, 2007; Staresina et al., 2012; Ritchey et al., 2013; Kuhl and Chun, 2014; Gordon et al., 2014; Gagnon et al., 2019), more recent studies have also demonstrated evidence for cortical reinstatement of both category and stimulus/event-specific features in ANG during episodic retrieval, and suggest that these representations may be differentially related to memory-guided behaviour (Kuhl et al., 2013; Kuhl and Chun, 2014; Favila et al., 2018; Lee et al., 2019). Category-level reinstatement (i.e., face/place) was quantified via pattern classification and event-specific reinstatement (e.g., Queen Elizabeth, Golden Gate Bridge) was quantified using encoding-retrieval pattern similarity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig2-v1.jpg)
@@ -61,53 +134,302 @@ To measure pattern completion during retrieval, we used univariate and multivari
 
 ## Results
 
-## Behavioural results
+### Behavioural results
 
 We assessed performance on the associative cued recall task using three measures: 1) old/new d’ — discrimination between studied and novel words during the in-scan memory test, irrespective of memory for the associate; 2) associative d’ — correctly remembering the category of associated images encoded with studied words, relative to falsely indicating an associative category to novel words; and 3) post-scan exemplar-specific associative recall — proportion correct recall of the specific exemplars associated with studied words. Performance on all three measures declined with age (old/new d’: β = −0.35, p < 0.001; associative d’: β = −0.30, p < 0.005, Figure 3a; post-scan exemplar-specific recall: β = −0.34, p < 0.001, Figure 3b), but did not vary by sex (βs = −0.10,–0.33, −0.23; ps ≥0.10) or years of education (β = −0.03,–0.02, −0.07; ps >0.47). Associative d’ was higher for word-face pairs than word-place pairs (t(99) = 5.37, p < 10−7). Critically, despite this decline in performance with age, we also observed considerable variability in performance across individuals in each measure (Figure 3 and Table 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig3-v1.jpg)
 
-**Figure 3.:** (a) In-scanner associative d’ and (b) post-scan exemplar-specific associative recall decline with age. (c) Associative d’ is strongly correlated with post-scan exemplar-specific associative recall, controlling for the effect of age. Each data point represents a participant; plots show linear model predictions (black line) and 95% confidence intervals (shaded area).Figure 3—source data 1.Figure 3a–c.
+**Figure 3.:** (a) In-scanner associative d’ and (b) post-scan exemplar-specific associative recall decline with age. (c) Associative d’ is strongly correlated with post-scan exemplar-specific associative recall, controlling for the effect of age. Each data point represents a participant; plots show linear model predictions (black line) and 95% confidence intervals (shaded area).
 
 Individual-differences and trial-wise analyses revealed that post-scan associative recall tracked in-scanner associative memory. First, individuals who demonstrated higher associative memory during scanning showed superior recall of the specific exemplars on the post-scan test (controlling for age; β = 0.62, p < 10−12; Figure 3c). Second, trial-wise analysis revealed that making an in-scan associative hit was a significant predictor of successful post-scan exemplar recall (χ2(1) = 159.68, p < 10−36). These findings suggest that post-scan exemplar-specific retrieval — while quantitatively lower due to the longer retention interval, change of context, and interference effects — is a good approximation of recall of the specific exemplar during scanning (relative to simply recalling more general category information).
 
-## fMRI encoding classifier accuracy
+### fMRI encoding classifier accuracy
 
 Following prior work (e.g., Kuhl et al., 2013; Kuhl and Chun, 2014; Favila et al., 2018; Lee et al., 2019), cortical reinstatement analyses focused on two a priori ROIs: VTC and ANG. To confirm that activity patterns during word-face and word-place encoding trials were discriminable for each participant in each ROI, we trained and tested a classifier on the encoding data using leave-one-run-out-n-fold cross validation. On average, encoding classifier accuracy was well above chance (50%) using patterns in VTC (M = 98.4%, p < 0.001) and ANG (90.0%, p < 0.001), with classifier accuracy significantly greater in VTC than ANG (t(99) = 12.86, p < 10−16). Classification was above chance in all 100 participants (minimum accuracy of 82.5% (p < 0.001) in VTC and 68.0% (p < 0.005) in ANG), and did not vary significantly as a function of age (VTC: β = −0.13, p = 0.133; ANG: β = −0.06, p = 0.544). To account for variance in encoding classifier strength (quantified using log odds of the classifier’s probability estimate) on estimates of category-level reinstatement strength during memory retrieval (trial-wise: VTC: χ2(1) = 13.96, p < 0.001; ANG: χ2(1) = 30.16, p < 10−8; individual differences: VTC: β = 0.45, p < 10−5; ANG: β = 0.62, p < 10−11; see Figure 5—figure supplement 3), we controlled for encoding classifier strength in all subsequent models in which category-level reinstatement strength was related to behavioural variables (memory accuracy, RT), as well as in models in which reinstatement strength was the dependent variable (see Materials and methods – Statistical Analysis and Supplementary file 1 for details).
 
-## Memory behaviour scales with trial-wise category-level reinstatement
+### Memory behaviour scales with trial-wise category-level reinstatement
 
 We quantified reinstatement of relevant face or scene features (i.e., category-level reinstatement) in VTC and ANG using subject-specific classifiers trained on all encoding phase runs for an individual (training set was balanced for category), and tested for cortical reinstatement in the independent retrieval phase data; significance was assessed using permutation testing (see Materials and methods – MVPA for further details). Classifier accuracy (Figure 4a) was above chance (50%) during associative hits in VTC (M = 68.3%, p < 0.005) and ANG (M = 72.3%, p < 0.001), but did not exceed chance when associative retrieval failed, including on associative miss trials (VTC: 49.8%, p = 0.57; ANG: 50.4%, p = 0.49), item hit trials (VTC: 53.5%, p = 0.29; ANG: 53.3%, p = 0.31), and item miss trials (VTC: 47.1%, p = 0.68; ANG: 51.6%, p = 0.41; see Materials and methods for trial type definitions). Classifier accuracy during associative hits was greater in ANG relative to VTC (t(99) = 3.96, p < 0.001). In VTC, classifier accuracy during associative hits was stronger on place trials (M = 71.5%) relative to face trials (M = 65.1%, t(99) = 5.25, p < 10−7), whereas in ANG the strength of reinstatement did not significantly vary by stimulus category (place: M = 73.3%; face: M = 71.3%, t(99) = 1.69, p = 0.094). To control for possible effects of stimulus category on the results, category is included as a regressor in all linear and logistic mixed effects models, and interactions between category and primary variables of interest are examined and reported in Supplementary file 1). Analyses of the time course of cortical reinstatement during associative hits revealed significant category-level reinstatement effects emerging ~4–6 s post-stimulus onset (Figure 4—figure supplement 1). Analogous category-level reinstatement effects were observed using a pattern similarity approach (i.e., encoding-retrieval similarity (ERS); see Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-v1.jpg)
+
+**Figure 4.:** (a) Classifier accuracy is above chance in VTC and ANG during successful, but not unsuccessful, associative retrieval. (b) Trial-wise category-level reinstatement strength (logits) in VTC and ANG is related to an increased probability of an associative hit and (c) faster decision RT on associative hit trials. (d) Event-level reinstatement (within-event ERS > within-category ERS) is observed during associative hits in VTC and ANG. (e) Trial-wise event-level reinstatement (within-event ERS) significantly varies with the probability of an associative hit and (f) exemplar-specific hit. (g) Hippocampal activity shows a graded response across retrieval conditions. (h) Trial-wise hippocampal activity is related to an increased probability of an associative hit and (i) greater category-level reinstatement strength (logits) in VTC and ANG. For visualization, data for each participant are binned into quintiles based on category-level reinstatement strength (b,c), event-level reinstatement strength (e,f) and hippocampal activity (h,i). Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean. VTC = ventral temporal cortex; ANG = angular gyrus; RT = reaction time; ERS = Encoding Retrieval Similarity.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Category-level reinstatement effects emerge at approximately 4–6 s post-stimulus onset in both VTC and ANG. Error bars represent standard error of the mean. VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Within-category ERS (Pearson r) is greater than between-category ERS during successful associative retrieval (VTC: t(99) = 8.84, p < 10−14; ANG: t(99) = 12.15, p < 10−16), but not unsuccessful associative retrieval (associative misses: VTC: p = 0.97; ANG: p = 0.19; item only hits: VTC: t(51) = −1.22, p = 0.23; ANG: t(51) = −1.92, p = 0.06; item misses: VTC: p = 0.69; ANG: t(83) = −1.89, p = 0.06). (b) Trial-wise within-category reinstatement strength in VTC and ANG is related to the probability of an associative hit (VTC: χ2(1) = 18.91, p < 10−5; ANG: χ2(1) = 53.05, p < 10−13). (c) Trial-wise hippocampal activity is related to within-category reinstatement strength in VTC (χ2(1) = 8.65, p = 0.003) and ANG (χ2(1) = 9.22, p = 0.002). For visualization, data for each participant are binned into quintiles based on (b) ERS and (c) hippocampal activity. Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean. ERS = Encoding Retrieval Similarity. VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Trial-wise estimates of (a) category-level reinstatement (logits) and (b) hippocampal activity are related to an increased probability of exemplar-specific recall in the post-scan memory test. For visualization, data for each participant are binned into quintiles based on (a) category-level reinstatement or (b) hippocampal activity. Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean. VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** For visualization, data for each participant are binned into quintiles based on hippocampal activity. Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean.VTC = ventral temporal cortex; ANG = angular gyrus. ERS = Encoding Retrieval Similarity.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (a) Retrieval activity in DG/CA3 (χ2(1) = 37.03, p < 10−9), CA1 (χ2(1) = 23.16, p < 10−6), and Sub (χ2(1) = 15.29, p < 10−5) is a significant predictor of associative retrieval success. This relationship varies in strength across subfields (χ2(1) = 12.99, p < 0.001), with DG/CA3 activity being a significantly stronger predictor than CA1 (z = 2.31, p < 0.05) or Sub (z = 3.55, p < 0.001), whereas CA1 and Sub do not significantly differ (z = 1.24, p > 0.21). (b) Category-level reinstatement strength in VTC is related to activity in all subfields (DG/CA3: χ2(1) = 12.25, p < 0.001; CA1: χ2(1) = 15.40, p < 10−5; Sub: χ2(1) = 13.38, p < 0.001; interaction: p = 0.703). Subfield activity is no longer a significant predictor of VTC category-level reinstatement when considering associative hit trials only (DG/CA3: p = 0.748; CA1: p = 0.175; Sub: p = 0.504). (c) Category-level reinstatement strength in ANG is related to activity in DG/CA3 (χ2(1) = 7.89, p = 0.005) and CA1 (χ2(1) = 10.49, p = 0.001), but not Sub (p = 0.458); DG/CA3 and CA1 effects do not differ (p = 0.988). When considering associative hit trials, only DG/CA3 remains marginally significant (χ2(1) = 2.86, p = 0.091; CA1: p = 0.437; Sub: p = 0.572). For visualization, data for each participant are binned into quintiles based on hippocampal subfield activity. Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean. VTC = ventral temporal cortex; ANG = angular gyrus; DG = Dentate Gyrus; Sub = Subiculum.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (a) The relationship between retrieval activity and associative retrieval success varies by subregion (χ2(1) = 31.44, p < 10−8), being stronger in the hippocampal head (χ2(1) = 65.76, p < 10−16) than hippocampal tail (χ2(1) = 24.08, p < 10−7). (b–c) The relationship between retrieval activity and category-level reinstatement strength in VTC and ANG varies by subregion (VTC: χ2(1) = 14.86, p < 0.001; ANG: χ2(1) = 24.77, p < 10−8), reflecting a stronger relationship between univariate activity and reinstatement strength in the hippocampal head (VTC: χ2(1) = 44.97, p < 10−11; ANG: χ2(1) = 46.76, p < 10−12) than tail (VTC: χ2(1) = 44.97, p = 0.021; ANG: p = 0.743). When considering associative hit trials only, only activity in the hippocampal head remains significant (VTC: χ2(1) = 11.70, p < 0.001; ANG: χ2(1) = 20.35, p < 10−6; tail: VTC: p = 0.762; ANG: p > 0.358). For visualization, data for each participant are binned into quintiles based on hippocampal subfield activity. Statistics were conducted on trial-wise data, z-scored within participant. Error bars represent standard error of the mean. VTC = ventral temporal cortex; ANG = angular gyrus.
+
 Evidence for reinstatement during successful, but not unsuccessful, associative retrieval is consistent with theories that posit that reinstatement of event features (here, face or scene features) supports accurate memory-based decisions (here, associate category judgments). More directly supporting this hypothesis, generalized logistic and linear mixed effects models (see Supplementary file 1 for full list of model parameters) revealed that greater trial-wise category-level cortical reinstatement in VTC and ANG — quantified using log odds of the classifier’s probability estimate — was related to (a) an increased probability of an associative hit (VTC: χ2(1) = 102.18, p < 10−24; ANG: χ2(1) = 133.25, p < 10−31; Figure 4b), (b) an increased probability of post-scan exemplar-specific recall (VTC: χ2(1) = 62.85, p < 10−15; ANG: χ2(1) = 89.02, p < 10−21; Figure 4—figure supplement 3), and (c) faster retrieval decision RTs on associative hit trials (VTC: χ2(1) = 30.08, p < 10−8; ANG: χ2(1) = 21.73, p < 10−6; Figure 4c). We also found that age moderated the relationship between category-level reinstatement strength in VTC and behaviour, such that older individuals exhibited a weaker relationship between reinstatement strength in VTC and (a) associative retrieval success (χ2(1) = 7.12, p < 0.01) and (b) retrieval decision RT on associative hit trials (χ2(1) = 3.91, p < 0.05). This interaction was marginally significant in ANG with respect to associative retrieval (χ2(1) = 3.57, p = 0.059), but not decision RT (χ2(1) = 0.16, p = 0.685). Together, these data provide novel evidence that the strength of category-level reinstatement in VTC and ANG is linked to memory behaviour in cognitively normal older adults (see Figure 4—figure supplement 2 for analogous ERS findings), and also suggest that older age negatively impacts the translation of cortical evidence to memory behaviour.
 
-## Memory behaviour scales with trial-wise event-level reinstatement
+### Memory behaviour scales with trial-wise event-level reinstatement
 
 We next used encoding-retrieval similarity (ERS) to quantify trial-unique, event-specific reinstatement of encoding patterns, comparing the similarity of an event’s encoding and retrieval patterns (within-event ERS) to similarity of encoding patterns from other events from the same category (within-category ERS). Evidence for event-level reinstatement was present in both VTC (t(99) = 2.26, p < 0.05) and ANG (t(99) = 3.54, p < 0.001) during associative hits (Figure 4d). Moreover, the strength of trial-wise event-level reinstatement — controlling for within-category ERS (see Supplementary file 1 for full list of model parameters)— was related to (a) an increased probability of an associative hit (VTC: χ2(1) = 1.78, p = 0.183; ANG: χ2(1) = 7.50, p = 0.006; Figure 4e) and (b) an increased probability of post-scan exemplar-specific recall (VTC: χ2(1) = 5.35, p < 0.05; ANG: χ2(1) = 7.27, p = 0.006; Figure 4f), but not with decision RT on associative hit trials (VTC: p = 0.845; ANG: p = 0.231). These relationships were not significantly moderated by age (all p > 0.254). These results demonstrate a relationship between trial-unique, event-specific cortical reinstatement and associative retrieval in older adults.
 
-## Behaviour and reinstatement scale with trial-wise hippocampal retrieval activity
+### Behaviour and reinstatement scale with trial-wise hippocampal retrieval activity
 
 Successful associative retrieval, ostensibly driven by pattern completion, was accompanied by greater hippocampal activity (Figure 4g) relative to associative misses (t(75) = 4.90, p < 10−6), item only hits (t(59) = 3.87, p < 0.001), item misses (t(83) = 8.86, p < 10−13), and correct rejections (t(99) = 11.28, p < 10−16). Relative to item misses, hippocampal activity was greater during associative misses (t(68) = 4.0, p < 0.001) and item only hits (t(51) = 5.37, p < 10−6); activity did not differ between associative misses and item hits (t < 1) or between item misses and correct rejections (t < 1). Moreover, generalized logistic and linear mixed effects models revealed that greater trial-wise hippocampal activity was related to (a) an increased probability of an associative hit (χ2(1) = 63.45, p < 10−15; Figure 4h), (b) an increased probability of post-scan exemplar-specific recall (χ2(1) = 59.02, p < 10−14; Figure 4—figure supplement 3), but (c) not faster associative hit RTs (χ2(1) = 2.08, p = 0.149). These relationships were not moderated by age (associative hit: p = 0.616; exemplar-specific recall: p = 0.713). Thus, the probability of successful pattern-completion-dependent associative retrieval increased with hippocampal activity. This relationship was significant across hippocampal subfields, but greatest in DG/CA3 (see Figure 4—figure supplements 5–6 for subfield findings).
 
 Cortical reinstatement is thought to depend on hippocampal pattern completion triggered by retrieval cues (Marr, 1971; McClelland et al., 1995; Tanaka et al., 2014; Staresina et al., 2019). Consistent with this possibility, the magnitude of trial-wise hippocampal retrieval activity significantly varied with the strength of category-level cortical reinstatement across all retrieval attempts (VTC: χ2(1) = 43.36, p < 10−11; ANG: χ2(1) = 35.31, p < 10−9; Figure 4i) and when restricting analyses only to associative hit trials (VTC: χ2(1) = 5.77, p < 0.05; ANG: χ2(1) = 9.48, p < 0.005). Similarly, hippocampal activity significantly varied with within-event ERS (controlling for within-category ERS) in VTC (all trials: χ2(1) = 4.55, p < 0.05; associative hit only: χ2(1) = 3.73, p = 0.054; see Figure 4—figure supplement 4); this relationship did not reach significance in ANG (all trials: p = 0.328; associative hit only: p = 0.289). The relationship between hippocampal activity and reinstatement strength was not moderated by age (category-level reinstatement VTC: p = 0.777; ANG: p = 0.773; event-level reinstatement VTC: p = 0.493). Collectively, these results constitute novel evidence for a relationship between trial-wise hippocampal activity and cortical reinstatement in older adults. This relationship was also observed in select hippocampal subfields (see Figure 4—figure supplements 5–6).
 
-## Cortical reinstatement partially mediates the effect of hippocampal activity on retrieval
+### Cortical reinstatement partially mediates the effect of hippocampal activity on retrieval
 
 Having established a relationship between associative retrieval success and (a) hippocampal activity, (b) cortical reinstatement strength in VTC, and (c) ANG, we next sought to determine whether each of these putative indices of pattern completion explain common or unique variance in associative retrieval success. Using nested comparison of logistic mixed effects models, we found that compared to a model with image category and hippocampal activity, addition of VTC category-level reinstatement strength significantly improved model fit (χ2(1) = 103.48, p < 10−24). Addition of ANG category-level reinstatement to this model further improved model fit (χ2(1) = 115.42, p < 10−27), and all three variables remained significant predictors in the full model (hippocampus: b = 0.31, z = 8.36, p < 10−16; VTC: b = 0.32, z = 9.36, p < 10−16; ANG: b = 0.52, z = 14.36, p < 10−16). These results indicate that reinstatement strength and hippocampal activity, though related indices of pattern completion, nevertheless explain unique variance in the probability of a successful associative retrieval decision. Moreover, they indicate that measures of category-level reinstatement strength in different cortical regions are not redundant, and perhaps carry complementary information relevant for memory behaviour.
 
 Given our prediction that the present measures of cortical reinstatement are, at least in part, a read out of hippocampal pattern completion processes, we next sought to more directly test the hypothesis that cortical reinstatement mediates the relationship between hippocampal activity and associative retrieval success. We conducted a mediation analysis separately for each cortical ROI, in which the coefficient of the indirect path was computed as the product of the direct effects, a x b, and the significance of the indirect effect was calculated using bootstrap resampling (see Materials and methods – Statistics for details). Consistent with predictions, the results revealed that the relationship between hippocampal activity and the probability of an associative hit was partially mediated through category-level cortical reinstatement in VTC (indirect effect: b = 0.026, 95% CI = 0.016, 0.036) and ANG (indirect effect: b = 0.019, 95% CI = 0.006, 0.032). These findings demonstrate that the effect of retrieval-phase hippocampal activity on associative retrieval success can be explained in part through its effects on cortical reinstatement.
 
-## Effects of age on hippocampal and cortical indices of pattern completion
+### Effects of age on hippocampal and cortical indices of pattern completion
 
 Our second key aim was to understand how hippocampal pattern completion processes vary across individuals, turning first to the effects of age. For all individual-differences analyses of pattern completion, we computed mean category-level and event-level reinstatement strength in VTC and ANG during associative hits and mean hippocampal activity during successful associative hits (corrected by mean activity during correct rejections) for each participant. Each measure was adjusted by head motion, and reinstatement strength was further adjusted by encoding strength, before it was entered into regression models. Regression analyses revealed that (a) while hippocampal activity did not significantly vary with age (β = −0.10, p = 0.35; Figure 5a), there was (b) an age-related decline in category-level reinstatement strength during associative hits (i.e., mean logits; VTC: β = −0.34, p < 0.001; ANG: β = −0.16, p < 0.05; Figure 5b–c), and c) an age-related decline in event-level reinstatement (i.e., ERS) during associative hits in VTC (β = −0.26, p < 0.01; Figure 5—figure supplement 2), but not ANG (β = −0.06, p = 0.55; Figure 5—figure supplement 2). None of these measures varied with sex or years of education (all ps > 0.24).
 
-## Neural indices of pattern completion explain individual differences in episodic memory
+![Figure 5.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-v1.jpg)
+
+**Figure 5.:** (a–c) Effects of age on hippocampal activity (associative hit – correct rejection) and category-level reinstatement strength (mean logits) in VTC and ANG during associative hits. (d–f) Independent of age, individual differences in hippocampal activity and category-level reinstatement strength in VTC and ANG during associative hits explain significant variance in exemplar-specific recall. (g–i) Independent of age, individual differences in hippocampal activity and VTC category-level reinstatement strength also explain significant variance in standardized delayed recall performance; the relation with ANG category-level reinstatement did not reach significance. Scatterplots reflect raw values for each measure. See Figure 5—figure supplement 1 for partial plots controlling for nuisance variables. Each point represents an individual participant. Plots also show linear model predictions (black line) and 95% confidence intervals (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a–c) Effects of age on hippocampal activity (associative hits – correct rejections) and category-level reinstatement strength (mean logits) in VTC and ANG during associative hits. (d–f) Independent of age, individual differences in hippocampal activity and category-level reinstatement strength in VTC and ANG during associative hits explain significant variance in exemplar-specific recall. (g–i) Independent of age, individual differences in hippocampal activity and VTC category-level reinstatement strength also explain significant variance in standardized delayed recall performance; the relation with ANG category-level reinstatement did not reach significance. Scatterplots reflect partial plots controlling for nuisance variables. Each point represents an individual participant. Plots also show linear model predictions (black line) and 95% confidence intervals (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Each point on the scatterplot represents an individual subject. Plots also show the linear model predictions (black line) and 95% confidence interval (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** In both regions, encoding strength (mean logits across leave-one-run-out-n-fold cross validation) is a significant predictor of category-level reinstatement strength (mean logits) during associative hits (VTC: β = 0.45, p < 10−5; ANG: β = 0.62, p < 10−11). Each point on the scatterplot represents an individual subject. Plots also show the linear model predictions (black line) and 95% confidence interval (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Independent of age, individual differences in associative d’ are explained by (a) hippocampal activity (associative hits – correct rejections; β = 0.34, p < 0.001) and category-level reinstatement strength (logits) in (b) VTC (β = 0.38, p < 0.001) and (c) ANG (β = 0.39, p < 0.001) during associative hits (see Supplementary file 1 for model parameters). Each point on the scatterplot represents an individual subject. Plots also show the linear model predictions (black line) and 95% confidence interval (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/55335/elife-55335-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (a) Hippocampal activity during associative hits (associative hits – correct rejections) is related to category-level reinstatement strength (logits) in VTC (β = 0.19, p < 0.05) and (b) ANG (β = 0.21, p < 0.01) during associative hits. (c) Category-level reinstatement strength (logits) in VTC and ANG during associative hits are related (β = 0.44, p < 10−7). Each point on the scatterplot represents an individual subject. Plots also show the linear model predictions (black line) and 95% confidence interval (shaded area). VTC = ventral temporal cortex; ANG = angular gyrus.
+
+### Neural indices of pattern completion explain individual differences in episodic memory
 
 We next asked if the strength of neural measures of pattern completion during associative retrieval explain variance in memory performance, independent of age. Separate regression models, controlling for age, revealed that individual differences in exemplar-specific recall were related to hippocampal activity (β = 0.47, p < 10−7; Figure 5d) and category-level reinstatement strength during associative hits (VTC: β = 0.45, p < 10−6; ANG: β = 0.41, p < 0.001, Figure 5e–f; see Figure 5—figure supplement 1 for partial plots adjusting for nuisance regressors and Figure 5—figure supplement 4 for parallel findings with associative d’). In contrast, individual differences in event-level reinstatement did not explain significant variance in exemplar-specific recall (all ps > 0.33). Thus, individual differences in the integrity of hippocampal retrieval mechanisms and category-level cortical reinstatement contribute to variability in pattern-completion-dependent (i.e., associative) memory in older adults. To determine if these observed effects were moderated by age, we repeated analyses including an age × predictor interaction in each model. These models provided no significant evidence for an age-related moderation of the effect of hippocampal activity (β = −0.15, p = 0.088) or category-level reinstatement strength (VTC: p = 0.977; ANG: p = 0.565) on exemplar-specific recall. While these results suggest that the strength of the relationships between (a) hippocampal activity and (b) category-level reinstatement strength and individual differences in associative memory is age-invariant, we interpret this result with caution given the restricted age range (60–82 years) of the current sample.
 
 To determine whether these neural variables explain unique variance in memory performance, we used hierarchical regression (see Table 2 for model parameters). Compared to a model with age alone (adjusted R2 = 0.126), adding hippocampal activity explained additional variance in exemplar specific recall (model comparison: F(1,96) = 29.54, p < 10−7, adjusted R2 = 0.325). Moreover, adding a single category-level reinstatement metric explained further variance in performance (model comparison: VTC: F(1,95) = 22.75, p < 10−6, adjusted R2 = 0.438; ANG: F(1,95) = 8.25, p < 0.01, adjusted R2 = 0.365). However, when VTC and ANG were both included in the same model, category-level reinstatement strength in ANG was no longer a significant predictor (p = 0.412). Analogous findings were observed with associative d’ as the dependent variable (see Supplementary file 1 for model parameters). Thus, in older adults, individual differences in hippocampal activity and cortical reinstatement strength provide complementary information, over and above age, in explaining individual differences in associative memory, whereas indices of category-level reinstatement strength explain shared variance.
 
-## Independent measures of memory scale with individual differences in pattern completion
+**Table 2.**
+ Summary of regression analysis predicting post-test exemplar-specific recall.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Variable</th>
+      <th>β</th>
+      <th>SE</th>
+      <th>p</th>
+      <th>Adjusted R2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Step 1</td>
+      <td>Age</td>
+      <td>−0.366</td>
+      <td>0.094</td>
+      <td>0.001***</td>
+      <td>0.126</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Step 2</td>
+      <td>Age</td>
+      <td>−0.317</td>
+      <td>0.083</td>
+      <td>0.001***</td>
+      <td>0.325</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampal Activitya</td>
+      <td>0.472</td>
+      <td>0.087</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Step 3a</td>
+      <td>Age</td>
+      <td>−0.184</td>
+      <td>0.080</td>
+      <td>0.023*</td>
+      <td>0.449</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampal Activitya</td>
+      <td>0.388</td>
+      <td>0.080</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VTC Reinstatementab</td>
+      <td>0.428</td>
+      <td>0.089</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Step 3b</td>
+      <td>Age</td>
+      <td>−0.281</td>
+      <td>0.082</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampal Activitya</td>
+      <td>0.407</td>
+      <td>0.088</td>
+      <td>0.001****</td>
+      <td>0.365</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ANG Reinstatementab</td>
+      <td>0.289</td>
+      <td>0.108</td>
+      <td>0.009**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Step 4</td>
+      <td>Age</td>
+      <td>−0.184</td>
+      <td>0.080</td>
+      <td>0.023***</td>
+      <td>0.448</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampal Activitya</td>
+      <td>0.374</td>
+      <td>0.082</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VTC Reinstatementab</td>
+      <td>0.391</td>
+      <td>0.100</td>
+      <td>0.001***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>ANG Reinstatementab</td>
+      <td>0.093</td>
+      <td>0.113</td>
+      <td>0.412</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Step 5</td>
+      <td>Age</td>
+      <td>−0.137</td>
+      <td>0.079</td>
+      <td>0.087~</td>
+      <td>0.485</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hippocampal Activitya</td>
+      <td>0.335</td>
+      <td>0.080</td>
+      <td>0.001****</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VTC Reinstatementab</td>
+      <td>0.377</td>
+      <td>0.089</td>
+      <td>0.001****</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Delayed Recall</td>
+      <td>0.299</td>
+      <td>0.110</td>
+      <td>0.008**</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. a = adjusted by motion; b = adjusted by encoding strength (mean logits across leave-one-run-out-n-fold cross validation); Reinstatement = category level reinstatement (mean logits across associative hits); SE = standard error; VTC = ventral temporal cortex; ANG = angular gyrus;~p < 0.1, *p<0.05, **p<0.01, ***p<0.001 ****p<10−5._
+
+### Independent measures of memory scale with individual differences in pattern completion
 
 Finally, we examined whether our task-based fMRI measures of pattern completion — hippocampal activity and cortical reinstatement — explain individual differences in an independent measure of episodic memory, using a delayed recall composite score collected in a separate neuropsychological testing session (see Materials and methods). Controlling for age and sex, hippocampal activity (β = 0.19, p < 0.01; Figure 5g) and VTC category-level reinstatement strength (β = 0.21, p <0.01; Figure 5h) were significant predictors of delayed recall score; the relationship with ANG category-level reinstatement strength did not reach significance (β = 0.14, p = 0.11; Figure 5i; see Figure 5—figure supplement 1 for partial plots). Further, as for exemplar-specific recall, we found that hippocampal activity and VTC category-level reinstatement strength explained unique variance in delayed recall performance (hippocampus: β = 0.16, p < 0.05; VTC: β = 0.20, p < 0.05, adjusted R2 = 0.231).
 
@@ -137,19 +459,19 @@ Taken together, the present results significantly advance our understanding of f
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 One hundred and five cognitively healthy older adults (aged 60–82 years; 65 female) participated as part of the Stanford Aging and Memory Study. Eligibility included: normal or corrected-to-normal vision and hearing; right-handed; native English speaking; no history of neurological or psychiatric disease; a Clinical Dementia Rating score of zero (CDR; Morris, 1993) and performance within the normal range on a standardized neuropsychological assessment (see Neuropsychological Testing). Data collection spanned multiple visits: Neuropsychological assessment was completed on the first visit and the fMRI session occurred on the second visit, with the exception of nine participants who completed the fMRI session on the same day as the neuropsychological testing session. Visits took place ~6.18 weeks apart on average (range = 1–96 days). Participants were compensated $50 for the clinical assessment and $80 for the fMRI session. All participants provided informed consent in accordance with a protocol approved by the Stanford Institutional Review Board. Data from five participants were excluded from all analyses due to excess head motion during scanning (see fMRI pre-processing), yielding a final sample of 100 older adults (60–82 years; 61 female; see Table 1 for demographics).
 
-## Neuropsychological testing
+### Neuropsychological testing
 
 Participants completed a neuropsychological test battery consisting of standardized tests assessing a range of cognitive functions, including episodic memory, executive function, visuospatial processing, language, and attention. Scores were first reviewed by a team of neurologists and neuropsychologists to evaluate cognition and reach a consensus assessment that each participant was cognitively healthy, defined as performance on each task within 1.5 standard deviations of demographically adjusted means. Subsequently, a composite delayed recall score was computed for each participant by (a) z-scoring the delayed recall subtest scores from the Logical Memory (LM) subtest of the Wechsler Memory Scale, 3rd edition (WMS-III; Wechsler, 1997), Hopkins Verbal Learning Test-Revised (HVLT-R; Brandt, 1991), and the Brief Visuospatial Memory Test-Revised (BVMT-R; Benedict, 1997), and (b) then averaging. This composite score declined with age (β = −0.21, p < 0.005), was lower in males than females (β = −0.35, p < 0.05), but did not vary with years of education (β = 0.07, p > 0.31).
 
-## Materials
+### Materials
 
 Stimuli comprised words paired with colour photos of faces and scenes obtained from online sources. For each participant, 120 words (out of 150 words total) were randomly selected and paired with the pictures (60 word-face; 60 word-place) during a study phase, and these 120 words plus the remaining 30 words (foils) appeared as cues during the retrieval phase. Words were concrete nouns (e.g., ‘banana’, ‘violin’) between 4 and 8 letters in length. Faces corresponded to famous people (e.g., ‘Meryl Streep’, ‘Ronald Reagan’) and included male and female actors, musicians, politicians, and scientists. Places corresponded to well-known locations (e.g., ‘Golden Gate Bridge’, ‘Niagara Falls’) and included manmade structures and natural landscapes from a combination of domestic and international locations.
 
-## Behavioural procedure
+### Behavioural procedure
 
 Prior to scanning, participants completed a practice session that comprised an abbreviated version of the task (12 word-picture pairs not included in the scan session). This ensured that participants understood the task instructions and were comfortable with the button responses. Participants had the option to repeat the practice round multiple times if needed to grasp the instructions.
 
@@ -157,7 +479,7 @@ Next, concurrent with fMRI, participants performed an associative memory task co
 
 During both encoding and retrieval blocks, stimuli were presented for 4 s, followed by an 8 s inter-trial fixation. During retrieval blocks, the probe word changed from black to green text when there was 1 s remaining, indicating that the end of the trial was approaching and signaling participants to respond (if they had not done so already). After the MR scan session, a final overt cued-recall test was conducted outside the scanner to evaluate the degree to which participants were able to recollect the specific face or place associated with each target word. On this post-test, participants were presented with studied words, in random order, and asked to provide the name of the associate or, if not possible, a description of the associate in as much detail as they could remember. The post-test was self-paced, with responses typed out on a keyboard; participants were instructed to provide no response if no details of the associate could be remembered.
 
-## Memory response classification
+### Memory response classification
 
 The fMRI retrieval trials were classified into six conditions: associative hits (studied words for which the participant indicated the correct associate category), associative misses (studied words for which the participant indicated the incorrect associate category), item hits (studied words correctly identified as ‘old’), item misses (studied words incorrectly identified as ‘new’), item false alarms (foils incorrectly called ‘old’), associative false alarms (foils incorrectly indicated as associated with a ‘face’ or a ‘place’), and correct rejections (CR; foils correctly identified as ‘new’). Because the number of false alarms was low (M = 5.1, SD = 4.7), these trials were not submitted to fMRI analysis (see Supplementary file 1 for a summary of trial counts and retrieval reaction time by memory outcome).
 
@@ -165,11 +487,11 @@ In-scanner associative memory performance was estimated using a discrimination i
 
 The post-test data were analysed using a semi-automated method. Participants’ typed responses were first processed with in house R code to identify exact matches to the name of the studied image. Responses that did not include exact matches were flagged, and subsequently assessed by a human rater, who determined the correspondence between the description provided by the participant and the correct associate. We computed the proportion of studied words for which the associate was correctly recalled (Exemplar Correct/All Old). One participant did not complete the post-test, leaving 99 participants in all analyses of the post-test data.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Data were acquired on a 3T GE Discovery MR750 MRI scanner (GE Healthcare) using a 32-channel radiofrequency receive-only head coil (Nova Medical). Functional data were acquired using a multiband EPI sequence (acceleration factor = 3) consisting of 63 oblique axial slices parallel to the long axis of the hippocampus (TR = 2 s, TE = 30 ms, FoV = 215 mm x 215 mm, flip angle = 74, voxel size = 1.8 × 1.8 × 2 mm). To correct for B0 field distortions, we collected two B0 field maps before every functional run, one in each phase encoding direction. Two structural scans were acquired: a whole-brain high-resolution T1-weighted anatomical volume (TR = 7.26 ms, FoV = 230 mm × 230 mm, voxel size = 0.9 × 0.9 x 0.9 mm, slices = 186), and a T2-weighted high-resolution anatomical volume perpendicular to the long axis of the hippocampus (TR = 4.2 s, TE = 65 ms, FOV = 220 mm, voxel size = 0.43 × 0.43×2 mm; slices = 29). The latter was used for manual segmentation of hippocampal subfields and surrounding cortical regions (Olsen et al., 2009).
 
-## fMRI preprocessing
+### fMRI preprocessing
 
 Data were processed using a workflow of FSL (Smith et al., 2004) and Freesurfer (Dale et al., 1999) tools implemented in Nipype (Gorgolewski et al., 2011). Each timeseries was first realigned to its middle volume using normalized correlation optimization and cubic spline interpolation. To correct for differences in slice acquisition times, data were temporally resampled to the TR midpoint using sinc interpolation. Finally, the timeseries data were high-pass filtered with a Gaussian running-line filter using a cutoff of 128 s. The hemodynamic response for each trial was estimated by first removing the effects of motion, trial artifacts, and session from the timeseries using a general linear model. The residualized timeseries was then reduced to a single volume for each trial by averaging across TRs 3–5 (representing 4–10 s post-stimulus onset), corresponding to the peak of the hemodynamic response function. To preserve the high resolution of the acquired data, the data were left unsmoothed.
 
@@ -177,13 +499,13 @@ Images with motion or intensity artifacts were automatically identified as those
 
 Using Freesurfer, we segmented the T1-weighted anatomical volume at the gray-white matter boundary and constructed tessellated meshes representing the cortical surface (Dale et al., 1999). Functional data from each run were registered to the anatomical volume with a six degrees-of-freedom rigid alignment optimizing a boundary-based cost function (Greve and Fischl, 2009). Finally, runs 2–4 were resampled into the space of run 1 using cubic spline interpolation to bring the data into a common alignment. All analyses were thus performed in participant native space, avoiding normalization to a group template.
 
-## Regions of interest
+### Regions of interest
 
 Our analyses focus specifically on hippocampal pattern completion processes — via hippocampal univariate activity and multivariate cortical reinstatement metrics — in the aging brain. Thus, analyses were conducted in three a priori regions of interest (ROIs), selected based on existing theoretical and empirical work to optimize the measurement of this process. Analyses of task-evoked univariate activity were focused on the hippocampus, whereas multivoxel pattern analyses were conducted in ventral temporal cortex (VTC) and angular gyrus (ANG), two cortical areas that have been reliably linked to cortical reinstatement in healthy younger adults (Kuhl et al., 2013; Gordon et al., 2014; Kuhl and Chun, 2014; Favila et al., 2018; Lee et al., 2019). All ROIs were bilateral and defined in participants’ native space (Figure 2).
 
 The hippocampal mask was defined manually using each participant’s high-resolution T2-weighted structural image using established procedures (Olsen et al., 2009), and comprised the whole hippocampus (see Figure 4—figure supplements 5–6 for analysis of hippocampal subfields). The VTC mask was composed of three anatomical regions: parahippocampal cortex, fusiform gyrus, and inferior temporal cortex. The fusiform gyrus and inferior temporal cortex masks were generated from each participant’s Freesurfer autosegmentation volume using bilateral inferior temporal cortex and fusiform gyrus labels. These were combined with a manually defined bilateral parahippocampal cortex ROI, defined using established procedures (Olsen et al., 2009), to form the VTC mask. The ANG ROI was defined by the intersection of the Freesurfer inferior parietal lobe label and the Default Network of the Yeo 7 network atlas (Yeo et al., 2011), defined on the Freesurfer average (fsaverage) cortical surface mesh. This intersection was used to confine the ROI to the inferior parietal nodes of the Default Mode Network, which predominantly encompasses ANG (Favila et al., 2018). To generate ROIs in participants’ native space from the fsaverage space label, we used the approach detailed in Waskom and colleagues (Voss et al., 2008), which uses the spherical registration parameters to reverse-normalize the labels, and then converts the vertex coordinates of labels on the native surface into the space of each participant’s first run using the inverse of the functional to anatomical registration. Participant-specific ROIs were then defined as all voxels intersecting the midpoint between the gray-white and gray-pial boundaries.
 
-## Multivoxel pattern classification
+### Multivoxel pattern classification
 
 Our primary measure of category-level cortical reinstatement during memory retrieval was derived from multivoxel classification analysis. Classification was implemented using Scikit-learn (Pedregosa et al., 2011), nilearn (Abraham et al., 2014), nibabel (Brett et al., 2016), and in house Python scripts, and performed using L2-penalized logistic regression models as instantiated in the LIBLINEAR classification library (regularization parameter C = 1). These models were fit to preprocessed BOLD data from VTC and ANG that were reduced to a single volume for each trial by averaging across TRs 3–5. Prior to classification, the sample by voxel matrices for each region were scaled across samples within each run, such that each voxel had zero mean and unit variance. A feature selection step was also conducted, in which a subject-specific univariate contrast was used to identify the top 250 voxels that were most sensitive to each category (face, place) during encoding, yielding a set of 500 voxels over which classification analyses were performed. Prior to each of 10 iterations of classifier training, the data were subsampled to ensure an equal number of face and scene trials following exclusion of trials with artifacts.
 
@@ -195,11 +517,11 @@ The significance of classifier performance for each condition and ROI was assess
 
 For trial-wise analyses relating cortical reinstatement strength to memory behaviour (e.g., associative retrieval accuracy and reaction time) and other neural variables (e.g., hippocampal BOLD), a continuous measure of reinstatement strength was derived by calculating the logits (log odds) of the probabilistic classifier output on each trial. Reinstatement strength was signed in the direction of the correct associate for a given trial, such that, regardless of whether the trial was a face or place trial, the evidence was positive when the classifier guessed correctly, and negative when the classifier guessed incorrectly. The magnitude of reinstatement strength was thus neutral with respect to which associate category (face or place) was retrieved. For individual-differences analyses relating cortical reinstatement strength to age and memory behaviour (e.g., associative d’, exemplar-specific recall), we computed the mean category-level reinstatement strength (i.e., logits) across associative hit trials for each participant.
 
-## Pattern similarity analysis
+### Pattern similarity analysis
 
 To complement the classification analyses, we used pattern similarity analyses to measure event-level cortical reinstatement. This approach involved computing the similarity (Pearson correlation) between trial-wise activity patterns extracted from ROIs during encoding and retrieval (i.e., encoding-retrieval similarity; ERS). This analysis approach affords the opportunity to not only examine reinstatement at the categorical level (i.e., within-category ERS – between-category ERS) but also at the trial-unique item level (i.e., within-event ERS – within-category ERS). For this analysis, we again used the voxelwise activity patterns for each ROI (this time with no feature selection step), computing the correlation between encoding and retrieval patterns separately for successful (i.e., associative hits) and unsuccessful (i.e., associative misses, item only hits, item misses) retrieval trials, such that the events being compared (within-event, within-category, between-category) were matched on associative retrieval success. Within-category ERS was computed after values on the diagonal of the correlation matrices (i.e. within-event correlations) were removed, ensuring that event-level ERS does not contribute to the within-category ERS estimate. All correlations were Fisher transformed before computing the mean correlation between different events of interest.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were implemented in the R environment (version 3.4.4). Trial-wise analyses were conducted using mixed effects models (linear and logistic) using the lmer4 statistical package (Bates et al., 2015). Each model contained fixed effects of interest, a random intercept modeling the mean subject-specific outcome value, and a random slope term modeling the subject-specific effect of the independent variable of interest (e.g., hippocampal activity, reinstatement strength). Models also contained nuisance regressors (see Supplementary file 1 for a full list of regressors in each model), including stimulus category, age, ROI encoding classifier strength (when reinstatement strength —logits— was the independent or dependent variable), ROI univariate activity in category-selective voxels (when reinstatement strength – logits – was the independent variable, controlling for activity in voxels identified during feature selection, over which classification was performed), overall ROI univariate activity (when ERS was the independent variable, controlling for activity in the whole ROI, as no feature selection step was conducted for pattern similarity analyses), and category-level ERS (when event-level ERS was the independent or dependent variable, to mitigate the possibility that effects of event-level ERS can be attributed to category-level reinstatement). Models were conducted over all test trials in which a studied item was presented, except where indicated that only associative hit trials were included (see Supplementary file 1 for a summary of results when item miss trials are excluded from analyses). Random slopes were uncorrelated from random intercepts to facilitate model convergence. The significance of effects within mixed-model regressions was obtained using log-likelihood ratio tests, resulting in χ2 values and corresponding p-values. A Wald z-statistic was additionally computed for model parameters to determine simultaneous significance of coefficients within a given model. All continuous variables were z-scored within participant across all trials prior to analysis. For trial-wise mediation analyses, the coefficient of the indirect path was computed as the product of the direct effects, a × b. The significance of the indirect effect was calculated with bootstrap resampling with 5000 iterations of data sampled with replacement, and was considered significant if zero does not fall within the 95% confidence interval of the bootstrapped estimate of the indirect effect; 95% confidence intervals are reported.
 

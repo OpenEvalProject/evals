@@ -18,7 +18,7 @@
 
 ## Abstract
 
-The innate immune system detects pathogens and initiates adaptive immune responses. Inflammasomes are central components of the innate immune system, but whether inflammasomes provide sufficient signals to activate adaptive immunity is unclear. In intestinal epithelial cells (IECs), inflammasomes activate a lytic form of cell death called pyroptosis, leading to epithelial cell expulsion and the release of cytokines. Here, we employed a genetic system to show that simultaneous antigen expression and inflammasome activation specifically in IECs is sufficient to activate CD8 + T cells. By genetic elimination of direct T cell priming by IECs, we found that IEC-derived antigens were cross-presented to CD8 + T cells. However, cross-presentation of IEC-derived antigen to CD8 + T cells only partially depended on IEC pyroptosis. In the absence of inflammasome activation, cross-priming of CD8 + T cells required Batf3 + dendritic cells (conventional type one dendritic cells [cDC1]), whereas cross-priming in the presence of inflammasome activation required a Zbtb46 + but Batf3 -independent cDC population. These data suggest the existence of parallel inflammasome-dependent and inflammasome-independent pathways for cross-presentation of IEC-derived antigens.
+The innate immune system detects pathogens and initiates adaptive immune responses. Inflammasomes are central components of the innate immune system, but whether inflammasomes provide sufficient signals to activate adaptive immunity is unclear. In intestinal epithelial cells (IECs), inflammasomes activate a lytic form of cell death called pyroptosis, leading to epithelial cell expulsion and the release of cytokines. Here, we employed a genetic system to show that simultaneous antigen expression and inflammasome activation specifically in IECs is sufficient to activate CD8+ T cells. By genetic elimination of direct T cell priming by IECs, we found that IEC-derived antigens were cross-presented to CD8+ T cells. However, cross-presentation of IEC-derived antigen to CD8+ T cells only partially depended on IEC pyroptosis. In the absence of inflammasome activation, cross-priming of CD8+ T cells required Batf3+ dendritic cells (conventional type one dendritic cells [cDC1]), whereas cross-priming in the presence of inflammasome activation required a Zbtb46+ but Batf3-independent cDC population. These data suggest the existence of parallel inflammasome-dependent and inflammasome-independent pathways for cross-presentation of IEC-derived antigens.
 
 ## Introduction
 
@@ -38,13 +38,13 @@ Because NAIP–NLRC4 activation can result in IEC pyroptosis prior to the expuls
 
 ## Results
 
-## Genetic system for NAIP–NLRC4 activation in IECs
+### Genetic system for NAIP–NLRC4 activation in IECs
 
 We took advantage of a previously established mouse model (Nichols et al., 2017b) that allows for Cre-inducible and cell type-specific NAIP–NLRC4 activation (Figure 1A). These mice harbor an OvaFla gene fusion that encodes a non-secreted chicken ovalbumin protein—a model antigen—fused to the C-terminal 166 amino acids of flagellin that functions as an agonist of NAIP–NLRC4 but not TLR5 (Nichols et al., 2017b). The OvaFla gene is inserted within the constitutively expressed Rosa26 locus, downstream of a floxed transcriptional stop cassette and upstream of an IRES-GFP cassette. To create a genetic system for inducible NAIP–NLRC4 activation in IECs, we crossed the OvaFla mice to Villin-Cre-ERT2 mice (el Marjou et al., 2004), which harbor a tamoxifen-inducible Cre recombinase driven by the Villin promoter. The resulting OvaFla Villin-Cre-ERT2 (hereafter shortened to ‘OvaFla’) mice respond to tamoxifen administration by expressing Cre, and subsequently the OvaFla protein, specifically in IECs. To study the influence of NAIP–NLRC4 activation, pyroptosis, and cytokine production on CD8+ T cell activation, we generated Nlrc4–/–, Gsdmd–/–, and Pycard–/– OvaFla lines.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig1-v2.jpg)
 
-**Figure 1.:** T2 system results in NAIP–NLRC4 activation in intestinal epithelial cells (IECs) of mice upon tamoxifen chow administration.(A) Schematic of the OvaFla gene cassette in the Rosa26 locus. The cassette contains full-length mature (non-secreted) ovalbumin fused to the C-terminal 166 amino acids of flagellin, and an IRES-GFP. When OvaFla mice are crossed to mice containing the tamoxifen-inducible Villin-ER-CreT2, tamoxifen administration results in Cre-controlled excision of the stop cassette and expression of the OvaFla fusion protein and GFP within IECs. (B) Daily weight (top) and rectal temperature (bottom) measurements of OvaFla mice during a 2-day course of tamoxifen chow (depicted as red bar). (C) Quantification of IL-18 ELISA performed on serum from the mice shown in panel B at day 2 post tamoxifen chow start. Each dot represents an individual mouse. (D) Daily weight (top) and rectal temperature (bottom) measurements of OvaFla mice following a single day pulse of tamoxifen chow (depicted as red bar). (E) Quantification of IL-18 ELISA performed on serum from the mice shown in panel D at day 5 post tamoxifen chow start. (B–E) Data shown as mean ± SD and are from a single representative experiment. Each dot represents an individual mouse. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). See Figure 1—source data 1 for exact p values.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Schematic of the OvaFla gene cassette in the Rosa26 locus. The cassette contains full-length mature (non-secreted) ovalbumin fused to the C-terminal 166 amino acids of flagellin, and an IRES-GFP. When OvaFla mice are crossed to mice containing the tamoxifen-inducible Villin-ER-CreT2, tamoxifen administration results in Cre-controlled excision of the stop cassette and expression of the OvaFla fusion protein and GFP within IECs. (B) Daily weight (top) and rectal temperature (bottom) measurements of OvaFla mice during a 2-day course of tamoxifen chow (depicted as red bar). (C) Quantification of IL-18 ELISA performed on serum from the mice shown in panel B at day 2 post tamoxifen chow start. Each dot represents an individual mouse. (D) Daily weight (top) and rectal temperature (bottom) measurements of OvaFla mice following a single day pulse of tamoxifen chow (depicted as red bar). (E) Quantification of IL-18 ELISA performed on serum from the mice shown in panel D at day 5 post tamoxifen chow start. (B–E) Data shown as mean ± SD and are from a single representative experiment. Each dot represents an individual mouse. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). See Figure 1—source data 1 for exact p values.
 
 Tamoxifen is typically administered in a corn oil emulsion through oral gavage or intraperitoneal injection. In preliminary experiments, we found corn oil contains trace bacterial contaminants that activate TLR signaling (Nichols, 2017a). Thus, to avoid confounding effects of TLR activation, and to isolate the specific effects of inflammasome activation, we administered tamoxifen orally through a commercially available tamoxifen-containing chow. OvaFla mice were fed ab libitum, and their weight and temperature were tracked daily as previously described indicators of NAIP–NLRC4 activation (von Moltke et al., 2012). After a single day on the tamoxifen diet, wild-type (WT) OvaFla and Gsdmd–/– OvaFla mice lost a significant amount of weight, and by day 2 of the tamoxifen diet, these mice exceeded the humane weight loss endpoint on our animal protocol and were euthanized (Figure 1B, top). In contrast, the Nlrc4–/– OvaFla mice, as well as the OvaFla-only and Cre-only littermate control mice, maintained a consistent body weight and appeared healthy over the 2-day time course. Although not statistically significant, the WT OvaFla and Gsdmd–/– OvaFla mice also exhibited decreases in core body temperature by day 2 relative to the Nlrc4–/– OvaFla mice (Figure 1B, bottom), consistent with previous analyses using recombinant flagellin protein (FlaTox) to induce acute NAIP–NLRC4 activation (Rauch et al., 2017; von Moltke et al., 2012).
 
@@ -58,13 +58,21 @@ We also performed immunofluorescence imaging of the small intestines of mice fro
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig2-v2.jpg)
 
-**Figure 2.:** + cells accumulate in Nlrc4 OvaFla mice following tamoxifen administration.–/–(A) Representative immunofluorescence images of the small intestines of indicated OvaFla mice on day 2 following a single day pulse of tamoxifen chow. (B) Quantification of DAPI+ IECs that are also GFP+ for each OvaFla line. Approximately 100 cells from least 15 separate villi across four to five images were counted per mouse. (C) Quantification of mean GFP pixel intensity for GFP+ intestinal epithelial cells (IECs) in each OvaFla line. Data represent an averaged value from 12 to 20 cells per image across four to five images per mouse. (B–C) Data are pooled from two biological replicates, and each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between wild-type (WT) and other experimental groups are shown. See Figure 2—source data 1 for exact p values.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Representative immunofluorescence images of the small intestines of indicated OvaFla mice on day 2 following a single day pulse of tamoxifen chow. (B) Quantification of DAPI+ IECs that are also GFP+ for each OvaFla line. Approximately 100 cells from least 15 separate villi across four to five images were counted per mouse. (C) Quantification of mean GFP pixel intensity for GFP+ intestinal epithelial cells (IECs) in each OvaFla line. Data represent an averaged value from 12 to 20 cells per image across four to five images per mouse. (B–C) Data are pooled from two biological replicates, and each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between wild-type (WT) and other experimental groups are shown. See Figure 2—source data 1 for exact p values.
 
 Taken together, these data show that OvaFla production under control of the tamoxifen-inducible Villin-Cre-ERT2 system results in robust NAIP–NLRC4 activation in the IECs of mice. A single day pulse of tamoxifen chow leads to significant IL-18 production without gross morbidity or mortality in the NAIP–NLRC4 sufficient strains. Additionally, OvaFla likely accumulates in the IECs of the Nlrc4–/– OvaFla mice, as these cells do not undergo NAIP–NLRC4-driven cell expulsion.
 
-## CD8+ T cell activation by epithelial antigens
+### CD8+ T cell activation by epithelial antigens
 
 To understand how NAIP–NLRC4 activation influences IEC-derived antigen release and presentation, we followed the response of Ova-specific TCR transgenic OT-I CD8+ T cells following OvaFla induction in each of our mouse lines. Congenically marked (CD45.1+ or CD45.1+ CD45.2+) OT-I T cells were harvested from the spleens and mesenteric lymph nodes of OT-I Rag2–/– mice, labeled with CellTrace Violet proliferation dye, and intravenously transferred into the OvaFla mice (2 × 104 cells per mouse) (Figure 3A). Immediately following adoptive transfer, the mice were placed on tamoxifen chow for a single day. At day 5 post adoptive transfer, the mice were euthanized, and their mesenteric lymph nodes, which drain immune cells from the intestines (Esterházy et al., 2019), and spleens were analyzed for OT-I T cell proliferation and activation.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig3-v2.jpg)
+
+**Figure 3.:** (A) Overview of experimental setup for analyzing OT-I responses to OvaFla production in IECs. (B) Quantification of OT-Is as a percent of total CD8+ T cells per spleen (left) and mesenteric lymph node (right). (C) Total number of OT-Is per spleen (left) and mesenteric lymph node (right). (D) Total number of CD62L–CD44+ OT-Is per spleen (left) and mesenteric lymph node (right). Samples with fewer than 20 OT-Is were excluded from CD62L, CD44 calculations. Tissues were harvested and analyzed at day 5 post tamoxifen chow start. Data are pooled from three biological replicates, and each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between wild-type (WT) and other experimental groups are shown. See Figure 3—source data 1 for exact p values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Flow cytometry gating strategy for identifying OT-I T cells. (B) Representative histograms of CellTrace Violet dilution for each of the OvaFla mouse lines. (C) Representative dot plots of each OvaFla mouse line showing the gating strategy for identifying CD62L–CD44+ OT-Is. (D) Percent of OT-Is that are CD62L–CD44+ per spleen (left) and mesenteric lymph node (right). (E) Percent of OT-Is from the mesenteric lymph node that are IFNγ+TNFα+ following a 5 hr ex vivo stimulation with phorbol myristate acetate (PMA) (1 μg/mL) and ionomycin (1 μg/mL). (D–E) Data are from three independent experiments, and each dot represents an individual mouse. Tissues were harvested and analyzed at day 5 post tamoxifen chow start. Samples with fewer than 20 OT-Is were excluded from CD62L, CD44, and cytokine calculations. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between wild-type (WT) and other experimental groups are shown. See Figure 3—figure supplement 1—source data 1 for exact p values.
 
 A dividing OT-I population was identified by flow cytometry in each Cre+ OvaFla line (Figure 3—figure supplement 1A and B), indicating that antigens expressed in IECs can be processed and presented to activate CD8+ T cells in vivo. Surprisingly, however, there was minimal difference in the relative percent (Figure 3B), absolute number (Figure 3C), or activation status (defined as CD62L–CD44+) (Figure 3D, Figure 3—figure supplement 1C,D) of OT-I T cells between the WT and Nlrc4–/– OvaFla mice in either the spleen or mesenteric lymph node. In fact, relative to the WT OvaFla mice, a higher percent of the OT-I T cells in the Nlrc4–/– OvaFla mice produced IFNγ and TNFα following ex vivo stimulation with PMA and ionomycin (Figure 3—figure supplement 1E). These data indicate OT-I T cells respond to IEC-expressed Ova in a manner that is independent of NAIP–NLRC4 activation. However, the specific lack of IEC expulsion and the resulting higher accumulation of antigen in IECs in Nlrc4–/– mice (Figure 2) means that the WT and Nlrc4–/– mice are not truly comparable.
 
@@ -72,11 +80,23 @@ In contrast to Nlrc4–/– IECs, both Pycard–/– and Gsdmd–/– IECs are e
 
 We also observed that a small percentage of OT-Is in the OvaFla only (Cre-minus) mice appear to be activated (Figure 3—figure supplement 1D, E). Since these mice are lacking Cre recombinase, we suspect there may be a very low level of Cre-independent expression of the OvaFla transgene. This chronic OvaFla expression is likely to result in exhaustion and/or deletion of any endogenous Ova-specific effector T cells (Kurachi, 2019). Indeed, we were unable to identify any SIINFEKL-specific endogenous CD8+ T cells via tetramer staining or ELISpot assays. Furthermore, tamoxifen-induced estrogen receptor signaling in the Villin-Cre-ERT2 mice is known to occur in crypt stem cells, which leads to tamoxifen-independent Cre expression in the IEC progeny (el Marjou et al., 2004). Tamoxifen-independent Cre expression in the OvaFla mice could cause OvaFla to become a chronic stimulus, again likely leading to CD8+ T cell exhaustion. Because of these potentially complicating factors, we believe our OvaFla system is best suited to follow the immediate fate of IEC-derived antigen using naïve transferred OT-I transgenic T cells.
 
-## Cross-presentation of IEC antigens
+### Cross-presentation of IEC antigens
 
 IECs express MHC class I on their surface and are capable of directly presenting antigen to CD8+ T cells (Christ and Blumberg, 1997; Nakazawa et al., 2004). It is therefore possible that the OT-I activation seen in the OvaFla mice is a result of direct presentation of Ova peptide by the IECs expressing OvaFla. However, it is also possible that the OT-I T cells are being cross-primed by cDC1s that engulf and ‘cross-present’ the IEC-derived Ova (Cerovic et al., 2015; Liu and Lefrançois, 2004). The fate of IEC-derived antigens and the role of antigen presentation pathways leading to CD8+ T cell activation has not previously been addressed with a completely in vivo system that can genetically distinguish cross from direct presentation of IEC antigens.
 
 To determine whether the OT-Is are being activated through cross-presentation or direct presentation of Ova peptide, we took advantage of the H-2Kbm1 mouse model that contains a seven base pair mutation in the gene encoding Kb (Schulze et al., 1983). The bm1 mutation renders Kb unable to bind the Ova-derived OT-I agonist peptide, SIINFEKL (Nikolić-Zugić and Bevan, 1990). We bred H-2Kbm1 mice to each of our OvaFla lines to establish mice that make OvaFla in their IECs but are incapable of directly presenting the SIINFEKL peptide (H-2Kbm1+ OvaFla mice, referred to here as bm1+ OvaFla mice). We then generated bone marrow chimeras using bm1+ OvaFla mice as lethally irradiated recipients that were reconstituted with WT H-2Kb bone marrow from B6 CD45.1 donors (Figure 4A, left). In these chimeras, the IECs produce OvaFla following tamoxifen administration, but the IECs themselves are unable to present SIINFEKL to OT-I T cells. The donor-derived hematopoietic cells, including cross-presenting cDC1s, do not contain the OvaFla gene cassette but are able to cross-present the SIINFEKL peptide if they acquire it from IECs (Figure 4A, right). Therefore, in the bm1+ OvaFla chimeras, OT-I proliferation and activation will only be observed if the SIINFEKL peptide is cross-presented.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic depicting the production and analysis workflow of chimeric bm1+OvaFla mice (left). At the right, an illustration of either wild-type (WT) OvaFla mice (left of the dashed line) or Nlrc4–/– OvaFla mice (right of the dashed line) following lethal irradiation and reconstitution with bone marrow from B6.SJL mice. (B) Quantification of OT-Is as a percent of total CD8+ T cells (left), the total number of OT-Is (middle), and the total number of CD62L–CD44+ OT-Is (right) in the spleen. (C) Quantification of OT-Is as a percent of total CD8+ T cells (left), the total number of OT-Is (middle), and the total number of CD62L–CD44+ OT-Is (right) in the mesenteric lymph nodes. Tissues were harvested and analyzed at day 5 post tamoxifen chow start. (B–C) Data are pooled from three biological replicates, and each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between WT and other experimental groups are shown. See Figure 4—source data 1 for exact p values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of IL-18 ELISA performed on serum from the mice shown in Figure 4 at day 5 post tamoxifen chow start. (B) Representative histograms of CellTrace Violet dilution for the indicated OvaFla mouse lines. (C) Percent of OT-Is that are CD62L–CD44+ in the spleen (left) and mesenteric lymph nodes (right) of the mice shown in Figure 4. (D) Percent of OT-Is from the mesenteric lymph nodes of the mice in Figure 4 that are IFNγ+TNFα+ following a 5 hr ex vivo stimulation with phorbol myristate acetate (PMA) (1 μg/mL) and ionomycin (1 μg/mL). Tissues were harvested and analyzed at day 5 post tamoxifen chow start. Samples with fewer than 20 OT-Is were excluded from CD62L, CD44, and cytokine calculations. (A) Data are pooled from two biological replicates. (C) Data are pooled from three biological replicates. Each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Tukey’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). Only p values between wild-type (WT) and other experimental groups are shown. See Figure 4—figure supplement 1—source data 1 for exact p values.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Schematic depicting the production and analysis workflow of chimeric bm1+OvaFla mice that were given either B6 H-2Kb or H-2Kbm1 bone marrow. (B) Representative flow plots demonstrating the absence of OT-Is in the mice given H-2Kbm1 bone marrow, as depicted in A. (C) Quantification of the total number of OT-Is (top) and the OT-Is as a percent of total CD8+ T cells (bottom) in the spleen (left) and mesenteric lymph nodes (right) of bm1+ wild-type (WT) and bm1+ Nlrc4– OvaFla mice as depicted in A. Data are from a single experiment, and each dot represents an individual mouse. Data shown in C as mean ± SD.
 
 Eight to ten weeks after lethal irradiation and reconstitution, bm1+ OvaFla mice received 2 × 104 CD45.1+ CD45.2+ CellTrace Violet labeled OT-I T cells intravenously and were given a 1-day pulse of tamoxifen chow (Figure 4A, left). The mice were euthanized at day 5 post OT-I transfer, and their spleens and mesenteric lymph nodes were analyzed for OT-I proliferation and activation. Serum was also collected for IL-18 ELISA to confirm NAIP–NLRC4-dependent IL-18 release following OvaFla induction (Figure 4—figure supplement 1A).
 
@@ -86,13 +106,33 @@ In the spleen, the bm1+ WT and bm1+ Nlrc4–/– OvaFla mice harbored significan
 
 Taken together, these data provide genetic evidence that OT-I T cells are cross-primed from IEC-derived antigen following OvaFla induction. This cross-priming does not strictly require NAIP–NLRC4 activation, but gasdermin D-induced pyroptosis can promote CD8+ T cell responses, at least for splenic OT-I T cells.
 
-## NAIP–NLRC4 activation drives Batf3+ cDC1-independent cross-presentation
+### NAIP–NLRC4 activation drives Batf3+ cDC1-independent cross-presentation
 
 Previous work shows that ex vivo cDC1s can cross-prime CD8+ T cells with IEC-derived antigen (Cerovic et al., 2015). To investigate the role of cDC1s in vivo, we first compared the relative number (Figure 5—figure supplement 1B left) and maturation state (MHC IIhigh CD86+) (Figure 5—figure supplement 1B right) of cDC1s in the mesenteric lymph nodes and spleen across the WT, Pycard–/–, Gsdmd–/–, and Nlrc4–/– OvaFla mice after 2 days of tamoxifen chow. Although there was a modest reduction in the relative number of cDC1s in the spleens of Pycard–/– OvaFla mice relative to the WT OvaFla mice, there was otherwise no clear difference in the presence or maturation state of cDC1s across the various OvaFla lines. These data suggest that NAIP–NLRC4 activation in IECs does not have a broad impact on cDC1s.
 
 However, it is possible that a relatively small number of cDC1s are receiving antigen and maturation signals in our OvaFla model, so we assessed whether cDC1s are required for cross-priming OT-Is by genetically eliminating cDC1s. To do so, we used mice deficient for Batf3, a gene encoding a transcription factor required for development of XCR1+ cross-presenting cDC1s (Hildner et al., 2008; Lukowski et al., 2021). We took advantage of our H-2Kbm1 bone marrow chimera system and compared bm1+ OvaFla recipients that received either B6 CD45.1 bone marrow or bone marrow from Batf3–/– mice.
 
 As with the above experiments, bone marrow chimeras were made by lethally irradiating bm1+ OvaFla mice and transferring donor bone marrow from either B6 CD45.1 or Batf3–/– donors. Eight to ten weeks post irradiation, 2 × 104 CD45.1+ CD45.2+ CellTrace Violet labeled OT-I T cells were adoptively transferred intravenously, and the mice were given a 1-day pulse of tamoxifen chow (as in Figure 4A, left). The mice were sacrificed 5 days later, and their spleens and mesenteric lymph nodes were analyzed for OT-I proliferation and activation. We confirmed an absence of cDC1 cells in the OvaFla mice that received Batf3–/– donor bone marrow (Figure 5A, Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig5-v2.jpg)
+
+**Figure 5.:** (A) Percent of CD45+ cells that are conventional type one dendritic cells (cDC1s) in bm1 chimera mice that received either Batf3+ or Batf3– donor bone marrow. (B) Quantification of OT-Is as a percent of total CD8+ T cells (top), the total number of OT-Is (middle), and the total number of CD62L–CD44+ OT-Is (bottom) in the spleen. (C) Quantification of OT-Is as a percent of total CD8+ T cells (top), the total number of OT-Is (middle), and the total number of CD62L–CD44+ OT-Is (bottom) in the mesenteric lymph nodes. (D) Quantification of OT-Is that have out-diluted the CellTrace Violet dye in the spleen (top) and mesenteric lymph nodes (bottom). (E) Percent of CD62L–CD44+ OT-Is in the mesenteric lymph node that are CCR9+. Tissues were harvested and analyzed at day 5 post tamoxifen chow start. Samples with fewer than 20 OT-Is were excluded from CD62L, CD44, and CCR9 calculations. (A) Data are from a single experiment. (B–D) Data are pooled from three biological replicates. (E) Data are pooled from two biological replicates. Each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Šídák’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). See Figure 5—source data 1 for exact p values.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Flow cytometry gating strategy for identifying conventional type one dendritic cells (cDC1s) and cDC2s. (B) Relative numbers (left) and percent of MHC IIhigh CD86+ (right) cDC1s in the mesenteric lymph nodes and spleen 3 days post the start of tamoxifen chow. (C) Relative numbers (left) and percent of MHC IIhigh CD86+ (right) cDC2s in the mesenteric lymph nodes and spleen 3 days post the start of tamoxifen chow. See Figure 5—figure supplement 1—source data 1 for exact p values.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Representative dot plots from one bm1+ wild-type (WT) OvaFla mouse that received B6 bone marrow (top) and one bm1+ WT OvaFla mouse that received batf3–/– bone marrow (bottom).
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** OT-Is are gated per Figure 3—figure supplement 1.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Percent of OT-Is that are CD62L– CD44+ in the spleen (left) and mesenteric lymph nodes (right). (B) Percent of OT-Is from the mesenteric lymph node that are IFNγ+TNFα+ following a 5 hr ex vivo stimulation with phorbol myristate acetate (PMA) (1 μg/mL) and ionomycin (1 μg/mL). Tissues were harvested and analyzed at day 5 post tamoxifen chow start. Samples with fewer than 20 OT-Is were excluded from CD62L, CD44, and cytokine calculations. (A) Data are pooled from three biological replicates. (B) Data are pooled from two biological replicates. Each dot represents an individual mouse. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Šídák’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). See Figure 5—figure supplement 4—source data 1 for exact p values.
 
 To our surprise, there was no difference in the relative (Figure 5B–C, top) or total (Figure 5B–C, middle) number of OT-I T cells between bm1+ WT OvaFla mice that received B6 CD45.1 or Batf3–/– bone marrow in either the spleen or mesenteric lymph node. OT-I T cells in these two mouse groups also appeared to proliferate similarly (Figure 5D, Figure 5—figure supplement 3). Additionally, there was no difference in the percent (Figure 5—figure supplement 4) or total number (Figure 5B–C, bottom) of CD44+ CD62L– OT-I T cells. These data suggest a Batf3-independent population of DCs are responsible for cross-presentation of IEC-derived antigen following NAIP–NLRC4 activation.
 
@@ -102,13 +142,23 @@ NAIP–NLRC4 activation might promote alternative (cDC1-independent) cross-prese
 
 Regardless of the bone marrow donor, OT-I T cells in the bm1+ WT, bm1+ Gsdmd–/–, and bm1+ Nlrc4–/– OvaFla mice all showed similar levels of TNFα and IFNγ production following ex vivo stimulation with PMA and ionomycin (Figure 5—figure supplement 4B). However, when we looked at CCR9 expression as a readout of whether the OT-I T cells were homing to the intestine (Svensson et al., 2002), we found a significant decrease in the number of cells expressing CCR9 in the Batf3–/– recipients relative to the B6 CD45.1 recipients across all three mouse lines (Figure 5E). These data align with previous findings that show that cDC1s play a key role in driving CCR9 expression on CD8+ T cells (Joeris et al., 2021). In summary, our data indicate the existence of two potential pathways by which IEC-derived antigens are cross-presented to CD8+ T cells: a constitutive pathway that operates in the absence of inflammasome activation that requires Batf3+ cDC1s, and a pathway that operates in the presence of inflammasome activation that does not require Batf3+ cDC1s. Interestingly, the Batf3+ cDC1s appear necessary for instructing antigen-specific CD8+ T cells back to the intestine.
 
-## cDCs are required for cross-presentation of IEC-derived antigen
+### cDCs are required for cross-presentation of IEC-derived antigen
 
 Although XCR1-expressing cDC1s are the dominant cross-presenting cell type (Bachem et al., 2012; Dorner et al., 2009), other APCs are reportedly capable of cross-priming CD8+ T cells as well. These APCs include monocyte-derived DCs (moDCs) (Briseño et al., 2016) and red pulp macrophages (Enders et al., 2020). Additionally, cDC2s have been show to acquire characteristics of cDC1s under inflammatory conditions (Bosteels et al., 2020) or in the absence of Batf3 (Lukowski et al., 2021), though it remains uncertain if these cells are able to cross-prime CD8+ T cells or provide T cells with the appropriate homing signals.
 
 To determine whether our Batf3-independent cross-presenting population was another cDC population (e.g., cDC2s) or a macrophage or moDC population, we conducted a modified version of the above chimera experiments in which we compared bm1+ OvaFla mice that received bone marrow from either B6 CD45.1 mice or Zbtb46-DTR (diphtheria toxin [DT] receptor) mice (Meredith et al., 2012). Zbtb46 is a transcription factor that drives development of cDCs but not moDCs, macrophages or any other myeloid cell populations (Meredith et al., 2012; Satpathy et al., 2012). Insertion of the DTR gene into the 3’ untranslated region of Zbtb46 allows for targeted ablation of these cells in bone marrow chimeras following DT treatment (Meredith et al., 2012). Eight weeks post bone marrow reconstitution, all mice were given DT 1 day prior to OT-I transfer and tamoxifen chow pulse and again 3 days later. As before, spleens and mesenteric lymph nodes were collected at day 5 post tamoxifen treatment and analyzed for evidence of cross-primed OT-I CD8+ T cells.
 
 When we compared the Zbtb46+ (B6) bone marrow recipients with the Zbtb46-DTR bone marrow recipients, we found a significant reduction of cDC1s and cDC2s in the mesenteric lymph nodes (Figure 6—figure supplements 1 and 2). Furthermore, both the relative (Figure 6A–B, top) and total (Figure 6A–B, bottom) numbers of OT-Is were significantly reduced in the mice that received Zbtb46-DTR bone marrow across all WT, Gsdmd–/–, and Nlrc4–/– OvaFla mice. These data demonstrate that the Batf3-independent population of cross-presenting cells seen in the WT OvaFla mice in Figure 5 are dependent on Zbtb46 and thus are likely due to a non-cDC1 subset (presumably cDC2s).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig6-v2.jpg)
+
+**Figure 6.:** (A) Quantification of OT-Is as a percent of total CD8+ T cells (top) and the total number of OT-Is (bottom) in the spleen. (B) Quantification of OT-Is as a percent of total CD8+ T cells (top) and the total number of OT-Is (bottom) in the mesenteric lymph nodes. All mice were given two doses of diphtheria toxin (DT) (see Materials and methods), and tissues were harvested and analyzed at day 5 post tamoxifen chow start. Data are pooled from two biological replicates. Data shown as mean ± SD. Significance calculated using one-way ANOVA and Šídák’s multiple comparisons test (*p < 0.05, **p < 0.01, ***p < 0.001). See Figure 6—source data 1 for exact p values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/72082/elife-72082-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Percent of CD45+ cells in the mesenteric lymph node that are cDC1 (left) or cDC2 (right) from two separate experiments. See Figure 6—figure supplement 2—source data 1 for exact p values.
 
 ## Discussion
 
@@ -128,7 +178,451 @@ Overall, our studies show that IEC-derived antigens are cross-presented both fol
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Nlrc4</td>
+      <td>GenBank</td>
+      <td>Gene ID: 268973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Gsdmd</td>
+      <td>GenBank</td>
+      <td>Gene ID: 69146</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Pycard</td>
+      <td>GenBank</td>
+      <td>Gene ID: 66824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Batf3</td>
+      <td>GenBank</td>
+      <td>Gene ID: 55509</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Zbtb46</td>
+      <td>GenBank</td>
+      <td>Gene ID: 72147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Nlrc4–/–</td>
+      <td>PMID:15190255</td>
+      <td>RRID:MGI:3047280</td>
+      <td>Vishva Dixit, Genentech, South San Francisco, CA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gsdmd–/–</td>
+      <td>PMID:28410991</td>
+      <td>RRID:IMSR_JAX:032663</td>
+      <td>Generated via CRISPR/Cas9 from UC Berkeley Gene Targeting Facility</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Pycard–/–</td>
+      <td>PMID:15190255</td>
+      <td>RRID:MGI:3047277</td>
+      <td>Vishva Dixit, Genentech, South San Francisco, CA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Batf3–/–</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:013755</td>
+      <td>C57BL/6J background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Zbtb46–/–</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:019506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Villin-Cre-ERT2</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:020282</td>
+      <td>C57BL/6NJ background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>OT-I Rag2–/–</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:003831</td>
+      <td>C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>OvaFla</td>
+      <td>PMID:29263322</td>
+      <td>MGI:6196853</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD16/CD32 Purified (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone: 93; Cat#: 14-0161-85</td>
+      <td>FC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.1 APC (mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone: A20; Cat#: 17-0453-81</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 APC (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Clone: 30-F11; Cat#: 103111</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2 PE/Cy7 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: 104; Cat#: 109830</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD8a Brilliant Violet 650 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: 53–6.7; Cat#: 100742</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD44 BB515 (rat monoclonal)</td>
+      <td>BD</td>
+      <td>Clone: IM9; Cat#: 564587</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD62L Brilliant Violet 711 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: MEL-14; Cat#: 104445</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD199 (CCR9) PE (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: 9B1; Cat#: 129707</td>
+      <td>FC(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse TNFa FITC (mouse monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone: MP6-XT22; Cat#: 11-7321-82</td>
+      <td>FC(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c PE (arm hamster monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone: 418; Cat#: 12-0114-81</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse MHC Class II (I-A/I-E) APC-eFluor 780 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: M5/114.15.2; Cat#: 107628</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD4 APC/Fire 750 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: GK1.5; Cat#: 100460</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD11b PE-Cyanine7 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Clone: M1/70; Cat#: 25-0112-81</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11c Brilliant Violet 711 (arm hamster monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: N418; Cat#: 117349</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45 Brilliant Violet 785(rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: 30-F11; Cat#: 103149</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse MHC II I-A/I-E FITC (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: M5/114.15.2; Cat#: 107605</td>
+      <td>FC(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse/rat XCR1 APC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: ZET; Cat#: 148206</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD90.2 (Thy-1.2) APC/Fire 750 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: 53–2.1; Cat#: 140326</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Ly-6G/Ly-6C (Gr-1) APC/Cyanine7 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: Gr1; Cat#: 108424</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD64 (FcγRI) APC (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: X54-5/7.1; Cat#: 139306</td>
+      <td>FC(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2 PerCP-Cyanine5.5 (mouse monoclonal)</td>
+      <td>eBio</td>
+      <td>Clone: 45-0454-82; Cat#: 17-0454-82</td>
+      <td>FC(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse MHC Class II (I-A/I-E) FITC (rat monoclonal)</td>
+      <td>Fisher</td>
+      <td>Clone: M5/114.15.2; Cat#: 11-5321-82</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD64 PE (mouse monoclonal)</td>
+      <td>Fisher</td>
+      <td>Clone: X54-5/7.1; Cat#: 12-0641-82</td>
+      <td>FC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45.2 PE (mouse monoclonal)</td>
+      <td>Fisher</td>
+      <td>Clonne: 104; Cat#: 12-0454-82</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD11b PE-Cyanine7 (rat monoclonal)</td>
+      <td>Fisher</td>
+      <td>Clone: M1/70; Cat#: 25-0112-82</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD90.2 (Thy-1.2) Pacific Blue (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clond: 53–2.1; Cat#: 140306</td>
+      <td>FC(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD86 Brilliant Violet 785 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: GL-1; Cat#: 105043</td>
+      <td>FC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD172a (SIRPα) Brilliant Violet 510 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone: P84; Cat#: 144032</td>
+      <td>FC(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ghost Dye Red 780</td>
+      <td>Tonbo</td>
+      <td>Cat#: 13–0865T500</td>
+      <td>FC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (H + L) AF 488 (donkey polyclonal)</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#: 711-545-152</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse GFP Polyclonal Antibody (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A-6455</td>
+      <td>IF(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-18 Biotin (rat monoclonal)</td>
+      <td>MBL</td>
+      <td>Clone: 93–10 C; Cat#: D048-6</td>
+      <td>ELISA(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IL-18 (rat monoclonal)</td>
+      <td>BioXcell</td>
+      <td>Clone: YIGIF74-1G7; Cat#: BE0237</td>
+      <td>ELISA(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD3 biotin (arm ham monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone:145–2 C11; Cat#: 100304</td>
+      <td>For depletion, 10 µL/107 cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BD Pharmingen Streptavidin HRP</td>
+      <td>BD Biosciences</td>
+      <td>RRID:AB_2868972; Cat#: 554066</td>
+      <td>ELISA(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet Cell Proliferation Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: C34557</td>
+      <td>See Materials and methods section; 1 µL/106 cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-Biotin MicroBeads</td>
+      <td>Miltenyi</td>
+      <td>Cat#: 130-105-637</td>
+      <td>For depletion, 20 µL/107 cells</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LD Columns</td>
+      <td>Miltenyi</td>
+      <td>Cat#: 130-042-901</td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat#: D1306</td>
+      <td>IF(10 nM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BD GolgiPlug</td>
+      <td>BD Biosciences</td>
+      <td>Cat#: 555029</td>
+      <td>FC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol myristate acetate (PMA)</td>
+      <td>Invivogen</td>
+      <td>Cat#: tlrl-pma</td>
+      <td>FC(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Calbiochem</td>
+      <td>Cat#: 407952–1MG</td>
+      <td>FC(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>o-Phenylenediamine dihydrochloride</td>
+      <td>Sigma</td>
+      <td>Cat#: P3804-100TAB</td>
+      <td>ELISA(one tab/ 5 mL)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen chow</td>
+      <td>envigo</td>
+      <td>Cat#: 130856</td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Diphtheria toxin from Corynebacterium diphtheriae</td>
+      <td>Sigma</td>
+      <td>Cat#: D0564-1MG</td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All mice were maintained under specific pathogen-free conditions and, unless otherwise indicated, fed a standard chow diet (Harlan irradiated laboratory animal diet) ad libitum. OvaFla mice were generated as previously described (Nichols et al., 2017b) and crossed to Villin-Cre-ERT2, which we obtained from Avril Ma (UCSF, San Francisco, CA) (el Marjou et al., 2004). OvaFla Villin-Cre-ERT2 mice were additionally bred to Gsdmd–/–, Pycard–/–, and Nlrc4–/– mice. Nlrc4–/– and Pycard–/– mice were from V. Dixit (Mariathasan et al., 2004) (Genentech, South San Francisco, CA). Gsdmd–/– mice were previously described (Rauch et al., 2017). OT-I Rag2–/– mice (from E Robey, Berkeley, CA) were used as a source of OT-Is for all adoptive transfer experiments.
 
@@ -136,19 +630,19 @@ For chimera experiments, the above OvaFla lines were crossed to B6.C-H-2Kbm1/ByJ
 
 Mice used for non-chimera experiments were 8–12 weeks of age upon tissue harvest, and mice used as chimeras were 16–20 of weeks of age upon tissue harvest. Female mice were co-housed, and all experimental mice were age- and sex-matched when possible. OvaFla-only and Cre-only controls were littermates of the experimental mice. All animal experiments and endpoints were approved by and performed in accordance with the regulations of the University of California Berkeley Institutional Animal Care and Use Committee.
 
-## Adoptive transfer of OT-I T cells
+### Adoptive transfer of OT-I T cells
 
 The spleen and mesenteric lymph nodes were harvested from OT-I Rag2–/– mice, mashed between the frosted ends of two glass slides to create a single cell suspension, filtered through 100 μm nylon mesh, and pooled into a single tube. Red blood cells were lysed with ACK Lysing Buffer (Gibco; A10492-01). Cells were labeled with CellTrace Violet (ThermoFisher; C34557) following the manufacturer’s protocol and transferred i.v. to mice anesthetized with isoflurane at 2 × 104 cells per mouse.
 
-## Tamoxifen administration
+### Tamoxifen administration
 
 The tamoxifen chow used in these studies was purchased from Envigo (https://www.envigo.com/tamoxifen-custom-diets; 120856). The diet contains 250 mg of tamoxifen per kilogram of chow and was irradiated prior to shipping. Mice were fed ab libitum for 2 days for the experiments in Figure 1B–C, Figure 5—figure supplement 1 and 1 day for the remaining experiments. Envigo assumes approximately 40 mg of tamoxifen is consumed per kilogram of body weight per day for each mouse, though feed aversion leads to variable and limited initial food intake (Chiang et al., 2010).
 
-## DT treatment
+### DT treatment
 
 To deplete cDCs in the Zbtb46–DTR → bm1+OvaFla chimeras, all mice were given two doses of DT (Sigma; D-0564) as described in Meredith et al., 2012. Each animal was given an initial dose of 20 ng DT per gram body weight 1 day prior to OT-I T cell transfer and tamoxifen chow pulse. The mice were then given a second dose of 4 ng DT per gram body weight 3 days after the initial dose.
 
-## Flow cytometry
+### Flow cytometry
 
 Spleens and mesenteric lymph nodes were harvested from euthanized mice and stored on ice in T cell media: RMPI 1640 (Gibco; 21870092) containing 10% FBS (Gibco, Cat#16140071, Lot#1447825), 1% penicillin-streptomycin, 1% L-glutamine, 1% sodium pyruvate, 0.5% 2-mercaptoethanol, and 25 mM HEPES. For lymphocyte staining, tissues were mashed between the frosted ends of glass slides and filtered through 100 μm nylon mesh. For myeloid staining, tissues were minced with scissors and forceps and incubated in T cell media containing 1 mg/mL collagenase VIII (Sigma; C2139-1G) or in HBSS (Ca2+, Mg2+) (Gibco; 14025076) containing DNase I (900 mg/1 mL) (Sigma; DN25-10MG) and Liberase TM (Roche; 5401119001), at 37°C for 25–45 min. The digested tissues were then passed through 70 μm filters and washed with T cell media. For all stains, red blood cells were lysed from a single cell suspension using ACK Lysing Buffer. Cells were counted using a Beckman Vi-CELL XR Cell Viability Analyzer (Beckman Coulter, Brea, CA), and 3 × 106 cells per tissue per mouse were added to individual FACS tubes or wells of a 96-well non-tissue culture-treated round bottom plate.
 
@@ -156,11 +650,11 @@ For extracellular surface staining, cells were blocked for 20–30 min with a 1:
 
 For intracellular cytokine analysis, cells were incubated at 1 × 106 cells/mL T cell media plus 1 μg/mL PMA (Invivogen; tlrl-pma), 1 μg/mL ionomycin (Calbiochem; 407952–1 MG), and 1 μg/mL GolgiPlug (BD Biosciences; 555029) at 37°C for 5 hr. Cells were then washed and blocked for 20–30 min with a 1:1000 dilution of anti-mouse CD16 and CD32 antibodies at 4°C, and a surface stain was applied for 1 hr at RT (see Key resources table). Cells were then fixed in 100 mL eBioscience IC Fixation Buffer (Thermo; 00-8222-49) for 20–60 min RT, and then stained with an intracellular staining cocktail (see Key resources table) in 1× eBioscience Permeabilization Buffer (Thermo; 00-8333-56) at RT for 1 hr. Cells were washed and resuspended in PBS prior to analysis. The data were collected on a BD Biosciences Fortessa (San Jose, CA) in the UC Berkeley Cancer Research Laboratory Flow Cytometry facility, and analysis was performed using FlowJo 10 Software (BD Biosciences, San Jose, CA).
 
-## Generation of bone marrow chimeras
+### Generation of bone marrow chimeras
 
 Eight- to twelve-week-old mice were lethally irradiated with a Precision X-Rad320 X-ray irradiator (North Branford, CT) using a split dose of 500 rads and then 450 rads, approximately 15 hr apart. Bone marrow was harvested from the long bones of the indicated donor strains, red blood cells were lysed using ACK Lysing Buffer, and CD3+ cells were depleted from the donor cells using a biotinylated anti-mouse CD3ε mAb (BioLegend; 100304) and the Miltenyi MACS MicroBead (Miltenyi; 130-105-637) magnetic depletion protocol with LD columns (Miltenyi; 130-042-901) to reduce graft versus host reactions (Selvaggi et al., 1996). Recipient mice were anesthetized with isoflurane, and approximately 5 × 106 donor cells were injected retro-orbitally. Females from the different strains were co-housed, and at least 8 weeks passed between reconstitution and the start of any experiment.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Mice were fed a single day pulse of tamoxifen chow and euthanized 2 days from start of the chow feeding. Approximately 2.5 cm pieces were taken from the proximal and distal ends of the small intestine. These pieces were flushed and fixed in PLP buffer (0.05 M phosphate buffer containing 0.1 M L-lysine [pH 7.4], 2 mg/mL NaIO4, and 1% PFA) overnight at 4°C. The following day, tissues were washed 2× in phosphate buffer and placed in 30% sucrose overnight at 4°C. Tissue was frozen in Tissue-Tek OCT (VWR; 25608–930), cut on a Leica cryostat, and sections were placed on Fisherbrand Tissue Path Superfrost Plus Gold Slides (Fisher Scientific; 15-188-48).
 
@@ -168,11 +662,11 @@ For staining, slides were allowed to warm to RT, traced with an ImmEdge Hydropho
 
 Slides were imaged on a Zeiss LSM710 at the CNR Biological Imaging Facility at the University of California, Berkeley. Images were blinded and manually quantified for GFP+ IECs. For quantification of GFP+ cells, DAPI+ IECs were counted in at least 15 villi per mouse—DAPI+ cells were counted prior to revealing the GFP+ cells in the 488 channel. For quantification of amount GFP levels per IEC, ImageJ (National Institutes of Health) was used to trace and measure the mean pixel intensity in the GFP channel for individual GFP+ cells, with 12–20 cells per image. ImageJ was used to visualize images and globally adjust contrast and brightness for print quality following quantification.
 
-## Serum IL-18 measurement
+### Serum IL-18 measurement
 
 Thermo Scientific Immuno MaxiSorp ELISA plates (Thermo Fisher; 439454) were coated with 1 μg/mL anti-mouse IL-18 mAb (MBL; D048-6) overnight at 4°C, and blocked with 1× PBS containing 1% BSA for 2–4 hr at RT. Serum was diluted 1:5 in PBS with 1% BSA, added to the plate with a purified IL-18 standard, and incubated overnight at 4°C. A biotinylated anti-mouse IL-18 sandwich mAb (BioXcell; BE0237) was added at 1:2000 in PBS with 1% BSA and incubated for 1–2 hr at RT. BD Pharmingen Streptavidin HRP (BD Biosciences; 554066) was added at 1:1000 in PBS with 1% BSA. Following a final 5× wash, plates were developed with 1 mg/mL OPD (Sigma; P3804-100TAB) in citrate buffer (PBS with 0.05 M NaH2PO4 and 0.02 M citric acid) plus 9.8 M H2O2. The reaction was stopped with a 3 M HCl acid stop after approximately 10 min. Absorbance at 490 nm was measured on a Tecan Spark multimode microplate reader (Tecan Trading AG, Switzerland).
 
-## Statistical analysis
+### Statistical analysis
 
 For all bar graphs, data are shown as mean ± SD. For Figures 1—4, the significance between each genotype was calculated using one-way ANOVA and Tukey’s multiple comparisons test. For Figure 5, the significance between mice that received B6 CD45.1 and mice that received Batf3–/– bone marrow was calculated using one-way ANOVA and Šídák’s multiple comparisons test. Figure 6, the significance between mice that received B6 CD45.1 bone marrow and mice that received Zbtb46-DTR bone marrow was calculated using one-way ANOVA and Šídák’s multiple comparisons test. For all data, *p < 0.05, **p < 0.01, ***p < 0.001. Tests were run using GraphPad Prism (San Diego, CA).
 

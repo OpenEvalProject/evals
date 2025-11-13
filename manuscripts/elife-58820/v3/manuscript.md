@@ -42,39 +42,168 @@ Through the analysis of our study results, a new disposition mechanism called �
 
 ## Results
 
-## Portal vein infusion
+### Portal vein infusion
 
 The portal vein infusion uses a direct method to assess the recirculation efficiency of a phenolic glucuronide by the liver using liver recycle efficiency% (LRE%, defined as steady-state biliary secretion rate divided by the hepatic infusion rate). Sixteen phenolic glucuronides, including four we studied previously (Zeng et al., 2016) and several of them with matching aglycones, were used to study this recirculating phenomenon.
 
-## Effects of Won-7-G concentrations on LRE%
+#### Effects of Won-7-G concentrations on LRE%
 
 The biliary secretion and blood concentrations of Won-7-G reached steady state after 1 hr of infusion (Figure 2A1 and A) and remained steady until 2.5 hr. With increased Won-7-G concentrations, both biliary secretion amount (Figure 2A1) and blood concentrations (Figure 2A2) increased. LRE%, calculated by Equation 1, were significantly lower (p<0.05) at higher infused concentration (Figure 2A3). LRE% were also plotted against steady state blood concentrations (Figure 2A4). It showed that at lower blood concentrations (<100 μM) of wogonoside, its biliary excretion rates increased linearly. At higher blood concentrations (>=100 μM), biliary excretion rates showed a saturation trend, indicative of transporter-mediated excretion (Figure 2A4).
 
-## Comparison between aglycones and their corresponding glucuronides
+![Figure 2.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig2-v3.jpg)
+
+**Figure 2.:** Following portal vein infusion of Won-7-G at various concentrations (2–1000 μM), amounts of glucuronide excreted into bile (A1), concentrations of glucuronide in blood (A2) and LRE% (A3) were determined, and then the biliary secretion rates of glucuronides were plotted against their steady-state blood concentrations (A4). After the hepatic infusion of seven different aglycones [Won; Api; Bai; Lut; Ral; and Eze] and their corresponding glucuronides [Won-7-G; Api-7-G; Bai-7-G; Lut-3’-G; Ral-6-G; Ral-4’-G and Eze-4’-G] at 10 μM concentration, amount of the glucuronides secreted in bile during portal vein infusion of aglycones versus glucuronides were determined (B1–B7). Following the portal vein infusion of Won at 2 μM for the first 2.5 hr and at 100 μM for next 2 hr, the amount of Won-7-G secreted in bile (C1), the accumulated amount of Won-7-G secreted in bile (C2), and LRE% (C3) at low (2 μM) and high (100 μM) concentrations of Won were compared to study the effect of protein binding of Won on its liver uptake. The liver concentrations of Won and Won-7-G could be found in Appendix 2—table 2. 4. Four male Wistar rats were used in each experimental group. Statistical significance was calculated using student t test ('*', '**', and '***' indicates p<0.05, p<0.01, and p<0.001, respectively).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) and Lut-3’-G (C,D) obtained from single infusion and combo infusion (four compounds infused simultaneously at 10 μM) were summarized. N = 4 in each experimental group. Student t test was applied and no statistical significance exists between single infusion group and combo infusion group.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The hydrolysis of microsome incubation samples was summarized in Fig. 2 supplement figure S2. After incubating the microsome samples with β-glucuronidase, the peak of Lut-3’-G and Lut-di-G decreased and the peak of Lut increased.Appendix 5—table 1 The results comfirmed the existing of di-glucuronidation metabolite. (B) The UV spectrum of Lut-3’-G after incubation with microsome. (C) The UV spectrum of Lut-3’-G microsome sample after 30 min of hydrolysis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** The compounds were given at 30 mg/kg by oral gavage. Blood samples were taken at 0, 0.5, 1, 2, 4, 6, 8, and 24 hr after compound administration.
+
+#### Comparison between aglycones and their corresponding glucuronides
 
 Lower LRE% were found for six aglycone compounds (including four flavonoids, and two drugs raloxifene and ezetimibe, Figure 2B1–B7) when comparing to their corresponding glucuronides. All seven glucuronides (raloxifene has two glucuronides) showed a significantly higher (p<0.05) LRE% than their corresponding aglycones (Table 1, Figure 2B1–B7). Among the aglycones, wogonin had highest LRE% (41%) when recycled in the form of Won-7-G. Other aglycones showed even lower LRE% (<10%), also in the form of their glucuronides. The generally lower LRE% of aglycones in comparison with their glucuronides were not expected since glucuronides are highly hydrophilic. To rule out the possibility that slow aglycone uptake was the reason for lower LRE%, an uptake comparison between Won and Won-7-G in three cell lines were also conducted (Appendix 2—table 2 and Appendix 2—table 3). The results indicated that the uptake of Won was not influenced in the presence of specific transporter inhibitor, while Won-7-G was greatly inhibited, suggesting that aglycone uptake was mainly by passive diffusion, and often faster than their corresponding glucuronides.
 
-## Effects of protein binding
+**Table 1.**
+ Comparison of bililary secretion rates and recycle ratios of glucuronides following hepatic glucuronide infusion, hepatic aglycone infusion and small intestinal aglycone perfusion.The rate of hepatic infusion was 20 nmol/hr and the rate of intestinal perfusion was 24 nmol/hr.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dosing method</th>
+      <th>Hepatic glucuronide infusion</th>
+      <th>Hepatic aglycone infusion</th>
+      <th>Small intestine aglycone perfusion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Infused compounds</td>
+      <td>Eze-4'-G</td>
+      <td>Ezetimibe (Eze)</td>
+      <td>Ezetimibe (Eze)</td>
+    </tr>
+    <tr>
+      <td>Won-7-G</td>
+      <td>Wongonin (Won)</td>
+      <td>Wongonin (Won)</td>
+    </tr>
+    <tr>
+      <td>Ral-6-G</td>
+      <td>Raloxifene (Ral)</td>
+      <td>Raloxifene (Ral)</td>
+    </tr>
+    <tr>
+      <td>Api-7-G</td>
+      <td>Apigenin (Api)</td>
+      <td>Apigenin (Api)</td>
+    </tr>
+    <tr>
+      <td>Bai-7-G</td>
+      <td>Baicalein (Bai)</td>
+      <td>Baicalein (Bai)</td>
+    </tr>
+    <tr>
+      <td>Measured compound</td>
+      <td colspan="3">Bile secretion rate (nmol/hr)</td>
+    </tr>
+    <tr>
+      <td>Eze-4'-G</td>
+      <td>19.31 ± 1.85</td>
+      <td>2.93 ± 0.41***,†</td>
+      <td>21.94 ± 5.29</td>
+    </tr>
+    <tr>
+      <td>Won-7-G</td>
+      <td>16.30 ± 4.28</td>
+      <td>8.46 ± 3.93***,†</td>
+      <td>17.90 ± 11.96</td>
+    </tr>
+    <tr>
+      <td>Ral-6-G</td>
+      <td>10.53 ± 1.51</td>
+      <td>3.91 ± 0.82***</td>
+      <td>4.00 ± 0.68</td>
+    </tr>
+    <tr>
+      <td>Api-7-G</td>
+      <td>10.64 ± 4.49</td>
+      <td>1.22 ± 0.76***,†</td>
+      <td>11.32 ± 4.08</td>
+    </tr>
+    <tr>
+      <td>Bai-7-G</td>
+      <td>0.69 ± 0.29</td>
+      <td>0.09 ± 0.07***,†</td>
+      <td>ND†</td>
+    </tr>
+    <tr>
+      <td>Measured compound</td>
+      <td colspan="3">Recycle ratio (%)</td>
+    </tr>
+    <tr>
+      <td>Eze-4'-G</td>
+      <td>96.54 ± 9.23</td>
+      <td>14.65 ± 2.05***,†</td>
+      <td>91.42 ± 22.04</td>
+    </tr>
+    <tr>
+      <td>Won-7-G</td>
+      <td>81.5 ± 21.41</td>
+      <td>42.30 ± 20.00***,†</td>
+      <td>74.58 ± 49.83</td>
+    </tr>
+    <tr>
+      <td>Ral-6-G</td>
+      <td>52.64 ± 7.54</td>
+      <td>19.55 ± 4.10***,†</td>
+      <td>16.67 ± 2.83</td>
+    </tr>
+    <tr>
+      <td>Api-7-G</td>
+      <td>53.21 ± 22.44</td>
+      <td>6.10 ± 3.80***,†</td>
+      <td>47.17 ± 17.00</td>
+    </tr>
+    <tr>
+      <td>Bai-7-G</td>
+      <td>3.43 ± 1.46</td>
+      <td>0.45 ± 0.35***,†</td>
+      <td>ND‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Significant difference between hepatic glucuronide infusion and hepatic aglycone infusion, p<0.01.†Significant difference between hepatic aglycone infusion and small intestinal perfusion , p<0.01.‡Not determined due to below quantification limit._
+
+#### Effects of protein binding
 
 It was reported that the protein binding of Won could be as high as 90% (Talbi et al., 2014); therefore, it is possible that lower LRE% values associated with aglycones was due to extensive binding to plasma protein (i.e. free aglycones were not readily available for liver uptake). To confirm this, we used higher concentration of aglycone (Won) that could saturate the plasma protein and more unbound aglycones could be available for hepatic uptake. However, the results indicated that LRE% at a higher concentration (100 μM) was significantly lower (p<0.001) than at a lower concentration (2 μM) (Figure 2C3), ruling out the impact of extensive protein binding on the lower LRE% of aglycones. Liver tissue concentrations of wogonin was at least five times higher than won-7-G concentrations (Appendix 2—table 4), which indicated that the slow metabolism in liver was the likely reason for the lower LRE%.
 
-## Effect of phenolic and phenolic glucuronide structures on LRE%
+#### Effect of phenolic and phenolic glucuronide structures on LRE%
 
 We determined the LRE% of 16 phenolic-O-glucuronides, derived from dietary phenolics and phenolic drugs (Appendix 2—table 5). The results showed that LRE% was highly variable, ranging from 95% to 5%. In a study of nine 7-O-glucuronides of flavonoids, we were able to show that glucuronidation at 7-position alone is not sufficient to determine if a glucuronide will have high LRE%, suggesting that the aglycone structures are important determinant of its LRE%. This is rather interesting since there is only small structural differences between these flavonoid aglycones. On the other hand, glucuronides of drug molecules showed similarly large difference in their LRE%, and their structures are quite different.
 
-## Effect of sex differences on glucuronide LRE%
+#### Effect of sex differences on glucuronide LRE%
 
 We are interested in determining the effects of sex difference on the OATP liver expression levels, because the expression level of Oatp in rat liver was reported to be significantly higher in males than in females (Hou et al., 2014). Also, E2G is a classical OATP substrate that has a drastically higher blood concentrations in females than males. The results indicated that there was not sex related differences in the LRE% of Won-7-G and Lut-3’-G. (Appendix 2—table 6). Interestingly, the LRE% of Bai-7-G increased from ~4% (male rats) to ~10% (female rats) (p<0.05).
 
-## Effect of cassette dosing on glucuronide LRE%
+#### Effect of cassette dosing on glucuronide LRE%
 
 To rapidly evaluate LRE% of glucuronides, we determined if cassette dosing of several glucuronides impacted their excretion when they were infused together. In order to avoid any potential competitive inhibition among glucuronides, we choose to infuse them at low concentration (10 μM). We found that when given at a low concentration (10 μM), cassette dosing did not significantly impact LRE% (Figure 2—figure supplement 1A to D). The results indicated that the hepatic recirculating system is capable of handling multiple glucuronides simultaneously at 10 μM concentration. This is because compounds infused into the portal vein were immediately diluted by ~200 folds therefore not expected to interact with each other (Davies and Morris, 1993).
 
-## Cellular uptake with OATP overexpressing cells
+### Cellular uptake with OATP overexpressing cells
 
 We chose to focus on hepatic OATP transporters, because OATPs mediated the uptake of hormone glucuronides such as E2G (Lin et al., 2012). In addition, our earlier study had used glucuronides of isoflavones, which are phytoestrogens (similar to estrogens). OATP 1B1/1B3/2B1 overexpressing cells are used because they are expressed on the basolateral side (sinusoidal) membrane of hepatocytes.
 
-## Structural effects on glucuronide uptake in OATP 1B1/1B3/2B1 cells
+#### Structural effects on glucuronide uptake in OATP 1B1/1B3/2B1 cells
 
 We found that uptake by three OATP cells varied greatly (p<.005) between glucuronides (Figure 3A). In addition, for a particular phenolic glucuronide, their uptake was also significantly different (p<.005) between three OATP-expressing cells. Moreover, most glucuronides with high LRE% was taken up rapidly in these cells. However, Lut-3’-G were found to have low LRE% (Figure 2B4) even though it was rapidly taken up by the OATP1B1 cells. The discrepancy can be explained by the fact that Lut-3’-G could be further metabolized into di-glucuronides of Lut in vivo (Kemp et al., 2002). A liver microsome-mediated metabolism of Lut-3’-G confirmed the formation of Lut di-glucuronides by LC-MS (Figure 2—figure supplement 2A and B). Moreover, the peaks of Lut-3’-G and Lut-di-G both decreased upon incubation with β-glucuronidases (Figure 2—figure supplement 2C).
 
@@ -82,27 +211,43 @@ We found that uptake by three OATP cells varied greatly (p<.005) between glucuro
 
 **Figure 3.:** Intracellular concentration of glucuronides obtained using 1 μM of 10 different glucuronides [Won-7-G; E2G; Bai-7-G; Que-3-G; Scu-7-G; Api-7-G; Lut-7-G; Lut-3’-G; Eze-4’-G; and E2S] (A) was determined (10 μM was used in OATP 2B1 but results were normalized to 1 μM). Uptake kinetics of Won-7-G (B1), Api-7-G (B2), Lut-3’-G (B3) and Eze-4’-G (B4) in the concentration range of 0.5–50 µM in OATP1B1/1B3/2B1 over-expressed cell lines were determined. Km and Vmax values were calculated using Michaelis-Menten kinetics and summarized in Appendix 2—table 7. Effect of OATP inhibitors (50 μM rifampicin as OATP1B1/1B3 inhibitor and 50 μM erlotinib as OATP2B1 inhibitor) on the cellular uptake of five different glucuronides (E2G for OATP1B1/1B3 and E1S for OATP2B1 as positive controls) in OATP1B1 (C1), OATP1B3 (C2), and OATP2B1 (C3) over-expressed cell lines was studied at 10 μM substrate concentration (Figure 3C1–C3). Cross-over uptake in OATP1B1 cells using 1 μM of Won-7-G, E2G, Lut-3’-G as substrates was studied and intracellular concentrations of the glucuronides were determined in absence and presence of 25 μM of other aglycones and glucuronides as inhibitors. Each experiment was run in triplicate using substrates solutions in HBSS buffer (pH 7.4) at 37°C and the incubation lasted for 20 min. Statistical significance was calculated using student t test in Figure 3B1–B3 and one-way ANOVA in Figure 3A and C1–C ('*', '**', and '***' indicates p<0.05, p<0.01, and p<0.001, respectively).
 
-## Concentration effects on glucuronide uptake
+#### Concentration effects on glucuronide uptake
 
 We determined the Km and Vmax values of four phenolic glucuronides (Figure 2B1–2B4 and Table 1), representative of glucuronides with high (Won-7-G and Eze-4’-G), medium (Api-7-G), or low (Lut-3’-G) LRE%. We found that these glucuronides have good affinity to OATP1B1, 1B3, or 2B1 with Km values in the several micro molar range (Appendix 2—table 7), well within their in vivo exposure levels reported in the literature (Mo et al., 2019; Wang et al., 2019).
 
-## Effects of OATP inhibitors on glucuronide uptake
+#### Effects of OATP inhibitors on glucuronide uptake
 
 Rifampicin (25 μM) was shown to be potent inhibitor (>90% inhibition) of the uptake of OATP1B1 and OATP 1B3 substrate E2G, Won-7-G, Lut-3’-G (all at 1 μM) (Figure 3C1–C3), consistent with literature-reports that rifampicin shown strong pharmacokinetic interactions with atorvastatin and provastatin (classical OATPs substrate) in healthy volunteers (Kashani et al., 2009; Riveros et al., 2009). In addition to rifampicin, telmisartan was also shown to be a potent inhibitor (>90%) of the uptake of OATP 2B1 substrate E1S and Lut-3’-G (Figure 3C3). The results indicated that the uptake of these glucuronides was inhibited by specific OATP inhibitors. It supported our hypothesis that the uptake of these glucuronides was via a transporter-mediated process.
 
-## Cross-inhibition of uptake between glucuronides and aglycones
+#### Cross-inhibition of uptake between glucuronides and aglycones
 
 To establish a fast screening criterion that determines whether a phenolic compound was likely to undergo HER as an OATP substrate, we performed the uptake cross-inhibition experiments using several known substrates and non-substrates of OATP1B1. The results showed that if a compound was not an inhibitor of prototypical OATP substrate, it was not a substrate of that OATP (Figure 3D1–D3), but the reverse was not true. In contrast, substrates of OATP1B1 were able to significantly inhibited (p<.005) the uptake of glucuronides (Won-7-G, E2G, and Lut-3’-G) that are good substrates of a specific OATP. Interestingly, aglycones were better inhibitors than their corresponding glucuronides, even though the corresponding glucuronides had higher LRE%.
 
-## Correlation of LRE% and cell uptake
+#### Correlation of LRE% and cell uptake
 
 A total of 66 combinations with different OATP weightings were applied in Fisher exact test (Appendix 4—table 1). OATP 1B1 is the most abundant OATP expressed in livers (Appendix 2—table 1; Gårdmark et al., 1993) and also considered the most important among all OATPs. OATP 1B3 is grouped with OATP1B1 in both localization and substrates, but the contribution of OATP 1B3 is considered to be always smaller than OATP 1B1. Therefore, combinations which assigned the highest weightings to OATP1B3 were considered not physiologically relevant and eliminated from the results. Of all the results from the Fisher exact test (Appendix 4—table 2), 22 combinations were eliminated based on this criterion. Of the remaining 44 combinations, 41 out of 44 results (93.2%) showed statistical significance. Taken together, these results demonstrated there were solid correlation between cellular uptake and LRE%. Thus, we showed that cellular uptake of glucuronides is the rate-limiting step in HER. In addition, this correlation (Figure 4) could be mathematically described by an Emax model (Emax86 ± 17%) with an EC50 value of 42 ± 33 nM.
 
-## Impact of LRE% on the pharmacokinetic properties of phenolic compounds
+![Figure 4.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig4-v3.jpg)
+
+**Figure 4.:** LRE% of 16 glucuronides calculated based on rat portal vein infusion experiment were plotted against the intracellular concentrations calculated as the sum of the individual measured intracellular concentrations in OATP1B1, 1B3, and 2B1 cells in the OATP uptake studies, weighted by their protein expression levels in human liver using Emax model. The Emax and EC50 parameter values were estimated and summarized in the table below the graph.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Pharmacokinetic parameters were calculated by noncompartmental analysis (Phoenix WinNonlin 8.0; Pharsight, St. Louis, MO). The terminal elimination constant was obtained from the least-squares linear regression slope of concentration versus time, and terminal elimination half-life was calculated as 0.693/k.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** One-way Anova was applied and no significant differences were found.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/58820/elife-58820-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** The aglycones were given at 30 mg/kg by oral gavage. Blood samples were taken at 0, 0.5, 1, 2, 4, 6, 8, and 24 hr after compound administration.
+
+### Impact of LRE% on the pharmacokinetic properties of phenolic compounds
 
 The pharmacokinetic profiles of Won-7-G, Bai-7-G, Ace-G, and Eze-4’-G (Figure 2—figure supplement 3A to 3D) were fitted to a two-compartment model. Cmax values ranged from 41 nM (Eze-4’-G) to 572 nM (Ace-G), Tmax values ranged from ~2 hr (Ace-G) to ~8 hr (Eze-4’-G), and the half-lives ranged from 4.2 hr (Ace-G) to 52 hr (Won-7-G) (Figure 2—figure supplement 1). The elimination half-life was plotted against LRE% (Figure 4; Figure 4—figure supplement 1). Compound with a higher LRE% displayed a longer elimination half-life, which is expected since recycling will inevitably lead to a longer exposure.
 
-## Biliary secretion of five phenolic glucuronides in the intestine perfusion versus portal vein infusion model
+### Biliary secretion of five phenolic glucuronides in the intestine perfusion versus portal vein infusion model
 
 The results indicated that the biliary excretion rates of five phenolic glucuronides were similar when five aglycones (Wog, Bai, Api, Eze, Ral) were given using the small intestine aglycone perfusion or when their corresponding glucuronides were given via direct portal vein infusion. Moreover, these rates were significantly higher than those observed with direct hepatic infusion of aglycones (Table 1), except for Ral. In intestinal perfusion study, the hepatic portal vein blood concentrations of glucuronides are also significantly higher (p<0.01) than tail vein blood (Figure 5). These results indicated that small intestine serves as a major metabolism organ for most of the perfused aglycones. Ral behaved differently in this study because Ral-6-G are formed both in liver and small intestine. The formation of Ral-6-G in liver is also fast. Taken together, the biliary excretion for most of phenolic glucuronides generated in small intestine was more efficient than direct portal vein administration of aglycones for four out of five phenolics.
 
@@ -110,7 +255,7 @@ The results indicated that the biliary excretion rates of five phenolic glucuron
 
 **Figure 5.:** five aglycones [Eze; Won; Ral; Api and Bai] were perfused in the rat small intestine (duodenum and jejunum, approximate length = 15 cm) individually at the rate of 24 nmol/hr for 2.5 hr in male Wistar rats (n = 4 per experimental group). Bile and intestinal perfusate samples were collected for every 30 min. Blood samples from tail vein and portal vein were collected at the end of the study and analyzed for the concentration of respective glucuronides. The absorption percentage of each aglycone were calculated and tabulated below the graph in the figure. The biliary secretion of the glucuronides was summarized in Table 1. Statistical significance was calculated using student t-test ('*', '**', and '***' indicates p<0.05, p<0.01, and p<0.001, respectively).
 
-## Effects of OATP inhibition on LRE% of phenolic glucuronides
+### Effects of OATP inhibition on LRE% of phenolic glucuronides
 
 In the presence of OATP transporter inhibitors (rifampicin, telmisartan, E2G and E1S at 1000 μM each with 1 hr pretreatment as well), the LRE% value of Won-7-G decreased from over ~80% to~40% and that of Lut-3’-G from ~7% to ~3% (Figure 6A–D). The results indicated that OATP transporters played the major role in the hepatic recycling of Won-7-G and Lut-3’-G, which is consistent with the results in the cell uptake study. According to the Fisher exact test, we claimed that hepatic uptake is the rate-limiting step in the recycling of these glucuronides. However, since we could not inhibit the LRE% by more than 80%, other uptake transporters could also participate in the recirculation of the glucuronides.
 
@@ -118,7 +263,7 @@ In the presence of OATP transporter inhibitors (rifampicin, telmisartan, E2G and
 
 **Figure 6.:** A combination of four hepatic uptake inhibitors (rifampicin, telmisartan, estradiol-17β-glucuronide and estrone-3-sulfate) at 1 mM concentration were infused in rat portal vein for an hour as pretreatment, followed by co-infusion of inhibitors (at 1 mM) and glucuronide substrate [Won-7-G or Lut-3’-G] (at 10 µM) in the rat portal vein at the rate of 2 ml/hr for 2.5 hr in male Wistar rats (n = 4 per group). The bile amounts of Won-7-G (A), Lut-3’-G (B) and the accumulated bile amounts of Won-7-G (C), Lut-3’-G (D) with or without the uptake inhibitors were determined. Statistical significance was calculated by student t test (‘**” indicates p<0.01).
 
-## Blood stability test of Won-7-G, Api-7-G, and Bai-7-G
+### Blood stability test of Won-7-G, Api-7-G, and Bai-7-G
 
 After 2.5 hr of incubation, the relative stability of Won-7-G, Api-7-G, and Bai-7-G remained over 80% in 2 μM, 10 μM, and 25 μM (Figure 4—figure supplement 2). No significant changes were observed compared to the 0 hr time point. The results indicated that these glucuronide remained stable for the duration of the experiment time.
 
@@ -150,95 +295,103 @@ In conclusion, a new disposition terminology HER has been proposed to describe a
 
 ## Materials and methods
 
-## Materials and reagents
+### Materials and reagents
 
 Apigenin-7-O-glucuronide (Api-7-G) was purchased from HWI Analytik GmbH (Rheinzaberner, Rülzheim, German). Wogonin-7-glucuronide or wogonoside (Won-7-G), quercetin (Que-3-G), scutellarin (Scu-7-G), luteolin-3’-glucuronide (Lue-3’-G), luteolin-7-glucuronide (Lue-7-G), wogonin (Won), luteolin (Lue), icaritin (Ica), icaritin-3-glucuronide (Ica-3-G), and icaritin-7-glucuronide (Ica-7-G) were purchased from Meilunebio (Dalian, China). Estradiol-17β-glucuronide (E2G) and estrone-3-sulfate (E1S) were purchased from Steraloids Company (RI,USA). Raloxifene (Ral), raloxifene-4’-glucuronide (Ral-4’-G), raloxifene-6-glucuronide (Ral-6-G), ezetimibe (Eze), and ezetimibe-4’-phenoxy-glucuronide (Eze-4’-G) were purchased from Toronto Research Chemical (Toronto, Canada). Apigenin (Api), baicalein (Bai) and baicalein-7-glucuronide (Bai-7-G) was purchased from Indofine (NJ, USA). Dimethyl sulfoxide (DMSO) was purchased from Sigma-Aldrich (MO,USA). Acetonitrile (ACN) and methanol (MeOH) were purchased from Omni Solv (CA, US). ORA-Plus suspending vehicle was purchased from Perrigo (MI, USA). Hanks balanced salt solution (HBSS) was purchased from Sigma-Aldrich (MO, USA). All other chemicals were of reagent grade or better, which were purchased from reputable commercial suppliers.
 
-## Animals
+### Animals
 
 Experiments were performed on adult male and female Wistar rats weighing 280–330 g (male) or 220–270 g (female) at the time of the experiment. The rats were fasted for approximately 16 hr before the experiment. All procedures were approved by the Institutional Animal Care and Use Committee at the University of Houston.
 
-## OATP-overexpressing cells
+### OATP-overexpressing cells
 
 OATP1B1 and OATP1B3 over-expressed HEK-293 cells, described in a publication (Musshoff and Daldrup, 1993), were kindly provided by Dr. Yue Wei from University of Oklahoma Health Science Center. OATP2B1 over-expressed HEK-293 cell, first described in a publication (Gjerde et al., 1991), was kindly provided by Dr. Per Artursson’s lab from Uppsala University (Uppsala, Sweden). Cell line authentication was conducted by Core lab in MD Anderson. All cell lines have been compared with the STR profiles in CCLC database and no contamination detected.
 
-## Methods
+### Methods
 
-## Bio-synthesis of flavonoid glucuronides
+#### Bio-synthesis of flavonoid glucuronides
 
 Selected flavonoid glucuronides were bio-synthesized using Hela-UGT1A9-MRP3 cells modified from the Hela-UGT1A9 cells developed in our lab (Dougherty et al., 1990). The concentration of glucuronide was quantified by UPLC using a previously published method (Pérez-Gandía et al., 2010).
 
-## Portal vein infusion
+#### Portal vein infusion
 
-The procedure of portal vein infusion was the same as our publication (Zeng et al., 2016). Briefly, rats were anesthetized by i.p. injection of 50% urethane at the dose of 1.875 g/kg. The portal vein and bile duct was catheterized after the anesthesia. The phenolic compounds or their corresponding glucuronides were prepared in HBSS buffer (pH = 7.4) and infused from portal vein catheterization at the rate of 2 ml/hr. Bile samples were collected from bile duct catheterization and blood samples were collected by snipping the tail. The infusion lasted for 2.5 hr and samples were collected every 0.5 hr. The liver recycling efficiency (LRE %) was calculated to evaluate the recycling efficiency using the following equation:(1)LRE(Liverrecyclingefficiency)%=Steady−statebiliaryglucuronideexcretionratePortalveininfusionrate
+The procedure of portal vein infusion was the same as our publication (Zeng et al., 2016). Briefly, rats were anesthetized by i.p. injection of 50% urethane at the dose of 1.875 g/kg. The portal vein and bile duct was catheterized after the anesthesia. The phenolic compounds or their corresponding glucuronides were prepared in HBSS buffer (pH = 7.4) and infused from portal vein catheterization at the rate of 2 ml/hr. Bile samples were collected from bile duct catheterization and blood samples were collected by snipping the tail. The infusion lasted for 2.5 hr and samples were collected every 0.5 hr. The liver recycling efficiency (LRE %) was calculated to evaluate the recycling efficiency using the following equation:
+
+$$
+LRE(Liverrecyclingefficiency)%=\frac{Steady−statebiliaryglucuronideexcretionrate}{Portalveininfusionrate}
+$$
 
 The steady-state biliary glucuronide excretion rate was calculated by the linear regression analysis of accumulated amount excreted via bile vs. time curve.
 
 This LRE%, derived from portal vein infusion experiments, was used to evaluate the effects of concentrations, inhibitors, structures of glucuronides on the liver recycling. Additional studies were used to determine the effects on LRE%, of aglycones vs glucuronides, protein binding, cassette dosing, and sex (male vs female).
 
-## Effect of infusion concentrations on the LRE% of glucuronide using Won-7-G
+##### Effect of infusion concentrations on the LRE% of glucuronide using Won-7-G
 
 Won-7-G was selected as a model compound. Won-7-G was prepared at 2, 10, 25, 100, and 1000 μM and infused into hepatic portal vein.
 
-## Comparison of LRE% between aglycones and their corresponding glucuronides
+##### Comparison of LRE% between aglycones and their corresponding glucuronides
 
 Won, Lue, Api, Bai, Eze, and Ral and their glucuronides were selected and prepared at 10 μM concentration for the infusion experiments.
 
-## Effect of aglycone concentrations on the LRE% of their corresponding glucuronides
+##### Effect of aglycone concentrations on the LRE% of their corresponding glucuronides
 
 The infusion study was conducted as described previously with minor modifications. After 2.5 hr of 2 μM Won infusion, the infusion solution was switched to 100 μM Won and infused for another 2 hr.
 
-## Effect of structures on the LRE% of glucuronides
+##### Effect of structures on the LRE% of glucuronides
 
 Thirteen glucuronides: Won-7-G, Api-7-G, Bai-7-G, Lut-3’-G, Que-3-G, Scu-7-G, Ica-3’-G, Ica-7-G, Lue-7-G, Eze-4’-G, Ace-G, Ral-4’-G, and Ral-6-G, prepared at 10 μM concentration were used in the infusion experiment to determine the structure activity relation of glucuronides and their recycle ratio.
 
-## Effect of cassette dosing on the LRE% of glucuronides
+##### Effect of cassette dosing on the LRE% of glucuronides
 
 A mixture of four glucuronides (Won-7-G, Api-7-G, Lut-3’-G, and Bai-7-G) were prepared at 10 μM together and infused simultaneously.
 
-## Effect of sex differences on the LRE% of glucuronides
+##### Effect of sex differences on the LRE% of glucuronides
 
 Won-7-G, Bai-7-G, and Lut-3’-G were prepared at 10 μM concentration. Prepared working solutions were further infused with female rats.
 
-## Cellular uptake
+#### Cellular uptake
 
-## Cellular uptake of phenolic glucuronides by OATP over-expressed cell lines
+##### Cellular uptake of phenolic glucuronides by OATP over-expressed cell lines
 
 Three OATP over-expressed cell lines (HEK 293 OATP 1B1/1B3/2B1 over-expressed cell lines) were used in the uptake study because OATPs are the most important hepatic uptake transporters for xenobiotics (Fahrmayr et al., 2010). Briefly, cells were seeded into 24 well plate 3 days before the experiment. Selected phenolic glucuronides were prepared in HBSS buffer (pH = 7.4) at required concentrations as working solution. Before incubation, cell culture medium was removed and cell was washed with 400 μl 37°C HBSS buffer (pH = 7.4) twice. Working solution was incubated with cells at 37°C for 20 min, when the intracellular concentrations reached steady state. After incubation, cells were washed with 400 μl ice-cold HBSS buffer (pH = 7.4) twice and cell pellet was collected in 200 μl of HBSS buffer. The cell pellet was further sonicated for 30 min. 150 μl of suspensions was collected and 150 μl of acetonitrile (contain 0.2 μM rutin as internal standard) was added into the pellet suspension. The suspension was centrifuged at 15,000 rpm for 15 min and supernatant was collected for analysis to measure the intracellular concentration of glucuronides.
 
-## Effect of specific inhibitors on the cell uptake
+##### Effect of specific inhibitors on the cell uptake
 
 Fifty μM OATP inhibitors (rifampicin for OATP 1B1/1B3 and erlotinib or telmisartan for OATP 2B1) were prepared in working solutions. Working solutions without inhibitors were set as control group. Cells were incubated with their corresponding working solutions (containing different inhibitors) for 20 min.
 
-## Effect of substrate concentration on the cell uptake
+##### Effect of substrate concentration on the cell uptake
 
 Selected phenolic glucuronides were prepared at 0.5, 1, 5, 10, 25, and 50 μM as working solutions. Cells were incubated with working solutions for 20 min. The Km and Vmax values were calculated by using the Michaelis-Menten equation.
 
-## Cross inhibition on OATP1B1 cells using glucuronides and their corresponding aglycones
+##### Cross inhibition on OATP1B1 cells using glucuronides and their corresponding aglycones
 
 Several known substrates and non-substrates of OATP1B1 was applied as an inhibitor to inhibit the uptake of three selected substrates (Won-7-G, E2G, and Lut-3’-G). Substrate concentration was 1 μM while inhibitor concentration was 25 μM. Cells incubated with substrate without inhibitor were set as control group (100% uptake). Relative uptake percentage was calculated by comparing intracellular concentrations of all experiment groups with the control group.
 
-## Effects of OATP inhibition on the hepatic recycling of glucuronides
+#### Effects of OATP inhibition on the hepatic recycling of glucuronides
 
 A cocktail consists of 1 mM rifampicin (OATP 1B1/1B3 inhibitor), 1 mM telmisartan (OATP 2B1 inhibitor), 1 mM E2G (OATP 1B1/1B3 substrate), and 1 mM E1S (OATP 2B1 substrate) were prepare in HBSS buffer (pH = 7.4) and used in the experiment. The experiment procedure was the same as we described earlier with minor modifications. To achieve a better inhibition effect, rats were infused with the inhibitor cocktail for 1 hr before the beginning of glucuronides infusion. After 1 hr of treatment, selected phenolic glucuronides were infused with inhibitor cocktail for 2.5 hr.
 
-## Small intestine perfusion
+#### Small intestine perfusion
 
-To investigate the impact of intestinal metabolism on biliary excretion of phase II metabolites, small intestine perfusion study was performed as our previous publication with minor modifications (Jia et al., 2004). Briefly, one segment of small intestine was perfused. The perfusion solution started from the beginning segment duodenum and went through 15 cm length of down-stream intestine after the inlet segment. 2 μM of flavonoid aglycones (Won, Api, Bai) and phenolic drugs (Eze, Ral) were prepared together in HBSS buffer (pH = 7.4) as perfusion solution. The inlet cannulate was insulated and kept warm by a 37°C circulating water bath. The perfusion rate was set at 0.193 ml/min. The perfusion lasted for 2.5 hr. Bile samples and perfusate were collected. At the last time point, blood samples from tail vein and from hepatic portal vein were also collected and analyzed. The absorption (%) was calculated as below:(2)Absorption (\% )=Perfusedamountofaglycone−amountofaglyconeinperfusatePerfusedamountofaglycone
+To investigate the impact of intestinal metabolism on biliary excretion of phase II metabolites, small intestine perfusion study was performed as our previous publication with minor modifications (Jia et al., 2004). Briefly, one segment of small intestine was perfused. The perfusion solution started from the beginning segment duodenum and went through 15 cm length of down-stream intestine after the inlet segment. 2 μM of flavonoid aglycones (Won, Api, Bai) and phenolic drugs (Eze, Ral) were prepared together in HBSS buffer (pH = 7.4) as perfusion solution. The inlet cannulate was insulated and kept warm by a 37°C circulating water bath. The perfusion rate was set at 0.193 ml/min. The perfusion lasted for 2.5 hr. Bile samples and perfusate were collected. At the last time point, blood samples from tail vein and from hepatic portal vein were also collected and analyzed. The absorption (%) was calculated as below:
 
-## Evaluation of LRE% on the pharmacokinetic profiles of selected phenolics
+$$
+Absorption (\% )=\frac{Perfusedamountofaglycone−amountofaglyconeinperfusate}{Perfusedamountofaglycone}
+$$
+
+#### Evaluation of LRE% on the pharmacokinetic profiles of selected phenolics
 
 To investigate whether the HER potentials have an impact on pharmacokinetic profiles of phenolic compounds, a pharmacokinetic experiment was conducted (n = 4). Briefly, Won and Bai were prepared together in oral suspension with ORA-Plus at the concentration of 50 mg/ml. Drugs were given to animals at the dose of 30 mg/kg. Eze/Ace were prepared and dosed the same way as described above for the other two flavonoids. Blood samples were taken at 0, 0.5, 1, 2, 4, 6, 8, and 24 hr after dosing. Samples were analyzed with LC/MS method after sample processing as detailed below.
 
-## LC/MS analysis of blood, bile, liver tissue, cell, and perfusate samples
+#### LC/MS analysis of blood, bile, liver tissue, cell, and perfusate samples
 
 Blood, bile, liver tissue, perfusate, and cell samples were analyzed by LC/MS after sample process. Detailed sample process methods could be found in Supplement: Bioanalysis Method.
 
-## Blood stability test of Won-7-G, Api-7-G, and Bai-7-G
+#### Blood stability test of Won-7-G, Api-7-G, and Bai-7-G
 
 The stability of Won-7-G, Api-7-G, and Bai-7-G in blood matrix were evaluated. The stability test was conducted for 2.5 hr at three concentrations (2, 10, and 25 μM, n = 3).
 
-## Correlation between LRE% and cell uptake
+### Correlation between LRE% and cell uptake
 
 The LRE% obtained from rat infusion experiment were correlated with cell uptake results. Since cell studies were conducted using human OATPs over-expressed cell lines, the analysis was performed with Fisher exact test (Blevins and McDonald, 1985), the details of which is in Supplement: Fisher Exact Test of Correlation Analysis.
 

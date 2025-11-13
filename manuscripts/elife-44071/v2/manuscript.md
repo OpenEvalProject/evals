@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.44071.001 Many AAA+ ATPases form hexamers that unfold protein substrates by translocating them through their central pore. Multiple structures have shown how a helical assembly of subunits binds a single strand of substrate, and indicate that translocation results from the ATP-driven movement of subunits from one end of the helical assembly to the other end. To understand how more complex substrates are bound and translocated, we demonstrated that linear and cyclic versions of peptides bind to the S. cerevisiae AAA+ ATPase Vps4 with similar affinities, and determined cryo-EM structures of cyclic peptide complexes. The peptides bind in a hairpin conformation, with one primary strand equivalent to the single chain peptide ligands, while the second strand returns through the translocation pore without making intimate contacts with Vps4. These observations indicate a general mechanism by which AAA+ ATPases may translocate a variety of substrates that include extended chains, hairpins, and crosslinked polypeptide chains.
+Many AAA+ ATPases form hexamers that unfold protein substrates by translocating them through their central pore. Multiple structures have shown how a helical assembly of subunits binds a single strand of substrate, and indicate that translocation results from the ATP-driven movement of subunits from one end of the helical assembly to the other end. To understand how more complex substrates are bound and translocated, we demonstrated that linear and cyclic versions of peptides bind to the S. cerevisiae AAA+ ATPase Vps4 with similar affinities, and determined cryo-EM structures of cyclic peptide complexes. The peptides bind in a hairpin conformation, with one primary strand equivalent to the single chain peptide ligands, while the second strand returns through the translocation pore without making intimate contacts with Vps4. These observations indicate a general mechanism by which AAA+ ATPases may translocate a variety of substrates that include extended chains, hairpins, and crosslinked polypeptide chains.
 
 ## Introduction
 
@@ -34,31 +34,195 @@ Here, we show that the mechanism proposed for linear, extended polypeptides is a
 
 ## Results and discussion
 
-## Linear and circular peptides bind Vps4 with similar affinity
+### Linear and circular peptides bind Vps4 with similar affinity
 
 The experimental design was guided by our previously reported biochemical studies (Han et al., 2015; Monroe et al., 2014) and cryo-EM structure (Han et al., 2017; Monroe et al., 2017) of Vps4 in complex with an 8-residue peptide (DEIVNKVL; peptide F) that was derived from the yeast ESCRT-III subunit, Vps2 (Han et al., 2015). Although this peptide was originally discovered as a relatively tight-binding sequence, we subsequently found that its binding affinity is comparable to a diverse range of peptide sequences (data not shown). This indicates that its complex with Vps4 reflects a canonical translocating state, as does its structural similarity with multiple other AAA+ ATPase complexes (Han and Hill, 2019). ADP·BeFx was used as the non-hydrolysable ATP analog because our earlier studies indicated that it stabilizes the Vps4 hexamer and supports peptide binding to a greater extent than AMPPNP or ATPγS, presumably because it is a better mimic of ATP at the Vps4 active site (Han et al., 2015).
 
 The following peptides were synthesized using Fmoc solid-phase peptide synthesis with acetylated N-termini and amidated C-termini: F12 (peptide F flanked on both ends by two glycine residues); F30 (peptide F extended by four residues at the N-terminus and 18 residues at the C-terminus; FF30 (F30 but including a second copy of peptide F) (Figure 1, Figure 1—figure supplements 1–9). Most of the additional residues in F30 and FF30 were glycine, alanine, or serine, which are not expected to bind strongly to Vps4 (Han et al., 2017). Lysine was included at position 2 to allow labeling (not used in this study) and at position 29 to promote solubility. An N-terminal cysteine was included in F30 and FF30, and versions of these peptides were also synthesized with a C-terminal hydrazide to facilitate synthesis of the circular cF30 and cFF30 peptides, which are identical to F30 and FF30 except for cyclization through a peptide bond between the N and C terminal residues (Figure 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-v2.jpg)
+
+**Figure 1.:** Sequences of the linear and circular peptides used in this study are shown, together with competition fluorescence polarization binding isotherms and calculated KD and Ki values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Competition binding data for the linear and circular peptides used in this study against Vsp4 and Vps4-Hcp1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Analytical HPLC trace of peptide F using FortisBIO C4 column (5 µM, 300 Å, 4.6 × 150 mm) at 214 nm. Sample was injected with an isocratic flow of 10% Buffer B at 1 mL/min. After 2 min, the solvent gradient was increased from 10% to 90% Buffer B over 15 min. (B) Electrospray mass spectrum of peptide F.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Analytical HPLC trace of peptide F12 at 228 nm. Sample was injected with an isocratic flow of 5% Buffer B (0.1% FA in ACN) at 0.75 mL/min. After 1 min, the solvent gradient was increased from 5% to 90% Buffer B over 7 min. (B) Electrospray mass spectrum of peptide F12.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Analytical HPLC trace of peptide F30. (B) Electrospray mass spectrum of F30.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Analytical HPLC trace of peptide cF30 (pre-cyclization). (B) Electrospray mass spectrum of cF30 (pre-cyclization). (C) Analytical HPLC trace of peptide cF30. (D) Electrospray mass spectrum of cF30.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Analytical HPLC trace of peptide FF30. (B) Electrospray mass spectrum of FF30.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (A) Analytical HPLC trace of peptide cFF30 (pre-cyclization). (B) Electrospray mass spectrum of cFF30 (pre-cyclization). (C) Analytical HPLC trace of peptide cFF30. (D) Electrospray mass spectrum of cFF30.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** Extracted ion chromatograms after trypsin digestion of linear and cyclic peptides. Colors of peptides are matched to colors of ion signals. The brown tryptic peptide of cF30 and cFF30 differ from the corresponding blue tryptic peptides of the linear F30 and F30 by the presence of a glycine at the N-terminus.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** (A) Representative MS2 spectrum for trypsin digested F30. MS2 spectra of FF30 are essentially identical. (B) Representative MS2 spectrum for trypsin digested cF30. MS2 spectra of cFF30 are essentially identical. Successful cyclization is indicated by the 57 m/z shifts of b6 and b7 ions compared to the b5 and b6 ions of the linear peptide MS2 spectrum (panel A).
+
 Competitive fluorescence polarization showed that F12, F30, FF30, cF30, and cFF30 all bound Vps4 with similar affinities, with the cyclized peptide cF30 and cFF30 showing slightly weaker binding (~3 fold) (Figure 1). Essentially identical binding constants were determined for binding to Vps4 and to Vps4-Hcp1 (Figure 1—figure supplement 1), which is the stable hexamer construct used for structural studies. These data indicate that linear and circular versions of the same peptide bind Vps4 with similar affinities, and that structure determination with the Hcp1 fusion will provide a good representation of the association with the isolated Vps4 AAA+ ATPase cassette.
 
-## Structure of Vps4-circular peptide complexes
+### Structure of Vps4-circular peptide complexes
 
 We determined cryo-EM structures of cF30 and cFF30 complexes using the same approach as for the previously reported linear peptide complex (Han et al., 2017; Monroe et al., 2017). Constructs of Vps4-Hcp1 and the VSL domain of the activator protein Vta1 were the same as the earlier studies, as were the concentrations of Vps4-Hcp1, ADP·BeFx and peptide, and the glutaraldehyde crosslinking procedures. The only difference was a 10-fold higher concentration of Vta1VSL, which was increased because the earlier cryo-EM reconstructions showed low Vta1VSL occupancy.
 
 Density maps were reconstructed for the cF30 and cFF30 complexes at 3.8 Å and 4.0 Å resolution, respectively (Figure 2, Figure 2—figure supplements 1–8, Figure 2—videos 1–3, Table 1). No differences are apparent in the refined models, except that the Vta1VSL cofactor protein is better defined in the cFF30 complex structure, probably because Spotiton (Dandey et al., 2018) was used to prepare the cFF30 grids (below). Because other regions of the cF30 and cFF30 reconstructions are essentially identical, we used particles from both datasets to reconstruct a combined map at 3.6 Å. The overall structure superimposes closely with the previously reported linear peptide complex (Han et al., 2017), including the same helical arrangement of five Vps4 subunits (subunits A-E). Although details of nucleotide configuration are not definitively resolved, consistent with the earlier structure, the subunit AB, BC, and CD interfaces appear to bind ADP·BeFx (ATP), while the DE interface density is ambiguous, but could be ADP or an ADP/ADP·BeFx mixture (Figure 2C, Figure 2—video 3). Density at the subunit E active site is consistent with binding to ADP, and the subunit F active site has such weak density that it does not indicate whether or not nucleotide is bound.
 
-## Circular peptides bind the Vps4 pore in a hairpin conformation
+![Figure 2.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-v2.jpg)
+
+**Figure 2.:** (A) Overall structure of the Vps4-cyclic peptide complex. The close up view of the pore region shows the primary strand (dark green) and returning strand (light green) of the cyclic peptide. (B) Representative section of density in the large domain of the Vps4 B subunit. (C) Density around the nucleotides and coordinating residues for the active sites of Vps4 subunits A-E. These binding sites occur at the interface with the following subunit. (D) Density around the circular peptides. Shown as side views separately for the cF30, cFF30, and combined maps.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cryo-EM micrograph, representative 2D classes (before and after Hcp1 subtraction), orientation distribution, and local resolution of Vps4 bound to cF30 and cFF30. (B) Gold-standard FSC plots of Vps4 (Hcp1-subtracted) bound to cF30 (purple), cFF30 (orange), and the combined dataset (blue). Dotted lines represent unmasked FSC plots, solid lines represent masked, corrected FSC plots from RELION post-processing. (C) Orientation distribution and local resolution of the combined dataset. (D) FSC plots of the combined (cF30 and cFF30) dataset (as in B), and the refined model versus the 3.6 Å map (blue). (E) Cross-validation of the refined model. Overlay of FSCwork and FSCtest plots.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Focused classification was performed using a spherical mask over subunit F (yellow), leading to three populated conformations (F1, F2, and F3) and junk classes with poor densities. Particles sorting into F1, F2, F3 were processed separately within RELION.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Rigid body fits of the Vps4 protomer (PDBID: 3EIE (Gonciarz et al., 2008) into subunit F (arrowhead) after focused 3D classification. (B) Local resolution heat map generated from ResMap showing a surface view. (C) Same as (B), cut away view. (D) Gold standard, corrected FSC plots of each of the subunit F classes after RELION auto-refinement.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** These models were derived from the cF30/cFF30 focused classification maps, and are shown after overlap on subunits A-E.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** The peptide primary strand sequence was built optimally in the assigned and reversed orientations, and refined equivalently. Visual inspection does not give a strong indication of peptide orientation. Chimera (RRID:SCR_004097) RSCC (Pettersen et al., 2004) and EMRinger (Barad et al., 2015) scores support the assigned orientation by small margins. The assigned orientation agrees with that of a previously reported structure with an extended, linear peptide that was determined at slightly higher resolution (Han et al., 2017).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) Focused classification schematic of Vta1VSL. A mask covering all Vta1VSL binding sites was applied to the cFF30 reconstruction. Particles were sorted into ten classes, one of which showed robust Vta1VSL densities at all six binding sites. Particles in this class were then used for RELION 3D auto-refinement. (B) Gold-standard FSC plot of Vps4-Vta1VSL. (C) Local resolution of Vps4-Vta1VSL.
+
+**Table 1.**
+ Reconstruction, refinement, and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Reconstruction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of particle images</td>
+      <td>237,480</td>
+    </tr>
+    <tr>
+      <td>Resolution (0.143 FSC) (Å)</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−157</td>
+    </tr>
+    <tr>
+      <td>EMDB accession number</td>
+      <td>EMD-0443</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model refinement of Vps4 subunits A-E</td>
+    </tr>
+    <tr>
+      <td>PDB accession number</td>
+      <td>6NDY</td>
+    </tr>
+    <tr>
+      <td>Resolution used for refinement (Å)</td>
+      <td>3.6</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td>12531</td>
+    </tr>
+    <tr>
+      <td>RMSD: Bond length (Å)</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>RMSD: Bond angles (°)</td>
+      <td>0.739</td>
+    </tr>
+    <tr>
+      <td>Ramachandran: Favored (%)</td>
+      <td>94.1</td>
+    </tr>
+    <tr>
+      <td>Ramachandran: Allowed (%)</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <td>Ramachandran: Outlier (%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>Molprobity score/percentile (%)</td>
+      <td>1.64 (100%)</td>
+    </tr>
+    <tr>
+      <td>Clashscore/percentile (%)</td>
+      <td>4.67 (100%)</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>1.04</td>
+    </tr>
+  </tbody>
+</table>
+
+### Circular peptides bind the Vps4 pore in a hairpin conformation
 
 The density and refined models for the cF30 and cFF30 peptides are essentially identical (Figure 2D), with two polypeptide strands passing through the Vps4 pore (Figure 3A, Figure 3—video 1). The pore loop positions and the substrate strand with the strongest density (primary strand) superimpose closely on the earlier peptide F complex structure, except that density for the peptide now extends both N-terminally and C-terminally for two additional residues (Figure 3B, Figure 3—video 2). The density is consistent with the peptide F sequence binding in the same register as the earlier peptide F complex, with odd-numbered residues binding to an array of class I pockets and even-numbered residues binding to an array of class II pockets (Han et al., 2017) (Figure 3C, Figure 3—video 3). We attempted to discern the orientation of this peptide strand by comparing the assigned orientation with a peptide model built and refined optimally in the reverse orientation (Figure 2—figure supplement 4). This analysis showed that the map-model correlation coefficients and the EMRinger scores (Barad et al., 2015) slightly favor the assigned orientation, but are not definitive. This ambiguity is expected for the current 3.6 Å resolution, and the peptide orientation remains an important question for future studies.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig3-v2.jpg)
+
+**Figure 3.:** (A) Model of the entire cyclic peptide, including the residues that lack density (gray), with the Vps4 pore loop 1 and 2 residues. (B) Superposition of the cyclic peptide structure (colors) on the previously determined structure of the linear peptide F (gray). The returning strand of the cyclic peptide is omitted for clarity. (C) Ordered residues of the cyclic peptide are shown as green ribbons. Pore loop one residues K205, W206, and M207 of the five Vps4 subunits that form the helical assembly that binds the substrate peptide are shown as sticks and molecular surfaces. Alternating side chains bind to class I pockets between pairs of W206 residues of adjacent subunits (two examples labeled), and to class II pockets between pairs of M207 side chains from adjacent subunits (one example labeled).
+
 The returning strand of the circular peptides has weaker density, indicating that it is more mobile (Figure 2D). Density for these side chains is not strongly defined, although the sequence of the cFF30 peptide and the presence of two residues on either side of the primary strand F-peptide motif means that at least 5 of the returning strand residues in the pore region must have relatively large side chains. Nevertheless, the density indicates that the returning strand adopts an extended conformation in which eight residues are reasonably modeled as forming a β-ladder interaction with the primary strand. The 10 residues of the circular peptides that lack experimental density can be reasonably modeled in hairpin turn conformations (Figure 3A).
 
-## Insights into substrate translocation
+### Insights into substrate translocation
 
 The second strand of the circular peptide is accommodated within the Vps4 pore by the displacement of subunit F from the substrate-binding groove and by the peptide adopting the same helical symmetry as Vps4 subunits A-E. The pseudo two-fold axis along the length of the circular peptide β-ladder aligns with the helical axis of Vps4 subunits A-E (Figure 4, Figure 4—video 1), thereby maximizing the distance of the second strand away from the helical Vps4 subunits (A-E) that bind the primary strand, and maximizing the space available for the second peptide strand. An open question is whether or not it is possible to accommodate a third strand without distorting the Vps4 structure.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig4-v2.jpg)
+
+**Figure 4.:** Side and top views of the cyclic peptide and Vps4 pore loop one residues. The pseudo two-fold axis that relates the path of the two peptide strands to each other (albeit with opposite direction) aligns with the helical axis of Vps4 subunits A-E (gray). This ensures that the second strand is maximally distant from subunits A-E, thereby explaining the lack of contacts between Vps4 and the second strand.
+
 The hinge angle between the large and small ATPase domains (Gonciarz et al., 2008) varies by just 2° (126–128°) for subunits A-E, but is more open and variable (126–141°) for the three subunit F models derived from focused classification of the combined cF30 and cFF30 particles (Figure 5A). The more variable and open subunit F structure, and the lack of close contacts between the large ATPase domain of subunit F and the large ATPase domains of its neighboring subunits A and E (Figure 5B), is consistent with nucleotide exchange occurring during transit from the subunit-E state to the subunit-A state.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overlap of subunits showing variation in the hinge angle between large and small domains, as defined in Gonciarz et al. (2008). The overlaps were performed on the large domains. Left, Subunits A-E. Right, three classification structures of subunit F. (B) The large domain interfaces for AB, BC, CD, and DE subunit pairs are closely associated. These interfaces are much more open for the EF and FA subunit pairs, as seen by the openings in this slightly tilted view. (C) Side view of the Vps4 circular peptide complex with all of the classified subunit F models from all structures: cF30, cFF30, and combined cF30 and cFF30, plus the two previously reported data sets of Vps4 with the linear peptide F (Han et al., 2017; Monroe et al., 2017). Subunit F is colored based on position along its proposed trajectory.
 
 The proposed ~30 Å transition of subunit F from the subunit-E end of the Vps4 helix to the subunit-A end of the helix is consistent with the results of focused classification of the various Vps4 datasets, including those of cF30, cFF30, combined cF30 + cFF30, and the two linear peptide structures (Han et al., 2017; Monroe et al., 2017). These classifications each provide two or three maps that show distinct positions for subunit F, all of which avoid contact with the returning strand of the cyclic peptides and together span the path traversed during cycle of the proposed translocation mechanism (Figure 5C, Figure 5—video 1).
 
@@ -68,7 +232,7 @@ The focused classification may indicate a mechanism to trigger ATP hydrolysis pr
 
 **Figure 6.:** The maps reconstructed by focused classification over subunit F show that the uppermost subunit F position from the cyclic peptide data correlates with displacement of the subunit E small domain (cyan). This domain is connected by an extended 10-residue stretch of residues to the finger arginines that complete the subunit D active site.
 
-## Structure and functional implications of the Vta1 activator protein
+### Structure and functional implications of the Vta1 activator protein
 
 The Vta1VSL domains dimerize in an antiparallel orientation through formation of a four-helix bundle (Xiao et al., 2008). Each dimer binds to adjacent Vps4 subunits, yielding a stoichiometry of 12 Vta1 subunits (six dimers) to 6 Vps4 subunits. The Vta1VSL density is clearer than our earlier reconstructions with the extended Vps2 peptide (Han et al., 2017; Monroe et al., 2017), presumably because of its 10-fold higher concentration in the current study and consequently higher occupancy in the particles imaged. Moreover, the Vta1VSL density is better for the cFF30 structure compared to the cF30 dataset, presumably because the use of Spotiton to prepare cFF30 grids reduced the time to vitrification, which reduced the contacts with the air-water interface that cause complex dissolution and preferred orientation (Dandey et al., 2018; Noble et al., 2018).
 
@@ -76,11 +240,15 @@ In a substantial increase over our previous reconstructions using conventional b
 
 Vta1 promotes Vps4 oligomerization and increases the ATPase activity (Azmi et al., 2006; Lottridge et al., 2006; Scott et al., 2005), and enhances ESCRT-III disassembly in vitro (Azmi et al., 2008). These effects likely result from multiple interconnected mechanisms: Association of Vta1’s N-terminal MIT domains with ESCRT-III polymers will reinforce Vps4 recruitment to ESCRT-III complexes; binding of Vta1VSL dimers in bridging interactions between adjacent Vps4 subunits will promote formation of the active hexamer; and Vta1VSL support the contacts of subunits E and F that may promote ATP hydrolysis at the subunit D active site (above).
 
-## Comparison with other AAA+ ATPase peptide complexes
+### Comparison with other AAA+ ATPase peptide complexes
 
 Several structures of AAA+ ATPases that translocate protein substrates have been reported with coordinates of bound peptides deposited in the Protein Data Bank, including Hsp104 (Gates et al., 2017), YME1 (Puchades et al., 2017), TRIP13 (Alfieri et al., 2018), the proteasome (de la Peña et al., 2018; Dong et al., 2019), and NSF (White et al., 2018). In all cases the bound peptides are single, extended strands that pass through the pore and overlap closely with the structure of peptide F in the Vps4 complex, albeit sometimes in the opposite orientation or with local differences in phi/psi angles. Superposition on the pore loop 1 residues of Vps4 shows that the circular Vps4-bound cF30/cFF30 peptide fits reasonably into the YME1, Hsp104, and NSF structures (Figure 7, Figure 7—video 1). In contrast, superposition on the TRIP13 and proteasome structural models show overlap of pore loop two residues with the returning strand of the cyclic peptides, although in general the pore loop two residues appear to be relatively mobile, which raises the possibility that they may reposition to accommodate a two-stranded substrate. Thus, regardless of whether or not Vps4 binds its substrates in a hairpin conformation in vivo, it seems possible that this mechanism will also be accessible to other AAA+ ATPases.
 
-## Implications for mechanism and function
+![Figure 7.](https://cdn.elifesciences.org/articles/44071/elife-44071-fig7-v2.jpg)
+
+**Figure 7.:** (A) Vps4 color, YME1 (Puchades et al., 2017) gray. Overlap is on the Cα atoms of the peptide and pore loop 1 residues of the five helical subunits. (B) Same as (A) but without Vps4 and showing the zoomed in region of panels (C), (D), and (E). (C) Vps4 cyclic peptide after overlap on YME1. (D) Same as (C) for Hsp104 ring 1 (Gates et al., 2017). (E) Same as (C) for Hsp104 ring 2. (F) Same as (C) for NSF (White et al., 2018).
+
+### Implications for mechanism and function
 
 Given the model that substrate translocation results from the pore loops acting on just one of the strands, it will be interesting to determine the extent to which the two chains of dual-stranded substrates slip with respect to each other, and the extent to which they pass through the pore at the same rate. Our structures also raise interesting questions about directionality. Although it is not yet definitively resolved, the Vps4 structures are most consistent with binding of the primary strand N-terminal residues at the A-end of the Vps4 helix and C-terminal residues at the E-end. This orientation is consistent with the biological role of Vps4 in translocating toward the ESCRT-III N-terminal domain, but other AAA+ ATPases apparently translocate their protein substrates in the opposite direction (N-to-C) (Alfieri et al., 2018; Puchades et al., 2017) or in either direction (Augustyniak and Kay, 2018). Indeed, the same mechanism of translocation could be applied to substrates bound with their primary strand in either orientation because side chains make a major contribution to binding, and forward and reversed β-strands can superimpose their Cα atoms and side chains. Regardless, our structures suggest that substrates might bind the AAA+ pore in a hairpin conformation that is translocated in both the N-to-C and C-to-N directions at the same time.
 
@@ -88,25 +256,154 @@ Contexts in which translocation of two polypeptide chains through a AAA+ ATPase
 
 ## Materials and methods
 
-## Materials used for peptide synthesis
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Vps4-HCP1</td>
+      <td>PMID: 28379137</td>
+      <td>Addgene (RRID:SCR_002037): 87737</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Vta1VSL</td>
+      <td>PMID: 28379137</td>
+      <td>Addgene (RRID:SCR_002037): 87738</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, Inc, La Jolla, C</td>
+      <td>RRID:SCR_002798</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID: 28250466</td>
+      <td>RRID:SCR_016499</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>PMID: 23000701</td>
+      <td>RRID:SCR_016274</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID: 15264254</td>
+      <td>RRID:SCR_004097</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID: 20383002</td>
+      <td>RRID:SCR_014222</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID: 20124702</td>
+      <td>RRID:SCR_014224</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials used for peptide synthesis
 
 2-chlorotrityl resin and 1-[Bis(dimethylamino)methylene]−1 H-1,2,3-triazolo[4,5-b]pyridinium-3-oxidhexafluorophosphate (HATU) were purchased from ChemPep. TentaGel R RAM resin was purchased from Rapp Polymere. Boc-Cys(Trt)-OH, Fmoc-L-Cys(Trt)-OH, Fmoc-L-Lys(Boc)-OH, Fmoc-L-Asp(tBu)-OH, Fmoc-L-Glu(tBu)-OH, Fmoc-L-Ser(tBu)-OH, Fmoc-L-Asn(Trt)-OH, Fmoc-Gly-OH, Fmoc-L-Ala-OH, Fmoc-L-Val-OH, Fmoc-L-Leu-OH, and Fmoc-Gly-Ser(psiMe,Mepro)-OH were purchased from Gyros Protein Technologies. Fmoc-Lys(Ac)-OH was purchased from Anaspec. Fmoc-Lys(Dde)-OH was purchased from AAPPTec. Synthesis grade trifluoracetic acid (TFA), ACS grade dimethylformamide (DMF), peptide synthesis grade n-methylmorpholine (NMM), synthesis grade n-methylpyrrolidinone (NMP), ACS grade anhydrous diethyl ether, HPLC grade acetonitrile (ACN), HPLC grade methanol, LC-MS grade ACN with 0.1% formic acid, and LC-MS grade water with 0.1% formic acid were purchased from Fisher Scientific (all reagent brands from Fisher Scientific were Fisher Chemical). Piperidine, triisopropylsilane (TIS), 1,2-ethanedithiol (EDT), 5 (6)-carboxyfluorescein, N,N′-Diisopropylcarbodiimide, Oxyma Pure, anhydrous hydrazine, acetic anhydride, and 4-mercaptophenylacetic acid (MPAA) were purchased from Sigma Aldrich.
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides were synthesized on a Prelude X instrument (Gyros Protein Technologies) using Fmoc solid-phase peptide synthesis at 30 μmol scale. Deprotection cycles employed three treatments of 2 mL 20% piperidine in DMF for 3 min followed by three washes for 30 s using 2 mL DMF. Coupling cycles consisted of addition of 0.65 mL 200 mM amino acid in NMP, 0.65 mL 195 mM HATU in DMF, and 0.5 mL 600 mM NMM in DMF. Resin and coupling reagents were then mixed using nitrogen for 25 min at room temperature before being washed three times with 2 mL DMF. Tentagel R RAM resin (loading density 0.19 mmol/g) was utilized for the synthesis of C-terminal amides on peptides F, F12, F30, and FF30. To generate C-terminal hydrazides for cF30 and cFF30, 2-chlorotrityl chloride resin was converted to 2-chlorotrityl hydrazine at 0.2 mmol/g density according to published protocol (Zheng et al., 2013). To improve synthesis quality of peptides, the pseudoproline Fmoc-Gly-Ser(ΨMe,Mepro)-OH was introduced. Labeled peptide F was generated through the coupling of 5-(6)-carboxyfluorescein at the N-terminus. After completion of syntheses, peptide resins were thoroughly washed with DCM and dried under vacuum. Cleavage of peptide resins was achieved after 180 min agitation with 4 mL TFA containing 2.5% each of water, TIS, and EDT per 30 μmol peptide resin. The TFA solution was then precipitated into ice-cold diethyl ether and centrifuged at 4696 g (5,000 RPM) for 10 min. Supernatant was decanted while pellets were triturated with ether before being dried under vacuum.
 
-## Peptide cyclization by native chemical ligation
+### Peptide cyclization by native chemical ligation
 
 The approach to peptide cyclization was adapted from previous work (Zheng et al., 2012). 1.5 μmol of HPLC purified linear peptide with C-terminal hydrazide was dissolved in 9 mL deionized (DI) water and stored on ice for 30 min. 1 mL of 200 mM NaNO2 (pH 3.75 in DI water) was then added and allowed to react for 20 min at 4°C to convert the hydrazide into an acyl azide. Conversion of the acyl azide into a 4-mercaptophenylacetic acid (MPAA) thioester was achieved through addition of 10 mL 100 mM MPAA in ligation buffer (6 M GnHCl, 200 mM PO4, pH 7.2). The reaction was then nutated at room temperature. At 15 min, 2 mL (1:1 ligation buffer, DI water, pH 7) 0.5 M TCEP was added to reduce oxidized MPAA and peptide. The reaction was quenched after 1 h with 1 mL 100% AcOH before centrifugation at 4,696 g for 15 min. This solution was filtered with a 0.2 μm syringe filter before HPLC purification.
 
-## Peptide purification and analysis by HPLC and LC-MS
+### Peptide purification and analysis by HPLC and LC-MS
 
 30 μmol of crude peptide was dissolved in 20% ACN 0.1% TFA and sonicated for 5 min before centrifugation at 4696 g for 10 min to remove precipitated material. Supernatant was filtered using a 0.2 μm filter before injection onto HPLC. Mobile phases for purification were 0.1% TFA in water (Buffer A) and 0.1% TFA in 90% ACN (Buffer B). Purification was performed on an Agilent 1260 or Beckman Gold 126 HPLC while analytical traces were collected on an Agilent 1260 HPLC. Conditions for each peptide purification are detailed in Table 2. Analytical traces were collected at 214 nm over a 20 min gradient of 10% to 55% Buffer B at 1 mL/min using a Phenomenex C18 Kinetix column (100 Å, 5 μm, 4.6 × 150 mm) heated to 45°C, except where noted within figure supplement legends (Figure 1—figure supplements 2A, 3A and 4A, 5A/C, 6A, and 7A/C).
 
+**Table 2.**
+ HPLC purification conditions for the peptides used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Peptide</th>
+      <th>HPLC column</th>
+      <th>Flow rate</th>
+      <th>Gradient</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F</td>
+      <td>Phenomenex C4 Luna (100 Å, 10 μm, 10 × 250 mm)</td>
+      <td>5 mL/min</td>
+      <td>20 to 80% Buffer B</td>
+    </tr>
+    <tr>
+      <td>F12</td>
+      <td>Phenomenex C12 Jupiter (90 Å, 10 μm, 21.2 × 250 mm)</td>
+      <td>5 mL/min</td>
+      <td>25 to 45% Buffer B</td>
+    </tr>
+    <tr>
+      <td>F30</td>
+      <td>Phenomenex C12 Jupiter (90 Å, 10 μm, 21.2 × 250 mm)</td>
+      <td>10 mL/min</td>
+      <td>20 to 45% Buffer B</td>
+    </tr>
+    <tr>
+      <td>cF30 (pre-cyclization)</td>
+      <td>Phenomenex C12 Jupiter (90 Å, 10 μm, 21.2 × 250 mm)</td>
+      <td>10 mL/min</td>
+      <td>20 to 45% Buffer B</td>
+    </tr>
+    <tr>
+      <td>cF30</td>
+      <td>Phenomenex C4 Jupiter (100 Å, 10 μm, 10 × 250 mm)</td>
+      <td>5 mL/min</td>
+      <td>10 to 35% Buffer B</td>
+    </tr>
+    <tr>
+      <td>FF30</td>
+      <td>Phenomenex C12 Jupiter (90 Å, 10 μm, 21.2 × 250 mm)</td>
+      <td>10 mL/min</td>
+      <td>29 to 37% Buffer B</td>
+    </tr>
+    <tr>
+      <td>cFF30 (pre-cyclization</td>
+      <td>Phenomenex C12 Jupiter (90 Å, 10 μm, 21.2 × 250 mm)</td>
+      <td>10 mL/min</td>
+      <td>20 to 45% Buffer B</td>
+    </tr>
+    <tr>
+      <td>cFF30</td>
+      <td>Phenomenex C4 Jupiter (100 Å, 10 μm, 10 × 250 mm)</td>
+      <td>5 mL/min</td>
+      <td>27 to 38% Buffer B</td>
+    </tr>
+  </tbody>
+</table>
+
 For LC-MS analysis, mobile phases were 0.1% FA in water (Buffer A) and 0.1% FA in ACN (Buffer B). Data were collected on an Agilent 6120 single quadrupole mass spectrometer with an Agilent 1260 front-end. HPLC traces were collected over a 7 min gradient of 5% to 90% Buffer B at 0.75 mL/min using an Agilent Poroshell C18 column (120 Å, 3.6 μm, 4.6 × 50 mm) heated to 50°C. Mass spectra were obtained over a window of 400 to 2,000 m/z in fast scan and positive ion mode (Figure 1—figure supplements 2B, 3B and 4B, 5B/D, 6B and 7B/D). Deconvoluted masses were determined using Agilent Chemstation with averaged scans across the major ion signal.
 
-## Trypsin digestion of peptides and high-resolution LC-MS
+### Trypsin digestion of peptides and high-resolution LC-MS
 
 Linear and cyclic peptides from lyophilized powder were dissolved in alkylating buffer (40 mM 2-chloroacetamide, 10 mM TCEP, 100 mM Tris, pH 8) to a concentration of ~30 μM before rotating at 37°C for 60 min. Before sample loading, Pierce C18 tips were equilibrated with three treatments of 100 µL 0.1% FA in ACN and three treatments of 100 µL 0.1% FA in water. 40 µL of each sample loaded onto Pierce C18 tips through five repeats of aspiration and dispensing. C18 tips were washed with 100 µL 0.1% FA in water before elution of the peptide using 0.1% FA in 70% ACN. The eluent was concentrated to 10 µL by speed-vac before addition of 50 µL trypsin (1:10, Pierce Trypsin Protease MS Grade, Thermo Fisher Scientific) in 50 mM ammonium bicarbonate buffer (ABC, pH 7.5). Trypsin treated samples were incubated at 37°C for 90 min before quenching through addition of FA to a final concentration of 1%. Trypsin was removed from the samples using Vivacon 30 k MWCO filters (Sartorius) and centrifugation at 14,000 x g for 20 min. Samples were then diluted 1:1000 using 0.1% FA in water before transferring to MS vials and storage at −80°C.
 
@@ -114,21 +411,31 @@ For mass spectrometry analysis, 2 µL of sample was injected onto a Thermo Fishe
 
 To identify peptides in an unbiased manner, raw data files were converted to mgf format for analysis in SearchGUI (Barsnes and Vaudel, 2018) using the OMSSA search algorithm. Peptide sequences were added to a modified FASTA file containing ~2000 decoy human proteins. Spectrum match settings used trypsin digestion with one missed cleavage allowed, carbamidomethylation of Cys as a fixed modification (denoted as ‘Am’ in peptide sequences), acetylation of K as a variable modification, precursor m/z tolerance of 10 ppm, and fragment m/z tolerance of 0.2 Da. Post-processing utilized PeptideShaker (Vaudel et al., 2015) to identify peptide fragments present in each sample. The false discovery rate (FDR) for peptide identification was set to 0.01. Identified peptides were exported from PeptideShaker as an MZID file to Skyline (MacLean et al., 2010). Visualization of all peptide fragments (Figure 1—figure supplement 8) and MS2 spectra (Figure 1—figure supplement 9) were produced using Skyline.
 
-## Fluorescence polarization assay for peptide binding
+### Fluorescence polarization assay for peptide binding
 
-Binding of unlabeled peptides to Vps4 and Vps4-Hcp1 hexamer was quantified using competitive binding assays. Briefly, a dilution series of unlabeled peptide was made in fluorescence polarization assay buffer (20 mM HEPES, pH 7.4, 100 mM NaCl, 1 mM ADP·BeFx, 10 mM MgCl2, 10 mM TCEP) with 200 nM Vps4 hexamer and 1 nM fluorescein-labeled peptide F. Reaction equilibrium was reached with 3 h incubation at room temperature. Fluorescence polarization was measured on a Biotek Synergy Neo HTS Multi-Mode Microplate Reader using 485/528 nm excitation/emission wavelengths. IC50 values were calculated using GraphPad Prism 7 (RRID:SCR_002798) by fitting raw polarization data to Equation 1 with the FPmin manually constrained to the polarization value of labeled peptide F alone. Ki values, which correspond to the dissociation constants for the unlabeled peptides, were calculated with Equation 2 (Nikolovska-Coleska et al., 2004) using previously published KD values for labeled peptide F (0.253 ± 0.015 µM with Vps4 and 0.230 ± 0.010 µM with Vps4-Hcp1; Monroe et al., 2017) and IC50 values from Equation 1.(1)FP=FPmin+FPmaxFPmin1+([unlabeled peptide]IC50)(2)Ki=[I]50[L]50KD+[P]0KD+1
+Binding of unlabeled peptides to Vps4 and Vps4-Hcp1 hexamer was quantified using competitive binding assays. Briefly, a dilution series of unlabeled peptide was made in fluorescence polarization assay buffer (20 mM HEPES, pH 7.4, 100 mM NaCl, 1 mM ADP·BeFx, 10 mM MgCl2, 10 mM TCEP) with 200 nM Vps4 hexamer and 1 nM fluorescein-labeled peptide F. Reaction equilibrium was reached with 3 h incubation at room temperature. Fluorescence polarization was measured on a Biotek Synergy Neo HTS Multi-Mode Microplate Reader using 485/528 nm excitation/emission wavelengths. IC50 values were calculated using GraphPad Prism 7 (RRID:SCR_002798) by fitting raw polarization data to Equation 1 with the FPmin manually constrained to the polarization value of labeled peptide F alone. Ki values, which correspond to the dissociation constants for the unlabeled peptides, were calculated with Equation 2 (Nikolovska-Coleska et al., 2004) using previously published KD values for labeled peptide F (0.253 ± 0.015 µM with Vps4 and 0.230 ± 0.010 µM with Vps4-Hcp1; Monroe et al., 2017) and IC50 values from Equation 1.
 
-## Grid preparation and vitrification
+$$
+FP=FP_{min}+\frac{FP_{max}FP_{min}}{1+(\frac{[unlabeled peptide]}{IC_{50}})}
+$$
+
+
+
+$$
+K_{i}=\frac{[I]_{50}}{\frac{[L]_{50}}{K_{D}}+\frac{[P]_{0}}{K_{D}}+1}
+$$
+
+### Grid preparation and vitrification
 
 Complexes were prepared for cryo-EM analysis as described (Monroe et al., 2017) except that Vta1VSL was included at 10-fold higher concentration for crosslinking. cF30 complex was vitrified using a Vitrobot (Thermo Fisher Scientific), as described (Monroe et al., 2017).
 
 cFF30 complex samples were vitrified using the Spotiton robot as described (Dandey et al., 2018; Jain et al., 2012; Razinkov et al., 2016), starting from a Vps4 complex at 18 μM (hexamer). Briefly, the Spotiton device uses piezo dispensing to apply small (50 pL) drops of sample across a ‘self-blotting’ nanowire grid as it flies past en route to plunge into liquid ethane. Nanowire grids for use with Spotiton were manufactured in-house, backed by lacey carbon film supports, and prepared as described (Razinkov et al., 2016; Wei et al., 2018), including plasma cleaning for 10 s (O2 + H2) using a Solarus 950 (Gatan, Inc). The time between sample application to the grid and plunging into liquid ethane (spot-to-plunge time) was ~145 ms. Spotiton was operated at ~85% relative humidity and ambient temperature (~21°C). Under these conditions, evaporation is estimated to be 300 Å/s.
 
-## Single-particle cryoEM data collection
+### Single-particle cryoEM data collection
 
 Single-particle micrographs were collected on a Titan Krios (Thermo Fisher Scientific) equipped with an energy filter and a K2 BioQuantum counting camera (Gatan, Inc); the microscope was operated at 300 kV at a nominal magnification of 130,000x, with a calibrated pixel size of 1.09 Å. Exposure was set to 10 s (50 frames/movie, detector operated at counting mode), for a total dose of 76.68 e–/Å2 with a defocus range of 1.6 to 2.2 µm. Each dataset was collected over one session using Leginon. Frames were aligned and dose weighted using MotionCor2 RRID:SCR_016499 (Zheng et al., 2017).
 
-## Image processing
+### Image processing
 
 cF30 and cFF30 complex datasets were initially processed separately with essentially the same workflow (Figure 2—figure supplements 2 and 3). Movie frames were aligned, dose weighted, and summed using MotionCor2 RRID:SCR_016499 (Zheng et al., 2017). CTF parameters were determined on non-dose-weighted sums using gctf (Zhang, 2016). Micrographs with poor CTF cross correlation scores (<0.04) were excluded from downstream analyses. A total of 2838 (cF30) and 1855 (cFF30) dose-weighted sums were used for all subsequent image processing steps.
 
@@ -140,12 +447,12 @@ As observed in our previous structures of Vps4 bound to linear peptides, subunit
 
 Focused 3D classification of Vta1VSL was performed by applying a single custom mask that covered each of the six possible Vta1 binding sites (Figure 2—figure supplement 8). Particles were classified without re-alignment (i.e., using the --skip_align flag in RELION, K = 10). 24,778 particles from the cFF30 dataset were sorted into a single class that showed Vta1VSL densities at all six Vps4 interfaces. These particles were used for RELION 3D auto-refinement, resulting in a 4.4 Å resolution reconstruction. Vta1VSL models were fitted into the reconstruction using rigid-body fitting as previously described (Monroe et al., 2017).
 
-## Model building, refinement, and validation
+### Model building, refinement, and validation
 
 The model of AAA+ ATPase cassettes for Vps4 subunits A-E and the substrate from our previous structure (PDBID: 6AP1) were fit to the 3.6 Å map as rigid bodies and subjected to real-space refinement using Phenix (RRID:SCR_014224) (Adams et al., 2010) following the same approach as for the earlier structure of Vps4 in complex with a linear substrate (Han et al., 2017). The returning chain was built manually in Coot (RRID:SCR_014222) (Emsley et al., 2010) followed by real-space refinement using Phenix with restraints to β-strand conformation and its starting position. The refined model was assessed using MolProbity (RRID: SCR_014226) (Chen et al., 2010).
 
 To test for overfitting, the refined model (subunits A-E of Vps4 and the main and returning chains of the cyclic substrate) were randomly displaced by 0.2 Å and re-refined against one of the RELION half-maps used to generate the 3.6 Å map. FSC curves were generated for the re-refined model against the half map used for re-refinement (FSCwork) and against the other half map (FSCtest) (Figure 2—figure supplement 1E). The agreement between FSCwork and FSCtest indicates that the model has not been overfit.
 
-## Structure deposition
+### Structure deposition
 
 The refined model comprising the Vps4 ATPase domains of subunits A-E and the cyclic peptide is accessible via the PDB (RRID: SCR_012820; PDB ID: 6NDY) together with the 3.6 Å map from the combined dataset (RRID: SCR_003207, EMDB Accession Number EMD-0443). The complete model, including regions not subjected to atomic refinement such as the 12 Vta1VSL domains and subunit F, is also available via the PDB (PDB ID: 6OO2), together with the map containing Vta1VSL densities at all six Vps4 interfaces (RRID: SCR_003207, EMDB Accession Number EMD-20142). The two maps derived from the cF30 and cFF30 complex datasets individually, and the three maps for subunit F, have been deposited to the EMDB (RRID: SCR_003207, EMDB Accession Numbers EMD-20144, EMD-20147, EMD-20139, EMD-20140, EMD-20141).

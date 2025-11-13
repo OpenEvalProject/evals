@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Institute of Clinical Sciences, Imperial College London London United Kingdom
-2. https://ror.org/05p1n6x86 MRC London Institute of Medical Sciences London United Kingdom
+1. Institute of Clinical Sciences, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
+2. MRC London Institute of Medical Sciences London United Kingdom ([ROR:05p1n6x86](https://ror.org/05p1n6x86))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ The ability to detect phenotypic difference in diverse strains using a standardi
 
 ## Results
 
-## Selection and molecular characterisation of a diverse panel of C. elegans disease models
+### Selection and molecular characterisation of a diverse panel of C. elegans disease models
 
 The problem of large-scale disease modelling can be thought of as a problem of sampling and connecting two related genotype-phenotype (GP) maps (Figure 1A). The first is the human disease map. The genomic space is sampled by mutation and mating in humans and the map is elucidated by sequencing and clinical phenotyping of patients with genetic diseases. The second is the model organism map. Here, the genomic space is sampled using mutagenesis and genome editing and the map is elucidated using laboratory experiments. Given the accelerated characterisation of the human GP map, we sought to accelerate the characterisation of the corresponding C. elegans GP map. We follow a phenology-inspired approach to connecting the two maps. Provided there is a causal connection between a genetic variant and a disease in humans and that the causal gene is conserved in worms, the observed worm phenotype may be a useful disease model even if the connection to the human phenotype is non-obvious (McGary et al., 2010).
 
@@ -48,7 +48,7 @@ In the final panel of 25 worm genes selected, 22 genes have >60% sequence simila
 
 Large CRISPR-Cas9 deletions (mean 4.4 kb) were made in each of the target genes to generate 25 strains containing a >55% deletion (average 76%) of the chosen gene. We direct the reader to the strain-specific gene cards (Supplementary file 2) for specific details on the size and position of genomic deletions for each of the individual mutants as well as a brief summary of the associated disease and worm phenotypes. Although we have focused on genes expected to have direct effects on neurons or muscles, even this small subset of disease-associated genes is predicted to affect diverse cellular processes including neurotransmission, excitability, development, and cellular structure (Supplementary file 3). According to OMIM, the mutated genes are associated with 31 rare genetic disorders in humans including intellectual disability, developmental delay, and disorders affecting the muscular and/or nervous systems, and are associated with >70 clinical presentations of disease according to the Human Disease Ontology database (Schriml et al., 2022; Supplementary file 3).
 
-## Disease-associated mutations result in diverse phenotypes that are captured by multidimensional behavioural fingerprints
+### Disease-associated mutations result in diverse phenotypes that are captured by multidimensional behavioural fingerprints
 
 Given that there are thousands of rare diseases, methods to characterise the corresponding disease models should be as scalable as possible. Scalability is improved if a single standardised assay can be used to detect model phenotypes regardless of the mutation. High-resolution worm tracking and behavioural fingerprinting is a promising candidate for a widely applicable assay because it is both fast and multidimensional: a single minutes-long recording can capture differences in morphology, posture, and behaviour that can classify the effect of mutations and drug treatments (Baek et al., 2002; Barlow et al., 2022; Geng et al., 2004; Javer et al., 2018b; McDermott-Rouse et al., 2021; Perni et al., 2018; Ramot et al., 2008; Restif et al., 2014; Swierczek et al., 2011; Tsibidis and Tavernarakis, 2007; Wang and Wang, 2013; Yemini et al., 2013).
 
@@ -62,7 +62,7 @@ Principal component analysis (PCA) of the same data, but now separated into pres
 
 From the panel of 25 disease model strains, 23 are significantly different from the wild-type in at least one feature (Figure 2E). The strains that are most different from the wild-type show significant differences across a large number of features. These strains are particularly useful for high-throughput drug screens because the phenotypes can be reliably detected with a small number of replicates. Strain-specific summaries (gene cards) of each disease model mutant, its associated phenotype, and individual molecular characteristics are available in Supplementary file 2. Here, we provide a more detailed characterisation of two classes of mutants modelling ciliopathies and channelopathies in humans.
 
-## Ciliopathies
+### Ciliopathies
 
 Heritable mutations that affect cilia function are associated with a group of rare genetic disorders (ciliopathies) that share diverse symptoms including retinal dystrophy, developmental polydactyly, obesity, cognitive impairment, and renal dysfunction (Reiter and Leroux, 2017). The pleiotropic nature of ciliopathies is highlighted by significant interfamilial and intrafamilial phenotypic variability (Shaheen et al., 2016), and the resulting poor gene-phenotype correlation significantly complicates the discovery of effective therapeutics. As a result, current treatment regimens are based on treating individual symptoms.
 
@@ -82,21 +82,37 @@ tub-1(syb1562) mutants are shorter, wider, and hyperactive compared to wild-type
 
 Compartmentalisation of cilia-specific signalling components is regulated by a complex of transmembrane proteins including TMEM231 and mutations in this compartmentalisation complex are associated with neurodevelopmental limb defects and pathologies of the brain and kidneys found in Joubert and Meckel syndrome (Chih et al., 2012). Mouse Tmem231-/- mutations are embryonic lethal and the C. elegans ortholog tmem-231 has been shown to have conserved molecular and cellular function (Roberson et al., 2015). However, unlike the other cilia-related mutants, tmem-231 mutants do not have significant differences in body morphology or posture compared to N2 (Figure 3). We do note that tmem-231(syb1575) is slightly more active during baseline tracking (see strain-specific gene card).
 
-## Channelopathies
+### Channelopathies
 
 The Na + cation leak channel (NALCN) is expressed throughout the central nervous system, and in parts of the endocrine (pancreas, adrenal, thyroid gland), respiratory and cardiac systems (Cochet-Bissuel et al., 2014). NALCN is a voltage-independent, nonselective cation channel that regulates resting potential (Senatore et al., 2013), and plays a role in neuromodulation by neurotransmitters (Cochet-Bissuel et al., 2014). Mutations in NALCN are associated with neuromuscular disorders including severe hypotonia, infantile neuroaxonal dystrophy (INAD), congenital contractures, cognitive delay, autism, epilepsy, bipolar disorder, and cardiac/respiratory problems (Aoyagi et al., 2015; Cochet-Bissuel et al., 2014; Gal et al., 2016). NALCN-knock-out mice die 12 hr after birth (Lu et al., 2007), so the development of appropriate non-mammalian animal models to understand the associated human diseases is essential.
 
 C. elegans encodes two functionally redundant, but differentially expressed, NALCN homologs, NCA-2 and UNC-77, whose proper expression and axonal localisation in cholinergic neurons are regulated by UNC-80 (Zhou et al., 2020). Unlike murine models, nca-2, unc-77, and unc-80 loss-of-function mutants are viable. Similar to Drosophila melanogaster or mouse neonates lacking the cation leak channel (Cochet-Bissuel et al., 2014), loss-of-function mutations in nca-2 and unc-80 result in morphological changes in C. elegans: both mutants are significantly shorter than wild-type N2 (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/92491/elife-92491-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Key behavioural and postural features altered in loss-of-function mutant strains associated with NALCN mutants: nca-2(syb1612), unc-77(syb1688), and unc-80(syb1531), under baseline (pre-stimulus) imaging conditions. Individual points marked on the box plots are well-averaged values (three worms per well) for each feature across the independent days of tracking.Boxes show interquartile range, error bars show minimum and maximum values excluding outliers. p-values are for comparisons to wild-type N2 worms using block permutation t-tests (n=100,000 permutations correcting for multiple comparisons using the Benjamini-Yekutieli method). (E–H) Changes in selected features in response to stimulation with a single 10 s blue light pulse (blue-shaded region). Feature values were calculated using 10 s windows centred around 5 s before, 10- s after, and 20 s after the beginning of each blue light pulse. (E) A representative ‘fainting phenotype’ for unc-80(syb1531) and nca-2(syb1612), characterised by an increase in pausing following the cessation of stimulation with blue light. (I) Heatmap of the entire set of 8289 behavioural features extracted by Tierpsy for the disease model strains associated with NALCN disease and N2. The ‘stim type’ barcode denotes when during image acquisition the feature was extracted: pre-stimulation (pink), blue light stimulation (blue), and post-stimulation (green). Asterisks show the location of selected features present in A-D.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92491/elife-92491-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The number of compound hits (as defined in the main text of this study) identified when performing statistical analysis (as detailed in the methods section) across the hand-selected core behavioural features (3), the entire feature set (8000), and for pre-defined Tierpsy feature sets containing an increasing number of features (Tierpsy-8, Tierpsy-16, Tierpsy-256, and Tierpsy-2k). There is a loss of statistical power when analysing >256 features using a low number of replicates (n<9) and no statistically significant differences can be identified between the different drug treatments and the mutant or wild-type control after correcting for multiple comparisons.
+
 Consistent with their differential expression (Jospin et al., 2007; Yeh et al., 2008), we observed phenotypic differences between nca-2(syb1612) and unc-77(syb1688) deletion mutants (Figure 4). Gain-of-function mutations in unc-77 have previously been reported to cause deeper body bends (Topalidou et al., 2017) whereas unc-77(syb1688) deletion mutants have decreased curvature (Figure 4B). In contrast, nca-2(syb1612) has no significant change in curvature, but is slower than the wild-type strain (Figure 4B–C). We find that unc-80(syb1531) mutants, which affect the localisation of NALCN channel subunits, have the most severe phenotype exhibiting a decrease in both curvature and speed (Figure 4B-C).
 
 Mutations in both NALCN channel subunits in C. elegans cause a ‘fainter’ phenotype when stimulated mechanically or immersed in liquid (Pierce-Shimomura et al., 2008). Similarly, we found that a ten-second blue light pulse resulted in increased post-exposure pausing and a decreased forward escape response in nca-2(syb1612) and unc-80(syb1531) single mutants (Figure 4E–H). unc-77(syb1688) mutants did not ‘faint’ after blue light exposure, but consistent with findings that the NALCN channel some regulates reversal behaviour (Zhou et al., 2020) both unc-77(syb1688) and unc-80(syb1531) fail to initiate a backward escape response. Pausing and ‘fainting’ after blue light exposure represent a novel screenable phenotype for NALCN-channelopathies.
 
-## Drug repurposing screen in unc-80 mutants
+### Drug repurposing screen in unc-80 mutants
 
 Because unc-80 mutants have a clear behavioural phenotype without a strong developmental phenotype, we reasoned that they were a useful test case for a drug repurposing screen using an acute 4 hr treatment which might rescue behavioural ‘symptoms’ in fully developed animals. When screening compound libraries, it is not practical to perform a large number of replicates which would be necessary to detect subtle phenotypes and overcome the reduced statistical power that comes from correcting for multiple comparisons in a large feature set (Figure 4—figure supplement 1). We, therefore, defined a reduced set of core features to capture the unc-80 behavioural phenotype consisting of curvature, speed, and fraction of paused worms all during blue light stimulation (Figure 4B–D).
 
 For the repurposing screen, we used a library of 743 FDA-approved drugs. We prepared tracking plates where each well contained a drug at a final concentration of 100 μM with 1% DMSO. Three adult worms were added to each well, incubated for 4 hr, and then tracked. The screen was repeated across three independent tracking days with three independent wells per day (nine total well replicates). Hits were defined as compounds that significantly improved all three of the core unc-80 features, meaning that treated worms were significantly different from unc-80 DMSO controls and that the direction of the effect was towards wild-type controls. These hit compounds shift unc-80 towards N2 in a three-dimensional phenotype space (Figure 5A). To test the utility of reducing the feature set in a screen compared to testing a larger feature set, we repeated this with larger feature sets. Testing larger feature sets reduced our power to detect differences. No hits were detected using a predefined set of 256 features (Javer et al., 2018b; Figure 4—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92491/elife-92491-fig5-v1.jpg)
+
+**Figure 5.:** (A) Phenotypes of unc-80(syb1531) mutant (red star) and N2 (blue star) worms treated with 1% DMSO, and unc-80(syb1531) mutants treated with a library of 743 FDA-approved drugs at a concentration of 100 μM for 4 hr (circles). Each point represents an average of three well replicates, across three independent days of tracking (n=9 total). Blue points are the top 30 compounds that significantly improved all three of the core behavioural features, pushing the unc-80 mutant strain towards the control in phenospace. (B) Confirmation screen of the top 30 compounds identified in the initial library screen. Again unc-80(syb1531) and N2 DMSO treated controls are represented by red and blue stars, respectively, and each circular point represents unc-80(syb1531) treated with 100 μM compound for 4 hr. The 13 compounds coloured in the yellow lead to the worsening of >1000 behavioural features (see below). Liranaftate and atorvastatin both lead to a rescue of the core mutant phenotype with a low number of side effects. (C) Total number of behavioural ‘side effects’ following treatment of unc-80(syb1531) with the 30 compounds in the confirmation screen. Side effects are defined as features that are not significant between unc-80 mutants and wild-type N2 worms treated with 1% DMSO but where there is a significant difference between unc-80 mutants treated with a drug compared to N2. Red dashed line separates drug treatments that lead to a worsening of >1000 behavioural features that correspond to the points coloured in yellow in the 3D scatterplot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92491/elife-92491-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Total number of behavioural ‘side effects’ within a reduced set of features extracted by Tierpsy, Tierpsy-256, following treatment of unc-80(syb1531) with the 30 compounds in the confirmation screen. Side effects are defined as features that are not significant between unc-80 mutants and wild-type N2 worms treated with 1% DMSO but where there is a significant difference between unc-80 mutants treated with a drug compared to N2. The plot is coloured as described in Figure 5.
 
 We then performed a confirmation screen on 30 of the hit compounds from the initial screen with a larger number of replicates (24 wells per day over three independent days). 13 of the 30 hits were reproduced in the sense of showing significant differences from unc-80 DMSO controls in the direction of wild-type, however, several showed a reduced effect size and were clustered around the unc-80 DMSO controls (Figure 5B). Having a larger number of replicates, we also tested for ‘side effects’ in treated worms which we define as features where there was no significant difference between unc-80 mutants and wild-type N2 animals but where there is a significant difference between unc-80 mutants treated with a drug compared to wild-type N2 animals. About half of the confirmed hit compounds lead to more than 1000 side effects (Figure 5C) and are coloured yellow in the core unc-80 phenotype space (Figure 5B). The same trend is observed when using 256 predefined features (Javer et al., 2018b; Figure 5—figure supplement 1).
 
@@ -116,38 +132,38 @@ With a current discovery rate of >100 new genetic diseases each year, the number
 
 ## Materials and methods
 
-## Mutant generation
+### Mutant generation
 
 CRISPR guide RNAs were designed to target large deletions (>1000 bp) that start close to the start codon and excise several exons from the gene in order to give high confidence of loss of function. For exceptionally large genes (e.g. dys-1 or mpz-1) the entire protein-coding region was excised. Mutants were designed and made by SunyBiotech in an N2 background.
 
-## Worm preparation
+### Worm preparation
 
 All strains were cultured on Nematode Growth Medium at 20 °C and fed with E. coli (OP50) following standard procedure (Stiernagle, 2006). Synchronised populations of young adult worms for imaging were cultured by bleaching unsynchronised gravid adults, and allowing L1 diapause progeny to develop for 2.5 d at 20 °C (detailed protocol: https://dx.doi.org/10.17504/protocols.io.2bzgap6). Several strains were developmentally delayed and were allowed to grow for longer before imaging. cat-4(syb1591), gpb-2(syb1577), kcc-2(syb2673), and unc-25(syb1651) were allowed to develop for 3.5 and dys-1(syb1688), Figure 1 (syb1562), and pink-1(syb1546) were allowed to develop for 5.5 d prior to imaging. On the day of imaging, young adults were washed in M9 (detailed protocol: https://dx.doi.org/10.17504/protocols.io.bfqbjmsn), transferred to the imaging plates (three worms per well) using a COPAS 500 Flow Pilot (detailed protocol: https://dx.doi.org/10.17504/protocols.io.bfc9jiz6), and returned to a 20 °C incubator for 3.5 hr. Plates were then transferred onto the multi-camera tracker for another 30 min to habituate prior to imaging (detailed protocol: https://dx.doi.org/10.17504/protocols.io.bsicncaw).
 
 For drug repurposing experiments, the MRCT FDA-approved compound library (Catalog No.L1300) was supplied pre-dissolved in DMSO by LifeArc (Stevenage, UK). The day prior to tracking, imaging plates were dosed with the compound library to achieve a final well concentration of 100 μM prior to seeding with bacteria (see below for details). Plates were left to dry (~30 min), before being stored in the dark at room temperature overnight. Following the methods described above, age-synchronised young adult unc-80(syb1531) worms were dispensed into the imaging plate wells and incubated at 20 °C for 4 hr before tracking. The behaviour of mutant worms dosed with the drugs was then compared to wild-type N2 and unc-80(syb1531) worms (also age-synchronised young adults) dispensed into the wells of the same tracking plates dosed with an identical volume (1% w/v) of DMSO only (detailed protocol: https://dx.doi.org/10.17504/protocols.io.5jyl8p5yrg2w/v1).
 
-## Plate preparation
+### Plate preparation
 
 Low peptone (0.013%) nematode growth medium (detailed protocol: https://dx.doi.org/10.17504/protocols.io.2rcgd2w) was prepared as follows: 20 g agar (Difco), 0.13 g Bactopeptone, and 3 g NaCl were dissolved in 975 mL of milliQ water. After autoclaving, 1 mL of 10 mg/mL cholesterol was added along with 1 mL CaCl2 (1 M), 1 mL MgSO4 (1 M), and 25 mL KPO4 buffer (1 M, pH 6.0). Molten agar was cooled to 50–60°C and 200 μL was dispensed into each well of 96-square well plates (Whatman UNIPLATE: WHAT-77011651) using an Integra VIAFILL (detailed protocol: https://dx.doi.org/10.17504/protocols.io.bmxbk7in). Poured plates were stored agar-side up at 4 °C until required.
 
 One day prior to imaging, plates were placed without lids in a drying cabinet to lose 3–5% of weight by volume. Wells were then seeded with 5 μL OP50 (OD600 1.0) using an Integra VIAFILL dispenser, and plates were stored with lids (WHAT-77041001) on at room temperature overnight.
 
-## Image acquisition
+### Image acquisition
 
 All videos were acquired and processed following methods previously described (Barlow et al., 2022). In brief, videos were acquired at 25 frames per second in a room with a nominal temperature of 20 °C using a shutter time of 25 ms and a resolution of 12.4 µm/px. Three videos were taken sequentially: a 5 min pre-stimulus video, a 6 min blue light recording with three 10 s blue light pulses starting at 60, 160, and 260 s, and a 5 min post-stimulus recording. The script for controlling recording timings and photostimulation was made using LoopBio’s API for their Motif software(https://github.com/loopbio/python-motifapi; nzjrs, 2024).
 
-## Image processing and feature extraction
+### Image processing and feature extraction
 
 Videos were segmented and tracked using Tierpsy Tracker (Javer et al., 2018a). After the segmentation of worm skeletons, our previously described convolutional neural network classifier was used to exclude non-worm objects from being classified during feature extraction (Barlow et al., 2022). Skeletons that did not meet the following criteria were removed from the analysis: 700–1300 µM length, 20–200 µM width. As an additional quality control measure, we used Tierpsy Tracker’s viewer to mark wells with visible contamination, agar damage, compound precipitation, or excess liquid as ‘bad,’ and exclude these wells from downstream analysis.
 
 Following tracking, we extracted a previously-defined set of 3076 behavioural features for each well in each of the three videos (pre-stimulus, blue light, and post-stimulus) (Javer et al., 2018b). Feature values are averaged over tracks to produce a single feature vector for each well.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistically significant differences in the pre-stimulus, post-stimulus and blue-light behavioural feature sets extracted from each disease model strain compared to our N2 reference were calculated using block permutation t-tests (https://github.com/Tierpsy/tierpsy-tools-python/blob/master/tierpsytools/analysis/statistical_tests.py; Tierpsy, 2021). Python (version 3.8.5) was used to perform the analysis, using n=10,000 permutations that were randomly shuffled within, but not between, the independent days of image acquisition for each strain to control for day-to-day variation in the experiments. The p-values were then corrected for multiple comparisons using the Benjamini-Yekutieli procedure to control the false discovery rate at 5% (Benjamini and Yekutieli, 2001).
 
 Heatmaps, cluster maps, and principal component analysis of the extracted feature sets for each disease model strain compared to our N2 reference were calculated using in-built Seaborn (version 0.11.2) packages (Waskom, 2021). All scripts used for statistical analysis and the generation of figures are available at: https://github.com/Tom-OBrien/Systematic-creation-and-phenotyping-of-Mendelian-disease-models-in-C.elegans (copy archived at O'Brien, 2024).
 
-## Materials availability
+### Materials availability
 
 Worm strains will be made available through the C. elegans Genetics Centre and are available upon request from the corresponding author.

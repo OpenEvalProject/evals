@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/02pc6pc55 Research Institute for Interdisciplinary Science and Graduate School of Environmental, Life, Natural Science and Technology, Okayama University Okayama Japan
-2. https://ror.org/02kpeqv85 Graduate School of Agriculture, Kyoto University Kyoto Japan
-3. https://ror.org/01w6wtk13 Faculty of Agriculture, Shizuoka University Shizuoka Japan
+1. Research Institute for Interdisciplinary Science and Graduate School of Environmental, Life, Natural Science and Technology, Okayama University Okayama Japan ([ROR:02pc6pc55](https://ror.org/02pc6pc55))
+2. Graduate School of Agriculture, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))
+3. Faculty of Agriculture, Shizuoka University Shizuoka Japan ([ROR:01w6wtk13](https://ror.org/01w6wtk13))
 
 † Corresponding author
 
 ## Abstract
 
-Photosynthetic organisms exhibit remarkable diversity in their light-harvesting complexes (LHCs). LHCs are associated with photosystem I (PSI), forming a PSI-LHCI supercomplex. The number of LHCI subunits, along with their protein sequences and pigment compositions, has been found to differ greatly among the PSI-LHCI structures. However, the mechanisms by which LHCIs recognize their specific binding sites within the PSI core remain unclear. In this study, we determined the cryo-electron microscopy structure of a PSI supercomplex incorporating fucoxanthin chlorophyll a / c -binding proteins (FCPs), designated as PSI-FCPI, isolated from the diatom Thalassiosira pseudonana CCMP1335. Structural analysis of PSI-FCPI revealed five FCPI subunits associated with a PSI monomer; these subunits were identified as RedCAP, Lhcr3, Lhcq10, Lhcf10, and Lhcq8. Through structural and sequence analyses, we identified specific protein–protein interactions at the interfaces between FCPI and PSI subunits, as well as among FCPI subunits themselves. Comparative structural analyses of PSI-FCPI supercomplexes, combined with phylogenetic analysis of FCPs from T. pseudonana and the diatom Chaetoceros gracilis , underscore the evolutionary conservation of protein motifs crucial for the selective binding of individual FCPI subunits. These findings provide significant insights into the molecular mechanisms underlying the assembly and selective binding of FCPIs in diatoms.
+Photosynthetic organisms exhibit remarkable diversity in their light-harvesting complexes (LHCs). LHCs are associated with photosystem I (PSI), forming a PSI-LHCI supercomplex. The number of LHCI subunits, along with their protein sequences and pigment compositions, has been found to differ greatly among the PSI-LHCI structures. However, the mechanisms by which LHCIs recognize their specific binding sites within the PSI core remain unclear. In this study, we determined the cryo-electron microscopy structure of a PSI supercomplex incorporating fucoxanthin chlorophyll a/c-binding proteins (FCPs), designated as PSI-FCPI, isolated from the diatom Thalassiosira pseudonana CCMP1335. Structural analysis of PSI-FCPI revealed five FCPI subunits associated with a PSI monomer; these subunits were identified as RedCAP, Lhcr3, Lhcq10, Lhcf10, and Lhcq8. Through structural and sequence analyses, we identified specific protein–protein interactions at the interfaces between FCPI and PSI subunits, as well as among FCPI subunits themselves. Comparative structural analyses of PSI-FCPI supercomplexes, combined with phylogenetic analysis of FCPs from T. pseudonana and the diatom Chaetoceros gracilis, underscore the evolutionary conservation of protein motifs crucial for the selective binding of individual FCPI subunits. These findings provide significant insights into the molecular mechanisms underlying the assembly and selective binding of FCPIs in diatoms.
 
 ## Introduction
 
@@ -37,13 +37,467 @@ In this study, we solved the structure of the PSI-FCPI supercomplex from T. pseu
 
 ## Results and discussion
 
-## Overall structure of the T. pseudonana PSI-FCPI supercomplex
+### Overall structure of the T. pseudonana PSI-FCPI supercomplex
 
 The PSI-FCPI supercomplexes were purified from the diatom T. pseudonana CCMP1335 and analyzed by biochemical and spectroscopic techniques (Figure 1—figure supplement 1). Notably, the protein bands of PSI-FCPI closely resembled those reported in a previous study (Ikeda et al., 2013). Cryo-EM images of the PSI-FCPI supercomplex were obtained using a JEOL CRYO ARM 300 electron microscope operated at 300 kV. The final cryo-EM map was determined at a resolution of 2.30 Å with a C1 symmetry (Figure 1—figure supplements 2 and 3, and Table 1), based on the ‘gold standard’ Fourier shell correlation (FSC) = 0.143 criterion (Figure 1—figure supplement 3A).
 
+**Table 1.**
+ Cryo-electron microscopy (cryo-EM) data collection and structural analysis statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Complex</th>
+      <th>PSI-FCPI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID</td>
+      <td>8XLS</td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>EMD-38457</td>
+    </tr>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>60,000</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e−/Å)</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>−1.8 to −1.2</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>0.752</td>
+    </tr>
+    <tr>
+      <td>Symmetry imposed</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>2,733,572</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>75,667</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>2.30</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.143</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used</td>
+      <td>De novo model building</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td>2.25</td>
+    </tr>
+    <tr>
+      <td>FSC threshold</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>−36.0</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>37,640</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td>3129</td>
+    </tr>
+    <tr>
+      <td>Ligand molecules</td>
+      <td>372</td>
+    </tr>
+    <tr>
+      <td>Water molecules</td>
+      <td>922</td>
+    </tr>
+    <tr>
+      <td>B factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>59.2</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>54.7</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>2.46</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td>1.98</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>11.8</td>
+    </tr>
+    <tr>
+      <td>Poor rotamers (%)</td>
+      <td>3.04</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td>5.70</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>97.90</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td>2.07</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.03</td>
+    </tr>
+  </tbody>
+</table>
+
 The atomic model of PSI-FCPI was built based on the cryo-EM map obtained (see Methods; Figure 1—figure supplement 3 and Tables 1–3). The structure reveals a monomeric PSI core associated with five FCPI subunits (Figure 1A, B). The five FCPI subunits were named FCPI-1–5 (Figure 1A), following the nomenclature of LHCI subunits in the PSI-LHCI structure of Cyanidium caldarium RK-1 (NIES-2137) (Kato et al., 2024). Specifically, the positions of FCPI-1 and FCPI-2 in the T. pseudonana PSI-FCPI structure (Figure 1A) correspond to those of LHCI-1 and LHCI-2 in the C. caldarium PSI-LHCI structure. The PSI core comprises 94 Chls a, 18 β-carotenes (BCRs), 1 zeaxanthin (ZXT), 3 [4Fe-4S] clusters, 2 phylloquinones, and 6 lipid molecules, whereas the 5 FCPI subunits include 45 Chls a, 7 Chls c, 2 BCRs, 15 fucoxanthins (Fxs), 7 diadinoxanthins (Ddxs), and 3 lipid molecules (Table 3).
 
-## Structure of the T. pseudonana PSI core
+![Figure 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-v1.jpg)
+
+**Figure 1.:** Structures are viewed from the stromal side (left panels) and from the direction perpendicular to the membrane normal (right panels). Only protein structures are depicted, with cofactors omitted for clarity. The FCPI (A) and PSI core (B) subunits are labeled and colored distinctly. The five FCPI subunits are labeled as FCPI-1–5 (red), with their corresponding gene products indicated in parentheses (black) in panel (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Trehalose density gradient centrifugation. The red arrow indicates the PSI-FCPI fraction. (B) Sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE) analysis of PSI-FCPI. PsaA/B proteins were tentatively identified by comparing their apparent molecular weights with markers. (C) Absorption spectrum of PSI-FCPI measured at room temperature. Three measurements were averaged, and the resulting spectrum was normalized by the intensity of the Qy peak. (D) Fluorescence emission spectrum of PSI-FCPI measured at 77 K upon excitation at 430 nm. Three measurements were averaged, and the resulting spectrum was normalized by the maximum-peak intensity. (E) High-performance liquid chromatography (HPLC) analysis of pigments extracted from PSI-FCPI, monitored at 440 nm. Chl c2, chlorophyll c2; Chl c1, chlorophyll c1; Fx, fucoxanthin; Ddx, diadinoxanthin; Zx, zeaxanthin; Chl a, chlorophyll a; β-Car, β-carotene. Data in panels (A), (B), and (E) are representative of three independent experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A representative cryo-EM micrograph of PSI-FCPI from a total of 8,950 micrographs. (B) Representative 2D classes of PSI-FCPI. The box size is 300.8 Å. (C) Schematic flowchart illustrating the classification scheme and data processing for PSI-FCPI. Red boxes highlight selected particles from each 3D classification. The overall PSI-FCPI structure was reconstructed at a resolution of 2.30 Å from 75,667 particles. See the Methods section for further details.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) FSC curves of PSI-FCPI for independently refined half maps (blue) and map-minus-model (red). (B) Angular distribution of the particles used for the reconstruction of PSI-FCPI. Each cylinder represents one view, and the height of the cylinder is proportional to the number of particles for that view. (C) Local resolution maps of PSI-FCPI.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The cryo-electron microscopy (cryo-EM) density for the Unknown subunit and its corresponding model are shown as meshes and sticks, respectively. (B) Superposition of protein structures between Unknown of T. pseudonana (red) and Psa28 of C. gracilis (gray) (PDB: 6L4U). (C) The cryo-EM density for Psa29 and its corresponding model are shown as meshes and sticks, respectively. Comparison of Chls (D) and Cars (E) between T. pseudonana (red) and C. gracilis (cyan) PSI-FCPI structures. The T. pseudonana PSI-FCPI structure is superimposed on the C. gracilis PSI-FCPI structure (PDB: 6L4U), viewed from the stromal side. Chls and Cars are shown as sticks. Only rings of the Chl molecules are depicted. Characteristic pigments are labeled with red and cyan in the T. pseudonana and C. gracilis PSI-FCPI structures, respectively.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Multiple sequence alignment of FCPI proteins in T. pseudonana using PROMALS3D (http://prodata.swmed.edu/promals3d/promals3d.php) and ESPript (https://espript.ibcp.fr/ESPript/cgi-bin/ESPript.cgi). Unique residues are indicated by arrows in different colors, which were used to identify the various FCPI subunits. Characteristic maps and amino acid residues of FCPI-1 (B), FCPI-2 (C), FCPI-3 (D), FCPI-4 (E), and FCPI-5 (F), respectively. The densities and models are shown as meshes and sticks, respectively. The characteristic amino acids are labeled with arrows in the same color as in panel (A).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A–E) Structures of the five FCPI subunits from T. pseudonana, with proteins depicted as transparent cartoons and Chls and Cars shown as sticks in different colors.Only rings of the Chl molecules are depicted. Green, Chl a; cyan, Chl c; yellow, BCR; orange, Fx; purple, Ddx. (F) The cryo-electron microscopy (cryo-EM) densities for two BCRs in FCPI-1 and their corresponding models are shown as meshes and sticks, respectively.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** The structure of the T. pseudonana PSI-FCPI is viewed from the stromal side. Chls and Cars are shown as sticks. Only rings of the Chl molecules are depicted. Black arrows indicate excitation-energy-transfer pathways based on close physical interactions among labeled Chls; for example, a844/A and c304/3 mean Chl a844 of PsaA and Chl c304 of FCPI-3, respectively. A, PsaA; B, PsaB; I, PsaI; L, PsaL; 1, FCPI-1; 2, FCPI-2; 3, FCPI-3. Green, Chls a in PSI; orange, BCRs in PSI; yellow, ZXT; blue, Chls a in FCPIs; cyan, Chls c; gold, BCRs in FCPI-1; red, Fxs; magenta, Ddxs.
+
+**Table 2.**
+ Averaged Q-scores in each subunit.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Subunit</th>
+      <th colspan="2">Averaged Q-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Postprocessed map</td>
+      <td>Denoised map</td>
+    </tr>
+    <tr>
+      <td>PsaA</td>
+      <td>0.84</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>PsaB</td>
+      <td>0.84</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>PsaC</td>
+      <td>0.87</td>
+      <td>0.85</td>
+    </tr>
+    <tr>
+      <td>PsaD</td>
+      <td>0.83</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>PsaE</td>
+      <td>0.80</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>PsaF</td>
+      <td>0.81</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>PsaI</td>
+      <td>0.83</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>PsaJ</td>
+      <td>0.81</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>PsaL</td>
+      <td>0.83</td>
+      <td>0.83</td>
+    </tr>
+    <tr>
+      <td>PsaM</td>
+      <td>0.83</td>
+      <td>0.82</td>
+    </tr>
+    <tr>
+      <td>Psa29</td>
+      <td>0.65</td>
+      <td>0.70</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>0.45</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>FCPI-1</td>
+      <td>0.76</td>
+      <td>0.78</td>
+    </tr>
+    <tr>
+      <td>FCPI-2</td>
+      <td>0.67</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>FCPI-3</td>
+      <td>0.74</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>FCPI-4</td>
+      <td>0.77</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>FCPI-5</td>
+      <td>0.74</td>
+      <td>0.76</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Cofactors assigned in each subunit of the PSI-FCPI structure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Chlorophyll</th>
+      <th>Carotenoid</th>
+      <th>Lipid</th>
+      <th>Other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PsaA</td>
+      <td>43 Chl a1 Chl a′</td>
+      <td>5 BCR</td>
+      <td>2 LHG</td>
+      <td>1 [4Fe-4S] cluster1 phylloquinone</td>
+    </tr>
+    <tr>
+      <td>PsaB</td>
+      <td>41 Chl a</td>
+      <td>5 BCR</td>
+      <td>1 LHG1 DGD</td>
+      <td>1 phylloquinone</td>
+    </tr>
+    <tr>
+      <td>PsaC</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>2 [4Fe-4S] cluster</td>
+    </tr>
+    <tr>
+      <td>PsaD</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaE</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaF</td>
+      <td>3 Chl a</td>
+      <td>1 BCR</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaI</td>
+      <td>1 Chl a</td>
+      <td>1 BCR</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaJ</td>
+      <td>1 Chl a</td>
+      <td>1 BCR1 ZXT</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaL</td>
+      <td>3 Chl a</td>
+      <td>3 BCR</td>
+      <td>1 LMG</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PsaM</td>
+      <td>-</td>
+      <td>1 BCR</td>
+      <td>1 LHG</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Psa29</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>1 Chl a</td>
+      <td>1 BCR</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FCPI-1</td>
+      <td>7 Chl a1 Chl c</td>
+      <td>2 BCR2 Fx3 Ddx</td>
+      <td>1 LHG</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FCPI-2</td>
+      <td>10 Chl a1 Chl c</td>
+      <td>3 Fx1 Ddx</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FCPI-3</td>
+      <td>7 Chl a3 Chl c</td>
+      <td>2 Fx2 Ddx</td>
+      <td>1 LHG</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FCPI-4</td>
+      <td>11 Chl a2 Chl c</td>
+      <td>4 Fx</td>
+      <td>1 LHG</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FCPI-5</td>
+      <td>10 Chl a</td>
+      <td>4 Fx1 Ddx</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>146</td>
+      <td>43</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+_BCR, β-carotene; ZXT, zeaxanthin; Fx, fucoxanthin; Ddx, diadinoxanthin; Chl a, chlorophyll a; Chl a′, chlorophyll a epimer; Chl c, chlorophyll c; DGD, digalactosyl diacyl glycerol; LHG, dipalmitoyl phosphatidyl glycerol; LMG, distearoyl monogalactosyl diglyceride._
+
+### Structure of the T. pseudonana PSI core
 
 The PSI core contains 12 subunits, 11 of which are identified as PsaA, PsaB, PsaC, PsaD, PsaE, PsaF, PsaI, PsaJ, PsaL, PsaM, and Psa29 (Figure 1B). The remaining subunit could not be assigned due to insufficient map resolution and was therefore modeled as polyalanines (Figure 1—figure supplement 4A). This unidentified subunit, designated as Unknown, occupies the same site as Psa28 in the C. gracilis PSI-FCPI (Nagao et al., 2020a). The structural comparison reveals that Unknown closely resembles Psa28 in the C. gracilis PSI-FCPI (Figure 1—figure supplement 4B). Psa28, a novel subunit identified in the C. gracilis PSI-FCPI structure (Nagao et al., 2020a), follows the previously established nomenclature rule (Kashino et al., 2002). Historically, genes encoding PSI proteins have been designated as psaA, psaB, and so forth. PsaZ was identified in the PSI cores of Gloeobacter violaceus PCC 7421 (Inoue et al., 2004; Kato et al., 2022). Subsequent discoveries led to the designation of a new subunit as Psa27, which was identified in the PSI cores of Acaryochloris marina MBIC11017 (Tomo et al., 2008; Hamaguchi et al., 2021; Xu et al., 2021). Consequently, we designated this novel subunit as Psa28 (Nagao et al., 2020a). However, Xu et al. referred to this subunit as PsaR in the PSI-FCPI structure of C. gracilis (Xu et al., 2020).
 
@@ -55,70 +509,559 @@ Psa29 is newly identified in the T. pseudonana PSI-FCPI structure using ModelAng
 
 The number and arrangement of Chls and Cars within the PSI core in the T. pseudonana PSI-FCPI structure (Figure 1—figure supplement 4D, E) are largely similar to those in the C. gracilis PSI-FCPI structure (Nagao et al., 2020a). However, Chl a102 of PsaI is found in the T. pseudonana PSI-FCPI structure but not in the C. gracilis PSI-FCPI structure (Nagao et al., 2020a), whereas a844 of PsaA and BCR843 of PsaB are identified in the C. gracilis PSI-FCPI structure (Nagao et al., 2020a) but not in the T. pseudonana PSI-FCPI structure. One of the Car molecules in PsaJ is identified as ZXT103 in the T. pseudonana PSI-FCPI structure, while it is BCR103 in the C. gracilis PSI-FCPI structure (Nagao et al., 2020a).
 
-## Structure of the T. pseudonana FCPIs
+### Structure of the T. pseudonana FCPIs
 
 Kumazawa et al. classified 44 Lhc genes in T. pseudonana, designating them as Lhcf, Lhcq, Lhcr, Lhcx, Lhcz, and CgLhcr9 homologs (Kumazawa et al., 2022). Based on this classification, the five FCPI subunits in the PSI-FCPI structure are identified using five genes: RedCAP, Lhcr3, Lhcq10, Lhcf10, and Lhcq8, corresponding to FCPI-1–5, respectively (Figure 1A). It is important to note that RedCAP is not included among the 44 Lhc genes (Kumazawa et al., 2022) but is classified within the LHC protein superfamily (Engelken et al., 2010; Sturm et al., 2013). For the assignment of each FCPI subunit, we focused on characteristic amino acid residues derived from their cryo-EM map, especially S61/V62/Q63 in FCPI-1; A70/R71/W72 in FCPI-2; Y64/R65/E66 in FCPI-3; M63/R64/Y65 in FCPI-4; and A62/R63/R64 in FCPI-5 (Figure 1—figure supplement 5). The root mean square deviations of the structures between FCPI-4 and the other four FCPIs range from 1.91 to 3.73 Å (Table 4).
 
+**Table 4.**
+ FCPI proteins identified in the PSI-FCPI structure, their corresponding genes, and their root mean square deviation (RMSD) values compared with the FCPI-4 structure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Gene</th>
+      <th>RMSD (Å)/aligned Cα atoms</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FCPI-1</td>
+      <td>RedCAP</td>
+      <td>3.73/95</td>
+    </tr>
+    <tr>
+      <td>FCPI-2</td>
+      <td>Lhcr3</td>
+      <td>2.01/139</td>
+    </tr>
+    <tr>
+      <td>FCPI-3</td>
+      <td>Lhcq10</td>
+      <td>2.02/139</td>
+    </tr>
+    <tr>
+      <td>FCPI-4</td>
+      <td>Lhcf10</td>
+      <td>0.00/167</td>
+    </tr>
+    <tr>
+      <td>FCPI-5</td>
+      <td>Lhcq8</td>
+      <td>1.91/128</td>
+    </tr>
+  </tbody>
+</table>
+
 Each FCPI subunit binds several Chl and Car molecules: 7 Chls a/1 Chl c/2 Fxs/3 Ddxs/2 BCRs in FCPI-1; 10 Chls a/1 Chl c/3 Fxs/1 Ddx in FCPI-2; 7 Chls a/3 Chls c/2 Fxs/2 Ddxs in FCPI-3; 11 Chls a/2 Chls c/4 Fxs in FCPI-4; and 10 Chls a/4 Fxs/1 Ddx in FCPI-5 (Figure 1—figure supplement 6A–E and Table 3). The axial ligands of the central Mg atoms of Chls within each FCPI are primarily provided by the main and side chains of amino acid residues (Table 5). Potential excitation-energy-transfer pathways can be proposed based on the close physical interactions among Chls between FCPI-3 and PsaA, between FCPI-3 and PsaL, between FCPI-1 and PsaI, and between FCPI-2 and PsaB (Figure 1—figure supplement 7).
 
-## Structural characteristics of RedCAP and its evolutionary implications
+**Table 5.**
+ Chls and their ligands in each of the FCPI subunits.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Chlorophyll/ligand</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FCPI-1</td>
+      <td>a301/E65, a302/N68, c304/H128, a305/H71, a306/E183, a308/N186, a311/w982*, a317/W215</td>
+    </tr>
+    <tr>
+      <td>FCPI-2</td>
+      <td>a301/E74, a302/H77, a303/Q91, a304/Q121, a305/E130, a306/E168, c307/-†, a308/H171, a309/Q185, a318/S35, a319/H184</td>
+    </tr>
+    <tr>
+      <td>FCPI-3</td>
+      <td>a301/E68, a302/N71, a303/w977*, c304/Q115, a305/E124, a306/E162, c307/w976*, a308/N165, a309/w978*, c310/D188</td>
+    </tr>
+    <tr>
+      <td>FCPI-4</td>
+      <td>a301/E67, c302/H70, a303/-†, a305/E122, a306/E162, a307/LHG330, c308/N165, a309/H179, a311/H100, a312/P91, a313/w980*, a314/Y196, a315/P142</td>
+    </tr>
+    <tr>
+      <td>FCPI-5</td>
+      <td>a301/E66, a302/N69, a303/w994*, a304/Q113, a305/E122, a306/E163, a307/E43, a308/N166, a309/S186, a316/E43</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Water molecules.†The ligands of Chls may be water or lipid molecules which cannot be identified due to weak densities._
+
+### Structural characteristics of RedCAP and its evolutionary implications
 
 Among the FCPI subunits, only FCPI-1 contains two BCRs in addition to Fxs and Ddxs (Figure 1—figure supplement 6A, F). This is the first report of BCR binding to FCPIs in diatoms. FCPI-1 is identified as RedCAP, a member of the LHC protein superfamily but distinct from the LHC protein family (Engelken et al., 2010; Sturm et al., 2013); however, the functional and physiological roles of RedCAP remain unknown. FCPI-1 is positioned near PsaB, PsaI, and PsaL through protein–protein interactions with these subunits at both the stromal and lumenal sides (Figure 3A). At the stromal side, I138 and S139 of FCPI-1 interact with K121, G122, and F125 of PsaL (Figure 3B), whereas at the lumenal side, multiple interactions occur between I109 of FCPI-1 and F5 of PsaI, between T105/L106/T108 of FCPI-1 and W92/P94/F96 of PsaB, and between E102/W103 of FCPI-1 and S71/I73 of PsaL (Figure 3C). The protein–protein interactions at the lumenal side (Figure 3C) appear to be caused by a loop structure of FCPI-1 from Q96 to T116 (pink in Figure 3D), which is unique to FCPI-1 but absent in the other four FCPI subunits (pink in Figure 3E). This loop structure is inserted into a cavity formed by PsaB, PsaI, and PsaL (Figure 3C, D). These findings indicate that the Q96–T116 loop of FCPI-1 specifically recognizes and binds to the cavity provided by the PSI subunits.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig3-v1.jpg)
+
+**Figure 3.:** (A) Interactions of FCPI-1 with PsaB, PsaI, and PsaL viewed from the stromal (left) and lumenal (right) sides. The areas encircled by black squares are enlarged in panels (B) and (C). Yellow, PsaB; magenta, PsaI; dark red, PsaL; red, FCPI-1. Protein–protein interactions of FCPI-1 with PsaL (B) and with PsaB/PsaI/PsaL (C). Interactions are indicated by dashed lines, and the numbers are distances in Å. Amino acid residues involved in the interactions are labeled; for example, S139/1 indicates Ser139 of FCPI-1. B, PsaB; I, PsaI; L, PsaL; 1, FCPI-1. (D) Characteristic loop structure from Q96 to T116 in FCPI-1, viewed from the lumenal side. Q96 and T116 are labeled with sticks, and the Q96–T116 loop is colored pink. (E) Superpositions of FCPI-1 with FCPI-2, FCPI-3, FCPI-4, and FCPI-5. Only proteins are depicted. Q96 and T116 in the Q96–T116 loop of FCPI-1 are shown with sticks.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sequence alignment of RedCAP of T. pseudonana (TpRedCAP) with that of C. gracilis CgRedCAP using ClustalW (https://www.genome.jp/tools-bin/clustalw) and ESPript. Blue arrows indicate characteristic protein motifs (see text). (B) Structural comparisons of the Q96–T116 loop of TpRedCAP (red) with the corresponding loop of RedCAPs of P. purpureum (PpRedCAP; purple) (PDB: 7Y5E) and C. placoidea (CpRedCAP; green) (PDB: 7Y7B), viewed from the stromal side. (C) Multiple sequence alignment of TpRedCAP with PpRedCAP and CpRedCAP. Blue arrows indicate characteristic protein motifs (see text).
 
 RedCAP of C. gracilis (CgRedCAP) was not identified in the C. gracilis PSI-FCPI structures (Nagao et al., 2020a; Xu et al., 2020). As previously discussed (Kato et al., 2024), we proposed that CgRedCAP may bind to the C. gracilis PSI core at a site similar to LHCI-1 in the red alga C. caldarium PSI-LHCI through sequence analysis. This site corresponds to the FCPI-1 site in the PSI-FCPI of T. pseudonana in this study. A sequence alignment between RedCAP of T. pseudonana (TpRedCAP) and CgRedCAP is shown in Figure 3—figure supplement 1A, exhibiting a 72% sequence similarity. CgRedCAP contains a protein motif, Q106–I113 (QWGTLATI), corresponding to E102–I109 (EWGTLATI) in TpRedCAP (Figure 3C). These findings suggest the potential binding of CgRedCAP to PSI in C. gracilis at a position similar to FCPI-1 in the T. pseudonana PSI-FCPI structure. However, it remains unclear (1) whether CgRedCAP is indeed bound to the C. gracilis PSI-FCPI supercomplex and (2) if a loop structure corresponding to the Q96–T116 loop of TpRedCAP exists in CgRedCAP. Further structural studies of the C. gracilis PSI-FCPI are required to elucidate the molecular assembly mechanism of diatom RedCAPs.
 
 RedCAPs have been found in the structures of PSI-LHCI in the red alga Porphyridium purpureum (You et al., 2023) and a PSI supercomplex with alloxanthin Chl a/c-binding proteins (PSI-ACPI) in the cryptophyte Chroomonas placoidea (Zhao et al., 2023), as summarized in our previous study (Kato et al., 2024). Both P. purpureum RedCAP (PpRedCAP) and C. placoidea RedCAP (CpRedCAP) exhibit loop structures similar to the Q96–T116 loop in TpRedCAP observed in the present study (Figure 3—figure supplement 1B). Multiple sequence alignments of TpRedCAP with PpRedCAP and CpRedCAP are shown in Figure 3—figure supplement 1C, revealing sequence similarities of 39% and 60%, respectively. PpRedCAP contains a protein motif of V105–L112 (VWGPLAQL), while CpRedCAP has a protein motif of Q117–A124 (QWGPLASA). These motifs correspond to E102–I109 (EWGTLATI) in TpRedCAP; however, the sequence conservation between TpRedCAP and PpRedCAP/CpRedCAP is lower than between TpRedCAP and CgRedCAP. Among the four RedCAPs, the amino acids Trp, Gly, Leu, and Ala are conserved in the protein motifs (xWGxLAxx), implying that this conserved loop structure contributes to the binding of RedCAP to PSI across the red-lineage algae.
 
-## Protein–protein interactions of the other FCPI subunits
+### Protein–protein interactions of the other FCPI subunits
 
 FCPI-2 (Lhcr3) is positioned near PsaB and PsaM, engaging in protein–protein interactions with these subunits at distances of 3.0–4.3 Å at both the stromal and lumenal sides (Figure 4). The amino acid residues I63/T65/D66/Y69/W134/Y138/D140 of FCPI-2 are associated with W153/L154/K159/F160/W166 of PsaB at the stromal side (Figure 4B), while F116 and F120 of FCPI-2 interact with F5/I9/M12 of PsaM at the lumenal side (Figure 4C). The amino acid sequences corresponding to I63–Y69, F116–F120, and W134–D140 in Lhcr3 are not conserved in the Lhcr subfamily, comprising Lhcr1, Lhcr4, Lhcr7, Lhcr11, Lhcr12, Lhcr14, Lhcr17, Lhcr18, Lhcr19, and Lhcr20, as reported by Kumazawa et al., 2022 (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig4-v1.jpg)
+
+**Figure 4.:** (A) Interactions of FCPI-2 with PsaB and PsaM viewed from the stromal (left) and lumenal (right) sides. The areas encircled by black squares are enlarged in panels (B) and (C). PSI subunits are colored gray, and FCPI subunits are colored yellow. Protein–protein interactions are shown in different colors: green, FCPI-2; cyan, PsaB; pink, PsaM. Protein–protein interactions of FCPI-2 with PsaB (B) and PsaM (C). Interactions are indicated by dashed lines, and the numbers represent distances in Å. Amino acid residues involved in the interactions are labeled; for example, Y138/2 indicates Tyr138 of FCPI-2. B, PsaB; M, PsaM; 2, FCPI-2.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Multiple sequence alignment of Lhcr3 of T. pseudonana (TpLhcr3) with the Lhcr subfamily (upper half of panels (A) - (C)). Amino acid residues I63–Y69 (A), F116–F120 (B), and W134–D140 (C) in Lhcr3, along with their corresponding residues in other Lhcrs, are highlighted with black boxes, and the consensus is displayed as sequence logos (lower half of each panel). Amino acid sequences were aligned using MAFFT E-INS-i v7.520 (https://mafft.cbrc.jp/alignment/software/). Sequence logos were generated by WebLogo v3.7.12 (https://weblogo.threeplusone.com/).
+
 FCPI-3 (Lhcq10) is positioned near PsaL, with protein–protein interactions at distances of 2.3–4.2 Å at the stromal side (Figure 5A, B). The amino acid residues L126/I130/L142/Y146/W147/V148/W155 of FCPI-3 are associated with F4/K6/P20/S25/L26/L30 of PsaL (Figure 5B). Given the homology between TpLhcq10 and CgLhcr9 (Kumazawa et al., 2022), we compared the amino acid sequence of Lhcq10 with the Lhcq and Lhcr subfamilies in T. pseudonana (Figure 5—figure supplement 1A, B). The sequence L126–W155 of Lhcq10 is not conserved in the Lhcq subfamily, comprising Lhcq1, Lhcq2, Lhcq3, Lhcq4, Lhcq5, Lhcq6, Lhcq7, Lhcq8, and Lhcq9 (Figure 5—figure supplement 1A), nor in the Lhcr subfamily, comprising Lhcr1, Lhcr3, Lhcr4, Lhcr7, Lhcr11, Lhcr12, Lhcr14, Lhcr17, Lhcr18, Lhcr19, and Lhcr20, as reported by Kumazawa et al., 2022 (Figure 5—figure supplement 1B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig5-v1.jpg)
+
+**Figure 5.:** (A) Interactions among FCPIs and between FCPIs and PsaL, viewed from the stromal (left) and lumenal (right) sides. The areas encircled by black squares are enlarged in panels (B)-(D). Photosystem I (PSI) subunits are colored gray, and FCPI subunits are colored yellow. Protein–protein interactions are shown in different colors: blue, FCPI-3; magenta, FCPI-4; orange, FCPI-5; purple, PsaL. Protein–protein interactions between FCPI-3 and PsaL (B), between FCPI-4 and FCPI-5 (C), and between FCPI-5 and PsaL (D). Interactions are indicated by dashed lines, and the numbers represent distances in Å. Amino acid residues involved in the interactions are labeled; for example, L126/3 indicates Leu126 of FCPI-3. L, PsaL; 3, FCPI-3; 4, FCPI-4; 5, FCPI-5.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Multiple sequence alignments of Lhcq10 of T. pseudonana (TpLhcq10) with the Lhcq and Lhcr subfamilies (upper half of panels (A) and (B), respectively). Amino acid residues L126–W155 in Lhcq10, along with their corresponding residues in other Lhcqs and Lhcrs, are highlighted with black boxes, and the consensus is displayed as sequence logos (lower half of each panel). Amino acid sequences were aligned using MAFFT E-INS-i v7.520. Sequence logos were generated by WebLogo v3.7.12.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Multiple sequence alignment of Lhcf10 of T. pseudonana (TpLhcf10) with the Lhcf subfamily (upper). Amino acid residues Y196–F199 in Lhcf10, along with their corresponding residues in other Lhcfs, are highlighted with a black box, and the consensus is displayed as sequence logos (lower). Amino acid sequences were aligned using MAFFT E-INS-i v7.520. Sequence logos were generated by WebLogo v3.7.12.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Multiple sequence alignment of Lhcq8 of T. pseudonana (TpLhcq8) with the Lhcq subfamily upper half of panels (A) and (B). Amino acid residues F82–G87 and P107–I115 in Lhcq8, along with their corresponding residues in other Lhcqs, are highlighted with black boxes, and the consensus is displayed as sequence logos (lower half of each panel). Amino acid sequences were aligned using MAFFT E-INS-i v7.520. Sequence logos were generated by WebLogo v3.7.12.
 
 FCPI-4 (Lhcf10) is positioned near FCPI-5 through protein–protein interactions with it at distances of 2.6–3.6 Å at the lumenal side (Figure 5A, C). The amino acid residues Y196/P198/F199 of FCPI-4 interact with F82/F86/G87 of FCPI-5 (Figure 5C). The amino acid sequence Y196–F199 of Lhcf10 is not conserved in the Lhcf subfamily, comprising Lhcf1, Lhcf2, Lhcf3, Lhcf4, Lhcf5, Lhcf6, Lhcf7, Lhcf8, Lhcf9, Lhcf11, and Lhcf12, as reported by Kumazawa et al., 2022 (Figure 5—figure supplement 2).
 
 FCPI-5 (Lhcq8) is positioned near PsaL and FCPI-4 through protein–protein interactions at distances of 2.6–4.1 Å at both the stromal and lumenal sides (Figure 5A, C, D). The amino acid residues P108/Q109/A112/I115 of FCPI-5 interact with F134/I137/S141 of PsaL at the lumenal side (Figure 5D). The interactions between FCPI-5 and FCPI-4 are shown in Figure 5C. The amino acid sequences F82–G87 and P107–I115 of Lhcq8 are not conserved in the Lhcq subfamily, comprising Lhcq1, Lhcq2, Lhcq3, Lhcq4, Lhcq5, Lhcq6, Lhcq7, Lhcq9, and Lhcq10, as reported by Kumazawa et al., 2022 (Figure 5—figure supplement 3A, B).
 
-## Molecular insights into the assembly of FCPIs in diatom PSI-FCPI supercomplexes
+### Molecular insights into the assembly of FCPIs in diatom PSI-FCPI supercomplexes
 
 To evaluate the molecular assembly of FCPI subunits in the T. pseudonana PSI-FCPI structure, we focused on protein–protein interactions based on their close proximities (Figures 3—5) and the amino acid residues in non-conserved regions among 44 FCPs (Figure 4—figure supplement 1, Figure 5—figure supplements 1–3). This approach is based on the premise that selective associations of FCPIs with PSI require specific amino acid residues unique to each FCPI. Protein–protein interactions among FCPI subunits, as well as between FCPI and PSI subunits, occur at both the stromal and lumenal sides (Figures 3—5), and are likely recognized by unique amino acid residues of FCPIs that are not conserved in each LHC subfamily (Figure 4—figure supplement 1, Figure 5—figure supplements 1–3). Thus, the binding and assembly of each FCPI subunit to PSI are likely determined by the amino acid sequences within the loop regions of the 44 FCPs in T. pseudonana.
 
 The diatom C. gracilis exhibits two distinct PSI-FCPI structures: one with 16 FCPI subunits (Nagao et al., 2020a) and the other with 24 FCPI subunits (Xu et al., 2020). These structural variations arise from changes in the antenna sizes of FCPIs within the C. gracilis PSI-FCPI supercomplexes, in response to varying growth conditions, especially CO2 concentrations and temperatures (Nagao et al., 2020b). Notably, the C. gracilis PSI-FCPI structure contains five FCPI subunits located at the same binding sites as FCPI-1–5 in the T. pseudonana PSI-FCPI structure (Figure 6A). A summary of the relationship between the Lhc genes encoding FCPs, the distinct gene RedCAP, and the binding positions of FCPI-1–5 in T. pseudonana and C. gracilis is shown in Figure 6B. The gene nomenclature for the C. gracilis FCPIs follows the conventions established by Kumazawa et al., 2022, as discussed in our recent study (Kato et al., 2024).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig6-v1.jpg)
+
+**Figure 6.:** (A) Superposition of the PSI-FCPI structures between T. pseudonana and C. gracilis (PDB: 6LY5). FCPI subunits from T. pseudonana and C. gracilis are colored red and cyan, respectively. The structures are viewed from the stromal side. The FCPI-1–5 sites are labeled. (B) Correlation of the names of FCPIs in the structures with their corresponding genes between T. pseudonana and C. gracilis. The FCPI genes are derived from Kumazawa et al., 2022 and Kato et al., 2024 for C. gracilis. (C) Phylogenetic analysis of FCPs and RedCAPs from T. pseudonana (Tp) and C. gracilis (Cg). In addition to the RedCAP family, 44 TpFCPs and 46 CgFCPs are grouped into five Lhc subfamilies and CgLhcr9 homologs. Maroon, RedCAP family; magenta, Lhcq subfamily; red, Lhcz subfamily; orange, Lhcr subfamily; brown, CgLhcr9 homologs; green, Lhcf subfamily; blue, Lhcx subfamily. The FCPs and RedCAPs located at the FCPI-1–5 sites are labeled. The tree was inferred using IQ-TREE 2 (Minh et al., 2020) with the Q.pfam + R4 model selected by ModelFinder (Kalyaanamoorthy et al., 2017). The light purple circular symbols on the tree represent bootstrap support (%).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Sequence alignments between TpLhcr3 and Lhcr1 of C. gracilis (CgLhcr1) upper half of panels (A), (C), and (E), between TpPsaB and CgPsaB upper half of panels (B) and (F), and between TpPsaM and CgPsaM (upper half of panel (D)). Blue arrows indicate protein motifs involved in protein–protein interactions between TpLhcr3/CgLhcr1 and PsaB (A, B), between TpLhcr3/CgLhcr1 and PsaM (C, D), and between TpLhcr3/CgLhcr1 and PsaB (E, F), and the consensus is displayed as sequence logos (lower half of each panel). Amino acid sequences were aligned using MAFFT E-INS-i v7.520. Sequence logos were generated by WebLogo v3.7.12.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/99858/elife-99858-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Sequence alignments between TpLhcq10 and CgLhcr9 (upper half of panel (A)), between TpPsaL and CgPsaL upper half of panels (B) and (D), and between TpLhcq8 and CgLhcq12 (upper half of panel (C)). Blue arrows indicate protein motifs involved in protein–protein interactions between TpLhcq10/CgLhcr9 and PsaL (A, B) and between TpLhcq8/CgLhcq12 and PsaL (C, D), and the consensus is displayed as sequence logos (lower half of each panel). Amino acid sequences were aligned using MAFFT E-INS-i v7.520. Sequence logos were generated by WebLogo v3.7.12.
+
 Phylogenetic analysis clearly showed that at the FCPI-1, 2, 3, and 5 sites in the T. pseudonana PSI-FCPI structure, TpRedCAP, TpLhcr3, TpLhcq10, and TpLhcq8 are orthologous to CgRedCAP, CgLhcr1, CgLhcr9, and CgLhcq12, respectively (Figure 6C). The characteristic protein loops of TpRedCAP and CpRedCAP likely participate in interactions with PSI at the FCPI-1 site, as noted above (Figure 3—figure supplement 1). At the FCPI-2 site, comparative analyses revealed that the amino acid residues facilitating interactions between TpLhcr3 and TpPsaB/TpPsaM closely parallel those observed in the CgLhcr1-CgPsaB and CgLhcr1-CgPsaM pairs (Figure 6—figure supplement 1). Similarly, a high degree of similarity characterized the residues involved in the interaction pairs of TpLhcq10-TpPsaL/CgLhcr9-CgPsaL at the FCPI-3 site (Figure 6—figure supplement 2A, B), as well as TpLhcq8-TpPsaL/CgLhcq12-CgPsaL at the FCPI-5 site (Figure 6—figure supplement 2C, D), underscoring the conserved nature of these interactions. However, TpLhcf10 is not homologous to CgLhcf3 (Figure 6C), despite both being located at the FCPI-4 site in their respective PSI-FCPI structures (Figure 6A). These findings suggest that the two diatoms possess both a conserved mechanism of protein–protein interactions across characteristic protein motifs between FCPI and PSI subunits, and a different mechanism of interactions among FCPIs.
 
 It is notable that the C. gracilis PSI-FCPI structure binds remarkably more FCPI subunits than that of T. pseudonana, for example, 16 or 24 subunits in C. gracilis as reported in the previous studies (Nagao et al., 2020a; Xu et al., 2020), versus 5 subunits in T. pseudonana in the present study. The reason for this difference remains unclear. One possibility is that some FCPI subunits are released during detergent solubilization in T. pseudonana, while they are retained in C. gracilis. Alternatively, the number of FCPI subunits may be inherently lower in T. pseudonana, which may reflect adaptations to different living environments. Further studies are needed to resolve this question.
 
-## Extension to molecular assembly of PSI-LHCI supercomplexes
+### Extension to molecular assembly of PSI-LHCI supercomplexes
 
 The mechanisms of protein–protein interactions in diatom PSI-FCPI supercomplexes are likely developed by the specific binding of FCPs selected from 44 TpFCPs and 46 CgFCPs in addition to RedCAPs. Like a lock-and-key mechanism, one FCP cannot be substituted by another in forming the PSI-FCPI supercomplexes in the two diatoms; for example, TpLhcq10 binds specifically at the FCPI-3 site but not at the other sites such as FCPI-2. This selective binding mechanism of FCPIs may dictate the molecular assembly of PSI-FCPI. Importantly, the selective binding of FCPIs was identified for the first time by comparing the structures of PSI-FCPI supercomplexes and the amino acid sequences of FCPIs between the two diatom species. This approach can be extended to the LHC protein superfamily in the green and red lineages, enabling comparisons of protein structures and sequences of PSI-LHCI supercomplexes among closely related species. This, in turn, lays the foundation for elucidating the underlying mechanism of PSI-LHCI supercomplex assembly. Thus, this study will shed light on answering the evolutionary question of how LHCIs recognize their binding sites at PSI in photosynthetic organisms.
 
 ## Methods
 
-## Cell growth and preparation of thylakoid membranes
+### Cell growth and preparation of thylakoid membranes
 
 The marine centric diatom T. pseudonana CCMP1335 was grown in artificial seawater supplemented with sodium metasilicate and KW21 (Nagao et al., 2007) at 20°C under a photosynthetic photon flux density of 30 μmol photons m−2 s−1 provided by white LED, with bubbling of air containing 3% (vol/vol) CO2. The cells were harvested by centrifugation, disrupted by agitation with glass beads (Nagao et al., 2017), and the thylakoid membranes were pelleted by further centrifugation. The resulting thylakoid membranes were suspended in 50 mM Mes-NaOH (pH 6.5) buffer containing 1 M betaine and 1 mM ethylenediaminetetraacetic acid (EDTA).
 
-## Purification of the PSI-FCPI supercomplex
+### Purification of the PSI-FCPI supercomplex
 
 Thylakoid membranes were solubilized with 1% (wt/vol) n-dodecyl-β-D-maltoside (β-DDM) at a Chl concentration of 0.5 mg ml−1 for 20 min on ice in the dark with gentle stirring. After centrifugation at 162,000 × g for 20 min at 4°C, the supernatant was loaded onto a Q-Sepharose anion-exchange column (1.6 cm inner diameter, 25 cm length) equilibrated with 20 mM Mes-NaOH (pH 6.5) buffer containing 0.2 M trehalose, 5 mM CaCl2, 10 mM MgCl2, and 0.03% β-DDM (buffer A). The column was washed with buffer A until the eluate became colorless. Elution was performed at a flow rate of 1.0 ml min−1 using a linear gradient of buffer A and buffer B (buffer A plus 500 mM NaCl) with the following time and gradient: 0–600 min, 0–60% buffer B; 600–800 min, 60–100% buffer B; 800–900 min, 100% buffer B. The PSI-FCPI-enriched fraction was eluted at 194–247 mM NaCl, then collected and subsequently loaded onto a linear gradient containing 10–40% (wt/vol) trehalose in 20 mM Mes-NaOH (pH 6.5) buffer containing 5 mM CaCl2, 10 mM MgCl2, 100 mM NaCl, and 0.03% β-DDM. After centrifugation at 154,000 × g for 18 hr at 4°C (P40ST rotor; Hitachi), a green fraction (Figure 1—figure supplement 1A) was collected and concentrated using a 150-kDa cut-off filter (Apollo; Orbital Biosciences) at 4000 × g. The concentrated samples were stored in liquid nitrogen until use.
 
-## Biochemical and spectroscopic analyses of the PSI-FCPI supercomplex
+### Biochemical and spectroscopic analyses of the PSI-FCPI supercomplex
 
 The polypeptide bands of PSI-FCPI were analyzed by sodium dodecyl sulfate–polyacrylamide gel electrophoresis with 16% (wt/vol) acrylamide and 7.5 M urea, following the method of Ikeuchi and Inoue, 1988 (Figure 1—figure supplement 1B, Figure 1—figure supplement 1—source data 1 and 2). The PSI-FCPI supercomplexes (4 µg of Chl) were solubilized in 3% lithium lauryl sulfate and 75 mM dithiothreitol for 10 min at 60°C, and then loaded onto the gel. A standard molecular weight marker (SP-0110; APRO Science) was used. The absorption spectrum of PSI-FCPI was measured at room temperature using a UV-Vis spectrophotometer (UV-2450; Shimadzu) (Figure 1—figure supplement 1C), and the fluorescence emission spectrum of PSI-FCPI was measured at 77 K upon excitation at 430 nm using a spectrofluorometer (RF-5300PC; Shimadzu) (Figure 1—figure supplement 1D). The pigment composition of PSI-FCPI was analyzed by high-performance liquid chromatography following the method of Nagao et al., 2013, and the elution profile was monitored at 440 nm (Figure 1—figure supplement 1E).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 A 3 μl aliquot of the T. pseudonana PSI-FCPI supercomplex (3.0 mg of Chl ml−1) in 20 mM Mes-NaOH (pH 6.5) buffer containing 0.5 M betaine, 5 mM CaCl2, 10 mM MgCl2, and 0.03% β-DDM was applied to Quantifoil R1.2/1.3 Cu 300 mesh grids in the chamber of FEI Vitrobot Mark IV (Thermo Fisher Scientific). The grid was then blotted with filter paper for 4 s at 4°C under 100% humidity and plunged into liquid ethane cooled by liquid nitrogen. The frozen grid was transferred to a CRYO ARM 300 electron microscope (JEOL) equipped with a cold-field emission gun operated at 300 kV. All image stacks were collected from 5 × 5 holes per stage adjustment to the central hole and image shifts were applied to the surrounding holes while maintaining an axial coma-free condition. The images were recorded using an in-column energy filter with a slit width of 20 eV at a nominal magnification of ×60,000 on a direct electron detector (Gatan K3, AMETEK). The nominal defocus range was −1.8 to −1.2 μm, and the physical pixel size corresponded to 0.752 Å. Each image stack was exposed at a dose rate of 21.46 e− Å−2 s−1 for 2.33 s in CDS mode, with dose-fractionated 50 movie frames. A total of 8,950 image stacks were collected.
 
-## Cryo-EM image processing
+### Cryo-EM image processing
 
 The resultant movie frames were aligned and summed using MotionCor2 (Zheng et al., 2017) to produce dose-weighted images. The contrast transfer function (CTF) estimation was performed using CTFFIND4 (Mindell and Grigorieff, 2003). All subsequent processes were carried out using RELION-4.0 (Kimanius et al., 2021). A total of 2,733,572 particles were automatically picked and subjected to reference-free 2D classification. From these, 1,132,721 particles were selected from well-defined 2D classes and further processed for 3D classification without imposing any symmetry. An initial model for the first 3D classification was generated de novo from the 2D classification. A 240-Å spherical mask was used during the 3D classification and refinement processes. As illustrated in Figure 1—figure supplement 2C, the final PSI-FCPI structure was reconstructed from 75,667 particles. The overall resolution of the cryo-EM map was determined to be 2.30 Å, based on the gold-standard FSC curve with a cut-off value of 0.143 (Figure 1—figure supplement 3A; Grigorieff and Harrison, 2011). Local resolutions were calculated using RELION (Figure 1—figure supplement 3C).
 
-## Model building and refinement
+### Model building and refinement
 
 Two types of the cryo-EM maps were employed for the model building of the PSI-FCPI supercomplex: a postprocessed map and a denoised map generated using Topaz version 0.2.4 (Bepler et al., 2020). The postprocessed map was denoised using a trained model over 100 epochs using two half-maps. Initial models of each subunit in the PSI-FCPI supercomplex were generated by ModelAngelo (Jamali et al., 2024) and subsequently inspected and manually adjusted against the maps with Coot (Emsley et al., 2010). Each model was built based on interpretable features from the density maps at a contour level of 2.5 σ in both the denoised and postprocessed maps. For the assignment of Chls, Chls a and c were distinguished by inspecting the density map corresponding to the phytol chain at the least level not to link the map of Chls with that of noise. All Chls c were assigned as Chl c1 due to the inability to distinguish between Chl c1 and Chl c2 at the present resolution. For the assignment of Cars, Fx, and Ddx were distinguished based on the density surrounding the head groups of Cars with the above threshold. The PSI-FCPI structure was refined using phenix.real_space_refine (Adams et al., 2010) and Servalcat (Yamashita et al., 2021), incorporating geometric restraints for protein-cofactor coordination. The final model was validated with MolProbity (Chen et al., 2010), EMRinger (Barad et al., 2015), and Q-score (Pintilie et al., 2020). The statistics for all data collection and structure refinement are summarized in Tables 1 and 2. All structural figures were prepared using PyMOL (Schrödinger, 2021), UCSF Chimera (Pettersen et al., 2004), and UCSF ChimeraX (Pettersen et al., 2021). Since the numbering of Chls, Cars, and other cofactors in this paper differs from those in the PDB data, the corresponding relationships are provided in Tables 6–8.
 
-## Phylogenetic analysis
+**Table 6.**
+ Correspondence of the numbering of pigments in each PSI core subunit described in the text with those in the PDB file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PsaI</th>
+      <th>PsaJ</th>
+      <th>PsaL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chls in the text</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td>301 (1)*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>203</td>
+      <td></td>
+      <td></td>
+      <td>204 (L)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Car in the text</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td></td>
+      <td>105 (J)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Chain in the adjacent unit._
+
+**Table 7.**
+ Correspondence of the numbering of pigments in each FCPI subunit described in the text with those in the PDB file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>FCPI-1</th>
+      <th>FCPI-2</th>
+      <th>FCPI-3</th>
+      <th>FCPI-4</th>
+      <th>FCPI-5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chls in the text</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+      <td>PDB No.(Chain ID)</td>
+    </tr>
+    <tr>
+      <td>301</td>
+      <td>303 (1)</td>
+      <td>205 (2)</td>
+      <td>202 (3)</td>
+      <td></td>
+      <td>207 (5)</td>
+    </tr>
+    <tr>
+      <td>302</td>
+      <td>304 (1)</td>
+      <td>206 (2)</td>
+      <td>203 (3)</td>
+      <td></td>
+      <td>208 (5)</td>
+    </tr>
+    <tr>
+      <td>303</td>
+      <td></td>
+      <td>207 (2)</td>
+      <td>204 (3)</td>
+      <td></td>
+      <td>209 (5)</td>
+    </tr>
+    <tr>
+      <td>304</td>
+      <td>305 (1)</td>
+      <td>208 (2)</td>
+      <td>205 (3)</td>
+      <td></td>
+      <td>210 (5)</td>
+    </tr>
+    <tr>
+      <td>305</td>
+      <td>306 (1)</td>
+      <td>209 (2)</td>
+      <td>206 (3)</td>
+      <td>304 (4)</td>
+      <td>211 (5)</td>
+    </tr>
+    <tr>
+      <td>306</td>
+      <td>307 (1)</td>
+      <td>210 (2)</td>
+      <td>207 (3)</td>
+      <td>305 (4)</td>
+      <td>212 (5)</td>
+    </tr>
+    <tr>
+      <td>307</td>
+      <td></td>
+      <td>211 (2)</td>
+      <td>208 (3)</td>
+      <td>306 (4)</td>
+      <td>213 (5)</td>
+    </tr>
+    <tr>
+      <td>308</td>
+      <td></td>
+      <td>212 (2)</td>
+      <td>209 (3)</td>
+      <td>307 (4)</td>
+      <td>214 (5)</td>
+    </tr>
+    <tr>
+      <td>309</td>
+      <td></td>
+      <td>213 (2)</td>
+      <td>210 (3)</td>
+      <td>308 (4)</td>
+      <td>215 (5)</td>
+    </tr>
+    <tr>
+      <td>310</td>
+      <td></td>
+      <td></td>
+      <td>211 (3)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>311</td>
+      <td>309 (1)</td>
+      <td></td>
+      <td></td>
+      <td>309 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>312</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>310 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>313</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>311 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>314</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>312 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>315</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>313 (4)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>316</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>216 (5)</td>
+    </tr>
+    <tr>
+      <td>317</td>
+      <td>310 (1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>318</td>
+      <td></td>
+      <td>214 (2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>319</td>
+      <td></td>
+      <td>215 (2)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cars in the text</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>321</td>
+      <td>311 (1)</td>
+      <td>216 (2)</td>
+      <td>212 (3)</td>
+      <td>314 (4)</td>
+      <td>217 (5)</td>
+    </tr>
+    <tr>
+      <td>322</td>
+      <td>312 (1)</td>
+      <td>217 (2)</td>
+      <td>213 (3)</td>
+      <td>315 (4)</td>
+      <td>218 (5)</td>
+    </tr>
+    <tr>
+      <td>323</td>
+      <td></td>
+      <td></td>
+      <td>209 (L)*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>324</td>
+      <td>313 (1)</td>
+      <td>218 (2)</td>
+      <td>214 (3)</td>
+      <td>316 (4)</td>
+      <td>219 (5)</td>
+    </tr>
+    <tr>
+      <td>325</td>
+      <td>314 (1)</td>
+      <td>219 (2)</td>
+      <td></td>
+      <td>228 (3)*</td>
+      <td>220 (5)</td>
+    </tr>
+    <tr>
+      <td>326</td>
+      <td>315 (1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>221 (5)</td>
+    </tr>
+    <tr>
+      <td>327</td>
+      <td>316 (1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>328</td>
+      <td>317 (1)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Chain in the adjacent unit._
+
+**Table 8.**
+ Correspondence of the numbering of other cofactors described in the text with those in the PDB file.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Waters in the text</th>
+      <th>PDB No. (Chain ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>976</td>
+      <td>317 (3)</td>
+    </tr>
+    <tr>
+      <td>977</td>
+      <td>313 (3)</td>
+    </tr>
+    <tr>
+      <td>978</td>
+      <td>316 (3)</td>
+    </tr>
+    <tr>
+      <td>980</td>
+      <td>402 (4)</td>
+    </tr>
+    <tr>
+      <td>982</td>
+      <td>425 (1)</td>
+    </tr>
+    <tr>
+      <td>994</td>
+      <td>308 (5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lipid in the text</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>330</td>
+      <td>317 (4)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Phylogenetic analysis
 
 Amino acid sequences were aligned using MAFFT L-INS-i v7.490 or MAFFT E-INS-i v7.520 (Katoh and Standley, 2013). The alignment was trimmed using ClipKit v1.4.1 with the smart-gap mode. Phylogenetic trees were inferred using IQ-TREE 2 (Minh et al., 2020) with the model selected by ModelFinder (Kalyaanamoorthy et al., 2017). The trees were visualized using iTOL v6 (Letunic and Bork, 2021). Ultrafast bootstrap approximation was performed with 1000 replicates (Hoang et al., 2018).

@@ -29,23 +29,145 @@ Dementia poses substantial challenges for individuals and societies worldwide. (
 
 Figure 1 presents the selection of the three study populations; 1) men (N = 666,333), 2) brothers (N = 70,608), and 3) twins (N = 7,388). The total study population of 666,333 men were followed for an average of 41.4 years from a baseline mean age of 22.1 years (due to delayed entry for some men) to a maximum age of 57–77 years. The mean age at measurement of height was 19.73 years (95% confidence interval (CI):19.73;19.74). Supplementary file 1 provides body height measures and information on dementia diagnoses of the total population of men. In total, 10,599 (1.6%) men were registered with dementia diagnosis during follow-up. The mean height was 176.8 cm (SD: 6.6). The Table furthermore shows that the mean height was greater among men with higher intelligence level, higher level of education, younger birth cohorts, and those living in the Capital region. Similarly, these groups also experiences fewer cases of dementia.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/51168/elife-51168-fig1-v1.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51168/elife-51168-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Foot note: *Anatomic Therapeutical Chemical (ATC) code for dementia (N06D) is also used for patients with Parkinson’s disease, but the treatment is only indicated if the patients have comorbid dementia. **Dementia was identified by international classification of disease (ICD) version 8 codes (290.00–290.99) until the end of 1994 and by ICD10 codes (F00.0-F03.9; G30.0-G30.9) from 1995 and thereafter.
+
 In Model 1, the estimated hazard ratio (HR) was 0.86 (95%CI:0.85–0.87), which attenuated slightly after the additional adjustments for educational level and intelligence test scores in Model 2a and 2b (Table 1). The fully adjusted estimate of the birth cohort-specific z-score of body height (Model 3) showed that for each one unit taller z-score of body height, the HR of dementia were 0.90 (95% CI:0.89;0.90). This was the same estimate as found for the model adjusted for intelligence test scores without educational level (Model 2b). Supplementary file 2 shows that the mean heights range from 174.5 to 179.1 cm and the z-scores range from 6.34 to 6.6 cm for the birth cohorts in the total population without any clear patterns of change over time. The finding of 10% lower HR with one z-score higher body height suggests that men born in 1939 with a body height of 181.5 cm (equal to one z-score taller than the mean) can expect a 10% lower dementia risk compared with men with the mean body height (175.0 cm). The corresponding body height for the latest birth cohort (1959) is 185.6 cm compared with the mean body height of 179.1 cm. Figure 2 shows that the association between z-scores of body height with dementia diagnosis is curve-linear; the HRs showed a slightly stronger increase with lower z-scores of body height below the z-score reference of 0 than above the z-score reference of 0.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51168/elife-51168-fig2-v1.jpg)
+
+**Figure 2.:** A z-score of 0 is the reference value. Stratified by birth cohort and adjusted for conscript board district, educational level and intelligence test scores. Age included as underlying scale of the model. The analysis included the total population of men. Identify cohort-specific values of one z-score in Supplementary file 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51168/elife-51168-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Note: to hide micro data, the value 26 includes all values above for brother and the value 17 includes all values above for twins. In cases where there were more than two brothers with a shared mother, the difference in body height between all brothers were included. For example, for a groups of three brothers, the differences between brother one and two, brother one and three, and brother two and three, respectively, were included.
+
+**Table 1.**
+ Hazard ratios (HRs) and corresponding 95% confidence intervals (95% CIs) of the association between taller body height at entry to adulthood and dementia diagnoses among the total population of men.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Descriptive statistics</th>
+      <th colspan="4">HR (95% CI) for onset of dementia per one z-score* higher</th>
+    </tr>
+    <tr>
+      <th>Mean height (Standard diviation)</th>
+      <th>Dementia cases Number (%)</th>
+      <th>Model 1†</th>
+      <th>Model 2a‡</th>
+      <th>Model 2b§</th>
+      <th>Model 3¶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>176.8 (6.6)</td>
+      <td>10,599 (1.6)</td>
+      <td>0.86 (0.85;0.87)</td>
+      <td>0.88 (0.87;0.89)</td>
+      <td>0.90 (0.89;0.90)</td>
+      <td>0.90 (0.89;0.90)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Identify cohort-specific values of one z-score in Supplementary file 2.†Model 1: Stratified by birthcohort and conscript board district. Age included as underlying scale of the model.‡Model 2a: Model 1 + adjusted for educational level.§Model 2b: Model 1 + adjusted for intelligence test scores.¶Model 3: Model 1 + adjusted for educational level and intelligence test scores._
 
 Analyses of Model 3 with the risk period divided at age less than 60 years and 60 years and older showed that the association between one z-score taller body height and dementia was slightly smaller among men below 60 years (HR:0.87, 95% CI: 0.84;0.90) than men 60 years and older (HR:0.91, 95% CI: 0.90;0.92) (Table 2).
 
+**Table 2.**
+ Fully adjusted* hazard ratios (HRs) and corresponding 95% confidence intervals (95% CIs) of the association between taller body height at entry to adulthood and dementia diagnosis among all men.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dementia cases Number (%)</th>
+      <th>HR (95% CI) for onset of dementia per one z-score* higher</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">&lt;60 years</td>
+    </tr>
+    <tr>
+      <td>4191 (0.6)</td>
+      <td>0.87 (0.84;0.90)</td>
+    </tr>
+    <tr>
+      <td colspan="2">≥60 years</td>
+    </tr>
+    <tr>
+      <td>6408 (1.3)</td>
+      <td>0.91 (0.90;0.92)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Identify cohort-specific values of one z-score in Supplementary file 2.†Model 3: stratified by birth cohort and adjusted for conscript board district, educational level and intelligence test scores. Age included as underlying scale of the model._
+
 Analyses of Model 3 with the follow-up period divided by 1) prior to 1995 and 2) 1995 and thereafter showed that the association between one z-score taller body height and dementia was comparable between the two periods (Supplementary file 3). The numeric mean (SE) body height difference was 5.1 (0.02) cm between brothers and 3.5 (0.06) cm between twins (See Figure 2—figure supplement 1 for distribution of the numeric difference in body height for brothers (A) and twins (B)). The analyses of Model 3 showed that the within-pair analysis of brothers revealed a stronger, but less precise, point estimate than the cohort analysis of brothers (Table 3). For twins, the comparison of the cohort analysis of twins and the within-pair analysis of twins revealed a pattern similar to that found for brothers. Yet, the pattern was less clear and the HRs were imprecisely estimated possible due to a lower number of individuals in these analyses (N = 7,388) (Table 3).
+
+**Table 3.**
+ Fully adjusted* hazard ratios (HRs) and corresponding 95% confidence intervals (95% CIs) of the association between taller body height at entry to adulthood and dementia diagnosis among brothers and twins
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Descriptive statistics</th>
+      <th colspan="2">HR (95% CI) for onset of dementia per one z-score* higher</th>
+    </tr>
+    <tr>
+      <th>Mean height (standard deviation)</th>
+      <th>Dementia cases Number (%)</th>
+      <th>Cohort analyses</th>
+      <th>Within-brother/twin analyses</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Brothers</td>
+    </tr>
+    <tr>
+      <td>177.8 (6.6)</td>
+      <td>597 (0.8)</td>
+      <td>0.90 (0.82;0.98)</td>
+      <td>0.78 (0.64;0.96)</td>
+    </tr>
+    <tr>
+      <td colspan="4">Twins</td>
+    </tr>
+    <tr>
+      <td>175.8 (6.7)</td>
+      <td>107 (1.4)</td>
+      <td>0.91 (0.73;1.16)</td>
+      <td>0.86 (0.44;1.68)</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Identify cohort-specific values of one z-score in Supplementary file 2.†Model 3: Stratified by birth cohort and adjusted for conscript board district, educational level and intelligence test scores. Age included as underlying scale of the model._
 
 ## Discussion
 
 In this nationwide cohort of Danish men born from 1939 through 1959, we detected that taller body height at the entry to adulthood was associated with lower risk of dementia diagnosis later in life. The relationship attenuated, but persisted after adjustments for educational level and intelligence test scores. Within-brother analysis confirmed the findings of a relationship between taller body height and lower risk of dementia diagnosis, and even revealed a stronger, but less precise, point estimate of the association than the cohort analysis of brothers. The findings from the within-twin analyses were in the same direction, but with more uncertainty. These findings support that the relationship between body height and dementia is not explained by shared genetics and exposures to other familial factors shared between brothers.
 
-## Strengths and limitations
+### Strengths and limitations
 
 This study has a number of strengths. It is based on a very large unselected population followed from early adulthood until a maximum age of 57–77 years for dementia diagnoses. This study design is very important as previous findings may have underestimated the relationship due to selection of the healthiest part of the population, who are willing to participate, and have survived into this age. It is also a great advantage that we were able to investigate associations between body height and dementia adjusted for intelligence test scores and educational level. Intelligence together with educational level have been shown to be strong markers of cognitive reserve, which are hypothesized to be highly predictive of the age at which dementia is manifested and diagnosed. (Borenstein et al., 2006) We further included objective measures of body height rather than self-reported height with its implicit reporting errors. In the same line, this study included measures of body height from early adulthood, whereas previous studies have used measures from mid- and late-life. This could imply a bias because declining height since young adulthood (Cline et al., 1989) has been found to be more pronounced in socioeconomic dis-advantaged groups and those with lower later-life cognitive function. (Huang et al., 2013) Further, underdiagnoses of dementia has in some countries been shown to be greater in socioeconomically disadvantaged groups. (Lang et al., 2017) A final strength is that we were able to investigate the impact of familial factors, including various degrees of shared genetics and environmental factors, by conducting within-brother and twin-pair analyses.
 
 We acknowledge the limitations of the study. A potential concern is that even though dementia diagnoses in the Danish National Patient Register is likely to be correct, (Phung et al., 2007; Salem et al., 2013) under-diagnosis is possible. The registers and identifications to define dementia change over time (Figure 1—figure supplement 1) and this difference in coverage could lead to differences in diagnostic validity and completeness at different time points during follow-up. However, we believe this is a minor issue as a previous study of data from the the Danish Conscription Database (DCD), which investigated the relationship between cognitive ability and dementia, only found small differences in risk estimates when using international classification of disease (ICD) version eight and ICD10 codes, respectively, to identify dementia. (Osler et al., 2017) Furthermore, the introduction of the Danish Prescription Registry on January 1st1995 has enabled identification of dementia patients who are not in contact with the secondary healthcare system for their dementia diagnosis, but who receive medication through their general practitioner. This has most likely improved the sensitivity of the dementia diagnoses from 1995. Our sensitivity analyses showed comparable findings of the relationship between body height and dementia before and after the introduction, yet the comparison of these results were limited by including men in different age-groups (<1995: maximum age of 36–56 and ≥1995: maximum age of 57–77). Another issue is that the recorded diagnosis of dementia has been shown to be less valid in younger populations (Phung et al., 2007; Salem et al., 2013) and our model tests indicated that the HRs were slightly less pronounced at higher ages. We therefore conducted analyses where follow-up time was split at age less than 60 years and 60 years and older. The analyses of both age-groups showed associations between taller body height and lower risk of dementia, but the point estimate was slightly stronger in the younger population. This may partly be explained by the less valid symptom profile in these patients and misdiagnoses of psychiatric or neurological conditions for dementia. (Salem et al., 2013) Also, the findings may not be generalizable to men aged above 77 years as the study population only reached a maximum age of 57–77 years during the follow-up period. Furthermore, the role of familial factors were not fully explored. The analyses of brothers were incomplete by 73.5% of the population being from the birth cohorts 1953–59 and by being restricted to brothers with known shared mothers, implying a mixture of twin brothers, full non-twin brothers and maternal half-brothers, but without paternal half-brothers. The specific contribution of genetic factors, independent of environmental factors, cannot be assessed by twin-pair analyses without distinction between mono- and dizygotic twins. Finally, the generalizability of the findings to women is questionable. Previous findings on potential gender differences in the relationship between body height and dementia or poor cognition in old age are inconclusive, (Petot et al., 2007; West et al., 2015) but the incidence and prevalence of dementia are found to be lower in men than in women. (Matthews et al., 2016).
 
-## Findings in light of previous studies
+### Findings in light of previous studies
 
 The findings of this current study provide substantial support to previous evidence of a link between body height and dementia. (Borenstein et al., 2006; Wang et al., 2019; Russ et al., 2014; Petot et al., 2007; Abbott et al., 1998; Gatz et al., 2006; Huang et al., 2008; Beeri et al., 2005) All previous studies had accounted for educational level and other socioeconomic indicators, yet none of these studies had adjusted for intelligence level earlier in life. Intelligence level has been suggested to be a stronger marker of brain and cognitive reserve than educational level. (Borenstein et al., 2006) Intelligence level is furthermore correlated with body height (Christensen et al., 2015; Beauchamp et al., 2011) and by itself associated with dementia. (Osler et al., 2017).
 
@@ -59,17 +181,17 @@ In conclusion, taller body height at the entry to adulthood, supposed to be a ma
 
 The study was based on the DCD, which, in brief, holds information registered at mandatory Danish conscription examinations in the years 1957 to 1984 for men born from 1939 through 1959 (Christensen et al., 2015). All Danish men are requested by law to appear before the conscript board for a physical and mental examination between the ages of 18 and 26 years. We linked the data with the Danish Twin Register, the Danish Civil Registration System, the Danish National Patient Registry, the Danish Psychiatric Central Register, and the Danish National Prescription Register. (Mors et al., 2011; Skytthe et al., 2011; Pedersen, 2011; Kildemoes et al., 2011; Lynge et al., 2011) Figure 1 presents the selection of the three study populations; 1) men (N = 666,333), 2) brothers (N = 70,608), and 3) twins (N = 7,388). Brothers and twins were identified by two different approaches. Brothers were identified from the population through maternal linkage in the Danish Civil Registration System and 73.5% were from the birth-cohorts 1953–1959, where the linkage between mothers and offspring is complete in the register. The coverage vary between birth cohorts because the linkage between parents and offspring was based on shared residency in 1968 where the Danish Civil Registration System was established. After 1968, the linkage was carried out at the time of birth. Please see Supplementary file 4 for number of brother included from each birth cohort (1939–1959). Brothers were defined broadly by including all men with the same identified mother that is full-brothers, half-brothers, adopted brothers, and twins, triplets etc. Thus, the sample of brothers also include twins from these birth cohorts as they are registered with the same mother. However, for the twin population, twin pairs in all the birth cohorts 1939–1959 were identified by linking the DCD to the Danish Twin Register. The project was evaluated and approved by the Danish Data Protection Agency: Jr nr 2014-41-2911. According to Danish law, ethical approval is not required for purely register-based studies.
 
-## Main variables
+### Main variables
 
 Body height at entry to adulthood was included as the main exposure in this study. Objective measures of body height without shoes at the time of conscript board examination were investigated as birth cohort specific z-scores (See Supplementary file 2). The z-scores were investigated as a continuous variable.
 
 Dementia diagnosis was measured by in- and out-patient contacts with ICD8 and ICD10 codes (ICD8: 290.00–290.99 and ICD10: F00.0-F03.9; G30.0-G30.9) in the Danish Psychiatric Central Register, since 1969, and in the Danish National Patient Registry since 1977. (Mors et al., 2011; Lynge et al., 2011) Dementia diagnosis was furthermore identified by redeemed prescriptions of acetylcholinesterase inhibitor registered by Anatomic Therapeutical Chemical (ATC) codes (N06D) in the Danish National Prescription Registry since 1995. (Kildemoes et al., 2011) (See Figure 1—figure supplement 1 for a graphical illustration of the data collection time line for each of these registers). The dementia diagnoses in the Danish hospital registers have been shown to have a positive predictive value of 70% and 83% in two different randomly selected populations of 200 individual with dementia recorded in the register. The values vary between the two studies because of age differences in the study populations, the lowest positive predictive value was detected for the population with the youngest age group. (Phung et al., 2007; Salem et al., 2013).
 
-## Covariates
+### Covariates
 
 Intelligence test scores, educational level, age and district at conscript board examination, and birth cohorts were included as covariates in the analyses. Intelligence test scores were measured by the Børge Priens Prøve (BPP), which has been shown to be highly correlated with the full-scale Wechsler Adult Intelligence Scale score (R = 0.82) (Reinish and Teasdale, 1989) The score ranged from 0 to 78 and was categorized in deciles by 1)≤21, 2) 22–27, 3) 28–31, 4) 32–35, 5) 36–38; 6) 39–42, 7) 43–45, 8) 46–49, 9) 50–53, 10)≥54, and missing. Educational level at the time of examination was categorized by 1) short educational level: primary school, 2) medium educational level: vocational education and training as reference, 3) long educational level: secondary school, medium length education, high school, and academic educations, and 4) missing. Age was included as a continuous variable. Information about the eight conscript board examination districts was included as a categorical covariate with the following categories; 1) Copenhagen greater area incl. northern part of Zealand, 2) the remaining parts of Zealand and adjacent islands, 3) Funen and adjacent islands, 4) Mid and South parts of Jutland, 5) North and West Jutland, 6) Bornholm, 7) Southernmost part of Jutland, and 8) missing. The birth cohorts were included as a continuous variable ranging from 1939 through 1959.
 
-## Statistical analyses
+### Statistical analyses
 
 The association between body height at entry to adulthood and diagnosis of dementia was analyzed in three populations: 1) all men in the birth cohorts 1939–1959, 2) brothers mainly from the cohorts 1953–1959, and 3) twins in the birth cohorts 1939–1959.
 

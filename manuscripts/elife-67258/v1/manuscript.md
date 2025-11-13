@@ -9,15 +9,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01an3r305 Department of Neuroscience,University of Pittsburgh Pittsburgh United States
-2. https://ror.org/00jfeg660 Center for the Neural Basis of Cognition Pittsburgh United States
-3. https://ror.org/01an3r305 Department of Mathematics, University of Pittsburgh Pittsburgh United States
+1. Department of Neuroscience,University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
+2. Center for the Neural Basis of Cognition Pittsburgh United States ([ROR:00jfeg660](https://ror.org/00jfeg660))
+3. Department of Mathematics, University of Pittsburgh Pittsburgh United States ([ROR:01an3r305](https://ror.org/01an3r305))
 
 † Corresponding author
 
 ## Abstract
 
-Improvements in perception are frequently accompanied by decreases in correlated variability in sensory cortex. This relationship is puzzling because overall changes in correlated variability should minimally affect optimal information coding. We hypothesize that this relationship arises because instead of using optimal strategies for decoding the specific stimuli at hand, observers prioritize generality : a single set of neuronal weights to decode any stimuli. We tested this using a combination of multineuron recordings in the visual cortex of behaving rhesus monkeys and a cortical circuit model. We found that general decoders optimized for broad rather than narrow sets of visual stimuli better matched the animals’ decoding strategy, and that their performance was more related to the magnitude of correlated variability. In conclusion, the inverse relationship between perceptual performance and correlated variability can be explained by observers using a general decoding strategy, capable of decoding neuronal responses to the variety of stimuli encountered in natural vision.
+Improvements in perception are frequently accompanied by decreases in correlated variability in sensory cortex. This relationship is puzzling because overall changes in correlated variability should minimally affect optimal information coding. We hypothesize that this relationship arises because instead of using optimal strategies for decoding the specific stimuli at hand, observers prioritize generality: a single set of neuronal weights to decode any stimuli. We tested this using a combination of multineuron recordings in the visual cortex of behaving rhesus monkeys and a cortical circuit model. We found that general decoders optimized for broad rather than narrow sets of visual stimuli better matched the animals’ decoding strategy, and that their performance was more related to the magnitude of correlated variability. In conclusion, the inverse relationship between perceptual performance and correlated variability can be explained by observers using a general decoding strategy, capable of decoding neuronal responses to the variety of stimuli encountered in natural vision.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Our combined electrophysiological and theoretical results support our general de
 
 ## Results
 
-## A behavioral framework for studying the general decoder hypothesis
+### A behavioral framework for studying the general decoder hypothesis
 
 We designed a behavioral task for two rhesus monkeys that allowed us to test the hypothesis that the relationship between perceptual performance and correlated variability is better explained by a more-general decoding strategy. This test required two main components. First, we used an orientation change detection task with multiple potential orientation changes (Figure 1A; different aspects of these data were presented previously, Ni et al., 2018). This allowed us to analyze decoders optimized for narrower versus broader ranges of stimulus orientations. Two Gabor stimuli of the same orientation flashed on and off until, at a random time, the orientation of one of the stimuli changed. The changed orientation was randomly selected from five options (Figure 1B). The monkey could not predict which orientation change was to be detected on any given trial and was rewarded for responding to any orientation change.
 
@@ -55,13 +55,21 @@ We tasked both decoders with differentiating the V4 neuronal population response
 
 To compare the monkey’s strategy to the performance of the specific decoder, we estimated the neuronal decoding weights that best predicted the monkey’s pattern of choices on this same task (Figure 1E). This allowed us to directly compare the performance of the monkey’s decoder to that of the specific decoder on the same task. Using leave-one-out cross-validation, we calculated the ability of each decoder to correctly identify whether each left-out orientation was the median changed orientation or the starting orientation.
 
-## A mechanistic circuit model to test the general decoder hypothesis
+### A mechanistic circuit model to test the general decoder hypothesis
 
 Here, we describe a circuit model that we designed to allow us to compare the specific and monkey’s decoders from our electrophysiological dataset to modeled ideal specific and general decoders. The primary benefit of our model is that it can take actual images as inputs and produce neuronal tuning and covariance that are compatible with each other because of constraints from the simulated network that processed the inputs (Huang et al., 2019). Parametric models in which tuning and covariance can be manipulated independently would not provide such constraints. In our model, the mean correlated variability of the population activity is restricted to very few dimensions, matching experimentally recorded data from visual cortex demonstrating that mean correlated variability occupies a low-dimensional subset of the full neuronal population space (Ecker et al., 2014; Goris et al., 2014; Huang et al., 2019; Kanashiro et al., 2017; Lin et al., 2015; Rabinowitz et al., 2015; Semedo et al., 2019; Williamson et al., 2016).
 
 For our electrophysiological dataset, the behavioral task was designed to allow us to compare the specific and monkey’s decoders for an attention task with a range of orientation change amounts. To collect the necessary number of repetitions of behavioral trials per stimulus condition (with the limited total number of behavioral trials collected per day), we limited the number of different orientation change amounts to five (Figure 1B) and focused our uncued trials on the median orientation change. Our modeled dataset is critical to addressing our general decoder hypothesis as it allows us to step beyond the restraints of physiological data to model multiple attentional modulation levels for the full range of stimulus orientations. While the main purpose of the electrophysiological data was to analyze the monkey’s decoder, which could only be determined using the neuronal responses recorded from a behaving animal, the purpose of our modeled data is to compare the monkey’s decoder to an ideal general decoder, which can only be determined here using a model.
 
 Our circuit model is an extension of our previously published excitatory/inhibitory cortical network model of attention (Huang et al., 2019). We improved this model to allow us to calculate the network’s responses to the full range of stimulus orientations by extending the three-layer model of V1 and V4 neuronal populations (Huang et al., 2019; Huang et al., 2020) to mimic realistic orientation tuning and organization in the V1 layer (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic of an excitatory and inhibitory neuronal network model of attention (Huang et al., 2019) that extends the three-layer, spatially ordered network to include the orientation tuning and organization of V1. The network models the hierarchical connectivity between layer 4 of V1, layers 2 and 3 of V1, and V4. In this model, attention depolarizes the inhibitory neurons in V4 and increases the feedforward projection strength from layers 2 and 3 of V1 to V4. (B, C) We mapped the n-dimensional neuronal activity of our model to a two-dimensional space (a ring). Each dot represents the neuronal activity of the simulated population on a single trial and each color represents the trials for a given orientation. These fluctuations are more elongated in the (B) unattended state than in the (C) attended state. We then calculated the effects of these attentional changes on the performance of specific and general decoders (see Materials and methods). The axes are arbitrary units. (D–F) Comparisons of the modeled versus electrophysiologically recorded effects of attention on V4 population activity. (D) Firing rates of excitatory neurons increased, (E) mean correlated variability decreased, and (F) as illustrated with the first five largest eigenvalues of the shared component of the spike count covariance matrix from the V4 neurons, attention largely reduced the eigenvalue of the first mode. Attentional state denoted by marker color for the model (yellow: most attended; green: least attended) and electrophysiological data (yellow: cued; green: uncued). For the model: 30 samplings of n=50 neurons. Monkey 1 data illustrated for the electrophysiological data: n=46 days of recorded data. SEM error bars. Also see Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) As previously observed in electrophysiological data (Cohen and Maunsell, 2009; Cohen and Kohn, 2011), we observe a strong relationship between noise and signal correlations. During additional recordings collected during most recording sessions (for Monkey 1 illustrated here, n=37 days with additional recordings), the monkey was rewarded for passively fixating the center of the monitor while Gabors with randomly interleaved orientations were flashed at the receptive field location (‘Stim 2’ location in Figure 1C). The presented orientations spanned the full range of stimulus orientations (12 equally spaced orientations from 0° to 330°). We calculated the signal correlation for each pair of units based on their mean responses to each of the 12 orientations. We define the noise correlation for each pair of units as the average noise correlation for each orientation. The plot depicts signal correlation as a function of noise correlation across all recording sessions, binned into eight equally sized sets of unit pairs. Error bars represent SEM. (B) The model reproduces the relationship between noise and signal correlations. Signal correlation is plotted as a function of noise correlation, binned into 20 equally sized sets of unit pairs (n=2000 neurons), for each attentional modulation strength (green: least attended; yellow: most attended). The results were averaged over 50 tested orientations. (C) The slope of the relationship between noise and signal correlations (y-axis) decreases with increasing attentional modulation (x-axis). This suggests that noise is less aligned with signal correlation with increasing attentional modulation.
 
 This model is key to this initial test of the general decoder hypothesis because it allowed us to test an ideal general decoder that used the same set of neuronal weights to estimate the full range of orientations (see Materials and methods). Further, this specific model is key to our study because it is the only model (to our knowledge) that captures the effects of attention on correlated variability that have been frequently observed in electrophysiological data (Huang et al., 2019).
 
@@ -71,11 +79,23 @@ Importantly, this model reproduces the correlation between noise and signal corr
 
 Next, we calculated the effect of this attentional change on the performances of modeled ideal specific and general decoders, which we will compare to our electrophysiological results in the next section. The specific decoder used optimal neuronal weights (for n neurons in the population) based on the n-dimensional discrimination of two orientations (θ1 and θ2 in Figure 2B). The general decoder was also tested on the discrimination of those same two orientations (θ1 and θ2 in Figure 2B), but the neuronal weights of the general decoder were based on the neuronal population responses to all of the orientations in the ring (see Materials and methods for details). Finally, the model more than captured our electrophysiologically recorded attentional changes in V4 firing rates (Figure 2D), mean correlated variability (Figure 2E), and covariance eigenspectrum (Figure 2F).
 
-## A general decoding strategy may clarify the role of mean correlated variability
+### A general decoding strategy may clarify the role of mean correlated variability
 
 First, we analyzed whether the relationship between attention, behavior, and mean correlated variability could be explained by a specific decoding strategy. This is an important first step because theoretical studies, which do not predict a relationship between mean correlated variability and performance, typically model decision-making as based on an optimal decoding strategy that maximizes the sensory information extracted from the neuronal population activity (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020). A resolution to the apparent conflict between theoretical predictions and empirical results would be that perceptual performance is not based on a specific decoding strategy.
 
 Indeed, we found that the effects of attention on the performance of the monkey’s decoder did not match the effects of attention on the performance of the specific decoder (Figure 3A). Manipulating attention affected the performance of each decoder differently: the performance of the specific decoder was little affected by attention, while that of the monkey’s decoder was strongly affected by attention.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-v1.jpg)
+
+**Figure 3.:** (A) Physiological data for Monkey 1 and Monkey 2: the effect of attention on decoder performance was larger for the monkey’s decoder than for the specific decoder. Left plots: decoder performance (y-axis; leave-one-out cross-validated proportion of trials in which the orientation was correctly identified: starting versus median changed orientation) for each neuronal population size (x-axis) is plotted for the specific (thin lines) and monkey’s (thick lines) decoders in the cued (yellow) and uncued (green) attention conditions. Right plots: the ratio of the decoder performance in the cued versus uncued conditions is plotted for each neuronal population size. SEM error bars (Monkey 1: n=46 days; Monkey 2: n=28 days). (B) Modeled data: the effect of attention on decoder performance was larger for the general decoder than for the specific decoder. Left plot: the inverse of the variance of the estimation of theta (y-axis; equivalent to linear Fisher information for the specific decoder) for each neuronal population size (x-axis) is plotted for the specific decoder (small markers; Equation 1, see Materials and methods) and for the general decoder (large markers; Equation 3, see Materials and methods) in the attended (yellow) and unattended (green) conditions. Right plot: the ratio of Fisher information in the attended versus unattended conditions is plotted for each neuronal population size. (C) Physiological data for Monkey 1 and Monkey 2: the performance of the monkey’s decoder was more related to mean correlated variability (left plots, gray lines of best fit; Monkey 1 correlation coefficient: n=86, or 44 days with two attention conditions plotted per day and two data points excluded – see Materials and methods, r=–0.38, p=5.9 × 10–4; Monkey 2: n=54, or 27 days with two attention conditions plotted per day, r=–0.30, p=0.03) than the performance of the specific decoder (right plots; Monkey 1 correlation coefficient: r=–0.07, p=0.53; Monkey 2: r=0.13, p=0.36). For both monkeys, the correlation coefficients associated with the two decoders were significantly different from each other (Williams’ procedure; Monkey 1: t=3.7, p=2.3 × 10–4; Monkey 2: t=3.2, p=1.4 × 10–3). Also see Figure 3—figure supplement 1. (D) Modeled data: the performance of the general decoder was more related to mean correlated variability (left plot) than the performance of the specific decoder (right plot; number of neurons fixed at 100 and attentional state denoted by marker color, yellow to green: most attended to least attended). (E) An example plot of the first versus second principal component (PC) of the V4 population responses to each of the six orientations presented in the session, to justify a linear decoding strategy for the more-general decoders (starting orientation illustrated in black, five changed orientations illustrated with a red-blue color gradient from smallest to largest). Though the brain may use nonlinear decoding methods, the neuronal population representations of the small range of orientations tested per day were reasonably approximated by a line; thus, linear methods were sufficient to capture decoder performance for the physiological dataset. (F) Physiological data for Monkey 1 (orange) and Monkey 2 (purple): the more general the decoder (x-axis; number of orientation changes used to determine the decoder weights, with the decoder that best differentiated the V4 responses to the starting orientation from those to one changed orientation on the far left, and the decoder that best differentiated V4 responses to the starting orientation from those to four different changed orientations on the far right), the more correlated its performance to the performance of the monkey’s decoder (y-axis; the across-days correlation between the performance of the monkey’s decoder and the performance of the decoder specified by the x-axis). Mean across all points in a column illustrated by a black horizontal line (see Materials and methods for n values). There was a significant correlation between decoder specificity level (x-axis) and the correlation with the performance of the monkey’s decoder (y-axis; correlation coefficient: r=0.25, p=0.016). (G) The more general the decoder (x-axis), the better its performance predicting the monkey’s choices on the median changed orientation trials (y-axis; the proportion of leave-one-out trials in which the decoder correctly predicted the monkey’s decision as to whether the orientation was the starting orientation or the median changed orientation). Conventions as in (F) (see Materials and methods for n values). There was a significant correlation between decoder specificity level (x-axis) and performance predicting the monkey’s choices (y-axis; correlation coefficient: r=0.44, p=0.016).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Within the cued attention condition, the performance of the monkey’s decoder was more related to mean correlated variability (left plot; correlation coefficient: n=71 days, r=–0.23, p=0.058) than the performance of the specific decoder (right plot; correlation coefficient: r=0.038, p=0.75). The correlation coefficients associated with the two decoders were significantly different from each other (Williams’ procedure: t=3.8, p=1.5 × 10–4). Best fit lines plotted in gray. Data from both monkeys combined (Monkey 1 data shown in orange: n=44 days; Monkey 2 data shown in purple: n=27 days) with mean correlated variability z-scored within monkey. (B) The data within the uncued attention condition showed a similar pattern, with the performance of the monkey’s decoder more related to mean correlated variability (n=69 days, r=–0.20, p=0.14) than the performance of the specific decoder (r=0.085, p=0.51; Williams’ procedure: t=2.0, p=0.049). Conventions as in (A) (Monkey 1: n=42 days – see Materials and methods for data exclusions as in Figure 3C; Monkey 2: n=27 days).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67258/elife-67258-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Randomly shuffling the trial order per neuron resulted in the Fisher information for the modeled general decoder increasing linearly with the log of the number of neurons (dashed lines) in both the attended (yellow) and unattended (green) conditions. Shuffling removes differential correlations (Moreno-Bote et al., 2014); thus, the Fisher information based on the trial-shuffled data does not saturate. (B) The trial-shuffled data resulted in the Fisher information for the modeled specific decoder increasing linearly with the log of the number of neurons (dashed lines) as well. (C) The superposition of (A) and (B) illustrates that with shuffled data, the general decoder (large markers) and the specific decoder (small markers) behave very similarly. (D) After shuffling the trials, the performances of the general decoder (E) and of the specific decoder based on the trial-shuffled data had very similar relationships to the amount of correlated variability removed by the trial shuffling (number of neurons fixed at 100 and attentional state denoted by marker color, yellow to green: most attended to least attended).
 
 Second, we used our circuit model of attention to test whether a modeled ideal general decoder was a better match to the physiological monkey’s decoder than a modeled ideal specific decoder. The model allowed us to generate a large dataset with an experimentally unfeasible number of trials per stimulus orientation for a full ring of stimulus orientations, in multiple attention conditions (Figure 2B and C).
 
@@ -97,13 +117,13 @@ Our results suggest that the relationship between behavior and mean correlated v
 
 Our study also demonstrates the utility of combining electrophysiological and circuit modeling approaches to studying neural coding. Our model mimicked the correlated variability and effects of attention in our physiological data. Critically, our model produced neuronal tuning and covariance based on the constraints of an actual network capable of processing images as inputs. Using a circuit model allowed us to test a full range of stimulus orientations in multiple attention conditions, allowing us to test the effects of attention on a true general decoder for orientation.
 
-## A fixed readout mechanism
+### A fixed readout mechanism
 
 A prior study from our lab found that attention, rather than changing the neuronal weights of the observer’s decoder, reshaped neuronal population activity to better align with a fixed readout mechanism (Ruff and Cohen, 2019). To test whether the neuronal weights of the monkey’s decoder changed across attention conditions (attended versus unattended), Ruff and Cohen switched the neuronal weights across conditions, testing the stimulus information in one attention condition with the neuronal weights from the other. They found that even with the switched weights, the performance of the monkey’s decoder was still higher in the attended condition. The results of this study support the conclusion that attention reshapes neuronal activity so that a fixed readout mechanism can better read out stimulus information. In other words, differences in the performance of the monkey’s decoder across attention conditions may be due to differences in how well the neuronal activity aligns with a fixed decoder.
 
 Our study extends the findings of Ruff and Cohen to test whether that fixed readout mechanism is determined by a general decoding strategy. Our findings support the hypothesis that observers use a general decoding strategy in the face of changing stimulus and task conditions. Our findings do not exclude other potential explanations for the suboptimality of the monkey’s decoder, nor do they exclude the possibility that attention modulates decoder neuronal weights. However, our findings together with those of Ruff and Cohen shed light on why neuronal decoders are suboptimal in a manner that aligns the fixed decoder axis with the correlated variability axis (Ni et al., 2018; Ruff et al., 2018).
 
-## A general decoding strategy in the face of unpredictable stimuli
+### A general decoding strategy in the face of unpredictable stimuli
 
 We performed this initial test of the overarching general decoder hypothesis in the context of a change detection task along a single stimulus dimension because this type of task was used in many of the studies that reported a relationship between perceptual performance and mean correlated variability (Cohen and Maunsell, 2009; Cohen and Maunsell, 2011; Herrero et al., 2013; Luo and Maunsell, 2015; Mayo and Maunsell, 2016; Nandy et al., 2017; Ni et al., 2018; Ruff and Cohen, 2016; Ruff and Cohen, 2019; Verhoef and Maunsell, 2017; Yan et al., 2014; Zénon and Krauzlis, 2012). This simple and well-studied task provided an ideal initial test of our general decoder hypothesis.
 
@@ -111,7 +131,7 @@ This initial test of the general decoder hypothesis suggests that a more-general
 
 On the other hand, other studies of perceptual performance have found that observers can achieve high levels of perceptual precision under certain circumstances (Burgess et al., 1981; Kersten, 1987). Such studies suggest that decoding strategies that maximize the amount of extracted sensory information might be used in certain situations. Further tests of decoding strategies in a variety of stimulus conditions and behavioral contexts will be necessary to determine when sensory information decoding prioritizes accuracy and when decoding prioritizes flexibility, or generality, over accuracy. Of particular interest is the potential role of perceptual learning (Seitz and Watanabe, 2005) in determining the extent to which decoding is specific (Gu et al., 2011; Jeanne et al., 2013; Ni et al., 2018).
 
-## General decoders of all features would be inextricably linked to mean correlated variability
+### General decoders of all features would be inextricably linked to mean correlated variability
 
 Our results address a paradox in the literature. Electrophysiological and theoretical evidence supports that there is a relationship between mean correlated variability and perceptual performance (Abbott and Dayan, 1999; Clery et al., 2017; Haefner et al., 2013; Jin et al., 2019; Ni et al., 2018; Ruff and Cohen, 2019; reviewed by Ruff et al., 2018). Yet, a specific decoding strategy in which different sets of neuronal weights are used to decode different stimulus changes cannot easily explain this relationship (Kafashan et al., 2021; Kanitscheider et al., 2015b; Moreno-Bote et al., 2014; Pitkow et al., 2015; Rumyantsev et al., 2020; reviewed by Kohn et al., 2016). This is because specific decoders of neuronal population activity can easily ignore changes in mean correlated noise (Moreno-Bote et al., 2014).
 
@@ -129,7 +149,7 @@ In conclusion, the findings of this study support the usefulness of a framework 
 
 ## Materials and methods
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 The subjects were two adult male rhesus monkeys (Macaca mulatta, 8 and 10 kg). All animal procedures were approved by the Institutional Animal Care and Use Committees of the University of Pittsburgh and Carnegie Mellon University (Protocol #17071123). Different aspects of these data were presented previously (Ni et al., 2018). We recorded extracellularly from single units and sorted multiunit clusters (the term ‘unit’ refers to either; see Ni et al., 2018) in V4 of the left hemisphere using chronically implanted 96-channel microelectrode arrays (Blackrock Microsystems) with 1 mm long electrodes. We performed all spiking sorting manually using Plexon’s Offline Sorter (version 3.3.5, Plexon).
 
@@ -137,7 +157,7 @@ We only included a recorded unit if its stimulus-driven firing rate was both gre
 
 No statistical methods were used to predetermine our sample sizes of subjects or recorded units, but our sample sizes are similar to those used in previous publications that analyzed neuronal and behavioral data similar to the data analyzed here (Cohen and Maunsell, 2009; Ni et al., 2018).
 
-## Behavioral task
+### Behavioral task
 
 The monkeys performed a change detection task (Figure 1A; Cohen and Maunsell, 2009) with multiple orientation change options (Figure 1B) and cued attention (Posner, 1980) while we recorded electrophysiological data. We presented visual stimuli on a CRT monitor (calibrated to linearize intensity; 1024×768 pixels; 120 Hz refresh rate) placed 52 cm from the monkey, using custom software written in MATLAB (Psychophysics Toolbox; Brainard, 1997; Pelli, 1997). We monitored each monkey’s eye position using an infrared eye tracker (Eyelink 1000; SR Research) and recorded eye position, neuronal responses (30,000 samples/s), and the signal from a photodiode to align neuronal responses to stimulus presentation times (30,000 samples/s) using Ripple hardware.
 
@@ -151,7 +171,7 @@ The size, location, and spatial frequency of the Gabor stimuli were fixed across
 
 The starting orientation (Figure 1A, B) was identical for all trials within a day. We changed the starting orientation by 15° for each new day of recording. We also changed the five changed orientation options (Figure 1B) for each new day of recording, to maintain the task at approximately the same level of difficulty across days. The five changed orientation options were always the same within one session of trials, with one session equaling two blocks of trials: one block of trials with the left stimulus cued, and one block of trials with the right stimulus cued (Figure 1C). We sometimes changed the five orientation options between sessions within a day, again to maintain a consistent level of task difficulty. For those days, we binned the orientation change amounts into five bins based on their log distribution.
 
-## Electrophysiological data analysis
+### Electrophysiological data analysis
 
 The data presented are from 46 days of recording for Monkey 1 and 28 days of recording for Monkey 2. Instruction trials were not included in any analyses. Only trials in which the orientation changes occurred at the RF location (Figure 1C) and catch trials were analyzed (see below for specific inclusions per analysis). The first stimulus presentation of each trial was excluded from all analyses to minimize temporal non-stationarities due to adaptation.
 
@@ -163,7 +183,7 @@ For Figure 3C, we used Williams’ procedure for comparing correlated correlatio
 
 For Monkey 1, two outlier points (uncued trials for each of 2 days) with mean correlated variability values greater than 0.35 were excluded from analysis based on the Tukey method (see Figure 3C for the range of included correlated variability values for Monkey 1). For Figure 3C, with the excluded points included, the correlation coefficients were qualitatively unchanged: for the monkey’s decoder, n=88, or 44 days (see below for data included in decoder analyses) with two attention conditions plotted per day, r=–0.34, p=1.7 × 10–3; for the specific decoder, r=–0.22, p=0.05.
 
-## V4 population specific decoder
+### V4 population specific decoder
 
 For Figure 3A and C, we calculated the performance of a specific decoder based on the electrophysiologically recorded V4 neuronal population data (Ni et al., 2018). To avoid artifacts in neuronal firing rates due to eye movements in response to the changed orientation, all V4 population decoder analyses were based on neuronal firing rates during an abbreviated time window: 60–130 ms after stimulus onset.
 
@@ -173,7 +193,7 @@ Decoder performance was quantified as the leave-one-out cross-validated proporti
 
 For Figure 3C, decoder performance was illustrated for a set number of neurons (Monkey 1: 20 units, Monkey 2: 10 units). The number of neurons analyzed for these plots was selected to maximize the number of included neurons and recording days (Monkey 1: n=44 days, 2 days with 8 and 19 recorded units excluded; Monkey 2: n=27 days, 1 day with 7 recorded units excluded).
 
-## V4 population monkey’s decoder
+### V4 population monkey’s decoder
 
 For Figure 3A, C, we calculated the performance of the monkey’s choice decoder as well (Figure 1E). The monkey’s decoder was a linear classifier trained on the same set of V4 population responses as the specific decoder described above (the neuronal population firing rates in response to the median changed orientation and in response to the starting orientation presented immediately before it). However, unlike the specific decoder, the monkey’s decoder was trained to best differentiate the V4 population responses when the monkey made a saccade indicating it detected the orientation change from the V4 responses when the monkey did not make a saccade (both correctly in response to the starting orientation and incorrectly when the monkey missed the changed orientation).
 
@@ -181,7 +201,7 @@ Decoder performance was quantified just as it was for the specific decoder descr
 
 In summary, the physiological specific and monkey’s decoders were trained on different classifications of the same set of V4 responses and thus had different neuronal weights. However, everything else about how they were analyzed was the same, including that their performance was tested on the same task of correctly identifying whether each left-out orientation was the median changed orientation or the starting orientation.
 
-## V4 population more-general versus more-specific decoders
+### V4 population more-general versus more-specific decoders
 
 For Figure 3F, we calculated decoders that were increasingly more general, to compare their performance to that of the monkey’s decoder. As described above, due to the limited number of behavioral trials collected per day, we could not calculate an ideal general decoder for orientation based on the physiological data as we could based on the modeled data. However, as a sanity check, we wanted to check whether more-general decoders were more strongly related to the monkey’s decoder than more-specific decoders. Additionally, we only analyzed trials from the cued attention condition (uncued trials were mainly collected for the median orientation change amount, which is why the median orientation change trials were analyzed in the attention analyses illustrated in Figure 3A, C). As with Figure 3C as described above, decoder performance was illustrated for a set number of neurons (Monkey 1: 20 units, Monkey 2: 10 units).
 
@@ -195,48 +215,84 @@ Each ‘3 oris’ decoder was trained to best differentiate the V4 responses to 
 
 For Figure 3G, we performanced analyses similar to those performed for Figure 3F, in that we tested each stimulus decoder: ‘1 ori’ decoders (n=8 decoders; 1 specific decoder for either the first, second, fourth, or fifth largest changed orientation, for each of the 2 monkeys), ‘2 oris’ decoders (n=12 decoders; 1 decoder for each of the 6 combinations of 2 changed orientations, for each of the 2 monkeys), ‘3 oris’ decoders (n=8 decoders; 1 decoder for each of the 4 combinations of 3 changed orientations, for each of the 2 monkeys), and ‘4 oris’ decoders (n=2 decoders; 1 decoder for the 1 combination of 4 changed orientations, for each of the 2 monkeys). However, unlike in Figure 3F, where the performance of the stimulus decoders was compared to the performance of the monkey’s decoder on the median orientation change trials, here, we calculated the performance of the stimulus decoder when tasked with predicting the trial-by-trial choices that the monkey made on the median orientation change trials. We plotted the proportion of leave-one-out trials in which each decoder correctly predicted the monkey’s choice as to whether the orientation was the starting orientation or the median changed orientation.
 
-## Network model description
+### Network model description
 
-The network model is similar to the one in Huang et al., 2019. Briefly, the network consists of three modeled stages: (1) layer (L) 4 neurons of V1, (2) L2/3 neurons of V1, and (3) L2/3 neurons of V4 (Figure 2A). Neurons from each area are arranged on a uniform grid covering a unit square Γ=[-0.5,0.5]×[-0.5,0.5]. The L4 neurons of V1 are modeled as a population of excitatory neurons, the spikes of which are taken as inhomogeneous Poisson processes with rates determined as below. The L2/3 of V1 and V4 populations are recurrently coupled networks with excitatory and inhibitory neurons. Each neuron is modeled as an exponential integrate-and-fire (EIF) neuron. The connection probability between neurons decays with distance. The network model captures many attention-mediated changes on neuronal responses, such as the reduction of correlated variability within each visual area, increase in correlated variability between visual areas, and the quenching of the low-dimensional correlated variability by attention. The network parameters are the same as those used in Huang et al., 2019 except the following. The feedforward projection width from V1 (L2/3) to V4 is αffwd(3)=0.05. The feedforward strength from V1 (L2/3) to V4 is [JeF3,JiF3]=γ⁢[1,0.4]. From the most unattended state to the most attended state (attentional modulation scale from 0 to 1), γ varies from 20 to 23 mV, and the depolarizing current to the inhibitory neurons in V4, μi, varies from 0 to 0.5 mV/ms (Figure 2, Figure 3B, D).
+The network model is similar to the one in Huang et al., 2019. Briefly, the network consists of three modeled stages: (1) layer (L) 4 neurons of V1, (2) L2/3 neurons of V1, and (3) L2/3 neurons of V4 (Figure 2A). Neurons from each area are arranged on a uniform grid covering a unit square $Γ=[-0.5,0.5]\times[-0.5,0.5]$. The L4 neurons of V1 are modeled as a population of excitatory neurons, the spikes of which are taken as inhomogeneous Poisson processes with rates determined as below. The L2/3 of V1 and V4 populations are recurrently coupled networks with excitatory and inhibitory neurons. Each neuron is modeled as an exponential integrate-and-fire (EIF) neuron. The connection probability between neurons decays with distance. The network model captures many attention-mediated changes on neuronal responses, such as the reduction of correlated variability within each visual area, increase in correlated variability between visual areas, and the quenching of the low-dimensional correlated variability by attention. The network parameters are the same as those used in Huang et al., 2019 except the following. The feedforward projection width from V1 (L2/3) to V4 is $\alpha_{ffwd}^{(3)}=0.05$. The feedforward strength from V1 (L2/3) to V4 is $[J_{eF}^{3},J_{iF}^{3}]=\gamma⁢[1,0.4]$. From the most unattended state to the most attended state (attentional modulation scale from 0 to 1), $\gamma$ varies from 20 to 23 mV, and the depolarizing current to the inhibitory neurons in V4, $\mu_{i}$, varies from 0 to 0.5 mV/ms (Figure 2, Figure 3B, D).
 
-The model differs from the previous model (Huang et al., 2019) in the following ways. We modeled the V1 (L4) neurons as orientation selective filters with static nonlinearity and Poisson spike generation (Kanitscheider et al., 2015b). The firing rate of each neuron i is ri⁢(θ,t)=[Fi×I~⁢(θ,t)]+, where Fi is a Gabor filter and I~⁢(θ,t) is a Gabor image corrupted by independent noise following the Ornstein-Uhlenbeck process,I~⁢(θ,t)=I⁢(θ)+η⁢(t) and τn⁢d⁢ηi=-ηi⁢d⁢t+σn⁢d⁢W,
+The model differs from the previous model (Huang et al., 2019) in the following ways. We modeled the V1 (L4) neurons as orientation selective filters with static nonlinearity and Poisson spike generation (Kanitscheider et al., 2015b). The firing rate of each neuron i is $r_{i}⁢(\theta,t)=[F_{i}\timesI~⁢(\theta,t)]_{+}$, where $F_{i}$ is a Gabor filter and $I~⁢(\theta,t)$ is a Gabor image corrupted by independent noise following the Ornstein-Uhlenbeck process,
 
-with τn=40 ms and σn=3.5. The Gabor filters were normalized such that the mean firing rate of V1 (L4) neurons was 10 Hz. Spike trains of V1 (L4) neurons were generated as inhomogeneous Poisson processes with rate ri⁢(θ,t). The Gabor image is defined on Γ with 25×25 pixels with spatial Gaussian envelope width σ=0.2, spatial wavelength λ=0.6 and phase ϕ=0 (Kanitscheider et al., 2015b, Supp Equation 6 ). The Gabor filters of V1 (L4) neurons had the same σ, λ and ϕ as the image (Kanitscheider et al., 2015b, Supp Equation 5 ). The orientation θ was normalized between 0 and 1. The orientation preference map of L4 neurons in V1 was generated using the formula from Kaschube et al., 2010 (Supp Equation 20) with average column spacing Λ=0.2.
+$$
+I~⁢(\theta,t)=I⁢(\theta)+η⁢(t) and \tau_{n}⁢d⁢η_{i}=-η_{i}⁢d⁢t+\sigma_{n}⁢d⁢W,
+$$
 
-Each network simulation was 20 sec long consisting of alternating OFF (300 ms) and ON (200 ms) intervals. During OFF intervals, spike trains of Layer 1 neurons were independent Poisson processes with rate rX=5 Hz. An image with a randomly selected orientation was presented during ON intervals. Spike counts during the ON intervals were used to compute the performance of different decoders and correlated variability. The first spike count in each simulation was excluded. For each parameter condition, the connectivity matrices were fixed for all simulations. The initial states of each neuron’s membrane potential were randomized in each simulation. All simulations were performed on the CNBC Cluster in the University of Pittsburgh. All simulations were written in a combination of C and Matlab (Matlab R 2015a, Mathworks). The differential equations of the neuron model were solved using the forward Euler method with time step 0.01 ms.
+with $\tau_{n}=40$ ms and $\sigma_{n}=3.5$. The Gabor filters were normalized such that the mean firing rate of V1 (L4) neurons was 10 Hz. Spike trains of V1 (L4) neurons were generated as inhomogeneous Poisson processes with rate $r_{i}⁢(\theta,t)$. The Gabor image is defined on $Γ$ with $25\times25$ pixels with spatial Gaussian envelope width $\sigma=0.2$, spatial wavelength $\lambda=0.6$ and phase $ϕ=0$ (Kanitscheider et al., 2015b, Supp Equation 6 ). The Gabor filters of V1 (L4) neurons had the same $\sigma$, $\lambda$ and $ϕ$ as the image (Kanitscheider et al., 2015b, Supp Equation 5 ). The orientation $\theta$ was normalized between 0 and 1. The orientation preference map of L4 neurons in V1 was generated using the formula from Kaschube et al., 2010 (Supp Equation 20) with average column spacing $Λ=0.2$.
 
-## Network model specific decoder
+Each network simulation was 20 sec long consisting of alternating OFF (300 ms) and ON (200 ms) intervals. During OFF intervals, spike trains of Layer 1 neurons were independent Poisson processes with rate $r_{X}=5$ Hz. An image with a randomly selected orientation was presented during ON intervals. Spike counts during the ON intervals were used to compute the performance of different decoders and correlated variability. The first spike count in each simulation was excluded. For each parameter condition, the connectivity matrices were fixed for all simulations. The initial states of each neuron’s membrane potential were randomized in each simulation. All simulations were performed on the CNBC Cluster in the University of Pittsburgh. All simulations were written in a combination of C and Matlab (Matlab R 2015a, Mathworks). The differential equations of the neuron model were solved using the forward Euler method with time step $0.01$ ms.
 
-Let r be a vector of spike counts from all neurons on a single trial, f be the tuning curve function, and Σ be the covariance matrix. Consider a fine discrimination task of two orientations θ+=θ0+d⁢θ and θ-=θ0-d⁢θ. The specific decoder is a local linear estimator:θ^=θ0+wT(r−f(θ+)+f(θ−)2).
+### Network model specific decoder
 
-The optimal weight to minimize the mean squared error over all trials, E=⟨|θ^−θ|2⟩, iswopts=Σ−1f′f′Σ−1f′.
+Let $r$ be a vector of spike counts from all neurons on a single trial, $f$ be the tuning curve function, and $Σ$ be the covariance matrix. Consider a fine discrimination task of two orientations $\theta^{+}=\theta_{0}+d⁢\theta$ and $\theta^{-}=\theta_{0}-d⁢\theta$. The specific decoder is a local linear estimator:
 
-The linear Fisher information is equivalent to the inverse of the variance of the optimal specific decoder:I=1Var(θ^opt|θi)=f′Σ−1f′.
+$$
+\theta^=\theta_{0}+w^{T}(r−\frac{f(\theta^{+})+f(\theta^{−})}{2}).
+$$
 
-The linear Fisher information is estimated with bias-correction (Figure 3B; Kanitscheider et al., 2015a):(1)I^=(f+−f−)Tdθ(Σ++Σ−2)−1(f+−f−)dθ(2Ntr−N−32Ntr−2)−2NNtrdθ2,
+The optimal weight to minimize the mean squared error over all trials, $E=⟨|\theta^−\theta|^{2}⟩$, is
 
-where fi and Σi are the empirical mean and covariance, respectively, for θi, i∈{+,-}. The number of neurons sampled is N, and the number of trials for each θi is Ntr. In simulations, we used θ0=0.5 and d⁢θ=0.01. There were 58,500 spike counts in total for θ+ and θ-.
+$$
+w_{opt}^{s}=\frac{Σ^{−1}f^{′}}{f^{′}Σ^{−1}f^{′}}.
+$$
 
-## Network model general decoder
+The linear Fisher information is equivalent to the inverse of the variance of the optimal specific decoder:
 
-The general decoder is a complex linear estimator z^=wTr (Shamir and Sompolinsky, 2006) where w is fixed for all θ. The estimator z^ maps the population activity r in response to all orientations to a circle (z=ei⁢θ in complex domain). The estimation of orientation is θ^=arg⁢(z^). The optimal weight woptg that minimizes the mean squared error, E(w)=⟨|z^−z|2⟩θ,r, averaged over all θ and trials of r, is(2)woptg=⟨Σ(θ)+ffT⟩θ−1⟨feiθ⟩θ,
+$$
+I=\frac{1}{Var(\theta^_{opt}|\theta^{i})}=f^{′}Σ^{−1}f^{′}.
+$$
 
-The mean squared error of the optimal general decoder isE(woptg)=1−(⟨feiθ⟩θ)∗⟨Σ(θ)+ffT⟩θ−1(⟨feiθ⟩θ),
+The linear Fisher information is estimated with bias-correction (Figure 3B; Kanitscheider et al., 2015a):
 
-where * denotes the conjugate transpose. Hence, the estimation error of z^ depends on both the covariance matrix, Σ, and tuning similarity, ffT. The performance of the general decoder is measured as Ig=1/Var⁢(θ^) (Figure 3B). The estimation of Ig is(3)I^g=1Var(arg((woptg)Tr)−θ)Ntr−N−2Ntr−1,
+$$
+I^=\frac{(f^{+}−f^{−})^{T}}{d\theta}(\frac{Σ^{+}+Σ^{−}}{2})^{−1}\frac{(f^{+}−f^{−})}{d\theta}(\frac{2N_{tr}−N−3}{2N_{tr}−2})−\frac{2N}{N_{tr}d\theta^{2}},
+$$
 
-where Ntr is the total number of trials for all θ’s. In simulations, we used 50 θ’s uniformly spaced between 0 and 1. There were 117,000 trials in total for all θ’s.
+where $f^{i}$ and $Σ^{i}$ are the empirical mean and covariance, respectively, for $\theta^{i}$, $i\in{+,-}$. The number of neurons sampled is $N$, and the number of trials for each $\theta^{i}$ is $N_{tr}$. In simulations, we used $\theta_{0}=0.5$ and $d⁢\theta=0.01$. There were 58,500 spike counts in total for $\theta^{+}$ and $\theta^{-}$.
 
-## Dependence of network model decoders’ performance on correlated variability (Figure 3D)
+### Network model general decoder
 
-We trained specific and general decoders on the same spike count dataset (r) in response to pairs of orientations, θ1 and θ2 (with difference Δ⁢θ=0.04). The specific decoder was trained on the N-dimensional space of neural responses, using a support vector machine model with two-fold cross-validation to linearly classify r for the two orientations. The general decoder first maps r to a two-dimensional plane z^=(woptg)Tr using the optimal weight woptg (Equation 2) computed with the spike counts of all orientations. Then a two-dimensional support vector machine model with two-fold cross-validation was trained to linearly classify z^ for θ1 and θ2. The correlated variability was computed from the spike counts data for θ1 of each pair. There were 200 samplings of N=100 excitatory neurons from the V4 network, and 10 orientation pairs varying between 0 and 1. There were on average 2,340 trials for each θ.
+The general decoder is a complex linear estimator $z^=w^{T}r$ (Shamir and Sompolinsky, 2006) where $w$ is fixed for all $\theta$. The estimator $z^$ maps the population activity $r$ in response to all orientations to a circle ($z=e^{i⁢\theta}$ in complex domain). The estimation of orientation is $\theta^=arg⁢(z^)$. The optimal weight $w_{opt}^{g}$ that minimizes the mean squared error, $E(w)=⟨|z^−z|^{2}⟩_{\theta,r}$, averaged over all $\theta$ and trials of $r$, is
 
-## Factor analysis for network model
+$$
+w_{opt}^{g}=⟨Σ(\theta)+ff^{T}⟩_{\theta}^{−1}⟨fe^{i\theta}⟩_{\theta},
+$$
 
-Let x∈ℝn×1 be the spike counts from n simultaneously recorded neurons. Factor analysis assumes that x is a multi-variable Gaussian process:x∼N(μ,LLT+Ψ)
+The mean squared error of the optimal general decoder is
 
-where μ∈Rn×1 is the mean spike counts, L∈ℝn×m is the loading matrix of the m latent variables and Ψ∈ℝn×1 is a diagonal matrix of independent variances for each neuron (Cunningham and Yu, 2014). We chose m=5 and computed the eigenvalues of LLT, λi(i=1,2,...,m), ranked in descending order. Spike counts were collected using a 200 ms window. There were on average 2,340 trials per attentional condition.
+$$
+E(w_{opt}^{g})=1−(⟨fe^{i\theta}⟩_{\theta})^{∗}⟨Σ(\theta)+ff^{T}⟩_{\theta}^{−1}(⟨fe^{i\theta}⟩_{\theta}),
+$$
 
-## Code availability
+where $*$ denotes the conjugate transpose. Hence, the estimation error of $z^$ depends on both the covariance matrix, $Σ$, and tuning similarity, $ff^{T}$. The performance of the general decoder is measured as $I_{g}=1/Var⁢(\theta^)$ (Figure 3B). The estimation of $I_{g}$ is
+
+$$
+I^_{g}=\frac{1}{Var(arg((w_{opt}^{g})^{T}r)−\theta)}\frac{N_{tr}−N−2}{N_{tr}−1},
+$$
+
+where $N_{tr}$ is the total number of trials for all $\theta$’s. In simulations, we used 50 $\theta$’s uniformly spaced between 0 and 1. There were 117,000 trials in total for all $\theta$’s.
+
+### Dependence of network model decoders’ performance on correlated variability (Figure 3D)
+
+We trained specific and general decoders on the same spike count dataset ($r$) in response to pairs of orientations, $\theta_{1}$ and $\theta_{2}$ (with difference $Δ⁢\theta=0.04$). The specific decoder was trained on the $N$-dimensional space of neural responses, using a support vector machine model with two-fold cross-validation to linearly classify $r$ for the two orientations. The general decoder first maps $r$ to a two-dimensional plane $z^=(w_{opt}^{g})^{T}r$ using the optimal weight $w_{opt}^{g}$ (Equation 2) computed with the spike counts of all orientations. Then a two-dimensional support vector machine model with two-fold cross-validation was trained to linearly classify $z^$ for $\theta_{1}$ and $\theta_{2}$. The correlated variability was computed from the spike counts data for $\theta_{1}$ of each pair. There were 200 samplings of $N=100$ excitatory neurons from the V4 network, and 10 orientation pairs varying between 0 and 1. There were on average 2,340 trials for each $\theta$.
+
+### Factor analysis for network model
+
+Let $x\inℝ^{n\times1}$ be the spike counts from $n$ simultaneously recorded neurons. Factor analysis assumes that $x$ is a multi-variable Gaussian process:
+
+$$
+x∼N(\mu,LL^{T}+Ψ)
+$$
+
+where $\mu\inR^{n\times1}$ is the mean spike counts, $L\inℝ^{n\timesm}$ is the loading matrix of the $m$ latent variables and $Ψ\inℝ^{n\times1}$ is a diagonal matrix of independent variances for each neuron (Cunningham and Yu, 2014). We chose $m=5$ and computed the eigenvalues of $LL^{T}$, $\lambda_{i}(i=1,2,...,m)$, ranked in descending order. Spike counts were collected using a 200 ms window. There were on average 2,340 trials per attentional condition.
+
+### Code availability
 
 Computer code for all simulations and analysis of the resulting data will be available at https://github.com/hcc11/GeneralDecoder; swh:1:rev:5056b409f2d943736b0478ff7ff38dd247b468b5, Ni et al., 2022.

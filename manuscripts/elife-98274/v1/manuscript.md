@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0207ad724 Department of Translational Neuroscience, Wake Forest University School of Medicine Winston-Salem United States
-2. https://ror.org/0207ad724 Neuroscience Graduate Program, Wake Forest University School of Medicine Winston-Salem United States
+1. Department of Translational Neuroscience, Wake Forest University School of Medicine Winston-Salem United States ([ROR:0207ad724](https://ror.org/0207ad724))
+2. Neuroscience Graduate Program, Wake Forest University School of Medicine Winston-Salem United States ([ROR:0207ad724](https://ror.org/0207ad724))
 
 † Corresponding author
 

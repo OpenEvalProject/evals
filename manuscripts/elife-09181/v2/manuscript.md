@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.09181.001 The target of rapamycin complex I (TORC1) regulates cell growth and metabolism in eukaryotes. Previous studies have shown that nitrogen and amino acid signals activate TORC1 via the small GTPases, Gtr1/2. However, little is known about the way that other nutrient signals are transmitted to TORC1. Here we report that glucose starvation triggers disassembly of TORC1, and movement of the key TORC1 component Kog1/Raptor to a single body near the edge of the vacuole. These events are driven by Snf1/AMPK-dependent phosphorylation of Kog1 at Ser 491/494 and two nearby prion-like motifs. Kog1-bodies then serve to increase the threshold for TORC1 activation in cells that have been starved for a significant period of time. Together, our data show that Kog1-bodies create hysteresis (memory) in the TORC1 pathway and help ensure that cells remain committed to a quiescent state under suboptimal conditions. We suggest that other protein bodies formed in starvation conditions have a similar function. DOI: http://dx.doi.org/10.7554/eLife.09181.001
+The target of rapamycin complex I (TORC1) regulates cell growth and metabolism in eukaryotes. Previous studies have shown that nitrogen and amino acid signals activate TORC1 via the small GTPases, Gtr1/2. However, little is known about the way that other nutrient signals are transmitted to TORC1. Here we report that glucose starvation triggers disassembly of TORC1, and movement of the key TORC1 component Kog1/Raptor to a single body near the edge of the vacuole. These events are driven by Snf1/AMPK-dependent phosphorylation of Kog1 at Ser 491/494 and two nearby prion-like motifs. Kog1-bodies then serve to increase the threshold for TORC1 activation in cells that have been starved for a significant period of time. Together, our data show that Kog1-bodies create hysteresis (memory) in the TORC1 pathway and help ensure that cells remain committed to a quiescent state under suboptimal conditions. We suggest that other protein bodies formed in starvation conditions have a similar function.
 
 ## Introduction
 
@@ -36,33 +36,33 @@ Taken together, our results reveal a novel mechanism of TORC1 regulation and sho
 
 ## Results
 
-## Movement of Kog1 into bodies
+### Movement of Kog1 into bodies
 
-To determine if TORC1 localization is altered in glucose starvation conditions, we subjected yeast carrying Kog1-YFP, Tco89-YFP (see Material and methods), or Tor1 with a triple GFP insertion (
+To determine if TORC1 localization is altered in glucose starvation conditions, we subjected yeast carrying Kog1-YFP, Tco89-YFP (see Material and methods), or Tor1 with a triple GFP insertion (Binda et al., 2009; Sturgill et al., 2008) to acute glucose starvation and acquired 3D images using a fluorescence microscope. Surprisingly, we found that Kog1 and Tco89 move from their known location on the vacuolar membrane (marked with Vph1-mCherry), to a single body near the edge of the vacuole, within 60 min in most cells (Figure 1A and Figure 1—figure supplement 1). In contrast, Tor1 remained associated with the vacuolar membrane and/or moved to the cytoplasm during the same time-period (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-v2.jpg)
 
-**Figure 1.:** (A) Localization of Kog1-YFP and Vph1-mCherry, before (SD) and after (-Glu) glucose withdrawal (60 min). (B) Localization of Tor1-3xGFP and Vph1-mCherry before (SD) and after (-Glu) glucose withdrawal (60 min). (C) Time-course data showing the fraction of cells that contain Kog1-bodies after transfer to synthetic medium with 2% glucose (SD), SD + 0.4 M KCl (+ KCl), SD -glucose (-Glu), SD-glucose and nitrogen (-Glu + N), and SD-nitrogen (-N) medium. Each time-point shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). Solid lines show the best fit to a single exponential equation (-Glu, -N, and –Glu + N) or a line (SD and + KCl). (D) Time-course data showing the fraction of cells that contain Kog1-bodies after adding glucose, or glucose and cycloheximide (0.02% Glu, 0.1% Glu, 2% Glu or 2% Glu + 100 ug/ml cycloheximide) back to cells that have been in SD–glucose for 60 min. Each datapoint in 0.1% glucose and 2% + 100 ug/ml cycloheximide shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). The solid lines show the best fit to a single exponential equation.DOI: http://dx.doi.org/10.7554/eLife.09181.003
+**Figure 1.:** (A) Localization of Kog1-YFP and Vph1-mCherry, before (SD) and after (-Glu) glucose withdrawal (60 min). (B) Localization of Tor1-3xGFP and Vph1-mCherry before (SD) and after (-Glu) glucose withdrawal (60 min). (C) Time-course data showing the fraction of cells that contain Kog1-bodies after transfer to synthetic medium with 2% glucose (SD), SD + 0.4 M KCl (+ KCl), SD -glucose (-Glu), SD-glucose and nitrogen (-Glu + N), and SD-nitrogen (-N) medium. Each time-point shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). Solid lines show the best fit to a single exponential equation (-Glu, -N, and –Glu + N) or a line (SD and + KCl). (D) Time-course data showing the fraction of cells that contain Kog1-bodies after adding glucose, or glucose and cycloheximide (0.02% Glu, 0.1% Glu, 2% Glu or 2% Glu + 100 ug/ml cycloheximide) back to cells that have been in SD–glucose for 60 min. Each datapoint in 0.1% glucose and 2% + 100 ug/ml cycloheximide shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). The solid lines show the best fit to a single exponential equation.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Localization of Tco89-YFP in wild type and Kog1 PrDM1 + 2 backgrounds before (SD) and after (-Glu) glucose withdrawal (60 min). (B) Time-course data showing the fraction of cells with Tco89 foci after transfer to synthetic medium with 2% glucose (SD) and SD -glucose (-Glu). Each time-point shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). Solid lines show the best fit to a single exponential equation (-Glu) or a line (SD).DOI: http://dx.doi.org/10.7554/eLife.09181.004
+**Figure 1—figure supplement 1.:** (A) Localization of Tco89-YFP in wild type and Kog1 PrDM1 + 2 backgrounds before (SD) and after (-Glu) glucose withdrawal (60 min). (B) Time-course data showing the fraction of cells with Tco89 foci after transfer to synthetic medium with 2% glucose (SD) and SD -glucose (-Glu). Each time-point shows the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate). Solid lines show the best fit to a single exponential equation (-Glu) or a line (SD).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** Mean and standard deviation of two independent experiments is shown.DOI: http://dx.doi.org/10.7554/eLife.09181.005
+**Figure 1—figure supplement 2.:** Mean and standard deviation of two independent experiments is shown.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Frequency distribution of Kog1-YFP foci, among cells containing bodies, after 60 min glucose starvation.DOI: http://dx.doi.org/10.7554/eLife.09181.006
+**Figure 1—figure supplement 3.:** Frequency distribution of Kog1-YFP foci, among cells containing bodies, after 60 min glucose starvation.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-figsupp4-v2.jpg)
 
-**Figure 1—figure supplement 4.:** Cultures of Kog1-YFP wildtype, Kog1S491/4A PrDm1 mutant, and PrDm1 + 2 mutant were grown for 24hrs to saturation in synthetic media containing 2% glucose (SD). Mean and standard deviation of three independent experiments is shown.DOI: http://dx.doi.org/10.7554/eLife.09181.007
+**Figure 1—figure supplement 4.:** Cultures of Kog1-YFP wildtype, Kog1S491/4A PrDm1 mutant, and PrDm1 + 2 mutant were grown for 24hrs to saturation in synthetic media containing 2% glucose (SD). Mean and standard deviation of three independent experiments is shown.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** Localization of Kog1-YFP in cells co-expressing the vacuolar membrane marker Vph1-mCherry after 60 min of glucose starvation followed by; 60 min of glucose starvation (-Glu); 60 min of glucose repletion and 100 ug/ml cycloheximide treatment (SD + CHX); 60 min of glucose starvation and 100 ug/ml cycloheximide treatment (-Glu + CHX). Addition of cycloheximide alone, a TORC1 activator, does not restore Kog1 localization to the vacuolar membrane indicating glucose specific signals are required for the dissociation of glucose starvation induced Kog1 bodies (-Glu + CHX).DOI: http://dx.doi.org/10.7554/eLife.09181.008
+**Figure 1—figure supplement 5.:** Localization of Kog1-YFP in cells co-expressing the vacuolar membrane marker Vph1-mCherry after 60 min of glucose starvation followed by; 60 min of glucose starvation (-Glu); 60 min of glucose repletion and 100 ug/ml cycloheximide treatment (SD + CHX); 60 min of glucose starvation and 100 ug/ml cycloheximide treatment (-Glu + CHX). Addition of cycloheximide alone, a TORC1 activator, does not restore Kog1 localization to the vacuolar membrane indicating glucose specific signals are required for the dissociation of glucose starvation induced Kog1 bodies (-Glu + CHX).
 
 To study Kog1-body formation in more detail, we next followed Kog1-YFP localization in cells transferred from rich medium (SD) to glucose starvation, nitrogen starvation, glucose + nitrogen starvation, and osmotic stress conditions. In glucose starvation and nitrogen + glucose starvation we saw rapid formation of Kog1-bodies ( τ = 11.0 ± 2.8 and 13.6 ± 2.4 min) in 57 ± 5% and 73 ± 4% of cells, respectively (Figure 1C). Kog1-bodies also formed in nitrogen starvation conditions, albeit at a much slower rate (τ = 153 ± 25 min; Figure 1C). However, we did not see a significant increase in Kog1-body formation in osmotic stress or when cells were simply transferred into fresh SD medium (Figure 1C).
 
@@ -72,33 +72,33 @@ Finally, to determine if Kog1-body formation is a reversible process, we exposed
 
 Putting these data together we conclude that Kog1-body formation is a rapid ( τ = ∼10 min) and reversible process, triggered by glucose and nitrogen starvation.
 
-## Kog1-bodies are distinct from stress granules and P-bodies
+### Kog1-bodies are distinct from stress granules and P-bodies
 
-Previous work has shown that TORC1 can localize to stress granules in both yeast and human cells (
+Previous work has shown that TORC1 can localize to stress granules in both yeast and human cells (Takahara and Maeda, 2012; Thedieck et al., 2013; Wippich et al., 2013). To determine if Kog1 associates with stress granules (or related structures known as P-bodies [Parker, 2012]) in glucose starvation conditions, we transfected cells carrying Kog1-YFP with mCherry-tagged versions of the stress granule marker Pbp1 or the P-body marker Edc3, and followed YFP and RFP localization. We found that stress granules start to form after 60 min in glucose starvation conditions, and become pervasive in cells grown to saturation in SD medium, but only co-localize with Kog1-bodies in 2.6% of cells (0% co-localization after 60 min, n = 94; 2.6% co-localization after 24 hrs, n = 190; Figure 2A). Similarly, P-bodies form in >80% cells after 60 min of glucose starvation, but only co-localize with Kog1-bodies in 3.4% of cells (n = 404; Figure 2B). Therefore, it appears that the Kog1-bodies formed in starvation conditions are distinct from both stress granules and P-bodies.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig2-v2.jpg)
 
-**Figure 2.:** (A) Localization of Kog1-YFP after 60 min or 24 hrs of glucose starvation in cells expressing the stress granule marker Pbp1-mCherry. (B) Localization of Kog1-YFP after 60 min of glucose starvation in cells expressing the P-Body marker Edc3-mCherry. The images in (A) were deconvolved using Deltavision software to ensure we could distinguish Pbp1 granules from cytoplasmic Pbp1.DOI: http://dx.doi.org/10.7554/eLife.09181.009
+**Figure 2.:** (A) Localization of Kog1-YFP after 60 min or 24 hrs of glucose starvation in cells expressing the stress granule marker Pbp1-mCherry. (B) Localization of Kog1-YFP after 60 min of glucose starvation in cells expressing the P-Body marker Edc3-mCherry. The images in (A) were deconvolved using Deltavision software to ensure we could distinguish Pbp1 granules from cytoplasmic Pbp1.
 
-## Snf1 regulates Kog1-body formation
+### Snf1 regulates Kog1-body formation
 
-Once we determined that Kog1-body formation occurs independently of stress granule and P-body formation, we sought to identify the signal that triggers Kog1 agglomeration in glucose starvation conditions. In a previous study we showed that the AMP activated protein kinase, Snf1, is required for TORC1 pathway inhibition during glucose starvation (
+Once we determined that Kog1-body formation occurs independently of stress granule and P-body formation, we sought to identify the signal that triggers Kog1 agglomeration in glucose starvation conditions. In a previous study we showed that the AMP activated protein kinase, Snf1, is required for TORC1 pathway inhibition during glucose starvation (Hughes Hallett et al., 2014). We therefore wondered if Snf1 regulates TORC1, at least in part, by driving Kog1 agglomeration. To test this hypothesis we monitored Kog1-YFP localization in snf1Δ cells. These experiments revealed that deletion of Snf1 causes a dramatic, 20-fold, increase in the time-constant for Kog1-body formation ( τ = 219 ± 21 min in snf1Δ cells; Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig3-v2.jpg)
 
-**Figure 3.:** (A-––B) Time-course data showing the fraction of (A) snf1Δ and (B) Kog1S491A/S494A cells that contain Kog1-bodies in SD medium (2% Glu) and at various time-points after glucose withdrawal (0% Glu). The blue points show the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate), while the blue lines show the best fit to a single exponential equation (0% Glu) or a line (2% Glu). The green and orange lines show the best fit to the wild-type data (from Figure 1C) for comparison.DOI: http://dx.doi.org/10.7554/eLife.09181.010
+**Figure 3.:** (A-––B) Time-course data showing the fraction of (A) snf1Δ and (B) Kog1S491A/S494A cells that contain Kog1-bodies in SD medium (2% Glu) and at various time-points after glucose withdrawal (0% Glu). The blue points show the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate), while the blue lines show the best fit to a single exponential equation (0% Glu) or a line (2% Glu). The green and orange lines show the best fit to the wild-type data (from Figure 1C) for comparison.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Trypsin digested and trypsin-thermolysin digested Kog1 purified from glucose staved cells were subjected to mass spectrometry-based peptide mapping. (A) Amino acid sequence colored in green have a FDR of 1% or less, sequence colored in yellow have a FDR of 5% or less, and uncolored sequence were not identified in the experiment. Labels of “‘C’ above the amino acid sequence show locations of carbamidomethyl modification (a result of chemical alkylation directed at cysteines during sample preparation), ‘O’ above the amino acid sequence show locations of oxidation (spontaneous oxidation of methionine), and ‘P’ above the amino acid sequence show locations of phosphorylation. The green coloring of the ‘P’ labels represents the site localization probability for phosphorylation at the site, as determined by PhosphoRS, as greater than 99%. (B) Filtered protein identification results indicating amino acids S491, T492, S494 and S1045 of Kog1 are potentially phosphorylated. Filtering was performed to a 5% false discovery rate.DOI: http://dx.doi.org/10.7554/eLife.09181.011
+**Figure 3—figure supplement 1.:** Trypsin digested and trypsin-thermolysin digested Kog1 purified from glucose staved cells were subjected to mass spectrometry-based peptide mapping. (A) Amino acid sequence colored in green have a FDR of 1% or less, sequence colored in yellow have a FDR of 5% or less, and uncolored sequence were not identified in the experiment. Labels of “‘C’ above the amino acid sequence show locations of carbamidomethyl modification (a result of chemical alkylation directed at cysteines during sample preparation), ‘O’ above the amino acid sequence show locations of oxidation (spontaneous oxidation of methionine), and ‘P’ above the amino acid sequence show locations of phosphorylation. The green coloring of the ‘P’ labels represents the site localization probability for phosphorylation at the site, as determined by PhosphoRS, as greater than 99%. (B) Filtered protein identification results indicating amino acids S491, T492, S494 and S1045 of Kog1 are potentially phosphorylated. Filtering was performed to a 5% false discovery rate.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) was used to analyze proteolytic digestion products of immunoprecipitation-purified Kog1 from glucose staved cells. The resulting mass spectrometry data were analyzed by the protein database search algorithm SEQUEST-HT to identify mass spectra to peptides. (A) Kog1 peptide 485-FAVANL(pS)TM(pS)LVNNPALQSR-504 showing all theoretical fragment ions for a triply-charged ion species for the peptide. Fragment masses in red and blue indicate b-series ions and y-series ions, respectively, detected in the tandem mass spectrum (shown in panel B). (B) Tandem mass spectrum identifying Kog1 peptide 485-FAVANL(pS)TM(pS)LVNNPALQSR-504. Peaks in red and blue indicate b-series and y-series ions that were matched to the theoretical peptide fragment masses in panel A.DOI: http://dx.doi.org/10.7554/eLife.09181.012
+**Figure 3—figure supplement 2.:** Liquid chromatography coupled to tandem mass spectrometry (LC-MS/MS) was used to analyze proteolytic digestion products of immunoprecipitation-purified Kog1 from glucose staved cells. The resulting mass spectrometry data were analyzed by the protein database search algorithm SEQUEST-HT to identify mass spectra to peptides. (A) Kog1 peptide 485-FAVANL(pS)TM(pS)LVNNPALQSR-504 showing all theoretical fragment ions for a triply-charged ion species for the peptide. Fragment masses in red and blue indicate b-series ions and y-series ions, respectively, detected in the tandem mass spectrum (shown in panel B). (B) Tandem mass spectrum identifying Kog1 peptide 485-FAVANL(pS)TM(pS)LVNNPALQSR-504. Peaks in red and blue indicate b-series and y-series ions that were matched to the theoretical peptide fragment masses in panel A.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** S491D/S494D and Kog1S491E/S494E at the native loci are inviable.To create the Kog1 variants Kog1S491A/S494A, Kog1S491D/S494D, and Kog1S491E/S494E we cloned Kog1 (with Ser 491 and 494 mutated to Ala, Asp, or Glu) into a plasmid carrying URA3 under an ADH1 promoter (pRS306). The plasmids were then cut using PflF1, and transformed into a wild type train (ACY044). In all cases this led to insertion of the plasmid at the Kog1 locus, creating a wild-type copy of Kog1, followed by the URA3 gene, followed by a mutant copy of Kog1 (AA, DD, or EE; as confirmed by sequencing). We then isolated colonies that excised the plasmid by selection on 5FOA. In this final step, we expected to find colonies that retain the wild-type copy of Kog1 as well as colonies that retain the mutated copy of Kog1 (depending on the site of recombination during the loop out event). In line with our expectations, we found 7/10 of the colonies created by looping in, and looping out, Kog1S491A/S494A had the AA mutation (the other 3 were wild-type). In contrast, we found 0/20 colonies had the DD mutation and 0/12 strains had the EE mutation. Specifically, we can calculate the probability of finding 0/20 DD and 0/12 EE mutations by chance, given that we found 7/10 AA mutations, at p<0.0001 and p<0.001, respectively, using Fisher’s exact test. The probability of finding 0/32 DD and EE mutants by chance, given that we found 7/10 AA mutants, is less than 1 x 10-–5. This strongly suggests that strains carrying Kog1 with phosphomimetic substitutions at Ser 491 and 494 are inviable.DOI: http://dx.doi.org/10.7554/eLife.09181.013
+**Figure 3—figure supplement 3.:** To create the Kog1 variants Kog1S491A/S494A, Kog1S491D/S494D, and Kog1S491E/S494E we cloned Kog1 (with Ser 491 and 494 mutated to Ala, Asp, or Glu) into a plasmid carrying URA3 under an ADH1 promoter (pRS306). The plasmids were then cut using PflF1, and transformed into a wild type train (ACY044). In all cases this led to insertion of the plasmid at the Kog1 locus, creating a wild-type copy of Kog1, followed by the URA3 gene, followed by a mutant copy of Kog1 (AA, DD, or EE; as confirmed by sequencing). We then isolated colonies that excised the plasmid by selection on 5FOA. In this final step, we expected to find colonies that retain the wild-type copy of Kog1 as well as colonies that retain the mutated copy of Kog1 (depending on the site of recombination during the loop out event). In line with our expectations, we found 7/10 of the colonies created by looping in, and looping out, Kog1S491A/S494A had the AA mutation (the other 3 were wild-type). In contrast, we found 0/20 colonies had the DD mutation and 0/12 strains had the EE mutation. Specifically, we can calculate the probability of finding 0/20 DD and 0/12 EE mutations by chance, given that we found 7/10 AA mutations, at p<0.0001 and p<0.001, respectively, using Fisher’s exact test. The probability of finding 0/32 DD and EE mutants by chance, given that we found 7/10 AA mutants, is less than 1 x 10-–5. This strongly suggests that strains carrying Kog1 with phosphomimetic substitutions at Ser 491 and 494 are inviable.
 
 Next, to determine how Snf1 activates Kog1-body formation, we purified TORC1 from cells: (1) growing in SD medium, (2) exposed to glucose starvation conditions for 5 min, and (3) exposed to osmotic stress conditions for 5 min (see Material and methods). We then used mass spectrometry to identify the phosphorylation sites on Tor1 and Kog1 in each condition. These data showed that Kog1 is phosphorylated on Ser 491 and 494 in glucose starvation conditions, but not in osmotic stress or SD medium (Figure 3—figure supplements 1, 2). A short time later, Young and coworkers showed that Ser 491 and 494 on Kog1 are Snf1-dependent phosphorylation sites (Braun et al., 2014). Therefore, to test if Snf1 drives Kog1-body formation by promoting phosphorylation of Ser 491 and 494, we constructed a strain carrying Kog1S491A/S494A-YFP at the native locus and monitored Kog1 localization in glucose starvation conditions. We found that Kog1S491A/S494A forms bodies slowly ( ττ = 309 ± 48 min; Figure 3B), and at a rate similar to that found in the snf1Δ strain (τ = 219 ± 21 min; Figure 3A). Thus, Snf1 increases the rate of Kog1 body formation by phosphorylating, or triggering phosphorylation, of Kog1 in glucose starvation conditions.
 
@@ -106,33 +106,33 @@ Kog1S491A/S494A cells also showed a reduced level of Kog1-body formation in SD m
 
 Finally, to test the impact that constitutive phosphorylation of Kog1 has on Kog1-body formation; we attempted to create strains carrying the phosphomimetic variants Kog1S491D/S494D and Kog1S491E/S494E. However, these mutants were not viable, indicating that Kog1-body formation (or Kog1 phosphorylation) inhibits cell growth and/or division (Figure 3—figure supplement 3).
 
-## Kog1-body formation depends on prion-like domains in Kog1
+### Kog1-body formation depends on prion-like domains in Kog1
 
-Protein body formation can be driven by called prion-like motifs or PriLMs (
+Protein body formation can be driven by called prion-like motifs or PriLMs (Alberti et al., 2009; Decker et al., 2007; Gilks et al., 2004; Han et al., 2012). These motifs tend to have long stretches of glutamine and/or asparagine residues and a low number of hydrophobic and/or charged residues (Alberti et al., 2009). In examining the Kog1 sequence we identified two such motifs, both containing long stretches of glutamine (Figure 4A). These regions were also identified as PriLMs using a hidden Markov Model trained on known prion sequences (Alberti et al., 2009). Interestingly, the first of these PriLMs includes the Snf1 dependent phosphorylation sites at Ser 491 and 494, while the second, smaller, PriLM is located approximately 300 amino acids away (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig4-v2.jpg)
 
-**Figure 4.:** (A) Sequence of two prion-like motifs in Kog1 (red letters) as defined by Alberti and coworkers (Alberti et al., 2009). The Snf1 dependent phosphorylation sites at Ser 491 and Ser 494 are shown in blue. (B) Time-course data showing the fraction of cells carrying Prion Domain mutation 1 (PrDm1), Prion Domain mutation 2 (PrDm2), or both mutations (PrDm1 + 2), that have Kog1-bodies in SD medium (0% Glu), and after glucose withdrawal (2% Glu). The blue points show the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate) while the blue lines show the best fit of each dataset to a single exponential equation (0% Glu for PrDm1 and PrDm2) or a line. The green and orange lines show the best fit to the wild-type data (from Figure 1C) for comparison.DOI: http://dx.doi.org/10.7554/eLife.09181.014
+**Figure 4.:** (A) Sequence of two prion-like motifs in Kog1 (red letters) as defined by Alberti and coworkers (Alberti et al., 2009). The Snf1 dependent phosphorylation sites at Ser 491 and Ser 494 are shown in blue. (B) Time-course data showing the fraction of cells carrying Prion Domain mutation 1 (PrDm1), Prion Domain mutation 2 (PrDm2), or both mutations (PrDm1 + 2), that have Kog1-bodies in SD medium (0% Glu), and after glucose withdrawal (2% Glu). The blue points show the average and standard deviation from three independent experiments (performed on different days with >200 cells per time-point, per replicate) while the blue lines show the best fit of each dataset to a single exponential equation (0% Glu for PrDm1 and PrDm2) or a line. The green and orange lines show the best fit to the wild-type data (from Figure 1C) for comparison.
 
 To determine if the PriLMs in Kog1 are involved in Kog1-body formation we mutated a stretch of glutamines in each motif, to form a stretch of alanines (Figure 4A), and measured the impact on Kog1-YFP localization. Disruption of prion-like motif 1 (PrDm1) caused a >2-fold decrease Kog1-body formation, both in SD medium (2.76 ± 0.6% in PrDm1 versus 8.6 ± 2.8% in wt; Figure 4B) and in glucose starvation conditions (26 ± 2.7% in PrDm1 versus 57 ± 5% in wt; Figure 4B). Disruption of prion-like motif 2 (PrDm2) also caused a (small) decrease Kog1-body formation in glucose starvation conditions (45 ± 4% in PrDm2 versus 57 ± 5% bodies in wt; Figure 4B). More remarkably, however, disruption of PriLM1 and PriLM2 completely blocked Kog1-body formation in both SD medium and glucose starvation conditions (1.0 ± 2.1% cells with bodies; Figure 4B). Thus, Kog1-body formation depends on the two prion-like motifs in Kog1.
 
-## Kog1-body formation increases the threshold for TORC1 activation
+### Kog1-body formation increases the threshold for TORC1 activation
 
 During log growth, TORC1 phosphorylates and activates the S6 kinase, Sch9, to drive protein and ribosome synthesis (Bodenmiller et al., 2010; Huber et al., 2011; Urban et al., 2007). This key signaling event is readily measured using a band-shift assay developed by Loewith and coworkers (Urban et al., 2007). Using this assay, we asked if and how Kog1-bodies influence TORC1 signaling by following Sch9 phosphorylation in five strains that have a defect in Kog1-body formation (Kog1S491A/S494A, snf1Δ, PrDm1, PrDm2, PrDm1 + 2).
 
-We found that Sch9 is phosphorylated at or near wild-type levels during log phase growth in all of our mutant strains (
+We found that Sch9 is phosphorylated at or near wild-type levels during log phase growth in all of our mutant strains (Figures 5A, B). Sch9 is then rapidly (≤2.5 min) and completely dephosphorylated during glucose starvation in the wild-type, Kog1S491A/S494A, PrDm1, PrDm2 and PrDm1 + 2 strains (Figures 5A, B). Thus, Kog1-body formation does not appear to play a significant role in TORC1-Sch9 signaling during acute glucose starvation since (1) Sch9 dephosphorylation occurs much faster than the accumulation of Kog1-bodies ( ττ = <2.5 min versus 11 ± 3 min) and (2) most of the mutants that have a defect in Kog1-body formation behave like the wild-type strain in the Sch9 phosphorylation assay. The only exception is the snf1Δ strain, where we see a clear defect in Sch9 dephosphorylation after 5 and 10 min of glucose starvation (Figure 5A). However, it is very unlikely that this defect is due to inhibition of Kog1-body formation, since the Kog1S491A/S494A strain does not have a defect in the Sch9 assay (Figure 5A). Instead, it appears that Snf1 regulates the TORC1 pathway by triggering Kog1 phosphorylation at Ser 491 and 494, and through an additional, unknown, mechanism.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig5-v2.jpg)
 
-**Figure 5.:** (A) Bandshift assays measuring Sch9 phosphorylation in SD medium (0 min; 2% glucose), at various time-points after glucose withdrawal (2.5-–60min; 0% glucose), and then at various time-points after adding 2% glucose back to the cultures (1, 5, 10, and 20 min; 2% glucose). (B) Quantitation of the band-shift data from (A). The data are normalized to set the wild-type value to 1.0 in 2% glucose, and 0.0 in 0% glucose (see Methods). (C-–D) Sch9 phosphorylation data for wild-type, snf1Δ, Kog1S491A/S494A, and PrDm1 + 2 cells, grown in SD medium (2% glucose), after transfer into synthetic medium - glucose for 60 min (0% glucose), and then at various time-points after adding 0.02% (C) or 0.1% glucose (D) back to the culture. Quantitation in (C) and (D) was performed as described in (B) but here the graphs show the average and standard deviation from three separate experiments. Data for PrDm1 and PrDm2 are shown in Figure 5—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.09181.015
+**Figure 5.:** (A) Bandshift assays measuring Sch9 phosphorylation in SD medium (0 min; 2% glucose), at various time-points after glucose withdrawal (2.5-–60min; 0% glucose), and then at various time-points after adding 2% glucose back to the cultures (1, 5, 10, and 20 min; 2% glucose). (B) Quantitation of the band-shift data from (A). The data are normalized to set the wild-type value to 1.0 in 2% glucose, and 0.0 in 0% glucose (see Methods). (C-–D) Sch9 phosphorylation data for wild-type, snf1Δ, Kog1S491A/S494A, and PrDm1 + 2 cells, grown in SD medium (2% glucose), after transfer into synthetic medium - glucose for 60 min (0% glucose), and then at various time-points after adding 0.02% (C) or 0.1% glucose (D) back to the culture. Quantitation in (C) and (D) was performed as described in (B) but here the graphs show the average and standard deviation from three separate experiments. Data for PrDm1 and PrDm2 are shown in Figure 5—figure supplement 1.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Sch9 phosphorylation data for PrDm1 and PrDm2 cells grown in synthetic medium containing 2% glucose (SD; 0min), after transfer into synthetic medium lacking glucose (-G; 60 min), and then at 1, 5, 10, and 20 min time-points after adding back 0.02% (A) or 0.1% (B) glucose. Quantitation of bandshift data, as described in Figure 5, showing the mean and standard deviation from three separate experiments is displayed in the histograms.DOI: http://dx.doi.org/10.7554/eLife.09181.016
+**Figure 5—figure supplement 1.:** Sch9 phosphorylation data for PrDm1 and PrDm2 cells grown in synthetic medium containing 2% glucose (SD; 0min), after transfer into synthetic medium lacking glucose (-G; 60 min), and then at 1, 5, 10, and 20 min time-points after adding back 0.02% (A) or 0.1% (B) glucose. Quantitation of bandshift data, as described in Figure 5, showing the mean and standard deviation from three separate experiments is displayed in the histograms.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** Sch9 phosphorylation data for wt and PrDm1 + 2 cells grown in synthetic medium containing 2% glucose (SD; 0min), after transfer into synthetic medium lacking glucose (-G; 60 min), and then at 1, 5, 10, and 20 min time-points after adding back 0.02% (A) or 0.1% (B) glucose in the presence of rapamycin (200 ng/ml). Quantitation of bandshift data, as described in Figure 5 is displayed in the histograms.DOI: http://dx.doi.org/10.7554/eLife.09181.017
+**Figure 5—figure supplement 2.:** Sch9 phosphorylation data for wt and PrDm1 + 2 cells grown in synthetic medium containing 2% glucose (SD; 0min), after transfer into synthetic medium lacking glucose (-G; 60 min), and then at 1, 5, 10, and 20 min time-points after adding back 0.02% (A) or 0.1% (B) glucose in the presence of rapamycin (200 ng/ml). Quantitation of bandshift data, as described in Figure 5 is displayed in the histograms.
 
 After discovering that TORC1/Sch9 inhibition precedes Kog1-body formation, we reasoned that Kog1 agglomeration might act as a slow step to lock TORC1 in an inactive state. To test this hypothesis we subjected wild-type and mutant strains to acute glucose starvation for 60 min, added 2% glucose back to the medium, and then followed Sch9 phosphorylation (Figure 5A). To our surprise, we saw complete, or near complete, Sch9 phosphorylation in all of our strains (Figures 5A, B). However, when we repeated this experiment, but only added 0.02% or 0.1% glucose back to the medium, we saw significantly more Sch9 phosphorylation in the mutant cells than in wild-type cells (Figures 5C, D and Figure 5—figure supplement 1 and 2). In fact, 0.1% glucose triggered ∼50% Sch9 phosphorylation in the wild-type strain compared with ∼100% Sch9 phosphorylation in our strongest mutant, PrDm1 + 2 (Figure 5D). These results are remarkable since only 60% of wild-type cells have Kog1-bodies in our starting conditions (Figure 1C) and as a result, it should only be possible to see a 60% increase in Sch9 phosphorylation in the mutant strains (an increase from 40% activity in wild-type cells to 100% activity in mutant cells). Therefore, putting all of our band-shift data together, we conclude that Kog1-body formation acts to increase the threshold for TORC1 activation in cells subjected to medium or long-term glucose starvation.
 
@@ -142,15 +142,274 @@ In this study we show that glucose starvation leads to rapid inactivation of TO
 
 We also show that Kog1-body formation is driven by the AMPK, Snf1. This kinase is inactive during log growth and then activated upon glucose starvation, where it triggers massive changes in transcription and metabolism (Braun et al., 2014; Hedbacker and Carlson, 2008; Usaite et al., 2009). As part of this program, Snf1 activates phosphorylation of Kog1 at Ser 491 and 494. It is important to note, however, that Snf1-dependent phosphorylation of Kog1 is probably indirect since the sequence around Ser 491 and 494 (AVANLS*TMS*LVN) does not match known AMPK targets sites such as LRRVxS*xxNL and MKKSxS*xxDV (Gwinn et al., 2008). Further work is therefore needed to identify the kinase that acts downstream of Snf1 to phosphorylate Kog1.
 
-Snf1-dependent phosphorylation of Kog1 occurs in the middle of a glutamine rich, prion-like motif. We show that this prion-like motif and another similar motif, located 300 amino acids away, are essential for Kog1-body formation. Interestingly, the Snf1-dependent phosphorylation sites, and both prion-like domains found in S.
+Snf1-dependent phosphorylation of Kog1 occurs in the middle of a glutamine rich, prion-like motif. We show that this prion-like motif and another similar motif, located 300 amino acids away, are essential for Kog1-body formation. Interestingly, the Snf1-dependent phosphorylation sites, and both prion-like domains found in S. cerevisae, are conserved in numerous other yeast species including the pathogen Candida glabrata (Figure 6). However, we could not find prion-like domains in Kog1 from Schizosaccharomyces pombe, Neurospora Crassa, and related species (Figure 6). Strikingly, most (5/6) of the yeast species missing prion-like domains in Kog1 have genes encoding the tuberous sclerosis complex (TSC1 and TSC2), while all (17/17) of the yeast species with prion-like domains in Kog1 are missing the tuberous sclerosis complex (TSC1 or TSC1 and TSC2 genes; Table 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig6-v2.jpg)
 
-**Figure 6.:** cerevisiae and 22 fungal orthologs.(A) PriLM1 and (B) PriLM2 (shown in bold) were defined using a hidden Markov Model trained on known yeast prion domains (Alberti et al., 2009). The Glutamine (Q) and Asparagine (N) residues in each PriLM are highlighted in red, while the Snf1 targets sites (Ser 491 and 494) are highlighted in blue. PriLMs 1 and 2 are both insertions between highly conserved domains in Kog1.DOI: http://dx.doi.org/10.7554/eLife.09181.018
+**Figure 6.:** (A) PriLM1 and (B) PriLM2 (shown in bold) were defined using a hidden Markov Model trained on known yeast prion domains (Alberti et al., 2009). The Glutamine (Q) and Asparagine (N) residues in each PriLM are highlighted in red, while the Snf1 targets sites (Ser 491 and 494) are highlighted in blue. PriLMs 1 and 2 are both insertions between highly conserved domains in Kog1.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/09181/elife-09181-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** S. cerevisiae with orthologous genes in higher eukaryotes.(A) Elegans group nematodes show a loosely conserved expansion of Glutamine (Q) and Asparagine (N) residues in-between conserved domains of Kog1/Raptor. Q and N residues within this region are highlighted in red text. (B) A Glutamine and Asparagine rich domain in Kog1/Raptor is anti-correlated with the presence of Tsc1 and Tsc2 genes (TSC complex) in higher eukaryotes. The table shows the number, and (percent) of Q and N residues within a loosely conserved Q/N rich domain in Kog1/Raptor. Elegans group nematodes, lacking Tsc1 and Tsc2 genes, and the tuberous sclerosis complex (TSC) signaling pathway, carry a Q/N rich domain within the Kog1/Raptor ortholog daf-15. Genebank references to Tsc1 and Tsc2 orthologs are provided.DOI: http://dx.doi.org/10.7554/eLife.09181.019
+**Figure 6—figure supplement 1.:** (A) Elegans group nematodes show a loosely conserved expansion of Glutamine (Q) and Asparagine (N) residues in-between conserved domains of Kog1/Raptor. Q and N residues within this region are highlighted in red text. (B) A Glutamine and Asparagine rich domain in Kog1/Raptor is anti-correlated with the presence of Tsc1 and Tsc2 genes (TSC complex) in higher eukaryotes. The table shows the number, and (percent) of Q and N residues within a loosely conserved Q/N rich domain in Kog1/Raptor. Elegans group nematodes, lacking Tsc1 and Tsc2 genes, and the tuberous sclerosis complex (TSC) signaling pathway, carry a Q/N rich domain within the Kog1/Raptor ortholog daf-15. Genebank references to Tsc1 and Tsc2 orthologs are provided.
+
+**Table 1.**
+ PriLM1 and PriLM2 are anti-correlated with the presence of Tsc1 and Tsc2 genes in fungal genomes. Quantitation, number and (percentage), of Glutamine (Q) and Asparagine (N) residues within PriLM1 and PriLM2 domains of Kog1 and othologs (Figure 6) reveals three clusters of hosts. (1) Species carrying Q/N rich PriLM1 and PriLM2 domains lack both Tsc1 and Tsc2 genes and the tuberous sclerosis complex (TSC) signaling pathway but show conservation of S491/494 phosphorylation motif. (2) Species carrying PriLM1 of intermediate Q/N richness lack Tsc1 but carry the Tsc2 gene. The influence on TSC pathway signaling is unclear. (3) Species lacking PriLM1 and PriLM2 carry both Tsc1 and Tsc2 genes and an operational TSC signaling pathway. Genbank references to Tsc1 and Tsc2 orthologs are provided.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">PriLM1</th>
+      <th colspan="2">PriLM2</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Q/N</td>
+      <td>(%QN)</td>
+      <td>Q/N</td>
+      <td>(%QN)</td>
+      <td>Tsc1</td>
+      <td>Tsc2</td>
+      <td>S491/494</td>
+    </tr>
+    <tr>
+      <td>S. cerevisiae</td>
+      <td>28</td>
+      <td>(35.90)</td>
+      <td>20</td>
+      <td>(58.82)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>S. kluyveri</td>
+      <td>49</td>
+      <td>(55.68)</td>
+      <td>17</td>
+      <td>(65.38)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>S. paradoxus</td>
+      <td>29</td>
+      <td>(36.71)</td>
+      <td>20</td>
+      <td>(58.82)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>S. mikatae</td>
+      <td>28</td>
+      <td>(36.36)</td>
+      <td>20</td>
+      <td>(58.82)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>S. castellii</td>
+      <td>32</td>
+      <td>(37.21)</td>
+      <td>15</td>
+      <td>(55.56)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>S. bayanus</td>
+      <td>24</td>
+      <td>(32.43)</td>
+      <td>21</td>
+      <td>(60.00)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>C. glabrata</td>
+      <td>21</td>
+      <td>(26.92)</td>
+      <td>17</td>
+      <td>(50.00)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>A. gossypii</td>
+      <td>19</td>
+      <td>(26.39)</td>
+      <td>18</td>
+      <td>(56.25)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>K. waltii</td>
+      <td>24</td>
+      <td>(34.29)</td>
+      <td>11</td>
+      <td>(52.38)</td>
+      <td></td>
+      <td></td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>L. elongosporus</td>
+      <td>31</td>
+      <td>(40.26)</td>
+      <td>1</td>
+      <td>(16.67)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>K. lactis</td>
+      <td>17</td>
+      <td>(27.42)</td>
+      <td>24</td>
+      <td>(63.16)</td>
+      <td></td>
+      <td>CAH03101.1</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>C. parapsilosis</td>
+      <td>17</td>
+      <td>(27.42)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>CCE43871.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C. lusitaniae</td>
+      <td>1 5</td>
+      <td>(28.30)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>EEQ40372</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>D. hansenii</td>
+      <td>14</td>
+      <td>(23.73)</td>
+      <td>1</td>
+      <td>(50.00)</td>
+      <td></td>
+      <td>CAG86052.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C. albicans</td>
+      <td>14</td>
+      <td>(28.00)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>EAK92235.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C. guilliermondii</td>
+      <td>11</td>
+      <td>(24.44)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>EDK41275.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C. tropicalis</td>
+      <td>11</td>
+      <td>(16.42)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>EER32197.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>A. nidulans</td>
+      <td>3</td>
+      <td>(20.00)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td></td>
+      <td>EAA58119.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y. lipolytica</td>
+      <td>3</td>
+      <td>(21.43)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td>CAG79453.1</td>
+      <td>CAG79234.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>N. crassa</td>
+      <td>2</td>
+      <td>(13.33)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td>ESA42867.1</td>
+      <td>ESA42646.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S. japonicus</td>
+      <td>1</td>
+      <td>(6.67)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td>EEB05964.1</td>
+      <td>EEB09703.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S. octosporus</td>
+      <td>1</td>
+      <td>(6.67)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td>EPX4426.1</td>
+      <td>EPX71342.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>S. pombe</td>
+      <td>1</td>
+      <td>(6.67)</td>
+      <td>0</td>
+      <td>(0.00)</td>
+      <td>CAA91078.1</td>
+      <td>CAB52735.1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We also find prion-like domains in Kog1 from C. elegans and other related species, but not in flies, mice or humans (Figure 6—figure supplement 1). Again, the organisms with prion-like domains in Kog1 are missing TSC1 and TSC2 (Figure 6—figure supplement 1).
 
@@ -160,13 +419,174 @@ Beyond establishing a role for Kog1-body formation in TORC1 regulation, the data
 
 ## Materials and methods
 
-## Experimental procedures
+### Experimental procedures
 
-## S. cerevisiae strains
+#### S. cerevisiae strains
 
-All strains used in this study were generated in a haploid S. cerevisiae strain, W303 background (trp1, can1, leu2, his3, ura3), using standard methods and are listed in Table 2. Note that the Kog1-YFP and Tor1-3xGFP strains have the same growth rate as the wild-type strain and thus Kog1-YFP and Tor1 with an internal 3xGFP are fully functional (Binda et al., 2009; Sturgill et al., 2008).10.7554/eLife.09181.021Table 2.S. cerevisiae strains used in this study.DOI: http://dx.doi.org/10.7554/eLife.09181.021StrainCatalogue NumberDescriptionSourcewtACY044W303 MATa trp1-1 can1-100 leu2-3,112 his3-11,15 ura3 GAL +  Capaldi et al. 2008 Kog1-YFP Vph1-mChACY731[ACY044] KOG1-YFP (HIS3) VPH1-mCherry (NAT +) MATa This StudyTor1-GFP Vph1-mChACY939[ACY044] TOR1-D330 3xGFP VPH1-mCherry (NAT +) MATa This StudyKog1-YFPACY173[ACY044] KOG1-YFP (HIS3) MATa This StudyKog1-YFP Pbp1-mChACY959[ACY044] KOG1-YFP (HIS3) pPBP1mCH (URA3) MATa This StudyKog1-YFP Edc3-mChACY856[ACY044] KOG1-YFP (HIS3) pEDC3mCH (URA3) MATa This Studysnf1Δ Kog1-YFPACY743[ACY044] SNF1::URA3 KOG1-YFP (HIS3) MATa This StudyKog1-3xFlagACY161[ACY044] KOG1-3xFLAG (HIS3) MATa This StudyS491A S494A Kog1-YFPACY871[ACY044] KOG1S491A S494A-YFP (HIS3) MATa This StudyPrDm1 Kog1-YFPACY844[ACY044] KOG1Q513-525A-YFP (HIS3) MATa This StudyPrDm2 Kog1-YFPACY768[ACY044] KOG1Q846-855A-YFP (HIS3) MATa This StudyPrDm1 + 2 Kog1-YFPACY878[ACY044] KOG1Q513-525A Q846-855A-YFP (HIS3) MATa This StudySch9-3HAACY359[ACY044] SCH9-3HA (TRP1) MATa Hughes Hallett et al. 2014 snf1Δ Sch9-3HAACY537[ACY044] SNF1::URA3 SCH9-3HA (TRP1) MATa Hughes Hallett et al. 2014 S491A S494A Sch9-3HAACY869[ACY044] KOG1S491A S494ASCH9-3HA (TRP1) MATa This StudyPrDm1 Sch9-3HAACY766[ACY044] KOG1Q513-525ASCH9-3HA (TRP1) MATa This StudyPrDm2 Sch9-3HAACY840[ACY044] KOG1Q846-855ASCH9-3HA (TRP1) MATa This StudyPrDm1 + 2 Sch9-3HAACY765[ACY044] KOG1Q513-525A Q846-855ASCH9-3HA (TRP1) MATa This StudyTco89-YFPACY171[ACY044] Tco89-YFP (HIS3) MATa This StudyPrDM1 + 2 Tco89-YFPACY783[ACY044] KOG1Q513-525A Q846-855A Tco89-YFP (HIS3) MATa This StudyPlasmidCatalogue NumberDescriptionSourcepEDC3mCHACB252[CEN] EDC3-mCherry (URA3)Buchan et al. 2008 pPBP1mCHACB282[CEN] PBP1-mCherry (URA3)Shah et al. 2014
+All strains used in this study were generated in a haploid S. cerevisiae strain, W303 background (trp1, can1, leu2, his3, ura3), using standard methods and are listed in Table 2. Note that the Kog1-YFP and Tor1-3xGFP strains have the same growth rate as the wild-type strain and thus Kog1-YFP and Tor1 with an internal 3xGFP are fully functional (Binda et al., 2009; Sturgill et al., 2008).
 
-## Fluorescence microscopy
+**Table 2.**
+ S. cerevisiae strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Catalogue Number</th>
+      <th>Description</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wt</td>
+      <td>ACY044</td>
+      <td>W303 MATa trp1-1 can1-100 leu2-3,112 his3-11,15 ura3 GAL +</td>
+      <td>Capaldi et al. 2008</td>
+    </tr>
+    <tr>
+      <td>Kog1-YFP Vph1-mCh</td>
+      <td>ACY731</td>
+      <td>[ACY044] KOG1-YFP (HIS3) VPH1-mCherry (NAT +) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Tor1-GFP Vph1-mCh</td>
+      <td>ACY939</td>
+      <td>[ACY044] TOR1-D330 3xGFP VPH1-mCherry (NAT +) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Kog1-YFP</td>
+      <td>ACY173</td>
+      <td>[ACY044] KOG1-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Kog1-YFP Pbp1-mCh</td>
+      <td>ACY959</td>
+      <td>[ACY044] KOG1-YFP (HIS3) pPBP1mCH (URA3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Kog1-YFP Edc3-mCh</td>
+      <td>ACY856</td>
+      <td>[ACY044] KOG1-YFP (HIS3) pEDC3mCH (URA3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>snf1Δ Kog1-YFP</td>
+      <td>ACY743</td>
+      <td>[ACY044] SNF1::URA3 KOG1-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Kog1-3xFlag</td>
+      <td>ACY161</td>
+      <td>[ACY044] KOG1-3xFLAG (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>S491A S494A Kog1-YFP</td>
+      <td>ACY871</td>
+      <td>[ACY044] KOG1S491A S494A-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm1 Kog1-YFP</td>
+      <td>ACY844</td>
+      <td>[ACY044] KOG1Q513-525A-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm2 Kog1-YFP</td>
+      <td>ACY768</td>
+      <td>[ACY044] KOG1Q846-855A-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm1 + 2 Kog1-YFP</td>
+      <td>ACY878</td>
+      <td>[ACY044] KOG1Q513-525A Q846-855A-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Sch9-3HA</td>
+      <td>ACY359</td>
+      <td>[ACY044] SCH9-3HA (TRP1) MATa</td>
+      <td>Hughes Hallett et al. 2014</td>
+    </tr>
+    <tr>
+      <td>snf1Δ Sch9-3HA</td>
+      <td>ACY537</td>
+      <td>[ACY044] SNF1::URA3 SCH9-3HA (TRP1) MATa</td>
+      <td>Hughes Hallett et al. 2014</td>
+    </tr>
+    <tr>
+      <td>S491A S494A Sch9-3HA</td>
+      <td>ACY869</td>
+      <td>[ACY044] KOG1S491A S494ASCH9-3HA (TRP1) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm1 Sch9-3HA</td>
+      <td>ACY766</td>
+      <td>[ACY044] KOG1Q513-525ASCH9-3HA (TRP1) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm2 Sch9-3HA</td>
+      <td>ACY840</td>
+      <td>[ACY044] KOG1Q846-855ASCH9-3HA (TRP1) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDm1 + 2 Sch9-3HA</td>
+      <td>ACY765</td>
+      <td>[ACY044] KOG1Q513-525A Q846-855ASCH9-3HA (TRP1) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>Tco89-YFP</td>
+      <td>ACY171</td>
+      <td>[ACY044] Tco89-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>PrDM1 + 2 Tco89-YFP</td>
+      <td>ACY783</td>
+      <td>[ACY044] KOG1Q513-525A Q846-855A Tco89-YFP (HIS3) MATa</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasmid</td>
+      <td>Catalogue Number</td>
+      <td>Description</td>
+      <td>Source</td>
+    </tr>
+    <tr>
+      <td>pEDC3mCH</td>
+      <td>ACB252</td>
+      <td>[CEN] EDC3-mCherry (URA3)</td>
+      <td>Buchan et al. 2008</td>
+    </tr>
+    <tr>
+      <td>pPBP1mCH</td>
+      <td>ACB282</td>
+      <td>[CEN] PBP1-mCherry (URA3)</td>
+      <td>Shah et al. 2014</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Fluorescence microscopy
 
 Cultures were grown in 25 ml of SD medium (or 25 ml of SD medium missing uracil in experiments with plasmids) in 125 ml conical flasks shaking at 200 rpm and 30°C until they reached mid-log phase (OD600 between 0.3 and 0.4). The cultures were then diluted to OD600 0.1 in 25 ml of fresh medium and allowed to grow to an OD600 of 0.4. At this point, 300 μl samples were transferred to a chamber slide (Nunc Lab-Tek II #155409) that had been treated with 2 mg/ml concanavilin A. The slides were then washed three times with 300 μl treatment medium (either SD, SD + KCl, or SD-Glu, -N, or -Glu + N) and loaded into a 30o°C chamber.
 
@@ -174,13 +594,13 @@ Images were acquired using a Deltavision Elite Microscope equipped with an Olymp
 
 We calculated the fraction of cells containing one or more Kog1 body by manually inspecting the images for >200 cells per time-point, per experiment. The time-course data was fit to a single exponential equation; A*(1-e∧-t/τ) + c for starvation and (A*(e^∧-t/τ) + c for repletion experiments, where A is the fraction of cells that form bodies during the time-course, τ is the apparent time-constant, and c is fraction of cells that have bodies at the start (starvation) or end (repletion) of the time-course. In cases where there was no change in Kog1-body levels during the time-course (e.g. in SD medium) the data was fit to a line. All fitting was done in Igor Pro 6.3 (WaveMetrics) and the errors reported are the estimated standard deviation from the fit.
 
-## Purification of Kog1/TORC1 and peptide mapping
+#### Purification of Kog1/TORC1 and peptide mapping
 
 Yeast expressing Kog1-3xFlag were inoculated into 50 ml of SD medium (for glucose starvation experiments) or 50 ml YEPD (for osmotic stress experiments) and grown overnight in 250 ml conical flasks, shaking at 200 rpm and 30°C. These cultures were then used to inoculate 2.5L of fresh media to OD600 0.1 and grown (as above) in 4L flasks until they reached an OD600 of 0.6. At this point cultures were either harvested by filtration and frozen in liquid nitrogen (SD sample), or subjected to 0.4M KCl stress, or glucose starvation for 5 min, and harvested by filtration and frozen in liquid nitrogen.
 
 To isolate TORC1, cells were washed off the filter with 10 ml chilled lysis buffer (50 mM HEPES pH 7.1, 50 mM NaF, 10% glycerol, 150 mM KCl, 0.5 mM EDTA, 0.5 mM EGTA, 0.5% Tween 20, and 2 mM PMSF) and pelleted by centrifugation at 4°C. The cell pellets were then resuspended in chilled lysis buffer supplemented with a protease inhibitor cocktail (Sigma Aldrich, St. Louis, MO; P8215), split into 100 OD unit aliquots, and lysed by bead beating (5 X 20 s with 30 s intervals on ice). The lysate was then collected after centrifugation for 5min at 3000rpm and transferred into fresh tubes before being spun down again at 500 g for 5min at 4°C. The clarified lysate was then incubated with 100 μl protein G Dynal beads + 10 μl anti-Flag antibody for 30min at 4°C. The resin was washed 3 times for 1 min with 1 ml lysis buffer at 4°C and the protein eluted by boiling the beads in 150 μl SDS loading buffer for 5min, and loaded onto a 10% acrylamide gel (BioRad 161-1155). The gels were then stained using colloidal blue and the bands corresponding to Tor1 and Kog1 excised, subjected to protease treatment, and analyzed using Mass Spectrometry.
 
-## Sch9 bandshift experiments
+#### Sch9 bandshift experiments
 
 Bandshift measurements were performed using a modified version of the protocol developed by Urban and Loewith (Urban et al., 2007). Cultures were grown in conical flasks shaking at 200rpm and 30°C until mid log phase (OD600 between 0.55 and 0.6). At this point, a 47 ml sample was collected, mixed with 3 ml 100% Trichloroacetic acid (TCA), and held on ice for at least 30 min (and up to 6 hrs). The remaining culture was then collected by filtration, transferred to the appropriate medium after one wash with 100ml of -Glu medium, and further samples collected in TCA, as described above. The samples were then centrifuged at 4000rpm for 5 min at 4°C, washed twice with 4°C water, twice with acetone, and disrupted by sonication at 15% amplitude for 5s before centrifugation at 8000rpm for 30s. The cell pellets were then dried in a speedvac for 10 min at room temperature, and frozen until required at -20°C.
 
@@ -188,7 +608,7 @@ Protein extraction was performed by bead beating (6 x 1 min, full speed) in urea
 
 Protein mobility shift data were quantified using a custom MATLAB script, described previously in (Hughes Hallett et al., 2014). Briefly, the data in each lane of the gel was simplified by calculating the average signal intensity at each position along the length of the lane, and normalized so that the total signal matches that of the t = 0 control. The normalized data were then used to calculate a position weighted mean for each lane. This was done by defining the first pixel/data point in the gel as 100% phosphorylated and the last pixel in the gel as 0% phosphorylated. Pixels in-between these points were weighted (between 100 and 0) based on their position relative to the top and bottom of the gel (on a linear scale). The values for each position (pixel) were then summed to calculate the total amount of protein phosphorylation in a sample. Finally, since these numbers are in arbitrary units, we normalized all of the values using those found in the wild-type strain under the same conditions. This was done by multiplying the mean phosphorylation values in each strain by constant A, and adding a constant B, so that the values in the wild-type strain at time = 0 min (SD, 2% glucose) are 1.0 and time = 60 min (-G, 0% glucose) are 0.0. Error bars were then scaled using the same constants.
 
-## Mass spectrometry
+#### Mass spectrometry
 
 Gel slices were washed for 15 min each with water, 50/50 acetonitrile/water, acetonitrile, 100 mM ammonium bicarbonate, followed by 50/50 acetonitrile/100 mM ammonium bicarbonate. The solution was then removed and the gel slices dried by vacuum centrifugation. Next, the dried gel slices were reduced by covering them with 10 mM dithiothreitol in 100 mM ammonium bicarbonate and heating them at 56°C for 45 min; alkylated by covering them with a solution of 55 mM iodoacetamide in 100 mM ammonium bicarbonate and incubating in the dark at ambient temperature for 30min, and washed with 100 mM ammonium bicarbonate for 10 min and 50 mM ammonium biocarbonate + 50% acetonitrile for 10 min. The gel slices were then dried again and treated with an ice-cold solution of 12.5 ng/μL trypsin (Promega, Madison, WI) in 100 mM ammonium bicarbonate. After 45 min, the trypsin solution was removed, discarded, and a volume of 50 mM ammonium bicarbonate was added to cover the gel slices and they were incubated overnight at 37°C with mixing on a shaker. Samples were then spun down in a microfuge and the supernatant collected. The same Gel slices were then incubated in 0.1% trifluoroacetic acid (TFA) and acetonitrile, centrifuged, and the supernatant collected. At this point, the digestion supernatant and the extraction supernatant were pooled, split into two tubes, and concentrated using vacuum centrifugation. One tube was further digested with thermolysin (Promega, Madison, WI) by resuspending the tryptically digested peptides with a solution containing 50 mM Tris-HCl pH 8 and 0.5 mM calcium chloride and adding 1 μg of thermolysin. Digestion was carried out at 75°C with mixing for 5 hr. The thermolysin was quenched by adding TFA to a 0.5% final concentration. All samples were desalted using ZipTip C18 (Millipore, Billerica, MA) and eluted with 70% acetonitrile/0.1% TFA. The desalted material was concentrated to dryness in a speed vac.
 

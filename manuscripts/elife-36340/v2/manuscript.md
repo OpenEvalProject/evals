@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.36340.001 Rapid generation of drug-resistant mutations in HIV-1 reverse transcriptase (RT), a prime target for anti-HIV therapy, poses a major impediment to effective anti-HIV treatment. Our previous efforts have led to the development of two novel non-nucleoside reverse transcriptase inhibitors (NNRTIs) with piperidine-substituted thiophene[3,2- d ]pyrimidine scaffolds, compounds K-5a2 and 25a, which demonstrate highly potent anti-HIV-1 activities and improved resistance profiles compared with etravirine and rilpivirine, respectively. Here, we have determined the crystal structures of HIV-1 wild-type (WT) RT and seven RT variants bearing prevalent drug-resistant mutations in complex with K-5a2 or 25a at ~2 Å resolution. These high-resolution structures illustrate the molecular details of the extensive hydrophobic interactions and the network of main chain hydrogen bonds formed between the NNRTIs and the RT inhibitor-binding pocket, and provide valuable insights into the favorable structural features that can be employed for designing NNRTIs that are broadly active against drug-resistant HIV-1 variants.
+Rapid generation of drug-resistant mutations in HIV-1 reverse transcriptase (RT), a prime target for anti-HIV therapy, poses a major impediment to effective anti-HIV treatment. Our previous efforts have led to the development of two novel non-nucleoside reverse transcriptase inhibitors (NNRTIs) with piperidine-substituted thiophene[3,2-d]pyrimidine scaffolds, compounds K-5a2 and 25a, which demonstrate highly potent anti-HIV-1 activities and improved resistance profiles compared with etravirine and rilpivirine, respectively. Here, we have determined the crystal structures of HIV-1 wild-type (WT) RT and seven RT variants bearing prevalent drug-resistant mutations in complex with K-5a2 or 25a at ~2 Å resolution. These high-resolution structures illustrate the molecular details of the extensive hydrophobic interactions and the network of main chain hydrogen bonds formed between the NNRTIs and the RT inhibitor-binding pocket, and provide valuable insights into the favorable structural features that can be employed for designing NNRTIs that are broadly active against drug-resistant HIV-1 variants.
 
 ## Introduction
 
@@ -43,19 +43,35 @@ In this study, we demonstrated that 25a is superior to RPV in inhibiting RT bear
 
 ## Results
 
-## Structure determination
+### Structure determination
 
 The complexes of 25a or K-5a2 bound to WT RT or RT variants with drug-resistant mutations were prepared by soaking either NNRTI into the RT crystals. The structures were determined by molecular replacement using the structure of WT RT/RPV complex (PDB ID: 4G1Q) as the search template and were subsequently refined to 1.9–2.23 Å resolution (Supplementary file 1). Overall, the structure of RT in the complexes has the same ‘open-cleft’ conformation as observed in prior RT/NNRTIs structures (Figure 2A and C) (Das et al., 2008, 2004; Ding et al., 1995; Ren et al., 1995). The Fo-Fc electron-density maps unambiguously defined the binding positions and conformations of both inhibitors in the NNIBP (Figure 2B and D and Figure 2—figure supplement 1).
 
-## Interactions between piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs and RT
+![Figure 2.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig2-v2.jpg)
+
+**Figure 2.:** (A) and (C) Overall structure of the HIV-1 WT RT in complex with compound K-5a2 determined at 1.92 Å resolution (A) and with compound 25a determined at 2.0 Å resolution (C). The p51 subunit is colored in gray, the fingers domain of the p66 subunit is colored in light blue, palm domain in pink, thumb domain in light green, connection domain in yellow, RNase H domain in red. Compound K-5a2 is in dark blue and compound 25a is in dark green. (B) and (D) An enlarged view of compound K-5a2 (B) and compound 25a (D) in the NNIBP with contacting residues shown as sticks. Compound K-5a2 and 25a are superposed with the electron density of their respective Fo–Fc omit map (sharpened by applying a B-factor correction of –35 and contoured at 2.7σ).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Structures of (A) K103N RT in complex with K-5a2. (B) E138K RT in complex with K-5a2. (C) Y188L RT in complex with K-5a2. (D) K103N RT in complex with 25a. (E) E138K RT in complex with 25a. (F) K103N/Y181C RT in complex with 25a. (G) V106A/F227L RT in complex with 25a. (H) K101P RT in complex with 25a. (I) Y181I RT in complex with 25a. Residues in the p51 subunit of RT are colored in gray, residues in the palm domain of the p66 subunit are colored in pink, and connection domain in yellow. Compound K-5a2 is in dark blue and compound 25a is in dark green. Both compounds are superposed with the electron density of their Fo–Fc omit maps (sharpened by applying a B-factor correction of –35 and contoured at 2.7σ).
+
+### Interactions between piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs and RT
 
 The RT-bound 25a and K-5a2 adopt a horseshoe conformation, which is similar to that seen with NNRTIs in the DAPY family (Das et al., 2008, 2004). Both inhibitors exhibit remarkable structural complementarity to the NNIBP with substantial extensions into the three channels (tunnel, entrance and groove) characterizing the pocket (Figure 3A and B and Figure 3—figure supplement 1A and B). The left wing structures of 25a and K-5a2 form hydrophobic interactions with Pro95 and Leu234, and project into the tunnel lined by Tyr181, Tyr188, Phe227, and Trp229, forming π-π interactions with these residues. The entrance channel gated by Glu138 in the p51 subunit and Lys101 in the p66 subunit is an underexplored region in the NNIBP. By substituting the central pyrimidine ring of DAPY NNRTIs to a thiophene[3,2-d]pyrimidine heterocyclic structure, 25a and K-5a2 are able to establish nonpolar interactions with the alkyl chain of Glu138, while retaining the favorable hydrophobic contacts with Val179 and Leu100 manifested in the complexes of RT with ETR or RPV (Das et al., 2008, 2004). The piperidine-linked aryl structure of the right wing arches into the groove surrounded by Lys103, Val106, Pro225, Phe227, Pro236, and Tyr318, developing numerous van der Waals contacts with their lipophilic side chains, and directs the terminal sulfonamide group to the solvent-exposed surface of RT.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig3-v2.jpg)
+
+**Figure 3.:** (A) Back, (B) front and (C) top views of compound 25a in the NNIBP of RT. The inhibitor-binding pocket is in surface presentation and key residues are depicted as sticks. (D) Hydrogen bonds between compound 25a and the main chains of NNIBP residues. Residues in the p51 subunit are colored in gray, and residues in the p66 subunit are colored in pink.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Back, (B) front and (C) top views of compound K-5a2 in the NNIBP of RT. The inhibitor-binding pocket is in surface presentation and key residues are depicted as sticks. (D) Hydrogen bonds between compound K-5a2 and the main chains of NNIBP residues. Residues in the p51 subunit are colored in gray, and residues in the p66 subunit are colored in pink.
 
 In addition, binding of 25a and K-5a2 to the NNIBP is stabilized by an extensive hydrogen-bonding network between the inhibitors and the main chains of several key residues around the pocket (Figure 3C and D and Figure 3—figure supplement 1C and D): (i) the surface-positioned sulfonamide group is double-hydrogen bonded with the carbonyl oxygen of Lys104 and the backbone nitrogen of Val106; (ii) the piperidine nitrogen forms hydrogen bonds with the main chains of Lys103 and Pro236 through a bridging water molecule; (iii) the amine group linking the central thiophene pyrimidine and the piperidine ring interacts with the carbonyl oxygen of Lys101, forming a conserved hydrogen bond observed in a number of second-generation NNRTIs/RT complexes (Das et al., 2008; Lansdon et al., 2010); (iv) additionally, the nitrogen and sulfur atoms in the central thiophene pyrimidine ring are involved in two water-mediated hydrogen bonds with the backbone nitrogen of Lys101 and the carbonyl oxygens of Glu138, respectively. These extensive interactions between the two piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs and RT lock the enzyme in an open-cleft conformation and inhibit its polymerization activity.
 
 The above interactions between RT and the two NNRTIs generally agree with the results from molecular docking (Kang et al., 2017, 2016). Nevertheless, a close inspection of the inhibitors observed in the crystal structures and those predicted by molecular docking reveals a few notable differences in their binding modes. First, the thiophene pyrimidine nitrogen in the inhibitors is not directly hydrogen bonded with the backbone nitrogen of Lys101, as predicted by inhibitor docking, but through a bridging water molecule instead. Second, the crystal structures define a water-mediated hydrogen bond between the carboxyl oxygen of Glu138 and the sulfur group in the inhibitors central ring, which is absent in the predicted binding modes. Due to their free movement and transient involvement in the binding process, it is difficult to predict the role of solvent molecules in the interactions between enzymes and inhibitors using ligand-docking programs. These water-mediated interactions, however, can be critical for the enzyme–inhibitor complex formation and thus can provide important insights in understanding the resistance mechanisms of RT mutants.
 
-## Inhibition of HIV-1 RT by piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs
+### Inhibition of HIV-1 RT by piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs
 
 Our previous MT-4 cell-based antiviral activity evaluations showed that K-5a2 displays ~3-fold greater efficacy than ETR against the WT HIV-1 strain, and higher or similar efficacy against virus variants bearing four prevalent single-residue mutations (L100I, K103N, E138K and Y181C) in RT (hereinafter referred to as L100I RT, K103N RT, E138K RT and Y181C RT, respectively). However, K-5a2 is less effective than ETR in inhibiting HIV-1 strains containing K103N/Y181C RT (Kang et al., 2016). The compound 25a, resulting from further optimization of K-5a2, overcomes the limitations of K-5a2 and exhibits significantly better inhibitory effects on all tested HIV-1 strains (Kang et al., 2017). To better compare the anti-HIV-1 potency of 25a with that of existing NNRTIs, we measured the EC50 values of RPV towards WT HIV-1 and mutant RT-bearing HIV-1 variants using the same method. 25a holds advantages over RPV in most of the tested drug-resistant HIV-1 strains while retaining similar antiviral potency against HIV-1 strains containing WT RT (Table 1). It is noteworthy that the particularly challenging K103N/Y181C double-mutation only causes a ~4.6-fold change in susceptibility to 25a, whereas it reduces the anti-HIV-1 efficacy of RPV by more than 10-fold. The superiority of 25a over RPV in targeting K103N/Y181C RT was further validated in the in vitro RT inhibition assay using purified recombinant RT variants, where K103N/Y181C mutation confers lower level of resistance to 25a (7.2-fold change in the IC50 value) than to RPV (15-fold change) (Figure 4A and B and Table 2).
 
@@ -63,17 +79,619 @@ Our previous MT-4 cell-based antiviral activity evaluations showed that K-5a2 di
 
 **Figure 4.:** (A) and (B) Inhibition curves of WT RT, Y188L RT, K103N/Y181C RT and V106A/F227L RT by 25a and RPV. (C) and (D) Inhibition curves of WT RT, K101P RT, Y181I RT and K103N/Y181I RT by 25a and RPV. (E) and (F) Inhibition curves of WT RT, P225H RT and P236L RT by 25a and RPV. Each data point is shown as mean ± standard error (n = 3). The data are fitted into inhibition dose-response curves with variable slopes. All datasets have excellent goodness of fit with R2 ≥ 0.99 except for the inhibition curve of RPV against K103N/Y181I RT (R2 = 0.98). The IC50 and curve slope values are summarized in Table 2.
 
+**Table 1.**
+ Anti-HIV-1 activity and cytotoxicity of K-5a2, 25a, etravirine (ETR) and rilpivirine (RPV) against wild-type (WT) HIV-1 and selected mutant HIV-1 strains in MT-4 cell assays.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Inhibitor</th>
+      <th>K-5a2*</th>
+      <th>25a†</th>
+      <th>ETR‡</th>
+      <th>RPV‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">EC50 (nM)</td>
+      <td>WT</td>
+      <td>1.4 ± 0.43§</td>
+      <td>1.2 ± 0.26</td>
+      <td>4.1 ± 0.15</td>
+      <td>0.99 ± 0.27</td>
+    </tr>
+    <tr>
+      <td>L100I</td>
+      <td>3.4 ± 0.66</td>
+      <td>1.3 ± 0.50</td>
+      <td>5.4 ± 2.1</td>
+      <td>1.5 ± 0.0011</td>
+    </tr>
+    <tr>
+      <td>K103N</td>
+      <td>2.9 ± 0.014</td>
+      <td>0.96 ± 0.07</td>
+      <td>2.4 ± 0.67</td>
+      <td>1.3 ± 0.36</td>
+    </tr>
+    <tr>
+      <td>E138K</td>
+      <td>2.9 ± 0.021</td>
+      <td>4.7 ± 0.16</td>
+      <td>14 ± 2.3</td>
+      <td>5.7 ± 0.11</td>
+    </tr>
+    <tr>
+      <td>Y181C</td>
+      <td>3.2 ± 0.48</td>
+      <td>5.0 ± 0.11</td>
+      <td>16 ± 2.1</td>
+      <td>5.0 ± 0.48</td>
+    </tr>
+    <tr>
+      <td>K103N/Y181C</td>
+      <td>31 ± 12</td>
+      <td>5.5 ± 0.81</td>
+      <td>17 ± 1.8</td>
+      <td>11 ± 1.9</td>
+    </tr>
+    <tr>
+      <td colspan="2">CC50 (µM)</td>
+      <td>&gt;227</td>
+      <td>2.3 ± 0.47</td>
+      <td>&gt;4.6</td>
+      <td>4.0 ± 1.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Results from (Kang et al., 2016).† Results from (Kang et al., 2017).‡ The data were obtained from the same laboratory using the same method.§ Data reported as mean ± standard deviations._
+
+**Table 2.**
+ In vitro inhibition of HIV-1 reverse transcriptase by 25a and RPV.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">RT variants</th>
+      <th colspan="3">25a</th>
+      <th colspan="3">RPV</th>
+    </tr>
+    <tr>
+      <th>IC50 (nM)</th>
+      <th>Fold R*</th>
+      <th>Curve slope</th>
+      <th>IC50 (nM)</th>
+      <th>Fold R</th>
+      <th>Curve slope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>4.3 ± 0.080†</td>
+      <td>–</td>
+      <td>3.8 ± 0.70</td>
+      <td>3.5 ± 0.052</td>
+      <td>–</td>
+      <td>3.1 ± 0.17</td>
+    </tr>
+    <tr>
+      <td>K103N/Y181C</td>
+      <td>31 ± 0.83</td>
+      <td>7.2</td>
+      <td>1.9 ± 0.092</td>
+      <td>51 ± 1.5</td>
+      <td>15</td>
+      <td>1.4 ± 0.047</td>
+    </tr>
+    <tr>
+      <td>Y188L</td>
+      <td>3.0 ± 0.15</td>
+      <td>0.70</td>
+      <td>1.9 ± 0.16</td>
+      <td>7.6 ± 0.22</td>
+      <td>2.2</td>
+      <td>1.7 ± 0.069</td>
+    </tr>
+    <tr>
+      <td>V106A/F227L</td>
+      <td>7.3 ± 0.23</td>
+      <td>1.7</td>
+      <td>3.1 ± 0.17</td>
+      <td>14 ± 0.27</td>
+      <td>4.0</td>
+      <td>2.1 ± 0.083</td>
+    </tr>
+    <tr>
+      <td>K101P</td>
+      <td>5.4 ± 0.16</td>
+      <td>1.3</td>
+      <td>2.9 ± 0.21</td>
+      <td>71 ± 3.0</td>
+      <td>20</td>
+      <td>1.2 ± 0.056</td>
+    </tr>
+    <tr>
+      <td>Y181I</td>
+      <td>38 ± 1.1</td>
+      <td>8.8</td>
+      <td>2.3 ± 0.16</td>
+      <td>315 ± 15</td>
+      <td>90</td>
+      <td>1.4 ± 0.081</td>
+    </tr>
+    <tr>
+      <td>K103N/Y181I</td>
+      <td>412 ± 13</td>
+      <td>96</td>
+      <td>1.8 ± 0.094</td>
+      <td>6317 ± 339</td>
+      <td>1805</td>
+      <td>1.4 ± 0.10</td>
+    </tr>
+    <tr>
+      <td>P225H</td>
+      <td>2.5 ± 0.059</td>
+      <td>0.58</td>
+      <td>3.5 ± 0.15</td>
+      <td>3.7 ± 0.070</td>
+      <td>1.1</td>
+      <td>3.4 ± 0.34</td>
+    </tr>
+    <tr>
+      <td>P236L</td>
+      <td>2.6 ± 0.13</td>
+      <td>0.60</td>
+      <td>4.3 ± 0.43</td>
+      <td>3.7 ± 0.085</td>
+      <td>1.1</td>
+      <td>3.6 ± 0.47</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Mean fold change in the IC50 values of mutant RT versus WT RT.† Data reported as mean ±standard error._
+
 To further evaluate the resistance profile of 25a, we compared the RT inhibitory activities of 25a and RPV against two additional clinically relevant RT mutants, Y188L RT and V106A/F227L RT. While 25a and RPV exhibit similar inhibitory potency against WT RT, 25a is more resilient to Y188L and V106A/F227L mutations (0.70- and 1.7-fold change, respectively) than RPV (2.2- and 4.0-fold change, respectively) (Figure 4A and B and Table 2). To assess whether mutations against which RPV loses considerable potency would be susceptible to 25a, we tested the inhibitory activities of 25a and RPV against K101P RT, Y181I RT and K103N/Y181I RT, which were shown to cause substantial reduction in susceptibility to RPV (Azijn et al., 2010; Giacobbi and Sluis-Cremer, 2017; Smith et al., 2016). As expected, all three mutations dramatically lower the anti-RT potency of RPV and cause 20-fold, 90-fold and 1805-fold change in the IC50 values, respectively. In contrast, there is considerably less resistance to 25a for all three RT mutants (1.3-, 8.8- and 96-fold, respectively) (Figure 4C and D and Table 2).
 
 The longer right wing of 25a enables its interactions with NNIBP residues that are not contacted by RPV, such as Pro225 and Pro236. To gauge the likely impact of these mutations on 25a efficacy, we measured the RT-inhibiting potency of 25a against RT containing P225H or P236L substitutions, two clinically identified mutations shown no significant reduction in susceptibility to RPV (Basson et al., 2015). Like that of RPV, the potency of 25a was not negatively affected by either P225H or P236L mutations (0.58- and 0.60-fold change, respectively) (Figure 4E and F and Table 2), indicating that 25a has a relatively high genetic barrier to the development of novel drug-resistant mutations.
 
 It is worth mentioning that 25a has steeper dose-response curve slopes than RPV in the inhibition of all above RT variants (Table 2). This characteristic can help 25a achieve greater inhibition of RT activity at higher than IC50 concentrations, which are usually more clinically relevant (Shen et al., 2008). Taken together, by comparing the inhibitory potency of 25a and RPV in a wide range of RT mutants, we have shown that 25a has an improved resistance profile over RPV and is able to effectively inhibit the RT mutants causing high-level resistance to RPV.
 
-## Structural basis for improved resistance profile of piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs
+### Structural basis for improved resistance profile of piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs
 
 To shed light on the mechanism underlying the outstanding resistance profile of the two piperidine-substituted thiophene[3,2-d]pyrimidine NNRTIs, we determined the crystal structures of K103N RT, E138K RT, and Y188L RT complexed with compound K-5a2, as well as K103N RT, E138K RT, K103N/Y181C RT, V106A/F227L RT, K101P RT, and Y181I RT complexed with 25a. The attempt to obtain the crystal structure of 25a in complex with K103N/Y181I RT proved unsuccessful, possibly due its suboptimal anti-RT potency towards K103N/Y181I RT, although it has displayed marked improvement over RPV in inhibiting this specific mutant (Table 2). Superposition of these mutant RT/NNRTI complexes structures onto their respective WT RT/NNRTI complexes structures shows no major deviation in the conformations of the enzyme and inhibitors (Figure 5 and Figure 5—figure supplement 1). Root-mean-square deviations (RMSDs) for the structural alignments between WT RT/NNRTI complexes and mutant RT/NNRTI complexes range from 0.094 to 0.283 Å for the overall Cα atoms, and from 0.095 to 1.108 Å for the Cα atoms of the NNIBP regions (residues 98–110, 178–190, 226–240 of the p66 subunit, plus residues 137–139 of the p51 subunit) (Table 3).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig5-v2.jpg)
+
+**Figure 5.:** Superposition of (A) K103N RT/25a complex structure, (B) E138K RT/25a complex structure, (C) K103N/Y181C RT/25a complex structure, (D) V106A/F227L RT/25a complex structure, (E) K101P RT/25a complex structure, and (F) Y181I RT/25a complex structure onto WT RT/25a complex structure. The structure of WT RT/25a complex is colored in green, K103N RT/25a complex in yellow, E138K RT/25a complex in pink, K103N/Y181C RT/25a complex in red, V106A/F227L RT/25a complex in blue, K101P RT/25a complex in orange, and Y181I RT/25a complex in magenta. Distances are in angstrom (Å).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Superposition of (A) K103N RT/K-5a2 complex structure, (B) E138K RT/K-5a2 complex structure and (C) Y188L RT/K-5a2 complex structure onto WT RT/K-5a2 complex structure. (D) Superposition of K103N RT/K-5a2 complex structure, WT RT/25a complex structure, and K103N/Y181C RT/25a complex structure onto WT RT/K-5a2 complex structure. The structure of WT RT/K-5a2 complex is colored in blue, K103N RT/K-5a2 complex in yellow, E138K RT/K-5a2 complex in pink, Y188L RT/K-5a2 complex in light green, WT RT/25a complex in green, and K103N/Y181C RT/25a complex in red.
+
+**Table 3.**
+ Root mean square deviations (RMSDs) of Cα atoms (Å) for the alignments between different RT/NNRTI complexes structures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Overall</th>
+      <th>NNIBP region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT RT/K-5a2 and K103N RT/K-5a2</td>
+      <td>0.283</td>
+      <td>0.579</td>
+    </tr>
+    <tr>
+      <td>WT RT/K-5a2 and E138K RT/K-5a2</td>
+      <td>0.094</td>
+      <td>0.095</td>
+    </tr>
+    <tr>
+      <td>WT RT/K-5a2 and Y188L RT/K-5a2</td>
+      <td>0.138</td>
+      <td>0.293</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and K103N RT/25a</td>
+      <td>0.250</td>
+      <td>0.430</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and E138K RT/25a</td>
+      <td>0.162</td>
+      <td>0.290</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and K103N/Y181C RT/25a</td>
+      <td>0.175</td>
+      <td>0.499</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and V106A/F227L RT/25a</td>
+      <td>0.245</td>
+      <td>1.108</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and K101P RT/25a</td>
+      <td>0.253</td>
+      <td>0.292</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a and Y181I RT/25a</td>
+      <td>0.182</td>
+      <td>0.297</td>
+    </tr>
+  </tbody>
+</table>
+
 Examination of the interactions between the RT mutants and the two NNRTIs reveals that all the hydrogen bonds depicted in Figure 3D are preserved, although there are some variations in the bond lengths. To analyze the extent of interactions between the inhibitors and different RT mutants, we measured the buried surface areas between the inhibitors and the whole NNIBP as well as a selection of key residues in the NNIBP of each RT variants (Table 4). In the structures of K103N RT in complex with 25a or K-5a2, the Lys to Asn substitution in RT shortens the aliphatic side chain and reduces the contact interface between residue 103 and the inhibitors, but 25a and K-5a2 are able to establish more contacts with Phe227 and Pro236 by varying their multiple torsion angles (Table 5) to counterbalance the loss (Figure 5A and Figure 5—figure supplement 1A). Similarly, in the structure of Y188L RT/K-5a2 complex, the cyano-dimethylphenyl group in K-5a2 is diverted away from Leu188 to avoid steric clashes, leading to declines in the buried areas between the inhibitor and Leu188 and Phe227. However, this mutation-caused damage is alleviated by its enhanced interactions with Lys103, Val106 and Pro236 (Figure 5—figure supplement 1C, Table 4). In the case of E138K RT, since the mutation does not disrupt the hydrophobic interactions between the inhibitors’ central thiophene ring and residue 138, 25a and K-5a2 maintain almost the same binding poses in the NNIBP and similar buried areas with each of the residues along the pocket as in their complexes with WT RT (Figure 5B and Figure 5—figure supplement 1B).
+
+**Table 4.**
+ Buried area (Å2) between HIV-1 RT and each NNRTI*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Total</th>
+      <th colspan="9">Individual residue</th>
+    </tr>
+    <tr>
+      <th>101</th>
+      <th>103</th>
+      <th>106</th>
+      <th>181</th>
+      <th>183</th>
+      <th>188</th>
+      <th>227</th>
+      <th>236</th>
+      <th>138</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT RT/K-5a2</td>
+      <td>584.1</td>
+      <td>46.5</td>
+      <td>81.2</td>
+      <td>91.1</td>
+      <td>63.9</td>
+      <td>0</td>
+      <td>75.4</td>
+      <td>89.3</td>
+      <td>69.6</td>
+      <td>54.6</td>
+    </tr>
+    <tr>
+      <td>K103N RT/K-5a2</td>
+      <td>579.4</td>
+      <td>44.3</td>
+      <td>73.4</td>
+      <td>85.5</td>
+      <td>59.6</td>
+      <td>0</td>
+      <td>71.2</td>
+      <td>92.9</td>
+      <td>71.2</td>
+      <td>52.6</td>
+    </tr>
+    <tr>
+      <td>E138K RT/K-5a2</td>
+      <td>587.9</td>
+      <td>44.3</td>
+      <td>83.5</td>
+      <td>89.6</td>
+      <td>63.0</td>
+      <td>0</td>
+      <td>72.9</td>
+      <td>86.4</td>
+      <td>69.9</td>
+      <td>54.3</td>
+    </tr>
+    <tr>
+      <td>Y188L RT/K-5a2</td>
+      <td>571.3</td>
+      <td>44.3</td>
+      <td>83.0</td>
+      <td>93.9</td>
+      <td>57.9</td>
+      <td>0</td>
+      <td>70.0</td>
+      <td>73.2</td>
+      <td>74.0</td>
+      <td>51.5</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a</td>
+      <td>620.5</td>
+      <td>51.9</td>
+      <td>88.2</td>
+      <td>91.7</td>
+      <td>68.5</td>
+      <td>19.6</td>
+      <td>84.8</td>
+      <td>96.9</td>
+      <td>68.4</td>
+      <td>54.8</td>
+    </tr>
+    <tr>
+      <td>K103N RT/25a</td>
+      <td>626.8</td>
+      <td>47.9</td>
+      <td>74.7</td>
+      <td>86.4</td>
+      <td>67.8</td>
+      <td>15.6</td>
+      <td>84.3</td>
+      <td>106</td>
+      <td>72.0</td>
+      <td>53.7</td>
+    </tr>
+    <tr>
+      <td>E138K RT/25a</td>
+      <td>621.4</td>
+      <td>45.5</td>
+      <td>87.1</td>
+      <td>92.5</td>
+      <td>66.4</td>
+      <td>14.0</td>
+      <td>86.6</td>
+      <td>98.4</td>
+      <td>69.1</td>
+      <td>54.1</td>
+    </tr>
+    <tr>
+      <td>K103N/Y181C RT/25a</td>
+      <td>624.7</td>
+      <td>51.9</td>
+      <td>76.1</td>
+      <td>86.8</td>
+      <td>56.5</td>
+      <td>33.5</td>
+      <td>83.2</td>
+      <td>106</td>
+      <td>73.3</td>
+      <td>54.1</td>
+    </tr>
+    <tr>
+      <td>V106A/F227L RT/25a</td>
+      <td>614.9</td>
+      <td>47.6</td>
+      <td>87.1</td>
+      <td>79.2</td>
+      <td>58.1</td>
+      <td>0</td>
+      <td>79.2</td>
+      <td>91.8</td>
+      <td>62.8</td>
+      <td>52.0</td>
+    </tr>
+    <tr>
+      <td>K101P RT/25a</td>
+      <td>613.6</td>
+      <td>62.6</td>
+      <td>93.9</td>
+      <td>90.7</td>
+      <td>66.6</td>
+      <td>21.1</td>
+      <td>85.6</td>
+      <td>89.9</td>
+      <td>70.5</td>
+      <td>53.5</td>
+    </tr>
+    <tr>
+      <td>Y181I RT/25a</td>
+      <td>618.5</td>
+      <td>62.9</td>
+      <td>90.9</td>
+      <td>90.8</td>
+      <td>58.9</td>
+      <td>31.5</td>
+      <td>84.6</td>
+      <td>99.8</td>
+      <td>71.7</td>
+      <td>52.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The buried area between HIV-1 RT and each NNRTI was calculated using UCSF ChimeraX._
+
+**Table 5.**
+ Torsion angles and energies of K-5a2 and 25a in different binding poses.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="8">Torsion angles (°)</th>
+      <th rowspan="2">NNRTI energy* (kcal/mol)</th>
+    </tr>
+    <tr>
+      <th>τ1</th>
+      <th>τ2</th>
+      <th>τ3</th>
+      <th>τ4</th>
+      <th>τ5</th>
+      <th>τ6</th>
+      <th>τ7</th>
+      <th>τ8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT RT/K-5a2</td>
+      <td>14</td>
+      <td>−17</td>
+      <td>−84</td>
+      <td>−71</td>
+      <td>2</td>
+      <td>−8</td>
+      <td>−97</td>
+      <td>—</td>
+      <td>−161.4</td>
+    </tr>
+    <tr>
+      <td>K103N RT/K-5a2</td>
+      <td>11</td>
+      <td>−23</td>
+      <td>−83</td>
+      <td>−73</td>
+      <td>6</td>
+      <td>−11</td>
+      <td>−102</td>
+      <td>—</td>
+      <td>−162.4</td>
+    </tr>
+    <tr>
+      <td>E138K RT/K-5a2</td>
+      <td>9</td>
+      <td>−19</td>
+      <td>−87</td>
+      <td>−68</td>
+      <td>2</td>
+      <td>−9</td>
+      <td>−97</td>
+      <td>—</td>
+      <td>−162.7</td>
+    </tr>
+    <tr>
+      <td>Y188L RT/K-5a2</td>
+      <td>3</td>
+      <td>−49</td>
+      <td>−66</td>
+      <td>−70</td>
+      <td>4</td>
+      <td>−2</td>
+      <td>−94</td>
+      <td>—</td>
+      <td>−160.9</td>
+    </tr>
+    <tr>
+      <td>WT RT/ETR†</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>16</td>
+      <td>−2</td>
+      <td>−13</td>
+      <td>−95</td>
+      <td>—</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>WT RT/25a</td>
+      <td>23</td>
+      <td>−26</td>
+      <td>−79</td>
+      <td>−79</td>
+      <td>1</td>
+      <td>0</td>
+      <td>−109</td>
+      <td>−40</td>
+      <td>−191.1</td>
+    </tr>
+    <tr>
+      <td>K103N RT/25a</td>
+      <td>7</td>
+      <td>−22</td>
+      <td>−81</td>
+      <td>−74</td>
+      <td>3</td>
+      <td>0</td>
+      <td>−110</td>
+      <td>−53</td>
+      <td>−187.7</td>
+    </tr>
+    <tr>
+      <td>E138K RT/25a</td>
+      <td>19</td>
+      <td>−29</td>
+      <td>−76</td>
+      <td>−77</td>
+      <td>0</td>
+      <td>3</td>
+      <td>−108</td>
+      <td>−53</td>
+      <td>−188.5</td>
+    </tr>
+    <tr>
+      <td>K103N/Y181C RT/25a</td>
+      <td>−4</td>
+      <td>−26</td>
+      <td>−76</td>
+      <td>−77</td>
+      <td>4</td>
+      <td>−1</td>
+      <td>−107</td>
+      <td>−54</td>
+      <td>−186.2</td>
+    </tr>
+    <tr>
+      <td>V106A/F227L RT/25a</td>
+      <td>14</td>
+      <td>−24</td>
+      <td>−72</td>
+      <td>−82</td>
+      <td>4</td>
+      <td>−4</td>
+      <td>−103</td>
+      <td>−163</td>
+      <td>−187.3</td>
+    </tr>
+    <tr>
+      <td>K101P RT/25a</td>
+      <td>5</td>
+      <td>−24</td>
+      <td>−84</td>
+      <td>−81</td>
+      <td>5</td>
+      <td>6</td>
+      <td>−112</td>
+      <td>−44</td>
+      <td>−190.1</td>
+    </tr>
+    <tr>
+      <td>Y181I RT/25a</td>
+      <td>−2</td>
+      <td>−15</td>
+      <td>−87</td>
+      <td>−72</td>
+      <td>6</td>
+      <td>4</td>
+      <td>−107</td>
+      <td>−57</td>
+      <td>−189.2</td>
+    </tr>
+    <tr>
+      <td>WT RT/RPV‡</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>10</td>
+      <td>−7</td>
+      <td>−13</td>
+      <td>−103</td>
+      <td>−28</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The NNRTI energy refers to the energy of K-5a2 or 25a itself at the specific conformations in different RT complexes. It was calculated using the MacroModel program in the Schrödinger software suite.† Torsion angles of ETR were measured using the structure from PDB ID: 3MEC.‡ Torsion angles of RPV were measured using the structure from PDB ID: 4G1Q._
 
 In regard to RT carrying the more disruptive K103N/Y181C double-mutation, Y181C mutation abolishes the favorable π–π stacking interactions between the Tyr181 side chain and the dimethylphenyl ring of 25a, and greatly reduce the binding interface between 25a and Cys181. Moreover, the dramatic changes in the NNIBP result in a decrease of the buried interface between 25a and residue 103. Nonetheless, the markedly weakened interactions between 25a and both mutated residues are remedied by the increase in the contact areas between 25a and several other residues in the NNIBP, including Tyr183, Phe227 and Pro236. (Figure 5C). In the V106A/F227L RT/25a complex structure, the much smaller side chain of Ala106 buries significantly less surface area with the inhibitor. Furthermore, the double-mutation causes more dramatic changes in the conformations of the NNIBP and the bound 25a. In particular, the cyanovinyl group of 25a is flipped so that it can maintain similar extent of interactions with the mutated Leu227. This torsional change, however, diverts the inhibitor away from the tunnel lined by Tyr181, Tyr183 and Tyr188 and diminishes the contact areas between 25a and all three tyrosine residues. To compensate for the loss, the right wing of 25a shifts closer to Lys101. Such movement shortens the distance between the linker amine group of 25a and the carboxyl oxygen of Lys101 from 3.05 to 2.76 Å and strengthens the hydrogen bond between them (Figure 5D). This hydrogen bond is conserved in the binding of many NNRTIs, including ETR and RPV, and contributes greatly to the binding affinities of NNRTIs (Das et al., 2008; Lansdon et al., 2010).
 
@@ -81,9 +699,17 @@ With respect to K101P RT, the deprotonation of Pro101 main-chain nitrogen attenu
 
 It is noteworthy that in both K103N/Y181C RT/25a and Y181I RT/25a complex structures, Tyr183, a residue in the conserved YMDD motif at the polymerase active site, moves 2.3–2.5 Å towards the inhibitor, enhancing its hydrophobic interactions with the cyanovinyl group of 25a. The recruitment of Tyr183 by the cyanovinyl group of 25a is reminiscent of that observed in the structure of K103N/Y181C RT in complex with RPV, whose left wing has the same 4-cyanovinyl-2,6-dimethylphenyl structure (Das et al., 2008). Interestingly, in the structure of K103N RT/K-5a2 complex, Tyr183 also undergoes a significant conformational change and is placed closer to the inhibitor, although it is still outside the contact radius of the cyano group in K-5a2. Superposition of the structures of WT RT/K-5a2, K103N RT/K-5a2, WT RT/25a, and K103N/Y181C RT/25a complexes reveals a gradual rotation of Tyr183 from the ‘down’ position in WT RT/K-5a2 complex to the ‘up’ position in K103N/Y181C RT/25a complex (Figure 5—figure supplement 1D). This stepwise movement of Tyr183 is likely triggered by three factors: (i) inhibitor repositioning because of the K103N mutation, (ii) loss of aromatic interactions due to the Y181C or Y181I mutation, and (iii) presence of a cyanovinyl group in the inhibitor left wing. Tyr183 makes the most significant contribution to the NNRTI-binding in the circumstance that all of the above factors are present. The ability of K-5a2 and 25a to recruit Tyr183 is particularly significant for their function of inhibiting the polymerase activity, because Tyr183 is completely conserved among all HIV-1 sequences and makes direct contacts with the nucleic acid substrate (Das et al., 2012; Sarafianos et al., 2001). The repositioning of Tyr183 towards the NNIBP removes this important interaction and destabilizes the binding of nucleic acid.
 
-## Comparison of the binding modes for K-5a2, 25a and DAPY NNRTIs
+### Comparison of the binding modes for K-5a2, 25a and DAPY NNRTIs
 
 By adopting the typical horseshoe conformation, K-5a2 and 25a substantially overlap the binding sites occupied by ETR and RPV (Figure 6). The thiophene substituent in the central ring of K-5a2 and 25a extends further into the entrance channel and is proximal to Glu138 located at the opening. The positions of their left wing structures are adjusted to small conformational changes of Tyr181, Tyr183 and Tyr188 to maximize the contacts with the pocket residues in this region. The piperidine ring in the right wing of K-5a2 and 25a slants away from the cyanophenyl plane in ETR and RPV through a ~ 90° tilt of τ4 (from 16°/10° to –71°/–79°) (Table 5) (Das et al., 2008; Lansdon et al., 2010), leading to the displacement of Tyr318 ~1 Å away from the inhibitors. The main difference in RT conformation is the uplift of the loop proceeding β9 and that connecting β10–β11. Upon the binding of K-5a2 and 25a, Pro225 and Pro236, two residues sitting at the groove channel opening, are pushed apart to accommodate the benzenesulfonamide group, which protrudes to the solvent-exposed surface of the enzyme.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig6-v2.jpg)
+
+**Figure 6.:** (A) Superposition of WT RT/ETR complex structure (PDB ID: 3MEC) onto WT RT/K-5a2 complex structure. The structure of WT RT/K-5a2 complex is colored in blue and WT RT/ETR complex in gray. (B) Superposition of WT RT/RPV complex structure (PDB ID: 4G1Q) onto WT RT/25a complex structure. The structure of WT RT/25a complex is colored in green and WT RT/RPV complex in purple.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36340/elife-36340-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The structure of WT RT/ETR complex (PDB ID: 3MEC) is colored in gray. Lys138 (transparent blue) from the structure of E138K RT/K-5a2 complex is grafted here to illustrate the expected effects on ETR-binding upon E138K mutation. (B) The structure of WT RT/RPV complex (PDB ID: 4G1Q) is colored in purple. Lys101 and Lys138 (transparent green) from the structure of E138K RT/25a complex are grafted here to show the likely conformational changes at the entrance of NNIBP imparted by E138K mutation. (C) The structure of WT RT/RPV complex (PDB ID: 4G1Q) is colored in purple. Pro101 (transparent green) from the structure of K101P RT/25a complex is grafted here to demonstrate the possible changes in the RT-RPV interactions caused by the mutation. Graydotted lines represent favorable interactions between WT RT and ETR or RPV. Red crosses indicate favorable interactions disrupted by resistance mutations. Red dotted lines indicate possible unfavorable interactions between the RT mutants and the two inhibitors. Distances are in angstrom (Å).
 
 There is no structure available for E138K RT and K101P RT in complex with either ETR or RPV; however, the structures of these two RT mutants in complex with K-5a2 and 25a provide a structural basis to understand why the mutations can render ETR and RPV less effective. In the structure of WT RT/ETR complex, the amino substituent of the central pyrimidine ring forms a salt bridge with the carboxyl side chain of Glu138. Transplanting Lys138 from the structure of E138K RT/K-5a2 complex into this structure reveals a severe charge-charge repulsion between the amino group in ETR and the side chain of Lys138, which would destabilize the binding of the inhibitor (Figure 6—figure supplement 1A). In the case of PRV, Glu138 contributes to the RT-RPV interactions by bonding Lys101 and placing it in the vicinity of the central pyrimidine ring for several critical interactions: (i) hydrophobic interactions between the pyrimidine ring of RPV and the Cε atom of Lys101, (ii) the hydrogen bond between the pyrimidine nitrogen atom and the main-chain nitrogen of Lys101, and (iii) the hydrogen bond between a linker nitrogen atom of RPV and the carbonyl oxygen of Lys101. Modeling Lys138 from the structure of E138K RT/25a complex indicates that Lys at residue 138 of the p51 subunit would shove Lys101 away from RPV. This conformational change in RT would not only disrupt the hydrophobic interactions but also weaken the two key hydrogen bonds due to the deviation of the Lys101 backbone (Figure 6—figure supplement 1B).
 
@@ -101,28 +727,213 @@ In conclusion, our study depicts the binding poses of two newly developed NNRTIs
 
 ## Materials and methods
 
-## Cloning, protein preparation and crystallization
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E.coli)</td>
+      <td>BL21 Star (DE3)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>C601003</td>
+      <td>Chemically Competent E.coli for the expression of recombinant RTs.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HIV-1 IIIB)</td>
+      <td>HIV-1 L100I</td>
+      <td>Established in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HIV-1 IIIB)</td>
+      <td>HIV-1 K103N</td>
+      <td>Established in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HIV-1 IIIB)</td>
+      <td>HIV-1 E138K</td>
+      <td>Established in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HIV-1 IIIB)</td>
+      <td>HIV-1 Y181C</td>
+      <td>Established in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (HIV-1 IIIB)</td>
+      <td>HIV-1 K103N/Y181C</td>
+      <td>Established in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. Sapiens)</td>
+      <td>MT-4 cells</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NIH-ARP Cat# 120–438, RRID:CVCL_2632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDFDuet-1</td>
+      <td>Millipore Sigma</td>
+      <td>71340–3</td>
+      <td>Expression plasmid for all RT variants in E.coli.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HRV 3C protease</td>
+      <td>Recombinantly expressed in house</td>
+      <td></td>
+      <td>Expressed as His-tagged fusion protein.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Reverse Transcriptase Assay kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>E22064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound K-5a2</td>
+      <td>Synthesized in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Compound 25a</td>
+      <td>Synthesized in house</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>etravirine</td>
+      <td>Sigma-Aldrich</td>
+      <td>ADV428293567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rilpivirine</td>
+      <td>Sigma-Aldrich</td>
+      <td>ADV465749297</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PicoGreen dsDNA reagent</td>
+      <td>ThermoFisher Scientific</td>
+      <td>P7581</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>(Emsley et al., 2010)</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>(Kabsch, 2010)</td>
+      <td>RRID:SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHASER</td>
+      <td>(McCoy et al., 2007)</td>
+      <td>RRID:SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX suite</td>
+      <td>(Adams et al., 2010)</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol v 2.0</td>
+      <td>The PyMOL Molecular Graphics System, Schrödinger, LLC.</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MacroModel</td>
+      <td>Schrödinger suite</td>
+      <td>RRID:SCR_014879</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>(Pettersen et al., 2004)</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>(Goddard et al., 2018)</td>
+      <td>RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v 7.0a</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, protein preparation and crystallization
 
 An engineered HIV-1 RT construct, RT52A (Bauman et al., 2008; Das et al., 2008), here referred to as WT RT, was used as the template for site-directed mutagenesis to introduce E138K mutation in the p51 subunit, K101P, K103N, Y181I, Y188L, K103N/Y181C, K103N/Y181I and V106A/F227L mutations in the p66 subunit. WT and mutant RTs were expressed and purified as described previously (Das et al., 2008; Frey et al., 2015). Briefly, the p51 subunit with an N-terminal 6xHis tag followed by a human rhinovirus (HRV) 3C protease cleavage site and un-tagged p66 subunit were co-expressed in E. coli BL21 star (DE3) (Thermo Fisher Scientific, Waltham, MA). Cells were grown at 37°C and induced at 17°C for 16 hr. WT and mutant RTs were purified on a HisTrap affinity column and a HiTrap Heparin affinity column (GE Healthcare), sequentially. The N-terminal 6xHis tag was removed by HRV 3C protease, and the un-tagged RT was purified on a Superdex 200 gel filtration column (GE Healthcare) in buffer containing 10 mM Tris (pH 8.0), 75 mM NaCl and 2 mM Tris(2-carboxyethyl)phosphine (TCEP).
 
 Crystallization of WT and mutant RTs were set up using the sitting drop vapor diffusion method at 4°C, with 2 µl of protein solution added to 2 µl of well buffer containing 50 mM MES or imidazole buffer (pH 6.0–6.6), 10% (v/v) polyethylene glycol (PEG) 8000, 100 mM ammonium sulfate, 15 mM magnesium sulfate, and 10 mM spermine. Crystals were grown for 2 weeks, and RT/NNRTI complexes were prepared by soaking RT crystals in buffer containing 0.5 mM K-5a2 or 25a, 50 mM MES or imidazole buffer (pH 6.0), 12% (v/v) polyethylene glycol (PEG) 8000, 100 mM ammonium sulfate, 15 mM magnesium sulfate, 10 mM spermine, 25% ethylene glycol, and 10% DMSO for 2 days. Soaked crystals were harvested and flash-frozen in liquid nitrogen.
 
-## Data collection and structure determination
+### Data collection and structure determination
 
 X-ray diffraction data were collected at the Advanced Photon Source at Argonne National Laboratory on beamline 24ID-E at a wavelength of 0.97918 Å. Data sets were integrated and scaled with XDS software package (Kabsch, 2010). Structures of RT/K-5a2 and RT/25a complexes were determined by molecular replacement in Phaser (McCoy et al., 2007) using the structure of WT RT/RPV complex (PDB ID: 4G1Q) as a search template. One RT molecule was present in the asymmetric unit. The ligand restraints and 3D structures of K-5a2 and 25a were generated in eLBOW (Moriarty et al., 2009) using SMILES strings as inputs. Models of K-5a2 and 25a were built into the structures based on the unbiased Fo – Fc difference Fourier electron density map calculated in the absence of an NNRTI. Models were manually rebuilt in Coot (Emsley et al., 2010), and refined in PHENIX (Adams et al., 2010). The quality of the final models was analyzed with MolProbity (Chen et al., 2010). Data collection and refinement statistics are summarized in Supplementary file 1. All figures were generated using PyMOL, UCSF Chimera (Pettersen et al., 2004) or UCSF ChimeraX (Goddard et al., 2018).
 
-## Cell lines
+### Cell lines
 
 MT-4 cells were obtained from the NIH AIDS Reagent Program and authenticated by the supplier. All cells are tested negative for mycoplasma, bacteria, and fungi.
 
-## T cell-based anti-HIV-1 activity assays
+### T cell-based anti-HIV-1 activity assays
 
 The anti-HIV-1 activities of rilpivirine (RPV) against WT HIV-1 (IIIB strain) as well as seven mutant RT-carrying HIV-1 variants (L100I, K103N, E138K, Y181C and K103N/Y181C) were evaluated in MT-4 cells using MTT method as described previously (Kang et al., 2017, 2016; Pannecouque et al., 2008). Briefly, stock solutions (10 × final concentration) of RPV were added in 25 µl to two series of triplicate wells in order to allow simultaneous evaluation of their effects on mock- and HIV-1-infected cells. Using a Biomek 3000 robot (Beckman Instruments, Fullerton, CA), nine five-fold serial dilutions of RPV (final 200 µl volume per well) were made directly in flat-bottomed 96-well microtiter trays, including untreated control HIV-1 and mock-infected cell samples for each sample. Stock of WT HIV-1 or mutant HIV-1 strains (50 µl at 100–300-fold of 50% cell culture infectious dose (CCID50)) or equal amount of culture medium was added to either HIV-1-infected or mock-infected wells of the microtiter tray. Mock-infected cells were used to evaluate the cytotoxicity of the compounds. Exponentially growing MT-4 cells were centrifuged for 5 min at 220 × g and the supernatant was discarded. The MT-4 cells were resuspended at 6 × 105 cells/ml, and 50 µl aliquots were transferred to the microtiter tray wells. At five days after infection, the viability of mock- and HIV-1-infected cells was determined spectrophotometrically in an Infinite M1000 microplate reader (Tecan, Zürich, Switzerland). All data were calculated using the median optical density (OD) value of triplicate wells. The 50% effective antiviral concentration (EC50) was defined as the concentration of the test compound affording 50% protection from viral cytopathogenicity. The 50% cytotoxic concentration (CC50) was defined as the compound concentration that reduced the absorbance (OD540 nm) of mock-infected MT-4 cells by 50%. The results are presented as mean ± SD (n = 3).
 
-## Reverse transcriptase inhibition assays
+### Reverse transcriptase inhibition assays
 
 The HIV-1 RT inhibition assay was performed using a PicoGreen-based EnzChek Reverse Transcriptase Assay kit (Thermo Fisher Scientific) according to manufacturer’s protocol with minor modifications. Briefly, 58 µl of Recombinant WT or mutant RT (final concentration in reaction is 20 nM) in buffer containing 50 mM Tris (pH 8.0), 50 mM KCl, 6 mM MgCl2, and 10 mM DTT was incubated with 2 µl 25a or RPV (Sigma-Aldrich) with a concentration gradient comprising eleven three-fold serial dilutions of each inhibitor, or equal amount of DMSO at 25°C for 1 hr. 30 µl of pre-annealed poly(rA)•d(T)16 in buffer containing 50 mM Tris (pH 8.0), 50 mM KCl, 6 mM MgCl2, 10 mM DTT, and 100 mM dTTP was added to the RT-inhibitor mixture to start DNA polymerization reaction. After 30 min of incubation at 25°C, 10 µl of 150 mM EDTA was added to stop the reaction. 100 µl of 2x PicoGreen reagent was then added to each reaction and product formation was quantified using a TriStar LB 941 microplate reader (Berthold Technologies) with excitation/emission = 485/535 nm. The activity of WT or each mutant RT in the presence of inhibitors was normalized against the DMSO control. The IC50 and curve slope values were calculated by fitting the data into inhibition dose-response curves with variable slopes using GraphPad Prism version 7.0a. The experiment was repeated three times independently.
 
-## Accession numbers
+### Accession numbers
 
 The atomic coordinates and structure factors have been deposited in the Protein Data Bank under the accession codes 6C0J, 6C0K, 6C0L, 6CGF, 6C0N, 6C0O, 6C0P, 6C0R, 6DUF, 6DUG, and 6DUH.

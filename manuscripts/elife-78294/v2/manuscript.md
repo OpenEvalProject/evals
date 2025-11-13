@@ -15,7 +15,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01d5vx451 Infectious Disease Department, Hospital Universitari Vall d'Hebron, Institut de Recerca (VHIR), Universitat Autònoma de Barcelona Barcelona Spain
+1. Infectious Disease Department, Hospital Universitari Vall d'Hebron, Institut de Recerca (VHIR), Universitat Autònoma de Barcelona Barcelona Spain ([ROR:01d5vx451](https://ror.org/01d5vx451))
 
 † Corresponding author
 
@@ -35,45 +35,81 @@ Here, we show that CD32 expression on HIV-infected cells confers a reduced susce
 
 ## Results
 
-## Susceptibility of HIV-reservoir cell subsets to NK immune response
+### Susceptibility of HIV-reservoir cell subsets to NK immune response
 
 While it is clear that ADCC, largely mediated by NK cells, is an important protective mechanism against HIV and simian immunodeficiency virus (SIV) infection (Alpert et al., 2012; Pollara et al., 2011; Haynes et al., 2012), the capacity of this immune mechanism to limit the infection of different T cell subsets composing the viral reservoir is currently unknown. Thus, we first assessed the intrinsic susceptibility of Naïve (TNA), Stem Cell Memory (TSCM), Central Memory (TCM), Effector Memory (TEM), TCD20dim, and TCD32dim CD4+ T cell subsets to ADCC response. Gp120-coated CD4+ T cells from 15 ART-treated and virologically-suppressed PLWH (participants #8–22, Supplementary file 1) were subjected to a flow cytometry-based ADCC assay (Gómez-Román et al., 2006). In this assay, we used gp120-coated primary CD4+T cells, and plasma from an HIV-infected person with a high titer of HIV-specific immunoglobulins, which allowed a comparative evaluation of the intrinsic susceptibility of the different subpopulations to NK-mediated killing. Gating of CD32 cells was performed as previously reported in our previous publications (Grau-Expósito et al., 2017), whereby possible contaminant cell conjugates with monocytes or B cells (defined as CD4+ CD32high cells), were excluded. Coating efficiency with the recombinant protein gp120 of different cell subsets is shown in Figure 1—figure supplement 1A, and a representative gating strategy used for the identification of killed cells by ADCC is shown in Figure 1—figure supplement 1B. Results showed that each CD4+ T cell subset had a different susceptibility to autologous NK cells, being TEM >TCM > TCD20dim>TNA>TSCM>TCD32dim more prone to be killed (ANOVA Friedman test p=0.0001) (Figure 1A). Overall, most CD4+T cell subsets were susceptible to ADCC, however TCD32dim cells, and to a lesser extent TSCM, showed the highest resistance to ADCC.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig1-v2.jpg)
+
+**Figure 1.:** The susceptibility of different cell subpopulations that compose the HIV-reservoir to Natural Cytotoxicity (NC) and Antibody-Dependent Cell Cytotoxicity (ADCC) mediated by NK cells was measured by performing functional assays. (A) Percentage of gp120-coated cells killed by ADCC after being exposed to HIV-specific immunoglobulins (Igs) in the presence of NK cells. The intrinsic susceptibility to ADCC was measured in Naïve (TNA), Stem Cell Memory (TSCM), Central Memory (TCM), Effector Memory (TEM), TCD32dim, and TCD20dim subsets. Statistical comparisons were performed using the ANOVA Friedman with Dunn’s multiple comparison test. Median with interquartile range is shown. (B) Percentage of total gp120-coated CD4+ T cells from different cohorts of patients killed by ADCC. Healthy donors (HD), Elite Controllers (EC), and antiretroviral-treated (ART) PLWH. Statistical comparisons were performed using one-way ANOVA with Tukey’s multiple comparison test. Median with interquartile range are shown. (C) Percentage of cell subsets killed by ADCC in cells from HD, EC, and ART. Statistical comparisons were performed using the one-way ANOVA with Tukey’s multiple comparison test. Median with interquartile range is shown. (D–E) Spearman correlations between the size of the HIV-reservoir measured as total HIV-DNA in samples from ART-suppressed PLWH, and the potency of autologous NK cells to kill (D) total CD4+ T cells or (E) TCD32dim cells by ADCC. (F) Representative flow cytometry gating strategy used to quantify HIV infection after ex vivo infection with BaL or NL4.3. Fluorescence minus one (FMO) control was used to determine CD32 expression. Cells were infected for 5 days and the frequency of expression of CD32 on HIV-infected cells was measured for each condition. (G) Percentage of killing by NC of ex vivo HIV-infected TCD32dim and TCD32− cells mediated by autologous NK cells from ART-treated PLWH (n=14). Killing was calculated by normalizing the proportion of each subset within the p24+ fraction in the co-culture condition to the basal condition. (H) Percentage of ADCC killing of ex vivo HIV-infected TCD32dim and TCD32− cells mediated by autologous NK cells from ART-treated PLWH (n=14). Killing was calculated by normalizing the proportion of each subset within the p24+ fraction in the co-culture condition with plasma to the co-culture without plasma. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. *p<0.05; **p<0.01.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Cell coating with recombinant gp120 HIV protein. Detection was performed by flow cytometry using the anti-gp120 antibody A32, and a FITC-labeled anti-human secondary antibody. Mean Fluorescence Intensity (MFI) values are shown. (B) Gating strategy used to identify cell killing after the ADCC assay in the different cell subsets. Cell doublets were excluded by forward and side scatter signals and B and myeloid cells discarded based on their high expression of CD20 and CD32. Beads for absolute cell counting were included to calculate ADCC killing by measuring the disappearance of cells in each cell subset. (C) Frequency of expression measured by flow cytometry of CD32 on CD4+ T cells from healthy donors (HD, n=8), Elite controllers (EC, n=7) and ART-treated and virologically-suppressed PLWH (ART, n=15). Median with interquartile range are shown. Statistical comparisons were performed using the Mann-Whitney test. ***p<0.001; ****p<0.0001. (D–E) Correlations of the HIV-reservoir size and CD32 expression. Spearman correlations are shown in samples from HIV-infected individuals. ART-treated and EC are shown in blue and green dots, respectively. (D) Spearman correlation between the total HIV DNA reservoir size and the frequency of expression of CD32 in CD4+ T cells. ART-treated and EC are shown in blue and green dots, respectively. (E) Spearman correlation between HIV RNA levels in CD4+ T cells and the frequency of expression of CD32 in CD4+ T cells. (F–G) Intrinsic susceptibility to NK-mediated ADCC of Naïve (TNA), Stem Cell Memory (TSCM), Central Memory (TCM), Effector Memory (TEM), TCD32dim, and TCD20dim subsets in (F) EC, and (G) HD. Median with interquartile range is shown. Statistical comparisons were performed using the ANOVA Friedman test. *p<0.05; **p<0.01.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Median with interquartile range are shown. Statistical analyses consisted of the Wilcoxon matched-pairs signed-rank test. (C) Spearman correlation between the percentage of ADCC-killing of the total HIV-infected CD4+ T cells and the percentage of ADCC-killing of the TCD32dim subset is shown.
 
 To address if the pattern observed for CD32 cells was exclusive of ART-treated PLWH, we included samples from Elite controllers (EC) and healthy donors (HD). First, we compared the expression of CD32 in CD4+ T cells in the three cohorts (participants #1–22, Supplementary file 1), following a very stringent flow cytometry gating strategy (Figure 1—figure supplement 1B). In agreement with previous studies (Darcis et al., 2020; Abdel-Mohsen et al., 2018; Holgado et al., 2018; García et al., 2018), we found that a median of 1.21% of CD4+ T cells expressed the CD32 receptor, and no statistically significant differences were detected between ART-suppressed, EC participants and HD (Figure 1—figure supplement 1C). In addition, and in concordance with the study of García et al., but differing from the report of Darcis et al. (Darcis et al., 2020; García et al., 2018), there was no correlation between the HIV-DNA or HIV-RNA levels and the frequency of CD32 expression on CD4+ T cells (Figure 1—figure supplement 1D–E). We then performed the NK-ADCC assays. We observed that overall, NK cells from healthy donors were highly efficient at killing the total CD4+ T cell population (Figure 1B) and the different CD4+ T subsets (Figure 1C). EC represented a heterogeneous group of individuals, in which no significant differences were detected compared to HD as a total (Figure 1B) or by subset (Figure 1C). Of note, we observe a highly variable functionality of NK cells in the EC cohort compared with HD. We hypothesize that this variability in the EC cohort may be due to a higher diversity in the expression of NK receptors among individuals. More research is needed in this regard. Total CD4+ T cells (Figure 1B) as well as all subsets from ART-treated PLWH were less susceptible to ADCC-mediated killing than HD (Figure 1C). The altered frequencies, phenotypes, and decreased functions of NK cell subsets reported during HIV infection (Mikulak et al., 2017), which are not fully restored by ART (Lichtfuss et al., 2012), could explain the different NK potency observed in these ART-suppressed PLWH. Notably, and regardless of that, NK cells from all cohorts showed a marked impaired capacity to kill TCD32dim cells (median % of ADCC of 0.00, 34.84, and 45.01, for ART, EC, and HD, respectively) (Figure 1C and Figure 1—figure supplement 1F–G). We also investigated the potential relationship between the total cell reservoir size in vivo and ADCC activity. We observed a statistically significant inverse correlation between the percentage of ADCC activity against CD4+ T cells and the total HIV-DNA reservoir size (Figure 1D) and, in particular, for the ADCC against TCD32dim cells (Figure 1E).
 
 HIV proteins are known to alter the expression of molecules on the infected cells, thereby impacting their recognition and likely the killing mediated by immune cells. Thus, we ought to confirm our results in a more physiological setting using ex vivo infected CD4+ T cells. Isolated CD4+ T cells from ART-suppressed PLWH were infected with HIVBaL or HIVNL4.3, and after 5 days, were subjected to NK NC and ADCC assays (participants #23–29, 36, 44, 46–49, and 51, Supplementary file 1). A representative flow gating strategy is shown in Figure 1F. After the ex vivo infection of CD4+ T cells, we observed higher expression of the CD32 molecule in comparison to uninfected cells (Figure 1—figure supplement 2A–B). Moreover, no significant differences between the killing of TCD32dim and TCD32− by NC in ART-suppressed PLWH were observed (Figure 1G). However, and in concordance with results in Figure 1A and C, TCD32dim cells from ART-suppressed PLWH were significantly more resistant to ADCC in comparison to their negative cell counterparts (median % ADCC killing normalized to NC of 19.66 vs 35.85 for TCD32dim and TCD32−, respectively) (Figure 1H). In addition, we observed that the capacity to kill infected TCD32dim cells was directly related to the global capacity to kill all infected cells, indicating the essential role of NK potency, in addition to the intrinsic susceptibility of the target cells (Figure 1—figure supplement 2C). These results show that, regardless of differences between individuals on the overall killing capacity of their NK cells, different subpopulations of infected CD4+ T cells have distinct intrinsic susceptibility to ADCC responses, being the pool of CD4+ T cells expressing the CD32 molecule more resistant. Moreover, ART-suppressed individuals, most likely due to the existence of impaired NK cells, have a remarkable inability to kill this population of infected cells.
 
-## Viral-reactivated cells expressing CD32 from ART-treated PLWH are resistant to NK cell-mediated cytotoxicity
+### Viral-reactivated cells expressing CD32 from ART-treated PLWH are resistant to NK cell-mediated cytotoxicity
 
 Next, we examined if this NK-resistant profile might also affect the latent reservoir after viral reactivation. First, using samples from nine ART-suppressed PLWH (subjects #59–67, Supplementary file 1), we reactivated primary CD4+ T cells with different latency-reversing agents (LRA) and applied the Prime Flow RNA (FISH-flow) in situ hybridization (ISH) assay, which allows detecting at a single cell level cells expressing viral RNA, as described before (Grau-Expósito et al., 2017; Grau-Expósito et al., 2019). The gating strategy is shown in Figure 2—figure supplement 1A. We observed a higher increase of HIV-RNA+ cells in the TCD32dim fraction compared to TCD32− cells in all conditions and, within TCD32dim cells, HIV-RNA+ cells were more frequent after Romidepsin treatment compared to untreated cells (Figure 2A). Upregulation of CD32 expression upon the treatment with several LRAs was evidenced in total CD4+ T cells (Figure 2—figure supplement 1B). Furthermore, we performed functional NK assays using samples from 22 additional ART-suppressed PLWH after reactivation of the natural HIV reservoir (participants #68–89, Supplementary file 1). First, we evaluated viral reactivation by intracellular p24 detection in CD4+ T cells (Figure 2—figure supplement 1C) and successfully observed viral reactivation of dormant HIV in 17 of these samples (Figure 2B). An example of p24 detection using this functional assay is shown in Figure 2—figure supplement 1D. Also in line with our previous results, we found a higher frequency of viral reactivated cells (p24+ cells) within the TCD32dim fraction (Figure 2C). After the NK killing assays, viral-reactivated cells, in general, were susceptible to ADCC (Figure 2D, ART+LRA+NK+plasma condition) with a median of 30% increase in the ADCC activity compared with the NC activity (Figure 2E). Of note, we used autologous plasma from the same virologically-suppressed PLWH (mean time of undetectable viremia of 60 months [range 25–118]). This is noteworthy since ART treatment may decrease the number of antibodies mediating ADCC (Madhavi et al., 2015). We next evaluated the population of viral-reactivated cells expressing CD32 in these PLWH. We observed an increase in the expression of CD32 after latency disruption, which constituted a significant fraction of the total pool of viral reactivated cells (Figure 2F). Remarkably, this population was refractory to ADCC and even increased after the ADCC assays (condition with plasma) (Figure 2G). Thus, concordantly with previous results, TCD32dim cells showed a higher pattern of ADCC resistance compared to the total HIV-reactivated cells (Figure 2H). Altogether, our results show that the latent HIV reservoir expresses CD32 upon viral reactivation with LRAs, and the resulting TCD32dim-infected cells are less sensitive to NK-mediated ADCC killing than the whole infected population. Importantly, antibodies endowed with ADCC-triggering capacity are still present in some ART-suppressed PLWH, yet the TCD32dim population might escape from this immune mechanism.
 
-## Infected TCD32dim cells expressing activating or inhibitory NK ligands are more refractory to NK-mediated killing
+![Figure 2.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig2-v2.jpg)
+
+**Figure 2.:** Data from the direct ex vivo reactivation of the natural HIV reservoir in ART-suppressed PLWH. (A) Percentage of HIV-RNA expressing cells, measured by the RNA FISH-flow assay, within the TCD32dim and TCD32− subsets after viral reactivation with Ingenol, PMA/ionomycin, or romidepsin (n=9). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between CD32dim and CD32− within each drug condition), and the ANOVA Friedman with Dunn’s multiple comparison test (comparison between different drug conditions of the cell subset). Median with interquartile range is represented. (B) Percentage of p24+ cells after 18 hr viral reactivation with PMA/ionomycin (n=17). Each participant is represented by a different color. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. (C) Frequency of viral reactivation within the total pool of TCD32dim and TCD32− cells (n=17). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. (D) NK killing assays against viral reactivated cells. Number of p24+ cells per million CD4+ T cells after the addition of NK cells only or together with the autologous plasma is shown (n=17). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. (E) Percentage of ADCC in p24+ cells normalized to the NC control (ART + LRA + NK). Statistical comparisons were performed using one-sample t-test. (F) Percentage of CD32 expression within the total p24+ pool before and after HIV reactivation (n=17). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. (G) Percentage of TCD32dim within p24+ cells after HIV reactivation and functional NK-mediated assays (n=17). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. (H) Percentage of NK-mediated killing by ADCC of the reactivated TCD32dim or total p24+ cells (n=17). ADCC was calculated as the reduction of p24+ cells after the co-culture with NK and plasma and normalized to the condition with NK cells alone. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test. *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Flow cytometry gating strategy used for the identification of TCD32dim cells expressing HIV-RNA after the RNA FISH-flow protocol. (B) Percentage of CD32 expression within the total CD4+ T cells before and after LRA treatment, using samples from ART-suppressed PLWH subjected to RNA FISH-flow assay. Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test. **p<0.01. (C) p24+ cells in samples from ART-suppressed individuals at baseline and after viral reactivation with PMA/ionomycin (LRA). The limit of detection is set up at 53 copies/million cells calculated by the formula 3*SD of the mean percentage of p24+ cells detected in healthy donor (HD) samples. (D) Representative flow cytometry plots of viral reactivation levels (measured as p24+ cells) after LRA treatment and natural killer (NK) functional assays.
+
+### Infected TCD32dim cells expressing activating or inhibitory NK ligands are more refractory to NK-mediated killing
 
 To ascertain if differences in receptor-ligand interactions could be responsible for the impaired capacity of the NK cells to kill the TCD32dim subset, we studied the expression of MICA/B, ULBP-1, CD155, and HLA-E on the surface of HIV-infected CD4+ T cells after ex vivo infection. Of note, the impact of HIV infection on the expression of many of these ligands is not fully understood and seems to depend on the viral strain and the stage of the viral infection (Tremblay-McLean et al., 2017; Apps et al., 2016). Expression of the ligands was assessed by flow cytometry, and the gating strategy used for these analyses is shown in Figure 3—figure supplement 1A. Overall, we observed that, despite HIV induced higher expression of MICA/B, ULBP-1, and CD155 in infected cells compared to uninfected cells, only a small proportion of infected cells expressed these activating ligands (Figure 3A and B). In contrast, the ligand HLA-E was found to be expressed in a significantly higher proportion of infected cells (median of 12.0% in HIV-infected cells vs 9.4% in uninfected cells, p=0.002) (Figure 3C and D). By analyzing CD4+ T-infected cells based on their expression of CD32, the same trend was observed for the receptors MICA/B, ULBP1, or CD155 (median 0.6%, 1.28%, 0.37% for infected TCD32dim vs 0.26%, 0.09%, 0.26% for the infected TCD32− fraction) (Figure 3E and F). However, HLA-E expression was 2-fold significantly higher in HIV-infected TCD32dim compared to infected TCD32− cells (median of 22.2% and 11.0%, respectively, p<0.0001), and differences in MFI were also detected (Figure 3G and H). Of note, in the absence of any viral infection, TCD32dim cells showed intrinsically higher HLA-E expression (Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig3-v2.jpg)
+
+**Figure 3.:** HIV-infected cells from healthy donors were subjected to NK-killing assays and the percentage of expression of different NK-ligands was measured by flow cytometry in different fractions (CD32− and CD32dim) of infected (p24+) or uninfected (p24−) cells. (A–H) Expression of NK-ligands before performing the killing assays (n=19). (A) Percentage of CD4+ T cells expressing MIC A/B, ULBP-1, and CD155. (B) Mean Fluorescence Intensity (MFI) values for the expression of MIC A/B, ULBP-1, and CD155 on CD4+ T cells. (C) Percentage of CD4+ T cells expressing the MHC molecule HLA-E. (D) MFI values for HLA-E expression on CD4+ T cells. All graphs show median with interquartile range and the statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between p24+ and p24−). (E–H) Same analyses as A–D but showing HIV-infected CD32dim and CD32- cells. (I–P) Expression of NK-ligands on HIV-infected cells not killed by the different NK-killing mechanisms. Natural Cytotoxicity (NC) and Antibody-Dependent Cell Cytotoxicity (ADCC). (I–L) Expression of NK-ligands on total infected CD4+ T cells before and after NK killing. (M–P) Expression of NK-ligands on infected TCD32dim cells before and after NK killing. All I-P graphs show median with interquartile range. p values shown in the graphs represent ANOVA Friedman test, and asterisks denote the multiple comparison Dunn’s test.*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative flow cytometry gating strategy used to quantify the expression of MIC A/B, ULBP-1, CD155, and HLA-E ligands on HIV-infected cells after ex vivo infection. FMO controls are also shown. (B) Mean Fluorescence Intensity (MFI) values of HLA-E expression on CD4+ T cells in the absence of Human immunodeficiency virus (HIV) infection. Median with interquartile range is shown. Statistical comparison consisted of the Wilcoxon matched-pairs signed-rank test. **p<0.01.
+
 Next, we ought to determine the expression of activating and inhibitory ligands on the fraction of CD4+ T cells refractory to ADCC after ex vivo infection. We performed both NC and ADCC functional assays (in cells from participants #36, 40, 44, 45, 47–49, and 51, Supplementary file 1). We observed statistically significant differences (ANOVA Friedman test) for the infected population (p24+) expressing the ligands ULBP-1 (p=0.004), MICA/B (p=0.030), and CD155 (p=0.017) after NC and ADCC assays (Figure 3I–K); however, only the cells expressing the ligand ULBP-1 in the NC and ADCC condition were different compared to the basal (Figure 3I). Of note, as previously reported (Pereira et al., 2019; Ward et al., 2004), cells expressing the molecule HLA-E were particularly resistant to NK-mediated killing (Figure 3L). However, infected TCD32dim cells expressing any of the activating NK ligands were more refractory to both NK-mediated immune responses (Figure 3M–P). Overall, we observed that upon HIV infection, target cells expressing NK-activating ligands showed some susceptibility to NK cells. However, infected cells expressing HLA-E and, particularly, CD32dim cells expressing this molecule and/or the activating ligands MICA/B, ULBP-1, and CD155, were more resistant to NK-mediated killing.
 
-## Suboptimal binding of HIV-specific immunoglobulins to CD32 in HIV-infected cells inefficiently triggers NK cell degranulation
+### Suboptimal binding of HIV-specific immunoglobulins to CD32 in HIV-infected cells inefficiently triggers NK cell degranulation
 
 Different hypotheses might help to explain why TCD32dim cells are more resistant to ADCC. CD32a is a low-affinity receptor for the constant fraction of immunoglobulin G (FcγR-IIa) (Alevy et al., 1992; Veri et al., 2007; Anania et al., 2019), and the expression of this molecule on HIV-infected cells would provide them with a bivalent capacity to interact with immunoglobulins present in plasma, both through their constant fraction (Fc portion) or the variable fragment (antigen-specific). In addition, pentraxins, conserved innate immune molecules involved in infectious processes and inflammation, can bind to CD32 and compete with IgGs (Lu et al., 2008). Thus, the engagement of such molecules or immune complexes (IC) to the CD32 Fc receptor might offer a selective advantage by protecting infected cells from HIV-specific ADCC-inducing antibodies. Accordingly, we tested if HIV-specific immunoglobulins (Igs) were able to efficiently bind to CD4+ T CD32-expressing cells previously coated with gp120. After incubation with plasma containing HIV-unspecific immunocomplexes (ICs), we found a decrease in the total number of HIV-specific molecules (A32 mAb) able to bind to TCD32dim cells (Figure 4A–B), but such effect was not observed in the TCD32− population (Figure 4C). A reduction in the total number of cells being recognized by the A32 mAb was not observed (Figure 4—figure supplement 1A-B). This suggests that components present in plasma might bind to the FcγR receptor CD32 representing a steric hindrance and precluding further binding of HIV-specific IgGs. Alternatively, this may indicate competition between CD32 and gp120 for the binding of the same IgG.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig4-v2.jpg)
+
+**Figure 4.:** The binding capability of the HIVgp120-specific IgG A32, an antibody (Ab) labeled with allophycocyanin (APC), to gp120-coated TCD32dim and TCD32− cells from healthy donors, before and after incubation with plasma containing non-HIV specific IgGs, was measured by flow cytometry (n=7). Percentage of the Mean Fluorescence Intensity (MFI) signal, normalized to the medium, for A32+ cells after plasma addition is shown in (A) Representative histogram of A32+ TCD32dim cells, (B) TCD32dim and (C) TCD32− cells. (D) Percentage of cell conjugates between ex vivo HIV-infected TCD32dim or TCD32− and NK cells after performing antibody-dependent cell cytotoxicity (ADCC) assays (n=14). (E) Percentage of NK degranulation (CD107a marker) in cell conjugates with sorted TCD32dim or TCD32−-coated with gp120 HIV protein and incubated with plasma HIV+, after a 4 hr antibody-dependent cell cytotoxicity (ADCC) activation assay (n=3). Values are normalized to the CD32 population (F) Schematic illustration of the impaired ADCC response against TCD32dim cells. Graphs show median with range and statistical comparisons were performed using Wilcoxon matched-pairs signed-rank test. *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The binding capability of the A32 HIV-specific antibody (APC-labeled) to gp120-coated TCD32dim and TCD32− before and after incubation with plasma containing non-HIV-specific IgGs, was measured by flow cytometry. (A) Percentage of A32+ TCD32dim cells. (B) Percentage of A32+ TCD32− cells. (C) Percentage of IFN-γ+ NK cells in cell conjugates with sorted TCD32dim and TCD32− cells after ADCC assays. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test.supplementary information.
+
 We also studied the capacity of ex vivo infected CD4+ T cells expressing CD32 to form ADCC-induced conjugates with NK cells. We observed a significantly higher frequency of TCD32dim – NK doublets compared to TCD32− cells (Figure 4D). This could be explained by the inefficient elimination of TCD32dim cells by ADCC (as shown in Figure 1H), more likely as a consequence of suboptimal antibody-induced immune synapse. This phenomenon has been previously described in HIV-infected macrophages where increased effector-target cell contact time was associated with relative resistance to cytotoxic T lymphocytes (Clayton et al., 2018). Indeed, when we tested the capacity of FACS-sorted and gp120-coated TCD32dim cells to activate NK cells, we observed that these cells triggered a less potent NK degranulation than their negative counterparts (Figure 4E), whileIFN-γ was equally induced in both cases (Figure 4—figure supplement 1C). Overall, our results suggest that potential immune factors present in the plasma that are ligands of CD32 might promote a steric interference that precludes the subsequent binding of HIV-specific antibodies, leading to poor NK activation and therefore resistance to ADCC (as illustrated in Figure 4F).
 
-## HIV-infected cells expressing CD32 show higher proliferation potential after immune complexes engagement
+### HIV-infected cells expressing CD32 show higher proliferation potential after immune complexes engagement
 
 We next explored the possibility that the engagement of IC to the CD32 molecule might induce cell proliferation, and therefore, contribute to their persistence. To study that, we performed ex vivo infection experiments of primary CD4+ T cells and measured cell proliferation after IC engagement by flow cytometry. First, we observed that HIV-infected cells, and in particular infected cells expressing CD32dim, had higher proliferative potential measured by the expression of Ki67 (median of 6.67% vs 4.62% for TCD32dim and TCD32−, respectively) (Figure 5A and B). Importantly, we observed that the addition of plasma from an HIV-infected patient (containing a high titer of Igs), induced significant proliferation of infected TCD32dim cells (median of 7.52% vs 12.80% for basal condition and plasma HIV+, respectively), which was not significant when Fc receptor blockers were added to the culture (Figure 5C). Of note, no effect was observed after the addition of plasma from an HIV-negative donor (Figure 5C). In contrast, cell proliferation was unchanged in the infected TCD32− population (Figure 5D). Overall, these results suggest that IC present in the plasma of PLWH could contribute to the perpetuation of the TCD32dim HIV-infected subset by inducing cell proliferation, besides protecting them from ADCC.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig5-v2.jpg)
 
-**Figure 5.:** dim cells.Cells from healthy donors were infected with the viral strain HIVBaL and 5 days post-infection Ki67 expression was measured by flow cytometry. (A) Expression of the proliferation marker Ki67 in uninfected or ex vivo HIV-infected CD4+ T cells. Median and ranges are shown (n=17). Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test. (B) Percentage of Ki67+ cells in HIV-infected TCD32dim and TCD32− subsets are shown (n=17). Median and ranges are shown. Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test. (C) Percentage of Ki67 expression on TCD32dim cells after immune complexes engagement (Plasma HIV+). Medium alone, FcRs blockers and plasma from an HIV-negative individual were included as controls. Median with interquartile range is shown (n=8). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between p24+ and p24− within each condition), and the ANOVA Friedman with Dunn’s multiple comparison test (comparison between different conditions of the p24+ or p24− cells). (D) Percentage of Ki67 expression on HIV-infected TCD32− cells incubated under the same experimental conditions as shown in (C). Median with interquartile range is represented (n=8). Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test.*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.Figure 5—source data 1.Figure 5.
+**Figure 5.:** Cells from healthy donors were infected with the viral strain HIVBaL and 5 days post-infection Ki67 expression was measured by flow cytometry. (A) Expression of the proliferation marker Ki67 in uninfected or ex vivo HIV-infected CD4+ T cells. Median and ranges are shown (n=17). Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test. (B) Percentage of Ki67+ cells in HIV-infected TCD32dim and TCD32− subsets are shown (n=17). Median and ranges are shown. Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test. (C) Percentage of Ki67 expression on TCD32dim cells after immune complexes engagement (Plasma HIV+). Medium alone, FcRs blockers and plasma from an HIV-negative individual were included as controls. Median with interquartile range is shown (n=8). Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between p24+ and p24− within each condition), and the ANOVA Friedman with Dunn’s multiple comparison test (comparison between different conditions of the p24+ or p24− cells). (D) Percentage of Ki67 expression on HIV-infected TCD32− cells incubated under the same experimental conditions as shown in (C). Median with interquartile range is represented (n=8). Statistical comparisons consisted of the Wilcoxon matched-pairs signed-rank test.*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
 
-## Effect of IL-15 and IFN-α at enhancing the killing of HIV-infected TCD32dim cells
+### Effect of IL-15 and IFN-α at enhancing the killing of HIV-infected TCD32dim cells
 
 Given the unique properties of TCD32dim cells, we further explored several strategies to potentiate its elimination by NK cells. We tried to directly reinvigorate NK cells from HIV-infected PLWH (#52–58, Supplementary file 1) culturing them with the cytokines IL-15 or IFN-α. As expected and previously reported (Garrido et al., 2018), we observed an enhanced performance of NK cells against the total gp120-coated CD4+ T cell population when treated with IL-15, and to a lesser extent with IFN-α. However, neither IL-15 nor IFN-α was able to enhance the ADCC response against T CD32dim-infected cells (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig6-v2.jpg)
 
-**Figure 6.:** CD4+ T cells from ART-suppressed participants coated with a gp120 recombinant protein were subjected to antibody-dependent cell cytotoxicity (ADCC) assays in the presence of cytokines. The graph shows the percentage of ADCC killing of HIVgp120-coated CD4+ T cells by autologous NK cells after treatment with IL-15 or IFN-α. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between CD4+ T and CD32dim cells within each condition), and the ANOVA Friedman with Dunn’s multiple comparison test (comparison between different conditions of the CD4+ T or CD32dim cells). Mean with SEM is represented. *p<0.05.Figure 6—source data 1.Figure 6.
+**Figure 6.:** CD4+ T cells from ART-suppressed participants coated with a gp120 recombinant protein were subjected to antibody-dependent cell cytotoxicity (ADCC) assays in the presence of cytokines. The graph shows the percentage of ADCC killing of HIVgp120-coated CD4+ T cells by autologous NK cells after treatment with IL-15 or IFN-α. Statistical comparisons were performed using the Wilcoxon matched-pairs signed-rank test (comparison between CD4+ T and CD32dim cells within each condition), and the ANOVA Friedman with Dunn’s multiple comparison test (comparison between different conditions of the CD4+ T or CD32dim cells). Mean with SEM is represented. *p<0.05.
 
 ## Discussion
 
@@ -81,7 +117,7 @@ The presence of cellular and anatomical viral reservoirs, not susceptible to ART
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78294/elife-78294-fig7-v2.jpg)
 
-**Figure 7.:** + T CD32dim cells.A proportion of CD4+T cells will express CD32 molecules upon HIV infection or viral reactivation (spontaneous reactivation or after the use of latency reversal agents). CD4+T CD32dim cells express higher levels of HLA-E, a molecule that inhibits NK cells expressing the receptor NKG2A, and are more susceptible to immune factors present in the plasma, which will (i) induce cell proliferation, (ii) block the recognition of HIV-specific antibodies, and (iii) induce a weak antibody-dependent cell cytotoxicity (ADCC) response.
+**Figure 7.:** A proportion of CD4+T cells will express CD32 molecules upon HIV infection or viral reactivation (spontaneous reactivation or after the use of latency reversal agents). CD4+T CD32dim cells express higher levels of HLA-E, a molecule that inhibits NK cells expressing the receptor NKG2A, and are more susceptible to immune factors present in the plasma, which will (i) induce cell proliferation, (ii) block the recognition of HIV-specific antibodies, and (iii) induce a weak antibody-dependent cell cytotoxicity (ADCC) response.
 
 One of the main obstacles in the HIV cure field has been the lack of reliable markers to uniquely identify persistently infected cells. Among proposed molecules, we find immune checkpoint inhibitors such as PD-1 (Fromentin et al., 2016), the B cell surface marker CD20 (Serra-Peinado et al., 2019), CD30 (Hogan et al., 2018), or, more recently, a combination of several receptors (Neidleman et al., 2020). However, the Fcγ receptor CD32 is perhaps one of the most promising HIV reservoir markers, since it is expressed during latent (Descours et al., 2017; Darcis et al., 2020) and transcriptionally-active infection (Abdel-Mohsen et al., 2018; Vásquez et al., 2019; Noto et al., 2018; Huot et al., 2021); it has been localized in main tissue reservoirs such as the cervical tissue (Cantero-Pérez et al., 2019), lymph nodes (Abdel-Mohsen et al., 2018; Noto et al., 2018) and the gastrointestinal tract (Vásquez et al., 2019) and, in some cases, it has been associated with a very prominent enrichment for HIV DNA (Cantero-Pérez et al., 2019; Descours et al., 2017; Darcis et al., 2020). This molecule is typically expressed on myeloid cells or platelets, in which its function has been extensively studied (Anania et al., 2019). While CD32 expressed on CD4+ T cells is fully functional (Holgado et al., 2018; Engelhardt et al., 1995), many questions remain unknown regarding the expression dynamics and function, in particular during HIV pathogenesis. In a recent study with SIV-infected non-human primates, CD32+CD4+ T cells were strongly increased in LNs, spleen, and intestine during SIV mac infection, were enriched in markers often expressed on HIV-infected cells, and contained higher levels of actively transcribed SIV RNA (Huot et al., 2021). Consistent with previous reports (Abdel-Mohsen et al., 2018; García et al., 2018), we detected dim levels of CD32 on CD4+ T cells which increased upon ex vivo HIV infection or reactivation. This result is in line with a publication showing the ability of cells expressing CD32 to reactivate latent HIV (Darcis et al., 2020). Moreover, tissue-resident CD4+ T cells with expression of CD32 have been reported in cervical samples in the absence of infection. Importantly, this fraction of cells was intrinsically enriched for the expression of molecules related to HIV susceptibility and long-term maintenance (Cantero-Pérez et al., 2019). In this sense, cell proliferation is one of the most important mechanisms of cell reservoir maintenance in long-term ART-suppressed PLWH (Chomont et al., 2009; Gantner et al., 2020; Simonetti et al., 2016). Importantly, we show that CD32-expressing cells had a higher proliferative potential in response to IC. Inherent proliferative capacity of this subset has recently been reported in a study demonstrating CD4+ T cell activation upon CD32 ligation with antibodies or aggregated IgG (Holgado et al., 2018). Thus, understanding the mechanisms by which HIV-infected cells expressing CD32 are maintained in the human body could significantly advance the search for an HIV cure.
 
@@ -95,64 +131,302 @@ A potential limitation of our study is the decline of HIV-specific antibody leve
 
 ## Materials and methods
 
-## Cells, virus, and reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>antibody</td>
+      <td>Human monoclonal A32 antibody</td>
+      <td>AIDS Research and Reference Program</td>
+      <td>Cat#11,438</td>
+      <td>(1/200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD32-PE-Cy7 (FUN-2)</td>
+      <td>Biolegend</td>
+      <td>303,214</td>
+      <td>(1/50)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD32-FITC (FUN-2)</td>
+      <td>Biolegend</td>
+      <td>303,204</td>
+      <td>(1/40)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD45RO-BV605 (UCHL1)</td>
+      <td>Biolegend</td>
+      <td>562,790</td>
+      <td>(1/40)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD20-BV786 (2H7)</td>
+      <td>Biolegend</td>
+      <td>302,355</td>
+      <td>(1/40)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD95-PE-Cy5 (DX2)</td>
+      <td>Becton Dickinson</td>
+      <td>559,773</td>
+      <td>(1/10)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD107a-PE-Cy5 (H4A3)</td>
+      <td>Becton Dickinson</td>
+      <td>555,802</td>
+      <td>(1/10)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human IFN-ɤ-AF700 (B27)</td>
+      <td>Life technologies</td>
+      <td>MHCIFG29</td>
+      <td>(1/40)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human ULBP1-PerCP (170818)</td>
+      <td>R&amp;D System</td>
+      <td>FAB1380C</td>
+      <td>(1/20)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human HLA-E-APC (3D12)</td>
+      <td>Biolegend</td>
+      <td>342,606</td>
+      <td>(1/20)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CD155-BV786 (TX24)</td>
+      <td>Becton Dickinson</td>
+      <td>744,720</td>
+      <td>(1/100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human MIC A/B–BV605 (6D4)</td>
+      <td>Becton Dickinson</td>
+      <td>742,324</td>
+      <td>(1/166)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-p24-PE (KC57)</td>
+      <td>Beckman Coulter</td>
+      <td>6604667</td>
+      <td>(1/200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human CCR7-PE-CF594 (150503)</td>
+      <td>Becton Dickinson</td>
+      <td>562,381</td>
+      <td>(1/100)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse monoclonal anti-human Ki67-BV510 (B56)</td>
+      <td>Becton Dickinson</td>
+      <td>563,462</td>
+      <td>(1/83)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Plasmid encoding HIV-1 strain NL4.3</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NA</td>
+      <td>Malcom Martin</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>BaL gp120</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>NA</td>
+      <td>1 µg</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Human PrimerFlow RNA Assay</td>
+      <td>EBioscience</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Human Fc block</td>
+      <td>Becton Dickinson</td>
+      <td>564,219</td>
+      <td>(1/20)</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>mirVana miRNA isolation kit</td>
+      <td>Ambion</td>
+      <td>AM1560</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Zenon Human IgG labeling kit</td>
+      <td>Invitrogen</td>
+      <td>Z25451</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ingenol</td>
+      <td>Sigma Aldrich</td>
+      <td>SML1318-1MG</td>
+      <td>100 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Romidepsin</td>
+      <td>Selleckchem</td>
+      <td>NA</td>
+      <td>40 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Ionomycine</td>
+      <td>Abcam, Inc.</td>
+      <td>ab120370</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>PMA</td>
+      <td>Abcam, Inc.</td>
+      <td>ab120297</td>
+      <td>81 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Raltegravir</td>
+      <td>AIDS reagent program</td>
+      <td>NA</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Darunavir</td>
+      <td>AIDS reagent program</td>
+      <td>NA</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Nevirapine</td>
+      <td>Sigma Aldrich</td>
+      <td>SML0097-10MG</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Q-VD-OPh quinolyl-valyl-O-methylaspartyl-[–2,6-difluorophenoxy]-methyl ketone</td>
+      <td>Selleckchem</td>
+      <td>S7311</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>LIVE/DEAD Fixable Violet Dead Cell Stain Kit</td>
+      <td>Invitrogen</td>
+      <td>L34966</td>
+      <td>(1/250)</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>FlowJo software</td>
+      <td>TreeStar</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells, virus, and reagents
 
 PBMCs were obtained from PLWH and uninfected donors by Ficoll-Paque density gradient centrifugation and cryopreserved in liquid nitrogen. PBMCs were cultured in RPMI medium (Gibco) supplemented with 10% Fetal Bovine Serum (Gibco), 100 µg/ml streptomycin (Fisher Scientific), and 100 U/ml penicillin (Fisher Scientific) (R10 medium), and maintained at 37°C in a 5% CO2 incubator. For RNA FISH-flow assays, fresh PBMCs were obtained from a whole blood donation (400 ml) from PLWH by Ficoll-Paque density gradient centrifugation and CD4+ T cells were immediately isolated and used without previous cryopreservation.
 
 All plasmids needed for the generation of viral stocks and delta molecular clones were obtained through the NIH AIDS Reagent Program. Viral stocks were generated by transfection of 293T cells with the plasmids encoding the different molecular clones, and the resulting viral particles were titrated in TZMbl cells using an enzyme luminescence assay (britelite plus kit; PerkinElmer) as described previously (Li et al., 2006). BaL gp120 recombinant protein was obtained through the NIH AIDS Reagent Program. The A32 antibody was obtained through the AIDS Research and Reference Program, NIAID, NIH (Cat#11438) from Dr. James E. Robinson (Moore et al., 1993). Interleukin-2 (IL-2) was obtained from the Vall d´Hebron Hospital pharmacy. The pan-caspase inhibitor named Q-VD-OPh quinolyl-valyl-O-methylaspartyl-[–2,6-difluorophenoxy]-methyl ketone was purchased from Selleckchem.
 
-## ADCC assay in cells coated with recombinant gp120
+### ADCC assay in cells coated with recombinant gp120
 
-PBMCs from ART-suppressed PLWH, elite controllers, or uninfected donors were thawed and rested overnight in R10 medium. To exclude monocytes, PBMCs were cultured in a lying flask and adherent cells were discarded the next day. CD4+ T cells and NK cells were isolated from cryopreserved PBMCs using commercial kits (MagniSort Human CD4+ T Cell Enrichment; Affymetrix, and MagniSort Human NK cell Enrichment; eBioscience). Two rounds of cell separation were performed to maximize the purity of the cells (overall purity >85%). CD4+ T cells were stained with the membrane lipid marker PKH67 (Sigma-Aldrich) following the manufacturer’s instructions, for the stable identification of these target cells, and then coated with 1 µg of recombinant gp120 protein for 1 hr at RT. A pool of uncoated cells was used as a negative control. After coating, target cells were extensively washed in ice-cold R10 medium and dispensed in U-bottom 96-well plates (100,000 cells per well, 10 wells per condition). After that, CD4+ T cells were incubated for 15 min with plasma (1:1,000 dilution) from a viremic (high viral load in blood) HIV+ patient. Then, NK effector cells were added at 1:1 target/effector ratio. Plates were centrifuged at 400xg for 3 min and incubated for 4 hr at 37°C and 5% CO2. After incubation, cells were collected in FACs tubes, washed with staining buffer (PBS 3% FBS), and stained with anti-CCR7-PE-CF594 (150503, Becton Dickinson) for 30 min at 37°C. Next, cells were washed and stained with anti-CD3-AF700 (SK7, Biolegend), anti-CD45RO-BV605 (UCHL1, Biolegend), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-HLA-DR-BV711 (L243, Biolegend), anti-CD20-BV786 (2H7, Biolegend), and anti-CD95-PE-Cy5 (DX2, Becton Dickinson) for 20 min at RT. Finally, cells were washed with staining buffer (PBS 3% FBS) and fixed with PFA (2%). Flow cytometry particles for absolute cell counting (5*104/ml) (AccuCount Blank 5.0–5.9 µm, Cytognos) were added. Samples were acquired on an LSR Fortessa flow cytometer (Becton Dickinson) and analyzed using FlowJo V10 software. We calculated the % of killing as the number of cells that disappeared in each population, following the next formula:% ADCC=100−Cells (gp120)Cells (no gp120)∗100
+PBMCs from ART-suppressed PLWH, elite controllers, or uninfected donors were thawed and rested overnight in R10 medium. To exclude monocytes, PBMCs were cultured in a lying flask and adherent cells were discarded the next day. CD4+ T cells and NK cells were isolated from cryopreserved PBMCs using commercial kits (MagniSort Human CD4+ T Cell Enrichment; Affymetrix, and MagniSort Human NK cell Enrichment; eBioscience). Two rounds of cell separation were performed to maximize the purity of the cells (overall purity >85%). CD4+ T cells were stained with the membrane lipid marker PKH67 (Sigma-Aldrich) following the manufacturer’s instructions, for the stable identification of these target cells, and then coated with 1 µg of recombinant gp120 protein for 1 hr at RT. A pool of uncoated cells was used as a negative control. After coating, target cells were extensively washed in ice-cold R10 medium and dispensed in U-bottom 96-well plates (100,000 cells per well, 10 wells per condition). After that, CD4+ T cells were incubated for 15 min with plasma (1:1,000 dilution) from a viremic (high viral load in blood) HIV+ patient. Then, NK effector cells were added at 1:1 target/effector ratio. Plates were centrifuged at 400xg for 3 min and incubated for 4 hr at 37°C and 5% CO2. After incubation, cells were collected in FACs tubes, washed with staining buffer (PBS 3% FBS), and stained with anti-CCR7-PE-CF594 (150503, Becton Dickinson) for 30 min at 37°C. Next, cells were washed and stained with anti-CD3-AF700 (SK7, Biolegend), anti-CD45RO-BV605 (UCHL1, Biolegend), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-HLA-DR-BV711 (L243, Biolegend), anti-CD20-BV786 (2H7, Biolegend), and anti-CD95-PE-Cy5 (DX2, Becton Dickinson) for 20 min at RT. Finally, cells were washed with staining buffer (PBS 3% FBS) and fixed with PFA (2%). Flow cytometry particles for absolute cell counting (5*104/ml) (AccuCount Blank 5.0–5.9 µm, Cytognos) were added. Samples were acquired on an LSR Fortessa flow cytometer (Becton Dickinson) and analyzed using FlowJo V10 software. We calculated the % of killing as the number of cells that disappeared in each population, following the next formula:
+
+$$
+% ADCC=100−\frac{Cells (gp120)}{Cells (no gp120)}∗100
+$$
 
 Control cells non-coated with gp120 (no gp120 condition) but incubated with plasma allowed us to properly measure ADCC responses and rule out a possible non-specific activation of the NK cells mediated by the plasma.
 
 In some experiments, we assessed the capacity of NK cells to perform ADCC after being stimulated with IFN-α or IL-15 (Miltenyi Biotec). In such cases, PBMCs were stimulated overnight with 5000 U/ml IFN-α or 25 ng/ml of IL-15, and NK cells were isolated the next day.
 
-## Assessment of the gp120-coating in the different CD4+ T cell subsets
+### Assessment of the gp120-coating in the different CD4+ T cell subsets
 
 CD4+ T cells were coated with recombinant gp120 as described above and then stained with anti-CCR7-PE-CF594 (150503, Becton Dickinson), anti-CD3-AF700 (SK7, Biolegend), anti-CD45RO-BV605 (UCHL1, Biolegend), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-HLA-DR-BV711 (L243, Biolegend), anti-CD20-BV786 (2H7, Biolegend), and anti-CD95-PE-Cy5 (DX2, Becton Dickinson) antibodies. Next, cells were incubated for 20 min at RT with 5 µg/ml of A32 antibody (which binds to gp120 HIV protein). Then, cells were stained for 20 min at RT with an anti-human FITC-labelled secondary antibody (dilution 1:100) (Thermo Fisher) for A32 detection. Samples were acquired on an LSR Fortessa flow cytometer and data analyzed using FlowJo.
 
-## Binding assessment of HIV-specific antibodies to TCD32dim cells
+### Binding assessment of HIV-specific antibodies to TCD32dim cells
 
 Isolated CD4+ T cells from uninfected donors were coated with gp120 recombinant protein. To detect if IC might result in steric hindrance precluding the binding of HIV-specific Igs to the TCD32dim subset, we labeled the gp120-specific antibody (A32 mAb) with Allophycocyanin (APC) following the manufacturer instructions (Zenon Human IgG labeling kit, Invitrogen) and measured cell binding by flow cytometry. A pool of non-coated cells was used as a negative control. Cells were incubated with plasma containing high titer of non-HIV specific immune complexes (dilution 1000) for 20 min at RT. After, cells were incubated with A32-APC (3.3 µg/ml) for 25 min and labeled with anti-CD3-AF700 (SK7, Biolegend) and anti-CD32-PE-Cy7 (FUN-2, Biolegend). After, cells were washed once with PBS and stained with LIVE/DEAD Fixable Violet Viability (Invitrogen) for 20 min at RT. Finally, cells were washed with PBS and fixed with PFA (2%). Samples were acquired on an LSR Fortessa flow cytometer and data analyzed using FlowJo.
 
-## ADCC-mediated NK cell activation of isolated TCD32dim cells
+### ADCC-mediated NK cell activation of isolated TCD32dim cells
 
 For cell sorting experiments, 100 million PBMCs from healthy donors were stained with LIVE/DEAD violet viability (Invitrogen) for 20 min at RT. After washing, cells were surface stained with anti-CD3-PerCP (SK7; Becton Dickinson), anti-CD56-FITC (B159, Becton Dickinson), anti-CD32-PE-Cy7 (FUN-2, Biolegend), and anti-CD4-BV605 (RPA-T4, Becton Dickinson) antibodies for 20 min at RT. Cells were then washed and immediately sorted using a BD FACSAria Cell Sorter. We sorted the populations CD4−CD3−CD56+ (NK cells), CD3+CD4+CD32+ (TCD32dim) and CD3+CD4+CD32− (TCD32−). Then, we performed the ADCC assay and measured NK cell activation by flow cytometry. Purity of the cells was >97% in all cases.
 
 Sorted TCD32dim and TCD32− cells were coated with recombinant gp120 as described above and incubated with plasma from a viremic HIV-infected patient at 1:1000 dilution 15 min before the addition of NK cells (ratio 1:2). Co-cultures were maintained for 4 hr in a 96-well plate at 37°C and 5% CO2. NK cytotoxicity was assessed by measurement of CD107a and IFN-γ. As a positive control, we included NK cells cultured with 10 ng/ml PMA plus 1 µM ionomycin, and as a negative control, NK cells were cultured without any stimulus. CD107a-PE-Cy5 (H4A3; Beckton Dickinson), BD GolgiPlug Protein Transport Inhibitor (Becton Dickinson), and BD GolgiStop Protein Transport Inhibitor containing monensin (Becton Dickinson) were also added to each well at the recommended concentrations at the beginning of cell culture. After incubation, cells were washed and stained with a viability dye (LIVE/DEAD Fixable Violet dead cell stain; Invitrogen). Cells were then stained with anti-CD56-FITC (B159; Becton Dickinson), anti-CD32-PE-Cy7 (FUN-2, Biolegend) and, anti-CD4-BV605 (RPA-T4, Becton Dickinson) antibodies for 20 min at RT. After that, cells were washed and fixed and permeabilized with Fixation/Permeabilization Solution (Becton Dickinson) for 20 min at 4°C, washed with BD Perm/Wash buffer, and stained with anti-IFN-γ AF700 (Life technologies) for 30 min at 4°C. After washing, cells were fixed with PFA (2%) and acquired on an LSR Fortessa flow cytometer (Becton Dickinson). Flow cytometry particles for absolute cell counting (5*104/ml) (AccuCount Blank 5.0–5.9 µm, Cytognos) were added. Data were analyzed using FlowJo V10 software.
 
-## Ex vivo infection of unstimulated PBMCs
+### Ex vivo infection of unstimulated PBMCs
 
 PBMCs from ART-suppressed PLWH or healthy donors were thawed and incubated overnight in R10 medium containing 40 U/ml IL-2. The next day, CD4+ T cells were isolated using a commercial kit (MagniSort Human CD4+ T Cell Enrichment; Affymetrix) and infected by incubation for 4 hr at 37°C with 156,250 or 2500 TCID50 (50% tissue culture infectious dose) of HIVNL4.3 or HIVBaL viral strains, respectively. In some experiments, cells were infected by spinoculation at 1200× g for 2 hr at 37°C (TCID50 of 78,125 and 625 for HIVNL4.3 and HIVBaL). Cells were then washed twice with PBS and cultured at 1 M/ml in a 96-well plate round-bottom with R10 containing 100 U/ml of IL-2 for the next 5 days. The resulting HIV-infected CD4+ T cells were used for different experiments listed below.
 
-## Phenotyping of HIV-infected CD4+ T cells
+### Phenotyping of HIV-infected CD4+ T cells
 
 HIV-infected cells were stained with LIVE/DEAD AQUA viability (Invitrogen) for 30 min at RT. After washing once with staining buffer, cells were stained with anti-ULBP1-PerCP (170818, R&D Systems), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-CD3-PE-Cy5 (UCHT-1, Biolegend), anti-CD4-AF700 (RPA-T4, Becton Dickinson), anti-HLA-E-APC (3D12, Biolegend), anti-CD155-BV786 (TX24, Becton Dickinson) and anti-MIC A/B –BV605 (6D4, Becton Dickinson) antibodies for 20 min at RT. Cells were then fixed and permeabilized with Fixation/Permeabilization Solution (Becton Dickinson) for 20 min at 4°C, washed with BD Perm/Wash buffer, and stained with anti-p24-PE (Beckman Coulter) for 20 min on ice and 20 min at RT. After washing with BD Perm/Wash buffer, cells were fixed with PFA (2%). Samples were acquired on an LSR Fortessa flow cytometer and data analyzed using FlowJo V10 software. Gating was performed according to the different FMO controls.
 
-## Assessment of the proliferative potential of TCD32dim cells
+### Assessment of the proliferative potential of TCD32dim cells
 
 HIV-infected cells were incubated with plasma from a viremic HIV+ patient or plasma from an uninfected healthy donor (dilution 1:1000) for 4 hr at 37°C and 5% CO2. Additionally, a pool of HIV-infected cells previously treated with an Fc receptor blocker (human Fc block, Becton Dickinson) was used as a control. After incubation, cells were washed and stained with LIVE/DEAD Fixable Violet Viability (Invitrogen) for 20 min at RT. Next, cells were washed with staining buffer and stained with anti-CCR7-PE-CF594 (150503, Becton Dickinson) for 30 min at 37°C. After washing, cells were stained with anti-CD56-FITC (B159, Becton Dickinson), anti-CD3-AF700 (SK7, Biolegend), anti-CD45RO-BV605 (UCHL1, Biolegend), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-CD20-BV786 (2H7, Biolegend), anti-CD95-PE-Cy5 (DX2, Becton Dickinson), and anti-CD4-APC (OKT4, Biolegend) for 20 min at RT. Cells were then fixed and permeabilized with Fixation/Permeabilization Solution (Becton Dickinson) for 20 min at 4°C, washed with BD Perm/Wash buffer and stained with anti-p24-PE (KC57, Beckman Coulter) for 20 min on ice, and during the additional 30 min at RT an anti-Ki67-BV510 (B56, Becton Dickinson) was added. Finally, cells were washed and fixed with PFA (2%). Positive cells for the ki67 marker were determined according to FMO controls. Samples were acquired in an LSR Fortessa flow cytometer (Becton Dickinson) and analyzed with FlowJo V10 software.
 
-## Natural cytotoxicity and ADCC NK-based assays
+### Natural cytotoxicity and ADCC NK-based assays
 
 Five days after infection, HIV-infected cells were placed in a 96 round bottom well plate at 100,000 cells/well (ten replicates). Autologous NK cells, previously isolated by negative selection using magnetic beads (MagniSort Human NK cell Enrichment Kit, eBioscience), from PBMCs thawed the day before the co-culture, were added at 1:1 ratio. For the study of the ADCC response, plasma from a viremic HIV-infected patient containing a mix of antibodies targeting different HIV epitopes was added at 1:1000 dilution to HIV-infected cells 15 min before the addition of NK cells. After, the plate was centrifuged at 400× g for 3 min to facilitate cell contact and then incubated at 37°C with 5% CO2 for 4 hr. After, cells were collected in FACs tubes, washed with PBS, and stained with LIVE/DEAD Fixable Violet Viability (Invitrogen) for 20 mins at RT. Next, cells were washed with staining buffer and stained first with anti-CCR7-PE-CF594 for 30 min at 37°C, and after an additional wash, with anti-CD56-FITC (B159, Becton Dickinson), anti-CD3-AF700 (SK7, Biolegend), anti-CD45RO-BV605 (UCHL1, Biolegend), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-CD20-BV786 (2H7, Biolegend), anti-CD95-PE-Cy5 (DX2, Becton Dickinson), and anti-CD4-APC (OKT4, Biolegend) antibodies for 20 min at RT. Cells were then fixed and permeabilized with Fixation/Permeabilization Solution (Becton Dickinson) for 20 min at 4°C, washed with BD Perm/Wash buffer, and stained with anti-p24-PE (KC57, Beckman Coulter) for 20 min on ice and 20 min at RT. Finally, cells were washed and fixed with PFA (2%). Flow cytometry particles for absolute cell counting (5*104/ml) (AccuCount Blank 5.0–5.9 µm, Cytognos) were added. We also included a non-infected condition. Gating of the CD32 subpopulation was done according to FMO controls. Samples were acquired in an LSR Fortessa flow cytometer and analyzed with FlowJo software. The percentage of ADCC killing was determined by calculating the number of cells that disappeared in each infected population, normalizing numbers to the condition of HIV-infected CD4+ T cells plus NK cells (in the absence of plasma). The NC response was quantified as the reduction in the % of p24 HIV protein in TCD32− and TCD32dim subsets, in comparison to the % of p24 in these subsets in basal conditions in the absence of NK cells. In these assays, cells were first stained with AQUA viability (Thermo Fisher), then with a panel of surface antibodies: anti-ULBP1-PerCP (170818, R&D Systems), anti-CD56-FITC (B159, Beckton Dickinson), anti-CD32-PE-Cy7 (FUN-2, Biolegend), anti-CD3-PE-Cy5 (UCHT-1, Biolegend), anti-CD4-AF700 (RPA-T4, Becton Dickinson), anti-HLA-E-APC (3D12, Biolegend), anti-CD155-BV786 (TX24, Becton Dickinson), anti-MIC A/B –BV605 (6D4, Becton Dickinson); and finally intracellularly stained with anti-p24-PE (KC57, Beckman Coulter) as previously described.
 
 Cell conjugates were identified by flow cytometry and quantified as follows: live lymphocytes (isolated CD4+ T and NK cells) were gated after excluding contamination with B cells and monocytes. Then, HIV-infected cells were identified as p24+ cells in CD3+ cells, from which we selected separately both, CD32dim and CD32neg cells. From CD32dim and CD32neg populations we gated cell doublets by side scatter signals, and then we determined the fraction of cell doublets composed by CD4+ T cells (CD3+ and CD32dim or CD32neg) and NK cells (identified as CD56+ cells).
 
-## Detection of cells expressing HIV-1 RNA by the RNA FISH-flow assay
+### Detection of cells expressing HIV-1 RNA by the RNA FISH-flow assay
 
 PBMCs from nine ART-treated PLWH were obtained from a whole blood donation (400 ml) and CD4+ T cells were isolated by a negative selection kit (MagniSort Human CD4+ T Cell Enrichment; eBioscience). At least 6 × 106 of freshly-isolated CD4+ T cells were studied per condition, being subjected to viral reactivation with different LRAs (Ingenol and Romidepsin), and including the positive (PMA plus ionomycin) and negative controls (medium condition). Before viral reactivation, cells were pre-incubated with the pan-caspase inhibitor Q-VD-OPh (Selleckchem) for 2 hr. In addition, to prevent new rounds of viral infection during HIV reactivation, the cells were treated with LRAs in the presence of Raltegravir (1 μM) for 22 hr. Afterward, the RNA FISH-flow assay was performed according to the manufacturer’s instructions (Human PrimerFlow RNA Assay, eBioscience) with some modifications as previously described (Grau-Expósito et al., 2017). Briefly, after antibody staining and cell fixation and permeabilization, cells were ready for hybridization with a set of 50 probes spanning the whole Gag-Pol HIV mRNA sequence (bases 1165–4402 of the HXB2 consensus genome). Next, the cells were subjected to amplification signal steps, and HIV RNA was detected using Alexa Fluor 647-labeled probes. In these experiments, for surface antigen labeling, anti-human CD3 (AF700, Biolegend), anti-human CD32 (PE-Cy7, Biolegend), anti-human CD20 (BV785, Biolegend), and anti-human HLA-DR (BV711, Biolegend) antibodies were used, and cell viability analyzed with violet viability dye (Invitrogen). Samples were analyzed with the LSR Fortessa flow cytometer, and the results were analyzed with FlowJo v10 software.
 
-## Ex vivo viral reactivation of the natural reservoir from ART-suppressed PLWH
+### Ex vivo viral reactivation of the natural reservoir from ART-suppressed PLWH
 
 CD4+ T lymphocytes from ART-suppressed PLWH were isolated as described above and cultured in R10 medium with Q-VD-OPh (Selleckchem) for 2 hr in the presence of Raltegravir (1 µM), Darunavir (1 µM), and Nevirapine (1 µM) to prevent new rounds of viral infection. After 2 hr, PMA plus ionomycin (PMA 81 nM; ionomycin 1 µM) were added to the cell culture as a latency reversal agent and left for 18 hr to reactivate latent HIV. After viral reactivation, cells were subjected to cytotoxicity and ADCC assays as previously described here. For these experiments, we used the autologous plasma from each patient. After, cells were stained with LIVE/DEAD Far Red viability for 20 min at RT and then with anti-CD32 (FITC, Biolegend) and anti-CD3 (PerCP, Becton Dickinson) antibodies for 20 min at RT. After the cell surface staining, cells were fixed and permeabilized with Fixation/Permeabilization Solution (Becton Dickinson) for 20 min at 4°C, washed with BD Perm/Wash buffer, and stained with anti-p24-PE (Beckman Coulter) for 20 min on ice and 20 min at RT. Finally, cells were washed and fixed with PFA (2%). Samples were acquired in a FACSCalibur flow cytometer (Becton Dickinson) and analyzed with FlowJo V10 software. The limit of detection of the assay was established at 50 p24+ cells/million CD4+ T cells (Figure 2—figure supplement 1C).
 
-## Quantification of HIV DNA and HIV RNA by quantitative PCR
+### Quantification of HIV DNA and HIV RNA by quantitative PCR
 
 CD4+ T lymphocytes were enriched from total PBMCs using a negative selection kit (MagniSort Human CD4+ T Cell Enrichment, eBioscience). Then, CD4+ T cells were fractioned to extract RNA or quantify the HIV DNA from cell lysates. CD4+ T cells for DNA analysis were immediately lysed with proteinase K-containing lysis buffer (at 55°C overnight and 95°C for 5 min). The HIV DNA in the cell lysates was quantified by qPCR using primers and probes specific for the 1-LTR HIV region (LTR forward 5′-TTAAGCCTCAATAAAGCTTGCC-3′, LTR reverse 5′-GTTCGGGCGCCACTGCTAG-3′, and probe 5′ /56-FAM/CCAGAGTCA/ZEN/CACAACAGACGGGCA/31ABkFQ/3′). CCR5 gene was used for cell input normalization. Samples were analyzed in an Applied Biosystems 7000 Real-Time PCR System. For Viral RNA quantification, CD4+ T cells were subjected to RNA extraction using the mirVana kit following the manufacturer’s instructions (Ambion). Reverse transcription of RNA to cDNA was performed with SuperScriptIII (Invitrogen), and cDNA was quantified by qPCR with primers against the HIV long terminal repeat (LTR). Quantification of RNA and DNA copies was performed using a standard curve, and values were normalized to 1 million CD4+ T cells.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed with Prism software, version 6.0 (GraphPad). A p<0.05 was considered significant.

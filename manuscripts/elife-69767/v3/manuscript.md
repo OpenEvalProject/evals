@@ -25,29 +25,45 @@ Here, we follow our previous work showing that MDN is remodeled during metamorph
 
 ## Results
 
-## The Pair1 neuron persists from larval to adult stages
+### The Pair1 neuron persists from larval to adult stages
 
 To determine if Pair1 neurons were present in the adult, we mapped expression of a Pair1-Gal4 line (R75C02-Gal4) from early larval to adult stages. We identified the larval Pair1 neurons based on their characteristic cell body position in the medial subesophageal zone (SEZ), dense local ipsilateral dendritic arborizations (defined as dendritic based on enrichment for post-synapses in the TEM reconstruction of the larval Pair1 neuron; Figure 1—figure supplement 1), and contralateral axons descending into the ventral nerve cord (VNC) in an extremely lateral axon tract (Carreira-Rosario et al., 2018). Using the Pair1-Gal4 line, we could identify Pair1 neurons with this morphology at 28 and 96 hr after larval hatching (ALH; Figure 1A,B). The Pair1 neuron cell bodies and proximal neurites could still be observed at 24 hr after pupal formation (APF), but virtually all of the dendridic processes and descending axonal process are pruned (Figure 1C, only one neuron labeled). This is expected, given that many or all neurons undergo axon/dendrite remodeling during metamorphosis (Kanamori et al., 2015; Truman and Reiss, 1976; Yaniv and Schuldiner, 2016). At 48 hr APF, Pair1 neurons exhibited dendritic branching in the SEZ and a descending axon into the VNC, regaining morphological features similar to that of larval Pair1 neurons (Figure 1D). The axon innervated the T1 (prothoracic) neuropil and descended further down the VNC. These morphological features were maintained into the adult fly, where we could trace the Pair1 axon to primarily innervate the T1 neuropil (Figure 1E), with less extensive innervation of the mesothoracic (T2) and metathoracic (T3) neuropils.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig1-v3.jpg)
+
+**Figure 1.:** (A–B) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the larval CNS (gray outline) at 28 hr after larval hatching (ALH) (A) and 96 hr ALH (B). Here and in subsequent panels are maximum intensity projections of confocal sections containing the Pair1 neurons; anterior, up; dorsal view. Significant ‘off-target’ expression marked with white arrowheads. Scale bar, 50 μm. (A’–B’) Enlargement of the brain regions boxed in A,B. Scale bar, 20 μm. (A”–B”) Tracing to show Pair1 neuron morphology. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (C–D) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the pupal CNS (gray outline) at 24 hr after pupal formation (APF) (C) and 96 hr APF (D). Significant ‘off-target’ expression marked with white arrowheads. Scale bar, 50 μm. (C’–D’) Enlargement of the brain regions boxed in C, D; cell body: yellow asterisk, neurites: yellow arrowhead. Scale bar, 10 μm. (C”) Tracing to show Pair1 neuron morphology. (D”) Focal plane showing Pair1 cell bodies (region boxed in D’, cell body marked with yellow asterisks). Scale bar, 10 μm. (D”’) Tracing to show Pair1 neuron morphology. Note that Pair1 can be followed to T1 in the 3D confocal stack but is difficult to represent here due to fasciculation of Pair1 with off-target neurons. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (E) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) in the 4-day adult CNS (gray outline) Significant ‘off-target’ expression marked with white arrowheads. Scale bar, 50 μm. (E’) Enlargement of the brain region boxed in E. Scale bar, 10 μm. (E”) Focal plane showing Pair1 cell bodies (region boxed in E’, cell body marked with yellow asterisks). Scale bar, 10 μm. (E”’) Tracing to show Pair1 neuron morphology. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (F) Pair1 neurons (cell body: yellow asterisk; neurites: yellow arrowhead) permanently labeled at 96 hr ALH and visualized in the 4-day old adult. See Materials and methods for details. Significant ‘off-target’ expression marked with white arrowheads. Scale bar, 50 μm. (F’) Enlargement of the brain region boxed in F; Pair1 cell body: yellow asterisk; Pair1 neurites: yellow arrowhead. Scale bar, 10 μm. (F”) Focal plane showing Pair1 cell bodies (region boxed in F’, cell body marked with yellow asterisks). Scale bar, 10 μm. (F”’) Tracing to show Pair1 neuron morphology. Genotype: Hs-KD,3xUAS-FLP; 13xLexAop(KDRT.Stop)myr:smGdP-Flag/+; 13xLexAop(KDRT.Stop)myr:smGdP-V5, 13xLexAop(KDRT.Stop)myr:smGdP-HA, nSyb(FRT.Stop)LexA::p65.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The TEM volume of the newly hatched larva ‘Seymore’ showing the axon (green) and dendrite (blue) domains of a single MDN and Pair1 neuron defined by the location of pre- and post-synapses. Left: MDN axon and dendrite domains. Middle: Pair1 axon and dendrite domains. Right: MDN axon and Pair1 dendrite are closely entwined the same region of neuropil (white bracket).
 
 Although we can use the Pair1-Gal4 line to track neurons with Pair1 morphological features from larva to adult, it remains possible that the Gal4 line switches off in Pair1 and switches on in a similar descending neuron at a stage in between those we assayed. To conclusively demonstrate that the larval Pair1 neuron survives into adulthood, we used a genetic technique to permanently label or ‘immortalize’ the larval Pair1 neurons and assay for their presence in the adult brain. Briefly, the method achieves spatial specificity by using Pair1-Gal4 to drive UAS-FLP which removes a stop cassette from nSyb-FRT-stop-FRT-LexA resulting in permanent LexA expression in Pair1-Gal4 neurons; it achieves temporal specificity (e.g. labeling only larval Pair1-Gal4+ neurons) by using a heat inducible KD recombinase to ‘open’ the lexAop-KDRTstopKDRT-HA reporter (see Materials and methods for additional details). Thus, a heat shock will permanently label all Pair1-Gal4+ neurons at the time of heat shock. We immortalized Pair1 neurons in the larva, and assayed expression in the adult, and observed the two bilateral Pair1 neurons, based on characteristic medial SEZ cell body position, local ipsilateral arbors, and contralateral descending axons that preferentially innervate the prothoracic neuropil (Figure 1F). Pair1 innervation is clearer in neurons immortalized during larval stages, which reduces the off-target neuron expression in the adult VNC, and reveals an greatly enriched level of innervation in the T1 neuropil (Figure 1F).
 
 The Pair1-Gal4 line is expressed in several off-target neurons in addition to Pair1. One of these, a sensory neuron from the proboscis can be removed from the adult Pair1 pattern by cutting off the proboscis a day prior to analysis (see Materials and methods) but is present at the 48 hr APF timepoint (Figure 1D,E). In addition, there are off-target neurons that innervate all three thoracic neuropils (T1-T3), obscuring Pair1 innervation (Figure 1E). We took advantage of the sparse labeling of the immortalization genetics and found brains that maintained preferential targeting of Pair1 to the prothoracic neuropil but lacked T1-T3 off-target innervation, confirming that they are indeed off-target neurons (Figure 1F–F''').
 
-## Pair1 neurons maintain the same molecular profile from larval to adult stages
+### Pair1 neurons maintain the same molecular profile from larval to adult stages
 
 If Pair1 neurons persist from larva to adult, they may express the same transcription factor (TF) profile at both stages. We screened a small collection of TF markers for expression in the larval and adult Pair1 neurons, and in all cases we found identical expression (Figure 2A–N). Larval and adult Pair1 neurons expressed Hunchback (Hb), Sex combs reduced (Scr), and Bicoid (Bcd); but did not express Visual system homeobox (Vsx1) or Nab (Figure 2A–N). However, there were many other Scr/Bcd/Hb triple-positive neurons in the SEZ (Figure 2O,P), showing that additional factors would be necessary to uniquely specify Pair1 identity. These results support the conclusion that Pair1 persists from larva to adult, maintaining both molecular and morphological features, and raises the interesting possibility that the three TFs (Hb, Bcd, Scr) may be part of a molecular code that directs both larval and adult Pair1 morphology and/or connectivity.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig2-v3.jpg)
 
-**Figure 2.:** (A) Schematic of the larval brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (B–G) Larval Pair1 neurons (left column), indicated markers (middle column), and merge (right column) at 28 hr after larval hatching (ALH). In some cases the second Pair1 neuron is out of the focal plane, but both Pair1 neurons always have the same gene expression profile. Markers detect the following transcription factors: Hb, Hunchback; Scr, Sex combs reduced; Bcd, Bicoid; Vsx1, Visual system homeobox 1; and Nab. Scale bar, 5 μm. (G) Summary: marker expression matches that in adults. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (H) Schematic of the adult brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (I–N) Adult Pair1 neurons (left column), indicated markers (middle column), and merge (right column) in 4-day old adult. Scale bar, 5 μm. (N) Summary: marker expression matches that in larvae. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (O–P) The number of cells expressing Scr (first column), Scr/Hb (second column), Scr/Bcd (third column), and Scr/Hb/Bcd (fourth column) in larvae (O) and adults (P). n = 5–6 whole brains.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Schematic of the larval brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (B–G) Larval Pair1 neurons (left column), indicated markers (middle column), and merge (right column) at 28 hr after larval hatching (ALH). In some cases the second Pair1 neuron is out of the focal plane, but both Pair1 neurons always have the same gene expression profile. Markers detect the following transcription factors: Hb, Hunchback; Scr, Sex combs reduced; Bcd, Bicoid; Vsx1, Visual system homeobox 1; and Nab. Scale bar, 5 μm. (G) Summary: marker expression matches that in adults. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (H) Schematic of the adult brain showing region of Pair1 neurons (red box) enlarged in panels below. Anterior up, dorsal view. (I–N) Adult Pair1 neurons (left column), indicated markers (middle column), and merge (right column) in 4-day old adult. Scale bar, 5 μm. (N) Summary: marker expression matches that in larvae. Genotype: +; UAS-myr::GFP; R75C02-Gal4. (O–P) The number of cells expressing Scr (first column), Scr/Hb (second column), Scr/Bcd (third column), and Scr/Hb/Bcd (fourth column) in larvae (O) and adults (P). n = 5–6 whole brains.
 
-## Pair1 activation arrests forward locomotion in adults
+### Pair1 activation arrests forward locomotion in adults
 
 We previously showed that larval MDN persists in adults and can induce backward locomotion at both stages despite the obvious difference in motor output – limbless crawling versus six-legged walking (Carreira-Rosario et al., 2018). This raised the question of whether the adult Pair1 neuron also maintains its larval function, that is, to pause forward locomotion. To test this hypothesis, we used Pair1-Gal4 to express the red light-gated cation channel CsChrimson (Chrimson) to activate Pair1 neurons in the adult. Experimental flies were fed all-trans retinal (ATR; required for Chrimson function) whereas control flies were fed vehicle only.
 
 Control flies exposed to red light did not pause or arrest forward locomotion, did not show an increased probability of pausing, and did not have a decrease in distance traveled during the stimulus interval. In contrast, experimental flies expressing Chrimson in Pair1 neurons showed a near-complete arrest of forward locomotion, an increased probability of pausing, and a reduced distance traveled during the stimulus interval (Figure 3A–C; Figure 3—figure supplement 1). These effects were reversed after turning off the red light, with the exception of a slightly reduced distance traveled, likely due to a lingering physiological effect of the 30 s Pair1 activation (Figure 3A,C). Pair1 activation resulted in an increase in immobile flies (Figure 3E) and a corresponding decrease in whole body translocation (Figure 3F, defined as ‘large movements’). Importantly, Pair1 activation did not prevent small body part movements such as those involved in grooming (Figure 3G, defined as ‘small movements’). Note that Pair1-Gal4 off-target expression is common but variable from fly to fly, whereas its expression in Pair1 neurons is fully penetrant; because the Chrimson-induced behavior is also fully penetrant, we conclude that the arrest in forward locomotion is due to Chrimson activation of the Pair1 neurons. We conclude that Pair1 activation prevents a single behavior – forward locomotion – but does not produce general paralysis or interfere with non-translocating limb movements.
 
-## MDN and Pair1 are synaptic partners during adulthood
+![Figure 3.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig3-v3.jpg)
+
+**Figure 3.:** (A) Speed (mm/s) of adult flies expressing Chrimson in Pair1 neurons following neuronal activation (+ATR [all-trans retinal] , blue) or no activation (vehicle control, black) in a closed loop arena. Speed was recorded for the 30 s prior to activation, the 30 s light-induced activation (red stipple), and 30 s after activation. Mean ± SEM, n = 10. Genotype for this and all subsequent panels: UAS-CsChrimson::mVenus; +; R75C02-Gal4. (B) Probability of forward locomotion pausing upon light-induced Pair1 activation (ATR treatment, blue) compared to vehicle control (black). Statistics: t-test, p < 0.001; n = 10. (C) Total distance traveled pre-light stimulus (‘pre’), during the light stimulus (‘light’) and post-light stimulus (‘post’) (terminology used here and in subsequent panels) of flies fed ATR (Pair1 activation, blue) compared to controls (fed vehicle, no Pair1 activation, black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 111.3, p < 0.0001; time, F(1.867, 33.61) = 47.03, p < 0.0001; interaction F(2, 26) = 38.24, p < 0.001; Bonferroni’s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0001; n = 10. (D) Percent time doing large movements (whole body translocation, light gray), small movements (body part movement but no translocation, dark gray) or no movements (immobile, black) of flies fed vehicle (left side) or ATR (right side) during each time phase (pre, light, post). (E) Normalized duration of time spent immobile during each timepoint (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 112.8, p < 0.0001; time, F(1.930, 34.74) = 25.55, p < 0.0001; interaction, F(2, 36) = 27.81, p < 0.0001; Bonferroni’s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0022; n = 10. (F) Normalized duration of time spent doing small movements during each timepoint (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 5.111, p = 0.036; time, F(1.923, 34.62) = 10.82, p = 0.0003; interaction, F(2, 36) = 4.225, p = 0.0225; Bonferroni’s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p = 0.0022; post, p > 0.9999; n = 10. (G) Normalized duration of time spent doing large movements during each time phase (pre, light, post) for flies fed ATR (Pair1 activation, blue) compared to controls fed vehicle (black). Statistics: two-way ANOVA: drug treatment, F(1, 18) = 53.56, p < 0.0001; time, F(1.869, 33.64) = 53.44, p < 0.0001; interaction, F(2, 36) = 52.20, p < 0.0001; Bonferroni’s multiple comparisons between drug treatments within each timepoint: pre, p > 0.9999; light, p < 0.0001; post, p = 0.0074; n = 10.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69767/elife-69767-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Speed (mm/s) of adult flies in an open field arena. Flies were fed food supplemented with all-trans retinal (ATR) (blue) or ethanol (vehicle, black). Red square represents the presentation of the light stimulus. (B) Probability of pausing upon light activation of Pair1 (ATR treatment, blue) compared to controls (vehicle treatment, black) (t-test, p < 0.001; n = 12).
+
+### MDN and Pair1 are synaptic partners during adulthood
 
 Given that MDN and Pair1 are synaptic partners in the larvae (Figure 1—figure supplement 1), MDN and Pair1 persist into adulthood (Figures 1 and 2), and MDN and Pair1 both regulate the same behavior in larvae and adults (Figure 3; Carreira-Rosario et al., 2018), we hypothesized that MDN and Pair1 may also be synaptic partners during adulthood. To test this hypothesis, we used the MDN-LexA and Pair1-Gal4 to label MDN and Pair1 neurons individually in the same animal (Figure 4A,B). We observed MDN and Pair1 neurites in close proximity to each other (Figure 4C–E).
 
@@ -79,34 +95,163 @@ Our work is the first, to our knowledge, to show that a pair of synaptically con
 
 ## Materials and methods
 
-## Fly husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>R75C02-Gal4</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_39886</td>
+      <td>Short genotype: Pair1-Gal4</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>VT044845-lexA</td>
+      <td>Gift from B Dickson, JRC</td>
+      <td></td>
+      <td>Short genotype: MDN-LexA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-myr::GFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_32198</td>
+      <td>Gal4 reporter</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mChrimson::mVenus</td>
+      <td>Gift from Vivek Jayaraman, JRC</td>
+      <td></td>
+      <td>Was used to excite/depolarize neurons of interest</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-mCD8::RFP, LexAop-mCD8::GFP</td>
+      <td>BDSC</td>
+      <td>RRID:BDSC_32229</td>
+      <td>Gal4 and LexA reporters</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>LexAop-pre-t-GRASP, UAS-post-t-GRASP</td>
+      <td>BDSC (Shearin et al., 2018)</td>
+      <td>RRID:BDSC_79039</td>
+      <td>t-GRASP</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Hs-KD,3xUAS-FLP; 13xLexAop(KDRT.Stop)myr:smGdP-Flag/ CyO-YFP; 13xLexAop(KDRT.Stop)myr:smGdP-V5, 13xLexAop(KDRT.Stop)myr:smGdP-HA, nSyb-(FRT.Stop)-LexA::p65/R75C02-Gal4</td>
+      <td>This work</td>
+      <td></td>
+      <td>Used to permanently label Gal4 pattern</td>
+    </tr>
+    <tr>
+      <td>Antibody, polyclonal</td>
+      <td>Rabbit polyclonal anti-GFP A-11122</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>RRID:AB_221569</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody, polyclonal</td>
+      <td>Chicken polyclonal anti-GFP</td>
+      <td>Abcam, Eugene, OR</td>
+      <td>RRID:BDSC_13970</td>
+      <td>(1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Rabbit polyclonal anti-GFP (G10362)</td>
+      <td>Thermo Fisher Scientific, Waltham, MA</td>
+      <td>RRID:AB_2536526</td>
+      <td>(1:300); used for t-GRASP</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Rat monoclonal anti-HA (3F10)</td>
+      <td>Sigma, St. Louis, MO</td>
+      <td>SKU: 11867423001</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody, monoclonal</td>
+      <td>Mouse monoclonal anti-Scr</td>
+      <td>DSHB (Iowa City, IA)</td>
+      <td>RRID:AB_528462</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat polyclonal anti-Bcd</td>
+      <td>Gift from John Reinitz, University of Chicago, IL</td>
+      <td></td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-Vsx1</td>
+      <td>Gift from Claude Desplan, NYU, New York, NY</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-Nab</td>
+      <td>Gift from Stefan Thor, University of Queensland, Brisbane, Australia</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Secondary antibodies</td>
+      <td>Jackson ImmunoResearch, West Grove, PA</td>
+      <td></td>
+      <td>(1:400); all Donkey</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry
 
 All flies were reared in a 25°C room at 50% relative humidity with a 12 hr light/dark cycle. All comparisons between groups were based on studies with flies grown, handled, and tested together.
 
-## Fly stocks
+### Fly stocks
 
-## Gal4 driver ‘immortalization’
+### Gal4 driver ‘immortalization’
 
 Immortalization flies (see genotype #7, above) were allowed to lay eggs for 4 hr. Newly hatched larvae were placed in a food vial, and at 96 hr ALH the food vial was partially submerged in a 37°C water bath for 5 min, allowing the hs-KD to act as a recombinase to remove the KDRT Stop cassette, resulting in nSyb-LexA driving HA expression permanently in the neurons expressing Pair1-Gal4 at the time of heat shock (96 hr ALH). After the heat shock, larvae in the food vial recovered at 18°C for 5 min, and then grown to adulthood at 25°C.
 
-## Immunostaining and imaging
+### Immunostaining and imaging
 
 Standard confocal microscopy and immunocytochemistry methods were performed as previously described (Carreira-Rosario et al., 2018). Primary antibodies used recognize: GFP (rabbit, 1:500, Thermo Fisher Scientific, Waltham, MA; chicken, 1:1500, Abcam12970, Eugene, OR), HA (rat, 1:100, Sigma, St. Louis, MO), Hb (mouse, 1:400, AbcamF18-1G10.2), Scr (mouse, 1:10, Developmental Studies Hybridoma Bank, Iowa City, IA), Bicoid (rat, 1:100, John Reinitz, University of Chicago, IL), Vsx1 (guinea pig, 1:500, Claude Desplan, NYU, New York, NY), Nab (guinea pig, 1:500, Stefan Thor, University of Queensland, Brisbane, Australia), and t-GRASP signal (rabbit GFP G10362, 1:300, Invitrogen). Secondary antibodies were from Jackson ImmunoResearch (Donkey, 1:400, West Grove, PA). Confocal image stacks were acquired on a Zeiss 800 microscope. All images were processed in Fiji (https://imagej.new/Fiji) and Adobe Illustrator (Adobe, San Jose, CA). Images were processed as described previously (Carreira-Rosario et al., 2018). The primary neurites of Pair1 were traced using the Simple Neurite Tracer in Fiji.
 
-## Cell counts
+### Cell counts
 
 Cell counting was done manually using the ‘Cell Counter’ plugin in Fiji (https://imagej.new/Fiji). Only cells expressing Scr were counted.
 
-## Adult behavioral experiment
+### Adult behavioral experiment
 
 Adult behavior was assayed using two arenas, a closed loop arena (Figure 3) and an open field arena (Figure 3—figure supplement 1). For the closed loop arena, adult female flies 1 day after eclosion were transferred to standard cornmeal fly food supplemented with 100 mL 0.5 mM ATR or 100% ethanol for 4 days (changed every 2 days). Animals, with intact wings, were starved for 4 hr and then placed in arenas and their behavior was recorded as described previously (Carreira-Rosario et al., 2018). Flies were exposed to low transmitted light, red light, and low transmitted light again for 30 s each. This was done three times for each animal. To calculate different parameters, the recorded videos were tracked and analyzed using the CalTech Fly Tracker (Fontaine et al., 2009) and JABA (Kabra et al., 2013). The speed, distance, and behavior reported were specific to the first trial. The reported speeds are the average speed of each second. The pausing probability was calculated as previously described (Carreira-Rosario et al., 2018). ‘Pre’ defines the 30 s prior to red light exposure, ‘light’ defines the 30 s of red light exposure, and ‘post’ defines the 30 s after red light exposure. Immobile movements were defined as the fly not translocating and not moving other body parts. Small movements were defined as the fly not translocating but moving body parts (i.e. grooming, moving wings). Large movements were defined as the fly translocating its body. All behavior measures were normalized by dividing them by the group average ‘pre’ values.
 
 For the open field arena, adult flies were fed ATR and vehicle as described above. Three animals were placed in a circular arena with a diameter of 14.5 cm and height of 0.5 cm. After 5 min for environmental acclimation, animal behavior was recorded at 25 FPS using a Basler acA2040-25gm GigE camera under infrared light for 4 s followed by 4 s under red light and another 4 s under infrared light, as described previously (Risse et al., 2013). The was repeated three times, and tracked and analyzed as described above.
 
-## t-GRASP
+### t-GRASP
 
 Synapse establishment was investigated via t-GRASP. Flies with MDN-LexA and Pair1-Gal4 driving expression of t-GRASP (see genotype #6 above) were reared at 25°C and dissected at 24 hr APF, 48 hr APF, and 4 days post-eclosion. Control flies lacked MDN-LexA.
 
-## Statistics
+### Statistics
 
 All statistical analysis (t-test, one-way and two-way ANOVA with Bonferroni’s multiple comparison tests) were performed with Prism 9 (GraphPad Software, San Diego, CA). Numerical data in graphs show individual measurements (animals), means (represented by red bars) or means ± SEM (dashed lined), when appropriate. The number of replicates (n) is indicated for each data set in the corresponding legend.

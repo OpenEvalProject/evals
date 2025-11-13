@@ -22,13 +22,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0384j8v12 School of Medical Sciences, University of Sydney Sydney Australia
-2. https://ror.org/01b3dvp57 Diabetes and Metabolism Division, Garvan Institute of Medical Research Sydney Australia
-3. https://ror.org/03r8z3t63 Department of Pharmacology, School of Medical Sciences, University of New South Wales Sydney Australia
-4. https://ror.org/0384j8v12 School of Life and Environmental Sciences, Charles Perkins Centre, University of Sydney Sydney Australia
-5. https://ror.org/0384j8v12 School of Mathematics and Statistics, Charles Perkins Centre, University of Sydney Sydney Australia
-6. https://ror.org/02czsnj07 Institute for Physical Activity and Nutrition, School of Exercise and Nutrition Sciences, Deakin University Melbourne Australia
-7. https://ror.org/02czsnj07 Metabolic Research Unit, School of Medicine, Deakin University Melbourne Australia
+1. School of Medical Sciences, University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+2. Diabetes and Metabolism Division, Garvan Institute of Medical Research Sydney Australia ([ROR:01b3dvp57](https://ror.org/01b3dvp57))
+3. Department of Pharmacology, School of Medical Sciences, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+4. School of Life and Environmental Sciences, Charles Perkins Centre, University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+5. School of Mathematics and Statistics, Charles Perkins Centre, University of Sydney Sydney Australia ([ROR:0384j8v12](https://ror.org/0384j8v12))
+6. Institute for Physical Activity and Nutrition, School of Exercise and Nutrition Sciences, Deakin University Melbourne Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
+7. Metabolic Research Unit, School of Medicine, Deakin University Melbourne Australia ([ROR:02czsnj07](https://ror.org/02czsnj07))
 
 † Corresponding author
 
@@ -46,57 +46,148 @@ To further explore the relationship between diet composition, obesity, and insul
 
 ## Results
 
-## Body weight, composition, and whole body calorimetry
+### Body weight, composition, and whole body calorimetry
 
 Mice fed a Hi-ST diet had a similar body weight trajectory to that of mice fed a Hi-F diet and by the end of the feeding period, both these groups were heavier than the chow controls and there was no significant difference in body weight between Hi-ST and Hi-F fed mice (Figure 1A). Body composition measured at 4, 6, and 12 weeks showed that this increase in body weight was due to an increase in fat mass as lean mass was similar between the three groups (Figure 1B and C). Mice on the two dietary interventions consumed more energy per day compared to the control chow-fed group (Figure 1D). Energy expenditure (EE) was similar between groups (Figure 1E and F) with mice displaying a positive relationship between body mass and EE regardless of diet (Figure 1G). Ambulatory activity was not different between groups (Figure 1H). Hi-F fed mice displayed a lower respiratory quotient (Figure 1I and J), indicating a higher ratio of lipid to carbohydrate oxidation, while Hi-ST mice showed an intermediate respiratory quotient between Hi-F mice and chow control mice possibly due to a higher dietary fat content of the Hi-ST diet compared to chow (calorically 21% vs. 6%, respectively).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig1-v2.jpg)
 
-**Figure 1.:** (A) Body weight, n=18–20, (B) lean mass, (C) fat mass, n=8–10, (D) food intake, n=4 (averaged within cages), (E) energy expenditure, (F) 24 hr average of energy expenditure, (G) relationship between energy expenditure and body weight, (H) ambulatory activity, (I) respiratory exchange ratio (RER), (J) 24 hr average of RER, n=8–10. Grey – chow, blue – Hi-ST, pink – Hi-F. Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. Panel G analysed by linear regression. *p<0.05 different to chow; #p<0.05 different to Hi-ST.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Body weight, n=18–20, (B) lean mass, (C) fat mass, n=8–10, (D) food intake, n=4 (averaged within cages), (E) energy expenditure, (F) 24 hr average of energy expenditure, (G) relationship between energy expenditure and body weight, (H) ambulatory activity, (I) respiratory exchange ratio (RER), (J) 24 hr average of RER, n=8–10. Grey – chow, blue – Hi-ST, pink – Hi-F. Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. Panel G analysed by linear regression. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
 
-## Whole body glucose homeostasis and insulin secretion
+### Whole body glucose homeostasis and insulin secretion
 
 Oral glucose tolerance tests (oGTT) were performed at 4 weeks (Figure 2A and B) and 12 weeks (Figure 2D and E) after the start of the dietary intervention. While the Hi-F diet caused the expected decrease in glucose tolerance at both time points, glucose tolerance in the Hi-ST mice, remained very similar to chow control mice, even though Hi-ST mice had similar levels of adiposity as the Hi-F mice. After both 4 and 12 weeks of diet, Hi-ST and Hi-F mice displayed a higher fasting and glucose-stimulated blood insulin concentration during the GTT compared to chow controls with Hi-ST mice returning to basal levels faster than the Hi-F group (Figure 2C and F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig2-v2.jpg)
 
-**Figure 2.:** (A) Oral glucose tolerance test (oGTT) after 4 weeks of feeding, (B) area under the curve for the oGTT after 4 weeks of feeding, n=45, (C) insulin released during the oGTT after 4 weeks of feeding, n=42–45. (D) oGTT after 12 weeks of feeding, (E) area under the curve for the oGTT after 12 weeks of feeding, (F) insulin released during the oGTT after 12 weeks of feeding, n=19–20. (G) oGTT with deuterated glucose after 14 weeks of feeding, n=10, (H) deuterated glucose enrichment curves, (I) endogenous glucose production during the oGTT, (J) endogenous glucose production as expressed as a change from baseline, n=10. (K) Glucose-stimulated insulin secretion, n=5–6, (L) insulin content of β-cell (53–60 islets). Grey – chow, blue – Hi-ST, pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. *p<0.05 different to chow; #p<0.05 different to Hi-ST; ‡p<0.05 different to 2.8 of the same dietary group.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) Oral glucose tolerance test (oGTT) after 4 weeks of feeding, (B) area under the curve for the oGTT after 4 weeks of feeding, n=45, (C) insulin released during the oGTT after 4 weeks of feeding, n=42–45. (D) oGTT after 12 weeks of feeding, (E) area under the curve for the oGTT after 12 weeks of feeding, (F) insulin released during the oGTT after 12 weeks of feeding, n=19–20. (G) oGTT with deuterated glucose after 14 weeks of feeding, n=10, (H) deuterated glucose enrichment curves, (I) endogenous glucose production during the oGTT, (J) endogenous glucose production as expressed as a change from baseline, n=10. (K) Glucose-stimulated insulin secretion, n=5–6, (L) insulin content of β-cell (53–60 islets). Grey – chow, blue – Hi-ST, pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. *p<0.05 different to chow; #p<0.05 different to Hi-ST; ‡p<0.05 different to 2.8 of the same dietary group.
 
 To gain additional insight into glucose handling kinetics during the oGTT, 14 weeks after dietary intervention, an additional cohort of mice underwent a stable isotope labelled oGTT (6,6-2H-glucose). The glucose excursions showed a similar pattern to that seen previously, with Hi-ST mice having improved glucose tolerance compared to the Hi-F mice (Figure 2G). While the plasma 6,6-2H-glucose enrichment curves were similar in all three groups (Figure 2H), there was a significant and consistent difference in the exogenous glucose concentration curves, with Hi-F being higher than chow and Hi-ST (Figure 2I), thus indicating that Hi-ST mice had improved whole body glucose disposal during the oGTT when compared to Hi-F. When endogenous glucose levels were expressed as a change from baseline, there were only small changes evident between Hi-ST and Hi-F at 15 and 30 min post glucose load, suggesting that Hi-ST mice may have also had a brief period of enhanced endogenous glucose production (EGP) suppression during the early period (0–30 min) of the OGTT compared to Hi-F mice.
 
 Since both the Hi-F and the Hi-ST animals exhibited higher insulin levels during the oGTT, glucose-stimulated insulin secretion was investigated in isolated islets from the different dietary groups to see if there were any differences. The amount of insulin released from isolated islets in response to 16.7 mM glucose was similar in all groups (Figure 2K), however there was an increase in insulin content that was only significant in the Hi-F group (Figure 2L). Thus, it would appear that inherent differences in islet function are not the driver of glucose tolerance differences observed in the Hi-ST fed and Hi-F fed mice.
 
-## Euglycaemic-hyperinsulinaemic clamp
+### Euglycaemic-hyperinsulinaemic clamp
 
 To investigate if the maintenance of glucose tolerance in Hi-ST mice was associated with preservation of insulin sensitivity, euglycaemic-hyperinsulinaemic clamps were performed. Blood glucose was maintained at euglycaemia (~8 mM) throughout the clamp (Figure 3A) and plasma insulin levels were elevated to a similar extent by the insulin infusion between groups (Figure 3B). All three groups had similar basal NEFA (chow 0.73±0.07; Hi-ST 0.78±0.08; Hi-F 0.67±0.09 mM) and were able to suppress NEFA levels to a similar extent (chow 0.18±0.03; Hi-ST 0.22±0.03; Hi-F 0.29±0.05 mM). The glucose infusion rate (GIR) needed to maintain euglycaemia was lower in the Hi-F animals compared to both the chow and Hi-ST, indicating a reduced whole body insulin action (Figure 3C and D; p>0.05), while there was no significant difference in GIR between the obese Hi-ST and lean chow control mice. Insulin infusion increased glucose disposal in all three groups and while the insulin-stimulated glucose disposal in Hi-F mice was lower than chow or Hi-ST mice, the difference did not reach statistical significance (p=0.079). Although there was no difference in the basal hepatic glucose production, the ability of insulin to suppress hepatic glucose output (HGO) was impaired in the Hi-F animals when compared to both the chow and Hi-ST groups (Figure 3F and G). Tissue glucose uptake data clearly demonstrated that there was preservation of skeletal and heart muscle insulin action in the Hi-ST mice, while the Hi-F showed reduced insulin action indicative of insulin resistance (Figure 3H). White adipose tissue (WAT) however was insulin resistant in both the Hi-ST and Hi-F groups compared to controls (Figure 3I). On the other hand, brown adipose tissue (BAT) glucose uptake was fully preserved in the Hi-ST group while being significantly reduced in the Hi-F fed animals (Figure 3I). The differences in insulin sensitivity of liver or quadriceps muscle were not associated with significant differences in the phosphorylation status of Akt (Figure 3J and K, respectively). There were also no differences in the phosphorylation status of Akt in either the epididymal or subcutaneous WAT (Figure 3L and M, respectively).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig3-v2.jpg)
 
-**Figure 3.:** (A) Blood glucose, (B) plasma insulin, (C) glucose infusion rate, (D) average glucose infusion rate of 90–120 min, (E) whole body glucose disappearance, (F) hepatic glucose output (HGO), (G) percent suppression of HGO, (H) muscle glucose uptake, (I) adipose tissue glucose uptake, (J) phosphorylation of Akt in liver after the clamp, (K) phosphorylation of Akt in quadriceps muscle after the clamp, (L) phosphorylation of Akt in epididymal white adipose tissue (eWAT) after the clamp, (M) phosphorylation of Akt in subcutaneous white adipose tissue (sWAT) after the clamp. B, basal state; C, clamped state. Grey – chow, blue – high starch (Hi-ST), pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. n=8–11. *p<0.05 different to chow; #p<0.05 different to Hi-ST.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** (A) Blood glucose, (B) plasma insulin, (C) glucose infusion rate, (D) average glucose infusion rate of 90–120 min, (E) whole body glucose disappearance, (F) hepatic glucose output (HGO), (G) percent suppression of HGO, (H) muscle glucose uptake, (I) adipose tissue glucose uptake, (J) phosphorylation of Akt in liver after the clamp, (K) phosphorylation of Akt in quadriceps muscle after the clamp, (L) phosphorylation of Akt in epididymal white adipose tissue (eWAT) after the clamp, (M) phosphorylation of Akt in subcutaneous white adipose tissue (sWAT) after the clamp. B, basal state; C, clamped state. Grey – chow, blue – high starch (Hi-ST), pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA or two-way repeated measures ANOVA where appropriate. n=8–11. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
 
 Mitochondrial enzyme activities in the liver showed an increase in citrate synthase (CS) in the Hi-ST group while β-hydroxyacyl CoA dehydrogenase (βHAD) was increased in the Hi-F animals (Table 1). In muscle there were increases in CS and βHAD in both the Hi-ST and Hi-F groups (Table 1). The Hi-F animals also had a decrease in the activity of pyruvate dehydrogenase (PDH) in muscle but a lower activity of PDH in liver of Hi-F mice did not reach statistical significance. Metabolomic analysis of glycolytic and TCA cycle intermediates after insulin stimulation during the clamp showed very little change across the three dietary groups in both muscle (Supplementary file 1a) and liver (Supplementary file 1b).
 
+**Table 1.**
+ Enzyme activities in liver and muscle.Table 1—source data 1.Raw data for Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enzyme activityμmol/min/g protein</th>
+      <th>Chow</th>
+      <th>Hi-ST</th>
+      <th>Hi-F</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Liver</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Citrate synthase</td>
+      <td>110.8±7.3</td>
+      <td>140.1±3.0*</td>
+      <td>119.9±6.1</td>
+    </tr>
+    <tr>
+      <td>βHAD</td>
+      <td>100.4±5.2</td>
+      <td>117.0±2.1</td>
+      <td>122.7±7.0*</td>
+    </tr>
+    <tr>
+      <td>Succinate dehydrogenase</td>
+      <td>14.1±0.6</td>
+      <td>15.1±0.4</td>
+      <td>15.1±1.2</td>
+    </tr>
+    <tr>
+      <td>Pyruvate dehydrogenase</td>
+      <td>0.90±0.21</td>
+      <td>0.73±0.33</td>
+      <td>0.36±0.07</td>
+    </tr>
+    <tr>
+      <td>Quadriceps muscle</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Citrate synthase</td>
+      <td>188.7±5.1</td>
+      <td>208.0±6.0*</td>
+      <td>223.1±3.7*</td>
+    </tr>
+    <tr>
+      <td>βHAD</td>
+      <td>23.9±1.2</td>
+      <td>28.4±1.4*</td>
+      <td>35.4±1.2*#</td>
+    </tr>
+    <tr>
+      <td>Succinate dehydrogenase</td>
+      <td>2.7±0.1</td>
+      <td>2.7±0.1</td>
+      <td>2.5±0.2</td>
+    </tr>
+    <tr>
+      <td>Pyruvate dehydrogenase</td>
+      <td>0.46±0.08</td>
+      <td>0.33±0.10</td>
+      <td>0.15±0.04*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data expressed as mean ± SEM. n=7–10. *p<0.05 compared to chow; #p<0.05 compared to Hi-ST._
+
 Taken together, this data shows that preservation of insulin action at the whole body level in animals fed a Hi-ST diet is paralleled by a maintenance of insulin action at the tissue level (liver, skeletal muscle, BAT) and this was associated with altered activity of enzymes responsible for the direct oxidation of glucose and fatty acids in muscle and liver, rather than alterations in Akt phosphorylation. Additionally, this data suggests that in diet-induced obese mice, hepatic insulin resistance seems to be the largest contributing factor to the lower GIR during a clamp, while during a GTT, hepatic and peripheral insulin resistance seems to make similar contributions to the relative glucose intolerance observed in Hi-F mice (Figure 2I and J).
 
-## Tissue parameters
+### Tissue parameters
 
 Consistent with the increase in whole body fat mass in the Hi-ST and Hi-F groups, as determined by EchoMRI (Figure 1C), we saw an increase in the weights of three WAT depots (Figure 4A; epididymal [Epi], subcutaneous [SC], and retroperitoneal [RP]). Liver (control 1.1±0.3; Hi-ST 1.2±0.1; Hi-F 1.2±0.1 g) and BAT (Figure 4A) mass did not change with diet treatment. Adipocyte size in both the epididymal and subcutaneous fat pads were, on average, increased in animals fed Hi-ST and Hi-F when compared to chow (Figure 4B and C). As expected with the increase in fat mass, plasma leptin levels increased in the Hi-ST and Hi-F animals (Figure 4D). Plasma adiponectin levels were not different between the groups (Figure 4E). Interestingly, total triglyceride levels in both muscle and liver showed a similar increase in the Hi-F and Hi-ST animals (Figure 4F and G), despite the differences in glucose tolerance and insulin sensitivity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig4-v2.jpg)
 
-**Figure 4.:** (A) Tissue weights, n=9–11, (B) average adipocyte size in epididymal white adipose tissue (WAT), (C) average adipocyte size in subcutaneous WAT, n=3–5, plasma levels of (D) leptin and (E) adiponectin, n=10–11. (F) Liver triglyceride levels, n=5–8, (G) quadriceps muscle triglyceride levels, n=9–12. Grey – chow, blue – Hi-ST, pink – Hi-F. Data presented as mean ± SEM. Data analysed with a one-way ANOVA. *p<0.05 different to chow; #p<0.05 different to Hi-ST.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Tissue weights, n=9–11, (B) average adipocyte size in epididymal white adipose tissue (WAT), (C) average adipocyte size in subcutaneous WAT, n=3–5, plasma levels of (D) leptin and (E) adiponectin, n=10–11. (F) Liver triglyceride levels, n=5–8, (G) quadriceps muscle triglyceride levels, n=9–12. Grey – chow, blue – Hi-ST, pink – Hi-F. Data presented as mean ± SEM. Data analysed with a one-way ANOVA. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
 
 To investigate the contribution of de novo lipogenesis (DNL) to the tissue triglyceride pool, a separate cohort of mice were fed for 4 weeks, received an IP injection of 3H2O in the postprandial state and the incorporation of 3H into newly synthesised lipid was measured. Four weeks of feeding was sufficient to increase total triglyceride levels in the liver of Hi-F and Hi-ST animals compared to control (Figure 5A). This increase in liver triglyceride was associated with a suppression of liver DNL in the Hi-F animals compared to controls, with an increase in DNL seen in the Hi-ST animals (Figure 5B). There was no difference between the groups in the rates of DNL in BAT or WAT (Figure 5C and D). This same pattern was also seen in the abundance of key lipogenic enzymes acetyl CoA carboxylase (ACC), fatty acid synthase (FAS), and stearoyl-CoA desaturase-1 (SCD-1), which were increased in the Hi-ST animals and decreased in the Hi-F groups compared to chow controls (Figure 4E and F). Activities of two other enzymes, ATP citrate lysase (ACL), involved in the production of cytosolic acetyl-CoA and glucose-6-phosphate dehydrogenase (G6PDH), which generates NADPH that is used as a cofactor for lipogenesis, also mirrored these results (Figure 5G and H).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig5-v2.jpg)
 
-**Figure 5.:** (A) Liver triglycerides, (B) liver lipogenic rate, (C) brown adipose tissue (BAT) lipogenic rate, (D) white adipose tissue (WAT) lipogenic rates, n=12–15, (E) western blots of acetyl CoA carboxylase (ACC), fatty acid synthase (FAS), and stearoyl-CoA desaturase-1 (SCD-1), (F) densitometry of protein levels of ACC, FAS, and SCD-1, (G) ATP citrate lysase (ACL) activity and (H) glucose-6-phosphate dehydrogenase (G6PDH) activity, n=9–10. Grey – chow, blue – Hi-ST, pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA. *p<0.05 different to chow; #p<0.05 different to Hi-ST.Figure 5—source data 1.Figure 5.Figure 5—source data 2.Figure 5.
+**Figure 5.:** (A) Liver triglycerides, (B) liver lipogenic rate, (C) brown adipose tissue (BAT) lipogenic rate, (D) white adipose tissue (WAT) lipogenic rates, n=12–15, (E) western blots of acetyl CoA carboxylase (ACC), fatty acid synthase (FAS), and stearoyl-CoA desaturase-1 (SCD-1), (F) densitometry of protein levels of ACC, FAS, and SCD-1, (G) ATP citrate lysase (ACL) activity and (H) glucose-6-phosphate dehydrogenase (G6PDH) activity, n=9–10. Grey – chow, blue – Hi-ST, pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a one-way ANOVA. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
 
 This data indicates that liver is the primary site of DNL in the mouse since the rate of DNL in this organ was much higher than in any of the WAT depots. The data also indicated that DNL is lower in the Hi-F animals that have abundant access to fat from the diet, and higher in the Hi-ST animals where fat accumulation depends largely on DNL conversion of dietary carbohydrate to fat.
 
-## Lipidomic analysis
+### Lipidomic analysis
 
 Since triglyceride stores are considered a relatively benign form of lipid, we used lipidomic analysis to assess other, more biologically active lipid species, in particular diacylglycerols (DAGs) and ceramides (Cer). In both the liver and the muscle, this lipidomic analysis confirmed an increase in total triglyceride content that was similar in both Hi-ST and Hi-F groups (Figure 6A and E). Total DAG levels were similarly increased in both dietary groups, in both tissues (Figure 6A and E), and not surprisingly, this was reflected in the amounts of the more abundant DAG species (Figure 6B and F). In the muscle there were no other significant changes in total levels of other lipid species (sphingomyelin [SM], phosphatidylcholine [PC], phosphatidylethanolamine [PE], or phosphatidylserine [PS]; Figure 6A), although there were some changes in specific species (Figure 6—figure supplement 1). In the liver there were increases in total levels of PE and cholesterol esters (CE; Figure 6E). There was no clear pattern to changes in PE species, but almost all the CE species were greater in the dietary intervention groups compared to chow, with six out of the nine species being increased to a greater extent in the Hi-ST group (Figure 6—figure supplement 2). This increase in CE is not surprising in the Hi-ST animals since the same precursor, acetyl-CoA, is used in both DNL and CE synthesis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig6-v2.jpg)
+
+**Figure 6.:** (A) Total lipid levels, (B) diacylglycerol (DAG) species, (C) ceramide species, and (D) the relationship between insulin sensitivity and Cer18:0 levels in muscle. (E) Total lipid levels, (F) DAG species, (G) ceramide species, and (H) the relationship between insulin sensitivity and Cer22:0 levels in liver. Grey – chow, blue – Hi-ST, pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a Kruskal-Wallis test with pairwise Wilcoxon rank sum used for post hoc comparisons. Data were corrected for false discovery rate using the method of Benjamini-Hochberg. n=8–11. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Grey – chow, blue – high starch (Hi-ST), pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a Kruskal-Wallis test with pairwise Wilcoxon rank sum used for post hoc comparisons. Data were corrected for false discovery rate using the method of Benjamini-Hochberg. n=9–11. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/79250/elife-79250-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Grey – chow, blue – high starch (Hi-ST), pink – high fat (Hi-F). Data presented as mean ± SEM. Data analysed with a Kruskal-Wallis test with pairwise Wilcoxon rank sum used for post hoc comparisons. Data were corrected for false discovery rate using the method of Benjamini-Hochberg. n=9–11. *p<0.05 different to chow; #p<0.05 different to Hi-ST.
 
 Ceramide levels in both tissues showed interesting differences that correlated with tissue-specific measures of insulin action. In quadriceps muscle, Cer18:0 was the predominant lipid species and while it was slightly increased in the Hi-ST animals compared to chow controls, there was a larger increase in the Hi-F group (Figure 6C). The Cer18:0 was also inversely correlated with glucose uptake measured in the same muscle (Figure 6D). In the liver, Cer22:0, Cer24:0, and Cer24:1 were the predominant ceramide species. Of these abundant species, Cer22:0 was the only one that significantly changed with diet and demonstrated the same pattern as observed for liver insulin action (i.e. suppression of HGO during the clamp). Specifically, Cer22:0 levels were considerably higher in the Hi-F compared to chows with the Hi-ST being intermediate between the two (Figure 6G). This species of ceramide was negatively correlated with suppression of HGO, an index of liver insulin action (Figure 6H). Cer20:0, while lower in total levels, showed a similar pattern of abundance (Figure 6G) and negative correlation with insulin action (r2=0.139, p<0.05).
 
@@ -118,50 +209,50 @@ Overall, our findings that mice fed a Hi-ST diet remain glucose tolerant and ins
 
 All experimental procedures performed were approved by the Garvan Institute/St Vincent’s Hospital Animal Ethics Committee and were in accordance with the National Health and Medical Research Council of Australia’s guidelines on animal experimentation (protocol number 14_07).
 
-## Animals
+### Animals
 
 Male C57BL/6JArc mice (8 weeks of age) were sourced from Animal Resource Centre (Perth, Australia) and after a 1 week acclimatisation period, mice were randomly assigned to receive either a standard chow diet (6% fat, 23% protein, and 71% carbohydrate, by calories; Gordon Specialty feeds, Sydney, Australia; energy density 13.0 kJ/g), a Hi-ST diet (22% protein, 57% carbohydrate, 21% fat, by calories), or a lard-based, Hi-F diet (22% protein, 21% carbohydrate, 57% fat, by calories), made in house and were available ad libitum. The exact dietary composition of the Hi-ST and Hi-F diets is shown in Supplementary file 1c. Importantly, water was added to both the Hi-ST and Hi-F formulated diets to increase palatability and diet was changed regularly (every 2 days). Mice were communally housed (four to five per cage) in temperature-controlled (29°C ± 0.5°C) and light-controlled (12 hr light:12 hr darkness cycle, 07:00–19:00 light) rooms with corn cob bedding.
 
-## Assessment of body composition, respirometry, and energy intake
+### Assessment of body composition, respirometry, and energy intake
 
 Lean and fat mass were measured using the EchoMRI-500 (EchoMRI LLC, Houston, TX, USA) according to the manufacturer’s instructions, excluding body water. Whole body respirometry was performed on mice after 18 weeks of diet utilising the Promethion metabolic system (Sable Systems International, North Las Vegas, NV, USA). Mice were individually housed and acclimatised for 2 days in Promethion cages at 29°C. Food and water was available ad libitum and bedding was the same as in the home cage. The airflow of each chamber was 2 l/min and O2 and CO2 measurements were taken every 5 min across a 48–72 hr period and was averaged for every 40 min. Data were analysed by the ExpeData software package (Sable Systems International). Ambulatory activity in metres was taken from the ‘all metres’ readout and averaged for a 24 hr period. Energy intake measurements were performed on mice by the daily weighing of food hoppers and food spillage in communally housed cages and was averaged to account for multiple mice per cage. Food intake was corrected for the loss of water by dehydration in the Hi-ST and Hi-F diets by measuring the rate of food weight loss over time in an empty animal cage.
 
-## Glucose tolerance test
+### Glucose tolerance test
 
 oGTT were carried out on 6 hr fasted mice at 2 pm (food removed at 8 am) after 4 and 12 weeks of dietary intervention. A fixed dose of 50 mg of glucose (200 µl of 25% glucose solution in water) was gavaged by laryngeal cannula. This dose corresponds to a dose of 2 g glucose/kg lean mass for a mouse with 25 g of lean mass. Blood glucose levels were monitored from the tail-tip using a hand-held glucometer (Accu-Check k Performa, Roche, Dee Why, Australia) before, and for 90 min following glucose administration. Insulin levels during the oGTT were measured in samples of whole blood collected from the tail using a mouse ultra-sensitive, ELISA kit (Crystal Chem, Elk Grove Village, IL, USA).
 
 In one cohort of mice after 14 weeks of diet, a stable isotope labelled OGTT was performed as described previously (Turner et al., 2018; Kowalski et al., 2015). The administration of isotopically labelled glucose provides assessment of dynamic glucose disposal and pattern of EGP (Bruce et al., 2021). Glucose was measured with a glucose meter (Accu-Check, Roche, NSW, Australia) and plasma tracer enrichment measured by gas chromatography-mass spectrometry (Turner et al., 2018; Kowalski et al., 2015).
 
-## Assessment of DNL
+### Assessment of DNL
 
 In one cohort of mice after 4 weeks of diet, the rate of DNL was measured. Briefly, at 8:00 in the postprandial state, mice were given an intraperitoneal injection of 0.5 mCi of 3H2O in 200 µl of sterile saline. One hour later, animals were killed by cervical dislocation and plasma, liver, WAT, and BAT were collected. Tissue saponification and determination of 3H incorporation into fatty acids were conducted as previously described (Cooney et al., 1989). Rates of DNL were determined by dividing tissue lipid 3H by the specific activity of 3H in plasma correcting for time and tissue weight.
 
-## Hyperinsulinaemic-euglycaemic clamps
+### Hyperinsulinaemic-euglycaemic clamps
 
 Hyperinsulinaemic-euglycaemic clamps studies were performed as described in detail elsewhere (Brandon et al., 2019; Brandon et al., 2016) with slight modification. Briefly, after 20–26 weeks of diet, dual cannulation surgery was performed and at 6–8 days post surgery, clamps were performed with mice being held on a heat mat to maintain a warmer temperature. After a 90 min basal period, mice received a primed-continuous infusion of insulin (24 mU/kg bolus followed by 6 mU/kg/min; all animals were given the same dose based on a 30 g mouse in an attempt to get comparable insulin plasma levels) with euglycaemia maintained at ~8 mM during the clamp. A bolus of 10 µCi of 2 [14C]-deoxyglucose was administered after euglycaemia was established for determination of tissue-specific glucose uptake. At the end of the tracer period (30 min), animals were euthanised and organs removed, snap-frozen in liquid nitrogen, and stored at –80°C for further analysis.
 
-## Biochemical analysis
+### Biochemical analysis
 
 Plasma insulin, adiponectin, and leptin levels were determined by ELISA (mouse, ultra-sensitive, Crystal Chem, Elk Grove Village, IL, USA). Plasma non-esterified fatty acids (NEFA) were determined by NEFA kit (Wako Diagnostics, Mountain View, CA, USA). Tissue triglyceride content was measured in tissues as described previously (Hoy et al., 2009). Enzymatic assay of βHAD, CS, succinate dehydrogenase, and PDH was performed as previously described (Small et al., 2019; Montgomery et al., 2013b). Enzymatic activity of ACL and G6PDH was determined spectrophotometrically in tissue homogenates produced as previously described (Small et al., 2019) with the following reaction mixes: ACL, 100 mM Tris HCL, 10 mM MgCl2, 10 mM DTT, 0.18 mM NADH, 20 mM sodium citrate, 0.3 mM CoA, excess malate dehydrogenase, pH 8.3. The reaction was initiated with 50 µl of 30 mM ATP. G6PDH, 100 mM Tris HCL, 0.5 mM EDTA, 0.02% BSA, 0.5 mM NADP, pH 9.4. The reaction was initiated with 50 µl of 12 mM glucose-6-phosphate.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was conducted as previously described (Brandon et al., 2015). Antibodies for Akt (#9272), pAkt (S473, #9271), ACC (#3662), FAS (#3180), SCD-1 (#2438), and cyclophilin (#2175) were from Cell Signaling Technology (Danvers, MA, USA). Anti β-actin-HRP (#sc-47778 HRP) and anti-pan 14-3-3 (#sc-1657) were from Santa Cruz (Dallas, TX, USA). Anti-vinculin (#ab73412) antibody was from Abcam (Cambridge, UK). Protein content was determined by the Bradford assay and compared to a BSA standard.
 
-## Histology
+### Histology
 
 WAT was fixed in 10% formalin solution for 24 hr and then transferred to a 70% v/v ethanol solution. Fixed sections were embedded in paraffin blocks and transverse 4 μm sections were cut and stained with haematoxylin and eosin (H&E). Embedding, cutting, and staining were performed by the Garvan Institute Histopathology Core service. Pictures were taken using the Leica DMIL light microscope with an MC120 HD camera (Leica Microsystems, Wetzlar, Germany) at ×20 magnification. Pictures were processed using Leica application suite software (version 4). Adiposoft software (ImageJ, NIH, Bethesda, MD, USA https://imagej.net/Adiposoft) was used to measure adipocyte size.
 
-## Tissue lipidomics
+### Tissue lipidomics
 
 Lipids were extracted by a modified methyl-tert-butyl ether (MTBE) method as previously described (Montgomery et al., 2013a). Approximately 10 mg of frozen liver or quadriceps tissue were homogenised in methanol containing 0.01% butylated hydroxytoluene by bead homogeniser (Precellys 34 with Cryolys, Bertin Instruments, Montigny-le-Bretonneux, France). Samples were homogenised with 5 mm ceramic beads and samples were kept cooled to ≤4°C during homogenisation. The methanol used for homogenisation was spiked with a series of internal standards including: PC 19:0/19:0 (40 nmol), PE 17:0/17:0 (40 nmol), PS 17:0/17:0 (5 nmol), dihydrosphingomyelin 12:0 (5 nmol), ceramide 17:0 (1 nmol), DAG 17:0/17:0 (10 nmol), d5-triacylglycerol 16:0/16:0/16:0 (10 nmol), and CE 22:1 (2 nmol). Following homogenisation MTBE was added at a ratio of 3:1 (v/v), and samples were allowed to rotate overnight at 4°C. The following day 150 mM ammonium acetate was added to induce phase separation (1:3 v/v), samples were vigorously vortexed and then centrifuged for 10 min at 1000 × g. The upper phase containing lipids was transferred into a 2 ml glass vial and stored at –30°C prior to analysis. For sphingolipids analysis, a portion of the upper phases was taken and subjected to base hydrolysis using 10 M NaOH (rotated for 2 hr at room temperature). The same extraction procedure as described above was then used and the upper phase containing sphingolipids was transferred into a 2 ml glass vial and stored at –30°C until analysis.
 
 Lipids were detected from extracts by shotgun lipidomics as described previously (Norris et al., 2015). Whole lipids extracts were diluted 350-fold in methanol:chloroform (2:1 v/v) containing 5 mM ammonium acetate and sphingolipid extracts were diluted 50-fold. Diluted samples were loaded onto a 96-well plate which was heat-sealed with foil and then centrifuged briefly (10 min, 2200 × g). Lipid extracts were analysed by direct infusion using an automated chip-based nanoelectrospray source (TriVersa Nanomate, Advion Biosciences, Ithaca, NY, USA) coupled to a hybrid triple quadrupole linear ion trap mass spectrometer (QTRAP 5500 Sciex, Framingham, MA, USA). Spray parameters were set at a gas pressure of 0.4 psi and a voltage of 1.2 and 1.1 kV for positive and negative ion mode respectively for all acquisitions. Lipid data were acquired using complementary precursor and neutral loss ion scans in positive and negative ionisation modes using settings previously described (Norris et al., 2015). Lipids were identified and quantified from internal standard using Lipidview Software (v1.2, Sciex, Framingham, MA, USA) as described previously (Norris et al., 2015).
 
-## Tissue metabolomics
+### Tissue metabolomics
 
 Glycolytic and TCA cycle metabolites were measured using negative mode ion-pairing liquid chromatography-mass spectrometry (LC-MS) method described previously (PMID 31690627). Briefly, 25 mg of powdered liver and muscle tissue was homogenised in 500 µl 50% (v/v) methanol:water mixture containing internal standards 2-morpholinoethanesulfonic acid and D-camphor-10-sulfonic acid at 2.5 µM. Equal volume of chloroform (500 µl) was added to the extracts and vortexed. The aqueous phase was separated from the insoluble and organic layers by centrifugation and was lyophilised using a Savant SpeedVac (Thermo Fisher Scientific). LC-MS analysis was performed using an Agilent Infinity 1260 LC coupled to an AB Sciex QTRAP 5500 MS. LC separation was achieved on a Synergi Hydro-RP column (Phenomenex, 100 mm length × 2.1 mm internal diameter, 2.5 μm particle size). Buffer A was 95:5 (v/v) water/acetonitrile containing 10 mm tributylamine and 15 mm acetic acid (pH 4.9), and buffer B was 100% acetonitrile. MS source temperature set to 350°C, and 5 µl was injected. LC-MS data were extracted using MSconvert (version 3.0.18165-fd93202f5) and in-house MATLAB scripts. Molar concentrations were calculated using external standards injected alongside samples. This research was facilitated by access to Sydney Mass Spectrometry, a core research facility at the University of Sydney.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are expressed as means ± SEM. Results were analysed by either a one-way ANOVA or two-way repeated measures ANOVA as appropriate. If the ANOVA reached statistical significance, a Tukey’s post hoc test was used. Statistical analysis was performed in GraphPad Prism software (Prism 8, La Jolla, San Diego, CA, USA). Statistical significance was set at p<0.05. Lipidomics data was analysed in R using a Kruskal-Wallis rank sum test with correction for false discovery rate using the method of Benjamini-Hochberg. Post hoc testing was conducted using pairwise Wilcoxon rank sum tests.

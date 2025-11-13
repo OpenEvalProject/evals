@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0331rkj73 Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea
-2. https://ror.org/05a15z872 Samsung Genome Institute, Samsung Medical Center Seoul Republic of Korea
-3. https://ror.org/04h9pn542 Research Institute for Veterinary Science, College of Veterinary Medicine, Seoul National University Seoul Republic of Korea
-4. https://ror.org/04q78tk20 Division of Hematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea Seoul Republic of Korea
-5. https://ror.org/0331rkj73 Department of Health Sciences and Technology, Samsung Advanced Institute for Health Science & Technology (SAIHST), Sungkyunkwan University Seoul Republic of Korea
+1. Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:0331rkj73](https://ror.org/0331rkj73))
+2. Samsung Genome Institute, Samsung Medical Center Seoul Republic of Korea ([ROR:05a15z872](https://ror.org/05a15z872))
+3. Research Institute for Veterinary Science, College of Veterinary Medicine, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))
+4. Division of Hematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine, Seoul, Republic of Korea Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))
+5. Department of Health Sciences and Technology, Samsung Advanced Institute for Health Science & Technology (SAIHST), Sungkyunkwan University Seoul Republic of Korea ([ROR:0331rkj73](https://ror.org/0331rkj73))
 
 † Corresponding author
 
@@ -36,25 +36,95 @@ Recent studies suggest a marginal effect of ICI on the clonal dynamics of CHIP (
 
 ## Results
 
-## CHIP profiles in metastatic NSCLC patients treated with ICI
+### CHIP profiles in metastatic NSCLC patients treated with ICI
 
 To investigate the interplay between ICI treatment and CHIP in NSCLC, we collected blood samples before and after ICI treatment from 100 metastatic NSCLC patients (Figure 1, Supplementary file 1a). These samples were utilized for a CHIP-targeted sequencing panel (median depth ~600×) and scRNA-seq (Figure 1A and Methods). At the baseline, we identified 67 CHIP mutations in 100 patients, 26 of them in known putative driver genes of hematopoietic cancer (CHIP-PD). After treatment, 68 CHIP and 32 CHIP-PD mutations were found in 91 patients who passed quality control assessment (Figure 1A, Figure 1—figure supplements 1–3, and Supplementary file 1c).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-v2.jpg)
+
+**Figure 1.:** (A) Overall study design. The numbers indicate sample counts in each group. (B) Frequency of CH variant detection in each gene in NSCLC samples before (light blue) and after (blue) ICI treatment. (C) Comparison of variant allele frequency before and after ICI treatment, divided by pathology type (lung adenocarcinoma [LUAD], lung squamous cell carcinoma [LUSC], other). (D) Effect of ICI treatment on the clonal landscape of all genes (left) and frequently detected CH genes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** We collected numbers indicate count of variants after each variant filtering scheme (all samples/excluding controls).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Variant depth distributions from raw calls and putative clonal hematopoiesis of indeterminate potential (CHIP) variants. (B) Distribution of variant annotation from each variant filtering step.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Gene distribution in before and after immune checkpoint inhibitor (ICI) treatment. Color indicates variant annotation. (B) Waterfall plot showing CHIP mutations from baseline, cohort samples.
 
 Among the CHIP genes, DNMT3A, PPM1D, and TET2 were the most frequently mutated (Figure 1B). PPM1D truncating mutations were also common, and have previously demonstrated association with patients’ smoking habits and possible history with chemotherapy (Hsu et al., 2018; Coombs et al., 2017). Variants involving the DNMT3A p.Arg882 residue and TP53, which are frequent in CHIP, were not prevalent in our dataset, although our panel extensively covered these regions and these loci were manually inspected (data not shown).
 
 Overall, we observed ICI treatment to effect minimal changes in CHIP burden (Figure 1B). Also, VAF was highly correlated across all traced mutations and not dependent on clinical responses (Figure 1C, D). However, we noted increased number of CHIP mutations with VAF >10% in patients with lung squamous cell carcinoma (LUSC). While the specific mutated genes differed between patients with different histology or responses, mutated gene burden did not significantly differ between groups.
 
-## Prevalence of high CHIP burden showed bias to LUSC patients
+### Prevalence of high CHIP burden showed bias to LUSC patients
 
 Next, we investigated the association of CHIP status with clinical parameters in the cohort (Figure 2). CHIP prevalence was significantly higher in the lung cancer cohort compared to the control group (controls 5/42 vs. patients 44/100, age-adjusted logistic regression p = 0.01; Figure 2A, Supplementary file 1a and b). However, the number of CHIP-positive patients did not differ before and after ICI treatment, nor in relation to treatment response (Figure 2B, C). As previously reported, CHIP burden is heavily dependent on age (Figure 2D). Smoking history may also impact CHIP prevalence, but we could not find a significant contribution of smoking, as almost all NSCLC patients in our study have a smoking history (CHIP prevalence of non-smoker 2/9 vs. smoker 42/91; Figure 2—figure supplement 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Discovery cohort (n = 100), (E–G) replication cohort (n = 180; see Methods for description). (A, E) CH prevalence by pathology (lung squamous cell carcinoma [LUSC] and lung adenocarcinoma [LUAD]). (B) Effect of immune checkpoint inhibitor (ICI) treatment on CH. (C, F) Effect of post-ICI prognosis to ICI on CH. (D, G) Age distribution of the cohort, stratified by clonal hematopoiesis of indeterminate potential (CHIP) allele frequency and pathology status.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** CHIP status was displayed using (A) binned variant allele frequency (VAF) and (B) variant count per patient. Colors indicate binned VAF and variants count.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** CHIP variant counts and major clinical parameters were presented. Color indicates the binned number of CHIP variants.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Variant depth distribution from raw and CHIP variant. Colored bar indicates variants cutoff, with depth = 40. (B) Distribution of variant annotation from each variant filtering step. (C) All genes from CHIP variants. Colors denote variant annotation.
+
 Subsequently, we examined clonal size in the cohort, as that has been reported as a risk factor of clinical outcome (Kessler et al., 2022). Taking CHIP VAF as an indicator of clonal size, we observed that high CHIP burden was prevalent in LUSC, while multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients (Figure 2C and Figure 2—figure supplement 2). To determine if this finding would reproduce in an independent cohort, we performed CHIP mutation calling using whole exome sequencing (WES) data of median ~80× depth from 180 additional peripheral blood mononuclear cell (PBMC) samples from an independent cohort of NSCLC patients (Figure 2C–E, Figure 2—figure supplement 3, Supplementary file 1a, c, d and Methods). The results showed similar patterns between the two cohorts, but the replication cohort alone was not powerful enough to achieve significance for difference in clonal sizes based on pathology (Figure 2E–G).
 
-## High CHIP burden causes single-cell transcriptomic changes
+### High CHIP burden causes single-cell transcriptomic changes
 
 Next, to test whether the presence of CHIP and ICI prognosis affects blood cell transcriptomes, we analyzed PBMC scRNA-seq data from 63 samples of the discovery cohort. After quality control processes, we retrieved 468,596 cells in a total of 26 clusters defined by systemic integration and clustering using the Louvain algorithm, then validated using Azimuth (Figure 3A, Figure 3—figure supplement 1A, B, Supplementary file 1e, and Methods) (Hao et al., 2021). Cell composition analysis showed an increased proportion of natural killer (NK) cells and a decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status (Figure 3—figure supplement 1C). Subsequently, differentially expressed genes (DEG) analysis using Wilcoxon’s rank-sum test according to CHIP VAF bins in each cluster (see Methods) highlighted genes important in immune response and transcriptional activation (Figure 3C, Figure 3—figure supplement 2, Supplementary file 1f). To further implicate these DEGs functionally, a gene set enrichment test was performed using the area under the curve (AUC) statistics from DEGs and the hallmark pathway gene sets in msigDB (Liberzon et al., 2015). The results indicated activation of the tumor necrosis factor (TNF) signaling pathway via NFKB in the high CH burden group for most cell lineages, including both classical dendritic cells (DCs) and NK cells (Figure 3D, E, Figure 3—figure supplement 3, and Supplementary file 1g; see Methods). To understand possible interactions between ICI treatment response and CHIP burden, we grouped samples by CHIP burden and ICI response (Figure 3—figure supplement 4). However, the interactions mostly depended on CH status only, and not on response to ICI.
 
-## Implication of high CHIP burden in inflammatory signatures of myeloid cells
+![Figure 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-v2.jpg)
+
+**Figure 3.:** (A) Uniform manifold approximation and projection (UMAP) plot of scRNA-seq data from the discovery cohort (n = 63). (B) Effect of pathology (left) and variant allele frequency (VAF) (right) on cell composition. (C) Expression of selected genes in the NF-ĸB pathway from the scRNA-seq data. (D) Gene set enrichment analysis (GSEA) of DEGs from myeloid populations. Color represents normalized effect score (NES), and dot size represents adjusted p-values. (E) and (F) GSEA plots of selected pathways from (C).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) UMAP plot of scRNA-seq data, with CH variant allele frequency (VAF) bins. (B) Cell-type-specific marker gene expression from each cluster. (C) Cell composition plot from each sample.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Color represents normalized effect score (NES), and dot size represents adjusted p-values.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Results of GSEA analysis in response to ICI and CHIP VAF bins, from before treatment samples. Color represents normalized effect score (NES), and dot size represents adjusted p-values. (B) Representative gene expression is displayed using same panels as Figure 3B. Colors indicate groups based on CHIP VAF bin and ICI response status.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) WGCNA dendrogram, derived from myeloid gene expressions. (B) Cluster-wise ‘black’ module score distribution. (C) Gene ontology (GO) enrichment analysis of the black module genes. The colored bar indicates inflammatory pathway-related GO terms with significant enrichment. (D) Gene set enrichment analysis (GSEA) of black module genes. Colored dots indicate significant gene set enrichment.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Clustered, representative GRNs from scRNA-seq dataset. 1500 cells from each variant allele frequency (VAF) bin were presented for this visualization. Color represents GRN AUC scores. (B) Aggregated GRN scores from cluster and VAF bins. (C) NFKB1 and ATF3 regulon scores in major cell clusters, stratified by VAF bins. (D) UMAP plot for clusters, used in SCENIC analysis. (E) Regulon expression distribution, using Seurat’s featureplot.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** Heatmap illustrating the numbers of cell–cell interactions using (A) high variant allele frequency (VAF) clonal hematopoiesis of indeterminate potential (CHIP) and (B) CHIP negative samples. (C) Selected interaction pathways related to myeloid cells are displayed. Dot sizes represent interaction p-values, and colors indicate the magnitude of interactions. In row names, the order of names is presented as sender | receiver.
+
+![Figure 3—figure supplement 8.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp8-v2.jpg)
+
+**Figure 3—figure supplement 8.:** Survival curve using progression-free survival in clonal hematopoiesis of indeterminate potential (CHIP) negative (N = 71) and high-burden CHIP (N = 11), using survplot in R.
+
+![Figure 3—figure supplement 9.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp9-v2.jpg)
+
+**Figure 3—figure supplement 9.:** Hypoxia and TNF-ɑ signaling pathways across clusters. The bars represent the count of clusters in which each gene is included in the leading edge.
+
+### Implication of high CHIP burden in inflammatory signatures of myeloid cells
 
 We performed a gene network analysis to comprehensively analyze the increased expression of inflammatory signaling genes in patients with higher CHIP burden. First, we used hdWGCNA to construct co-expression networks for genes in myeloid cells, which yielded a black module that exhibited myeloid specificity and represented most of the signaling-related DEGs identified via gene set enrichment analysis (GSEA) (Figure 3—figure supplement 5 and Supplementary file 1h; Morabito et al., 2023). We determined gene ontology term enrichment in this module and found the inflammatory and transcriptional activation pathways observed in DEGs to be clearly identified (Figure 3—figure supplement 5C). Additionally, further GSEA on the myeloid-specific module showed its function to resemble that of the overall set of DEGs (Figure 3—figure supplement 5D).
 
@@ -64,7 +134,7 @@ Recent studies have shown that expansion of HSPC-derived monocytes is the cause 
 
 In addition to conducting gene network analysis, we explored the effect of the inflammatory signature on cell–cell interaction using CellPhoneDB (Figure 3—figure supplement 7; Efremova et al., 2020). The number of significant cell–cell interactions did not differ significantly between high-burden CHIP samples and negative samples, although the number of cells in each group seemed likely to have an impact (Figure 3—figure supplement 7A, B). However, when the interactions in the TNF and IL-1B pathways were analyzed separately, monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A (Figure 3—figure supplement 7C). Collectively, our results suggest a sensitized response of monocytes to inflammation in lung cancer patients with high CHIP burden.
 
-## Effect of CHIP on clinical outcome
+### Effect of CHIP on clinical outcome
 
 Finally, to understand whether clonal hematopoiesis status can affect the clinical outcomes of lung cancer patients undergoing ICI treatment, we conducted a survival analysis (Figure 3—figure supplement 8). Our results showed the progression-free survival (PFS) of patients after ICI treatment to be reduced in the high-burden CHIP group (825 vs. 404, p = 0.056), with no difference in ICI response rates between the negative and high-burden CHIP groups. Previous studies have already observed a negative effect on life expectancy in CHIP patients with solid tumors. Therefore, it is possible that these results will be validated by analyzing additional samples.
 
@@ -84,42 +154,42 @@ Here, we have illustrated increased inflammatory activation in myeloid cells of 
 
 ## Methods
 
-## Patients
+### Patients
 
 Description of the discovery cohort is previously reported (Kim et al., 2023). Briefly, 100 patients (50 LUAD, 43 LUSC, and 7 others) with metastatic NSCLC stage IV who were treated with anti-PD(L)1 (e.g., Atezolizumab, Nivolumab, and Pembrolizumab) were recruited at Samsung Medical Center (SMC) under the permission of SMC Institutional Review Board (No. 2018-04-048, 2022-01-094). All subjects provided their written informed consent to participate in the study. Whole blood sample was acquired before and 1–3 weeks after the treatment and used for genome sequencing and scRNA-seq. For replication, blood samples from additional 180 lung cancer patients (125 LUAD and 55 LUSC) were used for genome analysis (Litchfield et al., 2021).
 
-## Targeted sequencing and WES
+### Targeted sequencing and WES
 
 We designed a targeted sequencing panel comprising 167 selected genes associated with putative drivers of CHIP at Twist Bioscience (South San Francisco, CA). For WES, we utilized the SureSelect V5 panel from Agilent (Santa Clara, CA). CHIP-targeted sequencing and WES were both conducted at Samsung Genome Institute, respectively, employing 50 and 200 ng of genomic DNA extracted from whole blood. The targeted sequencing panel was captured and sequenced using NextSeq 2000, with paired-end sequencing performed at a read length of 150 base pairs (bps).
 
-## Variant filtering and calling of CHIP variants
+### Variant filtering and calling of CHIP variants
 
 For somatic variant calling, the Sarek pipeline (version 3.2.1) implemented in Nextflow was used (Garcia et al., 2020). In brief, the pipeline employed GATK’s standard data preprocessing procedure and Mutect2 for somatic variant calling based on a BED file (McKenna et al., 2010). All passed calls were collected and annotated using Snpeff (version 4.3 and db version 105) and VEP (version 108) (Cingolani et al., 2012; McLaren et al., 2016). To filter CHIP variants, a stepwise approach based on the following criteria was applied. First, variants should meet the following conditions: (1) VAF 2–35%, (2) variant depth >500× for the discovery set and >40× for the WES replication set, (3) 4 or more (2 or more for the WES replication set) variant-covering read pairs in each forward and reverse direction, (4) global allele frequency from gnomAD <1e−5, or <1e−3 if a variant is in the COSMIC database (Tate et al., 2019) allele count <5% in all processed samples, and (5) no homopolymer signature found in 6 bp upstream or downstream of the candidate variant. Next, we called CHIP variants based on (1) protein sequence alterations, including exonic splicing variants, and (2) manual assessment of variant calls using IGV (Robinson et al., 2017). Finally, we curated data from previous studies and the COSMIC database, assigning variants reported more than 10 times or matched within a predefined list as CHIP with putative drivers (called as clonal hematopoiesis of indeterminate potential with putative drivers, or CHIP-PD) (Niroula et al., 2021).
 
-## Power estimation
+### Power estimation
 
 The power of the Poisson binomial test was calculated as the probability that a variant would be detected exclusively in one of two arbitrary groups. In brief, the most prevalent CHIP variant, DNMT3A p.Arg882, constitutes approximately 10% of the DNMT3A CHIP cases. When this variant is totally absent in the one group, a minimum of 16 DNMT3A CHIP patients in the other group would be required to achieve a power of 0.8. Considering the current prevalence of DNMT3A CHIP in our cohort (8/50 CHIP samples), this suggests that a minimum of 100 CHIP samples per group is required for determining the prevalence of any specific variant.
 
-## scRNA-seq preprocessing and analysis
+### scRNA-seq preprocessing and analysis
 
 The scRNA-seq dataset was generated using the 10× Genomics 5′ single-cell kit and was partially derived from a previous study (Kim et al., 2023). Reads were aligned to the hg38 reference using 10X CellRanger (ver. 7.0). Contaminant RNA barcodes were removed with cellbender and sample demultiplexing was performed by demuxlet (Fleming et al., 2023; Kang et al., 2018). After filtering the cell expression matrix, we used Seurat (v 4.3.0) for downstream analysis (Hao et al., 2021). At the sample level, we filtered out cells with mitochondrial RNA content >15%, unique molecular identifier (UMI) counts <200 or >6000, and calculated library-size corrected counts using SCTransform (Hafemeister and Satija, 2019). Then, we computed PCA based on the normalized SCTransform values and integrated all samples using Harmony (Korsunsky et al., 2019). Using the corrected PCA, we performed unsupervised clustering via Louvain algorithms and UMAP. For each cluster, we identified marker genes using the Wilcoxon rank-sum test with presto and validated annotations using Azimuth (Hao et al., 2021).
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 GSEA was employed to compare the expression patterns according to CHIP status based on their concordance to the hallmark pathways in the Molecular Signatures Database (MSigDB) (Liberzon et al., 2015). For GSEA of scRNA-seq data, we used fgsea (Sergushichev, 2016). Briefly, the AUC rank of DEGs obtained with and without CHIP for each cluster was used as input. Significant gene set enrichment was determined only for adjusted p < 0.05.
 
-## scRNA-seq WGCNA
+### scRNA-seq WGCNA
 
 We utilized WGCNA to construct a gene co-expression network from the gene expression profiles of myeloid cells utilizing the R package hdWGCNA (Morabito et al., 2023). In brief, the co-expression network was constructed using a soft power of 12 for SCTtransform-normalized cell counts. Within the constructed co-expression network, we explored the type and specificity of genes in each module, excluding unassigned genes. The functionality of the black module was validated through GSEA and by examining its overlap with DEGs identified between CHIP groups (Morabito et al., 2023).
 
-## GRN inference
+### GRN inference
 
 To further understand the altered gene modulation in major cell clusters, including B cells, NK cells, CD4 T cells, CD8 T cells, and monocytes, we constructed a GRN using pySCENIC (Van de Sande et al., 2020). We created meta-cells for each sample using SEACells and employed these meta-cells for GRN calculation to address the sparse nature of scRNA expression and enhance resolution (Bravo González-Blas et al., 2023; Persad et al., 2023). The full transcriptome matrix and the GRN derived from meta-cells were then used to analyze regulon signatures for each cell. Finally, we mapped the regulon AUC values of each cell onto Seurat’s UMAP and visualized the results using Seurat.
 
-## Cell-to-cell communication analysis
+### Cell-to-cell communication analysis
 
 To understand the interactions between myeloid and other cell types, we utilized the Python package CellphoneDB (Efremova et al., 2020), which curates human cell–cell interactions. The counts matrix, processed with SCTransform, was divided according to CHIP status and used as input for CellphoneDB. Significant interactions were then counted to determine the number of cell–cell interactions, and myeloid-related interactions were compared between samples of different CHIP status.
 
-## Statistical analysis
+### Statistical analysis
 
 We present raw data if applicable. For scRNA-seq data, scaled and log-normalized raw counts from cells are displayed in violin plots. To determine statistical significance between high-burden, CHIP, and negative groups, the Wilcoxon test or Kruskal–Wallis test was used for continuous variables and the Poisson binomial test or logistic regression for categorical variables. Statistical metrics from GESA were calculated using the fgsea package in R. All statistical analyses were conducted in R 4.2.1.

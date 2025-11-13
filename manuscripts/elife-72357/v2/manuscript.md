@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Risk factors or interventions may affect the variability as well as the mean of health outcomes. Understanding this can aid aetiological understanding and public health translation, in that interventions which shift the outcome mean and reduce variability are typically preferable to those which affect only the mean. However, most commonly used statistical tools do not test for differences in variability. Tools that do have few epidemiological applications to date, and fewer applications still have attempted to explain their resulting findings. We thus provide a tutorial for investigating this using GAMLSS (Generalised Additive Models for Location, Scale and Shape). The 1970 British birth cohort study was used, with body mass index (BMI; N = 6007) and mental wellbeing (Warwick-Edinburgh Mental Wellbeing Scale; N = 7104) measured in midlife (42–46 years) as outcomes. We used GAMLSS to investigate how multiple risk factors (sex, childhood social class, and midlife physical inactivity) related to differences in health outcome mean and variability. Risk factors were related to sizable differences in outcome variability—for example males had marginally higher mean BMI yet 28% lower variability; lower social class and physical inactivity were each associated with higher mean and higher variability (6.1% and 13.5% higher variability, respectively). For mental wellbeing, gender was not associated with the mean while males had lower variability (–3.9%); lower social class and physical inactivity were each associated with lower mean yet higher variability (7.2% and 10.9% higher variability, respectively). The results highlight how GAMLSS can be used to investigate how risk factors or interventions may influence the variability in health outcomes. This underutilised approach to the analysis of continuously distributed outcomes may have broader utility in epidemiologic, medical, and psychological sciences. A tutorial and replication syntax is provided online to facilitate this ( https://osf.io/5tvz6/ ). DB is supported by the Economic and Social Research Council (grant number ES/M001660/1), The Academy of Medical Sciences / Wellcome Trust (“Springboard Health of the Public in 2040” award: HOP001/1025); DB and LW are supported by the Medical Research Council (MR/V002147/1). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+Background:Risk factors or interventions may affect the variability as well as the mean of health outcomes. Understanding this can aid aetiological understanding and public health translation, in that interventions which shift the outcome mean and reduce variability are typically preferable to those which affect only the mean. However, most commonly used statistical tools do not test for differences in variability. Tools that do have few epidemiological applications to date, and fewer applications still have attempted to explain their resulting findings. We thus provide a tutorial for investigating this using GAMLSS (Generalised Additive Models for Location, Scale and Shape).Methods:The 1970 British birth cohort study was used, with body mass index (BMI; N = 6007) and mental wellbeing (Warwick-Edinburgh Mental Wellbeing Scale; N = 7104) measured in midlife (42–46 years) as outcomes. We used GAMLSS to investigate how multiple risk factors (sex, childhood social class, and midlife physical inactivity) related to differences in health outcome mean and variability.Results:Risk factors were related to sizable differences in outcome variability—for example males had marginally higher mean BMI yet 28% lower variability; lower social class and physical inactivity were each associated with higher mean and higher variability (6.1% and 13.5% higher variability, respectively). For mental wellbeing, gender was not associated with the mean while males had lower variability (–3.9%); lower social class and physical inactivity were each associated with lower mean yet higher variability (7.2% and 10.9% higher variability, respectively).Conclusions:The results highlight how GAMLSS can be used to investigate how risk factors or interventions may influence the variability in health outcomes. This underutilised approach to the analysis of continuously distributed outcomes may have broader utility in epidemiologic, medical, and psychological sciences. A tutorial and replication syntax is provided online to facilitate this (https://osf.io/5tvz6/).Funding:DB is supported by the Economic and Social Research Council (grant number ES/M001660/1), The Academy of Medical Sciences / Wellcome Trust (“Springboard Health of the Public in 2040” award: HOP001/1025); DB and LW are supported by the Medical Research Council (MR/V002147/1). The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 
 ## Introduction
 
@@ -47,19 +47,19 @@ The further investigation of differences in variability and skewness in these ou
 
 ## Methods
 
-## Study sample
+### Study sample
 
 The 1970 British birth cohort study consists of all 17,196 babies born in Britain during one week of March 1970, with 9 subsequent waves of follow-up from childhood to midlife (Elliott and Shepherd, 2006) At the most recent wave (46 years), 12,368 eligible participants (those alive and not lost to follow-up) were invited to be interviewed at home by trained research staff—8581 participants provided at least some data in this wave. At all waves, informed consent was provided and ethical approval granted.
 
-## Health outcomes
+### Health outcomes
 
 We selected two outcomes in midlife which capture different dimensions of health and are continuously distributed: adiposity (BMI), and mental wellbeing (Warwick-Edinburgh Mental Wellbeing Scale (WEMWBS)). BMI was measured at 46 years, and wellbeing at 42 years (Wood et al., 2021) WEMWBS consists of 14 positively worded items—such as “I’ve been feeling optimistic about the future” and “…feeling cheerful”—measured on a five-point Likert scale, which are summed to give a total well-being score ranging from 14 to 70 (highest well-being) (Tennant et al., 2007).
 
-## Risk factors
+### Risk factors
 
 We chose three risk factors across different domains—each of them likely to independently influence health outcomes (Stringhini et al., 2017). They were coded as binary variables to simplify comparison of descriptive and GAMLSS results: sex (female/male), socioeconomic position (social class at birth; coded as non-manual/manual), and a behavioural risk factor (reported physical activity at 42 years; reported days in which the participant took part in exercise for 30 min or more in a typical week ‘working hard enough to raise your heart rate and break into a sweat’, coded as active ( ≥ 1 days)/inactive (0 days)). We examined if the binary split of risk factors influenced the inferences drawn—additional analyses were conducted with them coded instead as categorical variables (social class in six categories and physical inactivity from 0 to 7 days).
 
-## Analytical strategy
+### Analytical strategy
 
 To visually inspect the outcome distributions and their differences across risk factor groups, we first plotted separate kernel density estimates alongside relevant descriptive statistics (mean, standard deviation, and coefficient of variation [CoV = SD/mean]). This enables a descriptive depiction of variability, with unadjusted GAMLSS results corresponding to each descriptive statistic. We then used GAMLSS (Rigby and Stasinopoulos, 2005) separately with each outcome, to formally investigate whether risk factors were associated with (1) differences in mean outcome, (2) differences in outcome variability, and (3) differences in outcome skewness. Linear regression analysis, in contrast, only enables mean differences in outcomes to be investigated.
 
@@ -87,7 +87,311 @@ A total of 6007 participants had valid data for BMI and all risk factors, and 71
 
 GAMLSS results for the binary risk factors are shown in Tables 1 and 2, with the results using the extra risk factor categories inSupplementary file 1. Associations were similar in the unadjusted and mutually adjusted analyses, so the former are described below.
 
-## Body mass index
+**Table 1.**
+ Risk factors in relation to body mass index: differences in mean, variability and skewness estimated by GAMLSS (n = 6007).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Risk factor</th>
+      <th rowspan="2">%</th>
+      <th colspan="2">NO distribution</th>
+      <th colspan="3">BCCG distribution</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Median</th>
+      <th>CoV</th>
+      <th>Skewness*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female (ref)</td>
+      <td>52.4%</td>
+      <td>28.1</td>
+      <td>6.1</td>
+      <td>26.9</td>
+      <td>0.22</td>
+      <td>1.10</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>47.6%</td>
+      <td>28.7</td>
+      <td>4.6</td>
+      <td>28.2</td>
+      <td>0.16</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>1.9 (0.5)</td>
+      <td>–27.6 (1.8)</td>
+      <td>4.1 (0.4)</td>
+      <td>–23 (1.8)</td>
+      <td>0.48 (0.11)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>2.2 (0.5)</td>
+      <td>–27.4 (1.8)</td>
+      <td>4.4 (0.4)</td>
+      <td>–22.6 (1.8)</td>
+      <td>0.54 (0.11)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-manual (ref)</td>
+      <td>36.3%</td>
+      <td>27.7</td>
+      <td>5.2</td>
+      <td>27</td>
+      <td>0.19</td>
+      <td>1.15</td>
+    </tr>
+    <tr>
+      <td>Manual social class</td>
+      <td>63.7%</td>
+      <td>28.8</td>
+      <td>5.5</td>
+      <td>28</td>
+      <td>0.19</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>4.0 (0.5)</td>
+      <td>6.1 (1.9)</td>
+      <td>4.4 (0.5)</td>
+      <td>6 (1.9)</td>
+      <td>0.39 (0.11)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>3.8 (0.5)</td>
+      <td>5.5 (1.9)</td>
+      <td>4.3 (0.4)</td>
+      <td>5.6 (1.9)</td>
+      <td>0.40 (0.12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physically active (ref)</td>
+      <td>73%</td>
+      <td>28.1</td>
+      <td>5.2</td>
+      <td>27.4</td>
+      <td>0.19</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td>Inactive</td>
+      <td>27%</td>
+      <td>29.1</td>
+      <td>6.0</td>
+      <td>28.3</td>
+      <td>0.21</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>3.3 (0.6)</td>
+      <td>13.5 (2.1)</td>
+      <td>2.9 (0.5)</td>
+      <td>10.4 (2.1)</td>
+      <td>0.08 (0.12)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>3.3 (0.6)</td>
+      <td>12.1 (2.1)</td>
+      <td>3.1 (0.5)</td>
+      <td>9.3 (2.1)</td>
+      <td>0.12 (0.12)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Skewness is estimated as the Box-Cox power (that is, the power required to transform the outcome to a normal distribution); differences are the absolute difference in Box-Cox power in each subgroup estimated by GAMLSS. GAMLSS estimates multiple distribution moments simultaneously; thus, differences may not exactly correspond to descriptive comparisons reported above.†Estimates mutually adjusted for sex, social class and physical inactivity.NO: normal distribution; BCCG: Box-Cox Cole and Green distribution: SD: standard deviation; CoV: coefficient of variation; GAMLSS: Generalized Additive Models for Location, Scale and Shape; SE, standard error._
+
+**Table 2.**
+ Risk factors in relation to mental wellbeing (WEMWBS): differences in mean, variability and skewness estimated by GAMLSS (n = 7,104).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Risk factor</th>
+      <th rowspan="2">%</th>
+      <th colspan="2">NO distribution</th>
+      <th colspan="3">BCCG distribution</th>
+    </tr>
+    <tr>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Median</th>
+      <th>COV</th>
+      <th>Skewness*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female (ref)</td>
+      <td>52.8%</td>
+      <td>49.2</td>
+      <td>8.5</td>
+      <td>50</td>
+      <td>0.17</td>
+      <td>–0.41</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>47.2%</td>
+      <td>49.1</td>
+      <td>8.2</td>
+      <td>50</td>
+      <td>0.17</td>
+      <td>–0.40</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>–0.2 (0.4)</td>
+      <td>–3.9 (1.7)</td>
+      <td>–0.3 (0.4)</td>
+      <td>–3.5 (1.7)</td>
+      <td>0.02 (0.11)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>–0.6 (0.4)</td>
+      <td>–3.6 (1.7)</td>
+      <td>–0.7 (0.4)</td>
+      <td>–2.6 (1.7)</td>
+      <td>0.00 (0.11)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Non-manual (ref)</td>
+      <td>34.8%</td>
+      <td>50.1</td>
+      <td>7.9</td>
+      <td>51</td>
+      <td>0.16</td>
+      <td>–0.45</td>
+    </tr>
+    <tr>
+      <td>Manual social class</td>
+      <td>65.2%</td>
+      <td>48.7</td>
+      <td>8.5</td>
+      <td>49</td>
+      <td>0.17</td>
+      <td>–0.37</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>–2.8 (0.4)</td>
+      <td>7.2 (1.8)</td>
+      <td>–2.9 (0.4)</td>
+      <td>10.9 (1.8)</td>
+      <td>–0.20 (0.12)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>–2.5 (0.4)</td>
+      <td>6.0 (1.8)</td>
+      <td>–2.7 (0.4)</td>
+      <td>9.8 (1.8)</td>
+      <td>–0.24 (0.12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Physically active (ref)</td>
+      <td>72.4%</td>
+      <td>49.9</td>
+      <td>8.0</td>
+      <td>51</td>
+      <td>0.16</td>
+      <td>–0.38</td>
+    </tr>
+    <tr>
+      <td>Inactive</td>
+      <td>27.6%</td>
+      <td>47.3</td>
+      <td>8.9</td>
+      <td>48</td>
+      <td>0.19</td>
+      <td>–0.36</td>
+    </tr>
+    <tr>
+      <td>Unadjusted difference, % (SE)</td>
+      <td></td>
+      <td>–5.3 (0.5)</td>
+      <td>10.9 (1.9)</td>
+      <td>–5.2 (0.4)</td>
+      <td>16.2 (1.9)</td>
+      <td>–0.12 (0.12)</td>
+    </tr>
+    <tr>
+      <td>Adjusted† difference, % (SE)</td>
+      <td></td>
+      <td>–5.3 (0.5)</td>
+      <td>9.9 (1.9)</td>
+      <td>–5.1 (0.4)</td>
+      <td>15.2 (1.9)</td>
+      <td>–0.10 (0.12)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Skewness is estimated as the Box-Cox power (that is, the power required to transform the outcome to a normal distribution); differences are the absolute difference in Box-Cox power in each subgroup estimated by GAMLSS. GAMLSS estimates multiple distribution moments simultaneously; thus, differences may not exactly correspond to descriptive comparisons reported above.†Estimates mutually adjusted for sex, social class and physical inactivity.NO: normal distribution; BCCG: Box-Cox Cole and Green distribution: SD: standard deviation; CoV: coefficient of variation; GAMLSS: Generalized Additive Models for Location, Scale and Shape; SE, standard error._
+
+### Body mass index
 
 Males had higher mean BMI yet lower variability than females—see Figure 2 and Table 1. The SD for BMI was lower in males (4.6) than females (6.1) that is a 28% difference (difference in log(SD) *100). This matches the estimate obtained from GAMLSS—males had 27.6% (SE: 1.8%) less variability than females (Table 1).
 
@@ -95,15 +399,73 @@ In contrast, lower social class and physical inactivity were both associated wit
 
 The GAMLSS results were similar with the BCCG distribution rather than NO (Table 1). That is, risk factors associated with higher mean BMI and higher SD were also associated with higher median BMI and higher CoV. Male sex and lower social class were both associated with less right skewness of the BMI distribution; the Box-Cox power was 0.5 (0.1) higher in males and 0.4 (0.1) higher for manual social class. Physical activity was not associated with outcome skewness.
 
-## Mental wellbeing – Warwick-Edinburgh mental wellbeing scale
+### Mental wellbeing – Warwick-Edinburgh mental wellbeing scale
 
 There was little evidence of sex differences in mean wellbeing, while males had marginally less variability than females by 3.9% (1.7%). Lower social class and physical inactivity were both associated with lower mean yet higher variability (Figure 2 and Table 2). Those from lower social class households had a 2.8% (0.4%) lower mean yet 7.2% (1.8%) higher variability. Physically inactive participants had 5.3% (0.5%) lower mean yet 10.9% (1.9%) higher variability. These findings were similar in mutually adjusted analyses (Table 2).
 
 The results were similar with the BCCG distribution (Table 2). There was evidence suggesting that lower social class was associated with less skewness in the wellbeing distribution; sex and physical activity were not associated with outcome skewness.
 
-## Comparison with quantile regression findings
+### Comparison with quantile regression findings
 
 For BMI, the associations of lower social class and physical inactivity were stronger at upper quantiles (Table 3; e.g., manual social class had 3.7 (0.6) higher BMI at the the median, and 4.9 (0.7) at the 75th); estimates at higher centiles were also estimated less precisely than at lower centiles (larger SE). In contrast sex differences were present at lower centiles but absent at the 75th centile. These findings corresponded with those from GAMLSS using BCCG, with all BMI centiles plotted by risk factor group (Figure 3). This comparison highlights the utility of GAMLSS—risk factor differences in the mean, variability, and skewness can each be quantified and thus visually depicted.
+
+**Table 3.**
+ Risk factors in relation to body mass index (BMI) and mental wellbeing (WEMWBS): percentage differences at multiple points of the outcome distribution estimated by quantile regression.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Risk factor</th>
+      <th>25th centile</th>
+      <th>50th centile</th>
+      <th>75th centile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">BMI @ Age 46</td>
+      <td>Male vs female</td>
+      <td>6.8 (0.5)</td>
+      <td>4.5 (0.6)</td>
+      <td>–0.8 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Father’s Class</td>
+      <td>3.7 (0.6)</td>
+      <td>3.7 (0.6)</td>
+      <td>4.9 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Exercise Level</td>
+      <td>1 (0.7)</td>
+      <td>3 (0.7)</td>
+      <td>4.3 (0.8)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">WEMWBS @ Age 42</td>
+      <td>Sex</td>
+      <td>0 (0.7)</td>
+      <td>0 (0.5)</td>
+      <td>0 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Father’s Class</td>
+      <td>–4.5 (0.7)</td>
+      <td>–4 (0.5)</td>
+      <td>–1.8 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Exercise Level</td>
+      <td>–6.9 (0.5)</td>
+      <td>–6.1 (0.5)</td>
+      <td>–1.8 (0.5)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: results show the percentage difference (log-transformed x 100) in BMI or mental wellbeing (WEMWEBS; standard errors in parenthesis) at different centiles of the outcome distribution; estimates are mutually adjusted._
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/72357/elife-72357-fig3-v2.jpg)
 
@@ -129,18 +491,18 @@ Alternatively, between-person differences in confounding and/or measurement erro
 
 The study highlights the fact that analyses by GAMLSS and quantile regression lead to similar results at the selected quantiles of the outcome distribution—see Figures 3 and 4. However GAMLSS, by analysing the whole distribution, can in some cases provide more efficient estimates of the quantiles. Compare for example the standard errors of the median as obtained by the BCCG distribution (Tables 2 and 3) and quantile regression (Table 3); the GAMLSS standard errors are smaller.
 
-## Strengths and limitations
+### Strengths and limitations
 
 Strengths of this study include the analytical approach used (GAMLSS) to empirically investigate differences in outcome variability. While differences in variability can be informed by descriptive comparison (e.g. comparing standard deviations), GAMLSS additionally enables computation of estimates of precision and incorporates multivariable specifications (e.g. confounder or mediator adjustment; and inclusion of interaction terms). The use of the 1970 birth cohort data is an additional strength, enabling investigation of multiple risk factors and two largely orthogonal yet important continuous health outcomes. The national representation of this cohort is also advantageous—highly distorted sample selection can bias conventional epidemiological results (i.e. mean differences in outcomes) (Munafò et al., 2018), and may also bias comparisons of outcome variability.
 
 The study also has limitations. As in all observational studies, causal inference is challenging despite the use of longitudinal data. Associations of social class at birth with outcomes for example could be explained by unmeasured confounding—this may include factors such as parental mental health. This is challenging to falsify empirically owing to a lack of such data collected before birth. In contrast, sex is randomly assigned at birth, and thus its associations with outcomes are unlikely to be confounded. However, sex differences in reporting may bias associations with mental wellbeing. Physical activity and mental wellbeing were ascertained at broadly the same age, so that associations between the two could be explained by reverse causality; existing evidence appears to suggest bi-directionality of links between physical activity and both outcomes (Pinto Pereira et al., 2014; Barone Gibbs et al., 2020). Finally, attrition led to lower power to precisely estimate smaller effect sizes (e.g. gender differences in mental wellbeing) or confirm null effects. Such attribution could potentially bias associations—those in worse health and adverse socioeconomic circumstances are disproportionately lost to follow-up (Mostafa and Wiggins, 2015; Mostafa et al., 2021). The focus of principled approaches to handle missing data in epidemiology has been on the main parameter of interest—typically beta coefficients in linear regression models—and further empirical work is required to investigate the potential implications of (non-random) missingness for the variability and other moments of the outcome distribution.
 
-## Potential implications
+### Potential implications
 
 This study used an underutilised approach to empirically investigate associations between risk factors and outcome variability in a single cohort study. Thus, our findings require replication and extension in other datasets across other risk factors and health outcomes. Future studies should also seek to explain their findings, and where possible falsify potential explanations. Understanding how risk factors relate to and/or cause differences in outcome variability is not a standard part of epidemiological training, and it entails additional analytical and conceptual complexity. Thus, with greater application of these tools an emerging consensus on best practice should develop. In the first instance, we recommend both descriptive and formal investigation, and that analysts carefully consider the use of both absolute (e.g. SD) and relative (e.g. CoV) differences in variability. Since the CoV is fractional standard deviation (e.g. SD/mean or log SD), its suitability of use depends on the a priori anticipated relationship between the mean and variance.
 
 In the context of randomised controlled trials, the finding of variability in treatment effects between individuals has been used to justify individualised approaches to treatment (personalised medicine). It is beyond the scope of the current article to discuss the tractability of this for complex outcomes in which treatment effects are unpredictable (Davey Smith, 2011). Trials are designed typically to detect only mean differences in outcomes (Senn, 2016); nevertheless, additionally presenting outcome variability before and after treatment would be helpful to better appraise intervention effects (Subramanian et al., 2018). GAMLSS provides a useful framework with which to formally investigate this, even where the homoscedasticity assumption does not hold (i.e. where risk factors or treatment groups differ in their outcome variance). Where there are multiple potential efficacious interventions, further studies could meta-analyse existing trials to identify the types of intervention which additionally reduce outcome variability.
 
-## Conclusion
+### Conclusion
 
 We provide empirical support for the notion that risk factors or interventions can either reduce or increase variability in health outcomes. This finding is consistent with results from quantile regression analysis where a risk factor vs outcome association is stronger (or weaker) at higher outcome centiles. Such findings may be explained by heterogeneity in the causal effect of each exposure, by the influence of other (typically unmeasured) variables, and/or by measurement error. This underutilised approach to the analysis of continuously distributed outcomes may have broader utility in epidemiological, medical, and psychological sciences. Our tutorial and syntax content is designed to facilitate this.

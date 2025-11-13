@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Neuroscience, Physiology and Pharmacology, University College London London United Kingdom
+1. Department of Neuroscience, Physiology and Pharmacology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -33,13 +33,13 @@ Here, we show that intracellular NASPM, PhTx-433, and PhTx-74 can be used to spe
 
 ## Results
 
-## Intracellular polyamine toxins block CP-AMPARs
+### Intracellular polyamine toxins block CP-AMPARs
 
 To determine whether intracellularly applied NASPM or polyamine toxins might offer advantages over spermine for the identification of native CP-AMPARs we examined three compounds: NASPM, which contains the same polyamine tail as spermine, PhTx-433, which has a different distribution of amines, and PhTx-74, which lacks one amine group (Figure 1a). Initially, we recorded currents in outside-out patches from HEK cells transiently transfected with GluA1 alone or with GluA1 and GluA2, to produce homomeric CP- and heteromeric CI-AMPARs, respectively. The receptors were activated by glutamate (300 μM) in the presence of cyclothiazide (50 μM) to minimize AMPAR desensitization and we applied voltage ramps (100 mV/s) to generate current-voltage (I-V) relationships.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig1-v2.jpg)
 
-**Figure 1.:** (a) The blockers used in this study. (b) Representative responses activated by 300 µM glutamate and 50 µM cyclothiazide from outside-out patches excised from HEK293 cells expressing either GluA1 or GluA1/2. The voltage was ramped linearly from −80 to +60 mV (100 mV/s). GluA1 displayed outward rectification with a polyamine-free pipette solution. In the presence of 100 μM spermine GluA1 displayed a doubly rectifying relationship, and with 100 μM NASPM GluA1 displayed full inward rectification. GluA1/2 did not rectify in the presence of NASPM. (c) Normalized and pooled current-voltage (I-V) relationships for GluA1 and GluA1/2 in the presence of 100 μM intracellular polyamines (n=3–8). Colored traces denote the mean and gray shading ± standard error of the mean. For all blockers the RI+60/−60 value with GluA1 was less than that with GluA1/2; the unpaired mean differences and 95% confidence intervals were −0.85 [−1.09,–0.63] with spermine (n=4 GluA1/2 patches and 5 GluA1 patches), −1.07 [−1.7,–0.79] with NASPM (n=8 and 4),–0.82 [−0.96,–0.60] with PhTx-433 (n=3 and 4), and −0.78 [−0.91,–0.70] with PhTx-74 (n=3 and 4).Figure 1—source data 1.+60/−60 values from GluA1 and GluA1/γ2 ramp current-voltage (I-V) relationships (300 µM glutamate) were recorded with intracellular spermine, NASPM, PhTx-433, or PhTx-74 (each 100 µM).
+**Figure 1.:** (a) The blockers used in this study. (b) Representative responses activated by 300 µM glutamate and 50 µM cyclothiazide from outside-out patches excised from HEK293 cells expressing either GluA1 or GluA1/2. The voltage was ramped linearly from −80 to +60 mV (100 mV/s). GluA1 displayed outward rectification with a polyamine-free pipette solution. In the presence of 100 μM spermine GluA1 displayed a doubly rectifying relationship, and with 100 μM NASPM GluA1 displayed full inward rectification. GluA1/2 did not rectify in the presence of NASPM. (c) Normalized and pooled current-voltage (I-V) relationships for GluA1 and GluA1/2 in the presence of 100 μM intracellular polyamines (n=3–8). Colored traces denote the mean and gray shading ± standard error of the mean. For all blockers the RI+60/−60 value with GluA1 was less than that with GluA1/2; the unpaired mean differences and 95% confidence intervals were −0.85 [−1.09,–0.63] with spermine (n=4 GluA1/2 patches and 5 GluA1 patches), −1.07 [−1.7,–0.79] with NASPM (n=8 and 4),–0.82 [−0.96,–0.60] with PhTx-433 (n=3 and 4), and −0.78 [−0.91,–0.70] with PhTx-74 (n=3 and 4).
 
 As expected (McGee et al., 2015; Soto et al., 2007), in the absence of intracellular polyamines homomeric GluA1 receptors generated outward currents at positive potentials, showing clear outward rectification, while in the presence of 100 μM spermine, they displayed doubly rectifying responses (Figure 1b). By contrast, when the intracellular solution contained 100 μM NASPM, GluA1 receptors displayed inwardly rectifying responses with negligible current passed at positive potentials (Figure 1b). Unlike responses from GluA1 alone, currents from GluA1/2 receptors in the presence of NASPM were non-rectifying (Figure 1b). I-V plots showed that, when added to the intracellular solution at 100 μM, each blocker conferred marked inward rectification on the currents mediated by GluA1 (rectification index, RI+60/−60 0.02–0.26), but not on those mediated by GluA1/2 (RI+60/−60 0.84–1.30) (Figure 1c). Thus, although differing in structure, they all produced selective voltage-dependent block of the GluA2-lacking CP-AMPARs. Of note, the block by intracellular PhTx-74 was restricted to CP-AMPARs, despite the fact that it produces low-affinity block of CI-AMPARs when applied extracellularly (Jackson et al., 2011b; Nilsen and England, 2007).
 
@@ -47,21 +47,21 @@ We next investigated the concentration- and auxiliary subunit-dependence of the 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig2-v2.jpg)
 
-**Figure 2.:** (a) Pooled, normalized conductance-voltage (G-V) relationships (from voltage ramps as in Figure 1) for GluA1 and GluA1/γ2 in the presence of spermine (left) or NASPM (right) (n=4–8). Conductance was corrected for the outwardly rectifying response seen in polyamine-free conditions and fitted with single or double Boltzmann relationships (solid lines). (b) Vb values from fitted G-V relationships of GluA1 and GluA1/γ2 in the presence of varying concentrations of blockers. When Vb was plotted against log [blocker] a linear relationship could be fitted in all cases, the x-intercept of which gave IC50, 0 mV. (c) The IC50, 0 mV values for each polyamine demonstrate relative potency in the order spermine >NASPM >PhTx-433 >PhTx-74, with γ2 co-expression reducing the potency of the blockers by 7–18-fold.Figure 2—source data 1.Vb values for GluA1 and GluA1/γ2 obtained with intracellular spermine, NASPM, PhTx-433, or PhTx-74.Figure 2—source data 2.IC50 0 mV values for GluA1 and GluA1/γ2 obtained with intracellular spermine, NASPM, PhTx-433, or PhTx-74.
+**Figure 2.:** (a) Pooled, normalized conductance-voltage (G-V) relationships (from voltage ramps as in Figure 1) for GluA1 and GluA1/γ2 in the presence of spermine (left) or NASPM (right) (n=4–8). Conductance was corrected for the outwardly rectifying response seen in polyamine-free conditions and fitted with single or double Boltzmann relationships (solid lines). (b) Vb values from fitted G-V relationships of GluA1 and GluA1/γ2 in the presence of varying concentrations of blockers. When Vb was plotted against log [blocker] a linear relationship could be fitted in all cases, the x-intercept of which gave IC50, 0 mV. (c) The IC50, 0 mV values for each polyamine demonstrate relative potency in the order spermine >NASPM >PhTx-433 >PhTx-74, with γ2 co-expression reducing the potency of the blockers by 7–18-fold.
 
-## Onset and recovery of the block by NASPM
+### Onset and recovery of the block by NASPM
 
 Next, we examined GluA1/γ2 currents elicited by rapid application of 10 mM glutamate (in the absence of cyclothiazide) and compared the effect of NASPM – the second most potent of the blockers – with that of spermine. We first tested the blockers at a concentration of 10 μM, as this allowed us to examine the onset of the block. At both positive and negative voltages, glutamate application produced currents that showed a clear peak and rapid desensitization to a steady-state level. However, with intracellular NASPM the steady state-currents at positive voltages were much reduced compared to the corresponding currents at negative voltages (Figure 3a). For both peak and steady-state currents the RI+60/−60 values obtained with NASPM were less than those obtained with spermine. For peak current, RI+60/−60 was 0.37 ± 0.04 for NASPM and 0.56 ± 0.07 for spermine (n=11 and 10, respectively; unpaired mean difference −0.19 [−0.34,–0.045], p=0.031, two-sided Welch two-sample t-test). For steady-state current, RI+60/−60 was 0.04 ± 0.02 for NASPM and 0.90 ± 0.14 for spermine (n=8 and 7), respectively (unpaired mean difference −0.86 [−1.12,–0.62], p=0.00075). This difference was also evident in the G-V relationships; those determined from peak responses in the presence of spermine or NASPM were largely overlapping, while those from steady-state responses were markedly different at potentials positive to +40 mV, with a large outward conductance seen in the presence of spermine but not NASPM (Figure 3b).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig3-v2.jpg)
 
-**Figure 3.:** (a) Representative GluA1/γ2 currents in the presence of 10 μM intracellular spermine or NASPM activated by fast applications of glutamate (10 mM, 100 ms) at positive and negative potentials. In the presence of NASPM, relative peak outward currents are smaller than those seen with spermine, while steady-state currents are negligible. (b) Pooled, averaged conductance-voltage (G-V) relationships for peak and steady-state currents obtained with spermine (n=9 and 6, respectively) and NASPM (n=11 and 8, respectively). Symbols and error bars indicate the mean ± standard error of the mean. Note the stronger inhibition by NASPM of the steady-state compared with peak currents. (c) Representative GluA1/γ2 currents with 10 μM intracellular NASPM at the indicated voltages (left) and normalized currents from the same patch at +60 and −60 mV (right). Applications of glutamate at each voltage were preceded by an application at −60 mV to relieve the NASPM block. The dashed lines are single exponential fits. (d) Pooled data showing weighted time constants of decay with polyamine-free (open symbols, n=8) and 10 μM NASPM (n=8) intracellular solutions measured between −110 mV and +80 mV. Symbols and error bars indicate the mean ± standard error of the mean. The kinetics of the negative limb (−110 mV to −10 mV) were voltage and NASPM independent (fitted lines indicate τdecay values of 5.7 ms for polyamine free and 5.4 ms for NASPM). The kinetics of the positive limb (+10 to +80 mV) was markedly accelerated in the presence of intracellular NASPM. (e) Superimposed GluA1/γ2 currents in the presence or absence of 10 μM NASPM elicited by pairs of glutamate applications at 4, 2, 1, 0.5, 0.25, and 0.125 Hz (10 mM, 100 ms,+/−60 mV). The first responses with NASPM were scaled to those in the polyamine-free condition. With NASPM at −60 mV and in the absence of polyamine at both voltages, the second currents broadly recovered to the initial levels. With NASPM at +60 mV, however, peak currents recovered much more slowly. (f) Pooled recovery data recorded in the polyamine-free condition (open symbols, n=9) and with added 10 μM NASPM (filled symbols, n=9). Symbols and error bars indicate the mean ± standard error of the mean.Figure 3—source data 1.G-V data for peak and steady-state currents evoked by 10 mM glutamate from GluA1/γ2 receptors with intracellular spermine (10 μM) or NASPM (10 μM).Figure 3—source data 2.decay values for currents evoked by 10 mM glutamate from GluA1/γ2 receptors with intracellular NASPM (10 μM) or with the polyamine-free intracellular solution at different membrane voltages.Figure 3—source data 3.
+**Figure 3.:** (a) Representative GluA1/γ2 currents in the presence of 10 μM intracellular spermine or NASPM activated by fast applications of glutamate (10 mM, 100 ms) at positive and negative potentials. In the presence of NASPM, relative peak outward currents are smaller than those seen with spermine, while steady-state currents are negligible. (b) Pooled, averaged conductance-voltage (G-V) relationships for peak and steady-state currents obtained with spermine (n=9 and 6, respectively) and NASPM (n=11 and 8, respectively). Symbols and error bars indicate the mean ± standard error of the mean. Note the stronger inhibition by NASPM of the steady-state compared with peak currents. (c) Representative GluA1/γ2 currents with 10 μM intracellular NASPM at the indicated voltages (left) and normalized currents from the same patch at +60 and −60 mV (right). Applications of glutamate at each voltage were preceded by an application at −60 mV to relieve the NASPM block. The dashed lines are single exponential fits. (d) Pooled data showing weighted time constants of decay with polyamine-free (open symbols, n=8) and 10 μM NASPM (n=8) intracellular solutions measured between −110 mV and +80 mV. Symbols and error bars indicate the mean ± standard error of the mean. The kinetics of the negative limb (−110 mV to −10 mV) were voltage and NASPM independent (fitted lines indicate τdecay values of 5.7 ms for polyamine free and 5.4 ms for NASPM). The kinetics of the positive limb (+10 to +80 mV) was markedly accelerated in the presence of intracellular NASPM. (e) Superimposed GluA1/γ2 currents in the presence or absence of 10 μM NASPM elicited by pairs of glutamate applications at 4, 2, 1, 0.5, 0.25, and 0.125 Hz (10 mM, 100 ms,+/−60 mV). The first responses with NASPM were scaled to those in the polyamine-free condition. With NASPM at −60 mV and in the absence of polyamine at both voltages, the second currents broadly recovered to the initial levels. With NASPM at +60 mV, however, peak currents recovered much more slowly. (f) Pooled recovery data recorded in the polyamine-free condition (open symbols, n=9) and with added 10 μM NASPM (filled symbols, n=9). Symbols and error bars indicate the mean ± standard error of the mean.
 
 Intracellular spermine is a weakly permeable open-channel blocker of both CP-AMPARs and kainate receptors (KARs) (Bowie et al., 1998; Brown et al., 2016). However, for GluK2(Q) KARs, permeation of intracellular polyamines has been shown to vary with molecular size, with two molecules of greater width than spermine – N-(4-hydroxyphenylpropanoyl)-spermine (HPP-SP) and PhTx-433 – showing little or no detectable relief from the block with depolarization (Bähring et al., 1997). We reasoned that NASPM, with its naphthyl headgroup, might also be expected to display limited permeability of CP-AMPAR channels. This could account for the shape of the ramp I-V (Figure 1c) and G-V plots with NASPM (Figure 2a). Indeed, the pronounced effect of 10 μM intracellular NASPM on steady-state GluA1/γ2 currents at positive potentials (Figure 3a) is also consistent with limited permeation, leading to the accumulation of channel block.
 
 In line with this, we found that the decay of GluA1/γ2 currents recorded in the presence of NASPM was strongly voltage-dependent (Figure 3a and c). At negative potentials, τdecay values were similar in the presence and absence of NASPM. However, at positive potentials (from +10 to +80 mV) the kinetics in the two conditions differed markedly. In the absence of NASPM current decay was slowed at positive potentials, while in the presence of NASPM, the decay was progressively accelerated (Figure 3d). In the absence of NASPM, τdecay was slower at +60 mV than at −60 mV (7.3 ± 0.6 ms versus 5.7 ± 0.3 ms, n=8; paired mean difference 1.55 ms [0.86, 2.62], p=0.019 two-sided paired Welch t-test). By contrast, in the presence of NASPM τdecay was markedly faster at +60 mV than at −60 mV (1.7 ± 0.2 ms versus 5.6 ± 0.6 ms, n=10; paired mean difference −4.14 ms [−5.44,–3.07], p=0.00012, two-sided paired Welch t-test). Of note, at +60 mV, along with the accelerated decay in the presence of NASPM, we also observed a dramatic slowing of the recovery of peak responses following the removal of glutamate (Figure 3e). Currents were elicited by pairs of 100 ms glutamate applications at frequencies from 0.125 to 4 Hz. The peak amplitude of successive responses is normally shaped solely by the kinetics of recovery from desensitization. In the absence of polyamines, a small degree of residual desensitization was apparent at 4 Hz (150 ms interval), but full recovery was seen at all other intervals, at both +60 and −60 mV (Figure 3f). However, in the presence of NASPM, although responses at −60 mV were indistinguishable from those in the absence of polyamines, at +60 mV an additional slow component of recovery (τrec slow 4.9 s; Figure 3f) was present. The biphasic recovery is suggestive of two populations of receptors, those that desensitized before being blocked (fast component of recovery), and those that were blocked by NASPM before they desensitized (slow component of recovery). Taken together, our data suggest that 10 μM intracellular NASPM produces a pronounced, rapid and long-lasting inhibition of CP-AMPARs at positive potentials.
 
-## NASPM can induce complete rectification that is unaffected by auxiliary subunits
+### NASPM can induce complete rectification that is unaffected by auxiliary subunits
 
 We found that with 10 µM NASPM, the block of CP-AMPARs was incomplete (Figure 3a and b) and depended on the recent history of the channel (Figure 3f). However, as intracellular polyamines produce both closed- and open-channel blocks of CP-AMPARs (Bowie et al., 1998; Rozov et al., 1998), we reasoned that a higher concentration of NASPM would block more effectively and cause pronounced rectification, regardless of recent activity. With a higher concentration of NASPM not only would closed-channel block be more favored, rendering a higher proportion of receptors silent prior to activation, but unblocked closed receptors would more rapidly enter a state of open-channel block once activated at positive potentials. For example, an open channel block with 100 µM would be approximately 10 times faster than with 10 µM NASPM and would be expected to rapidly curtail charge transfer.
 
@@ -71,11 +71,11 @@ We first examined the effect of NASPM and spermine on CI-AMPARs. When 100 μM sp
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig4-v2.jpg)
 
-**Figure 4.:** (a) Representative currents activated by fast applications of glutamate to outside-out patches excised from HEK293 cells transfected with GluA1/GluA2/γ2 (left) or GluA1/γ2 (right) (10 mM, 100 ms, −110 to +80 mV). The intracellular solution was supplemented with 100 µM spermine (blue) or NASPM (purple). (b) Mean normalized peak current-voltage (I-V) relationships for GluA1/GluA2/γ2 and GluA1/γ2 with 100 μM spermine (blue) or NASPM (purple). Symbols and error bars indicate the mean ± standard error of the mean. (c) Pooled rectification data (RI+60/−60) for GluA1 and GluA1/auxiliary subunit combinations with 100 μM spermine (Spm) or NASPM. Box-and-whisker plots indicate the median (black line), the first and third quartiles (Q1 and Q3; 25–75th percentiles) (box), and the range min(x[x>Q1+1.5 * inter-quartile range]) to max(x[x<Q3+1.5 * inter-quartile range]) (whiskers). Indicated p-values are from two-sided Welch two-sample t-tests (note that for GSG1L all RI values were 0). (d) Difference plots showing the shift in rectification index (Δ RI+60/−60) in the presence of NASPM compared with spermine. Symbols show mean unpaired differences, and the error bars indicate the bootstrapped 95% confidence intervals.Figure 4—source data 1.I-V) data for peak currents evoked by 10 mM glutamate from GluA1/2/γ2, and GluA1/γ2 receptors with intracellular spermine (100 μM) or NASPM (100 μM).Figure 4—source data 2.+60/−60 values for peak currents evoked by 10 mM glutamate from GluA1, GluA1/γ2, GluA1/γ7, GluA1/γ8, GluA1/CNIH2, GluA1/CNIH3, GluA1/CKAMP59, GluA1/GSG1L, GluA1/γ8/CNIH2, and GluA1/γ8/CKAMP44 receptors with intracellular spermine (100 μM) or NASPM (100 μM).
+**Figure 4.:** (a) Representative currents activated by fast applications of glutamate to outside-out patches excised from HEK293 cells transfected with GluA1/GluA2/γ2 (left) or GluA1/γ2 (right) (10 mM, 100 ms, −110 to +80 mV). The intracellular solution was supplemented with 100 µM spermine (blue) or NASPM (purple). (b) Mean normalized peak current-voltage (I-V) relationships for GluA1/GluA2/γ2 and GluA1/γ2 with 100 μM spermine (blue) or NASPM (purple). Symbols and error bars indicate the mean ± standard error of the mean. (c) Pooled rectification data (RI+60/−60) for GluA1 and GluA1/auxiliary subunit combinations with 100 μM spermine (Spm) or NASPM. Box-and-whisker plots indicate the median (black line), the first and third quartiles (Q1 and Q3; 25–75th percentiles) (box), and the range min(x[x>Q1+1.5 * inter-quartile range]) to max(x[x<Q3+1.5 * inter-quartile range]) (whiskers). Indicated p-values are from two-sided Welch two-sample t-tests (note that for GSG1L all RI values were 0). (d) Difference plots showing the shift in rectification index (Δ RI+60/−60) in the presence of NASPM compared with spermine. Symbols show mean unpaired differences, and the error bars indicate the bootstrapped 95% confidence intervals.
 
 We next compared the effects of spermine and NASPM on I-V relationships for GluA1 expressed alone or with different auxiliary subunits representing a broad cross-section of those known to differentially modulate the function of native AMPARs (Figure 4b–d). Thus, we expressed GuA1 with TARPs (γ2, γ7 or γ8), cornichons (CNIH2 or CNIH3), GSG1L, or CKAMP59. We also examined I-V relationships in the presence of γ8 together with CNIH2 or CKAMP44. With GSG1L, full rectification was seen with both 100 μM spermine and 100 μM NASPM (RI+60/−60=0). For all other combinations, in the presence of spermine RI+60/−60 varied (from 0.037 to 0.29) depending on the auxiliary subunit present, but with NASPM rectification was essentially complete in all cases (RI+60/−60 varied from 0 to 0.022) (Figure 4c). Thus, unlike 100 μM spermine, 100 μM NASPM produces a near-total block of outward CP-AMPAR-mediated currents that appears to be independent of the type of auxiliary subunit.
 
-## The effects of intracellular NASPM on native AMPARs
+### The effects of intracellular NASPM on native AMPARs
 
 To determine whether the difference between spermine and NASPM seen with recombinant receptors was preserved in different native receptor populations, we next compared the actions of the polyamines on extrasynaptic and synaptic receptors in neurons from wild-type and GluA2 KO (Gria2tm1Rod/J) mice (Jia et al., 1996).
 
@@ -83,25 +83,25 @@ First, we compared the rectification conferred by 100 μM spermine or NASPM in p
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig5-v2.jpg)
 
-**Figure 5.:** (a) Diagrammatic representation of the preparation. (b) Representative average glutamate-evoked currents from four outside-out patches excised from somata of wild-type (WT) and GluA2 KO dentate gyrus granule cells held at −60 and +60 mV with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). (c) Pooled rectification data (RI+60/−60) for WT and GluA2 KO patches with 100 μM spermine (Spm) or NASPM. Box-and-whisker plots (top) and difference plots showing the shift in rectification index (Δ RI+60/−60) in the presence of NASPM compared with spermine (bottom) as in Figure 4c and d. Indicated p-values are from two-sided Welch two-sample t-tests.Figure 5—source data 1.+60/−60 values for peak currents evoked by 10 mM glutamate from wild-type (WT) and GluA2 KO DGGCs with intracellular spermine (100 μM) or NASPM (100 μM).
+**Figure 5.:** (a) Diagrammatic representation of the preparation. (b) Representative average glutamate-evoked currents from four outside-out patches excised from somata of wild-type (WT) and GluA2 KO dentate gyrus granule cells held at −60 and +60 mV with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). (c) Pooled rectification data (RI+60/−60) for WT and GluA2 KO patches with 100 μM spermine (Spm) or NASPM. Box-and-whisker plots (top) and difference plots showing the shift in rectification index (Δ RI+60/−60) in the presence of NASPM compared with spermine (bottom) as in Figure 4c and d. Indicated p-values are from two-sided Welch two-sample t-tests.
 
 Next, we recorded mEPSCs from stellate cells in cerebellar cultures prepared from GluA2 KO mice (Figure 6a). Functional studies have shown these molecular layer interneurons normally possess both CI- and CP-AMPARs (Liu and Cull-Candy, 2000; Liu and Cull-Candy, 2002), formed from GluA2, –3 and –4 subunits (Yamasaki et al., 2011) that are expressed along with the TARPs γ2 and γ7 (Bats et al., 2012; Fukaya et al., 2005; Yamazaki et al., 2010). Thus, in stellate cells from GluA2 KO mice, it is expected that AMPAR-mediated EPSCs will be mediated by TARP-associated GluA2-lacking CP-AMPARs.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig6-v2.jpg)
 
-**Figure 6.:** (a) Diagrammatic representation of the preparation. (b) Representative whole-cell recording from a cultured GluA2-knockout (GluA2 KO) cerebellar stellate cell held at voltages between −80 and +60 mV with 100 μM intracellular spermine. The inset shows expanded sweeps at −60 and +60 mV, with mEPSCs indicated in red. Note the presence of mEPSCs at both voltages. (c) Same as a, but for a cell with 100 μM intracellular NASPM. The inset shows that mEPSCs (red) were present at −60 mV but not at +60 mV. (d) Representative averaged mEPSCs from a cell recorded with intracellular spermine (left) and from a cell recorded with intracellular NASPM (right). Individual mEPSCs are shown in gray, the averaged mEPSCs are shown in white, superimposed on filled areas indicating the standard deviation of each recording. (e) Box-and-whisker plot and corresponding difference plot as described in Figure 4c and d of pooled RI+60/−60 data. Indicated p-value is from a two-sided Welch two-sample t-test.Figure 6—source data 1.+60/−60 values for cerebellar stellate cell mEPSCs were recorded with intracellular spermine (100 μM) or NASPM (100 μM).
+**Figure 6.:** (a) Diagrammatic representation of the preparation. (b) Representative whole-cell recording from a cultured GluA2-knockout (GluA2 KO) cerebellar stellate cell held at voltages between −80 and +60 mV with 100 μM intracellular spermine. The inset shows expanded sweeps at −60 and +60 mV, with mEPSCs indicated in red. Note the presence of mEPSCs at both voltages. (c) Same as a, but for a cell with 100 μM intracellular NASPM. The inset shows that mEPSCs (red) were present at −60 mV but not at +60 mV. (d) Representative averaged mEPSCs from a cell recorded with intracellular spermine (left) and from a cell recorded with intracellular NASPM (right). Individual mEPSCs are shown in gray, the averaged mEPSCs are shown in white, superimposed on filled areas indicating the standard deviation of each recording. (e) Box-and-whisker plot and corresponding difference plot as described in Figure 4c and d of pooled RI+60/−60 data. Indicated p-value is from a two-sided Welch two-sample t-test.
 
 With 100 µM spermine added to the intracellular solution we detected mEPSCs in stellate cells from GluA2 KO mice at both negative and positive voltages (Figure 6b and d). At −60 mV the mean absolute amplitude of the averaged mEPSCs was 39 ± 5 pA, the 20–80% rise time was 0.21 ± 0.02 ms, and the τw,decay was 1.14 ± 0.09 ms (n=6). At +60 mV the corresponding measures were 22 ± 2 pA, 0.23 ± 0.03 ms, and 1.58 ± 0.19 ms. In each cell, fewer events were detected at +60 mV than at −60 mV (the mean frequency was 2.3 ± 1.6 Hz at +60 mV and 7.7 ± 5.0 Hz at −60 mV). This is consistent with the anticipated blocking action of spermine rendering a proportion of mEPSCs undetectable at positive potentials (McGee et al., 2015).
 
 To take into account the apparent change in frequency when assessing the degree of rectification, we calculated RI+60/−60 from the mean absolute amplitude of detected events multiplied by the frequency at each voltage (see Materials and methods). With spermine, the calculated RI+60/−60 was 0.19 ± 0.04 (Figure 6e). When we made recordings with 100 µM intracellular NASPM, mEPSCs were detectable at negative but not positive voltages (Figure 6c and d). At −60 mV the mean absolute amplitude of the averaged mEPSCs was 36 ± 6 pA, the 20–80% rise time was 0.26 ± 0.02 ms, and the τw,decay was 1.45 ± 0.17 ms (n=6). At −60 mV the average mEPSC frequency was 14.2 ± 8.2 Hz (n=6), but at +60 mV no events were seen (RI+60/−60=0; Figure 6e). Thus, even when synapses contained exclusively GluA2-lacking AMPARs, spermine did not fully block outward currents. By contrast, NASPM produced full inward rectification, providing an unambiguous read-out of the presence of a receptor population composed solely of CP-AMPARs.
 
-## NASPM-induced rectification of CP-AMPAR-mediated eEPSCs
+### NASPM-induced rectification of CP-AMPAR-mediated eEPSCs
 
 To compare the actions of NASPM and spermine on AMPARs at synapses formed in vivo we next examined the effects of the polyamines on the rectification of mossy fiber-evoked excitatory post-synaptic currents (MF-eEPSCs) in granule cells in acute cerebellar slices (Figure 7a). Cerebellar granule cells (CGCs) express predominantly GluA2 and GluA4 (Delvendahl et al., 2019; Gallo et al., 1992; Mosbacher et al., 1994), together with TARPs γ2 and γ7 (Fukaya et al., 2005; Tomita et al., 2003; Yamazaki et al., 2010).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/66765/elife-66765-fig7-v2.jpg)
 
-**Figure 7.:** (a) Diagrammatic representation of the preparation. (b) Representative whole-cell recordings of mossy fiber-evoked EPSCs from wild-type (WT) cerebellar granule cells (CGCs) held at −60 and +60 mV with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). Individual mEPSCs are shown in gray, the averaged mEPSCs are shown in white, superimposed on filled areas indicating the standard deviation of each recording. The RI values are of the illustrated records (peak averaged current at +60/peak averaged current at −60 mV). (c) Same as a, but for two cells in slices from GluA2-knockout (GluA2 KO) mice. (d) Normalized current-voltage (I-V) plots for eEPSCs recorded from cells in slices from WT and GluA2 KO mice with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). Symbols denote mean values and error bars denote the standard error of the mean (WT; n=5 spermine and 7 NASPM. GluA2 KO; n=6 spermine and 4 NASPM). Fits are straight lines (WT) or fifth-order polynomials (GluA2 KO). (e) Box-and-whisker and difference plots as described in Figure 4c and d for rectification values (RI+60/−60) obtained with spermine (Spm) and NASPM from WT and GluA2 KO cells. Indicated p-values are from two-sided Welch two-sample t-tests.Figure 7—source data 1.τw,decay values from wild-type (WT) and GluA2-knockout (GluA2 KO) CGCs recorded with intracellular spermine (100 μM) or NASPM (100 μM).Figure 7—source data 2.I-V) data for peak MF-eEPSCs from wild-type (WT) and GluA2-knockout (GluA2 KO) CGCs recorded with intracellular spermine (100 μM) or NASPM (100 μM).Figure 7—source data 3.+60/−60 values for peak MF-eEPSCs from wild-type (WT) and GluA2-knockout (GluA2 KO) CGCs were recorded with intracellular spermine (100 μM) or NASPM (100 μM).
+**Figure 7.:** (a) Diagrammatic representation of the preparation. (b) Representative whole-cell recordings of mossy fiber-evoked EPSCs from wild-type (WT) cerebellar granule cells (CGCs) held at −60 and +60 mV with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). Individual mEPSCs are shown in gray, the averaged mEPSCs are shown in white, superimposed on filled areas indicating the standard deviation of each recording. The RI values are of the illustrated records (peak averaged current at +60/peak averaged current at −60 mV). (c) Same as a, but for two cells in slices from GluA2-knockout (GluA2 KO) mice. (d) Normalized current-voltage (I-V) plots for eEPSCs recorded from cells in slices from WT and GluA2 KO mice with 100 μM intracellular spermine (blue) or 100 μM intracellular NASPM (purple). Symbols denote mean values and error bars denote the standard error of the mean (WT; n=5 spermine and 7 NASPM. GluA2 KO; n=6 spermine and 4 NASPM). Fits are straight lines (WT) or fifth-order polynomials (GluA2 KO). (e) Box-and-whisker and difference plots as described in Figure 4c and d for rectification values (RI+60/−60) obtained with spermine (Spm) and NASPM from WT and GluA2 KO cells. Indicated p-values are from two-sided Welch two-sample t-tests.
 
 We stimulated mossy fibers at 1 Hz and recorded eEPSCs in CGCs from wild-type and GluA2 KO mice at both positive and negative voltages (Figure 7b and c). In wild-type CGCs, I-V curves were linear (Figure 7d), with spermine and NASPM yielding similar RI+60/−60 values of 1.07 ± 0.05 (n=5) and 0.94 ± 0.05 (n=7), respectively. The unpaired mean difference was −0.13 [−0.26,–0.009] (p=0.096, two-sided Welch two-sample t-test). Thus, for CI-AMPAR-mediated eEPSCs NASPM gave results similar to those obtained with spermine.
 
@@ -111,13 +111,13 @@ In CGCs from GluA2 KO mice, both spermine and NASPM conferred inward rectificati
 
 Our results demonstrate that when included in the intracellular recording solution the exogenous polyamine toxins PhTx-433 and PhTx-74 and the toxin analog NASPM cause a selective, voltage-dependent blocks of GluA2-lacking CP-AMPARs. As seen with spermine (Soto et al., 2007), the potency of the blockers is reduced when the receptors are associated with the TARP γ2. However, unlike spermine, which is currently widely used as means of identifying CP-AMPARs, NASPM can produce a complete block of outward currents through CP-AMPARs. Furthermore, the block by NASPM remains essentially complete when CP-AMPARs are co-assembled with multiple classes of auxiliary subunits, as demonstrated in expression systems and for both extrasynaptic and synaptic native receptors. These characteristics make the use of intracellular NASPM a valuable new approach to disclose the presence, and relative proportion, of functional CP-AMPARs. Indeed, given that spermine is often added to the pipette solutions when recording EPSCs and other AMPAR-mediated currents solely to allow rectification to be used as a proxy for the presence of CP-AMPARs, a strong case can be made that use of intracellular NASPM should become the new standard approach in the field.
 
-## The mechanism of polyamine toxin block
+### The mechanism of polyamine toxin block
 
 Cryo-EM structures of activated GluA2/γ2 AMPARs blocked with NASPM show the hydrophobic naphthalene moiety sitting within the electroneutral central vestibule and the polyamine tail extending into the electronegative selectivity filter (Twomey et al., 2018). This is in accord with predictions from molecular modeling of the block by various philanthotoxins and adamantane derivatives (Andersen et al., 2006; Tikhonov, 2007) and suggests that most of the observed receptors were blocked from the ‘outside.’ Our data show, unsurprisingly, that the voltage-dependence of a block by intracellular NASPM is the inverse of that seen with extracellular NASPM (Koike et al., 1997; Twomey et al., 2018), which suggests that intracellularly applied NASPM occupies the pore in an ‘inverted’ orientation, with its polyamine tail in the selectivity filter, but with its bulky head group protruding to the intracellular side of the channel preventing permeation.
 
 We have shown previously that γ2 can reduce spermine potency at CP-AMPARs by around 20-fold (Soto et al., 2007), possibly by increasing spermine permeation (Brown et al., 2018). In the present experiments, we found that co-expression of γ2 also reduced the potency of non-permeating blockers (7–18-fold). This is consistent with a TARP-dependent reduction in polyamine affinity, perhaps resulting from a reshaping of the selectivity filter (Brown et al., 2018; Soto et al., 2014), mediated by interactions of TARP TM4 with the AMPAR M2 pore helix (Herguedas et al., 2022). One possible caveat to our experiments on recombinant AMPARs is that we established the efficacy of NASPM against CP-AMPARs using exclusively homomeric GluA1flip-containing combinations. However, given that NASPM was also uniformly effective in GluA2 KO CGCs, which are thought to express both flip and flop GluA4 splice forms (Mosbacher et al., 1994) and varying degrees of R/G editing (Lomeli et al., 1994), it seems unlikely that these posttranscriptional modifications influence the action of intracellular NASPM.
 
-## Advantages of intracellular NASPM for assessing CP-AMPAR contribution
+### Advantages of intracellular NASPM for assessing CP-AMPAR contribution
 
 Although intracellular spermine is widely used in voltage-clamp experiments to assess the contribution of CP-AMPARs to the recorded currents, the inclusion in the intracellular solution of 100 μM NASPM offers two key advantages. First, it can produce a selective, use-independent, and complete block of CP-AMPAR-mediated outward current. Second, this block is unaffected by the presence of auxiliary proteins. Together, these characteristics eliminate the difficulties of interpretation that can arise when using spermine.
 
@@ -131,82 +131,290 @@ To conclude, our recordings of macroscopic currents from excised patches contain
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gria2tm1Rod/J, 129 /CD1</td>
+      <td>other</td>
+      <td></td>
+      <td>Gift from Ingo Greger, MRC LMB, Cambridge, UK</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>oIMR6780 (Gria2)</td>
+      <td>JAX</td>
+      <td>JAX:oIMR6780</td>
+      <td>wild-type Forward primerGGT TGG TCA CTC ACC TGC TT</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>oIMR6781 (Gria2)</td>
+      <td>JAX</td>
+      <td>JAX:oIMR6781</td>
+      <td>Common primerTCG CCC ATT TTC CCA TAT AC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>oIMR8444 (Gria2)</td>
+      <td>JAX</td>
+      <td>JAX:oIMR8444</td>
+      <td>Mutant primerGCC TGA AGA ACG AGA TCA GC</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>ATTC:CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-GluA1</td>
+      <td>doi:10.1126/science.2166337; doi:10.1038/nn.2266</td>
+      <td></td>
+      <td>Gria1; Flip form. Gift from Peter Seeburg (subcloned into pIRES-eGFP)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-GluA2</td>
+      <td>doi:10.1126/science.2166337; doi:10.1523/JNEUROSCI.17-01-00058.1997</td>
+      <td></td>
+      <td>Gria2; Q/R and R/G edited flip form. Gift from Peter Seeburg (subcloned into pIRES-eGFP)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-γ2</td>
+      <td>doi:10.1038/1228; doi:10.1038/nn.2266</td>
+      <td></td>
+      <td>Cacng2; Gift from Roger Nicoll, UCSF, USA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pIRES-eGFP-γ7</td>
+      <td>doi:10.1038/nn.2266</td>
+      <td></td>
+      <td>CACNG7; OriGene Technologies pCMV6-XL4-γ7(subcloned into pIRES-eGFP)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-γ8</td>
+      <td>doi:10.1083/jcb.200212116; doi:10.1038/nn.2266</td>
+      <td></td>
+      <td>Cacng8; gift from Roger Nicoll, UCSF, USA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-CNIH2</td>
+      <td>doi:10.1126/science.1167852; doi:10.1523/JNEUROSCI.0345–12.2012</td>
+      <td></td>
+      <td>Cnih2; gift from Bernd Fakler, University of Freiburg, Germany (subcloned into pIRES-eGFP)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pIRES-eGFP-CNIH3</td>
+      <td>doi:10.1016/j.neuron.2012.03.034; doi:10.1523/JNEUROSCI.0345–12.2012</td>
+      <td></td>
+      <td>Cnih3; Gift from Bernd Fakler, University of Freiburg, Germany (subcloned into pIRES-eGFP)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pRK5-CKAMP44a</td>
+      <td>doi:10.1126/science.1184245</td>
+      <td></td>
+      <td>Ckamp44; Gift from Jakob von Engelhardt, Johannes Gutenberg University, Mainz, Germany</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>pRK5-CKAMP59-short</td>
+      <td>doi:10.7554/eLife.09693.001</td>
+      <td></td>
+      <td>Ckamp59; Gift from Jakob von Engelhardt, Johannes Gutenberg University, Mainz, Germany</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pcDNA3.1-GSG1L</td>
+      <td>doi:10.1016/j.neuron.2012.03.034; doi:10.1523/JNEUROSCI.2152–15.2015</td>
+      <td></td>
+      <td>Gsg1l; Gift from Bernd Fakler, University of Freiburg, Germany</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Rattus norvegicus)</td>
+      <td>pcDNA3-Homer1c-tdDsRed</td>
+      <td>doi:10.1016/j.neuron.2007.01.030</td>
+      <td></td>
+      <td>Gift from Daniel Choquet, University of Bordeaux, France</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhTx-433;Spermine tetrahydrochloride</td>
+      <td>Sigma-Aldrich, Merck Life Science UK Limited, Gillingham, UK</td>
+      <td>Sigma-Adrich:P207;Sigma-Adrich:85610</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhTx-74</td>
+      <td>Tocris Bioscience, Bio-Techne Ltd, Abingdon, UK</td>
+      <td>Tocris:2770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NASPM</td>
+      <td>HelloBio, Bristol, UK</td>
+      <td>HelloBio:HB0441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro</td>
+      <td>Wavemetrics, Lake Oswego, Oregon, USA</td>
+      <td>RRID:SCR_000325</td>
+      <td>version 6.35</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td>version 10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WinWCP</td>
+      <td>Strathclyde Electrophysiology Software</td>
+      <td>RRID:SCR_014713</td>
+      <td>version 5.2.7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>http://www.neuromatic.thinkrandom.com</td>
+      <td>RRID:SCR_004186</td>
+      <td>version 2.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td>version 4.1.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio Desktop</td>
+      <td>Posit Software</td>
+      <td>RRID:SCR_000432</td>
+      <td>version 2022.12.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Common laboratory chemicals were obtained from Sigma-Aldrich (Merck Life Science UK Limited, Gillingham, UK), as were penicillin, streptomycin, transferrin, insulin, spermine tetrahydrochloride, strychnine, and PhTx-433. Tetrodotoxin (TTX) and PhTx-74 were from Tocris Bioscience (Bio-Techne Ltd, Abingdon, UK). NASPM and bicuculline methiodide were from HelloBio (Bristol, UK). Cyclothiazide, d-AP5, SR-95531 [2-(3-carboxypropyl)–3-amino-6-(4-methoxyphenyl)pyridazinium bromide] and QX-314 [N-(2,6-dimethylphenylcarbamoylmethyl)triethylammonium bromide] were from Tocris Bioscience or HelloBio. Lipofectamine 2000 and gentamicin were from Invitrogen (Thermo Fisher Scientific, Waltham, MA USA). Basal Medium Eagle (BME), Eagles Minimum Essential Medium (MEM), Dulbecco’s Modified Eagle Medium (DMEM), and fetal bovine serum (FBS) were from Gibco (Thermo Fisher Scientific, Waltham, MA USA).
 
-## Mice
+### Mice
 
 Gria2-deficient (GluA2 KO) mice were bred from heterozygous parents (Gria2tm1Rod/J / Gria2+) (Jia et al., 1996) on a 129 /CD1 background. Mice were group housed in standard cages and maintained under controlled conditions (temperature 20 ± 2°C; 12 hr light-dark cycle). Food and water were provided ad libitum. Both male and female mice were used for generating primary neuronal cultures or slices. GluA2 KO (Gria2−/−) mice were compared with wild-type (Gria2+/+) littermates. The genotypes of the pups were determined using PCR analysis using the following Gria2 primers: GGTTGGTCACTCACCTGCTT (wild-type, oIMR6780); TCGCCCATTTTCCCATATAC (common, oIMR6781) and GCCTGAAGAACGAGATCAGC (mutant, oIMR8444). All procedures for the care and treatment of mice were in accordance with the Animals (Scientific Procedures) Act 1986.
 
-## Heterologous expression
+### Heterologous expression
 
 Plasmids containing the flip splice variant of rat GluA1 (pIRES-eGFP-GluA1), the Q/R and R/G edited flip splice variant of rat GluA2 (pIRES-eGFP-GluA2), rat γ2 (pIRES-eGFP-γ2), rat CNIH2 (pIRES-eGFP-CNIH2), rat CNIH3 (pIRES-eGFP-CNIH3), rat GSG1L (pcDNA3.1-GSG1L), human γ7 (pIRES-eGFP-γ7), mouse CKAMP44 (pRK5-CKAMP44a), and mouse CKAMP59 (pRK5-CKAMP59-short) were expressed in human embryonic kidney (HEK) 293 cells from ATCC (Manassas, VA, USA; CRL-1573). The authentication of this cell line was provided by ATCC, and the cell line was tested negative for mycoplasma contamination. Cells were grown in DMEM supplemented with 10% FBS, 100 U/ml penicillin, 0.1 mg/ml streptomycin at 37 °C, 5% CO2, and maintained according to standard protocols. Transient transfection was performed using Lipofectamine 2000 according to the manufacturer’s instructions. Heteromeric GluA1/2 receptors were expressed using a cDNA ratio of 1:2 GluA1:GluA2. AMPAR/auxiliary subunit combinations had a cDNA ratio of 1:2 GluA1:auxiliary subunit. Cells were split 12–24 hr after transfection and plated on poly-l-lysine coated glass coverslips. Electrophysiological recordings were performed 18–48 hr later.
 
-## HEK293 cell outside-out patch recordings
+### HEK293 cell outside-out patch recordings
 
 Patch-clamp electrodes were pulled from borosilicate glass (1.5 mm o.d., 0.86 mm i.d.; Harvard Apparatus, Cambridge, UK) and fire polished to a final resistance of 6–10 MΩ. Voltage ramp experiments were performed using outside-out patches. The ‘external’ solution contained: 145 mM NaCl, 2.5 mM KCl, 1 mM CaCl2, 1 mM MgCl2, and 10 mM HEPES (pH 7.3). For steady-state ramp responses, this solution was supplemented with 300 µM glutamate and 50 µM cyclothiazide. The ‘internal’ solution contained 125 mM CsCl, 2.5 mM NaCl, 1 mM CsEGTA, 10 mM HEPES, and 20 mM Na2ATP (pH 7.3 with CsOH) and was supplemented with the indicated concentrations of spermine tetrahydrochloride, NASPM, PhTx-433, or PhTx-74. For fast-application experiments, the ‘external’ solution contained 145 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, and 10 mM HEPES (pH 7.3) while the ‘internal’ solution contained (in mM): 140 mM CsCl, 10 mM HEPES, 5 mM EGTA, 2 mM MgATP, 0.5 mM CaCl2, and 4 mM NaCl, supplemented with 10 or 100 μM spermine or NASPM as indicated. Recordings were made at 22–25°C using an Axopatch 200 A amplifier (Molecular Devices, USA). Voltage ramp currents were low-pass filtered at 500 Hz and digitized at 2 kHz using an NI USB-6341 (National Instruments) interface with WinWCP (v5.2.7; Strathclyde Electrophysiology Software; http://spider.science.strath.ac.uk/sipbs/software_ses.htm). Recordings of responses to fast glutamate applications were low pass filtered at 10 kHz and digitized at 20 kHz.
 
 Voltage ramps (either −80 mV to +60 mV, −100 mV to +100 mV, or −100 mV to +130 mV) were delivered at 100 mV/s. For each experiment, ramps in control or glutamate plus cyclothiazide solutions were interleaved to allow for leak subtraction. Rapid agonist application was achieved by switching between continuously flowing solutions, as described previously (Soto et al., 2014). Solution exchange was achieved by moving an application tool – made from custom triple-barrelled glass (VitroCom, Mountain Lakes, NJ, USA) – mounted on a piezoelectric translator (PI (Physik Instrumente) Ltd, Bedford, UK). At the end of each experiment, the adequacy of the solution exchange was tested by destroying the patch and measuring the liquid-junction current at the open pipette (10–90% rise time typically 150–300 μs).
 
-## Neuronal primary culture
+### Neuronal primary culture
 
 Primary cultures were prepared from the cerebella of P7 mice as previously described (McGee et al., 2015). After dissociation, the cell suspension was transfected with a pcDNA3-Homer1c-tdDsRed plasmid (Bats et al., 2007) by electroporation using the Amaxa Nucleofector 2b device and Amaxa mouse neuron nucleofector kit (Lonza). Neurons were then plated on poly-l-lysine-coated glass coverslips and grown at 37 °C in a humidified 5% CO2-containing atmosphere in BME supplemented with KCl (25 mM final concentration), 20 μg/ml gentamicin, 2 mM l-glutamine, and 10% v/v FBS. After 3 days in vitro, the growing medium was replaced with MEM supplemented with 5 mg/ml glucose, 2 mM glutamine, 20 μg/ml gentamicin, 0.1 mg/ml transferrin, and 0.025 mg/ml insulin. Recordings were performed after 8–11 DIV.
 
-## mEPSC recordings
+### mEPSC recordings
 
 Cerebellar cells grown on coverslips were visualized using an inverted microscope (IX71; Olympus) equipped with a 40x/0.9 NA objective (Olympus) and excitation and emission filters (Chroma Technology HQ540/40 x and HQ600/50 m) to enable DsRed visualization. We distinguished stellate cells from granule cells by their larger soma and the presence of punctate somatic and dendritic DsRed labeling that differed from the sparse, more distal dendritic, labeling of granule cells.
 
 The extracellular solution, adjusted to pH 7.3 with NaOH, contained: 145 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 10 mM glucose, and 10 mM HEPES. To this, we added 0.5 μM TTX, 20 μM d-AP5, and 20 μM SR-95531 to block voltage-gated sodium channels, NMDA, and GABAA receptors, respectively. The internal solution, adjusted to pH 7.4 with CsOH, contained: 140 mM CsCl, 10 mM HEPES, 5 mM EGTA, 2 mM MgATP, 0.5 mM CaCl2, 4 mM NaCl, and either 100 μM spermine or 100 μM NASPM. Recordings were performed using an Axopatch 700B amplifier, low pass filtered at 6 kHz, and digitized at 25 kHz using a USB-6341 interface and Igor Pro 6 (v6.35, Wavemetrics, Lake Oswego, Oregon, USA) with NeuroMatic v2.8 and NClamp (http://www.neuromatic.thinkrandom.com) (Rothman and Silver, 2018). Patch-clamp electrodes were pulled from borosilicate glass (as for outside-out patch recordings) and had a resistance of 5–7 MΩ. Rseries was not compensated but was monitored throughout each recording; if a cell showed a>30% change in Rseries it was excluded from the analysis. For each included cell Rseries was <18 MΩ and Rinput was >45 × Rseries. Cells were exposed for 2 min to 200 μM LaCl3 prior to data acquisition to increase mEPSC frequency (Chung et al., 2008). Membrane potential was stepped in 10 mV increments from −80 to +60 mV and then from +60 to −80 mV. For the calculation of mEPSC RI+60/−60, where both ascending and descending runs were completed, the data were pooled.
 
-## Hippocampal and cerebellar slice preparation
+### Hippocampal and cerebellar slice preparation
 
-## Hippocampal slices
+#### Hippocampal slices
 
 Mice (P14-P21) were anesthetized with isoflurane and decapitated. The brain was immersed in an ice-cold slicing solution containing 85 mM NaCl, 2.5 mM KCl, 1 mM 1 CaCl2, 1.25 NaH2PO4, 26 NaHCO3, 75 sucrose, 4 MgCl2, 25 glucose, supplemented with 20 μM d-AP5 to prevent NMDAR-mediated cell damage (pH 7.4 when bubbled with 95% O2/5% CO2). Horizontal slices (250 µm) were cut using a vibratome (Leica VT1200S) and transferred to a submerged holding chamber at 37 °C. The solution was slowly exchanged over 1 hr to an external ‘recording’ solution containing 125 mM NaCl, 2.5 mM KCl, 1.25 mM NaH2PO4, 26 mM NaHCO3, 2 mM CaCl2, 1 mM MgCl2, 25 mM glucose, and 20 μM d-AP5 (pH 7.4 when bubbled with 95% O2/5% CO2). Thereafter, the slices were maintained at room temperature prior to recording.
 
-## Cerebellar slices
+#### Cerebellar slices
 
 Parasagittal slices (280 μm) were prepared as for hippocampal slices, except the slicing solution containing 0.5 mM CaCl2, 64 mM sucrose, and 40 µM d-AP5, and a different vibratome was used (Campden 7000smz). Slices were stored in the same solution in a submerged chamber at 32 °C for 30 min and then transferred into recording ‘external’ solution (as for hippocampal slices, but without d-AP5) for maintenance at room temperature prior to recording.
 
-## DGGC outside-out patch recordings
+#### DGGC outside-out patch recordings
 
 Hippocampal slices were viewed with an upright microscope (BX51WI; Olympus) using a 60x/0.9 NA objective (Olympus) and oblique illumination. Outside-out patches were pulled from visually identified dentate gyrus granule cells using thick-walled borosilicate glass electrodes. The electrodes had a resistance of 8–10 MΩ when filled with an internal solution containing: 128 mM CsCl, 10 mM HEPES, 10 mM EGTA, 2 mM Mg2ATP, 0.5 mM CaCl2, 2 mM NaCl, 5 mM TEA, 1 mM QX-314, and either 0.1 mM spermine tetrahydrochloride or 0.1 mM NASPM (pH 7.3 with CsOH; osmolarity 300 ± 20 mOsm/L). Slices were perfused with the external solution containing 20 μM d-AP5 (as described above, under Hippocampal slices) to which was added 20 μM bicuculline methobromide and 1 μM strychnine. Currents were recorded at room temperature using an Axopatch 200B amplifier, filtered at 10 kHz, and digitized at 20 kHz using WinWCP software.
 
 Rapid glutamate application was achieved by jumping between a control solution stream and one containing 10 mM glutamate for 100 ms using an application tool made of theta glass (Hilgenberg) mounted on a piezoelectric translator (PI (Physik Instrumente) Ltd, Bedford, UK). Open-tip responses between the control and a diluted solution had 10–90% rise times that were typically 250–350 μs. For calculation or the rectification index (RI+60/−60), multiple jumps into glutamate were performed at −60 mV then at +60 mV, before being repeated and currents averaged. For the generation of I-V plots, multiple jumps into glutamate were performed at intervals of 10 mV between −60 mV and +60 mV in a randomized sequence. To reduce the impact of noise on the measurement of peak currents, recordings were low-pass filtered offline at 2 kHz.
 
-## Mossy fiber-evoked CGC EPSC recordings
+#### Mossy fiber-evoked CGC EPSC recordings
 
 Cerebellar slices were viewed with an upright microscope (BX50WI; Olympus) using a 40x/0.9 NA objective (Olympus) and oblique illumination. Whole-cell recordings were made from visually identified cells in the internal granule cell layer. To record eEPSCs, mossy fibers were stimulated (1 Hz) using constant voltage pulses (10–100 μs; 30–95 V) delivered through a glass electrode filled with external solution and placed in the granule cell layer, typically ~50–100 μm from the soma of recorded granule cell.
 
 The extracellular solution contained: 125 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 25 mM NaHCO3, 1.25 mM NaH2PO4, 25 mM glucose; pH 7.3 when bubbled with 95% O2/5% CO2. To block NMDA-, GABAA-, and glycine receptors, 20 μM d-AP5, 20 μM SR-95531, and 1 μM strychnine were added to the external solution. The internal solution, adjusted to pH 7.3 with CsOH, contained: 128 mM CsCl, 10 mM HEPES, 10 mM EGTA, 2 mM Mg2ATP, 0.5 mM CaCl2, 2 mM NaCl, 5 mM TEA, 1 mM QX-314, and either 0.1 mM spermine tetrahydrochloride or 0.1 mM NASPM (osmolarity 300 ± 20 mOsm/L). Recordings were acquired with an Axopatch 200B amplifier, low pass filtered at 5 kHz, and digitized at 20 kHz using a Digidata 1440 A interface with pClamp 10 software (Molecular Devices). Electrodes were pulled from borosilicate glass (as for outside-out patch recordings) and had a resistance of 5–7 MΩ. Rseries was not compensated but was monitored throughout each recording; if a cell showed a>30% change in Rseries it was excluded from the analysis. For each included cell Rseries was <35 MΩ and Rinput was >142 × Rseries. Cells were exposed for 2 min to 200 μM LaCl3 prior to data acquisition to increase mEPSC frequency (Chung et al., 2008). Membrane potential was stepped in 10 mV increments from −80 to +60 mV and then from +60 to −80 mV. For the calculation of mEPSC RI+60/−60, where both ascending and descending runs were completed, the data were pooled.
 
-## Data analysis
+### Data analysis
 
-## Analysis of HEK cell recordings
+#### Analysis of HEK cell recordings
 
-Records were analyzed using IGOR Pro with NeuroMatic. To quantify the rectification seen with ramp I-V relationships, the rectification index (RI+60/−60) was calculated as the ratio of the current at +60 mV and −60 mV (average of 15 data points spanning each voltage). To generate conductance-voltage (G-V) curves the reversal potential for each leak-subtracted I-V curve was calculated to ascertain the driving force. The resultant data were normalized, averaged, then converted to conductances. To account for the polyamine-independent outward rectification of AMPARs, the conductance values were divided by those obtained in the polyamine-free condition. For currents that displayed inward rectification only, G-V curves were fitted with the Boltzmann equation:G=Gmax(11+exp(Vm−Vbkb)),
+Records were analyzed using IGOR Pro with NeuroMatic. To quantify the rectification seen with ramp I-V relationships, the rectification index (RI+60/−60) was calculated as the ratio of the current at +60 mV and −60 mV (average of 15 data points spanning each voltage). To generate conductance-voltage (G-V) curves the reversal potential for each leak-subtracted I-V curve was calculated to ascertain the driving force. The resultant data were normalized, averaged, then converted to conductances. To account for the polyamine-independent outward rectification of AMPARs, the conductance values were divided by those obtained in the polyamine-free condition. For currents that displayed inward rectification only, G-V curves were fitted with the Boltzmann equation:
 
-where Gmax is the conductance at a sufficiently hyperpolarised potential to produce full relief of polyamine block, Vm is the membrane potential, Vb is the potential at which 50% of block occurs, and kb is a slope factor describing the voltage dependence of block (the membrane potential shift necessary to cause an e-fold change in conductance). For currents that displayed double rectification, G-V curves were fitted with a double Boltzmann equation which contains equivalent terms for voltage-dependent permeation (p) (Panchenko et al., 1999):G=Gmax(11+exp(Vm−Vbkb))+Gmax,p(11+exp(Vm−Vpkp))
+$$
+G=G_{max}(\frac{1}{1+exp(\frac{V_{m}−V_{b}}{k_{b}})}),
+$$
+
+where Gmax is the conductance at a sufficiently hyperpolarised potential to produce full relief of polyamine block, Vm is the membrane potential, Vb is the potential at which 50% of block occurs, and kb is a slope factor describing the voltage dependence of block (the membrane potential shift necessary to cause an e-fold change in conductance). For currents that displayed double rectification, G-V curves were fitted with a double Boltzmann equation which contains equivalent terms for voltage-dependent permeation (p) (Panchenko et al., 1999):
+
+$$
+G=G_{max}(\frac{1}{1+exp(\frac{V_{m}−V_{b}}{k_{b}})})+G_{max,p}(\frac{1}{1+exp(\frac{V_{m}−V_{p}}{k_{p}})})
+$$
 
 The slopes of the fits were not constrained. Data from GluA1 with 1 μM NASPM were excluded due to excessive scatter and poor fit. Steeper relationships at more positive potentials in the presence of NASPM (Figure 2a GluA1/γ2) likely reflect the modest accumulation of block during the voltage ramp. GluA1 Plots of Vb against the log of the polyamine concentration were fitted with a linear function, the x-axis intercepts giving the voltage-independent affinity (IC50, 0 mV).
 
-Current decays following fast applications of glutamate (10 mM, 100 ms) at positive and negative potentials were described by single or double exponential fits. In the latter case, the weighted time constant of decay (τw,decay) was calculated according to:τw,decay=τf(AfAf+As)+τs(AsAf+As),
+Current decays following fast applications of glutamate (10 mM, 100 ms) at positive and negative potentials were described by single or double exponential fits. In the latter case, the weighted time constant of decay (τw,decay) was calculated according to:
 
-where Af  and τf are the amplitude and time constant of the fast component and As and τs are the amplitude and time constant of the slow component. For each condition, the values of τdecay (from single exponential fits) and τw,decay (from double exponential fits) were pooled.
+$$
+\tau_{w,decay}=\tau_{f}(\frac{A_{f}}{A_{f}+A_{s}})+\tau_{s}(\frac{A_{s}}{A_{f}+A_{s}}),
+$$
+
+where Af  and τf are the amplitude and time constant of the fast component and $A_{s}$ and $\tau_{s}$ are the amplitude and time constant of the slow component. For each condition, the values of τdecay (from single exponential fits) and τw,decay (from double exponential fits) were pooled.
 
 Double pulse experiments (100 ms glutamate applications at intervals of 150 ms to 7.9 s 4–0.125 Hz) were used to assess the recovery of peak responses following the removal of glutamate. As expected, some residual desensitization was apparent at the shortest of the intervals in all conditions (Coombs et al., 2017). Thus, the magnitude of the second pulse reflected recovery from desensitization and, at +60 mV with 10 μM NASPM, the relief of the NASPM block. In the latter case, the recovery of the second peak was fitted with a biexponential function, as above.
 
-## mEPSC analysis
+#### mEPSC analysis
 
-mEPSCs were detected using an amplitude threshold crossing method based on the algorithm of Kudoh and Taguchi, 2002 (NeuroMatic). The standard deviation of the background noise at +60 mV (range 2.4–6.4 pA; 3.5 ± 0.4 pA, n=12) was determined by fitting a single-sided gaussian to an all-point histogram from a 500ms stretch of record. For each cell, the same detection threshold (2–3 x the standard deviation at +60 mV) was used at both −60 and +60 mV. At each voltage, the mEPSC frequency was determined as the total number of mEPSCs detected/record length, and a mean mEPSC waveform was constructed from those events that displayed a monotonic rise and an uncontaminated decay. One cell recorded with intracellular spermine was excluded from the analysis as <10 events were detected during 40 s recording at −60 mV. For each of the 12 other cells, detected events were aligned on their rising phase before averaging. The rectification index was then calculated as:RI+60/−60=(|I¯+60|×f+60)/(|I¯−60|×f−60)
+mEPSCs were detected using an amplitude threshold crossing method based on the algorithm of Kudoh and Taguchi, 2002 (NeuroMatic). The standard deviation of the background noise at +60 mV (range 2.4–6.4 pA; 3.5 ± 0.4 pA, n=12) was determined by fitting a single-sided gaussian to an all-point histogram from a 500ms stretch of record. For each cell, the same detection threshold (2–3 x the standard deviation at +60 mV) was used at both −60 and +60 mV. At each voltage, the mEPSC frequency was determined as the total number of mEPSCs detected/record length, and a mean mEPSC waveform was constructed from those events that displayed a monotonic rise and an uncontaminated decay. One cell recorded with intracellular spermine was excluded from the analysis as <10 events were detected during 40 s recording at −60 mV. For each of the 12 other cells, detected events were aligned on their rising phase before averaging. The rectification index was then calculated as:
 
-where I¯ is the amplitude of the mean mEPSC and f is the frequency of mEPSCs at the indicated voltage. For each averaged mEPSC we determined the 20–80% rise time and fitted the decay with a double exponential to obtain τw,decay (as described for HEK cell agonist-evoked currents).
+$$
+RI_{+60/−60}=(|I¯_{+60}|\timesf_{+60})/(|I¯_{−60}|\timesf_{−60})
+$$
 
-## MF-eEPSC analysis
+where $I¯$ is the amplitude of the mean mEPSC and $f$ is the frequency of mEPSCs at the indicated voltage. For each averaged mEPSC we determined the 20–80% rise time and fitted the decay with a double exponential to obtain τw,decay (as described for HEK cell agonist-evoked currents).
+
+#### MF-eEPSC analysis
 
 eEPSCs were evoked at multiple voltages between −80 and +60 mV. Average waveforms were generated from responses to ~100 stimuli and the peak amplitude was determined. The rectification index (RI+60/−60) was calculated for each cell as the absolute peak of the averaged current at +60 mV divided by the absolute peak of the averaged current at −60 mV. The 20–80% risetime and τw,decay (from double exponential fits) of averaged currents at −60 and +60 mV were also determined.
 
-## Data presentation and statistics
+### Data presentation and statistics
 
 Summary data are presented in the text as mean ± standard error of the mean from n measures, where n represents the number of biological replicates (number of cells or patches). Estimates of paired or unpaired mean differences and their bias-corrected and accelerated 95% confidence intervals from bootstrap resampling are presented as effect size [lower bound, upper bound]. Error bars on graphs indicate the standard error of the mean or, where indicated, the 95% confidence interval. Box-and-whisker plots indicate the median (black line), the 25–75th percentiles (box), and the 10–90th percentiles (whiskers); filled circles are data from individual patches/cells and open circles indicate means. Specific analyses and statistical tests are described in the text. The source data are given in the Source Data files for each relevant figure. Comparisons were performed using paired or unpaired two-sided Welch two-sample t-tests that do not assume equal variance (normality was not tested statistically but gauged from density histograms and/or quantile-quantile plots). Exact p-values are presented to two significant figures, except when p<0.0001. Statistical tests were performed using R (version 4.1.0, the R Foundation for Statistical Computing, http://www.r-project.org/) and RStudio (version 2022.12.0, Posit Software). No statistical test was used to predetermine sample sizes. No randomization was used.

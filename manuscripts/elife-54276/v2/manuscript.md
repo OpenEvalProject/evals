@@ -22,7 +22,7 @@
 
 ## Abstract
 
-It has been suggested that Staufen (Stau) is key in controlling the variability of the posterior boundary of the Hb anterior domain ( x ). However, the mechanism that underlies this control is elusive. Here, we quantified the dynamic 3D expression of segmentation genes in Hb Drosophila embryos. With improved control of measurement errors, we show that the x of Hb stau – mutants reproducibly moves posteriorly by 10% of the embryo length (EL) to the wild type (WT) position in the nuclear cycle (nc) 14, and that its variability over short time windows is comparable to that of the WT. Moreover, for stau – mutants, the upstream Bicoid (Bcd) gradients show equivalent relative intensity noise to that of the WT in nc12–nc14, and the downstream Even-skipped (Eve) and cephalic furrow (CF) show the same positional errors as these factors in WT. Our results indicate that threshold-dependent activation and self-organized filtering are not mutually exclusive and could both be implemented in early Drosophila embryogenesis.
+It has been suggested that Staufen (Stau) is key in controlling the variability of the posterior boundary of the Hb anterior domain (xHb). However, the mechanism that underlies this control is elusive. Here, we quantified the dynamic 3D expression of segmentation genes in Drosophila embryos. With improved control of measurement errors, we show that the xHb of stau– mutants reproducibly moves posteriorly by 10% of the embryo length (EL) to the wild type (WT) position in the nuclear cycle (nc) 14, and that its variability over short time windows is comparable to that of the WT. Moreover, for stau– mutants, the upstream Bicoid (Bcd) gradients show equivalent relative intensity noise to that of the WT in nc12–nc14, and the downstream Even-skipped (Eve) and cephalic furrow (CF) show the same positional errors as these factors in WT. Our results indicate that threshold-dependent activation and self-organized filtering are not mutually exclusive and could both be implemented in early Drosophila embryogenesis.
 
 ## Introduction
 
@@ -42,9 +42,35 @@ Here, we developed measurement methods to quantify the dynamic 3D expression of 
 
 ## Results
 
-## A reproducible large dynamic shift in the Hb boundary of stau– mutants
+### A reproducible large dynamic shift in the Hb boundary of stau– mutants
 
 We observed a large dynamic shift of xHb in stau– mutants using quantitative imaging with carefully controlled measurement errors. To control the measurement errors, we quantified the Hb expression pattern using 3D imaging with light-sheet microscopy (for more details, see 'Materials and methods', Figure 1—figure supplement 1, and Figure 1—videos 1 and 2) on fixed and immunostained embryos and staged each embryo with ~1 min temporal precision using the depth of the furrow canal (FC) (Figure 1—figure supplement 2). The average temporal Hb expression profiles of the WT (Figure 1—figure supplement 3) and of stau– mutants (Figure 1A) are shown on heat maps projected from 3D embryo images. From the heat map, we extracted the average of the normalized dorsal profile of Hb with a time-step of 5 min in nc14 (Figure 1B and C) and measured xHb. Consistent with previous results (Dubuis et al., 2013), xHb of the WT remains nearly constant 20 min into nc14. Notably, in the first 20 min of nc14, it moves posteriorly by 3% EL (Figure 1D). By contrast, at the dorsal side of the embryo, xHb of stau– mutants starts at 37.6 ± 1.9% EL at 2.5 min into nc14, then dynamically moves posteriorly by 10.3% EL within 60 min, and finally stabilizes at 47.9 ± 0.9% EL, close to the WT boundary position 47.8 ± 0.9% EL at 42.5 min into nc14 (Figure 1D and Figure 1—figure supplement 4C and E). Besides stauHL54, another stau– allele, stauD3, also shows a large shift of xHb: 42.8 ± 1.5% EL to 47.9 ± 1.8% EL from 12.5 min to 52.5 min into nc14 on the dorsal side (Figure 1—figure supplement 5). It is well known that stauD3 is a strong allele with a fully penetrant abdominal segmentation phenotype (Lehmann and Nüsslein-Volhard, 1991), hence the observed large shift of xHb in stau– mutants is not an allelic specific feature for stauHL54, which could be hypomorphic, that is with partial function loss.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-v2.jpg)
+
+**Figure 1.:** (A) Heat map of the normalized Hb intensity in stau– mutants with a time-step of 5 min in nc14 based on projection at different angles along the AP axis from the 3D imaging on embryos. (B, C) Dynamics of the average dorsal Hb profiles extracted from 3D imaging of the embryos of stau– mutants (B) and the WT (C) in nc14. (D) The average Hb boundary position (xHb) in each 5 min bin of stau– mutants (blue) and the WT (black) as a function of the developmental time in nc14. Each circle (square) represents the average of the dorsal (ventral) boundary positions of Hb in the bin, and error bars denote the standard deviation of the bin. Lines are eye guides. (E) The variability of the Hb boundary in each bin with equal sample numbers of stau– mutants (blue, n = 10 in each bin except the last one) and the WT (black, n = 7 in each bin except the last one) as a function of the developmental time in nc14. Error bars are calculated from bootstrapping. (F, G) De-trend analysis of the Hb boundary. When we used smooth splines to fit the Hb boundary of all the measured embryos as a function of the embryo development time into nc14 (F), the fitting residuals (G) for the stau– mutants (blue) and the WT (black) are comparable with each other. The standard deviations of the residual are 1.67% EL (n = 69) and 1.45% EL (n = 47) for stau– mutants and the WT, respectively. Two-sample F-test for equal variances cannot be rejected (p=0.31). (H, I) Scaling analysis of the Hb boundary. The plots show normalized relative Hb boundary position (H) or normalized absolute Hb boundary positions with respect to the anterior pole (I) versus normalized embryo length for stau– mutants (solid circles, solid line) and the WT (open circles, dashed line). The slopes of the linear regression lines fitting to all the data points for the WT and stau– mutants are 0.0004 (R2 = 0.0003, n = 47) and −0.02 (R2 = 0.028, n = 69), respectively (H), or 0.70 (R2 = 0.69, n = 47) and 0.66 (R2 = 0.66, n = 69), respectively (I). Each embryo length is normalized by the average embryo length of all embryos. The Hb boundary position is normalized by the corresponding fitting value in the de-trend analysis (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Each embryo was rotated 180° so that it could be imaged from two opposite directions with a light-sheet microscope. (B) The resultant z-stacks were corrected for intensity decay as a function of the depth then fused together to reconstruct a 3D embryo. (C) The expression profiles were extracted from the 2D plane rotating along the A-P axis of the embryo. (D) These profiles were normalized with the maximum intensity of the whole embryo and assembled to form the final heat map (left). The dorsal and ventral profiles are extracted from a representative lateral view of the embryo image (right) sliced from the reconstructed 3D embryo. (E) A subset of raw images of a typical embryo taken with the light-sheet microscope from both directions (the penetration depth increases and decreases for the first and second column, respectively), after image fusion, and after projection at different angles. The bright spots on the surface of the embryos are the clustered fluorescence beads. (F) Intensity compensation on the imaging depth by fusing the images taken from two opposite directions with a light-sheet microscope. (G–I) Comparison of heat map generation methods. A representative heat map of the Hb profiles of the WT generated with our method (G) is comparable with that generated using ImSAnE (Image Surface Analysis Environment) (Heemskerk and Streichan, 2015) (H). The Hb boundary positions extracted from the two heat maps are consistent with each other (I). The standard deviation of the residual from the linear fit in the scatter plot (I) is 0.6% EL.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The depth of the membrane furrow canal (FC) on the dorsal side of the w1118 embryos measured with live imaging as a function of the developmental time into nc14 (t). Each gray line represents the curve of FC versus t measured for one embryo. The average curve of FC versus t of five w1118 embryos (black line) is slightly different from that of Oregon-R (Dubuis et al., 2013) (dashed line). The inset shows a middle dorsal part of a representative image of a live w1118 embryo and the corresponding FC. (B) The calculated depth of the membrane FC on the dorsal side of the fixed w1118 embryos with a shrinkage ratio of 94% as a function of the developmental time into nc14 (t). The inset shows the error in determining the embryo age of fixed embryos with the measured curve of FC versus t.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp3-v2.jpg)
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A, B) The dynamics of the average ventral Hb profiles extracted from 3D imaging of the embryos of the WT (A) and stau– mutants (B). (C, D) Average dorsal (C) and ventral (D) Hb boundary position (xHb) in each 5 min bin of stau– mutants (blue circle) and the WT (black circle) as a function of the developmental time in nc14, error bars denote the standard deviation of the bin; each dot represents the boundary position of a single embryo. (E,F) Average dorsal (E) and ventral (F) xHb in each bin with the same sample size (n=10 and 7 except the last bin for stau- mutants and the WT, respectively) of stau- mutants (blue circle) and the WT (black circle) as a function of the developmental time in nc14, error bars denote the standard deviation of the bin.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A. B) The dynamics of the average dorsal (A) and ventral (B) Hb profiles extracted from 3D imaging of the embryos of stauD3 mutants (n = 61). (C,D) Average dorsal (C) and ventral (D) Hb boundary position (xHb) in each 5 min bin of stauD3 mutants (orange circle), stauHL54 mutants (blue circle), and the WT (black circle) as a function of the developmental time in nc14. Error bars denote the standard deviation of each bin.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A, B) The variability of xHb extracted from the dorsal, ventral and symmetric profiles as a function of the embryo orientation along the AP axis at 16 min into nc14 (A) and 40 min into nc14 (B). (C, D) All of the Hb dorsal profiles without any control on embryo ages and orientations (C), and Hb dorsal profiles with an embryo age of 30–50 min and spatial orientation errors of less than 30° (D).
 
 Moreover, xHb differs significantly in different orientations, for example, the ventral boundary moves from 32.7 ± 2.4% EL by 10.9% EL to 43.6 ± 1.2% EL, with an anterior shift of approximately 6% EL compared with the dorsal boundary (Figure 1D and Figure 1—figure supplement 4A,D and F). By contrast, the difference of xHb between the dorsal and ventral sides in the WT is only 3% EL (Figure 1D). These results suggest that it is crucial to control spatial and temporal measurement errors in order to assess the variability of the Hb boundaries. Interestingly, the spatial measurement error of xHb seems to be the smallest on the dorsal profiles (Figure 1—figure supplement 6A and B).
 
@@ -52,29 +78,69 @@ Although xHb dynamically moves posteriorly by more than 10% EL in stau– mutant
 
 The variability of xHb also depends on whether it is scaling with the embryo length (Houchmandzadeh et al., 2002; He et al., 2008). Consistent with the comparable variability, stau– mutants and the WT are also similar in the scaling of the Hb boundary. On the one hand, the normalized relative Hb boundary positions are nearly constant for both stau– mutants and the WT (Figure 1H). On the other hand, the normalized absolute Hb boundary positions with respect to the anterior pole are proportional to the embryo length (R2 = 0.69 and 0.66 for the WT and stau– mutants, respectively, Figure 1I). Notably, the scaling of xHb of stau– mutants is significant only if we de-trend the dynamic shift, that is normalize the absolute Hb boundary position of each embryo by the average position in the corresponding developmental time. Without this normalization, the scaling of the absolute Hb boundary position of stau– mutants (R2 = 0.26) is inferior compared with the WT (R2 = 0.71), consistent with previous results (He et al., 2008).
 
-## Bcd gradient noise of stau– mutants is nearly the same as that of the WT
+### Bcd gradient noise of stau– mutants is nearly the same as that of the WT
 
 To understand the origin of the variability of the Hb boundary, we measured its upstream Bcd gradients. Using live imaging with a two-photon microscope (TPM), we found that the average Bcd-GFP gradient of stau– mutants at 16 min into nc14 shows reduced amplitude but an increased length constant (Figure 2A). Compared with the WT, in stau– mutants the amplitude of the Bcd-GFP gradient is only 48 ± 7%, but the length constant is increased by approximately 13% from 18.6% EL to 21.1% EL (Figure 2A). If we take the GFP maturation effect into consideration (Little et al., 2011; Liu et al., 2013), the difference of the length constants can be even greater, increasing by 17% from 15.5% EL of the WT to 18.2% EL in stau– mutants (Figure 3—figure supplement 1D). This apparent increase of the measured length constant could result from more extensively distributed bcd mRNA in the embryos of stau– mutants (Ferrandon et al., 1994; Petkova et al., 2014), consistent with the simulation based on the synthesis-diffusion-degradation (SDD) model (Grimm et al., 2010; Figure 3—figure supplement 1A–B). Interestingly, the Bcd gradient noise of stau– mutants is comparable with that of the WT (Figure 2B). The relative noise of the Bcd-GFP gradient in the range of 0.1~0.6 EL is 18.0 ± 2.0%, which is very close to 17.9 ± 1.8% of the WT. Hence, it seems to be consistent with the comparable variability of the Hb boundary. However, these results are different from previous measurements (He et al., 2008; Houchmandzadeh et al., 2002), which might result from different measurement errors.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig2-v2.jpg)
+
+**Figure 2.:** (A) The average intensity of the nuclear Bcd-GFP gradient of stau– mutants (blue) and the WT (black) as a function of the fractional embryo length at 16 min into nc14. Each circle and error bar represents the average and standard deviation, respectively, of the Bcd-GFP fluorescence intensity of the nuclei in the bin with a bin size of 2% EL. The inset shows the logarithm of the intensity as a function of the fractional embryo length and the linear fit in the range of 0.1–0.8 EL. (B) The relative Bcd-GFP gradient noise of stau– mutants (blue) and the WT (black). Each circle represents the standard deviation divided by the mean of the Bcd-GFP fluorescence intensity of the nuclei in the bin with a bin size of 2% EL. The error bar represents the standard deviation of the mean relative gradient noise calculated with bootstrap. (C) Variation in the average profiles of the Bcd gradient in stau– mutants from nc12 to 50 min into nc14. (D, E) The heat map of the Bcd gradient noise of the WT (D) and stau– mutants (E) from nc12 to 50 min into nc14. (F) The average Bcd gradient noise of stau– mutants from x = 0 to x = 0.55 EL versus developmental time is comparable with that of the WT.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of the maximum projected image and the single image in the mid-sagittal plane from a z-stack of images of the fly embryos expressing Bcd-GFP in nc12. (B) The nuclear mask noise from imaging segmentation and the imaging shot noise is much smaller than the total Bcd-GFP gradient noise. (C) Comparison of the average nuclear fluorescence intensity of the control sample and the embryos measured in three independent sessions. (D) The average nuclear fluorescence intensity of the embryos is linearly correlated with that of the control sample in three measurement sessions. Blue circles represent data from each session, and the dash line represents the linear fitting.
+
 Another concern is that Bcd-dependent hb transcription turns off less than 10 min into nc14 (Liu and Ma, 2013; Liu et al., 2016), and that the time window for Bcd interpretation could be earlier than nc14 (Huang et al., 2017; Bergmann et al., 2007); hence Hb expression could be largely produced by translating the previously produced mRNA. It is therefore necessary to measure the dynamic Bcd gradient noise in developmental time earlier than the conventional measurement time, that is 16 min into nc14. By improving the imaging technique and image analysis method (Figure 2—figure supplement 1), we assessed the Bcd-GFP gradient noise in both stau– mutants and the WT. The average nuclear Bcd-GFP gradient rises to a maximum in nc14 and then slightly falls off (Figure 2C). This is consistent with the results of another live imaging experiment (Gregor et al., 2007b) but is significantly different from the measurement of the fixed embryos (Little et al., 2011) because of the GFP maturation effect (Little et al., 2011; Liu et al., 2013). Importantly, the gradient intensity noise of stau– mutants and the WT remains comparable from nc12 to 60 min into nc14 (Figure 2D–F). It is also interesting to discover that the Bcd-GFP gradient noise in both fly lines remains at nearly the same level from nc13 to nc14 (Figure 2F). Notably, the measured gradient noise at 16 min into nc14 is slightly higher than that measured with TPM (Figure 2B), as the measurement error increases in the dynamic Bcd gradient measurements (e.g., a lower signal to noise ratio is due to the fast imaging speed and higher background). The measurement error, however, should change at a similar level for both stau– mutants and the WT, and hence their gradient noise is still comparable.
 
-## The threshold-dependent activation model
+### The threshold-dependent activation model
 
 As in stau– mutants, the amplitude of the Bcd-GFP gradient in the fly line with only half of the Bcd dosage (Bcd1.0) decreased by half compared with the WT (Liu et al., 2013). According to a previous study, for the fly line Bcd1.0, the Hb boundary position might be determined according to the threshold-dependent activation model in early nc14. Then, it dynamically moves posteriorly toward the Hb position of the WT but stops midway in later nc14 (Liu et al., 2013). By contrast, the Hb position in stau– mutants moves all the way to the WT position. It is interesting to investigate whether the threshold-dependent activation model is also valid in early nc14 in stau– mutants.
 
 To test this speculation, we first needed to correct the GFP maturation effect to obtain the total Bcd-GFP gradient from the observed Bcd-GFP gradient measured with live imaging, as it takes tens of minutes for the newly synthesized Bcd-GFP to fluoresce. On the basis of the SDD model incorporating maturation correction and the spatial distribution of bcd mRNA (Little et al., 2011; Petkova et al., 2014), we calculated the maturation correction curves for the Bcd-GFP gradient in both stau– mutants and the WT (Figure 3—figure supplement 1A). Interestingly, the Bcd-GFP concentrations at the respective Hb boundary position are almost the same at 16 min into nc14 (Figure 3), suggesting that the threshold-dependent model might still apply in early nc14. However, as the xhb of stau– mutants moves posteriorly in a much greater range than that of the WT, and as the Bcd gradient changes only slightly in both fly lines, the exact time window in which this model applies remains to be determined.
 
-## Positional information transmission
+![Figure 3.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig3-v2.jpg)
+
+**Figure 3.:** Comparison of the Bcd concentration (horizontal lines) at xHb (vertical lines) at 16 min into nc14 between stau– mutants (blue) and the WT (black) before (inset) and after maturation correction on the Bcd gradient. Each circle and error bar represent the average and standard deviation, respectively, of the Bcd-GFP fluorescence intensity of the nuclei in the bin with a bin size of 2% EL.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The simulated steady-state Bcd gradient of the WT (black) and stau– mutants (blue) based on the model with the extensive distributed source of mRNA extracted from the reference (Petkova et al., 2014). (B) The logarithm of the intensity of the simulated Bcd gradient in panel (A) as a function of the fractional embryo length. The linear fits show that the apparent length constants are 15% of EL and 17% of EL for the WT and stau– mutants, respectively. (C) Maturation correction curves of the Bcd gradient. (D) The logarithm of the intensity as a function of the fractional embryo length and the linear fit before maturation correction (light color) and after maturation correction (dark color).
+
+### Positional information transmission
 
 In addition to examining the threshold-dependent model, it was also interesting to test whether the noise-filtering model plays a role in early Drosophila embryogenesis. We measured the positional information transmission of the other patterning genes interacting with Hb in stau– mutants. As another gap protein, Kr, forms a strip adjacent to the Hb boundary, and the two genes suppress each other (Jaeger, 2011). In stau– mutants, the Kr strip shows a width of 29% EL, wider than that in the WT (17% EL) at the beginning of embryogenesis, then it narrows to 20% EL (Figure 4—figure supplement 1A). It then moves posteriorly together with the Hb boundary in early nc14 but ends its movement late in nc14 (Figure 4A), suggesting that the late shift in the Hb boundary is independent of Kr. As one of the downstream pair rule proteins, Eve forms only four instead of seven strips in stau- mutants (Figure 4—figure supplement 1B). The dynamic shift in the four strips is also shown in Figure 4B. At 56 min into nc14, the cephalic furrow (CF) position in the stau- mutants is 28.2 ± 1.1% EL, while the CF of the WT is 34.3 ± 1.4% EL.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig4-v2.jpg)
+
+**Figure 4.:** (A) The positions of the anterior boundary (inflection point) of Kr (solid triangle) and xHb (hollow triangle) with the stau– mutants (blue) and the WT (black). (B) The peak of Eve in stau– mutants (blue) as a function of the developmental time in nc14 in comparison with that in the WT (black).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Dynamics of the Kr (A) and Eve (B) profiles in nc14.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Representative raw images of Bcd-GFP (green), Hb (red), Kr (yellow), Eve (blue), and CF (black) of stau– mutants (left) and the WT (right). The top two figures are living images of Bcd-GFP at 16 min into nc 14, and the next three rows of figures are the immunofluorescence images of Hb, Kr, and Eve at around 35 min into nc 14. The last row is the bright field image of CF at around 56 min into nc 14. The scale bars represent 40 μm. The first scale bar is for the top two images and the second one for the rest. The second scale bar is slightly longer due to shrinkage after heat fixation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Cuticle patterns of the stau– mutants prepared with CRISPR are consistent with the published record (Lehmann and Nüsslein-Volhard, 1991). (A) Comparison of the dark field image of the cuticle pattern of the WT in Lehmann and Nüsslein-Volhard, 1991 and the bright field image of the WT in our experiment. (B) Comparison of the dark field image of the cuticle pattern of stau– mutants in Lehmann and Nüsslein-Volhard, 1991 and the bright field images of stauD3 and stauHL54 prepared with CRISPR technique.
+
 To understand the dynamic transmission of positional information, we compared the positional noise of all the measured AP patterning markers from Bcd to CF during the time course of nc14 (Figure 5). Consistent with previous results, the positional error of the Hb boundary of the WT decreases by approximately two-fold to a minimum at approximately 45 min into nc14 and then slightly increases (Dubuis et al., 2013). The stau– mutants show a trend that is similar to that in the WT. The positional error of xHb in early nc14 is slightly less than that of the Bcd gradient for stau– mutants and the WT. The minimal positional noise of the Kr front boundary, the first peak of Eve, and CF are comparable with the minimal positional error of the Hb, that is, approximately 1% EL. Notably, the stau– mutants and the WT are comparable in their minimal positional errors in these different levels of AP patterning genes (Figure 5). These results suggest that positional noise is filtered from Bcd to Hb and is then relayed between different levels of the patterning genes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig5-v2.jpg)
+
+**Figure 5.:** Positional errors in Bcd (green), Hb (blue), Kr (cyan), Eve (magenta) and CF (red) of stau– mutants (circle) and the WT (square) as a function of developmental time in nc14. Positional errors are calculated from the Bcd gradients (Figure 2A) after subtracting the imaging noise and image mask noise from the gradient noise (Figure 2B). The standard deviation of the average positional noise is calculated on the basis of bootstrapping. For presentation purposes, data for Bcd, Kr and CF measured at the same time point are shown with 1 min offset on the x axis. The black line connects the data points to guide the eye.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The average Hb boundary slopes of the stau– mutants (blue circle) and the WT (black circle) as a function of the developmental time in nc14, error bars denote the standard deviation of each bin with the same sample size (n=10 and 7 except the last bin for stau- mutants and the WT, respectively). The time points of the WT have a 1 min offset along the time axis for visual display.
 
 In addition to the noise-filtering phenomenon, it is interesting to note that the shifts in the patterning markers differ. The Hb boundary moves posteriorly by more than 10% EL to nearly the WT position. For the other gap genes that interact with Hb, the front boundary of Kr moves posteriorly by only 5% EL and stops 3% EL away from the WT position. For the downstream genes, the first peak of Eve moves very little, and its final position (corresponding to the CF position) is 6% EL away from the WT position. These results indicate that the large dynamic shift of Hb seems to be dampened instead of faithfully relayed in the other patterning genes. By contrast, the shift accumulates in the fly lines that have altered Bcd dosages (Liu et al., 2013). For example, in the fly line Bcd1.0, which has almost the same Bcd dosage as stau– mutants, the Hb boundary position moves posteriorly by approximately 2.5% EL in nc14 and stops at 7% EL away from the WT position. The first peak of Eve moves posteriorly further by 0.8% EL, so the CF position is closer to the WT position. It has been suggested that this additive shift results from the dynamic integration of maternal positional information (Liu et al., 2013). It remains to be investigated whether a new mechanism may account for the dynamic positional transmission in stau– mutants.
 
 ## Discussion
 
-## Improving quantitative measurement methods to reveal the true biological noise of developmental patterning
+### Improving quantitative measurement methods to reveal the true biological noise of developmental patterning
 
 Maternal mutants become more accessible with the CRISPR-Cas9 technique (Bassett and Liu, 2014). The balancer stabilizes the maternal mutant fly line but prevents the random mutation from being rescued by homologous recombination. Hence, the accumulated mutations often deteriorate the maternal mutant fly line in the fly stock. In this work, instead of running rescue genetics experiments, we generated a fresh stau– mutant fly line from the WT by using the CRISPR-Cas9 technique. The newly generated stauHL54 mutant fly line shows the correct expression patterns of Bcd, Hb, Kr, and Eve compared with the original stau– mutant fly line (Figure 4—figure supplement 2), and the cuticle patterns of stauHL54 and stauD3 are consistent with the published record (Lehmann and Nüsslein-Volhard, 1991; Figure 4—figure supplement 3).
 
@@ -84,13 +150,21 @@ For dynamically evolved patterning, it is also important to determine the embryo
 
 When compared with the imaging of fixed embryos, live imaging has advantages in potentially higher temporal resolution determined by the imaging speed. Only in nc14, the densely packed nuclei on the embryo surface can be imaged in one plane. Hence, for convenience in controlling the measured error, the Bcd gradient noise is often measured only in a selected plane at a timepoint of 16 min into nc14. However, before this measurement time, the Bcd-dependent regulation of Hb has already been shut off (Liu and Ma, 2013). Moreover, considering the dynamics of downstream patterning genes, it is important to measure the dynamics of the Bcd gradient noise. We found that the maximum projection from a five-layer and 1-μm-spaced z-stack image could significantly alleviate the measurement errors. To accumulate sufficient samples to measure the gradient noise, it is also very important to stabilize the imaging condition and to correct the potential intensity drift between different experimental sessions (Figure 2—figure supplement 1C and D). With this imaging improvement as well as automatic image analysis, we successfully showed that the Bcd-GFP gradient noise is almost constant in the interphase from nc13 to nc14 (Figure 2F). As the fluorescence intensity observed in live imaging increases during this period, this result may suggest that the Bcd gradient noise is not dominated by the Poissonian noise.
 
-## Underlying mechanism for the dynamic shift of the Hb boundary
+### Underlying mechanism for the dynamic shift of the Hb boundary
 
 On the basis of the quantitative spatial-temporal gene expression data, it has long been known that the gap gene profiles, for example, the central Kr domain and the posterior Kni and Gt domains, show substantial anterior shifts during nc14 (Jaeger et al., 2004). These dynamic shifts are proposed to originate from the asymmetric cross-regulation between gap genes, that is, posterior gap genes repress their adjacent anterior gap genes but not vice versa (Huang et al., 2017; Jaeger et al., 2004). The shift amount is less than 5%, much less than the shift of the Hb boundary in stau– mutants.
 
 The Hb boundary and the other patterning features, such as the Kr central strip and Eve peaks, also move dynamically with differing Bcd dosages (Liu et al., 2013). For example, for the fly line with only half of the Bcd dosage in the WT, the shift in the CF is only approximately 40% of the predicted value based on the threshold-dependent model. The Hb boundary moves posteriorly toward the WT position by approximately 4% EL from an initial position close to the one predicted by the threshold-dependent model. The posterior shift of the Hb boundary has also been observed in nos– mutants (Petkova et al., 2019).
 
 Among all the reported shifts of the patterning markers in fly embryos, the shift in the Hb boundary in stau– mutants is the largest at more than 10% EL. The shift significantly slows down in late nc14, as the majority of the shift,~7% EL, finishes in the first 30 mins of nc14. By contrast, most of the shifts observed in the other cases occur in the later 30 mins of nc14 and have been proposed to originate from the cross-regulation between gap genes (Jaeger et al., 2004; Liu et al., 2013). Hence, a mechanism other than the cross-regulation between gap genes could contribute to the large shift of the Hb boundary in stau– mutants. Moreover, the slope of the Hb boundary in stau– mutants is less than that of the WT in the first 30 mins in nc14 and later increases to nearly the same as that of the WT (Figure 5—figure supplement 1). This might be related to the modification of the maternal gradients from both poles (Figure 6A and B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Schematic of maternal gradients and Hb dynamic expression in the WT (A), stau– mutants (B), and Bcd1.0 (C). In stau– mutants, the Bcd gradient (yellow) decreases in amplitude and increases in length constant. The depletion of the Nos gradient (purple) flattens the maternal Hb gradient (orange). In Bcd1.0, the Bcd gradient decreases in amplitude by half. xHb moves posteriorly from early, to middle and late nc14. It mainly moves in the first 30 mins in nc14 in stau– mutants and the shift amount is much greater than in the WT. By contrast, xHb mainly moves in the later 30 mins of nc14 in Bcd1.0. (D) The mathematical model fitting (lines) agrees well with the measured shift of xHb in the WT (black circles) and stau– mutants (blue circles), but not Bcd1.0 (red circles). The simulation result without the distortion effect on the Nos gradient in stau– mutants (blue dashed line) fails to replicate the measured results. Error bars represent the standard deviation of xHb in each time window.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/54276/elife-54276-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The regulation network of maternal genes and Hb in the WT (top) and in stau– mutants (below). The arrow (→) and the T-bar (—|) symbols represent activation and repression, respectively. The dashed line represents the missing regulatory interactions. (B) Comparison of the measured average Bcd gradient (n = 11) on the ventral side (blue dots) and the dorsal (red dots) side. The fitting results (lines) show that the amplitude decreases from 1078 on the dorsal side by 24% to 814 on the ventral side, whereas the length constant increases from 19.0% EL on the dorsal side by 10% to 21.0% EL on the ventral side. Inset: the dorsal and ventral Bcd gradients in the simulation with the best-fitting result. (C) The simulated xHb on the ventral side (dashed line) posteriorly moves 6% EL and 3% EL compared with the dorsal side (solid line) in stau– mutants (blue) and the WT (black). (D, E) After removing the time-varying effect of Bcd gradients, the mathematical model fitting (lines) of xHb does not stabilize in the late nc14 in the WT (black circles) or in stau– mutants (blue circles) as shown in the experiment whether using the updated (D) or same (E) optimized parameters. Error bars represent the standard deviation of xHb in each time window.
 
 To test this idea, we constructed a mathematical model to calculate the dynamic shift in xHb in both stau– mutants and the WT. To illustrate the Stau effect, we neglected the cross-regulation between different gap genes and only considered the activation from Bcd to Hb and the self-activation of Hb. We assume that stau– mutants and the WT share the same gene regulation function for Hb, and that the only difference comes from the distorted expression profiles of Bcd and maternal Hb in stau– mutants (for more details, see 'Materials and methods', Figure 6A–C, and Figure 6—figure supplement 1A). On the one hand, the amplitude of the Bcd gradient is reduced by 65%, and the length constant is increased by 17%. On the other hand, the maternal Hb profile is flattened as the Nos gradient is removed. This model fits well with the measured dynamic shift of xHb in both stau– mutants and the WT (Figure 6D), indicating that the synergy effect resulting from the altered Bcd gradients and maternal Hb in stau– mutants can account for the much larger shift of xHb compared with that in the WT.
 
@@ -100,7 +174,7 @@ Moreover, this model predicts that the initial position of xHb varies as the Bcd
 
 Hence, the current model suggests that the ultra-large shift of xHb in stau– mutants can be attributed to the distorted Bcd and Nos gradients due to the loss of Stau function, if self-activated Hb is activated by Bcd according to the threshold-dependent model at early nc14. However, this simplified model without cross-regulation of the gap genes fails to predict the small shift of xHb in nos– mutants (Houchmandzadeh et al., 2002; Petkova et al., 2019). Thus, a comprehensive model incorporating both the maternal factors and the gap genes is still needed to dissect the sophisticated role of Stau in regulating Hb patterning.
 
-## Dynamic transmission of positional information
+### Dynamic transmission of positional information
 
 The large dynamic shift in the Hb boundary raises the question of how the positional information is transferred in the patterning system. The term ‘positional information’ was first coined by Wolpert, 1969. On the basis of this concept, developmental patterning is instructed by the concentration of a single static morphogen gradient, and the interpretation of the morphogen gradient follows the threshold-dependent model. Each cell ‘acquires’ its position inside the embryo by ‘reading’ the morphogen concentration and accordingly activates downstream genes to form the cell-fate map (Jaeger and Reinitz, 2006; Wolpert, 2011; Wolpert, 2016). This model provides a simple molecular-based mechanism for developmental pattern formation. It has prevailed in developmental biology, especially after the identification of a series of morphogens starting with Bcd (Rogers and Schier, 2011; Struhl et al., 1989).
 
@@ -112,34 +186,175 @@ By developing 3D measurements with reduced measurement errors, we observe that t
 
 ## Materials and methods
 
-## Fly strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Yi Rao Lab</td>
+      <td>BDSC3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>stauHL54</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See 'Materials and methods'</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>stauD3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See 'Materials and methods'</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>bcd-egfp;+;bcdE1</td>
+      <td>Thoms Gregor Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>bcd-egfp;stauHL54;bcdE1</td>
+      <td>Thoms Gregor Lab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hb (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab197787</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Kr (guinea pig polyclonal)</td>
+      <td>John Reinitz Lab</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Eve (rat polyclonal)</td>
+      <td>John Reinitz Lab</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig (goat monoclonal)</td>
+      <td>John Reinitz Lab</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat (goat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11006</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (goat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21240</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agarose gels</td>
+      <td>Invitrogen</td>
+      <td>E-Gel EX</td>
+      <td>1~1.5%</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>3D image processing</td>
+      <td>This paper</td>
+      <td>Source code files</td>
+      <td>See 'Materials and methods'</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB, 2018</td>
+      <td>MATLAB 2018a v9.4.0.813654</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Capillary</td>
+      <td>Brand</td>
+      <td>701904</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly strains
 
 Bcd-GFP intensity was measured in the fly strains bcd-egfp;+;bcdE1and bcd-egfp;stauHL54;bcdE1 using live imaging. The expression profiles of Hb, Kr, and Eve in immunostained embryos were measured with w1118, stauHL54 (w;stauHL54) and stauD3 (w;stauD3) mutants. The two stau– mutants were generated from w1118 directly by corresponding gene editing of the RNA-binding domain of stau using CRISPR/Cas9 (Bassett and Liu, 2014): a point mutation (replacing the base T in the intron of the fifth exon with base A) for stauHL54, and a replacement of the second to fifth exon regions with a knock-in rfp marker for stauD3.
 
-## Immunostaining
+### Immunostaining
 
 All embryos were collected at 25°C, dechorionated, and then heat-fixed in 1x TSS (NaCl, Triton X-100). After at least 5 min, the embryos were transferred from the scintillation vial to Eppendorf tubes and vortexed in 1:1 heptane and methanol for 1 min to remove the vitelline membrane. They were then rinsed and stored in methanol at −20°C. The embryos were then stained with primary antibodies, including mouse anti-Hb (Abcam, ab197787), guinea pig anti-Kr, and rat anti-Eve (gifts from John Reinitz). Secondary antibodies were conjugated with Alexa-647 (Invitrogen, A21240), Alexa-488 (Invitrogen, A11006), and Alexa-555 (gift from John Reinitz). To prevent cross-binding between the rat and mouse primary antibodies, the embryos were incubated in first guinea pig and then rat primary antibodies, followed by their respective secondary antibodies. Subsequently, the embryos were treated in blocking buffer before the mouse primary and secondary antibodies were applied. Finally, the embryos were stained with DAPI (Invitrogen, D1306).
 
-## 3D imaging and analysis
+### 3D imaging and analysis
 
 Embryos that were stained and washed together in the same tube were mounted in agarose (Invitrogen E-Gel EX Agarose gels, 1~1.5%) in a capillary tube with an inner diameter of 1 mm (Brand, 701904). Samples were imaged on a Zeiss Z1 light-sheet microscope. Images were taken with a W Plan Apo 20X/1.0 water immersion objective and with sequential excitation wavelengths of 638, 561, 488 and 405 nm. The thickness of the light sheet was 4.6 or 4.35 μm. Before the fluorescence imaging, each embryo was adjusted to the maximal sagittal plane via bright-field imaging. For each embryo, two z-stacks of images (1920 × 1920 pixels, with 16 bits and a pixel size of 286 nm at 0.8 magnified zoom) with 1 μm spacing were taken from two opposite sides by rotating the embryos 180° (Figure 1—figure supplement 1A). Several factors are key to improving image quality. i) Light sheet illumination setting: chose the ‘Dual Side when Experiment’ and the ‘Online Dual Side Fusion’, then adjusted the left and right beam path to get the optimal images. ii) Pivot scan setting: the ‘Pivot scan’ was activated to reduce the shadows that might otherwise be cast by optically dense structures within the embryos. iii) Laser power and exposure time: adjust laser power and exposure time to maintain an adequate signal to noise ratio and to avoid severe photo-bleaching.
 
 Image analysis routines were implemented in customized MATLAB codes (MATLAB, 2018) with five steps. i) Image-registration and fusion. Two z-stacks of raw images of each embryo were acquired from opposite directions by rotating 180o. The two stacks were registered with the autocorrelation algorithm (Figure 1—figure supplement 1B), which is based on the correlation coefficient reflecting the similarity between two images. Next, the fused images were obtained by averaging the two raw images at the same position and opposite direction (Figure 1—figure supplement 1B). This fusion process compensates the dependence of the intensity on the imaging depth (Figure 1—figure supplement 1E). ii) 3-D reconstruction. The 3D embryos were reconstructed with these fused z-stack images by the 3D interpolation algorithm (Figure 1—figure supplement 1C). iii) Segmentation at different angles. A plane across the AP axis with the largest area was identified. Then, starting from this plane, 36 sides of 2D images were extracted from the 3D embryos by rotating slices with 5° intervals at different orientations along the AP axis (Figure 1—figure supplement 1C). iv) Profile extraction. The gene expression profiles were extracted from these slices by morphology image processing to generate the embryo mask, extract the intensity of nuclei surrounding the boundary of embryos mask, and obtain the profile at different embryo orientations. v) Heat map construction. The 36 Hb intensity profiles of one embryo were normalized from 0 to 1, then placed in a heat map, in which the dorsal side was located in the bottom quarter and the ventral side was located in the upper quarter (Figure 1—figure supplement 1D).
 
-## Live imaging and analysis
+### Live imaging and analysis
 
 Embryos were collected at 25°C for 1 hr, dechorionated in 100% bleach (4% NaClO) for 3 min, glued on a glass slide and covered with halocarbon oil (Halocarbon 700). The Bcd gradient in the mid-coronal plane at 16 min into nc14 was measured as reported previously. In brief, embryos were imaged at 22°C on a TPM that was built in house. The excitation laser was 25 mW in average power and 970 nm in wavelength. The objective was a Zeiss 25X (NA = 0.8 in air) oil/water immersion objective. Emission fluorescence was collected with a gallium-arsenide-phosphide (GaAsP) with a quantum yield of more than 40% and dark counts of less than 4000/s at 25°C. For each embryo, three images (512*512 pixels with a pixel size of 460 nm, bit depth of 12 bits, and scan speed of 4 ms/line) were taken sequentially along the A-P axis and stitched together. In each session, embryos from the fly strains bcd-egfp;+;bcdE1and bcd-egfp;stauHL54;bcdE1 were mounted on the same slides and measured side by side.
 
 For the dynamic Bcd gradient measurements, the embryos were glued on the cover glass of a Petri dish of 30 mm in diameter (NEST, 801002) and covered with halocarbon oil. They were imaged in the mid-sagittal plane at 25°C on a Nikon A1RSi+ confocal microscope with a Nikon Plan Apo λ 20X/0.75 air objective. The fluorescence was excited at a wavelength of 488 nm and collected with a GaAsP detector. A maximum-intensity-projected z-stack of five images (1024 × 1024 pixels with a pixel size of 620 nm, bit depth of 12 bit, and spacing of 1 μm) around the largest plane was acquired at each time point. Each of the images was averaged on two sequential acquisitions. In each session, at most three embryos were picked for imaging to guarantee the time resolution (80 s, scan speed of 2.3 s/frame). The background was the average of the background fluorescence measured with ten w1118 embryos under the same conditions. To correct for the potential imaging differences in different sessions, the control samples were prepared with the hand-peeling protocol to preserve the fluorescence of the Bcd-GFP of the collected embryos. Embryos at the interphase of nc13–nc14 were selected and imaged in advance of each imaging session. Imaging analysis was processed with customized MATLAB codes (MATLAB, 2018 2018a).
 
-## Model
+### Model
 
-Hb patterning is treated as a one-dimensional reaction-diffusion system with no-flux boundary condition:(1)∂h(x,t)∂t=f(I(x,t),h(x,t))−β⋅h(x,t)+D∂2h(x,t)∂x2where β and D denote the degradation rate and diffusion constant of Hb, respectively, h(x, t) denotes the concentration of Hb at time t and the AP axis coordinate x, and f(I,h) is the gene regulatory function (GRF) that determines the synthesis rate of Hb.
+Hb patterning is treated as a one-dimensional reaction-diffusion system with no-flux boundary condition:
 
-I(x,t) represents the net regulation effect of the maternal factors, which are generally spatial-dependent and time-variant. The maternal factor Nos represses the translation of maternal hb (Wang and Lehmann, 1991), so we assume that Nos only affects the initial distribution of Hb, hx,0=hm⋅S(kx(x-x0)), where Sξ=1/1+exp⁡ξ. Another maternal factor Bcd constantly activates the expression of Hb during early embryogenesis. Hence, we assume Ix,t=b(x,t), where b(x,t) denotes the nuclear Bcd gradient. The nuclear Bcd gradient is dynamic and its amplitude decays after nc12 (Little et al., 2011). As an approximation, we assume bx,t=bm⋅e-x/λ⋅Tt;ω0,t0, where T(t;ω0,t0)={1,t≤t0exp(−ω0(t−t0)),t>t0, denoting that the Bcd profile decays with the linear decay rate ω0 in an isotropic manner after t0 (time offset from the onset of nc14). Besides the activation from Bcd, Hb is also activated by itself (Lopes et al., 2008). Considering that the P2 enhancer of hb has at least six binding sites for Bcd (Driever et al., 1989) and three for Hb (Treisman and Desplan, 1989), and given the high binding cooperativity of Bcd or Hb, we assume that the GRF in Eq.1 takes the all-or-nothing strategy by following a coupled Hill function:(2)f(b,h)=αb(bb0)nb+αh(hh0)nh1+(bb0)nb+(hh0)nhwhere b0 and h0 are the activation thresholds for Bcd and Hb, respectively, nb and nh are the Hill coefficients for Bcd and Hb, respectively, and αb and αh denote the scaling factor for the production of Hb from the activation of Bcd and the self-activation of Hb, respectively.
+$$
+\frac{∂h(x,t)}{∂t}=f(I_{(x,t)},h_{(x,t)})−\beta⋅h(x,t)+D\frac{∂^{2}h(x,t)}{∂x^{2}}
+$$
 
-The experiment showed that stau– mutants are different from the WT in Bcd gradients and maternal Hb gradients: the amplitude of Bcd gradients of stau– mutants (bmstau-)) is ~35% of that of the WT (bmwt)); the length constant of Bcd gradients of stau– mutants (λstau-)) is ~17% larger than that of the WT (λwt)); and the initial distribution of Hb of stau– mutants is uniform across the embryo due to the lack of repression from the Nos gradient. Hence, we set all the parameters of stau– mutants to be the same as those for the WT except for bmstau-=0.35⋅bmwt, λstau-=1.17⋅λwt, and (c) x0stau-→+∞.
+where β and D denote the degradation rate and diffusion constant of Hb, respectively, h(x, t) denotes the concentration of Hb at time t and the AP axis coordinate x, and $f(I,h)$ is the gene regulatory function (GRF) that determines the synthesis rate of Hb.
+
+$I(x,t)$ represents the net regulation effect of the maternal factors, which are generally spatial-dependent and time-variant. The maternal factor Nos represses the translation of maternal hb (Wang and Lehmann, 1991), so we assume that Nos only affects the initial distribution of Hb, $hx,0=h_{m}⋅S(k_{x}(x-x_{0}))$, where $Sξ=1/1+exp⁡ξ$. Another maternal factor Bcd constantly activates the expression of Hb during early embryogenesis. Hence, we assume $Ix,t=b(x,t)$, where $b(x,t)$ denotes the nuclear Bcd gradient. The nuclear Bcd gradient is dynamic and its amplitude decays after nc12 (Little et al., 2011). As an approximation, we assume $bx,t=b_{m}⋅e^{-x/\lambda}⋅Tt;\omega_{0},t_{0}$, where $T(t;\omega_{0},t_{0})={1,t\leqt_{0}exp(−\omega_{0}(t−t_{0})),t>t_{0}$, denoting that the Bcd profile decays with the linear decay rate $\omega_{0}$ in an isotropic manner after $t_{0}$ (time offset from the onset of nc14). Besides the activation from Bcd, Hb is also activated by itself (Lopes et al., 2008). Considering that the P2 enhancer of hb has at least six binding sites for Bcd (Driever et al., 1989) and three for Hb (Treisman and Desplan, 1989), and given the high binding cooperativity of Bcd or Hb, we assume that the GRF in Eq.1 takes the all-or-nothing strategy by following a coupled Hill function:
+
+$$
+f(b,h)=\frac{\alpha_{b}(\frac{b}{b_{0}})^{n_{b}}+\alpha_{h}(\frac{h}{h_{0}})^{n_{h}}}{1+(\frac{b}{b_{0}})^{n_{b}}+(\frac{h}{h_{0}})^{n_{h}}}
+$$
+
+where b0 and h0 are the activation thresholds for Bcd and Hb, respectively, nb and nh are the Hill coefficients for Bcd and Hb, respectively, and $\alpha_{b}$ and $\alpha_{h}$ denote the scaling factor for the production of Hb from the activation of Bcd and the self-activation of Hb, respectively.
+
+The experiment showed that stau– mutants are different from the WT in Bcd gradients and maternal Hb gradients: the amplitude of Bcd gradients of stau– mutants ($b_{m}^{stau-})$) is $~35%$ of that of the WT ($b_{m}^{wt})$); the length constant of Bcd gradients of stau– mutants ($\lambda^{stau-})$) is $~17%$ larger than that of the WT ($\lambda^{wt})$); and the initial distribution of Hb of stau– mutants is uniform across the embryo due to the lack of repression from the Nos gradient. Hence, we set all the parameters of stau– mutants to be the same as those for the WT except for $b_{m}^{stau-}=0.35⋅b_{m}^{wt}$,$\lambda^{stau-}=1.17⋅\lambda^{wt}$, and (c) $x_{0}^{stau-}→+∞$.
 
 This model has a total 16 parameters, nine of them are fixed on the basis of the experimental values from references or our measurements, and the others need to be optimized from data fitting (Figure 6—source data 1). To obtain seven free parameters, we fit the simulated xhb as a function of t to the experimental dynamics of xhb for both stau– mutants and the WT. The error function weighted during the early rising phase of the WT, the final position difference between stau– mutants and the WT, and the final changing rate of xhb helps to capture the key dynamic characteristics and to avoid potential over fittings.
 
-Using optimized parameters, we simulated the dynamics of xhb for Bcd1.0 by setting bm1x=0.5⋅bmwt. We also simulated xhb on the ventral side by setting bmventral=0.62⋅bmdorsal and λventral=1.1⋅λdorsal  to obtain the best fitting to the experimental results, that is, 6% EL and 3% EL for stau– mutants and the WT, respectively (Figure 6—figure supplement 1B). To test the effect of the dynamics of Bcd gradients on the formation of the Hb boundary, we set ω0→0 and ran the simulation using the same optimized parameters or ran the parameter optimization again to obtain the best fit.
+Using optimized parameters, we simulated the dynamics of xhb for Bcd1.0 by setting $b_{m}^{1x}=0.5⋅b_{m}^{wt}$. We also simulated xhb on the ventral side by setting $b_{m}^{ventral}=0.62⋅b_{m}^{dorsal}$ and $\lambda^{ventral}=1.1⋅\lambda^{dorsal}$ to obtain the best fitting to the experimental results, that is, 6% EL and 3% EL for stau– mutants and the WT, respectively (Figure 6—figure supplement 1B). To test the effect of the dynamics of Bcd gradients on the formation of the Hb boundary, we set $\omega_{0}→0$ and ran the simulation using the same optimized parameters or ran the parameter optimization again to obtain the best fit.

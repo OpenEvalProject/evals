@@ -7,15 +7,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01j7nq853 University of Alaska Museum and Department of Biology and Wildlife Fairbanks United States
-2. https://ror.org/01f5ytq51 Department of Biology, Texas A&M University College Station United States
-3. https://ror.org/00hj8s172 Ecology, Evolution, and Environmental Biology, Columbia University New York United States
+1. University of Alaska Museum and Department of Biology and Wildlife Fairbanks United States ([ROR:01j7nq853](https://ror.org/01j7nq853))
+2. Department of Biology, Texas A&M University College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
+3. Ecology, Evolution, and Environmental Biology, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
 
 † Corresponding author
 
 ## Abstract
 
-Modern genomic methods enable estimation of a lineage’s long-term effective population sizes back to its origins. This ability allows unprecedented opportunities to determine how the adoption of a major life-history trait affects lineages’ populations relative to those without the trait. We used this novel approach to study the population effects of the life-history trait of seasonal migration across evolutionary time. Seasonal migration is a common life-history strategy, but its effects on long-term population sizes relative to lineages that don’t migrate are largely unknown. Using whole-genome data, we estimated effective population sizes over millions of years in closely related seasonally migratory and resident lineages in a group of songbirds. Our main predictions were borne out: Seasonal migration is associated with larger effective population sizes ( N ), greater long-term variation in e N , and a greater degree of initial population growth than among resident lineages. Initial growth periods were remarkably long (0.63–4.29 Myr), paralleling the expansion and adaptation phases of taxon cycles, a framework of lineage expansion and eventual contraction over time encompassing biogeography and evolutionary ecology. Heterogeneity among lineages is noteworthy, despite geographic proximity (including overlap) and close relatedness. Seasonal migration imbues these lineages with fundamentally different population size attributes through evolutionary time compared to closely related resident lineages. e
+Modern genomic methods enable estimation of a lineage’s long-term effective population sizes back to its origins. This ability allows unprecedented opportunities to determine how the adoption of a major life-history trait affects lineages’ populations relative to those without the trait. We used this novel approach to study the population effects of the life-history trait of seasonal migration across evolutionary time. Seasonal migration is a common life-history strategy, but its effects on long-term population sizes relative to lineages that don’t migrate are largely unknown. Using whole-genome data, we estimated effective population sizes over millions of years in closely related seasonally migratory and resident lineages in a group of songbirds. Our main predictions were borne out: Seasonal migration is associated with larger effective population sizes (Ne), greater long-term variation in Ne, and a greater degree of initial population growth than among resident lineages. Initial growth periods were remarkably long (0.63–4.29 Myr), paralleling the expansion and adaptation phases of taxon cycles, a framework of lineage expansion and eventual contraction over time encompassing biogeography and evolutionary ecology. Heterogeneity among lineages is noteworthy, despite geographic proximity (including overlap) and close relatedness. Seasonal migration imbues these lineages with fundamentally different population size attributes through evolutionary time compared to closely related resident lineages.
 
 ## Introduction
 
@@ -27,7 +27,7 @@ Thrushes in the genus Catharus and this group’s sister Hylocichla mustelina (A
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig1-v1.jpg)
 
-**Figure 1.:** Catharus and Hylocichla.Neotropical residents are shaded in gray.
+**Figure 1.:** Neotropical residents are shaded in gray.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig2-v1.jpg)
 
@@ -42,6 +42,163 @@ Here, we test these predictions by reconstructing effective population sizes of 
 ## Results
 
 The focal variables of our hypotheses all lacked phylogenetic signal. Mean effective population sizes and their variation were both higher among migratory lineages, as predicted (Table 1; U=7 and 10, p<0.05 for both; one-tailed Mann-Whitney U-test). The degree of early population growth was also proportionally higher among migrants, as predicted (Table 1; U=9, p<0.05; one-tailed Mann-Whitney U-test), but the rate of this early growth was not different between the two groups (Table 1; U=21.5, p>0.05).
+
+**Table 1.**
+ Data from pairwise sequentially Markovian coalescent (PSMC) analyses reflecting effective population sizes (Ne×104) through history at depths > 50 Kyr and the five variables derived and analyzed from that output.Taxa shaded in gray are Neotropical residents.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Taxon</th>
+      <th>Mean Ne (±SD)</th>
+      <th>SD/mean</th>
+      <th>Degree of early growth 1 - (Ntrough/Npeak)</th>
+      <th>Rate of early growth degree/deltaT</th>
+      <th>deltaT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>H. mustelina</td>
+      <td>35.63 (±20.11)</td>
+      <td>0.56</td>
+      <td>0.86</td>
+      <td>2.92E-07</td>
+      <td>2,946,862</td>
+    </tr>
+    <tr>
+      <td>Catharus fuscescens</td>
+      <td>95.59 (±50.99)</td>
+      <td>0.53</td>
+      <td>0.83</td>
+      <td>1.93E-07</td>
+      <td>4,284,020</td>
+    </tr>
+    <tr>
+      <td>Catharus guttatus E</td>
+      <td>75.34 (±65.69)</td>
+      <td>0.87</td>
+      <td>0.90</td>
+      <td>4.48E-07</td>
+      <td>2,021,768</td>
+    </tr>
+    <tr>
+      <td>Catharus guttatus W</td>
+      <td>39.72 (±24.20)</td>
+      <td>0.61</td>
+      <td>0.81</td>
+      <td>3.28E-07</td>
+      <td>2,477,684</td>
+    </tr>
+    <tr>
+      <td>Catharus minimus</td>
+      <td>63.71 (±28.83)</td>
+      <td>0.45</td>
+      <td>0.78</td>
+      <td>2.17E-07</td>
+      <td>3,594,914</td>
+    </tr>
+    <tr>
+      <td>Catharus ustulatus swainsonii</td>
+      <td>76.61 (±66.61)</td>
+      <td>0.87</td>
+      <td>0.79</td>
+      <td>2.12E-07</td>
+      <td>3,740,764</td>
+    </tr>
+    <tr>
+      <td>Catharus ustulatus ustulatus</td>
+      <td>39.56 (±12.15)</td>
+      <td>0.31</td>
+      <td>0.63</td>
+      <td>2.14E-07</td>
+      <td>2,943,763</td>
+    </tr>
+    <tr>
+      <td>Catharus bicknelli</td>
+      <td>46.90 (±24.12)</td>
+      <td>0.51</td>
+      <td>0.78</td>
+      <td>2.79E-07</td>
+      <td>2,781,554</td>
+    </tr>
+    <tr>
+      <td>Catharus aurantiirostris</td>
+      <td>12.38 (±2.83)</td>
+      <td>0.23</td>
+      <td>–0.75</td>
+      <td>–1.00E-06</td>
+      <td>747,451</td>
+    </tr>
+    <tr>
+      <td>Catharus fuscater</td>
+      <td>11.38 (±1.66)</td>
+      <td>0.15</td>
+      <td>0.39</td>
+      <td>6.18E-07</td>
+      <td>627,449</td>
+    </tr>
+    <tr>
+      <td>Catharus frantzii</td>
+      <td>24.71 (±8.41)</td>
+      <td>0.34</td>
+      <td>0.17</td>
+      <td>2.20E-07</td>
+      <td>774,024</td>
+    </tr>
+    <tr>
+      <td>Catharus gracilirostris</td>
+      <td>29.98 (±9.28)</td>
+      <td>0.31</td>
+      <td>0.58</td>
+      <td>3.52E-07</td>
+      <td>1,637,663</td>
+    </tr>
+    <tr>
+      <td>Catharus mexicanus</td>
+      <td>37.10 (±16.18)</td>
+      <td>0.44</td>
+      <td>0.75</td>
+      <td>3.34E-07</td>
+      <td>2,250,295</td>
+    </tr>
+    <tr>
+      <td>Catharus occidentalis</td>
+      <td>76.40 (±53.14)</td>
+      <td>0.70</td>
+      <td>0.91</td>
+      <td>2.11E-07</td>
+      <td>4,292,405</td>
+    </tr>
+    <tr>
+      <td>Means (±SD)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Migrants</td>
+      <td>59.34 (±35.70)*</td>
+      <td>0.57 (±0.20)*</td>
+      <td>0.798 (±0.08)*</td>
+      <td>2.73E-7 (±0.85E-7)</td>
+      <td>3,098,906 (±732,563)*</td>
+    </tr>
+    <tr>
+      <td>Residents</td>
+      <td>31.99 (±15.25)</td>
+      <td>0.36 (±0.19)</td>
+      <td>0.341 (±0.59)</td>
+      <td>1.23E-7 (±5.69E-7)</td>
+      <td>1,721,547 (+1,409,939)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05._
 
 To examine why the degree of initial migrant population growth was higher but the rate of growth was not, we considered that this might be because that growth extended over a longer period of time. To our surprise, we found that these growth periods were remarkably long, ranging from 0.63 to 4.29 Myr and averaging 2.51 Myr (Table 1, Figure 3). Migratory lineages did have a longer initial period of growth (migrants mean deltaT = 3.10 Myr vs. resident mean deltaT = 1.72 Myr; Table 1; U=9, p<0.05).
 
@@ -71,7 +228,7 @@ Another noteworthy pattern widely shared in this group is that most recent popul
 
 We attribute the higher variation in Ne among migrants to be the result of the relative instability of northern biomes compared with tropical ones through glacial-interglacial cycles (e.g. Colinvaux et al., 2000; Pielou, 1991).
 
-## Population structure
+### Population structure
 
 PSMC estimates of population size can be affected by population structure: a change in structure can produce the signal of a change in size (Mazet et al., 2015; Mazet et al., 2016; Wakeley, 1999). Some of the population size changes we observed might therefore reflect changes only in levels of population connectivity. There are well-understood differences between seasonal migrants and residents in population structure. Migrants generally have lower levels of geographic partitioning of both phenotypic (subspecies) and genetic variation (Belliure et al., 2000; Delmore et al., 2020; Mayr, 1963; Montgomery, 1896). The resident lineages we studied are more prone to this structure than the migrant lineages, with migrants having an average of 2.5 subspecies per lineage and residents having an average of 5.9 (Collar, 2005). Migratory lineages therefore come closer to meet the assumption of PSMC analyses that populations are panmictic. Thus, in addition to our geographic and ecological scenario differing between the migrant and resident lineages we studied, we also have a pervasive effect of population structure affecting our results, likely increasingly complementing geographic expansion among seasonal migrants as lineage ages approach the recent. However, the greatest effects of inflated Ne over evolutionary time would likely occur among nonmigrants, with more isolation and less mixing (Li and Durbin, 2011).
 
@@ -81,7 +238,7 @@ It is also important to consider the time scales involved and the sampling regim
 
 At present, there is no way to fully disentangle the effects of population structure and geographic space on our results, but we make two observations leading us to infer that general differences in population structure are not the main factor driving our results. First, structure will have smaller effects on the PSMC signal in the deep past than in more recent history. Second, climatic changes are known to cause coordinated shifts among codistributed taxa, e.g., in promoting the partitioning of genetic variation among glacial refugia (Hewitt, 2000). A lack of coordinated shifts in our PSMC results suggests that climate-driven shifts in population structure are not a major feature (Figure 5).
 
-## Geography and evolutionary ecology
+### Geography and evolutionary ecology
 
 Early population growth among migrant lineages is likely affected by some degree of ecological release as these birds engage with the novel environments their increased movements expose them to, and they occupy new niche space. However, in this system, we cannot readily decouple the expanded geographic and ecological opportunities that seasonal migration provides. The relationship between avian range size and migration is complex, but correlation with latitude is notably strong in North America (Pegan and Winger, 2020). Two aspects of our results suggest that geography operating alone is unlikely to explain the larger migrant population sizes observed (Table 1, Figure 5). The first is that early population growth is positive in all but one of the lineages we studied; despite a probable lack of marked geographic expansion among residents, they, too, experienced long-term growth. The second is that these initial growth periods are quite long, extending over much longer periods than we should expect for populations responding to opportunities for geographic expansion.
 
@@ -95,7 +252,7 @@ Presently, C. minimus, for example, shows an increased breeding and migratory pr
 
 Interspecific competition has long been studied between migrants and residents, but its potential role in affecting relative population sizes between the two groups is largely unknown (Rappole, 2013). As close relatives, these thrushes are likely to be each other’s closest competitors, so it is conceivable that the increased relative abundance of migrants might depress realized population sizes among residents. In this group, geographic ranges overlap broadly during the nonbreeding season, but the tropical residents tend to occupy higher elevations than nonbreeding migrants (Collar, 2005). Both interspecific competition and inland, montane, and mature-forest retreats among older taxa are major factors in taxon cycles (Ricklefs and Bermingham, 2002; Ricklefs and Cox, 1972; Wilson, 1961) and might also be operating in this system.
 
-## Conclusions
+### Conclusions
 
 Paleodemographic analyses in a hypothesis-testing framework offer important new insights into the effects of the major life-history trait of seasonal migration on long-term effective population sizes. Our results indicate larger and more variable migrant populations relative to residents, and these populations grow in a way suggesting an important role not only for seasonal migration and geography, but also for evolutionary ecology. Although there are several plausible ecological mechanisms, their relative importance is unknown. The differences we found are between group averages, and variation among lineages includes residents that are migrant-like (C. occidentalis; Table 1, Figures 1, 3, and 5) and vice versa (e.g. C. u. ustulatus; Table 1, Figure 5). Understanding why residents like C. occidentalis show migrant-like historic population characteristics will help us understand the mechanisms affecting these lineages. Such reasons could be as simple as realized range expansion (i.e. geographic and ecological opportunity), and this hypothesis appears to fit the deeply split eastern-western sister lineages within species in which smaller western ranges have smaller effective population sizes (C. guttatus and C. ustulatus; Figure 5). Or the reasons might be as complex as a lineage dropping out of migration to become sedentary (C. occidentalis is sister to the migrant C. guttatus; Figure 1).
 
@@ -123,7 +280,7 @@ For all variables, PSMC output for times more recent than 50 Kya was ignored, be
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90848/elife-90848-fig6-v1.jpg)
 
-**Figure 6.:** C. minimus pairwise sequentially Markovian coalescent (PSMC) dataset, showing effective population size (N×10e4) from 50 Kyr back in time to the lineages’ origins as estimated from genomic data.The variables in our analyses are the mean and SD of the effective population size (N) values, edeltaT of initial growth (timetrough – timepeak), the degree of that growth (1 – [Ntrough/Npeak]), and the rate of that growth (degree/deltaT).
+**Figure 6.:** The variables in our analyses are the mean and SD of the effective population size (Ne) values, deltaT of initial growth (timetrough – timepeak), the degree of that growth (1 – [Ntrough/Npeak]), and the rate of that growth (degree/deltaT).
 
 We note that estimates of the dates of divergence events in Catharus evolution vary by study, genetic marker, methodology, and parameter estimates such as generation time and mutation or substitution rates (Outlaw et al., 2003; Topp et al., 2013; Voelker et al., 2013; Winker and Pruett, 2006). Date estimates in our study that differ from previous work reflect these methodological issues, and here it is the relative values among lineages within our study that are most important.
 

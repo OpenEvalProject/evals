@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/019whta54 Department of Fundamental Microbiology, University of Lausanne Lausanne Switzerland
+1. Department of Fundamental Microbiology, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
 
 † Corresponding author
 

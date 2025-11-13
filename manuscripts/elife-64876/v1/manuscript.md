@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05wwcw481 Department of Psychology, Bournemouth University Bournemouth United Kingdom
-2. https://ror.org/033eqas34 Department of Psychology, Justus-Liebig University Giessen Germany
+1. Department of Psychology, Bournemouth University Bournemouth United Kingdom ([ROR:05wwcw481](https://ror.org/05wwcw481))
+2. Department of Psychology, Justus-Liebig University Giessen Germany ([ROR:033eqas34](https://ror.org/033eqas34))
 
 † Corresponding author
 
@@ -36,7 +36,7 @@ As a control, we repeated all analyses after reducing the compression level by i
 
 ## Results
 
-## Behavior
+### Behavior
 
 Participants were instructed to slide the steel tip of the pen containing the accelerometer over the surface of the material sample (Figure 1B). Visual and audio signals were excluded. After a 10-s-long exploration, participants rated each material based on seven descriptors of its haptic properties (roughness, orderliness, hardness, temperature, elasticity, friction, and texture). We used the same materials and similar descriptors as previously used by Baumgartner et al., 2013, who investigated haptic and visual representations of materials. Crucially, in their study participants could touch the stimuli with their barehands; therefore, temperature and softness information was available, whereas in our study participants had mostly to rely on vibratory signals for rating the materials.
 
@@ -46,11 +46,15 @@ To visualize the perceptual representation emerging from the ratings, we perform
 
 **Figure 2.:** (A) Perceptual representation within the first (x-axis) and the second (y-axis) principal components space. Principal components analysis (PCA) was performed on the z-transformed ratings pooled over participants. Each point represents one material, and different colors represent different categories. (B) Same representation as in (A) based on barehand explorations (adapted from Figure 5 of Baumgartner et al., 2013). (C) Distance matrix based on the ratings from our experiment and (D) based on Baumgartner et al., 2013 data.
 
-The emerging representation is remarkably similar to the one discovered by Baumgartner et al., 2013, despite no temperature and limited softness information (Figure 2B). To quantitatively asses this similarity, we computed distance matrices from the ratings (Figure 2C and D). To do so, we correlated the ratings for each pair of materials, then averaged the obtained correlations, resulting in a correlation value for each pair of categories, which is a measure of how close the two categories were perceived. Finally, correlations were transformed into perceptual distances with the following equation:(1)δ=2(1−ρ)
+The emerging representation is remarkably similar to the one discovered by Baumgartner et al., 2013, despite no temperature and limited softness information (Figure 2B). To quantitatively asses this similarity, we computed distance matrices from the ratings (Figure 2C and D). To do so, we correlated the ratings for each pair of materials, then averaged the obtained correlations, resulting in a correlation value for each pair of categories, which is a measure of how close the two categories were perceived. Finally, correlations were transformed into perceptual distances with the following equation:
+
+$$
+\delta=\sqrt{2(1−ρ)}
+$$
 
 The distance matrix we obtained is highly correlated with the one from Baumgartner et al., 2013: r = 0.69, p<0.05, indicating that perceptual representations are very similar. The missing temperature and limited softness information did not much affect the perceptual representation we inferred from our rating experiment, which could therefore be thought as representative for natural haptic perception.
 
-## Unsupervised learning
+### Unsupervised learning
 
 The Autoencoder learned a compressed latent representation to reconstruct the signals provided as input (Figure 1C). We evaluated reconstruction performance by correlating the input with the corresponding output signals and computing R2. Performance is computed for the train set (95% of the data) and the test set (remaining 5%). The reconstructed signals could explain 25% of the variance of the original signals for the train set and 23% for the test set. The learned latent representation is redundant: 95% of the variance of the latent representation of the full data set can be explained with 10 principal components.
 
@@ -100,19 +104,19 @@ Crucially, the similarity between perceptual representations and the representat
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Eleven students (seven females) participated in the experiment; all were volunteers, naïve to the purpose of the experiment, and were reimbursed for their participation (8 euros/hr). All participants were right-handed and did not report any sensory or motor impairment at the right hand. The study was approved by the local ethics committee LEK FB06 at Giessen University and was in line with the Declaration of Helsinki from 2008. Written informed consent was obtained from each participant.
 
-## Vibratory signals
+### Vibratory signals
 
 Participants freely explored 81 out of 84 material samples used by Baumgartner et al., 2013 with a steel tool tip. Three samples had to be excluded because they were not well preserved. The tip was mounted on a 3D-printed pen and connected to an accelerometer (ADXL345) so that the vibrations elicited by the interaction between the tip and the material samples could be recorded. For each material, 10 s of recording were acquired at 3200 Hz temporal resolution. Then, each recording was parsed into 125 vibratory signals of 80 ms each. This yields a total of 111,375 vibratory signals. To prevent signals from getting affected by the onset and offset of contact between the tool and the material surface, we started the recording after 2 s of exploration and stopped it 2 s before the exploration was terminated. Frequencies below 10 Hz were ascribed to exploratory hand movements and therefore were filtered out (Strese et al., 2014; Strese et al., 2017; Romano and Kuchenbecker, 2014; Culbertson et al., 2014). If not removed, vibrations due to hand movements constitute a potential confound because participants could move their hand differently depending on the material, presumably because of the biophysical interaction between their hand and the surfaces (Callier et al., 2015). We also removed frequencies above 800 Hz as they are not relevant for perception of texture properties of materials (Hollins et al., 2001; BensmaIa and Hollins, 2003; Bensmaïa and Hollins, 2005; Weber et al., 2013; Manfredi et al., 2014) and may be caused by measuring noise.
 
-## Rating experiment
+### Rating experiment
 
 Participants sat at a table looking at a monitor on which instructions and rating scales were displayed. Material samples were positioned by the experimenter in front of them. Vision of the samples was prevented by a blind, and sound resulting from the exploration of the materials was covered by earplugs and white noise displayed over headphones. Prior to every trial, participants were informed to grab the pen with the accelerometer and prepare for the exploration. The onset of the white noise signaled that they could begin with the exploration. They were instructed to slide the pen over the material’s surface. 2 s after the onset of the white noise, the vibratory signal was recorded for 10 s. After this, participants were informed to stop the exploration. White noise was played for two more seconds. Subsequently, participants reported first how much the explored material felt like each of the seven material categories (paper, fabric, animal, stone, plastic, wood, metal) by clicking for each on a scale ranging from complete dissimilarity to complete similarity with this category (e.g. ‘no wood’–‘wood’). Then, they rated the material according to seven antagonist adjective pairs again by clicking for each on a scale with the outermost positions corresponding to the two adjectives. We used the same descriptors as used by Baumgartner et al., 2013: rough vs. smooth, hard vs. soft, orderly vs. chaotic, warm vs. cold, elastic vs. not elastic, high friction vs. slippery, textured/patterned vs. homogeneous/uniform, omitting descriptors related to the visual appearance (glossiness, colorfulness, three-dimensionality). The experiment was carried out using PsychoPy (Peirce et al., 2019). Before all analyses described in the results, we z-transformed the ratings separately for each descriptor and each participant to convert them into a common scale and reduce the impact of subjective criteria.
 
-## Deep neural network
+### Deep neural network
 
 The network used for the analyses described in the article is a relatively simple Deep Convolutional Autoencoder. The encoder encodes the 256 time samples of each vibratory pattern into a latent representation consisting of one point in a 16-feature space (i.e., code). This is done by means of four 1D convolutional layers, each of them with kernel size equal to five time samples.
 
@@ -120,26 +124,40 @@ The size of the representation in time is progressively reduced by means of a ma
 
 The code is decoded by the decoder to reconstruct the input signals. The first convolutional layer of the decoder takes as input and outputs one time sample per 16 features. The upsampling operation increases the number of time samples from 1 to 4. This is done by repeating each temporal step four times along the time axis. The second convolutional layer takes as input and outputs four time samples for 16 features. Upsampling increases the time samples from 4 to 16. The third convolutional layer takes as input 16 time samples per 16 features and outputs 16 time samples per 32 features. Upsampling increases the time samples from 16 to 64. The fourth convolutional layer takes as input 64 time samples for 32 features and outputs 64 time samples for 64 features. Upsampling increases the time samples from 64 to the original size (i.e., 256). The fifth and last convolutional layer takes as input 256 time samples per 64 features and outputs 256 time samples. Thus, input and output have the same size and can be directly compared within the loss function.
 
-The activation function (∏) of all convolutional layers is the rectified linear unit (Equation 2), with the exception of the last layer of the decoder, for which it is a sigmoid function (Equation 3).(2)Π(x)=max(0,x)(3)Π(x)=1/(1+e−x)
+The activation function (∏) of all convolutional layers is the rectified linear unit (Equation 2), with the exception of the last layer of the decoder, for which it is a sigmoid function (Equation 3).
 
-Training consisted of 50 epochs to minimize the mean absolute error (MAE) loss function:(4)MAE=1N∑i=0N|yi−yi^|
+$$
+Π(x)=max(0,x)
+$$
 
-With yi the i vibratory signal of the training set (consisting of N signals), and yi^ the corresponding reconstructed signal.
+
+
+$$
+Π(x)=1/(1+e^{−x})
+$$
+
+Training consisted of 50 epochs to minimize the mean absolute error (MAE) loss function:
+
+$$
+MAE=\frac{1}{N}\sumi=0N|y_{i}−y_{i}^|
+$$
+
+With $y_{i}$ the i vibratory signal of the training set (consisting of N signals), and $y_{i}^$ the corresponding reconstructed signal.
 
 The network was adapted from Chollet, 2016 to work with one-dimensional data rather than images. The implementation and training of the network were done through the Keras deep learning framework (Chollet, 2015) via its Python interface.
 
-## Networks with different compression rates
+### Networks with different compression rates
 
 We started from the architecture described above and changed the bottleneck to reduce the level of compression. To do so, we increased the number of features in the latent space (i.e., from 16 to 32, 64, 192, 256; with compression rate from 6.25% to 25, 50, 75, and 100%). To make sure that none of the intermediate layers had a lower dimensionality than the latent space, we imposed their number of features to be not less than the dimensionality of the latent space.
 
-## Linear classification
+### Linear classification
 
 Classification was done based on the latent PCs space dimensions by iteratively leaving out one material per category, training the classifier on the remaining signals, and computing performance on the leftout samples. Before classification, the latent representations of all signals of each material sample were averaged, so that there was one point for each material sample. As a conservative method for hypothesis testing, we used bootstrap analysis to assess the significance of all classification results. For that, we repeated the classification analysis 5000 times under the null hypothesis of no relationship between the points in the latent PC space and the material categories, that is, we shuffled the category labels. This produced the accuracy distribution under the null hypothesis of chance-level classification; the 95% confidence interval was computed by reading out the 2.5th and 97.5th percentiles of the distribution. The empirical chance level corresponded to the mean of that distribution. The labels used for training and testing were either the ground truth material categories (example in Figure 3B) or the ones assigned by participants (example in Figure 3C). To assign category labels to different material samples, first we assigned to each material the highest rated material category by each participant, then we chose the most frequent category, that is, the one chosen by the majority of participants. The between-participants agreement level is computed based on each participant’s category rating. Again, for each sample, we assigned a category label as the highest rated category for each participant. Then, we considered each participant for testing, iteratively, and computed the predicted category as the one chosen by the majority of the other participants. The agreement level is the classification accuracy computed by comparing the predicted and the testing category labels.
 
-## Temporal tuning
+### Temporal tuning
 
 We fed the network with 830 sinusoids with frequencies ranging from 0 to 800 Hz and computed their representation in the latent PCs space. Temporal tuning is given by the normalized (range is forced between 0 and 1) model responses as a function of temporal frequency. For the tactile afferents, sensitivity is computed as normalized inverse of the discrimination thresholds from Kandel et al., 2000; Mountcastle et al., 1972.
 
-## Data availability
+### Data availability
 
 The analysis code is publicly available. The code for processing the vibratory signals and the Python code for training the DNNs and saving the reconstructed signals and the latent representations is available at GitHub (here; Toscani, 2021 copy archived at swh:1:rev:53b1d7407307c00f08543cad096f983217a53ef2).

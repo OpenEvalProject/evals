@@ -37,35 +37,99 @@ Several studies have shown that C-mannosylation is important for proper secretio
 
 ## Results
 
-## C-mannosylation becomes critical for secretion of UNC-5 TSRs with increasing temperature
+### C-mannosylation becomes critical for secretion of UNC-5 TSRs with increasing temperature
 
 Secretion of TSRs from C. elegans netrin receptor UNC-5 (Figure 1C) was analyzed at 20, 24°C and 28°C in naturally C-mannose-negative Drosophila S2 cells (Hofsteenge et al., 2001; Krieg et al., 1997). C-mannosylation of the TSRs was obtained by co-expression of the C. elegans DPY-19 C-mannosyltransferase. A C-mannosylation-independent Notch EGF16–20 fragment was used as transfection and secretion control.
 
 At 20°C, secretion of UNC-5 TSRs was higher from cells co-expressing DPY-19 than from C-mannosylation-negative cells (Figure 2). At increasing temperatures, secretion of C-mannosylated TSRs was not affected, whereas secretion of non-mannosylated TSRs further declined gradually. Intracellular UNC-5 TSR levels were comparable at all conditions confirming that the cells were able to produce C- and non-mannosylated TSRs per se (Figure 2). Thus, impaired temperature-dependent secretion of non-mannosylated TSRs implied a role of C-mannoses in protein stability and/or protein folding.
 
-## C-mannosylation increases resistance of UNC-5 TSR2 to thermal denaturation
+![Figure 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig2-v2.jpg)
+
+**Figure 2.:** Western blot analysis of secreted (upper panel) and intracellular (lower panel) UNC-5 TSRs 1+2 expressed in Drosophila S2 cells, co-transfected with C. elegans DPY-19 (+) or an empty vector (-) and incubated at 20, 24°C and 28°C as indicated. V5-tagged EGF repeats 16–20 from Drosophila Notch were used as transfection and secretion control. Both proteins were detected by anti-V5 antibody. An analog temperature-sensitivity can be observed in C. elegans dpy-19 mutants (Figure 2—figure supplement 1).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** C. elegans dpy-19(e1259)III worms (strain CB1259 from the Caenorhabditis Genetics Center) were grown on E. coli OP50 cells as described in WormBook (www.wormbook.org) at 18, 20, 22 and 24°C.
+
+### C-mannosylation increases resistance of UNC-5 TSR2 to thermal denaturation
 
 To explore the impact of C-mannosylation on TSR stability, the second TSR (TSR2) of UNC-5 (Figure 1B,C) was produced with and without C-mannoses in Drosophila S2 cells. Presence of C-mannoses was verified by mass spectrometry, showing that the major fraction of the protein was modified on the first two tryptophans of the WXXWXXW motif (Figure 3—figure supplement 1). The correct folding of both TSR forms was confirmed by circular dichroism (CD) spectroscopy showing TSR-typical spectra with characteristic maxima near 230 and 212 nm and a minimum in the 195–200 nm region (Figure 3A) (Huwiler et al., 2002; Roszmusz et al., 2002; Smith et al., 1984). Disappearance of the 230 nm maximum was used to monitor thermal unfolding of mannosylated and non-mannosylated TSRs (Figure 3B). The C-mannosylated TSR revealed a significantly higher melting temperature (Tm = 59.5°C) compared to the non-mannosylated form (Tm = 50.4°C) showing that C-mannosylation on W1 and W2 of the WXXWXXW motif strongly increases the resistance of the TSR to thermal denaturation.
 
-## Molecular dynamics simulation of the thermal denaturation
+![Figure 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-v2.jpg)
+
+**Figure 3.:** (A) Native CD spectra of non-mannosylated (blue) and C-mannosylated (green) UNC-5 TSR2 at 24°C. Average spectra of three measurements are displayed for each TSR form (Figure 3—source data 1). (B) Thermal denaturation of non- and C-mannosylated UNC-5 TSR2 monitored by CD spectroscopy at a wavelength of 229 and 228 nm, respectively. Measurements of three non-mannosylated (gray-shaded squares) and C-mannosylated (gray-shaded circles) UNC-5 TSR2 samples were averaged and fitted (blue and green, respectively) (Figure 3—source data 2). Average Tm values are depicted in the right plot (error bars show standard deviation). Thermal denaturation of both, non- and C-mannosylated TSRs, was reversible to a high extent (Figure 3—figure supplement 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Extracted ion chromatograms of (M + 2H)2+ ions of the UNC-5 TSR2 tryptic peptide containing the WXXWXXW motif with no, one, two and three hexoses are displayed revealing that the di-mannosylated form is most abundant. (B) MSMS spectrum of the di-mannosylated UNC-5 TSR2 (m/z = 1326.51) showing that the two C-mannoses are located on the first two tryptophans of the WXXWXXW motif. b- and y- series ions with additional hexose masses are marked either by a green circle displaying a full mannose or by a broken circle displaying a cross-ring cleaved C-mannose (loss of 120 Da).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Thermal denaturation and recovery upon temperature decrease of C-mannosylated (green) and non-mannosylated (blue) UNC-5 TSR2 were monitored by CD spectroscopy at a wavelength of 228 and 229 nm, respectively. Collected data points were fitted by Boltzmann function (OriginLab). 260–190 nm spectra of native and recovered TSRs display refolding of the proteins to a high extent.
+
+### Molecular dynamics simulation of the thermal denaturation
 
 To understand the structural dynamics behind the increased resistance of the C-mannosylated TSR during thermal denaturation, we performed molecular dynamics simulations of a modeled UNC-5 TSR2 structure with and without C-mannosylation at elevated temperature of 75°C for 200 ns. Each simulation was repeated three times.
 
 In both TSR forms, the Trp-Arg ladder scaffold was mostly maintained during the simulation, presumably because of restricted dynamics due to the three disulfide bridges. However, positions of arginines and tryptophans in the C-mannosylated TSR remained more constrained in all three simulation replicates (Figure 4A) indicating that the Trp-Arg ladder structure in the C-mannosylated TSR is more rigid compared to the non-modified TSR. Particularly Trp5 – the first tryptophan of the WXXWXXW motif – appeared highly flexible and diverged from the residual Trp-Arg ladder organization in the non-mannosylated form (Figure 4—videos 1 and 2). This was confirmed by calculated root-mean-square fluctuations (RMSF) of single residues as depicted by the blue-white-red color gradient of the representative TSR structures from each simulation replicate (Figure 4B, Figure 4—figure supplement 1). Correspondingly, calculated cation-π interactions between Trp5 and Arg24 were found to be maintained in the C-mannosylated TSR but not in the non-modified TSR (Figure 4—figure supplement 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-v2.jpg)
+
+**Figure 4.:** (A) Modeled structures of UNC-5 TSR2 without C-mannosylation (top) and with two C-mannoses on Trp5 and Trp8 (bottom) at the starting point of each simulation followed by aligned Trp-Arg ladder structures from three simulation replicates after 100 and 200 ns simulation time. Tryptophans are depicted in light-blue, mannoses in green and arginines in salmon. (B) Representative most-abundant structures of non- and C-mannosylated UNC-5 TSR2 from each simulation, colored using a blue-white-red gradient according to the calculated root-mean-square fluctuation (RMSF) values (blue ≤1 Å; red ≥8 Å) (Figure 4—figure supplement 1, Figure 4—source data 1). (C) Hydrogen bonds (cyan) formed by C-mannosylated Trp5 and Trp8 with adjacent residues, calculated using the VMD Hydrogen Bonds plugin. Oxygen atoms are depicted in red and nitrogen atoms in dark-blue. (D) Most abundant hydrogen bonds formed during each simulation either by C-mannoses together with corresponding tryptophan residues or by non-mannosylated tryptophans alone are displayed as occupancies (%). A more detailed representation is depicted in Figure 4—figure supplement 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mean RMSF values from simulation triplicates are shown in black for the C-mannosylated and in gray for the non-mannosylated TSR. Error bars depict calculated standard error. The three TSR beta-strands are displayed as gray boxes above the protein sequence. Tryptophan and arginine residues forming the Trp-Arg ladder are highlighted in red.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The energies were calculated using the CaPTURE program (Gallivan and Dougherty, 1999) and are displayed for each interacting Trp and Arg residue pair in each simulation triplicate. (B) Representation of the energy values as mean values for each residue pair with corresponding interquartile (boxes) and 5th/95th percentile (whiskers) ranges.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Trp-Arg ladder after 100 and 200 ns simulation time is displayed aligned with corresponding Trp-Arg ladder structures from UNC-5 TSR2 with 4C1 C-mannoses (transparent). Tryptophans are depicted in light-blue, C-mannoses in green, arginines in salmon, oxygen atoms in red and nitrogen atoms in blue.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Gray bars display hydrogen bonds from three independent simulations formed either by tryptophans with 4C1-C-mannoses or by non-mannosylated tryptophans. Blue bars correspond to C-mannoses in 1C4 conformation. In case of C-mannosylated tryptophans, both tryptophan and mannose residues were included into calculations.
+
 Furthermore, we found hydrogen bond interactions between C-mannoses and the neighboring side chains as well as the backbone of the corresponding tryptophan residues throughout the simulations (Figure 4C,D and Figure 4—figure supplement 4). Thus, C-mannoses appeared to keep the tryptophans in specific orientations not only by affecting their conformational space but also by forming polar interactions with surrounding residues.
 
 We performed the simulations with mannoses in a 4C1-chair conformation according to previously published crystal structures of C-mannosylated TSRs (Aleshin et al., 2012; Hamming et al., 2012). However, because NMR studies (de Beer et al., 1995; Nishikawa et al., 2005) and recently resolved TSR crystal structures (Pedersen et al., 2019; Pronker et al., 2016; van den Bos et al., 2019) suggest that C-mannoses can occur in 4C1 and 1C4 forms, we also performed a simulation with C-mannoses in 1C4-chair arrangement (Figure 4—video 3). For both conformations, we observed similar maintenance of the Trp-Arg ladder and ability to form hydrogen bonds (Figure 4—figure supplements 3 and 4).
 
-## C-mannosylation decreases the unfolding rate of UNC-5 TSR2 under reducing conditions
+### C-mannosylation decreases the unfolding rate of UNC-5 TSR2 under reducing conditions
 
 To evaluate the effects of C-mannosylation on the structure of a TSR aside from the impact exerted by the disulfide bonds, we analyzed non- and C-mannosylated UNC-5 TSR2 under reducing conditions by CD spectroscopy. Upon addition of 2 mM DTT, both proteins started to unfold immediately, showing that the disulfides are essential for the TSR structure. Denaturation of the C-mannosylated TSR, however, occurred approximately 1.8 times slower than that of the non-mannosylated repeat (Figure 5A). C-mannosylation might decrease the accessibility of the disulfide bridges by DTT, but could also protect the Trp-Arg ladder organization of the TSR.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig5-v2.jpg)
+
+**Figure 5.:** (A) Reductive denaturation of non-mannosylated (blue) and C-mannosylated (green) UNC-5 TSR2 monitored using CD spectroscopy at a wavelength of 229 and 228 nm, respectively. Measurements of three non-mannosylated (gray-shaded squares) and C-mannosylated (gray-shaded circles) UNC-5 TSR2 samples were averaged and fitted (Figure 5—source data 1). Average half-life values are depicted in the right plot (error bars show standard deviation). (B) Modeled structures of UNC-5 TSR2 lacking disulfide bridges without C-mannosylation (top) and with two C-mannoses on Trp5 and Trp8 (bottom) at the starting point of each simulation followed by aligned Trp-Arg ladder structures from three simulation replicates after 100 and 200 ns simulation time. Tryptophans are depicted in light-blue, mannoses in green and arginines in salmon. (C) Final structures of non- and C-mannosylated UNC-5 TSR2 after each 200 ns simulation, colored using a blue-white-red gradient according to the calculated root-mean-square fluctuation (RMSF) values (blue ≤1 Å; red ≥5 Å) (Figure 5—figure supplement 1, Figure 5—source data 2). Cys26 and Cys38 residues, that are involved in the upper disulfide bridge of the TSR, are labeled with one or two asterisks, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Mean RMSF values from simulation triplicates are shown in black for the C-mannosylated and in gray for the non-mannosylated TSR. Error bars depict calculated standard error. The three TSR beta-strands are displayed as gray boxes above the protein sequence. Tryptophan and arginine residues forming the Trp-Arg ladder, as well as Cys26 and Cys38, are highlighted in red.
+
 To visualize putative structural effects of C-mannosylation, we performed molecular dynamics simulation studies of non- and C-mannosylated UNC-5 TSR2 lacking disulfide bonds at 24°C. As in the thermal denaturation simulation, non-mannosylated TSR revealed an increased flexibility of Trp5 in the Trp-Arg ladder organization in comparison to the C-mannosylated TSR (Figure 5B,C and Figure 5—figure supplement 1). Additionally, Cys26 (marked by *) involved in the upper disulfide bridge showed lower fluctuation values and thus decreased flexibility in the C-mannosylated TSR (Figure 5C, Figure 5—figure supplement 1) which might be relevant for the disulfide bond formation during protein folding.
 
-## C-mannosylation supports folding of UNC-5 TSR2
+### C-mannosylation supports folding of UNC-5 TSR2
 
 To further investigate the role of C-mannoses in TSR folding, oxidative folding experiments were performed with non- and di-mannosylated UNC-5 TSR2. After reduction and unfolding of the TSRs with DTT and guanidine hydrochloride, the refolding of the proteins was monitored by CD spectroscopy in the presence of 1 mM reduced and 0.5 mM oxidized glutathione (GSH and GSSG) for three hours. Both TSRs were able to form native-like conformations as demonstrated by the appearance of the characteristic TSR peak in CD spectra (Figure 6A). Still, folding initiation of the C-mannosylated TSR occured significantly faster compared to the non-modified protein (Figure 6A, Figure 6—figure supplement 1), confirming that C-mannosylation plays a role in the folding of UNC-5 TSR2.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-v2.jpg)
+
+**Figure 6.:** (A) Oxidative refolding of previously reduced and unfolded non- and di-mannosylated UNC-5 TSR2 monitored by CD spectroscopy in presence of 0.5 mM GSSG and 1 mM GSH at 24°C. The first spectrum was recorded 9 min after removal of denaturating agents and addition of GSSG/GSH. Subsequent spectra were recorded every 10 min. (B) Nickel affinity purification chromatograms of secreted non- and C-mannosylated His-tagged TSR2 from Drosophila S2 cells. Whereas C-mannosylated TSR2 appeared primary as monomer (a), non-mannosylated TSR revealed a high amount of dimeric structures (b), which bound stronger to the nickel affinity column and were confirmed by gel filtration chromatography and non-reducing SDS-PAGE. Highly increased formation of dimers was consistently observed in over ten independent purifications.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Four independent folding reactions of proteins with and without C-mannose were followed at a wavelength of 229 and 228 nm, respectively, at 24 or 32°C.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Secreted non- and C-mannosylated TSR2 from Drosophila S2 cells were purified by nickel affinity (Figure 6B) and gel filtration and analyzed by MALDI-TOF MS with 5 mg/ml α-cyano-4-hydroxycinnamic acid as matrix, using a 5800 MALDI TOF/TOF (ABSciex). (A) The nickel affinity chromatography fraction b (Figure 6B, left panel) was detected at two m/z values. One peak corresponds to the expected mass of a singly charged dimer of TSR2 (monoisotopic m/z: 14284.88). A second peak likely represents the doubly charged dimer of TSR2 (calculated m/z: 7142.94). (B) The nickel affinity chromatography fraction a (Figure 6B, left panel) was mainly detected at a size corresponding to the calculated monomer (m/z: 7142.94). (C) The nickel affinity chromatography fraction a (Figure 6B, right panel) likely represents the expected singly charged monomer with two mannoses attached (calculated m/z: 7467.04).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/52978/elife-52978-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** UNC-5 TSR2 from stably transfected S2 cells + DPY-19 after purification by nickel affinity chromatography was applied to the Xbridge Prep C185 µm, 10 × 50 mm column (Waters), equilibrated in 10% acetonitrile, 0.05% trifluoroacetic acid at 1 ml/min. Di-, mono- and non-mannosylated TSR2 were eluted with a linear gradient of 10–40% acetonitrile over 30 ml and detected at 280 nm.
 
 Indeed, purification of non- and C-mannosylated TSRs from Drosophila S2 cells showed that the folding of non-mannosylated TSRs was affected. Next to monomeric TSRs, a fraction with higher nickel affinity was secreted (Figure 6B). This fraction was interpreted as a covalently linked dimer since it showed a higher mobility in gel filtration (Figure 6B) and the double mass of the monomer in the MALDI-TOF spectrum (Figure 6—figure supplement 2). On SDS-PAGE, the mobility became identical to the monomer upon reduction by DTT (Figure 6B) indicating connection by aberrant disulfides. In cells co-expressing DPY-19 C-mannosyltransferase, dimeric TSR formation was significantly reduced. These results argue for an accelerated folding initiation of the C-mannosylated TSR in the ER and a critical role of C-mannosylated tryptophans for the native disulfide connections.
 
@@ -85,27 +149,156 @@ In conclusion, our experiments support a model in which C-mannosylation of trypt
 
 ## Materials and methods
 
-## Plasmids and protein constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>Thermo Fisher</td>
+      <td>S2 (Schneider 2), R69007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>C. elegans dpy-19 mutants</td>
+      <td>Caenorhabditis Genetics Center</td>
+      <td>dpy-19 (e1259) III, strain CB1259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIB-DPY-19</td>
+      <td>(Buettner et al., 2013)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMT- UNC-5-TSR1+2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMT- UNC-5-TSR2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMT- Notch-EGF16–20</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (mouse monoclonal)</td>
+      <td>Acris</td>
+      <td>SM1691</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MODELLER</td>
+      <td>(Sali and Blundell, 1993)</td>
+      <td>RRID:SCR_008395</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Schrödinger MacroModel</td>
+      <td>Schrodinger Suite, available online (Watts et al., 2014)</td>
+      <td>RRID:SCR_016747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NAMD 2.11</td>
+      <td>(Phillips et al., 2005)</td>
+      <td>RRID:SCR_014894</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM27 force field</td>
+      <td>(MacKerell et al., 1998)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Particle mesh Ewald method</td>
+      <td>(Darden et al., 1993)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>data2bfactor, color_b scripts</td>
+      <td>The PyMOL Molecular Graphics System, Version 1.2r3pre, Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>hierarchical clustering</td>
+      <td>(Kelley et al., 1996)</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CaPTURE</td>
+      <td>(Gallivan and Dougherty, 1999)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PiStar-180</td>
+      <td>Applied Photophysics</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids and protein constructs
 
 The pIB vector (Invitrogen) was used for constitutive expression of the C. elegans DPY-19 protein (pIB-DPY-19) (Buettner et al., 2013). The pMT/BiP/V5-His A vector (Invitrogen) was used for expression of V5- and His-tagged C. elegans UNC-5 TSRs 1+2 and Drosophila Notch EGF repeats as well as His-tagged C. elegans UNC-5 TSR2 (corresponding protein sequences are depicted in Supplementary file 1).
 
-## Protein expression in S2 cells for western blot analysis
+### Protein expression in S2 cells for western blot analysis
 
 Transfection of Drosophila S2 cells in Insect-XPRESS Protein-free Medium (Lonza) was performed using FuGENE HD (Promega) and Opti-MEM (Invitrogen) – 2 ml cells were transfected using 2 µg pMT-UNC-5-TSR1+2 plasmid and 1 µg pMT-Notch-EGF16–20. After 6 hr at 24°C, pMT-vector expression was induced with 0.2 mM CuSO4. Induced cells were sub-divided and incubated at 20, 24°C and 28°C for 3 days. 1/10th of the cell media was mixed with 5 × Laemmli (300 mM Tris-HCl [pH 6.8], 10% SDS, 50% glycerol, 25% β-mercaptoethanol, 0.05% bromophenol blue). 1/10th of cells was resuspended in 20 µl 1 × Laemmli. All samples were heated for 10 min at 95°C and separated by SDS-PAGE (5%/15%). Proteins were detected on a nitrocellulose membrane with mouse anti-V5 antibody (1:5000; Acris) and IRDye 800 conjugated goat anti-mouse secondary antibody (1:20000; LI-COR). Blots were scanned on a LI-COR Odyssey Infrared Scanner. Prestained marker bands (Page-Ruler, Fermentas) were detected at 700 nm. The experiment was repeated five times with independently transfected cells.
 
-## Protein expression in S2 cells for CD spectroscopy
+### Protein expression in S2 cells for CD spectroscopy
 
 20 ml S2 cells were transfected either with 20 µg pMT-UNC-5-TSR2 plasmid or with 10 µg pMT-UNC-5-TSR2 and 10 µg pIB-DPY-19 as described above. Upon induction, cells expressing UNC-5 TSR2 were incubated at 24°C, and cells expressing UNC-5 TSR2 and DPY-19 at 28°C (to avoid secretion of non-mannosylated UNC-5 TSR2). After 4 days of incubation, cell media were centrifuged for 3 min at 300 × g and 4.500 × g, filtered through 0.2 µm cellulose acetate membrane (Waters) and dialyzed against 500 ml 20 mM Tris-HCl pH 8, 500 mM NaCl using 2000 MWCO dialysis tubes (Carl Roth). For nickel affinity chromatography, samples were mixed with 20 mM imidazole and loaded on 1 ml HisTrap HP columns (GE Healthcare). Proteins were eluted with a linear gradient of 20–350 mM imidazole over 7 ml and detected at 280 nm. Fractions containing monomeric UNC-5 TSR2 were applied to a 30 ml gel filtration column (Bio-Gel P-10 fine, Bio-Rad) in 10 mM KPi pH 7.6, 5 mM NaCl. Protein-containing fractions were concentrated using Vivaspin 6 MWCO 3000 (GE Healthcare).
 
-## Protein expression in S2 cells for oxidative folding
+### Protein expression in S2 cells for oxidative folding
 
 200 ml of stably transfected S2 cells expressing either pMT-UNC-5-TSR2 alone or in combination with pIB-DPY-19 at a density of 3 × 106 cells/ml were induced using 4 µM CdCl2 and incubated for 4 days at 24 or 28°C, respectively. The cell media were centrifuged, filtered, dialyzed and purified by nickel affinity chromatography as described above. The monomeric proteins were additionally purified by C18 chromatography (Xbridge TM Prep C18 5 µm, 10 × 50 mm column, Waters) to separate di-, mono- and non-mannosylated TSR2 forms (Figure 6—figure supplement 3) prior to gel filtration in 100 mM Tris pH 8 and concentration.
 
-## CD spectroscopy, thermal and reductive denaturation
+### CD spectroscopy, thermal and reductive denaturation
 
 Measurements were performed with a 3 mm high precision quartz cuvette (Hellma Analytics) using protein solutions of 0.1 mg/ml (in 10 mM KPi pH 7.6, 5 mM NaCl) in a PiStar-180 (Applied Photophysics) system with the Equilibrium Sampling Handling Unit (ESHU). To obtain native CD spectra, scans with 5 nm bandwidth of 260–178 nm with 1 nm steps and 16 s/step sampling time were performed at 24°C. Three spectra were averaged and smoothed using the Savitsky-Golay algorithm (3-point smooth). For thermal denaturation, 24–95°C temperature ramping with 1°C steps and 1.5 °C/min ramping rate was used. For reductive denaturation, 2 mM DTT was added to the samples, and after 2 min mixing time, the kinetics were detected with 16 s/step sampling time for 3600 s at 24°C. In both denaturation experiments, the ellipticity changes were monitored at 228 nm for the C-mannosylated and at 229 nm for non-mannosylated TSR. To determine the melting temperatures, the average values from measurements of three protein samples, independently produced by transient transfection of S2 cells, were calculated and fitted by a Boltzmann function (OriginLab). For calculations of the half-time values, a first-order exponential decay function was used for the fitting (ExpDec1, OriginLab).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 A structural model of UNC-5 TSR2 was based on the available crystal structure of the human UNC5A TSR (PDB 4V2A, 62% amino acid positives and no gaps) using MODELLER (Sali and Blundell, 1993). Positions of C-mannoses on Trp5 and Trp8 were derived from the positions of C-mannoses in complement component C6 (3T5O), IL-21 receptor (3TGX) and ADAMTS13 (3VN4). Force field parameters for C-mannoses were created manually. Prior to MD simulations, the structural models were energy minimized using Schrödinger MacroModel and the OPLS3 force field (Schrodinger Suite, available online; Watts et al., 2014), and fully solvated with the TIP3P water model (Jorgensen et al., 1983). The net charge of the systems was neutralized by adding counter ions. All simulations were performed using NAMD 2.11 (Phillips et al., 2005) and the CHARMM27 force field (MacKerell et al., 1998). A time-step of 1 fs was used. Long-range electrostatics were treated with the particle mesh Ewald method (Darden et al., 1993) and a 12 Å cutoff was used for nonbonded short-range interactions. First, an additional energy minimization and a 5 ns equilibration were performed at a constant temperature of 310 K and pressure (1 atm), followed by 200 ns MD simulations. For the simulation at elevated temperature, mimicking thermal denaturation conditions, MD simulations were carried out at constant temperatures of 348 K for 200 ns. For the simulation of the reductive denaturation, all disulfide bonds between cysteine residues were removed. The simulations were performed for 200 ns at 297 K. For both conditions, three independent simulations were performed and compared.
 
@@ -113,6 +306,6 @@ Hydrogen bonds between tryptophan residues and the protein were determined at di
 
 For the calculation of putative cation-π interactions in the protein structures, PDB files of single frames from the MD trajectories were analyzed with the CaPTURE program (Gallivan and Dougherty, 1999).
 
-## Oxidative folding
+### Oxidative folding
 
 Non- and C-mannosylated UNC-5 TSR2 (0.14 mg/ml) were denatured in 200 mM DTT and 6 M guanidine hydrochloride overnight at 24°C. The samples were desalted at 32°C using a 5 ml HiTrap desalting column (GE Healthcare) and the folding buffer (50 mM Tris HCl pH 8.4, 100 mM NaCl). The refolding reaction was performed in the presence of 0.5 mM GSSG and 1 mM GSH (Sigma) at 24°C and was monitored for 3 hr by CD spectroscopy. Scans of 260–190 nm were performed with 1 nm steps and 8 s/step sampling time, whereby 10 min per scan were required. The experiment was performed four times in total, at two temperatures (24°C and 32°C), whereby the same effect was observed.

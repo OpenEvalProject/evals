@@ -24,6 +24,14 @@ Complex three-dimensional organs arise from simple tissue primordia, and in many
 
 We use the formation of a narrow-lumen tube in the Drosophila embryo as a model system to identify key requirements for successful organ formation. The symmetrical tubes of the embryonic salivary glands form from a flat, nearly circular epithelial primordium, the salivary gland placode (Figure 1A). We recently uncovered a patterning of key cell behaviors that drive the initiation and earliest stages of the tube budding process (Gillard et al., 2021; Sanchez-Corrales et al., 2018). Interestingly, the point of invagination from the circular placode primordium is not in the center of the placode, but in an asymmetric, eccentric position in the dorsal-posterior corner (Figure 1A). Using quantitative morphometric methods, we showed that the early apical constriction and associated cell wedging at the position of the invagination pit initiates the tissue bending (Booth et al., 2014; Sanchez-Corrales et al., 2018). Isotropic constriction driven by apical-medial actomyosin is concentrated near the forming invagination pit (Figure 1A’ and A’’), but at a distance to the pit a second cell behavior dominates cell intercalation. Driven by a polarised junctional accumulation of actomyosin, cell intercalation events such as T1 exchanges and rosette formation and resolution help to elongate the tissue radially toward the invagination pit and contract it circumferentially, via circumferential neighbor gains (Figure 1A’; Sanchez-Corrales et al., 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig1-v2.jpg)
+
+**Figure 1.:** (A) The tubes of the salivary glands form from a flat epithelial placode with a circular geometry. Cells invaginate through an asymmetrically positioned invagination pit at the dorsal-posterior corner, embryonic axes of anterior-posterior (AP) and dorso-ventral (DV) are indicated. In the placode at early stages cell behaviors are highly patterned, with cells near the pit predominantly constricting isotropically and cells far from the pit predominantly intercalating (Sanchez-Corrales et al., 2018). (A’) Apical constriction within the apical domain of an epithelial cell, a 2D change, equates to a behavior of cell wedging within the 3D context of a whole cell, as shown in a cross-sectional view. (A’’) Patterned cell behaviors are driven by distinct pools of apical actomyosin. Three pools of actomyosin can be distinguished in the placode: apical-medial actomyosin in cells near the invagination pit (dark orange), leading to isotropic apical constriction; polarised junctional actomyosin, driving the initiation of directed cell intercalation events in cells further away from the pit (light orange); a circumferential actomyosin cable at the boundary of the placode. (B) Stills of a representative segmented time-lapse movie, color-coded to indicate cell near (pink) and far (gray) from the invagination pit, with individual cell examples in both regions highlighted. As calculated previously (Sanchez-Corrales et al., 2018), we employ a radial coordinate system centered at the invagination point at t=0 min. We specify the ‘near to the pit’ region as the region located between the invagination point and up to 33% of the distance between the invagination point and the far edge of the placode (with this region usually being within 13.7±3 µm of the pit), and with the rest of the cells defined as ‘far from the pit.’ The cell outlines in the time-lapse movie are labeled using Armadillo-YFP. These and all confocal panels shown in the figures are always oriented with anterior to the left and dorsal up. See Figure 1—video 1. (C, D) Placodal cells visually split into near the pit (C) and far from the pit (D) cells and color-coded for apical area size. The asterisks in (B–D) indicate the (future) position of the invagination pit, white dotted lines indicate the boundary of the placode in regions where cells are not highlighted. (E) Analysis of apical area change expressed in proportion (pp) per minute, pooled from seven time-lapse movies for cells that were specified at t=0 min to be located near the invagination pit (dashed line) and cells that were specified at t=0 min to be located far from the invagination pit (solid line). Wild-type movies were aligned in time using as t=0 min the frame just before the first sign of invagination at the future tube pit was evident. Note that cells near the pit continuously constrict until internalized (pink shaded box), whereas cells far from the pit do not constrict significantly until t=20 min whilst moving closer to the pit (gray shaded box), but once they are in close proximity to the pit they also constrict until internalized (blue shaded box). Details of cell numbers and lengths of movies analyzed are shown in Figure 1—figure supplement 1. (F) Apical area size evolution of individual cell examples of cells near the pit and far from the pit as highlighted in color in (B). (G) Example of a cell from the far from the pit region (blue cell in (B) and (F)) undergoing a cell intercalation process as part of a rosette of cells that contracts circumferentially and resolves to elongate the tissue radially toward the invagination point.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Illustration of time intervals covered by wild-type time-lapse movies analyzed in Figures 1G ,, 3J. (B) Number of cells in ‘near the pit’ region used in wild-type experiments per time interval to calculate cell area change shown in Figures 1G and 3J. (B’) Numbers of cells in ‘far from the pit’ region used in wild-type experiments per time interval to calculate cell area change shown in Figures 1G and 3J. In all analyses, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident.
+
 This asymmetric setup of the placode raises two questions: first, is the asymmetry required for successful organ formation or could a symmetrical setup not lead to the same result? An indication that the asymmetry of the salivary gland placode is important for wild-type tube formation is given by the reports that in certain mutant situations where a more central invagination appears to form, the overall morphogenesis is disrupted and the invaginated structure that forms is sack-like and irregular. This is true for embryos lacking the transcription factor Hkb that is expressed early in the placode (Myat and Andrew, 2000b; Myat and Andrew, 2002), and could therefore potentially implicate Hkb in establishing early placode patterning.
 
 Second, how is this asymmetry of the placode established prior to morphogenesis commencing and then maintained throughout the process? Previous studies have shown that several proteins known to be expressed in the placode can be detected at the mRNA level initially in the dorsal posterior region of the placode. These include the transcription factor Forkhead (Fkh) (Myat and Andrew, 2000a), the dynein-associated protein Klar (Myat and Andrew, 2002), as well as the kinase Btk29 (Chandrasekaran and Beckendorf, 2005). Defined expression of these and other factors at the dorsal-posterior corner could set up the initiation of cell shape changes in this region. In agreement with this, we previously found that fkh−/− mutants specifically fail to apically constrict in the dorsal-posterior corner, though they do show intercalation behavior, and these mutants do not invaginate a tube (Sanchez-Corrales et al., 2018). Following on from the early regionalized behaviors that drive the initial tissue bending and tube invagination (Sanchez-Corrales et al., 2018), it is thus far unclear what mechanisms continue to drive the sustained invagination until all secretory cells have internalized. This could be due to continued transcriptional patterning and activation of downstream effectors, and/or could be due to mechanical signaling and feedback.
@@ -34,7 +42,7 @@ Our work establishes that after the tissue is patterned at the posterior corner,
 
 ## Results
 
-## Patterned apical constriction remains fixed around the pit over time
+### Patterned apical constriction remains fixed around the pit over time
 
 The initial morphogenetic change that occurs during the budding of the tube of the salivary glands in the Drosophila embryos is the apical constriction of cells at the point of the future site of invagination, the pit (Figure 1A and A’; Girdler and Röper, 2014; Myat and Andrew, 2000a; Myat and Andrew, 2000b; Sanchez-Corrales et al., 2018). We recently provided the first quantitative morphometric analysis of the very early stages of this process, and revealed that, first, isotropic apical constriction near the future pit commences long before changes at the tissue level are apparent, and that, second, the apical constriction is indicative of a 3D cell behavior of wedging of cells at the pit (Figure 1A’). Importantly, we uncovered a strong regionalization of cell behaviors during the early stages of tube budding: cells near the invagination point predominantly showed apical constriction behavior while cells at a distance from the pit predominantly showed intercalation behavior (Sanchez-Corrales et al., 2018; Figure 1A). What is unclear is how the early tube initiation via isotropic apical constriction of cells, combined with directional intercalation of the cells still positioned away from the forming pit, evolves over time. The process of tube formation is characterized by the continuous invagination of cells and the formation of a symmetrical narrow-lumen tube from an asymmetric placode primordium. We can imagine two scenarios: in one, cell behavior is fixed at early stages of budding, that is, apical cell constriction is restricted to the pit and only apparent during early stages. In a second scenario, cell behavior depends on a cell’s position relative to the invagination pit and thus cell behaviors change as cells move toward the invagination point.
 
@@ -44,31 +52,67 @@ Cells positioned near the pit at t=0 min (Figure 1B, pink) constricted their api
 
 These data strongly suggest that an initially pre-patterned behavior, isotropic constriction at the pit and intercalation further away, is dynamically adjusted during tube budding from a flat epithelial sheet, so that cells within a similar distance to the invagination pit display the same behavior.
 
-## Sustained apical constriction near the pit is driven by sustained apical-medial myosin
+### Sustained apical constriction near the pit is driven by sustained apical-medial myosin
 
 Early apical constriction at the pit is driven by a highly dynamic apical-medial actomyosin network (Booth et al., 2014; Sanchez-Corrales et al., 2018). We next sought to determine whether the apical-medial actomyosin dynamics would differ among regions in the placode. We analyzed apical-medial actomyosin levels in cells across the placode, and firstly illustrate our findings in two snapshots: cells near the future invagination point at t=0 min showed strong accumulation of apical-medial myosin (Figure 2A, A’’ and C; see also Figure 2—video 1), whereas cells far from the pit and close to the anterior placode boundary (Figure 2A and A’) showed mainly junctional myosin II accumulation. At t=30 min, the cells now located right next to the invagination pit continued to display strong apical-medial myosin accumulation (Figure 2B and B’’), but in addition cells that were initially ‘far from the pit,’ but were now in a closer proximity to the pit though still near the anterior boundary, now also started to display apical-medial actomyosin (Figure 2B and B’). Thus, being moved into a position near the invagination pit appeared to determine levels of apical-medial myosin accumulation. Looking placode-wide over the whole time period analyzed, the peak of the apical-medial myosin fluorescence intensity tracked in a near-fixed position to the edge of the pit over time (Figure 2D, white dotted line). The location of the highest medial myosin intensity was also where cells showed the shortest cycle lengths of medial myosin II fluctuations (Figure 2E, white dotted line). Interestingly, cells near the pit at t=0 min showed an overall shorter myosin II cycle length (the time period elapsed between two peaks of highest myosin II intensity during the oscillation, see schematic in Figure 2E) compared to cells located far from the pit (Figure 2F). As longer cycle length correlates with unproductive myosin cycles (Booth et al., 2014), this was in line with cells further away from the pit showing less apical constriction. Furthermore, the strength of myosin oscillations can be expressed as the product of the amplitude and frequency of the oscillation (Booth et al., 2014). This myosin strength across the placode at t=0 min was much higher in cells near the invagination point when plotted against the distance to the pit, with a gradual decrease in myosin strength toward the placode boundary (Figure 2G). However, cells originally far from the pit at t=0 min increased their myosin strength over time (and concomitantly decreased their cycle length; see Figure 2—figure supplement 1) whilst moving into a position closer to the pit, so that by t=55 min their myosin strength had increased to levels previously shown by cells near the pit at t=0 min (Figure 2H).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig2-v2.jpg)
+
+**Figure 2.:** (A-B’’) Still images of a time-lapse movie of embryos expressing SqhGFP to label myosin II at t = 0 min (A-A’’) and t = 30 min (B-B’’). White boxes indicate the corresponding higher magnifications shown below, with (A’’,B’’) showing cells that are at these timepoints located near the pit, and (A’,B’) showing cells near the boundary (small blue double arrows indicate similar closeness to the boundary). Magenta asterisk marks the invagination pit, blue dotted lines mark the boundary of the placode. (C) Schematic apical view of epithelial cells, illustrating junctional and apical-medial pools of actomyosin. Arrows in (A’’, B’, B’’) point to apical-medial actomyosin. See also Figure 2—video 1. (D) Spatial representation of the average medial myosin intensity from an exemplary time lapse movie, with radial location (collapsed into stripes) of cells specified at t = 0min. The dashed white line marks the peak of medial myosin intensity that is always adjacent to the invagination pit as cells flow into it over time. The schematic illustrates the evolution of the radial stripes analysed, with stripes initially close to the pit internalised first and hence a position close to the pit ‘moving’ across this type of plot diagonally in wild-type placodes. (E) Spatial representation of the distribution of the myosin cycle length across the salivary gland placode, with radial location (collapsed into stripes) of cells specified at t = 0 min. The dashed line marks the region of shortest cycle length that is always adjacent to the invagination pit as cells flow into it over time. The mean of 3 movies is shown. The schematic illustrates one cycle of a myosin pulsation defined as periodic increases and decreases in medial myosin II intensity. (F) The distribution of myosin II cycle lengths between cells near the pit and far from the pit varies: the median of the cycle length for cells near the pit is 3.7 min (n = 146) and SD+/- 2.08 min, while cells far from the pit have a median myosin II cycle length of 4.64 min (n = 301) and SD+/- 2.72 min. Thus, the cells that are located far from the pit show longer cycle length (p < 0.0001 Mann Whitney test). Data is pooled from 3 movies at t = 0 min. (G) Spatial representation of the strength of myosin oscillations in radial stripes from the pit (0 µm) to the boundary of the placode (47µm) at t = 0 min. Mean and standard error of the mean are shown. Data are pooled from 3 movies ranging from -7.5-56.25 min; -16.76 to 55.48 min and -17.42 to 67.26 min. Regions corresponding to cells near the pit and far from the pit are indicated by coloured shading. (H) Medial myosin strength, expressed as the product of amplitude x frequency of the oscillations, for all cells analysed from 3 movies, split into cells located near to the pit (n=148) compared to cell located far from the pit (n = 302) at t = 0 min from 3 movies. Cells near the pit have significantly higher medial myosin strength than cells located far from the pit; statistical significance as determined (Mann Whitney test, with p<0.0001). Cells far from the pit at later time points (t = 55-60 min, n = 134) increased the medial myosin strength and were not significantly different from cells near the pit at t = 0 min (Mann Whitney test, p = 0.5690). In all analyses, t = 0 min is defined as the frame just before the first sign of invagination at the future pit was evident. See also Figure 2—figure supplement 1 and Figure 2—video 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Myosin cycle length for all cells analysed from 3 movies, split into cells located near the pit (n=148) compared to cell located far form the pit (n=302) at t=0. Cells near the pit have significantly higher shorter, myosin cycle length than cell located far from the pit; statistical significance as determined using Mann Whitney test, with p<0.0001. The myosin cycle length of cells far from the pit at later time points (t=55-60 min, n = 134) was not significantly different from cells near the pit at t=0 (p = 0.1101 using a Mann Whitney test). (B) Spatial representation of the distribution of the myosin amplitude across the salivary gland placode, with radial location (collapsed into stripes) of cells specified at t = 0min. The dashed line marks the region of highest amplitude that is always adjacent to the invagination pit as cells flow into it over time. The mean of 3 movies is shown. (C) Spatial representation of the amplitude of myosin oscillations in radial stripes from the pit (0 µm) to the boundary of the placode (47µm) at t = 0min. Mean and standard error of the mean are shown. Data are pooled from 3 movies ranging from -7.5-56.25 min; -16.76 to 55.48 min and -17.42 to 67.26min. Regions corresponding to cells near the pit and far from the pit are indicated by coloured shading. In all analyses, t = 0min is defined as the frame just before the first sign of invagination at the future pit was evident.
+
 Thus, our data show that the early asymmetric setup of high apical-medial myosin II intensity and activity that was clustered near the pit was maintained during the continued invagination of the tube, in turn driving the continued apical constriction near the pit.
 
-## hkb-/- mutants show a delayed symmetrical apical constriction
+### hkb-/- mutants show a delayed symmetrical apical constriction
 
 In order to uncover the role of the initial asymmetric patterning of cell behaviors within the placode, we turned our attention to mutant situations: we already knew that the transcription factor Fkh was important for invagination, as fkh−/− mutants do not show localized apical constriction or any invagination (Myat and Andrew, 2000a; Sanchez-Corrales et al., 2018). A possibly more interesting situation is present in a previously published mutant of the transcription factor Huckebein (Hkb) that was reported to show a central invagination pit, combined with malformed invaginated salivary glands at later stages (Myat and Andrew, 2000b; Myat and Andrew, 2002).
 
 We collected and segmented time-lapse movies of hkb−/− mutant embryos over the same time period as the control wild-type embryos (Figure 3 and Figure 3—figure supplement 1; Figure 3—videos 1–3). Whereas in wild-type embryos, at t ~ +40 min, most secretory cells of the salivary gland placode have already invaginated (Figure 3A’’’, B’’’ and C’’’), in the hkb−/− mutants no invagination had occurred yet (Figure 3D’’’, E’’’ and F’’’). Eventually, these embryos invaginated a dilated tube through an enlarged pit (see Figure 3—figure supplement 2). We analyzed the spatial distribution of apical area changes over time in wild-type and hkb−/− placodes (Figure 3G and H). In the wild-type, the area of strongest apical area constriction was always located in a position near the pit, similar to the distribution of medial myosin intensity and activity (Figure 2D and E). In contrast, in hkb−/− mutant placodes cells began to constrict in an aberrant central position from about t=+20–30 min (Figure 3G and H). Thus, hkb−/− mutants show a delayed central invagination pit compared to the eccentric pit observed in wild-type placodes (Figure 3(I)1’). For our further quantitative analyses, we now took this change to a central pit position in the mutants into account. We plotted cumulative apical area change for cells in hkb−/− mutant placodes, split into cells near the (now central) pit and cells far from the pit (at the placode periphery). This analysis showed that cells in hkb−/− mutant placodes located near the central pit started to constrict at a much slower rate than cells in wild-type placodes, and only from about t=+20 min on (Figure 3J, wild-type data reproduced from Figure 1E). In fact, the rate of the constriction of the central cells in hkb−/− mutants was very similar to that of the cells located at a distance to the pit in the wild-type (compare blue dashed and magenta solid curves), suggesting that the central cells in hkb−/− mutants continue to behave identical to the wild-type cells occupying the same position. Cells far from the central pit in hkb−/− mutants showed a slight apical area expansion up to t=+20 min followed by a slight constriction, but did not invaginate over the time interval shown in the plots. In agreement with the delayed central constriction of cells in hkb−/− mutant placodes, we found no accumulation of apical-medial actomyosin at the eccentric position where a pit forms in the wild-type (compare Figure 3E and K to Figure 2D). Instead, only at t~+40 min did a central group of cells in hkb−/− mutant placodes display increased accumulation of apical-medial myosin II (Figure 3K), inducing a shallow tissue bending in this region at this point (see also Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig3-v2.jpg)
+
+**Figure 3.:** (A-F’’’) Stills of a representative wild-type (A-C’’’) and a hkb-/- mutant (D-F’’’) embryo time lapse movie at the indicated time points. (A-A’’’) and (D-D’’’) show the SqhGFP channel of the movies visualising myosin II, (B-B’’’) and (E-E’’’) show the average apical-medial myosin II intensity of segmented placodal cells, (C-C’’) and (F-F’’’) show the corresponding apical cell areas. (E-E’’’) hkb-/- mutants show apical-medial accumulation of myosin II at the centre at a delayed time point. Indicated colour scales correspond to the 5-95% range in each movie. Magenta dotted lines indicate the boundary of the placode. (F-F’’’) The delayed accumulation of myosin II in hkb-/- mutants is mirrored by the changed apical constriction pattern, with the wild-type constricting in the dorsal-posterior corner (C-C’’’) and hkb-/- mutants in the centre, but very delayed (F-F’’’). (G, H) Rate of apical area change of cells in wild-type (G; data from 7 movies) and hkb-/- mutant (H; data from 7 movies) embryos shown over time and across radial distance of cells from the eccentric wild-type pit location (0 µm) at t = 0 min. 47 µm represents the boundary of the placode. The blue line in (G) indicates where cells have just disappeared into the pit in the wild-type. Greatest apical area change in the wild-type is always confined to the area in front of the pit (brackets in G), whereas in hkb-/- mutant embryos cells in a broader central region show a delayed apical constriction (blue brackets in H). See also Figure 3—figure supplement 1. (I, I’) Schematic representation of a segmented wild-type and hkb-/- mutant placode, with cells near the eccentric wild-type pit and central hkb-/- mutant pit/area of constriction indicated in orange, and cells far from the pit for both in magenta. (J) Comparative analysis of cumulative apical area change of hkb-/- mutant embryos expressed as proportion per minute (pp/min), pooled from 7 time-lapse movies for cells that were specified at t = 0 min to be located near the central constricting pit (dashed blue curve; see schematic on the right) and cells that were specified at t = 0 min to be located far from the central pit (solid blue line; see schematic on the right) versus wild-type placodal cells as previously shown in Figure 1C. (K) Spatial representation of the average medial myosin intensity from an exemplary time-lapse movie of a hkb-/- mutant embryo, with radial location (collapsed into stripes) of cells specified at t = 0min. The blue brackets mark the peak of medial myosin intensity that is located in the centre of the placode in hkb-/- mutant embryos rather than tracking near the forming eccentric pit as in the wild-type. In all analyses of the wild-type, t = 0min is defined as the frame just before the first sign of invagination at the future pit was evident. hkb-/- mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb-/- mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo. See also Figure 3—figure supplements 1 and 2 and Figure 3—videos 1–4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Number of cells used in hkb−/− mutant experiments per time interval to calculate cell area change shown in Figure 3H. (B) Illustration of time intervals covered by the time-lapse movies for wild-type experiments used to calculate strain rates in Figure 4A, B' and T1 productive neighbor exchanges in Figure 4D and E. For cell area change in the wild-type shown in Figure 3G, the experiments ExpID356, ExpID0625, ExpID0692, ExpID0447, ExpID0707, ExpID0709, and ExpID0712 were analyzed (details of time interval for the last four experiments are shown in Figure 1—figure supplement 1). (C) Illustration of time intervals covered by the time-lapse movies for hkb−/− mutant experiments. All experiments shown were used to calculate the cell area change shown in Figure 3H. Experiments ExpID0181, ExpID0190, ExpID0196, ExpID0689, and ExpID0678 were used to calculate strain rates in Figure 3I–J’ and T1 neighbor exchanges in Figure 4D and E. (D, E) Number of cells in wild-type experiments (D) and hkb−/− mutant experiments (E) used to calculate strain rates in Figure 4AI–B’ and T1 exchanges in Figure 4D and E by time interval and region (near the pit and far from the pit, with eccentric pit for the wild-type and central pit for the hkb−/− mutants). (F, G) Total number of T1 exchanges detected in wild-type experiments (F) and hkb−/− mutant experiments (G), divided into circumferential and radial T1s. The cumulative plots of T1 exchanges are shown in Figure 4D and E. (H) Number of cells used for analysis of cell elongation ratio in Figure 4H in wild-type and hkb−/− mutant.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A, A’) The invagination pit in wild-type embryos at stage 11 and beyond is small, eccentric in its position in the placode (dorsal-posterior corner). (B–D’) In hkb−/− mutant embryos, the invagination pit that forms at a delayed stage is often centrally positioned within the placode and enlarged, leading to a very much widened invagination as visible in the cross-sections. These central pits often enlarge toward the boundary and sometimes collapse into a more crescent-shaped invagination at later stages. Magenta crosshairs in (A–D) indicate the positions of the cross-sections shown. Labeling in these panels is for anti-phospho-tyrosine. In (A’–D’), the position and shape of the invagination pit, drawn from the images in (A–D), is shown in magenta, and the boundary of the placode as well as the ventral midline, where visible, are in black. (E–H) Still images from time-lapse movie ExpID0678 shown in Figure 3—video 3. The delayed central constriction is visible in (F), the crescent-shaped enlarged invagination front is highlighted in magenta, the central constricting area in red in (F–H). (I–L) Still images from time-lapse movie ExpID0689 shown in Figure 3—video 4. The delayed central constriction is visible in (J), the enlarged invagination is highlighted in magenta in (K, L). Membrane channel and myosin II channel are shown as individual panels in (E–L), placode boundaries are indicated by magenta dotted lines. In all analyses of the wild-type, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident. hkb−/− mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb−/− mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo.
+
 Thus, in comparison to wild-type placode with an eccentric invagination, in hkb−/− mutant placodes a central invagination formed with a significant delay in time.
 
-## hkb−/− mutants display disrupted cell behaviors across the placode
+### hkb−/− mutants display disrupted cell behaviors across the placode
 
 The above analyses strongly suggest that the initial asymmetrical setup of cell behaviors in the placode might be disrupted in hkb−/− embryos. We therefore performed a strain (deformation) rate analysis of placodes in hkb−/− mutants in comparison to wild-type embryos to assess this quantitatively. The strain rate analysis is based on the assumption that any change in tissue shape can be accounted for by changes in cell shape and cell intercalations (Blanchard et al., 2009; Sanchez-Corrales et al., 2018). In many tissues, cell division or cell death and delamination also contribute to strain rates, but these are absent in the salivary gland placode during invagination and can thus be neglected. The origin of the radial coordinate system used for this analysis was specified at t=0 min and positioned at the center of of the placode in the hkb−/− mutant embryos (where the central constriction eventually occurred) and in wild-type embryos at the dorsal-posterior corner of the placode (where the wild-type pit will form). In wild-type placodes, cells that were located near the eccentric invagination pit (Figure 4A; with the ‘near’ position defined at t=0 min; see also Figure 4—figure supplement 1) constricted isotropically, with near equal change in strain at the tissue and cell shape level, and very little intercalation strain (Figure 4A’ and A’’, solid curves). These cells in wild-type placodes could only be tracked up to t=20 min as at this point they had all invaginated into the embryo to form the initial part of the tube. In contrast, in the hkb−/− mutants, cells near the forming central pit (Figure 4A; defined to be in a ‘near’ position at t=0 min) showed a much reduced tissue and cell shape strain rate, with near identical radial and circumferential contributions, and constriction only commenced at about half the rate of the wild-type placodes from t=+20 min onwards (Figure 4A’ and A’’, dashed curves; see also Figure 4—figure supplement 1). In wild-type placodes, cells far from the eccentric pit (Figure 4B; defined to be ‘far’ at t=0 min), showed cell intercalations leading to circumferential convergence and radial extension of the tissue over the first approximately 20 min after invagination commenced, as we also reported previously (Figure 4B’ and B’’, solid curves; tissue and intercalation strain rate showing expansion radially and contraction circumferentially; Sanchez-Corrales et al., 2018). Interestingly, we then observed a clear switch in cell behavior of these cells to a second phase after t=+20 min. Once these cells were located closer to the pit position, they now also displayed apical contraction (beyond t=+20 min; Figure 4B’ and B’’, solid green curves). In the hkb−/− mutants, for cells at the placode periphery and hence far from the central constriction (Figure 4B), the tissue expanded slightly in both radial and circumferential direction (Figure 4B’ and B’’, dashed gray curves), with cell shapes narrowing radially (dashed green curve in Figure 4B’) and extending circumferentially (dashed green curve in Figure 4B’’). We could observe a similar rate of intercalation in these cells as in cells far from the pit in wild-type placodes, with some radial elongation and circumferential contraction (dashed orange curves in Figure 4B’ and B’’). As the tissue strain rate in the hkb−/− mutants showed no overall signature of directional changes with only a slight expansion both radially and circumferentially, we were curious to understand better what these tissue-scale signatures could represent at the individual cell level.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig4-v2.jpg)
+
+**Figure 4.:** (A–B’’) Regional breakdown of time-resolved cumulative strain rates, with regions defined at t=0 min based on eccentric pit for the wild-type and a central pit for hkb−/− mutants. For cells ‘near the pit’ in the wild-type (A), tissue constriction dominates (solid gray curves in (A’, A’’)) and is due to isotropic cell constriction (solid green curves in (A’, A’’)), whilst intercalation only plays a minor role in this region (solid orange curves in (A’, A’’)). Cells in this region have completely internalized by about t=20 min. By contrast, in hkb−/− mutant embryos, cells ‘near the (central) pit’ (A), show strongly reduced tissue (dashed gray curves in (A’, A’’)) and cell strain rates (dashed green curves in (A’, A’’)) and mildly reduced intercalation (dashed orange curves in (A’, A’’)). For cells ‘far from the pit’ in the wild-type (B), the tissue elongates toward the pit until t=20 min (solid gray curve in (B’)), with a corresponding contraction circumferentially (solid gray curve in (B’’)), and this is predominantly due to cell intercalation (solid orange curves in (B’, B’’)). Beyond t=20 min, these cells have reached the invagination pit and also constrict isotropically, thereby leading the tissue change (solid gray curves in (B’, B’’) >20 min) to mirror the cell shape change (solid green curves in (B’, B’’) >20 min). By contrast, in hkb−/− mutant embryos, cells ‘far from the (central) pit’ (B) show a slight tissue expansion both radially and circumferentially (dashed gray curves in (B’, B’’)), paired with abnormal circumferential cell elongation (dashed green curves in (B’, B’’)), and some reduced intercalation (dashed orange curves in (B’, B’’)). The corresponding instantaneous strain rate plots can be found in Figure 4—figure supplement 1. Data from nine wild-type movies and five hkb−/− movies were analyzed (see Figure 3—figure supplement 1). (C–E) Quantification of neighbor gains as a measure of T1 and intercalation events. Examples of a circumferential neighbor gain (leading to radial tissue expansion), and a radial neighbor gain (leading to circumferential tissue expansion) are shown in (C). (D) Circumferential neighbor gains dominate over radial neighbor gains in the wild-type (dashed curves), with the rate of neighbor exchanges dropping beyond 20 min. In contrast, in hkb−/− mutant embryos, the amount of circumferential and radial gains is identical (solid curves). (E) Cumulative proportion of productive neighbor gains, defined as the amount of circumferential neighbor gains leading to radial tissue elongation and expressed as a proportion (pp) of cell-cell interfaces tracked at each time point, and split into cells near the pit (eccentric for wild-type and central for hkb−/− mutant) and far from the pit. Predicted productive neighbor gains are strongly reduced and near zero for cells near the pit in hkb−/− mutants compared to control (dashed curves), whereas cells far from the pit in hkb−/− mutant continue to intercalate similar to wild-type (solid curves). (F, G) Myosin II junctional polarity was quantified from segmented and tracked time-lapse movies. Myosin enrichment at junctions can occur in two flavors: Myosin II unipolarity is defined as myosin II enrichment selectively on side of a cell ((F), see schematic inset). Myosin II bi-polarity is defined as myosin II enrichment at two parallel oriented junctions of a single cell, calculated as the magnitude of a vector pointing at the enrichment (G). Data from six wild-type movies and five hkb−/− movies, number of cells is shown in Figure 3—figure supplement 1. Plotted are the rates of change of the uni- and bipolarity amplitudes as a proportion per minute (pp/min) of the mean cell perimeter fluorescence. (F) Circumferential myosin II uni-polar enrichment (i.e., the radial uni-polarity vector, red arrow in schematic, pointing at the myosin enrichment), increases and is high until ~40 min when it drops ((G), green dashed curve). The circumferential uni-polar enrichment is always higher than the radial myosin II uni-polar enrichment (green solid curve in (G)). The myosin II uni-polar enrichment in hkb−/− mutants is overall strongly reduced compared to wild-type (solid curves in (F)). (G) Circumferential myosin II bi-polar enrichment in the wild-type (i.e., the radial bi-polarity vector, red arrow in schematic, pointing at the myosin enrichment) is high until ~40 min when it drops ((G), green dashed curve). Until this point, it is higher than the radial myosin II bi-polar enrichment (green solid curve in (G)). The myosin II bi-polar enrichment in hkb−/− mutants is strongly reduced compared to the wild-type (solid curves in (G)). Statistical significance of p<0.05 (*), p<0.005 (**), p<0.0005 (***) using a mixed-effect model is indicated as shaded boxes at the top and bottom of the panels: comparing circumferential over radial enrichment for either the wild-type or hkb−/− mutants. (H) Analysis of cell shape aspect ratio dynamics in cells far from the pit (eccentric pit for wild-type, cental pit for hkb−/− mutant). In the wild-type, circumferential elongation as part of active circumferential neighbor gains (Sanchez-Corrales et al., 2018) persist until ~t=+20 min, when cells start to become elongated radially (gray curve). In hkb−/− mutants, cells become and remain circumferentially elongated (magenta curve). Data shown for seven wild-type and five hkb−/− mutant movies. (I–L) Analysis of an exemplary cell intercalation event in cells far from the pit in a segmented and tracked time-lapse movie of a hkb−/− mutant placode, stills at the beginning and end of the event shown are in (I), and stills of the whole event in (J). (K) Cells 1 and 2 gain a circumferential contact, mainly via cell elongation. (L) The cell cluster is already circumferentially elongated at t=+14:54 min (black outline) and remains near identically elongated at t=+26:49 min (orange outline). Data for (A–H) pooled from nine wild-type and five hkb−/− mutant movies. In all analyses of the wild-type, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident. hkb−/− mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb−/− mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo. Panels (A, A’, B, B’, F, G) are expressed as proportion per minute (pp/min).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D’’) Instantaneous strain rates relating to the cumulative strain rates shown in Figure 4A–B’. Panels for cell near the pit and far from the pit are shown, with an eccentric pit for the wild-type and a central pit for the hkb−/− mutant. Instantaneous strain rates are split into tissue, cell shape, and intercalation strain rate tensors, as well as the radial and circumferential contributions. Regions of statistically significant differences (p<0.05) are indicated by pink bars above the curves, and significance was determined using mixed-effects model. In all analyses of the wild-type, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident. hkb−/− mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb−/− mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo.
 
 We therefore analyzed individual events of neighbor gains across the tissue in wild-type and hkb−/− mutant embryos. We compared two types of intercalation events, those leading to circumferential neighbor gains that in wild-type placodes explain the observed intercalation strain rates, and those leading to radial neighbor gains, and thus potentially opposing the changes seen at the tissue and intercalation strain rate level (Figure 4C). In wild-type placodes, circumferential neighbor gains outweigh radial ones by a large margin throughout (Figure 4D, dashed curves), leading to a steady increase in cumulative productive neighbor gains for cells across the placode (Figure 4E, yellow curves). In contrast, in hkb−/− mutant embryos circumferential and radial neighbor gains across the placode were overall much reduced in number and occurred with equal frequency (Figure 4D, solid curves). Furthermore, cells near the delayed central pit in hkb−/− mutants showed no productive neighbor gains (defined as the difference between circumferential and radial neighbor gains, corrected for the proportion of interfaces that could successfully be tracked; Figure 4E, purple dashed curve), whereas cells at the periphery away from the central pit showed productive neighbor gains (Figure 4E, solid purple curve). Active neighbor gains in the placode and other morphogenetic events are initiated and driven by junctional actomyosin (Sanchez-Corrales et al., 2018; Tetley et al., 2016), prompting us to analyze junctional myosin polarisation in hkb−/− mutant embryos. We previously reported on the unipolar and bipolar enrichment of junctional myosin in the wild-type at early stages of placode morphogenesis (Sanchez-Corrales et al., 2018) and expand it here to the whole process of secretory cell invagination in comparison to hkb−/− mutants (Figure 4F and G). Whereas in control placodes junctional myosin is clearly enriched in circumferential junctions by both measures, up to the point of most secretory cells having internalized by t=+40 min (Figure 4F and G; dashed green curve vs. dashed purple curve), in hkb−/− mutant placodes myosin unipolarity and bipolarity are strongly reduced, even though some bipolarity remained (Figure 4F and G, solid curves). Thus, the major driver of active intercalations appeared to be strongly diminished in the mutants, posing the question of what could drive the observed intercalations here. We also analyzed cell elongation in cells far from the pit, with cells in wild-type placodes being initially elongated circumferentially at t<+20 min, while early intercalation events are initiated by circumferential junctional myosin (Figure 4H, gray curve; Sanchez-Corrales et al., 2018). These cells then became increasingly elongated radially as they moved into a position nearer to the pit and were being actively funneled toward the pit. In hkb−/− mutant embryos, cells far from the pit at the periphery of the placode very quickly became circumferentially elongated and remained so throughout the time period analyzed. This aberrant circumferential elongation together with the mild bipolarity of junctional myosin polarisation that we observed prompted us to analyze individual events of cell intercalation in time-lapse movies (Figure 4I–L). In cells far from the central pit in hkb−/− mutants, we could observe groups of cells clearly undergoing intercalations (Figure 4I and J) with individual cells making circumferential neighbor gains and elongating (cells 1 and 2 in Figure 4K), whilst the overall shape of the local group of cells undergoing the intercalation event was not changing (Figure 4L). Thus, although cells far from the aberrant central pit in hkb−/− mutants still intercalated and gained circumferential neighbors, this behavior lacked several key signatures of wild-type intercalations, and overall in the hkb−/− mutants intercalations did not lead to convergence and extension of the tissue toward the misplaced pit.
 
 These analyses show that in the absence of Hkb, the initial radial patterning of cell behaviors across the placode is highly aberrant. Cells located at the position corresponding to where the eccentric pit would be located in the wild-type clearly failed to constrict apically, suggesting that Hkb could be involved in the specification of this pit behavior observed in wild-type.
 
-## The salivary gland placodal primordium is asymmetrically patterned by Hkb and Fkh prior to morphogenesis
+### The salivary gland placodal primordium is asymmetrically patterned by Hkb and Fkh prior to morphogenesis
 
 The loss of correct patterning of cell behaviors in the early placode in hkb−/− mutant embryos suggested that Hkb was involved in establishing these in wild-type embryos. Furthermore, hkb mRNA expression has been reported to show a dynamic pattern by in situ hybridization and β-gal reporter labeling (Myat and Andrew, 2000b). In order to be able to analyze Hkb protein levels dynamically and in comparison to cell shapes, we generated a Venus-tagged version of Hkb using CRISPR/Cas9 to tag the endogenous protein. Using this in vivo reporter, we detected Venus-Hkb at high levels concentrated in the dorsal-posterior region of the just forming placode, in the area where the invagination pit will form, already at t=–30 min prior to the first tissue bending (Figure 5A, A’, D and M and Figure 5—figure supplement 1B,B'' ), and even as early as t=–63 min prior to invagination (Figure 5—figure supplement 1A). The expression then expanded more broadly and anteriorly across the whole placode over time (Figure 5B–C’, E, F and M and Figure 5—video 1). At the moment of first tissue bending (t=0 min) Venus-Hkb was found across the placode, with elevated levels still at the invagination pit position, and a second increase toward the anterior. At late stages (t>>0 min) Venus-Hkb levels close to the invagination point were lower than further anterior (Figure 5M).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig5-v2.jpg)
+
+**Figure 5.:** (A–F) Stills of a time-lapse movie of embryos with endogenously tagged Hkb, Venus-Hkb, at t=–38 min, +0 min and +38 min show the dynamic pattern of expression of Hkb. Expression starts at the posterior corner before tissue bending commences. Cell membranes are in magenta in (A–C), Venus-Hkb is green in (A–C) and as a single channel in (A’–C’). (D–F) show the quantification of Venus-Hkb fluorescence intensity at these time points. (G–L) Stills of a time-lapse movie of embryos with Fkh tagged by GFP under endogenous expression control, at t=–60 min, +0 min and +30 min show that as early as 1 hr before tissue bending, Fkh is already expressed at the posterior corner. Cell membranes are in magenta in (G–I), Fkh-GFP is green in (G–I) and as a single channel in (G’–I’). (J–L) show the quantification of Fkh-GFP fluorescence intensity at these time points. (M) Venus-Hkb expression starts at the posterior corner in a region similar to ‘near the pit’ population (between pit location and dashed line). At the start of invagination (around t=0 min) the expression increases across the placode, in particular at the anterior edge. At late stages, the level of Venus-Hkb expression decreases in the pit region, but it remains high in the rest of the placode. Data is pooled from selected frames of time-lapse movies and corresponding fixed samples. Number of cells are as follows: t<<0 min (equivalent to stage 10), n=777 cells from eight embryos; t=0 min (equivalent to early stage 11), n=1186 cells from 10 embryos and t>>0 min (equivalent to late stage 11/early stage 12), n=885 cells from 10 embryos. (N) Fkh-GFP expression initiates at the posterior corner and increases to cover the whole placode over time. Data is pooled from selected frames of time-lapse movies and corresponding fixed samples. Number of cells are as follows: t<<0 min (equivalent to stage 10), n=365 cells from four embryos; t=0 min (equivalent to early stage 11), n=1026 cells from nine embryos and t>>0 min (equivalent to late stage 11/early stage 12), n=659 cells from nine embryos. (O, O’) Spatial representation of the Venus-Hkb intensity (O) and apical area (O’) from an exemplary time-lapse movie of a wild-type embryo, with radial location (collapsed into stripes) of cells specified at t=0 min. The orange bracket in (O) marks the appearing peak of high Venus-Hkb intensity at the position of the eccentric pit, with the orange dotted line marking the highest point of intensity. The orange bracket in (O’) marks the appearing apical constriction at the position of the eccentric pit, with the orange dotted line marking the midway bracket point. The blue dotted line in (O’) marks where the smallest apical area begins to track in the near pit position (as shown in Figure 3G). (P, P’) Spatial representation of the Fkh-GFP intensity (P) and apical area (P’) from an exemplary time-lapse movie of a wild-type embryo, with radial location (collapsed into stripes) of cells specified at t=0 min. The orange bracket in (P) marks the appearing peak of high Fkh-GFP intensity at the position of the eccentric pit, with the orange dotted line marking the highest point of intensity. The orange bracket in (P’) marks the appearing strongest apical constriction at the position of the eccentric pit, with the orange dotted line marking the midway bracket point. The blue dotted lines in (P) and (P’) mark where the Fkh-GFP intensity and the smallest apical area begin to track in the near pit position. In all analyses, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Still of Figure 5—video 1 at t=–59.5 min. Cell membranes are shown in magenta, Venus-Hkb is in green. (B–B’) Comparison of Venus-Hkb (green in (B)) and anti-Hkb antibody staining (red in (B’)) at late stage 10. (B–B’) Comparison of Fkh-GFP (green in (B)) and anti-Fkh antibody staining (red in (B’)) at late stage 10.
 
 As mentioned above, embryos mutant in fkh also show a lack of early apical constriction at the dorsal-posterior corner of the placode (Myat and Andrew, 2000a; Sanchez-Corrales et al., 2018). Similar to Hkb, analysis of fkh mRNA and protein levels in fixed embryos indicated an early enrichment near the forming invagination pit (Myat and Andrew, 2000a; Sanchez-Corrales et al., 2018). Using an in vivo genomic GFP-Fkh reporter (Spokony and White, 2013), we followed Fkh protein levels and patterning over the same time period whilst also assessing apical cell shapes (Figure 5G–L). Already at t=–60 min prior to tissue bending, Fkh-GFP was visible in the cells near the future invagination pit (Figure 5G, G’, J and N and Figure 5—figure supplement 1C–C''), from where it spread anteriorly and ventrally across the whole placode (Figure 5—video 2). At t=0 min, Fkh-GFP was already detected in all cells of the placode, though with levels still highest near the pit and decreasing toward the anterior edge of the placode (Figure 5H, H’, K and N). At t=+30 min and beyond, levels of Fkh-GFP were more uniform across the placode (Figure 5I, I', L, N).
 
@@ -76,9 +120,17 @@ Thus, both Hkb and Fkh transcription factors showed a clear temporally and spati
 
 Thus, Hkb and Fkh dynamic expression at the future eccentric pit could prefigure the start of apical constriction at this site. The continuous high levels of Fkh tracking at a fixed distance to the pit suggest that Fkh is key to the continuous apical constriction of cells moving into a near pit position. These dynamic changes might trigger the graded and patterned expression of targets of both transcription factors, leading to the observed patterned cell behaviors we uncovered, as well as the switch between intercalation and constriction.
 
-## Asymmetric Fog expression is controlled by Hkb and Fkh and is upstream of early differential behaviors in the placode
+### Asymmetric Fog expression is controlled by Hkb and Fkh and is upstream of early differential behaviors in the placode
 
 With the transcription factors Fkh and Hkb both displaying intriguing protein expression patterns across the early placode pre-morphogenesis, targets of both factors are likely to play key roles in instructing cell behaviors such as wedging and cell intercalation. Interestingly, an upstream activator of apical-medial actomyosin activity, the GPCR-ligand Folded gastrulation (Fog) was found to be dependent on Fkh (Chung et al., 2017; Dawes-Hoang et al., 2005; Figure 6) and suggested to be downstream of Hkb (Myat and Andrew, 2000b; though in this publication as ‘data not shown’). Fog is an apically secreted ligand that acts in an autocrine fashion, and thus the cells that switch on Fog expression will apically constrict (Dawes-Hoang et al., 2005). Previously published in situ hybridization of fog mRNA suggested increased levels near the forming pit, similar to the early Hkb and Fkh enrichment (Nikolaidou and Barrett, 2004). Fog expression and signaling in particular could not only be upstream of the isotropic constriction of cells near the forming pit, but could also be involved in maintaining this behavior in new coronas of cells moving into a position near the pit over time.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig6-v2.jpg)
+
+**Figure 6.:** (A–I) Wild-type embryos labeled for Fog protein (the ligand to the GPCR upstream of Rho-dependent myosin II activation, (J)) and myosin II, visualized by SqhGFP. Fog is magenta in (A, D, G) and as a single channel in (A’, D’, G’), myosin II is green in (A, D, G). Also shown are corresponding quantifications of apical cell area (B, E, H) and average medial Fog fluorescence intensity (C, F, I). Time points analyzed were before any apical constriction and tissue bending commencing (t<<0 min; ~stage 10), at t=0 min (~early stage 11) and once invagination had commenced (t>>0 min; ~late stage 11/early stage 12). (J) Schematic of the GPCR pathway leading to myosin II activation. (K) Average medial Fog fluorescence intensity negatively correlates with apical cell area. Pearson coefficient r=–0.436; n=823 cells from seven embryos. (L) Average medial myosin II fluorescence intensity positively correlates with average medial Fog fluorescence intensity. Pearson coefficient r=0.439; n=823 cells from seven embryos. (M–O) In hkb−/− mutant embryos at a time point where invagination would have been well advanced in wild-type embryos (t>>0 min), medial myosin II (M) and Fog fluorescence ((M’) and quantified in (O)) are concentrated in cells in the center of the placode, where cells also show constricted apices (N). (P) Quantification of average medial Fog fluorescence intensity according to radial position in wild-type versus hkb−/− mutant embryos. Whereas in the wild-type Fog intensity peaks at the posterior end of the placode where the invagination pit forms, in hkb−/− mutant embryos Fog is dramatically reduced at the invagination pit. Number of cells: wild-type n=823 from seven embryos; hkb−/− n=765 cells from five embryos. (Q–S) In fkh−/− mutant embryos at a time point where invagination would have well advanced in wild-type embryos (t>>0 min), medial myosin II (Q) and Fog fluorescence ((Q’) and quantified in (S)) are very homogenous across the placode and no longer enriched within the placode compared to the surrounding epidermis. Apical area quantification shows there is only a mild central cell constriction and no invagination (R). (T) Quantification of average medial Fog intensity in fkh−/− mutant embryos. In contrast to wild-type embryos with Fog enrichment at the posterior pit, levels of Fog are more homogenous in the placode in fkh−/− mutant embryos with an increase toward the anterior. Levels are comparable to the rest of the epidermis (see Figure 3—video 3). The intensity curves shown for wild-type and fkh−/− mutant embryos are comparable in their shape, though the absolute intensities shown are not directly comparable, as fluorescence intensity was normalized in each image by dividing the average fluorescence per cell by the 98th percentile value to account for embryo to embryo variability in staining efficiency. Number of cells: wild-type n=823 from seven embryos; fkh−/− mutant n=512 cells from five embryos. In all analyses of the wild-type, t=0 min is defined as the frame just before the first sign of invagination at the future pit was evident. hkb−/− mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb−/− mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Wild-type embryos expressing sqhGFP were analyzed before, at initiation of, and well beyond the start of pit invagination and medial myosin II intensity quantified per cell. (D–D’’) anti-Fog antibody labeling (green in (D) and (D’)) in a fkh−/− mutant embryo, showing no increased Fog accumulation in the placode over the surrounding epidermis. Cell membranes are in magenta in (D) and in (D’’). (E–J’) Analysis of Fkh levels and localization pattern in control and hkb−/− mutant embryos. (E–F’) show two examples of control Fkh pattern at late stage 10, (G, G’) at stage 11. (H–I’) show two examples of Fkh pattern in hkb−/− mutant embryos at late stage 10, (J, J’) at stage 11. Anti-Fkh staining is in red, cell outlines are labeled by anti-phospho-tyrosine in blue and GFP from the balancer chromosome identifying control embryos is shown in green. (K-N’) Analysis of Hkb levels and localization pattern in control and fkh−/− mutant embryos. (K–L’) show two examples of control Fkh pattern at late stage 10 (H, H’) and early stage 11 (L, L’). (M–N’) show two examples of Hkb levels and localization pattern in fkh−/− mutant embryos at late stage 10 (M, M’) and early stage 11 (N, N’). Anti-Hkb staining is in red, cell outlines are labeled by anti-phospho-tyrosine in blue, and GFP from the balancer chromosome identifying control embryos is shown in green. The boundaries of placodes are indicated by dotted lines.
 
 We therefore decided to carefully analyze Fog protein levels in comparison to apical area and apical-medial myosin intensity in salivary gland placodes from early to late invagination stages (Figure 6A–I). Fog levels were low at mid-stage 10 concomitant with placode specification (Figure 6A, A’ and C). Just before tissue bending commenced at t=0 min, Fog was already strongly enriched in cells near the forming invagination pit, and these cells were the ones already showing the decreased apical area (Figure 6D–F). Fog protein levels remained enriched near the invagination point once the tube had started to internalize (Figure 6G–I). In fact, Fog protein levels in cells were positively correlated with both smaller apical areas (Figure 6K) as well as higher average apical-medial myosin II intensity (Figure 6L; Figure 6—figure supplement 1).
 
@@ -88,9 +140,21 @@ In order to understand the cause of the central and delayed constriction in hkb�
 
 Thus, the asymmetrical setup of the salivary gland placode prior to initiation of tube budding relies on a correct spatial and temporal patterning of the key transcription factors, Hkb and Fkh. These transcription factors are in turn upstream of GPCR/Fog signaling that leads to patterned and sustained apical-medial myosin activity and hence contractile cell behaviors.
 
-## Changes to invagination pit size or position impact invagination and perturb final organ shape
+### Changes to invagination pit size or position impact invagination and perturb final organ shape
 
 Our data and previously published results show that the asymmetrical invagination point depends on patterning by transcription factors and downstream GPCRs/Fog signaling at the posterior corner, leading to a focussed and point-like invagination pit (Chung et al., 2017; Myat and Andrew, 2000a; Myat and Andrew, 2000b; Myat and Andrew, 2002; Sanchez-Corrales et al., 2018). We next sought to test the importance of this asymmetric setup for successful morphogenesis of a narrow-lumen and symmetrical tube. To do so, we overexpressed Fog in the salivary gland placode only, using UAS-Fog x fkhGal4 which led to placode-wide increased levels of Fog from early stages on (Figure 7 and Figure 7—figure supplement 1). Compared to the focused apical constriction near the forming invagination pit in wild-type placodes at early stage 11 (Figure 7A and A’), when Fog was overexpressed across the placode most secretory cells of the placode constricted simultaneously (Figure 7B, B’, C and C’). At late stage 11, when in wild-type placodes cells had begun to invaginate and a short symmetrical narrow-lumen tube had formed (Figure 7D and D’), in UAS-Fog x fkhGal4 embryos the apically constricting cells had formed a large shallow depression across the whole dorsal part of the placode, with the beginning of a deeper invagination at the dorsal-posterior corner (Figure 7F and F’). Following on from this, at stage 12, in contrast to the narrow opening to the invagination in wild-type placodes (Figure 7E), in UAS-Fog x fkhGal4 placodes this whole section usually formed a deepened very wide pit (Figure 7G). This widened tube in Fog-overexpressing embryos, at stages 15–16 when all cells had invaginated, displayed a significantly enlarged and flattened lumen compared to wild-type tubes (Figure 7H–J). Interestingly, overexpression of Fkh using UAS-Fkh x fkhGal4 led to a similarly enlarged area of apical constriction early on and invaginated tubes with aberrant and inflated lumens at late stages (Figure 7—figure supplement 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig7-v2.jpg)
+
+**Figure 7.:** (A–C’) Whereas in wild-type placodes (A, A’) apical constriction commences only at the dorsal-posterior corner prior to the start of pit invagination, in placodes where Fog is overexpressed (using UAS-Fog x fkhGal4; B, B’) excess apical constriction occurs all across the dorsal side of the placode. (A, B) show cell apices labeled by anti-phospho-tyrosine labelling, (A’, B’) show apical area size. Colored scale for cell area as in Figure 1. (C, C’) Widening the Fog expression domain leads to significantly more constricted apices: cell area distribution of UAS-Fog x fkhGal4 differs from wild-type (Kolmogorov-Smirnov test, p<0.0001). Number of cells: wild-type, n=771 from seven embryos; UAS-Fog x fkhGal4, n=788 from five embryos. (D–G) In contrast to the narrow symmetrical pit and early invagination in wild-type placodes (D-D’), in UAS-Fog x fkhGal4 placodes cells in the whole Fog-overexpression domain constrict and initially start to form a large shallow depression (F, F’). (D–G) are stills from time-lapse movies, with (D’) and (F’) showing surface view and xz/yz-cross sections, the arrow in (F’) points to the corner from where cells start to invaginate. In comparison to the small opening of the invagination observed in wild-type placodes at stage 12 (E), the initial large depression is still present in UAS-Fog x fkhGal4 placodes at stage 12 whilst cells invaginate through a large pit ((G); magenta arrows). (H–J) At late stage 15, early stage 16, when salivary gland invagination and morphogenesis has finished, the final shape, and in particular lumen shape, of salivary gland cells overexpressing Fog (I); (UAS-Fog x fkhGal4) is altered compared to wild-type controls (H). Apical adherens junctions are marked by phospho-tyrosine labelling (white). Glands are shown in three orthogonal cross-sections. (J) Quantification of lumen aspect ratio, allowing identification of altered tube shapes such as widened tubes (Mann-Whitney test, p<0.0001; wild-type: n=23 embryos, UAS-Fog x fkhGal4 n=20 embryos). (K–O) Theoretical considerations and experimental test on how altering the shape and size of the original invagination pit will affect the geometry and shape of the invaginating and invaginated tube. (K, K’) In the wild-type, a focussed eccentric pit (red in (K)) leads to similar numbers (K’) of cells invaginating within each corona even in the absence of any cell rearrangements (green curve in (N)). (L, L’) A central pit would lead to an increasing number of cells invaginating in each corona, leading to a widening tube (magenta curve in (N)). (M, M’) An enlarged initial pit would lead to an increased but steady number of cells (M’) invaginating (gray curve in (N)), again leading to a tube with enlarged lumen. Numbers of cells per corona are indicated. (O) Experimental test of the number of cells per invaginating corona in wild-type placodes or when the pit is central (hkb−/− mutant embryos) or the pit is enlarged, covering eccentric and central position (UAS-Fog x fkhGal4 embryos). Shown are mean and SD of n=30, n=11, and n=5 for wild-type, hkb−/− mutant and UAS-Fog x fkhGal4 embryos, respectively. See also Figure 7—figure supplements 1 and 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A–A’’) In wild-type placodes at early stage 11, when tissue bending has just commenced (visible in the cross-sections, apical side is indicated, the white bars indicate the positions of the cross-section panels) Fog protein is most concentrated in cells near the pit and located in vesicles near the apical side. (B–C’’) In UAS-Fog x fkhGal4 embryos overexpressing Fog, already at late stage 10 (i.e., earlier than in panels (A–A’’)) Fog protein is found at very high levels and very homogeneously across the placode (with the exception of a few anterior cells where fkhGal4-driven expression usually increases slightly later). Cross-sections reveal that all cells show higher levels of Fog in vesicular structures, again mostly homogeneously across the placode in contrast to the gradient of Fog intensity observed in the wild-type. (D–D’’) At mid-stage 11, a very wide invagination has formed in UAS-Fog x fkhGal4 (as also shown in Figure 7E and F) and Fog levels remain increased and homogeneous across the placode. In (A–D’’), cell outlines are in green using labeling of junctional phosphotyrosine (PY20), anti-Fog antibody labeling is in magenta. White dotted lines indicate the boundary of the placode, the asterisks indicate the position of the (future) invagination point. (E) Quantification of medial myosin intensity in control embryos compared to embryos that overexpress Fog (UAS-Fog x fkhGal4). Shown is the ratio of medial to junctional myosin for individual cells to account for embryo-to-embryo differences.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/72369/elife-72369-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A–B’’) Embryos overexpressing Fkh across the placode, using UAS-Fkh x fkhGal4 UAS-srcGFP, show highly aberrant lumen shapes at stage 13 when all secretory cells have invaginated. (A) A stage 13, embryo with two glands with highly inflated lumens marked by apical-lateral srcGFP (green) and PY20, labeling phosphotyrosine at adherens junctions (magenta). (B–B’’) show a deep z-stack projection as well as two orthogonal views of one of the glands shown in (A). (C–D’’) UAS-Fkh x fkhGal4 UAS-srcGFP glands at early stage 11, prior to any tissue bending, show an increased number of apically constricted cells compared to wild-type placodes, visible with both apical-junctional membrane markers, srcGFP (green) and PY20 (magenta). The dotted line marks the boundary of the placode.
 
 We set out to explain the link between an enlarged or widened invagination pit in the placode early during tube formation and the expanded lumen tube observed at late stages by considering why the invagination pit forms in its eccentric position in wild-type placodes. We formulated a simplistic theoretical consideration that assumes that following the specification of an initial group of cells that apically constrict and form the initial invagination (Figure 7K–M), neighboring coronae of cells will follow and invaginate (Figure 7K’–M’). Using an idealized version of apices of a wild-type placode with an eccentric pit, the number of cells invaginating, going from corona to corona, remains very steady and low (Figure 7K’ and green curve in Figure 7N). In contrast, a centrally located pit (Figure 7L) would lead to an ever-increasing number of cells per corona that would need to invaginate (Figure 7L’ and magenta curve in Figure 7N). An enlarged pit, a combination of the two previous scenarios and resembling aspects of the enlarged pit and invagination seen in UAS-Fog x fkhGal4 embryos (Figure 7M and M’), would lead to the invagination of a large number of cells initially, followed by similarly large numbers in each corona (Figure 7M’ and gray curve in Figure 7N). In fact, when counting invaginating coronae of cells in frames of time-lapse movies of wild-type (Figure 7O, green curve), hkb−/− (Figure 7O, magenta curve) curve and UAS-Fog x fkhGal4 (Figure 7O, gray curve) embryos, the actual numbers observed were in very good agreement with the theoretical considerations outlined above (Figure 7K–N).
 
@@ -116,11 +180,290 @@ In summary, we have quantitatively unraveled a dynamic spatio-temporal patternin
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Forkhead</td>
+      <td>GeneBank</td>
+      <td>FLYB:FBgn0000659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td>Non-muscle myosin II /sqh</td>
+      <td>GeneBank</td>
+      <td>FLYB:FBgn0003514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent(D. melanogaster)</td>
+      <td>Armadillo-YFP</td>
+      <td>CPTI collectionPMID:25294944</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fkh-Gal4</td>
+      <td>PMID:10625560</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Fog</td>
+      <td>PMID:16123312</td>
+      <td></td>
+      <td>Gift from Thomas Lecuit</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Cre</td>
+      <td>Bloomington Stock CenterBDSC:55801</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Brainbow</td>
+      <td>PMID:22446736</td>
+      <td></td>
+      <td>Gift from Stefan Luschnig</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sqh[AX3]; sqh::sqhGFP42</td>
+      <td>PMID:14657248</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sqh[AX3];::sqhGFP42, UbiRFP-CAAX</td>
+      <td>Kyoto Drosophila Genomic Research Centre Number 109822PMID:30015616</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Scribble-GFP</td>
+      <td>Kyoto Drosophila Genomic Research Centre</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Venus-Hkb</td>
+      <td>This study</td>
+      <td></td>
+      <td>See Materials and methods section for details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Fkh-GFP</td>
+      <td>Bloomington Stock CenterBDSC:43951</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>fkh[6]</td>
+      <td>Bloomington Drosophila Stock Center, PMID:2566386</td>
+      <td>FLYB:FBal0004012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hkb[2]</td>
+      <td>Bloomington Drosophila Stock CenterBDSC: 5457</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DE-Cadherin (rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank at the University of Iowa</td>
+      <td>DSHB:DCAD2</td>
+      <td>(1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PY-20, *P11120 (mouse monoclonal)</td>
+      <td>Transduction Laboratories</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fog (rabbit polyclonal)</td>
+      <td>PMID:24026125</td>
+      <td></td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Forkhead (guinea pig polyclonal)</td>
+      <td>PMID:2566386</td>
+      <td></td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Huckebein (rat polyclonal)</td>
+      <td>PMID:9056782</td>
+      <td></td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488/549/649-coupled secondary antibodies</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-, Cy5-coupled secondary antibodies</td>
+      <td>Jackson ImmunoResearch</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>otracks</td>
+      <td>PMID:19412170, PMID:24914560</td>
+      <td></td>
+      <td>Software file (custom software written in IDL)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>nd-safir</td>
+      <td>PMID:19900849</td>
+      <td></td>
+      <td>Denoising algorithm. Available at http://serpico.rennes.inria.fr/doku.php?id=software:nd-safir:index</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and husbandry
 
 The following transgenic fly lines were used: Armadillo-YFP (CPTI collection described in Lye et al., 2014), sqhAX3; sqh::sqhGFP42 (Royou et al., 2004) and fkhGal4 (Henderson and Andrew, 2000; Zhou et al., 2001) (kind gift of Debbie Andrew); UAS-Fog (kind gift of Thomas Lecuit); y1 w* cv1 sqhAX3; P[w+mC = sqh-GFP.RLC]C-42 M[w+mC = Ubi-TagRFP-T-CAAX]ZH-22A (Kyoto DGRC number 109822, referred to as sqhAX3;sqhGFP; UbiRFP); [sqhGFP42,UbiRFP; fkh[6]/TM3 Sb Twi-Gal4::UAS-GFP] (fkh[6] allele from Bloomington); [hkb2, p2, Scribble-GFP]; [sqhGFP42,UbiRFP; hkb2, p2/ TM3 Sb Twi-Gal4::UAS-GFP] hkb2 allele from Bloomington BDSC: 5457, [UbiRFP, Venus-HKB] (this study), FkhGFP (Bloomington BDSC:43951) and [FkhGFP; wgGal4, UAS-palmYFP] (generated from membrane Brainbow; Förster and Luschnig, 2012; Hampel et al., 2011). See Table 1 for details of genotypes used for individual figure panels.
 
-## Embryo immunofluorescence labeling, confocal, and time-lapse
+**Table 1.**
+ Embryo genotypes as presented in figures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Figure</th>
+      <th>Chromosome</th>
+      <th>Experiment type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Armadillo-YFP</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>Armadillo-YFP;; sqhGFP42, UbiRFP/+</td>
+      <td>2</td>
+      <td>1,3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>sqhAX3;sqhGFP; UbiRFP</td>
+      <td>2</td>
+      <td>1,3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>hkb[2] p’, ScribGFP</td>
+      <td>3</td>
+      <td>3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>sqhGFP42, UbiRFP; hkb[2]</td>
+      <td>3</td>
+      <td>2,3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>UbiRFP; VenusHkb</td>
+      <td>4</td>
+      <td>2,3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>UbiRFP; VenusHkb</td>
+      <td>4</td>
+      <td>2,3</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>FkhGFP; wgGal4, UASpalmYFP, UbiRFP</td>
+      <td>4</td>
+      <td>2,3</td>
+      <td>Live-imaging</td>
+    </tr>
+    <tr>
+      <td>FkhGFP</td>
+      <td>4</td>
+      <td>2</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>sqhAX3;sqhGFP; UbiRFP</td>
+      <td>5</td>
+      <td>1,3</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>sqhGFP42, UbiRFP; hkb[2]</td>
+      <td>5</td>
+      <td>2,3</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>sqhGFP42, UbiRFP; fkh[6]</td>
+      <td>5</td>
+      <td>2,3</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>sqhAX3;sqhGFP; UbiRFP</td>
+      <td>6</td>
+      <td>1,3</td>
+      <td>Fixed samples</td>
+    </tr>
+    <tr>
+      <td>UAS-Fog; fkhGal4, sqhGFP42, UbiRFP</td>
+      <td>6</td>
+      <td>2,3</td>
+      <td>Fixed samples</td>
+    </tr>
+  </tbody>
+</table>
+
+### Embryo immunofluorescence labeling, confocal, and time-lapse
 
 Embryos were collected on apple juice-agar plates and processed for immunofluorescence using standard procedures. Briefly, embryos were dechorionated in 50% bleach, fixed in 4% formaldehyde, and stained with primary and secondary antibodies in PBT (PBS plus 0.5% bovine serum albumin and 0.3% Triton X-100). Anti-Hkb was a gift from Chris Doe (McDonald and Doe, 1997) anti-Fkh was a gift from Herbert Jäckle (Weigel et al., 1989) and anti-Fog was a gift from Naoyuki Fuse (Fuse et al., 2013), PY-20, (*P11120, Transduction Laboratories); anti-CrebA (DSHB). Secondary antibodies used were Alexa Fluor 488/Fluor 549/Fluor 649 coupled (Molecular Probes) and Cy3 coupled (Jackson ImmunoResearch Laboratories). Samples were embedded in Vectashield (Vector Labs).
 
@@ -128,13 +471,13 @@ Images of fixed samples were acquired on an Olympus FluoView 1200 or a Zeiss 780
 
 For live time-lapse experiments (see Table 1), embryos were dechorionated in 50% bleach and extensively rinsed in water. Stage 10 embryos were manually aligned and attached to heptane-glue coated coverslips and mounted on custom-made metal slides; embryos were covered using halocarbon oil 27 (Sigma-Aldrich) and viability after imaging after 24 hr was controlled prior to further data analysis. Time-lapse sequences were imaged under a 40×/1.3NA oil objective on an inverted Zeiss 780 Laser scanning system, acquiring z-stacks every 0.58–3 min with a typical voxel xyz size of 0.22×0.22×1 μm3. Z-stack projections to generate movies in Supplementary Material were assembled in ImageJ or Imaris. The absence of fluorescent Twi-Gal4::UAS-GFP was used to identify homozygous hkb[2] and fkh[6] mutant embryos. The membrane channel images from time-lapse experiments were denoised using nd-safir software (Boulanger et al., 2010).
 
-## Cell segmentation and tracking
+### Cell segmentation and tracking
 
 Cell segmentation and tracking were performed using custom software written in Blanchard et al., 2009. First, the curved surface of the embryonic epithelium was located by draping a ‘blanket’ over all image volumes over time, where the pixel-detailed blanket was caught by, and remained on top of binarised cortical fluorescence signal. Quasi-2D image layers were then extracted from image volumes at specified depths from the surface blanket. This step permitted to account for the curvature of the embryos in these quasi-2D projections. We took maximum intensity projections of a small number of near-surface image layers typically at 0–4 μm from membrane channels, for cell-apical analyses, apicomedial myosin and anti-Fog fluorescence channels and projections of image layers typically from 5 to 16 μm encompassing nuclear fluorescence for Venus-HKB and Fkh-GFP analyses. Membrane channels were filtered with median, top-hat, or high/low frequency filters as necessary to optimize subsequent cell tracking.
 
 Cells in membrane channels were segmented using an adaptive watershedding algorithm as they were simultaneously linked in time. Manual correction of segmented cell outlines was performed for all fixed and time-lapse data. The segmentation of all the movies used in this study was manually corrected to ensure at least 90% tracking coverage of the placode at all times. Tracked cells were subjected to various quality filters (lineage length, area, aspect ratio, and relative velocity) so that incorrectly tracked cells were eliminated prior to further analysis. The number of embryos analyzed and the number of cells can be found in Figure 1—figure supplement 1, Figure 3—figure supplement 1.
 
-## Mobile radial coordinate system for the salivary gland placode
+### Mobile radial coordinate system for the salivary gland placode
 
 Wild-type movies were aligned in time using as t=0 min, the frame just before the first sign of invagination at the future tube pit was evident. hkb−/− mutants were aligned using as a reference of embryo development the level of invagination of the tracheal pits that are not affected in the hkb−/− mutant as well as other morphological markers such as appearance and depth of segmental grooves in the embryo. Cells belonging to the salivary placode (without the future duct cells that comprise the two most ventral rows of cells in the primordium) were then manually outlined at t=0 min using the surrounding myosin II cable as a guide and ramified forwards and backwards in time. Only cells of the salivary gland placode were included in subsequent analyses.
 
@@ -144,7 +487,7 @@ The radial coordinate system was ‘mobile,’ in the sense that its origin trac
 
 As calculated previously (Sanchez-Corrales et al., 2018), we employ a radial coordinate system centered at the invagination point at t=0 min. We specify the ‘near to the pit’ region as the region located between the invagination point and up to 33% of the distance between the invagination point and the far edge of the placode (with this region usually being within 13.7±3 µm of the pit), and with the rest of the cells defined as ‘far from the pit.’
 
-## Morphogenetic strain rate analysis
+### Morphogenetic strain rate analysis
 
 Detailed spatial patterns of the rates of deformation across the placode and over time quantify the net outcome of active stresses, viscoelastic material properties, and frictions both from within and outside the placode. We quantified strain (deformation) rates over small spatio-temporal domains composed of a focal cell and one corona of immediate neighbors over a ~3-min interval (Blanchard et al., 2009) and reviewed in Blanchard, 2017. On such 2D domains, strain rates are captured elliptically, as the strain rate in the orientation of greatest absolute strain rate, with a second strain rate perpendicular to this.
 
@@ -154,13 +497,13 @@ The three types of elliptical strain rates were projected onto our radial coordi
 
 Cell shape elongation (Figure 4H) was calculated by fitting an ellipse into each cell. The two axes of each ellipse were projected into radial coordinates and the ratio of them was calculated.
 
-## Neighbor exchange analysis
+### Neighbor exchange analysis
 
 We used changes in neighbor connectivity in our tracked cell data to identify neighbor exchange events (T1 processes). Neighbor exchange events were defined by the identity of the pair of cells that lost connectivity in t and the pair that gained connectivity at t+1. The orientation of gain we defined as the orientation of the centroid-centroid line of the gaining pair at t+1. We further classified gains as either radially or circumferentially oriented, depending on which the gain axis was most closely aligned to locally. We did not distinguish between solitary T1s and T1s involved in rosette-like structures.
 
 From visual inspection, we knew that some T1s were subsequently reversed, so we characterized not only the total number of gains in each orientation but also the net gain in the circumferential axis, by subtracting the number of radial gains. Furthermore, when comparing embryos and genotypes, we controlled for differences in numbers of tracked cells by expressing the net circumferential gain per time step as a proportion of half of the total number of tracked cell-cell interfaces in that time step. We accumulated numbers of gains, net gains, and proportional rate of gain over time for WT and hkb embryos (Figure 4D and E). Two sample Kolmogorov-Smirnov tests were used to determine significance at p<0.05 for data in Figure 3.
 
-## Automated medial myosin II quantification and oscillatory behavior and polarity
+### Automated medial myosin II quantification and oscillatory behavior and polarity
 
 We extracted a quasi-2D layer image from the myosin II channel at a depth typically from 0 to 3 μm that maximized the capture of apical-medial myosin. We background-subtracted the myosin images and quantified the average intensity of apical-medial myosin as the fluorescence inside the segmented cell, excluding the fluorescence along cell-cell interfaces encompassing the cell edge pixels plus two pixels in a perpendicular direction on either side (considered junctional myosin).
 
@@ -168,6 +511,6 @@ The analysis of apical-medial fluorescence fluctuations was performed as describ
 
 The analysis of junctional myosin polarity was performed as described before in Sanchez-Corrales et al., 2018; Tetley et al., 2016. Briefly, the average junctional fluorescence intensity is considered a periodic signal around the cell and decomposed into individual components (modes) using Fourier analysis. The strength of myosin bipolarity corresponds to the amplitude of the second mode while the strength of unipolarity corresponds to the amplitude of the first mode. Similarly, the phase of modes 1 and 2 (uni-/bipolarity) represents the orientation of cell polarity. The uni- and bipolarity amplitudes are expressed as a proportion of the mean cell perimeter fluorescence. Cells at the border of the placode that are part of the supra-cellular actomyosin cable at the boundary were excluded from the analysis.
 
-## Hkb, Fkh, and Fog fluorescence intensity quantifications
+### Hkb, Fkh, and Fog fluorescence intensity quantifications
 
 Average fluorescence was calculated after background subtraction as the mean fluorescence inside a segmented cell excluding the cell edge pixels and two pixels in a perpendicular direction on either side. Fixed samples of Venus-Hkb and FkhGFP embryos of mid to late stage 10 (t<<0 min), early stage 11 (t+0 min) and late stage 11 (t>>0 min) were pooled together with relevant time points from live-imaging as shown in Table 1 and figure legends. Fluorescence was normalized in each image by dividing the average fluorescence of each cell by the 98th percentile value. Calculations were performed in R.

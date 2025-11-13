@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.30286.001 Neurotransmitter release depends on the SNARE complex formed by syntaxin-1, synaptobrevin and SNAP-25, as well as on complexins, which bind to the SNARE complex and play active and inhibitory roles. A crystal structure of a Complexin-I fragment bearing a so-called 'superclamp' mutation bound to a truncated SNARE complex lacking the C-terminus of the synaptobrevin SNARE motif (SNAREΔ60) suggested that an 'accessory' α-helix of Complexin-I inhibits release by inserting into the C-terminus of the SNARE complex. Previously, isothermal titration calorimetry (ITC) experiments performed in different laboratories yielded apparently discrepant results in support or against the existence of such binding mode in solution (Trimbuch et al., 2014; Krishnakumar et al., 2015). Here, ITC experiments performed to solve these discrepancies now show that the region containing the Complexin-I accessory helix and preceding N-terminal sequences does interact with SNAREΔ60, but the interaction requires the polybasic juxtamembrane region of syntaxin-1 and is not affected by the superclamp mutation within the experimental error of these experiments.
+Neurotransmitter release depends on the SNARE complex formed by syntaxin-1, synaptobrevin and SNAP-25, as well as on complexins, which bind to the SNARE complex and play active and inhibitory roles. A crystal structure of a Complexin-I fragment bearing a so-called 'superclamp' mutation bound to a truncated SNARE complex lacking the C-terminus of the synaptobrevin SNARE motif (SNAREΔ60) suggested that an 'accessory' α-helix of Complexin-I inhibits release by inserting into the C-terminus of the SNARE complex. Previously, isothermal titration calorimetry (ITC) experiments performed in different laboratories yielded apparently discrepant results in support or against the existence of such binding mode in solution (Trimbuch et al., 2014; Krishnakumar et al., 2015). Here, ITC experiments performed to solve these discrepancies now show that the region containing the Complexin-I accessory helix and preceding N-terminal sequences does interact with SNAREΔ60, but the interaction requires the polybasic juxtamembrane region of syntaxin-1 and is not affected by the superclamp mutation within the experimental error of these experiments.
 
 ## Introduction
 
@@ -45,6 +45,55 @@ To investigate how the differences in the syntaxin-1 fragments might affect the 
 
 **Figure 2.:** The various panels show direct titrations of SNAREΔ60 containing syntaxin-1(191–253) (A,E,I), syntaxin-1(188–259) (B,F,K), syntaxin-1(188–265) (C,G,L) or His6-syntaxin-1(188–265) (D,H,M) with CpxI(48-134) (A–D), CpxI (E–H) or scCpxI (I–M), monitored by ITC. The upper panels show the baseline- and singular-value-decomposition-corrected thermograms for the respective experiments. The circles in the lower panels are the integrated heats of injection, with the error bars representing estimated errors for these values (Keller et al., 2012). The lines in these panels represent the respective fits of the data to a single binding site ‘A + B <->AB’ model.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/30286/elife-30286-fig3-v1.jpg)
+
+**Figure 3.:** The various panels show blocking assays monitored by ITC where SNAREΔ60 complex blocked with 4.9 equivalents of CpxI(48-134) and containing syntaxin-1(191–253) (A,E,I), syntaxin-1(188–259) (B,F,K), syntaxin-1(188–265) (C,G,L) or His6-syntaxin-1(188–265) (D,H,M) was titrated with CpxI(48-134) itself (A–D), CpxI (E–H) or scCpxI (I–M). The upper panels show the baseline- and singular-value-decomposition-corrected thermograms for the respective experiments. The circles in the lower panels are the integrated heats of injection, with the error bars representing estimated errors for these values (Keller et al., 2012). The lines in these panels represent the respective fits of the data to a single binding site ‘A + B < ->AB’ model, but note that no meaningful thermodynamic parameters can be derived from these data sets.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30286/elife-30286-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The plots show superpositions of ITC data obtained in blocking assays such as those described in Figure 3, including two separate experiments performed with WT CpxI and two separate experiments performed with scCpxI, titrated into blocked SNAREΔ60-Sx265 (A) or His6-SNAREΔ60-Sx265 (B) complexes. To facilitate comparison of the four data sets shown in each panel, a constant value resulting from the average of the last five data points was subtracted from each data point of a given dataset. Note that, as a consequence, the baseline at the end of the titration is closer to zero than observed in the plots of Figure 3G,H,L,M, where the baseline was determined by the data fitting procedure. The data superpositions show that the superclamp mutation does not markedly influence the heat release observed in experiments performed with blocked SNAREΔ60-Sx265 (A) or His6-SNAREΔ60-Sx265 (B) complexes.
+
+**Table 1.**
+ Summary of KDs (in μM units) between CpxI proteins and SNAREΔ60 complexes containing different syntaxin-1 fragments measured by ITC*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SNAREΔ60-Sx253</th>
+      <th>SNAREΔ60-Sx259</th>
+      <th>SNAREΔ60-Sx265</th>
+      <th>His6-SNAREΔ60-Sx265</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CpxI(48-134)</td>
+      <td>2.0 [1.4–2.8]</td>
+      <td>1.4 [1.2–1.7]</td>
+      <td>2.0 [1.6–2.5]</td>
+      <td>1.8 [1.5–2.1]</td>
+    </tr>
+    <tr>
+      <td>CpxI</td>
+      <td>1.9 [1.6–2.3]</td>
+      <td>2.5 [2.0–3.1]</td>
+      <td>2.4 [2.0–3.0]</td>
+      <td>2.2 [1.8–2.6]</td>
+    </tr>
+    <tr>
+      <td>scCpxI</td>
+      <td>2.0 [1.8–2.4]</td>
+      <td>2.2 [1.7–2.5]</td>
+      <td>2.2 [1.9–2.6]</td>
+      <td>2.2 [1.9–2.5]</td>
+    </tr>
+  </tbody>
+</table>
+
+_*At least two independent experiments were performed for each combination of CpxI protein and SNAREΔ60 complex. KDs were derived from global fit of the independent experiments performed for each combination. For all KDs, 68.3% confidence intervals calculated using the error-surface projection method are indicated between brackets._
+
 The systematic blocking assays were performed using the approach designed by the Rothman laboratory, blocking the various SNAREΔ60 complexes with a large (4.9-fold) excess of CpxI(48-134), and titrating with CpxI(48-134) itself, CpxI or scCpxI. Because the use of different total protein concentrations might have yielded some variability in the heat release observed in the previously published blocking assays, all experiments of this systematic analysis used similar total protein concentrations. In all the control experiments where the blocked SNAREΔ60 complexes were titrated with CpxI(48-134) itself, only a very small amount of heat release was observed (Figure 3A–D), which can be attributed to a small amount of remaining free SNAREΔ60. Assuming a KD of 2 μM, this small amount is estimated to be about 2.5% of the total SNAREΔ60 complex, which is consistent with the small heat release observed. Comparable, very small heat release was observed in experiments where blocked SNAREΔ60-Sx253 or SNAREΔ60-Sx259 complexes were titrated with full-length CpxI or scCpxI (Figure 3E,F,I,K), indicating that there is no interaction of residues 1–47 of CpxI with these complexes. However, the heat release was higher when full-length CpxI or scCpxI were titrated into blocked SNAREΔ60-Sx265 (Figure 3G,L), showing that residues 1–47 of CpxI do interact with SNAREΔ60 when the complex includes the juxtamembrane region in syntaxin-1. Reliable KDs cannot be derived from these data because of the difficulty in accurately defining the baselines in the respective isotherms, but it appears that the interaction is weak based on the small amount of heat release (Figure 3G,L) and the fact that the presence of the juxtamembrane region did not lead to an overt increase in the measured affinities in the direct titrations (Figure 2, Table 1). We also note that even higher heat release was observed in blocking experiments where His6-SNAREΔ60-Sx265 was titrated with CpxI or scCpxI (Figure 3H,M), showing that the His6-tag can alter the results and hence should be removed.
 
 Overall, these results show that there is an interaction between the C-terminus of SNAREΔ60-Sx265 and residues 1–47 of CpxI, although the nature of the interaction remains unclear. It seems highly unlikely that the CpxI accessory helix-SNAREΔ60 interaction observed in the zigzag crystal structure (Figure 1C) underlies the heat release observed in the blocking assays performed with the SNAREΔ60-Sx265 and His6-SNAREΔ60-Sx265 complexes because the heat release was not markedly altered by the superclamp mutation (Figure 3G,H,L,M; see also the superposition of data obtained for WT CpxI and scCpxI shown in Figure 3—figure supplement 1). Note that the superclamp mutation replaces three charged residues of WT CpxI with hydrophobic side chains that in the zigzag crystal structure pack against the hydrophobic groove left in SNAREΔ60 by the synaptobrevin truncation (Figure 1C and Kümmel et al., 2011); therefore the presence of three charged residues in WT CpxI is expected to strongly disrupt this interaction. Because the observation of heat release in the blocking assays requires the polybasic juxtamembrane region of syntaxin-1 within SNAREΔ60-Sx265, it is most likely that the interaction underlying this heat release involves binding of the juxtamembrane region to acidic side chains within residues 1–47 of CpxI, which include the accessory helix and preceding N-terminal sequence (Figure 1A). This type of interaction could occur between CpxI and the blocked SNAREΔ60-Sx265 complex, or between the juxtamembrane region of one SNAREΔ60-Sx265 complex and residues 1–47 of a CpxI molecule that is bound via its central helix to another SNAREΔ60-Sx265 complex. In this ‘trans’ configuration, CpxI would bridge two SNAREΔ60-Sx265 complexes, which might or might not lead to a zigzag arrangement similar to that observed in the crystal structure of scCpxI(26-83) bound to SNAREΔ60 (note that the SNAREΔ60 complex in the crystal structure did not include the syntaxin-1 juxtamembrane region). Both interactions of CpxI (one involving the central helix and the other involving residues 1–47) could also be established in ‘cis’ with a single SNAREΔ60-Sx265 complex. In any case, the two interactions do not appear to act cooperatively, as residues 1–47 of CpxI or the syntaxin-1 juxtamembrane region do not markedly increase the affinity of SNAREΔ60 for CpxI (Figure 2; Table 1). Thus, the heat released by the interaction involving the syntaxin-1 juxtamembrane region with residues 1–47 of CpxI is most likely masked in the direct titrations by the much stronger heat arising from the binding of the CpxI central helix.
@@ -53,10 +102,10 @@ The functional significance of the interaction of the syntaxin-1 juxtamembrane r
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 Expression vectors for GST-PreScission human synaptobrevinΔ60 (residues 29–60; SybΔ60), GST-TEV rat syntaxin-1A (residues 191–253), His6-SUMO human SNAP25A-N terminal SNARE motif (residues 7–82; SNAP25N), His6-SUMO human SNAP25A-C terminal SNARE motif (residues 141–203; SNAP25C), His6-SUMO human CpxI (residues 48–134), His6-thrombin human CpxI (residues 1–134), and His6-thrombin human scCpxI (residues 1–134 D27L, E34F, R37A) were described previously by the Rothman laboratory (Kümmel et al., 2011). Additionally, vectors for His6-rat syntaxin-1A (residues 188–259) and His6-rat syntaxin-1A (residues 188–265) were also prepared by the Rothman laboratory using standard recombinant DNA techniques. All fusion proteins were expressed in E. coli BL21 (DE3) cells by induction with 0.5 mM IPTG at an O.D600 of 0.6 for 4 hr at 37°C. Proteins were purified as described (Kümmel et al., 2011) and Trimbuch et al., 2014). Briefly, cells were harvested and re-suspended in PBS pH 7.4 containing 1 mM TCEP and supplemented with Sigma protease inhibitors. Cleared lysates were applied to either glutathione sepharose resin (GE) or Ni-NTA resin (Thermo Fisher), washed with PBS pH 7.4, and eluted in PBS pH 7.4, 400 mM imidazole. Affinity tags were cleaved with the indicated protease overnight at 4°C. After affinity tag cleavage, all proteins were further purified using size exclusion chromatography on a Superdex S75 column (GE 16/60) equilibrated with 20 mM Tris pH 7.4, 125 mM NaCl, 1 mM TCEP. The expression of Syx 188–265 led to the majority of the protein being expressed in inclusion bodies. Since this fragment does not contain any tertiary structure, a denaturing protocol was used to extract the protein from the pellet after lysis and centrifugation. After extraction in 50 mM Tris pH 7.4, 1M NaCl, and 6 M Gdn-HCl, the protein was applied to Ni-NTA resin, washed with PBS pH 7.4, 1 M NaCl, eluted in PBS pH 7.4, 1 M NaCl, 400 mM imidazole, and dialyzed into buffer containing 20 mM Tris pH 7.4, 1M NaCl. Removal of the affinity tag was performed concomitantly with dialysis for syntaxin-1(188–265), while syntaxin-1(188–265) with an intact His6-tag was immediately flash frozen after elution from the Ni-NTA column in PBS pH 7.4, 1 M NaCl, 400 mM imidazole.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 ITC experiments were performed using a Microcal ITC200 (Malvern) at 25°C. SNAREΔ60 complexes were prepared by mixing SNAP25N, SNAP25C, SybΔ60 and the corresponding syntaxin-1A fragment in equimolar ratios and incubating overnight at 4°C. Assembled complexes were purified the next day using size exclusion chromatography with a Superdex S75 column (GE 16/60). All proteins were dialyzed (2 L for 4 hr followed by 4 L overnight) in a buffer containing PBS (pH 7.4, 137 mM NaCl, 3 mM KCl, 10 mM phosphate buffer, 0.25 mM TCEP) before the experiments. Protein concentrations were measured by UV absorbance at 280 nm. All experiments were performed at least in duplicate for each combination of CpxI protein and SNAREΔ60 complex to check the reproducibility of the data. For direct titrations (Figure 2), CpxI(48-134), CpxI or scCpxI (150 μM) was directly titrated into the chamber containing 8 μM SNAREΔ60-Sx253, SNAREΔ60-Sx259, SNAREΔ60-Sx265 or His6-SNAREΔ60-Sx265. The data were baseline corrected and integrated with NITPIC, fitted with a nonlinear least squares routine using a single-site binding model with ITCsy and plotted with GUSSI (Brautigam et al., 2016). The ‘A + B < ->AB’ model was used for the fitting, and apparent concentration errors for the cell contents were compensated for by refining an incompetent fraction parameter. The 68.3% confidence intervals were obtained using the error surface projection method. Global analysis with ITCsy was performed for each set of experiments carried out with the same protein fragments to derive the KDs described in Table 1. For blocking assays, CpxI(48-134), CpxI or scCpxI (300–500 μM) was titrated into the chamber containing 17–21 μM SNAREΔ60-Sx253, SNAREΔ60-Sx259, SNAREΔ60-Sx265 or His6-SNAREΔ60-Sx265 and 4.9 equivalents of CpxI(48-134).

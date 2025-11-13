@@ -16,4 +16,4 @@
 
 ## Abstract
 
-A protein called SAS-7 is required for daughter centrioles to become mothers in C. elegans .
+A protein called SAS-7 is required for daughter centrioles to become mothers in C. elegans.

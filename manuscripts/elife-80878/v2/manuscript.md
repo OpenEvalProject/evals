@@ -29,7 +29,7 @@ Recently, we developed a novel nonlinear analysis framework for adult rsfMRI usi
 
 ## Results
 
-## VAE represented fetal–neonatal fMRI patterns better than linear models
+### VAE represented fetal–neonatal fMRI patterns better than linear models
 
 We first determined whether our VAE model pretrained using adult rsfMRI data could extract meaningful representations of fetal–neonatal cortical activity. To accomplish this, we measured the reconstruction performance of rsfMRI patterns via the VAE model and compared it to linear representations derived using ICA and cortical parcels. For the latter, we employed linear latent spaces defined through group ICA of adult rsfMRI, the same dataset used for VAE training (see ‘Materials and methods’ for details). As the number of dimensions of latent space (i.e., number of features) is critical to reconstruction performance, we utilized linear latent spaces with different dimensions (i.e., IC50, IC100, IC200, and IC300; publicly available at https://db.humanconnectome.org/; Van Essen et al., 2013 and melodic ICA with 256 components). Reconstruction performance was defined as the spatial correlation between original and reconstructed cortical patterns (Figure 1A–C).
 
@@ -51,15 +51,29 @@ To test whether improved representations in the VAE stemmed from a stronger smoo
 
 As expected, reconstruction performance of adult rsfMRI (blue line) was better than neonatal rsfMRI data. Also, the maximum FWHM level was at 7 mm for adults compared to 5 mm for neonates. Given that brain size of newborns is about 60% of adults’ brain size, this result suggested that smoothing effect of the VAE is largely consistent against age-related characteristics of rsfMRI. Similar smoothing effect was observed for IC300 and melodic IC with 256 components. IC50 showed the strongest smoothing effect as the peak was beyond our FWHM search boundary. Nonetheless, the VAE showed the best reconstruction performance compared to other linear counterparts across all smoothing levels.
 
-## Reconstructed fMRI patterns contained not only age, but also individual neural signatures
+### Reconstructed fMRI patterns contained not only age, but also individual neural signatures
 
 We speculated that a critical factor of subject-wise variation in the reconstruction performance was the variability in participants’ ages at the time of the MRI study. We found that PMA at scan was significantly and positively correlated with the reconstruction performance for both Developing Human Connectome Project (dHCP) (Figure 4A; r = 0.20, p<0.01) and Developing Brain Institute (DBI) (Figure 4B; r = 0.35, p<0.01) datasets. When only scans with good radiology scores (=1 or 1 + 2) were considered, the association between age at scan and reconstruction performance remained significant (group with radiology score = 1, normal appearance for age; n = 172, r = 0.19, p=0.01; score = 1 + 2, 2 = incidental findings with unlikely significance for clinical outcome or analysis; n = 292, r = 0.21, p<10–3). Conversely, for the fetal dataset, we found that the reconstruction performance was negatively correlated with GA (Figure 4—figure supplement 1C; r = −0.69, p<10–4). We posit that this was in part due to the smoothing effect induced when registering the small size of the fetal brain (e.g., 19 wk) to the standard 40 wk neonatal brain template, for example, the brain size of fetus at GA = 19 wk was only 52 cc compared to 330 cc in fetus with GA = 32 wk (Figure 4—figure supplement 1A). Therefore, projecting fMRI activity in smaller brain into the standard brain template introduced greater ballooning effect to brain activity; this was somewhat akin to applying heavy spatial smoothing procedure to the activity pattern (see Figure 4—figure supplement 1B). Similarly, we observed a strong negative association between brain size and reconstruction performance (Figure 4—figure supplement 1D). Once brain size was accounted for, the negative correlation between age and reconstruction performance was reduced (Figure 4—figure supplement 1E, r = −0.24, p=0.01). However, despite the reconstruction performance being reduced, the negative correlation between fetal age and reconstruction performance remained significant. While we posit that brain representations of younger fetuses are less similar to human adults than older fetuses, our observation suggests that there are additional confounding factors that we failed to identify. In contrast, brain size in newborns was not significantly associated with reconstruction performance (Figure 4—figure supplement 1G, r = 0.14, p=0.12). We believe this is because brain sizes were less variable in neonates (mean = 465.25 cc vs. STD = 58.4 cc) compared to fetuses (mean = 340.88 cc vs. STD = 86.90 cc) and because the standard brain template lay within the age range of the neonates. For these reasons, it is likely that the smoothing effect induced by the brain size is negligible in the neonates but not in the fetuses. Lastly, the positive age dependency of reconstruction performance in neonates remained significant even when considering brain size (Figure 4—figure supplement 1F, r = 0.36, p<10–4). Further studies investigating the influence of brain size and reconstruction performance in very preterm infants may help clarify the factors driving the discrepancy in findings between fetal- and neonatal groups.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig4-v2.jpg)
+
+**Figure 4.:** Reconstruction degrees across individuals are positively correlated with their ages at scan for both datasets, Developing Human Connectome Project (dHCP) (A) and Developing Brain Institute (DBI) (B). In (B), each red dot stands for the outliers having >3 median absolute deviations away from the median. (C) Distributions of ages at repeated scans (left; dHCP dataset, first and second scans; right; DBI dataset, fetal and neonatal scans). (D) Distributions of inter-scan age difference, for dHCP (left) and DBI dataset (right). (E) Scatterplot of reconstruction degree between the first scan and (or fetal scan for DBI) and the second scan (or neonatal scan for DBI), after controlling the effect from ages at scan.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The brain size of young fetus (GA=19 weeks) is only 52cc compared to fetus with GA=32 weeks. (B) Projecting fMRI activity of young fetus into the standard brain template induce more “balloon” effect compared to older fetuses (GA=32 week). (C) Variability of reconstruction degree of fMRI patterns across fetuses at different gestational ages. Red dots stand for the outliers having > 3 median absolute deviations away from the median. (D) Scatterplot between brain size and spatial similarity (n=108). (E) Partial regression plot between age at scan and reconstruction performance. (F-G) Same analysis as (B-C) but with neonate subjects. (H) Scatter plot between reconstruction degree at the fetal scan and reconstruction degree at the neonatal scan, after controlling the effect from brain size.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (Left) Scatter plot of average frame-wise displacement degree between repeated scans in dHCP dataset. After controlling the effect from motion artifact (Middle) or brain size (Right), reconstruction degree at the first scan is still significantly and positively correlated with reconstruction degree at the second scan.
 
 Interestingly, we found that the age dependency of the reconstruction performance was significant, but the strength of correlation was moderate r = 0.20 (p<0.01; Figure 4A) and r = 0.35 (p<0.01; Figure 4B), in the dHCP and DBI datasets, respectively. In the dHCP dataset, reconstruction performance was negatively correlated with average frame-wise displacement level (r = −0.34, p<10–4) but not with brain size (r = −0.07, p=0.17). There was no significant correlation between PMA at scan and head motion (r = 0.01, p=0.79). When head motion level was considered in the model, the age dependency of the reconstruction performance increased (r = 0.22, p<10–4). The reconstruction performance remained consistent across different scan duration (Figure 4—figure supplement 2).
 
 We sought to determine whether reconstruction performance in newborns was consistent across scans. To investigate this, we analyzed the reconstruction performance in subjects with two postnatal scans (dHCP dataset; n = 48 subjects; Figure 4C, left) or those with in and ex utero scans (DBI dataset; n = 57 subjects; Figure 4C, right). The time interval between scans for the dHCP dataset was 3–12 wk (Figure 4D, left) and 2–19 wk (Figure 4D, right) for the DBI datasets. After regressing out the age effect from the reconstruction performance, we found that subjects having better reconstruction performance on their first scan also tended to have better reconstruction performance on their second scan (Figure 4E, left; r = 0.38, p<0.01; intraclass correlation coefficient [ICC] = 0.38). Interestingly, this trend was also observed in subjects with in utero and ex utero scans (Figure 4E, right; r = 0.40, p<0.01; ICC = 0.39). To confirm that this finding was not driven by similar head motion profiles between scans, we analyzed whether head motion was related between the subjects’ two scans. We found that there was no significant correlation in the inter-session frame-wise head displacement (Figure 4—figure supplement 3, left; r = 0.15, p=0.32). The inter-session similarity of reconstruction performance also remained significant after controlling for head motion (Figure 4—figure supplement 3, middle; r = 0.30, p<0.05). We further found the inter-session similarity of reconstruction performance was not driven by the variation in brain sizes for both dHCP and DBI datasets (for DBI dataset, Figure 4—figure supplement 1H; r = 0.36, p<0.01, and for dHCP dataset, Figure 4—figure supplement 3, middle; r = 0.37, p<0.01). Altogether, our results suggest that the individual variation of the reconstruction performance of resting-state fetal–neonatal brain activity was tightly connected not only to chronological brain maturity but also to the intrinsic neural traits of the subjects even during the in utero period.
 
-## Prediction of gestational age and postmenstrual age using VAE-derived representations
+### Prediction of gestational age and postmenstrual age using VAE-derived representations
 
 Next, we investigated whether latent variables extracted by VAE contained neural signatures of fetal–neonatal functional brain maturation using the dHCP dataset. Given different types of latent variables that were defined by VAE, cortical parcels, or IC50-300, we calculated FC patterns, which was defined by the covariance (or correlation for cortical parcels and IC50-300) for every pair of latent variables, per subject (Figure 5A). Through fusing tenfold cross-validation scheme and linear regression support vector machine (RSVM) in dHCP dataset, we found that latent variables derived by VAE yielded highly reliable prediction accuracy (Figure 5B and C). As suggested in brain age prediction studies (Gong et al., 2021), we also adjusted for prediction bias in the model (Figure 5C). Interestingly, the age prediction model with VAE-derived representations reached the best age prediction accuracy; mean ± standard deviation over tenfolds, root mean squared error (RMSE) = 1.98 ± 0.06, mean absolute error (MAE) = 1.53 ± 0.05, r2 = 0.72 ± 0.01, with a big margin compared to models based on linear latent features (Table 1). The percentage (=14.14 ± 0.32%) of latent space representing age information was lower than most of the linear counterparts (for cortical space, 76.53 ± 1.29%; for IC50, 44.84 ± 0.46%; for IC100, 32.55 ± 0.43%; for IC200, 16.07 ± 0.34%; for melodicIC, 29.97 ± 0.47%), except IC300 (=10.83 ± 0.25%). It is noteworthy that different from the monotonic improvement of the reconstruction performance over increasing IC #, the age prediction accuracy reached peak at melodicIC while accuracy deteriorated in the prediction model with features from 300 ICs (melodicIC: 1.76 ± 0.07 vs. 1.94 ± 0.07 for IC300). The age prediction accuracy of the cortical parcels (MAE: 1.85 ± 0.07) model was between the IC300 and melodicIC models. Collectively, these results suggest that nonlinear features extracted by VAE improved age prediction, outperforming linear features derived using ICA or cortical parcels.
 
@@ -67,9 +81,149 @@ Next, we investigated whether latent variables extracted by VAE contained neural
 
 **Figure 5.:** (A) Illustration of age prediction algorithm. (B) Scatterplot between actual age and predicted age. (C) Distribution of prediction error across age at scan. (B, C) Different colors stand for the prediction age from different folds. Lines with different colors stand for the optimal fit. Black line is the optimal fit for whole samples.
 
+**Table 1.**
+ Comparison of age prediction performance in Developing Human Connectome Project (dHCP) dataset using different latent representations.RMSE: root mean squared error; MAE: mean absolute error; R2: explained variance; VAE: variational autoencoder; ICA: independent component analysis. Red highlight indicates the best performance among different latent representation methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Representationmethod</th>
+      <th>RMSE(mean ± SD)</th>
+      <th>MAE</th>
+      <th>R2</th>
+      <th>Correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VAE (N = 256)</td>
+      <td>1.98 ± 0.06</td>
+      <td>1.53 ± 0.05</td>
+      <td>0.72 ± 0.01</td>
+      <td>0.84 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Cortical parcel(N = 360)</td>
+      <td>2.35 ± 0.08***</td>
+      <td>1.85 ± 0.07***</td>
+      <td>0.65 ± 0.01***</td>
+      <td>0.80 ± 0.02***</td>
+    </tr>
+    <tr>
+      <td>IC50</td>
+      <td>2.88 ± 0.15***</td>
+      <td>2.28 ± 0.12***</td>
+      <td>0.55 ± 0.02***</td>
+      <td>0.73 ± 0.03***</td>
+    </tr>
+    <tr>
+      <td>IC100</td>
+      <td>2.67 ± 0.11***</td>
+      <td>2.12 ± 0.09***</td>
+      <td>0.59 ± 0.02***</td>
+      <td>0.76 ± 0.03***</td>
+    </tr>
+    <tr>
+      <td>IC200</td>
+      <td>2.31 ± 0.09***</td>
+      <td>1.83 ± 0.07***</td>
+      <td>0.65 ± 0.01***</td>
+      <td>0.80 ± 0.02***</td>
+    </tr>
+    <tr>
+      <td>IC300</td>
+      <td>2.43 ± 0.09***</td>
+      <td>1.94 ± 0.07***</td>
+      <td>0.63 ± 0.01***</td>
+      <td>0.79 ± 0.02***</td>
+    </tr>
+    <tr>
+      <td>Melodic ICA (N = 256)</td>
+      <td>2.23 ± 0.08***</td>
+      <td>1.76 ± 0.07***</td>
+      <td>0.67 ± 0.01***</td>
+      <td>0.81 ± 0.02***</td>
+    </tr>
+    <tr>
+      <td colspan="5">***: Bonferroni-corrected p&lt;10–4; compared to VAE.</td>
+    </tr>
+  </tbody>
+</table>
+
 We also tested our age prediction scheme under different latent representations methods in the DBI dataset. Unlike the dHCP dataset, fetuses and neonates in the DBI dataset had fMRI scans with different spatiotemporal resolutions. To minimize possible effects of this difference, we modified the feature selection step in the prediction scheme, deriving the global network strength by summing significant and positive FC edges per subject, yielding a single feature per subject. As the feature space became 1, we substituted linear regression for RSVM. In line with findings in the dHCP dataset, the results clearly showed that latent variables derived by VAE reflected their neurodevelopmental variability across fetuses and neonates more effectively than linear latent representations (Table 2). When the age prediction model considered a single age group (neonates or fetuses), the age prediction accuracy of VAE was superior to linear models only in neonates; cortical parcel showed better performance in fetuses (Supplementary file 1). The percentage of VAE-derived latent space representing age information (=11.39 ± 0.35%) was lower than IC100 (=10.86 ± 0.27%), IC200 (=7.31 ± 0.25%), and IC300 (=5.24 ± 0.23%); comparable to cortical parcels (=11.12 ± 0.24%); higher than IC50 (=21.68 ± 0.43%) and melodicIC (=12.6 ± 0.24%).
 
-## VAE-derived representations showed better cross-center generalizability of age prediction than linear representations
+**Table 2.**
+ Comparison of age prediction performance in Developing Brain Institute (DBI) dataset using different latent representations.RMSE: root mean squared error; MAE: mean absolute error; R2: explained variance; VAE: variational autoencoder; ICA: independent component analysis. Red highlight indicates the best performance among different latent representation methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Representationmethod</th>
+      <th>RMSE(mean ± SD)</th>
+      <th>MAE</th>
+      <th>R2</th>
+      <th>Correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VAE (N = 256)</td>
+      <td>3.83 ± 0.20</td>
+      <td>3.02 ± 0.17</td>
+      <td>0.66 ± 0.01</td>
+      <td>0.79 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Cortical parcel(N = 360)</td>
+      <td>4.55 ± 0.27***</td>
+      <td>3.64 ± 0.22***</td>
+      <td>0.58 ± 0.01***</td>
+      <td>0.73 ± 0.02***</td>
+    </tr>
+    <tr>
+      <td>IC50</td>
+      <td>5.80 ± 0.52***</td>
+      <td>4.65 ± 0.43***</td>
+      <td>0.48 ± 0.02***</td>
+      <td>0.65 ± 0.04***</td>
+    </tr>
+    <tr>
+      <td>IC100</td>
+      <td>5.74 ± 0.33***</td>
+      <td>3.78 ± 0.28***</td>
+      <td>0.57 ± 0.02***</td>
+      <td>0.73 ± 0.04***</td>
+    </tr>
+    <tr>
+      <td>IC200</td>
+      <td>5.05 ± 0.36***</td>
+      <td>3.97 ± 0.29***</td>
+      <td>0.54 ± 0.02***</td>
+      <td>0.70 ± 0.03***</td>
+    </tr>
+    <tr>
+      <td>IC300</td>
+      <td>4.82 ± 0.33***</td>
+      <td>3.79 ± 0.27***</td>
+      <td>0.57 ± 0.02***</td>
+      <td>0.72 ± 0.03***</td>
+    </tr>
+    <tr>
+      <td>Melodic ICA (N = 256)</td>
+      <td>4.24 ± 0.32***</td>
+      <td>3.33 ± 0.27***</td>
+      <td>0.62 ± 0.01***</td>
+      <td>0.76 ± 0.03***</td>
+    </tr>
+    <tr>
+      <td colspan="5">***: Bonferroni-corrected p&lt;10–4; compared to VAE.</td>
+    </tr>
+  </tbody>
+</table>
+
+### VAE-derived representations showed better cross-center generalizability of age prediction than linear representations
 
 Clinical utility of an age prediction model relies on its generalizability across datasets acquired under different data acquisition parameters, for example, spatial and temporal resolution, SNR level, etc. For this purpose, we tested the inter-center generalizability of our age prediction model over dHCP and DBI datasets using different latent spaces. As dHCP and DBI datasets had different MR sequence parameters, we re-employed the age prediction model used for the DBI dataset that summed significant and positive FC edges. Here, we used dHCP dataset as training and validation data, and tested the performance of trained models on the DBI dataset, as illustrated in Figure 6A. VAE showed the best cross-center prediction performance (Figure 6B) compared to linear models (Figure 6C and D). Quantitatively, we confirmed our observation that VAE showed the least error (RMSE = 4.95 ± 0.66, MAE = 3.90 ± 0.65; n = 100 random trials with bootstrapping permutation method) compared to other linear latent spaces (Table 3); cortical parcel and IC maps showed comparable prediction performance. Altogether, these results strongly support our hypothesis that nonlinear latent representations featured by the VAE convey neural signatures reflecting brain maturity across a wide range of gestational and PMAs, in a more effective way than linear latent representations.
 
@@ -77,17 +231,112 @@ Clinical utility of an age prediction model relies on its generalizability acros
 
 **Figure 6.:** (A) Illustration of transferable age prediction algorithm. (B–D) Scatterplot between actual age and predicted age using different latent representations. Each red dot stands for the outliers having >3 median absolute deviations away from the median reconstruction performance.
 
-## Mapping resting-state brain networks of neonatal babies using VAE
+**Table 3.**
+ Cross-center generalizability of age prediction performance under different latent representations.RMSE: root mean squared error; MAE: mean absolute error; VAE: variational autoencoder; ICA: independent component analysis. Red highlight indicates the best performance among different latent representation methods.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Representationmethod</th>
+      <th>RMSE</th>
+      <th>MAE</th>
+      <th>vs. VAE (MAE)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>VAE (N = 256)</td>
+      <td>4.95 ± 0.66</td>
+      <td>3.90 ± 0.65</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cortical parcel (N = 360)</td>
+      <td>12.82 ± 15.38</td>
+      <td>12.06 ± 15.35</td>
+      <td>p&lt;10–6</td>
+    </tr>
+    <tr>
+      <td>IC50</td>
+      <td>5.67 ± 0.54</td>
+      <td>4.46 ± 0.54</td>
+      <td>p&lt;10–6</td>
+    </tr>
+    <tr>
+      <td>IC100</td>
+      <td>5.58 ± 0.92</td>
+      <td>4.46 ± 0.85</td>
+      <td>p&lt;10–6</td>
+    </tr>
+    <tr>
+      <td>IC200</td>
+      <td>5.72 ± 0.89</td>
+      <td>4.75 ± 0.83</td>
+      <td>p&lt;10–6</td>
+    </tr>
+    <tr>
+      <td>IC300</td>
+      <td>5.68 ± 0.98</td>
+      <td>4.71 ± 0.93</td>
+      <td>p&lt;10–6</td>
+    </tr>
+    <tr>
+      <td>Melodic ICA (N = 256)</td>
+      <td>5.78 ± 1.62</td>
+      <td>4.72 ± 1.60</td>
+      <td>p&lt;10–6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mapping resting-state brain networks of neonatal babies using VAE
 
 Here, we used nonlinear latent variables to map functional networks by utilizing both the VAE encoder and decoder. Briefly, the VAE encoder compressed each time point of rsfMRI cortical activity into each latent representation and the VAE decoder visualized latent representations in the cortical surface that we were interested in. As illustrated in Figure 7A, per subject, we estimated timeseries of latent variables by feeding each brain pattern to the VAE encoder. Estimated latent representations were concatenated across subjects. Then, we redefined 30 latent bases by applying temporal ICA to the concatenated latent variables. Finally, by feeding each independent latent basis into the VAE decoder, we visualized the cortical map of each independent latent basis (see details in ‘Materials and methods’). Following this, we investigated FBNs for four groups (dHCP vs. DBI; fetus or preterm vs. full-term) separately. The age ranges of full-term in the dHCP and DBI datasets were 41.05 ± 1.76 and 41.71 ± 1.78, respectively. The ages of preterm in the dHCP dataset and fetus in the DBI dataset were 34.36 ± 1.85 and 33.65 ± 4.01, respectively. For a more optimal comparison between groups, we reordered the IC maps based on their pattern similarity by estimating Pearson correlation coefficients between every pair of independent latent bases, each from different groups (center matrix in Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-v2.jpg)
+
+**Figure 7.:** (A) Illustration describing how to map functional brain networks using the VAE. (B) Example of neonatal cortical networks estimated from the Developing Human Connectome Project (dHCP) dataset (left) or the Developing Brain Institute (DBI) dataset (right). The order of estimated independent latent variables is sorted by their absolute pattern similarity across different datasets (center). Each map is thresholded at the level of <15% of maximal absolute value. (C) Pattern similarities across different datasets and/or different age groups (coded as lines with different colors; right panel) are plotted. Shades and line stand for the standard deviation and mean similarity across 100 IC results with different initializations. (D) The difference between inter-dataset pattern similarity (neonate in DBI vs. dHCP) and intra-dataset pattern similarity (neonate vs. preemie in dHCP). The similarity was measured by averaging top 1–15 of sorted IC. Error bar stands for the standard deviation.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The order of estimated independent latent variables is sorted by their absolute scale of pattern similarity to DBI dataset. Each map is thresholded at the level of < 15% of maximal absolute value.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** The order of estimated independent latent variables is sorted by their absolute scale of pattern similarity to dHCP dataset. Each map is thresholded at the level of < 15% of maximal absolute value.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** The order of estimated independent latent variables is sorted by their absolute scale of pattern similarity to fetal group of DBI dataset. Each map is thresholded at the level of < 15% of maximal absolute value.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** The order of estimated independent latent variables is sorted by their absolute scale of pattern similarity to DBI dataset. Each map is thresholded at the level of < 15% of maximal absolute value.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Cortical maps are thresholded at varying level of maximal absolute value.
 
 Each independent latent basis estimated from the neonate group exhibited a unique FBN pattern consisting of both activation and deactivation patterns, as shown in Figure 7B. All FBN patterns for dHCP and DBI neonates are shown in Figure 7—figure supplements 1 and 2, respectively. For example, IC8 in both the dHCP and DBI datasets showed activation/deactivation patterns between left and right early visual area. This contrast (i.e., activation vs. deactivation) was also observed at the networks level; auditory vs. somatosensory (IC6 in dHCP; IC3 in DBI) and visual vs. auditory (IC3 in dHCP; IC4 in DBI). We also identified the neonatal auditory network having bilateral activation in IC3 for both the dHCP and DBI dataset. Lastly, we observed precursors of the default mode network (dHCP; IC29, DBI; IC21; Figure 7B, right bottom), which is coincident with findings in young adult rsfMRI studies (Eyre et al., 2021; Van Essen et al., 2013; Gong et al., 2021). At the same time, there were brain network patterns that were observed only in the dHCP dataset. For example, we found inter-hemispheric opposition of the auditory network (IC22, Figure 7—figure supplement 1) and IC14 showed bilateral activation covering the higher visual network (Figure 7B, left bottom). Global synchrony patterns, which are tightly related to global signal in fMRI data, were observed in the dHCP dataset (IC30, Figure 7—figure supplement 1), but not in the DBI dataset (Figure 7—figure supplement 2). In the DBI dataset, we found simultaneous activation of somatosensory, auditory, and visual networks with deactivation of temporoparietal junction that integrates sensory inputs (IC6, Figure 7—figure supplement 2). However, some network patterns (e.g., IC5, 21, in the dHCP or IC16, 29, in the DBI) were less straightforward to interpret, given brain network patterns defined in human adults (Beckmann et al., 2009). FBNs of fetuses and preterm babies are shown in Figure 7—figure supplements 3 and 4, respectively. Lastly, we found that our observations were consistent regardless of the threshold level used (see an example FBN – IC3 from the dHCP dataset – at different thresholds, Figure 7—figure supplement 5).
 
 To show that FBNs observed across different datasets and different age groups were not driven by noise inherent in data or artifact introduced during preprocessing steps, we examined the reproducibility of our findings in FBNs across different age groups and different datasets. We compared pattern similarity across different datasets and different age groups (Figure 7C). The best pattern similarity was achieved when their ages were matched (black line; full-term in dHCP vs. full-term in DBI), rather than between the age-unmatched groups from the same dataset (red line: full-term vs. preterm in dHCP; blue line: full-term vs. fetus in DBI). The least pattern similarity was observed between preterm neonates in the dHCP and fetuses in the DBI dataset. Similar results were reproduced against different number of ICs (#=1, 3, 5, 10, and 15) for calculating the pattern similarity. The opposite was observed with linear models. Specifically, the age-matched inter-dataset pattern similarity (black line in Figure 7C) was higher than intra-dataset similarity (red line in Figure 7C; full-term vs. preterm in dHCP) with VAE-derived latent variables. Linear models, on the contrary, showed higher intra-dataset similarity (Figure 7D). This observation remained consistent using varying number of top sorted ICs. The finding that the VAE revealed similar network patterns in two independent, age-matched neonatal datasets suggests that the VAE may be a better tool than linear models for capturing neurophysiologically relevant brain activity. In contrast, it is likely that ICA and cortical parcel techniques depended on features such as equivalent acquisition parameters, preprocessing, etc., that were similar between the pre- and full-term dHCP scans.
 
-## Age-related group differences in VAE-defined networks
+### Age-related group differences in VAE-defined networks
 
 Lastly, to begin to understand how functional networks evolve as the brain matures during the newborn period, we investigated differences in nonlinear latent variables between young and old neonates. Briefly, we investigated whether the variance of each of the functional networks derived from the dHCP dataset correlated with advancing PMA at scan. Per subject, variance was estimated from the timeseries of the independent components (i.e., 30 functional networks). Of the 30 networks, the variance of 12 networks (IC2, 3, 6, 7, 10, 11, 16, 20, 21, 24, 25, 26, and 27) was significantly correlated with PMA at scan (FDR-corrected p<0.05; r = 0.22, 0.29, 0.15,–0.16, –0.31, 0.16, 0.14, 0.17, 0.27, 0.16, 0.19, and 0.17, respectively). Among 12 functional networks, we further explored the age-dependent changes in IC6, the component most strongly correlated with PMA (Figure 8C; r = 0.29, FDR-corrected p<10–6). IC6 highlighted the joint of two networks, auditory and somatosensory; activation in somatosensory with deactivation in auditory (Figure 8A). We divided the sample into young (39 wk; n = 41) and old group (43 wk; n = 56) (Figure 8B and C). To set a relative baseline, we kept the remaining subjects as a median group (n = 287). As suggested by the correlational analysis, old group showed higher variance than younger group at IC6 (Figure 8D; uncorrected p<10–7; see Figure 8—figure supplement 1 for other networks) suggesting evolution of neonatal FBNs over aging. Estimated group-wise latent features were projected onto the cortical surface (Figure 8E). As expected, the functional network pattern from median group was very similar to that estimated from the entire cohort. To examine age-dependent change in FBNs, we subsequently compared old vs. young groups. In both groups, overall network pattern resembled the full sample’s but there were notable regional differences in spatial involvement. For example, compared to the young group, the old group showed (1) mildly stronger activation in the somatosensory region, (2) stronger activation in the posterior insular region extending to the primary auditory region, and (3) weaker activation in the superior temporal auditory region (highlighted by black arrows in Figure 8E). To quantify these differences, we subtracted the functional networks of the two age groups (i.e., old–young) in the latent space and then projected differences onto the cortical space (Figure 8F). Functional networks of older groups showed stronger engagement of primary auditory area, with some level of lateralization toward the right hemisphere; no change in somatosensory region was observed. When subtraction was conducted at the cortical surface (i.e., comparison between FBNs of two groups), old neonates showed stronger activation in the somatosensory region along with engagement of the posterior insular region and primary auditory area (Figure 8—figure supplement 2). To summarize, our results demonstrate that the brain network engages additional brain region with advancing age (or maturity), suggesting the recharacterization of brain systems in the first weeks of the postnatal period.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig8-v2.jpg)
+
+**Figure 8.:** (A) The cortical network represents the sixth independent component (IC6) derived from all neonates of the Developing Human Connectome Project (dHCP). (B) The distribution of age at scan for the neonate cohort (n = 384). Based on the age distribution, the cohort was divided into three groups; young, median, and old groups. (C) Scatterplot between age at scan (x-axis) and IC6 timeseries variance. Each dot represents a subject; n = 384. (D) Variance boxplot in young (postmenstrual age [PMA] at scan 39 wk) and old groups (PMA at scan 43 wk) of the dHCP dataset. ***p<10–8. (E) Cortical networks in different age groups using dual-regression method. Inset arrows point to brain regions having different activation levels in older group compared to younger group. (F) Difference between two age groups; subtraction between groups is done at the latent space, followed by projection to the cortical surface.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Visualization of distinct FBNs showing age-related difference. From left to right: variance between young (PMA at scan 39 weeks)- and old group (PMA at scan 43 weeks) of the dHCP dataset, the cortical network representing different age groups, and difference between two age groups.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/80878/elife-80878-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Difference between two age groups. subtraction between groups is done at the latent surface, followed by the projection to the cortical surface (left) or at the cortical space (right).
 
 ## Discussion
 
@@ -113,7 +362,7 @@ In this study, we applied a novel deep generative model to a large (>500) fetal�
 
 We analyzed two large fMRI datasets (N = 727 scans), one dataset consisting of fetuses and neonates collected by our institute (n = 270), named as ‘Developing Brain Institute’ or DBI dataset, and one public dataset consisting of pre- and full-term neonates (n = 457), published by developing human connectome project, named as dHCP dataset (Makropoulos et al., 2018). Two fetal–neonatal datasets (DBI and dHCP), acquired by two independent centers, were utilized to test the utility and generalizability of the VAE model on representing fetal–neonatal rsfMRI data.
 
-## DBI dataset: Fetus and full-term neonate
+### DBI dataset: Fetus and full-term neonate
 
 We analyzed 270 resting-state scans from 95 healthy fetuses and 160 full-term-born healthy infants. Scans were collected as a part of an ongoing longitudinal study examining prenatal–neonatal brain development at Children’s National Hospital in Washington DC. Fetuses (49 females) from healthy pregnancies were scanned between 19.14 and 39.71 gestational weeks (mean and SD; 33.65 ± 4.01). PMA of full-term born infants at scan ranges between 37.71 and 47.43 wk (41.67 ± 1.84). Maternal exclusion criteria were psychiatric disorders, metabolic disorders, genetic disorders, complicated pregnancies, multiple pregnancies, alcohol, and tobacco use, maternal medications, and contraindications to MRI. All experiments were conducted under the regulations and guidelines approved by the Institutional Review Board (IRB) of Children’s National (study ID: Pro00013618); written informed consent was obtained from each pregnant woman who participated in the study.
 
@@ -121,21 +370,25 @@ For fetal scans, structural and functional resting-state MR images were acquired
 
 Functional MR images were preprocessed as follows: slice time correction, discarding the first four volumes, de-spiking, bias-field correction, motion-correction, intensity scaling, detrending, bandpass filtering (0.009–0.08 Hz), and nuisance regression with motion parameters. We excluded volumes having excessive head motion (frame-wise motion >1 mm or rotational motion >1.5°). The number of volumes excluded by the above procedure was 32.4 ± 17.3 (equivalent to 64.7 ± 34.6 s) for the fetal fMRI. Detailed preprocessing steps for the fetal and neonatal MRI data can be found in De Asis-Cruz et al., 2021a and Brown et al., 2020, respectively. The preprocessing steps applied to the DBI dataset are summarized in Supplementary file 1a. Neonatal MRI scans with <4 min were excluded in the analysis. The analyzed data length of fetus and neonate group was 4–7 (mean ± SD = 5.4 ± 0.9) and 4–8.9 (5.5 ± 0.8) min, respectively. Finally, preprocessed rsfMRI scans at the volumetric brain space were projected to the standard cortical space using HCP workbench command -volume-to-surface-mapping. The timeseries for each voxel was then normalized (zero mean and unitary variance). To the end, 21 neonatal scans (14 with short scan data <4 min and 7 with partial or full failure at volumetric registration) among 160 scans were excluded in the subsequent analysis.
 
-## dHCP dataset: Preterm and full-term neonates
+### dHCP dataset: Preterm and full-term neonates
 
 dHCP is an open science project approved by the UK National Research Ethics Authority (Makropoulos et al., 2018). FMRI data analyzed in the project can be downloaded at https://data.developingconnectome.org/. Among 464 subjects (261 F/203 M), we analyzed a total of 457 rsfMRI scans from 107 preterm and 302 full-term neonates. Their PMAs at scan range from 24.29 wk to 44.87 wk, and the mean and standard deviation of ages were 38.54 and 3.47 wk, respectively. It was reported that no babies in the preterm and full-term group had major brain injury. Demographical details regarding the dataset can be found elsewhere at Russakovsky et al., 2015. MR scans were acquired using a 3T Philips Achieva system (Philips Medical Systems). High-resolution T1- and T2-weighted anatomical imaging was acquired with followed parameter settings: T1-weighted image; spatial resolution = 0.8 mm isotropic, FOV = 145 × 122 × 100 mm, and TR = 4795 ms, T2-weighted image; spatial resolution = 0.8 mm isotropic, FOV = 145 × 145 × 108 mm, TR = 12,000 ms, and TE = 156 ms. Followed by anatomical scans, fMRI scans were acquired with acquisition specifications: multislice gradient-echo echo planar imaging (EPI) sequence, multiband factor = 9. TR = 392 ms, TE = 38 ms, flip angle = 34, spatial resolution = 2.15 mm isotropic, and total volume = 2300 (~15 min). The downloaded dHCP fMRI data was already preprocessed Fitzgibbon et al., 2020 and registered into the volumetric brain template Schuh et al., 2018. The registration quality was assured by dHCP team (Fitzgibbon et al., 2020). As the primary reason for including the dHCP data was to prove that our findings were robust against specific preprocessing choices/data characteristics, we purposefully used the dHCP dataset without adding or modifying the preprocessing steps used by dHCP. We reviewed the quality summary provided by dHCP (file name: sub-SUBID_ses-SESSID_funcqc.html) and ensured that preprocessing/registration to the brain template was reasonable for each scan that we analyzed. To match the input format to the required input format of the VAE model, we wrapped volumetric fMRI data to the cortical space using HCP workbench command -volume-to-surface-mapping. Then, we applied additional preprocessing step consisting of voxel-wise detrending (regressing out a third-order polynomial function), bandpass filtering (from 0.01 to 0.1 Hz), and voxel-wise normalization (zero mean and unitary variance). To avoid possible distortion from the filtering step, we rejected first and last 150 volumes from the analysis. Lastly, to prevent the possible confounding effects from motion artifact, we selected 1400 volumes (~10 min) having the least frame-wise displacement degree, per subject. Note that the concatenation of discontinuous rs-fcMRI data does not significantly distort FC Fair et al., 2007.
 
-## Pretrained variational autoencoder using adult rsfMRI
+### Pretrained variational autoencoder using adult rsfMRI
 
-In our previous work Kim et al., 2021a, we designed a variation of β-VAE Higgins, 2017; Kingma and Welling, 2013 to learn representations of rsfMRI patterns of adults. Briefly, our proposed VAE model consisted of an encoder and a decoder. After reformatting the fMRI pattern at the cortical space to the carefully designed 2-D regular grid space (Figure 1A), an encoder compressed an fMRI map (no. of vertices = 38,864) to a probabilistic distribution of 256 latent variables, whereas a decoder reconstructed the fMRI patterns given the sampled latent variables (Figure 1B and C). The encoder and decoder consisted of five nonlinear convolutional layers and five de-convolutional layers, respectively. The overarching goal of the VAE model was to reconstruct input at best under the constraint forcing the distribution of every latent variable to be close to be i.i.d. Specifically, given the training dataset X, we optimized the encoding parameter ϕ and the decoder parameter θ to minimize the loss function defined asLϕ,θx=x-x`22+β∙DKLNμz,σz∥N0,I
+In our previous work Kim et al., 2021a, we designed a variation of β-VAE Higgins, 2017; Kingma and Welling, 2013 to learn representations of rsfMRI patterns of adults. Briefly, our proposed VAE model consisted of an encoder and a decoder. After reformatting the fMRI pattern at the cortical space to the carefully designed 2-D regular grid space (Figure 1A), an encoder compressed an fMRI map (no. of vertices = 38,864) to a probabilistic distribution of 256 latent variables, whereas a decoder reconstructed the fMRI patterns given the sampled latent variables (Figure 1B and C). The encoder and decoder consisted of five nonlinear convolutional layers and five de-convolutional layers, respectively. The overarching goal of the VAE model was to reconstruct input at best under the constraint forcing the distribution of every latent variable to be close to be i.i.d. Specifically, given the training dataset $X$, we optimized the encoding parameter $ϕ$ and the decoder parameter $\theta$ to minimize the loss function defined as
 
-where x and x` are the input image and the reconstructed version of input image, β is a hyperparameter balancing two terms in the loss function, DKL is the Kullback–Leibler (K-L) divergence between the posterior distribution Nμz,σz and prior distribution N0,I , and μz and σz are mean and standard deviation of estimated latent variables z from x. Upon validation dataset consisting of 50 young adults rsfMRI data from Human Connectome Project (Van Essen et al., 2013), we optimized the hyperparameters of VAE model: total number of layers = 12, learning rate = 10–4, batch size = 128, and  β = 9. After being trained with another large HCP rsfMRI data consisting of 100 young adults, the trained VAE model has learned to represent patterns of cortical activity and network patterns using latent variables. We refer to our original paper Kim et al., 2021a for the detailed description of geometric reformatting and the model architecture of the VAE. As our goal of this study was to utilize brain representations learnt from adults for better understanding of fetal–neonatal neuroimaging data, we froze the model parameters of the VAE model, ϕ and θ, and froze the VAE model hyperparameters. Therefore, the VAE model used in this study was identical to the VAE model reported in our original paper (Kim et al., 2021a). In this study, the dHCP and DBI datasets were only used for testing the pretrained VAE model. Latent variables estimated from cortical patterns of the dHCP and DBI datasets were used as features of age prediction experiment or networking mapping (Figure 1D).
+$$
+Lϕ,\thetax=x-x^{`}_{2}^{2}+\beta∙D_{KL}N\mu_{z},\sigma_{z}∥N0,I
+$$
 
-## Reconstructing fetal–neonatal rsfMRI patterns using the pretrained VAE
+where $x$ and $x^{`}$ are the input image and the reconstructed version of input image, $\beta$ is a hyperparameter balancing two terms in the loss function, $D_{KL}$ is the Kullback–Leibler (K-L) divergence between the posterior distribution $N\mu_{z},\sigma_{z}$ and prior distribution $N0,I$ , and $\mu_{z}$ and $\sigma_{z}$ are mean and standard deviation of estimated latent variables $z$ from $x$. Upon validation dataset consisting of 50 young adults rsfMRI data from Human Connectome Project (Van Essen et al., 2013), we optimized the hyperparameters of VAE model: total number of layers = 12, learning rate = 10–4, batch size = 128, and  $\beta$ = 9. After being trained with another large HCP rsfMRI data consisting of 100 young adults, the trained VAE model has learned to represent patterns of cortical activity and network patterns using latent variables. We refer to our original paper Kim et al., 2021a for the detailed description of geometric reformatting and the model architecture of the VAE. As our goal of this study was to utilize brain representations learnt from adults for better understanding of fetal–neonatal neuroimaging data, we froze the model parameters of the VAE model, $ϕ$ and $\theta$, and froze the VAE model hyperparameters. Therefore, the VAE model used in this study was identical to the VAE model reported in our original paper (Kim et al., 2021a). In this study, the dHCP and DBI datasets were only used for testing the pretrained VAE model. Latent variables estimated from cortical patterns of the dHCP and DBI datasets were used as features of age prediction experiment or networking mapping (Figure 1D).
+
+### Reconstructing fetal–neonatal rsfMRI patterns using the pretrained VAE
 
 We evaluated how well the VAE model that was pretrained to represent adult rsfMRI delineated the fetal–neonatal brain activity that was unseen during the training. We compressed the spontaneous cortical patterns of the dHCP and DBI datasets using the pretrained VAE encoder and restored them to the cortical space by feeding sampled latent variable to the VAE decoder. The reconstruction degree of each time point was defined as the Pearson correlation coefficient between the original- and reconstructed cortical patterns. Averaging reconstruction performance over timeseries or subjects was done after converting r-value into Fisher’s z-score. To evaluate the smoothing effect of VAE and linear models, we manually smoothed the original rsfMRI data using HCP workbench code -cifti-smoothing. The smoothing size was defined as full-half-maximum-width (FWHM) and varied from 1 to 10 mm at 1 mm intervals.
 
-## Predicting gestational age and postmenstrual age of fetus, preterm neonates, and full-term neonates
+### Predicting gestational age and postmenstrual age of fetus, preterm neonates, and full-term neonates
 
 To evaluate the age prediction power of latent variables defined by the VAE, we built an age prediction model and validated its prediction accuracy using tenfold cross-validation scheme. For dHCP dataset, we utilized FC profile at the latent space as individual-wise features (Figure 5A). Specifically, cortical pattern of each time point was encoded as timeseries of latent variables using the VAE encoder. Next, we measured FC profile (no. of features = 256 × 256/2) of each subject by measuring covariance between every pair of timeseries of latent variables. After keeping 10% of dataset as a testing group, we further divided the remainder 90% of dataset into training (=76.5%) and validation set (=13.5%). Within the training dataset, we applied the feature selection procedure by correlating the age and each feature. We thresholded features having FDR-corrected p<0.05. Based on the selected feature set, we built a linear regression support vector model (RSVM) using MATLAB function fitrsvm.m. In comparison to other age prediction studies (Gong et al., 2021), our regression model also tended to output biased error toward extremity of age distribution, called as a prediction bias. To eliminate such prediction bias, we further added an adjusting step of predicted age using the validation dataset. Specifically, we predicted the age of validation dataset using the trained RSVM model and built a linear regression model between predicted- and actual age of validation set. After calculating the optimal regression fit, we compensated the prediction age by the trained RSVM model. Finally, the prediction performance of designed model was tested using the unseen testing dataset, repeating the whole procedure for 10 folds independently. The whole tenfold cross-validated age prediction task was independently repeated for 100 times, each with randomly grouping scans into test/train/validation sets. The final reconstruction performance was reported by averaging over 100 trials. The sample size of final test/train/validate set was 314/55/40.
 
@@ -145,12 +398,12 @@ Finally, we built an age prediction model generalizable across different dataset
 
 The prediction performance was evaluated using four different metrics, RMSE, MAE, squared correlation coefficient per fold (r2), and correlation coefficient between actual age and predicted age at the whole dataset level (correlation).
 
-## Mapping of fetal–neonatal brain networks using pretrained VAE
+### Mapping of fetal–neonatal brain networks using pretrained VAE
 
 We examined the utility of latent variables defined by the VAE as a mapping tool of fetal–neonatal FBNs (Figure 7A). First, we estimated the timeseries of latent variables by feeding each fMRI time point to the VAE encoder and concatenated the timeseries of latent variables across subjects for different age groups; preterm baby (<37 wk) vs. full-term neonates (≥37 wk) for dHCP dataset and fetuses vs. full-term neonates from the DBI dataset. We redefined the latent space by applying temporal ICA to concatenated latent variables. The temporal ICA was applied using the Infomax ICA algorithm, which was implemented by MATLAB toolbox EEGLAB (Delorme and Makeig, 2004). Inspired by the recent ICA study investigating neonatal FBNs (Eyre et al., 2021), we also set the number of ICs to 30 heuristically. Once 30 independent latent bases were identified, cortical mapping of each was done as followings: (1) we multiplied random scaling factors (n = 1000) to the latent basis, (2) reconstructed 1000 cortical patterns of scaled latent basis using the VAE decoder, and (3) calculated covariance between random scaling factors and reconstructed fMRI activity, per cortical location. The estimated covariance scale of each cortical location was considered as the activation level of the location and the sign (+/–) of covariance was defined as activation (+) or deactivation (–) state. We fixed the sign of each cortical map as the region having the strongest covariance scale being activation (+) state. Note that as the VAE decoder is highly nonlinear, our proposed mapping method from latent space to cortical space did not guarantee to reflect the true cortical meaning of independent latent bases, but the results in our study empirically suggested that our proposed method was a good approximation mapping strategy. Lastly, the cortical map of each basis function was heuristically thresholded at the 15% of the maximal absolute value of each map, for the better interpretation of results.
 
 We further examined group-wise reproducibility of estimated independent latent bases across age groups and/or different datasets. Similarity between latent bases was measured by estimating the Pearson correlation between every latent basis from one group and every basis from another group. As the sign of independent latent bases was somewhat arbitrarily determined in ICA algorithm, we one-to-one paired latent bases across age groups based on their absolute correlation coefficient values. We took the trend of paired similarity over increasing IC numbers as the inter-group reproducibility of brain network. For the sake of reproducibility, the whole analysis was independently repeated for 100 times, each with different initialization seeds for ICA. The final reproducibility trend was reported by averaging over 100 trials.
 
-## Comparison with linear representation methods
+### Comparison with linear representation methods
 
-To access the utility of the VAE model, we employed conventional linear representation methods, cortical parcellations, and group ICA maps. For the sake of fair comparison between representation methods, we utilized multi-modal cortical parcellation (Glasser et al., 2016 and group ICA maps Smith et al., 2013), both were derived by the HCP dataset. In the employed cortical parcellation, there were 360 areas (180 per hemisphere), and we compressed fMRI data at the cortical space into the linear latent space (no. of dimension = 360 cortical parcels). We also utilized group ICA results provided by HCP, which is freely available at https://db.humanconnectome.org/. Briefly, group ICA maps were estimated based on the rsfMRI of 820 subjects in the HCP and the complete algorithm of group ICA can be found at Van Essen et al., 2013. This group ICA provides different number of latent variables (or no. of IC), 15, 25, 50, 100, 200, and 300. Among them, we utilized IC maps consisting of 50, 100, 200, and 300 ICs (named as IC50, IC100, IC200, and IC300). To match the number of latent variables, ICA maps with 256 components (named as melodic ICA) were estimated by applying melodic ICA Beckmann and Smith, 2004 to HCP adult data that were used for training the VAE model. Similar to the VAE model, we compressed cortical activities into IC activities using the pseudoinverse of IC maps and restored them using the IC maps. In the regime of linear analytical models, complex rsfMRI data are considered as a linear combination of spatial representations. Specifically, fMRI activity (X, dimension: 59,412 × 1400 for dHCP dataset) was compressed by multiplying with the linear IC map (A, matrix dimension: 59,412 × 300 for 300 ICs), such as Y=A†X, where Y (size: 300 × 1400) is the timeseries of IC and A† is the pseudoinverse of A. Then, the reconstructed fMRI activity X~ was calculated as X~=AY. Same as the VAE model, the reconstruction performance was measured by correlating between original- and reconstructed cortical patterns. Linear latent variables defined by different IC maps were utilized for age prediction task as well.
+To access the utility of the VAE model, we employed conventional linear representation methods, cortical parcellations, and group ICA maps. For the sake of fair comparison between representation methods, we utilized multi-modal cortical parcellation (Glasser et al., 2016 and group ICA maps Smith et al., 2013), both were derived by the HCP dataset. In the employed cortical parcellation, there were 360 areas (180 per hemisphere), and we compressed fMRI data at the cortical space into the linear latent space (no. of dimension = 360 cortical parcels). We also utilized group ICA results provided by HCP, which is freely available at https://db.humanconnectome.org/. Briefly, group ICA maps were estimated based on the rsfMRI of 820 subjects in the HCP and the complete algorithm of group ICA can be found at Van Essen et al., 2013. This group ICA provides different number of latent variables (or no. of IC), 15, 25, 50, 100, 200, and 300. Among them, we utilized IC maps consisting of 50, 100, 200, and 300 ICs (named as IC50, IC100, IC200, and IC300). To match the number of latent variables, ICA maps with 256 components (named as melodic ICA) were estimated by applying melodic ICA Beckmann and Smith, 2004 to HCP adult data that were used for training the VAE model. Similar to the VAE model, we compressed cortical activities into IC activities using the pseudoinverse of IC maps and restored them using the IC maps. In the regime of linear analytical models, complex rsfMRI data are considered as a linear combination of spatial representations. Specifically, fMRI activity ($X$, dimension: 59,412 × 1400 for dHCP dataset) was compressed by multiplying with the linear IC map ($A$, matrix dimension: 59,412 × 300 for 300 ICs), such as $Y=A^{†}X$, where $Y$ (size: 300 × 1400) is the timeseries of IC and $A^{†}$ is the pseudoinverse of $A$. Then, the reconstructed fMRI activity $X~$ was calculated as $X~=AY$. Same as the VAE model, the reconstruction performance was measured by correlating between original- and reconstructed cortical patterns. Linear latent variables defined by different IC maps were utilized for age prediction task as well.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Neural organization of mushroom bodies is largely consistent across insects, whereas the ancestral ground pattern diverges broadly across crustacean lineages resulting in successive loss of columns and the acquisition of domed centers retaining ancestral Hebbian-like networks and aminergic connections. We demonstrate here a major departure from this evolutionary trend in Brachyura, the most recent malacostracan lineage. In the shore crab Hemigrapsus nudus , instead of occupying the rostral surface of the lateral protocerebrum, mushroom body calyces are buried deep within it with their columns extending outwards to an expansive system of gyri on the brain’s surface. The organization amongst mushroom body neurons reaches extreme elaboration throughout its constituent neuropils. The calyces, columns, and especially the gyri show DC0 immunoreactivity, an indicator of extensive circuits involved in learning and memory.
+Neural organization of mushroom bodies is largely consistent across insects, whereas the ancestral ground pattern diverges broadly across crustacean lineages resulting in successive loss of columns and the acquisition of domed centers retaining ancestral Hebbian-like networks and aminergic connections. We demonstrate here a major departure from this evolutionary trend in Brachyura, the most recent malacostracan lineage. In the shore crab Hemigrapsus nudus, instead of occupying the rostral surface of the lateral protocerebrum, mushroom body calyces are buried deep within it with their columns extending outwards to an expansive system of gyri on the brain’s surface. The organization amongst mushroom body neurons reaches extreme elaboration throughout its constituent neuropils. The calyces, columns, and especially the gyri show DC0 immunoreactivity, an indicator of extensive circuits involved in learning and memory.
 
 ## Introduction
 
@@ -41,13 +41,13 @@ We show that despite the varunid mushroom body’s unparalleled intricacy and it
 
 The Results are organized into eight sections, the first describing the overall location and structure of the varunid mushroom body. This is followed by the identification of its neural components and their arrangements as elaborate networks comprising the paired calyces. Descriptions of the internal organization of the calyces’ rostral extensions, and their two prominent columns, culminates with an explanation of the cortex-like organization of overlying gyri to which the columns project. The final observations address the relationship of the mushroom body to the reniform body, a center common to malacostracan crustaceans. To provide a three-dimensional understanding of this highly intricate system, descriptions refer to locations and arrangements within a reconstructed lateral protocerebrum and its major components (see Materials and methods).
 
-## The varunid lateral protocerebrum (Figures 1–3)
+### The varunid lateral protocerebrum (Figures 1–3)
 
 In crabs, as is typical of stomatopods and most decapod crustaceans, the most anterior part of its brain, the protocerebrum, is flanked each side by a lateral outgrowth that expands into an enlargement of the eyestalk immediately proximal to the retina (Figure 1A). This volume of brain comprises the lateral protocerebrum (Figures 1A and 2A). The lateral protocerebrum is connected to the midbrain proper by the eyestalk nerve composed of axons relaying information to and from the midbrain.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig1-v1.jpg)
 
-**Figure 1.:** Hemigrapsus nudus and a comparison of its lateral protocerebrum with that of the fly Drosophila melanogaster.(A) Schematic of the Hemigrapsus brain (frontal view) and major neuropils. Abbreviations: ALPR, anterior lateral protocerebrum; A1, antennular nerve; A2, antennal nerve; AnN, antenna 2 neuropil; BU, lateral bulb of the central complex; CB, central body; ESN, eyestalk nerve; LAL, lateral accessory lobe; LAN, lateral antennular lobe neuropil; LA, lamina; LO, lobula; LPR, lateral protocerebrum; MAN, median antenna 1 neuropil; MB, mushroom body; ME, medulla; OL, olfactory lobe; OGT, olfactory globular tract; PMPR, posterior medial protocerebral neuropils; PB, protocerebral bridge; RE, compound retina. The eyestalk nerve (ESN) carries all axons connecting the brain with the lateral protocerebrum. (B, C) The crab lateral protocerebrum aligned with that of Drosophila (in both, the optic lobe’s lamina is omitted) The white dashed line in H. nudus divides its rostral lateral protocerebral volume from its caudal volume; in Drosophila the dashed line divides the rostral volume of the protocerebrum from the rest of the hemi-brain. In both taxa, the filled arrow M indicates medial, and the open arrows R, C indicate, respectively, rostral and caudal. Both schematics depict a view from the ventral side of the lateral protocerebrum/ hemi-brain. Abbreviations: Ca, calyx; Clm, column; gc, globuli cells; gct, globuli cell tract; Gy, gyri; LH, lateral horn; LO, lobula complex; ME, medulla; RB, reniform body. Scale bars: A, 500 μm; B, 100 μm; C, 50 μm.
+**Figure 1.:** (A) Schematic of the Hemigrapsus brain (frontal view) and major neuropils. Abbreviations: ALPR, anterior lateral protocerebrum; A1, antennular nerve; A2, antennal nerve; AnN, antenna 2 neuropil; BU, lateral bulb of the central complex; CB, central body; ESN, eyestalk nerve; LAL, lateral accessory lobe; LAN, lateral antennular lobe neuropil; LA, lamina; LO, lobula; LPR, lateral protocerebrum; MAN, median antenna 1 neuropil; MB, mushroom body; ME, medulla; OL, olfactory lobe; OGT, olfactory globular tract; PMPR, posterior medial protocerebral neuropils; PB, protocerebral bridge; RE, compound retina. The eyestalk nerve (ESN) carries all axons connecting the brain with the lateral protocerebrum. (B, C) The crab lateral protocerebrum aligned with that of Drosophila (in both, the optic lobe’s lamina is omitted) The white dashed line in H. nudus divides its rostral lateral protocerebral volume from its caudal volume; in Drosophila the dashed line divides the rostral volume of the protocerebrum from the rest of the hemi-brain. In both taxa, the filled arrow M indicates medial, and the open arrows R, C indicate, respectively, rostral and caudal. Both schematics depict a view from the ventral side of the lateral protocerebrum/ hemi-brain. Abbreviations: Ca, calyx; Clm, column; gc, globuli cells; gct, globuli cell tract; Gy, gyri; LH, lateral horn; LO, lobula complex; ME, medulla; RB, reniform body. Scale bars: A, 500 μm; B, 100 μm; C, 50 μm.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig2-v1.jpg)
 
@@ -55,15 +55,23 @@ In crabs, as is typical of stomatopods and most decapod crustaceans, the most an
 
 Brains treated with osmium-ethyl gallate or with reduced silver (Figures 2A and 3) resolve the varunid lateral protocerebrum as a hump-shaped volume divided into a rostral and caudal part. The rostral lateral protocerebrum (RLPR), once referred to as the terminal medulla, a now defunct term (Strausfeld, 2020), is dominated by two centers: the mushroom bodies and the smaller reniform body. There are a small number of other satellite neuropils near the origin of the eyestalk nerve. The mushroom body is immediately recognizable by its intensely osmiophilic calyces from which arise columns that extend outwards, branching into a cortex-like neuropil composed of gyri (Figure 2A). These occupy the outermost volume of the RLPR. The reniform body comprises an independent system of interconnected neuropils situated laterally constrained to a volume of the RLPR that extends from its dorsal to its ventral surface (Thoen et al., 2020). In longitudinal sections of the RLPR parallel to its rostro-caudal plane, the reniform body’s prominent axon bundle, the pedestal, is seen in cross-section (RB in Figures 2 and 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig3-v1.jpg)
+
+**Figure 3.:** (A) Longitudinal section parallel to the rostro-caudal plane of the lateral protocerebrum demonstrating the more dorsal of the two calyces (Ca1) and its supply by the globuli cell tract (gct) from the cluster of globuli cells (gc). Columnar extensions (Clm) from the calyces reach out to overlying gyri (Gy). The reniform body is shown with three of its gyri (asterisks) and its bundled axons (RB) situated between the mushroom body and optic lobes, insets lower left compare the smallest perikarya supplying the calyces (globuli cells, gc) with the next smallest perikarya belonging to neurons of the reniform body. Abbreviations: ESN, eyestalk nerve; CE, compound retina, LA, lamina, ME, medulla; LO, lobula. (B) Adjacent calyces (Ca1, Ca2) showing their diagnostic arrangement of microglomeruli (inset upper right; see also Figure 5). Arrows indicate afferent fibers into Ca2 from nonolfactory origins. (C) The calycal origin and rostral extension of the Ca1 column (Clm1, encircled). At this level, penetration by en passant axon bundles causes the calyx to appear fragmented. (D, E) Osmium ethyl gallate-treated sections at two depths. Panel D indicates the bulk and elaboration of calycal neuropils. At this level, calyx 2 appears as the larger. The arrowhead indicates the base of column 2. Calyx 1 is shown with its globuli cell tract entering a domain denoted by lateral extensions of calyx 1. In panel E, the base of column 1 (Clm1) is shown arising from Ca1, its curvature at this level splitting it into two parts. Column (Clm2) is shown extending two branches into the gyriform layer above. Clm1 extends outwards just proximal to the pedestal of the reniform body (RB). In addition to columns, calyces provide occasional narrower finger-like extensions extending towards the gyri (asterisks in D). Scale bars, 100 μm. Inset in A, 10 μm, inset in B, 50 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Two tracts composed of neurites from 22,000 to 30,000 globuli cells from a unified cluster (gc) extend to two calyces (Ca1, Ca2), Ca1 is dorsal to and larger than Ca2. (A) Viewed from above, with the medial margin of the lateral protocerebrum closest to the observer, the rostral surfaces of each calyx are highly indented with some finger-like extensions reaching upwards. (B) Viewed from beneath, with the dorsal calyx 1 closest to the observer, the more caudal levels of the calyces are seen to be layered, this distinction between caudal and rostral volumes also shown viewing into the lateral protocerebrum from its ventral surface (C). (D) 180o rotation from panel A suggests greater surface elaboration of Ca1 than Ca2.
+
 The crab’s RLPR corresponds to that volume of the insect protocerebrum containing the mushroom body and its immediately associated neuropils, such as the lateral horn (Figure 1B,C). As in stomatopods and decapods, the crab’s RLPR receives terminals of olfactory projection neurons originating from both the ipsi- and contralateral olfactory (antennular) lobes located in the brain’s second segment, the deutocerebrum (Figure 1). The axons of more than a thousand projection neurons are organized into several discrete fascicles bundled together to provide the olfactory globular tract (OGT). The left and right OGTs extend superficially across the midbrain to meet just dorsal to the central body. There, each tract bifurcates to provide inputs to each lateral protocerebrum from both the ipsi- and contralateral olfactory lobes (Figure 1). The eyestalk nerve also carries other efferent axons to the lateral protocerebrum: these include relay neurons from other sensory neuropils, relays from the opposite lateral protocerebrum and optic lobes, and interneurons relaying from various midbrain neuropils.
 
 The caudal volume of the lateral protocerebrum (CLPR) is mainly associated with outputs from the optic lobe neuropils (Figure 2A). Most of these originate from the lobula, each bundle of outgoing axons representing a population of one of the numerous morphological types of columnar neurons. Bundles segregate to a system of interconnected neuropils called optic glomeruli, as occurs in insects (Okamura and Strausfeld, 2007). Further relays from the glomeruli send information centrally to the midbrain via the eyestalk nerve. The nerve also carries to the midbrain the axons of efferent neurons from the lateral protocerebrum’s rostral neuropil, from the mushroom bodies and their associated gyri and from CLPR neuropils associated with the optic glomeruli.
 
-## Organization of DC0-positive volumes (Figure 2)
+### Organization of DC0-positive volumes (Figure 2)
 
 Densely osmiophilic calyces and their extended columns (Figure 2A) correspond to discrete neuropils showing high levels of immunoreactivity to antibodies raised against DC0 (Figure 2B). The fibroarchitecture of these DC0-positive volumes is revealed by labeling with antibodies against α-tubulin or by reduced silver (Figure 2E; Figure 3A-C), which provides correlative data for resolving and interpreting the arrangements of the mushroom body volumes in 3D reconstructions (Figure 3—figure supplement 1: see Materials and methods). Salient both in osmium-ethyl gallate (Figures 2A and 3D,E) and reduced silver-stained brains (Figure 3A,C) is the layer of gyri that defines the outer level of the rostral lateral protocerebrum. Gyri are DC0-immunoreactive and are contiguous with each of the DC0-immunoreactive columns that extend outwards from the calyces. Gyri are resolved as pillowed folds and indentations (sulci: Figure 2D,F) comparable to the folded architecture of a mammalian cerebral cortex. This feature appears to be unique to Brachyura (see Discussion).
 
-## The calyces and their origin from globuli cells (Figures 2–4)
+### The calyces and their origin from globuli cells (Figures 2–4)
 
 If centers are claimed as phenotypic homologues of insect mushroom bodies, then those centers are expected to have the following categories of neurons irrespective of their divergence from the ancestral ground pattern as represented in the allotriocarid clade Cephalocarida (Stegner and Richter, 2011). These categories are: (1) intrinsic neurons, the most populous of which are Kenyon cells defining the mushroom body’s volume, shape, and subdivisions; (2) extrinsic neurons providing inputs from sensory centers (Kanzaki et al., 1989; Lin and Strausfeld, 2012; Li et al., 2020a), as well as protocerebral regions encoding high-level multisensory information (Li and Strausfeld, 1999); and (3) output neurons that encode information computed by levels of the mushroom body lobes (Li and Strausfeld, 1999; Turner et al., 2008). The latter are referred to here as MBONs, adopting the term from studies on Drosophila (Aso et al., 2014a; Aso et al., 2014b).
 
@@ -75,13 +83,33 @@ Intrinsic neurons supplying the Hemigrapsus nudus calyces correspond to insect K
 
 Cell body fibers (neurites) extending from the globuli cell cluster are tightly packed into two prominent bundles, called globuli cell tracts, one projecting obliquely ventrally the other obliquely dorsally to supply each of the two adjacent calyces (Figure 3—figure supplement 1). Neurites comprising these tracts fan out to supply each calyx with its ensembles of mostly orthogonally arranged dendritic networks (Figure 3B; Figure 5—figure supplement 1). The networks, which are resolved by silver stains, comprise overlapping populations of intrinsic neuron processes extending amongst a mosaic of many thousands of discrete microglomeruli (Figures 3B and 5A). These are assumed to be sites of synaptic convergence (Figure 5—figure supplement 1), corresponding to microglomerular organization in the calyces of insect, stomatopod and caridean mushroom bodies (Yasuyama et al., 2002; Sjöholm et al., 2006; Groh and Rössler, 2011; Wolff et al., 2017; Sayre and Strausfeld, 2019). As described in the following section, components of microglomeruli include the terminals of afferent relays originating from the olfactory lobes, terminals from neuropils associated with the visual system, including the reniform body, and the endings of centrifugal neurons from the midbrain.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig5-v1.jpg)
+
+**Figure 5.:** (A) Reduced-silver-stained calyx showing its globuli cell tract (gct) with, at a different level, many of its constituent neurites giving rise to branches that delineate the mosaic organization of microglomeruli. (B) Golgi impregnations provide examples of intrinsic neurons, the branches and fine processes of which extend through domains of the calyx that correspond to those revealed both by reduced silver and by antibodies against DC0. A subfield (curved double arrow) in panel A corresponds to the denoted branches of the intrinsic neuron in panel B. (C) Microglomeruli are specifically labeled by anti-DC0 (magenta). Microglomerular size and density in the boxed area corresponds to an equivalent microglomerular organization identified by reduced silver (boxed area in A). The mosaic is also reflected by the pattern of all intrinsic neuron processes at that level revealed by anti-α−tubulin (cyan); these enwrap DC0-positive microglomeruli (D, E). The same system of microglomeruli is resolved using combined actin/anti-synapsin (F). The area identified in a field of Golgi-impregnated intrinsic neuron processes (boxed in B) is equivalent to the area of the calyx in panel F labeled with actin/anti-synapsin demonstrating the microglomerular mosaic. The boxed area in F is shown in panel G. (G) The upper row shows actin (green) and synapsin (magenta) separately, with the superimposed images in the right panel. The boxed area in the upper right panel of G indicates a single microglomerulus. This is enlarged in the lower three panels, again showing actin and synapsin as separate images and then combined lower right to demonstrate the density of synapsin-labeled profiles, and thus direct evidence of massive convergence at a calycal microglomerulus. Scale bars, A–C, 50 μm; F, 10 μm; G, 2 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Golgi impregnation showing regular network arrangements of intrinsic cell dendrites. Robust afferent terminals are defined by varicose specializations. A single terminal is shown in the box upper right; several convergent terminals in the box upper left. (B) The globuli cell tract (gct) extends medially beneath processes belonging to the reniform body’s pedestal (pds). Afferent fibers enter from the left (arrowed) to terminate (one boxed, lower left) amongst densely arranged intrinsic neuron dendrites extending from globuli cell neurites comprising the gct. Scale bars, A, B, 50 μm.
+
 Serial sections, cut parallel to the rostro-caudal plane of the lateral protocerebrum and stained with reduced silver, suggest the calyces are planar neuropils (Figure 3B). But this is deceptive, as shown by sections demonstrating how the deep calycal cytoarchitecture extends rostrally to merge with the base of its column (Figure 3C). The total extent and volume of calycal neuropil is surprisingly large as can be seen in brains treated with osmium-ethyl gallate, a technique that selectively colors cell membranes black (Wigglesworth, 1957). The method reveals volumes of neuropil in shades of black to light gray, the darker the neuropil, the more densely packed its neuronal processes (Figures 2A and 3D,E; Figure 6—figure supplement 1B). The darkness of the calyces reflects the dense packing of the many thousands of intrinsic neurons comprising them. Volumes that are paler are composed of neuronal processes that are stouter and contribute less stainable membrane, as in the overlying gyri.
 
-## Neuronal organization of the calyces (Figures 5–8)
+### Neuronal organization of the calyces (Figures 5–8)
 
 Computer-generated reconstructions and rotations of osmium-ethyl gallate stained sections (see Materials and methods and Figure 3—figure supplement 1) demonstrate that the calycal volumes are topographically elaborate. Each calyx is stratified at deeper levels of the lateral protocerebrum's rostral volume, but, where calycal neuropils extend forwards, their upper borders are defined by irregular arrangements of small peaks and troughs. Two prominent columns, one from each calyx, extend outwards and branch into the overlying gyri (Figure 3E). Reduced silver material and Golgi impregnations resolve their elaborate internal organization, which is described in Section 5, below.
 
 Intrinsic neuron processes and terminals of efferent interneurons are the main constituents of the varunid calyces (Figure 5B, Figure 5—figure supplement 1; Figure 6B–G, Figure 6—figure supplement 1). They receive inputs from neurons primarily from the deutocerebrum (Figure 5—figure supplement 1B), but also from the optic lobes and from its associated neuropils, such as the reniform body (Figure 6—figure supplement 2), as also shown for Stomatopoda (Thoen et al., 2020). Golgi impregnations and osmium-ethyl gallate staining demonstrate that calyces, across their horizontal and vertical extent, are composed of discrete domains of morphologically distinct networks comparable to the discrete modality-specific zones of Kenyon cell dendrites that define the insect calyces (Ehmer and Gronenberg, 2002; Strausfeld, 2002).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig6-v1.jpg)
+
+**Figure 6.:** (A) Osmium-ethyl gallate resolves calycal territories matching the dendritic fields of morphologically distinct intrinsic neurons. Letters in panel A indicate panels showing corresponding locations of Golgi-impregnated dendritic fields shown in (B and C). Boxed areas in B and C are enlarged in panels (D–G) to demonstrate distinctive dendritic morphologies. The locations of the arrowed bracket and asterisk in A correspond to their locations in B (the bracket) and C (the asterisk). These further indicate the fidelity of calyx organization indicated by these two histological methods. Open boxes in panels D–F indicate different morphological specializations of afferent terminals. Abbreviations: RB, reniform body pedestal; gc, globuli cells; gct, globuli cell tract. Scale bars, A, C, 100 μm, B, 50 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The equivalent of the area in panel (A) is indicated by the open box in panel (B). Corresponding loci in B and A are indicated by symbols. Boxed areas in (A) are enlarged in panels (C,D) showing rectilinear organization of intrinsic processes and their convergence at nodes corresponding to microglomeruli. RB, reniform body pedestal; gc, globuli cells; gct, globuli cell tract. Scale bars, A, B, 100 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) Two serial silver-stained sections showing the side-by-side disposition of calyces 1, 2 (Ca1, Ca2) each supplied by its own globuli cell tract (gct1, 2). Arrowed paths indicate passage of axons extending to Ca2 from pathways (far right in both panels) from the optic lobe medulla and reniform body. Scale bars, 100 μm.
 
 Most calycal neuropil is characterized by its dense arrangement of small almond-shaped subunits (Figure 5A), here referred to as microglomeruli following the term given to comparable elements described from insect mushroom body calyces (Yasuyama et al., 2002; Sjöholm et al., 2006; Groh and Rössler, 2011). However, some peripheral volumes of the calyces comprise more distributed arrangements (Figure 5A,B). These appear to receive terminals from axons of relay neurons emerging from fascicles in the eyestalk nerve that are not part of projections from the olfactory lobes (Figure 3B).
 
@@ -103,11 +131,23 @@ Whereas GAD immunohistology does not distinguish local calycal domains, these ar
 
 **Figure 8.:** (A,B) Although many volumes of the lateral protocerebrum are distinguished by 5HT (panel A, 5-hydroxytryptophan, orange) immunoreactivity, the densest system of branches is in a rostral domain of calyx 1. TH (panel B, tyrosine hydroxylase, cyan) defines two domains, one partially overlapping 5HT, the other not (panel C). (D) Bodian silver-stained calyx 1 showing its distinctive microglomerular mosaic (inset). (E) Outlined in purple is the total calycal perimeter at this level of sectioning and orientation. The arrow indicates the origin of column 1. (F) Perimeter (purple) of calyx 1 in a section of the rostral lateral protocerebrum slightly rotated around its lateral-medial axis, mapping within it 5HT- and TH-immunoreactivity (as in panels A–C) also indicating the origin of column 1 (arrow, as in panel C). Abbreviations: RB, reniform body; gc, globuli cell cluster; gct, globuli cell tract; LO, lobula. Scale bars for all panels, 100 μm.
 
-## Transition from the calyces to the columns (Figures 9 and 10)
+### Transition from the calyces to the columns (Figures 9 and 10)
 
 Thus far, we have demonstrated the composition of the calyces as approximately orthogonal networks provided by intrinsic neurons and their arrangements with microglomeruli.
 
 Stomatopod and shrimp mushroom bodies demonstrate a clear transition of neuronal organization between the calyx and its columnar extensions (Wolff et al., 2017; Sayre and Strausfeld, 2019). In Hemigrapsus nudus there is no abrupt transition (Figure 3). This ambiguity is seconded in brains treated with osmium-ethyl gallate, which show lateral protocerebral neuropil supplied by globuli cell neurites gradually fading from black to gray, signifying decreasing densities of neuronal membrane, finally giving way to the uniformly pale aspect of the overlying gyri (Figures 2A and 3D,E). 3D reconstructions of the dark volumes show a layered arrangement at deeper layers of the calyces changing to a more corrugated appearance, particularly at its outer surface (Figure 3—figure supplement 1). Silver impregnations show that the base and some of the initial length of a column are clearly reticulated (Figure 9C). However, these are not microglomeruli. Double Golgi impregnation shows that these networks receive contributions from two sources: the extensions of axon-like processes from intrinsic neuron fields in the calyx; and intrinsic arborizations, many extremely complicated, that originate from thin neurites, presumed to belong to globuli cells (Figure 9—figure supplement 1). An additional system of networks extends outwards to flank each calyx’s column (Figure 9B). These finger-like extensions originate from a tangle of processes situated at a deeper level of the calyces (Figure 9B) that does not reflect any relationships with microglomeruli. The likely origin of this system (Figure 9B) is not from globuli cells but from a small cluster of cell bodies, some DC0-immunoreactive, situated caudally close to the inner margin of the lobula (Figure 2C). We interpret this tangle of processes (Figure 9B) as belonging to interstitial local interneurons providing elements to the columns at a level limited to their emergence from the calyces. The topology of these arrangements, including the small column-specific intrinsic arborizations (Figure 9—figure supplement 1E–K) is reminiscent of interstitial neurons interposed between the calyces and pedunculus of the honeybee (Strausfeld, 2002).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig9-v1.jpg)
+
+**Figure 9.:** (A) Anti-α−tubulin (cyan) reveals the organization of large fiber bundles and coarse neuropil but, at low magnification, shows neuropils of the calyces as almost featureless. Parts of the calyces are penetrated by incoming tributaries from the eyestalk nerve (asterisk in lower panel). (B) A corresponding Golgi-impregnated region demonstrates a system of medium-diameter branched processes that provide fine networks enwrapping the origin of columns. Some networks also extend as finger-like extensions outwards from the calyces. Panel B shows one column (bracketed) the base of which is flanked by those arrangements (enlarged in upper right inset indicated by arrows). This extensive system of processes does not derive from the globuli cell clusters, although it is clearly associated with the entire extent of both calyces, suggesting a possible role in calyx-wide modulation. (C) As shown by this reduced silver stained section, the column arising from calyx 1 is extremely elaborate, comprising at least two longitudinal divisions each defined by arrangements of intrinsic neuron processes and their branched specializations. The curved arrow in panel C indicates the continuation of intrinsic neuron microglomeruli for a short distance alongside the column. The boxed areas in panel C indicate corresponding levels identified in a Golgi-impregnated column 1 (panel D). Boxed areas in D are enlarged in panels (E, F). In panel E, ascending fibers provide short collaterals (arrowheads) across one longitudinal subdivision of the column. Ascending intrinsic processes are arranged as a tangle in two different column subdivisions (circled in panels E, F). Panel F also shows a large beaded branch (arrowed) of a mushroom body input neuron (MBIN) extending into the column. The arrow, lower left in panels A, B indicates medial. Abbreviations: RB, reniform body; Ca2, calyx 2; gc, globuli cells; LO, lobula; Gy, gyri. Scale bars, A, B, 100 μm; C, D, 50 μm.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Golgi impregnation of a column originating from calyx 2. Three parallel but distinct ensembles of intrinsic neuron processes (circled) all splay outwards immediately beneath the overlying gyriform neuropil, which is here unstained. Details of these ensembles shown in (B, C) demonstrate internal complexity. Of note is the presence of bouton-like terminals (two indicated by box brackets) suggesting either afferent supply from the eyestalk nerve or reciprocal inputs from rostral gyri. A cascade arrangement of processes extending parallel to the column from a more rostral level (arrow) may indicate recurrent afferent supply from the gyri. (D–G) Columns also contain what appear to be intrinsic elements (D) that do not originate from the calyces, as occurs in the mushroom bodies of certain insects (see Discussion). (E) There is a clear distinction between the arrangement of processes (enlarged in H) in the columns (clm) and the more distributed arrangements in the proximal zone (pz) of the reniform body indicated by its pedestal (pds). (F) Further complexity is demonstrated by parallel arrangements of intrinsic neurons and their collaterals suggestive of local circuits (examples indicated in boxed areas in panel F, enlarged in I, J). (G) Dense arrangements near the column’s terminal expansion reveal claw-like specializations each with its particular morphology, within parallel subdivisions of the column (indicated by arrowheads in K). Scale bars, A, 100 μm; E–G, 25 μm; D, H-K, 20 μm.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A–H) Paired half-tone/color micrographs of selected levels of a silver-stained, serially sectioned RLPR (medial to the left, rostral upwards). Green outlines in panels A-D indicate parts of the globuli cell tract (gct2) to calyx 2 (Ca2); in E-H, parts of the gct1 to calyx 1 (Ca1). Blue outlines indicate cross sections of the reniform body pedestal (RB); magenta outlines indicate mushroom bodies (calyces and their columns). Identification of the calyces is enabled by their color and microglomeruli as in Ca2, (lower panel A). As in osmium-ethyl gallate sections, the two calyces are too close to identify separately unless viewed downwards from the rostral surface of the LPR. Columns (ringed) and smaller finger-like extensions (asterisks) extend outwards to the gyri. Column 2 (Clm2) from calyx 2 (Ca2) is shown in panels A-D. Panels E-H illustrate the origin and width of Clm1 from Ca1. Panels I and J show corresponding arrangements revealed by osmium-ethyl gallate. Scale bars, 100 μm.
 
 The origins of the columns and smaller extensions from the calyces are further demonstrated by selected levels of silver-stained brains. Serial sections resolve the uneven rostral border of the calyces and the two columns reaching outwards toward the overlying gyri (Figure 9—figure supplement 2). The series also demonstrates the agreement between how silver and osmium-ethyl gallate resolve the origins of the columns from the two calyces. These aspects emphasize that the seemingly irregular morphology of the rostral part of the calyces is not irregular by happenstance but is a defining feature of the lateral protocerebrum.
 
@@ -121,9 +161,17 @@ Fields of 5HT- and TH-immunoreactive dendrites extend across columns. Here we sh
 
 **Figure 10.:** Looking downwards through the rostral surface of the LPR, this sequence of confocal slices (A,D,E,G,H) starts at the column’s origin from calyx 1 (panel A) then follows its outward passage rostrally to the level at which the column merges with the overlying gyri (panels G, H). (B) Shows outlines of 5HT- (orange) and TH-immunoreactive (cyan) fields at level A in relation to the globuli cell tract (gct, green) and the cross section of the reniform body’s pedestal (RB). The dendritic field of a TH-immunoreactive cell is corner-bracketed in A,B and a smaller portion of it is denoted by a dashed square in C. (C) Golgi preparation of dendrites in area equivalent to panels A,B. Bracketed and dashed areas in (B,C) show that at this level, networks of intrinsic neurons have given way to more loosely defined reticulations. (F) Enlargement of dashed square in (C). At the level of panel A, 5HT- and TH-immunoreactive fields are segregated across the origin of the column and continue to be, at least until the level shown in panel (E), suggesting 5HT- and TH-immunoreactive fields are restricted to the column’s longitudinal subdivisions. TH-immunoreactive fields can be noticeably clustered within a small area of the column’s cross section (arrow in E) as are MBONs in Drosophila mushroom bodies. The width of the column (long brackets in panels D, E, G) increases gradually through layers (D, E, and G) (see brackets), and in the gyrus (H) its borders are no longer distinguishable. The 3D reconstruction (lower left) shows a view looking into the lateral protocerebrum from its confluence with the optic lobe, its medial axis indicated by the black arrow and the rostral axis by the white arrow pointing upwards. Confocal levels are indicated as well as the two gyri (Ca1Gy1, Ca1Gy2) associated with the Ca1 column and the globuli cell tracts to Ca1 and Ca2 from the globuli cell cluster (gc). Other abbreviations: gct, globuli cell tract; RB, pedestal of the reniform body. Scale bars, A-E, G, H, 10 μm; C and 3D reconstruction, 100 μm.
 
-## Organization of gyriform neuropils (Figures 11 and 12)
+### Organization of gyriform neuropils (Figures 11 and 12)
 
 Five distinct gyri comprise the outer layer of the rostral lateral protocerebrum (Figure 11A). But only four gyri are associated with the two calyces. A fifth gyrus, termed here the proximal gyrus, is situated near the entry of the eyestalk nerve. Its neuronal organization distinguishes it as entirely separate from the mushroom body (Figure 11A,F).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig11-v1.jpg)
+
+**Figure 11.:** (A, B). Amira-generated 3D reconstructions of the gyri and their calyces. Black arrows indicate the direction of the eyestalk nerve; likewise in panels C–H. (C) Ensemble of efferent dendrites in gyrus 2 associated with calyx 1 (Ca1Gy2). The represented area is boxed in panel B. (D) Afferent tributary from the olfactory globular tract (olfactory projection neurons) supplying gyrus Ca1Gy1 neuropil (open rectangle in panel A). (E) Smooth oval presynaptic specializations denote the terminals of another olfactory globular tract tributary that exclusively supplies the most proximal gyrus (pGy, rectangle in panel A), which has no obvious connection to the mushroom body. (F) Double-labeling with anti–GAD (yellow) and anti-allatostatin (cyan) of the lateral protocerebrum resolves allatostatin immunoreactivity in the proximal gyrus (rectangle in A and F), which shows little to no GAD immunoreactivity. (G, H) Stacked z-axis projections of Golgi-impregnated tracts, imaged through two successive 50 μm sections showing massive supply by afferent neurons. These reach levels of the lateral protocerebrum that include those at and well beneath the gyriform layer (box I, panel G), including levels of the calyces (box J in panel G and box K in panel H). Notably, many efferent neurons relaying information from gyri (panel H) send their downstream axons from the lateral protocerebrum into these tracts. (I–K) Enlargements from regions indicated in G, H, but at sample thicknesses of less than 20 μm to isolate details obscured in flattened optical sections. Scale bars, A–C, F–H, 100 μm; D,E, 50 μm; I–K, 50 μm.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** (A–C) Amira-generated 3D reconstruction of the gyri in panel A with the proximal gyrus (light green) above the medial root of the eyestalk nerve. Panel B shows extensive patches of neuronal perikarya, with the globuli cell cluster (gc, dark green) and reniform body cluster (rbc, yellow) situated at the distal margin of the RLPR. Merged images in panel C show the relative dispositions of cell body clusters and gyri. (D–I) Stitched reconstructions of Golgi mass impregnations resolve top (rostral)-down (F, H), lateral (E, G, I) and sub-gyrus (D) views of neuropils. The boxed area in F includes cell bodies of a lateral patch, enlarged in the upper right inset. Scale bars, A-I, 100 μm, inset to panel F, 25 μm.
 
 Mass impregnations demonstrate at this outer level of the lateral protocerebrum large numbers of efferent neurons and their dendritic processes, many of which originate from clusters of loosely arranged patches of perikarya that extend over the outer surface of the lateral protocerebrum (Figure 11—figure supplement 1). Although stochastically impregnated, the abundance and variety of these neurons suggests the gyri contain dense arrangements of efferent (output) and local interneurons (Figure 11—figure supplement 1D–I). Golgi impregnations reveal swathes of axons extending across the gyri, suggesting lateral interactions amongst them. Oblique palisades of dendritic trees, which have branching patterns peculiarly reminiscent of vertebrate pyramidal cells (Figure 11B), send axons to fascicles that extend to the midbrain via the eyestalk nerve.
 
@@ -131,23 +179,43 @@ Like deeper levels of the lateral protocerebrum, gyri comprising this superficia
 
 In addition to axons extending from the eyestalk nerve providing afferents to superficial levels in the gyri, all levels in the rostral lateral protocerebrum receive an abundant supply of terminals, including many penetrating to deep levels of the calyces (Figure 11G–K). Again, it is worth bearing in mind when viewing the images in Figure 9G,H that Golgi impregnations likely reveal not more than a few percent of the constituent neurons providing these already dense arrangements of incoming fiber tracts.
 
-## Transitions to gyri
+### Transitions to gyri
 
 We have shown that four gyri overlie two large columns, each extending from one of the two calyces, as do occasional smaller finger-like extensions. Osmium-ethyl gallate demonstrates that the columns bifurcate close to the gyri (Figures 2A and 3E), a feature also resolved in serial reduced-silver-stained sections (Figure 9—figure supplement 1). However, despite the dark staining by osmium that suggests a well-defined transition between columns and gyri, neither silver staining nor Golgi impregnations provide a sharply defined inner margin of a gyrus or an obvious termination of the column. Here we consider neural arrangements that denote the ambiguity of the interface between the mushroom body’s columns and their corresponding gyri.
 
 Tangential sections across the gyri demonstrate novel and as yet puzzling aspects of their composition (Figure 12). One is the presence of dendritic trees, as in Figure 12B, here represented by a neuron, the axon of which joins with others extending to the lateral protocerebral root of the eyestalk nerve. Its dendrites overlap elaborate networks of finely branching processes that terminate in small bead-like swellings suggestive of presynaptic specializations. This network (Figure 12B) derives from extremely thin processes that ascend into the gyrus from outward extensions of the calyx (lower bracket in Figure 12B). Further examples (Figure 12C) show that the dendrites of a gyrus's efferent neurons overlap other arrangements of putative ascending presynaptic fields. In this example, the fields do not appear to be part of an intervening synaptic network, but instead their disposition with the efferent dendritic trees suggests that they likely terminate there (Figure 12C). In addition, highly restricted systems of mixed spiny and beaded arborizations suggest local anaxonal neurons that may provide synaptic interfaces between such terminal systems arising from the columns and the dendrites of gyral efferent neurons (Figure 12D,E). Evidence that arborizations predominantly equipped with presynaptic specializations likely originate from the calyces is indicated by densely packed elements situated distally in the columns. These are equipped with short digiform specializations arranged as small basket-like receptacles matching afferent terminals of unknown origin (Figure 12G,H).
 
+![Figure 12.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig12-v1.jpg)
+
+**Figure 12.:** (A) 3D reconstruction of gyri associated with calyx 1 and calyx 2, showing approximate locations of networks shown in B–H. Open arrow indicates medial, white arrow indicates rostral. (B) Dense network supplied by ascending processes (boxed area is enlarged on left), ascribed to Ca1Gy2 derived from column 1. Dendrites of an efferent neuron (arrows) spread through this layer. (C) Efferent neuron dendrites overlap a broad field of dense terminal specializations. Gnarled bouton-like specializations (boxed and enlarged on right) show that terminals from the eyestalk nerve enter this level. (D–H) Dense and elaborately branched elements interpreted as local interneurons (D, E) and intrinsic elements of the Ca1 column (F–H). Ascending processes (circled in F,H and arrowed in G,H) are further evidence of local circuits. Dense groups of converging processes (box brackets in G,H) correspond in size to afferent boutons (boxed in G,H). Scale bars, B, C, 100 μm; D-H, 50 μm.
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** (A) Terminus of column 2 from calyx 2 (Clm, circled). The column is notable for its many extremely slender intrinsic processes. Also, visible in this preparation are branches of extrinsic (efferent) neurons extending across the column (arrow). (B) Terminus of column 2 (circled) with bundled intrinsic processes and the stouter profiles of efferent neurons (arrowed) ascending from the column into overlying gyral neuropil. This superficial level also receives terminals decorated with small bead-like specializations provided by bundled small-diameter axons from the eyestalk nerve (curved arrow). (C) Synapsin (magenta)-actin (green) labeling showing at the terminus of a column (circled) its longitudinal divisions denoted by various sizes and densities of synaptic sites across its width. Similar variation is resolved in flanking neuropil of the gyrus (Gy). (D) Reduced silver demonstrates bundles (dashed arrow) from the caudal lateral protocerebrum ascending outside a column into gyri, demonstrating that multimodal convergence occurs at many levels in the lateral protocerebrum. Part of Ca2 is also visible at this level. Scale bars, A, D, 100 μm; B, 50 μm; C, 25 μm.
+
 The rare Golgi impregnation that resolves one of the columns as a recognizable ensemble of heterogeneous elements within the column’s boundaries also demonstrates that its terminus is 'open', meaning contiguous with the gyral neuropil into which some of its fibers project (Figure 12—figure supplement 1A,B). Also fortuitous are preparations that demonstrate the terminus of a column coinciding with bundled endings from the olfactory globular tract. Such a preparation (Figure 12—figure supplement 1B) also shows that the terminus of the column is open to gyral neuropil around it and that processes extend from the column into the gyrus. Combined labeling with anti-synapsin and actin at the terminus of the column (Figure 12—figure supplement 1C) further indicates that sizes and densities of sites indicating synaptic convergence differ systematically across it. The flanking gyral neuropils also show substantial variation in synaptic densities. Inputs to the gyri do not, however, derive solely from calycal columns and afferents from the olfactory globular tract. Reduced silver preparations show that tracts from caudal neuropil associated with the optic lobe extend rostrally to the superficial levels of a gyrus (Figure 12—figure supplement 1D), yet another indication of the complexity of organization and its multimodal nature at all levels of the mushroom body and its gyri. The possible significance of this is considered below in the Discussion.
 
-## The reniform body (Figure 13)
+### The reniform body (Figure 13)
 
 We have shown that the lateral protocerebrum is divided into a rostral and caudal part (RLPR and CLPR), the former containing the paired mushroom bodies. The mushroom bodies are not, however, the sole components of the RLPR. The gyrus nearest the RLPR’s junction with the eyestalk nerve, termed the proximal gyrus (pGy), is distinct and probably to some degree functionally separate from the gyri associated with the mushroom bodies (Figure 11F). In addition, another prominent system of circumscribed neuropils is situated near the lateral border of the RLPR, arising from a dorsal group of relatively small perikarya almost adjacent to the optic lobes. These neuropils comprise the reniform body, a center identified in stomatopods by Bellonci, 1882, who distinguished it from the very prominent mushroom bodies in that taxon. The same center has been described in detail in the stomatopods Neogonodactylus oerstedii, Gonodactylus smithii, and G. chiragra, and the carideans Lebbeus groenlandicus and Alpheus bellulus. In all these species, the reniform body has the same morphology: a densely populated bundle of axons, referred to as the pedestal, extends from the dorsal surface of the RLPR to its ventral surface, providing four discrete neuropils called the initial (dorsal), lateral, and the ventrally situated proximal and distal zones (Wolff et al., 2017; Thoen et al., 2020; Sayre and Strausfeld, 2019; Strausfeld et al., 2020). In all the cited taxa, the reniform body is situated between the columnar mushroom body and the lobula.
 
 Precisely the same placement is observed in the varunid lateral protocerebrum (Figure 13). The reniform body occupies a location lateral to the ensembles of neurons that constitute the mushroom body gyri (Figures 2 and 13). Reconstructed from serial osmium-ethyl gallate sections, the reniform body’s pedestal lies immediately above, that is, rostral to, the two tracts of neurites from the globuli cell cluster (the globuli cell tract) that provide intrinsic neurons to the mushroom body calyces (Figure 13C). In Hemigrapsus nudus, the reniform body pedestal extends from a cluster of cell bodies at the dorsal surface of the lateral protocerebrum and extends almost to the lateral protocerebrum’s ventral surface, bifurcating into two main tributaries about half way along its length (Figure 13F). These give rise to the lateral, distal and proximal zones, each zone composed of substantial volumes of arborizations (Figure 13D). The reniform body is thus entirely distinct from the mushroom bodies and is situated distally with respect to their centrally disposed calyces (Figure 13E). The reniform body’s thick pedestal, albeit columnar in form, is distinct from a mushroom body column in that its constituent axons are naked, lacking spines or other specializations that define a mushroom body. The reniform body’s four zones of branching collaterals contribute to structures reminiscent of microglomeruli. However, they are of larger girth, and synapsin-actin labeling shows them to have significantly fewer converging presynaptic elements than a calycal microglomerulus (Figure 13—figure supplement 1D,E). Despite these clear differences from the mushroom body, the reniform body is strongly immunoreactive to anti-DC0, showing that it too is a learning and memory center, as proposed by Maza et al., 2016.
 
+![Figure 13.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig13-v1.jpg)
+
+**Figure 13.:** (A) 3D reconstruction of gyri from osmium-ethyl gallate specimens identifies their 2:1 relationship with the paired calyces. These can be compared to the distribution of gyrus neurons resolved by Golgi impregnations (B level indicated in A). The Golgi method impregnates a fraction of the constituent neurons, the fields of which are mostly constrained to a single gyrus. Here impregnated neurons are viewed through the lateral protocerebrum’s rostral surface. The reconstructions depict the lateral protocerebrum slightly rotated clockwise around the medial-lateral axis such that neuropils are viewed from above. In panel A (and panels C, E) the black arrow pointing left indicates medial, the white arrow pointing out of the plane of the page indicates rostral, and the filled arrow pointing downwards ventral. A simplified schematic of the relationships between the calyces and their cognate gyri is provided in Figure 13—figure supplement 2. (C) The globuli cell cluster (gc) provides two globuli cell tracts (gct1, gct2) to the two mushroom body calyces Ca1, Ca2. The lateral lobe of gyrus 2 associated with calyx 2 (Ca2Gy2, indicated by the asterisk in panel A) reaches out distally and partially fills a gap (asterisk in C) between two processes (the lateral and dorsal zones, iz and lz) originating from the reniform body’s pedestal (pds). (D) The reniform body pedestal (blue) is a dense fiber bundle originating from a dorsal cluster of small cell bodies (RBcb, yellow) at the dorsal surface of the rostral lateral protocerebrum. The reniform body’s neuropil volumes are colored cyan. The pedestal’s initial and lateral zones (iz, lz) are separated from its ventrally dividing branches, shown Golgi-impregnated in panel (F), that provide the distal and proximal zone neuropils (dz, pz). (E) Combined volumes from panels A, C, and D demonstrating the position and modest dimensions of the reniform body relative to the mushroom bodies, comprising the calyces (Ca1, Ca2), columns and associated gyri. Scale bars, A-C, B, F, 100 μm.
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig13-figsupp1-v1.jpg)
+
+**Figure 13—figure supplement 1.:** (A) Calyx 1 (Ca1), its associated gyri (Gy), the reniform body pedestal (RBpds) and, at this level, its lateral zone (lz) are shown labeled with actin (green)/anti-synapsin (magenta). In A, the open square corresponds to a similar area of silver-stained microglomeruli (upper right inset). The same area is shown enlarged in panel C. The open rectangle in A is enlarged in B to the same scale as panel C. (B) Reniform body neuropils comprise synaptic configurations that contribute to large glomerulus-like islets. (C) Microglomeruli of the calyces are smaller and more densely packed than those of the reniform body. (D, E) Comparison of synapsin/actin contributions to glomerulus-like units of the reniform body (D) and to microglomeruli of the mushroom body calyx (E) further demonstrates major differences regarding the density of their converging presynaptic elements. Other abbreviations: LO, lobula; gc, globuli cells; gct, globuli cell tract. Scale bars, A, 100 μm; B,C, 25 μm; D, E, 1 μm.
+
+![Figure 13—figure supplement 2.](https://cdn.elifesciences.org/articles/65167/elife-65167-fig13-figsupp2-v1.jpg)
+
+**Figure 13—figure supplement 2.:** The lateral protocerebrum (minus optic lobes) is viewed from its ventral aspect. Details of the caudal lateral protocerebrum (CLPR) are omitted. Ca1, Ca2, calyces 1 and 2; Ca1Gy1, the medial of two gyri associated with Ca1; Ca1Gy2, second more lateral gyrus; Ca2Gy1, medio-ventral gyrus associated with Ca2; Ca2Gy2, second more lateral gyrus associated with Ca2. pGy, proximal gyrus. Axes: R, rostral; C, caudal; L, lateral (distal); M, medial (proximal; see also Figure 1a–c).
+
 ## Discussion
 
-## Unique organization of the varunid mushroom body
+### Unique organization of the varunid mushroom body
 
 Studies by Hanström in the 1920s and 1930s on the brains of malacostracan crustaceans concluded that mushroom bodies equipped with calyces and columns (lobes), as they are in insects and mantis shrimps (Bellonci, 1882), have been reduced in decapods to columnless centers lying immediately beneath the rostral surface of the lateral protocerebrum. Recent comparisons of the brains of reptantian decapods have confirmed that its lineages share the evolutionary trend of reduction and loss of the mushroom body column (Sayre and Strausfeld, 2019). Those mushroom bodies nevertheless retain most elements of ancestral networks: diffusely arranged in Axiidea, Astacidea, and Achelata (Sayre and Strausfeld, 2019), but precisely stratified in terrestrial and marine Anomura (hermit crabs: Harzsch and Hansson, 2008; Wolff et al., 2012; Sayre and Strausfeld, 2019).
 
@@ -167,7 +235,7 @@ The varunid lateral protocerebrum has two calyces, each providing a massive colu
 
 Of particular note is the extensive organization of GAD-immunoreactive arborizations that extend into every domain of the H. nudus calyces. These provide dense systems of minute processes, the dispositions of which would allow synaptic contact with every neuronal process supplying a microglomerulus. Accepting that varunid intrinsic neurons correspond to insect Kenyon cells, these GAD-immunoreactive systems suggest correspondence with wide-field anaxonal inhibitory neurons that extend throughout the Drosophila calyx (‘APL neurons’: Liu and Davis, 2009; Amin et al., 2020). Consequently, such putatively inhibitory anaxonal neurons in the crab suggest a global role in local synaptic inhibition at microglomeruli. Arrangements of aminergic neurons in the calyces and columns further correspond to mushroom body input and output neurons recognized in Drosophila (Aso et al., 2014b; Owald et al., 2015). It is also notable that highly localized and densely branching TH- and 5HT-immunoreactive neurons occur at different levels of the crab’s calyces. These correspond to similar dispositions of immunoreactive neurons in the layered calyces of columnar mushroom bodies, including those of stomatopods and shrimps (Wolff et al., 2017; Sayre and Strausfeld, 2019). Neurons in the Hemigrapsus mushroom body having the same immunoreactive signatures are associated with columns, from their origin at the calyces out to the level of their ‘fuzzy’ interface with gyri and also in the gyri. Their successive levels in a column approximate the arrangements of output neurons from successive partitions of insect mushroom bodies, as exemplified in cockroaches and Drosophila (Li and Strausfeld, 1997; Tanaka et al., 2008; Aso et al., 2014b); and in crustaceans by the successive fields of efferent neurons in the mushroom bodies of Stomatopoda, Stenopodidea, and Caridea (Wolff et al., 2017; Sayre and Strausfeld, 2019; Strausfeld et al., 2020).
 
-## Is the organization of gyri an outlier, and what is its homologue in other lineages?
+### Is the organization of gyri an outlier, and what is its homologue in other lineages?
 
 Comparisons of the varunid brain with those of other pancrustaceans meet an impasse when considering the lateral protocerebrum’s system of gyri, a cortex-like feature that appears to be special to Brachyura. As described above, there is no obvious terminus of a mushroom body column: its efferent neurons merge with systems of local interneurons in the gyri and, with these local interneurons, they extend amongst the dendrites of efferent neurons that leave the gyri. If these arrangements do not correspond to organization in other pancrustaceans and mandibulates, then what developmental events might have given rise to such a departure from the reptantian ground pattern?
 
@@ -179,7 +247,7 @@ One possible interpretation of the gyri is that they represent enormously expand
 
 Far more elaborated than a tubercle, gyri comprise many morphologically distinct types of neurons, including efferents of unknown antigenicity. The presence in gyri of local interneurons and rectilinear networks further indicates an identity that is indirectly associated with the mushroom body. A clue is suggested by other Reptantia, in which certain mushroom body outputs target neuropils at deep levels of the lateral protocerebrum (Mellon et al., 1992a; Mellon et al., 1992b; McKinzie et al., 2003). If these less well-studied neuropils became inverted, they would overlie the inverted brachyuran mushroom bodies as do the gyri (Figure 14B,E). In that scenario, the relationship between a mushroom body and its target neuropils is essentially the same as in other reptantians (Figure 14D), except a consequence of inversion is that those neuropils have been able to undergo unparalleled lateral expansion and gyrification.
 
-## The varunid mushroom body in the context of pancrustacean evolution and cognition
+### The varunid mushroom body in the context of pancrustacean evolution and cognition
 
 The organization of traits defining mushroom bodies is phenotypically identical in stomatopods and insects (Wolff et al., 2017). The same characters have since resolved divergent homologues in all malacostracan crustaceans except Brachyura, the most recent lineage of decapod crustaceans (Wolfe et al., 2019). By identifying and describing the mushroom body of the shore crab, the present study completes the survey of mushroom body diversification and phenotypic correspondences, thereby enabling future transcriptomic verification or rejection.
 
@@ -191,35 +259,318 @@ The present description of the varunid mushroom body concludes studies establish
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample</td>
+      <td>Hemigrapsus nudus</td>
+      <td>Friday Harbor Laboratories</td>
+      <td>N/A</td>
+      <td>n = 76</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin (Mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>CAT#: 12G10; RRID:AB_1157911</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-Tubulin (Rabbit, polyclonal)</td>
+      <td>Abcam</td>
+      <td>CAT#: ab15246; RRID:AB_301787</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synapsin (SYNORF1; Mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>CAT#: 3C11; RRID:AB_528479</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Serotonin (5HT; Rabbit, polyclonal)</td>
+      <td>ImmunoStar</td>
+      <td>CAT#: 20080; RRID:AB_572263</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glutamic acid decarboxylase (GAD; Rabbit, polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: G5163; RRID:AB_477019</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tyrosine hydroxylase (TH; Mouse, monoclonal)</td>
+      <td>ImmunoStar</td>
+      <td>CAT#: 22941; RRID: AB_572268</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Allatostatin (Ast7; Mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DSHB)</td>
+      <td>CAT#: 5F10; RRID:AB_528076</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DC0 (Rabbit, polyclonal)</td>
+      <td>Generous gift from Dr. Daniel Kalderon (Skoulakis et al., 1993)</td>
+      <td>RRID:AB_2314293</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure Donkey Anti-Mouse IgG (H+L) Cy3 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 715-165-150; RRID:AB_2340813</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure Donkey Anti-Rabbit IgG (H+L) Cy5 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 711-175-152; RRID:AB_2340607</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure Donkey Anti-Rabbit IgG (H+L) Alexa Flour 647 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 711-605-152; RRID:AB_2492288</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Other (serum)</td>
+      <td>Normal donkey serum</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_2337258</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (DNA stain)</td>
+      <td>SYTO 13 Green Fluorescent Nucleic Acid Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CAT#: S7575</td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Other (Phalloidin stain)</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>CAT#: 12379; RRID:AB_2315147</td>
+      <td>1:40</td>
+    </tr>
+    <tr>
+      <td>Other (Chemical)</td>
+      <td>α-Terpineol</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 432628</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Potassium dichromate</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 207802</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (HPLC purified water)</td>
+      <td>HPLC Water</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 270733</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Osmium tetroxide</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 19150</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Ethyl gallate</td>
+      <td>Fisher Scientific</td>
+      <td>CAT#: G001625G</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Phosphate buffer tablets</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#:45ZE83</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Glutaraldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 16220</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 15710</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Sodium cacodylate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 50-980-232</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Silver nitrate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 21050</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Pure copper shot</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 326488</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (histology chemical)</td>
+      <td>Propylene oxide</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 20401</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (embedding resin)</td>
+      <td>Durcupan ACM resin (4-part component kit)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 44610</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (embedding medium)</td>
+      <td>Paraplast Plus</td>
+      <td>Sigma-Aldrich</td>
+      <td>CA#: 76258</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (mounting medium)</td>
+      <td>Permount mounting medium</td>
+      <td>Fisher Scientific</td>
+      <td>CAT#: SP15-100</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (mounting medium)</td>
+      <td>Entellan</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 1.07961</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop CC</td>
+      <td>Adobe Inc</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Helicon Focus</td>
+      <td>Helicon Soft</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen System Software</td>
+      <td>Zeiss</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrakEM2</td>
+      <td>Cardona et al., 2012</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira 2019.4</td>
+      <td>Thermo Fisher</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (microscope)</td>
+      <td>LSM 5 Pascal confocal microscope</td>
+      <td>Zeiss</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other (microscope)</td>
+      <td>Orthoplan light microscope</td>
+      <td>Leitz</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Crabs (Hemigrapsus nudus), with carapace widths between 4 and 6 cm, were collected from designated sites on San Juan Island, Washington, affiliated with the Friday Harbor Marine Biology Laboratory (University of Washington, Seattle). Two further shipments of living crabs were sent to the Strausfeld laboratory and maintained at 15°C in tanks containing seaweed continuously moistened with salt water. A total of 76 animals were used for this study over an 8 year period. Twenty were used for immunohistology, 8 for osmium-ethyl gallate staining, 10 for Bodian reduced silver staining, and 38 for Golgi impregnations.
 
-## Neuropil staining with osmium-ethyl gallate
+### Neuropil staining with osmium-ethyl gallate
 
 A modified ethyl gallate method (Wigglesworth, 1957) was used to stain entire brains that were then embedded in plastic and serial sectioned. These were used for Amira 3D reconstructions. After cooling to complete immobility, the eyestalks were opened to expose the lateral protocerebrum. The head was then immediately sliced off behind the brain and with the eyestalks immersed in 0.13 M cacodylate buffered (pH 6.8; Fisher Scientific, Cat#: 50-980-232) 1% paraformaldehyde with 2% glutaraldehyde (Electron Microscopy Sciences, Hatfield, PA). The rest of the animal was placed in a −40°C freezer. After overnight fixation undissected tissue was soaked in buffer. The lateral protocerebra and midbrain were then freed of overlying exoskeleton. Next, tissue was placed for 2 hr in 0.5% osmium tetroxide in cacodylate buffer, continuously rocked and kept at around 4°C in the dark. After a washing in cold buffer, tissue was further well washed in distilled water while raising the temperature to 20°C. Tissue was then immersed in aqueous 0.5% ethyl gallate with constant rocking. Tissue was periodically checked and when dark blue (after about 30 min) thoroughly washed in distilled water, dehydrated, and embedded in Durcupan to be cut serially into 15-μm-thick serial sections using a sliding microtome.
 
-## Neuropil staining with reduced silver
+### Neuropil staining with reduced silver
 
 Bodian's original method (Bodian, 1936) was used, after fixing tissue in an admixture consisting of 75 parts absolute ethanol, five parts glacial acetic acid, 20 parts 16% paraformaldehyde (Electron Microscopy Sciences; Cat# 16220; Hatfield, PA). As for the osmium-ethyl gallate method, crabs were cooled to complete immobility, the relevant parts removed, opened and fixed in AAF (70 parts absolute ethanol, five parts glacial acetic acid, 25 parts 10% E. M. grade formaldehyde). After 2–4 hr neural tissue was freed under 70% ethanol, then dehydrated to absolute ethanol before clearing in terpineol. It was next soaked in Xylol raising the temperature to 65°C. Finally, tissue was transferred, via a mixture of 50:50 Xylol-Paraplast, into pure Paraplast (Sherwood Medical, St. Louis, MO) held at 65°C in shallow aluminum cookie dishes. After three changes, each about 3–4 min long, the final dish was placed on icy water for the Paraplast to immediately begin to solidify. After serial sectioning at 10 μm, sections were mounted on glycerin-albumin-subbed slides, dried, and dewaxed. Hydrated material was incubated at 60 °C in 2–5% silver proteinate (Roques, Paris) for 24 hr with the addition of 1–4 g pure copper shot/100 ml. Afterward, sections were conventionally treated with hydroquinone, gold toned, fixed, and mounted under Permount (Fisher, Springfield, NJ).
 
-## Silver chromate (Golgi) impregnation
+### Silver chromate (Golgi) impregnation
 
 Animals were anesthetized over ice. The midbrain and eyestalk neural tissue was dissected free from the exoskeleton and its enveloping sheath in ice-cold chromating solution comprising 1 part 25% glutaraldehyde (Electron Microscopy Sciences; Cat# 16220; Hatfield, PA), 5 parts 2.5% potassium dichromate (Sigma Aldrich; Cat# 207802; St. Louis, MO) with 3–12% sucrose, all dissolved in high-pressure liquid chromatography (HPLC)-grade distilled water (Sigma Aldrich; Ca#270733). Central brains and their detached lateral protocerebra (tissues) were placed in fresh chromating solution overnight, in the dark at room temperature (RT). Next, tissues were briefly rinsed (30 s with swirling) in 2.5% potassium dichromate and transferred to an admixture of 2.5% potassium dichromate and 0.01% osmium tetroxide (Electron Microscopy Sciences; Cat# 19150; Hatfield, PA) for 24 hr. Tissues were again washed in 2.5% potassium dichromate and immersed for 24 hr in a fresh chromating solution. Before silver impregnation, tissues were decanted into a polystyrene weighing dish, swirled in 2.5% potassium dichromate and then gently pushed with a wooden toothpick into a glass container containing fresh 0.75% silver nitrate (Electron Microscopy Sciences; Cat# 21050; Hatfield, PA) in HPLC water. Tissues were twice transferred to fresh silver nitrate, then left overnight in silver nitrate. Throughout, metal was not allowed to come into contact with tissue. Tissues were rinsed twice in HPLC water. To achieve massive impregnation of neurons, after treatment with silver nitrate tissues were washed in HPLC water and again immersed in the osmium-dichromate solution for 12 hr and then transferred to silver nitrate as described above. After washing in HPLC water and dehydration through a four step ethanol series from 50% to 100% ethanol tissues were immersed in propylene oxide (Electron Microscopy Sciences; Cat# 20401; Hatfield, PA), and left for 15 min. They were then subject to increasing concentrations of Durcupan embedding medium (Sigma Aldrich; Cat# 44610; St. Louis, MO) in propylene oxide during 3–5 hr. Tissues were left overnight at RT in pure liquid Durcupan and then individually oriented in the caps of BEEM capsules. These were then married to the inverted capsule cut open at its base, and were topped-up with Durcupan. Filled capsules were placed in a 60°C oven for 18–24 hr. for plastic polymerization. Cooled blocks were sectioned at a thickness of 40–50 μm (max) and mounted using Permount mounting medium (Fisher Scientific; Cat# SP15-100; Hampton, NH).
 
-## Immunohistochemistry, antibodies
+### Immunohistochemistry, antibodies
 
 Visualization of arrangements of immunostained neurons that further define mushroom bodies was achieved using antibodies listed in the key resource table above. An antibody against DC0 that recognizes the catalytic subunit of protein kinase A in D. melanogaster (Skoulakis et al., 1993) is preferentially expressed in the columnar lobes of mushroom bodies across invertebrate phyla, including members of Lophotrochozoa (Wolff and Strausfeld, 2015). Western blot assays of DC0 antibodies used on cockroach, crab, centipede, scorpion, locust, remipede, and millipede neural tissue reveal a band around 40 kDa, indicating cross-phyletic specificity of this antibody (Stemme et al., 2016; Wolff and Strausfeld, 2015). Antibodies against synapsin (Klagges et al., 1996) and α-tubulin (Thazhath et al., 2002) were used, often in conjunction with other primary antibodies, to identify dense synaptic regions and general cellular connectivity. Both antibodies likely recognize highly conserved epitope sites across Arthropoda and have been used previously in crustaceans (Andrew et al., 2012; Brauchle et al., 2009; Harzsch et al., 1997; Harzsch and Hansson, 2008; Sullivan et al., 2007). Antibodies against serotonin (5HT), glutamic acid decarboxylase (GAD), and tyrosine hydroxylase (TH) were used in this study to describe neuronal organization and in distinguishing neuropil boundaries. 5HT is an antibody that has proven to be invaluable for neuroanatomical studies across Arthropoda (Antonsen and Paul, 2001; Harzsch and Hansson, 2008). Previous studies have used 5HT as a comparative tool for neurophylogenetic analysis (Harzsch and Waloszek, 2000). Antibodies against GAD and TH were used to detect the enzymatic precursors of gamma aminobutyric acid (GABA) and dopamine, respectively. These two antibodies do not require the use of alternative fixation methods, making them compatible with synapsin and α-tubulin labeling, while avoiding the need to use glutaraldehyde. Comparisons of anti-GAD and anti-TH immunolabeling with that of their respective derivatives have demonstrated that these antibodies, respectively, label putative GABAergic and dopaminergic neurons (Cournil et al., 1994; Crisp et al., 2002; Stemme et al., 2016; Stern, 2009).
 
-## Immunohistochemistry, application
+### Immunohistochemistry, application
 
 Methods follow those used for two recent studies on the eumalacostracan brain (Sayre and Strausfeld, 2019; Strausfeld et al., 2020). Animals were anesthetized to immobility using ice. Brains detached from nerve bundles leading to the eyestalks were first dissected free and the eyestalks were then removed. Immediately after removal, tissue was immersed in ice-cold fixative (4% paraformaldehyde in 0.1 M phosphate-buffered saline (PBS) with 3% sucrose [pH 7.4]). Midbrains and lateral protocerebra with their intact optic lobes were desheathed and left to fix overnight at 4°C. Next, tissue was rinsed twice in PBS before being transferred to the embedding medium (5% agarose with 7% gelatin) for 1 hr. at 60°C before cooling to room temperature in plastic molds. After solidification, blocks were removed from the molds and postfixed in 4% paraformaldehyde in PBS for 1 hr. at 4°C. The blocks were then rinsed twice in PBS and sectioned at 60 μm using a vibratome (Leica VT1000 S; Leica Biosystems, Nussloch, Germany). Next, tissue sections were washed twice over a 20 min. period in PBS containing 0.5% Triton-X (PBST). Tissue was subsequently blocked in PBST with 0.5% normal donkey serum (NDS; Jackson ImmunoResearch; RRID:AB_2337258) for 1 hr before primary antibody incubation. Primary antibodies were added to the tissue sections at dilutions listed in Table 1. Sections were left overnight on a rotator at room temperature. Sections were next rinsed in PBST six times over the course of an hour. Donkey anti-mouse Cy3 and donkey anti-rabbit Cy5 or Alexa 647 (Jackson ImmunoResearch; RRID:AB_2340813; RRID:AB_2340607; RRID:AB_2492288, respectively) IgG secondary antibodies were added to Eppendorf tubes at a concentration of 1:400 and spun for 12 min at 11,000 g. The top 900 μL of the secondary antibody solution was added to the tissue sections, which were then left to incubate overnight at room temperature on a rotator. For F-actin staining, tissue sections were left to incubate in a solution containing phalloidin conjugated to Alexa 488 (Thermo Fisher Scientific; RRID:AB_2315147) at a concentration of 1:40 in PBST for 2–3 days with constant gentle agitation following secondary antibody incubation. To label cell bodies, tissue sections were then rinsed twice in 0.1 M Tris–HCl buffer (pH 7.4) and soaked for 1 hr. in Tris–HCl buffer containing 1:2000 of the nuclear stain, Syto13 (ThermoFisher Scientific; Cat# S7575) on a rotator. Next, sections were rinsed six times in Tris–HCl over the course of 1 hr. before being mounted on slides in a medium containing 25% Mowiol (Sigma Aldrich; Cat# 81381) and 25% glycerol in PBS. Slides were covered using #1.5 coverslips (Fisher Scientific; Cat# 12-544E). To verify secondary antibody specificity, primary antibodies were omitted resulting in complete abolishment of immunolabeling. TH immunolabeling required a modified staining procedure with a shorter fixation time as well as antibody incubation in whole unsectioned tissue. Standard fixation times or sectioning the tissue prior to immunostaining resulted in poor or absent labeling as has been described previously (Cournil et al., 1994; Lange and Chan, 2008). For TH labeling, neural tissue was dissected and fixed in 4% paraformaldehyde in PBS containing 3% sucrose for 30–45 min. Following fixation, neural tissue was rinsed twice in PBS, and then twice in 0.5% PBST over the course of 40 min. Tissue was then transferred to blocking buffer containing 5% NDS in 1% PBST and left to soak for 3 hr. TH primary antibody was next added to the blocking buffer at a concentration of 1:250. To assist antibody permeation, whole tissues were microwave-treated for 2 cycles of 2 min on low power (~80 W) followed by 2 min no power under a constant vacuum. Tissue was subsequently left to incubate in primary antibody solution for 2–3 days and was microwave-treated each day. After primary antibody incubation, tissue was washed with 0.5% PBST six times over the course of 2 hr and then transferred to a solution containing 1:250 Cy3 secondary antibody. Whole mounts were left in secondary antibody overnight on a gentle shaker before being sectioned and mounted as described above. In dual labeling experiments, sectioned tissue labeled with anti-TH was then stained with an additional primary and secondary antibody also as described above.
 
-## Imaging
+### Imaging
 
 Confocal images were collected as Tiff files using a Zeiss Pascal five confocal microscope (Zeiss; Oberkochen, Germany). Image projections were made using Zeiss Zen System software. Light microscopy images were obtained using a Leitz Orthoplan microscope equipped with Plan Apochromat oil-immersion objectives (X40, X60, and X100). Series of step-focused optical sections (0.5–1.0 μm increments) were collapsed onto a single plane using Helicon Focus (Helicon Soft; Kharkov, Ukraine). Images were transferred to Adobe Photoshop (Adobe Systems, Inc; San Jose, CA) and processed using the Photoshop camera raw filter plug-in to adjust sharpness, color saturation and luminance, texture and clarity.
 
-## 3D-reconstruction
+### 3D-reconstruction
 
 Serial sections of osmium-ethyl gallate stained eyestalks were imaged using a brightfield Leitz Orthoplan microscope at a pixel scale of 0.5 µm x 0.5 µm. The sections were cut at a thickness of 15 µm using a rotating microtome. To account for compression and error using dry lenses because of the difference in refractive indices between glass/section and air, image sections were digitally adjusted to a voxel size of 0.5 x 0.5 x 24 µm. Additionally, to obtain a better Z-resolution, two snapshots at two focus planes were taken for each section. The resulting images were manually aligned using non-neuronal fiduciaries in the software TrakEM2 (Cardona et al., 2012).
 

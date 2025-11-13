@@ -34,45 +34,97 @@ In this study, we use TRPC3 KO mice, specific TRPC3 channel blockers (Kiyonaka e
 
 ## Results
 
-## Blockade of either nonselective cation channels or TRPC3 channels stops pacemaking of SNc DA neurons
+### Blockade of either nonselective cation channels or TRPC3 channels stops pacemaking of SNc DA neurons
 
 Endogenous firing activity of SNc DA neurons was measured by whole-cell patch-clamp recording in midbrain slices of TH-eGFP transgenic mice in which DA neurons express eGFP (Figure 1A, top; Jang et al., 2015). The recorded DA neuron was visualized by Alexa-594 dye in patch pipette and/or presented as a 3D reconstructed image (Figure 1). Most SNc DA neurons recorded from midbrain slices exhibited a very regular firing rhythm with an average firing rate of 3.28 ± 0.13 Hz (Figure 3—figure supplement 1, n = 17). DA neuron pacemaking can be characterized by slow depolarization during the interspike interval, which is further divided into three phases: I, the initial afterhyperpolarization due to the Ca2+ overload and SK channel activation (Nedergaard et al., 1993); II, the middle, very long, steady, and slow depolarization; and III, the last accelerated depolarization (Figure 1B). Phase II, occupying more than 3/4 of the interspike interval (Figure 1C), most clearly denotes slow depolarization (Figure 1B, green dotted line). Slow depolarization is absolutely necessary for pacemaking (Nedergaard et al., 1993; Grace and Onn, 1989; Ping and Shepard, 1996) and determines the pacemaking rate (Figure 1D). A mild and linear slope in the slow depolarization (Figure 1B) implies the presence of small but continuous depolarizing currents during interspike intervals. HCN and VACCs have been at the center of debate in pacemaking mechanisms of DA neurons (Chan et al., 2007; Branch et al., 2014). Isradipine blocks dihydropyridine (DHP)-sensitive Ca2+ channels including CaV1.3 channels, a dominant type of VACCs in DA neurons (Guzman et al., 2009), and ZD-7288 is an HCN channel blocker (Chan et al., 2007; Zolles et al., 2006). As previously reported (Kim et al., 2007; Guzman et al., 2009), they do not affect spontaneous firing rate at all (Figure 1—figure supplement 1A,B), indicating that L-type Ca2+ and HCN channels are not essential for pacemaking. In addition, the co-application of isradipine and ZD-7288 also failed to slow down the spontaneous firing rate in SNc DA neurons (Figure 1—figure supplement 1A,B), indicating that these two channels have little importance in the pacemaking of DA neurons. Nevertheless, during interspike intervals, isradipine weakly reduced the afterhyperpolarization possibly via reduced SK channel currents by decreasing Ca2+ influx (Poetschke et al., 2015) and slightly reduced the later slow and accelerated depolarization (Figure 1—figure supplement 1E,G), collectively resulting in no significant effect on spontaneous firing rate. On the other hand, ZD-7288 increased slightly afterhyperpolarization (Figure 1—figure supplement 1F,G), but the increase was too small to affect the firing rate. Regarding the pharmacological effects on firing inhibition, we obtained the same results from the cell-attached patch-clamp recordings in the freshly dissociated single SNc DA neurons (Figure 1—figure supplement 2), indicating that our results from the midbrain slices are not related to either incomplete channel antagonism in brain slice experiments (Guzman et al., 2009) or perturbation of the intracellular milieu by whole-cell pipette solution (Zolles et al., 2006).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig1-v2.jpg)
+
+**Figure 1.:** (A) Projection (top) and 3D reconstruction (bottom) images of TH-positive dopamine neurons from SNc slices filled with Alexa-594 and Fluo-4 through a whole-cell patch pipette. (B) Representative voltage trajectory during the inter-spike interval reveals three phases of slow depolarization for pacemaking of SNc dopamine neurons in midbrain slices. Inset, a longer period of pacemaking in the same neurons. (C) Pie chart showing the duration of each phase in slow depolarization (n = 20 from 12 mice). (D) Slope of slow depolarization (determined as in (B), green line) plotted against firing frequency (n = 23 from 15 mice). Red line is the best fitting line by linear regression. (E) Whole-cell recording from dopamine neurons in midbrain slices (left) and Ca2+ imaging at dendritic locations (left, red rectangle). Pyr10 (50–100 μM) inhibited both spontaneous firing (right, top) and dendritic Ca2+ oscillations (right, bottom). Representative traces were obtained from the same neuron. (F) Summary plot showing inhibition of firing frequency by pyr10 (n = 11 from 7 mice, ***p<0.0001) and pyr3 (n = 9 from 5 mice, ***p<0.0001). Black: control, red: after drug application. (G) All-points histogram of Ca2+ fluorescence shows that the fluorescence oscillation was reduced by pyr10. (H) Double immunofluorescence staining images for TRPC3 (left, green), TH (middle, red), and merge (right) from the SNc. Arrows indicate co-expression of TRPC3 and TH, while arrowheads indicate cells expressing only TRPC3 without TH. (I) Histogram for co-expression of TRPC3 and TH in SNc neurons (from three mice). (J) TRPC3 RT-PCR profiles from single dopamine neurons. All statistical data were analyzed by one-way ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative traces of the current-clamp recordings before and after applying isradipine (5 μM, top), ZD-7288 (20 μM, middle), and both (bottom), respectively. Traces showing the effect of each blocker were obtained from the same neuron. (B) Summary of the effects of isradipine (n = 9 from 5 mice), ZD-7288 (n = 5 from 5 mice), and both (n = 6 from 4 mice) on spontaneous firing rate (for all data, p>0.5). (C) SKF-96365 (50 μM, top) and 2-APB (100 μM, bottom) stopped pacemaking. Traces showing the effect of each blocker were obtained from the same neuron. (D) Summary of changes in spontaneous firing rate after applications of SKF-96365 (n = 6 from 4 mice, ***p<0.001) and 2-APB (n = 5 from 5 mice, *p<0.05) (black, control; red, after drug application). (E) Voltage trajectories (top, 10 firing cycles averaged) and subtracted traces (bottom) of the membrane potential during the interspike intervals before and after the application of isradipine (5 μM). Note the reductions of both hyperpolarization in phase I (blue area) and depolarization in phase III (red area). (F) Voltage trajectories (10 firing cycles averaged) and subtracted traces (bottom) of the membrane potential during the interspike intervals before and after application of ZD-7288 (top, 20 μM). Note the increase of the hyperpolarization in the phase I (blue area). (G) Box plots summarizing the changes of the membrane potentials by ZD-7288 or isradipine (ZD-7288, n = 5 from 4 mice, *p<0.05; isradipine n = 6 from 4 mice, all phases, *p<0.05) in phase I (blue) and phase III (red) of the slow depolarization. All statistical data were analyzed by one-way ANOVA.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A representative transmitted image showing an acutely dissociated SNc dopamine neurons attached with a patch pipette. Overlapped by a fluorescence image of TH-GFP (green). (B) Representative traces recorded by the cell-attached patch-clamp recording from acutely dissociated dopamine neurons. Application of isradipine (5 μM) and subsequent addition of ZD-7288 (10 μM) did not slow spontaneous firing rate. (C) Summaries of the data B (n = 5 from 4 mice). p>0.05 for all data. All statistical data were analyzed using one-way ANOVA.
+
 Previously, using freshly dissociated SNc DA neurons, we reported that nonselective cation channels (NSCCs) are essential for pacemaking (Kim et al., 2007). Consistent with this report, nonspecific TRPC channel blockers, such as SKF-96365 and 2-ABP, strongly inhibited the spontaneous firing of DA neurons in the midbrain slices (Figure 1—figure supplement 1C,D). TRPC channels constitute a large and functionally versatile family of nonselective cation channel proteins (Gees et al., 2010). Among many TRPC members, TRPC3 is known to be highly expressed in the brain (Sylvester et al., 2001; Clapham, 2003; Clapham et al., 2005) and a constitutively active ion channel (Dietrich et al., 2003; Zhou et al., 2008). Therefore, we used pyrazole derivatives such as pyr3 and pyr10 to selectively inhibit TRPC3 channels, although pyr10 is reported to partially inhibit TRPC6, too (Kiyonaka et al., 2009; Schleifer et al., 2012). These channel blockers completely abolished spontaneous firing of DA neurons in the midbrain slices (Figure 1E,F), together with the disappearance of dendritic Ca2+ oscillations, which were measured by Fluo-4 in the whole-cell patch pipette (Figure 1E,G). Double immunofluorescence staining of the midbrain slices containing the SNc (Figure 1H,I; Clapham et al., 2005) showed that TH-positive DA neurons were mostly overlapped with TRPC3-positive neurons (overlaps = 92%). In addition, single-cell RT-PCR from the isolated SNc DA neurons showed expression of TRPC3 mRNA in all cells examined (Figure 1J). Taken together, these results raise the possibility that TRPC3 is a nonselective cation channel essential for the pacemaking of SNc DA neurons.
 
-## TRPC3 encodes a nonselective cation channel essential for the slow depolarization of SNc DA neurons during interspike intervals
+### TRPC3 encodes a nonselective cation channel essential for the slow depolarization of SNc DA neurons during interspike intervals
 
 In SNc DA neurons of midbrain slices, pyr10 eliminated slow depolarization and spontaneous firing completely (Figures 1E and 2A). Under this condition, the injection of a small amount of continuous current, which resembles a leak current, revived spontaneous firing, at a rate that correlated with an injected current size (Figure 2). When the firing rate was resuscitated to the control level, voltage traces of the regenerated slow depolarization and action potential were completely aligned with those before pyr10 treatment (Figure 2A, right bottom; Figure 2—figure supplement 1), indicating that the channel inhibited by pyr10 could be a leak-like channel. Consistent with these data, the firing rate was gradually increased within the pacemaking range by a slow ramp-like increase in current injection (Figure 2, right-top), implying that the amount of leak current determines the pacemaking rate in SNc DA neurons.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig2-v2.jpg)
+
+**Figure 2.:** (A) Voltage traces from SNc dopamine neurons in the midbrain slices (left). Pyr10 (left, black trace, 50 μM) completely inhibited spontaneous firing, but it was rescued by somatic linear current injection (left, red trace). Representative voltage traces were obtained from the same neuron. Pacemaking activities under the presence of pyr10 were gradually revived by slow ramp-current injection (right upper). No significant shape changes between control and revived action potentials (APS, right bottom). (B) Box plots for pacemaking frequencies from data in a (n = 6 from 3 mice). ***p<0.0001 for control versus 0 pA; ***p<0.001 for control versus +20 pA; p>0.5 for control versus +40 pA. (C) Changes of membrane potentials in SNc dopamine neurons by L-type calcium channel blockade after TTX (0.5 μM) treatment (isradipine 5 μM). (D) Application of pyr10 (50 μM) hyperpolarized the membrane potential in the presence of TTX. (E) Summary of membrane potential changes by TTX (n = 7 from 6 mice), TTX and isradipine (n = 5 from 3 mice), and TTX and pyr10 (n = 6 from 3 mice). **p<0.01 for TTX versus TTX and isradipine; ***p<0.001 for TTX versus TTX and pyr10; ***p<0.001 for TTX versus NMDG. All statistical data were analyzed by one-way ANOVA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative voltage traces during the inter-spike interval reveals and three phases of the slow depolarization. Control voltage traces (gray) was overlapped with the firing regenerated by current injection (+40 pA, black) after blockade of TRPC3 channels. Green dotted line indicates the slope of the slow depolarization. (B) Histogram showing the durations of three phases between the control (gray) and regenerated firings (black) (n = 7 from 4 mice). p>0.5 for all data between control and regenerated. (C) Box plots showing slopes of the slow depolarization in phase II between control and regenerated firings (n = 7 from 4 mice, p=0.14). (D) Box plots showing the minimum peak of the afterhyperpolarization potential (AHP) between in control and regenerated firings (n = 7 from 4 mice, p=0.34). All statistical data were analyzed using one-way ANOVA. NS indicates no statistically significant difference.
+
 Next, we examined whether the blockade of the TRPC3 channel affects subthreshold membrane potentials of SNc DA neurons. In spontaneously firing DA neurons, application of tetrodotoxin (TTX), a voltage-dependent Na+ channel blocker, completely suppressed spontaneous action potentials but slow oscillatory potentials (SOPs) survived in a slightly more depolarized state (Figure 2), as previously reported (Nedergaard et al., 1993; Estep et al., 2016). These SOPs are not essential for pacemaking in DA neurons (Guzman et al., 2009), but are mediated by cyclic interactions between L-type Ca2+ channels and Ca2+-dependent SK channels within an adequate range of membrane potentials (Ping and Shepard, 1996; Wilson and Callaway, 2000). Consistent with these reports, further treatment with isradipine suppressed SOPs and lowered the membrane potential (Figure 2). In contrast, pyr10 not only suppressed SOPs but also hyperpolarized membrane potentials more strongly than isradipine (Figure 2D,E), indicating that pyr10-inhibited channels are able to depolarize the membrane potential even in the more hyperpolarized state. After pyr10 hyperpolarized the membrane potential, the total replacement of external Na+ with equimolar large cation N-methyl-d-glucamine (NMDG) further hyperpolarized the membrane potential (Figure 2E), at a value similar to that predicted by the Goldman-Hodgkin-Katz (GHK) equation (VGHK = –72.57 mV; see Materials and methods details). All these data suggest that TRPC3 substantially contributes to slow depolarization of the membrane potential in DA neurons, but not alone.
 
-## Selective TRPC3 channel antagonism of Pyr10 in SNc DA neurons in WT mice and compensation of TRPC3-induced leak current in TRPC3 KO mice
+### Selective TRPC3 channel antagonism of Pyr10 in SNc DA neurons in WT mice and compensation of TRPC3-induced leak current in TRPC3 KO mice
 
 To overcome the limitations of pharmacological approaches, we used TRPC3 KO mice (Figure 3) in which the recorded SNc DA neurons with the whole-cell patch pipette containing neurobiotin were later confirmed by double immunostaining of TH and streptavidin after the experiments (Figure 3A, neurobiotin, green; TH, red). Surprisingly, the spontaneous firing of DA neurons in TRPC3 KO mice survived, and the spontaneous firing rate did not differ from that of wild-type (WT) littermates (Figure 3—figure supplement 1, n = 23, p=0.23). Moreover, we could not find any significant difference in many electrical properties of DA neurons between TRPC3 KO and WT mice (Figure 3—figure supplement 1A–I), suggesting that the DA neuron pacemaking is perfectly normal in TRPC3 KO mice. Therefore, we verified whether selective TRPC3 channel blockers work in these mice. Interestingly, in the TRPC3 KO mice, the application of pyr10 did not affect the spontaneous firing rate of DA neurons at all (Figure 3B,C), whereas pyr10 completely blocked the pacemaking of DA neurons in the WT mice (Figure 3). These data strongly indicate that the inhibitory action of pyr10 on DA neuron pacemaking in WT mice should be mediated by selective TRPC3 channel antagonism. In addition, unlike WT mice, SKF-96365, which blocks all members of TRPC channels (Nilius and Flockerzi, 2014; Hahn et al., 2020), did not affect the pacemaking rate of DA neurons in TRPC3 KO mice (Figure 3B,C). The same results were obtained from acutely isolated SNc DA neurons (Figure 3—figure supplement 2). Therefore, we next examined whether pyr10 affects the subthreshold membrane potentials of DA neurons in these mice. To measure the membrane potentials more exactly, we pretreated DA neurons with TTX and ZD-7288 to remove interferences from action potential-induced membrane potential fluctuations and hyperpolarization-activated currents by HCN channels, respectively. Under this condition, pyr10 hyperpolarized the membrane potential of DA neurons in WT mice as expected (Figure 3D, left), but not in TRPC3 KO mice (Figure 3D, right). When all extracellular Na+ was replaced by equimolar NMDG after treatment with pyr10, the membrane potential of DA neurons was maximally hyperpolarized (Figure 3E,F). In the absence of extracellular Na+, Na+/Ca2+ exchangers may activate SK channels by increasing intracellular Ca2+ concentration ([Ca2+]c) and then affect the membrane potential that we measured. Therefore, we examined whether the SK channel blocker apamin (100 nM) affects the membrane potential when extracellular Na+ was replaced with NMDG. However, there was no change in the membrane potentials, suggesting that this was not the case (Figure 3—figure supplement 4). These data suggest that the sustained inward currents produced by TRPC3 channels must be compensated by other Na+-permeable ion channels in TRPC3 KO mice.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig3-v2.jpg)
+
+**Figure 3.:** (A) Dopamine neurons were identified from SNc slices by post hoc staining (top) for TH (red) and neurobiotin (green) in TRPC3 knockout (KO) and wild-type (WT) mice. The lower image is a 3D reconstructed dopamine neuron that was previously recorded with a patch pipette (bottom). (B) Application of pyr10 (50 μM) or SKF-96365 (20 μM) inhibited the pacemaking of dopamine neurons in midbrain slices from WT (left) mice, but not from TRPC3 KO mice (right). Traces showing the effect of each blocker were obtained from the same neuron. (C) Summary plots for the effects of pyr10 or SKF-96365 on the spontaneous firing frequency from WT (pyr10, n = 13 from 11 mice, ***p<0.001; SKF-96365, n = 6 from 6 mice, **p<0.01) and TRPC3 KO (pyr10, n = 9 from 6 mice, p>0.05; SKF-96365, n = 7 from 4 mice, p>0.05) mice (black, control; red, after drug application). (D) Different effects of pyr10 (10 μM) on the membrane potentials in the presence of TTX (0.5 μM) and ZD-7288 (20 μM), measured in acutely dissociated dopamine neurons from WT (left) and TRPC3 KO (right) mice. Representative voltage traces were obtained from the same neuron. (E) Summary of membrane potential changes by pyr10 in the presence of TTX and ZD-7288 in WT (pyr10, n = 5 from 5 mice, ***p<0.001; NMDG, ***p<0.001) and TRPC3 KO (pyr10, n = 6 from 5 mice, p=0.57; NMDG, ***p<0.001). (F) Box plots for membrane potential changes by pyr10 (∆Vpyr10) in WT and TRPC3 KO mice. Data from (E) (**p<0.01). All statistical data were analyzed by one-way ANOVA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative traces of spontaneous firings from TH-eGFP (ICR, left black), TRPC3 WT (129 sv/ev, center, blue), and TRPC3 KO (129 sv/ev, right, red) mice. (B) Aligning of the normalized spontaneous action potentials traces from TH-eGFP (black), TRPC3 WT (blue), and TRPC3 KO (red). (C) Box plots showing the spontaneous firing frequency of SNc dopamine neurons from TH-eGFP (black, n = 17 from 10 mice), TRPC3 WT (blue, n = 23 from 15 mice), and TRPC3 KO mice (red, n = 23 from 15 mice). (D–F) Comparisons of the peaks of APs (D, Vpeak), the lowest values of afterhyperpolarization (E, VAHP), and spike thresholds (F) from TH-eGFP (black, n = 16 from 10 mice), TRPC3 WT (blue, n = 10 from 8 mice), and TRPC3 KO mice (red, n = 10 from 8 mice). (G) Input resistances of SNc dopamine neurons from TH-eGFP (black, n = 12 from 10 mice), TRPC3 WT (blue, n = 12 from 10 mice), and TRPC3 KO mice (red, n = 13 from 10 mice). (H) Cell capacitances of SNc dopamine neurons from TH-eGFP (black, n = 8 from 8 mice), TRPC3 WT (blue, n = 35 from 12 mice), and TRPC3 KO mice (red, n = 28 from 11 mice). (I) Summary table showing mean values of box plots shown in C-H. p>0.05 for all data. All statistical data were analyzed using one-way ANOVA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative traces of spontaneous firings of acutely dissociated DA neurons recorded by the cell-attached patch clamp recording from TRPC3 KO and WT mice. Pyr10 (10 μM) or SKF-96365 (10 μM) completely inhibited the spontaneous firing of DA neurons in WT mice (left), but did not inhibit the spontaneous firing of DA neurons in TRPC3 KO (KO, right) mice. Traces showing the effect of each blocker were obtained from the same neuron in WT or KO mice. (B) Box plots summarizing the effects of pyr10 and SKF-96365 on spontaneous firing of DA neurons in WT mice (pyr10, n = 10 from 5 mice, ***p<0.001; SKF-96365, n = 8 from 4 mice, ***p<0.001) and KO mice (pyr10, n = 8 from 6 mice, p>0.4; SKF-96365, n = 6 from 6 mice, p>0.5). Black boxes from control, red boxes from data after drug applications. All statistical data were analyzed using one-way ANOVA.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative traces of spontaneous firings of SNc DA neurons in the midbrain slices from TRPC3 KO and WT mice. ZD-7288 (100 μM) and isradipine (5 μM) had no effect on the spontaneous firing rate of SNc DA neurons from TRPC3 KO and WT mice. 2-APB (50 μM) completely stopped spontaneous firing in WT mice, but failed to stop it in TRPC3 KO mice. Traces showing the effect of each blocker were obtained from the same neuron in WT or KO mice. (B) Summaries of the spontaneous firing rates of DA neurons. 2-APB (WT, n = 9 from 6 mice ***P < 0.001; KO, n = 6 from 4 mice *P < 0.05), ZD-7288 (WT, n = 5 from 4 mice, P > 0.2; KO, n = 6 from 4 mice, P > 0.5), and isradipine (WT, n = 6 from 5 mice, P > 0.7; KO, n = 6 from 4 mice, P > 0.6; black, control; red, after drug application). All statistical data were analyzed using one-way ANOVA.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) A representative transmitted image showing an acutely dissociated SNc DA neuron with a patch pipette. Overlapped by a fluorescence image of TH-GFP (green). (B) Representative traces of voltage and [Ca2+]c changes from acutely isolated SNc dopamine neurons. In the presence of TTX (0.5 μM), substitution of extracellular Na+ with NMDG hyperpolarized the membrane potential and decreased [Ca2+]c. After Na+ replacement with NMDG, application of apamin (0.1 μM) had no effect on the membrane potential. (C) Summary of membrane potential changes by Na+ replacement with NMDG and apamin in the presence of TTX (n = 7 from 3 mice). ***p<0.001 for Control (black) versus NMDG (green) or NMDG+ apamin (red). (D) Summaries of changes of [Ca2+]c levels by NMDG (black) or NMDG+ apamin (red) in the presence of TTX (n = 7 from 3 mice, p=0.93). All statistical data were analyzed using one-way ANOVA. NS indicates no statistically significant difference.
+
 In TRPC3 KO mice, the input resistance of DA neurons did not differ from that in WT mice (Figure 3—figure supplement 1I) and SKF-96365 did not affect the spontaneous firing rate in the midbrain slices (Figure 3C) and in freshly dissociated DA neurons (Figure 3—figure supplement 2). In TRPC3 KO mice, another nonspecific but more complex TRPC channel blocker, 2-APB, also failed to stop pacemaking (Figure 3—figure supplement 3A,B), but unlike SKF-96365, it slowed down the spontaneous firing rate, possibly, by complex actions to other ion channels (Nilius and Flockerzi, 2014; Lievremont et al., 2005). In addition, ZD-7288 and isradipine had no significant effect on the spontaneous firing rate of DA neurons in TRPC3 KO mice (Figure 3—figure supplement 3A,B), suggesting that L-type Ca2+ and HCN channels do not compensate for pacemaking in these mice. Therefore, it is highly likely that the leak-like inward current induced by TRPC3 channels appears to be completely compensated by SKF-96365-resistant and Na+-permeable ion channels in TRPC3 KO mice.
 
-## NALCN is another non-selective cation channel essential for the slow depolarization of SNc DA neurons
+### NALCN is another non-selective cation channel essential for the slow depolarization of SNc DA neurons
 
 Recently, the Na+ leak channel NALCN has been reported to contribute to resting Na+ permeability and basal excitability in neurons (Lu et al., 2007; Ren, 2011). However, the neonatal lethality of NALCN KO mice and lack of specific blockers (Lu et al., 2007; Lu et al., 2009; Shi et al., 2016; Lutas et al., 2016; Yeh et al., 2017) have hampered investigation of the potential role of NALCN in the pacemaking of DA neurons. Recently, we have found that N-benzhydryl quinuclidine (NBQN) compounds, including L-703,606, are a potent blocker for NALCN channels without affecting TRPC channels (Hahn et al., 2020). Therefore, we applied L-703,606 to SNc DA neurons in midbrain slices and observed the complete abolition of pacemaking (Figure 4A). Under this condition, step-by-step linear current injections by whole-cell patch pipette to the neuron restored regular pacemaking activity (Figure 4B,D), which is similar to in TRPC3 channels (Figure 2). When the firing rate was resuscitated to the control level, the voltage traces between the revived firings and those before L-703,606 treatment were completely aligned to each other (Figure 4C, Figure 4—figure supplement 2), indicating that the pacemaking can be completely revived by a leak-like current. The abolition of spontaneous firing by L-707,606 was also confirmed by cell-attached patch-clamp recording in freshly dissociated single SNc DA neurons (Figure 4—figure supplement 1). Next, we examined how much L-703,606 affects the subthreshold membrane potential of DA neurons in TRPC3 KO and WT mice. After pretreatment with TTX and ZD-7288, the application of L-703,606 hyperpolarized the membrane potential to the same extent as TRPC3 blockers in the acutely dissociated DA neurons of WT mice but resulted in greater hyperpolarization of the membrane potential in TRPC3 KO mice (Figure 4E–G). The replacement of external Na+ with equimolar NMDG maximally hyperpolarized the membrane potentials in SNc DA neurons of both mice to the same extent (Figure 4E,F). All these data indicate that NALCN could be another nonselective cation channel essential for the pacemaking of SNc DA neurons. In TRPC3 KO mice, NALCN channels appear to compensate the TRPC3-mediated sustained depolarizing current essential for pacemaking in SNc DA neurons.
 
-## Enhancement of NALCN currents and mRNA and protein expression of SNc DA neurons in TRPC3 KO mice
+![Figure 4.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig4-v2.jpg)
+
+**Figure 4.:** (A) A 3D reconstruction image of an SNc dopamine neuron in a midbrain slice with a whole-cell patch pipette. Application of L-703,606 (10 μM) inhibited spontaneous firing. Representative voltage traces were obtained from the same neuron. (B) Spontaneous firing in the presence of L-703,606 was gradually rescued by somatic linear current injection (n = 6 from 4 mice). (C) Alignment of AP waveforms (normalized with time) between control (black) and regenerated (red, +30 pA). No significant changes in the shapes between control and revived APs. (D) Box plots for pacemaking frequencies before and after L-703,606 treatment and during somatic current injections in the presence of L-703,606 in SNc dopamine neurons (n = 6 from 4 mice). ***p<0.001 for control versus L-703,606; p>0.1 for control versus +10, +20, and +30 pA. (E) Representative traces for membrane potential changes in acutely dissociated dopamine neurons by L703,606 (5 μM) in the presence of TTX (0.5 μM) and ZD-7288 (20 μM) between wild-type (left, n = 6 from 4 mice) and TRPC3 KO mice (right, n = 6 from 4 mice). (F) Summary of membrane potential changes by L-703,606 in the presence of TTX and ZD-7288 in WT and KO. **p>0.01 for TTX and ZD-7288 versus L-703,606 from WT; ***p<0.001 for L-703,606 versus NMDG from WT; ***p<0.001 for TTX and ZD-7288 versus L-706,606 from TRPC3 KO; ***p<0.001 for L-703,606 versus NMDG from TRPC3 KO. (G) Summary plots for voltage differences (∆VL-703,606) changed by L-703,606 between WT and KO mice (**p<0.01). All statistical data were analyzed by one-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A representative transmitted image showing acutely dissociated SNc DA neurons attached with a patch pipette. Overlapped by a fluorescence image of TH-GFP (green). (B) Representative traces of spontaneous firing recorded by the cell-attached voltage-clamp recordings. Application of L-703,606 (5 μM) inhibited spontaneous firing of acutely dissociated SNc dopamine neurons, reversibly and completely (top). Extended traces from (a) and (b) from the top trace (bottom). (C) Summaries of the spontaneous firing inhibitions by L-703,606 in acutely dissociated dopamine neurons (n = 14 from 6 mice, ***p<0.001). All statistical data were analyzed using one-way ANOVA.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative voltage traces during the inter-spike interval reveals three phases of slow depolarization. Voltage trace (gray) of control firing was overlapped with that of the firing regenerated by current injection ( +30 pA, black) after blockade of NALCN channels. Green dotted line indicates the slope of the slow depolarization. (B) Histogram showing the durations of three phases between the control (gray) and regenerated firings (black) (n = 5 from 3 mice). p>0.5 for all data between the control and regenerated firings. (C) Box plots showing slopes of the slow depolarization in phase II between the control and regenerated firings (n = 5 from 3 mice, p=0.77). (D) Box plots showing the lowest values of the afterhyperpolarization potential (AHP) between in control and regenerated firings (n = 5 from 3 mice, p=0.67). All statistical data were analyzed using one-way ANOVA. NS indicates no statistically significant difference.
+
+### Enhancement of NALCN currents and mRNA and protein expression of SNc DA neurons in TRPC3 KO mice
 
 NALCN is a G-protein-coupled receptor channel that can be activated by substance P and neurotensin (NT; Lu et al., 2009; Hahn et al., 2020). Therefore, to examine more clearly whether NALCN currents are increased in TRPC3 KO mice, we measured NT-evoked NALCN currents in freshly dissociated SNc DA neurons directly. Because of the rapid desensitization of NT-evoked NALCN currents in normal DA neurons (Hahn et al., 2020), we used a micropressure puff system (10 μM, 1 s). The NT-evoked NALCN currents in dissociated DA neurons from TRPC KO mice were significantly larger than those in WT mice (Figure 5A,B), demonstrating that the NALCN currents are increased in TRPC3 KO mice.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig5-v2.jpg)
 
-**Figure 5.:** (A) An acutely dissociated dopamine neuron from the SNc was whole-cell patched and neurotensin (NT, 10 μM) was applied to dendritic compartments by a micro-puff system (left, blue, duration = 1). The NT-evoked NALCN currents were larger in the TRPC3 KO mice (red, n = 9 from 4 mice) than in the wild-type mice (black, n = 7 from 5 mice). Holding potential = –60 mV. (B) Summary of the current amplitudes evoked by NT in WT and TRPC3 KO (KO). p=0.0019 for WT versus TRPC3 KO. (C) Bar graphs showing the relative mRNA levels of NALCN and TRPC channels in SNc tissues from WT and TRPC3 KO mice (n = 5 mice). *p<0.05 for wild type versus TRPC3 KO from NALCN. (D) Relative NALCN mRNA levels of single SNc dopamine neurons between WT (n = 36 from 4 mice) and TRPC3 KO mice (n = 37 from 4 mice, *p<0.05). (E) Immunoblotting of TH (top) and NALCN (bottom) showing expression levels of NALCN protein in SNc tissues of wild-type, TRPC3 hetero (+/−) and KO (−/−) mice. (F) Comparisons of expression levels of NALCN protein in SNc tissues of wild-type, TRPC3 hetero and KO mice (n = 3, *p<0.05). All statistical data were analyzed by one-way ANOVA.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) An acutely dissociated dopamine neuron from the SNc was whole-cell patched and neurotensin (NT, 10 μM) was applied to dendritic compartments by a micro-puff system (left, blue, duration = 1). The NT-evoked NALCN currents were larger in the TRPC3 KO mice (red, n = 9 from 4 mice) than in the wild-type mice (black, n = 7 from 5 mice). Holding potential = –60 mV. (B) Summary of the current amplitudes evoked by NT in WT and TRPC3 KO (KO). p=0.0019 for WT versus TRPC3 KO. (C) Bar graphs showing the relative mRNA levels of NALCN and TRPC channels in SNc tissues from WT and TRPC3 KO mice (n = 5 mice). *p<0.05 for wild type versus TRPC3 KO from NALCN. (D) Relative NALCN mRNA levels of single SNc dopamine neurons between WT (n = 36 from 4 mice) and TRPC3 KO mice (n = 37 from 4 mice, *p<0.05). (E) Immunoblotting of TH (top) and NALCN (bottom) showing expression levels of NALCN protein in SNc tissues of wild-type, TRPC3 hetero (+/−) and KO (−/−) mice. (F) Comparisons of expression levels of NALCN protein in SNc tissues of wild-type, TRPC3 hetero and KO mice (n = 3, *p<0.05). All statistical data were analyzed by one-way ANOVA.
 
 Next, we examined the expression of NALCN mRNA levels in both SNc tissues and dissociated single DA neurons from TRPC3 KO and WT mice using quantitative RT-PCR (qRT-PCR) (Figure 5C,D). In both cases, the expression of NALCN mRNAs in TRPC3 KO mice was significantly higher than in WT mice. However, mRNAs of the other members of TRPC channels in TRPC3 KO mice were not changed (Figure 5C). This is in line with our previous conclusion that NALCN channels compensate for the leak currents in TRPC3 KO mice rather than other members of TRPC. Furthermore, using western blot analysis, we confirmed that NALCN proteins were more significantly increased in heterozygous and homozygous TRPC3 KO mice than in WT littermates (Figure 5E,F).
 
-## Equal contribution of TRPC3 and NALCN to subthreshold depolarization of membrane potentials in SNc DA neurons
+### Equal contribution of TRPC3 and NALCN to subthreshold depolarization of membrane potentials in SNc DA neurons
 
 Finally, we examined the relative contributions of the TRPC3 and NALCN channels to the subthreshold depolarization of membrane potentials in SNc DA neurons. Because DA neurons highly express hyperpolarization-activated HCN channels (Branch et al., 2014) and ZD-7288 had little effect on the peak of afterhyperpolarization (Figure 1—figure supplement 1F), we questioned whether HCN channels affect pyr10- or L-703,606-induced hyperpolarization of membrane potentials in SNc DA neurons. After silencing SNc DA neurons with TTX treatment, the application of pyr10 or L-703,606 hyperpolarized the membrane potential to the same extent, but the extent of hyperpolarization was not affected by ZD-7288 in both cases (Figure 6A,B). Ironically, when both pyr10 and L-703,606 were co-applied to SNc DA neurons without ZD-7288, the hyperpolarization was similar to those induced by a single treatment with each blocker (Figure 6A,B). However, in the presence of ZD-7288, the co-application of pyr10 and L-703,606 further hyperpolarized the membrane potential (Figure 6), suggesting that the blockade of these two channels together causes enough hyperpolarization to activate HCN channels in SNc DA neurons. Therefore, HCN channels appear to activate in response to sufficiently significant hyperpolarization of the membrane potential in SNc DA neurons. These results are consistent with previous data showing that HCN channels contribute very little to normal pacemaking processes (Figure 1—figure supplement 2E,G). Analysis of the degrees of hyperpolarization induced by pyr10 and/or L-703,606 in the presence of ZD-7288 (Figure 6D) suggests that the TRPC3 and NALCN channels contribute equally to more than two-thirds of the leak conductance responsible for slow depolarization in SNc DA neurons.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70920/elife-70920-fig6-v2.jpg)
 
-**Figure 6.:** (A) Steady-state membrane potentials after treatment of acutely dissociated SNc DA neurons with TTX (0.5 μM) were measured by whole-cell patch-clamp recording. Relative changes of the membrane potentials in the silenced DA neurons by application of pyr10 (10 μM), L-703,606 (5 μM), and both blockers together were compared with or without ZD-7288. The maximally hyperpolarized membrane potentials were measured by the replacement of extracellular Na+ with NMDG. (B) Summaries of the membrane potential changes by pyr10, L-703,606, and both. TTX alone (black, pyr10, n = 5 from 5 mice; L-703,606, n = 6 from 5 mice; pyr10 and L-703,606, n = 5 from 3 mice). TTX and ZD-7288 (red, pyr10, n = 5 from 6 mice; L-703,606, n = 6 from 4 mice; pyr10 and L-703,606, n = 6 from 3 mice). ***p<0.001 for TTX versus TTX and ZD-7288 from pyr10 and L-703,606; **p<0.01 for pyr10 and L-703,606 from TTX and ZD-7288 versus all others. (C) Box plots for the hyperpolarization of the membrane potential induced by ZD-7288 after blocking both TRPC3 and NALCN channels. Pyr10 and L-703,606 (black, n = 5 from 3 mice), ZD-7288 (red, TTX and ZD-7288, n = 6 from 3 mice, **p<0.05). (D) Relative contribution of TRPC3 and NALCN to depolarization of the membrane potentials in the presence of TTX and ZD-7288. Relative contributions were calculated using the ratios of the degrees of hyperpolarization after blocker treatment and NMDG replacement (∆Vblocker/∆VNMDG) from data A. p>0.8 for pyr10 versus L-703,606; ***p<0.001 for pyr10 versus pyr10 and L-703,606; ***p<0.001 for L-703,606 versus pyr10 and L-703,606. Pie chart (right) showing the relative contribution of TRPC3 (cyan) and NALCN (blue) to subthreshold depolarization of the membrane potential. All statistical data were analyzed using one-way ANOVA.Figure 6—source data 1.Figure 6.
+**Figure 6.:** (A) Steady-state membrane potentials after treatment of acutely dissociated SNc DA neurons with TTX (0.5 μM) were measured by whole-cell patch-clamp recording. Relative changes of the membrane potentials in the silenced DA neurons by application of pyr10 (10 μM), L-703,606 (5 μM), and both blockers together were compared with or without ZD-7288. The maximally hyperpolarized membrane potentials were measured by the replacement of extracellular Na+ with NMDG. (B) Summaries of the membrane potential changes by pyr10, L-703,606, and both. TTX alone (black, pyr10, n = 5 from 5 mice; L-703,606, n = 6 from 5 mice; pyr10 and L-703,606, n = 5 from 3 mice). TTX and ZD-7288 (red, pyr10, n = 5 from 6 mice; L-703,606, n = 6 from 4 mice; pyr10 and L-703,606, n = 6 from 3 mice). ***p<0.001 for TTX versus TTX and ZD-7288 from pyr10 and L-703,606; **p<0.01 for pyr10 and L-703,606 from TTX and ZD-7288 versus all others. (C) Box plots for the hyperpolarization of the membrane potential induced by ZD-7288 after blocking both TRPC3 and NALCN channels. Pyr10 and L-703,606 (black, n = 5 from 3 mice), ZD-7288 (red, TTX and ZD-7288, n = 6 from 3 mice, **p<0.05). (D) Relative contribution of TRPC3 and NALCN to depolarization of the membrane potentials in the presence of TTX and ZD-7288. Relative contributions were calculated using the ratios of the degrees of hyperpolarization after blocker treatment and NMDG replacement (∆Vblocker/∆VNMDG) from data A. p>0.8 for pyr10 versus L-703,606; ***p<0.001 for pyr10 versus pyr10 and L-703,606; ***p<0.001 for L-703,606 versus pyr10 and L-703,606. Pie chart (right) showing the relative contribution of TRPC3 (cyan) and NALCN (blue) to subthreshold depolarization of the membrane potential. All statistical data were analyzed using one-way ANOVA.
 
 ## Discussion
 
@@ -86,19 +138,526 @@ Although TRPC3 channel blockers completely stop autonomous firing in DA neurons,
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRPC3 (Rabbit polyclonal)</td>
+      <td>Alomone labs</td>
+      <td>Cat. #: ACC-016; RRID: AB_2040236</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tyrosine Hydroxylase (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat. #: MAB318; RRID: AB_2201528</td>
+      <td>IF (1:500)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NALCN (Rabbit polyclonal)</td>
+      <td>Alomone labs</td>
+      <td>Cat. #: ASC-022; RRID: AB_11120881</td>
+      <td>IF (1:1000)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A32723; RRID: AB_2633275</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 647 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A32733; RRID: AB_2633282</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit HRP (Goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #: 170–6515; RRID: AB_11125142</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyr3</td>
+      <td>Tocris</td>
+      <td>Cat. #: 2004</td>
+      <td>Kiyonaka et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyr10</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: 648,494</td>
+      <td>Schleifer et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-703,606 oxalate salt hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: L119</td>
+      <td>Hahn et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurotensin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: N6383</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluo-4, Pentapotassium Salt</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: F14200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oregon Green 488 BAPTA-1, Hexapotassium Salt</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: O6806</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 594 Hydrazide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: A10438</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin, Alexa Fluor 488 conjugate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat. #: S11223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neurobiotin</td>
+      <td>Vector laboratories</td>
+      <td>Cat. #: SP-1120</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SR 95531 hydrobromide</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,262</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CGP 55845 hydrochloride</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,248</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>Tocris</td>
+      <td>Cat. #: 0247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isradipine</td>
+      <td>Tocris</td>
+      <td>Cat. #: 2004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZD-7288</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-APB</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SKF 96365 hydrochloride</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1,147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Normal goat serum</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab7481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: T8787</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Methyl-D-glucamine</td>
+      <td>Glentham Life Sciences</td>
+      <td>Cat. #: GA0865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Transgenic mouse line Th-EGFP, DJ76Gsat/Mmnc</td>
+      <td>MMRRC</td>
+      <td>PMID:26435058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>TRPC3 Knockout</td>
+      <td>PMID:18701065</td>
+      <td></td>
+      <td>LutzBirnbaumer (Hartmann et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Crl:CD1(ICR)</td>
+      <td>Charles River Laboratories</td>
+      <td>Strain code: 022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFP genotyping forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCT ACG GCG TGC AGT GCT TCA GC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GFP genotyping reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGG CGA GCTGCA CGC TGC GTC CTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC3 genotyping forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAA TCC ACC TGC TTA CAA CCA TGT G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC3 genotyping reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGT GGA GGT AAC ACA CAG CTA AGC C-</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Th forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCT GTG GCC TTT GAG AA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Th reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCC AAG GAC AAG CTC AGG AA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC1 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCA AAC CCG TTT TGT TCG CA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC1 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AAA TGG AGT GGG CCA TGT GTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC2 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTC AAG GGT ATG TTG AAG CAG T</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC2 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGC CGT CTT CCT GTT TGG TTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC3 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGA CTT CCG TTG TGC TCA AAT ATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC3 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCT TCT GAA GCT TCT CCT TCT GC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC4 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCA AGA CAT TTC TAG CTT CCG C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC4 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAG TAA TTT CTT CTT CGC TCT GGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC5 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAC CAA TGT GAA GGC CCG AC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC5 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCA TGA TCG GCA ATG AGC TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC6 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCG CTC AGG TCA AGG TTC C</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC6 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTC ACC AAC TGA GCT GGA CC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC7 forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTC CAA GTT CAG GAC TCG CT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TRPC7 reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGG CCT TCA GCA CGT ATC TC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NALCN forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAA CAG CAA AAG GCA AGC GA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NALCN reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCT ATG GCG GCT CAG TCA G</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Th qRT-PCR forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGC TCT TCT CCT TGA GGG GT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Th qRT-PCR reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACC TCG AAG CGC ACA AAG TA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGA GAG TGT TTC CTC GTC CC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATG AAG GGG TCG TTG ATG GC-3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA</td>
+      <td>RRID:SCR_000034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fitmaster</td>
+      <td>HEKA</td>
+      <td>RRID:SCR_016233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LSM 510 meta</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Origin 7.0</td>
+      <td>Origin lab corporation</td>
+      <td>RRID:SCR_014212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro 4.01</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio 6 Real Time PCR System</td>
+      <td>Applied Biosystems</td>
+      <td>RRID:SCR_020239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Thermal Cycler Dice Real Time System III</td>
+      <td>TAKARA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Corel Graphics Suite 8 and 2019</td>
+      <td>Corel Corporation</td>
+      <td>RRID:SCR_013674</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HelixAmp Taq-plus with dye</td>
+      <td>Nanohelix</td>
+      <td></td>
+      <td>Cat. #: PM001L</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>QIAGEN</td>
+      <td></td>
+      <td>Cat. #: 74,004</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Green master mix</td>
+      <td>Applied Biosystems</td>
+      <td></td>
+      <td>Cat. #: A25742</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TB Green premix Ex Taq</td>
+      <td>TAKARA</td>
+      <td></td>
+      <td>Cat. #: RR420A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III for qRT-PCR</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>Cat. #: 11752050</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments on animals were carried out in accordance with the approved animal care and use guidelines of the Laboratory Animal Research Center in Sungkyunkwan University School of Medicine (Suwon, Korea). Tyrosine hydroxylase-GFP (TH-GFP; CrljOri: CD1 background, DJ76Gsat/Mmnc MMRRC line, stock #1000292, inbred with Crl:CD1 mice) and TRPC3 knockout (129 sv/ev background, Birnbaumer Laboratories, NIH) (Zhou et al., 2008) mice were used regardless of sex. Mice were group housed (two to five per cage, single sex) in a vivarium that was controlled for humidity, temperature (21°C–23 °C), and photoperiod (12 light/dark cycles). Mice had ad libitum access to food and water throughout the experiment. In all experiments, we used both male and female mice (postnatal days 18–26) weighing 9–12 g. Mice were identified by PCR of genomic DNA obtained by toe-biopsy. GFP or TRPC3 KO DNA were amplified using the following primers: GFP forward 5′-CCT ACG GCG TGC AGT GCT TCA GC-3′ and GFP reverse 5′ CGG CGA GCTGCA CGC TGC GTC CTC-3′ and TRPC3 KO forward: 5′-GAA TCC ACC TGC TTA CAA CCA TGT G-3′, and reverse: 5’-GGT GGA GGT AAC ACA CAG CTA AGC C-3′.
 
-## Slice preparation
+### Slice preparation
 
 Horizontal midbrain slices were acutely prepared from male and female mice postnatal 18–26 days old. Mice were anesthetized with CO2 gas and transcardially perfused with ice-cold high glucose artificial cerebrospinal fluid (aCSF in mM: 125 NaCl, 25 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 0.4 Sodium ascorbate, 2 CaCl2, 1 MgCl2, and 25 D-glucose, pH 7.3 oxygenated with 95/5 % O2/CO2). After perfusion, brains were quickly removed and horizontally sliced in 250 μm thickness by using a VT-1000s vibratome (Leica, Germany), with high-glucose aCSF. After preparation of slices, slices were hemisected and superfused with normal aCSF (aCSF in mM: 125 NaCl, 25 NaHCO3, 2.5 KCl, 1.25 NaH2PO4, 0.4 sodium ascorbate, 2 CaCl2, 1 MgCl2, and 10 D-glucose, pH 7.3 oxygenated with 95/5 % O2/CO2) at 30°C. Recordings were performed from 40 min to 5 hr after removed from the bath.
 
-## Acutely dissociated dopamine neuron preparation
+### Acutely dissociated dopamine neuron preparation
 
 To obtain dissociated dopamine neurons, whole brains were quickly removed from 18 to 26 days postnatal mice and immersed in ice-cold oxygenated (100 % O2 gas) high-glucose HEPES-buffered saline, which contains (in mM: 135 NaCl, 5 KCl, 10 HEPES, 1 CaCl2, 1 MgCl2, and 25 D-glucose, pH adjusted to 7.4 with NaOH). Horizontal midbrain slices of 300 μm thickness were obtained with a TPI vibratome 1000 tissue sectioning system (TPI, USA). SNc regions from the slices were dissected out with a scalpel blade and digested with oxygenated high glucose HEPES-buffered saline containing papain (5–8 U/ml, Worthington, USA) for 20–30 min at 37°C. Next, the slice segments were rinsed with enzyme-free HEPES-saline, and then tissues were gently agitated with varying sizes of fire-polished Pasteur pipettes. The agitated cells were gently attached to a poly-D-lysine (0.01%)-coated glass coverslip for 30 min at room temperature. Recordings were performed from 40 min to 3 hr after being attached.
 
-## Electrophysiological recording
+### Electrophysiological recording
 
 For brain slice recording, slice tissues were transferred to a submerged slice chamber and continuously perfused with warm (33°C) oxygenated (95/5% O2/CO2 gas) aCSF. To exclude synaptic inputs in slice recordings, glutamate and GABA receptor blockers (10 μM NBQX, Tocris, UK, 1044; 5 μM CPP, Tocris, 0247; 5 μM SR-95531, Tocris, 1262; 1 μM CGP-55845, Tocris, 1248) were included in the recording solutions.
 
@@ -112,26 +671,26 @@ External sodium removal experiments were performed by NMDG-based external soluti
 
 For the application of agonists by pressure microinjection ‘puff experiments’, we used a IM 300 microinjector (Narishige). The injection glass pipette filled with the HEPES-buffered saline containing 10 μM neurotensin (Sigma-Aldrich, N6383) was positioned near proximal dendrites about >20 μm of target neurons to prevent the mechanical effect. The single-pulse duration was 1 s, during which time the pressure was 200–300 kPa.
 
-## Two-photon microscopy imaging
+### Two-photon microscopy imaging
 
 For fluorescence imaging, dopaminergic neurons were loaded with Alexa Flour 594 (Alexa-594, 30 μM, Thermo Fisher, USA, A10438) and Oregon Green BAPTA-1 (OGB-1, 200 μM, Thermo Fisher, O6806) or Fluo-4 (200 μM, Thermo Fisher, F14200) via patch electrode. The two-photon excitation source was a Ti::sapphire laser system (Mai Tai, 690–1020 nm, Spectra-physics, USA). Optical signals were acquired using an 800 nm excitation beam that simultaneously excites Alexa-594 and OGB-1 (or Fluo-4) dyes. The laser-scanned images were acquired with an LSM510 Meta system (Zeiss). Ca2+ imaging was allowed 10 min after the whole-cell break-in for dye equilibration. Frame scan images were acquired at 10–20 ms per frame at 512 pixels dwell time. Dendritic Ca2+ changes were presented as a ratio (ΔG/ΔR = (G−Gmin)/(R−Rmin)) after background-subtraction, in which calcium indicator fluorescence (ΔG) was divided by Alexa-594 (ΔR).
 
-## Fixed tissue preparation and imaging
+### Fixed tissue preparation and imaging
 
 Brain slices were fixed with 4% paraformaldehyde (PFA) in ice-cold 1× phosphate-buffered saline (PBS, in mM: 137 NaCl, 2.7 KCl, 10 Na2HPO4, KH2PO4, pH adjusted to 7.4 with NaOH). Fixed slices were washed with PBS and incubated with 2% normal goat serum (NGS) and 0.1% Triton X-100 in PBS for 30 min at room temperature. After rinsing, tissue slices were incubated with primary antibody in 2% NGS in PBS overnight. The primary antibodies were mouse-anti-TH (1:500, Millipore, USA, MAB318, RRID: AB_2201528) and rabbit-anti-TRPC3 (1:500, Alomone lab, Israel, ACC-016, RRID: AB_2040236). After the primary antibody reaction, tissues were washed three times with NGS in PBS solutions at room temperature for 30 min. Next, the secondary antibody was treated to slices at room temperature for 2 hours. The secondary antibodies were anti-Alexa- rabbit-647 (1:500, Thermo Fisher, USA, A32733; RRID: AB_2633282) or anti-mouse-448 (1:500, Thermo Fisher, USA, A32723; RRID: AB_2633275) or streptavidin-594 (1:2000, Thermo Fisher, USA, S11227). After secondary antibody reaction, tissues were rinsed again with 2 % NGS solution. Finally, samples were acquired using Mai Tai two-photon laser using 760 nm of excitation beam on the Axioskop 2 microscope by 20× W plan-apochromat lens (Zeiss, Germany). The frame-scanned images were acquired on the LSM 510 Meta as Z-section at 0.5 μm × 50–100 sections, and each image was obtained by averaging four images acquired with a resolution of 1024 × 1024 pixels. Z-section images were reconstructed to 3D by using IMARIS 7.0 (Bitplane, USA).
 
-## Single-cell RT-PCR and qRT-PCR
+### Single-cell RT-PCR and qRT-PCR
 
 Th-eGFP-positive single dissociated neurons were aspirated into a microelectrode pipette with a sampling solution containing 10 mM dithiothreitol (DTT), 50 U/ml RNasin RNase inhibitor (Promega, USA, N2611) in diethylene pyrocarbonate-treated water. After collecting sample cells, RNA was extracted using RNEasy kits (Qiagen, Germany, 744004). For single-cell RT or qRT-PCR, RNA was purified by ethanol precipitation procedures (Liss, 2002). Purified RNA was heated to 50°C for 30 min. cDNA was synthesized from cellular mRNA through the addition of SuperScript III Kits (Thermo Fisher, 11752050). The reaction mixture was incubated sequentially at 25°C for 10 min, 50°C for 30 min, and then heated to 85°C for 5 min. After reverse transcription, cDNA samples were chilled at 4°C. For single-cell qPCR, cDNA was purified according to a published procedure (Liss, 2002). After purification, a single-cell cDNA sample was used as a template for conventional PCR amplification. Cycle conditions were as follows: 95°C for 15 s, 55°C for 30 s, 72°C 45 s. RT-PCR was performed using the following primers (forward followed by reverse): Th: 5′-GCT GTG GCC TTT GAG AA-3′ and 5′-GCC AAG GAC AAG CTC AGG AA-3′; trpc3: 5′-TGA CTT CCG TTG TGC TCA AAT ATG-3′ and 5′-CCT TCT GAA GCT TCT CCT TCT GC-3′. The qRT-PCR was conducted with cDNA and TB Green premix (Takara, Japan, RR420A) or SYBR Green master mix (Applied Biosystems, USA, A25742) and 50 cycles of 95°C for 15 s, 60°C for 20 s, 72°C for 15 s performed using a Takara Thermal Dice Real-time system III (Takara) or a QuantStudio 6 Flex Real-time PCR system (Applied Biosystems, USA). For qRT-PCR, the following primers were used (forward followed by reverse): NALCN: 5′-CAA CAG CAA AAG GCA AGC GA-3′ and 5′-CCT ATG GCG GCT CAG TCA G-3′; trpc1: 5′-GCA AAC CCG TTT TGT TCG CA-3′ and 5′-AAA TGG AGT GGG CCA TGT GTA-3′; trpc2: 5′-CTC AAG GGT ATG TTG AAG CAG T-3′ and 5′-AGC CGT CTT CCT GTT TGG TTC-3′; trpc4: 5′-GCA AGA CAT TTC TAG CTT CCG C-3′ and 5′-GAG TAA TTT CTT CTT CGC TCT GGC-3′; trpc5: 5′-TAC CAA TGT GAA GGC CCG AC-3′ and 5′-GCA TGA TCG GCA ATG AGC TG-3′; trpc6: 5′-GCG CTC AGG TCA AGG TTC C-3′ and 5′-GTC ACC AAC TGA GCT GGA CC-3′; trpc7: 5′-CTC CAA GTT CAG GAC TCG CT-3′ and 5′- GGG CCT TCA GCA CGT ATC TC-3′; TH: 5′-TGC TCT TCT CCT TGA GGG GT-3′ and 5′-ACC TCG AAG CGC ACA AAG TA-3′; GAPDH: 5′-GGA GAG TGT TTC CTC GTC CC-3′ and 5′-ATG AAG GGG TCG TTG ATG GC-3′. The analysis was performed according to the ΔCt and ΔΔCt method. Cycle threshold (Ct) values of test genes were subtracted by GAPDH or tyrosine hydroxylase reference genes (ΔCt sample = Ct target – Ct ref). To compare relative gene expression in tissue samples, each ΔCt values of samples normalized to the NALCN ΔCt values (ΔΔCt).
 
-## Western blotting
+### Western blotting
 
 For western blotting, SNc tissue slices were collected from the littermates of WT TRPC3 KO hetero (+/−) and homo (−/−) mice and lysed on ice for 30 min in protein lysis buffer (1 mM Na3VO4, 1 mM NaF, complete protease inhibitor cocktail (Roche, USA), 1% Triton X-100 in PBS). The protein samples were separated by SDS–PAGE and transferred to a hydrophobic polyvinylidene difluoride (PVDF) membrane. The membranes were blocked in 5% skim milk in Tween tris-buffered saline (TTBS) for 1 hr at room temperature and then incubated in anti-NALCN (1:1000, Alomone Labs, Israel, ASC-022; RRID: AB_11120881) and anti-TH (1:1000, Millipore, USA, MAB318; RRID: AB_2201528) for 18 hr at 4°C. After three washes, the membranes were incubated for 2 hr at room temperature with HRP-conjugated rabbit secondary antibody (Bio-Rad, USA, 170–6515; RRID: AB_11125142) for NALCN detection and HRP-conjugated mouse secondary antibody (Bio-Rad, 170–6516; RRID: AB_11125547) for pan Cadherin detection, and then washed. The blot was developed using enhanced chemiluminescence reagent (GE Healthcare, USA).
 
-## Pharmacological reagents
+### Pharmacological reagents
 
 All chemicals were purchased from Sigma (USA), except tetrodotoxin (Tocris, Cat. #: 1078), isradipine (Tocris, Cat. #: 2004), pyr3 (Tocris, Cat. #: 2004), ZD-7288 (Tocris, Cat. #: 1000), SKF 96365 (Tocris, Cat. #: 1147), 2-APB (Tocris, Cat. #: 1224), CPP (Tocris, Cat. #: 0247), NBQX (Tocris, Cat. #: 1044), SR 95531 (Tocris, Cat. #: 1262), and CGP-55845 (Tocris, Cat. #: 1248), pyr10 (Millipore, USA, Cat. #: 648494), Fluo-4, OGB-1, and Alexa-594 (Thermo Fisher, USA). Drug stock solutions were prepared in DMSO or deionized water, and stocks were diluted to final concentrations in external solutions via sonication for 10 min.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All graphical illustrations were performed using CorelDraw 8 and 2019 software (Corel Corporation, USA). For drug applications, 20 s in each condition (control or drug) was used for measuring the mean of firing frequency. All data collected were analyzed using Origin 7.0 software (Origin Lab Corporation, USA), and electrophysiological data were analyzed using Igor Pro 4.01 (Wavemetrics, USA). All numeric data are presented as mean ± standard error of the mean (S.E.M). Data were summarized as box plots, with the centerline showing the median, the top and bottom of the box indicating the 25–75% range, and whisker representing the 5–95% range. For comparison of data, one-way analysis of variance (ANOVA) was performed to assess the statistical significance of the difference between groups and p-values were significant at *p<0.05; **p<0.01; ***p<0.001.

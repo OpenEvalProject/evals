@@ -12,11 +12,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03zwxja46 Institute of Enzymology, Research Centre for Natural Sciences Budapest Hungary
+1. Institute of Enzymology, Research Centre for Natural Sciences Budapest Hungary ([ROR:03zwxja46](https://ror.org/03zwxja46))
 2. ProteoScientia Budapest Hungary
-3. https://ror.org/01g9ty582 School of Ph.D. Studies, Semmelweis University Budapest Hungary
+3. School of Ph.D. Studies, Semmelweis University Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
 4. Biospiral-2006 Szeged Hungary
-5. https://ror.org/016gb1631 Institute of Biochemistry, Biological Research Centre Szeged Hungary
+5. Institute of Biochemistry, Biological Research Centre Szeged Hungary ([ROR:016gb1631](https://ror.org/016gb1631))
 
 † Corresponding author
 
@@ -38,6 +38,14 @@ We also wanted to find out whether prime edited mammalian cells could be identif
 
 We aimed to develop a reporter system that possesses several key features. It should be a transient plasmid-based system that is not restricted to one or a few cell lines nor does it require extensive work, such as the generation of cell lines. It needs to be based on a gain-of-function fluorescent signal with minimal background so it can be detected in the timeframe of a transient system. The sequence requirements of efficient prime editing are not yet fully understood (Anzalone et al., 2019; Kim et al., 2021); thus, for the widespread application of a reporter system, it is crucial that the sequence of the target and the flanking nucleotides of the position to be edited can be freely interchanged. We have recently developed a base editor activity reporter (BEAR), which meets these criteria (Tálas et al., 2021), and it has the potential to be converted into a tool suitable for reporting on prime editing activity. BEAR is based on a split GFP protein separated by the last intron of the mouse Vim gene. The sequence of the functional splice donor site (or 5′ splice site) is altered in such way, that splicing and therefore the GFP fluorescence is disrupted, however, they can be restored by applying adenine or cytosine BEs (Figure 1—figure supplement 1A). Sequence alterations in the intronic sequence are well tolerated, which gave us the flexibility to investigate numerous target sequences. Using the information acquired during the development of the BEAR system (Tálas et al., 2021), we have designed a plasmid that contains an inactive splice site, which can be activated by the action of a PE harboring an appropriately designed pegRNA (Figure 1A). Cells containing plasmids with activated splice site sequences will then be able to efficiently express GFP, which can be quantified by flow cytometry. Therefore, we name assays that exploit this design as prime editor activity reporters (PEARs).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the PEAR. The mechanism of PEAR is based on the same concept as BEAR (see Figure 1—figure supplement 1A and B), and it contains the same inactive splice site, shown in (A). PE can revert the ‘G-AC-AAGT’ sequence to the canonical ‘G-GT-AAGT’ splice site. Prime editing occurs downstream of the cut site in the target; hence, this method enables us to position the spacer sequence within the intron, thus, the entire length of the spacer (shown as ‘N’-s) is freely adjustable in PEAR. The altered bases of the splice site are shown in red, the edited bases are shown in blue, and the PAM sequence is shown as dark green letters, the nCas9 is blue and the fused reverse transcriptase is orange. (B) Optimization of PBS, RT, and complementary DNA strand nicking on the PEAR-GFP plasmid. The heatmap shows the average percentage of GFP-positive cells of three replicates of transfections with the PEAR-GFP plasmid in combination with PE vectors which also contain the different pegRNAs and the sgRNAs for secondary nicking. The position of the second nick is given in relation to the first nick. Positive values indicate 3′, negative values indicate 5′ direction on the targeted DNA. When no second nick was introduced, it is indicated as ‘no nick’. (C, D) Flow cytometry measurements of HEK293T cells transfected with active (positive control) or with inactive PEAR plasmids either along with nCas9 for negative controls or with PE2 vectors (black, gray, or green columns, respectively). (C) In the PEAR system, GFP fluorescence can be restored from various inactive splice sequences not only by substitutions but also by insertions/deletions. Each inactive sequence (gray columns) was corrected (green columns) to the canonical splice site by PE2 with the optimal pegRNA (pegRNA 1) from (B). The edited sequences are shown next to the columns. Red indicates inserted, blue substituted, and purple deleted bases. (D) Prime editing can result in various active splice sequences, further demonstrating the sequence flexibility of the PEAR system. Based on Tálas et al., 2021, four additional active splice site variants were selected. To generate suitable inactive plasmids, splicing was disrupted by systematically replacing the 5′-GT splice donor site to 5′-AC and 5′-CT (negative controls with inactive sequences, gray columns). With the appropriate pegRNAs, PE2 was able to restore GFP fluorescence in every case (green columns). Letters highlighted in blue indicate the bases of the canonical splice donor site and the flanking sequences which influence splicing the most: 5′-G-GT-AAGT-3′; the altered bases of the inactive sequences are bold, and bases in the active sequences that are reverted by PE2 are underlined. (C, D) Columns represent means ± SD of three parallel transfections (white circles). For all measured values see Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of the BEAR. BEAR consists of a split GFP coding sequence separated by an intron, of which the 5′ splice donor site (G-GT-AAGT) is altered, resulting in an inactive splice site and a dysfunctional protein (gray). ABE converts the inactive splice site into a functional one. Here, the ‘G-AC-AAGT’ inactive splice site is illustrated, which can be modified by ABE to ‘G-GC-AAGT,’ which is a functional non-canonical splice site, and hence, restores GFP expression (green). In this assay, BEs act on the sense strand of the DNA. The altered bases of the splice site are shown in red, the edited base is shown in blue, and the variable bases in the sequence of the spacer are shown as ‘N’-s. The PAM sequence is dark green, nCas9 is blue, and the fused tadA deaminase is purple. (B) Detailed view of the 5′ splice site and the surrounding sequences of the BEAR-GFP plasmid. The 3′ end of the first exon of GFP is shown in green, the intron is shown as a dashed line. The spacer sequence and the target sequence are shown in gray, the PAM is green, and the inactive splice site is red. The Cas9 nick site is indicated by a black arrow. (C) Detailed view of the 5′ splice site and the surrounding sequences of the PEAR-GFP plasmid. The 3′ end of the first exon of GFP is shown in green, the intron is shown as a dashed line. The spacer sequence in the pegRNA and the target sequence in the DNA are shown in gray, the PAM is green, and the inactive splice site is red. The RT (purple) and the PBS (blue) sequences in the pegRNA and the targeted sequences are also colored. The Cas9 nick site is indicated by a black arrow. (D) A density plot of HEK293T cells when all live single cells (determined by FSC and SSC parameters) are either (1) untransfected (left plot), and thus show no fluorescence for mCherry or GFP, (2) co-transfected with a pegRNA-mCherry plasmid and the PEAR-GFP plasmid but with a nCas9, thus displaying mCherry but no GFP fluorescence, (3) or pegRNA-mCherry and PEAR-GFP plasmid is co-transfected with a prime editor expressing plasmid, causing the splice site to be edited, and thus displaying both mCherry and GFP fluorescence. (E) A HEK293T cell line containing an integrated EGFP expression cassette was co-transfected with the BEAR-mScarlet plasmid, a pegRNA and a second nicking sgRNA for BEAR-mScarlet, GFP targeting sgRNA(s) and either WT-Cas9, nCas9, or PE2. Cells were monitored for mScarlet and EGFP fluorescence (orange and green columns, respectively) 3 days after transfection. Columns represent means ± SD of three parallel transfections. For all measured values, see Figure 1—figure supplement 1—source data 1. PEAR, prime editor activity reporter.
+
 There are differences between the features of BEAR and PEAR. The editing windows of BEs exploited for the BEAR system are located PAM distal, 5′ of the nick (Figure 1—figure supplement 1B). PEs on the other hand can introduce mutations 3′ of the nick, a region that contains the PAM sequence (Figure 1A, Figure 1—figure supplement 1C). To ensure maximum flexibility for the PE target, we kept the target sequence in the intron by placing the PAM to the complementary strand. As a result, the target sequence can be freely adjusted in its entire length (Figure 1A). Thus, while BEAR could be used with a few million of different target sequences, PEAR offers unrestricted sequence variations for the entire SpCas9 target. On the contrary, PEAR is similar to BEAR in that it is permissive with respect to the interchangeability of the targeted nucleotides (here the splice site and the splice site flanking nucleotides; Tálas et al., 2021). No other fluorescence-based reporter systems have demonstrated such degree of flexibility before (Katti et al., 2020; Lin et al., 2020; Sürün et al., 2020).
 
 To identify the optimal PBS, RT, and complementary nick combination, HEK293T cells were transfected with the target plasmid (named PEAR-GFP) carrying the inactive splice site sequence to be edited, and several combinations of plasmids coding various pegRNAs, sgRNAs (targeting the PEAR-GFP plasmid), and PE2 protein. The number of GFP-positive cells was then measured by flow cytometry (Figure 1—figure supplement 1D). The heatmap in Figure 1B shows that the PEAR-GFP plasmid can be efficiently edited by many of these combinations of PBS, RT, and nicking position. The most efficient editing occurred, when a 10-nucleotide long PBS (PBS-10) and a 24-nucleotide long RT region (RT-24) were applied. Figure 1B also shows that in line with expectations, editing efficiency is generally higher when the complementary strand is nicked, than when it is not (Anzalone et al., 2019). The most effective complementary strand nicking site was position +17 in the case of most PBS and RT length combinations. In all conditions, PBS-10 gave greater values than PBS-13 and PBS-16. Comparing the RTs, the efficiency of the editing was in the order of RT-24>RT-33>RT-16 in most conditions (16 out of 18). These results are consistent with the concept that the effect of the length of PBS and RT on editing efficiency is primarily independent of one another (Kim et al., 2020). It is also in line with the current optimization practice, where first, the length of the PBS is optimized using a given RT length, and then the length of the RT is optimized using the PBS selected in the first step. Thus, these experiments support the hypothesis, that PE efficiency is governed by the same factors when using a PEAR plasmid, as demonstrated earlier on chromosomal targets (Anzalone et al., 2019; Kim et al., 2021).
@@ -52,11 +60,31 @@ In order to verify that the same factors influence prime editing on a plasmid as
 
 In case of the GFP expressing cells, we tested 36 different conditions for both the cell line and the BEAR-GFP plasmid: all possible PBS-RT-second nick site combinations. The heatmap in Figure 2A shows that PBS-13 and RT-22 or RT-26 in combination with the second nick site at position +103 results in maximum efficiency for the BEAR-GFP plasmid. In the absence of a second nick, the efficiency of editing was considerably lower. The most ideal conditions for prime editing were the same both in the plasmid and in the cell line (Figure 2A). The overall pattern of the two heatmaps is indisputably similar, exhibiting strong correlation (r=0.89, Figure 2—figure supplement 2A). In case of the cell line, a somewhat lower general editing efficiency is apparent compared to that with the plasmid. This difference is likely due to the much higher copy number of the plasmids present in the cell.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-v1.jpg)
+
+**Figure 2.:** PEs targeting BEAR sequences either located in plasmids (Plasmid) or incorporated into the genome (Cell line) were transfected into cells alongside different sgRNAs for different complementary strand nick locations. The heatmaps show the average percentage of GFP (A) and mScarlet (B) positive cells derived from three replicates. For all measured values see Figure 2—source data 1. BEAR, base editor activity reporter; PEAR, prime editor activity reporter.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Gating examples are shown from Figure 2 where cells harboring a genomically integrated copy of BEAR-mScarlet (A) or BEAR-GFP (B) (HEK-BEAR-mScarlet and HEK-BEAR-GFP cell lines, respectively) sequences were subjected to various prime editing conditions. On the upper sections density plots of HEK-BEAR-mScarlet (A) or HEK-BEAR-GFP (B) cells are shown when all live single cells (determined by FSC and SSC parameters) are either (1) untransfected (left plot), and thus show no fluorescence for either fluorescent proteins; (2) co-transfected with a pegRNA-BFP (A) or a pegRNA-mCherry (B) plasmid but with a nCas9, thus displaying BFP but no mScarlet fluorescence in case of HEK-BEAR-mScarlet cells (A) or displaying mCherry but no GFP fluorescence in the case of HEK-BEAR-GFP cells (B); (3) the pegRNA plasmid is co-transfected with a prime editor expressing plasmid, causing the splice site to be edited, and thus displaying both BFP and mScarlet fluorescence in the case of HEK-BEAR-mScarlet cells (A) or displaying mCherry and GFP fluorescence in the case of HEK-BEAR-GFP cells (B). BEAR, base editor activity reporter.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Scatter plot of GFP-positive cells measured either when the BEAR-GFP plasmid or the HEK-BEAR-GFP cell line (Figure 2A) was edited by PE3 with various pegRNA and secondary nicking sgRNA combinations (Pearson’s r=0.89). (B) The heatmaps show the average percentage of mScarlet positive cells derived from three replicates where PE vectors targeting inactive splice sequences located on plasmids (Plasmid) or incorporated into the genome (Cell line) were transfected into cells alongside different sgRNAs for different complementary strand nick locations. The position of the second nick is indicated on the left side of the heatmaps with positive numbers or when no second nick was introduced, it is indicated as ‘no nick’. (C–D) Scatter plot of mScarlet positive cells measured either when the BEAR-mScarlet plasmid or the HEK-BEAR-mScarlet cell line was edited by PE3 targeting mScarlet target 1 (C) data are from Figure 2B or target 2 (D) data are from (B) with various pegRNAs and secondary nicking sgRNA combinations (Pearson’s r=0.92 for (C) and r=0.93 for (D)). For all measured values, see Figure 2—figure supplement 2—source data 1. BEAR, base editor activity reporter.
+
 In case of the mScarlet expressing cells, we compared the efficiency of prime editing with both target 1 (Figure 2B) and target 2 (Figure 2—figure supplement 2B), by exploring 36 different combinations of PBS, RT, and second nick site for each target. Target 1 gave higher prime editing efficiencies, with the top working PBS being 10 nucleotides long in the case of both the BEAR-mScarlet plasmid and the cell line (Figure 2B). The two heatmaps exhibit a remarkably similar pattern, and there is a strong correlation of the editing efficiency in the cell line and the BEAR plasmid (r=0.93; Figure 2—figure supplement 2C). Similar outcomes can be seen with target 2 where the best PBS length is also 10 nucleotides long for both the BEAR-mScarlet plasmid and the cell line (Figure 2—figure supplement 2B). Comparing plasmid and genomic results also revealed a remarkably similar pattern (r=0.92; Figure 2—figure supplement 2D). With the same intron being in all three plasmids, we used the same three sgRNAs for secondary nicking in combination with all pegRNAs and plasmids or cell lines. For all three targets studied, regardless of whether in plasmids or in cell lines, the three secondary nick positions affected the effectiveness of prime editing in the same way. Collectively, these results strongly imply that the main features of prime editing and factors affecting its efficiency are reflected accurately within our system.
 
 Post-transfection selection of edited cells by fluorescence-activated cell sorting (FACS) or antibiotics have proven to be effective methods for the enrichment of genetically modified cells within a population, given that the SpCas9 coding plasmid co-expressed a protein that is fluorescent or bears antibiotic resistance (Katti et al., 2020; Standage-Beier et al., 2019; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; Tálas et al., 2021). Experiments have also shown that selecting for cells with a surrogate marker, that is subjected to the same type of genetic modification (knockout, HDR, or base editing) as the intended edit, results in higher enrichment of successfully edited cells, than when solely selecting for transfection markers (Katti et al., 2020; Coelho et al., 2018; Ramakrishna et al., 2014; Grav et al., 2015; St Martin et al., 2018; Tálas et al., 2021; Yan et al., 2020) suggesting that some individual cells allow for higher editing efficiency. This phenomenon could be due to the nuclease being able to exhibit higher activity, or the activity of DNA repair systems could be considerably more engaged in these cells. We proposed that the level of enrichment, that can be achieved using the transfection marker alone, can be exceeded by enriching cells in which a marker protein in a plasmid is simultaneously prime edited. The PEAR-GFP plasmid was used in these experiments as a surrogate marker with previously optimized RT and PBS conditions (Figure 1B).
 
 To test this principle, first, we transfected the BEAR-mScarlet cell line edited in Figure 2 with the PEAR-GFP plasmid along with two pegRNAs (also coding BFP as a transfection marker) one targeting the cell line and one targeting the plasmid to explore if prime editing on the plasmid is associated with genomic (mScarlet) editing. We measured the ratio of the mScarlet positive cells in (1) all measured cells, (2) within cells that either express BFP for transfection marker enrichment, or (3) express GFP (regardless of BFP expression) for PEAR enrichment. For this purpose, we chose two efficient PEAR-GFP targeting pegRNAs tested earlier (Figure 1B). Figure 3A shows that transfection marker enrichments significantly increased the ratio of edited and non-edited cells: gating for the BFP-expressing cells increased the percentage of the edited population from 18% to 24% with both pegRNAs tested. PEAR-enrichment resulted in a considerable increase compared to the transfection enrichments in case of both pegRNAs (57% and 76% mScarlet expressing cells, respectively). These results demonstrate that prime edited cells can be substantially enriched when using a PEAR plasmid as a surrogate marker.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig3-v1.jpg)
+
+**Figure 3.:** (A) Flow cytometry measurements of prime edited (i.e., mScarlet positive) cells in the HEK-BEAR-mScarlet cell line. The PEAR-GFP plasmid was co-transfected with PE protein-coding plasmid, two pegRNAs targeting either the plasmid or the genomic PEAR sequences and an sgRNA (for complementary strand nicking at position +112). To edit the PEAR-GFP plasmid, two efficient pegRNAs were selected from a previous experiment (Figure 1B) (pegRNA 1 and pegRNA 2 are those shown in Figure 1B with an RT of 24 and a PBS of 10 nucleotides, and an RT of 33 and a PBS of 10 nucleotides, respectively). The mScarlet positive cell count was gated for either all live single cells (no enrichment, black bars); for BFP-positive cells (transfection enrichment, gray bars); and for GFP-positive cells (PEAR enrichment, green bars). (B) Schematic workflow of PEAR enrichment experiments. Various cell lines were co-transfected with PEAR-GFP-2in1, a pegRNA, and a complementary nicking sgRNA targeting a genomic sequence (the latter two carrying a BFP expression cassette to monitor transfection efficiency), and the PE2-encoding plasmid. Cells expressing GFP, BFP, or both are represented as green, blue or half green/half blue circles, respectively. Cells not expressing these fluorescent proteins are shown in gray. Three days after transfection, cells were sorted into three fractions: single living cells, cells expressing BFP, and cells expressing GFP. After purification of genomic DNA and PCR amplification of the targeted amplicon, the percentage of editing was determined by NGS from each sorted sample. (C–E) The PEAR-GFP-2in1 plasmid and endogenous genomic targets were co-edited in HEK293T, K562, U2OS, and HUES9 cells. Cells were enriched and analyzed as described in (B). Results from cells without enrichment are shown in black, transfection enrichment in gray, PEAR enrichment in green, and untransfected cells in striped black and white. Precise prime editing (C) and unwanted indel formation (D) were quantified from the same samples. Specificity (prime editing%/indel%) was calculated separately for each sample (E). Columns represent means ± SD of three parallel transfections (white circles). When indel% was below the detection limit of NGS, specificity was calculated with 0.05% indel to avoid falsely high specificity values. Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown, differences to untransfected cells are not shown. *p<0.05, **p<0.01, ***p<0.001. (F, G) Off-target prime editing (F) and indel formation (G) were analyzed for known off-targets of target sites from (C) and (D) in HEK293T cells. Columns represent means ± SD of three parallel transfections (white circles). Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown. *p<0.05, **p<0.01, ***p<0.001. For all measured values, applied statistic tests and exact p values see Figure 3—source data 1. BEAR, base editor activity reporter; PEAR, prime editor activity reporter.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** PEAR enriched populations (sorted for GFP, day 0) of HEK293T cells from the experiments in Figure 3C were passaged for 3–4 weeks. GFP-positive cells were measured by flow cytometry to determine whether fluorescence was due to stable integration of the plasmid. Columns represent means ± SD of three parallel transfections. For all measured values, see Figure 3—figure supplement 1—source data 1. PEAR, prime editor activity reporter.
 
 To test the applicability of PEAR for enriching the prime edited population in endogenous targets generating single-nucleotide substitutions, we chose five genomic targets (EMX1, RNF2, FANCF, HEK3, and HEK4) which have been investigated previously (Anzalone et al., 2019). Here, BFP was used as the indicator of transfection efficiency, and we constructed a new plasmid (PEAR-GFP-2in1) as a marker for successful prime editing, which contains the pegRNA 1 (the best pegRNA in Figure 1B) expression cassette on the same plasmid. We co-edited the genomic targets and the PEAR-GFP-2in1 plasmid, and three days after transfection, cells were sorted into three fractions: (1) all single living cells, (2) BFP-positive cells, and (3) GFP-positive cells (Figure 3B). From the sorted cell populations, editing was quantified by NGS. Since HEK293T cells are very susceptible to prime editing due to the fact that their mismatch repair system is partially defective (Chen et al., 2021; Trojan et al., 2002), we also attempted enrichment in K562 and U2OS cells, and on a human embryonic stem cell line HUES9, that are all less susceptible to prime editing (Figure 3C–E).
 
@@ -72,7 +100,7 @@ It is also important, that the pegRNA used for co-editing the PEAR plasmid has n
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69504/elife-69504-fig4-v1.jpg)
 
-**Figure 4.:** (A) Potential off-target cleavage of WT-SpCas9 was assessed by GUIDE-seq on EGFP site 7. Read counts are shown for the on-target sequence only, as no off-targets were identified. On the bar charts, the on-target genome modification (indel+tag integration) and the tag integration frequency of the modified cells are shown that were analyzed by NGS. The other analyzed site (EGFP site 2) has previously been proven to have no detectable off-target sites by GUIDE-seq (Figure 5f, Kulcsár et al., 2020). (B) Flow cytometry measurements of HEK293T cells transfected with different 2in1 PEAR plasmids, and the PE2 encoding plasmid. Target sites EGFP site 7 and EGFP site 2 (pink and yellow columns, respectively) were candidates for the construction of a PEAR-GFP-2in1 plasmid with no genome-wide off-target activity. For the plasmid targeting pegRNA, three different PBS lengths were tested with each target in combination with the 24-nucleotide long RT-template identified as the most efficient in Figure 1B. The PEAR-GFP-2in1 plasmid used in previous experiments is shown in green. Columns represent means ± SD of three parallel transfections (white circles). (C–E) PEAR can enrich all types of editing (insertions, deletions, and substitutions) in HEK293T cells. Results from cells without enrichment are shown in black, transfection enrichment in gray, PEAR enrichment in green, and untransfected cells in striped black and white. Prime editing (C) and indel formation (D) were quantified from the same samples. (E) Specificity (prime editing%/indel%) was calculated separately for each sample. Columns represent means ± SD of three parallel transfections (white circles). When indel% was below the detection limit of NGS, specificity was calculated with 0.05% indel to avoid falsely high specificity values. Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown, differences to untransfected cells are not shown. *p<0.05, **p<0.01, ***p<0.001. For all measured values, applied statistic tests and exact p values see Figure 4—source data 1. PEAR, prime editor activity reporter.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Potential off-target cleavage of WT-SpCas9 was assessed by GUIDE-seq on EGFP site 7. Read counts are shown for the on-target sequence only, as no off-targets were identified. On the bar charts, the on-target genome modification (indel+tag integration) and the tag integration frequency of the modified cells are shown that were analyzed by NGS. The other analyzed site (EGFP site 2) has previously been proven to have no detectable off-target sites by GUIDE-seq (Figure 5f, Kulcsár et al., 2020). (B) Flow cytometry measurements of HEK293T cells transfected with different 2in1 PEAR plasmids, and the PE2 encoding plasmid. Target sites EGFP site 7 and EGFP site 2 (pink and yellow columns, respectively) were candidates for the construction of a PEAR-GFP-2in1 plasmid with no genome-wide off-target activity. For the plasmid targeting pegRNA, three different PBS lengths were tested with each target in combination with the 24-nucleotide long RT-template identified as the most efficient in Figure 1B. The PEAR-GFP-2in1 plasmid used in previous experiments is shown in green. Columns represent means ± SD of three parallel transfections (white circles). (C–E) PEAR can enrich all types of editing (insertions, deletions, and substitutions) in HEK293T cells. Results from cells without enrichment are shown in black, transfection enrichment in gray, PEAR enrichment in green, and untransfected cells in striped black and white. Prime editing (C) and indel formation (D) were quantified from the same samples. (E) Specificity (prime editing%/indel%) was calculated separately for each sample. Columns represent means ± SD of three parallel transfections (white circles). When indel% was below the detection limit of NGS, specificity was calculated with 0.05% indel to avoid falsely high specificity values. Differences between samples were tested using one-way ANOVA. Only statistically significant differences are shown, differences to untransfected cells are not shown. *p<0.05, **p<0.01, ***p<0.001. For all measured values, applied statistic tests and exact p values see Figure 4—source data 1. PEAR, prime editor activity reporter.
 
 For further experiments, we constructed PEAR plasmids using these targets that can be edited without off-targets. As the GFP targets are also present in the original PEAR-GFP plasmid, by introducing silent mutations we created six mismatches in the case of EGFP site 2 and altered the PAM sequence in the case of EGFP site 7 to make sure that the pegRNA will not target the GFP coding sequence on the plasmid. To find an effective pegRNA to edit the new PEAR plasmids, three PBS lengths were tested for each spacer sequence with the 24-nucleotide long RT sequence identified in Figure 1B as the most efficient (Figure 4B). The highest editing was found with EGFP site 2 with a 12-nucleotide long PBS sequence. This plasmid—named PEAR-GFP-2in1-2.0—was used in subsequent experiments to enrich additional nine target sites installing three insertions, deletions, and substitutions each (Figure 4C–E). These results proved that the PEAR-GFP-2in1-2.0 plasmid is also suitable for the enrichment of prime editing and confirmed the efficiency of PEAR-enrichment for various types of editing. The editing rates by PEAR-enrichments increased from 2.1- to 4.6-fold and up to 84% (Figure 4C). Figure 4D and E show that the increase in editing rates is not accompanied with a decrease in specificity in the case of any of the nine target sites.
 
@@ -86,11 +114,203 @@ Owning to the relatively low efficiency of prime editing with many potential tar
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HEK293.EGFP</td>
+      <td>Kulcsár et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>K562</td>
+      <td>ATCC</td>
+      <td>CCL-243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HEK-BEAR-GFP</td>
+      <td>Tálas et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HEK-BEAR-mScarlet</td>
+      <td>Tálas et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HUES9</td>
+      <td>Dr. Douglas Melton</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Turbofect</td>
+      <td>Thermo Fischer Scientific Inc</td>
+      <td>R0531</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qubit dsDNA HS Assay Kit</td>
+      <td>Thermo Fischer Scientific Inc</td>
+      <td>Q32854</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SF and SE Cell Line 4D-Nucleofector X Kit S</td>
+      <td>Lonza</td>
+      <td>V4XC-2032V4XC-1032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmids</td>
+      <td>This study</td>
+      <td></td>
+      <td>see Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagents</td>
+      <td>DNA oligonucleotides</td>
+      <td>This study</td>
+      <td></td>
+      <td>see Supplementary file 3</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Q5 High-Fidelity DNA Polymerase</td>
+      <td>New England Biolabs Inc</td>
+      <td>M0491L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HiFi Assembly Master Mix</td>
+      <td>New England Biolabs Inc</td>
+      <td>E2621X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KAPA Universal qPCR Master Mix</td>
+      <td>KAPA Biosystems</td>
+      <td>KK4602</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB5-alpha competent cells</td>
+      <td>New England Biolabs Inc</td>
+      <td>C2987I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-PE2</td>
+      <td>Addgene</td>
+      <td>(#132775)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAT9624-BEAR-cloning</td>
+      <td>Addgene</td>
+      <td>(#162986)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAT9651-BEAR-GFP</td>
+      <td>Addgene</td>
+      <td>(#162989)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAT9752-BEAR-mScarlet</td>
+      <td>Addgene</td>
+      <td>(#162991)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAT9658-sgRNA-mCherry</td>
+      <td>Addgene</td>
+      <td>(#162987)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAT9679-sgRNA-BFP</td>
+      <td>Addgene</td>
+      <td>(#162988)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Flag-wtSpCas9-H840A</td>
+      <td>Addgene</td>
+      <td>(#80453)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Flag-dSpCas9</td>
+      <td>Addgene</td>
+      <td>(#92113)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-Flag-wtSpCas9</td>
+      <td>Addgene</td>
+      <td>(#92353)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 Restriction enzymes, T4 ligase, Dulbecco’s modified Eagle’s medium (DMEM), RPMI 1640 medium, fetal bovine serum (FBS), Turbofect, Geltrex, StemPro Accutase, Qubit dsDNA HS Assay Kit, Platinum Taq DNA polymerase, and penicillin/streptomycin were purchased from Thermo Fischer Scientific Inc SF and SE Cell Line 4D-Nucleofector X Kit S were purchased from Lonza. Bioruptor 0.5 ml microtubes for DNA Shearing were from Diagenode. Agencourt AMPure XP beads were purchased from Beckman Coulter. T4 DNA ligase (for GUIDE-seq) and end-repair mix were acquired from Enzymatics. KAPA Universal qPCR Master Mix was purchased from KAPA Biosystems. DNA oligonucleotides and the GenElute HP Plasmid Miniprep and Midiprep kit used for plasmid purifications were acquired from Sigma-Aldrich. Q5 High-Fidelity DNA Polymerase, NEB5-alpha competent cells, and HiFi Assembly Master Mix were purchased from New England Biolabs Inc.
 
-## Plasmid construction
+### Plasmid construction
 
 The PEAR-GFP plasmid (pDAS12125_PEAR-GFP) was constructed by Esp3I digestion of the pAT9624-BEAR-cloning plasmid (Tálas et al., 2021), followed by one-pot cloning of the linker oligonucleotides (12125-L1 and -L2). The reaction included 2 units of Esp3I enzyme, 1.5 units of T4 DNA ligase, 1 mM DTT, 500 μM ATP, 50 ng vector, and 5–5 μM of target-coding oligonucleotides. Components were mixed in with 1× Tango buffer, and the mixture was incubated at 37°C for 30 min before being transformed into NEB5-alpha competent cells. The active PEAR-GFP plasmid (pDAS12124_PEAR-GFP-preedited) was constructed by the above protocol using linker oligonucleotides (12124-L1 and -L2).
 
@@ -108,7 +328,7 @@ Plasmids acquired from the non-profit plasmid distribution service Addgene were 
 
 The following plasmids developed in this study are available from Addgene: pDAS12125_PEAR-GFP (#177178), pDAS12124_PEAR-GFP-preedited (#177179), pDAS12069-U6-pegRNA-mCherry (#177180), pDAS12222-U6-pegRNA-BFP (#177181), pDAS12230_pegRNA-PEAR-GFP(10PBS-24RT)-mCherry (#177182), pDAS12137_sgRNA-PEAR-GFP-nick(+17)-mCherry (#177183), pDAS12342_PEAR-GFP_2in1 (#177184), pDAS12395_PEAR-GFP-2.0-preedited (#177185), and pDAS12489_PEAR-GFP-2in1-2.0 (#177186).
 
-## Cell culturing and transfection
+### Cell culturing and transfection
 
 HEK293T (CRL-3216), U2OS (HTB-96), and K562 (CCL-243) cell lines were from ATCC. The HUES9 human embryonic stem cell line was a gift from Dr. Douglas Melton. Cell lines were authenticated by their respective suppliers and were regularly tested negative for mycoplasma.
 
@@ -126,23 +346,23 @@ HUES9 cells were transfected at ~70% confluence. Two hours before electroporatio
 
 In all experiments, the pCMV-PE2 (Anzalone et al., 2019) plasmid was used as the PE expressing plasmid, pX330-Flag-wtSpCas9-H840A as the nSpCas9, pX330-Flag-dSpCas9 as the dSpCas expressing plasmid, and pX330-Flag-wtSpCas9 as the WT-SpCas9 expressing plasmid. When no second nick was introduced a mock sgRNA expressing plasmid (pAT9922-mCherry or pAT9762-BFP) was used. All experiments were transfected in triplicates unless stated otherwise.
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 Flow cytometry analysis was carried out using an Attune NxT Acoustic Focusing Cytometer (Applied Biosystems by Life Technologies). In all experiments, a minimum of 10,000 viable single cells were acquired by gating based on the side and forward light-scatter parameters. BFP, GFP, mCherry, and mScarlet signals were detected using the 405 (for BFP), 488 (for GFP), and 561 nm (for mCherry and mScarlet) diode laser for excitation, and the 440/50 (BFP), 530/30 (GFP), 620/15 (mCherry), and 585/16 nm (mScarlet) filter for emission. Attune Cytometric Software v.4.2 was used for data analysis. To compare prime editing in the cell line or on a plasmid Pearson’s correlation coefficient was used.
 
 Cell sorting was carried out on a FACSAria III cell sorter (BD Biosciences). The live single-cell fraction was acquired by gating based on side and forward light-scatter parameters. BFP or GFP signals were detected using the 405 or 488 nm diode laser for excitation and the 450/50 or 530/30 nm filter for emission, respectively. To sort control (no enrichment) cells, live single cells were sorted regardless of any fluorescent markers. To sort transfection marker enriched cells, BFP-positive cells were sorted regardless of GFP fluorescence. To sort PEAR enriched cells GFP-positive cells were sorted regardless of BFP fluorescence. A minimum of 50,000 cells were sorted in all experiments.
 
-## GUIDE-seq
+### GUIDE-seq
 
 2×105 HEK293.EGFP cells were resuspended in a homemade nucleofection solution (described by Vriend et al., 2014) and mixed with 666 ng of WT-SpCas9 expression plasmid (pX330-Flag-wtSpCas9), 334 ng of mCherry and sgRNA coding plasmid, and 30 pmol of the dsODN containing phosphorothioate bonds at both ends (according to the original GUIDE-seq protocol Tsai et al., 2015). Cells were nucleofected in a final volume of 20 µl in a 16-well nucleocuvette strip using the CM-130 program on a Lonza 4-D Nucleofector instrument. Transfection efficacy was analyzed by counting mCherry expressing cells after 96 hr post-transfection by flow cytometry, then genomic DNA was purified.
 
 dsODN tag integration and efficient indel formation were verified on the on-target site by Sanger sequencing followed by TIDE (Brinkman et al., 2014) analysis or by NGS. The entire dsODN sequence as well as a 15-bp long centre fragment of it (‘gttgtcatatgttaa’/‘ttaacatatgacaac’) was counted in the aligned reads to measure dsODN on-target tag integration for GUIDE-seq experiments. In the next step, genomic DNA was sheared with BioraptorPlus (Diagenode) to 550 bp in average. Sample libraries were assembled as described by Tsai et al., 2015 and sequenced on an Illumina MiniSeq Instrument by Delta Bio 2000 Ltd. Data were analyzed using open-source GUIDE-seq software (version 1.1; Tsai et al., 2016). Consolidated reads were mapped to the human reference genome GRCh37 supplemented with the integrated EGFP sequence. Upon identification of the genomic regions with integrated double-stranded oligodeoxynucleotide (dsODNs) in aligned data, off-target sites were retained if at most seven mismatches against the target were present and if absent in the background controls. Visualization of aligned off-target sites is provided as a color-coded sequence grid. GUIDE-seq sequencing data are deposited at NCBI Sequence Read Archive: PRJNA779199.
 
-## Genomic DNA purification and genomic PCR
+### Genomic DNA purification and genomic PCR
 
 Genomic DNA from FACS or other experiments was extracted according to the Puregene DNA Purification protocol (Gentra Systems Inc). The purified genomic DNA was subjected to PCR analysis conducted with Q5 polymerase and locus-specific primers (see Supplementary file 2). PCR products were gel purified via NucleoSpin Gel and PCR Clean-up Kit (Macherey-Nagel) and were subjected to Sanger or next-generation sequencing.
 
-## Next-generation sequencing, indel, and editing frequency analysis
+### Next-generation sequencing, indel, and editing frequency analysis
 
 In enrichment experiments, prime editing efficiency and indel frequency were analyzed by NGS (Figures 3 and 4). Amplicons for deep sequencing were generated using two rounds of PCR by Q5 high-fidelity polymerase to attach Illumina handles. The first step, PCR primers used to amplify target genomic sequences and indexing of samples are listed in Supplementary file 4. After the second step, PCR samples were quantified using Qubit dsDNA HS Assay Kit and PCR products were pooled for deep sequencing. Sequencing on an Illumina NextSeq instrument was performed by Delta Bio 2000 Ltd. Reads were aligned to the reference sequence using BBMap.
 
@@ -150,6 +370,6 @@ Indels were counted computationally among the aligned reads that matched at leas
 
 Frequency of substitution without indels generated by prime editing was determined as the percentage of (sequencing reads with the intended modification, without indels)/(number of total reads). By contrast, frequency of intended insertions or deletions generated by prime editing was determined as the percentage of (all sequencing reads with the intended modification)/(number of total reads). For these samples, the indel background was calculated from reads containing different types of indels, than the aimed edit. For NGS analysis, the following software were used: BBMap 38.08, samtools 1.8, BioPython 1.71, and PySam 0.13. To avoid falsely high specificity ratios on Figures 3E and 4E, during calculations indels lower than 0.05% were assumed to be 0.05% as this amount is considered to be the resolution limit of NGS. The deep sequencing data have been submitted to the NCBI Sequence Read Archive under accession number PRJNA779199.
 
-## Statistics
+### Statistics
 
 Unless stated otherwise, differences between samples were tested using one-way ANOVA with Tukey’s post hoc test for homoscedastic samples. Homogeneity of variances was tested by Brown-Forsythe test and normality of residuals was tested by D'Agostino-Pearson omnibus (K2) test. In cases where data did not pass normality but fulfilled the assumptions of Box-Cox transformation the transformed data were analyzed as above. If not, Kruskal-Wallis test with Dunn’s test was applied. Statistical tests were performed using GraphPad Prism 9.2. Test results are shown in Figure 3—source data 1 and in Figure 4—source data 1.

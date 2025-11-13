@@ -45,7 +45,7 @@
 
 ## Abstract
 
-10.7554/eLife.40765.001 In a group of 831 participants from the general population in the Human Connectome Project, smokers exhibited low overall functional connectivity, and more specifically of the lateral orbitofrontal cortex which is associated with non-reward mechanisms, the adjacent inferior frontal gyrus, and the precuneus. Participants who drank a high amount had overall increases in resting state functional connectivity, and specific increases in reward-related systems including the medial orbitofrontal cortex and the cingulate cortex. Increased impulsivity was found in smokers, associated with decreased functional connectivity of the non-reward-related lateral orbitofrontal cortex; and increased impulsivity was found in high amount drinkers, associated with increased functional connectivity of the reward-related medial orbitofrontal cortex. The main findings were cross-validated in an independent longitudinal dataset with 1176 participants, IMAGEN. Further, the functional connectivities in 14-year-old non-smokers (and also in female low-drinkers) were related to who would smoke or drink at age 19. An implication is that these differences in brain functional connectivities play a role in smoking and drinking, together with other factors.
+In a group of 831 participants from the general population in the Human Connectome Project, smokers exhibited low overall functional connectivity, and more specifically of the lateral orbitofrontal cortex which is associated with non-reward mechanisms, the adjacent inferior frontal gyrus, and the precuneus. Participants who drank a high amount had overall increases in resting state functional connectivity, and specific increases in reward-related systems including the medial orbitofrontal cortex and the cingulate cortex. Increased impulsivity was found in smokers, associated with decreased functional connectivity of the non-reward-related lateral orbitofrontal cortex; and increased impulsivity was found in high amount drinkers, associated with increased functional connectivity of the reward-related medial orbitofrontal cortex. The main findings were cross-validated in an independent longitudinal dataset with 1176 participants, IMAGEN. Further, the functional connectivities in 14-year-old non-smokers (and also in female low-drinkers) were related to who would smoke or drink at age 19. An implication is that these differences in brain functional connectivities play a role in smoking and drinking, together with other factors.
 
 ## Introduction
 
@@ -57,25 +57,376 @@ Most studies have used relatively small sample sizes and focused on brain region
 
 ## Results
 
-## Decreased functional connectivity (FC) patterns for smoking
+### Decreased functional connectivity (FC) patterns for smoking
 
 In the HCP participants, 273 links had significantly lower resting state functional connectivity in the smoking group compared to the non-smoking group (after FDR correction p<0.005). Table 1 shows the strengths of the top 30 significantly different FC links between smokers and non-smokers. Figure 1A shows in the lower triangle matrix that functional connectivity across all FC links of the smoking group relative to the non-smoking group was lower overall (Figure 1 and Figure 1—figure supplements 1, 2, 3 and 4); and the upper triangle matrix shows which FC links were significantly lower in the smoking group (p<0.005, FDR corrected). The links that are lower in the smoking group are shown in Figure 2B. Many (90) of the significantly different links involved the lateral orbitofrontal cortex (AAL2 areas OFClat and Frontal_Inf_Orb_2) and the adjacent inferior frontal gyrus (pars triangularis BA45 and pars opercularis BA44) (Table 1). These areas had lower functional connectivity with areas such as the hippocampus, temporal lobe, supramarginal gyrus, and insula (Figure 2). Figure 2B and Table 1 show that in addition to these lower functional connectivities of the lateral orbitofrontal cortex and related inferior temporal gyrus areas, there was also lower functional connectivity for the middle and superior frontal gyri, mid- and superior temporal gyri, precuneus, hippocampus, and basal ganglia (caudate, putamen, and pallidum). Table 1 shows, by contrast with the lateral orbitofrontal cortex, that there were only two significant medial orbitofrontal cortex areas (OFCmed) in this set of different functional connectivities in the smoking group.
 
+**Table 1**
+ Top 30 Functional Connectivity links with t and p values for Smoking and Drinking.A negative t value indicates reduced FC relative to the control group.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="8">Smoking</td>
+    </tr>
+    <tr>
+      <td colspan="2">Functional connectivity</td>
+      <td>p value</td>
+      <td>t value</td>
+      <td colspan="2">Functional connectivity</td>
+      <td>p value</td>
+      <td>t value</td>
+    </tr>
+    <tr>
+      <td>Frontal_Sup_2_L</td>
+      <td>OFCmed_R</td>
+      <td>9.63E-06</td>
+      <td>-4.464</td>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Rolandic_Oper_R</td>
+      <td>6.60E-05</td>
+      <td>-4.019</td>
+    </tr>
+    <tr>
+      <td>Frontal_Sup_2_L</td>
+      <td>Frontal_Mid_2_R</td>
+      <td>1.23E-05</td>
+      <td>-4.409</td>
+      <td>Parietal_Sup_R</td>
+      <td>Precuneus_L</td>
+      <td>6.74E-05</td>
+      <td>-4.014</td>
+    </tr>
+    <tr>
+      <td>Frontal_Sup_2_L</td>
+      <td>Frontal_Inf_Oper_R</td>
+      <td>1.57E-05</td>
+      <td>-4.354</td>
+      <td>Frontal_Sup_2_L</td>
+      <td>Parietal_Sup_R</td>
+      <td>7.11E-05</td>
+      <td>-4.001</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Temporal_Sup_R</td>
+      <td>1.85E-05</td>
+      <td>-4.317</td>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Occipital_Mid_R</td>
+      <td>7.60E-05</td>
+      <td>-3.984</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>SupraMarginal_R</td>
+      <td>2.02E-05</td>
+      <td>-4.297</td>
+      <td>Frontal_Sup_2_R</td>
+      <td>Frontal_Inf_Oper_R</td>
+      <td>7.75E-05</td>
+      <td>-3.980</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Oper_R</td>
+      <td>Frontal_Inf_Tri_L</td>
+      <td>2.26E-05</td>
+      <td>-4.271</td>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Insula_R</td>
+      <td>7.95E-05</td>
+      <td>-3.973</td>
+    </tr>
+    <tr>
+      <td>Caudate_L</td>
+      <td>Pallidum_L</td>
+      <td>2.42E-05</td>
+      <td>-4.255</td>
+      <td>Caudate_R</td>
+      <td>Putamen_R</td>
+      <td>7.99E-05</td>
+      <td>-3.972</td>
+    </tr>
+    <tr>
+      <td>Caudate_L</td>
+      <td>Putamen_L</td>
+      <td>2.87E-05</td>
+      <td>-4.216</td>
+      <td>Frontal_Mid_2_L</td>
+      <td>Frontal_Inf_Oper_R</td>
+      <td>8.07E-05</td>
+      <td>-3.970</td>
+    </tr>
+    <tr>
+      <td>Hippocampus_L</td>
+      <td>Temporal_Sup_L</td>
+      <td>3.37E-05</td>
+      <td>-4.179</td>
+      <td>Frontal_Inf_Orb_2_R</td>
+      <td>Parietal_Sup_L</td>
+      <td>8.59E-05</td>
+      <td>-3.955</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Parietal_Sup_R</td>
+      <td>3.78E-05</td>
+      <td>-4.152</td>
+      <td>Amygdala_R</td>
+      <td>Temporal_Sup_R</td>
+      <td>8.94E-05</td>
+      <td>-3.945</td>
+    </tr>
+    <tr>
+      <td>Frontal_Med_Orb_R</td>
+      <td>Parietal_Sup_R</td>
+      <td>3.86E-05</td>
+      <td>-4.147</td>
+      <td>Frontal_Inf_Oper_L</td>
+      <td>OFClat_R</td>
+      <td>9.31E-05</td>
+      <td>-3.935</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Temporal_Sup_L</td>
+      <td>4.59E-05</td>
+      <td>-4.106</td>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Rolandic_Oper_L</td>
+      <td>9.37E-05</td>
+      <td>-3.933</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Tri_L</td>
+      <td>SupraMarginal_R</td>
+      <td>4.90E-05</td>
+      <td>-4.090</td>
+      <td>Frontal_Inf_Tri_L</td>
+      <td>Precuneus_R</td>
+      <td>9.54E-05</td>
+      <td>-3.929</td>
+    </tr>
+    <tr>
+      <td>OFCmed_R</td>
+      <td>Parietal_Sup_R</td>
+      <td>5.11E-05</td>
+      <td>-4.080</td>
+      <td>Frontal_Inf_Oper_L</td>
+      <td>Cingulate_Ant_R</td>
+      <td>1.01E-04</td>
+      <td>-3.914</td>
+    </tr>
+    <tr>
+      <td>Frontal_Inf_Orb_2_L</td>
+      <td>Amygdala_R</td>
+      <td>5.41E-05</td>
+      <td>-4.067</td>
+      <td>Frontal_Sup_2_R</td>
+      <td>Frontal_Mid_2_R</td>
+      <td>1.02E-04</td>
+      <td>-3.912</td>
+    </tr>
+    <tr>
+      <td colspan="8">Drinking</td>
+    </tr>
+    <tr>
+      <td colspan="2">Functional connectivity</td>
+      <td>p value</td>
+      <td>t value</td>
+      <td colspan="2">Functional connectivity</td>
+      <td>p value</td>
+      <td>t value</td>
+    </tr>
+    <tr>
+      <td>Precentral_L</td>
+      <td>OFCmed_L</td>
+      <td>6.02E-04</td>
+      <td>3.445</td>
+      <td>Cingulate_Ant_L</td>
+      <td>Postcentral_L</td>
+      <td>3.42E-04</td>
+      <td>3.598</td>
+    </tr>
+    <tr>
+      <td>Precentral_R</td>
+      <td>OFCmed_L</td>
+      <td>2.41E-04</td>
+      <td>3.689</td>
+      <td>Cingulate_Mid_L</td>
+      <td>Postcentral_L</td>
+      <td>1.86E-04</td>
+      <td>3.756</td>
+    </tr>
+    <tr>
+      <td>Rolandic_Oper_R</td>
+      <td>OFCmed_L</td>
+      <td>1.28E-04</td>
+      <td>3.851</td>
+      <td>OFCmed_L</td>
+      <td>Postcentral_R</td>
+      <td>4.73E-04</td>
+      <td>3.511</td>
+    </tr>
+    <tr>
+      <td>Olfactory_L</td>
+      <td>OFCmed_L</td>
+      <td>4.35E-05</td>
+      <td>4.112</td>
+      <td>Cingulate_Ant_L</td>
+      <td>Postcentral_R</td>
+      <td>2.72E-04</td>
+      <td>3.658</td>
+    </tr>
+    <tr>
+      <td>Rectus_R</td>
+      <td>OFCmed_L</td>
+      <td>3.25E-04</td>
+      <td>3.611</td>
+      <td>Cingulate_Mid_L</td>
+      <td>Postcentral_R</td>
+      <td>1.94E-04</td>
+      <td>3.745</td>
+    </tr>
+    <tr>
+      <td>Frontal_Mid_2_R</td>
+      <td>OFCmed_R</td>
+      <td>6.10E-04</td>
+      <td>3.442</td>
+      <td>Cingulate_Ant_L</td>
+      <td>SupraMarginal_R</td>
+      <td>5.47E-04</td>
+      <td>3.472</td>
+    </tr>
+    <tr>
+      <td>OFCmed_L</td>
+      <td>OFCpost_L</td>
+      <td>4.25E-04</td>
+      <td>3.540</td>
+      <td>OFCmed_L</td>
+      <td>Heschl_L</td>
+      <td>1.36E-04</td>
+      <td>3.834</td>
+    </tr>
+    <tr>
+      <td>Precentral_L</td>
+      <td>Cingulate_Ant_L</td>
+      <td>4.52E-04</td>
+      <td>3.523</td>
+      <td>Cingulate_Ant_L</td>
+      <td>Heschl_L</td>
+      <td>1.55E-04</td>
+      <td>3.803</td>
+    </tr>
+    <tr>
+      <td>Precentral_R</td>
+      <td>Cingulate_Ant_L</td>
+      <td>2.50E-04</td>
+      <td>3.680</td>
+      <td>Cingulate_Mid_L</td>
+      <td>Heschl_L</td>
+      <td>5.02E-04</td>
+      <td>3.495</td>
+    </tr>
+    <tr>
+      <td>Rolandic_Oper_L</td>
+      <td>Cingulate_Ant_L</td>
+      <td>4.44E-04</td>
+      <td>3.528</td>
+      <td>Cingulate_Mid_R</td>
+      <td>Heschl_L</td>
+      <td>4.19E-04</td>
+      <td>3.544</td>
+    </tr>
+    <tr>
+      <td>Rolandic_Oper_R</td>
+      <td>Cingulate_Ant_L</td>
+      <td>1.45E-04</td>
+      <td>3.819</td>
+      <td>SupraMarginal_R</td>
+      <td>Heschl_L</td>
+      <td>2.68E-04</td>
+      <td>3.661</td>
+    </tr>
+    <tr>
+      <td>Insula_R</td>
+      <td>Cingulate_Ant_L</td>
+      <td>5.27E-04</td>
+      <td>3.481</td>
+      <td>SupraMarginal_R</td>
+      <td>Heschl_R</td>
+      <td>3.72E-04</td>
+      <td>3.575</td>
+    </tr>
+    <tr>
+      <td>Rolandic_Oper_R</td>
+      <td>Cingulate_Ant_R</td>
+      <td>5.22E-04</td>
+      <td>3.484</td>
+      <td>Cingulate_Ant_L</td>
+      <td>Temporal_Sup_L</td>
+      <td>1.49E-04</td>
+      <td>3.812</td>
+    </tr>
+    <tr>
+      <td>OFCmed_L</td>
+      <td>Cingulate_Ant_R</td>
+      <td>5.34E-04</td>
+      <td>3.478</td>
+      <td>Cingulate_Ant_R</td>
+      <td>Temporal_Sup_L</td>
+      <td>5.61E-04</td>
+      <td>3.464</td>
+    </tr>
+    <tr>
+      <td>Precentral_R</td>
+      <td>Cingulate_Mid_L</td>
+      <td>5.75E-04</td>
+      <td>3.458</td>
+      <td>Cingulate_Mid_R</td>
+      <td>Temporal_Sup_L</td>
+      <td>4.55E-04</td>
+      <td>3.521</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig1-v2.jpg)
+
+**Figure 1.:** (A) The matrix of t values for the smoking group. The lower triangle matrix shows the functional connectivities significantly associated with smoking. The baseline for the smoking was the never smoking group. The upper triangle matrix shows the significant links after multiple comparison correction (FDR corrected, p<0.005; no positive link survived correction for multiple comparisons). The regions are the AAL2 regions in the order shown in Supplementary file 1. (B) The matrix of t values for the drinking group. The lower triangle matrix shows the functional connectivities significantly associated with the amount of drinking per day. The baseline for the drinking was the low drinking group. The upper triangle matrix shows the significant links after multiple comparison correction using FDR correction (FDR corrected, p<0.05). The regions are the AAL2 regions in the order shown in Supplementary file 1. (C) The distribution of t values for the two groups for all AAL2 functional connectivity links. (D) The correlation between the t values of the above contrasts for the drinking and smoking groups. A positive t value indicates a stronger FC in a substance use group compared to the control group here and in the other Figures.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The upper figures show the distribution of t values of the whole brain links for three different pipelines of data preprocessing. (A) For smoking and (B) for drinking. (C, D) showed the distribution of t values of significantly different links for three different pipelines of data preprocessing. (E, F) show the correlation between the t value corresponding to the pipeline with GS (global signal) and the t value corresponding to the pipeline without the GS, that is with the global signal regressed out. (G, H) show the correlation between the t value corresponding to the pipeline with GS and the t value corresponding to the HCP pipeline.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** We modified the fconn atlas so that it includes the AAL2 parcellation produced by Rolls et al. (2015) of the medial orbitofrontal cortex areas (OFC_med, OFC_ant, OFC_post, Rectus, and OLF) and lateral orbitofrontal cortex areas (OFC_lat, and IFG_orb). (A) The fconn areas with different functional connectivity (measured by the number of significant links p<0.001 and using a threshold of 20 links) involving that area, for the smoking group compared to the non-smoking group. (B) The same for the high drinking group compared to the low drinking group using a threshold of 10 links (p<0.001) within an area.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The correlation of the strength of the whole brain functional connectivity between four scans. All the correlations between the different scans are larger than 0.98, which means that the whole brain functional connectivity pattern is very robust among the four sessions, even though these acquisitions have different phase encodings (LR and RL). (B) Comparison of whole brain functional connectivity difference pattern between the four scans. The lower triangle matrix shows the correlation of t values of the whole brain links based on the four scans in the smoking group. The upper triangle matrix shows the correlation of t values of the whole brain links based on the four scans in the drinking group.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A, B) show the distribution of t values of the whole brain links for three different groups: all participants, male, and female participants. (C, D) show the distribution of t values of the significantly different links for three different groups. (E, F) show the correlation between the t value of the whole brain links based on all participants and male participants. (G, H) show the correlation between the t value of the whole brain links based on all participants and female participants. For smoking, the distribution for all participants was close to that of the male FC distribution, and more males than females were smokers. For drinking, there was a larger FC difference in females than males, and this is reflected in the closeness of the distribution for all participants to that of females.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig2-v2.jpg)
 
-**Figure 2.:** (A) The AAL2 areas with different functional connectivity (measured by the number of significant links FDR p<0.005) involving that area, using a threshold of 10 links for the smoking compared to the non-smoking group. IFG – inferior frontal gyrus; OFClat –lateral orbitofrontal cortex; PCUN – precuneus; STG – superior temporal gyrus. (B) Significant links (FDR p<0.005) between the AAL2 areas with blue showing a decrease for the smoking group compared to the non-smoking group. The left hemisphere is on the left of each brain diagram in this and other Figures.10.7554/eLife.40765.010Figure 2—source data 1.
+**Figure 2.:** (A) The AAL2 areas with different functional connectivity (measured by the number of significant links FDR p<0.005) involving that area, using a threshold of 10 links for the smoking compared to the non-smoking group. IFG – inferior frontal gyrus; OFClat –lateral orbitofrontal cortex; PCUN – precuneus; STG – superior temporal gyrus. (B) Significant links (FDR p<0.005) between the AAL2 areas with blue showing a decrease for the smoking group compared to the non-smoking group. The left hemisphere is on the left of each brain diagram in this and other Figures.
 
-## Increased functional connectivity patterns for high vs low drinking
+### Increased functional connectivity patterns for high vs low drinking
 
 In the HCP participants, the top 30 significantly different FC links between the low drinking and high drinking group are shown in Table 1 (and Figure 3 shows all 214 significantly different FC links after FDR correction with p<0.05). All the significantly different links are higher in the high level of drinking group (HA, high amount) compared to the low level of drinking group (LA, low amount) (except one FC between OFClat_R and Angular_R).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig3-v2.jpg)
 
-**Figure 3.:** (A) The AAL2 areas with different functional connectivity (measured by the number of significant links FDR p<0.05) involving that area, using a threshold of 10 links for high drinking compared to the low-drinking group. OFCmed – medial orbitofrontal cortex; ACC – anterior cingulate gyri; MCC – middle cingulate gyri; PreCG – precentral gyrus; STG – superior temporal gyrus; (B) Significant links (FDR p<0.05) between the AAL2 areas with red showing a increase for the drinking group.10.7554/eLife.40765.012Figure 3—source data 1.
+**Figure 3.:** (A) The AAL2 areas with different functional connectivity (measured by the number of significant links FDR p<0.05) involving that area, using a threshold of 10 links for high drinking compared to the low-drinking group. OFCmed – medial orbitofrontal cortex; ACC – anterior cingulate gyri; MCC – middle cingulate gyri; PreCG – precentral gyrus; STG – superior temporal gyrus; (B) Significant links (FDR p<0.05) between the AAL2 areas with red showing a increase for the drinking group.
 
 Figure 1B shows in the lower triangle matrix that across all links (except one) the functional connectivity of the HA group relative to the LA group was higher overall; and the upper triangle matrix shows the FC links that were significantly higher in the HA drinking group than the LA group (p<0.05, FDR corrected). Those links that are higher in the HA group than the LA group are shown in Figure 3, which show that, in addition to much higher functional connectivity involving the left medial orbitofrontal cortex, there was also higher functional connectivity for the cingulate cortex, supramarginal gyrus, globus pallidus, and pre-/post-central cortex. Table 1 shows the top 30 links for the high drinking group, which are all higher compared to the low drinking (LA) group. Ten of the top 30 links involved higher functional connectivity of the medial orbitofrontal cortex, and 13 higher functional connectivity of the anterior cingulate cortex.
 
-## Comparisons between drinking and smoking
+### Comparisons between drinking and smoking
 
 For the HCP participants, Figure 1C shows the distribution of the t values of all 4371 FC links (i.e. between all 94 AAL2 areas) in the drinking and smoking groups respectively. Almost all links across the whole brain were increased in the drinking group but decreased in the smoking group. Further analysis shows that the t values of the links in the smoking group were significantly negatively correlated with those in the drinking group (r = −0.289, p<10−10) (Figure 1D) and this finding was well cross-validated in an independent IMAGEN dataset (Figure 7C, r = −0.442, p<10−10). This finding indicates a complementarity between the functional connectivities in drinkers and smokers. That is, if links were high in the smoking group, they tended to be low in the drinking group. This provides evidence that a difference in one direction (lower) may relate to smoking, and in an opposite direction (higher) to drinking.
 
@@ -83,9 +434,9 @@ We also performed a direct comparison between drinkers and smokers, to ensure th
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/40765/elife-40765-fig4-v2.jpg)
 
-**Figure 4.:** (A) shows the distribution of t values of all the links for all AAL2 areas for the three comparisons. A positive t value indicates a stronger FC in a substance use group compared to the control group. For B-D, only the significantly different links identified in the HCP dataset as shown in Figure 3 are considered. (B) shows that all these links are decreased in the smoking only group. (C) shows that all these links are higher in the drinking only group. (D) shows that there are both higher and lower links in the group that both smokes and drinks.10.7554/eLife.40765.014Figure 4—source data 1.10.7554/eLife.40765.015Figure 4—source data 2.
+**Figure 4.:** (A) shows the distribution of t values of all the links for all AAL2 areas for the three comparisons. A positive t value indicates a stronger FC in a substance use group compared to the control group. For B-D, only the significantly different links identified in the HCP dataset as shown in Figure 3 are considered. (B) shows that all these links are decreased in the smoking only group. (C) shows that all these links are higher in the drinking only group. (D) shows that there are both higher and lower links in the group that both smokes and drinks.
 
-## Comparison between smokers, drinkers, and both smokers and drinkers
+### Comparison between smokers, drinkers, and both smokers and drinkers
 
 To analyse functional connectivity in those who both smoke and drink, the following comparison between four groups was made, with a common baseline group who neither smoked nor drank. Functional connectivity was compared over four groups (i.e smoking only n = 60, drinking only n = 219, and both smoking and drinking n = 143) using a common baseline comparison group (a no smoking and low drinking group n = 198) from the HCP dataset. Figure 4A shows the distribution of t values of all the links for all AAL2 areas for the three comparisons. This shows that the functional connectivity values for the smoking plus drinking group were similar to those for the only smoking group.
 
@@ -95,7 +446,7 @@ Thus the group that both smokes and drinks shows a combination of the links foun
 
 In summary, participants who both smoked and drank had a combination of the specifically different links in those who only smoked or only drank, and these links had on average lower functional connectivity. An implication is that the differences in functional connectivity in smokers and drinkers described in this paper can, when combined, be related to, and potentially contribute to, both smoking and drinking in the same individual.
 
-## Correlation between the functional connectivity and the amount of smoking and drinking
+### Correlation between the functional connectivity and the amount of smoking and drinking
 
 Figure 5A,B shows that for the smoking group, there was a negative correlation between the mean strength of functional connectivity for both the significantly different links (n = 369, r = −0.102, p=0.031, permutation test) and the links for the whole brain (n = 830, r = −0.080, p=0.026) with the frequency of smoking across individuals. (This is consistent with the finding that the functional connectivity is lower in smokers.). It should be noted that all correlation analyses involving identified links were performed only within the smoking (or high drinking) group.
 
@@ -107,7 +458,7 @@ Figure 5C, D shows that for the drinking group, there was a positive correlation
 
 Further, we found that this pattern of changes with the amount of use also applied to most of the significant links for both smoking (Figure 5E) and drinking (Figure 5F). Specifically, 269 out of 273 links associated with smoking showed a negative correlation with the frequency of smoking, and 54 of these 273 identified links were significant (p<0.05 uncorrected). In addition, 177 out of 214 links associated with drinking showed a positive correlation with the drinks per drinking day, and 38 of these 214 identified links were significant (p<0.05 uncorrected).
 
-## Correlation between the functional connectivities involved in smoking and drinking, and impulsivity (assessed by temporal discounting)
+### Correlation between the functional connectivities involved in smoking and drinking, and impulsivity (assessed by temporal discounting)
 
 We also investigated the relationship between the amount of smoking and drinking, with inhibitory control related to impulsivity (measured by the delay discounting score). Figure 6A,B shows that there was a negative correlation between the frequency of smoking and both the delay discounting scores, DDisc_AUC_200 (n = 830, r = −0.120, p=6.0 × 10−4) and DDisc_AUC_40K (n = 830, r = −0.088, p=0.012). There was also a negative correlation between the amount of drinking and both the delay discounting scores, DDisc_AUC_200 (n = 782, r = −0.122, p=7.0 × 10−4, Figure 6C) and DDisc_AUC_40K (n = 782, r = −0.033, p=0.036, Figure 6D). Thus higher impulsivity was associated with more drinking and more smoking in the drinking and smoking groups. Furthermore, canonical correlation analysis (CCA) revealed a significant model that relates functional connectivity levels to the delay discounting score for the drinking group (Figure 6G, n = 782, r = 0.575, p=9.9 × 10−4; Figure 6H, r = 0.572, p=0.002) with the same direction for the smoking group (Figure 6E, n = 830, r = 0.643, p=0.005; Figure 6F, r = 0.610, p=0.185). (The links involved in this analysis were all of the links shown in Figure 2B (for smoking) and Figure 3B (for drinking), ‘all links’ (with a different number of links for the two cases)).
 
@@ -121,7 +472,7 @@ For the drinking group, the significant increases in functional connectivity in 
 
 We further found that these measures of impulsivity had relatively high correlations, with respect to the 68 behavior measures in the HCP, with the smoking and drinking, and their related functional connectivities.
 
-## Cross-validation using the IMAGEN dataset
+### Cross-validation using the IMAGEN dataset
 
 Using a separate dataset (IMAGEN (Schumann et al., 2010)) we cross-validated the findings, as follows, with details provided in the Supplementary Material.
 
@@ -133,13 +484,13 @@ The results of this cross-validation for smoking are shown in Figure 7. Figure 7
 
 For the drinking, the results of the cross-validation are also shown in Figure 7. Figure 7B shows the distribution of t values of the links between all AAL2 areas in the HCP and IMAGEN datasets at age 19. (Age 19 was used because by then some participants were drinking, and some were not.) The higher global functional connectivity found with the HCP dataset was confirmed in the IMAGEN dataset, with a significant difference from zero for the IMAGEN dataset at age 19 (t = 98.00, p<10−10, one sample t-test). Figure 7E shows that the significant links for drinking identified in the HCP dataset also had a significantly higher distribution of t values compared to the comparison control group for the IMAGEN dataset at age 19 (one sample t-test, t = 15.32, p<10−10). As described in the Supplementary Material, the comparison group was the low-drinkers.
 
-## Association between the functional connectivity at age 14 and the smoking and drinking at age 19
+### Association between the functional connectivity at age 14 and the smoking and drinking at age 19
 
 To investigate whether the functional connectivity at 14 might be related to whether a participant became a smoker by age 19, a longitudinal analysis with the same IMAGEN participants was performed. The 19 years olds were split into two approximately equal size groups, of smokers vs non-smokers. For each link, its value in the 14 years olds was compared between those who were smokers and non-smokers at age 19 with a two sample t test. For the overall connectivity, this provided 4371 t values. A one-sample t-test was then performed for whether the mean of these t-values was lower than 0 in those who became smokers at 19. That test was significant (t = −47.51, p<10−10, Figure 7A), providing evidence that the value overall of the links was lower at 14 in those who became smokers at 19. With respect to the significantly different links between smokers and non-smokers identified in the HCP dataset, the test was also significant (t = −12.23, p<10−10, Figure 7D), providing evidence that the values of the significantly different links found in the HCP dataset were lower at age 14 in the IMAGEN dataset in those who became smokers at 19. An implication is that the low functional connectivities may not simply be produced by smoking, but may instead contribute to the tendency to smoke.
 
 Similar tests for drinking found analogous effects (t = 15.31, p<10−10 for the overall links (Figure 7B), and t = 7.06, p<10−10 for the specific links (Figure 7E)) in female, but not in male, IMAGEN participants.
 
-## The relation between impulsivity at age 14 and the smoking and drinking at age 19
+### The relation between impulsivity at age 14 and the smoking and drinking at age 19
 
 The analyses of impulsivity with the IMAGEN dataset are considered next. First, the impulsivity is significantly positively correlated with the frequency of smoking (r = 0.106, p=1.4 × 10−4) and the amount of drinking (r = 0.064, p=0.022) at age 19. The results for impulsivity at age 14 are shown in Figure 7F. The 14 year olds who will smoke at age 19 (n = 421) have higher impulsivity than those who will not smoke at 19 (n = 184) (t = −3.72, p=2.20 × 10−4). The 14 year olds who will drink at age 19 (n = 527) have higher impulsivity than those who will not drink at 19 (n = 298) (t = −3.67, p=2.60 × 10−4). Thus higher impulsivity at 14 is associated with who will smoke, or drink, at age 19.
 
@@ -177,17 +528,331 @@ In conclusion, we have related for the first time reduced functional connectivit
 
 ## Materials and methods
 
-## Participants and data preprocessing
+### Participants and data preprocessing
 
 The dataset used for this investigation was selected from the November 2015 public data release from the Human Connectome Project (HCP, N = 900), WU-Minn Consortium. Our sample includes 831 subjects (ages 22–35 years, 463 females) scanned on a 3 T Siemens connectome-Skyra scanner. The HCP consortium is a public shared large-scale neuroimaging dataset which aims to map macroscopic human brain circuits and their relationship to behavior in a large population of healthy adults (Van Essen et al., 2012; Van Essen et al., 2013) and which has been widely used in neuroimaging studies (Finn et al., 2015; Smith et al., 2015; Glasser et al., 2016). The sibships with individual having severe neurodevelopmental disorders, neuropsychiatric disorders or neurologic disorders were excluded, but individuals who are smokers, are overweight, or have a history of heavy drinking or recreational drug use without having experienced severe symptoms were included in HCP consortium. The details on the inclusion and exclusion criteria of HCP consortium were provided in the previous studies (Van Essen et al., 2012; Van Essen et al., 2013) and the HCP website (https://www.humanconnectome.org/). It should be noted that the HCP dataset was not specifically designed for the study of substance use, but it is useful for investigating the impact of alcohol and cigarette use in a community sample. Two resting state fMRI acquisitions on different days were used. The four resting-state runs of approximately 15 min each were acquired in separate sessions on two different days, with eyes open with relaxed fixation on a projected bright cross-hair on a dark background. The WU-Minn HCP Consortium obtained full informed consent from all participants, and research procedures and ethical guidelines were followed in accordance with the Washington University Institutional Review Boards (IRB #201204036; Title: ‘Mapping the Human Connectome: Structure, Function, and Heritability’). The demographic characteristics of participants are summarized in Table 2. More details of subjects are provided in the Supplementary Material and the collection and preprocessing of the data are provided at the HCP website (http://www.humanconnectome.org/).
 
-We obtained minimally preprocessed R-fMRI data conducted using the HCP Functional Pipeline v2.0 (Glasser et al., 2013) involving gradient distortion correction, head motion correction, image distortion correction and spatial transformation to the 2×2×2 mm3 Montreal Neurological Institute (MNI) space using one step spline resampling from the original functional images followed by then intensity normalization (Glasser et al., 2013). In this study, these minimally preprocessed images were further analyzed using FSL (Jenkinson et al., 2012) and AFNI (Cox, 1996). Briefly, first the constant, linear and quadratic trend were removed from these functional images. Next, several nuisance signals were regressed from the time course of each voxel using multiple linear regression, including cerebrospinal fluid signal, white matter signal, and Friston’s 24 head motion parameters. Then, temporal band-pass filtering (0.01-0.1 Hz) was performed to reduce the influence of low-frequency drift and the high-frequency physiological noise. Finally, 3D spatial smoothing is applied to each volume of the fMRI data using a Gaussian kernel with Full-width at Half Maximum (FWHM) equaling to 4 mm. The first 50 volumes were discarded to suppress equilibration effects and participants without the full 1200 time points in four resting-state runs were also removed from the following analysis. Any data affected by head motion (mean framewise displacement larger than 0.3 mm) were excluded using the protocol of Power et al. (2014). The resulting time courses were used for the construction and analysis of the brain network. We also compared the findings based on the pipeline described above and elsewhere (Cheng et al., 2016) with alternative pipelines for data preprocessing including the HCP minimal preprocessing pipeline, and our pipeline but with global signal removal. More details on the effect of the preprocessing pipelines are shown in the Supplementary Material (Figure 1—figure supplements 1).
+**Table 2**
+ The demographic characteristics of participants.
 
-## Construction of the whole-brain functional network
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="8">Basic information</th>
+    </tr>
+    <tr>
+      <th>Age (year)</th>
+      <th>Gender (Male/Female)</th>
+      <th>Handedness</th>
+      <th>Race (White/Others)</th>
+      <th>Education (years)</th>
+      <th>BMI</th>
+      <th>Head motion</th>
+      <th>BPDiastolic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>28.781±3.696</td>
+      <td>368/463</td>
+      <td>65.842±43.911</td>
+      <td>617/214</td>
+      <td>14.917±1.798</td>
+      <td>26.513±5.238</td>
+      <td>0.352±0.135</td>
+      <td>76.641±10.512</td>
+    </tr>
+    <tr>
+      <td>BPSystolic</td>
+      <td colspan="2">Total gray matter volume</td>
+      <td>DDisc_AUC_200</td>
+      <td>DDisc_AUC_40K</td>
+      <td colspan="2">Total white matter volume</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>123.702±14.013</td>
+      <td colspan="2">684867.9±65398.2</td>
+      <td>0.254±0.201</td>
+      <td>0.499±0.287</td>
+      <td colspan="2">444066.8±55413.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Smoking information</td>
+    </tr>
+    <tr>
+      <td>SSAGA_TB_Smoking_History</td>
+      <td>SSAGA_TB_Yrs_Smoked</td>
+      <td>SSAGA_TB_Yrs_Smoked</td>
+      <td>SSAGA_FTND_Score</td>
+      <td>SSAGA_HSI_Score</td>
+      <td>SSAGA_TB_ Age_1 st_Cig</td>
+      <td>SSAGA_TB_Reg_CPD</td>
+      <td>SSAGA_TB_Hvy_CPD</td>
+    </tr>
+    <tr>
+      <td>461/370</td>
+      <td>13.834±4.006</td>
+      <td>13.83±4.01</td>
+      <td>2.063±1.871</td>
+      <td>1.571±1.369</td>
+      <td>16.337±2.303</td>
+      <td>10.098±6.163</td>
+      <td>12.439±7.253</td>
+    </tr>
+    <tr>
+      <td colspan="8">Drinking information</td>
+    </tr>
+    <tr>
+      <td>SSAGA_Alc_12_Drinks_Per_Day</td>
+      <td>SSAGA_Alc_12_Frq</td>
+      <td>SSAGA_Alc_12_Frq_Drk</td>
+      <td>SSAGA_Alc_12_Max_Drinks</td>
+      <td>SSAGA_Alc_Hvy_Frq</td>
+      <td>SSAGA_Alc_D4_Dp_Sx</td>
+      <td>SSAGA_Alc_D4_Ab_Dx</td>
+      <td>SSAGA_Alc_Hvy_ Drinks_Per_Day</td>
+    </tr>
+    <tr>
+      <td>2.271±1.580</td>
+      <td>4.351±1.530</td>
+      <td>3.114±0.863</td>
+      <td>2.830±1.817</td>
+      <td>3.438±1.777</td>
+      <td>0.518±0.799</td>
+      <td>1.593±1.422</td>
+      <td>3.367±1.745</td>
+    </tr>
+    <tr>
+      <td colspan="8">Marijuana Use information</td>
+    </tr>
+    <tr>
+      <td>SSAGA_Mj_Use (No/Yes)</td>
+      <td>SSAGA_Mj_Ab_Dep (No/Yes)</td>
+      <td>SSAGA_Mj_Age_1 st_Use</td>
+      <td>SSAGA_Mj_Times_Used</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>379/452</td>
+      <td>750/81</td>
+      <td>2.612 ± 0.935</td>
+      <td>1.398 ± 1.693</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">The comparison of demographic characteristics of different sub-groups</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Non-smoker</td>
+      <td>Regular Smoker</td>
+      <td>Statistic*/p value</td>
+      <td>Low Drinker</td>
+      <td>High Drinker</td>
+      <td>Statistic*/p value</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Number of participants</td>
+      <td>417</td>
+      <td>203</td>
+      <td>/</td>
+      <td>311</td>
+      <td>470</td>
+      <td>/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>28.50 ± 3.70</td>
+      <td>29.62 ± 3.58</td>
+      <td>−3.57/0.0004</td>
+      <td>29.28 ± 3.63</td>
+      <td>28.49 ± 3.70</td>
+      <td>2.94/0.0034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender (male/female)</td>
+      <td>162/255</td>
+      <td>105/98</td>
+      <td>9.23/0.0024</td>
+      <td>97/214</td>
+      <td>249/221</td>
+      <td>36.01 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Handedness</td>
+      <td>67.42 ± 41.64</td>
+      <td>64.19 ± 45.92</td>
+      <td>0.88/0.381</td>
+      <td>67.77 ± 43.86</td>
+      <td>64.34 ± 44.26</td>
+      <td>1.06/0.288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Race (white/others)</td>
+      <td>301/116</td>
+      <td>163/40</td>
+      <td>4.77/0.029</td>
+      <td>219/92</td>
+      <td>369/101</td>
+      <td>6.59/0.010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_Educ</td>
+      <td>15.23 ± 1.66</td>
+      <td>14.15 ± 1.91</td>
+      <td>7.21 / &lt; 0.0001</td>
+      <td>15.17 ± 1.74</td>
+      <td>14.79 ± 1.83</td>
+      <td>2.91/0.004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI</td>
+      <td>26.65 ± 5.46</td>
+      <td>26.57 ± 4.73</td>
+      <td>0.19/0.852</td>
+      <td>26.19 ± 5.54</td>
+      <td>26.77 ± 4.92</td>
+      <td>−1.52/0.129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Head Motion</td>
+      <td>0.087 ± 0.031</td>
+      <td>0.095 ± 0.038</td>
+      <td>−2.63/0.009</td>
+      <td>0.085 ± 0.032</td>
+      <td>0.090 ± 0.033</td>
+      <td>−1.09/0.057</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BPDiastolic</td>
+      <td>76.42 ± 10.20</td>
+      <td>77.14 ± 10.42</td>
+      <td>−0.82/0.410</td>
+      <td>75.45 ± 10.62</td>
+      <td>77.61 ± 10.15</td>
+      <td>−2.86/0.004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BPSystolic</td>
+      <td>122.8 ± 13.88</td>
+      <td>125.5 ± 13.86</td>
+      <td>−2.26/0.024</td>
+      <td>121.9 ± 13.34</td>
+      <td>125.2 ± 13.99</td>
+      <td>−3.33/0.0009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DDisc_AUC_200</td>
+      <td>0.264 ± 0.199</td>
+      <td>0.202 ± 0.166</td>
+      <td>3.83/0.0001</td>
+      <td>0.274 ± 0.210</td>
+      <td>0.232 ± 0.186</td>
+      <td>2.90/0.0039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DDisc_AUC_40K</td>
+      <td>0.510 ± 0.286</td>
+      <td>0.438 ± 0.278</td>
+      <td>2.95/0.0033</td>
+      <td>0.516 ± 0.291</td>
+      <td>0.480 ± 0.280</td>
+      <td>1.75/0.081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_TB_Smoking_History (never/used)</td>
+      <td>417</td>
+      <td>203</td>
+      <td>/</td>
+      <td>113/98</td>
+      <td>251/219</td>
+      <td>21.91 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_TB_Yrs_Smoked</td>
+      <td>/</td>
+      <td>13.87 ± 3.98</td>
+      <td>/</td>
+      <td>13.20 ± 4.70</td>
+      <td>14.15 ± 3.61</td>
+      <td>−1.56/0.119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_Alc_12_Drinks_Per_Day</td>
+      <td>1.978 ± 1.478</td>
+      <td>2.842 ± 1.756</td>
+      <td>−6.41 / &lt; 0.0001</td>
+      <td>0.823 ± 0.382</td>
+      <td>3.223 ± 1.320</td>
+      <td>−31.2 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_Alc_12_Frq</td>
+      <td>4.717 ± 1.356</td>
+      <td>3.980 ± 1.668</td>
+      <td>5.88 / &lt; 0.0001</td>
+      <td>5.03 ± 1.29</td>
+      <td>3.91 ± 1.51</td>
+      <td>10.73 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_Mj_Use (never/used)</td>
+      <td>256/161</td>
+      <td>29/74</td>
+      <td>122.0 / &lt; 0.0001</td>
+      <td>173/138</td>
+      <td>162/308</td>
+      <td>34.21 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSAGA_Mj_Times_Used</td>
+      <td>0.779 ± 1.273</td>
+      <td>2.783 ± 1.800</td>
+      <td>−15.97 / &lt; 0.0001</td>
+      <td>1.016 ± 1.458</td>
+      <td>1.777 ± 1.791</td>
+      <td>−6.245 / &lt; 0.0001</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are n or mean ± SD. The fractions provided in the some rows show the numbers of individuals who did not had the property shown in the column/the number who did. *: A group difference (independent samples t test or χ2 test). BPDiastolic: Blood Pressure – Systolic; BPSystolic: Blood Pressure – Diastolic; DDisc_AUC_200: Delay Discounting: Area Under the Curve (AUC) for Discounting of $200; DDisc_AUC_40K: Delay Discounting: Area Under the Curve for Discounting of $40,000; PMAT24_A_CR: Penn Progressive Matrices: Number of Correct Responses; PMAT24_A_RTCR: Penn Progressive Matrices: Median Reaction Time for Correct Responses; Flanker_AgeAdj: NIH Toolbox Flanker Inhibitory Control and Attention Test: Age-Adjusted Scale Score; ListSort_AgeAdj: NIH Toolbox List Sorting Working Memory Test: Age-Adjusted Scale Score; PicSeq_AgeAdj: NIH Toolbox Picture Sequence Memory Test: Age-Adjusted Scale Score; SCPT_TP: Short Penn Continuous Performance Test: True Positives = Sum of CPN_TP and CPL_TP; SSAGA_TB_Smoking_History: Smoking history: never smoked (0), experimented 1–19 times (1), experimented 20–99 times (2), regular smoker (3); SSAGA_TB_Yrs_Smoked: Years smoked (1–5 years = 5; 6–10 = 10; 11–15 = 15; 16+ = 18); SSAGA_FTND_Score: Fagerstrom FTND (test for nicotine dependence) score: 4 + indicative of dependence;>6 recoded as 6); SSAGA_HSI_Score: Fagerstrom HSI Score: HSI measure of tobacco dependence; SSAGA_TB_Age_1 st_Cig: For regular smokers, age first smoked a cigarette (even a puff); SSAGA_TB_Reg_CPD: Cigarettes per day when smoking regularly; SSAGA_TB_Hvy_CPD: Cigarettes per day during heaviest period; SSAGA_Alc_12_Drinks_Per_Day: Drinks consumed per drinking day in past 12 months: 0, 1, 2, 3, 4, 5–6 = 5, 7+ = 6; SSAGA_Alc_12_Frq: Frequency of any alcohol use in past 12 months; SSAGA_Alc_12_Frq_Drk: Frequency drunk in past 12 months; SSAGA_Alc_12_Max_Drinks: Max drinks in a single day in past 12 months; SSAGA_Alc_Hvy_Frq: Frequency of any alcohol use, heaviest 12 month period; SSAGA_Alc_D4_Dp_Sx: Number of DSM4 Alcohol Dependence Criteria Endorsed; SSAGA_Alc_D4_Ab_Dx: DSM4 Alcohol Abuse Criteria Met; SSAGA_Alc_Hvy_Drinks_Per_Day: Drinks per day in heaviest 12 month period; SSAGA_Mj_Use: Ever used marijuana: no = 0; yes = 1; SSAGA_Mj_Ab_Dep: Participant meets DSM criteria for Marijuana Dependence; SSAGA_Mj_Age_1 st_Use: Age at first marijuana use:<=14 = 1; 15–17 = 2; 18–20 = 3;>=21 = 4; SSAGA_Mj_Times_Used: Times used marijuana: never used = 0; 1–5 = 1; 6–10 = 2; 11–25 = 3; 26–50 = 3; 51–100 = 3; 101–999 = 4; 1000–2000 = 5;>2000 = 5. For more details for each term, it is available on the website: https://wiki.humanconnectome.org/display/PublicData/HCP+Data+Dictionary+Public-+500+Subject+Release_
+
+We obtained minimally preprocessed R-fMRI data conducted using the HCP Functional Pipeline v2.0 (Glasser et al., 2013) involving gradient distortion correction, head motion correction, image distortion correction and spatial transformation to the $2\times2\times2mm^{3}$ Montreal Neurological Institute (MNI) space using one step spline resampling from the original functional images followed by then intensity normalization (Glasser et al., 2013). In this study, these minimally preprocessed images were further analyzed using FSL (Jenkinson et al., 2012) and AFNI (Cox, 1996). Briefly, first the constant, linear and quadratic trend were removed from these functional images. Next, several nuisance signals were regressed from the time course of each voxel using multiple linear regression, including cerebrospinal fluid signal, white matter signal, and Friston’s 24 head motion parameters. Then, temporal band-pass filtering (0.01-0.1 Hz) was performed to reduce the influence of low-frequency drift and the high-frequency physiological noise. Finally, 3D spatial smoothing is applied to each volume of the fMRI data using a Gaussian kernel with Full-width at Half Maximum (FWHM) equaling to 4 mm. The first 50 volumes were discarded to suppress equilibration effects and participants without the full 1200 time points in four resting-state runs were also removed from the following analysis. Any data affected by head motion (mean framewise displacement larger than 0.3 mm) were excluded using the protocol of Power et al. (2014). The resulting time courses were used for the construction and analysis of the brain network. We also compared the findings based on the pipeline described above and elsewhere (Cheng et al., 2016) with alternative pipelines for data preprocessing including the HCP minimal preprocessing pipeline, and our pipeline but with global signal removal. More details on the effect of the preprocessing pipelines are shown in the Supplementary Material (Figure 1—figure supplements 1).
+
+### Construction of the whole-brain functional network
 
 After preprocessing, the whole brain (gray matter) was parcellated into 94 regions of interest (ROI) according to the automated anatomical labeling (AAL2 ) atlas (Rolls et al., 2015) (47 regions in each hemisphere), and the time series were extracted in each ROI by averaging the signals of all voxels within that region. The names of the ROIs and their corresponding abbreviations are listed in Supplementary file 1. (This is a standard parcellation scheme, which provides a usable number of different divisions for statistical purposes when differences between regions are being investigated, and includes a useful parcellation of the orbitofrontal cortex.). For comparison, we also provide the results (Figure 1—figure supplement 2) based on another atlas (Shen et al., 2013) which has also been validated in resting state fMRI studies (Finn et al., 2015; Rosenberg et al., 2016), although its parcellation of the orbitofrontal cortex is less good than the AAL2 atlas. The Pearson cross-correlations between all pairs of regional BOLD signals were calculated for each subject followed by z-transformation to improve normality, and the whole-brain functional connectivity network (94 × 94 region-based network with 4371 links) was constructed. Finally, the mean functional connectivity across two scans (each scan containing left to right and right to left phase encoding directions) was used for the following analysis to provide a more reliable estimation of functional connectivity. The correlation of the functional connectivities was high between the two different scans as shown in the Supplementary Material (Figure 1—figure supplement 3).
 
-## Categorization of participants into groups
+### Categorization of participants into groups
 
 The following factors were considered in choosing the measures to define the groups. The main purpose of the current study was to investigate whether there were differences in functional connectivity that were related to smoking or drinking. Accordingly, in the initial analysis, we categorized the participants for the smoking analysis into two groups, one which used significant amounts of cigarettes, and the other using no or low amounts of cigarettes. The same was performed for the division into two groups with respect to the amount of alcohol drunk. In making the cutoff, we ensured that there were reasonable numbers of participants in the high and the low amount groups. After the initial analysis, we wished to investigate the effect of the different amounts of use of cigarettes or alcohol, and therefore used measures of the different amounts of drinking of each participant, and the number of times each participant had smoked, as described in the results section (Figures 5 and 6).
 
@@ -195,21 +860,21 @@ Accordingly, to investigate smoking-associated functional connectivity, we divid
 
 To investigate drinking-associated functional connectivities, we divided all participants into two groups. A Low Amount (LA) group with 311 participants drank one or fewer drinks per drinking day in the past 12 months. A High Amount (HA) group with 470 participants drank two or more drinks per drinking day in the past 12 months. (The descriptor was SSAGA_Alc_12_Drinks_Per_Day, and this division into two groups was made to help comparison with the initial analysis for smokers, which also used two groups.) It should be noted that the ‘amount’ of drinking in the current study refers to the amount of drinks per drinking day (and not for example to the total number of drinks in the past 12 months). The rationale for the use of this measure is provided in the Discussion section, and a complementary analysis showed that there was a good correlation between the association pattern of the functional connectivities when the measures were the 'total drinks' and the 'drinks per drinking day' (r = 0.72, p<1 × 10−10). In order to compare the results for smoking and drinking, only participants with information about both drinking and smoking behavior were included. The demographic characteristics of the participants in each group are summarized in Table 2.
 
-## Statistical analysis
+### Statistical analysis
 
 In order to investigate the relationship between functional connectivity (FC) and smoking, two sample two-tailed t tests were used to test whether smoking was associated with functional connectivity after removing the confounding effects of age, gender, years of education, race, handedness, head motion (mean framewise displacement, FD), BMI, blood pressure (diastolic and systolic), total gray matter volume, total white matter volume, drinking, and marijuana use. Considering the purpose of this study described above and the sample size in each sub-group, we used a two sample t-test rather than a 2 × 2 ANOVA. Then a Storey's FDR procedure was used to correct for multiple comparisons (Storey, 2002; Storey and Tibshirani, 2003; Erlikhman and Caplovitz, 2017). Storey’s FDR is a modification of FDR, also called positive False Discovery Rate (pFDR) by conditioning on one false positive finding having occurred. The Storey's FDR method was implemented by the Matlab function mafdr.m with default parameters. In the present study FDR correction for the functional connectivity between any pair of AAL2 regions was used, and the results for smoking are presented based on this statistical test with FDR p<0.005. We then performed the same statistical analysis on the high drinking and low drinking groups with the FDR correction at p<0.05. The effects of any use of the other substance was always removed by regression when we performed the analysis on the use of one of the substances. For the effect of the most recent drink/cigarette use, a correlation analysis confirmed that the association pattern was highly consistent in the cases with and without the covariates of the total drinks and total times smoked in the past 7 days (r = 0.957 for smoking and r = 0.927 for drinking). This provides evidence that it is whether one is a smoker or drinker that is relevant to the results described in this paper, and not just the most recent drug use.
 
-## Correlation of functional connectivity differences for substances with extent of use and a measure of impulsivity
+### Correlation of functional connectivity differences for substances with extent of use and a measure of impulsivity
 
 We explored the relationship between the functional connectivity links identified above as different in substance use groups with behavioral measures (i.e. drinks per drinking day in the past 12 months and the amount of smoking). Specifically, a partial correlation analysis was used to measure the correlation between the identified functional connectivity and these behavioral measures with removal of the confounding variables of age, gender, years of education, race, handedness, head motion (mean FD), BMI, blood pressure (diastolic and systolic), total gray matter volume, total white matter volume and use of the other substance.
 
 We also investigated the relationship between the functional connectivity links identified above as different in substance use groups and behavioral scores related to self-regulation and impulsivity. We performed a partial correlation of the delay discounting score with the amount of drinking per drinking day and the amount of smoking respectively. The score of self-regulation and impulsivity was based on the delay discounting task which measures the undervaluing of rewards delayed in time. We used an area-under-the-curve discounting measure (AUC) that provides a valid and reliable index of how steeply an individual discounts delayed rewards (Myerson et al., 2001). Specifically, we calculated the canonical correlation between the area under the curve for discounting of $200 and $40,000 (DDisc_AUC_200 and DDisc_AUC_40K) with the strength of associated functional connectivities for drinking and smoking respectively, after removing the effects of age, gender, years of education, race, handedness, head motion (mean FD), BMI, blood pressure (diastolic and systolic) total gray matter volume, total white matter volume and use of the other two substances.
 
-## Cross-validation with the IMAGEN dataset
+### Cross-validation with the IMAGEN dataset
 
 We used another separate large longitudinal fMRI dataset (the IMAGEN dataset (Schumann et al., 2010)) which included 1176 participants to test whether the findings based on the HCP dataset could be cross-validated with an independent dataset, which would considerably strengthen the findings. This dataset also enabled examination of whether functional connectivity at age 14 when participants neither smoke nor drank was associated with who would become drinkers or smokers at age 19. This potentially thus provides a way to investigate whether differences between individuals that were not caused by smoking and drinking (as there was little smoking and drinking when the participants were 14) might lead to smoking or drinking by the time that the participants were 19. The IMAGEN dataset also enabled investigation of gender differences in the behaviors that may be predictable from brain functional connectivity in this important period of development. The details of demographic characteristics of participants from the IMAGEN dataset are presented in Supplementary file 2.
 
-## Participants
+### Participants
 
 IMAGEN adopted a longitudinal design to collect genetic, neuroimaging, environmental, and behavioural data in the UK and Europe, starting at age 14 years old with a sample 2087 healthy adolescents, and followed at ages 16 and 19 years. The neuroimaging data were acquired at ages 14 and 19 years (Schumann et al., 2010). The demographic characteristics of participants who included resting state fMRI scans are summarized in Supplementary file 2.
 
@@ -245,7 +910,7 @@ Then a two sample two-tailed t-test was used to assess the difference between th
 
 We also investigate the impulsivity of participants at age 14 by using the IMAGEN dataset. The impulsivity measure is based on the Substance Use Risk Profile Scale (Woicik et al., 2009) by using the sum of the following question scores:
 
-## Drinking and smoking behavior
+### Drinking and smoking behavior
 
 We used the European School Survey Project on Alcohol and Other Drugs (ESPAD) at ages 14 and 19 years to assess life time drinking and smoking. The primary question of interest was regarding lifetime alcohol and cigarette use and the questionnaire were as follows (Schumann et al., 2010):
 
@@ -257,13 +922,13 @@ We used the European School Survey Project on Alcohol and Other Drugs (ESPAD) at
 
 4. On how many occasions over the last 12 months have you had any alcoholic beverage to drink?
 
-## Imaging data preprocessing for the IMAGEN dataset
+### Imaging data preprocessing for the IMAGEN dataset
 
-Data preprocessing was performed using DPARSF (Chao-Gan and Yu-Feng, 2010) (http:// restfmri.net) which is a toolbox based on the SPM8 software package. The first 10 EPI scans were discarded to suppress equilibration effects. The remaining scans of each subject underwent slice timing correction by sinc interpolating volume slices, motion correction for volume to volume displacement, spatial normalization to standard Montreal Neurological Institute (MNI) space using affine transformation and nonlinear deformation with a voxel size of 3×3×3mm3, followed by spatial smoothing (6 mm Full Width Half Maximum FWHM). To remove the sources of spurious correlations present in resting-state BOLD data, all fMRI time-series underwent band-pass temporal filtering (0.01-0.1 Hz), nuisance signal removal from the ventricles, and deep white matter, and regressing out any effects of head motion using Friston’s 24 head motion parameters procedure. Finally, subjects with the mean framewise displacement (FD) of head motion large than 0.3 were completely excluded from the analysis as it is likely that such high-level of movement would have had an influence on several volumes (Power et al., 2014).
+Data preprocessing was performed using DPARSF (Chao-Gan and Yu-Feng, 2010) (http:// restfmri.net) which is a toolbox based on the SPM8 software package. The first 10 EPI scans were discarded to suppress equilibration effects. The remaining scans of each subject underwent slice timing correction by sinc interpolating volume slices, motion correction for volume to volume displacement, spatial normalization to standard Montreal Neurological Institute (MNI) space using affine transformation and nonlinear deformation with a voxel size of $3\times3\times3mm^{3}$, followed by spatial smoothing (6 mm Full Width Half Maximum FWHM). To remove the sources of spurious correlations present in resting-state BOLD data, all fMRI time-series underwent band-pass temporal filtering (0.01-0.1 Hz), nuisance signal removal from the ventricles, and deep white matter, and regressing out any effects of head motion using Friston’s 24 head motion parameters procedure. Finally, subjects with the mean framewise displacement (FD) of head motion large than 0.3 were completely excluded from the analysis as it is likely that such high-level of movement would have had an influence on several volumes (Power et al., 2014).
 
-## Methodological notes
+### Methodological notes
 
-## Effect of the pipeline of data preprocessing
+#### Effect of the pipeline of data preprocessing
 
 A comparison between different pipelines of data preprocessing was performed, as follows.
 

@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Center for Perceptual Systems, The University of Texas at Austin Austin United States
-2. https://ror.org/01kg8sb98 School of Optometry, Indiana University Bloomington United States
-3. https://ror.org/04t5xt781 Department of Biology, Northeastern University Boston United States
+1. Center for Perceptual Systems, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
+2. School of Optometry, Indiana University Bloomington United States ([ROR:01kg8sb98](https://ror.org/01kg8sb98))
+3. Department of Biology, Northeastern University Boston United States ([ROR:04t5xt781](https://ror.org/04t5xt781))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ In this paper, we ask how vision is used identify viable footholds and choose pa
 
 We analyzed data recorded while participants walked over rough terrain (n=9). The data were collected by the authors for two separate, previously published studies of visually guided walking (Bonnen et al., 2021, n=7; Matthis et al., 2022, n=2). Walkers’ eye and body movements were recorded using a Pupil Labs Core mobile binocular eye tracker and a Motion Shadow full-body motion capture suit. Additionally, the walker’s view of the scene was recorded by the eye tracker’s outward-facing scene camera. As the scene camera moves with the head, the camera’s view of the terrain changes along with the walker’s. Due to those changes in viewpoint, the scene videos contain information about the terrain’s depth structure, which we aimed to recover via photogrammetry.
 
-## Terrain reconstruction
+### Terrain reconstruction
 
 To reconstruct the three-dimensional (3D) environment from the scene videos recorded by the eye tracker’s scene camera, we used the photogrammetry software package Meshroom (Griwodz et al., 2021), which combines multiple image processing and computer vision algorithms. The terrain reconstruction procedure uses the viewpoint changes across each scene video’s frames to recover the environment’s depth structure. The outputs, generated per scene video, are: (a) a 3D textured mesh of the terrain and (b) an estimate of the 6D camera pose (both 3D location and 3D orientation) within the terrain’s coordinate system. To give a sense of the quality of these reconstructions, Figure 1 shows an example comparison of (A) the original scene camera image and (B) a corresponding view of the reconstructed terrain.
 
@@ -45,7 +45,7 @@ To reconstruct the three-dimensional (3D) environment from the scene videos reco
 
 **Figure 1.:** We used the scene videos recorded by the eye tracker’s outward-facing camera to estimate the structure of the environment and the scene camera’s pose in each frame of the video. By moving a virtual camera to those poses and rendering the camera’s view of the textured mesh, we can generate comparison images to help assess the reconstruction’s accuracy. (A) Frame from original scene video. (B) Corresponding rendered image.
 
-## Aligned gaze, body, and terrain data
+### Aligned gaze, body, and terrain data
 
 We aimed to analyze the body and gaze data in the context of the reconstructed environment, which meant that we needed to align our data on the walker’s movements to the terrain’s coordinate system. We determined how to position the eye and body movement data relative to the terrain by aligning the head pose measured by the motion capture system to the estimated scene camera pose (Figure 2). To visualize the fully aligned data, we created videos showing the walker’s skeleton moving through the associated textured terrain mesh (for an example, see Video 1).
 
@@ -53,7 +53,19 @@ We aimed to analyze the body and gaze data in the context of the reconstructed e
 
 **Figure 2.:** We combine the motion capture data with the reconstructed environment (photogrammetry data) by aligning the head’s pose (RGB axes) to the scene camera’s pose (CMY axes). (A) Motion capture data provides body pose (i.e. position and orientation) information, including the head’s pose (RGB axes). (B) The process of reconstructing the environment via photogrammetry produces a three-dimensional (3D) terrain mesh (image) and scene camera’s poses (CMY axes). (C) Aligning the head’s pose (RGB axes) to the scene camera’s pose (CMY axes) places the body within the terrain reconstruction.
 
+![Video 1.](https://cdn.elifesciences.org/articles/91243/elife-91243-video1.mp4.jpg)
+
+**Video 1.:** The video shows the three-dimensional (3D) motion capture skeleton walking over the textured mesh. Gaze vectors are illustrated as blue lines. On the terrain surface, the heatmap shows gaze density, and the magenta dots represent foothold locations.
+
 We also visualized the different paths that walkers took through the terrain. Figure 3 shows an overhead view of the reconstructed terrains from the Austin dataset, with the paths chosen by the two Austin subjects overlaid onto the terrain. (For examples from the Berkeley dataset, see Figure 3—figure supplement 1). The recorded paths were certainly not identical, indicating that foothold locations were not highly constrained. However, the two subjects’ paths show considerable regularities. Visual inspection of the paths, particularly in 3D, gives the impression that the terrain’s structure impacts the regularity of paths. In other words, features of the 3D environment might impact the degree of variability between paths, suggesting that there may be some identifiable visual features that underlie path choices.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig3-v1.jpg)
+
+**Figure 3.:** Each of the two Austin subjects walked out and back over a rocky trail three times. These overhead views show the textured three-dimensional (3D) terrain mesh along with the paths the subjects took through that terrain. Each color (red and cyan) corresponds to a different subject. Note that in some sections of the terrain, paths were highly similar across repetitions and across subjects, while in other sections, paths differed notably. (A) Both subjects’ three walks from the start of the path to the end. (B) Both subjects’ three walks returning to the start location.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overhead view of paths taken (colored lines correspond to individual subjects) through a portion of the Berkeley terrain. (B–D) These panels show examples of path convergence and divergence. The colored lines indicate the paths that subjects traveled in this section of the terrain, with each color representing a different subject. For each path, the walk in this section of terrain begins at the tick mark near the bottom of the image and ends at the colored $▴$ In (B), subjects diverge by choosing two different routes around a root, but then converge again. In (C) subject paths converge to avoid the large outcrop. In (D) subject paths converge around a mossy section of a large rock.
 
 To further illustrate the information present in our dataset, Figure 4 shows an excerpt of the terrain from Figure 3 with the following aligned data: gaze locations (green and blue dots), foothold locations (pink dots), and head locations (orange dots).
 
@@ -65,11 +77,11 @@ The close relationship between the gaze locations near the path (green dots) and
 
 Relevant to the work in this article are the gaze locations ‘off-the-path’ (blue dots) and the concurrent head locations (connected by blue lines). Those gaze points are off of the walker’s chosen path but are still on the ground. Further, they seem to precede turns – a pattern which we observed throughout the data. In later sections, we provide evidence that walkers make a trade-off between maintaining a straight path vs. maintaining a flat path; this gaze pattern points to how the visual system might collect the information used to make that trade-off.
 
-## Benefits of reconstructing terrain
+### Benefits of reconstructing terrain
 
 Incorporating the reconstructed terrain into our analyses has several advantages. Perhaps the most obvious is that having information about the terrain’s depth structure allows us to analyze the relationship between that depth structure and the walkers’ chosen foothold locations. Another major advantage of incorporating the terrain reconstruction is that it enables more accurate gaze and body localization. In previous work, we assumed a flat ground plane, which led to parallax error in gaze location estimates (Matthis et al., 2018). Here, we used the reconstructed 3D terrain surface, eliminating the need to assume a flat ground plane and thus eliminating that source of error. Additionally, body position estimates were previously negatively impacted by inertial measurement unit (IMU) drift, which results from the accumulation of small errors in the accelerometer and gyroscope measurements over time. This drift causes global, i.e., not local error – error in the overall localization of the motion capture skeleton, not in the localization of different body parts relative to one another. We were able to address this source of error by fixing the body’s reference frame to that of the environment (Figure 2). Thus, by eliminating both of these sources of error, utilizing photogrammetry allowed us to more precisely estimate gaze and foothold locations.
 
-## Evaluating reliability of terrain reconstruction
+### Evaluating reliability of terrain reconstruction
 
 To evaluate the reliability of the 3D reconstruction procedure, we compared the terrain meshes calculated from multiple traversals of the same terrain. We used the Austin dataset for this reliability analysis because the terrain is contiguous, the walking paths have clearer start/end points, and there are 12 traversals of the terrain (2 subjects, 6 traversals each; see Figure 3).
 
@@ -81,7 +93,7 @@ The aggregate distribution across all pairwise mesh comparisons is shown in Figu
 
 **Figure 5.:** (A) Nearest neighbor error distribution for the whole terrain (median = 4.5 cm, 95% quantile = 20.0 cm). (B) Nearest neighbor error distribution for individual footholds (median = 4.0 cm, 95% quantile = 16.8 cm).
 
-## Retinocentric depth information affects foothold selection
+### Retinocentric depth information affects foothold selection
 
 The results of Bonnen et al., 2021, suggest depth judgments are important in foothold finding, as the removal of depth information shifts gaze to foothold locations that are closer to the walker. Taking advantage of the output of the terrain reconstruction procedure, we sought to confirm that depth information from the walker’s point of view could be used to predict the upcoming foothold locations.
 
@@ -93,11 +105,27 @@ We first used the reconstructed terrain – along with the aligned foothold and 
 
 Per subject, we trained the network on half of the terrain and tested on the remaining half (ensuring that the network was tested on terrain that it had not previously seen). For each depth image, we calculated the area under the ROC curve (AUC), which quantifies the discriminability between image locations that show footholds and image locations that do not show footholds. Figure 6C shows that, per subject, the median AUC value for depth images from the test set was above chance. We can thus conclude that the network was able to find the potential footholds in the depth images, suggesting that retinocentric depth information contributes to foothold finding.
 
-## Walkers prefer flatter paths
+### Walkers prefer flatter paths
 
 Our CNN analysis suggested that depth features in the upcoming terrain have some predictive value in the selection of footholds. We next decided to narrow our focus to examine whether terrain height, specifically, might play a role in foothold selection. Stepping up and down is energetically costly, and previous work in simpler environments has demonstrated that humans attempt to minimize energy expenditure during locomotion (Selinger et al., 2015; Finley et al., 2013; Lee and Harris, 2018). Furthermore, a walker avoiding large steps up and down would be choosing to take a flatter path, and walking on a flatter path would result in less deviation from their preferred gait cycle and thus more stable locomotion. To test the hypothesis that walkers seek out a flatter path to avoid large changes in terrain height, we measured the slope of steps chosen by our walkers and compared them to the slope of steps in paths we simulated along the same terrain.
 
 We simulated plausible paths for each walker that were comparable to their chosen paths. To ensure plausibility, we constrained potential foothold locations and potential steps based on human walking behavior. We identified potential foothold locations based on the maximum walk-on-able surface slant reported in Kinsella-Shaw et al., 1992, excluding areas of the terrain with an average local surface slant greater than 33°. We identified potential steps between foothold locations based on each walker’s data, excluding steps with a step slope (Equation 7), step ground distance (Equation 2), and/or step deviation from goal (Equation 5) greater than the corresponding maximum absolute value for that walker’s chosen steps (Figure 7). Only foothold locations and steps that met these conditions were considered viable.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig7-v1.jpg)
+
+**Figure 7.:** The histograms show the distributions of (A) step slopes, (B) step lengths, and (C) step direction relative to goal direction. These distributions define the set of feasible next steps for a given foothold, allowing the calculation of feasible alternative paths to the one actually chosen by the subject. This figure shows histograms of these quantities pooled over subjects, but note that calculations of viable paths were done based on the step parameters of each individual subject.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Each row shows one subject’s data. Each column shows data for one of the step parameters used to constrain simulated steps: (1) step slope, (2) step length normalized by the average step length, and (3) step direction relative to goal direction.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Top row, from left to right: (1) step distance (m), (2) step ground distance (m), (3) step height (m), (4) step ground distance (step length; see also Figure 7B). Bottom row: (1) step slope (deg; see also Figure 7A), (2) step direction (deg), (3) goal direction (deg), (4) step direction relative to goal direction (deg; see also Figure 7C).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** The order of the step parameters along the x- and y-subplot axes are: (1) step distance, (2) step ground distance, (3) step height, (4) step slope, (5) step direction, (6) goal direction, (7) step direction relative to goal direction, and (8) step ground distance in step lengths. The title of each subplot contains the correlation value r and its associated p-value.
 
 To ensure comparability, we split each walker’s path into 5-step (i.e. 6-foothold) segments, and we simulated corresponding 5-step sequences by starting at the walker’s chosen foothold and randomly choosing each subsequent step from the available viable options (Figure 8A). (Note that, for this simulation, we did not predefine the end points of path segments).
 
@@ -111,11 +139,23 @@ As is evident from the per-subject medians, the slopes of chosen path segments t
 
 Our results suggest that walkers prefer taking flatter paths. This does not mean that they categorically avoid large steps up and down. Clearly they do sometimes choose paths with greater slopes, as is indicated by the tail of the chosen distribution. However, on average they tend toward flatter paths than would be predicted by the terrain alone.
 
-## Walkers choose indirect routes to avoid height changes
+### Walkers choose indirect routes to avoid height changes
 
 Another factor that influences the energetic cost of taking a particular path is how straight the path is. Changing direction requires more energy than walking on an equivalent straight path (McNarry et al., 2017), as one might expect since curvier (i.e. more tortuous) paths are longer and require walkers to deviate from their preferred gait cycle. However, walkers frequently alter their direction of travel in rocky terrain (see, e.g., Figure 4). If there is a large height change along the straight path, turning might require less energy than stepping up or down while following the straight path. Therefore, building on our finding that walkers prefer flatter paths, we hypothesized that walkers choose to turn when turning allows them to avoid notable changes in terrain height. We evaluated that possibility by examining the relationship between the tortuosity of their chosen path segments and the slope of corresponding straight alternative path segments.
 
 As in the prior section, we simulated path segments to compare walkers’ chosen steps to the viable steps along that specific terrain. We followed a similar procedure with one notable difference: Here, for each chosen path segment, we simulated steps between the first and sixth footholds in the chosen path segment. In other words, we predefined both the starting and ending locations of simulated path segments (Figure 9A), whereas above, we predefined only the starting locations (Figure 8A).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig9-v1.jpg)
+
+**Figure 9.:** (A) An example chosen path segment (cyan; 5-step sequence), along with one straighter alternative path segment (green). (B) An illustration of the relationship between chosen path segment tortuosity and the slope of ‘straight’ path segments that were simulated across the same terrain. Each subpanel depicts one subject’s data. To summarize the large amount of data per subject (317,497 path segments), we binned the data into 20 quantiles of straight path slope and averaged tortuosity per bin, generating one summary tortuosity value per slope level. These scatterplots show the average tortuosity as a function of the straight path slope quantile (cyan crosses), along with best fit lines (black). (For scatterplots showing data per chosen path segment, see Figure 9—figure supplement 1A). Associated correlation values (Pearson’s r) are shown at the top of each panel.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Tortuosity of the chosen path segments (5-step sequences) vs. slope $\theta¯$ for the simulated ‘straight‘ path segments for each of the nine subjects. Correlation values and corresponding p-values are indicated at the top of each panel. (B) Correlation between subject leg length and the strength of the straight path slope vs. tortuosity relationship in their foothold selection data. Leg lengths (in cm) are plotted on the horizontal axis, and the correlation coefficients for each of the plots in panel A are plotted on the vertical axis. We found a statistically significant negative correlation between those two values (r = –0.70, p=0.04).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Each row presents one subject’s data. The left column contains histograms of the average slope $\theta¯$ for simulated ‘straight‘ path segments, and the right column contains histograms of the tortuosity of that subject’s chosen path segments (5-step sequences).
 
 We used the simulated path segments to quantify, for each chosen path segment, the average step slope a subject would encounter if they tried to take a straighter path between the segment’s end points. To accomplish that, we quantified the straightness of all path segments via a tortuosity metric (Batschelet, 1981; Benhamou, 2004), and per terrain mesh, we used the tortuosity of chosen path segments to compute a conservative ‘straightness’ threshold. We then selected the simulated path segments with a tortuosity below the computed threshold, computed their slope, and averaged across those path segment slopes. Those calculations resulted in, for each path segment, the mean slope of relatively straight alternative paths, which we refer to here as ‘straight path slope’. Figure 9A shows one example straight path segment, together with the path that the subject actually chose.
 
@@ -143,37 +183,108 @@ This work did not investigate which depth cues walkers used to make these path c
 
 Finally, we observed that walkers chose longer paths when the straightest viable paths involved greater height changes (Figure 9), and further, our data suggest that walkers were more likely to choose longer paths if their legs were shorter (Figure 10). This suggests that the sensorimotor decision-making that supports walking complex terrain is highly body-specific, taking into account the details of a walker’s body, like leg length. This suggests that any cost function or model describing the sensorimotor decision-making processes that support walking in complex natural terrains will also need to be body-specific.
 
-## Cost functions in visually guided walking
+### Cost functions in visually guided walking
 
 While we do not know what contributes to the internal cost functions that determine walkers’ choices, the preference for flatter paths is likely driven in part by the energetic cost of stepping up or down. On flat ground, humans converge to an energetic optimum consistent with their passive dynamics (Kuo et al., 2005; Selinger et al., 2015; Finley et al., 2013; Lee and Harris, 2018). Deviations from this gait pattern, including turns and changes in speed, are energetically costly (Voloshina et al., 2013; Soule and Goldman, 1972). Recent work by Darici and Kuo, 2023, also showed that subjects are able to minimize energetic cost on uneven ground planes by modulating speed. Our findings suggest that walkers may be adjusting their behavior to minimize energetic costs in natural outdoor terrains as well. Future work should examine more directly how particular walking decisions impact energetic costs in natural outdoor terrains.
 
-## Path planning
+### Path planning
 
 Our analyses show that vision is used to locate flatter paths in upcoming steps. We found that the average step slope of the chosen path was significantly lower than simulated paths, suggesting that walkers were intentionally maintaining a flatter path. Furthermore, our findings suggest that walkers turn to avoid paths with large changes in terrain height. To accomplish this, walkers must plan ahead, demonstrating that planning is an important component of path selection in rugged terrain. Though this study has not explicitly examined the role of gaze in walking, future studies of gaze during walking will be critical to understanding how individuals perform path planning.
 
 Laboratory studies suggest that walkers need to look 2 steps ahead to preserve inverted pendulum dynamics (Matthis et al., 2017). Biomechanical models indicate that walkers can adjust their gait to accommodate upcoming obstacles and may plan up to 8 or 9 steps ahead (Darici and Kuo, 2023). Our previous work studying gaze suggests that, in rocky terrain, walkers distribute most of their gaze on the ground to footholds up to 5 steps ahead (Matthis et al., 2018; Bonnen et al., 2021). Because of the differences between these studies, it is difficult to say exactly what causes the discrepancy (5 steps vs. 9 steps) in the planning horizons reported in these two studies. However, there are notable differences between the laboratory obstacle paths they used and our natural environments. Their walking paths involved height changes of no more than 7.5 cm, the surfaces themselves were flat, and the path required no changes in direction. Our terrains involved greater height changes, irregular and sloping surfaces, large boulders, and frequent direction changes based on visual information. More complex terrains may also impose a greater load on visual working memory (Lin and Lin, 2016). Thus, a shorter planning horizon in our data might be expected as individuals adjust their planning horizon depending on the nature of the terrain. On the other hand, because there is no eye tracking in Darici and Kuo, 2023, we cannot rule out the possibility that these two planning horizons are in fact the same – individuals may be able to get information about 8–9 steps ahead from their peripheral vision. More study is needed on the details of planning horizons in walking and how individuals adjust them depending on the task and terrain.
 
-## Conclusion
+### Conclusion
 
 In conclusion, we have integrated eye tracking, motion capture, and photogrammetry to create a visuomotor dataset that includes gaze information, body position data, and accurate 3D terrain representations. The reconstructed 3D terrains were a valuable addition to our methodology because they allowed a much more direct, more precise investigation of the visual terrain features that are used to guide path choice. Previous investigations of walking in natural outdoor environments have been limited to video recordings. The reconstruction and integration procedures outlined in this paper should be generally useful for the analysis of visually guided behavior in natural environments. In our analyses, we observed that visual information about depth appeared to play a role in path choice. Despite the complexity of the sensory-motor decisions in natural, complex terrain, we observed that there were consistencies in the paths walkers chose. In particular, walkers chose to take more indirect routes to achieve flatter paths, which required them to plan ahead. Taken together, these findings suggest that walkers’ locomotor behavior in complex terrain reflects sensorimotor decision mechanisms that involve different costs, sensory and motor information, and path planning.
 
 ## Methods
 
-## Experimental data
+### Experimental data
 
 The data used here was collected by the authors in two separate studies, conducted in two separate locations: Austin, Texas (Matthis et al., 2022) and Berkeley, California (Bonnen et al., 2021). The studies were approved by the Institutional Review Boards at the University of Texas at Austin and the University of California, Berkeley, respectively. All participants gave informed consent and were treated according to the principles set forth in the Declaration of Helsinki of the World Medical Association. Both studies used the same eye and body tracking equipment as well as the same data collection methods. Additionally, both included multiple terrain conditions. One terrain condition common to both was rough terrain, which consisted of large rock obstacles with significant height deviations.
 
-## Data selection
+#### Data selection
 
 In our combined dataset, we included data from only (a) rough terrain, (b) participants walking with normal or corrected-to-normal vision, and (c) participants with scene videos of sufficiently high quality for terrain reconstruction. We therefore did not include any of the Berkeley data used to study the impact of binocular visual impairments. Further, we excluded one Austin participant and one Berkeley participant because the quality of their scene videos caused issues with the terrain reconstruction process, which was essential for the analyses we describe here. (More specifically, one Austin participant was excluded because the scene camera was angled too far upward, limiting the view of the ground, and one Berkeley participant was excluded because their scene videos were too low contrast due to the dim outdoor lighting conditions at the time of the recording).
 
-## Participants
+#### Participants
 
 We used data from 9 participants: 2 from the Austin study and 7 from the Berkeley study (Table 1). All had normal or corrected-to-normal vision. There were 5 male and 4 female subjects. They were 2354 years of age at the time of data collection, with an average age of 31 years (median: 27). Their legs were 81–103.5 cm long, with an average of 93.9 cm (median: 96.5 cm).
 
+**Table 1.**
+ Information about participants included in dataset.Table includes the location of data collection, key demographics, and the amount of data recorded per participant (quantified as the number of steps in rough terrain in participants’ processed data).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>TX</th>
+      <th>TX</th>
+      <th>CA</th>
+      <th>CA</th>
+      <th>CA</th>
+      <th>CA</th>
+      <th>CA</th>
+      <th>CA</th>
+      <th>CA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age</td>
+      <td>23</td>
+      <td>25</td>
+      <td>27</td>
+      <td>39</td>
+      <td>34</td>
+      <td>29</td>
+      <td>24</td>
+      <td>24</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>F</td>
+      <td>M</td>
+      <td>M</td>
+      <td>M</td>
+      <td>M</td>
+      <td>F</td>
+      <td>F</td>
+      <td>F</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Leg length (cm)</td>
+      <td>89</td>
+      <td>102.5</td>
+      <td>103.5</td>
+      <td>101</td>
+      <td>96.5</td>
+      <td>81</td>
+      <td>85</td>
+      <td>90</td>
+      <td>96.5</td>
+    </tr>
+    <tr>
+      <td>Step count</td>
+      <td>468</td>
+      <td>347</td>
+      <td>462</td>
+      <td>489</td>
+      <td>385</td>
+      <td>537</td>
+      <td>486</td>
+      <td>603</td>
+      <td>453</td>
+    </tr>
+  </tbody>
+</table>
+
 The amount of data recorded per participant varied since they were tasked with walking along loosely defined paths, rather than walking for a fixed duration, number of steps, etc. In Table 1, we represent the amount of data recorded via the number of steps in rough terrain in each participant’s processed data. In total, the dataset included 4230 steps. Per participant, there were 347–603 steps, with an average of 470 steps (median: 468). Overall, participants with longer legs took fewer steps (r=–0.57), and the Berkeley participants took approximately 125 steps more than Austin participants with similar leg lengths.
 
-## Equipment
+#### Equipment
 
 Eye movements were recorded using a Pupil Labs Core mobile eye tracker and the Pupil Capture app (Pupil Labs, Berlin, Germany). The eye tracker had two infrared, eye-facing cameras, which recorded videos of the eyes at 120 Hz with 640×480 pixel resolution. Additionally, there was an outward-facing camera mounted 3 cm above the right eye, which recorded the scene in front of the subject at 30 Hz with 1920×1080 pixel resolution and a 100° diagonal field of view. A pair of dilation glasses was fitted over the eyes and eye-facing cameras to protect the infrared eye cameras from interference due to the sun. For participants, this felt like wearing a pair of sunglasses.
 
@@ -181,13 +292,13 @@ Body movements were recorded using Motion Shadow’s full-body motion capture su
 
 In addition to the eye tracker and motion capture suit, subjects wore a backpack-mounted laptop, which was used to record all raw data. Importantly, using the same computer to record both data streams meant both were recording timestamps queried from the same internal clock. Their timestamps were therefore already synchronized.
 
-## Task
+#### Task
 
 At the beginning of each recording, participants performed a 9-point vestibulo-ocular reflex (VOR) calibration task. They were instructed to stand on a calibration mat 1.5 m from a calibration point marked on the mat in front of them. This distance was chosen based on the most frequent gaze distance in front of the body during natural walking in these terrains (Matthis et al., 2018). They were instructed to fixate on the calibration point while rotating their head along each of the eight principal winds, i.e., the four cardinal and four ordinal directions. Their resulting VOR eye movements were later used to calibrate the eye tracking data and to spatially align the eye and body data.
 
 Participants’ primary task was to walk along a trail. The Austin participants walked along a rocky, dried out creek bed in-between two specific points that the experimenters had marked (Figure 3). They traversed the trail three times in each direction, for a total of 6 traversals per subject. The Berkeley participants walked along a hiking trail in-between two distinctive landmarks. They traversed the trail once in each direction, for a total of 2 traversals per subject. The trail included pavement, flat terrain, medium terrain, and rough terrain, so as with the walk’s start and end points, the experimenters used existing landmarks in the environment to mark the transitions between terrain types. We found the sections of recordings marked as rough terrain and included only that subset of the data in this study.
 
-## Data processing
+#### Data processing
 
 Following data collection, we performed a post hoc eye tracking calibration using the 9-point VOR calibration task data. Per subject, we placed a reference marker on the calibration fixation target at 10 timepoints in the recording (corresponding to the 9 points of the VOR calibration task, plus an additional repeat of the center marker at the end). With the Pupil Player app in natural features mode (Pupil Labs, Berlin, Germany), we used those markers to perform gaze mapping, generating 3D gaze vectors for both eyes.
 
@@ -203,11 +314,11 @@ Additionally, we identified periods of time when subjects were potentially colle
 
 We identified fixations by applying an eye-in-orbit velocity threshold of 65 °/s and an acceleration threshold of 5 °/s2. (Note that the velocity threshold is quite high to avoid including the smooth counter-rotations that occur during eye stabilization). If both values were below threshold for a given frame, we classified that frame as containing a fixation; if not, the frame was classified as containing a saccade.
 
-## Terrain reconstruction
+### Terrain reconstruction
 
 To factor terrain height into our analyses, we needed information about the 3D structure of the terrain that participants walked over. Our dataset did not include data on terrain depth, but the scene videos recorded by the eye tracker’s outward-facing camera did provide us with two-dimensional (2D) images of the terrain. In principle, photogrammetry should allow us to extract accurate 3D information about the terrain’s structure from those 2D video frames, so our first step beyond the original analyses of these data (Bonnen et al., 2021; Matthis et al., 2022) was to use photogrammetry to generate 3D terrain reconstructions.
 
-## Photogrammetry pipeline
+#### Photogrammetry pipeline
 
 To reconstruct the 3D environment from our 2D videos, we used an open-source software package called Meshroom, which is based on the AliceVision Photogrammetric Computer Vision framework (Griwodz et al., 2021). Meshroom combines multiple image processing and computer vision algorithms, ultimately allowing the user to estimate both environmental structure and relative camera position from a series of images.
 
@@ -217,19 +328,23 @@ To summarize in greater detail: (1) Features that are minimally variant with res
 
 The most relevant outputs of this pipeline for our analyses are the 3D triangle mesh and the 6D camera trajectory (i.e. the estimated position and orientation of the camera, per input frame). We also used the textured triangle mesh but solely for visualization (e.g. Figure 3).
 
-## Reconstruction procedure
+#### Reconstruction procedure
 
 Prior to terrain reconstruction, we processed the raw scene videos recorded by the eye tracker’s outward-facing camera. We first used the software package ‘ffmpeg’ to extract the individual frames from the videos. We then undistorted each frame using a camera intrinsic matrix, which we estimated via checkerboard calibration (Qilong and Pless, 2004).
 
 Then, we used Meshroom to process the scene video frames, one traversal at a time, specifying the camera intrinsics (focal length in pixels and viewing angle in degrees) and using Meshroom’s default parameters. Meshroom processed the scene video frames according to the pipeline described above, producing both a terrain mesh and a 6D camera trajectory (3D position and 3D orientation), with one 6D vector for each frame of the original video. To give a sense of the mesh output, we have provided a rendered image of a small section of the textured Meshroom output in Figure 1.
 
-## Data alignment
+#### Data alignment
 
 Figure 2 illustrates the data alignment process which positions the body and eye movement data within the reconstructed terrain. Data alignment was performed on a per-traversal basis. First the body/eye tracking data was translated, pinning the location of the head node to Meshroom’s estimated camera position. Next, the orientation of the head node was matched to Meshroom’s estimated camera orientation by finding a single three-element Euler angle rotation that minimized the L2 error (i.e. the sum of squared errors) across frames using MATLAB’s ‘fminsearch’ function. After applying that rotation, the body/eye tracking data was scaled so that, across all heel strikes in a given recording, the distance between the skeleton’s heel and the closest point on the mesh at the time of that heel strike was minimized.
 
 A visualization of the aligned motion capture, eye tracking, and terrain data for one traversal of the Austin trail can be seen in Video 1. We can also project locations into the scene camera video. Video 2 shows an example of this, visualizing foothold locations in the scene camera’s view for one traversal of the Austin trial.
 
-## Evaluating terrain reconstruction
+![Video 2.](https://cdn.elifesciences.org/articles/91243/elife-91243-video2.mp4.jpg)
+
+**Video 2.:** Computed foothold locations are marked with cyan dots.
+
+#### Evaluating terrain reconstruction
 
 To evaluate the accuracy of the 3D reconstruction, we used the terrain meshes estimated from different traversals of the same terrain, both by an individual subject and also by the different subjects. We used only the Austin data here, as that dataset included 6 traversals per subject (vs. 2) and was collected over a much shorter time span (5 days) and thus was less likely to physically change.
 
@@ -237,7 +352,7 @@ The meshes were aligned using the open-source software package CloudCompare. To 
 
 We can then evaluate the reliability of terrain reconstruction by measuring the distance between nearest neighbors on the two meshes. We make two key comparisons: (1) measuring nearest neighbor distances for all points on the terrain mesh within 2 m of the path (see Figure 5A) and (2) measuring nearest neighbor distances for all footholds locations by taking the nearest neighbor distance for the mesh point closest to that foothold (see Figure 5B). For the path comparison, the median error was 4.5 cm, and the 95% quantile was 20.0 cm (Figure 5A). For the foothold comparison, the median error was 4.0 cm, and the 95% quantile was 16.8 cm (Figure 5B). To put this into context, the average foot of a person from North America is 25.8 cm (Jurca et al., 2019). In both cases, the majority of mesh errors fall below 20% of the average foot size.
 
-## Retinocentric analysis
+### Retinocentric analysis
 
 To assess whether depth features can be used to explain some variation in foothold selection, we trained a CNN to predict future foothold locations given the walker’s view of the terrain’s depth. This analysis involved computing both the retinocentric depth images that served as the input data (Figure 11A) and the foothold likelihood maps that served as target output for training (Figure 11B). The retinocentric depth images approximate the visual information subjects have when deciding on future foothold locations, and the foothold likelihood maps represent the subjects’ subsequent decisions. After training and testing the CNN, we quantified its prediction accuracy by calculating the AUC. With that metric, scores above chance (50%) would indicate that the depth information plays some role in determining where individuals will put their feet.
 
@@ -245,106 +360,258 @@ To assess whether depth features can be used to explain some variation in footho
 
 **Figure 11.:** Schematic shows the inputs and outputs for one example frame. (A) Input: retinocentric depth image. (B) Target output: foothold likelihood map. (C) Output: predicted foothold locations.
 
-## Retinocentric depth images
+#### Retinocentric depth images
 
 We computed subject-perspective depth images (e.g. Figure 11A) using the aligned eye tracking, motion capture, and photogrammetry data in the open-source 3D computer graphics software Blender. Per subject, we moved a virtual camera through the reconstructed terrain, updating its position and orientation in each frame based on Meshroom’s estimate of the scene camera’s location in the corresponding frame of the scene video. Blender’s ‘Z-buffer’ method then captured an image showing the depth of the 3D triangle mesh representation relative to the camera.
 
-The resulting egocentric depth images were then transformed to polar coordinates (polar angle θ and eccentricity ρ) to approximate a retinocentric perspective. We defined the diameter of images as 45° of visual angle, and we used 2D interpolation to compute the pixel values at each polar coordinate from the pixel values in Cartesian coordinates.
+The resulting egocentric depth images were then transformed to polar coordinates (polar angle $\theta$ and eccentricity $ρ$) to approximate a retinocentric perspective. We defined the diameter of images as 45° of visual angle, and we used 2D interpolation to compute the pixel values at each polar coordinate from the pixel values in Cartesian coordinates.
 
 The depth values in the images were then converted into relative depth values. To make that shift, we subtracted the gaze point’s depth (i.e. the value at the center pixel) from the entire depth image. The value at center thus became 0, and the rest of the depth values were relative to the depth of the gaze point.
 
-## Foothold likelihood maps
+#### Foothold likelihood maps
 
 To calculate the ground truth of the future foothold locations in each depth image, we found the point at which the line between the current camera position and the foothold intersected the camera’s image plane.
 
-The ground truth foothold locations in the world video frame were converted to likelihood maps (e.g. Figure 11B) by smoothing foothold locations with a Gaussian kernel: σ = 5 pixels. (In degrees of visual angle, the kernel size was roughly 1°. That value is not exact because the conversion between pixels and degrees is not constant throughout the visual field). This smoothing mitigated the impact of any noise in our estimation of foothold location to allow more robustness in the CNN learned features.
+The ground truth foothold locations in the world video frame were converted to likelihood maps (e.g. Figure 11B) by smoothing foothold locations with a Gaussian kernel: $\sigma$ = 5 pixels. (In degrees of visual angle, the kernel size was roughly 1°. That value is not exact because the conversion between pixels and degrees is not constant throughout the visual field). This smoothing mitigated the impact of any noise in our estimation of foothold location to allow more robustness in the CNN learned features.
 
-## Convolutional neural network
+#### Convolutional neural network
 
 The retinocentric depth images and foothold likelihood maps were then used to train a custom CNN to predict the probability that each location in the retinocentric depth images was a foothold location. The network input was a depth image (Figure 11A), and the target output was a foothold likelihood map (Figure 11B).
 
 The CNN had a convolutional-deconvolutional architecture with three convolutional layers followed by three transposed convolutional layers (Table 2). Training was performed using KL divergence between the CNN output (Figure 11C) and the foothold likelihood maps (Figure 11B). Data was split so that half of the pairs of depth images and likelihood maps were used to train the network and the other half was reserved for testing. This split ensured that the network was tested on terrain that it had not previously ‘seen’.
 
+**Table 2.**
+ Layers of custom convolutional neural network (CNN).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Output shape</th>
+      <th># Params</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Conv2D</td>
+      <td>(100, 100, 4)</td>
+      <td>404</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(100, 100, 4)</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>MaxPooling2D</td>
+      <td>(50, 50, 4)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Conv2D</td>
+      <td>(50, 50, 8)</td>
+      <td>3208</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(50, 50, 8)</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>MaxPooling2D</td>
+      <td>(25, 25, 8)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Conv2D</td>
+      <td>(25, 25, 16)</td>
+      <td>12,816</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(25, 25, 16)</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>Conv2DTranspose</td>
+      <td>(25, 25, 16)</td>
+      <td>25,616</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(25, 25, 16)</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>UpSampling2D</td>
+      <td>(50, 50, 16)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Conv2DTranspose</td>
+      <td>(50, 50, 8)</td>
+      <td>12,808</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(50, 50, 8)</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>UpSampling2D</td>
+      <td>(100, 100, 8)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Conv2DTranspose</td>
+      <td>(100, 100, 4)</td>
+      <td>3204</td>
+    </tr>
+    <tr>
+      <td>Conv2DTranspose</td>
+      <td>(100, 100, 1)</td>
+      <td>401</td>
+    </tr>
+    <tr>
+      <td>BatchNormalization</td>
+      <td>(100, 100, 1)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Flatten</td>
+      <td>(10,000)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Softmax</td>
+      <td>(10,000)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Reshape</td>
+      <td>(100, 100)</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
 To evaluate performance, we calculated the AUC per depth image. The true foothold locations per image were known, and the CNN generated a probability per pixel per image. To generate the ROC curve, we treated the CNN task as a binary classification of pixels, and we calculated the rate of false positives and true positives at different probability criterion values, increasing from 0 to 1. Calculating AUC was then just a matter of computing the area under the resulting ROC curve.
 
-## Step analysis
+### Step analysis
 
 We sought to better understand how subjects chose their footholds by analyzing the properties of their chosen steps and step sequences. Throughout this work, a foothold location is defined as the 3D position of the left or right foot marker at the time of heel strike, and a step is defined as the transition between two footholds. To analyze sets of steps, we segmented participants’ paths into 5-step sequences, consisting of 6 consecutive footholds.
 
-## Step properties
+#### Step properties
 
 For each step in the dataset, we computed seven properties: distance, ground distance, direction, goal direction, deviation from goal, height, and slope.
 
-To illustrate how we compute a step’s properties, consider a step vector s→ that starts at a foothold with coordinates (x1,y1,z1) and ends at a foothold with coordinates (x2,y2,z2), where the y-axis corresponds to gravity.
+To illustrate how we compute a step’s properties, consider a step vector $s→$ that starts at a foothold with coordinates $(x_{1},y_{1},z_{1})$ and ends at a foothold with coordinates $(x_{2},y_{2},z_{2})$, where the y-axis corresponds to gravity.
 
-## In 3D
+##### In 3D
 
-We define step distance D as the magnitude of step vector s→, i.e., the 3D Euclidean distance between the start and end footholds:(1)D=|s→|=(x2−x1)2+(y2−y1)2+(z2−z1)2
+We define step distance $D$ as the magnitude of step vector $s→$, i.e., the 3D Euclidean distance between the start and end footholds:
 
-## In 2D, from overhead
+$$
+D=|s→|=\sqrt{(x_{2}−x_{1})^{2}+(y_{2}−y_{1})^{2}+(z_{2}−z_{1})^{2}}
+$$
 
-To focus on the progression of the step along the subject’s route and ignore the step’s vertical component, we project step vector s→ onto the ground plane (xz-space), producing ground vector g→. We define step ground distance G as the magnitude of ground vector g→, i.e., the 2D Euclidean distance in xz-space between the start and end footholds:(2)G=|g→|=(xB−xA)2+(zB−zA)2
+##### In 2D, from overhead
 
-We define step direction γ as the direction of ground vector g→:(3)γ=arctan⁡zB−zAxB−xA
+To focus on the progression of the step along the subject’s route and ignore the step’s vertical component, we project step vector $s→$ onto the ground plane ($xz$-space), producing ground vector $g→$. We define step ground distance $G$ as the magnitude of ground vector $g→$, i.e., the 2D Euclidean distance in $xz$-space between the start and end footholds:
 
-We then consider the end point of the current terrain traversal, foothold E. Along the ground plane, the vector e→ connects the step’s starting foothold (xA,zA) to that traversal’s end point (xE,zE). That vector represents the most direct path the participant could take to reach their current goal. We refer to the direction of vector e→ as the goal direction ω:(4)ω=arctan⁡zE−zAxE−xA
+$$
+G=|g→|=\sqrt{(x_{B}−x_{A})^{2}+(z_{B}−z_{A})^{2}}
+$$
 
-We use that angle to calculate step deviation from goal δ, which we define as the angle between the step direction γ and goal direction ω:(5)δ=γ−ω
+We define step direction $\gamma$ as the direction of ground vector $g→$:
 
-## In 2D, from the side
+$$
+\gamma=arctan⁡\frac{z_{B}−z_{A}}{x_{B}−x_{A}}
+$$
 
-To analyze the step’s vertical component, we calculate step height Δh by finding the change in vertical position between footholds A and B:(6)Δh=yB−yA
+We then consider the end point of the current terrain traversal, foothold $E$. Along the ground plane, the vector $e→$ connects the step’s starting foothold $(x_{A},z_{A})$ to that traversal’s end point $(x_{E},z_{E})$. That vector represents the most direct path the participant could take to reach their current goal. We refer to the direction of vector $e→$ as the goal direction $\omega$:
 
-We then compute step slope by dividing step height Δh by step distance D:(7)θ=arcsin⁡ΔhD
+$$
+\omega=arctan⁡\frac{z_{E}−z_{A}}{x_{E}−x_{A}}
+$$
 
-## Properties of step sequences
+We use that angle to calculate step deviation from goal $\delta$, which we define as the angle between the step direction $\gamma$ and goal direction $\omega$:
+
+$$
+\delta=\gamma−\omega
+$$
+
+##### In 2D, from the side
+
+To analyze the step’s vertical component, we calculate step height $Δh$ by finding the change in vertical position between footholds $A$ and $B$:
+
+$$
+Δh=y_{B}−y_{A}
+$$
+
+We then compute step slope by dividing step height $Δh$ by step distance $D$:
+
+$$
+\theta=arcsin⁡\frac{Δh}{D}
+$$
+
+### Properties of step sequences
 
 Step sequences (sometimes also called paths or path segments) are composed of a series of steps. In this paper, we primarily focused on 5-step sequences. We calculated two key properties: mean slope and tortuosity.
 
-## Mean slope
+#### Mean slope
 
-Each step sequence has a mean slope, θ¯, which is defined as the average step slope across steps within the sequence (Figure 12):(8)θ¯=∑inθin
+Each step sequence has a mean slope, $\theta¯$, which is defined as the average step slope across steps within the sequence (Figure 12):
+
+$$
+\theta¯=\frac{\sumin\theta_{i}}{n}
+$$
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/91243/elife-91243-fig12-v1.jpg)
 
 **Figure 12.:** To calculate the slope of a step sequence – chosen or simulated – we first calculated the step slope for each step in the path, and we then averaged the absolute values of those slopes.
 
-## Tortuosity
+#### Tortuosity
 
-We quantified the curvature of each step sequence by calculating tortuosity, T:(9)T=∑inDiDs
+We quantified the curvature of each step sequence by calculating tortuosity, $T$:
 
-where n is the number of steps in the sequence, Di is the magnitude of a given step vector, and Ds is the magnitude of the vector connecting the start and end foothold locations.
+$$
+T=\frac{\suminD_{i}}{D_{s}}
+$$
 
-Thus, we quantify tortuosity as the ratio of the cumulative step distance to the distance between the first and final footholds. This metric is the inverse of the straightness index formula proposed in Batschelet, 1981, which has been shown to be a reliable estimate of the tortuosity of oriented paths (Benhamou, 2004). A tortuosity of 1 indicates a straight path, while a tortuosity greater than 1 indicates a curved path. A perfect semi-circle would have a tortuosity of π/2 (approximately 1.57), and a circle would be infinitely tortuous.
+where $n$ is the number of steps in the sequence, $D_{i}$ is the magnitude of a given step vector, and $D_{s}$ is the magnitude of the vector connecting the start and end foothold locations.
 
-## Path simulation
+Thus, we quantify tortuosity as the ratio of the cumulative step distance to the distance between the first and final footholds. This metric is the inverse of the straightness index formula proposed in Batschelet, 1981, which has been shown to be a reliable estimate of the tortuosity of oriented paths (Benhamou, 2004). A tortuosity of 1 indicates a straight path, while a tortuosity greater than 1 indicates a curved path. A perfect semi-circle would have a tortuosity of $\pi/2$ (approximately 1.57), and a circle would be infinitely tortuous.
+
+### Path simulation
 
 We sought to evaluate differences between the paths subjects chose and the alternative paths they could have chosen. To do so, we simulated 5-step sequences and compared the properties of chosen paths to those of simulated paths.
 
-## Identifying viable footholds
+#### Identifying viable footholds
 
 Previous work has found that subjects are able to walk on surfaces slanted up to approximately 33° (Kinsella-Shaw et al., 1992). We thus constrained possible foothold locations to those with a local surface slant below that value.
 
 To calculate the slant of possible footholds, we computed the surface normal vector for each triangle in the 3D terrain mesh. We then calculated the mean local surface slant for each point in the mesh’s point cloud representation by averaging the surface slants of all triangles within a radius of 1 foot length (25.8 cm).
 
-## Identifying viable steps
+#### Identifying viable steps
 
 After identifying viable foothold locations, viable steps between viable foothold locations were determined based on three constraints (Figure 7). Per subject, we found the distributions of (a) step slope (Equation 7), (b) step ground distance (Equation 2) relative to that participant’s leg length, and (c) step deviation from goal (Equation 5). We computed the maximum observed absolute values, and we then deemed a step viable only if its properties fell within those maxima.
 
-## Simulating possible paths
+#### Simulating possible paths
 
-## Paths with a fixed start point and a random end point
+##### Paths with a fixed start point and a random end point
 
 For each foothold that a subject chose, we simulated possible alternative paths consisting of 5 steps (i.e. 6 footholds). These simulated path segments started at the chosen foothold, and subsequent footholds were iteratively selected, in accordance with the foothold constraint and step constraints defined above. The resulting set of path segments could then be directly compared to the path segment that the walker actually chose.
 
-## Paths with fixed start and end points
+##### Paths with fixed start and end points
 
 We also simulated paths that started and ended at chosen foothold locations. To accomplish that, we treated the set of possible footholds and viable steps between them as a directed graph. We then used MATLAB’s ‘maxflow’ function to find the subset of footholds that have non-zero flow values in a directed graph between the two selected footholds (starting point and ending point). The ‘maxflow’ function then returns a set of footholds that can be visited from the starting foothold and still have available paths to the final foothold (i.e. 6th foothold in path).
 
 Possible paths connecting the two end points of the actual path are then generated from this subset of possible foothold locations following the procedure in the previous section, iteratively selecting footholds in accordance with the step constraints defined above.
 
-## Estimating straight path slope
+### Estimating straight path slope
 
 When walking from one point to another in flat terrain, straight paths are almost certainly the preferable option. In rough terrain, however, there may be obstacles that make walking straight impossible – or at least less preferable – than taking a slightly longer curved path. To analyze this potential trade-off, for each step sequence, we estimated the slope a walker would encounter if they tried to take a relatively straight path.
 
-To compute those values, we first found the median tortuosity of all chosen 5-step sequences in a particular terrain traversal (i.e. across a particular mesh). That gave us a conservative, terrain-specific tortuosity threshold that we could use to determine which of the possible paths were relatively straight. For each step sequence in that traversal, we then identified simulated paths with a tortuosity below that threshold and calculated the average of their mean step slopes (θ¯; Equation 8). The resulting values are treated as the average step slope the subject would encounter if they tried to take a straighter path for that segment of terrain.
+To compute those values, we first found the median tortuosity of all chosen 5-step sequences in a particular terrain traversal (i.e. across a particular mesh). That gave us a conservative, terrain-specific tortuosity threshold that we could use to determine which of the possible paths were relatively straight. For each step sequence in that traversal, we then identified simulated paths with a tortuosity below that threshold and calculated the average of their mean step slopes ($\theta¯$; Equation 8). The resulting values are treated as the average step slope the subject would encounter if they tried to take a straighter path for that segment of terrain.

@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.01299.001 Bacteriophage BPP-1 infects and kills Bordetella species that cause whooping cough. Its diversity-generating retroelement (DGR) provides a naturally occurring phage-display system, but engineering efforts are hampered without atomic structures. Here, we report a cryo electron microscopy structure of the BPP-1 head at 3.5 Å resolution. Our atomic model shows two of the three protein folds representing major viral lineages: jellyroll for its cement protein (CP) and HK97-like (‘Johnson’) for its major capsid protein (MCP). Strikingly, the fold topology of MCP is permuted non-circularly from the Johnson fold topology previously seen in viral and cellular proteins. We illustrate that the new topology is likely the only feasible alternative of the old topology. β-sheet augmentation and electrostatic interactions contribute to the formation of non-covalent chainmail in BPP-1, unlike covalent inter-protein linkages of the HK97 chainmail. Despite these complex interactions, the termini of both CP and MCP are ideally positioned for DGR-based phage-display engineering. DOI: http://dx.doi.org/10.7554/eLife.01299.001
+Bacteriophage BPP-1 infects and kills Bordetella species that cause whooping cough. Its diversity-generating retroelement (DGR) provides a naturally occurring phage-display system, but engineering efforts are hampered without atomic structures. Here, we report a cryo electron microscopy structure of the BPP-1 head at 3.5 Å resolution. Our atomic model shows two of the three protein folds representing major viral lineages: jellyroll for its cement protein (CP) and HK97-like (‘Johnson’) for its major capsid protein (MCP). Strikingly, the fold topology of MCP is permuted non-circularly from the Johnson fold topology previously seen in viral and cellular proteins. We illustrate that the new topology is likely the only feasible alternative of the old topology. β-sheet augmentation and electrostatic interactions contribute to the formation of non-covalent chainmail in BPP-1, unlike covalent inter-protein linkages of the HK97 chainmail. Despite these complex interactions, the termini of both CP and MCP are ideally positioned for DGR-based phage-display engineering.
 
 ## Introduction
 
@@ -36,71 +36,166 @@ In this study, we report the three-dimensional (3D) structure of the BPP-1 head 
 
 ## Results
 
-## Identification of BPP-1 head proteins by mass spectrometry
+### Identification of BPP-1 head proteins by mass spectrometry
 
-Genomic analysis indicated that the 42.5 kb BPP-1 genome encodes up to 50 viral proteins (
+Genomic analysis indicated that the 42.5 kb BPP-1 genome encodes up to 50 viral proteins (Liu et al., 2004). To identify the genes coding for MCP and CP, we first carried out SDS-PAGE analysis and showed that the two most abundant protein bands have molecular masses of 36.3 kD and 15.2 kD (Figure 1A). Mass spectrometry analysis confirmed that the bands correspond to Bbp17 and Bbp16, respectively (Figure 1B). The theoretical molecular masses of Bbp17 and Bbp16 (i.e., 36417.2D and 14458.3D) match their apparent molecular masses by SDS-PAGE, suggesting that the two capsid proteins in the mature bacteriophage particles are not cleaved (Figure 1A). Finally, to verify that genes bbp16 and bbp17 encode components essential for forming infectious phage particles, we constructed in-frame deletions of the bbp16 and bbp17 genes. As expected, no infectious phage particles were produced from BPP-1Δbrt lysogens carrying deletions in bbp16 or bbp17, confirming that both MCP (Bbp17) and CP (Bbp16) are required for phage production. For the sake of clarity and ease of comparison with structural homologs of other viruses, we will continue to use CP and MCP to refer to Bbp16 and Bbp17 of BPP-1, respectively. As shown below, these assignments are directly verified through atomic modeling in which side-chain structures of amino acid residues in sequences match side-chain densities visualized in the cryoEM map (Figure 2).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig1-v1.jpg)
 
-**Figure 1.:** (A) SDS-PAGE of BPP-1 virion proteins stained with Coomassie blue; lane 1: molecular mass standards; lane 2: BPP-1 virion proteins. The two most abundant proteins of the BPP-1 virion are identified by mass spectrometry (B) to be Bbp17 (MCP) and Bbp16 (CP) (indicated by arrows). (B) Mass spectrometry result of Bbp16 (CP). The sequence is shown with individual peptides identified by mass spectrometry drawn as lines below their corresponding sequences, with line thickness and darkness representing relative abundance in the mass spectrometry profiles (thicker lines mean more abundant). Arrows indicate the two peptide fragments that run past the end of the rows.DOI: http://dx.doi.org/10.7554/eLife.01299.003
+**Figure 1.:** (A) SDS-PAGE of BPP-1 virion proteins stained with Coomassie blue; lane 1: molecular mass standards; lane 2: BPP-1 virion proteins. The two most abundant proteins of the BPP-1 virion are identified by mass spectrometry (B) to be Bbp17 (MCP) and Bbp16 (CP) (indicated by arrows). (B) Mass spectrometry result of Bbp16 (CP). The sequence is shown with individual peptides identified by mass spectrometry drawn as lines below their corresponding sequences, with line thickness and darkness representing relative abundance in the mass spectrometry profiles (thicker lines mean more abundant). Arrows indicate the two peptide fragments that run past the end of the rows.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig2-v1.jpg)
 
-**Figure 2.:** (A) Representative cryoEM image (defocus–1.6 μm) of the BPP-1. (B) CryoEM density of the BPP-1 head shown as radially-colored surface representation. See also Video 1. (C) R-factors (red) and Fourier shell correlation coefficients (FSC) (black) as a function of spatial frequency between maps from half datasets. (D) Close-up view of a local region of MCP, with densities of many amino acid side chains clearly resolved in both the helix and the loop. The atomic model is shown as ribbons and sticks with amino acid residues labeled.DOI: http://dx.doi.org/10.7554/eLife.01299.004
+**Figure 2.:** (A) Representative cryoEM image (defocus–1.6 μm) of the BPP-1. (B) CryoEM density of the BPP-1 head shown as radially-colored surface representation. See also Video 1. (C) R-factors (red) and Fourier shell correlation coefficients (FSC) (black) as a function of spatial frequency between maps from half datasets. (D) Close-up view of a local region of MCP, with densities of many amino acid side chains clearly resolved in both the helix and the loop. The atomic model is shown as ribbons and sticks with amino acid residues labeled.
 
-## CryoEM structure of the BPP-1 head
+### CryoEM structure of the BPP-1 head
 
-We reconstructed the 3D structure of the BPP-1 icosahedral head by single-particle cryoEM (Figure 2, Video 1). The quality of MCP and CP densities was further improved by additional averaging of seven CP or six hexameric MCP subunits (except for the pentameric MCP) in the asymmetric unit (Zhang et al., 2010a). Based on the reference-based Fourier shell correlation criterion (FSC = 0.143), the resolution of the capsid is 3.58 Å (Figure 2C) (Rosenthal and Henderson, 2003). Consistently, the R-factors of atomic models are better than 0.5 at the zone of 1/3.5 Å (for capsid) or 1/3.4 Å (for averaged CP and MCP) (Figure 2C; Table 1), which correspond to a Fourier shell correlation (FSC) coefficient greater than 0.143 (Wolf et al., 2010). Therefore, the resolution of the capsid and averaged densities were estimated to be ∼3.5 Å and ∼3.4 Å, respectively. This assessment of resolution is also consistent with clearly visible side chain densities of bulky amino acid residues, such as arginine and phenylalanine (Figures 2D and 4E–F; Videos 2–4).10.7554/eLife.01299.005Video 1.Shaded surface view of the cryoEM density of the BPP-1 capsid at 3.5 Å resolution.The map is color-coded according to the radius. Related to Figure 2.DOI: http://dx.doi.org/10.7554/eLife.01299.00510.7554/eLife.01299.006Table 1.Statistics of atomic model refinement with PhenixDOI: http://dx.doi.org/10.7554/eLife.01299.006CP (Bbp16)MCP (Bbp17)Asymmetric unit (7CPs+7MCPs)Residues resolved1–1407–3311–140 (CP); 5–331 (MCP)Resolution (Å)3.43.43.5Rwork (overall: 40–3.4 Å)0.280.27 (0.31*)0.26Rfree (overall: 40–3.4 Å)0.280.28 (0.30*)0.26Rwork (best resolution zone)0.47 (1/3.4 Å)0.50 (0.52*) (1/3.4 Å)0.51 (1/3.5 Å)Rfree (best resolution zone)0.45 (1/3.4 Å)0.45 (0.50*) (1/3.4 Å)0.47 (1/3.5 Å)Ramachandran plot valuesMost favored (%)85.586.788.0Generously allowed (%)12.311.810.3Disallowed regions (%)2.21.51.7*R-factors of the interchanged model by forcing the BPP-1 MCP to trace the HK97 topology.10.7554/eLife.01299.007Video 2.Shaded surface view of the cryoEM density of the averaged CP at 3.4 Å resolution (gray) superimposed with the atomic model CP (ribbon and sticks).Related to Figure 3.DOI: http://dx.doi.org/10.7554/eLife.01299.00710.7554/eLife.01299.008Video 3.Shaded surface view of the cryoEM density of the averaged MCP at 3.4 Å resolution.The three structural elements are color coded (cyan, purple and green) according to the structural elements of the Johnson fold as illustrated in Figure 4. Related to Figure 4.DOI: http://dx.doi.org/10.7554/eLife.01299.00810.7554/eLife.01299.009Video 4.CryoEM density of MCP around the positions of permutation.The three structural elements are color coded (cyan, purple, and green) according to the structural elements of the Johnson fold as illustrated in Figure 4. Related to Figure 4.DOI: http://dx.doi.org/10.7554/eLife.01299.009
+We reconstructed the 3D structure of the BPP-1 icosahedral head by single-particle cryoEM (Figure 2, Video 1). The quality of MCP and CP densities was further improved by additional averaging of seven CP or six hexameric MCP subunits (except for the pentameric MCP) in the asymmetric unit (Zhang et al., 2010a). Based on the reference-based Fourier shell correlation criterion (FSC = 0.143), the resolution of the capsid is 3.58 Å (Figure 2C) (Rosenthal and Henderson, 2003). Consistently, the R-factors of atomic models are better than 0.5 at the zone of 1/3.5 Å (for capsid) or 1/3.4 Å (for averaged CP and MCP) (Figure 2C; Table 1), which correspond to a Fourier shell correlation (FSC) coefficient greater than 0.143 (Wolf et al., 2010). Therefore, the resolution of the capsid and averaged densities were estimated to be ∼3.5 Å and ∼3.4 Å, respectively. This assessment of resolution is also consistent with clearly visible side chain densities of bulky amino acid residues, such as arginine and phenylalanine (Figures 2D and 4E–F; Videos 2–4).
+
+![Video 1.](https://cdn.elifesciences.org/articles/01299/elife-01299-media1.wmv.jpg)
+
+**Video 1.:** The map is color-coded according to the radius. Related to Figure 2.
+
+**Table 1.**
+ Statistics of atomic model refinement with Phenix
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CP (Bbp16)</th>
+      <th>MCP (Bbp17)</th>
+      <th>Asymmetric unit (7CPs+7MCPs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Residues resolved</td>
+      <td>1–140</td>
+      <td>7–331</td>
+      <td>1–140 (CP); 5–331 (MCP)</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>3.4</td>
+      <td>3.4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Rwork (overall: 40–3.4 Å)</td>
+      <td>0.28</td>
+      <td>0.27 (0.31*)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Rfree (overall: 40–3.4 Å)</td>
+      <td>0.28</td>
+      <td>0.28 (0.30*)</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Rwork (best resolution zone)</td>
+      <td>0.47 (1/3.4 Å)</td>
+      <td>0.50 (0.52*) (1/3.4 Å)</td>
+      <td>0.51 (1/3.5 Å)</td>
+    </tr>
+    <tr>
+      <td>Rfree (best resolution zone)</td>
+      <td>0.45 (1/3.4 Å)</td>
+      <td>0.45 (0.50*) (1/3.4 Å)</td>
+      <td>0.47 (1/3.5 Å)</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot values</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Most favored (%)</td>
+      <td>85.5</td>
+      <td>86.7</td>
+      <td>88.0</td>
+    </tr>
+    <tr>
+      <td>Generously allowed (%)</td>
+      <td>12.3</td>
+      <td>11.8</td>
+      <td>10.3</td>
+    </tr>
+    <tr>
+      <td>Disallowed regions (%)</td>
+      <td>2.2</td>
+      <td>1.5</td>
+      <td>1.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*R-factors of the interchanged model by forcing the BPP-1 MCP to trace the HK97 topology._
+
+![Video 2.](https://cdn.elifesciences.org/articles/01299/elife-01299-media2.avi.jpg)
+
+**Video 2.:** Related to Figure 3.
+
+![Video 3.](https://cdn.elifesciences.org/articles/01299/elife-01299-media3.avi.jpg)
+
+**Video 3.:** The three structural elements are color coded (cyan, purple and green) according to the structural elements of the Johnson fold as illustrated in Figure 4. Related to Figure 4.
+
+![Video 4.](https://cdn.elifesciences.org/articles/01299/elife-01299-media4.avi.jpg)
+
+**Video 4.:** The three structural elements are color coded (cyan, purple, and green) according to the structural elements of the Johnson fold as illustrated in Figure 4. Related to Figure 4.
 
 Arranged on a T = 7 icosahedral shell, MCP and CP each have seven copies or conformers in each asymmetric unit. MCP alone forms a complete icosahedral shell without any noticeable gaps. CP forms dimers bound to the underlying MCP shell at local and icosahedral twofold axes, making the maximum diameter of the BPP-1 (670 Å) bigger than that of the HK97 capsid (659 Å). When CP dimers are computationally removed, the overall size and architecture of the BPP-1 capsid is almost identical to that of the HK97 capsid, and the backbone model of the HK97 capsid is nearly super-imposable with the BPP-1 density map with minor mismatches. Based on the averaged density maps of CP and MCP, we built initial atomic models of CP and MCP with Coot (Emsley and Cowtan, 2004), and refined them with Phenix (Adams et al., 2010). Models of the seven MCP and CP monomers within the asymmetric unit were subsequently obtained by adjusting the initial MCP and CP models with Coot and refined with Phenix, with overall R/R-free factors of 0.26/0.27 at 3.5 Å resolution (Table 1) (‘Materials and methods’).
 
-## Cement protein Bbp16 has the jellyroll fold
+### Cement protein Bbp16 has the jellyroll fold
 
-We traced 139 (Met1 to Ile139) of the 140 amino acid residues of the cement protein Bbp16 in the cryoEM density map. CP contains two β-sheets each consisting of four anti-parallel strands, and a ∼36-Å long extension (Thr125 to Ala140) with the C-terminus exposed on the external surface (
+We traced 139 (Met1 to Ile139) of the 140 amino acid residues of the cement protein Bbp16 in the cryoEM density map. CP contains two β-sheets each consisting of four anti-parallel strands, and a ∼36-Å long extension (Thr125 to Ala140) with the C-terminus exposed on the external surface (Figure 3; Video 2). The backbones of the seven CP subunits in the asymmetric unit, including their C-terminal extensions, are nearly identical, with an RMSD of 0.4–0.66 Å when superimposed (Figure 3D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig3-v1.jpg)
 
-**Figure 3.:** (A) CryoEM density map of CP (3.4 Å resolution, average of all seven conformers in an asymmetric unit). See also Video 2. (B) Ribbon model of CP, showing its jellyroll fold. Eight β-strands (B, C, D, E, F, G, H, I) fold into the two characteristic β-sheets (BIDG and CHEF), forming a ‘jellyroll’ (Harrison et al., 1978; Abad-Zapatero et al., 1980; Hogle et al., 1985; Rossmann et al., 1985). The N- and C-termini are marked by red and yellow balls, respectively. (C) The two F strands (green) of two neighboring CP monomers form hydrogen bonds in an antiparallel fashion, creating an augmented, 8-stranded β-sheet and a CP dimer. (D) Ribbon diagrams of the atomic models of the seven CP conformers of BPP-1.DOI: http://dx.doi.org/10.7554/eLife.01299.010
+**Figure 3.:** (A) CryoEM density map of CP (3.4 Å resolution, average of all seven conformers in an asymmetric unit). See also Video 2. (B) Ribbon model of CP, showing its jellyroll fold. Eight β-strands (B, C, D, E, F, G, H, I) fold into the two characteristic β-sheets (BIDG and CHEF), forming a ‘jellyroll’ (Harrison et al., 1978; Abad-Zapatero et al., 1980; Hogle et al., 1985; Rossmann et al., 1985). The N- and C-termini are marked by red and yellow balls, respectively. (C) The two F strands (green) of two neighboring CP monomers form hydrogen bonds in an antiparallel fashion, creating an augmented, 8-stranded β-sheet and a CP dimer. (D) Ribbon diagrams of the atomic models of the seven CP conformers of BPP-1.
 
 The topological organization of strands in the two β sheets (i.e., BIDG and CHEF; Figure 3B) of CP is identical to that of the jellyroll motif. This structural motif was first discovered in spherical RNA viruses (Harrison et al., 1978; Abad-Zapatero et al., 1980; Hogle et al., 1985; Rossmann et al., 1985; Chelvanayagam et al., 1992), and subsequently found widely in other DNA viruses, such as ϕX174, bacteriophage PRD1 and human adenovirus (McKenna et al., 1992; Abrescia et al., 2004; Zubieta et al., 2005; Liu et al., 2010; Krupovic and Bamford, 2011). Unlike its role as the major capsid protein in the above-mentioned viruses, the jellyroll motif in BPP-1 forms an auxiliary protein to stabilize the viral capsid made by proteins of another fold. Notably, in some dsRNA viruses, the jellyroll motif has been adopted as a domain in a stabilizer/adaptor protein that forms trimers located at an intermediate layer of viral capsids (Grimes et al., 1998; Mathieu et al., 2001; Liemann et al., 2002; Zhang et al., 2010a). In BPP-1, CP subunits form a dimer through β-sheet augmentation between the F-strands of two CHEF sheets, forming an 8 stranded β-sheet visible on the external surface (Figure 3C). Although the BIDG sheet of the jellyroll motif faces but do not interact with the underneath MCP shell, instead, as described in detail below, CP interacts with the MCP shell mainly through its N- and C-termini as well as a linking loop between its β-strands B and C.
 
-## Structure of the major capsid protein Bbp17 reveals a new topology of the Johnson fold
+### Structure of the major capsid protein Bbp17 reveals a new topology of the Johnson fold
 
-We traced 327 amino acid residues (Ser5 to Val331) of the total 331 residues of the major capsid protein Bbp17 in the cryoEM density map (
+We traced 327 amino acid residues (Ser5 to Val331) of the total 331 residues of the major capsid protein Bbp17 in the cryoEM density map (Figure 4; Video 3). Although little sequence identity (CLUSTALW score = 5) was detected between BPP-1 MCP and HK97 gp5 proteins with ClustalW (Thompson et al., 1994), the overall architecture of the MCP resembles that of HK97 gp5 (Wikoff et al., 2000) (Figure 4—figure supplement 1A), with an axial (A) domain, a peripheral (P) domain and an extended loop (E-loop) (Figure 4C). Both the subunit organization and domain orientations of the seven MCPs in the BPP-1 capsid are also identical to those of the corresponding gp5 subunits in the HK97 capsid. The A-domain contains a 5-stranded β sheet flanked by two helices on one side and a C-terminal loop on the other. The P-domain contains a characteristic long, 7-turn helix sandwiched by a three-stranded β sheet and the N-terminal loop. The E-loop contains a single amino acid sequence segment folded into an extended hairpin loop projecting from a 2-stranded β sheet. Notably, both N- and C-termini of MCP are exposed on the external surface of the capsid, thus are accessible for tethering peptides in phage-display applications.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig4-v1.jpg)
 
-**Figure 4.:** (A) Sequence and secondary structure assignment of MCP. α-helices are marked by cylinders, β-strands by arrows, and loops by thin lines. The three structural elements of the Johnson fold, including N-, β- and α-elements, are shown in cyan, purple and green, respectively. (B) CryoEM density map of MCP (3.4 Å resolution, average of the six hexon MCP subunits in an asymmetric unit) shown as shaded surface using the same color coding of (A). The dashed box is shown in stereo in (D) contains the point of permutation (yellow arrow). See also Videos 3 and 4. (C) Ribbon diagram of the MCP atomic model with the three structural elements of the Johnson fold colored as in (A). (D) BPP-1 MCP density within the dash-box drawn in (B), showing the positions of the permutation (indicated by a yellow arrow in [B]) through which the N-element (cyan) is connected to the β-element (purple), instead of to helix α5 (green, far away), as in HK97 gp5. (E) CryoEM density (mesh) of the βG strand in (D) superimposed with its atomic model (sticks). (F) CryoEM density (mesh) of the α5 helix in (D) superimposed with its atomic model (ribbon with sticks).DOI: http://dx.doi.org/10.7554/eLife.01299.011
+**Figure 4.:** (A) Sequence and secondary structure assignment of MCP. α-helices are marked by cylinders, β-strands by arrows, and loops by thin lines. The three structural elements of the Johnson fold, including N-, β- and α-elements, are shown in cyan, purple and green, respectively. (B) CryoEM density map of MCP (3.4 Å resolution, average of the six hexon MCP subunits in an asymmetric unit) shown as shaded surface using the same color coding of (A). The dashed box is shown in stereo in (D) contains the point of permutation (yellow arrow). See also Videos 3 and 4. (C) Ribbon diagram of the MCP atomic model with the three structural elements of the Johnson fold colored as in (A). (D) BPP-1 MCP density within the dash-box drawn in (B), showing the positions of the permutation (indicated by a yellow arrow in [B]) through which the N-element (cyan) is connected to the β-element (purple), instead of to helix α5 (green, far away), as in HK97 gp5. (E) CryoEM density (mesh) of the βG strand in (D) superimposed with its atomic model (sticks). (F) CryoEM density (mesh) of the α5 helix in (D) superimposed with its atomic model (ribbon with sticks).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Superposition of the structure of HK97 gp5 (blue) with that of BPP-1 MCP (cyan, purple, and green, highlighting its three structural elements). (B) Ribbon diagrams of the atomic models of the seven MCP conformers in each asymmetric unit of BPP-1.DOI: http://dx.doi.org/10.7554/eLife.01299.012
+**Figure 4—figure supplement 1.:** (A) Superposition of the structure of HK97 gp5 (blue) with that of BPP-1 MCP (cyan, purple, and green, highlighting its three structural elements). (B) Ribbon diagrams of the atomic models of the seven MCP conformers in each asymmetric unit of BPP-1.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** (A) The central pore in a MCP pentamer of BPP-1. The loop A295-V309 in BPP-1 MCP is disordered while the counterpart in HK97 gp5 (blue in [B]) is ordered. (B) The same as (A) with the addition of a pentameric gp5 of HK97 (blue) and a hexameric MCP of BPP-1 (red) superimposed on one of the green pentameric MCP, showing the ordered loops of the pentameric gp5 and the hexameric BPP-1 MCP. (C) Superposition of the pentameric MCP of BPP-1 (green) and the pentameric gp5 of HK97 (blue).DOI: http://dx.doi.org/10.7554/eLife.01299.013
+**Figure 4—figure supplement 2.:** (A) The central pore in a MCP pentamer of BPP-1. The loop A295-V309 in BPP-1 MCP is disordered while the counterpart in HK97 gp5 (blue in [B]) is ordered. (B) The same as (A) with the addition of a pentameric gp5 of HK97 (blue) and a hexameric MCP of BPP-1 (red) superimposed on one of the green pentameric MCP, showing the ordered loops of the pentameric gp5 and the hexameric BPP-1 MCP. (C) Superposition of the pentameric MCP of BPP-1 (green) and the pentameric gp5 of HK97 (blue).
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig4-figsupp3-v1.jpg)
 
-**Figure 4—figure supplement 3.:** We draw the large dashed crosses on the three panels to indicate that the model shown here is incorrect. (A) Superposition of the cryoEM density and the interchanged model for the region shown in Figure 4D. The two linking loops (indicated by the two red arrows) do not have matching cryoEM density. (B and C) Superposition of the cryoEM density (mesh) and the interchanged model (sticks and ribbons) for two regions indicated in (A): the βG strand (B) and α5 helix (C). Note the mismatches of side chain features here, as compared the nice match shown in Figure 4E,F.DOI: http://dx.doi.org/10.7554/eLife.01299.014
+**Figure 4—figure supplement 3.:** We draw the large dashed crosses on the three panels to indicate that the model shown here is incorrect. (A) Superposition of the cryoEM density and the interchanged model for the region shown in Figure 4D. The two linking loops (indicated by the two red arrows) do not have matching cryoEM density. (B and C) Superposition of the cryoEM density (mesh) and the interchanged model (sticks and ribbons) for two regions indicated in (A): the βG strand (B) and α5 helix (C). Note the mismatches of side chain features here, as compared the nice match shown in Figure 4E,F.
 
 The structures of the seven MCP conformers in the asymmetric unit are nearly identical with some minor differences (Figure 4—figure supplement 1B), and RMSDs of their backbones (residues from 31–60 to 81–331) are 0.55–0.98 Å among six hexameric MCPs and 1.2–1.8 Å between the pentameric and the hexameric MCPs. The minor differences among the different MCP conformers include: (1) Each N-terminal portion (Ser5–Glu30) of the seven MCPs adopts a slightly different conformation, and backbone RMSDs of this segment are 1.4–5.0 Å among seven MCP copies; (2) The E-loops of the seven MCPs have backbone RMSDs of 0.8–8.3 Å, larger than other portions of MCPs, possibly resulting from different local shell curvatures at the regions of the E-loops (Figure 4E); (3) Although the C-terminal proximal loop (Ala295–Val309) of every hexameric MCP is well resolved, the corresponding segment in the pentameric MCP is not resolved, suggesting disordered conformation of this segment in pentons possibly due to steric hindrance at the central channel of the MCP pentamer (Figure 4—figure supplement 2).
 
-Despite the similarities in the architectural appearances of BPP-1 MCP and HK97 gp5, their atomic structures differ in four significant ways. Firstly, the conformations of the N-terminal loops are different (
+Despite the similarities in the architectural appearances of BPP-1 MCP and HK97 gp5, their atomic structures differ in four significant ways. Firstly, the conformations of the N-terminal loops are different (Figure 4—figure supplements 1, 2C). In BPP-1 MCP, the N-terminal peptide extends radially to interact with a CP by augmenting its CHEF β-sheet. In HK97 gp5, the N-terminus extends circumferentially and interacts with three adjacent gp5 subunits, augmenting a β-sheet in one of them. Secondly, a C-terminal loop (Lys293–Val309) of the pentameric MCP in BPP-1 is disordered while the corresponding loop (Arg294–Thr304) in the HK97 pentameric gp5 is ordered (Figure 4—figure supplement 2B,C) (Wikoff et al., 2000). Thirdly, the electrostatic potential properties of the two proteins are strikingly different. Finally, and perhaps most interestingly, the folding topologies of BPP-1 MCP and HK97 gp5 are different, which, as described below, provides the first opportunity to explore possible alternative ways to build the highly conserved HK97-like folds (Figure 5, Figure 5—figure supplements 1 and 2; Video 4).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig5-v1.jpg)
 
-**Figure 5.:** (A) Diagram of the BPP topology of the Johnson fold: N- , β- , α-elements. (B) Diagram of the HK97 topology of the Johnson fold: N- , α- , β-elements. (C) Diagram of the three structural elements of the Johnson fold with free N- and C-ends. (D) Expression of BPP-1 MCP mutants with the β- and α-elements swapped, thus adopting the HK97 topology. Wild type (WT) and mutant (PM1 and PM2) BPP-1 MCPs with a 6xhistidine tag at the C-terminus were induced for expression from an fhaB promoter in RB50 cells for 3 (lanes 1–4) and 6 (lanes 5–8) hr, respectively. The expressions levels were determined by Western blot with a mouse anti-6xhistidine monoclonal antibody. Lanes 1 and 5 are negative controls with wild type Bbp17 that does not contain a 6xhistidine tag. (E) Infectivity of phage lysates as measured by their ability to form plaques on transformed RB50 cells. ‘+’: plaque observed; ‘−’: no plaque observed. The color scheme in (A–C) is the same as in Figure 4A–D.DOI: http://dx.doi.org/10.7554/eLife.01299.015
+**Figure 5.:** (A) Diagram of the BPP topology of the Johnson fold: N- , β- , α-elements. (B) Diagram of the HK97 topology of the Johnson fold: N- , α- , β-elements. (C) Diagram of the three structural elements of the Johnson fold with free N- and C-ends. (D) Expression of BPP-1 MCP mutants with the β- and α-elements swapped, thus adopting the HK97 topology. Wild type (WT) and mutant (PM1 and PM2) BPP-1 MCPs with a 6xhistidine tag at the C-terminus were induced for expression from an fhaB promoter in RB50 cells for 3 (lanes 1–4) and 6 (lanes 5–8) hr, respectively. The expressions levels were determined by Western blot with a mouse anti-6xhistidine monoclonal antibody. Lanes 1 and 5 are negative controls with wild type Bbp17 that does not contain a 6xhistidine tag. (E) Infectivity of phage lysates as measured by their ability to form plaques on transformed RB50 cells. ‘+’: plaque observed; ‘−’: no plaque observed. The color scheme in (A–C) is the same as in Figure 4A–D.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Folding topology of the three elements in the BPP-1 MCP. (B) Fold topology of the three corresponding elements in the HK97 gp5. (C) Illustration of the two BPP-1 MCP non-circular permutation mutations, PM1 and PM2, obtained by swapping the order of the β-element and the α-element to that of HK97 gp5. The three structural elements are shown in cyan, purple and green as in Figure 4 and the exact amino acid residue numbers at the points of swapping are indicated.DOI: http://dx.doi.org/10.7554/eLife.01299.016
+**Figure 5—figure supplement 1.:** (A) Folding topology of the three elements in the BPP-1 MCP. (B) Fold topology of the three corresponding elements in the HK97 gp5. (C) Illustration of the two BPP-1 MCP non-circular permutation mutations, PM1 and PM2, obtained by swapping the order of the β-element and the α-element to that of HK97 gp5. The three structural elements are shown in cyan, purple and green as in Figure 4 and the exact amino acid residue numbers at the points of swapping are indicated.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** (A) BPP-1 MCP. (B) HK97 gp55. (C) gp24 of T4 phage35. (D) The archaeal ‘particle-forming’ protein32. (E) Bacterial encapsulin33. (F) Spatial organization of the three structural elements of the Johnson fold. (G–I) Topologies of HK97 gp5 (G), BPP-1 MCP (H) and the mis-interpreted Epsilon15 gp7 (Jiang et al., 2008) (I), showing the conservation of the structural elements and the topology difference among the known HK97-like proteins. The three structural elements are marked with cyan, purple and green as in the Figure 4A–D.DOI: http://dx.doi.org/10.7554/eLife.01299.017
+**Figure 5—figure supplement 2.:** (A) BPP-1 MCP. (B) HK97 gp55. (C) gp24 of T4 phage35. (D) The archaeal ‘particle-forming’ protein32. (E) Bacterial encapsulin33. (F) Spatial organization of the three structural elements of the Johnson fold. (G–I) Topologies of HK97 gp5 (G), BPP-1 MCP (H) and the mis-interpreted Epsilon15 gp7 (Jiang et al., 2008) (I), showing the conservation of the structural elements and the topology difference among the known HK97-like proteins. The three structural elements are marked with cyan, purple and green as in the Figure 4A–D.
 
-## Two topologies to build the HK97-like (‘Johnson’) fold and structure-based mutagenesis
+### Two topologies to build the HK97-like (‘Johnson’) fold and structure-based mutagenesis
 
 As remarked above, despite of the similar architectural appearance (or fold) of BPP-1 Bbp17 and HK97 gp5, the peptide traces of these two proteins follow different folding topologies (Figure 5A–B, Figure 5—figure supplements 1 and 2). A careful comparison of the two structures has led us to identify three structural elements of the canonical HK97-like, or ‘Johnson’ fold: N-, β- and α-elements (marked cyan, purple and green in Figures 4A–D and 5A–C). These three structural elements join together through a central 5-stranded (F, E, G, K, L in Figure 5A–C, in an up-up-down-up-up topology) β-sheet, flanked by two short helices (Figure 5A–C, Figure 5—figure supplement 2). The β-element (purple) consists of two anti-parallel (i.e., G, K; down-up) β-strands forming a hairpin located at the middle of the Johnson fold. The α-element (green) contains two parallel (i.e., F, E; up-up) β-strands and the two short helices. The N-element (cyan) contributes the last (i.e., L; up) β-strand to the Johnson fold and also contains the two other characteristic secondary structures of the Johnson fold: a long, kinked ‘spine’ α-helix and the extended loop (E-loop).
 
@@ -110,33 +205,37 @@ Interchange of two of the structural elements can lead to proteins with differen
 
 To test whether a functional protein can be produced from BPP-1 MCP by permuting it to the HK97 topology without introducing other changes, we genetically interchanged the primary order of the β- and α-elements in the BPP-1 MCP gene bbp17 (Figure 5—figure supplement 1C), and made two slightly different constructs (Figure 5—figure supplement 1C) (i.e., PM1 and PM2, ‘Materials and methods’). These two engineered proteins were expressed successfully, as indicated by Western blot analysis (Figure 5D). However, no plaque formation was detected for the PM1 and PM2 lysates on RB50 cells transformed with either the wt bbp17, the PM1 or the PM2 construct (Figure 5E), suggesting that the PM1 and PM2 gene products are not functional.
 
-## Interactions among capsid proteins
+### Interactions among capsid proteins
 
-The BPP-1 capsid has a chainmail structure similar to that of HK97 capsid (
+The BPP-1 capsid has a chainmail structure similar to that of HK97 capsid (Figure 6A–B; Video 5). Instead of covalent bonding as in HK97, the BPP-1 chainmail is stabilized by non-covalent interactions, such as: (1) strong electrostatic interactions between adjacent MCPs (Figure 6), and (2) additional CP-MCP interactions contributed by CPs (Figure 7).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig6-v1.jpg)
 
-**Figure 6.:** See also Video 5. (A) Chainmail network formed by BPP-1 MCPs. The P-domain and E-loop of MCP in neighboring capsomers join head to tail to form rings (bright colors), which concatenate to form non-covalent chainmail. The P-domains and E-loops contributing to the formation of the same ring are shown in the same color. Other domains of MCP are dimmed. (B) Same view as in (A) but with CP dimers (purple) also shown. (C–E) Inter-capsomeric MCP-MCP interactions. The close-up view of all MCPs within the region within the cyan box in (A) illustrates the interaction interfaces (outlined by black lines) between the overlying E-loops of three MCP monomers and the underlying domains of other MCPs. These MCP monomers are shown as ribbons in different colors and belong to different hexon (or penton) capsomers. The local threefold and twofold axes are denoted by a yellow triangle and a green ellipse, respectively. Complementary electrostatic potentials are evident at the interaction interfaces, shown separately to reveal the surfaces of the underlying MCPs (D) and the 180°-rotated overlying E-loops (E), respectively. (F–H) Intra-capsomeric MCP–MCP interactions. The region within the blue box of (A) contains a hexon with its six MCP monomers shown either as ribbons in different colors (F) or as electrostatic potential surfaces (F). Adjacent MCP subunits within the hexon share one interaction interface (e.g., the yellow dashed rectangle for subunits A and B in F) and their complementary electrostatic potential surfaces are evident in their rotated views (H). The electrostatic potential scale is shown in the color bar in (E).DOI: http://dx.doi.org/10.7554/eLife.01299.018
+**Figure 6.:** See also Video 5. (A) Chainmail network formed by BPP-1 MCPs. The P-domain and E-loop of MCP in neighboring capsomers join head to tail to form rings (bright colors), which concatenate to form non-covalent chainmail. The P-domains and E-loops contributing to the formation of the same ring are shown in the same color. Other domains of MCP are dimmed. (B) Same view as in (A) but with CP dimers (purple) also shown. (C–E) Inter-capsomeric MCP-MCP interactions. The close-up view of all MCPs within the region within the cyan box in (A) illustrates the interaction interfaces (outlined by black lines) between the overlying E-loops of three MCP monomers and the underlying domains of other MCPs. These MCP monomers are shown as ribbons in different colors and belong to different hexon (or penton) capsomers. The local threefold and twofold axes are denoted by a yellow triangle and a green ellipse, respectively. Complementary electrostatic potentials are evident at the interaction interfaces, shown separately to reveal the surfaces of the underlying MCPs (D) and the 180°-rotated overlying E-loops (E), respectively. (F–H) Intra-capsomeric MCP–MCP interactions. The region within the blue box of (A) contains a hexon with its six MCP monomers shown either as ribbons in different colors (F) or as electrostatic potential surfaces (F). Adjacent MCP subunits within the hexon share one interaction interface (e.g., the yellow dashed rectangle for subunits A and B in F) and their complementary electrostatic potential surfaces are evident in their rotated views (H). The electrostatic potential scale is shown in the color bar in (E).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Electrostatic potential surface of the underlying HK97 gp5. Overlying molecules, including the E-loops of three gp5 (yellow, blue and red). The surface of MCP at this region has mainly positive charge (blue). The C-terminal loop (green, marked by the dashed cyan circle) of gp5 occupied a different region of the MCP shell and interacts with CP in BPP-1. (B) Electrostatic potential surface of the E-loops of the three overlying gp5 monomers, exhibiting mostly negative charge (red). The interacting surface of the three gp5 molecules has more positive charge, in contrast to the mostly negative charge as in BPP-1 MCP. The interacting surface of the gp5 E-loops has mostly negative charge, in contrast to the mostly positive charge as in BPP-1. (C and D) Interactions within a gp5 hexon of HK97. A region of HK97 capsid containing a single hexon with six gp5 monomers was displayed as electrostatic potential surfaces (C). Adjacent gp5 subunits within the hexon share one interaction interface (e.g., the yellow dashed rectangle for subunits A and B in C) and their complementary electrostatic potential surfaces are evident in their rotated views (D). The interacting interfaces are slightly different from those in BPP-1, but nonetheless, are also complementary to other another. The scale of electrostatic potential is the same as that in Figure 6H.DOI: http://dx.doi.org/10.7554/eLife.01299.019
+**Figure 6—figure supplement 1.:** (A) Electrostatic potential surface of the underlying HK97 gp5. Overlying molecules, including the E-loops of three gp5 (yellow, blue and red). The surface of MCP at this region has mainly positive charge (blue). The C-terminal loop (green, marked by the dashed cyan circle) of gp5 occupied a different region of the MCP shell and interacts with CP in BPP-1. (B) Electrostatic potential surface of the E-loops of the three overlying gp5 monomers, exhibiting mostly negative charge (red). The interacting surface of the three gp5 molecules has more positive charge, in contrast to the mostly negative charge as in BPP-1 MCP. The interacting surface of the gp5 E-loops has mostly negative charge, in contrast to the mostly positive charge as in BPP-1. (C and D) Interactions within a gp5 hexon of HK97. A region of HK97 capsid containing a single hexon with six gp5 monomers was displayed as electrostatic potential surfaces (C). Adjacent gp5 subunits within the hexon share one interaction interface (e.g., the yellow dashed rectangle for subunits A and B in C) and their complementary electrostatic potential surfaces are evident in their rotated views (D). The interacting interfaces are slightly different from those in BPP-1, but nonetheless, are also complementary to other another. The scale of electrostatic potential is the same as that in Figure 6H.
+
+![Video 5.](https://cdn.elifesciences.org/articles/01299/elife-01299-media5.wmv.jpg)
+
+**Video 5.:** For clarity, only the P domain and the E-loop of MCP subunit are shown. These domains from different capsomers join in a head to tail fashion to form concatenated rings. Ball-and-stick models are produced from our atomic model of BPP-1 and those in the same ring are rendered in the same color. Related to Figure 6.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig7-v1.jpg)
 
-**Figure 7.:** (A–C) The same views as Figure 6C,D are shown in (A) and (B), respectively, except for the addition of a green outline depicting the interaction interface between a CP dimer and its underlying MCPs. At the interaction interface with MCPs, the electrostatic potential surface of the CP dimer (C) is complementary to that of its underlying MCPs (B). (D–F) Details of the interactions (segments highlighted in red) between CP and MCP. (D) The two monomers in the CP dimer are shown as pink and grey ribbons and the five underlying MCPs as yellow, orange, cyan, blue, and green ribbons. Side chains involved in interactions with the pink CP are shown displayed as sticks. Note the extensive interactions between the CP C-terminal extension and three different MCP monomers. (E) The same as (D) but without the overlying CP dimer and sticks of interacting side chains to better reveal MCP segments involved in the interactions (red). (F) The bottom view of the pink CP monomer to better reveal its segments (red) involved in CP–MCP interactions, which include its N-terminal loop, C-terminal loop, and the loop connecting strands C and D in the jellyroll.DOI: http://dx.doi.org/10.7554/eLife.01299.021
+**Figure 7.:** (A–C) The same views as Figure 6C,D are shown in (A) and (B), respectively, except for the addition of a green outline depicting the interaction interface between a CP dimer and its underlying MCPs. At the interaction interface with MCPs, the electrostatic potential surface of the CP dimer (C) is complementary to that of its underlying MCPs (B). (D–F) Details of the interactions (segments highlighted in red) between CP and MCP. (D) The two monomers in the CP dimer are shown as pink and grey ribbons and the five underlying MCPs as yellow, orange, cyan, blue, and green ribbons. Side chains involved in interactions with the pink CP are shown displayed as sticks. Note the extensive interactions between the CP C-terminal extension and three different MCP monomers. (E) The same as (D) but without the overlying CP dimer and sticks of interacting side chains to better reveal MCP segments involved in the interactions (red). (F) The bottom view of the pink CP monomer to better reveal its segments (red) involved in CP–MCP interactions, which include its N-terminal loop, C-terminal loop, and the loop connecting strands C and D in the jellyroll.
 
-Electrostatic interactions between MCPs of BPP-1 are stronger than those between gp5 subunits in the HK97 capsid (
+Electrostatic interactions between MCPs of BPP-1 are stronger than those between gp5 subunits in the HK97 capsid (Figure 6D–H, Figure 6—figure supplements 1) for two reasons. Firstly, in the MCP hexamer, the electrostatic interactions between adjacent MCPs that appears to be stronger than those between HK97 hexameric gp5 proteins (Figure 6—figure supplement 1A–B). Secondly, the interface between the MCP E-loop and an adjacent MCP protein at each local threefold region contains complementary electrostatic interactions (Figure 6D–E). Specifically, the E-loop is mainly positive charged and its MCP interface is mainly negative charged, and the interaction at this interface appears to be stronger than that of HK97 gp5 in the same interface. Interestingly, the electrostatic properties of BPP-1 MCP and Hk97 gp5 are opposite in this interface (Figure 6—figure supplements 1A–B). The stronger electrostatic interaction between the E-loops and the local threefold region of the BPP-1 MCP may be the reason for the absence (Figure 8) of the salt bridge found between HK97 gp5 proteins at the local threefold interface that is critical for the assembly, stability and maturation of the HK97 capsid (Gertsman et al., 2010).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig8-v1.jpg)
 
-**Figure 8.:** (A) Close-up view of two adjacent HK97 gp5 subunits, showing salt bridges between Arg194, Arg347 and Glu363 and Glu344. (B) There are no such salt bridges in the corresponding regions in the BPP-1 MCP molecules.DOI: http://dx.doi.org/10.7554/eLife.01299.022
+**Figure 8.:** (A) Close-up view of two adjacent HK97 gp5 subunits, showing salt bridges between Arg194, Arg347 and Glu363 and Glu344. (B) There are no such salt bridges in the corresponding regions in the BPP-1 MCP molecules.
 
-In addition, the BPP-1 head is further stabilized by interactions between CP and MCP. Complementary electrostatic potential surfaces were also identified at the interface between CP and MCP (
+In addition, the BPP-1 head is further stabilized by interactions between CP and MCP. Complementary electrostatic potential surfaces were also identified at the interface between CP and MCP (Figure 7A–C). Each CP interacts extensively with five MCP subunits underneath, mainly involving three loops: (a) N-terminal loop, (2) C-terminal loop, and (3) the linking loop between strands C and D of the jellyroll motif (Figure 7D–F). Firstly, the N-terminal loop of CP interacts with two MCPs: the N-terminal loop of first MCP (green) and the E-loop of the second MCP (yellow) (Figure 7D–E), Secondly, the C-terminal loop of CP interacts with two MCPs: a β-strand of the β-element of the first MCP (orange) and both N- and C-terminal loops of a second MCP (green) (Figure 7D–E). Thirdly, the linking loop of CP interacts with three MCPs: two β-strands of the β-element of the first MCP (blue), the N-terminal loop of a second MCP (green) and a short loop (Asn48–Glu52) of the third MCP (orange) (Figure 7D–E). Fourthly, β-strand C of CP jellyroll interacts with the N-terminal loop of an MCP, augmenting the CHEF β-sheet of CP (Figure 9C). Finally, two CP monomers form a dimer through anti-parallel interaction between their F-strands of jellyrolls, forming an augmented, 10-stranded β sheet and further stabilizing the capsid (Figures 3C, 7D and 9C).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/01299/elife-01299-fig9-v1.jpg)
 
-**Figure 9.:** (A) Ribbon models of two adjacent HK97 gp5 subunits, showing the interaction of the N-terminal loop (bright colored) with an adjacent gp5 (dimmed). (B) BPP-1 regions corresponding to that in (A) showing the lack of the HK97 type of interactions between the MCP N-terminal loop (bright colored) and adjacent MCP molecules (dimmed). (C) The same region in (B) but with the CP dimer (purple), showing that the N-terminal loop of MCP hydrogen-bonds to β-strand C of CP (black circles) to form an augmented 10-stranded β sheet, and that the C-terminal loop (red circles) of each CP has extensive interactions with nearby MCP molecules.DOI: http://dx.doi.org/10.7554/eLife.01299.023
+**Figure 9.:** (A) Ribbon models of two adjacent HK97 gp5 subunits, showing the interaction of the N-terminal loop (bright colored) with an adjacent gp5 (dimmed). (B) BPP-1 regions corresponding to that in (A) showing the lack of the HK97 type of interactions between the MCP N-terminal loop (bright colored) and adjacent MCP molecules (dimmed). (C) The same region in (B) but with the CP dimer (purple), showing that the N-terminal loop of MCP hydrogen-bonds to β-strand C of CP (black circles) to form an augmented 10-stranded β sheet, and that the C-terminal loop (red circles) of each CP has extensive interactions with nearby MCP molecules.
 
 ## Discussion
 
@@ -150,15 +249,15 @@ From an engineering stand point, it is fortunate that both termini of MCP and th
 
 ## Materials and methods
 
-## Production and purification of BPP-1
+### Production and purification of BPP-1
 
 500 ml of LB medium was inoculated with a single colony of BPP-1 lysogen. The cultures were incubated at 37°C on a rotary shaker until log phase when phage production was induced by adding mitomycin C to a final concentration of 2 mg/l. After 3 hr of induction, CHCl3 was added with shaking to facilitate cell lysis and phage release. Cellular debris was removed by centrifugation at 5000×g. Phage particles were then precipitated using 10% PEG8000/500 mM NaCl, pelleted by centrifugation, and resuspended in 50 mM Tris-HCl, 250 mM NaCl, 1 mM MgCl2, pH7.5. The resuspended phage particles were further purified by 15–45% (buffered with 50 mM Tris-HCl, 250 mM NaCl, 1 mM MgCl2, pH7.5) sucrose gradient ultracentrifugation at 35,000 rpm for 90 min using an SW41 rotor in a Beckman L8-80M ultracentrifuge. The phage band was visualized by illuminating the gradient tube and carefully collected by side puncture. Purified phage was buffer-exchanged and concentrated in 50 mM Tris-HCl, 250 mM NaCl, 1 mM MgCl2, pH7.5 by ultra-filtration with a MW cutoff of 100 kD (Millipore, Billerica, MA). The final concentration of BPP-1 was ∼1014 pfu/ml.
 
-## Protein gel electrophoresis and mass spectrometry
+### Protein gel electrophoresis and mass spectrometry
 
 To identify capsid proteins using SDS−PAGE and mass spectrometry, purified BPP-1 particles were incubated in 1× SDS sample buffer (0.0625 M Tris-HCl, 1.25% SDS, 5% glycerol and 0.02% bromophenol blue, pH 6.8) at 95°C for 5 min before loading onto the gel. SDS−PAGE was performed using a discontinuous gel (4% polyacrylamide stacking region and 15% polyacrylamide resolving gel) prepared with a discontinuous gel system (Bio-Rad Laboratories, Hercules, CA). Protein bands were visualized by Coomassie Blue staining (Bio-Rad Laboratories). The two major bands (Figure 1A) were manually excised, digested in-gel with sequencing-grade modified trypsin (Promega, Madison, WI), and analyzed using Matrix-assisted laser desorption/ionisation-time of flight mass spectrometry (MALDI-TOF MS). Scaffold (version.3.00.04, Proteome Software Inc., Portland, OR) was used to validate MS/MS-based peptide and protein identifications.
 
-## CryoEM imaging, data processing and resolution assessment
+### CryoEM imaging, data processing and resolution assessment
 
 To determine the atomic structure, low dose images of liquid-nitrogen-cooled, frozen hydrated BPP-1 were recorded on Kodak SO-163 film on an FEI Titan Krios cryo electron microscope operated at 300 kV with dose of ∼25e−1/Å2 on specimen. The nominal magnification of images is 59,000×, which was previously calibrated to be 57,660× using tobacco mosaic virus as a standard. Imaging condition was optimized by using parallel illumination and by minimizing beam tilt with a Coma-free alignment procedure.
 
@@ -166,7 +265,7 @@ To determine the atomic structure, low dose images of liquid-nitrogen-cooled, fr
 
 The effective resolutions were estimated based on the 0.5 R-factors between the cryoEM density map [equivalent to FSC≥0.143 (Rosenthal and Henderson, 2003; Wolf et al., 2010) and the final atomic model calculated by Phenix (Adams et al., 2010). The calculated R-factors reached ∼0.5 at 3.5 Å, 3.4 Å for the capsid density and the averaged CP and MCP densities, respectively (Table 1). These estimations are consistent with the structural features present in the maps (Figure 2, Videos 2–4). The capsid and averaged maps were filtered to 1/(3.4 Å) and 1/(3.5 Å) spatial frequency, respectively; and sharpened using a reverse B-factor of −200 Å2 (for capsid) or −250 Å2 (for averaged densities), which were estimated through a trial-and-error procedure by optimizing side-chain densities and noise level simultaneously. Visualization and segmentation of density maps were done with UCSF Chimera (Pettersen et al., 2004).
 
-## Atomic modeling and model refinement
+### Atomic modeling and model refinement
 
 Based on the averaged density maps of CP and MCP, we first built initial Cα and full atom models for CP and MCP with Coot (Emsley and Cowtan, 2004) without referring to any existing models of other proteins. For MCP, the N- and C-termini were distinguished based on the ‘Christmas tree’ polarity of α helices and confirmed by landmark, bulky side chain densities. For CP, because there is no helix to be used to reveal the N- to C-terminal polarity, we determined the N-terminus using the side chain densities of some landmark amino acids, such as Phe27, Tyr 102, Tyr106, Tyr107 and Tyr133. The initial full atom models were regularized by constraining both Ramachandran geometry and secondary structures in Coot (Emsley and Cowtan, 2004) but without including hydrogen atoms.
 
@@ -176,7 +275,7 @@ Atomic model of an asymmetric unit including seven MCPs and seven CPs was subseq
 
 Because our BPP-1 MCP chain trace differs from that of the HK97 gp5 in the order of the α and β structural elements (‘Results’), we made an extra cautious effort to verify our trace by swapping the α and β structural elements in our model to create an interchanged model that matches the HK97 topology. This interchanged model was then refined with Phenix (Adams et al., 2010) for five cycles. Most of the side chains of the refined interchanged model do not match those in the cryoEM density, further confirming our de novo model (Figure 4—figure supplement 3).
 
-## Structure-based mutagenesis
+### Structure-based mutagenesis
 
 To engineer BPP-1 MCP to match the topology of HK97 gp5, we swapped the order of the β- and α-elements in BPP-1 MCP (Figure 5—figure supplement 1C). In construct PM1, the β-element (peptide 169–241) was cut from wt bbp17 gene and then pasted to the C-terminal end of α-element. Construct PM2 was obtained the same way except that the cut sites were shifted by three amino acid residues on both sides, resulting in a six residue-longer β-element (peptide 166–244). In both the constructs, the N-terminal end of the α-element was pasted to the C-terminal end of the N-element.
 
@@ -184,10 +283,10 @@ Plasmids expressing either wt bbp17, PM1 or PM2 genes B. bronchiseptica were tra
 
 To obtain phage lysates for plaque assays, we generated a lysogen (BPP-1ΔbrtΔbbp17) that has the bbp17 gene deleted. Then, we transformed plasmids expressing either the wt bbp17 gene, the PM1 or PM2 genes into the BPP-1ΔbrtΔbbp17 lysogens. These lysogen cells were first grown at 37°C for 3 hr in Stainer Scholte medium containing 25 μg/ml streptomycin and 25 μg/ml chloramphenicol to induce to the Bvg+ phase, leading to the expression of the wt bbp17 and the two mutants PM1 and PM2. Mitomycin C (0.2 μg/ml) was then added to the cell cultures to induce phage production. After 3 hr, chloroform was added to the cultures, followed by vortexing and centrifugation to remove cellular debris. The resultant supernatants were collected for plaque assays on B. bronchiseptica RB50 cells transformed with plasmids expressing either wt bbp17, PM1 or PM2 gene. As above, these transformed RB50 cells were grown on Bordet–Gengou agar containing 15% sheep blood, 25 μg/ml streptomycin and 25 μg/ml chloramphenicol.
 
-## Visualization
+### Visualization
 
 CryoEM density maps, atomic models and surface charge properties were visualized with Chimera (Pettersen et al., 2004).
 
-## Accession numbers
+### Accession numbers
 
 The cryoEM density map and the atomic model of BPP-1 have been deposited to databanks with accession numbers EMD (5764, 5765, 5766) and PDB (3J4U), respectively.

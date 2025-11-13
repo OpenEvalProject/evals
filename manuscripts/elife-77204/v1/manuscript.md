@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/02rxc7m23 University of Navarra, Tecnun School of Engineering, Manuel de Lardizábal San Sebastian Spain
-2. https://ror.org/02rxc7m23 University of Navarra, Biomedical Engineering Center, Campus Universitario Pamplona Spain
-3. https://ror.org/000xsnr85 Group of Neurosciences, Department of Pediatrics, UPV/EHU, Hospital Donostia - IIS Biodonostia San Sebastian Spain
-4. https://ror.org/00ca2c886 CIBERNED, Instituto de Salud Carlos III, Ministry of Science, Innovation, and Universities Madrid Spain
+1. University of Navarra, Tecnun School of Engineering, Manuel de Lardizábal San Sebastian Spain ([ROR:02rxc7m23](https://ror.org/02rxc7m23))
+2. University of Navarra, Biomedical Engineering Center, Campus Universitario Pamplona Spain ([ROR:02rxc7m23](https://ror.org/02rxc7m23))
+3. Group of Neurosciences, Department of Pediatrics, UPV/EHU, Hospital Donostia - IIS Biodonostia San Sebastian Spain ([ROR:000xsnr85](https://ror.org/000xsnr85))
+4. CIBERNED, Instituto de Salud Carlos III, Ministry of Science, Innovation, and Universities Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 
 ## Abstract
 
-Over the last few years, there has been growing interest in measuring the contractile force (CF) of engineered muscle tissues to evaluate their functionality. However, there are still no standards available for selecting the most suitable experimental platform, measuring system, culture protocol, or stimulation patterns. Consequently, the high variability of published data hinders any comparison between different studies. We have identified that cantilever deflection, post deflection, and force transducers are the most commonly used configurations for CF assessment in 2D and 3D models. Additionally, we have discussed the most relevant emerging technologies that would greatly complement CF evaluation with intracellular and localized analysis. This review provides a comprehensive analysis of the most significant advances in CF evaluation and its critical parameters. In order to compare contractile performance across experimental platforms, we have used the specific force (sF, kN/m 2 ), CF normalized to the calculated cross-sectional area (CSA). However, this parameter presents a high variability throughout the different studies, which indicates the need to identify additional parameters and complementary analysis suitable for proper comparison. We propose that future contractility studies in skeletal muscle constructs report detailed information about construct size, contractile area, maturity level, sarcomere length, and, ideally, the tetanus-to-twitch ratio. These studies will hopefully shed light on the relative impact of these variables on muscle force performance of engineered muscle constructs. Prospective advances in muscle tissue engineering, particularly in muscle disease models, will require a joint effort to develop standardized methodologies for assessing CF of engineered muscle tissues.
+Over the last few years, there has been growing interest in measuring the contractile force (CF) of engineered muscle tissues to evaluate their functionality. However, there are still no standards available for selecting the most suitable experimental platform, measuring system, culture protocol, or stimulation patterns. Consequently, the high variability of published data hinders any comparison between different studies. We have identified that cantilever deflection, post deflection, and force transducers are the most commonly used configurations for CF assessment in 2D and 3D models. Additionally, we have discussed the most relevant emerging technologies that would greatly complement CF evaluation with intracellular and localized analysis. This review provides a comprehensive analysis of the most significant advances in CF evaluation and its critical parameters. In order to compare contractile performance across experimental platforms, we have used the specific force (sF, kN/m2), CF normalized to the calculated cross-sectional area (CSA). However, this parameter presents a high variability throughout the different studies, which indicates the need to identify additional parameters and complementary analysis suitable for proper comparison. We propose that future contractility studies in skeletal muscle constructs report detailed information about construct size, contractile area, maturity level, sarcomere length, and, ideally, the tetanus-to-twitch ratio. These studies will hopefully shed light on the relative impact of these variables on muscle force performance of engineered muscle constructs. Prospective advances in muscle tissue engineering, particularly in muscle disease models, will require a joint effort to develop standardized methodologies for assessing CF of engineered muscle tissues.
 
 ## Introduction
 
@@ -50,9 +50,13 @@ Finally, chemical stimulation may induce contractility of the muscle construct b
 
 ## Contractile force analysis
 
-## Specific force
+### Specific force
 
-CF or tension, which is expressed in Newtons (N) is not a very informative parameter for engineered muscles, because it does not relate to the size and condition of the tissue construct. Instead, the Specific Force (sF), also referred to as mechanical stress, is the CF normalized to the cross-sectional area (CSA) of the construct, and it is expressed in Pascals (Pa = N/m2) (Bottinelli and Reggiani, 2000; Maganaris et al., 2001; Pirozzi et al., 2013; Miller et al., 2015). CF is proportional to the number of muscle fibers and thus to the cross-sectional area of the construct (Pirozzi et al., 2013). Hence, CF can be easily converted into sF following Equation 1 below.(1)sF=Twitch or Tetanus Contractions (N)CSA (mm2)
+CF or tension, which is expressed in Newtons (N) is not a very informative parameter for engineered muscles, because it does not relate to the size and condition of the tissue construct. Instead, the Specific Force (sF), also referred to as mechanical stress, is the CF normalized to the cross-sectional area (CSA) of the construct, and it is expressed in Pascals (Pa = N/m2) (Bottinelli and Reggiani, 2000; Maganaris et al., 2001; Pirozzi et al., 2013; Miller et al., 2015). CF is proportional to the number of muscle fibers and thus to the cross-sectional area of the construct (Pirozzi et al., 2013). Hence, CF can be easily converted into sF following Equation 1 below.
+
+$$
+sF=\frac{Twitch or Tetanus Contractions (N)}{CSA (mm^{2})}
+$$
 
 A major drawback concerning this parameter is the wide diversity of criteria in the literature for defining and quantifying CSA of muscle constructs (Figure 2). In 2D models, CSA can be estimated as a circular shape, or calculated as an elliptical shape from the thickness and the width of the myotubes (Pirozzi et al., 2013; Jeon et al., 2019). As for 3D constructs, the CSA has been approximated to circular (Hinds et al., 2011; Juhas and Bursac, 2014; Nagashima et al., 2020), rectangular (Donnelly et al., 2010), or elliptical (Akiyama et al., 2021) shapes. Moreover, CSA may also be determined from immunohistochemical sections. In this case, most works consider the whole area of the engineered tissue (total CSA). However, non-contractile areas can account for up to 90% of the whole CSA (Sakar et al., 2012; Juhas and Bursac, 2014; Ebrahimi et al., 2021), which has a substantial impact on sF calculations. Thus, other studies consider only the area occupied by the myotubes, which is referred to as effective-CSA (Hinds et al., 2011; Sakar et al., 2012; Sato et al., 2013; Ebrahimi et al., 2021). Other authors normalize CF by cell number (mN/cell) or cell density (mN/cell*mm–2), of the muscle construct (Xu et al., 2019).
 
@@ -62,7 +66,516 @@ A major drawback concerning this parameter is the wide diversity of criteria in 
 
 Studies summarized in Table 1 and Source Data 1 indicate a preference for normalizing CF to the whole CSA (calculated as a circular shape). However, as shown above, the use of sF to compare results across laboratories may turn out to be unreliable due to the large differences in the methodology used to calculate CSA. In addition, tissue processing required for immunohistochemical techniques may entail size artifacts that further affect CSA calculations. Along these lines, a previous study in human isolated fibers claims that diameter measurements present less variability than CSA measurements resulting in a more accurate normalization in N/m instead of sF (Krivickas et al., 2011). We believe that normalizing CF to diameter or to a related parameter (i.e. calculated circular CSA) would allow for a more reliable comparison among different studies, as long as similar contractile areas are verified. In any case, in order to compare sF, it is essential to thoroughly evaluate the method used in each study for CF normalization.
 
-## CF parameters
+**Table 1.**
+ Maximum contractile force data from in vitro muscle models measured by the three main platforms.Table 1—source data 1.Additional information specific to the experimental setup and stimulation parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Cell source</th>
+      <th rowspan="2">Evaluation time</th>
+      <th rowspan="2">Size</th>
+      <th rowspan="2">CSA(mm2)</th>
+      <th colspan="2">Twitch contraction</th>
+      <th colspan="2">Tetanic contraction</th>
+      <th rowspan="2">Tetanic-Twitch Ratio*</th>
+      <th rowspan="2">References</th>
+    </tr>
+    <tr>
+      <th>CF (µN)</th>
+      <th>sF (kN/m²)</th>
+      <th>CF (µN)</th>
+      <th>sF (kN/m²)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13">Cantileverdeflection</td>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 7</td>
+      <td>50 μm (Width)i33 µm (Thickness)*</td>
+      <td>0.001308*</td>
+      <td>0.54 ± 0.02</td>
+      <td>0.41*</td>
+      <td>1.01 ± 0.14</td>
+      <td>0.77*</td>
+      <td>1.87</td>
+      <td>Fujita et al., 2010</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts (embryonic)</td>
+      <td>Day 10–13</td>
+      <td>22.5 µm (Width)i10 µm (Thickness)</td>
+      <td>0.000176*</td>
+      <td>0.23*</td>
+      <td>1.3</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Wilson et al., 2010</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 6</td>
+      <td>12.75 µm (Width)*8–9 µm (Thickness)</td>
+      <td>0.0000851*</td>
+      <td>0.80*</td>
+      <td>9.4 ± 4.6</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Sun et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts (embryonic)</td>
+      <td>Day 12–14</td>
+      <td>11.7–23.4 μm (Width)7.9–13 μm (Thickness)</td>
+      <td>0.000144*</td>
+      <td>0.04–0.26Stoney’s Eq.0.03–0.18FEA</td>
+      <td>0.359–1.70Stoney’s Eq.0.168–1.17FEA</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Pirozzi et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Primary human myoblast</td>
+      <td>Day 23</td>
+      <td>10 µm (Width)i6.67 µm (Thickness)*</td>
+      <td>0.000052*</td>
+      <td>0.14g</td>
+      <td>2.69*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Smith et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts (adult)</td>
+      <td>Day 4–7</td>
+      <td>16.74 µm (Width)*11.16 µm (Thickness)g</td>
+      <td>0.000146*</td>
+      <td>0.17g</td>
+      <td>1.15*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>McAleer et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Human myoblasts</td>
+      <td>Day 3–6</td>
+      <td>12.11 μm (Width)g8.07 µm (Thickness)*</td>
+      <td>0.0000767*</td>
+      <td>0.78*</td>
+      <td>9.98g</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Nesmith et al., 2016#</td>
+    </tr>
+    <tr>
+      <td>Human induced pluripotent stem cell</td>
+      <td>Day 14</td>
+      <td>11.82 μm (Width)g10.35 μm (Thickness)g</td>
+      <td>0.0000961*</td>
+      <td>0.38*</td>
+      <td>3.98g</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Badu-Mensah et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Human induced pluripotent stem cell</td>
+      <td>Day 10–11</td>
+      <td>9.30 μm (Width)g6.2 μm (Thickness)*</td>
+      <td>0.0000452*</td>
+      <td>0.12 ± 0.02</td>
+      <td>2.65*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Guo et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Chick myoblasts</td>
+      <td rowspan="3">3 weeks</td>
+      <td>11.24 µm (Width)g7.49 μm (Thickness)*</td>
+      <td>0.0000661*</td>
+      <td>1.44*</td>
+      <td>21.89g</td>
+      <td>3.31*</td>
+      <td>50g</td>
+      <td>2.28</td>
+      <td rowspan="3">Santoso et al., 2021</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>16.30 µm (Width)g10.86 μm (Thickness)*</td>
+      <td>0.000139*</td>
+      <td>0.027</td>
+      <td>0.2g</td>
+      <td>0.018</td>
+      <td>0.129g</td>
+      <td>0.64</td>
+    </tr>
+    <tr>
+      <td>Human myoblasts</td>
+      <td>14.02 µm (Width)g9.34 μm (Thickness)*</td>
+      <td>0.0001028*</td>
+      <td>0.020</td>
+      <td>0.2g</td>
+      <td>0.019</td>
+      <td>0.182g</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Human induced pluripotent stem cell</td>
+      <td>Day 7–10</td>
+      <td>22.5 μm (Width)*15 μm (Thickness)</td>
+      <td>0.000265*</td>
+      <td>0.26*</td>
+      <td>0.986g</td>
+      <td>0.52</td>
+      <td>1.986g</td>
+      <td>2.01</td>
+      <td>Al Tanoury et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Postdeflection</td>
+      <td>Primary Mouse myoblasts</td>
+      <td>Day 1–12</td>
+      <td>2 mmi</td>
+      <td>3.14*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>42.5g</td>
+      <td>13.53*</td>
+      <td>__</td>
+      <td>Vandenburgh et al., 2008#</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 14</td>
+      <td>0.14 ± 0.01 mm</td>
+      <td>0.0125 (active)0.0012 (effective)</td>
+      <td>1.4*</td>
+      <td>0.11 (active)*1.12 (effective)*</td>
+      <td>__</td>
+      <td></td>
+      <td></td>
+      <td>Sakar et al., 2012</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 6</td>
+      <td>0.32 mmi</td>
+      <td>0.079*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>57.5 ± 12.8</td>
+      <td>0.72*</td>
+      <td></td>
+      <td>Shimizu et al., 2017#</td>
+    </tr>
+    <tr>
+      <td>Primary human myoblasts</td>
+      <td>Day 11</td>
+      <td>0.85 mm*</td>
+      <td>0.566i</td>
+      <td>79.44i</td>
+      <td>0.14*</td>
+      <td>428.57i</td>
+      <td>0.76*</td>
+      <td>5.42</td>
+      <td>Mills et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Derived-Myoblasts from Human Dermal Fibroblast</td>
+      <td>Day 4–10</td>
+      <td>0.30 mmi</td>
+      <td>0.120*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>12.2 ± 5.3</td>
+      <td>0.10*</td>
+      <td>__</td>
+      <td>Shimizu et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Primary human myoblasts</td>
+      <td>Day 7–14</td>
+      <td>0.71 mm*</td>
+      <td>0.395*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>192*</td>
+      <td>0.49*</td>
+      <td>__</td>
+      <td>Afshar et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Immortalized human myoblast</td>
+      <td>Day 8</td>
+      <td>0.4 mm</td>
+      <td>0.125*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>28.5 ± 10.5</td>
+      <td>0.23</td>
+      <td>__</td>
+      <td>Nagashima et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Immortalized human myoblast</td>
+      <td>Day 7–14</td>
+      <td>0.47 mm*</td>
+      <td>0.17 ± 0.03</td>
+      <td>200 ± 40</td>
+      <td>1.17</td>
+      <td>1100 ± 300</td>
+      <td>6.47</td>
+      <td>5.52</td>
+      <td>Hofemeier et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Immortalized human myoblast</td>
+      <td>Day 10</td>
+      <td>0.49 mmi</td>
+      <td>0.189*</td>
+      <td>118.01g</td>
+      <td>0.62*</td>
+      <td>201.89g</td>
+      <td>1.07*</td>
+      <td>1.72</td>
+      <td>Ebrahimi et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="18">Forcetranducers</td>
+      <td>Rat myoblasts (adult)</td>
+      <td>Day 31 ± 4</td>
+      <td>0.49 ± 0.04 mm</td>
+      <td>0.188*</td>
+      <td>215 ± 26</td>
+      <td>1.14*</td>
+      <td>440 ± 45</td>
+      <td>2.9 ± 0.5</td>
+      <td>2.54</td>
+      <td>Dennis and Kosnik, Ii, 2000</td>
+    </tr>
+    <tr>
+      <td>Rat myoblast(Extensor digitorum longus)</td>
+      <td>Day 32 ± 4</td>
+      <td>0.17 mm*</td>
+      <td>0.024 ± 0.009</td>
+      <td>162 ± 125</td>
+      <td>6.75*</td>
+      <td>281 ± 218</td>
+      <td>11.70*</td>
+      <td>1.73</td>
+      <td>Dennis et al., 2001</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts</td>
+      <td>3 weeks</td>
+      <td>0.18 ± 0.01 mm</td>
+      <td>0.0246*</td>
+      <td>329 ± 26.3</td>
+      <td>13.37*</td>
+      <td>805.8 ± 55</td>
+      <td>32.75</td>
+      <td>2.45</td>
+      <td>Huang et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts</td>
+      <td>Day 16–18</td>
+      <td>0.25 mmg</td>
+      <td>0.048*</td>
+      <td>102g</td>
+      <td>2.12*</td>
+      <td>212g</td>
+      <td>4.41*</td>
+      <td>2.08</td>
+      <td>Larkin et al., 2006</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 5–8</td>
+      <td>0.21 mm*</td>
+      <td>0.0978i</td>
+      <td>71.39*</td>
+      <td>0.73 ± 2.13</td>
+      <td>86.06*</td>
+      <td>0.88 ± 0.48</td>
+      <td>1.20</td>
+      <td>Fujita et al., 2009#</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 2–17</td>
+      <td>0.2 mm*</td>
+      <td>0.031*</td>
+      <td>33.2</td>
+      <td>1.06</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Yamamoto et al., 2011#</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts (neonatal)</td>
+      <td>Day 14</td>
+      <td>2.7 ± 0.18 mm (Bundle)</td>
+      <td>5.72 (Bundle)*</td>
+      <td>1680 ± 320</td>
+      <td>0.29*5.5 ± 0.6 (effective)</td>
+      <td>2840 ± 500</td>
+      <td>0.50*9.4 ± 0.7 (effective)</td>
+      <td>1.72</td>
+      <td>Hinds et al., 2011</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 7</td>
+      <td>0.40 mm</td>
+      <td>0.13*</td>
+      <td>18.3 ± 2.4</td>
+      <td>0.15*</td>
+      <td>34.5 ± 2.8</td>
+      <td>0.276*</td>
+      <td>1.84</td>
+      <td>Sato et al., 2013#</td>
+    </tr>
+    <tr>
+      <td>Rat myoblasts</td>
+      <td>2 weeks</td>
+      <td>1.38 mm (Bundle)*0.9 mm (F-actin+) *</td>
+      <td>1.50 (Bundle)g0.63 ± 0.05(F-actin+)</td>
+      <td>17830 ± 1000</td>
+      <td>11.89 (Bundle)*28.30 (F-actin+)*</td>
+      <td>28800 ± 930</td>
+      <td>19.2 (Bundle)*43.39 ± 3.82(F-actin+)</td>
+      <td>1.61</td>
+      <td>Juhas and Bursac, 2014#</td>
+    </tr>
+    <tr>
+      <td>Primary Human myoblast</td>
+      <td>4 weeks</td>
+      <td>2.5 mmi</td>
+      <td>4.91*</td>
+      <td>701g</td>
+      <td>0.14*</td>
+      <td>1460g</td>
+      <td>0.30*</td>
+      <td>2.14</td>
+      <td>Madden et al., 2015</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 14</td>
+      <td>0.5 ± 0.08 mm</td>
+      <td>0.19*</td>
+      <td>81.26g</td>
+      <td>0.42*</td>
+      <td>151.37g</td>
+      <td>0.79*</td>
+      <td>1.88</td>
+      <td>Ikeda et al., 2016#</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>3 weeks</td>
+      <td>0.6 mmi</td>
+      <td>0.28*</td>
+      <td>166.3 ± 59.4</td>
+      <td>0.59*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>__</td>
+      <td>Nakamura et al., 2017</td>
+    </tr>
+    <tr>
+      <td>hPSC derived human myoblasts</td>
+      <td>2 weeks</td>
+      <td>0.42 mmi</td>
+      <td>0.14*</td>
+      <td>140g</td>
+      <td>1.04</td>
+      <td>402g</td>
+      <td>3.00*</td>
+      <td>2.88</td>
+      <td>Rao et al., 2018</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>Day 14</td>
+      <td>0.98 mmi</td>
+      <td>0.756*</td>
+      <td>48.39 ± 3.49</td>
+      <td>0.06</td>
+      <td>47.74 ± 0.31</td>
+      <td>0.06</td>
+      <td>1</td>
+      <td>Capel et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Primary Human Myoblast</td>
+      <td>2 weeks</td>
+      <td>0.62 mmi</td>
+      <td>0.30*</td>
+      <td>1700 ± 130</td>
+      <td>5.70*</td>
+      <td>3400 ± 180</td>
+      <td>11.40*</td>
+      <td>2</td>
+      <td>Khodabukus et al., 2019</td>
+    </tr>
+    <tr>
+      <td>hPSC derived human myoblasts</td>
+      <td>4 weeks</td>
+      <td>0.28 mmi</td>
+      <td>0.06*</td>
+      <td>1393 ± 342</td>
+      <td>23.21*</td>
+      <td>2924 ± 517</td>
+      <td>48.73*</td>
+      <td>2.09</td>
+      <td>Xu et al., 2019</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblasts (mouse)</td>
+      <td>10 Days</td>
+      <td>0.99 mm</td>
+      <td>0.77*</td>
+      <td>1360 ± 210</td>
+      <td>1.77*</td>
+      <td>1930 ± 120</td>
+      <td>2.50*</td>
+      <td>1.41</td>
+      <td>Akiyama et al., 2021</td>
+    </tr>
+    <tr>
+      <td>Primary Human Myoblast</td>
+      <td>Day 17–19</td>
+      <td>1.39 mmi</td>
+      <td>1.51*</td>
+      <td>__</td>
+      <td>__</td>
+      <td>175*</td>
+      <td>0.13*</td>
+      <td>__</td>
+      <td>Alave Reyes-Furrer et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Recalculated data; gData extract from a graph; iData extract from an image; #Studies with where maximal instantaneous CF data was used._
+
+### CF parameters
 
 CF is affected by its relationship with different parameters, such as the frequency of the contractile stimulus (force-frequency), sarcomere length (force-length), and contraction velocity (force-velocity). Thus, an increase in stimulation frequency causes an increase in CF up to a maximal value (Fitts et al., 1991; Widmaier and Raff, 2008), although prolonged stimulation can lead to tissue fatigue and cause a decrease in CF over time (Grassi et al., 2015). In addition, contraction velocity is inversely related to cross-bridge formations and thus to CF production (Widmaier and Raff, 2008; Lindstedt et al., 2016). Power, defined by the product of CF and contraction velocity, is a measurable outcome of muscle contraction that reflects its efficiency and can be used to assess muscle fatigue (Alcazar et al., 2019). Finally, CF also depends on muscle length. An optimal length (L0) is where actin-myosin interactions are maximal and the muscle generates the highest tension (Fitts et al., 1991; Cheng et al., 2014a).
 
@@ -74,7 +587,7 @@ Several parameters can be calculated from twitch and tetanus contraction profile
 
 Hereafter, the most relevant techniques used to determine and measure CF in engineered skeletal muscle tissues, either for 2D or 3D configurations, are described: (1) cantilever deflection, (2) post deflection, or (3) force transducers. We also discuss alternative or emerging technologies for CF assessment, and provide a detailed comparison of the three main platforms currently in use.
 
-## Cantilever deflection
+### Cantilever deflection
 
 This technique is based on the deflection of a cantilever beam, which is fixed to one end and free for vertical movement on the other. The cantilever bends proportionally to the CF, and the variation of the height of the free end, or deflection, is measured by a laser and photodetector or image analysis (Wilson et al., 2007; Wilson et al., 2010; Fujita et al., 2010; Sun et al., 2013). Schematics in Figure 3 depict the cantilever setup with its three main states: resting, right after attachment of myoblasts, which are at a pre-differentiation state; initial deflection, due to the passive force exerted by the differentiated myotubes; and increased bending, caused by the CF that myotubes exert under stimuli. This force results in contraction of the cantilever’s upper side and a decrease in its length, while the lower surface of the beam remains relaxed with no change in its length. The differential strain distribution along cantilever thickness causes an upwards bending. Since one end of the cantilever is fixed, the entire bending effect is transformed into an uplift of its free end. Thus, myoblast’s horizontal contraction is transformed into a vertical displacement of the cantilever end.
 
@@ -90,9 +603,13 @@ As a representative example, Figure 3B shows a top view (bright field) and a sid
 
 One important advantage of this technique is that there is no manipulation of the tissue at any time; hence, we consider this technique to be non-invasive and with high throughput potential. This 2D platform has been used to test different cell sources such as C2C12 (Fujita et al., 2010; Shimizu et al., 2010; Yamamoto et al., 2011; Pirozzi et al., 2013; Sun et al., 2013), myocytes from rats (McAleer et al., 2014; Wilson et al., 2010) or chicken (Santoso et al., 2021), human-induced pluripotent stem cells (hiPSCs) (Badu-Mensah et al., 2020; Guo et al., 2020), or primary human myoblast (Smith et al., 2014; Nesmith et al., 2016). Moreover, muscle disease models such as DMD (Nesmith et al., 2016; Al Tanoury et al., 2021) and amyotrophic lateral sclerosis (ALS) Badu-Mensah et al., 2020 have been evaluated on this platform, providing relevant information about the pathological mechanisms, and even testing novel treatments.
 
-## Post deflection
+### Post deflection
 
-This technique is based on the quantification of the deflection of a pair of vertical microposts (µposts), due to contraction of the myobundle (Vandenburgh et al., 2008). The tissue construct, which is attached to the top part of the µposts, pulls them together during contraction, causing a horizontal displacement. This effect enables the calculation of the CF from equation (2), where R is the µpost pillar radius, L the length (height), E the elastic modulus, δ the µpost top displacement, and F is the CF of the muscle (Vandenburgh et al., 2008; Shimizu et al., 2017; Nagashima et al., 2020).(2)F=3πER4δ4L3
+This technique is based on the quantification of the deflection of a pair of vertical microposts (µposts), due to contraction of the myobundle (Vandenburgh et al., 2008). The tissue construct, which is attached to the top part of the µposts, pulls them together during contraction, causing a horizontal displacement. This effect enables the calculation of the CF from equation (2), where R is the µpost pillar radius, L the length (height), E the elastic modulus, δ the µpost top displacement, and F is the CF of the muscle (Vandenburgh et al., 2008; Shimizu et al., 2017; Nagashima et al., 2020).
+
+$$
+F=\frac{3\piER^{4}\delta}{4L^{3}}
+$$
 
 This equation corresponds to the deflection of a beam with a circular section. According to the classical principles of material science, the application of this expression assumes slender µpost profiles, exertion of myobundle force at the top of µposts (instead of a larger region as depicted in Figure 3), and a linear cantilever deflection in response to the exerted force. This is true if the stiffness of the µpost is at certain ranges, according to Sakar et al., 2012. They reported that an overly flexible cantilever might result in non-linear responses. Also, the effect of the top cap on the bending behavior of the µpost is negligible. However, if one would require higher fidelity on these calculations, finite element analysis could be used to include the thickness of the myobundle at the attachment site as well as any other structural feature. For example, the spring constant of the µposts was calculated with this methodology by including its exact geometry and the material properties (Hofemeier et al., 2021). In any case, a thorough characterization of the µposts is required prior to establishing the cell culture (i.e. µposts stiffness and shape [Vandenburgh et al., 2008; Christensen et al., 2020]).
 
@@ -108,7 +625,7 @@ One advantage of this setup is that CF can be evaluated throughout the developme
 
 Many authors have adopted this experimental setup in combination with different stimulation protocols in order to enhance tissue maturation and induce contraction. For example, by chronical optical stimulation with ChR2, an increase of twitch and tetanic CF was observed in C2C12 (Sakar et al., 2012) and in human skeletal micro muscles (hµMs) (Mills et al., 2019). Alternatively, Kim and colleagues have used co-stimulation (mechanical and electrical) in a fascicle-like muscle model (eSMT), aiming ECM remodeling and thus CF improvement (Kim et al., 2019).
 
-## Force transducers
+### Force transducers
 
 This technique is based on the use of a high-resolution force transducer coupled to the end of an engineered muscle (the other end is fixed to the substrate, as illustrated in Figure 5A). As the tissue contracts, it pulls from the transducer, allowing CF to be measured. The transducer converts the CF into a digital signal that can be recorded by a computer with the appropriate instrumentation.
 
@@ -122,7 +639,7 @@ Figure 5B shows a representative graph where the muscular construct has been sub
 
 Researchers have used this platform to evaluate several conditions on 3D muscle constructs, such as cell sources (Dennis et al., 2001; Madden et al., 2015; Maffioletti et al., 2018; Rao et al., 2018), co-cultures (Larkin et al., 2006; Juhas et al., 2018) and media supplements (Fujita et al., 2009; Xu et al., 2019), as well as to perform drug screening assays (Ikeda et al., 2017; Zhang et al., 2018; Khodabukus et al., 2020). For example, Dennis and Kosnik generated three-dimensional skeletal muscle constructs from adult rats (myooids), to assess different CF parameters such as rheobase and chronaxie (Dennis and Kosnik, Ii, 2000), while Larkin et al., and Dhawan et al. evaluated the effect of muscle innervation on CF. Here, as expected the nerve-muscle constructs generated greated tetanic CF in vitro (212 µm vs 90 µN) and in vivo (649 ± 228µN vs 124 ± 31µN), respectively (Larkin et al., 2006; Dhawan et al., 2007).
 
-## Alternative and emerging technologies
+### Alternative and emerging technologies
 
 Although force transducers, cantilevers, and post deflection are the most commonly used technologies to assess the production of CF in vitro, in this section we discuss several techniques that are being explored as an alternative way to quantify contraction kinetics: Traction force microscopy, contractility analysis, FRET, and microelectrode arrays (MEA).
 
@@ -134,13 +651,13 @@ Forster Resonance Energy Transfer (FRET) enables the measurement of contractile 
 
 Finally, Microelectrodes arrays (MEAs) systems have been used to characterize the electrical activity of neuron, cardiac or skeletal muscle cellular networks with a high spatial resolution. (Massobrio et al., 2015; Rabieh et al., 2016; Pasquarelli, 2021). These microelectrode arrays are able to record the bioelectric signals generated by the culture and/or stimulate them. Indeed, electrical stimulation has been already proven to be effective to promote myotube formation (Langhammer et al., 2013). But more importantly, this MEAs system can provide impedance monitoring to assess contractility, through the analysis of cell-microelectrode interactions. With each contraction, the changes of the shape of myotubes and the microelectrodes coverage, produces a perturbation in the AC current between pairs of electrodes proportional to the myotube movement allowing contraction analysis (Axion Biosystems, 2021). Even though this method does not provide quantitative CF measurements, it would provide relevant functional information of contraction kinetics.
 
-## CF platform comparison
+### CF platform comparison
 
 There are a number of significant differences among the three main CF assessment methodologies, which are summarized in Figure 6. Generally, cantilevers are best suited for 2D models, myotubes, or muscular films, while µposts and force transducers are designed only for 3D tissue constructs, also known as myobundles. Besides the size, 2D cultures are usually kept in culture for a shorter time and present a risk of delamination, which increases with contractile activity. This partially explains the lower percentage of studies that have performed tetanic stimulation in 2D muscle models. In contrast, 3D models are cultured over longer periods, and present a lower risk of detachment from the µposts or anchoring structures. These 3D constructs are more resilient to chronic stimulation and better withstand tetanic stimulation (up to 90% of studies present this analysis). All three setups have been combined with electrical stimulation, typically by introducing platinum, gold, or carbon electrodes. However, optical and biochemical stimulation was only reported in cantilever and post deflection.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77204/elife-77204-fig6-v1.jpg)
 
-**Figure 6.:** * Represents de % of studies that have performed this measurement.Figure 6—source data 1.
+**Figure 6.:** * Represents de % of studies that have performed this measurement.
 
 The measured force range in Newtons for each platform is also significantly different, being 0.02–3.31 µN for the cantilever, 1.4 µN – 1.1 mN for µposts, and 18 µN – 30 mN for the transducer. These values are consistent with the sizes of the constructs each platform can accommodate. Figure 6 also presents the ratio of studies that presented the values of passive force (the contractile force at a resting state without stimulation) and twitch kinetics (PA, TTP, RT50). In addition, there are a number of contractile functional measurements that have been implemented in each platform: that is calcium handling, force-frequency relationship, fatigue, or force-length relationship. However, insufficient data is available to perform a fair comparison between studies (less than 20% of the studies evaluated these characteristics).
 
@@ -152,11 +669,11 @@ Other characteristics unique to each setup need to be considered: Cantilever and
 
 The previous section gathers a summary of the most relevant techniques used to quantify CF in vitro. There is a distinctive approach for 2D and 3D tissue models and the different methodologies used to assess CF in each of them. This section provides a uniform analysis of published data using the three methods described, enabling comparison of contractility across different models. It also provides insights into the development of disease models and evaluation of the effect of several pharmacological treatments.
 
-## Analysis criteria
+### Analysis criteria
 
 It is relatively common to find CF values with different metrics or without proper clarification of morphological parameters such as sample width/thickness or CSA. This indetermination hinders a straightforward comparison between data collected using the different methodologies. Table 1 compares the morphological information (diameter and CSA) and the CF and sF of different healthy muscle constructs. CF data was directly extracted from the studies, time-average measurements were selected for both twitch and tetanus contraction unless these data were not provided in the study (noted with #). Maximum or instantaneous CF values were used as a necessary replacement in those cases. Additionally, it was often necessary to recalculate other parameters from the information provided by the authors (graphs or images), since it was either missing or provided in different units. Values that were recalculated are noted with an asterisk (*) in the table. To calculate the CF values, we have assumed the following premises:
 
-## Muscle construct size and composition
+#### Muscle construct size and composition
 
 The size of myotubes in vitro is smaller than the size of muscle cells in the native muscle tissue, commonly known as muscle fibers (Figure 1). While in the muscle fibers size ranges from 10 to 100 µm (King et al., 2004; Powell et al., 2002), the size of the myotubes in the cantilever deflection was 33.15 ± 23.831 µm and 13.29 ± 4.810 µm for C2C12 and human, respectively. This in vitro data is clearly within the lower range of the scale and could be related to the lack of maturation of the tissue.
 
@@ -174,7 +691,7 @@ However, the core common issue in these 3D models is the number of myotubes and 
 
 Several approaches such as tissue vascularization are being explored to overcome this hindrance (Gholobova et al., 2020a). For example, the use of porous biodegradable polymers promotes muscle differentiation and development of pre-vascular vessel-like structures (Levenberg et al., 2005). Other approaches include the use of sacrificial templates with thermo-responsive materials mimicking the vessel system (Wan et al., 2020), the development of aligned prevascularized muscles (van der Schaft et al., 2011), and the stimulation of angiogenesis and myogenesis through the exposure of myobundles to close-by engineered capillary networks (Osaki et al., 2018a).
 
-## Specific contractile force analysis
+### Specific contractile force analysis
 
 The performance of tissue constructs was analyzed by using Twitch Specific Force (Tw-sF), Tetanic Specific Force (Te-sF), and tetanic-to-twitch ratio parameters, which can be extracted or calculated from most studies (Table 1, Figure 7). In order to perform a consistent comparison, we have used the whole CSA (Figure 7A) to calculate sF, and segregated the data into two groups: muscle tissues generated with human myotubes or C2C12 myotubes. Of note, in this analysis human myotubes were generated from immortalized and primary human myoblasts, as well as human induced pluripotent stem cells (hPSC).
 
@@ -182,9 +699,160 @@ CSA data of muscle constructs (Figure 7A) was used to calculate sF generated in 
 
 On the contrary, tetanic-to-twitch data in Figure 7B presented low variability. This parameter was calculated from Te-sF and Tw-sF data within the same study, except for the case of C2C12 in µposts that was calculated from two different studies, due to lack of data availability. Interestingly, for the force transducer platform, we found that the tetanic-to-twitch ratio was significantly higher in human muscle compared to C2C12 muscle constructs (unpaired t-test, p < 0.05). We are uncertain about the relevance of this finding, but it is likely an intrinsic feature related to the species since gender-specific differences have been found for this parameter in native mouse muscles (Lafoux et al., 2020). Of note, this parameter is independent of CSA and provides a functional measurement that could be used to compare different studies regardless of the construct size or platform used.
 
-## Contractile force evaluation in disease models
+### Contractile force evaluation in disease models
 
 Evaluation of CF in these platforms has also been successfully used to characterize the phenotype of muscle disease models. Table 2 shows a collection of the most relevant studies where CF is assessed for different drug-induced models or patient-dystrophic models. Remarkably, many of the studies have used human cell lines or primary cells from donor patients. The CF analysis confirmed that the disease engineered tissues exhibit an overall lower sF and poorer morphological characteristics compared to their healthy controls.
+
+**Table 2.**
+ Summary of several skeletal muscle disease models in post deflection and force transducer platforms.Key parameters like drugs, change in CF (%∆CF) and other observed effects are detailed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease model</th>
+      <th>Drug</th>
+      <th>Platform</th>
+      <th>Cell source</th>
+      <th>%∆CF(Dose)</th>
+      <th>Observed effect</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">Atrophy</td>
+      <td rowspan="6">Dexamethasone</td>
+      <td rowspan="4">Post deflection</td>
+      <td>C2C12 myoblast (mouse)</td>
+      <td>–53%(100 µM)</td>
+      <td>Increase in the expression of Atrogin-1 (2.6) and MuRF-1 (2.2)Decrease in number of fibers with striation patterns (20% vs 8%)</td>
+      <td>Shimizu et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Immortalized human myogenic cells</td>
+      <td>–57%(100 µM)</td>
+      <td>Increase in the expression of Atrogin-1 and MuRF-1.Expression of FOXO3 and KLF15</td>
+      <td>Nagashima et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Primary Human myoblast</td>
+      <td>–85%(10 nM)</td>
+      <td>Dose-dependent decrease in myotube width</td>
+      <td>Afshar et al., 2020</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblast (mouse)</td>
+      <td>–48%(1 mM)</td>
+      <td></td>
+      <td>Yoshioka et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Force transducer</td>
+      <td>Primary Human myoblast</td>
+      <td>–67%(25 µM)</td>
+      <td>Decrease in myotube diameter (25 µM, 12%)Decrease in effective-CSA (60%)Decrease in injury biomarkers CK and LDH</td>
+      <td>Khodabukus et al., 2020</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblast (mouse)</td>
+      <td>–70%(100 µM)</td>
+      <td>Decrease in myotube-CSA (37%)</td>
+      <td>Aguilar-Agon et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Hypertrophy</td>
+      <td rowspan="6">IGF-1</td>
+      <td rowspan="2">Force transducer</td>
+      <td>Rat myoblast</td>
+      <td>+ 31%(75 ng)</td>
+      <td>Increase in CF (75 ng, 31%)Slow Time to peak twitch force (25 ng, 26%)</td>
+      <td>Huang et al., 2005</td>
+    </tr>
+    <tr>
+      <td>Primary Human myoblast</td>
+      <td>+ 28%(0.5 mg/ml)</td>
+      <td>Increase in myotube diameter (0.5 mg/ml, 21%)Increase in injury biomarkers CK and LDH</td>
+      <td>Khodabukus et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Post deflection</td>
+      <td>Primary Mouse myoblast</td>
+      <td>+ 66%(100 ng/ml)</td>
+      <td>Increase in fiber-CSA (41%)</td>
+      <td>Vandenburgh et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Immortalized control C57 and mdx myoblast</td>
+      <td>+ 93%(0.01 µM)</td>
+      <td></td>
+      <td>Vandenburgh et al., 2009</td>
+    </tr>
+    <tr>
+      <td>C2C12 myoblast (mouse)</td>
+      <td>+ 25%</td>
+      <td>Increase in CF in Dex-induced atrophic tissues (45%*)</td>
+      <td>Shimizu et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Derived myoblast from human dermal fibroblast</td>
+      <td>+ 72%(100 ng/ml)</td>
+      <td>Decrease in CF in non-cryopreserved cells (100 ng/ml, 79%*)</td>
+      <td>Shimizu et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Statin-induced myopathy(Rhabdomyolysis)</td>
+      <td rowspan="3">Lovastatin</td>
+      <td rowspan="2">Force transducer</td>
+      <td>Primary Human myoblast</td>
+      <td>–75%(2 µM)</td>
+      <td>Dose-dependent lipid accumulation</td>
+      <td>Madden et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Primary Human myoblast</td>
+      <td>–53%(5 µM)</td>
+      <td>Dose-dependent lipid accumulation</td>
+      <td>Ananthakumar et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Post deflection</td>
+      <td>Immortalized human myogenic cells</td>
+      <td>–75%(2 µM)</td>
+      <td>Increase in the expression of Atrogin-1 and MuRF-1.</td>
+      <td>Nagashima et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Cerivastatin</td>
+      <td rowspan="3">Force transducer</td>
+      <td>Primary Human myoblast</td>
+      <td>–50%(50 nM)</td>
+      <td>Decrease in CF (50 nM, 50%*)Dose-dependent lipid accumulation</td>
+      <td>Madden et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Primary Human myoblast</td>
+      <td>–85%</td>
+      <td>Reduction in myotube diameterDose-dependent decrease in injury biomarkers CK and LDH</td>
+      <td>Vandenburgh et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Human Skeletal myoblast</td>
+      <td>–40%(100 nM)</td>
+      <td>Decrease in CFDecrease in passive forceMyofibers Sarcomere degradation</td>
+      <td>Zhang et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Post deflection</td>
+      <td>Primary Human myoblast</td>
+      <td>–62%(10 nM)</td>
+      <td>Decrease in CF (10 nM, 62%*)Dose-dependent decrease in myotube width</td>
+      <td>Alave Reyes-Furrer et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Recalculated data._
 
 As shown in Table 2, the most common drugs used in these models are: dexamethasone, a synthetic glucocorticoid commonly used to induce muscle atrophy (Aguilar-Agon et al., 2021), and insulin growth factor 1 (IGF-1), which activates muscle stem cells (satellite cells, SCs) and regulates anabolic and catabolic pathways in skeletal muscle (Yoshida and Delafontaine, 2020). All these studies have shown that CF decreases or increases in a dose-dependent manner when dexamethasone or IGF-1 are applied, respectively. Authors have also identified changes in myotubes diameter and in the percentage of fibers with striation patterns or the expression of specific biomarkers. Finally, other drugs such as lovastatin (Madden et al., 2015; Afshar et al., 2020; Ananthakumar et al., 2020; Nagashima et al., 2020) and cerivastatin Brady et al., 2008; Madden et al., 2015; Zhang et al., 2018 have been used to generate statin-induced myopathy models in these systems.
 

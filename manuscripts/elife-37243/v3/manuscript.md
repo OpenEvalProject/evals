@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.37243.001 Rod-shaped mycobacteria expand from their poles, yet d -amino acid probes label cell wall peptidoglycan in this genus at both the poles and sidewall. We sought to clarify the metabolic fates of these probes. Monopeptide incorporation was decreased by antibiotics that block peptidoglycan synthesis or l,d -transpeptidation and in an l,d -transpeptidase mutant. Dipeptides complemented defects in d -alanine synthesis or ligation and were present in lipid-linked peptidoglycan precursors. Characterizing probe uptake pathways allowed us to localize peptidoglycan metabolism with precision: monopeptide-marked l,d -transpeptidase remodeling and dipeptide-marked synthesis were coincident with mycomembrane metabolism at the poles, septum and sidewall. Fluorescent pencillin-marked d,d -transpeptidation around the cell perimeter further suggested that the mycobacterial sidewall is a site of cell wall assembly. While polar peptidoglycan synthesis was associated with cell elongation, sidewall synthesis responded to cell wall damage. Peptidoglycan editing along the sidewall may support cell wall robustness in pole-growing mycobacteria.
+Rod-shaped mycobacteria expand from their poles, yet d-amino acid probes label cell wall peptidoglycan in this genus at both the poles and sidewall. We sought to clarify the metabolic fates of these probes. Monopeptide incorporation was decreased by antibiotics that block peptidoglycan synthesis or l,d-transpeptidation and in an l,d-transpeptidase mutant. Dipeptides complemented defects in d-alanine synthesis or ligation and were present in lipid-linked peptidoglycan precursors. Characterizing probe uptake pathways allowed us to localize peptidoglycan metabolism with precision: monopeptide-marked l,d-transpeptidase remodeling and dipeptide-marked synthesis were coincident with mycomembrane metabolism at the poles, septum and sidewall. Fluorescent pencillin-marked d,d-transpeptidation around the cell perimeter further suggested that the mycobacterial sidewall is a site of cell wall assembly. While polar peptidoglycan synthesis was associated with cell elongation, sidewall synthesis responded to cell wall damage. Peptidoglycan editing along the sidewall may support cell wall robustness in pole-growing mycobacteria.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ Here, we sought to determine how d-amino acid probes incorporate into the mycoba
 
 ## Results
 
-## Metabolic labeling of mycobacterial envelope comprises asymmetric polar gradients
+### Metabolic labeling of mycobacterial envelope comprises asymmetric polar gradients
 
 Mycobacteria have been shown to expand from their poles (Aldridge et al., 2012; Santi et al., 2013; Meniche et al., 2014; Thanky et al., 2007; Kieser and Rubin, 2014; Singh et al., 2013; Joyce et al., 2012) but published micrographs suggest that d-amino acid probes may label both the poles and sidewall of these organisms (Meniche et al., 2014; Siegrist et al., 2013; Boutte et al., 2016; Botella et al., 2017; Schubert et al., 2017; Rodriguez-Rivera et al., 2018). Metabolic labeling can be achieved by a one-step process, in which the fluorophore is directly appended to the probe, or a two-step process in which a small chemical tag on the d-amino acid is detected by subsequent reaction with a fluorescent reactive partner ([Siegrist et al., 2015], Figure 1A). We first reexamined the localization of various d-amino acid probes reported in the literature, including RADA (Kuru et al., 2012), which is directly conjugated to 5-carboxytetramethylrhodamine, and the two-step alkyne-d-alanine [alkDA or EDA, (Kuru et al., 2012; Siegrist et al., 2013)], and alkyne-d-alanine-d-alanine (alkDADA or EDA-DA, (Liechti et al., 2014); we use the metabolic labeling nomenclature originally adopted in [Mahal et al., 1997]) which we detected by copper-catalyzed azide-alkyne cycloaddition (CuAAC) after fixation (Figure 1B and C). After M. smegmatis cells were incubated for ~10% generation in probe, high-resolution and quantitative microscopy revealed that they had asymmetric, bidirectional gradients of fluorescence that emanated from the poles and continued along the sidewall (Figure 2A). Polar gradients of dipeptide labeling were also apparent in live cells when we detected azido-d-alanine-d-alanine (azDADA or ADA-DA, [Liechti et al., 2014]) incorporation by either CuAAC (using low copper, bio-friendly reaction conditions ([Yang et al., 2014], Figure 2—figure supplement 1A) or by copper-free, strain-promoted azide-alkyne cycloaddition (SPAAC, Figure 2—figure supplement 1B).
 
@@ -48,15 +48,39 @@ Mycobacteria have been shown to expand from their poles (Aldridge et al., 2012; 
 
 **Figure 1.:** (A) Schematic of one- and two-step metabolic labeling. Top, a cell envelope precursor or ‘probe’ bearing a reactive group is incorporated into the envelope by the endogenous enzymatic machinery of the cell. The presence of the probe is then revealed by a chemical reaction with a label that bears a complementary reactive group. Bottom, in some cases the probe can be pre-labeled, bypassing the chemical ligation step and embedding the detection moiety directly into the macromolecule. Yellow star, fluorophore. See (Siegrist et al., 2015) for more details. (B) Probes used in this work to mark the mycobacterial envelope. See text for details. Colored and black chemical structures denote probes used in one- and two-step labeling, respectively. C, X and Y reactive partners used in this work for two-step labeling as shown in A. CuAAC, copper-catalyzed azide-alkyne cycloaddition; SPAAC, strain-promoted azide-alkyne cycloaddition.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig2-v3.jpg)
+
+**Figure 2.:** (A) M. smegmatis was incubated for 15 min (~10% generation) in the indicated probe, then washed and fixed. Alkynyl probes were detected by CuAAC with azido-CR110 and cells were imaged by structured illumination microscopy. MM, mycomembrane; AG, arabinogalactan; PG, peptidoglycan; PM, plasma membrane. (B) M. smegmatis dual labeled with RADA and alkDADA, left, or RADA and OalkTMM, right, and imaged by conventional fluorescence microscopy. (C) M. smegmatis was labeled as in B and cellular fluorescence was quantitated for cells without (top; 77 < n < 85) or with (bottom; 9 < n < 51) visible septa for RADA, OalkTMM and alkDADA. Signal was normalized to cell length and to total fluorescence intensity. Cells were oriented such that the brighter pole is on the right hand side of the graph. (D) M. smegmatis (Msm; light blue) or M. tuberculosis (Mtb; dark blue) was labeled with HADA for 15 min or 2 hr (~10% generation), respectively, then washed and fixed. Fluorescence was quantitated as in C for cells without (top; 118 < n < 332) and with (bottom; 55 < n < 85) visible septa. We defined the dim pole (dp) as the sum of the fluorescence intensity over the first 15% of the cell; the sidewall (sw) as the sum of the middle 70%; and the bright pole (bp) as the sum over the final 15% of the cell. Fluor distrib, average fluorescence distribution. AU, arbitrary units. Error bars, ±standard deviation. Statistical significance between M. smegmatis (five biological replicates) and M. tuberculosis (three biological replicates) was assessed for the dim pole, sidewall and bright pole by two-tailed Student’s t test. *p<0.05; **p<0.005.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Bacteria were labeled with azDADA for 15 min and subjected to either A, low copper CuAAC (with BTTP ligand), or B, SPAAC. Longer arrow, polar labeling. Short arrow, sidewall labeling.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) M. tuberculosis was incubated or not for 20 hr in HADA (blue), NADA (green) or RADA (red), washed and fixed. Fluorescence was assessed by flow cytometry. Grey, unlabeled control. (B) M. tuberculosis was incubated or not for 2 hr with HADA, alkDA, alkDADA or OalkTMM (all blue). After washing and fixing as in A, cells labeled with alkynyl probes were subjected to CuAAC with azido-coumarin. Fluorescence was assessed by flow cytometry. Grey, no probe control. Non-overlapping regions of the histograms that represent bacteria with probe-derived fluorescence are magnified and quantitated as % of total bacteria counted. (C) Fluorescence microscopy of M. tuberculosis briefly treated with a fluorescent amine-reactive dye (NHS488; green) then incubated or not for 2 hr with HADA, alkDADA or OalkTMM (red). Alkynyl probes detected as in B. Cell envelope labeling is apparent both along the sidewall, where it colocalizes with NHS488, as well as at the cell poles, where it does not. Dotted white lines highlight cell contours.
+
 The mycobacterial cell envelope is comprised of covalently bound peptidoglycan, arabinogalactan and mycolic acids, as well as intercalated glycolipids and a thick capsule ([Puffal et al., 2018], Figure 1B). Assembly of the envelope layers has long been presumed to be spatially coincident. This is largely based on biochemical data suggesting that ligation of arabinogalactan to peptidoglycan occurs concurrently with crosslinking of the latter by transpeptidases (Hancock et al., 2002). We and others have found that cytoplasmic enzymes that mediate arabinogalactan and mycomembrane synthesis are enriched at the poles but also present along the periphery of the cell (Meniche et al., 2014; Hayashi et al., 2016; Carel et al., 2014), as is metabolic labeling by OalkTMM and NalkTMM ([Backus et al., 2011; Swarts et al., 2012; Foley et al., 2016], Figure 2A). OalkTMM and NalkTMM are trehalose monomycolate derivatives that predominantly mark covalent mycolates and trehalose dimycolate, respectively, in the mycomembrane (Figure 1B, [Foley et al., 2016]). The azido and alkynyl groups on the different probes are not orthogonal to each other (Figure 1C) so we opted to compare peptidoglycan and mycomembrane labeling patterns by using RADA as a fiducial marker. The cell pole with brighter RADA fluorescence also had more alkDADA or OalkTMM labeling (Figure 2B), suggesting that the polar orientation of peptidoglycan and mycomembrane metabolism is coincident. We then compared the fluorescence intensity profiles of cells that had been individually labeled with the probes, and found similar, average distributions of RADA, alkDADA and OalkTMM at the poles and peripheries of the cells (Figure 2C).
 
 We next sought to address whether the cell envelope of the related M. tuberculosis is also labeled in polar gradients. We previously showed that alkDA incorporates into the cell surface of the organism (Siegrist et al., 2013) but were unable to stain the entire population of bacteria. To investigate the origin of labeling heterogeneity, we first tested whether the structure of fluorophore (Figure 1B) influenced probe incorporation by incubating M. tuberculosis in HADA, NADA or RADA and assessing population fluorescence by flow cytometry. HADA and NADA incubation yielded well-defined fluorescent populations (Figure 2—figure supplement 2A). RADA also labeled the entire M. tuberculosis population, albeit with greater cell-to-cell variability in fluorescence intensity. Given that M. tuberculosis incorporates fluorescent probes HADA and NADA relatively evenly across the population, we hypothesized that the apparent heterogeneity that we previously observed for alkDA labeling (Siegrist et al., 2013) was the result of an inefficient CuAAC ligation. We obtained very modest improvements by changing the reaction conditions, more specifically, by swapping the BTTP ligand (Yang et al., 2014; Besanceney-Webler et al., 2011) for the TBTA ligand, altering the ratio of ligand: Cu(I) and increasing the azide label concentration. We also switched our detection moiety to an azide appended to hydroxycoumarin, the same small, uncharged fluorophore as the one-step HADA probe (Figure 1B). Under our optimized conditions we detected azido-coumarin fluorescence from ~5 to 10% of cells that had been incubated in alkDA, alkDADA or OalkTMM (Figure 2—figure supplement 2B and C).
 
 Although unable to achieve homogenous M. tuberculosis labeling with two-step envelope probes, we decided to test whether the sites of envelope labeling in the limited fluorescent subpopulation resemble those of M. smegmatis. HADA, alkDADA and OalkTMM tagging all produced cells that had a mixture of sidewall and polar fluorescence (Figure 2—figure supplement 2C) but exhibited a higher degree of cell-to-cell variability compared to M. smegmatis. Quantitation of HADA fluorescence showed that peptidoglycan metabolism comprised asymmetric polar gradients when averaged across the population (Figure 2D). We next asked whether there was a cell-wide difference in labeling distribution in M. tuberculosis compared to M. smegmatis. We arbitrarily defined the dimmer polar region as the first 15% of the cell length, the sidewall as the middle 70%, and the brighter polar region as the final 15%. As HADA labeled a large proportion of M. tuberculosis (Figure 2—figure supplement 2A) and was more resistant to photobleaching than NADA, we compared these ratios for HADA in septating and non-septating M. smegmatis and M. tuberculosis labeled for ~10% generation time (Figure 2D; under our growth conditions, M. smegmatis and M. tuberculosis generation times are 2.5–3 hr and 18–20 hr, respectively). Approximately 70–75% of HADA labeling in M. tuberculosis localized to the sidewall compared to 63–64% for M. smegmatis (Figure 2D). Thus, a greater proportion of peptidoglycan metabolism in M. tuberculosis likely occurs along the cell periphery than in M. smegmatis, although we cannot rule out a differential contribution of cyan autofluorescence in the two species (Patiño et al., 2008).
 
-## Intracellular and extracellular pathways of d-amino acid probe incorporation in mycobacteria
+### Intracellular and extracellular pathways of d-amino acid probe incorporation in mycobacteria
 
 As the cell periphery is not known to support surface expansion in mycobacteria (Aldridge et al., 2012; Santi et al., 2013; Meniche et al., 2014; Thanky et al., 2007; Kieser and Rubin, 2014; Singh et al., 2013; Joyce et al., 2012), we sought to characterize the molecular processes that underlie d-amino acid labeling patterns. OalkTMM and NalkTMM are inserted directly by the extracellular Antigen 85 complex into the mycomembrane (Foley et al., 2016). However, there are three potential pathways by which d-amino acid probes might incorporate into mycobacterial peptidoglycan (Siegrist et al., 2015; Cava et al., 2011; Ngo et al., 2016): an intracellular, biosynthetic route and two extracellular routes, mediated by d,d-transpeptidase or l,d-transpeptidase remodeling enzymes (Figure 3A). Peptidoglycan remodeling, particularly by the l,d-transpeptidases abundantly encoded in the mycobacterial genome, may not strictly correlate with synthesis of the biopolymer (Brown et al., 2012; Kuru et al., 2012; de Pedro and Cava, 2015; Glauner and Höltje, 1990). Therefore, we sought to distinguish the different routes of incorporation for d-amino acid probes in mycobacteria.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig3-v3.jpg)
+
+**Figure 3.:** (A) Schematic of the theoretical routes of d-amino acid (DA) and d-alanine d-alanine (DADA) probe incorporation. LDT, l,d-transeptidase, DDT, d,d-transpeptidase (DDTs). For more details see Figure 3—figure supplement 1. (B) Sensitivity of HADA (blue), NADA (green), RADA (red), alkDA (light grey), alkDADA (dark grey) and OalkTMM (black) to antibiotics. Imi, imipenem + clavulanate; amp, ampicillin + clavulanate; dcs, d-cycloserine; vanc, vancomycin. M. smegmatis was pretreated or not with the indicated antibiotics at 2X MIC for 30 min then incubated an additional 15 min in the presence of probe. The bacteria were then washed and fixed. The alkyne-bearing probes were detected by CuAAC with azido-CR110 and quantitated by flow cytometry. Experiment was performed three to four times in triplicate. For each biological replicate, the averaged median fluorescence intensities (MFI) of the drug-treated samples were divided by the MFI of untreated bacteria. Data are expressed as the average percentage of untreated labeling across the biological replicates. Error bars, ±standard deviation. Statistical significance compared to alkDADA was assessed by two-tailed Student’s t test of percentages for biological replicates. Horizontal black stars: *p<0.05; **p<0.005; ***p<0.0005; ****p<0.00005. Statistical significance compared to probe-matched controls that were not treated with antibiotic was assessed by two-tailed Student’s t test of log10 MFI data for biological replicates. Vertical dark grey stars: *p<0.05; **p<0.005; ***p<0.0005; ****p<0.00005. (C) Effect of antibiotic dose on alkDA-derived fluorescence. M. smegmatis was pretreated or not with drugs at the fold-MIC indicated and labeled as in B. Experiment was performed three times in triplicate. For each biological replicate, the averaged MFI of the control (no drug, no alkDA but subjected to CuAAC) was subtracted from the averaged MFI of the drug-treated sample. This was then divided by the averaged MFI of untreated control (no drug but incubated in alkDA and subjected to CuAAC) from which the control MFI had also been subtracted. Data are expressed as the average percentage of untreated labeling across the biological replicates. Error bars, ±standard deviation. (D) Left, combined effects of imipenem and d-cycloserine on alkDA-derived fluorescence. M. smegmatis was pretreated or not with the drugs at the fold-MIC indicated and labeled as in B. Experiment was performed twice in triplicate with similar results. One data set is shown. The percent of untreated labeling was calculated as in C and subtracted from 100 to obtain the percent inhibition. Right, Bliss interaction scores for each pair of doses in left-hand graph were calculated as (EI + ED EIED)/EI,D where EI is the effect of imipenem at dose i, ED is the effect of d-cycloserine at dose d and EI,D is the observed effect of the drugs at dose i and dose d. Combinations that produce Bliss scores greater than, equal to, or less than one are, respectively, interpreted as antagonistic, additive, or synergistic interactions. (E) Dose-dependent effect of imipenem on alkDADA (grey), HADA (blue) and RADA (red) labeling. M. smegmatis was pretreated or not with imipenem at the fold-MIC indicated and labeled as in B. Experiment was performed three times in triplicate and one representative data set is shown. For each technical replicate, the averaged median fluorescence intensities (MFI) of the drug-treated samples were divided by the averaged MFI of untreated bacteria. Data are expressed as the average percentage of untreated labeling across the technical replicates. Error bars, ±standard deviation. (F) Wildtype M. smegmatis pre-treated or not with 2X MIC imipenem and untreated ΔldtABE and complement (c ldtABE) were labeled with alkDA (white), HADA (blue), NADA (green) or RADA (red) and processed as in B. Experiment was performed two to ten times in triplicate. Representative data from one of the biological replicates is shown here. Error bars, ±standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Purple dashed lines, routes of probe incorporation proposed in this work. d,d-transpeptidases (DDT) and l,d-transpeptidases (LDT) respectively catalyze 4–3 and 3–3 crosslinks and can perform exchange reactions with free d-amino acids. Our data support l,d-transpeptidase-mediated exchange as the primary extracellular route of monopeptide probe incorporation into mycobacterial peptidoglycan.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** M. smegmatis cultures were treated with 2X MIC of indicated antibiotics for 45 min, washed, and 10-fold serial dilutions were spotted onto LB agar.
 
 It seemed possible that the chemical structure of the derivative (Figure 1B) and/or number of labeling steps (Figure 1A) might influence probe uptake, so we first tested the labeling sensitivity of a panel of d-amino acid derivatives to antibiotics that inhibit potential incorporation routes (Figure 3A). We also assessed OalkTMM and the d-alanine-d-alanine dipeptide probe, the latter of which has been proposed to tag the peptidoglycan of other species via the cytoplasmic MurF ligase [Figure 3A, Figure 3—figure supplement 1, (Liechti et al., 2014; Sarkar et al., 2016)]. d-cycloserine is a cyclic analog of d-alanine that inhibits the d-alanine racemase (Alr) and ligase (DdlA) in mycobacteria (Feng and Barletta, 2003). Together with the β-lactamase inhibitor clavulanate, β-lactams like ampicillin block d,d-transpeptidases and d,d-carboxypeptidases. Broader spectrum carbapenems such as imipenem additionally inhibit l,d-transpeptidases (Kumar et al., 2012). We also included vancomycin, an antibiotic that interferes with transpeptidation and transglycosylation by steric occlusion, to control for general defects in periplasmic peptidoglycan assembly. We empirically determined a time frame of drug treatment that did not compromise M. smegmatis viability (Figure 3—figure supplement 2). Within this time frame, labeling for all single residue d-amino acid probes decreased significantly in response to imipenem or d-cycloserine treatment (Figure 3B). By contrast, labeling by the dipeptide probe was relatively resistant to these antibiotics. Neither vancomycin nor ampicillin had a clear effect on labeling by any of the probes, indicating that cell death, disruption of peptidoglycan polymerization, and abrogration of d,d-transpeptidation do not explain the metabolic incorporation differences. OalkTMM labeling was sensitive to d-cycloserine, but not to imipenem nor ampicillin, suggesting that transfer of mycolates to arabinogalactan may require peptidoglycan precursor synthesis but not transpeptidation.
 
@@ -64,17 +88,53 @@ To test whether distinct mechanisms of probe incorporation were inhibited by d-c
 
 RADA and NADA labeling were more sensitive to imipenem than HADA and alkDA (Figure 3B), at multiple concentrations of drug (Figure 3E). To test whether the probes were differentially incorporated by l,d-transpeptidases, we knocked out three of the six enzymes encoded in the M. smegmatis genome. We chose to focus on LdtA, LdtB and LdtE because the M. tuberculosis homologs (LdtMT1, LdtMT2, and LdtMT4, respectively) have been shown in vitro to have both cross-linking and d-amino acid exchange activity and to be inhibited by imipenem (Cordillot et al., 2013). RADA and NADA fluorescence decreased by ~80–85% the absence of ldtABE, and this effect was complemented by the expression of ldtA alone (Figure 3F). We observed a more moderate effect on HADA and alkDA labeling, which were decreased by ~40–60%. Collectively these data suggest that: 1. RADA and NADA probes primarily report l,d-transpeptidase activity, tetrapeptide substrate, or both, and 2. HADA and alkDA likely label via both cytoplasmic and l,d-transpeptidase routes.
 
-## Dipeptide d-amino acid probe incorporates into mycobacterial peptidoglycan precursors
+### Dipeptide d-amino acid probe incorporates into mycobacterial peptidoglycan precursors
 
 As RADA labeling in mycobacteria is largely indicative of l,d-transpeptidase activity (Figure 3) and occurs at the poles and along the sidewall (Figure 2), we surmise that peptidoglycan is remodeled at both of these locations. We wished to determine whether remodeling was coincident with biopolymer synthesis but were limited by the multiple incorporation routes of alkDA and HADA (Figure 3). Dipeptide d-amino acid probes have been proposed to report peptidoglycan synthesis in other species via a cytoplasmic, MurF-dependent pathway [Figure 3A, Figure 3—figure supplement 1, (Liechti et al., 2014; Sarkar et al., 2016)]. Consistent with this notion, and in contrast to the monopeptide probes, alkDADA labeling was relatively stable to imipenem treatment (Figure 3B and E) and inefficiently incorporated (Figure 4—figure supplement 1). Thus we were surprised to observe that overall labeling by alkDADA decreased in the absence of LdtA, LdtB, LdtE or combinations thereof (Figure 4—figure supplement 2A). The reduction in signal occurred primarily at the poles (Figure 4—figure supplement 2B) yet loss of the enzymes did not impair bacterial growth (Figure 4—figure supplement 3). As we do not yet understand the mechanistic basis for this observation, we sought to directly test the hypothesis that dipeptide probes incorporate into peptidoglycan precursors.
 
 d-alanine is produced in mycobacteria by Alr, the d-alanine racemase (Figure 3—figure supplement 1). The molecule is linked to a second d-alanine by DdlA, the d-alanine ligase, and the resulting dipeptide is added to the UDP-MurNAc-tripeptide by MurF. If the alkDADA probe is able to label mycobacterial peptidoglycan via MurF, addition of the molecule to the growth medium should rescue a mutant that is unable to make d-alanine-d-alanine. We first constructed an alr deletion mutant in M. smegmatis and verified that growth is rescued by exogenous d-alanine but not by alkDA (Figure 4A). Although our antibiotic data suggest that alkDA is incorporated into peptidoglycan in part via a cytoplasmic pathway (Figure 3), the inability of this probe to rescue growth was not surprising given the substrate specificities of Ddl and MurF (Barreteau et al., 2008) and inefficient synthesis of UDP-MurNAc-pentapeptide with d-amino acids other than alanine (Cava et al., 2011). In contrast to the alkDA results, we were able to rescue alr with either d-alanine-d-alanine or its alkynyl derivative (Figure 4A).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig4-v3.jpg)
+
+**Figure 4.:** alkDADA probe supports the growth of Δalr, A, or temperature-sensitive ddlAts, B. Wildtype (white bars) and Δalr (grey bars), B, or ddlAts (grey bars), were grown in the presence or absence of exogenous d-alanine, d-alanine- d-alanine or alkynyl derivatives thereof. Error bars, ±standard deviation. Significant differences compared to Δalr no d-alanine (#, second bar from left), A, or ddlAts at 42˚C no d-alanine-d-alanine (#, fourth bar from left), B, One-way ANOVA with Dunnett’s test, are shown for 3–4 biological replicates. ***p<0.005, ****p<0.0005.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** M. smegmatis were labeled with 2 mM of alkDADA (dark grey) or different concentrations of alkDA (light grey) for 15 min then fixed and subjected to CuAAC. MFI, median fluorescence intensity from which the control (no probe but subjected to CuAAC) was subtracted. Error bars, ± standard deviation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Wildtype and ldt strains were labeled with RADA (red) or alkDADA (grey) for 30 min, then washed and fixed. alkDADA detected by CuAAC with azido-CR 110. Fluorescence was quantitated by flow cytometry. Data are expressed as percentage of untreated wildtype labeling as in Figure 3B. Experiment was performed 4–11 times in triplicate. Error bars, ± standard deviation. Differences within RADA- and alkDADA-labeled strains are significant at p<0.005, one-way ANOVA comparison of log10 data for biological replicates. (B) Wildtype (dark green) and ΔldtABE (light green) M. smegmatis were labeled with alkDADA for 15 min, then washed, fixed and subjected to CuAAC with azido-CR110 prior to imaging. Fluorescence was quantitated for 40 < n < 70. Signal was normalized by cell length and brighter poles oriented to the right-hand side of the graph. AU, arbitrary units. Experiment repeated twice with similar results. Representative images at right.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Culture turbidity increases at the same rate for wildtype and ΔldtABE growing in 7H9 medium.
+
 We considered the possibility that alkDADA may be digested by a d,d-carboxypeptidase prior to incorporation. This would result in the release of both unlabeled d-alanine and alkDA, the first of which could account for alr growth rescue (Figure 4A). We reasoned that a more precise gauge for MurF-dependent incorporation of the intact probe would be whether it could support the replication of a strain unable to ligate d-alanine to itself. Therefore, we confirmed that alkDADA rescues the growth of a temperature-sensitive ddlA mutant (Belanger et al., 2000) at the non-permissive temperature (Figure 4B).
 
 Our genetic data supported a MurF-dependent pathway of alkDADA incorporation into peptidoglycan. If true, the probe should be present in precursors such as lipid I and lipid II (Figure 3—figure supplement 1). To test this hypothesis, we first optimized for mycobacteria a recently reported protocol for detecting lipid-linked precursors (Qiao et al., 2014; Qiao et al., 2017). We extracted lipidic species from M. smegmatis and exchanged endogenous d-alanines for biotin-d-lysine (BDL) in vitro using purified Staphylococcus aureus enzyme PBP4, a promiscuous d,d-transpeptidase (Qiao et al., 2014). Biotinylated species were separated by SDS-PAGE and detected by horseradish peroxidase-conjugated streptavidin. We detected a biotin-linked, low-molecular-weight band that is reduced upon d-cycloserine treatment and accumulates when the lipid II flippase MurJ (MviN, (Gee et al., 2012)) is depleted or vancomycin is added (Figure 5A), conditions that have been shown to dramatically enhance precursor detection in other species (Qiao et al., 2014; Qiao et al., 2017). These data strongly suggest that the BDL-marked species are lipid-linked peptidoglycan precursors. We next turned our attention to detecting lipid I/II from M. smegmatis incubated with alkDADA. Initially we were unable to identify alkDADA-labeled species from organic extracts of wildtype M. smegmatis that had been subjected to CuAAC ligation with picolyl azide biotin (Figure 5B). We reasoned that the proportion of labeled precursors might be below our limit of detection. Accordingly, we repeated the experiment in the Δalr background and found that we could clearly detect a low molecular-weight species band that accumulated with vancomycin treatment (Figure 5B, top) and that ran at the same size as BDL-labeled material (Figure 5B, bottom). We were also able to identify a low-molecular-weight species from Δalr incubated with azDADA that was revealed by either CuAAC or SPAAC ligation to alkyne- or cyclooctyne-biotin, respectively (Figure 5C). Taken together, our genetic and biochemical experiments show that the alkDADA and azDADA probes insert into mycobacterial peptidoglycan precursors by a MurF-dependent route.
 
-## Fluorescent vancomycin and penicillin-binding proteins localize to the poles and sidewall in mycobacteria
+![Figure 5.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig5-v3.jpg)
+
+**Figure 5.:** (A) Detection of lipid-linked peptidoglycan precursors from organic extracts of M. smegmatis. Endogenous d-alanines (yellow) were exchanged for biotin-d-lysine (BDL; purple) via purified S. aureus PBP4. Biotinylated species detected by blotting with streptavidin-HRP. MurJ (MviN) depletion strain was incubated in anhydrotetracycline (atc) to induce protein degradation. Other strains were treated with vancomycin (vanc), d-cycloserine (dcs) or a combination prior to harvesting. Wt, wildtype; blank, no sample run; no extract, BDL and PBP4 alone a, organic extract from MurJ - atc; b, organic extract from MurJ + atc; hk, heat-killed. (B) Detection of lipid-linked peptidoglycan precursors labeled by alkDADA in vivo. Wildtype and Δalr strains were incubated in alkDADA (purple and yellow) and treated or not with the indicated antibiotics prior to harvest. Alkyne-tagged species from organic extracts were ligated to picolyl azide biotin via CuAAC then detected as in A. BDL/PBP4, endogenous precursors from MurJ + atc were subjected to in vitro exchange reaction as in A. (C) Detection of lipid-linked peptidoglycan precursors labeled by azDADA in vivo. Δalr was incubated in azDADA (purple and yellow). Azide-tagged species from organic extracts were ligated to DIFO-biotin via SPAAC, left, or to alkyne biotin via CuAAC, right, then detected as in A.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** Structured illumination microscopy of M. smegmatis incubated in alkDADA for 2 min then washed, fixed and subjected to CuAAC with azido-CR110. Arrows highlight sidewall signal.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** M. smegmatis were incubated in the fluorescent antibiotic for 3 hr or ~one doubling. Longer arrow, polar labeling. Short arrow, sidewall labeling.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** (A) M. smegmatis merodiploid expressing PonA1-mRFP imaged by structured illumination microscopy. Arrows highlight sidewall signal. (B) Bocillin labeling of live M. smegmatis pre-treated or not with ampicillin or d-cycloserine. No Boc, autofluorescence; no abx, no antibiotic. (C) Quantitation of cellular fluorescence for B. 60 < n < 180. Signal was normalized by cell length and brighter poles oriented to the right-hand side of the graph. AU, arbitrary units.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** M. smegmatis were incubated in RADA for 15 min, washed and grown for 0 or 15 min in the absence of probe. Images obtained by conventional fluorescence microscopy, left, were quantified for 24 < n < 41 cells, right, as in Figure 5—figure supplement 3C. Magnification of the dim and bright pole quantitation are shown above the main graph. Distances between local maxima are expressed as percentage of total, normalized cell length. Experiment was performed twice with similar results. dp, dim pole; sw, sidewall; bp, bright pole. AU, arbitrary units.
+
+### Fluorescent vancomycin and penicillin-binding proteins localize to the poles and sidewall in mycobacteria
 
 The final, lipid-linked peptidoglycan precursor lipid II is synthesized by MurG on the cytoplasmic side of the plasma membrane then flipped to the periplasm and polymerized [Figure 3—figure supplement 1, (Zhao et al., 2017)]. We previously showed that MurG fused to two different fluorescent proteins and expressed under two different promoters is present at both the poles and periphery of M. smegmatis (Meniche et al., 2014). Labeling by alkDADA marks similar subcellular locations even with pulses as short as ~1% generation time (Figure 5—figure supplement 1). These data suggest that lipid-linked peptidoglycan precursors are synthesized at lateral sites in addition to their expected localization at the poles. However, our standard experimental protocol for detecting envelope labeling is to perform CuAAC on fixed cells. Because formaldehyde fixation can permeabilize the plasma membrane to small molecules, labeled material may be intracellular, extracellular or both. Dipeptide labeling could therefore read out lipid I/II on the cytoplasmic face of the plasma membrane, uncrosslinked lipid II on the periplasmic side, or polymerized peptidoglycan.
 
@@ -84,17 +144,17 @@ We next sought to address whether these molecules could be used to build the pep
 
 We were concerned that overexpression of PonA1-mRFP causes aberrant polar morphology and is toxic to M. smegmatis (Hett et al., 2010; Kieser et al., 2015a) and about the propensity of mCherry to cluster (Landgraf et al., 2012). Because our attempts to produce PonA1 fusions with different fluorescent proteins were unsuccessful, we opted to take a complementary, activity-based approach. Fluorescent derivatives of β-lactam antibiotics bind specifically and covalently to PBPs, and therefore have been used to image active enzyme in both protein gels and intact cells (Kocaoglu and Carlson, 2013). Our images of whole cells labeled with Bocillin, a BODIPY conjugate of penicillin, were in agreement with those from a previous publication (Plocinski et al., 2011), and seemed to indicate that Bocillin binds both the poles and sidewall of M. smegmatis (Figure 5—figure supplement 3B and C). However, given the hydrophobicity of the BODIPY dye, we considered the possibility that Bocillin might nonspecifically associate with the greasy mycomembrane. Fluorescence across the cell surface was diminished by pre-treating cells with the β-lactam ampicillin, which prevents peptidoglycan assembly by binding to PBPs, but not d-cycloserine, which inhibits peptidoglycan synthesis in a PBP-independent manner (Figure 5—figure supplement 3B and C). These experiments suggest that at least some of the sidewall labeling of Bocillin is specific, and therefore, that PBPs are present and active in these locations.
 
-## Expansion of the mycobacterial envelope is concentrated at the poles
+### Expansion of the mycobacterial envelope is concentrated at the poles
 
 Our data indicate that peptidoglycan precursors are made and likely polymerized both at the poles and sidewall. Peptidoglycan synthesis is often presumed to mark sites of bacterial cell growth. However, dispersed elongation has not been reported in mycobacteria. Accordingly we performed a pulse chase experiment to test whether cell expansion correlates with sites of metabolic labeling. After marking peptidoglycan with RADA, we tracked labeled and unlabeled cell surface during 15 min (~10% generation time) of outgrowth. While we cannot rule out sidewall expansion below our limit of detection, the fluorescence dilution in this experiment was consistent with previous reports (Aldridge et al., 2012; Santi et al., 2013; Meniche et al., 2014; Kieser and Rubin, 2014; Boutte et al., 2016; Rego et al., 2017) and restricted to the mycobacterial poles (Figure 5—figure supplement 4).
 
-## Muramidase treatment increases peptidoglycan synthesis along the sidewall
+### Muramidase treatment increases peptidoglycan synthesis along the sidewall
 
 What is the function of peptidoglycan assembly that does not directly contribute to physical expansion of the cell? We hypothesized that one role of growth-independent cell wall synthesis might be repair. More specifically, we reasoned that insertion of peptidoglycan building blocks directly along the cell periphery would enable a real-time, comprehensive response to damage (Figure 6A). Cell wall repair that is restricted to sites of mycobacterial growth, by contrast, would be confined to the poles and renew the cell surface only after several generations. Extended incubation of M. smegmatis (~48 hr) with the peptidoglycan-degrading enzyme lysozyme substantially decreases colony-forming units (Kanetsuna, 1980). We have also shown that spheroplasts generated by combined glycine and lysozyme treatment lack peptidoglycan (Melzer et al., 2018). Together these data indicate that the enzyme is able to access and damage peptidoglycan in intact cells. We challenged M. smegmatis for 30 min in a mixture of lysozyme and mutanolysin, another enzyme that has been extensively used for in vitro digestion of peptidoglycan. After washing away the enzyme, we assessed the sites of peptidoglycan synthesis by alkDADA labeling. Pre-treatment by the muramidases clearly shifted the fluorescence from the brighter pole towards the sidewall (Figure 6B). These data indicate that mycobacteria reallocate peptidoglycan assembly away from the faster growing pole and toward the periphery upon damage to the cell wall (Figure 6A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/37243/elife-37243-fig6-v3.jpg)
 
-**Figure 6.:** (A) Model for the spatial organization of peptidoglycan (PG) synthesis and repair with respect to mycobacterial growth and division. Left, regions of cell surface that expand are highlighted in blue. Middle and right, areas of peptidoglycan precursor synthesis are highlighted in orange. (B) M. smegmatis was pretreated (dark green) or not (light green) with lysozyme (lys) and mutanolysin (mut) for 30 min then incubated an additional 15 min in the presence of alkDADA. The bacteria were then washed and fixed and subjected to CuAAC with azido-CR110. Fluorescence was quantitated as in Figure 2 for cells without (top; 232 < n < 236) and with (bottom; 29 < n < 55) visible septa. Dim pole (dp), sidewall (sw) and bright pole (bp) defined as in Figure 2. Fluor distrib, average fluorescence distribution. AU, arbitrary units. Error bars, ±standard deviation. Statistical significance between untreated (four biological replicates) and lysozyme/mutanolysin-treated (three biological replicates) was assessed for the dim pole, sidewall and bright pole by two-tailed Student’s t test. *p<0.05; **p<0.005.10.7554/eLife.37243.032Figure 6—source data 1.M. smegmatis challenged with peptidoglycan-digesting enzymes.
+**Figure 6.:** (A) Model for the spatial organization of peptidoglycan (PG) synthesis and repair with respect to mycobacterial growth and division. Left, regions of cell surface that expand are highlighted in blue. Middle and right, areas of peptidoglycan precursor synthesis are highlighted in orange. (B) M. smegmatis was pretreated (dark green) or not (light green) with lysozyme (lys) and mutanolysin (mut) for 30 min then incubated an additional 15 min in the presence of alkDADA. The bacteria were then washed and fixed and subjected to CuAAC with azido-CR110. Fluorescence was quantitated as in Figure 2 for cells without (top; 232 < n < 236) and with (bottom; 29 < n < 55) visible septa. Dim pole (dp), sidewall (sw) and bright pole (bp) defined as in Figure 2. Fluor distrib, average fluorescence distribution. AU, arbitrary units. Error bars, ±standard deviation. Statistical significance between untreated (four biological replicates) and lysozyme/mutanolysin-treated (three biological replicates) was assessed for the dim pole, sidewall and bright pole by two-tailed Student’s t test. *p<0.05; **p<0.005.
 
 ## Discussion
 
@@ -108,29 +168,214 @@ It is possible that peptidoglycan assembly along the lateral surface of the myco
 
 ## Materials and methods
 
-## Bacterial strains and culture conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Desig-nation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (M. smegmatis mc2155)</td>
+      <td>M. smegmatis</td>
+      <td>NC_008596 in GenBank</td>
+      <td></td>
+      <td>Wildtype M. smegmatis</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>∆alr</td>
+      <td>This paper</td>
+      <td></td>
+      <td>The mutant was generated by recombineering protocols described in DOI: 10.1038/nmeth996 and DOI: 10.1007/978-1-4939-2450-9_10; see the methods section for further detail.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtA</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtB</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtE</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtAE</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtBE</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtBA</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ΔldtABE</td>
+      <td>doi:10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>MurJ (MviN)</td>
+      <td>doi: 10.1126/scisignal.2002525.</td>
+      <td></td>
+      <td>Obtained from Dr. Chris Sassetti (U Mass Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>ddlAts</td>
+      <td>doi: 10.1128/JB.182.23. 6854–6856.2000</td>
+      <td></td>
+      <td>Obtained from Dr. Graham Hatfull (U Pitt)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. smegmatis)</td>
+      <td>pTetOldtA</td>
+      <td>doi: 10.1101/291823</td>
+      <td></td>
+      <td>Obtained from Dr. Eric Rubin (Harvard SPH) and Dr. Hesper Rego (Yale Med)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. tuberculosis)</td>
+      <td>ΔRD1 ΔpanCD</td>
+      <td>doi: 10.1016/j.vaccine.2006.05.097</td>
+      <td></td>
+      <td>Obtained from Dr. Bill Jacobs (Einstein Med)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RADA</td>
+      <td>doi: 10.1002/anie.201206749; doi: 10.1038/nprot.2014.197</td>
+      <td></td>
+      <td>Synthesized by Tocris Bioscience (Bristol, United Kingdom) following referenced protocols</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NADA</td>
+      <td>doi: 10.1002/anie.201206749; doi: 10.1038/nprot.2014.197</td>
+      <td></td>
+      <td>Synthesized by Tocris Bioscience (Bristol, United Kingdom) following referenced protocols</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HADA</td>
+      <td>doi: 10.1002/anie.201206749; doi: 10.1038/nprot.2014.197</td>
+      <td></td>
+      <td>Synthesized by Tocris Bioscience (Bristol, United Kingdom) following referenced protocols</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>alkyne-d-alanine (alkDA;EDA)</td>
+      <td>Thermo Fisher, Waltham, MA</td>
+      <td>Cat # AC441225000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>alkyne-d-alanine-d-alanine (alkDADA; EDADA)</td>
+      <td>doi: 10.1038/nature12892</td>
+      <td></td>
+      <td>Synthesized by the Chemical Synthesis Core Facility at Albert Einstein College of Medicine (NY, USA) following the referenced protocols</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>azido-d-alanine-d-alanine (azDADA; ADADA)</td>
+      <td>doi: 10.1038/nature12892</td>
+      <td></td>
+      <td>Synthesized by the Chemical Synthesis Core Facility at Albert Einstein College of Medicine (NY, USA) following the referenced protocols</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>O-alkyne-trehalose monomycolate (OalkTMM)</td>
+      <td>doi: 10.1002/anie.201509216</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>N-alkyne-trehalose monomycolate (NalkTMM)</td>
+      <td>doi: 10.1002/anie.201509216</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB codes</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Scripts designed for MATLAB to analyze the fluorescence profiles along a cell body from data collected in Oufti (doi: 10.1111/mmi.13264).</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fmoc-D-Lys(biotinyl)- OH (BDL precursor)</td>
+      <td>Chem-Impex International</td>
+      <td>Cat # 16192</td>
+      <td>Deprotected as described in doi: 10.1021/ja508147s to yield BDL</td>
+    </tr>
+    <tr>
+      <td>DNA reagent</td>
+      <td>PBP4 plasmid</td>
+      <td>doi: 10.1021/ja508147s</td>
+      <td></td>
+      <td>Obtained from Dr. Suzanne Walker (Harvard Med)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains and culture conditions
 
 mc2155 M. smegmatis and ΔRD1 ΔpanCD M. tuberculosis (Sambandamurthy et al., 2006) were grown at 37°C in Middlebrook 7H9 growth medium (BD Difco, Franklin Lakes, NJ) supplemented with glycerol, Tween 80 and ADC (M. smegmatis) or OADC and 50 µg/ml pantothenic acid (M. tuberculosis). The ∆alr strain was further supplemented with 1 mM d-alanine. The ddlAts strain was grown in 7H9-ADC at 30°C or 37°C as specified.
 
-## Cell envelope labeling
+### Cell envelope labeling
 
 Probes used in this study include (i) fluorescent d-amino acids HADA, NADA and RADA (Tocris Bioscience, Bristol, UK) (ii) alkDA (R-propargylglycine, Thermo Fisher, Waltham, MA) (iii) alkDADA and azDADA (Chemical Synthesis Core Facility, Albert Einstein College of Medicine, Bronx, NY) and (iv) OalkTMM and NalkTMM, synthesized as described previously (Foley et al., 2016). The labeling procedures were performed with modifications from (Kuru et al., 2012; Siegrist et al., 2013; Foley et al., 2016). Unless otherwise indicated, mid-log M. smegmatis or M. tuberculosis were labeled with 500 μM HADA, 25 μM NADA or RADA, 50 μM alkDA, 1 or 2 mM alkDADA, 50 μM OalkTMM or 250 μM NalkTMM for 15 min or 2 hr, respectively. In some cases M. smegmatis was preincubated ± antibiotics at different fold-MIC (MICs = 80 μg/mL d-cycloserine, 8 μg/mL ampicillin (with 5 μg/mL clavulanate), 0.5 μg/mL imipenem (with 5 μg/mL clavulanate), 6 μg/mL vancomycin) or ± 500 µg/mL lysozyme and 500 U/mL mutanolysin for 30 min then grown for an additional 15 min in the presence of the probes. Cultures were then centrifuged at 4°C, washed in pre-chilled PBS containing 0.05% Tween 80% and 0.01% BSA (PBSTB) and fixed for 10 min in 2% formaldehyde at room temperature (RT). After two washes in PBSTB, the bacterial pellets were resuspended in half of the original volume of freshly prepared CuAAC solution in PBSTB (Siegrist et al., 2013) containing either AF488 picolyl azide or carboxyrhodamine 110 (CR110) azide (Click Chemistry Tools, Scottsdale, AZ) or 3-azido-7-c (Jena Biosciences, Jena, Germany). For M. tuberculosis experiments and in Figure 2—figure supplement 1A, we used a modified, low-copper CuAAC reaction protocol: 200 μM CuSO4 and 800 μM BTTP (Chemical Synthesis Core Facility, Albert Einstein College of Medicine, Bronx, NY) were pre-mixed then added to PBSTB. Immediately before resuspending the pellets, 2.5 mM freshly prepared sodium ascorbate and 300 μM 3-azido-7-hydroxycoumarin were added to the mixture. After 30–60 min gentle agitation at RT, cultures were washed once with PBSTB, once with PBS and resuspended in PBS for imaging or flow cytometry analysis (FITC, BV510, and Texas Red channels on a BD DUAL LSRFortessa, UMass Amherst Flow Cytometry Core Facility). NHS ester dye labeling and fluorescent vancomycin labeling were performed as described (Aldridge et al., 2012; Thanky et al., 2007). M. tuberculosis was post-fixed with 4% formaldehyde overnight at RT prior to removing from the biosafety cabinet. For Bocillin labeling experiments, 500 μL of mid-log M. smegmatis was washed once in PBST and resuspended in PBST containing 5 μg/mL clavulanate. Bacteria were then pre-incubated or not with 50 μg/mL ampicillin or d-cycloserine at RT with gentle agitation. After 15 min, 50 μg/mL Bocillin FL (Thermo Fisher) was added and cultures were incubated for an additional 30 min. They were then washed three times in PBST and imaged live on agar pads.
 
-## Genetic manipulation
+### Genetic manipulation
 
 The Δalr M. smegmatis strain was generated using standard recombineering methods (van Kessel and Hatfull, 2007; Murphy et al., 2015). 500 bp up- and downstream of alr were cloned on either side of the hygR cassette flanked with loxP sites. After induction of recET, transformation and subsequent selection on hygromycin and 1 mM d-alanine, PCR was used to confirm the presence of the correct insert. Strains were then cured of the hygR cassette by transformation with an episomal plasmid carrying the Cre recombinase and a sucrose negative selection marker. Strains were cured of this plasmid by repeated passaging in the presence of sucrose.
 
 M. smegmatis lacking ldtA, ldtB and/or ldtE were generously provided by Dr. Kasia Baranowski, Dr. Eric Rubin and Dr. Hesper Rego and are described in bioRxiv https://doi.org/10.1101/291823. Briefly, strains were constructed by recombineering to replace the endogenous copies with zeocin or hygromycin resistance cassettes flanked by loxP sites as previously described above (Boutte et al., 2016). Once the knock-outs were verified by PCR, the antibiotic resistance cassettes were removed by the expression of Cre recombinase. To complement ΔldtABE, a copy of ldtA was under the constitutive TetO promoter on a kanamycin marked vector (CT94) that integrates at the L5 phage integration site of the chromosome.
 
-## Microscopy
+### Microscopy
 
 Fixed bacteria were imaged either by conventional fluorescence microscopy (Nikon Eclipse E600, Nikon Eclipse Ti or Zeiss Axioscope A1 with 100x objectives) or by structured illumination microscopy (Nikon SIM-E/A1R with SR Apo TIRF 100x objective).
 
-## Microscopy analysis
+### Microscopy analysis
 
 Images were processed using FIJI (Schindelin et al., 2012) and cells were outlined and segmented using Oufti (Paintdakhi et al., 2016). Fluorescence signals of each cell were detected using Oufti and analyzed using custom-written MATLAB codes. The fluorescence intensities that we report here have been normalized by cell area. We distinguished septating from non-septating cells using the probe fluorescence profile along the long cell axis. We used the peakfinderprogram (Sliusarenko et al., 2011) to identify peaks in the labeling profile. Because our probes label both the cell poles as well as the septum, septating cells were those that had three peaks in their labeling profile, with the middle peak positioned between 30% and 70% along the normalized long cell axis. Non-septating cells were identified as having only two peaks.
 
-## Detection of lipid-linked peptidoglycan precursors
+### Detection of lipid-linked peptidoglycan precursors
 
 To detect endogenous lipid-linked peptidoglycan precursors, we adopted the assay developed in (Qiao et al., 2014) with some modifications. M. smegmatis was inoculated in 100 mL of 7H9 medium and grown to mid-log phase at 37°C. Where applicable, MurJ was depleted by 8 hr of anhydrotetracycline-induced protein degradation as described (Gee et al., 2012). The bacteria were then divided into 25 mL cultures that were subjected or not to freshly prepared 80 µg/mL vancomycin and/or 10 µg/mL d-cycloserine. After 1 hr of incubation at 37°C, bacteria were collected by centrifugation and cell pellets were normalized by wet weight. 200–300 mg wet pellet was resuspended in 500 µL 1% glacial acetic acid in water. 500 µL of the resuspended pellet mixture was transferred into a vial containing 500 µL of chloroform and 1 mL of methanol and kept at room temperature (RT) for 1–2 hr with occasional vortexing. The mixture was then centrifuged at 21,000x g for 10 min at RT and the supernatant was transferred into a vial containing 500 µL of 1% glacial acetic acid in water and 500 µL chloroform, and vortexed for 1 min. After centrifugation at 900x g for 2 min at RT, three phases were distinguishable: aqueous, an interface, and organic. We collected the lipids from the organic phase and from the interface and concentrated it under nitrogen. Organic extracts were resuspended in 12 µL of DMSO and then incubated with purified S. aureus PBP4 and biotin-d-lysine (BDL; deprotected from Fmoc-D-Lys(biotinyl)-OH; Chem-Impex International) as described (Qiao et al., 2014). Upon completion of the BDL exchange reaction, 10 µL of 2X loading buffer was added to the vials. Contents were boiled at 95°C for 5 min then run on an 18% SDS polyacrylamide gel. Biotinylated species were transferred to a PVDF membrane, blotted with streptavidin-HRP (diluted 1:10,000, Thermo-Fisher) and visualized in an ImageQuant system (GE Healthcare).
 

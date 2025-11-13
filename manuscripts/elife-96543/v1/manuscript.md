@@ -17,13 +17,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0170z8493 Shaanxi Normal University Xi'an China
+1. Shaanxi Normal University Xi'an China ([ROR:0170z8493](https://ror.org/0170z8493))
 
 † Corresponding author
 
 ## Abstract
 
-Many species of animals exhibit caregiving or aggression toward conspecific offspring. The neural mechanisms underlying the infanticide and pup care remain poorly understood. Here, using monogamous mandarin voles ( Microtus mandarinus ), we found that more oxytocin (OT) neurons in the paraventricular nucleus (PVN) were activated during pup caring than infanticide. Optogenetic activation of OT neurons in the PVN facilitated pup caring in male and female mandarin voles. In infanticide voles, optogenetic activation of PVN OT cells or PVN-medial prefrontal cortex (mPFC) OT projection fibers prolonged latency to approach and attack pups, whereas inhibition of these OT neurons or projections facilitated approach and infanticide. Optogenetic activation of PVN OT neuron projections to the mPFC in males shortened the latency to approach and retrieve pups and facilitated the initiation of pup care, but produced no effects on pup-care females. In addition, OT release in the mPFC increased upon approaching and retrieving pups, and decreased upon attacking pups. Intraperitoneal injection of OT promoted pup care and inhibited infanticide behavior. It is suggested that the OT system, especially PVN OT neurons projecting to mPFC, modulates pup-directed behaviors and OT can be used to treat abnormal behavioral responses associated with some psychological diseases such as depression and psychosis.
+Many species of animals exhibit caregiving or aggression toward conspecific offspring. The neural mechanisms underlying the infanticide and pup care remain poorly understood. Here, using monogamous mandarin voles (Microtus mandarinus), we found that more oxytocin (OT) neurons in the paraventricular nucleus (PVN) were activated during pup caring than infanticide. Optogenetic activation of OT neurons in the PVN facilitated pup caring in male and female mandarin voles. In infanticide voles, optogenetic activation of PVN OT cells or PVN-medial prefrontal cortex (mPFC) OT projection fibers prolonged latency to approach and attack pups, whereas inhibition of these OT neurons or projections facilitated approach and infanticide. Optogenetic activation of PVN OT neuron projections to the mPFC in males shortened the latency to approach and retrieve pups and facilitated the initiation of pup care, but produced no effects on pup-care females. In addition, OT release in the mPFC increased upon approaching and retrieving pups, and decreased upon attacking pups. Intraperitoneal injection of OT promoted pup care and inhibited infanticide behavior. It is suggested that the OT system, especially PVN OT neurons projecting to mPFC, modulates pup-directed behaviors and OT can be used to treat abnormal behavioral responses associated with some psychological diseases such as depression and psychosis.
 
 ## Introduction
 
@@ -37,49 +37,85 @@ Based on the potential antagonistic effects between pup care and infanticide beh
 
 ## Results
 
-## Pup-care behavior activates more OT+ cells than infanticide in PVN
+### Pup-care behavior activates more OT+ cells than infanticide in PVN
 
 In order to observe the activated OT neurons in virgin voles during pup care and infanticide behaviors, we co-stained OT and c-Fos on brain slices from voles exhibiting different behaviors using the immunofluorescence method (Figure 1a). Histological analysis showed no difference in the number of OT or c-Fos-positive cells between the pup care and infanticide groups of female (Figure 1b and c, Figure 1—source data 1) and male (Figure 1e and f, Figure 1—source data 1) voles. Approximately 11% (male) and 14% (female) of OT cells expressed c-Fos during pup caring, whereas only about 3% (males) and 7% (females) of OT neurons were labeled by c-Fos during infanticide (female: t(6) = 5.173, p<0.01, d = 3.658, Figure 1d, Figure 1—source data 1; male: t(6) = 2.607, p<0.05, d = 1.907, Figure 1g, Figure 1—source data 1). In male and female voles, more OT neurons were activated during pup caring than infanticide (Figure 1d and g). In addition, females displaying pup care and infanticide showed higher merge rates of OT and c-Fos than males displaying the same behaviors (F(1,12) = 5.002, p=0.045, η2 = 0.294, Figure 1d and g, Figure 1—source data 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig1-v1.jpg)
 
-**Figure 1.:** (a) Representative histological images of OT (green) and c-Fos (red)-positive cells in PVN: Blue, DAPI; yellow, merged cells. Enlarged views of the boxed area are shown on the right of each image, and white arrows indicate the overlap of OT and c-Fos-positive cells. Objective: ×20. Scale bars, 50 μm. (b) Number of OT-positive cells in pup care and infanticide female voles. (c) Number of c-Fos-positive cells in pup care and infanticide female voles. (d) Percentage of c-Fos-expressing cells in OT cells of PVN from pup care and infanticide female voles. **p<0.01. Independent-samples t-tests. (e) Number of OT cells in pup care and infanticide male voles. (f) Number of c-Fos cells in pup care and infanticide male voles. (g) Percentage of c-Fos-expressing cells in OT cells of PVN from pup care and infanticide male voles. *p<0.05. Independent-samples t-tests. Error bars indicate SEM.Figure 1—source data 1.
+**Figure 1.:** (a) Representative histological images of OT (green) and c-Fos (red)-positive cells in PVN: Blue, DAPI; yellow, merged cells. Enlarged views of the boxed area are shown on the right of each image, and white arrows indicate the overlap of OT and c-Fos-positive cells. Objective: ×20. Scale bars, 50 μm. (b) Number of OT-positive cells in pup care and infanticide female voles. (c) Number of c-Fos-positive cells in pup care and infanticide female voles. (d) Percentage of c-Fos-expressing cells in OT cells of PVN from pup care and infanticide female voles. **p<0.01. Independent-samples t-tests. (e) Number of OT cells in pup care and infanticide male voles. (f) Number of c-Fos cells in pup care and infanticide male voles. (g) Percentage of c-Fos-expressing cells in OT cells of PVN from pup care and infanticide male voles. *p<0.05. Independent-samples t-tests. Error bars indicate SEM.
 
-## Effects of optogenetic activation of PVN OT neurons on pup-directed behaviors
+### Effects of optogenetic activation of PVN OT neurons on pup-directed behaviors
 
 To reveal the causal role of PVN OT neuron in the regulation of pup care and infanticide behaviors, the effects of optogenetic activation of PVN OT neurons on pup-directed behaviors were investigated (Figure 2a–c). Over 89% of CHR2 expression overlapped with OT neurons, indicating high specificity of the CHR2 virus (Figure 2d, Figure 2—source data 1). 473 nm light stimulation increased c-Fos expression in the CHR2 virus-infected brain region that validated the effect of optogenetic activation (Figure 3—figure supplement 1a-c). We found that optogenetic activation of PVN OT cells significantly reduced latency to approach (CHR2: OFF vs. ON, F(1, 7) = 11.374, p<0.05, OFF/ON: η2 = 0.592, Figure 2o, Figure 2—source data 1) and retrieve pups (CHR2: OFF vs. ON, F(1, 4) = 14.755, p<0.05, OFF/ON: η2 = 0.156, Figure 2p, Figure 2—source data 1) and prolonged crouching time (CHR2: OFF vs. ON, F(1, 7) = 60.585, p<0.001, OFF/ON: η2 = 0.419, Figure 2s, Figure 2—source data 1) in pup-care males, but had no effect on females (Figure 2j–n, Figure 2—source data 1), nor in the control virus group. Optogenetic activation of these neurons significantly reduced the latency to approach and attack pups in male (approach: CHR2: OFF vs. ON, F(1, 5) = 185.509, p<0.0001, OFF/ON: η2 = 0.552, Figure 2h, Figure 2—source data 1; infanticide: CHR2: OFF vs. ON, F(1, 5) = 59.877, p<0.01, OFF/ON: η2 = 0.526, Figure 2i, Figure 2—source data 1) and female voles (approach: CHR2: OFF vs. ON, F(1, 6) = 64.810, p<0.001, OFF/ON: η2 = 0.915, Figure 2f, Figure 2—source data 1; infanticide: CHR2: OFF vs. ON, F (1, 6) = 75.729, p<0.001, OFF/ON: η2 = 0.940, Figure 2g, Figure 2—source data 1) displaying infanticide behaviors, whereas they had no effect on the control virus group (Figure 2f–l, Figure 2—source data 1). Further, we conducted a two-way rmANOVA on the CHR2 data set for both sexes and found that pup-care females exhibited shorter latencies to approach (OFF: gender simple effect, F(1,13) = 5.735, p=0.032, η2 = 0.306, Figure 2j and o) and retrieve pups (OFF: gender simple effect, F(1,10) = 13.040, p=0.005, η2 = 0.566, Figure 2k and p) than males (Figure 2—source data 1). These results suggest that activation of PVN OT neurons facilitates pup-care behavior and significantly inhibits infanticide behavior.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig2-v1.jpg)
 
-**Figure 2.:** (a) Schematic of virus injection and optical fiber implantation. (b) Schematic diagram of the behavioral test. (c) Representative histological images of CHR2 (red) expression and OT staining (green), enlarged view of the boxed area is on the right side. Blue, DAPI. Objective: ×20. Scale bars, 50  μm. (d) Statistics of the specificity of CHR2 expression in three voles; more than 89% of CHR2-positive neurons overlapped with OT-positive neurons. (e) Timeline of the experiment. (f–i) Approach (f, h) and infanticide (g, i) latency of seven female (n = 7) and six male (n = 6) voles in mCherry (control virus group) and CHR2 groups. **p<0.01 vs. CHR2 OFF; ***p<0.001 vs. CHR2 OFF; ****p<0.0001 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). (j–n) Latency to approach (j), latency to retrieve (k), grooming time (l), sniffing time (m), and crouching time (n) of seven pup-care female voles (n = 7) in female control virus and CHR2 groups. (o–s) Latency to approach (o), latency to retrieve (p), grooming time (q), sniffing time (r), and crouching time (s) of eight pup-care male voles (n = 8) in male control virus and CHR2 groups. *p<0.05 vs. CHR2 OFF, ***p<0.001 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). Error bars indicate SEM.Figure 2—source data 1.
+**Figure 2.:** (a) Schematic of virus injection and optical fiber implantation. (b) Schematic diagram of the behavioral test. (c) Representative histological images of CHR2 (red) expression and OT staining (green), enlarged view of the boxed area is on the right side. Blue, DAPI. Objective: ×20. Scale bars, 50  μm. (d) Statistics of the specificity of CHR2 expression in three voles; more than 89% of CHR2-positive neurons overlapped with OT-positive neurons. (e) Timeline of the experiment. (f–i) Approach (f, h) and infanticide (g, i) latency of seven female (n = 7) and six male (n = 6) voles in mCherry (control virus group) and CHR2 groups. **p<0.01 vs. CHR2 OFF; ***p<0.001 vs. CHR2 OFF; ****p<0.0001 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). (j–n) Latency to approach (j), latency to retrieve (k), grooming time (l), sniffing time (m), and crouching time (n) of seven pup-care female voles (n = 7) in female control virus and CHR2 groups. (o–s) Latency to approach (o), latency to retrieve (p), grooming time (q), sniffing time (r), and crouching time (s) of eight pup-care male voles (n = 8) in male control virus and CHR2 groups. *p<0.05 vs. CHR2 OFF, ***p<0.001 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). Error bars indicate SEM.
 
-## Effects of optogenetic inhibition of PVN OT neurons on pup-directed behaviors
+### Effects of optogenetic inhibition of PVN OT neurons on pup-directed behaviors
 
 To further verify the roles of PVN OT neurons on pup-induced behavior, we optogenetically inhibited OT cells by eNpHR virus and tested pup-directed behaviors (Figure 3a–c). More than 90% of neurons expressing eNpHR overlapped with OT-positive neurons, indicating high specificity of eNpHR virus infection (Figure 3d, Figure 3—source data 1). 589 nm light stimulation to eNpHR virus-infected brain regions reduced c-Fos expression verifying the effectiveness of opotogenetic inhibition via eNpHR virus (Figure 3—figure supplement 1d–f). Inhibition of PVN OT neurons showed no significant effect on pup-care behavior in male and female voles that spontaneously exhibited pup-caregiving behaviors (Figure 3j–s, Figure 3—source data 1). For both male and female voles in the infanticide group, optogenetic inhibition significantly shortened the latency to approach (female: F(1, 5) = 1331.434, p<0.0001, OFF/ON: η2 = 0.980, Figure 3f, Figure 3—source data 1; male: F(1, 5) = 10.472, p<0.05, OFF/ON: η2 = 0.690, Figure 3h, Figure 3—source data 1) and attack pups (female: F 1, 5) = 291.606, p<0.0001, OFF/ON: η2 = 0.991, Figure 3g, Figure 3—source data 1; male: F(1, 5) = 46.901, p<0.01, OFF/ON: η2 = 0.837, Figure 3i, Figure 3—source data 1. In addition, we performed a two-way rmANOVA on the eNpHR group data for both sexes and found that pup-care females exhibited shorter latency to approach (gender main effect F(1,10) = 62.131, p<0.0001, η2 = 0.861, Figure 3j and o) and retrieve (gender main effect F(1,10) = 137.393, p<0.0001, η2 = 0.932, Figure 3k and p) than males (Figure 3—source data 1). These results suggest that inhibition of OT neurons in the PVN significantly facilitates infanticide behavior.
 
-## Changes in OT release upon pup-directed behaviors
+![Figure 3.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig3-v1.jpg)
+
+**Figure 3.:** (a) Schematic of virus injection and optical fiber implantation. (b) Schematic diagram of the behavioral test. (c) Representative histological images of OT staining (green) and eNpHR (red) expression, enlarged view of the boxed area is shown on the right side. Blue, DAPI. Objective: ×20. Scale bars, 50  μm. (d) Statistics of the specificity of CHR2 expression in three voles; more than 90% of eNpHR expression overlapped with OT. (e) Timeline of the experiment. (f–i) Approach (f, h) and infanticide (g, i) latency of six female (n = 6) (f, g) and six male (n = 6) (h, i) infanticide voles. *p<0.05 vs. eNpHR OFF; **p<0.01 vs. eNpHR OFF; ****p<0.0001 vs. eNpHR OFF. Two-way rmANOVA (factors: treatment × stimulus). (j–n) Approach latency (j), retrieval latency (k), grooming time (l), sniffing time (m), and crouching time (n) in six control mCherry (n = 6) and eNpHR (n = 6) groups of pup-care female voles. (o–s) Approach latency (o), retrieval latency (p), grooming time (q), sniffing time (r), and crouching time (s) in six control mCherry (n = 6) and eNpHR (n = 6) groups of pup-care male voles. Error bars indicate SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) 473 nm light-induced c-Fos (green) expression overlapping with mCherry (red). Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (b) 473 nm light-induced c-Fos (green) expression overlapping with CHR2 (red). Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (c) 473 nm light induced more c-Fos expression in CHR2, which indicated the effectiveness of CHR2 (n = 3). ****p<0.0001. Independent-samples t-test. (d) 589 nm light-induced c-Fos (green) expression overlapping with mCherry (red). Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (e) 589 nm light-induced c-Fos (green) expression overlapping with eNpHR (red). Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (f) 589 nm light induced less c-Fos expression in eNpHR, which indicated the effectiveness of eNpHR (n = 3). **p<0.01. Independent-samples t-test. Error bars indicate SEM. For (c, f), n = 3 per group, data are mean  ± s.e.m. Statistical analysis was performed using independent-samples t-test (c, f). **p<0.01, ****p<0.0001. Details of the statistical analyses are as follows: (c) t(4) = –23.139, p=0.000021, (f) t(4) = 10.136, p=0.001.
+
+### Changes in OT release upon pup-directed behaviors
 
 The results of the optogenetic manipulation demonstrated that PVN OT neurons regulated pup-induced behavior. We next detected the OT release in the mPFC during pup-induced behavior by OT1.0 sensor (Figure 4a–c). Pup-caring female and male voles showed a significant increase (female: F(1.958, 13.708) = 45.042, p<0.001, η2 = 0.865; male: F(5, 35) = 24.057, p<0.01, η2 = 0.775) in the signal for OT1.0 sensors upon approaching (female: p<0.01; male: p<0.05) and retrieving (female: p<0.01; male: p<0.05), whereas there was no significant difference in the signal at the onset of other behaviors compared with the signal before the introduction of the pups (Figure 4f–m, Figure 4—source data 1). In addition, we compared the signals of OT1.0 sensors in the pup-caring voles upon the first, second, and third approaches to the pups (female: F(2, 14) = 10.917, p<0.01, η2 = 0.609; male: F(2, 14) = 13.351, p<0.01, η2 = 0.656), OT release peaked at the first approach and tended to decrease thereafter (Figure 4d and e, Figure 4—source data 1). In infanticide female and male voles, OT release decreased upon attacking in infanticide males (F(1.117, 7.822) = 85.803, p<0.001, η2 = 0.838) and females (F(1.068, 7.479) = 36.336, p<0.001, η2 = 0.925) (Figure 4n–r, Figure 4—source data 1). In addition, no significant changes in signals were detected from the individuals with control AAV2/9-hSyn-OTmut during pup-directed behaviors (Figure 4—figure supplement 1). In addition, no changes in OT release were detected while subjects were exposed to objects with a similar size and shape as the pup (Figure 4—figure supplement 2). Besides, we found that pup-care females showed higher AUC per second than males during approaching (gender simple effect F(1,14) = 27.740, p=0.000119, η2 = 0.665, Figure 4l and m, Figure 4—source data 1) and retrieving (gender simple effect F(1,14) = 11.695, p=0.004, η2 = 0.455, Figure 4l and m, Figure 4—source data 1) the pups. These results indicate that mPFC OT release significantly increased upon approaching and retrieving in pup-care voles, but decreased upon attacking pups in infanticide voles.
 
-## Effects of optogenetic activation of PVN OT neuron fibers in the mPFC on pup-directed behaviors
+![Figure 4.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig4-v1.jpg)
+
+**Figure 4.:** (a) Recording instrument settings. (b) Illustrations of viral expression and optical fiber location. (c) Representative histological image of OT1.0 sensor (green) and optical fiber locations. Blue, DAPI. Objective: ×4. Scale bars, 500 μm. (d, e) Area under the curve (AUC) per second for pup-care female (d) and male (e) voles approaching pups for the first, second, and third time (n = 8). *p<0.05 vs. first. **p<0.01 vs. first. One-way rmANOVA. (f) Representative ΔF/F traces in pup-care female (f, top) and male (f, bottom) voles during interaction with pups. (g–k) Post-event histograms (PETHs) of z-score of OT1.0 sensor for the following pup-directed behaviors: approach (g), investigate (h), retrieve (i), grooming (j), and crouch (k). (l, m) The mean AUC of z-scores for pup-care female (l) and male (m) voles across various pup-directed behaviors (n = 8). Female: **p<0.01 vs. approach. p<0.01 vs. retrieve. Male: *p<0.05 vs. approach. p<0.05 vs. retrieve. One-way rmANOVA. (n) Representative ΔF/F traces in infanticide female (n, top) and male (n, bottom) voles during interaction with pups. (o, p) PETHs of z-score of OT1.0 sensor for approach and infanticide in infanticide voles. (q, r) The mean AUC of z-score of OT1.0 sensor for pre-pup exposure, approach, and infanticide in infanticide female (q) and male (r) voles (n = 8). **p<0.01 vs. infanticide. One-way rmANOVA. Error bars indicate SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Recording instrument settings. (b) Illustrations of viral expression and optical fiber location. (c) Representative histological image of OTmut sensor (green) and optical fiber locations. Blue, DAPI. Objective: ×4. Scale bars, 500 μm. (d–h, j–n) Post-event histograms (PETHs) of z-score of OTmut sensor signals for the following pup-directed behaviors: approach (d, j), investigate (e, k), retrieve (f, l), grooming (g, m), and crouch (h, n). (i, o) Area under the curve (AUC) per second of z-scores for pup-care female (n = 6, i) and male (n = 6, o) voles across various pup-directed behaviors. (p, q, s, t) PETHs of z-score of OTmut sensor signals for approach and infanticide in infanticide voles. (r, u,) AUC per second of z-score of OTmut sensor signals for pre-pup exposure, approach, and infanticide in infanticide female (n = 6, r) and male (n = 6, u) voles. Error bars indicate SEM. For (i, o, r, u), n = 6 per group, data are mean  ± s.e.m. Statistical analysis was performed using one-way rmANOVA (i, o, r, u). Details of the statistical analyses are as follows: (i) F(5, 25) = 0.680, p=0.643; (o) F(2, 25) = 0.074, p=0.996; (r) F(2, 10) = 0.002, p=0.998; (u) F(2, 10) = 0.665, p=0.536.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a, b, d, e) Post-event histograms (PETHs) of z-score of OT1.0 sensor for approaching and investigating object in female (a, b) and male (d, e) voles. (c, f) Area under the curve (AUC) per second of z-scores for pre object, approaching, and investigating behaviors in female (n = 4, c) and male (n = 4, f) voles. Error bars indicate SEM. For (c, f), n = 4 per group, data are mean  ± s.e.m. Statistical analysis was performed using one-way rmANOVA. Details of the statistical analyses are as follows: (c) F(1.016, 3.047) = 0.346, p=0.601; (f) F(2,6) = 0.183, p=0.838.
+
+### Effects of optogenetic activation of PVN OT neuron fibers in the mPFC on pup-directed behaviors
 
 Previous experiments found that OT release in the mPFC changed upon pup-directed behavior. To manipulate the neural circuit, we first verified oxytocin projections from PVN to the mPFC. We injected retrogradely labeled virus in the mPFC and observed the overlap of virus with OT in the PVN (Figure 5), and we also counted the PVN OT neurons projecting to mPFC and found that approximately 45.16 and 40.79% of cells projecting from PVN to the mPFC were OT-positive, and approximately 18.48 and 18.89% of OT cells in the PVN projected to the mPFC in females and males, respectively (Figure 5—figure supplement 1). Then, we tested whether optogenetic activation of the PVN OT neuron projection fibers in the mPFC affects pup-induced behaviors (Figure 6a–d). Similar to previous results, in the pup-caring group, activation of the fibers facilitated approaching (F(1,5) = 23.915, p<0.01, OFF/ON: η2 = 0.760) and retrieving (F(1,5) = 39.664, p<0.01, OFF/ON: η2 = 0.907) in male voles (Figure 6o–s, Figure 6—source data 1), but had no effect on females (Figure 6j–n, Figure 6—source data 1). In male and female infanticide group voles, optogenetic activation of the PVN OT neuron projection fibers prolonged latency to approach (female: F(1,5) = 37.094, p<0.01, OFF/ON: η2 = 0.875; male: F(1,5) = 74.718, p<0.001, OFF/ON: η2 = 0.889) and attack pups (female: F(1,5) = 38.347, p<0.01, OFF/ON: η2 = 0.877; male: F(1,5) = 61.589, p<0.01, OFF/ON: η2 = 0.910) (Figure 6f–i, Figure 6—source data 1). These results suggest that activation of the PVN OT neurons to mPFC projection promoted the onset of pup-care behavior in pup-care male voles and inhibited the onset of infanticide behavior in infanticide voles.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig5-v1.jpg)
+
+**Figure 5.:** (a) Schematic diagram of mPFC virus injection and oxytocin (OT) staining. (b) Histological pictures of OT (red) and AAV11 (green) co-staining in male and female. Yellow, merged; blue, DAPI. Objective: ×20. Scale bars, 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Schematic diagram of virus injection and immunohistological staining. (b) Statistics of PVN to mPFC OT projection extent (female: n = 5, male: n = 5). Error bars indicate SEM. (c) Percentage of OT-positive cells in PVN projecting to mPFC and percentage of OT cells in PVN that project to mPFC (female: n = 5, male: n = 5). (d, e) Representative histological images of male and female. Red, OT; green, AAV11; yellow, merged. Objective: ×20. Scale bars, 50 μm.
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig6-v1.jpg)
 
-**Figure 6.:** (a) Schematic of virus injection and optical fiber implantation. (b) Schematic diagram of the behavioral test. (c) Illustration of optical fiber implantation in the target brain region. (d) Representative histological pictures of the fiber position and projection fibers. Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (e) Timeline of the experiment. (f–i) Changes in approach latency (f, h) and infanticide latency (g, i) of female (f, g) and male (h, i) infanticide voles in CHR2 and control mCherry group before and after delivery of light (n = 6). **p<0.01 vs. CHR2 OFF; ***p<0.001 vs. CHR2 OFF. Two-way ANOVA (factors: treatment × stimulus). (j–n) Approach latency (j), retrieval latency (k), grooming time (l), sniffing time (m), and crouching time (n) in control mCherry and CHR2 group of pup-care female voles (n = 6). (o–s) Approach latency (o), retrieval latency (p), grooming time (q), sniffing time (r), and crouching time (s) in control mCherry and CHR2 group of pup-care male voles (n = 6). **p<0.01 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). Error bars indicate SEM.Figure 6—source data 1.
+**Figure 6.:** (a) Schematic of virus injection and optical fiber implantation. (b) Schematic diagram of the behavioral test. (c) Illustration of optical fiber implantation in the target brain region. (d) Representative histological pictures of the fiber position and projection fibers. Blue, DAPI. Objective: ×20. Scale bars, 50 μm. (e) Timeline of the experiment. (f–i) Changes in approach latency (f, h) and infanticide latency (g, i) of female (f, g) and male (h, i) infanticide voles in CHR2 and control mCherry group before and after delivery of light (n = 6). **p<0.01 vs. CHR2 OFF; ***p<0.001 vs. CHR2 OFF. Two-way ANOVA (factors: treatment × stimulus). (j–n) Approach latency (j), retrieval latency (k), grooming time (l), sniffing time (m), and crouching time (n) in control mCherry and CHR2 group of pup-care female voles (n = 6). (o–s) Approach latency (o), retrieval latency (p), grooming time (q), sniffing time (r), and crouching time (s) in control mCherry and CHR2 group of pup-care male voles (n = 6). **p<0.01 vs. CHR2 OFF. Two-way rmANOVA (factors: treatment × stimulus). Error bars indicate SEM.
 
-## Optogenetic inhibition of the PVN OT neuron projection fibers promoted infanticide
+### Optogenetic inhibition of the PVN OT neuron projection fibers promoted infanticide
 
 We then optogenetically suppressed the projection fibers from PVN OT neurons to mPFC and observed changes in pup-directed behaviors (Figure 7a–d). Similar to the results of the PVN OT neurons inhibition, we found that optogenetic inhibition of the PVN OT neuron projection fibers promoted approach (F(1,5) = 119.093, p<0.001, OFF/ON: η2 = 0.877) and infanticide (F(1,5) = 112.501, p<0.001, OFF/ON: η2 = 0.885) in infanticide male (Figure 7h and i, Figure 7—source data 1) and female voles (approach: F(1,5) = 280.031, p<0.0001, OFF/ON: η2 = 0.853; infanticide: F(1,5) = 268.694, p<0.0001, OFF/ON: η2 = 0.838) (Figure 7f and g, Figure 7—source data 1). For pup-care male and female voles, inhibition of these fibers did not significantly affect their pup-care behaviors (Figure 7j–s, Figure 7—source data 1). To validate the effectivity of fiber optogenetic inhibition, we combined optogenetic inhibition with OT1.0 sensors and recorded a decrease in OT release upon inhibition of fibers (Figure 7—figure supplement 1). These results suggest that optogenetic inhibition of the PVN OT neuron projection fibers promotes the onset of infanticide behavior in infanticide voles.
 
-## Intraperitoneal injection of OT
+![Figure 7.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig7-v1.jpg)
+
+**Figure 7.:** (a) Illustration of virus injection and optical fiber implantation. (b) Schematic of the behavioral test. (c) Diagram of optical fiber implantation in the target brain region. (d) Representative histological pictures of the fiber location and projection fibers. Blue, DAPI. Objective: ×20. Scale bars, 75 μm. (e) Timeline of the experiment. (f–i) Changes in approach (f, h) and infanticide (g, i) latency of female and male infanticide voles in eNpHR (n = 6) and control mCherry groups (n = 6) before and after light delivery. ***p<0.001 vs. eNpHR OFF. ****p<0.0001 vs. eNpHR OFF. Two-way rmANOVA (factors: treatment × stimulus). (j–n) Approach latency (j), retrieval latency (k), grooming time (l), sniffing time (m), and crouching time (n) in control mCherry (n = 6) and eNpHR (n = 6) group of pup-care female voles. (o–s) Approach latency (o), retrieval latency (p), grooming time (q), sniffing time (r), and crouching time (s) in control mCherry (n = 6) and eNpHR group (n = 6) of pup-care male voles. Error bars indicate SEM.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (a1) Schematic diagram of virus injection and optical fiber implanting. (a2) Representative histological images of viruses infection and fibers placement. Left: red: eNpHR3.0; blue: DAPI; objective: ×20, scale bars: 100 μm; Right: red: eNpHR3.0; green: OT1.0 sensors; blue: DAPI; objective: ×4, scale bars: 500 μm. (b) Representative histogram of OT release in female at 589 nm light. (c) Area under the curve (AUC) per second of OT1.0 sensors pre and post inhibition of optogenetics in females (n = 3). **p<0.01, Paired-samples t-test. (d) Representative histogram of OT release in male at 589 nm light. (e) AUC per second of OT release pre and post optogenetic inhibition in males (n = 3). **p<0.01, Paired-samples t-test. Error bars indicate SEM.
+
+### Intraperitoneal injection of OT
 
 For pre-clinic purposes, we tested the effect of peripheral administration of OT on pup-directed behavior (Figure 8a). Delivery of OT promoted approach (t(4) = 3.737, p<0.05, d = 1.335) and retrieval (t(4) = 4.190, p<0.05, d = 2.04) in pup-care male voles (Figure 8k and m), while it had no significant effect on the pup-directed behaviors in females (Figure 8f–j). For infanticide voles, there was no significant prolongation of approach latency (Figure 8d), but a significant extension of infanticide latency of males after delivery of OT (t(6) = –2.988, p<0.05, d = 1.345, Figure 8e). In infanticide female voles, both the latency to approach (Z = –2.380, p<0.05, d = 5.891, Figure 8b) and attack pups (t (7) = –3.626, p<0.01, d = 1.063, Figure 8c) were significantly prolonged by the delivery of OT. In addition, we integrated data from our pre-test of the effects of OT on the number of infanticide voles and found that intraperitoneal injection of OT significantly reduced the number of infanticide female (χ2 = 4.740, p<0.05, odds ratio [OR] = 0.303, Figure 8p) and male voles (χ2 = 3.039, p=0.081, OR = 0.292, Figure 8q). These results indicate that peripheral delivery of OT can promote the onset of pup-care behavior in pup-care male voles and can significantly suppress the infanticide in both sexes. This provides a basis for the application of OT in clinic and wildlife management.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig8-v1.jpg)
 
-**Figure 8.:** (a) Diagram of intraperitoneal OT delivery. (b, c) Approach (b) and infanticide latency (c) of infanticide female voles (n = 8). *p<0.05. Paired-samples t-test. **p<0.01. Wilcoxon signed-rank test. (d, e) Approach (d) and infanticide latency (e) of infanticide male voles (n = 7). *p<0.05. Paired-samples t-test. (f–j) Approach latency (f, n = 7), sniffing time (g, n = 7), latency to retrieve (h, n = 4), grooming time (i, n = 7), and crouching time (j, n = 7) before and after delivery of OT in pup-care female voles. (k–o) Approach latency (k), sniffing time (l), latency to retrieve (m), grooming time (n), and crouching time (o) before and after delivery of OT in pup-care male voles (n = 5). *p<0.05. Paired-samples t-test. (p, q) Changes in infanticide rates in female (p) and male (q) voles after administration of saline and OT. *p<0.05. Pearson chi-square test. Error bars indicate SEM.Figure 8—source data 1.Statistical results of the number of infanticide or non-infanticide voles induced by injection of saline and OT.
+**Figure 8.:** (a) Diagram of intraperitoneal OT delivery. (b, c) Approach (b) and infanticide latency (c) of infanticide female voles (n = 8). *p<0.05. Paired-samples t-test. **p<0.01. Wilcoxon signed-rank test. (d, e) Approach (d) and infanticide latency (e) of infanticide male voles (n = 7). *p<0.05. Paired-samples t-test. (f–j) Approach latency (f, n = 7), sniffing time (g, n = 7), latency to retrieve (h, n = 4), grooming time (i, n = 7), and crouching time (j, n = 7) before and after delivery of OT in pup-care female voles. (k–o) Approach latency (k), sniffing time (l), latency to retrieve (m), grooming time (n), and crouching time (o) before and after delivery of OT in pup-care male voles (n = 5). *p<0.05. Paired-samples t-test. (p, q) Changes in infanticide rates in female (p) and male (q) voles after administration of saline and OT. *p<0.05. Pearson chi-square test. Error bars indicate SEM.
 
 ## Discussion
 
@@ -97,29 +133,165 @@ In summary, these results indicate that the PVN to mPFC OT neural projection is 
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>AAV2/9-mOXT: Promoter-hCHR2(H134R)–mCherry-ER2-WPRE-pA</td>
+      <td>Shanghai Taitool Bioscience</td>
+      <td>S0442-9-H20</td>
+      <td>Adeno-associated virus construct to transfect and express CHR2</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV2/9-mOXT: Promoter-mCherry-pA</td>
+      <td>Shanghai Taitool Bioscience</td>
+      <td>S0443-9</td>
+      <td>Adeno-associated virus constructs to transfect and express mCherry</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV2/9-mOXT-eNpHR3.0-mCherry-WPRE-hGH-pA</td>
+      <td>BrainVTA</td>
+      <td>Cat#PT-2812</td>
+      <td>Adeno-associated virus constructs to transfect and express eNpHR3.0</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV2/9-hSyn-OT 1.0</td>
+      <td>Brain Case</td>
+      <td>BC-0293</td>
+      <td>Adeno-associated virus constructs to transfect and express OT sensor</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV2/9-hSyn-OTmut</td>
+      <td>Brain Case</td>
+      <td>BC-1119</td>
+      <td>Adeno-associated virus constructs to transfect and express OTmut sensor</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>AAV11-EF1α-EGFP</td>
+      <td>Brain Case</td>
+      <td>BC-0012</td>
+      <td>Adeno-associated virus constructs to transfect and express EGFP</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-OT (monoclonal antibody)</td>
+      <td>Millipore</td>
+      <td>Cat# MAB5296;RRID:AB_2157626</td>
+      <td>1:7000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-c-Fos (polyclonal antibody)</td>
+      <td>Abcam</td>
+      <td>Cat# ab190289; RRID:AB_2737414</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 115-545-062; RRID:AB_2338845</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa Fluor 488</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 111-545-003; RRID:AB_2338046</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit TRITC</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 111-025-003; RRID:AB_2337926</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ready-to-use DAPI</td>
+      <td>Boster</td>
+      <td>Cat# AR1177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ready-to-use goat serum</td>
+      <td>Boster</td>
+      <td>Cat# AR0009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OT</td>
+      <td>Bachem</td>
+      <td>Cat# 50-56-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JWatcher</td>
+      <td>http://www.jwatcher.ucla.edu/</td>
+      <td>RRID:SCR_017595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SPSS</td>
+      <td>IBM</td>
+      <td>RRID:SCR_002865</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Mandarin voles were captured from the wild in Henan, China. All laboratory procedures were in accordance with the Guidelines for the Care and Use of Laboratory Animals in China and the regulations of the Animal Care and Use Committee of Shaanxi Normal University. This study protocol was reviewed and approved by the Academic Committee of Shaanxi Normal University, Special Committee of Scientific Ethics, approval no. 2022-041. The virgin mandarin voles (M. mandarinus) used in this study were F2 generations that were bred at the Animal Center of Shaanxi Normal University and were kept at 24℃ under a 12 hr light-dark cycle (lights on at 8 a.m.) with food and water provided ad libitum. Before the experiments, we exposed the animals to pups, and subjects may exhibit pup care, infanticide, or neglect; we grouped subjects according to their behavioral responses to pups, and individuals who neglect pups were excluded. The stereotactic surgery was performed at the age of 8 weeks of voles. After surgery, the voles were housed with their cage mates. Behavioral tests were carried out 3 weeks after surgery for animal recovery and the viral infection, and 1–5-day-old pups were from other breeders. In case the pups were attacked, we removed them immediately to avoid unnecessary injuries, and the injured pups were euthanized. Sample sizes were determined with reference to previous studies, and all efforts were made to minimize animal suffering.
 
-## Viruses
+### Viruses
 
 AAV2/9-mOXT: Promoter-hCHR2(H134R)–mCherry-ER2-WPRE-pA (8.41 × 1012 μg/ml) and AAV2/9-mOXT: Promoter-mCherry-pA (1.21 × 1013 μg/ml) were purchased from Shanghai Taitool Bioscience Ltd. AAV2/9-mOXT-eNpHR3.0-mCherry-WPRE-hGH-pA (2.27 × 1012 μg/ml) were purchased from BrainVTA (Wuhan, China) LTD. AAV2/9-hSyn-OT 1.0 (2.06 × 1012 μg/ml), AAV2/9-hSyn-OTmut (2.10 × 1012 μg/ml), and AAV11-EF1α-EGFP (5.00 × 1012 μg/ml) were purchased from Brain Case Biotechnology Ltd. For details about the construction of CHR2 and mCherry viruses used in optogenetic manipulation, refer to a previous study in which they constructed an rAAV-expressing Venus from a 2.6 kb region upstream of OT exon 1, which is conserved in mammalian species (Knobloch et al., 2012). For details about the construction of the eNpHR 3.0 virus, refer to one study in which the expression of the vector is driven by the mouse OXT promoter, a 1 kb promoter upstream of exon 1 of the OXT gene, which has been shown to induce cell type-specific expression in OXT cells (Penagarikano et al., 2015). For details about the construction of OT 1.0 sensor, refer to the research of Professor Li’s group (Qian et al., 2023). All viruses were dispensed and stored at –80℃.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 After behavioral tests, serial brain sections were harvested for histological analysis. Anesthetized voles were perfused with 40 ml of PBS and 20 ml of 4% paraformaldehyde. After perfusion, brains were excised and post-fixed by immersion in 4% paraformaldehyde overnight at 4℃. Brains were dehydrated in 20% and then 30% sucrose for 24 hr, respectively, before they were embedded in OCT and cryosectioned into 40 μm slices. Brain slices were rinsed with PBS (10 min) and PBST (PBS and 0.1% Triton X-100, 20 min), blocked in ready-to-use goat serum (Boster, AR0009) for 30 min at room temperature (RT), and then incubated overnight at 4℃ with primary antibody in PBST. The primary antibodies used were mouse anti-OT (1:7000, Millipore, MAB5296) and rabbit anti-c-Fos (1:1000, Abcam, ab190289). Following PBST washing (3 × 5 min), sections were incubated with secondary antibodies in PBST for 2 hr (RT) and stained with DAPI, and then washed once more with PBS (3 × 5 min). The secondary antibodies used were goat anti-mouse Alexa Fluor 488 (1:200, Jackson ImmunoResearch, 115-545-062), goat anti-rabbit Alexa Fluor 488 (1:200, Jackson ImmunoResearch, 111-545-003), goat anti-rabbit TRITC (1:200, Jackson ImmunoResearch, 111-025-003), and ready-to-use DAPI staining solution (Boster, AR1177). Finally, the brain slices were sealed with an anti-fluorescent attenuation sealer.
 
 Images were captured with a fluorescent microscope (Nikon) to confirm the viral expression, placements of optic fiber and viruses, and also the number of c-Fos, OT, and virus-positive cells. To analyze the activity of OT neurons (co-expression of c-Fos and OT) among different behaviors and the specificity of viral expression (co-expression of viruses and OT) in the PVN brain region, brain slices of 40 µm were collected consecutively on four slides, each slide had six brain slices spaced 160 µm apart from each other, and counting was performed on one of the slides. Positive cells in the PVN were manually counted based on the Allen Mouse Brain Atlas and our previous studies.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 For optogenetic manipulation experiments, CHR2, eNpHR, and mCherry-expressing control virus were stereoaxically injected into the PVN (AP: –0.4 mm, ML: 0.2 mm, DV: 5.3 mm) bilaterally through a Hamilton needle using nanoinjector (Reward Life Technology, KDS LEGATO 130) at 100 nl/min. For optogenetic manipulation, optic fibers (2.5 mm O.D., Reward Life Technology, China) with an appropriate fiber length (PVN: 6 mm, mPFC: 3 mm) were implanted ~100 μm above the PVN and mPFC (AP: 2.2 mm ML: 0.9, DV: 1.89 with a 20° angle lateral to middle) and secured with dental cement (Changshu ShangChi Dental Materials Co, Ltd, 202005). For fiber optometry experiment, optic fibers were inserted ~100 μm above the mPFC (AP: 2.2 mm ML: 0.3, DV: 1.8) after injecting the OT1.0 sensor viruses. The stereotaxic coordinates were determined from three-dimensional brain atlas (Chan et al., 2007) and the adjusted coordinates in our lab. The stereotaxic coordinates were determined by the Allen Mouse Brain Atlas and laboratory-corrected data used for voles. Individuals with appropriate viral expression and optical fiber embedding location were included in the statistical analysis, otherwise excluded. The diffusion of central optogenetic viruses and OT1.0 sensors is shown in Figure 9.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig9-v1.jpg)
 
-**Figure 9.:** (a) Diffusion of OT1.0 sensor in PrL. Green: OT1.0 sensors; blue: DAPI; objective: ×4. Scale bars: 500 μm. (b) The transfection rate of chr2 (n = 3) and eNpHR3.0 (n = 3) in OT cells. (c) Diffusion of CHR2 in PVN. Green: OT; red: CHR2; objective: ×20. Scale bars: 50 μm. (d) Diffusion of eNpHR3.0 in PVN. Green: OT; red: eNpHR3.0; objective: ×20. Scale bars: 50 μm.Figure 9—source data 1.
+**Figure 9.:** (a) Diffusion of OT1.0 sensor in PrL. Green: OT1.0 sensors; blue: DAPI; objective: ×4. Scale bars: 500 μm. (b) The transfection rate of chr2 (n = 3) and eNpHR3.0 (n = 3) in OT cells. (c) Diffusion of CHR2 in PVN. Green: OT; red: CHR2; objective: ×20. Scale bars: 50 μm. (d) Diffusion of eNpHR3.0 in PVN. Green: OT; red: eNpHR3.0; objective: ×20. Scale bars: 50 μm.
 
-## Optogenetic
+### Optogenetic
 
 Test animals were injected with 300 nl AAV2/9-mOXT: Promoter-hCHR2(H134R)–mCherry-ER2-WPRE-pA or rAAV-mOXT-eNpHR3.0-mCherry-WPRE-hGH-pA bilaterally into the PVN at 100 nl/min. Control animals were injected with AAV2/9-mOXT: Promoter-mCherry-pA in the same condition. Two weeks later, an optic fiber was implanted ~100 μm above the PVN and mPFC bilaterally and was secured using dental cement. After surgery, animals were housed with their cage mates as before. Before the behavioral test, each implanted fiber was connected to a light laser (Newdoon Inc, Aurora 300, 473 nm for activation, 589 nm for inhibition) with a 400 μm patch cord and then we introduced the test animal into the center of the test arena. After the test animal acclimated to the arena for at least 20 min and settled down, we placed a pup in the farthest corner away from the test animal and immediately began recording and applying light stimulation.
 
@@ -127,11 +299,11 @@ In pup-directed pup care behavioral test, light stimulation lasted for 11 min. T
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/96543/elife-96543-fig10-v1.jpg)
 
-**Figure 10.:** (a, b) Total distance traveled by the subject before and after activation or inhibition of the paraventricular nucleus (PVN) oxytocin (OT) neurons (n = 5). (c, d) Total distance traveled by the subject before and after activation or inhibition of the PVN OT neurons projections to the medial prefrontal cortex (mPFC) (n = 5). Error bars indicate SEM. Statistical analyses were performed with paired samples t-tests.Figure 10—source data 1.
+**Figure 10.:** (a, b) Total distance traveled by the subject before and after activation or inhibition of the paraventricular nucleus (PVN) oxytocin (OT) neurons (n = 5). (c, d) Total distance traveled by the subject before and after activation or inhibition of the PVN OT neurons projections to the medial prefrontal cortex (mPFC) (n = 5). Error bars indicate SEM. Statistical analyses were performed with paired samples t-tests.
 
 To confirm that ChR2 or eNpHR3.0 stimulation indeed induced neural activation or inhibition, we used light to stimulate the brain through an optical fiber when voles were alone in their home cage, and subsequently determined neural activation or inhibition by c-Fos staining one and a half hours after light stimulation.
 
-## Fiber photometry
+### Fiber photometry
 
 To record the fluorescence signals of the OT1.0 sensor during various pup-directed behaviors, virgin voles were anesthetized with 1–2% isoflurane and immobilized on a stereotaxic device (RWD, China). Then, 300 nl AAV9-hSyn-OT1.0 or AAV9-hSyn-OTmut virus was injected into the left side of mPFC (AP: 2.2 mm ML: 0.3, DV: 1.8). After the injection, a 200 μm optical fiber was implanted ~100 μm above the injection site and fixed with dental cement. After 2 weeks of recovery, the optic fiber was connected to the fiber photometry system (QAXK-FPS-LED, ThinkerTech, Nanjing, China) through a patch cable. This system can reduce the effects of motion artifacts by simultaneously recording signals stimulated by a 405 nm light source. To avoid bleaching the sensor, the 470 nm laser power at the tip of the fiber was adjusted to 50 μW. Voles were placed in test cages and allowed to move freely for at least 20 min to acclimate to the environment. Then, a pup was placed in the cage at a distance from the testing vole. If the vole ignored the pup completely or attacked the pup, gently remove the pup and introduce another pup ~60 s later to stimulate more interaction. This process was repeated 3–6 times, and then the vole exhibiting pup-care behavior was allowed to freely interact with the last introduced pup until the vole crouched over the pup for more than 10 s, after which the pups were removed for about 60 s and reintroduced. This latter process was repeated 3–4 times. After the pup test, we subsequently placed an object (a vole-sized plastic toy) into the cage and recorded four voles that investigated the object 3–6 times.
 
@@ -139,14 +311,14 @@ Videos were recorded with screen-recoding software to synchronize the OT1.0 fluo
 
 For the combination of optogenetic inhibition and fiber optometry experiment, optogenetic virus and OT1.0 sensor were injected as described above, optic fibers were inserted above the mPFC (OT1.0 fibers: AP: 2.2 mm ML: 0.2, DV: 1.7; optogenetic fibers: AP: 2.2 mm ML: 2.0, DV: 2.4 with a 45° angle lateral to middle). The signals of OT1.0 sensor were recorded while neurons were optogenetically inhibited.
 
-## Behavioral paradigm and analysis
+### Behavioral paradigm and analysis
 
 Animal behaviors in optogenetic experiments were recorded by a camera from the side of a transparent cage. ‘Approach pup’ was defined as the testing vole faced and walked right up to pup, and the latency to approach was the period from the time the pup was placed in the cage until the vole began to approach the pup. ‘Investigate pup’ was defined as the vole’s nose came into close contact with any part of the pup’s body. ‘Attack pup’ was defined as the vole attacked or bit a pup that can be recognized by the wound, and the latency to attack was the period from the time the pup was placed in the cage until the vole launched an attack. ‘Retrieve pup’ was defined as from the time a vole picked up a pup using its jaws to the time it dropped the pup at or around the nest, and the latency of retrieval was the time between the pup was put in the cage and the time the vole picked up the pup in its jaws. ‘Groom pup’ was defined as a vole combed the pup’s body surface with its muzzle, accompanied by a rhythmic up-and-down bobbing of the vole’s head and displacement of the pup. ‘Crouch’ was defined as the vole squatted quietly over the pup with no apparent movement. Pup-directed behaviors in optogenetic experiments were scored and analyzed using JWatcher (http://www.jwatcher.ucla.edu/) by an individual blind to experiment design.
 
-## OT treatments
+### OT treatments
 
 Test virgin voles were acclimatized in their cages for 20 min before being injected intraperitoneally with 0.9% NaCl (1 ml/kg) and pups were introduced 30 min later. The behavioral responses were recorded from the side using a video camera. Thirty minutes after the first record, voles were re-injected intraperitoneally OT 1 mg/kg (Leuner et al., 2012) (Bachem, 50-56-6), and pups were introduced 30 min later and behavioral responses were recorded. All behaviors were scored and analyzed using JWatcher.
 
-## Statistics
+### Statistics
 
 Parametric tests were used to analyze normally distributed data, and nonparametric tests were used for data that is not normally distributed according to Kolmogorov–Smirnov tests. Independent-samples t-tests (two-tailed) were performed to assess number of OT, c-Fos, and merge rate of OT and c-Fos during different pup-directed behaviors (Pup-care vs. Infanticide) and the number of c-Fos-IR-positive neurons (mCherry vs. CHR2; mCherry vs. eNpHR 3.0). The behavioral changes following optogenetic activation and inhibition (factors: treatment × stimulus) of PVN and mPFC were analyzed by two-way repeated-measures ANOVA. One-way ANOVA was used to analyze the AUC changes recorded by the OT sensors in different behaviors. Paired-samples t-test (two-tailed) and Wilcoxon signed-ranks test were used to analyze changes in pup-directed behaviors before and after intraperitoneal injection of OT. Pearson chi-square test was used to compare the difference in the number of infanticide voles between the saline and OT groups. All data were presented as mean ± s.e.m., and statistical analyses of data were performed using MATLAB and SPSS 22.0 software.

@@ -72,11 +72,7 @@ Echocardiography is preferable to image the aortic root, which is embedded in th
 
 4) Since ascending aorta showed more severe phenotype, the authors should show ascending aorta measurements in Figure 4D and Figure 5A.
 
-Figures 4D and 5A involve Marfan mice in the absence of CCB treatment. Given that these mice show aortic root but not ascending aortic aneurysm (genotype effect: p=0.72 and p=0.99), there was limited opportunity for a therapeutic effect of either enzastaurin or hydralazine on the ascending aorta. Since this was deemed not to be a particularly informative result, we left these data out of the manuscript. We have provided Author response images 1 and 2 for inspection by the reviewer, and would be happy to incorporate the data into the manuscript if the reviewer wishes.10.7554/eLife.08648.016Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.08648.01610.7554/eLife.08648.017Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.08648.017
-
-DOI: http://dx.doi.org/10.7554/eLife.08648.016
-
-DOI: http://dx.doi.org/10.7554/eLife.08648.017
+Figures 4D and 5A involve Marfan mice in the absence of CCB treatment. Given that these mice show aortic root but not ascending aortic aneurysm (genotype effect: p=0.72 and p=0.99), there was limited opportunity for a therapeutic effect of either enzastaurin or hydralazine on the ascending aorta. Since this was deemed not to be a particularly informative result, we left these data out of the manuscript. We have provided Author response images 1 and 2 for inspection by the reviewer, and would be happy to incorporate the data into the manuscript if the reviewer wishes.10.7554/eLife.08648.016Author response image 1.10.7554/eLife.08648.017Author response image 2.
 
 5) In contrast to schema in Figure 5C, AT1R was shown to be activated in a ligand-independent manner (Cook JR et al. JCI 2014). The authors have not formally addressed angiotensin-2 dependency in the AT1R-activation.
 

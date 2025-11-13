@@ -27,19 +27,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00js3aw79 Bioarchaeology Laboratory, Jilin University Changchun China
+1. Bioarchaeology Laboratory, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))
 2. Key Laboratory of Animal Genetics, Breeding and Reproduction of Shaanxi Province, College of Animal Science and Technology, Northwest A&F University Yangling China
-3. https://ror.org/034ds6p31 Heilongjiang Provincial Institute of Cultural Relics and Archaeology Harbin China
+3. Heilongjiang Provincial Institute of Cultural Relics and Archaeology Harbin China ([ROR:034ds6p31](https://ror.org/034ds6p31))
 4. Shaanxi Provincial Institute of Archaeology Xi’an China
-5. https://ror.org/034ds6p31 Ningxia Institute of Cultural Relics and Archaeology Yinchuan China
-6. https://ror.org/01mkqqe32 College of Earth and Environmental Sciences; MOE Key Laboratory of Western China's Environmental Systems, Lanzhou University Lanzhou China
-7. https://ror.org/02feahw73 Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT), CNRS UMR 5288, Université de Toulouse, Université Paul Sabatier, Toulouse, France Toulouse France
+5. Ningxia Institute of Cultural Relics and Archaeology Yinchuan China ([ROR:034ds6p31](https://ror.org/034ds6p31))
+6. College of Earth and Environmental Sciences; MOE Key Laboratory of Western China's Environmental Systems, Lanzhou University Lanzhou China ([ROR:01mkqqe32](https://ror.org/01mkqqe32))
+7. Centre d’Anthropobiologie et de Génomique de Toulouse (CAGT), CNRS UMR 5288, Université de Toulouse, Université Paul Sabatier, Toulouse, France Toulouse France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
 ## Abstract
 
-The exceptionally rich fossil record available for the equid family has provided textbook examples of macroevolutionary changes. Horses, asses, and zebras represent three extant subgenera of Equus lineage, while the Sussemionus subgenus is another remarkable Equus lineage ranging from North America to Ethiopia in the Pleistocene. We sequenced 26 archaeological specimens from Northern China in the Holocene that could be assigned morphologically and genetically to Equus ovodovi , a species representative of Sussemionus . We present the first high-quality complete genome of the Sussemionus lineage, which was sequenced to 13.4× depth of coverage. Radiocarbon dating demonstrates that this lineage survived until ~3500 years ago, despite continued demographic collapse during the Last Glacial Maximum and the great human expansion in East Asia. We also confirmed the Equus phylogenetic tree and found that Sussemionus diverged from the ancestor of non-caballine equids ~2.3–2.7 million years ago and possibly remained affected by secondary gene flow post-divergence. We found that the small genetic diversity, rather than enhanced inbreeding, limited the species’ chances of survival. Our work adds to the growing literature illustrating how ancient DNA can inform on extinction dynamics and the long-term resilience of species surviving in cryptic population pockets.
+The exceptionally rich fossil record available for the equid family has provided textbook examples of macroevolutionary changes. Horses, asses, and zebras represent three extant subgenera of Equus lineage, while the Sussemionus subgenus is another remarkable Equus lineage ranging from North America to Ethiopia in the Pleistocene. We sequenced 26 archaeological specimens from Northern China in the Holocene that could be assigned morphologically and genetically to Equus ovodovi, a species representative of Sussemionus. We present the first high-quality complete genome of the Sussemionus lineage, which was sequenced to 13.4× depth of coverage. Radiocarbon dating demonstrates that this lineage survived until ~3500 years ago, despite continued demographic collapse during the Last Glacial Maximum and the great human expansion in East Asia. We also confirmed the Equus phylogenetic tree and found that Sussemionus diverged from the ancestor of non-caballine equids ~2.3–2.7 million years ago and possibly remained affected by secondary gene flow post-divergence. We found that the small genetic diversity, rather than enhanced inbreeding, limited the species’ chances of survival. Our work adds to the growing literature illustrating how ancient DNA can inform on extinction dynamics and the long-term resilience of species surviving in cryptic population pockets.
 
 ## Introduction
 
@@ -49,21 +49,71 @@ In the recent years, ancient DNA (aDNA) data have revealed that the genetic dive
 
 Despite an abundant fossil material, only a limited number of Sussemiones specimens have been investigated for ancient mitochondrial DNA (aDNA). These studies showed that Sussemiones formed a non-caballine lineage that may have diverged first from the lineage ancestral to zebras, hemiones, and donkeys. However, the exact placement of Sussemiones could not be fully resolved and has remained contentious (Heintzman et al., 2017; Orlando et al., 2009; Vilstrup et al., 2013). In this study, we have carried out archaeological excavations in three Holocene sites in China (Honghe, Heilongjiang Province; Muzhuzhuliang, Shaanxi Province; Shatangbeiyuan, Ningxia Province) (Figure 1 and Supplementary file 1a) and uncovered equine samples showing morphological features that may be characteristic of Sussemiones.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig1-v2.jpg)
+
+**Figure 1.:** (A) E. (Sussemionus) ovodovi geographic range. The three red circles indicate the archaeological sites analyzed in this study. The site (Honghe) that delivered the complete genome sequence at 13.4-fold average depth of coverage (HH06D) is highlighted with a square. The black circles indicate sites that provided complete mitochondrial genome sequences in previous studies (Druzhkova et al., 2017; Orlando et al., 2009; Vilstrup et al., 2013; Yuan et al., 2019). The temporal range covered by the different samples analyzed is given in years before present (YBP) and follows the name of each site. Numbers between parentheses indicate the number of samples for which DNA sequence data could be generated. (B) Facies masticatoria dentis of P2, M3, p2, and m3 for the E. (Susseminous) ovodovi samples of the Honghe site analyzed here (a), E. Sussemionus (Eisenmann, 2010) (b), and E. caballus (Laboratory specimen) (c). 1, 4 protocones; 2, 5 metacones; 3 caballine notch. Teeth from the right side are shown, except for E. Sussemionus. The erupted teeth of the samples of the Honghe site appear to be smaller than those of the E. Sussemionus specimen.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Honghe (HH), (B) Muzhuzhuliang (MZ), and (C) Shatangbeiyuan (BY).
+
 Equine assemblages dating to prior to the late Shang dynasty (ca. 3300 years ago) have documented the presence of wild horses in Northern China during the Late Pleistocene (Yuan and Flad, 2006). The taxonomic status and/or stratigraphic placement of the rare material attributed to Neolithic and early Shang contexts remained, however, contentious, leaving the possibility that Sussemiones or other equid taxa (co-)existed in China at the time, especially at the sites investigated in this study. At the Honghe site (47.20°N, 123.62°E), excavation fieldwork of nearly 20,000 m2 has uncovered a late Neolithic settlement site dated to ~3400–4400 years ago, which belonged to a unique, rich fishing and hunting culture characteristic of northeastern China (Figure 1—figure supplement 1). The scale of the moated settlement indicated that there was already social management and relatively high productivity and building technology (Zhang et al., 2020). The Muzhuzhuliang site (38.83°N, 110.50°E) belonged to the ‘Longshan culture.’ It was dated to ~3800–4300 years ago and represents the most complete moated settlement hitherto excavated in the late Neolithic age of Northern China, showing a mixed subsistence economy involving agriculture, animal husbandry, and hunting (Wang et al., 2015). Finally, the Shatangbeiyuan site (35.63°N, 105.11°E) belonged to the early cultural relics of Neolithic ‘Qijia culture,’ which was dated to ~3900–4200 years ago. While millet represented the main crop produced at that time, findings including stone and bone arrowheads have also supported the presence of hunting (Fan et al., 2017). No obvious signs of domestication, including paleopathologies related to horseback riding, bridling, or chariotry (Bendrey, 2007; Taylor and Tuvshinjargal, 2018), were found amongst the equine specimens investigated at the three sites. In contrast, slash marks could be identified on some of the bones (HH13H, HH26H, and MZ104H), together with indications of bone marrow extraction (Figure 1—figure supplement 2). These findings suggest that these specimens were hunted.
 
 In this study, we have sequenced the complete nuclear genome of Sussemiones specimens. This allowed us to not only solve the phylogenetic placement of Sussemiones within the Equus evolutionary tree, but also to time their divergence relative to other non-caballine equids, as well as to reconstruct their demographic trajectory until their extinction during the mid-Holocene.
 
 ## Results
 
-## Archaeological samples and sequencing data
+### Archaeological samples and sequencing data
 
 All the equine specimens investigated in this study showed morphological and genetic signatures (short fragments of the mitochondrial hypervariable region) distinct from those of extant horses and donkeys (Figure 1—figure supplement 2). The morphological differences were especially marked in the second and third molars, which appeared to be smaller than in modern horses, and reminiscent of the third molars paracones and metacones observed in Sussemiones specimens (Figure 1B). Combined, these samples were radiocarbon dated to 3456–4460 calibrated years before the present (cal BP), including a mid-second millennium BCE date for the most recent sample, HH13H (3270 ± 30 uncal. BP, i.e., 3456–3616 cal BP) (Supplementary file 1b). They could, thus, represent some of the latest surviving Sussemiones individuals prior to their extinction.
 
 We next aimed at genetically characterizing the taxonomic status of these specimens using high-throughput DNA sequencing technologies. We extracted ancient DNA from a total of 26 specimens and sequenced the whole nuclear genome at ~0.002–13.4 times coverage, including four samples from Honghe that provided 13.4×, 3.9×, 1.1×, and 1.0× nuclear genome (Supplementary file 1a). Comparison of the X chromosome and autosomal coverage revealed the presence of 15 male and 11 female individuals (Supplementary file 1c).
 
-## Taxonomic status
+### Taxonomic status
 
 To assess whether the sequenced specimens belonged to the same taxonomic group or comprised different species, we carried out a principal component analysis (PCA), including all the equine species sequenced at the genome level (depth of coverage ≥1×) (Figure 2A, Figure 2—figure supplements 1 and 2). For this, we downloaded 11 previously-published equine genomes representing all extant species of equids and the extinct quagga zebra (Huang et al., 2015; Jónsson et al., 2014; Kalbfleisch et al., 2018; Orlando et al., 2013; Renaud et al., 2018; Supplementary file 1d). All the Chinese specimens analyzed in this study were found to cluster together along the first two PCA components, in a group that was distinct from all other equine species (Figure 2A, Figure 2—figure supplement 1) but closer to non-caballine equine species than to the horse (Figure 2A). This suggested that they were all members of a unique taxonomic group, most related to non-caballine equids.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-v2.jpg)
+
+**Figure 2.:** The Honghe (HH), Muzhuzhuliang (MZ), and Shatangbeiyuan (BY) specimens are shown in red, while Asian asses, African asses, zebras, and horses are shown in purple, blue, green, and black, respectively. (A) Principal component analysis (PCA) based on genotype likelihoods, including horses and all other extant non-caballine lineages (16,293,825 bp, excluding transitions). Only specimens whose genomes were sequenced at least to 1.0× average depth of coverage are included. (B) Maximum likelihood tree based on six mitochondrial partitions (representing a total of 16,591 bp). Those E. ovodovi sequences that were previously published are shown in red. The tree was rooted using Hippidion saldiasi and Haringtonhippus francisci as outgroups. Node supports were estimated from 1000 bootstrap pseudo-replicates and are displayed only if greater than 50%. The black line indicates the mitochondrial clades A and B. (C) Maximum likelihood tree based on sequences of 19,650 protein-coding genes, considering specimens sequenced at least at a 3.0× average depth of coverage (representing 32,756,854 bp).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Including and (B) excluding the outgroup individual underlying the horse reference genome (TWI) (Kalbfleisch et al., 2018). Sequence data were aligned against the horse reference genome (Kalbfleisch et al., 2018).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Including and (B) excluding the outgroup individual underlying the horse reference genome (TWI) (Kalbfleisch et al., 2018). Sequence data were aligned against the donkey reference genome (Renaud et al., 2018).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Including the control region. (B) Excluding the control region. Node support was estimated from 1000 bootstrap pseudo-replicates and the tree was manually rooted using Hippidion saldiasi.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** The tree was reconstructed using a total number of 1000 million Markov Chain Monte Carlo (MCMC) states in BEAST (sampling frequency = 1 every 10,000, burn-in = 25%). The substitution models applied to the six sequence partitions were the TrN+I+G model (first codon position = 3802 sites), the TrN+I model (second codon position = 3799 sites), the GTR+I+G model (third codon position = 3799 sites), the HKY+I model (transfer RNAs = 1517 sites), the TrN+I+G model (ribosomal RNAs = 2556 sites), and the HKY+I+G model (control region = 1192 sites).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Using sequence alignments against the horse reference genome (Kalbfleisch et al., 2018). (B) Using sequence alignments against the donkey reference genome (Renaud et al., 2018). Node supports were estimated from 100 bootstrap pseudo-replicates.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Sequence data were mapped against the horse reference genome (Kalbfleisch et al., 2018). A total of 0–3 migration edges were considered. The result of each analysis is shown in panels (A) – (D), respectively. Considering additional migration edges did not improve the variance explained by the TreeMix model (Supplementary file 1f).
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Sequence data were mapped against the donkey reference genome (Renaud et al., 2018). A total of 0–3 migration edges were considered. The result of each analysis is shown in panels (A) – (D), respectively. Considering additional migration edges did not improve the variance explained by the TreeMix model (Supplementary file 1f).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A, C) Before rescaling and trimming and (B, D) after rescaling and trimming the region comprising the five first and last nucleotides sequenced.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** After trimming and rescaling, reads showing mapping quality scores inferior to 25 and bases showing quality scores inferior to 20 were disregarded.
 
 Maximum likelihood (ML) and Bayesian phylogenetic analyses including the nearly complete 17 mitochondrial genomes reported in this study (Supplementary file 1a, depth of coverage above 1×) confirmed their clustering with non-caballine equids, within a single monophyletic group that also included five previously characterized Sussemiones specimens (Figure 2B, Figure 2—figure supplements 3 and 4, Supplementary file 1e). This grouping was supported with maximal (100%) bootstrap values. This, and the PCA clustering, indicated that the different excavation sites investigated in this study in fact all provided specimens that belonged to the E. (Sussemionus) ovodovi species.
 
@@ -71,35 +121,75 @@ We also used complete mitogenomes to assess the diversity of maternal lineages p
 
 To further assess phylogenetic affinities, we used the two genomes characterized to at least 3× average depth of coverage (HH04D and HH06D) to place Sussemiones within the equine phylogenetic tree. To achieve this, we used ML phylogenetic reconstruction and an alignment of the coding sequences of the protein-coding genes (Figure 2C, Figure 2—figure supplement 5). This showed that the Chinese ancient specimens branched off before the radiation leading to modern asses and zebras (Figure 2C). Similar tree topologies were recovered using whole-genome SNPs by TreeMix (Pickrell and Pritchard, 2012; Figure 2—figure supplements 6 and 7, Supplementary file 1f). Combined with the analysis of the occlusal surface of the molars, in particular the absence of the caballine notch, the shape of metacones and protocones, and the reduced tooth size (Figure 1B), our analyses consistently supported the material analyzed as small specimens of the extinct Equus (Sussemionus) ovodovi. We, thus, concluded that this lineage survived in China during the Holocene, and until 3477–3637 cal BP, which is ~9000 years after the latest known specimen to date (Druzhkova et al., 2017; Orlando et al., 2009; Vilstrup et al., 2013; Yuan et al., 2019).
 
-## Interspecies admixture and demographic modeling
+### Interspecies admixture and demographic modeling
 
 Bifurcating trees fail to capture possible admixture events between lineages. Yet, previous research has unveiled pervasive admixture within equids, even amongst extant equids showing different chromosomal numbers (Jónsson et al., 2014). We thus next assessed whether the genomic data showed evidence for gene flow between Sussemiones and other non-caballine equids. To achieve this, we first applied D-statistics (Soraggi et al., 2018) to the genome sequence underlying 26 individual genomes and detected that E. ovodovi shared an excess of derived polymorphisms with asses than relative to zebras (Figure 3—figure supplements 1 and 2). This suggested that at least one admixture event could have taken place between Sussemiones and the ancestor of asses after their divergence from zebras.
 
 We next leveraged the comparative genome panel and the ancient E. (Sussemionus) ovodovi genome characterized to high depth of coverage (HH06D) to reconstruct the equine demographic history using G-PhoCS (Gronau et al., 2011). More specifically, we first selected members of each equine lineage representing a total number of 10 genomes, conditioned analyses on 15,324 ‘neutral’ loci, and assumed that the genus Equus emerged some 4.0–4.5 Mya, following previous estimates (Orlando et al., 2013). G-PhoCS analyses confirmed previous work indicating that the zebras and asses linages diverged ~2.0 Mya and that the deepest divergence within zebras and asses took place prior to ~1.5 Mya (Jónsson et al., 2014; Figure 3). It revealed that the Sussemiones lineage diverged from the ancestors of extant non-caballine equids ~2.3–2.7 Mya, in line with the fossil record (Eisenmann, 2010). Allowing for migrations provided support for gene flow between Sussemiones and the ancestor of asses and zebras (Figure 3). However, weak to no migrations were detected between Sussemiones and extant equids (Supplementary file 1g). Importantly, the admixture between Sussemiones and the ancestor of extant asses seems to have been stronger than that between Sussemiones and the ancestor of extant zebras, in line with the results of D-statistics. G-PhoCS also supported the presence of significant unidirectional gene flow prior to ~2.3–2.7 Mya, from the horse branch into the ancestral branch to all non-caballine equids, including Sussemiones (probability of gene flow 2.2–8.8%, Supplementary file 1h). This is consistent with previous HMMCoal analyses applied to whole-genome sequences of all extant equine species, which indicated significant gene flow between the deepest branches of the Equus phylogenetic tree until 3.4 Mya, mostly from a caballine lineage into the ancestor of all non-caballine equids (Jónsson et al., 2014).
 
-## Dynamic demographic profiles, heterozygosity, and inbreeding levels
+![Figure 3.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig3-v2.jpg)
+
+**Figure 3.:** Node bars represent 95% confidence intervals. The width of each branch is scaled with respect to effective population sizes (Ne). Independent Ne values were estimated for each individual branch of the tree, assuming constant effective sizes through time. Migration bands and probabilities of migration (transformed from total migration rates) are indicated with solid arrows. The red triangle indicates the earliest Sussemionus evidence found in the fossil record. (Images: E. caballus by Infomastern, E. a. somalicus by cuatrok77, E. kiang by Dunnock_D, E. a. africanus by Jay Galvin, E. hemionus by Cloudtail the Snow Leopard, E. z. hartmannae by calestyo, E. b. quagga by Internet Archive Book Images, E. b. boehmi by GRIDArendal, and E. grevyi by 5of7.)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Significantly positive D-statistics are indicative of an excess of shared derived polymorphisms between E. (Sussemionus) ovodovi and extant assess, which is compatible with admixture between both lineages. The nonsignificant results are shown in gray. (A) Including transitions. (B) Excluding transitions.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Significantly positive D-statistics are indicative of patterns of shared derived polymorphisms between E. (Sussemionus) ovodovi and extant assess, which is compatible with admixture between both lineages. The nonsignificant results are shown in gray. (A) Including transitions. (B) Excluding transitions.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Node supports were assessed from 1000 bootstrap pseudo-replicates.
+
+### Dynamic demographic profiles, heterozygosity, and inbreeding levels
 
 We next leveraged the high-coverage Sussemiones genome characterized here to further explore the demographic dynamics until extinction. When modeled as constant through time, population sizes in G-PhoCS indicated that most lineages, including Sussemiones, consisted of small populations, excepting the Burchell’s zebra (Supplementary file 1i). Pairwise sequential Markovian coalescent (PSMC) analyses, however, provided evidence for population size variation through time. First, the PSMC demographic trajectory of Sussemiones was found to diverge from that of other non-caballine equids (specifically, E. hemionus) after ~2.0 Mya, confirming the divergence date estimate retrieved by G-PhoCS (Supplementary file 1i). Second, the Sussemiones demographic trajectory was found to have constantly increased during the last million year but to have remained relatively low for a long period of time, until it reached a peak between 74 and 84 kya. It was, then, followed by an ~45-fold collapse until 13 kya (Figure 4). The lineage maintained extremely reduced population sizes through the Last Glacial Maximal (LGM, 19–26 kya) (Clark et al., 2009) and the Holocene, until it ultimately became extinct.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig4-v2.jpg)
+
+**Figure 4.:** The y-axis represents the effective population size (×10,000), and the x-axis is scaled in millions of years before present. Faded lines show bootstrap values.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) HH06D, (B) ONA, (C) KIA, and (D) TWI. The E. ovodovi genome still included, even after rescaling, a significant proportion of nucleotide misincorporations pertaining to postmortem DNA damage. This resulted in the presence of an excessive fraction of singleton mutations along this lineage, and the artifactual expansion observed in the most recent time range.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) HH06D (11.30×), (B) KIA (10.68×), and (C) ONA (18.38×). The most suitable uFNR values for rescaling the PSMC profile are reported between squared brackets, to the right of the species names considered. The PSMC trajectory retrieved when considering all the sequence data available for the SOM individual is shown in blue. The green line provides the PSMC trajectory reconstructed when downsampling these data to the average genome depth of coverage obtained for the species examined (top: Equus Sussemionus, red; center: Equus kiang, purple; and bottom: E. hemionus, purple).
+
 Importantly, the sample sequenced to sufficient coverage (HH06D) showed minimal heterozygosity and moderate inbreeding levels identified by the fraction of the segments within runs of homozygosity (ROH) (Figure 5). Strikingly, this is true in spite of the increased DNA damage error rates of this genome (Figure 2—figure supplement 9), which likely inflate our estimates. The limited population sizes and resulting genetic diversity, rather than particularly enhanced inbreeding, may, thus, have limited the chances of survival of the species and have ultimately led to extinction.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig5-v2.jpg)
+
+**Figure 5.:** (A) Individual heterozygosity outside runs of homozygosity (ROH). (B) Fraction of the genome in ROH. Estimates were obtained excluding transitions and are shown together with their 95% confidence intervals. The colors mirror those from Figure 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Including transitions and (B) excluding transitions.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73346/elife-73346-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Including transitions and (B) excluding transitions.
 
 ## Discussion
 
-## Phylogenetic placement of Equus (Sussemionus) ovodovi
+### Phylogenetic placement of Equus (Sussemionus) ovodovi
 
 In this study, we have characterized the first nuclear genomes of the now-extinct equine lineage, E. (Sussemionus) ovodovi, the last surviving member of the subgenus Sussemionus. We demonstrated that this lineage survived in China well into the Holocene with the most recent specimens analyzed dating to ~3456–3616 cal BP. This is almost 9000 years after the latest specimens previously documented in the fossil record (Druzhkova et al., 2017; Vilstrup et al., 2013; Yuan et al., 2019). Our work, thus, shows that Sussemionus represents the last currently known Equus subgenus to become extinct. Our work also adds to the list of recently identified members of the horse family that were still alive at the time horses and donkeys were first domesticated, ~5500 years ago (Fages et al., 2019; Gaunitz et al., 2018; Rossel et al., 2008). In contrast to those divergent members that were identified in Siberia (Equus lenensis) and Iberia (IBE), which both belonged to the horse species (Fages et al., 2019; Schubert et al., 2014a), Sussemiones members were most closely related to non-caballine equids. This is in agreement with previous studies (Der Sarkissian et al., 2015; Druzhkova et al., 2017; Heintzman et al., 2017; Orlando et al., 2009; Vilstrup et al., 2013; Yuan et al., 2019), which could, however, not fully resolve the exact phylogenetic placement of this species within non-caballines as topological tests based on mitochondrial genomes received low confidence support (Der Sarkissian et al., 2015; Druzhkova et al., 2017; Heintzman et al., 2017; Orlando et al., 2009; Vilstrup et al., 2013; Yuan et al., 2019). Our study solved this question by reporting the first whole-genome phylogeny of Sussemiones, which confirmed with maximal bootstrap support this species as a basal lineage of non-caballine equids.
 
-## Suitable habitat and geographic distribution
+### Suitable habitat and geographic distribution
 
 Previous zooarchaeological and environmental research indicated an ecological range for Sussemiones overlapping with the grasslands located east of the Altay Mountains and west of the Yenisei River during the Late Pleistocene (Khenzykhenova et al., 2016; Malikov, 2016; Plasteeva et al., 2015; Shchetnikov et al., 2015; Slon et al., 2018). Recent research also reported species occurrence in northeastern China (~12,600–40,200 YBP), where similar climatic and ecological conditions were found at the time (Yuan et al., 2019). It could, thus, be speculated that Sussemiones were adapted to an environment with moderately dry climatic conditions and steppe landscapes (Yuan et al., 2019). However, our study identified Sussemiones specimens in three late Holocene sites from China characterized by mild and humid environmental conditions. Additionally, two distinct mitochondrial haplogroups from 22 individuals have been defined from the six known sites, suggesting possible population structure across various geographic areas and adaptation to local environments. It also suggests that the species could adapt to a wider variety of habitats than previously hypothesized and rejects the contention that the species became extinct as it could not survive in warmer climatic conditions (Yuan et al., 2019).
 
 Interestingly, the Sussemiones specimens identified in this study were excavated from sites in northeastern China located at almost the same latitude as those Sussemiones localities known so far from Russia, but also at lower latitudes (Figure 1A). This implies that the geographic range of E. ovodovi was larger than previously expected and included at least Northern China and Southern Siberia. Although in the absence of identified fossils from Mongolia, given that there is a lack of mitochondrial phylogeographic structure, we could speculate that the two regions were in contact at least maternally. Further work is necessary to establish whether or not the species survived in other pockets both within and outside China.
 
-## Demographic history with ancestral interspecific admixture
+### Demographic history with ancestral interspecific admixture
 
 Our analyses reveal that the divergence between Sussemiones and the most recent common ancestor of all extant non-caballine equids took place ~2.3–2.7 Mya, prior to the divergence of zebras and asses. Post-divergence admixture events with the lineage ancestral to asses and zebras, on the one hand, and the lineage ancestral to all extant zebras, were also identified (Figure 3 and Supplementary file 1h). Our results, thus, reveal non-caballine ancestral lineages occupying partly sympatric distributions that were, consequently, different than those of their descendants, in which zebras are restricted in Africa and Asian asses in Asia. Whether the admixture events identified here directly involved the Sussemiones lineage or one (or more) ghost lineage(s) closely related to Sussemiones requires further research.
 
-## Limited genetic diversity before extinction
+### Limited genetic diversity before extinction
 
 The demographic profile of Sussemiones shows that after the peak of population size culminating ~74 kya, Sussemiones went through a slow and continuous decline until 13 kya (Figure 4). This time period encompasses several major climate changes (especially the LGM, ~19–26 kya) (Clark et al., 2009) and the great human expansion to Eurasia (~35–45 kya) (Henn et al., 2012). The effective size of Sussemiones populations that survived in Northern China until at least ~3500 years ago, remained extremely small, as indicated by their extremely reduced heterozygosity levels compared to other extant and extinct equine species. As the inbreeding levels were not particularly high compared to some members of endangered equine species (Figure 5), the reduced genetic diversity available in the lineage may have compromised the long-term survival of the lineage, in a process partly reminiscent of what was previously described for the woolly mammoth (Palkopoulou et al., 2015). And considering the rapid expansion of domestic horses across Eurasia from about 2000 BC (Librado et al., 2021), this lineage was ultimately replaced under growing anthropogenic stress.
 
@@ -107,7 +197,7 @@ In conclusion, our study clarifies the phylogenetic placement, speciation timing
 
 ## Materials and methods
 
-## Genome sequencing
+### Genome sequencing
 
 Minimum number of individuals (MNI) was determined by assigning the frequency of hip bone and was calculated from the acetabular bone to avoid double counting. MNI was estimated to 31 individuals at Honghe, 4 at Muzhuzhuliang, and 4 at Shatangbeiyuan. DNA preservation conditions were compatible with the recovery of ancient DNA sequences from only 20 of the 31 Honghe samples, 3 of the 4 Muzhuzhuliang samples, and 3 of the 4 Shatangbeiyuan samples (Supplementary file 1a).
 
@@ -119,11 +209,11 @@ Before preparation of DNA libraries, we first PCR-targeted short fragments of th
 
 Double-stranded single-indexed libraries were prepared using NEBNext Ultra Ⅱ DNA Library Prep Kit for Illumina (NEB #E7645S) and NEBNext Multiplex Oligos for Illumina Index Primers Set 1 and 2 (NEB #E7335S, #E7500S), following the manufacturer’s instructions with minor modiﬁcations. Specifically, the extracted DNA (50 µL) were end-repaired and A-tailed by adding 7 μL of NEBNext Ultra II End Prep Reaction Buffer and 3 μl of NEBNext Ultra II End Prep Enzyme Mix, and incubated for 40 min at 20°C and then 30 min at 65°C. The adaptor was ligated to the dA-tailed DNA fragments by adding 30 µL of NEBNext Ultra II Ligation Master Mix, 1 µL of NEBNext Ligation Enhancer and 2.5 µL of NEBNext Adaptor for Illumina (dilution 1:10), and incubated for 20 min at 20°C. The adaptor was then linearized by adding 3 µL of USER Enzyme and performing an incubation for 15 min at 37°C. The adaptor-ligated DNA were cleaned without size selection using the MinElute PCR Purification Kit (QIAGEN, Germany), following the instructions provided by the manufacturer. PCR enrichment was performed by using 30 µL of NEBNext Ultra II Q5 Master Mix, 1 µL of Index Primer, 1 µL of Universal PCR Primer, and 18 µL of adaptor-ligated DNA. PCR cycling conditions comprised an initial denaturation at 98°C for 30 s, 14–16 cycles of 98°C for 10 s, 65°C for 75 s, and a final extension at 65°C for 5 min. PCR-amplified DNA libraries were purified using Agencourt AMPure XP Beads, following the manufacturer’s instructions, and Illumina sequencing was performed on HiSeq X Ten platform using 150 bp paired-end reads. Overall, we sequenced a total of 28 DNA libraries and generated 2,727,843,803 read pairs (https://www.ebi.ac.uk/ena/browser/view/PRJEB44527?show=reads).
 
-## Radiocarbon dating
+### Radiocarbon dating
 
 Radiocarbon dating of the samples was performed at the Beta Analytic Radiocarbon Dating Laboratory, Miami, FL. Bone or tooth pieces about 2 g were sampled in the bone and sent for subsequent dating of collagen (not ultrafiltered). Calibration was carried out using OxCalOnline (https://c14.arch.ox.ac.uk/oxcal.html) and the IntCal20 calibration curve. Calibrated dates are provided in Supplementary file 1b.
 
-## Data processing
+### Data processing
 
 Sequencing reads were processed and aligned against the horse (EquCab3.0 Kalbfleisch et al., 2018) and donkey (Renaud et al., 2018) reference genomes using the PALEOMIX pipeline (Schubert et al., 2014b) with default parameters, except that we followed the recommendations from Schubert et al., 2012 and disabled seeding. Briefly, paired-end (PE) reads longer than 25 nucleotides were trimmed with AdapterRemoval v2.2 (Schubert et al., 2016) and aligned against the reference genomes using BWA (Li and Durbin, 2009), retaining alignments with mapping qualities superior to 25. PCR duplicates were then removed using Picard (http://broadinstitute.github.io/picard/) (Broad Institute, 2019). Finally, all ancient and modern reads were locally realigned around indels using GATK (McKenna et al., 2010).
 
@@ -131,31 +221,31 @@ Postmortem DNA damage and average sequencing error rates were determined with ma
 
 GATK HaplotypeCaller was used to obtain individual gvcf files with “--minPruning 1 --minDanglingBranchLength 1” to increase sensitivity. Then, we employed GATK GenotypeGVCFs for genotyping with the option “--includeNonVariantSites” in order to retain non-variant loci. The vcf files were further filtered in TreeMix and G-PhoCS analysis.
 
-## Principal component analysis (PCA)
+### Principal component analysis (PCA)
 
 The genotype likelihood framework implemented in ANGSD helped mitigate various error rates in ancient and modern genomes. Using EquCab3 (Kalbfleisch et al., 2018) as the reference genome, ANGSD was run using the following options: “-only_proper_pairs 1 -uniqueOnly 1 -remove_bads 1 -minQ 20 -minMapQ 25C 50 -baq 1 -skipTriallelic 1GL 2 -SNP_pval 1e-6 -rmTrans 1”. This provided a dataset consisting of a total of 16,293,825 transversions when the horse was included, and 10,094,431 transversions when the horse was excluded (i.e., when analyses were restricted to non-caballine genomes only). In these analyses, only specimens sequenced to an average depth of coverage ≥1× were retained. PCA was carried out using the PCAngsd package (Meisner and Albrechtsen, 2018; Figure 2A). To assess the impact of potential reference bias, all analyses were repeated after mapping the sequence data against the donkey reference (Figure 2—figure supplement 2).
 
-## Phylogenetic inference
+### Phylogenetic inference
 
-## Mitochondrial phylogeny
+#### Mitochondrial phylogeny
 
 Cleaned reads were mapped against the horse mitochondrial genome (GenBank accession no. NC_001640), following the same procedure as when mapping against the nuclear genome. Samples showing an average depth of coverage <1× were disregarded, leaving a total of 17 individuals for further analyses. After removing duplicates, consensus mitochondrial sequences were generated using ANGSD (-doFasta 2 -doCounts 1 -setMinDepth 3 -uniqueOnly 1 -remove_bads 1 -minQ 25 -minMapQ 25). Multiple alignment was performed together with the comparative mtDNA sequences downloaded from GenBank (Supplementary file 1e) using MUSCLE v3.8.31 (Edgar, 2004), with default parameters. The alignments were then split into six partitions (first, secoond, and third codon positions, rRNA, tRNA, and control region) by Partition Finder v2.1.1 (Lanfear et al., 2012).
 
 Two ML trees based on all six partitions and excluding the control region (positions 15,469–16,660 of the horse reference mitochondrial genome) were both reconstructed using RAxML-NG v.0.9.0 (Kozlov et al., 2019) with GTR+GAMMA substitution model. A total of 1000 bootstrap pseudo-replicates were carried out to assess node robustness (Figure 2—figure supplement 3). BEAST 2.6.6 (Bouckaert et al., 2019) was used to perform Bayesian phylogenetic reconstruction and to estimate split times. The six partitions described above were used, for which the best substitution model was determined using modelgenerator (version 0.85, Keane et al., 2006) and a Bayesian information criterion. We calibrated the tree using tip dates (see Supplementary file 1j) and an age of 4–4.5 Mya for the root of crown group E. caballus (normal prior, mean 4.25 Mya, SD: 0.15 Mya) (Orlando et al., 2013). We applied together with the birth-death model and a relaxed molecular clock (log normal) for 1000 million generations (sampling frequency = 1 every 1000), while forced monophyly for all main lineages, including donkeys, hemiones, horses, ovodovi, and zebras. Convergence was assessed visually using Tracer v1.6 (with all individual ESS >200), and posterior date estimates were retrieved using 25% as burn-in. The final consensus tree was produced by TreeAnnotator 2.6.6 (Drummond and Rambaut, 2007) as the maximum clade credibility tree from 100,000 randomly sampled trees obtained using LogCombiner v2.6.6 (Bouckaert et al., 2019) (burn-in = 20%). The final tree was plotted using ITOL (Letunic and Bork, 2016; Figure 2—figure supplement 4).
 
-## Autosomal phylogeny
+#### Autosomal phylogeny
 
 As for autosomes, we reconstructed an ML phylogenetic tree as implemented in the PALEOMIX phylo_pipeline, which is dedicated to phylogenomic reconstructions (Schubert et al., 2014b). This analysis was based on the coding sequence (CDS) of protein-coding genes annotated in EquCab3.0, partitioning data according to first, second, and third codon positions. ML phylogenetic inference was performed using ExaML v3.0.21 (Kozlov et al., 2015) and RAxML v8.2.12 (Stamatakis, 2014) under the GAMMA substitution model with 100 bootstrap pseudo-replicates (Figure 2C, Figure 2—figure supplement 5A). We also repeated the same procedure after mapping against the donkey reference genome, which returned the same topology (Figure 2—figure supplement 5B).
 
 Additionally, we extracted biallelic single-nucleotide polymorphisms (SNPs) from the dataset generated in the section ‘Variant calling’ using bcftools v1.9 (Li et al., 2009). Both variant datasets obtained following mapping against the horse and donkey reference genomes were used in this analysis to rule out reference bias. We applied filters composed of minimum Phred-scaled quality score quality (QUAL) = 20, sites for all individuals below 2 or twice the mean coverage, and allowed up to three individuals with missing data per site. After disregarding transitions, a total of 18,803,101 (mapping against horse genome) and 19,459,070 (mapping against donkey genome) transversions were finally used as input for TreeMix (Pickrell and Pritchard, 2012) with parameters “-k 500 -root TWI”, and considering an increasing number of migrations edges (0 ≤ m ≤ 3; Figure 2—figure supplements 6 and 7, Supplementary file 1f).
 
-## Admixture analyses with D-statistics
+#### Admixture analyses with D-statistics
 
 D-statistics were calculated to investigate potential introgression between E. ovodovi and other non-caballines (Figure 3—figure supplement 1) using the doAbbababa2 program in ANGSD (Soraggi et al., 2018). Individuals were grouped according to their respective species. D-statistics were computed in the form (((H1, H2), H3), Outgroup) considering only the autosomal sites from bam files mapping against the horse reference with the following options: “-minQ 20 -minMapQ 25 -remove_bads 1 -only_proper_pairs 0 -uniqueOnly 1 -baq 1C 50”. The horse reference genome was used as the Outgroup. H1 and H2 denoted any non-caballine genomes except E. ovodovi, while H3 denoted the E. ovodovi. Confidence intervals were estimated applying a jackknife procedure and 5 Mb windows. Z-scores with absolute values higher than 3 were considered to be statistically significant. To rule out possible reference bias, we also rerun the same analysis using sequence alignments against the donkey reference genome (Figure 3—figure supplement 2).
 
-## G-PhoCS demographic model
+### G-PhoCS demographic model
 
-## Data preparation and filtering
+#### Data preparation and filtering
 
 In order to model the equine evolutionary history, we selected a total of 10 individuals representing each individual lineage and used their high-coverage genomes as input for G-PhoCS (Gronau et al., 2011). Genotypes were called by GATK and candidate ‘neutral’ loci were identified by applying the following filters:
 
@@ -165,15 +255,15 @@ We selected 1 kb loci located with minimum inter-locus distance of 30 kb from th
 
 Finally, we excluded contiguous intervals if the total amount of missing bases was greater than 50% of the region length, resulting in a final collection of 15,324 loci using the horse reference genome (autosomes only). Neighbor-joining trees were constructed to confirm the topology before the inferring the population divergence (Figure 3—figure supplement 3).
 
-## MCMC setup
+#### MCMC setup
 
 We used default global settings (Gronau et al., 2011), including a gamma prior distribution (α = 1, β = 10,000) for all mutation-scaled population sizes (θ) and a gamma prior distribution (α = 0.002, β = 0.00001) for all mutation-scaled migration rate (m). The initial parameter value of mutation-scaled divergence times (τ) was first set individually for each population. Then, we ran ~100,000–200,000 iteration tests and manually evaluated the convergence by checking the achieve acceptance ratios (i.e., accept if around 30–70%) or using Tracer v1.6 (http://tree.bio.ed.ac.uk/software/tracer/). For each test, we updated the input of the initial τ and all fine-tuned parameters based on previous results to get the appropriate value. The final results in Figure 3 are based on 500,000 MCMC iterations, considering the first 10% as burn-in.
 
-## Parameter calibration
+#### Parameter calibration
 
 We assumed an average generation time (g) of 8 years. The coalescent time of the Equus (4.0–4.5 Mya) (Orlando et al., 2013) was used to bound the mutation rate μ (per site per year). Effective population sizes (Ne) and divergence times (T) were estimated by scaling θ and τ parameter using g and μ (Supplementary file 1g), and the following formula: Ne = θ/(4 μg) and T = τ/μ (Gronau et al., 2011).
 
-## Inferring gene flow
+#### Inferring gene flow
 
 Total migration rates (M) were estimated by a mutation-scaled parameter (m) given by M = mτm, where τm is the mutation-scaled time span of the migration band. The total migration rate gives an accumulated migration rate over a long period of time, which can be superior to 100%. We then converted such rates, M, into a probability of migration using the formula P = 1-e-M (where p is the probability of gene flow), according to the method presented in vonHoldt et al., 2016.
 
@@ -187,9 +277,9 @@ Finally, the total four migration bands were combined into one demographic model
 
 We caution that the analyses carried out using TreeMix and G-PhoCS returned partly discordant results. This may be due to TreeMix modeling pulses of admixture in contrast to G-PhoCS, in which situations of continuous gene flow can be accommodated. Additionally, gene flow affecting the two deepest tree branches can be directly accommodated by reducing their divergence. Therefore, the deep admixture inferred by G-PhoCS from the caballine branch into the ancestral branch of Sussemiones and other non-caballine equids cannot be expected to be identified through an individual migration edge with TreeMix as this could simply be modeled through a more limited divergence between both underlying lineages. The same holds true for the asymmetric gene flow inferred by G-PhoCS between Sussemiones and the branch ancestral to all extant asses; TreeMix is likely to only identify the resulting unidirectional contribution of these admixtures, which mainly sources to the branch ancestral to extant asses into Sussemiones; since G-PhoCS also infers additional admixture from the branch ancestral to extant zebras into Sussemiones, we can expect TreeMix to accommodate both sources of gene flow through a reduced divergence between Sussemiones and the branch ancestral to stenonines. Finally, it may reflect limitations pertaining to the two underlying data sets utilized, consisting, on the one hand, to the whole-genome SNP panel for TreeMix, further filtered for 15,324 candidate ‘neutral’ loci in G-PhoCS.
 
-## Demographic trajectories with PSMC
+### Demographic trajectories with PSMC
 
-## PSMC analyses
+#### PSMC analyses
 
 In order to reconstruct the past demographic dynamics of the E. ovodovi lineage, we applied the PSMC algorithm (version 0.6.5-r67) (Li and Durbin, 2011) to the sample HH06D (12.0×, mapping against horse reference), as well as three other Eurasian equine species (E. caballus TWI, E. hemionus ONA, and E. kiang KIA).
 
@@ -199,10 +289,10 @@ After filtering the bases with Phred quality scores strictly lower than 35, we r
 
 We found a great expansion of HH06D in the past 50,000 years when retaining transitions but not when conditioning on transversions (Figure 4—figure supplement 1). The former is thus likely spurious and at least partly driven by severe postmortem DNA damage signatures in the sequence data. We therefore only used the latter inference when considering the ancient HH06D specimen.
 
-## False-negative rate correction
+#### False-negative rate correction
 
 The HH06D genome (12.0×) was corrected assuming a uniform false-negative rate (uFNR) following Orlando et al., 2013 as the average depth of coverage is lower than the recommended 20×. To identify the correction value of uFNR for HH06D, we randomly downsampled reads of the SOM genome (21.0×), using DownsampleSam function of Picard Tools to downscale sequence data to the same average depth of coverage as that obtained for HH06D. This indicated that a value of 0.22 was the most suitable uFNR value for rescaling the HH06D PSMC profile (Figure 4—figure supplement 2A). The KIA and the ONA genomes, which also showed limited coverage, were also rescaled following the same procedure (Figure 4—figure supplement 2B and C). Finally, PSMC confidence intervals were assessed from 100 bootstrap pseudo-replicates (Figure 4).
 
-## Heterozygosity inference and inbreeding
+#### Heterozygosity inference and inbreeding
 
 Global heterozygosity rates and inbreeding levels were inferred for high-coverage individuals (>10×) using ROHan (Renaud et al., 2019) with default parameters, except that transitions were excluded (--tvonly) (Figure 5—figure supplement 1). To limit the impact of remnant misincorporations, we used the attached estimateDamage.pl script to estimate damage for all ancient samples prior to heterozygosity computation. Inbreeding was co-estimated together with genome-wide heterozygosity levels from the total ROH length (Figure 5—figure supplement 2).

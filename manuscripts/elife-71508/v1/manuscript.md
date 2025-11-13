@@ -26,9 +26,29 @@ Here, we show that Drosophila grooming behavior contains periodic elements over 
 
 ## Results
 
-## Two time scales of grooming are periodic
+### Two time scales of grooming are periodic
 
 When flies are covered in dust, they initially groom anterior body parts using their front legs (Seeds et al., 2014). They alternate between bouts of head sweeps, where the legs move synchronously, and bouts of leg rubbing, where the legs move in opposition to each other, scraping the dust off. These movements are shown schematically in Figure 1A: the purple and orange arrows indicate synchronous in-phase head sweeps and opposing out-of-phase leg rubs, respectively; the thicker light blue arrows show alternation between these two leg coordination modes. Bouts of head sweeping (h) are indicated in purple and front leg rubbing (f) in orange on the ethogram (record of behavior actions over time) shown in Figure 1B.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of anterior grooming behavior. The out-of-phase motion of leg rubbing is indicated by the orange arrows and in-phase head cleaning movements are indicated by the purple arrows (the short time scale). The blue arrows indicate alternations between the leg rubbing and head cleaning subroutines (the long time scale). (B) Ethogram showing alternations between bouts of front leg rubbing (f) and head cleaning (h) in dust-covered flies recorded at 18°C. (C) Example leg sweep and rub frequencies measured in the 30 s of anterior grooming behavior shown in the ethogram above. Purple and orange dots indicate front leg rubbing (f) and head cleaning (h) as detected by the Automatic Behavior Recognition System. (D) Bouts of front leg rubbing (f) or head cleaning (h) are identified by their probabilities (from the output of the Convolutional Neural Network). When we subtract the probability of h-bouts from that of f-bouts, we obtain the confidence of behavior curve shown here (see Materials and methods). Purple and orange dots indicate maxima and minima of confidence in behavior identification, corresponding to the centers of the f- and h-bouts, respectively. (E) Enlarged segment taken from (D) showing the definitions of ff-cycle and hh-cycle and f-/h-bouts. (F) Samples of autocorrelation functions (ACFs) computed over 3 min of movies when the fly was engaged in front leg rubbing or head sweeps (G). The thick black lines indicate the average of these samples, while thinner purple and orange lines represent each individual ACF contributing to this average; see Materials and methods for details. (H) ACF of the alternation of f-bout and h-bout from the example of ff-cycles shown in (D) also reveals periodic signal.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Smoothed derivatives from matrix (D) described in Materials and methods. (B) Autocorrelation functions (ACFs) computed from the matrix (D).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Examples of autocorrelation functions (ACFs) of the long time scale as they evolve over 20 min (top), the corresponding classification of periodic (Chardonnay color) and non-periodic behaviors (Pinot Noir color) (middle) and the PIs of the periodic behaviors (bottom). (B) Examples of ACFs computed from non-periodic (left) and periodic (right) long time scale behaviors. The blue and red bars indicate the heights of the central peak and its nearest neighbor, respectively. PI is only defined for behaviors classified as periodic (right). A sine wave would have the PI of 1. Less periodic behaviors have the PI approaching zero.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Periodicity Indexes for the short time scale of dust-stimulated flies across the seven temperatures (top: leg rubbing, bottom: head cleaning). (B) Similar as in (A) but for the spontaneously grooming flies. (C–E) Periodicity Indexes for the long time scale of dust-stimulated, spontaneously grooming flies and optogenetically stimulated flies, respectively. (F–H) Ratios of periodic to non-periodic long time scale behaviors of dust-stimulated, spontaneously grooming and optogenetically stimulated flies, respectively.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Examples of time-traces of angle changes of two joints from opposite front legs (red and blue traces) from flies recorded at three different temperatures (18°C, 24°C, and 30°C). (B) Autocorrelation functions (ACFs) of the time-traces sampled from same three temperatures. Orange = presumptive front-leg rubbing, purple = presumptive head-sweeps. (C) Spectra of the same data as in (B). Flies in (A), (B) and (C) were optogenetically stimulated. (D) ACFs of the long time scale plotted across time of dust-stimulated flies at the three temperatures. The input for the autocorrelation analysis was a signal constructed from the joint positions as described in the Materials and methods. (E) Same data as in (D) but shown as overlaid ACFs. Notice the increase of the number of side-peaks with temperature indicating an increase of frequency. (F) Spectra of the long time scale (same data as in (D) and (E)) showing the temperature-dependent max frequency increase.
 
 The individual leg sweeps and rubs are stereotyped: these movements are recognizable by human observers or machine vision algorithms (Mathis et al., 2018; Ravbar et al., 2019), and they represent the short time scale we consider here. We first count individual leg movements from raw videos as they are processed for our Automatic Behavior Recognition System (ABRS) pipeline (see Materials and methods and Figure 1—figure supplement 1) and compute their frequencies. In Figure 1C, we show an example of frequencies of leg sweeps and rubs during the same one-minute period as Figure 1B. At 18°C, leg rubs and sweeps have a characteristic frequency ~6 Hz. This means that each leg movement takes approximately 150 ms to complete, which is consistent with our observations using higher resolution video recordings (see below).
 
@@ -40,9 +60,29 @@ To quantify the strength of periodicity, we computed the ratio between the heigh
 
 We confirm the frequency and periodicity of leg movements during grooming using Deep Lab Cut (DLC) to analyze an independent video data set. DLC is a method developed for tracking of individual body parts (Mathis et al., 2018). Figure 1—figure supplement 4 shows the changes of joint angles (resulting from leg movements) over 2 s of grooming behavior: at 18°C, the movement frequencies for the short time scale and long time scale are 4.5 Hz and 0.22 Hz, respectively, similar to our original measurements using ABRS. The PI values are ~0.34 and the prominence of shoulder peaks is above our threshold for periodic behaviors. The discovery that both short time scale and long time scale subroutines within grooming behavior show periodicity suggests the possibility that they may both be controlled by central pattern generating circuits.
 
-## The period lengths of both time scales contract with increasing temperature
+### The period lengths of both time scales contract with increasing temperature
 
 A key feature of CPGs is that they oscillate faster at higher temperatures (Deliagina et al., 1983; Tang et al., 2012). To determine whether temperature affects the periodicity of leg sweeps and rubs (short time scale) or the alternation between bouts of head sweeps and leg rubs (ff/hh-cycles; long time scale), we recorded the grooming behavior of dust-covered flies at a range of temperatures between 18°C and 30°C. Examples of ethograms from the extreme temperatures are shown in Figure 2A, and ethograms from the entire data set arranged from coolest to warmest temperature of 84 individual flies at seven temperatures recorded for 13 min each are displayed in Figure 2B.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-v1.jpg)
+
+**Figure 2.:** (A) Examples of ethograms recorded at 18°C (top) and 30°C (bottom). (B) Ethograms of 84 dust-stimulated flies recorded at different temperatures (18–30°C). Colors represent behaviors as indicated in the color legend on the right. (C –E) The frequency of individual leg movements increases with temperature. Part (C) shows example frequency time series from 30 s of grooming at 18°C (top, blue outline) and 30°C (bottom, red outline). Gray dashed line = mean of this sample; green dashed line = reference at 6 Hz. (D) Histogram of leg movement frequencies, sampled from seven temperatures (18–30°C.) Lower temperatures are indicated in blue and higher ones in red. Thin lines—individual histograms; thick lines—average of samples at each temperature. All histograms are computed from the 84 ethograms of dust-stimulated flies in (B). (E) Box plots of leg sweep frequencies. Dots show individual fly averages, while the blue bars show the mean frequency, the red bars mark median and the green shaded areas indicate standard deviation (SD) and error (Blue/red bars in box plots – mean/median; shaded areas – SD and SE). (F–H) The frequency of the long time scale (ff-cycles + hh-cycles) also increases with temperature. (F) As described in Figure 1D, this plot shows the confidence in samples recorded at 18°C (top) and 30°C (bottom). (G , H) Similar to the panels (D , E) but showing the increase of ff-cycle frequency with temperature computed from the 84 dust-stimulated flies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Separating the individual leg movements into leg rubs and head sweeps shows that the frequency of both increases with temperature at a similar rate.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (B) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figure 2D and E. (C) Long time scale hh-cycle analysis comparable to Figure 2G and H.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Samples of five flies recorded at low temperature (18°C, blue frame), showing behavior confidence curves with several ff-/hh-cycles. Purple and orange circles indicate the times of h- and f-peaks. (B) Autocorrelation function (ACF) curves of behavior confidence sampled from 18°C flies, indicating strong periodicity of the signals (side peaks). (C) Samples of ACFs computed from over 8 min of a movie when the fly was engaged in front leg rubbing or head sweeps. (D–F) Same as (A–C) but for high temperature (30°C).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Autocorrelation functions (ACFs) computed from 0.5 s windows of raw videos of dusted flies are stacked together as columns into matrices across ∼17 s of a movie. Each matrix is showing the change of ACF shape across the ∼17 s. Note the modulation of the side-band positions and their numbers which is reflective of frequency modulation on the short time scale (y-axis). Also note the modulation of the longer time scales (x-axis). The three matrices shown are taken from different temperatures. Note that at the highest temperature, the y-axis becomes ‘denser’ (more side-bands) and that the episodes of harmonic bouts become shorter (x-axis). This way, we can observe simultaneous transformation of x-axis and y-axis as a result of temperature increase. The ethograms on top of the matrices are used as a reference.
 
 Temperature increase causes faster individual leg movements (short time scale) (Figure 2C–D) and the frequency shows a linear increase from 5.7 Hz to 6.6 Hz (R2=0.99, p<0.001; Figure 2E). This analysis combines sweeps and rubs, but when the different leg movements are considered separately, both show a similar increase with temperature (Figure 2—figure supplement 1).
 
@@ -50,15 +90,23 @@ The period of long time scale movements is also compressed by temperature. The f
 
 Increasing temperature shortens the cycle period of both the short time scale leg sweeps and rubs and the long time scale alternation between bouts of head cleaning and front leg rubbing. Next, we asked if behaviors at the two time scales contract with temperature by the same amount, which could suggest a linkage between them.
 
-## Two time scales contract together with temperature elevation
+### Two time scales contract together with temperature elevation
 
 Several metrics indicate that the short and long time scale oscillations contract at the same rate as temperature increases. We noticed that the number of leg movements within an ff/hh-cycle is fairly consistent, averaging ~15: means range from 13.2 to 15.8 and s.d. range from 0.75 to 1.95 across temperatures (Figure 3A). At 18°C, there are 15 leg movements of 175 ms for an ff/hh-cycle duration of 2.38 s, while at 30°C there are 15 leg movements of 152 ms for an ff/hh-cycle duration of 2.04 s. Thus, the average number of leg movements per ff/hh-cycle remains constant even as the cycle duration shortens with increasing temperature (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig3-v1.jpg)
+
+**Figure 3.:** (A) Histograms of numbers of leg movements per ff/hh-cycle in cooler temperatures (blue) and warmer temperatures (red). (B) Box plots of leg movement counts per ff/hh-cycle across the seven temperatures; statistics as in Figure 2E. (C) The frequency of individual leg movements and bout alternations (ff/hh-cycles) increases roughly linearly with temperature but over different time scales (ms vs. s; 7 Hz vs. 0.5 Hz). To see if they increase at the same rate, we compare them in arbitrary units. Frequencies were normalized by dividing each mean value from Figure 2E by the lowest value recorded: this produces the rate of change, where 1.0 means no change and values above 1.0 reflect the increased rate. See Figure 3—figure supplement 1 for similar effects in hh-cycles.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Histograms of numbers of leg movements per hh-cycle in cooler temperatures (blue) and warmer temperatures (red). (B) Box plots of leg movement counts per hh-cycle across the seven temperatures; statistics as in Figure 2E. (C) The frequency of individual leg movements and bout alternations (hh-cycles) increases roughly linearly with temperature but over different time scales (msvs. s; 7 Hz vs. 0.5 Hz).
 
 An alternative way to determine whether the two time scales contract together with temperature is to plot their contraction rates. Normalizing by their minimal frequencies, we can visualize the slope of temperature dependence for each time scale and the correlation between them is striking (R2=0.96, p<0.001; Figure 3C). Both time scales contract at the same rate, with R2 values of 0.995 and 0.956, respectively. This analysis combined both head sweeps and leg rubs for the short time scale and ff/hh-cycles for the longer one, but when only head sweeps and hh-cycles are considered, a similar correlated contraction with temperature is also observed (Figure 3—figure supplement 1).
 
 It is possible that temperature will affect both time scales of grooming behaviors at the same rate just because increased temperature tends to speed up all behaviors through its effect on neural activity, making the apparent coupling between grooming CPGs an epiphenomenon. We consider this unlikely because the two time scales can be decoupled in spontaneously grooming flies, where they respond differently to temperature, as described below.
 
-## Periodicity and correlation between time scales persist when sensory stimulation is constant
+### Periodicity and correlation between time scales persist when sensory stimulation is constant
 
 So far, we have shown that two hallmarks of CPGs—periodicity and temperature-dependent frequency increase—hold for both short time scale leg sweeps or rubs and long time scale alternations between bouts of leg rubbing and head cleaning. An additional criterion for determining if a behavior is controlled by a CPG is that rhythmic output does not require rhythmic input. It is challenging to isolate the contribution of sensory input or feedback to the rhythms we observe in grooming. There are mechanosensory bristle neurons that detect dust and induce grooming, and proprioceptive sensors that detect limb position or movement during grooming. If these sensory inputs are rhythmic, they could contribute to both short and long time scale rhythms.
 
@@ -66,19 +114,55 @@ When flies are covered in dust, their own grooming actions alter sensory input s
 
 We previously demonstrated that this manipulation induces grooming, beginning with the anterior body parts, and causing alternation between bouts of head cleaning and front leg rubbing (Hampel et al., 2017; Zhang et al., 2020). Here, we combine optogenetic activation for constant sensory input with changing temperature to show that both individual leg movements and bout-level alternations increase in frequency with temperature and that they do so in a correlated manner. The expression pattern used to activate mechanosensory bristle neurons is shown in Figure 4—figure supplement 1. Representative ethograms at 18°C and 30°C show characteristic alternation between bouts of head cleaning and front leg rubbing (Figure 4A). The entire behavioral data set of optogenetically induced grooming over a range of temperatures is shown in Figure 4B.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-v1.jpg)
+
+**Figure 4.:** Undusted flies expressing the optogenetic activator UAS-Chrimson in mechanosensory bristles were stimulated with red light to induce anterior grooming behavior. Examples ethograms recorded at 18°C (top) and 30 °C (bottom) are shown in (A), while (B) shows the whole data set of ethograms representing 56 flies across the range of temperatures, similar to Figure 2B. The green bars represent the periods of light activation, lasting 2 min each, to optogenetically induce grooming. (C) Examples of leg movement frequencies at 18°C (top) and 30°C (bottom), (D) histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (E) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figure 2C, D and E; compare to short time scale effects where grooming is induced by dust. (F–H) Long time scale ff-cycle + hh-cycle analysis same as in Figure 2F, G and H. (I) Histograms and box plots (J) of median leg movement counts per ff-cycle and hh-cycle across the seven temperatures, quantified as in Figure 3A and B. (K) The rate of temperature-driven increase in frequency is shown by normalization as in Figure 3C.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Expression pattern of R74C07-GAL4 in central nervous system. Magenta: anti-Bruchpilot. Green: anti-GFP. Scale bars, 100 µm. (B–E) Expression pattern of R74C07-GAL4 in eye bristles (B), leg bristles (C), wing bristles (D), and abdominal bristles (E). Magenta: cuticle autofluorescence. Green: innate GFP fluorescence. Scale bars, 50 µm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Autocorrelation function curves of behavior confidence sampled from 18°C flies, indicating strong periodicity of the signals (side peaks). The mean Periodicity Index (PI)=0.34 (s.d.=0.08). (B) Same as (A) but for high temperature (30°C). The mean PI=0.22 (s.d.=0.10).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Ethograms representing 32 flies stimulated with different light intensities (0.34, 0.68, 1.02, and 1.36 mW/cm2). The green bars represent the periods of light activation, lasting 2 min each, to optogenetically induce grooming. (B) Ethograms showing periodic f-h alternations (beige color), non-periodic f-h alternations (purple), and other (non-anterior grooming) behaviors (black). (C , D) Periodicity Indexes (PIs) for head sweeps and leg rubs, respectively, across the four light intensities. (E) Frequencies of leg rubs across the light intensity levels. (F) PIs for the long time scale. (G) Periodic to non-periodic behavior ratio (for the long time scale) across the four light intensities. (H) Similar as in (E) but for the long time scale.
+
 Uniform sensory input still evokes rhythmic output at both short and long time scales (Figure 4—figure supplement 2). For example, the PIs at 18°C for short and long time scales are 0.29 (s.d.=0.03) and 0.35 (s.d.=0.03), respectively (Figure 1—figure supplement 3E), and the amount of periodic behavior, considering the long time scale alterations, is 62% (s.d.=10%) (Figure 1—figure supplement 3H). This amount of periodic behavior is less than the 80% (s.d.=8%) in the dusted flies, and the long time scale rhythm also appears more ragged. We propose that sensory feedback may be needed to stabilize rhythms but not necessarily to generate them in the first place. The period of the optogenetically induced rhythms gets shorter with temperature (Figure 4C–H). The frequencies are similar to dust-induced grooming, and the average number of leg movements per ff/hh-cycle is also preserved across the range of temperatures (Figure 4I–J). As with dusted flies, the rate of contraction of the two time scales is correlated (Figure 4K), supporting the hypothesis that the short time scale leg movements and the long time scale bout alternations are both controlled by CPGs, and that these circuits are yoked together, even under constant sensory stimulation.
 
 Optogenetic activation of mechanosensory neurons does not precisely mimic the physical stimulus of dust itself, and the response of the optogenetically stimulated flies to temperature reflects this. Both short and long time scale behaviors occur with somewhat shorter periods at lower temperature than their dust-evoked counterparts, and they stop increasing beyond 26–28°C (compare Figures 2E, H ,, 4E and H). One possible explanation is that the optogenetic stimulation is ‘maxing out’ the sensory input: it may be driving the fastest leg movements biomechanically possible, or the upper bound of the CPGs’ frequency range may be reached at a lower temperature. We investigated this possibility by activating the mechanosensory bristle neurons at a constant temperature but with a range of light intensities: the frequencies of movements induced remain constant (Figure 4—figure supplement 3). Even starting from this higher frequency baseline, the two time scales still increase with temperature at similar rates (Figure 4K), indicating that optogenetic activation does not immediately induce maximum movement speeds.
 
-## Periodicity of both time scales is preserved under reduced sensory feedback
+### Periodicity of both time scales is preserved under reduced sensory feedback
 
 Optogenetic activation may mask acute changes in sensory feedback as the legs contact the body or each other during grooming movements, but removing or silencing sensory neurons is a more direct test of this potential contribution to rhythmicity. To determine if leg rubs and head sweeps remain rhythmic when sensory feedback is reduced, we amputated one front leg between the femur and tibia, similar to Berendes et al., 2016. This eliminates distal proprioceptive feedback from the amputated leg, as well as the usual mechanosensation provided by contact between the legs or the leg and the head during rubs and sweeps. We then employed the DLC software to track the position of the stump and of the intact front leg (Figure 5—figure supplement 1). We found that movements of both the intact leg and the stump remained periodic, with frequencies and PIs similar to those of intact legs in dusted flies. This result further supports that at least the short time scale leg movements are indeed controlled by CPGs.
 
 We also attempted to reduce sensory feedback using genetic reagents. We blocked chemical synaptic transmission in leg mechanosensory neurons by expressing tetanus toxin as described in Mendes et al., 2013 observed grooming behavior in response to dust. Figure 5A shows ethograms of grooming behaviors for both the experimental (TNT) and control (GFP) groups; Figure 5B–C shows the neurons that have been genetically inhibited. The frequency of rubs is lower in the TNT group than in the control (p< 0.001) (Figure 5D) while the frequency of sweeps is similar for both (Figure 5E). The long time scale oscillations are significantly slower in the TNT group (p<0.003) (Figure 5H, also ethograms in Figure 5A) and so are the numbers of leg movements per ff/hh-cycle (Figure 5F–G). Both groups exhibited periodic behaviors on both the long and short time scales (Figure 5I and J). The sensory inhibited flies also performed less overall periodic behavior on the long time scale (Figure 5K). Taken together, these results suggest that grooming behaviors do not require sensory input for periodicity, but do utilize it for timing, modulation, and perhaps stabilization of the motor output, especially on the longer time scale.
 
-## Nested CPGs can be decoupled in spontaneously grooming flies
+![Figure 5.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig5-v1.jpg)
+
+**Figure 5.:** (A) Ethograms of grooming behavior flies with inhibited proprioception (TNT, red bar) versus the ethograms of the control group (GFP, green bar). (B) Expression pattern of the leg mechanosensory neurons driver line used in TNT inhibition experiments. Expression pattern of 540-GAL4, DacRE-flp > 10X-stop-mCD8-GFP in central nervous system. Magenta: anti-Bruchpilot. Green: anti-GFP. Scale bars, 100 μm. (C) Expression pattern of 540-GAL4, DacRE-flp > 10X-stop-mCD8-GFP in leg sensory neurons. Magenta: cuticle autofluorescence. Green: innate GFP fluorescence. Scale bars, 200 μm. (D , E) Box plots of leg-rub and head-cleaning frequencies, respectively. (F , G) Similar as in (D , E) but for the count of rubs and sweeps per ff-cycle. (H) Frequencies of the long time scale (computed from ff-cycles and hh-cycles as in Figure 2G and H) for both groups. (I) Box plots of Periodicity Indexes for the short time scale of the control (GFP) and the experimental (TNT) flies. (J) Similar as in (I) but for the long time scale. (K) Ratios of periodic versus non-periodic long time scale oscillations in control and experimental groups. See also Figure 5—figure supplement 1 for removal of sensory cues by amputation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Top: positions of joints and the stump (orange) annotated by Deep Lab Cut (DLC). Bottom: positions of a joint on the intact front leg (blue) and stump (orange) as they change over time. (B) Spectra of position traces (over time) for the intact leg’s joint (top) and the stump (bottom). Gold and purple spectra correspond to the presumptive front-leg rubbing and head cleaning behaviors, respectively. (C) Autocorrelation functions (ACFs) computed from the intact leg position traces (top) and from stump traces. (D) Cross-correlations between the intact leg and the stump (top), same ACFs as in (C) (middle) and the corresponding Periodicity Indexes (bottom) over 70 s.
+
+### Nested CPGs can be decoupled in spontaneously grooming flies
 
 Flies groom robustly in response to dust or optogenetically controlled mechanosensory stimulation, but they also groom spontaneously. The leg movements they perform are recognizable sweeps and rubs, and they occasionally produce alternating bouts of head cleaning and front leg rubbing as well (Figure 6A and B). These flies have no experimentally applied sensory stimuli—only what they generate themselves by contact between their legs and bodies, and the associated proprioceptive feedback—so these motor patterns are most likely to be generated by internal circuits. We analyzed the temperature response of both time scales of grooming movements in these spontaneously grooming flies.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-v1.jpg)
+
+**Figure 6.:** Spontaneous grooming was recorded in undusted flies at a range of temperatures between 18°C and 30 °C. Examples are shown in (A) and the whole data set of 80 flies recorded for 13 min is shown in (B). (C) Examples of spontaneous leg movement frequencies at 18°C (top) and 30°C (bottom), (D) histograms of mean frequencies at cool (blue) and warm (red) temperatures, and (E) box plots of the increase in leg movement frequency with temperature; plots and statistics as described in Figures 2, 3C and D, and (E); compare to short time scale effects where grooming is induced by dust. (F–H) Long time scale (ff-cycle + hh-cycle) analysis comparable to Figure 2, Figure 3F, G, and H. (I) Histograms and box plots (J) of median movement counts per ff-cycle and hh-cycle across the seven temperatures, quantified as in Figure 3A and B. (K) The rate of temperature-driven increase in frequency is shown by normalization as in Figure 3C. See also Figure 6—figure supplements 1 and 2, and 3 for evidence of periodicity and response to temperature.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Grooming and walking ethograms of unstimulated flies across the temperatures. (B) Ethograms showing periodic f-h alternations (beige color), non-periodic f-h alternations (purple), and other (non-anterior grooming) behaviors (black). (C) Box plots of long time scale frequencies (as in Figure 2E) selected for the periodic f-h alternations (p=0.11, R2=0.64). (D) Same as (C) but for non-periodic f-h alternations (p=0.09, R2=0.68). (E) Normalized frequencies of leg movements and ff-cycle freq (similar as in Figure 3C) sampled from periodic grooming motifs. (F) Same as (E) but sampled from non-periodic grooming motifs.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71508/elife-71508-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) An example of autocorrelation functions from a 13-min video of a dusted fly at 18°C. Ethograms placed underneath are showing periodic f-h alternations (Chardonnay color), non-periodic f-h alternations (Pinot Noir color), and other (non-anterior grooming) behaviors (black). (B–D) Same as (A) but for a spontaneous grooming fly, a TNT-GFP control, and TNT experimental fly (see Figure 5). The (C , D) were recorded at 24°C.
 
 Although these flies groom less than dusted or optogenetically activated flies, they show characteristic sweep and rub frequencies that increase with temperature, albeit with higher variance, ranging from 5.85 Hz to 7.15 Hz. (Figure 6C–E). The ff/hh-cycles are rarer, and when they occur, the temperature-dependent contraction of the long time scale is less pronounced than in the stimulated flies (R2=0.86; p=0.012) (Figure 6F–H). Perhaps most strikingly, although the number of leg movements per ff/hh-cycle is similar to stimulated flies (~17; with higher variation across the temperature range, Figure 6I and J), the correlated temperature-dependent contraction of the short and long time scales observed in the dusted and optogenetically activated flies is not seen in the spontaneously grooming ones (R2=0.43; p=0.332) (compare Figure 6K to Figures 3K and 4K). The frequency of leg rubs and sweeps increases with temperature at a greater rate than the frequency of ff/hh-cycles (Figure 6K), suggesting that the pattern-generating circuits that control the two time scales of movements may be dissociated in spontaneous grooming.
 
@@ -110,13 +194,13 @@ Rhythmic activity and circuit connectivity may suggest candidate neurons, while 
 
 ## Materials and methods
 
-## Fly stocks and husbandry
+### Fly stocks and husbandry
 
 Drosophila melanogaster was reared on common cornmeal food in a 25°C incubator on a 12-hr light/dark cycle. Three to five days, CantonS males were used for dusting and spontaneous grooming experiments. For optogenetic experiments, larvae were raised on normal food. After eclosion, 1-day-old adults were transferred into food containing 0.4 mM all-trans-retinal and reared in the dark for another 2 days.
 
 R74C07-GAL4 (Bloomington Stock Center 39847), 20XUAS-IVS-CsChrimson.mVenus (Bloomington Stock Center 55134), 5–40 GAL4 (Hughes and Thomas, 2007), DacRE-FLP (Mendes et al., 2013), UAS>stop>TNT (Stockinger et al., 2005), and 10XUAS>stop>myr-GFP (Bloomington Stock Center 55811) were used in the paper. Ten-day-old males were used in TNT inhibition experiments. Three- to five-day-old males were used in other experiments.
 
-## Behavior experiments with temperature control
+### Behavior experiments with temperature control
 
 Behavior videos were recorded inside New Brunswick I2400 incubator shaker or DigiTherm DT2-MP-47L heating/cooling incubator. Experiments were performed every 2°C between 18°C and 30°C. Temperature was monitored by a Govee H5072 Bluetooth thermometer. For dusting experiments, the room temperature was also adjusted to the target temperature to make sure flies stay at the same temperature during fly dusting. Each fly was tested once in one condition. Three types of chambers were used in fly dusting assay: dusting chamber (24-well corning tissue culture plate #3524), transfer chamber, and recording chamber. Flies were anesthetized on ice and transferred to the middle four wells of the transfer chamber. Transfer chamber with flies was then kept in the incubator set to the target temperature for 15 min. For fly dusting, around 5 mg Reactive Yellow 86 dust was added into each of the four middle wells of the dusting chamber. Transfer chamber was aligned with the dusting chamber. Flies were tapped into the dusting chamber and shaken 10 times. After dusting, flies and dust were transferred back into the transfer chamber. Transfer chamber was banged against an empty pipette tip box to remove extra dust. Dusted flies were then immediately tapped into the recording chamber for video recording. The whole dusting process was performed in a Misonix WS-6 downflow hood.
 
@@ -126,11 +210,11 @@ For optogenetics and spontaneous grooming experiments, ice-anesthetized flies we
 
 For all experiments described above, 8–12 flies were used per temperature or per experimental group (for the TNT inhibition experiment). Occasionally a recording chamber was empty or the fly was visibly damaged or dead. Those chambers were excluded from further analysis. These numbers were sufficient to extract the quantities we use in this work such as ff/hh-cycle periods.
 
-## High-resolution videos recording
+### High-resolution videos recording
 
 For high-resolution videos used for leg tracking, flies were put in a 10-mm diameter quartz chamber, and 100 Hz videos were recorded from below. An FLDR-i132LA3 red ring light (626 nm) was used for optogenetics activation. For leg amputation experiments, one front leg was amputated at the middle of the femur. Flies were recovered for 3 days before the experiments. The dusting procedure is the same as what is described above.
 
-## Leg movements counting from video
+### Leg movements counting from video
 
 We did not track individual legs or joints so the frequencies of leg movements during grooming were estimated from frame-to-frame changes in pixel values. When flies are walking or engaged in other non-grooming behaviors, such measurements would not be very useful. However, during grooming, flies are standing in one place and the most intense pixel value differences roughly correspond to those created by leg movements (rather than whole body translations).
 
@@ -142,19 +226,23 @@ Notice in the figure the several non-zero columns (corresponding to pixels) that
 
 The number of leg movements per second was used as the leg movement frequency.
 
-## Automatic behavior recognition from videos
+### Automatic behavior recognition from videos
 
 Probabilities and ethograms of grooming behaviors were extracted from raw videos using ABRS. For detailed description see Ravbar et al., 2019 and for the most updated version see ABRS (https://github.com/AutomaticBehaviorRecognitionSystem/ABRS; Ravbar, 2021; copy archived at swh:1:rev:7c558561ae82b62bfcc5337a334b07efcbb18da2).
 
 Briefly, ABRS pre-processes video data by compressing it into spatio-temporal features in the form of three-channel space-time images (3CST images, shape=80×80×3) where the first channel [0] contains raw video frame pixel values [80×80], the second channel [1] contains spectral features of pixel value dynamics over a time window of 16 frames, and the third channel [2] contains frame-to-frame difference (frame subtraction). The 3CST images are classified into seven behavioral categories (front leg rubbing, head cleaning, back leg rubbing, abdominal cleaning, wing cleaning, and whole-body movements [walking]) by ConvNet (Covolutional Neural Network – CNN) implemented in Tensor Flow (in Python) (https://www.tensorflow.org), using a model trained with diverse set of videos of fly grooming behaviors. In the final output layer of the CNN are the probabilities of the grooming behaviors. In this work, we focus entirely on the probabilities of front leg rubbing and head cleaning behaviors: P(f) and P(h).
 
-## Behavioral confidence
+### Behavioral confidence
 
-The long time scale oscillations are quantified as probabilities of behaviors obtained from the ABRS CNN described above. Behavioral confidence (BC) is computed as:(1)BC=P(f)−P(h)
+The long time scale oscillations are quantified as probabilities of behaviors obtained from the ABRS CNN described above. Behavioral confidence (BC) is computed as:
+
+$$
+BC=P(f)−P(h)
+$$
 
 The BC signal is smoothed two consecutive times with time window of 31 frames (0.5 s) using the scipy.signal.savgol_filter function to remove high-frequency noise.
 
-## Autocorrelation and periodicity analysis
+### Autocorrelation and periodicity analysis
 
 ACFs were computed from a 0.5-s time window for individual leg movements (leg rubs and sweeps). The signal for autocorrelation was extracted from raw movies as follows: (1) Matrix D was obtained as described above (Leg movements counting from video); (2) ACFs were computed for every column of D (an example of the ACFs and the matrix D are shown in Figure 1—figure supplement 1); and (3) All the ACFs were averaged to obtain the mean ACF for that time window. The mean ACFs were stacked to obtain the ACF array with dimensions 60×F, where F is the number of frames in the movie. The AFCs were computed using scipy.signal.correlate function from SciPy library.
 
@@ -164,7 +252,7 @@ To quantify the periodicity of each time scale, we computed the PI from the ACFs
 
 We managed to separate periodic behaviors from the non-periodic by using the scipy.signal.find_peaks function. If the first neighbor of the central peak of the ACF fell below the 0.2 ‘prominence’ threshold we classified the pertaining behavior as non-periodic and as periodic otherwise. This is shown in Figure 1—figure supplement 2B.
 
-## Frequency computations for the long time scales
+### Frequency computations for the long time scales
 
 BC traces were used to compute the frequencies of the long time scale.
 
@@ -172,12 +260,12 @@ In Eq. 2, the L is a vector containing the lengths of periods measured from the 
 
 This produced a vector of frequencies of dimensions 1×F, where F is the number of frames in a movie, corresponding to one fly. The mean and median frequencies for each fly were computed as means/medians of vector f.
 
-## High-resolution behavior analysis
+### High-resolution behavior analysis
 
 To confirm our observations of grooming behavior, its periodicity and the effect of temperature, we used an independent method for limb tracking, the DLC (Mathis et al., 2018) on a small sample of high-resolution videos described in the previous section. The DLC allowed us to label (virtually) three body parts on each front leg and a reference point (see Figure 5—figure supplement 1 A showing the labels on the intact front leg). We could then track these labels across time. For each leg, we computed the angle between Tibia and Femur and tracked the derivatives of these angles across time—examples are shown in Figure 1—figure supplement 4A. On these time-traces, we applied the autocorrelation analysis and FFT to compute ACFs and their spectra. (For the amputated fly, we used the relative positions of the joints and the stump instead of the angles.) We computed the PI from the ACFs.
 
 In these analyses, we did not have access to the BC (see the section above) so, in order to examine the periodicity and frequencies of the long time scale, we computed the equivalent to BC as follows: the distance between tarsal segments was used as the ‘confidence of head cleaning’ and the angle between Tibia and Femur was used as the ‘confidence of front leg rubbing.’ We obtained the behavior confidence signal by subtracting the latter from the former. We applied autocorrelation and FFT analysis this ‘behavior confidence’ to estimate the PI and the frequency of the long time scale. Due to cumbersome nature of these analysis and the lack of behavioral recognition, we performed them only on three different movies from the dust-stimulated flies (Figure 1—figure supplement 4D-F).
 
-## Handling of outliers and missing data points
+### Handling of outliers and missing data points
 
 We found and did not eliminate an outlier in optogenetically stimulated flies (leg movement frequencies at 20°C). In cases where there were missing data points (no fly was in the recording chamber), those were not counted in the statistics.

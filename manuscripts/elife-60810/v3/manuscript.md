@@ -35,7 +35,7 @@ However, a number of unresolved questions remain regarding SPN function in neona
 
 ## Results
 
-## Intrinsic electrophysiological and morphological diversity of Lpar1-EGFP SPNs
+### Intrinsic electrophysiological and morphological diversity of Lpar1-EGFP SPNs
 
 Lpar1-EGFP SPNs form a layer of two to three cells deep adjacent to the white matter tract in neonatal S1BF (Figure 1a). As a first pass to understanding the contribution of these neurons to neonatal circuits of S1BF, we recorded the intrinsic electrophysiological profiles of 103 SPNs from postnatal day (P) 1–8. We established that SPNs had an intrinsic electrophysiological profile consistent with regular firing pyramidal cells (Figure 1b,c) by injecting both depolarising and hyperpolarising current steps (500 ms) of increasing amplitude into cells recorded at resting membrane potential in current clamp configuration. Analysis of passive (Figure 1d–f) and active (Figure 1g–i) properties revealed a progressive maturation of intrinsic properties across the ages tested broadly in line with previous reports (Hanganu et al., 2002). Specifically, we observed a statistically significant decrease in input resistance (RIN) (Figure 1e) and membrane time constant (Figure 1f), as well as increase in rheobase (Figure 1g), spike amplitude (Figure 1h), and maximum firing frequency (Figure 1i) over development. With a number of properties – membrane time constant (tau; Figure 1f), rheobase (pA; Figure 1g) and maximum firing frequency (Hz; Figure 1i), there was increased variability (± SD) with age (typically P5 onward) that suggests that not all SPNs mature at the same rate as development progressed.
 
@@ -49,17 +49,17 @@ Inclusion of Biocytin in the intracellular solution allowed us to reveal the mor
 
 **Figure 2.:** (a) Streptavidin labeled morphologies of 2 EGFP+ SPNs recorded at P3; arrowhead, pyramidal subtypes with apical dendrite projecting at ~45° into L6a; arrow, fusiform morphology with horizontal, bitufted dendrites largely restricted to the SP (scale bar = 25 μm). (b) Reconstructed (ImageJ) dendritic arbors of the cells shown in (a) were used to calculate directionality with 90° indicative of vertically orientated dendrites and ~0° primarily horizontal dendrites (scale bar = 25 μm). (c) A difference was observed in the dendritic orientation of fusiform and pyramidal SPNs (Mann–Whitney U = 5, fusiform n = 7, median = 4.38; pyramidal n = 12, median = 54.89, **p<0.001 two-tailed). Overlay of axonal arbors of (d) pyramidal (recovered between P1 and P8) and (e) fusiform (recovered P1and P5) cells aligned on soma location (horizontal position indicated by the blue circle); approximate barrel location indicated by grey-shaded areas for P5+ cells; scale bar = 180 μm. (f) Proportion of fusiform (grey) and pyramidal (black) Lpar1-EGFP SPNs over the first postnatal week. (g) Immunohistochemistry for EGFP (left) and GABA (middle); EGFP+/GABA+ cells indicated by the white arrows; right panel, overlay of EGFP (green) and GABA (red). (h) Schematic of the two morphological subtypes of Lpar1-EGFP SPN: pyramidal (Pyr) and fusiform SPNs encountered prior to P5; a putative synaptic connection between the two subtypes is indicated by the question mark. MZ, marginal zone; CP, cortical plate; SP, suplate.
 
-## Laser scanning photostimulation reveals dynamic synaptic integration of Lpar1-EGFP SPNs into local glutamatergic network
+### Laser scanning photostimulation reveals dynamic synaptic integration of Lpar1-EGFP SPNs into local glutamatergic network
 
 We next used UV (355 nm) laser photolysis of caged glutamate to map afferent synaptic input onto SPNs in acute in vitro cortical slices (Figure 3a). We mapped input using laser scanning photostimulation (LSPS) across the extent of a pseudo-random (50 μm spaced) grid covering the depth of neocortex immediately above any given recorded cell. From the earliest time points recorded (P1–2) SPNs received distinct columnar glutamatergic input, either from SP and adjacent cortex (L6a) alone, or from both SP/L6a and more superficial cortex; patterns of innervation that we termed ‘local’ and ‘translaminar’ respectively (Figure 3b). The average laminar profile of local (n = 15) and translaminar (n = 8) SPNs at P1–2 revealed that the latter received input from the cortical plate (CP) absent in local SPNs (Figure 3c). This translaminar input became more prominent over the next two postnatal days (P3–4; Figure 3d) with the source primarily focused in the lower CP, presumptive L4. In contrast, at P5–6, we recorded relatively few translaminar neurons with the majority (84%) dominated by local SP/L6a input. The three cells defined as translaminar received afferent input from mostly infragranular pyramidal cells (Figure 3e). This trend continued in the cells recorded at P7–8 although the latter were diverse in input source such that the average laminar profile and map of translaminar cells resembled a diffuse columnar band of glutamatergic input (Figure 3f) across L4 and L5b.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig3-v3.jpg)
 
-**Figure 3.:** Lpar1-EGFP SPNs into the local cortical glutamatergic network.(a) LSPS of caged glutamate resulted in three responses observed in whole cell patch-clamp recordings of SPNs: top traces, large amplitude direct responses with onset locked to laser pulse onset (dashed vertical blue line); middle traces, synaptic response of consistent excitatory postsynaptic currents (EPSCs) within the monosynaptic event window (red box); bottom traces, no consistent response with occasional spontaneous EPSCs. Scale bar for direct traces: 50 pA; for synaptic and spontaneous: 25 pA. (b) Local (left) and translaminar (right) glutamatergic input maps for SPNs recorded at P1-2. Pixel size: 50 µm. (c) Average input profile for local (blue) and translaminar (orange) SPNs; translaminar SPNs showed increased input from the cortical plate (CP) and reduced local (L6a/SP) innervation. (d) Left panel, average input map for translaminar SPNs recorded at P3–4 (n=6); right panel, average input profile for local (blue) and translaminar (orange) SPNs. (e) Corresponding input profile for P5–6. (f) Average input map and profile for SPNs recorded between P7 and P8. Horizontal profile for local and translaminar SPNs aligned on cell soma at (g) P1-P4 and (h) P5–8. Horizontal axis indicates the lateral distance from the soma. (i) Schematic showing glutamatergic circuit onto Lpar1-EGFP SPNs.
+**Figure 3.:** (a) LSPS of caged glutamate resulted in three responses observed in whole cell patch-clamp recordings of SPNs: top traces, large amplitude direct responses with onset locked to laser pulse onset (dashed vertical blue line); middle traces, synaptic response of consistent excitatory postsynaptic currents (EPSCs) within the monosynaptic event window (red box); bottom traces, no consistent response with occasional spontaneous EPSCs. Scale bar for direct traces: 50 pA; for synaptic and spontaneous: 25 pA. (b) Local (left) and translaminar (right) glutamatergic input maps for SPNs recorded at P1-2. Pixel size: 50 µm. (c) Average input profile for local (blue) and translaminar (orange) SPNs; translaminar SPNs showed increased input from the cortical plate (CP) and reduced local (L6a/SP) innervation. (d) Left panel, average input map for translaminar SPNs recorded at P3–4 (n=6); right panel, average input profile for local (blue) and translaminar (orange) SPNs. (e) Corresponding input profile for P5–6. (f) Average input map and profile for SPNs recorded between P7 and P8. Horizontal profile for local and translaminar SPNs aligned on cell soma at (g) P1-P4 and (h) P5–8. Horizontal axis indicates the lateral distance from the soma. (i) Schematic showing glutamatergic circuit onto Lpar1-EGFP SPNs.
 
 While there were clear differences in laminar input profile, the average horizontal profile for both local and translaminar SPNs did not vary through development (Figure 3g,h). Recovered morphologies of SPNs mapped from P1 to P4 (n = 15) revealed that all the SPNs, which received translaminar input, were of the fusiform subtype (n = 6). Two further fusiform and seven pyramidal SPNs received local input. Of the 12 SPN morphologies recovered from P5 to P8, 9 cells received local glutamatergic input. These were all of the pyramidal subtype with the exception of the only fusiform morphology recovered from ourLSPS experiments during this later window. The remaining three pyramidal SPNs received translaminar input from L5. Taken together these data suggest that transient fusiform SPNs are the primary recipients of early translaminar input from the cortical plate (Figure 3i), up until P4 when they become less apparent in our sample. In parallel, pyramidal SPNs are dominated by local glutamatergic input from SP/L6a at early ages (Figure 3i), but acquire varied translaminar input from more superficial layers from P5 onward.
 
-## Increased cell death in subplate and adjacent cortical layers at the P4–5 transition
+### Increased cell death in subplate and adjacent cortical layers at the P4–5 transition
 
 SPNs are regarded as a transient neuronal population, but direct evidence in support of SPN programmed cell death is limited in murine models. One possible explanation is that rapid clearance of apoptotic neurons in the developing rodent brain might preclude histological identification of dying cells. Our morphological and LSPS data point to a possible 24 hr period from P4 to P5 during a change in the make up of Lpar1-EGFP SPNs. To test whether this is due to cell death, we performed immunohistochemistry at P3–4 and P5–6 to assess (1) the density of EGFP+ cells, (2) expression of the apoptotic marker cleaved Caspase-3 (Casp-3+), (3) pyknotic nuclei as evidenced by DAPI staining, and (4) TUNEL staining to detect DNA breaks, in Lpar1-EGFP SPNs across these two time windows (Figure 4). Caspase-3 staining was sparse at both time points but associated with pyknotic nuclei (Figure 4a,b). At P3–4, Casp-3+ cells were largely restricted to the white matter (Figure 4a), whereas at P5–6, they were more widely distributed including in the SP. That said, we found only a couple of double-positive EGFP+/Casp-3+ SPNs (n = 2/420 cells; five animals) (Figure 4b). EGFP+ cells with pyknotic nuclei were however more evident, but the percentage of EGFP+ cells with pyknotic nuclei did not differ between the two time points (Figure 4c), despite there being a significant decrease in the density of EGFP+ SPNs (Figure 4d). To further examine the latter observation, we performed a TUNEL stain as an alternative means of visualizing apoptotic cells. This revealed a similar pattern of programmed cell death to our Casp-3 experiments, in that TUNEL+ cells were primarily located in the white matter at P3–4 (Figure 4e). However, at P5–6, we observed a significant increase in TUNEL+ profiles (Figure 4f) that included Lpar1-EGFP SPNs (Figure 4f,g). Moreover, it was evident that this increase was not restricted to the subplate (Figure 4f), so we further quantified the density of TUNEL+ profiles across the white matter, subplate, and adjacent infragranular layers at both time points, analysis that identified a surge in cell death at this later time point across the cortical layers sampled (Figure 4h). Overall, this suggests that while a small proportion of Lpar1-EGFP SPNs undergo cell death at the transition between P4 and P5, this is not specific to subplate and likely represents a wider reconfiguration of the circuit at the transition to columnar signalling in S1BF at this time (Dupont et al., 2006).
 
@@ -67,7 +67,7 @@ SPNs are regarded as a transient neuronal population, but direct evidence in sup
 
 **Figure 4.:** (a) Immunohistochemistry for cleaved Caspase-3 (Casp-3) and EGFP in subplate (SP) at P4; scale bar: 25 μm. Left, Casp-3+ cells in the white matter. The area bounded by the white dashed line is shown at higher magnification in the centre and right panels with Casp-3+ cells with pyknotic nuclei identified with white arrows in the centre panel; scale bar: 9 μm. (b) Similar data obtained at P6 but with white arrowhead pointing to EGFP+, Casp-3+ Lpar1-EGFP SPN with pyknotic nucleus. (c) Summary data for percentage Lpar1-EGFP SPNs exhibiting pyknotic nuclei at postnatal day (P)3–4 (n = 5 animals) and P5–6 (n = 5). (d) Plot showing the density of EGFP+ cells in SP at P3–4 (n = 5) and P5–6 (n = 5); asterisks, p=0.0327 (two-tailed t-test; t = 2.579, df = 8). (e,f) TUNEL staining at (e) P4 and (f) P6 with TUNEL+ cells indicated with white arrows. The area identified by the white dashed box is shown expanded in (f) in the right panels; the white arrowhead identifying a TUNEL+ Lpar1-EGFP SPN; scale bar: 8 µm. (g) Plot of percentage TUNEL+ Lpar1-EGFP SPNs at P3-4 and P5-6; asterisks, p=0.0274 (two-tailed t-test; t = 2.693, df = 8). (h) Density of TUNEL+ cells in the white matter (WM), subplate (SP), and adjacent L5/L6a across both timepoints; single asterisk, p=0.028; double asterisk, p=0.011.
 
-## Lpar1-EGFP SPNs receive distinct sources of GABAergic input including translaminar input from somatostatin (SST+) interneurons
+### Lpar1-EGFP SPNs receive distinct sources of GABAergic input including translaminar input from somatostatin (SST+) interneurons
 
 To understand whether the observed changes around the P4–5 transition also involve early GABAergic circuits, we repeated our LSPS experimental strategy with the cell voltage clamped at the reversal potential for glutamate (EGlut) (Figure 5a,b). SPNs were pooled into two groups based on age: SPNs recorded prior to the P5 transition (P1–4; Figure 5c–e) and P5 onward (P5–8; Figure 5f–h). Similar to our previous assessment of glutamatergic input, it was evident that SPNs received either local (Figure 5c,f) or translaminar input (Figure 5d,g) across both time windows. Prior to P5, SPNs with local (Figure 5c) and translaminar (Figure 5d) input were evident in similar numbers with the latter receiving prominent columnar input from L5 (Figure 5b,d,e). Local GABAergic input was distributed through SP and adjacent L6a (Figure 5c). The average translaminar input (Figure 5e) revealed largely complementary distributions in GABAergic input for these two populations. From P5 onward, we observed primarily local GABAergic synaptic input onto SPNs (n = 11/16)(Figure 5f), with the source of translaminar GABAergic input highly variable in location resulting in a diffuse average input profile (Figure 5g) with a more-or-less even distribution across the depth of cortex (Figure 5h). Unlike glutamatergic input, the horizontal or columnar input was evenly spread for GABAergic input with the exception of translaminar input from P1 to P4 (Figure 5i,j). Indeed, translaminar GABAergic input onto SPNs prior to the emergence of whisker barrels at ~P5 was highly focused within the immediate column (Figure 5i). Recordings in the early time window yielded seven morphologies, of which four were fusiform cells that received translaminar input; the remaining three recovered neurons were the pyramidal subtype, of which two received local input (Figure 5k). At the later age (P5–8), we only recovered pyramidal SPN morphologies for both local and translaminar GABAergic input (n = 4).
 
@@ -79,11 +79,11 @@ Somatostatin (SST+) interneurons form a key component of early postnatal transla
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/60810/elife-60810-fig6-v3.jpg)
 
-**Figure 6.:** Lpar1-EGFP SPNs during early postnatal life.(a) Widefield 473 nm blue light stimulation evoked IPSCs in SPNs at both P3–4 (n = 7) and P5–6 (n = 6) following conditional expression of Channelrhodopsin2 (ChR2) in SST+ interneurons. LED indicated by the blue line. (b) Incubation in Sr2+-containing ACSF resulted in asynchronous neurotransmitter release. (c) Cumulative probability plot of ChR2-evoked IPSC amplitude for control (black line; n = 13) versus Sr2+-containing high-divalent cation (HDC) ACSF (grey; n = 7) across P3–6; asterisk: two-sample Kolmogorov-Smirnov test: p≤0.01. (d) Comparison of early (P3–4; n=3) versus late (P5–6; n=4) IPSC amplitude in the presence of Sr2+-containing HDC ACSF. (e) Local and translaminar SST+ interneuron input maps onto SPNs revealed through LSPS uncaging of ATP in conjunction with conditional expression of P2x2 receptor in SST+ interneurons. (f) Local (blue) and translaminar (orange) average layer profiles for SST+ input onto SPNs.
+**Figure 6.:** (a) Widefield 473 nm blue light stimulation evoked IPSCs in SPNs at both P3–4 (n = 7) and P5–6 (n = 6) following conditional expression of Channelrhodopsin2 (ChR2) in SST+ interneurons. LED indicated by the blue line. (b) Incubation in Sr2+-containing ACSF resulted in asynchronous neurotransmitter release. (c) Cumulative probability plot of ChR2-evoked IPSC amplitude for control (black line; n = 13) versus Sr2+-containing high-divalent cation (HDC) ACSF (grey; n = 7) across P3–6; asterisk: two-sample Kolmogorov-Smirnov test: p≤0.01. (d) Comparison of early (P3–4; n=3) versus late (P5–6; n=4) IPSC amplitude in the presence of Sr2+-containing HDC ACSF. (e) Local and translaminar SST+ interneuron input maps onto SPNs revealed through LSPS uncaging of ATP in conjunction with conditional expression of P2x2 receptor in SST+ interneurons. (f) Local (blue) and translaminar (orange) average layer profiles for SST+ input onto SPNs.
 
 Having established that SPNs received SST+ interneuron input through the first postnatal week, we next employed conditional expression of the P2x2 receptor – an optogenetic actuator that we have previously used in conjunction with uncaging of ATP (Anastasiades et al., 2016) – that allows us to map the somatic location of presynaptic SST+ interneurons. We performed LSPS uncaging of ATP over the 50 µm spaced pseudorandom grid to assess whether the L5 translaminar input observed from P1 to P4 originated from SST+ INs. Our analysis revealed two distinct input profiles for SPNs at this time (Figure 6e,f): local SP/L6a versus translaminar infragranular SST+ interneuron input. Similar to our previous findings with both glutamatergic and global GABAergic input, local input SPNs were pyramidal cells (3/3 recovered morphologies), whereas SPNs that received translaminar synaptic input were predominantly fusiform (2/3). The presence of GABAergic input onto SPNs from infragranular SST+ interneurons precedes our previously reported reciprocal connection between these SST+ cells and L4 spiny stellate neurons during the L4 CPP (P4–9) (Marques-Smith et al., 2016) and then onto L2/3 pyramidal cells during the emergence of L4 to L2/3 feed-forward connections (Anastasiades et al., 2016; Bureau et al., 2004). Taken together, this evidence suggests that infragranular SST+ interneurons sequentially innervate thalamo-recipient layers through early postnatal life in S1BF.
 
-## Sparse thalamocortical input onto early postnatal Lpar1-EGFP SPNs in S1BF
+### Sparse thalamocortical input onto early postnatal Lpar1-EGFP SPNs in S1BF
 
 SPNs are thought to play an important role in early thalamic integration in primary sensory cortices. To assess the role that Lpar1-EGFP SPNs play in the early sensory circuit we first used electrical stimulation of the ventrobasal complex (VB) of the thalamus while recording from EGFP+ SPNs in acute in vitro thalamocortical slice preparation (Figure 7a). Electrical stimulation evoked excitatory postsynaptic currents (EPSCs) in the majority (76%) of SPNs recorded across the time window studied, although there was a drop in incidence between the P1–4 and P5–8 (chi-square test X2 (1, N = 56) = 5.364, p = 0.021) time windows (Figure 7b); an absence of thalamic input onto any given SPN was only recorded if TC-EPSCs were observed in other SPNs or layer four neurons in the same thalamocortical slice. We observed no antidromic potentials in recorded EGFP+ SPNs. Analysis of the amplitude of the minimal electrical stimulation EPSC (Figure 7c) identified a significant change in variance between these times but no difference in amplitude (p=0.08; two-tailed t-test, t = 1.92, df = 11.19). To further identify putative thalamocortical EPSCs (TC-EPSCs), we recorded the latency of the evoked EPSC, jitter (standard deviation in latency, ms), and amplitude for the minimal stimulation EPSC for 53 SPNs. All EPSCs with a latency > 10 ms and/or jitter > 1.0 ms (Figure 7d) were then excluded from our analysis leaving 32 SPNs that could be further divided into two populations based on 10–90% rise time and amplitude (Figure 7e): type 1 (n=9), large amplitude (55.3 pA ± SD 14.3), low jitter (0.20 ms ± SD 0.07), versus type 2 (n=23), small amplitude (14.9 mV ± SD 5.8), high jitter (0.41 ms ± SD 0.17) EPSCs (Figure 7f). Whether both populations represent TC-EPSCs (Gil et al., 1999; Luz et al., 2017) was unclear from our electrical stimulation of VB in part because both EPSC types conform to a previous criteria used to distinguish TC-EPSCs from antidromic cortico-thalamic EPSCs, namely that TC-EPSCs exhibit standard deviation in jitter < 1.0 ms (Rose and Metherate, 2005). However, thalamic connectivity could be as low as 17% if type 1 EPSCs recorded in SPNs represent true orthodromic TC-EPSCs, considerably lower than connectivity reported in previous studies of SP in early postnatal ages.
 
@@ -111,27 +111,198 @@ In recent years, optical approaches have extended our knowledge of the early cir
 
 ## Materials and methods
 
-## Animal husbandry and use
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male)</td>
+      <td>Tg(Lpar1-EGFP)GX193Gsat</td>
+      <td>GENSAT Project at Rockefeller University</td>
+      <td>MGI:4847204; transgene insertion GX193</td>
+      <td>Y Chromo- some linked</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, mixed sex)</td>
+      <td>Ssttm2.1(cre)Zjh/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 013044; RRID:IMSR_JAX:013044</td>
+      <td>Maintained in Butt lab on C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, mixed sex)</td>
+      <td>Olig3tm1(cre)Ynka</td>
+      <td>Prof. Yasushi Nakagawa University Minnesota</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, mixed sex)</td>
+      <td>Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze /J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 012569; RRID:IMSR_JAX:012569</td>
+      <td>Maintained in Butt lab on C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, mixed sex)</td>
+      <td>R26::P2x2r-EGFP (floxed-stop-rat P2x2 receptor)</td>
+      <td>Prof. Gero Miesenböck (Oxford)</td>
+      <td></td>
+      <td>Maintained in Butt lab on C57BL/6 background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken anti-GFP (polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab13970 RRID:AB_300798</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GABA (polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A2052, RRID:AB_477652</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea-pig anti-GABA (polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab17413 RRID:AB_443865</td>
+      <td>(1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Caspase three antibody, active (cleaved) form (polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>AB3623 RRID:AB_91556</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken, Alexa Fluor 488 (polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab150169 RRID:AB_2636803</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit, Alexa Fluor 546 (polyclonal)</td>
+      <td>Thermo-Fisher</td>
+      <td>A11035 RRID:AB_143051</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit, TMR red</td>
+      <td>Roche, Sigma-Aldrich</td>
+      <td>SKU: 12156792910; Lot #: 45197500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl; KCl; NaHCO3; NaH2PO4; MgCl2; CaCl2; K-gluconate; Li-GTP; Mg-ATP; HEPES; Gluconic acid; EGTA; SrCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>S7653 P4504 S6014 S3139 M2670 22,350–6 G4500 G5884 A9187 H3375 G1951 E4378 204463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MNI-caged glutamate</td>
+      <td>Tocris Bioscience UK</td>
+      <td>Cat. No.: 1490. Lot no.: 48A/206152; 50A/255070; 50A/220558; 50A225070; 51A/240237; 51A/243753; 52A/249897; 52A/251627</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMNPE-caged ATP</td>
+      <td>Life Technologies UK</td>
+      <td>A1049</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Sigma- Aldrich</td>
+      <td>B4261; Lot no. SLCB0219; SLBS5344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin, Alexa Fluor 568 conjugate</td>
+      <td>Thermo-Fisher</td>
+      <td>S11226 RRID:AB_2315774</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism Software</td>
+      <td>GraphPad Software</td>
+      <td>RRID:CR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/Fiji</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClamp 10</td>
+      <td>Molecular Devices</td>
+      <td>RRID:SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo-Fisher</td>
+      <td>D1306 RRID:AB_2629482</td>
+      <td>(1:1000)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal husbandry and use
 
 Animal care and experimental procedures were approved by the University of Oxford local ethical review committee and conducted in accordance with UK Home Office personal and project (70/6767; 30/3052; P861F9BB75) licenses under the Animals (Scientific Procedures) 1986 Act. The following mouse lines were used: Lpar1-EGFP (Tg(Lpar1-EGFP)GX193Gsat), SST-ires-Cre (Ssttm2.1(cre)Zjh/J), Olig3 Cre (Olig3tm1(cre)Ynka), Ai32 (Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J), and R26::P2x2R-EGFP (floxed-stop-rat P2x2 receptor). All experiments were performed blind to the mouse genotype with the exception of Lpar1-EGFP transgene, which is Y chromosome linked (Hoerder-Suabedissen and Molnár, 2013). The date of birth was designated postnatal day (P)0.
 
-## Acute in vitro slice preparation
+### Acute in vitro slice preparation
 
 Acute brain slices were prepared as previously described (Marques-Smith et al., 2016). Male mice (P1–8) were anesthetised with 4% isoflurane in 100% O2 and decapitated; the cerebral cortex was quickly dissected in ice-cold, oxygenated (95% O2/5% CO2) ACSF of the following composition (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 1.25 NaH2PO4, 1 MgCl2, 2 CaCl2, 20 glucose (300–310 mOsm; all chemicals were purchased from Sigma unless otherwise stated). Coronal and thalamocortical slices (350–400 µm) including the primary somatosensory barrel cortex (S1BF) were cut in ice-cold ACSF through a vibratome (Vibratome 3000 Plus; The Vibratome Company) and allowed to recover in ACSF at room temperature (RT) for at least 1 hr prior to electrophysiological recordings. Coronal slices were obtained by cutting the brain at an angle perpendicular to S1BF; thalamocortical slices were obtained according to established procedures with the angle varied according to developmental age (Marques-Smith et al., 2016; Agmon and Connors, 1991).
 
-## Whole-cell patch-clamp electrophysiology
+### Whole-cell patch-clamp electrophysiology
 
 Slices containing S1BF were selected for electrophysiology experiments if they showed good preservation of the radial structure, as assessed by the presence of layer (L)5 pyramidal neuron apical dendrites extending to supragranular layers. Lpar1-EGFP SPNs were readily distinguished from Lpar1-EGFP GABAergic interneurons based on their localisation in a thin layer of cells located between the cortical L6 and the underlying white matter, identified as the SP. SP could be detected as a thin, compact cell layer that could be distinguished from Layer 6a and white matter. Cells were selected ~50 µm below the slice surface and targeted for patch-clamp recordings guided through infrared-differential interference contrast (IR-DIC) microscopy using a 40× water-immersion objective. Whole-cell patch-clamp electrophysiological recordings were performed at RT using a Multiclamp 700B amplifier and Digidata 1440A digitizer (Molecular Devices). Patch pipettes were obtained from borosilicate glass microelectrodes (6–9 MΩ; Harvard Apparatus, UK), pulled through a PC-10 puller (Narishige, Japan). Electrodes were filled with either a K-based (128 mM K-gluconate, 4 mM NaCl, 0.3 mM Li-GTP, 5 mM Mg-ATP, 0.1 mM CaCl2, 10 mM HEPES; pH 7.2 with KOH; 280–290 mOsm) or Cs-based intracellular solution (100 mM gluconic acid, 0.2 mM EGTA, 5 mM MgCl2, 40 mM HEPES, 2 mM Mg-ATP, 0.3 mM Li-GTP; pH 7.2 with CsOH; 280–290 mOsm). Biocytin (0.3%) was included in the intracellular solution to allow the morphological reconstruction of recorded neurons. To study EPSCs, SPNs were held at a holding potential (Vh) of −60 mV; IPSCs were recorded by voltage-clamping the cell near the equilibrium potential for glutamate (EGlut). For mapping of IPSC input, EGlut was found empirically by uncaging glutamate in the proximity of the recorded cell and tuning the Vh until little or no net laser-induced direct postsynaptic current was observed. For optogenetic experiment, Vh was set to 0 mV (corrected for calculated liquid junction potential of ~13 mV for the Cs-based intracellular solution). All recordings were sampled at 20 kHz and low-pass filtered online at 0.5 kHz. Cell input and series resistance (Rin and Rs) were monitored throughout the duration of the recording without applying compensation; recordings were discarded when Rs exceeded 20% of its initial value.
 
 Cells patched with the K-based intracellular solution were initially held in current-clamp configuration to record their intrinsic electrophysiological profile prior to LSPS experiments. Intrinsic electrophysiological properties were assessed using both depolarising and hyperpolarising current steps (500 ms) of increasing amplitude applied from resting membrane potential; step size was adjusted based on the input resistance of the cell.
 
-## Laser-scanning photostimulation: methods and analysis
+### Laser-scanning photostimulation: methods and analysis
 
 Laser-scanning photostimulation (LSPS) was performed according to the method previously described (Anastasiades and Butt, 2012; Anastasiades et al., 2018). This optical technique allows to stimulate neurons in a small portion of cortical tissue (~50 µm) while recording the postsynaptic current in the target neurons. Thus, the location of any presynaptic neurons showing functional connectivity to the recorded one can be inferred by the location of the optical stimulation. Prior to LSPS, slices were incubated for a minimum of 6 mins. with high-divalent cation (HDC) ACSF of similar composition to the normal ACSF but with increased concentration (4 mM) of MgCl2 and CaCl2 and supplemented with 100 µM MNI-caged glutamate (Tocris Bioscience, UK) for glutamate uncaging experiments. We perform LSPS experiments in HDC ACSF solution to reduce polysynaptic transmission and the occurrence of spontaneous synaptic currents. Mapping of cell-type-selective inputs were performed with an optogenetic strategy previously described (Anastasiades et al., 2016). In brief, the P2x2 receptor was conditionally expressed into SST+ interneurons and selectively stimulated by laser uncaging of DMNPE-caged ATP (100 µM, Life Technologies, UK). LSPS was performed using an ultraviolet (UV) laser (DSPL-355/30) and a galvanometer targeting system (UGA-42, Rapp Optoelectronic GmbH, Germany) focused through a 10× Olympus objective. The stimulation grid was organised into 17 × 9 target spots (~50 µm spatial resolution). Long-duration (100 ms), low-power (<2 mW at sample plane) laser pulses were fired in a pseudo-random order at 1–2 Hz frequency. In order to cover the whole extent of the cortical column, two to three LSPS grids were sequentially employed and properly aligned and averaged offline during data analysis. For each individual LSPS grid, a minimum of three runs were obtained and averaged.
 
 Electrophysiological current traces were analysed with Minianalysis 6.0 (Synaptosoft Inc) to extrapolate amplitude and onset time of all IPSCs or EPSCs recorded. Direct responses to glutamate were identified by their short latency and slow onset kinetics (time to peak ~100 ms) and excluded from subsequent analysis. Only EPSCs characterised by fast onset kinetics were considered for further analysis if they occurred within the putative detection window for monosynaptic events, determined according to previously published criteria (Anastasiades and Butt, 2012). For each laser spot of the grid, all events whose onset fell within this detection window were summed and then averaged with values from different runs of the same experiment. Final heatmaps were built through a customised Matlab (Mathworks, USA) script. In order to allow the reconstruction of the layer profile on the input map, a photomicrograph of the grids relative to the slice preparation was acquired, and layer boundaries were manually determined. Normalised heatmaps were generated by dividing the value in each spot by the sum of all pixels. Linear profiles (layer and columnar) were obtained by summing all values for each line in individual heatmaps. Average maps were obtained by aligning each individual map to the SP/Layer 6a boundary and averaging corresponding pixels.
 
-## In vitro optogenetics stimulation
+### In vitro optogenetics stimulation
 
 Optogenetic experiments were performed by conditionally expressing Channelrhodopsin 2 (ChR2; via the Ai32 reporter allele) in SST+ interneurons (using SST-ires-Cre) or thalamic relay neurons (using Olig3 Cre). Wide-field light stimulation was delivered through a 40× objective to focus blue (470 nm LED, CoolLED, UK) light onto the recorded cell. For each recorded SPN, two light stimulation duration pulses (1 and 10 ms) were employed at multiple LED power intensities to ensure that the minimal stimulation and full range of activation was captured irrespective of developmental age. For each LED pulse duration and intensity, five pulses were administered at a 20 s interval and the evoked postsynaptic current (PSC) recorded.
 
@@ -139,20 +310,20 @@ Data analysis was performed through a customised Matlab script. Light-evoked PSC
 
 In a subset of experiments, recordings of light-evoked IPSCs from SST+ interneurons were performed in a modified HDC ACSF containing 4 mM SrCl2 to replace CaCl2. Due to the slow onset of its effects, slices were bathed in Sr2+-containing HDC for a minimum of 20 min before light stimulation and data collection (Gil et al., 1999).
 
-## Electrical stimulation of thalamic afferents
+### Electrical stimulation of thalamic afferents
 
 Thalamocortical (TC) afferent input to SPNs was tested using a bipolar microelectrode (Harvard Apparatus, UK) placed either in the ventrobasal nucleus (VB) of the thalamus or the internal capsule (IC) and connected to a current isolator (DS3, Digitimer Ltd, UK). The strength of the electrical stimulation was varied to find the minimal stimulation value (Raastad et al., 1992; Isaac et al., 1997), corresponding to EPSC evoked on ~50% of trials. The interstimulus interval was set at either 30 or 60 s depending on developmental age. TC-EPSCs were considered if calculated standard deviation (jitter) of the EPSC latency was <1 ms at minimal stimulation.
 
-## Morphological reconstruction of recorded cells
+### Morphological reconstruction of recorded cells
 
 Following electrophysiological assessment, slices containing biocytin-filled cells were fixed in 4% paraformaldehyde (PFA; diluted in phosphate-buffered saline, PBS) overnight at 4°C. Slices were then rinsed in PBS and incubated in 0.05% PBST containing Streptavidin-Alexa568 (1:500; Molecular Probes, USA) for 48–72 hr at 4°C. Slices were then washed 3× 10 min in PBS and mounted on histology slides with Fluoromount (Sigma) mounting medium.
 
 Slices were imaged through an Olympus FV1200 confocal microscope equipped with 10× or 20× dry objective. Z-stack images were acquired in order to maximise imaging of all neuronal processes containing biocytin to allow the offline morphological reconstruction. Image analysis was performed with Fiji-ImageJ software (NIH): confocal images of filled cells were selected for morphological reconstruction, performed using the Simple Neurite Tracer plugin. Dendrite directionality was calculated using the Directionality plugin implemented in Fiji-ImageJ onto reconstructed dendritic morphologies.
 
-## Immunohistochemistry and TUNEL stain
+### Immunohistochemistry and TUNEL stain
 
 Mice were terminally anesthetised with pentobarbital (90 mg/kg) and transcardially perfused with 4% PFA in PBS. Dissected brains were incubated in PFA for 2 hr at 4°C and then cryoprotected in 20% sucrose for 24 hr at 4°C. Brains were then embedded into O.C.T. (VWR), frozen on dry ice, and stored at −80°C. Each brain was sectioned into 14–16 μm thick slices and mounted on histology slides; slides were stored at −20°C. Slides selected for immunohistochemistry were air-dried overnight at RT and washed 3× 10 min at RT in PBS. Slides were then permeabilised for 30 min in 0.5% PBST (0.5% Triton X-100 in PBS) and incubated in blocking solution (PBST 0.1%, Normal Goat Serum 5%) for 1 hr at RT. Primary antibodies used were chicken anti-GFP (ab13970, Abcam, dilution 1:250), rabbit anti-GABA (A2052, Sigma, 1:1000), guinea-pig anti-GABA (ab17413, Abcam, 1:1500), and rabbit anti-Caspase-3 (AB3623, Merck Millipore, 1:200). Slides were incubated in primary antibody solution overnight at 4°C. Slides were then washed 3× 10 min at RT in PBS and subsequently incubated in secondary antibody (Goat anti-Chicken IgG Alexa Fluor 488 conjugate, Goat anti-Rabbit IgG Alexa Fluor 568 conjugate; diluted in blocking solution 1:1000) for 2 hr at RT. Finally, the slides were washed in PBS, counterstained with DAPI (diluted 1:1000 in PBS) for 3 min at RT, and mounted with Fluoromont (Sigma). For the TUNEL stain, slides were processed for GFP immunohistochemistry as above, and then the TUNEL stain was applied as per the supplier (Roche, SKU: 12156792910) instructions. Slides were then counterstained with DAPI and mounted as above. All slides were imaged through an Olympus FV1200 confocal microscope.
 
-## Statistical analysis
+### Statistical analysis
 
 All results are expressed as mean ± standard error of the mean; n indicates the number of cells recorded. Statistical analysis was performed with Prism (GraphPad, USA). Normality and equal variance tests were run to direct the appropriate statistical test choice for comparison of parametric versus non-parametric datasets. Multiple groups were compared with a two-way ANOVA test; post hoc multiple comparisons were performed with the Holm–Sidak method. Two parametric groups were compared with Student’s t-test whereas two non-parametric groups were compared with the Mann–Whitney rank sum test. Finally, cumulative frequency distributions were compared with the two-sample Kolmogorov–Smirnov test. Statistical significance was evaluated at p≤0.05; for the Kolmogorov–Smirnov test, p≤0.01 was considered statistically significant.

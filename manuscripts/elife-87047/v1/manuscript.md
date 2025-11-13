@@ -8,7 +8,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Structural Virology Section, Laboratory of Infectious Diseases, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States
+1. Structural Virology Section, Laboratory of Infectious Diseases, National Institute of Allergy and Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 

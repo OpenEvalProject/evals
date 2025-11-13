@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/03qxff017 Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel Canada, the Hebrew University-Hadassah Medical School Jerusalem Israel
+1. Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Department of Developmental Biology and Cancer Research, Institute for Medical Research Israel Canada, the Hebrew University-Hadassah Medical School Jerusalem Israel ([ROR:03qxff017](https://ror.org/03qxff017))
 
 † Corresponding author
 
@@ -66,11 +66,11 @@ Illuminating the discrepancy between the dying cells' DNA flux and the measured 
 
 ## Materials and methods
 
-## Cellular turnover
+### Cellular turnover
 
 Normal cellular turnover data for all cell types except hepatocytes and megakaryocytes were obtained from estimates provided by Sender and Milo, 2021. We estimated the cellular turnover of megakaryocytes in two ways. First, based on the number of megakaryocytes in the bone marrow (Harrison, 1962; Noetzli et al., 2019) and a maturation time of around five days (Machlus and Italiano, 2013). Second, using the production of platelets (Harker and Finch, 1969) and an average number of platelets produced per megakaryocyte (Trowbridge et al., 1984; Kaufman et al., 1965; Harker and Finch, 1969). Cellular turnover of hepatocytes was calculated based on Heinke et al., 2022 by combining estimates for the number of cells and the death rate for the different ploidy groups (Source data 1).
 
-## Tissue-specific cfDNA concentration
+### Tissue-specific cfDNA concentration
 
 Our estimates for total plasma cfDNA concentration were derived from the median concentration observed in individuals below 47 years of age (n=52), as reported by Meddeb et al., 2019. To complement this, we integrated our total concentration estimates with data on the proportion of cfDNA originating from specific cell types, leveraging a plasma methylome deconvolution method described by Loyfer et al., 2023, which did not provide absolute quantities of cfDNA.
 
@@ -78,23 +78,27 @@ The overall plasma cfDNA concentration was multiplied by a factor of 1.5 to acco
 
 To quantify the uncertainty associated with our cfDNA concentration estimates, we employed a methodology that considered several sources of variation. First, we incorporated the confidence interval of the median concentration reported by Meddeb et al. as a measure of uncertainty. Additionally, we accounted for individual-specific and analytic variations based on the study by Madsen et al., 2019, encompassing factors such as the precise timing of measurements and assay precision. These sources of uncertainty were combined using the approach outlined below.
 
-## Estimation of the potential DNA flux
+### Estimation of the potential DNA flux
 
-We estimated the potential cfDNA plasma levels if all the DNA from the dying cells had reached the bloodstream. Our estimate utilized the calculated cellular turnover rate and data regarding the ploidy of the cells, the volume of blood plasma, and the half-life of cfDNA molecules in the blood. For each cell type, we defined the cellular turnover in units of cells per day dc and the ploidy (average number of sets of chromosomes) pc . We used blood plasma volume Vplasma=3L (Valentin, 2002), the mean lifespan of cfDNA molecules in the blood τ=half-lifeln(2)=0.7h (Lo et al., 1999; Yao et al., 2016; Diehl et al., 2008; To et al., 2003) and haploid genome mass mh=3.2⋅10-12g (Piovesan et al., 2019).
+We estimated the potential cfDNA plasma levels if all the DNA from the dying cells had reached the bloodstream. Our estimate utilized the calculated cellular turnover rate and data regarding the ploidy of the cells, the volume of blood plasma, and the half-life of cfDNA molecules in the blood. For each cell type, we defined the cellular turnover in units of cells per day $d_{c}$ and the ploidy (average number of sets of chromosomes) $p_{c}$ . We used blood plasma volume $V_{plasma}=3L$ (Valentin, 2002), the mean lifespan of cfDNA molecules in the blood $\tau=\frac{half-life}{ln(2)}=0.7h$ (Lo et al., 1999; Yao et al., 2016; Diehl et al., 2008; To et al., 2003) and haploid genome mass $m_{h}=3.2⋅10^{-12}g$ (Piovesan et al., 2019).
 
-The expected level of cfDNA levels was calculated according to the formula:(1)Xc=dc⋅pc⋅⋅τVplasma
+The expected level of cfDNA levels was calculated according to the formula:
 
-where Xc is given in units of Genome equivalents/ml (Units of g/ml could be obtained by multiplication by mh).
+$$
+X_{c}=\frac{d_{c}⋅p_{c}⋅⋅\tau}{V_{plasma}}
+$$
+
+where $X_{c}$ is given in units of Genome equivalents/ml (Units of g/ml could be obtained by multiplication by $m_{h}$).
 
 Intuitively, the potential cfDNA level is obtained by calculating the amount of DNA in dying cells at a given moment (defined by the mean lifespan of cfDNA in plasma) when considering the total volume of the plasma.
 
 Ultimately, we compared the measured cfDNA levels to the potential DNA flux estimates to determine the DNA fraction reaching the blood.
 
-## Uncertainties estimate
+### Uncertainties estimate
 
-Standard error was collected or calculated for each value used. In several cases, such as the half-life of plasma cfDNA, the value’s uncertainty was big and best described as a multiplication factor of error (i.e. the uncertainty of a variable with lognormal distribution). To facilitate error propagation, we transformed all values and corresponding errors to be expressed in terms of multiplication error by fitting a lognormal distribution. Thus, we modeled the uncertainty around the median value as a log-normally distributed random variable x with a with a shape parameter s=ln(fx,), where fx is the multiplication error factor. For example, an fx=2 means that there is a 68% probability (one sigma) that the actual value of x is between half and double the given value. The shape parameter describes the standard error of the log-transformed random variable, defined as ln(x), and is distributed normally by definition.
+Standard error was collected or calculated for each value used. In several cases, such as the half-life of plasma cfDNA, the value’s uncertainty was big and best described as a multiplication factor of error (i.e. the uncertainty of a variable with lognormal distribution). To facilitate error propagation, we transformed all values and corresponding errors to be expressed in terms of multiplication error by fitting a lognormal distribution. Thus, we modeled the uncertainty around the median value as a log-normally distributed random variable $x$ with a with a shape parameter $s=ln(f_{x,})$, where $f_{x}$ is the multiplication error factor. For example, an $f_{x}=2$ means that there is a 68% probability (one sigma) that the actual value of $x$ is between half and double the given value. The shape parameter describes the standard error of the log-transformed random variable, defined as $ln(x)$, and is distributed normally by definition.
 
-The multiplication of two lognormal variables x and y also follows a log-normal distribution, with a shape parameter equal to the square root of the sum of the squares of the original shape factors. Therefore, to propagate the error of the product (x⋅y), we used the formula: fx⋅y=eln(fx)2+ln(fy)2.
+The multiplication of two lognormal variables $x$ and $y$ also follows a log-normal distribution, with a shape parameter equal to the square root of the sum of the squares of the original shape factors. Therefore, to propagate the error of the product ($x⋅y$), we used the formula: $f_{x⋅y}=e^{\sqrt{ln(f_{x})^{2}+ln(f_{y})^{2}}}$.
 
 We used bootstrapping to calculate error propagation for the summation of variables with log-normal uncertainty (lacking an analytical formula for error propagation). Specifically, we drew 1000 samples from the distribution that described the uncertainties of the values.
 

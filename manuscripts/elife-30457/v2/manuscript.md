@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.30457.001 Neuroligins are postsynaptic adhesion molecules that are essential for postsynaptic specialization and synaptic function. But the underlying molecular mechanisms of neuroligin functions remain unclear. We found that Drosophila Neuroligin 1 (DNlg1) regulates synaptic structure and function through WAVE regulatory complex (WRC)-mediated postsynaptic actin reorganization. The disruption of DNlg1, DNlg2, or their presynaptic partner neurexin (DNrx) led to a dramatic decrease in the amount of F-actin. Further study showed that DNlg1, but not DNlg2 or DNlg3, directly interacts with the WRC via its C-terminal interacting receptor sequence. That interaction is required to recruit WRC to the postsynaptic membrane to promote F-actin assembly. Furthermore, the interaction between DNlg1 and the WRC is essential for DNlg1 to rescue the morphological and electrophysiological defects in dnlg1 mutants. Our results reveal a novel mechanism by which the DNrx-DNlg1 trans-synaptic interaction coordinates structural and functional properties at the neuromuscular junction.
+Neuroligins are postsynaptic adhesion molecules that are essential for postsynaptic specialization and synaptic function. But the underlying molecular mechanisms of neuroligin functions remain unclear. We found that Drosophila Neuroligin 1 (DNlg1) regulates synaptic structure and function through WAVE regulatory complex (WRC)-mediated postsynaptic actin reorganization. The disruption of DNlg1, DNlg2, or their presynaptic partner neurexin (DNrx) led to a dramatic decrease in the amount of F-actin. Further study showed that DNlg1, but not DNlg2 or DNlg3, directly interacts with the WRC via its C-terminal interacting receptor sequence. That interaction is required to recruit WRC to the postsynaptic membrane to promote F-actin assembly. Furthermore, the interaction between DNlg1 and the WRC is essential for DNlg1 to rescue the morphological and electrophysiological defects in dnlg1 mutants. Our results reveal a novel mechanism by which the DNrx-DNlg1 trans-synaptic interaction coordinates structural and functional properties at the neuromuscular junction.
 
 ## Introduction
 
@@ -39,29 +39,49 @@ In this study, we reveal a significant role of DNlg1 in the regulation of the ac
 
 ## Results
 
-## DNlg1 and DNlg2 positively regulate postsynaptic F-actin assembly
+### DNlg1 and DNlg2 positively regulate postsynaptic F-actin assembly
 
 To explore the relationship between neuroligins and the postsynaptic actin cytoskeleton, we analyzed the level of F-actin at the NMJ in Drosophila neuroligin mutants. The Drosophila body-wall muscles are innervated by numerous motor neurons that branch over the muscles and form stereotypic NMJ terminal boutons, each containing dozens of glutamatergic synapses (Prokop, 2006). F-actin is usually concentrated around the postsynaptic site of the bouton, which can be visualized by using fluorophore-conjugated phalloidin. Consistent with previous studies (Coyle et al., 2004), F-actin in the wild type (WT) NMJ was highly enriched at the postsynaptic sites, displaying a diffuse meshwork-like appearance (Figure 1A). In the dnlg1 and dnlg2 mutant NMJs, the amount of F-actin was dramatically reduced (Figure 1B,C and F). The amount of α-Spectrin, an actin cytoskeleton-associated protein, was similarly reduced in the mutants (Figure 1B,C and F) Mosca et al., 2012. In addition to the lower fluorescence intensity, the dnlg1 mutants had a significantly less relative area of F-actin distribution [ratio of F-actin area/horseradish peroxidase (HRP)-labeled area; Figure 1B and E]. The alterations in F-actin and α-Spectrin were specific, as they were not accompanied by changes in the levels of other synaptic proteins, including the postsynaptic scaffolding protein DLG (Figure 1—figure supplement 1). Those results suggested that DNlg1 and DNlg2 promote F-actin assembly at NMJs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Confocal images of (A) WT, (B) dnlg1 mutant (dnlg1ex1.9/ex2.3), (C) dnlg2 mutant (dnlg2KO70/KO70), and (D) dnlg1; dnlg2 double mutant (dnlg2KO70/KO70; dnlg1ex1.9/ex2.3) third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green), and anti-HRP (blue). (E) Summary graph showing a significant decrease in the relative area of F-actin in dnlg1 single mutants and dnlg1; dnlg2 double mutants compared with WT. Note that the relative F-actin area is normal in the dnlg2 mutants. (F) Summary graph showing the relative fluorescence intensity of F-actin and α-Spectrin in various genotypes. Note that the relative fluorescence intensity of F-actin and α-Spectrin is significantly decreased in the dnlg1 single mutants, dnlg2 single mutants and dnlg1; dnlg2 double mutants. The data in (E) and (F) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between WT and the indicated genotypes. *p<0.05; ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated groups. #p<0.05; n.s., not significant. Scale bars: (A–D) 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Confocal images of (A) WT, (B) dnlg1 mutant (dnlg1ex1.9/ex2.3), and (C) dnlg2 mutant (dnlg2KO17/KO70) third instar larvae NMJ type Ib boutons labeled with anti-DLG (red) and anti-HRP (green). The distribution and protein level of DLG are normal in the dnlg1 and dnlg2 mutants compared with those in the WT control. (D) Statistical analysis of the relative DLG fluorescent intensity in the three tested lines. The data in (D) are shown as mean ± SEM; n represents the number of NMJ samples analyzed; n.s., not significant. Scale bars: (A–C) 10 μm.
+
 Because the dnlg1 and dnlg2 mutants both showed similar defects in postsynaptic F-actin organization, we attempted to determine the relationship between DNlg1 and DNlg2 in the regulation of F-actin assembly by generating dnlg1; dnlg2 double mutants. We found that these double mutants showed defects similar to those of the dnlg1 single mutants: the amount of F-actin/α-Spectrin and the relative F-actin area were declined compared with those in the WT but were comparable to those in the dnlg1 single mutants (Figure 1D,E and F). Those results suggested that DNlg1 and DNlg2 regulate postsynaptic F-actin assembly, possibly through a shared pathway.
 
-## DNlg1 and DNlg2 mediate the effect of DNrx on postsynaptic actin
+### DNlg1 and DNlg2 mediate the effect of DNrx on postsynaptic actin
 
 Neurexins are the presynaptic partners of neuroligins. Drosophila has only one genuine neurexin homolog: dnrx (Li et al., 2007; Zeng et al., 2007). Previous work has shown that stable expression of DNrx and DNlg1 at the synapse is dependent on the interaction between those two proteins. Thus, in dnrx or dnlg1 mutants, the localization and level of DNlg1 or DNrx, respectively, are significantly impaired (Banovic et al., 2010; Owald et al., 2012; Banerjee et al., 2017). Furthermore, genetic assays indicated that DNrx and DNlg2 regulate bouton growth through a shared pathway (Chen et al., 2012). We therefore examined whether DNrx also plays a role in postsynaptic actin regulation. To that end, we analyzed postsynaptic F-actin in dnrx mutants and found that both the amount and the distribution area of F-actin and α-Spectrin were significantly decreased in the mutants (Figure 2A,B,G and H). Those changes could be rescued by presynaptic expression, but not postsynaptic expression, of DNrx (Figure 2C,D,G and H).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig2-v2.jpg)
 
-**Figure 2.:** (A–F) Confocal images of (A) WT, (B) dnrx mutant (dnrx), (83/174C) OK6 rescue (OK6-Gal4/UAS-DNrx;dnrx), (83/174D) C57 rescue (UAS-DNrx/+,dnrx,174/dnrx83C57-Gal4), (E) dnlg1; dnrx double mutant (dnrx,83dnlg1/ex2.3dnrx,174dnlg1), and (ex1.9F) dnlg2; dnrx double mutant (dnlg2) third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green), and anti-HRP (blue). (KO70/K070;dnrx83/174G) Summary graph showing a significant decrease in the relative F-actin area in the dnrx mutants, C57 rescue, dnlg1; dnrx double mutants, and dnlg2; dnrx double mutants compared with the WT. (H) Summary graph showing a significant decrease in the relative fluorescence intensity of F-actin and α-Spectrin in the dnrx mutants, C57 rescue, dnlg1; dnrx double mutants, and dnlg2; dnrx double mutants compared with the WT. The data in (G) and (H) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. *p<0.05; **p<0.01; ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes, #p<0.05; ###p<0.001; n.s., not significant. Scale bars: (A–F) 5 μm. 10.7554/eLife.30457.007Figure 2—source data 1.Figure 2G and H.
+**Figure 2.:** (A–F) Confocal images of (A) WT, (B) dnrx mutant (dnrx83/174), (C) OK6 rescue (OK6-Gal4/UAS-DNrx;dnrx83/174), (D) C57 rescue (UAS-DNrx/+,dnrx174/dnrx83,C57-Gal4), (E) dnlg1; dnrx double mutant (dnrx83,dnlg1ex2.3/dnrx174,dnlg1ex1.9), and (F) dnlg2; dnrx double mutant (dnlg2KO70/K070;dnrx83/174) third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green), and anti-HRP (blue). (G) Summary graph showing a significant decrease in the relative F-actin area in the dnrx mutants, C57 rescue, dnlg1; dnrx double mutants, and dnlg2; dnrx double mutants compared with the WT. (H) Summary graph showing a significant decrease in the relative fluorescence intensity of F-actin and α-Spectrin in the dnrx mutants, C57 rescue, dnlg1; dnrx double mutants, and dnlg2; dnrx double mutants compared with the WT. The data in (G) and (H) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. *p<0.05; **p<0.01; ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes, #p<0.05; ###p<0.001; n.s., not significant. Scale bars: (A–F) 5 μm.
 
 The similar changes in postsynaptic F-actin in dnrx, dnlg1, and dnlg2 mutants suggested that the postsynaptic actin cytoskeleton is regulated by the trans-synaptic interaction between DNrx and DNlg1 and/or that between DNrx and DNlg2. To test that possibility, we generated dnlg1; dnrx and dnlg2; dnrx double mutants. The double mutants showed degrees of F-actin and α-Spectrin defects similar to those in the dnrx, dnlg1, and dnlg2 single mutants (Figure 2E–H). Those results meant that presynaptic DNrx regulates the postsynaptic actin cytoskeleton via its interaction with DNlg1 and/or DNlg2.
 
-## DNlg1, but not DNlg2 or DNlg3, binds to the WRC via its conserved WIRS motif
+### DNlg1, but not DNlg2 or DNlg3, binds to the WRC via its conserved WIRS motif
 
 Recent work on the regulation of WAVE function indicates that the intracellular tails of diverse membrane proteins, including protocadherins, G-protein-coupled receptors, netrin receptors, and ion channels, that contain the WIRS consensus motif can bind to the surface of the WRC to regulate the actin cytoskeleton (Chen et al., 2014). That binding property is conserved in metazoans, including Caenorhabditis elegans, Drosophila, and mammals. Using the conserved WIRS sequence, Φ-x-T/S-F-x-x (Φ = preference for bulky hydrophobic residues; x = any residue), we identified a potential WIRS motif (FQSFEA) at the cytoplasmic tail of DNlg1 (Figure 3A and Figure 3—figure supplement 1). We did not find any such motifs in the cytoplasmic tails of the other Drosophila neuroligins (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig3-v2.jpg)
+
+**Figure 3.:** (A) Amino acid sequence alignment of DNlg1, C. elegans SYG-1 (cSYG-1), human PCDH10 (hPCDH10), and human Neuroligin 1 (hNeuroligin-1). The WIRS motifs are highlighted in yellow. (B) Lysates of WT fly brains were incubated with GST and GST-fused cytoplasmic domains of DNlg1 (GST-DNlg1-C), DNlg2 (GST-DNlg2-C), and DNlg3 (GST-DNlg3-C), respectively. The proteins pulled down with the GST or GST-fused proteins were analyzed by western blots using anti-SCAR antibody. Endogenous WRC was retained from the protein lysate by immobilized GST-DNlg1-C, but not by GST, GST-DNlg2-C, or GST-DNlg3-C. GST and GST-fused proteins were detected by Coomassie Blue staining. (C) Western blots showing that endogenous WRC was retained from fly-head lysates by immobilized GST-DNlg1-C, but not by the mutant forms of the WIRS motif GST-DNlg1-CF-A (F changed to A at the first amino acid residue in the WIRS motif) and GST-DNlg1-CSF-AA (SF changed to AA at the third and fourth amino acid residues in the WIRS motif). GST and GST-fused proteins were detected by Coomassie Blue staining. (D–H) Confocal images of (D) WT, (E) OK >SCAR RNAi (OK6-Gal4/+; UAS-SCAR RNAi/+), (F) C57 >SCAR RNAi (C57-Gal4/+; UAS-SCAR RNAi/+), (G) dnlg1 mutant (dnlg1ex1.9/ex2.3), and (H) dnlg2 mutant (dnlg2KO70/KO17) third instar larvae NMJ type Ib boutons labeled with anti-SCAR (green) and anti-HRP (red). The majority of SCAR protein was docked on the postsynaptic site. The loss of DNlg1 or DNlg2 caused a reduction in the level of SCAR. Line profile analyses show the distribution and intensity fluctuation of SCAR and HRP in each genotype. Dotted white lines indicate the regions analyzed in the line profile analysis. The directions are indicated by white arrows. Yellow arrow heads indicate diffused SCAR immunostaining signals in the dnlg1 mutants. (I) Summary graphs of the relative fluorescence intensity of SCAR signals in the indicated genotypes. (J–L) Low-density culture of (J) control S2 cells and (K) cells expressing DNlg1-EGFP or (L) the WIRS mutant form SF-AA (DNlg1SF-AA–EGFP) labeled with anti-SCAR and anti-GFP. SCAR was distributed throughout the cytoplasm of control S2 cells but was highly enriched at or near the cell membrane in the cells expressing DNlg1-EGFP, but not in those expressing DNlg1SF-AA-EGFP. Line profile analyses show that WT DNlg1, but not DNlg1SF-AA, induced the recruitment of SCAR to the plasma membrane and caused the co-localization of DNlg1 and SCAR. Dotted white lines indicate the regions analyzed in the line profile analysis. The directions are indicated by white arrows. (M) The ratio of SCAR intensity at the plasma membrane to that within the cytoplasm was calculated to indicate the recruitment of SCAR to the plasma membrane. A summary graph shows that WT DNlg1, but not DNlg1SF-AA, induced the recruitment of SCAR to the plasma membrane. The data in (I) and (M) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. **p<0.01; ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes, ###p<0.001. Scale bars: (D–H) 5 μm, (J–L) 5 μm. A. U., artificial unit.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sequence analysis of neuroligins from human, mouse, Drosophila, and C.elegans shows that WIRS is prevalent in neuroligins, especially in mammalian neuroligins. Neuroligin structures are indicated, and their WIRS motifs are marked if they have the motif. The WIRS sequence is also shown with the core amino acids highlighted in red color. (B) Sequence alignment of C termini of human and mouse neuroligins shows that Nlg1, Nlg3, and Nlg4 (Nlg4-X and Nlg4-Y) are more similar to each other than to Nlg2. Note that mouse Nlg4 is less conserved and was previously identified as an Nlg-like protein. The WIRS motif is highlighted by a red, dotted rectangle. Note that a core amino acid in the WIRS motif is mutated to P in Nlg2 and thus disrupts the property of WIRS.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) S2 cells were transfected with control siRNA (Ctr-siRNA) or SCAR siRNA or for 3 days, and the resulting lysates were subjected to western blots with anti-SCAR antibody, using tubulin as a loading control and nontransfected S2 cells as a positive control. (B) Quantitative analysis of the SCAR level in (A). (C) Same as (A); nontransfected and transfected cells were immunostained with anti-SCAR antibody (red) and DAPI (blue). Note that siRNA foci were labeled with FAM (carboxyfluorescein) to indicate transfection. (D) Quantitative analysis of the SCAR intensity in (C). The data in (B) and (D) are shown as mean ± SEM; n represents the number of replicate experiments in (B) and the number of cells analyzed in (D); asterisks indicate significant differences between the WT and the indicated genotypes. ***p<0.001; n.s., not significant. Scale bar: (C) 5 μm.
+
 To determine whether the cytoplasmic tail of DNlg1 can bind to the WRC, we performed GST pull-down assays by incubating GST proteins fused to the cytoplasmic tail of DNlg1, DNlg2, or DNlg3 with Drosophila brain-protein lysates. As shown in Figure 3B, the GST fusion protein containing the cytoplasmic tail of DNlg1, but not those containing the tail of DNlg2 or DNlg3, was able to pull down the WRC component of the lysates. To further confirm that the WIRS motif in DNlg1 was responsible for the interaction with the WRC, we generated two mutant fusion proteins with altered WIRS motifs: GST-DNlg1-CF-A and GST-DNlg1-CSF-AA. As shown in Figure 3C, neither of the mutant fusion proteins could pull down the WRC, indicating that the WIRS motif in the DNlg1 cytoplasmic tail is indispensable for DNlg1 to interact with the WRC.
 
-## DNlg1 recruits WRC to the postsynaptic membrane
+### DNlg1 recruits WRC to the postsynaptic membrane
 
 DNlg1 is a postsynaptic membrane protein, so the next question was whether WRC could be recruited to the postsynaptic membrane via its interaction with DNlg1. To address that question, we first sought to determine the WRC expression pattern at the NMJ. We used an antibody against SCAR, a key WRC component, to label the NMJ boutons. As shown in Figure 3D, bouton-specific staining was clearly visible. To determine whether WRC is expressed in the presynaptic site and/or the postsynaptic site, we utilized the Gal4/upstream activating sequence (UAS) system in combination with a transgene-mediated RNA interference (RNAi) method to knock down endogenous SCAR specifically in either presynaptic cells or postsynaptic cells. As shown in Figure 3E,F and I, presynaptic knockdown by OK6-Gal4 did not alter the intensity of SCAR staining, whereas postsynaptic knockdown by C57-Gal4 dramatically diminished the SCAR signal, indicating that the majority, if not all, of SCAR is localized in the postsynaptic site.
 
@@ -69,35 +89,51 @@ After establishing the synaptic localization of SCAR, we analyzed SCAR expressio
 
 To further confirm the role of DNlg1 in the membrane recruitment of WRC, we expressed the full-length EGFP-tagged DNlg1 in Schneider 2 (S2) cells and analyzed the subcellular distribution of SCAR. As shown in Figure 3J, in nontransfected control cells, SCAR was distributed uniformly throughout the cytoplasm. That expression pattern was validated by SCAR siRNA experiments (Figure 3—figure supplement 2). In EGFP-tagged DNlg1-transfected cells, SCAR tended to be concentrated more at the plasma membrane than in the cytoplasm (Figure 3K and M). The expression of mutant DNlg1 [DNlg1SF-AA -EGFP (the SF-AA mutation within the WIRS motif)] in S2 cells failed to efficiently recruit WRC to the cell membrane (Figure 3L and M) as what WT DNlg1 did. Those results are consistent with the hypothesis that the recruitment of WRC to the postsynaptic membrane by DNlg1 is mediated by a direct interaction between the WRC and DNlg1.
 
-## Interaction between DNlg1 and the WRC is required for postsynaptic F-actin assembly
+### Interaction between DNlg1 and the WRC is required for postsynaptic F-actin assembly
 
 Although it is widely accepted that the WRC is one of the key players in F-actin assembly, the in vivo roles of the WRC in postsynaptic F-actin assembly and NMJ development are still unclear. As a SCAR-null mutant died in the embryonic stages (Zallen et al., 2002), we addressed the in vivo roles of the WRC using SCAR RNAi lines driven by muscle-specific Gal4. We examined the RNAi efficiency using western blots (Figure 4A). The postsynaptic knockdown of SCAR with 24B-Gal4, a strong muscle-specific-Gal4, greatly impaired postsynaptic F-actin assembly and bouton growth (Figure 4B–H), suggesting that the WRC plays important roles in postsynaptic F-actin assembly and bouton growth in the Drosophila NMJ.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig4-v2.jpg)
 
-**Figure 4.:** (A) Brain lysates from WT and Elav > SCAR RNAi (Elav/+; UAS-SCAR RNAi/+) flies were subjected to western blots with anti-SCAR antibody. SCAR expression was dramatically inhibited in the Elav > SCAR RNAi line. A summary graph shows the relative SCAR intensity in both lines. (B–C) Confocal images of (B) WT and (C) 24B > SCAR RNAi (UAS-SCAR RNAi/+; 24B-Gal4/+) third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green), and anti-HRP (blue). (D–E) Confocal images of WT and 24B > SCAR RNAi third instar larvae NMJs at muscles 6/7 segment A2 labeled with anti-HRP. (F–H) Quantitative analysis of the relative F-actin area, intensity of F-actin and α-Spectrin, and bouton number in WT and 24B > SCAR RNAi flies. The data in (A) and (F–H) are shown as the mean ± SEM; n represents the number of replicate experiments in (A), the number of boutons analyzed in (F) and (G), and the number of NMJs analyzed in (H); asterisks indicate significant differences between the WT and the indicated genotypes. *p<0.05; ***p<0.001. Scale bars: (B, C) 5 μm, (D, E) 50 μm. 10.7554/eLife.30457.014Figure 4—source data 1.Figures 4A, F, G and H.
+**Figure 4.:** (A) Brain lysates from WT and Elav > SCAR RNAi (Elav/+; UAS-SCAR RNAi/+) flies were subjected to western blots with anti-SCAR antibody. SCAR expression was dramatically inhibited in the Elav > SCAR RNAi line. A summary graph shows the relative SCAR intensity in both lines. (B–C) Confocal images of (B) WT and (C) 24B > SCAR RNAi (UAS-SCAR RNAi/+; 24B-Gal4/+) third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green), and anti-HRP (blue). (D–E) Confocal images of WT and 24B > SCAR RNAi third instar larvae NMJs at muscles 6/7 segment A2 labeled with anti-HRP. (F–H) Quantitative analysis of the relative F-actin area, intensity of F-actin and α-Spectrin, and bouton number in WT and 24B > SCAR RNAi flies. The data in (A) and (F–H) are shown as the mean ± SEM; n represents the number of replicate experiments in (A), the number of boutons analyzed in (F) and (G), and the number of NMJs analyzed in (H); asterisks indicate significant differences between the WT and the indicated genotypes. *p<0.05; ***p<0.001. Scale bars: (B, C) 5 μm, (D, E) 50 μm.
 
 Because DNlg1 is required for membrane recruitment of the WRC, and the WRC is crucial for actin assembly, it is reasonable to hypothesize that the WRC mediates the regulation of postsynaptic F-actin assembly by DNlg1. To test that hypothesis, we performed the following rescue experiments. In dnlg1 mutants, the distributions of both the WRC and postsynaptic F-actin were defective compared with those in WT animals (Figure 5A,B,E and F). The postsynaptic expression of a transgene containing the full-length DNlg1 (rescue-WT) completely rescued those defects in the dnlg1 mutants (Figures 5C,G and I–K). However, the postsynaptic expression of mutant DNlg1 [DNlg1SF-AA (rescue-AA)] failed to rescue the defects (Figures 5D,H and I–K). The mutant DNlg1 could target the postsynaptic membrane as well as the WT DNlg1 (Figure 5—figure supplement 1), indicating that the WIRS motif is not required for the synaptic targeting of DNlg1 itself. Therefore, the interaction between DNlg1 and the WRC is specifically required for the postsynaptic localization of the WRC and subsequent F-actin regulation.
 
-## Interaction between DNlg1 and the WRC is essential for the roles of DNlg1 in normal NMJ growth, synaptic transmission, and GluR recruitment
+![Figure 5.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) Confocal images of third instar larvae NMJ type Ib boutons double labeled with anti-SCAR (green) and anti-HRP (red). (A) WT. (B) dnlg1 mutant (dnlg1ex1.9/ex2.3). (C) Muscle-specific rescue line using Mef2-Gal4 driving a full-length DNlg1 coding sequence in a dnlg1 mutant (Mef2-Gal4/+; dnlg1ex1.9, UAS-DNlg1/dnlg1ex2.3; rescue-WT). (D) Muscle-specific line using Mef2-Gal4 driving a full-length DNlg1 coding sequence containing a WIRS mutation in a dnlg1 mutant (Mef2-Gal4/+; dnlg1ex1.9, UAS-DNlg1SF-AA/dnlg1ex2.3; rescue-AA). The altered SCAR distribution and protein level in the dnlg1 mutants were rescued in the rescue-WT line, but not in the rescue-AA line. (E–H) Confocal images of (E) WT, (F) dnlg1 mutant, (G) rescue-WT, and (H) rescue-AA third instar larvae NMJ type Ib boutons at muscles 12/13 labeled with Texas Red phalloidin (red), anti-α-Spectrin (green) and anti-HRP (blue). The impaired F-actin and α-Spectrin cytoskeleton assemblies in the dnlg1 mutants were rescued in the rescue-WT line, but not in the rescue-AA line. (I) A summary graph showing that the reduced relative SCAR fluorescence intensity in the dnlg1 mutants was rescued in the rescue-WT line, but not in the rescue-AA line. (J, K) Summary graphs of the relative F-actin area and the relative fluorescence intensity of F-actin and α-Spectrin in the indicated genotypes. The data shown in (I–K) are mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. *p<0.05; ***p<0.001. n.s., not significant. Hashes indicate significant differences between two indicated genotypes, ##p<0.01; ###p<0.001; n.s., not significant. Scale bars: (A–D) 5 μm; (E–H) 5 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Confocal images of (A) Mef2 >DNlg1 EGFP (Mef2-Gal4/+; UAS-DNlg1-EGFP/+) and (B) Mef2 >DNlg1 SF-AA-EGFP (Mef2-Gal4/+; UAS-DNlg1SF-AA-EGFP/+) third instar larvae NMJ type Ib boutons labeled with anti-HRP (red). Note that the green fluorescence signal indicates the expression of the EGFP protein. Both DNlg1-EGFP and DNlg1SF-AA-EGFP could be targeted to postsynaptic sites when they were driven by muscle-specific Gal4 Mef2-Gal4. Scale bars: (A, B) 20 μm.
+
+### Interaction between DNlg1 and the WRC is essential for the roles of DNlg1 in normal NMJ growth, synaptic transmission, and GluR recruitment
 
 DNlg1 is known to be a key factor in the regulation of bouton growth and synaptic transmission (Banovic et al., 2010). We asked whether those processes require the interaction between DNlg1 and WRC. To address that question, we performed electrophysiological recording and morphological analyses of dnlg1 mutants and also rescue experiments in which WT DNlg1 or mutant DNlg1SF-AA was postsynaptically expressed in dnlg1 mutants. Consistent with previous studies (Banovic et al., 2010), the dnlg1 mutants displayed declined excitatory junction potential (EJP) amplitude (Figure 6A and B), lower miniature excitatory junction potential (mEJP) frequency (Figure 6C and D), and less NMJ bouton numbers (Figure 6E and F) compared with WT flies. The postsynaptic expression of WT DNlg1 in the dnlg1 mutants (rescue-WT) could rescue those phenotypes to levels comparable to those in WT flies (Figure 6A–F). The postsynaptic expression of the DNlg1SF-AA (rescue-AA) failed to reverse the deficits in the dnlg1 mutants (Figure 6A–F), suggesting that the interaction between DNlg1 and the WRC is required for the functions of DNlg1 in synaptic transmission and bouton growth.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig6-v2.jpg)
+
+**Figure 6.:** (A–D) Electrophysiological analysis of control and dnlg1 mutant NMJs on muscles 6/7 of third instar larvae indicated that postsynaptic expression of WT DNlg1, but not mutant DNlg1SF-AA, rescued the reduced synaptic transmission in the dnlg1 mutants. (A) Bar graphs of the mean EJP (in mV) and (B) representative traces of the EJP amplitudes in WT, dnlg1 mutant (dnlg1ex1.9/ex2.3), rescue-WT (Mef2-Gal4/+; dnlg1ex1.9/dnlg1ex2.3, UAS-DNlg1-EGFP), and rescue-AA (Mef2-Gal4/+; dnlg1ex1.9/dnlg1ex2.3, UAS-DNlg1SF-AA-EGFP) NMJs. (C) Bar graphs of the mean mEJP frequency and (D) representative traces of the mEJP frequency in WT, dnlg1 mutant, rescue-WT, and rescue-AA NMJs. (E–F) Postsynaptic expression of WT DNlg1, but not mutant DNlg1SF-AA, could rescue the reduced bouton number in the dnlg1 mutants. (E) Confocal images of WT, dnlg1 mutant, rescue-WT, and rescue-AA third instar larvae NMJ type Ib boutons at muscles 6/7 labeled with DLG (red) and anti-HRP (blue). (F) Quantitative data of bouton numbers in (E). (G) Confocal images of third instar larvae NMJ type Ib boutons at muscle four labeled with GluRIIB (red) and postsynaptic active zone marker Brp (blue) to quantify GluR unaligned with the active zone in the same four lines. (H) Confocal images of third instar larvae NMJ type I boutons at muscle four labeled with GluRIIA (red) and HRP (blue) to quantify orphan boutons in the same four lines. (I and J) Statistical analysis of (I) unopposed active zone and (J) orphan boutons that have a presynaptic (HRP) site but lack postsynaptic GluR localization. The green fluorescence signal indicates the expression of EGFP. White arrow: unopposed GluRIIB and BRP; yellow arrow: orphan boutons completely losing GluRIIA positioning. The data in (A), (C), (F), (I), and (J) are shown as the mean ± SEM; n represents the number of NMJ samples analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. **p<0.01; ***p<0.001; n.s., not significant. Hashes indicate significant differences between genotypes. #p<0.05; ##p<0.01; ###p<0.001; n.s., not significant. Scale bars: (E) 50 μm, (G) 1 μm, (H) 20 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Confocal images of third instar larvae NMJ type Ib boutons at muscle four labeled with anti-GluRIIA (red) and presynaptic marker HRP (blue) to compare the GluRIIA intensity in four Drosophila lines: WT, dnlg1(dnlg1ex1.9/ex2.3), rescue-WT (Mef2-Gal4/+; dnlg1ex1.9/dnlg1ex2.3, UAS-DNlg1-EGFP), and rescue-AA (Mef2-Gal4/+; dnlg1ex1.9/dnlg1ex2.3, UAS-DNlg1SF-AA-EGFP). (B) Quantitative analysis of GluRIIA intensity in (A). (C) Confocal images of WT, dnlg1 mutant, rescue-WT, and rescue-AA third instar larvae NMJ type Ib boutons at muscle four labeled with anti-GluRIIB (red) and postsynaptic marker anti-DLG (blue) to compare the GluRIIB intensity. (D) Quantitative analysis of the GluRIIB intensity in (C). The data in (B) and (D) are shown as the mean ± SEM; n represents the number of boutons analyzed; n.s., not significant. Scale bars (A, C): 5μm.
 
 The postsynaptic recruitment of GluRs is abnormal in dnlg1 mutants, resulting in misapposition between postsynaptic GluRs and presynaptic active zones (Banovic et al., 2010). Consistent with that phenomenon, we observed that compared with that in WT flies, around 15–20% more of the presynaptic active zone [bruchpilot (BRP)-stained area] in dnlg1 mutants lacked the proper alignment with postsynaptic GluRs (Figure 6G). A small portion of boutons in the dnlg1 mutants (around 10%) had a more severe phenotype, called orphan bouton, in which the postsynaptic GluRs were lost entirely (Figure 6H). As expected, the postsynaptic expression of WT DNlg1 with muscle-specific Mef2-Gal4 rescued those defects in the dnlg1 mutants (Figure 6G–J); however, the postsynaptic expression of mutant DNlg1 (DNlg1SF-AA) could only partially rescue the defects (Figure 6G–J). That means that the abnormal GluR recruitment in the dnlg1 mutants was at least partially due to the abolished interaction between DNlg1 and the WRC. Although there were differences in GluR recruitment among the studied lines, the overall expression levels of GluRIIA and GluRIIB were similar among all of the lines (Figure 6—figure supplement 1).
 
 Altogether, our results indicate that DNlg1-WRC-mediated postsynaptic F-actin assembly is required for the functions of DNlg1 in bouton growth and synaptic transmission and is at least partially, if not exclusively, responsible for the regulation of postsynaptic GluR recruitment.
 
-## Ectopic expression of DNlg1 at type II boutons is sufficient to promote F-actin assembly
+### Ectopic expression of DNlg1 at type II boutons is sufficient to promote F-actin assembly
 
 Our experiments so far showed that the DNlg1-WRC interaction is necessary for postsynaptic actin cytoskeleton assembly and normal morphology and synaptic functions at NMJs. We next asked if that interaction is sufficient to promote F-actin assembly. To address that question, we ectopically expressed DNlg1 at type II boutons. Compared with type I boutons (Figure 7A3, yellow wedges), type II boutons are typically smaller in size, extend for a longer distance on the muscle fibers, and are connected by a long, thin axonal process (Figure 7A3, pink wedges). Indeed, type I and type II boutons form different types of synapses with different presynaptic and postsynaptic properties, such as the lack of defined SSR structures in type II boutons (Budnik and Gorczyca, 1992; Jia et al., 1993; Johansen et al., 1989). DNlg1 is mainly localized at type I boutons; however, postsynaptic overexpression of DNlg1 has shown that DNlg1 can be ectopically targeted to type II boutons (Banovic et al., 2010). In WT flies, we found no significant F-actin labeling at type II boutons (Figure 7A,D). When we expressed DNlg1-EGFP with the muscle-specific Gal4 driver (Mef2-Gal4) in a WT background, we found marked F-actin staining at type II boutons that was similar to that observed at type I boutons (Figure 7B,E and G). Consistent with those biochemical data, mutant DNlg1 with an altered WIRS motif failed to induce F-actin assembly (Figure 7C,F and G). In addition, we found WRC clustered at type II boutons in DNlg1-EGFP transgenic lines (Figure 8B,E and G) but not in the WT line or a line expressing mutant DNlg1 with an altered WIRS motif (Figure 8A,C,D,F and G). Those results suggest that DNlg1 is sufficient to induce F-actin formation at the postsynaptic membrane and that the process requires interaction between DNlg1 and the WRC.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig7-v2.jpg)
 
-**Figure 7.:** () Confocal images of (A–CA) WT, (B) Mef2 >DNlg1 EGFP (Mef2-Gal4/+; UAS-DNlg1-EGFP/+), and (C) Mef2 >DNlg1SF-AA-EGFP (Mef2-Gal4/+; UAS-DNlg1) third instar larvae NMJ type II boutons at muscles 12/13 labeled with phalloidin (red) and anti-HRP (blue). High-magnification images in A’, B’, and C’ correspond to the view in the dotted rectangles in A, B, and C. The green fluorescence signal indicates the expression of the EGFP protein. The expression of DNlg1-EGFP at the postsynaptic site of type II boutons induced the formation of new F-actin at type II boutons, whereas the expression of DNlg1SF-AA-EGFP/+SF-AA -EGFP failed to do so. Yellow wedges in Figure A3 indicate type I bouton, and pink wedges indicate type II boutons. Dotted lines indicate the regions analyzed in (D–F), and the directions are indicated by white arrows. (D–F) Line profile analyses showing that WT DNlg1, but not DNlg1SF-AA, induced the formation of F-actin and led to the co-localization of DNlg1 and F-actin at type II boutons. (G) The ratio of F-actin intensity at type II boutons to that of adjacent background was calculated to indicate the recruitment of F-actin at type II boutons by DNlg1. A summary graph shows that WT DNlg1, but not DNlg1SF-AA, induced the recruitment of F-actin to type II boutons. The data in (G) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes. ###p<0.001. Scale bars: (A–C) 20 μm, (A’–C’) 10 μm. A.U., artificial unit. 10.7554/eLife.30457.023Figure 7—source data 1.Figure 7G.
+**Figure 7.:** (A–C) Confocal images of (A) WT, (B) Mef2 >DNlg1 EGFP (Mef2-Gal4/+; UAS-DNlg1-EGFP/+), and (C) Mef2 >DNlg1SF-AA-EGFP (Mef2-Gal4/+; UAS-DNlg1SF-AA-EGFP/+) third instar larvae NMJ type II boutons at muscles 12/13 labeled with phalloidin (red) and anti-HRP (blue). High-magnification images in A’, B’, and C’ correspond to the view in the dotted rectangles in A, B, and C. The green fluorescence signal indicates the expression of the EGFP protein. The expression of DNlg1-EGFP at the postsynaptic site of type II boutons induced the formation of new F-actin at type II boutons, whereas the expression of DNlg1SF-AA -EGFP failed to do so. Yellow wedges in Figure A3 indicate type I bouton, and pink wedges indicate type II boutons. Dotted lines indicate the regions analyzed in (D–F), and the directions are indicated by white arrows. (D–F) Line profile analyses showing that WT DNlg1, but not DNlg1SF-AA, induced the formation of F-actin and led to the co-localization of DNlg1 and F-actin at type II boutons. (G) The ratio of F-actin intensity at type II boutons to that of adjacent background was calculated to indicate the recruitment of F-actin at type II boutons by DNlg1. A summary graph shows that WT DNlg1, but not DNlg1SF-AA, induced the recruitment of F-actin to type II boutons. The data in (G) are shown as the mean ± SEM; n represents the number of boutons analyzed; asterisks indicate significant differences between the WT and the indicated genotypes. ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes. ###p<0.001. Scale bars: (A–C) 20 μm, (A’–C’) 10 μm. A.U., artificial unit.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/30457/elife-30457-fig8-v2.jpg)
 
-**Figure 8.:** (A–C) Confocal images of (A) WT, (B) Mef2 >DNlg1 EGFP (Mef2-Gal4/+; UAS-DNlg1-EGFP/+), and (C) Mef2>DNlg1SF-AA -EGFP (Mef2-Gal4/+; UAS-DNlg1) third instar larvae NMJ at muscles 12/13 labeled with anti-SCAR (red) and anti-HRP (blue). The green fluorescence signal indicates the expression of the EGFP protein. The expression of DNlg1-EGFP at the postsynaptic site of type II boutons induced clusters of SCAR (yellow arrow heads in B2), whereas that of DNlg1SF-AA-EGFP/+SF-AA -EGFP did not. Dotted lines indicate the regions analyzed in (D–F), and the direction is marked by an white arrows. (D–F) Line profile analyses show that WT DNlg1, but not DNlg1SF-AA, induced SCAR clusters and co-localization of DNlg1 and SCAR at type II boutons. (G) Quantification of SCAR intensity at type II boutons relative to that in the adjacent background. The data in (G) are shown as mean ± SEM; n represents the number of boutons; asterisks indicate significant differences between the WT and the indicated genotypes. ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes. ###p<0.001. Scale bars: (A–C) 20 μm. A.U., artificial unit. Figure supplements (5). 10.7554/eLife.30457.025Figure 8—source data 1.Figure 8G.
+**Figure 8.:** (A–C) Confocal images of (A) WT, (B) Mef2 >DNlg1 EGFP (Mef2-Gal4/+; UAS-DNlg1-EGFP/+), and (C) Mef2>DNlg1SF-AA -EGFP (Mef2-Gal4/+; UAS-DNlg1SF-AA-EGFP/+) third instar larvae NMJ at muscles 12/13 labeled with anti-SCAR (red) and anti-HRP (blue). The green fluorescence signal indicates the expression of the EGFP protein. The expression of DNlg1-EGFP at the postsynaptic site of type II boutons induced clusters of SCAR (yellow arrow heads in B2), whereas that of DNlg1SF-AA -EGFP did not. Dotted lines indicate the regions analyzed in (D–F), and the direction is marked by an white arrows. (D–F) Line profile analyses show that WT DNlg1, but not DNlg1SF-AA, induced SCAR clusters and co-localization of DNlg1 and SCAR at type II boutons. (G) Quantification of SCAR intensity at type II boutons relative to that in the adjacent background. The data in (G) are shown as mean ± SEM; n represents the number of boutons; asterisks indicate significant differences between the WT and the indicated genotypes. ***p<0.001; n.s., not significant. Hashes indicate significant differences between two indicated genotypes. ###p<0.001. Scale bars: (A–C) 20 μm. A.U., artificial unit. Figure supplements (5).
 
 ## Discussion
 
@@ -113,11 +149,217 @@ In summary, we identified a novel process by which neuroligins regulate the post
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnlg1ex1.9</td>
+      <td>PMID: 20547130</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnlg1ex2.3</td>
+      <td>PMID: 20547130</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnlg2KO70</td>
+      <td>PMID: 21228178</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnlg2KO17</td>
+      <td>PMID: 21228178</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnrx83</td>
+      <td>PMID: 23352167; PMID: 17498701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>dnrx174</td>
+      <td>PMID: 23352167; PMID: 17498701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNrx</td>
+      <td>PMID: 23352167; PMID: 17498701</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-SCAR RNAi</td>
+      <td>Center of Biomedical Analysis, Tsinghua University</td>
+      <td>TH: 02179 .N; RRID: BDSC_51803</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNlg1</td>
+      <td>lab generated; this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNlg1SF-AA</td>
+      <td>lab generated; this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNlg1-EGFP</td>
+      <td>lab generated; this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>UAS-DNlg1SF-AA-EGFP</td>
+      <td>lab generated; this paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>OK6-Gal4</td>
+      <td>Bloomington Drosophila Stock center</td>
+      <td>BDSC: 64199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>Elav-Gal4</td>
+      <td>Bloomington Drosophila Stock center</td>
+      <td>BDSC: 458</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>C57-Gal4</td>
+      <td>PMID: 8893021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>24B-Gal4</td>
+      <td>Kyoto Stock center</td>
+      <td>DGGR:106496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>genetic reagent (D. melanogaster)</td>
+      <td>Mef2-Gal4</td>
+      <td>Bloomington Drosophila Stock center</td>
+      <td>BDSC: 27390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (D. melanogaster)</td>
+      <td>S2</td>
+      <td>China Center for Type Culture Collection, CCTCC</td>
+      <td>GDC138; RRID:CVCL_Z992</td>
+      <td>Improved STR profiling Mycoplasma contamination test: negative</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-α-Spectrin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: 3A9; RRID: AB_528473</td>
+      <td>1:50 for IHC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-DLG</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB:4F3; RRID: AB_528203</td>
+      <td>1:50 for IHC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Brp</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB:nc82;RRID:AB_2314866</td>
+      <td>1:50 for IHC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-SCAR</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DSHB: P1C1-SCAR; RRID:AB_2618386</td>
+      <td>1:50 for IHC, 1:200 forwestern blotting</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>rabbit anti-HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch: 323-005-021 RRID: AB_2314648</td>
+      <td>1:1000 for IHC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Goat anti-HRP</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch: 123-005-021 RRID: AB_2338952</td>
+      <td>1:1000 for IHC</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-Tubulin</td>
+      <td>Sigma</td>
+      <td>Sigma: Clone DM1A; RRID:AB_477593</td>
+      <td>1:10000 for western blotting</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Alexa 488-, 555-, or 637- secondaries</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Texas Red-conjugated Phalloidin</td>
+      <td>Molecular Probes</td>
+      <td>ThermoFisher: T7471</td>
+      <td>1:6 for IHC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 All flies were reared at 25°C in standard medium unless otherwise specified. The w1118 flies were used as WT controls in this study. The following fly mutants were used: dnlg1ex1.9 and dnlg1ex2.3 (Banovic et al., 2010), dnlg2KO70 and dnlg2KO17 (Sun et al., 2011), and dnrx83 and dnrx174 (Tian et al., 2013; Zeng et al., 2007). The following UAS transgenic flies were used: UAS-DNrx (Tian et al., 2013; Zeng et al., 2007), UAS-SCAR-RNAi (THU 02179 .N; Center of Biomedical Analysis, Tsinghua University), UAS-DNlg1, UAS-DNlg1SF-AA, UAS-DNlg1-EGFP, and UAS-DNlg1SF-AA -EGFP. We generated UAS-DNlg1, UAS-DNlg1SF-AA, UAS-DNlg1-EGFP, and UAS-DNlg1SF-AA -EGFP by inserting the coding sequences into an attp-pUAST vector and injecting the resulting constructs into embryos of phiC31 attB-bearing flies (Bloomington stock center, #24870). The strategy used for the generation of EGFP-tagged DNlg1 was described previously (Banovic et al., 2010). We used the following Gal4 flies: motor neuron Gal4 OK6-Gal4 (Bloomington Stock center), muscle-specific Gal4: C57-Gal4 (Budnik et al., 1996), 24B-Gal4 (Kyoto Stock center), and Mef 2-Gal4 (Bloomington Stock center).
 
-## NMJ staining and image analysis
+### NMJ staining and image analysis
 
 The procedure for immunostaining the larval body-wall muscle was described previously (Xing et al., 2014). In brief, the body-wall muscles from third instar larvae were dissected in PBS solution and fixed them for 40 min with 4% paraformaldehyde. Then, the fixed samples were washed four times in 0.3% PBST (PBS + 0.3% Triton X-100), blocked them in blocking solution (1% BSA, 0.3% Triton X-100 in PBS) for 1 hr, and incubated them with primary antibody at 4°C overnight. The following primary antibodies were used in this study: mouse anti-α-Spectrin (DSHB, 1:25), mouse anti-DLG (DSHB, 1:50), mouse anti-SCAR (DSHB; 1:50), mouse anti-GluRIIA (DSHB; 1:50), rabbit anti-GluRIIB (1:1000) (Tu et al., 2017); rabbit anti-HRP (Jackson ImmunoResearch, 1:1000), and Texas Red®-X Phalloidin (Molecular probe, 1:6). AlexaFluor-488-conjugated, AlexaFluor-555-conjugated, and AlexaFluor-633-conjugated anti-mouse or anti-rabbit secondary antibodies (Invitrogen, 1:500) were used at room temperature for 1 hr. All images were collected using an LSM 710 Confocal Station (Zeiss) and processed with Adobe Illustrator CS6.
 
@@ -129,24 +371,24 @@ To quantify immunofluorescent signals on the cytoplasmic membrane or in the cyto
 
 All statistical analyses were performed using GraphPad Prism 7. We applied nonparametric one-way ANOVA followed by Tukey’s post hoc test to evaluate the differences among multiple groups of samples. We used the Mann–Whitney U test to evaluate the difference between two groups of samples. The methods used for the statistical analyses in all statistical graphs are described in the source data.
 
-## Immunoblotting analysis
+### Immunoblotting analysis
 
 Fly brain samples were homogenized with 1 × SDS loading buffer (50 mM Tris-HCl, 2% SDS, 0.1% bromophenol blue, 10% glycerol, 1% β-mercaptoethanol). The lysate samples and pull-down samples were separated by 10% or 8% SDS-PAGE and electro-transferred onto polyvinylidene difluoride membranes. We probed the immobilized proteins on the membranes with primary antibodies at 4°C overnight. The following primary antibodies were used in this study: mouse anti-SCAR (DSHB, 1:500) and mouse anti-Tubulin (Sigma, 1:10000). The samples were then incubated with HRP-conjugated secondary antibody at room temperature for 1.5 hr. The targeted proteins were visualized with SuperSignal West Pico Chemiluminescent substrate and SuperSignal West Femto Maximum Sensitivity substrate from Thermoscientific (Rockford, IL).
 
-## GST pull-down assay
+### GST pull-down assay
 
 The procedure for the pull-down assay was described previously (Nakao et al., 2008). Briefly, GST protein and GST fusion proteins were expressed in BL21 cells with PGEX-5X-1 vector. We then purified and immobilized the cells with glutathione Sepharose 4B beads (GE Healthcare, SWE). WT fly heads were homogenized and lysed in lysis buffer (20 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0.5% Triton X-100, 5% glycerol, 1 mM EDTA, 1 mM DTT, 1 mM PMSF, and 1 × Complete EDTA-free protease inhibitor cocktail (Roche, GER). Then, the lysate was incubated with GST protein or GST-tagged proteins immobilized on beads. We then washed the beads three times with lysis buffer and eluted them by boiling in 2 × SDS loading buffer.
 
-## Electrophysiology
+### Electrophysiology
 
 Third instar larvae were dissected and intracellular membrane potentials were recorded as previously described (Jan and Jan, 1976; Sun et al., 2011). Briefly, we chose muscle 6 in the A3 segment for recording. The free segmental nerve end was drawn into a microelectrode using an injector and stimulated with a Master-8 pulse stimulator (A.M.P.I, IL) at 0.3 Hz with a suprathreshold stimulating pulse and the electrodes (20–50 MΩ) filled with 3 M KCl for EJP recording. We recorded mEJPs for 20 s starting 8 s after EJP recordings. All recordings were conducted at room temperature with an Axoclamp 900A amplifier (Molecular Devices, Sunnyvale, CA) in bridge mode. The data were digitized with a Digitizer 1322A (Molecular Devices). We used Clampfit 10.2 to analyze the data.
 
-## Cell culture, transfection, and staining
+### Cell culture, transfection, and staining
 
 S2 cells were cultured on six-well cell culture plates overlaid with round glass cover slips (Corning) and incubated at 25°C in HyClone SFX-Insect Cell Culture Media (ThermoFisher Scientific, UK). We co-transfected the cells with PAC5.1/V5-His-A plasmid containing an actin 5C promoter and pUAST vector including the desired protein coding sequence using X-treme GENE HP (Roche) transfection reagent. Two days after transfection, the cells were fixed for 10 min with 4% formaldehyde (Sigma, GER), permeabilized with PBS solution containing 1% BSA and 0.1% TritonX-100, and incubated with primary antibodies (rabbit anti-GFP, 1:1000, Invitrogen; mouse anti-SCAR, 1:50, DSHB) at 4°C overnight. After washing the cells three times, we incubated them with Alexa-488-conjugated or Alexa-555-conjugated secondary antibodies at room temperature for 1 hr. We then washed the cells and mounted them in mounting media with DAPI (Vector Laboratories, Burlingame, CA). For siRNA assays, siRNAs were transfected with Lipofectamine 2000 (ThermoFisher Scientific, Grand Island, NY). After 3 days, the cells were collected for western blotting and immunostaining. The following siRNAs were used: Ctr-siRNA, ACGUGACACGUUCGGAGAATT; SCAR-siRNA, AUAGACAUUAAGCUUGUCGAG.
 
 The S2 cell line was acquired from the China Center for Type Culture Collection (CCTCC). To test the mycoplasma contamination status, we used the MycoBlueTM Mycoplasma Detector kit (Vazyme, CHN), which works based on an improved short tandem repeat (STR) profiling technique. According to the kit manual, if the cell culture has mycoplasma contamination, the conserved sequence of mycoplasma DNA will be amplified by isothermal DNA polymerase, which will turn the reaction liquid from purple to blue. Thus, the results can be visualized by direct observation. All of the S2 cells used in this study were negative for mycoplasma contamination.
 
-## Abbreviations
+### Abbreviations
 
 DNlg, Drosophila neuroligin; WRC, WAVE regulatory complex; NMJ, neuromuscular junction; GluR, glutamate receptor; GluRIIA, glutamate receptor IIA subunit; GluRIIB, glutamate receptor IIB subunit; EJP, excitatory junction potential; mEJP, miniature excitatory junction potential; SSR, subsynaptic reticulum; BRP, bruchpilot; DLG, Discs large 1; HRP, horseradish peroxidase; BMP, bone morphogenetic protein.

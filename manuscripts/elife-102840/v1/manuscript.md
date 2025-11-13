@@ -18,9 +18,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00p991c53 Britton Chance Center for Biomedical Photonics, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology Wuhan China
-2. https://ror.org/00p991c53 MOE Key Laboratory for Biomedical Photonics, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology Wuhan China
-3. https://ror.org/04jcykh16 School of Computer Science and Engineering, Hubei Key Laboratory of Intelligent Robot, Wuhan Institute of Technology Wuhan China
+1. Britton Chance Center for Biomedical Photonics, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology Wuhan China ([ROR:00p991c53](https://ror.org/00p991c53))
+2. MOE Key Laboratory for Biomedical Photonics, Wuhan National Laboratory for Optoelectronics, Huazhong University of Science and Technology Wuhan China ([ROR:00p991c53](https://ror.org/00p991c53))
+3. School of Computer Science and Engineering, Hubei Key Laboratory of Intelligent Robot, Wuhan Institute of Technology Wuhan China ([ROR:04jcykh16](https://ror.org/04jcykh16))
 
 † Corresponding author
 
@@ -42,9 +42,29 @@ Here, we propose a new neuron reconstruction method called PointTree, which aims
 
 ## Results
 
-## The architecture and principles of PointTree
+### The architecture and principles of PointTree
 
 In the design of PointTree, we have developed a series of optimization problems to assign foreground points in data blocks to their respective neurites. Firstly, the segment network is utilized for each data block to obtain foreground points. Subsequently, we apply a constrained Gaussian clustering method (Reynolds, 2009) to partition the foreground points into columnar regions and determine their geometrical parameters by solving the minimum-volume covering ellipsoids problem (Sun and Freund, 2004). Using these geometrical parameters, we construct a 0–1 assignment problem (Volgenant, 1996) to establish links between these columnar regions. Finally, skeletons are extracted from these linked columnar regions to reduce data redundancy by using region growing (Harris, 2011). The key procedures for neuron reconstruction are presented in Figure 1A.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig1-v1.jpg)
+
+**Figure 1.:** (A) The reconstruction procedure of PointTree involves the generation, clustering, and connection of foreground points (the first row). Within this procedure, three optimization problems are designed to allocate the foreground points into their respective neurites (the second row). (B) Schematic diagram of information flow score calculation. In a neurite branch with a fixed root node (green circle), the information flow score is calculated based on the assumption that a neurite has few directional changes. The assumption determines the neurite directly connecting to the root node (red), resulting in two branch angles used to calculate the information flow score. (C) Statistical analysis of the consistency between the minimum information flow and the real situation. For 208 neurite branches, the information flow scores are calculated as ground truth according to their manually determined skeletons and root nodes. These scores are then displayed in ascending order. The root nodes of neurite branches are changed to generate both maximum and minimum information flow scores. (D) One neurite branch is decomposed into two by minimizing the total information flow scores. (E) Performance of different methods on separating closely paralleled neurites. In PointTree, a single neurite is represented by a series of ellipsoids whose centerlines are not simultaneously located within different neurites. They are connected using an ellipsoid shape, which results in perfect reconstruction (Left). However, skeleton-based methods fail to separate two closely paralleled neurites due to interference from other signals (Red circle in middle) or connections being interfered with by another neighboring skeleton point (Red circle in right).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The ground-truth skeletons are generated using GTree (a semi-automatic software) with manual modification. A series of Gaussian kernels with mean values equal to the coordinates of skeleton points are summed to obtain the corresponding probability image block. The segmented image block is finally generated using a threshold method.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** In (A), the calculation of the information flow score for a branch of neurites with root node 1 is illustrated. The reconstructed skeletons are transformed into a binary structure based on the root node, and the angles with respect to branching nodes labeled with brown circles determine the information flow. These angles will change when the root node changes. The angle of a branching node is formed by its father and child nodes, as exemplified by the N2 node. In (B), the optimization of tree structure to minimize the total information flow score is demonstrated. It shows that decreasing the information flow leads to a more proper tree structure. The second row of (B) provides an example of decomposing tree structure into two individual parts.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) MIFT criterion will incorrectly split neurites with sharp directional changes into two branches, but the splitting location is explicitly recorded during this process. (B) Our algorithm searches for connectable neurites around the head nodes identified by MIFT. If no connectable neurites are found for both head nodes, the algorithm will reconnect them based on the recorded splitting points to prevent isolated neurite fragments. (C) presents two real examples violating the MIFT criterion. Through post-processing, PointTree successfully reconnects the split branches back to the correct neurites.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) shows an input swc file and its corresponding skeleton structure. (B) shows how the reconstructed skeletons are converted to a binary tree structure.
 
 In addition, PointTree employed the statistical prior information to reduce the reconstruction errors. At the branching point (node) of the neurites, it can be divided into three segments of neurite skeletons. The segment entering the node forms two angles with the other two segments exiting the node respectively. The node angle is defined as the smaller angle between the entering segment and each exiting segment (Figure 1B). With node angle, we can identify the single complete neurite and its corresponding node angles. The skeleton of the neurite is generally smooth, with very few sudden directional changes and even fewer at the nodes. So, the node angles should be as small as possible. For neuronal branches, the node angles are uniquely determined when the root node is given, and the sum of the negative cosine of these node angles expressed by information flow value is small when the root node is correctly identified. This rule is defined as a minimal information flow tree (MIFT).
 
@@ -52,9 +72,17 @@ In image blocks of densely distributed neurites, we used semi-automatic software
 
 PointTree has the capability to separate densely distributed neurites. When dealing with two parallel neurites in close proximity to each other, their shapes can be represented by a series of columnar regions (the left panels of Figure 1E). We have modified the Gaussian clustering algorithm by constraining the estimated mean and covariance parameters so that the cluster shape approaches a columnar shape. Additionally, foreground points within the same cluster are connected to each other. These two features ensure that the central line in the columnar region belongs to only a single neurite, which is crucial for separating densely packed neurites. Furthermore, we utilize the minimum volume covering ellipsoid to extract shape information of the columnar regions for constructing their connections. These designs enable PointTree to successfully reconstruct packed neurites. In contrast, skeleton-based local methods rely on determining the position of the next skeleton point based on the shape anisotropy of the region. This often leads to localization errors when there are two neurite image signals within a region (the middle panels of Figure 1E). When it comes to skeleton-based global methods, although seed points can be located at individual neurite centers, accurately constructing connections between these seed points proves challenging due to the reliance on distance between points and susceptibility to interference from densely distributed neurites (the right panels of Figure 1E).
 
-## The merits of PointTree in dense reconstruction
+### The merits of PointTree in dense reconstruction
 
 In dense reconstruction, one of the main concerns is how well to separate densely distributed neurites that behave as crossover and closely paralleled neurites. These neurites can be manually identified by visualization with different view angles (Figure 2—figure supplement 1). We compared PointTree with several skeleton-based methods such as neuTube (Feng et al., 2015), PHDF (Radojevic and Meijering, 2017), NGPST (Quan et al., 2016), and MOST (Wu et al., 2014) in performing this task. We manually labeled the locations where neurites are crossover or closely parallel from five 256×256 × 256 image blocks. For a fair comparison, all methods are performed on segmented images derived from the segmentation network. Figure 2A illustrates the process of PointTree’s separation of crossover and closely paralleled neurites. PointTree can successfully separate the densely distributed neurites in a range of 71.4% and 91.7%, while these skeleton-based methods only separate 25.0% densely distributed neurites (Figure 2B) at most. We also present the comparison of PointTree and other methods on some reconstruction examples in which multi-crossover neurites (Figure 2C) and closely paralleled neurites are involved. PointTree provides the perfect reconstruction while other methods fail to reconstruct these neurites.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig2-v1.jpg)
+
+**Figure 2.:** (A) The reconstruction process of crossover and closely paralleled neurites. (B) Quantitative evaluation of PointTree and several skeleton-based methods on identifying closely distributed neurites. The box plots present the statistical information (n=5) in which the horizontal line in the box, the lower and upper borders of the box represent the median value, the first quartile (Q1), and the third quartile (Q3), respectively. The vertical black lines indicate 1.5 × IQR. (C) Three reconstruction examples derived from PointTree and several skeleton-based methods.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** When the two parallel neurites are in close proximity, they can be distinguished by visualizing them from different angles.
 
 Furthermore, we present the quantitative results derived from PointTree and five widely used skeleton-based reconstruction methods, including APP2, neuTube, NGPST, PHDF, and MOST. Eight 256×256 × 256 image blocks that include many densely distributed neurites are of the testing dataset. All reconstruction algorithms are performed on the segmentation images of these testing datasets. We give the intuitive reconstruction comparisons (Figure 3A). PointTree provides the reconstruction close to the ground truth. The skeleton-based methods generate lots of reconstruction errors and incorrectly combine multi-neurites into a single branch. The quantitative reconstructions suggest that PointTree is far superior to skeleton-based methods (Figure 3B). For PointTree, the average precision is above 90%, both recall and f1-score are above 85%. The skeleton-based methods cannot provide a good solution to separate the densely packed neurites. The f1-score of these reconstructions ranges from 30% to 40%, which indicates the ineffective reconstructions.
 
@@ -62,7 +90,7 @@ Furthermore, we present the quantitative results derived from PointTree and five
 
 **Figure 3.:** (A) Comparison of reconstruction performance among six methods, including PointTree, NGPST, neuTube, APP2, PHDF, and MOST. Individual neurite branches are delineated in different colors. (B) Quantitative evaluation of reconstruction performance using precision, recall, and f1-score. The box plots display these three evaluation indexes (n=8). In the box, the horizontal line represents the median value. The box shows the interquartile range (IQR) from the first quartile (Q1) to the third quartile (Q3). The vertical lines indicate 1.5×IQR.
 
-## Reconstruction of data with different signal-to-noise ratios
+### Reconstruction of data with different signal-to-noise ratios
 
 In the field of neuronal reconstruction, data acquired by different imaging systems often exhibit varying signal-to-noise ratio (SNR) characteristics. For some low-SNR datasets, severe noise interference makes it difficult even for human observers to accurately identify neurite structures. To systematically evaluate PointTree’s reconstruction performance across datasets with different SNRs, we selected and analyzed data from three imaging systems: light sheet microscopy (Stelzer et al., 2021) (LSM), fluorescent micro-optical sectioning tomography (Wang et al., 2021) (fMOST), and high-definition fluorescent micro-optical sectioning tomography (Zhong et al., 2021) (HD-fMOST), with SNR ranges of 2–7, 6–12, and 9–14, respectively (Figure 4A).
 
@@ -74,7 +102,7 @@ Experimental results demonstrate that, thanks to the powerful feature extraction
 
 Notably, in low-SNR LSM data, background regions contain more artifactual signals (first panel in Figure 4C) due to similar intensity distributions between background and foreground points. In contrast, high-SNR datasets (fMOST and HD-fMOST) exhibit cleaner background features with distinct intensity separation between background noise and neurite signals (second and third panel in Figure 4C). This observation highlights the critical impact of SNR on reconstruction quality while simultaneously validating the robustness of PointTree, which is aided by the segmentation network, across diverse SNR conditions.
 
-## Restrain error accumulation in the reconstruction
+### Restrain error accumulation in the reconstruction
 
 In order to achieve accurate axon reconstruction, it is essential to effectively suppress the snowballing accumulation of reconstruction errors. The performance of the minimal information flow tree (MIFT) in retraining the reconstruction errors is evaluated in this study. Figure 5A presents six 512×512 × 512 image blocks and their reconstructions using PointTree in the first column. The reconstruction fusing procedure is then performed on these axonal reconstructions (Figure 5A). By employing MIFT to revise the reconstructions and remove false connections between axons, reasonable reconstructions are achieved. In contrast, when the same fusion procedure is conducted without MIFT to revise the reconstruction, almost all axons are incorrectly connected together (bottom-right panel in Figure 5A).
 
@@ -84,13 +112,161 @@ In order to achieve accurate axon reconstruction, it is essential to effectively
 
 We furthermore measure the enhancement in the reconstruction accuracy achieved by MIFT (Figure 5B). For the initial reconstructions from six image blocks, the average of f1-score is about 0.86. By using MIFT, the average of f1-score is above 0.8 for the reconstructions from two image blocks which are generated with the first fusion. In the second fusion (top-right panel in Figure 5A), the f1-score still keeps 0.79. In contrast, without MIFT, the first fusion leads to a drop of about f1-score of 0.3. After the second fusion, the f1-score is less than 0.2. We also present some reconstruction examples after two fusions in Figure 5C, which are close to the ground truth. These results suggest that the MIFT model takes consideration of the proper structure of axons and thus can restrain the error communications in the reconstruction fusion process.
 
-## Long-range axonal projections reconstruction
+### Long-range axonal projections reconstruction
 
 We applied PointTree for long-range axon reconstruction. The testing image block has the size of 11226×8791 × 1486 voxels and includes axons from eight neurons (Figure 6A). We also used GTree to manually reconstruct these neurons as the ground-truth reconstruction (Figure 6B). Except for the labeling of training data for segmentation network and of the axon starting points of a single neuron, the whole reconstruction process is totally automatic. The results show PointTree successfully recovered the axonal morphology of these eight neurons without manual interference (Figure 6C and Videos 1 and 2), and we compared these reconstructions with ground truth (Figure 6—figure supplement 1). The average precision is above 85% and the average recall and f1-score are above 80% (Figure 6E). In addition, we presented the axon reconstructions from two image blocks (Figure 6C1 and C2) which include a large number of densely distributed axons. This reconstruction performance suggests that the point assignment and the minimal information flow tree mode, as the two key strategies in PointTree, perform well in long-range axonal reconstruction.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig6-v1.jpg)
+
+**Figure 6.:** (A) The image block contains eight neurons in the ventral posteromedial thalamic region. The projection of these neurons includes a large number of densely distributed axons, which are enlarged in A1 and A2. (B) The reconstruction of the eight neurons is achieved by annotators with semi-automatic software GTree, serving as ground-truth reconstruction to evaluate automatic algorithms. The reconstructions B1 and B2 correspond to the image blocks A1 and A2. (C) Automatic reconstruction with PointTree results in reconstructions of the densely distributed axons, which are enlarged in C1 and C2. (D) A comparison between automatic reconstruction and ground-truth reconstruction of axonal projection for one neuron is shown. Green indicates consistent reconstruction, blue indicates missed branches, and red denotes branches from other neurons. (E) Quantitative analysis of long-range projections for these neurons is presented. Statistical information is displayed in boxes (n=8), the horizontal line in the box, the lower and upper borders of the box represent the median value, the first quartile (Q1) and the third quartile (Q3) respectively, the vertical black lines indicate 1.5 × IQR, while black points represent the accuracy of the reconstructions for these neurons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The reconstructions were performed using semi-automatic methods with manual modification (GTree, left column) and automatic methods (PointTree, right column). The semi-automatic reconstruction is considered the ground-truth reconstruction for quantifying the accuracy of the automatic reconstruction. In the right column, each panel includes a set of quantitative evaluation indexes in the bottom-right corner, which consist of precision, recall, and f1-score.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102840/elife-102840-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Axonal reconstructions were generated from the image blocks (10739×11226 × 3921) collected using the Limo system. The upper portion represents the ground-truth reconstruction, which includes data from 13 neurons. The automatic reconstruction (shown at the bottom) closely matches the ground-truth reconstruction. A quantitative evaluation of the automatic reconstruction is presented in Table 1.
+
+![Video 1.](https://cdn.elifesciences.org/articles/102840/elife-102840-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/102840/elife-102840-video2.mp4.jpg)
+
 We also applied PointTree to process another 10739×11226 × 3921 image blocks collected with HD-fMOST system (Zhong et al., 2021). The high signal-to-noise ratio in this optical system results in a significantly extended dynamic range of the signal. PointTree can effectively deal with this case, and all 14 long-range projections are successfully reconstructed (Figure 6—figure supplement 2). The quantitative results suggest that the average f1-score is above 90% (Table 1).
 
+**Table 1.**
+ Quantitative metrics comparing ground truth and reconstructed neurons are presented in Figure 6—figure supplement 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>1.00</td>
+      <td>0.92</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>1.00</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0.98</td>
+      <td>0.76</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>1.00</td>
+      <td>0.82</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>1.00</td>
+      <td>0.77</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1.00</td>
+      <td>0.92</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0.96</td>
+      <td>0.75</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1.00</td>
+      <td>0.87</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1.00</td>
+      <td>0.82</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1.00</td>
+      <td>0.96</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>1.00</td>
+      <td>0.99</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>1.00</td>
+      <td>0.77</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>1.00</td>
+      <td>0.90</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>0.99</td>
+      <td>0.87</td>
+      <td>0.93</td>
+    </tr>
+  </tbody>
+</table>
+
 Despite the need to solve multiple large-scale optimization problems, the reconstruction speed using PointTree is generally faster than the imaging speed. For instance, in a typical scenario involving 254 image blocks with 512×512 × 512 voxels, the total time required for reconstruction is approximately 44 min. Even for a larger dataset comprising 821 image blocks with 512×512 × 512 voxels and including a significant number of sparsely distributed neurites, the total time cost amounts to about 60 min (Table 2). It should be noted that the time cost does not increase linearly as data volume increases due to the influence of neurite density on overall reconstruction time. In summary, PointTree demonstrates remarkable speed in reconstructing long-range axons (Video 3).
+
+**Table 2.**
+ Time cost of three modules in the entire reconstruction for two testing datasets shown in Figure 6, Figure 6—figure supplement 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>block number(size: 512×512 × 512)</th>
+      <th>Points clustering(mins)</th>
+      <th>Clusters connection(mins)</th>
+      <th>Reconstruction merging (mins)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>254</td>
+      <td>23</td>
+      <td>18</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>821</td>
+      <td>22</td>
+      <td>35</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 3.](https://cdn.elifesciences.org/articles/102840/elife-102840-video3.mp4.jpg)
 
 ## Discussion
 
@@ -104,138 +280,515 @@ Our method still generates a few reconstruction errors. This is due to the follo
 
 ## Materials and methods
 
-## Data collections
+### Data collections
 
 All animal experiments followed procedures approved by the Institutional Animal Ethics Committee of the Huazhong University of Science and Technology. The test datasets are collected through the preparation of two kinds of samples. For one C57BL/6 male mouse, 100 nl AAV-Cre virus and 100 nl of AAV-EF1α-DIO-EYFP virus were injected into the VPM nucleus at the same time. 21 days later, the chemical sectioning fluorescence tomography (CSFT) system (Wang et al., 2021) was used to acquire imaging data (Figures 1—6), more details can be seen in the reference (Zhang et al., 2021). For one C57BL/6 J male mouse, 100 nl of AAV-YFP was injected into the motor area. 21 days later, high-definition fluorescent micro-optical sectioning tomography (HD-fMOST) was used to acquire imaging data (Zhong et al., 2021; Figure 6—figure supplement 2).
 
-## Generation of foreground points
+### Generation of foreground points
 
 Our reconstruction method performs on the image foregrounds. Here, we used UNet3D (Çiçek et al., 2016) for image stacks segmentation without network structure modification. The detailed information about UNet3D can be found in the reference (Çiçek et al., 2016). Considering the requirement that the network output, the segmented neurites, have the relatively fixed radius, we calculate the distance field of the neurite’s skeleton as the ground truth for supervising the network. Initially, the semi-automatic software GTree was utilized to extract the neurite skeleton and subsequently interpolate the skeleton points. The interpolation operation ensured that the distance between any skeleton point and its nearest point was less than 1 μm. Subsequently, the interpolated skeleton points were used as centers to mark spherical regions with a radius of 5 voxels. These spherical regions served as candidate areas for foreground. Within these candidate areas, the distance from each point to its nearest interpolated skeleton point was calculated. Finally, the distances are mapped into Gaussian kernel distances, which form the Gaussian density map. This map normalized by maximum value leads to the distance field map to supervise UNet3D output.
 
 In the training stage, Adam optimizer is used with an initial learning rate at 3e-4. The input image size is 128×128 × 128. Batch size is set to 1, the L1-norm is used as loss function to train the network. We presented the reconstructions from two kinds of fMOST datasets. One is from the reference (Zhang et al., 2021) and the other is from the reference (Zhong et al., 2021). Therefore, we created two sets of training data, each consisting of 20 512×512 × 512 image blocks (each divided into 64 image blocks of size 128×128 × 128). In each set, 10 image blocks contain densely distributed neurites, while the other 10 blocks contain sparsely distributed neurites. In the predicting stage, we applied the threshold operation to the distance field image. The voxels whose values are more than 0.5 are regarded as the foreground points.
 
-## Neuron Reconstruction based on Points assignment
+### Neuron Reconstruction based on Points assignment
 
 For the image stack, we allocated the foreground points to their respective neurites and established connections between neurites by constructing three optimization models: (1) the constrained Gaussian mixture model divides the foreground points into a set of points, each of which has a column shape; (2) the minimum-volume covering ellipsoids model extracts the features of the column-shaped point set; (3) the 0–1 assignment optimization model establishes connections between the column-shaped point sets, resulting in the shapes of individual neurites, and then builds connections between the reconstructed neurites.
 
-## Constrained Gaussian mixture model
+### Constrained Gaussian mixture model
 
-The three-dimensional Gaussian function exhibits an ellipsoidal shape in space, which we have utilized to approximate the columnar shape of local neurites. In this study, Gaussian distribution mixture functions with K\begin{document}$K$\end{document} components are employed to approximate the shape of all neurites in an image block. The component number K\begin{document}$K$\end{document} is obtained by point density and will be discussed later. Given the foreground points x1,x2,⋯,xn\begin{document}$x_1,x_2,\cdots ,x_n$\end{document}, for each foreground points xi\begin{document}$x_{i}$\end{document}, the probability density function P(xi)\begin{document}$P\left (x_{i}\right)$\end{document} is calculated as follows:(1)P(xi)=∑j=1KπjN(xi|μj,Σj)\begin{document}$$\displaystyle  P\left (x_{i}\right)=\sum _{j=1}^{K}\pi _{j}N\left (x_{i}|\mu _{j},\Sigma _{j}\right)$$\end{document}
+The three-dimensional Gaussian function exhibits an ellipsoidal shape in space, which we have utilized to approximate the columnar shape of local neurites. In this study, Gaussian distribution mixture functions with $K$ components are employed to approximate the shape of all neurites in an image block. The component number $K$ is obtained by point density and will be discussed later. Given the foreground points $x_{1},x_{2},⋯,x_{n}$, for each foreground points $x_{i}$, the probability density function $P(x_{i})$ is calculated as follows:
 
-Here, N(xi|μj,Σj)\begin{document}$N\left (x_{i}|\mu _{j},\Sigma _{j}\right)$\end{document} is the Gaussian density function with mean value μj\begin{document}$\mu _{j}$\end{document} and covariance matrix Σj\begin{document}$\Sigma _{j}$\end{document}. Weight πj\begin{document}$\pi _{j}$\end{document} is the regularization parameter. N(xi|μj,Σj)\begin{document}$N\left (x_{i}|\mu _{j},\Sigma _{j}\right)$\end{document} is given by the formula:(2)N(xi|μj,Σj)=12π3/2|Σj|1/2e−12(xi−μj)TΣj−1(xi−μj)\begin{document}$$\displaystyle  N\left (x_{i}|\mu _{j},\Sigma _{j}\right)=\frac{1}{2\pi ^{3/2}|\Sigma _{j}|^{1/2}}e^{- \frac{1}{2}\left (x_{i}- \mu _{j}\right)^{T}\Sigma _{j}^{- 1}\left (x_{i}- \mu _{j}\right)}$$\end{document}
+$$
+P(x_{i})=\sumj=1K\pi_{j}N(x_{i}|\mu_{j},Σ_{j})
+$$
 
-Based on probability density function, the conditional probability can be computed as:(3)pi,j=P(xi|clusterj)=πjN(xi|μj,Σj)∑j=1KπjN(xi|μj,Σj)j=(1,2,...,K)\begin{document}$$\displaystyle  p_{i,j}=P\left (x_{i}|cluster_{j}\right)=\frac{\pi _{j}N\left (x_{i}|\mu _{j},\Sigma _{j}\right)}{\sum _{j=1}^{K}\pi _{j}N\left (x_{i}|\mu _{j},\Sigma _{j}\right)} \qquad j=\left (1,2,...,K\right)$$\end{document}
+Here, $N(x_{i}|\mu_{j},Σ_{j})$ is the Gaussian density function with mean value $\mu_{j}$ and covariance matrix $Σ_{j}$. Weight $\pi_{j}$ is the regularization parameter. $N(x_{i}|\mu_{j},Σ_{j})$ is given by the formula:
 
-Here, pi,j\begin{document}$p_{i,j}$\end{document} is the conditional probability for xi\begin{document}$x_{i}$\end{document} to assign to the j-th cluster. If pi,k\begin{document}$p_{i,k}$\end{document} is the maximum value among {pi,1,...pi,K}\begin{document}$\left \{p_{i,1},...p_{i,K}\right \}$\end{document}, the foreground point xi\begin{document}$x_{i}$\end{document} will be assigned to the k-th cluster. All the points assigned to the k-th cluster form a columnar region. Considering that both the number of foreground points and component number are large, we have added some constrained conditions for Gaussian mixture model as follows:(4)∑j=1Kπj=1\begin{document}$$\displaystyle  \sum _{j=1}^{K}\pi _{j}=1$$\end{document}(5)I(μj)≥ε0,|Σj|≤ε1\begin{document}$$\displaystyle  I\left (\mu _{j}\right)\geq \varepsilon _{0},|\Sigma _{j}|\leq \varepsilon _{1}$$\end{document}
+$$
+N(x_{i}|\mu_{j},Σ_{j})=\frac{1}{2\pi^{3/2}|Σ_{j}|^{1/2}}e^{−\frac{1}{2}(x_{i}−\mu_{j})^{T}Σ_{j}^{−1}(x_{i}−\mu_{j})}
+$$
 
-∑j=1Kπj=1\begin{document}$\sum _{j=1}^{K}\pi _{j}=1$\end{document} refers to the fact that the total probability distribution normalizes to 1. I(⋅)\begin{document}$I\left (\cdot \right)$\end{document} represents the signal intensity from segment image, ε0\begin{document}$\varepsilon _{0}$\end{document} is the minimum signal intensity of foreground points and is set to 128 in the algorithm. I(μi)≥ε0\begin{document}$I\left (\mu _{i}\right)\geq \varepsilon _{0}$\end{document} restrain the center of the Gaussian distribution to be a foreground point. |Σj|≤ε1\begin{document}$|\Sigma _{j}|\leq \varepsilon _{1}$\end{document} restrain the determinant of the covariance matrix which controls the suitable number of foreground points for each columnar region. ε1\begin{document}$\varepsilon _{1}$\end{document} is set to the cube of three times the average diameter of neurite.
+Based on probability density function, the conditional probability can be computed as:
 
-Maximum likelihood is employed to estimate the parameters of Gaussian mixture model and the final optimization problem is formed as follows:(6)(πj∗,μj∗,Σj∗)j=1,2,⋯,K=arg⁡max∏i=1nP(xi)=arg⁡max∏i=1n(∑j=1KπjN(xi|μj,Σj))\begin{document}$$\displaystyle  \left (\pi _{j}^{*},\mu _{j}^{*},\Sigma _{j}^{*}\right)_{j=1,2,\cdots ,K}=\arg \max\prod \limits_{i=1}^{n}P\left (x_i\right)=\arg \max \prod \limits_{i=1}^{n}\left (\sum _{j=1}^{K}\pi _{j}N\left (x_i | \mu _{j},\Sigma _{j}\right)\right)$$\end{document}(7)s.t.∑j=1Kπj=1,I(μj)≥ε0,|Σj|≤ε1\begin{document}$$\displaystyle  s.t.\sum _{j=1}^{K}\pi _{j}=1,I\left (\mu _{j}\right)\geq \varepsilon _{0},|\Sigma _{j}|\leq \varepsilon _{1}$$\end{document}
+$$
+p_{i,j}=P(x_{i}|cluster_{j})=\frac{\pi_{j}N(x_{i}|\mu_{j},Σ_{j})}{\sumj=1K\pi_{j}N(x_{i}|\mu_{j},Σ_{j})}j=(1,2,...,K)
+$$
 
-In solving this optimization problem, we employ peak density algorithm (Wei et al., 2023) to compute density for each foreground points and sort them in descending order. We first select a point as a seed point, and the foreground points within a radius of 5 centered on it will be excluded. Then we continue selecting seed points until all foreground points are either selected or excluded. The selected K\begin{document}$K$\end{document} seed points represent the initial K\begin{document}$K$\end{document} components. We select signal points from the median (based on density) to both sides as seed points, which can decrease the situations that seed points lie in the center of a crossover or the edge of neurites. This strategy can make the generated columnar regions be more reasonable. The positions of the K\begin{document}$K$\end{document} seed points are set to the initial (μ1,μ2,⋯,μK)\begin{document}$\left (\mu _{1},\mu _{2},\cdots ,\mu _K\right)$\end{document}. The initial setting of the covariance matrix is the identity matrix. The constrained Gaussian mixture model was solved by the EM algorithm (McLachlan and Krishnan, 2007), the EM algorithm is divided into two steps:
+Here, $p_{i,j}$ is the conditional probability for $x_{i}$ to assign to the j-th cluster. If $p_{i,k}$ is the maximum value among ${p_{i,1},...p_{i,K}}$, the foreground point $x_{i}$ will be assigned to the k-th cluster. All the points assigned to the k-th cluster form a columnar region. Considering that both the number of foreground points and component number are large, we have added some constrained conditions for Gaussian mixture model as follows:
 
-E-step: For each point xi\begin{document}$x_i$\end{document}, compute its probability within each Gaussian distribution using the probability density function:(8)pi,j=πjN(xi|μj,Σj)∑j=1KπjN(xi|μj,Σj)\begin{document}$$\displaystyle  p_{i,j}=\frac{\pi _{j}N\left (x_{i}|\mu _{j},\Sigma _{j}\right)}{\sum _{j=1}^{K}\pi _{j}N\left (x_{i}|\mu _{j},\Sigma _{j}\right)}$$\end{document}
+$$
+\sumj=1K\pi_{j}=1
+$$
 
-M-step: Update the mean value, covariance matrices, and weight vectors.(9)πj=∑i=1npi,jn\begin{document}$$\displaystyle  \pi _{j}=\frac{\sum _{i=1}^{n}p_{i,j}}{n}$$\end{document}(10)μj=∑i=1npi,jxi∑i=1npi,j\begin{document}$$\displaystyle  \mu _{j}=\frac{\sum _{i=1}^{n}p_{i,j}x_{i}}{\sum _{i=1}^{n}p_{i,j}}$$\end{document}(11)Σj=∑i=1npi,j(xi−μj)(xi−μj)T∑i=1npi,j\begin{document}$$\displaystyle  \Sigma _{j}=\frac{\sum _{i=1}^{n}p_{i,j}\left (x_{i}- \mu _{j}\right)\left (x_{i}- \mu _{j}\right)^{T}}{\sum _{i=1}^{n}p_{i,j}}$$\end{document}
 
-Besides, the constrained Gaussian mixture model possesses additional constraints: I(μj)≥ε0\begin{document}$I\left (\mu _{j}\right)\geq \varepsilon _{0}$\end{document} and |Σj|≤ε1\begin{document}$|\Sigma _{j}|\leq \varepsilon _{1}$\end{document}. After finishing the M-step, μj\begin{document}$\mu _{j}$\end{document} with I(μj)<ε0\begin{document}$I\left (\mu _{j}\right) \lt \varepsilon _{0}$\end{document} are selected. Eigenvalue decomposition is applied on Σj\begin{document}$\Sigma _{j}$\end{document} and obtains eigenvalues (γ1,γ2,γ3)\begin{document}$\left (\gamma _{1},\gamma _{2},\gamma _{3}\right)$\end{document} in descending order and eigenvectors (v1,v2,v3)\begin{document}$\left (v_{1},v_{2},v_{3}\right)$\end{document}. μj\begin{document}$\mu _{j}$\end{document} is updated along v1\begin{document}$v_{1}$\end{document} and −v1\begin{document}$- v_{1}$\end{document} to generate two new clusters with mean value and covariance matrices (uj,1,Σj,1)\begin{document}$\left (u_{j,1},\Sigma _{j,1}\right)$\end{document} and (uj,2,Σj,2)\begin{document}$\left (u_{j,2},\Sigma _{j,2}\right)$\end{document} as follows:(12)uj,1=uj+v1⋅γ2\begin{document}$$\displaystyle  u_{j,1}=u_{j}+v_{1}\cdot \frac{\gamma }{2}$$\end{document}(13)uj,2=uj−v1⋅γ2\begin{document}$$\displaystyle  u_{j,2}=u_{j}- v_{1}\cdot \frac{\gamma }{2}$$\end{document}(14)Σj,1=∑i=1npi,j(xi−μj,1)(xi−μj,1)T∑i=1npi,j\begin{document}$$\displaystyle  \Sigma _{j,1}=\frac{\sum _{i=1}^{n}p_{i,j}\left (x_{i}- \mu _{j,1}\right)\left (x_{i}- \mu _{j,1}\right)^{T}}{\sum _{i=1}^{n}p_{i,j}}$$\end{document}(15)Σj,2=∑i=1npi,j(xi−μj,2)(xi−μj,2)T∑i=1npi,j\begin{document}$$\displaystyle  \Sigma _{j,2}=\frac{\sum _{i=1}^{n}p_{i,j}\left (x_{i}- \mu _{j,2}\right)\left (x_{i}- \mu _{j,2}\right)^{T}}{\sum _{i=1}^{n}p_{i,j}}$$\end{document}
 
-For Σj>ε1\begin{document}$\Sigma _{j} \gt \varepsilon _{1}$\end{document}, it will be updated as follows:(16)Σj′=ε1ΣjΣj\begin{document}$$\displaystyle  \Sigma _{j}^{'}=\frac{\varepsilon _{1}}{\Sigma _{j}}\Sigma _{j}$$\end{document}
+$$
+I(\mu_{j})\geq\epsilon_{0},|Σ_{j}|\leq\epsilon_{1}
+$$
 
-Iteration of E-step and M-step will continue until the k-th result {μk,Σk}\begin{document}$\left \{\mu^{k},\Sigma^{k}\right\}$\end{document} and (k-1)-th result satisfy the stopping criteria:(17)‖uk−uk−1uk−1‖<εand‖Σk−Σk−1Σk−1‖<ε\begin{document}$$\displaystyle  \| \frac{u^{k}- u^{k- 1}}{u^{k- 1}}\| \lt \varepsilon\, \, \mathrm{and}\,\, \| \frac{\Sigma ^{k}- \Sigma ^{k- 1}}{\Sigma^{k- 1}}\| \lt \varepsilon $$\end{document}
+$\sumj=1K\pi_{j}=1$ refers to the fact that the total probability distribution normalizes to 1. $I(⋅)$ represents the signal intensity from segment image, $\epsilon_{0}$ is the minimum signal intensity of foreground points and is set to 128 in the algorithm. $I(\mu_{i})\geq\epsilon_{0}$ restrain the center of the Gaussian distribution to be a foreground point. $|Σ_{j}|\leq\epsilon_{1}$ restrain the determinant of the covariance matrix which controls the suitable number of foreground points for each columnar region. $\epsilon_{1}$ is set to the cube of three times the average diameter of neurite.
 
-Here the division represents element-wise division and ‖ · ‖\begin{document}$\| \cdot \| $\end{document} denotes L2\begin{document}$L_{2}$\end{document}-norm and ε\begin{document}$\varepsilon $\end{document} is set to 0.01.
+Maximum likelihood is employed to estimate the parameters of Gaussian mixture model and the final optimization problem is formed as follows:
 
-## Shape characterization of columnar regions
+$$
+(\pi_{j}^{∗},\mu_{j}^{∗},Σ_{j}^{∗})_{j=1,2,⋯,K}=arg⁡max\prodi=1nP(x_{i})=arg⁡max\prodi=1n(\sumj=1K\pi_{j}N(x_{i}|\mu_{j},Σ_{j}))
+$$
 
-After deriving the columnar regions through solving the constrained Gaussian mixture model, it is imperative to characterize their geometric shape (terminals and centerlines). For this purpose, we calculate the minimum-volume ellipsoids that can fully encompass each individual columnar region. For c∈R3\begin{document}$c\in R^{3}$\end{document}, Q∈S++3\begin{document}$Q\in S_{++}^{3}$\end{document}, a three-dimensional ellipsoid can be defined as follows Sun and Freund, 2004:(18)Ec,Q:={x∈R3|(x−c)TQ(x−c)≤1}\begin{document}$$\displaystyle  E_{c,Q}\colon =\left \{x\in R^{3}|\left (x- c\right)^{T}Q\left (x- c\right)\leq 1\right \}$$\end{document}
 
-Here, c\begin{document}$c$\end{document} is the center of ellipsoid, Q\begin{document}$Q$\end{document} represents the geometric shape, S++3\begin{document}$S_{++}^{3}$\end{document} denotes the convex cone of 3×3 symmetric positive definite matrices. The volume of Ec,Q\begin{document}$E_{c,Q}$\end{document} is given by the formula:(19)Volume(Ec,Q)=π3/2Γ(3/2+1)1det(Q)\begin{document}$$\displaystyle  Volume\left (E_{c,Q}\right)=\frac{\pi ^{3/2}}{\Gamma \left (3/2+1\right)}\frac{1}{\sqrt{det\left (Q\right)}}$$\end{document}
 
-Here, Γ(⋅)\begin{document}$\Gamma \left (\cdot \right)$\end{document} is the standard gamma function of calculus, det(Q)\begin{document}$det\left (Q\right)$\end{document} means the determinant of matrix Q. Minimizing the volume of Ec,Q\begin{document}$E_{c,Q}$\end{document} is equivalent to minimizing det(Q−1/2)\begin{document}$det\left (Q^{- 1/2}\right)$\end{document}. Therefore, for a columnar region with foreground points P{x1,x2,…xm}\begin{document}$P\left \{x_{1},x_{2},\ldots x_{m}\right \}$\end{document}, we define the target function as follows:(20)P1:(c∗,Q∗)=arg⁡minc,Qdet(Q−1/2)\begin{document}$$\displaystyle  P1\colon \left (c^{*},Q^{*}\right)={\arg \min}_{c,Q}det\left (Q^{- 1/2}\right)$$\end{document}(21)s.t.(xi−c)TQ(xi−c)≤1,i=1,2...m\begin{document}$$\displaystyle s.t.\left (x_{i}- c\right)^{T}Q\left (x_{i}- c\right)\leq 1, i=1,2\,...\,m$$\end{document}(22)c∈CHull(P),Q∈S++3\begin{document}$$\displaystyle c\in CHull\left (P\right),\, Q\in S_{++}^{3}$$\end{document}
+$$
+s.t.\sumj=1K\pi_{j}=1,I(\mu_{j})\geq\epsilon_{0},|Σ_{j}|\leq\epsilon_{1}
+$$
 
-Here c∈CHull(Pi)\begin{document}$c\in CHull\left (P_{i}\right)$\end{document} restrain the solved center of ellipsoid to locate within the smallest convex hull formed by the clustering points. To solve this problem, a variable substitution A=Q1/2\begin{document}$A=Q^{1/2}$\end{document} and y=Q1/2c\begin{document}$y=Q^{1/2}c$\end{document} were applied to Equation 20 and Equation 21, the original problem P1 can be transformed into a convex optimization problem as follows:(23)P2:(A∗,y∗)=arg⁡minA,y-lndet(A)\begin{document}$$\displaystyle  P2\colon \left (A^{*},y^{*}\right)=\underset{A,y}{\arg \min} \, \text{-} \, ln \, det \left (A\right)$$\end{document}(24)s.t.(Axi−y)T(Axi−y)≤1,i=1,2,...,m\begin{document}$$\displaystyle s.t.\, \left (Ax_{i}- y\right)^{T}\left (Ax_{i}- y\right)\leq 1, \quad i=1,2,...,m$$\end{document}(25)A∈S++3\begin{document}$$\displaystyle A\in S_{++}^{3}$$\end{document}
+In solving this optimization problem, we employ peak density algorithm (Wei et al., 2023) to compute density for each foreground points and sort them in descending order. We first select a point as a seed point, and the foreground points within a radius of 5 centered on it will be excluded. Then we continue selecting seed points until all foreground points are either selected or excluded. The selected $K$ seed points represent the initial $K$ components. We select signal points from the median (based on density) to both sides as seed points, which can decrease the situations that seed points lie in the center of a crossover or the edge of neurites. This strategy can make the generated columnar regions be more reasonable. The positions of the $K$ seed points are set to the initial $(\mu_{1},\mu_{2},⋯,\mu_{K})$. The initial setting of the covariance matrix is the identity matrix. The constrained Gaussian mixture model was solved by the EM algorithm (McLachlan and Krishnan, 2007), the EM algorithm is divided into two steps:
 
-Through adding the logarithmic barrier function, we can obtain the following formula:(26)P3:(A∗,y∗,θ∗)=arg⁡minA,y,θ-lndet(A)−θ∑i=1mln⁡(zi)\begin{document}$$\displaystyle   P3\colon\left (A^{*},y^{*},\theta ^{*}\right)=\underset{A,y,\theta }{\arg \min} \, \text{-} \, ln \, det \left (A\right)- \theta \sum \limits_{i=1}^{m}\ln \left (z_{i}\right)$$\end{document}(27)s.t.(Axi−y)T(Axi−y)+zi=1,i=1,2,...,m\begin{document}$$\displaystyle s.t.\left (Ax_{i}- y\right)^{T}\left (Ax_{i}- y\right) + z_{i}=1, \quad i=1,2,...,m$$\end{document}(28)A∈S++3,zi>0\begin{document}$$\displaystyle A\in S_{++}^{3},z_{i} \gt 0$$\end{document}
+E-step: For each point $x_{i}$, compute its probability within each Gaussian distribution using the probability density function:
 
-As θ\begin{document}$\theta $\end{document} varies in the interval (0,∞)\begin{document}$\left (0,\infty \right)$\end{document}, the solution of P3\begin{document}$P3$\end{document} changes. When θ\begin{document}$\theta $\end{document} approaches 0, the optimal solution of P3\begin{document}$P3$\end{document} tends to the optimal solution of P2\begin{document}$P2$\end{document}. By adding the dual multipliers di\begin{document}$d_{i}$\end{document} which satisfies di⋅zi=θ\begin{document}$d_{i}\cdot z_{i}=\theta $\end{document}, the optimality conditions can be written as:(29)∑i=1mdi[(Axi−y)xiT+xi(Axi−y)T]−A−1=0\begin{document}$$\displaystyle  \sum \limits_{i=1}^{m} d_{i}\left [\left (Ax_{i}- y\right)x_{i}^{T}+x_{i}\left (Ax_{i}- y\right)^{T}\right ]- A^{- 1}=0$$\end{document}(30)∑i=1mdi(y−Axi)=0\begin{document}$$\displaystyle  \sum \limits_{i=1}^{m} d_{i}\left (y- Ax_{i}\right)=0$$\end{document}(31)(Axi−y)T(Axi−y)+zi=1i=1,2,...,m\begin{document}$$\displaystyle  \left (Ax_{i}- y\right)^{T}\left (Ax_{i}- y\right)+z_{i}=1 \, i=1,2,...,m$$\end{document}(32)∑i=1mdi⋅zi=θ,i=1,2,...,m\begin{document}$$\displaystyle  \sum \limits_{i=1}^{m} d_{i}\cdot z_{i}=\theta , \quad i=1,2,...,m$$\end{document}(33)di,zi≥0\begin{document}$$\displaystyle d_{i}, \, z_{i}\geq 0$$\end{document}
+$$
+p_{i,j}=\frac{\pi_{j}N(x_{i}|\mu_{j},Σ_{j})}{\sum_{j=1}^{K}\pi_{j}N(x_{i}|\mu_{j},Σ_{j})}
+$$
 
-At this point, the error between the solution of the system of equations and the optimal solution of P3\begin{document}$P3$\end{document} is less than dTz\begin{document}$d^{T}z$\end{document}. Through Equation 30, the explicit expression for solving y\begin{document}$y$\end{document} can be obtained as follows:(34)y=AXdeTd\begin{document}$$\displaystyle  y=\frac{AXd}{e^{T}d}$$\end{document}
+M-step: Update the mean value, covariance matrices, and weight vectors.
 
-Here, X\begin{document}$X$\end{document} stands for a 3×m\begin{document}$3\times m$\end{document} matrix [x1|x2|...|xm]\begin{document}$\left [x_{1}|x_{2}|...|x_{m}\right ]$\end{document}, e\begin{document}$e$\end{document} stands for vector of ones (1,1,...,1)1×mT\begin{document}$\left (1,1,...,1\right)_{1\times m}^{T}$\end{document} and d\begin{document}$d$\end{document} stands for (d1,d2,...,dm)1×mT\begin{document}$\left (d_{1},d_{2},...,d_{m}\right)_{1\times m}^{T}$\end{document}. Substitute Equation 34 into Equation 29, the equation for matrix A\begin{document}$A$\end{document} can be obtained by:(35)(XDXT−XddTXTeTd)A+A(XDXT−XddTXTeTd)=A−1\begin{document}$$\displaystyle  \left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)A+A\left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)=A^{- 1}$$\end{document}
+$$
+\pi_{j}=\frac{\sum_{i=1}^{n}p_{i,j}}{n}
+$$
 
-Here, D\begin{document}$D$\end{document} stands for a m×m\begin{document}$m\times m$\end{document} diagonal matrix Diag(d1,d2,...,dm)\begin{document}$Diag\left (d_{1},d_{2},...,d_{m}\right)$\end{document}. And the explicit expression for A\begin{document}$A$\end{document} is formed as(36)A=A(d)=[2(XDXT−XddTXTeTd)]−1/2\begin{document}$$\displaystyle  A=A\left (d\right)=\left [2\left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)\right ]^{- 1/2}$$\end{document}
 
-And explicit expression for y\begin{document}$y$\end{document}:(37)y=[2(XDXT−XddTXTeTd)]−1/2XdeTd\begin{document}$$\displaystyle  y=\frac{\left [2\left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)\right ]^{- 1/2}Xd}{e^{T}d}$$\end{document}
 
-Through substituting the above two equations to the system of Equations 29-33, variables A and y are eliminated. The following system of equations with only variables d and z can be obtained:(38)f(d)+z−e=0\begin{document}$$\displaystyle f\left (d\right)+z- e=0$$\end{document}(39)Dz−θe=0\begin{document}$$\displaystyle Dz- \theta e=0$$\end{document}(40)di,zi≥0\begin{document}$$\displaystyle d_{i}, \, z_{i}\geq 0$$\end{document}
+$$
+\mu_{j}=\frac{\sum_{i=1}^{n}p_{i,j}x_{i}}{\sum_{i=1}^{n}p_{i,j}}
+$$
 
-Here, f(d)\begin{document}$f\left (d\right)$\end{document} is nonlinear function of variable d\begin{document}$d$\end{document}:(41)fi(d)=(xi−XdeTd)[2(XDXT−XddTXTeTd)]−1⋅(xi−XdeTd)i=1,2,...,m\begin{document}$$\displaystyle  f_{i}\left (d\right)=\left (x_{i}- \frac{Xd}{e^{T}d}\right)\left [2\left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)\right]^{- 1}\cdot \left (x_{i}- \frac{Xd}{e^{T}d}\right)i=1,2,...,m$$\end{document}
 
-For a fixed barrier parameter θ\begin{document}$\theta $\end{document}, we employ Newton’s method to solve the system of equations. We use ∇df(d)\begin{document}$\nabla _{d}f\left (d\right)$\end{document} to represent the Jacobian matrix of f(d)\begin{document}$f\left (d\right)$\end{document}. Thus, the Jacobian matrix of the system of equations can be computed as follows:(42)[∇df(d)IZD]\begin{document}$$\displaystyle \left [\begin{array}{cc}\nabla _{d}f\left (d\right) & I\\ Z & D\end{array}\right]$$\end{document}
 
-And the Newton’s direction is written as:(43)Δ(d)=(∇df(d)−D−1Z)−1(h1−D−1h2)\begin{document}$$\displaystyle \Delta \left (d\right)=\left (\nabla _{d}f\left (d\right)- D^{- 1}Z\right)^{- 1}\left (h_{1}- D^{- 1}h_{2}\right)$$\end{document}(44)Δ(z)=D−1h2−D−1Z(∇df(d)−D−1Z)−1(h1−D−1h2)\begin{document}$$\displaystyle \Delta \left (z\right)=D^{- 1}h_{2}- D^{- 1}Z\left (\nabla _{d}f\left (d\right)- D^{- 1}Z\right)^{- 1}\left (h_{1}- D^{- 1}h_{2}\right)$$\end{document}(45)h1=e−z−f(d),h2=θe−Dz\begin{document}$$\displaystyle  h_1 = e - z - f(d), \quad h_{2}=\theta e- D z$$\end{document}
+$$
+Σ_{j}=\frac{\sum_{i=1}^{n}p_{i,j}(x_{i}−\mu_{j})(x_{i}−\mu_{j})^{T}}{\sum_{i=1}^{n}p_{i,j}}
+$$
 
-With initial (d0,z0)\begin{document}$\left (d_{0}, z_{0}\right)$\end{document}, iterate with (dn,zn)=(dn−1,zn−1)+β~(Δ(dn−1),Δ(zn−1))\begin{document}$\left (d_{n},z_{n}\right)=\left (d_{n- 1},z_{n- 1}\right)+\tilde{\beta }\left (\Delta \left (d_{n- 1}\right),\Delta \left (z_{n- 1}\right)\right)$\end{document} to obtain the final optimal solution, β~\begin{document}$\tilde{\beta }$\end{document} represents the Newton’s step. Detailed process can see the pseudo code as follows:
+Besides, the constrained Gaussian mixture model possesses additional constraints: $I(\mu_{j})\geq\epsilon_{0}$ and $|Σ_{j}|\leq\epsilon_{1}$. After finishing the M-step, $\mu_{j}$ with $I(\mu_{j})<\epsilon_{0}$ are selected. Eigenvalue decomposition is applied on $Σ_{j}$ and obtains eigenvalues $(\gamma_{1},\gamma_{2},\gamma_{3})$ in descending order and eigenvectors $(v_{1},v_{2},v_{3})$. $\mu_{j}$ is updated along $v_{1}$ and $−v_{1}$ to generate two new clusters with mean value and covariance matrices $(u_{j,1},Σ_{j,1})$ and $(u_{j,2},Σ_{j,2})$ as follows:
 
-With the solved optimal solution of (Q,c)\begin{document}$\left (Q, c \right)$\end{document}, we then check whether c\begin{document}$c$\end{document} is located within the convex hull of the input point set {x1,x2,...,xm}\begin{document}$\left \{x_{1},x_{2},...,x_{m}\right \}$\end{document}. If it is not, a constrained Gaussian mixture model will be applied to partition it into two subsets and solve the minimum-volume covering ellipsoids problem again in the two subsets. Through solving the above minimum-volume covering ellipsoids problem, we can characterize the columnar regions more accurately.
+$$
+u_{j,1}=u_{j}+v_{1}⋅\frac{\gamma}{2}
+$$
 
-Note that from constrained GMM, each cluster has the corresponding mean and covariance matrix of points in the cluster. These two values essentially describe the shape of the cluster. However, if these two values directly replace c*\begin{document}$c^{*}$\end{document} and Q*\begin{document}$Q^{*}$\end{document}, the exported ellipsoid may only encompass a part of points in the cluster. For covering all points in the cluster, all elements in the covariance matrix are needed to be proportionally enlarged, but the volume of the corresponding ellipsoid is not minimum. These two cases will reduce the accuracy of the connections between clusters, that is columnar regions. So, we introduce the minimum-volume covering ellipsoid model to extract the shape of columnar region.
 
-## Skeleton generation using 0-1 assignment model
 
-The 0–1 assignment model (Volgenant, 1996) can robustly and accurately establish connections between particles in live-cell imaging (Jaqaman et al., 2008). It is particularly effective in handling cases where particles are densely distributed, merged, or split. We analogize column regions to particles and apply the 0–1 assignment model to build the connections between column regions. For the i-th columnar region, the center and the two endpoints of the longest axis of its minimum-volume covering ellipsoid are denoted by ci,ti,0,ti,1\begin{document}$c_{i}, t_{i,0}, t_{i,1}$\end{document}. The direction refers to the pointing of the center point towards ti,k\begin{document}$t_{i,k}$\end{document}, k equal to 0 or 1. According to the direction and the endpoints, we design the cost matrix for building the 0–1 assignment model.(46)C=[c(t1,0,t1,0)c(t1,0,t1,1)⋯c(t1,0,tn,1)c(t1,1,t1,0)c(t1,1,t1,1)⋯c(t1,1,tn,1)D⋮⋮⋮⋮c(tn,1,t1,0)c(tn,1,t1,1)⋯c(tn,1,tn,1)DD]4n×4n\begin{document}$$\displaystyle C=\left [\begin{array}{cccccc}c\left (t_{1,0},t_{1,0}\right) & c\left (t_{1,0},t_{1,1}\right) & \cdots & c\left (t_{1,0},t_{n,1}\right) & & \\c\left (t_{1,1},t_{1,0}\right) & c\left (t_{1,1},t_{1,1}\right) & \cdots & c\left (t_{1,1},t_{n,1}\right) & & D\\\vdots & \vdots & \vdots & \vdots & & \\c\left (t_{n,1},t_{1,0}\right) & c\left (t_{n,1},t_{1,1}\right) & \cdots & c\left (t_{n,1},t_{n,1}\right) & & \\ & & & & & \\ & D & & & & D\end{array}\right]_{4n\times 4n}$$\end{document}(47)c(ti,i0,tj,j0)={100if(i=j)norm(ti,i0,tj,j0)(0.5×(θ(ti,i0,tj,j0)3+1.001))4if(i≠j)\begin{document}$$\displaystyle c\left (t_{i,i0},t_{j,j0}\right)= \begin{cases}100 & if\left (i=j\right)\\  \frac{norm\left (t_{i,i0},t_{j,j0}\right)}{\left (0.5\times \left (\frac{\theta \left (t_{i,i0},t_{j,j0}\right)}{3}+1.001\right)\right)^{4}} & if\left (i\neq j\right)\end{cases}$$\end{document}(48)θ(ti,i0,tj,j0)=⟨dir(ci,ti,i0),dir(ci,tj,j0)⟩+⟨dir(cj,tj,j0),dir(cj,ti,i0)⟩−⟨dir(ci,ti,i0),dir(cj,tj,j0)⟩\begin{document}$$\displaystyle \theta \left (t_{i,i0},t_{j,j0}\right)= &  \left \langle dir\left (c_{i},t_{i,i0}\right),dir\left (c_{i},t_{j,j0}\right)\right \rangle +\left \langle dir\left (c_{j},t_{j,j0}\right),dir\left (c_{j},t_{i,i0}\right)\right \rangle \\ &  - \left \langle dir\left (c_{i},t_{i,i0}\right),dir\left (c_{j},t_{j,j0}\right)\right \rangle $$\end{document}
+$$
+u_{j,2}=u_{j}−v_{1}⋅\frac{\gamma}{2}
+$$
 
-Here, D is 2n×2n auxiliary matrix all elements of which are all set 100. Both i0\begin{document}$i0$\end{document} and j0\begin{document}$j0$\end{document} in Equation 47 are equal to 0 or 1, labeling the two endpoints of the longest axis of the ellipsoid. norm(ti,i0,tj,j0)\begin{document}$norm\left (t_{i,i0},t_{j,j0}\right)$\end{document} represents the Euclidean distance between ti,i0\begin{document}$t_{i,i0}$\end{document} and tj,j0\begin{document}$t_{j,j0}$\end{document}. θ(ti,i0,tj,j0)\begin{document}$\theta \left (t_{i,i0},t_{j,j0}\right)$\end{document} describes the angle between two ellipsoids, that is two columnar regions. dir(ci,ti,i0)\begin{document}$dir\left (c_{i},t_{i,i0}\right)$\end{document} represents the line from point ci\begin{document}$c_{i}$\end{document} to ti,i0\begin{document}$t_{i,i0}$\end{document}. 〈 dir(ci,ti,i0),dir(ci,tj,j0) 〉\begin{document}$\left \langle dir\left (c_{i},t_{i,i0}\right),dir\left (c_{i},t_{j,j0}\right)\right \rangle $\end{document} represents cosine angle between the two lines. The threshold of 100 in D in Equation 46 and Equation 47 is an experimental value designed to ensure that the terminal points of neurites do not connect to more than one other terminal point.
 
-After setting the cost matrix, the 0–1 assignment problem is defined as follows:(49)A=argminA∑i=14n∑j=14nAijCij\begin{document}$$\displaystyle  A=\mathrm{arg \, min}_{A}\sum _{i=1}^{4n}\sum _{j=1}^{4n}A_{ij}C_{ij}$$\end{document}(50)s.t.∑i=14nAi,j=1(j=1,2,⋯,4n)\begin{document}$$\displaystyle  s.t.\sum _{i=1}^{4n}A_{i,j}=1\left (j=1,2,\cdots ,4n\right)$$\end{document}(51)∑j=14nAi,j=1(i=1,2,⋯,4n)\begin{document}$$\displaystyle  \sum _{j=1}^{4n}A_{i,j}=1\left (i=1,2,\cdots ,4n\right)$$\end{document}
 
-Here, A\begin{document}$A$\end{document} represents the connectivity matrix between different terminals of columnar regions: if Ai,j=1\begin{document}$A_{i,j}=1$\end{document}, then establish connection between terminal i\begin{document}$i$\end{document} and terminal j\begin{document}$j$\end{document}, if Ai,j=0\begin{document}$A_{i,j}=0$\end{document}, then establish no connection between terminal i\begin{document}$i$\end{document} and terminal j\begin{document}$j$\end{document}.∑i=14nAi,j=1(j=1,2,⋯,4n)\begin{document}$\sum _{i=1}^{4n}A_{i,j}=1\left (j=1,2,\cdots ,4n\right)$\end{document} and ∑j=14nAi,j=1(i=1,2,⋯,4n)\begin{document}$\sum _{j=1}^{4n}A_{i,j}=1\left (i=1,2,\cdots ,4n\right)$\end{document} restrain each terminal from establishing connection with at most one other terminal. The Lapjv algorithm (Volgenant, 1996) is utilized to solve this optimization problem and the shapes of individual neurites in block images are formed. Furthermore, we employ the region growing method to generate skeletons from the reconstructed shape, achieving the neurites reconstruction from individual image blocks.
+$$
+Σ_{j,1}=\frac{\sumi=1np_{i,j}(x_{i}−\mu_{j,1})(x_{i}−\mu_{j,1})^{T}}{\sumi=1np_{i,j}}
+$$
 
-## Minimal information flow tree for revising the reconstruction
+
+
+$$
+Σ_{j,2}=\frac{\sumi=1np_{i,j}(x_{i}−\mu_{j,2})(x_{i}−\mu_{j,2})^{T}}{\sumi=1np_{i,j}}
+$$
+
+For $Σ_{j}>\epsilon_{1}$, it will be updated as follows:
+
+$$
+Σ_{j}^{′}=\frac{\epsilon_{1}}{Σ_{j}}Σ_{j}
+$$
+
+Iteration of E-step and M-step will continue until the k-th result ${\mu^{k},Σ^{k}}$ and (k-1)-th result satisfy the stopping criteria:
+
+$$
+‖\frac{u^{k}−u^{k−1}}{u^{k−1}}‖<\epsilonand‖\frac{Σ^{k}−Σ^{k−1}}{Σ^{k−1}}‖<\epsilon
+$$
+
+Here the division represents element-wise division and $‖·‖$ denotes $L_{2}$-norm and $\epsilon$ is set to 0.01.
+
+### Shape characterization of columnar regions
+
+After deriving the columnar regions through solving the constrained Gaussian mixture model, it is imperative to characterize their geometric shape (terminals and centerlines). For this purpose, we calculate the minimum-volume ellipsoids that can fully encompass each individual columnar region. For $c\inR^{3}$, $Q\inS_{++}^{3}$, a three-dimensional ellipsoid can be defined as follows Sun and Freund, 2004:
+
+$$
+E_{c,Q}:={x\inR^{3}|(x−c)^{T}Q(x−c)\leq1}
+$$
+
+Here, $c$ is the center of ellipsoid, $Q$ represents the geometric shape, $S_{++}^{3}$ denotes the convex cone of 3×3 symmetric positive definite matrices. The volume of $E_{c,Q}$ is given by the formula:
+
+$$
+Volume(E_{c,Q})=\frac{\pi^{3/2}}{Γ(3/2+1)}\frac{1}{\sqrt{det(Q)}}
+$$
+
+Here, $Γ(⋅)$ is the standard gamma function of calculus, $det(Q)$ means the determinant of matrix Q. Minimizing the volume of $E_{c,Q}$ is equivalent to minimizing $det(Q^{−1/2})$. Therefore, for a columnar region with foreground points $P{x_{1},x_{2},…x_{m}}$, we define the target function as follows:
+
+$$
+P1:(c^{∗},Q^{∗})=arg⁡min_{c,Q}det(Q^{−1/2})
+$$
+
+
+
+$$
+s.t.(x_{i}−c)^{T}Q(x_{i}−c)\leq1,i=1,2...m
+$$
+
+
+
+$$
+c\inCHull(P),Q\inS_{++}^{3}
+$$
+
+Here $c\inCHull(P_{i})$ restrain the solved center of ellipsoid to locate within the smallest convex hull formed by the clustering points. To solve this problem, a variable substitution $A=Q^{1/2}$ and $y=Q^{1/2}c$ were applied to Equation 20 and Equation 21, the original problem P1 can be transformed into a convex optimization problem as follows:
+
+$$
+P2:(A^{∗},y^{∗})=arg⁡minA,y-lndet(A)
+$$
+
+
+
+$$
+s.t.(Ax_{i}−y)^{T}(Ax_{i}−y)\leq1,i=1,2,...,m
+$$
+
+
+
+$$
+A\inS_{++}^{3}
+$$
+
+Through adding the logarithmic barrier function, we can obtain the following formula:
+
+$$
+P3:(A^{∗},y^{∗},\theta^{∗})=arg⁡minA,y,\theta-lndet(A)−\theta\sumi=1mln⁡(z_{i})
+$$
+
+
+
+$$
+s.t.(Ax_{i}−y)^{T}(Ax_{i}−y)+z_{i}=1,i=1,2,...,m
+$$
+
+
+
+$$
+A\inS_{++}^{3},z_{i}>0
+$$
+
+As $\theta$ varies in the interval $(0,∞)$, the solution of $P3$ changes. When $\theta$ approaches 0, the optimal solution of $P3$ tends to the optimal solution of $P2$. By adding the dual multipliers $d_{i}$ which satisfies $d_{i}⋅z_{i}=\theta$, the optimality conditions can be written as:
+
+$$
+\sumi=1md_{i}[(Ax_{i}−y)x_{i}^{T}+x_{i}(Ax_{i}−y)^{T}]−A^{−1}=0
+$$
+
+
+
+$$
+\sumi=1md_{i}(y−Ax_{i})=0
+$$
+
+
+
+$$
+(Ax_{i}−y)^{T}(Ax_{i}−y)+z_{i}=1i=1,2,...,m
+$$
+
+
+
+$$
+\sumi=1md_{i}⋅z_{i}=\theta,i=1,2,...,m
+$$
+
+
+
+$$
+d_{i},z_{i}\geq0
+$$
+
+At this point, the error between the solution of the system of equations and the optimal solution of $P3$ is less than $d^{T}z$. Through Equation 30, the explicit expression for solving $y$ can be obtained as follows:
+
+$$
+y=\frac{AXd}{e^{T}d}
+$$
+
+Here, $X$ stands for a $3\timesm$ matrix $[x_{1}|x_{2}|...|x_{m}]$, $e$ stands for vector of ones $(1,1,...,1)_{1\timesm}^{T}$ and $d$ stands for $(d_{1},d_{2},...,d_{m})_{1\timesm}^{T}$. Substitute Equation 34 into Equation 29, the equation for matrix $A$ can be obtained by:
+
+$$
+(XDX^{T}−\frac{Xdd^{T}X^{T}}{e^{T}d})A+A(XDX^{T}−\frac{Xdd^{T}X^{T}}{e^{T}d})=A^{−1}
+$$
+
+Here, $D$ stands for a $m\timesm$ diagonal matrix $Diag(d_{1},d_{2},...,d_{m})$. And the explicit expression for $A$ is formed as
+
+$$
+A=A(d)=[2(XDX^{T}−\frac{Xdd^{T}X^{T}}{e^{T}d})]^{−1/2}
+$$
+
+And explicit expression for $y$:
+
+$$
+y=\frac{[2(XDX^{T}−\frac{Xdd^{T}X^{T}}{e^{T}d})]^{−1/2}Xd}{e^{T}d}
+$$
+
+Through substituting the above two equations to the system of Equations 29-33, variables A and y are eliminated. The following system of equations with only variables d and z can be obtained:
+
+$$
+f(d)+z−e=0
+$$
+
+
+
+$$
+Dz−\thetae=0
+$$
+
+
+
+$$
+d_{i},z_{i}\geq0
+$$
+
+Here, $f(d)$ is nonlinear function of variable $d$:
+
+$$
+f_{i}(d)=(x_{i}−\frac{Xd}{e^{T}d})[2(XDX^{T}−\frac{Xdd^{T}X^{T}}{e^{T}d})]^{−1}⋅(x_{i}−\frac{Xd}{e^{T}d})i=1,2,...,m
+$$
+
+For a fixed barrier parameter $\theta$, we employ Newton’s method to solve the system of equations. We use $\nabla_{d}f(d)$ to represent the Jacobian matrix of $f(d)$. Thus, the Jacobian matrix of the system of equations can be computed as follows:
+
+$$
+[∇_{d}f(d)IZD]
+$$
+
+And the Newton’s direction is written as:
+
+$$
+Δ(d)=(\nabla_{d}f(d)−D^{−1}Z)^{−1}(h_{1}−D^{−1}h_{2})
+$$
+
+
+
+$$
+Δ(z)=D^{−1}h_{2}−D^{−1}Z(\nabla_{d}f(d)−D^{−1}Z)^{−1}(h_{1}−D^{−1}h_{2})
+$$
+
+
+
+$$
+h_{1}=e−z−f(d),h_{2}=\thetae−Dz
+$$
+
+With initial $(d_{0},z_{0})$, iterate with $(d_{n},z_{n})=(d_{n−1},z_{n−1})+\beta~(Δ(d_{n−1}),Δ(z_{n−1}))$ to obtain the final optimal solution, $\beta~$ represents the Newton’s step. Detailed process can see the pseudo code as follows:
+
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 1. Compute Newton’s direction.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input: (d,z,θ)\begin{document}$\left (d,z,\theta \right)$\end{document} satisfying d,z&gt;0\begin{document}$d,z \gt 0$\end{document}, θ≥0\begin{document}$\theta\geq 0$\end{document}1. A−2(d)=[2(XDXT−XddTXTeTd)]\begin{document}$A^{- 2}\left (d\right)=\left [2\left (XDX^{T}- \frac{Xdd^{T}X^{T}}{e^{T}d}\right)\right ]$\end{document}2. Σ(d)=(X−XdeTeTd)A2(d)(X−XdeTeTd)\begin{document}$\Sigma \left (d\right)=\left (X- \frac{Xde^{T}}{e^{T}d}\right)A^{2}\left (d\right)\left (X- \frac{Xde^{T}}{e^{T}d}\right)$\end{document}3 ∇df(d)=−2(Σ(d)eTd+Σ(d)∘Σ(d))\begin{document}$\nabla _{d}f\left (d\right)=- 2\left (\frac{\Sigma \left (d\right)}{e^{T}d}+\Sigma \left (d\right)\circ \Sigma \left (d\right)\right)$\end{document}4. (Δ(d),Δ(z))=((∇df(d)−D−1Z)−1(h1−D−1h2),D−1h2−D−1ZΔ(d))\begin{document}$\left (\Delta \left (d\right),\Delta \left (z\right)\right)=\left (\left (\nabla _{d}f\left (d\right)- D^{- 1}Z\right)^{- 1}\left (h_{1}- D^{- 1}h_{2}\right), D^{- 1}h_{2}- D^{- 1}Z\Delta \left (d\right)\right)$\end{document}Output: (Δ(d),Δ(z))\begin{document}$(\Delta (d),\Delta (z))$\end{document}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 2. Process of solving P2.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Input: {x1,x2,...,xm}\begin{document}$\left \{x_{1}, x_{2},...,x_{m}\right \}$\end{document}1. r=0.99\begin{document}$r=0.99$\end{document}, (d0,z0)=(32me,e−f(d0))\begin{document}$\left (d_{0},z_{0}\right)=\left (\frac{3}{2m}e,e- f\left (d_{0}\right)\right)$\end{document}2.E=−det(A(d))\begin{document}$E=- \det \left (A\left (d\right)\right)$\end{document}3. while (|e−f(d)−z|&gt;ε1\begin{document}$\left|e- f\left (d\right)- z \right| \gt \varepsilon _{1}$\end{document} or dTzE&gt;ε2\begin{document}$\frac{d^{T}z}{E} \gt \varepsilon _{2}$\end{document})4.   θ=dTz10m\begin{document}$\theta =\frac{d^{T}z}{10m}$\end{document}5.  (Δ(d),Δ(z))\begin{document}$\left (\Delta \left (d\right),\Delta \left (z\right)\right)$\end{document} = Compute_Newton_direction (d,z)\begin{document}$\left (d,z\right)$\end{document}6.  β¯=max{β|(d,z)+β(Δ(d),Δ(z)≥0)}\begin{document}$\bar{\beta }=\max \left \{\beta \left|\left (d,z\right)+\beta \left (\Delta \left (d\right),\Delta \left (z\right)\geq 0\right)\right\}\right.$\end{document}7.  β~=min(rβ¯,1)\begin{document}$\tilde{\beta }=\min \left (\bar{r\beta },1\right)$\end{document}8.  (d,z)=(d,z)+β~(Δ(d),Δ(z))\begin{document}$\left (d,z\right)=\left (d,z\right)+\tilde{\beta }\left (\Delta \left (d\right),\Delta \left (z\right)\right)$\end{document}9.  E=−det(A(d))\begin{document}$E=- \det \left (A\left (d\right)\right)$\end{document}Output: Q=A(d)2,c=A(d)−1y(d)\begin{document}$Q=A\left (d\right)^{2},{c=A}\left (d\right)^{- 1}y\left (d\right)$\end{document}</td>
+    </tr>
+  </tbody>
+</table>
+
+With the solved optimal solution of $(Q,c)$, we then check whether $c$ is located within the convex hull of the input point set ${x_{1},x_{2},...,x_{m}}$. If it is not, a constrained Gaussian mixture model will be applied to partition it into two subsets and solve the minimum-volume covering ellipsoids problem again in the two subsets. Through solving the above minimum-volume covering ellipsoids problem, we can characterize the columnar regions more accurately.
+
+Note that from constrained GMM, each cluster has the corresponding mean and covariance matrix of points in the cluster. These two values essentially describe the shape of the cluster. However, if these two values directly replace $c^{*}$ and $Q^{*}$, the exported ellipsoid may only encompass a part of points in the cluster. For covering all points in the cluster, all elements in the covariance matrix are needed to be proportionally enlarged, but the volume of the corresponding ellipsoid is not minimum. These two cases will reduce the accuracy of the connections between clusters, that is columnar regions. So, we introduce the minimum-volume covering ellipsoid model to extract the shape of columnar region.
+
+### Skeleton generation using 0-1 assignment model
+
+The 0–1 assignment model (Volgenant, 1996) can robustly and accurately establish connections between particles in live-cell imaging (Jaqaman et al., 2008). It is particularly effective in handling cases where particles are densely distributed, merged, or split. We analogize column regions to particles and apply the 0–1 assignment model to build the connections between column regions. For the i-th columnar region, the center and the two endpoints of the longest axis of its minimum-volume covering ellipsoid are denoted by $c_{i},t_{i,0},t_{i,1}$. The direction refers to the pointing of the center point towards $t_{i,k}$, k equal to 0 or 1. According to the direction and the endpoints, we design the cost matrix for building the 0–1 assignment model.
+
+$$
+C=[c(t_{1,0},t_{1,0})c(t_{1,0},t_{1,1})⋯c(t_{1,0},t_{n,1})c(t_{1,1},t_{1,0})c(t_{1,1},t_{1,1})⋯c(t_{1,1},t_{n,1})D⋮⋮⋮⋮c(t_{n,1},t_{1,0})c(t_{n,1},t_{1,1})⋯c(t_{n,1},t_{n,1})DD]_{4n\times4n}
+$$
+
+
+
+$$
+c(t_{i,i0},t_{j,j0})={100if(i=j)\frac{norm(t_{i,i0},t_{j,j0})}{(0.5\times(\frac{\theta(t_{i,i0},t_{j,j0})}{3}+1.001))^{4}}if(i\neqj)
+$$
+
+
+
+$$
+\theta(t_{i,i0},t_{j,j0})=⟨dir(c_{i},t_{i,i0}),dir(c_{i},t_{j,j0})⟩+⟨dir(c_{j},t_{j,j0}),dir(c_{j},t_{i,i0})⟩−⟨dir(c_{i},t_{i,i0}),dir(c_{j},t_{j,j0})⟩
+$$
+
+Here, D is 2n×2n auxiliary matrix all elements of which are all set 100. Both $i0$ and $j0$ in Equation 47 are equal to 0 or 1, labeling the two endpoints of the longest axis of the ellipsoid. $norm(t_{i,i0},t_{j,j0})$ represents the Euclidean distance between $t_{i,i0}$ and $t_{j,j0}$. $\theta(t_{i,i0},t_{j,j0})$ describes the angle between two ellipsoids, that is two columnar regions. $dir(c_{i},t_{i,i0})$ represents the line from point $c_{i}$ to $t_{i,i0}$. $〈dir(c_{i},t_{i,i0}),dir(c_{i},t_{j,j0})〉$ represents cosine angle between the two lines. The threshold of 100 in D in Equation 46 and Equation 47 is an experimental value designed to ensure that the terminal points of neurites do not connect to more than one other terminal point.
+
+After setting the cost matrix, the 0–1 assignment problem is defined as follows:
+
+$$
+A=argmin_{A}\sumi=14n\sumj=14nA_{ij}C_{ij}
+$$
+
+
+
+$$
+s.t.\sumi=14nA_{i,j}=1(j=1,2,⋯,4n)
+$$
+
+
+
+$$
+\sumj=14nA_{i,j}=1(i=1,2,⋯,4n)
+$$
+
+Here, $A$ represents the connectivity matrix between different terminals of columnar regions: if $A_{i,j}=1$, then establish connection between terminal $i$ and terminal $j$, if $A_{i,j}=0$, then establish no connection between terminal $i$ and terminal $j$.$\sumi=14nA_{i,j}=1(j=1,2,⋯,4n)$ and $\sumj=14nA_{i,j}=1(i=1,2,⋯,4n)$ restrain each terminal from establishing connection with at most one other terminal. The Lapjv algorithm (Volgenant, 1996) is utilized to solve this optimization problem and the shapes of individual neurites in block images are formed. Furthermore, we employ the region growing method to generate skeletons from the reconstructed shape, achieving the neurites reconstruction from individual image blocks.
+
+### Minimal information flow tree for revising the reconstruction
 
 The minimal information flow tree model is designed to modify the topology of skeletons, eliminate incorrect connections, and decompose them into multiple branches. When given an input skeleton file such as the swc file (Cannon et al., 1998), we convert it into a binary tree structure with the following steps.
 
-## Step 1
+#### Step 1
 
-select the neurite skeleton S1\begin{document}$S_{1}$\end{document}. S1\begin{document}$S_{1}$\end{document} has the largest length in the neurite skeletons that connect with each other. One of its terminal nodes is recorded as the head node n1\begin{document}$n_{1}$\end{document}.
+select the neurite skeleton $S_{1}$. $S_{1}$ has the largest length in the neurite skeletons that connect with each other. One of its terminal nodes is recorded as the head node $n_{1}$.
 
-## Step 2
+#### Step 2
 
-generate the initial tree structure. Starting at head node n1\begin{document}$n_{1}$\end{document}, search the linking nodes along the skeleton S1\begin{document}$S_{1}$\end{document}, denoted by n1s1,n2s1,⋯,nk1s1\begin{document}$n_{1}^{s_{1}},n_{2}^{s_{1}},\cdots ,n_{k_{1}}^{s_{1}}$\end{document}. The topology structure is ni→leftnode=ni+1s1\begin{document}$n_{i}\rightarrow leftnode=n_{i+1}^{s_{1}}$\end{document}.
+generate the initial tree structure. Starting at head node $n_{1}$, search the linking nodes along the skeleton $S_{1}$, denoted by $n_{1}^{s_{1}},n_{2}^{s_{1}},⋯,n_{k_{1}}^{s_{1}}$. The topology structure is $n_{i}→leftnode=n_{i+1}^{s_{1}}$.
 
-## Step 3
+#### Step 3
 
-generate new structure induced by the linking node n1s1\begin{document}$n_{1}^{s_{1}}$\end{document}. n1s1\begin{document}$n_{1}^{s_{1}}$\end{document} is regarded as the head node and its corresponding neurite skeleton is denoted by S2\begin{document}$S_{2}$\end{document}. Let n1s2,n2s2,⋯,nk2s2\begin{document}$n_{1}^{s_{2}},n_{2}^{s_{2}},\cdots ,n_{k_{2}}^{s_{2}}$\end{document} represent the linking nodes in skeleton S2\begin{document}$S_{2}$\end{document}. The corresponding topology structure is n1s1→rightnode=n1s2\begin{document}$n_{1}^{s_{1}}\rightarrow rightnode=n_{1}^{s_{2}}$\end{document}, nis2→leftnode=ni+1s2\begin{document}$n_{i}^{s_{2}}\rightarrow leftnode=n_{i+1}^{s_{2}}$\end{document}.
+generate new structure induced by the linking node $n_{1}^{s_{1}}$. $n_{1}^{s_{1}}$ is regarded as the head node and its corresponding neurite skeleton is denoted by $S_{2}$. Let $n_{1}^{s_{2}},n_{2}^{s_{2}},⋯,n_{k_{2}}^{s_{2}}$ represent the linking nodes in skeleton $S_{2}$. The corresponding topology structure is $n_{1}^{s_{1}}→rightnode=n_{1}^{s_{2}}$, $n_{i}^{s_{2}}→leftnode=n_{i+1}^{s_{2}}$.
 
-## Step 4
+#### Step 4
 
-repeat the operation in Step 3 for dealing with the linking nodes n2s1,⋯,nk1s1\begin{document}$n_{2}^{s_{1}},\cdots,n_{k_{1}}^{s_{1}}$\end{document}. The corresponding topology structures are added into the total tree structure. After obtaining the tree structures induced by linking nodes in S1\begin{document}$S_{1}$\end{document}, use the operation in Step 3 to generate the tree structures induced by linking nodes in S2\begin{document}$S_{2}$\end{document}. Continue in this manner until all linking nodes have been processed.
+repeat the operation in Step 3 for dealing with the linking nodes $n_{2}^{s_{1}},⋯,n_{k_{1}}^{s_{1}}$. The corresponding topology structures are added into the total tree structure. After obtaining the tree structures induced by linking nodes in $S_{1}$, use the operation in Step 3 to generate the tree structures induced by linking nodes in $S_{2}$. Continue in this manner until all linking nodes have been processed.
 
 To gain a better understanding of the above process, we have provided a demonstration of how to generate the corresponding binary tree from the skeletons of neurites (Figure 1—figure supplement 4).
 
-For the skeletons of neurites in an image block, the corresponding number of binary tree structures will be generated. We use the MIFT model to merge or split these binary structures. Suppose that an image stack contains m\begin{document}$m$\end{document} skeletons all of which have K nodes, denoted by n1,⋯,nK−1,nK\begin{document}$n_{1},\cdots ,n_{K- 1},n_{K}$\end{document}. The connections among these nodes are stored in a matrix W\begin{document}$W$\end{document} with K×K\begin{document}$K\times K$\end{document} elements. Wi,j=0\begin{document}$W_{i,j}=0$\end{document} indicates that there is no connection between node i\begin{document}$i$\end{document} and node j\begin{document}$j$\end{document}. Wi,j=−1\begin{document}$W_{i,j}=- 1$\end{document} indicates that j→headnode=i\begin{document}$j\rightarrow headnode=i$\end{document}, Wi,j=−2\begin{document}$W_{i,j}=- 2$\end{document} indicates that j→leftnode=i\begin{document}$j\rightarrow leftnode=i$\end{document}, Wi,j=−3\begin{document}$W_{i,j}=- 3$\end{document} indicates that j→rightnode=i\begin{document}$j\rightarrow rightnode=i$\end{document}.
+For the skeletons of neurites in an image block, the corresponding number of binary tree structures will be generated. We use the MIFT model to merge or split these binary structures. Suppose that an image stack contains $m$ skeletons all of which have K nodes, denoted by $n_{1},⋯,n_{K−1},n_{K}$. The connections among these nodes are stored in a matrix $W$ with $K\timesK$ elements. $W_{i,j}=0$ indicates that there is no connection between node $i$ and node $j$. $W_{i,j}=−1$ indicates that $j→headnode=i$, $W_{i,j}=−2$ indicates that $j→leftnode=i$, $W_{i,j}=−3$ indicates that $j→rightnode=i$.
 
-The information flow can be computed as follows:(52)W∗=argminW∑i=1Kf(W,ni)\begin{document}$$\displaystyle  W^{*}=\mathrm{arg \,min}_{W}\sum \limits_{i=1}^{K}f\left (W,n_{i}\right)$$\end{document}(53)f(W,ni)=cos(θ(ni→headnode,ni,ni→leftnode))\begin{document}$$\displaystyle  f\left (W,n_{i}\right)=cos\left (\theta \left (n_{i}\rightarrow headnode,n_{i},n_{i}\rightarrow leftnode\right)\right)$$\end{document}
+The information flow can be computed as follows:
 
-Here, the optimization objective function in Equation 53 is called information flow. θ(⋅)\begin{document}$\theta \left (\cdot \right)$\end{document} is the angle between flow from ni→headnode\begin{document}$n_{i}\rightarrow headnode$\end{document} to ni\begin{document}$n_{i}$\end{document} and flow from ni\begin{document}$n_{i}$\end{document} to ni→leftnode\begin{document}$n_{i}\rightarrow leftnode$\end{document}. To minimize the optimization problem while ensuring that the topology matrix W\begin{document}$W$\end{document} does not exhibit abnormal values, we adopt the strategy of dynamic programming to update the topology matrix W\begin{document}$W$\end{document}. Briefly, we calculate the other two possible angles θ(ni→headnode,ni,ni→rightnode)\begin{document}$\theta \left (n_{i}\rightarrow headnode,n_{i},n_{i}\rightarrow rightnode\right)$\end{document} and θ(ni→leftnode,ni,ni→rightnode)\begin{document}$\theta \left (n_{i}\rightarrow leftnode,n_{i},n_{i}\rightarrow rightnode\right)$\end{document} at the first linking node ni\begin{document}$n_{i}$\end{document}. The minimum information flow is selected, and W\begin{document}$W$\end{document} is updated. Following the updated W\begin{document}$W$\end{document}, the next branching node is found and information flow and W\begin{document}$W$\end{document} is updated. The updating process iterates until all nodes are updated. The final root nodes {r1,r2,...,rm}\begin{document}$\left \{r_{1},r_{2},...,r_{m}\right \}$\end{document} are obtained (node satisfies W(rt,i)=0or−1(i=1,...n)\begin{document}$W\left (r_{t}, i\right)=0\,\, \mathrm{or}\,\, - 1\left (i=1,...n\right)$\end{document} is set root node). The pseudo-code for solving the optimization problem is provided below:
+$$
+W^{∗}=argmin_{W}\sumi=1Kf(W,n_{i})
+$$
+
+
+
+$$
+f(W,n_{i})=cos(\theta(n_{i}→headnode,n_{i},n_{i}→leftnode))
+$$
+
+Here, the optimization objective function in Equation 53 is called information flow. $\theta(⋅)$ is the angle between flow from $n_{i}→headnode$ to $n_{i}$ and flow from $n_{i}$ to $n_{i}→leftnode$. To minimize the optimization problem while ensuring that the topology matrix $W$ does not exhibit abnormal values, we adopt the strategy of dynamic programming to update the topology matrix $W$. Briefly, we calculate the other two possible angles $\theta(n_{i}→headnode,n_{i},n_{i}→rightnode)$ and $\theta(n_{i}→leftnode,n_{i},n_{i}→rightnode)$ at the first linking node $n_{i}$. The minimum information flow is selected, and $W$ is updated. Following the updated $W$, the next branching node is found and information flow and $W$ is updated. The updating process iterates until all nodes are updated. The final root nodes ${r_{1},r_{2},...,r_{m}}$ are obtained (node satisfies $W(r_{t},i)=0or−1(i=1,...n)$ is set root node). The pseudo-code for solving the optimization problem is provided below:
+
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 3. Generation of Minimal Information Flow Tree.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># Graph defines tree topology of the nodes, t_node-&gt;left represents the left child node of t_node, t_node-&gt;right represents the right child node of t_node, t_node-&gt;head represents the head node of t_node.Input: N: {N0,N1,...,Nk}\begin{document}$\left \{N_{0},N_{1},...,N_{k}\right \}$\end{document}, Graph head: {N0}\begin{document}$\left \{N_{0}\right \}$\end{document}    Set={N0}\begin{document}$Set=\left \{N_{0}\right \}$\end{document}    While |Set|&gt;0\begin{document}$|Set| \gt 0$\end{document}:      t_node=Set[0]\begin{document}$t\_ node=Set\left [0\right ]$\end{document}      # calculate three possible information flow      res=calc_three_directions(t_node)\begin{document}$res=calc\_ three\_ directions\left (t\_ node\right)$\end{document}      if (res==0)\begin{document}$\left (res==0\right)$\end{document}:      # maintain original structure.        Set[0]=t_node−&gt;left\begin{document}$Set\left [0\right ]=t\_ node- \gt left$\end{document}       Set.push_back(t_node−&gt;right)\begin{document}$Set.push\_ back\left (t\_ node- \gt right\right)$\end{document}      if (res==1)\begin{document}$\left (res==1\right)$\end{document}:      # change the position of t_node’s two child nodes.       Exchange_child(t_node)\begin{document}$Exchange\_ child\left (t\_ node\right)$\end{document}       Set[0]=t_node−&gt;left\begin{document}$Set\left [0\right ]=t\_ node- \gt left$\end{document}       Set.push_back(t_node−&gt;right)\begin{document}$Set.push\_ back\left (t\_ node- \gt right\right)$\end{document}      if (res==2)\begin{document}$\left (res==2\right)$\end{document}:      # Information flows from t_node-&gt;left to t_node-&gt;right, update the structure along t_node-&gt;left and t_node-&gt;head, generate new head if possible.        New_node=Reverse_head(t_node)\begin{document}$New\_ node=Reverse\_ head\left (t\_ node\right)$\end{document}        Set[0]=New_node\begin{document}$Set\left [0\right ]=New\_ node$\end{document}Output: N: {N0,N1,...,Nk}\begin{document}$\left \{N_{0},N_{1},...,N_{k}\right \}$\end{document}, Graph head: {N0′,N1′,...,Nm′}\begin{document}$\left \{N_{0}^{'},N_{1}^{'},...,N_{m}^{'}\right \}$\end{document}.</td>
+    </tr>
+  </tbody>
+</table>
 
 Please note that the model has the capability to merge binary trees. When two branches of neurites have identifiable root nodes, and one root node is in close proximity to the skeleton points on the other branch of neurites, the root node does not contribute to the calculation of information flow without fusion. However, after fusion, the root node becomes a linking node in the other branch of neurites, resulting in an additional negative information flow value. In this merging process, a threshold is required to be set. When the minimum distance between the root node of a branch of neurites and the skeleton point of the other branch of neurites is less than 8 for individual image blocks or less than 8,12,16 for fused image blocks respectively, these two branches are merged. When splitting a branch of neurites, the minimal information flow tree model is also applied to both individual and fused image blocks.
 
-## The fusion of neurites reconstruction
+### The fusion of neurites reconstruction
 
-By using the MIFT model to revise the neurites reconstruction in individual image blocks, the root nodes and leaf nodes of a branch of neurites can be extracted directly. Here, we use a 0–1 assignment model to merge the reconstructions between two adjacent image blocks. For two adjacent image blocks P\begin{document}$P$\end{document} and Q\begin{document}$Q$\end{document}, the neurite skeleton nodes which locate near the common boundary are extracted as {p1,p2,...pm}\begin{document}$\left \{p_{1},p_{2},...p_{m}\right \}$\end{document}, {q1,q2,...qn}\begin{document}$\left \{q_{1},q_{2},...q_{n}\right \}$\end{document} and the cost matrix is constructed as follows:(54)C=[c(p1,q1)⋯c(p1,qn)⋮⋱⋮c(pm,q1)⋯c(pm,qn)Dm×mDn×nDn×m](m+n)×(m+n)\begin{document}$$\displaystyle C=\left [\begin{array}{cc}\begin{array}{ccc}c\left (p_{1},q_{1}\right) & \cdots & c\left (p_{1},q_{n}\right)\\\vdots & \ddots & \vdots \\ c\left (p_{m},q_{1}\right) & \cdots & c\left (p_{m},q_{n}\right)\end{array} & D_{m\times m}\\ D_{n\times n} & D_{n\times m}\end{array}\right ]_{\left (m+n\right)\times \left (m+n\right)}$$\end{document}(55)c(pi,qj)=d(pi,qj)×(2−θ(L(pi),L(qj)))\begin{document}$$\displaystyle  c\left (p_{i},q_{j}\right)=d\left (p_{i},q_{j}\right)\times \left (2- \theta \left (L\left (p_{i}\right),L\left (q_{j}\right)\right)\right)$$\end{document}
+By using the MIFT model to revise the neurites reconstruction in individual image blocks, the root nodes and leaf nodes of a branch of neurites can be extracted directly. Here, we use a 0–1 assignment model to merge the reconstructions between two adjacent image blocks. For two adjacent image blocks $P$ and $Q$, the neurite skeleton nodes which locate near the common boundary are extracted as ${p_{1},p_{2},...p_{m}}$, ${q_{1},q_{2},...q_{n}}$ and the cost matrix is constructed as follows:
 
-Here, Dm×m\begin{document}$D_{m\times m}$\end{document}, Dn×n\begin{document}$D_{n\times n}$\end{document}, Dn×m\begin{document}$D_{n\times m}$\end{document} are auxiliary matrix which the values are all set 20. d(pi,qj)\begin{document}$d\left (p_{i},q_{j}\right)$\end{document} represents the Euclidean distance between terminal pi\begin{document}$p_{i}$\end{document} and qj\begin{document}$q_{j}$\end{document}. L(pi)\begin{document}$L\left (p_{i}\right)$\end{document} and L(qj)\begin{document}$L\left (q_{j}\right)$\end{document} are fitted lines from the skeleton points near pi\begin{document}$p_{i}$\end{document} and qj\begin{document}$q_{j}$\end{document}. θ(L(pi),L(qj))\begin{document}$\theta \left (L\left (p_{i}\right),L\left (q_{j}\right)\right)$\end{document} represents the cosine value of their angle. Thus, the 0–1 assignment problem is formed as follows:(56)A=argminA∑i=1m+n∑j=1m+nAi,j⋅Ci,j\begin{document}$$\displaystyle  A=\mathrm{arg \,min}_{A}\sum \limits_{i=1}^{m+n}\sum \limits_{j=1}^{m+n}A_{i,j}\cdot C_{i,j}$$\end{document}(57)s.t.∑i=1m+nAi,j=1(j=1,2,…m+n)\begin{document}$$\displaystyle  s.t.\sum \limits_{i=1}^{m+n}A_{i,j}=1\,\left (j=1,2,\ldots m+n\right)$$\end{document}(58)∑j=1m+nAi,j=1(i=1,2,…m+n)\begin{document}$$\displaystyle  \sum \limits_{j=1}^{m+n}A_{i,j}=1\,\left (i=1,2,\ldots m+n\right)$$\end{document}
+$$
+C=[c(p_{1},q_{1})⋯c(p_{1},q_{n})⋮⋱⋮c(p_{m},q_{1})⋯c(p_{m},q_{n})D_{m\timesm}D_{n\timesn}D_{n\timesm}]_{(m+n)\times(m+n)}
+$$
 
-Here, A\begin{document}$A$\end{document} represents the connectivity relationship between nodes, if Ai,j=1\begin{document}$A_{i,j}=1$\end{document}, there is connection between block P\begin{document}$P$\end{document}’s node i\begin{document}$i$\end{document} and block Q\begin{document}$Q$\end{document}’s node j\begin{document}$j$\end{document}, if Ai,j=0\begin{document}$A_{i,j}=0$\end{document}, there is no connection between block P\begin{document}$P$\end{document}’s node i\begin{document}$i$\end{document} and block Q\begin{document}$Q$\end{document}’s node j\begin{document}$j$\end{document}. ∑i=1m+nAi,j=1(j=1,2,…m+n)\begin{document}$\sum \limits_{i=1}^{m+n}A_{i,j}=1\,\left (j=1,2,\ldots m+n\right)$\end{document} and ∑j=1m+nAi,j=1(i=1,2,…m+n)\begin{document}$\sum \limits_{j=1}^{m+n}A_{i,j}=1\left (i=1,2,\ldots m+n\right)$\end{document} restrict each node to connect to one other node at most. With the solved matrix A\begin{document}$A$\end{document}, the neurite skeletons of adjacent blocks can be merged and fused skeleton structures can be obtained.
 
-## Statistical analysis
 
-In this study, three commonly used metrics defined in Quan et al., 2016 were used, including precision, recall, and f1-score, which are computed to measure the fidelity between the reconstruction results and the ground truth. They are defined as follows:(59)precision(R,G)=|R∩G||R|=|TP||R|\begin{document}$$\displaystyle  precision\left (R,G\right)=\frac{|R\cap G|}{|R|}=\frac{|TP|}{|R|}$$\end{document}(60)recall(R,G)=|R∩G||G|=|TP||G|\begin{document}$$\displaystyle  recall\left (R,G\right)=\frac{|R\cap G|}{|G|}=\frac{|TP|}{|G|}$$\end{document}(61)f1−score(R,G)=2⋅precision×recallprecision+recall\begin{document}$$\displaystyle  f1- score\left (R,G\right)=2\cdot \frac{precision\times recall}{precision+recall}$$\end{document}
+$$
+c(p_{i},q_{j})=d(p_{i},q_{j})\times(2−\theta(L(p_{i}),L(q_{j})))
+$$
 
-R\begin{document}$R$\end{document} represents the point set of reconstructed neurons, G\begin{document}$G$\end{document} represents the point set of the ground truth, |⋅|\begin{document}$|\cdot |$\end{document} represents the number of points of a set. The three metrics are first computed on each individual neuron and then averaged by weighting each neuron with its point number of its ground truth neuritis.
+Here, $D_{m\timesm}$, $D_{n\timesn}$, $D_{n\timesm}$ are auxiliary matrix which the values are all set 20. $d(p_{i},q_{j})$ represents the Euclidean distance between terminal $p_{i}$ and $q_{j}$. $L(p_{i})$ and $L(q_{j})$ are fitted lines from the skeleton points near $p_{i}$ and $q_{j}$. $\theta(L(p_{i}),L(q_{j}))$ represents the cosine value of their angle. Thus, the 0–1 assignment problem is formed as follows:
 
-We also calculated the signal-to-ratio (SNR) of the data using the following method: For a given data block B\begin{document}$B$\end{document} and its corresponding ground-truth skeleton S\begin{document}$S$\end{document}, we first densify the skeleton S\begin{document}$S$\end{document} by using linear interpolation to ensure that the Euclidean distance between adjacent skeleton points is less than 1 voxel. Next, we expand each skeleton point in the densified skeleton S`\begin{document}$S^{'}$\end{document} into a spherical mask with a radius of 3 voxels. The resulting region serves as the foreground mask\begin{document}$mask$\end{document}. Finally, SNR is computed with mean intensity of foreground points and standard deviation of background points as follows:(62)Meanforeground=∑x∈BI(x)×σ1(x)/∑x∈Bσ1(x)\begin{document}$$\displaystyle  Mean_{foreground}=\underset{x\in B}{\sum }I\left (x\right)\times \sigma _{1}\left (x\right)/\underset{x\in B}{\sum }\sigma _{1}\left (x\right)$$\end{document}(63)Meanbackground=∑x∈BI(x)×σ2(x)/∑x∈Bσ2(x)\begin{document}$$\displaystyle  Mean_{background}=\underset{x\in B}{\sum }I\left (x\right)\times \sigma _{2}\left (x\right)/\underset{x\in B}{\sum }\sigma _{2}\left (x\right)$$\end{document}(64)Stdbackground=∑x∈B(I(x)−Meanbackground)2×σ2(x)/∑x∈Bσ2(x)\begin{document}$$\displaystyle  Std_{background}=\sqrt{\underset{x\in B}{\sum }\left (I\left (x\right)- Mean_{background}\right)^{2}\times \sigma _{2}\left (x\right)/\underset{x\in B}{\sum }\sigma _{2}\left (x\right)}$$\end{document}(65)σ1(x)={1if(x∈S′)0if(x∉S′)\begin{document}$$\displaystyle \sigma _{1}\left (x\right)=\left \{\begin{array}{cc}1 & if\left (x\in S^{'}\right)\\0 & if\left (x\notin S^{'}\right)\end{array}\right.$$\end{document}(66)σ2(x)={1if(x∉mask)0if(x∈mask)\begin{document}$$\displaystyle \sigma _{2}\left (x\right)=\left \{\begin{array}{cc}1 & if\left (x\notin mask\right)\\0 & if\left (x\in mask\right)\end{array}\right.$$\end{document}
+$$
+A=argmin_{A}\sumi=1m+n\sumj=1m+nA_{i,j}⋅C_{i,j}
+$$
 
-Here, I(x)\begin{document}$I\left (x\right)$\end{document} represents the signal intensity of the voxel at position x\begin{document}$x$\end{document}, the SNR is calculated by Meanforeground\begin{document}$Mean_{foreground}$\end{document} and Stdbackground\begin{document}$Std_{background}$\end{document} by the following formula:(67)SNR=10log10(Meanforeground/Stdbackground)\begin{document}$$\displaystyle SNR=10log_{10}\left (Mean_{foreground}/Std_{background}\right)$$\end{document}
+
+
+$$
+s.t.\sumi=1m+nA_{i,j}=1(j=1,2,…m+n)
+$$
+
+
+
+$$
+\sumj=1m+nA_{i,j}=1(i=1,2,…m+n)
+$$
+
+Here, $A$ represents the connectivity relationship between nodes, if $A_{i,j}=1$, there is connection between block $P$’s node $i$ and block $Q$’s node $j$, if $A_{i,j}=0$, there is no connection between block $P$’s node $i$ and block $Q$’s node $j$. $\sumi=1m+nA_{i,j}=1(j=1,2,…m+n)$ and $\sumj=1m+nA_{i,j}=1(i=1,2,…m+n)$ restrict each node to connect to one other node at most. With the solved matrix $A$, the neurite skeletons of adjacent blocks can be merged and fused skeleton structures can be obtained.
+
+### Statistical analysis
+
+In this study, three commonly used metrics defined in Quan et al., 2016 were used, including precision, recall, and f1-score, which are computed to measure the fidelity between the reconstruction results and the ground truth. They are defined as follows:
+
+$$
+precision(R,G)=\frac{|R∩G|}{|R|}=\frac{|TP|}{|R|}
+$$
+
+
+
+$$
+recall(R,G)=\frac{|R∩G|}{|G|}=\frac{|TP|}{|G|}
+$$
+
+
+
+$$
+f1−score(R,G)=2⋅\frac{precision\timesrecall}{precision+recall}
+$$
+
+$R$ represents the point set of reconstructed neurons, $G$ represents the point set of the ground truth, $|⋅|$ represents the number of points of a set. The three metrics are first computed on each individual neuron and then averaged by weighting each neuron with its point number of its ground truth neuritis.
+
+We also calculated the signal-to-ratio (SNR) of the data using the following method: For a given data block $B$ and its corresponding ground-truth skeleton $S$, we first densify the skeleton $S$ by using linear interpolation to ensure that the Euclidean distance between adjacent skeleton points is less than 1 voxel. Next, we expand each skeleton point in the densified skeleton $S^{`}$ into a spherical mask with a radius of 3 voxels. The resulting region serves as the foreground $mask$. Finally, SNR is computed with mean intensity of foreground points and standard deviation of background points as follows:
+
+$$
+Mean_{foreground}=\sumx\inBI(x)\times\sigma_{1}(x)/\sumx\inB\sigma_{1}(x)
+$$
+
+
+
+$$
+Mean_{background}=\sumx\inBI(x)\times\sigma_{2}(x)/\sumx\inB\sigma_{2}(x)
+$$
+
+
+
+$$
+Std_{background}=\sqrt{\sumx\inB(I(x)−Mean_{background})^{2}\times\sigma_{2}(x)/\sumx\inB\sigma_{2}(x)}
+$$
+
+
+
+$$
+\sigma_{1}(x)={1if(x\inS^{′})0if(x∉S^{′})
+$$
+
+
+
+$$
+\sigma_{2}(x)={1if(x∉mask)0if(x\inmask)
+$$
+
+Here, $I(x)$ represents the signal intensity of the voxel at position $x$, the SNR is calculated by $Mean_{foreground}$ and $Std_{background}$ by the following formula:
+
+$$
+SNR=10log_{10}(Mean_{foreground}/Std_{background})
+$$

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.44063.001 BReast Cancer Associated proteins 1 and 2 (BRCA1, −2) and Partner and Localizer of BRCA2 (PALB2) protein are tumour suppressors linked to a spectrum of malignancies, including breast cancer and Fanconi anemia. PALB2 coordinates functions of BRCA1 and BRCA2 during homology-directed repair (HDR) and interacts with several chromatin proteins. In addition to protein scaffold function, PALB2 binds DNA. The functional role of this interaction is poorly understood. We identified a major DNA-binding site of PALB2, mutations in which reduce RAD51 foci formation and the overall HDR efficiency in cells by 50%. PALB2 N-terminal DNA-binding domain (N-DBD) stimulates the function of RAD51 recombinase. Surprisingly, it possesses the strand exchange activity without RAD51. Moreover, N-DBD stimulates the inverse strand exchange and can use DNA and RNA substrates. Our data reveal a versatile DNA interaction property of PALB2 and demonstrate a critical role of PALB2 DNA binding for chromosome repair in cells.
+BReast Cancer Associated proteins 1 and 2 (BRCA1, −2) and Partner and Localizer of BRCA2 (PALB2) protein are tumour suppressors linked to a spectrum of malignancies, including breast cancer and Fanconi anemia. PALB2 coordinates functions of BRCA1 and BRCA2 during homology-directed repair (HDR) and interacts with several chromatin proteins. In addition to protein scaffold function, PALB2 binds DNA. The functional role of this interaction is poorly understood. We identified a major DNA-binding site of PALB2, mutations in which reduce RAD51 foci formation and the overall HDR efficiency in cells by 50%. PALB2 N-terminal DNA-binding domain (N-DBD) stimulates the function of RAD51 recombinase. Surprisingly, it possesses the strand exchange activity without RAD51. Moreover, N-DBD stimulates the inverse strand exchange and can use DNA and RNA substrates. Our data reveal a versatile DNA interaction property of PALB2 and demonstrate a critical role of PALB2 DNA binding for chromosome repair in cells.
 
 ## Introduction
 
@@ -36,43 +36,109 @@ In the current study, we identified a major DBD of PALB2 (N-DBD) and specific am
 
 ## Results
 
-## The DNA-binding mechanism of PALB2 and its function in DNA repair
+### The DNA-binding mechanism of PALB2 and its function in DNA repair
 
-## The major DNA-binding site of PALB2 is localized in the N-terminal domain (N-DBD)
+#### The major DNA-binding site of PALB2 is localized in the N-terminal domain (N-DBD)
 
 A functional significance of PALB2 interaction with DNA was suggested by several studies described above, including a deletion encompassing both DBDs, the T1 (1–200) and T3 (372–561) fragments (Sy et al., 2009b). However, this deletion also removed several protein interaction sites. In two published studies the T1 and T3 fragments displayed different DNA binding activities measured by gel shift assays, but the cause remains unclear (Buisson et al., 2010; Dray et al., 2010). We used a quantitative fluorescence polarization (FP) method to investigate interaction of PALB2 fragments with ss- and dsDNA oligonucleotides of different lengths. Both T1 and T3 fragments and the fragment consisting of amino acids 1–573 (PB2-573 in text), which includes both the T1 and T3, were cloned and purified (Figure 1—figure supplement 1). T1 fragment alone interacts with all tested substrates with similar affinities as of PB2-573, while the T3 fragment has significantly lower affinity for DNA (Figure 1). For example, the apparent equilibrium dissociation constant of T1 binding to ss49 Kd(T1/ss49) is 4.0 ± 1.3 nM, of 573 fragment Kd(573/ss49) is 4.8 ± 0.4 nM, while that of the interaction of T3 with ss49 Kd(T3/ss49) is 484 ± 80 nM, which is likely an overestimation due to weak binding. Hill coefficient values are close to one, suggesting non-cooperative interactions. The only exception is T1 binding to 49 bp dsDNA, however, the binding of PB2-573 to the same substrate is not cooperative. The only difference between T1 and PB2-573 was observed at an elevated salt concentration of 250 mM NaCl, where the PB2-573 fragment retained partial DNA binding activity (Figure 1—figure supplement 2). In both cases, interactions were inhibited by in 500 mM NaCl. The T1 fragment will be referred to as N-DBD in the text below. Interestingly, N-DBD binds long ssDNA substrates with significantly higher affinity than short ones with Kd(T1/ss20) = 80 ± 8.5 nM for 20 nt ssDNA versus Kd(T1/ss49) = 4.0 ± 1.3 nM for ss49. This suggests an interaction with ssDNA through multiple binding sites, potentially formed by the PALB2 oligomerization, as previously described (Buisson and Masson, 2012; Sy et al., 2009c), or through interaction with multiple binding sites within a monomer (see below). Interaction with dsDNA was length-independent, suggesting that more rigid dsDNA interacts with a single site.
 
-## Identification of DNA-binding residues
+![Figure 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig1-v3.jpg)
+
+**Figure 1.:** (A) Domain structure of PALB2. The PALB2 truncations used in the present study are shown below by magenta, blue and dark grey lines. (B–E) Equilibrium binding of PALB2 fragments, including T1 (blue), T3 (dark grey) and PB2-573 (magenta), to 20 nt ssDNA (ss20) (B), 49 nt ssDNA (ss49) (C), 20 bp dsDNA (ds20) (D), and 49 bp dsDNA (ds49) (E) monitored by fluorescence anisotropy of FAM-labelled ssDNA (5 nM). Each data point is an average of six readings from two different experiments. Reactions were performed in assay buffer with 20 mM Tris-acetate pH 7.0, 100 mM NaCl, 5% glycerol, 10% DMSO in a 40 μL reaction volume.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Equilibrium binding of T1 to FAM-ss49 at different concentrations of NaCl, (B) equilibrium binding of PB2-573. Each data point is an average of six readings from two different experiments.
+
+#### Identification of DNA-binding residues
 
 Since PALB2 DNA binding is salt-dependent (Figure 1—figure supplement 2), we performed an alanine scanning mutagenesis of several clusters of positively charged amino acids to identify the DNA binding site in the N-DBD (Figure 2—figure supplement 1). The main DNA-binding cluster is formed by amino acids R146, R147, K148, and K149. Alanine substitution at these residues reduced binding affinity to ss49 by two orders of magnitude with a change in an apparent Kd from 4.0 ± 1.3 nM to 316 ± 59 nM in the case of N-DBD and from 4.8 ± 0.4 nM to 187 ± 55 nM in the case of PB2-573 (Figure 2). DNA binding was moderately affected by mutations of two other clusters, including K45A/K50A, for which the Kd was increased to 28 ± 5.2 nM (Figure 2—figure supplement 2), and the triple mutant R170A/K174A/R175A with similar change in Kd. From these experiments, we concluded that the main DNA binding site is formed by residues 146–149, with a potential minor contribution from other basic amino acids of the N-DBD.
 
-## Impairment of DNA repair in cells with the PALB2 DNA-binding mutant
+![Figure 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig2-v3.jpg)
+
+**Figure 2.:** Isotherms of fluorescence anisotropy of FAM-ss49 (5 nM) titrated by PALB2 T1 (blue, open circles) and PB2-573 (magenta, open triangles) fragments and their mutants: T1 146-RK/AA (filled blue circles), T1 146-RRKK/AAAA (crossed open blue circles), and 573 146-RRKK/AAAA (filled magenta triangles) under conditions identical to those in Figure 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The following sequences were used in the analysis. gi|21757330 – Homo sapiens, gi|1297718444 - Piliocolobus tephrosceles, gi|724966540 - Rhinopithecus roxellana, gi|967502006 - Macaca mulatta, gi|1060946151 - Callithrix jacchus, gi|1328794872 - Loxodonta africana, gi| 1244140196 - Enhydra lutris kenyoni, gi|821391924 - Orcinus orca, gi|1111220295 - Panthera pardus, gi|664756985 - Equus przewalskii, gi|124486979 - Mus musculus.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Equilibrium binding of 5 nm FAM-ss25 (A, C) or FAM-ss49 (B, D) to PALB2 N-DBD and its mutants. (blue) In A) and B) isotherm for K45A is in green, for K50A in red, for K45A/K50A in black. In C) and D) isotherm for R170A is in red, for K174A in green, for R170A/K174A in magenta, for R170A/R175A in orange, and for R170A/K174A/R175A in black. The binding buffer is 20 mM Tris-acetate pH 7.0, 100 mM NaCl, 5% glycerol, 10% DMSO.
+
+#### Impairment of DNA repair in cells with the PALB2 DNA-binding mutant
 
 The mutations described above were used to separate the DNA-binding function from other macromolecular interactions of PALB2 during DNA repair in HeLa cells. Positively charged residues 146–149 were mutated to alanines in the full-length PALB2 protein and the effect of these mutations was measured in two assays. First, we evaluated RAD51 foci formation in cells after gamma irradiation (Figure 3A). Endogenous PALB2 was depleted by siRNA and cells were transformed with either wild type PALB2 or the DNA-binding site mutant (Figure 3C). PALB2 depletion leads to a severe defect in RAD51 foci formation. WT PALB2 restores RAD51 foci formation, while the DNA-binding site PALB2 mutant restores only ~50% of RAD51 foci formation. Similar effect was observed for the time frames between 1 to 8 hr after DNA damage (Figure 3—figure supplement 1). Therefore, mutagenesis of only four positively charged residues in PALB2 has a major effect on efficiency of RAD51 recruitment to DNA damage sites.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig3-v3.jpg)
+
+**Figure 3.:** (A) Representative immunofluorescence images of RAD51 foci in PALB2 knockdown HeLa cells complemented with the indicated YFP construct and synchronized in S/G2 by double thymidine block, as determined by cyclin A staining. (B) RAD51 foci quantification in control siRNA (blue), siPALB2 (red) and with siPALB2 with subsequent complementation by siRNA-resistant constructs YFP-PALB2 (magenta) and 146AAAA DNA-binding site mutant PALB2 (green) at 2 hr after irradiation. (C) Western blotting of the samples shown in (B) to monitor knockdown and complementation efficiency. (D) Quantification of the gene-targeting efficiency of siRNA PALB2 cells complemented with wild-type and 146AAAA siRNA-resistant constructs mClover positive/iRFP cells. (E) Western blotting of the samples shown in (D) to monitor knockdown and complementation efficiency. ***p<0.001 and ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were prepared as described in Figure 3 and processed for immunofluorescence at 1 hr, 2 hr, 4 hr, 6 hr and 8 hr post-irradiation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Following nucleofection, Cas9 creates a double-strand break in the LMNA locus leading to integration of the mClover gene at the LMNA locus by homologous recombination. Clover-labelled Lamin A/C proteins exhibit green fluorescence enriched at the nuclear periphery, which is indicative of successful gene targeting by homologous recombination.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Lysates from HEK293T cells expressing the indicated constructs were subjected to GFP-Trap pulldown and immunoblotting against YFP or RAD51. YFP alone was used as a negative control.
+
 Similarly, we tested the role of PALB2 interaction with DNA for the efficiency of HDR in U2OS cells using a novel LMNA-Clover based assay, where DNA breaks at a specific gene are introduced by the CRISPR-Cas9 system (Figure 3—figure supplement 2) (Buisson et al., 2017). As in case of RAD51 foci formation, complementation of PALB2-depleted cells with the DNA-binding PALB2 mutant restores only 50% of HDR efficiency, in contrast to WT PALB2, which restores more than 90% of activity (Figure 3D). The N-DBD fragment also possesses a RAD51 interaction site, which can be potentially affected by mutations. We verified that the 146AAAA mutant interacts with RAD51 similarly to wild type PALB2 (Figure 3—figure supplement 3). Therefore, the cellular effect of the 146AAAA mutant is defined exclusively by the inability of PALB2 to interact with DNA. Altogether, these studies show that PALB2 DNA binding plays a critical role in HR and DNA repair in vivo.
 
-## PALB2 promotes DNA and RNA strand exchange
+### PALB2 promotes DNA and RNA strand exchange
 
-## PALB2 stimulates RAD51-mediated strand exchange and promotes a similar reaction without RAD51
+#### PALB2 stimulates RAD51-mediated strand exchange and promotes a similar reaction without RAD51
 
 PALB2 stimulates RAD51 filament formation even in the absence of BRCA2 (Buisson et al., 2010). Here, we investigated the ability of the PALB2 N-DBD to stimulate the strand exchange activity of RAD51 using a fluorescence-based strand exchange assay similar to the one previously published (Figure 4A) (Jensen et al., 2010; Ryzhikov et al., 2014). Under solution conditions used in the DNA-binding assays in Figure 1 and even with reduced NaCl concentration, RAD51 displayed a low activity, in contrast to E. coli RecA (Figure 4). RAD51 activity was stimulated by addition of 5 mM CaCl2 (Figure 4—figure supplement 1). RMPs stimulate recombinase activity even at unfavourable solution conditions, such as in the case of Rad52 (Krejci et al., 2002; New et al., 1998), BRCA2 (Jensen et al., 2010)(Liu et al., 2010; Thorslund et al., 2010) and the Hop2-Mnd1 complex (Chi et al., 2007). Similar to the previously published finding that the full length PALB2 stimulates RAD51 function (Buisson et al., 2010; Dray et al., 2010), we found that the PALB2 N-DBD alone stimulates RAD51-mediated strand exchange (Figure 4).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig4-v3.jpg)
+
+**Figure 4.:** (A) Schematic representation of the strand exchange activity assay. ss90 (120 nM) was incubated with RecA (2 μM) or RAD51 (2 μM) for 5’, then with PALB2 fragment (2 μM) for 5’, then dsDNA (100 nM) was added and the Cy5 fluorescence was measured on a plate reader using 635 nm excitation and 680 nm emission wave-lengths. (B) Continuously measured Cy5 fluorescence after initiating reactions with RecA (blue), RAD51 (red), PALB2 N-DBD (magenta), RAD51 and PALB2 N-DBD (green), and without proteins (dark red). Each point is an average of three measurements. (C) Reaction products from (B) were deproteinized and separated on a native PAGE gel. Control in lane one represent Cy5-labelled dsDNA without IOWA quencher and in lane 2 Cy5-labelled ssDNA annealed with ss90. (D) Percentage of Cy5 fluorescence of the final reaction in (B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Strand exchange by RAD51 monitored by Cy5 fluorescence under optimized conditions with 5 mM CaCl2 and 5 mM MgCl2. (B) End products of reactions in (A) analyzed with EMSA.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** EMSA of N-DBD-mediated strand exchange products using dsDNA composed of Cy3- and Cy5-labelled DNA strands. The reaction was performed identically to the one in Figure 4, but without ATP in buffer. The end products of the reaction were deproteinized, separated by EMSA and imaged with a Typhoon system using Cy3 signal (left panel) and Cy5 signal (middle panel). The right panel represents an overlap of left and middle panels. The lanes are 1) control of Cy3-labaled oligo annealed to ss90, 2) Cy3/Cy5 dsDNA, 3), 4), 5) end product of forward strand exchange reaction (see Figure 7 below) performed with 1, 2 and 4 μM N-DBD, 6), 7), 8) end products of the reverse strand exchange performed with 1, 2, and 4 μM N-DBD.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** Forward (A) and inverse (B) strand exchange reactions supported by N-DBD at different concentrations ranging from 0.25 μM to 3 μM performed with ss90 and FAM/Dadsyl-labelled ds49.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** Products of the D-loop reaction mediated by PALB2 N-DBD fragment with 100-mer single strand DNA oligonucleotide (JYM1413, 1 µM) and supercoiled dsDNA plasmid pPB4.3 (300 µM) for 5 min separated by gel electrophoresis. RAD51 (1 µM) was used as a positive control (line 2). ‘ccc’ line is a control without plasmid. T1 fragment did not stimulate RAD51 D-loop formation activity in this assay as well (not shown).
+
 Surprisingly, the N-DBD promotes strand exchange at a comparable rate even without RAD51. Reaction products were further analysed by EMSA gel shift to rule out an artefact of protein-specific fluorophore quenching (Figure 4C). The results were confirmed using DNA with different fluorescent labels (Figure 4—figure supplement 2). The strand exchange activity of N-DBD was even more efficient with longer dsDNA substrates (Figure 4—figure supplement 3). The reaction does not require ATP, resembling those promoted by RAD52 (Mazina et al., 2017). The strand exchange activity was not observed by full length PALB2 in previous publications (Buisson et al., 2010; Dray et al., 2010). This difference could be due to significantly lower concentrations of PALB2 used in the referred studies as well as different experimental conditions. Currently, the low solubility of the full-length protein prevents recapitulation of assays in Figures 5 and 6 at comparable concentrations.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig5-v3.jpg)
+
+**Figure 5.:** (A) Dependence of the strand exchange activity on N-DBD concentration: 0.5 μM (black), 1 μM (brown), 2 μM (navy) and 4 μM (dark red). (B) A reaction similar to (A) in the presence of RAD51 (2 μM, red: without N-DBD). Each point is an average of three measurements in (A) and (B). (C) Deproteinated strand exchange activity products from (A) and (B) separated on native PAGE gel. (D) End-point values of the strand exchange reactions shown in (A) and (B) plotted against N-DBD concentration. Buffer and DNA concentration are identical to those in Figure 4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Forward strand exchange activity of PALB2 N-DBD DNA binding mutants. (B) The strand exchange activity of PALB2 N-DBD mutants in the presence of Rad51. Strand exchange reactions were performed with Cy5 and Iowa labelled 35 bp DNA at 2 μM protein concentration.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig6-v3.jpg)
 
-**Figure 6.:** A) N-DBD and (B) N-DBD in the presence of 2 μM RAD51.Reactions are performed identically to those in Figure 5.
+**Figure 6.:** Reactions are performed identically to those in Figure 5.
 
 Since N-DBD stimulates a similar reaction on its own, it is unclear whether the N-DBD fragment stimulates RAD51 activity or if the two proteins function independently. In a limited titration experiment shown in Figure 5, the efficiency of the strand exchange increases proportionally to N-DBD concentration. In the presence of 2 μM of RAD51, the activity at T1 concentration of 0.5 μM increases four times and the maximum rate of strand exchange is reached at 1 μM of N-DBD. These data suggest a synergistic effect of two proteins in a strand exchange reaction. The DNA-binding mutant fragment (146AAAA) did not support strand exchange on its own and in the presence of RAD51 (Figure 5—figure supplement 1).
 
 Full length PALB2 promotes D-loop formation by RAD51 (Buisson et al., 2010; Dray et al., 2010). However, we found that N-DBD did not support D-loop formation with ssDNA oligonucleotide and supercoiled dsDNA (Figure 4—figure supplement 4).
 
-## RPA inhibits PALB2-mediated strand exchange
+#### RPA inhibits PALB2-mediated strand exchange
 
 RPA inhibits formation of the presynaptic RAD51 filament on ssDNA and recombination mediator proteins RAD52 and BRCA2/DSS1 overcome this inhibitory effect (Benson et al., 1998; Jensen et al., 2010; Liu et al., 2010; New et al., 1998; Plate et al., 2008; Shinohara and Ogawa, 1998; Sugiyama and Kowalczykowski, 2002; Sung, 1997; Thorslund et al., 2010; Zhao et al., 2015). In both cases, the mediation reaction depends on protein interaction with RPA. PALB2 does not interact with RPA. Correspondingly, we found that RPA has a strong inhibitory effect on the strand exchange reaction by PALB2 DBD alone and in the presence of RAD51 (Figure 6).
 
-## PALB2 stimulates an inverse strand exchange and can use an RNA substrate
+#### PALB2 stimulates an inverse strand exchange and can use an RNA substrate
 
 The strand exchange capability of PALB2 N-DBD resembles those of RAD52. RecA and Rad52 support an inverse strand exchange as well as R-loop formation (Kasahara et al., 2000; Mazina et al., 2017; Zaitsev and Kowalczykowski, 2000). Functional significance of this was demonstrated for an RNA-templated DSB repair (Mazina et al., 2017). Therefore, we tested the PALB2 N-DBD for similar activities. The PALB2 N-DBD supported both forward and inverse strand exchange with similar efficiencies (Figure 7B,E). Furthermore, PALB2 supported both reactions with a ssRNA substrate (Figure 7C,F). RAD52 was shown to have different efficiencies of forward and inverse reactions with relatively low forward and a more efficient inverse reactions (Mazina et al., 2017). We did not observe this difference with PALB2. The inverse strand exchange was slower than in case of RAD52 and comparable to that of RAD51 under optimal conditions. However, the substrates used in current work and in RAD52 studies are different.
 
@@ -80,9 +146,21 @@ The strand exchange capability of PALB2 N-DBD resembles those of RAD52. RecA and
 
 **Figure 7.:** Schematic representation of forward (A) and inverse (D) reactions. Cy5 fluorescence change for the forward reaction with ssDNA is shown in (B) and with RNA in (E) at different concentrations of T1 fragment ranging from 4 μM (brown in B, magenta in E) to 0.5 μM (blue) and without protein in orange. Similar time courses of inverse reactions for ssDNA are shown in (C) and for RNA in (F). Buffer and DNA concentration are identical to those in Figure 4. Each point is an average of three measurements.
 
-## Mechanism of the PALB2 stimulated strand exchange
+#### Mechanism of the PALB2 stimulated strand exchange
 
 To rule out a potential effect of DNA melting by PALB2, which may lead to nonspecific reannealing of a separated strands with complementary ssDNA in solution, the N-DBD was incubated with dsDNA without ssDNA (Figure 8A). The N-DBD does not melt dsDNA as there was no change in fluorescence of Cy5/Iowa-ds35 upon incubation with the protein in the absence of ssDNA, addition of which triggers the reaction. Moreover, N-DBD stimulates annealing of complementary ssDNA (Figure 8B). Therefore, the observed strand exchange is not a consequence of a nonspecific dsDNA melting by the protein.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig8-v3.jpg)
+
+**Figure 8.:** (A) Strand exchange reaction where Cy5/Iowa ds35 DNA (100 nM) was first incubated with three different concentrations of N-DBD for 30’. The complementary ss90 DNA (100 nM) was added at 30' to initiate the strand exchange. (B) Annealing of Cy5- and Iowa-labelled complementary ss35 strands (100 nM) in the presence of different concentrations of PALB2 N-DBD. Buffers are identical to those in Figure 4.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig8-figsupp1-v3.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Strand exchange activity of RecO (magenta), RecOR (orange), RecA (green), RecA with SSB (red), RecA with RecOR and SSB (dark brown), and RecO with RecA and SSB (brown) measured under conditions identical to those in Figure 4 monitored by Cy5 fluorescence. (B) Reaction products from A) were deproteinized and separated on native PAGE gel.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/44063/elife-44063-fig8-figsupp2-v3.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Gel filtration of the N-DBD (blue isotherm) and the 146AAAA mutant (red) using Superdex-200 10/300 column. Positions of BioRad MW standards with MW in kDa are shown on top. The elution volume of N-DBD correspond to tetrameric or pentameric structure. (B) FRET values of Cy3-ss40-Cy5 (red) and Cy3-dT70-Cy5 (blue) oligonucleotides upon titration by N-DBD. (C) and D) Titration of FAM-labelled ss49 at 50 nM in (C) and 100 nM in (D) by N-DBD.
 
 Both RecA and RAD52 proteins, which support strand exchange, simultaneously interact with ds- and ssDNA through distinct binding sites located next to each other (Arai et al., 2011; Chen et al., 2008; Honda et al., 2011; Kagawa et al., 2002; Mazin and Kowalczykowski, 1998; Seong et al., 2008). PALB2 also interacts with both ss- and dsDNA (Figure 1 and Buisson et al., 2010; Dray et al., 2010), although the structure and the molecular details of PALB2 interaction with DNA remain unknown. To verify if other proteins characterized by comparable affinities to both ss- and dsDNA also support strand exchange, we tested prokaryotic RMPs, RecO and RecR. E. coli RecO alone stimulates strand annealing (Kantake et al., 2002; Luisi-DeLuca and Kolodner, 1994) and, in complex with RecR, stimulates RecA-mediated strand exchange with ssDNA bound to SSB (Ryzhikov et al., 2014; Umezu et al., 1993; Umezu and Kolodner, 1994). Both RecO and RecOR interact with ss- and dsDNA (Ryzhikov et al., 2014). However, neither RecO nor RecOR complex promote strand exchange in the absence of RecA (Figure 8—figure supplement 1). Therefore, the simple ability of a protein to interact with ss- and dsDNA is not enough to promote strand exchange and even RMPs, which stimulate the reaction by RecA recombinase, do not support it in the absence of recombinase.
 
@@ -104,15 +182,340 @@ While the functional significance of this property remains to be investigated, i
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
 
-## PALB2 truncations
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>CCL-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-base reagent</td>
+      <td>siRNA sequences</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1E</td>
+    </tr>
+    <tr>
+      <td>Sequence-base reagent</td>
+      <td>oligonucleotide JYM1413</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1C</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Invitrogen</td>
+      <td>13778–150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thymidine</td>
+      <td>Sigma</td>
+      <td>T1895-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Sigma</td>
+      <td>P2308-100MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[gamma-32P] ATP</td>
+      <td>Perkin Elmer</td>
+      <td>NEG502A250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YFP-CTL or YFP (plasmid)</td>
+      <td>Pauty et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YFP-PALB2 (plasmid)</td>
+      <td>Pauty et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>YFP-PALB2 146AAAA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1B</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCR2.1-mClover- LMNAdonor (plasmid)</td>
+      <td>Pinder et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX330-LMNAgRNA (plasmid)</td>
+      <td>Pinder et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>iRFP670 (plasmid)</td>
+      <td>Pinder et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG vector (plasmid)</td>
+      <td>Pauty et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-PALB2 (plasmid)</td>
+      <td>Pauty et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-PALB2 146AAAA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1B</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPB4.3</td>
+      <td>PMID:15899844</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SE Cell Line 4D-Nucleofector X Kit</td>
+      <td>VWR</td>
+      <td>CA10064-148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RAD51 (mouse monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NB100-148</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (mouse monolconal)</td>
+      <td>Roche</td>
+      <td>11814460001</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>RAD51 (rabbit polyclonall)</td>
+      <td>B-Bridge International</td>
+      <td>70–001</td>
+      <td>(1:7000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>cyclin A (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>611268</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 568 goat anti-rabbit</td>
+      <td>Molecular Probe</td>
+      <td>A11011</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 got anti-mouse</td>
+      <td>Molecular Probe</td>
+      <td>A21235</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>Ver-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>Quorum Technologies</td>
+      <td>v6.0.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-base reagent</td>
+      <td>cloning primers, DNA-binding substrates, FRET substrates</td>
+      <td>IDT, Technology</td>
+      <td></td>
+      <td>Supplementary file 1B,C,D</td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (E. Coli)</td>
+      <td>BL21-star cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>C601003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, Strain background (E. Coli)</td>
+      <td>OmniMAX cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>C8540-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3-PALB2-T1</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3-PALB2-T3</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3-PALB2-573</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>His60 Ni Superflow</td>
+      <td>Clonetech</td>
+      <td>635660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Heparin 5 ml HiTrap column</td>
+      <td>GE Heathcare Lifesciences</td>
+      <td>17040701</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex-200 10/300 GL column</td>
+      <td>GE Heathcare Lifesciences</td>
+      <td>17517501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET11-Rad51</td>
+      <td>Dr. A Mazin Lab; PMID:11751636</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSMT3-RAD51</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p11d-tRPA</td>
+      <td>AddGene, Henricksen et al., 1994</td>
+      <td>102613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Affi-Gel blue affinity gel</td>
+      <td>BioRad</td>
+      <td>1537301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Instrument</td>
+      <td>Synergy four plate reader</td>
+      <td>BioTek</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
+
+#### PALB2 truncations
 
 PALB2 N-terminal fragments PALB2-T1 (1–200 aa) and PALB2-573 (1–573 aa) were cloned into pET28b + based pSMT3 vector (provided by Dr. R.A. Kovall, University of Cincinnati) containing the N-terminal 6xHis-SUMO tag using SalI and NdeI cloning sites. pSMT3-PALB2 T1, pSMT3-PALB2 573 were transformed into BL21* cells. Cell cultures were grown in LB to OD600 = 0.7 and protein expression was induced by adding 0.2 mM IPTG and carried out at 16°C overnight. Cells were lysed with lysozyme (0.25 mg/mL at RT for 30 min) in lysis buffer (25 mM HEPES pH 8.0, 1 M NaCl, 10% glycerol, 0.3% Brij35, 1 mM TCEP, 2 mM CHAPS and 1 mM PMSF), followed by three rounds of sonication (50% output and 50% pulsar settings for 4 min). Cell debris were removed by centrifugation at 30,600 x g for 45 min. Supernatant was loaded on a NiNTA column (5 ml) equilibrated with binding buffer (25 mM HEPES pH 8.0, 1 M NaCl, 10% glycerol, 1 mM TCEP, 2 mM CHAPS and 10 mM imidazole). NiNTA beads were washed with binding buffer and the protein was eluted with binding buffer supplemented with the same buffer adjusted to 250 mM imidazole. The SUMO tag was cleaved with Ulp1 protease while dialyzing against buffer without imidazole (25 mM HEPES pH 8.0, 1 M NaCl, 10% glycerol, 1 mM TCEP and 2 mM CHAPS) overnight and the protein was purified with a second NiNTA column. The protein was diluted 10X by binding buffer without NaCl to the final NaCl concentration of 100 mM, loaded to a Hi-Trap heparin affinity column (5 ml, GE health sciences) and eluted with a gradient of NaCl (100 mM to 1000 mM). Protein eluted from the heparin column at ~500 mM NaCl concentration. Protein fractions were dialysed against storage buffer (25 mM HEPES pH 8.0, 300 mM NaCl, 40% glycerol, 1 mM TCEP and 2 mM CHAPS) overnight, aliquoted and stored at −80°C.
 
 PALB2 T3 fragment was purified as described in Buisson et al. (2010).
 
-## RAD51 purification
+#### RAD51 purification
 
 We used two expression constructs and purification protocols. (1) Human RAD51 protein was purified from the pET11-Rad51 vector (gift from Dr A. Mazin) according to the published protocol (Sigurdsson et al., 2001). The protein was induced at 37°C for 3 hr by supplementing LB media with 0.5 mM IPTG. Cells were suspended in 25 mM Tris-HCl pH8.0, 1 M urea, 1 M NaCl, 5 mM DTT, 0.3% Brij35% and 10% glycerol. Cells were lysed with lysozyme (0.25 mg/mL at RT for 30 min) followed by three rounds of sonication (50% output and 50% pulsar settings for 1 min). 24 mg/ml ammonium sulfate was gradually added to the supernatant and equilibrated overnight at 4°C. Precipitates were centrifugation at 30,600 x g for 45 min. Pellets were solubilized in 30 ml of binding buffer (25 mM Tris-HCl pH8.0, 1 M NaCl, 5 mM DTT, 10% glycerol and 20 mM imidazole). Insoluble particles were removed by centrifugation at 30,600 x g for 40 min. The protein was bound to Ni NTA beads, extensively washed with binding buffer and eluted in binding buffer supplemented with 250 mM imidazole.
 
@@ -122,56 +525,60 @@ E. coli RecA was purified exactly as described in Gupta et al. (2013). E. coli 
 
 Trimeric RPA complex was expressed using p11-tRPA vector (Addgene, plasmid #102613) and purified accordingly to the published protocol (Binz et al., 2006; Henricksen et al., 1994). A fresh transformant of p11d-tRPA was grown to 0.5 OD at 37°C in a litre of LB media. Protein expression was induced by IPTG (0.2 mM) at 16°C overnight. Cells were harvested and suspended in lysis buffer (25 mM HEPES pH 8.0, 0.25 mM EDTA, 1 mM PMSF, 1 mM TCEP and 0.01% NP-40). Cells were lysed by incubation with lysozyme (0.25 mg/mL at 25°C for 30 min) and followed by sonication (50% output and 50% pulsar settings for 4 min). Cell debris were removed, and supernatant was loaded on an Affi-Gel Blue column (5 ml, Biorad) equilibrated with lysis buffer. The column was washed sequentially with five column volumes of lysis buffer containing 50 mM KCl, 0.8 M KCl, 0.5 M NaSCN and 1.5 M NaSCN. RPA elutes in the 1.5 M NaSCN wash. This fraction was diluted ten times to a final concentration of NaSCN to 150 mM and applied to heparin column. The column was washed with lysis buffer followed by elution with a linear gradient of NaCl (0.1–1M). The peak fractions were pooled, concentrated, flash frozen in liquid nitrogen and stored at −80°C until further use.
 
-## Site-directed mutagenesis
+### Site-directed mutagenesis
 
 Target amino acids were mutated by site directed mutagenesis using Stratagene QuikChange protocol. Single, double, triple and four residues mutants were generated by single stranded synthesis (Supplementary file 1B). PCR samples were subjected to DpnI digestion at 37°C for 6 hr and annealed gradually by reducing temperature from 95°C to 37°C for an hour with a 1°C drop per minute. DpnI treated PCR samples were transformed into chemically competent OmniMAX cells (ThermoFischer). Mutations were confirmed by sequencing and plasmids were transformed into BL21(DE) cells. Mutant proteins were expressed and purified exactly as described for wild type fragments.
 
-## DNA binding assay
+### DNA binding assay
 
-Fluorescence anisotropy experiments were carried out at room temperature with 5 nM fluorescein (6FAM)-labelled DNA substrates (Supplementary file 1C) using a Synergy four plate reader (BioTek). Titration with protein was performed by serially diluting protein in 40 μL of assay buffer (20 mM Tris-acetate pH 7.0, 100 mM NaCl, 5% glycerol, 1 mM TCEP and 10% DMSO) from 5000 nM to 0.3 nM and incubating with DNA substrate for 15 min at RT. Fluorescence anisotropy was measured by excitation at 485/20 nm and by monitoring emission 528/20 nm at room temperature using Gen5.0 (BioTek) software. An equilibrium dissociation constant was calculated with Prism software using one to one binding scheme, P+[D]=[DP], where D is DNA and P is PALB2. Anisotropy data were fitted by a non-linear regression analysis of Prism software using standard four-parameter logistic equation to identify Kdy=ymin+(ymax-ymin1+10logEC50-X×n)
+Fluorescence anisotropy experiments were carried out at room temperature with 5 nM fluorescein (6FAM)-labelled DNA substrates (Supplementary file 1C) using a Synergy four plate reader (BioTek). Titration with protein was performed by serially diluting protein in 40 μL of assay buffer (20 mM Tris-acetate pH 7.0, 100 mM NaCl, 5% glycerol, 1 mM TCEP and 10% DMSO) from 5000 nM to 0.3 nM and incubating with DNA substrate for 15 min at RT. Fluorescence anisotropy was measured by excitation at 485/20 nm and by monitoring emission 528/20 nm at room temperature using Gen5.0 (BioTek) software. An equilibrium dissociation constant was calculated with Prism software using one to one binding scheme, $P+[D]=[DP]$, where D is DNA and P is PALB2. Anisotropy data were fitted by a non-linear regression analysis of Prism software using standard four-parameter logistic equation to identify Kd
 
-Where, ymin and ymax is the minimum and maximum anisotropy values, X represents the log concentration of protein, n represents Hillslope, and EC50 is equal to KD. R2 is determined by the prism software by computing the sum of the squares of the distances of the points from the best-fit curve determined by nonlinear regression model.
+$$
+y=y_{min}+(\frac{y_{max}-y_{min}}{1+10^{logEC50-X\timesn}})
+$$
 
-## DNA annealing assay
+Where, $y_{min}$ and $y_{max}$ is the minimum and maximum anisotropy values, X represents the log concentration of protein, $n$ represents Hillslope, and EC50 is equal to KD. R2 is determined by the prism software by computing the sum of the squares of the distances of the points from the best-fit curve determined by nonlinear regression model.
+
+### DNA annealing assay
 
 DNA annealing assays were performed with Cy5-labelled ss35 and compl IOWA-labelled ss35 (100 nM, Supplementary file 1D). The protein at 1, 2 and 4 μM concentrations was mixed and incubated with Cy5-labelled ssDNA for 5 min at 37°C in 40 μL reaction buffer (40 mM HEPES pH 7.5, 20 mM NaCl and 1 mM TCEP). Reactions were initiated by addition of compl IOWA-labelled ss35 (100 nM) in 40 μL of reaction buffer. Decrease in Cy5 fluorescence was monitored by measuring fluorescence at 680 nm by excitation at 635 nm on a Synergy four plate reader (BioTek).
 
-## Strand exchange fluorescent assay
+### Strand exchange fluorescent assay
 
 DNA strand exchange assays (80 μl) were performed with 35 bp dsDNA obtained by annealing of 5’-Cy5- and 3’-IOWA-labelled compl strands (Supplementary file 1D) and a 90mer ssDNA (ss90) with a region homologous to the plus strand. Alternatively, FAM/Dabsyl 49 bp DNA was used. For the forward reaction, ss90 (100 nM) was incubated with 2 μM (or as mentioned in the figure legends) protein for 10 min in 40 μL reaction buffer (40 mM HEPES pH 7.5, 20 mM NaCl, 5 mM MgCl2, 1 mM TCEP and 0.02% Tween 20) at 37°C. Strand exchange was initiated by addition of 100 nM Cy5/IOWA-dsDNA35 (or FAM/Dabsyl-dsDNA49), the plate was immediately placed in plate reader and the intensity of Cy5 (or FAM) fluorescence was measured at 30 s intervals for 1 hr with excitation at 635 nm and emission at 680 nm. For reactions with RecA and Rad51, an ATP regeneration system (2 mM ATP, 3 mM phosphoenol pyruvate and 30 U of pyruvate kinase) was used (Sigma-Aldrich, USA). Experiments without RecA and RAD51 were performed without ATP. For the inverse reaction, protein was incubated with Cy5/IOWA-dsDNA35 (or FAM/Dabsyl-dsDNA49) substrate and reaction was initiated by addition of ss90. The strand exchange assay with ssRNA substrate was performed as described above using a 60 ribonucleotide RNA (Supplementary file 1D) compl to that of 35 bp DNA. Alternatively, Cy3- and Cy5-labelled DNA oligonucleotides were used to prepare dsDNA substrate and the products were analysed by EMSA PAGE (below).
 
-## EMSA PAGE
+### EMSA PAGE
 
 Fluorescent-labelled DNA products of strand exchange reactions were also analysed on EMSA PAGE. After fluorescence measurement on plate reader, the final reaction mix (80 μl) products were deproteinated by incubation with proteinase K (0.5 mg/ml) with 0.5 mM EDTA and 1% w/v SDS for 20 min at 37°C and the DNA fragments were separated on 10% PAGE gel in TBE buffer. The gel was imaged using a Typhoon 9400 image scanner (GE) and analysed with ImageJ software.
 
-## FRET assay
+### FRET assay
 
-FRET assay was performed in 96 well plate format. 100 nM of dual labelled dT70 or ss40 (Cy5 at 5’ end and Cy3 at 3’ end) was dispensed into 80 μL assay buffer identical to the buffer in the strand exchange assay (Supplementary file 1D). Excitation was at 540/25 nm bandpass. Emission for both Cy3 at 590/35 nm bandpass and Cy5 at 680/30 nm were measured. PALB2 was added with final concentration between 4000 and 15.6 nM and incubated for 10 min. FRET efficiency was calculated by using the formula FRET=1.51×Icy51.51×Icy5+0.669×Icy3, where 1.51 and 0.669 are correction factors for fraction of Cy5 and Cy3 intensities in Cy3 and Cy5 channels respectively. Protein concentrations were as described in the figure legends.
+FRET assay was performed in 96 well plate format. 100 nM of dual labelled dT70 or ss40 (Cy5 at 5’ end and Cy3 at 3’ end) was dispensed into 80 μL assay buffer identical to the buffer in the strand exchange assay (Supplementary file 1D). Excitation was at 540/25 nm bandpass. Emission for both Cy3 at 590/35 nm bandpass and Cy5 at 680/30 nm were measured. PALB2 was added with final concentration between 4000 and 15.6 nM and incubated for 10 min. FRET efficiency was calculated by using the formula $FRET=\frac{1.51\timesIcy5}{1.51\timesIcy5+0.669\timesIcy3}$, where 1.51 and 0.669 are correction factors for fraction of Cy5 and Cy3 intensities in Cy3 and Cy5 channels respectively. Protein concentrations were as described in the figure legends.
 
-## D-loop assay
+### D-loop assay
 
 D-loop buffer (25 mM Tris-acetate pH 7.5, 100 µg/mL bovine serum albumin, 2 mM CaCl2, 2 mM ATP, 1 mM DTT), containing 1 µM of radiolabelled oligonucleotide JYM1413 (homologous sequence to the plasmid pPB4.3, Supplementary file 1C) was incubated for 5 min at 37°C with the indicated concentration of RAD51 or PALB2-T1 fragment. CsCl- purified pPB4.3 replicative form I DNA (300 µM) was added and the reaction and incubated for 5 min. Finally, the reaction was stopped with the addition of 0,6% SDS, 20 mM Tris-HCl pH 7.5, 20 mM MgCl2 and 2 mg/mL proteinase K following by incubation for 30 min at 37°C. Labelled DNA products were analysed by electrophoresis through a 0.8% TAE1X/agarose gel, ran at 65V for 1 hr, dried onto DE81 filter paper at 85°C, and visualized by autoradiography.
 
-## RAD51 foci assay
+### RAD51 foci assay
 
 HeLa cells were seeded on glass coverslips in 6-well plates at 225 000 cells per well. Knockdown of PALB2 was performed 18 hr later with 50 nM PALB2 siRNA (Supplementary file 1E) using Lipofectamine RNAiMAX (Invitrogen). After 5 hr, cells were subjected to double thymidine block. Briefly, cells were treated with 2 mM thymidine for 18 hr and released after changing the media.
 
 After a release of 9 hr, PALB2 silenced cells were complemented using transfection with the indicated YFP constructs using Lipofectamine 2000. Cells were then treated with 2 mM thymidine for 17 hr and protected from light from this point on. After 2 hr of release from the second block, cells were X-irradiated with 2 Gy and processed for immunofluorescence 1 hr, 2 hr, 4 hr, 6 hr and 8 hr post-irradiation. All immunofluorescence dilutions were prepared in PBS and incubations performed at room temperature with intervening washes in PBS. Cell fixation was carried out by incubation with 4% paraformaldehyde for 10 min followed by 100% ice-cold methanol for 5 min at −20°C. Cells were then permeabilized in 0.2% Triton X-100 for 5 min and quenched using 0.1% sodium borohydride for 5 min. After blocking for 1 hr in a solution containing 10% goat serum and 1% BSA, cells were incubated for 1 hr with primary antibodies to RAD51 (B-bridge International, #70–001) and to cyclin A (BD Biosciences, # 611268) diluted in 1% BSA. Secondary antibodies, Alexa Fluor 568 goat anti-rabbit (Invitrogen, #A-11011) and Alexa Fluor 647 goat anti-mouse (Invitrogen, #A-21235), were used in PBS containing 1% BSA for 1 hr. Nuclei were stained for 10 min with 1 μg/mL 4, 6-diamidino-2-phenylindole (DAPI) prior to mounting onto slides with 90% glycerol containing 1 mg/ml paraphenylenediamine anti-fade reagent. Z-stack images were acquired at 63X magnification on a Leica DM6000 microscope, then deconvoluted and analysed for RAD51 foci formation with Volocity software v6.0.1 (Perkin-Elmer Improvision). The number of RAD51 foci per cyclin A-positive cells (n = 300), among the transfected population, was manually scored and reported in a scatter dot plot representing the SEM. An Anova test (Kruskal-Wallis-test for multiple comparison) was performed followed by a non-parametric Mann-Whitney test.
 
-## CRISPR-Cas9/mClover-LMNA1 mediated HR assay (Pinder et al., 2015)
+### CRISPR-Cas9/mClover-LMNA1 mediated HR assay (Pinder et al., 2015)
 
 U2OS cells were seeded in 6-well plates. Knockdown of PALB2 (Buisson et al., 2017) was performed 6–8 hr later using Lipofectamine RNAiMAX (Invitrogen). Twenty-four hours post-transfection, 1.5−2 × 106 cells were pelleted for each condition and resuspended in 100 μL complete nucleofector solution (SE Cell Line 4D-Nucleofector X Kit, Lonza) to which 1 μg of pCR2.1-mClover-LMNAdonor, 1 μg pX330-LMNAgRNA, 0.1 μg of iRFP670 and 1 μg of pcDNA3 empty vector or the Flag-PALB2 constructs, and 20 nM of each siRNA were added. Once transferred to a 100 μl Lonza certified cuvette, cells were transfected using the 4D-Nucleofector X-unit, program CM-104 and transferred to a 10 cm dish. After 48 hr, cells were trypsinized and plated onto glass coverslips. Expression of the mClover was assayed the next day by fluorescence microscopy (63X), that is 72 hr post-nucleofection. Data are represented as mean percentages of mClover-positive cells over the iRFP-positive population from five independent experiments (total n > 100 iRFP-positive cells) and reported in a scatter dot plot representing SEM, and a classical one-way Anova test was performed.
 
-## GFP-Trap pulldown
+### GFP-Trap pulldown
 
 HEK293T were plated to 80% confluency and transfected with YFP-CTL, YFP-PALB2 or YFP-PALB2-146AAAA vector using Lipofectamine RNAiMAX Reagent (Thermo Fisher Scientific). 24 hr after, cells were irradiated with 5 Gy and processed for GFP-Trap Pulldown 2 hr post-irradiation. Briefly, cells were washed twice with ice cold PBS and lysed in lysis buffer (50 mM Tris-HCl, pH 7.5, 150 mM NaCl, 0,5% NP40, containing PMSF, Aprotinin, Leupeptin, NaF, and Na2VO4). Lysates were sonicated (three times 10 s at 30% amplitude on ice) and centrifuged at 16000 g, for 30 min at 4°C. Protein lysates (3 mg) were incubated with GFP-Trap beads (Chromotek) for 1 hr at 4°C. Beads were washed three times with lysis buffer (without NP40) and bound proteins were resuspended in 35 µL of Laemmli SDS-sample buffer and heated to 95°C for 10 min.
 
 Samples were run on NuPAGE 4–12% bis-Tris Protein Gels (Invitrogen) in NuPAGE MOPS SDS Running Buffer according to the manufacturer’s protocol and transferred to Nitrocellulose membrane (Amersham) using XCell II Blot Module (Invitrogen) in 20% methanol transfer buffer. Immunoblots were performed using the following antibodies: anti-RAD51(14B4) (Novus Biologicals, #NB100-148) and anti-GFP (Roche, #11814460001).
 
-## Plasmids and siRNA
+### Plasmids and siRNA
 
 peYFP-C1-PALB2 was modified to be resistant to PALB2 siRNA by Q5 Site-Directed Mutagenesis Kit (NEB, E0554) using primers JYM3892/3893 (Supplementary file 1E). The resulting siRNA-resistant construct was then used as a template to generate the mutant construct YFP-PALB2 146AAAA with the primers JYM3909/JYM3910. Flag-tagged PALB2 146AAAA mutant was also obtained via site-directed mutagenesis on pcDNA3-Flag PALB2 (Pauty et al., 2017).
 
-## Cell lines
+### Cell lines
 
 U2OS (HTB-96) and HEK293T (CRL-11268) were purchased from ATCC and HeLa were authenticated using Short Tandem Repeat (STR) analysis by ATCC services (100% match). All the cells lines used were uninfected with Mycoplasma, as routinely verified using the e-Myco Mycoplasma kit from FroggaBio.

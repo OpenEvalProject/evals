@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.32586.001 Specific cell shapes are fundamental to the organization and function of multicellular organisms. Fibroblast Growth Factor (FGF) signaling induces the elongation of lens fiber cells during vertebrate lens development. Nonetheless, exactly how this extracellular FGF signal is transmitted to the cytoskeletal network has previously not been determined. Here, we show that the Crk family of adaptor proteins, Crk and Crkl, are required for mouse lens morphogenesis but not differentiation. Genetic ablation and epistasis experiments demonstrated that Crk and Crkl play overlapping roles downstream of FGF signaling in order to regulate lens fiber cell elongation. Upon FGF stimulation, Crk proteins were found to interact with Frs2, Shp2 and Grb2. The loss of Crk proteins was partially compensated for by the activation of Ras and Rac signaling. These results reveal that Crk proteins are important partners of the Frs2/Shp2/Grb2 complex in mediating FGF signaling, specifically promoting cell shape changes.
+Specific cell shapes are fundamental to the organization and function of multicellular organisms. Fibroblast Growth Factor (FGF) signaling induces the elongation of lens fiber cells during vertebrate lens development. Nonetheless, exactly how this extracellular FGF signal is transmitted to the cytoskeletal network has previously not been determined. Here, we show that the Crk family of adaptor proteins, Crk and Crkl, are required for mouse lens morphogenesis but not differentiation. Genetic ablation and epistasis experiments demonstrated that Crk and Crkl play overlapping roles downstream of FGF signaling in order to regulate lens fiber cell elongation. Upon FGF stimulation, Crk proteins were found to interact with Frs2, Shp2 and Grb2. The loss of Crk proteins was partially compensated for by the activation of Ras and Rac signaling. These results reveal that Crk proteins are important partners of the Frs2/Shp2/Grb2 complex in mediating FGF signaling, specifically promoting cell shape changes.
 
 ## Introduction
 
@@ -42,9 +42,17 @@ In this study, we showed that the lens specific knockout of Crk and Crkl disrupt
 
 ## Results
 
-## Ablation of Crk and Crkl caused lens defects
+### Ablation of Crk and Crkl caused lens defects
 
 We observed that Crk and Crkl proteins displayed a restricted localization pattern in the lens. At E10.5, Crk and Crkl were predominantly confined to the apical side of the lens vesicle (Figure 1A, arrows), away from the basal side where integrins interact with the basement membrane (Figure 1A, dotted lines). By contrast, Crk and Crkl exhibited a more diffuse pattern at E12.5 when the posterior lens vesicle cells gave rise to the primary lens fibers (Figure 1A). However, by E14.5, Crk and Crkl were specifically enriched in the transitional zone where the lens epithelial cells begin to differentiate and elongate into the secondary lens fiber cells (Figure 1A, arrowheads). Using an antibody that recognizes the phosphorylated forms of both of these proteins, we were able to observe that the phosphorylation of Crk and Crkl also mainly occurs in the transition zone of the lens at this stage of development (Figure 1B, arrowheads). These results suggest that Crk activity is under dynamic regulation as the lens cells undergo successive morphological changes during development.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig1-v2.jpg)
+
+**Figure 1.:** (A) Crk and Crkl immunostaining were localized to the invaginating lens vesicle at E10.5 (arrows) and to the elongating lens fiber cells near the transitional zone of the lens at E14.5 (arrowheads). These staining patterns were specifically lost in the CrkCKO lens. The dotted lines enclose the region of the lens and the disorganization of the retina was marked with asterisks (B) The phosphorylation of both Crk and Crkl was noticeably absent in the CrkCKO lens (arrowheads). (C) The CrkCKO lens size was significantly reduced with the anterior lens epithelium rotated sideways (arrows) and the disorganized lens fiber cells markedly shortened (double headed arrows).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) H/E staining showed that the individual deletion of Crk and Crkl did not affect aspects of lens development.
 
 We next ablated Crk genes using Pax6Le-Cre, also known as Le-Cre, which is initially active in the lens placode and later in the lens epithelium (Ashery-Padan et al., 2000). As expected, this resulted in the loss of both Crk/Crkl and pCrk/pCrkl in the Pax6Le-Cre;Crkflox/flox;Crklflox/flox (CrkCKO) lens after E10.5 (Figure 1A and B, dotted line). Although deletion of either Crk or Crkl alone did not perturb lens development (Figure 1—figure supplement 1A–C), the CrkCKO lens displayed a reduction in lens size, rotation of the lens epithelial layer, and disorganization of the lens fiber cells at E14.5 (Figure 1C, arrow). Using F-actin staining to better delineate individual cell shapes, we observed a significant reduction in the length of the lens fiber cells (Figure 1C). In addition to these fully penetrant lens phenotypes, the neural retina was often observed to aberrantly protrude toward the diminished lens. This observation is consistent with the known role of the properly developed lens in the correct placement of the retina (Figure 1A, asterisks) (Ashery-Padan et al., 2000).
 
@@ -52,21 +60,29 @@ During lens development, the transcription factors Pax6 and Prox1 are of vital i
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig2-v2.jpg)
 
-**Figure 2.:** Crk and Crkl double mutant lens.(A) There were no significant changes in the staining intensity of the lens determinant markers Prox1 and Pax6. (B) Further, none of the three forms of Crystallins (α, β, γ) displayed any changes in staining intensity in the CrkCKO lens. (C) The polarity of the CrkCKO lens fiber cells was maintained as indicated by both the apical expression of Zo-1 and the basal expression of β1 integrin. (D) The number of Ki67-expressing proliferative cells was significantly decreased and the number of TUNEL-positive apoptotic cells was increased (arrowheads). (E) Quantification of proliferation and apoptosis in wild type and CrkCKO lens. Student’s t test, *p<0.01, **p<0.001, n = 4.10.7554/eLife.32586.006Figure 2—source data 1.Figure 2E.
+**Figure 2.:** (A) There were no significant changes in the staining intensity of the lens determinant markers Prox1 and Pax6. (B) Further, none of the three forms of Crystallins (α, β, γ) displayed any changes in staining intensity in the CrkCKO lens. (C) The polarity of the CrkCKO lens fiber cells was maintained as indicated by both the apical expression of Zo-1 and the basal expression of β1 integrin. (D) The number of Ki67-expressing proliferative cells was significantly decreased and the number of TUNEL-positive apoptotic cells was increased (arrowheads). (E) Quantification of proliferation and apoptosis in wild type and CrkCKO lens. Student’s t test, *p<0.01, **p<0.001, n = 4.
 
-## Crk proteins act downstream of FGF signaling to control fiber cell elongation
+### Crk proteins act downstream of FGF signaling to control fiber cell elongation
 
 To investigate the role of Crk proteins in FGF signaling, we took a three-prong approach, combining in vitro, in vivo and ex vivo experiments. First, we performed loss-of-function experiments to examine whether FGF signaling is required for Crk protein activity. Consistent with previous studies showing that FGF signaling is essential for early lens development (Garcia et al., 2011), we observed that genetic ablation of Fgfr1/2 in Pax6Le-Cre;Fgfr1flox/flox;Fgfr2floxflox (FgfrCKO) mutants disrupted lens vesicle invagination at E10.5 (Figure 3A). Although the mutant lens cells still expressed Pax6, the lens specific marker αA-crystallin was not induced. Importantly, whereas the control embryos displayed the phosphorylation of Erk and Crk in the invaginating lens vesicle, these staining patterns were absent in FgfrCKO lens cells (Figure 3A). To further corroborate these results in vitro, we isolated primary mouse embryonic fibroblast (MEF) cells from Fgfr1flox/flox;Fgfr2floxflox embryos and infected them with a Cre-expressing adenovirus to ablate Fgfr1 and Fgfr2. Unlike wild type controls, these mutant MEF cells failed to elevate the level of pCrk/Crkl and pErk upon FGF stimulation, demonstrating that both Crk and Erk proteins are under the tight regulation of FGF signaling (Figure 3B). To probe the relationship between Crk and Erk, we next infected Crkflox/flox;Crklfloxflox MEF cells with the Cre adenovirus to deplete Crk proteins (Figure 3C). As a result, both the intensity and duration of FGF-stimulated Erk phosphorylation were down regulated, suggesting that Crk proteins modify the quantity of FGF-ERK signaling by elevating and prolonging ERK activation. Consistent with this, we noticed that Erk phosphorylation was prominent in the elongating primary lens fiber cells at E12.5 and in the transitional zone of the lens at E14.5 (Figure 3D). In the CrkCKO mutant lens, however, pERK staining was significantly reduced (Figure 3D). Together, this data shows that Crk proteins regulate FGF-induced Erk activation in the developing lens.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig3-v2.jpg)
+
+**Figure 3.:** (A) Genetic ablation of Fgfr1 and Fgfr2 disrupted the proper formation of the lens vesicle with the phosphorylation of Erk and Crk/Crkl proteins being noticeably absent. (B) Mouse Embryonic fibroblast (MEF) cells treated with FGF2 displayed an increase in pCrk/Crkl and pErk levels, which were abrogated by the removal of Fgfr1 and Fgfr2 using a Cre-expressing adenovirus. (C) Ablation of Crk proteins in MEF cells reduced FGF2-induced Erk phosphorylation. The pErk/Erk ratios were noted below the pERK blot. (D) The CrkCKO lens displayed a significant decrease in pERK staining compared to the wild type lens.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) FGF2 was still able to induce an upregulation of pCrk/Crkl and pERK in Fgfr1Crk/Crk;Fgfr2flox/flox MEF cells after treatment with a Cre-expressing adenovirus. (B) A homozygous Fgfr1Crk/Crk mutation did not affect pCrk/Crkl staining (arrows) in the lens even after the genetic removal of other Fgf receptors (Fgfr2-4).
 
 The second approach we took to probe the role of Crk genes in FGF signaling was based on gain-of-function experiments. We utilized two Fgf3 transgenes that are driven by the αA-crystallin promoter to target the lens (Robinson et al., 1998), which led to an anterior expansion of pErk staining (Figure 4C). The Fgf3OVE393A line displayed excessive elongation of the lens fiber cells that protruded through the corneal epithelium, while the Fgf3OVE391 line showed a more modest enlargement of the lens (Figure 4A). After crossing these mice with Crk mutants, however, lens abnormalities in both lines were suppressed and ectopic phospho-Erk staining was abrogated. The length of the fiber cells was reduced to the same size as those seen in the CrkCKO mutants, demonstrating that Crk genes were necessary for the induction of fiber cell elongation by FGF (Figure 4B). Fgf3 overexpression also led to premature exiting of the cell cycle as indicated by the loss of the cell proliferation marker Ki67 (Figure 4C, arrowheads) and an increase in expression of the cell cycle inhibitor p57 (Figure 4C, arrows). As a result, the anterior lens epithelial cells differentiated prematurely to express the fiber cell markers Jag1 and C-Maf at the expense of the epithelial cell markers E-cadherin and Foxe3. Interestingly, the cell cycle and differentiation abnormalities were not rescued after crossing the Fgf3 transgenic mice with CrkCKO mutants. These genetic epistasis experiments further highlighted that the specific functionality of Crk genes is in mediating FGF signaling for lens cell elongation but not differentiation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig4-v2.jpg)
 
-**Figure 4.:** (A) Overexpression of Fgf3 in Fgf3 and OVE391Fgf3 strains resulted in increased lens fiber cell elongation and overall lens sizes. However, both of these phenotypes were suppressed after being crossed with the CrkCKO mutant, indicating a genetic epistasis interaction between the FGF and Crk signaling pathways. (OVE393AB) Quantification of lens fiber cell length. One-way ANOVA test followed by Tukey's multiple comparisons test, *p<0.01, n = 3. (C) Deletion of the Crk genes did not prevent the premature differentiation phenotype observed in the Fgf3 overexpressing lens, as indicated by a reduction of lens progenitor cell markers (Ki67, E-cad and Foxe3) and an increase of differentiation cell markers (p57, Jag1, and C-Maf) within the presumptive lens epithelial layer (arrows). Nonetheless, pERK staining was significantly reduced in the CrkCKO;Fgf3 lens. (OVE391D) The Cre-expressing adenovirus induces efficient genetic recombination in lens explant cultures as indicated by the ROSA reporter. In mTmGCrk explants, the Cre-mediated deletion of Crk proteins prevented Fgf2 from inducing cell shape changes.flox/flox;Crklfloxflox10.7554/eLife.32586.010Figure 4—source data 1.Figure 4B and Figure 7P.
+**Figure 4.:** (A) Overexpression of Fgf3 in Fgf3OVE391 and Fgf3OVE393A strains resulted in increased lens fiber cell elongation and overall lens sizes. However, both of these phenotypes were suppressed after being crossed with the CrkCKO mutant, indicating a genetic epistasis interaction between the FGF and Crk signaling pathways. (B) Quantification of lens fiber cell length. One-way ANOVA test followed by Tukey's multiple comparisons test, *p<0.01, n = 3. (C) Deletion of the Crk genes did not prevent the premature differentiation phenotype observed in the Fgf3 overexpressing lens, as indicated by a reduction of lens progenitor cell markers (Ki67, E-cad and Foxe3) and an increase of differentiation cell markers (p57, Jag1, and C-Maf) within the presumptive lens epithelial layer (arrows). Nonetheless, pERK staining was significantly reduced in the CrkCKO;Fgf3OVE391 lens. (D) The Cre-expressing adenovirus induces efficient genetic recombination in lens explant cultures as indicated by the ROSAmTmG reporter. In Crkflox/flox;Crklfloxflox explants, the Cre-mediated deletion of Crk proteins prevented Fgf2 from inducing cell shape changes.
 
 In the third approach, we used the mouse lens explant system to test the direct role of Crk proteins in FGF-induced fiber cell elongation (Korol et al., 2014). In this assay, the explant lens isolated from P3 mouse embryos carrying Crkflox/flox;Crklfloxflox alleles was infected with a Cre-expressing adenovirus to achieve acute genetic ablation. This avoids any potential complication that may stem from defects in early lens development or other compartments of the eye. Using a ROSAmTmG mouse line that switches the reporter expression from membrane TdTomato to membrane GFP upon Cre mediated recombination, we showed that a 2 day incubation period with the virus was sufficient to induce genetic changes in all lens epithelial cells (Figure 4D). In control explants, β-catenin staining revealed a robust elongation of the lens epithelial cells after FGF2 exposure. By contrast, the lens epithelial cells in Crkflox/flox;Crklfloxflox explants treated with the Cre adenovirus retained the epithelial specific hexagonal shape without any obvious signs of elongation. Taken together, these three lines of evidence established that Crk proteins are essential mediators of FGF signaling whose specific function relates to the fiber cell elongation that occurs during lens development.
 
-## The Frs2 binding site on Fgfr1 is required for Crk signaling
+### The Frs2 binding site on Fgfr1 is required for Crk signaling
 
 Previous studies have suggested that Crk proteins bind directly to the phosphorylated tyrosine-463 residue on Fgfr1 to mediate downstream signaling (Larsson et al., 1999). Surprisingly, mice carrying a Y463F mutation in Fgfr1 (Fgfr1Crk) lacked any observable phenotypes and were reported to be both viable and fertile (Brewer et al., 2015). The lack of abnormality in Fgfr1CRK mice prompted us to examine whether it was due to the compensatory functions of other Fgf receptors. We isolated MEF cells from Fgfr1Crk;Fgfr2flox mice and removed Fgfr2 by Cre-mediated recombination in vitro. Although we have shown above that genetic inactivation of Fgfr1 and Fgfr2 together was sufficient to abrogate FGF signaling in MEF cells (Figure 3B), FGF was still able to induce phosphorylation of Crk/Crkl and Erk in Fgfr1CRK MEF cells after the deletion of Fgfr2 (Figure 3—figure supplement 1A). We next investigated the requirement of the Y463 residue of Fgfr1 for Crk signaling in lens development. For this purpose, we genetically ablated all FGF receptors (Fgfr2, Fgfr3 and Fgfr4) with the exception of Fgfr1 in the mouse lens, resulting in only a modest reduction in lens size (Figure 3—figure supplement 1B). Even in such a stringent genetic background, a homozygous Fgfr1Crk mutation did not further worsen the lens phenotype or disrupt pCrk staining. These results show that the putative Y463 Crk binding site on Fgfr1 is dispensable for FGF-dependent lens development and Crk signaling.
 
@@ -74,31 +90,31 @@ Since our biochemical and genetic data did not support a functional role for the
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig5-v2.jpg)
 
-**Figure 5.:** (A–B) Mutating the Frs2-bindng site in Fgfr1 resulted in the loss of pCrk/Crkl in the ΔFrsPax6 mutant lens. (Le-Cre;Fgfr1flox/ΔFrs;Fgfr2floxfloxB) FGF2 was unable to induce the phosphorylation of Crk proteins in Fgfr1 MEF cells after treatment with the Cre expressing adenovirus. (flox/ΔFrs;Fgfr2floxfloxC) FGF2-induced pCrk/Crkl and pErk were significantly downregulated in both Frs2 and Shp2 null MEF cells. (D) Shp2 was successfully depleted in the Frs2CKO;Shp2CKO lens, which resulted in the loss of pCrk/Crkl staining. (E) pERK was downregulated in both CrkCKO and Shp2CKO lenses and was further reduced in CrkCKO;Shp2CKO mutants. (F) FGF2-induced pCrk/Crkl and pErk were down regulated in Grb2 deficient MEF cells. (G) TAP-taged Crkl pulled down Frs2, Shp2 and Grb2 after FGF2 stimulation. Note that only the slower moving phosphorylated form of Frs2 successfully interacted with Crkl.
+**Figure 5.:** (A–B) Mutating the Frs2-bindng site in Fgfr1ΔFrs resulted in the loss of pCrk/Crkl in the Pax6Le-Cre;Fgfr1flox/ΔFrs;Fgfr2floxflox mutant lens. (B) FGF2 was unable to induce the phosphorylation of Crk proteins in Fgfr1flox/ΔFrs;Fgfr2floxflox MEF cells after treatment with the Cre expressing adenovirus. (C) FGF2-induced pCrk/Crkl and pErk were significantly downregulated in both Frs2 and Shp2 null MEF cells. (D) Shp2 was successfully depleted in the Frs2CKO;Shp2CKO lens, which resulted in the loss of pCrk/Crkl staining. (E) pERK was downregulated in both CrkCKO and Shp2CKO lenses and was further reduced in CrkCKO;Shp2CKO mutants. (F) FGF2-induced pCrk/Crkl and pErk were down regulated in Grb2 deficient MEF cells. (G) TAP-taged Crkl pulled down Frs2, Shp2 and Grb2 after FGF2 stimulation. Note that only the slower moving phosphorylated form of Frs2 successfully interacted with Crkl.
 
-## Crk proteins are recruited indirectly to FGF receptors by the Frs2-Shp2-Grb2 complex
+### Crk proteins are recruited indirectly to FGF receptors by the Frs2-Shp2-Grb2 complex
 
 The above results suggested that Frs2 may be the adaptor protein that recruits Crk to Fgf receptors. To test this idea, we first examined Crk phosphorylation in MEF cells that were mutated by the Cre-mediated deletion of Frs2 and Shp2. As shown in Figure 5C, phosphorylation of Crk proteins induced by FGF was significantly reduced in Frs2 null MEF cells. Moreover, in MEF cells lacking the Frs2 interacting protein Shp2, even the normally seen basal levels of pCrk were lost. We have previously showed that both Frs2 and its binding partner Shp2 have relatively slow turnover rates in vivo (Li et al., 2014). As a result, the conditional inactivation of Frs2 or Shp2 alone exhibited only a modest lens phenotype. Combined deletion of Frs2 and Shp2 in Le-Cre;Frs2flox/floxs;Shp2floxflox (Frs2CKO;Shp2CKO) embryos, however, did block lens development at E14.5. At this stage, the control lens displayed a significant accumulation of Shp2 protein in the transitional zone of the lens, which is also the area of maximum pErk and pCrk/Crkl staining (Figure 5D, arrows). In contrast, neither Shp2 nor the pCrk/Crkl proteins were detectable in the Frs2CKO;Shp2CKO lens. Notably, an in vitro ablation of either Crk or Shp2 reduced the Erk phosphorylation that is normally induced by FGF (Figure 3C and Figure 5D). Consistent with this, both CrkCKO and Shp2CKO embryos at E12.5 continued to display residual levels of pErk staining in the lens (Figure 5E). In CrkCKO;Shp2CKO mutants, however, pErk staining was entirely abolished, suggesting that Shp2 and the Crk family of proteins act synergistically to regulate Erk signaling.
 
 Grb2 is another binding partner of Frs2 that is essential for the activation of Ras-MAPK signaling. In Grb2-depleted MEF cells, we observed a similar reduction in Crk and Erk signaling in response to FGF stimulation (Figure 5F). The attenuation of Crk phosphorylation in Frs2, Shp2 and Grb2 deficient cells raises the possibility that Crk proteins are recruited to the Fgf receptors via the Frs2-Shp2-Grb2 complex. To probe the physical interaction between these proteins, we transfected NIH-3T3 cells with a TAP-Crkl construct that encodes the Crkl protein conjugated to a tandem affinity purification (TAP) tag used for purification (Hallock et al., 2015). When the concentration of FGF was increased, we observed a shift of Frs2 mobility in our immunoblot analysis that is representative of the phosphorylated form of Frs2 being generated as has been previously reported (Figure 5G) (Kouhara et al., 1997). Consistent with this, there was also an increase in the levels of pErk present in the cell lysates. Interestingly, immunoprecipitated TAP-Crkl only pulled down the phosphorylated form of Frs2 induced by FGF stimulation, which was also accompanied by Shp2 and Grb2. Overall these results indicate that the Frs2-Shp2-Grb2 complex is responsible for recruiting Crk proteins to the activated Fgf receptor.
 
-## Rac1 is a downstream effector of crk proteins in lens fiber cell elongation
+### Rac1 is a downstream effector of crk proteins in lens fiber cell elongation
 
 Crk proteins have been implicated in the activation of the small molecular GTPases Rac1 and Rap1, which play important roles in cell adhesion, cytoskeletal rearrangement and cell shape changes (Birge et al., 2009; Feller, 2001). Previous studies have reported that the conditional deletion of Rac1 in the lens resulted in impaired actin polymerization that lead to a morphologically impaired lens (Maddala et al., 2011). Since Rac2 has also been reported to be expressed in the lens (Rao et al., 2004), we decided to inactivate both Rac1 and Rac2 to compare their phonotype with that of the Crk mutants. Immunofluorescence confirmed the specific depletion of Rac1 in the Pax6Le-Cre;Rac1flox/flox;Rac2-/- (RacCKO) lens (Figure 6A–B). Unlike the CrkCKO lens, however, the RacCKO lens did not display a decrease in pErk staining (Figure 6C–D). Nonetheless, depletion of Rac proteins resulted in a lens fiber cell elongation defect, albeit milder than that seen in the CrkCKO lens (Figure 6E–G). To further explore the relationship between Rac and Crk proteins, we utilized the R26-Rac1LSL-G12V allele that results in the expression of a constitutively active form of Rac1 (Rac1CA) after the Cre mediated excision of its STOP cassette (Srinivasan et al., 2009). In the Pax6Le-Cre;Crkflox/flox;Crklfloxflox;R26-Rac1LSL-G12V (CrkCKO;Rac1CA) lens, there was a statistically significant increase in fiber cell length as compared to that of the CrkCKO lens (Figure 6H and U). The partial rescue of the CrkCKO phenotype by Rac1 activation supports the idea that Rac1 is a downstream effector of Crk in the signaling pathways that lead to lens fiber cell elongation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig6-v2.jpg)
 
-**Figure 6.:** (A–D) Staining of Rac-depleted lenses with a pErk antibody showed no significant difference in staining intensity. (E–H) Phalloidin (F-actin) staining revealed that the length of lens fiber cells (indicated by arrows) was significantly reduced in CrkCKO and RacCKO lenses, which was partially reversed after the activation of Rac signaling in CrkCKO;Rac1CA lenses. (I–N) The Rap1 depleted mutants displayed a detachment of the lens fiber cells from the anterior side of the lens epithelial cells (arrow) and Smooth Muscle Actin (SMA) staining within the lens epithelial layer itself (arrowheads). These phenotypes were absent both in the control and the Crk/Crkl depleted lenses. (O–T) Immunstaining of the Rac and Rap1 depleted lenses with progentior (Foxe3, E-cad, Ki67) and differentiation (C-Maf, Jag1,p57) markers did not reveal any defects in differentiation or any further shortening of the fiber cells. (I) Quantification of fiber cell lengths. One-way ANOVA test followed by Tukey's multiple comparisons test, *p<0.01, n = 3.10.7554/eLife.32586.013Figure 6—source data 1.Figure 6U.
+**Figure 6.:** (A–D) Staining of Rac-depleted lenses with a pErk antibody showed no significant difference in staining intensity. (E–H) Phalloidin (F-actin) staining revealed that the length of lens fiber cells (indicated by arrows) was significantly reduced in CrkCKO and RacCKO lenses, which was partially reversed after the activation of Rac signaling in CrkCKO;Rac1CA lenses. (I–N) The Rap1 depleted mutants displayed a detachment of the lens fiber cells from the anterior side of the lens epithelial cells (arrow) and Smooth Muscle Actin (SMA) staining within the lens epithelial layer itself (arrowheads). These phenotypes were absent both in the control and the Crk/Crkl depleted lenses. (O–T) Immunstaining of the Rac and Rap1 depleted lenses with progentior (Foxe3, E-cad, Ki67) and differentiation (C-Maf, Jag1,p57) markers did not reveal any defects in differentiation or any further shortening of the fiber cells. (I) Quantification of fiber cell lengths. One-way ANOVA test followed by Tukey's multiple comparisons test, *p<0.01, n = 3.
 
 Rap1 is also known to be targeted by Crk proteins via activation of the guanine nucleotide exchange factor (GEF), C3G, and FGFR1 has previously been reported to activate Rap1 in endothelial cells (Quilliam et al., 2002; Yan et al., 2008). We reasoned that if Rap1 was a downstream effector of Crk proteins in FGF signaling, Rap1 and Crk deficient lenses should phenocopy each other as well. In agreement with a previous report (Maddala et al., 2015), we found that the conditional knockout of two Rap1 genes (Pax6Le-Cre;Rap1aflox/flox;Rap1bflox/flox (Rap1CKO)) disrupted the epithelial polarity of the lens, leading to an ectopic expression of the epithelial-mesenchymal-transition (EMT) marker smooth muscle actin (SMA) in lens epithelium cells (Figure 6I–L). Due to cell adhesion defects, the posterior lens fiber cells also failed to remain attached to the anterior epithelial cells as is represented by a noticeable gap in the anterior part of the lens. In contrast, neither of these phenotypes were observed in the CrkCKO mutant lens (Figure 6M and N), which instead displayed a more severe lens fiber cell elongation defect than the Rap1CKO mutants. We also considered the possibility that Rap1 and Rac may be functionally redundant in the developing ocular lens. The combined deletion of these four genes in Le-Cre;Rac1flox/flox;Rac2-/-;Rap1aflox/flox;Rap1bflox/flox (RacCKO;Rap1CKO) embryos, however, did not produce any lens differentiation abnormalities or enhance the fiber cell elongation defects previously observed in the RacCKO mutants (Figure 6O–U). Taken together, these results argue against the Rap1 family of proteins being downstream targets of Crk signaling during lens development.
 
-## Activation of ras signaling ameliorated lens fiber cell elongation defects present in the Crk mutant
+### Activation of ras signaling ameliorated lens fiber cell elongation defects present in the Crk mutant
 
 The above experiments showed that a constitutively active form of Rac1 resulted in only modest attenuation of the lens fiber cell elongation defects seen in the CrkCKO mutant, suggesting that there exist additional downstream effectors of the Crk proteins that are important in regulating fiber cell shape. As we have observed a significant downregulation of pErk in the CrkCKO mutant lens, one potential candidate is the Ras-MAPK signaling pathway. We subsequently crossed the CrkCKO mutant with a KrasLSL-G12D mouse, which harbors a Cre-inducible allele of the oncogenic G12D mutated Kras (Tuveson et al., 2004). Because this mutant is expressed from the endogenous Kras locus, it is expected to activate Ras signaling at a normal physiological level as opposed to being overexpressed. Consistent with this, we observed a modest increase in pERK staining in the Pax6Le-Cre;Crkflox/flox;Crklflox/flox;KrasLSL-G12D (CrkCKO;KrasG12D) lens (Figure 7A–C). Although TUNEL staining showed that the cell apoptosis defect was not rescued in the CrkCKO; KrasG12D lens, the number of proliferative Ki67 positive cells increased significantly, which can likely explain the extension of the lens epithelium as evidenced by E-cadherin staining (Figure 7D–L). Importantly, the length of the lens fiber cells in the CrkCKO;KrasG12D lens increased to about 90% of that of the control lens, demonstrating that the activation of Ras signaling can largely rescue the fiber elongation defects caused by the loss of Crk proteins (Figure 7M–P). This result provides strong genetic evidence that Ras signaling plays an essential role in Crk-mediated lens cell shape changes.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/32586/elife-32586-fig7-v2.jpg)
 
-**Figure 7.:** (A–C) Despite the loss of Crk and Crkl, Erk phosphorylation was partially recovered in CrkCKO;Kras lenses. (G12DD–F) A signficant amount of TUNEL positive cells remained in both CrkCKO and CrkCKO;Kras lenses. (G12DG–L) Cell proliferation indicated by Ki57 increased in the CrkCKO;Kras lens as compared to the CrkCKO lens, but there was no significant difference in staining intensity for the differentiation markers E-cad and Jag1. (G12DM–P) Lens fiber cell length increased significantly in CrkCKO;Kras lenses as compared to CrkCKO ones. Fiber cell length was measured based on F-actin staining and statistical analysis was performed using the one-way ANOVA test followed by Tukey's multiple comparisons test (*p<0.01, G12Dn = 3). (Q) Model of Crk function in FGF signaling. The binding of FGF to its receptor induces the assembly of the Frs2-Shp2-Grb2 complex, which subsequently activates Ras signaling to promote lens differentiation. When FGF signaling is further elevated at the transitional zone of the lens, Crk proteins were additionally recruited by the Frs2-Shp2-Grb2 complex to further promote Ras and Rac signaling, resulting in actin cytoskeletal rearrangement and cell shape changes.
+**Figure 7.:** (A–C) Despite the loss of Crk and Crkl, Erk phosphorylation was partially recovered in CrkCKO;KrasG12D lenses. (D–F) A signficant amount of TUNEL positive cells remained in both CrkCKO and CrkCKO;KrasG12D lenses. (G–L) Cell proliferation indicated by Ki57 increased in the CrkCKO;KrasG12D lens as compared to the CrkCKO lens, but there was no significant difference in staining intensity for the differentiation markers E-cad and Jag1. (M–P) Lens fiber cell length increased significantly in CrkCKO;KrasG12D lenses as compared to CrkCKO ones. Fiber cell length was measured based on F-actin staining and statistical analysis was performed using the one-way ANOVA test followed by Tukey's multiple comparisons test (*p<0.01, n = 3). (Q) Model of Crk function in FGF signaling. The binding of FGF to its receptor induces the assembly of the Frs2-Shp2-Grb2 complex, which subsequently activates Ras signaling to promote lens differentiation. When FGF signaling is further elevated at the transitional zone of the lens, Crk proteins were additionally recruited by the Frs2-Shp2-Grb2 complex to further promote Ras and Rac signaling, resulting in actin cytoskeletal rearrangement and cell shape changes.
 
 ## Discussion
 
@@ -112,22 +128,396 @@ C3G, Sos and Dock1 were the first three GEFs identified to be directly associate
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Crkflox, CrkLflox</td>
+      <td>PMID: 19074029</td>
+      <td>RRID:MGI:3830069</td>
+      <td>Dr. Tom Curran (The Children's Research Institute, Children's Mercy Kansas City)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr3flox</td>
+      <td>PMID: 20582225</td>
+      <td>RRID:MGI:4459834</td>
+      <td>Dr. Xin Sun (University of California San Diego)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Frs2αflox</td>
+      <td>PMID: 17868091</td>
+      <td>RRID:MGI:3768915</td>
+      <td>Dr. Feng Wang (Texas A and M)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rap1aflox, Rap1bflox</td>
+      <td>PMID: 18305243</td>
+      <td>RRID:MGI:3777607</td>
+      <td>Alexei Morozov (National Institutes of Health)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Shp2flox</td>
+      <td>PMID: 15520383</td>
+      <td>RRID:MGI:3522138</td>
+      <td>Gen-Sheng Feng (UCSD)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgf3OVE391</td>
+      <td>PMID: 7539358</td>
+      <td></td>
+      <td>Dr. Michael Robinson (Miami University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgf3OVE393A</td>
+      <td>PMID: 9640329</td>
+      <td></td>
+      <td>Dr. Michael Robinson (Miami University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr1ΔFrs</td>
+      <td>PMID: 16421190</td>
+      <td>RRID:MGI:3620075</td>
+      <td>Dr. Raj Ladher (RIKEN Kobe Institute-Center for Developmental Biology)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr1Crk</td>
+      <td>PMID: 26341559</td>
+      <td>RRID:MGI:5882534</td>
+      <td>Dr. Philipo Soriano (Washington University Medical School)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr2flox</td>
+      <td>PMID: 12756187</td>
+      <td>RRID:MGI:3044690</td>
+      <td>Dr. David Ornitz (Washington University Medical School)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr4-/-</td>
+      <td>PMID: 9716527</td>
+      <td>RRID:MGI:3653043</td>
+      <td>Dr. Chu-Xia Deng (National Institute of Health)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Grb2flox</td>
+      <td>PMID: 21427701</td>
+      <td>RRID:MGI:4949890</td>
+      <td>Dr. Lars Nitschke (University of Erlangen-Nürnberg)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Pax6Le-Cre (Le-Cre)</td>
+      <td>PMID: 11069887</td>
+      <td>RRID:MGI:3045795</td>
+      <td>Dr. Ruth Ashery-Padan (Tel Aviv University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rac1flox</td>
+      <td>PMID: 12759446</td>
+      <td>RRID:MGI:2663672</td>
+      <td>Dr. Feng-Chun Yang (Indiana University School of Medicine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rac2-/-</td>
+      <td>PMID: 10072071</td>
+      <td>RRID:MGI:3840460</td>
+      <td>Dr. Feng-Chun Yang (Indiana University School of Medicine)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>KrasLSL-G12D</td>
+      <td>PMID: 15093544</td>
+      <td>RRID:MGI:3044567</td>
+      <td>Mouse Models of Human Cancers Consortium Repository at National Cancer Institute</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fgfr1flox</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007671 RRID:MGI:3713779</td>
+      <td>PMID:16421190</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>R26-Rac1LSL-G12V</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 012361 RRID:MGI:4430563</td>
+      <td>PMID:19879843</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>ROSAmTmG</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 007676 RRID:MGI:3722405</td>
+      <td>PMID:17868096</td>
+    </tr>
+    <tr>
+      <td>Cell line(M. musculus)</td>
+      <td>NIH-3T3</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-1658, RRID:CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>TAP-CrkL</td>
+      <td>PMID: 26527617</td>
+      <td></td>
+      <td>David J. Glass</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-C-maf</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-7866 RRID: AB_638562</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-CrkL</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-319 RRID: AB_631320</td>
+      <td>IHC (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-CrkL</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-365471</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-E-cadherin</td>
+      <td>Sigma</td>
+      <td>Cat. #: U3254</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Frs2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-8318 RRID: AB_2106228</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Grb2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-255 RRID: AB_631602</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Jag1</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-6011 RRID: AB_649689</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Ki-67</td>
+      <td>BD Pharmingen</td>
+      <td>Cat. #: 550609 RRID: AB_393778</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-p57</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab75974</td>
+      <td>IHC (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Pax6</td>
+      <td>Covance</td>
+      <td>Cat. #: PRB-278P RRID: AB_291612</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-pCrk (Tyr221)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 3491</td>
+      <td>IHC (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-pCrkL (Tyr207)</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 3181</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-pERK1/2</td>
+      <td>Cell Signaling</td>
+      <td>Cat. #: 4370</td>
+      <td>IHC (1:200), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-pERK1/2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-7383</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Prox1</td>
+      <td>Covance</td>
+      <td>Cat. No.: PRB-238C</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Rac1</td>
+      <td>BD Transduction Laboratory</td>
+      <td>Cat. #: 610652 RRID: AB_397979</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Shp2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-280 RRID: AB_632401</td>
+      <td>IHC (1:100), WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-α-crystallin</td>
+      <td>Sam Zigler (National Eye Institute)</td>
+      <td></td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-α-SMA</td>
+      <td>Sigma</td>
+      <td>Cat. #: C6198</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-β-catenin</td>
+      <td>Sigma</td>
+      <td>Cat. #: 6F9</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-β-crystallin</td>
+      <td>Sam Zigler (National Eye Institute)</td>
+      <td></td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-γ-crystallin</td>
+      <td>Sam Zigler (National Eye Institute)</td>
+      <td></td>
+      <td>IHC (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5CMVCre-eGFP</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-1174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ad5CMVeGFP</td>
+      <td>Gene Transfer Vector Core, University of Iowa, IA</td>
+      <td>VVC-U of Iowa-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human FGF2</td>
+      <td>ScienCell</td>
+      <td>104–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant murine FGF2</td>
+      <td>ScienCell</td>
+      <td>124–02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In situ cell death detection kit, Fluorescein</td>
+      <td>Sigma</td>
+      <td>11684795910 ROCHE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>streptavidin resin</td>
+      <td>Agilent</td>
+      <td>240207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 Phalloidin</td>
+      <td>ThermoFisher Scientific</td>
+      <td>A12379</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>heparin sodium</td>
+      <td>Sigma</td>
+      <td>H3393</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice carrying Crkflox, Crklflox, Fgfr3flox, Frs2αflox, Rap1aflox, Rap1bflox and Shp2flox alleles were bred and genotyped as described (Lin et al., 2007; Pan et al., 2008; Park and Curran, 2008; Su et al., 2010; Zhang et al., 2004). Fgf3OVE391 and Fgf3OVE393A were from Dr. Michael Robinson (Miami University, Oxford, OH), Fgfr1ΔFrs from Dr. Raj Ladher (RIKEN Kobe Institute-Center for Developmental Biology, Kobe, Japan), Fgfr1Crk from Dr. Philipo Soriano (Washington University Medical School, St Louis, MO), Fgfr2flox from Dr. David Ornitz (Washington University Medical School, St Louis, MO), Fgfr3flox from Dr. Xin Sun (University of California San Diego, La Jolla, CA), Fgfr4-/- from Dr. Chu-Xia Deng (National Institute of Health, Bethesda, MD), Grb2flox from Dr. Lars Nitschke (University of Erlangen-Nürnberg, Erlangen, Germany), Pax6Le-Cre (Le-Cre) from Drs. Ruth Ashery-Padan (Tel Aviv University, Tel Aviv, Israel) and Richard Lang (Children's Hospital Research Foundation, Cincinnati, OH), Rac1flox and Rac2-/- from Dr. Feng-Chun Yang (Indiana University School of Medicine, Indianapolis, IN) (Ackermann et al., 2011; Ashery-Padan et al., 2000; Brewer et al., 2015; Glogauer et al., 2003; Hoch and Soriano, 2006; Roberts et al., 1999; Robinson et al., 1998; Weinstein et al., 1998; Yu et al., 2003). KrasLSL-G12D mice were obtained from the Mouse Models of Human Cancers Consortium (MMHCC) Repository at National Cancer Institute (Tuveson et al., 2004). Fgfr1flox (Stock No: 007671), R26-Rac1LSL-G12V (Stock No: 012361) and ROSAmTmG (Stock No: 007676) mice were obtained from Jackson Laboratory (Hoch and Soriano, 2006; Muzumdar et al., 2007; Srinivasan et al., 2009). In all conditional knockout experiments, mice were maintained on a mixed genetic background and at least three animals were analyzed for each genotype (Supplementary file 1). We did not observe phenotypic variation in lens development among Pax6Le-Cre and Pax6Le-Cre;Crkfloxl+;Crklflox/+ mice, and thus Pax6Le-Cre only mice were used as controls. Mouse maintenance and experimentation was performed according to protocols approved by Columbia University Institutional Animal Care and Use Committee.
 
-## Histology, Immunohistochemistry, Immunocytochemistry
+### Histology, Immunohistochemistry, Immunocytochemistry
 
 Mouse embryos were fixed with 4% paraformaldehyde (PFA) in PBS overnight and paraffin or cryo embedded. The paraffin sections (10 µm) were rehydrated and stained with hematoxylin and eosin (H and E) for histological analysis. Lens sizes were measured as previously described (Cai et al., 2011; Pan et al., 2010). TUNEL staining and immunostaining were performed on the cryosections (8 µm) as previously described (Carbe et al., 2012; Carbe and Zhang, 2011). For phospho-ERK and Shp2 staining, the signal was amplified using a Tyramide Signal Amplification kit (TSA Plus System, PerkinElmer Life Sciences, Waltham, MA). Antibodies used were: anti-Shp2 (Sc-280), anti-C-maf (sc-7866), anti-Crkl (Sc-319), anti-Jag1 (Sc-6011) (all from Santa Cruz Biotechnology, Santa Cruz, CA), anti-pCrkl (Tyr207) (#3181, also recognize pCrk (Tyr221) and anti-pERK1/2 (#4370) (both from Cell Signaling Technology, Boston, MA), anti-P57 (ab75974, from Abcam, Boston, MA), anti-α-SMA (#C6198), anti-β-catenin (6F9), anti-E-cadherin (U3254) (all from Sigma, St. Louis, MO), anti-Ki67 (#550609, BD Pharmingen, San Jose, CA), anti-Crk (#610036), anti-Rac1 (#610651) (both from BD Transduction Laboratory, Franklin Lakes, NJ), anti-Prox1 (PRB-238C) and anti-Pax6 (PRB-278P) (both from Covance, San Diego, CA). Antibodies against α-, β- and γ-crystallins were kindly provided by Sam Zigler (National Eye Institute). Cell proliferation and apoptosis were measured as the ratio of Ki67 or TUNEL-positive cells versus DAPI-positive cells, and analyzed by one-way ANOVA analysis. Alexa Fluor 488 Phalloidin (A12379, ThermoFisher) was used to stain F-actin.
 
-## Lens epithelium explant culture
+### Lens epithelium explant culture
 
 Postnatal day 0 to day 3 Crkflox/flox;Crklfloxflox mice were sacrificed and eyes enucleated. Lenses were then dissected out in lens explant culture medium containing DMEM with 1% BSA (BP1600, Fisher Scientific) and 1:100 dilution of Antibiotic-Antimycotic (15240062, ThermoFisher). Lens capsules were torn open from the posterior before the lens epithelium was peeled off with forceps and pinned down onto a cell culture dish. To delete Crk and Crkl in the lens explants, 2 × 107 adenoviruses expressing Cre recombinase (Ad5CMVCre-eGFP, Cat #: VVC-U of Iowa-1174, Gene Transfer Vector Core, University of Iowa, IA) were added to the culture of 4 explants for 8 hr one day after explant isolation. GFP-expressing adenoviruses (Ad5CMVeGFP, Cat #: VVC-U of Iowa-4) were used as a control. To induce fiber cell differentiation and elongation, these explants were further cultured in the lens explant culture medium with 2 mg/ml heparin sodium (H3393, Sigma) and 100 ng/ml recombinant murine FGF2 (124–02, ScienCell, Carlsbad, CA ) for 4–5 days.
 
-## Cell protein extract isolation and western blots
+### Cell protein extract isolation and western blots
 
 4.24–6.36 × 105 MEF cells infected with Ad5CMVCre were seeded in 60 mm dishes and serum starved (0.5% FBS in DMEM) for 36–48 hr before being stimulated by 50 ng/ml FGF2 (R and D Systems, Minneapolis, MN) for 5 min at 37°C as previously described (Li et al., 2014). After washing twice in cold PBS, MEF cells were lysed in 160 µl RIPA buffer (50 mM Tris-HCl, pH 8.0, 150 mM NaCl, 1% NP40, 0.5% sodium deoxycholate, 0.1% SDS, 1 µg/ml aprotinin, 1 µg/ml pepstatin, 10 mM sodium pyrophosphate, 1 mM PMSF, 0.2 mM Na3VO4, 50 mM NaF). Proteins were visualized by infrared-based western blot analysis using an Odyssey SA scanner (LICOR Biosciences, Lincoln, NE). The signal intensity was quantified using the Odyssey software. The antibodies used were mouse anti-phospho-ERK1/2 (sc-7383, Santa Cruz Biotechnology), anti-phospho-Crk (tyr221) (#3491, Cell Signaling Technology), rabbit-anti-Crkl (sc-319, Santa Cruz biotechnology), mouse-anti-Crkl (sc-365471, Santa Cruz biotechnology), anti-Shp2 (sc-280, Santa Cruz biotechnology), anti-Grb2 (sc-255, Santa Cruz biotechnology), and anti-Frs2 (sc-8318, Santa Cruz biotechnology).
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 NIH3T3 cells from the American Type Culture Collection were tested mycoplasma-free. They were plated at 1 × 106 cell per 10 cm tissue culture plate and transfected with 2.5 μg TAP-Crkl plasmid (Hallock et al., 2015) using lipofectamine 3000 (ThermoFisher, Springfield Township, NJ). 36 hr after the transfection, cells were serum depleted overnight and then were treated with 100 ng/ml recombinant human FGF2 (104–02, ScienCell) for 5 min. Both the treatment group and control were lysed with 1 ml immunoprecipitation buffer (25 mM Tris-HCl, pH 7.4, 1 mM EDTA, 150 mM NaCl, 1% NP-40, 5% glycerol) supplemented with Halt protease inhibitor cocktail (ThermoFisher). Lysates were then incubated with streptavidin resins (240207, Agilent, Santa Clara, CA) to pull down TAP-Crkl, according to manufacturer’s recommendations. Resins were later washed in streptavidin binding buffer (10 mM Tris-HCl, pH 7.5, 1 mM EDTA, 150 mM NaCl) twice at 4°C. All pulled-down proteins were eluted in 1X Laemmli SDS sample buffer (1.5% SDS, 9% glycerol, 62.5 mM Tris-HCl, pH 6.8, 0.00025% Bromophenol blue, 2% β-mercaptoethanol). Samples were denatured at 95°C for 5 min before being loaded onto SDS-PAGE gels.

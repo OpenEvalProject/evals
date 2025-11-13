@@ -23,7 +23,7 @@ Atomic structures of several different eukaryotic voltage-gated K+ (Kv) channels
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig1-v2.jpg)
 
-**Figure 1.:** A, C) and eag1 (Kv10) (PDB: 5K7L) (B, D) channel, viewed along the 4-fold axis from the extracellular side (A, B) or parallel to the membrane with the extracellular side up (C, D).The channels are shown as ribbons and each subunit of a tetramer is colored uniquely. In panels C and D, voltage sensors of the front and back subunit are omitted for clarity. K+ ions are shown as cyan spheres.
+**Figure 1.:** The channels are shown as ribbons and each subunit of a tetramer is colored uniquely. In panels C and D, voltage sensors of the front and back subunit are omitted for clarity. K+ ions are shown as cyan spheres.
 
 The difference between domain-swapped and non-domain-swapped topologies is much more than an architectural curiosity. In the former case, the voltage sensor is connected to the pore by an ~20 Å long S4-S5 linker helix, which runs along the channel’s cytoplasmic surface and contacts the S6 helix, which forms the gate (Figure 1C) (Long et al., 2005a; Long et al., 2007). Conformational changes within the voltage sensor are transmitted to the gate through the S4-S5 linker helix (Long et al., 2005b; Guo et al., 2016; Wisedchaisri et al., 2019; Xu et al., 2019). Channels with non-domain-swapped voltage sensors do not have a helical S4-S5 linker and the mechanism of gate control is unknown (Figure 1D).
 
@@ -33,13 +33,37 @@ Until recently, all voltage-gated channels were thought to be of the domain-swap
 
 ## Results
 
-## Image analysis and map calculation
+### Image analysis and map calculation
 
 KvAP was expressed in E. coli, extracted in a mixture of lauryl maltose neopentyl glycol (LMNG) and cholesteryl hemisuccinate (CHS), exchanged into digitonin and then purified as a complex with Fab fragments using size exclusion chromatography (Figure 2—figure supplement 1). The Fab fragments, which bind to KvAP’s voltage sensors, were used to assist the alignment of channels in image processing. Following 2D classification, 734,850 particles were 3D-classified in Relion3 with C1 symmetry (Figure 2—figure supplement 2) (Scheres, 2012). All classes showed that the voltage sensors were oriented with Fabs projecting towards the extracellular face of the channel. This orientation is compatible with the extracellular accessibility of these Fabs in electrophysiological studies (Jiang et al., 2003b). The extracellular orientation of Fabs in cryo-EM images contrasts with the non-native orientation of KvAP voltage sensors in crystal structures of the full-length channel, in which detergents more dispersive than digitonin were used (Jiang et al., 2003a; Lee et al., 2005).
 
 While the Fabs were on the extracellular surface in all 3D classes, the precise positioning of the Fabs was variable, as shown (Figure 2—figure supplement 2B). The positional variability explains why in both 2D (Figure 2—figure supplement 3A,B) and 3D classes (Figure 2—figure supplement 2B, Figure 2—figure supplement 3C), density for the four Fabs is not constant: in some classes only a single Fab is well aligned, in others 2, 3, or least frequently 4 Fabs are aligned. The variation in Fab orientation is consistent with past studies showing the high degree of mobility of the S3b-S4 paddle region of the voltage sensor (Ruta et al., 2005; Butterwick and MacKinnon, 2010). To increase resolution of the structure we selected one class, representing 13% of the particles, in which all four Fabs were oriented most similarly with respect to each other. We emphasize that these particles were not fundamentally different than the others, but statistically they happened to have more similarly-oriented Fabs, thus permitting better particle averaging. To analyze the pore and voltage sensors in greater detail, we further applied focused 3D classification in Relion3 while masking the KvAP transmembrane region and Fabs and also applying C4 symmetry (Figure 2—figure supplement 2B). The final density map, calculated to 6 Å resolution, showed continuous density for the transmembrane region, density for the Fabs on the extracellular side and a poorly resolved cytoplasmic domain (CTD) on the intracellular side (Figure 2, Figure 2—figure supplement 2, and Figure 2—figure supplement 4). The existence of the cytoplasmic domain, formed by an extension of the C-terminus, was predicted from protein synthesis studies of KvAP (Figure 2—figure supplement 4C) (McDonald et al., 2019).
 
-## Structure of KvAP
+![Figure 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-v2.jpg)
+
+**Figure 2.:** (A) The isolated KvAP voltage sensor crystal structure (PDB: 1ORS, shown as red ribbons) docked into the cryo-EM map (gray mesh), viewed in stereo, parallel to the membrane with the extracellular side up. (B) Same representation as panel (A), rotated 180° around the vertical axis. (C) The pore domain of a single subunit from the crystal structure of the full-length KvAP (PDB: 1ORQ, shown as red ribbons) docked into the cryo-EM map (gray mesh), viewed in stereo, parallel to the membrane with the extracellular side up. (D) The pore domain of the full-length KvAP crystal structure (PDB: 1ORQ, shown as ribbons with each subunit colored uniquely) docked into the cryo-EM map (gray mesh), viewed from the cytoplasmic side. (E) Overall structure of KvAP, viewed along the 4-fold axis, from the extracellular side. The channel is shown as ribbons and each subunit of the tetramer is colored uniquely. K+ ions are shown as cyan spheres.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Size exclusion chromatography of KvAP alone (black trace) and KvAP-6E1 Fab (red trace). The three peaks indicated by the stars above represent KvAP-6E1 Fab complex (red *), KvAP alone (black **) and Fab alone (red ***).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative raw micrograph. (B) Summary of image processing. (C) Euler angle distribution of particles for the final 3D reconstruction. (D) Fourier shell correlation (FSC) curves between the two half maps before (blue) and after (black) postprocessing. (E) Local resolution of the final reconstruction estimated by cryoSPARC (Punjani et al., 2017).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) 2D class averages of all the particles after removing false positives. (B) 2D class averages of the particles used for initial model generation. (C) Overlay of the eight classes after first round of 3D classification showed variation in Fab orientation.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) 2D class averages showing the presence of a cytoplasmic domain. (B) The final 3D reconstruction (gray) with KvAP (purple ribbons) and Fab (gold ribbons) models docked into the density. (C) The amino acid sequence of the cytoplasmic domain.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Postprocessed 3D cryo-EM map in Relion at a nominal resolution of 8 Å. Threshold is set at a relatively low level to show the micelle, CTD and Fab density, viewed parallel to the membrane with the extracellular side up. (B) The same map with threshold set at a much higher level shows clear non-domain-swapped S4-S5 linker density. (C) Zoomed-in view of panel (B).
+
+### Structure of KvAP
 
 A model corresponding to the crystal structure of the isolated voltage sensor, unmodified, was placed into the density (Figure 2A,B) (Jiang et al., 2003a). We note that this model is similar to a second structure that we determined independently using NMR (Butterwick and MacKinnon, 2010). A model corresponding to the crystal structure of the pore, unmodified, was also placed into the density (Figure 2C,D) (Jiang et al., 2003a). Small rigid body adjustments of helical segments were made, followed by a round of real-space refinement. The only new model rebuilding at the level of individual amino acids involved four amino acids inside the continuous density connecting S4 to S5. Without the crystal structures it would have been impossible to build more than a poly-alanine model at 6 Å resolution. However, the crystal structures, which were determined at 1.9 Å for the voltage sensor and 3.2 Å for the pore, conform so well to the experimental map (Figure 2) that we know the approximate location of the amino acids in the final model.
 
@@ -55,15 +79,35 @@ Figure 3 highlights a notable structural difference between KvAP and eag1 (Kv10)
 
 **Figure 4.:** (A,B) Ribbon representation of a single subunit of KvAP, viewed parallel to the membrane with the extracellular side up. Panel B is rotated 180° from panel A around a vertical axis. (C–F) Remapping of EPR data digitized from Cuello et al. (2004) onto a single subunit of KvAP (pore domain as gray ribbons, voltage sensor domain as gray surface) in the same views as panels A and B (Cuello et al., 2004). Panels C and D show the O2 accessibility (red) and panels E and F show the mobility (green) from reconstituted full-length KvAP.
 
-## Conformational state
+### Conformational state
 
 Figure 5 shows side views of the KvAP model, excluding the intracellular domain. In electrophysiological studies on KvAP, the membrane must be depolarized first before the extracellularly-applied Fabs can bind (Jiang et al., 2003b). In the structure, the helical turn of S3b into S4, the Fab epitope, is exposed to the extracellular surface, compatible with Fab accessibility and a depolarized conformation of KvAP. The voltage sensor is similar in conformation to depolarized voltage sensors in other voltage-gated ion channels (Figure 5—figure supplement 1). However, because of the unique interaction between S1 and S5, the S3b-S4 paddle in KvAP resides on the outer-most perimeter of the channel, oriented tangent to the pore domain.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-v2.jpg)
+
+**Figure 5.:** (A) Overall structure of KvAP viewed parallel to the membrane with the extracellular side up. The channel is demarcated by a gray translucent surface and voltage sensors, S4-S5 linkers and intracellular part of S5 are shown as cyan ribbons. Blue spheres show Cα positions of the six positive-charged residues on S4: R117, R120, R123, R126, R133 and K136 from top to bottom. Yellow and two red spheres indicate Cα positions of the gating charge transfer center (yellow: Leu69; Red: Asp72 and Glu93). Gray bars approximate the location of membrane surfaces. (B) Stereo view of KvAP in the same orientation as in panel (A), with the pore domain shown as a gray surface and the voltage sensor domains, the S4-S5 linkers and the intracellular part of S5 as cyan ribbons. (C) Zoomed-in view of one voltage sensor in the same representation as panel (B). Side-chains of the six positive-charged residues as well as the gating charge transfer center are shown as sticks and colored according to atom type.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Overlay of voltage sensor domains from KvAP (red), eag1 (Kv10.1, PDB: 5K7L, blue), Herg (Kv11.1, PDB: 5VA1, light purple), HCN (PDB: 5U6O, cyan), Kv1.2-Kv2.1 paddle chimera (PDB: 2R9R, orange) and Kv7.1 (PDB: 5VMS, magenta) in stereo view.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The channels are shown as Cα traces and only two opposing subunits (colored blue and red) are shown for clarity. The cytoplasmic region of Kir2.2 is omitted.
+
 The pore is less open than in the crystal structure of the full-length channel, but more open than in other closed K+ channels (Figure 2D, Figure 5—figure supplement 2) (Jiang et al., 2003a; Tao et al., 2009). Functionally, KvAP opens and then inactivates partially following membrane depolarization (Schmidt et al., 2009). The conformation of the inner helix gate in this structure might reflect a mixture of open and inactivated channels.
 
-## Remapping of biotin-avidin accessibility data
+### Remapping of biotin-avidin accessibility data
 
 Figure 6 maps previous data on the accessibility of tethered biotin to avidin onto the KvAP structure (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Red and blue spheres show accessibility to the extracellular and intracellular sides of the membrane, respectively. Black spheres show positions inaccessible to either side. With a 1 Å length tether, only superficial sites near the aqueous surfaces are accessible, except at two positions, shown as blue spheres for intracellular accessibility, on the S4 helix. These outlier positions on the structure are more than 15 Å away from the intracellular surface. But the accessibility assay was carried out in membranes under voltage clamp. The result implies that the KvAP voltage sensor can undergo very large voltage-dependent conformational changes to bring these positions close to the intracellular surface. Experiments using longer tethers show results consistent with shorter tethers. Specifically, positions on S4 become exposed to both the extracellular and intracellular sides, depending on the membrane voltage (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig6-v2.jpg)
+
+**Figure 6.:** Previous data on tethered biotin-avidin accessibility with 1 Å effective tether length is remapped onto the cryo-EM structure of KvAP (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Only two opposing subunits (gray and orange ribbons) are shown for clarity. Red and blue spheres represent positions accessible to the extracellular and intracellular sides of the membrane, respectively. Black spheres represent positions inaccessible to either side of the membrane.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52164/elife-52164-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A,B) Remapping previous data on tethered biotin-avidin accessibility with 9–10 Å (panel A) and 17 Å (panel B) effective tether lengths onto the cryo-EM structure of KvAP (Ruta et al., 2005; Banerjee and MacKinnon, 2008). Only two opposing subunits (gray and orange ribbons) are shown for clarity. Red and blue spheres represent positions accessible to the extracellular and intracellular sides of the membrane, respectively. Black spheres represent positions inaccessible to either side of the membrane. Yellow spheres represent positions accessible to both sides of the membrane.
 
 ## Discussion
 
@@ -77,28 +121,199 @@ Our original expectation that KvAP and Shaker-like Kv channels probably undergo 
 
 ## Materials and methods
 
-## Cloning, expression, and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Aeropyrum pernix)</td>
+      <td>KvAP</td>
+      <td>synthetic</td>
+      <td></td>
+      <td>Synthesized at GeneWiz.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a</td>
+      <td>Novagen</td>
+      <td>69864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Invitrogen</td>
+      <td>C600003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,2-didecylpropane-1,3-bis-β-D-maltopyranoside (LMNG)</td>
+      <td>Anatrace</td>
+      <td>NG310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesteryl hemisuccinate (CHS)</td>
+      <td>Anatrace</td>
+      <td>CH210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td>D141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-KvAP (mouse monoclonal, Fab)</td>
+      <td>DOI: 10.1038/nature01580</td>
+      <td>6E1</td>
+      <td>KvAP teramer: 6E1 Fab = 1: 4.4 molar ratio</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Talon metal affinity resin</td>
+      <td>Clontech</td>
+      <td>635504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superdex 200 Increase 10/300 GL</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>R1.2/1.3 400 mesh Au holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>1210627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>DOI: 10.1016/j.jsb.2005.07.007</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>DOI: 10.1038/nmeth.4193</td>
+      <td>https://msg.ucsf.edu/software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gctf</td>
+      <td>DOI: 10.1016/j.jsb.2015.11.003</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>other</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3</td>
+      <td>DOI: 10.7554/eLife.18722</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>DOI: 10.1038/nmeth.4169</td>
+      <td>http://www.cryosparc.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FrealignX</td>
+      <td>DOI: 10.1016/j.jsb.2013.07.005</td>
+      <td>http://grigoriefflab.janelia.org/frealign</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>DOI: 10.1107/S0907444910007493</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>DOI: 10.1107/S2059798318006551</td>
+      <td>https://www.phenix-online.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>DOI: 10.1002/jcc.20084</td>
+      <td>https://www.cgl.ucsf.edu/chimera</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>http://www.pymol.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>DOI: 10.1016/s0263-7855(97)00009-x</td>
+      <td>http://www.holeprogram.org</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning, expression, and purification
 
 DNA encoding residues 12–282 of KvAP was subcloned into protein expression vector pET28a (Novagen) between NcoI and BglII restriction endonuclease sites with a thrombin cleavage site between a carboxy-terminal hexahistidine sequence and the channel. Channel protein was expressed in BL21(DE3) cells (Invitrogen). For large scale culture, a single colony was inoculated in LB medium overnight at 37°C and then diluted 1:100 (v:v) into auto-inducing ZYM-5052 medium and further inoculated at 37°C for 24–26 hr (Studier, 2005).
 
 The cell pellet from a 2-liter culture was resuspended in 100 ml of lysis buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl, 0.1 mg/ml DNase I, and protease inhibitors including 0.1 μg/ml pepstatin A, 1 μg/ml leupeptin, 1 μg/ml aprotinin, 0.1 mg/ml soy trypsin inhibitor, 1 mM benzamidine, 0.1 mg/ml 4-(2-Aminoethyl) benzenesulfonyl fluoride hydrochloride (AEBSF) and 2 mM phenylmethysulfonyl fluoride (PMSF)) and then passed through a microfluidizer three times before adding lauryl maltose neopentyl glycol/cholesteryl hemisuccinate (LMNG/CHS) to a final concentration of 10 mM/2 mM. After 2 hr of extraction at room temperature, the lysate was clarified by centrifugation at 39,800 x g for 30 min. Supernatant was then applied to a prepacked 4 ml Talon Co2+ affinity column (Clontech) equilibrated in wash buffer (20 mM Tris-HCl pH 8.0, 150 mM KCl, 0.06% Digitonin). Nonspecifically bound protein was washed using 15 mM imidazole added to the above buffer. The channel was eluted with 400 mM imidazole, concentrated using an Amicon Ultra centrifugal filter (MWCO 50 kDa), and then injected onto a Superdex-200 (10/30) column (GE Healthcare) equilibrated with wash buffer. Fractions corresponding to KvAP tetramer (indicated by black ** in Figure 2—figure supplement 1) were pooled and concentrated to ~5 mg/ml, mixed with purified 6E1 Fab at a molar ratio of 1:1.1 (KvAP monomer:6E1 Fab) on ice for 0.5 hr, and loaded onto Superdex-200 column again. Fractions corresponding to KvAP-6E1 Fab complex (indicated by red * in Figure 2—figure supplement 1) were pooled, concentrated to ~6.5 mg/ml and used for cryo-EM grid preparation.
 
-## Fab preparation
+### Fab preparation
 
 Monoclonal antibody 6E1 (mouse immunoglobulin) against KvAP were raised using standard procedures (Harlow, 1989) and purified as previously described (Jiang et al., 2003a). In brief, IgGs from mouse hybridoma cell culture supernatant were purified using a Protein A column (Bio-Rad). Fab fragments were generated by papain proteolysis (Worthington) and purified by Q-Sepharose chromatography (GE Healthcare). The hybridoma cell line has not been authenticated or tested for mycoplasma contamination.
 
-## Cryo-EM grid preparation and imaging
+### Cryo-EM grid preparation and imaging
 
 3.5 μl of purified protein was pipetted onto glow-discharged Quantifoil Au 400 mesh, R 1.2/1.3 holey carbon grids (Quantifoil). Grids were blotted for 4 s with a blotting force of 1 and humidity of 100% and flash frozen in liquid-nitrogen-cooled liquid ethane using a FEI Vitrobot Mark IV (FEI).
 
 Grids were then transferred to a FEI Titan Krios electron microscope operating at an acceleration voltage of 300 keV. Images were recorded in an automated fashion on a Gatan K2 Summit detector (Gatan) set to super-resolution mode using SerialEM (Mastronarde, 2005). Specifically, images were recorded at a super-resolution pixel size of 0.514 Å and defocus range of 0.8 to 2.2 μm, for 10 s with a subframe exposure time of 200 ms in a dose of approximately 7.9 electrons per pixel per second (a total accumulated dose of approximately 75 electrons per Å2 over 50 subframes or approximately 1.5 electrons per Å2 per subframe).
 
-## Image processing and map calculation
+### Image processing and map calculation
 
 Dose-fractionated super-resolution images were 2 × 2 down sampled by Fourier cropping for motion correction with MotionCor2 (5 × 5 patches) (Zheng et al., 2017). The parameters of the contrast transfer function were estimated by GCTF (Zhang, 2016). Following motion correction,~5 k particles from a subset of the images were interactively selected using Relion to generate templates representing different views for automated particle selection with gautomatch (https://www.mrc-lmb.cam.ac.uk/kzhang/). The autopicked particles were then subjected to 2D classification in Relion to remove false positives as well as particles belonging to low-abundance classes (Scheres, 2012). Particles belonging to 2D classes with more constant 4 Fabs were used for initial model generation in cryoSPARC (Punjani et al., 2017).
 
 ~735 k particle images were selected following 4 rounds of 2D classification in Relion (Scheres, 2012). These particles were separated into eight classes using Relion’s 3D classification algorithm without a mask. All eight classes showed presence of 4 Fabs on the opposite side of the CTD density, although the positions of Fabs are variable. One of the eight classes, accounting ~13% (~97 k particles) of the total particles, showed most continuous densities for the KvAP channel moiety after 3D auto-refine in Relion imposing C4 symmetry. The resulting map has a resolution of ~8 Å before postprocessing, showing clearly non-domain-swapped S4-S5 linker density (Figure 2—figure supplement 5). The refined particle images of this class were subjected to further focused 3D classification masking the KvAP transmembrane region and Fabs while applying C4 symmetry and skipping image alignment. Rotational and translational parameters of particles from two major classes (~67 k particles) of the focused 3D classification were used as the input for further focused refinement masking around the KvAP transmembrane region and Fabs in FrealignX, during which the resolution of the reference map used for alignment was limited to 8 Å (Lyumkis et al., 2013). The final map achieved a resolution of ~5.9 Å as assessed by Fourier shell correlation using the 0.143 cut-off criterion (Figure 2—figure supplement 2) and was sharpened using an isotropic b-factor of −500 Å2. Symmetry expansion of the above 67 k particles in Relion followed by local refinement in cryoSPARC slightly improved the map quality (Scheres, 2012; Punjani et al., 2017).
 
-## Model building and refinement
+### Model building and refinement
 
 For model generation, the crystal structure of the isolated voltage sensor (PDB: 1QRS) and a model of the pore from the crystal structure of the full-length KvAP channel (PDB: 1ORQ) were placed into the density. Small rigid body adjustments of helical segments were made, followed by a round of real-space refinement in Phenix (Afonine et al., 2018). The only new model rebuilding at the level of individual amino acids involved four amino acids inside the continuous density connecting S4 to S5. Figures were prepared using PyMOL (Molecular Graphics System, Version 2.2.0 Schrodinger, LLC) and Chimera (Pettersen et al., 2004).

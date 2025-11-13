@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.09674.001 How thermal, mechanical and chemical stimuli applied to the skin are transduced into signals transmitted by peripheral neurons to the CNS is an area of intense study. Several studies indicate that transduction mechanisms are intrinsic to cutaneous neurons and that epidermal keratinocytes only modulate this transduction. Using mice expressing channelrhodopsin (ChR2) in keratinocytes we show that blue light activation of the epidermis alone can produce action potentials (APs) in multiple types of cutaneous sensory neurons including SA1, A-HTMR, CM, CH, CMC, CMH and CMHC fiber types. In loss of function studies, yellow light stimulation of keratinocytes that express halorhodopsin reduced AP generation in response to naturalistic stimuli. These findings support the idea that intrinsic sensory transduction mechanisms in epidermal keratinocytes can directly elicit AP firing in nociceptive as well as tactile sensory afferents and suggest a significantly expanded role for the epidermis in sensory processing. DOI: http://dx.doi.org/10.7554/eLife.09674.001
+How thermal, mechanical and chemical stimuli applied to the skin are transduced into signals transmitted by peripheral neurons to the CNS is an area of intense study. Several studies indicate that transduction mechanisms are intrinsic to cutaneous neurons and that epidermal keratinocytes only modulate this transduction. Using mice expressing channelrhodopsin (ChR2) in keratinocytes we show that blue light activation of the epidermis alone can produce action potentials (APs) in multiple types of cutaneous sensory neurons including SA1, A-HTMR, CM, CH, CMC, CMH and CMHC fiber types. In loss of function studies, yellow light stimulation of keratinocytes that express halorhodopsin reduced AP generation in response to naturalistic stimuli. These findings support the idea that intrinsic sensory transduction mechanisms in epidermal keratinocytes can directly elicit AP firing in nociceptive as well as tactile sensory afferents and suggest a significantly expanded role for the epidermis in sensory processing.
 
 ## Introduction
 
@@ -33,49 +33,233 @@ To further examine how the epidermis and cutaneous afferents communicate we anal
 
 ## Results
 
-## Summary of afferent properties measured using ex vivo intracellular and fiber teasing recordings
+### Summary of afferent properties measured using ex vivo intracellular and fiber teasing recordings
 
 In these electrophysiological experiments we have recorded from 200 characterized cutaneous afferents (86 C-fibers, 37 Aδ, 77 Aβ) from the three different mouse genotypes (49 Prph-ChR2, 80 KRT-ChR2, 71 KRT-NpHR). The response properties to natural stimuli (pressure, heat, cold) for the different fiber types can be summarized as follows: Aβ-LTMRs had mechanical thresholds from 5 to 10 mN (mean 5.5 mN), while Aδ-LTMRs thresholds ranged from 1 to 5mN, with a mean of 2.3 mN. For A-HTMRs, Aβ-HTMRs had mechanical thresholds ranging from 10 to 25 mN, with a mean of 17.5 mN; Aδ-HTMRs thresholds were 5–100 mN, with a mean of 26.7 mN. Cutaneous C-fibers showed a range of response properties, with mechanical thresholds from 5 to 50 mN (mean 23 mN), heat thresholds of 37–50°C (mean 44°C), and cold thresholds of 1–18°C (mean 11°C). No significant differences in these values were observed between genotypes.
 
-## Activation of ChR2 in primary afferents produces nocifensive behaviors and action potentials in multiple types of primary afferents
+### Activation of ChR2 in primary afferents produces nocifensive behaviors and action potentials in multiple types of primary afferents
 
-We first determined the extent to which ChR2 activation in sensory neurons mimicked natural stimulation. Mice harboring a cre-responsive ChR2-YFP fusion gene in the Rosa locus (Ai32 mice) were crossed with peripherin (
+We first determined the extent to which ChR2 activation in sensory neurons mimicked natural stimulation. Mice harboring a cre-responsive ChR2-YFP fusion gene in the Rosa locus (Ai32 mice) were crossed with peripherin (Prph)-cre mice to target ChR2 to unmyelinated and myelinated primary sensory neurons. The YFP tag allowed visualization of ChR2-positive projections in the skin and cell bodies in the dorsal root ganglion (DRG) of Prph-ChR2 mice (Figure 1A,B). Myelinated and unmyelinated fibers expressed ChR2 as indicated by ChR2-YFP-positive fibers in the skin (Figure 1A) and physiological recordings (Figure 1D,E). Behaviorally, all Prph-ChR2 mice (5 out of 5 mice tested) demonstrated robust light-induced tail-flick or hindpaw withdrawal in <30 ms in response to a 473 nm laser light flash, consistent with previous findings (Grando et al., 1993; Daou et al., 2013). Wildtype littermate mice (n = 5) were unresponsive.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09674/elife-09674-fig1-v2.jpg)
 
-**Figure 1.:** (A). ChR2-YFP expression in unmyelinated and myelinated (lanceolate endings of hair shaft, panels on right) fibers of Prph-ChR2 mouse skin. Arrows indicate nerve fibers in dermis and epidermis (Epi); DAPI (blue) labeling demarcates keratinocytes. (B). ChR2 is expressed in DRG neurons of Prph-ChR2 but not KRT-ChR2 mice. CGRP labels peptidergic neurons. (C). Ex vivo preparation used for functional characterization of cutaneous afferents in response to mechanical, heat and laser stimulation. (D). Response of a Prph-ChR2 Aδ-HTMR to mechanical and blue laser stimulation. (E). Recordings from a CMHC nociceptor from a Prph-ChR2 mouse in response to mechanical, thermal and light stimulation. Calibration bars in (A) = 250 µm, (B) = 100 µm, (E) = 60 mV/1 s, top trace; 40 mV/1 s, bottom trace.DOI: http://dx.doi.org/10.7554/eLife.09674.003
+**Figure 1.:** (A). ChR2-YFP expression in unmyelinated and myelinated (lanceolate endings of hair shaft, panels on right) fibers of Prph-ChR2 mouse skin. Arrows indicate nerve fibers in dermis and epidermis (Epi); DAPI (blue) labeling demarcates keratinocytes. (B). ChR2 is expressed in DRG neurons of Prph-ChR2 but not KRT-ChR2 mice. CGRP labels peptidergic neurons. (C). Ex vivo preparation used for functional characterization of cutaneous afferents in response to mechanical, heat and laser stimulation. (D). Response of a Prph-ChR2 Aδ-HTMR to mechanical and blue laser stimulation. (E). Recordings from a CMHC nociceptor from a Prph-ChR2 mouse in response to mechanical, thermal and light stimulation. Calibration bars in (A) = 250 µm, (B) = 100 µm, (E) = 60 mV/1 s, top trace; 40 mV/1 s, bottom trace.
 
 We then used an ex vivo skin/nerve/DRG/spinal cord preparation (Figure 1C) (McIlwrath et al., 2007; Lawson et al., 2008) to characterize cutaneous afferent response properties in Prph-ChR2 mice (Figure 1D,E). ChR2 neurons responded to blue light pulses ranging from 39.7 mW (5–10,000 ms) to 0.7 mW (1000 ms pulse). Recordings were made from 49 characterized sensory neurons from 7 mice with 26 responders that included 1 A-fiber and 25 C-fiber nociceptors (identified based on their response to noxious mechanical or thermal stimuli) (Table 2). Among laser-responsive C-fibers, 21 responded to mechanical stimuli and of these, 14 responded to heat and/or cold stimuli. Four were classified as responding only to heat stimulation and 7 responded only to mechanical stimuli.
 
 Activation of Prph-ChR2 afferents revealed complex intrinsic firing properties. A Prph-ChR2 Aδ-HTMR (A-delta-high threshold mechanoreceptor) exhibited a tonic response to mechanical stimulation whereas blue light evoked a phasic response (Figure 1D). In a CMHC nociceptor (C-fiber responding to mechanical, noxious heat and cold stimuli), suprathreshold light stimulation produced tonic firing whereas suprathreshold mechanical stimulation evoked a more phasic response (Figure 1E). Latency to first response to mechanical and light stimulation was similar. Peak instantaneous frequencies (IF) were significantly higher for suprathreshold mechanical stimulation, averaging 33.9 Hz for mechanical vs 8.6 Hz for light stimulation (@ 39.7 mW) for all mechanically responsive C-fibers. Interestingly, the average peak IF seen with laser light was similar to that seen in polymodal nociceptors (the majority of cutaneous afferents) in response to noxious heat (McIlwrath et al., 2007; Lawson et al., 2008). This raised the possibility that afferent-expressed ChR2 activation can evoke a ‘baseline’ response of putative nociceptors that reflects the intrinsic properties of these cells and that more naturalistic responses require collaboration of surrounding cells, including keratinocytes.
 
-## Activation of ChR2 in keratinocytes produces nocifensive behaviors and action potentials in multiple types of primary afferents
+### Activation of ChR2 in keratinocytes produces nocifensive behaviors and action potentials in multiple types of primary afferents
 
-To determine if keratinocytes contribute to afferent activation, mice that express ChR2-YFP (ChR2) specifically in keratinocytes were generated by crossing Ai32 mice with
+To determine if keratinocytes contribute to afferent activation, mice that express ChR2-YFP (ChR2) specifically in keratinocytes were generated by crossing Ai32 mice with Krt14 keratin Cre mice (KRT14-Cre). KRT-ChR2 mice exhibited robust expression of ChR2 in epidermal keratinocytes and hair follicles of hairy skin and basal and suprabasal keratinocytes of glabrous skin (Figure 2A). ChR2 expression does not occur in other dermal structures (vasculature, muscle) or in the DRG (Figure 1B). KRT-ChR2 mice also exhibited behavioral responses to blue light stimulation (Figure 2B, Table 1), but at lower frequencies and with greater latencies relative to Prph-ChR2 mice. The average withdrawal latency for KRT-ChR2 mice was 15.75 s ± 2.26 (SEM) (see Video 1), compared to the millisecond withdrawal responses exhibited by Prph-ChR2 mice. Testing was done in a blinded manner and all KRT-ChR2 mice responded at least one time out of 10 trials with laser stimulation restricted to a 30 s maximum. Measures on human skin using a thermistor showed a slight laser-induced increase in surface temperature (from 27.5°C to 30.5°C) over the 30 s stimulation period, indicating that KRT-ChR2 mouse responses were not due to laser heating of the skin. That light activation of ChR2-keratinocytes could evoke nocifensive-type behaviors suggested that robust communication occurs between keratinocytes and sensory afferents that transmit nociceptive stimuli.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09674/elife-09674-fig2-v2.jpg)
 
-**Figure 2.:** (A). ChR2-YFP expression in keratinocytes of glabrous skin of KRT-ChR2 mouse. PGP9.5-positive nerve fibers (red) are in dermis and epidermis (arrows). (B). Plot of behavioral responses to blue laser across time intervals for Prph-ChR2 and KRT-ChR2 mice. All Prph-Cre mice showed an immediate response (within 5 s of stimulation). All KRT-ChR2 mice also responded at least once in 10 trials and with variable latencies (see Table 1). (C). Example showing activation of a CMH fiber type in response to blue laser applied to KRT-ChR2 skin in the ex vivo preparation. Responses of this fiber to mechanical and heat stimuli are shown below laser response. (D). Example of a train of action potentials elicited in a CH fiber type in response to laser activation of the KRT-ChR2 skin. Responses of this fiber to heat stimuli are shown below laser response. (E). In this KRT-ChR2 Aβ HTMR afferent laser stimulation does not produce firing when presented alone, but does in combination with subthreshold (5 mN) mechanical stimulation. (F). Light directly activates this KRT-ChR2 CMHC fiber and summates with noxious heat stimulation. (G). SA1 Aβ-low threshold mechanoreceptor responds to mechanical and laser stimulation. (H). SA1s terminate on ChR2-YFP (green) positive Merkel cells co-labeled with anti-K20 (orange). Anti-NFH (red) labels SA1 fiber. Calibration bars in (A) and (H) = 100 µm. (I). Light-evoked responses from a SA-1 fiber at varying intensities (1–40 mW) with instantaneous frequency depicted. Pulses were 5 s in duration with 30 s between pulses. (J). Normalized mean firing rate vs light intensity plotted on a log-intensity scale. Data from 8 afferents are averaged from ascending and descending steps of light intensity, and were fit with a Boltzman sigmoidal function (R2 = 0.98).DOI: http://dx.doi.org/10.7554/eLife.09674.005
+**Figure 2.:** (A). ChR2-YFP expression in keratinocytes of glabrous skin of KRT-ChR2 mouse. PGP9.5-positive nerve fibers (red) are in dermis and epidermis (arrows). (B). Plot of behavioral responses to blue laser across time intervals for Prph-ChR2 and KRT-ChR2 mice. All Prph-Cre mice showed an immediate response (within 5 s of stimulation). All KRT-ChR2 mice also responded at least once in 10 trials and with variable latencies (see Table 1). (C). Example showing activation of a CMH fiber type in response to blue laser applied to KRT-ChR2 skin in the ex vivo preparation. Responses of this fiber to mechanical and heat stimuli are shown below laser response. (D). Example of a train of action potentials elicited in a CH fiber type in response to laser activation of the KRT-ChR2 skin. Responses of this fiber to heat stimuli are shown below laser response. (E). In this KRT-ChR2 Aβ HTMR afferent laser stimulation does not produce firing when presented alone, but does in combination with subthreshold (5 mN) mechanical stimulation. (F). Light directly activates this KRT-ChR2 CMHC fiber and summates with noxious heat stimulation. (G). SA1 Aβ-low threshold mechanoreceptor responds to mechanical and laser stimulation. (H). SA1s terminate on ChR2-YFP (green) positive Merkel cells co-labeled with anti-K20 (orange). Anti-NFH (red) labels SA1 fiber. Calibration bars in (A) and (H) = 100 µm. (I). Light-evoked responses from a SA-1 fiber at varying intensities (1–40 mW) with instantaneous frequency depicted. Pulses were 5 s in duration with 30 s between pulses. (J). Normalized mean firing rate vs light intensity plotted on a log-intensity scale. Data from 8 afferents are averaged from ascending and descending steps of light intensity, and were fit with a Boltzman sigmoidal function (R2 = 0.98).
 
-To further investigate keratinocyte-sensory neuron communication we used ex vivo preparations that employed both intracellular and fiber teasing recording techniques. Electrophysiological recordings were obtained from 80 cells isolated from 16 KRT-ChR2 mice (Table 2). Laser activation induced APs in 6 out of 24 unmyelinated nociceptive fiber neurons (Figure 2C,D) and in 4 out of 14 myelinated high-threshold mechanoreceptors (HTMRs) (not shown). These responses in heat-sensitive neurons are not due to laser-generated heat, as measures using a thermistor show minimal rise (∼1 °C) in temperature over the 5 s recording interval. In addition, 3 myelinated HTMR fibers exhibited apparent summation when the laser was presented with natural stimuli. An example of this summation is shown in Figure 2E. This myelinated HTMR fiber had a mechanical threshold of 10 mN and neither a 5 mN mechanical stimulus nor the maximal intensity of blue light evoked a response. However, simultaneous application of 5 mN mechanical stimulation and light stimulation was sufficient to elicit APs. Recordings from 18 C-fiber nociceptors were maintained long enough to make multiple presentations of natural, laser and combined laser and natural stimuli. In 12 of these fibers, combined laser and natural stimulation evoked significantly more APs than natural stimuli alone (p < 0.01 paired T-test, n = 12) (Figure 2F). The remaining 6 C-fiber nociceptors did not display any summation when pairing laser and natural stimuli (not shown). Comparison of the functional properties of laser responsive and unresponsive nociceptive fibers revealed no significant differences. Laser activation also elicited AP firing in all 21 myelinated slowly adapting type 1 (SA1) low-threshold mechanoreceptors (LTMRs), which is most likely due to activation of Merkel cells (Maricich et al., 2009; Maksimovic et al., 2014), which, like epidermal keratinocytes, express the KRT14 keratin (Figure 2G–J). However, laser stimulation failed to activate any APs in myelinated rapidly adapting LTMRs.10.7554/eLife.09674.004Table 2.Number of primary afferents recorded from Prph-ChR2, KRT-ChR2 and KRT-NpHR mice that showed responses to light stimulationDOI: http://dx.doi.org/10.7554/eLife.09674.004Prph-ChR2KRT-ChR2KRT-NpHRCell typeResponsiveUnresponsiveResponsive (direct)UnresponsiveResponsiveUnresponsiveSA10321 (21)0160RA (Aβ) LTMR0401509RA (Aδ) LTMR010602A-HTMR (Aβ)113 (2)125A-HTMR (Aδ)024 (2)657CM701 (0)124CC020101CH434 (2)301CMC011 (0)111CMH1136 (2)075CMHC336 (2)021Fibers that were activated directly by light stimulation of KRT-ChR2 keratinocytes are in parentheses.Cell types recorded from are: SA1, slowly adapting type 1; RA (Aβ), rapidly adapting A beta low-threshold mechanoreceptor; RA (Aδ), rapidly adapting A delta low-threshold mechanoreceptor, A-HTMR, high-threshold mechanoreceptor(Aβ); A-HTMR, high-threshold mechanoreceptor (Aδ); CM, C mechanoreceptor; CC, C cold receptor; CH, C heat receptor; CMC, C mechano-cold receptor; CMH, C mechano-heat receptor; CMHC, C mechano-heat and cold receptor.
+**Table 1.**
+ KRT-ChR2 mice respond to blue light stimulation of paw skin
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mouse strain</th>
+      <th>Sex</th>
+      <th>Responses/10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KRT-ChR2 1</td>
+      <td>Female</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>KRT-ChR2 2</td>
+      <td>Female</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KRT-ChR2 3</td>
+      <td>Female</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>KRT-ChR2 4</td>
+      <td>Male</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>KRT-ChR2 5</td>
+      <td>Male</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>KRT-ChR2 6</td>
+      <td>Male</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td></td>
+      <td>2.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_All KRT-ChR2 mice respond to light applied to foot plantar skin whereas control littermates (n = 5) showed no response. The number of nocifensive responses (paw lifting, biting, licking) out of 10 stimulations was recorded. In total, light evoked responses in KRT-ChR2 mice in 17 of 60 total trials (28%). Control KRT-Cre mice lack the ChR2 gene whereas WT controls lack both transgenes._
+
+![Video 1.](https://cdn.elifesciences.org/articles/09674/elife-09674-media1.mov.jpg)
+
+**Video 1.:** Blue light stimulation of channelrhodopsin expressing keratinocytes in the skin of KRT-ChR2 mice induces behavioral withdrawal responses. This mouse exhibits foot lifting at ∼9 s after light exposure on the glabrous skin of the hind foot.
+
+To further investigate keratinocyte-sensory neuron communication we used ex vivo preparations that employed both intracellular and fiber teasing recording techniques. Electrophysiological recordings were obtained from 80 cells isolated from 16 KRT-ChR2 mice (Table 2). Laser activation induced APs in 6 out of 24 unmyelinated nociceptive fiber neurons (Figure 2C,D) and in 4 out of 14 myelinated high-threshold mechanoreceptors (HTMRs) (not shown). These responses in heat-sensitive neurons are not due to laser-generated heat, as measures using a thermistor show minimal rise (∼1 °C) in temperature over the 5 s recording interval. In addition, 3 myelinated HTMR fibers exhibited apparent summation when the laser was presented with natural stimuli. An example of this summation is shown in Figure 2E. This myelinated HTMR fiber had a mechanical threshold of 10 mN and neither a 5 mN mechanical stimulus nor the maximal intensity of blue light evoked a response. However, simultaneous application of 5 mN mechanical stimulation and light stimulation was sufficient to elicit APs. Recordings from 18 C-fiber nociceptors were maintained long enough to make multiple presentations of natural, laser and combined laser and natural stimuli. In 12 of these fibers, combined laser and natural stimulation evoked significantly more APs than natural stimuli alone (p < 0.01 paired T-test, n = 12) (Figure 2F). The remaining 6 C-fiber nociceptors did not display any summation when pairing laser and natural stimuli (not shown). Comparison of the functional properties of laser responsive and unresponsive nociceptive fibers revealed no significant differences. Laser activation also elicited AP firing in all 21 myelinated slowly adapting type 1 (SA1) low-threshold mechanoreceptors (LTMRs), which is most likely due to activation of Merkel cells (Maricich et al., 2009; Maksimovic et al., 2014), which, like epidermal keratinocytes, express the KRT14 keratin (Figure 2G–J). However, laser stimulation failed to activate any APs in myelinated rapidly adapting LTMRs.
+
+**Table 2.**
+ Number of primary afferents recorded from Prph-ChR2, KRT-ChR2 and KRT-NpHR mice that showed responses to light stimulation
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Prph-ChR2</th>
+      <th colspan="2">KRT-ChR2</th>
+      <th colspan="2">KRT-NpHR</th>
+    </tr>
+    <tr>
+      <th>Cell type</th>
+      <th>Responsive</th>
+      <th>Unresponsive</th>
+      <th>Responsive (direct)</th>
+      <th>Unresponsive</th>
+      <th>Responsive</th>
+      <th>Unresponsive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SA1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>21 (21)</td>
+      <td>0</td>
+      <td>16</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>RA (Aβ) LTMR</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0</td>
+      <td>15</td>
+      <td>0</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>RA (Aδ) LTMR</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>6</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>A-HTMR (Aβ)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3 (2)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>A-HTMR (Aδ)</td>
+      <td>0</td>
+      <td>2</td>
+      <td>4 (2)</td>
+      <td>6</td>
+      <td>5</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>CM</td>
+      <td>7</td>
+      <td>0</td>
+      <td>1 (0)</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CH</td>
+      <td>4</td>
+      <td>3</td>
+      <td>4 (2)</td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CMC</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1 (0)</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CMH</td>
+      <td>11</td>
+      <td>3</td>
+      <td>6 (2)</td>
+      <td>0</td>
+      <td>7</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>CMHC</td>
+      <td>3</td>
+      <td>3</td>
+      <td>6 (2)</td>
+      <td>0</td>
+      <td>2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fibers that were activated directly by light stimulation of KRT-ChR2 keratinocytes are in parentheses.Cell types recorded from are: SA1, slowly adapting type 1; RA (Aβ), rapidly adapting A beta low-threshold mechanoreceptor; RA (Aδ), rapidly adapting A delta low-threshold mechanoreceptor, A-HTMR, high-threshold mechanoreceptor(Aβ); A-HTMR, high-threshold mechanoreceptor (Aδ); CM, C mechanoreceptor; CC, C cold receptor; CH, C heat receptor; CMC, C mechano-cold receptor; CMH, C mechano-heat receptor; CMHC, C mechano-heat and cold receptor._
 
 AP firing following laser stimulation of keratinocytes was generally less robust than AP firing in Prph-ChR2 afferents (avg peak IF = 0.3Hz vs 8.6Hz, respectively). The exception was in recordings from SA1 fibers, which showed a robust, but atypical pattern of firing to light stimulation (Figure 2G,I). In response to mechanical stimulation SA1 fibers exhibit a characteristic response consisting of an initial high frequency burst of action potentials followed by a sustained firing, but at a lower frequency. Although light stimulation of these fibers could evoke high frequency bursts of activity, these bursts did not occur at the initial onset of the light stimulus (mechanical mean peak IF = 218.2Hz; optical mean peak IF = 109.2 Hz) (Figure 2G). The SA1 response to light was stable, could be elicited repeatedly and was intensity dependent (Figure 2I,J).
 
-## Keratinocytes from KRT-ChR2 mice are activated by blue light stimulation
+### Keratinocytes from KRT-ChR2 mice are activated by blue light stimulation
 
-To confirm that KRT-ChR2 keratinocytes are indeed activated by blue light, we examined the electrophysiological properties of these cells using whole cell patch clamp analysis. Keratinocytes do not normally generate APs, but they do have resting membrane potentials generated by currents mediated by ion (e.g., K
+To confirm that KRT-ChR2 keratinocytes are indeed activated by blue light, we examined the electrophysiological properties of these cells using whole cell patch clamp analysis. Keratinocytes do not normally generate APs, but they do have resting membrane potentials generated by currents mediated by ion (e.g., K+, Cl−) channels intrinsic to the plasma membrane (Wohlrab et al., 2000). Patch clamp recordings were made from keratinocytes isolated from adult tail skin of KRT-ChR2 mice (Figure 3A). Recordings from 11 ChR2-YFP keratinocytes all showed inward current in response to a brief (1 s) flash of blue light (peak current: median 26.3 pA; steady current: 16.5 pA) (Figure 3B,C). No light-induced currents were recorded in keratinocytes cultured from wildtype mice (n = 4 cells).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09674/elife-09674-fig3-v2.jpg)
 
-**Figure 3.:** (A). Fluorescent ChR2-YFP protein in plasma membrane of keratinocytes cultured from skin of KRT-ChR2 mice. (B). IR-DIC images of patch pipette on single keratinocyte that was recorded from and then filled with Alexa 555 dye. (C). Representative trace illustrates typical current evoked by blue light stimulation of KRT-ChR2. Yellow light stimulation of KRT-NpHR keratinocytes also produced a change in voltage properties of the cell. Control KRT-Cre keratinocytes that were isolated in parallel showed no response to light (not shown). Bar in A is 40 µM.DOI: http://dx.doi.org/10.7554/eLife.09674.008
+**Figure 3.:** (A). Fluorescent ChR2-YFP protein in plasma membrane of keratinocytes cultured from skin of KRT-ChR2 mice. (B). IR-DIC images of patch pipette on single keratinocyte that was recorded from and then filled with Alexa 555 dye. (C). Representative trace illustrates typical current evoked by blue light stimulation of KRT-ChR2. Yellow light stimulation of KRT-NpHR keratinocytes also produced a change in voltage properties of the cell. Control KRT-Cre keratinocytes that were isolated in parallel showed no response to light (not shown). Bar in A is 40 µM.
 
-## Activation of halorhodopsin in keratinocytes inhibits AP firing in cutaneous primary afferents
+### Activation of halorhodopsin in keratinocytes inhibits AP firing in cutaneous primary afferents
 
-A loss of function approach using transgenic mice that express halorhodopsin (eNpHR3.0, ‘NpHR’) in keratinocytes was also used to further demonstrate the role of epidermal cells in afferent activation. Halorhodopsin is a yellow-to-red light-activated chloride pump that when expressed in neurons generates hyperpolarization, inhibits AP firing and neural activity (
+A loss of function approach using transgenic mice that express halorhodopsin (eNpHR3.0, ‘NpHR’) in keratinocytes was also used to further demonstrate the role of epidermal cells in afferent activation. Halorhodopsin is a yellow-to-red light-activated chloride pump that when expressed in neurons generates hyperpolarization, inhibits AP firing and neural activity (Raimondo et al., 2012). Using keratinocyte cultures from KRT-NpHR mice we recorded from 5 cells that all exhibited a hyperpolarizing response to orange light illumination. The median hyperpolarization was −1.1 mV. Using ex vivo preparations employing intracellular and fiber teasing techniques, 46 myelinated and 25 unmyelinated cells were recorded from 5 KRT-NpHR mice (Table 2). Application of yellow laser (589 nm) to the skin reduced AP firing in response to mechanical or heat stimulation in 12 of 25 C-fiber nociceptors and 7 of 19 myelinated nociceptors (Figure 4). This reduction was fiber type dependent with the most pronounced effects in mechanically sensitive C-fiber nociceptors (p = 0.02 Paired T-test n = 7) and slowly adapting type I LTMRs (p < 0.01 Paired T-Test n = 10) (Table 2). There were no effects observed on myelinated rapidly adapting LTMRs. It should also be noted that while in some presentations this yellow light-induced reduction in firing was 100% (Figure 4A,B), the average reduction in affected fibers was lower, that is, 44% in C fibers (n = 12), 48% in A-HTMRs (n = 7) and 44% in 16 SA1 fibers. In addition, in some cases where 100% reduction was observed, on subsequent light exposures the reduction in firing was less pronounced (Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09674/elife-09674-fig4-v2.jpg)
 
-**Figure 4.:** (A). Yellow light decreases AP firing in response to mechanical stimulation in this Aδ-HTMR afferent. (B). In this CMH-fiber the response to mechanical stimulation is decreased with the initial yellow laser stimulation; a smaller decrease in AP firing occurred with a second laser presentation. (C). This CMH-fiber showed decreased firing in response to heat in the presence of yellow laser stimulation. (D). Responses of a SA1 fiber to mechanical stimulation are significantly reduced by activation of NpHR in epidermal keratinocytes (which are likely Merkel cells). Laser stimuli (orange bars) occurred 1 s prior to mechanical (black bar) or heat (red bar) stimuli. Duration of each stimulus was either 5 s (mechanical and heat) or 6 s (laser).DOI: http://dx.doi.org/10.7554/eLife.09674.009
+**Figure 4.:** (A). Yellow light decreases AP firing in response to mechanical stimulation in this Aδ-HTMR afferent. (B). In this CMH-fiber the response to mechanical stimulation is decreased with the initial yellow laser stimulation; a smaller decrease in AP firing occurred with a second laser presentation. (C). This CMH-fiber showed decreased firing in response to heat in the presence of yellow laser stimulation. (D). Responses of a SA1 fiber to mechanical stimulation are significantly reduced by activation of NpHR in epidermal keratinocytes (which are likely Merkel cells). Laser stimuli (orange bars) occurred 1 s prior to mechanical (black bar) or heat (red bar) stimuli. Duration of each stimulus was either 5 s (mechanical and heat) or 6 s (laser).
 
 ## Discussion
 
@@ -95,30 +279,30 @@ Disturbances in epidermal-neuronal signaling in inflamed or damaged skin result 
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Male and female mice ages 6–10 wks were used. Mice expressing ChR2 in sensory neurons were generated by crossing Ai32 mice with peripherin-Cre mice (Zhou et al., 2002), which were generously provided by Dr. Rebecca Seal (Department of Neurobiology, University of Pittsburgh). Transgenic mice that express ChR2 in keratinocytes were generated by crossing Ai32 mice (B6;129S-Gt(ROSA)26Sortm32.1(CAG-COP4*H134R/EYFP)Hze/J ) with KRT14-Cre mice (Tg(KRT14-cre)1Amc/J), both obtained from Jackson Laboratories (Bar Harbor, ME). Mice expressing halorhodopsin (eNpHR3.0-EYFP) in keratinocytes were generated by crossing Ai39 mice (B6;129S-Gt(ROSA)26Sortm39(CAG-HOP/EYFP)Hze/J) with KRT14-Cre mice. All experiments were approved by the Institutional Animal Care and Use Committee at the University of Pittsburgh (protocol # 14074296).
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Skin and dorsal root ganglia were post-fixed in 4% paraformaldehyde, cryoprotected in 25% sucrose, embedded in gelatin, sectioned on a sliding microtome and labeled using target-specific antibodies followed by a fluorescently tagged secondary.
 
 Sections were stained with antibodies to keratin K20 (1:20, mouse; Signet Covance, MA), NF145 (1:200, rabbit; Millipore, MA) or PGP9.5 (1:1000, rabbit; Ultraclone, UK) followed by appropriate secondary antibodies (Jackson ImmunoResearch) used at 1:500 dilution. Fluorescent images were captured using a digital camera attached to a Leica DM4000B fluorescence microscope (Leica, Wetzlar, Germany) and processed for brightness and contrast using Adobe Photoshop.
 
-## Behavior
+### Behavior
 
 Laser-induced paw withdrawal latency was measured using an 80 mW, 473 nm wavelength laser from a distance of 8–10 mm while animals were confined in a glass container. For KRT-ChR2 and control mice the number of nocifensive responses (paw lifting, biting, licking) out of 10 stimulations was recorded.
 
-## Ex vivo intracellular recording and fiber teasing
+### Ex vivo intracellular recording and fiber teasing
 
 Comprehensive phenotyping of individual afferents was done using an ex vivo skin/nerve/DRG preparation as previously described (McIlwrath et al., 2007). Mice were anesthetized with ketamine/xylazine mixture (90/10 mg/kg, respectively) and perfused with oxygenated artificial cerebrospinal fluid (aCSF). The hairy skin of one hindpaw, saphenous nerve, DRGs, and spinal cord were dissected in continuity and placed in a bath of warm (31°C) circulating oxygenated aCSF. The skin was placed on an elevated metal platform exposing the epidermis to air for mechanical, thermal and laser stimulation. Electrophysiological recordings were performed by impaling individual neuronal somata using sharp quartz microelectrodes. Electrical stimuli were delivered through a suction electrode on the nerve to locate sensory neurons that innervate the skin. Receptive fields were localized and characterized based on responses to mechanical and/or thermal stimulation. Responsiveness to laser stimulation was determined using an 80 mW, 473 nm wavelength laser (to activate ChR2) or a 34 mW, 589 nm wavelength laser (to activate halorhodopsin)(Laserglow Technologies, Toronto, Canada) affixed to a micromanipulator. The distance from the skin was adjusted to produce a 1–2 mm diameter illuminated area. In the KRT-ChR2 experiments blue light and mechanical or thermal stimuli were applied simultaneously. The tip of the mechanical stimulator is 1 mm in diameter and typically did not block the entire receptive field available for laser stimulation. In addition, the light was delivered at a 45O angle, allowing penetration of the skin beneath the probe. In the KRT/HpHR experiments the yellow light preceded the natural stimulus by 1 s.
 
 Neurons with conduction velocities < 1.2 m/s were classified as C-fibers, while all others were classified as A-fibers. Fiber teasing experiments were performed using previously established protocols (Zimmermann et al., 2009) to further examine afferents in KRT-ChR2 and KRT-NpHR mice. The preparation was prepared in the same manner as the skin/nerve/DRG preparation, except the saphenous nerve was cut slightly proximal to the junction with the femoral nerve. Recordings were performed using a bipolar platinum electrode, and stimuli were administered to the epidermis.
 
-## Culture of primary mouse keratinocytes
+### Culture of primary mouse keratinocytes
 
 Adult mouse keratinocytes were cultured following the procedure of (Redvers and Kaur, 2005). Tail skin was digested in dispase II (8 mg/ml dissolved in HBBS containing 1% pen/strep) overnight at 4°C. The epidermal sheet was removed, digested in trypsin-ethylenediamine acid solution (Life Technologies, Waltham, MA) and the dissociated cells plated onto 12 mm glass coverslips coated with type 4 collagen at 104 cells/coverslip. Cells were cultured in Keratinocyte Serum Free Medium (K-SFM, Life Technologies) supplemented with 0.1% pen/strep, 10 ng/ml epidermal growth factor and 0.1 nM cholera toxin. Patch clamp recordings were performed at 7–14 d post plating.
 
-## Whole cell patch clamp electrophysiology
+### Whole cell patch clamp electrophysiology
 
 Whole cell patch clamp recordings were made on keratinocytes grown on coverslips exposed to a one second blue light pulse. Keratinocytes on coverslips were transferred to a recording chamber that was continuously perfused with extracellular bath solution containing (in mM): NaCl 140, KCl 5.4, CaCl2 1.8, MgCl2 1.0, HEPES (N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid) 10.0 and D-glucose 11.1 (Inoue et al., 2005). The pH was adjusted to 7.4 with NaOH. Cells were visualized using a microscope with infrared differential interference contrast (IR-DIC) optics (Olympus, Pittsburgh, PA, BX-51WI). Patch pipettes made from borosilicate thin walled glass capillaries (Warner Instruments, G150F-6) using a P-97 micropipette puller (Sutter Instrument Company, Novato, CA) had a tip resistance of 10–15 MΩ. The composition of pipette solution was (in mM); 135 potassium gluconate, 5 KCl, 0.5 CaCl2, 5 EGTA, 5 Hepes, 5 ATP-Mg, 0.025 Alexa 555, pH 7.2. All experiments were conducted at room temperature (19°C). Whole-cell patch clamp recordings were made using an Axopatch 200B amplifier (Molecular Devices, Sunnyvale, CA). The currents were clamped at −50 mV and a one second blue light pulse was delivered from a xenon light source (Lambda DG-4, Sutter Instrument Company) using a 40x water immersion objective and GFP filter set. Data were digitized using a Digidata 1322A (Molecular Devices) and stored and analyzed using pClamp 10 software (Molecular Devices).

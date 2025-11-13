@@ -30,9 +30,33 @@ In amphioxus, NO is enzymatically produced by synthases encoded by three distinc
 
 ## Results
 
-## NO controls pharyngeal development during early neurulation in amphioxus
+### NO controls pharyngeal development during early neurulation in amphioxus
 
 Previous studies, using pharmacological inhibition approaches, have highlighted the involvement of NO in the specification of amphioxus pharyngeal structures during neurulation (Annona et al., 2017). To better characterize the key role of NO during embryonic development, we narrowed down the time window of pharmacological treatment by defining the exact timing during which an inhibition of endogenous NO production affects the development of the pharynx. Therefore, we performed short-term in vivo treatments with the Nos activity inhibitor 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM) during B. lanceolatum development testing different drug exposure times between the early neurula stage (N2 stage, 24 hr post fertilization [hpf] at 18°C) and the pre-mouth larva stage (transition stage T1, 48 hpf at 18°C) (Figure 1A). During the selected time window, the endogenous NO mainly derives from the activity of NosC, whose gene expression is observed from the N2 stage until the larval stage (L1, 72 hpf at 18°C) (Figure 1—figure supplement 1; Annona et al., 2017). We cannot exclude a contribution to the NO production by NosB, whose gene is expressed from gastrula (G3 stage, 10 hpf at 18°C) to neurula (N2) (Annona et al., 2017), although we think it should be minimal because its mRNA synthesis runs out at 24 hpf. On the other hand, NosA is expressed in the adult and not during embryonic development.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of time intervals during which embryos were grown in presence of TRIM and the resulting phenotype. (B) 3D reconstruction of control and TRIM-treated larvae showing anatomical alterations in pharyngeal region (panels I, II, V, VI). Only internal anatomical structures are highlighted in panels III, IV, VII, VIII. Larvae orientation: anterior to the left, dorsal to the top. Scale bar: 50 μm. Color code: green = pre-oral pit, violet = endostyle, yellow = mouth, blue = club-shaped gland, orange = gill slit. (C) Gene expression heatmap, for selected genes, of the differential transcriptomic analysis (control versus TRIM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Transcripts are detected from stage N2 (24 hpf) to T1 (48 hpf). The positive signal is initially visible in few cells in the anterior limit of the neural plate (A). At later developmental stages it elongates posteriorly along the neural tube (B–E). For each developmental stage insets correspond to the neural plate (A) or neural tube (B–E); the asterisk indicates the cerebral vesicle. NosC mRNA signal is shown in magenta, nuclei are labeled in blue (DAPI), and acetylated tubulin antibody staining is in green. Embryo orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Ratio between pharynx length and total body length in control and 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM)-treated L1 larvae. Thirty-five larvae were tested for each condition; **** = p-value < 0.0001. (B) Nitric oxide (NO) quantification by 2,3-diaminonaphthalene (DAN) assay in control and in TRIM-treated embryos at three time points (30, 36, 42 hpf) with the treatment starting at 24 hpf. For each time point the value of the specific control was considered 100%. Results are presented in percentage of fluorescence compared to the control condition; * = p-value < 0.05; ** = p-value < 0.01.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) MA plot, red dots plotted represent genes with an adjusted p-value < 0.1 (1-[2-(trifluoromethyl)phenyl]−1H-imidazole [TRIM]-treated versus control). (B) Heatmap of sample-to-sample distances, strains are clustered by replicas (three controls and three TRIM-treated). (C) Principal component analysis (PCA) plot. Sample classes are highlighted in different colors: control in red and TRIM-treated in blue.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** The analysis allowed the identification of Branchiostoma lanceolatum orthologs (indicated in red) for (A) Aldh1a.2 (ContigAmph4820) and (B) Rdh11/12.18 (ContigAmph8913). Trees were calculated using maximum likelihood (ML) method, and bootstrap supports are given at each node.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A–B–C) Gene expression analysis by quantitative RT-PCR (qRT-PCR) of: Adh3, Rdh11/12.18, Aldh1a.2, Crabp, RAR, Hox1, Hox3, Meis, Cyp26.1, Cyp26.2, Cyp26.3, Dmrt, FoxE, RunX, Pdvegfr, Pitx, Six1/2, IrxC, and Cdx. Fold changes, relative to the control, from 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM)-treated samples are reported. The statistical significance indicated is: * = p-value < 0.05; ** = p-value < 0.01. (A'–B'–C') Gene expression correlation between qRT-PCR and RNA-seq data for up-regulated genes: Adh3, Rdh11/12.18, Aldh1a.2, Crabp, RAR, Hox1, Hox3, Meis, Cyp26.1, Cyp26.2, and Cyp26.3; down-regulated genes: Dmrt, FoxE, RunX, and Pdvegfr; unaffected genes: Pitx, Six1/2, IrxC, and Cdx. Blue squares indicate log2 of relative fold changes obtained from qRT-PCR analysis of TRIM-treated versus control samples. Red circles indicate log2 of relative fold changes obtained from RNA-seq analysis of TRIM-treated versus control samples. The Pearson correlation coefficient (R2) is indicated. (D) Expression pattern of Pitx, Six1/2, IrxC, and Cdx in control and TRIM-treated embryos at the N5 stage. Embryo orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm.
 
 The phenotype resulting from the different treatments was scored at the open-mouth L1 stage. The morphological alterations included: (i) a mean reduction of 31% of the pharynx length being overall unchanged the body length (Figure 1B and Figure 1—figure supplement 2A,B), (ii) the complete or partial absence of mouth opening on the left side of the pharynx (Figure 1B, panels I, III and V, VII), and (iii) the incomplete formation of the club-shaped gland and of the endostyle (Figure 1B, panels I, III and V, VII), the latter being positioned more ventrally than in controls (Figure 1B, panels II, IV and VI, VIII).
 
@@ -42,15 +66,23 @@ The results presented here are slightly different from those previously publishe
 
 Based on the experimental evidence obtained in the present work, we performed a differential transcriptomic analysis comparing TRIM-treated N4 embryos (continuous treatment from 24 to 30 hpf) with wild-type embryos in order to define the genes acting downstream of NO signaling during pharyngeal development in amphioxus (Figure 1C, and Figure 1—figure supplement 3).
 
-## Inhibition of NO synthesis in vivo induces up-regulation and ectopic expression of RA pathway genes
+### Inhibition of NO synthesis in vivo induces up-regulation and ectopic expression of RA pathway genes
 
 The differential RNA-seq analysis revealed the up-regulation of 392 genes and the down-regulation of 50 genes upon TRIM treatment (Figure 1C, and Figure 1—figure supplement 3). Interestingly, several differentially up-regulated genes are implicated in RA metabolism and signaling pathways (synthesis and storage, catabolism and known direct RA target genes): Adh3, Rdh11/12.18, Aldh1a.2, Crabp, Cyp26.1, Cyp26.2, Cyp26.3, RAR, Hox1, Hox3, Meis (Figure 1C and Figure 1—figure supplement 4). In order to confirm this finding, we additionally validated RNA-seq data by quantitative RT-PCR (qRT-PCR) analyses of up-regulated, down-regulated, and unaffected genes. The results showed a consistent expression trend with the RNA-seq data (Figure 1—figure supplement 5A–C’). Moreover, the expression pattern of RA target genes Hox1, Hox3, Meis, and that of Cyp26 genes was further investigated by whole-mount in situ hybridization in both control and TRIM-treated embryos at the neurula N5 (36 hpf at 18°C) and pre-mouth T1 (48 hpf at 18°C) developmental stages. Such analyses showed that endogenous NO reduction produced an effect not only on the expression level of RA metabolism and signaling pathway genes, but also on the expression territories of most of them. The Hox1, Hox3, and Meis anterior limit of expression was shifted anteriorly in TRIM-treated embryos in comparison to controls, indicative of the embryo’s body posteriorization (Figure 2A). The RA catabolism enzyme genes that are duplicated in amphioxus, Cyp26.1, Cyp26.2, and Cyp26.3, showed a heterogeneous behavior: Cyp26.2 was slightly up-regulated and its expression pattern did not change after TRIM treatment, whereas Cyp26.1 and Cyp26.3 were strongly up-regulated and showed an ectopic expression (Figure 2A,D). In particular, after inhibition of NO production, Cyp26.1 expression was shifted anteriorly, while Cyp26.3 expression was shifted posteriorly. Moreover, Cyp26.3 showed an additional domain of expression in the tailbud, mainly in T1 stage embryos (Figure 2A). As a negative control we tested the expression pattern of Pitx, Six1/2, IrxC, and Cdx, whose expression levels were not affected after TRIM treatment in the RNA-seq data. Likewise, we observed no modification of their expression pattern after treatment (Figure 1—figure supplement 5D).
 
-## Aldh1a.2 expression is specifically regulated by NO
+![Figure 2.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig2-v1.jpg)
+
+**Figure 2.:** (A) Gene expression pattern by in situ hybridization of Hox1, Hox3, Meis, Cyp26.1, Cyp26.2, and Cyp26.3 in 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM)-treated and control embryos at N5 and T1 stage. The anterior (Hox1, Hox3, Meis, Cyp26.1) and posterior (Cyp26.2 and Cyp26.3) limits of gene expression territories in wild-type embryos are indicated with arrowheads in both control and TRIM-treated conditions. Fifteen embryos were used for each probe and all showed the pattern presented here. Embryos orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm. (B–E) Quantitative RT-PCR (qRT-PCR) on N4 stage embryos showing expression level changes after 6 hr of pharmacological TRIM or retinoic acid (RA) treatments (24–30 hpf) of: (B) genes encoding enzymes for RA synthesis: Adh3, Rdh11/12.18, Aldh1a.2, and binding protein for storage: Crabp; (C) RA direct target genes: RAR, Hox1, Hox3, Meis; (D) genes encoding RA degradation enzymes: Cyp26.1, Cyp26.2, Cyp26.3; (E) Nos genes: NosA, NosB, NosC. The statistical significance indicated is: * = p-value < 0.05; ** = p-value < 0.01.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Five developmental time points were assayed from N4 to L1 stages. The statistical significance indicated is: * = p-value < 0.05; ** = p-value < 0.01.
+
+### Aldh1a.2 expression is specifically regulated by NO
 
 The above-mentioned gene expression results (Figure 2A,C,D) suggested that the abnormal pharyngeal development of TRIM-treated embryos could be the result of an overactivation of the RA signaling pathway based on previous studies (Escriva et al., 2002; Schubert et al., 2006; Koop et al., 2014; Carvalho et al., 2017b). In order to test this hypothesis, we performed two in vivo experiments in parallel in which neurula stage embryos were incubated for 6 hr, from 24 to 30 hpf, in the presence of either TRIM or RA. Then, we analyzed the relative expression of three groups of genes by qRT-PCR, which we previously found to be up-regulated in the RNA-seq analysis: (i) genes involved in the synthesis and storage of RA (Adh3, Rdh11/12.18, Aldh1a.2, and Crabp); (ii) genes that mediate RA effects (RAR, Hox1, Hox3, and Meis); and (iii) genes involved in RA degradation (Cyp26.1, Cyp26.2, and Cyp26.3). All analyzed genes were up-regulated after both TRIM and RA treatment, with the exception of Aldh1a.2 which was exclusively up-regulated after TRIM treatment (Figure 2B,C,D).
 
-## NosA and NosB respond to exogenous RA during development
+### NosA and NosB respond to exogenous RA during development
 
 The expression analysis of the three amphioxus Nos genes after TRIM treatment revealed transcriptional up-regulation for two of them, NosA and NosB, while NosC, remained insensitive to the pharmacological treatment (Figure 2E).
 
@@ -58,17 +90,17 @@ In order to check if NosA and NosB up-regulation could be due to an indirect eff
 
 These results suggest a transcriptional control of RA on Nos genes expression during embryogenesis in amphioxus, but whether it is direct or indirect remains to be investigated.
 
-## A RALDH inhibitor and a RAR antagonist are able to rescue the normal phenotype after inhibition of NO synthesis
+### A RALDH inhibitor and a RAR antagonist are able to rescue the normal phenotype after inhibition of NO synthesis
 
 To confirm that the up-regulation of Aldh1a.2, which could result in an endogenous RA increase, was the key event underlying pharyngeal alterations in TRIM-treated larvae, we performed two independent phenotypic rescue experiments using the retinaldehyde dehydrogenases (RALDH) inhibitor DEAB (N,N-diethylaminobenzaldehyde) and the RA antagonist BMS009. Both DEAB and BMS009 were applied in combination with TRIM to embryos at 24 hpf and removed at 30 hpf. As a control, the TRIM treatment was performed in parallel on another batch of embryos. The combined treatment with TRIM and DEAB resulted in a wild-type phenotype in 76% of the total observed larvae (‘rescue’ in Figure 3A,B panels I and II). On the other hand, 14% of the larvae showed an intermediate phenotype with normal pharynx length and organization in comparison to wild-type larvae, although the mouth was smaller and the club-shaped gland had an abnormal morphology (‘partial rescue’ in Figure 3A,B panels III and IV). The remaining larvae showed an affected phenotype as described above for the TRIM treatment (‘altered’ in Figure 3A,B panels V and VI). Similarly, the phenotype rescue experiment performed using the combination of TRIM and BMS009 led to 54% of wild-type larval morphology and 21% of larvae with a smaller mouth (Figure 3A). Moreover, the morphological rescue obtained by TRIM+DEAB treatment was associated with the rescued expression pattern of RA catabolism (Cyp26.1 and Cyp26.3) and RA target genes (Hox1, Hox3, and Meis) (Figure 3C) at the N5 neurula stage. Therefore, by using two independent experiments, we demonstrated that the reduction of RA pathway activity in TRIM-treated embryos rescued the wild-type phenotype, suggesting that the observed effects of the inhibition of NO synthesis are produced by an increase in RA signaling.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/58295/elife-58295-fig3-v1.jpg)
 
-**Figure 3.:** N,N-diethylaminobenzaldehyde (DEAB) and BMS009 on 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM)-treated embryos.(A) Pie charts of the phenotypes observed after TRIM treatment and the combinatorial pharmacological treatments TRIM (100 µM) + DEAB (25 µM) or TRIM (100 µM) + BMS009 (10−6 M). The percentages of each observed phenotype are reported in the respective portions of the graphs. For each treatment, the total number of observed larvae is indicated below the chart. (B) Pictures of the pharyngeal region of larvae presenting the three different classes of phenotype observed in the rescue experiments: rescue, partial rescue, and altered. The mouth is highlighted in yellow and the club-shaped gland in blue. Larvae orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm. (C) Expression pattern by in situ hybridization of Hox1, Hox3, Meis, Cyp26.1, and Cyp26.3 after rescue assay with DEAB showing the restoration of wild-type expression territories. Numbers indicate the ratio between embryos showing a restored expression pattern and the total number of embryos analyzed. Embryo orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm.
+**Figure 3.:** (A) Pie charts of the phenotypes observed after TRIM treatment and the combinatorial pharmacological treatments TRIM (100 µM) + DEAB (25 µM) or TRIM (100 µM) + BMS009 (10−6 M). The percentages of each observed phenotype are reported in the respective portions of the graphs. For each treatment, the total number of observed larvae is indicated below the chart. (B) Pictures of the pharyngeal region of larvae presenting the three different classes of phenotype observed in the rescue experiments: rescue, partial rescue, and altered. The mouth is highlighted in yellow and the club-shaped gland in blue. Larvae orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm. (C) Expression pattern by in situ hybridization of Hox1, Hox3, Meis, Cyp26.1, and Cyp26.3 after rescue assay with DEAB showing the restoration of wild-type expression territories. Numbers indicate the ratio between embryos showing a restored expression pattern and the total number of embryos analyzed. Embryo orientation: anterior to the left, dorsal to the top. Scale bar: 50 µm.
 
 ## Discussion
 
-## NO controls the RA concentration
+### NO controls the RA concentration
 
 The inhibition of NO production during amphioxus neurulation affects the normal formation and patterning of pharyngeal structures at the larva stage, including the length of the pharynx. From a molecular point of view, the differential RNA-seq approach revealed a clear up-regulation of different RA pathway players after Nos activity inhibition, suggesting that such de-regulation is responsible for the observed phenotype. The role of RA in pharyngeal morphogenesis has been extensively described in the literature; RA acts through Hox1 in establishing the posterior limit of amphioxus pharynx. Hox1 is co-expressed with the RA receptor (RAR) in the midgut endoderm and, in turn, represses the expression of pharyngeal endoderm markers, such as Pax1/9 and Otx (Schubert et al., 2005). Nevertheless, the formation of pharyngeal slits requires low levels of RA. This condition is guaranteed: (i) by the activity of RA degradation enzymes (Cyp26), (ii) by the expression of TR2/4, a transcriptional repressor which binds to Retinoic Acid Response Elements (RARE) and decreases RA signaling in the anterior part of the animal, and (iii) by the fact that the central region of the embryo producing RA moves posteriorly as the embryo elongates (Escriva et al., 2002; Koop et al., 2014). In the present work, as a result of the inhibition of Nos activity, we observed the up-regulation of RA target genes, Hox1, Hox3 and Meis, and that their anterior limit of expression shifted anteriorly. Furthermore, the RA degrading enzyme genes, Cyp26.1 and Cyp26.3, were also sensitive to the inhibition of endogenous NO production showing an increased and ectopic expression. Cyp26 are required for RA degradation in the endoderm and ectoderm and have a key role in the establishment and maintenance of the antero-posterior RA concentration gradient in amphioxus (Carvalho et al., 2017a). The up-regulation of Cyp26 genes is a known consequence of RA excess, which is responsible for the posteriorization of larval body structures and for the pharynx loss (Escriva et al., 2002; Schubert et al., 2005; Schubert et al., 2006; Minoux and Rijli, 2010; Koop et al., 2010; Koop et al., 2014; Bertrand et al., 2015; Carvalho et al., 2017b). Altogether, these results suggest that the observed phenotype in TRIM-treated amphioxus embryos could be due to an increase in RA production. In previous studies, it has been shown that exogenous RA administration disrupts its endogenous gradient and causes the whole body posteriorization (Escriva et al., 2002; Koop et al., 2014; Osborne et al., 2009), highlighted for example by the anterior shift of Cdx expression. Here, instead, we show that the TRIM treatment only partially phenocopies exogenous RA application, resulting in a local posteriorization mainly restricted to the anterior part of the body including the pharynx area, while the posterior region is unaffected as demonstrated by the unaltered Cdx expression (Figure 1—figure supplement 5D). Therefore, this suggests the occurrence of an NO-mediated regulation of the RA pathway in anterior tissues versus an NO-independent mechanism in the posterior tissues.
 
@@ -82,7 +114,7 @@ Thus, NO could control Aldh1a.2 expression by modulating the phosphorylation or 
 
 It would be important to improve this knowledge since very little information, restricted to vertebrates, is reported on the control of RA metabolism by NO. Some cytochrome P450 enzymes, involved in RA metabolism, were identified as putative NO-regulated proteins, but no evidence about putative transcriptional regulation has been reported so far (Lee et al., 2014; Lee et al., 2017).
 
-## Crosstalk between NO and RA signaling pathways
+### Crosstalk between NO and RA signaling pathways
 
 The exogenous administration of RA induces the expression of amphioxus NosA and NosB that are normally not expressed during the developmental time window investigated in this study (Annona et al., 2017). Moreover, such transcriptional regulation is maintained throughout the critical time period during which NO is necessary for pharyngeal development (i.e. 24–42 hpf, Figure 2—figure supplement 1). Conversely, NosC was not affected by the increase of RA level. A possible explanation could be that while in normal conditions RA does not regulate NosA and NosB expression, it directly or indirectly regulates such gene expression in the case of an NO/RA imbalance as a way to restore the correct NO/RA ratio. Additionally, it could be that RA is able to force the regulatory mechanism normally used at another developmental stage or in the adult.
 
@@ -94,7 +126,7 @@ To summarize the regulatory loop between NO and RA signaling pathways in amphiox
 
 **Figure 4.:** Schematic representation of the possible crosstalk occurring between Nitric Oxide (NO) and Retinoic Acid (RA) during chordate development. NO is represented by a yellow circle, RA by a green star, the ratio between NO and RA by a scale symbol. The decrease of NO and the increase of RA, Aldh1a and Nos, are indicated by different sizes of symbols relative to the normal state. Arrows represent enzymatic processes, while discontinuous arrows correspond to transcriptional regulation. Question marks indicate that it is not known exactly how NO regulates Aldh1a.2 transcription and RA regulates Nos transcription. The cross over the arrow between Nos and NO illustrates the inactivation of Nos.
 
-## Conclusions
+### Conclusions
 
 Our results show the existence of a functional crosstalk between NO and RA signals in the pharyngeal region of the cephalochordate amphioxus during neurulation. This opens new questions about the evolutionary conservation of this regulatory loop in vertebrates.
 
@@ -102,38 +134,111 @@ The role of RA, as well as that of NO, in amphioxus development and antero-poste
 
 ## Materials and methods
 
-## Amphioxus embryos collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background, (Branchiostoma lanceolatum)</td>
+      <td>Wild type</td>
+      <td>Collected in Argelès-sur-mer, France</td>
+      <td>NCBI Taxon: 7740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2,3-Diaminonaphthalene (DAN)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nitrate reductase (NAD[P]H) from Aspergillus niger</td>
+      <td>Sigma-Aldrich</td>
+      <td>N7265</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Flavin adenine dinucleotide disodium salt hydrate (FAD)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F6625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Nicotinamide adenine dinucleotide 2′-phosphate reduced tetrasodium salt hydrate (NADPH)</td>
+      <td>Sigma-Aldrich</td>
+      <td>N7505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-[2-(Trifluoromethyl)phenyl]-1H-imidazole (TRIM)</td>
+      <td>Cayman chemical</td>
+      <td>81310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>all-trans-Retinoic acid (RA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N-diethylaminobenzaldehyde (DEAB)</td>
+      <td>Sigma-Aldrich</td>
+      <td>D86256</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Amphioxus embryos collection
 
 Ripe adult European amphioxus (B. lanceolatum) were collected in Argelès-sur-mer (France) with a specific permission delivered by the Prefect des Pyrénées-Orientales. B. lanceolatum is not a protected species. Spawning was induced during late spring and beginning of summer by employing a thermal shock as described by Fuentes et al., 2007. After in vitro fertilization, embryos were cultured in 0.22 μm filtered seawater at 18°C in plastic Petri dishes. According to the recent amphioxus ontology and staging (Bertrand et al., 2021; Carvalho et al., 2021) at 18°C, 24 hpf corresponds to neurula two stage (N2), 30 hpf to neurula four stage (N4), 36 hpf to neurula five stage (N5), 42 hpf to transition 0 stage (T0), 48 hpf to transition one stage (T1), and 72 hpf to larva 1 (L1). Embryos at desired developmental stages were incubated in the presence of specific pharmacological drugs, frozen in liquid nitrogen and kept at −80°C for subsequent RNA extraction or fixed with 4% paraformaldehyde in MOPS buffer overnight at 4°C and then stored in 70% ethanol at −20°C until use.
 
-## Pharmacological treatments
+### Pharmacological treatments
 
 Amphioxus embryos were treated at different developmental stages with the Nos inhibitor 1-[2-(trifluoromethyl)phenyl]−1H-imidazole (TRIM), with the RALDH inhibitor N,N-diethylaminobenzaldehyde (DEAB), with the RA antagonist BMS009 and with all-trans RA. All the drugs were dissolved in dimethyl sulfoxide (DMSO), and control embryo groups for each treatment were prepared adding an equal amount of DMSO. For TRIM treatments, a final concentration of 100 µM was used. For RA treatments, a final concentration of 10−6 M was used. All the treatments were performed in biological triplicates.
 
 For rescue experiments, embryos at 24 hpf were treated simultaneously with a combination of 100 µM TRIM and 25 µM DEAB, or 100 µM TRIM and 10−6 M BMS009. At 30 hpf they were rinsed in filtered seawater and allowed to develop until the 72 hpf stage when the phenotype was observed. The experiment was performed in biological duplicates.
 
-## Imaging
+### Imaging
 
 Control and TRIM-treated larvae at 72 hpf were stained with DAPI. A high-resolution Z-stack was acquired using a Zeiss confocal microscopy LSM 800, and a medium speed fast interactive deconvolution was applied. The 3D reconstruction was made employing Imaris 9.3.1 software; different larval body structures have been stained using the following five color blindness-friendly colors: #A6D854 green; #E78AC3 violet; #FFD92F yellow; #8DA0CB blue; #FC8D62 orange. Pharynx and body length measurements were performed on 72 hpf larvae captured with Axio Imager.Z2 microscope using a 10× objective, and employing the Ruler tool in Photoshop CS5 with a digital zoom of 50%. The pharynx was measured from the most anterior part of the pre-oral pit to the most posterior part of the first pharyngeal slit. An unpaired t-test was applied for the statistical analysis.
 
-## Fluorimetric determination of endogenous NO concentration
+### Fluorimetric determination of endogenous NO concentration
 
 Control and TRIM-treated frozen embryos at different developmental stages (from 24 hpf to 30, 36, and 42 hpf) were homogenized in PBS, sonicated (3 cycles of 1 min) and centrifuged at 20,000 g for 30 min at 4°C. The supernatants were collected for NO level analysis; 80 μl of each sample was incubated for 1 hr at room temperature in the presence of the nitrate reductase (0.06 U/ml), 2.5 μM FAD, and 100 μM NADPH. Then, 10 μl of 2,3-diaminonaphthalene (DAN) (0.05 mg/ml in 0.62 M HCl) were added and the samples were incubated for 15 min in the dark. The fluorescent product was stabilized in 1 N sodium hydroxide. Fluorescence was measured using the spectrofluorometer (Tecan) with excitation and emission at 365 and 425 nm, respectively, adding water up to a final volume of 200 µl. The results were normalized on the protein content. Total protein concentration was determined by the Bradford assay using a Bio-Rad Protein Assay Reagent (Bio-Rad) and bovine serum albumin as a standard.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Total RNA was extracted from embryos using the RNeasy Plus Mini Kit (Qiagen) after sample homogenization using the TissueLyser (Qiagen). The RNA integrity number (RIN) was assessed by using TapeStatio4200 while RNA concentration and purity were estimated using a Nanodrop spectrophotometer. Indexed libraries were prepared from 1 μg/ea purified RNA with TruSeq Stranded Total RNA Library Prep Kit. Libraries were quantified using the Agilent 2100 Bioanalyzer (Agilent Technologies) and pooled so that each index-tagged sample was present in equimolar amounts, with a final concentration of 2 nM. The pooled samples at a final concentration of 10 pM were subjected to cluster generation and sequencing using an Illumina NextSeq500 System in a 1×75 single read format (30 million reads). The raw sequence files generated (fastq files) underwent quality control analysis using FastQC. Transcriptome sequences were deposited in the NCBI Sequence Read Archive (SRA) database with the accession number: PRJNA630453.
 
 Reads were mapped on the B. lanceolatum transcriptome (Oulion et al., 2012) using the aligner Bowtie2 with default parameters (Langmead and Salzberg, 2012). The read counts were obtained using IdxStats (Li et al., 2009; Cock et al., 2013) and the differential expression analysis between treated and wild-type embryos was performed using the R package DESeq2 (Love et al., 2014). Mapping and read counting were performed on the Roscoff ABiMS Galaxy platform.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Protein alignments were generated with ClustalX program using the sequence database reported in Handberg-Thorsager et al., 2018. Phylogenetic trees were reconstructed using maximum likelihood inferences calculated with PhyML v3.0 (Guindon et al., 2010).
 
-## Gene expression analysis by whole-mount in situ hybridization and immunostaining
+### Gene expression analysis by whole-mount in situ hybridization and immunostaining
 
 Hox1, Hox3, Meis, Cyp26.1, Cyp26.2, Cyp26.3, Pitx, Six1/2, IrxC, Cdx, and NosC were cloned in pGEM-T vector (Promega) using primers listed in Supplementary file 1. Antisense labeled riboprobes were synthesized and in situ hybridizations were performed as previously described (Annona et al., 2017; Carvalho et al., 2021). Whole-mount immunostaining of acetylated tubulin using monoclonal antibody produced in mouse (6-11B-1, Sigma) was performed as previously described in Coppola et al., 2018. Embryos were mounted in 80% glycerol in PBS and photographed using an Axio Imager.Z2 or a confocal microscope Zeiss LSM700.
 
-## Gene expression analysis by qRT-PCR
+### Gene expression analysis by qRT-PCR
 
-Total RNA was extracted from embryos at different developmental stages: 30, 36, 42, 48, and 72 hpf using the RNeasy Plus Mini Kit (Qiagen); 350–1000 ng of total RNA were retrotranscribed in cDNA which was used undiluted (only for Nos genes) or diluted 1:10 for the qRT-PCR. Each reaction contained a final concentration of 0.7 μM of each primer and Fast SYBR Green Master mix with ROX (Applied Biosystems) in 10 μl total volume. qRT-PCR were run in a ViiA 7 Real-Time PCR System (Applied Biosystems). The cycling conditions were: 95°C for 20 s, 40 cycles with 95°C for 1 s, 60°C for 20 s, 95°C for 15 s, 60°C 1 min, followed by a dissociation curve analysis using a gradient from 60°C to 95°C with a continuous detection at 0.015°C/s increment for 15 min. The results were analyzed using the ViiA 7 Software and exported into Microsoft Excel for further analysis. Each sample was processed in biological triplicates. The 2−ΔΔCt method was used to calculate the relative gene expression. Ribosomal protein L32 (Rpl32), expressed at a constant level during development, was used as a reference gene for the normalization of each gene expression level (Annona et al., 2017). Primers used are listed in Supplementary file 1. For the statistical analysis, we used the GraphPad Prism software employing the paired t-test. Statistical significance cut-off criteria was set at p < 0.05.
+Total RNA was extracted from embryos at different developmental stages: 30, 36, 42, 48, and 72 hpf using the RNeasy Plus Mini Kit (Qiagen); 350–1000 ng of total RNA were retrotranscribed in cDNA which was used undiluted (only for Nos genes) or diluted 1:10 for the qRT-PCR. Each reaction contained a final concentration of 0.7 μM of each primer and Fast SYBR Green Master mix with ROX (Applied Biosystems) in 10 μl total volume. qRT-PCR were run in a ViiA 7 Real-Time PCR System (Applied Biosystems). The cycling conditions were: 95°C for 20 s, 40 cycles with 95°C for 1 s, 60°C for 20 s, 95°C for 15 s, 60°C 1 min, followed by a dissociation curve analysis using a gradient from 60°C to 95°C with a continuous detection at 0.015°C/s increment for 15 min. The results were analyzed using the ViiA 7 Software and exported into Microsoft Excel for further analysis. Each sample was processed in biological triplicates. The $2^{−ΔΔCt}$ method was used to calculate the relative gene expression. Ribosomal protein L32 (Rpl32), expressed at a constant level during development, was used as a reference gene for the normalization of each gene expression level (Annona et al., 2017). Primers used are listed in Supplementary file 1. For the statistical analysis, we used the GraphPad Prism software employing the paired t-test. Statistical significance cut-off criteria was set at p < 0.05.

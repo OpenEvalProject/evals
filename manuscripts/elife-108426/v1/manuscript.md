@@ -14,19 +14,19 @@
 
 ### Affiliations
 
-1. https://ror.org/04wm52x94 National Institute of Agricultural Technology Córdoba Argentina
-2. https://ror.org/021ft0n22 Department of Molecular Biology, University Medical Center Göttingen Göttingen Germany
-3. https://ror.org/02r6pfc06 Nnamdi Azikiwe University Awka Nigeria
-4. https://ror.org/0464eyp60 UMass Chan Medical School Worcester United States
+1. National Institute of Agricultural Technology Córdoba Argentina ([ROR:04wm52x94](https://ror.org/04wm52x94))
+2. Department of Molecular Biology, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+3. Nnamdi Azikiwe University Awka Nigeria ([ROR:02r6pfc06](https://ror.org/02r6pfc06))
+4. UMass Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
 5. Africa Bioethics Network Nairobi Kenya
-6. https://ror.org/012a91z28 University of Zaragoza Zaragoza Spain
-7. https://ror.org/03490as77 Federal University of Rio de Janeiro Rio de Janeiro Brazil
+6. University of Zaragoza Zaragoza Spain ([ROR:012a91z28](https://ror.org/012a91z28))
+7. Federal University of Rio de Janeiro Rio de Janeiro Brazil ([ROR:03490as77](https://ror.org/03490as77))
 8. Sumbawa University of Technology Sumbawa Indonesia
-9. https://ror.org/04cdn2797 Banaras Hindu University Varanasi India
-10. https://ror.org/034amfs97 University of the Virgin Islands St Croix United States
+9. Banaras Hindu University Varanasi India ([ROR:04cdn2797](https://ror.org/04cdn2797))
+10. University of the Virgin Islands St Croix United States ([ROR:034amfs97](https://ror.org/034amfs97))
 11. Rinda Ubuzima Kigali Rwanda
 12. Review and Curate Network Kigali Rwanda
-13. https://ror.org/034s44556 International Science Council Paris France
+13. International Science Council Paris France ([ROR:034s44556](https://ror.org/034s44556))
 
 † Corresponding author
 
@@ -53,6 +53,143 @@ At a systems level, the African Open Science Platform (AOSP) and regional networ
 Asia tells yet another story. From Shodhganga (an open-access thesis repository) in India to GARUDA in Indonesia and ThaiLIS in Thailand, national governments and education ministries are driving the creation of integrated platforms that emphasize local relevance, inclusion, open access, and capacity building. China has advanced open access through platforms like ChinaXiv (a preprint server for natural sciences), NCPSSD (which contains over 26 million documents, related to philosophy and social sciences), PubScholar (which provides free access to approximately 170 million academic resources), and OpenSign (an open platform aggregating over 10 million global open access papers to facilitate academic discovery and sharing).
 
 These efforts converge on a shared goal: to facilitate knowledge dissemination within the Global South and resist epistemic dependence on Northern infrastructures (Table 1).
+
+**Table 1.**
+ Summary of the scholarly communication platforms and repositories mentioned in this article.For each platform/repository the table lists the following information: URL; year of launch; number of journals, articles and preprints; disciplinary coverage; funding sources; and region. Data were compiled from websites and/or publicly available reports during August 2025.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+      <th>Launch</th>
+      <th>Number of journals, articles and preprints</th>
+      <th>Disciplines</th>
+      <th>Funding source</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SciELOSciELO Preprints</td>
+      <td>https://scielo.org/, https://preprints.scielo.org/</td>
+      <td>1997/982020</td>
+      <td>1,654 journals;~693k OA articles.~4k preprints.</td>
+      <td>Multi-disciplinary</td>
+      <td>Funded by public research funding agencies in Brazil</td>
+      <td>Latin America</td>
+    </tr>
+    <tr>
+      <td>Redalyc</td>
+      <td>https://www.redalyc.org/</td>
+      <td>2002</td>
+      <td>1,727 journals; over 782k full-text OA articles.</td>
+      <td>Social &amp; Natural Sciences</td>
+      <td>Academic-led, nonprofit; hosted at UNAM, Mexico; supported via university grants.</td>
+      <td>Latin America</td>
+    </tr>
+    <tr>
+      <td>CLACSO</td>
+      <td>https://www.clacso.org/</td>
+      <td>1998</td>
+      <td>1,060 journals;~479k articles</td>
+      <td>Multi-disciplinary</td>
+      <td>Publicly funded mostly by UNESCO.</td>
+      <td>Latin America</td>
+    </tr>
+    <tr>
+      <td>AfricArXiv</td>
+      <td>http://info.africarxiv.org/</td>
+      <td>2018</td>
+      <td>480 preprints; 543 publications in ScienceOpen collection.</td>
+      <td>Multi-disciplinary</td>
+      <td>Community-led, supported by Center for Open Science.</td>
+      <td>Africa</td>
+    </tr>
+    <tr>
+      <td>ChinaXiv</td>
+      <td>https://chinaxiv.org/</td>
+      <td>2016</td>
+      <td>~43k preprint articles.</td>
+      <td>Multi-disciplinary</td>
+      <td>Publicly funded Chinese-language preprint platform</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>NCPSSD</td>
+      <td>http://www.ncpssd.cn/</td>
+      <td>2016</td>
+      <td>2,467 journals and more than 26 million articles.</td>
+      <td>Philosophy &amp; Social Sciences</td>
+      <td>Publicly funded Chinese national repository</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>PubScholar</td>
+      <td>https://pubscholar.cn/</td>
+      <td>2023</td>
+      <td>~95 million journal articles and ~3.6 million indexed preprints.</td>
+      <td>Multi-disciplinary</td>
+      <td>Publicly funded repository of Chinese Academy of Sciences outputs</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>OpenSign</td>
+      <td>https://opensign.lib.tsinghua.edu.cn/</td>
+      <td>2024</td>
+      <td>37,810 journals and ~10 million OA indexed articles.</td>
+      <td>Multi-disciplinary</td>
+      <td>Publicly funded aggregated OA search platform by Tsinghua University</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>Shodhganga</td>
+      <td>https://shodhganga.inflibnet.ac.in/</td>
+      <td>2009</td>
+      <td>~620k theses from ~840 universities.</td>
+      <td>Theses &amp; Dissertations (India)</td>
+      <td>Publicly funded national open-access thesis repository</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>GARUDA</td>
+      <td>https://garuda.kemdikbud.go.id/</td>
+      <td>2010</td>
+      <td>More than 1 million articles, and journals covering almost 40 fields of science.</td>
+      <td>Multi-disciplinary (Indonesia)</td>
+      <td>Government-backed platform</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>ThaiLIS</td>
+      <td>https://tdc.thailis.or.th/tdc/</td>
+      <td>2004</td>
+      <td>~150k theses and ~17k articles.</td>
+      <td>Multi-disciplinary (Thailand)</td>
+      <td>Publicly funded National library initiative</td>
+      <td>Asia</td>
+    </tr>
+    <tr>
+      <td>African Journals OnLine (AJOL)</td>
+      <td>http://www.ajol.info/</td>
+      <td>1998</td>
+      <td>~263k journal articles from 893 OA journals.</td>
+      <td>Multi-disciplinary</td>
+      <td>Non-Profit Organisation funded by donors.</td>
+      <td>Africa</td>
+    </tr>
+    <tr>
+      <td>African Open Science Platform</td>
+      <td>https://aosp.org.za/</td>
+      <td>2017</td>
+      <td>Data not available.</td>
+      <td>Multi-disciplinary</td>
+      <td>Publicly funded</td>
+      <td>Africa</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Changing the North from the South
 

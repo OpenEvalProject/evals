@@ -21,17 +21,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Institute of Immunity and Transplantation, Division of Infection and Immunity, University College London London United Kingdom
-2. https://ror.org/02mb95055 Institute of Structural and Molecular Biology, Birkbeck College London United Kingdom
-3. https://ror.org/00vtgdb53 MRC-University of Glasgow Centre for Virus Research Glasgow United Kingdom
-4. https://ror.org/043jzw605 Shared Research Facilities, The Institute of Cancer Research London United Kingdom
-5. https://ror.org/02jx3x895 Division of Infection and Immunity, University College London London United Kingdom
-6. https://ror.org/01f80g185 International Agency for Research on Cancer, World Health Organization Lyon France
-7. https://ror.org/04xv01a59 The Pirbright Institute Pirbright United Kingdom
-8. https://ror.org/02jx3x895 Division of Medicine, Institute for Liver and Digestive Health, University College London London United Kingdom
-9. https://ror.org/013meh722 Department of Genetics, University of Cambridge Cambridge United Kingdom
-10. https://ror.org/00rcxh774 Institut für Biologische Physik, Universität zu Köln Cologne Germany
-11. https://ror.org/013meh722 MRC Biostatistics Unit, University of Cambridge Cambridge United Kingdom
+1. Institute of Immunity and Transplantation, Division of Infection and Immunity, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. Institute of Structural and Molecular Biology, Birkbeck College London United Kingdom ([ROR:02mb95055](https://ror.org/02mb95055))
+3. MRC-University of Glasgow Centre for Virus Research Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+4. Shared Research Facilities, The Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))
+5. Division of Infection and Immunity, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+6. International Agency for Research on Cancer, World Health Organization Lyon France ([ROR:01f80g185](https://ror.org/01f80g185))
+7. The Pirbright Institute Pirbright United Kingdom ([ROR:04xv01a59](https://ror.org/04xv01a59))
+8. Division of Medicine, Institute for Liver and Digestive Health, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+9. Department of Genetics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+10. Institut für Biologische Physik, Universität zu Köln Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))
+11. MRC Biostatistics Unit, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -51,9 +51,21 @@ Here, we demonstrate that genetic substitutions in E2 can switch HCV into a hype
 
 ## Results
 
-## HCV explores evolutionary pathways to optimise virus entry
+### HCV explores evolutionary pathways to optimise virus entry
 
 We established a continuous culture of HCV (J6/JFH HCVcc molecular clone) in Huh-7.5 cells and monitored viral evolution by next-generation sequencing (NGS). By day 42 we detected substitutions throughout the genome (before this, no mutations reached >5% frequency). The viral entry glycoproteins, E1E2, were particularly enriched for non-synonymous substitutions when compared to other coding regions (Figure 1—figure supplement 1A), suggesting adaptive optimisation of virus entry. These substitutions were largely located towards the C-terminus of E1 and the N-terminus of E2, the latter being important for receptor and nAb interactions (Figure 1—figure supplement 1B-D; Tzarum et al., 2018). Some of the substitutions occurred at sites that are highly conserved in patient-derived HCV sequences (e.g. V371A, G406S, S449P), suggesting that in vitro replication does not recreate the evolutionary constraints of natural infection. We note that a critical difference between these settings is the complete absence of an adaptive immune response in vitro. From day 42 onward we observed the emergence of a mutant lineage with sequential fixation of I438V and A524T (found in the front layer and CD81 binding loop of E2, respectively, Figure 1—figure supplement 1E), and the concomitant loss of other variants from the population (e.g. I262L, Figure 1—figure supplement 1E). Introduction of these sequential mutations, by reverse genetics, resulted in a stepwise increase in HCV infectivity (Figure 1A). Next, we evaluated the entry pathway of these mutants by infecting cells in which the critical HCV entry factors (CD81, SR-B1, CLDN1, and OCLN) had been knocked out by CRISPR/Cas9 gene editing (Figure 1B). WT and mutant viruses were equally dependent on CD81, CLDN1, and OCLN, whereas the requirement for SR-B1 decreased in the mutant viruses in a manner that mirrored viral titre. This demonstrates that the efficiency of HCV entry is tightly linked to SR-B1 dependency.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig1-v2.jpg)
+
+**Figure 1.:** J6/JFH HCVcc mutants were isolated following continuous propagation in Huh-7.5 cells. (A) Infectivity of WT, I438V and I438V A524T HCVcc, expressed as foci forming units per ml. Values were normalised for input particle numbers. (B) WT and mutant HCV infection of parental Huh-7 cells and those CRISPR/Cas9 engineered to knock out the stated HCV entry factor. To aid direct comparison of each mutant, infection values have been expressed relative to that observed in parental Huh-7 cells. Values represent the mean of three independent experiments. Colour-coding as denoted in A. (C) Huh-7.5 cells were treated with anti-SR-B1 serum (left) or anti-CD81 mAb (right) to limit receptor availability. Infection by WT and I438V A524T HCVcc is expressed as % inhibition relative to infection of untreated cells. Data points represent the mean of three independent experiments. (D) To increase receptor availability, Huh-7.5 cells were transduced with a serial dilution of lentiviral vectors encoding either SR-B1 (left) or CD81 (right). Infection by WT and I438V A524T HCVcc is expressed relative to their respective infection of parental cells (P). Example data from one representative transduction is shown. (E. & F) CHO cells were transduced to express exogenous human SR-B1 (left) or CD81 (right), to which WT and mutant sE2 binding was assessed by flow cytometry. Upper plots (E). provide representative cytometry histograms of sE2 binding to transduced or parental (-ve) CHO cells. Lower plots (F). display quantification of sE2 binding, with values normalised to WT binding at 40 µg/ml. Data points represent the mean of three independent experiments. In all plots, error bars indicate standard error of the mean, asterisks denote statistical significance (ANOVA, GraphPad Prism). Curve fitting (C. and F.) performed with a hyperbola function and the curves compared to confirm significance difference (F-test, p<0.0001, GraphPad Prism); n.s. denotes the lack of significant difference.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** J6/JFH HCVcc was continuously propagated in Huh-7.5 cells for 20 weeks with viral evolution monitored by NGS. (A) The proportion of synonymous (white) and non-synonymous (black) substitutions occurring at >5% frequency at day 42 in three coding regions of comparable length: E1E2 (entry glycoproteins), NS5B (polymerase), NS3 (protease). (B) Molecular model of J6 E2 colour-coded by antigenic/functional region (C. & D). Non synonymous substitutions mapped onto linear representations of the E1 (C) and E2 (D). protein sequences. Functional and structural features are highlighted (e.g. the putative fusion peptide). The E2 sequence is colour-coded by region, as denoted in B. Each substitution is annotated with: (i) the observed mutation, (ii) the frequency in the experimental population at day 42 (%), (iii) the shannon entropy calculated from patient derived sequences, with low values denoting high conservation (iv) substitutions that naturally occur at these positions in patient derived sequences; N/A (not applicable) indicates the lack of natural variants. (E) Emergence and fixation/loss of substitutions at position 438 (Front layer), 524 (CD81 Binding Loop), and 262 (E1). By 100 days, all viruses possessed the I438V A524T double mutation. Note that residue numbering is relative to the start of the HCV polyprotein and corresponds to the position in the H77 reference clone, as is convention within the HCV field.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Huh-7.5 cells, treated with a serial dilution of a small molecule inhibitor of SR-B1 (BLT-4), were infected with WT and mutant HCVcc. Infection is expressed as % inhibition relative to untreated cells. Data points represent the mean of three independent experiments. The data was fitted with a hyperbola function and the curves were determined to be statistically significant (F-test, p<0.0001, GraphPad Prism), error bars indicate standard error of the mean.
 
 So far, only SR-B1 and CD81 have been proven to interact directly with the HCV entry machinery, via E2 (Pileri et al., 1998; Scarselli et al., 2002). The precise molecular basis of E2-receptor interactions have yet to be defined at the structural level; nonetheless, mutational and antibody blocking experiments have demonstrated that SR-B1 binding occurs via the N-terminal HVR-1, whilst the CD81 binding site is thought to be composed of three discontinuous regions (antigenic site 412 [AS412], the front layer, and the CD81 binding loop) (Kong et al., 2013; Kumar et al., 2021; Owsianka et al., 2006; Scarselli et al., 2002). Previous work, including our own, suggests that SR-B1 is the initial receptor for HCV and is likely to prime subsequent stages of entry (including interaction with CD81) (Augestad et al., 2020; Evans et al., 2007; Kalemera et al., 2019). This is broadly analogous to the stepwise receptor-mediated priming of other viral fusion proteins (e.g. HIV, SARS-CoV-2); however, the molecular mechanism of SR-B1 priming of E1E2 was hitherto unknown.
 
@@ -61,15 +73,39 @@ We evaluated the relationship of WT and I438V A524T HCV with these receptors usi
 
 We recently developed a mechanistic mathematical model of HCV entry, which can be used to explore entry by I438V A524T HCV (Kalemera et al., 2019). The model supports the notion that E1E2 can acquire CD81 via two routes: (1) SR-B1-mediated acquisition, where interaction with SR-B1 primes subsequent CD81 binding or (2) intrinsic acquisition of CD81, without the necessity for prior engagement of SR-B1 (Figure 2—figure supplement 1A). The latter pathway accounts for residual infection by WT virus in the absence of SR-B1 (Figure 1B & C). To faithfully represent the physical reality of virus entry, the model takes account of the intrinsic instability of HCV particles. We, therefore, compared the stability of WT and I438V A524T particles at 37 °C. Unexpectedly, we found that I438V A524T HCV was >3 fold less stable than WT virus (assessed by comparison of half-life, Figure 2A); this would suggest that the I438V A524T mutations increase the propensity for E1E2 to undergo spontaneous inactivation, such that particles become non-infectious more rapidly than WT; this is reminiscent of a hyper-reactive state observed in HIV-1 Env and a related phenotype in West Nile Virus (Goo et al., 2017; Haim et al., 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig2-v2.jpg)
+
+**Figure 2.:** (A) WT and I438V A524T HCVcc were incubated for 0–8 hr at 37 °C before infection of Huh-7.5 cells. Remaining infectivity is expressed relative to t=0 time point. Data points represent the mean of two independent experiments, data was fitted using an exponential decay function. (B) Mathematical modelling was used to predict the entry characteristics of WT and I438V A524T HCVcc (also see Figure 2—figure supplement 1). Heat maps display the probability of virus entry (as denoted in the key), for any given virus particle, upon varying availability of SR-B1 or CD81. Receptor availability is scaled relative to parental Huh-7.5 cells (C) Kinetics of WT and mutant HCVcc entry, as predicted by mathematical modelling. The data is normalised to maximum entry. T represents uncalibrated time and, therefore, cannot be converted to real time, but relative differences can be estimated. Comparison of time to 50% entry suggests that I438V A524T HCVcc completes entry ~3 times faster than WT. (D) Kinetics of WT and mutant HCV entry were experimentally measured by synchronised infection of Huh-7.5 cells by HCVpp, followed by chase with a saturating inhibitory concentration of anti-CD81 mAb. Mutant HCVpp escaped the inhibitory effects of anti-CD81 ~3.5 times faster than WT. Data points represent the mean of three independent experiments, the data is normalised to entry in the absence of anti-CD81 mAb. The data was fitted with a sigmoid function. In all plots, error bars indicate standard error of the mean, fitted curves were confirmed to be significantly different (F-test, p<0.001, GraphPad Prism).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** We previously developed a mathematical model to explore HCV receptor engagement and entry (Kalemera et al., 2019). Receptor dependency data from WT and I43V A524T HCVcc (Figures 1 and 2) was integrated into the mathematical model (as described in the methods), allowing estimation of the entry efficiency of either virus (A) E1E2-receptor interactions at the cell surface, as recreated in our model. To achieve entry E1E2 must acquire CD81, this can occur via two routes. Route 1 SR-B1 mediated: prior binding to SR-B1 (at rate s), primes E1E2 for interaction with CD81 (at rate c2). Route 2 intrinsic binding: E1E2 interact with CD81 without prior engagement of SR-B1 (at rate c1). Once sufficient molecules of CD81 have been acquired the virus particle proceeds along the entry pathway (including endocytosis and fusion) at rate (e). Molecular cartoons are based on previously published structures and are drawn to scale, E1 is represented as a circle due to a paucity of structural information. (B) Plots display estimated values of each rate constant for WT (grey) and I438V A524T (orange); all values are unitless, hence the absence of labels on the y-axes. C. Experimental data and mathematical model fit under varying availability of SR-B1 and CD81 for WT and I438V A524T HCV. Note, receptor availability was modulated by antibody blockade or over-expression. Infection probabilities were calculated by integrating the input number of virus particles, number of infected foci and total number of cells.
+
 We integrated the measurements of receptor dependency and particle stability (Figures 1C–F–2A) into our mathematical model, allowing us to compare the entry characteristics of WT and I438V A524T HCV. We found that I438V A524T HCV adopts a hyper-reactive state to achieve efficient virus entry. Acquisition of CD81 via either route is enhanced (SR-B1-mediated acquisition, in particular, being ~1000 fold more efficient, Figure 2—figure supplement 1B, parameter c2). Indeed, this would account for the ability of this mutant to tolerate reductions in SR-B1 availability (Figure 1B & C, Figure 2—figure supplement 1). Moreover, downstream entry events, encompassing cell surface translocation, endocytosis and fusion (Baktash et al., 2018) (which are not explicitly modelled here), were predicted to occur at ~sixfold higher rate (parameter e, Figure 2—figure supplement 1B). To explore this further we used the model to estimate the probability of entry by WT and mutant HCV upon varying availabilities of SR-B1 and CD81. Here I438V A524T HCV was predicted to achieve efficient entry over a broader range of receptor densities, for example at low CD81 availability (Figure 2B). An expected consequence of this is an increase in the kinetics of entry. We therefore used the model to estimate the relative speed at which WT and mutant HCV complete entry (Figure 2C) and, in parallel, made measurements of entry kinetics in vitro using synchronised HCV psedudoparticle (HCVpp) infection (Haim et al., 2005; Figure 2D). The model predicted that I438V A524T HCV enters >3 fold faster than WT. This estimate was in excellent agreement with the experimentally measured values, corroborating our modelling approach and confirming increased entry efficiency by I438V A524T HCV.
 
 In summary, HCV is capable of evolving to optimise virus entry. It achieves this by adopting a hyper-reactive state, in which HCV exhibits low SR-B1 dependency, rapid acquisition of CD81 and increases in entry kinetics. However, the benefits of hyper-reactivity are somewhat offset by a decrease in stability; this likely reflects a greater propensity for E1E2 to undergo spontaneous and irreversible inactivation.
 
-## Hyper-reactive HCV is acutely sensitive to all neutralising antibodies
+### Hyper-reactive HCV is acutely sensitive to all neutralising antibodies
 
 The majority of HCV+ patients experience chronic life-long infection with persistently high viral loads; to achieve this, HCV must resist the E1E2-specific nAbs that arise in most individuals. Failure of HCV to evade and/or escape nAbs has been linked with viral clearance and understanding the molecular mechanisms of HCV antibody resistance is likely to inform ongoing HCV vaccinology (Keck et al., 2018; Kinchen et al., 2019; Kinchen et al., 2018).
 
 We measured the sensitivity of HCV to chronic patient immunoglobulins (IgG). WT HCV was highly resistant to patient nAbs (Figure 3A); the neutralisation curve followed a log-linear relationship, such that successive 10-fold increases in IgG concentration yielded only a modest increase in neutralisation. In contrast, the hyper-reactive I438V A524T mutant was acutely sensitive to IgG, reaching complete neutralisation even at low concentrations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig3-v2.jpg)
+
+**Figure 3.:** (A) Neutralisation of WT and I438V A524T HCVcc by a serial dilution of HCV patient IgG. (B) Molecular cartoon of major antigenic sites targeted by nAbs. (C) Neutralisation curves for three representative mAbs targeting distinct sites, the mAb name and specificity are provided and colour coded to match B. (D) 50% inhibitory concentrations of 14 mAbs, data points are colour coded according to their antigenic target, asterisks indicate statistical significance (T-test, GraphPad Prism). (E) Binding of mAbs to WT and I438V A524T E2 assessed by ELISA; mAbs matched to neutralisation data. (F) Estimated dissociation constants for 9 mabs, data points colour coded as above, there is no significant difference between WT and mutant (T-test, GraphPad Prism). (G) HCVcc neutralisation by soluble CD81 EC2. For all neutralisation curves, data points represent the mean of n=2 or 3 independent experiments. I438V A524T data were best fitted by a hyperbola function (GraphPad Prism), WT data were best fitted by a semi-log function (except for H77.39). For ELISA data, one representative experiment is shown, with data fitted with a hyperbola function. All neutralisation curves determined to be statistically significant (F-test, p<0.0001, Graphpad prism), there were no significant differences in the binding curves. In all plots, error bars indicate standard error of the mean. Estimates of IC50s and Kd were obtained from the fitted curves.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) 50% inhibitory concentrations of mAbs (as provided in Figure 3D) separated according to antigenic targets. mAb names are provided for each target. FL and BL refer to Front Layer and Back Layer. E1E2 mAbs bind to a discontinuous epitope comprising elements of both E1 and E2. U represents poorly defined epitopes. (B) Dissociation constants determined by ELISA (as provided in Figure 3F), separated according to antigenic targets.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** We characterised WT and I438V A524T E1E2 in the context of HCV pseudoparticles. (A) HCVpp infection of parental or receptor knockout Huh-7, data is expressed relative to parental cells. (B) Stability of HCVpp at 37 °C, data points represent the mean of three independent experiments, I438V A524T data was best fitted using an exponential decay function, WT data was best fitted by linear regression. (C) Neutralisation of HCVpp by patient IgG, data points represent the mean of three independent experiments. Data was fitted with a hyperbola function (I438V A524T) or semilog function (WT). In each plot error bars indicate standard error of the mean; asterisks denote statistical significance (ANOVA, Graphpad prism); all curves determined to be statistically significant (F-test, p<0.0001, Graphpad prism).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Virus particles were immobilised and incubated in PBS at pH 7, 6 or 5 prior to addition of Huh-7.5 target cells, infections were read after 72hr. (A) Example raw data demonstrating luciferase signals of acid treated HCVpp and CHIKV. pH 7 treated no glycoprotein pseudovirus acts as a background control. (B) Data normalised to the respective pH 7 treated virus, mean of three independent repeats. (C) The experiment was repeated with and without the addition of 1 µg/ml sCD81, data normalised to pH 7 treated virus without sCD81 for either virus, mean of three independent repeats. In each plot, error bars indicate standard error of the mean; asterisks denote statistical significance (ANOVA, Graphpad prism).
 
 Intense investigation of anti-HCV nAb responses, by others, has provided a detailed understanding of the major antigenic targets in E2 Figure 3B; for example, many potent nAbs target one or other component of the CD81 binding site (AS412, Front Layer and CD81 Binding Loop) (Tzarum et al., 2018). We measured the sensitivity of WT and mutant HCV to a panel of mAbs targeting a range of these antigenic targets (Figure 3, Figure 3—figure supplement 1A; Bailey et al., 2017; Giang et al., 2012; Pierce et al., 2016; Sabo et al., 2011). Without exception, WT virus resisted neutralisation whereas I438V A524T HCV was potently inhibited; this is best illustrated by examining the change in IC50 values across the panel, which demonstrates a~20-fold increase in sensitivity to mAbs (Figure 3D). We also assessed the ability of soluble CD81 EC2 to neutralise HCV (Figure 3G) and observed the same pattern of inhibition. To evaluate whether this global shift in nAb sensitivity reflected changes in antibody binding, we measured nAb interactions with sE2 by ELISA (Figure 3E and F and Figure 3—figure supplement 1B). Without exception, mAbs bound equally to WT and I438V A524T E2, suggesting that WT and mutant E2 are antigenically equivalent.
 
@@ -79,15 +115,39 @@ HCV entry is sensitive to inhibitors of endosomal acidification and, therefore, 
 
 In summary, I438V A524T HCV exhibits acute sensitivity to antibody-mediated neutralisation without intrinsic changes to the antigenicity of E2. This would suggest that whilst antibody binding remains unaltered, the ability of HCV to resist neutralisation has fundamentally changed. This likely reflects the hyper-reactive state of I438V A524T E1E2; much like incubation at 37 °C (Figure 2A), nAb interactions may trigger irreversible inactivation of E1E2. Alternatively, the accumulation of inactive glycoproteins in hyper-reactive HCV (evidenced by thermal instability; Figure 2A), may render HCV particles incapable of tolerating further E1E2 inactivation by nAbs. Moreover, I438V A524T E1E2 was sensitive to CD81-dependent low-pH inactivation, further suggesting that I438V A524T HCV is more prone to irreversible inactivation by ligand-mediated and biochemical cues.
 
-## Hyper-reactive HCV exhibits stabilisation of HVR-1
+### Hyper-reactive HCV exhibits stabilisation of HVR-1
 
 Antigenic similarity indicates there is no gross conformational change in I438V A524T E2. However, when subjected to limited proteolysis I438V A524T E2 undergoes cleavage more rapidly than WT E2 (Figure 4—figure supplement 1), this suggests that subtle structural differences may underpin hyper-reactivity. We have previously used molecular dynamic simulations (MD) to explore the conformational landscape of E2, finding that flexibility and disorder are conserved features of E2, consistent with other reports (Balasco et al., 2018; Kong et al., 2016; Meola et al., 2015; Stejskal et al., 2020; Ströh et al., 2018; Vasiliauskaite et al., 2017). In particular, we discovered that the N-terminus of E2, HVR-1 (containing the SR-B1 binding site), is a putative intrinsically disordered peptide tail. We used MD to examine the motion of E2, performing five independent 1µs simulations of WT and I438V A524T. The overall dynamics of either E2 were similar, as reflected in their root mean square fluctuation profiles (RMSF; Figure 4C). However, the HVR-1 tail of I438V A524T E2 exhibited consistent stabilisation (Figure 4), this is best illustrated by root mean square deviation (RMSD), which captures motion over time (Figure 4A and B, Figure 4—figure supplements 2 and 3), and RMSF of HVR-1 (Figure 4C and D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-v2.jpg)
+
+**Figure 4.:** The conformational dynamics of WT and I438V A524T E2 ectodomain were explored by five independent 1µs MD simulations. (A) Images summarising two representative simulations; superimposed snapshots of HVR-1 are colour coded according to time (as shown in key), the remainder of E2 is shown in grey for the earliest frame only. (B) Root mean square deviation (RMSD) of HVR-1 for the simulations shown in A. (C) Average root mean square fluctuation (RMSF) for WT and I438V A524T E2, from five independent experiments, error bars indicate standard error of the mean. X-axis denotes regions of E2. Inset provides a zoom of the data for HVR-1, RMSF values to the left of the dashed line reach statistical significance (ANOVA, GraphPad Prism). (D) Average RMSF values (as in C.) plotted on to molecular cartoons of E2, colour coded as shown in key. HVR-1 is labelled on the WT structure. Summaries of MD simulations are provided in Figure 4—figure supplements 2 and 3. (E) Estimation of unordered protein content, by circular dichroism spectroscopy, for WT, I438V A524T and ΔHVR-1 sE2. Data represent the mean of three independent measurements. (F) Intrinsic fluorescence ratio (330 nm over 350 nm), measured by nano differential scanning fluorimetry, for WT, I438V A524T, and ΔHVR-1 sE2 at 37 °C. Data represent the mean of three independent measurements. Asterisks denote statistical significance (ANOVA, GraphPad Prism).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Soluble E2 (WT or I438V A524T) was incubated at 37 °C with endproteinase GluC for up to 4 hr. (A) Representative western blot images of digestion over time (minutes and hours as indicated); incubation with GluC gives rise to a~30 kda digest product (E2Fragment). (B) The kinetics of digestion was evaluation by measuring the quantity of E2Fragment; the data is expressed relative to the intensity of product at 4 hr, data points represent the mean of three independent experiments, error bars indicate standard error of the mean. Data were fitted with a hyperbola function and curves were compared to determine statistical significance (F-test, p<0.0001,GraphPad Prism).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The conformational dynamics of WT E2 ectodomain were explored by MD simulations. E2 RMSF (left), images illustrating HVR-1 mobility (middle), and HVR-1 RMSD (right) are provided for each simulation.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The conformational dynamics of I438V A524T E2 ectodomain were explored by MD. E2 RMSF (left), images illustrating HVR-1 mobility (middle), and HVR-1 RMSD (right) are provided for each simulation.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Circular dichroism spectra for WT, I438V A524T, and ΔHVR-1 soluble E2. (B) Estimates of the secondary structure content found in E2, data is expressed as a proportion of total. Asterisks indicate statistical significance (ANOVA, Graphpad, Prism).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Intrinsic fluorescence ratio (330 nm over 350 nm) for WT, I438V A524T, and ΔHVR-1 soluble E2 at increasing temperatures. (B) First derivative transformation of fluorescence ratio; peak indicates melting temperature.
 
 Given these data, we reasoned that I438V A524T E2 may share biophysical characteristics with E2 lacking HVR-1 (ΔHVR-1, in which HVR-1 is genetically deleted). We first analysed sE2 by circular dichroism spectroscopy (CD), which provides a low-resolution ensemble measurement of protein structure (Figure 4—figure supplement 4). Here, I438V A524T and ΔHVR-1 E2 were biophysically indistinguishable from one another but distinct from WT E2. In particular, estimation of the structural composition of I438V A524T and ΔHVR-1 E2 indicated a significant reduction of unordered components Figure 4E; this is broadly consistent with our MD experiments. We also assessed sE2 by nano differential scanning fluorimetry (nanoDSF), which exploits the changes in intrinsic protein fluorescence upon solvent exposure of tryptophan residues to provide a surrogate measure of protein folding and to determine melting temperature (Figure 4—figure supplement 5). Consistent with other reports, the apparent melting temperature of sE2 was high (>80 °C; Figure 4—figure supplement 5B; Kong et al., 2016), this likely represents unfolding of the globular core of E2 and, in this respect, we observed no differences between each E2. However, at physiological temperatures the intrinsic fluorescence ratio of I438V A524T and ΔHVR-1 E2 were higher than WT (Figure 4 E, Figure 4—figure supplement 5A), consistent with I438V A524T and ΔHVR-1 E2 being biophysically distinct from WT. The location of tryptophan residues is relevant when interpreting nanoDSF data; in this regard, HVR-1 is directly upstream of a highly conserved tryptophan residue in AS412 that has been previously demonstrated to be important for CD81 binding (W420 Cowton et al., 2016; Owsianka et al., 2006).
 
 In summary, MD simulations suggest that E1E2 hyper-reactivity is associated with reduced HVR-1 dynamics. This is supported by the biophysical similarity of mutant and ΔHVR-1 E2. Therefore, HVR-1 dynamics provide a potential mechanism linking E1E2 reactivity, SR-B1 receptor dependency, entry efficiency and nAb sensitivity.
 
-## Hypervariable region-1 is an entropic safety catch
+### Hypervariable region-1 is an entropic safety catch
 
 Based on our data, we hypothesised that HVR-1 exerts an autoinhibitory effect on E1E2 that is dependent on its dynamics and conformational entropy. Moreover, during virus entry, engagement of SR-B1 will, necessarily, constrain HVR-1, reduce conformational entropy and turn off autoinhibition. Therefore, HVR-1 is analogous to a safety catch on a firearm that suppresses the reactivity of E1E2 to prevent untimely or inappropriate triggering of the HCV entry mechanism. SR-B1 turns off the safety catch at the cell surface to prime virus entry. In the hyper-reactive I438V A524T mutant, pre-stabilisation of HVR-1 turns off the safety catch prematurely, reducing the requirement for SR-B1 and enhancing entry efficiency, but rendering E1E2 more prone to spontaneous inactivation: I438V A524T HCV is on a hair-trigger. The entropic safety catch model is summarised in Figure 5A.
 
@@ -99,9 +159,17 @@ Tuning of protein function by disordered peptide tails has been described in oth
 
 Given these observations, we reasoned that genetic deletion of HVR-1 would remove this entropic force, turn off the safety catch and confer a hyper-reactive phenotype. We characterised the reactivity of WT, I438V A524T, and ΔHVR-1 HCV by measuring infectivity, receptor dependency, stability and nAb sensitivity (Figure 5C–F). In each case, ΔHVR-1 HCV exhibited a hyper-reactive phenotype above and beyond that of I438V A524T HCV; ΔHVR-1 HCV has very high infectious titres, low SR-B1 dependency, high instability and acute sensitivity to patient IgG. These data are completely consistent with the entropic safety catch model.
 
-## Consistent emergence of hyper-reactive mutants in the absence of antibody selection
+### Consistent emergence of hyper-reactive mutants in the absence of antibody selection
 
 Given the high infectivity of I438V A524T and ΔHVR-1 HCV, there remains a question over the advantages of evolving a mechanism to suppress E1E2 activity. The likely explanation is that in chronic infection nAbs necessitate tight control over E1E2 reactivity and that antibody selection prevents the emergence of hyper-reactive mutants. In contrast, cell culture replication is devoid of adaptive immunity and may permit the emergence of viruses with optimised entry but compromised nAb evasion. To examine this, we first returned to our original cell culture adaptation experiment. At day 42 multiple minor variants co-existed with the subsequently successful lineage Figure 1—figure supplement 1; one of these mutations S449P (10.2% frequency) has previously been suggested to alter SR-B1 dependency (Zuiani et al., 2016). We, therefore, reasoned that S449P HCV may exhibit a hyper-reactive phenotype. In every respect, S449P HCV was indistinguishable from I438V A524T HCV (Figure 6A–D). Moreover, MD simulations of S449P E2 demonstrated stabilisation of HVR-1 to the same extent as I438V A524T (Figure 6E–F, Figure 6—figure supplement 1). This suggests that, in the absence of immune selection, HCV explores independent evolutionary pathways towards the entry-optimised hyper-reactive phenotype.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig6-v2.jpg)
+
+**Figure 6.:** (A) Mean infectivities of WT, I438V A524T and S449P HCVcc; foci forming units are corrected for input particle numbers (B) HCVcc infection of parental Huh-7 cells or those CRISPR/Cas9 edited to prevent expression of CD81 or SR-B1. Data is expressed relative to parental cells, mean of three independent experiments, colour coding as in panel 6A. (C) Stability of HCVcc at 37 °C, data points represent the mean of three independent experiments, values normalised to infection at t=0, data was fitted using an exponential decay function. (D) Neutralisation of HCVcc by patient IgG, data points represent the mean of three independent experiments. Data was fitted with a hyperbola function (I438V A524T and S449P) or semilog function (WT), colour coding as in panel 6D. (E) Images summarising representative MD simulations of WT and S449P E2 ectodomain; superimposed snapshots of HVR-1 are colour coded by time, as denoted in the key, the remainder of E2 is shown in grey for the earliest time point only. (F) Average RMSF of WT, I438V A524T and S449P HVR-1; values to the left of the dashed line reach statistical significance for both mutants compared to WT (ANOVA, GraphPad Prism). (G) & (H) J6/JFH HCVcc was propagated in Huh-7.5 cells with and without antibody selection by HCV + patient IgG (see Methods). (G) Infectious titre of HCVcc after propagation with and without antibody selection. (H) HCV + patient IgG neutralisation of HCVcc cultured with and without antibody selection, data points represent the mean of three technical repeat, data was fitted with a hyperbola function (No selection) or semilog function (IgG selection). (I) NGS analysis of viral cultures; plots display identity and frequency of variants (>5%) in IgG selected (black bars) and unselected cultures (white bars). (J) Neutralisation sensitivity of HCVpp bearing WT, I438V A524T, or R317H T387A R408G E1E2, assessed as in panel 6D. (K) Receptor dependency of HCVpp, assessed as in panel 6B, colour coding as in panel 6J. (L) Neutralisation sensitivity of HCVpp bearing H77 clone WT or L438V A524T E1E2, assessed as in panel 6D (M) Receptor dependency of HCVpp, assessed as in panel 6B, colour coding as in panel 6L. (N) Average RMSF of H77 WT or L438V A524T E2 HVR-1 from five independent MD simulation; values within dashed lines reach statistical significance (ANOVA, GraphPad Prism). In each plot, error bars indicate standard error of the mean; asterisks denote statistical significance (ANOVA, Graphpad prism); all curves determined to be statistically significant (F-test, p<0.0001, Graphpad prism).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71854/elife-71854-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The conformational dynamics of S449P E2 ectodomain were explored by MD. E2 RMSF (left), images illustrating HVR-1 mobility (middle), and HVR-1 RMSD (right) are provided for each simulation.
 
 To test the importance of nAb selection, we performed new culture adaptation experiments in the presence or absence of patient IgG and measured the infectivity and antibody sensitivity of the resultant virus populations (Figure 6G and H). The antibody selected culture exhibited low infectivity and high resistance to neutralisation, much like WT HCV. In contrast, the culture without selection developed hallmarks of the hyper-reactive phenotype; having increased infectivity and high sensitivity to neutralisation. NGS analysis of the culture with IgG selection revealed a mixed population of WT (>75%) and minor variants (<25% in total), suggesting limited adaptation, whereas the culture without selection was dominated (>80%) by a triple E1E2 mutant: R317H, T387A, R408G (Figure 6I). Notably, the latter two of these mutations are found within HVR-1. We characterised R317H, T387A, R408G E1E2 using the HCVpp system finding it to have nAb sensitivity and SR-B1 independence above that of I438V A524T E1E2 (Figure 6J & K).
 
@@ -119,83 +187,83 @@ Beyond HCV, we propose that this work has broader implications. The extent to wh
 
 ## Materials and methods
 
-## Cell cultures
+### Cell cultures
 
 Huh-7.5 cells were acquired from Apath LLC. CRISPR Cas9 receptor KO Huh-7 cells (Yamamoto et al., 2016), and parental Huh-7 cells, were generously provided by Yoshiharu Matsuura (Osaka University, Japan). CHO and HEK293T were acquired from the American Type Culture Collection. Cell line identities were confirmed by STR profiling, and all cell lines tested negative for the presence of mycoplasma. All cells were grown at 37 °C in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% foetal calf serum (FCS), penicillin and streptomycin and non-essential amino acids.
 
-## Antibodies
+### Antibodies
 
 Mouse Anti-NS5 mAb (S38) and anti-CD81 mAb (2.131) were a gift from Prof. Jane McKeating (University of Oxford). Rabbit Anti-SR-B1 serum was provided by Dr. Thierry Huby (INSERM, Paris). Mouse anti-E2 mAbs J6.36 and H77.39 were a gift from Michael Diamond (Washington University). Human anti-E2 mAbs were kindly provided by Dr. Mansun Law (SCRIPPS, La Jolla) (AR2A, AR3A, AR3C, AR4A, AR5A), Dr. Steven Foung (Stanford) (HC33.1.53, HC84.26, CBH-7, HC1, CBH-4B, CBH-7, CBH-23), and Prof. James Crowe (Vanderbilt University) (HepC3, HepC43). StrepMAB-classic was purchased from IBA Lifesciences (Göttingen, Germany).
 
-## Isolation of patient IgG
+### Isolation of patient IgG
 
 Blood samples were collected from HCV + patients under ethical approval: “Characterising and modifying immune responses in chronic viral hepatitis”; IRAS Number 43993; REC number 11/LO/0421. Extracted serum was heat inactivated, filtered and diluted 1:1 in PBS. Total IgG was captured using a HiTrap protein G column (Cytiva, MA, USA), eluted in pH2.7 glycine buffer and buffer exchanged into PBS. For experiments, batches of pooled IgG were created by equimolar combination of IgG from two patient samples.
 
-## Production of HCVcc
+### Production of HCVcc
 
 Plasmid encoding cell-culture proficient full-length J6/JFH-1 (acquired from Apath LLC) was used as a template for the in vitro production of infectious HCV RNA (Lindenbach et al., 2005). To initiate infection, viral RNA was introduced into Huh-7.5 cells using a BTX830 electroporator (Harvard Instruments, Cambridge, UK). From 3 to 7 days post electroporation, cell culture supernatants containing infectious J6/JFH-1 HCVcc were harvested every 3–5 hr. Short harvest times limit the opportunity for virus decay thereby preventing the accumulation of non-infectious particles. To ensure maximum reproducibility between experiments, a standardised stock of experimental virus was generated by pooling the harvested supernatants.
 
-## HCVcc adaptation experiments
+### HCVcc adaptation experiments
 
 In the initial adaptation experiment (Figure 1), a continuous culture of J6/JFH HCVcc was established in Huh-7.5 cells. Infected cells were passaged, twice weekly, with an excess of uninfected target cells added whenever the culture reached 90–100% infection. This proceeded for 20 weeks. For the adaptation experiments with and without IgG selection (Figure 6) we adopted a serial passage strategy. Huh-7.5 cells were electroporated with J6/JFH genomic RNA and the next day medium was replaced with DMEM 3% FCS plus or minus HCV+ patient IgG at 100 µg/ml. Once 90–100% of cells were determined to be infected, the culture supernatant was harvested, clarified by centrifugation, and used to infect fresh Huh-7.5 cells. Typically, this was done every week. We performed six rounds of passage selection. In either case (continuous culture or passage) cell culture supernatants were frozen at –20 °C at regular intervals for analysis by NGS.
 
-## HCVcc infections
+### HCVcc infections
 
 Huh-7.5 and receptor KO Huh-7 cells were seeded at 1.5 × 104 cells per well of a 96 well plate 24 hr prior to the experiment. To quantify infectious titres, cells were challenged with a twofold serial dilution of virus stock (1/4 to 1/64) in DMEM 3% FCS (infection medium). Cells were incubated with viral supernatants for five hours before the cells were subsequently washed, and fresh medium was added. Infections were allowed to proceed for 48 (Huh-7.5 cells) or 72 (Huh-7 lines) hr before reading out. HCVcc replication was quantified by fluorescence microscopy. Cells were fixed with 100% methanol and stained for viral NS5A protein with mAb S38. HCV foci-forming units (FFU) were quantified by manual counting, or percentage infection determined by automated analysis of fluorescence micrographs (Culley et al., 2016).
 
-## Neutralisation/inhibition assays
+### Neutralisation/inhibition assays
 
 Huh-7.5 cells were seeded, as above. For neutralisation assays, virus was preincubated with a dilution series of mAb or soluble CD81 EC2 for 1 hour at 37 °C prior to infection. For anti-receptor blockade experiments, Huh-7.5 cells, seeded for infection, were pre-incubated at 37 °C with 50 μl DMEM 3% FCS containing a serial dilution of either rabbit-SR-B1 serum or mouse anti-CD81 mAb 2.131. One hour later, wells were challenged with virus. In each case the infections were processed as described above.
 
-## Next generation sequencing and analysis
+### Next generation sequencing and analysis
 
 RNA was extracted from cell culture supernatants containing HCVcc by a BioRobot MDx instrument using QIAamp Virus BioRobot MDx Kits. Extracted RNA samples were amplified as described (Aisyah et al., 2019) processed locally within the UCL Hospital Virology laboratories for PCR library preparation and Next Generation Sequencing using Illumina MiSeq equipment (Manso et al., 2020). Sequences were trimmed of adaptors and low quality reads using Trimmomatic V. 0.33 (Bolger et al., 2014). The quality of the sequence files was then assessed using the FastQC program. The resulting FASTQ files were then aligned to the indexed reference J6/JFH HCVcc genome using the BWA-MEM algorithm (Burrows Wheeler Aligner Li and Durbin, 2009), converted into Sequence Alignment Map (SAM) files, which were further compressed into BAM files (binary versions of SAM files), sorted by reference coordinates and indexed using SAMtools. The duplicate sequences were then removed by Picard Tools and indexed again using SAMtools. Base-calling for each position in the genome was extracted from the indexed file. Positions of interest were identified as those with at least 1,000 reads available with variance in nucleotide base composition of ≥5%.
 
-## Production of lentiviral vectors and receptor overexpression
+### Production of lentiviral vectors and receptor overexpression
 
 To generate lentiviral vectors, HEK293T cells were transfected with three plasmids: an HIV packaging construct (pCMV-dR8.91), VSV-G envelope plasmid (pMD2.G) and a transfer plasmid encoding GFP and SR-B1 or CD81, expressed from separate promoters (pDual SR-B1 or CD81, available from Addgene: https://www.addgene.org/Joe_Grove/). Supernatants containing viral vectors were collected at 48 and 72 hr post-transfection. At least 96 hr before an experiment, Huh-7.5 were transduced with lentivirus vectors diluted in complete medium and 24 hr prior to study the cells were seeded into a 96 well plate for infection, as described above.
 
-## Production of HCV pseudoparticles
+### Production of HCV pseudoparticles
 
 To generate HCVpp, HEK293TCD81KO cells (Kalemera et al., 2021) were co-transfected with three plasmids: an HIV packaging construct (pCMV-dR8.91), a luciferase reporter plasmid (CSLW) and an expression vector encoding the appropriate HCV glycoprotein. Supernatants containing HCVpp were collected at 48- and 72 hr post-transfection. Assays were carried out in an analogous manner to HCVcc, but with infection being measured after 48–72 hr by detection of luciferase expression using the BrightGlo assay kit (Promega). Chikungunya virus E1E2 expression plasmid was a gift from Brian Willett (University of Glasgow).
 
-## Entry kinetics assay
+### Entry kinetics assay
 
 Huh-7.5 cells were seeded for infection, as above. HCVpp were preincubated with magnetic nanoparticles (ViroMag, OZ Biosciences, France) for 15 min, added to Huh-7.5 cells and the plate was placed on a Super Magnetic Plate (OZ Biosciences, France) for 15 min at 37 °C to synchronise infection (Haim et al., 2009; Haim et al., 2005). The synchronous infection was chased with a saturating receptor blockade by adding 3 μg/ml anti-CD81 mAb 2.131 at the indicated time points. Infection was assayed after 72 hr using the SteadyGlo reagent kit and a GloMax luminometer (Promega, USA).
 
-## Production of sE2
+### Production of sE2
 
 Soluble E2 comprises residues 384–661 of the HCV genome, flanked by an N-terminal tissue plasminogen activator signal sequence and a C-terminal Twin-Strep-tag. HEK293TCD81KO cells (Kalemera et al., 2021) were transduced with lentivirus encoding sE2 and cell culture media, containing sE2, were harvested every 24 hours for up to 6 weeks. The harvested supernatants were frozen immediately at –80 °C. High purity monomeric sE2 was generated by sequential affinity purification using StrepTactin-XT columns (IBA Lifesciences, Göttingen, Germany) and size-exclusion chromatography using the HiPrep 16/60 Sephacryl S-200 HR gel filtration column (Cytiva, MA, USA). Soluble CD81 ectodomain (residues 113–201) was produced and purified in an analogous manner.
 
-## Soluble E2 binding assay
+### Soluble E2 binding assay
 
 The sE2 binding assay has been described elsewhere (Kalemera et al., 2019). Briefly, a single-cell suspension of 5 × 105 CHO cells transduced to express human SR-B1 or CD81 (protocol for receptor lentiviral production described above). Cells were preincubated in ‘traffic stop’ buffer, PBS + 1% bovine serum albumin and 0.01% sodium azide; the addition of NaN3 depletes cellular ATP pools, consequently preventing active processes including receptor internalisation. All subsequent steps are performed in traffic stop buffer. Cells were pelleted and then resuspended in a serial dilution of sE2. Following a 1 hr incubation at 37 °C, cells were washed twice and incubated with 3 µg/ml StrepMAB-classic (for CHO SR-B1) or J6.36 (for CHO CD81) followed by an anti-mouse Alexa Fluor 647 secondary. After a final wash, the cells were fixed in 1% formaldehyde and analysed by flow cytometry. To measure cell surface expression of human receptors post-transduction, cells were stained for SR-B1 or CD81 and signal was detected using an anti-rabbit or anti-mouse Alexa Fluor 647 secondary, respectively.
 
-## ELISA
+### ELISA
 
 Purified Strep-II-tagged sE2 monomers (1.0 µg/mL diluted in TRIS buffered saline, TBS) were added to 96-well Strep-TactinXT-coated plates (IBA Lifesciences, Göttingen, Germany) for 2 hours at room temperature. Plates were washed with TBS twice before incubating with serially diluted mAbs in casein blocking buffer (Thermo Fisher Scientific) for 90 min. After three washes with TBS, wells were incubated with a 1:3,000 dilution of HRP-labelled goat anti-human/mouse IgG in casein blocking buffer for 45 min. After washing the plates five times with TBS +0.05% Tween-20, plates were developed by adding develop solution (1% 3,3’,5,5’-tetraethylbenzidine, 0.01% H2O2, 100 mM sodium acetate, 100 mM citric acid). The reaction was stopped after 3 min by adding 0.8 M H2SO4. Absorbance was measured at 450 nm.
 
-## pH sensitivity assay
+### pH sensitivity assay
 
 Experiment was adapted from Sharma et al., 2011. HCVpp were immobilised by incubation in a 96-well plate coated with poly-D-lysine (Thermo Fisher Scientific), unbound particles were rinsed away with PBS. HCVpp were then incubated for 15 min at 37 °C in neutral PBS, or PBS adjusted to pH 6 or pH 5. Following incubation, immobilised particles were rinsed in PBS, afterwhich 3 × 104 Huh-7.5 cells were added to each well. Experiments were read out as described above for HCVpp.
 
-## Limited proteolysis
+### Limited proteolysis
 
 sE2 (0.2  mg/ml) was incubated with Endoproteinase GluC (New England Biosciences) at 1:50 (w/w) ratio in TBS at 37 °C for up to 4 hr. Proteolysis was halted by boiling in Laemmli buffer at specific intervals and the digestion products identified by SDS-PAGE followed by western blot.
 
-## SDS-PAGE/western blotting
+### SDS-PAGE/western blotting
 
 Samples were run on MiniPROTEAN 4–12% gels (BioRad, CA, USA) and transferred on to nitrocellulose membrane. The blots were blocked in PBS + 2% milk solution +0.1% Tween-20 and then probed sequentially with J6.36 mAb and goat anti-mouse secondary conjugated to horseradish peroxidase. Chemiluminescence signal was then measured using a Chemidoc MP (BioRad, CA, USA).
 
-## Circular dichroism spectroscopy
+### Circular dichroism spectroscopy
 
 Circular dichroism experiments were performed using the B23 nitrogen-flushed Module B end-station spectrophotometer at B23 Synchrotron Radiation CD BeamLine located at Diamond Light Source. They were performed by the BeamLine lab manager as a mail-in service. Four scans of protein samples in 50 mM NaF and 20 mM NaH2PO4 and Na2HPO4 pH 7.2 were acquired in the far-UV region (175–260 nm) in 1 nm increments using an integration time of 1 sec, 1 nm bandwidth and pathlength of 0.00146 cm, at 20 °C. Results obtained were processed using CDApps v4.0 software (Hussain et al., 2015). The scans were averaged and spectra have been normalised using average amino acid molecular weight which was calculated for each sample. Spectra presented are difference spectra meaning the buffer baseline has been subtracted from the observed spectra, and zeroed between 253 and 258 nm. Secondary structure deconvolution from CD spectra was carried out using the CDApps CONTINLL algorithm and SP29 reference data set referencing 29 soluble protein structures.
 
-## Nano differential scanning fluorimetry
+### Nano differential scanning fluorimetry
 
 The melting temperature (Tm) of sE2 (1 mg/ml) was calculated using the Prometheus NT.48 (Nanotemper, Munich, Germany) during heating in a linear thermal ramp (1 °C, 20–90°C) with an excitation power of 30%. The fluorescence at emission wavelengths of 350 and 330 nm was used to determine changes in tyrosine and tryptophan environments. The Tm was calculated by fitting the Boltzmann sigmoidal curve to the first derivative of the fluorescence ratios (350 nm/330 nm).
 
-## Mathematical modelling
+### Mathematical modelling
 
 We applied a mathematical model described in a previous publication (Kalemera et al., 2019) to the novel data generated by this study. Our model uses a series of differential equations to describe the processes via which HCV particles, having bound to the cell membrane, acquire CD81 and SR-B1 receptors. Viruses are modelled as uniformly having Ne E2 proteins available to bind cellular receptors. We consider an E2 protein as being either bound or unbound to CD81. If it is unbound to CD81 we consider whether it is bound or unbound to SR-B1; once E2 is bound to CD81 we are unconcerned about its binding to SR-B1. Thus, we represent the population as existing on a grid of points Mij, indicating viruses that have i copies of E2 bound to CD81 and j copies of E2 bound to SR-B1 but not to CD81. All viruses begin at the point M00, then progress through the grid (see Figure 5 in Kalemera et al. ).
 
@@ -203,21 +271,55 @@ At the point Mij, viruses have Ne-i-j free E2. We suppose that they bind SR-B1 a
 
 Our model considers data from a number of states in which the number of CD81 and SR-B1 receptors has been altered (Figure 1C & D). In a given system we model the proportion of CD81 receptors as pc, and the proportion of SR-B1 receptors as ps, where the value in unmodified cells is 1 in each case.
 
-Following the above, we obtain the following equations for viral progress across the membrane:dDdt=d∑ijMijdEdt=e∑jMrjdMijdt=1Nepcc1Ne-i-j+1Mi-1j+c2jMi-1j+1+pssNe-i-j+1Mij-1-......1Nepcc1Ne-i-jMi-1j+c2j+pssNe-i-jMij-dMij-eIirMij
+Following the above, we obtain the following equations for viral progress across the membrane:
+
+$$
+\frac{dD}{dt}=d\sum_{ij}M_{ij}
+$$
+
+
+
+$$
+\frac{dE}{dt}=e\sum_{j}M_{rj}
+$$
+
+
+
+$$
+\frac{dM_{ij}}{dt}=\frac{1}{N_{e}}p_{c}c_{1}N_{e}-i-j+1M_{i-1j}+c_{2}jM_{i-1j+1}+p_{s}sN_{e}-i-j+1M_{ij-1}-...
+$$
+
+
+
+$$
+...\frac{1}{N_{e}}p_{c}c_{1}N_{e}-i-jM_{i-1j}+c_{2}j+p_{s}sN_{e}-i-jM_{ij}-dM_{ij}-eI_{ir}M_{ij}
+$$
 
 where Iir = 1 if i=r and Iir = 0 if i↑r, and the system has the initial conditions D=0, E=0, M00=1, and Mij = 0 for all i>0 and j>0, and the system is bounded by the constraints 0 ″ i ″ r and 0 ″ j ″ Ne.
 
-Given a set of input parameters, a fourth-order Runge-Kutte scheme with adaptive step size was used to propagate the system until the sum of terms D+E was greater than 0.999, indicating that 99.9% of the simulated viruses had either died or gained entry. The probability P that a single virus gains entry to a cell was then calculated as.Ppc,ps,c1,c2,s,e=ED+E
+Given a set of input parameters, a fourth-order Runge-Kutte scheme with adaptive step size was used to propagate the system until the sum of terms D+E was greater than 0.999, indicating that 99.9% of the simulated viruses had either died or gained entry. The probability P that a single virus gains entry to a cell was then calculated as.
+
+$$
+Pp_{c},p_{s},c_{1},c_{2},s,e=\frac{E}{D+E}
+$$
 
 An optimisation procedure was run to fit the model to data from experiments. As in a previous publication, experiments modelling viral entry were performed in replicate. To estimate the values pc and ps, indicating the extent of available receptor, we used fluorescence microscopy measurements of receptor blockade/over-expression performed in parallel with the infection experiments, as previously described (Kalemera et al., 2019). These values were normalised to the range 0–1 in the case of receptor knockdown experiments, or above 1 in the case of overexpression experiments; 1 being the availability in unmodified cells.
 
-We now consider data describing a level of receptor availability (pc, ps) and a number of observed foci of infection; using the index i we term the latter value oi. Given a knowledge of the number of input particles and the number of cells observed in a well, this can be understood in terms of a probability of a given cell being infected by the virus. Observations were modelled as being distributed according to a double Poisson distribution with mean ⎧i and parameter ⎝.loglogL=loglogθ0.5e-θμie-oioioioi!eμioiθoiC
+We now consider data describing a level of receptor availability (pc, ps) and a number of observed foci of infection; using the index i we term the latter value oi. Given a knowledge of the number of input particles and the number of cells observed in a well, this can be understood in terms of a probability of a given cell being infected by the virus. Observations were modelled as being distributed according to a double Poisson distribution with mean ⎧i and parameter ⎝.
 
-where1C=1+1-θ12θμi1+1θμi
+$$
+loglogL=loglog\theta^{0.5}e^{-\theta\mu_{i}}\frac{e^{-o_{i}}o_{i}^{o_{i}}}{o_{i}!}\frac{e\mu_{i}}{o_{i}}^{\thetao_{i}}C
+$$
+
+where
+
+$$
+\frac{1}{C}=1+\frac{1-\theta}{12\theta\mu_{i}}1+\frac{1}{\theta\mu_{i}}
+$$
 
 An estimate of the dispersion parameter θ was calculated by fitting a single value μi to each set of values oi arising from the same level of receptor availability with no other constraint on the μi. This parameter was then used in the likelihood function to fit values μi=niP(pc, ps,c1,c2,s,e), where ni is the number of cells observed in a well and P(pc, ps,c1,c2,s,e) is the probability of viral entry calculated from the differential equation model described above; parameters c1, c2, s, Ne, and e were optimised to give a maximum likelihood fit to the data.
 
-## Molecular dynamic simulations
+### Molecular dynamic simulations
 
 The complete model of the J6 E2 ectodomain was generated as previously described (Stejskal et al., 2020). For simulations of the mutant glycoprotein, the respective amino acid substitutions were modelled in using Modeller (Webb and Sali, 2016).
 
@@ -231,10 +333,10 @@ Production runs: An initial 1μs production run was simulated under constant vol
 
 The MD trajectories were analysed using scripts available in cpptraj from Amber Tools 16. For RMSF/RMSD analyses, the average structure generated from the given trajectory was used as the reference structure. The analyses were performed using the backbone Cα, C and N atoms unless otherwise stated. MD trajectories are available here: https://zenodo.org/record/4309544.
 
-## Molecular modelling
+### Molecular modelling
 
 Molecular model visualisation was performed with UCSF Chimera (Pettersen et al., 2004).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analysis was performed in Prism 6.0 (GraphPad, CA, USA). In the majority of cases ordinary one-way ANOVA was performed using Dunnett’s multiple comparison test, using WT virus as a control. Unpaired t-test was performed assuming equal standard deviation using a two-tailed p-value. The F-test was used to compare fitted curves. Asterisks indicate level of significance: p<0.05 = *, p<0.01 = **, p<0.001 = ***, p<0.0001 = ****.

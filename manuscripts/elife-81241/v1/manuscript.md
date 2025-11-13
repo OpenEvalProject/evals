@@ -14,19 +14,19 @@
 
 ### Affiliations
 
-1. https://ror.org/038t36y30 Institute of Medical Psychology, Center for Psychosocial Medicine, Heidelberg University Hospital Heidelberg Germany
-2. https://ror.org/038t36y30 Heidelberg University Heidelberg Germany
-3. https://ror.org/04tsk2644 Department of Social Neuroscience, Faculty of Psychology, Ruhr University Bochum Bochum Germany
-4. https://ror.org/0327sr118 Department for Education and Human Development, DIPF|Leibniz Institute for Research and Information in Education Frankfurt Germany
+1. Institute of Medical Psychology, Center for Psychosocial Medicine, Heidelberg University Hospital Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+2. Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+3. Department of Social Neuroscience, Faculty of Psychology, Ruhr University Bochum Bochum Germany ([ROR:04tsk2644](https://ror.org/04tsk2644))
+4. Department for Education and Human Development, DIPF|Leibniz Institute for Research and Information in Education Frankfurt Germany ([ROR:0327sr118](https://ror.org/0327sr118))
 5. Center for Research on Individual Development and Adaptive Education of Children at Risk Frankfurt Germany
-6. https://ror.org/01xtthb56 Department of Behavioural Medicine, Faculty of Medicine, Institute of Basic Medical Sciences, University of Oslo Oslo Norway
-7. https://ror.org/033n9gh91 Department of Psychiatry, University of Oldenburg Bad ZwischenahnOldenburg Germany
+6. Department of Behavioural Medicine, Faculty of Medicine, Institute of Basic Medical Sciences, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+7. Department of Psychiatry, University of Oldenburg Bad ZwischenahnOldenburg Germany ([ROR:033n9gh91](https://ror.org/033n9gh91))
 
 † Corresponding author
 
 ## Abstract
 
-Affectionate touch, which is vital for mental and physical health, was restricted during the Covid-19 pandemic. This study investigated the association between momentary affectionate touch and subjective well-being, as well as salivary oxytocin and cortisol in everyday life during the pandemic. In the first step, we measured anxiety and depression symptoms, loneliness and attitudes toward social touch in a large cross-sectional online survey (N = 1050). From this sample, N = 247 participants completed ecological momentary assessments over 2 days with six daily assessments by answering smartphone-based questions on affectionate touch and momentary mental state, and providing concomitant saliva samples for cortisol and oxytocin assessment. Multilevel models showed that on a within-person level, affectionate touch was associated with decreased self-reported anxiety, general burden, stress, and increased oxytocin levels. On a between-person level, affectionate touch was associated with decreased cortisol levels and higher happiness. Moreover, individuals with a positive attitude toward social touch experiencing loneliness reported more mental health problems. Our results suggest that affectionate touch is linked to higher endogenous oxytocin in times of pandemic and lockdown and might buffer stress on a subjective and hormonal level. These findings might have implications for preventing mental burden during social contact restrictions. The study was funded by the German Research Foundation, the German Psychological Society, and German Academic Exchange Service.
+Background:Affectionate touch, which is vital for mental and physical health, was restricted during the Covid-19 pandemic. This study investigated the association between momentary affectionate touch and subjective well-being, as well as salivary oxytocin and cortisol in everyday life during the pandemic.Methods:In the first step, we measured anxiety and depression symptoms, loneliness and attitudes toward social touch in a large cross-sectional online survey (N = 1050). From this sample, N = 247 participants completed ecological momentary assessments over 2 days with six daily assessments by answering smartphone-based questions on affectionate touch and momentary mental state, and providing concomitant saliva samples for cortisol and oxytocin assessment.Results:Multilevel models showed that on a within-person level, affectionate touch was associated with decreased self-reported anxiety, general burden, stress, and increased oxytocin levels. On a between-person level, affectionate touch was associated with decreased cortisol levels and higher happiness. Moreover, individuals with a positive attitude toward social touch experiencing loneliness reported more mental health problems.Conclusions:Our results suggest that affectionate touch is linked to higher endogenous oxytocin in times of pandemic and lockdown and might buffer stress on a subjective and hormonal level. These findings might have implications for preventing mental burden during social contact restrictions.Funding:The study was funded by the German Research Foundation, the German Psychological Society, and German Academic Exchange Service.
 
 ## Introduction
 
@@ -42,35 +42,35 @@ Initial laboratory research has demonstrated that receiving touch such as a mass
 
 For this study, ethical approval was granted from the ethics committee of the Heidelberg University Medical Faculty (approval no. S-214/2020), and the study was registered online at https://drks.de/search/en/trial/DRKS00021671. All participants provided written informed consent. We used the disclosure of interest form of the International Committee of Medical Journal Editors (ICMJE) to report no conflicts of interest. STROBE protocol was used to standardize reporting.
 
-## Study design and population
+### Study design and population
 
 In a large online survey launched in April 2020, structural social factors, such as housing situation, anxiety, and depressive symptoms, as well as subjective psychosocial burden, loneliness, and the perception of touch during the physical distancing measures, were assessed (Hopf et al., 2022). Study participants were recruited via local newspapers, radio programs, and social media. In an attempt to more actively involve the study participants in the research (collecting data, carrying out measurements in open formats, reporting unexpected results, i.e. citizen science approach), all participants (N = 1050) who had completed the online survey were invited to take part in a 2-day psychobiological EMA. Participants were given standardized instructions via phone on how to use their smartphones to collect momentary subjective data, as well as saliva samples via a passive drool method at six time points per day over the course of two consecutive days (i.e. in total, each individual provided 12 saliva samples). They received the collecting devices via mail along with the informed consent documents to sign. Sampling times on each day were adapted to the individual wake-up time and were taken directly after awakening, 30 min after, 45 min after, 2½ hr after, 8 hr after, and directly before going to sleep. To reduce potential missing values, minimize irregularities, and increase adherence, the data sampling was monitored by study members.
 
-## Measures
+### Measures
 
-## Hospital Anxiety and Depression Scale (HADS)
+#### Hospital Anxiety and Depression Scale (HADS)
 
 General psychological distress was assessed using the total score of the Hospital Anxiety and Depression Scale (HADS) (Hinz and Brähler, 2011). Sum scores were calculated for anxiety and depression subscales as well as for the total score. The internal consistency of the global HADS score in our data was high (HADS total score: Cronbach’s α = 0.89; HADS Anxiety subscale: Cronbach’s α = 0.82; HADS Depression subscale: Cronbach’s α = 0.82).
 
-## UCLA Loneliness Scale
+### UCLA Loneliness Scale
 
 Loneliness was measured using the 20-item UCLA Loneliness Scale (Döring and Bortz, 1993). Participants rated how often they felt in a certain way during the past 2 wk, with higher scores indicating higher levels of loneliness. The sum scores were used for statistical analyses. In our sample, the scale showed a high internal consistency (Cronbach’s α = 0.91).
 
-## Social Touch Questionnaire (STQ)
+### Social Touch Questionnaire (STQ)
 
 To measure attitudes toward social touch, we used the Social Touch Questionnaire (STQ) (Wilhelm et al., 2001), assessing different aspects of social touch such as touch involving family and friends vs. touch involving strangers, touch occurring in different settings, as well as touch with sexual vs. without sexual connotation. Internal consistency in our data was high with Cronbach’s α = 0.84. Low values of STQ indicate a high liking of social touch, whereas high values indicate a high aversion to social touch. To interpret the results more intuitively, individual scores of the STQ were inverted (i.e. high STQ values indicate a more positive attitude towards touch).
 
-## Ecological momentary assessment
+### Ecological momentary assessment
 
 Momentary levels of well-being (anxiety, stress, general and Covid-19 related burden, as well as happiness levels) were assessed through single items (‘Please indicate how you feel at the moment …’) using visual analog scales from 0 (not at all) to 100 (very much). Affectionate touch was assessed with the question ‘Since the last time point, did you experience touch, hugs, kisses, cuddles, etc.?’ and an additional visual analog scale for the intensity rating of the experienced touch from 0 (low intensity) to 100 (high intensity).
 
-## Neuroendocrine measures
+### Neuroendocrine measures
 
 On seeing the prompt on their smartphones, participants self-sampled their saliva into Salicaps (small plastic tubes) via passive drool and stored each sample immediately after collection in their home freezers. At the end of data collection, the study team personally visited to collect the samples on dry ice. The saliva samples were stored at –80°C until analyses at the Institute of Medical Psychology’s biochemical lab at Heidelberg University Hospital.
 
 For the analyses of endogenous oxytocin concentrations, saliva samples were thawed and centrifuged at 4°C at 1.500 × g for 15 min and subsequently analyzed without extraction (50% of the samples in duplicates) following the protocol of oxytocin enzyme-linked immunosorbent assay from Enzo Life Sciences (ELISA; ENZO Life Sciences, Switzerland). The detection limit was 15 pg/ml, and the variation coefficient for intra- and inter-assay precision was 6.12 and 11.13%, respectively. For cortisol analyses, 20% of the samples were analyzed in duplicates and an ELISA from Demeditec Diagnostics (Demeditec Diagnostics, Germany) was used with a reported detection limit of 0.019 ng/ml. Intra- and inter-assay variations in our sample were 2.95 and 7.51%, respectively.
 
-## Statistical analyses
+### Statistical analyses
 
 For data processing, IBM SPSS version 27 was used. Statistical analyses were conducted using R studio (R version 4.1.1) and Mplus (version 8.6). We analyzed the relationship of attitudes toward social touch (STQ) and loneliness (UCLA Loneliness) with anxiety and depression symptoms (HADS total) controlling for age, sex, and presence of mental disorder using multiple regression analyses. No violations of general assumptions for multiple regression (linearity, homoscedasticity, normality, and independence of errors) were detected. The total score of HADS, as well as HADS Anxiety and HADS Depression subscales, were included as dependent variables, whereas STQ, UCLA Loneliness, as well as the interaction variable (STQ × UCLA Loneliness) were entered as independent variables into the model. STQ and UCLA Loneliness scores were centered around their respective means. Missing data were deleted listwise.
 
@@ -78,7 +78,7 @@ To test whether affectionate touch was associated with well-being and neuroendoc
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 From April to August 2020, 1483 participants filled out the online survey, of whom 433 were excluded from data analysis (see Figure 1). A total of 1050 participants (n = 815 women, n = 227 men, n = 4 non-binary, n = 4 no information on gender) were included in the analyses. Participants’ age ranged from 18 to 81 y, with a mean age of 36.34 (SD = 14.77). 20.2% (n = 212) indicated that they suffered from a diagnosed mental disorder. The most frequent single diagnosis was depression (35%) followed by anxiety disorders (10%). Of those with at least one diagnosis, 27.5% indicated having multiple diagnoses.
 
@@ -88,17 +88,649 @@ From April to August 2020, 1483 participants filled out the online survey, of wh
 
 After completion of the online survey, 472 individuals indicated that they were interested in the EMA study, of whom 257 confirmed their participation after receiving detailed information. Ten participants withdrew from the study due to personal reasons, resulting in a total of 247 participants (n = 173 women, n = 74 men) completing the 2 d EMA. The mean age of the sample was 32.02 y (SD = 13.12) ranging from 18 to 78 y (for more details on sample characteristics, please see Table 1).
 
-## Attitude toward touch and its association with anxiety, depression, and loneliness
+**Table 1.**
+ Sample characteristics of online survey and ecological momentary assessment.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">Sample characteristics of online survey participants</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Men (n = 227)</td>
+      <td>Women (n = 815)</td>
+      <td>Non-binary (n = 4)</td>
+      <td>Missing (n = 4)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M (SD)</td>
+      <td>M (SD)</td>
+      <td>M (SD)</td>
+      <td>M (SD)</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>34.67 (15.18)</td>
+      <td>36.74 (14.58)</td>
+      <td>45.50 (24.73)</td>
+      <td>40.25 (15.39)</td>
+    </tr>
+    <tr>
+      <td>General psychological distress*</td>
+      <td>10.22 (6.75)</td>
+      <td>13.18 (7.49)</td>
+      <td>21.00 (5.89)</td>
+      <td>19.50 (14.66)</td>
+    </tr>
+    <tr>
+      <td>Anxiety†</td>
+      <td>5.15 (3.68)</td>
+      <td>6.95 (4.12)</td>
+      <td>10.50 (3.11)</td>
+      <td>9.25 (7.68)</td>
+    </tr>
+    <tr>
+      <td>Depression ‡</td>
+      <td>5.07 (3.55)</td>
+      <td>6.22 (4.10)</td>
+      <td>10.50 (3.32)</td>
+      <td>10.25 (8.18)</td>
+    </tr>
+    <tr>
+      <td>Loneliness §</td>
+      <td>37.18 (10.15)</td>
+      <td>39.33 (10.95)</td>
+      <td>53.00 (13.24)</td>
+      <td>47.50 (19.50)</td>
+    </tr>
+    <tr>
+      <td>Attitude toward social touch ¶</td>
+      <td>33.58 (10.18)</td>
+      <td>34.76 (12.27)</td>
+      <td>38.50 (23.39)</td>
+      <td>40.75 (16.92)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Sample characteristics of ecological momentary assessment participants</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="2">Men (n = 74)</td>
+      <td colspan="2">Women (n = 173)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>M</td>
+      <td>SD</td>
+      <td>M</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>30.99</td>
+      <td>13.62</td>
+      <td>33.05</td>
+      <td>12.41</td>
+    </tr>
+    <tr>
+      <td>Cortisol (ng/ml) **</td>
+      <td>8.40</td>
+      <td>2.02</td>
+      <td>8.68</td>
+      <td>2.31</td>
+    </tr>
+    <tr>
+      <td>Oxytocin (pg/ml)**</td>
+      <td>176.12</td>
+      <td>106.18</td>
+      <td>164.54</td>
+      <td>96.74</td>
+    </tr>
+    <tr>
+      <td>Covid-19-related burden**</td>
+      <td>36.98</td>
+      <td>24.61</td>
+      <td>41.78</td>
+      <td>23.49</td>
+    </tr>
+    <tr>
+      <td>General burden</td>
+      <td>39.96</td>
+      <td>23.89</td>
+      <td>47.20</td>
+      <td>21.78</td>
+    </tr>
+    <tr>
+      <td>Stress levels††</td>
+      <td>29.49</td>
+      <td>15.88</td>
+      <td>35.62</td>
+      <td>17.00</td>
+    </tr>
+    <tr>
+      <td>Anxiety levels††</td>
+      <td>18.39</td>
+      <td>15.98</td>
+      <td>24.14</td>
+      <td>20.08</td>
+    </tr>
+    <tr>
+      <td>Happiness levels††</td>
+      <td>71.13</td>
+      <td>17.09</td>
+      <td>67.87</td>
+      <td>18.42</td>
+    </tr>
+    <tr>
+      <td>Intensity of affectionate touch††</td>
+      <td>65.21</td>
+      <td>20.00</td>
+      <td>56.57</td>
+      <td>23.13</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table depicts means (M) and standard deviations (SD). Number of participants indicated as (n).*Hospital Anxiety and Depression Scale (HADS total score).†HADS Anxiety subscale.‡HADS Depression subscale.§University of California, Los Angeles Loneliness Scale (UCLA Loneliness).¶Social Touch Questionnaire (STQ).**Out of 2964 possible data points, n = 2724 remained for analysis after excluding outliers, samples that were not stored as instructed or below detection limit, sampling problems.††Momentary self-reported state._
+
+### Attitude toward touch and its association with anxiety, depression, and loneliness
 
 On average, participants’ HADS total scores were M = 12.58 (SD = 7.49, range = 0–37). 39.7% of the sample had values above the cut-off score (>13) compared to a reference sample (Hinz and Brähler, 2011). The average HADS Anxiety subscale score was M = 6.58 (SD = 4.19, range = 0–20), whereas the HADS Depression subscale score was M = 5.99 (SD = 4.04, range = 0–21) with values exceeding the cut-off scores (>8) in 29.8 and 24.5% of cases, respectively. The results of multiple regression analyses showed significant main effects of sex (β = 0.111; t(1031) = 4.655, p<0.001), presence of diagnosed mental disorder (β = 0.151; t(1031) = 5.882, p<0.001), UCLA Loneliness (β = 0.548; t(1031) = 20.403, p<0.001), STQ (β = -0.052; t(1031) = −2.083, p=0.038), as well as a significant interaction of UCLA Loneliness × STQ (β = 0.052; t(1031) = 2.104, p=0.036) on the outcome variable total HADS score. Thus, anxiety and depression symptoms were higher in women, individuals with a mental disorder and participants with higher loneliness; and lower in participants with a more positive attitude toward touch. In contrast, although the moderation effects were small, they indicate that the association of loneliness with anxiety and depression symptoms was more pronounced for individuals with a more positive attitude toward social touch. The model tested here was significant overall (F(6,1031) = 125.1, p<0.001) with an R² of 0.421.
 
 Next, we analyzed the association of the UCLA Loneliness × STQ interaction with the subscales of the HADS by following the same analytical approach. Here, we found that the outcome variable HADS Anxiety was also significantly and positively associated with female sex (β = 0.142; t(1031) = 5.369, p<0.001), presence of mental disorder (β = 0.180; t(1031) = 6.3, p<0.001), and UCLA Loneliness (β = 0.404; t(1031) = 13.54, p<0.001). Furthermore, we observed a significant interaction of UCLA Loneliness × STQ (β = 0.079; t(1031) = 2.907, p=0.004). However, the subscale HADS Depression showed only a significant association with sex (β = 0.060; t(1031) = 2.593, p=0.010), presence of mental disorder (β = 0.097; t(1031) = 3.838, p<0.001), and UCLA Loneliness (β = 0.603; t(1031) = 22.974, p<0.001). The UCLA Loneliness × STQ interaction was not significant (p=0.539). Both models with the outcome variable HADS Anxiety as well as with HADS Depression were overall significant (F(6,1031) = 69.25, p<0.001; with an R² of 0.287 and F(6,1031) = 139.1, p<0.001; with an R² of 0.447, respectively).
 
-## Affectionate touch, anxiety, oxytocin, and stress-related outcomes on a momentary level
+### Affectionate touch, anxiety, oxytocin, and stress-related outcomes on a momentary level
 
 Descriptive statistics of outcomes of interest are displayed in Table 1. In addition, an explorative graphical illustration of daily profiles of oxytocin and cortisol shows their variation throughout the day (Figure 2). The patterns of daily profiles did not appear to differ based on participants’ relationship status (single vs. in a relationship) or living situation (alone vs. with others) (see Figure 2—figure supplement 1). A positive correlation between the two assessment days was found for individual (ln-transformed) mean values of oxytocin (r(227) = 0.850, p<0.001), as well as cortisol (r(243) = 0.571, p<0.001) levels. Additionally, we found a significant negative correlation between mean cortisol and oxytocin awakening response (r(181) = –0.195, p=0.008).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/81241/elife-81241-fig2-v1.jpg)
+
+**Figure 2.:** Panels (A) and (B) illustrate the daily oxytocin (pg/ml) and cortisol (ng/ml) trajectories across 2 d and all participants. Gray area indicates cortisol and oxytocin awakening response. Error bars indicate 95% confidence intervals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/81241/elife-81241-fig2-figsupp1-v1.jpg)
+
 Results from separate random intercept and random slopes multilevel analyses showed that on a momentary (within-person) level, presence of affectionate touch was significantly and negatively associated with stress (b = −4.187; t(793) = −2.100; p=0.036), but not with general burden, anxiety, happiness, cortisol, or with oxytocin levels (see Tables 2 and 3, respectively). The negative association with Covid-19-related burden did not reach statistical significance (b = −2.660; t(792) = −1.867; p=0.062).
+
+**Table 2.**
+ Results of the associations between affectionate touch and self-reported psychological affective states.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">‍(A) Random intercept and random slopes models</th>
+    </tr>
+    <tr>
+      <th>Effects</th>
+      <th>General burden</th>
+      <th>Covid-19 burden</th>
+      <th>Stress</th>
+      <th>Anxiety</th>
+      <th>Happiness</th>
+    </tr>
+    <tr>
+      <th>Fixed effectsWithin-person</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>47.734 (4.668); p&lt;0.001</td>
+      <td>43.145 (5.009); p&lt;0.001</td>
+      <td>34.431 (3.596); p&lt;0.001</td>
+      <td>21.096 (3.958); p&lt;0.001</td>
+      <td>71.080 (3.778); p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>‍Touch*</td>
+      <td>0.462 (1.561); p=0.767</td>
+      <td>–2.660 (1.424); p=0.062</td>
+      <td>–4.187 (1.994); p=0.036</td>
+      <td>–0.217 (1.510); p=0.886</td>
+      <td>1.557 (1.599); p=0.331</td>
+    </tr>
+    <tr>
+      <td>‍Between-person</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Touch*</td>
+      <td>–5.560 (3.791); p=0.144</td>
+      <td>–7.478 (4.068); p=0.067</td>
+      <td>–7.534 (2.907); p=0.010</td>
+      <td>–1.483 (3.210); p=0.645</td>
+      <td>12.420 (3.068); p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>‍Covariates</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>‍Age</td>
+      <td>–0.186 (0.122); p=0.128</td>
+      <td>–0.158 (0.131); p=0.228</td>
+      <td>–0.136 (0.094); p=0.150</td>
+      <td>–0.090 (0.103); p=0.388</td>
+      <td>0.051 (0.099); p=0.605</td>
+    </tr>
+    <tr>
+      <td>‍Sex†</td>
+      <td>4.709 (3.325); p=0.158</td>
+      <td>3.761 (3.565); p=0.293</td>
+      <td>4.986 (2.524); p=0.050</td>
+      <td>6.568 (2.814); p=0.021</td>
+      <td>–3.318 (2.681); p=0.217</td>
+    </tr>
+    <tr>
+      <td>Day</td>
+      <td>–2.196 (0.864); p=0.011</td>
+      <td>–2.602 (0.981); p=0.008</td>
+      <td>–4.189 (1.228); p&lt;0.001</td>
+      <td>–3.145 (0.875); p&lt;0.001</td>
+      <td>1.637 (0.901); p=0.070</td>
+    </tr>
+    <tr>
+      <td>‍Random effects (SD)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>‍Intercept</td>
+      <td>21.487</td>
+      <td>22.794</td>
+      <td>13.694</td>
+      <td>17.647</td>
+      <td>16.597</td>
+    </tr>
+    <tr>
+      <td>‍Touch*</td>
+      <td>9.141</td>
+      <td>0.642</td>
+      <td>8.094</td>
+      <td>7.906</td>
+      <td>8.945</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>12.821</td>
+      <td>14.864</td>
+      <td>18.741</td>
+      <td>13.076</td>
+      <td>13.478</td>
+    </tr>
+    <tr>
+      <td colspan="6">(B) Random intercept and fixed slopes models</td>
+    </tr>
+    <tr>
+      <td>Effects</td>
+      <td>General burden</td>
+      <td>Covid-19 burden</td>
+      <td>Stress</td>
+      <td>Anxiety</td>
+      <td>Happiness</td>
+    </tr>
+    <tr>
+      <td>Fixed effectsWithin-person</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>44.439 (6.130); p&lt;0.001</td>
+      <td>39.748 (6.114); p&lt;0.001</td>
+      <td>32.966 (4.609); p&lt;0.001</td>
+      <td>24.466 (5.277); p&lt;0.001</td>
+      <td>71.437 (4.626); p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>‍Touch intensity</td>
+      <td>–0.077 (0.028); p=0.008</td>
+      <td>–0.068 (0.036); p=0.058</td>
+      <td>–0.148 (0.044); p&lt;0.001</td>
+      <td>–0.065 (0.029); p=0.026</td>
+      <td>0.085 (0.030); p=0.005</td>
+    </tr>
+    <tr>
+      <td>‍Between-person</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>‍‍Touch intensity</td>
+      <td>–0.121 (0.086); p=0.163</td>
+      <td>–0.138 (0.087); p=0.115</td>
+      <td>–0.223 (0.067); p=0.001</td>
+      <td>–0.102 (0.074); p=0.171</td>
+      <td>0.314 (0.066); p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>‍Covariates</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>–0.031 (0.161); p=0.847</td>
+      <td>–0.082 (0.161); p=0.610</td>
+      <td>–0.090 (0.125); p=0.475</td>
+      <td>–0.158 (0.143); p=0.270</td>
+      <td>0.007 (0.122); p=0.952</td>
+    </tr>
+    <tr>
+      <td>‍Sex†</td>
+      <td>2.647 (4.253); p=0.535</td>
+      <td>4.143 (4.214); p=0.327</td>
+      <td>2.650 (3.069); p=389</td>
+      <td>5.932 (3.645); p=0.106</td>
+      <td>–0.030 (3.171); p=0.993</td>
+    </tr>
+    <tr>
+      <td>‍‍Day</td>
+      <td>–3.788 (1.056); p&lt;0.001</td>
+      <td>–4.930 (1.302); p&lt;0.001</td>
+      <td>–4.791 (1.583); p=0.003</td>
+      <td>–3.718 (1.078); p&lt;0.001</td>
+      <td>3.695 (1.112); p=0.001</td>
+    </tr>
+    <tr>
+      <td>‍Random effects (SD)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intercept</td>
+      <td>22.467</td>
+      <td>21.601</td>
+      <td>13.206</td>
+      <td>18.622</td>
+      <td>15.842</td>
+    </tr>
+    <tr>
+      <td>‍Residual</td>
+      <td>11.812</td>
+      <td>14.626</td>
+      <td>18.300</td>
+      <td>12.121</td>
+      <td>12.591</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table depicts coefficients (standard errors in parentheses) and p-values of associations between (A) the presence and (B) intensity of affectionate touch and psychological variables. Number of observations = 593–1023, Number of participants 162–227.*0 = no, 1 = yes.†0 = male, 1 = female._
+
+**Table 3.**
+ Results of the associations between affectionate touch and hormonal levels.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">(A) Random intercept and random slopes models</th>
+      <th colspan="3">(B) Random intercept and fixed slopes models</th>
+    </tr>
+    <tr>
+      <th>Effects</th>
+      <th>Cortisol</th>
+      <th>Oxytocin</th>
+      <th>Effects</th>
+      <th>Cortisol</th>
+      <th>Oxytocin</th>
+    </tr>
+    <tr>
+      <th>Fixed effectsWithin-person</th>
+      <th></th>
+      <th></th>
+      <th>Fixed effectsWithin-person</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>2.941 (0.165); p&lt;0.001</td>
+      <td>4.973 (0.405); p&lt;0.001</td>
+      <td>Intercept</td>
+      <td>2.744 (0.370); p&lt;0.001</td>
+      <td>4.657 (0.798); p&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>‍Touch*</td>
+      <td>–0.019 (0.060); p=0.756</td>
+      <td>–0.030 (0.076); p=0.688</td>
+      <td>Touch intensity</td>
+      <td>–0.001 (0.001); p=0.367</td>
+      <td>0.006 (0.002); p=0.003</td>
+    </tr>
+    <tr>
+      <td>‍Between-person</td>
+      <td></td>
+      <td></td>
+      <td>Between-person</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Touch*</td>
+      <td>–0.121 (0.057); p=0.036</td>
+      <td>–0.145 (0.147); p=0.329</td>
+      <td>Touch intensity</td>
+      <td>–0.001 (0.002); p=0.504</td>
+      <td>0.002 (0.003); p=0.489</td>
+    </tr>
+    <tr>
+      <td>‍Covariates</td>
+      <td></td>
+      <td></td>
+      <td>Covariates</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>‍Age</td>
+      <td>–0.001 (0.002); p=0.633</td>
+      <td>–0.013 (0.005); p=0.011</td>
+      <td>Age</td>
+      <td>–0.001 (0.003); p=0.776</td>
+      <td>–0.019 (0.007); p=0.007</td>
+    </tr>
+    <tr>
+      <td>‍Sex†</td>
+      <td>–0.020 (0.044); p=0.647</td>
+      <td>–0.129 (0.123); p=0.293</td>
+      <td>Sex†</td>
+      <td>–0.001 (0.063); p=0.989</td>
+      <td>–0.167 (0.151); p=0.272</td>
+    </tr>
+    <tr>
+      <td>‍Day</td>
+      <td>–0.050 (0.035); p=0.155</td>
+      <td>–0.010 (0.059); p=0.863</td>
+      <td>Day</td>
+      <td>–0.032 (0.051); p=0.528</td>
+      <td>0.077 (0.086); p=0.370</td>
+    </tr>
+    <tr>
+      <td>‍Time-fall ‡</td>
+      <td>–0.476 (0.023); p&lt;0.001</td>
+      <td>0.051 (0.035); p=0.145</td>
+      <td>Time-fall ‡</td>
+      <td>–0.471 (0.032); p&lt;0.001</td>
+      <td>0.025 (0.049); p=0.611</td>
+    </tr>
+    <tr>
+      <td>‍Body mass index</td>
+      <td>–0.014 (0.005); p=0.009</td>
+      <td>0.012 (0.015); p=0.422</td>
+      <td>Body mass index</td>
+      <td>0.005 (0.009); p=0.585</td>
+      <td>0.014 (0.022); p=0.528</td>
+    </tr>
+    <tr>
+      <td>‍Eating*</td>
+      <td>–0.077 (0.075); p=0.302</td>
+      <td>0.032 (0.117); p=0.788</td>
+      <td>Eating*</td>
+      <td>–0.125 (0.099); p=0.210</td>
+      <td>0.099 (0.149); p=0.506</td>
+    </tr>
+    <tr>
+      <td>‍Drinking*</td>
+      <td>–0.007 (0.081); p=0.933</td>
+      <td>0.045 (0.126); p=0.722</td>
+      <td>‍Drinking*</td>
+      <td>–0.011 (0.108); p=0.919</td>
+      <td>–0.039 (0.161); p=0.810</td>
+    </tr>
+    <tr>
+      <td>‍Caffeine*</td>
+      <td>0.127 (0.043); p=0.004</td>
+      <td>–0.099 (0.070); p=0.158</td>
+      <td>‍Caffeine*</td>
+      <td>0.131 (0.064); p=0.043</td>
+      <td>0.157 (0.102); p=0.125</td>
+    </tr>
+    <tr>
+      <td>‍Alcohol*</td>
+      <td>–0.030 (0.063); p=0.628</td>
+      <td>–0.174 (0.096); p=0.070</td>
+      <td>‍Alcohol*</td>
+      <td>–0.012 (0.072); p=0.865</td>
+      <td>–0.154 (0.112); p=0.171</td>
+    </tr>
+    <tr>
+      <td>‍Cigarettes*</td>
+      <td>0.104 (0.072); p=0.153</td>
+      <td>0.053 (0.139); p=0.705</td>
+      <td>Cigarettes*</td>
+      <td>0.089 (0.098); p=0.368</td>
+      <td>–0.054 (0.179); p=0.766</td>
+    </tr>
+    <tr>
+      <td>‍Physical activity*</td>
+      <td>0.039 (0.040); p=0.332</td>
+      <td>0.108 (0.065); p=0.098</td>
+      <td>‍Physical activity*</td>
+      <td>–0.072 (0.056); p=0.199</td>
+      <td>0.014 (0.086); p=0.873</td>
+    </tr>
+    <tr>
+      <td>‍Sleep duration §</td>
+      <td>–0.003 (0.004); p=0.371</td>
+      <td>–0.009 (0.008); p=0.272</td>
+      <td>‍Sleep duration §</td>
+      <td>–0.029 (0.029); p=0.321</td>
+      <td>0.046 (0.060); p=0.438</td>
+    </tr>
+    <tr>
+      <td>‍Sleep quality ¶</td>
+      <td>–0.001 (0.001); p=0.289</td>
+      <td>–0.000 (0.002); p=0.912</td>
+      <td>‍Sleep quality ¶</td>
+      <td>–0.001 (0.001); p=0.477</td>
+      <td>–0.000 (0.002); p=0.960</td>
+    </tr>
+    <tr>
+      <td>Problem falling asleep*</td>
+      <td>0.031 (0.053); p=0.552</td>
+      <td>–0.245 (0.101); p=0.015</td>
+      <td>Problem falling asleep*</td>
+      <td>0.030 (0.081); p=0.709</td>
+      <td>–0.133 (0.148); p=0.370</td>
+    </tr>
+    <tr>
+      <td>Sleeping pills*</td>
+      <td>0.032 (0.109); p=0.772</td>
+      <td>0.031 (0.254); p=0.904</td>
+      <td>Sleeping pills*</td>
+      <td>–0.203 (0.290); p=0.487</td>
+      <td>0.771 (0.453); p=0.093</td>
+    </tr>
+    <tr>
+      <td>Forced awake*</td>
+      <td>–0.008 (0.041); p=0.838</td>
+      <td>0.012 (0.088); p=0.894</td>
+      <td>Forced awake*</td>
+      <td>0.016 (0.058); p=0.788</td>
+      <td>0.075 (0.117); p=0.520</td>
+    </tr>
+    <tr>
+      <td>Brushing teeth*</td>
+      <td>0.045 (0.036); p=0.217</td>
+      <td>0.096 (0.056); p=0.090</td>
+      <td>Brushing teeth*</td>
+      <td>0.029 (0.051); p=0.568</td>
+      <td>0.016 (0.077); p=0.839</td>
+    </tr>
+    <tr>
+      <td>Random effects (SD)</td>
+      <td></td>
+      <td></td>
+      <td>Random effects (SD)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>‍Intercept</td>
+      <td>0.149</td>
+      <td>0.542</td>
+      <td>Intercept</td>
+      <td>0.179</td>
+      <td>0.546</td>
+    </tr>
+    <tr>
+      <td>‍Touch*</td>
+      <td>0.273</td>
+      <td>0.166</td>
+      <td>Touch intensity</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>‍Residual</td>
+      <td>0.334</td>
+      <td>0.477</td>
+      <td>Residual</td>
+      <td>0.339</td>
+      <td>0.461</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table depicts unstandardized coefficients (standard errors in parentheses) and p-values of hormonal associations with (A) the presence and (B) intensity of affectionate touch. Number of observations = 251–545. Number of participants = 88–152.*0 = no, 1 = yes.†0 = male, 1 = female.‡0 = time point 1–3, 1 = time point 4, 2 = time point 5, 3 = time point 6.§In hours.¶1 = very bad, 101 = very good._
 
 On a between-person level, affectionate touch was significantly associated with lower cortisol (b = −0.121; t(128) = −2.118; p=0.036) (see Table 3), stress (b = −7.534; t(223) = −2.592; p=0.010), as well as with higher happiness (b = 12.420; t(223) = 4.049; p<0.001) levels (see Table 2), but not with general burden or anxiety. The negative association with Covid-19-related burden did not reach statistical significance (b = −7.478; t(223) = −1.838; p=0.067) (see Figure 3).
 
@@ -136,6 +768,6 @@ In our study, we found a positive association between momentary oxytocin levels 
 
 The study has some limitations that need to be addressed. The assessment of individual depression and anxiety levels was based on the self-reports using the HADS. Although this instrument has been validated and repeatedly used in clinical practice (Hinz and Brähler, 2011), it does not replace clinical interviews and might be influenced by self-report bias. Furthermore, in the EMA measures we used single items to minimize the drop-out rate during the study, but these items might not comprehensively reflect the individual’s experience of burden, stress, anxiety, or happiness. In addition, touch from strangers was restricted during the pandemic; thus, affectionate touch experiences were probably mostly from family contacts. Therefore, we cannot draw differential conclusions about varying contexts of touch. While in general, being touched by strangers may be rated as less pleasant, during times of a pandemic it is also associated with a higher risk for infection. In contrast, during the lockdown, touch at home may be experienced either as harmless and pleasant (Sorokowska et al., 2021) or as too close to feel comfortable during times of limited distraction and constant and close physical contact with family members. The latter is particularly relevant when it comes to the association of touch (yes/no) with cortisol and oxytocin. While touch, per se, seemed to be associated with reduced cortisol levels in the present sample, oxytocin secretion appears to be related to the intensity of touch. However, since this is a cross-sectional study, we here interpret associations rather than causal effects. The Covid-19-related lockdown provided us with a social situation to study the effects of touch between family/household members (romantic couples, parent–child dyads, etc.) in a relatively controlled setting. While the situation was quite specific and limited the generalizability of the results to everyday life in pre- or post-pandemic conditions, the risk of viral infection was not the only concern among the population. Participants reported significant concerns about being isolated from others and how long it might take for them to get back to normal (Hopf et al., 2021). These concerns related, at least in part, to the fear of loneliness, defined as a perceived lack of social connection and the distress this causes (Bekhet et al., 2008). Thus, these results obtained in the general population during pandemic-related restrictions can be partially generalized to other situations, such as a lack of social contacts due to migration, physical illnesses/disabilities, or other reasons.
 
-## Conclusion
+### Conclusion
 
 Taken together, the present findings provide support for the links of affectionate touch with more positive mental health outcomes during times of prolonged stress. Notably, the above associations with lower anxiety, better mood, and reduced cortisol levels in everyday life during the Covid-19 lockdown showed that more intense affectionate touch is related to higher salivary oxytocin levels on a moment-to-moment basis. This suggests that endogenous oxytocin might be stimulated through targeted behavior (e.g. social touch), which could have implications for prevention and interventions for individuals who are particularly vulnerable during times of stress and social isolation.

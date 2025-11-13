@@ -12,4 +12,4 @@
 
 ## Abstract
 
-More than 1500 fossils from the Rising Star cave system in South Africa have been assigned to a new human species, Homo naledi , which displays a unique combination of primitive and derived traits throughout the skeleton.
+More than 1500 fossils from the Rising Star cave system in South Africa have been assigned to a new human species, Homo naledi, which displays a unique combination of primitive and derived traits throughout the skeleton.

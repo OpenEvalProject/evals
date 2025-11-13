@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02s376052 Laboratory of Neuroepigenetics, Brain Mind Institute, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne Lausanne Switzerland
+1. Laboratory of Neuroepigenetics, Brain Mind Institute, School of Life Sciences, Ecole Polytechnique Fédérale de Lausanne Lausanne Switzerland ([ROR:02s376052](https://ror.org/02s376052))
 
 † Corresponding author
 
@@ -27,29 +27,49 @@ Based on these grounds, we hypothesized that the functional contribution of mPFC
 
 ## Results
 
-## The prelimbic cortex is specifically active during the encoding of a fear memory
+### The prelimbic cortex is specifically active during the encoding of a fear memory
 
 The mPFC is composed of the three following major areas: The anterior cingulate (ACC), the prelimbic (PL) and the infralimbic (IL) cortices (Carlén, 2017; Le Merre et al., 2021). In order to evaluate the relative activity of these subregions during the different phases of fear memory consolidation, we used a contextual fear conditioning (CFC) paradigm in combination with cFos immunohistochemistry (IHC), an IEG marker of neuronal activity (Pérez-Cadahía et al., 2011). We measured the freezing percentage of wild-type (WT) mice at CFC encoding before the footshocks occurred, as well as at recent recall 1 day post-encoding and at remote recall 14 days post-encoding. Each group was controlled for by a no shock group. We observed that both at recent and remote recall, mice display a significantly higher freezing percentage than the no shock control groups (Figure 1B), indicating successful memory formation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig1-v1.jpg)
 
-**Figure 1.:** (A) Experimental design. For encoding, mice were perfused 90 min after contextual fear conditioning (CFC). For recent and remote recalls, mice were perfused 90 min after a 1 day and a 14 day recall, respectively. (B) Percentage freezing measured during the 3 min of habituation before the shocks (encoding, in blue), at recent (in green) or remote (in red) memory recalls, for the animals undergoing CFC (shock, filled) and the control groups that were exposed to the CFC chamber without the shock (no shock, clear). Two-tailed unpaired t-tests, ****: p<0.0001. At recent recall, Cohen’s d=2.48; at remote recall, Cohen’s d=4.24. (C) Representative images of cFos immunostainings in the medial prefrontal cortex (mPFC). Scale: 250 µm. (D–F) Percentage of cFos over DAPI in (D) PL (one-way-ANOVA, F(5, 63)=9.172, p<0.0001), (E) anterior cingulate cortex (ACC) (one-way ANOVA, F(5, 63)=4.394, p=0.0017) and (F) infralimbic cortex (IL) (one-way ANOVA, F(5, 65)=13.34, p<0.0001). (D–F) Stars represent least significant p-values of Tukey’s multiple comparisons tests: *: 0.01 < p < 0.05; **: 0.001 < p < 0.01. n=11–13 animals per group.Figure 1—source data 1.Figure 1.
+**Figure 1.:** (A) Experimental design. For encoding, mice were perfused 90 min after contextual fear conditioning (CFC). For recent and remote recalls, mice were perfused 90 min after a 1 day and a 14 day recall, respectively. (B) Percentage freezing measured during the 3 min of habituation before the shocks (encoding, in blue), at recent (in green) or remote (in red) memory recalls, for the animals undergoing CFC (shock, filled) and the control groups that were exposed to the CFC chamber without the shock (no shock, clear). Two-tailed unpaired t-tests, ****: p<0.0001. At recent recall, Cohen’s d=2.48; at remote recall, Cohen’s d=4.24. (C) Representative images of cFos immunostainings in the medial prefrontal cortex (mPFC). Scale: 250 µm. (D–F) Percentage of cFos over DAPI in (D) PL (one-way-ANOVA, F(5, 63)=9.172, p<0.0001), (E) anterior cingulate cortex (ACC) (one-way ANOVA, F(5, 63)=4.394, p=0.0017) and (F) infralimbic cortex (IL) (one-way ANOVA, F(5, 65)=13.34, p<0.0001). (D–F) Stars represent least significant p-values of Tukey’s multiple comparisons tests: *: 0.01 < p < 0.05; **: 0.001 < p < 0.01. n=11–13 animals per group.
 
 We then quantified cFos expression in the three subregions of the mPFC (Figure 1C) 90 min after the corresponding behavioral session. We found that while all regions were more active at encoding than during the memory recalls, only in the PL did we observe a significant increase in cFos compared to the no shock control groups (Figure 1C–F). These results indicate that the mPFC as a whole, and the PL in particular, are activated by the encoding of a contextual fear memory. In turn, this finding suggests an important role of the PL already during this early phase of memory consolidation, which is coherent with the formation of engram cells in the PL at the time of encoding (DeNardo et al., 2019; Kitamura et al., 2017; Matos et al., 2019).
 
-## Brain-wide screen of PL engram inputs
+### Brain-wide screen of PL engram inputs
 
 Next, we aimed to identify PL inputs that could be responsible for this peaked PL activity at encoding and for the establishment of its engram during memory consolidation (DeNardo et al., 2019; Kitamura et al., 2017; Matos et al., 2019). To this end, we employed an activity-dependent monosynaptic retrograde tracing technique (Figure 2A and B). Specifically, we used the TRAP2 mouse line (DeNardo et al., 2019), in which the Fos promoter drives the expression of the tamoxifen-dependent CreERT2 recombinase. These mice were first injected in the PL with helper adeno-associated viruses (AAVs) expressing Cre-dependent nuclear GFP, the TVA receptor, and the optimized rabies glycoprotein oG. Thereby, the expression of these proteins in PL engram cells could be triggered with tamoxifen injection at the time of encoding. Three weeks post-encoding, we injected a modified rabies vector RV∆G-mCherry (Wickersham et al., 2007) that can only infect and replicate in TVA- and oG-expressing cells, respectively, allowing us to transsynaptically label all monosynaptic inputs of PL engram cells (Figure 2B). As expected, we found that tamoxifen injection increased the number of starter cells expressing both GFP and mCherry in PL compared to vehicle (Figure 2C–E), confirming the specificity of these tools to restrict tracing to PL engram cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig2-v1.jpg)
+
+**Figure 2.:** (A–B) Experimental design and timeline. Fos-CreERT2 animals were first injected in the PL with helper adeno-associated viruses (AAVs) expressing GFP, TVA receptor, and oG (rabies optimized glycoprotein) in a Cre-dependent manner. Tamoxifen (or vehicle for control) was injected right after contextual fear conditioning (CFC) to trigger recombination in cFos+ cells. Three weeks later, a modified rabies virus (RV∆G-mCherry with EnvA coating) was injected in PL where it infected TVA-expressing cells, replicated in oG-expressing cells, and was retrogradely transsynaptically transported. A week later, brains were collected to quantify monosynaptic inputs of PL engram cells labelled with mCherry. (C, D) Representative images of the PL injection site (scale 400 µm) and magnified view of starter cells (scale 20 µm) with tamoxifen (C) or vehicle (D) injection. (E) Percentage of starter cells over DAPI in PL. (F) Representative images of traced cells throughout the brain (scale 500 µm). (G) Magnified views of traced cells (scale 100 µm) in claustrum (CLA) (inset 1), insular cortex (INS) (1), basolateral amygdala (BLA) (2), retrosplenial cortex (RSP) (3), ventral CA1 (vCA1) (4), and entorhinal cortex (EC) (5). (H) Brain-wide quantification of traced cells, normalized by the number of starter cells for each animal, in the medial prefrontal cortex (mPFC) subregions (left) and the rest of the brain (right). Tamoxifen: n=3 animals; vehicle: n=2 animals.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Percentage of traced cells (mCherry+ only) in all regions with tamoxifen (top, n=3 animals) or vehicle (bottom, n=2 animals).
 
 We then quantified the percentage of traced cells (mCherry+) throughout the brain (Figure 2F–H). Although most traced cells were found in the mPFC itself and its neighboring areas (orbitofrontal cortex, OFC, and dorsal peduncular area, DP, Figure 2H), we observed traced inputs in several other brain regions, notably the claustrum (CLA, Figure 2G inset 1), insular cortex (INS, inset 1), basolateral amygdala (BLA, inset 2), retrosplenial cortex (RSP, inset 3), CA1 field of the HPC (mostly the ventral part, inset 4), taenia tecta (TT), thalamus polymodal association cortex-related areas (DORpm), subiculum (SUB), and to a lesser extent the entorhinal cortex (EC, inset 5). Without tamoxifen injection, traced cells were negligible (Figure 2—figure supplement 1), which further confirms the rabies tracing specificity.
 
 With this approach, we identified relevant PL inputs that might be responsible for the development of the PL engram cell population, but we still lacked information on whether, when, and the extent to which these inputs are activated across memory consolidation.
 
-## PL inputs are differentially activated across memory consolidation
+### PL inputs are differentially activated across memory consolidation
 
 Out of the regions projecting to PL engrams, we selected six brain areas with consistent input tracing for further investigation, because of their previously documented implication in various aspects of fear memory: The EC, for its role in memory formation (Roy et al., 2017) and its known projection to the mPFC necessary at encoding (Kitamura et al., 2017) and retrieval (Pilkiw et al., 2022); the RSP for its necessity for recent (Cowansage et al., 2014) and remote fear memory recall (Todd et al., 2016); the INS for its requirement during the consolidation and expression of contextual fear memories (Alves et al., 2013), as well as for its regulation of fear expression (Gehrlach et al., 2019; Klein et al., 2021); vCA1 for its importance for CFC encoding (Kim and Cho, 2020) and recent recall (Jimenez et al., 2020); the BLA for the role of BLA to PL projections in memory encoding (Kitamura et al., 2017; Klavir et al., 2017) and PL to BLA projections in memory recall (Do-Monte et al., 2015; Kitamura et al., 2017); and the CLA as CLA to EC projections are necessary during memory encoding (Kitanishi and Matsuo, 2017) and for its involvement in attention (Atlan et al., 2018).
 
 To assess the relative activity of these PL inputs during fear memory consolidation, we needed a tracing technique that could be coupled with neuronal activity measurements from encoding to remote recall, which cannot be achieved with rabies tracing from engram cells. Therefore, we combined conventional retrograde tracing with neuronal activity-dependent cFos staining: Injection of AAVretro-GFP in PL prior to any behavioral test allowed to trace all anatomical projections to the PL (Figure 3A and B), while cFos IHC 90 min after CFC encoding, recent and remote memory recall allowed to assess the activation of these projections (Figure 3A). In each region we measured cFos as well as GFP-traced inputs (Figure 3—figure supplements 1 and 2), thus controlling for homogenous tracing across behavioral groups. Next, we compared the pattern of activation between PL projectors only and the region as a whole to highlight the specific recruitment of PL projectors, and we focused on the associative information conveyed in this activity by normalizing it to the no shock control groups (Figure 3, see Figure 3—figure supplements 1 and 2 for quantifications only normalized to chance level).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design, injection of AAVretro-GFP in the PL for input tracing, and quantification of activation by cFos immunostaining 3 weeks later at either contextual fear conditioning (CFC) encoding (blue), recent (green), or remote (red) recall. Brains were collected 90 min after the behavior session. (B) Representative image of AAVretro-GFP injection site in the PL region of the medial prefrontal cortex (mPFC). Scale: 500 µm. (C–Z) For each region: Representative image of PL input tracing, magnified view of GFP and cFos at encoding, recent, and remote time points (all scales: 20 µm); quantifications of cFos in PL projections and total cFos in the input region, expressed as fold change to the no shock control group. Note that cFos in PL projections values were first normalized by chance level for each animal (see Figure 3—figure supplement 1). (C–F) EC (C, scale 500 µm), (E) cFos in EC → PL (one-way ANOVA, F(2,25)=8.153, p=0.0019) and (F) total cFos. (G–J) RSPag (G, scale 400 µm), (I) cFos in RSPag → PL (one-way ANOVA, F(2,35)=3.275, p=0.0497) and (J) total cFos (one-way ANOVA, F(2,35)=3.275, p=0.0497). (K–N) INS (K, scale 500 µm), (M) cFos in INS → PL (one-way ANOVA, F(2,27)=5.405 p=0.0106) and (N) total cFos (one-way ANOVA, F(2,35)=4.583, p=0.0171). (O–R) vCA1 (O, scale 400 µm), (Q) total cFos and (R) cFos in vCA1 → PL. (S–V) basolateral amygdala (BLA) (S, scale 500 µm), (U) cFos in BLA → PL (one-way ANOVA, F(2,28)=4.922, p=0.0147) and (V) total cFos. (W–Z) claustrum (CLA) (W, scale 500 µm), (Y) cFos in CLA → PL (one-way ANOVA, F(2,34)=4.502, p=0.0184), and (Z) total cFos (one-way ANOVA, F(2,35)=3.833, p=0.0313). Stars represent p-values of Tukey’s multiple comparisons tests (*: 0.01 < p < 0.05; **: 0.001 < p < 0.01), hashtag signs represent p-values of two-tailed one-sample t-tests comparing the difference to 1, which represents levels of the no shock controls (#: p≤0.05; ##: 0.001 < p ≤ 0.01; ###: p≤0.001). n=9–13 animals per group.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** All representative images (from Figure 3) for EC (A), RSPag (E), and INS (I), scale 20 µm. Total cFos percentage in EC (B, one-way ANOVA, F(5,53)=5.075, p=0.0007), RSPag (F, one-way ANOVA, F(5,67)=4.156, p=0.0024) and INS (J, one-way ANOVA, F(5,64)=2.971, p=0.0179). Distribution of traced PL inputs across behavioral groups in EC (C, one-way ANOVA, F(5,55)=2.794, p=0.0255), RSPag (G), and INS (K). Double positives (cFos+GFP+) normalized to chance levels in EC (D), RSPag (H, one-way ANOVA, F(5,61)=4.618, p=0.0012), and INS (L, one-way ANOVA, F(5,52)=4.312, p=0.0023). Stars represent p-values of Tukey’s multiple comparisons tests (*:p ≤ 0.05; **: 0.001 <p ≤ 0.01, ***: 0.0001 < p ≤ 0.001, ****: p ≤ 0.0001). n=9–13 animals per group.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** All representative images (from Figure 3) for vCA1 (A), BLA (E), and CLA (I), scale 20 µm. Total cFos percentage in vCA1 (B, one-way ANOVA, F(5,66)=9.298, p<0.0001), BLA (F) and CLA (J, one-way ANOVA, F(5,66)=3.593, p=0.0062). Distribution of traced PL inputs across behavioral groups in vCA1 (C), BLA (G), and CLA (K). Double positives (cFos+GFP+) normalized to chance levels only in vCA1 (L), BLA (H), and CLA (L, one-way ANOVA, F(5,63)=2.282, p=0.0570). Stars represent p-values of Tukey’s multiple comparisons tests (*:p ≤ 0.05; **: 0.001 <p ≤ 0.01, ***: 0.0001 < p ≤ 0.001, ****: p ≤ 0.0001). n=9–13 animals per group.
 
 We first investigated cortical areas projecting to the PL: EC (specifically layer 5, comprising most of EC traced cells, Figure 3C), RSPag (which contained most of RSP traced cells, Figure 3G), and INS (Figure 3K). In the EC, we observed a significant activation of PL projections at encoding compared to both recent and remote recalls (Figure 3E), which was not the case in total cFos quantifications (Figure 3F). This suggests a specific recruitment of EC neurons projecting to PL (EC → PL) at encoding. In contrast, RSPag and INS displayed a different pattern of activation, as there was no activation in RSPag → PL and INS → PL projections at encoding, but during recent memory recall (Figure 3I and M, respectively). Compared to total cFos in both regions, this activity was again specific to PL projectors (Figure 3J and N, respectively).
 
@@ -57,9 +77,25 @@ Second, we investigated PL inputs in subcortical areas: vCA1 (Figure 3O), BLA (F
 
 Taken together, we found that PL inputs from the EC, BLA, and CLA were active only at encoding, while RSPag and INS projections were recruited during recent memory recall.
 
-## PL inputs are functionally relevant at different stages of memory consolidation
+### PL inputs are functionally relevant at different stages of memory consolidation
 
 Next, in order to establish whether the differential activity in PL inputs across memory consolidation is also functionally relevant, we selectively inhibited each projection at the time(s) when they were most active and tested subsequent memory retention. We used the designer receptor exclusively activated by designer drug (DREADD) receptor hM4Di, which upon clozapine-N-oxide (CNO, the DREADD agonist) administration inhibits neuronal activity (Roth, 2016). We targeted hM4Di expression to specific PL inputs by injecting AAVretro-Cre into the PL, and AAV-DIO-hM4Di-mCherry (or AAV-DIO-mCherry for controls) in the desired input region (Figure 4A–F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig4-v1.jpg)
+
+**Figure 4.:** (A) Experimental design. AAVretro-Cre was injected in the PL, and AAV-DIO-hM4Di-mCherry (or AAV-DIO-mCherry for controls) in the desired input region in order to specifically inhibit the projections to the PL upon clozapine-N-oxide (CNO) injection. Representative images of the injection site in the input region for CLA (B), basolateral amygdala (BLA) (C), entorhinal cortex (EC) (D), RSPag (E), and insular cortex (INS) (F), all scales 500 µm. Experimental timeline and freezing percentage of (G) CLA → PL inhibition during encoding (at recent recall, Cohen’s d=–0.95), (H) BLA → PL inhibition during encoding (at remote recall, Cohen’s d=–1.02), (I) EC → PL inhibition during encoding (at remote recall, Cohen’s d=–0.84), (J) RSPag → PL inhibition during recent recall, (K–L) INS → PL inhibition during recent (Cohen’s d=–0.83) (K) and remote (L) recall. Stars represent p-values of two-tailed unpaired t-tests between hM4Di and control groups (*: p≤0.05). n=8–17 animals per group.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Experimental design: AAVretro-Cre was injected in the PL and AAV-DIO-hM4Di-mCherry in the CLA, to express hM4Di specifically in CLA → PL projections. (B) Timeline of the experiment. Clozapine-N-oxide (CNO) was injected 30 min before contextual fear conditioning (CFC), and mice were perfused 90 min later for cFos immunohistochemistry (IHC). (C) Representative images of CNO and vehicle-injected groups, in the CLA. hM4Di in orange, cFos in light pink. Arrows indicate double positive hM4Di+cFos+ cells. Scale 20 µm. (D) Quantification of hM4Di+ in CLA. (E) Quantification of cFos+ in CLA. (F) Quantification of double positive hM4Di+cFos+ cells in CLA, normalized to chance. Star represents p-value of two-tailed unpaired t-test between CNO and vehicle groups (*: p≤0.05). Vehicle: n=5 animals; CNO: n=9 animals.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Experimental design: AAVretro-Cre was injected in the PL and AAV-DIO-hM4Di-mCherry in the CLA (or AAV-DIO-mCherry for controls), to express hM4Di (or mCherry) specifically in CLA → PL projection. (B) Experimental timeline and freezing percentage for CLA → PL inhibition after encoding. Clozapine-N-oxide (CNO) was injected i.p. after contextual fear conditioning (CFC), and every 2 hr, for a total of four injections. n=7–8 per group. (C) Experimental timeline of the open field test, 30 min after a single CNO injection, measuring (D) time spent in the periphery or center of the arena, (E) velocity, and (F) total distance moved. n=8 per group.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Experimental design. AAVretro-Cre was injected in the PL and AAV-DIO-hM4Di-mCherry in the RSPag (or AAV-DIO-mCherry for controls), to express hM4Di (or mCherry) specifically in RSPag → PL projection. (B) Experimental timeline and freezing percentage for RSPag → PL inhibition at recent recall. Recalls 2 and 3 were done in absence of clozapine-N-oxide (CNO) injection. n=8–9 per group.
 
 First, we assessed the functionality of projections that were active at encoding, namely the CLA, BLA, and EC. For the CLA → PL inhibition, we observed an impaired memory at recent recall (Figure 4G). To confirm that CNO indeed inhibits hM4Di-expressing neurons, we expressed it in CLA → PL neurons (Figure 4—figure supplement 1A) and perfused the animals 90 min after CFC to stain for cFos (Figure 4—figure supplement 1B, C). While the percentages of hM4Di+ and cFos+ cells were equivalent in both groups (Figure 4—figure supplement 1D, E), the amount of double positive hM4Di+cFos+ cells was significantly decreased with CNO injection, confirming the inhibition of projection neurons during behavior (Figure 4—figure supplement 1F). Furthermore, this behavioral result was not due to a delayed effect of CNO injection, as inhibiting CLA → PL projections right after encoding did not result in impaired memory at any time point (Figure 4—figure supplement 2A,B). Likewise, the effect of CLA → PL inhibition was not due to an unspecific effect on locomotion and exploratory behavior as tested in an open field arena (Figure 4—figure supplement 2C-E). In contrast to the effect of CLA → PL inhibition, when BLA → PL and EC → PL projections were inhibited during encoding, we observed an impairment of remote memory recall for both, while recent recall was unaffected (Figure 4H, I, respectively). These results indicate that while the BLA → PL and EC → PL projections are important at encoding for the consolidation of remote memories, as shown previously (Kitamura et al., 2017), the CLA → PL projection is important at encoding for recalling recent memories.
 
@@ -69,9 +105,25 @@ Conversely, INS → PL projection inhibition during recent recall resulted in de
 
 Taken together, these findings indicate that CLA, BLA, and EC projections to the PL are required at encoding for proper memory formation, but with different time implications. While the BLA and EC connections are important for recalling remote memories, the CLA projection is specifically important for recalling recent ones. In addition, recent memory recall is also under the influence of the INS → PL projection, since its inhibition at this time led to significant memory impairment. This suggests a progressive functional shift in PL projections regulating memory consolidation.
 
-## PL engram reactivation correlates with memory retrieval when CLA or INS inputs are inhibited
+### PL engram reactivation correlates with memory retrieval when CLA or INS inputs are inhibited
 
 Lastly, we decided to further investigate the effect of CLA and INS input inhibition on engram reactivation in the PL. We hypothesized that if the inhibition of a specific PL input results in memory impairment, then the reactivation of the original PL engram, established at the time of memory encoding, may also be altered. Indeed, engram reactivation has been correlated with memory retention in BLA (Reijmers et al., 2007), and artificial engram reactivation in the PL (Kitamura et al., 2017) or HPC (Liu et al., 2012) has been found to trigger memory recall. In order to measure engram reactivation, we used the Fos::tTA mouse line (Reijmers et al., 2007), expressing the doxycycline (Dox)-dependent tTA transcription factor under the Fos promoter, which we injected with AAV-TRE-GFP into the PL 3 weeks before CFC (Figure 5A). As tTA specifically binds the TRE (tetracycline responsive element) promoter in the absence of Dox, this approach allows for inducible long-term expression of GFP in PL engram cells during a desired time-window (Figure 5B, C). In combination with chemogenetic inhibition of projection neurons as previously described (Figure 4), we then silenced selective PL inputs and assessed the degree of engram reactivation between CFC encoding and recall, by measuring cFos and GFP overlap in the PL (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig5-v1.jpg)
+
+**Figure 5.:** (A) Experimental design. 3 weeks before behavior started, Fos::tTA mice were injected with AAVretro-Cre in PL and AAV-DIO-hM4Di-mCherry in the desired input region, as well as AAV-TRE-GFP in the PL, so that GFP was only expressed in cFos+ cells in the absence of doxycycline (Dox). (B) GFP expression at the PL injection site (scale 400 µm). (C) Magnified view in the PL (scale 20 µm) of reactivated engram cells, indicated by white arrows. (D) Representative image of the CLA input region. (E) Experimental timeline (top) and freezing percentage (bottom) during recent memory recall when CLA → PL projections were inhibited during encoding (Cohen’s d=–0.87). (F) Reactivation of PL engram cells (%GFP+cFos+/GFP+) at recent recall for CLA → PL inhibition, correlated with freezing percentage at recent recall for clozapine-N-oxide (CNO) (orange) and vehicle (gray) groups. (G) Representative image of the INS input region. (H) Experimental timeline (top) and freezing percentage (bottom) during recent memory recall when INS → PL projections were inhibited during recent recall (Cohen’s d=–1.33). (I) Reactivation of PL engram cells (%GFP+cFos+/GFP+) at recent recall for INS → PL inhibition, correlated with freezing percentage at recent recall for CNO (orange) and vehicle (gray) groups. (E, H) Stars represent p-values of two-tailed unpaired t-tests between CNO and vehicle groups (*: p≤0.05). (F, I) Correlations assessed with linear regressions, R2 and p-values are reported on the graphs. n=11–12 (CLA) or 5–9 (INS) per group.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) For claustrum (CLA) → PL inhibition during encoding, percentage of (A) GFP+ cells, (B) cFos+ cells, (C) double positive GFP+cFos+ cells normalized to chance and (D) reactivation expressed as %GFP+cFos+/GFP+. (E–H) For insular cortex (INS) → PL inhibition during recent recall, percentage of (E) GFP+ cells, (F) cFos+ cells, (G) double positive GFP+/cFos+ cells normalized to chance and (H) reactivation.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative image of the CLA input region. (B) Timeline and freezing percentage of CLA → PL inhibition during encoding and tested at remote recall. (C) Reactivation of PL engram cells (%GFP+cFos+/GFP+) at remote recall, correlated with freezing percentage for clozapine-N-oxide (CNO) (orange) and vehicle (gray) groups. Percentage of (D) GFP+, (E) cFos+, (F) double positives GFP+cFos+ normalized to chance and (G) reactivation as %GFP+cFos+/GFP+. Correlation assessed with linear regression, R2 and p-value are reported on the graphs. n=5–6.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/78542/elife-78542-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Experimental design. Fos::tTA mice were injected with AAVretro-Cre in PL and AAV-DIO-mCherry in the claustrum (CLA), as well as AAV-TRE-GFP in prelimbic cortex (PL). (B) Experimental timeline and freezing percentage at recent memory recall following CNO or vehicle administration at encoding. (C) Reactivation of PL engram cells (%GFP+cFos+/GFP+) at recent recall showed no correlation with freezing for the CNO (orange) and vehicle (gray) groups. n=7 animals per group.
 
 First, we focused on the CLA → PL inhibition at memory encoding (Figure 5D). Behaviorally, this approach confirmed the impaired memory at recent memory recall as observed in WT mice (Figure 5E, see also Figure 4G). Furthermore, we found a significant correlation between PL engram cells reactivation, measured as double positive GFP+cFos+ cells normalized to the total number of GFP+ cells, and freezing at recent recall, which was observed only in the CNO group (Figure 5F). No differences were observed in overall GFP+, cFos+, double positive GFP+cFos+, and total reactivation percentages in PL between CNO- and vehicle-treated animals. (Figure 5—figure supplement 1A–D). In contrast, when we inhibited the CLA → PL projection during encoding and tested remote recall, memory was not impaired (Figure 5—figure supplement 2B, see also Figure 4G) and we observed no effect on PL engram reactivation (Figure 5—figure supplement 2C–G). Importantly, this correlation was not a side effect of CNO injection as we observed no behavioral nor engram reactivation differences in control virus-injected animals receiving vehicle or CNO (Figure 5—figure supplement 3A–C). This result indicates that CLA → PL inhibition during encoding modifies PL engram reactivation at recent recall only, and that following this inhibition, the less animals reactivate the original PL engram, the less they recall the fear memory.
 
@@ -101,53 +153,53 @@ These limitations notwithstanding, here we have shown that PL circuits undergo a
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All animals and procedures used in this study were approved by the Veterinary Office of the Federal Council of Switzerland under the animal experimentation licenses VD2808.1 and VD2808.2. C57Bl/6JR WT male mice were purchased from Janvier Labs (France) around 6–7 weeks of age and left for at least 1 week before the beginning of the experiments. Fos::CreERT2 (TRAP2) animals were bred in house from the original JAX strain #030323 on a C57Bl/6JR background. Fos::tTA male mice were bred in house from the original JAX strain #018306 on a C57Bl/6JR background. Animals were housed in a 12 hr light/dark cycle with water and food available ad libitum. All animals were group-housed except for the input tracing experiment where they were single caged 2 days before the end of the experiment. They were all handled by the experimenter for at least 3 days before the first behavioral procedure to reduce stress levels.
 
 All behavioral procedures were performed between 1 pm and 5 pm local time and animals were randomly assigned to experimental groups.
 
-## Viral stereotaxic injections
+### Viral stereotaxic injections
 
-## Procedure
+#### Procedure
 
 At 7–8 weeks, animals were anesthetized with a mix of fentanyl (0.05 mg/kg), midazolam (5 mg/kg), and metedomidin (0.5 mg/kg), i.p. After shaving and subcutaneous injection of a local anesthetic mix (lidocaine 6 mg/kg and bupivacaine 2.5 mg/kg), the animal was placed on a stereotaxic frame. The skin was disinfected with betadine and opened with a scalpel. The skull was thoroughly cleaned, the orientation of the head was adjusted, and holes were drilled at the desired coordinates with a 0.5 mm drill bit. The virus was loaded into pulled glass capillaries (intraMARK, Blaubrand, tip diameter 10–20 µm), and injected to the target area at a speed of 100 nL/min. The needle was left in place for 5 min, and slowly pulled up to limit backflow. After all injections were done, the skin was sutured (5/0 Prolene, Ethicon), the animal was injected i.p. with atipamezol (2.5 mg/kg) to reverse the anesthesia, and placed back in a heated cage. After surgery, the animals were administered paracetamol in the drinking water for a week (Dafalgan, 1 mg/mL).
 
-## Viruses
+#### Viruses
 
 The following viruses were used in this study:
 
-## Injection coordinates from bregma
+#### Injection coordinates from bregma
 
 For input tracing experiment with AAVretro-GFP, animals were injected unilaterally. For all other experiments, animals were injected bilaterally.
 
-## Behavioral procedures
+### Behavioral procedures
 
-## Contextual fear conditioning
+#### Contextual fear conditioning
 
 CFC encoding and recall were performed in the same chamber (TSE Systems). CFC encoding consisted in a first 3 min exploration phase, followed by three 2 s long 0.8 mA footshocks spaced by 28 s. After the last shock, the animal was left in the chamber for an additional 15 s and brought back to its home cage. The recall consisted in a 3 min exposure to the same context, without any shock. For all experiments except the engram reactivation, recent recall took place 1 day after the encoding and remote recall 14 days later. For the engram reactivation experiment, recent recall took place 2 days after the encoding, to leave enough time for GFP expression. The movement of the animals was automatically measured using an infrared beam cut detection system (TSE Systems). Freezing detection threshold was set at 1 s of immobility. No shock control animals underwent the same procedure but did not receive any shocks. Animals without any chemogenetic manipulation were excluded if they froze less than 20% of the time during the recall (in total two animals were excluded in all experiments).
 
-## Tamoxifen injection
+#### Tamoxifen injection
 
 In the rabies tracing experiment, TRAP2 mice were injected i.p. with tamoxifen (4-hydroxytamoxifen, Sigma-Aldrich, CAS 68392-35-8, 50 mg/kg) immediately after CFC. Tamoxifen was prepared as follows: powdered tamoxifen was dissolved in ethanol 100% at a concentration of 20 mg/mL and stored at –20°C. On the day of the experiment, tamoxifen was re-dissolved by shaking at 37°C, 2 volumes of corn oil were added and ethanol was evaporated shaking at 37°C, for a final concentration at 10 mg/mL. Tamoxifen was kept at 37°C until injection to prevent precipitation.
 
-## Chemogenetic inhibition
+#### Chemogenetic inhibition
 
 In these experiments, mice were injected i.p. with CNO (Sigma-Aldrich, CAS 34233-69-7, 3 mg/kg) 30 min before the desired behavioral phase. CNO was prepared as follows: 5 mg of CNO were resuspended in 50 µL of DMSO and stored at –20°C. On the day of the experiment, CNO was diluted 1/500 in NaCl to reach a concentration of 0.2 mg/mL, and injected at the desired volume. In the engram reactivation experiment, control animals were injected with an equivalent volume of vehicle i.p. (0.9% NaCl, B. Braun, and 1/500 DMSO).
 
-## Open field test
+#### Open field test
 
 For CNO control experiments, 30 min after CNO injection the animals were placed in a large circular arena and left to freely explore for 15 min. Video-tracking of the animals and locomotion quantification was automatically performed using the EthoVision software (Noldus).
 
-## Engram reactivation
+#### Engram reactivation
 
 Fos::tTA mice were administered Dox (Sigma-Aldrich, CAS 24390-14-5) in the drinking water at 0.2 mg/mL. Dox was prepared as follows: Powdered Dox was resuspended in water from the animal facility at 50 mg/mL, aliquoted and frozen at –20°C until further use. It was then diluted in water bottles to reach a concentration of 0.2 mg/mL. Dox was administered at least 3 weeks before the behavioral protocol started, and was refreshed every week. In order to open the tagging-window, Dox was removed 2 days before encoding, and administered back right thereafter for the remaining time of the protocol.
 
-## Sample size and behavioral replicates
+#### Sample size and behavioral replicates
 
 No statistical method was used to predetermine sample size. The number of animals used in each experiment was the minimum required to obtain statistical significance, based on our experience with this behavioral paradigm and in agreement with standard literature. Data from the input tracing experiment was pooled from three independent batches (Figures 1 and 3 and their supplements). Data from the rabies tracing experiment comes from one batch (Figure 2 and its supplement). Data from the chemogenetic manipulation in WT was pooled from at least two independent batches for each manipulation (Figure 4). Data from the CNO controls comes from one batch each (Figure 4—figure supplements 1 and 2C–F). Data from the engram reactivation was pooled from one to two batches (Figure 5 and its supplements). In all graphs, one dot represents one animal.
 
-## Histology
+### Histology
 
 Ninety min after the last behavioral test, animals were anesthetized with pentobarbital (150 mg/kg, Streuli Pharma) and transcardially perfused with first 1× PBS and then 4% paraformaldehyde (PFA) in 1× PBS. Brains were extracted, post-fixed overnight in 4% PFA, transferred in cryoprotectant (30% sucrose in 1× PBS) for at least 48 hr, and frozen at –80°C. Sections of 20 µm were cut using a cryostat and kept free-floating in an antifreeze solution (30% ethylene glycol, 15% sucrose, 0.02% azide in 1× PBS) until staining.
 
@@ -161,7 +213,7 @@ For the rabies tracing experiment, one every four sections of 20 µm were mounte
 
 For simplicity and clarity in the text, we used ‘DAPI’ to refer to nuclei stained with Hoechst.
 
-## Image analysis
+### Image analysis
 
 Images were analyzed using QuPath (v0.1.4 to v0.3.1) (Bankhead et al., 2017), by an experimenter blinded to the groups.
 
@@ -173,6 +225,6 @@ For the chemogenetic manipulation experiments (Figures 4–5), animals were excl
 
 For engram reactivation experiments (Figure 5), cFos+ and GFP+ cells were quantified in PL using the QuPath custom-built script, in three to four sections per animal. Animals were excluded from further analysis if the percentage of GFP was below 1%.
 
-## Statistics
+### Statistics
 
 All statistics and graphical representations were done with GraphPad Prism 9. All data are represented in mean ± SEM, with one dot representing one animal in all graphs. Data from the input tracing screen were analyzed using ordinary one-way ANOVAs, and further comparisons were performed with Tukey’s multiple comparisons tests between all groups (alpha = 0.05). In case of normalizations, difference to 1 was analyzed using two-tailed one-sample t-tests (alpha = 0.05). Data from the chemogenetic manipulation and engram reactivation experiments were analyzed using two-tailed unpaired t-tests between the two groups (alpha = 0.05), and correlations were assessed with simple linear regressions. Statistical differences in freezing percentage are all accompanied by a measure of the effect size with a calculation of Cohen’s d.

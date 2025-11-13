@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02fa3aq29 McMaster Immunology Research Centre, Department of Medicine, M.G. DeGroote Institute for Infectious Disease Research, McMaster University Hamilton Canada
+1. McMaster Immunology Research Centre, Department of Medicine, M.G. DeGroote Institute for Infectious Disease Research, McMaster University Hamilton Canada ([ROR:02fa3aq29](https://ror.org/02fa3aq29))
 
 † Corresponding author
 
@@ -72,7 +72,103 @@ The field of remote immune modulation of lung-resident macrophages represents a 
 
 In the past decade, systemic – and more recently, local – immunological exposure to various microbial components, vaccines, and infections has been shown to alter the innate immune cell compartment, specifically within the tissue-resident macrophage population at mucosal sites (Netea et al., 2016; Xing et al., 2020). It is known that such immune or inflammatory memory within the innate immune cell compartment can result in a strengthened immune response leading to enhanced innate immune protection against either a homologous or heterologous pathogen/entity (Table 1). As described in the Introduction, the altered innate immune protective outcome resulting from innate immune memory is referred to as TII. Since locally or centrally induced TII is capable of heightened innate immune responses and protection against a broad range of pathogens and entities in the lung, its protective mechanisms may vary widely and are thus worthy of separate considerations.
 
-## TII against respiratory bacterial infections
+**Table 1.**
+ The outcome of systemic and/or local immunological exposure-induced trained innate immunity (TII) in different pathological conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Barrier tissue site</th>
+      <th>Pathology</th>
+      <th>Outcome</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Lung</td>
+      <td rowspan="2">Pneumonia</td>
+      <td>Protection</td>
+      <td>Kang et al., 2024a; Kang et al., 2023; Yao et al., 2018; Zahalka et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Promotes disease</td>
+      <td>Roquilly et al., 2020</td>
+    </tr>
+    <tr>
+      <td>TB</td>
+      <td>Protection</td>
+      <td>Bickett et al., 2020; D’Agostino et al., 2020; Jeyanathan et al., 2022b; Moorlag et al., 2020</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Influenza</td>
+      <td>Protection</td>
+      <td>Kaufmann et al., 2022; Khan et al., 2025; Lercher et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Promotes disease</td>
+      <td>Li et al., 2022a</td>
+    </tr>
+    <tr>
+      <td>COVID-19</td>
+      <td>Protection</td>
+      <td>Afkhami et al., 2022; Hilligan et al., 2022; Oyesola et al., 2023; Zhang et al., 2022</td>
+    </tr>
+    <tr>
+      <td>Helminth</td>
+      <td>Protection</td>
+      <td>Chen et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Lung cancer</td>
+      <td>Protection</td>
+      <td>Wang et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Genital tract</td>
+      <td>Bladder cancer</td>
+      <td>Protection</td>
+      <td>Daman et al., 2025; Jurado et al., 2025</td>
+    </tr>
+    <tr>
+      <td>Skin</td>
+      <td>Staph infection</td>
+      <td>Protection</td>
+      <td>Chan et al., 2018; Chan et al., 2017; Feuerstein et al., 2020</td>
+    </tr>
+    <tr>
+      <td>GI tract</td>
+      <td>Salmonella</td>
+      <td>Protection</td>
+      <td>Ahrends et al., 2021</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Peritoneal cavity</td>
+      <td>Staph infection</td>
+      <td>Protection</td>
+      <td>Yoshida et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Peritonitis</td>
+      <td>Protection</td>
+      <td>Ciarlo et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Endometriosis</td>
+      <td>Protection</td>
+      <td>Jeljeli et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Oral cavity</td>
+      <td>Periodontitis</td>
+      <td>Promotes disease</td>
+      <td>Li et al., 2022b</td>
+    </tr>
+  </tbody>
+</table>
+
+### TII against respiratory bacterial infections
 
 Both systemic and local exposure to vaccines and microbial stimuli can induce TII in lung-resident macrophages against heterologous pneumococcal pneumonia, leading to enhanced protection (Kang et al., 2024a; Kang et al., 2023; Yao et al., 2018; Zahalka et al., 2022). Such enhanced antibacterial TII against acute pulmonary S. pneumoniae infection observed in murine models was driven by heightened bactericidal activity of trained AMs, increased chemokine responses, and accelerated pulmonary neutrophilia during the early phases of bacterial infection. This led to improved clinical disease outcomes and accelerated bacterial clearance, improving overall survival. This TII-mediated enhanced protection against pneumococcal pneumonia was independent of circulating monocytes. Pneumococcal pneumonia is a major infectious respiratory disease that mainly affects young children and the elderly (Brooks and Mias, 2018). Current human serotype-specific polysaccharide vaccines are designed for intramuscular administration and aim to elicit adaptive antibody responses and may select for the dominance of new strains/serotypes capable of immune evasion. New vaccination strategies must be designed to overcome this limitation and provide serotype-independent protection; one such approach involves complementing such adaptive immune responses with the induction of innate immune memory and TII.
 
@@ -80,7 +176,7 @@ Local lung β-glucan administration in mice induces low-grade pulmonary inflamma
 
 Respiratory mucosal vaccination with a recombinant Ad-vectored TB vaccine in mice induced trained AMs, which protect against the intended target Mtb infection by controlling bacterial growth during the early stages of infection and improving disease outcomes (D’Agostino et al., 2020). Akin to this, systemic BCG-induced trained AMs also protected against acute Mtb infection (Bickett et al., 2020; Jeyanathan et al., 2022b). In both cases, such TII linked to enhanced homologous protection against Mtb was independent of circulating monocytes and dependent on trained AMs. In addition, systemic β-glucan-induced TII has been linked to protection against pulmonary Mtb infection via IL-1 signaling, but the contribution of trained tissue-resident macrophages in such TII against TB was not examined in this experimental model (Moorlag et al., 2020). The IL-1 signaling axis has been widely described as a critical mediator of TII, and the availability of pharmacological antagonists, such as anakinra, warrants its inclusion as a mechanistic target for studies investigating innate immune memory.
 
-## TII against respiratory viral infections
+### TII against respiratory viral infections
 
 Respiratory viral infections, including IAV and SARS-CoV-2, are estimated to infect up to a billion people annually, causing millions of deaths. Over the course of various pandemics caused by these viral pathogens, current vaccination strategies that elicit strain-specific immunity failed to protect against rapidly emerging variants, as they evade antigen-dependent adaptive immunity. In this regard, emerging evidence suggests that locally or centrally induced TII can be exploited to offer enhanced innate immune protection against acute respiratory viral infection in the lung via enhancing disease tolerance (King and Divangahi, 2019; McCarville and Ayres, 2018). Enhanced disease tolerance is a host defense mechanism that operates by limiting tissue immunopathology for improved disease outcomes and host survival, without significant changes in microbial clearance or the magnitude of infection. Enhanced disease tolerance has been observed in a number of infectious disease models, including those of acute respiratory viral infection (Afkhami et al., 2022; Khan et al., 2025; Nahrendorf et al., 2021; Pernet et al., 2019). In particular, respiratory or parenteral induction of TII has been observed to protect against acute SARS-CoV-2 or influenza infection in the lung via enhanced viral disease tolerance (Afkhami et al., 2022; Khan et al., 2025). Of importance, such enhanced disease tolerance can be accomplished entirely independent of adaptive immune responses (Afkhami et al., 2022). In keeping with these preclinical observations, human vaccination with BNT162b2 mRNA vaccine induced long-term transcriptional changes in circulating PBMCs, which led to a dampened response upon ex vivo re-stimulation with a wide range of viral ligands (Föhse et al., 2023), implying a likely phenotype of enhanced viral disease tolerance.
 
@@ -88,19 +184,19 @@ On the other hand, a number of studies have demonstrated that locally or central
 
 Due to the limited understanding of training in airway-resident macrophages following local or systemic immunological exposure and TII against respiratory viral infections, their contribution to protection relative to centrally trained monocytes remains unclear and warrants further investigation. Likewise, a better understanding of the longevity of heterologous innate protection mediated by various stimuli-induced TII in the lung is required. Thus, the innate immune functional outcomes and mechanisms of respiratory mucosal Ad vaccine-induced TII may vary, depending on the nature of the heterologous challenge. We have found that local Ad-vectored vaccine-induced TII provides enhanced protection against SARS-CoV-2 infection, independent of lung viral burden via enhanced disease tolerance and regulation of inflammatory responses in the lung of mice (unpublished). Interestingly, although such respiratory mucosal Ad-induced TII provides enhanced protection against both SARS-CoV-2 and pneumococcal infection, a recent study shows that local LPS exposure-induced TII provides robust protection against pneumonia but extends minimal protection against acute respiratory SARS-CoV-2 infection (Kang et al., 2024a). While the exact mechanisms that explain such differential protection remain to be investigated, these findings suggest that locally induced TII is not created equal and that the operating mechanisms may differ according to microbial target cell types (extracellular bacteria target phagocytic macrophages, whereas viruses primarily infect epithelial cells).
 
-## TII and lung tissue repair
+### TII and lung tissue repair
 
 Less is known regarding TII against lung injury, specifically how TII regulates and resolves inflammation and tissue injury resulting from either infectious or noninfectious events. Following exposure to different microbial stimuli, trained tissue-resident macrophages exhibit increased efferocytosis, leading to better lung injury resolution (Chakraborty et al., 2023; Kang et al., 2024b). Trained AMs produce soluble mediators along with enhanced efferocytosis and increased levels of SIRT1 in lung epithelial cells of mice, leading to decreased apoptosis and the restoration of tissue homeostasis. However, the role of lipid mediators in TII against tissue injury remains to be investigated. Understanding the interaction between pro-resolving mediators produced by imprinted tissue-resident macrophages and TII in regulating tissue injury and repair could have important implications for developing therapeutic strategies against lung injury and fibrosis. On the other hand, recent findings demonstrate that systemic administration of β-glucan reprograms AMs via transcriptional and metabolic modifications and is independent of dectin-1 in murine models (Prevel et al., 2025). However, such trained AMs exacerbate lung injury following secondary exposure to LPS or poly(I:C), leading to severe acute lung injury. Thus, shedding light on the potential deleterious effects of TII on tissue injury requires further investigation.
 
-## T2 immunity and TII in helminth infection
+### T2 immunity and TII in helminth infection
 
 Recent studies have shown that innate immune memory and TII in circulating monocytes, epithelial cells, and, to a lesser extent, tissue-resident macrophages, can also be linked to T2 inflammation in cases of allergic asthma (Hartung and Esser-von Bieren, 2022; Lechner et al., 2022). While the mechanisms of TII against respiratory viral and bacterial pathogens are relatively well understood, the mechanistic underpinnings and consequences of TII for other diseases, including cancer, cardiovascular disease, and chronic inflammatory conditions, are only beginning to emerge. This is particularly true for T2 immunity, which plays an important role in protection against parasitic infections and in the pathogenesis of allergy and asthma. Helminth infection with Nippostrongylus brasiliensis (Nb) imprinted macrophages and induced TII linked to enhanced protection against secondary Nb infection (Chen et al., 2014). Such protection was dependent on crosstalk between neutrophils and imprinted macrophages of mice, which led to efficient killing of Nb larvae. A greater proportion of AMs and IMs isolated from Nb infection-imprinted mice displayed an Arginase 1+, PLDL2+, and CD301+ alternatively activated phenotype, leading to expedient nematode clearance upon rechallenge (Chen et al., 2014). More recently, prior Nb infection induced lung remodeling and TII, which protected against heterologous acute respiratory SARS-CoV-2 infection, but this was notably not recapitulated following primary infection with Heligmosomoides polygyrus, indicating that local pulmonary inflammatory cues are required (Oyesola et al., 2023). Nb-imprinted tissue-resident macrophages displayed a T2 profile and increased production of CD8+ T cell-recruiting chemokines. This resulted in heightened activation and recruitment of CD8+ T cells to the lung following infection (Oyesola et al., 2023). This illustrates how T2 inflammation-induced TII in the lung can enhance viral clearance and limit disease severity during heterologous pulmonary viral infection, which is mediated through indirect interactions between tissue-resident macrophages and T cells. Not much is known regarding resolution and repair in T2 immunity and associated TII. However, tissue remodeling factors were upregulated in helminth-primed macrophages and are generally associated with resolution of inflammation (Oyesola et al., 2023). Thus, activation of these macrophages may promote resolution and repair of the lung tissue following heterologous SARS-CoV-2 infection.
 
-## TII against respiratory mucosal cancer
+### TII against respiratory mucosal cancer
 
 Recent work has shown that trained AMs can provide long-term antitumor immunity within the lungs. Infection with wild-type IAV led to trained AMs characterized by persistent epigenetic, metabolic, and phenotypic changes, such as enhanced production of proinflammatory cytokines IL-1β, IL-6, and TNF (Wang et al., 2023). In a murine model of B16 melanoma metastatic lung cancer, IAV infection-trained AMs conferred antitumor TII that persisted months following acute infection, characterized by enhanced tumor cell phagocytosis and cytotoxicity. Importantly, these trained AMs were epigenetically resistant to suppressive signals from the tumor microenvironment that promoted immune-suppressive signatures in uninfected control animals. Mechanistically, training was independent of T cell immunity, but reliant on NK cell-derived IFN-γ (Wang et al., 2023). Although such observations highlight a novel facet of TII at the respiratory barrier in enhancing protection against pulmonary metastatic disease, it is important to highlight the minimal improvement in survival – potentially attributed to the aggressiveness of the B16 cancer model. Perhaps, it is not entirely surprising to see the documented observations on TII-mediated protection against respiratory mucosal cancer, given that BCG has long been used in humans as a treatment for noninvasive cancer in a different barrier tissue site – the bladder, for many years. More recently, BCG-induced anti-bladder tumor TII was observed through its reprogramming of HSCs in the bone marrow of mice (Daman et al., 2025) and administration of both BCG and β-glucan-induced robust antitumor TII via enhanced granulopoiesis and trained neutrophils (Jurado et al., 2025). Nonetheless, it would be of interest to consider whether the induction of analogous training – such as that endowed by inhaled Ad vaccines – may strengthen on-target antitumor immunity from the adaptive branch, and whether these can be utilized to strengthen current standard-of-care approaches for malignancies.
 
-## Maladaptive TII and inflammatory conditions
+### Maladaptive TII and inflammatory conditions
 
 Under physiological conditions, TII can be beneficial against heterologous pathogenic infections, lung injury, tumors, and Th2 immunity, which is followed by the resolution of inflammation and restoration of homeostasis (Merlo Pich et al., 2024). However, in some cases, dysregulation or chronic activation of the innate immune system can contribute to maladaptive TII and perpetuating inflammatory diseases (Li et al., 2022b; Table 1). Epigenetic modifications and metabolic rewiring are the underlying basis in the development and maintenance of innate immune memory, and some epigenetic features can persist from days to months following clearance of the initial insult and can be quickly activated following secondary insult (Niec et al., 2021).
 
@@ -110,7 +206,7 @@ Long after primary pneumonia infection and resolution of inflammation, AMs are i
 
 Beyond the lung, tissue-resident memory macrophages and TII are also induced at other barrier tissues, such as the skin, gut, and peritoneal cavity. This induction enhances innate immune responses, allowing these tissues to mount more rapid and effective TII against subsequent unrelated pathogens.
 
-## TII at the skin
+### TII at the skin
 
 As the body’s largest barrier organ, the skin is constantly exposed to an array of microbes, including commensals and pathogens. Recent evidence indicates that this interface can harbor tissue-resident innate immune cells capable of developing innate immune memory and associated TII (Chan et al., 2017; Feuerstein et al., 2020). Skin-resident trained macrophages can be programmed to respond more swiftly and effectively to subsequent microbial challenges, yet the extent of cross-protection and compartmentalization remains an active area of investigation. This section examines the interplay between TII and Staphylococcus aureus (S. aureus), the most common cause of skin and soft tissue infections, and discusses how tissue-resident memory macrophages, metabolic reprogramming, and microbial factors converge to shape immune outcomes at this critical barrier site.
 
@@ -118,7 +214,7 @@ In a murine model of sequential S. aureus infection, primary infection induces l
 
 While sequential S. aureus infection-associated TII can lead to more rapid resolution of secondary abscesses, low-pathogenicity S. aureus small colony variants (SCV) commonly cause chronic infections and can switch to an antimicrobial-resistant persister phenotype (Lin et al., 2024). Intriguingly, attenuated infection from a ΔhemB SCV failed to elicit an equivalent trained immune response compared to wild-type S. aureus infection, despite more potent induction of glycolysis in human PBMCs, THP-1 cells, and keratinocytes (Wong Fok Lung et al., 2020). Heightened glycolysis was associated with increased expression of succinate dehydrogenase, leading to increased intracellular fumarate concentrations, a metabolite critical for the development of TII in monocytes. Unfortunately, while this study failed to investigate the metabolic fate of bona fide skin tissue-resident macrophages during SCV infection, it demonstrates a role for bacterial modulation of host metabolism as an inhibitor of TII. Together, these findings underscore the central role of TII in protecting the skin against infection, while also highlighting significant gaps in our understanding. Although targeting host and microbial metabolic pathways holds promise for enhancing antibacterial efficacy, it remains unclear how effectively such approaches will protect against antimicrobial-resistant strains or emerging viral threats. Future studies must disentangle the complex interplay between microbial virulence factors, metabolic reprogramming in tissue-resident macrophages, and the broader immune network within the skin.
 
-## TII at the gastrointestinal tract
+### TII at the gastrointestinal tract
 
 Barrier tissues, such as the intestine, balance nutrient absorption with epithelial integrity, inflammation, blood flow, and innervation to control smooth muscle contractility. Consequentially, gut tissue-resident macrophages fill diverse subtissular niches in the epithelium, lamina propria, submucosa, and muscularis externa, all with unique contributions from circulating monocytes (Delfini et al., 2022). Distal from the lumen, relatively non-motile muscularis externa macrophages defend nerve bundles and blood vessels from infection (De Schepper et al., 2018).
 
@@ -130,7 +226,7 @@ In addition to acute gastrointestinal infections conferring heterologous protect
 
 Eliciting a tolerogenic state in gut-resident macrophages could offer an appealing avenue to treat inflammatory bowel disease, colitis, and Crohn’s disease. Each disease is characterized by chronic inflammation, and all have well-documented contributions from inflammatory monocytes (Delfini et al., 2022). An expanding body of work suggests that recruited monocytes that develop tissue residency following an insult retain a heightened proinflammatory phenotype relative to bona fide tissue-resident counterparts (Guilliams and Svedberg, 2021). Some gut-resident macrophage populations, such as those in the lamina propria, are constantly replenished from monocytes, suggesting that the replenishing monocytes may potentially be involved in these conditions. Discretion is required to select methods sensitive enough to delineate contributions from macrophages that occupy distinct subtissular niches within tissues such as the gut, as they play diverse roles in tissue homeostasis. Detailed longitudinal fate-mapping studies are required to observe how resident macrophage populations change in response to inflammation and the lasting ‘immunological scars’ after inflammation constitute a complex phenomenon described as the ‘macrophage disturbance of homeostasis reaction’ (Salm et al., 2023; Zhao et al., 2024).
 
-## TII within the peritoneal cavity
+### TII within the peritoneal cavity
 
 At homeostasis, most peritoneal macrophages (pMacs) consist of self-sustaining Gata6+, fetal liver-derived large peritoneal macrophages (LPMs) maintained by omentum-derived AA and monocyte-derived small peritoneal macrophages (SPMs) (Salm et al., 2023). LPMs are among the first cells to respond to peritonitis that may be caused by intestinal perforation and subsequent infection with gut bacteria. Upon systemic exposure to LPS, pMacs phosphorylate the anti-inflammatory transcription factor Atf7, consequently reducing repressive histone marks and leading to enhanced protection against secondary heterologous S. aureus infection in murine models (Yoshida et al., 2015). Of note, this pathway was enriched following systemic training from β-glucan, but not peptidoglycan or imiquimod, suggesting that TLR ligands from bacteria, yeast, or viruses induce distinct epigenetic changes within innate immune cells (Yoshida et al., 2015). Furthermore, intraperitoneal β-glucan-induced TII altered the pMac composition with a greater proportion of bactericidal SPM persisting long after the initial insult and protecting against Escherichia coli peritonitis (Ciarlo et al., 2020). Since TII results from the long-term imprinting of innate immune cells mediated by epigenetic and metabolic alterations, the macrophage disappearance reaction and replacement of embryonic-derived macrophages with MDMs represent a distinct physiological process that requires further investigation (Salm et al., 2023).
 

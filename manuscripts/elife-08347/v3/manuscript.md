@@ -46,7 +46,7 @@
 
 ## Abstract
 
-10.7554/eLife.08347.001 Dengue and chikungunya are increasing global public health concerns due to their rapid geographical spread and increasing disease burden. Knowledge of the contemporary distribution of their shared vectors, Aedes aegypti and Aedes albopictus remains incomplete and is complicated by an ongoing range expansion fuelled by increased global trade and travel. Mapping the global distribution of these vectors and the geographical determinants of their ranges is essential for public health planning. Here we compile the largest contemporary database for both species and pair it with relevant environmental variables predicting their global distribution. We show Aedes distributions to be the widest ever recorded; now extensive in all continents, including North America and Europe. These maps will help define the spatial limits of current autochthonous transmission of dengue and chikungunya viruses. It is only with this kind of rigorous entomological baseline that we can hope to project future health impacts of these viruses. DOI: http://dx.doi.org/10.7554/eLife.08347.001
+Dengue and chikungunya are increasing global public health concerns due to their rapid geographical spread and increasing disease burden. Knowledge of the contemporary distribution of their shared vectors, Aedes aegypti and Aedes albopictus remains incomplete and is complicated by an ongoing range expansion fuelled by increased global trade and travel. Mapping the global distribution of these vectors and the geographical determinants of their ranges is essential for public health planning. Here we compile the largest contemporary database for both species and pair it with relevant environmental variables predicting their global distribution. We show Aedes distributions to be the widest ever recorded; now extensive in all continents, including North America and Europe. These maps will help define the spatial limits of current autochthonous transmission of dengue and chikungunya viruses. It is only with this kind of rigorous entomological baseline that we can hope to project future health impacts of these viruses.
 
 ## Introduction
 
@@ -62,41 +62,289 @@ In this context, we set out to model the global distribution of these two import
 
 ## Results
 
-In total, data collection yielded 19,930 and 22,137 spatially unique occurrence records for Ae. aegypti and Ae. albopictus respectively, which were used to train the distribution models. This includes up-to date records from national entomological surveys from Brazil and Taiwan for both species (Carvalho et al., 2014; Yang et al., 2014). For Ae. aegypti, >60% of all occurrence records are from Asia and Oceania, 35% are from the Americas and only 575 unique occurrences are available for Africa and Europe (Table 1a). Similarly for Ae. albopictus, most of the occurrences are from Asia (75%), 23% are from the Americas and only 542 records are available from Europe and Africa (Table 1b). For each continent the top 10 countries in terms of occurrences recorded are shown for both species (Table 1). The geographic distribution of the occurrence records is the widest ever recorded with particularly high spatial and temporal resolution in Taiwan and Brazil for both species and in the United States for Ae. albopictus. All occurrence data have been made openly available through an online data repository to ensure consistency and reproducibility (Pigott and Kraemer, 2014; Kraemer et al., 2015a).10.7554/eLife.08347.003Table 1.The geographic distribution of spatially unique occurrence records for the Americas, Europe/Africa, and Asia/OceaniaDOI: http://dx.doi.org/10.7554/eLife.08347.003CountryOccurrencesCountryOccurrencesCountryOccurrencesAe. aegyptiAmericasBrazil5,044Europe/AfricaSenegal112Asia/OceaniaTaiwan9,490USA436Cameroon55Indonesia603Mexico411Kenya52Thailand495Cuba177United Republic of Tanzania44India423Argentina170Côte d'Ivoire40Australia282Trinidad and Tobago152Nigeria35Viet Nam223Venezuela130Madagascar28Malaysia112Colombia128Gabon27Singapore44Puerto Rico120Mayotte20Philippines36Peru89Sierra Leone20Cambodia29Ae. albopictusAmericasBrazil3,441Europe/AfricaItaly203Asia/OceaniaTaiwan15,339USA1,594Madagascar58Malaysia186Mexico50Cameroon42Indonesia161Cayman Islands15France37India150Haiti13Gabon27Japan97Guatemala12Albania22Thailand82Venezuela7Mayotte21Singapore44Colombia3Greece18Lao People's Democratic Republic26Cuba3Israel17Philippines22Puerto Rico3Lebanon15Viet Nam18Top 10 countries in terms of occurrence records for each continent are shown for Ae. aegypti (a) and Ae. albopictus (b).
+In total, data collection yielded 19,930 and 22,137 spatially unique occurrence records for Ae. aegypti and Ae. albopictus respectively, which were used to train the distribution models. This includes up-to date records from national entomological surveys from Brazil and Taiwan for both species (Carvalho et al., 2014; Yang et al., 2014). For Ae. aegypti, >60% of all occurrence records are from Asia and Oceania, 35% are from the Americas and only 575 unique occurrences are available for Africa and Europe (Table 1a). Similarly for Ae. albopictus, most of the occurrences are from Asia (75%), 23% are from the Americas and only 542 records are available from Europe and Africa (Table 1b). For each continent the top 10 countries in terms of occurrences recorded are shown for both species (Table 1). The geographic distribution of the occurrence records is the widest ever recorded with particularly high spatial and temporal resolution in Taiwan and Brazil for both species and in the United States for Ae. albopictus. All occurrence data have been made openly available through an online data repository to ensure consistency and reproducibility (Pigott and Kraemer, 2014; Kraemer et al., 2015a).
 
-Maps showing the predicted global distribution for
+**Table 1.**
+ The geographic distribution of spatially unique occurrence records for the Americas, Europe/Africa, and Asia/Oceania
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Country</th>
+      <th>Occurrences</th>
+      <th></th>
+      <th>Country</th>
+      <th>Occurrences</th>
+      <th></th>
+      <th>Country</th>
+      <th>Occurrences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="9">Ae. aegypti</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Americas</td>
+      <td>Brazil</td>
+      <td>5,044</td>
+      <td rowspan="10">Europe/Africa</td>
+      <td>Senegal</td>
+      <td>112</td>
+      <td rowspan="10">Asia/Oceania</td>
+      <td>Taiwan</td>
+      <td>9,490</td>
+    </tr>
+    <tr>
+      <td>USA</td>
+      <td>436</td>
+      <td>Cameroon</td>
+      <td>55</td>
+      <td>Indonesia</td>
+      <td>603</td>
+    </tr>
+    <tr>
+      <td>Mexico</td>
+      <td>411</td>
+      <td>Kenya</td>
+      <td>52</td>
+      <td>Thailand</td>
+      <td>495</td>
+    </tr>
+    <tr>
+      <td>Cuba</td>
+      <td>177</td>
+      <td>United Republic of Tanzania</td>
+      <td>44</td>
+      <td>India</td>
+      <td>423</td>
+    </tr>
+    <tr>
+      <td>Argentina</td>
+      <td>170</td>
+      <td>Côte d'Ivoire</td>
+      <td>40</td>
+      <td>Australia</td>
+      <td>282</td>
+    </tr>
+    <tr>
+      <td>Trinidad and Tobago</td>
+      <td>152</td>
+      <td>Nigeria</td>
+      <td>35</td>
+      <td>Viet Nam</td>
+      <td>223</td>
+    </tr>
+    <tr>
+      <td>Venezuela</td>
+      <td>130</td>
+      <td>Madagascar</td>
+      <td>28</td>
+      <td>Malaysia</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <td>Colombia</td>
+      <td>128</td>
+      <td>Gabon</td>
+      <td>27</td>
+      <td>Singapore</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Puerto Rico</td>
+      <td>120</td>
+      <td>Mayotte</td>
+      <td>20</td>
+      <td>Philippines</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Peru</td>
+      <td>89</td>
+      <td>Sierra Leone</td>
+      <td>20</td>
+      <td>Cambodia</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td colspan="9">Ae. albopictus</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Americas</td>
+      <td>Brazil</td>
+      <td>3,441</td>
+      <td rowspan="10">Europe/Africa</td>
+      <td>Italy</td>
+      <td>203</td>
+      <td rowspan="10">Asia/Oceania</td>
+      <td>Taiwan</td>
+      <td>15,339</td>
+    </tr>
+    <tr>
+      <td>USA</td>
+      <td>1,594</td>
+      <td>Madagascar</td>
+      <td>58</td>
+      <td>Malaysia</td>
+      <td>186</td>
+    </tr>
+    <tr>
+      <td>Mexico</td>
+      <td>50</td>
+      <td>Cameroon</td>
+      <td>42</td>
+      <td>Indonesia</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>Cayman Islands</td>
+      <td>15</td>
+      <td>France</td>
+      <td>37</td>
+      <td>India</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Haiti</td>
+      <td>13</td>
+      <td>Gabon</td>
+      <td>27</td>
+      <td>Japan</td>
+      <td>97</td>
+    </tr>
+    <tr>
+      <td>Guatemala</td>
+      <td>12</td>
+      <td>Albania</td>
+      <td>22</td>
+      <td>Thailand</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>Venezuela</td>
+      <td>7</td>
+      <td>Mayotte</td>
+      <td>21</td>
+      <td>Singapore</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>Colombia</td>
+      <td>3</td>
+      <td>Greece</td>
+      <td>18</td>
+      <td>Lao People's Democratic Republic</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Cuba</td>
+      <td>3</td>
+      <td>Israel</td>
+      <td>17</td>
+      <td>Philippines</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Puerto Rico</td>
+      <td>3</td>
+      <td>Lebanon</td>
+      <td>15</td>
+      <td>Viet Nam</td>
+      <td>18</td>
+    </tr>
+  </tbody>
+</table>
+
+_Top 10 countries in terms of occurrence records for each continent are shown for Ae. aegypti (a) and Ae. albopictus (b)._
+
+Maps showing the predicted global distribution for Ae. aegypti and Ae. albopictus are presented in Figures 1, 2, respectively. The distributions of the two species differ markedly in a number of places. Ae. aegypti is predicted to occur primarily in the tropics and sub-tropics, with concentrations in northern Brazil and southeast Asia including all of India, but with relatively few areas of suitability in Europe (only Spain and Greece) and temperate North America. In Australia, however, Ae. aegypti shows a wider geographic distribution than Ae. albopictus, which is confined to the east coast, largely reflecting the known historic distribution of Ae. aegypti. By contrast, the distribution of Ae. albopictus extends into southern Europe (Figure 3A), northern China, southern Brazil, northern United States (3b), and Japan. Again, this reflects the current and historic distribution of Ae. albopictus and the ability of the species to tolerate lower temperatures (Tsuda and Takagi, 2001; Lounibos et al., 2002; Thomas et al., 2012; Brady et al., 2014).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig1-v3.jpg)
 
-**Figure 1.:** Ae. aegypti.The map depicts the probability of occurrence (from 0 blue to 1 red) at a spatial resolution of 5 km × 5 km.DOI: http://dx.doi.org/10.7554/eLife.08347.004
+**Figure 1.:** The map depicts the probability of occurrence (from 0 blue to 1 red) at a spatial resolution of 5 km × 5 km.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig1-figsupp1-v3.jpg)
 
-**Figure 1—figure supplement 1.:** Ae. aegypti (1) and Ae. albopictus (2): enhanced vegetation index (EVI) annual mean (A); Enhanced vegetation index—range (B); annual monthly maximum precipitation (C); annual monthly minimum precipitation (D); temperature suitability (E); urban areas (F); peri-urban areas (G).DOI: http://dx.doi.org/10.7554/eLife.08347.005
-
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig1-figsupp2-v3.jpg)
-
-**Figure 1—figure supplement 2.:** Ae. aegypti and Ae. albopictus described in detail in the ‘Materials and methods’ section; (A) enhanced vegetation index (EVI) annual mean, (B) EVI annual range, (C) annual monthly maximum precipitation, (D) annual monthly minimum precipitation, (E) temperature suitability for Ae. albopictus, (F) temperature suitability for Ae. aegypti, (G) rural, peri-urban and urban classification layer.DOI: http://dx.doi.org/10.7554/eLife.08347.006
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig1-figsupp3-v3.jpg)
 
-**Figure 1—figure supplement 3.:** Ae. aegypti (A) and Ae. albopictus (B).DOI: http://dx.doi.org/10.7554/eLife.08347.007
-
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig1-figsupp4-v3.jpg)
-
-**Figure 1—figure supplement 4.:** Ae. aegypti (A) and Ae. albopictus (B) plotted on the underlying prediction surface.DOI: http://dx.doi.org/10.7554/eLife.08347.008
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig2-v3.jpg)
 
-**Figure 2.:** Ae. albopictus.The map depicts the probability of occurrence (from 0 blue to 1 red) at a spatial resolution of 5 km × 5 km.DOI: http://dx.doi.org/10.7554/eLife.08347.009
+**Figure 2.:** The map depicts the probability of occurrence (from 0 blue to 1 red) at a spatial resolution of 5 km × 5 km.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/08347/elife-08347-fig3-v3.jpg)
 
-**Figure 3.:** Ae. albopictus in Europe (A) and the United States (B), regions in which Ae. albopictus is rapidly expanding its range.Points represent known occurrences (transient [triangles] or established [circles]) until the end of 2013.DOI: http://dx.doi.org/10.7554/eLife.08347.010
+**Figure 3.:** Points represent known occurrences (transient [triangles] or established [circles]) until the end of 2013.
 
 In Europe, the predicted potential distribution of Ae. albopictus contains most of the known occurrence points, but suitability is also predicted in Portugal and the west of Spain, and in much of south-eastern Europe and the Balkans, where the species has yet to be reported. Similarly, in China Ae. albopictus has yet to be reported from much of the area predicted to be environmentally suitable. By contrast, in the United States the species has been reported from almost all of the predicted suitable areas, with the exception of a small band of predicted suitability on the western slope of the Sierra Nevada. Due to the relatively sparse reporting from Africa it remains uncertain whether areas predicted to be highly suitable are already infested or have yet to be colonized by the species. Ae. albopictus for example has only been reported from some West African countries (Nigeria, Cameroon, Gabon, the Central African Republic, Congo, Côte d'Ivoire) and Madagascar, and South Africa (as well as some islands in the Indian Ocean). The distribution of Ae. aegypti in Africa seems to be much wider, with reports of species occurrence in over 30 countries.
 
-For both species, the most important predictor was temperature. Temperature suitability indices had high relative influence statistics for both species; this variable was selected in approximately half of regression tree decisions for Ae. aegypti (54.9%, CI = 53.7–56%) and Ae. albopictus (44.3%, CI = 42.7–45.6%). The full definition of a relative influence statistic is given in the ‘Materials and methods’ section under the heading Predictive performance and relative influence of covariates. Precipitation and vegetation indices made up the remainder of predictors. Urban land cover made very little contribution to either model (Table 2). Model evaluation statistics under cross-validation were high (AUC: 0.87 and 0.9 respectively) for both model ensembles, indicating high predictive performance of the model. Effect plots for each covariate are shown in Figure 1—figure supplement 2. Maps of uncertainty associated with these predictions are presented in Figure 1—figure supplement 3.10.7554/eLife.08347.011Table 2.Relative contribution of environmental covariates predicting the global distribution of Ae. aegypti and Ae. albopictusDOI: http://dx.doi.org/10.7554/eLife.08347.011Mean contribution Ae. aegypti (%)95% confidence interval Ae. aegypti (%)Mean contribution Ae. albopictus (%)95% confidence interval Ae. albopictus (%)Temperature suitability54.953.7–5644.342.7–45.6Maximum precipitation13.612.6–14.613.912.7–14.9Enhanced vegetation index(mean)12.111.3–12.915.314.5–16.3Minimum precipitation9.18.5–1016.115.2–16.9Enhanced vegetation index (range)8.37.7–99.18.3–10.1Urbanicity21.3–2.41.10.7–1.7
+For both species, the most important predictor was temperature. Temperature suitability indices had high relative influence statistics for both species; this variable was selected in approximately half of regression tree decisions for Ae. aegypti (54.9%, CI = 53.7–56%) and Ae. albopictus (44.3%, CI = 42.7–45.6%). The full definition of a relative influence statistic is given in the ‘Materials and methods’ section under the heading Predictive performance and relative influence of covariates. Precipitation and vegetation indices made up the remainder of predictors. Urban land cover made very little contribution to either model (Table 2). Model evaluation statistics under cross-validation were high (AUC: 0.87 and 0.9 respectively) for both model ensembles, indicating high predictive performance of the model. Effect plots for each covariate are shown in Figure 1—figure supplement 2. Maps of uncertainty associated with these predictions are presented in Figure 1—figure supplement 3.
+
+**Table 2.**
+ Relative contribution of environmental covariates predicting the global distribution of Ae. aegypti and Ae. albopictus
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Mean contribution Ae. aegypti (%)</th>
+      <th>95% confidence interval Ae. aegypti (%)</th>
+      <th>Mean contribution Ae. albopictus (%)</th>
+      <th>95% confidence interval Ae. albopictus (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Temperature suitability</td>
+      <td>54.9</td>
+      <td>53.7–56</td>
+      <td>44.3</td>
+      <td>42.7–45.6</td>
+    </tr>
+    <tr>
+      <td>Maximum precipitation</td>
+      <td>13.6</td>
+      <td>12.6–14.6</td>
+      <td>13.9</td>
+      <td>12.7–14.9</td>
+    </tr>
+    <tr>
+      <td>Enhanced vegetation index(mean)</td>
+      <td>12.1</td>
+      <td>11.3–12.9</td>
+      <td>15.3</td>
+      <td>14.5–16.3</td>
+    </tr>
+    <tr>
+      <td>Minimum precipitation</td>
+      <td>9.1</td>
+      <td>8.5–10</td>
+      <td>16.1</td>
+      <td>15.2–16.9</td>
+    </tr>
+    <tr>
+      <td>Enhanced vegetation index (range)</td>
+      <td>8.3</td>
+      <td>7.7–9</td>
+      <td>9.1</td>
+      <td>8.3–10.1</td>
+    </tr>
+    <tr>
+      <td>Urbanicity</td>
+      <td>2</td>
+      <td>1.3–2.4</td>
+      <td>1.1</td>
+      <td>0.7–1.7</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -120,42 +368,42 @@ The maps presented comprise a contemporary estimate of the current and potential
 
 A BRT modelling approach was applied to derive probabilistic global environmental risk maps for Ae. aegypti and Ae. albopictus. BRT models are machine-learning model ensembles commonly used in species distribution modelling (SDM) and show strong predictive performance due to their ability to handle complex non-linear relationships between probability of species occurrence and multiple environmental correlates (Elith et al., 2006, 2008). Our model required the following sets of input data in order to make accurate predictions of the distribution of these two species: (i) a temperature suitability mask defining the fundamental limits of both species; (ii) a globally comprehensive dataset of geo-positioned occurrence points for both species; (iii) appropriate land-cover and environmental covariate datasets that help explain the current distribution of the species; and (iv) a set of species absence records that further refine the species range and reduce sampling bias. Details regarding the specific attributes of the model and data generation are outlined below and maps of each of the covariates are shown in Figure 1—figure supplement 2.
 
-## Temperature suitability mask
+### Temperature suitability mask
 
 While the niche of a species is determined by a host of environmental, ecological and socio-economic factors of unknown influence and interaction strength, it is possible to exclude parts of the niche if the direct effects of one factor on a step rate-limiting to population persistence are well known. One such example for mosquito population persistence is whether temperature permits adult females to survive long enough to complete their first gonotrophic cycle and thus oviposit. Both adult female longevity and length of first gonotrophic cycle are temperature dependent. Combining these two relationships with a dynamic population-level simulation, Brady et al. (2013, 2014) evaluated the thermal limits to persistence of Ae. aegypti and Ae. albopictus populations on a global scale. The binary outputs of this model are used as a mask to sample pseudo-absence points in locations known to be unsuitable–thereby informing the statistical model using mechanistic model outputs. The temperature suitability index developed by Brady et al. is also used in a continuous variable form (i.e., the relative number of ovipositions of parous females permitted by temperature) as a covariate in the BRT model.
 
-## Occurrence records
+### Occurrence records
 
 The database used for this study contains information on the known global occurrences of the adults, pupae, larvae or eggs of Ae. aegypti and Ae. albopictus globally from 1960–2014. We included data from a variety of sources, including (1) published literature and (2) primary and unpublished occurrence data from national and international entomological surveys. To our knowledge this is the largest, most comprehensive global dataset for both Ae. aegypti and Ae. albopictus. Confirmed Aedes occurrences were entered in the database after a comprehensive literature search using methods described elsewhere (Kraemer et al., 2015a; Kraemer et al., 2015b; http://dx.doi.org/10.5061/dryad.47v3c). In short, this included extracting all available location (latitude and longitude) information from the relevant articles, primarily using Google Maps (http://www.google.com/maps) so that it matched the spatial resolution of our covariate datasets of approximately 5 km × 5 km. Primary and unpublished data sources were obtained from Brazil, Europe, Indonesia, Taiwan, and the United States. After consolidating all data into two large databases for each species, independently they underwent spatial and temporal standardization. An occurrence record was defined as a single occurrence at a given unique location within one calendar year. This was important to avoid over-representation in regions where multiple surveys per year were performed, such as Taiwan or Brazil. To ensure the accuracy of the data we overlaid the geolocated occurrence points with a raster that distinguished land from water. Any records that were positioned outside the land area were subsequently removed. In total we assembled 19,930 and 22,137 occurrence records for Ae. aegypti and Ae. albopictus respectively. The distribution of occurrence points are plotted in Figure 1—figure supplement 4.
 
-## Land-cover and environmental variables
+### Land-cover and environmental variables
 
 The distribution of both species considered in this study are known to be influenced by environmental factors such as temperature and demographic factors such as urbanisation (Lounibos, 2002; Brown et al., 2014). Global gridded maps of such variables are becoming ever more available and have been commonly applied in SDM and disease mapping (Hijmans et al., 2005; Hay et al., 2006; Gething et al., 2011; Bhatt et al., 2013; Pigott et al., 2014a, 2014b). The rationale for the inclusion of each variable we used is described below.
 
-## EVI
+#### EVI
 
 Survival of Ae. aegypti and Ae. albopictus is highly dependent on temperature and water availability (Luz et al., 2008). EVI measures vegetation canopy greenness and can be used as a proxy for soil surface-level moisture that are associated with the availability of mosquito larval development sites (Estallo et al., 2008; Nihei et al., 2014). Eggs and adults require moisture to survive, with low dry season moisture levels affecting adult mortality (Sota and Mogi, 1992; Russell et al., 2001). Vegetation canopy cover reduces evaporation and wind speed in the sub-canopy, which protects mosquito development sites (Linthicum, 1999; Fuller et al., 2009; Hahn et al., 2014). We used range and mean values of MODIS EVI after processing through a gap-filling algorithm described elsewhere (Weiss et al., 2014).
 
-## Precipitation
+#### Precipitation
 
 The principal larval habitats of both species are man-made containers that are used for water storage or accumulate rain (Morrison et al., 2004). Some local studies have shown that there is a relationship between precipitation and vector abundance (Scott et al., 2000; Romero-Vivas and Falconar, 2005). To account for the availability of water-filled containers a maximum and minimum annual precipitation layer was extracted from the WorldClim database and projected for the year 2015 (http://www.worldclim.org).
 
-## Urbanisation
+#### Urbanisation
 
 Ae. aegypti adults are highly domesticated mosquitoes feeding almost exclusively on humans (Bargielowski et al., 2013), larvae develop preferentially in artificial containers in close association with human habitation, often in urban settings (Lounibos, 2002; Honório et al., 2003; Brown et al., 2011, 2014; Powell and Tabachnick, 2013). Ae. albopictus are more commonly found in rural and peri-urban settings, feeding readily on a variety of mammalian and avian species, although Ae. albopictus shows similar larval development behavior in artificial containers (Reiter, 2001; Gratz, 2004; Juliano and Philip Lounibos, 2005; Li et al., 2014). To account for differences in urban, peri-urban and rural environments we built a categorical variable by supplementing the projected 2010 Global Rural Urban Mapping Project (GRUMP) urban and rural categories with land-cover classes using night-time light satellite imagery and population density, using the most up-to-date national censuses available to the smallest available administrative unit available (Balk et al., 2006). A gridded surface of 5 km × 5 km cells was generated with each pixel representing either urban, peri-urban, or rural areas.
 
-## Modelling approach
+### Modelling approach
 
 BRT models consistently outperform other species distribution models such as maximum entropy (Maxent), GARP, and BIOCLIM in their predictive performance (Elith et al., 2006; Leathwick et al., 2006). BRT combines the strengths of regression trees (i.e., the omission of irrelevant variables and the ability to model complex interactions) with machine learning techniques (i.e., the building of an ensemble of models that approximate the true response surface [Elith and Leathwick, 2009]). To prevent overfitting, the model used a penalized forward stepwise search and cross-validation method to identify the optimal number of decision trees (Elith et al., 2008). Modelling was performed using the gbm, dismo, raster and seegSDM R packages using the R v 3.1.1 environment (Ridgeway, 2013; Golding, 2014; Hijmans, 2014; R Core Team, 2014).
 
-## Removing sample selection bias
+#### Removing sample selection bias
 
 Pseudo-absence (also referred to as background) records provide a sample of the set of conditions available to the species in the region rather than actual absences (Phillips et al., 2009). These records are needed because true absences are generally unavailable in large composite datasets such as the one used in this study. To account for reporting bias in presence data, a common problem with presence-only SDM, which if not accounted for can lead to biases in the resulting predictions, we follow Phillips et al. (2009) in sampling pseudo-absence points according to the same reporting bias likely to be present in occurrence records (namely spatial variation in reporting of mosquito occurrence). Firstly, we selected 10,000 occurrence records of Aedes species from the Global Biodiversity Information Facility (http://www.gbif.org), omitting all records of Ae. aegypti and Ae. albopictus. This dataset is intended to reflect biases in mosquito reporting in areas which are suitable for Aedes mosquitoes. Secondly, to reflect areas where habitats are biologically not suitable for Aedes occurrence we sampled an additional 10,000 pseudo-absence points at random locations, with sampling probability greatest in areas that the biologically-based temperature suitability index predicted to be unsuitable. Thirdly, sampling of occurrence points was also biased towards oversampled regions such as Brazil and Taiwan in which there were a large number of reported occurrence records due to the inclusion of results of large national entomological surveys (Table 1). Therefore, we weighted occurrence records from these locations so that the density of occurrence records per country matched the density of all other records globally by dividing the number of occurrence points by the size of the respective countries.
 
-## Modelling
+#### Modelling
 
 An ensemble BRT was constructed using 120 sub-models to derive uncertainty distributions of the prediction map. Each of the 120 sub-models was fitted to a separate bootstrap resampling of the dataset and used to generate a probability map for each individual species on a 5 km × 5 km resolution. The mean of these 120 sub-models was used as the final Aedes risk maps. Pixel based uncertainty was estimated by calculating the 95% confidence interval from the 120 sub-models.
 
-## Predictive performance and relative influence of covariates
+#### Predictive performance and relative influence of covariates
 
 The variables used as land-cover and environmental correlates used in this study are quantified based on their relative influence (0–100) on explaining the variance in the models calculated as the sum of the number of times a particular variable is selected for splitting the decision tree, weighted by the squared improvement to the overall model averaged over all trees (Friedman, 2001; Friedman and Meulman, 2003). Note that in a BRT, non-informative predictors are largely ignored (Elith et al., 2008). Predictive performance of each sub-model was evaluated using the area under curve (AUC) statistic calculated as the mean AUC for each of the ten cross-validation folds evaluated against the other 90% of the data under the pairwise distance sampling procedure of Hijmans (2012). The overall predictive accuracy of the model was measured as the mean and standard deviation of these AUCs across all 120 sub-models (Merckx et al., 2010; Hijmans, 2012).

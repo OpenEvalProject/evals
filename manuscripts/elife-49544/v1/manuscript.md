@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Plasticity is often regarded as a derived adaptation to help organisms survive in variable but predictable environments, however, we currently lack a rigorous, mechanistic examination of how plasticity evolves in a large comparative framework. Here, we show that phenotypic plasticity in eyespot size in response to environmental temperature observed in Bicyclus anynana s atyrid butterflies is a complex derived adaptation of this lineage. By reconstructing the evolution of known physiological and molecular components of eyespot size plasticity in a comparative framework, we showed that 20E titer plasticity in response to temperature is a pre-adaptation shared by all butterfly species examined, whereas expression of EcR in eyespot centers, and eyespot sensitivity to 20E, are both derived traits found only in a subset of species with eyespots.
+Plasticity is often regarded as a derived adaptation to help organisms survive in variable but predictable environments, however, we currently lack a rigorous, mechanistic examination of how plasticity evolves in a large comparative framework. Here, we show that phenotypic plasticity in eyespot size in response to environmental temperature observed in Bicyclus anynana satyrid butterflies is a complex derived adaptation of this lineage. By reconstructing the evolution of known physiological and molecular components of eyespot size plasticity in a comparative framework, we showed that 20E titer plasticity in response to temperature is a pre-adaptation shared by all butterfly species examined, whereas expression of EcR in eyespot centers, and eyespot sensitivity to 20E, are both derived traits found only in a subset of species with eyespots.
 
 ## Introduction
 
@@ -37,13 +37,41 @@ Eyespots originated once within the nymphalid family, about 85 mya, likely from 
 
 To test these hypotheses and to examine how plasticity in B. anynana evolved, we reared twelve species from different nymphalid sub-families, and from tropical, or sub-tropical regions, plus one outgroup papilionid species (Figure 1—source data 1—Table S1) at two different temperatures, separated by 10°C, and measured spot and eyespot size plasticity in adult females. Three different types of reaction norm to rearing temperature were observed across species (Figure 1A). Five species showed no significant difference in hindwing (HW) Cu1 spot/eyespot size when reared across two temperatures and were deemed not plastic. Most species showed a decrease in spot/eyespot size with an increase in temperature and had a negative slope in their reaction norms. B. anynana was the only species which displayed a positive slope in its reaction norm, where eyespot size increased with temperature (Figure 1—source data—Table S2). Ancestral character state reconstructions for the slope of these reaction norms suggested that eyespot size plasticity of any form is a derived trait within nymphalids, with three possible independent origins. Ancestral species of nymphalids lacked plasticity, whereas there were one or two independent origins of a negative response of eyespot size to increasing temperature and a separate origin of the opposing pattern of plasticity in ventral HW eyespot size in the Satyrid lineage, such as those leading to B. anynana (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig1-v1.jpg)
+
+**Figure 1.:** (A) Size of hindwing ventral Cu1 eyespots (arrowheads). Thirteen species of butterflies were reared at two different rearing temperatures. Eyespot size corrected for wing size is plotted for two different temperatures (low temperature 17°C or 20°C is marked with blue symbols, while high temperature of 27°C or 30°C is marked with red symbols). Error bars represent 95% CI of means. (B) Mapping origins of eyespot size plasticity via maximum parsimony phylogenetic analysis suggests three independent origins for two different patterns of plasticity in the lineage with eyespots (eyespot size decreases with increasing temperatures: red lineages, and eyespot size increases with increasing temperature: blue lineage). The lineage leading to Satyrid butterflies gained a positive response to plasticity (blue arrowhead), whereas most other Nymphalids had either no response, or limited negative plasticity response (red arrowhead).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Ancestral states are significantly positive (blue outline), significantly negative (red outline), or not significantly different from zero (gray outline).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** See text and Figure 4—source data 1 for explanation of node numbers.
+
 To investigate the molecular basis for how these distinct patterns of plasticity differed from that of B. anynana we compared 20E titers and EcR expression across species using female data, and focused exclusively on examining data for the critical period of development that was previously discovered for the regulation of Cu1 eyespot size plasticity in ventral hindwings of B. anynana, for example the wandering stage of larval development. 20E titers at the wandering stage were consistently higher at the higher rearing temperature across all butterflies (Figure 2A) (Figure 2—source data 1), suggesting that 20E titer plasticity in response to temperature is an ancestral trait shared across these butterflies. EcR expression at the wandering stage was absent in species with no central wing spots (e.g., Danaus), it was absent from spot centers in species with simple spots (e.g., Papilio and Idea), but was present in the eyespot central cells across all other species investigated, with a few exceptions (Junonia coenia (Koch et al., 2003) and Junonia almana) (Figure 2B). Species with no EcR staining in spots still had EcR expression in the large polyploid nuclei that make up the peripodial membrane that wraps around each larval wing (Figure 2—figure supplement 1). In contrast, the spot and eyespot focal marker gene Spalt, was present in all species with eyespots or with simpler spots, as previously reported (Oliver et al., 2012; Stoehr et al., 2013). The absence of EcR expression in J coenia eyespots is restricted to the wandering stage of development, as EcR is expressed in the eyespots of this species in later stages of development (Koch et al., 2003). The EcR expression data overall suggests that EcR localization in eyespots, at the wandering stages of development, is a derived trait, present only in species with eyespots. Some of these eyespotted species subsequently lost EcR expression at this stage of development, a phenomenon previously reported for forewing Cu1 ventral eyespots in B. anynana females (Monteiro et al., 2015).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig2-v1.jpg)
+
+**Figure 2.:** (A) 20E titers increase with an increase in rearing temperature across most species. This trait is ancestral in nature, with a likely origin before the origin of eyespots. (B) EcR is absent in simple spots, but present in the future eyespot centers of most of the species investigated (N ≥ 3 for each immunostaining: numbers in superscript represent sample size; Scale bars,10µm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (N ≥ 3 for each species, Scale bars, 10µm).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** All ancestral states are not significantly different from zero (gray outline).
 
 Finally, to test whether eyespots expressing EcR are size-regulated by 20E we manipulated 20E levels and EcR-mediated signaling directly, focusing again, exclusively on the wandering stages of development, previously shown to be the critical hormone-sensitive stage in B. anynana. Functional experiments were performed in four species of butterflies from different Nymphalid subfamilies, Idea leuconoe (Danainae), a control outgroup danainae with no EcR expression in its black spots, Vindula dejone (Nymphalinae), Doleschallia bisaltide (Nymphalinae), and B. anynana (Satyrinae), the latter three displaying EcR expression in their eyespot centers. Our prediction would be that Idea should not respond to 20E signaling at all, given the lack of the receptor in its spots, and that increases in 20E signaling at low temperature might cause the eyespots of Vindula and Doleschalia to become smaller but those of B. anynana to become larger, whereas decreases of 20E signaling at high temperature might cause the eyespots of the first two species to become larger but smaller in B. anynana. Injections of 20E into female wanderers reared at low temperature (and with lower 20E titers) and of an EcR antagonist, CucB, into female wanderers reared at high temperature (and with higher 20E titers), showed no response across the first three species, whereas eyespot size significantly increased with 20E injections and decreased with antagonist injections in B. anynana (Figure 3). These data indicate that only the eyespots of B. anynana are sensitive to 20E signaling at the wandering stage, within the natural range of titers displayed by these species. This sensitivity is a derived trait potentially restricted to the satyrid sub-family within nymphalids (Figure 4).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig3-v1.jpg)
 
-**Figure 3.:** B. anynana butterflies.Four species of butterflies were injected with 20E hormones or EcR antagonists (CucB) during the wandering (Wr) stage. Control larvae were injected with an equal volume solution of saline vehicle (V). While Idea leuconoe, Vindula dejone and Doleschallia bisaltide are not sensitive to either of the hormone signal manipulations, B. anynana shows sensitivity towards both 20E and CucB. Error bars represent 95% CI of means. Significant differences between treatments are represented by asterisks: **, p<0.01, ***, p<0.001.Figure 3—source data 1.
+**Figure 3.:** Four species of butterflies were injected with 20E hormones or EcR antagonists (CucB) during the wandering (Wr) stage. Control larvae were injected with an equal volume solution of saline vehicle (V). While Idea leuconoe, Vindula dejone and Doleschallia bisaltide are not sensitive to either of the hormone signal manipulations, B. anynana shows sensitivity towards both 20E and CucB. Error bars represent 95% CI of means. Significant differences between treatments are represented by asterisks: **, p<0.01, ***, p<0.001.
 
 ## Discussion
 
@@ -55,7 +83,101 @@ Eyespot size plasticity in connection with wet and dry seasonal forms is widely 
 
 ## Materials and methods
 
-## Butterfly husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Butterflies, females)</td>
+      <td>Junonia atlites; Junonia coenia; Junonia iphita; Junonia almana; Doleschallia bisaltide; Vanessa cardui; Vindula dejone; Cethosia cynae; Bicyclus anynana; Morpho peleides; Danaus chryssipus; Idea leuconoe; Papilio polytes</td>
+      <td>Penang Butterfly Farm, Malaysia; Duke University; Yale University; National University of Singapore</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EcR common isoform, Manduca sexta</td>
+      <td>DSHB</td>
+      <td></td>
+      <td>1:10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Spalt, Primary antibody, Guinea pig</td>
+      <td>Stoehr et al., 2013</td>
+      <td></td>
+      <td>1:20000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFlour 488 green Goat anti-mouse secondary antibody</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11001, RRID:AB_2534069</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Guinea pig secondary antibody</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11076, RRID:AB_141930</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>20-Hydroxyecdysone (20E)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# H5142</td>
+      <td>Lot # 060M1390V</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cucurbitacin B (CucB)</td>
+      <td>Sigma–Aldrich</td>
+      <td>Cat# C8499</td>
+      <td>Lot # 035M47104V</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris v8.64</td>
+      <td>(ImarisXT, Bitplane AG)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rphylopars</td>
+      <td>(Goolsby et al., 2017)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ape</td>
+      <td>(Paradis et al., 2004)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>packages for R</td>
+      <td>(R Development Core Team, 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Butterfly husbandry
 
 All species were reared at two temperatures separated by 10 degrees, at 70 or 80% RH and at 12:12 hr light: dark cycle. The only exception was Junonia coenia, which was reared at 16:8 hr light: dark cycle and 80% RH. B. anynana was reared in climate control chambers in Singapore, at 17°C and 27°C, at 80% RH. Vanessa cardui, and Morpho peleides were reared in climate control chambers at Yale University, New Haven at 17°C and 27°C, and at 80% RH. Junonia coenia was reared at 20° and 30°C at Duke University. All other species of butterflies were reared at Entopia (formerly, Penang Butterfly Farm, Penang, Malaysia) in temperature-controlled chambers (PT2499 Incubator, Exoreptiles, Malaysia) at 20°C and 30°C, and at 70% RH. Humidity in these latter chambers was monitored using (PT2470 Hygrometer, Exoreptiles, Malaysia) and EL-USB-2 data loggers (Lascar Electronics, PA 16505, USA).
 
@@ -65,27 +187,31 @@ Additional data for Nymphalid species not reared in Figure 1—source data 1—T
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49544/elife-49544-fig4-v1.jpg)
 
-**Figure 4.:** Phylogenetic analysis suggests three independent origins for two different patterns of eyespot size plasticity (eyespot size decreases with increasing temperatures: red lineages and red circles, and eyespot size increases with increasing temperature: blue lineage and blue circles). Empty circles represent a lack of plastic response. Green circles (character state 1) represent high 20E titers with increasing temperature, while white circles (character state 0) represent no significant difference in titers at two developmental temperatures. Green squares represent presence of EcR in eyespots, while white squares represent its absence. EcR expression in eyespots is inferred to have originated concurrently with the origin of eyespots, about 85 Mya, and subsequently lost in a few nymphalid lineages. Green triangles represent sensitivity towards 20E (character state 1), while white triangles represent absence of sensitivity (character state 0). Question marks represent missing data points. Circles, square and triangle on left with vertical bars represent respective estimated evolution of eyespot size plasticity (red and blue circles), 20E titer plasticity (green circle), EcR expression in eyespots (green square) and sensitivity towards 20E (green triangle). Alternative models using Maximum Likelihood reach similar conclusions (Supplementary Information: Figure 1—figure supplement 2, 3, Figure 4—source data 1). H. iboina image copyright of David.C. Lees, Cambridge University Department of Zoology.Figure 4—source data 1.See Figure 1—figure supplement 1 for node identities.
+**Figure 4.:** Phylogenetic analysis suggests three independent origins for two different patterns of eyespot size plasticity (eyespot size decreases with increasing temperatures: red lineages and red circles, and eyespot size increases with increasing temperature: blue lineage and blue circles). Empty circles represent a lack of plastic response. Green circles (character state 1) represent high 20E titers with increasing temperature, while white circles (character state 0) represent no significant difference in titers at two developmental temperatures. Green squares represent presence of EcR in eyespots, while white squares represent its absence. EcR expression in eyespots is inferred to have originated concurrently with the origin of eyespots, about 85 Mya, and subsequently lost in a few nymphalid lineages. Green triangles represent sensitivity towards 20E (character state 1), while white triangles represent absence of sensitivity (character state 0). Question marks represent missing data points. Circles, square and triangle on left with vertical bars represent respective estimated evolution of eyespot size plasticity (red and blue circles), 20E titer plasticity (green circle), EcR expression in eyespots (green square) and sensitivity towards 20E (green triangle). Alternative models using Maximum Likelihood reach similar conclusions (Supplementary Information: Figure 1—figure supplement 2, 3, Figure 4—source data 1). H. iboina image copyright of David.C. Lees, Cambridge University Department of Zoology.
 
-## Hemolymph collection
+### Hemolymph collection
 
 Previous studies in B. anynana have pointed to the wandering (Wr) stage as the critical temperature sensitive stage for determination of ventral hindwing eyespot size (Monteiro et al., 2015). Time lapse photographs of larval development were captured every 15 min using a RICOH camera to determine the beginning of the Wr stage across all species. Initiation of Wr stage is marked by the larvae stopping to feed, purging their gut, and starting to wander away from the food and looking for a place to pupate. Using Hamilton syringes, 20 µL of hemolymph, were extracted from each larvae at ~70% development in Wr stage (15 hr after Wr started for animals reared at 30°C, and 25 hr for animals reared at 20°C). Extracted hemolymph was then dissolved in freshly prepared 90 µl methanol + 90 µl isooctane and stored at −20°C until hormone extraction (Bhardwaj et al., 2017) .
 
-## Wing tissue collection
+### Wing tissue collection
 
 Larval wing discs were dissected from Wr stage larvae at 27°C or 30°C and stored in fix buffer until further processing at 4°C. These were later stained for EcR expression using a primary antibody 15F1 (DSHB) raised against a Manduca sexta EcR peptide shared across all isoforms of EcR. AlexaFlour 488 green Goat anti-mouse (Thermo Fisher Scientific Cat# A-11001, RRID:AB_2534069) was used as secondary antibody at a dilution of 1:800 for EcR stains. Primary antibodies against Spalt, a previously published (Stoehr et al., 2013) nuclear marker for spots and eyespots, was used at a dilution of 1:20000, supported with Goat anti-Guinea pig secondary antibody (Molecular Probes Cat# A-11076, RRID:AB_141930; at a dilution of 1:800), as a location marker for putative eyespots/spots in the larval wings. Serial optical sections of the Cu1 eyespot wing sector were imaged using LSM510 Meta, to distinguish between dorsal and ventral surfaces. Specific slices were obtained from raw images using Imaris v8.64 (ImarisXT, Bitplane AG, software available at http://bitplane.com. Junonia coenia EcR data were taken from Koch et al. (2003).
 
-## 20E and antagonist injections
+### 20E and antagonist injections
 
 Four species of butterflies, Idea leuconoe, Vindula dejone, Doleschallia bisaltide, and B. anynana, were injected with 20E or CucB during the Wr stage. Injections were made at ~50% development of Wr stage (12–14 hr at 30°C, 18–22 hr at 20°C; For B.anynana, rearing were done at 27°C and 17°C, respectively). Average body weights of wandering larvae and total hemolymph present were calculated for each species, and used to calculate naturally circulating 20E levels in vivo. A gradient of different concentrations of 20E and CucB were used for pilot experiments. Maximum concentrations of 20E, which did not surpass the natural levels, and of CucB, which did not cause mortality or pupation defects, were used for injections and are summarized in the table below. 20E and CucB were dissolved in 10% EtOH to make working solution for injections. Equal volume injections of Vehicle (10% EtOH in Saline) injections were done as controls (Figure 3—source data 1). After injections, animals were reared at their regular rearing temperature (17°C for B.anynana, 20°C for other 20E injected animals and 27°C for B.anynana, 30°C for CucB injected animals) until emergence as adults. After emergence, the wings were dissected, imaged, and scored for further analysis.
 
-## Statistical analysis
+### Statistical analysis
 
-All wing and eyespot data were log10 transformed to ensure linearity of wing size with eyespot size for purposes of allometric scaling and regression analysis, and to be able to compare slopes across species with different eyespot sizes and wing sizes. Univariate ANCOVAs were performed using hindwing Cu1 eyespot area as the main variable, hindwing area as a covariate, and rearing temperature as a fixed factor in SPSS v21. Graphs were plotted in Microsoft Office 2016 for Mac. Slopes for plasticity of eyespot size and 20E titers were measured using the expression:Slope=(Valueathightemperature−Valueatlowtemperature)Differenceinrearingtemperature(10∘C)
+All wing and eyespot data were log10 transformed to ensure linearity of wing size with eyespot size for purposes of allometric scaling and regression analysis, and to be able to compare slopes across species with different eyespot sizes and wing sizes. Univariate ANCOVAs were performed using hindwing Cu1 eyespot area as the main variable, hindwing area as a covariate, and rearing temperature as a fixed factor in SPSS v21. Graphs were plotted in Microsoft Office 2016 for Mac. Slopes for plasticity of eyespot size and 20E titers were measured using the expression:
+
+$$
+Slope=\frac{(Valueathightemperature−Valueatlowtemperature)}{Differenceinrearingtemperature(10^{∘}C)}
+$$
 
 Using reverse transformed data for eyespot size, and untreated values for hormone titers.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 Patterns of plasticity in eyespot size were categorised in distinct groups based on positive, negative, or slopes undistinguishable from zero when eyespot size was plotted against temperature. Using a pruned version of a larger phylogenetic tree for all nymphalid genera (Wahlberg et al., 2009; Oliver, 2013), ancestral trait reconstructions were performed, and evolution of the reaction norm slopes was mapped using maximum parsimony in Mesquite. Similar analyses were performed using data obtained for hormone titer plasticity where species were categorized into two categories – those with a positive slope or a zero slope, and data for presence or absence of EcR expression, and 20E-EcR signaling affecting eyespot size.
 
@@ -93,10 +219,10 @@ We also evaluated several hypotheses concerning the evolution of relevant traits
 
 For all comparisons, there was little significant support for one hypothesis over another (Figure 4—source data 1). In tests on the origin of eyespot size plasticity, both the MRCA to all butterflies and the MRCA to all butterflies with eyespots had slightly better likelihood and AICc scores for being non-plastic than being plastic. Positive hormone titer plasticity in the MRCA to all butterflies had more support than a non-plastic MRCA, although the difference in likelihoods and AICc was not significant. Finally, the absence of EcR expression in the MRCA of all eyespot-bearing butterflies had higher likelihood and AICc scores than a model in which the MRCA did express EcR in future spot / eyespot centers. The absence of significant support for one model over another is largely due to the low number of species examined.
 
-## Phylogenetic analysis of continuous reaction norms
+### Phylogenetic analysis of continuous reaction norms
 
 We also analyzed the continuous-valued measures of four plasticity traits: slope of size plasticity in the ventral hind wing Cu1 eyespot and slopes of titer plasticity in juvenile hormone, ecdysone, and 20E, Using the Rphylopars (Goolsby et al., 2017) and ape (Paradis et al., 2004), packages for R (R Development Core Team, 2018). We estimated ancestral states separately for each trait, using the anc.recon function in Rphylopars. For each ancestral node, we used the 95% confidence interval to determine significance: if zero was excluded from the 95% C.I., the ancestral state was categorized as having a significantly non-zero slope.
 
-## Data and materials availability
+### Data and materials availability
 
 All data is available in the main text or the supplementary materials.

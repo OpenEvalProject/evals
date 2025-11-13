@@ -22,10 +22,10 @@
 
 ### Affiliations
 
-1. https://ror.org/012p63287 Department of Biomedical Sciences of Cells and Systems, University Medical Center Groningen, University of Groningen Groningen Netherlands
-2. https://ror.org/0420db125 Laboratory of Cellular and Structural Biology, The Rockefeller University New York United States
-3. https://ror.org/012p63287 European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen Groningen Netherlands
-4. https://ror.org/012p63287 Department of Radiation Oncology, University Medical Center Groningen, University of Groningen Groningen Netherlands
+1. Department of Biomedical Sciences of Cells and Systems, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+2. Laboratory of Cellular and Structural Biology, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+3. European Research Institute for the Biology of Ageing, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+4. Department of Radiation Oncology, University Medical Center Groningen, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
 
 † Corresponding author
 
@@ -45,15 +45,31 @@ Here, we report that not just impaired function of ATM, but also inhibition of t
 
 ## Results
 
-## Protein aggregation is increased upon targeting ATM, ATR, or DNA TOPs
+### Protein aggregation is increased upon targeting ATM, ATR, or DNA TOPs
 
 Aggregated proteins are often resistant to solubilization by SDS, and they can therefore be isolated using a step-wise detergent fractionation and centrifugation method. We isolated 1% SDS-resistant proteins (from here on referred to as aggregated proteins) and quantified these by SDS-PAGE followed by in-gel protein staining. In line with previous findings (Lee et al., 2018), we find that knocking out ATM in both U2OS and HEK293 results in an increase in protein aggregation (Figure 1A and B, Figure 1—figure supplement 1A–C). Transient chemical inhibition of ATM (48–72 hr prior to fractionation; Figure 1—figure supplement 1D) resulted in an increase in aggregated proteins in HEK293T cells as well (Figure 1C and D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig1-v2.jpg)
+
+**Figure 1.:** See also Figure 1—figure supplement 1. (A) In-gel Coomassie staining of indicated fractions of cell extracts of WT and ATM KO U2OS cells. The relative amounts of each fraction loaded are indicated. (B) Quantification of (A). Circles depict individual experiments; gray dotted lines depict matched pairs. Wilcoxon matched-pairs signed-rank test. (C) Aggregated (silver stain) and whole-cell lysate (WCL; Coomassie) fractions of HEK293T cells treated transiently with chemical agents targeting the indicating proteins (see Table 1 for drugs and doses used; for etoposide [Etop]: 3 μM; for camptothecin [CPT]: 100 nM). See also Figure 1—figure supplement 1D. (D) Quantification of (C). Circles depict individual experiments. Two-tailed Student’s t-test with Bonferroni correction. (E) Protein fractions of HEK293T cells treated transiently with increasing amounts of CPT (20–100 nM) or Etop (0.6–3 μM). (F) Quantification of (E). Two-tailed Student’s t-test with Bonferroni correction. (G) Protein fractions of HEK293T cells treated transiently with CPT (40 nM) or Etop (1.5 μM), targeting TOP1 or TOP2, respectively, 24 hr or 72 hr after treatment. (H) Quantification of (G). Two-tailed Student’s t-test with Bonferroni correction. In (B), (D), (F), and (H), the red line indicates the mean.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Western blot of U2OS wild-type and ATM KO cells, probed using the indicated antibodies. (B) Aggregated (silver stain) and whole-cell lysate (WCL; Coomassie) fractions of HEK293 wild-type and ATM KO cells. Three independent biological repeats were loaded on one gel and stained in-gel. WCL fractions were also subjected to Western blotting and probed using the indicated antibodies. (C) Quantification of (A). Circles depict individual experiments. Two-tailed Student’s t-test. (D) Experimental outline of Figure 1C and E. (E) Aggregated (silver stain) and WCL (Coomassie) fractions of U2OS cells treated with increasing doses of camptothecin (CPT) (0.2, 0.4, 0.6 μM). n = 2. (F) Aggregated (silver stain) and WCL (Coomassie) fractions of HEK293T cells treated transiently with CPT (40 nM) following the same experimental set-up as in (D). PARP inhibitor (4 μM, see also Materials and methods) was added during the recovery period. (G) Quantification of (F). Circles depict individual experiments. Two-tailed Student’s t-test with Bonferroni correction. In (C) and (G), red lines indicate the mean.
+
 Using the same experimental set-up, we examined the impact on aggregation of targeting other DDR components. This revealed that chemical inhibition of the checkpoint signaling kinase ATR also enhanced protein aggregation (Figure 1C and D). Inhibition of tyrosyl-DNA-phosphodiesterase 1 (TDP1), which repairs various 3′-blocking lesions including topoisomerase 1 (TOP1) cleavage complexes, had no clear effect on protein aggregation (Figure 1C and D). This could be a result of functional redundancy or limited TOP1 trapping occurring under unstressed conditions in a timeframe of 72 hr. We therefore also directly targeted TOPs using the chemotherapeutic compounds camptothecin (CPT) and etoposide (Etop). The genotoxic impact of CPT and Etop is a well-documented consequence of their ability to trap (i.e., ‘poison’) respectively TOP1 and TOP2 cleavage complexes on the DNA, resulting in DNA damage (Pommier et al., 2010). Strikingly, we found that transient treatment with either compound caused a particularly strong increase in protein aggregation (Figure 1C and D), which was dose-dependent (Figure 1E and F). Treatment of U2OS cells with CPT led to a dose-dependent increase in aggregation as well, although at higher doses compared to HEK293T cells (Figure 1—figure supplement 1E). Inhibition of poly(ADP-ribose)polymerases 1–3 (PARP1-3), involved in single-strand break repair, did not increase aggregation (Figure 1C and D). Recently, it was reported that PARP inhibition reduces the enhanced aggregation triggered by a loss of ATM (Lee et al., 2021), something we find as well for CPT-treated cells (Figure 1—figure supplement 1F, G). Neither CPT nor Etop treatment in HEK293T cells had any effect on aggregation within the first 24 hr (Figure 1G and H). This reveals that the increased aggregation occurs only late and argues that it does not stem from any immediate, unknown damaging effect of either CPT or Etop on mRNA or protein molecules. Together, these data indicate that the increased protein aggregation triggered by targeting ATM, ATR, and TOPs is a late consequence of genotoxic stress.
 
-## CPT and ATM loss drives aggregation in a cell-type-dependent manner
+### CPT and ATM loss drives aggregation in a cell-type-dependent manner
 
 To investigate the nature of the proteins that become aggregated after genotoxic stress, we subjected the SDS-insoluble protein aggregate fractions and whole-cell lysates (WCL) of control (DMSO) and CPT-treated HEK293T cells to label-free proteomics (Figure 2—figure supplement 1A). Using a stringent cutoff (Benjamini–Hochberg corrected p<0.05; –1>log2fold change >1; identified in >1 repeats of CPT-treated cells), we determined that 122 proteins aggregated significantly more after CPT treatment compared to only 29 proteins that aggregated less (Figure 2A, Supplementary file 1). These 122 proteins aggregate highly consistent (Supplementary file 1). Most of them were not identified as aggregating in untreated cells, implying that they are soluble under normal conditions.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig2-v2.jpg)
+
+**Figure 2.:** See also Figure 2—figure supplement 1. (A) Volcano plot of label-free quantification (LFQ) MS/MS analysis of the aggregated fractions of DMSO and CPT-treated HEK293T cells. n = 4. Only proteins identified in >1 repeats of either case or control are shown. (B) Volcano plot of LFQ MS/MS analysis of the aggregated fractions of DMSO and ATM inhibitor-treated HEK293T cells. n = 4. Only proteins identified in >1 repeats of either case or control are shown. (C) Venn diagram showing overlap between U2OS and HEK293T increased aggregation, after the indicated treatments. (D) Western blot using the indicated antibodies on the aggregated and whole-cell lysate (WCL) fractions of drug-treated and ATM KO HEK293 cells, and wild-type U2OS cells. n = 2. (E) GO term analysis (Function) of the increased aggregation in CPT- or ATM-inhibitor-treated HEK293T cells. (F) Venn diagram showing overlap between increased aggregation after the indicated treatments in HEK293T cells and baseline aggregation in U2OS cells. (G) Aggregated (silver stain) and WCL (Coomassie) fractions of untreated HEK293T and U2OS cells. n = 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Experimental outline. All samples (whole-cell lysate [WCL], 1% SDS insoluble proteins, and RNA) were generated in parallel from the same cells in four independent repeats for each experiment. (B) Volcano plot of label-free quantification (LFQ) MS/MS analysis of U2OS wild-type and ATM KO cells. n = 4. Only proteins identified in >1 repeats of either case or control are shown. (C) Volcano plot of LFQ MS/MS analysis of U2OS cells DMSO or CPT treated. n = 4. Only proteins identified in >1 repeats of either case or control are shown. (D–I) GO term analysis (Component and Function) of the increased aggregation after the indicated treatment in the indicated cell line. GO terms with <2000 background genes (max 10 terms) are shown. (J) Venn diagram showing overlap between U2OS and HEK293T baseline aggregation.
 
 We next used the same MS/MS approach to investigate the aggregation triggered by inhibition of ATM in HEK293T cells. We detected 39 proteins that aggregated significantly more in ATM-inhibited cells compared to control cells and 5 proteins that aggregated less (Figure 2B, Supplementary file 1). Surprisingly, only one protein was found to aggregate more after both CPT treatment and inhibition of ATM (Figure 2C), suggesting that these genotoxic conditions drive the aggregation of different proteins. However, we noted that several proteins that aggregated more after CPT treatment were absent in the dataset of ATM inhibition (Supplementary file 1), suggesting that we may have only identified the most abundantly aggregating proteins. We selected MCM7, TUBA1A, and HDAC1, three proteins that were identified in our MS/MS analysis, to consistently aggregate more in CPT-treated HEK293T cells but that were not picked up in the ATM inhibition MS/MS analysis and confirmed that all three aggregated more in CPT-treated HEK293 cells (Figure 2D). MCM7, TUBA1A, and HDAC1 also aggregated more than in unstressed conditions after treatment of HEK293 cells with ATM inhibitor or when ATM was knocked out completely (Figure 2D). These findings indicate that these different genotoxic conditions drive aggregation similarly, although the most prominent aggregating proteins differ.
 
@@ -63,11 +79,23 @@ At first glance, protein aggregation caused by a (functional) loss of ATM or CPT
 
 As protein aggregation can manifest vastly different in distinct cell types (David et al., 2010; Freer et al., 2016), we examined which proteins aggregated consistently in HEK293T and U2OS cells, regardless of the presence or absence of genotoxic stress. Importantly, within each cell line, these ‘consistently’ aggregating proteins show a very high overlap between experiments (~80% overlap, see also Supplementary file 1). Based on this, we defined a ‘baseline aggregating fraction’ for each cell line. This consisted of aggregating proteins that were not changed upon the genotoxic treatments: these proteins were detected in at least two experimental replicates of both treated and untreated cells and exhibited p-adjusted values of >0.05 in t-test comparisons, consistent with no significant effect (Supplementary file 1). This revealed that 66% (118/179) of the HEK293T baseline fraction aggregates in the U2OS baseline as well (Figure 2—figure supplement 1J). Importantly, 62% (99/160) of the proteins that aggregated more in CPT- or ATM inhibitor-treated HEK293T cells are also part of the U2OS baseline (Figure 2F). This indicates that in U2OS cells afar bigger cluster of proteins ends up in aggregates, even under normal conditions. Indeed, silver staining revealed that in unstressed U2OS cells protein aggregation is substantially more prominent than in untreated HEK293T cells (Figure 2G). This is also reflected in MCM7, TUBA1A, and HDAC1, all three of which aggregate strongly already in (untreated) wild-type U2OS cells (Figure 2D). These findings indicate that the lack of overlap between proteins that aggregate after CPT- or ATM inhibitor treatment in HEK293T and proteins that aggregate in U2OS after CPT treatment or in ATM KO cells is primarily a reflection of a different proteome and a different background aggregation in these two cell lines.
 
-## Proteins that aggregate after genotoxic stress represent a metastable subproteome
+### Proteins that aggregate after genotoxic stress represent a metastable subproteome
 
 These data indicate that the genotoxic conditions of TOP1 poisoning and ATM loss have a cell line-dependent impact on protein aggregation. In both HEK293T and U2OS cells, protein aggregation does not appear to be limited to a specific location or function but affects proteins throughout the proteome. This suggests that the aggregation is primarily driven by the physicochemical characteristics of the proteins involved.
 
 A key determinant of aggregation is supersaturation. Protein supersaturation refers to proteins that are expressed at high levels relative to their intrinsic propensity to aggregate, which makes them vulnerable to aggregation. Supersaturation has been shown to underlie the widespread protein aggregation observed in age-related neurodegenerative diseases, and in general aging (Ciryam et al., 2015; Ciryam et al., 2019; Freer et al., 2019; Kundra et al., 2017; Noji et al., 2021). The relevance of supersaturation is underlined by the notion that evolutionary pressures appear to have shaped proteomes along its lines, so that at a global level protein abundance is inversely correlated with aggregation propensity (Tartaglia et al., 2007). To determine the role of protein supersaturation in the aggregation observed in our experiments, we first defined a control group of proteins that were not identified as aggregating (NIA) for HEK293T cells to serve as a benchmark. This group consisted of all proteins that were only identified in the HEK293T WCL, and not in the SDS-insoluble fractions (see also Supplementary file 1). We next examined the intrinsic aggregation propensities of proteins using the aggregation prediction tools TANGO (Fernandez-Escamilla et al., 2004) and CamSol (Sormanni and Vendruscolo, 2019). Surprisingly, we found that aggregated proteins have in general a slightly lower (for the baseline aggregation) or equal (for CPT- and ATM inhibitor-induced aggregation) intrinsic propensity to aggregate compared to NIA proteins (Figure 3A, Figure 3—figure supplement 1A). However, even proteins with a low intrinsic propensity to aggregate can be supersaturated and be vulnerable to aggregation, when they are expressed at sufficiently high levels. Interestingly, our MS/MS analysis revealed that proteins that aggregate in CPT- or ATM-inhibited-treated HEK293T cells are in general highly abundant compared to NIA proteins in (Figure 3B). Cross-referencing the aggregated proteins in our datasets against a cell-line-specific NSAF reference proteome (Geiger et al., 2012) confirmed this (Figure 3—figure supplement 1B). After performing RNA sequencing on the same HEK293T cell samples that we used for our MS/MS analysis (Figure 2—figure supplement 1A, Supplementary file 2), we found that genes coding for the aggregating proteins are in general higher expressed than genes coding for NIA proteins (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig3-v2.jpg)
+
+**Figure 3.:** See also Figure 3—figure supplements 1 and 2. (A) TANGO scores of HEK293T whole-cell lysate (WCL), nonaggregated proteins (NIA), and aggregated fractions. (B) Protein abundance of HEK293T WCL, nonaggregated proteins (NIA), and aggregated fractions as measured by label-free quantification (LFQ) intensities. (C) Transcript abundances of HEK293T WCL, nonaggregated proteins (NIA), and aggregated fractions (as measured by RNAseq). (D) Supersaturation scores of HEK293T WCL, nonaggregated proteins (NIA), and aggregated fractions. (E) Clarification of (F). (F) Transcript abundances (as measured by RNAseq) plotted against TANGO scores for the complete HEK293T MS/MS analysis. Proteins above the diagonal (=HEK293T median saturation score, calculated using the HEK293T WCL dataset) are relatively supersaturated. (G) catGRANULE scores for the indicated protein fractions in HEK293T cells. In all graphs, individual proteins and median values (red lines) are shown. p-Values are obtained by Kruskal–Wallis tests followed by Dunn’s correction for multiple comparisons.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CamSol-intrinsic (in)solubility scores of complete whole-cell lysate (WCL), nonaggregated proteins (NIA), and aggregated fractions in HEK293T cells. Dotted line indicates the theoretical threshold of relative intrinsic (in)solubility. See text for reference. (B) Protein abundances of HEK293T WCL and aggregated fractions obtained by cross-referencing with a HEK293 NSAF (normalized spectral abundance factor) reference proteome, as well as the protein abundances of the entire HEK293 reference proteome itself (see text for reference). (C) Supersaturation scores obtained by cross-referencing with the human composite supersaturation database generated by Ciryam et al. (see text for reference) for HEK293T cells. (D) PScores of complete WCL, nonaggregated proteins (NIA), and aggregated fractions in HEK293T. (E) Presence of proteins with a high PScore (> 4) in the indicated fractions in HEK293T. See also text. (F) Distribution of supersaturated (Sup) and non-supersaturated (NonSup) proteins in the HEK293T and U2OS NIA fractions. (G). catGRANULE scores of supersaturated (Sup) and non-supersaturated (NonSup) proteins in HEK293T and U2OS NIA fractions. (H) TANGO scores of complete WCL, nonaggregated proteins (NIA), and aggregated fractions in U2OS cells. (I) CamSol-intrinsic (in)solubility scores of complete WCL, nonaggregated proteins (NIA), and aggregated fractions in U2OS cells. Dotted line indicates the theoretical threshold of relative intrinsic (in)solubility. (J) Transcript abundances (as measured by RNAseq) of the indicated fractions in U2OS cells. (K) Protein abundance as measured by label-free quantification (LFQ) intensities of the indicated fractions in U2OS cells. (L) Protein abundances of U2OS WCL and aggregated fractions obtained by cross-referencing with a U2OS normalized spectral abundance factor (NSAF) reference proteome, as well as the protein abundances of the entire U2OS reference proteome itself (see text for reference). (M) Supersaturation scores for the indicated protein fractions in U2OS cells. (N) Supersaturation scores obtained by cross-referencing with the supersaturation database generated by Ciryam et al. (see text for reference) for U2OS cells. (O) Transcript abundances (as measured by RNAseq) plotted against TANGO scores for the complete U2OS MS analysis. All proteins above the diagonal (=U2 OS median saturation score, calculated using the U2OS WCL dataset) are relatively supersaturated. See also Figure 3E and F. (P) catGRANULE scores for the indicated protein fractions in U2OS cells. (Q) PScores of complete WCL, nonaggregated proteins (NIA), and aggregated fractions in U2OS. (R) Presence of proteins with a high PScore (>4) in the indicated fractions in U2OS. For all bar graphs, bars represent mean ± SEM. For all other graphs, circles represent individual proteins, red lines indicate the median value. p-Values are obtained by Kruskal–Wallis tests followed by Dunn’s correction for multiple comparisons, except in N, where two-tailed Mann–Whitney tests were used.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** GO term analysis of the differentially expressed genes (–1 > log2FC > 1) RNAseq data of the indicated cell line after the indicated treatment. Upper panels: upregulated processes are shown. Lower panels: downregulated processes are shown. Note that HEK293T cells treated with ataxia telangiectasia mutated (ATM) inhibitor are not included as only two genes were differentially expressed (see also Supplementary file 2).
 
 To evaluate whether these proteins are indeed supersaturated, we used the method validated by Ciryam et al., which uses transcript abundance and aggregation propensity as predicted by TANGO to estimate supersaturation (Ciryam et al., 2013). Using the RNA-sequencing data (Supplementary file 2), we confirmed that aggregating proteins are in general indeed more supersaturated than NIA proteins (Figure 3D–F). Cross-referencing our data against the composite human supersaturation database generated by Ciryam et al. yielded a similar picture (Figure 3—figure supplement 1C).
 
@@ -77,9 +105,21 @@ Upon examining the proteins that aggregate in U2OS cells, we found further suppo
 
 A GO term analysis of our RNAseq data revealed a striking lack of overlap in transcriptional processes altered upon treatment with CPT or loss of ATM function in either HEK293T or U2OS cells (Figure 3—figure supplement 2, Supplementary file 2). Intriguingly, only two transcripts (one up and one down) were significantly altered (–1 > log2FC > 1) after ATM inhibition in HEK293T cells despite the enhanced aggregation occurring in these cells. This further underlines that the enhanced aggregation after CPT treatment or a loss of ATM function is mostly driven by the physicochemical characteristics of the proteins involved.
 
-## Genotoxic stress-induced protein aggregation is the result of a global lowering of the protein aggregation threshold
+### Genotoxic stress-induced protein aggregation is the result of a global lowering of the protein aggregation threshold
 
 Our data shows that a substantial number of inherently similarly vulnerable proteins aggregate under the genotoxic conditions of CPT treatment or ATM loss. Their consistent aggregation across independent repeats argues against the possibility that this is caused by any genotoxic stress-induced DNA sequence alterations in their own coding regions as these would occur more randomly throughout the genome. Moreover, we find that the increased aggregation can also not be explained by any changes in abundance of the proteins involved, resulting for example from DNA damage-induced transcriptional dysregulation, as very limited overlap exists between proteins that aggregate and proteins with an altered expression upon CPT treatment or ATM loss (see Figure 4A for HEK293T and Figure 4—figure supplement 1A for U2OS).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig4-v2.jpg)
+
+**Figure 4.:** See also Figure 4—figure supplements 1 and 2. (A) Overlap between RNA-sequencing analysis and label-free quantification (LFQ) MS/MS analysis for whole-cell lysate (WCL) and aggregated (Agg.) protein fractions. Only significant increases are taken into account. (B) Relative occurrences in the indicated fractions in HEK293T cells of proteins that have been shown to aggregate upon heat stress. See text for reference. (C) Relative occurrences in the indicated fractions in HEK293T cells of proteins that have been found to be associated with stress granules. See text for reference. (D) Pulse label experiment. See also Figure 4—figure supplement 1E. HEK293T cells were treated with DMSO or camptothecin (CPT) (0,02 μM) and pulsed with radioactive 35S-labeled cysteine and methionine for 30 min. Cells were then harvested at the indicated timepoints (10, 20, or 40 min post pulse). Left upper panel: WCLs were run on SDS-PAGE and exposed (autoradiogram) or stained (Coomassie). Left lower panel: aggregated fractions were run on SDS-PAGE and exposed (autoradiogram) or stained (silver stain). Right upper panel: quantification of the incorporated 35S of the indicated treatment in the whole-cell extract. Right lower panel: quantification of the incorporated 35S of the indicated treatment in pellet fractions, normalized for total aggregation levels (as measured in the silver stains) and total 35S incorporation (as measured in the WCL fractions). n = 4. (E) Relative occurrences of proteins identified in various disease (model) datasets in the indicated fractions in HEK293T cells, obtained from the indicated studies. See also Figure 4—figure supplement 2. (F) Left panel: filter trap assay of HEK293 cells expressing inducible Q71-GFP that received the indicated treatment, probed with GFP antibody. n = 3. For doses, see Table 1. Right panel: quantification, using Student’s two-tailed t-test followed by a Bonferroni correction for multiple comparisons. See also Figure 4—figure supplement 1F. (G) Filter trap assay of HEK293 cells expressing inducible Q71-GFP that were treated with the indicated doses of etoposide (Etop), probed with GFP antibody. n = 2. (H) Western blot of WCL and aggregated proteins isolated from HEK293 cells expressing inducible luciferase-GFP, treated with ATM inhibitor or CPT, probed with the indicated antibodies. n = 2. See also Figure 4—figure supplement 1K. In (B), (C), and (E), chi-square testing was used to evaluate the statistical significance of differences in distributions. In (D), two-tailed Student’s t-tests were used.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Overlap between RNA-sequencing analysis and label-free quantification (LFQ) MS/MS analysis for whole-cell lysate (WCL) and aggregated (Agg.) protein fractions in U2OS cells. Only significant increases are taken into account. (B) Conceptual overview of aggregation in HEK293T and U2OS cells. U2OS cells have an inherently lower aggregation threshold, causing more proteins to be affected by aggregation already in the background. (C) Relative occurrences in the indicated fractions in U2OS cells of proteins that have been shown to aggregate upon heat stress. See text for reference. (D) Relative occurrences in the indicated fractions in U2OS cells of proteins that have been found to associate with stress granules. See text for reference. (E) Experimental outline of Figure 4D. (F) Experimental outline of Figure 4G and H, and of (G-J). (G, H) Western blot loading controls of Figure 4F and G using the indicated antibodies. (I) Western blot and filter trap assay of HEK293 cells expressing inducible Q71-GFP, treated with incremental doses of ATM inhibitor, using the indicated antibodies. n = 2. (J). Histograms showing the distribution of CAG repeat length of HEK293 GFP-Q71 cells treated as in (F). n = 3. (K) Experimental outline of Figure 4H.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Relative occurrences of proteins identified as aggregating in various proteinopathy (model) datasets in the HEK293T NIA and CPT-induced aggregation fractions. See also Figure 4E. Proteins marked with an * indicate proteins that overlap with more than one disease dataset.
 
 Instead, our data indicate that a long-term consequence of these genotoxic conditions is a global lowering of the aggregation threshold of proteins. As a result, more and more LLPS-prone, supersaturated proteins that are normally largely soluble now start to aggregate, with the most vulnerable proteins aggregating first. This aggregation threshold appears to be inherently lower in U2OS cells compared to HEK293T cells, causing a large population of metastable proteins to aggregate already under normal conditions. Genotoxic stress in U2OS cells lowers the aggregation threshold even further, causing a ‘second layer’ of LLPS-prone proteins that are not even always supersaturated to aggregate also (Figure 4—figure supplement 1B).
 
@@ -89,9 +129,21 @@ A shift in protein homeostasis has also been suggested to be key to the build-up
 
 If genotoxic conditions indeed over time lead to a lowering of the aggregating threshold, this would predict that they can also result in an accelerated aggregation of aggregation-prone model substrates. For example, disease-associated expanded polyQ proteins are inherently aggregation prone, and they have been shown to aggregate faster in systems in which protein homeostasis is impaired (Gidalevitz et al., 2013; Gidalevitz et al., 2010). We went back to HEK293 cells and employed a line carrying a stably integrated, tetracycline-inducible GFP-tagged Huntingtin exon 1 containing a 71 CAG-repeat (encoding Q71). Transient targeting of ATM, ATR, and in particular TOPs, but not TDP1, 24–48 hr prior to the expression of polyQ (Figure 4—figure supplement 1F) indeed accelerated polyQ aggregation in these cells (Figure 4F, Figure 4—figure supplement 1G), closely mirroring the increased aggregation that we observed before (Figure 1C and D). The accelerated polyQ aggregation under these conditions is also dose-dependent (Figure 4G, Figure 4—figure supplement 1H and I), and it is not explained by changes in total polyQ levels (Figure 4—figure supplement 1G–I). PolyQ aggregation is normally proportional to the length of the CAG repeat, which is intrinsically unstable. Importantly, we find no evidence that the accelerated polyQ aggregation induced by these genotoxic conditions can be explained by an exacerbated repeat instability (Figure 4—figure supplement 1J). Next, we also used the same tetracycline-inducible system and experimental set-up to investigate the aggregation of the protein folding model substrate luciferase-GFP (Figure 4—figure supplement 1K). We find that transient targeting of either ATM or TOP1 results in an enrichment of luciferase-GFP in the aggregated fraction (Figure 4H).
 
-## Genotoxic stress results in a rewiring of chaperone networks, which is however insufficient to prevent client aggregation
+### Genotoxic stress results in a rewiring of chaperone networks, which is however insufficient to prevent client aggregation
 
 We noted that ATM inhibition and in particular CPT treatment resulted in an increased aggregation of multiple (co)chaperones in HEK293T cells (Figure 5—figure supplement 1A and B). In U2OS cells, many (co)chaperones are already aggregating regardless of exposure to genotoxic stress, but still several chaperones aggregated significantly more in ATM KO cells or in cells treated with CPT (Figure 5—figure supplement 1C and D). The overlap that exists between aggregating chaperones in each cell line suggests that this occurs mostly cell line specific (Figure 5A, Figure 5—figure supplement 1E). These findings are interesting as chaperone systems have the ability to modulate aggregation (Hartl et al., 2011; Mogk et al., 2018; Sinnige et al., 2020; Tam et al., 2006). HSP70s (HSPAs) are among the most ubiquitous chaperones, and they have been shown to play a key role in maintaining protein homeostasis in virtually all domains of life (Gupta and Singh, 1994; Hunt and Morimoto, 1985; Lindquist and Craig, 1988). Upon cross-referencing the NIA and aggregating fractions against a recently generated client database of HSPA8 (HSC70; constitutively active form of HSP70) and HSPA1A (constitutively active and stress-inducible HSP70) (Ryu et al., 2020), we find that HSPA8 and HSPA1A clients are enriched among aggregating proteins (Figure 5B). We also mined the BioGRID human protein-protein interaction database using the complete KEGG dataset of (co)chaperones (168 entries). Although the transient and energetically weak nature of the interactions between many (co)chaperones and their clients (Clouser et al., 2019; Kampinga and Craig, 2010; Mayer, 2018) makes it likely that these interactions are underrepresented in the BioGRID database, it can provide additional insight into the presence of (putative) chaperone clients in the aggregating fractions (Victor et al., 2020). We find that all aggregating fractions are enriched for (co)chaperone interactors compared to nonaggregating proteins (NIA) (Figure 5C, Figure 5—figure supplement 2). Aggregating proteins have reported interactions with a broad range of chaperone families, most notably HSP70s and HSP90s (and known co-factors of these), and chaperonins (TRiC/CCT subunits) (Figure 5D, Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig5-v2.jpg)
+
+**Figure 5.:** See also Figure 5—figure supplements 1 and 2. (A) Presence of (co)chaperones in the aggregated protein fractions in HEK293T cells. Left panel: Venn diagram showing the overlap in aggregating chaperones. Right panel: graph depicting the overlap in aggregating chaperones in detail. (B) Pie charts showing the presence of HSPA1A and HSPA8 clients in aggregated protein fractions compared to clients present in both NIA fractions. See text for reference; only clients identified in at least two out of three repeats in Lee et al. were taken into account here. (C) Table showing the number of (co)chaperones logged in BioGRID as interacting with NIA and aggregating protein fractions. (D) See also (A): only (co)chaperones aggregating in both HEK293T experimental set-ups or significantly more in one of them are shown here. BioGRID (co)chaperone interactions with the aggregated proteins identified in this study, per (co)chaperone. Darker colors represent a higher percentage of proteins with a reported binding to that (co)chaperone. See Figure 5—figure supplement 2 for a complete overview. (E) Volcano plot showing protein levels of (co)chaperones in camptothecin (CPT)-treated HEK293T cells compared to DMSO-treated cells. (F) Differentially expressed (co)chaperones in CPT-treated HEK293T cells compared to DMSO-treated cells based on RNAseq data. (G) Western blot analysis using the indicated antibodies on the whole-cell lysate (WCL) fractions of HEK293T cells after the indicated time and treatment. HS, heat shock (2 hr at 43°C incubator). n = 2. (H) Graph showing (co)chaperones whose genes show a differential expression in both CPT-treated HEK293T cells compared to DMSO-treated HEK293T cells and in untreated U2OS compared to untreated HEK293T cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Volcano plots showing the presence of (co)chaperones in SDS-insoluble fractions as identified via MS/MS analysis for HEK293T ATM vs. DMSO, HEK293T camptothecin (CPT) vs. DMSO, U2OS ATM KO vs. wild-type, and U2OS CPT vs. DMSO, respectively. Red circles depict (co)chaperones with a statistically significant log2FC. (E) Presence of (co)chaperones in the aggregated protein fractions in U2OS cells. Left panel: Venn diagram showing the overlap in aggregating chaperones for the increased aggregating fractions. Right panel: graph depicting the overlap in aggregating chaperones in detail. (F, H, J) Differential expression of (co)chaperones as identified via MS/MS analysis for HEK293T ATM inhibitor vs. DMSO, U2OS ATM KO vs. wild-type, and U2OS CPT vs. DMSO, respectively. (G, J) Differential expression of (co)chaperones as determined via RNAseq for U2OS ATM KO vs. wild-type and U2OS CPT vs. DMSO, respectively. (K) Differentially expressed (co)chaperones in U2OS cells compared to HEK293T cells, as determined via RNAseq.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Complete overview of (co)chaperone interactions with the indicated fractions identified in this study as logged in BioGRID, per (co)chaperone. Darker colors represent a higher percentage of proteins with a reported binding to that (co)chaperone.
 
 Intriguingly, several (co)chaperones that we found to aggregate themselves are among the most frequent interactors (Figure 5D). This suggests that they were sequestered by protein aggregates as they engaged their client proteins, in line with what has been reported for disease-associated aggregation (Hipp et al., 2019; Jana et al., 2000; Kim et al., 2013; Mogk et al., 2018; Yu et al., 2019; Yue et al., 2021). Overall, we find that the relative levels of chaperone engagement of the different aggregating fractions largely reflect their respective supersaturation and LLPS propensities.
 
@@ -99,9 +151,21 @@ When the capacity of chaperone systems is overloaded, this can eventually trigge
 
 We reasoned that the difference in aggregation between HEK293T and U2OS cells might also be reflected in different chaperone expression levels already under normal conditions. Indeed, a differential expression analysis between untreated HEK293T and untreated U2OS cells revealed a strong overall upward shift of (co)chaperone gene expression levels in the latter (Figure 5—figure supplement 1K). For example, we found that gene expression levels of the small heat shock-like protein Clusterin (CLU) are >100-fold higher in wild-type U2OS compared to HEK293T cells, gene expression levels of the stress-inducible HSPA1A are >150-fold higher, and that of HSPB5 (or CRYAB, i.e., αB-crystallin) were >400-fold higher. Interestingly, the differences in expression of chaperone systems in U2OS compared to HEK293T overlap with the changes occurring after CPT treatment in the latter. Out of the 13 (co)chaperones identified to be expressed differently in both (RNAseq; –1 > log2FC > 1), 12 are altered in the same direction (Figure 5H).
 
-## Genotoxic stress-induced protein aggregation is amenable to modulation by chaperone systems
+### Genotoxic stress-induced protein aggregation is amenable to modulation by chaperone systems
 
 Our data suggest that the lowering of the aggregation threshold upon various genotoxic conditions is caused by an overload of chaperone systems, leading to a shift in protein homeostasis. We reasoned that targeting chaperone systems may then exacerbate aggregation. Indeed, mild HSP70 inhibition using the HSP70/HSC70 inhibitor VER-155008 after CPT treatment increased CPT-induced protein aggregation even further, while having no clear impact on aggregation in control cells (Figure 6—figure supplement 1A). Similar results were obtained when we blotted the aggregated fractions for MCM7 and TUBA1A (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig6-v2.jpg)
+
+**Figure 6.:** See also Figure 6—figure supplements 1 and 2. (A) Western blot of whole-cell lysate (WCL) and aggregated proteins isolated from HEK293T cells treated transiently with DMSO or camptothecin (CPT), followed by treatment with the VER-155008 HSP70 inhibitor (10 μM), probed with the indicated antibodies. n = 3. (B) Aggregated (silver stain) and WCL (Coomassie) fractions of U2OS wild-type and ATM KO cells, with or without overexpression of HSPB5. (C) Quantification of (B). (D) Representative immunofluorescence pictures of U2OS wild-type and ATM KO cells stably overexpressing HSPB5 or not, stained with ProteoStat (red) and Hoechst (blue). (E) Quantification of aggresome signatures in (D). (F). Representative immunofluorescence pictures of U2OS wild-type and ATM KO cells stably overexpressing HSPB5 or not, stained with anti-FUS (green) and Hoechst (blue). (G) Quantification of extranuclear FUS inclusions in (F). (H) Aggregated (silver stain) and WCL (Coomassie) fractions of HEK293 cells stably overexpressing HSPB5 or not, treated transiently with DMSO or CPT. Three technical repeats are shown here. (I) Quantification of three independent biological repeats of (H). In (C), (E), (G), and (I), squares represent independent biological repeats, bars represent mean ± SEM. p-Values are obtained by two-tailed Student’s t-tests followed by a Bonferroni correction for multiple comparisons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Aggregated (silver stain) and whole-cell lysate (WCL; Coomassie) fractions of HEK293T cells treated transiently with DMSO or camptothecin (CPT), followed by treatment with the VER-155008 HSP70 inhibitor (10 μM). n = 2. (B) Screen for chaperones that can alleviate the increase in aggregated proteins in U2OS ATM KO cells. Indicated V5-tagged chaperones were expressed for 48 hr. Cells were fractionated and analyzed. SDS-insoluble and WCL fractions were separated by SDS-PAGE and stained by Coomassie. Underneath a Western blot analysis confirming the overexpression of the indicated chaperones, using the indicated antibodies. Note that not all chaperones were equally well overexpressed. (C) See also Figure 6B and C. Upper panel: Western blot analysis of U2OS wild-type and ATM KO cells stably overexpressing HSPB5 (cell lines generated using retroviral infection, see Materials and methods) or not, probed using the indicated antibodies. Lower panel: quantification of the upper panel. Mean ± SEM, squares indicate independent experiments. Two-tailed Student’s t-test. n = 3. (D) Plot showing the number of U2OS wild-type and ATM KO cells stably overexpressing HSPB5 or not in which 53BP1 foci were present, after 2 Gy of γ-irradiation, at the indicated timepoints post irradiation. (E) Plot showing the number of 53BP1 (antibody: sc-22760) foci per cell in (D). In (D) and (E), bars represent mean ± SD of at least three independent biological repeats. (F) Venn diagram depicting the overlap in upregulated (co)chaperone levels in the indicated cell line and treatment, as determined via RNAseq. Note that only HSPB5 is transcriptionally upregulated under both conditions in U2OS cells, but not CPT-treated HEK293T cells. (G) Aggregated (silver stain) and WCL (Coomassie) fractions of HEK293 cells stably overexpressing HSPB5 or not, treated transiently with DMSO or CPT. Three technical repeats are shown. n = 2 (independent biological repeats).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/70726/elife-70726-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–C) Representative immunofluorescence pictures of U2OS cells treated with camptothecin (CPT) or gamma-irradiation, stained with anti-HSPB5, anti-HSP70, or anti-HSP90, respectively (in red), anti-53BP1 (antibody: A300-272A; in green) and DAPI (in blue).
 
 We next reasoned that increasing chaperone capacity may also raise the aggregation threshold again. We screened an overexpression library of several major chaperone families, including HSPAs, J-domain proteins (JDPs), and small heat shock proteins (HSPBs) for their ability to reduce the increased protein aggregation triggered by genotoxic conditions using U2OS ATM KO cells as a model (Figure 6—figure supplement 1B). While most of these had no overt effect, overexpression of several JDPs reduced protein aggregation, including the generic anti-amyloidogenic protein DNAJB6b (Aprile et al., 2017; Hageman et al., 2010). However, we found that the small heat shock protein HSPB5 was especially effective. HSPB5 is a potent suppressor of aggregation and amyloid formation (Delbecq and Klevit, 2019; Golenhofen and Bartelt-Kirbach, 2016; Hatters et al., 2001; Webster et al., 2019). Its higher expression in U2OS cells compared to HEK293T cells, as well as its further upregulation in U2OS cells lacking ATM, suggests that it plays an important role in counteracting widespread protein aggregation in these cells.
 
@@ -131,29 +195,498 @@ The increased protein aggregation that occurs after a loss of ATM – including 
 
 ## Materials and methods
 
-## Statistical analyses
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 ATM KO</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 HTT Q71-GFP</td>
+      <td>PMID:20159555</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293 luciferase-GFP</td>
+      <td>PMID:21231916</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293+ HSPB5</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS</td>
+      <td>ATCC</td>
+      <td>HTB-96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS ATM KO</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS + HSPB5</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>U2OS ATM KO + HSPB5</td>
+      <td>This study</td>
+      <td></td>
+      <td>See ‘Mammalian cell culture’</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>Phoenix-Ampho</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_H716</td>
+      <td>Retrovirus packaging cell line</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (mouse, monoclonal)</td>
+      <td>Takara Bio Clontech</td>
+      <td>632380</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATM (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Sc-23921</td>
+      <td>WB (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSPB5 (mouse, monoclonal)</td>
+      <td>StressMarq</td>
+      <td>SMC-159</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSPB5 (mouse, monoclonal)</td>
+      <td>StressMarq</td>
+      <td>SMC-165</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (mouse, monoclonal)</td>
+      <td>Fitzgerald</td>
+      <td>10R-G109a</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TUB (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5138</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HDAC1 (mouse, monoclonal)</td>
+      <td>DSHB</td>
+      <td>PCPR-HDAC1-2E12</td>
+      <td>WB (0.5 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MCM7 (Mmouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>47DC141</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TUBA1A (mouse, monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5168</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FUS (mouse, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Sc-47711</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>53BP1 (rabbit, monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Sc-22760</td>
+      <td>IF (1:150)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>53BP1 (rabbit, monoclonal)</td>
+      <td>Bethyl</td>
+      <td>A300-272A</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP70 (mouse, monoclonal)</td>
+      <td>StressMarq</td>
+      <td>SMC-104A</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HSP90 (mouse, monoclonal)</td>
+      <td>StressMarq</td>
+      <td>SMC-149</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pQCXIN–HSPB5 (plasmid)</td>
+      <td>PMID:20843828</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ATM CRISPR/Cas9 KO (plasmid)</td>
+      <td>Santa Cruz</td>
+      <td>sc-400192</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ATM HDR (plasmid)</td>
+      <td>Santa Cruz</td>
+      <td>sc-400192-HDR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HEK293Q71F(forward primer)</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>GAGTCCCTCAAGTCCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HEK293Q71R(reverse primer)</td>
+      <td>This study</td>
+      <td>PCR primer</td>
+      <td>AAACGGGCCCTCTAGACTC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Silver stain kit</td>
+      <td>Pierce (Thermo Scientific)</td>
+      <td>24612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Allprep DNA/RNA isolation mini kit</td>
+      <td>QIAGEN</td>
+      <td>80004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>S-trap micro</td>
+      <td>Protifi</td>
+      <td>K02-micro-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Masterpure Complete DNA and RNA purificiation kit</td>
+      <td>Epicentre (supplied through Lucigen)</td>
+      <td>MC85200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantSeq 3’ mRNA-Seq library prep kit (FWD)</td>
+      <td>Lexogen</td>
+      <td>015.96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Camptothecin</td>
+      <td>Selleckchem</td>
+      <td>S1288</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Etoposide</td>
+      <td>Sigma-Aldrich</td>
+      <td>E1383</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TDP1 inhibitor</td>
+      <td>Merck</td>
+      <td>532177</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KU-55933 (ATM inhibitor)</td>
+      <td>Selleckchem</td>
+      <td>S1092</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KU 0058948 (PARP inhibitor)</td>
+      <td>Axon Medchem</td>
+      <td>2001</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VE-821</td>
+      <td>Axon Medchem</td>
+      <td>1893</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>VER-155008</td>
+      <td>Axon Medchem</td>
+      <td>1608</td>
+      <td>(10 μM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[S35]Met/cys</td>
+      <td>Hartmann Analytic</td>
+      <td>IS-103</td>
+      <td>(10 μCi/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ProteoStat</td>
+      <td>Enzo Life Sciences</td>
+      <td>ENZ-51023-KP050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AmpliTaq Gold Fast PCR mix</td>
+      <td>Applied Biosystems (supplied through Thermo Fisher)</td>
+      <td>4390937</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator 2021</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TANGO</td>
+      <td>PMID:15361882</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CamSol Intrinsic</td>
+      <td>PMID:25451785</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>catGRANULE</td>
+      <td>PMID:23222640</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PScore</td>
+      <td>PMID:29424691</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant</td>
+      <td>PMID:19029910</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lexogen QuantSeq 2.3.1 FWD UMI</td>
+      <td>BlueBee genomics (Illumina)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR</td>
+      <td>PMID:19910308</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape (in Python)</td>
+      <td>PMID:31477170</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metascape (webserver)</td>
+      <td>PMID:30944313</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>PMID:22930824</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM without methionine/cysteine</td>
+      <td>Gibco (supplied through Thermo Fisher)</td>
+      <td>21013024</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 1.**
+ Genotoxic drugs used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug</th>
+      <th>Target</th>
+      <th>Concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Camptothecin</td>
+      <td>TOP1</td>
+      <td>20–600 nM. Figure 1C: 100 nM; Figure 1E: 20–100 nM; Figure 1G: 40 nM; Figure 1—figure supplement 1E: 200–600 nM; Figure 1—figure supplement 1F: 40 nM; MS/MS HEK293T: 100 nM; MS/MS U2OS: 400 nM; Figure 4F: 100 nM; Figures 5G, 6A: 40 nM; Figure 6—figure supplement 1A: 40 nM; Figure 6H: 400 nM; Figure 6—figure supplement 1G: 400 nM; Figure 6—figure supplement 2A–C: 400 nM.</td>
+    </tr>
+    <tr>
+      <td>CD00509</td>
+      <td>TDP1</td>
+      <td>4 µM</td>
+    </tr>
+    <tr>
+      <td>Etoposide</td>
+      <td>TOP2</td>
+      <td>Figure 1C: 3 µM; Figure 1E: 0.6–3 µM; Figure 4F: 3 µM.</td>
+    </tr>
+    <tr>
+      <td>Ku-55933</td>
+      <td>ATM</td>
+      <td>Everywhere 9 µM, except in Figure 4—figure supplement 1H: 3, 6, or 9 µM, and in Figure 5G: 13.5 µM</td>
+    </tr>
+    <tr>
+      <td>Ku-58948</td>
+      <td>PARP1-3</td>
+      <td>4 µM</td>
+    </tr>
+    <tr>
+      <td>VE-821</td>
+      <td>ATR</td>
+      <td>3 µM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analyses
 
 Statistical testing was performed using GraphPad Prism software, except for label-free quantification (LFQ) proteomics and RNA sequencing, which were analyzed in R (see their respective sections for more information). The statistical tests that were used are indicated in each figure legend. For experiments with pairwise comparisons, two-tailed Student’s unpaired t-test was used unless otherwise indicated. For experiments with multiple comparisons, a Kruskal–Wallis with Dunn’s post-hoc test (when datasets did not pass normality testing) or two-tailed Student’s unpaired t-tests with Bonferroni correction (when indicated) was performed. p-Values are shown for all experiments. All repetitions (n) originate from independent replicates; any representation of technical repeats in figures is explicitly mentioned in the accompanying legend. Gels and stains were processed and analyzed using ImageJ software (Fiji).
 
-## Mammalian cell culture
+### Mammalian cell culture
 
 All parental cell lines were obtained from ATCC (see Key resources table) and are mycoplasma negative (GATC Biotech GA, Konstanz, Germany). Cell lines were cultured in DMEM (Gibco) supplemented with 10% FBS (Sigma-Aldrich), 100 units/ml penicillin, and 100 µg/ml streptomycin (Invitrogen). HEK293 cells expressing inducible GFP-Httexon1-Q71 (GFP-Q71) have been described previously (Hageman et al., 2010), and HEK293 cells expressing inducible luciferase-GFP as well (Hageman et al., 2011). U2OS and HEK293 ATM KO cells were generated using the ATM CRISPR/Cas9 KO and ATM HDR plasmids (sc-400192, sc-400192-HDR from Santa Cruz) according to the manufacturer’s guidelines. Individual clones were picked and verified by PCR and Western blotting. For the generation of U2OS and HEK293 cells overexpressing HSBP5, see later section.
 
-## Western blotting and (immuno)staining
+### Western blotting and (immuno)staining
 
 For Western blotting, proteins were transferred to either nitrocellulose or PVDF membranes, probed with the indicated antibodies, and imaged in a Bio-Rad ChemiDoc imaging system. For an overview of all antibodies used in this study, see Key resources table.
 
 For (immuno)staining, cells were grown on coverslips, fixed in 2% formaldehyde, permeabilized with 0.1–0.2% Triton-X100, and incubated for 15 min with 0.5% BSA and 0.1% glycine solution in PBS. ProteoStat staining (ENZO, ENZ-51023-KP050) was performed according to the manufacturer’s instructions. Primary antibody incubation (see Key resources table) was performed overnight at 4°C. After secondary antibody incubation, cells were stained with Hoechst (Invitrogen, H1399) or DAPI as indicated, and mounted on microscopy slides in Citifluor (Agar Scientific). Cells were observed using a confocal scanning microscope (Leica), and images were processed using ImageJ software (Fiji). The aggresome signature was defined as cells exhibiting both a curved nucleus and perinuclear presence of ProteoStat dye. For DNA repair kinetics experiments, cells were irradiated with 2 Gy (IBL-637 irradiator, CIS Biointernational), fixed at the indicated timepoints post-irradiation, and stained for 53BP1. For the localization experiments of HSPB5, HSP70, and HSP90, U2OS cells were either irradiated with 2 Gy or treated for 24 hr with CPT (400 nM), and left to recover for 48 hr before immunostaining.
 
-## Genotoxic drug treatments
+### Genotoxic drug treatments
 
 See Table 1 (and Key resources table) for an overview of the drugs and concentrations used in this study. For genotoxic drug treatments, cells were treated with drugs in the indicated doses. The culture medium was replaced 24 hr after drug treatment, and after another 48 hr (unless explicitly mentioned otherwise) cells were harvested by scraping in PBS, centrifugation, and snap-freezing in liquid nitrogen.
 
-## Differential detergent protein fractionation
+### Differential detergent protein fractionation
 
 Cells were resuspended in ice-cold lysis buffer containing 25 mM HEPES pH 7.4, 100 mM NaCl, 1 mM MgCL2, 1% v/v Igepal CA-630 (#N3500, US Biological), cOmplete EDTA-free protease inhibitor cocktail (Roche Diagnostics), and 0.1 unit/µl benzonase endonuclease (Merck Millipore) and left for 1 hr on ice with intermittent vortexing. Protein content was measured and equalized, and Igepal CA-630 insoluble proteins were pelleted by high-speed centrifugation (21,000 rcf, 45 min, 4°C). Protein pellets were washed with lysis buffer without Igepal CA-630 and redissolved in lysis buffer supplemented with 1% v/v SDS at room temperature (RT) in a Thermomixer R (Eppendorf) at 1200 rpm for 1–2 hr. SDS-insoluble proteins were then pelleted by high-speed centrifugation (21,000 rcf, 45 min). SDS-insoluble protein pellets were washed with lysis buffer without any detergent. For subsequent silver staining, pellets were solubilized in urea buffer (8 M urea, 2% v/v SDS, 50 mM DTT, 50 mM Tris/HCl pH 7.4) overnight at RT in a Thermomixer R (Eppendorf) at 1200 rpm. For subsequent Western blotting, pellets were solubilized in concentrated sample buffer (4% SDS, 125 mM Tris pH 6.8, 100 mM DTT, 10% glycerol, bromophenol blue), boiled for 10 min, and left overnight RT in a Thermomixer R (Eppendorf) at 1200 rpm. Fractions were separated using SDS-PAGE, imaged using a Bio-Rad ChemiDoc imaging system, and analyzed using ImageJ software (Fiji).
 
-## LC-MS/MS analysis
+### LC-MS/MS analysis
 
 Samples were reduced (dithiothreitol 25 mM, 37°C, 30 min), alkylated (iodoacetamide 100 mM, RT, 30 min in darkness) and trypsin digested on S-trap columns (Protifi) using the S-Trap micro protocol (https://files.protifi.com/protocols/s-trap-micro-long-4-7.pdf). After elution, samples where dried up on speed-vac and resuspended in 25 µl of 0.1% (v/v) formic acid in water (MS quality, Thermo). Mass spectral analysis was conducted on a Thermo Scientific Orbitrap Exploris. The mobile phase consisted of 0.1% (v/v) formic acid in water (A) and 0.1% (v/v) formic acid in acetonitrile (B). Samples were loaded using a Dionex Ultimate 3000 HPLC system onto a 75 µm × 50 cm Acclaim PepMap RSLC nanoViper column filled with 2 µm C18 particles (Thermo Scientific) using a 120 min LC-MS method at a flow rate of 0.3 µl/min as follows: 3% B over 3 min; 3–45% B over 87 min; 45–80% B over 1 min; then wash at 80% B over 14 min, 80 to 3% B over 1 min and then the column was equilibrated with 3% B for 14 min. For precursor peptides and fragmentation detection on the mass spectrometer, MS1 survey scans (m/z 200–2000) were performed at a resolution of 120,000 with a 300% normalized AGC target. Peptide precursors from charge states 2–6 were sampled for MS2 using Data Dependent Acquisition (DDA). For MS2 scan properties, Higher Energy Collision Dissociation (HCD) was used and the fragments were analyzed in the orbitrap with a collisional energy of 30 %, resolution of 15000, Standard AGC target, and a maximum injection time of 50 ms.
 
@@ -161,36 +694,77 @@ MaxQuant version 1.6.7.0 was used for peptides and protein identification (Tyano
 
 ProteinGroup.txt from MaxQuant output was used for protein significance analysis via postprocessing in R (R Core Team 2021): potential contaminant and reversed protein sequences were filtered out, partial or complete missing values in either case or control replicates were imputed (Dou et al., 2020) in parallel 100 times, and subsequently averaged log2-transformed LFQ intensities were used for t-tests, including Benjamini–Hochberg-corrected, p-adjusted values. Log2 fold change for each protein record was calculated by subtracting the average log2 LFQ intensity across all replicates in control samples from the average log2 LFQ intensity across all replicates in case samples. To mitigate imputation-induced artifacts among significant proteins, only significant proteins detected and quantified in at least two replicates were considered: p-adjusted value ≤ 0.05 and, for cases (log2 fold change ≥ 1, replicates with nonimputed data ≥ 2), or for controls (log2 fold change ≤ –1, replicates with nonimputed data ≥ 2).
 
-## RNAseq library construction and sequencing
+### RNAseq library construction and sequencing
 
 RNA was isolated from cells with the AllPrep DNA/RNA Mini Kit from QIAGEN. RNA concentrations were measured on a NanoDrop. 150 ng of RNA was used for library preparation with the Lexogen QuantSeq 3′ mRNA-Seq Library Prep Kit (FWD) from Illumina. Quality control of the sequencing libraries was performed with both Qubit (DNA HS Assay kit) and Agilent 2200 TapeStation systems (D5000 ScreenTape). All libraries were pooled equimolar and sequenced on a NextSeq 500 at the sequencing facility in the University Medical Center Groningen, Groningen, the Netherlands.
 
 Data preprocessing was performed with the Lexogen QuantSeq 2.3.1 FWD UMI pipeline on the BlueBee Genomics Platform (1.10.18). Count files were loaded into R and analyzed with edgeR Robinson et al., 2010. Only genes with >1 counts in at least two samples were included in the analysis. Count data was normalized using logCPM for principal component analysis (PCA). Differential gene expression analysis was performed using the likelihood ratio test implemented in edgeR. Cutoffs of an absolute log fold change > 1 and an FDR-adjusted p-value<0.05 were used to identify significantly differentially expressed genes.
 
-## GO term analyses
+### GO term analyses
 
 For MS/MS, GO term analyses were performed through Cytoscape within Python, with a redundancy cutoff of 0.2. For RNA sequencing, GO term analyses were performed through Metascape (webserver: https://metascape.org) using default settings.
 
-## Radioactive pulse labeling
+### Radioactive pulse labeling
 
 Radioactive pulse labeling experiments were executed with cells subjected to the same CPT treatment regime as depicted in Figure 1—figure supplement 1D (see also Figure 4D). After 48 hr of recovery, cells were starved of methionine and cysteine for 30 min DMEM without methionine and cysteine (Gibco), see Key resources table, supplemented with 10% dialyzed FBS (Sigma-Aldrich), 100 units/ml penicillin, and 100 µg/ml streptomycin (Invitrogen). Then, 35S-met/cys (Hartmann Analytics) pulse labeling was performed for 10–40 min, and immediately after cells were harvested by scraping in PBS, centrifugation, and snap-freezing in liquid nitrogen. Protein fractionation was then performed as described. Autoradiography was performed by running samples on SDS-PAGE gels, gel drying, and placing gels on blank phosphor screens, shielded from light. After 1 week, phosphor screens were imaged using a Cyclone Plus Phosphor Image (Perkin Elmer).
 
-## Quantification of polyglutamine aggregation
+### Quantification of polyglutamine aggregation
 
 24 hr after seeding, stable tetracycline-inducible HTT Q71-GFP-expressing HEK293 cells were treated with the indicated genotoxic drugs listed in Table 1, as described. Cell lysis, polyQ filter trap, and immunodetection were performed as described previously (Kakkar et al., 2016), and results were analyzed using ImageJ software (Fiji).
 
-## CAG repeat length analysis
+### CAG repeat length analysis
 
 DNA was isolated from HTT Q71-GFP-expressing HEK293 cells through MasterPure Complete DNA and RNA Purification Kit (Epicentre) according to the manufacturer’s instructions. The CAG repeat length analysis was performed by PCR with 100 ng of DNA in a 10 µl reaction volume containing AmpliTaq Gold Fast PCR Master Mix (Applied Biosystems), and 0.2 µM of both forward (HEK293TQ71F [FAM]: 5'-GAGTCCCTCAAGTCCTTCC-3') and reverse (HEK293TQ71R: 5'-AAACGGGCCCTCTAGACTC-3') primers, flanking the CAG repeat tract. The samples were subjected to an initial denaturation step (95° C, 10 min), 35 amplification cycles (96°C, 15 s; 59.2°C, 15 s; 68°C, 30 s) and a final extension of 72°C, 5 min. PCR was followed by capillary electrophoresis in a ABI3730XL Genetic Analyzer, and results were analyzed through GeneMapper Software V5.0 (both Applied Biosystems).
 
-## Retroviral overexpression of HSPB5
+### Retroviral overexpression of HSPB5
 
 Retrovirus was produced in the Phoenix-AMPHO retroviral packaging cell line using a pQCXIN–HSPB5 vector as described before (Schepers et al., 2005). Briefly, HEK293, U2OS wild-type, and ATM KO cells were infected in the presence of 5 µg/ml polybrene (Santa Cruz). Cells in which the HSPB5 vector integrated successfully were selected using G418, and HSPB5 overexpression was confirmed via Western blotting.
 
-## Online tools and databases used
+### Online tools and databases used
 
 For an overview of online databases used in this study, see Table 2.
 
-## Data availability
+**Table 2.**
+ Online databases used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Analysis</th>
+      <th>Tool/database</th>
+      <th>Source/weblink</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Supersaturation</td>
+      <td>Supersaturation database</td>
+      <td>Ciryam et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Heat-sensitive proteins</td>
+      <td>Heat-sensitive protein database</td>
+      <td>Mymrikov et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Stress-granule constituents</td>
+      <td>RNA granule database</td>
+      <td>https://rnagranuledb.lunenfeld.ca</td>
+    </tr>
+    <tr>
+      <td>(Co)chaperone interactions</td>
+      <td>HSPA1A/HSPA8 client database</td>
+      <td>Ryu et al., 2020</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>BioGRID PPI database</td>
+      <td>https://thebiogrid.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Data availability
 
 The MS/MS proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Perez-Riverol, 2018) with the dataset identifier PXD030166. The RNAseq data generated in this study are available through Gene Expression Omnibus with accession number GSE173940. The R code for the MS/MS analysis can be found here (copy archived at swh:1:rev:bda88adfdacefd6841d80c0c92e92b33b42c9b9c; LaCavaLab, 2022a) and here (copy archived at swh:1:rev:1d1711c210a0ac34f09499aa37c46989439ffcbe; LaCavaLab, 2022b). For the RNAseq differential expression analysis the R code can be found on github (copy archived at swh:1:rev:e9e5879e270d8788d6f385159e2efcfd49e9c5e0; Huiting, 2022).

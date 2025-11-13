@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States
-2. https://ror.org/0130frc33 Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill Chapel Hill United States
-3. https://ror.org/0464eyp60 Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Medical School Worcester United States
-4. https://ror.org/0130frc33 Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States
+1. Department of Microbiology and Immunology, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+3. Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))
+4. Department of Biochemistry and Biophysics, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
 
 † Corresponding author
 
@@ -46,17 +46,162 @@ In an effort to define the de novo pathway to resistance for DRV and determine t
 
 ## Results
 
-## Panel of highly potent and analogous HIV-1 PIs
+### Panel of highly potent and analogous HIV-1 PIs
 
 HIV-1 PIs were designed by modifications to DRV to increase favorable interactions with the protease within the substrate envelope, thereby increasing potency while minimizing evolution of resistance (Nalam et al., 2013). A panel of 10 DRV analogs were chosen with enzymatic inhibition constants (Ki) in the single or double-digit picomolar range to wild-type NL4-3 protease and the I84V and I50V/A71V drug-resistant variants, respectively (Table 1; Lockbaum et al., 2019; Mittal et al., 2013). These PIs contained modified P1’ positions with (S)-2-methylbutyl or 2-ethyl-n-butyl moieties (R1-1 and R1-2, respectively) in combination with five diverse P2′ phenyl-sulfonamides (R2-1 to R2-5), with the inhibitors named UMASS-1 through -10 (Table 1). These inhibitors and DRV were also tested in a cell culture-based viral inhibition assay. The EC50 values (the effective concentration needed at the time of virus production to reduce infectivity by 50%) for DRV and the UMASS analogues ranged from 2.4 to 9.1 nM, significantly more potent than the second- and third-generation PIs tested (Figure 2—figure supplement 1).
 
+**Table 1.**
+ Structures, Ki constants, and EC50 values of the UMASS series of HIV-1 protease inhibitors (PIs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Inhibitor</th>
+      <th rowspan="2">Structure</th>
+      <th colspan="3">Ki (pM)</th>
+      <th colspan="2">EC50 (nM)</th>
+    </tr>
+    <tr>
+      <th>WT</th>
+      <th>I84V</th>
+      <th>I50V/A71V</th>
+      <th>WT</th>
+      <th>Viral culture (5000 nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DRV</td>
+      <td></td>
+      <td>&lt;5.0*</td>
+      <td>25.6 ± 5.6*</td>
+      <td>74.5 ± 5.6*</td>
+      <td>7.7 ± 1.6</td>
+      <td>&gt;100,000</td>
+    </tr>
+    <tr>
+      <td>UMASS-1</td>
+      <td></td>
+      <td>&lt;5.0*</td>
+      <td>26.1 ± 3.7*</td>
+      <td>110.3 ± 8.8*</td>
+      <td>5.9 ± 1.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UMASS-2</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>&lt;5.0</td>
+      <td>15.0 ± 2.7</td>
+      <td>2.4 ± 0.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UMASS-3</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>9.9 ± 2.7</td>
+      <td>79.9 ± 5.9</td>
+      <td>9.1 ± 1.0</td>
+      <td>14,800 ± 6800</td>
+    </tr>
+    <tr>
+      <td>UMASS-4</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>10.5 ± 1.8</td>
+      <td>32.9 ± 3.0</td>
+      <td>3.2 ± 0.4</td>
+      <td>13,700 ± 6600</td>
+    </tr>
+    <tr>
+      <td>UMASS-5</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>7.0 ± 1.7</td>
+      <td>7.8 ± 0.9</td>
+      <td>4.0 ± 0.5</td>
+      <td>&gt;100,000</td>
+    </tr>
+    <tr>
+      <td>UMASS-6</td>
+      <td></td>
+      <td>&lt;5.0*</td>
+      <td>12.8 ± 3.1*</td>
+      <td>100.0 ± 9.9*</td>
+      <td>5.2 ± 0.8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UMASS-7</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>12.1 ± 4.5</td>
+      <td>18.2 ± 3.0</td>
+      <td>3.1 ± 0.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UMASS-8</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>&lt;5.0</td>
+      <td>55.4 ± 4.0</td>
+      <td>4.2 ± 0.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UMASS-9</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>7.6 ± 1.6</td>
+      <td>42.3 ± 2.6</td>
+      <td>6.4 ± 1.2</td>
+      <td>&gt;100,000</td>
+    </tr>
+    <tr>
+      <td>UMASS-10</td>
+      <td></td>
+      <td>&lt;5.0</td>
+      <td>14.3 ± 9.3</td>
+      <td>5.8 ± 1.1</td>
+      <td>4.1 ± 0.9</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Previously reported in Lockbaum et al. (ACS Infect Dis. 2019 Feb 8; 5 (2): 316–325)._
+
 There are several patterns worth noting in the Ki and EC50 values. First, all inhibitors had a Ki of less than 5 pM (limit of detection) against the wild-type enzyme, precluding a comparison of potency among them without using partially resistant mutant proteases (I84V and I50V/A71V). Second, the P1'/R1 position change to the larger 2-ethyl-n-butyl moiety (R1-2, UMASS-6) increased potency against the I84V mutant protease relative to DRV and the intermediate sized R1-1 moiety UMASS-1 (all three share the same R2-1 moiety); this enhanced potency of the R1-2 inhibitors over the R1-1 inhibitors was also apparent for UMASS-8 over UMASS-3, which share the same R2-3 structure (Table 1, Figure 2—figure supplement 2), while this pattern of potency was reversed (i.e., R1-1 was more potent than R1-2) for UMASS pairs -2 and -7, and -5 and -10 (with R2-2 and R2-5, respectively; Figure 2—figure supplement 2). Third, four of the inhibitors with the R2 moieties R2-2 or R2-5 were significantly more potent (UMASS-2, -5, -7, -10) than with the other R2 moieties. This trend was most pronounced for activity against the I50V/A71V mutant enzyme in both the R1-1 and R1-2 backgrounds (Figure 2—figure supplement 2). The significant potency of the R2-2 and R2-5 containing inhibitors against the I50V/A71V mutant enzyme while maintaining good potency against the I84V enzyme indicates that both the R1 and R2 constituents contribute to potency, and to enhancing potency over DRV. This potency was also seen in inhibition of viral infectivity as the EC50 values of the R2-2 and R2-5 containing inhibitors were among the lowest measured (Table 1).
 
-## Selection for high-level resistance during passage in cell culture follows two pathways
+### Selection for high-level resistance during passage in cell culture follows two pathways
 
 To evaluate the potential of each inhibitor to select for mutations that would confer high-level resistance and to compare these mutations across the inhibitor series, we grew HIV-1 under conditions of escalating inhibitor concentration in cell culture through a lengthy period of selection (50–95 passages). The selection experiments were performed under two separate starting conditions: first when the starting virus was generated from the NL4-3 clone (this clone closely approximates the clade B consensus for the protease amino acid sequence and will be referred to as ‘wild type’), then again when the starting virus was a mixture of 26 isogenic viruses each with a single mutation associated with drug resistance in the NL4-3 background. Notably, in the latter case only about one-half of the mutations that appeared in the culture during selections were in the mixture of starting mutations, indicating that even in the selections that were seeded with the pool of single resistance mutations there was sufficient evolutionary capacity to explore mutations at positions that started as the wild-type sequence. The initial inhibitor concentration started at low nanomolar concentrations and increased by a factor of 1.5 with each subsequent viral passage (the inhibitor concentration was increased only after the virus spread efficiently through the culture). All of the selections starting with wild-type virus reached at least 5 µM of inhibitor concentration (approximating the therapeutic concentration reached by DRV in the blood and in the range of a 1000-fold increase in the starting EC50). For technical reasons, only five of the selections starting with the mixture of mutants reached an inhibitor concentration as high as 400 nM and are reported here (Figure 2—figure supplement 3).
 
 Resistance mutations selected in the protease coding domain during the escalating selective pressure of increasing PI concentration were examined at various timepoints using a next-generation sequencing (NGS) protocol that included Primer ID with the MiSeq platform (Zhou et al., 2015). We first examined the sequence of the most abundant variant in each of the two selection schemes present at the highest inhibitor concentration reached (Figure 2A). For those selections that reached 5 μM, 8–14 mutations were present in the most abundant variant. Typically the next two most abundant variants in the population differed by a single amino acid, and on average the three most abundant variants in the 5 μM cultures accounted for 88% of the total viral population (Figure 2—source data 1). Evolution of resistance followed two pathways, one based on I50V and one based on I84V. In three cultures, V2wt, V5wt, and V2mut (which reached either 4 or 5 μM final drug concentration; V2wt indicates the virus pool selected with UMASS-2 starting with wild-type virus), these two mutations, I84V and I50V, became linked on the same genome (Figure 2A) showing they are not mutually exclusive; it is worth noting that the appearance of the linked I84V/I50V mutations occurred in the selections of the UMASS inhibitors (-2 and -5) that showed the greatest potency against the two mutant enzymes I84V and I50V/A71V (Table 1, Figure 2—figure supplement 2), consistent with inhibitor potency driving the co-selection of these two primary resistance mutations together.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig2-v2.jpg)
+
+**Figure 2.:** Infected cultures were put under drug selection starting with either wild-type virus or a pool of mutant viruses. (A) Most abundant variants present at final timepoint. Resistance mutations in the viruses selected starting with the wild-type virus are in blue, and the selection starting with the pool of mutant viruses in in red. The culture name indicates a virus pool (V), the UMASS PI number (V1), and whether the selection started with wild-type or mutants (V1wt). PR sequences that were used to generate purified recombinant protease are indicated (e.g., PR-3wt). The final protease inhibitor (PI) concentration reached and the R1 and R2 moieties are indicated along with the PI. (B) Number of mutations present in the three most abundant variants of each selection at two different PI concentrations. Cultures containing I84V resistance mutation are in black (n = 4), I50V-containing cultures are in white (n = 7), and cultures with I50V+I84V linked are shown with hatched box (n = 3). Unpaired t-test was used to compare the number of mutations in the 84V vs. the 50V cultures. (C) EC50 values for highlighted selections in panel (A) reaching 100 nM (square) and 5000 nM (triangle). (D) Relative infectivity values for the same selections shown relative to the wild-type virus (circle). Relative infectivity was measured with normalized input amounts of HIV-1 p24 CA protein in replicates (n=3). Error bars show range of values. (E) Enzyme inhibition constants (Ki) of end point PR variants versus catalytic efficiency (kcat/Km). Open circle represents wild-type NL4-3. Trendline is for visualization purposes only. * p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** EC50 inhibition curves for (A) old and new protease inhibitors and (B) fifth-generation analogs of darunavir (DRV) (UMASS-1–10).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** UMASS-1, -3, -6, and -8 show less potency toward these variants and are shaded in a red tint matching R2 groups. UMASS-2, -5, -7, and -10 show increased potency toward these variants and are shaded in a green tint matching R2 groups.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Viral selections with darunavir (DRV) and UMASS-1–10 have increasing inhibitor concentrations during passaging. Passages are increased when extensive cytopathic effect (CPE) is observed during protease inhibitor (PI) selection. Virus generated from the (A) 26 single mutants or (B) NL4-3 molecular clone was passaged in the presence of increasing inhibitor concentration as described in the text. The period of time (in days) until the virus-infected culture displayed maximal CPE (massive syncytia) was 4–7 days on average.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Shannon entropy was calculated using sequence diversity in the protease region through five darunavir (DRV) selections. Abundant mutations are shown and fixed mutations are underlined. (B) The most abundant viral variant present at the final timepoint of each selection. Mutations arising from selections beginning with wild-type virus are shown in blue while mutations occurring in selections starting from 26 mutants are shown in red. Abundance of these variants is labeled as a percentage on the right.
 
 In addition to the sequence of the terminally selected virus, we validated that selection occurred over the entire course of the selection protocol. First, as can be seen in Figure 2B, the number of mutations present at 100 nM drug concentration was approximately half the number present after selection to greater than 1 μM. In comparing the number of mutations present in cultures using the I84V versus the I50V pathway, we noted that on average there were more mutations in the I50V viruses at the intermediate drug concentration compared to the I84V viruses (100 nM, p=0.03), and this trend continued at the higher drug concentration. Next we compared the EC50 of five virus cultures representing the I84V or the I50V pathways (highlighted in yellow in Figure 2), and including one that had both mutations linked, testing the level of resistance to all of the UMASS-1 through -10 inhibitors after selection to 100 nM drug concentration or to 5 μM. As can be seen in Figure 2C, resistance (measured as an increase in the EC50) was apparent after selection to the 100 nM inhibitor concentration, and in each case the EC50 increased an average of 100-fold after selection to the final inhibitor concentration of 5 μM (EC50 values of the final virus pool are shown in Table 1).
 
@@ -64,29 +209,49 @@ We were also interested in the fitness cost of these mutations. To measure this 
 
 We used another approach to explore the interplay between resistance and fitness; we examined the effect of resistance on catalytic efficiency of the protease by measuring Ki and the catalytic efficiency (kcat/Km) for a set of mutant proteases against the entire panel of UMASS inhibitors and DRV. The average Ki value of each mutant protease (sequences shown in Figure 2—source data 1) is plotted against the catalytic efficiency (kcat/Km) for that enzyme in Figure 2E. As can be seen, there is a strong relationship between higher Ki values (i.e., resistance) and dramatic reductions in catalytic efficiency, consistent with the loss of fitness associated with these viral populations.
 
-## Features of the selection process assessed by NGS of longitudinal samples
+### Features of the selection process assessed by NGS of longitudinal samples
 
 Each of the viral cultures started with wild-type virus showed an accumulation of protease mutations with increasing selective pressure. NGS analysis revealed very few fixed variants in the cultures started with wild-type virus until the inhibitor concentration reached approximately 3–5 nM (approaching the EC50 value for the wild-type virus, Table 1); in contrast, the cultures that were started with the mutant library selected for the outgrowth of a subset of those mutants by 1 nM inhibitor concentration (Figure 3A). In all cultures, the transition through the EC50 concentration of the wild-type virus provided significant selective pressure for fixing mutations. Multiple unfixed mutations were observed in each culture after the drug concentration exceeded the EC50 values above 3 nM, highlighting the high genetic diversity in the culture. Additional mutations became linked on each viral genome at higher drug concentrations.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig3-v2.jpg)
+
+**Figure 3.:** (A) Shannon entropy was calculated using sequence diversity in the protease region. Abundant mutations are shown and fixed mutations are underlined. Selections from wild type are in orange (n = 6) and from the mutant pool (n = 11) in blue. Two selections from wild-type virus are shown in orange (UMASS-9) and red (UMASS-10). (B) Compiled Shannon entropy values from selections starting with wild-type virus that reached concentrations of >1000 nM. (C) Compiled Shannon entropy values from selections starting with the pool of mutant viruses that reached concentrations of at least 400 nM. (D) Selections starting with the pool of 26 mutants showed higher entropy than the pool starting with WT (n=10, n=10) when averaged over all analyzed drug concentrations (p<0.001 using the unpaired t-test). Error bars show standard deviation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Shannon’s entropy of viral cultures that utilize either (A) I84V or (B) I50V as their resistance pathway. When I84V or I50V arise in the selection cultures above the Poisson distribution, that incident is labeled above the graph. I84V mutations are associated with increases/decreases in entropy while I50V mutations are not associated with major entropy differences.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Abundance limit of detection cutoffs are shown as black lines on each timepoint to resemble our template consensus sequences (TCS) Poisson distribution calculation as shown in Zhou et al., 2015.
 
 Deep sequencing revealed that mutations accumulated in complex patterns. We assessed the sequence complexity of each culture by calculating the Shannon entropy to allow comparison of changes in the diversity in each culture over time and as a function of increasing selective pressure (Figure 3A). In the cultures that showed the early appearance of the I84V mutation, this was associated with a peak in entropy, reflecting high genetic diversity, followed by a decrease in entropy when the I84V mutation became fixed (Figure 3—figure supplement 1A). The introduction of the I50V mutation was generally not associated with a drop in entropy, rather these populations maintained high genetic diversity even at higher drug concentrations (Figure 3—figure supplement 1B). We interpret these patterns as indicative of I84V conferring some level of resistance without a dramatic loss in fitness, allowing a more homogeneous culture (i.e., less entropy). In contrast, I50V may confer a higher level of resistance but at a greater fitness cost, thus supporting greater diversity in the culture either as compensatory mutations or as other combinations of mutations with lesser resistance but higher fitness. In this regard, we previously showed I50V significantly reduces the fitness of the virus relative to the fitness loss of a virus with I84V as single mutations (Henderson et al., 2012).
 
 When we examined the sequence diversity as assessed by Shannon entropy for all selections that reached at least 1 µM in inhibitor concentration, we found that cultures starting with the mixture of resistant viruses averaged a nearly twofold higher entropy value compared to the cultures where the selection started with just the virus generated from the NL4-3/wild-type clone (3.0 vs. 1.6, p<0.0001 Mann–Whitney test; Figure 3B–D). This was unexpected as both sets of selections passed through many genetic bottlenecks. This result is most easily explained if the rates of recombination were fairly high throughout the culture period so that most sequence variants were maintained at least at a low level. However, at the end of the selection period no wild-type variants could be detected in the cultures by deep sequencing.
 
-## The chemical nature of R1 and R2 determines the resistance pathway
+### The chemical nature of R1 and R2 determines the resistance pathway
 
 We next examined whether the inhibitor structure influenced the resistance pathway chosen. We found that the R1 group, that is, the (S)-2-methylbutyl (R1-1) or the 2-ethyl-n-butyl (R1-2), largely defined the resistance pathway observed; for these inhibitors, the R1 group takes the position of P1' in the protease substrate analog, occupying the S1' subsite. With the UMASS-1 through -5 series (the smaller R1-1 group), the I84V mutation appeared first in six of seven cultures. In contrast, the UMASS-6 through -10 series with the larger R1-2 group, the I50V mutation appeared first in eight of nine cultures (p=0.009, Fisher’s exact test; in this analysis, we included two cultures that did not reach at least 400 nM inhibitor concentration but did fix an initial set of mutations to increase our sample size [V3mut, V5mut], and we did not include two cultures where both I84V and I50V were initially fixed together [V2wt, V5wt]). We considered the possibility that the starting mixture of viruses in the mutant selection might skew the pathway selected, especially since the mutant pool included I84V but not I50V. However, in only one of the eight cultures with sufficient data from both selections was there a switch from the I84V pathway to the I50V pathway between the first and second selections (cultures of UMASS-6 with an R1-2 group). Thus, we conclude that the P1’-equivalent chemical structure of the inhibitor is a strong determinant of the resistance pathway selected. It is notable that one inhibitor could select for different pathways in two separate selections (also seen with DRV, see Figure 2—figure supplement 4) even when both major mutations are maintained in the viral population (Figure 3—figure supplement 2). This suggests that either pathway can provide some level of resistance to most if not all of these inhibitors, and that the chance addition of the initial compensatory mutations may determine which pathway becomes the major resistant population.
 
 To examine the potential for linked mutations and infer the order in which mutations accumulated in the protease gene to confer high-level resistance, the abundance data from multiple selections that ended in one or the other pathway were pooled and compared. In this analysis, shown in Figure 4A, summary data for the selections resulting in the I84V pathway point up, with I84V reaching 100% penetrance by definition. Similarly, the summary data for those selections that fixed I50V are shown pointing down, with I50V reaching 100% penetrance. Several mutations are uniquely linked or at least strongly favored in each pathway, with I84V being linked to V32I, and I50V being linked to I47V, F53L, and I13V. A number of mutations appear in both pathways, although not with equal frequency: L10F, L33F, M46I, I54L, A71V, and V82I. Finally, other mutations appear less frequently, making it difficult to assign them to one of these categories. These results show that while some mutations are largely linked to one pathway, other mutations are often shared between the two pathways. Also, the variation in frequency of appearance of shared mutations in the two pathways suggests different levels of impact on resistance and/or fitness in the I84V vs. the I50V background for these mutations (e.g., L10F, M46I and A71V). In particular, the larger impact of I50V on fitness compared to I84V mutations (Henderson et al., 2012) is consistent with the earlier appearance and greater levels of fixation of the shared compensatory mutations L10F, L33F, M46I, and A71V in the cultures that followed the I50V pathway. In Figure 4B, we show a summary timeline of the ordered addition of mutations for each pathway and whether they are shared or unique to the pathway (in addition to their relative penetrance/final prevalence among the different cultures). In Figure 4—figure supplement 1, we show phylogenetic trees of the viral protease sequence from these longitudinal selections annotated to show where in the tree each of the fixed final mutations entered the viral population. These results emphasize that there are stochastic elements in the selection process that make each culture different in detail but that by pooling the data across the cultures underlying patterns are apparent.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig4-v2.jpg)
+
+**Figure 4.:** (A) Abundance data from selections for each indicated amino acid substitution were pooled and examined sequentially at different levels of drug concentration. Selections that reached the maximum concentration of at least 3000 nM were assessed longitudinally to allow for all timepoints to be averaged equally. Mutations from selections resulting in the I84V pathway (V1wt, V4wt, and V6mut) point up, with I84V reaching 100% penetrance by definition. Similarly, those selections that fixed I50V only (V3wt, V6-10wt) are shown pointing downward, with I50V reaching 100% penetrance. (B) Schematic representations of the addition of mutations found in I84V and I50V pathways. Each mutation’s position on the timeline of drug concentrations was estimated using the pools of selections from each I84V and I50V pathways. This summary does not reflect the exact order and linkage of mutations for each individual selections in that pathway but rather the generalizable pattern inferred by comparing across the multiple cultures. The size of the arrows represents how prevalent that mutation was among the cultures at the end of the selection process.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Phylogenetic trees of wild-type selection cultures against UMASS-1 and UMASS-8, showing the addition of mutations found in I84V and I50V pathways. Each mutation’s position and color denote the drug concentration at which that mutation became prevalent in the population. The most abundant viral variant present at the final timepoint of each selection is underlined above the corresponding tree.
+
 We next considered the possibility that the R2 constituent would provide additional selective pressure in the form of additional resistance mutations. We did not detect any novel mutations associated with any of the R2-1 through R2-5 inhibitors (Figure 2). However, as noted earlier, the inhibitors with R2-2 and R2-5 in the smaller R1-1 background (UMASS-2 and UMASS-5) resulted in the selection of resistant virus where both of the primary resistance mutations (I84V and I50V) were present and linked. The comparable R2 inhibitors in the R1-2 background (UMASS-7 and UMASS-10) selected for just the I50V primary mutation consistent with the larger R1-2 structure. Thus, for inhibitors with three of the R2 moieties (R2-1, R2-3, R2-4) the selection of the primary resistance pathway was determined by the size of the R1 moiety. This was also true for the R2 moieties R2-2 and R2-5 with the larger R1-2 moiety, selecting for I50V; however, these same two R2 moieties are able to change the interaction of the smaller R1-1 moiety to drive selection of both primary resistance mutations demonstrating a role for R2 in influencing the resistance pathway.
 
-## The chemical nature of R1 and R2 determines residual potency among the resistant variants
+### The chemical nature of R1 and R2 determines residual potency among the resistant variants
 
 We considered several variables in examining the nature of the interaction between inhibitors and the resistant proteases: the extent to which the inhibitor structure (either R1 or R2) affected residual potency; and the extent to which the pathway (I84V or I50V) conferred the greatest resistance. As shown in Figure 5A, the inhibitors with the smaller R1-1 group showed a trend to be less potent than the inhibitors with the larger R1-2 group when tested against all of the resistant proteases. Inhibitors with the R2-2 group showed a trend toward greater residual potency against the mutant enzymes compared to the other inhibitors (Figure 5B). In looking at the individual pathways, the highly resistant enzymes with the I84V mutation remained more sensitive to the entire group of inhibitors than the enzymes with the I50V mutation (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig5-v2.jpg)
 
-**Figure 5.:** i values for mutant enzymes.Ki values were determined against all UMASS inhibitors (Table 1). Brackets above the bars represent significant p-values between the two groups using the unpaired t-test. Data were pooled in different ways for the following analyses: (A) the Ki values against the inhibitors with the larger R1-2 moiety (n = 34) were more potent against resistant proteases compared to the inhibitors with the smaller R1-1 moiety (n = 35) (B) Ki values for the inhibitors with the R2-2 group (n = 10) showed a trend toward being more potent against the highly mutated proteases compared to the other R2 groups (n = 40). (C) Ki values for enzymes with the I50V mutation (n = 33) showed greater resistance to the inhibitors compared to enzymes with the I84V mutation (n = 22). (D) The R1-2 moiety provided increased potency to enzymes with the I84V mutation (n = 20) but not the I50V mutation (n = 20). (E) The R2-2 moiety was more potent against the enzymes with I84V mutation (n = 10) compared to the enzymes with the I50V mutation (n = 10). The unpaired t-test was used to assess differences in Ki values. Error bars show standard deviation.
+**Figure 5.:** Ki values were determined against all UMASS inhibitors (Table 1). Brackets above the bars represent significant p-values between the two groups using the unpaired t-test. Data were pooled in different ways for the following analyses: (A) the Ki values against the inhibitors with the larger R1-2 moiety (n = 34) were more potent against resistant proteases compared to the inhibitors with the smaller R1-1 moiety (n = 35) (B) Ki values for the inhibitors with the R2-2 group (n = 10) showed a trend toward being more potent against the highly mutated proteases compared to the other R2 groups (n = 40). (C) Ki values for enzymes with the I50V mutation (n = 33) showed greater resistance to the inhibitors compared to enzymes with the I84V mutation (n = 22). (D) The R1-2 moiety provided increased potency to enzymes with the I84V mutation (n = 20) but not the I50V mutation (n = 20). (E) The R2-2 moiety was more potent against the enzymes with I84V mutation (n = 10) compared to the enzymes with the I50V mutation (n = 10). The unpaired t-test was used to assess differences in Ki values. Error bars show standard deviation.
 
 We next linked the two pathways to the specific structural features of the inhibitors. The resistant proteases with I50V had similar Ki values to both the R1-1 and R1-2 inhibitors, while the proteases with I84V were more sensitive (lower Ki) to the larger R1-2 inhibitors (Figure 5D). Similarly, the increased potency of the R2-2 inhibitors over the rest of the inhibitors was seen against the enzymes carrying I84V but not those with I50V (Figure 5E). These results are consistent with the smaller R1-1 inhibitors selecting for the I84V pathway and the larger R1-2 inhibitors selecting for the I50V pathway, and with the R2-2 inhibitors adding additional potency that is retained even after selection for resistance, most apparent with the I84V pathway.
 
@@ -94,19 +259,19 @@ Residual potency dependence of inhibitor structure could also be seen in the EC5
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig6-v2.jpg)
 
-**Figure 6.:** 50 values for mutant virus cultures.EC50 values were determined for a subset of the selected virus cultures against a panel of inhibitors (n = 50). For (A–E), the EC50 data were pooled using the same methods and sample numbers as in Figure 5. The highest level of resistance recorded was 100 µM. The Mann–Whitney rank-sum test was used to assess differences in EC50 values. Error bars show standard deviation.
+**Figure 6.:** EC50 values were determined for a subset of the selected virus cultures against a panel of inhibitors (n = 50). For (A–E), the EC50 data were pooled using the same methods and sample numbers as in Figure 5. The highest level of resistance recorded was 100 µM. The Mann–Whitney rank-sum test was used to assess differences in EC50 values. Error bars show standard deviation.
 
-## DRV favors the I84V pathway
+### DRV favors the I84V pathway
 
 DRV has a butyl group at the R1 position, smaller than the R1-1 methylbutyl in the UMASS-1 through -5 series. We carried out five selections with DRV where the final inhibitor concentration reached greater than 1 μM. One DRV selection was carried out in parallel with each of the two different selections with the UMASS inhibitors (Figure 2A); both of these selections resulted in the appearance of the I84V mutation as defining the resistance pathway. Three additional selections were done in parallel with DRV and starting with the mixture of the 26 isogenic mutants; all three selections reached the level of 5 μM as the highest drug concentration. Two of these selections used the I84V pathway to resistance, while one of the selections used the I50V pathway to resistance (Figure 2—figure supplement 4). Thus, four of five independent selection with DRV favored the resistance pathway I84V, associated with a smaller R1 constituent. These results add further evidence for the size of the R1 moiety strongly influencing the resistance pathway.
 
-## The I84V pathway and the I50V pathway differentially select for Gag cleavage site mutations
+### The I84V pathway and the I50V pathway differentially select for Gag cleavage site mutations
 
 Cleavage site mutations are seen during selection for resistance to protease inhibitors (Su et al., 2019). This can be viewed as protease-substrate coevolution, and the effect is most apparent at the cleavage sites flanking the spacer peptide SP2 in Gag (NC/SP2 and SP2/p6) (Kolli et al., 2006; Kolli et al., 2014; Kolli et al., 2009; Lee et al., 2012; Özen et al., 2011; Özen et al., 2012; Özen et al., 2014; Prabu-Jeyabalan et al., 2004). We sequenced the protease cleavage sites encoded in the viral gag gene in the pools of selected viruses where the inhibitor concentration had reached a level of greater than 1 µM (Figure 7A). An analysis of four cultures that had I84V as the major resistance mutation showed they all had a mutation at the NC/SP2 cleavage site at position P2, with a change from the wild-type alanine amino acid to either of the larger aliphatic amino acids valine or isoleucine. In addition, three of the four I84V cultures had a mutation at the adjacent SP2/p6 cleavage site, either at P1' (leucine to phenylalanine) or P5' (proline to leucine). Conversely, all seven cultures where the I50V mutation was the major resistance mutation there was a mutation in the SP2/p6 cleavage site, but not in the NC/SP2 site. Finally, in the three cultures where the protease evolved both the I50V and I84V mutations, Gag mutations were observed only at the SP2/p6 cleavage site (the presence or absence of the NC/SP2 mutation in the I84V cultures but not in the I84V/I50V cultures has a p value of 0.03 in a Fisher’s exact test). Two of three cultures with both I84V and I50V had both the P1' (leucine to phenylalanine) and P5' (proline to leucine) mutations. In contrast, mutations at both P1' and P5' together were underrepresented in the cultures with only I50V. An examination of the modeling (Figure 7B) suggests that the NC/SP2 mutation at P2 in the presence of the I84V mutation may engage I50 to replace the lost interaction with I84V as it moves away from the P2 sidechain by shortening (I to V); this would explain the absence of this cleavage site mutation in the double protease mutant (I50V/I84V) since the shortening of both protease sidechains provides too little interaction with the longer P2 sidechain. The P1' and P5' mutations in the SP2/P6 site appear to act in a complementary way as typically only one is seen with either the I50V or the I84V mutant proteases (Figure 7C). The SP2/p6 P1' and P5' mutations engage the protease by different mechanisms (Özen et al., 2014) suggesting their effects are additive; thus in these selections the single mutation at P1' or P5' may be sufficient to recover an appropriate rate of cleavage with either the I84V or the I50V mutant protease, but the additive effects of the P1' and P5' mutations may be needed to rescue cleavage by the I50V/I84V mutant protease.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/80328/elife-80328-fig7-v2.jpg)
 
-**Figure 7.:** (A) Culture names, final inhibitor concentration, and resistance pathway are shown. Changes in amino acid sequence are shown for the NC/SP2 and SP2/p6 cleavage sites. (B) P2 substitution in the NC/SP2 cleavage site with the I84V mutation modeled. Subsite structure was modeled using the original structure (PDB: 1KJH) and mutating the P2 position in the subsite pocket from alanine to valine. (C) P1' change in the SP2/p6 cleavage site with either the I84V mutation or the I50V mutations modeled. Subsite structure was modeled using the original structure (PDB: 1KJF) and mutating the P1’ position from leucine to phenylalanine.Figure 7—source data 1.
+**Figure 7.:** (A) Culture names, final inhibitor concentration, and resistance pathway are shown. Changes in amino acid sequence are shown for the NC/SP2 and SP2/p6 cleavage sites. (B) P2 substitution in the NC/SP2 cleavage site with the I84V mutation modeled. Subsite structure was modeled using the original structure (PDB: 1KJH) and mutating the P2 position in the subsite pocket from alanine to valine. (C) P1' change in the SP2/p6 cleavage site with either the I84V mutation or the I50V mutations modeled. Subsite structure was modeled using the original structure (PDB: 1KJF) and mutating the P1’ position from leucine to phenylalanine.
 
 ## Discussion
 
@@ -114,7 +279,7 @@ DRV is a notable PI both for its tight binding to the HIV-1 protease and for its
 
 The potency of these inhibitors can be inferred by the high genetic barrier to high-level resistance. The maximum drug concentrations of DRV achieved in the blood are nearly 1000-fold above the EC50 in cell culture (Kurt Yilmaz et al., 2009), and therapy failure with resistance mutations for therapies involving DRV are rare and most often occur in people who had previously failed therapy with other protease inhibitors with drug resistance. An examination of the Stanford University HIV Drug Resistance Database (https://hivdb.stanford.edu/) shows a catalog of approximately 25,000 reported HIV-1 sequences with at least one protease resistance-associated mutation, with the majority of these linked to some level of phenotypic resistance to DRV. For sequences associated with a greater than 200-fold change in resistance to DRV, there were an average of 5.4 resistance-associated mutations (with a maximum of seven mutations). Thus, these levels approach the levels of resistance we have obtained and highlight the potential for creating an even higher genetic barrier to resistance in vivo.
 
-## P1'/R1 modification
+### P1'/R1 modification
 
 DRV has a relatively small butyl group at this position that most often selected for an I84V mutation. When we extended this moiety by a single methyl group to (S)-2-methylbutyl, we obtained a similar resistance selection profile. However, by extending it with an additional methyl group to (S)-2-methylbutyl or 2-ethyl-n-butyl create an inhibitor that switched the preferred selection to the I50V pathway. In Figure 8A–C are shown representations of structures of a subset of the inhibitors with the different P1'/R1 groups with the wild-type protease, the I84V mutant protease, and the I50V mutant protease. As we have previously discussed (Lockbaum et al., 2019; Mittal et al., 2013), in these structures it is apparent that the P1'/R1-1 group is directed at the protease I84 sidechain, consistent with the shortening of this sidechain as a major resistance mechanism. Conversely, the longer P1'/R1-2 group is oriented into the space between I84 and I50, thus drawing in I50V as the pathway to resistance. As noted in the longitudinal analysis of the selection pathway, the I50V resistance pathway presents additional challenges to the virus in the more rapid accumulation of compensatory mutations (Figure 4). Under the circumstances of rapidly declining viral load during the initiation of therapy, this need for additional mutations would represent an enhanced genetic barrier.
 
@@ -122,13 +287,13 @@ DRV has a relatively small butyl group at this position that most often selected
 
 **Figure 8.:** (A–C) Hydrophobic packing in the S1’ subsite in complex with R1 structural groups; darunavir is shown in cyan, UMASS-1 in magenta, and UMASS-6 in salmon. (A) The two forms of R1 and darunavir (DRV) are shown packing against wild-type protease at I84 and I50 DRV, UMASS-1, UMASS-6 in wild-type protease (PDB: 6DGX [cyan], 6DGY [magenta], 6DGZ [salmon]). (B) Those same inhibitors packing against the I84V mutant (PDB: 6DH0 [cyan], 6DH1 [magenta], 6DH2 [salmon]). (C) Those same inhibitors packing against the I50V protease variant (PDB:, 6DH6 [salmon], 6DH7 [magenta], 6DH8 [salmon]). (D–F) Binding interactions with Asp29 and Asp30 of the protease S2' subsite in complex with R2 structural groups. Inhibitor/enzyme interactions are shown with black dashed lines representing hydrogen bonds (<3.0 Å). (D) UMASS-1, UMASS-3, UMASS-4, and UMASS-5 in WT protease (PDB: 3O99 [salmon], 3O9B [purple], 309C [orange], 309D [slate blue]). Water molecules are shown as red dots. (E) UMASS-2 in WT protease (PDB: 3O9A). (F) SP1/NC S2’ subsite representation of peptide substrate complexed with an inactive form of wild-type protease (PDB: 1KJ7) showing an interaction between the P2' glutamine and the protein backbone at Asp29 and Asp30.
 
-## PR2'/R2 modification
+### PR2'/R2 modification
 
 The inhibitors with two of the R2 modifications (R2-2 and R2-5) showed greater potency against the mildly resistant proteases (Figure 2—figure supplement 2) and against the wild-type virus (Table 1). This effect was also evident as a trend for inhibitors with the R2-2 group against the highly resistant proteases (Figure 5E) and the highly resistant viruses (Figure 6E). When we examined the interactions between protease and inhibitor, there is a clear structural explanation (Figure 8D–F). The less potent inhibitors interact with the protease side chains and backbone at D29 and D30 through a network of water molecules. In contrast, with the more potent R2-2 group the water molecules are replaced with direct interactions between inhibitor and protease in the S2' subsite (Figure 8E). This direct interaction more closely mimics the interaction made by the glutamine P2' side chain in the optimized protease cleavage site at the SP1/NC boundary (Figure 8F). Thus, the ability to replace the water-mediated interactions with a more rigid framework that is interacting with the protease backbone deep in the S2' pocket appears to be a unique feature of the inhibitors with R2-2. Improved potency in another series of PIs was also reported for this R2-2 P2' moiety (Zhu et al., 2020).
 
 While the different R2 structures did not select for any novel resistance mutations, we did note that the two inhibitors with the greatest potency as enzymes (UMASS-2 and UMASS-5) were the only inhibitors that selected for I84V and I50V linked on the same genome (Figure 2A). This represents a third distinct outcome since in these cases the smaller methylbutyl R1-1 is also able to engage I50. As noted above, the R2-2 group is directly anchored to the protease backbone. We examined the effect this has on the R1-1 orientation. However, we did not see any difference in the placement of the R1-1 group when comparing UMASS-1 (which preferentially selects for I84V) and UMASS-2 (which selects for linked I84V/I50V). It is possible that anchoring to the backbone with R2-2 for UMASS-2 makes the R1-1 group less mobile, reducing the magnitude of the effect of the I84V mutation allowing the inhibitor to maintain some level of interaction with I50, although this inference was not tested directly.
 
-## Protease mutation networks and compensatory mutations in the resistant pathways
+### Protease mutation networks and compensatory mutations in the resistant pathways
 
 In most of the selections, either the I84V or the I50V mutation was largely fixed by the time the inhibitor concentration reached 10 nM in the culture (Figure 3, Figure 3—figure supplement 2). The viral cultures went through cyclical changes in population diversity as subsequent mutations were added (Figure 3A). Because of the large number of selections, it was possible to pool data and see trends in the way mutations were added in these two pathways. Resistance mutations that were detected in multiple selections summed to at least 16 positions (Figure 2A). While these mutations are well known, their relationships to each other, and as a function of selective pressure, are less well understood. The data in Figure 4 show strong linkage between I84V and V32I, while I50V shows linkage with I47V and F53L. These linked compensatory mutations are each close to the primary resistance mutation, suggesting they interact directly with the primary resistance mutation to adjust its position within the subsite to limit interaction with the inhibitor and/or improve interaction with the substrate.
 
@@ -142,38 +307,38 @@ DRV represents a potent antiviral due in large part to its ability to achieve dr
 
 ## Materials and methods
 
-## Cell lines and viruses
+### Cell lines and viruses
 
 CEMx174 cells were maintained in RPMI 1640 medium with 10% fetal calf serum and penicillin-streptomycin. TZM-bl and 293T cells were maintained in Dulbecco’s modified Eagle-H medium supplemented with 10% fetal calf serum and penicillin-streptomycin. A wild-type virus stock NL4-3 was prepared by transfection of the pNL4-3 plasmid (purified using the QIAGEN Plasmid Maxikit) into HeLa cells. For the mixture of isogenic mutant viruses, the following NL4-3 variants were created, each with a single mutation in the protease with this mixture forming the virus pool for the initiation of selection with mutant viruses: L10I, K20R, K20I, L24I, D30N, V32I, M36I, M46I, M46L, I47V, G48V, F53L, I54V, I62V, L63P, A71T, A71V, G73S, V77I, V82A, V82T, I84V, N88D, N88S, L90M, I93L (Henderson et al., 2012). The cell lines used in this study came from the NIH HIV Reagent Program or ATCC, and were initially expanded and frozen down. Cells from these low-passage frozen stocks were thawed and used in experiments, and typically replaced within 1 y. Authentication of cell lines was based on assessments of the providers. Cell phenotypes were monitored for their ability to generate virus after transfection (293Ts), support viral replication (CEMx174), or report viral infection (TZM-bl). The following cell lines were obtained through the NIH HIV Reagent Program, Division of AIDS, NIAID, NIH: 174xCEM Cells, ARP-272, contributed by Dr. Peter Cresswell and TZM-bl Cells, ARP-8129, contributed by Dr. John C. Kappes, Dr. Xiaoyun Wu and Tranzyme Inc. The HEK-293Ts cells were obtained from ATCC, CRL-11268, and used directly upon receipt to created an expanded stock. Certificates of analysis are available on ATCC to include HEK293Ts. Cells obtained from the frozen stock were periodically tested for mycoplasma and were consistently negative.
 
-## Selections
+### Selections
 
 An aliquot of 3 × 106 CEMx174 cells was incubated at 37°C for 2–3 hr with 250 µl of a virus stock generated from the HIV-1 infectious molecular clone pNL4-3. The culture volume was then brought to 10 ml with RPMI medium. Each flask received one of the following inhibitors at escalating concentrations: UMass1, UMass2, UMass3, UMass4, UMass5, UMass6, UMass7, UMass8, UMass9, UMass10, DRV, and no drug (ND). After 48 hr and every 48 hr after, the cells were pelleted by centrifugation and 10 ml of fresh medium and inhibitors were added. When the culture had undergone extensive cytopathic effect (CPE) indicative of viral replication, the supernatant medium and the cells were harvested separately and stored at –80°C. The virus-containing supernatant was used to start the next round of infection, and after several rounds at the initial concentration, the inhibitor concentration was increased 1.5-fold at each subsequent round of virus passage. The level of resistance (50% inhibitory concentration [EC50]) of the single inhibitor-selected virus pools was determined by a TZM infection assay in which the PI is added to productively infected cells and the titers of supernatant virus made in the presence of the inhibitor are determined.
 
-## TZM infection assay
+### TZM infection assay
 
 PI dilutions were prepared by taking 10 µM stocked and performing a fivefold serial dilution using RPMI media (final drug concentration is 100 µM). One dilution of drug was added to each well of a 24-well plate and repeated so each virus would have a full set of dilutions. Viruses for the assay were made by seeding 3 × 106 CEM cells in a 24-well plate and incubating with 250 µl of virus at 37°C for 2–3 hr before bringing the culture to 10 ml with RPMI media. After 48 hr, the medium was changed and repeated every 48 hr after until the culture had undergone CPE. Infected CEM cells were collected and diluted so that 1 ml of cells could be plated in each well containing a unique drug dilution. Then 24 hr later the virus supernatant was collected from each well followed by filtering through a 0.45 µM filter then placed in –80°C. Viruses were thawed and added to 96-well plates in triplicate. TZM-bl cells were collected and diluted to a concentration of 2 × 105 cells/ml, 100 µl were added on top of the pre-plated viruses. Plates were kept in 37°C, 5% CO2 in an incubator for 48 hr. After 48 hr, the cells in the plates were lysed by removing the medium, washing two times with 100 µl PBS, and then lysed with 1× lysis buffer (made from 5× Promega Firefly Lysis Buffer). Plates were frozen for at least 24 hr and then thawed for 2 hr before analyzing with Promega Firefly Luciferase Kit on a luminometer. Data was analyzed with Prism 7 to fit sigmoidal dose–response curves.
 
-## DNA preparation and amplification of the protease-coding region
+### DNA preparation and amplification of the protease-coding region
 
 Total cellular DNA was isolated from infected cell pellets by using the QIAamp blood kit (QIAGEN). The protease-coding domain of viral DNA was amplified by nested PCR. The PCR conditions are available upon request. PCR products were purified by using QIAquick PCR purification kit (QIAGEN) and directly sequenced or cloned into the pT7Blue vector (Novagen) and sequenced.
 
-## Primer-ID deep sequencing of viral RNA
+### Primer-ID deep sequencing of viral RNA
 
 We used the PID protocol to prepare MiSeq PID libraries with multiplexed primers. Viral RNA was extracted from plasma samples using the QIAamp viral RNA mini kit (QIAGEN, Hilden, Germany). Complementary DNA (cDNA) was synthesized using a cDNA primer mixture targeting protease (PR) with a block of random nucleotides in each cDNA primer serving as the PID, and SuperScript III RT (Thermo Fisher). After two rounds of bead purification of the cDNA, we amplified the cDNA using a mixture of a forward primer that targeted the upstream coding region, followed by a second round of PCR to incorporate the Illumina adaptor sequences. Gel-purified libraries were pooled and sequenced using the MiSeq 300 base paired-end sequencing protocol (Illumina). The sequencing covered the HIV-1 PR region (HXB2 2648-2914, 3001-3257).
 
 We used the Illumina bcl2fastq pipeline for the initial processing and constructed template consensus sequences (TCSs) with TCS pipeline version 1.33 (https://github.com/SwanstromLab/PID) (Zhou, 2019). We then aligned TCSs to an HXB2 reference to remove sequences not at the targeted region or that had large deletions. We used the Entropy tool at LANL (https://www.hiv.lanl.gov/content/sequence/ENTROPY/entropy.html) to calculate entropy for each specimen. The sequencing data is available at NIH Sequencing Read Archive (SRA) under BioProject ID PRJNA853351.
 
-## Protease expression and purification
+### Protease expression and purification
 
 The highly mutated, resistant, protease variant genes were purchased on a pET11a plasmid with codon optimization for protein expression in Escherichia coli (Genewiz). A Q7K mutation was included to prevent autoproteolysis (Rosé et al., 1993). The expression, isolation, and purification of WT and mutant HIV-1 proteases used for enzymatic assays were carried out as previously described (Henes et al., 2019; King et al., 2002; Özen et al., 2014). Briefly, the gene encoding the desired HIV-1 protease was subcloned into the heat-inducible pXC35 expression vector (ATCC) and transformed into E. coli TAP-106 cells. Cells grown in 6 l of Terrific Broth were lysed with a cell disruptor twice, and the protein was purified from inclusion bodies (Hui et al., 1993). Inclusion bodies, isolated as a pellet after centrifugation, were dissolved in 50% acetic acid followed by another round of centrifugation at 19,000 rpm for 30 min to remove insoluble impurities. Size-exclusion chromatography was carried out on a 2.1 l Sephadex G-75 Superfine (Sigma Chemical) column equilibrated with 50% acetic acid to separate high molecular weight proteins from the desired protease. Pure fractions of HIV-1 protease were refolded using a tenfold dilution of refolding buffer (0.05 M sodium acetate at pH 5.5, 5% ethylene glycol, 10% glycerol, and 5 µM DTT). Folded protein was concentrated to 0.5–3 mg/ml and stored. The stored protease was used in KM and Ki assays.
 
-## Enzymatic assays
+### Enzymatic assays
 
-## Km assay
+#### Km assay
 
 Km values were determined as previously described (Henes et al., 2019; Lockbaum et al., 2019; Matayoshi et al., 1990; Windsor and Raines, 2015). Briefly, a 10-amino acid substrate containing the natural MA/CA cleavage site with an EDANS/DABCYL FRET pair was dissolved in 8% DMSO at 40 nM and 6% DMSO at 30 nM. The 30 nM substrate was 4/5 serially diluted from 30 nM to 6 nM. HIV-1 protease was diluted to 120 nM and, and 5 µl were added to the 96-well plate to obtain a final concentration of 10 nM. Fluorescence was observed using a PerkinElmer Envision plate reader with an excitation at 340 nm and emission at 492 nm, and monitored for 200 counts. A FRET inner filter effect correction was applied as previously described (Liu et al., 1999). Data corrected for the inner filter effect was analyzed with Prism7.
 
-## Ki assay
+#### Ki assay
 
 Enzyme inhibition constants (Ki values) were determined as previously described (Henes et al., 2019; Lockbaum et al., 2019; Matayoshi et al., 1990; Windsor and Raines, 2015). Briefly, in a 96-well plate, inhibitors were serially diluted down from 2000 to 10,000 nM depending on protease resistance. All samples were incubated with 5 nM protein for 1 hr. A 10-amino acid substrate containing an optimized protease cleavage site (Windsor and Raines, 2015), purchased from Bachem, with an EDANS/DABCYL FRET pair was dissolved in 4% DMSO at 120 µM. Using a PerkinElmer Envision plate reader, 5 µl of the 120 µM substrate were added to the 96-well plate to a final concentration of 10 µM. Fluorescence was observed with an excitation at 340 nm and emission at 492 nm and monitored for 200 counts. Data was analyzed with Prism7.

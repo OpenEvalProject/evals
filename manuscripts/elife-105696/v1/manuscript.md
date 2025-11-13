@@ -16,17 +16,17 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Neurology, University of California, San Francisco San Francisco United States
-3. https://ror.org/04gndp242 Department of Neuroscience, Genentech, Inc. South San Francisco United States
-4. https://ror.org/05rrcem69 Department of Neurology, MIND Institute, University of California Davis School of Medicine Sacramento United States
-5. https://ror.org/04fzwnh64 Department of Pharmacology, Northwestern University Feinberg School of Medicine Chicago United States
+1. Weill Institute for Neurosciences, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Neurology, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Department of Neuroscience, Genentech, Inc. South San Francisco United States ([ROR:04gndp242](https://ror.org/04gndp242))
+4. Department of Neurology, MIND Institute, University of California Davis School of Medicine Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+5. Department of Pharmacology, Northwestern University Feinberg School of Medicine Chicago United States ([ROR:04fzwnh64](https://ror.org/04fzwnh64))
 
 † Corresponding author
 
 ## Abstract
 
-Mature neocortical pyramidal cells functionally express two sodium channel (Na V ) isoforms: Na V 1.2 and Na V 1.6. These isoforms are differentially localized to pyramidal cell compartments, and as such are thought to contribute to different aspects of neuronal excitability. But determining their precise roles in pyramidal cell excitability has been hampered by a lack of tools that allow for selective, acute block of each isoform individually. Here, we leveraged aryl sulfonamide-based molecule (ASC) inhibitors of Na V channels that exhibit state-dependent block of both Na V 1.2 and Na V 1.6, along with knock-in mice with changes in Na V 1.2 or Na V 1.6 structure that prevents ASC binding. This allowed for acute, potent, and reversible block of individual isoforms that permitted dissection of the unique contributions of Na V 1.2 and Na V 1.6 in pyramidal cell excitability. Remarkably, block of each isoform had contrasting—and in some situations, opposing—effects on neuronal action potential output, with Na V 1.6 block decreasing and Na V 1.2 block increasing output. Thus, Na V isoforms have unique roles in regulating different aspects of pyramidal cell excitability, and our work may help guide the development of therapeutics designed to temper hyperexcitability through selective Na V isoform blockade.
+Mature neocortical pyramidal cells functionally express two sodium channel (NaV) isoforms: NaV1.2 and NaV1.6. These isoforms are differentially localized to pyramidal cell compartments, and as such are thought to contribute to different aspects of neuronal excitability. But determining their precise roles in pyramidal cell excitability has been hampered by a lack of tools that allow for selective, acute block of each isoform individually. Here, we leveraged aryl sulfonamide-based molecule (ASC) inhibitors of NaV channels that exhibit state-dependent block of both NaV1.2 and NaV1.6, along with knock-in mice with changes in NaV1.2 or NaV1.6 structure that prevents ASC binding. This allowed for acute, potent, and reversible block of individual isoforms that permitted dissection of the unique contributions of NaV1.2 and NaV1.6 in pyramidal cell excitability. Remarkably, block of each isoform had contrasting—and in some situations, opposing—effects on neuronal action potential output, with NaV1.6 block decreasing and NaV1.2 block increasing output. Thus, NaV isoforms have unique roles in regulating different aspects of pyramidal cell excitability, and our work may help guide the development of therapeutics designed to temper hyperexcitability through selective NaV isoform blockade.
 
 ## Introduction
 
@@ -40,13 +40,177 @@ ASCs exhibit high potency for a subset of NaV isoforms: NaV1.2, NaV1.6, and NaV1
 
 ## Methods
 
-## Experimental models and subjects details
+**Key resources table**
 
-## Mouse strains
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Scn2a Human tagged ORF clone</td>
+      <td>Origene</td>
+      <td>NM_021007</td>
+      <td>NaV1.2</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Scn8a Human tagged ORF clone</td>
+      <td>Origene</td>
+      <td>NM_014191</td>
+      <td>NaV1.6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_JAX:000664</td>
+      <td>Wildtype mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>C57BL/6N</td>
+      <td>Janvier Labs</td>
+      <td>RRID:IMSR_RJ:C57BL-6NRJ</td>
+      <td>Mating with founders</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>Scn8a YW→SR KI</td>
+      <td>Genentech;Deng et al., 2023;PMID:37352856</td>
+      <td>N/A</td>
+      <td>NaV1.6 GNE-4076 insensitive mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>Scn2a YW→SR KI</td>
+      <td>Genentech; this manuscript</td>
+      <td>N/A</td>
+      <td>NaV1.2 GNE-4076 insensitive mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus, both sexes)</td>
+      <td>Dual Scn8a/2a YW→SR KI</td>
+      <td>Genentech; this manuscript</td>
+      <td>N/A</td>
+      <td>Both GNE-4076 insensitive</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCCCRL-3216</td>
+      <td>RRID:CVCL_0063</td>
+      <td>IC50 curves; biophysics</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>ND7/23 (low NaV)</td>
+      <td>Al George Lab;Vanoye et al., 2024</td>
+      <td>PMID:38771640</td>
+      <td>IC50 curves; biophysics</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIR-CMV-SCN2A-Variant-1-IRES-mScarlet</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_162279</td>
+      <td>NaV1.2 Plasmid #162279</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA4TO-SCN8A-Variant-3-IRES-mScarlet</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_209411</td>
+      <td>NaV1.6 Plasmid #209411</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2A_Y1564S_W1565R F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ATTCTGTCCCGGATTAATCTGGTGTTTATTGTTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>2A_Y1564S_W1565R R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGATTAATCCGGGACAGAATGTTTGTCATTTCTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>8A_Y1555S_W1556R F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCCTCTCCCGGATTAACCTGGTGTTTGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>8A_Y1555S_W1556R R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTTAATCCGGGAGAGGATGTTCTCCATCTG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GNE-4076 or Compound 5</td>
+      <td>Merck &amp; Co, Inc;Roecker et al., 2017</td>
+      <td>PMID:28389149</td>
+      <td>Used at 200 nM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IGOR Pro v6.3 &amp; v9</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 10</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NEURON Compartmental Models</td>
+      <td>modelDB</td>
+      <td>RRID:SCR_007271 and SCR_003105</td>
+      <td>https://modeldb.science/2019342</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python</td>
+      <td>https://www.python.org/</td>
+      <td>RRID:SCR_008394</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Benchling</td>
+      <td>https://www.benchling.com/</td>
+      <td>RRID:SCR_013955</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental models and subjects details
+
+#### Mouse strains
 
 All animal procedures are in accordance with the Institutional Animal Care and Use Committee (IACUC) guidelines in accordance with the University of California, San Francisco (UCSF). The following mouse strains were used in this study: C57BL/6J, YW→SR NaV1.2 KI (Scn2aSR/SR), YW→SR NaV1.6 KI (Scn8aSR/SR), and YW→SR dual KI (Scn8a/2aSR/SR). All experimental procedures were performed on mice maintained in-house on a 12:12 hr light–dark cycle under standard conditions with ad libitum access to food and water. For genotyping, genomic DNA was isolated from tail clip biopsies for PCR. Both male and female mice aged postnatal day (P)18–59 were used across all genotypes. C57BL/6J mice were obtained from Jackson Laboratories, and YW→SR KI mice were developed by the Hackos Lab (Genentech).
 
-## Generation of SCN8A or SCN2A YW→SR KI mouse
+#### Generation of SCN8A or SCN2A YW→SR KI mouse
 
 As described previously (Deng et al., 2023), CRISPR/Cas9 technology (Cong et al., 2013; Mali et al., 2013) was used to generate a genetically modified mouse strain with either an Scn8a or Scn2a YW→SR knock-in mutation. A single-guide RNA (sgRNA) target and protospacer adjacent motifs (PAM) were identified for Scn8a ENSMUSG00000023033 or Scn2a ENSMUSG00000075318 genomic regions of interest using the CRISPR design tool (Benchling) that uses the algorithm described by Hsu et al., 2013 to provide ‘MIT’ specificity scores for each sgRNA, as well as the top 15 predicted off-target loci and corresponding MIT off-target scores. The same guide target and PAM were used for both genes. Guide target: 5′ CATTCTCTACTGGATTAATC 3′; PAM: TGG with an algorithm score of 42.3.
 
@@ -62,17 +226,48 @@ Founders were selected for mating with wildtype C57BL/6N mice for germline trans
 
 To generate the dual Scn8a/2aSR/SR line, Scn2aSR/SR, and Scn8aSR/SR mice were crossed, and analysis of genomic DNA was used to confirm germline transmission of the targeted gene.
 
-## Method details
+### Method details
 
-## Synthesis of GNE4076
+#### Synthesis of GNE4076
 
 GNE-4076 was synthesized as previously described in Roecker et al., 2017, and is Compound 5 in the original manuscript. We use GNE-4076 throughout this manuscript.
 
-## Generation of SCN2A YW→SR and SCN8A YW→SR constructs
+#### Generation of SCN2A YW→SR and SCN8A YW→SR constructs
 
 The double mutation Y1564S/W1565R was introduced into the adult splice isoform of recombinant human NaV1.2 (NCBI accession number NM_021007; AddGene #162279) using site-directed mutagenesis as previously described (Thompson et al., 2023). The corresponding mutations (Y1555S/W15556R) were engineered in recombinant human NaV1.6 (adult isoform) as previously described (Vanoye et al., 2024). Mutagenic primer sequences are presented in Table 1. All plasmids were nanopore sequenced (Primoridium Labs, Arcadia, CA) to confirm the variants and exclude unwanted mutations.
 
-## Electrophysiology in immortalized cell lines
+**Table 1.**
+ Mutagenic primer sequences for NaV1.2 and NaV1.6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence (5′ to 3′)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2A_Y1564S_W1565R_F</td>
+      <td>attctgtCcCggattaatctggtgtttattgttct</td>
+    </tr>
+    <tr>
+      <td>2A_Y1564S_W1565R_R</td>
+      <td>agattaatccGgGacagaatgtttgtcatttcttga</td>
+    </tr>
+    <tr>
+      <td>8A_Y1555S_W1556R_F</td>
+      <td>catcctctCcCggattaacctggtgtttgtt</td>
+    </tr>
+    <tr>
+      <td>8A_Y1555S_W1556R_R</td>
+      <td>ggttaatccGgGagaggatgttctccatctg</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Electrophysiology in immortalized cell lines
 
 HEK293T cells were transiently transfected with WT or mutant NaV1.2 using the Invitrogen Lipofectamine LTX kit, whereas NaV1.6 plasmids were electroporated into the LoNaV derivative of ND7/23 cells using Maxcyte technology as previously described (Vanoye et al., 2024). HEK293T cells were acquired from ATCC (CRL-3216) where mycoplasma testing shows no detection of contamination. LoNaV derivative of ND7/23 cells is a mix of rat dorsal root ganglion neurons and mouse neuroblastomas that have been modified and previously validated by Al George’s Lab as described in Vanoye et al., 2024. These cells were not generated from the original source of the parental line ND7/23; therefore, we are unable to authenticate with ATCC. LoNaV ND7/23 cells have been tested for mycoplasma and show no detection of contamination.
 
@@ -80,11 +275,15 @@ NaV channel currents were recorded from HEK293 or ND7/23 cells via whole-cell pa
 
 We characterized dose–response curves in both WT and mutant NaV1.2 and NaV1.6 channels by pulsing cells from –80 to –12 mV for 20 ms at a rate of 0.5 Hz to establish a baseline current. Cells were then perfused with GNE-4076 starting at 30 nM and increased up to 100 μM. To allow adequate GNE-4076 onboarding to NaV isoforms/mutants at each successive dose, cells were depolarized to –12 mV for 10 s followed by similar test pulses used to acquire baseline current. Between dose increases, cells were held at –80 mV to allow adequate unbinding of GNE-4076.
 
-We also characterized the activation and steady-state inactivation properties of both WT and mutant NaV1.2 and NaV1.6 channels. To measure activation, we used a holding voltage of –80 mV, a short 20ms pre-pulse to –120 mV, and a 30-ms pulse to voltages ranging from –100 to –20 mV in steps of 5 mV at a rate of once per 3 s. P/4 leak subtraction was used to reduce leak currents. The peaks of the resulting NaV currents were measured. Conductance was calculated using the equation: G = I/(V – VNa), normalized, and plotted as a function of voltage. To measure inactivation, we started at a holding voltage of –120 mV to bring the channels fully into the closed state (about 1 min). We then pulsed to –12 mV while reducing the holding voltage from –120 to +30 mV in steps of 5 mV at a rate of once per 5 s. The peaks of the resulting NaV currents were measured, normalized, and plotted as a function of voltage. To quantify these biophysical properties, we fit the activation and inactivation curves to the following Boltzmann equations:G/Gmax=1−11+e(v−v1/2/sf)(activation)I/Imax=11+e(v−v1/2/sf)(inactivation)\begin{document}$$\displaystyle G/Gmax=1-\frac{1}{1+e^{(v-v_{1/2}/sf )} }\, (activation)\, I/Imax=\frac{1}{1+e^{(v-v_{1/2}/sf)}}\,(inactivation) $$\end{document}
+We also characterized the activation and steady-state inactivation properties of both WT and mutant NaV1.2 and NaV1.6 channels. To measure activation, we used a holding voltage of –80 mV, a short 20ms pre-pulse to –120 mV, and a 30-ms pulse to voltages ranging from –100 to –20 mV in steps of 5 mV at a rate of once per 3 s. P/4 leak subtraction was used to reduce leak currents. The peaks of the resulting NaV currents were measured. Conductance was calculated using the equation: G = I/(V – VNa), normalized, and plotted as a function of voltage. To measure inactivation, we started at a holding voltage of –120 mV to bring the channels fully into the closed state (about 1 min). We then pulsed to –12 mV while reducing the holding voltage from –120 to +30 mV in steps of 5 mV at a rate of once per 5 s. The peaks of the resulting NaV currents were measured, normalized, and plotted as a function of voltage. To quantify these biophysical properties, we fit the activation and inactivation curves to the following Boltzmann equations:
+
+$$
+G/Gmax=1−\frac{1}{1+e^{(v−v_{1/2}/sf)}}(activation)I/Imax=\frac{1}{1+e^{(v−v_{1/2}/sf)}}(inactivation)
+$$
 
 V1/2 is the voltage where half-maximal peak conductance (or current) was observed, and sf is the slope factor.
 
-## Ex vivo electrophysiology
+#### Ex vivo electrophysiology
 
 Mice aged P18–P59 were anesthetized with isoflurane prior to harvesting the brain. Dissected brains were immediately placed in cutting solution (4°C) containing 87 mM NaCl, 25 mM NaHCO3, 25 mM glucose, 75 mM sucrose, 2.5 mM KCl, 1.25 mM NaH2PO4, 0.5 mM CaCl2, and 7 mM MgCl2 that is bubbled with 5% CO2/95% O2. Coronal slices were prepared from the medial prefrontal cortex (PFC) at a thickness of 250 µm and placed in a holding chamber warmed to 33°C for 30 min. Slices were then allowed to recover at room temperature until recording. Recordings were performed at 31–33°C in a solution containing 125 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 25 mM NaHCO3, 1.25 mM NaH2PO4, and 25 mM glucose that is bubbled with 5% CO2/95% O2. Osmolarity of the recording solution was adjusted to approximately 309 mOsm.
 
@@ -98,23 +297,77 @@ Spike trains were evoked by injecting current (250–350 pA, 10 s or 300 ms dura
 
 For nucleated patch voltage-clamp experiments, recordings were made at 31–33°C in a solution containing 125 mM NaCl, 2.5 mM KCl, 2 mM CaCl2, 1 mM MgCl2, 25 mM NaHCO3, 1.25 mM NaH2PO4, 15 mM glucose, 4 mM TEA, 1 mM 4-AP, and 10 µM nifedipine, with or without 200 nM GNE-4076, (bubbled with 5% CO2/95% O2). A Cs-methanesulfonate-based recording solution was used: 110 mM CsMeSO3, 40 mM HEPES, 1 mM KCl, 4 mM NaCl, 4 mM Mg-ATP, 10 mM Na-phosphocreatine, 0.4 mM Na2-GTP, and 0.1 mM EGTA; 290 mOsm; pH 7.2–7.25. Whole-cell recordings were established before withdrawing pipettes from the slice, pulling a region of the somatic membrane with the pipette. Neurons were held to –80 mV and stepped to –12 mV every 2 s, 5–10 times. Then neurons were held to –12 mV for 10 s to onboard GNE-4076, then returned to –80 mV and probed for NaV recovery with steps to –12 mV every 2 s. Leak currents were subtracted with a P/8 protocol using steps from –80 to –90 mV. All data were corrected for measured junction potentials of 12 mV.
 
-## Compartmental modeling
+#### Compartmental modeling
 
 A compartmental model was constructed within the NEURON environment to simulate a layer 5 pyramidal neuron as described before (Spratt et al., 2021; Hallermann et al., 2012; Quinn et al., 2024). This model is available at ModelDB (2019342, https://modeldb.science/2019342). A multi-compartmental model, originally developed by the Blue Brain Project, was implemented to reflect the morphology detailed by Ramaswamy and Markram, 2015 and electrophysiological features were adjusted to reflect empirically obtained data (Spratt et al., 2021; Hallermann et al., 2012). We modified the model by replacing the aggregated sodium conductances (NaT and NaP) with distinct NaV1.2 and NaV1.6 channels to match empirically observed distributions (Hu et al., 2009). NaV1.2 and NaV1.6 channels were distributed throughout the cell with equal levels in the soma and 20 µm of the proximal dendrites. NaV1.2 was solely expressed in dendrites more distal to the soma, inferred based on AP-evoked sodium imaging observations in Scn2a+/− conditions (Nelson et al., 2024). The two axonal compartments were subdivided into an AIS and distal axon. Within the AIS, NaV1.2 and NaV1.6 were distributed with increased NaV1.2 in the proximal AIS and increased NaV1.6 in the distal AIS to recapitulate the channel distribution as previously observed empirically (Hu et al., 2009). NaV1.2 was not included in the distal AIS or axon where only NaV1.6 is present, including an enriched region to model a node of Ranvier. To simulate blocking of NaV1.2 and NaV1.6, each channel’s density was globally reduced in 10% increments from 100% to 0%. Both NaV1.2 and NaV1.6 channels were represented using the Hodgkin-Huxley formalism (Hodgkin and Huxley, 1952). Parameter optimization for both channels was conducted using an evolutionary algorithm from BluePyOpt (Van Geit et al., 2016) and adapted for use with the computational resources at the National Energy Research Computing Center similar to Ladd et al., 2022.
 
 To validate parameter sensitivity, we constructed multiple variations of our model with different distributions of NaV1.2 and NaV1.6 in the AIS. The crossover point at which the NaV1.2 and NaV1.6 distribution curves intersect was shifted distally in increments of 3.75 µm to make five variations of the AIS with increasing density of NaV1.2. With the wildtype crossover point located 15 µm distal to the soma, the five right-shifted variations have crossover points at 18.75, 22.5, 26.25, 30, and 33.75 µm, respectively. Two variations of the AIS with increased NaV1.6 density were created by shifting the crossover point proximally in 3.75 µm increments to 11.25 and 7.5 µm. To see how our model would behave with different AIS sodium channel distributions, we varied the ratio of NaV1.2: NaV1.6 density in the whole cell to test different conditions at each AIS crossover point and measured the resulting threshold, AIS peak, and somatic peak of the phase plane plot. NaV1.2 percentage was decreased from 90% to 0% in 10% increments as NaV1.6 percentage was concurrently increased from 10% to 100% in 10% increments. The NaV1.2: NaV1.6 ratio of 100%:0% did not produce any APs and was therefore not included in the analysis. In instances where the somatic portion of the phase plane was not a true peak that consisted of adjacent values less than a local maxima, the prominence was estimated by taking the index of the second derivative value closest to zero and calculating the dV/dt value at that index.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data are reported as absolute values or the absolute difference from baseline (delta, Δ). For Δ values, data were normalized either to the initial 500 ms of the stimulus (Figures 2 and 3) or baseline spiking (Figures 4 and 5). Time course graphs are represented as a mean ± standard error. Summary graphs are represented with box plots showing the median, quartiles, and 90% tails or with violin plots. All summary graphs overlay individual datapoints and represent recordings from single cells (reported n) for all electrophysiology experiments. Data were obtained from 5 to 9 animals (both sexes) per condition, which are standard group sample sizes used in the field. Group sizes were determined based on sample sizes previously used for similar studies. Power analysis was not required for this study. No attrition applies to our study, and all data collected is included. Analysis was performed blind to genotype ± drug. Statistical analysis was performed using Prism 10 (GraphPad Software). Quantified mean ± standard error and statistical test used is noted in figure legends. Significance was set at an alpha value of 0.05, and ‘ns’ indicates no significance.
 
 ## Results
 
-## Aryl sulfonamides selectively bind and inhibit NaV isoforms containing the YW motif
+### Aryl sulfonamides selectively bind and inhibit NaV isoforms containing the YW motif
 
 ASCs exhibit high affinity for an extracellular region within voltage sensing domain IV (VSD IV) of select NaV channels with a conserved tyrosine–tryptophan (YW) motif (Ahuja et al., 2015; Figure 1A and B). This YW motif found on NaV1.2, NaV1.6, and NaV1.7 allows for ASC stabilization following channel inactivation (Figure 1B). By contrast, an SR motif present in NaV1.1 and NaV1.3 limits binding appreciably (Ahuja et al., 2015). Thus, we hypothesized that converting either NaV1.2 or NaV1.6 channels from those that contain the YW motif to those that contain an SR motif would alter ASC binding to those channels significantly.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic depicting the fourth voltage sensing domain (VSD-IV) of NaV isoforms. The six transmembrane spanning regions have high sequence homology among different NaV isoforms, while linker regions display more sequence divergence. Orange box highlights extracellular S1–S2 loop where aryl sulfonamide compounds (ASCs) are stabilized by a tyrosine–tryptophan (YW) motif. (B) Amino acid sequence within the S1–S2 loop of various NaV isoforms. Scn2a (NaV1.2) and Scn8a (NaV1.6) are the predominant channels expressed in mature, prefrontal pyramidal cells. Both isoforms share a conserved YW sequence that increases ASC potency. Knock-in mutations of Scn2a and Scn8a were generated by substituting the YW motif with a serine–arginine (SR) sequence present in Scn1a and Scn3a. (C) Example NaV current traces (pA) of cells expressing either YW wildtype channels or SR knock-in mutant chimeras in the presence of 1 μM GNE-4076. To activate exogenously expressed NaV channels, cells were held at –80 mV and stepped to –12 mV for 20 ms. GNE-4076 onboarding was performed by holding cells at –12 mV for 10 s. (D) Dose–response curves for exogenously expressed Scn2a (HEK cells) or Scn8a (ND7/LoNaV) in immortalized cell lines. IC50 was measured for both YW wildtype channels and SR knock-in mutant chimeras (Scn2aYW/YW, n = 6; Scn2aSR/SR, n = 7; Scn8aYW/YW, n = 8; Scn8aSR/SR, n = 6). YW→SR knock-in mutations reduced GNE-4076 potency by about 400- to 500-fold relative to wildtype channels. Circles represent normalized mean NaV current amplitude ± SEM. (E) Activation and steady-state inactivation curves for both YW wildtype channels and SR knock-in mutant chimeras. Scn2a or Scn8a YW→SR mutations alter the efficacy of GNE-4076 while having minor effects on biophysical properties of either isoform. Circles represent mean normalized NaV current amplitude ± SEM. Unpaired t-test with Welch’s correction. No significance detected between wildtype and mutant channels for both V1/2 of activation or inactivation. (F) Example current amplitude response graphs for NaV1.2 (red) and NaV1.6 (blue) expressed in HEK cells. Cells were perfused with increasing concentrations of GNE-4076 throughout the recording. Individual current response recordings from HEK cells expressing Scn2a were robust (3.2 nA), and recordings were reproducible for both YW wildtype channels (red) and SR knock-in mutant chimeras (transparent red). Current responses from cells expressing Scn8a were variable, with only a few cells exhibiting channel conductance (400 pA). In select cells expressing Scn8a, current amplitude (blue) also decreases substantially with 30 nM GNE-4076 and completely with 1 μM. (G) Transgenic mouse lines generated with the YW→SR knock-in mutation present on both ScnXa alleles. Scn2aSR/SR mice were crossed with Scn8aSR/SR mice to generate a dual Scn8a/2aSR/SR knock-in mouse. (H) Overview of the various transgenic (or wildtype) mouse lines used throughout this study. Application of 200 nM GNE-4076 selectively inhibits NaV isoforms only containing the YW motif. (I) Nucleated patch experiments from prefrontal pyramidal cells performed in wildtype or dual Scn8a/2aSR/SR knock-in cells in the presence of 200 nM GNE-4076. Baseline conductance was measured by depolarizing cells from –80 to –12 mV every 2 s for 10 pulses. NaV channels were inactivated by holding the nucleated patch at –12 mV for 10 s. Test pulses were again acquired during recovery similar to baseline pulses. (J) Summary graph of normalized current amplitude from nucleated patch experiments in (I). Baseline and recovery test pulses were acquired for at least 20 s before and 25 s after the channel inactivation step. Solid line represents normalized mean NaV current amplitude ± SEM. Graph also includes wildtype, no drug control nucleated patch experiments (wildtype no drug, n = 4; wildtype + GNE-4076, n = 4; Scn8a/2aSR/SR + GNE-4076, n = 4).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Summary data for threshold (mV) with or without bath application of GNE-4076. Data was collected from age-matched groups (without GNE-4076) or analyzed from baseline data presented in Figure 3. Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug at p25, n = 6; Scn8a/2aSR/SR no drug at p25, n = 8; wildtype no drug from Figure 3, n = 12; Scn8a/2aSR/SR + GNE-4076 from Figure 3, n = 11; wildtype + GNE-4076 from Figure 3, n = 11). One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01. (B) Summary data for peak dV/dt (V/s) with or without bath application of GNE-4076. Data was collected from age-matched groups (without GNE-4076) or analyzed from baseline data presented in Figure 3. Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. n.s.:not significant.
+
 To test for the effects of this motif substitution, we first examined currents generated by wildtype and YW→SR mutated channels expressed in immortalized cell lines (Figure 1C). HEK cells were primarily used for most experiments. But due to the known low transfection efficiency of NaV1.6 in HEK cells, a subset of experiments was performed using an ND7/23 cell line engineered to lack most native NaV conductance (ND7/LoNaV) (Vanoye et al., 2024). Both NaV1.2 and NaV1.6 wildtype channels expressed in cell lines were inhibited markedly by 1 μM GNE-4076 (Figure 1C). By contrast, SR knock-in mutants continued to flux sodium in the presence of 1 μM GNE-4076. Dose–response curves revealed an IC50 of 5.1 nM for wildtype NaV1.2 that increases 365-fold to 1861 nM for mutant SR channels (Figure 1D). For NaV1.6 channels, GNE-4076 IC50 increased 475-fold from 184 nM to 87 μM with the SR mutant (Figure 1D). To assess whether SR mutations affect channel gating properties in the absence of GNE-4076 binding, steady-state activation and inactivation curves were assessed for wildtype or mutant channels (Figure 1E). Consistent with prior work studying a similar mutation in NaV1.7 (Ahuja et al., 2015), the YW to SR mutation had no effect on slope factor for both voltage-dependent activation or inactivation for either NaV1.2 or NaV1.6 (Table 2); however, both voltage-dependent activation and inactivation hyperpolarized by approximately 2 mV for NaV1.6, but not NaV1.2.
+
+**Table 2.**
+ Voltage dependence of activation and inactivation for wildtype and mutant NaV isoforms, related to Figure 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NaV channel</th>
+      <th>V ½ of activation (mV)</th>
+      <th>Slope factor</th>
+      <th>V ½ of inactivation (mV)</th>
+      <th>Slope factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scn2aYW/YW or wildtype NaV1.2 (n = 6)</td>
+      <td>–20.1 ± 2.6</td>
+      <td>6.6 ± 0.5</td>
+      <td>–68.3 ± 1.8</td>
+      <td>6.9 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Scn2aSR/SR or mutant NaV1.2 (n = 7)</td>
+      <td>–18.7 ± 2.1</td>
+      <td>6.4 ± 0.6</td>
+      <td>–68.1 ± 0.8</td>
+      <td>7.1 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Scn8aYW/YW or wildtype NaV1.6 (n = 8)</td>
+      <td>–23.9 ± 2.3</td>
+      <td>6.7 ± 0.4</td>
+      <td>–74.6 ± 3.3</td>
+      <td>6.9 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Scn8aSR/SR or mutant NaV1.6 (n = 6)</td>
+      <td>–26.1 ± 3.2</td>
+      <td>6.5 ± 0.4</td>
+      <td>–71.9 ± 1.2</td>
+      <td>7.0 ± 0.3</td>
+    </tr>
+  </tbody>
+</table>
 
 While GNE-4076 binds potently to either NaV1.2 (Figure 1D, F) or NaV1.7 expressed in HEK cells (Roecker et al., 2017), its affinity was lower for NaV1.6 expressed in ND7/LoNaV cells. To test if this was due to reductions in affinity imposed by the ND7/23 cell line, we examined current in the few HEK cells in which NaV1.6 current could be measured (Figure 1F). While peak currents were small (400 pA vs. 3.2 nA for NaV1.2 transfected using identical protocols), we found that 30 nM GNE-4076 exhibited strong block of NaV1.6 (Figure 1F), but due to limitations in expression efficiency in HEK cells, we were unable to collect full dose–response curves to determine IC50.
 
@@ -124,17 +377,90 @@ Given the disparate binding results in heterologous cell lines, we first tested 
 
 We also asked whether neuronal AP properties were affected by these mutations in Scn8a/2aSR/SR mice by assessing both threshold and peak dV/dt in the absence of GNE-4076 (Figure 1—figure supplement 1). Compared to wildtype cells, there were no detectable changes to peak dV/dt in Scn8a/2aSR/SR neurons (Figure 1—figure supplement 1B). However, the AP threshold was hyperpolarized in Scn8a/2aSR/SR neurons, likely due to small changes in the voltage dependence of activation observed for heterologously expressed NaV1.6 (Figure 1—figure supplement 1A, Table 2). Application with GNE-4076 in either wildtype or Scn8a/2aSR/SR neurons had no further effect on threshold or peak dV/dt compared to controls recording in the absence of GNE-4076, suggesting minimal drug binding occurs without marked depolarization or spiking activity (Figure 1—figure supplement 1, Table 3).
 
-## Differential roles for NaV1.6 and NaV1.2 in AP initiation and somatic excitability
+**Table 3.**
+ Neuronal action potential (AP) firing properties at baseline, related to Figures 3 and 4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NaV channel</th>
+      <th>Threshold (mV)</th>
+      <th>Peak dV/dt (V/s)</th>
+      <th>Spike #</th>
+      <th>Last AHP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>No drug control (n = 12)</td>
+      <td>–42.53 ± 0.61</td>
+      <td>555.82 ± 17.57</td>
+      <td>5.83 ± 0.41</td>
+      <td>–49.47 ± 0.43</td>
+    </tr>
+    <tr>
+      <td>Wildtype (n = 11)</td>
+      <td>–42.41 ± 0.83</td>
+      <td>554.42 ± 14.5</td>
+      <td>5.36 ± 0.36</td>
+      <td>–50.04 ± 0.71</td>
+    </tr>
+    <tr>
+      <td>Scn8a/2aSR/SR (n = 10)</td>
+      <td>–44.87 ± 0.47</td>
+      <td>545.11 ± 12.89</td>
+      <td>5.09 ± 0.16</td>
+      <td>–51.39 ± 0.5</td>
+    </tr>
+    <tr>
+      <td>Scn2aSR/SR (n = 11)</td>
+      <td>–42.3 ± 0.76</td>
+      <td>520.05 ± 13.51</td>
+      <td>6.09 ± 0.32</td>
+      <td>–49.31 ± 0.84</td>
+    </tr>
+    <tr>
+      <td>Scn8aSR/SR (n = 11)</td>
+      <td>–43.87 ± 0.65</td>
+      <td>517.36 ± 21.83</td>
+      <td>5.18 ± 0.55</td>
+      <td>–50.46 ± 0.74</td>
+    </tr>
+  </tbody>
+</table>
+
+### Differential roles for NaV1.6 and NaV1.2 in AP initiation and somatic excitability
 
 NaV1.2 and NaV1.6 are differentially distributed in neuronal arbors and are thought to contribute to different aspects of AP initiation and propagation. In mature neocortical pyramidal cells, NaV1.6 is enriched in the distal AIS, the site where APs initiate (Spratt et al., 2021; Hu et al., 2009; Katz et al., 2018; Royeck et al., 2008). Following initiation, APs forward propagate along the axon via NaV1.6-enriched nodes of Ranvier, but also backpropagate into the soma through a region enriched with a mix of NaV1.2 and NaV1.6 (Hu et al., 2009). Several studies have sought to identify specific roles for each isoform by conditional deletion of either isoform (Spratt et al., 2021; Katz et al., 2018). Unfortunately, in such conditions, the residual isoform compensates for loss to some degree, making interpretation of individual isoform roles difficult. We therefore leveraged ASC-based blocks to study acute, differential inhibition of NaV isoforms to better understand the individual roles of NaV1.2 and NaV1.6 in AP excitability.
 
 Changes to the AP waveform were visualized with phase plane plots, which plot membrane voltage versus membrane voltage velocity (Figure 2B, Figure 3—figure supplement 1A). Within phase plots, spike threshold appears as a sudden deviation from rest and is defined as the voltage at which voltage velocity (dV/dt) first exceeds 15 V/s (Figure 3—figure supplement 1A, right). Following spike threshold, a neuron’s voltage transits through two components of NaV recruitment, first in the AIS and then in the soma (Baranauskas et al., 2013; Kole and Stuart, 2008). These result in characteristic ‘humps’ in the depolarizing aspect of the phase plot (Shu et al., 2007; Yu et al., 2008). Thus, these different components of the phase plot can aid one’s understanding of effects on specific components of NaV-mediated excitability.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig2-v1.jpg)
+
+**Figure 2.:** (A) NaV1.6 and NaV1.2 are equally expressed in soma and proximal dendrites. Expression pattern is more distinct in other regions with NaV1.6 enriched in the distal axon initial segment (AIS), axon, and nodes of Ranvier, whereas NaV1.2 is found exclusively in the proximal AIS and distal dendrites. (B) Compartmental model representing changes to phase plots when NaV isoform expression is reduced from 100% (warmer colors) to 0% (in 10% increments) based on known localization across distinct neuronal localities. Lower NaV1.6 expression depolarized spike threshold and decreased both AIS and somatic AP velocity (dV/dt). Reduced NaV1.2 expression largely impacts backpropagation and somatic AP velocity. (C) Empirical observations of phase plot following near-complete channel block with ASCs. Darker trace represents phase plot taken at baseline prior to –12 mV hold for 30 s (see Figure 3A). Colored traces represent recovery phase plots at different times post –12 mV hold for 30 s with warmer colors depicting more time lapsed and increased channel recovery.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) To assess model sensitivity, NaV1.6 and NaV1.2 distribution is shifted throughout the axon initial segment (AIS). The AIS crossover point is adjusted from baseline with NaV1.6 extended into the proximal AIS (left 2) or NaV1.2 extended into the distal AIS (right 2 and 5). (B) Heat maps for action potential (AP) threshold and peak somatic dV/dt at different AIS crossover points. NaV1.2 and NaV1.6 ratios are also varied along the y-axis. (C) Example phase plane traces at different AIS crossover positions. Each AIS crossover position shows individual plots based on the different NaV ratios. Increased NaV1.2 density consistently depolarized AP threshold, while dV/dt peaks are randomly altered at the different density ratios. Scale bars are unique to each AIS crossover position.
 
 To provide a priori predictions of potential ASC-based effects on excitability, we constructed a compartmental model in which each channel’s density could be modulated. Channels were distributed based on predictions from empirical anatomical and physiological studies (Spratt et al., 2021; Nelson et al., 2024; Hu et al., 2009; Katz et al., 2018; Kole et al., 2008). NaV1.6 was enriched in the distal AIS, NaV1.2 was enriched in the proximal AIS, both channels were expressed at equal levels in the soma and the first 20 µm of dendrite closest to the soma, and NaV1.2 was expressed exclusively in all other dendrites (Figure 2A). Within this model, each channel’s density was modulated in 10% increments, from 100 to 0% (Figure 2B).
 
 In WT conditions (100% density of both channels), models generated APs with a threshold and AP kinetics comparable to empirical baseline observations (Figure 2B, C). Within this model, reducing NaV1.2 or NaV1.6 density had clear, dissociable effects. Progressive reduction of NaV1.6 produced a progressive depolarization of AP threshold and a corresponding decrement in dV/dt throughout the entire rising phase of the AP. NaV1.2 reduction, by contrast, had no effect on AP threshold or the initial velocity of the AP initiated in the distal AIS. Instead, components of the AP related to backpropagation and recruitment of somatic NaV channels were impaired only, with a decrement in peak dV/dt and peak AP membrane potential. To validate the accuracy of the parameters used in our model, we also performed sensitivity analysis (Figure 2—figure supplement 1). Here, we adjusted the crossover point of NaV1.2 and NaV1.6 within the AIS as well as varied the density ratio of both channels (Figure 2—figure supplement 1A, B). Increasing the NaV1.6 ratio to 100% consistently hyperpolarized AP threshold across all AIS crossover positions (Figure 2—figure supplement 1B, C). However, dV/dt was highly variable and random when either the AIS crossover point is shifted or NaV ratios are altered.
 
 While these models provide clues to the differential roles of NaV1.2 and NaV1.6, we needed to design an experimental strategy that increased the overall degree of NaV blockade using ASCs in mice where either NaV1.6 or NaV1.2 was mutated to be insensitive to 200 nM GNE-4076 binding (Figures 1G and 3A). Since it is nearly impossible to achieve full block with ASCs under physiological firing, we developed a hybrid current- and voltage-clamp experiment to study the effects of more complete isoform blockade (Figure 3B). In this protocol, neurons were held to –80 mV in current clamp with constant bias current (if necessary), and baseline APs were elicited with brief somatic current injection (300 ms, amplitude adjusted to evoke ~4–5 APs). We then promoted NaV activation and inactivation by voltage-clamping neurons to –12 mV for 30 s (Figure 3A). Following voltage-clamp, neurons were returned to current-clamp with the same bias current as used in baseline conditions. We then evoked APs, first at an interstimulus interval of 2 s, then at successively increasing intervals of 5–60 s, allowing for somewhat consistent sampling on a log-base timescale that aligns well with both channel recovery from inactivation and recovery from GNE-4076 block (Figure 3D, F). For clarity and simplicity, we will describe studies based on which channel is inhibited rather than which channel was rendered insensitive to GNE-4076. For example, a study in the Scn2aSR/SR/Scn8a+/+ animal is a case where NaV1.6 can be blocked.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig3-v1.jpg)
+
+**Figure 3.:** (A) Protocol used to characterize recovery of AP firing properties. Baseline spiking is determined by injecting current for 300 ms to elicit five to six APs. To promote NaV inactivation and maximal GNE-4076 onboarding, neurons are held at –12 mV in voltage-clamp for 30 s. Recovery of AP firing is evaluated by injecting the same current stimulus defined during baseline spiking with an inter-stimulus interval starting at 2 s, followed by 5, 15, 30, and 60 s. (B) Overlaid waveform of first AP at baseline or 18 s post GNE-4076 onboarding for all conditions (wildtype no drug, n = 12; wildtype + GNE-4076, n = 11; Scn8a/2aSR/SR + GNE-4076, n = 10; Scn2aSR/SR + GNE-4076, n = 11; Scn8aSR/SR. + GNE-4076, n = 11). (C) Overlaid phase plane of AP traces at baseline (100% transparency) or 18 s post GNE-4076 onboarding (20% transparency) for each condition in (B). Plots represent the AP velocity by taking the first derivative (dV/dt, y-axis) versus the membrane potential (mV, x-axis). Colors are matched to conditions represented in (B). (D) Recovery of AP threshold (Vm) represented as a delta value for individual cells plotted against time post GNE-4076 onboarding (log-scale). For Δ Vm, the baseline value is subtracted from individual timepoints throughout the recovery phase (Δ mV = recovery timepoint – baseline). Colors are matched to conditions represented in (B). Gray shaded bar represents recovery between 12 and 20 s. (E) Summary data for Δ Vm at 12–20 s post GNE-4076 onboarding (time period represented as gray bar in (D)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. ****p < 0.0001. (F) Recovery of AP peak velocity (dV/dt) represented as a delta value for individual cells plotted against time post GNE-4076 onboarding (log-scale). For Δ dV/dt, the baseline value is subtracted from individual time points throughout the recovery phase (Δ V/s = recovery timepoint – baseline). Colors are matched to conditions represented in (B). Gray shaded bar represents recovery between 12 and 20 s. (G) Summary data for Δ dV/dt at 12–20 s post GNE-4076 onboarding (time period represented as gray bar in (F)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. ****p < 0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic depicting different phases of an action potential (AP), including AP velocity (first derivative; dV/dt or V/s) and acceleration (second derivative; d2V/dt2 or V/s2). APs can be divided based on depolarization or repolarization phases, which largely depends on the opening of various voltage-gated ion channels. During cellular depolarization, two components exist that largely account for voltage change detected at either the AIS or soma, which are easily discerned by two humps present on a phase plane plot. The AIS component can further be separated into the AIS max or inflection point defined as the trough or peak of the second derivative and likely represents voltage change at distinct AIS regions like the proximal or distal AIS, respectively. (B) Example traces of first and second derivatives for all genotypes at baseline or 18 s post recovery. AIS inflection point (light green) is defined as corresponding dV/dt when acceleration (d2V/dt2) peaks during the AIS component. AIS max point (dark green) is defined as corresponding dV/dt when acceleration plateaus (visualized as a trough of d2V/dt2) during AIS component. (C) Summary data for Δ AIS inflection point (dV/dt) at 12–20 s post GNE-4076 onboarding (represented as light green bar in (B)). Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug, n = 12; wildtype + GNE-4076, n = 11; Scn2aSR/SR + GNE-4076, n = 11; Scn8aSR/SR + GNE-4076, n = 11; Scn8a/2aSR/SR + GNE-4076, n = 11). One-way ANOVA, Holm–Šídák multiple comparisons test. ****p < 0.0001. (D) Recovery of AIS max velocity (dV/dt) represented as a delta value for individual cells plotted against time post GNE-4076 onboarding (log-scale). For Δ dV/dt, the baseline value is subtracted from individual time points throughout the recovery phase (Δ V/s = recovery timepoint − baseline). Gray shaded bar represents recovery between 12 and 20 s. (E) Summary data for Δ AIS max velocity (dV/dt) at 12–20 s post GNE-4076 onboarding (represented as gray bar in (D) or dark green bar in (B)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. ****p < 0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Recovery of AP threshold (Vm) represented as absolute values for individual cells (wildtype no drug, n = 12; wildtype + GNE-4076, n = 11; Scn2aSR/SR + GNE-4076, n = 11; Scn8aSR/SR + GNE-4076, n = 11; Scn8a/2aSR/SR + GNE-4076, n = 11) plotted against time post GNE-4076 onboarding (log-scale). Colors are matched to conditions represented in Figure 3B. Gray shaded bar represents recovery between 12 and 20 s. (B) Summary data for Vm at 12–20 s post GNE-4076 onboarding (time period represented as gray bar in (A)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (C) Recovery of AP peak velocity (dV/dt) represented as absolute values for individual cells plotted against time post GNE-4076 onboarding (log-scale). Colors are matched to conditions represented in Figure 3B. Gray shaded bar represents recovery between 12 and 20 s. (D) Summary data for peak dV/dt at 12–20 s post GNE-4076 onboarding (time period represented as gray bar in (C)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (E) Recovery of axon initial segment (AIS) max velocity (dV/dt) represented as absolute values for individual cells plotted against time post GNE-4076 onboarding (log-scale). Colors are matched to conditions represented in Figure 3B. Gray shaded bar represents recovery between 12 and 20 s. (F) Summary data for AIS max velocity (dV/dt) at 12–20 s post GNE-4076 onboarding (time period represented as gray bar in (E)). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
 
 Empirical data at various time points post –12 mV hold reveals that recovery from ASC-dependent block increases channel availability from approximately 0–10% to about 90–95% of the baseline spike when more time has elapsed (Figures 2C and 3B, C). This recovery in available channels mimics changes observed to phase plots in compartmental models based on overall channel expression (Figure 2B).
 
@@ -144,7 +470,7 @@ When individual channel isoforms were blocked more completely with voltage steps
 
 To examine these relative contributions further, we analyzed the rising phase of APs more closely (Figure 3—figure supplement 1A). As described above, the first component of the rising phase of the AP reflects recruitment of NaV channels localized to the AIS (Figure 3—figure supplement 1A, middle). Based on changes in voltage acceleration (second derivative) within this period, the AIS component can be further divided into initiation and AIS backpropagation components (Hu et al., 2009; Favero et al., 2018; Figure 3—figure supplement 1A, right). These periods were divided based on a time point during the AIS phase where voltage acceleration first peaked (AIS inflection point) or afterwards decreased, creating a trough in an acceleration versus time graph (AIS max; Figure 3—figure supplement 1B). The dV/dt at the AIS inflection point was affected only by NaV1.6 block (Figure 3—figure supplement 1C), whereas the dV/dt at the trough was affected by block of either isoform (Figure 3—figure supplement 1D, E). This reinforces the model where APs are initiated via the NaV1.6-enriched distal AIS, and where the depolarization produced by these distally localized channels recruits NaV1.2 in the more proximal AIS. Absolute values are also reported for threshold, peak dV/dt, and AIS max for all recorded cells in recovery experiments (Figure 3—figure supplement 2A–F).
 
-## Acute block of NaV1.2 increases pyramidal cell AP output
+### Acute block of NaV1.2 increases pyramidal cell AP output
 
 Previously, we showed that conditional knockout of Scn2a increased AP output (Spratt et al., 2021). We hypothesized that this was due to the lack of NaV1.2 in dendrites. When they are absent from this compartment, the dendrite does not depolarize as effectively, leading to a corresponding decrease in the recruitment of dendrite-localized potassium channels (KV). Consequently, neurons repolarize less between APs, making it easier to evoke the next AP in the NaV1.6-enriched AIS.
 
@@ -152,11 +478,11 @@ Though this hypothesis was supported by compartmental modeling demonstrating tha
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig4-v1.jpg)
 
-**Figure 4.:** V1.2 increases action potential (AP) excitability.(A) AP train over 300 ms at baseline (black) or 18 s post GNE-4076 onboarding (color) for all conditions (wildtype no drug, n = 12; wildtype + GNE-4076, n = 10; Scn8a/2a + GNE-4076, SR/SRn = 11; Scn2a + GNE-4076, SR/SRn = 11; Scn8a + GNE-4076, SR/SR.n = 11). Dashed line represents Vm of last afterhyperpolarization (AHP). (B) Summary data for Δ spike number at 12–20 s post GNE-4076 onboarding. Violin plots show median. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ****p < 0.0001. (C) Summary data for Δ last AHP at 12–20 s post GNE-4076 onboarding. Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) AP train over 300 ms at baseline (black) or 18 s post GNE-4076 onboarding (color) for all conditions (wildtype no drug, n = 12; wildtype + GNE-4076, n = 10; Scn8a/2aSR/SR + GNE-4076, n = 11; Scn2aSR/SR + GNE-4076, n = 11; Scn8aSR/SR. + GNE-4076, n = 11). Dashed line represents Vm of last afterhyperpolarization (AHP). (B) Summary data for Δ spike number at 12–20 s post GNE-4076 onboarding. Violin plots show median. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ****p < 0.0001. (C) Summary data for Δ last AHP at 12–20 s post GNE-4076 onboarding. Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01.
 
 Remarkably, acute NaV1.2 block mirrored conditional knockout and was the only condition in which AP output increased (Figure 4B) and was associated with a depolarization in afterhyperpolarization voltage (Figure 4C). In contrast, NaV1.6 block decreased AP output, as did block of both channels (Figure 4B). This indicates that blocking NaV1.2 alone can increase AP output, independent of compensatory changes to other channels that may occur with genetic manipulations.
 
-## Activity-dependent effects of ASCs on NaV channels and subsequent inhibition alter AP properties and firing rate
+### Activity-dependent effects of ASCs on NaV channels and subsequent inhibition alter AP properties and firing rate
 
 During physiological activity, non-selective pharmacological inhibition of NaV channels in neurons greatly reduces cellular excitability and AP firing (Tukker et al., 2023; Thouta et al., 2022). ASCs are unique in that they require prolonged bursts of activity or even neuronal hyperexcitability to stabilize more channels in the inactivated state (Ahuja et al., 2015; Goodchild et al., 2024; Johnson et al., 2024; Johnson et al., 2022). In contrast to the data presented above, where we observe near-complete block immediately following prolonged depolarization (Figure 3—figure supplement 2C, absolute values), neurons experiencing physiological levels of activity likely never reach high percentages of channel blockade. Thus, in normal spiking neurons, ASCs would therefore be predicted to exhibit use dependence, progressively blocking channels in proportion to a neuron’s activity rate.
 
@@ -164,15 +490,72 @@ To test this concept, we generated prolonged periods of activity in current-clam
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig5-v1.jpg)
 
-**Figure 5.:** V channels alters action potential (AP) firing properties in layer 5b, thick-tufted excitatory neurons.(A) Representative AP firing response to 300 pA current injection for 10 s in wildtype or Scn8a/2a cells with or without 200 nM GNE-4076. (SR/SRB) Phase plane of AP traces shown in (A). Plots represent AP velocity by taking the first derivative (dV/dt, y-axis) versus the membrane potential (mV, x-axis). To represent changes with phase plane relative to time, a rainbow color spectrum is used with warmer colors representing more time lapsed. (C) Delta threshold (Δ mV), delta peak dV/dt (Δ V/s), and delta instantaneous firing frequency (Δ Hz) binned in 1-s increments normalized to the initial 500 ms of current injection (binned time – initial 500 ms). Circles represent mean Δ value ± SEM. Two-way ANOVA, Holm–Šídák multiple comparisons test. (D) Summary data for the final sec in (C). Delta values are normalized to the initial 500 ms of the stimulus (binned time – initial 500 ms). Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug, n = 12; wildtype + GNE-4076, n = 12; Scn8a/2a + GNE-4076, SR/SRn = 12). One-way ANOVA, Holm–Šídák multiple comparisons test. **p < 0.01, ***p < 0.001, ****p < 0.0001.Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Representative AP firing response to 300 pA current injection for 10 s in wildtype or Scn8a/2aSR/SR cells with or without 200 nM GNE-4076. (B) Phase plane of AP traces shown in (A). Plots represent AP velocity by taking the first derivative (dV/dt, y-axis) versus the membrane potential (mV, x-axis). To represent changes with phase plane relative to time, a rainbow color spectrum is used with warmer colors representing more time lapsed. (C) Delta threshold (Δ mV), delta peak dV/dt (Δ V/s), and delta instantaneous firing frequency (Δ Hz) binned in 1-s increments normalized to the initial 500 ms of current injection (binned time – initial 500 ms). Circles represent mean Δ value ± SEM. Two-way ANOVA, Holm–Šídák multiple comparisons test. (D) Summary data for the final sec in (C). Delta values are normalized to the initial 500 ms of the stimulus (binned time – initial 500 ms). Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug, n = 12; wildtype + GNE-4076, n = 12; Scn8a/2aSR/SR + GNE-4076, n = 12). One-way ANOVA, Holm–Šídák multiple comparisons test. **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+**Table 4.**
+ Action potential (AP) firing properties of first spike in 10 s AP train, related to Figures 5 and 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NaV channel</th>
+      <th>Threshold (mV)</th>
+      <th>Peak dV/dt (V/s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wildtype, no drug (n = 12)</td>
+      <td>–43.1 ± 0.4</td>
+      <td>549.1 ± 8.8</td>
+    </tr>
+    <tr>
+      <td>Wildtype + GNE-4076 (n = 12)</td>
+      <td>–41.7 ± 0.7</td>
+      <td>541.0 ± 12.5</td>
+    </tr>
+    <tr>
+      <td>Scn8a/2aSR/SR + GNE-4076 (n = 12)</td>
+      <td>–43.7 ± 0.4</td>
+      <td>561.3 ± 14.5</td>
+    </tr>
+    <tr>
+      <td>Scn2aSR/SR + GNE-4076 (n = 12)</td>
+      <td>–40.7 ± 0.4</td>
+      <td>500.7 ± 12.5</td>
+    </tr>
+    <tr>
+      <td>Scn8aSR/SR + GNE-4076 (n = 11)</td>
+      <td>–43.3 ± 0.5</td>
+      <td>542.9 ± 11.6</td>
+    </tr>
+  </tbody>
+</table>
 
 We then repeated experiments described above for single mutated channels—where APs were generated with somatic depolarization over 10 s (Figure 6A, B). In cases where NaV1.6 alone could be inhibited, AP threshold depolarized in response to GNE-4076 as much as in WT cases (Figure 6C, D). Furthermore, AP frequency and peak somatic AP dV/dt were reduced to levels observed in WT cells (Figure 6C, D). In cases where NaV1.2 alone could be inhibited, changes in AP threshold and instantaneous frequency were no different than Scn8a/2aSR/SR conditions. Indeed, the only change in AP properties was a decrease in peak AP dV/dt (Figure 6D). This suggests that AP threshold and instantaneous frequency are more sensitive to NaV1.6 antagonism, whereas peak somatic dV/dt can be affected by antagonism of either isoform. Absolute values are also reported for threshold, peak dV/dt, and instantaneous frequency for all recorded cells in prolonged activity burst experiments (Figure 6—figure supplement 1A).
 
-## Leveraging use-dependent, isoform-selective NaV pharmacology as anticonvulsants
+![Figure 6.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig6-v1.jpg)
+
+**Figure 6.:** (A) Representative AP firing response to 300 pA current injection for 10 s in Scn2aSR/SR or Scn8aSR/SR cells with 200 nM GNE-4076 to selectively inhibit NaV1.6 or NaV1.2, respectively. (B) Phase plane of AP traces shown in (A). Plots represent AP velocity by taking the first derivative (dV/dt, y-axis) versus the membrane potential (mV, x-axis). To represent changes with phase plane relative to time, a rainbow color spectrum is used with warmer colors representing more time lapsed. (C) Delta threshold (Δ mV), delta peak dV/dt (Δ V/s), and delta instantaneous firing frequency (Δ Hz) binned in 1-s increments normalized to the initial 500ms of current injection (binned time – initial 500 ms). Circles represent mean Δ value ± SEM. Average Δ value ± SEM for Scn8a/2aSR/SR + GNE-4076 and wildtype + GNE-4076 from Figure 5C are represented. (D) Summary data for the final sec in (C). Delta values are normalized to the initial 500 ms of the stimulus (binned time – initial 500 ms). Box plots show median and 90% tails. Circles represent individual cells (Scn8a/2aSR/SR + GNE-4076, n = 12; wildtype + GNE-4076, n = 12; Scn2aSR/SR + GNE-4076, n = 12; Scn8aSR/SR + GNE-4076, n = 11). One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Absolute values for threshold (mV), peak dV/dt (V/s), and instantaneous firing frequency (Hz) binned in 1-s increments. Circles represent mean absolute value ± SEM (wildtype no drug, n = 12; wildtype + GNE-4076, n = 12; Scn8a/2aSR/SR + GNE-4076, n = 12; Scn2aSR/SR + GNE-4076, n = 12; Scn8aSR/SR + GNE-4076, n = 11). Two-way ANOVA, Holm–Šídák multiple comparisons test.
+
+### Leveraging use-dependent, isoform-selective NaV pharmacology as anticonvulsants
 
 Epilepsy is often associated with aberrant, excessive excitability in neocortical networks, whether from direct hyperexcitability in pyramidal cells (Lopez-Santiago et al., 2017; Sanders et al., 2018) or disinhibition of pyramidal cells via alterations in inhibitory networks (Favero et al., 2018; Tran et al., 2020). Several use-dependent NaV antagonists with structures similar to GNE-4076 are being developed, exhibiting differential selectivity for NaV1.2 and NaV1.6 (Goodchild et al., 2024). Use dependence may have advantages as anti-epileptics. In theory, they would have minimal effect on neurotypical network activity unless such networks were hyperactive enough to promote drug binding. This may occur preferentially in seizure states. But given the results above demonstrating that block of NaV1.2 and NaV1.6 can have different effects on overall AP output, it is critical to determine how block of either channel affects overall activity in seizure-like conditions.
 
 To test this, we mimicked synaptic input by repeatedly injecting a 60-s-long somatic current composed of Poisson-distributed EPSC and IPSC-like waveforms designed to elicit ~10 Hz spiking in baseline conditions (Figure 7A). Following this baseline, the PSC-like train was repeated, imposed upon a 400-pA standing current injection to increase spiking to ~30 Hz (Figure 7C), mimicking spike rates commonly observed during cortical seizure (Neckelmann et al., 1998; Timofeev and Steriade, 2004). After this seizure-like event, cells were returned to baseline voltages, and recovery was assessed with four more repetitions of the 60 s PSC stimulus (Figure 7A–C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig7-v1.jpg)
+
+**Figure 7.:** (A) Stimulation protocol and example firing trace of cell injected with fluctuating post-synaptic potentials (PSPs) randomly generated using a Poisson probability distribution function for 60 s. PSPs were continuously applied to acquire baseline activity, seizure-like activity, and recovery activity. During seizure-like activity, a 400-pA step was applied in addition to the PSP. Recovery was continuously recorded for up to 4 min post seizure-like activity. (B) Zoomed-in example traces for all genotypes at the Baseline → Seizure transition, Seizure → Recovery transition, and start of 3–4 min recovery period (highlighted in (A)). Solid horizontal black bar represents membrane potential (Vm) of –12 mV. Tick marks above traces represent detected spikes defined as a change in Vm of 15 V/s or greater. (C) Threshold (mV) or instantaneous firing frequency (Hz) binned in 5-s increments for all genotypes in (B). Solid lines represent mean value ± SEM. Timescale on x-axis mirrors activity presented in (A). (D) Summary of threshold data for the final 5 s of seizure-like activity or entire 3–4 min recovery time point in (C). Delta values are normalized to baseline activity (either at final 5 s or entire period). Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug, n = 7; wildtype + GNE-4076, n = 7–8; Scn2aSR/SR + GNE-4076, n = 12; Scn8aSR/SR + GNE-4076, n = 12; Scn8a/2aSR/SR + GNE-4076, n = 6). One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001. (E) Summary of instantaneous frequency data for the final 5 s of seizure-like activity or entire 3–4 min recovery time point in (C). Delta values are normalized to baseline activity (either at final 5 s or entire period). Box plots show median and 90% tails. Circles represent individual cells. One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/105696/elife-105696-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Changes to baseline activity prior to seizure-like activity (Zoom-in of Figure 7C). Absolute values for both threshold (mV) and instantaneous firing frequency (Hz) are binned in 5-s increments for all genotypes in Figure 7B. (B) Summary of threshold or instantaneous frequency data for the final 5 s of baseline activity in (A). Delta values are normalized to the initial 5 s of baseline activity (final − initial 5 s). Box plots show median and 90% tails. Circles represent individual cells (wildtype no drug, n = 7; wildtype + GNE-4076, n = 8; Scn2aSR/SR + GNE-4076, n = 12; Scn8aSR/SR + GNE-4076, n = 12; Scn8a/2aSR/SR + GNE-4076, n = 6). One-way ANOVA, Holm–Šídák multiple comparisons test. *p < 0.05, **p < 0.01, ****p < 0.0001.
 
 In the presence of 200 nM GNE-4076, baseline firing rates were mostly stable across all conditions (Figure 7—figure supplement 1A). Wildtype, no drug and Scn8a/2aSR/SR conditions observed no change in firing rate, while dual or selective NaV1.6 blockade saw a slight decrease by 60 s of postsynaptic activity (Figure 7—figure supplement 1B). Interestingly, we did see a slight increase in baseline firing by 60 s when NaV1.2 was selectively targeted (Figure 7—figure supplement 1A, B), further highlighting a paradoxical shift to hyperactive neurons when NaV1.2 availability decreases. By contrast, a slight depolarization in AP threshold was observed at baseline when both channels were sensitive to GNE-4076 (e.g., WT plus drug) and to a lesser extent with selective block of NaV1.6 (Figure 7—figure supplement 1A, B). Given that this dose can completely block both NaV1.2 and NaV1.6 in HEK cells, a small amount of drug block was expected at baseline.
 
@@ -182,7 +565,7 @@ Seizure-like activity induction depolarized AP threshold markedly in all genotyp
 
 Here, we combined genetic and pharmacological strategies to transiently, selectively, and reversibly inhibit either NaV1.6 or NaV1.2 function using activity-dependent ASCs, which bind channels in the inactivated state. We show that acute blockade of either isoform has opposing effects on neuronal output: inhibition of NaV1.6 decreases AP output, whereas NaV1.2 increases AP output. Given this, we found that the block of NaV1.6 rather than NaV1.2 was more effective at tempering spiking activity in cells driven to seizure-like levels of AP output. This suggests that pharmacology tuned to preferentially block NaV1.6 over NaV1.2 in a use-dependent manner may be useful as an anti-epileptic.
 
-## Functional implications of differential compartmental NaV isoform expression
+### Functional implications of differential compartmental NaV isoform expression
 
 Electrophysiological recordings of AP propagation delays between somatic and axonal recordings demonstrate that APs initiate ~35–50 µm from the soma, in the distal AIS (Shu et al., 2007; Palmer and Stuart, 2006; Baranauskas et al., 2013; Hu et al., 2009). This region is enriched with NaV1.6 (Hu et al., 2009; Tian et al., 2014; Royeck et al., 2008; Lorincz and Nusser, 2008; Akin et al., 2015). Consistent with this, we find that inhibition of NaV1.6 alone alters AP initiation, with an increase in AP threshold and a decrease in total AP number from block of this isoform. Following distal AIS AP initiation, APs sequentially propagate across different neuronal compartments to influence local excitability (Shu et al., 2007; Palmer and Stuart, 2006; Baranauskas et al., 2013). Forward propagation was not examined here, but prior reports demonstrate that it is supported almost exclusively by NaV1.6 in nodes of Ranvier and boutons (Tian et al., 2014; Caldwell et al., 2000; Kaplan et al., 2001). By contrast, backpropagation through the proximal AIS and soma recruits a mix of NaV1.6 and NaV1.2.
 
@@ -192,7 +575,7 @@ NaV1.2 expression in pyramidal cell dendrites appears to have two roles in neuro
 
 Similar to NaV1.2 conditional knockout, where NaV1.6 is upregulated, knockout of NaV1.6 results in an increase in NaV1.2 expression, at least in the AIS. In pyramidal cells from mice constitutively lacking NaV1.6, NaV1.2 occupies the entirety of the AIS rather than just the region proximal to the soma (Ye et al., 2018; Katz et al., 2018; Royeck et al., 2008). Thus, it has not been possible to evaluate the role of NaV1.6 in its normal distribution using genetic manipulations. Here, we find that acute NaV1.6 block reduces AP output with a concomitant increase in AP threshold. This contrasted markedly with block of NaV1.2, which had no effect on threshold. Of note, this distinction can be leveraged to assess the specificity of other NaV-targeting pharmacology that has been suggested to have specificity at select isoforms, as any change in threshold indicates that drugs are interacting with NaV1.6 (Ye et al., 2018; Filipis et al., 2023).
 
-## ASC pharmacology for suppression of neuronal hyperexcitability
+### ASC pharmacology for suppression of neuronal hyperexcitability
 
 Epilepsy can arise from genetic and non-genetic factors, often with unexplained etiology (Lindy et al., 2018; Deng et al., 2014). Seizure onset is broadly classified as an electrical imbalance of cellular and network activity that favors hyperexcitability (Agbo et al., 2023), whether it be cell intrinsic, synaptic, or due to complex network effects (Greenfield, 2013; Yin et al., 2013). Thus, seizure suppression can be targeted at multiple levels. Nevertheless, proper dosing can be difficult, as one aims to provide drug concentrations that temper excess activity but limit side effects like sedation associated with elevated drug concentrations.
 

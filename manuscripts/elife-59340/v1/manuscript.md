@@ -50,7 +50,7 @@ A group of expert programmers (average 11 years of programming experience) perfo
 
 ## Results
 
-## Behavioral results
+### Behavioral results
 
 Accuracy was similar across real and fake code trials (real M = 92%, SD = 0.045; fake M = 0.90, SD = 0.069; binary logistic mixed regression, real to fake odds ratio β = 1.27; Wald’s z statistic, z = 1.21; p=0.23). Accuracy was also similar across for and if trials (for M = 0.92, SD = 0.056; if M = 0.92, SD = 0.076; if to for odds ratio β = 0.95; Wald’s z statistic, z = −0.28; p=0.77). Participants were slower to respond to fake as compared to real-code trials (real M = 1.73 s, SD = 0.416; fake M = 2.03 s, SD = 0.37; t(73) = 2.329, p=0.023) and slower to respond to for as compared to if trials (for M = 1.85 s, SD = 0.46; if M = 1.60 s, SD = 0.44; t(58) = 2.127, p=0.038) (Figure 1—figure supplement 1).
 
@@ -58,11 +58,19 @@ In the language/math/logic localizer task, participants performed least accurate
 
 In the MSIT experiment, hard and easy conditions did not differ in terms of accuracy (hard M = 0.97, SD = 0.038; easy M = 0.98, SD = 0.034; t(28) = −1.363, p=0.18), but the hard trials took significantly longer to respond to than the easy trials (hard M = 0.792 s, SD = 0.092; easy M = 0.506 s, SD = 0.090; t(28)=8.59, p<0.001) (Figure 1—figure supplement 1).
 
-## fMRI results
+### fMRI results
 
-## Code comprehension experiment
+#### Code comprehension experiment
 
 As compared to fake code, real-code elicited activation in a left-lateralized network of regions, including the lateral PFC (middle/inferior frontal gyri, inferior frontal sulcus; mainly BA 44 and 46, with partial activation in BA 6, 8, 9, 10, 47), the parietal cortex (the IPS, angular, and supramarginal gyri; BA 7) and the pMTG and superior temporal sulcus (BA 22 and 37). Activity was also observed in early visual cortices (Occ) (p<0.01 FWER, Figure 1; Supplementary file 2).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/59340/elife-59340-fig1-v1.jpg)
+
+**Figure 1.:** Areas shown are p<0.05 cluster-corrected p-values, with intensity (both warm and cold colors) representing uncorrected vertex-wise probability. In the maps for each localizer contrast, both warm and cold colors indicate activated vertices in the contrast, with the cold color labelling the overlap with the code contrast.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59340/elife-59340-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Response time for (c) code comprehension and (d) localizer tasks. Error bars are mean ± SEM. *p<0.05. **p<0.01. ***p<0.001.
 
 MVPA analysis revealed that for and if functions could be distinguished based on patterns of activity within PFC (accuracy = 64.7%, p<0.001), IPS (accuracy = 67.4%, p<0.001) and pMTG (accuracy = 68.4%, p<0.001). for and if functions could also be distinguished within the early visual cortex (accuracy = 55.7%, p=0.015), however, decoding accuracy was lower than in the other regions (F(3, 56)=4.78, p=0.0048) (Figure 2).
 
@@ -70,7 +78,7 @@ MVPA analysis revealed that for and if functions could be distinguished based on
 
 **Figure 2.:** (a) The four search spaces (IPS, pMTG, PFC, OCC in the left hemisphere) within which functional ROIs were defined for the MVPA. (b) The MVPA decoding accuracy in the four ROIs. Error bars are mean ± SEM. *p<0.05. ***p<0.001.
 
-## Overlap between code comprehension and other cognitive domains
+#### Overlap between code comprehension and other cognitive domains
 
 The language/math/logic localizer task activated previously identified networks involved in these respective domains. Responses to language were observed in a left perisylvian fronto-temporal language network, to math in parietal and anterior prefrontal areas as well as posterior aspect of the inferior temporal gyrus, and finally to logic, like math, in parietal and anterior prefrontal areas as well as posterior aspect of the inferior temporal gyrus. Logic activated more anterior and more extensive regions in PFC than math. The MSIT hard >easy contrast also activated a fronto-parietal network including the IPS, however, the activation in the lateral frontal cortex was posterior and close to the precentral gyrus. (Figure 3, see Supplementary file 2 for full description of activity patterns associated with language, logic, math and MSIT). Note that although in the current experiment logic, math and language were compared to each other, the networks observed for each domain are similar to those previously identified with other control conditions (e.g. lists of non-words for language and hard vs. easy contrast in a logic task) (e.g. Coetzee and Monti, 2018; Fedorenko et al., 2011).
 
@@ -84,7 +92,7 @@ The overlap of code with logic and math was observed in the IPS, PFC, and a post
 
 Finally, code overlapped with language (language >math) in portions of the inferior frontal gyrus and the posterior aspect of the superior temporal sulcus/middle temporal gyrus. The overlap between language and code was on average low, and the degree of overlap varied considerably across participants (cosine sim range: [0.105, 0.480]), with only half of the participants showing above chance overlap. Notably there was no relationship between overlap of code and language and level of expertise, as measured either by years of experience coding (regression against code-language overlap: R2 = 0, p=0.99; regression against code-math overlap: R2 = 0.033, p=0.52) or performance on coding assessments (regression against code-language overlap: R2 = 0.033, p=0.52; regression against code-math overlap: R2 = 0.064, p=0.36).
 
-## Lateralization
+#### Lateralization
 
 The group activation map suggested that code comprehension is left-lateralized. Analyses of individual lateralization indices showed that indeed, code comprehension was as left-lateralized as language (Code lateralization index mean = 0.451, one sample t-test against 0: t(14) = 5.501, p<0.001; Language mean = 0.393, t(14) = 5.523, p<0.001; paired t-test between code and language: t(14) = 1.203, p=0.25). Moreover, lateralization indices of code and language were highly correlated across individuals (R2 = 0.658, p<0.001) (Figure 4).
 
@@ -98,7 +106,7 @@ A consistent network of left-lateralized regions was activated across individual
 
 Within this code-responsive neural network, spatial patterns of activation distinguished between for vs. if code functions, suggesting that this network represents code-relevant information and is not merely activated during the coding task due to general difficulty demands. In overlap analyses, the code comprehension network was most similar to the fronto-parietal system involved in formal logical reasoning and to a lesser degree math. By contrast overlap with the perisylvian fronto-temporal language network is low. Notably, in the current study, neural responses associated with language, math and logic were localized partly relative to each other (e.g. logic >language). This approach focuses on networks that are uniquely involved in one domain vs. another. The degree to which areas shared across language, logic, and math are implicated in code comprehension remains to be addressed in future work.
 
-## Code overlaps with logic
+### Code overlaps with logic
 
 Code, logical reasoning, math and the MSIT task all activated aspects of the so-called fronto-parietal executive control system. However, overlap of code with logic was most extensive, followed by math and finally the MSIT. The difference between the MSIT task on the one hand and code comprehension, logic and math on the other, was particularly pronounced in the frontal lobe. There only code, logic and math activated more anterior regions of PFC, including BA 46 and BA 9, although logic-associated activation extended even more anteriorly than code. These findings suggest that neural overlap between logic and code is specific, and not fully accounted for by the general involvement of the central executive system. Note that although the logical reasoning task was more difficult than the language task, larger overlap with logic is unlikely to relate to task difficulty since the current overlap analyses control for the overall number of activated vertices.
 
@@ -113,7 +121,7 @@ There are also important differences between the rules of logical inference and 
 
 automatically implies that when the condition is false, the function ‘do_something()” isn’t executed, unless otherwise specified. Learning to program involves acquiring the particular set of conventionalized rules used within programming languages and a syntax that specifies how the programming language in question expresses logical operations (Dalbey and Linn, 1985; Pea and Kurland, 1984; Pennington, 1987; Robins et al., 2003). We speculate that such knowledge is encoded within the fronto-parietal network identified in the current study. It is also worth pointing out that although we found substantive overlap between the neural networks involved in code and logic, it is possible that, at a finer neural scale, these functions dissociate. Future studies comparing coders with different levels of expertise should test whether learning to code modifies circuits within the code-responsive neural network identified in the current study and address whether learning to code leads to specialization of a subset of this network for code in particular. A detailed understanding of the neural basis of code will also require development of cognitive models of code comprehension.
 
-## The involvement of the multiple-demand executive control system in code comprehension
+### The involvement of the multiple-demand executive control system in code comprehension
 
 Code comprehension showed partial overlap with the MSIT task, particularly in the parietal cortex and in posterior frontal areas. Previous work has noted cognitive and neural similarity between arbitrary small-scale working memory tasks, such as the MSIT, and culturally-derived formal symbol systems (Anderson, 2005; Qin et al., 2004). As noted in the introduction, the MSIT task is a classic localizer for the executive function system (e.g. Stroop, n-back, and MSIT) (Duncan, 2010; Fedorenko et al., 2013; Miller and Cohen, 2001; Woolgar et al., 2011; Zanto and Gazzaley, 2013; Zhang et al., 2013). Like code comprehension, most experimental tasks that activate the central executive system involve the maintenance, manipulation and selection of arbitrary stimulus response mappings according to a set of predetermined rules (Woolgar et al., 2011; Zhang et al., 2013). For example, in the MSIT task among the many possible ways to map a visually presented digit triplet to a button press, participants maintain and select the rule ‘press the button whose index corresponds to the value of the unique digit in the triplet.’ The difficult condition requires using this less habitual rule to make a response.
 
@@ -121,7 +129,7 @@ Previous studies also find that the fronto-parietal executive system is involved
 
 Although culturally-invented formal symbol systems and simple experimental rule-based tasks (e.g. MSIT) share cognitive elements, the latter, unlike the former, involve simple rules that specify stimulus response mappings, rather than mental manipulations of variables. An intriguing possibility is that code comprehension and other culturally-invented symbol systems recycle a subset of the neural machinery that originally evolved for the maintenance and manipulation of simpler variables and rules (Anderson, 2005; Qin et al., 2004).
 
-## Code comprehension and language
+### Code comprehension and language
 
 In the current study, perisylvian fronto-temporal network that is selectively responsive to language had low and variable overlap with the neural network involved in code comprehension. The regions that did show some overlap between language and code (i.e. left inferior frontal and middle temporal gyri), have been implicated in high-level linguistic processing, including sentence-level syntax (Friederici, 2017; Hagoort, 2005; Pallier et al., 2011; Bornkessel-Schlesewsky and Schlesewsky, 2013; Fedorenko and Thompson-Schill, 2014; Matchin and Hickok, 2020). The current results therefore do not rule out the possibility that the language system plays some role in code. Nevertheless, on the whole, the results do not support the hypothesis that the language system is recycled for code comprehension (see also Ivanova et al, in press). Previous studies also find that math and formal logic do not depend on classic language networks (Amalric and Dehaene, 2016; Monti et al., 2009). The low degree of overlap between code and language is intriguing given the cognitive similarities between these domains (Fedorenko et al., 2019; Pandža, 2016; Peitek et al., 2018; Portnoff, 2018; Prat et al., 2020; Siegmund et al., 2014). As noted in the introduction, programming languages borrow letters and words from natural language, and both natural language and code have hierarchical, recursive grammars (Fitch et al., 2005).
 
@@ -131,25 +139,25 @@ Despite lack of direct overlap, lateralization patterns of language and coding w
 
 An analogous example comes from the domain of reading (Dehaene et al., 2010; McCandliss et al., 2003). Reading-relevant regions, such as the visual word form area (VWFA), are co-lateralized with the perisylvian fronto-temporal language network across people (Cai et al., 2010). The VWFA has strong anatomical connectivity with the fronto-temporal language network even prior to literacy (Bouhali et al., 2014; Saygin et al., 2016). Analogously, code comprehension may colonize a left-lateralized portion of the central executive system due to its stronger (i.e. within hemisphere) connectivity with the perisylvian fronto-temporal language network.
 
-## Relationship to co-published work by Ivanova and colleagues
+### Relationship to co-published work by Ivanova and colleagues
 
 The current results are consistent with the co-published study by Ivanova and colleagues. Like the current study, Ivanova et al report the involvement of a fronto-parietal network in code comprehension and low overlap with fronto-temporal language processing systems. The consistency of these two studies is striking in light of the difference in the study designs. While the current study compared code comprehension to a working memory control task with linguistic symbols, Ivanova et al. compared code comprehension to matched verbal descriptions of program-like algorithms. In the current study, the value of input variables was provided only after function presentation, by contrast, the value was stipulated as part of the function in Ivanova et al. While the current study localized the language network using a passive/active sentence comparison task relative to a math control condition, Ivanova and colleagues compared sentence comprehension to a non-word memory control task. Finally, in addition to examining the neural basis of Python comprehension, Ivanova et al also studied the neural basis of ScratchJr and found partially similar results.
 
 There are also interesting differences across experiments that may relate to differences in design. Both the current study and Ivanova et al’s Python comprehension tasks revealed robust responses on prefrontal cortices, by contrast prefrontal responses to ScratchJr were weaker. Unlike Python, ScratchJr doesn’t declare variables and update their values. Previous studies have implicated anterior prefrontal cortices in variable manipulation (Monti et al., 2009; Diester and Nieder, 2007). The degree of prefrontal involvement in code comprehension may therefore depend in part on whether variable manipulation is involved. In the current study, we observed strong left-lateralization of code comprehension and co-lateralization of code comprehension and language across people. By contrast, Ivanova and colleagues did not observe left-lateralization of code comprehension. Since Ivanova and colleagues compared code comprehension to a sentence reading task, left-lateralization may have been obscured by subtracting out a left-lateralized pattern associated with sentence processing. Alternatively, the Ivanova study focused on the so- called ‘syntactic’ aspects of code comprehension rather than the semantics of code by comparing code comprehension to matched sentences describing similar algorithms. It is possible that the semantics or algorithmic aspects of code are more left-lateralized. Notably, since the current sample is relatively small (n = 15), any differences between the current study and the Ivanova findings should be interpreted with caution and replicated in future work.
 
-## Conclusions
+### Conclusions
 
 A fronto-parietal cortical network is consistently engaged in expert programmers during code comprehension. Patterns of activity within this network distinguish between FOR and IF functions. This network overlaps with other culturally-invented symbol systems, in particular formal logic and to a lesser degree math. By contrast, the neural basis of code is distinct from the perisylvian fronto-temporal language network. Rather than recycling domain-specific cortical mechanisms for language, code, like formal logic and math, depends on a subset of the domain general executive system, including anterior prefrontal areas. The executive system may be uniquely suited as a flexible learning mechanism capable of supporting an array of cultural symbol systems acquired in adulthood.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Seventeen individuals participated in the study; one did not complete the tasks due to claustrophobia, and another was excluded from analyses due to excessive movement (>2 mm). We report data from the remaining fifteen individuals (three women, age range 20–38, mean age = 27.4, SD = 5.0). All participants had normal or corrected to normal vision and had no known cognitive or neurological disabilities. Participants gave informed consent according to procedures approved by the Johns Hopkins Medicine Institutional Review Board (IRB protocol number: NA_00087983).
 
 All participants had at least 5 years of programming experience (range: 5–22, mean = 10.7, SD = 5.2), and at least 3 years of experience with Python (range: 3–9, mean = 5.7, SD = 1.8).
 
-## Behavioral pre-test
+### Behavioral pre-test
 
 In addition to self-reported programming experience, Python expertise was evaluated with two out-of-scanner Python exercises (one easier and one more difficult) the week prior to the fMRI experiment. These exercises also served to familiarize participants with the particular Python expressions that would be used during the fMRI experiment.
 
@@ -157,9 +165,9 @@ The easier exercise consisted of three phases. During the first phase (initial t
 
 The more difficult exercise evaluated the participants’ knowledge about when and how to use Python functions and expressions. Each participant answered sixteen questions consisting of a code snippet with a blank. A prompt was presented alongside the code snippet to explain what the snippet should output if executed. The participant was asked to fill in the blank in order to complete the code (see the subsection ‘example of the difficult out-of-scanner exercise’ in the appendix). The questions were designed by the experimenter to cover some of the objectives specified in the exam syllabus of the Certified Associate in Python Programming Certification held by the Python Institute (https://pythoninstitute.org/certification/pcap-certification-associate/pcap-exam-syllabus/). On average, the participants got 64.6% (SD = 16.6%) of the questions correct (range: 37.5–93.75%).
 
-## fMRI task design and stimuli
+### fMRI task design and stimuli
 
-## Code comprehension experiment
+#### Code comprehension experiment
 
 In real-code comprehension trials, participants were presented with Python functions designed for the purposes of the experiment. In fake code control trials, they were presented with incomprehensible scrambled versions of the same functions (for details on real and fake code, see below). To help participants distinguish between real and fake code trials and to prevent the participants from erroneously attempting to parse fake code, real-code appeared in white text and fake code in yellow text.
 
@@ -175,7 +183,7 @@ Fake code trials were analogous to the real-code trials in temporal structure (i
 
 There were six task runs, each consisting of 20 trials, eight real if code, eight real for code and four fake code trials. Each participant saw a total of 48 for functions (24 per variant), 48 if functions (24 per variant), and 24 fake functions (12 fake for, and 12 fake if functions). After each run of the task, participants saw their overall percent correct and average response time. Participants were divided into two groups such that the variants of the functions were counterbalanced across groups; the same participant never saw different variants of the same function. The order of the presentation of the functions was pseudo-randomized and balanced across participants. In total, 192 real functions (96 per group) and 48 fake functions (24 per group) were used in the experiment. All the functions are listed in Supplementary file 1. We permuted the order of the functions systematically such that each participant saw a unique order (see the subsection ‘algorithm for stimulus permutation’ in the appendix).
 
-## Localizer Tasks
+#### Localizer Tasks
 
 During a separate MRI session, participants took part in two localizer experiments. A single experiment was used to localize responses to formal logic, symbolic math, and language using each condition as the control for the others: logic/math/language localizer. The task design was adapted from Monti et al., 2009, Monti et al., 2012 (Kanjlia et al., 2016; Monti et al., 2009; Monti et al., 2012). On language trials, participant judged whether two visually presented sentences, one in active and one in passive voice, had the same meaning (e.g. ‘The child that the babysitter chased ate the apple’ vs ‘The apple was eaten by the babysitter that the child chased’). On math trials, participant judged whether the variable X had the same value across two equations (e.g. ‘X minus twenty-five equals forty-one’ vs ‘X minus fifty-four equals twelve’). On formal logic trials, participant judged whether two logical statements were consistent, where one statement being true implied the other also being true (e.g. ‘If either not Z or not Y then X’ vs ‘If not X then both Z and Y’).
 
@@ -189,13 +197,13 @@ MSIT consisted of interference blocks and control blocks, each containing 24 tri
 
 Participants performed 2 runs of MSIT. Each run began with 15 s of fixation, followed by four interference blocks and four control blocks interleaved, and ended with another 15 s of fixation. Each block lasted 42 s. The order of the blocks was balanced within and between participants. Trial order was arranged such that all 12 interference trials appeared exactly twice in an interference block, and all three control trials appeared exactly six times in a control block. Identical trials never appeared in succession, and the order of the trials was different across all 8 blocks of the same kind.
 
-## Data acquisition
+### Data acquisition
 
 MRI data were acquired at the F.M. Kirby Research Center of Functional Brain Imaging on a 3T Phillips Achieva Multix X-Series scanner. T1-weighted structural images were collected in 150 axial slices with 1 mm isotropic voxels using the magnetization-prepared rapid gradient-echo (MP-RAGE) sequence. T2*-weighted functional BOLD scans were collected in 36 axial slices (2.4 × 2.4×3 mm voxels, TR = 2 s). We acquired the data in one code comprehension session (six runs) and one localizer session (2 runs of MSIT followed by 6 runs of language/math/logic), with the acquisition parameters being identical for both sessions.
 
 The stimuli in both the code comprehension and localizer sessions were presented with custom scripts written in PsychoPy3 (https://www.psychopy.org/, Peirce et al., 2019). The stimuli were presented visually on a rear projection screen, cut to fit the scanner bore, with an Epson PowerLite 7350 projector. The resolution of the projected image was 1600 × 1200. The participant viewed the screen via a front-silvered, 45°inclined mirror attached to the top of the head coil.
 
-## fMRI data preprocessing and general linear model (GLM) analysis
+### fMRI data preprocessing and general linear model (GLM) analysis
 
 Data were analyzed using Freesurfer, FSL, HCP workbench, and custom in-house software written in Python (Dale et al., 1999; Smith et al., 2004; WU-Minn HCP Consortium et al., 2013). Functional data were motion corrected, high-pass filtered (128 s), mapped to the cortical surface using Freesurfer, spatially smoothed on the surface (6 mm FWHM Gaussian kernel), and prewhitened to remove temporal autocorrelation. Covariates of no interest were included to account for confounds related to white matter, cerebral spinal fluid, and motion spikes.
 
@@ -205,11 +213,11 @@ For the localizer experiment, a separate predictor was included for each of the 
 
 Each run was modeled separately, and runs were combined within each subject using a fixed-effects model (Dale et al., 1999; Smith et al., 2004). For the group-level analysis across participants, random-effects models were applied, and the models were corrected for multiple comparisons at vertex level with p<0.05 false discovery rate (FDR) across the whole brain. A nonparametric permutation test was further implemented to cluster-correct at p<0.01 family-wise error rate.
 
-## ROI definition
+### ROI definition
 
 For each participant, four code-responsive functional ROIs were defined to be used in the MVPA analysis. First, random-effects whole-brain univariate analysis for the real >fake code contrast revealed four major clusters in the left hemisphere: the intraparietal sulcus (IPS), the posterior middle temporal gyrus (pMTG), the lateral PFC, and the early visual cortex (Occ). These clusters were used to define group search spaces. Each search space was defined by combining parcels from Schaefer et al. that encompassed each cluster (400-parcel map, Schaefer et al., 2018). Next, individual functional ROIs were defined within these clusters by taking the top 500 active vertices for the real >fake contrast within each participant.
 
-## MVPA
+### MVPA
 
 MVPA was used to distinguish for and if functions based on the spatial activation pattern in code-responsive ROIs. Specifically, we used the support vector machine (SVM) implemented in the Python toolbox Scikit-learn (Chang and Lin, 2011; Pedregosa et al., 2011).
 
@@ -219,7 +227,7 @@ The whole dataset was split into a training test (90%, 86 functions) and a testi
 
 We tested the classifier performance against chance (50%) using a combined permutation and bootstrapping approach (Schreiber and Krekelberg, 2013; Stelzer et al., 2013). We derived the t-statistic of the Fisher-z transformed accuracy values against chance (also Fisher-z transformed). The null distribution for each participant was generated by first shuffling the condition labels 1000 times, then computing the mean accuracy derived from the 100 train-test split of each shuffled dataset. Then, a bootstrapping method was used to generate an empirical distribution of the t-statistics. In each of the 106 iterations of the bootstrapping phase, one Fisher-z transformed null accuracy value (out of 1,000) per participant was randomly selected, and a one sample t-test was applied to the null sample. The empirical p-value of the real t-statistic was defined as the proportion of the null t-statistics greater than the real value.
 
-## Overlap analysis
+### Overlap analysis
 
 For each participant, and in each hemisphere, we used cosine similarity to quantify the overlap of the activated vertices between code comprehension and each of the four localizer contrasts: language (language >math), math (math >language), logic (logic >language), and multi-source interference (hard >easy). First, we generated the binary activation map for each contrast. A vertex was assigned the value one if the significance of its activation is above the 0.05 (FDR-corrected) threshold, and 0 otherwise. Each binary map was regarded as a vector, and the cosine similarity between two vectors (e.g. code comprehension and logic) was defined as the inner product of the vectors divided by the product of their respective lengths (norms). Note that this measure controls for overall vector length (i.e. the overall number of active voxels in each contrast). The cosine similarities of code to each of the localizer tasks was then compared using repeated-measure ANOVA and post-hoc pairwise comparisons with false discovery rate (FDR) correction.
 

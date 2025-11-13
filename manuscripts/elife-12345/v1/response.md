@@ -20,9 +20,7 @@ Essential revisions:
 
 Our glial culture preparations were characterized by immunocytochemistry and western blotting. Iba-1 and GFAP were used as markers for microglia and astrocytes, respectively. As shown in Author response image 1 and noted in the Methods sections, our microglia and astrocyte cultures are routinely ~99% and ~85% pure respectively, as determined by quantifying the proportion of Iba-1 or GFAP positive cells counted in six different fields from two separate cultures (total cell number determined by DAPI nuclear staining and/or actin staining).
 
-Our neuron cultures are grown in the presence of anti-mitotics (5 μM 5-fluoro-2′-deoxyuridine) for over 2 weeks, thus also ensuring high neuronal enrichment. This was confirmed in the western blot below, which shows that cell lysates from our neuronal cultures strongly express the neuronal marker Tuj1 but lack astrocytic or microglial markers (GFAP and Iba-1). A brief description of the characterization of our cell culture preparations has now been included in the Methods section.10.7554/eLife.12345.015Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.12345.015
-
-DOI: http://dx.doi.org/10.7554/eLife.12345.015
+Our neuron cultures are grown in the presence of anti-mitotics (5 μM 5-fluoro-2′-deoxyuridine) for over 2 weeks, thus also ensuring high neuronal enrichment. This was confirmed in the western blot below, which shows that cell lysates from our neuronal cultures strongly express the neuronal marker Tuj1 but lack astrocytic or microglial markers (GFAP and Iba-1). A brief description of the characterization of our cell culture preparations has now been included in the Methods section.10.7554/eLife.12345.015Author response image 1.
 
 2) Microglial cells were cultured in the presence GMCSF, which induces a dendritic-like phenotype in these cells. Please comment on how this influences the interpretation of these results.
 

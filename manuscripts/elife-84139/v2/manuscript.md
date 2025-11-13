@@ -22,13 +22,13 @@
 
 ### Affiliations
 
-1. https://ror.org/0270xt841 Institut de Myologie, Sorbonne Université, INSERM Paris France
-2. https://ror.org/02en5vm52 Department of Physiology, Faculty of Medicine Pitié-Salpêtrière, Sorbonne Université Paris France
-3. https://ror.org/0270xt841 Neuromuscular Morphology Unit, Institut de Myologie, Pitié-Salpêtrière Hospital, Sorbonne Université Paris France
-4. https://ror.org/01c2cjg59 Sorbonne Université, CNRS, Institut de Biologie Paris-Seine (IBPS), Service de Microscopie Électronique (IBPS-SME) Paris France
-5. https://ror.org/02rx3b187 Université Grenoble Alpes, INSERM, U1216, Grenoble Institut des Neurosciences Grenoble France
+1. Institut de Myologie, Sorbonne Université, INSERM Paris France ([ROR:0270xt841](https://ror.org/0270xt841))
+2. Department of Physiology, Faculty of Medicine Pitié-Salpêtrière, Sorbonne Université Paris France ([ROR:02en5vm52](https://ror.org/02en5vm52))
+3. Neuromuscular Morphology Unit, Institut de Myologie, Pitié-Salpêtrière Hospital, Sorbonne Université Paris France ([ROR:0270xt841](https://ror.org/0270xt841))
+4. Sorbonne Université, CNRS, Institut de Biologie Paris-Seine (IBPS), Service de Microscopie Électronique (IBPS-SME) Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
+5. Université Grenoble Alpes, INSERM, U1216, Grenoble Institut des Neurosciences Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
 6. Department of Neurology, National Reference Center for 'Rare Peripheral Neuropathies', University Hospital Limoges France
-7. https://ror.org/02feahw73 Institut de Recherche en Infectiologie de Montpellier, CNRS UMR 9004, Université de Montpellier Montpellier France
+7. Institut de Recherche en Infectiologie de Montpellier, CNRS UMR 9004, Université de Montpellier Montpellier France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
@@ -46,43 +46,99 @@ To explore the role of caveolae in T-tubule formation, we examined the nanoscale
 
 ## Results
 
-## Cav3 caveolae form nanoscale rings in differentiated myotubes
+### Cav3 caveolae form nanoscale rings in differentiated myotubes
 
 Nascent T-tubules initially have a longitudinal orientation during in vitro differentiation, and progressively gain a transversal orientation reflecting extensive differentiation (Flucher et al., 1993; Takekura et al., 2001). To study the formation of T-tubules during myogenic differentiation, we embedded primary murine myotubes in two layers of an extracellular matrix hydrogel (Matrigel) to avoid detachment by spontaneous contractions and supplemented the differentiation medium with agrin to promote the progression of myotube maturation toward contracting myofibers (Falcone et al., 2014). When myotubes produced from murine primary myoblasts were differentiated for 10 days, the characteristic labeling of mature triads in double transverse rows of dots was clearly observed while at 5 days, DHPR and RyR1 still presented a longitudinal distribution in clusters (Figure 1—figure supplement 1). To visualize the interplay between caveolae and nascent T-tubules at the surface of well-differentiated myotubes, we unroofed myotubes using ultrasounds to access the inner side of the plasma membrane for both light and electron microscopy analyses. Unroofing allowed us to remove the intracellular structures whose labeling could hinder identification of structures at the plasma membrane and to avoid permeabilization with detergents. At the light microscopy level, tagging Cav3 with GFP produced a very characteristic pattern on unroofed myotubes with numerous circular or crescent-shaped structures from which tubules emanated (Figure 1A, insets 1–5). These structures were observed on both unroofed human myotubes expressing constitutively Cav3GFP and unroofed primary mouse myotubes labeled with antibodies against Cav3 (Figure 1B). The diameter of these rings from either human myotubes expressing Cav3GFP or murine myotubes labeled with antibodies against Cav3 was the same, 652±174 nm and 637±183 nm, respectively. To compare the localization of an SR marker with respect to Cav3, we labeled both Cav3 and the intracellular RyR1 Ca2+ channel. The two proteins were partially colocalized but marked two clearly distinct networks. RyR1-labeled structures were often surrounded by or in close proximity to Cav3 rings (insets in Figure 1A). We next produced platinum replicas of unroofed human and mouse primary myotubes for electron microscopy (EM) analysis. At the ultrastructural level, in addition to the numerous individual caveolae decorating the cytoplasmic side of the plasma membrane, we confirmed the presence of circular assemblies composed of bona fide caveolae in human myotubes (Figure 1C–E). These ‘caveolae rings’ were composed of assembled caveolae forming a circle. We also found instances of rings where caveolae would accumulate at one pole of the circle (Figure 1D) and caveolae rings that were intertwined with cortical SR (Figure 1E). The central part of the ring contained globular membrane proteins (Figure 1C–E, orange circles). We observed similar caveolae rings in mouse primary myotubes using both PREM and conventional thin-section EM (Figure 1, F-G). From measurements on electron micrographs, we determined an average diameter for these rings of 573 nm in human myotubes and 546 nm in murine primary myotubes (Figure 1H). We counted 16.9 and 16.1 caveolae per ring on average in human and mouse myotubes respectively (Figure 1I). Caveolae from primary mouse myotubes were significantly smaller than their human counterparts (64 vs 85.4 nm, respectively) (Figure 1J). In order to simultaneously visualize the ultrastructure of myotubes and the localization of proteins of interest, we developed a correlative light and electron microscopy (CLEM) assay combining observation of Cav3GFP by super-resolution fluorescent microscopy with the ultrastructure of platinum replicas observed by electron microscopy. Using this CLEM approach, we were able to show that the circular Cav3 assemblies seen at the light microscopy level correspond to rings formed by caveolae (Figure 1, K-M).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig1-v2.jpg)
+
+**Figure 1.:** (A) Super-resolution images of a human myotube expressing Cav3GFP and labelled with antibodies against RyR1 (red). (B) Quantification of ring diameter from super-resolution images of differentiated myotubes either expressing Cav3GFP or labelled with antibodies against Cav3 (Cav3Ab, n=21 myotubes from three independent experiments; Cav3GFP, n=14 myotubes from three independent experiments; p=0.081). (C–E) Gallery of PREM images of rings in unroofed human myotubes. Yellow arrows indicate individual caveolae found on caveolae rings, white arrows denote cortical ER/SR cisternae and orange circles denote protein particles present inside the ring. (F) High magnification view of a ring formed by groups of caveolae in unroofed mouse primary myotubes. Yellow arrows denote caveolae. The yellow asterisk indicates a clathrin-coated pit. (G) High-magnification view of a ring formed by caveolae in unroofed mouse primary myotubes observed on thin-sections. Yellow arrows indicate groups of caveolae with a circular organization and white arrows denote cortical ER/SR. (H) Quantification of ring diameters from human and mouse myotubes on PREM images (human, n=22 images from four independent experiments; mouse, n=14 images from five independent experiments; p=0.67). (I) Quantification of the number of caveolae composing a ring from differentiated myotubes (human, n=20; mouse, n=9; p=0.63). (J) Quantification of the average caveolae diameter from differentiated mouse or human myotubes (human, 439 caveolae from n=15 images; mouse, 187 caveolae from n=12 images; p<0.0001). Quantification was performed from at least three independent experiments. (K–M) CLEM images combining Cav3GFP super-resolution microscopy with PREM of the same human myotube. (K) Cav3GFP fluorescence. (L) Same area imaged with TEM. (M) CLEM overlay. White arrow indicates a group of caveolae with a circular organization.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescent DHPR (green) and Ryanodine receptor (RyR1) (red) labeling in primary mouse myotubes differentiated for 5 days. Labeling shows clusters of RyR1 and DHPR that appear longitudinal. (B) Immunofluorescent labeling of DHPR (green) and RyR1 (red) in murine primary myotubes extensively differentiated for 10 days appears as double rows of dots. Scale bar: 10 µm and 5 µm for insets. (C) Line scan of indicated regions in the left panel showing average intensity for DHPR (green) and RyR1 (red) labeling in primary mouse myotubes differentiated for 10 days.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bin1 antibody labels a tubular network extending from the plasma membrane forming contacts with RyR1-positive fluorescent dots. Blue arrowheads and white arrows denote tubular and circular Bin1 structures respectively. (B) T-tubule labeling with MemBright lipid probe using short (10 min) pulses on live myotubes. Tubules emanate transversely from the sarcolemma and are organized longitudinally along the length of the myotube. Note the presence of ring-like structures (white arrows) in continuity with the tubular structures (yellow arrows). Quantification of ring diameter is shown on the right panel. The average ring labeled by MemBright was 667±286 nm in diameter. (C–D) 3D reconstruction of the myotube region in (C) labeled with the MemBright lipid probe. One of the tubules is colored green from the plasma membrane for better visualization. (E–G) High-magnification views of nascent tubules observed by thin-section EM. (E) Characteristic pearled appearance with presence of 60–70 nm bumps similar to caveolae protruding from the tubule and denoted by black arrows. White arrows denote the ring at the base of the tubule. (F) and (G) SR/T-tubule junctions are denoted by yellow arrows and pseudo-colored purple in F. The tubules can form close junctions with SR cisternae recognizable by their characteristic electron density (pseudocolored in purple) (Franzini-Armstrong, 2018; Lainé et al., 2018) only in regions of the tube that do not contain caveolae.
+
 In order to label the nascent tubes we used antibodies against Bin1, a bona fide T-tubule component whose expression strongly increases during differentiation and correlates with increased expression of Cav3 (Butler et al., 1997; Lee et al., 2002). We compared the localization of Bin1 with the localization of the triad protein marker RyR1 and observed Bin1 labeling on a network of predominantly longitudinal T-tubules and, as expected, a partial colocalization of these tubules with RyR1-positive SR membranes (Figure 1—figure supplement 2). In order to label lipids and trace nascent T-tubules without relying on a protein marker, we used the MemBright fluorescent lipid probe (Collot et al., 2019). This cell-impermeable probe renders biological membranes fluorescent and allows the visualization of the intracellular tubular network emanating from the plasma membrane. We incubated myotubes with MemBright and acquired optical stacks (0.1–0.3 µm step) through the entire myotube with a spinning-disk confocal microscope equipped with a structured illumination module allowing sub-diffraction light microscopy (Figure 1—figure supplement 2 and Figure 1—video 1). After a 10 min incubation on live myotubes, the probe had diffused in the tubule in the depth of the fiber and labeled a tubular membrane system, continuous with the plasmalemma. Interestingly, the dye labeled circular structures on both the dorsal and ventral surface of myotubes, presenting an average diameter of 667±286 nm (Figure 1—figure supplement 2). Analysis of the whole fiber volume confirmed that these tubules were more abundant near the surface although a few tubes penetrated deep into the core of the muscle cell producing numerous bifurcations (Figure 1—figure supplement 2 and Figure 1—video 1). This tubular system was identical to the one described in previous attempts to label the T-tubule system in cultured cells and muscle fibers with DiIC16 (Flucher et al., 1993). At the ultrastructural level, thin-section EM captured numerous pearled tubules forming contacts with SR membranes presenting the characteristic RyR1 electron densities (Franzini-Armstrong, 2018; Lainé et al., 2018, Figure 1—figure supplement 2). We noticed the presence of small 60–70 nm buds on discrete regions of forming T-tubules with characteristics of caveolae. Frequent electron dense couplings between SR membrane and tubules formed on parts of the tubule were devoid of these caveolae-like buds.
 
-## Cav3 rings and tubules form contacts with SR terminal cisternae
+### Cav3 rings and tubules form contacts with SR terminal cisternae
 
 While analyzing caveolae rings by CLEM, we observed a proximity with the cortical endo/sarcoplasmic reticulum (Figure 2A). We found numerous instances where the cortical ER/SR either contacted the center or was entangled with the caveolae ring (Figure 2B–C). We never observed direct SR-caveolae contacts but rather an interaction between the SR and regions of the ring devoid of caveolae, confirming our previous observations using super-resolution (Figure 1A). To demonstrate the ER/SR nature of these membrane tubules, we performed CLEM analysis by double labeling Cav3 and the intracellular RyR1 Ca2+ channel (Figure 2D–E and Figure 2—video 1). The two proteins labeled two distinct but overlapping networks with Cav3 labeling individual caveolae, rings and tubules while RyR1 labeled the cortical SR cisternae surrounding them.
 
-## Caveolae rings extend into Bin1-positive tubules
+![Figure 2.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) EM images showing caveolae rings in contact with cortical endo/sarcoplasmic reticulum cisternae (pseudo-colored purple) on the cytosolic part of the adherent sarcolemma. Yellow arrows indicate caveolae rings. Caveolae rings are formed by caveolae still presenting their characteristic coat indicated by yellow arrows in B inset (yellow asterisk indicates a clathrin-coated pit). White arrows indicate endo/sarcoplasmic reticulum cisternae going over the caveolae ring. (D–E) Correlative microscopy of Cav3 (green) and RyR1 (red) labeling on myotubes. (E) Enlargement of the inset in (D). Yellow arrows indicate caveolae rings. White arrows indicate cortical endo/sarcoplasmic reticulum cisternae. (F–H) Correlative microscopy of the α1s-subunit of DHPR fused to GFP (green) and Cav3 (red) labeling on myotubes. Yellow arrows indicate a caveolae ring. White arrows indicate tubules where Cav3 and DHPR colocalize. Red arrowheads indicate a region of the tubule free of Cav3 and α1s labeling and lacking caveolar material at the ultrastructural level.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Two-color CLEM analysis in unroofed primary mouse myotubes transduced with GFP-tagged α1s-subunit of the DHPR (green) and labeled with antibodies against Cav3 (red). (C) Higher magnification view of the inset in (B). DHPR and Cav3 labeling colocalize on circular structures and pearled tubes at the plasma membrane.
+
+### Caveolae rings extend into Bin1-positive tubules
 
 We next wanted to know if rings could concentrate T-tubule proteins (i.e DHPR) at the plasma membrane and associate with the cortical SR to form early excitation-contraction coupling sites, allowing these two distinct membrane compartments to come into contact early during tubule biogenesis. To test this, we expressed the GFP-tagged version of the α1s-subunit of the DHPR using a lentivirus vector that we transduced prior to differentiating the myoblasts into myotubes. In agreement with previous work linking DHPR and Cav3 (Couchoux et al., 2007; Weiss et al., 2008) we showed co-localization of both the DHPRs α1s-subunit and Cav3 (Figure 2F–G and Figure 2—figure supplement 1). CLEM analysis confirmed that the α1s-subunit of the DHPR accumulated in regions of the plasma membrane enriched in Cav3-positive circular caveolae regions from which tubules appear. It is noteworthy that while both DHPR and Cav3 co-localized on nascent tubules, the labeling was only present on portions of the tubule containing the caveolae, suggesting a possible retention of the Ca2+ channel in caveolar regions (Figure 2H). The abundance of Cav3-positive circular structures during critical steps of T-tubule formation suggested a possible contribution of caveolae rings to their biogenesis. By unroofing the myotubes, we noticed that tubules with a characteristic beaded protein coat similar to the caveolar coat emerged from caveolae rings (Figure 3A–C). EM analysis of ultrathin sections from the adherent surface of myotubes confirmed the presence of bona fide caveolae rings from which numerous 25 nm diameter tubules emanated (Figure 3D and Figure 3—figure supplement 1). To validate this finding, we turned to CLEM and tested the hypothesis that caveolar rings could give rise to platforms for elongation of Bin1-positive tubules (Figure 3E–L). We performed double Cav3 and Bin1 immunolabeling before producing replicas of the same myotubes. Using our CLEM approach, we showed that endogenous Cav3 and Bin1 are present on caveolae rings but also on the tubules emanating from these rings (Figure 3E–H and I–L, Figure 3—video 1 and Figure 3—video 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig3-v2.jpg)
+
+**Figure 3.:** (A–C) High magnification PREM views of caveolae rings on unroofed myotubes from primary mouse cultures. In (B) caveolae are pseudo-colored in light purple. White arrows indicate beaded tubes emanating from structures formed by ring caveolae and yellow arrows indicate the caveolae ring. (D) High magnification view of several tubules (black arrows) protruding from a single caveolae ring (yellow arrows) observed on conventional thin-section EM. The caveolae ring and tubules are pseudo-colored pale yellow. (E–L) Correlative microscopy of Cav3 (green) and Bin1 (red) immunolabeling on an unroofed 9 day extensively differentiated murine myotube. In (E–H), white arrows indicate tubules emanating from Bin1 and Cav3 labeled rings and yellow arrows indicate the ring formed by caveolae. (I–L) Higher magnification CLEM view of the ring structure labeled with Cav3 (green) and Bin1 (red) antibodies.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Gallery of thin-section EM from the adherent surface of extensively differentiated mouse primary myotubes as in Figure 3D. The tubular structures emanating from the caveolae ring-like structures are pseudocolored in pale yellow. Tubules emanating from the circular structures measure 25 nm in diameter and are denoted with black arrows.
+
 To further demonstrate that tubules extend from caveolae rings, we performed live imaging of myotubes stably expressing Cav3GFP. Numerous Cav3-positive rings could be resolved on the myotube surface. Our imaging captured numerous tubules emanating from rings and could measure tubule extension (Figure 4A and Figure 4—video 1, Figure 4—video 2). Analysis of their dynamics showed Cav3GFP-labeled structures moving at 45.7±22 nm/s. Interestingly, bright Cav3 spots appeared before the tubule at the same site where the tubule emanated (yellow arrows in Figure 4A, B) suggesting that Cav3 polarized accumulation observed by PREM (Figure 1D, E) could precede tubulation. We next analyzed Bin1 dynamics by expressing Bin1GFP in differentiated human myotubes (Figure 4C, D and Figure 4—video 3, Figure 4—video 4). As with Cav3GFP expression, Bin1 labeled both rings and tubules emanating from rings. Analysis of their dynamics showed that Bin1 labeled structures move at 64.2±18 nm/s on average. Thus, live-imaging confirms the CLEM evidence and provides the dynamics of tubules emanating from Cav3-positive rings.
 
-## Bin1 is sufficient to form rings on the plasma membrane
+![Figure 4.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig4-v2.jpg)
+
+**Figure 4.:** (A) Gallery of consecutive frames from two time-lapse sequences of Cav3GFP expressing human myotubes (green). The gallery shows four consecutive frames every 40 s followed by four consecutive frames every 10 s of a tubule emanating from a ring (see Figure 4—video 1 and Figure 4—video 2). Yellow arrows denote appearance of a Cav3 spot on the ring prior to tubulation. White arrows point to the edge of the tubule as it elongates away from the ring. (C–D) Gallery of consecutive frames from a time-lapse sequence of a Bin1GFP expressing human myotubes (green). The gallery shows a tubule emanating from a ring (see Figure 4—video 3 and Figure 4—video 4). Time is indicated for each frame as min:s.
+
+### Bin1 is sufficient to form rings on the plasma membrane
 
 We next focused on the role of Bin1 regarding its membrane curvature properties and its previous demonstrated links with T-tubules (Fugier et al., 2011; Lee et al., 2002; Razzaq et al., 2001). While all Bin1 isoforms electrostatically interact with negatively charged lipids through the inner surface of their BAR domain, only the isoform containing exon 11 specifically interacts with phosphatidylinositol 4,5-bisphosphate (PI4,5P2). This exon is specifically included during skeletal muscle differentiation (Fugier et al., 2011; Lee et al., 2002; Razzaq et al., 2001). We used adenoviral vectors to overexpress either the Bin1GFP protein including exon 11 (Bin1GFP) or the ubiquitous isoform missing exon 11 (Bin1-Δex11GFP) (Fugier et al., 2011) to determine if the Bin1-mediated tubulation is associated with the formation of caveolar rings at the plasma membrane. We transduced human myotubes for 24 hr and showed that while both Bin1-Δex11GFP and Bin1GFP-induced formation of caveolae rings with similar diameters and at the same density, only Bin1GFP-induced formation of tubules emanating from the rings (Figure 5—figure supplement 1). Bin1GFP formed circular structures at the surface of myotubes that were also visible on unroofed myotubes (Figure 5A and Figure 5—figure supplement 1). Immunofluorescent labeling with antibodies against endogenous Cav3 confirmed that these rings were also present on intact myotubes (Figure 5B) and that Cav3 co-localized with Bin1 on rings and at the base of Bin1 tubules. Interestingly, while all the rings were positive for Bin1, Cav3 labeled only a subset suggesting that Bin1 acts upstream of Cav3 (Figure 5B). To visualize the structures formed by Bin1GFP, PREM was performed on unroofed myotubes. Bin1 expression induced the formation of numerous beaded tubular structures that emanated radially from rings (Figure 5C, D). These structures were invariably composed of a ring from which a main pearled tubule and numerous smaller tubules emerged radially.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig5-v2.jpg)
+
+**Figure 5.:** (A) Super-resolution fluorescence microscopy image of an unroofed human myotube transduced with Bin1GFP (green). Insets numbered 1–3 show the circular organization (white arrowheads) of the structures formed by Bin1 and from which tubes emanate (yellow arrows). (B) Super-resolution microscopy image of Bin1+exon11GFP and Cav3 labeling in an intact cultured human myotube. White arrowheads show Cav3 co-localization with Bin1 on both the rings and at the base of the tubules while yellow arrowheads show rings only positive for Bin1. (C–D) PREM images of unroofed myotubes transduced with Bin1GFP. White arrows indicate the central ring-like structure and yellow arrows indicate formation of beaded tubes emanating from the central ring. (E–F) PREM images of artificial lipid bilayers incubated with recombinant full-length Bin1. (G) Representative airyscan images of supported lipid bilayers (SLBs) containing 5% mol PI4,5P2 and doped with 0.1% of fluorescent lipid dye (DHPE-Oregon green, yellow) and incubated with 1 µM of Bin1-Alexa647 (magenta). Insets show a magnification of Bin1 organization in ring-like structures and tubes (grey) from the corresponding image. Cross-section analysis along the blue dashed line in the related image highlights the intensity profile of Bin1 (magenta) and lipids (yellow) on the flat membrane. Bin1 ring-like organization is present in the membrane and tubular structures (yellow arrows). (H) PREM images of unroofed human myotubes transduced with an adenovirus expressing Bin1GFP. Yellow arrows show the formation of beaded tubular structures emanating from rings. A Bin1 scaffold similar to the one observed in vitro is pseudo-colored in purple and indicated with white arrows. (I) Cartoon of a central ring from which a central pearled tubule and numerous smaller tubules emerge radially. (1) Diameter of the rings (in vitro, 16 rings from n=13 images; in cellulo, 20 rings from n=18 images; p<0.0001). (2) Length of the longest tubule emanating from Bin1 assemblies (in vitro, 13 tubes from n=13 images; in cellulo, 17 tubes from n=17 images; p<0.05). (3) Length of the smaller tubules emanating from Bin1 assemblies (in vitro, 47 small tubes from n=13 images; in cellulo, 72 small tubes from n=18; p<0.05).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunofluorescence images of murine primary myotubes transduced with adenoviruses expressing either Bin1GFP or Bin1-ex11GFP and labeled with antibodies against Cav3 (red). Note the presence of rings and absence of tubes in the Bin1-exon11GFP construct (white arrows) and the abundance of tubules in myotubes expressing Bin1GFP. (B) Quantification of tubule density from super-resolution images of differentiated myotubes either expressing Bin1-exon11GFP or Bin1+exon11GFP (Bin1-exon11GFP, n=21 myotubes from three independent experiments; Bin1+exon11GFP, n=14 myotubes from three independent experiments; <0.001). (C) Quantification of caveolae density from super-resolution images of differentiated myotubes either expressing Bin1-exon11GFP or Bin1+exon11GFP (Bin1-exon11GFP, n=20 myotubes from three independent experiments; Bin1+exon11GFP, n=16 myotubes from three independent experiments; p=0.71). (D) Quantification of caveolae ring diameter from super-resolution images of differentiated myotubes either expressing Bin1-exon11GFP or Bin1+exon11GFP (Bin1-exon11GFP, n=387 rings from three independent experiments; Bin1+exon11GFP, n=357 rings from three independent experiments; p=0.66). (E) Immunofluorescence images of murine primary myotubes transfected with Bin1GFP in either control or myotubes depleted of Cav3 after siRNA treatment.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Confocal time-lapse images showing the dynamics of 1 µM Bin1-Alexa647 (magenta) organization in rings and tubes on 5% mol PI4,5P2-containing membranes. Airyscan image acquired at the same region of the corresponding confocal image at t=185 sec. (B) Kymograph analysis along the blue dashed line in A. (C) Fluorescence quantification over time of Bin1-Alexa647 signal on a ring (top) and tubule (bottom) assemblies. Each curve represents the mean ± s.d. of n=7 kinetics from two experimental replicates. (D) Diameter distribution of Bin1 rings (in nm) on lipid bilayers containing 5 % mol of PI4,5P2. The number of rings analyzed was n=92.
+
 To understand the contribution of Bin1 to the formation of caveolae rings, we turned to in vitro experiments analyzing the impact of recombinant full-length Bin1 protein (isoform including exon 11) on supported lipid bilayers (SLBs) containing 5% of PI4,5P2. PREM allowed us to directly visualize the membrane remodeling effect of recombinant Bin1 at 1 μM (Figure 5E, F). It has been described that proteins of the Amphiphysin family, at high protein concentration (i.e. ≥1 μM), can deform membranes by forming scaffold-like structures, as compared to lower protein concentrations where they mainly act as curvature sensors (Sorre et al., 2012). Along this line, we observed that at 1 μM, recombinant Bin1 assembled into circular structures from which tubules emerged radially. These structures, firmly bound to the lipid bilayer, resembled those formed on the surface of cultured myotubes indicating that Bin1 is able to spontaneously form these scaffolds on flat membranes both in vitro and in cellulo. Using the same in vitro assay combined to sub-diffraction light microscopy, we analyzed recombinant Bin1 self-assembly dynamics on SLBs. We showed that Bin1 forms stable ring-like structures and tubules that persist over several minutes (Figure 5G and kymographs in Figure 5—figure supplement 2). Importantly, we observed that Bin1 overexpression produced both pearled tubes with caveolar material and assemblies that were similar as those observed on SLBs with recombinant Bin1 (Figure 5H). The average diameter of Bin1 assemblies in vitro and in cellulo was 378±176 nm and 746±223 nm, respectively. The average length of the longest tube emanating from the central ring was 1356 nm in vitro and 2200 nm in cellulo while the average length of the smaller tubules emanating from the central ring was 420 nm in vitro and 590 nm in cellulo (Figure 5I).
 
-## Bin1 forms Cav3-positive circular and tubular structures connected to the surface
+### Bin1 forms Cav3-positive circular and tubular structures connected to the surface
 
 These observations led us to analyze caveolae and Cav3 nanoscale organization at the sarcolemma of human and mouse myotubes expressing Bin1GFP by CLEM (Figure 6). Bin1 overexpression in human myotubes induced formation of pearled tubes with the same caveolar coat (Figure 6A and inset in 3D anaglyph). CLEM analysis with Bin1GFP allowed us to show that Bin1 labeled tubules formed in regions enriched with caveolae (Figure 6B, D). We observed that the formation of tubular and circular structures of the plasma membrane perfectly correlating with Bin1 fluorescence. However, the fluorescence corresponding to Bin1 localization was not always associated with caveolae rings at the ultrastructural level (Figure 6E, G). These circular structures, which resemble caveolae rings, suggested that Bin1 could self-assemble into platforms which act as scaffolds for recruitment of caveolae. We confirmed these observations by transducing primary mouse myotubes (Figure 6H, K and Figure 6—video 1). Bin1 overexpression lead to the formation of numerous Cav3-positive rings from which pearled tubules emerged (Figure 6I, K).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig6-v2.jpg)
+
+**Figure 6.:** (A) High magnification PREM image of an unroofed human myotube transduced with an adenovirus expressing Bin1GFP forming a characteristic pearled tubule with caveolar material. A 3D anaglyph of the tubule next to a single caveolae with a similar proteinasceous coat is shown in the inset (use red/cyan glasses for viewing). (B–G) Correlative LM and PREM images from human myotubes transduced with Bin1GFP (green). (F and G) Correlative LM and PREM overlay images corresponding to insets in (E). (H) CLEM overlay of extensively differentiated murine myotubes transduced with Bin1GFP (green) and labeled with antibodies against Cav3 (red). (I–J) High magnification PREM views of the inset in (H). Bin1GFP and Cav3 labeling on beaded tubes (white arrows) and rings (yellow arrows). (K) High magnification views of the inset in (J). Bin1GFP (green) colocalized with Cav3 labeling (red) on beaded tubules (white arrows) emanating from rings (yellow arrows).
 
 We next tested whether the tubules formed by Bin1 overexpression were connected to the surface. Caveolae openings (25–40 nm in diameter) can be visualized by observing the cells from the outside without prior unroofing (Figure 7A). While extremely rare in control myotubes, intact myotubes expressing Bin1 presented a circular organization of 25–40 nm openings characteristic of caveolae necks seen from outside (Figure 7A, B). To determine whether the tubules produced at caveolae rings were directly opened to the extracellular environment we performed a penetration assay using the MemBright probe (Figure 7C). We simultaneously imaged GFP and MemBright after a brief incubation in myotubes expressing Bin1GFP. The membrane invaginations labeled by the probe co-localized with Bin1 labeling demonstrating that the tubules formed by Bin1 are in continuity with the extracellular medium. In agreement with our previous observations, we detected rings that were labelled with both MemBright and Bin1GFP (Figure 7D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig7-v2.jpg)
 
-**Figure 7.:** (A–B) PREM images of intact myotubes transduced with Bin1GFP. Yellow arrows indicate necks of caveolae (25–40 nm) seen from the extracellular side of the plasma membrane organized in a circular (A) or linear (B) fashion. (C) Schematic of the MemBright tubule penetration assay. Multi-nucleated myotubes (blue) expressing Bin1GFP are incubated for 15 min with the impermeable lipid probe (red). (N=nucleus). (D) Sub-diffracted light microscopy images of cultured murine myotubes transduced with Bin1GFP (green) and incubated with an impermeable lipid probe (red) for 15 min. White arrows in the insets denote ring-like structures positive for both Bin1GFP and MemBright signal. (E) Immunofluorescent staining of primary human myotubes at 9 days of differentiation transduced with Bin1GFP. In control cells, Bin1GFP overexpression results in abundant membrane tubulation and the appearance of a dense network of tubes. Cav3 deficiency in siRNA-treated myotubes results in a dramatic decrease in tubulation. (F) Western-blot analysis of Cav3 and Cav1 protein levels in differentiated myotubes treated with two different siRNAs directed against Cav3 (si-Cav3) and a scramble siRNA (si-Scr). (G) Quantification of Cav3 protein levels in cultured myotubes treated with siRNAs directed against Cav3 or scramble siRNA (n=3 independent experiments, p<0.05). (H) Quantification of Bin1GFP fluorescence intensity in cultured control and si-Cav3 myotubes transduced with Bin1GFP (si-Scr, 78 myotubes from n=25 images; si-Cav3, 130 myotubes from n=50 images; p<0.0001 from at least three independent experiments).Figure 7—source data 1.Figure 7—source data 2.Figure 7—source data 3.
+**Figure 7.:** (A–B) PREM images of intact myotubes transduced with Bin1GFP. Yellow arrows indicate necks of caveolae (25–40 nm) seen from the extracellular side of the plasma membrane organized in a circular (A) or linear (B) fashion. (C) Schematic of the MemBright tubule penetration assay. Multi-nucleated myotubes (blue) expressing Bin1GFP are incubated for 15 min with the impermeable lipid probe (red). (N=nucleus). (D) Sub-diffracted light microscopy images of cultured murine myotubes transduced with Bin1GFP (green) and incubated with an impermeable lipid probe (red) for 15 min. White arrows in the insets denote ring-like structures positive for both Bin1GFP and MemBright signal. (E) Immunofluorescent staining of primary human myotubes at 9 days of differentiation transduced with Bin1GFP. In control cells, Bin1GFP overexpression results in abundant membrane tubulation and the appearance of a dense network of tubes. Cav3 deficiency in siRNA-treated myotubes results in a dramatic decrease in tubulation. (F) Western-blot analysis of Cav3 and Cav1 protein levels in differentiated myotubes treated with two different siRNAs directed against Cav3 (si-Cav3) and a scramble siRNA (si-Scr). (G) Quantification of Cav3 protein levels in cultured myotubes treated with siRNAs directed against Cav3 or scramble siRNA (n=3 independent experiments, p<0.05). (H) Quantification of Bin1GFP fluorescence intensity in cultured control and si-Cav3 myotubes transduced with Bin1GFP (si-Scr, 78 myotubes from n=25 images; si-Cav3, 130 myotubes from n=50 images; p<0.0001 from at least three independent experiments).
 
-## Cav3 deficiency alters the formation of tubes induced by Bin1
+### Cav3 deficiency alters the formation of tubes induced by Bin1
 
 To test the functional involvement of Cav3 in Bin1-mediated tubulation, we silenced Cav3 expression in human and primary murine myotubes (Figure 7E, H and Figure 5—figure supplement 1). The 2 siRNAs used enabled a 65–85% decrease in total Cav3 protein leve (Figure 7F, G) and resulted in a significant decrease in both the tubulation of membranes formed by Bin1 and the total Bin1 fluorescence (Figure 7E and H and Figure 5—figure supplement 1). In contrast to controls, Cav3-depleted myotubes formed small Bin1-positive foci at the plasma membrane without extending into tubes confirming the importance of Cav3 structures as initiators of Bin1-induced tubule formation.
 
 We next used three immortalized cell lines derived from patients with caveolinopathies (Mamchaoui et al., 2011). The first cell line expresses the P28L mutation in CAV3, which usually leads to hyperCKemia in patients (Merlini et al., 2002). The second and third lines express the R26Q mutation which results in a limb-girdle muscular dystrophy 1 C (LGMD-1C) (Figarella-Branger et al., 2003) phenotype, Rippling muscle disease (Betz et al., 2001) as well as elevated creatine kinase levels (Carbone et al., 2000). We produced and analyzed immortalized patient myotubes. The decrease in Cav3 protein levels in differentiated patient myotubes was confirmed using Western blotting (Figure 8—figure supplement 1). While we observed a drastic reduction in the amount of Cav3 at the plasma membrane (Gazzerro et al., 2010), myotubes were still capable of forming caveolae at the sarcolemma as observed by high-resolution PREM (Figure 8A–C and Figure 8—figure supplement 1). A Western-blot screen between control and R26Q patient myotubes showed no difference in Bin1 and Junctophilin 2 (SR protein forming contacts between terminal cisternae and T-tubules) expression levels. (Takeshima et al., 2000), RyR1 and DHPRα1s subunit (Figure 8—figure supplement 1).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig8-v2.jpg)
+
+**Figure 8.:** (A) High-magnification PREM images of caveolae rings on the cytosolic side of the plasma membrane of sonicated myotubes from patients with the Cav3 R26Q mutation. Caveolae are pseudocolored purple and display an altered structure and spatial organization (white arrows denote individual caveolae with an altered morphology). (B) High-magnification view of a caveolae ring from a patient myotube with the R26Q mutation observed by thin-section EM. Black arrows indicate caveolae forming a loose ring-like structure. (C) High-magnification PREM images of small tubes made of 5–10 concatenated caveolae in unroofed myotubes from patients with Cav3 R26Q mutation. (D) High-magnification view of a giant (>2 μm major axis) caveolae oval-like structure (pseudo-colored in purple) in an unroofed myotube from Cav3 R26Q mutation. White star indicates a clathrin-coated pit. (E) Immunofluorescent staining of control, R26Q patient myotubes and R26Q patient myotubes expressing full length Cav3. (F) Quantification of caveolae ring density from super-resolution images of differentiated control myotubes, caveolinopathy patient myotubes or caveolinopathy patient myotubes with the R26Q mutation stably expressing Cav3GFP (CTRL, n=15 myotubes from three independent experiments; R26Q, n=19 myotubes from three independent experiments; R26Q+Cav3, n=19 myotubes from three independent experiments). (G) Quantification of caveolae ring diameter from super-resolution images of differentiated control myotubes, caveolinopathy patient myotubes or caveolinopathy patient myotubes with the R26Q mutation stably expressing Cav3GFP (CTRL, n=310 rings from three independent experiments; R26Q, n=219 rings from three independent experiments; R26Q+Cav3, n=670 rings from three independent experiments). (H) Immunofluorescent staining of control and Cav3 R26Q patient myotubes transduced with Bin1GFP. In control cells, Bin1GFP overexpression results in excessive membrane tubulation and appearance of a dense network of tubes. Cav3 deficiency in patient myotubes results in a dramatic decrease in tubulation. (I) Quantification of Bin1GFP fluorescence intensity in cultured control and patient myotubes transduced with Bin1GFP. The Cav3 R26Q mutation results in a significant decrease in Bin1 labeling. (CTRL, 10 myotubes from n=8 images; Cav3 R26Q, 24 myotubes from n=16 images; p<0.001 from at least three independent experiments). (J) Quantification of tubule density from super-resolution images of differentiated myotubes either expressing Bin1-exon11GFP or Bin1+exon11GFP (Bin1-exon11GFP, n=21 myotubes from three independent experiments; Bin1+exon11GFP, n=14 myotubes from three independent experiments; p<0.001). (K–N) High magnification thin-section EM images of muscle biopsies from a control subject (K) and patients with either Cav3 F65S (L and M) or D43G mutations (N). SR terminal cisternae are denoted with black asterisks. T-tubules are pseudo-colored pale yellow. Mitochondria (Mt), Z-Disk (Z), M-band (M). In (L) and (M) T-tubules form abnormal bifurcations. Instances of T-tubule swelling (N) are also observed in patient biopsies.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/84139/elife-84139-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Western-blot analysis of Cav3 protein levels in myotubes from patients with P28L and R26Q mutations (n=3 independent experiments). (B) Densitometric quantification of Cav3 protein levels relative to GAPDH levels. (C) High magnification PREM views of unroofed immortalized human myotubes with the Cav3 R26Q mutation after extensive differentiation (21 days). Note the presence of beaded tubes made of 5–10 concatenated caveolae in regions with abundant caveolae. (D) Western-blot analysis of Bin1, Junctophilin 2, RyR1 and DHPR a1s-subunit protein levels in myotubes from control and two caveolinopathy patients with R26Q mutations (n=3 independent experiments). (E–F) Immunohistochemical labeling of Cav3 in muscle biopsy from a control subject or from a patient with p.F65S Cav3 mutation reveals a strong reduction in Cav3 labeling. (G) Hematoxylin and Eosin staining on muscle sections from the patient displays some centralized and internalized nuclei. (H) NADH-TR reaction C on muscle sections from the same patient.
 
 We tested whether we could find caveolae rings in patient cells. Ultrastructural analysis showed that the spatial organization of caveolae in ring-like structures was altered. We observed instances of deformed rings with supernumerary caveolae (Figure 8A). A unique feature of patient myotubes was the production of beaded tubes composed of 5–10 concatenated caveolae not associated with a ring (Figure 8C and Figure 8—figure supplement 1). These bead-like structures extended from the surface only a couple hundred nanometers inside the muscle fiber suggesting that caveolae have either an increased propensity to fuse with each other or a decreased ability to recruit Bin1 for subsequent tubulation. Quantification of caveolae rings from R26Q patient myotubes showed significantly less caveolae rings at the surface of patient myotubes (in agreement with a decreased Cav3 surface expression) and an increase in their average diameter compared to control myotubes (Figure 8F and G). We attempted to rescue this phenotype by re-expressing Cav3. We transduced patient myoblasts with a lentivirus expressing full length Cav3 and differentiated them into myotubes (Figure 8E–G). Cav3 re-expression rescued caveolae ring density while reducing the average diameter to control values. We next analyzed Bin1 tubulation in the context of Cav3 deficiency due to the R26Q mutation in patient cells. Myotubes from R26Q patients were transduced with an adenovirus expressing Bin1GFP vector for 24 hr that resulted in a significant decrease in tubule density compared to cells from controls (Figure 8H–J). We next analyzed T-tubules in skeletal muscle from two patients from the same family with the Cav3 p.F65S heterozygote mutation (Figure 8—figure supplement 1) and one patient with the Cav3 p.D43G heterozygote mutation diagnosed as an LGMD 1 C with Rippling disease and elevated creatine kinase. At the histological level, these patients presented a mild dystrophic phenotype with some necrotic fibers, nuclear internalization, rounded fibers and an almost complete reduction of Cav3 immunostaining at the sarcolemma (Figure 8—figure supplement 1). Analysis of skeletal muscle biopsies using thin-section EM tomograms showed characteristic but rare triad abnormalities including T-tubule bifurcations (Figure 8K–M and Figure 8—video 1) and swelling of the T-tubules (Figure 8N).
 
@@ -106,11 +162,92 @@ Overall, we described caveolae rings, induced by recruitment of caveolae on circ
 
 ## Materials and methods
 
-## Antibodies
+### Antibodies
 
 Primary antibodies are listed in Table 1. Secondary antibodies for immunofluorescence were Alexa Fluor 488, Alexa Fluor 568, and Alexa Fluor 647 conjugates (Life Technologies, France). Secondary antibodies for Western blotting were coupled to horseradish peroxidase (HRP; Jackson Laboratories, USA).
 
-## Human and murine myoblast cultures
+**Table 1.**
+ List of primary antibodies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibodies</th>
+      <th>Provider</th>
+      <th>Product ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cav3 (Mouse) monoclonal</td>
+      <td>BD Biosciences</td>
+      <td>610421</td>
+    </tr>
+    <tr>
+      <td>Cav3 (Rabbit) polyclonal</td>
+      <td>Abcam</td>
+      <td>ab2912</td>
+    </tr>
+    <tr>
+      <td>Cav-1 (Rabbit) polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>sc894</td>
+    </tr>
+    <tr>
+      <td>Cavin 4 (MURC) (Rabbit) polyclonal</td>
+      <td>Merck</td>
+      <td>HPA020973</td>
+    </tr>
+    <tr>
+      <td>DHPR (Mouse) monoclonal</td>
+      <td>Abcam</td>
+      <td>ab2862</td>
+    </tr>
+    <tr>
+      <td>RyR1 (Rabbit) polyclonal</td>
+      <td>Custom</td>
+      <td>Marty et al., 1994</td>
+    </tr>
+    <tr>
+      <td>Bin1 (Mouse) monoclonal</td>
+      <td>Merck</td>
+      <td>05-449-C</td>
+    </tr>
+    <tr>
+      <td>Bin1 (Rabbit) polyclonal</td>
+      <td>Custom</td>
+      <td>Nicot et al., 2007</td>
+    </tr>
+    <tr>
+      <td>GFP (Rabbit) polyclonal</td>
+      <td>Thermofischer</td>
+      <td>A11122</td>
+    </tr>
+    <tr>
+      <td>-actinin 2(Mouse) monoclonal</td>
+      <td>Sigma Aldrich</td>
+      <td>A7811</td>
+    </tr>
+    <tr>
+      <td>Junctophilin 2 (Rabbit) polyclonal</td>
+      <td>Thermofischer</td>
+      <td>PA5-20642</td>
+    </tr>
+    <tr>
+      <td>GAPDH (Rabbit) polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>sc25778</td>
+    </tr>
+    <tr>
+      <td>-tubulin (Mouse) monoclonal</td>
+      <td>Thermofischer</td>
+      <td>236-10501</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human and murine myoblast cultures
 
 Primary mouse skeletal muscle cells were prepared from 3- to 4-day-old mouse pups. Cells were maintained in tissue culture dishes coated with Matrigel matrix at 1:100 (Corning, France) in DMEM medium with 20% fetal bovine serum (FBS), 50 U/ml penicillin, 50 mg/ml streptomycin (growth medium), and 1% chicken embryo extract (Seralab, UK). Differentiation was induced when cells were ∼80% confluent by switching to differentiation medium; DMEM medium with 2% horse serum (Life Technologies, France) and 80 ng/mL of agrin (R&D Systems, USA). To avoid detachment due to strong contractions and to keep cells in culture for prolonged periods of differentiation (up to 10 days), myotubes were covered with a layer of Matrigel Growth Factor Reduced Basement Membrane Matrix, Phenol Red-Free at 1:3 (Corning, France) (Falcone et al., 2014).
 
@@ -118,47 +255,78 @@ Human muscle biopsies (control muscle) used in this study were obtained via Myob
 
 Cells were transduced with lentiviral vectors expressing Cav3 and a GFP reporter gene. Myoblasts were transduced with an MOI of 5, and cells were differentiated into myotubes.
 
-## siRNA-mediated knock-down
+### siRNA-mediated knock-down
 
 For siRNA treatment, myotubes (differentiated for either 2 or 4 days) were transfected twice for 48 hr using 200 nM siRNA and Lipofectamine RNAiMax transfection reagent (Life Technologies, France) according to the manufacturer’s instructions. Targeting and control siRNAs were synthesized by Eurogentec, Belgium. A list of siRNAs used and sequences can be found in (Table 2).
 
-## Adenovirus Bin1GFP and Bin1-Δexon11GFP transduction
+**Table 2.**
+ List of siRNA sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Human siRNASequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cav3 (1)</td>
+      <td>5’-CAGAUCUCGAGGCCCAGAUCG-3’</td>
+    </tr>
+    <tr>
+      <td>Cav3 (2)</td>
+      <td>5’-AAGCACAAUGGCCCUUCGCUC-3’</td>
+    </tr>
+    <tr>
+      <td>Target</td>
+      <td>Murine siRNASequence</td>
+    </tr>
+    <tr>
+      <td>Cav3</td>
+      <td>5’-GGUUCCUCUCAAUUCCAC-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Adenovirus Bin1GFP and Bin1-Δexon11GFP transduction
 
 Differentiating myotubes were transduced with adenoviral vectors expressing Bin1 protein including exon 11 (Bin1GFP) and Bin1 isoform without exon 11 (Bin1-Δexon11GFP) with a MOI of 75. The viruses are plated and incubated on the cells for 6 hr at 37 °C in DMEM Glutamax medium prior to changing to differentiation medium.
 
-## Protein purification and immunofluorescent labeling
+### Protein purification and immunofluorescent labeling
 
 Human isoform of amphiphysin 2/BIN1 including exon 11 was expressed in Rosetta 2 bacteria and purified by affinity chromatography using glutathione Sepharose 4B beads according to the manufacturer’s instructions (GE Healthcare) in 50 mM Tris at pH 8.0, 100 mM NaCl. Proteins were expressed overnight at 18 °C using 1 mM IPTG induction, dialyzed overnight in a Slide-A-Lyzer dialysis cassette (MWCO 10,000) before Alexa Fluor 488 or 647 maleimide labeling (Invitrogen). Protein concentrations were measured using Bradford assay kits (Biorad).
 
-## Lipids and reagents
+### Lipids and reagents
 
 Natural phospholipids including Egg-phosphatidylcholine (PC), Brain-phosphatidylserine (PS), Brain-PI4,5P2, were from Avanti Polar Lipids, Inc Oregon Green 488 DHPE and Alexa Fluor 647 Maleimide labelling kit from Invitrogen.
 
-## Supported lipid bilayers
+### Supported lipid bilayers
 
 Lipid mixtures consisted of 85% Egg-PC, 10% Brain-PS and 5% of Brain-PI4,5P2. Fluorescent lipids were added to 0.2%. Supported lipid bilayers for fluorescence microscopy and PREM experiments were prepared from large unilamellar vesicles (LUVs, diameter ~100 nm) as described (Braunger et al., 2013). Experiments were performed by injecting 20 µL of buffer (20 mM Tris, pH 7.4, 150 mM NaCl) containing 1 μM of non-labeled Bin1 (for PREM experiments) or 1–2 μM of Bin1-Alexa 647 (for LM experiments). Additionally, 0.5 mg/ml of casein was added to the buffer for fluorescence microscopy imaging. Supported lipid bilayers were imaged on a Zeiss LSM880 Airyscan confocal microscope (MRI facility, Montpellier). Excitation sources used were an Argon laser for 488 nm and a Helium/Neon laser for 633 nm. Acquisitions were performed on a 63 x/1.4 objective. Multidimensional acquisitions were acquired via an Airyscan detector (32-channel GaAsP photomultiplier tube array detector).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Cell samples were collected using an NaCl (150 mM)-EDTA (10 mM) buffer with added proteinase inhibitor cocktail 1:100 (Sigma-Aldrich, France) and then denaturated in Laemmli denaturating buffer 4 X. Protein samples were separated by electrophoresis (4–12% bis-acrylamide gel; Life Technologies, France), electrotransfered to 0.45 µm nitrocellulose membranes (Life Technologies, France) and labeled with primary antibodies then secondary antibodies coupled to HRP. The presence of proteins in samples was detected using Immobilon Western Chemiluminescent HRP Substrate (Sigma-Aldrich, France). Acquisition was performed on a ChemiDoc Imaging System (Biorad, Inc, France).
 
-## Immunofluorescence microscopy
+### Immunofluorescence microscopy
 
 Mouse and human cells were grown on glass coverslips, washed in warm PBS, fixed in paraformaldehyde (4% in PBS, 15 min), and then washed in PBS, permeabilized (10 min, 0.5% Triton X-100 in PBS), and blocked (5% BSA in PBS with 0.1% Triton X-100, 30 min). Antibody labeling was performed by addition of 200 µL blocking solution with primary or secondary antibodies and washing with PBS with 0.1% Triton X-100. Samples were mounted in Vectashield containing DAPI (Vector Laboratories, USA). Images were acquired using a Nikon Ti2 microscope, driven by Metamorph (Molecular Devices), equipped with a motorized stage and a Yokogawa CSU-W1 spinning disk head coupled with a Prime 95 sCMOS camera (Photometrics) equipped with a 100 x oil-immersion objective lense. Super-resolution images were obtained using the LiveSR module (Gataca Systems). DAPI, Alexa Fluor 488, Alexa Fluor 568 and Alexa Fluor 647 were sequentially excited. Z-series from the top to the bottom of fibers were sequentially collected for each channel with a step of 0.1–0.3 µm between each frame. Image quantification was performed using National Institutes of Health’s FIJI (Schindelin et al., 2012).
 
-## MemBright live imaging
+### MemBright live imaging
 
 Myotubes differentiated between 7 and 9 days were placed in an incubation chamber to be maintained at 37 °C and 5% CO2 throughout the experiment. At the time of observation, the medium was changed to DMEM Glutamax and 0.1 μM of MemBright 640 (Cytoskeleton, Inc, France). Similar to immunofluorescent staining the cells were observed using the Nikon Ti2 spinning disk confocal microscope through a x100 immersion objective and z-stacks (300 nm) were acquired with a thickness of 5 μm for 20 min with a stack every 3 min. The generated images were then analyzed using FIJI.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 Myotubes differentiated between 7 and 9 days were placed in an incubation chamber and maintained at 37 °C and 5% CO2 throughout the experiment. Cells were observed using the Nikon Ti2 spinning disk confocal microscope (equipped with a SR module) through a x100 immersion objective and frames were acquired every 10 s during periods ranging from 15 min to 3 hr. The generated images were then analyzed using FIJI and movies played back at 5 frames per second (Figure 4—videos 1–4).
 
-## Platinum-replica EM of unroofed myotubes
+### Platinum-replica EM of unroofed myotubes
 
 Adherent plasma membranes from cultured cells grown on glass coverslips were obtained by sonication as described previously (Heuser, 2000). Sample processing for platinum-replica EM of unroofed cells was performed as follows: 2% glutaraldehyde/2% paraformaldehyde-fixed cells were further sequentially treated with 0.5% OsO4, 1% tannic acid, and 1% uranyl acetate before graded ethanol dehydration and hexamethyldisilazane (HMDS) substitution (LFG Distribution, France). Dried samples were then rotary shadowed with 2 nm of platinum (sputtering) and 4–6 nm of carbon (carbon thread evaporation) using an ACE600 metal coater (Leica Microsystems, Germany). The resultant platinum replica was floated off the glass with hydrofluoric acid (5%), washed several times on distilled water, and picked up on 200 mesh formvar/carbon-coated EM grids. The grids were mounted in a eucentric side-entry goniometer stage of a transmission electron microscope operated at 120 kV (JEOL, Japan), and images were recorded with a Xarosa digital camera (EM-SIS, Germany). Images were processed in Adobe Photoshop to adjust brightness and contrast and presented in inverted contrast.
 
-## Histomorphological and ultrastructural analyses
+### Histomorphological and ultrastructural analyses
 
 Human muscle biopsies from two patients carrying the Cav3 mutation p.F65S, one patient carrying the Cav3 mutation p.D43G, and one healthy control muscle were performed at the Centre de Référence de Pathologie Neuromusculaire Paris-Est (Institut de Myologie, GHU Pitié-Salpêtrière, Paris, France), following written informed consent specially dedicated for diagnosis and research. Muscle was frozen in liquid nitrogen-cooled isopentane. For all imaging, exposure settings were identical between compared samples and viewed at room temperature. For conventional histochemical techniques on human biopsies, 10-μm-thick cryostat sections were stained with antibodies against Cav3, Hematoxylin and eosin or with reduced nicotinamide adenine dinucleotide dehydrogenase-tetrazolium reductase by standard methods. Pictures of each section were obtained with a Zeiss AxioCam HRc linked to a Zeiss Axioplan Bright Field Microscope and processed with the Axio Vision 4.4 software (Zeiss, Germany).
 
@@ -166,24 +334,24 @@ For ultrastructural analysis of patient biopsies, fresh muscle samples were fixe
 
 For ultrastructural analysis of cultured myotubes, cells were fixed with 2% paraformaldehyde, 2% glutaraldehyde in 0.1 M phosphate buffer (pH 7.4). Samples were post-fixed with 2% OsO4, in 0.1 M phosphate buffer (pH 7.4) for 1 hr, dehydrated in a graded series of acetone including a 1% uranyl acetate staining step in 70% acetone, and finally embedded in epoxy resin (EMBed-812, Electron Microscopy Sciences, USA). Ultra-thin (70 nm) sections were stained with uranyl acetate and lead citrate. Observations were made on a transmission electron microscope operated at 120 kV (JEOL, Japan), and images were recorded with a Xarosa digital camera (EM-SIS, Germany).
 
-## Unroofing and PREM immunocytochemistry
+### Unroofing and PREM immunocytochemistry
 
 Unroofing was performed by sonication. Coverslips were quickly rinsed three times in Ringer + Ca (155 mm NaCl, 3 mm KCl, 3 mm NaH2PO4, 5 mm HEPES, 10 mm glucose, 2 mm CaCl2, 1 mm MgCl2, pH 7.2), then immersed 10 s in Ringer-Ca (155 mm NaCl, 3 mm KCl, 3 mm NaH2PO4, 5 mm HEPES, 10 mm glucose, 3 mm EGTA, 5 mm MgCl2, pH 7.2) containing 0.5 mg/mL poly-l-lysine, then quickly rinsed in Ringer-Ca then unroofed by scanning the coverslip with rapid (2–5 s) sonicator pulses at the lowest deliverable power in KHMgE buffer (70 mm KCl, 30 mm HEPES, 5 mm MgCl2, 3 mm EGTA, pH 7.2).
 
 Unroofed cells were immediately fixed in KHMgE: 4% PFA for 10 min for light microscopy, 4% PFA for 45 min for PREM of immunogold-labeled samples, 2% PFA–2% glutaraldehyde for 10–20 min for PREM.
 
-## Correlative-EM of unroofed myotubes
+### Correlative-EM of unroofed myotubes
 
 For correlative-EM on unroofed cells, myotubes were grown on alpha-numerically gridded bottom dishes (Ibidi, France). Adherent plasma membranes were obtained by sonication and were immediately immersed in 4% paraformaldehyde and the proteins of interest were then labeled by immunofluorescence in saturation buffer (1% BSA in KHMgE buffer). Immunofluorescent stainings were acquired with a Nikon Ti2 microscope, and super-resolution images were obtained with the LiveSR module (Gataca Systems). Observations were performed at different magnifications in order to optimize the localization of the myotubes of interest (4x, 20x and 100x objective lenses). The samples were then incubated in 2% glutaraldehyde at 4°C overnight and treated sequentially with 0.5% Osmium tetroxide OsO4, 1.5% tannic acid and 1% uranyl acetate before being dehydrated with ethanol and HMDS (LFG Distribution, France). Dried samples were then rotary shadowed with 2 nm of platinum and 4-6 nm of carbon using the ACE600 (Leica Microsystems, Germany). Areas of interest from the resulting platinum replicas were separated from glass with 5% hydrofluoric acid and deposited on carbon-coated EM grids (200 mesh formvar/carbon, LFG Distribution, France). Images were processed in Adobe Photoshop to adjust brightness and contrast, and unroofed PMs are presented in inverted contrast. Super-resolution microscopy and electron microscopy images were overlaid using Adobe Photoshop software.
 
-## Anaglyphs and Tomograms
+### Anaglyphs and Tomograms
 
 Anaglyphs were made by converting the –10° tilt image to red and the +10° tilt image to cyan (blue/green), layering them on top of each other using the screen blending mode in Adobe Photoshop, and aligning them to each other. Tomograms were made by collecting images at the tilt angles up to ±25° relative to the plane of the sample with 5° increments. Images were aligned by layering them on top of each other in Adobe Photoshop. For PREM tomograms, the sample in the TEM holder was tilted with an angle of ±20° and an image was taken every 5°. The brightness and contrast of the images were adjusted in Adobe Photoshop and the images were presented in reverse contrast. Movies were made by combining LM, PREM images produced by increasing magnifications of the same myotube, and tomograms of the highest magnification region using Adobe Photoshop and FIJI. For muscle biopsy tomograms, semi-thin sections (200 nm) were contrasted with uranyl acetate (5 min) and lead citrate (5 min); the images were acquired with Radius software and the TEM holder was tilted with an angle of ±60° and an image was taken every 2°; the alignment and reconstruction of the tilted series were carried out with the TomoJ plugin (Messaoudii et al., 2007; Sorzano et al., 2020) of ImageJ software.
 
-## Data analysis and statistics
+### Data analysis and statistics
 
 Graphs and statistical analyses were performed with Excel and GraphPad Prism v. 6.00 software. Values are expressed as means ± SEM. The number of samples (n), representing the number of independent biological replicates, is indicated in the figure legends. Statistical comparisons between two groups were performed using unpaired one- or two-tailed Student’s t tests as specified. Statistical tests applied are indicated in the figure legends. p<0.05 was considered statistically significant. In all statistical analyses, the levels of significance were defined as: *p<0.05, **p<0.01, ***p<0.001 and ****p<0.0001.
 
-## Study approval
+### Study approval
 
 Animal studies conform to the French laws and regulations concerning the use of animals for research and were approved by an external ethics committee (approval no. 00351.02 delivered by the French Ministry of Higher Education and Scientific Research). For human studies, all individuals provided informed consent for muscle biopsies according to a protocol approved by the ethics committee of the Centre de Référence de Pathologie Neuromusculaire Paris-Est, Institut de Myologie, Assistance Publique-Hôpitaux de Paris, GH Pitié-Salpêtrière, Paris, France.

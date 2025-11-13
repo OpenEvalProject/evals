@@ -1409,13 +1409,13 @@ Some studies have investigated whether the rise in obesity or the decrease of un
 
 ## Results
 
-## Data sources
+### Data sources
 
 The Non-Communicable Disease Risk Factor Collaboration (NCD-RisC) database contains 2896 population-based studies conducted from 1985 to 2019 with height and weight measurements of 187 million participants. Of these, 2033 studies had measurements of height and weight on 132.6 million participants aged 20–79 years. The number of studies with participants aged 20–79 years in different regions ranged from 53 in Oceania to 637 in the high-income western region. The number of data sources by country is shown in Figure 2. The list of data sources and their characteristics is provided in Supplementary file 4.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/60060/elife-60060-fig2-v1.jpg)
 
-## Change in mean BMI and prevalence of underweight, obesity, and severe obesity by region
+### Change in mean BMI and prevalence of underweight, obesity, and severe obesity by region
 
 In 2016, the age-standardised prevalence of underweight was highest (>16% in different sex-age groups) in South Asia; it was <2.5% in Central and Eastern Europe; the high-income western region; Latin America and the Caribbean; Oceania; and Central Asia, the Middle East, and North Africa for most age and sex groups. The age-standardised prevalence of obesity was highest (>24%) in these same regions for most age and sex groups. It was lowest (<7%) in men and women from South Asia; the high-income Asia Pacific region; and men from sub-Saharan Africa. The age-standardised prevalence of severe obesity was highest (12–18%) in women aged 50–79 years from Central Asia, the Middle East, and North Africa; the high-income western region; Central and Eastern Europe; and Latin America and the Caribbean. It was lowest (<2%) in South Asia; East and Southeast Asia; the high-income Asia Pacific region; and men in sub-Saharan Africa.
 
@@ -1427,13 +1427,13 @@ From 1985 to 2016, age-standardised mean BMI increased by 1–4 kg/m2 in all reg
 
 The largest absolute increase in obesity prevalence from 1985 to 2016 occurred in Central Asia, the Middle East, and North Africa; the high-income western region; Latin America and the Caribbean; Oceania (women); and Central and Eastern Europe (men) (Figure 4). Women in these regions also experienced the largest increase in severe obesity prevalence, along with men in the high-income western region. In these regions and sexes, obesity prevalence increased by 16–24 percentage points in different age groups, and severe obesity increased by 5–13 percentage points. The increase in obesity was less than five percentage points in the high-income Asia Pacific region; South Asia; and in men in sub-Saharan Africa; in the same regions, along with East and Southeast Asia, the increase in severe obesity was less than two percentage points.
 
-## Associations of underweight, obesity, and severe obesity prevalence with mean BMI
+### Associations of underweight, obesity, and severe obesity prevalence with mean BMI
 
 There was a strong association between the prevalence of underweight, obesity, and severe obesity with mean BMI as measured by R-squared of the regressions of prevalence on mean (Supplementary files 1 and 2). These indicate that 93% (men) and 96% (women) of variation in obesity, and between 83% and 92% of variation in underweight and severe obesity, were explained by mean BMI and other variables (year, region, and age group) in the regression models. The coefficients of the mean BMI terms represent the changes in (probit-transformed) prevalence associated with a unit change in mean BMI, and their interactions with region represent variations in this association across regions. For all three outcomes, the association of prevalence with mean BMI varied across regions.
 
 The inter-regional variation in the prevalence–mean association was stronger for obesity and severe obesity than underweight, as seen in larger inter-regional range of the interaction terms. The extent to which prevalence changes with any variation in mean BMI in each region is an outcome of the main BMI term and its interaction with region; to be epidemiologically interpretable, this will have to be converted from probit-transformed to original prevalence scale. For example, in the year 2016, for women aged 50–59 years, at a mean BMI of 25 kg/m2 (which was approximately the global age-standardised mean level of BMI) (NCD Risk Factor Collaboration (NCD-RisC), 2017a), prevalence of underweight would have varied by seven percentage points across regions, being lowest in Central and Eastern Europe and highest in sub-Saharan Africa; a unit increase in mean BMI would have been associated with a relative change in prevalence ranging from −49% in the high-income Asia Pacific region to −14% in Oceania. Also for women aged 50–59 years and a mean BMI of 25 kg/m2, the prevalence of obesity and severe obesity would both have been the highest in Oceania and the lowest in the high-income Asia Pacific region, with a difference of 12 and 6 percentage points, respectively, for the two outcomes; a unit increase in mean BMI would have been associated with a relative change ranging from 21% to 46% for obesity and from 30% to 59% for severe obesity, the smallest change for both being in Oceania and the largest in East and Southeast Asia. There was similar inter-regional variation in the other year–age–sex strata.
 
-## Contribution of mean BMI to changes in underweight and obesity prevalence
+### Contribution of mean BMI to changes in underweight and obesity prevalence
 
 The rise in mean BMI accounted for >82% of the decline in underweight in different age–sex groups in South Asia, where underweight prevalence declined by over 16 percentage points for all age–sex groups (Figure 5). The remainder of the decline was due to change in the shape of the BMI distribution which reduced underweight prevalence beyond the effects of the population mean. In contrast, in sub-Saharan Africa and East and Southeast Asia, the total change in prevalence of underweight (3–12 percentage points) was 20–80% less than what was expected based on the increase in mean BMI (Figure 5). In other words, in these regions the underweight tail of the BMI distribution was left behind as the distribution shifted.
 
@@ -1463,17 +1463,17 @@ In summary, we found that the worldwide rise in obesity and the decline in under
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 Our aim was to quantify, for all regions of the world, how much of the change in prevalence of underweight (defined as BMI <18.5 kg/m2), (total) obesity (BMI ≥30 kg/m2), and severe obesity (BMI ≥35 kg/m2) among men and women aged 20–79 years from 1985 to 2016 could be accounted for by change in mean BMI. In the first step, we used data from a global database of human anthropometry to estimate the associations of the prevalence of underweight, prevalence of obesity, or prevalence of severe obesity with population mean BMI, including how the association varies in relation to age group and region. We then used the fitted association to estimate the contribution of change in the population mean BMI to change in the prevalence of underweight, obesity, or severe obesity in different regions.
 
-## Data sources
+### Data sources
 
 In the first step of the analysis, we estimated the prevalence-mean associations, using data from a comprehensive database on cardiometabolic risk factors collated by NCD-RisC as described below. In the second step, we needed consistent estimates of mean BMI for all regions. For this purpose, we used data from a recent comprehensive analysis of worldwide trends in mean BMI from 1985 to 2016 (NCD Risk Factor Collaboration (NCD-RisC), 2017a) which had fitted a Bayesian hierarchical model to the NCD-RisC data.
 
 Data in the NCD-RisC database were obtained from publicly available multi-country and national measurement surveys (e.g., Demographic and Health Surveys, WHO-STEPwise approach to Surveillance [STEPS] surveys, and those identified via the Inter-University Consortium for Political and Social Research and European Health Interview and Health Examination Surveys Database). With the help of the World Health Organization (WHO) and its regional and country offices as well as the World Heart Federation, we identified and accessed population-based survey data from national health and statistical agencies. We searched and reviewed published studies as detailed previously (NCD Risk Factor Collaboration (NCD-RisC), 2017a) and invited eligible studies to join NCD-RisC, as we did with data holders from earlier pooled analysis of cardiometabolic risk factors (Finucane et al., 2011; Farzadfar et al., 2011; Danaei et al., 2011a; Danaei et al., 2011b).
 
-## Data inclusion and exclusion
+### Data inclusion and exclusion
 
 We carefully checked that each data source met our inclusion criteria as listed below:
 
@@ -1489,7 +1489,7 @@ Additionally, summary statistics for nationally representative data from sources
 
 Here, to estimate the association of underweight, obesity, and severe obesity prevalence with mean BMI as described below, we used data collected from 1985 to 2019 with measured height and weight among men and women aged 20–79 years, in 10-year age groups. Data that did not cover the complete 10-year age groups, for example, 25–29 or 60–64 years, were excluded. We included data from study–age–sex strata with a prevalence between 0 and 1 to allow probit transformation and with at least 25 participants in each stratum. These data were summarised into 11,652 study–age–sex-specific pairs of mean and prevalence of adults with underweight, obesity, or severe obesity.
 
-## Statistical methods
+### Statistical methods
 
 Anonymised data from studies in the NCD-RisC database were reanalysed according to a common protocol. We calculated mean BMI and prevalence of underweight, obesity, and severe obesity by sex and age group in each study in the NCD-RisC database from 1985 to 2019. We used data through 2019 so that the prevalence–mean association is informed by as much data as possible. All calculations took into account complex survey design where relevant. We excluded study–age–sex groups with less than 25 participants because their means and prevalence have larger uncertainty.
 

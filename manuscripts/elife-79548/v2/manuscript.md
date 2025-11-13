@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Although there are several efficacious vaccines against COVID-19, vaccination rates in many regions around the world remain insufficient to prevent continued high disease burden and emergence of viral variants. Repurposing of existing therapeutics that prevent or mitigate severe COVID-19 could help to address these challenges. The objective of this study was to determine whether prior use of bisphosphonates is associated with reduced incidence and/or severity of COVID-19. A retrospective cohort study utilizing payer-complete health insurance claims data from 8,239,790 patients with continuous medical and prescription insurance January 1, 2019 to June 30, 2020 was performed. The primary exposure of interest was use of any bisphosphonate from January 1, 2019 to February 29, 2020. Bisphosphonate users were identified as patients having at least one bisphosphonate claim during this period, who were then 1:1 propensity score-matched to bisphosphonate non-users by age, gender, insurance type, primary-care-provider visit in 2019, and comorbidity burden. Main outcomes of interest included: (a) any testing for SARS-CoV-2 infection; (b) COVID-19 diagnosis; and (c) hospitalization with a COVID-19 diagnosis between March 1, 2020 and June 30, 2020. Multiple sensitivity analyses were also performed to assess core study outcomes amongst more restrictive matches between BP users/non-users, as well as assessing the relationship between BP-use and other respiratory infections (pneumonia, acute bronchitis) both during the same study period as well as before the COVID outbreak. A total of 7,906,603 patients for whom continuous medical and prescription insurance information was available were selected. A total of 450,366 bisphosphonate users were identified and 1:1 propensity score-matched to bisphosphonate non-users. Bisphosphonate users had lower odds ratios (OR) of testing for SARS-CoV-2 infection (OR = 0.22; 95%CI:0.21–0.23; p<0.001), COVID-19 diagnosis (OR = 0.23; 95%CI:0.22–0.24; p<0.001), and COVID-19-related hospitalization (OR = 0.26; 95%CI:0.24–0.29; p<0.001). Sensitivity analyses yielded results consistent with the primary analysis. Bisphosphonate-use was also associated with decreased odds of acute bronchitis (OR = 0.23; 95%CI:0.22–0.23; p<0.001) or pneumonia (OR = 0.32; 95%CI:0.31–0.34; p<0.001) in 2019, suggesting that bisphosphonates may protect against respiratory infections by a variety of pathogens, including but not limited to SARS-CoV-2. Prior bisphosphonate-use was associated with dramatically reduced odds of SARS-CoV-2 testing, COVID-19 diagnosis, and COVID-19-related hospitalizations. Prospective clinical trials will be required to establish a causal role for bisphosphonate-use in COVID-19-related outcomes. This study was supported by NIH grants, AR068383 and AI155865, a grant from MassCPR (to UHvA) and a CRI Irvington postdoctoral fellowship, CRI2453 (to PH).
+Background:Although there are several efficacious vaccines against COVID-19, vaccination rates in many regions around the world remain insufficient to prevent continued high disease burden and emergence of viral variants. Repurposing of existing therapeutics that prevent or mitigate severe COVID-19 could help to address these challenges. The objective of this study was to determine whether prior use of bisphosphonates is associated with reduced incidence and/or severity of COVID-19.Methods:A retrospective cohort study utilizing payer-complete health insurance claims data from 8,239,790 patients with continuous medical and prescription insurance January 1, 2019 to June 30, 2020 was performed. The primary exposure of interest was use of any bisphosphonate from January 1, 2019 to February 29, 2020. Bisphosphonate users were identified as patients having at least one bisphosphonate claim during this period, who were then 1:1 propensity score-matched to bisphosphonate non-users by age, gender, insurance type, primary-care-provider visit in 2019, and comorbidity burden. Main outcomes of interest included: (a) any testing for SARS-CoV-2 infection; (b) COVID-19 diagnosis; and (c) hospitalization with a COVID-19 diagnosis between March 1, 2020 and June 30, 2020. Multiple sensitivity analyses were also performed to assess core study outcomes amongst more restrictive matches between BP users/non-users, as well as assessing the relationship between BP-use and other respiratory infections (pneumonia, acute bronchitis) both during the same study period as well as before the COVID outbreak.Results:A total of 7,906,603 patients for whom continuous medical and prescription insurance information was available were selected. A total of 450,366 bisphosphonate users were identified and 1:1 propensity score-matched to bisphosphonate non-users. Bisphosphonate users had lower odds ratios (OR) of testing for SARS-CoV-2 infection (OR = 0.22; 95%CI:0.21–0.23; p<0.001), COVID-19 diagnosis (OR = 0.23; 95%CI:0.22–0.24; p<0.001), and COVID-19-related hospitalization (OR = 0.26; 95%CI:0.24–0.29; p<0.001). Sensitivity analyses yielded results consistent with the primary analysis. Bisphosphonate-use was also associated with decreased odds of acute bronchitis (OR = 0.23; 95%CI:0.22–0.23; p<0.001) or pneumonia (OR = 0.32; 95%CI:0.31–0.34; p<0.001) in 2019, suggesting that bisphosphonates may protect against respiratory infections by a variety of pathogens, including but not limited to SARS-CoV-2.Conclusions:Prior bisphosphonate-use was associated with dramatically reduced odds of SARS-CoV-2 testing, COVID-19 diagnosis, and COVID-19-related hospitalizations. Prospective clinical trials will be required to establish a causal role for bisphosphonate-use in COVID-19-related outcomes.Funding:This study was supported by NIH grants, AR068383 and AI155865, a grant from MassCPR (to UHvA) and a CRI Irvington postdoctoral fellowship, CRI2453 (to PH).
 
 ## Introduction
 
@@ -40,7 +40,7 @@ In light of these considerations, we have analysed a database of health insuranc
 
 ## Methods
 
-## Study design
+### Study design
 
 A retrospective cohort study was performed using health insurance claims data from January 1, 2019 to June 30, 2020 (study period) in order to assess the relationship between use of BPs and three COVID-19-related outcomes: (a) testing for SARS-CoV-2 infection; (b) COVID-19 diagnosis; and (c) hospitalization with a COVID-19 diagnosis, whereby COVID-19-related hospitalization was deemed the primary endpoint and COVID-19 diagnosis and testing were secondary endpoints. Primary and secondary endpoints were assessed during the observation period of March 1, 2020 to June 30, 2020, roughly corresponding to the first nation-wide surge of COVID-19 in the U.S. (Figure 1A). In the primary analysis, the risk of COVID-19-related outcomes was assessed among BP users compared to a matched sample of BP non-users with similar demographic and clinical characteristics.
 
@@ -48,35 +48,35 @@ A retrospective cohort study was performed using health insurance claims data fr
 
 **Figure 1.:** (A) Schematic overview of the study timeline. (B) Schematic flow diagram illustrating the identification of the study population and matched control populations for primary analysis and sensitivity analyses cohorts. BP: bisphosphonate; CA: California; CCI: Charlson comorbidity index; CI: confidence interval; COPD: chronic obstructive pulmonary disease; FL: Florida; IL: Illinois; NY: New York; OR: odds ratio; PCP: primary care physician; PS: propensity score; PSM: propensity score match.
 
-## Data source
+### Data source
 
 Data used for this study included closed medical (inpatient and outpatient) and outpatient-pharmacy-dispensed claims between January 1, 2019 and June 30, 2020, from the Komodo Health payer-complete dataset (https://www.komodohealth.com). This dataset is derived from over 150 private insurers in the U.S. and includes patients with commercial, individual, state exchange-purchased, Medicare Advantage, and Medicaid managed-care insurance coverage. The dataset also provides information on insurance eligibility periods. Closed claims within this dataset represent those that had undergone insurance adjudication. In total, the Komodo Health payer-complete dataset includes health insurance claims data from over 140 million individuals in the U.S. from 2015 to 2020.
 
-## Cohort definition
+### Cohort definition
 
 All patients were required to have continuous medical and prescription insurance eligibility during the entire study period. Patients with missing information for age, gender, insurance type, or state/region were excluded.
 
-## Exposures of interest
+### Exposures of interest
 
 The primary exposure of interest was the use of any amino- or non-amino BP medication. Exposure to BPs and all other medications of interest were assessed over a 14-month pre-observation period preceding the COVID-19 pandemic in the U.S. This long duration was chosen because of the extended bioavailability of BPs, which accumulate in bone where they are retained and slowly released for up to several years (Cremers et al., 2019). Patients were classified as BP users if they had any claim at any time during the pre-observation period for one of the following: alendronate, alendronic acid, etidronate, ibandronate, ibandronic acid, pamidronate, risedronate, and zoledronic acid (full details in Appendix 1).
 
-## Timing of BP dose
+### Timing of BP dose
 
 The effect of timing and formulation of BPs on COVID-19-related outcomes was more closely examined by varying the window between BP exposure and outcome measurement. The primary analysis BP user cohort, along with their propensity-score matched (see below for cohort matching) BP non-user cohort, were stratified as follows: two cohorts were used as the reference comparator with known BP-exposure during all or most of the pre-observation and the entire observation period, specifically (i) BP users who took oral alendronic acid (dosed daily or weekly) throughout the pre-observation period (i.e. at least one claim or drug-on-hand in each quarter in 2019 and in Jan/Feb. 2020) that also had a days-supply extending past June 30, 2020, and (ii) users of infusion zoledronic acid (dosed annually) with a claim in Q3 or Q4 2019; two cohorts with BP-exposure only during the pre-observation period, namely (iii) users of alendronic acid occurring during the first six months of 2019 with days-covered ending prior to June 30, 2019 and no other BP claims thereafter, and (iv) users of zoledronic acid in January or February 2019 with no other BP claims during the remainder of the study period; and, two cohorts with short-term BP exposure, specifically new users of (v) alendronic acid or (vi) zoledronic acid in February 2020, with no prior BP claims during the pre-observation period.
 
-## Covariates
+### Covariates
 
 As covariates, we considered factors that may influence either the use of BPs or potential modulators of primary or secondary study endpoints. These included: age; gender; insurance type (commercial, dual, Medicaid, Medicare); having had any primary care physician (PCP) visit in 2019; and comorbidity burden. The variable ‘PCP visit in 2019’ was used to control for prior healthcare-use behaviour and was assigned based on any physician office claim from January 1, 2019 to December 31, 2019 with one of the following provider types: family practice, general practice, geriatric medicine, internal medicine, and preventive medicine. Comorbidity score assignment was calculated following the Charlson Comorbidity Index (CCI) methodology (Quan et al., 2005), and was based on diagnosis codes present on any medical claim (inpatient or outpatient) occurring during the pre-observation period. The assigned CCI score was used as the comorbidity covariate for the primary cohort propensity score matching, but to better control for differences in comorbidity burden when assessing outcomes, all regression analyses involving the primary analysis cohort included the following individual comorbidity covariates in lieu of the aggregate CCI score: osteoporosis, cancer, chronic obstructive pulmonary disease (COPD), depression, dyslipidaemia, hypertension, obesity, type 2 diabetes, cardiovascular disease overall, sickle cell anemia, stroke, dementia, HIV/AIDS, chronic kidney disease/end-stage renal disease (CKD/ESRD), and liver disease (Appendix 1).
 
-## Cohort matching
+### Cohort matching
 
 For the primary analysis, BP users were propensity-score (PS) matched to BP non-users via a PS calculated using multiple variables, including age, gender, insurance type, CCI, and any PCP visit in 2019, to yield comparable populations by demographics and clinical characteristics (Figure 1B). To account for the differential geographic spread of COVID-19 across the U.S. during the observation period, matching was performed within each geographic region separately (Northeast, Midwest, South, West) and then combined. In addition to this within-region stratified match, a cohort build was also performed after restricting to patients from New York (NY) state only, since this state was the site of the largest outbreak in the initial COVID-19 surge in the U.S. All matching algorithms used a greedy-match propensity score technique (Parsons, 2001) to match BP users to non-users with a maximum permitted propensity-score difference of 0.015.
 
-## Definition of endpoints
+### Definition of endpoints
 
 Primary and secondary endpoints were assigned using inpatient and outpatient medical claims that occurred during the four-month observation period. The primary endpoint, COVID-19-related hospitalization, was assigned based on the presence of an International Classification of Diseases, Tenth Revision (ICD-10) code on any inpatient medical service claim indicating test-confirmed 2019 Novel Coronavirus (2019-nCoV) acute respiratory disease, specifically U07.1. The first secondary endpoint, SARS-CoV-2 testing, was assigned using Current Procedural Terminology (CPT) codes indicating a test for active infection, specifically 87635, 87636, and 87637. The second secondary endpoint, COVID-19-related diagnosis, was assigned based on any medical service claim with the ICD-10 diagnosis code U07.1.
 
-## Statistical analysis
+### Statistical analysis
 
 Unadjusted analyses assessing the association between BP-use and COVID-19-related outcomes were performed for the primary analysis cohort using chi-square tests for categorical variables and calculation of the crude unadjusted odds ratio (OR) in the matched cohort groups overall, when stratified by region and in NY state alone, and when further stratified by age group and gender. Chi-square tests for categorical variables and t-tests for continuous variables were also performed to assess differences in demographic and clinical characteristics of BP users compared to BP non-users both pre-match and post-match to assess the success of the propensity-score match.
 
@@ -84,65 +84,898 @@ Multivariate logistic regression analyses, modelled separately to determine the 
 
 All tests were two-tailed, and p-values of less than 0.05 were considered significant. All analyses were performed using SAS 9.4 (Cary, NC).
 
-## Sensitivity analyses
+### Sensitivity analyses
 
 Multiple sensitivity analyses were performed to assess the reliability of the primary analysis results and/or to address potential unmeasured confounding (full details in Appendix 1).
 
 ## Results
 
-## Study population
+### Study population
 
 A total of 8,239,790 patients met the inclusion criterion of continuous medical and prescription insurance eligibility over the full study period, of which 333,107 were excluded due to missing demographic information, resulting in a total eligible sample of 7,906,603 patients (Figure 1B). Of this full population, 452,051 (5.7%) and 7,454,552 (94.3%) patients were classified as BP users and BP non-users, respectively. Within BP users, more than 99% were prescribed an amino-BP, with oral alendronic acid (75.4%), zoledronic acid infusion (11.5%), and oral ibandronic acid (8.4%) as the most prevalent formulations (Table 1).
 
+**Table 1.**
+ Most recent bisphosphonate claim among all users.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Drug (route)</th>
+      <th>N</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alendronate / alendronic acid (oral)</td>
+      <td>340,810</td>
+      <td>75.4%</td>
+    </tr>
+    <tr>
+      <td>Etidronate (oral)</td>
+      <td>14</td>
+      <td>0.0%</td>
+    </tr>
+    <tr>
+      <td>Ibandronate / ibandronic acid (oral)</td>
+      <td>37,988</td>
+      <td>8.4%</td>
+    </tr>
+    <tr>
+      <td>Ibandronic acid (injection/infusion)</td>
+      <td>1169</td>
+      <td>0.3%</td>
+    </tr>
+    <tr>
+      <td>Pamidronate (injection/infusion)</td>
+      <td>1121</td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>Risedronate (oral)</td>
+      <td>18,991</td>
+      <td>4.2%</td>
+    </tr>
+    <tr>
+      <td>Zoledronic acid (injection/infusion)</td>
+      <td>51,958</td>
+      <td>11.5%</td>
+    </tr>
+  </tbody>
+</table>
+
 Prior to propensity-score matching, there were significant differences between BP users and non-users across all demographic and clinical characteristics. BP users were older (age >60: 82.7% vs 27.7%; p<0.001), predominantly female (91.0% vs 57.2%; p<0.001), with a higher comorbidity burden (mean CCI 0.95 vs 0.60; p<0.001), with a larger proportion of patients residing in the Western U.S. (21.1% vs 15.4%; p<0.001), covered by Medicare (43.3% vs 13.7%; p<0.001), and having visited a PCP in 2019 (63.8% versus 44.7%; p<0.001). Propensity-score matching yielded 450,366 BP users and 450,366 BP non-users with no significant differences across all characteristics used in matching (Table 2). Differences did exist, however, in the distribution of individual comorbid condition indicators that were used as covariates in the regression analysis, with the BP non-user cohort having a higher proportion of patients with COPD (10.2% vs 8.5%; p<0.001), cardiovascular disease (25.1% vs 18.7%; p<0.001), dyslipidemia (36.9% vs 34.6%; p<0.001), hypertension (46.4% vs 38.8%; p<0.001), obesity (10.3% vs 6.7%; p<0.001), and type 2 diabetes (22.9% vs 18.2%; p<0.001). Over 98% of all BP user/non-user matches for the primary analysis cohort were completed with differences in matched propensity scores <0.000001 (overall mean difference of 0.000004, max difference of 0.0147).
+
+**Table 2.**
+ Primary analysis cohort (all regions), patient characteristics pre/post match.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="7">All Observations Unmatched</th>
+      <th colspan="7">All Observations Matched</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="2">All</td>
+      <td colspan="2">BP Non-users</td>
+      <td colspan="2">BP Users</td>
+      <td rowspan="2">p-value</td>
+      <td colspan="2">All</td>
+      <td colspan="2">BP Non-users</td>
+      <td colspan="2">BP Users</td>
+      <td rowspan="2">p-value</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>All Patients</td>
+      <td>7,906,603</td>
+      <td>100.00%</td>
+      <td>7,454,552</td>
+      <td>94.30%</td>
+      <td>452,051</td>
+      <td>5.70%</td>
+      <td></td>
+      <td>900,732</td>
+      <td>100.00%</td>
+      <td>450,366</td>
+      <td>50.00%</td>
+      <td>450,366</td>
+      <td>50.00%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="15">Demographics</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≤20</td>
+      <td>1,840,050</td>
+      <td>23.30%</td>
+      <td>1,838,922</td>
+      <td>24.70%</td>
+      <td>1,128</td>
+      <td>0.20%</td>
+      <td>&lt;0.001</td>
+      <td>2,253</td>
+      <td>0.30%</td>
+      <td>1,125</td>
+      <td>0.20%</td>
+      <td>1,128</td>
+      <td>0.30%</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>21-40</td>
+      <td>1,446,999</td>
+      <td>18.30%</td>
+      <td>1,443,908</td>
+      <td>19.40%</td>
+      <td>3,091</td>
+      <td>0.70%</td>
+      <td></td>
+      <td>6,195</td>
+      <td>0.70%</td>
+      <td>3,104</td>
+      <td>0.70%</td>
+      <td>3,091</td>
+      <td>0.70%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>41-50</td>
+      <td>925,309</td>
+      <td>11.70%</td>
+      <td>916,758</td>
+      <td>12.30%</td>
+      <td>8,551</td>
+      <td>1.90%</td>
+      <td></td>
+      <td>17,096</td>
+      <td>1.90%</td>
+      <td>8,545</td>
+      <td>1.90%</td>
+      <td>8,551</td>
+      <td>1.90%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>51-60</td>
+      <td>1,250,190</td>
+      <td>15.80%</td>
+      <td>1,184,469</td>
+      <td>15.90%</td>
+      <td>65,721</td>
+      <td>14.50%</td>
+      <td></td>
+      <td>131,445</td>
+      <td>14.60%</td>
+      <td>65,724</td>
+      <td>14.60%</td>
+      <td>65,721</td>
+      <td>14.60%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>61-70</td>
+      <td>1,181,261</td>
+      <td>14.90%</td>
+      <td>1,024,383</td>
+      <td>13.70%</td>
+      <td>156,878</td>
+      <td>34.70%</td>
+      <td></td>
+      <td>313,822</td>
+      <td>34.80%</td>
+      <td>156,944</td>
+      <td>34.80%</td>
+      <td>156,878</td>
+      <td>34.80%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>71-80</td>
+      <td>783,775</td>
+      <td>9.90%</td>
+      <td>642,050</td>
+      <td>8.60%</td>
+      <td>141,725</td>
+      <td>31.40%</td>
+      <td></td>
+      <td>280,803</td>
+      <td>31.20%</td>
+      <td>140,366</td>
+      <td>31.20%</td>
+      <td>140,437</td>
+      <td>31.20%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>≥81</td>
+      <td>479,019</td>
+      <td>6.10%</td>
+      <td>404,062</td>
+      <td>5.40%</td>
+      <td>74,957</td>
+      <td>16.60%</td>
+      <td></td>
+      <td>149,118</td>
+      <td>16.60%</td>
+      <td>74,558</td>
+      <td>16.60%</td>
+      <td>74,560</td>
+      <td>16.60%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>4,670,960</td>
+      <td>59.10%</td>
+      <td>4,263,524</td>
+      <td>57.20%</td>
+      <td>407,436</td>
+      <td>90.10%</td>
+      <td>&lt;0.001</td>
+      <td>811,497</td>
+      <td>90.10%</td>
+      <td>405,746</td>
+      <td>90.10%</td>
+      <td>405,751</td>
+      <td>90.10%</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>3,235,643</td>
+      <td>40.90%</td>
+      <td>3,191,028</td>
+      <td>42.80%</td>
+      <td>44,615</td>
+      <td>9.90%</td>
+      <td></td>
+      <td>89,235</td>
+      <td>9.90%</td>
+      <td>44,620</td>
+      <td>9.90%</td>
+      <td>44,615</td>
+      <td>9.90%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Region</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Midwest</td>
+      <td>1,467,802</td>
+      <td>18.60%</td>
+      <td>1,391,835</td>
+      <td>18.70%</td>
+      <td>75,967</td>
+      <td>16.80%</td>
+      <td>&lt;0.001</td>
+      <td>151,802</td>
+      <td>16.90%</td>
+      <td>75,901</td>
+      <td>16.90%</td>
+      <td>75,901</td>
+      <td>16.90%</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Northeast</td>
+      <td>2,152,560</td>
+      <td>27.20%</td>
+      <td>2,032,832</td>
+      <td>27.30%</td>
+      <td>119,728</td>
+      <td>26.50%</td>
+      <td></td>
+      <td>238,988</td>
+      <td>26.50%</td>
+      <td>119,494</td>
+      <td>26.50%</td>
+      <td>119,494</td>
+      <td>26.50%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>South</td>
+      <td>3,042,604</td>
+      <td>38.50%</td>
+      <td>2,881,718</td>
+      <td>38.70%</td>
+      <td>160,886</td>
+      <td>35.60%</td>
+      <td></td>
+      <td>319,408</td>
+      <td>35.50%</td>
+      <td>159,704</td>
+      <td>35.50%</td>
+      <td>159,704</td>
+      <td>35.50%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>West</td>
+      <td>1,243,637</td>
+      <td>15.70%</td>
+      <td>1,148,167</td>
+      <td>15.40%</td>
+      <td>95,470</td>
+      <td>21.10%</td>
+      <td></td>
+      <td>190,534</td>
+      <td>21.20%</td>
+      <td>95,267</td>
+      <td>21.20%</td>
+      <td>95,267</td>
+      <td>21.20%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Insurance</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial</td>
+      <td>3,938,603</td>
+      <td>49.80%</td>
+      <td>3,791,545</td>
+      <td>50.90%</td>
+      <td>147,058</td>
+      <td>32.50%</td>
+      <td>&lt;0.001</td>
+      <td>294,070</td>
+      <td>32.60%</td>
+      <td>147,012</td>
+      <td>32.60%</td>
+      <td>147,058</td>
+      <td>32.70%</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Dual</td>
+      <td>156,497</td>
+      <td>2.00%</td>
+      <td>125,090</td>
+      <td>1.70%</td>
+      <td>31,407</td>
+      <td>6.90%</td>
+      <td></td>
+      <td>59,936</td>
+      <td>6.70%</td>
+      <td>29,980</td>
+      <td>6.70%</td>
+      <td>29,956</td>
+      <td>6.70%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medicaid</td>
+      <td>2,594,500</td>
+      <td>32.80%</td>
+      <td>2,517,020</td>
+      <td>33.80%</td>
+      <td>77,480</td>
+      <td>17.10%</td>
+      <td></td>
+      <td>154,519</td>
+      <td>17.20%</td>
+      <td>77,272</td>
+      <td>17.20%</td>
+      <td>77,247</td>
+      <td>17.20%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medicare</td>
+      <td>1,217,003</td>
+      <td>15.40%</td>
+      <td>1,020,897</td>
+      <td>13.70%</td>
+      <td>196,106</td>
+      <td>43.40%</td>
+      <td></td>
+      <td>392,207</td>
+      <td>43.50%</td>
+      <td>196,102</td>
+      <td>43.50%</td>
+      <td>196,105</td>
+      <td>43.50%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PCP Visit 2019</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No</td>
+      <td>4,283,697</td>
+      <td>54.20%</td>
+      <td>4,119,831</td>
+      <td>55.30%</td>
+      <td>163,866</td>
+      <td>36.20%</td>
+      <td>&lt;0.001</td>
+      <td>327,383</td>
+      <td>36.30%</td>
+      <td>163,659</td>
+      <td>36.30%</td>
+      <td>163,724</td>
+      <td>36.40%</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>Yes</td>
+      <td>3,622,906</td>
+      <td>45.80%</td>
+      <td>3,334,721</td>
+      <td>44.70%</td>
+      <td>288,185</td>
+      <td>63.80%</td>
+      <td></td>
+      <td>573,349</td>
+      <td>63.70%</td>
+      <td>286,707</td>
+      <td>63.70%</td>
+      <td>286,642</td>
+      <td>63.60%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="15">Clinical Characteristics</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>p-value</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>mean</td>
+      <td>SD</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>CCI</td>
+      <td>0.62</td>
+      <td>1.38</td>
+      <td>0.6</td>
+      <td>1.35</td>
+      <td>0.95</td>
+      <td>1.76</td>
+      <td>&lt;0.001</td>
+      <td>0.95</td>
+      <td>1.76</td>
+      <td>0.95</td>
+      <td>1.76</td>
+      <td>0.95</td>
+      <td>1.76</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td colspan="15">Regression Comorbidity Covariates</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>p-value</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>N</td>
+      <td>%</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Osteoporosis</td>
+      <td>267,020</td>
+      <td>3.40%</td>
+      <td>135,231</td>
+      <td>1.80%</td>
+      <td>131,789</td>
+      <td>29.20%</td>
+      <td>&lt;0.001</td>
+      <td>163,814</td>
+      <td>18.20%</td>
+      <td>32,390</td>
+      <td>7.20%</td>
+      <td>131,424</td>
+      <td>29.20%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Cancer</td>
+      <td>419,083</td>
+      <td>5.30%</td>
+      <td>366,786</td>
+      <td>4.90%</td>
+      <td>52,297</td>
+      <td>11.60%</td>
+      <td>&lt;0.001</td>
+      <td>94,148</td>
+      <td>10.50%</td>
+      <td>41,861</td>
+      <td>9.30%</td>
+      <td>52,287</td>
+      <td>11.60%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>CKD/ESRD</td>
+      <td>361,451</td>
+      <td>4.60%</td>
+      <td>328,633</td>
+      <td>4.40%</td>
+      <td>32,818</td>
+      <td>7.30%</td>
+      <td>&lt;0.001</td>
+      <td>68,999</td>
+      <td>7.70%</td>
+      <td>36,182</td>
+      <td>8.00%</td>
+      <td>32,817</td>
+      <td>7.30%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>466,094</td>
+      <td>5.90%</td>
+      <td>427,850</td>
+      <td>5.70%</td>
+      <td>38,244</td>
+      <td>8.50%</td>
+      <td>&lt;0.001</td>
+      <td>84,234</td>
+      <td>9.40%</td>
+      <td>45,990</td>
+      <td>10.20%</td>
+      <td>38,244</td>
+      <td>8.50%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>CVD</td>
+      <td>1,084,031</td>
+      <td>13.70%</td>
+      <td>999,526</td>
+      <td>13.40%</td>
+      <td>84,505</td>
+      <td>18.70%</td>
+      <td>&lt;0.001</td>
+      <td>197,243</td>
+      <td>21.90%</td>
+      <td>112,933</td>
+      <td>25.10%</td>
+      <td>84,310</td>
+      <td>18.70%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Dementia</td>
+      <td>125,811</td>
+      <td>1.60%</td>
+      <td>113,778</td>
+      <td>1.50%</td>
+      <td>12,033</td>
+      <td>2.70%</td>
+      <td>&lt;0.001</td>
+      <td>24,921</td>
+      <td>2.80%</td>
+      <td>12,889</td>
+      <td>2.90%</td>
+      <td>12,032</td>
+      <td>2.70%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Depression</td>
+      <td>571,303</td>
+      <td>7.20%</td>
+      <td>531,355</td>
+      <td>7.10%</td>
+      <td>39,948</td>
+      <td>8.80%</td>
+      <td>&lt;0.001</td>
+      <td>86,280</td>
+      <td>9.60%</td>
+      <td>46,431</td>
+      <td>10.30%</td>
+      <td>39,849</td>
+      <td>8.80%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Dyslipidemia</td>
+      <td>1,532,254</td>
+      <td>19.40%</td>
+      <td>1,375,920</td>
+      <td>18.50%</td>
+      <td>156,334</td>
+      <td>34.60%</td>
+      <td>&lt;0.001</td>
+      <td>322,125</td>
+      <td>35.80%</td>
+      <td>166,360</td>
+      <td>36.90%</td>
+      <td>155,765</td>
+      <td>34.60%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>HIV/AIDS</td>
+      <td>33,229</td>
+      <td>0.40%</td>
+      <td>31,711</td>
+      <td>0.40%</td>
+      <td>1518</td>
+      <td>0.30%</td>
+      <td>&lt;0.001</td>
+      <td>2897</td>
+      <td>0.30%</td>
+      <td>1379</td>
+      <td>0.30%</td>
+      <td>1,518</td>
+      <td>0.30%</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>1,899,063</td>
+      <td>24.00%</td>
+      <td>1,723,519</td>
+      <td>23.10%</td>
+      <td>175,544</td>
+      <td>38.80%</td>
+      <td>&lt;0.001</td>
+      <td>384,059</td>
+      <td>42.60%</td>
+      <td>209,184</td>
+      <td>46.40%</td>
+      <td>174,875</td>
+      <td>38.80%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Liver Disease</td>
+      <td>251,331</td>
+      <td>3.20%</td>
+      <td>231,664</td>
+      <td>3.10%</td>
+      <td>19,667</td>
+      <td>4.40%</td>
+      <td>&lt;0.001</td>
+      <td>38,697</td>
+      <td>4.30%</td>
+      <td>19,031</td>
+      <td>4.20%</td>
+      <td>19,666</td>
+      <td>4.40%</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>Obesity</td>
+      <td>638,506</td>
+      <td>8.10%</td>
+      <td>608,083</td>
+      <td>8.20%</td>
+      <td>30,423</td>
+      <td>6.70%</td>
+      <td>&lt;0.001</td>
+      <td>76,844</td>
+      <td>8.50%</td>
+      <td>46,498</td>
+      <td>10.30%</td>
+      <td>30,346</td>
+      <td>6.70%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Sickle Cell Anemia</td>
+      <td>10,499</td>
+      <td>0.10%</td>
+      <td>10,292</td>
+      <td>0.10%</td>
+      <td>207</td>
+      <td>0.00%</td>
+      <td>&lt;0.001</td>
+      <td>422</td>
+      <td>0.00%</td>
+      <td>215</td>
+      <td>0.00%</td>
+      <td>207</td>
+      <td>0.00%</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Stroke</td>
+      <td>104,859</td>
+      <td>1.30%</td>
+      <td>97,001</td>
+      <td>1.30%</td>
+      <td>7,858</td>
+      <td>1.70%</td>
+      <td>&lt;0.001</td>
+      <td>19,395</td>
+      <td>2.20%</td>
+      <td>11,569</td>
+      <td>2.60%</td>
+      <td>7,826</td>
+      <td>1.70%</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Type 2 Diabetes</td>
+      <td>978,239</td>
+      <td>12.40%</td>
+      <td>895,983</td>
+      <td>12.00%</td>
+      <td>82,256</td>
+      <td>18.20%</td>
+      <td>&lt;0.001</td>
+      <td>184,978</td>
+      <td>20.50%</td>
+      <td>103,031</td>
+      <td>22.90%</td>
+      <td>81,947</td>
+      <td>18.20%</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
 
 Similar profiles in pre-match versus post-match characteristics were seen when patients were stratified by region or restricted to NY-state (Appendix 2—tables 1–3, Appendix 2—table 4, Appendix 2—table 5). Demographic distributions, including differences between BP user versus BP non-user characteristics pre-match versus post-match characteristics were seens pre- and post-matching for all sensitivity analysis cohorts are detailed in Appendix 2.
 
-## BP use and COVID-19-related outcomes
+### BP use and COVID-19-related outcomes
 
 Among the full matched cohort, BP users had significantly lower rates and unadjusted (crude) odds of testing (1.2% vs 5.1%; OR = 0.22; 95%CI:0.21–0.22; p<0.001), diagnosis (0.7% vs 2.9%; OR = 0.22; 95%CI:0.21–0.23; p<0.001), and hospitalization (0.2% vs 0.7%; OR = 0.24; 95%CI:0.22–0.26; p<0.001) as compared to BP non-users (Figure 2 and Appendix 3—figure 1). Consistent findings were seen when sub-stratifying the full matched cohort by age, gender, age*gender, within grouped regions, by individual region, and in NY-state alone (Appendix 2—tables 6–11).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79548/elife-79548-fig2-v2.jpg)
 
-**Figure 2.:** For details see Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** For details see Figure 2—source data 1.
 
 Multivariate regression analyses yielded similar results for all outcomes while additionally controlling for patient demographic and comorbidity characteristics. In the full matched cohort, BP users had lower adjusted odds of testing (OR = 0.22; 95%CI:0.21–0.23; p<0.001), diagnosis (OR = 0.23; 95%CI:0.22–0.24; p<0.001), and hospitalizations (OR = 0.26; 95%CI:0.24–0.29; p<0.001). These findings were robust when comparing BP users with BP non-users when stratified by geographic region or NY-state alone.
 
-## Timing of last BP exposure and COVID-19-related outcomes
+### Timing of last BP exposure and COVID-19-related outcomes
 
 The above results demonstrate that any BP exposure during the 14-months pre-observation period is associated with a marked reduction in each of the three COVID-19-related outcomes. To further investigate the relationship between COVID-19-related outcomes and the timing of BP exposure, we focused on the two most commonly prescribed BPs, alendronic acid (oral formulation dosed daily or weekly) and zoledronic acid (infusion dosed annually). For each BP type, COVID-19-related outcomes were assessed among users: (i-ii) with exposure or days covered (based on prescription frequency) during the pre-observation period and throughout the observation period; (iii-iv) with exposure or days covered ending prior to the observation period; and (v-vi) newly initiating therapy prior to the observation period (Figure 3A). Furthermore, all subgroups of BP users had decreased odds of COVID-19-related outcomes (Figure 3B) except for the odds of hospitalization among zoledronic acid users who were last dosed in January/February of 2019 (OR = 0.52; 95%CI:0.20–1.40; p=0.20) or newly initiated in February of 2020 (OR = 0.49; 95%CI:0.13–1.88; p=0.30).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79548/elife-79548-fig3-v2.jpg)
 
-**Figure 3.:** (A) Schematic of BP user sub-stratification by timing of exposure to alendronic acid or zoledronic acid prior to outcome assessment. Broken lines represent periods of active BP dosing. For zoledronic acid users, days covered was considered to extend 1 year past the dosing period based on dosing guidelines. (B) Incidence (left) and regression-adjusted results (right) for odds of SARS-CoV-2 testing, COVID-19 diagnosis, and COVID-19-related hospitalizations of BP users compared with BP non-users in pre-specified subgroups. For further details see Figure 3—source data 1. CI: confidence interval; OR: odds ratio.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic of BP user sub-stratification by timing of exposure to alendronic acid or zoledronic acid prior to outcome assessment. Broken lines represent periods of active BP dosing. For zoledronic acid users, days covered was considered to extend 1 year past the dosing period based on dosing guidelines. (B) Incidence (left) and regression-adjusted results (right) for odds of SARS-CoV-2 testing, COVID-19 diagnosis, and COVID-19-related hospitalizations of BP users compared with BP non-users in pre-specified subgroups. For further details see Figure 3—source data 1. CI: confidence interval; OR: odds ratio.
 
-## Sensitivity analysis 1: COVID-19-related outcomes among all users of anti-resorptive medications (‘Bone-Rx’ cohort)
+### Sensitivity analysis 1: COVID-19-related outcomes among all users of anti-resorptive medications (‘Bone-Rx’ cohort)
 
 The first sensitivity analysis was performed to address potential confounding by indication. To validate our primary findings in more comparable cohorts, analysis was restricted to comparing BP users to patients using non-BP anti-resorptive bone medications during the pre-observation period. Compared to non-BP users of anti-resorptive medications, BP users had decreased odds of testing (OR = 0.31; 95%CI:0.28–0.33; p<0.001), diagnosis (OR = 0.35; 95%CI:0.31–0.38; p<0.001), and hospitalization (OR = 0.45; 95%CI:0.36–0.56; p<0.001) (Figure 4A and Appendix 3—figure 2). Furthermore, these findings were robust when assessed separately across every geographic region as well as NY state for all outcomes except hospitalizations when restricted to the Western U.S. (p=0.08; Appendix 2—table 12).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/79548/elife-79548-fig4-v2.jpg)
 
-**Figure 4.:** Incidence and forest plots summarizing regression-adjusted odds ratios of SARS-CoV-2 testing (blue), COVID-19 diagnosis (purple), and COVID-19-related hospitalizations (red) in the (A) ‘Bone-Rx’ (see also Figure 4—source data 1) and (B) ‘Osteo-Dx-Rx’ sensitivity analysis cohorts (see also Figure 4—source data 2).Figure 4—source data 1.Figure 4A: Bone-Rx cohort COVID-19-related outcomes.Figure 4—source data 2.Figure 4B: Osteo-Dx-Rx cohort COVID-19-related outcomes.
+**Figure 4.:** Incidence and forest plots summarizing regression-adjusted odds ratios of SARS-CoV-2 testing (blue), COVID-19 diagnosis (purple), and COVID-19-related hospitalizations (red) in the (A) ‘Bone-Rx’ (see also Figure 4—source data 1) and (B) ‘Osteo-Dx-Rx’ sensitivity analysis cohorts (see also Figure 4—source data 2).
 
-## Sensitivity analysis 2: COVID-19-related outcomes among users of anti-resorptive medications with a diagnosis of osteoporosis (‘Osteo-Dx-Rx’ cohort)
+### Sensitivity analysis 2: COVID-19-related outcomes among users of anti-resorptive medications with a diagnosis of osteoporosis (‘Osteo-Dx-Rx’ cohort)
 
 The second sensitivity analysis was performed to address the fact that, even after restricting the comparator cohort to users of anti-resorptive medications, differences may still exist between patient cohorts that could affect COVID-19-related outcomes, including different indications for anti-resorptive medication use and other uncontrolled patient characteristics. To address this, the association between BP use and COVID-19 related outcomes were examined in a cohort restricted to female patients over 50 years old, with a diagnosis of osteoporosis, using either a BP or a non-BP anti-resorptive bone medication, matched within insurance-type as a proxy for socioeconomic status, and selected from four states (NY, IL, FL, CA) with high incidences of COVID-19 cases during the observation period (CDC, 2021a; ‘Osteo-Dx-Rx’ cohort). In agreement with the results reported above, the decrease in odds of COVID-19-related outcomes in BP users remained robust for testing (OR = 0.28; 95%CI:0.23–0.35; p<0.001), diagnosis (OR = 0.40; 95%CI:0.32–0.49; p<0.001), and hospitalizations (OR = 0.45; 95%CI:0.26–0.75; p=0.003) (Figure 4B).
 
-## Sensitivity analysis 3: Association of BP-use with exploratory positive control outcomes
+### Sensitivity analysis 3: Association of BP-use with exploratory positive control outcomes
 
 The third sensitivity analysis was performed to assess if there is an association between BP-use and incidence of other respiratory infections, which has been previously reported (Sing et al., 2020). Medical services for acute bronchitis or pneumonia were measured during the second half of 2019, prior to the advent of COVID-19, in the primary, ‘Bone-Rx’, and ‘Osteo-Dx-Rx’ cohorts. Regression modelling found that, among all cohort variations modelled, BP users had a decreased odds of any medical service related to acute bronchitis (point estimates of ORs ranged from 0.23 to 0.28) and pneumonia (point estimates of ORs ranged from 0.32 to 0.36) (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/79548/elife-79548-fig5-v2.jpg)
 
-**Figure 5.:** Incidence and adjusted odds ratios of other respiratory infections, in the primary, ‘Bone-Rx’, and ‘Osteo-Dx-Rx’ cohorts. For details, see Figure 5—source data 1. CI: confidence interval; OR: odds ratio.Figure 5—source data 1.
+**Figure 5.:** Incidence and adjusted odds ratios of other respiratory infections, in the primary, ‘Bone-Rx’, and ‘Osteo-Dx-Rx’ cohorts. For details, see Figure 5—source data 1. CI: confidence interval; OR: odds ratio.
 
-## Sensitivity analysis 4: Association of other preventive drugs with COVID-19-related outcomes
+### Sensitivity analysis 4: Association of other preventive drugs with COVID-19-related outcomes
 
 A potential pitfall in the interpretation of apparent effects of preventive medications on health outcomes is the so-called healthy adherer effect, whereby patients may have better outcomes due to their overall healthier behaviours and not due to active drug treatment itself (Ladova et al., 2014). To address this possibility of unmeasured confounding, a final sensitivity analysis was performed to evaluate the association between control exposures (i.e. use of other preventive medications such as statins, antihypertensives, antidiabetics, and antidepressants) and COVID-19-related outcomes (Figure 6A). In comparison to BPs, the impact of other preventive drug classes on COVID-19-related outcomes was much weaker overall (Figure 6B–E) and varied between geographic regions in terms of magnitude or direction (Appendix 2—tables 13–16). Furthermore, when assessing the impact of BP-use within matched user/non-user preventive drug cohorts (e.g. BP users compared to BP non-users among the matched statin user and statin non-user populations), we found BP-use to be consistently associated with lower odds of testing (point estimates of ORs ranged from 0.21 to 0.27), diagnosis (point estimates of ORs ranged from 0.22 to 0.30), and hospitalizations (point estimates of ORs ranged from 0.25 to 0.33) across all stratified preventive user/non-user cohorts (Figure 6B–E).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/79548/elife-79548-fig6-v2.jpg)
 
-**Figure 6.:** (A). Schematic illustrating the identification of study populations and matched controls for each drug class. (B–E) Incidence and adjusted odds ratios of SARS-CoV-2 testing (blue), COVID-19 diagnosis (purple), and COVID-19-related hospitalizations (red) in users and non-users of (B) statins (see also Figure 6—source data 1), (C) antihypertensive medications (see also Figure 6—source data 2), (D) non-insulin antidiabetic medications (see also Figure 6—source data 3), and (E) antidepressant medications (see also Figure 6—source data 4). For each class of preventive medications, further analysis was performed comparing BP users and BP non-users within matched cohorts of medication users (middle) and medication non-users (bottom). BP: bisphosphonate; CCI: Charlson comorbidity index; CI: confidence interval; COPD: chronic obstructive pulmonary disease; OR: odds ratio; PCP: primary care physician; PS: propensity score; PSM: propensity score match.Figure 6—source data 1.Figure 6B: COVID-19-related outcomes by statin use overall & sub-stratified by BP use.Figure 6—source data 2.Figure 6C: COVID-19-related outcomes by antihypertensive use overall & sub-stratified by BP use.Figure 6—source data 3.Figure 6D: COVID-19-related outcomes by antidiabetic use overall & sub-stratified by BP use.Figure 6—source data 4.Figure 6E: COVID-19-related outcomes by antidepressant use overall & sub-stratified by BP use.
+**Figure 6.:** (A). Schematic illustrating the identification of study populations and matched controls for each drug class. (B–E) Incidence and adjusted odds ratios of SARS-CoV-2 testing (blue), COVID-19 diagnosis (purple), and COVID-19-related hospitalizations (red) in users and non-users of (B) statins (see also Figure 6—source data 1), (C) antihypertensive medications (see also Figure 6—source data 2), (D) non-insulin antidiabetic medications (see also Figure 6—source data 3), and (E) antidepressant medications (see also Figure 6—source data 4). For each class of preventive medications, further analysis was performed comparing BP users and BP non-users within matched cohorts of medication users (middle) and medication non-users (bottom). BP: bisphosphonate; CCI: Charlson comorbidity index; CI: confidence interval; COPD: chronic obstructive pulmonary disease; OR: odds ratio; PCP: primary care physician; PS: propensity score; PSM: propensity score match.
 
 ## Discussion
 

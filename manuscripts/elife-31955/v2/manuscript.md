@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.31955.001 The complete assembly of viral genomes from metagenomic datasets (short genomic sequences gathered from environmental samples) has proven to be challenging, so there are significant blind spots when we view viral genomes through the lens of metagenomics. One approach to overcoming this problem is to leverage the thousands of complete viral genomes that are publicly available. Here we describe our efforts to assemble a comprehensive resource that provides a quantitative snapshot of viral genomic trends – such as gene density, noncoding percentage, and abundances of functional gene categories – across thousands of viral genomes. We have also developed a coarse-grained method for visualizing viral genome organization for hundreds of genomes at once, and have explored the extent of the overlap between bacterial and bacteriophage gene pools. Existing viral classification systems were developed prior to the sequencing era, so we present our analysis in a way that allows us to assess the utility of the different classification systems for capturing genomic trends.
+The complete assembly of viral genomes from metagenomic datasets (short genomic sequences gathered from environmental samples) has proven to be challenging, so there are significant blind spots when we view viral genomes through the lens of metagenomics. One approach to overcoming this problem is to leverage the thousands of complete viral genomes that are publicly available. Here we describe our efforts to assemble a comprehensive resource that provides a quantitative snapshot of viral genomic trends – such as gene density, noncoding percentage, and abundances of functional gene categories – across thousands of viral genomes. We have also developed a coarse-grained method for visualizing viral genome organization for hundreds of genomes at once, and have explored the extent of the overlap between bacterial and bacteriophage gene pools. Existing viral classification systems were developed prior to the sequencing era, so we present our analysis in a way that allows us to assess the utility of the different classification systems for capturing genomic trends.
 
 ## Introduction
 
@@ -40,11 +40,11 @@ Although many viruses are uncharacterized, at the time of the analysis of the da
 
 Without complete viral genomes, it would be difficult to develop systematic understanding of key aspects of viral genomic architecture. To address this problem at least in part, we set out to provide a large-scale analysis of various genomic metrics measured from existing complete viral genomes. To perform a comprehensive analysis, we first explored the diversity of known viruses and their hosts within the NCBI database (see Materials and methods). We then created distributions on a number of metrics, namely genome length, gene length, gene density, percentage of noncoding DNA (or RNA), functional gene category abundances, and gene order. We have provided brief introductions to these metrics in the following subsections.
 
-## Viral genome length, gene length and gene density
+### Viral genome length, gene length and gene density
 
 Genomes are replete with information about an organism’s past and present. A central and revealing piece of information is the genome length. As more and more complete genomes have become available, we have learned that genome lengths of cellular organisms vary quite extensively, specifically by six orders of magnitude (Phillips et al., 2012; Alberts et al., 2002). Because these studies focused on cellular organisms, and because genome length information is generally inaccessible through metagenomic studies, large-scale analyses that systematically capture viral genome length distributions in light of different classification systems and in relation to other genomic parameters are lacking. One such genomic parameter is the number of genes that are encoded per genome, also referred to as gene density (Keller and Feuillet, 2000; Hou et al., 2012). Another set of missing distributions involves gene lengths, and here too, it is important to see how they vary across different viral classification categories.
 
-## The noncoding percentages of viral genomes
+### The noncoding percentages of viral genomes
 
 One of the most surprising discoveries of the past several decades was the rich and enormous diversity of noncoding DNA in the human genome (Elgar and Vavouri, 2008). Though originally thought of as “junk DNA”, the noncoding regions of our genomes were later shown to be of great functional importance. Noncoding DNA is an umbrella term for very different elements, for example functional RNAs such as micro RNAs (miRNA), regulatory elements such as promoters and enhancers, as well as transposons and pseudogenes.
 
@@ -52,19 +52,27 @@ Moreover, genomes vary widely in their noncoding percentages. While multicellula
 
 The literature on viral noncoding DNA or RNA is relatively sparse but highly intriguing. The first viral noncoding RNAs were discovered in adenoviruses, dsDNA viruses that infect humans, and were ~160 base pairs long (Reich et al., 1966; Tycowski et al., 2015; Steitz et al., 2011). These sequences were shown responsible for viral evasion of host immunity by inhibition of protein kinase R- a cellular protein responsible for the inactivation of viral protein synthesis (Mathews and Shenk, 1991). In ovine herpesvirus, miRNAs have been shown to maintain viral latency (Riaz et al., 2014). These are just several examples in which viral noncoding elements have been shown to enable viral escape from host immunity, as well as regulate viral life-cycle and viral persistence (Tycowski et al., 2015). Despite many interesting studies exploring the topic of cellular noncoding DNA (Mattick and Makunin, 2006; Morris, 2012; Mattick, 2004), there are no studies, to our knowledge, that reveal the statistics of noncoding percentage of viral genomes.
 
-## Viral functional gene categories
+### Viral functional gene categories
 
 There are detailed studies on the counts of cellular genes belonging to each broad functional category (Molina and van Nimwegen, 2009; Grilli et al., 2012). These studies have helped us better understand the scaling of functional categories across different clades of organisms. In fact there was an intriguing conclusion that for prokaryotic genomes, there exists a universal organization which governs the relative number of genes in each category (Molina and van Nimwegen, 2009). Such depictions of viral genomes, however, are largely lacking. Thus, we set out to better understand how viral genes are distributed across different functional categories and how these distributions might differ across various viral groups.
 
-## Viral genome organization
+### Viral genome organization
 
 Viral genome organization is a topic that has great depth but limited breadth. There exist highly detailed genome-wide diagrams that illustrate the location, direction, and predicted function of viral genes, which are then compared to similar illustrations from a small number of viral genomes (Labonté et al., 2015; Casjens et al., 2005; Marinelli et al., 2012; Brüssow and Hendrix, 2002). While this highly detailed approach is indispensible for studying individual viruses, a simplified illustration of genome organization is a requirement of any high-throughput visualization and comparison of genomes. The latter approach could help us uncover general rules governing genomic organization, in the same way that synteny, or conserved gene order, has been used to compare animal genomes (Telford and Copley, 2011; Jaillon et al., 2004) and genomes of RNA viruses infecting invertebrates (Shi et al., 2016).
 
 ## Results
 
-## Exploring the NCBI viral database
+### Exploring the NCBI viral database
 
 We used the largest available dataset of completed viral genomes available from the National Center for Biotechnology Information (NCBI) viral genomes resource (Brister et al., 2015), containing a total of 4,378 complete viral genomes at the time of data acquisition (August, 2015). After implementing several manual and programmed steps towards curating the data, a total of 2,399 viruses (excluding satellite viruses) could be associated with a host using NCBI’s documentation (see Materials and methods). These viruses were included for further analysis, and unless noted otherwise, will constitute our dataset in this study. By examining these viruses through different classifications (Figure 2), it is clear that they are largely DNA viruses (Figure 2B4), and more specifically, they are primarily double-stranded DNA (dsDNA) viruses (Figure 2C4). This is in contrast to the RNA viruses in this database, which are mostly single-stranded (Figure 2B4 and Figure 2C4).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig2-v2.jpg)
+
+**Figure 2.:** (A) Percentage of viruses infecting hosts from the three domains of life. 1) Eukaryotic, 2) bacterial and 3) archaeal viromes are further classified according to the (B) Nucleotide Type, (C) Baltimore, and D) ICTV classification systems. (E) Distributions of host phyla (or supergroups) infected by the (1) eukaryotic, (2) bacterial, and (3) archaeal viruses is shown. As in the case of panel F, the host taxonomic identification is derived from the NCBI Taxonomy database (see Materials and methods). (F) Histograms of the number of known viruses infecting host species. Median and mean number of viruses infecting a host species is provided in each plot. The full-range of x-values for the bacterial and eukaryotic histograms extends beyond n=20 (see virusHostHistograms.ipynb in our GitHub repository [Mahmoudabadi, 2018]). Further exploration of the largest fraction of the eukaryotic virome (i.e. animal viruses) is shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The x-axis corresponds to the number of viruses infecting each host group. In a recursive fashion, the host group with the largest number of known viruses is further zoomed in on (host groups infected by only a few known viruses are not shown). The host classification was obtained from the NCBI taxonomic database.
 
 We further observed that eukaryotes host nearly an equal number of DNA and RNA viruses (Figure 2B1). In contrast to prokaryotes, which are predominantly host to viruses with double-stranded genomes, eukaryotes are host to a higher number of viruses with single-stranded genomes. Why are double-stranded DNA viruses, despite their high prevalence in the bacterial and archaeal world, only the third largest group of viruses infecting eukaryotes in this database? One explanation proposed is the physical separation of transcriptional processes from the cytoplasm by way of the eukaryotic nucleus (Koonin et al., 2015). This physical separation is thought to impose an additional barrier for DNA viruses in gaining access to the host’s transcriptional environment.
 
@@ -74,9 +82,208 @@ Before any further exploration of this dataset, we aimed to assess its diversity
 
 We continued to explore host diversity at a finer resolution and mapped out the number of viruses that infect each host species (Figure 2F). As expected, organisms such as Staphylococcus aureus, Escherichia coli, and Solanum lycopersicum, which are host species with either medical, research or agricultural relevance, have many known viruses and are outliers in the skewed distributions shown in Figure 2F. However, the median number of viruses known to infect a eukaryotic or a prokaryotic host species is approximately 1 (Figure 2F). This signifies that even for host species that are already represented in our collection, the number of known viruses is likely an underestimate considering the larger numbers of viruses known to infect the more heavily studied host species.
 
-## Viral genome lengths, gene lengths, gene densities
+### Viral genome lengths, gene lengths, gene densities
 
 Genome lengths for all fully sequenced viral genomes varied widely by three orders of magnitude (Figure 3A, Table 1). According to the Host Domain classification, prokaryotic viruses tend to have longer genomes than eukaryotic viruses (Figure 3—source data 1, Figure 3—figure supplement 1). However, this difference can be better explained by the Nucleotide Type classification, as the median RNA virus genome length is four times shorter than the median DNA virus genome length. Thus, the comparison between prokaryotic and eukaryotic viral genome lengths is confounded by the fact that the prokaryotic virome, as represented by this database, is primarily composed of DNA viruses, whereas the eukaryotic virome is only half comprised of DNA viruses (Figure 2C4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig3-v2.jpg)
+
+**Figure 3.:** (A) Box plots of genome lengths (Log10) across all viruses included in our dataset (top), further partitioned based on the Baltimore classification categories (bottom). The number of viruses included in each group is denoted by N. (B) A closer examination of dsDNA and ssDNA viral genome lengths through the overlay of Host Domain and ICTV classification systems. Distributions of genome lengths associated with eukaryotic, bacterial and archaeal viruses are shown in salmon, blue, and teal, respectively. ICTV viral families with only a few members are omitted. Distributions of genome lengths across different classification systems along with various statistics are shown in Figure 3—figure supplement 1. and Figure 3—source data 1. Note that the bimodal distribution of eukaryotic ssDNA viruses, which also appears in the next figure, arises from the Begomoviruses, which are plant viruses with circularized monopartite and bipartite genomes (Melgarejo et al., 2013). (C) Median gene length is plotted against the number of genes for each genome for all genomes in our dataset, color-coded according to different classification systems. (D) Number of genes per genome length (gene density) for dsDNA viruses based on the overlay of Host Domain (bottom) and ICTV family classification categories (top) (Pearson correlations and their statistical significance, two-tailed t-test P values, are denoted).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Histograms are grouped according to four viral classification systems: (A) Baltimore classification, (B) Nucleotide type classification, (C) Host Domain Classification, and D) ICTV classification. Instead of showing absolute viral counts on the y-axis, the counts are normalized by the total number of viruses in each viral category (the total counts of viruses in each category is denoted as N inside the plots). The mean of each distribution is denoted as a dot on the boxplots. The relevant statistics for each distribution is provided in Figure 3—source data 1. In each histogram the number of bins and their width is set by Freedman-Diaconis rule (Reich et al., 1966).
+
+**Table 1.**
+ Viral genomic statistics based upon different classification systems.Only median values are reported in this table. Genome length data is rounded to the nearest kilobase. N corresponds to the number of viruses from which data is obtained.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Classification</th>
+      <th>N</th>
+      <th>Genome length (kb)</th>
+      <th>Percent noncoding (DNA/RNA)</th>
+      <th>Median gene length (bases)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Host Domain</td>
+      <td>Eukaryotic Viruses</td>
+      <td>1384</td>
+      <td>8</td>
+      <td>10</td>
+      <td>1055</td>
+    </tr>
+    <tr>
+      <td>Bacteria Viruses</td>
+      <td>969</td>
+      <td>43</td>
+      <td>9</td>
+      <td>408</td>
+    </tr>
+    <tr>
+      <td>Archaea Viruses</td>
+      <td>46</td>
+      <td>24</td>
+      <td>10</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Baltimore</td>
+      <td>Group I (dsDNA)</td>
+      <td>1211</td>
+      <td>44</td>
+      <td>9</td>
+      <td>429</td>
+    </tr>
+    <tr>
+      <td>Group II (ssDNA)</td>
+      <td>431</td>
+      <td>3</td>
+      <td>14</td>
+      <td>588</td>
+    </tr>
+    <tr>
+      <td>Group III (dsRNA)</td>
+      <td>123</td>
+      <td>8</td>
+      <td>8</td>
+      <td>2291</td>
+    </tr>
+    <tr>
+      <td>Group IV (+ssRNA)</td>
+      <td>482</td>
+      <td>9</td>
+      <td>5</td>
+      <td>2366</td>
+    </tr>
+    <tr>
+      <td>Group V (-ssRNA)</td>
+      <td>101</td>
+      <td>12</td>
+      <td>7</td>
+      <td>1353</td>
+    </tr>
+    <tr>
+      <td>Group VI (ssRNA-RT)</td>
+      <td>14</td>
+      <td>8</td>
+      <td>16</td>
+      <td>1799</td>
+    </tr>
+    <tr>
+      <td>Group VII (dsDNA-RT)</td>
+      <td>37</td>
+      <td>8</td>
+      <td>11</td>
+      <td>558</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Nucleotide Type</td>
+      <td>DNA Viruses</td>
+      <td>1679</td>
+      <td>38</td>
+      <td>10</td>
+      <td>444</td>
+    </tr>
+    <tr>
+      <td>RNA Viruses</td>
+      <td>720</td>
+      <td>9</td>
+      <td>6</td>
+      <td>2072</td>
+    </tr>
+    <tr>
+      <td rowspan="7">ICTV (orders)</td>
+      <td>Caudovirales</td>
+      <td>879</td>
+      <td>44</td>
+      <td>9</td>
+      <td>408</td>
+    </tr>
+    <tr>
+      <td>Herpesvirales</td>
+      <td>55</td>
+      <td>159</td>
+      <td>19</td>
+      <td>1107</td>
+    </tr>
+    <tr>
+      <td>Ligamenvirales</td>
+      <td>11</td>
+      <td>37</td>
+      <td>12</td>
+      <td>372</td>
+    </tr>
+    <tr>
+      <td>Mononegavirales</td>
+      <td>71</td>
+      <td>12</td>
+      <td>8</td>
+      <td>1266</td>
+    </tr>
+    <tr>
+      <td>Nidovirales</td>
+      <td>35</td>
+      <td>27</td>
+      <td>3</td>
+      <td>672</td>
+    </tr>
+    <tr>
+      <td>Picornavirales</td>
+      <td>89</td>
+      <td>8</td>
+      <td>11</td>
+      <td>7056</td>
+    </tr>
+    <tr>
+      <td>Tymovirales</td>
+      <td>73</td>
+      <td>8</td>
+      <td>4</td>
+      <td>693</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Combinations of different classifications</td>
+      <td>All Eukaryotic dsDNA viruses</td>
+      <td>271</td>
+      <td>33</td>
+      <td>11</td>
+      <td>990</td>
+    </tr>
+    <tr>
+      <td>All Bacterial dsDNA viruses</td>
+      <td>899</td>
+      <td>44</td>
+      <td>9</td>
+      <td>408</td>
+    </tr>
+    <tr>
+      <td>All Archaeal dsDNA viruses</td>
+      <td>41</td>
+      <td>28</td>
+      <td>10</td>
+      <td>396</td>
+    </tr>
+    <tr>
+      <td>All Eukaryotic ssDNA viruses</td>
+      <td>375</td>
+      <td>3</td>
+      <td>14</td>
+      <td>732</td>
+    </tr>
+    <tr>
+      <td>All Bacterial ssDNA viruses</td>
+      <td>51</td>
+      <td>7</td>
+      <td>14</td>
+      <td>348</td>
+    </tr>
+  </tbody>
+</table>
 
 With respect to viral genome lengths, the Baltimore classification seems to offer the most explanatory power. Knowing whether a viral genome is DNA- or RNA-based already provides a strong indication about viral genome length, especially for RNA viruses where the standard deviation is just a few kilobases (Figure 3—source data 1). However, by distinguishing between ssDNA, dsDNA and dsDNA-RT viruses, the Baltimore classification offers a more complete view of genome length distributions compared to the binary Nucleotide Type classification (Figure 3A). Across all Baltimore groups, dsDNA viruses have genome lengths that have the largest standard deviation, however considering the limited range of genome lengths associated with other Baltimore groups, it is very likely that a larger viral genome will be composed of dsDNA (Figure 3A). We provide a more detailed view of genome length distributions by layering different classification systems, first applying the Baltimore classification, followed by the Host Domain and the ICTV family classifications (Figure 3B, Figure 3—source data 1). Finally, it is worth noting that capsid dimension, surprisingly, does not seem to correlate with viral genome size, and to different degrees, many viruses are shown to under-utilize the capsid volume (Brandes and Linial, 2016).
 
@@ -90,17 +297,17 @@ A closer examination of median gene lengths more clearly reveals the significant
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig4-v2.jpg)
 
-**Figure 4.:** Instead of showing absolute viral counts on y-axes, the counts are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics on the right of the figure are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 4—source data 1.10.7554/eLife.31955.010Figure 4—source data 1.It is important to clarify that the median values in this table represent the median of median gene lengths.
+**Figure 4.:** Instead of showing absolute viral counts on y-axes, the counts are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics on the right of the figure are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 4—source data 1.
 
-## Noncoding percentages of viral genomes
+### Noncoding percentages of viral genomes
 
 So far we have primarily focused on the coding fractions of viral genomes. Thus, we created distributions of noncoding percentage of viral genomes (see Materials and methods, Figure 5, Table 1, Figure 5—source data 1). In general, DNA viral genomes contain about 10% noncoding regions which is even lower than the noncoding percentage of bacterial genomes (Mattick and Makunin, 2006; Morris, 2012). With a median noncoding percentage of just 6%, RNA viral genomes have significantly lower noncoding percentage compared to DNA viruses in this database (one-sided Mann-Whitney U Test, P<10-5). A notable exception to the RNA viral group is the ssRNA-RT with a median noncoding percentage of 16%. Interestingly, both retroviral groups had relatively high noncoding DNA percentages. This is likely due to the presence of defunct retroviral genes. For example, the Xenopus laevis endogenous retrovirus (NCBI taxon ID 204873) belonging to the ssRNA-RT group has a noncoding percentage of 93%. This high noncoding percentage can be explained by the fact that this virus genome contains three pseudogenes previously coding for env, pol and gag proteins.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig5-v2.jpg)
 
-**Figure 5.:** The counts of viruses are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 5—source data 1.10.7554/eLife.31955.012Figure 5—source data 1.
+**Figure 5.:** The counts of viruses are normalized by the total number of viruses in each viral category (denoted as N inside each plot). The mean of each distribution is denoted as a dot on the boxplot. For all histograms, bin numbers and bin widths are systematically decided by the Freedman-Diaconis rule (Reich et al., 1966). Viral schematics are modified from ViralZone (Hulo et al., 2011). Key statistics describing these distributions can be found in Table 1 and Figure 5—source data 1.
 
-## Viral functional gene categories
+### Viral functional gene categories
 
 We categorized viral genes according to several major functional categories, including structural genes such as capsid and tail genes, metabolic genes, informational genes, which we define as those involved in replication, transcription or translation of the viral genetic code, among other categories (Figure 6, see Materials and methods). In addition to the fraction of viral genes that we were able to assign to these functional categories, there still remains what we will refer to as an “unlabeled” fraction that is comprised of hypothetical genes or genes with poor annotation (see Materials and methods). When reporting the relative abundance of different functional gene categories, we will normalize the number of genes belonging to each functional category by the total number of labeled genes.
 
@@ -110,9 +317,17 @@ We categorized viral genes according to several major functional categories, inc
 
 RNA, dsDNA and ssDNA viruses, despite differences in the detailed categorization of their genes (Figure 6B) share similar general features (Figure 6A). For example, across all three viral groups, roughly half of all genes are structural. Similarly, dsDNA viruses of eukaryotes and bacteria in this database, in contrast to having different genomic properties and morphologies surprisingly have very similar distribution of gene functional category and subcategory abundances. The major difference between these two viral groups, as expected from our knowledge of viral morphologies, is that a larger portion of eukaryotic dsDNA viral genes are envelope and matrix genes, whereas a greater portion of bacterial dsDNA genes are portal and tail-associated genes. By further zooming in on bacterial dsDNA viruses, it is again interesting to see that Myoviridae, Siphoviridae, and Podoviridae viral groups, with their different morphologies and wide range of hosts, having very similar functional gene category abundances even at the level of subcategories.
 
-## Viral genome organization
+### Viral genome organization
 
 To explore viral genome organization we developed a coarse-grained method for visualizing a large number of genomes in one snapshot. We first defined genome organization as the order in which genes appear across a genome. We then symbolized each gene by a letter, indifferent to the gene’s length or its orientation on the genome. Genes with similar functions are grouped and are represented by the same letter (Figure 7). Therefore each viral genome, analogous to a nucleotide sequence, is compactly described by a sequence of letters that represent its gene order (Figure 7), which we will refer to as the gene order sequence. Because we aimed to study gene order sequences across different viral groups, we focused on genes whose functions are universally required, namely structural genes. textFile-1.txt (see our GitHub repository) provides the structural gene order sequences for all viruses (see Materials and methods for filters applied), though the script developed can be modified to visualize the placement of any number of genes or user-defined gene groups.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig7-v2.jpg)
+
+**Figure 7.:** Each genome is summarized by a sequence of letters, with each letter corresponding to a gene, positioned in the order that it appears on the genome. As an example, the gene order sequence for Salmonella phage FSL SP-004 is shown. Note the letters shown serve to only denote genes with similar functions. Structural genes are assigned colors, whereas other genes are denoted in black. Across all three panels, each row corresponds to the gene order sequence for a given virus, and thus, the length of the sequence denotes the number of genes within a given genome. The left two columns accompanying each panel provide further information on hosts and viral morphologies. Panel A, B, and C, represent gene order patterns A, B, and C, respectively. Geneious global alignment (Steitz et al., 2011) was used to align gene order sequences (see Materials and methods). Refer to Figure 7—figure supplement 1 to see the percent identity heat maps of terminases (large and small subunits) across dsDNA bacterial viruses.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The sidebars denote the host phylum for each bacteriophage sequence.
 
 Furthermore, by focusing on bacterial dsDNA viruses present in the NCBI viral database, we were able to identify the most common gene order patterns across this virome (see Materials and methods). One particular gene order pattern and its variations exist across various types of dsDNA bacterial viruses. We will refer to it as gene order pattern A (Figure 7A). In pattern A, gene packaging, portal and capsid-related genes are mostly tightly clustered and are followed by tail-associated genes. Interestingly, this pattern occurs at the beginning of the genome for some viruses, and for others it seems to have been shifted further down on the genome. Pattern A occurs across viruses from five different host phyla. The other two most common gene order patterns (patterns B and C) occur across viruses with more limited host range and morphologies.
 
@@ -122,11 +337,11 @@ To provide more information on the genomic organization of dsDNA bacteriophages,
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig8-v2.jpg)
 
-**Figure 8.:** (A) Histogram of attachment site length. (B) Histogram of attachment site start positions (left attachment: blue, right attachment: red). (C) Histogram of attachment site start positions normalized by the genome length. (D) Percent sequence similarity matrix across attachment sites. (E) Attachment site locations along viral genomes (left attachment: blue, right attachment: red). Figure 8—source data 1 demonstrates several bacteriophages shown in panel E with similar or identical attachment site sequences.10.7554/eLife.31955.017Figure 8—source data 1.Figure 8D with similar or identical attachment site sequences.
+**Figure 8.:** (A) Histogram of attachment site length. (B) Histogram of attachment site start positions (left attachment: blue, right attachment: red). (C) Histogram of attachment site start positions normalized by the genome length. (D) Percent sequence similarity matrix across attachment sites. (E) Attachment site locations along viral genomes (left attachment: blue, right attachment: red). Figure 8—source data 1 demonstrates several bacteriophages shown in panel E with similar or identical attachment site sequences.
 
 To examine attachment site sequence diversity, we used Clustal-Omega (Sievers et al., 2011) for creating a sequence alignment. Figure 8D is a heat map of the percent sequence similarity scores. Figure 8E demonstrates left (blue) and right (red) attachment sites in phage genomes. Note, the genomes are shown according to their order in Figure 8D. While the vast majority of attachment sites are very diverse in sequence, as shown by regions of low similarity in the heat map, there are a number of viruses that have identical putative attachment site sequences (Figure 8—source data 1, Materials and methods). Perhaps not surprisingly, these phages are largely those infecting different strains of the same host species. Phages infecting hosts outside of the same species seem more likely to have dissimilar attachment site sequences.
 
-## Shedding some light on viral “hypothetical” proteins
+### Shedding some light on viral “hypothetical” proteins
 
 As demonstrated in the previous sections, proteins annotated as hypothetical or putative form more than half of all proteins associated with dsDNA bacteriophages. In an attempt to learn more about these proteins, we used BLASTP to query all ~88,000 dsDNA bacteriophage proteins against the NCBI Refseq protein database (limited to bacteria) (See Materials and methods). The purpose of this exercise was to use the annotations of bacterial homologs to viral proteins to gain better understanding of what the function of each bacteriophage hypothetical protein might be.
 
@@ -138,7 +353,7 @@ A homologous relationship was defined as a match with BLASTP E-value score < 10-
 
 Most bacterial homologs of hypothetical phage proteins were also annotated as hypothetical proteins. However, a few thousand hypothetical phage proteins could be assigned to putative annotation based on the annotation of their bacterial homologs (See Materials and methods). Interestingly, we were able to match even more bacterial hypothetical proteins to a putative annotation based on the annotations of their bacteriophage protein homologs. Although, this method can certainly be helpful in filling some of the gaps in protein annotations, it is only as good as the annotations and the convention we establish for describing proteins. Unfortunately, a considerable number of annotations are currently either too specialized or too vague to be helpful.
 
-## The extent of overlap between viral and cellular gene pools
+### The extent of overlap between viral and cellular gene pools
 
 One of the defining features of viruses is their reliance on their host organisms. It is well known that the interactions between viruses and cells often result in the exchange of genetic information. To explore the extent to which the viral and cellular gene pools overlap, we used BLASTP to search for bacterial proteins that are homologous to dsDNA bacteriophage proteins (see Materials and methods). Overall, each of the ~900 dsDNA bacteriophage genomes we examined encoded at least one protein that was homologous to a bacterial protein.
 
@@ -150,11 +365,25 @@ Thus, to examine the contribution from prophages, we implemented several filters
 
 A non-trivial mechanism by which bacteriophages and bacteria can exhibit homologous proteins is via gene exchanges over evolutionary time-scales. Interestingly, the closest homolog to a bacteriophage protein is not always found in its host genome. In fact there can be large taxonomic distance (Figure 10) between the host and the bacterium containing the closest homolog. We depict this distance by categorizing bacteriophage proteins based on the organism in which their closest homolog was found (see inscribed circles in Figure 10). If they were found in the same species of bacteria as the host, then these proteins are placed in the most inner circle, whereas if they were found in the same phylum, the proteins are placed in the outer most circle.
 
+![Figure 10.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig10-v2.jpg)
+
+**Figure 10.:** All circles are drawn to scale with respect to the number of proteins (N) that they each represent. Note, the number of proteins denoted at each taxonomic layer includes proteins in lower taxonomic layers. For example, the 20,000 figure denoted at the genus layer already includes the 11,000 proteins shown at the species layer. N values are rounded to the nearest thousand. Histograms of the fraction of proteins with bacterial homologs per bacteriophage genome are shown in Figure 10—figure supplement 1.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig10-figsupp1-v2.jpg)
+
 We can see from Figure 10 that there is a 26% chance that the closest homolog to a bacteriophage protein appears in a member of its host species. This chance is raised to 84% when more broadly assuming that the homolog will appear in a bacterium that is at least in the same phylum as the host (Figure 10). The chance value is calculated by dividing the number of proteins in a given taxonomic layer by the total number of proteins in the analysis.
 
 Moreover, an interesting facet of this dataset becomes apparent when we examine the quality of the match between a bacteriophage protein and its closest bacterial homolog as a function of the taxonomic distance between the bacteriophage host and the bacterium containing the homolog. We used the bit score as a measure of quality of the match. The bit score is a BLAST output and a similarity measure that is independent of database size or the query sequence length. It identifies the size of a database required for finding the same quality match by chance. Naturally, the higher the bit score, the better is the match.
 
 We can see that there is a significant decrease in the median bit score as we move from the “same species” layer to the “same genus” layer and finally to the “same phylum” layer (Figure 11). Thus, the closer (taxonomically) the host is to the bacterium containing the homolog, the better the match between the bacteriophage protein and its bacterial homolog. We think there are interesting phage-host co-evolutionary implications that can be concluded from this data analysis and data visualization method, and hope to shed further light on these hypotheses in the future.
+
+![Figure 11.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig11-v2.jpg)
+
+**Figure 11.:** Histograms are created according to the proteins belonging to three different layers corresponding to an increasing taxonomic distance between the host organism and the bacterium containing the closest homolog. (A) When the host and the homolog-containing bacterium belong to the same species, the median bit score is significantly higher (one sided Mann-Whitney U test, P<0.001) than it is for those that are only part of the same genus. (B) Similarly, when comparing proteins from the “same species” layer to the “same phylum” layer, the median bit score is significantly higher for the “same species” layer (one sided Mann-Whitney U test, P<0.001). Note that for each layer, when comparing the “same species” to the “same genus” layers, we are comparing the 11,000 proteins in the “same species” layer to the 9,000 proteins from the “same genus” layer that do not also belong to the “same species” layer. The same principle applies when we are comparing the “same species” layer to the “same phylum” layer. Distributions of bacteriophage proteins with homologs from a different phylum than their host phylum are shown in Figure 11—figure supplement 1.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/31955/elife-31955-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** These proteins are categorized based on their host’s phylum (top), and then based on the phylum where their closest homolog appears (bottom). There are 26 different phyla that bacterial homologs appear in, however, only the ones containing the highest number of homologs are annotated for visual clarity.
 
 While the majority of homologs belong to members of the same phylum as the host, there is still a 16% chance that the closest bacterial homolog to a bacteriophage protein actually appears in a bacterium from a different phylum than the host. To further examine these cross-phyla associations, we map the distribution of bacteriophage proteins as a function of the host phylum. Then, we zoom in on the bacterial phyla containing the homologs (Figure 11—figure supplement 1). By far, the most number of cross-phyla homologs are shared between bacteriophages infecting Proteobacteria and bacteria from the Firmicutes phylum. It would be interesting to explore in the future the underlying cause of the relatively large number of homologs that exist between microbial members of the Firmicutes and Proteobacteria phyla.
 
@@ -176,31 +405,31 @@ In this work, we have described our attempt at providing a comprehensive and qua
 
 ## Materials and methods
 
-## Data acquisition, data curation, and statistical analysis
+### Data acquisition, data curation, and statistical analysis
 
 All genomic data was retrieved from the NCBI Genome FTP server (retrieved in August 2015) (Brister et al., 2015). Matching viruses to their hosts was done by parsing ASN files from the NCBI Genome FTP server while searching for the term “nat-host”. All other taxonomic data, including host and viral lineages, was retrieved from NCBI’s Taxonomy database using the NCBI Taxa class of the ETE Toolkit (Huerta-Cepas et al., 2010). Once we had the “nat-host” name of organisms in English, we retrieved their taxids using ETE Toolkit. These were in turn used to identify the host’s taxonomic lineage. Viruses with complete genomes were identified by searching the assembly reports of the NCBI Genome FTP server for assemblies labeled “Complete Genome”, then using the associated FTP address to download the _assembly_stats.txt files and _protein.faa files. Only viruses that could be matched to a host were included for further analysis. Additionally, various quality checks were manually performed to ensure that viruses with improper annotations were excluded from further analysis. For example, we found viruses and hosts with incomplete or incorrect taxonomic information, and excluded these viruses from further analysis. The list of excluded viruses can be found in our code (see next sub-section). Outliers are not excluded from our analysis. We attempt to dampen their effect by focusing on median values rather than the mean (Table 1). Given the presence of a few skewed distributions, we primarily used the Mann-Whitney U test for statistical analysis so we could avoid the assumption of normality.
 
-## Data availability
+### Data availability
 
 We have compiled all input data, output files, and scripts (Jupyter notebooks) used to write this manuscript in a GitHub repository (https://github.com/gitamahm/VirologyByTheNumbers) (Mahmoudabadi, 2018). viromePieChartsVF.ipynb and virusHostHistogramsVF.ipynb were used to create Figure 2. The scripts for Figure 3 through Figure 5 can be found in genomeLengthsVF.ipynb, geneLengthsVF.ipynb, and percentNoncodingVF.ipynb, respectively. The code for Figure 6 and Figure 7 is provided in geneOrderAndGeneAbundanceVF.ipynb. viralAttachmentSites.ipynb is used to create Figure 8 and viralBacterialBlast.ipynb is used to create (Figures 9–11 and their supplementary figures).
 
 All supplementary text files can also be found in this repository. Supplementary textFile-1.txt displays the gene order sequences for all viruses whose genomes contained at least 15% labeled genes. Letters I, C, E, and Q correspond to capsid-related, portal-related, tail-related, and genome packaging-related genes, respectively. All other genes are denoted by the letter A. Supplementary textFile-2.txt contains the list of top BLASTP matches for bacteriophage proteins that had bacterial protein homologs (the top match is considered as the match with the lowest E-value). Supplementary textFile-3.txt provides the annotations of bacterial homologs of hypothetical bacteriophage proteins. Supplementary textFile-4.txt contains the annotations of bacteriophage homologs of hypothetical bacterial proteins.
 
-## Genome length and gene densities
+### Genome length and gene densities
 
 Genome lengths were extracted from .ptt files and _assembly_stats.txt files for viruses. The .ptt files were parsed to find “complete genome - 1.” which is followed by the length of the genome. For segmented genomes, the total length of the segments is reported as the genome length. The number of protein-coding genes, which was used in calculating gene densities, was found by parsing .faa files . For gene length histograms, we first obtained the gene lengths for each virus, and then created a histogram based on the median gene length associated with each virus. To systematically determine the number of bins needed for each histogram, we employed the Freedman-Diaconis' rule (Freedman and Diaconis, 1981).
 
-## Noncoding DNA/RNA percentages
+### Noncoding DNA/RNA percentages
 
 To extract the percent of the genome that is noncoding, we could not merely subtract the lengths of the genes from the length of the genome, as this would not take overlapping genes into account. Instead, we used the .ptt files to identify where each gene began and ended in the genome, then added all indices between protein-coding genes to a set. We then could subtract the size of this set from the genome length to arrive at the number of noncoding bases, which is then turned into a percentage.
 
-## Decomposition of viral genes into functional categories
+### Decomposition of viral genes into functional categories
 
 To obtain the abundance of various gene functional categories, we collected the COG product annotations (Tatusov et al., 2000) accompanying each gene from .ptt file(s) provided for each virus. Based on the most frequent COG product names, we constructed a dictionary of search terms to query viral genes and measure the abundance of various functional categories (by measuring abundance, we are referring to the number of genes that belong to a given functional category). To determine the most common search terms, we derived the unique set of COG product annotations for different viromes. We used the annotations shared between viromes to exclude problematic search terms with multiple meanings. As a result we avoided search terms with multiple functional associations such as “gp41”, which in the context of HIV signifies a transmembrane glycoprotein, and in the context of Mycobacterium phage Bxb1 denotes a 3’-5’ exonuclease involved in DNA replication.
 
 While the dictionary constructed contains many key words that capture essential gene functional categories common to many viruses, it does not account for COG annotations that are non-descriptive (e.g. “phage protein” or “Z protein”). Additionally, there is typically a large number of genes that code for “hypothetical proteins”. Together, these two fractions make up the unlabeled component, which we do not include for further analysis. Despite the limitations introduced by these unlabeled genes, there are still a large number of genes (~105) that are included in our analysis. In constructing the relative abundances of different gene functional categories (Figure 6), we divide the abundance of a gene functional category by the total number of labeled genes (denoted at the top of Figure 6.A for each viral group).
 
-## Gene order
+### Gene order
 
 In visualizing gene order we employed a similar search strategy to the one explained in the previous section. To detect potentially conserved patterns in gene order across vastly different viral genomes, we searched only for structural genes as they are essential to any virus. We used .ptt files to determine gene order since they contain the beginning and end indices of genes. The code developed uses .ptt files as input, and outputs a string of characters per viral genome, which we have referred to as the gene order sequence. Each character represents a viral gene in the order that it appears on the genome (without distinguishing between the strand of DNA on which the gene is located). All genes belonging to the same functional category, for example all tail-related genes, are represented by the same character. All unlabeled genes (i.e. non-structural, hypothetical, or poorly annotated genes) are also represented by the same character. Each gene order sequence, analogous to a nucleotide sequence, can be aligned against other gene order sequences by existing alignment software.
 
@@ -208,14 +437,14 @@ Though it would be ideal to calculate a pairwise distance matrix between gene or
 
 We used Geneious software (Kearse et al., 2012) to align gene order sequences using global alignment with free end gaps and identity cost matrix (with default gap open and extension penalties). Using Geneious global alignment as a guide, we further manually improved the alignment by aligning a widely shared sub-pattern, for example the portal/neck genes in pattern A or the capsid and tail characters in pattern C, without introducing any gaps. This step was necessary because any alignment algorithm will aim to maximize the alignment between unlabeled genes, unable to distinguish between these characters and the more meaningful characters corresponding to labeled structural genes. Moreover, because of the high fraction of genes that have “hypothetical protein” COG annotation, we had to impose filters to extract gene order sequences that are not entirely composed of unlabeled genes. To generate the alignments shown in Figure 7, we imposed that at least 15% of characters in a gene order sequence have to correspond to labeled genes, and that the gene order sequence has to be at least 40 characters long. For the gene order sequences shown in textFile-1.txt (see GitHub repository) the sequence order length limit was not imposed.
 
-## Bacteriophage attachment sites
+### Bacteriophage attachment sites
 
 To explore bacteriophage attachment sites, we used the PHASTER program to obtain putative attachment sites (Arndt et al., 2016). Using phage genome accession numbers and the PHASTER URL API, we obtained information regarding attachment site sequence and location. We analyzed and visualized this data using our own set of scripts, which can be found in the attachmentSites.ipynb notebook. When comparing attachment site sequences, we selected phage pairs with 100% similarity across their alignment. We also imposed that the alignment length should be at least 8 bp (which is more than half of the median attachment site length). Figure 8—source data 1 depicts phages that met these criteria.
 
-## BLASTing dsDNA bacteriophage proteins against bacterial proteins
+### BLASTing dsDNA bacteriophage proteins against bacterial proteins
 
 Multithreaded BLASTP on this database was a computationally intensive process, requiring over 8900 core hours. Using custom scripts in R, taxID results from each protein queried were linked to complete lineages using NCBI taxdump and NCBItax2lin (available via https://github.com/zyxue/ncbitax2lin). A list of hypothetical bacteriophage proteins and their closest bacterial homologs are provided in textFile-3.txt (see our GitHub repository). Similarly the hypothetical bacterial proteins along with the annotations of their closest bacteriophage homologs are provided in textFile-4.txt. The closest homologs are determined based on the match with the lowest E-value. A match was taken into account only if it had an E-value < 10-10.
 
-## Identifying putative prophage genomes
+### Identifying putative prophage genomes
 
 We suspected that prophage proteins would have a high percent identity to their bacterial homologs, and therefore, we first filtered proteins with less than 50% identity to their bacterial homologs. We then selected only proteins with bacterial homologs if the bacterium containing the homolog was the same species as the bacteriophage host. Finally, we required that at least half of the proteins per bacteriophage genome meet the conditions described above for the bacteriophage to be identified as a potential prophage. The reason we did not impose stricter filters was so that we could also identify any lytic relatives of prophages, since their proteins would also be perceived homologous to bacterial proteins, but only because of their homology to prophage proteins.

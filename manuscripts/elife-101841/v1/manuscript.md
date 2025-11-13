@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05rrcem69 Center for Mind and Brain, University of California Davis Davis United States
-2. https://ror.org/05rrcem69 Department of Psychology, University of California Davis Davis United States
-3. https://ror.org/01cwqze88 National Institute on Drug Abuse Intramural Research Program, National Institutes of Health Baltimore United States
-4. https://ror.org/02jx3x895 Max Planck University College London Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom
-5. https://ror.org/00fbnyb24 Faculty of Human Sciences, Julius-Maximilians-Universität Würzburg Würzburg Germany
-6. https://ror.org/02jx3x895 Wellcome Centre for Human Neuroimaging, University College London London United Kingdom
-7. https://ror.org/0172mzb45 Wellcome Centre for Integrative Neuroimaging, University of Oxford, John Radcliffe Hospital Oxford United Kingdom
-8. https://ror.org/02jx3x895 Sainsbury Wellcome Centre for Neural Circuits and Behaviour, University College London London United Kingdom
+1. Center for Mind and Brain, University of California Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+2. Department of Psychology, University of California Davis Davis United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+3. National Institute on Drug Abuse Intramural Research Program, National Institutes of Health Baltimore United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+4. Max Planck University College London Centre for Computational Psychiatry and Ageing Research, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+5. Faculty of Human Sciences, Julius-Maximilians-Universität Würzburg Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+6. Wellcome Centre for Human Neuroimaging, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+7. Wellcome Centre for Integrative Neuroimaging, University of Oxford, John Radcliffe Hospital Oxford United Kingdom ([ROR:0172mzb45](https://ror.org/0172mzb45))
+8. Sainsbury Wellcome Centre for Neural Circuits and Behaviour, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -41,31 +41,71 @@ In the current study, we test these hypotheses using a learning task in which pa
 
 ## Results
 
-## Learning task with direct and indirect choice-outcome transitions
+### Learning task with direct and indirect choice-outcome transitions
 
 Participants completed a learning task in which they chose between two abstract shapes to obtain one of two distinct outcomes (gift cards to locally available stores rated to be approximately equally desirable). Each shape had a certain probability of leading to one gift card and the inverse probability of leading to the other. These probabilities drifted over time but could be tracked based on the recent choice-outcome observations made in each trial (see Figure 1—figure supplement 1 for probability trajectories and Bayesian model fitting). Participants were informed of how many points each gift card would yield on each trial by colored numbers on the top of the screen, and that these points changed randomly from one trial to the next (Figure 1A). They were further told that at the end of the experiment one trial would be selected at random to count ‘for real’. That is, they would receive the gift card obtained on that trial with a value proportional to the number of points won. Thus, participants were incentivized to maximize their potential winnings on every trial by accurately tracking the probability that each shape would lead to each outcome, but not the history of reward amounts.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig1-v1.jpg)
+
+**Figure 1.:** (A) Two abstract shapes were probabilistically related to each of two outcome identities by independent transition probabilities p1 and p2. (B) Schematic of the direct transition condition. Participants chose one of the two shapes on each trial based on two pieces of information: their estimates of the probability that each would lead to either outcome identity (gift cards) and the randomly generated number of points they could potentially win if that outcome was obtained. The color of each number indicated the identity of the outcome on which that number of points could be won. In the example, green indicates the number of points for the Starbucks gift card, while pink indicates the number of points for iTunes. Next, participants observed the outcome of their choice (the gift card and amount) after a delay. (C) Schematic of the indirect transition condition. Same as (B) except that after participants made their choice they transitioned into another independent decision. After this second decision was made, participants observed the outcome of their first decision. (D) Results of logistic regression analysis predicting the current choice based on previously observed choice-outcome relationships. Each cell represents the combination of a previously observed choice with an observed outcome. The color of each cell shows the value of beta estimates for each combination of previous choice and observed outcome, averaged across participants. Positive values indicate that the choice-outcome pair predicted choosing the same shape again when that shape previously led to the currently desired outcome. (E) Theoretical decomposition of the matrix in (D) into groups of cells which reflect ‘appropriate credit assignment’ given the task structure (orange) and ‘credit spreading’ (pink). (F) Mean (± SEM) of beta coefficients for specific choice-outcome combinations averaged across the groupings of cells shown in E for each condition. See Figure 1—figure supplement 1 for model outputs and Bayesian model fitting.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Example trajectory across the experiment of the belief estimates generated from the Bayesian learner. Top is the trajectory of S1, and the bottom is the trajectory of S2. While lines represent the true probability trajectory is shown in white and the estimated belief is shown in pink. Color heatmap shows the probability mass for each possible belief in Sx ->O1. (B) Comparison of model fits between our Bayesian model and a value-based RL model (vRL) which used an interactive updating procedure to track the value of each shape based on the history of received rewards. The exceedance probability for the Bayesian model was 1, and 0 for the vRL model, suggesting that Bayesian model, which tracked transition probabilities between choices and outcomes, better fit participants actual choices compared to a value tracking model. (C) Logistic regression curves estimating the change in choice probabilities given the expected value difference between choices. Gray line shows participant specific lines, and the black line shows the effect across groups (associated t-statistics are calculated across participants). The left side shows the effect in the direct transition condition and the right side shows the indirect transition condition.
+
 The task had two conditions which proceeded in a blocked fashion. In the ‘direct transition’ condition, participants saw the outcome of a choice after a delay period (Figure 1B). In the ‘indirect transition’ condition, participants did not see the outcome of their choice until after another choice had been made, requiring them to delay assigning credit to the initial choice until the appropriate outcome was observed (Figure 1C). Participants were instructed about which condition they were in with a screen displaying ‘Your latest choice’ in the direct transition condition, and ‘Your previous choice’ in the indirect condition. Finally, at the beginning of each block participants viewed each of the two abstract shapes and two outcome stimuli in a random order, without making decisions or observing outcomes. This ‘template’ block allowed us to measure neural responses to stimuli independently of the learning task.
 
-## Predicting current choice based on previous choice-outcome relationships
+#### Predicting current choice based on previous choice-outcome relationships
 
 To test whether participants were using the structure of each condition to appropriately assign credit to causal choices, we performed a multiple logistic regression analysis testing the influence of previous choice-outcome combinations on the current choice. For each participant, independently in each condition, we constructed a GLM that predicted the current choice as a function of nine different combinations of previous choices and outcomes (Equation 1). For example, the first regressor predicted the current choice based on the previous choice and the previous outcome (trial t-1). These values were coded as 1 if the past choice led to the currently desired outcome, assumed to be the outcome with the largest monetary point value on the current trial, and –1 if it did not (results were virtually identical if we used the participant-specific indifference point (a) to define the desired outcome instead (see Equation 9)). The second regressor predicted the current choice based on the previous choice (t-1) and the outcome received two trials in the past (t-2), and so on for all nine combinations of previous choices and outcomes covering the previous three trials.
 
-In the direct transition condition, we observed significant positive effects along the diagonal of the matrix (choicet−1∗outcomet−1: β=6.09, t(19) = 4.81, p<0.001; choicet−2∗outcomet−2: β=8.78, t(19) = 5.41, p<0.001; choicet−3∗outcomet−3, β=6.76, t(19) = 4.16, p<0.001; Figure 1D), indicating that participants assigned credit for each outcome to the choice made in same trial. In the indirect transition condition, current choices were significantly predicted by the most recently observed outcomes combined with choices made in the trial previous to those outcomes (choicet−2∗outcomet−1: β=4.20, t(19) = 2.92, p<0.01; choicet−3∗outcomet−2: β=5.07, t(19) = 4.75, p<0.001). Furthermore, the mean of the β-values which reflect appropriate credit assignment in each condition were significantly higher than the mean β-values which represented credit spreading (direct transition condition: t(19) = 5.39, p<0.001, indirect transition condition: t(19) = 4.34, p<0.001; Figure 1E and F). Follow-up analysis showed that participants’ choices in each trial integrated expectations about the probability of receiving a particular outcome and its magnitude and did not rely on estimates of a cached option value (Figure 1—figure supplement 1). These results show that participants used the appropriate task-structure when assigning credit for observed outcomes in each condition.
+In the direct transition condition, we observed significant positive effects along the diagonal of the matrix ($choice_{t−1}∗outcome_{t−1}$: β=6.09, t(19) = 4.81, p<0.001; $choice_{t−2}∗outcome_{t−2}$: β=8.78, t(19) = 5.41, p<0.001; $choice_{t−3}∗outcome_{t−3}$, β=6.76, t(19) = 4.16, p<0.001; Figure 1D), indicating that participants assigned credit for each outcome to the choice made in same trial. In the indirect transition condition, current choices were significantly predicted by the most recently observed outcomes combined with choices made in the trial previous to those outcomes ($choice_{t−2}∗outcome_{t−1}$: β=4.20, t(19) = 2.92, p<0.01; $choice_{t−3}∗outcome_{t−2}$: β=5.07, t(19) = 4.75, p<0.001). Furthermore, the mean of the β-values which reflect appropriate credit assignment in each condition were significantly higher than the mean β-values which represented credit spreading (direct transition condition: t(19) = 5.39, p<0.001, indirect transition condition: t(19) = 4.34, p<0.001; Figure 1E and F). Follow-up analysis showed that participants’ choices in each trial integrated expectations about the probability of receiving a particular outcome and its magnitude and did not rely on estimates of a cached option value (Figure 1—figure supplement 1). These results show that participants used the appropriate task-structure when assigning credit for observed outcomes in each condition.
 
 Next, we compared the relative precision of credit assignment between our behavioral conditions, where we predicted credit assignment would be less precise in the indirect transition condition compared to direct transition condition, owing to additional task complexity. We found that β-values representing appropriate credit assignment in the direct transition condition were higher than those in the indirect transition condition (t(19) = 1.81, p<0.05). However, β-values in cells that represent credit spreading in the direct transition condition were not significantly lower than those in the indirect transition condition (t(19) = 1.11, p=0.14). These results indicate that credit assignment was less precise in the indirect transition condition compared to the direct transition condition, despite each being appropriate for the respective task structure overall.
 
-## Causal choice codes are reinstated in lOFC and HC when viewing the outcome of choices
+#### Causal choice codes are reinstated in lOFC and HC when viewing the outcome of choices
 
 For the direct feedback condition, our main hypothesis was that lOFC codes for the specific causal choice when participants view the outcome of their choice. We also reasoned that, due to the delay between choice and feedback, this lOFC choice code would be supported by choice reinstatement in the interconnected HC (Barbas and Blatt, 1995; Wimmer and Shohamy, 2012). We tested this hypothesis by training a linear support vector machine (SVM) to distinguish BOLD activity patterns at the time of feedback based on the previously chosen shape, cross-validated across scanning runs (see Methods for details on decoding procedure). We used a searchlight analysis within a priori defined ROIs (see Figure 2—figure supplement 1) for lOFC and HC to estimate decoding accuracy for each voxel within the ROI (Kriegeskorte et al., 2008).
 
 We found evidence for choice decoding in the predicted network of regions. Specifically, we found significant and marginally significant decoding of the causal choice in left ([x,y,z] = [–26, 42,–8], t(19) = 4.22, pTFCE <0.05 ROI-corrected using threshold-free cluster enhancement (TFCE) correction Smith and Nichols, 2009) and right ([x,y,z] = [24, 46, -8], t(19) = 3.45, pTFCE = 0.081 ROI-corrected) lOFC, respectively (Figure 2A). A similar pattern was also apparent in the HC, where right HC showed significant decoding ([x,y,z] = [36, -20, -16], t(19) = 4.02, pTFCE <0.05 ROI-corrected), while left HC showed a marginal effect ([x,y,z] = [-22,–10, –24], t(19) = 2.86, pTFCE = 0.080 ROI-corrected). Together, these results show that the lOFC and HC represent the causal choice at the time when credit is assigned in the direct condition of our task.
 
-## Pending item representations in lFPC during indirect transitions predict credit assignment in lOFC
+![Figure 2.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig2-v1.jpg)
+
+**Figure 2.:** Left side shows the analysis scheme for decoding representations of the causal choice at feedback in the direct transition condition. An SVM decoder was used to differentiate trials at the time of the outcome (purple) based on the causal choice selected during the ‘choice period’ (cyan). The right side shows axial and coronal slices through a t-statistic map showing significant decoding in OFC and HC during feedback. For illustration, all maps are displayed at threshold of t(19) = 2.54, p<0.01 uncorrected. All effects survive small volume correction in a priori defined anatomical ROIs. See Figure 2—figure supplements 1–3 for ROI definition and Figure 2—figure supplement 4 for power analysis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Illustrations of pre-selected anatomical ROIs taken from Neubert et al., 2015. The lOFC ROI corresponds to index 9 and 30, lFPC corresponds to indexes 14 and 35. The HC ROI was defined in Yushkevich et al., 2015.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Despite having a priori defined anatomical ROIs for our decoding analysis of the causal choice, we wanted to test whether our results depended on these ROI definitions by using a data-driven approach. Here, we trained an SVM classifier to decode representations of the causal choice in run 1 of the direct transition condition, then tested the decoder on run 2 to find regions of the orbitofrontal cortex (OFC) and hippocampus (HC) that significantly decoded causal choice representations at a significance level of t(19) > 2.54, p<0.01, uncorrected. We then used these regions as ROIs for a separate analysis which trained the classifier in run 1 and tested the classifier in run 2. (B) Shows ROIs generated from the same procedure as described in A, but the use of each run for training and testing are switched.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Regions of the OFC showing significant decoding of the causal choice in run 1 of the direct transition condition. Significance was tested using TFCE correction over voxels with the ROI generated from run 2, using the procedure described above (Figure 2—figure supplement 2). For illustration, we show voxels that survive at threshold to t(19)=1.73, p<0.05 uncorrected. (B) Shows the same as A but for voxels in run 2, using the ROI generated from run 1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Power analysis using an independent data set. Twenty-eight participants competed an associative learning task, in which they learned the causal associations between four different choices, and two food rewards. We estimated voxel activity at the time of the outcome for each trial and tested for multivariate patterns of the causal choice in the lOFC, using the same procedures described in the main text (see Methods). We began by drawing 1000 samples of participants of size N, with replacement, for values of N ranging from 15 to 25. We then tested for significant decoding of the causal choice within each subset using small-volume TFCE correction. Finally, we calculated the proportion of these samples that were at or below a significance level of pTFCE <0.05.
+
+#### Pending item representations in lFPC during indirect transitions predict credit assignment in lOFC
 
 The indirect transition condition allowed us to test whether similar reinstatement mechanisms, as described above, support credit assignment when choice-outcome transitions are punctuated by interim decisions. We anticipated that the structure of the indirect transition condition would render credit assignment more difficult compared to the direct transition condition; a prediction borne out by our behavioral analysis of learning (Figure 1F). Repeating the causal choice decoding analysis on this condition did not reveal a significant effect in any a priori defined ROI (all pTFCE >0.05 ROI corrected), nor did we find significant decoding elsewhere in the brain (all pTFCE >0.05 whole brain corrected). However, a key attribute of this condition is that causal choices must be held in a pending state during interim choices until a prospective outcome is observed. Thus, we reasoned that the fidelity of credit assignment at the time of feedback would be intimately related to the fidelity with which representations were maintained during the interim decision.
 
 Following previous work suggesting that prospective representations of to-be-completed tasks are supported by lFPC (Burgess et al., 2011; Koechlin and Hyafil, 2007), we predicted that lFPC would hold causal choices in a ‘pending state’ when credit assignment needs to be deferred until the resulting outcome is observed. To test this hypothesis, we used a linear SVM to classify neural activity at the time of feedback based on the immediately preceding choice. Note that in this condition the immediately preceding choice is not the cause of the currently observed outcome, but is the cause of the outcome for which credit will be assigned in the next trial. We call this the ‘pending causal choice’. Our analysis revealed a cluster of voxels specifically within the right lFPC ([x,y,z] = (28, 54, 8), t(19) = 3.74, pTFCE <0.05 ROI-corrected; left hemisphere all pTFCE >0.1, Figure 3A), consistent with right lFPC coding for the pending causal choice at feedback time, precisely when the outcome of the prior choice causal choice needed to be evaluated.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig3-v1.jpg)
+
+**Figure 3.:** (A) Left side shows the analysis scheme for decoding information about the causal choice in ‘pending state’ (pink) in the indirect transition condition. We decoded information about the previous choice during the feedback period, during which the causal choice should be ‘pending’ credit assignment in the next trial. The image on the right shows a coronal slice through a t-statistic map, showing significant decoding in lFPC. (B) The analysis scheme for the information connectivity analysis which uses the trial-by-trial fidelity of causal choice representations in the ‘pending state’ (pink) to predict the fidelity of these same choices when the outcome is observed (purple). The right side shows axial and coronal slices of a t-statistic map showing effects in lOFC and HC. All maps are displayed using the same conventions as Figure 2 and all effects survive small volume correction in a priori defined anatomical ROIs (for whole brain analysis, see Figure 3—figure supplement 2). (C) Axial (left) and coronal (right) slices through a t-statistic map showing the results of a control analysis in which we test the proportion of correct classifications of causal choice information in OFC and HPC at the time of the outcome for trials in which the lFPC showed correct classification for the causal choice during pending trials. The proportion of correct trials was compared to a permuted baseline of randomly drawn trials for each participant then combined over participants to create a t-statistic. (D) Secondary control analysis in which we reran the classification analysis for causal choice information at the time of outcome, but only on trials where lFPC was found to correctly decode pending causal choice information. Note that this test is different from A because we allowed the classifier to create a new hyperplane separating categories for only those trials in which the lFPC decoding was ‘correct’. For illustration, all maps are displayed at a threshold of t(19)=2.54, p<0.01 uncorrected. All effects survive small volume correction in a priori and functionally defined anatomical ROIs. See Figure 3—figure supplements 1–2 for ROI definition and whole brain searchlight.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) We did not observe significant decoding of the causal choice in a bilateral OFC ROI defined by significant cluster in the indirected transition condition. Thus, we used the accuracy map for decoding choices at feedback during the direct transition condition (t (19)>1.73; p<0.05) in the OFC, averaged across runs. (B) We then used those clusters as ROI for TFCE correction for regions of the lOFC that showed significant information connectivity with lFPC. We did this by testing for significant correlations between the trial-by-trial fidelity of pending representations in the lFPC and causal choice representation during feedback in lOFC (see Methods).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** To ascertain whether additional regions maybe involved in credit assignment beyond those that formed the focus of our study, we repeated the analysis described in Figure 3 but using a whole brain search light procedure. All aspects of the analyses were the same as those previously conducted except that we corrected for multiple comparisons at the whole brain level using TFCE. For the ‘direct transition condition’, we found no additional regions that showed high decoding for the causal choice at the time of outcome. However, for the ‘indirect transition condition’ we identified a region of medial OFC (mOFC) which showed information about the causal choice that was predicted by pending representation in lFPC (pTFCE <.05). The left panel shows a coronal slice through a t-statistic map, thresholded using the same conventions as Figure 3; the right panel shows a sagittal slice through the same map. These results suggest a potential role for mOFC in credit assignment uniquely during the ‘indirect transition condition’.
 
 To test whether pending choice information held in lFPC was directly related to the causal choice information coded during subsequent credit assignment we used an ‘information connectivity’ (IC) analysis, which seeks to identify how information is shared between brain regions (Coutanche and Thompson-Schill, 2013). Specifically, we tested the correlation between the fidelity of the previous choice representation when in a pending state, and the same causal choice representation during subsequent credit assignment. We began using an SVM to classify representations of the causal choice during the interim feedback period in voxels in the lFPC that were shown to code this information in our previous analysis (thresholded at t(19) = 2.54, p<0.01).
 
@@ -73,9 +113,21 @@ Note that this relatively liberal threshold simply allows for the inclusion of m
 
 This analysis revealed strong IC between representations in lFPC at feedback on trial t and the representations in lOFC and HC during feedback on trial t+1. Specifically, we found significant correlations in decoding distance between lFPC and bilateral lOFC ([x,y,z] = [-32,24,–22], t(19) = 3.81, [x,y,z] = [20, 38, -14], t(19) = 3.87, pTFCE <0.05 ROI corrected) and bilateral HC ([x,y,z] = [-28,–10, –24], t(19) = 3.41, [x,y,z] = [22, -10, -24], t(19) = 4.21, pTFCE <0.05 ROI corrected), Figure 3C. Subsequent analyses confirmed that this effect was due to these regions showing a significant increase in positive (correct) decoding in trials where pending information could be positively (correctly) decoded in lFPC, and not simply due to a reduction in incorrect information fidelity (see Figure 3C and D). This finding is consistent with the coding of the causal choice during feedback in lOFC and HC being dependent on that causal choice being faithfully maintained in a pending state in the lFPC.
 
-## HC represents task-independent stimulus identity at feedback
+#### HC represents task-independent stimulus identity at feedback
 
 Next, we tested whether the content of past choice coding at feedback includes a stimulus identity code that is reinstated during credit assignment. To test for task-independent representations of the causal stimuli, we trained a linear SVM to distinguish neural patterns evoked when participants passively viewed each shape in ‘template trials’ (see Methods). Importantly, these were presented outside the context of the learning task and were not connected to a specific action or outcome. We then tested the classifier on neural patterns evoked at the time of feedback during the learning task. This revealed significant decoding of the causal stimulus identity at the time of feedback when averaged across direct and indirect conditions, in the left HC (Figure 4A; [x,y,z] = [-26,–16, –16], t(19) = 5.20, pTFCE <0.001 ROI-corrected; right hemisphere all pTFCE >0.1). Follow-up analyses showed a marginally significant effect in the direct transition condition alone ([x,y,z] = [-24,–16, –14], t(19) = 3.41, pTFCE = 0.08 ROI-corrected), and a significant effect in the indirect transition condition alone ([x,y,z] = [-28,–16, –18], t(19) = 3.65 pTFCE <0.05). These results show that when observing an outcome, the HC reinstates task-independent representations of causal stimuli, suggesting a role for the HC in retrieving the causal stimulus identity during credit assignment.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig4-v1.jpg)
+
+**Figure 4.:** (A - left) Schematic of the decoding procedure. In task-independent ‘template trials’, participants passively viewed images corresponding to the two choice stimuli and two outcome stimuli in the main task (for more information see Figure 4—figure supplement 1). We used these trials to train an SVM to differentiate stimuli outside the task context and then tested for representations of the causal choice stimulus at the time of feedback during the learning task. (A - right) A coronal slice through a t-statistic map showing regions of the HC with significantly above chance decoding for the causal choice stimulus identity at the time of feedback, across conditions. In this figure, ‘CA’ refers to ‘credit-assignment’. (B) Analysis scheme for generating each participant’s overall credit assignment precision. β-values for each participant were taken from the behavioral model predicting current choices given all combinations of the previous three choices and outcomes (Equation 1). Each participant’s pattern of β-values (left side matrices) were correlated with a matrix representing an optimal pattern of regression betas given the task structure (right side matrices). The optimal matrix was a binary matrix with ones where credit should be assigned for a given outcomes and zeros everywhere else. (C) Axial slice through a t-statistic map showing regions where decoding of the stimulus identity was significantly correlated with estimates of credit assignment precision. All maps are displayed using the same conventions as Figure 2 and all effects survive small volume correction in a priori defined anatomical ROIs. See Figure 4—figure supplements 1 and 2 for catch and bonus trials definition.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** To ensure that participants where we included valuable catch trials in the passive observing ‘template task’. Participants were asked to report which image out of the four (2 gift cards and 2 stimuli) was the last one presented on the screen. They were endowed an extra £10 from which we removed £1 for every incorrect response. There were four catch trials per template run.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101841/elife-101841-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** To ensure that participants where we included valuable catch trials in the passive observing ‘template task’. Participants were asked to report which image out of the four (2 gift cards and 2 stimuli) was the last one presented on the screen. They were endowed an extra £10 from which we removed £1 for every incorrect response. There were four catch trials per template run. The decision task included ‘bonus trials’ in which participants could predict which gift card they expected to see on the subsequent feedback screen given their choice. They were given 3£ extra on the final gift card that was given to them for every correct answer. The first run of the direct transition condition had two catch trials; the second run had one. Both runs of the indirect transition condition had one catch trial each.
 
 We reasoned further that if the HC supports credit assignment by evoking task-independent identity representations, then the extent to which this information is coded in the HC should be intimately tied to behavioral estimates of credit assignment precision. Alternatively, identity representations in the HC might support credit assignment processes in lOFC, such that the extent to which this information is represented in lOFC is predictive of precise credit assignment. To test these predictions, we estimated each participant’s overall credit assignment precision by correlating their pattern of β-values from the logistic regression models predicting choice with those of an ‘ideal learner’ (Figure 4B). The pattern for an ideal learner was taken to be 1 for any choice-outcome combination that reflected the true task structure, and 0 everywhere else. Higher correlations between these patterns meant that participants appropriately assigned credit to causal choices without attribution spreading to non-causal choices. We then correlated each participant’s estimated credit assignment precision with the average decoding accuracy in HC and lOFC. We found that there was a significant correlation between credit assignment precision and decoding accuracy of the causal stimulus identity reinstatement in lOFC ([x,y,z] = [–24, 34,–16], t(19) = 3.24, pTFCE <0.05 ROI-corrected), but not HC (all pTFCE >0.09 ROI-corrected; Figure 4C). These results suggest that the extent to which identity information is reinstated in lOFC is directly related to the precision with which participants link appropriate choices and outcomes together.
 
@@ -99,13 +151,58 @@ In conclusion, we find that the lOFC and HC are critical to using model-based kn
 
 ## Methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>https://www.mathworks.com;RRID:SCR_001622</td>
+      <td>Matlab2018a</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Presentation</td>
+      <td>Neurobehavioral Systems</td>
+      <td>http://neurobs.com;RRID:SCR_002521</td>
+      <td>Version 18.1</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>LIBSVM</td>
+      <td>Chang and Lin, 2011</td>
+      <td>http://www.csie.ntu.edu.tw/~cjlin/libsvm;RRID:SCR_010243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MarsBaR</td>
+      <td>Brett et al., 2002</td>
+      <td>http://marsbar.sourceforge.net/;RRID:SCR_009605</td>
+      <td>Ver. 0.44</td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Twenty participants (11 females; 9 males; mean age = 23.5) were recruited from the general population around University College London to participate in the study. This sample size was commensurate with previous studies similar in design (Boorman et al., 2016; Howard et al., 2015; Jocham et al., 2016). Using an independent, unpublished data set, we conducted a power analysis for the desire neural effect in lOFC. We found that this number of participants had 84% power to detect this effect (see Figure 2—figure supplement 4). Participants were paid £10 and obtained a gift card of various amounts depending on their performance in the task. None of the participants reported a history of neurological or psychiatric disorder. All participants spoke fluent English and had normal or corrected-to-normal vision. The study was approved by the UCL Research Ethics Committee (Project ID Number: 3450/002), and all participants gave written informed consent.
 
-## Task design
+### Task design
 
-## Learning task
+#### Learning task
 
 Participants completed a learning task in which they tracked associations between abstract shapes and specific reward identities (gift cards to two different stores), which were rated for approximately equal desirability. In each trial, participants selected one of two abstract shapes, which were randomly presented on either the left or right side of the screen. Decisions were based on two pieces of information: (1) inferred estimates of the probability that a particular shape would lead to each gift card based on the history of previous trials, and (2) the point value of each gift card on the current trial (Figure 1A–C). Participants were informed prior to starting the task that one of the trials would be chosen at random to count ‘for real’ at the end of the experiment. For this trial, they would receive money on the awarded gift card that was commensurate with the number of associated points (number of points divided by four). Point values for each outcome were presented as two numbers at the top of the screen, with the color of each number indicating the associated gift card identity. Their position relative to each other (top or bottom) was determined randomly on each trial.
 
@@ -115,15 +212,15 @@ Each trial began with viewing the two possible choices for 0.5 s, during which s
 
 Participants did not have any prior knowledge about choice-outcome associations or how quickly these associations might change, but they knew that they could change throughout the task. Therefore, participants needed to infer both the current associative contingency for each shape and when these contingencies changed from their history of choices and observed outcomes.
 
-## Template task
+#### Template task
 
 Each run of the scanning session began with a ‘template task’. In this task, participants passively viewed a sequence of all four stimuli (two shapes and two gift cards), individually presented in random order. To ensure that participants were paying attention during passive viewing, they were presented with four ‘catch trials’ which occurred at random between images (see Figure 4—figure supplement 1). In catch trials, all four stimuli were presented simultaneously, and participants were asked to indicate which stimulus had just been presented (see Figure 4—figure supplement 2). Participants were told they could earn an additional £10 on the selected gift card if they responded correctly. However, they would be deducted £1 for each incorrect response or for not making responses in time (max response time = 3 s). Average accuracy for these catch trials was generally high (mean = 0.75, std = 0.15). Participants viewed each item for 1 s followed by a 2.5 s ISI.
 
-## Stimuli
+#### Stimuli
 
 Two visually distinct abstract shapes were used as choice objects. These shapes were randomly assigned to serve as S1 or S2 for each participant. The two gift cards were chosen to serve as reward identities during the experiment from six different possible gift cards (iTunes, Argos, Blackwells, Marks & Spencers, Boots, and Starbucks). Each participant rated the six gift cards on a scale from 0 (not preferable) to 100 (extremely preferable). The two gift cards were selected to have the minimal difference in ratings among the highest rated gift cards. This was done to prevent a strong preference for one outcome over the other. All stimuli were presented on a computer running Presentation software (Version 18.1, https://www.neurobs.com/).
 
-## Task-schedule and procedure
+#### Task-schedule and procedure
 
 We generated a reward schedule that predetermined the outcome obtained for each choice on each trial, but this schedule was unknown to the participants. We optimized the schedule such that an ideal Bayesian learner (see Bayesian Computational model) would choose each shape and receive each outcome approximately an equal number of times (percent of overall trials where S1 was chosen was between 42% and 57%). This was done to reduce the potential for sampling bias in planned multivariate analyses. The schedule of outcomes for each shape was generated with independently drifting probabilities so participants could not learn anything about one shape from observing the outcome of the other shape (see Figure 1—figure supplement 1).
 
@@ -131,61 +228,115 @@ Participants completed three scanning runs in one session. The first two runs be
 
 In each run, we included three ‘bonus trials’ (two in the direct transition condition and one in the indirect transition condition), distributed throughout choice trials, which occurred between a choice and the outcome. Participants were shown the two gift cards on either side of a question mark and were given the chance to predict which outcome they would receive in the upcoming feedback period. For each correct gift card prediction, they received an additional £3 on the gift card they would receive at the end.
 
-## Behavioral training
+#### Behavioral training
 
 Prior to each scanning session, participants completed a shortened (76 trials) behavioral training session. In the training session, participants completed a practice version of the choice task, which had a unique reward schedule. Prior to the practice trials, participants were verbally given a ‘comprehension quiz’ to verify they understood key elements of the task, such as the difference between choice-outcome transitions in each condition. Finally, the distribution of ISI and ITI durations for this session was constrained to 2s to 4s.
 
-## MRI data acquisition and preprocessing
+#### MRI data acquisition and preprocessing
 
 The brain images were acquired using a 32-channel head coil from a 3 Tesla Siemens Trio scanner. We used a T2*-weighted echo-planar imaging (EPI) sequence to collect 43 2 mm slices in ascending order, with 1 mm gaps. The in-plane resolution was of 3x3 mm, with a repetition time (TR) of 3.01 s and echo-time (TE) of 70ms. We set the slice angle to a 30 degree tilt relative to the rostro-caudal axis to minimize signal loss from the lOFC (Weiskopf et al., 2006) and applied a local z-shim with a moment of –0.4 mT/m to the OFC. The first five volumes of each block were discarded to allow for T1 equilibration effects. For accurate registration of the EPI to a standard space, we acquired a T1-weighted anatomical scan with a magnetization-prepared rapid gradient echo sequence (MPRAGE) with a 1×1 × 1 mm resolution. Finally, to measure and correct for geometric distortions due to susceptibility-induced field inhomogeneities, a whole-brain field map with dual echo-time images (TE1=10ms, TE2=14.76ms, resolution 3×3 × 3 mm) was also acquired.
 
 We performed slice time correction, corrected for signal bias, and realigned functional scans to the first volume in the sequence using a six-parameter rigid body transformation to correct for motion. Images were then spatially normalized by warping participant-specific images to the reference brain in the MNI (Montreal Neurological Institute) reference brain and smoothed using an 8 mm full-width at half maximum Gaussian kernel. Pre-processing was done in SPM12 (Wellcome Trust Centre for Neuroimaging, http://www.fil.ion.ucl.ac.uk/spm) using Matlab 2018a.
 
-## Quantification and statistical analyses
+#### Quantification and statistical analyses
 
-## Regression analysis
+##### Regression analysis
 
-To test whether participants showed a behavioral effect of learning on choice, we fit logistic regression models estimating the influence of past choice-outcome observations on choices in the current trial t. The regression model included the effect of the past three choices (Ct-n) in combination with the past three observed outcomes (Ot-n). For example, Ct-1Ot-1 represents the influence of the most recent choice and the most recent outcome on the current choice. The model estimates the probability of making choice C on trial t given all nine combinations of previous choices and outcomes:(1)p(choice=C)t=β0+β1Ct−1Ot−1+β2Ct−2Ot−1+β3Ct−3Ot−1+β4Ct−1Ot−2+β5Ct−2Ot−2+                      β6Ct−3Ot−2+β7Ct−1Ot−3+β8Ct−2Ot−3+β9Ct−3Ot−3+ϵ
+To test whether participants showed a behavioral effect of learning on choice, we fit logistic regression models estimating the influence of past choice-outcome observations on choices in the current trial t. The regression model included the effect of the past three choices (Ct-n) in combination with the past three observed outcomes (Ot-n). For example, Ct-1Ot-1 represents the influence of the most recent choice and the most recent outcome on the current choice. The model estimates the probability of making choice C on trial t given all nine combinations of previous choices and outcomes:
 
-The value of Ct-n was taken to be 1 if they chose shape S1 on trial t-n and –1 if they chose S2. The value of Ot-n was taken to be 1 if the outcome on trial t-n matched the currently desired outcome, on trial t, and –1 if it did not. The currently desired outcome was assumed to be the outcome with the largest point value in each trial. Thus, the value of Ct-nOt-n for each trial was 1 if choice C led to the currently desired outcome n-trials back and –1 if it did not:(2)Ct−nOt−n={ 1 ifCt−nled to the currently desired outcome−1 ifCt−nled to the currently undesired outcome
+$$
+p(choice=C)_{t}=\beta_{0}+\beta_{1}C_{t−1}O_{t−1}+\beta_{2}C_{t−2}O_{t−1}+\beta_{3}C_{t−3}O_{t−1}+\beta_{4}C_{t−1}O_{t−2}+\beta_{5}C_{t−2}O_{t−2}+                      \beta_{6}C_{t−3}O_{t−2}+\beta_{7}C_{t−1}O_{t−3}+\beta_{8}C_{t−2}O_{t−3}+\beta_{9}C_{t−3}O_{t−3}+ϵ
+$$
+
+The value of Ct-n was taken to be 1 if they chose shape S1 on trial t-n and –1 if they chose S2. The value of Ot-n was taken to be 1 if the outcome on trial t-n matched the currently desired outcome, on trial t, and –1 if it did not. The currently desired outcome was assumed to be the outcome with the largest point value in each trial. Thus, the value of Ct-nOt-n for each trial was 1 if choice C led to the currently desired outcome n-trials back and –1 if it did not:
+
+$$
+C_{t−n}O_{t−n}={ 1 ifC_{t−n}led to the currently desired outcome−1 ifC_{t−n}led to the currently undesired outcome
+$$
 
 We fit separate regression models for each condition in each run for every participant. We then averaged the resulting regression coefficients (β) across runs, resulting the participant specific influence of previous decisions on the current choice.
 
-## Bayesian computational model
+##### Bayesian computational model
 
 We used a Bayesian computational model to predict choices in each trial t based on each participant’s previously observed shape-outcome relationships (i.e. the estimated associative probability), and reward magnitudes in the current trial. We briefly describe the model here, but a full description can be found in Behrens et al., 2007; see also Arulampalam et al., 2002 for a related model.
 
-Since the true probability of the associative contingencies cannot be observed, the model estimated, in a Markovian fashion, the subjective belief that making a given shape (S) would lead to outcome 1 (O1), and to outcome 2 (O2) with the inverse probability:p(S→O1)=pS(3)p(S→O2)=1−pS
+Since the true probability of the associative contingencies cannot be observed, the model estimated, in a Markovian fashion, the subjective belief that making a given shape ($S$) would lead to outcome 1 (O1), and to outcome 2 (O2) with the inverse probability:
 
-where ps denotes the associative probability of a given shape S leading to O1. On each trial (t) the model estimated the current value of pst, based on the previous observations of outcomes y1:t. We modeled beliefs about the likelihood of each contingency as a beta distribution over possible values of pst:(4)β(pSt|V)
+$$
+p(S→O1)=p_{S}
+$$
 
-where pst is the mean of the beta distribution and V=exp⁡(v) describes the variance. A large value of v means that the value of pst is likely to change in the next trial whereas low values of v mean that it is unlikely to change. Here, v is referred to as the ‘volatility’ because it controls the learning rate for shape-outcome associations. The change in the estimated volatility from previous trial to the current trial is controlled by k. This describes the model’s belief that some level of change in the volatility is going to occur in the next trial. Because there are no constraints on values for vt, this distribution can be modeled as a Gaussian:(5)p(vt∨vt−1,K)=N(vt−1,k)
 
-After observing each piece of evidence about the contingency between shape S and the outcome, the estimate of each parameter could then be updated following Bayes rule(6)p(pSt,vt,k)=p(yt|pSt)∫∫[p(pSt−1,vt−1,k|y1:t−1)p(vt|vt−1,k)dvt−1]p(pSt|pSt−1,vt)dpSt−1
 
-This gives us the three-dimension joint probability of the parameters. On each trial, the learner only needs to know the estimated contingency between a shape and outcome which is performed first by marginalizing over v and k:(7)p(pSt)=∫∫p(pSt,vt,k)dvtdk
+$$
+p(S→O2)=1−p_{S}
+$$
 
-And then taking the mean of the resulting distribution.(8)pSt^=∫pStp(pSt)dpSt
+where $p_{s}$ denotes the associative probability of a given shape $S$ leading to O1. On each trial (t) the model estimated the current value of $p_{st}$, based on the previous observations of outcomes $y_{1:t}$. We modeled beliefs about the likelihood of each contingency as a beta distribution over possible values of $p_{st}$:
 
-For each participant, we initialized the model with a uniform prior over the entire parameter space. All integral computations are performed using numerical grid integration. We then used the prior belief in the associative contingencies pSt^ to compute the expected value of each shape on each trial according to the following formula:(9)EvSt=[pSt^mO1tα]+[[1−pSt^]mO2t[1/α]]
+$$
+\beta(p_{St}|V)
+$$
 
-where α was a free parameter and reflected a participant’s preference for O1 over O2 (0< α <2), and mO1t and mO2t indicated the reward magnitudes of the outcome available in the current trial, t. We then measured the likelihood of each participants choice on each trial according to a SoftMax function:(10)p(choice=S1)=ebEvS1t(ebEvS1t+ebEvS2t)−1
+where $p_{st}$ is the mean of the beta distribution and $V=exp⁡(v)$ describes the variance. A large value of $v$ means that the value of $p_{st}$ is likely to change in the next trial whereas low values of $v$ mean that it is unlikely to change. Here, $v$ is referred to as the ‘volatility’ because it controls the learning rate for shape-outcome associations. The change in the estimated volatility from previous trial to the current trial is controlled by $k$. This describes the model’s belief that some level of change in the volatility is going to occur in the next trial. Because there are no constraints on values for $v_{t}$, this distribution can be modeled as a Gaussian:
 
-where the free parameter b, captured the level of sensitivity of choices to expected values (inverse temperature; 0<b<1). Free parameters were fitted using Markov Chain Monte Carlo (see below).
+$$
+p(v_{t}∨v_{t−1},K)=N(v_{t−1},k)
+$$
 
-## Value-based RL- model
+After observing each piece of evidence about the contingency between shape S and the outcome, the estimate of each parameter could then be updated following Bayes rule
 
-This model estimated the value of each shape given the history of rewards received from choosing the shape. The value of each shape was initiated at 0, then updated using the following equation:(11)VSxt=VSxt−1+δ(αRt−VSxt−1)
+$$
+p(p_{St},v_{t},k)=p(y_{t}|p_{St})\int\int[p(p_{St−1},v_{t−1},k|y_{1:t−1})p(v_{t}|v_{t−1},k)dv_{t−1}]p(p_{St}|p_{St−1},v_{t})dp_{St−1}
+$$
 
-where Rt is the magnitude of the reward on trial t and α is an individual difference term estimating a participant preference for one outcome over the other (0< α <2). The learning rate (δ) was estimated for each participant to capture the magnitude of the update (0< δ <1). We entered these values into a SoftMax function to generate choice probabilities:(12)p(choice=S1)=ebVS1t(ebVS1t+ebVS2t)−1
+This gives us the three-dimension joint probability of the parameters. On each trial, the learner only needs to know the estimated contingency between a shape and outcome which is performed first by marginalizing over $v$ and $k$:
 
-where the free parameter b, captured the level of sensitivity of choices to expected values (inverse temperature; 0<b<1). Free parameters were fitted using Markov Chain Monte Carlo (see below). Note that learning failures are not trivial to identify in our paradigm and model, because every choice is based on a participant’s preference between gift card outcomes, and the ability of the computational model to accurately estimate participants’ beliefs in the stimulus-outcome transition probabilities.
+$$
+p(p_{St})=\int\intp(p_{St},v_{t},k)dv_{t}dk
+$$
 
-## Parameter estimates
+And then taking the mean of the resulting distribution.
 
-The Bayesian learning model has two free parameters, α and b. The value RL-model had an additional parameter δ. We fit these parameters independently for each participant using custom Markov Chain Monte Carlo (MCMC) code in MATLAB R2018a. Model parameters were bounded by the following: [0<α<2], [0<b<1], [0< δ <1] and were initialized at α=1 and b=0.5, δ=0.5. Each model was fit to maximize the likelihood of a participant’s choices given model estimates of the expected value of each choice on each trial (Equation 10; Equation 12).
+$$
+p_{St}^=\intp_{St}p(p_{St})dp_{St}
+$$
 
-## Multivariate decoding of causal choice and pending causal choice representations
+For each participant, we initialized the model with a uniform prior over the entire parameter space. All integral computations are performed using numerical grid integration. We then used the prior belief in the associative contingencies $p_{St}^$ to compute the expected value of each shape on each trial according to the following formula:
+
+$$
+Ev_{St}=[p_{St}^m_{O1t}\alpha]+[[1−p_{St}^]m_{O2t}[1/\alpha]]
+$$
+
+where $\alpha$ was a free parameter and reflected a participant’s preference for O1 over O2 (0< $\alpha$ <2), and $m_{O1t}$ and $m_{O2t}$ indicated the reward magnitudes of the outcome available in the current trial, t. We then measured the likelihood of each participants choice on each trial according to a SoftMax function:
+
+$$
+p(choice=S1)=e^{bEv_{S1t}}(e^{bEv_{S1t}}+e^{bEv_{S2t}})^{−1}
+$$
+
+where the free parameter $b$, captured the level of sensitivity of choices to expected values (inverse temperature; 0<$b$<1). Free parameters were fitted using Markov Chain Monte Carlo (see below).
+
+### Value-based RL- model
+
+This model estimated the value of each shape given the history of rewards received from choosing the shape. The value of each shape was initiated at 0, then updated using the following equation:
+
+$$
+VS_{xt}=VS_{xt−1}+\delta(\alphaR_{t}−VS_{xt−1})
+$$
+
+where $R_{t}$ is the magnitude of the reward on trial t and α is an individual difference term estimating a participant preference for one outcome over the other (0< α <2). The learning rate ($\delta$) was estimated for each participant to capture the magnitude of the update (0< $\delta$ <1). We entered these values into a SoftMax function to generate choice probabilities:
+
+$$
+p(choice=S1)=e^{bVS_{1t}}(e^{bVS_{1t}}+e^{bVS_{2t}})^{−1}
+$$
+
+where the free parameter $b$, captured the level of sensitivity of choices to expected values (inverse temperature; 0<$b$<1). Free parameters were fitted using Markov Chain Monte Carlo (see below). Note that learning failures are not trivial to identify in our paradigm and model, because every choice is based on a participant’s preference between gift card outcomes, and the ability of the computational model to accurately estimate participants’ beliefs in the stimulus-outcome transition probabilities.
+
+#### Parameter estimates
+
+The Bayesian learning model has two free parameters, α and $b$. The value RL-model had an additional parameter $\delta$. We fit these parameters independently for each participant using custom Markov Chain Monte Carlo (MCMC) code in MATLAB R2018a. Model parameters were bounded by the following: [0<α<2], [0<$b$<1], [0< $\delta$ <1] and were initialized at α=1 and $b$=0.5, $\delta$=0.5. Each model was fit to maximize the likelihood of a participant’s choices given model estimates of the expected value of each choice on each trial (Equation 10; Equation 12).
+
+#### Multivariate decoding of causal choice and pending causal choice representations
 
 Using multivariate pattern analysis (MVPA), we aimed to identify regions of the brain that coded knowledge of causal choices during the feedback period. To test this, we estimated the BOLD activity patterns during the feedback phase for each trial using unsmoothed preprocessed images. The feedback periods were modeled as boxcars that had a constant duration lasting 2000ms from the onset of the outcome presentation in each trial. The GLM also included regressors for the decision period (modeled as boxcars with a duration equal to RT) and template presentations (modeled as boxcars with a 1000ms duration). No parametric modulators were added. Each trial was labeled according to which shape was chosen during the choice period (either S1 or S2). For our analysis of ‘pending’ representations in the indirect transition condition, we linked these labels to the immediately following, interim feedback phase - a time when participants should be delaying credit assignment in anticipation of assigning credit in the next trial.
 
@@ -195,7 +346,7 @@ Group-level analyses were performed using a one-sample t-test on accuracy maps a
 
 To ensure that participants where we included valuable catch trials in the passive observing ‘template task’. Participants were asked to report which image out of the four (2 gift cards and 2 stimuli) was the last one presented on the screen. They were endowed an extra £10 from which we removed £1 for every incorrect response. There were four catch trials per template run. –5. We corrected for multiple comparisons using small volume correction TFCE. The threshold for significance remained the same in all analyses (pTFCE <0.05).
 
-## Multivariate analyses of information connectivity between regions
+#### Multivariate analyses of information connectivity between regions
 
 To test whether decoding of the causal choice at feedback in the indirect transition condition depended on the strength of ‘pending’ representations held during the interim trial, we tested whether the fidelity of representations of the pending causal choice in lFPC was associated with the fidelity of those same choices at the time of credit assignment (i.e. in the feedback phase of the next trial). We used the same decoding procedure mentioned above to classify voxel patterns at feedback in each trial, but additionally calculated the distance of each pattern from the hyperplane that divides categories. Distances were obtained using the equation specified on the LIBSVM webpage (https://www.csie.ntu.edu.tw/~cjlin/libsvm/faq.html). Patterns that are more distant from the hyperplane can be thought of as having higher fidelity, and those that are closer to the hyperplane as having less (Schuck and Niv, 2019). We then signed the distance of each point according to whether the predicted category label was correct (+for correct, – for incorrect).
 
@@ -205,16 +356,16 @@ To confirm that this correlation did not simply arise because the classifier in 
 
 Group-level analyses were performed by Fisher-z transforming the correlation values then using a one-sample t-test on each voxel. We corrected for multiple comparisons using TFCE correction on the resulting volumes within a priori defined ROIs. The same thresholds were applied for group level statistical correction (pTFCE <0.05).
 
-## Multivariate analyses of identity codes during credit assignment
+#### Multivariate analyses of identity codes during credit assignment
 
 To test whether the task-independent identity of the causal choice was reinstated during feedback, we trained a linear SVM to decode representations of causal choice stimuli but trained the classifier during periods when participants passively viewed the stimuli outside of the task context (see ‘Template trials’). In each condition the SVM was trained on all the trials of the three template runs and tested during the feedback period of the learning task. For each participant and in each trial, we estimated the BOLD activity patterns using the same GLM as described above (see ‘Multivariate decoding of causal choice and pending causal choice representations’). Further, we used the same procedure in which we randomly permuted the training labels 100 times to create a null distribution of decoding accuracy. We then averaged decoding accuracy over runs and subtracted the mean of the null distribution from the true decoding accuracy of the classifier.
 
 To test for associations between credit assignment precision and causal choice identity decoding accuracy, we first generated estimates of credit assignment precision based on each participant’s behavior during the task. For each participant we created a behavioral matrix, which included β-values from nine combinations of possible choice-outcome relationships used to assign credit when an outcome is observed (see ‘Regression model’). For the direct transition condition, values along the diagonal of this matrix represent appropriate credit assignment given the task structure and should have high positive values if the participant is assigning credit precisely. All other values should be near 0. A similar matrix can be generated for the indirect transition condition, but appropriate for the causal structure of this condition (see Figure 1E). Next, we created a comparison matrix based on an idealized learner, with values of 1 in each cell that represented appropriate credit assignment for the condition, and values of 0 for non-causal relationships. We then correlated each participant specific behavioral matrix with the comparison matrix. High correlation values represent more precise credit assignment, and the average across conditions was taken to be a measure of the overall credit precision in the learning task. We then regressed each participant’s overall credit precision estimate against voxel-level decoding accuracy across participants. We corrected for multiple comparisons using TFCE correction to volumes within pre-defined ROIs. The same thresholds were applied for group-level statistical correction (pTFCE <0.05).
 
-## Group-level statistical inference
+#### Group-level statistical inference
 
 Group-level testing was done using a one-sample t-test (df = 19) on the cumulative functional maps generated by the first-level analysis. All first-level maps were smoothed prior to being combined and tested at the group level. To correct for multiple comparisons, we first extracted voxels from each ROI in each participant’s first-level activation map, then applied Threshold-Free Cluster Enhancement (TFCE) which uses permutation testing and accounts for both the height and extent of the cluster (Smith and Nichols, 2009). All parameters were set to default parameters (H=2, E=0.5) and used 5000 permutations for the analysis. We report effects that surpassed a pTFCE <0.05 threshold in each ROI.
 
-## Region of interest selection
+#### Region of interest selection
 
 Regions of interest in the prefrontal cortex were generated from anatomically defined regions with unique functional connectivity fingerprints (Neubert et al., 2015). The lOFC ROIs corresponded to bilateral area BA11 (indexes 9 and 30). We included these regions because they have been previously implicated in credit assignment for causal choices, particularly in similar contingency learning tasks (Boorman et al., 2016; Jocham et al., 2016). For the lFPC, we used indexes 14 and 35. All of these ROIs were threshold at 60% inclusion criteria, although our results did not qualitatively change at different thresholds. Finally, we used a priori anatomically defined bilateral HC ROIs to test for effects in hippocampus (Yushkevich et al., 2015). These ROIs are illustrated in Figure 2—figure supplement 1.

@@ -22,21 +22,53 @@
 
 ## Abstract
 
-10.7554/eLife.39163.001 The biogenesis of 60S ribosomal subunits is initiated in the nucleus where rRNAs and proteins form pre-60S particles. These pre-60S particles mature by transiently interacting with various assembly factors. The ~5000 amino-acid AAA+ ATPase Rea1 (or Midasin) generates force to mechanically remove assembly factors from pre-60S particles, which promotes their export to the cytosol. Here we present three Rea1 cryoEM structures. We visualise the Rea1 engine, a hexameric ring of AAA+ domains, and identify an α-helical bundle of AAA2 as a major ATPase activity regulator. The α-helical bundle interferes with nucleotide-induced conformational changes that create a docking site for the substrate binding MIDAS domain on the AAA +ring. Furthermore, we reveal the architecture of the Rea1 linker, which is involved in force generation and extends from the AAA+ ring. The data presented here provide insights into the mechanism of one of the most complex ribosome maturation factors.
+The biogenesis of 60S ribosomal subunits is initiated in the nucleus where rRNAs and proteins form pre-60S particles. These pre-60S particles mature by transiently interacting with various assembly factors. The ~5000 amino-acid AAA+ ATPase Rea1 (or Midasin) generates force to mechanically remove assembly factors from pre-60S particles, which promotes their export to the cytosol. Here we present three Rea1 cryoEM structures. We visualise the Rea1 engine, a hexameric ring of AAA+ domains, and identify an α-helical bundle of AAA2 as a major ATPase activity regulator. The α-helical bundle interferes with nucleotide-induced conformational changes that create a docking site for the substrate binding MIDAS domain on the AAA +ring. Furthermore, we reveal the architecture of the Rea1 linker, which is involved in force generation and extends from the AAA+ ring. The data presented here provide insights into the mechanism of one of the most complex ribosome maturation factors.
 
 ## Introduction
 
 Eukaryotic ribosome assembly is tightly controlled by more than 200 assembly factors to ensure faithful protein synthesis (Thomson et al., 2013). During the initial stages of ribosome biogenesis, rRNAs, ribosomal proteins, and assembly factors associate into nucleolar pre-60S particles, which ultimately mature into functional large ribosomal subunits in the cytosol (Kressler et al., 2010). The AAA+ (ATPases Associated with various cellular Activities) family member Rea1 (or Midasin) consists of nearly 5000 amino acids and generates force to mechanically remove assembly factors. Rea1 pulls out the Ytm1 complex (Tang et al., 2008; Sahasranaman et al., 2011) to promote the transfer of pre-60S particles from the nucleolus to the nucleoplasm (Bassler et al., 2010) (Figure 1A). Rea1 also removes the assembly factor Rsa4 (Ulbrich et al., 2009), which triggers a signalling pathway that ultimately recruits RanGTP to pre-60S particles to export them to the cytosol (Ulbrich et al., 2009; Matsuo et al., 2014) (Figure 1A). Rea1-mediated Rsa4 removal might also indirectly remodel the important H89 rRNA helix of the peptidyltransferase centre into its correct position (Leidig et al., 2014; Bradatsch et al., 2012; Baßler et al., 2014). Despite its crucial importance for pre-60S particle maturation, the Rea1 structure and mechanism have remained largely enigmatic.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic representation of the reactions catalysed by Rea1. (B) Cartoon representation of the Rea1 structure showing the N-terminal domain, the AAA+ ring as well as the stem, middle and top domains of the linker. The top3 domain is an insertion of the top2 domain. The C-terminal D/E-rich region and the MIDAS domain of the tail are not visible as indicated by their transparent representation. (C) Front (left panel) and side view (right panel) of the Rea1 structure. The AAA2L-H2α insert occupies the central pore of the AAA+ ring. The linker region of the tail emerges at an angle of about 120° from the AAA +ring. (D) Colour-coded primary sequence representation of Rea1 domains.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Fourier shell correlation (FSC) plot for half-maps of the NTD-AAA+ ring reconstruction. The 0.143 FSC criteria is indicated as horizontal blue line. The final overall resolution is 4.4 Å. (B) Local resolution of the NTD-AAA+ ring reconstruction. (C) Model vs map FSC curves for final NTD-AAA+ ring model versus final NTD-AAA+ ring map. (D) Fourier shell correlation (FSC) plot for half-maps of the linker reconstruction. The 0.143 FSC criteria is indicated as horizontal blue line. The final overall resolution is 3.9 Å. (E) Local resolution of the linker reconstruction. (F) Model vs map FSC curves for final linker model versus final linker map.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** The insets show the map quality in the linker top (purple), the linker middle domain (pink), the linker stem (violet), AAA6L (red) and AAA3L (green).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** The identified peptides of S. cerevisiae Rea1 are shown in yellow. Methionine and cysteine residues highlighted in green indicate mass shifts due to sulphur oxidation. The sequence coverage level is 55%.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Core architecture of AAAL domains. Secondary structure elements are labelled for AAA1L. All Rea1 AAAL’s have β-sheet inserts in H2 as well as between H3 and S4 (red, grey for AAA6L) In AAA2L, AAA4L, and AAA6L the H2 β-sheet is extended by an α-helical bundle. For the AAA2L H2 α-helical bundle, four out of the five predicted α-helices can be located in the cryoEM maps. The predicted three α-helices of the AAA4L H2 α-helical bundle cannot be assigned in the maps. Missing regions within the H2 α-helical bundles are indicated by dotted lines. For AAA6L, all four α-helices of the AAA6L H2 α-helical bundle are visible. (B) Core architecture of the AAAS domains. Secondary structure elements are labelled for AAA1S. The core of all small domains consists of five α-helices. AAA6S is not present in Rea1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) In the Rea1 AAA+ ring each AAAL domain is tightly associated with the AAAS domain of the previous AAA+ module to form the following modules: AAA2: AAA2L-AAA1S, AAA3: AAA3L-AAA2S, AAA4: AAA4L-AAA3S, AAA5: AAA5L-AAA4S, and AAA6: AAA6L-AAA5S. The AAA1 module only exists of AAA1L because an AAA6S domain does not exist in Rea1. (B) The AAA+ nucleotide binding sites are located at the interface between neighbouring AAA+ domains. Each AAAL domain binds ATP via its Walker-A motif at the H1 helix. H4 of the neighbouring AAAL domain carries an arginine finger that promotes ATP-hydrolysis. For ATP hydrolysis to occur, both domains have to come together to bring the arginine finger at H4 into close contact with the nucleotide bound at the Walker-A motif of H1. The nucleotide-binding sites of Rea1 AAA1 (consisting of AAA1L/AAA1S/AAA2L), AAA4 (consisting of AAA4L/AAA4S/AAA5L), and AAA6 (consisting of AAA6L/AAA1L) are shown. Sites AAA1 and AAA6 are closed. The AAA4 site has an unusual architecture because AAA4L is rotated with respect to AAA5L (see main text). Sites AAA2, AAA3 and AAA5 are shown in Figure 2. (C) Schematic representation of an AAA+ nucleotide binding site. H1 carries the Walker-A motif (GKT) responsible for ATP binding. The C-terminal tip of S3 carries the Walker-B motif (DE) that activates a water molecule for the nucleophilic attack on the ATP γ-phosphate. H4 of the neighbouring AAAL domain (AAAL*) carries the arginine finger that stabilises the ATP-hydrolysis transition state. (D) The Walker-A, the Walker-B and the arginine finger motifs of Rea1 AAA+ domains. AAA1 and AAA6 lack the Walker-B motifs and cannot hydrolyse ATP at their sites. The arginine finger at AAA1 for S. cerevisiae Rea1 is not conserved in other species.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Nucleotide density of the AAA1 site. (B) Nucleotide density at the AAA6 site. The densities are consistent with an ADP molecule (shown in balls and stick representation).
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** To analyse the degree of site closure, we compared the distance between the terminal phosphate or vanadate group of the nucleotide and the H4 α-helix, which harbours the arginine finger motif. In Rea1, this distance is (A) 9.6 Å for the AAA1, and (B) 8.1 Å for the AAA6 site. In dynein (PDB-ID: 4RH7), the H4-nucleotide distance is (C) 7.7 Å in the completely closed AAA1 site, and (D) 12.4 Å in the more open AAA3 site. This comparison suggests that the Rea1 AAA6 site is already completely closed in the ADP state, whereas the Rea1 AAA1 site might further close when bound to ATP.
+
 Rea1 consists of an N-terminal α-helical domain (NTD), a ring of six AAA+ domains, and the C-terminal tail (Ulbrich et al., 2009; Barrio-Garcia et al., 2016; Wu et al., 2016). The Rea1 tail is subdivided into an α-helical linker region, a D/E-rich region, and a MIDAS (Metal-Ion-Dependent Adhesion Site) domain which is responsible for the interaction with the Ytm1 and Rsa4 substrates (Bassler et al., 2010; Ulbrich et al., 2009; Kressler et al., 2012). Rea1-mediated Ytm1 and Rsa4 removal is ATP dependent (Bassler et al., 2010; Ulbrich et al., 2009). In analogy to other AAA+ family members, it has been proposed that ATP binding and hydrolysis in the AAA +ring is coupled with conformational changes within the Rea1 molecule that generate the force for assembly factor removal (Ulbrich et al., 2009; Kressler et al., 2012). Pioneering negative stain electron microscopy studies have revealed that the Rea1 tail can extend from the AAA+ ring but is also able to adopt AAA+ ring proximal conformations (Ulbrich et al., 2009). The latter tail conformations could bring the MIDAS domain close to its assembly factor substrates when Rea1 is bound to pre-60S particles (Ulbrich et al., 2009). It has been proposed that switching between these different tail conformations might produce the force for the removal of Ytm1 and Rsa4 assembly factors (Kressler et al., 2012). However, in the absence of high-resolution information, it is unclear what the structure of the Rea1 AAA+ engine looks like, what the molecular architecture of the tail is and how Rea1 binds to its substrates.
 
 ## Results
 
-## Overall structure
+### Overall structure
 
 To provide insights into these open questions, we have determined the S. cerevisiae Rea1 structure in complex with ADP by CryoEM, which revealed the NTD, the AAA+ ring, as well as the linker part of the Rea1 tail (Figure 1B,C,D). Focused refinement of the NTD-AAA+ ring area and the linker resulted in two cryoEM maps with resolutions of 4.4 Å and 3.9 Å, respectively (Figure 1—figure supplement 1A–F, Figure 1—figure supplement 2 and Supplementary file 1). In the NTD-AAA+ ring map, the main-chain is well-resolved in the NTD, AAA1, AAA2, as well as AAA6, and side-chains are occasionally visible (Figure 1—figure supplement 2). The AAA3-AAA5 part of the AAA +ring is more flexible, but still allowed docking of AAA+ domains into the map (Figure 1—figure supplement 2). The Rea1 linker map revealed side-chains throughout (Figure 1—figure supplement 2). The D/E-rich region and the MIDAS domain that follows are not resolved. Mass spectrometry analysis indicates that these regions are present in purified Rea1 (Figure 1—figure supplement 3) suggesting their absence is due to the intrinsic flexibility of D/E-rich regions (Romero et al., 2001).
 
-## Structure of the Rea1 AAA +ring
+### Structure of the Rea1 AAA +ring
 
 The AAA+ ring domains, AAA1-AAA5, are each subdivided into an α/β large domain (AAAL), consisting of five α-helices and five β-strands (H0-H4, S1-S5), and a small domain (AAAS) made up of an α-helical bundle containing five α-helices (H5-H9) (Figure 1—figure supplement 4A,B). All AAALs have β-sheet inserts in H2 as well as in between H4 and S3. In the case of AAA2L, AAA4L, and AAA6L, the H2 β-sheet is extended by α-helical bundles (H2α) of which AAA2L-H2α and AAA4L-H2α are partially disordered (Figure 1—figure supplement 4A). Like in other AAA +machines, the Rea1 ring AAA+ domains are arranged as inter-domain modules. Each AAAL, except AAA1L, is tightly associated with the AAAS of the previous domain (Figure 1—figure supplement 5A). AAA1L would be expected to interact with AAA6S, but this domain is absent in Rea1 and its place is taken by the NTD.
 
@@ -48,11 +80,23 @@ In order to determine the degree of closure at the Rea1 AAA1 and AAA6 sites, we 
 
 In contrast to the AAA1 and AAA6 sites, the AAA2 and AAA5 nucleotide-binding sites of the Rea1 AAA+ ring are wide open as indicated by large gaps between modules AAA2/AAA3 and AAA5/AAA6 (Figure 2A,B,C). The open state of the latter sites is stabilised by the AAA2L-H2α insert which sits in the AAA+ ring centre. The β-sheet base of AAA2L-H2α is interacting with the AAA1L H2-β-sheet (Figure 2—figure supplement 1A) and the α-helices of AAA2L-H2α contact the tips of the AAA3L and AAA5L H2-β-sheets to prevent the closure of the AAA2 and AAA5 sites (Figure 2B,C and Figure 2—figure supplement 1A,B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig2-v3.jpg)
+
+**Figure 2.:** (A) Architecture of the Rea1 AAA+ ring. For clarity, only AAAL domains are shown. Gaps exits between AAA2L/AAA3L, AAA3L/AAA4L and AAA5L/AAA6L (black arrows) indicating that nucleotide binding sites AAA2, AAA3 and AAA5 are open. The cartoon in the upper box establishes the view with respect to Figure 1C left panel. (B) Open AAA2 and (C) open AAA5 nucleotide-binding sites. In both cases, contacts between AAA2L-H2α and the AAA3L or AAA5L H2 β-sheets prevent site closure. (D) AAA4L is rotated with respect to AAA5L (see main text). The rotation moves its ATP-binding H1 α-helix (red) away from the AAA5L H4 α-helix (purple), which carries the R-finger to support ATP-hydrolysis at the AAA4 nucleotide site. The distance is indicated by the black arrow. For clarity parts of AAA5L and AAA4L are not shown. (E) Open AAA3 nucleotide-binding site. The gap between AAA3L and AAA4L is stabilized by contacts between AAA2L-H2α and the H2 β-sheets of AAA3L and AAA4L. (F) ATPase rates for wild type Rea1 (WT) and the AAA6L-H2α (ΔAAA6L-H2α) as well as AAA2L-H2α (ΔAAA2L-H2α) deletion mutants. Deleting AAA6L-H2α decreases the Rea1 ATPase rate, while deleting AAA2L-H2α leads to a 10–15-fold increase in ATPase activity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The AAA2L H2 β-sheet interacts with the AAA1L H2 β-sheet. AAA2L-H2α contacts the tip of the AAA3L H2 β-sheet to keep the AAA2 site open. (B) AAA2L-H2α also contacts the tip of the AAA5L H2 β-sheet to stabilise the open AAA5 site. (C) AAA2L-H2α stabilises the open AAA3 nucleotide-binding site by contacting the AAA3L and AAA4L H2 β-sheets. AAA2L-H2α contacts the full length of the AAA4L H2 β-sheet and enforces a rotation of AAA4L (see main text). Only the β-sheet part of the AAA4L-H2α insert is visible. Its α-helical bundle cannot be assigned in the map. All H2-β-sheets are shown in red.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) In the Rea1 AAA+ ring, the H3 α-helices of AAA1L, AAA2L, AAA3L, AAA5L and AAA6L (red) point towards the pore of the AAA+ ring. The orientation of AAA4L (yellow) deviates from the orientation of the other AAA+ domains in the ring. It is rotated towards AAA5L as indicated by its H3 α-helix that points towards AAA5L rather than the AAA+ ring centre. For clarity only the AAAL domains of the AAA+ ring are shown and all inserts have been removed. (B) Comparison of Rea1 AAA+ ring with the ring of a dynein crystal structure in the ADP state. For clarity, only the AAAL domains are shown. Left panel: In Rea1, the AAA1L, AAA2L and AAA6L domains are more tightly associated and form one half of the AAA+ring. AAA3L, AAA4L, and AAA5L form the more loosely associated second half. The AAA1L-AAA2L + AAA6L domain block is separated from the AAA3L-AAA5L block by large gaps between AAA2L and AAA3L as well as AAA6L and AAA5L (black arrow heads). The internal organisation of the AAA3L-AAA5L half is characterised by the gap between AAA3L and AAA4L (grey arrow head), as well as the rotation of AAA4L towards AAA5L (both domains are shown in grey, with red H3 helices to indicate their relative orientation with respect to each other). Right panel: The dynein AAA+ ring (PDB-ID: 3VKG) is highly similar. Here, AAA2L-AAA4L form the more tightly packed first half of the ring. The weaker packed second half consists of AAA5L-AAA6L + AAA1L. Large gaps (black arrow heads) separate the two halves. The internal organisation of the second half is characterised by a gap between AAA5L and AAA6L (grey arrow head) and the rotation of AAA6L towards AAA1L (both highlighted in grey with H3 helices in red to indicate the orientation of AAA6L towards AAA1L).
+
 AAA2L-H2α also contacts large parts of the AAA4L H2-β-sheet and enforces a rotation of this domain (Figure 2—figure supplement 1C and Figure 2—figure supplement 2A). As a consequence, AAA4L H1, which bears the ATP-binding Walker-A motif, moves away from AAA5L H4, which provides the arginine finger motif for ATP hydrolysis at the AAA4 site (Figure 2D and Figure 1—figure supplement 5C). Furthermore, the AAA2L-H2α interactions with the AAA4L and AAA3L H2-β-sheets also keep the AAA3 site in an open state (Figure 2A,E and Figure 2—figure supplement 1C).
 
 Our structural analysis suggests that the AAA2L-H2α insert impairs the hydrolytic activity of all functional Rea1 nucleotide binding sites. To provide additional evidence for its inhibitory role, we deleted AAA2L-H2α and determined the ATPase activity of the mutant. In support of our interpretation, the deletion of AAA2L-H2α increased the ATPase rate 10–15 fold compared to wildtype Rea1 (Figure 2F). The increase in ATPase activity was specific for the AAA2L-H2α deletion mutant as deleting the AAA6L-H2α insert did not lead to a drastic change in ATPase activity (Figure 2F).
 
-## Comparison of the Rea1 and dynein AAA+ rings
+### Comparison of the Rea1 and dynein AAA+ rings
 
 Rea1 and dynein form a special subclass within the AAA+ family. Most AAA+ members assemble individual AAA+ domains into hexameric rings. In contrast to this more common way of AAA+ ring formation, Rea1 and dynein have their six AAA+ domains concatenated into a single gene (Garbarino and Gibbons, 2002). To analyse if there are structural similarities between Rea1 and dynein AAA+ ring geometries, we compared the Rea1 cryoEM structure to a high-resolution crystal structure of the dynein ADP state (Kon et al., 2012). The analysis revealed interesting parallels (Figure 2—figure supplement 2B).
 
@@ -62,17 +106,53 @@ A similar open AAA+ ring arrangement can be found for the dynein crystal struct
 
 The dynein AAA+ ring undergoes nucleotide-dependent conformational changes that cause an open-to-closed transition (Schmidt, 2015b). The closed conformation is linked to the remodelling of two AAA+ ring extensions, the dynein linker and the coiled-coil stalk, which are involved in motor force generation and microtubule affinity regulation (Schmidt et al., 2015; Schmidt, 2015b). In order to accommodate to the closed ring conformation, the AAA6 module rotates towards the AAA+ ring centre (Schmidt et al., 2015; Schmidt, 2015b). Given the similarities in the open AAA+ ring geometries of Rea1 and dynein, especially with respect to the rotated AAA4 and AAA6 modules, it is tempting to speculate that a nucleotide-dependent open-to-closed AAA+ ring transition might also exists in the case of Rea1.
 
-## The AAA+ ring – linker interface and the structure of the Rea1 linker
+### The AAA+ ring – linker interface and the structure of the Rea1 linker
 
 The AAA+ ring linker interface is formed by the NTD, AAA6L, as well as the stem domain of the linker (Figure 3A). Within the AAA+ ring linker interface the NTD acts as a scaffold that helps to stabilise the interactions between AAA6L and the linker stem domain by contacting AAA6L-H2α and the N-terminal stem domain region, which sits like a saddle on top of the NTD. In addition to the linker stem, AAA6L also contacts the linker middle domain (Figure 3A), which is located right above the linker stem domain. One of the middle domain α-helices runs along the linker stem towards the AAA+ ring, and a peptide region at its tip contacts the loop leading to a β-sheet that packs against AAA6L (Figure 3A,B). Additional contacts exist with the loop connecting this β-sheet to AAA6L H0 and the peptide linker that connects AAA6L S5 to the linker stem domain (Figure 3A). AAA6L is the only AAA+ ring part directly contacting the Rea1 linker, which puts it in a key position for communicating ATP induced conformational changes from the AAA+ ring into the linker.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig3-v3.jpg)
+
+**Figure 3.:** (A) The AAA+ ring linker interface. Left panel: The N-terminal domain (NTD) acts as a scaffold between AAA6L and the linker stem via interactions with AAA6L-H2α and the N-terminal linker stem region. Right panel: Enlarged view of the AAA6L linker interactions. A β-sheet of AAA6L packs against the linker stem. AAA6L is also contacted by an α-helical extension of the linker middle domain. A short peptide region at its tip interacts with: (I) the loop leading to the AAA6L β-sheet, (II) the loop connecting this β-sheet to AAA6L H0 and (III) the loop connecting AAA6L S5 to the linker stem. (B) Linker middle domain featuring an α-helical as well as a globular extension. (C) The middle domain stabilises the architecture of the linker top. (D) Middle domain core and linker top1 interact through charged and hydrophobic residues. The interfaces between the middle domain globular extension and (E) top1, as well as (F) top3, are mainly hydrophobic. (G) Hydrophobic residues dominate the interface between top1 and top2. Top1 features a bent α-helix (yellow) and its connection to top2 is established via a long peptide region (cyan).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The Rea1 ADP cryoEM structure. (B) 2D projection of the structure shown in A, and low pass filtered to 18 Å. (C) Top to bottom: Negative stain electron microscopy 2D classes of Rea1 published by Ulbrich et al. (2009). The linker appears to be in different conformations and is remodelled with respect to the AAA+ ring at a hinge region indicated by the white arrowheads. The view onto the AAA+ ring in the top panel is highly similar to the views in A and B. Comparing the (C) top panel to (A) and (B) suggests the area between linker stem and middle domain (grey arrowhead) as the hinge region.
 
 In addition to the stem and middle domain, the Rea1 linker also comprises three α-helical bundles at its top (top1-top3) (Figure 1B,C,D). The linker emerges at an angle of roughly 120° from the AAA+ ring (Figure 1C). The 210 Å length of the complete linker fits well with the ~200 Å AAA+ ring extension that bends towards the pre-60S particle when Rea1 is bound to it (Ulbrich et al., 2009), suggesting that the linker is a key element for Rea1 tail remodelling. Previous negative stain EM studies have identified a hinge region within the Rea1 tail that is involved in its remodelling (Ulbrich et al., 2009). Comparing 2D projections of our Rea1 structure to this data suggests the pivot point area is located in the region between middle and stem domains of the linker (Figure 3—figure supplement 1A–C).
 
 The horseshoe-like arrangement of the three linker top domains is stabilised by the middle domain (Figure 3C). Its core contacts top1 via hydrophilic and hydrophobic interactions (Figure 3D) and a globular extension of the middle domain interacts with top1 and top3 via predominantly hydrophobic contacts (Figure 3E,F). Hydrophobic residues also dominate the interface between the top1 and top2 domains (Figure 3G). The various interactions of top1 hold this domain in a strained conformation as indicated by a long, bent α-helix (Figure 3C). The connection between the top1 and the top2 domains is established via an extended ~40 aa peptide region between them, which could provide flexibility during linker remodelling (Figure 3C). The top3 domain is a four α-helix bundle insertion into the linker top2 domain (Figure 1D), and it connects this domain back to the globular extension of the linker middle domain. The central role of the middle domain for the linker top architecture suggest that any conformational change in this linker part will have a major impact on the arrangement of the top domains.
 
-## Insights into the Rea1 nucleotide states
+### Insights into the Rea1 nucleotide states
 
 In order to gain insight into nucleotide-dependent Rea1 linker remodelling, we determined the Rea1 cryoEM structure in the presence of the non-hydrolysable ATP analogue AMPPNP to a resolution of 4.3 Å (Figure 4A, Figure 4—figure supplement 1A–D and Supplementary file 1). The Rea1 AMPPNP state is highly similar to the ADP state. The Rea1 ADP structure can be docked into the cryoEM density with minimal adjustments (Figure 4—figure supplement 1E). The fact that there were no significant conformational changes in the AAA+ ring compared to the ADP state reinforces our interpretation of the AAA2L-H2α insert as an auto-inhibitory element that prevents movement between the AAA+ modules of the ring. Since there was no evidence for linker remodelling in the AMPPNP state, we decided to investigate the alternative APO and ATP nucleotide states by negative stain electron microscopy. However, in these states we also did not observe linker remodelling (Figure 4—figure supplement 2A,B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-v3.jpg)
+
+**Figure 4.:** (A) Front (left panel) and side (middle panel) view of the Rea1 AMPPNP state. The relative orientation of the linker with respect to the AAA+ ring has not changed. The AAA2L-H2α insert sits in the middle of the AAA+ ring (right panel), (B) Front (left panel) and side (middle panel) view of the Rea1_ΔAAA2L-H2α AMPPNP state. The angle between the linker and the AAA+ ring remains at 120°. A cryoEM density consistent with a MIDAS domain is visible above the AAA2S and AAA3S domains. The density for AAA2L-H2α has disappeared and the AAA4L-H2α insert is visible in the middle of the AAA+ ring (right panel) (C) Enlarged view of the MIDAS domain density demonstrating the fit with the integrin alpha-L MIDAS domain (purple cartoon, PDB-ID: 1T0P). Upper panel: front view, lower panel: side view. (D) Side-by-side comparison of the AAA+ rings of the Rea1 (left panel) and the Rea1_ΔAAA2L-H2α (middle and right panel) AMPPNP states. For clarity, only the AAAL domains (cartoon representation) are shown. The colour-coded outline of the AAAL positions of the Rea1 AMPPNP state (left panel) is superimposed on the AAAL positions of the Rea1_ΔAAA2L-H2α AMPPNP state (middle and right panels). For the right panel, AAA4L, and AAA5L were removed to better demonstrate the shift of AAA3L. The black arrow runs through the ring centre and indicates the direction towards the H2α insert side of the ring. Red arrows indicate the shift of the AAAL core. (E) Side view of the area marked by the grey dotted box of the right panel in (B) in transparent surface and cartoon representation. The AAA4L-H2α insert is in close proximity to the AAA5L H2 β-sheet and the AAA6L H3-S4 H2-β-sheet.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fourier shell correlation (FSC) plot for half-maps of the Rea1 AMPPNP reconstruction. The 0.143 FSC criteria is indicated as horizontal blue line. The final overall resolution is 4.3 Å. (B) Model vs map FSC curves for the final Rea1 AMPPNP model versus the final Rea1 AMPPNP map. (C) Local resolution of the Rea1 AMPPNP reconstruction. (D) The final Rea1 AMPPNP model docked into the cryoEM map. (E) Alignment of the Rea1 AMPPNP (colour coded) and Rea1 ADP (grey) structures. Left panel: front view, right panel: side view. The two structures are largely identical.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Front (left panel) and side view (right panel) of the Rea1 APO state. The angle between the linker and the AAA+ ring (red) is marked on right panel. It remains around 120° like in the Rea1 ADP structure. (B) Front (left panel) and side view (right panel) of the Rea1 ATP state. The angle between the linker and AAA+ ring has not changed.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** The left panels represent the front views and the right panels the side views of the (A) APO, (B) AMPPNP, (C) ATP and (D) ADP states of the Rea1_ΔAAA2L-H2α deletion mutant. The angle between the linker and the AAA+ ring (red) is marked at the right panel of (A). It remains around 120° in all investigated states indicating that also Rea1_ΔAAA2L-H2α does not undergo nucleotide depended large scale linker remodelling. The APO and AMPPNP states shown in (A) and (B) have an additional density that extends from the AAA+ ring (red arrows).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** (A) A recently published cryoEM structure of a complex between Rea1 and an Rsa4 containing pre60S particle revealed the location of the Rea1 AAA+ ring on the pre60S particle. The Rea1 linker was flexible with respect to the AAA+ ring as indicated by its weaker density. It also revealed the location of Rsa4 (green). An unidentified density was found to sit right above the Rsa4 MIDO domain. (B) Docking the AAA+ ring of Rea1_ΔAAA2L-H2α APO would place the additional AAA+ ring density directly above the Rsa4 MIDO domain into the so far unidentified density. This suggest that the extra density is the MIDAS domain. Left panel: side view, right panel: front view. (C) Side view of the negative stain electron microscopy reconstruction of the Rea1_ΔAAA2L-H2α APO state. (D) Side view of the negative stain electron microscopy reconstruction of the Rea1_ΔAAA2L-H2α_ΔMIDAS APO state. (E) Side view of the negative stain electron microscopy reconstruction of the Rea1_ΔAAA2L-H2α AMPPNP state. (F) Side view of the negative stain electron microscopy reconstruction of the Rea1_ΔAAA2L-H2α_ΔMIDAS AMPPNP state. Consistent with its interpretation as MIDAS domain, the extra density is not visible in D and F.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Fourier shell correlation (FSC) plot for half-maps of the Rea1_ΔAAA2L-H2α AMPPNP reconstruction. The 0.143 FSC criteria is indicated as horizontal blue line. The final overall resolution is 7.8 Å. (B) Model vs map FSC curves for the final Rea1_ΔAAA2L-H2α AMPPNP model versus the final Rea1_ΔAAA2L-H2α AMPPNP map. (C) Local resolution map of the Rea1_ΔAAA2L-H2α AMPPNP reconstruction. (D) The Rea1_ΔAAA2L-H2α AMPPNP model docked into the cryoEM map. (E) Docking of the Rea1_ΔAAA2L-H2α AMPPNP cryoEM map into the cryoEM map shown in Figure 4—figure supplement 4A would place the MIDAS domain density in direct contact with the MIDO domain of Rsa4. The AAA2S and AAA3S domains of the AAA+ ring contact the 5S rRNA and Rpl11A, respectively.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/39163/elife-39163-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** (A) The Rea1_ΔAAA2L-H2α AMPPNP structure (colour coded) superimposed on the Rea1 AMPPNP structure (grey) Left panel: front view, right panel: side view. The superimposition was done by aligning the NTD, AAA1, AAA6 and the linker. Rearrangements are evident for the AAA2, AAA3, AAA4 and AAA5 modules. For clarity, the MIDAS domain has been removed (B) Conformational rearrangements leading to the creation of the MIDAS docking site. In the alignment shown in (A), the AAA3 and AAA4 modules, consisting of AAA3L/AAA2S and AAA4L/AAA3S, have moved to create the MIDAS domain binding site above their AAA2S and AAA3S domains. The Rea1_ΔAAA2L-H2α AMPPNP structure is colour coded and the Rea1 AMPPNP structure is shown as transparent grey cartoon.
 
 We hypothesised that linker remodelling might be obscured by the auto-inhibitory AAA2L-H2α insert and carried out negative stain electron microscopy investigations on a Rea1_ΔAAA2L-H2α mutant in the APO, AMPPNP, ATP, and ADP states. Like in the case of Rea1, there was no evidence for a large scale linker remodelling event and the angle between AAA+ ring and linker remained around 120° (Figure 4—figure supplement 3A–D).
 
@@ -102,32 +182,162 @@ In summary, we presented the first Rea1 high-resolution structure and revealed t
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisae)</td>
+      <td>JD1370</td>
+      <td>DOI: 10.1126/science.1212642</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1,4-dithiotreitol (DTT)</td>
+      <td>Thermo Fisher SCIENTIFIC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ATP</td>
+      <td>ACROS Organics</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>AMPPNP</td>
+      <td>Jena biosciences</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ADP</td>
+      <td>SIGMA-ALDRICH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Roche cOmplete, EDTA-free Protease Inhibitor</td>
+      <td>SIGMA-ALDRICH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Dimethylsulfoxide (DMSO)</td>
+      <td>SIGMA-ALDRICH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Phenylmethylsulfonyl fluoride (PMSF)</td>
+      <td>SIGMA-ALDRICH</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Yeast Nitrogen Base without Amino acids</td>
+      <td>Formedium</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D(+) - Glucose</td>
+      <td>Formedium</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>D(+) - Galactose</td>
+      <td>Formedium</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CSM, -Ura</td>
+      <td>Formedium</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Triton X-100</td>
+      <td>SIGMA-ALDRICH</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EnzChek Phosphate Assay Kit</td>
+      <td>Thermo Fisher SCIENTIFIC</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Photoshop version 16.0.3 (for figure preparation)</td>
+      <td>Adobe Systems, Inc. N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL(TM) 2.0.6 Schrodinger LLC</td>
+      <td>https://pymol.org/edu/?q=educational/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera/download.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gautomatch</td>
+      <td>https://www.mrc-lmb.cam.ac.uk/kzhang/Gautomatch/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Serial EM Mastronarde, 2005</td>
+      <td>http://bio3d.colorado.edu/SerialEM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2Zheng et al., 2017</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 2.0 Kimanius et al., 2016</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT Emsley and Cowtan, 2004</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX Adams et al., 2010</td>
+      <td>https://www.phenix-online.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 Saccharomyces cerevisiae Rea1 was amplified from genomic DNA using standard molecular biology methods. The construct was cloned into a pYES2 vector (Thermofisher) modified to introduce an N-terminal tandem Protein-A tag followed by two preScission protease cleavage sites, GFP, and two TEV protease cleavage sites. For the Rea1_ΔAAA2L-H2α and Rea1_ΔAAA6L-H2α deletion mutants, residues 692–813 or 2092–2196 were replaced by a short SG-linker. To create the Rea1_ΔAAA2L-H2α_ΔMIDAS mutant, residues 4702–4910 were deleted in addition to the residue range 692–813. Rea1 plasmids were transformed into yeast JD1370 using the Ura selection marker. For large-scale expression, 60 ml pre-cultures (2% glucose, CSM-Ura minimal medium, (Formedium)) were used to inoculate 6 × 1L expression medium (2% galactose, CSM-Ura minimal medium (Formedium)). Flasks were incubated at 30°C and 240 rpm for 12–24 hr. Cells were pelleted at 4000 rpm, resuspended in water, and flash frozen in liquid nitrogen. The frozen pellets were blended and resuspended in lysis buffer (30 mM HEPES-NaOH pH 7.4, 50 mM K-Acetate, 2 mM Mg-Acetate, 0.2 mM EGTA, 1 mM DTT, 3 mM ATP, 0.2 mM PMSF). All the following procedures were carried out at 4°C. The lysate was centrifuged at 60000 rpm for 40 min. The supernatant was collected and incubated with IgG sepharose beads (GeHealthcare) for 1 hr. Beads were washed with buffer A (50 mM HEPES-NaOH pH 7.4, 50 mM K-Acetate, 2 mM Mg-Acetate, 0.2 mM EGTA, 10% Glycerol, 100 mM KCl, 1 mM DTT, 3 mM ATP) and incubated with buffer B (50 mM TRIS-HCl pH 8.0, 150 mM K-Acetate, 2 mM Mg-Acetate, 1 mM EGTA, 10% Glycerol, 1 mM DTT). The protein was cleaved off the beads with preScission protease overnight. The flow through was combined and concentrated. The concentrated sample was loaded on a superose 6 column (GE Healthcare Life Sciences) equilibrated with buffer B. For EM grid preparation, the glycerol component of buffer B was omitted. The peak fractions were used for the ATPase assays and the EM grid preparations.
 
-## ATPase assays
+### ATPase assays
 
 For all ATPase assays, the EnzChek Phosphate Assay Kit (Molecular Probes) was used according to the recommendations of the supplier. The final reaction volume was 150 μl consisting of 30 μl 5x assay buffer (150 mM HEPES-NaOH pH 7.2, 10 mM Mg-Acetate, 5 mM EGTA, 50% Glycerol, 5 mM DTT), 30 μl MESG (EnzCheck substrate), 1.5 μl PNP (purine nucleoside phosphorylase), 10 μl Mg-ATP, and protein. The final protein concentration was 250 nM. Experiments were carried out on a GENios spectrophotometer (TECAN). The ATPase assays for Rea1 and the Rea1_ΔAAA2L-H2α deletion mutant were done in triplicate. The Rea1_ΔAAA6L-H2α ATPase assays were done in duplicate. The ATPase rates were 1.1 ± 0.13, 0.5 ± 0.1, and 16.1 ± 2.0 mol Phosphate/mol Rea1/s for Rea1, Rea1_ΔAAA6L-Hα, and Rea1_ΔAAA2L-H2α, respectively.
 
-## CryoEM sample preparation and data acquisition
+### CryoEM sample preparation and data acquisition
 
 Gel filtration fractions of Rea1 and Rea1_ΔAAA2L-H2α were diluted to 1 mg/ml using buffer B (without glycerol) and ADP or AMPPNP were added to a final concentration of 3 mM. 3 μl of sample were applied to glow-discharged holey carbon grids (Quantifoil Cu R2/2, 300-square-mesh) that were subsequently blotted for 7–8 s and flash frozen in liquid ethane using a manual plunger. All cryoEM grid preparations were carried out at 4°C. All data were collected on an FEI Titan Krios equipped with a Cs corrector and a Gatan K2-Summit detector (300 kV, 35–38 frames, 7–8 s exposure, 1.09 Å/pixel,~45–50 ē/Å2) using a slit width of 20 eV on a GIF-quantum energy filter (Gatan). All images were recorded in super-resolution counting mode using the automated data collection software Serial EM (Mastronarde, 2005) with a defocus range of 1.8 to 3.4 μm. In the case of the Rea1_ΔAAA2L-H2α AMPPNP state, a Volta phase plate was used in combination with a target defocus of 0.5 μm. The irradiated area on the VPP was changed every hour.
 
-## Image processing
+### Image processing
 
 Motion correction and dose-weighting were performed using MotionCor2 (Zheng et al., 2017). CTF parameters were estimated using Gctf (Zhang, 2016). Subsequent processing was done using Relion-2.0 (Kimanius et al., 2016) unless stated otherwise. Micrographs were first manually examined to remove images with significant uncorrected drift, large amount of contamination, a large astigmatism, extreme defocus values (<1.2 μm or >5 μm), or abnormal Fourier patterns. Micrograph quality evaluation in the case of the Rea1_ΔAAA2L-H2α AMPPNP phase plate data set was done according to von Loeffelholz et al. (2018).
 
 For the Rea1 ADP dataset a small set of particles was manually picked and subjected to reference-free 2D classification. A selection of 2D class averages representing different views of Rea1 was selected, centred using the Relion shift_com function, and used as references for autopicking by Gautomatch (K. Zhang, MRC Laboratory of Molecular Biology, Cambridge, UK). Autopicked particles were cleaned by several cycles of 2D classification. Subsequently, cleaned particles were subjected to 3D refinement. The initial Rea1 model was obtained using the ab-initio modelling function as implemented in Relion 2.1. The output X and Y origin information of the 3D refinement was used to obtain more accurate coordinates of the particles. The re-centred particles were subjected to another round of 3D refinement. The obtained map was divided into two parts covering the Rea1 linker region and the NTD-AAA+ ring region. We conducted focused 3D classification and 3D refinement of these individual parts as described (Nguyen et al., 2016). The final reconstructions of the NTD-AAA+ ring region and the linker were based on 35671 and 432556 particles, respectively. To aid the interpretation of the obtained maps, sharpening was carried out by applying a negative B-factor that was either estimated using automated procedures within Relion or manually set parameters. The Rea1 AMPPNP state was also reconstructed with Relion 2.1. The Rea1 ADP state map was low pass filtered and used as an initial reference for the first 3D refinement step. Particles were aligned using the output of the initial refinement as a reference followed by a focused refinement of the Rea1 linker part. The subsequent 3D classification was performed post alignment using a large elliptic featureless mask encompassing the Rea1 AAA+ ring to evaluate potential movement between the linker and the AAA+ ring. In all analysed classes, the linker-AAA+ ring angle remained around 120°. The final Rea1 AMPPNP map was reconstructed from a class with 55442 particles. The Rea1_ΔAAA2L-H2α AMPPNP data set was processed with Relion 3.0 using standard procedures including ab-initio reference building by Stochastic Gradient Descent. The final Rea1_ΔAAA2L-H2α AMPPNP map was reconstructed from 20724 particles.
 
-## Model building and refinement
+### Model building and refinement
 
 All model buildings were done in Coot (Emsley and Cowtan, 2004). In the case of the NTD-AAA+ ring of the Rea1 ADP map, polyalanine models of the dynein AAA1L and AAA1S domains (PDB-ID: 4RH7) were initially docked into the AAA+ ring and subsequently modified according to the quality of the map. Other parts of this map were built by placing standardised α-helices and tracing the main-chain between them. Occasionally bulkier side-chains were visible that were included in the final model. The quality of the Rea1 linker map allowed de-novo building of a side-chain model. Phenix real space refine was used to refine the NTD-AAA+ ring and the linker model (Adams et al., 2010). To create the Rea1 ADP AAA+ ring – linker composite model, both structures were aligned on the stem domain which was visible in both maps. For the Rea1 AMPPNP model, the Rea1 ADP model was split into the NTD-AAA+ ring linker stem and linker middle domain – linker top regions. Both regions were docked into the Rea1 AMPPNP map as two separate rigid-bodies. This initial docking already led to a close fit. Minimal rigid body fit adjustments were done for the AAA2, AAA3, AAA4, and AAA5 modules of the AAA+ ring. To create the Rea1_ΔAAA2L-H2α AMPPNP model, the NTD, the AAA1, and AAA6 modules, as well as the complete linker of the Rea1 ADP structure, were docked as a single rigid body into the Rea1_ΔAAA2L-H2α AMPPNP map. The AAA2, AAA3, AAA4, and AAA5 modules of the Rea1 ADP structure were docked as individual rigid bodies into the Rea1_ΔAAA2L-H2α AMPPNP map. All figures were prepared in Pymol (The PyMOL Molecular Graphics System, Version 1.2r3pre, Schrödinger, LLC) or Chimera (Pettersen et al., 2004). The programme Eman2 (Tang et al., 2007) was used for 2D projections.
 
-## Negative stain sample preparation and data acquisition
+### Negative stain sample preparation and data acquisition
 
 Rea1 or the Rea1_ΔAAA2L-H2α deletion mutant in buffer B without glycerol were diluted to a final concentration of 45 nM. AMPPNP, ATP, or ADP were added to reach a final concentration of 3 mM. Negative-stain electron microscopy was performed on plasma-cleaned carbon film on 400-square-mesh copper grids (Electron Microscopy Sciences). 3 μl sample was applied to the grids that were subsequently stained with 2% (w/v) uranyl acetate. Data collection was done on an FEI tecnai G2 operated at 200kV and equipped with a Gatan Ultrascan 2K*2K CCD camera. Data were collected at ∼1 μm underfocus, with a pixel size of 3.629 Å and an estimated dose of 25 electrons / Å2 during 1 s exposures. SerialEM was used for semiautomatic data acquisition. Around 8000 particles per data set were manually picked and processed with Relion using standard procedures. In order to not bias the orientation of the linker with respect to the AAA+ ring, the initial model consisted of the low pass filtered NTD-AAA+ ring map rescaled to the correct pixel size.
 
-## Data availability
+### Data availability
 
 The atomic coordinates for the Rea1 AAA+ ring and the Rea1 linker in the ADP state have been deposited with PDB IDs 6HYP and 6HYD, respectively. The accession codes for the Rea1 and Rea1_ΔAAA2L-H2α models in the AMPPNP state are 6I26 and 6I27, respectively. The accession codes for the cryoEM maps of the Rea1 AAA +ring and the Rea1 linker in the ADP state are EMD-0309 and EMD-0308, respectively. The accession code for the unsharpened cryoEM map of the Rea1 AAA +ring in the ADP state is EMD-0330. The cryoEM maps of the Rea1 and Rea1_ΔAAA2L-H2α AMPPNP states have the EMD accession codes EMD-0328 and EMD-0329, respectively.

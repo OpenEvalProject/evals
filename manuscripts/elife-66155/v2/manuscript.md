@@ -39,51 +39,99 @@ In this study, we elucidated the role of each circadian clock gene in the mainte
 
 ## Results
 
-## Expression of CLOCK is suppressed in ALDH-positive 4T1 cells
+### Expression of CLOCK is suppressed in ALDH-positive 4T1 cells
 
 CSCs are often characterized by high ALDH activity associated with malignancy and is used for identification and isolation of CSCs (Ginestier et al., 2007; Ma and Allan, 2011; Nagare et al., 2016). As reported previously (Kim et al., 2013), ALDEFULOR assay revealed the presence of a high ALDH activity (ALDH-positive) cell population among the 4T1 breast cancer cells. To confirm the stem-like properties of the isolated ALDH-positive 4T1 cells, the separated cells were plated under spheroid-forming conditions. The ALDH-positive 4T1 cells were capable of forming tumor spheroids (p<0.01, Figure 1A), whereas such spheroid formations were not observed by ALDH-negative 4T1 cells, suggesting characterization of CSC-like properties by high ALDH activity in 4T1 cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative photograph of Hoechst-stained tumor spheroids of ALDH-negative or -positive 4T1 cells in agarose. Values are the mean with SD (n = 3). **p<0.01; significant difference from ALDH-negative cells (t6 = 12.598, Student's t-test). (B) Influence of each clock gene expression vector on the ratio of ALDH positive- to negative-cell populations. ALDH-positive 4T1 cells were cultured on 3D scaffold chambers after being transiently transfected with each expression vector using electroporation. ALDH activity was evaluated 5 days after transfection. Values are the mean with SD (n = 6). The mean value of the pcDNA group is set at 1.0. **p<0.01; significant difference from the pcDNA group (F5,30 = 6.807, p<0.001, ANOVA, Dunnett’s post hoc test). (C) The temporal mRNA expression profiles of Clock and Per2 in ALDH-positive and ALDH-negative cells isolated from 4T1 tumor-bearing mice kept under the light/dark cycle (zeightgber time 0. lights on ; zeitgeber time 12. lights off). Values are the mean with SD (n = 3). Data were normalized by β-Actin mRNA levels. (D) Difference in the expression levels of CLOCK protein between ALDH-negative and -positive 4T1 cells. The value of ALDH-negative cells is set at 1.0. Values are the mean with SD (n = 3). *p<0.05; significant difference between two groups (t4 = 3.915, Student’s t-test). (E) Difference in the promoter activities of E-box-driven luciferase reporter in ALDH-negative and -positive 4T1 cells. pGL4.13 or 3 × E-box::Luc reporter vectors were transfected into 4T1 cells, and luciferase assay was performed after cell sorting. Values are the mean with SD (n = 3). The value of ALDH-negative cells is set at 1.0. **p<0.01, *p<0.05; significant difference between two groups (t4 = 2.941 for pGL4.13, t4 = 43.287 for 3 × E-box::Luc, Student’s t-test). (F) The influence of lenti-viral CLOCK transduction on the circadian oscillation of E-box-driven luciferase bioluminescence. Top panel shows the scheme of experimental procedure. Bottom panels show real-time bioluminescence tracing of luciferase activity after dexamethasone synchronization (left) and mean of amplitude of bioluminescence oscillation from day 5 to day 10 after synchronization (n = 3) (right). *p<0.05; significant difference between two groups (t4 = 3.691, Student’s t-test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Data were normalized by 18 s rRNA levels. Values show the mean with SD (n = 3). The value of pcDNA-transfected cells is set at 1.0.
 
 Next, we investigated whether the clock gene product affected the ALDH activity of 4T1 cells. To achieve this, ALDH-positive 4T1 cells were collected by ALDEFULOR assay, and then transfected with plasmid vectors expressing products of the circadian genes, BMAL1, CLOCK, CRY1, PER1, or PER2 and these expression vectors sufficiently increased the levels of circadian gene transcripts (Figure 1—figure supplement 1). Among the gene products, CLOCK and PER2 significantly reduced the ratio of the ALDH-positive cell population to the ALDH-negative cell population (p<0.01 respectively, Figure 1B); but the effect was more potent in CLOCK-transfected 4T1 cells. As we reported previously, the expression levels and circadian oscillation of Clock and Per2 mRNA were disrupted in 4T1 tumor bearing mice (Figure 1C). In particular, the expression levels of Clock mRNA were lower in ALDH-positive cells than ALDH-negative cells throughout the day. Therefore, we further focused on the role of the Clock gene in ALDH-positive 4T1 cells.
 
 CLOCK acts as a transcriptional factor by binding to E-box (CACGTG) elements to increase the expression of target genes (Gekakis et al., 1998; Hogenesch et al., 1998; Ueda et al., 2005). The levels of Clock mRNA and protein were significantly lower in ALDH-positive 4T1 cells than in ALDH-negative 4T1 cells in vitro (p<0.05, Figure 1D); also E-box driven luciferase activity was significantly reduced (p<0.01, Figure 1E). Furthermore, increased CLOCK expression by lentiviral transduction enhanced oscillation of E-box driven luciferase ﻿bioluminescence in ALDH-positive 4T1 cells (p<0.05, Figure 1F). These findings suggest a negative correlation between CLOCK function and stemness-related properties in 4T1 cells.
 
-## CLOCK-mediated suppression of 4T1 cell malignancy
+### CLOCK-mediated suppression of 4T1 cell malignancy
 
 We investigated if an increase in CLOCK levels alters the malignant properties of 4T1 cells, by infecting 4T1 cells with CLOCK expressing lentivirus. Transduction of the Clock gene significantly increased its protein levels in 4T1 cells (p<0.01, Figure 2A). Flow-cytometric analysis revealed a reduction in the population of ALDH-positive 4T1 cells by transduction of the Clock gene (p<0.01, Figure 2B). Nine isoforms of ALDH have been confirmed to be active in ALDEFLUOR assay (Zhou et al., 2019); however, only the expressions of Aldh3a1, 3a2, 3b1, and 5a1 were detected in 4T1 cells. Among them, expression levels of Aldh3a1 were considerably decreased in CLOCK-expressing 4T1 cells (Figure 2C), suggesting repression of ALDH activity by CLOCK in 4T1 cells through the downregulation of the isoform Aldh3a1. Database analysis of the mouse Aldh3a1 gene upstream region led to identification of CCAAT/enhancer binding protein α (C/EBPα) as a mediator of CLOCK-controlled expression of ALDH (Figure 2—figure supplement 1A). There was increase of C/EBPα expression in enhanced CLOCK-expressing 4T1 cells (Figure 2—figure supplement 1B). Transfection of 4T1 cells with C/EBPα-expressing vectors decreased gene promoter activity and protein levels of Aldh3a1 (Figure 2—figure supplement 1D and E), and knockdown of C/EBPα increased protein levels of Aldh3a1 (Figure 2—figure supplement 1F). These results suggest that C/EBPα has important roles on CLOCK-mediated ALDH suppression, through transcriptional repression of Aldh3a1 gene in 4T1 cells. A significant decrease in the mRNA levels of stemness related factors Klf4, Nanog, and Myc was also noted in the ALDH-positive population of enhanced CLOCK-expressing 4T1 cells (p<0.01, Figure 2D). Additionally, growth ability and spheroid formation of enhanced CLOCK-expressing 4T1 cells were lower than those of mock lentivirus-transduced cells (p<0.01, Figure 2E and F).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig2-v2.jpg)
+
+**Figure 2.:** (A) CLOCK protein levels in mock-transduced and Clock-expressing lentivirus-infected 4T1 cells. Values show mean with SD (n = 3). **p<0.01; significant difference from mock-transduced 4T1 cells (t4 = 15.736, Student’s t-test). (B) The flow cytometric analysis of ALDEFLUOR assay of CLOCK-expressing 4T1 cells. The population of ALDH-positive cells was defined based on each DEAB group, whose means of fluorescence intensity were set almost the same. The right panel shows the difference in the ratio of ALDH positive- to negative-cell populations between mock-transduced and CLOCK-expressing 4T1 cells. Values show the mean with SD (n = 6). **p<0.01; significant difference from mock-transduced 4T1 cells (t10 = 22.455, Student’s t-test). (C) Difference in the mRNA levels of ALDH isoforms between mock-transduced and CLOCK-expressing 4T1 cells. Values show the mean with SD (n = 3). (D) The mRNA levels of stemness-related genes in ALDH-positive mock-transduced and CLOCK-expressing 4T1 cells. Data were normalized by the18s rRNA levels. Values show the mean with SD (n = 3). The values of the mock-transduced group are set at 1.0. **p<0.01: significant difference from mock-transduced 4T1 cells (t4 = 9.261 for Klf4; t4 = 8.001 for Nanog; t4 = 32.576 for Myc; Student’s t-test). (E) Difference in growth ability between mock-transduced and CLOCK-expressing 4T1 cells. Values show the mean with SD (n = 5–6). Cell viability of seeding day (day 0) are set at 1.0. **p<0.01; significant difference between from mock-transfected 4T1 cells at corresponding time points. (F7, 38 = 425.953, two-way ANOVA with the Tukey–Kramer test). (F) Difference in the spheroid formation ability between mock-transduced and CLOCK-expressing 4T1 cells. The left panel shows a representative photograph of the Hoechst-stained spheroids formed by mock-transduced or CLOCK-expressing 4T1 cells. The right panel shows the number of spheroid and the parcellation of the diameter. Values show the mean with SD (n = 3). **p<0.01; significant difference from mock-transduced 4T1 cells (t4 = 27.067, Student’s t-test, for number of spheroids).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Procedure of selecting transcriptional factors that regulate Aldh3a1 expression in 4T1 cells. Genomic DNA binding prediction database (JASPAR) and ChIP Atlas database were applied to identify factor that mediates CLOCK-regulated Aldh3a1 expression. (B) The expression levels of C/EBPα mRNA in enhanced CLOCK-expressing 4T1 cells. Values are the mean with SD (n = 3). **p<0.01; significant difference between two groups (t4 = 5.703, Student’s t-test). (C) The alignment of promoter sequences of Aldh3a1 genes in mouse (Mus musculus), rat (Ratta norvegicus), and human (Homo sapiens). (D) Repression of Aldh3a1 transcriptional activity by C/EBPα. Luciferase reporter vectors containing −2000 bp upstream region of the mouse Aldh3a1 gene (Aldh3a1 [−2000]::Luc) were constructed. 4T1 cells were transfected with Aldh3a1 [−2000]::Luc and C/EBPα-expressing vectors. Values are the mean with SD (n = 3). The values of pcDNA group are set at 1.0. **p<0.01; significant difference between two groups (t4 = 19.351, Student’s t-test). (E) Repression of Aldh3a1 expression by C/EBPα. 4T1 cells were transfected with C/EBPα-expressing vectors. Values are the mean with SD (n = 3). The values of pcDNA group are set at 1.0. **p<0.01; significant difference between two groups (t4 = 5.730, Student’s t-test). (F) Enhanced expression of Aldh3a1 in C/EBPα-downregulated 4T1 cells. C/EBPα was downregulated by miRNA. Values are the mean with SD (n = 3). The values of control group are set at 1.0. **p<0.01; significant difference between two groups (t4 = 4.892, Student’s t-test).
 
 Malignancy of CSCs is characterized by their invasive and metastatic capacities (Polyak and Weinberg, 2009; Singh and Settleman, 2010; Weidenfeld and Barkan, 2018), hence we conducted two types of invasion assays in vitro. TGFβ1-induced invasion of cancer cells into collagen type 1 was assessed using a 3D cell culture chip, and the invasive potential of enhanced CLOCK-expressing 4T1 cells was lower than that of Mock-transduced 4T1 cells (p<0.01, Figure 3A). The low invasive potential of enhanced CLOCK-expressing 4T1 cells was also observed in the spheroid invasion assay (Figure 3B). Mock-transduced 4T1 cells formed spheroids that invaded into the hydrogels, whereas no invasion by CLOCK-expressing 4T1 cells-formed spheroids was detected. One of the main processes of invasion is epithelial-mesenchymal transition (EMT), represented by decrease in epithelial adherent molecules and increase in mesenchymal adherent molecules (Nieto et al., 2016). There was an increase in mRNA and protein levels of epithelial molecules, E-cadherin, and Claudin1 in enhanced CLOCK-expressing 4T1 cells (Figure 3C and Figure 3D). In contrast, the expression of mesenchymal molecules, Vimentin, Snail1, and Twist1, was decreased in CLOCK-expressing 4T1 cells (Figure 3C and Figure 3D). Taken together, the in vitro data suggest attenuation of 4T1 cells invasive potential through EMT suppression by enhancement of CLOCK expression.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig3-v2.jpg)
 
-**Figure 3.:** (A) Decrease in the invasion ability of CLOCK-expressing 4T1 cells. Microphotographs show invasion of cells into 3D collagen gel. The right panel shows difference in the invasion area between mock-transduced and CLOCK-expressing 4T1 cells. Values show mean with SD (n = 3). *p<0.05; significant difference from mock-transduced 4T1 cells (t4 = 2.968, Student’s t-test). (B) Representative microphotographs of spheroid invasion by mock-transduced and CLOCK-expressing 4T1 cells. Invasive morphology was detected by mock-transduced 4T1 cells. (C) Difference in the expression of adhesion molecules between mock-transduced and CLOCK-expressing 4T1 cells. (D) Differential expression of EMT-related molecules between mock-transduced and CLOCK-expressing 4T1 cells. E-cadherin and Claudin1 indicate the ‘epithelial’ state, and Vimentin, Snail1, and Twist1 indicate the ‘mesenchymal’ state. Data were normalized by the 18s rRNA levels. Values show the mean with SD (n = 3). The values of the mock-transduced group are set at 1.0. **p<0.01, *p<0.05; significant difference compared with mock-transduced 4T1 cells (t4 = 28.550 for E-cadherin; t4 = 18.159 for Claudin1; t4 = 6.233 for Vimentin; t4 = 2.873 for Snail1; t4 = 2.881 for Twist1; Student’s t-test).Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Decrease in the invasion ability of CLOCK-expressing 4T1 cells. Microphotographs show invasion of cells into 3D collagen gel. The right panel shows difference in the invasion area between mock-transduced and CLOCK-expressing 4T1 cells. Values show mean with SD (n = 3). *p<0.05; significant difference from mock-transduced 4T1 cells (t4 = 2.968, Student’s t-test). (B) Representative microphotographs of spheroid invasion by mock-transduced and CLOCK-expressing 4T1 cells. Invasive morphology was detected by mock-transduced 4T1 cells. (C) Difference in the expression of adhesion molecules between mock-transduced and CLOCK-expressing 4T1 cells. (D) Differential expression of EMT-related molecules between mock-transduced and CLOCK-expressing 4T1 cells. E-cadherin and Claudin1 indicate the ‘epithelial’ state, and Vimentin, Snail1, and Twist1 indicate the ‘mesenchymal’ state. Data were normalized by the 18s rRNA levels. Values show the mean with SD (n = 3). The values of the mock-transduced group are set at 1.0. **p<0.01, *p<0.05; significant difference compared with mock-transduced 4T1 cells (t4 = 28.550 for E-cadherin; t4 = 18.159 for Claudin1; t4 = 6.233 for Vimentin; t4 = 2.873 for Snail1; t4 = 2.881 for Twist1; Student’s t-test).
 
-## Anti-tumor effects of CLOCK in 4T1 cells-bearing mice
+### Anti-tumor effects of CLOCK in 4T1 cells-bearing mice
 
 Next, we investigated the anti-tumor effects of CLOCK in 4T1 cell-bearing mice. Mock-transduced or enhanced CLOCK-expressing 4T1 cells were implanted into the mammary fat pad of female BALB/c mice, and the tumor volume was measured every week. The growth rate of enhanced CLOCK-expressing 4T1 cell-formed tumors was significantly lower than that of tumors formed by Mock-transduced 4T1 cells (p<0.01, Figure 4A). Similarly, low intensity of immunohistological staining for Ki-67 was observed in enhanced CLOCK-expressing 4T1 tumors (p<0.01, Figure 4B). Moreover, CLOCK-expressing 4T1 cell-bearing mice had limited formation of tumor colonies in lung and bone marrow (p<0.01, Figure 4C and D). The in vivo results reveal suppression of tumor malignancy by enhancement of CLOCK expression in 4T1 cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig4-v2.jpg)
 
-**Figure 4.:** (A) The ability of tumor growth in mice implanted with mock-transduced or CLOCK-expressing 4T1 cells. Top panel shows the photograph of tumor burden isolated from each 4T1 cell implanted mice 6 weeks after implantation. Values are the mean with SD (n = 8–9 animals). **p<0.01; *p<0.05, significant difference compared with mock-transduced 4T1 cell-implanted mice at corresponding time points (F9, 67 = 19.956, p<0.001; two-way ANOVA with the Tukey–Kramer test). (B) Immunohistochemical staining of Ki-67 in mock-transduced or CLOCK-expressing 4T1 tumors. Complexes with Ki-67 and antibodies were visualized by 3, 3’-diaminobenzidine (brown), and nuclei were stained with hematoxylin (blue). Scale bars indicate 50 µm. Values show mean with SD (n = 6 animals). **p<0.01; significant difference from mock-transduced 4T1 cells (t10 = 6.213, Student’s t-test). (C) The number of pulmonary tumor colonies in mice implanted with mock-transduced or CLOCK-expressing 4T1 cells. Pulmonary colonies were assessed 6 weeks after implantation. The left panels show representative photographs of pulmonary tumor colonies of mock-transduced or CLOCK-expressing 4T1 cells implanted in mice. Right panel shows the quantification of the number of tumor colonies in lungs (n = 7–9 animals). **p<0.01; significant difference from mock-transdaced 4T1 (t14 = 3.601; Student’s t-test). (D) The number of metastatic colonies isolated from tumor-bearing mice femora bone marrow. The top panels show the representative photograph of tumor colonies stained by crystalbiolet. The bottom panel shows the quantification of the area of tumor colonies. Values show mean with SD (n = 8 animals). **p<0.01; significant difference from mock-transduced 4T1 cells (t14 = 3.871, Student’s t-test).Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) The ability of tumor growth in mice implanted with mock-transduced or CLOCK-expressing 4T1 cells. Top panel shows the photograph of tumor burden isolated from each 4T1 cell implanted mice 6 weeks after implantation. Values are the mean with SD (n = 8–9 animals). **p<0.01; *p<0.05, significant difference compared with mock-transduced 4T1 cell-implanted mice at corresponding time points (F9, 67 = 19.956, p<0.001; two-way ANOVA with the Tukey–Kramer test). (B) Immunohistochemical staining of Ki-67 in mock-transduced or CLOCK-expressing 4T1 tumors. Complexes with Ki-67 and antibodies were visualized by 3, 3’-diaminobenzidine (brown), and nuclei were stained with hematoxylin (blue). Scale bars indicate 50 µm. Values show mean with SD (n = 6 animals). **p<0.01; significant difference from mock-transduced 4T1 cells (t10 = 6.213, Student’s t-test). (C) The number of pulmonary tumor colonies in mice implanted with mock-transduced or CLOCK-expressing 4T1 cells. Pulmonary colonies were assessed 6 weeks after implantation. The left panels show representative photographs of pulmonary tumor colonies of mock-transduced or CLOCK-expressing 4T1 cells implanted in mice. Right panel shows the quantification of the number of tumor colonies in lungs (n = 7–9 animals). **p<0.01; significant difference from mock-transdaced 4T1 (t14 = 3.601; Student’s t-test). (D) The number of metastatic colonies isolated from tumor-bearing mice femora bone marrow. The top panels show the representative photograph of tumor colonies stained by crystalbiolet. The bottom panel shows the quantification of the area of tumor colonies. Values show mean with SD (n = 8 animals). **p<0.01; significant difference from mock-transduced 4T1 cells (t14 = 3.871, Student’s t-test).
 
-## Post-transcriptional regulation of Clock mRNA expression in ALDH-positive 4T1 cells
+### Post-transcriptional regulation of Clock mRNA expression in ALDH-positive 4T1 cells
 
 To investigated the underlying mechanisms of downregulation of Clock expression in ALDH-positive 4T1 cells may be a therapeutic target for overcoming malignant properties of BCSCs; hence, we constructed a luciferase reporter containing the 5’-upstream region of the mouse Clock gene (Clock::Luc). The 5’-upstream regions included ROREs (orphan receptor response elements), RARE (retinoic acid response element), and an E-box like sequence (Figure 5A left). The expression levels of Luciferase mRNA derived from Clock::Luc in ALDH-positive 4T1 cells was slightly, but significantly, higher than in ALDH-negative cells (p<0.01, Figure 5A right). Moreover, no significant difference in mRNA levels of transcription factors regulating Clock gene expression between ALDH-positive and -negative cells was found (Supplementary file 2). This suggests that suppression of Clock gene expression in ALDH-positive 4T1 cells was not due to decrease in its transcriptional activity; hence, we changed focus to the post-transcriptional regulation mechanism repressing Clock mRNA expression in ALDH-positive cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig5-v2.jpg)
 
-**Figure 5.:** Clock gene expression in ALDH-positive 4T1 cells.(A) Comparison of the promoter activity of the mouse Clock gene between ALDH-negative and -positive 4T1 cells. Left panel shows the schematic representation of the mouse Clock gene promoter. Numbers near the boxes are nucleotide residues in which E-box, RORE, and RAR/RXR response elements are positioned relative to the transcription start site (+1). Right panel shows the mRNA expression of the Luciferase gene Clock::Luc in ALDH-negative and -positive 4T1 cells. Data were normalized by Neomycin phosphotransferase (Neo) as an internal control. Values are the mean with SD (n = 3).**p<0.01;significant difference between from ALDH-negative cells. The value of ALDH-negative cells is set at 1.0. (rB) The mRNA expression of the Luciferase gene in ALDH-negative and -positive 4T1 cells transfected with luciferase reporter constructs containing varying lengths of the 3’UTR of the Clock gene. Data were normalized by the expression levels of hRLuc mRNA. Values are the mean with SD (n = 3). The values of each ALDH-negative cell are set at 1.0. *p<0.05, **p<0.01; significant difference between the two groups (t4 = 7.665 for Clock-3’UTR Full::Luc; t4 = 4.375 for Clock-3’UTR 1 st::Luc; t4 = 2.751 for Clock-3’UTR 3rd::Luc; Student’s t-test).Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Comparison of the promoter activity of the mouse Clock gene between ALDH-negative and -positive 4T1 cells. Left panel shows the schematic representation of the mouse Clock gene promoter. Numbers near the boxes are nucleotide residues in which E-box, RORE, and RAR/RXR response elements are positioned relative to the transcription start site (+1). Right panel shows the mRNA expression of the Luciferase gene Clock::Luc in ALDH-negative and -positive 4T1 cells. Data were normalized by Neomycin phosphotransferase (Neor) as an internal control. Values are the mean with SD (n = 3).**p<0.01;significant difference between from ALDH-negative cells. The value of ALDH-negative cells is set at 1.0. (B) The mRNA expression of the Luciferase gene in ALDH-negative and -positive 4T1 cells transfected with luciferase reporter constructs containing varying lengths of the 3’UTR of the Clock gene. Data were normalized by the expression levels of hRLuc mRNA. Values are the mean with SD (n = 3). The values of each ALDH-negative cell are set at 1.0. *p<0.05, **p<0.01; significant difference between the two groups (t4 = 7.665 for Clock-3’UTR Full::Luc; t4 = 4.375 for Clock-3’UTR 1 st::Luc; t4 = 2.751 for Clock-3’UTR 3rd::Luc; Student’s t-test).
 
 Luciferase mRNA level of the reporter vector containing bp +1 to +4522 of the mouse Clock 3’UTR (Clock 3’UTR Full::Luc) was markedly decreased compared with that of the control pGL4.13 reporter vector without the 3’UTR (Figure 5B). Furthermore, the Luciferase mRNA level of the Clock 3’UTR Full::Luc vector in ALDH-positive 4T1 cells was significantly lower than in ALDH-negative cells (p<0.01), suggesting post-transcriptional regulation of Clock expression in ALDH-positive 4T1 cells. Significant differences in the luciferase mRNA levels between ALDH-positive and ALDH-negative 4T1 cells were also detected when the cells were transfected with Clock 3’UTR 1 st::Luc and Clock 3’UTR 3rd::Luc (p<0.05 respectively, Figure 5B). These results suggest that specific 3’UTRs of mouse Clock mRNA are responsible for its post-transcriptional regulation in ALDH-positive 4T1 cells.
 
-## miR-182 suppresses Clock mRNA expression in ALDH-positive 4T1 cells
+### miR-182 suppresses Clock mRNA expression in ALDH-positive 4T1 cells
 
 miRNAs suppress target gene expression by targeting the mRNA 3’UTR (Lewis et al., 2005). Therefore, we attempted to identify the miRNA repressing the expression of Clock mRNA in ALDH-positive cells by conducting miRNA microarray analysis. The analysis was done by setting three identification criteria: (Acharyya et al., 2012) miRNA expression twofold higher in ALDH-positive cells than in ALDH-negative cells, with signal intensity of at least over 100; (Al-Hajj et al., 2003) miRNAs binding to the Clock 3’UTR based on the miRDB database (target score >90); and (Anderson et al., 2011) miRNAs binding to the Clock 3’UTR from bp +1 to +900 or from bp +1922 to +3600 based on the microRNA.org database (Figure 6A). These analyses identified mmu-miR-182 as ﻿the miRNA upregulated in ALDH-positive cells ﻿with the greatest fold change (Supplementary file 3). There was no significant difference in the levels of previously known Clock gene-targeting miRNAs like miR-1306, miR-290–295 family, miR-17 (Umemura et al., 2017), and miR-211 (Bu et al., 2018). Therefore, we focused on miR-182 as a possible candidate to repress Clock mRNA expression in ALDH-positive cells.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig6-v2.jpg)
+
+**Figure 6.:** (A) Procedure of selecting miRNA that regulates Clock expression in ALDH-positive 4T1 cells. Heatmap shows the differential expression of miRNA between ALDH-negative and -positive 4T1 cells. microRNA target prediction databases (miRDB and microRNA.org) were applied to this selection. (B) The expression levels of mmu-miR-182 in ALDH-negative and -positive cells. Data were normalized by the β-Actin mRNA levels. Values are the mean with SD (n = 5). The value of ALDH-negative cells is set at 1.0. **p<0.01; significant difference from ALDH-negative cells (t8 = 3.828, Student’s t-test). (C) miR-182 negatively regulates the expression of Clock mRNA in ALDH-positive 4T1 cells. Three miR-182 KO clones were selected for this experiment. Data were normalized by the 18 s rRNA levels. Values are the mean with SD (n = 3). The values of ALDH-negative cells are set at 1.0. *p<0.05, **p<0.01; significant difference between two groups (F7,16 = 7.681, p<0.01, ANOVA with the Tukey–Kramer post hoc test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Influence of the miR-182::hairpin inhibitor on luciferase activity of Clock 3’UTR 1 st::Luc. Data were normalized by the renilla luciferase activity as an internal control. Values are the mean with SD (n = 3). The value of control group is set at 1.0. **p<0.01; significant difference between two groups (t4 = 7.569, p<0.01; Student’s t-test). (B) Scheme of the mmu-miR-182 target region. Yellow shaded areas indicate the sgRNA-targeted sequence. (C) Proximal genomic region around mmu-miR-182 in naive and miR-182 knockout (KO) 4T1 cells clone no. #1 to #3.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Data were normalized by 18 s rRNA levels. Values are the mean with SD (n = 3). The value of naive 4T1 cells is set at 1.0. **p<0.01; significant difference between two groups (t4 = 12.819 for miR182, t4 = 11.439 for miR96, t4 = 55.277 for miR183, Student’s t-test).
+
 The expression of miR-182 in ALDH-positive cells was significantly higher than that in ALDH-negative cells (p<0.01, Figure 6B). Treatment with a miR-182 inhibitor increased the luciferase activity in Clock 3’UTR 1 st::Luc-transfected 4T1 cells (Figure 6—figure supplement 1A); indicating post-transcriptional regulation of mouse Clock mRNA expression through its 3’UTR from bp +1 to +900 by miR-182. We prepared miR-182 knockout (KO) 4T1 cells using CRISPR/Cas9 system (Figure 6—figure supplement 1B). Three clones were isolated and deletion of genomic region of miR-182 was confirmed (Figure 6—figure supplement 1C). Clock gene mRNA levels significantly increased in the ALDH-positive population of all three miR-182 KO 4T1 cells (Figure 6C), indicating that miR-182 suppresses the expression of Clock mRNA in ALDH-positive 4T1 cells.
 
-## Depletion of miR-182 suppresses tumor growth in 4T1 cells-bearing mice
+### Depletion of miR-182 suppresses tumor growth in 4T1 cells-bearing mice
 
 The final set of experiments investigated whether depletion of miR-182 affects tumor malignant properties. Naive 4T1 or miR-182 KO 4T1 #1 cells were implanted into the mammary fat pad of female BALB/c mice. The tumor growth of miR-182 KO 4T1 cell-bearing mice was significantly lower than that of tumors formed by naive 4T1 cells (p<0.01, Figure 7A). The expression levels of Clock mRNA in resected tumor were significantly increased by knockout of miR-182 (Figure 7—figure supplement 1A), and the effect was more potent in ALDH-positive cell (Figure 7—figure supplement 1B). Limited number of tumor colonies were observed in miR-182 KO cells implanted-mice lung (p<0.01, Figure 7B), also in bone marrow (p<0.01, Figure 7C). These data suggest that tumor malignancy can be attenuated by targeting miR-182 through post-transcriptional activation of CLOCK. Furthermore, highly expression levels of miR-182 were detected in naive 4T1 cell-formed tumor compared with other organs (Figure 7D). Similar results were also confirmed in clinical data from miR-TV database (Figure 7—figure supplement 2), suggesting that tumor-selective effects were expected by targeting miR-182. Taken together, miR-182-mediated post-transcriptional regulation of CLOCK may be a novel insight for treatment of breast cancer attenuating tumor malignancy.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig7-v2.jpg)
+
+**Figure 7.:** (A) The ability of tumor growth in mice implanted with naive or miR-182 KO 4T1 cells. Values are the mean with SD (n = 9–10 animals). **p<0.01; significant difference compared with naive 4T1 cell-implanted mice at corresponding time points (F7, 63 = 39.494, p<0.001; two-way ANOVA with the Tukey–Kramer test). Top panel shows the photograph of tumors isolated from each 4T1 cell implanted mice 5 weeks after implantation. (B) The number of pulmonary tumor colonies in mice implanted with naive or miR-182 KO 4T1 cells. Left panel shows the quantification of the number of tumor colonies in lungs (n = 9 animals). **p<0.01; significant difference from naive 4T1 group(t16 = 2.993; Student’s t-test). The right panels show representative photographs of pulmonary tumor colonies of naive or miR-182 KO 4T1 cells implanted in mice. Pulmonary tumor colonies were assessed 5 weeks after implantation. (C) The number of metastatic colonies isolated from tumor-bearing mice femora bone marrow. The top panels show the representative photograph of tumor colonies stained by crystalbiolet. The bottom panel shows the quantification of the area of tumor colonies. Values show mean with SD (n = 6 animals). **p<0.01; significant difference from naive 4T1 cells (t10 = 3.354, Student’s t-test). (D) The organ distribution of miR-182 in naive 4T1-bearing mice. Data were normalized by the 18 s rRNA levels. Values are the mean with SD (n = 3 animals). The value of bone marrow is set at 1.0.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The mRNA expression levels of Clock derived from whole tumor. Values are the mean with SD (n = 3 animals). The value of naive 4T1 group is set at 1.0. **p<0.01; significant difference between two groups (t4 = 14.173, Student’s t-test). (B) The mRNA expression levels of Clock derived from each sorted ALDH-negative cells or ALDH-positive cells. Values are the mean with SD (n = 3 animals). The value of each ALDH-negative cells group is set at 1.0. **p<0.01; significant difference between two groups (F3,11 = 98.647, p<0.01, ANOVA with the Tukey–Kramer post hoc test).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Data were obtained from miR-TV database. **p<0.01; significant difference between two groups (Student’s t-test).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** (A) The alignment of hsa-miR-182–5 p and mmu-miR-182–5 p. * shows seed region of each miRNA. (B) The alignment of human CLOCK 3’UTR and mouse Clock 3’UTR. The nucleotide immediately after the stop codon in exon 23 of each CLOCK gene was defined as +1.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/66155/elife-66155-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** The data were obtained from the PrognoScan database (http://www.prognoscan.org/). Association of gene expression with patient survival was evaluated by minimum p-value approach. Patients were divided into high- or low-CLOCK expression groups at all possible cutoff points. The differences of any two groups were estimated by the log-rank test.
 
 ## Discussion
 
@@ -107,84 +155,374 @@ Existing agents increasing the expression of CLOCK may be ineffective for the tr
 
 ## Materials and methods
 
-## Cells and treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Clock</td>
+      <td>NCBI Gene Database</td>
+      <td>NCBI Gene: 12753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>4T1</td>
+      <td>ATCC</td>
+      <td>Cat #: CRL-2539; RRID:CVCL_0125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lenti-X 293T</td>
+      <td>Clonetech</td>
+      <td>Cat #: 632180</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Mus musculus)</td>
+      <td>miRDIAN Hairpin Inhibitor</td>
+      <td>Horizon Discovery</td>
+      <td>Cat #: IH-310436–08</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CLOCK</td>
+      <td>Abcam</td>
+      <td>Cat #: ab3517 RRID:AB_303866</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p84 (THOC1)</td>
+      <td>Proteintech</td>
+      <td>Cat #: 10920–1-AP RRID:AB_2202239</td>
+      <td>WB (1:1500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-E-Cadherin</td>
+      <td>R and D systems</td>
+      <td>Cat #: AF748 RRID:AB_355568</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Claudin 1</td>
+      <td>Proteintech</td>
+      <td>Cat #: 13050–1-AP RRID:AB_2079881</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Vimentin</td>
+      <td>R and D systems</td>
+      <td>Cat #: MAB21052 RRID:AB_2832972</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Actin-HRP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat #: sc-1616</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Ki-67</td>
+      <td>Agilent Technology</td>
+      <td>Cat #: M7240 RRID:AB_2142367</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1(+) (plasmid)</td>
+      <td>Invitrogen</td>
+      <td>Cat #: V79020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL4.18 (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat #: E6731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGL4.13 (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat #: E6681</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRL-SV40 (plasmid)</td>
+      <td>Promega</td>
+      <td>Cat #: E2231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primer for sgRNA synthesis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CCTCTAATA CGACTCACT ATAGGCAAT GGTAGAACT CACACGTTT AAGAGCTAT GC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Clock promoter F</td>
+      <td>This paper</td>
+      <td>PCR primers for construction of reporter vector</td>
+      <td>ATACTCGAGA GGTCACTTG GGTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mouse Clock promoter R</td>
+      <td>This paper</td>
+      <td>PCR primers for construction of reporter vector</td>
+      <td>ATAAGATCT CCTTCCCCT CCTCCACG</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Cas9</td>
+      <td>Clontech</td>
+      <td>Cat #: Z2641N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Mouse TGF-β1</td>
+      <td>R and D systems</td>
+      <td>Cat #: 7666 MB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ALDEFLUOR Kit</td>
+      <td>StemCell Technologies</td>
+      <td>Cat #: ST-01700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine LTX and Plus Regent</td>
+      <td>ThermoFisher SCIENTIFIC</td>
+      <td>Cat #: 15338100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase reporter assay system</td>
+      <td>Promega</td>
+      <td>Cat #: E1910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ReverTra Ace qPCR RT Kit</td>
+      <td>Toyobo</td>
+      <td>Cat #: FSQ-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>THUNDERBIRD SYBR qPCR Mix</td>
+      <td>Toyobo</td>
+      <td>Cat #: QPS-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman MicroRNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat #: 4366596</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman MicroRNA Assay</td>
+      <td>Applied Biosystems</td>
+      <td>Cat #: 4427975</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Guide-it sgRNA in vitro transcription kit</td>
+      <td>Clontech</td>
+      <td>Cat #: Z2635N</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lentiviral High Titer Packaging Mix with pLVSIN series</td>
+      <td>Takara bio</td>
+      <td>Cat #: 6952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo Luminescent cell viability assay</td>
+      <td>Promega</td>
+      <td>Cat #: 7572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>6-Thioguanine</td>
+      <td>Fujifilm</td>
+      <td>Cat #: 203–03771</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BD FACS Diva</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_001456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>BD Biosciences</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Lumicycle analysis software</td>
+      <td>Actimetrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuant LAS 3000</td>
+      <td>GE Healthcare</td>
+      <td>RRID:SCR_014246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BZ analyzer software</td>
+      <td>KEYENCE</td>
+      <td>RRID:SCR_017205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Off-Spotter</td>
+      <td>Thomas Jefferson University</td>
+      <td>RRID:SCR_015739</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JMP</td>
+      <td>Statistical Discovery</td>
+      <td>RRID:SCR_014242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst33342</td>
+      <td>Dojindo laboratories</td>
+      <td>Cat #: 346–07951</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cells and treatments
 
 4T1 mouse breast cancer cells were purchased from American Type Culture Collection, and cultured under a 5% CO2 environment at 37°C in Roswell Park Memorial Institute (RPMI)−1640 medium supplemented with 10% FBS and 1% penicillin/streptomycin on two-dimensional (2D) CELLSTAR cell culture flasks (Greiner Bio-One, Monroe, NC) or synthetic three-dimensional (3D) scaffold biomaterials, Vecell 3D-inserts (Vecell Inc, Kitakyusyu, Japan). We confirmed that there was no microbial in this cell line using a TaKaRa PCR Mycoplasma Detection Set. We confirmed that cell lines were authenticated by ATCC using short tandem repeat (STR) PCR analysis, and these cell lines were used in less than 3 months from frozen stocks.
 
-## Construction of expression and reporter vectors
+### Construction of expression and reporter vectors
 
 Expression vectors for mouse BMAL1, CLOCK, CRYPTOCHROME1 (CRY1), PERIOD1 (PER1), PERIOD2 (PER2), and C/EBPα were constructed using cDNA generated from mouse liver RNA by RT-PCR. The coding regions were ligated into the pcDNA3.1(+) vector (Invitrogen; Life Technologies, Carlsbad, CA). MicroRNA expression vectors against mouse Cebpα gene were constructed using BLOCK-IT Pol II miR RNAi Expression Vector kit (Invitrogen), according to the manufacturer’s instruction. In order to construct reporter vectors, the mouse Clock gene promoter region spanning from −745 to −8 bp (the distance in base pairs from the putative transcription start site, +1) was also amplified by PCR, and the product was ligated into the pGL4.18 luciferase reporter vector (Promega, Madison, WI). The primer sequences used for amplification of the mouse Clock gene promoter region were as follows: forward primer, 5’-ATACTCGAGAGGTCACTTGGGTCGT-3’; reverse primer, 5’-ATAAGATCTCCTTCCCCTCCTCCACG-3’. The mouse Aldh3a1 gene promoter region spanning from −2000 to +15 bp was also amplified by PCR, and the product was ligated into the pGL4.18 luciferase reporter vector (Promega). The primer sequences used for amplification of the mouse Aldh3a1 gene promoter region were as follows: forward primer, 5’-ATACTCGAGAACCCTGGAGACTTTGTTCT-3’; reverse primer, 5’-AATAGATCTTGGAACTCCTGGAATAAGCAAG-3’.
 
 The pGL4.13 reporter vector in which the mouse Clock mRNA 3’-untranslated region (3’UTR) was inserted downstream of the luciferase gene was also constructed. To prepare the reporter constructs containing varying lengths of the 3’UTR of the mouse Clock gene, the nucleotide immediately after the stop codon in exon 23 of the mouse Clock gene was defined as +1. The 3’UTR of the mouse Clock gene (+1 to +4522) was divided into four sections from bp +1 to +900 (Clock 3’UTR 1 st::Luc), from bp +901 to +1921 (Clock 3’UTR 2nd::Luc), from bp +1922 to +3600 (Clock 3’UTR 3rd::Luc), and from bp +3601 to +4522 (Clock 3’UTR 4th::Luc). Each section of the 3’UTR of the mouse Clock gene was amplified by PCR and then cloned downstream of the luciferase gene into the pGL4.13 reporter vector.
 
-## Luciferase reporter assay
+### Luciferase reporter assay
 
 3 × E-box luciferase reporter vector (3 × E-box::Luc) and pRL-SV40 (Promega) as an internal-control reporter were transfected using lipofectamine LTX reagent according to the manufacturer’s instructions. Twenty-four hours after transfection, ALDH-positive (ALDH-high activity) and ALDH-negative (ALDH-low activity) cells were gated based on the ALDEFLUOR assay (StemCell Technologies, Vancouver, Canada) as described below. Collected cells were lysed and then subjected to the Dual-Luciferase reporter assay (Promega). The ratio of firefly to Renilla luciferase activities in each sample served as a measure of normalized luciferase activity.
 
-## ALDEFLUOR assay
+### ALDEFLUOR assay
 
 Dissociated single cells from cell lines were suspended in ALDEFLUOR assay buffer containing an ALDH substrate, bodipy-aminoacetaldehyde, at 1.5 µM, and incubated for 40 min at 37°C. A specific inhibitor of ALDH, diethylaminobenzaldehyde; DEAB, at a 10-fold molar excess, was used as negative control. Fluorescence-activated cell sorting (FACS; BD Biosciences, San Jose, CA) was performed for more than 1 × 106 cells under low pressure in the absence of UV light. The data were analyzed by BD FACSDiva software V6.1.3 or FlowJo (BD Biosciences).
 
-## Spheroid formation assay
+### Spheroid formation assay
 
 The ability of cells to grow in an anchorage-independent manner was assessed to evaluate the spheroid formation. Cells were seeded in 10% FBS containing RPMI soft agar at a density of 5 × 103 cells in 24-well plate. On day 7 after seeding, spheroid formation was assessed by staining with Hoechst33342 (Dojindo Laboratories, Kumamoto, Japan). The number and size of spheroid were measured by BZ analyzer (KEYENCE, Osaka, Japan).
 
-## Real-time bioluminescence tracing
+### Real-time bioluminescence tracing
 
 The bioluminescence of cultured 3 × E-box::Luc-expressing 4T1 cells was recorded using a real-time monitoring system (Lumicycle, Actimetrics, Wilmette, USA). The ALDH-positive populations of 3 × E-box::Luc-expressing 4T1 cells were cultured on spheroid forming condition, VECELL 3D inserts with 3D tumorsphere medium XF (PromoCell, Heidelberg, Germany). The 3D inserts were placed in 35 mm dishes and stimulated with 100 nM dexamethasone for synchronization of their circadian clocks. The amplitude of bioluminescence derived from 3 × E-box::Luc was calculated using the Lumicycle analysis software (Actimetrics).
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 Total RNA was extracted using RNAiso (Takara Bio Co., Ltd., Shiga, Japan) or ReliaPrep RNA Cell Miniprep System (Promega). cDNA was synthesized using a ReverTra Ace qPCR RT Kit (Toyobo, Osaka, Japan) and amplified by PCR. Real-time PCR analysis was performed on diluted cDNA samples using the THUNDERBIRD SYBR qPCR Mix (Toyobo) with the 7500 Real-time PCR system (Applied Biosystems, Tokyo, Japan). Primer sequences for amplification of target genes are listed in Supplementary file 1. For quantitation of miRNA, total RNA was reverse-transcribed by the Taqman MicroRNA Reverse Transcription Kit and Taqman MicroRNA Assay (Applied Biosystems). Data were normalized using 18 s and β-Actin mRNAs levels.
 
-## Western blot analysis
+### Western blot analysis
 
 Protein samples were prepared by CelLytic MT Cell Lysis Reagent (Sigma-Aldrich St. Louis, MO) supplemented with protease inhibitor cocktail, which contained 2 µg/mL of aprotinin, 2 µg/mL of leupeptin, and 100 µmol/L of phenylmethylsulfonyl fluoride. Then, 20 mg of the protein lysate was resolved by SDS–PAGE on 8% or 10% gels, transferred to polyvinylidene difluoride membranes, and probed with antibodies against Clock (ab3517; Abcam, Cambridge, UK), E-cadherin (AF748; R and D systems, Minneapolis, MN), Claudin1 (13050–1-AP; proteintech, Rosemont, IL), Vimentin (MAB21052; R and D systems), p84 (THOC1, 10920–1-AP; proteintech), and β-Actin (sc-1616; SantaCruz Biotechnology, Texas, TX). Specific antigen–antibody complexes were visualized using horseradish peroxidase–conjugated secondary antibodies and a chemiluminescence reagent. The membranes were photographed, and the density of each band was analyzed with an ImageQuant LAS 3000 (Fuji Film, Japan).
 
-## Establishment of 4T1 cells stably expressing CLOCK
+### Establishment of 4T1 cells stably expressing CLOCK
 
 In order to establish stably CLOCK-expressing 4T1 cells, full-length mouse Clock cDNA was subcloned into lentiviral vectors under control of the EF1α promoter. Lentivirus particles were prepared by the Lentiviral High Titer Packaging Mix with pLVSIN series (Clonetech, Palo Alto, CA) with Lenti-X 293 T cell lines. 4T1 cells were infected with Clock-expressing lentivirus and maintained in medium containing 5 µg/mL of puromycin.
 
-## Database analysis of Aldh3a1 promoter region
+### Database analysis of Aldh3a1 promoter region
 
 To identify the repressor of Aldh3a1 induced by enhanced CLOCK-expressing, 5’-upstream region of the mouse Aldh3a1 gene was analyzed by JASPAR database. Binding score was set at 95%, and then candidates were narrowed down as follows: (Acharyya et al., 2012) candidates registered as transcriptional repressor, (Al-Hajj et al., 2003) candidates which have complete E-box element in promoter region and confirmed binding signal of CLOCK in ChIP-Atlas database, and (Anderson et al., 2011) candidates confirmed the binding signal in Aldh3a1 promoter region in ChIP-Atlas database.
 
-## Invasion assay
+### Invasion assay
 
 For the collagen invasion assay, cells were seeded on a collagen-filled 3D Cell Culture Chip (AIM BIOTECH, Singapore) according to the manufacturer’s instructions. Culture medium containing 20 ng/mL of TGF-β was replaced every day. For the spheroid invasion assay, cells were embedded in vitrogel 3D (TheWell BIOSCIENCE, North Brunswick, NJ) containing 1 mg/mL of collagen type 1 at a density of 2 × 105 cells/mL. Culture medium was replaced every 2 days. Approximately 1–2 weeks after seeding, cells were observed using the KEYENCE all-in-one microscope BZ-X800.
 
-## Determination of growth rate of cultured cells
+### Determination of growth rate of cultured cells
 
 Cells were seeded at a density of 500 cells/well in 100 µL of culture medium in 96-well plates. The viability of cells was determined at 24 hr intervals after seeding of cells using ATP luminescent cell visibility assay kit (Promega). Growth rate was calculated dividing the change in cell viability against basal value (day 0).
 
-## Animals and treatments
+### Animals and treatments
 
 Five-week-old female Balb/c mice (Charles River Laboratory Japan, Inc; Yokohama, Japan) were housed under a standardized light–dark cycle at 24 ± 1°C and 60 ± 10% humidity with food and water ad libitum. Thirty microliters of medium containing 1 × 105 of each 4T1 cells were implanted in the mammary fat pads or right hind footpads of mice. The tumor volume was estimated according to the following formula: tumor volume (mm3) = 0.5 × length (longest diameter) × width (shortest diameter)2. Six weeks after implantation of 4T1 tumor cells into the mice, the lungs were removed, rinsed, and fixed in Bouin’s solution to stain the tumor nodules. To isolate metastatic tumor colony in bone marrow, bone marrow cells were collected from mouse femora and treated with RBC lysis buffer (155 mM NH4Cl, 10 mM NaHCO3, 0.1 mM EDTA). Cells were suspended in RPMI medium, and cultured under a 5% CO2 environment at 37°C for 2 weeks. 60 µM of 6-thioguanine (6-TG) were added in culture medium to select 4T1 metastatic tumor cells. Tumor colonies were fixed with methanol, and then stained by 0.2% crystalbiolet for quantification. All experimental procedures were performed after approval and following the guidelines of Kyushu University.
 
-## Immunohistochemical staining of Ki-67
+### Immunohistochemical staining of Ki-67
 
 To determine the index of tumor cell proliferation, immunohistochemical staining was performed using monoclonal antibody against Ki-67 (MIB1: M7240; Agilent Technology). Tumor tissues were removed from mice and fixed with 4% paraformaldehyde in PBS at 6 weeks after implantation. Paraffin-embedded tumor sections were deparaffinized and rehydrated through graded ethanol, followed by blocking endogenous peroxidase. Tumor sections subjected to heat-induced antigen retrieval and incubated with primary antibody. Specific antigen–antibody complexes were visualized using horseradish peroxidase–conjugated secondary antibodies with 3,3’-diaminobenzidine (DAB) solution and sections were counterstained with hematoxylin.
 
-## Transcriptional and post-transcriptional assay of Clock mRNA
+### Transcriptional and post-transcriptional assay of Clock mRNA
 
 Clock::Luc or each Clock 3’UTR luciferase constructs was transfected using lipofectamine LTX reagent according to the manufacturer’s instructions. Twenty-four hours after transfection, ALDH-positive and ALDH-negative cells were gated based on the ALDEFLUOR assay (StemCell Technologies) as described above. Total RNA was extracted from collected cells, and then Luciferase mRNA levels were assessed by qRT-PCR to evaluate transcriptional or post-transcriptional regulation of Clock mRNA. To normalize transfection efficiency, the expression levels of Neomycin phosphotransferase (Neor) derived from Clock::Luc vector was assessed in transcriptional assay. In post-transcriptional assay, the expression levels of RLuc mRNA derived from co-transfected pRL-SV40 vector (Promega) for normalization.
 
-## mRNA microarray analysis
+### mRNA microarray analysis
 
 ALDH-positive and ALDH-negative 4T1 cells were prepared from cultured 4T1 cell. Total RNA was extracted from cells using a QIAGEN RNeasy Mini Kit (QIAGEN). The quality of the total RNA was checked using an Agilent 2200 TapeStation (Agilent Technologies, Santa Clara, CA). Then, 50 ng of total RNA of each gene was used for the labeling reaction with the one-color protocol of an Agilent Low-Input QuickAmp Labeling Kit (Agilent Technologies). Labeled RNA was hybridized to a 60K Agilent 60-mer SurePrint technology (SurePrint G3 Mouse Gene Expression 8 × 60K Microarray Kit version 2.0) according to the manufacturer's protocol. All hybridized microarray slides were washed and scanned using an Agilent scanner. Relative hybridization intensities and background hybridization values were calculated using Agilent Feature Extraction software (version 9.5.1.1). Raw signal intensities and flags for each probe were calculated from hybridization intensities and spot information according to procedures recommended by Agilent. The raw signal intensities of two samples were log2-transformed and normalized using a quantile algorithm in the ‘preprocessCore’ library package of the Bioconductor software (http://www.bioconductor.org/). This produced a gene expression matrix consisting of 55,681 probe sets; differentially expressed genes between samples were selected using a Z-score of 2.0 or more and a ratio of 1.5-fold or more. For downregulated genes, a Z-score of −2.0 or less and a ratio of 0.75 or less were used. The full data have been deposited in National Center for Biotechnology Information gene expression omnibus (Accession#:GSE103598).
 
-## miRNA microarray analysis
+### miRNA microarray analysis
 
 ALDH-positive and -negative 4T1 cells were separated by ALDEFLUOR assay as described above. Total RNA was extracted from cells using RNAiso. The quality of the total RNA was checked using an Agilent 2200 TapeStation (Agilent Technologies, Palo Alto, USA). Then, 1000 ng of total RNA was hybridized, washed, and scanned by the Flash Tag Biotin HSR RNA Labeling Kit according to the manufacturer’s protocol. In total, 3163 miRNAs were scanned on the GeneChip miRNA 4.0 Array (Affymetrix, Santa Clara, CA) and data were analyzed by Affymetrix Transcriptome Analysis Console 3.0. Differentially expressed miRNAs between samples were selected by calculating ratios as follows: for upregulated miRNAs, a ratio of twofold or more; for downregulated miRNAs, a ratio of 0.5-fold or less. The full data have been deposited in National Center for Biotechnology Information gene expression omnibus (Accession#:GSE157655).
 
-## Treatment of miR-182::hairpin inhibitor
+### Treatment of miR-182::hairpin inhibitor
 
 Hairpin inhibitor of miR-182 (Horizon Discovery Ltd., Cambridge, UK) was transfected using Lipofectamine 2000 reagent (Invitrogen) according to the manufacturer’s instructions. 48 hr after transfection, cells were harvested, and subjected to Dual-Luciferase reporter assay (Promega).
 
-## Preparation of mmu-miR-182 knockout 4T1 cells
+### Preparation of mmu-miR-182 knockout 4T1 cells
 
 Genomic editing and knockout of miR-182 were performed using the CRISPR/Cas9 system. sgRNA targeting a proximal region of mmu-miR-182–5 p was constructed by the Guide-it sgRNA In Vitro Transcription Kit (Takara Bio). The primer sequence was as follows: 5’-CCTCTAATACGACTCACTATAGGCAATGGTAGAACTCACACGTTTAAGAGCTATGC-3’. Guide-it Recombinant Cas9 (Electroporation-ready) (Takara Bio) and sgRNA were co-transfected by electroporation, and single cells were seeded by FACS Aria. Each clone was cultured, and mutations in genomic DNA were detected by Sanger sequencing. Prediction of sgRNA off-target effects was performed using Off-Spotter (Pliatsika and Rigoutsos, 2015). Three bases of mismatches with sgRNA are detected in eight alleles, and any mutations were not confirmed in these alleles.
 
-## Statistical and data analyses
+### Statistical and data analyses
 
 JMP software was used to perform statistical analyses. The values presented are expressed as the mean with SD. All experiments were performed at least in triplicate. The significance of differences between two groups was analyzed by two-tailed Student’s t-tests while those with greater than two groups were analysis of variance (ANOVA), followed by Tukey–Kramer post hoc tests or Dunnett’s test. Equal variances were not formally tested. A 5% level of probability was considered significant. No statistical method was used to predetermine sample sizes; however, our sample sizes were similar to those reported in previous studies (Koyanagi et al., 2016; Matsunaga et al., 2018).

@@ -29,7 +29,7 @@
 
 ## Abstract
 
-10.7554/eLife.32866.001 Despite their importance as signaling hubs, the function of mitochondria-ER contact sites in mitochondrial quality control pathways remains unexplored. Here we describe a mechanism by which Mfn2, a mitochondria-ER tether, gates the autophagic turnover of mitochondria by PINK1 and parkin. Mitochondria-ER appositions are destroyed during mitophagy, and reducing mitochondria-ER contacts increases the rate of mitochondrial degradation. Mechanistically, parkin/PINK1 catalyze a rapid burst of Mfn2 phosphoubiquitination to trigger p97-dependent disassembly of Mfn2 complexes from the outer mitochondrial membrane, dissociating mitochondria from the ER. We additionally demonstrate that a major portion of the facilitatory effect of p97 on mitophagy is epistatic to Mfn2 and promotes the availability of other parkin substrates such as VDAC1. Finally, we reconstitute the action of these factors on Mfn2 and VDAC1 ubiquitination in a cell-free assay. We show that mitochondria-ER tethering suppresses mitophagy and describe a parkin-/PINK1-dependent mechanism that regulates the destruction of mitochondria-ER contact sites.
+Despite their importance as signaling hubs, the function of mitochondria-ER contact sites in mitochondrial quality control pathways remains unexplored. Here we describe a mechanism by which Mfn2, a mitochondria-ER tether, gates the autophagic turnover of mitochondria by PINK1 and parkin. Mitochondria-ER appositions are destroyed during mitophagy, and reducing mitochondria-ER contacts increases the rate of mitochondrial degradation. Mechanistically, parkin/PINK1 catalyze a rapid burst of Mfn2 phosphoubiquitination to trigger p97-dependent disassembly of Mfn2 complexes from the outer mitochondrial membrane, dissociating mitochondria from the ER. We additionally demonstrate that a major portion of the facilitatory effect of p97 on mitophagy is epistatic to Mfn2 and promotes the availability of other parkin substrates such as VDAC1. Finally, we reconstitute the action of these factors on Mfn2 and VDAC1 ubiquitination in a cell-free assay. We show that mitochondria-ER tethering suppresses mitophagy and describe a parkin-/PINK1-dependent mechanism that regulates the destruction of mitochondria-ER contact sites.
 
 ## Introduction
 
@@ -39,23 +39,63 @@ Contact sites between mitochondria and the endoplasmic reticulum (ER) act as cru
 
 ## Results
 
-## Parkin and PINK1 destroy mitochondria-ER contact during mitophagy
+### Parkin and PINK1 destroy mitochondria-ER contact during mitophagy
 
 We hypothesized that PINK1 and parkin may regulate contact between both organelles during mitophagy, based on studies demonstrating high levels of parkin ubiquitination activity on Mfn2 in both cells and in organello ubiquitination assays (Tanaka et al., 2010; Tang et al., 2017). To first determine whether parkin destroys the OMM-ER interface of depolarized mitochondria, we analyzed contacts between the two organelles by electron microscopy (EM) (Csordás et al., 2006). We quantified ER tubules within 100 nm of the OMM, as this distance is enough to capture tubules closely associated with the OMM (Figure 1A, left panel and inset). To induce PINK1-/parkin-mediated mitophagy, we treated U2OS cells stably-expressing GFP-parkin (U2OS:GFP-parkin) and control U2OS:GFP cells with CCCP for four hours, and observed by EM a decrease the total length of ER-OMM contact in both cell lines, although this decrease was greater in magnitude in cells expressing GFP-parkin (Figure 1A, quantified in 1B). However, when CCCP-induced, parkin-independent mitochondrial fragmentation was taken into account (Figure 1C), parkin had a specific effect on reducing the percentage of the OMM that remained in contact with the ER in depolarized cells (Figure 1D), as well as the percentage of total mitochondria that were still connected to the ER (Figure 1E). This effect was robust, as repeating our quantification using a variety of interorganellar tethering lengths – ER-OMM distances of 100, 50 and 25 nm (Figure 1—figure supplement 1A and B) – pointed us to the same conclusion; parkin disrupts mitochondria-ER contact upon activation of mitophagy. Indeed, this effect was indiscriminate in that it was not selective for one subset of ER-OMM distances (Figure 1—figure supplement 1C). Moreover, the subsets of remaining contacts observed after the ~75% reduction in CCCP-treated, GFP-parkin-expressing cells (Figure 1D and Figure 1—figure supplement 1C) were biased towards longer interorganellar distances (Figure 1—figure supplement 1D), consistent with parkin driving the OMM and ER apart. Given that the mitochondria observed in our EM analyses were still intact organelles and not yet engulfed by the isolation membrane (IM) of the autophagosome (Figure 1A, right panel), we concluded that parkin ablates contact between mitochondria and the ER as an early step during depolarization-induced mitophagy in cells.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative TEM images of mitochondria (‘M’) in contact with ER (pseudocoloured blue) in untreated and CCCP-treated U2OS:GFP-parkin cells. Scale bars, 500 nm. (B–E) Quantification of TEM from (A) in U2OS:GFP and GFP-parkin WT cells, left untreated (red bars) or treated with 20 μM CCCP for four hours (blue bars). Total apposition length (B), mitochondrial size (C), and the percent of OMM per mitochondrion (D) and mitochondria per field (E) in contact with the ER was quantified. Bars represent mean ± SEM, n = 82 to 152 mitochondria in 15 to 19 fields per condition. n.s., not significant; **, p<0.01; ***, p<0.001; ****, p<0.0001. (F) TEM image of an isolation membrane (‘IM’, broken green line) wrapping a mitochondrion (‘mito’). Blue arrowheads indicate the boundaries of OMM rupture, while red arrowheads indicate ER tubules in contact with the intact portion of the OMM. Scale bar, 500 nm. (G) Immunoblot analysis of whole-cell lysates from U2OS:GFP-parkin WT and C431S cells treated with 20 μM CCCP for four hours with or without 10 μM MG132. In the case of MG132 treatment, cells were first pre-incubated with 10 μM MG132 for 30 min prior to addition of CCCP. (H) Representative TEM images of mitochondria in contact with ER (pseudocoloured blue) in U2OS:GFP-parkin WT cells transfected with the indicated siRNA, and treated with 20 μM CCCP (‘+CCCP’) for four hours, in the presence or absence of 10 μM MG132 as in (G). Scale bar, 500 nm. (I,J) Quantification of TEM from (H) in cells treated with (blue bars) or without (red bars) 20 μM CCCP for four hours. The percent of OMM per mitochondrion (I) and mitochondria per field (J) in contact with the ER were quantified. Bars represent mean ± SEM, n = 101 to 203 mitochondria in 14 to 16 fields per condition. n.s., not significant; *, p<0.05; ***, p<0.001; ****, p<0.0001. (K) Immunoblot analysis of parkin levels in mouse brain cytosol from parkin+/+ and parkin-/- mice, along with whole-cell lysates from iDA neurons derived from iPSCs isolated from control (ctrl) individuals and a PRKN patient ("PRKN(del)"). (L) A representative wide-field image showing that iDA neurons express TH (green) and β-III tubulin (red) (Hoechst, blue). Scale bar, 20 microns. (M) Immunoblot analysis of whole-cell lysates from iDA neurons treated with 20 μM CCCP for one hour. The arrowhead indicates the unmodified Mfn2 band, while the red asterisk indicates ubiquitinated Mfn2. (N) Quantification of the percent of the OMM opposed to the ER in iDA neurons treated with 20 μM CCCP for one hour. Bars represent mean ± SEM, n = 80 to 131 mitochondria per condition. n.s., not significant; ****, p<0.0001. (O) Representative TEM images of mitochondria in contact with ER in iDA neurons. In the top row, total ER is pseudocoloured blue. In the second row, the red line denotes an area within 100 nm of the OMM. In the bottom row, ER tubules within the 100 nm area are pseudocoloured red. Scale bars, 200 nm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative TEM image of an untreated U2OS:GFP-parkin WT cell highlighting ER-OMM distances of less than 100, 50 and 25 nm. Intermembrane distances (d) are indicated. Scale bars, 500 and 100 nm. (B) Quantification of the relative amount of OMM in contact with the ER (top) and fraction of mitochondria in contact with the ER per field of view (bottom) for each of the three ER-OMM distance categories from (A), for cells left untreated or treated with 20 μM CCCP for four hours. Bars represent mean ± SEM, n = 83 to 150 mitochondria in 17 to 19 fields per condition. ****, p<0.0001. (C,D) Distribution of ER-OMM contact in CCCP-treated and untreated U2OS:GFP-parkin WT cells, displayed as the percentage of OMM corresponding to each intermembrane distance (C) or as a percentage of all ER-OMM contacts (D).
 
 We next took a closer look at how this process of contact site removal may occur (for the remainder of our study, we used the <100 nm interorganellar distance to quantify ER-OMM contacts). Parkin has been reported, through its ability to ubiquitinate OMM proteins and target them for proteasomal degradation, to eventually mediate the rupture of the OMM prior to or during engulfment by the autophagosome (Yoshii et al., 2011). Indeed, we observed rare (likely transient) mitochondrial structures where we believed OMM rupture to be occurring at the time of fixation (Figure 1F, the blue arrowheads indicate the limits of OMM rupture, where the organelle is being wrapped by the IM [indicated by the broken green line]). Concordantly, ER contacts with the still-intact OMM were observed (Figure 1F, red arrowheads), leading us to postulate that the removal of OMM-ER contacts may precede OMM rupture. To this end, we quantified ER-OMM contacts in CCCP-treated cells that were co-incubated with the proteasome inhibitor MG132, which stabilizes the unmodified band of OMM parkin substrates, including Mfn2, and prevents rupture of the OMM (Chan et al., 2011; Rakovic et al., 2011; Yoshii et al., 2011) (Figure 1G, GFP-parkinC431S, which cannot ligate Ub (Trempe et al., 2013), is used as a negative control). MG132 co-incubation rescued ER-OMM contact in U2OS:GFP-parkin cells treated with CCCP (Figure 1H,I and J). As expected, we also prevented OMM-ER disruption in cells depleted of PINK1 (Figure 1H,I and J).
 
 Finally, we replicated our U2OS cell data in induced pluriopotent stem cell (iPSC) -derived dopaminergic (iDA) neurons isolated from either control individuals or a patient carrying compound heterozygous deletions in the PRKN gene (PRKNdel; see Materials and methods). iDA neuronal cultures express endogenous parkin at a level comparable to that in the cytosolic fraction from mouse brain (Figure 1K), as well as the catecholinergic marker tyrosine hydroxylase (TH) (Figure 1L). Full-length parkin was undetectable in PRKNdel cells (Figure 1K), as expected given the genetic background of this line (Grünewald et al., 2010). Upon treatment of these neurons with CCCP for only one hour, we observed Mfn2 ubiquitination in both control lines but not in the parkin deletion line (Figure 1M). When we analyzed mitochondria-ER appositions in these cells, we again observed a CCCP-dependent decrease in the amount of <100 nm ER-OMM appositions in both control lines (Figure 1N and O). However, this decrease was absent in the parkin deletion line (Figure 1N and O), supporting our previous overexpression data in U2OS cells (Figure 1A to E ). Thus, PINK1 and parkin function to destroy contacts between the ER and mitochondria during mitophagy, likely through parkin-mediated OMM protein ubiquitination and turnover, as this process can be prevented by inhibiting proteasomal degradation. Moreover, this is a relevant biological process in human dopamine neurons, where it is regulated by endogenous parkin.
 
-## Phosphoubiquitination of Mfn2 by the PINK1/parkin system disrupts its antagonistic effect on mitophagy
+### Phosphoubiquitination of Mfn2 by the PINK1/parkin system disrupts its antagonistic effect on mitophagy
 
 Our EM data demonstrated that ER-mitochondria uncoupling occurs as an early step in the mitophagy pathway, prior to autophagosomal engulfment of the organelle (Figure 1F), and we sought to understand the underlying mechanism of this phenomenon. Mfn2 is both a mitochondria-ER tether and parkin ubiquitination substrate (de Brito and Scorrano, 2008; Sarraf et al., 2013; Tanaka et al., 2010), and thus the modulation of interorganellar contact by PINK1/parkin may occur through their effect on Mfn2. We began by examining the ubiquitination (via the disappearance of the unmodified band) of various parkin substrates (Khan et al., 2016; Sarraf et al., 2013) during a CCCP time course in U2OS:GFP-parkin cells, using the A320R mutant – which fails to bind pUb and initiate mitophagy (Wauer et al., 2015a; Yamano et al., 2015) – as a negative control. Turnover of both Mfn1 and Mfn2 occurred early (almost complete disappearance by two hours) compared to other OMM proteins (Figure 2A). Upon higher exposure (Figure 2B) of these immunoblots (from Figure 2A), we observed a rapid ‘burst’ of Mfn2 ubiquitination that occurred between 30 and 60 min CCCP. When compared to TOM20, a protein that is not promptly ubiquitinated by parkin (Sarraf et al., 2013), the rapidity of this Ub burst on Mfn2 was emphasized as TOM20 ubiquitination occurs gradually over a period of hours, rather than rapidly over a period of minutes (Figure 2B). Thus, ubiquitination of the mitofusins is one of the very first steps after the induction of mitophagy.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig2-v2.jpg)
+
+**Figure 2.:** (A) Immunoblot analysis of protein turnover in glucose-maintained U2OS:GFP-parkin WT and A320R cells treated with 20 μM CCCP for the indicated time. (B) Higher exposures of Mfn2 and TOM20 immunoblots from (A). Red asterisks indicate ubiquitinated forms of Mfn2 and TOM20. (C) Co-immunoprecipitation of parkin substrates with GFP-parkin WT or A320R in U2OS cells treated with 20 μM CCCP for the indicated time, using an anti-GFP antibody. Immunoprecipitates were separated, along with 4% input, by SDS-PAGE and immunoblotted for the indicated protein. The arrowhead indicates the unmodified form of the protein, while the red asterisks denote ubiquitinated forms. (D) Workflow for the on-bead deubiquitination of Mfn2. U2OS:GFP-parkin WT cells were treated for one hour with 20 μM CCCP, and GFP-parkin was immunoprecipitated as in (C). Immunoprecipitates were then treated with Usp2 deubiquitinase and the beads were re-isolated by centrifugation. (E) Immunoblot detection of Mfn2 after on-bead deubiquitination, as described in (D). Immunoprecipitates were either incubated at 37°C in the absence or presence of Usp2 catalytic domain for 30 min. Samples were then centrifuged to separate beads and supernatant (‘sup.’), which were denatured in sample buffer prior to separation by SDS-PAGE. Arrowheads indicate unmodified forms of Mfn2, while the red asterisks denote ubiquitinated forms. (F) Immunoprecipitation of Mfn2 for LC/MS analysis. Immunoprecipitates were separated, along with 4% input, by SDS-PAGE and immunoblotted for Ub. (G) Extracted ion chromatogram for the pS65 Ub peptide (TLSDYNIQKEpSTLHLVLR, a.a. 55–72) from Mfn2 immunoprecipitates from DMSO- (blue line) and CCCP- (red line) treated U2OS:GFP-parkin WT cells, immunoprecipitated as in (F). The red arrow indicates the peak corresponding to the peptide. (H) Immunoprecipitation of Mfn2 under denaturing conditions. Cells were lysed in buffer containing 1% SDS (see Materials and methods). Immunoprecipitates were separated, along with 4% input, by SDS-PAGE and immunoblotted for Ub and pS65 Ub. (I) Crystal structure of parkin complexed with pUb (PDB ID 5N2W, Kumar et al., 2017). The A320 residue at the pUb/parkin interface is highlighted in red, with parkin coloured blue and ubiquitin in green. (J) GST-R0RBR pulldown of pUb from U2OS:GFP-parkin WT cells. Pulldowns were performed with WT or A320R GST-R0RBR, with no GST-R0RBR (‘-’) as a further negative control. Pulldowns were separated, along with 10% input, by SDS-PAGE and immunoblotted for the indicated protein. The asterisk represents a cross-reaction between the pS65 antibody and the GST-R0RBR module.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Base peak chromatograms indicating equal loading of both DMSO- and CCCP-treated samples from Figure 2F and G. (B) Extracted ion chromatograms of the indicated Ub and Mfn2 peptides from both DMSO- (blue line) and CCCP- (red line) treated samples.
 
 Mechanistically, this Ub burst would require local activation of parkin by PINK1 in the vicinity of Mfn2, which could be achieved by PINK1-catalyzed phosphorylation of the resulting Ub chains – events that would dually serve to activate parkin and tether it in place (Okatsu et al., 2015). To test this, we first immunoprecipitated WT or A320R GFP-parkin from cells treated with CCCP over time. We observed robust coimmunoprecipitation of ubiquitinated Mfn1 and Mfn2 with GFP-parkinWT at one hour CCCP (corresponding to the Ub burst observed in Figure 2B), with no apparent binding at four hours (Figure 2C), likely due to turnover of the Mfns by the proteasome at this time (Figures 1G and 2B and [Tanaka et al., 2010]). When we analyzed other parkin substrates that are ubiquitinated less rapidly than the Mfns (Figure 2A), we observed binding to WT parkin only at four hours of CCCP treatment in the case of ubiquitinated Miro1, and binding of mono-ubiquitinated HK1 at one hour CCCP, which was further shifted at four hours, indicative of processivity of HK1 ubiquitination (Figure 2C). None of these ubiquitinated species coimmunoprecipitated with GFP-parkinA320R (Figure 2C). To confirm that GFP-parkin was indeed binding ubiquitinated Mfn2, we treated GFP-parkin immunoprecipitates from CCCP-treated cells with Usp2 deubiquitinase (see schematic in Figure 2D), which is active on both phosphorylated and unphosphorylated Ub chains (Wauer et al., 2015b), and observed the release of Mfn2 from the parkin-bound bead fraction into the supernatant after separation by centrifugation (Figure 2E). These results strongly suggested that, early on in the mitophagy pathway, parkin was binding ubiquitinated Mfn2, likely through interactions with pUb moieties.
 
 We next confirmed the phosphoubiquitination of Mfn2 during mitochondrial depolarization. When we immunoprecipitated Mfn2 from U2OS:GFP-parkinWT cells that were treated with CCCP for one hour, we detected Ub-modified species by immunoblot (Figure 2F). This was concomitant with a decrease in overall Mfn2 levels (Figure 2F), owing to its proteasomal turnover (Figure 1G). Liquid-chromatography coupled to mass spectrometry (LC/MS) confirmed that the Mfn2 immunoprecipitation contained pS65 Ub selectively in the CCCP-treated condition (Figure 2G), despite lower Mfn2 levels (Figure 2A and F and Figure 2—figure supplement 1). We then confirmed that both pS65 and unphosphorylated Ub were covalently attached to Mfn2 by its precipitation under denaturing conditions and detecting pS65 Ub and total Ub by immunoblot (Figure 2H). Finally, profiting from the nanomolar affinity of the parkin R0RBR module for pS65 Ub (Sauvé et al., 2015), we used GST-R0RBR to pull down phosphoubiquitinated species from CCCP-treated U2OS:GFP-parkinWT cell lysates. We again used the A320R mutant – which abolishes the parkin-pUb interaction (Figure 2I) (Wauer et al., 2015a; Yamano et al., 2015) – as a negative control. In a CCCP-dependent manner, pS65 Ub, Ub and (shifted) Mfn2 could be detected in GST-R0RBRWT pulldowns (Figure 2J). Strikingly, we did not observe any of these factors in pulldowns using GST-R0RBRA320R (Figure 2J). Mfn2 is therefore phosphoubiquitinated and, taken together with our previous data, a burst of phosphoubiquitination – parkin-mediated ubiquitination coupled to PINK1-catalyzed phosphorylation – occurs on Mfn2 at an early time point in the mitophagy pathway.
 
 Our observations so far demonstrated that mitochondria are separated from the ER during mitophagy, and that the OMM-ER tether Mfn2 is rapidly degraded at the onset of the pathway. We thus hypothesized that Mfn2 may antagonize mitophagy through its ability to tether mitochondria and the ER, necessitating its destruction. To test this, we silenced Mfn2 (siMfn2) in U2OS:GFP-parkinWT cells, as well as Mfn1 – which promotes mitochondrial fusion without any apparent role in interorganellar tethering (de Brito and Scorrano, 2008) – to control for phenomena resulting from fusion defects. We confirmed Mfn1 and Mfn2 depletion by immunoblot (Figure 3A), and observed mitochondrial fragmentation in both siMfn1 and siMfn2 cells (Figure 3B and Figure 3—figure supplement 1A and B) with an ER-OMM apposition defect unique to the siMfn2 condition (Figure 3—figure supplement 1A,C and D), as expected. Next, we investigated the kinetics of parkin recruitment to depolarized mitochondria in these cells (in our analyses, a cell is considered to have recruited parkin if the parkin signal covers the mitochondrial reticulum in its entirety). Moreover, we took advantage of delayed pathway kinetics of respiring cells by culturing cells in growth medium containing galactose as a carbon source (rather than glucose). This forces ATP generation through the electron transport chain and mitigates parkin-dependent mitophagy (Lee et al., 2015; McCoy et al., 2014); mitochondrial translocation of parkin, and the buildup of Ub, p62 and LC3 on mitochondria are all slowed in galactose-grown cells (Figure 3—figure supplement 2). Remarkably, we observed faster mitochondrial recruitment in siMfn2 (but not siMfn1) cells, under both bioenergetic conditions (Figure 3C and D). A significant difference was visible within one hour of CCCP treatment in glucose-cultured cells, and was exacerbated in their galactose-grown counterparts, owing to their slower kinetics in the control siRNA-transfected condition (Figure 3E). Strikingly, Mfn2 silencing increased recruitment in galactose-grown cells to levels seen in glucose-maintained cells transfected with control siRNA (Figure 3E). Silencing Mfn1 and Mfn2 simultaneously (Figure 3—figure supplement 3A) did not further enhance the kinetics of parkin recruitment beyond single, Mfn2-depleted cells (Figure 3—figure supplement 3B–D), implying that this phenotype was Mfn2-specific and unrelated to a loss of mitochondrial fusion.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-v2.jpg)
+
+**Figure 3.:** (A) Immunoblot analysis of whole-cell lysates from cells cultured in glucose or galactose transfected with control siRNA or siRNA targeting Mfn1 (‘siMfn1’) or Mfn2 (‘siMfn2’). (B) Mitochondrial morphology in glucose-maintained cells transfected with the indicated siRNA, as revealed by confocal imaging of TOM20 (red) staining (Hoechst, blue). Scale bar, 30 microns. (C) Representative confocal images of GFP-parkin recruitment to mitochondria as a function of time in U2OS:GFP-parkin cells treated with 20 μM CCCP. Red asterisks indicate cells in which GFP-parkin has fully translocated to mitochondria. Scale bar, 20 microns. (D) Quantification of parkin recruitment in cells from (C). Data points represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. (E) Parkin recruitment at one hour CCCP in cells from (C) arranged as a histogram. Bars represent mean ± SEM. n.s., not significant; **, p<0.01; ***, p<0.001. (F) U2OS:mtKeima cells were transfected with the indicated siRNA and GFP-parkin WT or C431S, and were treated with 20 μM CCCP (or DMSO) for four hours. mtKeima fluorescence in GFP-positive cells was measured using flow cytometry by excitation at 405 nm (neutral pH) and 561 nm (acidified). The data are represented as scatter plots of fluorescence emission from excitation at both wavelengths. The gated area encloses cells undergoing mitophagy (high acidified:neutral Keima ratio), and the percentage of cells within this gate is indicated in the top-left corner of each plot. (G) Quantification of the percent of cells undergoing mitophagy in cells from (F) treated with DMSO (red bars) or CCCP (blue bars) for four hours. Bars represent mean ± SEM, n = 2 experiments. n.s., not significant; *, p<0.05; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative TEM images of U2OS:GFP-parkin cells transfected with the indicated siRNA. ER tubules are pseudocoloured blue. Scale bar, 500 nm. (B–D) Quantification of mitochondrial length (B), relative percentage of OMM in contact with the ER (C) and percentage of mitochondria in contact with ER per field of view (D) in cells from (A). Bars represent mean ± SEM, n = 66 to 70 mitochondria in 5 to 7 fields per condition. n.s., not significant; *, p<0.05; ***, p<0.001; ****, p<0.0001.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative confocal images of U2OS:GFP-parkin (green) cells, grown on either glucose or galactose, treated with 20 μM CCCP for the indicated times. Cells were then fixed and stained for TOM20 (red) (Hoechst, blue). Cells marked with asterisks display parkin fully translocated to mitochondria. Scale bars, 20 microns. (B) Quantification of parkin recruitment to mitochondria in cells treated in (A). Data points represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. ***, p<0.001. (C) Representative confocal images of U2OS:GFP-parkin (cyan) cells expressing the indicated construct, treated with 20 μM CCCP for four hours and then fixed and stained for TOM20 (yellow) and the indicated tag (magenta) (Hoechst, blue). In the case of p62 (middle panels), an antibody against endogenous p62 was used. Scale bars, 30 microns. (D) Immunoblot analysis of whole-cell lysates from U2OS:GFP and GFP-parkin cells – grown either on glucose (‘glu’), converted to galactose (‘glu>gal’) or back to glucose (‘glu>gal>glu’) – treated with 20 μM CCCP for the indicated times. The asterisk indicates a non-specific band.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Immunoblot analysis of whole-cell lysates from cells cultured in glucose or galactose transfected with control siRNA or siRNA targeting Mfn1 (‘siMfn1’), Mfn2 (‘siMfn2’) or both mitofusins (‘siMfn1 +2’). (B) Representative confocal images of GFP-parkin recruitment to mitochondria as a function of time in U2OS:GFP-parkin cells treated with 20 μM CCCP. Red asterisks indicate cells in which GFP-parkin has fully translocated to mitochondria. Scale bar, 20 microns. (C) Quantification of parkin recruitment in cells from (B). Data points represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. (D) Parkin recruitment at one hour CCCP in cells from (B) arranged as a histogram. Bars represent mean ± SEM. n.s., not significant; *, p<0.05; **, p<0.01; ***, p<0.001. (E) Immunoblot analysis of whole-cell lysates from glucose-maintained U2OS:GFP-parkin cells transfected with the indicated siRNA targeting tethering-promoting proteins. (F) Mitochondrial morphology in cells from (E), as revealed by confocal imaging of TOM20 (red) staining (Hoechst, blue). Scale bar, 20 microns. (G) Representative confocal images of GFP-parkin recruitment to mitochondria as a function of time in U2OS:GFP-parkin cells treated with 20 μM CCCP. Red asterisks indicate cells in which GFP-parkin has fully translocated to mitochondria. Scale bar, 20 microns. (H) Quantification of parkin recruitment in cells from (G). Data points represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. (I) Parkin recruitment at one hour CCCP in cells from (G) arranged as a histogram. Bars represent mean ± SEM. n.s., not significant; **, p<0.01; ***, p<0.001.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Genomic sequence of human Mfn2 (exon 3) that was mutated in U2OS cells using CRISPR/Cas9. The arrow indicates the codon corresponding to methionine-1; leucine-29 (‘L29’), lysine-30 (‘K30’) and the introduced stop codon (‘*’) are also indicated. (B) Immunoblot analysis of whole-cell lysates from Mfn2 KO clones (A4 and A5). (C) Mitochondrial morphology in Mfn2 KO cells, as revealed by confocal imaging of TOM20 (green) staining. The asterisks indicate nuclei. Scale bar, 20 microns. (D) Representative wide-field images of mitochondrial polarization in live WT and Mfn2 KO (clone A4) cells as indicated by TMRM staining. (E) Representative confocal images of GFP-parkin recruitment to mitochondria as a function of time in WT or Mfn2 KO (clone A4) U2OS cells, transfected with GFP-parkin and treated with 20 μM CCCP. Red asterisks indicate cells in which GFP-parkin has fully translocated to mitochondria. Scale bar, 20 microns. (F) Quantification of parkin recruitment in cells from (E). Data points represent mean ± SEM, n = 3 replicates per condition, with >100 cells counted per condition for each replicate. n.s., not significant; *, p<0.05; **, p<0.01. Significance (or lack thereof) relative to WT cells is colour-coded according to genotype. (G) Representative images of glucose-cultured WT and Mfn KO cells, transfected with GFP-parkin (green) and treated with 20 μM CCCP for 24 hr, analyzed for their mitochondrial content (represented by SDHA, red). Green lines delineate the boarders of parkin-expressing cells, and red asterisks indicate cells devoid of SDHA signal. ‘Untransfected’ refers to cells in the experiment lacking parkin expression. Scale bar, 20 microns. (H) Quantification of complete mitochondrial turnover in cells from (G). Bars represent mean ± SEM, n = 3 replicates cells per condition, with 38 to 63 cells counted per condition for each replicate. ****, p<0.0001.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Immunoblot analysis of PINK1 depletion in WT and Mfn2 KO (clone A4) U2OS cells treated with 20 μM CCCP for four hours. The arrowhead indicates the PINK1 band, while the asterisk indicates a non-specific band. (B) U2OS cells from (A) were transfected with GFP-parkin and treated with 20 μM CCCP for four hours prior to fixation. Red asterisks mark cells in which parkin has been recruited to mitochondria. Scale bar, 10 microns. (C) Quantification of parkin-expressing cells from (A), left untreated (red bars) or treated with 20 μM CCCP for four hours (blue bars). Bars represent mean ± SEM, n = 3 replicates cells per condition, with >100 GFP-positive cells counted per condition for each replicate. n.s., not significant; ****, p<0.0001. (D) Quantification of parkin recruitment in U2OS:GFP-parkin cells, grown on glucose or galactose, treated with 20 μM CCCP for one hour prior to fixation. Cells were transfected with control siRNA (‘ctrl siRNA’) or siMfn2, and either additional ctrl siRNA (red bars) or siPINK1 (blue bars). Bars represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. n.s., not significant; ****, p<0.0001. (E) Crystal structure of parkin complexed with pUb (PDB ID 5N2W, Kumar et al., 2017). Sites of Ub phosphorylation (S65 in Ub), pUb binding (A320 in parkin) and catalysis (C431 in parkin) are highlighted in red, with relevant domains of parkin coloured different shades of blue, and ubiquitin in green. (F) Representative confocal images of U2OS cells stably expressing WT or A320R mutant parkin. Cells were treated with 20 μM CCCP for the indicated time prior to fixation. Red asterisks indicate cells in which GFP-parkin has been recruited to mitochondria. Scale bar, 20 microns. (G) Quantification of parkin recruitment in cells from (F). Data points represent mean ± SEM, n = 3 replicates cells per condition, with >100 cells counted per condition for each replicate. n.s., not significant; ****, p<0.0001.
 
 We next determined whether, more generally, this increase in recruitment kinetics could be induced by disrupting mitochondria-ER contacts via other means than removing Mfn2. To test this, we silenced two other genes that have been shown to promote mitochondria-ER association; PACS2 and Stx17 (Figure 3—figure supplement 3E) (Arasaki et al., 2015; Simmen et al., 2005). Unlike Mfn2 knockdown, we did not observe mitochondrial fragmentation in either PACS2- or Stx17-silenced cells (Figure 3—figure supplement 3F). When we tested parkin recruitment in these cells, we saw that, similarly to Mfn2 knockdown, silencing of either PACS2 (siPACS2) or Stx17 (siStx17) increased the translocation of parkin to mitochondria (Figure 3—figure supplement 3G and H). Again, the increase was most pronounced in galactose-cultured cells that were treated with CCCP for one hour, where parkin was recruited to near-glucose levels in Mfn2-, PACS2- and Stx17-silenced cells despite remaining predominantly cytosolic in cells transfected with control siRNA at this time point (Figure 3—figure supplement 3G and I). Thus, disruption of mitochondrion-ER tethering increases the kinetics of parkin translocation to depolarized mitochondria.
 
@@ -65,15 +105,31 @@ To ensure that we were observing on-target effects from depletion of our siRNA t
 
 We next sought to demonstrate that the antagonistic effect of mitochondria-ER tethering on mitophagy was functioning directly through the degradation of Mfn2. Conceivably, we could manipulate the pathway by preventing ER-OMM dissociation through the blockage of Mfn2 turnover, which is mediated by proteasomal degradation coupled to parkin ubiquitination (Tanaka et al., 2010; Ziviani et al., 2010). This hypothesis is supported by our EM data demonstrating that MG132 blocks mitochondria-ER uncoupling during mitophagy (Figure 1H–J). To achieve this, we created Mfn2 KO cells stably-expressing YFP-parkin (Mfn2 KO:YFP-parkin) and re-expressed ectopic Mfn2, which was able to rescue mitochondrial morphology from a fragmented reticulum to a collection of tubules (Figure 4A; CFP is used to identify cells expressing untagged Mfn2). We could additionally rescue morphology by overexpression of Mfn1 (Figure 4A), a phenomenon that has been described previously (Chen et al., 2003). Turning to recruitment assays – in which we observed faster GFP-parkin recruitment in Mfn2 KO cells (Figure 3—figure supplement 4E and F) – we observed that ectopic expression of Mfn2, but not Mfn1, was able to suppress the recruitment of YFP-parkin to depolarized mitochondria (Figure 4B and C). This is in line with our previous data showing that the antagonistic effect of Mfn2 on mitophagy occurs through its ability to tether mitochondria to the ER (Figure 3—figure supplement 3H–J) and not its effect on mitochondrial fusion (Figure 3—figure supplement 3A–D). Immunoblot analysis of Mfn2 KO:YFP-parkinWT cells ectopically expressing Mfn2 revealed that it was expressed at near-endogenous levels and degraded rapidly upon CCCP treatment compared to the control Mfn2 KO:YFP-parkinC431S cell line (Figure 4D). Mfn2 is ubiquitinated by parkin on at least ten lysine residues, although several sites are clustered in the heptad repeat (HR) domains (Sarraf et al., 2013). Additionally, Mfn2 itself has been reported to be directly phosphorylated by PINK1 on T111 and S442, and that these phosphorylation events are critical for the interaction of parkin with Mfn2 and parkin recruitment in cardiomyocytes (Chen and Dorn, 2013). Focusing on these putative phosphorylation sites and the clustered ubiquitination sites in the HR1 and HR2 domains, phylogenic analysis of their conservation demonstrated that only T111 in the GTPase domain and K737 in the HR2 domain were completely conserved from human Mfn2 to the sole Drosophila mitofusin, MARF (Figure 4—figure supplement 1A and B; both the traditional and single-pass Mfn2 topologies (Mattie et al., 2018) are depicted in Figure 4—figure supplement 1B). However, in the case of the sites of ubiquitination, at least two HR1 sites and three HR2 sites were conserved as lysines down through Xenopus Mfn2, while MARF retained one site each in HR1 and HR2 (Figure 4—figure supplement 1A). We thus posited that mutation of several lysine residues would likely be required to reduce Mfn2 ubiquitination. While mutation of all major sites of Mfn2 ubiquitination almost completely abolishes its modification by parkin (Heo et al., 2015), we found that mutation of K406, K416 and K420 in the HR1 domain (Mfn2HR1) reduced its CCCP-induced ubiquitination by ~75%, as measured by the disappearance of the unmodified band by immunoblot (Figure 4E and F; here Mfn2 levels are normalized to the untreated condition for each construct). This effect was greater than what we observed with the single mutant, Mfn2K406R (K416 and K420 appear dispensable in this assay), and mutation of all four sites in HR2 (Mfn2HR2) or the double T111A/S442A phosphomutant (Mfn2TS/AA) failed to significantly reduce Mfn2 modification (Figure 4E and F). We thus considered Mfn2HR1 as a ‘hypomorph’ with respect to parkin ubiquitination compared to WT, HR2 and TS/AA constructs, despite similar expression patterns with the latter two (Figure 4G). Introduction of either Mfn2HR1, Mfn2HR2 or Mfn2T111A/S442A into Mfn2 KO:YFP-parkin cells rescued morphology in a similar manner to WT Mfn2 (Figure 4H), demonstrating these mutations did not disrupt mitochondrial fusion. We also monitored the ability of these Mfn2 mutants to form high molecular weight (HMW) complexes (Karbowski et al., 2006) that function in mitochondria-ER tethering (de Brito and Scorrano, 2008). By blue native polyacrylamide gel electrophoresis (BN-PAGE), we observed that all three mutants (HR1, HR2 and T111A/S442A) formed HMW complexes similar to WT in solubilized mitochondria (Figure 4I). When we assayed mitophagy in Mfn2 KO:YFP-parkinWT cells, we found that only rescue of Mfn2 with Mfn2HR1 – the ubiquitination of which is compromised (Figure 4E and F) – blocked the turnover of mitochondria (Figure 4J and K). Thus, ubiquitination of the Mfn2 HR1 domain by parkin is required for efficient mitophagy and, taken together with our previous mitophagic data in Mfn2-depleted cells, demonstrates that parkin and PINK1 directly counter Mfn2-mediated mitochondria-ER tethering through Mfn2 turnover to promote mitophagy.
 
-## Mfn2 complexes are extracted by p97 to drive mitochondria and the ER apart
+![Figure 4.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mfn2 KO:YFP-parkin WT cells were transfected with the indicated plasmid and CFP in a 3:1 ratio, then fixed and immunostained for TOM20 (red) and counterstained with Hoechst 33342 (blue). Scale bars, 20 and 1 microns. (B) Mfn2 KO:YFP-parkin WT and C431S cells, transfected as in (A), were treated with 20 μM CCCP for four hours prior to fixation, then scored for YFP-parkin recruitment. Green and red asterisks indicated CFP-positive cells with mitochondrial and cytosolic YFP-parkin, respectively. Scale bar, 20 microns. (C) Quantification of recruitment in (B). Bars represent mean ± SEM, n = 3 replicates cells per condition, with >50 cells counted per condition for each replicate. ****, p<0.0001. (D) Immunoblot analysis of Mfn2 KO:YFP-parkin cells (WT and C431S) transfected with Mfn2 and treated with 20 μM CCCP for the indicated time. An untreated U2OS cell lysate is included as a control for endogenous Mfn2 levels. (E) Representative immunoblot analysis of Mfn2 KO:YFP-parkin WT cells transfected with the indicated Mfn2 mutant and treated with 20 μM CCCP for four hours. (F) Quantification of Mfn2 modification in immunoblot analyses from (E), given as the percent of Mfn2 reduction after CCCP relative to actin. Bars represent mean ± SEM, n = 4 replicates. **, p<0.01; ***, p<0.001. (G) Quantification of steady-state (‘- CCCP’) levels of Mfn2 in immunoblot analyses from (E), relative to actin. Bars represent mean ± SEM, n = 4 replicates. n.s., not significant. (H) Mfn2 KO:YFP-parkin WT cells were transfected with the indicated plasmid and CFP in a 3:1 ratio, then fixed and immunostained for TOM20 (red) and counterstained with Hoechst 33342 (blue). Scale bars, 20 and 1 microns. (I) Immunoblot analysis of BN- and SDS-PAGE gels of solubilized mitochondria from cells from (H). Arrows indicate two Mfn2-containing complexes in the native condition. (J) Representative wide-field images of Mfn2 KO:YFP-parkin WT cells transfected with the indicated Mfn2 construct. Cells were treated with 20 μM CCCP for 24 hr prior to fixation, then stained with CIV-COX1 (red) and Hoechst (blue). Scale bar, 20 microns. (K) Quantification of mitophagy in (J). Bars represent mean ± SEM, n = 4 replicates per condition, with >50 cells counted per condition for each replicate. ****, p<0.0001; n.s., not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Sequence alignment of sites of Mfn2 modification across species. Ubiquitinated lysines and phosphorylated serines and threonines are indicated by arrowheads. Residue numbering is according to the human sequence. HR, heptad repeat domain. (B) Diagram of Mfn2 post-translational modification by parkin-mediated ubiquitination (Sarraf et al., 2013) and PINK1-mediated phosphorylation (Chen and Dorn, 2013) for both double- (top) and single- (bottom) pass topologies. Phosphosites are denoted in red, while sites of ubiquitination are marked in grey. HR, heptad repeat domain; OMM, outer mitochondrial membrane.
+
+### Mfn2 complexes are extracted by p97 to drive mitochondria and the ER apart
 
 We next investigated exactly how parkin and PINK1 act on Mfn2-mediated OMM-ER tethering. Examining HMW complexes by BN-PAGE in untreated U2OS:GFP-parkinWT cells (expressing endogenous Mfn2), we observed a bimodal distribution of Mfn2 into two complexes, weighing approximately ~250 kDa and ~500 kDa (Figure 5A, leftmost lane, similar to what was seen in Figure 4I). By contrast, Mfn1 – which, in our assays, appears dispensable for mitochondria-ER tethering as assayed by EM (Figure 3—figure supplement 1) and its effect on parkin recruitment (Figure 3C–E) – only formed a ~ 250 kDa HMW complex (Figure 5A). We thus considered the ~500 kDa complex containing solely Mfn2 as a dimer of the ~250 kDa Mfn2-containing subcomplex that potentially bridges the ER and OMM. We then monitored the stability of Mfn2- (and Mfn1-) containing HMW complexes during mitophagy. Upon CCCP treatment, we observed a rapid loss Mfn2- (and Mfn1-) containing complexes (Figure 5A), concomitant with its phosphoubiquitination (Figure 2) and dependent upon parkin ligase activity (Figure 5B and C). While treatment of mitochondrial lysates with Usp2 deubiquitinase slightly increased levels of the unmodified Mfn1 or Mfn2 band in mitochondria isolated from CCCP-treated cells (Figure 5D; the densitometry measurements correspond to the shorter exposures of Mfn1 and Mfn2), this was not to levels seen in mitochondria from untreated cells. This result indicated that the disappearance of HMW Mfn complexes are predominantly due to their extraction from the OMM (and not a high level of modification by Ub). This process is thought to be mediated by the AAA-ATPase p97/VCP (Tanaka et al., 2010) and, accordingly, when we treated U2OS:GFP-parkinWT cells with CCCP in the presence of the non-competitive p97 inhibitor NMS-873 (Magnaghi et al., 2013), extraction of HMW complexes containing either Mfn1 or Mfn2 was accordingly repressed (Figure 5E). Indeed, both ~250 kDa (containing Mfn1 and/or Mfn2) and ~500 kDa (Mfn2 only) complexes were stabilized in the presence of NMS-873 (Figure 5E), with smearing occurring due to Mfn ubiquitination (see Figure 2), indicating that parkin-mediated ubiquitination itself was not sufficient to drive apart the ~500 kDa Mfn2-containing interorganellar bridge. Analysis of OMM-ER appositions in these cells revealed that p97 inhibition prevented the dissociation of mitochondria from the ER (Figure 5F–H). Thus, p97-dependent extraction of Mfn2 HMW complexes from the OMM separates mitochondria from the ER during mitophagy.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig5-v2.jpg)
 
-**Figure 5.:** (A) Immunoblot analysis of NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP for the indicated time, separated by blue native- (BN-) and SDS-PAGE. (B, C) Immunoblot analysis of Mfn1- (B) and Mfn2- (C) containing complexes in NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT and C431S cells treated with 20 μM CCCP for four hours, separated by BN- and SDS-PAGE. (D) Mitochondria isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP for one hour were, after solubilization in NP-40, incubated with 1 μM Usp2 for 30 min at 37°C prior to separation by SDS-PAGE. Red asterisks indicate ubiquitinated species of Mfn1 and Mfn2. Densitometry calculations for the Mfn1 and Mfn2 bands (shorter exposure) relative to CIII-core2 are shown under the respective immunoblots. (E) Immunoblot analysis of NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for the indicated time, separated by blue native- (BN-) and SDS-PAGE. Red asterisks indicate ubiquinated Mfn species visible by SDS-PAGE, while the arrowhead denotes the unmodified band. (F) Representative TEM images of mitochondria in contact with ER (pseudocoloured blue) in U2OS:GFP-parkin cells treated with 20 μM CCCP (‘+CCCP’) for four hours in the presence or absence of 25 μM NMS-873. Scale bar, 500 nm. (G,H) Quantification of TEM from (F) in cells treated with (blue bars) or without (red bars) 20 μM CCCP for four hours. The percent of OMM per mitochondrion (G) and mitochondria per field (H) in contact with the ER was quantified. Bars represent mean ± SEM, n = 99 to 187 mitochondria in 12 to 14 fields per condition. n.s., not significant; *, p<0.05; ***, p<0.001; ****, p<0.0001.10.7554/eLife.32866.018Figure 5—source data 1.Figure 5G and H.
+**Figure 5.:** (A) Immunoblot analysis of NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP for the indicated time, separated by blue native- (BN-) and SDS-PAGE. (B, C) Immunoblot analysis of Mfn1- (B) and Mfn2- (C) containing complexes in NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT and C431S cells treated with 20 μM CCCP for four hours, separated by BN- and SDS-PAGE. (D) Mitochondria isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP for one hour were, after solubilization in NP-40, incubated with 1 μM Usp2 for 30 min at 37°C prior to separation by SDS-PAGE. Red asterisks indicate ubiquitinated species of Mfn1 and Mfn2. Densitometry calculations for the Mfn1 and Mfn2 bands (shorter exposure) relative to CIII-core2 are shown under the respective immunoblots. (E) Immunoblot analysis of NP-40-solubilized mitochondria, isolated from U2OS:GFP-parkin WT cells treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for the indicated time, separated by blue native- (BN-) and SDS-PAGE. Red asterisks indicate ubiquinated Mfn species visible by SDS-PAGE, while the arrowhead denotes the unmodified band. (F) Representative TEM images of mitochondria in contact with ER (pseudocoloured blue) in U2OS:GFP-parkin cells treated with 20 μM CCCP (‘+CCCP’) for four hours in the presence or absence of 25 μM NMS-873. Scale bar, 500 nm. (G,H) Quantification of TEM from (F) in cells treated with (blue bars) or without (red bars) 20 μM CCCP for four hours. The percent of OMM per mitochondrion (G) and mitochondria per field (H) in contact with the ER was quantified. Bars represent mean ± SEM, n = 99 to 187 mitochondria in 12 to 14 fields per condition. n.s., not significant; *, p<0.05; ***, p<0.001; ****, p<0.0001.
 
 We then addressed the relationship between parkin-dependent Mfn2 ubiquitination and p97 extraction more closely. Consistent with our HMW complex extraction data (Figure 5E), co-incubation of cells with CCCP and NMS-873 completely blocked the mitochondrial translocation of p97 (Figure 6A and B) which occurs during mitophagy (Kimura et al., 2013; Tanaka et al., 2010). Accordingly, NMS-873 stabilized ubiquitinated Mfn1 and Mfn2 conjugates induced by CCCP in whole-cell extracts (Figure 6C) and, consistent with our BN-PAGE data (Figure 5E), these ubiquitinated Mfn2 species were present on mitochondria (Figure 6D). We observed a similar effect when we silenced p97 with siRNA (sip97); in p97-depleted cells treated with CCCP, we saw an increase in ubiquitinated Mfn2 upon depolarization (Figure 6E). Additionally, basal levels of Mfn2 increased upon prolonged p97 depletion (Figure 6E), consistent with the possible involvement of p97 in steady-state Mfn2 turnover (Zhang et al., 2017). In Mfn2 KO:YFP-parkinWT cells rescued with WT Mfn2, CCCP induced Mfn2 turnover and, when cells were co-incubated with NMS-873, we observed a stabilization of ubiquitinated Mfn2 (Figure 6F) similar to WT U2OS cells expressing GFP-parkin (Figure 6C). When we expressed Mfn2HR1 in Mfn2 KO:YFP-parkinWT cells, we observed a severe reduction in NMS-873-dependent stabilization of CCCP-induced Mfn2-Ub conjugates (Figure 6F). We confirmed this reduction in ubiquitination by immunoprecipiting Mfn2 from reconstituted cells treated with CCCP and NMS-873 under denaturing conditions and immunoblotting for Ub (Figure 6G). This supports our mutagenesis data showing a reduction of Mfn2HR1 turnover (Figure 4E and F) and is mechanistically consistent with ubiquitination of lysines in the Mfn2 HR1 domain being recognized by p97 and signaling for extraction of the protein.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representative confocal images of p97 recruitment to mitochondria in cells treated with 20 μM CCCP and/or 25 μM NMS-873 for the indicated time. Blue asterisks denote cells with mitochondrial p97, and p97 signal intensity is represented as a heat map. Scale bar, 20 microns. (B) Quantification of cells with p97 translocation to mitochondria in cells treated with either 25 μM NMS-873 (red line), 20 μM CCCP (blue line) or both simultaneously (magenta line). Bars represent mean ± SEM, n = 3 replicates per condition, with >100 cells counted per condition for each replicate. ****, p<0.0001. (C) Immunoblot analysis of whole-cell lysates from U2OS:GFP-parkin cells treated with 20 μM CCCP and the specified concentration of NMS-873 for the indicated time, separated by SDS-PAGE. For each Mfn, longer (upper panel) and shorter (lower panel) exposures are shown. Red asterisks indicate ubiquitinated Mfn species, while the arrowheads denote the unmodified band. (D) U2OS:GFP-parkin cells were treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for four hours, then fixed and immunostained for Mfn2 (yellow) and cytochrome c (magenta). Scale bar, 10 microns. (E) Immunoblot analysis of Mfn2 ubiquitination in U2OS:GFP-parkin WT cells transfected with siRNA targeting p97 (sip97) or control (ctrl siRNA) and treated with 20 μM CCCP for two hours. Arrowheads indicate the unmodified Mfn2 band (two exposures), while the red asterisk denotes ubiquitinated Mfn2. (F) Immunoblot analysis of exogenous Mfn2 in Mfn2 KO:YFP-parkin WT cells reconstituted with the indicated Mfn2 construct. Cells were treated with 25 μM NMS-873 and/or 20 μM CCCP for four hours prior to lysis. The arrowhead indicates the unmodified Mfn2 band and the red asterisk denotes ubiquitinated Mfn2 conjugates. (G) Immunoprecipitation of Mfn2 under denaturing conditions from Mfn2 KO:YFP-parkin WT cells reconstituted with the indicated Mfn2 construct. Cells were lysed in buffer containing 1% SDS (see Materials and Methods). Immunoprecipitates were separated by SDS-PAGE and immunoblotted for Ub. (H) Representative widefield images of p97 translocation to mitochondria (pseudocoloured as in [A]) in Mfn2 KO:YFP-parkin WT or C431S cells, reconstituted with the indicated plasmid, treated with 20 μM CCCP (or DMSO) for four hours. CFP (blue) is included as a marker of Mfn2 transfection, and blue asterisks indicate cells where p97 has translocated to mitochondria. Scale bar, 20 microns. (I) Quantification of mitochondrial recruitment of p97 in Mfn2 KO:YFP-parkin cells from (H). Bars represent mean ± SEM, n = 3 replicates per condition, with >50 cells counted per condition for each replicate. *, p<0.05; **, p<0.01; ****, p<0.0001. (J) Co-immunoprecipitation of mitofusins with GFP-parkin in U2OS:GFP-parkin WT cells treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for the indicated time, using an anti-GFP antibody. Immunoprecipitates were separated, along with 4% input, by SDS-PAGE and immunoblotted for the indicated protein. The arrowhead indicates the unmodified form of the protein, while the asterisks denote ubiquitinated forms. (K) Quantification of the relative amount of ubiquitinated Mfn2 co-immunoprecipitated with GFP-parkin in cells from (J). Bars represent mean ± SEM, n = 3 replicates. *, p<0.05.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Workflow of protein purification, phosphorylation, pull-down and LC/MS. GST-4xUb G76V, which cannot be cleaved by the cellular Ub processing machinery, was phosphorylated on S65 by Tribolium castaneum PINK1 (TcPINK1) to form GST-4xpUb G76V. Both GST-4xUb and GST−4xpUb were incubated with mouse brain lysate, and binding partners were analyzed by LC/MS. See Materials and Methods for more detail. (B) Ub phosphorylation was determined by separation by SDS-PAGE over Phos-tag gel, which slows the migration of phosphorylated proteins. (C) Quantification of the number of peptides corresponding to p97-related factors identified by LC/MS in GST (black dots), GST-4xUb (red dots) and GST-4xpUb (blue dots) pull-downs from mouse brain lysate. Bars represent the mean, n = 3 independent experiments. See Supplementary file 1 for complete lists of identified interactors.
 
 While we posited that Mfn2 may be acting as a p97 receptor during mitophagy, we observed robust p97 recruitment in depolarized Mfn2 KO:YFP-parkinWT cells (Figure 6H and I). Moreover, p97 recruitment was similar in cells expressing either Mfn2WT or Mfn2HR1 (Figure 6H and I). p97 recruitment levels in both Mfn2 rescue conditions were lower than in cells transfected with empty vector (Figure 6H and I) likely owing to the delayed parkin recruitment kinetics in Mfn2-expressing cells (Figure 4B and C). Thus, ubiquitinated Mfn2 is not the sole p97-binding protein on the OMM. We next tested if pUb moieties conjugated to Mfn2 play a role in p97 binding. As we detected pUb conjugated to immunoprecipitated Mfn2 from cells treated with CCCP (Figure 2G and H), we co-treated cells with CCCP and NMS-873 and observed that the interaction between parkin and ubiquitinated Mfn2 – which is normally transient owing to Mfn2 turnover – was stabilized (Figure 6J and K). Finally, we probed for the existence of a pUb-p97 interaction by performing a GST pull-down using either S65-phosphorylated or unphosphorylated 4xUb chains from mouse brain lysate (see Figure 6—figure supplement 1A for experimental schematic) and identified interactors by LC/MS. Using nearly fully-phosphorylated chains (Figure 6—figure supplement 1B), we consistently observed the presence of p97, as well as its cofactors p47 and UBXN1, in 4xUb pull-downs, and these proteins were almost totally absent in parallel 4xpUb pull-downs (Figure 6—figure supplement 1C and Supplementary file 1). Thus, while p97 mediates the turnover of ubiquitinated Mfn2, this likely does not involve interactions between the p97 complex and pUb.
 
@@ -81,11 +137,19 @@ The herein-described role of p97 in separating mitochondria from the ER is criti
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig7-v2.jpg)
 
-**Figure 7.:** (A) U2OS:mtKeima cells were transfected with the indicated siRNA and GFP-parkin WT, and were treated with 20 μM CCCP (or DMSO) for five hours in the presence (dark grey box) or absence (light grey box) of 25 μM NMS-873. mtKeima fluorescence in GFP-positive cells was measured using flow cytometry by excitation at 405 nm (neutral pH) and 561 nm (acidified). The data are represented as scatter plots of fluorescence emission from excitation at both wavelengths. The gated area encloses cells undergoing mitophagy and the percentage of cells within this gate is indicated in the top-left corner of each plot. (B) Quantification of the percent of cells undergoing mitophagy in cells from (A), expressed as a ratio of CCCP-treated cells to those treated with DMSO. Bars represent mean ± SEM, n = 2 experiments. n.s., not significant; ****, p<0.0001. (C) Immunoblot analysis of U2OS:GFP-parkin cells, transfected with siRNA targeting Mfn2 (siMfn2) or control (ctrl siRNA), treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 over a period of six hours. (D) Immunoblot quantification of VDAC1 levels (relative to actin) from cells from (C). Bars represent mean ± SEM, n = 5 experiments. (E) The 6 hr time-point data from (D) is represented as a fold change in VDAC1 remaining when NMS-873 is added. Data points are represented on the graph, n = 5 experiments. *, p<0.05. (F) Quantification of the half-time (t1/2) of VDAC1 modification in cells from (C) over 6 hr. Half-times were obtained from decay curves generated with the time-points in (C). Bars represent mean ± SEM, n = 5 experiments. (G) Immunoblot analysis of U2OS:GFP-parkin cells, transfected with the indicated siRNA, treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for six hours. (H) Immunoblot quantification of VDAC1 levels (relative to actin) in cells from (G), represented as a fold change in VDAC1 remaining when NMS-873 is added. Data points are represented on the graph, n = 3 experiments. Factors promoting ER-OMM contact are contained within the blue box.10.7554/eLife.32866.023Figure 7—source data 1.Figure 7B, D–F and H.
+**Figure 7.:** (A) U2OS:mtKeima cells were transfected with the indicated siRNA and GFP-parkin WT, and were treated with 20 μM CCCP (or DMSO) for five hours in the presence (dark grey box) or absence (light grey box) of 25 μM NMS-873. mtKeima fluorescence in GFP-positive cells was measured using flow cytometry by excitation at 405 nm (neutral pH) and 561 nm (acidified). The data are represented as scatter plots of fluorescence emission from excitation at both wavelengths. The gated area encloses cells undergoing mitophagy and the percentage of cells within this gate is indicated in the top-left corner of each plot. (B) Quantification of the percent of cells undergoing mitophagy in cells from (A), expressed as a ratio of CCCP-treated cells to those treated with DMSO. Bars represent mean ± SEM, n = 2 experiments. n.s., not significant; ****, p<0.0001. (C) Immunoblot analysis of U2OS:GFP-parkin cells, transfected with siRNA targeting Mfn2 (siMfn2) or control (ctrl siRNA), treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 over a period of six hours. (D) Immunoblot quantification of VDAC1 levels (relative to actin) from cells from (C). Bars represent mean ± SEM, n = 5 experiments. (E) The 6 hr time-point data from (D) is represented as a fold change in VDAC1 remaining when NMS-873 is added. Data points are represented on the graph, n = 5 experiments. *, p<0.05. (F) Quantification of the half-time (t1/2) of VDAC1 modification in cells from (C) over 6 hr. Half-times were obtained from decay curves generated with the time-points in (C). Bars represent mean ± SEM, n = 5 experiments. (G) Immunoblot analysis of U2OS:GFP-parkin cells, transfected with the indicated siRNA, treated with 20 μM CCCP in the presence or absence of 25 μM NMS-873 for six hours. (H) Immunoblot quantification of VDAC1 levels (relative to actin) in cells from (G), represented as a fold change in VDAC1 remaining when NMS-873 is added. Data points are represented on the graph, n = 3 experiments. Factors promoting ER-OMM contact are contained within the blue box.
 
-## Cell-free reconstitution of Mfn2 and VDAC1 ubiquitination by PINK1/parkin/p97
+### Cell-free reconstitution of Mfn2 and VDAC1 ubiquitination by PINK1/parkin/p97
 
 Cell-free reconstitution assays have proven useful in interrogating the activation of parkin-dependent ubiquitination by both PINK1 (Lazarou et al., 2013) and designer mutations in parkin itself (Tang et al., 2017). We thus sought to recapitulate our findings in cells concerning Mfn2 and VDAC1 ubiquitination in a cell-free assay (see diagram in Figure 8A). We first isolated mitochondria from HeLa cells – which lack endogenous parkin (Denison et al., 2003) – that were either depolarized with CCCP for four hours (‘mitoCCCP’) or treated with DMSO as a control (‘mitoDMSO’). Accordingly, we observed PINK1 stabilization in the CCCP-treated condition only (Figure 8B). We were then able to reconstitute parkin-dependent ubiquitination of Mfn2 on the OMM of these isolated mitochondria by adding the E1, E2 and E3 (parkin) components of this pathway, as well as Ub and other factors, as previously described (Tang et al., 2017), in a time-, depolarization- and ligase-dependent manner (Figure 8C). Using depolarized mitochondria isolated from cells depleted of PINK1 (Figure 8D), Mfn2 ubiquitination was almost completely abolished (Figure 8E), demonstrating an as-expected requirement for PINK1 in parkin-dependent ubiquitination.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig8-v2.jpg)
+
+**Figure 8.:** (A) Workflow for the in organello ubiquitination assay, where HeLa cells are depolarized with 20 μM CCCP for four hours and mitochondria are isolated (‘mitoCCCP’, with control ‘mitoDMSO’). These are combined with ubiquitination assay components (blue box) and incubated at 37°C (see Materials and Methods for full details). (B) Immunoblot analysis of PINK1 levels in mitochondria isolated from depolarized (‘mitoCCCP’) or control (‘mitoDMSO’) cells. (C) In organello ubiquitination assays, using depolarized or control mitochondria and 100 nM of the indicated parkin construct, were incubated at 37°C for the indicated time, and reactions were quenched with SDS-PAGE sample buffer. Mfn2 ubiquitination was analyzed by immunoblot. Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (D) Immunoblot analysis of PINK1 levels in mitochondria isolated from depolarized cells transfected with control siRNA (ctrl siRNA) or siRNA targeting PINK1 (siPINK1). (E) Mitochondria from (D) were used for 30 min in organello ubiquitination assays using 100 nM WT or C431A parkin, and Mfn2 ubiquitination was analyzed by immunoblot. Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (F) Depolarized mitochondria were used for 30 min in organello ubiquitination assays with the indicated concentration of WT parkin, or 100 nM parkin C431A as a negative control. Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (G) Immunoblot analysis of mouse brain fractionation. Mouse brain homogenate was separated into heavy membrane (P7k), cytosolic (S200k) and light membrane (P200k) fractions. Distribution of mitochondrial (Mfn2, VDAC1, PDH E2), ER (Grp78), soluble (parkin) and endosomal (Rab11A) markers are shown. (H) CCCP-uncoupled (‘mitoCCCP’) or control (‘mitoDMSO’) mitochondria were incubated for 60 min with 2 mg/ml cytosol from WT mouse brain (‘WT cytosol’) or from the brain of parkin-/- mice (‘KO cytosol’). As a positive control, mitochondria were incubated with 100 nM uncleaved GST-parkinWT (without cytosol). Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (I) CCCP-uncoupled (‘mitoCCCP’) or control (‘mitoDMSO’) mitochondria were incubated for 60 min with 100 nM parkin WT or C431A and in the presence or absence of 2 mg/ml cytosol from parkin-/- mouse brain (‘KO cytosol’). Mfn2 and VDAC1 ubiquitination were assayed by immunoblot. Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (J) In organello ubiquitination reactions were performed with parkin-/- mouse brain (‘KO cytosol’) in the presence of absence of 25 μM NMS-873. Reactions were incubated on ice for 30 min prior to a 60 min 37°C incubation. In the immunoblot analysis, ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. (K) Quantification of the level of ubiquitinated VDAC1 as compared to control, relative to mitochondrial loading control (TIM23 or CIII-core2). Data points are represented on the graph, n = 3 experiments. *, p<0.05; n.s., not significant. (L) Recombinant, hexameric His-p97 runs as a ~ 700 kDa complex as assayed by BN-PAGE. Prior to separation on the gel, samples were incubated at the indicated temperature for 10 min. (M) Immunoblot analysis of 60 min in organello ubiquitination assays using depolarized mitochondria, 100 nM parkin, 200 nM His-p97 hexamer, and 2 mg/ml parkin KO brain cytosol. Ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads. Recombinant His-p97 is additionally indicated on the Ponceau. (N) In organello retrotranslocation of Mfn2. In organello ubiquitination reactions with or without recombinant p97 were centrifuged at 10,000 g to separate mitochondria (pellet) from soluble factors (supernatant). As a control, reactions were lysed in 1% TX-100 prior to centrifugation. The inset on the supernatant Mfn2 blot shows ubiquitination (red asterisks) of the protein at higher exposure.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32866/elife-32866-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** In organello ubiquitination reactions were performed in the presence or absence of 25 μM NMS-873. Reactions were incubated on ice for 30 min prior to a 60 min 37°C incubation. In the immunoblot analysis, ubiquitinated species are indicated by red asterisks, while unmodified bands are denoted by arrowheads.
 
 Although we observed robust Mfn2 (and Mfn1) ubiquitination in reactions with depolarized mitochondria and WT parkin, we observed very little to no ubiquitination of other OMM substrates, such as VDAC1, HK1 or TOM20 (Figure 8F, compare with Figure 2A and B). Based on our data in cells, we reckoned that a dearth of p97 in this in organello system may prohibit modification of parkin substrates downstream of Mfn2. We first addressed this by isolating cytosol (‘S200k’) from mouse brain – which was devoid of mitochondrial, ER and endosomal markers (Figure 8G) – to use as a source of cytosolic p97 ATPase (Otter-Nilsson et al., 1999). As parkin itself is cytosolic (Figure 8G), we initially proceeded to co-incubuate in organello ubiquitination reactions with cytosol from parkin+/+ (‘WT cytosol’) and parkin-/- (‘KO cytosol’) mouse brain in the absence of recombinant ligase, and observed that cytosolic, mouse parkin was able to catalyze Mfn2 ubiquitination in a depolarization-dependent manner, albeit not to the extent of 100 nM recombinant GST-parkin (Figure 8H; here the GST tag was not cleaved in order to visualize the different forms of parkin by immunoblot). Based on this result, we proceeded to co-incubate isolated mitochondria with KO cytosol and recombinant parkin. Under these conditions, we observed robust ubiquitination of both Mfn2 and VDAC1 compared to reactions lacking KO cytosol (Figure 8I). This result indicated a potential role for p97 (which was present in the cytosol, Figure 8H and I) in this process and, remarkably, in cytosol-containing reactions, VDAC1 ubiquitination displayed sensitivity to NMS-873 (Figure 8J and K). Importantly, NMS-873 had no effect on ubiquitination in the absence of cytosol (Figure 8—figure supplement 1), indicating that the small amount of p97 present in reactions lacking cytosol was either negligible or already engaged with other substrates. To ensure that p97 was truly stimulating VDAC1 ubiquitination, we added recombinant p97 hexamer to our reactions (Figure 8L). The addition of recombinant hexamer, in a parkin-dependent manner, stimulated both Mfn2 and VDAC1 ubiquitination (Figure 8M). This was, however, not to the extent seen with cytosol (which is p97-dependent, Figure 8J and K), as other cytosolic factors, notably p97 cofactors and E4 ligases, are also likely involved.
 
@@ -109,54 +173,638 @@ Finally, our data posit the possibility of steady-state regulation of mitochondr
 
 ## Materials and methods
 
-## Antibodies and other reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species)or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>PMID 24446486</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>U2OS:GFP</td>
+      <td>PMID 24446486</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>U2OS:GFP-parkin WT</td>
+      <td>PMID 24446486</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>U2OS:GFP-parkin A320R</td>
+      <td>PMID 28276439</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>Mfn2 KO</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>Mfn2 KO:YFP-parkin WT</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>Mfn2 KO:YFP-parkin C431S</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>HeLa</td>
+      <td>PMID 24446486</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>control-1</td>
+      <td>NIH</td>
+      <td>NCRM-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>control-2</td>
+      <td>PMID 27641647</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Hs)</td>
+      <td>PRKN(del)</td>
+      <td>PMID 20885945</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>HA-Ub</td>
+      <td>PMID 25216678</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>DsRed2-LC3</td>
+      <td>PMID 18596167</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn1-HA</td>
+      <td>PMID 15878861</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 WT</td>
+      <td>PMID 15878861</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 K406R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 K416R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 K420R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 HR1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 HR2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>Mfn2 TS/AA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>transfected construct (Hs)</td>
+      <td>GFP-parkin WT</td>
+      <td>PMID 24446486</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>biological sample (Mus musculus)</td>
+      <td>parkin WT brain cytosol</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see In organello ubiquitination assays</td>
+    </tr>
+    <tr>
+      <td>biological sample (Mm)</td>
+      <td>parkin KO brain cytosol</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see In organello ubiquitination assays</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-actin</td>
+      <td>Millipore</td>
+      <td>MAB1501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-B-III-tubulin</td>
+      <td>Sigma</td>
+      <td>T8660</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-MAVS</td>
+      <td>Enzo</td>
+      <td>ALX-210–929 C100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-cytochrome c</td>
+      <td>BD</td>
+      <td>556432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP</td>
+      <td>Abcam</td>
+      <td>ab6673</td>
+      <td>IP</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-GFP</td>
+      <td>Invitrogen</td>
+      <td>A6455</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Grp78</td>
+      <td>Santa Cruz</td>
+      <td>sc-376768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HA</td>
+      <td>Abcam</td>
+      <td>ab9134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-HK1</td>
+      <td>Cell Signaling</td>
+      <td>2024S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Mfn1</td>
+      <td>Santa Cruz</td>
+      <td>sc-50330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Mfn2</td>
+      <td>Sigma</td>
+      <td>M6319</td>
+      <td>WB in Figure 3—figure supplement 2D</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Mfn2</td>
+      <td>Cell Signaling</td>
+      <td>9482</td>
+      <td>all other assays (IF, WB, IP)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-CIV-COXI</td>
+      <td>Abcam</td>
+      <td>ab14705</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-p62</td>
+      <td>Progen</td>
+      <td>GP62-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PDH E1a</td>
+      <td>Abcam</td>
+      <td>ab110330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PDH E2/E3bp</td>
+      <td>Abcam</td>
+      <td>ab110333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PDI</td>
+      <td>Abcam</td>
+      <td>ab2792</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-PINK1</td>
+      <td>Cell Signaling</td>
+      <td>6946</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-pS65 Ub</td>
+      <td>Millipore</td>
+      <td>ABS1513-I</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Rab11A</td>
+      <td>Cell Signaling</td>
+      <td>2413</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Miro1</td>
+      <td>Sigma</td>
+      <td>HPA010687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-CII-SDHA</td>
+      <td>Abcam</td>
+      <td>ab14715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Stx17</td>
+      <td>ProteinTech</td>
+      <td>17815–1-AP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TH</td>
+      <td>Pel-Freez</td>
+      <td>P40101-150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TIM23</td>
+      <td>BD</td>
+      <td>611222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TOM20</td>
+      <td>Santa Cruz</td>
+      <td>sc-11414</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TOM70</td>
+      <td>Santa Cruz</td>
+      <td>sc-390545</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Ub [FK2]</td>
+      <td>Enzo</td>
+      <td>BML-PW8810</td>
+      <td>IF</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Ub [P4D1]</td>
+      <td>Santa Cruz</td>
+      <td>sc-8017</td>
+      <td>WB</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-CIII-core2</td>
+      <td>Abcam</td>
+      <td>ab14745</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-CIII-Rieske</td>
+      <td>Abcam</td>
+      <td>ab14746</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-p97</td>
+      <td>Abcam</td>
+      <td>ab11433</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-VDAC1</td>
+      <td>Abcam</td>
+      <td>ab14734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Rattus norvegicus)</td>
+      <td>GST-R0RBR WT</td>
+      <td>PMID 23661642</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Rn)</td>
+      <td>GST-R0RBR A320R</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Plasmids and transfection</td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Rn)</td>
+      <td>GST-parkin WT</td>
+      <td>PMID 28276439</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Rn)</td>
+      <td>GST-parkin C431A</td>
+      <td>PMID 28276439</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Hs)</td>
+      <td>UbcH7</td>
+      <td>PMID 28276439</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Hs)</td>
+      <td>UBE1</td>
+      <td>BostonBiochem</td>
+      <td>E-305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Hs)</td>
+      <td>Ubiquitin</td>
+      <td>BostonBiochem</td>
+      <td>U-100H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Hs)</td>
+      <td>Usp2 catalytic domain</td>
+      <td>BostonBiochem</td>
+      <td>E-504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Tribolium castaneum)</td>
+      <td>TcPINK1</td>
+      <td>PMID 24784582</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Hs)</td>
+      <td>GST-4xUb G76V</td>
+      <td>PMID 23670163</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant protein (Mm)</td>
+      <td>His-p97</td>
+      <td>PMID 19506019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>QuikChange II site-directed mutagenesis kit</td>
+      <td>Agilent</td>
+      <td>200523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>BCA protein assay</td>
+      <td>ThermoFisher</td>
+      <td>23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CCCP</td>
+      <td>Sigma</td>
+      <td>C2759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>MG132</td>
+      <td>Sigma</td>
+      <td>M8699</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>ThermoFisher</td>
+      <td>H3570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>NMS-873</td>
+      <td>ApexBio</td>
+      <td>B2168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>BioTools</td>
+      <td>Bruker</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MASCOT</td>
+      <td>Matrix Science</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Data Analysis</td>
+      <td>Bruker</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImagJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrodinger</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies and other reagents
 
 Antibodies used in this study include anti-actin (Millipore, MAB1501), anti-β-III tubulin (Sigma-Aldrich, T8660), anti-Cardif (referred to herein as MAVS, Enzo Life Sciences, ALX-210–929 C100), anti-cytochrome c (BD Biosciences, 556432), anti-GFP (ab6673, Abcam), anti-GFP (A6455, Invitrogen), anti-Grp78 (Santa Cruz, sc-376768), anti-HA (Abcam, ab9134), anti-HK1 (Cell Signaling Technology, 2024S), anti-Mfn1 (Santa Cruz, sc-50330), anti-Mfn2 (Sigma-Aldrich, M6319), anti-Mfn2 (Cell Signaling, 9482), anti-MTCO1 (herein referred to as CIV-COXI, ab14705), anti-p62 (Progen, GP62-C), anti-PDH E1a (Abcam, ab110330), anti-PDH E2/E3bp (Abcam, ab110333), anti-PDI (Abcam, ab2792), anti-PINK1 (Cell Signaling, 6946), anti-pS65 ubiquitin (Millipore, ABS1513-I), anti-Rab11A (Cell Signaling, 2413), anti-Rhot1 (referred to herein as Miro1, Sigma-Aldrich, HPA010687), anti-SDHA (referred to herein as CII-SDHA, Abcam, ab14715), anti-Stx17 (ProteinTech, 17815–1-AP), anti-TH (Pel-Freez, P40101-150), anti-TIM23 (BD, 611222), anti-TOM20 (Santa Cruz, sc-11414), anti-TOM70 (Santa Cruz, sc-390545), anti-ubiquitin [FK2] (Enzo Life Sciences, BML-PW8810), anti-ubiquitin [P4DI] (Santa Cruz, sc-8017), anti-UQCRC2 (referred to herein as CIII-core2, Abcam, ab14745), anti-UQCRFS1 (referred to herein as CIII-Rieske, Abcam, ab14746), anti-VCP (referred to herein as p97, Abcam, ab11433) and anti-VDAC1 (Abcam, ab14734). Halt phosphatase inhibitor cocktail was purchased from Thermo Fisher Scientific, and NMS-873 was purchased from ApexBio. Unless otherwise specified, all other reagents were purchased from Sigma-Aldrich.
 
-## Cell culture and iPS cell differentiation
+### Cell culture and iPS cell differentiation
 
 U2OS and HeLa cells were purchased from ATCC, tested negative during routine tests for mycoplasma contamination, and were maintained in DMEM supplemented with L-glutamine, penicillin/streptomycin, and 10% FBS in the presence of either 25 mM glucose or 10 mM galactose (Wisent, Saint-Bruno, QC). Glucose-maintained cells were shifted to galactose-containing medium for at least seven days before use in experiments. The parkin mutant iPSC line (PRKNdel) was initially isolated from a patient carrying compound heterozygous deletions (delEx7/c.1072delT) in the PRKN gene (Grünewald et al., 2010). Control lines used in this study were NCRM1 (NIH, Bethesda, MD) and L2131 (Chung et al., 2016). Differentiation of iPSCs into dopaminergic neurons was based on a protocol by Xi and colleagues (Xi et al., 2012). iPSCs were initially grown in non-coated flasks for one week in DMEM/F12 supplemented with N2 and B27, in the presence of 10 μM SB431542, 200 ng/ml noggin, 1 μM CHIR99021, 200 ng/ml Shh and 100 ng/ml FGF-8. Embryoid bodies were transferred to polyornithine- and laminin-coated flasks to form rosettes, grown in the presence and then absence of the above-indicated differentiation factors for one week each. Neural progenitors were then cultured in 50% DMEM/F12 and 50% Neurobasal medium, supplemented with N2 and B27, in the presence of 1 μg/ml laminin, 500 μM db-cAMP, 20 ng/ml BDNF, 20 ng/ml GDNF, 200 μM ascorbic acid, 50 μM valproic, 100 nM Compound A and 1 ng/ml TGF-β. Progenitors were then grown in 25% DMEM/F12 and 75% Neurobasal medium, supplemented as above, for three days, and final differentiation into dopaminergic neurons occurred over four weeks in Neurobasal medium (supplemented as above).
 
-## Plasmids and transfection
+### Plasmids and transfection
 
 Cells were transfected with siRNA or DNA using jetPRIME transfection reagent (Polyplus Sciences) according to the manufacturer’s instructions. Cells were typically analyzed three or one day(s) after siRNA or DNA transfection, respectively. The codon-optimized GST-R0RBR (Trempe et al., 2013), DsRed-LC3 (Boland et al., 2008), HA-Ub (Durcan et al., 2014), His-p97 (Halawani et al., 2009) and Mfn2 (Neuspiel et al., 2005) plasmids have been described previously. Mfn mutants were generated using the QuikChange II site-directed mutagenesis kit (Agilent Technologies) according to the manufacturer’s instructions and confirmed by sequencing. While duplexed oligonucleotides were used in the mutagenesis reactions, only forward primers are listed below. Mfn2HR1 was created by sequential reactions with 5'-CTGAAATTTATTGACAGACAGCTGGAGCTCTTG-3' and 5'-CTTGGCTCAAGACTATAGGCTGCGAATTAAGCAG-3' to create Mfn2K406R/K416R, then with 5'-CTATAGGCTGCGAATTAGGCAGATTACGGAGGAAG-3' to make Mfn2HR1, as this last primer contains the K416R substitution already present. Likewise, Mfn2HR2 was created by sequential reactions with 5'-CCGCCATGAACAAGAGAATTGAGGTTCTTG-3', 5'-CTCACTTCAGAGCAGAGCAAAGCTGCTC-3' and 5'-CTGCTCAGGAATAGAGCCGGTTGGTTG-3' to make Mfn2K720R/K730R/K737R, and then with 5'-GCCGCCATGAACAGGAGAATTGAGGTTC-3' to make the final K719R mutation. Mfn2T111A/S442A was created using 5'-CAATGGGAAGAGCGCCGTGATCAATGC-3' and 5'-GAGGAGATCAGGCGCCTCGCAGTACTGGTGGACGATTAC-3'. GST-R0RBRA320R was created using 5'-ACCAGCAGTACGGTCGTGAAGAATGCGTTCTG-3'. U2OS:GFP, U2OS:GFP-parkinWT, U2OS:GFP-parkinC431S and U2OS:mtKeima stable cell lines have been described previously (Tang et al., 2017), and the Mfn2 KO:YFP-parkinWT and Mfn2 KO:YFP-parkinC431S lines were created in the same manner using YFP-parkin constructs generated in that study. To create the initial Mfn2 KO U2OS cell lines, the human MFN2 gene was disrupted in exon three using the following guide RNA: 5’-CACUUAAGCACUUUGUCACU-3’. To create the GST-4xUbG76V construct, the 4xUb fragments from pCMV-TOM70-2xFLAG-4xUb (Zheng and Hunter, 2013) were subcloned by digestion with BamHI and XhoI and ligation into pGEX6P1. This Ub chain is composed of four tandem copies of ubiquitin G76V, which mimic a linear Ub chain but cannot be cleaved in the cell by the Ub processing machinery. siRNA targeting p97, PINK1 and Stx17 have been previously described (McLelland et al., 2016; McLelland et al., 2014). Non-targeting siRNA oligonucleiotides, as well as siRNA targeting Mfn1 (5’-GAUACUAGCUACUGUGAAAdTdT-3’) (Zhao et al., 2013), Mfn2 (5’-GGAAGAGCACCGUGAUCAAdTdT-3’) (Zhao et al., 2013) and PACS2 (5’-AACACGCCCGUGCCCAUGAACdTdT-3’) (Simmen et al., 2005) were purchased from Thermo Fisher Scientific.
 
-## Cell lysis and immunoblotting
+### Cell lysis and immunoblotting
 
 Cells were lysed in lysis buffer (20 mM Tris pH 7.5, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% NP-40 substitute, 1% sodium deoxycholate, protease inhibitor cocktail [aprotinin, leupeptin and benzamidine], and phosphatase inhibitor cocktail) on ice. Lysates were cleared by centrifugation, protein was quantified by BCA assay (Pierce/Thermo Scientific), separated by SDS-PAGE over Tris-glycine gels and transferred to nitrocellulose membrane. Primary antibodies were diluted in 3% BSA in PBS-Tween and incubations performed overnight at 4°C. The following day, membranes were washed and incubated in HRP-conjugated secondary antibodies (Jackson ImmunoResearch Laboratories), diluted in 5% milk in PBS-Tween, at room temperature for one hour. Protein bands were detected using Western Lightning ECL and Plus-ECL kits (PerkinElmer), according to the manufacturer’s instructions.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Cells were lysed in HEPES-IP buffer (20 mM HEPES pH 7.2, 150 mM NaCl, 1% NP-40 substitute, 0.1% sodium deoxycholate, and protease/phosphatase inhibitor cocktails) and protein content was quantified by BCA assay after clearing by centrifugation. For immunoprecipitation under denaturing conditions, cells were alternatively lysed in 10 mM Tris pH 7.4, 1% SDS, 5 mM EDTA, 10 mM DTT and protease/phosphatase inhibitor cocktails and incubated for 10 min at 90°C. Post-lysis, nine volumes of 10 mM Tris pH 7.4, 150 mM NaCl, 1% Triton X-100, 1 mM EDTA, 1 mM EGTA and protease/phosphatase inhibitor cocktails were added to the sample, and then protein was quantified. Lysates were equilibrated to 1 to 2 mg/ml protein and immunocapture was performed with the indicated antibody overnight at 4°C at a 1:10 to 1:100 dilution. The following day, immunoprecipitation was performed with protein A- or protein G-sepharose (GE Healthcare) for four hours at 4°C. Immunoprecipitates were washed five times in buffer and eluted by incubating in SDS-PAGE sample buffer at 90°C.
 
-## Mitochondrial isolation and BN-PAGE
+### Mitochondrial isolation and BN-PAGE
 
 After treatment, U2OS cells were collected from 2 × 15 cm plates per condition in isolation buffer (20 mM Hepes pH 7.4, 220 mM mannitol, 68 mM sucrose, 76 mM KCl, 4 mM KOAc, and 2 mM MgCl2, supplemented with protease inhibitors benzamidine, PMSF, aprotinin, and leupeptin) and passed through a 27.5-gauge syringe twenty times. Cell lysates were centrifuged at 600 g for 10 min at 4°C. Supernatants were then centrifuged at 10,000 g for 10 min at 4°C. The mitochondrial pellet was resuspended in isolation buffer and centrifuged again at 12,000 g for 10 min at 4°C. Protein content of mitochondria was determined by BCA assay, and equilibrated to 1 mg/ml prior to lysis with 1% NP-40 substitute at 4°C for 30 min. Mitochondrial lysates were clarified by centrifugation and added to sample buffer and Coomassie Blue G-250. Solubilized complexes were separated over 4–16 and 3–12% Bis-Tris gels and transferred to PVDF membrane using the NativePAGE Novex Bis-Tris gel system (Life Technologies) according to the manufacturer’s instruction prior to immunoblotting. In addition, certain samples were incubated with 1 μM Usp2 (Boston Biochem) for 30 min at 37°C following NP-40 lysis, then separated by SDS-PAGE as above.
 
-## In organello ubiquitination assays
+### In organello ubiquitination assays
 
 In organello ubiquitination was performed as previously described (Tang et al., 2017). HeLa cells were depolarized with 20 μM CCCP (or DMSO control) for 4 hr, and then mitochondria were isolated in isolation buffer as described in the previous section. Isolated mitochondria were incubated (at a final concentration of 0.5 to 1.0 mg/ml) with 20 nM E1 Ub activating enzyme, 100 nM UbcH7, 5 μM Ub, 4 mM ATP, 5 mM MgCl2, 50 μM TCEP and (unless otherwise indicated) 100 nM parkin at 37°C for the indicated time (typically 30–60 min, vortexing at 15 min intervals), then quenched in SDS-PAGE sample buffer. E1 enzyme and Ub were purchased from Boston Biochem (Cambridge, MA). In certain cases, reactions were co-incubated with 200 nM His-p97 hexamer or 2 mg/ml mouse brain cytosol. Purification of murine His-p97 has been described previously (Halawani et al., 2009). Additionally, isolation of cytosol from mouse tissue (200,000 g supernatant) was performed as previously described (McLelland et al., 2016). SDS-PAGE sample buffer was then added to pellets and supernatants prior to SDS-PAGE and immunoblot analysis.
 
-## LC/MS on immunoprecipitated Mfn2
+### LC/MS on immunoprecipitated Mfn2
 
 Mfn2 immunoprecipitates were washed twice in PBS, then twice more in 50 mM ammonium acetate pH 7.0, and eluted twice in 50% acetic acid on ice for 10 min. Eluates were pooled, cleared by centrifugation and dried by speedvac. Pellets were resuspended in 8 μl 6 M urea, 50 mM TEAB pH 8.5, and diluted with 40 μl 50 mM TEAB pH 8.5. The sample was reduced in 2 mM TCEP at 37°C for ten minutes, and then alkylated in 20 mM iodoacetamide for 30 min at room temperature in the dark. The 50 μl sample was then digested with 0.2 μg of trypsin for two hours at 37°C, and then quenched in 0.5% trifluoroacetic acid (TFA) and 5% acetonitrile. Digests were C18-purified using ZipTips (Millipore), eluted in 0.1% TFA/80% acetonitrile, evaporated and resuspended in 0.1% TFA/4% acetonitrile. Peptides were diluted in 0.1% TFA/4% acetonitrile, and eluted from an Acclaim PepMap100 C18 column (75 μm × 25 cm) with a 1 hr 5–40% gradient of acetonitrile in 0.1% formic acid at 300 nL/min. The eluted peptides were analyzed with an Impact II Q-TOF spectrometer equipped with a Captive Spray nano electrospray source (Bruker). Data were acquired using data-dependent auto-MS/MS with a range 150–2200 m/z range, a fixed cycle time of 3 s, a dynamic exclusion of 1 min, m/z-dependent isolation window (1.5–5 Th) and collision energy 25–75 eV (Beck et al., 2015). MS/MS data were analyzed using MASCOT using a search procedure against the SwissProt proteome database (taxonomy: mammalia). The search parameters included a peptide tolerance of 15.0 ppm, an MS/MS tolerance of 0.05 Da, up to two 13C atoms per peptide, up to two missed trypsin cleavage sites, fixed carbamidomethyl and variable methionine oxidation and Ser/Thr phosphorylation modifications. The significance threshold was set to p<0.05. The MASCOT automatic peptide decoy search was performed, and false discovery rates of 1.04 and 1.88% for the DMSO and CCCP-treated samples were obtained, respectively. Only peptides with scores above 18.0 were accepted. For ubiquitin analysis, only one peptide was identified with MASCOT; other Ub peptides were identified by generating tryptic peptides with up to one missed cleavage, and then matched to the LC-MS data with BioTools (Bruker). Peptides with BioTools scores above 10 (Δm/z < 10 ppm for the parent ion and at least 7 MS/MS fragments within less than 0.2 Da) were included in the analysis. Extracted ion chromatograms were integrated using the Data Analysis software (Bruker).
 
-## GST protein purification, in vitro phosphorylation and pulldown
+### GST protein purification, in vitro phosphorylation and pulldown
 
 Tribolium castaneum PINK1 (TcPINK1, amino acids 128–570), GST-4xUbG76V and GST-R0RBR were expressed as GST fusion proteins in BL21 cells from pGEX6P1 vectors as described (Koyano et al., 2014; Trempe et al., 2013). Protein expression was induced at 16°C for 16 hr with 100 μM IPTG. After harvesting, the E. coli pellet was lysed by sonication in lysis buffer (TBS: 50 mM Tris-HCl pH 8.0, 300 mM NaCl, 1 mM DTT, 0.5% Tween-20 and 5 mM MgSO4), in the presence of lysozyme, DNase I and EDTA-free protease inhibitors. The suspension was centrifuged and the supernatant was applied to Glutathione Sepharose 4B beads (GE Healthcare). After 1 hr of agitation at 4°C the beads were washed with TBS and eluted with TBS containing 20 mM glutathione and 1% CHAPS. GST-TcPINK1 was further cleaved in solution by incubation with GST-3C protease for 12 hr at 4°C before further purification by gel filtration (Superdex 75, GE Life Sciences) in low salt buffer as a final step. GST-4xUb was purified via buffer exchange to remove extra glutathione. GST-4xUb phosphorylation was performed in phosphorylation buffer (50 mM Tris-HCl pH 7.5, 100 m M NaCl, 1 mM ATP, and 5 mM MgSO4) at 30°C for 90 min, at final concentrations of 0.1 mg/ml TcPINK1 and 0.25 mg/ml GST-4xUb. After phosphorylation, the entire reaction was purified with glutathione Sepharose 4B and washed with TBS briefly to remove extra TcPINK1 and ATP. A portion of the beads was boiled in SDS-PAGE sample buffer and separated by Phos-tag gel to monitor the efficiency of phosphorylation. Whole mouse brain was homogenized in 10 mM HEPES pH 7.4, 0.32 M sucrose supplemented with protease inhibitors and phosphatase inhibitors (Roche). The homogenate was centrifuged for 10 min at 1,000 g, and the supernatant was collected. After adding Triton X-100 to a final concentration of 1%, the lysate was rocked at 4°C for 30 min, then centrifuged at 16,200 g for 30 min. The resulting supernatant was used as whole brain lysate for pull-downs. Pull-downs were performed with 50 μg GST-4x(p)Ub bait and 4 mg lysate at 4°C, incubated overnight in the presence of phosphatase inhibitors. After washing with TBS for five times, reactions were resuspended in 50 μl of TBS with 2 μg GST-3C protease and incubated at RT for 4 hr. After separating the beads by centrifugation, the supernatant was prepared for MS sample preparation. The sample was evaporated and then resuspended with 100 mM NH4HCO3 and 5 mM TCEP, then vortexed at 37°C for 30 min. 110 mM chloroacetamide in 100 mM NH4HCO3 was added to a final concentration 55 mM chloroacetamide. Samples were further vortexed for 30 min at 37°C. Trypsin was added to reach an enzyme:protein ratio of 1:50, and digestion was performed overnight. Samples were then dried in a speedvac and reconstituted in 40 μl 0.2% formic acid. Tryptic peptides were loaded on a C18 stem trap from New Objective and separated on a home-made C18 column (15 cm × 150 μm id) at a flow rate of 600 nl/min with a gradient of 5–30% B (A: 0.2% formic acid in water, B: 0.2% formic acid in acetonitrile). The analytical column was coupled to a Q-Exactive Plus (Thermo Fisher Scientific). Resolution was set at 70000 for the survey scan and 17500 for the tandem MS acquisition. A maximum of 12 precursors were sequenced for each duty cycle. AGC target values for MS and MS/MS scans were set to 3e6 (max fill time 50 ms) and 2e4 (max fill time 150 ms), respectively. The precursor isolation window was set to m/z 1.6 with a high energy dissociation normalized collision energy of 25. The dynamic exclusion window was set to 30 s. Tandem mass spectra were searched against the Uniprot human database with carbamidomethylation (C) as fixed modifications, deamidation (NQ) and oxidation (M) as variable modifications. Tolerance was set at 10 ppm on precursor mass and 0.01 Da on the fragments. The raw data were searched against the Universal Protein Resource (UniProt) (http://www.pir.uniprot.org/) database by using Mascot (http://www.matrixscience.com). Scaffold was used to validate MS/MS based peptide and protein identifications. Peptide identifications were accepted if they could be established at greater than 95.0% probability as specified by the Peptide Prophet algorithm. Protein identifications were accepted if they could be established at greater than 99.0% probability and contained at least two identified peptides. For each group – GST, GST-4xUbG76V and GST-4xpUbG76V – we performed three biological repeats. P-values against the spectrum counts in GST-4xUb pulled-down samples and GST-4xpUb pulled-down samples for each protein were obtained via Fisher’s Exact Test built in the Scaffold software. For final analysis of quantified proteins, values were transferred and analysed in Microsoft Excel. The following cut-offs were applied: minimum number of two total spectrum counts; ratio of spectrum counts in the GST pulled down control divided by the total spectrum counts in all samples is lower than 30%. For the GST-R0RBR pulldown, U2OS:GFP-parkinWT cells were treated with 20 μM CCCP for one hour (or left untreated) prior to lysis in 20 mM HEPES pH 7.2, 150 mM NaCl, 1% NP-40 substitute, 0.2% sodium deoxycholate, and protease/phosphatase inhibitor cocktails and then incubated overnight with 10 μg/ml GST-R0RBR WT or A320R on beads (or unconjugated beads as an additional control). The following day, pulldowns were washed five times in lysis buffer and eluted from beads by incubating in SDS-PAGE sample buffer at 90°C.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 After treatment, cells grown in chamber slides were fixed in 2.5% glutaraldehyde in PBS for one hour at room temperature, then stored at 4°C overnight before processing. Thin sections on grids were observed in a Tecnai 12 BioTwin transmission electron microscope (FEI) at 120 keV. Images were acquired with a charge coupled device camera (AMT).
 
-## Immunofluorescence and fluorescence microscopy
+### Immunofluorescence and fluorescence microscopy
 
 Cells were grown on glass coverslips, treated then fixed in 6% formaldehyde in PBS for 15 min 37°C. Fixed cells were permeabilized in 0.25% Triton X-100 in PBS for 10 min, and blocked in 10% FBS in PBS. Primary antibodies were diluted in 5% FBS in PBS, and incubations were performed for one hour at room temperature. Incubations with Alexa Fluor-conjugated secondary antibodies (Thermo Fisher Scientific) were performed in the same manner. Cells were counterstained with Hoechst 33342 (Invitrogen) and mounted on glass slides using Aqua Poly/Mount (Polysciences Inc.). Confocal slices (<1 micron-thick) were acquired via a spinning disc confocal microscope (with Andor Yokogawa system IX81, Olympus) through a 100X, 1.4 NA or 60X, 1.4 NA objective lens. Widefield microscopy was performed using a Zeiss AxioObserver Z1 microscope through a 63X, 1.4 NA objective lens.
 
-## Fluorescence-activated cell sorting and mtKeima measurements
+### Fluorescence-activated cell sorting and mtKeima measurements
 
 Quantitative analysis of mitophagy was performed as described previously (Tang et al., 2017). U2OS:mtKeima cells were first transfected with siRNA targeting Mfn1 or Mfn2. Two days later, mtKeima was induced with 10 μM ponasterone A, and cells were transfected with GFP-parkin WT or C431S for 12 to 18 hr. The next day (3 days post-siRNA transfection), cells were treated with 20 μM CCCP (or DMSO) for four to five hours, trypsinized and collected in PBS. Cell fluorescence was analyzed by an LSR Fortessa (BD Bioscience) fluorescence-activated cell sorter, using excitation wavelengths of 405 and 561 nm to detect Keima at pH 7.0 and 4.0, respectively, and 488 nm to detect GFP-parkin. Cell fluorescence data were analyzed using FlowJo (Tree Star). For each condition, 105 cells, gated for GFP-parkin expression, were used for the analysis.
 
-## Image and statistical analyses
+### Image and statistical analyses
 
 The numbers of cells quantified per experiment are explicitly indicated in the figure legends. No statistical method was used to predetermine the experimental sample size. Statistical tests and representations of the data were generated using Prism (GraphPad Software, La Jolla, CA). Data are displayed as the mean ± standard error of the mean (SEM). Statistical significance was determined by one- (Figure 3—figure supplements 1B-D, Figure 4F, G, K, Figure 8K) and two-way (Figure 1B—E, I, J, N, Figure 3E, G, Figure 3—figure supplements 2B, 3D, I, 4F, H, 5C, D, G, Figures 4C, 5G, H, 6I, 7B) ANOVAs followed by Bonferroni post-hoc tests, or one-tailed t-test (Figure 1—figure supplement 1B, Figures 6K and 7E). Differences were considered significant if p<0.05. The diagram of the crystal structure of the pUb-parkin complex was created with PyMOL. Images were analyzed using ImageJ (NIH), and analyses were performed blindly.

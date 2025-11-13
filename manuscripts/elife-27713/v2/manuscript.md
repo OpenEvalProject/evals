@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.27713.001 Many mammalian cancer cell lines depend on glutamine as a major tri-carboxylic acid (TCA) cycle anaplerotic substrate to support proliferation. However, some cell lines that depend on glutamine anaplerosis in culture rely less on glutamine catabolism to proliferate in vivo. We sought to understand the environmental differences that cause differential dependence on glutamine for anaplerosis. We find that cells cultured in adult bovine serum, which better reflects nutrients available to cells in vivo, exhibit decreased glutamine catabolism and reduced reliance on glutamine anaplerosis compared to cells cultured in standard tissue culture conditions. We find that levels of a single nutrient, cystine, accounts for the differential dependence on glutamine in these different environmental contexts. Further, we show that cystine levels dictate glutamine dependence via the cystine/glutamate antiporter xCT/ SLC7A11 . Thus, xCT/ SLC7A11 expression, in conjunction with environmental cystine, is necessary and sufficient to increase glutamine catabolism, defining important determinants of glutamine anaplerosis and glutaminase dependence in cancer.
+Many mammalian cancer cell lines depend on glutamine as a major tri-carboxylic acid (TCA) cycle anaplerotic substrate to support proliferation. However, some cell lines that depend on glutamine anaplerosis in culture rely less on glutamine catabolism to proliferate in vivo. We sought to understand the environmental differences that cause differential dependence on glutamine for anaplerosis. We find that cells cultured in adult bovine serum, which better reflects nutrients available to cells in vivo, exhibit decreased glutamine catabolism and reduced reliance on glutamine anaplerosis compared to cells cultured in standard tissue culture conditions. We find that levels of a single nutrient, cystine, accounts for the differential dependence on glutamine in these different environmental contexts. Further, we show that cystine levels dictate glutamine dependence via the cystine/glutamate antiporter xCT/SLC7A11. Thus, xCT/SLC7A11 expression, in conjunction with environmental cystine, is necessary and sufficient to increase glutamine catabolism, defining important determinants of glutamine anaplerosis and glutaminase dependence in cancer.
 
 ## Introduction
 
@@ -35,21 +35,286 @@ We describe the identification of an environmental factor that contributes to di
 
 ## Results
 
-## Cells in vivo or cultured in adult bovine serum exhibit limited glutamine catabolism compared to cells cultured in standard tissue culture conditions
+### Cells in vivo or cultured in adult bovine serum exhibit limited glutamine catabolism compared to cells cultured in standard tissue culture conditions
 
 Mutant Kras-driven mouse lung cancer cells exhibit differences in glutamine metabolism dictated by their environment, such that glutamine extensively labels TCA cycle intermediates in cell culture but not in tumors (Davidson et al., 2016). To confirm this finding, we examined glutamine metabolism in mutant KRAS-driven human A549 lung cancer cells cultured in multiple environments. For these studies, we used gas chromatography-mass spectrometry (GC-MS) to trace the fate of glutamine where all five carbons are 13C labeled ([U-13C5]glutamine) in each environment, focusing on whether glutamine carbon contributed to the TCA cycle (Figure 1A). First, we verified that glutamine was not a major source of TCA cycle carbon in subcutaneous A549 xenograft tumors. For these studies [U-13C5]glutamine was infused into tumor bearing animals for 6 hr to achieve a final enrichment of ~35% labeled glutamine in plasma and ~25% in tumors (Figure 1B). Consistent with previous results (Davidson et al., 2016), there was little labeling of intratumoral glutamate, TCA cycle intermediates, and aspartate from [U-13C5]glutamine despite the presence of labeled glutamine in the tumors (Figure 1B). These findings suggest that glutamine is not a major source of TCA cycle carbon in A549-derived tumors in vivo. Normalization of tumor m + 5 glutamate label to m + 5 glutamine labeling indicates that only ~25% of glutamate is derived from glutamine in these tumors. In contrast, when A549 cells are cultured in RPMI-based media with [U-13C5]glutamine added to a similar enrichment of ~33%, we find that ~27% of glutamate is glutamine derived, which when normalized to glutamine enrichment indicates that 80% of glutamate is derived from glutamine under these conditions (Figure 1C). Additionally, when the cells are cultured in RPMI, more than 60% of the carbon in aspartate and other TCA cycle intermediates was derived from glutamine (Figure 1C). This is consistent with glutamine being a major TCA cycle carbon source for A549 cells in culture, and demonstrates that compared to standard culture conditions tumors derived from these cells use less glutamine in vivo.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram detailing how uniformly-labeled glutamine ([U-13C5]glutamine) can be metabolized to generate labeled glutamate, aspartate and TCA cycle intermediates via oxidative metabolism. (B) Left Plasma fractional labeling of fully labeled glutamine (m + 5) in A549 tumor bearing mice following a 6 hr infusion of [U-13C5]glutamine (n = 3). Right Intratumoral fractional labeling of glutamine (m + 5), glutamate (m + 5), α-ketoglutarate (m + 5), fumarate (m + 4), malate (m + 4), aspartate (m + 4) and citrate (m + 4) following a 6 hr infusion of [U-13C5]glutamine (n = 3). (C) M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 fractional labeling of fumarate, malate, aspartate and citrate for A549 cells cultured for 8 hr in RPMI or adult bovine serum with [U-13C5]glutamine added to ~33% enrichment (n = 3). (D) A549 cell counts over time when cultured continuously in adult bovine serum for eight days (n = 3, each time point). Doubling time was determined by non-linear regression of an exponential growth equation to the growth curve. (E) Proliferation rate of A549 cells cultured in RPMI or adult bovine serum with vehicle (DMSO) or 1 µM CB-839 (n = 3) as indicated. For all panels, the values represent the mean and the error bars represent ± SD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 labeling of fumarate, malate, aspartate and citrate for A549 cells cultured for 8 hr or 24 hr in adult bovine serum with [U-13C5]glutamine added to ~33% enrichment (n = 3) is shown. The values represent the mean and the error bars represent ± SD.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 labeling of fumarate, malate, aspartate and citrate for A549 cells cultured for 8 hr in RPMI, adult bovine serum, adult bovine heparinized plasma or adult human serum with [U-13C5]glutamine added to ~33% enrichment (n = 3). The values represent the mean and the error bars represent ± SD.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 fractional labeling of fumarate, malate, aspartate and citrate for the indicated cell lines cultured for 8 hr in RPMI or adult bovine serum with [U-13C5]glutamine added to ~33% enrichment (n = 3) The values represent the mean and the error bars represent ± SD.
 
 To begin to examine the environmental factors that contribute to this difference in glutamine metabolism, we cultured cells in 100% adult bovine serum with no additional nutrients based on the notion that this may better reflect the nutrient levels available from the circulation to the cells in tumors. A549 cells grow exponentially with a doubling time of ~48 hr when cultured in bovine serum (Figure 1D) and can be maintained indefinitely in such medium (see Materials and methods for details). We added [U-13C5]glutamine to adult bovine serum to achieve an enrichment of ~33% that is comparable to the labeled glutamine enrichment observed in plasma and tumors in vivo. We then traced the fate of 13C carbon into the TCA cycle and found substantially less labeling of glutamate, aspartate and TCA cycle metabolites compared to cells cultured in RPMI-based media (Figure 1C). In fact, only ~35% of glutamate was estimated to be derived from glutamine when cells were cultured in adult bovine serum. We verified that glutamine labeling reached isotopic steady state after 8 hr of culture in adult bovine serum (Figure 1—figure supplement 1), suggesting that these labeling differences were not explained by differences in labeling kinetics. Importantly, the decrease in glutamine-derived label observed in A549 cells cultured in adult bovine serum was not specific to bovine serum or to serum products, as the contribution of glutamine carbon to glutamate and TCA cycle intermediates was similarly reduced in adult bovine heparinized plasma and adult human serum (Figure 1—figure supplement 2). Reduced TCA cycle labeling from glutamine when cells are cultured in adult bovine serum is not limited to A549 cells. [U-13C5]glutamine labeling of TCA cycle intermediates was higher in cell lines derived from cancers arising in diverse tissues when cultured in RPMI compared to culture in adult bovine serum (Figure 1—figure supplement 3). Thus, culturing cancer cells in serum or plasma results in reduced glutamine catabolism to support TCA cycle anaplerosis.
 
 Sensitivity of Kras-driven mouse lung cancer cells to the glutaminase inhibitor CB-839 correlates with glutamine carbon contribution to the TCA cycle, such that tumors derived from these cells in vivo were insensitive to CB-839 while proliferation of the same cells is inhibited in vitro (Davidson et al., 2016). Consistent with these findings, we find that A549 cells cultured in RPMI are also sensitive to CB-839, but the same cells become resistant to CB-839 when cultured in adult bovine serum (Figure 1E). Thus, A549 cells cultured in bovine serum exhibit decreased glutamine metabolism and are resistant to glutaminase inhibitors, adopting a metabolic phenotype with regards to glutamine metabolism that is more similar to lung tumors in vivo than to lung cancer cells cultured in standard tissue culture media.
 
-## Differences in the small molecule fraction between RPMI and adult bovine serum affect glutamine use for TCA cycle anaplerosis
+### Differences in the small molecule fraction between RPMI and adult bovine serum affect glutamine use for TCA cycle anaplerosis
 
 We next sought to identify factors that are different between RPMI and adult bovine serum that account for the observed differences in glutamine anaplerosis and dependence. Dialysis experiments were used to determine whether differences in the small molecule (<3.5 kDa) or large molecule (>3.5 kDa) fractions accounted for differences in glutamine contribution to the TCA cycle. First, we dialyzed a small volume of RPMI against large volumes of adult bovine serum using 3.5 kDa cutoff dialysis cassettes (Figure 2A). This medium termed ‘adult bovine serum → RPMI,’ contained the small molecule fraction from adult bovine serum and the large molecule fraction from RPMI-based media. Similarly, we dialyzed adult bovine serum against RPMI to generate ‘RPMI → adult bovine serum,’ containing RPMI small molecules and the adult bovine serum large molecule fraction (Figure 2A). Cells could be cultured in both media conditions, allowing us to trace the fate of [U-13C5]glutamine in A549 cells cultured in each media. Similar to cells grown in adult bovine serum, cells grown in ‘adult bovine serum → RPMI’ exhibited low fractional labeling of glutamate, aspartate and TCA cycle metabolites (Figure 2B). In contrast, cells cultured in ‘RPMI → adult bovine serum’ exhibited higher labeling of aspartate and TCA cycle intermediates from glutamine, similar to cells cultured in RPMI (Figure 2B). These differences in glutamine contribution to the TCA cycle also correlated with the ability of CB-839 to inhibit proliferation, as A549 cell proliferation is inhibited by CB-839 when cells are cultured in ‘RPMI → adult bovine serum’ but is largely unaffected when cultured in ‘adult bovine serum → RPMI’ (Figure 2C). Similar dialysis experiments were performed with DMEM and adult bovine serum. Consistent with the RPMI dialysis experiments, ‘adult bovine serum → DMEM’ cultured cells displayed levels of glutamine anaplerosis and CB-839 sensitivity that were similar to cells cultured in adult bovine serum, while ‘DMEM → adult bovine serum’ had increased CB-839 sensitivity, similar to cells cultured in DMEM (Figure 2—figure supplement 1). Taken together, these experiments suggest that differences in the small molecule fraction of standard tissue culture media and adult bovine serum largely explain the differences in glutamine anaplerosis and glutaminase inhibitor sensitivity.
 
-## Environmental cystine availability increases glutamine anaplerosis
+![Figure 2.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram detailing the generation of top ‘Adult bovine serum → RPMI’ and bottom ‘RPMI → adult bovine serum’. To make each dialyzed medium, 210 mL of RPMI or adult bovine serum was dialyzed twice against 4 L of adult bovine serum or RPMI respectively using 70 mL capacity 3.5 kDa cutoff dialysis cassettes. (B) M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 labeling of fumarate, malate, aspartate and citrate for A549 cells cultured for 8 hr in ‘Adult bovine serum → RPMI’ and ‘RPMI → adult bovine serum’ with [U-13C5]glutamine added to each media at ~33% enrichment (n = 3). (C) Proliferation rates of A549 cells cultured in RPMI, adult bovine serum, ‘RPMI → adult bovine serum’, ‘Adult bovine serum → RPMI’ with vehicle (DMSO) or 1 µM CB-839 (n = 3). For all panels, the values represent the mean and the error bars represent ± SD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Diagram detailing the generation of top ‘Adult bovine serum → DMEM’ and bottom ‘DMEM → adult bovine serum’. To make each dialyzed medium, 210 mL of DMEM or adult bovine serum was dialyzed twice against 4 L of adult bovine serum or DMEM respectively using 70 mL capacity 3.5 kDa cutoff dialysis cassettes. (B) M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 labeling of fumarate, malate, aspartate and citrate for A549 cells cultured for 8 hr in DMEM, adult bovine serum and ‘Adult bovine serum → DMEM’ with [U-13C5]glutamine added to each media at ~33% enrichment (n = 3). (C) Proliferation rates of A549 cells cultured in DMEM, adult bovine serum, ‘DMEM → adult bovine serum’, ‘Adult bovine serum → DMEM’ with vehicle (DMSO) or 1 µM CB-839 (n = 3). For all panels, the values represent the mean and the error bars represent ± SD.
+
+### Environmental cystine availability increases glutamine anaplerosis
 
 We next considered differences in the small molecule fraction of adult bovine serum and RPMI/DMEM that could give rise to the differences in glutamine anaplerosis and CB-839 sensitivity. RPMI and DMEM both contain excess glucose, amino acids and micronutrients compared to blood (Mayers and Vander Heiden, 2015). In fact, re-formulation of DMEM to have more physiological concentrations of glucose, amino acids and other nutrients were previously reported to alter central carbon metabolism and glutamine dependence (Schug et al., 2015; Tardito et al., 2015). In order to determine if excess nutrients in standard media formulations potentiate glutamine anaplerosis and dependence, we determined the concentration of amino acids, glucose, and pyruvate in the sera used to culture cells in this study (Table 1). We supplemented the adult bovine serum with amino acids, glucose, and pyruvate to match levels found in RPMI or DMEM. Levels of vitamins and micronutrients were added to adult bovine serum at the RPMI or DMEM concentration. Addition of RPMI nutrients (glucose, amino acids, vitamins and micronutrients) to adult bovine serum resulted in increased glutamine contribution to the TCA cycle in A549 cells (Figure 3A). Addition of nutrients to adult bovine serum to levels found in either RPMI or DMEM also caused increased A549 sensitivity to CB-839 (Figure 3B, Figure 3—figure supplement 1A). Thus, culturing cells in nutrient levels found in standard tissue culture media is sufficient to increase glutamine catabolism and dependence in these cells.
+
+**Table 1.**
+ Amino acid, glucose, pyruvate and lactate concentrations in all media used in this study compared to human plasma clinical reference values
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Metabolite</th>
+      <th>Human male plasma reference range* [µM]</th>
+      <th>RPMI-1640 with 10% dialyzed fetal bovine serum [µM]</th>
+      <th>DMEM with 10% dialyzed fetal bovine serum [µM]</th>
+      <th>Adult bovine serum† [µM]</th>
+      <th>Adult bovine heparinized plasma† [µM]</th>
+      <th>Adult human serum† [µM]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alanine</td>
+      <td>146–494</td>
+      <td>0</td>
+      <td>0</td>
+      <td>314 ± 6</td>
+      <td>321 ± 3</td>
+      <td>670 ± 13</td>
+    </tr>
+    <tr>
+      <td>Arginine</td>
+      <td>28–96</td>
+      <td>1034</td>
+      <td>360</td>
+      <td>312 ± 10</td>
+      <td>150 ± 9</td>
+      <td>216 ± 8</td>
+    </tr>
+    <tr>
+      <td>Aspargine</td>
+      <td>32–92</td>
+      <td>341</td>
+      <td>0</td>
+      <td>17 ± 1</td>
+      <td>19 ± 1</td>
+      <td>81 ± 2</td>
+    </tr>
+    <tr>
+      <td>Aspartate</td>
+      <td>2–9</td>
+      <td>135</td>
+      <td>0</td>
+      <td>7.4 ± 0.4</td>
+      <td>5.3 ± 0.4</td>
+      <td>59.2 ± 1.3</td>
+    </tr>
+    <tr>
+      <td>Cystine</td>
+      <td>24–54</td>
+      <td>187</td>
+      <td>180</td>
+      <td>0.3 ± 0.1</td>
+      <td>2 ± 0.1</td>
+      <td>3.4 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Glutamate</td>
+      <td>6–62</td>
+      <td>122</td>
+      <td>0</td>
+      <td>192 ± 3</td>
+      <td>120 ± 1</td>
+      <td>348 ± 5</td>
+    </tr>
+    <tr>
+      <td>Glutamine</td>
+      <td>466–798</td>
+      <td>1849</td>
+      <td>3600</td>
+      <td>183 ± 4</td>
+      <td>291 ± 1</td>
+      <td>409 ± 7</td>
+    </tr>
+    <tr>
+      <td>Glycine</td>
+      <td>147–299</td>
+      <td>120</td>
+      <td>360</td>
+      <td>302 ± 6</td>
+      <td>221 ± 1</td>
+      <td>409 ± 8</td>
+    </tr>
+    <tr>
+      <td>Histidine</td>
+      <td>72–108</td>
+      <td>87</td>
+      <td>180</td>
+      <td>8.9 ± 0.2</td>
+      <td>8.2 ± 0.2</td>
+      <td>17.7 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Isoleucine</td>
+      <td>46–90</td>
+      <td>344</td>
+      <td>720</td>
+      <td>112 ± 2</td>
+      <td>84 ± 1</td>
+      <td>114 ± 1</td>
+    </tr>
+    <tr>
+      <td>Leucine</td>
+      <td>113–205</td>
+      <td>344</td>
+      <td>720</td>
+      <td>218 ± 3</td>
+      <td>172 ± 1</td>
+      <td>231 ± 5</td>
+    </tr>
+    <tr>
+      <td>Lysine</td>
+      <td>135–243</td>
+      <td>197</td>
+      <td>720</td>
+      <td>92 ± 2</td>
+      <td>146 ± 1</td>
+      <td>206 ± 4</td>
+    </tr>
+    <tr>
+      <td>Methionine</td>
+      <td>13–37</td>
+      <td>91</td>
+      <td>180</td>
+      <td>21 ± 1</td>
+      <td>26 ± 1</td>
+      <td>39 ± 1</td>
+    </tr>
+    <tr>
+      <td>Phenylalanine</td>
+      <td>46–74</td>
+      <td>82</td>
+      <td>360</td>
+      <td>92 ± 2</td>
+      <td>68 ± 1</td>
+      <td>144 ± 3</td>
+    </tr>
+    <tr>
+      <td>Proline</td>
+      <td>97–297</td>
+      <td>157</td>
+      <td>0</td>
+      <td>88 ± 2</td>
+      <td>61 ± 1</td>
+      <td>301 ± 4</td>
+    </tr>
+    <tr>
+      <td>Serine</td>
+      <td>89–165</td>
+      <td>257</td>
+      <td>360</td>
+      <td>119 ± 2</td>
+      <td>74 ± 1</td>
+      <td>237 ± 5</td>
+    </tr>
+    <tr>
+      <td>Threonine</td>
+      <td>92–180</td>
+      <td>151</td>
+      <td>720</td>
+      <td>63 ± 1</td>
+      <td>50 ± 1</td>
+      <td>192 ± 3</td>
+    </tr>
+    <tr>
+      <td>Tryptophan</td>
+      <td>25–65</td>
+      <td>22</td>
+      <td>72</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>Tyrosine</td>
+      <td>37–77</td>
+      <td>99</td>
+      <td>360</td>
+      <td>56 ± 1</td>
+      <td>47 ± 1</td>
+      <td>101 ± 3</td>
+    </tr>
+    <tr>
+      <td>Valine</td>
+      <td>179–335</td>
+      <td>154</td>
+      <td>720</td>
+      <td>251 ± 5</td>
+      <td>181 ± 2</td>
+      <td>325 ± 6</td>
+    </tr>
+    <tr>
+      <td>Glucose</td>
+      <td></td>
+      <td>9990</td>
+      <td>22500</td>
+      <td>3932 ± 26</td>
+      <td>8403 ± 33</td>
+      <td>2407 ± 23</td>
+    </tr>
+    <tr>
+      <td>Pyruvate</td>
+      <td>27–160</td>
+      <td>0</td>
+      <td>900</td>
+      <td>9.4 ± 0.2</td>
+      <td>70.8 ± 0.5</td>
+      <td>10.3 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>Lactate</td>
+      <td></td>
+      <td>0</td>
+      <td>0</td>
+      <td>10878 ± 217</td>
+      <td>9291 ± 61</td>
+      <td>9250 ± 178</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Shown is the range ±2 standard deviations from the mean value for the indicated metabolite. These values are from (Blau, 2003).† Shown are the mean values ± the standard error of the mean for the indicated metabolites as determined by GC-MS (see Materials and methods for detailed procedure), except glucose concentration, which was determined using a YSI bioanalyzer. All samples were analyzed in triplicate. ND indicates that the metabolite was not detected._
+
+![Figure 3.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig3-v2.jpg)
+
+**Figure 3.:** (A) M + 5 fractional labeling of glutamine, glutamate and α-ketoglutarate, and m + 4 labeling of fumarate, malate, aspartate and citrate is shown for A549 cells cultured for 8 hr in RPMI, adult bovine serum, adult bovine serum with RPMI nutrient levels, adult bovine serum with RPMI amino acid levels and adult bovine serum with 208 µM cystine added (RPMI cystine levels). Each medium included [U-13C5]glutamine added to ~33% enrichment (n = 3). (B) The proliferation of A549 cells cultured in the same media defined in (A) and RPMI containing 10 µM cystine with vehicle (DMSO) or 1 µM CB-839 as indicated (n = 3). For all panels, the values represent the mean and the error bars represent ± SD.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A549 cells were cultured in adult bovine serum with DMEM nutrient levels, adult bovine serum with DMEM amino acid levels and adult bovine serum with DMEM amino acid levels, but without supplementation of the amino acids indicated by their standard single letter code in each column. For each medium, the proliferation rate for cells cultured in the presence of vehicle (DMSO) or 1 µM CB-839 is shown (n = 3). (B) A549 cells were cultured in adult bovine serum, adult bovine serum with DMEM amino acid levels, adult bovine serum with all DMEM amino acids supplemented except serine, glycine, threonine and cystine, or the previous medium supplemented with DMEM levels of serine, glycine, threonine or cystine added individually as indicated. For each medium, the proliferation rate for cells cultured in the presence of vehicle (DMSO) or 1 µM CB-839 is shown (n = 3). For all panels, the values represent the mean and the error bars represent ± SD.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Glutamate has multiple possible metabolic fates in cells, any of which may become limiting upon glutaminase inhibition. Two fates indicated by red arrows (TCA cycle anaplerosis and glutathione biosynthesis) have previously been reported to become limiting upon glutaminase inhibition. (B) A549 cells were cultured in RPMI in the presence of vehicle (DMSO) or 1 µM CB-839 for 24 hr. Metabolites were extracted, analyzed by LC-MS and the level of each metabolite was normalized to the DMSO treated control (n = 3). (C) A549 cells were cultured in the presence of DMSO, 1 µM CB-839, or 1 µM CB-839 with 2 mM NAC for 24 hr, and then stained with the ROS sensitive dye DCFDA. DCFDA signal intensity normalized to cell number is shown for each condition (n = 12). (D) A549 cells were cultured in RPMI with 2 mM glutathione monoethyl-ester (GSH), 5 mM dimethyl-α-ketoglutarate (αKG), 2 mM N-acetylcysteine (NAC) or 100 µM buthionine sulfoximine (BSO) as indicated. For each condition, the proliferation rate for cells cultured in the presence of vehicle (DMSO) or 1 µM CB-839 is shown (n = 3). (E) A549 cells were cultured for 24 hr in RPMI with 5 mM αKG, 2 mM GSH, 2 mM NAC or 100 µM BSO, in the presence of DMSO or 1 µM CB-839. Metabolites were extracted, analyzed by LC-MS and the level of each metabolite was normalized to the RPMI alone DMSO treated control (n = 3). n.d. indicates that the metabolite was not detected. For all panels, the values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
 
 We next added different subsets of RPMI or DMEM nutrients to adult bovine serum to identify which nutrient(s) promote increased glutamine utilization and dependence. Addition of amino acids alone at RPMI levels to adult bovine serum increased glutamine contribution to the TCA cycle to the same extent as addition of the whole pool of all RPMI nutrients (Figure 3A). Addition of amino acids alone at RPMI levels also induced CB-839 sensitivity (Figure 3B), as did addition of amino acids to DMEM levels (Figure 3—figure supplement 1A). We next sought to identify the amino acid(s) causing this increased use of glutamine. Because DMEM contains fewer amino acids, and causes the same phenotype as RPMI amino acids, we reasoned that the amino acids responsible must be present in DMEM. Therefore, we systematically determined CB-839 sensitivity of cells cultured in adult bovine serum supplemented with these amino acids minus subsets that share common transport mechanisms (Hediger et al., 2013; Hyde et al., 2003). Adding the DMEM amino acid pool lacking serine, glycine, threonine and cystine to adult bovine serum failed to cause increased sensitivity of cells to CB-839, while omitting other subsets of amino acids had no effect on CB-839 sensitivity (Figure 3—figure supplement 1A). These data argue that one or more of these four amino acids is responsible for the phenotype. Serine, glycine, threonine or cystine were individually increased to DMEM levels in adult bovine serum containing DMEM levels of other amino acids. Only cystine addition triggered sensitivity to CB-839 (Figure 3—figure supplement 1B). Addition of cystine alone to adult bovine serum is sufficient to sensitize cells to CB-839 (Figure 3B). Similarly, addition of cystine at RPMI levels to adult bovine serum causes an increase in glutamine labeling of TCA cycle intermediates that is comparable to the labeling pattern observed in cells cultured in adult bovine serum containing levels of all nutrients found in RPMI (Figure 3A). Cystine levels in adult plasma (~20–50 µM) are 4–10 fold lower than in DMEM or RPMI (~200 µM) (Table 1). These experiments demonstrate that high levels of cystine found in standard tissue culture formulations cause enhanced glutamine anaplerosis and dependence.
 
@@ -57,9 +322,29 @@ Glutamine derived glutamate has multiple possible fates in cells (Figure 3—fig
 
 We next performed rescue experiments with dimethyl α-ketoglutarate or glutathione monoethyl ester to determine if replenishment of the TCA cycle or glutathione could prevent the anti-proliferative effect of glutaminase inhibition in RPMI which contains high levels of cystine. We also assessed if glutathione depletion with buthionine sulfoximine, an inhibitor of GSH synthesis, had similar anti-proliferative effects as glutaminase inhibition with CB-839, and if NAC treatment could reverse the effects of CB-839 treatment. Treatment of cells with dimethyl α-ketoglutarate or glutathione monoethyl ester was able to rescue the proliferation of CB-839 treated A549 cells, albeit to differing extents (Figure 3—figure supplement 2D). However, assessment of TCA cycle metabolite and GSH levels in cells rescued with dimethyl α-ketoglutarate, showed that this rescued both TCA metabolite pools and GSH levels (Figure 3—figure supplement 2E). Similarly, glutathione monoethyl ester treatment increased levels of both TCA cycle metabolites and GSH in CB-839 treated cells, although glutathione monoethyl ester was less capable of rescuing both the anti-proliferative effect of CB-839 and metabolite levels at the concentration used (Figure 3—figure supplement 2E). These data are consistent with previous reports showing A549 cells express γ-glutamyl transferase and are able to degrade GSH to replenish glutamate pools (Kang et al., 1994). Thus, neither α-ketoglutarate or GSH rescue provided definitive insight into whether TCA cycle intermediates or GSH levels are more limiting for proliferation in high cystine upon glutaminase inhibition. However, as described previously (Kang et al., 1991), we found that BSO treatment had no effect on A549 proliferation (Figure 3—figure supplement 2D) despite GSH depletion to undetectable levels (Figure 3—figure supplement 2E). NAC treatment, while able to decrease DCFDA detectable ROS (Figure 3—figure supplement 2C), did not rescue cell proliferation following CB-839 treatment (Figure 3—figure supplement 2D). Thus, while we have not identified precisely which glutamate dependent metabolic processes are limiting for proliferation upon glutaminase inhibition in high cystine conditions, these data argue that glutathione depletion and the subsequent increase in ROS alone is not sufficient to explain decreased proliferation of these cells.
 
-## Cystine driven glutamine anaplerosis requires xCT/SLC7A11 expression
+### Cystine driven glutamine anaplerosis requires xCT/SLC7A11 expression
 
 How might exogenous cystine regulate the contribution of glutamine carbon to the TCA cycle? Glutamine metabolism is linked to cystine metabolism via the xc– transporter system. This transporter system is composed of the transporter xCT (encoded by SLC7A11) and the chaperone 4F2hc/CD98 (encoded by SLC3A2), and together they mediate the exchange of glutamate for cystine across the plasma membrane (Lewerenz et al., 2013). We hypothesized that in the presence of high exogenous cystine, xCT-mediated transport of glutamate might deplete the intracellular glutamate/αKG pool, thus promoting glutamate regeneration from glutamine via glutaminase (Figure 4A). To begin to test this, we measured glutamate release and uptake of both glutamine and cystine by A549 cells cultured in RPMI or RPMI containing low levels (10 µM) of cystine. Consistent with the hypothesis that cystine potentiates glutamine anaplerosis by triggering enhanced glutamate secretion via xCT and increased glutamine catabolism, we observed that higher extracellular cystine increased both the glutamine and cystine uptake rates as well as the glutamate release rate (Figure 4—figure supplement 1) in A549 cells. To determine if xCT/SLC7A11 was required for cystine induced glutamine anaplerosis and dependence, we generated A549 cells with shRNA-mediated stable knockdown of SLC7A11, where knockdown was or was not rescued by expression of an shRNA-resistant SLC7A11 cDNA (Figure 4B). We first confirmed that knockdown of SLC7A11 with two hairpins reduced the glutamine uptake and glutamate release rate of cells cultured in RPMI, but did not have a detectable effect on glutamine uptake and glutamate release when cells were cultured in RPMI containing low cystine (10 µM) (Figure 4—figure supplement 2A). Knockdown of SLC7A11 had no consistent effect on steady state intracellular levels of glutamate or the glutamate derived metabolite glutathione in either RPMI or RPMI with low cystine (Figure 4—figure supplement 2B). We next traced the fate of [U-13C5]glutamine in SLC7A11 knockdown or control cells when cultured in adult bovine serum or adult bovine serum supplemented with RPMI levels of cystine. To quantify the extent to which cystine enhanced glutamine anaplerosis, we assessed the difference between normalized m + 5 labeled αKG in adult bovine serum and in adult bovine serum with high cystine. We found that knockdown of SLC7A11 substantially decreased the ability of cystine to potentiate glutamine anaplerosis, and that this effect was blunted by expression of the shRNA-resistant SLC7A11 cDNA (Figure 4C). Additionally, knockdown of SLC7A11 with multiple hairpins (Figure 4D) abrogated CB-839 sensitivity of A549 cells in adult bovine serum with RPMI levels of cystine (Figure 4E). Thus, xCT/SLC7A11 is necessary for cystine induced glutamine anaplerosis and dependence in A549 cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig4-v2.jpg)
+
+**Figure 4.:** (A) System xc– is a plasma membrane antiporter composed of two polypeptides, xCT (encoded by SLC7A11) and 4F2hc/CD98 (encoded by SLC3A2), that exchanges intracellular glutamate for extracellular cystine. (B) A549 cells were infected with lentiviruses encoding a SLC7A11 targeting shRNA or a control shRNA targeting GFP as indicated. These cells were then infected with retroviruses expressing either shRNA resistant SLC7A11 cDNA or empty vector (E.V.) as indicated. Shown is an immunoblot analysis of these modified cell lines for xCT protein expression with vinculin as a loading control. (C) The four cell lines from (B) were cultured for 8 hr in adult bovine serum or adult bovine serum with 208 µM cystine. Each medium included [U-13C5]glutamine added to ~33% enrichment (n = 3). M + 5 fractional labeling of α-ketoglutarate and glutamine for each cell line in each condition was determined. Shown is the difference in m + 5 fractional label of α-ketoglutarate (normalized to m + 5 fractional enrichment of glutamine) between adult bovine serum with 208 µM cystine and adult bovine serum. We define this as the ‘cystine induced increase of glutamine contribution to αKG’. (D) Immunoblot analysis of A549 cells infected with lentiviruses encoding SLC7A11 targeting shRNAs or a control shRNA targeting GFP as indicated. (E) Proliferation rates of cell lines from (D) cultured in adult bovine serum with 208 µM cystine with vehicle (DMSO) or 1 µM CB-839 is shown (n = 3). (F) Multiple cell lines (see Figure 4—source data 1 for identity of cell lines) were cultured for 8 hr in RPMI or RPMI with 10 µM cystine. Each medium included [U-13C5]glutamine added to ~33% enrichment (n = 2–3). M + 5 fractional labeling of α-ketoglutarate and glutamine for each cell line in each condition was determined. Shown is ‘cystine induced increase of glutamine contribution to αKG’ defined as the difference of m + 5 fractional label of α-ketoglutarate (normalized to m + 5 fractional enrichment of glutamine) between RPMI and RPMI with 10 µM cystine for a given cell line. This term is plotted against SLC7A11 mRNA expression data obtained from the cancer cell line encyclopedia (CCLE) (Barretina et al., 2012). (G) SLC7A11 mRNA expression data from the CCLE is shown for breast cancer cell lines reported to be CB-839 resistant (IC50 >1 µM) or CB-839 sensitive (IC50 <1 µM) (Gross et al., 2014). Difference in SLC7A11 expression between the two groups was tested by two-tailed unpaired t-test. (H) Indicated cell lines were infected with lentiviruses encoding SLC7A11 cDNA or empty vector (E.V.). Shown is an immunoblot analysis of xCT protein expression for these modified cell lines with vinculin expression presented as a loading control. (I) Cystine induced increase of glutamine contribution to αKG was determined as in (F) for the cell lines described in (H). (J) Proliferation rates for MCF7 cells without (E.V.) or with SLC7A11 expression cultured in RPMI or RPMI with 10 µM cystine in the presence of vehicle (DMSO) or 1 µM CB-839 as indicated. For all panels, values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) A549 cells were cultured in RPMI or RPMI with 10 µM cystine. Per cell rates of glutamine consumption, glutamate release and cystine consumption were measured as detailed in Materials and methods (n = 3). The values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) A549 cells infected with lentiviruses encoding SLC7A11 targeting shRNAs or a control shRNA targeting GFP were cultured in RPMI or RPMI with 10 µM cystine. Per cell rates of glutamine consumption and glutamate release are shown (n = 3). (B) A549 cells infected with lentiviruses encoding SLC7A11 targeting shRNAs or a control shRNA targeting GFP were cultured in RPMI or RPMI with 10 µM cystine for 24 hr. Metabolites were extracted, analyzed by LC-MS and the level of each metabolite was normalized to the A549 GFP shRNA cell line cultured in standard RPMI (n = 3). The values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) MCF7 cells infected with lentiviruses encoding SLC7A11 cDNA or empty vector (E.V.). were cultured in RPMI or RPMI with 10 µM cystine. Per cell rates of glutamine consumption and glutamate release and were measured (n = 3). (B) MCF7 cells infected with lentiviruses encoding SLC7A11 cDNA or empty vector (E.V.). were cultured in RPMI or RPMI with 10 µM cystine for 24 hr. Metabolites were extracted, analyzed by LC-MS and the level of each metabolite was normalized to the MCF7 E.V. cell line cultured in standard RPMI (n = 3). The values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Proliferation rates for MDA-MB-468 and AU565 cell lines overexpressing SLC7A11 or empty vector (from Figure 4G) cultured in RPMI or RPMI with 10 µM cystine in the presence of vehicle (DMSO) or 1 µM CB-839 as indicated. The values represent the mean and the error bars represent ± SD.
 
 We next asked if xCT/SLC7A11 expression influences cystine-induced glutamine anaplerosis across other human cancer cell lines. We traced [U-13C5]glutamine fate in a panel of human cell lines from cancers arising in multiple tissues and with multiple genetic drivers (Figure 4—source data 1). These cells were cultured in RPMI or RPMI with low (10 µM) cystine and the extent of glutamine anaplerosis determined as in Figure 4C. We found a strong correlation between cystine-induced glutamine anaplerosis and xCT/SLC7A11 mRNA expression reported by the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012), suggesting that cystine levels and xCT/SLC7A11 expression contribute to the prominent use of glutamine as a anaplerotic TCA cycle substrate in many cancer cells in culture (Figure 4F).
 
@@ -67,17 +352,17 @@ Given that xCT/SLC7A11 expression correlates with the ability of cystine to indu
 
 We asked if increased xCT/SLC7A11 expression in CB-839 resistant cell lines would be sufficient to cause cystine-induced glutamine anaplerosis and increase glutaminase inhibitor sensitivity. xCT/SLC7A11 was expressed in three CB-839 resistant breast cancer cell lines, all of which had low baseline expression of this transport system: MCF7, MDA-MB-468 and AU565 (Figure 4H). We first confirmed that expression of SLC7A11 in MCF7 cells increased the glutamine uptake and glutamate release rate of cells cultured in RPMI, and that this effect was enhanced by high cystine levels in the media (Figure 4—figure supplement 3A). SLC7A11 expression had no effect on intracellular glutamate or GSH levels in standard RPMI, but did prevent the decrease in glutathione levels observed when MCF7 cells are cultured in RPMI with low cystine (Figure 4—figure supplement 3B). We next traced [U-13C5]glutamine fate in these cell lines with and without SLC7A11 overexpression. xCT/SLC7A11 expression increased the incorporation of glutamine carbon into TCA cycle intermediates in the presence of RPMI levels of cystine in all three cell lines (Figure 4I). xCT/SLC7A11 expression also potentiated CB-839 sensitivity when these cells are cultured in RPMI, but not RPMI with 10 µM cystine (Figure 4J and Figure 4—figure supplement 4). These results demonstrate that xCT/SLC7A11 is necessary and sufficient for increased glutamine anaplerosis and glutaminase addiction in the presence of high levels of extracellular cystine.
 
-## Low environmental cystine availability limits glutamine anaplerosis in vivo
+### Low environmental cystine availability limits glutamine anaplerosis in vivo
 
 Lastly, we asked whether the relatively low level of cystine available in vivo could limit glutamine anaplerosis of xCT/SLC7A11-expressing tumors. For these studies, we sought to increase cystine availability in A549 tumor bearing mice and monitor glutamine carbon incorporation into metabolites in the tumors. We found that an oral dose of 2.4 g/kg cystine could raise plasma cystine levels in mice from ~15 µM to ~70 µM for at least 4 hr (Figure 5A). We next administered cystine and [U-13C5]glutamine to A549 tumor bearing mice to determine if cystine administration would increase glutamine anaplerosis. Because oral cystine administration to mice surgically prepared for long-term glutamine infusion as performed in Figure 1B was not technically feasible, [U-13C5]glutamine was administered to tumor bearing mice via multiple bolus intravenous injections (Elgogary et al., 2016; Lane et al., 2015; Tardito et al., 2015; Yuneva et al., 2012) 30 min after cystine dosing (Figure 5B). This labeled glutamine delivery method does not allow us to assess steady state contribution of glutamine carbon to the TCA cycle in tumors; however, glutamine intravenous bolus injections do allow examination of glutamine incorporation into glutamate and downstream metabolites during a pre-steady state, kinetic labeling period and this method has previously been used to corroborate predicted changes in tumor glutamine utilization (Elgogary et al., 2016; Lane et al., 2015; Tardito et al., 2015; Yuneva et al., 2012) (Figure 5B). From measuring glutamine uptake and glutamate release rates under high and low cystine conditions (Figure 4—figure supplement 1), we surmise that the intracellular pools of glutamine and glutamate turnover more rapidly with increasing extracellular cystine. Thus, a prediction of our model that would be captured by kinetic [U-13C5]glutamine labeling is that intratumoral labeling of glutamine, as well as glutamate and TCA cycle metabolites, will be higher in the presence of exogenous cystine. Terminal [U-13C5]glutamine plasma enrichment was similar in cystine-treated and untreated animals, while cystine-treated animals had substantially higher plasma cystine concentrations (Figure 5B). Consistent with increased glutamine catabolism in cystine treated tumors, labeling of glutamine, glutamate and αKG from [U-13C5]glutamine in tumors was higher in cystine treated mice (Figure 5C). These results suggest that increasing cystine levels in tumors can cause increased glutamine consumption and glutamate release, a phenomenon we have shown using in vitro models leads to enhanced glutamine anaplerosis. These results are consistent with a model where low cystine levels in vivo limit tumor glutamine catabolism and anaplerosis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/27713/elife-27713-fig5-v2.jpg)
 
-**Figure 5.:** (A) nu/nu mice were treated with 2.4 g/kg cystine by oral gavage, and plasma from these animals was collected at the indicated time points. Cystine concentration in plasma at each time point as determined by GC-MS is shown. (B) Schematic diagram of cystine administration to tumor bearing mice, followed by bolus I.V. injections of [U-13C5]glutamine,and analysis of intratumoral metabolite labeling during the period of kinetic labeling. Shown in the graph are hypothetical labeling patterns of two metabolites over time after glutamine injection. Metabolite A (shown in black) is labeled by glutamine faster in the presence of cystine, but the level of steady state labeling is unaffected. Metabolite B (shown in gray) is labeled by glutamine faster in the presence of cystine and also to a greater extent at steady state. We harvest and analyze tumors in the pre-steady state period of labeling as indicated by the arrow, and thus it is not possible to determine to what extent an increase in labeling is due to faster labeling kinetics or increased steady state contribution of the label to the given metabolite. (C) A549 tumor bearing mice were treated (n = 4) or not (n = 3) with oral cystine prior to three bolus [U-13C5]glutamine injections every 15 min. Plasma and tumor tissue was then harvested 15 min after the last injection (described in Materials and methods). Left Enrichment of m + 5 glutamine and cystine concentration in the plasma of these animals. Right Fractional labeling of glutamine (m + 5), glutamate (m + 5), α-ketoglutarate (m + 5) in A549 tumor tissue. For all panels, the values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.10.7554/eLife.27713.027Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) nu/nu mice were treated with 2.4 g/kg cystine by oral gavage, and plasma from these animals was collected at the indicated time points. Cystine concentration in plasma at each time point as determined by GC-MS is shown. (B) Schematic diagram of cystine administration to tumor bearing mice, followed by bolus I.V. injections of [U-13C5]glutamine,and analysis of intratumoral metabolite labeling during the period of kinetic labeling. Shown in the graph are hypothetical labeling patterns of two metabolites over time after glutamine injection. Metabolite A (shown in black) is labeled by glutamine faster in the presence of cystine, but the level of steady state labeling is unaffected. Metabolite B (shown in gray) is labeled by glutamine faster in the presence of cystine and also to a greater extent at steady state. We harvest and analyze tumors in the pre-steady state period of labeling as indicated by the arrow, and thus it is not possible to determine to what extent an increase in labeling is due to faster labeling kinetics or increased steady state contribution of the label to the given metabolite. (C) A549 tumor bearing mice were treated (n = 4) or not (n = 3) with oral cystine prior to three bolus [U-13C5]glutamine injections every 15 min. Plasma and tumor tissue was then harvested 15 min after the last injection (described in Materials and methods). Left Enrichment of m + 5 glutamine and cystine concentration in the plasma of these animals. Right Fractional labeling of glutamine (m + 5), glutamate (m + 5), α-ketoglutarate (m + 5) in A549 tumor tissue. For all panels, the values represent the mean and the error bars represent ± SD. P values were calculated using a two-tailed unpaired t tests. * indicates p<0.05; ** indicates p<0.01; *** indicates p<0.001.
 
 ## Discussion
 
-## Coincidence of xCT/SLC7A11 expression and high environmental cystine contribute to increased glutamine metabolism
+### Coincidence of xCT/SLC7A11 expression and high environmental cystine contribute to increased glutamine metabolism
 
 Environmental differences between in vitro culture conditions and tumors in vivo can lead to differential reliance on glutamine anaplerosis, causing some cells to be addicted to glutamine catabolism in vitro. We found that non-physiological cystine levels in tissue culture can explain many of the differences in glutamine metabolism between lung cancer cells in vitro and in tumors. The glutamate/cystine antiporter xCT/SLC7A11 is necessary for the observed cystine-induced glutamine anaplerosis in A549 cells. Thus, high levels of extracellular cystine and the cellular capacity to secrete glutamate in exchange for cystine cooperate to increase glutamine anaplerosis in these cells.
 
@@ -85,13 +370,13 @@ Increased glutamate secretion in the presence of cystine increases intracellular
 
 xCT/SLC7A11 expression correlates with the ability of cystine to increase glutamine anaplerosis in a panel of cell lines derived from tumors of different oncogenotype and tissue of origin (Figure 4F). This argues that xCT/SLC7A11 expression may be necessary for environmental cystine to enhance glutamine anaplerosis regardless of tumor type, and is not a phenomenon limited to NSCLC and A549 cells. Indeed, examination of panels of human breast cancer cell lines have found that xCT/SLC7A11 promotes glutamate secretion, providing further evidence that xCT/SLC7A11 can promote glutamine catabolism in cell types beyond NSCLC (Briggs et al., 2016; Timmerman et al., 2013). Collectively, these experiments suggest that glutaminase dependence in culture for many cancer cells derived from various tumor types will be strongly influenced by both environmental cystine and xCT/SLC7A11 expression.
 
-## Therapeutic implications of tissue cystine levels and their relationship to glutamine anaplerosis
+### Therapeutic implications of tissue cystine levels and their relationship to glutamine anaplerosis
 
 These findings have clear implications for the clinical use of glutaminase inhibitors that are being evaluated in trials to treat a variety of tumor types (https://clinicaltrials.gov/ct2/show/NCT02071862). First, assessing xCT/SLC7A11 expression may help identify patients likely to benefit from these drugs. While many cancer cells are considered to be glutamine addicted, not every cancer cell line requires glutamine for proliferation in vitro (Cetinbas et al., 2016; Cheng et al., 2011; Gross et al., 2014; Timmerman et al., 2013; van den Heuvel et al., 2012). Glutamine dependence has been linked to various oncogenes including MYC (Gao et al., 2009; Wise et al., 2008), RAS (Son et al., 2013), IDH (Matre et al., 2014; Seltzer et al., 2010) and hormone receptor status in breast cancers (Gross et al., 2014). However, the genetic and biochemical basis for glutamine dependence remains poorly understood. Thus, understanding the underlying factors that cause increased reliance on glutamine is essential for identifying patients that would likely benefit from clinical glutaminase inhibitors. Identification of high xCT/SLC7A11 expression as a marker for glutaminase inhibitor sensitivity may be useful to identify patients that are more likely to benefit from glutaminase inhibitor therapy regardless of genotype. Functional examination of glutamate/cystine exchange by tumor cells using imaging techniques such as xCT-specific PET probes (Baek et al., 2012) may also be helpful in selecting tumors that are dependent on glutamine metabolism.
 
 xCT/SLC7A11 expression is known to be governed by the antioxidant response transcription factor NRF2 (Sasaki et al., 2002). Interest in modulating the antioxidant response pathway has led to the development of a number of NRF2-activating compounds, some of which are already in clinical use (Davies et al., 2016; Gao et al., 2014; Magesh et al., 2012). xCT/SLC7A11 expression triggered by NRF2-activating drugs can sensitize tumors to glutaminase inhibitors (Sayin et al., 2017). In addition, beyond the use of xCT/SLC7A11 expression as a marker for glutaminase inhibitor responsiveness, raising tumor cystine levels might also be a way to induce or enhance glutamine addiction. We found that raising tissue cystine levels may increase glutamine anaplerosis in tumors. Therefore, co-administration of cystine with glutaminase inhibitors may enhance response to glutaminase inhibitors. Oral cystine administration can be effective to raise plasma cystine levels in humans (Morin et al., 1971), arguing that this strategy could be applicable to treating patients.
 
-## Tissue culture systems that reflect nutrient availability in vivo can be more representative models of tumor metabolism
+### Tissue culture systems that reflect nutrient availability in vivo can be more representative models of tumor metabolism
 
 Eagle’s medium and RPMI were formulated to identify the minimal set of nutrients required for mammalian cancer cells and leukocytes to rapidly proliferate (Eagle, 1955; Moore et al., 1967), not to match physiological levels of nutrients available in vivo. Thus, these media lack certain nutrients available to tumors in vivo and also contain other nutrients in excess to what is found in blood. Several studies examining tumor metabolism in mice and humans have suggested that the way nutrients are used in tumors can be different from what is observed in cell culture. While increased glucose consumption and lactate secretion observed in most cells in culture is also observed in tumors (Davidson et al., 2016; Hensley et al., 2016; Marin-Valencia et al., 2012; Mashimo et al., 2014; Sellers et al., 2015; Tardito et al., 2015), glutamine oxidation and anaplerosis can differ between both lung and glial tumors and cell lines derived from these tumors in culture (Davidson et al., 2016; Marin-Valencia et al., 2012; Tardito et al., 2015). Thus, standard tissue culture can cause some aspects of central carbon metabolism to be misrepresented and the identification of media that better model the environmental conditions in tumors may facilitate better understanding of cancer metabolism.
 
@@ -103,7 +388,7 @@ Beyond the contribution of oncogenic mutations to reprogramming cellular metabol
 
 ## Materials and methods
 
-## Cell lines and culture
+### Cell lines and culture
 
 All cell lines used in this study were directly obtained from ATCC (Manassas, VA) (A549: ATCC Cat# CRM-CCL-185, RRID:CVCL_0023; HCT116: ATCC Cat# CCL-247, RRID:CVCL_0291; 143B: ATCC Cat# CRL-8303, RRID:CVCL_2270; MDAMB231: ATCC Cat# HTB-26, RRID:CVCL_0062; PC3: ATCC Cat# CRL-1435, RRID:CVCL_0035; NCIH1299: ATCC Cat# CRL-5803, RRID:CVCL_0060; TT: ATCC Cat# CRL-1803, RRID:CVCL_1774; MDAMB468: ATCC Cat# HTB-132, RRID:CVCL_0419; ASPC1: ATCC Cat# CRL-1682, RRID:CVCL_0152; HS578T: ATCC Cat# HTB-126, RRID:CVCL_0332; NCIH226: ATCC Cat# CRL-5826, RRID:CVCL_1544; NCIH1395: ATCC Cat# CRL-5868, RRID:CVCL_1467; MIAPACA2: ATCC Cat# CRM-CRL-1420, RRID:CVCL_0428; AU565: ATCC Cat# CRL-2351, RRID:CVCL_1074; BT474: ATCC Cat# CRL-7913, RRID:CVCL_0179; MCF7: ATCC Cat# HTB-22, RRID:CVCL_0031) and DMSZ (Braunschweig, Germany) (CAL120: DSMZ Cat# ACC-459, RRID:CVCL_1104) or were gifts from other laboratories (PANC1: RRID:CVCL_0480; EVSAT: RRID:CVCL_1207). All cell lines not obtained directly from ATCC or DMSZ were STR tested to confirm their identity prior to use (University of Arizona Genetics Core, Tucson, AZ). All cell lines were regularly tested for mycoplasma contamination using the Mycoprobe mycoplasma detection kit (R and D Systems, Minneapolis, MN). All cells were cultured in a Heracell (Thermofisher, Waltham, MA) humidified incubators at 37°C and 5% CO2. Cell lines were routinely maintained in RPMI-1640 or DMEM (Corning Life Sciences, Tewksbury, MA) supplemented with 10% heat inactivated fetal bovine serum (VWR Seradigm, Radnor, PA, Lot 120B14).
 
@@ -111,7 +396,7 @@ For continuous maintenance of A549 cells in adult bovine serum, the following mo
 
 In unpublished observations made while culturing many cells lines in adult bovine serum, we have found that not all cell lines proliferate as standard monolayer cultures in adult bovine serum as they do in RPMI. Preliminarily, we have observed that some of these cells lines can proliferate in adult bovine serum when coated with collagen I according to previously published methods (Olivares et al., 2017), or by the addition of cystine to slightly higher levels (20–50 µM) than those found in adult bovine serum.
 
-## Media preparation and analysis
+### Media preparation and analysis
 
 All stable isotope tracing and proliferation rate experiments were performed in RPMI or DMEM containing 10% heat inactivated fetal bovine serum (Seradigm, Lot 120B14) that was repeatedly dialyzed against saline (150 mM NaCl) using 3.5 kDa cutoff membranes (Thermofisher) to remove all small molecule metabolites from the serum.
 
@@ -125,11 +410,11 @@ To prepare the dialyzed media ‘Adult bovine serum → RPMI or DMEM’, 210 mL 
 
 For addition of metabolites to RPMI-1640, glutathione monoethyl ester (Santa Cruz, Dallas, TX), N-acetylcysteine (Sigma), dimethyl α-ketoglutarate (Sigma) were added at the indicated concentrations to RPMI-1640, which was then sterilized using a 0.22 µm filter prior to use.
 
-## Generation of stable cDNA or shRNA expressing cell lines
+### Generation of stable cDNA or shRNA expressing cell lines
 
 Stable cDNA or shRNA expressing cell lines were generated by lentiviral or retroviral infection for 24 hr followed by selection in RPMI-1640 containing 1 µg/mL puromycin or 500 µg/mL hygromycin B. Mock infected cells were similarly selected, and selection was considered complete when no viable cells were detected in these mock infection controls. All virally manipulated cells were maintained under antibiotic selection at indicated concentrations until used in experimental assays.
 
-## Vectors
+### Vectors
 
 For reduction of xCT/SLC7A11 expression, lentiviral pLKO human SLC7A11 shRNA vectors (SLC7A11 shRNA #1: TRCN0000288926 and SLC7A11 shRNA #2: TRCN0000288927) containing the puromycin resistance gene were obtained from Sigma Aldrich. A pLKO vector targeting GFP was used as a control.
 
@@ -139,15 +424,15 @@ To overexpress SLC7A11, SLC7A11 cDNA was PCR amplified and ligated into the SalI
 
 All vectors constructed for this study had the entire coding sequence confirmed by Sanger sequencing (Quintara Biosciences, Berkeley, CA) prior to use.
 
-## Determination of cellular proliferation rates
+### Determination of cellular proliferation rates
 
 Cellular proliferation rate in different media and drug conditions was determined as previously described (Sullivan et al., 2015). Briefly, cell lines proliferating in log phase in RPMI medium were trypsinized, counted and plated into six well dishes (Corning Life Sciences) in 2 mL of RPMI medium and incubated overnight. Initial seeding density was 20,000 cells/well for A549 cells, or 50,000 cells for MCF7, AU565 and MDA-MB-468 cells. The next day, a six well plate of cells was trypsinized and counted to provide a number of cells at the start of the experiment. Cells were then washed twice with 2 mL of phosphate buffered saline (PBS), and 8 mL of the indicated media premixed with indicated compounds or vehicles was added. This large volume of media was chosen to prevent severe nutrient depletion, especially when adding adult bovine serum medium. Cells were then trypsinized and counted 4 days after adding the indicated medias. Proliferation rate was determined using the following formula: Proliferation rate in doublings/day = [Log2(Final Day 4 cell count/Initial Day 0 cell count)]/4 days. Cells were counted using a Cellometer Auto T4 Plus Cell Counter (Nexcelom Bioscience, Lawrence, MA).
 
-## Intracellular DCFDA staining
+### Intracellular DCFDA staining
 
 Measurement of intracellular DCFDA fluorescence was performed using the Abcam DCFDA Cellular Reactive Oxygen Species Detection Assay Kit (Abcam, Cambridge, MA, ab113851) according to the manufacturer’s instructions. Briefly, 25,000 A549 cells were plated in each well of a 96 well plate in 200 µL RPMI without phenol red (Sigma Aldrich). Cells were allowed to attach for 8 hr. Subsequently, the media on the cells was changed to 200 µL fresh media containing DMSO, CB-839 and NAC as indicated. After 24 hr of treatment, the cells were washed twice with 200 µL of 1x Buffer included in the assay kit. Cells were then incubated with 100 µL of 1x Buffer containing 10 µM DCFDA for 45 min. at 37°C. An unstained control was included, and incubated with 100 µL of 1x Buffer alone. After staining, the DCFDA containing solution was removed and cells were resuspended 100 µL of PBS. DCFDA fluorescence was measured using an Infinite M200Pro plate reader (Tecan) in fluorescence mode with excitation at 485 and emission at 535. Cells were then detached with trypsin-EDTA solution and counted using a Cellometer Auto T4 Plus Cell Counter (Nexcelom Bioscience). The ratio of DCFDA signal intensity to cell number was subsequently computed.
 
-## Preparation of cell extracts and immunoblotting
+### Preparation of cell extracts and immunoblotting
 
 For immunoblotting analysis, cell lines growing in log phase were trypsinized, counted and plated at a density of 400,000 cells/well of a six well dish. The following day, cells were washed with 2 mL of PBS and then lysed in 100 μL RIPA buffer [25 mM Tris-Cl, 150 mM NaCl, 0.5% sodium deoxycholate, 1% Triton X-100, 1x cOmplete protease inhibitor (Roche)]. Cells were scraped and the resulting lysate was clarified by centrifugation at 21 kg for 20 min. Protein concentration of the lysate was determined by BCA assay (Thermofisher). Lysates were resuspended at 2 μg/μL in Laemmli SDS PAGE sample loading buffer (10% glycerol, 2% SDS, 60 mM Tris-Cl pH 6.8, 1% β-mercaptoethanol, 0.01% bromophenol blue) and denatured at 100°C for 5 min.
 
@@ -155,17 +440,17 @@ Extracts (30 μg of protein) were resolved by SDS PAGE using 10% acrylamide gels
 
 Antibodies and dilutions used in this study were: 1:1000 rabbit anti-xCT (Cell Signaling Technology, Danvers, MA, 12691S), 1:10000 mouse anti-Vinculin (Abcam, ab18058, RRID:AB_444215), 1:10000 IR680LT dye conjugated goat anti-rabbit IgG (Licor Biosciences, 925–68021), 1:10000 IR800 dye conjugated goat anti-mouse IgG (Licor Biosciences, 925–32210).
 
-## Determination of cellular amino acid consumption and release rates
+### Determination of cellular amino acid consumption and release rates
 
 For amino acid consumption analysis, cell lines growing in log phase were trypsinized, counted and plated at a density of 100,000 cells/well of a six well dish and allowed to attach for 24 hr. The following day, cells were washed with 2 mL of PBS and then fed 2 mL of either RPMI or RPMI(10 µM cystine) media. 1 mL of media was immediately removed, spun for 3 min. at 845 g to remove any cells from the media, and then frozen at −80°C for later analysis. Cell number was also determined using a Cellometer Auto T4 Plus Cell Counter (Nexcelom Bioscience). 2 days later, media was harvested and cell number of the culture again determined. Amino acid concentration in the fresh or spent media was determined by GC-MS as described above in Media preparation and analysis. To calculate amino acid consumption rates, cell numbers at the initial and day two time points were used to fit an exponential growth function, and integration of these curves yielded the number of (cell · days) by which the media was conditioned. Changes in amino acid concentration for each culture were normalized to the integrated growth curve of each culture to yield amino acid consumption/release per cell per unit time.
 
-## Cell culture isotopic labeling experiments and metabolite extraction
+### Cell culture isotopic labeling experiments and metabolite extraction
 
 To determine steady state labeling of polar metabolites by glutamine in cultured cells, cell lines were seeded at an initial density of 200,000 cells/well in a six well dish in 2 mL of RPMI medium. Cells were incubated for 24 hr, and then washed twice with 2 mL of PBS. Cells were then incubated for 8 or 24 hr in the indicated media, to which [U-13C5]glutamine (Cambridge Isotope Laboratories, CLM-1822-H-PK) was added, such that the fractional enrichment of glutamine in the given medium would be ~33%.
 
 Following the labeling period, media was aspirated from cells and the cells were rapidly washed in ~8 mL of ice cold saline. The saline was subsequently aspirated and 600 μL of ice cold methanol:water (4:1) was added. Cells were scraped on ice, and the resulting extracts were vortexed for 10 min, and centrifuged at 21 kg for 10 min. 450 μL of each extract was removed and dried under nitrogen gas and stored −80°C until further analysis.
 
-## Liquid chromatography-mass spectrometry (LC-MS) analysis of intracellular metabolites
+### Liquid chromatography-mass spectrometry (LC-MS) analysis of intracellular metabolites
 
 Cell cultures treated as indicated were washed in blood bank saline and extracted in methanol:water as described above in Cell culture isotopic labeling experiments and metabolite extraction. Cellular extracts were then resuspended in 100 µL of acetonitrile:water (1:1). LC-MS analysis was then performed using a QExactive orbitrap mass spectrometer using an Ion Max source and heated electrospray ionization (HESI) probe coupled to a Dionex Ultimate 3000 UPLC system (Thermofisher). External mass calibration was performed every 7 days.
 
@@ -173,7 +458,7 @@ Samples were separated by chromatography by injecting 10 µL of sample on a SeQu
 
 The mass spectrometer was operated in full scan, polarity-switching mode and the spray voltage was set to 3.0 kV, the heated capillary held at 275°C, and the HESI probe was held at 350°C. The sheath gas flow rate was 40 units, the auxiliary gas flow was 15 units and the sweep gas flow was one unit. The MS data acquisition was performed in a range of 70–1000 m/z, with the resolution set to 70,000, the AGC target at 1e5 and the maximum injection time at 20 msec. Relative quantitation of metabolites was performed with XCalibur QuanBrowser 2.2 (Thermofisher) using a five ppm mass tolerance, referencing an in-house retention time and m/z library of metabolite standards. In order to detect GSH and GSSG, the MS was operated in targeted selected ion monitoring (tSIM) mode with the quadrapole centered on M + H m/z 308.0811 (GSH) and m/z 613.1592, with an isolation window of 1 m/z. The resolution was set at 70,000, the AGC target was 1e5, and the maximum injection time was 250 ms.
 
-## Animal studies
+### Animal studies
 
 All experiments performed in this study were approved by the MIT Committee on Animal Care (IACUC). Nu/nu mice were purchased from Charles River (Wilmington, MA) (RRID:IMSR_CRL:088) and housed on a 12 hr light and 12 hr dark cycle, with ad lib access to food and water. For subcutaneous xenograft studies, mice were injected with 2,000,000 A549 cells (suspended in a volume of 100 μL PBS) per site into the right and left flank.
 
@@ -181,13 +466,13 @@ Continuous infusions were performed as previously described (Davidson et al., 20
 
 Repeated bolus intravenous injection tracer studies were performed as previously described (Lane et al., 2015; Yuneva et al., 2012). Tumor-bearing mice were orally administered a 2.4 g/kg dose of L-cystine (Sigma Aldrich). Cystine was formulated as a 240 mg/mL suspension in 0.1% Tween 80% and 0.5% methylcellulose. Forty-five minutes after gavage, mice were lightly anesthetized using isofluorane and intravenously injected with 200 μL of [U-13C5]glutamine tracer (36.2 mg/ml dissolved in saline). These injections were performed a total of 3 times at 15 min intervals. Forty-five minutes after the first injection (and 15 min after the last injection), animals were euthanized, blood collected via heart puncture, and relevant tissues rapidly collected and freeze-clamped in liquid nitrogen.
 
-## Tumor and plasma metabolite extraction
+### Tumor and plasma metabolite extraction
 
 Frozen tissues were weighed (10–20 mg) and pulverized using a cryomill (Retsch, Haan, Germany). Metabolites were extracted in 1.3 mL chloroform:methanol:water (4:6:3), vortexed for 10 min, and centrifuged at 21 kg for 10 min. Polar metabolites were dried under nitrogen gas and stored −80°C until further analysis.
 
 Blood collected from animals was immediately placed in EDTA-tubes (Sarstedt, North Rhine-Westphalia, Germany) and centrifuged to separate plasma. To analyze absolute concentrations of amino acids in the plasma, including cystine, 10 μL of plasma was added to 10 μL of a mixture of isotopically labeled amino acids of known concentrations (Cambridge Isotope Laboratories, MSK-A2-1.2). To analyze fractional enrichment of metabolites, 10 μL of plasma was diluted with 10 μL of water. Diluted plasma samples were extracted in 600 μL of ice cold HPLC grade methanol, vortexed for 10 min, and centrifuged at maximum speed for 10 min. 450 μL of each extract was removed and dried under nitrogen gas and stored −80°C until further analysis.
 
-## Gas chromatograpy-mass spectrometry analysis of polar metabolites
+### Gas chromatograpy-mass spectrometry analysis of polar metabolites
 
 Polar metabolites were analyzed by GC-MS as described previously (Lewis et al., 2014). Dried and frozen metabolite extracts were derivitized with 16 μL MOX reagent (Thermofisher) for 60 min. at 37°C. Samples were then derivitized with N-tertbutyldimethylsilyl-N-methyltrifluoroacetamide with 1% tert-butyldimethylchlorosilane (Sigma Aldrich) 30 min. at 60°C. Following derivitization, samples were analyzed by GC-MS, using a DB-35MS column (Agilent Technologies, Santa Clara, CA) installed in an Agilent 7890A gas chromatograph coupled to an Agilent 5997B mass spectrometer. Helium was used as the carrier gas at a flow rate of 1.2 mL/min. One microliter of sample was injected in split mode (all samples were split 1:1) at 270°C. After injection, the GC oven was held at 100°C for 1 min. and increased to 300°C at 3.5 °C/min. The oven was then ramped to 320°C at 20 °C/min. and held for 5 min. at this 320°C.
 

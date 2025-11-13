@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.13141.001 Corrective responses to limb disturbances are surprisingly complex, but the neural basis of these goal-directed responses is poorly understood. Here we show that somatosensory feedback is transmitted to many sensory and motor cortical regions within 25 ms of a mechanical disturbance applied to the monkey’s arm. When limb feedback was salient to an ongoing motor action (task engagement), neurons in parietal area 5 immediately (~25 ms) increased their response to limb disturbances, whereas neurons in other regions did not alter their response until 15 to 40 ms later. In contrast, initiation of a motor action elicited by a limb disturbance (target selection) altered neural responses in primary motor cortex ~65 ms after the limb disturbance, and then in dorsal premotor cortex, with no effect in parietal regions until 150 ms post-perturbation. Our findings highlight broad parietofrontal circuits that provide the neural substrate for goal-directed corrections, an essential aspect of highly skilled motor behaviors. DOI: http://dx.doi.org/10.7554/eLife.13141.001
+Corrective responses to limb disturbances are surprisingly complex, but the neural basis of these goal-directed responses is poorly understood. Here we show that somatosensory feedback is transmitted to many sensory and motor cortical regions within 25 ms of a mechanical disturbance applied to the monkey’s arm. When limb feedback was salient to an ongoing motor action (task engagement), neurons in parietal area 5 immediately (~25 ms) increased their response to limb disturbances, whereas neurons in other regions did not alter their response until 15 to 40 ms later. In contrast, initiation of a motor action elicited by a limb disturbance (target selection) altered neural responses in primary motor cortex ~65 ms after the limb disturbance, and then in dorsal premotor cortex, with no effect in parietal regions until 150 ms post-perturbation. Our findings highlight broad parietofrontal circuits that provide the neural substrate for goal-directed corrections, an essential aspect of highly skilled motor behaviors.
 
 ## Introduction
 
@@ -33,19 +33,169 @@ There are sporadic observations that several sensory and motor cortical areas re
 
 ## Results
 
-## Rapid transmission of limb feedback across sensory and motor cortex
+### Rapid transmission of limb feedback across sensory and motor cortex
 
-Our first experiment examined the timing and magnitude of neural responses in a number of frontal and parietal cortical regions elicited by mechanical loads applied to the forelimb as monkeys maintained their hands at a central target (Posture Task,
+Our first experiment examined the timing and magnitude of neural responses in a number of frontal and parietal cortical regions elicited by mechanical loads applied to the forelimb as monkeys maintained their hands at a central target (Posture Task, Figure 1A, Herter et al., 2007). The activity of 611 neurons was recorded in 5 different cortical regions associated with voluntary motor control (A5:posterior parietal area 5, A2:primary somatosensory area 2, S1:primary somatosensory area 1 & 3, M1:primary motor cortex and PMd:dorsal premotor cortex, See Materials and methods). We found many neurons in each cortical region displayed significant perturbation-related activity within 100 ms of loads being applied in their preferred torque direction (Figure 1D, refer to Table 1 for details on the number of neurons recorded in each area and neurons responsive to perturbations).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig1-v2.jpg)
 
-**Figure 1.:** Each task varied in how the monkeys were instructed to respond to perturbations applied to the limb: correct for the disturbance in the Posture Task (A), not required to respond in the Movie Task (B), move to a spatial target in the IN/OUT Task (C). (D) Perturbation response, in the cell’s preferred torque direction, in the Posture Task of a neuron in A5 and in M1. Tick marks denote action potentials, each row representing a separate trial. (E) Population responses in each cortical area (Mean2SEM). Arrows depict when population signal surpassed threshold (baseline + 3SD) for >20 ms. Pre-perturbation baseline activity (-100:0 ms pre-perturbation, horizontal insets) in each area is stated below each corresponding population response. Scale bars denote 20 sp/s. Population activity between 60–250 ms (denoted by thick horizontal line) is compressed for visualization purposes. The 'American Pie' picture is reproduced with permission from Universal Studios.±DOI: http://dx.doi.org/10.7554/eLife.13141.003
+**Figure 1.:** Each task varied in how the monkeys were instructed to respond to perturbations applied to the limb: correct for the disturbance in the Posture Task (A), not required to respond in the Movie Task (B), move to a spatial target in the IN/OUT Task (C). (D) Perturbation response, in the cell’s preferred torque direction, in the Posture Task of a neuron in A5 and in M1. Tick marks denote action potentials, each row representing a separate trial. (E) Population responses in each cortical area (Mean$\pm$2SEM). Arrows depict when population signal surpassed threshold (baseline + 3SD) for >20 ms. Pre-perturbation baseline activity (-100:0 ms pre-perturbation, horizontal insets) in each area is stated below each corresponding population response. Scale bars denote 20 sp/s. Population activity between 60–250 ms (denoted by thick horizontal line) is compressed for visualization purposes. The 'American Pie' picture is reproduced with permission from Universal Studios.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A5:cyan, S1:green, M1:navy blue, PMd:red) and the locations of the inserted pins (black dots). We applied up to 0.5 mm random jitter on each data point for visualization purposes to avoid multiple sessions obscuring each other.DOI: http://dx.doi.org/10.7554/eLife.13141.004
+**Figure 1—figure supplement 1.:** (A5:cyan, S1:green, M1:navy blue, PMd:red) and the locations of the inserted pins (black dots). We applied up to 0.5 mm random jitter on each data point for visualization purposes to avoid multiple sessions obscuring each other.
 
-Although neurons in each cortical region responded to the applied perturbations, the magnitude of the perturbation-related responses varied across cortical regions (one way ANOVA, p<0.0001, F(df=4, error=439)=10.62, See Table 2 for details). A post-hoc analysis revealed that the response in S1 was significantly larger than responses in all other areas (p<0.001, Tukey's least significant difference (LSD) procedure). M1 activity was also significantly larger than that of A5 and PMd (p=0.002 and 0.0009 respectively). The perturbation response was not significantly different across other areas (p>0.07 in all other comparisons).10.7554/eLife.13141.006Table 2.Neural activity [mean ± SD] in each area, 50-100 ms post perturbation minus baseline, in response to the perturbation and across tasks. sp/s: spikes per second.DOI: http://dx.doi.org/10.7554/eLife.13141.006A5A2S1M1PMdPerturbation response30.3 ± 27.4 sp/s38.7 ± 26.1 sp/s68.5 ± 50.1 sp/s43.3 ± 27 sp/s26.9 ± 31.6 sp/sDifferential activity across areas (Movie)11.2 ± 12.8 sp/s5.6 ± 16.9 sp/s8.2 ± 20.8 sp/s14.4 ± 19 sp/s8.3 ± 18.3 sp/sChange ratio across areas (Movie)36%15%9%36%40%Differential activity across areas (IN/OUT)-0.3 ± 6.3 sp/s-2.2 ± 10.2 sp/s-1.1 ± 6 sp/s7.4 ± 16.5 sp/s3.2 ± 14.2 sp/s
+**Table 1.**
+ Number of neurons in each area recorded in each monkey and neurons with significant change in activity (two-sample t-test, p<0.05) in response to perturbation or across tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>A5</th>
+      <th>A2</th>
+      <th>S1</th>
+      <th>M1</th>
+      <th>PMd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>#cells in Monkey P</td>
+      <td>70</td>
+      <td>0</td>
+      <td>40</td>
+      <td>147</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>#cells in Monkey X</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>90</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>#cells in Monkey A</td>
+      <td>55</td>
+      <td>55</td>
+      <td>0</td>
+      <td>35</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>#cells with significant perturbation response (/recorded neurons) in the Posture Task</td>
+      <td>87/125</td>
+      <td>47/55</td>
+      <td>33/40</td>
+      <td>213/272</td>
+      <td>64/119</td>
+    </tr>
+    <tr>
+      <td>#cells with significant perturbation response recorded in both the Posture &amp; Movie Tasks</td>
+      <td>65/87</td>
+      <td>36/43</td>
+      <td>21/26</td>
+      <td>129/160</td>
+      <td>54/100</td>
+    </tr>
+    <tr>
+      <td>#cells with significant change in activity between Posture &amp; Movie Tasks (/significant perturbation response)</td>
+      <td>22/65</td>
+      <td>4/36</td>
+      <td>6/21</td>
+      <td>74/129</td>
+      <td>17/54</td>
+    </tr>
+    <tr>
+      <td>#cells with significant reduction in activity in Movie Task (/significant task effect)</td>
+      <td>20/22</td>
+      <td>3/4</td>
+      <td>5/6</td>
+      <td>65/74</td>
+      <td>15/17</td>
+    </tr>
+    <tr>
+      <td>#cells with significant perturbation response (/recorded neurons) in the IN-OUT Task</td>
+      <td>35/41</td>
+      <td>21/25</td>
+      <td>18/18</td>
+      <td>83/92</td>
+      <td>58/87</td>
+    </tr>
+    <tr>
+      <td>#cells with significant change in activity in the IN/OUT task (/significant perturbation response)</td>
+      <td>9/35</td>
+      <td>0/21</td>
+      <td>2/18</td>
+      <td>31/83</td>
+      <td>16/58</td>
+    </tr>
+    <tr>
+      <td>#cells with significant increase in activity in OUT target (/significant task effect)</td>
+      <td>4/9</td>
+      <td>NA</td>
+      <td>1/2</td>
+      <td>24/31</td>
+      <td>7/16</td>
+    </tr>
+  </tbody>
+</table>
+
+Although neurons in each cortical region responded to the applied perturbations, the magnitude of the perturbation-related responses varied across cortical regions (one way ANOVA, p<0.0001, F(df=4, error=439)=10.62, See Table 2 for details). A post-hoc analysis revealed that the response in S1 was significantly larger than responses in all other areas (p<0.001, Tukey's least significant difference (LSD) procedure). M1 activity was also significantly larger than that of A5 and PMd (p=0.002 and 0.0009 respectively). The perturbation response was not significantly different across other areas (p>0.07 in all other comparisons).
+
+**Table 2.**
+ Neural activity [mean ± SD] in each area, 50-100 ms post perturbation minus baseline, in response to the perturbation and across tasks. sp/s: spikes per second.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>A5</th>
+      <th>A2</th>
+      <th>S1</th>
+      <th>M1</th>
+      <th>PMd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Perturbation response</td>
+      <td>30.3 ± 27.4 sp/s</td>
+      <td>38.7 ± 26.1 sp/s</td>
+      <td>68.5 ± 50.1 sp/s</td>
+      <td>43.3 ± 27 sp/s</td>
+      <td>26.9 ± 31.6 sp/s</td>
+    </tr>
+    <tr>
+      <td>Differential activity across areas (Movie)</td>
+      <td>11.2 ± 12.8 sp/s</td>
+      <td>5.6 ± 16.9 sp/s</td>
+      <td>8.2 ± 20.8 sp/s</td>
+      <td>14.4 ± 19 sp/s</td>
+      <td>8.3 ± 18.3 sp/s</td>
+    </tr>
+    <tr>
+      <td>Change ratio across areas (Movie)</td>
+      <td>36%</td>
+      <td>15%</td>
+      <td>9%</td>
+      <td>36%</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>Differential activity across areas (IN/OUT)</td>
+      <td>-0.3 ± 6.3 sp/s</td>
+      <td>-2.2 ± 10.2 sp/s</td>
+      <td>-1.1 ± 6 sp/s</td>
+      <td>7.4 ± 16.5 sp/s</td>
+      <td>3.2 ± 14.2 sp/s</td>
+    </tr>
+  </tbody>
+</table>
 
 We explored how trial-by-trial changes in perturbation-related activity correlated with variations in the timing of the corrective response. Neural activity (50 to 100 ms post-perturbation) for each trial in the neuron’s preferred torque direction was compared to the time of joint reversal (max distance from start position in joint space before returning to central target). We found the activity of 22/213 M1 neurons correlated with kinematic changes in the postural perturbation task (p<0.05 threshold). This low number partially reflects our study design in which only a small number of trials were collected per load condition (n=10). Across the M1 population, the median correlation was -0.11 (p=0.002 in comparison with 0 using a Wilcoxon signed rank test). This low, although significant correlation is not surprising given that correlations between proximal arm muscle activity and motor corrections during similar time epochs are in the -0.2 or -0.3 range (Crevecoeur et al., 2013). Perturbation-related activity in the other cortical regions was not significantly correlated with motor corrections although the data samples were smaller than that for M1 (median correlation coefficient, A5: -0.014, A2: -0.001, S1: -0.11, PMd: 0.03, p>0.35 in all areas in comparison with 0 using a Wilcoxon signed rank test).
 
@@ -53,21 +203,21 @@ Figure 1E displays population signals of the cells with a significant perturbati
 
 Comparisons of perturbation-related activity to baseline activity for calculating the onset time is not sensitive to sample size, but assumes variance remains constant throughout time (see Materials and methods). As an alternate method, we used a one-sample running t-test to compare when the population signal was different from baseline activity (1 ms steps). We identified the first point in time that the evoked population activity became significantly different from 0, and remained significant for at least 20 ms (Figure 1E, the first point in time the lower edge of the shaded area depicting 2SE rises above the baseline level). Response onset times, using this technique were generally similar to those observed using the 3SD technique (A5:25 ms, A2:25 ms, S1:19 ms, M1:24 ms, PMd:34 ms). Thus, sensory feedback from the limb is rapidly transmitted throughout sensory and motor cortical regions.
 
-We used a bootstrap technique to identify the likely order of onset times for perturbation responses and task-dependency across cortical areas. To do so, we resampled (with replacement) cells in each population and then calculated the response onset and rank-order of each cortical area. We performed this procedure 10,000 times, and calculated the proportion of times each cortical area assumed a rank across the resampled data. The left panel in
+We used a bootstrap technique to identify the likely order of onset times for perturbation responses and task-dependency across cortical areas. To do so, we resampled (with replacement) cells in each population and then calculated the response onset and rank-order of each cortical area. We performed this procedure 10,000 times, and calculated the proportion of times each cortical area assumed a rank across the resampled data. The left panel in Figure 2A shows the percentage activity onset times in each area were ranked from 1st to 5th. This analysis revealed that primary somatosensory cortex was the first to respond (with S1 and A2 ranking 1st 95% of the time-S1:77% & A2:18%), premotor cortex was the last to respond (ranking last, 92%), and A5 and M1 responded in between these extremes.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig2-v2.jpg)
 
-**Figure 2.:** (A) Different areas were ranked based on their activity/task onset times across 10000 random iterations of data in each area. Proportion of times each area assumed a rank is plotted for each task. (B) Absolute and (C) cumulative distributions of change in activity across targets (in the IN/OUT task) in each area.DOI: http://dx.doi.org/10.7554/eLife.13141.007
+**Figure 2.:** (A) Different areas were ranked based on their activity/task onset times across 10000 random iterations of data in each area. Proportion of times each area assumed a rank is plotted for each task. (B) Absolute and (C) cumulative distributions of change in activity across targets (in the IN/OUT task) in each area.
 
-## Task engagement alters spatiotemporal pattern across sensory and motor cortex
+### Task engagement alters spatiotemporal pattern across sensory and motor cortex
 
 We next examined whether perturbation responses were altered when the animal was not engaged in a limb motor task. Perturbation responses during the Posture Task were compared with those observed when the monkey was sitting quietly watching a movie and not required to respond to the perturbation (Movie Task, Figure 1B, Omrani et al., 2014). In the Movie Task, the monkey watched a movie displayed on the virtual reality display as the robot moved the monkey’s unseen hand to the central target. At a random time point, a perturbation was applied to the limb (same load conditions as used in the Posture Task). Hand and joint motions were similar across tasks for the first 100 ms. Importantly, corrective movements, and corresponding long-latency muscle stretch responses in the Movie Task, were greatly diminished as compared to the Posture Task (average muscle response to the perturbation started 34 ms post-perturbation and differentiated across tasks 45 ms post-perturbation, Omrani et al., 2014).
 
-Activity of 416 neurons was recorded in the Posture and Movie Tasks, with 305 displaying significant perturbation responses in the Posture Task (refer to
+Activity of 416 neurons was recorded in the Posture and Movie Tasks, with 305 displaying significant perturbation responses in the Posture Task (refer to Table 1 for details on the number of neurons responsive to perturbation in each area). Perturbation-related activity was commonly modulated between the Posture and Movie Tasks (Figure 3A, refer to Table 1 for details on the number of neurons). In most cases, the response was smaller in the Movie Task (refer to Table 1 for details on the number of neurons).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig3-v2.jpg)
 
-**Figure 3.:** (A) Perturbation response across the Posture (green) and Movie (red) tasks (same neurons as in Figure 1D). (B) Population signal and (C) differential signal across tasks (Posture - Movie) in each cortical area. Each scale bar represents 20 sp/s.DOI: http://dx.doi.org/10.7554/eLife.13141.008
+**Figure 3.:** (A) Perturbation response across the Posture (green) and Movie (red) tasks (same neurons as in Figure 1D). (B) Population signal and (C) differential signal across tasks (Posture - Movie) in each cortical area. Each scale bar represents 20 sp/s.
 
 The magnitude of the perturbation response was significantly different across tasks and areas (mixed ANOVA with task as within-subject and area as between-subject variables, p<0.0001, F(1,300)=62.7 for the task effect and p=0.04, F(4,300)=2.5 for the interaction of task and area). The magnitude of the reduction was significant in A5, M1 and PMd (p<0.01, one sample t-test), and marginally not significant in S1 and A2 (p=0.086 & 0.052 respectively).
 
@@ -81,15 +231,15 @@ The running t-test was also used to identify when the population activity was di
 
 Finally, our bootstrap analysis identified the most likely order of response differentiation to be A5 (ranking 1st 89%, all other regions each less than 5%, middle panel Figure 2A), then M1, PMd, S1 and last A2 (ranking last 73%).
 
-## Task selection alters spatiotemporal pattern across sensory and motor cortex
+### Task selection alters spatiotemporal pattern across sensory and motor cortex
 
 Somatosensory feedback also permits rapid transition from one motor task to another (Hammond et al., 1956; Rothwell et al., 1980; Johansson and Flanagan, 2009). Our last experiment quantified how perturbation responses were altered across sensory and motor cortices when the load instructed the monkey to move to a second spatial target. Loads in this target selection task either pushed the hand into the spatial target (IN) or away from it (OUT), eliciting a larger corrective response in the latter condition(Figure 1C, Pruszynski et al., 2014). Note that in this condition, the monkey should always be engaged in the task but produce different magnitudes of response for each target. Differences in muscle responses between the IN and OUT targets begin ~85 ms after the applied load (See Materials and methods). The onset of this differential response is slower than our previous study (~70 ms, Pruszynski et al., 2014), which likely reflects that that study used a background load to prime the muscles, whereas the present study did not.
 
-Activity of 263 neurons was recorded in the IN and OUT tasks; with 215 displaying significant perturbation responses in the OUT target Task (refer to
+Activity of 263 neurons was recorded in the IN and OUT tasks; with 215 displaying significant perturbation responses in the OUT target Task (refer to Table 1 for details on the number of neurons responsive to perturbation in each area). Perturbation responses in M1 and PMd were commonly altered between the IN and OUT targets (Figure 4, refer to Table 1 for details on the number of neurons). Altered responses were also observed in A5, but rarely in somatosensory cortex. Significant increases in activity in the OUT target were predominantly observed in M1, but not in A5 and PMd (refer to Table 1 for details on the number of neurons).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig4-v2.jpg)
 
-**Figure 4.:** (A) Perturbation response for the OUT (navy blue) versus IN (cyan) targets (same neurons as in Figure 1D). (B) Population signal and (C) average differential signal across tasks (OUT-IN) in each cortical area. Each scale bar represents 20 sp/s.DOI: http://dx.doi.org/10.7554/eLife.13141.009
+**Figure 4.:** (A) Perturbation response for the OUT (navy blue) versus IN (cyan) targets (same neurons as in Figure 1D). (B) Population signal and (C) average differential signal across tasks (OUT-IN) in each cortical area. Each scale bar represents 20 sp/s.
 
 The perturbation magnitude was not significantly different across targets but was significantly different across areas (mixed ANOVA with target as within-subject and area as between-subject variables, p=0.2, F(1,211)=1.64 for the target effect and p=0.005, F(4,211)=3.85 for the interaction of target and area). We also directly compared the differential signal across targets (OUT-IN 50–100 ms post perturbation) using a one-way ANOVA (with area as the fixed variable and cells as random variables, p=0.005, F(4,211)=3.85). M1 was the only area, which had a significant difference in its activity across the two targets in the 50–100 ms period (one sample t-test, p=0.0001 in M1, p=0.08 in PMd and p>0.3 in A5, A2 and S1, refer to Table 2 for details on the differential activity in each area across tasks). A post-hoc analysis (LSD) revealed that M1 differential response between IN and OUT targets was significantly larger than in A5 (p=0.005), A2 (p=0.004) and S1 (p=0.017) but not different than that of PMd (p=0.08). The differential activity was not significantly different across other areas (p>0.1 in all other comparisons).
 
@@ -103,9 +253,11 @@ The fact that neurons could increase or decrease activity between the IN versus 
 
 Finally, the bootstrap technique identified the most likely order of response differentiation to be M1 first (86%, all others regions each less than 5%, except for A2 which was 8%, right panel in Figure 2A), PMd second (58%), followed by S1 and A5 (similar ratio of 35%) and finally A2 (55%).
 
+Figure 5 provides an overview of the main results on how perturbation-related activity is transmitted across sensory and motor cortical regions, and how this spatiotemporal pattern of activity is altered by behavioral context. The top panel highlights perturbation responses when the monkey is not rewarded for responding to the mechanical load, termed the 'default response'. In this case, limb feedback is rapidly transmitted across the cortex with the greatest and earliest activity in S1 quickly followed by responses in adjacent cortical regions. The middle panel displays how the perturbation response changes between the Movie and Posture Tasks, termed 'task engagement'. In this case, the perturbation response increases immediately in A5 and then in motor cortical regions with minimal effect in primary somatosensory cortex. Finally, the bottom panel displays how perturbation responses are altered when they cue the generation of a goal-directed movement, termed 'target selection'. In this case, perturbation-responses first increase in M1, and then PMd, with minimal effect in sensory areas until 150 ms.
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/13141/elife-13141-fig5-v2.jpg)
 
-**Figure 5.:** Default response (top panel), is represented by activity patterns in the Movie Task. Task engagement (middle panel), is represented by the differential signal between the Movie and Posture Tasks. Target selection (bottom panel), is represented by differential signal between the OUT and IN targets. Activity is plotted using a color map. In the default response, population response is capped at 70 sp/s. Differential signals are normalized to their maximum response in the Posture Task (au).DOI: http://dx.doi.org/10.7554/eLife.13141.010
+**Figure 5.:** Default response (top panel), is represented by activity patterns in the Movie Task. Task engagement (middle panel), is represented by the differential signal between the Movie and Posture Tasks. Target selection (bottom panel), is represented by differential signal between the OUT and IN targets. Activity is plotted using a color map. In the default response, population response is capped at 70 sp/s. Differential signals are normalized to their maximum response in the Posture Task (au).
 
 ## Discussion
 
@@ -125,11 +277,11 @@ Task-dependent changes in perturbation-related activity in cortex preceded corre
 
 ## Materials and methods
 
-## Subjects and apparatus
+### Subjects and apparatus
 
 Three male non-human primates (Macaca mulatta, 10–17 kg) were trained to perform whole limb visuomotor tasks while attached to an exoskeleton robot (KINARM, BKIN Technologies, Kingston, Ontario, Canada). The robot permitted combined flexion and extension movements of the shoulder and elbow in the horizontal plane and applied loads to the shoulder and/or the elbow independently. Two monkeys (Monkey X & A) used a right-arm robot and one monkey (Monkey P) used a left-arm robot. Targets and hand visual feedback were presented to the monkeys, in the horizontal plane, using an overhead monitor and a semitransparent mirror. Hand position was represented by a white circle (5 mm diameter) positioned at the tip of the index finger. The Queen’s University Animal Care Committee approved all experimental procedures (Protocol 1348).
 
-## Behavioral tasks
+### Behavioral tasks
 
 Throughout the experiment different combinations of shoulder and/or elbow torques were applied to the monkey’s arm. Three tasks were performed and varied in how the monkeys were required to respond to the perturbations. In the Posture Task (Herter et al., 2007), the monkey was instructed to maintain its hand at a central target (visual: 12 mm diameter, acceptable window: 16 mm diameter). At a random time (1000–1500 ms), the limb was perturbed with one of nine combinations of loads applied to the shoulder and/or elbow (flexor, extensor or null), and the monkey had to return its hand to the target within 750 ms of the perturbation time (Figure 1A). Each perturbation lasted 300ms and the size of the load varied with the size of the monkey (Monkey P & X, 0.24 Nm and monkey A, 0.32 Nm). Load magnitudes were adjusted in the bi-articular load directions to compensate for larger hand motions induced in these directions (Herter et al., 2007). Each load combination was presented randomly in a block of trials and the monkey was required to complete 10 blocks in a set.
 
@@ -139,7 +291,7 @@ In the IN/OUT task (Pruszynski et al., 2014), the monkey started each trial by m
 
 Normally an experimental session was composed of a fixed order of tasks: first the Posture Task, then the Movie Task, followed by another repeat of the Posture Task and finally the IN/OUT task. A reduced version of the experiment was performed near the end of the recording session; in which one set of the Posture and the Movie Tasks were randomly presented followed by one set of the IN/OUT task. In recording sessions from S1, receptive field properties of the neurons were investigated following the last experimental block.
 
-## Data collection
+### Data collection
 
 Neural data was recorded from shoulder/elbow regions of the primary somatosensory areas 1&3 (S1), primary somatosensory area 2 (A2), parietal area 5 (A5), primary motor cortex (M1) and dorsal premotor cortex (PMd), using standard extracellular recording techniques (Herter et al., 2007; Omrani et al., 2014; Pruszynski et al., 2014). The neural data was initially sorted online for single units (Plexon Inc., Dallas), then confirmed and examined further offline using the Plexon offline sorter.
 
@@ -149,7 +301,7 @@ In one monkey (P), we verified our recording areas post-mortem. We used Paraform
 
 We also recorded electromyographic (EMG) activity of proximal arm muscles during the tasks. The EMG recordings were scored from 1 to 5 (based on recording quality, gain of the signal, signal-to-noise ratio, and whether the muscle looked active in the task). Muscles that scored 3 and higher were included in our analysis. EMG signals were band-pass filtered (10–150 Hz, two-pass, third-order Butterworth) and full-wave rectified. Each trial was aligned based on the perturbation onset. The EMG data related to posture and movie tasks were presented previously (Omrani et al., 2014). For the IN/OUT task, we recorded EMG from 3 to 6 proximal limb muscles in 9 sessions in one monkey (Monkey P). Nineteen samples (representing all the major muscles involved in flexion and extension of the shoulder and elbow joints) were identified as good quality (score 3 or higher on subjective rating scale out of 5) and had significant perturbation responses (p<0.05).
 
-## Data analysis
+### Data analysis
 
 Spike times were extracted from the Plexon files into Matlab (Mathworks, Natick). Spike-density functions were generated by convolving spike time-stamps with asymmetric double-exponential kernels (1 ms rise- and 20 ms fall-time, [Thompson et al., 1996]). We consider cell activity 50–100 ms post-perturbation corresponding roughly to the long-latency epoch for muscle activity. The load combination with the largest response (50 to 100 ms post-perturbation) was then selected as the neuron’s preferred-torque direction (PTD). The neuron’s activity in its PTD was then compared to its activity in the null load condition (catch trial) using a two-sample t-test. If the comparison was significant, the activity of the cell in its PTD was used for further analyses (SPSS, IBM, New York).
 

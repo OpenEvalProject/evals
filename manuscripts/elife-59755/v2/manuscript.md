@@ -45,21 +45,500 @@ Bayesian geostatistical modeling is one of the most rigorous inferential approac
 
 A total of 2690 references were identified through systematically reviewing peer-review literatures, and 13 additional references were gathered from other sources. According to the inclusion and exclusion criteria, 168 records were included, resulted in a total of 580 ADM1-level surveys in 174 areas, 210 ADM2-level surveys in 142 areas, 53 ADM3-level surveys in 51 areas, and 251 point-level surveys at 207 locations in five endemic countries (i.e., Cambodia, Lao PDR, Myanmar, Thailand, and Vietnam) of Southeast Asia (Figure 1). Around 70% and 15% of surveys were conducted in Thailand and Lao PDR, respectively. Only two relevant records were obtained from Myanmar. To avoid large estimated errors, we did not include this data in the final geostatistical analysis. All surveys were conducted after 1970, with around 75% done after 1998. Most surveys (95%) are community based. Around 40% of surveys used the Kato–Katz technique for diagnosis, while another 42% did not specify diagnostic approaches. Mean prevalence calculated directly from survey data was 16.74% across the study region. A summary of survey data is listed in Table 1, and survey locations and observed prevalence in each period are shown in Figure 2. Area-level data cover all regions in Thailand and Lao PDR, and most regions in Cambodia and Vietnam, while point-referenced data are absent in most areas of Vietnam, the western part of Cambodia and southern part of Thailand. Around 70% of eligible literatures got a score equal or more than 7, indicating an overall good quality of eligible literatures in our study (Figure 2—figure supplement 1).
 
-Seven variables were selected for the final model through the Bayesian variable selection process (Table 2). The infection risk was 2.61 (95% BCI: 2.10–3.42) times in the community as much as that in school-aged children. Surveys using FECT (formalin-ethyl acetate concentration technique) as the diagnostic method showed a lower prevalence (OR 0.76, 95% BCI: 0.61–0.93) compared to that using Kato–Katz method, while no significant difference was found between Kato–Katz and the other diagnostic methods. Human influence index and elevation were negatively correlated with the infection risk. Each unit increase of the HII index was associated with 0.01 (95% BCI: 0.003–0.02) decrease in the logit of the prevalence. And increase in 1 m in elevation was associated with the 0.003 (95% BCI: 0.001–0.005) decrease in the logit of the prevalence. The spatial range was estimated as 83.55 km (95% BCI: 81.34–86.61), the spatial variance σϕ2 was 12.59 (95% BCI: 11.96–13.56), the variance of beta-likelihood σβ2 was 0.15 (95% BCI: 0.14–0.15), and the temporal correlation coefficient ρ was 0.66 (95% BCI: 0.65–0.67). Model validation showed that our model was able to correctly estimate 79.61% of locations within the 95% BCI, indicating the model had a reasonable capacity of prediction accuracy. The ME, MAE, and MSE were 0.24%, 9.06%, and 2.38%, respectively, in the final model, while they were −7.14%, 16.67%, and 5.09%, respectively, in the model only based on point-referenced data, suggesting that the performance of the final model was better than the model only based on point-referenced data. On the other hand, Monte Carlo test for preferential sampling suggested that preferential sampling may exist for survey locations in one third (6/18) of the survey years (Figure 2—source data 2).
+![Figure 1.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig1-v2.jpg)
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig1-figsupp1-v2.jpg)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig2-v2.jpg)
+
+**Figure 2.:** (A) 1978–1982, (B) 1983–1987, (C) 1988–1992, (D) 1993–1997, (E) 1998–2002, (F) 2003–2007, (G) 2008–2012, and (H) 2013–2018.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig2-figsupp1-v2.jpg)
+
+**Table 1.**
+ Overview of opisthorchiasis survey data in Southeast Asia.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Cambodia</th>
+      <th>Lao PDR</th>
+      <th>Myanmar</th>
+      <th>Thailand</th>
+      <th>Vietnam</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Relevant papers</td>
+      <td>14</td>
+      <td>43</td>
+      <td>2</td>
+      <td>97</td>
+      <td>15</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td>Total surveys/locations</td>
+      <td>91/73</td>
+      <td>156/99</td>
+      <td>6/6</td>
+      <td>770/335</td>
+      <td>71/64</td>
+      <td>1094/574</td>
+    </tr>
+    <tr>
+      <td colspan="7">Survey type (surveys/locations)</td>
+    </tr>
+    <tr>
+      <td>School</td>
+      <td>33/31</td>
+      <td>4/4</td>
+      <td>0/0</td>
+      <td>13/13</td>
+      <td>0/0</td>
+      <td>50/48</td>
+    </tr>
+    <tr>
+      <td>Community</td>
+      <td>58/46</td>
+      <td>152/94</td>
+      <td>6/6</td>
+      <td>757/325</td>
+      <td>71/64</td>
+      <td>1044/535</td>
+    </tr>
+    <tr>
+      <td colspan="7">Location type (surveys/locations)</td>
+    </tr>
+    <tr>
+      <td>Point-level</td>
+      <td>55/43</td>
+      <td>63/51</td>
+      <td>3/3</td>
+      <td>125/105</td>
+      <td>5/5</td>
+      <td>251/207</td>
+    </tr>
+    <tr>
+      <td>ADM3-level</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>53/51</td>
+      <td>0/0</td>
+      <td>53/51</td>
+    </tr>
+    <tr>
+      <td>ADM2-level</td>
+      <td>14/11</td>
+      <td>35/27</td>
+      <td>0/0</td>
+      <td>159/102</td>
+      <td>2/2</td>
+      <td>210/142</td>
+    </tr>
+    <tr>
+      <td>ADM1-level</td>
+      <td>22/19</td>
+      <td>58/18</td>
+      <td>3/3</td>
+      <td>433/77</td>
+      <td>64/57</td>
+      <td>580/174</td>
+    </tr>
+    <tr>
+      <td>Period</td>
+      <td>1998–2016</td>
+      <td>1989–2016</td>
+      <td>2015–2016</td>
+      <td>1978–2018</td>
+      <td>1991–2015</td>
+      <td>1978–2018</td>
+    </tr>
+    <tr>
+      <td colspan="7">Year of survey (surveys/locations)</td>
+    </tr>
+    <tr>
+      <td>1978–1982</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>123/115</td>
+      <td>0/0</td>
+      <td>123/115</td>
+    </tr>
+    <tr>
+      <td>1983–1987</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>7/6</td>
+      <td>0/0</td>
+      <td>7/6</td>
+    </tr>
+    <tr>
+      <td>1988–1992</td>
+      <td>0/0</td>
+      <td>2/2</td>
+      <td>0/0</td>
+      <td>97/89</td>
+      <td>1/1</td>
+      <td>100/92</td>
+    </tr>
+    <tr>
+      <td>1993–1997</td>
+      <td>0/0</td>
+      <td>9/5</td>
+      <td>0/0</td>
+      <td>18/18</td>
+      <td>6/2</td>
+      <td>33/25</td>
+    </tr>
+    <tr>
+      <td>1998–2002</td>
+      <td>25/22</td>
+      <td>28/22</td>
+      <td>0/0</td>
+      <td>103/103</td>
+      <td>2/2</td>
+      <td>158/149</td>
+    </tr>
+    <tr>
+      <td>2003–2007</td>
+      <td>3/2</td>
+      <td>26/24</td>
+      <td>0/0</td>
+      <td>15/15</td>
+      <td>1/1</td>
+      <td>45/42</td>
+    </tr>
+    <tr>
+      <td>2008–2012</td>
+      <td>62/48</td>
+      <td>75/54</td>
+      <td>0/0</td>
+      <td>166/153</td>
+      <td>9/8</td>
+      <td>312/263</td>
+    </tr>
+    <tr>
+      <td>2013–2018</td>
+      <td>1/1</td>
+      <td>16/16</td>
+      <td>6/6</td>
+      <td>241/201</td>
+      <td>52/52</td>
+      <td>316/276</td>
+    </tr>
+    <tr>
+      <td colspan="7">Diagnostic methods (surveys/locations)</td>
+    </tr>
+    <tr>
+      <td>Kato–Katz</td>
+      <td>86/70</td>
+      <td>128/83</td>
+      <td>3/3</td>
+      <td>212/166</td>
+      <td>7/7</td>
+      <td>436/329</td>
+    </tr>
+    <tr>
+      <td>FECT</td>
+      <td>2/2</td>
+      <td>8/7</td>
+      <td>3/3</td>
+      <td>109/99</td>
+      <td>0/0</td>
+      <td>122/111</td>
+    </tr>
+    <tr>
+      <td>Stoll’s</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>0/0</td>
+      <td>38/28</td>
+      <td>0/0</td>
+      <td>38/28</td>
+    </tr>
+    <tr>
+      <td>PCR</td>
+      <td>0/0</td>
+      <td>5/4</td>
+      <td>0/0</td>
+      <td>1/1</td>
+      <td>0/0</td>
+      <td>6/5</td>
+    </tr>
+    <tr>
+      <td>Combined</td>
+      <td>3/3</td>
+      <td>14/13</td>
+      <td>0/0</td>
+      <td>14/12</td>
+      <td>0/0</td>
+      <td>31/28</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>0/0</td>
+      <td>1/1</td>
+      <td>0/0</td>
+      <td>6/6</td>
+      <td>0/0</td>
+      <td>7/7</td>
+    </tr>
+    <tr>
+      <td>NS*</td>
+      <td>0/0</td>
+      <td>5/5</td>
+      <td>0/0</td>
+      <td>391/111</td>
+      <td>64/57</td>
+      <td>460/173</td>
+    </tr>
+    <tr>
+      <td>Mean prevalence</td>
+      <td>10.56%</td>
+      <td>39.50%</td>
+      <td>4.93%</td>
+      <td>14.25%</td>
+      <td>2.65%</td>
+      <td>16.74%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*NS: not stated or missing._
+
+Seven variables were selected for the final model through the Bayesian variable selection process (Table 2). The infection risk was 2.61 (95% BCI: 2.10–3.42) times in the community as much as that in school-aged children. Surveys using FECT (formalin-ethyl acetate concentration technique) as the diagnostic method showed a lower prevalence (OR 0.76, 95% BCI: 0.61–0.93) compared to that using Kato–Katz method, while no significant difference was found between Kato–Katz and the other diagnostic methods. Human influence index and elevation were negatively correlated with the infection risk. Each unit increase of the HII index was associated with 0.01 (95% BCI: 0.003–0.02) decrease in the logit of the prevalence. And increase in 1 m in elevation was associated with the 0.003 (95% BCI: 0.001–0.005) decrease in the logit of the prevalence. The spatial range was estimated as 83.55 km (95% BCI: 81.34–86.61), the spatial variance $\sigma_{ϕ}^{2}$ was 12.59 (95% BCI: 11.96–13.56), the variance of beta-likelihood $\sigma_{\beta}^{2}$ was 0.15 (95% BCI: 0.14–0.15), and the temporal correlation coefficient $ρ$ was 0.66 (95% BCI: 0.65–0.67). Model validation showed that our model was able to correctly estimate 79.61% of locations within the 95% BCI, indicating the model had a reasonable capacity of prediction accuracy. The ME, MAE, and MSE were 0.24%, 9.06%, and 2.38%, respectively, in the final model, while they were −7.14%, 16.67%, and 5.09%, respectively, in the model only based on point-referenced data, suggesting that the performance of the final model was better than the model only based on point-referenced data. On the other hand, Monte Carlo test for preferential sampling suggested that preferential sampling may exist for survey locations in one third (6/18) of the survey years (Figure 2—source data 2).
+
+**Table 2.**
+ Posterior summaries of model parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimated median (95% BCI)</th>
+      <th>OR</th>
+      <th>Prob (%)*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>−4.51 (−5.08, –3.94)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Survey type</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>School-based survey</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Community-based survey</td>
+      <td>0.96 (0.70, 1.23)</td>
+      <td>2.61 (2.10, 3.42)</td>
+      <td>&gt;99.99</td>
+    </tr>
+    <tr>
+      <td>Diagnostic methods</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Kato–Katz</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>FECT</td>
+      <td>−0.28 (–0.49, –0.07)</td>
+      <td>0.76 (0.61, 0.93)</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Other methods</td>
+      <td>0.01 (–0.07, 0.10)</td>
+      <td>1.01 (0.93, 1.12)</td>
+      <td>64.20</td>
+    </tr>
+    <tr>
+      <td>Land surface temperature (LST) in the daytime (°C)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>&lt;30.65</td>
+      <td>Ref</td>
+      <td>Ref</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>30.65–32.07</td>
+      <td>0.25 (–0.001, 0.50)</td>
+      <td>1.28 (0.999, 1.65)</td>
+      <td>97.40</td>
+    </tr>
+    <tr>
+      <td>&gt;32.07</td>
+      <td>0.07 (–0.18, 0.33)</td>
+      <td>1.07 (0.84, 1.39)</td>
+      <td>73.40</td>
+    </tr>
+    <tr>
+      <td>Human influence index</td>
+      <td>−0.01 (–0.02, –0.003)</td>
+      <td>0.99 (0.98, 1.00)</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Distance to the nearest open water bodies (km)</td>
+      <td>0.24 (–1.45, 1.94)</td>
+      <td>1.27 (0.23, 6.96)</td>
+      <td>60.20</td>
+    </tr>
+    <tr>
+      <td>Elevation (m)</td>
+      <td>−0.003 (–0.005,–0.001)</td>
+      <td>0.997 (0.995, 0.999)</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Travel time to the nearest big city (min)</td>
+      <td>0.0001 (–0.002, 0.002)</td>
+      <td>1.00 (0.998, 1.002)</td>
+      <td>56.60</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Posterior probability of OR > 1._
 
 The estimated risk maps of O. viverrini infection in different selected years (i.e., 1978, 1983, 1988, 1993, 1998, 2003, 2008, 2013, and 2018) are presented in Figure 3. In 2018, the high infection risk (with prevalence >25%) was mainly estimated in regions of the southern, the central, and the north-central parts of Lao PDR, some areas in the east-central parts of Cambodia, and some areas of the northeastern and the northern parts of Thailand. The southern part of Thailand, the northern part of Lao PDR, and the western part of Cambodia showed low risk estimates (with prevalence <5%) of O. viverrini infection. The central and several southern parts of Vietnam showed low to moderate risk of O. viverrini infection, while there was no evidence of O. viverrini in other parts of Vietnam. High estimation uncertainty was mainly present in the central part of Lao PDR, the northern and the eastern parts of Thailand, and the central part of Cambodia and Vietnam (Figure 4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig3-v2.jpg)
+
+**Figure 3.:** Estimated prevalence based on the median of the posterior estimated distribution of infection risk in (A) 1978, (B) 1983, (C) 1988, (D) 1993, (E) 1998, (F) 2003, (G) 2008, (H) 2013, and (I) 2018.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The midpoint values of the intervals, (B) the lower limits, and (C) the upper limits of the intervals were assigned to prevalence.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig4-v2.jpg)
 
-**Figure 4.:** (A) 1978, (B) 1983, (C) 1988, (D) 1993, (E) 1998, (F) 2003, (G) 2008, (H) 2013, and (I) 2018.Figure 4—source data 1.
+**Figure 4.:** (A) 1978, (B) 1983, (C) 1988, (D) 1993, (E) 1998, (F) 2003, (G) 2008, (H) 2013, and (I) 2018.
 
 In addition, the infection risk varies over time across the study region (Figure 5). Areas of northern Thailand showed an increasing trend in periods 1978–1988 and 1993–2003, while most areas of the country presented a considerable decrease of infection risk after 2008. The infection risk first increased and then decreased in areas of the north, the central, and the southern parts of Lao PDR and the central parts of Vietnam. The east-central and western part of Cambodia showed an increasing trend in recent years.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig5-v2.jpg)
 
-**Figure 5.:** O. viverrini infection risk across time periods.Changes were calculated by the median of the posterior estimated distribution of infection risk for the latter time period minus that for the former time period divided by that for the former time period. The risk changes (A) between 1978 and 2018; (B) between 1978 and 1983; (C) between 1983 and 1988; (D) between 1988 and 1993; (E) between 1993 and 1998; (F) between 1998 and 2003; (G) between 2003 and 2008; (H) between 2008 and 2013; and (I) between 2013 and 2018 (source data: Figure 5—source data 1).Figure 5—source data 1.O. viverrini infection risk across time periods.
+**Figure 5.:** Changes were calculated by the median of the posterior estimated distribution of infection risk for the latter time period minus that for the former time period divided by that for the former time period. The risk changes (A) between 1978 and 2018; (B) between 1978 and 1983; (C) between 1983 and 1988; (D) between 1988 and 1993; (E) between 1993 and 1998; (F) between 1998 and 2003; (G) between 2003 and 2008; (H) between 2008 and 2013; and (I) between 2013 and 2018 (source data: Figure 5—source data 1).
 
 The population-adjusted estimated prevalence over the study region presents a trend down after 1995 (Figure 6 and Figure 6—figure supplements 1–9). At the country level, the estimated prevalence in Thailand showed a fast decline after 1995 and took on a gradually decreasing change in Cambodia. In Lao PDR, the overall prevalence maintained quite stable before 1990 and decreased slightly between 1990 and 1997, increased significantly after 1997, then decreased from 2006, and became stable after 2011. The prevalence is stable in Vietnam during the whole study period. We estimated that in 2018, the overall population-adjusted estimated prevalence of O. viverrini infection in the whole study region was 6.57% (95% BCI: 5.35–7.99%), corresponding to 12.39 million (95% BCI: 10.10–15.06) infected individuals (Table 3). Lao PDR showed the highest prevalence (35.21%, 95% BCI: 28.50–40.70%), followed by Thailand (9.71%, 95% BCI: 7.98–12.17%), Cambodia (6.15%, 95% BCI: 2.41–11.73%), and Vietnam (2.15%, 95% BCI: 0.73–4.40%). Thailand had the largest numbers of individuals estimated to be infected with O. viverrini (6.71 million, 95% BCI: 5.51–8.41), followed by Lao PDR (2.45 million, 95% BCI: 1.98–2.83), Vietnam (2.07 million, 95% BCI: 0.70–4.24), and Cambodia (1.00 million, 95% BCI: 0.39–1.90).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-v2.jpg)
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 7.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp7-v2.jpg)
+
+**Figure 6—figure supplement 7.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 8.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp8-v2.jpg)
+
+**Figure 6—figure supplement 8.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+![Figure 6—figure supplement 9.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig6-figsupp9-v2.jpg)
+
+**Figure 6—figure supplement 9.:** (A) Cambodia, (B) Laos, (C) Thailand, and (D) Vietnam.
+
+**Table 3.**
+ Population-adjusted estimated prevalence and number of individuals infected with O. viverrini in endemic countries of Southeast Asia in 2018*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Population (×103)</th>
+      <th>Prevalence (%)</th>
+      <th>No. infected (×103)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cambodia</td>
+      <td>16227.39</td>
+      <td>6.15 (2.41, 11.73)</td>
+      <td>997.95 (390.46, 1903.46)</td>
+    </tr>
+    <tr>
+      <td>Lao PDR</td>
+      <td>6960.28</td>
+      <td>35.21 (28.50, 40.70)</td>
+      <td>2450.54 (1983.38, 2832.96)</td>
+    </tr>
+    <tr>
+      <td>Thailand</td>
+      <td>69112.64</td>
+      <td>9.71 (7.98, 12.17)</td>
+      <td>6708.68 (5514.87, 8411.98)</td>
+    </tr>
+    <tr>
+      <td>Vietnam</td>
+      <td>96421.69</td>
+      <td>2.15 (0.73, 4.40)</td>
+      <td>2073.72 (703.46, 4244.85)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>188722.01</td>
+      <td>6.57 (5.35, 7.98)</td>
+      <td>12389.69 (10099.29, 15060.18)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Estimates were based on gridded population of 2018 and the median and 95% BCI of the posterior estimated distribution of the infection risk in 2018._
 
 ## Discussion
 
@@ -85,7 +564,52 @@ In conclusion, this study contributes to better understand the spatial-temporal 
 
 ## Materials and methods
 
-## Search strategy, selection criteria, and data extraction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ArcGIS for Desktop Basic</td>
+      <td>ArcGIS for Desktop Basic</td>
+      <td>RRID:SCR_011081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R-INLA Project</td>
+      <td>R-INLA Project</td>
+      <td></td>
+      <td>https://www.r-inla.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘PStestR’ R Package</td>
+      <td>‘PStestR’ R Package</td>
+      <td></td>
+      <td>https://github.com/joenomiddlename/PStestR</td>
+    </tr>
+  </tbody>
+</table>
+
+### Search strategy, selection criteria, and data extraction
 
 We collected relevant publications reporting prevalence data of opisthorchiasis in Southeast Asia through a systematic review (registered in the International Prospective Register of Systematic Reviews, PROSPERO, No.CRD42019136281), and reported our systematic review according to the PRISMA guidelines (Supplementary file 1A; Moher et al., 2010). We searched PubMed and ISI Web of Science from inception to February 9, 2020, with search terms: (liver fluke* OR Opisthorchi*) AND (Southeast Asia OR Indonesia OR (Myanmar OR Burma) OR Thailand OR Vietnam OR Malaysia OR Philippines OR Lao PDR OR Cambodia OR Timor OR Brunei OR Singapore). We set no limitations on language, date of survey, or study design in our search strategy. For literatures not found by the above methods, we also reviewed reports from governments or Ministry of Health, theses, relevant books, and documents.
 
@@ -93,30 +617,28 @@ We followed a protocol (Figure 1—figure supplement 1) for inclusion, exclusion
 
 We followed the GATHER checklist (Supplementary file 1B; Stevens et al., 2016) for the data extraction. Detailed information of records was extracted into a database, which includes literature information (e.g., journal, authors, publication date, title, volume, and issue), survey information (e.g., survey type: community- or school-based, and year of survey), location information (e.g., location name, location type, and coordinates), and disease-related data (e.g., species of parasites, diagnostic method, population age, number of examined, number of positive, and percentage of positive). The coordinates of the survey locations were obtained from Google Maps (https://www.google.com/maps/). For surveys reported prevalence in intervals without exact observed values, the midpoints of the intervals were assigned.
 
-## Environmental, socioeconomic, and demographic data
+### Environmental, socioeconomic, and demographic data
 
 The environmental data (i.e., annual precipitation, distance to the nearest open water bodies, elevation, land cover, land surface temperature [LST] in the daytime and at night, and normalized difference vegetation index [NDVI]), socioeconomic data (i.e., human influence index, survey type, and travel time to the nearest big city), and demographic data of Southeast Asia were downloaded from open data sources (Figure 7—source data 1). Land cover data was summarized by the most frequent category within each pixel over the period of 2001–2018. We combined similar land cover classes and re-grouped them into five categories: (i) croplands; (ii) forests; (iii) shrub and grass; (iv) urban; and (v) others. LST in the daytime and at night, as well as NDVI were averaged over the period of 2000–2018. All data were aligned over a 5 × 5 km grid across the study region (Figure 7). Data at point-referenced survey locations were extracted. We linked the data to the divisions (i.e., ADM1, ADM2, or ADM3) reported aggregated outcome of interest (i.e., infection prevalence) by averaging them within the corresponding divisions. The above data processing was done using the package ‘ratser’ (https://cran.r-project.org/web/packages/raster) through R (version 3.5.0).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59755/elife-59755-fig7-v2.jpg)
 
-**Figure 7.:** Figure 7—source data 1.
-
-## Model fitting and variable selection
+### Model fitting and variable selection
 
 As our outcome of interest derived from both point-referenced and area-aggregated surveys, a bivariate Bayesian geostatistical joint modeling approach was applied to analyze the area-level and point-level survey data together (Moraga et al., 2017; Utazi et al., 2019), and account for both disease data reporting numbers of examined and positive, and those reporting only prevalence.
 
-We defined pit the probability of infection at location i and time period t, where i is the index either for the location of point-referenced data or of the area for area-level data. Based on the probability theory, for data reported with numbers of examined and positive, we assumed that the number of examined Yit followed a binomial distribution Yit~Bin(pit,Nit), where Nit denoted the number of examined; and for data only reported with the observed prevalence, we assumed that the observed prevalence obit followed a beta distribution obit~Be(pit,σβ2). The period of this study was from 1978 to 2018. We modeled predictors on a logit scale of pit.
+We defined $p_{it}$ the probability of infection at location $i$ and time period $t$, where $i$ is the index either for the location of point-referenced data or of the area for area-level data. Based on the probability theory, for data reported with numbers of examined and positive, we assumed that the number of examined $Y_{it}$ followed a binomial distribution $Y_{it}~Bin(p_{it},N_{it})$, where $N_{it}$ denoted the number of examined; and for data only reported with the observed prevalence, we assumed that the observed prevalence $ob_{it}$ followed a beta distribution $ob_{it}~Be(p_{it},\sigma_{\beta}^{2})$. The period of this study was from 1978 to 2018. We modeled predictors on a logit scale of $p_{it}$.
 
-We referred to the method proposed by Cameletti and colleagues (Krainski, 2019; Cameletti et al., 2013) to build a spatial-temporal model combined with covariates, which was defined as an SPDE (Stochastic Partial Differential Equation) model for the spatial domain and an AR1 model for the time dimension. A standard grid of 5 × 5 km2 was overlaid to each survey area resulting in a certain number of pixels representing the area. We assumed that survey locations and pixels within survey areas shared the same spatial-temporal process. In addition, we assumed the infection risk the same within 1-year period for the same areas. Different observations from the same year in the same areas can be treated as realizations of the randomized spatial-temporal process. Let i=1,…,nA,nA+1,…,nA+np, where nA is the total number of areas for area-level surveys and np is the total number of locations for point-referenced surveys. Regarding area-level data, logit(pit)=β0+xit′∼β+|Ai|−1∫Aiω(s,t)dsdt, where i=1,…,nA, xit∼ the vectors of covariate values for ith area in time period t with xit'~=Ai-1∫Aixs,tdsdt and β0 and β are the intercept and the corresponding regression coefficients. Ai=∫Ai1ds is the size of the ith area and ωs,t the spatial-temporal random effects of pixels within the area. For point-referenced data, logitpit=β0+xit'β+ωsi,t, where i=nA+1,…,nA+np, xit' is the vectors of covariate values and ωsi,t is the spatial-temporal random effect for ith location in time period t. To decrease the computational burden, under the SPDE framework, we built the GMRF on regular temporal knots, that is, ω=(ωt=1978, ωt=1983,ωt=1988,ωt=1993, ωt=1998,ωt=2003,ωt=2008, ωt=2013,ωt=2018)' (Cameletti et al., 2013; Krainski, 2019). We assumed the spatio-temporal random effect ωs,t follow a zero-mean Gaussian distribution, that is, ω~GP(0,Kspace⊗Ktime), where the spatial covariance matrix Kspace was defined as a stationary Matérn covariance function σϕ2κDvKvκD/(Γ(v)2v-1) and the temporal covariance matrix as Ktime=ρ|tu-to| with |ρ|<1, corresponding to the autoregressive stochastic process with first order (AR1). And the spatio-temporal random effect ωs,t was assumed independent of each other in different times and locations, that is,Cov(ωit,ωjt′)={l0, if t≠t′σϕ2, if t=t′. Here D donates the Euclidean distance matrix, κ is a scaling parameter, and the range r=8ν/κ, representing the distance at which spatial correlation becomes negligible (<0.1), and Kν is the modified Bessel function of the second kind, with the smoothness parameter  ν fixed at 1. The latent fields corresponding to other years are approximated by projection of ω using the B-spline basis function of degree two, that is, Bi,1(t)={1, ti≤t<ti+10, otherwise and  Bi,mt=t-titi+m-1-tiBi,m-1t+ti+m-tti+m-ti+1Bi+1,m-1t, where m is the degree of two (Krainski, 2019; Cameletti et al., 2013).
+We referred to the method proposed by Cameletti and colleagues (Krainski, 2019; Cameletti et al., 2013) to build a spatial-temporal model combined with covariates, which was defined as an SPDE (Stochastic Partial Differential Equation) model for the spatial domain and an AR1 model for the time dimension. A standard grid of 5 × 5 km2 was overlaid to each survey area resulting in a certain number of pixels representing the area. We assumed that survey locations and pixels within survey areas shared the same spatial-temporal process. In addition, we assumed the infection risk the same within 1-year period for the same areas. Different observations from the same year in the same areas can be treated as realizations of the randomized spatial-temporal process. Let $i=1,…,n_{A},n_{A}+1,…,n_{A}+n_{p}$, where $n_{A}$ is the total number of areas for area-level surveys and $n_{p}$ is the total number of locations for point-referenced surveys. Regarding area-level data, $logit(p_{it})=\beta_{0}+x_{it}^{′}∼\beta+|A_{i}|^{−1}\int_{A_{i}}\omega(s,t)dsdt$, where $i=1,…,n_{A}$, $x_{it}∼$ the vectors of covariate values for $i^{th}$ area in time period $t$ with $x_{it}^{'}~=A_{i}^{-1}\int_{A_{i}}xs,tdsdt$ and $\beta_{0}$ and $\beta$ are the intercept and the corresponding regression coefficients. $A_{i}=\int_{A_{i}}1ds$ is the size of the $i^{th}$ area and $\omegas,t$ the spatial-temporal random effects of pixels within the area. For point-referenced data, $logitp_{it}=\beta_{0}+x_{it}^{'}\beta+\omegas_{i},t$, where $i=n_{A}+1,…,n_{A}+n_{p}$, $x_{it}^{'}$ is the vectors of covariate values and $\omegas_{i},t$ is the spatial-temporal random effect for $i^{th}$ location in time period $t$. To decrease the computational burden, under the SPDE framework, we built the GMRF on regular temporal knots, that is, $\omega=(\omega_{t=1978},\omega_{t=1983},\omega_{t=1988},\omega_{t=1993},\omega_{t=1998},\omega_{t=2003},\omega_{t=2008},\omega_{t=2013},\omega_{t=2018})'$ (Cameletti et al., 2013; Krainski, 2019). We assumed the spatio-temporal random effect $\omegas,t$ follow a zero-mean Gaussian distribution, that is, $\omega~GP(0,K_{space}⊗K_{time})$, where the spatial covariance matrix $K_{space}$ was defined as a stationary Matérn covariance function $\sigma_{ϕ}^{2}κD^{v}K_{v}κD/(Γ(v)2^{v-1})$ and the temporal covariance matrix as $K_{time}=ρ^{|t_{u}-t_{o}|}$ with $|ρ|<1$, corresponding to the autoregressive stochastic process with first order (AR1). And the spatio-temporal random effect $\omegas,t$ was assumed independent of each other in different times and locations, that is,$Cov(\omega_{it},\omega_{jt^{′}})={l0, if t\neqt^{′}\sigma_{ϕ}^{2}, if t=t^{′}$. Here $D$ donates the Euclidean distance matrix, κ is a scaling parameter, and the range $r=\sqrt{8ν}/κ$, representing the distance at which spatial correlation becomes negligible (<0.1), and $K_{ν}$ is the modified Bessel function of the second kind, with the smoothness parameter $ν$ fixed at 1. The latent fields corresponding to other years are approximated by projection of $\omega$ using the B-spline basis function of degree two, that is, $B_{i,1}(t)={1, t_{i}\leqt<t_{i+1}0, otherwise$ and $B_{i,m}t=\frac{t-t_{i}}{t_{i+m-1}-t_{i}}B_{i,m-1}t+\frac{t_{i+m}-t}{t_{i+m}-t_{i+1}}B_{i+1,m-1}t$, where $m$ is the degree of two (Krainski, 2019; Cameletti et al., 2013).
 
-We formulated the model in a Bayesian framework. Minimally informative priors were specified for parameters and hyper parameters as follows: β~N(0,105I), log⁡1/σβ2~logGamma(1,0.1), log⁡1/σϕ2~logGamma(1,0.01), log⁡(1+ρ)/(1-ρ)~N(0,0.15), and log⁡κ~N(log⁡8/d,1), where d is the median distance between the predicted grids.
+We formulated the model in a Bayesian framework. Minimally informative priors were specified for parameters and hyper parameters as follows: $\beta~N(0,10^{5}I)$, $log⁡1/\sigma_{\beta}^{2}~logGamma(1,0.1)$, $log⁡1/\sigma_{ϕ}^{2}~logGamma(1,0.01)$, $log⁡(1+ρ)/(1-ρ)~N(0,0.15)$, and $log⁡κ~N(log⁡\sqrt{8}/d,1)$, where $d$ is the median distance between the predicted grids.
 
 Additionally, we applied variable selection procedure to identify the best set of predictors for a parsimonious model. First, the best functional form (continuous or categorical) of continuous variables was selected, by fitting univariate Bayesian spatial-temporal models with either form as the independent variable and selecting the form with the lowest log score (Pettit, 1990). Second, the best subset method was used to identify the best combination of predictors for the final model. According to previous studies (Aung et al., 2017; Forrer et al., 2012; Miyamoto et al., 2014; Wongsaroj et al., 2014), the infection risk in community and school may be different, and using different diagnostic methods may differ the observed prevalence (Charoensuk et al., 2019; Laoprom et al., 2016; Sayasone et al., 2015). Thus, the survey type (i.e., community- or school-based) and the diagnostic methods (i.e., Kato–Katz, FECT, or other methods) were kept in all potential models, while the other 10 environmental and socioeconomic variables were put forth into the Bayesian variable selection process. The model with the minimum log score was chosen as the final model.
 
-Model fitting and variable selection process were conducted through INLA-SPDE approach (Lindgren et al., 2011; Rue et al., 2009), using INLA package in R (version 3.5.0). Estimation of risk for O. viverrini infection in each year of the study period was done over a grid with cell size of 5 × 5 km2. And the relative changes of the prevalence were also calculated using a formula as (ppstj-ppsti)/ppsti for pixel s between the former year ti and the later year tj, where pp indicates the median of the posterior estimated distribution of infection risk. The corresponding risk maps and the prevalence changing maps were produced using ArcGIS (version 10.2). In addition, as population density across the study region was different, the population-adjusted estimated prevalence and number of infected individuals in 2018 were calculated at the country and provincial levels averaging the estimated pixel-level prevalence weighted by population density, that is, pp^A=∑i∈App^iwi/∑i∈Awi. Here pp^A, pp^i, and wi are the estimated prevalence in area A, estimated prevalence at pixel i, and population density at pixel i, respectively, where i belongs to area A. Based on previous studies, for the provinces in Vietnam where there was no evidence of O. viverrini infection, we multiplied the estimated results by zero as the final estimated prevalence (Doanh and Nawa, 2016). The R code used for model fitting is publicly available in GitHub (https://github.com/SYSU-Opisthorchiasis/Spatial-temporal-mapping-of-opisthorchiasis and archived in software heritage; Zhao, 2021; copy archived at swh:1:rev:6493df4ba60c1f2f1aaaad979174a3a5d928627a).
+Model fitting and variable selection process were conducted through INLA-SPDE approach (Lindgren et al., 2011; Rue et al., 2009), using INLA package in R (version 3.5.0). Estimation of risk for O. viverrini infection in each year of the study period was done over a grid with cell size of 5 × 5 km2. And the relative changes of the prevalence were also calculated using a formula as $(pp_{st_{j}}-pp_{st_{i}})/pp_{st_{i}}$ for pixel $s$ between the former year $t_{i}$ and the later year $t_{j}$, where $pp$ indicates the median of the posterior estimated distribution of infection risk. The corresponding risk maps and the prevalence changing maps were produced using ArcGIS (version 10.2). In addition, as population density across the study region was different, the population-adjusted estimated prevalence and number of infected individuals in 2018 were calculated at the country and provincial levels averaging the estimated pixel-level prevalence weighted by population density, that is, $pp^_{A}=\sum_{i\inA}pp^_{i}w_{i}/\sum_{i\inA}w_{i}$. Here $pp^_{A}$, $pp^_{i}$, and $w_{i}$ are the estimated prevalence in area $A$, estimated prevalence at pixel $i$, and population density at pixel $i$, respectively, where $i$ belongs to area $A$. Based on previous studies, for the provinces in Vietnam where there was no evidence of O. viverrini infection, we multiplied the estimated results by zero as the final estimated prevalence (Doanh and Nawa, 2016). The R code used for model fitting is publicly available in GitHub (https://github.com/SYSU-Opisthorchiasis/Spatial-temporal-mapping-of-opisthorchiasis and archived in software heritage; Zhao, 2021; copy archived at swh:1:rev:6493df4ba60c1f2f1aaaad979174a3a5d928627a).
 
-## Model validation, sensitivity analysis, and test of preferential sampling
+### Model validation, sensitivity analysis, and test of preferential sampling
 
-Model validation was conducted using the 5-fold out-of-sample cross-validation approach. Mean error (ME=1N∑(obit-ppit)), mean absolute error (MAE=1N∑obit-ppit), mean square error (MSE=1N∑(obit-ppit)2), and the coverage rate of observations within 95% BCI were calculated to evaluate the performance of the model. Furthermore, a Bayesian geostatistical model only based on point-referenced data was fitted and validated, to compare its performance with our joint modeling approach. In addition, a sensitivity analysis was conducted to evaluate the effects of using the midpoint values of the intervals as the observed prevalence in one literature from Suwannatrai and colleagues (Suwannatrai et al., 2018), reporting observed prevalence of O. viverrini infection in intervals. Sensitivity analysis was done by using the lower and the upper limits of the intervals in the modeling analysis.
+Model validation was conducted using the 5-fold out-of-sample cross-validation approach. Mean error ($ME=\frac{1}{N}\sum(ob_{it}-pp_{it})$), mean absolute error ($MAE=\frac{1}{N}\sumob_{it}-pp_{it}$), mean square error ($MSE=\frac{1}{N}\sum(ob_{it}-pp_{it})^{2}$), and the coverage rate of observations within 95% BCI were calculated to evaluate the performance of the model. Furthermore, a Bayesian geostatistical model only based on point-referenced data was fitted and validated, to compare its performance with our joint modeling approach. In addition, a sensitivity analysis was conducted to evaluate the effects of using the midpoint values of the intervals as the observed prevalence in one literature from Suwannatrai and colleagues (Suwannatrai et al., 2018), reporting observed prevalence of O. viverrini infection in intervals. Sensitivity analysis was done by using the lower and the upper limits of the intervals in the modeling analysis.
 
-Considering that the data in this study were sourced from different studies, preferential sampling may exist. We performed a test for preferential sampling of the data. To our knowledge, no method has been developed for preferential sampling test on observations combined at point and areal levels. To compromise, we took centers of the areas with survey data as their locations for the test of preferential sampling. A fast and intuitive Monte Carlo test developed by Watson was adopted for its advantage of fast speed and feasibility of data arising from various distributions. We assumed St (i.e., the collection of sampled points at time t) a realization from an inhomogeneous Poisson processes (IPP) under the condition of ωs,t (i.e., the spatial-temporal Gaussian random field), that is, [st|ω(s,t)]=IPP(λ(s,t)), and logλs,t=α0+hωs,t, where h is a monotonic function of ωs,t. When h≡0, the sampling process is independent from ωs,t, thus the preferential sampling is not significant. In this way, the problem of detecting preferential sampling can be transformed into the hypothesis testing of h≡0. If h≡0 is false, for example, in case that h is a monotonic increasing function of ωs,t, then the point patterns St are expected to exhibit an excess of clustering in areas with higher ωs,t, thus positive association can be detected between the localized amount of clustering and estimated ωs,t. First, we used the mean of the distances to the K nearest points (DK) to measure the clustering of locations, and calculated the rank correlation rt(K) between DK and the estimated ωs,t for survey year t. Here the estimated ωs,t was obtained from fitting the Bayesian spatial-temporal joint model. Next, the Monte Carlo method was used to sample realizations from the IPP under the null hypothesis (i.e., h≡0), following which a set of rank correlations rt(K)M were calculated, approximating the distribution of the rank correlations ρt(K) under h≡0. In this way, the nonstandard sampling distribution of the test statistic can be approximated. Finally, we computed the desired empirical p-value by evaluating the proportion of the Monte Carlo-sampled rt(K)M which are more extreme than rt(K). We set a sample size of 1000 for each Monte Carlo sampling. We also considered K from 1 to 8 to measure the clustering of locations and resulted in eight p-values respective to different K for each survey year. If one of the p-values is smaller or equal to 0.05, we considered preferential sampling existing in the corresponding survey year. Since our model could estimate the disease risk each year of the study period, this test was done for each survey year with number of locations more than or equal to 10 (i.e., 1978, 1981, 1991, 1995, 1998, 2000, 2001, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, and 2016). The test was conducted using the package 'PStestR' in R (version 3.6.3) (Watson, 2020).
+Considering that the data in this study were sourced from different studies, preferential sampling may exist. We performed a test for preferential sampling of the data. To our knowledge, no method has been developed for preferential sampling test on observations combined at point and areal levels. To compromise, we took centers of the areas with survey data as their locations for the test of preferential sampling. A fast and intuitive Monte Carlo test developed by Watson was adopted for its advantage of fast speed and feasibility of data arising from various distributions. We assumed $S_{t}$ (i.e., the collection of sampled points at time $t$) a realization from an inhomogeneous Poisson processes (IPP) under the condition of $\omegas,t$ (i.e., the spatial-temporal Gaussian random field), that is, $[s_{t}|\omega(s,t)]=IPP(\lambda(s,t))$, and $log\lambdas,t=\alpha_{0}+h\omegas,t$, where $h$ is a monotonic function of $\omegas,t$. When $h≡0$, the sampling process is independent from $\omegas,t$, thus the preferential sampling is not significant. In this way, the problem of detecting preferential sampling can be transformed into the hypothesis testing of $h≡0$. If $h≡0$ is false, for example, in case that $h$ is a monotonic increasing function of $\omegas,t$, then the point patterns $S_{t}$ are expected to exhibit an excess of clustering in areas with higher $\omegas,t$, thus positive association can be detected between the localized amount of clustering and estimated $\omegas,t$. First, we used the mean of the distances to the K nearest points (DK) to measure the clustering of locations, and calculated the rank correlation $r_{t(K)}$ between DK and the estimated $\omegas,t$ for survey year $t$. Here the estimated $\omegas,t$ was obtained from fitting the Bayesian spatial-temporal joint model. Next, the Monte Carlo method was used to sample realizations from the IPP under the null hypothesis (i.e., $h≡0$), following which a set of rank correlations $r_{t(K)}^{M}$ were calculated, approximating the distribution of the rank correlations $ρ_{t(K)}$ under $h≡0$. In this way, the nonstandard sampling distribution of the test statistic can be approximated. Finally, we computed the desired empirical p-value by evaluating the proportion of the Monte Carlo-sampled $r_{t(K)}^{M}$ which are more extreme than $r_{t(K)}$. We set a sample size of 1000 for each Monte Carlo sampling. We also considered K from 1 to 8 to measure the clustering of locations and resulted in eight p-values respective to different K for each survey year. If one of the p-values is smaller or equal to 0.05, we considered preferential sampling existing in the corresponding survey year. Since our model could estimate the disease risk each year of the study period, this test was done for each survey year with number of locations more than or equal to 10 (i.e., 1978, 1981, 1991, 1995, 1998, 2000, 2001, 2004, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, and 2016). The test was conducted using the package 'PStestR' in R (version 3.6.3) (Watson, 2020).

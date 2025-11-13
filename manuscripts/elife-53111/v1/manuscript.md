@@ -43,31 +43,79 @@ Herein, we reveal that mono-colonization of αSyn-overexpressing mice with curli
 
 ## Results and discussion
 
-## Mono-colonization with curli-producing gut bacteria enhances αSyn pathophysiology
+### Mono-colonization with curli-producing gut bacteria enhances αSyn pathophysiology
 
 We previously identified that depletion of the microbiome reduces pathophysiology in Thy1-αSyn mice (alpha-synuclein overexpressing; ASO mice) (Sampson et al., 2016), which overexpress wild-type human αSyn. Due to accumulation and aggregation of neuronal αSyn, mice display increased neuroinflammation, GI dysfunction, and progressive motor abnormalities (Rockenstein et al., 2002; Chesselet et al., 2012; Wang et al., 2012) that are relevant in the study of synucleinopathies. Prior findings in germ-free Thy1-αSyn mice suggest that an unidentified member(s) of the gut microbiome may be pathogenic in this mouse model (Sampson et al., 2016). Interestingly, increased colonization and mucosal association with Enterobacteriaceae, such as E. coli, have been reported in individuals with PD compared to healthy controls (Forsyth et al., 2011), as well as a positive association of Enterobacteriaceae abundance with disease severity (Scheperjans et al., 2015; Li et al., 2017).
 
 To establish whether E. coli promotes αSyn-dependent motor dysfunction, we mono-associated germ-free (GF) wild-type and ASO mice with the curli-producing E. coli strain MC4100, or Bacteroides fragilis strain NCTC9343 and segmented filamentous bacteria (SFB), which do not produce curli. E. coli exacerbated the αSyn-dependent motor defects in ASO animals across a battery of tests, compared to the other taxa (Figure 1A–F and Figure 1—figure supplement 1A–E). To determine the contribution of curli amyloids, we compared mice mono-colonized with wild-type E. coli (WT) to those mono-colonized with an isogenic mutant lacking genes encoding the curli biosynthesis machinery (ΔcsgBAC) (Wang and Chapman, 2008). Evaluation of coordinated motor function revealed that colonization with the curli-deficient strain did not elicit robust motor impairment (Figure 1A–F). We did not observe curli-dependent alterations to colonization levels or mucosal association, despite detecting csgA expression (Figure 1—figure supplement 1F–I). In addition, the curli-deficient mutant did not display alterations to lipopolysaccharide potency or structure (Figure 1—figure supplement 1J,K). Thus, curli-producing bacteria are capable of enhancing motor deficits in ASO mice.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-v1.jpg)
+
+**Figure 1.:** Motor function was assessed at 12–13 weeks of age by quantifying (A), beam traversal time, (B), pole descent time, (C), nasal adhesive removal time, (D), hindlimb clasping score, (E), wirehang time. (F), Principal component analysis of compiled motor scores from tests in (A–E). Quantification of (G, H) pS129αSyn and (I) proteinase K–resistant αSyn by immunofluorescence microscopy in the substantia nigra and midbrain. n = 13–16 (A–F), n = 4.5 (G–I). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test (A–E), and two-tailed t-test for (G–I). *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. Motor data are compiled from three independent cohorts.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Motor function assessed by (A) beam crossing time, (B) pole descent time, (C) adhesive removal time, or D) hindlimb reflex score.( E,) PCA analysis of scores in (A–D). (F–N) GF WT and ASO mice were mono-colonized with curli-sufficient E. coli (WT) or curli-deficient E. coli (ΔcsgBAC). (F) Fecal bacterial burden determined by plate culture. (G) Bacterial burden of tissue/mucus fractions and luminal fractions of proximal colon. (H) csgA expression within fecal contents determined by qRT-PCR. (I) Representative TEM of bacterial localization in the proximal colon. 1- Bacteria, 2-mucus layer, 3-glycocalyx. (J) Quantification of endotoxin as determined by LAL assay. (K) Pro-Q Emerald stain (LPS) of SDS-PAGE separated cell lysates, Ldr- ladder, Std- LPS standard, WT- wild-type, Δcsg- ΔcsgBAC. n = 7–14 (A–E); n = 7–9 (F, H); n = 3 (G). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test (A–D). *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. In (A–D), data are compiled from two independent cohorts for B. fragilis and SFB, compared to E. coli mono-colonized cohorts used in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Total αSyn in whole brain lysates quantified by ELISA. Quantification of insoluble αSyn fibrils in the (B) striatum and (C) midbrain by dot blot assay. Midbrain homogenates of ASO animals were (D) fractionated with Triton X-100 and SDS-PAGE, and subsequently probed for alpha-synuclein (αSyn) via western blot, or (E) left unfractionated and assessed by western blot for phospho-Serine129 αSyn (pS129). (F–H) Quantification of western blots by integrated density. Representative images from of mono-colonized ASO mice of the (I) midbrain stained for proteinase K-resistant αSyn (green), (J) substantia nigra stained for tyrosine hydroxylase (TH, green) and pS129 (red), and (K) frontal cortex stained for pS129 (red) and quantified in (L). (M) Representative images of the myenteric plexus within proximal large intestine of mono-colonized ASO animals stained for PGP9.5 (white) and pS129αSyn (green,), and counts of PGP9.5+ cells bodies per ganglia. (N) Proximal large intestine homogenates of mono-colonized ASO animals were assessed by SDS-PAGE and analyzed by western blot for pS129αSyn. Quantification of insoluble αSyn fibrils in the (O) duodenum and (P) proximal large intestine by dot blot assay. (Q) Total striatal dopamine quantified by ELISA. (R) TH expression in the midbrain by qPCR. (S) Quantification of TH+ cells in representative sections of the SN. n = 3 (A–H, L), n = 4 (O, P), n = 7–9 (Q), n = 3–4 (R), n = 4–5 (S). Full-length immunoblots available in associated Source Data file. Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test for A-C, Q, or two-tailed t-test for F-H, L, O, P, R, S. *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. Scale bars = 100 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Germ-free (GF) wild-type (WT) or Thy1-αSyn (ASO) animals were mono-colonized with either wild-type, curli-sufficient E. coli (WT) or curli-deficient E. coli (ΔcsgBAC). Quantification of IL-6 and TNFα by ELISA from homogenates derived from the (A) midbrain or (B) striatum. (C) CD11b+ cells enriched from total brains and gene expression of il6 and tnfa quantified by qRT-PCR, relative to gapdh. Representative thin sections of (D) substantia nigra and (F) striatum derived from ASO mice stained for Iba1 (microglia). 3D cellular reconstructions of microglia generated and morphological characteristics quantified of (E) substantia nigra- and (G) striatum—resident microglia. Multiplex ELISA performed for cytokines and chemokines derived from (H) homogenates derived from proximal large intestine tissue of indicated animals or (I) serum of ASO animals. Quantification of IL-6 and IL-17 by ELISA from tissue homogenates of the (J) proximal large intestine or (K) duodenum derived from ASO animals. n = 6–7 (A–C), n = 4 (D–G) (averaged from 20 to 40 cells for diameters, or 5–7 cells for branching), n = 3 (H), n = 4–5 (J, K). Points represent individuals, bars represent the mean and standard error. Data analyzed by one-way ANOVA with Tukey post-hoc test for A–C), or two-tailed t-test for E, J) and K). *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. Scale bars = 100 μm.
+
 ASO mice colonized with curli-producing bacteria displayed increased αSyn fibril reactivity and detergent-insoluble αSyn in the midbrain compared to mice with the ΔcsgBAC strain, despite similar transgene production (Figure 1—figure supplement 2A–D,F,G). Histological and western blot analysis revealed increased phospho-serine129 αSyn (pS129-αSyn) deposition in the substantia nigra (SN) of ASO mice, indicative of pathological αSyn aggregation, (Figure 1G,H, and Figure 1—figure supplement 2E,H,J). Further, mice colonized with WT E. coli show increased proteinase K-resistant αSyn inclusions in the midbrain (Figure 1I and Figure 1—figure supplement 2I), with little alteration to pS129-αSyn in the frontal cortex (Figure 1—figure supplement 2K,L). Additionally, we observed increased pS129-αSyn in the proximal large intestine, and elevated αSyn fibril reactivity in the duodenum and proximal large intestine of ASO mice mono-colonized with curli-producing E. coli (Figure 1—figure supplement 2M–P). Previous research has shown that synuclein pathology, neuroinflammation, and motor defects occur at early ages in the ASO mouse model without concomitant loss of striatal dopamine, tyrosine hydroxylase positive (TH+) neurons in the midbrain, or loss of neurons in the myenteric plexus (Fleming et al., 2004; Lam et al., 2011; Chesselet et al., 2012; Wang et al., 2012). Consistent with these prior observations, we do not observe decreases in total striatal dopamine, midbrain TH expression, TH+ neurons, nor myenteric PGP9.5+ neurons, under the colonization conditions and ages assessed, suggesting pathology and motor deficits are independent of dopamine or neuron loss (Figure 1, figure supplement S2Q-S).
 
 Mono-colonization of ASO mice with curli-producing E. coli resulted in increased expression of the proinflammatory cytokines interleukin 6 (IL-6) and tumor necrosis factor alpha (TNFα) in brain-derived CD11b+ cells, and increased cytokine production in the midbrain and striatum (Figure 1—figure supplement 3A–C). In addition, Iba+ microglia morphologies indicated reduced activation in ASO mice colonized with the curli-deficient strain (Figure 1—figure supplement 3D–G). Multiplexed ELISA analysis revealed increased cytokine and chemokine production in colonic tissue of mice mono-colonized with curli-producing E. coli, irrespective of genotype (Figure 1—figure supplement 3H,J,K), and no noteworthy changes to serum cytokines of ASO mice based on colonization status (Figure 1—figure supplement 3I). These data reveal that a bacterial amyloid from the gut microbiome can exacerbate pathology and inflammation, in both the gut and brain, in mice that overexpress αSyn.
 
-## Curli biosynthesis within a complex microbiome contributes to motor and GI deficits
+### Curli biosynthesis within a complex microbiome contributes to motor and GI deficits
 
 To explore host-microbiome interactions in a more natural context, we tested whether introduction of curli-producing bacteria to a healthy human microbiota is sufficient to enhance αSyn-dependent pathophysiology. GF ASO mice were transplanted with fecal microbiota from a human donor predicted to contain low levels of csgA, as indicated by PICRUSt analysis following 16S rRNA sequencing (Figure 2—figure supplement 1A). This single microbiome was supplemented with either WT E. coli or the ΔcsgBAC strain. Both strains reached similar abundances in the feces (Figure 2—figure supplement 1B,C), while csgA expression and amyloid production appeared only in mice colonized with WT bacteria (Figure 2—figure supplement 1C–E). Mice harboring a microbiota containing WT E. coli displayed significantly impaired motor and GI performance compared to animals with a complex microbiota plus the curli-deficient strain (Figure 2A–G). Moreover, enrichment of curli-producing bacteria resulted in increased αSyn fibril reactivity in the midbrain and elevated pS129-αSyn deposition in the SN, without changes to the number of TH+ neurons (Figure 2H and Figure 2—figure supplement 1F–J). Morphometric analysis of microglia demonstrated concomitant changes indicative of inflammatory status in the midbrain (Figure 2—figure supplement 1K–N). Therefore, in the context of a complex human microbiota, curli-producing E. coli are sufficient to modulate αSyn-mediated pathophysiology.
 
-## The bacterial amyloid protein, CsgA, accelerates αSyn fibrilization
+![Figure 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig2-v1.jpg)
+
+**Figure 2.:** Motor function was tested longitudinally at 12, 15, and 20 weeks of age in the (A) beam traversal, (B) pole descent, (C) adhesive removal, (D) hindlimb clasping score, (E) wirehang tests. (F) Principal component analysis of compiled motor scores from tests in (A–E). (G) Fecal output over a 15-min period observed at week 21 of age. Quantification of (H) pS129αSyn by immunofluorescence microscopy in the substantia nigra. n = 12 (A–F), n = 6 (G), n = 4 (H). Data points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between colonization status. Data in (H) analyzed two-tailed t-test. *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. Motor data are compiled from two independent cohorts.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Human samples from previous cohort (ENA Accession: PRJEB17694) were analyzed by PICRUSt to infer abundance of csgA encoded within each population, arrow indicates sample utilized for transplantation. Fecal pellets of Thy1-αSyn (ASO) mice receiving healthy-human derived fecal microbes enriched with either wild-type, curli-sufficient E. coli (WT) or curli-deficient E. coli (ΔcsgBAC) were analyzed by (B) qPCR for rrsA abundance relative to 16 s rRNA present in fecal bacterial DNA and ratios of (C) YESCA/blood agar aerobic colony forming units and (D) congo red-positive/blood agar colony forming units calculated. (E) qPCR analysis for csgA expression relative to rrsA in fecal bacterial RNA. (F) Representative images of the substantia nigra in humanized ASO mice stained for TH (green) and pS129 (red) and quantified in (G, H). Quantification of insoluble αSyn fibrils in the (I) midbrain and (J) striatum by dot blot assay. Representative thin sections of (K) substantia nigra and (M) striatum derived from ASO mice stained for Iba1 (microglia; red). 3D cellular reconstructions of microglia generated and morphological characteristics quantified of (L) substantia nigra- and (N) striatum—resident microglia. n = 5 (A), n = 8 (B, E), n = 4 (C–J), n = 3 (K–N) (averaged from 20 to 40 cells for diameters, or 5–7 cells for branching) Points represent individuals, bars represent the mean and standard error. Data in (B, E, I) analyzed by two-tailed Mann-Whitney test or t-test in L. *p≤0.05; ***p≤0.001. Scale bars = 100 μm.
+
+### The bacterial amyloid protein, CsgA, accelerates αSyn fibrilization
 
 Emerging data suggest that non-orthologous amyloid proteins can accelerate heterologous aggregation (Clinton et al., 2010; Brettschneider et al., 2015; Katorcha et al., 2017). We therefore tested whether CsgA can directly impact aggregation of αSyn. Purified monomeric CsgA accelerated production of αSyn aggregates during in vitro biochemical amyloid assays (Figure 3A–C and Figure 3—figure supplement 1A), even at concentrations below which CsgA self-aggregates (Figure 3D). The αSyn fibrils purified from these reactions maintained an ability to accelerate αSyn amyloidogenesis (Figure 3—figure supplement 1B,C), suggesting that CsgA-induced αSyn aggregates are propagation-competent, similar to other amyloids (Spires-Jones et al., 2017). Surprisingly, we could not detect a direct interaction between purified CsgA and αSyn monomers by surface plasmon resonance (Figure 3—figure supplement 1D), perhaps indicating transient interactions or requirements for prior oligomerization of either or both proteins. Unlike αSyn, Tau aggregation was not accelerated by CsgA (Figure 3—figure supplement 1E–G). Native amyloid-forming properties of CsgA are required, as a non-amyloidogenic form of CsgA (CsgA:Q49A/N54A/Q139A/N144A; ‘SlowGo’ Wang and Chapman, 2008) did not augment αSyn aggregation in vitro (Figure 3—figure supplement 2A–C). To investigate the dependence of these amyloidogenic residues in vivo, we mono-colonized ASO mice with E. coli producing either wild-type CsgA or CsgA:SlowGo proteins (Wang and Chapman, 2008). Motor performance in ASO mice harboring SlowGo-producing E. coli was less severe in comparison to mice colonized with WT bacteria (Figure 3—figure supplement 2D–H), although not to the extent of the ΔcsgBAC strain, qualitatively (see Figure 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-v1.jpg)
+
+**Figure 3.:** (A) Aggregation as measured by Thioflavin T fluorescence over time during αSyn amyloid formation alone or in the presence of CsgA monomers (25:1 molar ratio). Time to reach (B) exponential fibrilization/lag phase and (C) half-maximum from reactions in (A). (D) Representative transmission electron micrographs of αSyn or CsgA alone, or in combination, at 0 and 60 hr post-aggregation. n = 3 (A–C). Bars represent the mean and standard error. Data are analyzed by two-tailed, t-test. **p≤0.01; ***p≤0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Circular dichroism spectroscopic analysis of αSyn fibrilization alone or in the presence of CsgA at 0, 12.5, and 60 hr post-aggregation. (B) Thioflavin T fluorescence during αSyn amyloid formation alone or in the presence of 5% seeds previously generated by addition of CsgA monomer to αSyn (as in Figure 2a) or αSyn alone. (C) Transmission electron micrograph of fibril structures generated by the addition of above seeds and of seeds themselves. (D) Surface plasmon resonance measurements of surface immobilized αSyn with additions of either CsgA monomer or seeds, or DOPS-DOPG cholesterol liposomes as positive control. (E) Amyloid aggregation as measured by Thioflavin T fluorescence with Tau alone or in the presence of CsgA monomers (25:1 molar ratio, red). Time to reach (F) exponential fibrilization/lag phase and (G) half-maximum from reactions in (E).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Amyloid aggregation as measured by Thioflavin T fluorescence with αSyn alone or in the presence of non-amyloidogenic CsgA monomers (SlowGo, 25:1 molar ratio, red). Time to reach (B) exponential fibrilization/lag phase and (C) half-maximum from reactions in (A). (D–H) Germ-free Thy1-αSyn mice (ASO) were mono-colonized with E. coli producing either wild-type CsgA (WT) or SlowGo (SlowGo), and motor function assessed at 12-13 weeks of age in (D) beam traversal, (E) pole descent, (F) adhesive removal, (G) hindlimb reflexes, and (H) wirehang. Points represent individuals, bars represent the mean and standard error, n = 10–11 (D–H). Data in (D–H) analyzed by two-tailed Mann-Whitney test. *p≤0.05; **p≤0.01.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Conventionally-raised Thy1-αSyn (ASO) mice were injected intestinally with 30 μg of synthetic CsgA hexamer (CsgA; N-QYGGNN-C) or non-amyloidgenic peptide (N122A; N-QYGGNA-C). Motor function assessed overtime at 0, 7, 21, and 70 days post-injection in the (A) beam traversal, (B) pole descent, (C) adhesive removal, (D) hindlimb clasping score, and (E) wirehang tests. (F) Principal component analysis of compiled motor scores of ASO mice. (G) Fecal output observed at day 70 in ASO mice. (H) Quantification of insoluble αSyn fibrils in the striatum and ventral midbrain by dot blot assay. n = 8 (A–G), n = 4 (H). Points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between treatments. Data in (H) analyzed by two-tailed Mann-Whitney test. *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001.
+
 Next, a peptide spanning the aggregation domain of CsgA or a non-amyloidogenic version (N122A) (Tükel et al., 2009) were injected directly into the intestinal wall of SPF ASO mice. Intra-intestinal delivery of amyloidogenic CsgA peptide, but not the mutant peptide, resulted in progressive motor and GI dysfunction (Figure 3—figure supplement 3A–G). Furthermore, increased αSyn fibrils were detected in the midbrains of amyloidogenic peptide-injected animals (Figure 3—figure supplement 3H). We conclude that gut exposure to a bacterial amyloid is sufficient to exacerbate motor deficits and αSyn brain pathology in this mouse model, in a manner dependent on CsgA aggregation.
 
-## Curli-driven pathophysiology in mice requires functional amyloid formation
+### Curli-driven pathophysiology in mice requires functional amyloid formation
 
 Epigallocatechin gallate (EGCG) is a plant-derived, dietary polyphenol that physically inhibits amyloid formation, including αSyn aggregation (Bieschke et al., 2010). EGCG is also capable of blocking CsgA amyloidogenesis and represses csgA transcript expression in E. coli through activation of specific stress response pathways within the bacterial cell (Serra et al., 2016). We reveal here that EGCG treatment did not impair E. coli growth in culture, but significantly reduced biofilm formation, a process dependent on the production and assembly of curli (Figure 4—figure supplement 1A,B) (Tursi and Tükel, 2018). Additionally, EGCG also inhibited CsgA-accelerated αSyn amyloid formation during in vitro biochemical aggregation assays (Figure 4A). Notably, EGCG remains largely gut-restricted in rodents and humans and is not readily bioavailable in circulation or brain tissues following oral administration (Lambert et al., 2003; Lin et al., 2007; Cai et al., 2018). Oral treatment of wild-type E. coli mono-colonized ASO mice with EGCG did not affect fecal E. coli abundance, but resulted in decreased csgA production (Figure 4B and Figure 4—figure supplement 1C). Assessment of motor performance revealed that EGCG improved both motor and GI defects exacerbated by curli-producing E. coli in ASO mice (Figure 4C–I and Figure 4—figure supplement 1D–I). In addition, oral EGCG administration reduced αSyn aggregation and pS129-αSyn deposition in both the striatum and midbrain (Figure 4J and Figure 4—figure supplement 1J–M). Furthermore, microglia morphological changes were limited in EGCG-treated mice (Figure 4—figure supplement 1O–R). In addition to its ability to directly inhibit aggregation of bacterial and host-derived amyloids, EGCG has antioxidant and anti-inflammatory activities (Li et al., 2004) that may also contribute to the rescue of CsgA-accelerated, αSyn-dependent pathophysiology. Collectively, these data reveal that curli is a specific bacterial structure that can accelerate mammalian amyloid aggregation in vitro and in vivo.
 
-## Conclusion
+![Figure 4.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig4-v1.jpg)
+
+**Figure 4.:** (A), Representative in vitro αSyn aggregation measured by Thioflavin T fluorescence during αSyn amyloid formation alone or in the presence of CsgA (25:1 molar ratio), with and without EGCG (50 μM) treatment. (B–H) Germ-free Thy1-αSyn mice (ASO) were mono-colonized with WT E. coli at 5–6 weeks of age, and given water alone (Vehicle: Veh) or treated with EGCG ad lib in drinking water (+EGCG). (B) RNA was extracted from fecal pellets and csgA expression quantified by qRT-PCR, relative to rrsA. Motor function was assessed at 15–16 weeks of age by quantifying (C) beam traversal time, (D) pole descent time, (E) nasal adhesive removal time, (F) hindlimb clasping score, (G) wirehang tests. (H) Principal component analysis of compiled motor scores from tests in (C–G). (I) Fecal output over a 15 min period. (J) Quantification of insoluble αSyn fibrils in the ventral midbrain by dot blot assay. n = 8 (B); n = 10–11 (C–G); n = 4–5 (I, J). Points represent individuals, bars represent the mean and standard error. Data analyzed by two-tailed Mann-Whitney for B–G, (J) and two-way ANOVA with Sidek’s post-hoc test for I with between group comparisons indicated above individual time points, and brackets indicating significance between treatment status. *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001. Motor data compiled from two independent cohorts.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/53111/elife-53111-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Wild-type E. coli was inoculated into brain-heart infusion broth, containing indicated concentrations of EGCG. Cultures were incubated, with orbital shaking and growth was measured by optical density at 600 nm over time. (B) Crystal violet staining of wild-type E. coli biofilm at 4 days in static culture, with indicated concentrations of epigallocatechin gallate (EGCG); assessed by optical density (OD). (C–R) Germ-free ASO mice were mono-colonized with wild-type E. coli and treated with water alone (Vehicle, Veh) or given EGCG ad lib in drinking water (+EGCG). (C) Fecal pellets were cultured on YESCA agar to determine total viable E. coli. Motor function was assessed at 10, 12, and 15 weeks of age by quantifying (D) beam traversal time, (E) pole descent time, (F) nasal adhesive removal time, (G) hindlimb reflex score, (H) wirehang tests. (I) Principal component analysis of compiled motor scores. (J) Quantification of insoluble αSyn fibrils in the striatum by dot blot assay. (K) Representative images of the substantia nigra in humanized ASO mice stained for TH (green) and pS129 (red) and quantified in (L–N). Representative thin sections of (O) substantia nigra and (Q) striatum were stained for Iba1 (microglia; red) and morphological characteristics of (P) substantia nigra- and (r) striatum-resident microglia quantified. n = 3 (A, O–R) (averaged from 20 to 40 cells for diameters, or 5–7 cells for branching); n = 6–7 (B); n = 4–5 (C, J), n = 10–11 (D–I); n = 3–4 (K–N). Points represent individuals, bars represent the mean and standard error. Time courses analyzed by two-way ANOVA, with Sidak post-hoc test for between group comparisons indicated above individual time points, and brackets indicating significance between treatments. Data in (J) analyzed by two-tailed Mann-Whitney test and (L, P, R) analyzed by two-tailed t-test. *p≤0.05; **p≤0.01; ****p≤0.0001.
+
+### Conclusion
 
 The majority of synucleinopathy incidences are idiopathic, with multifactorial and complex risks that contribute to disease initiation and/or progression (Ritz et al., 2016; Soldner et al., 2016; Johnson et al., 2019). Our findings reveal that the bacterial amyloid CsgA can accelerate αSyn aggregation and enhance motor abnormalities in mice that are genetically predisposed to αSyn pathology. Curli production in the gut of non-susceptible mice does not impair motor performance at the timepoints examined, suggesting that this microbial trigger is not sufficient, but rather requires additional predisposing factors to promote disease outcomes. Further, inhibiting amyloid formation in the gut correlates with improvements in curli-induced behaviors and pathology. Our study does not reconcile how curli production within the gastrointestinal tract ultimately manifests αSyn aggregation in the brain. Experimental evidence exists for a prion-like spread of αSyn aggregates (Woerman et al., 2015), including propagation from the gut to the midbrain via the vagus nerve and/or spinal cord in rodent models (Uemura et al., 2018; Kim et al., 2019; Van Den Berge et al., 2019), although evidence for sustained propagation from the GI tract to structures outside the brainstem in primates is currently lacking (Manfredsson et al., 2018). Epidemiological studies suggest an association between full truncal vagotomy with a decreased risk of PD (Svensson et al., 2015). Intriguingly, there appears to be a positive correlation between inflammatory bowel disease and neurodegenerative disease (Hui et al., 2018; Peter et al., 2018). In experimental models, induction of GI inflammation, for instance through LPS or dextran sodium sulfate administration, is sufficient to induce αSyn pathology in the CNS (Choi et al., 2018; Kishimoto et al., 2019; Perez-Pardo et al., 2019). Aggregates of both CsgA and αSyn are capable of signaling through the innate immune receptor Toll-like receptor 2 (TLR2) leading to increased inflammatory responses (Tükel et al., 2009; Poewe et al., 2017). In fact, inhibiting TLR2 in αSyn-based mouse models leads to improved pathology and motor outcomes (Kim et al., 2015; Kim et al., 2018). Our data demonstrate curli-dependent increases of inflammatory markers in both the intestine and brain, as well as acceleration of αSyn pathology, but do not determine which of these may be the primary driver of curli-mediated pathophysiology. Disentangling these complex relationships in future studies will define how pathologic signals from bacterial amyloids are transduced from the gut to the brain, via transneuronal spread of αSyn aggregates and/or an inflammatory cascade, and mechanisms of gut-to-brain signaling that contribute to motor impairment.
 
@@ -79,30 +127,201 @@ While CsgA is one example of bacterially-produced amyloid, microbial amyloid for
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Thy1- alpha-synuclein (Line 61), BDF1 background</td>
+      <td>Rockenstein et al., 2002</td>
+      <td>ASO (alpha-synuclein over-expressing)</td>
+      <td>With permission, UCSD</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Str. K12, MC4100</td>
+      <td>Zhou et al., 2013</td>
+      <td>WT (wild-type)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Str. K12, MC4100:ΔcsgBAC</td>
+      <td>Zhou et al., 2013</td>
+      <td>ΔcsgBAC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Escherichia coli)</td>
+      <td>Str. K12, MC4100: CsgA:Q49A/N54A/Q139A/N144A</td>
+      <td>Wang and Chapman, 2008</td>
+      <td>SlowGo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha synuclein, mouse monoclonal</td>
+      <td>BD</td>
+      <td>Cat#: 610787</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pS129 alpha-synuclein, rabbit monoclonal</td>
+      <td>AbCam</td>
+      <td>Cat#: Ab51253</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase, mouse monoclonal</td>
+      <td>Millipore</td>
+      <td>Cat#: MAB318</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Iba1, rabbit</td>
+      <td>Wako</td>
+      <td>Cat#: 019–19741</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-aggregated alpha-synuclein, rabbit polyclonal</td>
+      <td>AbCam</td>
+      <td>Cat#: MJFR-14-6-4-2</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-546, goat polyclonal</td>
+      <td>Life Technologies</td>
+      <td>Cat#: A-11003</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-546, goat polyclonal</td>
+      <td>Life Technologies</td>
+      <td>Cat#: A-11010</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-488, goat polyclonal</td>
+      <td>Life Technologies</td>
+      <td>Cat#: A-11001</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-HRP, goat polyclonal</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 7074</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>CsgA (N’-QYGGNN-C’)</td>
+      <td>Bio-Synthesis, Inc; Tükel et al., 2009</td>
+      <td>CsgA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>N122A (N’QYGGNA-C’)</td>
+      <td>Bio-Synthesis, Inc; Tükel et al., 2009</td>
+      <td>N122A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>16S rRNA: 5’-TCCTACGGGAGGCAGCAGT-3’ and 5’-GGACTACCAGGGTATCTAATCCTGTT-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>rrsA: 5’-AGTGATAAACTGGAGGAGGTG-3‘ and 5’-GGACTACGACGCACTTTATGAG-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>csgA: 5’-ATGACGGTTAAACAGTTCGG-3’ and 5’-AGGAGTTAGATGCAGTCTGG-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gapdh: 5’-CATGGCCTTCCGTGTTCCTA-3’ and 5’-CCTGCTTCACCACCTTCTTGAT-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>il6: 5’-TAGTCCTTCCTACCCCAATTTCC-3’ and 5’-TTGGTCCTTAGCCACTCCTTC-3’,</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TH: 5’-CCAAGGTTCATTGGACGGC-3’ and 5’-CTCTCCTCGAATACCACAGCC-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>tnfa; 5’-CCCTCACACTCAGATCATCTTCT-3’ and 5’-GCTACGACAGTGGGCTACAG-3’</td>
+      <td>IDT</td>
+      <td>qPCR primer</td>
+      <td>PrimerBank</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male wild-type and Thy1-αSyn mice (Line 61, with permission from University of California, San Diego) were generated as described previously (Rockenstein et al., 2002; Chesselet et al., 2012; Sampson et al., 2016), through breeding female BDF1 background Thy1-αSyn mice to male BDF1 offspring generated via crossing female C57BL/6 with DBA/2 males (Charles River, Hollister, CA), and refreshing breeding pairs ~ 6 months. Germ-free (GF) Thy1-αSyn breeding pairs were generated via caesarian section and cross-fostered by GF Swiss-Webster dams. Conventionally colonized and mono-colonized animals were housed in autoclaved, ventilated, microisolator caging. GF animals were housed in open-top caging within flexible film isolators and maintained microbiologically sterile, confirmed via 16S rRNA PCR from fecal-derived DNA and culture of fecal pellets on Brucella blood agar or tryptic soy blood agar (Teknova, Hollister, CA) under anaerobic and aerobic conditions, respectively. Mono-colonized animals received ~108 cfu of the indicated bacterial strains in ~100 μL sodium bicarbonate buffer (5% w/v) at 5–6 weeks of age. Human microbiome colonized animals received ~100 μL 0.1 g/mL fecal extract from previously sampled healthy human donor (ENA Accession: PRJEB17694; Sample #: 10483.donor2.HC; MMA_008 [Sampson et al., 2016], California Institute of Technology’s Institutional Review Board #15–0568- exempt), at 5–6 weeks of age. For mice mono-colonized with E. coli containing plasmid vectors for CsgA and CsgA:SlowGo, drinking water was supplemented with 50 μg/mL kanamycin (Sigma Aldrich, St Louis, MO). Human microbiome colonized mice were associated with WT or ΔcsgBAC mutant E. coli at time of microbiota transplant. For epigallocatechin gallate (EGCG) treatment, animals received filter-sterilized EGCG (Sigma Aldrich) at 200 μg/mL in drinking water ad libitum beginning at 5–6 weeks of age. All animals received autoclaved food (LabDiet Laboratory Autoclavable Diet 5010, St Louis, MO) and water ad libitum, were maintained on the same 12 hr light-dark cycle, and housed in the same room of the facility. All animal husbandry and experiments were approved by the California Institute of Technology’s Institutional Animal Care and Use Committee (IACUC), through protocol #1707.
 
-## Motor function assessment
+### Motor function assessment
 
 Motor function was assessed similarly to previous studies (Fleming et al., 2004; Sampson et al., 2016), between hours 7 and 9 of the light phase, within a biosafety cabinet. Beam traversal and pole descent were performed first, followed by fecal output measurement. One day later, wirehang, adhesive removal and hindlimb scoring was performed. Beam traversal- A 1 m plexiglass beam consisting of four segments of 0.25 m in length (Stark’s Plastics, Forest Park, OH) was constructed with consecutively thinner widths of 3.5, 2.5, 1.5, and 0.5 cm, with 1 cm overhangs placed 1 cm below the surface of the beam and the narrowest end placed into home cage. Animals were trained for two consecutive days before the first testing. On the first day of training, animals received one trial with the home cage positioned close to the widest segment, where the animal was placed, and guided the animals forward along the narrowing beam. Animals received two more trials with limited or no assistance to encourage forward movement and stability on the beam. On the seccond day of training, animals were given three trials to traverse the beam, with little to no assistance. On the third day, animals were timed over three trials to traverse from the widest segment to the home cage. Time was measured from the placement of the animal’s forelimbs onto the second segment until a forelimb reached the home cage. Score was averaged over three trials. Pole descent- A 0.5 m long pole, 1 cm in diameter, wrapped with non-adhesive shelf liner to facilitate the animals grip, was placed into the home cage, with animals removed and placed into fresh housing. Animals received 2 days of training to descend from the top of the pole and into the home cage. On the first day, animals received three trials to descend the pole. First animals were placed head-down ~1/3 the distance above the base, the second trial from ~2/3 the height, and on the third trial animals were placed at the top of the pole, head-down. The second day of training, animals were tasked with descending, head-down, from the top of the pole, three times. On the day of testing, animals were placed head-down on the top of the pole and timed beginning when the experimenter released the animal and ended when one hind-limb was placed on the pole base. Score was averaged over three trials. Adhesive removal- ¼” round adhesive labels (Avery, Glendale, CA) were placed on the nasal bridge. Animals were placed into their home cage (with cage mates removed into separate cage) and timed to completely remove the sticker. Animals were recorded over two trials, and averaged. Hindlimb clasping reflex scoring- Animals were gently lifted by the mid-section of the tail and observed over ~5–10 s (Zhang et al., 2014). Animals were assigned a score of 0, 1, 2, or 3. 0 was scored to animals that freely moved both their limbs and extended them outwards. A 1 was assigned to animals which clasped one hindlimb inward for the duration of the restraint or if both legs exhibited partial inward clasping. 2 was given if both legs clasped inward for the majority of the observation, but still exhibited some flexibility. A score of 3 was assigned if animals displayed complete rigidity of hindlimbs that immediately clasped inward and exhibited no signs of flexibility. For animals in Figure 3—figure supplement 2G, animals were scored twice on 2 consecutive days and the score averaged, the remainder were scored once. Wirehang- Animals were placed in the center of a 30 cm by 30 cm screen with 1 cm wide mesh. The screen was inverted head-over-tail and placed on supports ~ 40 cm above an open cage with deep bedding. Animals were timed until they released their grip or remained for 60 s, and the score from two trials averaged. Fecal Output- Animals were removed from their home cages and placed into a 12 cm x 25 cm translucent cylinder. Fecal pellets were counted every 5 min, cumulative over 15 min. Principal component analysis- PCA was performed using ClustVis web tool, with default settings and reversed axis for display (Metsalu and Vilo, 2015).
 
-## Bacterial strains, manipulations, and characterizations
+### Bacterial strains, manipulations, and characterizations
 
 Escherichia coli K12 str. MC4100 and the previously characterized isogenic deletion mutant of the csgBAC operon were cultured aerobically in YESCA media at 37°C (Zhou et al., 2013). Biofilm assays were performed via crystal violet staining of static culture at room temperature in YESCA as described previously (Zhou et al., 2013). Congo red staining was performed on YESCA agar following 2–3 days growth at room temperature as described previously (Zhou et al., 2013). Fecal bacterial DNA was isolated using QuickDNA Fecal/Soil Microbe Miniprep (Zymo Research, Irvine, CA). Fecal bacterial RNA was isolated using PowerMicrobiome RNA Isolation kit (MoBio, Carlsbad, CA) and cDNA generated via iScript cDNA Synthesis kit (BioRad, Hercules, CA). qPCR was performed with SybrGreen master mix (Applied Biosystems, Foster City, CA) on an AB7900ht instrument using the following primers: 16 s rRNA-5’-TCCTACGGGAGGCAGCAGT-3’ and 5’-GGACTACCAGGGTATCTAATCCTGTT-3’; rrsA-5’-AGTGATAAACTGGAGGAGGTG- ‘and 5’-GGACTACGACGCACTTTATGAG-3’; csgA- 5’-ATGACGGTTAAACAGTTCGG-3’ and 5’-AGGAGTTAGATGCAGTCTGG-3’. Bacteroides fragilis str. NTCT9343 was cultured anaerobically in brain-heart infusion (BHI) broth at 37°C, and colonized into GF animals via oral gavage of ~108 cfu in 100 μL sodium bicarbonate buffer (5% w/v) at 5–6 weeks of age. Segmented filamentous bacteria were colonized via bedding transfer and co-housing within a mono-associated gnotobiotic isolator. Colonization was confirmed by PCR for SFB 16 s RNA. For growth curves, E. coli was first grown aerobically at 37°C overnight in BHI broth, and subcultured at 1:400 in BHI containing indicated concentrations of EGCG, in a 200 μL volume in a 96-well plate. Plates were incubated at 37°C aerobically, with orbital shaking in a BioTek Cytation 5 plate reader, and the optical density at 600 nm measured every hour. Endotoxin content was measured following overnight growth at 37°C, aerobically in BHI using the Pierce LAL Chromogenic Endotoxin kit (ThermoFisher, Pittsburgh, PA) according to manufacturer’s instructions. LPS was stained from lysates derived from identically grown bacterial cultures following separation on a 4–20% SDS-PAGE gel with Pro-Q Emerald 300 LPS stain kit (ThermoFisher), according to manufacturer’s instructions.
 
-## α-Synuclein aggregation assays
+### α-Synuclein aggregation assays
 
 Thioflavin T (ThT) assays-Freshly purified CsgA (both wild-type and ‘SlowGo’) and αSyn were diluted in 50 mM KPi (pH 7.3) to the molar concentrations indicated in each experiment. Samples were incubated in 96-well, black, flat bottom plates at 37°C with 20 μM ThT and 100 mM NaCl under continuous shaking conditions, along with a 1 mm glass bead for homogenous mixing. The ThT fluorescence intensity was recorded in 30 min interval using a Tecan plate reader (excitation: 438 nm; emission: 495 nm; cut-off: 475 nm). TauK18 aggregation assay- 50 µM of TauK18 fragment with heparin (TauK18:Heparin 4:1) was incubated with or without CsgA (2 µM) in 14 mM MES buffer pH 6.8 at 37°C with continuous shaking in 96-well, black, flat bottom plates. 2 mm beads and 20 µM ThT was added to all the wells. The ThT fluorescence was monitored with previously mentioned parameters after 30 min in FLUOstar omega plate reader (BMG Labtech). Transmission electron microscopy- Aliquots of CsgA and αSyn reactions were taken at indicated timepoints. Five microliters of sample was applied on glow-discharged carbon-coated grids, incubated for 1 min and washed with MilliQ water before staining with 1% uranyl acetate. Samples were imaged on Jeol electron microscope (JEOL-1400 plus). Circular dichroism spectroscopy- αSyn alone or with CsgA (in 20 mM KPi pH 7.3) were analyzed using a Jasco J-810 spectropolarimeter from 190 nm to 250 nm at 25°C immediately after purification and at indicated timepoints.
 
-## Synuclein pathology and inflammatory responses
+### Synuclein pathology and inflammatory responses
 
 CD11b enrichment- Animals were sedated with pentobarbital and perfused; whole brains were homogenized in PBS via passage through a 100 μm mesh filter, myelin debris were removed using magnetic separation with Myelin Removal Beads (Miltenyi Biotec, San Diego, CA), and subsequently CD11b positive enrichment performed similarly, via Microglia Microbeads (Miltenyi Biotec), according to manufacturer’s instructions. Cells were immediately lysed in Trizol and RNA extracted with the DirectZol RNA extraction (Zymo Research). cDNA and qPCR performed as described above with primers- gapdh: 5’-CATGGCCTTCCGTGTTCCTA-3’ and 5’-CCTGCTTCACCACCTTCTTGAT-3’; il6: 5’-TAGTCCTTCCTACCCCAATTTCC-3’ and 5’-TTGGTCCTTAGCCACTCCTTC-3’, tyrosine hydroxylase: 5’-CCAAGGTTCATTGGACGGC-3’ and 5’-CTCTCCTCGAATACCACAGCC-3’; and tnfa; 5’-CCCTCACACTCAGATCATCTTCT-3’ and 5’-gctacgacagtgggctacag-3’. Synuclein imaging- Perfused whole brains were dissected and fixed with 4% (w/v) paraformaldehyde. 50 μm sections were generated via vibratome. For proteinase-K resistant staining, free-floating sections were treated briefly with 5 μg/mL proteinase K (NEB, Ipswich, MA) and stained with anti-alpha synuclein (1:1000 mouse; #610787 BD, Franklin Lakes, NJ), pS129-synuclein staining utilized anti-pS129syn (1:1000 rabbit; #ab51253 AbCam, Cambridge, UK) and anti-tyrosine hydroxylase (1:1000 mouse; MAB318, Millipore, Burlington, MA). Sections were stained with secondary anti-mouse IgG-AF488 (1:1000, Life Technologies, Carlsbad, CA), anti-rabbit IgG-546 (1:1000, Life Technologies) and Neurotrace (Life Technologies), mounted with ProFade Diamond DAPI (Life Technologies) and imaged with a 20x objective on a Zeiss LSM800 confocal microscope. Sections corresponding to ~1500 μm from midline were counted manually for TH+ cell bodies and pS129syn puncta in ImageJ software. Microglia reconstructions- Microglia were imaged and analyzed as previously described (Erny et al., 2015; Sampson et al., 2016). Thin sections prepared as above were stained with anti-Iba1 (1:1000 rabbit, Wako, Richmond, VA) and anti-rabbit IgG-AF546 (1:1000, Life Technologies). Z-stacks were imaged at 1 μm steps and analyzed using Imaris software. ELISAs- For TNFα and IL6 (eBioscience, San Diego, CA), αSyn (ThermoFisher), and dopamine (Eagle Biosciences, Nashua, NH) tissue homogenates were prepared in RIPA buffer containing protease inhibitor (ThermoFisher), and ELISA performed according to manufacturer’s instructions with 100 μg of tissue. Multiplexed intestine (100 μg) and serum cytokine levels were measured on a Bio-Plex 200 using the Bio-Plex Mouse Cytokine 23-plex Assay (Biorad) according to manufacturer’s instructions. Dot blot- Tissue homogenates were spotted onto 0.45 μm nitrocellulose membranes, in 1 μg/μL aliquots. Membranes were blocked with 5% dry skim milk in Tris-buffered saline and stained with anti-aggregated alpha-synuclein antibody (1:1000, MJFR-14-6-4-2, rabbit, AbCam) and anti-rabbit IgG-HRP (1:1000, Cell Signaling Technology, Danvers, MA), and detected with Clarity chemiluminescence substrate (BioRad) on a BioRad GelDoc XR and densitometry performed.
 
-## Intestinal injections
+### Intestinal injections
 
 Synthetic hexapeptides of CsgA (Nterm-QYGGNN-Cterm) and the non-amyloidogenic mutant N122A (Nterm-QYGGNA-Cterm) were purchased from Bio-Synthesis Inc (Lewisville, TX). Mice were anesthetized with isoflurane (1–4% vol/vol) and kept on a self-regulating heating pad throughout the procedure. A 10 µl Hamilton syringe fitted with a 36-gauge beveled needle was loaded with 30 µg of either hexapeptide in saline (9 µl total). Each animal was injected in three locations (both sides of pyloric antrum and duodenum [0.5 cm past the pyloric sphincter]; 3 µl each location) by inserting the needle tip bevel facing up into the intestine wall at a 15° angle. After injection, the abdominal muscle/peritoneal layer and skin were sutured separately, then mice returned to home cages. Mice were injected subcutaneously with buprenorphine SR (1 mg/kg) and monitored for 3 days for normal food and water consumption.
 
-## Statistics and data availability
+### Statistics and data availability
 
 Data were analyzed in GraphPad Prism, with the analysis indicated in each figure legend. Statistical output and numerical source data presented within the manuscript are available within the supplementary information included with this manuscript.

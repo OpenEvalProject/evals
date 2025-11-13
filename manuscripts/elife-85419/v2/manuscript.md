@@ -20,12 +20,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00vpwhm04 Institute of Neuroscience, State Key Laboratory of Neuroscience, Chinese Academy of Sciences, CAS Center for Excellence in Brain Science and Intelligence Technology, Shanghai Center for Brain Science and Brain-Inspired Technology Shanghai China
-2. https://ror.org/05qbk4x57 University of Chinese Academy of Sciences Beijing China
-3. https://ror.org/030bhh786 School of Life Science and Technology & State Key Laboratory of Advanced Medical Materials and Devices, ShanghaiTech University Shanghai China
-4. https://ror.org/00rytkh49 CAS Key Laboratory of Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Science Shanghai China
-5. https://ror.org/0551a0y31 Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China
-6. https://ror.org/05qbk4x57 School of Future Technology, University of Chinese Academy of Sciences Beijing China
+1. Institute of Neuroscience, State Key Laboratory of Neuroscience, Chinese Academy of Sciences, CAS Center for Excellence in Brain Science and Intelligence Technology, Shanghai Center for Brain Science and Brain-Inspired Technology Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
+2. University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
+3. School of Life Science and Technology & State Key Laboratory of Advanced Medical Materials and Devices, ShanghaiTech University Shanghai China ([ROR:030bhh786](https://ror.org/030bhh786))
+4. CAS Key Laboratory of Computational Biology, Shanghai Institute of Nutrition and Health, University of Chinese Academy of Sciences, Chinese Academy of Science Shanghai China ([ROR:00rytkh49](https://ror.org/00rytkh49))
+5. Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China ([ROR:0551a0y31](https://ror.org/0551a0y31))
+6. School of Future Technology, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 7. Lingang Laboratory Shanghai China
 
 † Corresponding author
@@ -46,15 +46,31 @@ To address these challenges, we designed a multiplexed tracing method capable of
 
 ## Results
 
-## MERGE-seq characterizes single neuron transcriptome and projectome simultaneously
+### MERGE-seq characterizes single neuron transcriptome and projectome simultaneously
 
 In order to use the 10x Genomics scRNA-seq system to analyze transcripts from cells infected with rAAV2-retro virus, we modified the viral vector by adding a 15 bp barcode index and polyadenylation signal sequences to the 3’ end of the EGFP sequences, which was driven by a short CAG promoter (Figure 1A and B, see Materials and ethods). Then, five rAAV2-retro viruses with different barcodes were individually injected into five brain regions of the same mouse, including AI, DMS, BLA, LH, and MD. These brain areas are the known downstream brain regions of vmPFC (Hunnicutt et al., 2016; Hurley et al., 1991; Reppucci and Petrovich, 2016; Vertes, 2004; Zhu et al., 2020). A period of six weeks was set to allow efficient retrograde labeling of vmPFC neurons by these barcoded viruses. These mice were then sacrificed and the vmPFC (specifically the prelimbic area [PrL] and the infralimbic area [IL]) was carefully dissected for scRNA-seq analysis (Figure 1A). Single-cell transcriptional libraries were obtained using 10x Genomics library preparation protocols, and virus barcode expression libraries were obtained using user-defined primers, which could enrich cDNA fragments composed of barcode index, unique molecular identifiers (UMIs), and the cell barcode (Figure 1B). We detected 24,788 cells in the raw data matrix. Following initial quality control, which ensured the number of detected RNA in each cell ranged between 500 and 8000, RNA UMI counts in each cell were within 1000–60,000, and the percentage of mitochondrial genes remained below 20%, we recovered 1791 cells undergoing fluorescence-activated cell sorting (FACS) from three mice and 19,470 single cells without sorting from the other three mice, a total of 21,261 cells. Transcriptional profiling of all cells revealed major cell types including excitatory neurons (Slc17a7+), microglia (C1qa+), endothelial cells (Itm2a+, Endo), oligodendrocyte progenitor cells (Olig2+Mog-, OPCs), oligodendrocyte (Olig2+Mog+, Oligo), inhibitory neurons (Gad1+), astrocyte (Aldh1l1+, Astro), and activated microglia (C1qa+Pf4+, Act. Microglia) as previously reported (Bhattacherjee et al., 2019; Figure 1C–E). Barcoded cells below refer to a collection of barcoded cells from unsorted group and FAC-sorted group.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the experimental workflow. (B) rAAV2 plasmid vector design, and schematic of designed primers to recover cell barcode and UMI in read 1, and 3’ tail of EGFP and virus barcode in read 2. According to the recommendation of 10x Genomics, a faithful mapping should cover 28 bp for read 1 and 91 bp for read 2. In our design, 150 bp pair-end sequencing can sufficiently meet the need to recover cell barcode, UMI and virus barcode. (C) Umap embedding of transcriptional clustering results for all vmPFC cells. (D) Stacked violin plots showing the expression of markers for each cluster. (E) Heatmap showing the gene-expression correlation between major cell types defined by scRNA-seq of this study and Bhattacherjee et al., 2019. (F) Umap embedding of all determined barcoded cells labeled in blue. (G) Bar plot showing frequency of barcoded (blue) and non-barcoded (grey) cells in all recovered cell types. In (C–E), 21,261cells were represented. In (F, G), 20,047cells were represented. 1214 cells with exceptionally high nUMIs were removed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The position of injection sites (AI-1, AI-2, DMS, LH, MD, BLA) to deliver rAAV2-retro-EGFP plotted on coronal section diagrams (top). The left corner values indicate the anteroposterior distance of the section from bregma. Representative immunohistochemistry images showing rAAV2-retro-EGFP injection sites in coronal sections (bottom). Scale bars: 500 μm. AI-1, agranular insular cortex, anterior; AI-2, agranular insular cortex, posterior. (B) Frequency of hamming distance (HD) of five reference barcode sequences. (C) Density distribution of HD of best and second-best hit when comparing barcode sequences form reads to and five barcode references. The distance to the best hit (identified barcode) is 0 across four samples as we used perfect match for the identification. And the distance of the second best hit is ~10, showing that there are sufficient sequence difference to identify the right barcode among five references during sequencing. (D) Boxplot displaying the count distribution of UMIs for neurons with projections identified by different barcodes and a sum of all five barcodes across projectome and scRNA-seq libraries. (E) Density plots contrasting the distribution of UMIs for each target region between non-neuronal cells (green), EGFP-negative cells (blue), and FAC-sorted cells (red). The dashed line indicates a threshold for UMI counts of a barcoded neuron. Note that EGFP-negative cells are subset of FAC-sorted group and determined as nUMI of EFGP RNA = 0. (F) Violin plots of Log10 normalized projection index barcode counts. Note that after choosing the UMI counts threshold, UMI counts below threshold were dropped to zero. (G) Stacked bar plot showing barcoded and non-barcoded cell ratio in FAC-sorted group or unsorted group as determined by stringent UMI threshold. (H) Stacked bar plot showing EGFP-positive (nUMI of EFGP RNA >0) and EGFP-negative cells (nUMI of EFGP RNA = 0) ratio in FAC-sorted group or unsorted group as determined by scRNA-seq.
+
 First, we validated that each target region was labeled and effectively covered by the rAAV2-retro-EGFP (Figure 1—figure supplement 1A). Next, we showed that there were sufficient sequence differences to distinguish one barcode from others and sufficient sequences difference to identify the right barcode among five references during sequencing (Figure 1—figure supplement 1B, C). Since each downstream brain region of vmPFC received a unique and predetermined barcoded virus, each virus barcode identified in a vmPFC neuron represents the specific corresponding downstream brain region that the neuron projects to. We found abundant zero counts for projection barcodes in scRNA-seq libraries, contrasting robust detection in projectome libraries generated by targeted amplification from full-length cDNA (Figure 1—figure supplement 1D). To determine validly barcoded cells, we first calculated the 95th nUMI percentile across all barcodes and removed outlier cells with exceptionally high nUMI (see Materials and methods). We used ‘EGFP-negative’ FAC-sorted cells (defined by nUMI EGFP = 0) and non-neuronal cells from scRNA-seq as negative controls to calculate 99.9th percentile UMI thresholds per barcode using empirical cumulative distribution functions (ECDF; Figure 1—figure supplement 1E). By taking the higher threshold for each barcode from these two negative control analyses, we classified cells exceeding these values as validly barcoded. It is worth mentioning that the UMI threshold differs for different targets due to different magnitude of barcode expression of each projection target (Figure 1—figure supplement 1F). Across all detected cell types, barcoded cells were primarily excitatory neurons rather than inhibitory neurons or non-neuronal cell types (2116 validly barcoded in 8805 excitatory neurons, and 5 validly barcoded in 2738 endothelial cells, 3 validly barcoded in 1780 oligodendrocyte progenitor cells, 7 validly barcoded in 1773 oligodendrocytes, and 17 in 1420 inhibitory neurons, Figure 1F and G). This is consistent with the finding that mPFC projection neurons are excitatory (Gabbott et al., 2005). Using this stringent threshold, 49.0% of FAC-sorted and 18.7% of unsorted cells were classified as barcoded (Figure 1—figure supplement 1G). In parallel, we calculated EGFP+ ratios (nUMI of EGFP RNA >0) as 81% for FAC-sorted and 26% on average for unsorted cells (Figure 1—figure supplement 1H). The lower fraction of barcoded versus EGFP+ cells suggests our conservative threshold increases false negatives, classifying some low UMI cells as non-barcoded. Therefore, we focused analyses on reliably barcoded cells, though conclusions may not capture the full heterogeneous projection repertoire. Together, these results demonstrate that MERGE-seq can record single neuron transcriptome and projectome simultaneously.
 
-## MERGE-seq reveals transcriptomic heterogeneity and cell type composition of vmPFC neurons projecting to different targets
+### MERGE-seq reveals transcriptomic heterogeneity and cell type composition of vmPFC neurons projecting to different targets
 
 Previous studies have shown that vmPFC neurons project to multiple brain regions including AI, DMS, BLA, LH, and MD; however, the cell type composition of these projection neurons remains largely unknown (Le Merre et al., 2021). Combining with single neuron transcriptome, we explored the transcriptome and subtype composition of vmPFC neurons projecting to different downstream brain regions. We first re-clustered excitatory projection neurons expressing Slc17a7 (also known as vesicular glutamate transporter, Vglut1). Clusters with low gene/UMI counts and high mitochondrial gene expression were filtered out as low-quality (Ilicic et al., 2016). Some clusters exhibited non-neuronal cell markers like microglial genes (C1qa, C1qb), oligodendrocyte genes (Olig1, Olig2), and endothelial cell genes (Flt1, Cldn5) despite small cluster size, indicating contamination from other cell types incorrectly grouped within excitatory neurons after initial clustering. In total, we filtered out 637 cells that were identified as either low-quality or contaminated with non-neuronal cell types and recovered 9368 excitatory neurons (see Materials and methods, Figure 2—figure supplement 1A, Supplementary file 1). We generated seven excitatory neuron clusters, which were annotated based on typical markers of cortical layers (Bhattacherjee et al., 2019; Sorensen et al., 2015; layer 2/3, Cux2; layer 5, Etv1; layer 6, Sulf1) and differentially expressed genes (DEGs; Supplementary file 2). These neuron clusters include L2/3-Calb1 (4.1%), L2/3-Rorb (5.9%), L5-Bcl6 (3.3%), L5-Htr2c (3.9%), L5-S100b (11.6%), L6-Npy (12.6%), and L6-Syt6 (58.7%; Figure 2A). The layer and subtype marker genes of these clusters were confirmed to be expressed in corresponding layers in the vmPFC, as revealed by in situ hybridization results of the Allen Mouse Brain Atlas (Figure 2A, Figure 2—figure supplement 1A–C). Of note, we captured more layer 6 neurons than superficial layer neurons (12.6% L6-Npy and 58.7% L6-Syt6, Figure 2B), which is different from a previous report (Bhattacherjee et al., 2019). We speculate that different dissociation protocols may cause biased neuron capture.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig2-v2.jpg)
+
+**Figure 2.:** (A) Umap embedding of excitatory neuron subtype annotation. (B) Bar plot showing frequency of barcoded (blue) and non-barcoded (grey) neurons in distinct neuron subtypes. (C) Stacked violin plot showing the expression of markers for each neuronal subtype. (D) Heatmap showing the gene-expression correlation between excitatory subtypes defined by Multiplexed Error-Robust Fluorescence in situ Hybridization (MERFISH) and scRNA-seq. MERFISH data were downloaded from Bhattacherjee et al., 2023. (E) Umap embeddings of barcoded (blue) neurons projecting to each target. Number indicates the number of barcoded cells for each target. (F) Bar plot describing the distribution of neuronal subtypes for barcoded neurons associated with each projection target. Neuronal subtype color codes are the same as in (A), number of barcoded cells are same as the number indicated in (E) for each target. (G) Bar plot describing the distribution of projection targets for barcoded neurons associated with each neuronal type. In (A, C, D), 9368 cells in total were represented. In (B, E, F), 8210 cells in total were represented. In (G), cell numbers represented are as follows: L2/3-Calb1=72 cells, L2/3-Rorb=331 cells, L5-Bcl6=145 cells, L5-S100b=766 cells, L6-Npy=526 cells, L6-Syt6=1264 cells.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Normalized Slc17a7 (vGlut1) expression for all extracted excitatory neurons. (B) In situ hybridization of typical layer-specific markers within the vmPFC region from the Adult Mouse Brain Atlas. Cux2 is layer 2/3-specific; Etv1 is layer 5-specific; Sulf1 is layer 6-specific (left). Normalized expression of Cux2, Etv1, and Sulf1 at umap embedding (right). (C) In situ hybridization of typical neuronal subtype markers in the vmPFC from the Adult Mouse Brain Atlas. Calb1 and Rorb are layer 2/3-specific; Htr2c and S100b are layer 5-specific; Bcl6 is around the transition of layer 2/3 and layer 5. Syt6 and Npy are layer 6-specific, though Npy is distributed sporadically. Corresponding normalized gene expression embedded in umap is plotted in the right panel. (D) Heatmap showing the gene-expression correlation between excitatory subtypes defined by scRNA-seq of this study and (Lui et al., 2021), (left) or (Yao et al., 2021), (middle) or (Bhattacherjee et al., 2019), (right). (E) Stacked bar plots showing neuronal subtype composition of pooled unsorted mice and pooled FAC-sorted mice for each projection target. Statistical approach was not applied due to the limitations of having a single observation per cluster per group.
 
 Cells that were retrogradely barcoded spanned all layers of the vmPFC (layer 2/3, 5, and 6) and included all seven neuronal subtypes (Figure 2A–C). These subtypes were highly corresponding to the spatially resolved PFC excitatory neuronal subtypes (Bhattacherjee et al., 2023; see Materials and methods, Figure 2D). High correlation allows us to infer the spatial localization of our annotated subtypes detected in scRNA-seq data. We also found that excitatory neuronal subtypes are transcriptionally similar to those previously reported (Figure 2—figure supplement 1D; Bhattacherjee et al., 2019; Lui et al., 2021; Yao et al., 2021). All these integrated analyses suggest that multiple viral infections will not significantly affect the transcriptional state of these retrogradely labeled vmPFC neurons. For the L5-Htr2c subtype, only nine neurons were recovered with valid barcodes, possibly due to cell loss during single-cell dissociation or tropism of AAV2-retro, or these neurons may intrinsically not project to any target we chose (Figure 2B). Neurons projecting to DMS were abundant (n=1242), whereas neurons projecting to BLA were rare (n=163; Figure 2E). These results are consistent with data acquired via conventional fluorescence-based retrograde tracing in the prefrontal cortex of rats (Gabbott et al., 2005).
 
@@ -64,9 +80,17 @@ As the layer distribution of each neuron subtype can be inferred by their layer 
 
 Together, by MERGE-seq analysis, we have revealed the heterogeneity and cellular composition of vmPFC neurons projecting to different target. Our results demonstrate that vmPFC neurons projecting to a certain target are composed of different transcriptome-defined neuronal subtypes, and individual transcriptome-defined subtypes of vmPFC neuron project to multiple targets.
 
-## MERGE-seq reveals dedicated and collateral projection patterns of vmPFC neuron at single cell level
+### MERGE-seq reveals dedicated and collateral projection patterns of vmPFC neuron at single cell level
 
 Interestingly, we found that a portion of barcoded vmPFC neurons had more than one type of barcode, suggesting collateral projection of these neurons. We therefore analyzed the projection pattern of each barcoded vmPFC neuron by calculating the number of valid barcode types (see Materials and methods). We defined the dedicated projection neuron as a neuron containing only one type of barcode, the collateral projection neuron as a neuron containing more than one type of barcode. We found 64.88% of 2050 viral-barcoded neurons belonged to dedicated projection and the remaining belonged to collateral projection. A total of 23.37% had dual targets (bifurcated projection), 8.15% had triple targets, and 3.61%, if any, projected to more than three targets (Figure 3A). It is worth mentioning that the definition of ‘dedicated’ and ‘collateral’ projections relies solely on the analysis of MERGE-seq data. The quantitative resolution of dedicated and collateral projections of vmPFC neurons will depend on the comprehensiveness of retrograde labeling from all postsynaptic targets and labeling efficiency. By calculating the conditional probability that the same neuron projects to two targets (see Materials and methods), we found that vmPFC neurons projecting to AI or BLA were more likely to have collateral projection to DMS (Figure 3B). We also observed a relatively high conditional probability of collateral projection between MD and LH, or DMS and LH, or DMS and MD (Figure 3B), suggesting bifurcated projections to these paired targets for single vmPFC neuron.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig3-v2.jpg)
+
+**Figure 3.:** (A) Pie chart indicating the number of projection targets for barcoded vmPFC neurons recovered by MERGE-seq. (B) Heatmap showing the probability that a neuron projecting to area A also projects to area B. (C) Bar graph illustrating the percentage of neuronal projection pattern of all projection patterns given five projection targets inferred by MERGE-seq (red bars) versus the 1155 fMOST-based single-neuron projectome data (blue bars) (Gao et al., 2022). (D) Boxplot comparison of percentage of neurons with different projection targets identified by MERGE-seq and fMOST. (E) Heatmap showing normalized projection strength. Rows represent the projection targets and columns represent the cells labeled by the top 10 binary projection patterns or labeled by transcriptional neuron subtypes. (F) Alluvial plot showing the 10 most frequent projection patterns distribution into neuronal subtypes. (G) Pie charts describing the projection patterns from (E) partitioned by neuronal subtype. In (A, B), 2050 barcoded neurons were represented. In (C, D), 2050 barcoded neurons from MERGE-seq data were represented, 1155 cells with fMOST data were represented (Gao et al., 2022). In (E–G), 1853 barcoded neurons (top 10 frequent projection patterns) were represented.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–L) Immunostaining of dual-color traced retrograde labeled neurons of selected targets DMS (GFPnls) /LH (tdTomato), AI (GFP) /DMS (tdTomato), DMS (GFPnls) /BLA (tdTomato), and BLA (GFP) /LH (tdTomato). (A, D, G, J). Dotted line depicts layers 2/3, 5, and 6 of the vmPFC. Scale bars, 500 µm. (B, E, H, K) Enlarged view of the dotted box in (A, D, G, J). Scale bars, 100 µm. (C, F, I, L) Histogram shows quantitative data for single- (red, green) and double- (yellow) labeled neurons as mean percentages of total rAAV2-retro labeled neurons (n=3 mice). Data are presented as mean ± SD. Pie chart showing layer distribution of double (yellow) labeled neurons. (M) Normalized projection index barcode expression on PC1 and PC2 embeddings and binary projection annotation labeled on PC1 and PC2 embeddings. Note that only the 10 most frequent binary projection patterns were included. Data are the mean ± SD.
 
 We first validate the bifurcated projection patterns (2 targets) inferred from the digital projectome. We injected retrograde AAV2 encoding different fluorescent proteins (EGFP or tdTomato) into different combinations of projection targets (dual-color rAAV2-retro labeling assay), and analyzed the projection patterns by immunohistochemistry. Consistent with MERGE-seq identifying DMS + LH bifurcated projections (Figure 3B), dual-color labeling revealed 17.8% ± 0.11% of vmPFC neurons collateralize to DMS and LH (Figure 3—figure supplement 1A–C). Of these, 73.28% ± 7.60% localized to layer 5 (Figure 3—figure supplement 1A–C). Other bifurcated projection patterns inferred by MERGE-seq was also verified by our dual-color retro-AAV labeling assay. These patterns included DMS + AI (23.1% ± 2.03% of all dual-color neurons) and DMS + BLA (6.59% ± 1.55%) (Figure 3—figure supplement 1D–I). In contrast, we only observed 1.66% ± 0.92% of dual-color labeled neurons in BLA + LH group (Figure 3—figure supplement 1J–L). This result is consistent with our MERGE-seq analysis, in which BLA + LH was not inferred as bifurcated projection targets (Figure 3B), further supporting the accuracy of the digital projectome based on MERGE-seq analysis.
 
@@ -76,21 +100,45 @@ Next, we focused our analysis on the 5 dedicated projections (DMS, AI, MD, LH, a
 
 Overall, MERGE-seq elucidated dedicated and collateral vmPFC neuron projections at the single-neuron level, demonstrating diversity in projection patterns within individual vmPFC neurons. Furthermore, projection-defined (collateral or bifurcated) neurons have specific cell type composition and layer distributions. It is worth noting that as a proof of concept, we only acquired the vmPFC projectome from five downstream targets. Definitions of dedicated or collateral projections are thus limited to these five targets and some collateral projections may be underestimated.
 
-## Transcriptional profiling of projection target-specific vmPFC neurons
+### Transcriptional profiling of projection target-specific vmPFC neurons
 
 Next, we sought to determine the molecular features of neurons projecting to different downstream targets. We calculated DEGs for each target-specific projection neurons (Figure 4A, Figure 4—figure supplement 1). We found that some of projection-specific DEGs are marker genes of typical neuronal types. For example, Syt6, Foxp2, and Cyr61 are both MD-projecting DEGs and marker genes of L6-Syt6 neurons; Rorb and Slc24a3 are both DMS-projecting DEGs and marker genes of layer 2/3 neurons (neuronal subtype L2/3-Rorb; Figure 2C, Figure 4A, Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig4-v2.jpg)
+
+**Figure 4.:** (A) Volcano plots DEGs of MD-projecting versus non-MD-projecting vmPFC neurons. Assigned DEGs (red dots) were determined using threshold: Log2 fold change = 0.5, p value cutoff=10–10. (B) Immunostaining of EGFP (MD) and tdTomato (LH), and RNA FISH of Syt6. (i, ii) Enlarged view of dotted box in (B). (i) represents typical view at layer 6 and (ii) represents typical view at layer 5. Arrow head indicates Syt6+EGFP+ neurons. (C) Quantifications of (B). (B) Scale bars, 200 μm. i, ii in (B) Scale bars, 50 μm. N=3 mice. Data are presented as mean ± SD. In (A), 8210 cells were represented.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Volcano plots DEGs of DMS-projecting versus non-DMS-projecting vmPFC neurons, AI-projecting versus non-AI-projecting vmPFC neurons, BLA-projecting versus non-BLA-projecting vmPFC neurons, and LH-projecting versus non-LH-projecting vmPFC neurons. Assigned DEGs (red dots) were determined using threshold: Log2 fold change = 0.5, p value cutoff=10–10.
+
 We further validated the molecular features of neurons associated with their specific projections by combining RNA fluorescence in situ hybridization (FISH) and retrograde labeling. Syt6 is one of the DEGs of MD-projecting neurons (Figure 4B), and is the marker gene of L6-Syt6 cluster. By retrograde labeling of MD-projecting neurons and Syt6 FISH experiment, we found that about 51.6% ± 16.9% Syt6+ neurons project to MD. Further statistical analysis showed that, among Syt6+ MD-projecting (Syt6+EGFP+) neurons, 84.2% ± 14.8% were located in layer 6 while 15.8% ± 14.8% were located in layer 5 (Figure 4C), similar to the pattern obtained in our MERGE-seq analysis (Figure 2F). These results are in accordance with single-neuron projectomic and transcriptomic analysis of MERGE-seq, indicating that MERGE-seq can faithfully reveal the transcriptomic features of projection-specific neurons.
 
-## MERGE-seq uncovers the molecular features of collateral projection neurons in vmPFC
+### MERGE-seq uncovers the molecular features of collateral projection neurons in vmPFC
 
 Axons of projection neurons, including vmPFC neurons, have highly complex collaterals, which could regulate information processing and neural response properties at the microcircuit level (Gagnon and Parent, 2014; Gao et al., 2022; Rockland, 2019). However, the molecular features of neurons sending collateral projections remain elusive. MERGE-seq provides an opportunity to explore. Here, we identified DEGs for neurons with dedicated and collateral projection pattern (Figure 5A). Next, we asked whether there was transcriptional difference between neurons with dedicated projection to A and neurons with bifurcated projection to A and B. DEGs were rare in comparisons between projection patterns A/B vs. A, or A/B vs. B in all of groups we tested, except for the DMS + LH group and DMS + MD group (Figure 5B and C,Figure 5—figure supplement 1). We found that DMS + LH projection neurons were transcriptionally distinct to DMS but similar to LH, and DMS + MD neurons were transcriptionally distinct to DMS but similar to MD (Figure 5B and C,Figure 5—figure supplement 1). Specifically, we identified a set of genes which differentially expressed in DMS + LH projection neurons (such as Pou3f1, Igfbp4, and Gprc5b) or DMS + MD projection neurons (such as Rprm, Crym, Hs3st4 and Bc1). Interestingly, Pou3f1 is marker gene of L5-Bcl6 neurons (layer 5 neuron subtype), representing one of the two distinct neuron subtypes within the DMS + LH projection neuronal population (Figure 3G). We next verified the specific gene expression in DMS + LH projection neurons by using RNA FISH in combination with dual-color retrovirus labeling assay (Figure 5D). We found that the expression of Pou3f1 was mainly distributed in layer 5, where Pou3f1 was specifically expressed in dual-color labeled DMS + LH projecting neurons (white arrowheads, Figure 5E) and LH projecting neurons (white arrows, Figure 5E), but not DMS projecting neurons (blue arrows, Figure 5E). Quantification analysis showed that, among Pou3f1+ neurons, there are 55.7% ± 10.4% DMS + LH-projecting (Pou3f1+EGFP+tdT+) neurons, 31.6% ± 13.1% dedicated LH-projecting (Pou3f1+EGFP-tdT+) neurons, and 8.89% ± 2.38% dedicated DMS-projecting (Pou3f1+EGFP+tdT-) neurons (Figure 5G). We additionally discovered that 3.79% ± 2.91% of Pou3f1+ neurons did not project to either DMS or LH (Pou3f1+EGFP-tdT-) (yellow arrowheads, Figure 5F, Figure 5G). These results are consistent with our observation based on MERGE-seq data (Figure 3G).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig5-v2.jpg)
+
+**Figure 5.:** (A) Heatmap showing scaled expression of calculated DEGs based on 10 projection patterns. Top 10 DEGs ordered by average log2 fold change of each pattern were selected. (B) Volcano plot showing genes differentially expressed in the DMS + LH-bifurcated projection pattern compared to the DMS-dedicated projection pattern. (C) Track plots showing normalized data of the selected DEGs in DMS-dedicated, LH-dedicated, and DMS + LH-bifurcated projection pattern. (D–F) Examining Pou3f1 and DMS + LH-bifurcated projection pattern using RNA FISH and immunostaining of dual-color traced retrograde labeled neurons. Virus injection scheme was the same as in Figure 3—figure supplement 1. Scale bars, 200 µm. (E, F) Enlarged view of dotted box in (D). Arrow heads indicate Pou3f1+EGFP+tdTomato+ neurons, white arrows indicate Pou3f1+EGFP-tdTomato+ neurons, blue arrows indicate Pou3f1-EGFP+tdTomato- neurons, and yellow arrowheads indicate Pou3f1+EGFP-tdTomato- neurons. Scale bars, 50 µm. (G) Quantification of (D). N=3 mice, Data are presented as mean ± SD. In (A), 1,853 barcoded neurons (top 10 frequent projection patterns) were represented. In (C), 805 barcoded neurons (projection pattern DMS + LH = 35, LH = 176, DMS = 594) were represented.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Volcano plots of DEGs calculated between A and A/B projection patterns. See also Figure 5. Assigned DEGs (red dots) were determined using threshold: Log2 fold change = 0.5, p value cutoff=10–5. (B) Track plots showing normalized data of the selected DEGs (DMS versus DMS + MD projection) in DMS-dedicated, MD-dedicated, and DMS + MD-bifurcated vmPFC neurons.
+
 Together, by MERGE-seq analysis and experimental validation, we uncovered that Pou3f1 predominantly marks neurons projecting to the LH, denoting a distinct subset with collateral projections to both DMS and LH.
 
-## Machine learning-based modeling reveals gene clusters for predicting projection patterns
+### Machine learning-based modeling reveals gene clusters for predicting projection patterns
 
 Although many efforts have been made to correlate gene expression with neuronal circuit connectivity (Huang et al., 2020; Sorensen et al., 2015; Sun et al., 2021), the lack of a shared coordinate system for two modalities or limited genes examined reduces the prediction precision. MERGE-seq overcomes these challenges by acquiring high-throughput gene expression and projection pattern in the same neuron (Figure 6A). To evaluate potential relationships between the transcriptome and projectome, we used a probabilistic classifier, Naïve Bayes classifier, to predict binary projection patterns for each projection target based on transcription profiles. First, we encoded binary projection labels for each target region, encompassing both barcoded and non-barcoded projections, and subsequently trained a separate set of models for each of the five targets: AI, DMS, BLA, LH, and MD (see Materials and methods). Subsequently, we conducted a systematic evaluation of the impact of varying numbers of highly variable genes (HVGs), ranging from 2 to 5000, on model performance. This analysis revealed that employing the top 50 HVGs for modeling yielded the the highest F1 score (a harmonic mean of precision and recall), area under the curve (AUC), and a comparatively high prediction accuracy (see Materials and methods, Figure 6—figure supplement 1A). Next, we chose top 50 HVGs as features to build the model. As a control model, we chose 50 randomly chosen genes. Five projection targets models were independently trained by splitting cells into training (70%) and test dataset (30%). Using top 50 HVGs also gave rise to significantly better model performance in regarding to prediction accuracy, AUC and F1 score, compared to using randomly chosen 50 genes (Figure 6B). We also performed 100 iterations randomly sampling 1000 cells and swapping barcoded with non-barcoded labels, which substantially decreased model predictive performance across various evaluation metrics (see Materials and methods, Figure 6—figure supplement 1B). This outcome underscores the critical importance of label accuracy for the predictive capabilities of the model, suggesting the authenticity of current barcoded cells labels despite potential false positives from stringent UMI thresholding. Altogether, these results suggest that the top 50 HVGs are more informative for predicting and decoding projection patterns.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematics of machine learning modeling steps. (B) Prediction accuracy (left panel), AUC score (middle panel) and F1 score (right panel) of top HVGs and random chosen equal number of genes for modeling building. A total of 100 trials have been performed by randomly sampling 1000 cells from 8210 cells. Top 50 HVGs or 50 randomly chosen genes were used as features per trial. Comparisons were made between models built by the HVGs group and random genes group for each projection target. The displayed p value was computed using a two-sided Wilcoxon test. Data are the mean ± SD. (C, E) SHAP summary plots of DMS and MD showing important features (genes) with feature effects. For each model, non-barcoded cells were encoded to class 0 and barcoded cells were encoded to class 1. Models were built using top 50 HVGs. (D, F) Normalized expression of the most important genes with positive feature effects in Naïve Bayes modeling of DMS (D) or MD (F) and normalized expression of barcode 1 representing DMS-projecting (E) or barcode 2 representing MD-projecting (F) on PC1 and PC2 embeddings. Note that bottom panel of (D, F) is identical to DMS and MD barcode expression in Figure 3—figure supplement 1M. In (D, F), 1853 barcoded neurons (top 10 frequent projection patterns) were represented. In (C, E), For calculating SHAP values, both the training and testing datasets were subsampled to include 1500 cells each.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85419/elife-85419-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Prediction accuracy (left panel), AUC score (middle panel) and F1 score (right panel) by tuning number of HVGs used for naïve bayes modeling building. A total of 100 trials have been performed by randomly sampling 1000 cells from 8210 cells and calculating top HVGs per trial. (B) Prediction accuracy (left panel), AUC score (middle panel) and F1 score (right panel) of original top 50 HVGs and after swapping barcoded/non-barcoded cell labels for modeling building. A total of 100 trials have been performed by randomly sampling 1000 cells from 8210 cells. In each trial, barcoded/non-barcoded cell labels were swapped. The number of swapped cells depends on the minimum number of barcoded cells or non-barcoded cells. Models were built with the top 50 HVGs using original labels (Original) or labels swapped (Swapping) for comparison for each projection target. The displayed p value was computed using a two-sided Wilcoxon test. Data are the mean ± SD. (C) SHAP summary plots of AI, BLA, and LH showing important features (genes) with feature effects. For each model, non-barcoded cells were encoded to class 0 and barcoded cells were encoded to class 1.
 
 To interpret the important genes contributing to a certain projection pattern, we used a game-theoretic approach to explain the output of HVGs-based Naïve Bayes models (Lundberg et al., 2020; Figure 6A). We used top 50 HVGs to build Naïve Bayes model and summarized effects of HVGs in SHAP (SHapley Additive exPlanations) values for each projection pattern (see Materials and methods; Figure 6C–F, Figure 6—figure supplement 1C). As examples, Nptxr gene was the top positive predictors for DMS projection, suggesting that a cell that expresses high levels of Nptxr has a higher probability of projecting to DMS. Similarly, Rprm was the top positive predictors for MD projection. By examining top effective genes (features) on PC embeddings of the projection matrix, we found that the expression pattern of these positive predictors mostly overlaps with projection barcode distribution (Figure 6D and F). These results mathematically establish the relationship between gene expression and structural connectivity, indicating the predictive power of a specific gene cluster for projection properties of vmPFC neurons.
 
@@ -114,63 +162,332 @@ In summary, we develop MERGE-seq, a powerful multiplexed projectome and transcri
 
 ## Materials and methods
 
-## AAV vector design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rat Monoclonal)</td>
+      <td>Nacalai</td>
+      <td>Cat# 04404–84, RRID:AB_10013361</td>
+      <td>IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tdTomato (Goat Polyclonal)</td>
+      <td>OriGene</td>
+      <td>Cat#AB8181-200, RRID:AB_2722750</td>
+      <td>IHC(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hoechst 33342</td>
+      <td>Lifetech</td>
+      <td>Cat#H3570</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rat Alexa Fluor 488 (Donkey Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A21208</td>
+      <td>IHC(1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Alexa Fluor 568 (Donkey Polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat#A11057</td>
+      <td>IHC(1:800)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-tdTomato (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat#59462</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-0-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190864</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-1-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190865</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-2-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190866</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-3-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190867</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-4-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190868</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-5-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190869</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-6-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190870</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-7-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190871</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-8-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190872</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-9-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190873</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFP barcode-10-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190874</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFPnls barcode-206-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190875</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAV-CAG-EGFPnls barcode-210-SV40 polyA (plasmid)</td>
+      <td>This paper</td>
+      <td>Cat#190876</td>
+      <td>Submitted to Addgene</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AMPA receptor antagonist CNQX</td>
+      <td>Abcam</td>
+      <td>Cat#ab120017</td>
+      <td>working concentration:10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NMDA receptor antagonist D-AP5</td>
+      <td>Abcam</td>
+      <td>Cat#ab120003</td>
+      <td>working concentration:50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Mercaptoethanol</td>
+      <td>Sigma</td>
+      <td>Cat#M6250</td>
+      <td>working concentration:0.067 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Invitrogen</td>
+      <td>Cat#15575020</td>
+      <td>working concentration:1.1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Cysteine hydrochloride monohydrate</td>
+      <td>Sigma</td>
+      <td>Cat#C7880</td>
+      <td>working concentration:5.5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deoxyribonuclease I</td>
+      <td>Sigma</td>
+      <td>Cat#D4527</td>
+      <td>working concentration:100 units/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease</td>
+      <td>Sigma</td>
+      <td>Cat#P5147</td>
+      <td>working concentration:1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dispase</td>
+      <td>Worthington</td>
+      <td>Cat#LS02106</td>
+      <td>working concentration:1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington</td>
+      <td>Cat#LS003126</td>
+      <td>working concentration:20 units/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Debris Removal Solution</td>
+      <td>Miltenyi</td>
+      <td>Cat#130-109-398</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Single Cell 3' Reagent Kits (v3)</td>
+      <td>10 X Genomics</td>
+      <td>Cat#PN1000075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra II Q5 Master Mix</td>
+      <td>NEB</td>
+      <td>Cat#M0544L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SPRIselect</td>
+      <td>Beckman</td>
+      <td>Cat#B23317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mm-Syt6</td>
+      <td>ACD Bioscience</td>
+      <td>Cat#449641</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mm-Pou3f1-C2</td>
+      <td>ACD Bioscience</td>
+      <td>Cat#436421-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P5-Read1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P7-index-Read2-EGFP</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAAGCAGAAGACGGCATACGAGATAGGATTCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTGgCATGGACGAGCTGTACAAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### AAV vector design
 
 Plasmid pAAV-CAG-tdTomato (Addgene, #59462) was first modified by replacing tdTomato and WPRE with EGFP by T4 DNA Ligase mediated ligation. A 15 bp barcode sequence was then inserted after the stop codon of EGFP, linked by EcoRI restriction enzyme recognition site. Sequences barcode 0 representing the AI target, CTGCACCGACGCATT; barcode 1 (DMS target), GAAGGCACAGACTTT; barcode 2 (MD target), GTTGGCTGCAATCCA; barcode 3 (BLA target), AAGACGCCGTCGCAA; barcode 4 (LH target), TATTCGGAGGACGAC. Other barcode sequences used for IHC include barcode 10, AGCTATGCACGATCA; barcode 206, GCGTAAGTCTCCTTG; barcode 210, CCTGTATGCGTGGAG. Engineered viruses were produced by Gene Editing Core Facility, Center for Excellence in Brain Science and Intelligence Technology.
 
-## Virus injection
+### Virus injection
 
 Male adult C57BL/6 mice (8 weeks of age) were anesthetized intraperitoneally using pentobarbital sodium (10 mg/mL, 120 mg/kg b.w.) and unilaterally injected with rAAV2-retro-EGFP-Barcode virus (barcode 0, 1, 2, 3, 4) into five projection targets simultaneously. Coordinates for these injections are as follows. Reference from Bregma and dura, AI at two locations (in mm: 2.0 AP, 2.52 ML, –2.0 DV; 1.6 AP, 2.97 ML, –2.2 DV) with rAAV2-retro-EGFP-barcode 0 (250 nl and 200 nl, 2.90×1013 VG/ml); DMS at one location (in mm: 0.6 AP, 1.8 ML, –2.2 DV, 8 degree angle), with rAAV2-retro-EGFP-barcode 1 (500 nl, 1.00×1013 VG/ml); MD at one location (in mm: –1.25 AP, 1.35 ML, –3.55 DV, 20 degree angle), with rAAV2-retro-EGFP-barcode 2 (300 nl, 1.27×1013 VG/ml); BLA at one location (in mm: –1.5 AP, 3.2 ML, –4.2 DV), with rAAV2-retro-EGFP-barcode 3 (300 nl, 2.00×1013 VG/ml); LH at one location (in mm: –0.94 AP, 1.2 ML, –4.55 DV), with rAAV2-retro-EGFP-barcode 4 (250 nl, 2.25×1013 VG/ml). Following each injection, the micropipette was left in the tissue for 10 min before being slowly withdrawn to prevent virus spilling and backflow. Mice were sacrificed 6 weeks after virus injection. Single-cell suspensions were generated as described in methods below.
 
 For dual-color retrograde virus tracing, two regions were ipsilaterally injected with virus at the same time, one with rAAV2-retro-EGFP-barcode 10 (2.00×1013 VG/ml) or rAAV2-retro-EGFPnls-barcode 206 or 210 (3.10×1013 VG/ml for barcode 206 and 4.38×1013 VG/ml for barcode 210) and one with rAAV2-retro-tdTomato (2.25×1013 VG/ml). rAAV2-retro-EGFPnls was used to avoid dense fiber staining when performing immunohistochemistry. We deposited the virus plasmid constructs to Addgene (pAAV-CAG-EGFP barcode-(0–10)-SV40 polyA, pAAV-CAG-EGFPnls barcode-(206, 210)-SV40 polyA; Addgene ID 190864–190876).
 
-## scRNA-seq sample and library preparation
+### scRNA-seq sample and library preparation
 
 For mice without FAC-sorting (mouse #1, #2, #3), three mice that had been injected with virus were anaesthetized and then subjected to transcranial perfusion with ice-cold oxygenated self-made dissection buffer (in mM: 92 Choline chloride, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 20 HEPES, 25 Glucose, 5 Sodium ascorbate, 2 Thiourea, 3 Sodium pyruvate, 10 MgSO4.7H2O, 0.5 CaCl2.2H2O, 12 N-Acetyl-L-Cysteine). The brain was removed, 300 µm vibratome sections were collected, and the PrL and IL regions were microdissected under a stereo microscope with a cooled platform. Brain slices were incubated in dissection buffer with 10 µM AMPA receptor antagonist CNQX (Abcam, ab120017) and 50 µM NMDA receptor antagonist D-AP5 (Abcam, ab120003) at 33 °C for 30 min. The pieces were dissociated first using the ice-cold oxygenated dissection buffer added papain (20 units/ml, Worthington, LS003126), 0.067 mM 2-mercaptoethanol (Sigma, M6250), 1.1 mM EDTA (Invitrogen, 15575020), 5.5 mM L-Cysteine hydrochloride monohydrate (Sigma, C7880) and 100 units/ml Deoxyribonuclease I (Sigma, D4527), with 30–40 min enzymatic digestion at 37 °C, followed by 30 min 1 mg/ml protease (Sigma, P5147) and 1 mg/ml dispase (Worthington, LS02106) enzymatic digestion at 25 °C. Supernatant was removed and digestion was terminated using dissection buffer containing 2% fetal bovine serum (FBS, Bioind, 04-002-1A). Single-cell suspension was generated by manual trituration using fire-polishing Pasteur pipettes and filtered through a 35 µm DM-equilibrated cell strainer (Falcon, 352052). Cells were then pelleted at 400 × g for 5 min. The supernatant was carefully removed and resuspended in 1–2 ml dissection buffer containing 2% FBS. The suspension was then subjected to the debris removal step using the Debris Removal Solution (Miltenyi, 130-109-398). Cell pellets were resuspended and 48,000 cells were loaded into 3 lanes to perform 10x Genomics sequencing. For mice with FAC-sorting (mouse #4, #5, #6), PrL and IL regions were microdissected and dissociated as mice without FAC-sorting, cells were sorted to enrich for EGFP-positive rAAV2-retro-EGFP-barcodes labeled cells. About 4893 EGFP-positive cells were captured and loaded to perform 10x Genomics sequencing. Chromium Single Cell 3' Reagent Kits (v3) were used for library preparation (10x Genomics). Libraries were sequenced on an Illumina Novaseq 6000 system.
 
-## Projection barcode library preparation
+### Projection barcode library preparation
 
 Parallel PCR reactions were performed containing 50 ng of post cDNA amplification reaction cleanup material as a template. P5-Read1 (AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTC) and P7-index-Read2-EGFP (CAAGCAGAAGACGGCATACGAGATAGGATTCGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTGgCATGGACGAGCTGTACAAG) (200 nM each) were used as primers with the NEBNext Ultra II Q5 Master Mix (NEB, M0544L). Amplification was performed using the following PCR protocol: (1) 33 °C for 1 min, (2) 98° for 10 s, then 65 °C for 75 s (20–24 cycles), (3) 75 °C for 5 min. Reactions were re-pooled during 1 X SPRI selection (Beckman, B23317), which harvested virus projection barcodes library. 431–437 bp (with 120 bp adaptors) libraries were sequenced using Illumina HiSeq X Ten.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were sacrificed 6 weeks after virus injection. Mice were transcardially perfused with phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA). Brain samples were extracted and cryoprotected in 20% sucrose/4% PFA, immersed sequentially in 20% sucrose (in 4% PFA) and 30% sucrose (in 0.1 M phosphate buffer, PB) until sunk, and then transferred to 30% sucrose/PB for more than 24 h. Brain samples were flash-frozen on dry ice and sectioned at 30 μm on a cryostat (Leica, SM2010R). For dual-color retrograde virus tracing, brain slices were blocked in 10% donkey serum and 0.3% Triton X-100 at 37 °C for 1 hr. Slices were then incubated with primary antibodies against green fluorescent protein (GFP, 1:500, Nacalai, 04404–84, RRID: AB_10013361) and tdTomato (1:500, OriGene, AB8181-200, RRID: AB_2722750) at room temperature for 2 hr, then 4 °C overnight. Slices were washed three times using PBS and incubated with Hoechst 33342 (1:1000, Lifetech, H3570), as well as secondary donkey anti-rat Alexa Fluor 488 antibodies (1:800, Invitrogen, A21208) and donkey anti-goat Alexa Fluor 568 antibodies (1:800, Invitrogen, A11057) at room temperature for 1 hr. Slices were washed three times using PBS and coverslipped. Stained slices were imaged with a 4 X objective with numerical aperture 0.16 as a map, followed by 1.5 µm increment z stacks with a 10 X objective with numerical aperture 0.4 (FV3000, OLYMPUS). Composite images were automatically stitched in the X-Y plane using ImageJ/FIJI. RNA FISH experiments were performed using RNA-Scope reagents and protocols (ACD Bioscience, CA), following instructions for fixed-frozen tissue. For experiments using RNA-Scope, immunohistochemistry was performed following RNA-Scope. Probes of RNA-Scope used in this study include, Mm-Syt6 (449641), Mm-Pou3f1-C2 (436421-C2).
 
-## scRNA-seq data pre-processing
+### scRNA-seq data pre-processing
 
 scRNA-seq data were aligned with the customized mouse reference genome mm10-3.0.0 adding five projection barcodes as separate genes. Further projection barcode expression was obtained as described in (Projection barcode library preparation and Projection barcode FASTQ alignment). scRNA-seq data were demultiplexed using the default parameters of Cellranger software (10x Genomics, v3.0.2). Obtained filtered transcription count matrix was used for downstream analysis. For unsorted samples, we used three mice with three GEM wells in one Chromium Single Cell 3' Chip (v3). Among unsorted samples, sample mouse #1 recovered 8040 cells, 447,984,945 read pairs were aligned, mean reads per cell is 55,719, median genes per cell is 2382; sample mouse #2 recovered 7443 cells, 399,187,134 read pairs were aligned, mean reads per cell is 53,632, median genes per cell is 2379; sample mouse #3 recovered 7243 cells, 410,627,696 read pairs were aligned, mean reads per cell is 56,693, median genes per cell is 2385. For FAC-sorted samples, we used three mice with one GEM well in one Chromium Single Cell 3' Chip (v3). FAC-sorted sample recovered 2075 cells, 410,434,792 read pairs were aligned, mean reads per cell is 197,799, median genes per cell is 6533.
 
-## Projection barcode FASTQ alignment
+### Projection barcode FASTQ alignment
 
 Demultiplexing of projection index barcode was performed using deMULTIplex R package (v1.0.2) (https://github.com/chris-mcginnis-ucsf/MULTI-seq, copy archived at mcGinnis, 2023) with modifications. Briefly, we have revised the MULTIseq.align function to count the UMI of each projection barcode separately. We adopted a minimal Hamming distance of 2 for the MULTIseq.align function to improve the matching accuracy between detected and designed barcodes. Tag parameters in ‘MULTIseq.preProcess’ function were adjusted according to our user-defined position of index barcode length and position. Based on our primer design, the expected format is: cell barcode in Read 1 (bases 1–16), UMI in Read 1 (bases 17–28), and projection barcode in Read 2 (bases 31–45).
 
-## scRNA-seq transcriptional expression analysis
+### scRNA-seq transcriptional expression analysis
 
 The filtered count matrix was analyzed and processed using Seurat and Scanpy, including data filtering, normalization, highly variable genes selection, scaling, dimension reduction, and clustering (Stuart et al., 2019; Wolf et al., 2018). First, scRNA-seq data from three samples of unsorted cells and one sample of sorted EGFP-positive cells were created as Seurat object separately; genes with less than three counts were removed and cells with fewer than 200 genes detected were removed. Second, four Seurat objects were merged using the ‘merge’ function in Seurat. Downstream analysis of merged Seurat objects were as follows: (1) Data filtering: cells with a mitochondrial gene ratio of greater than 20% were excluded. We kept cells for which we detected between 500 and 8000 genes (cells with more than 8000 genes detected were considered potential doublets), and between 1000 and 60,000 counts (cells with more than 60,000 counts detected were considered potential doublets). (2) Data normalization: for each cell, counts were log normalized with the ‘NormalizeData’ function in Seurat; ‘scale.factor’ was set to 50,000. (3) Highly variable gene selection: 2000 highly variable genes were calculated using the ‘FindVariableFeatures’ function in Seurat. (4) Data scaling: the Seurat object was performed using the ‘ScaleData’ function with default parameters. The number of counts, number of genes, mitochondrial gene ratio, and sorting condition were regressed out in ‘ScaleData’. (5) Principal component analysis: highly variable genes were used to calculate principal components in the ‘RunPCA’ function. A total of 100 principal components (PCs) were obtained and stored in Seurat object for computing neighborhood graphs and uniform manifold approximation and projection (umap) in following section. (6) Leiden clustering: Seurat object was converted into loom file and imported by Scanpy. A neighborhood graph of observations was computed by ‘scanpy.pp.neighbors’ function in Scanpy. Then, leiden algorithm was used to cluster cells by ‘scanpy.tl.leiden’ function in Scanpy. (7) Cluster merge and trimming: The top 200 DEGs for each cluster were calculated using the ‘scanpy.tl.rank_genes_groups’ function in Scanpy using parameters method=‘wilcoxon’ and n_genes = 200. Cluster annotation was performed manually based on previously reported markers of PFC all cell types, layer, neuron subtypes, and mouse brain atlas (Bhattacherjee et al., 2019; Sorensen et al., 2015). Cell clusters with similar marker genes were merged into one cluster. Complete marker lists for all cell types and all excitatory neuron subtypes calculated using ‘FindAllMarkers’ function in Seurat were provided (see Supplementary files 2 and 3).
 
 Two rounds of clustering were performed. In the first round, we clustered all cells detected by scRNA-seq to generate major cell type classification, that is excitatory neurons, inhibitory neurons, astrocytes, oligodendrocytes, endothelial cells, and microglia. Then we use the annotated ‘Excitatory neuron’ cluster to further cluster excitatory neuronal subtypes. In the 2nd round clustering, we found several clusters expressed a lower number of counts per cell, a lower number of genes per cell, a higher percentage of mitochondria genes, and ribosome protein genes as DEGs, which indicates cell clusters with low cell quality (Ilicic et al., 2016). We also found several other clusters with a small number of cells expressing typical markers of non-neuron cells, such as microglia (C1qa, C1qb) oligodendrocytes (Olig1, Olig2) and endothelial cells (Flt1, Cldn5), which indicated ‘contamination’ of other cell types mixed in ‘Excitatory neuron’ in the initial clustering results. We then filtered out those cells from ‘Excitatory neuron’ cluster and redid clustering to generate excitatory neuronal subtypes (see Supplementary file 1).
 
-## Cell type correspondence assessment
+### Cell type correspondence assessment
 
 To evaluate whether the transcriptional cell types we recovered and annotated correlated with cell types from spatial transcriptomics of PFC or other scRNA-seq datasets of PFC, we used a previously reported comparison analysis method (Bhattacherjee et al., 2023). Briefly, we integrated our dataset and previously reported datasetes (Bhattacherjee et al., 2023; Bhattacherjee et al., 2019; Lui et al., 2021; Yao et al., 2021) into a harmonized PCA space using the Harmony algorithm (Korsunsky et al., 2019). We then constructed a K-nearest neighbor (KNN) graph incorporating all cells from the two datasets. We used the first 30 harmonized principal components as inputs for FindNeighbors function of Seurat to calculate the KNN. For each cluster of public dataset, we found its 30 nearest neighbor cells and determined the percentages of those cells belonging to each scRNA-seq cluster of our dataset. This created a correspondence matrix showing the transcriptional similarity of each public dataset cluster to each cluster of our dataset.
 
 In this matrix, rows represent our scRNA-seq clusters, columns represent public dataset clusters, and the matrix values reflect the degree of similarity between the clusters. This process was reciprocally conducted for clusters of our dataset, comparing them to public dataset clusters to form a secondary correspondence matrix. The mean of these two matrices provided a quantifiable measure of the similarity between cell clusters identified by our annotation and public dataset annotation.
 
-## Binary projection pattern classification
+### Binary projection pattern classification
 
 To determine valid barcoded cells, we first calculated the 95th percentile of the total number of unique molecular identifiers (nUMI) that were mapped with five barcodes, and removed the unusually high numbers of UMIs, which might indicate doublets or PCR-biased amplification. Next, we used two set of cells as negative control, that is, cells supposed not to contain projection barcodes. First set of negative control cells we used is non-neuronal cells classified by coarse clustering based on single-cell transcriptome (Tervo et al., 2016). Second set of negative control cells we used is ‘EGFP-negative’ cells in FAC-sorted dataset. Basically, we calculated the total five projection barcodes counts determined by cellranger of FAC-sorted dataset, then we assigned the cells with zero projection barcodes (nUMI of EGFP RNA = 0) counts as ‘EGFP-negative’ cells. For two set of negative control cells, we searched for the value in the empirical cumulative distribution function (ECDF) that is closest to the 99.9th percentile agains each projection barcode, respectively. We selected the higher UMI threshold from the two given sets of threshold values. A cell is determined to be validly barcoded if the number of the barcode UMIs within the cell is larger than the threshold. For example, the calculated threshold of UMIs for barcode 0 (AI) is 28, which means if a cell contains more than 28 UMIs of barcode 0, then this cell is validly barcoded by AI. UMIs threshold for DMS, 101; for MD, 114; for BLA, 35; for LH, 103. Finally, we dropped UMI counts of determined non-barcoded cells to zero to obtain the index barcode counts matrix used for downstream analysis. Binary projection patterns were calculated by five projection targets set intersections of corresponding barcoded cells. Only the top 10 frequent binary and collateral projection patterns were kept for reliable inference.
 
-## Projection pattern-specific DEGs analysis
+### Projection pattern-specific DEGs analysis
 
 DEGs were calculated using the default parameters of the ‘FindMarkers’ function in Seurat, except the MAST algorithm was used to do DE testing. For the DEG volcano plot, the chosen cut-off for statistical significance was 10–10 (Figure 4 and Figure 4—figure supplement 1) or 10–5 (Figure 5 and Figure 5—figure supplement 1) and chosen cut-off for absolute log2 fold-change was 0.5. Volcano plots were implemented using the EnhancedVolcano R package (v1.4.0).
 
 For the DEG heatmap in Figure 5A, the top 10 DEGs ordered by average log2 fold-change were chosen from each binary cluster. The heatmap was implemented using the ‘scanpy.pl.heatmap’ function in Scanpy.
 
-## Joint analysis of MERGE-seq and fMOST projection patterns
+### Joint analysis of MERGE-seq and fMOST projection patterns
 
 Single-neuron projectome data for five PFC target regions (AI, dorsal striatum, BLA, MD, LH) were extracted from Gao et al., 2022. Projection patterns were quantified by calculating the percentage of each pattern relative to total patterns. Patterns were categorized by number of targets (1, 2, 3, or ≥3 targets). MERGE-seq and fMOST projection pattern percentages were statistically compared within each category using two-sided Wilcoxon tests with Holm correction for multiple comparisons.
 
-## Machine learning implementation on projection and transcription data
+### Machine learning implementation on projection and transcription data
 
 Naïve Bayes was applied to perform a machine learning classification task. We first encoded binary projection labels for each projection target (barcoded and non-barcoded) and five set of models (AI, DMS, BLA, LH and MD) were independently trained. We explored a parameter range of number of the top highly variable genes (HVGs) (2, 5, 10, 20, 50, 100, 200, 300, 400, 500, 1000, 2000, 5000) to fit the model. A total of 1000 cells were randomly sampled from 8210 excitatory neurons and top HVGs were selected by default order of results based on ‘FindVariableFeatures’ function of Seurat per trial. In total, 100 trials were repeated.
 
@@ -180,6 +497,6 @@ To validate barcode/non-barcode label integrity, we performed 100 iterations of 
 
 We implemented kernel explainer of SHAP python package (v0.40.1) to summarize the effects of genes. SHAP explainer was created using ‘shap.KernelExplainer(model.predict, training data)’ function. SHAP values were calculated using ‘explainer.shap_values(testing data)’ function, and plotted by ‘shap.summary_plot()’ function to create a SHAP beeswarm plot by displaying top 20 features. Training data and testing data for calculating SHAP values were subsampled with 1500 cells.
 
-## Statistical analysis
+### Statistical analysis
 
 No statistical methods were used to predetermine sample size. The experiments were not randomized and investigators were not blinded to allocation during experiments and outcome assessment. Two-sided Wilcoxon test with Holm correction for multiple comparisons was performed in Figure 3D, Figure 6B, and Figure 6—figure supplement 1B. Detailed summary statistics were provided in corresponding Source data files.

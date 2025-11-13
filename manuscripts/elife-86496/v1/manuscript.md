@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01y64my43 Department of Physiology and Biophysics, University at Buffalo, State University of New York Buffalo United States
+1. Department of Physiology and Biophysics, University at Buffalo, State University of New York Buffalo United States ([ROR:01y64my43](https://ror.org/01y64my43))
 
 † Corresponding author
 
@@ -37,29 +37,122 @@ Below, we define η empirically as the receptor’s output/input energy ratio, a
 
 We measured η for various agonists of AChRs, both wild-type (wt) and following mutation of a binding site residue. Here we report 16 new values (shown in Tables 1 and 2) that, combined with 60 previous measurement describe a spectrum of 5 η classes. The presence of multiple η classes obscures the underlying correlations between affinity and efficacy and, further, suggests that there are multiple C versus O binding site structures. Importantly, the existence of efficiency classes highlights that binding and gating are energy-linked stages of a unified allosteric transition.
 
+**Table 1.**
+ Agonist efficiencies.Table 1—source data 1.Agonist efficiency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Agonist</th>
+      <th>EC50 (μM) (sem)</th>
+      <th>POmax (sem)</th>
+      <th>KdC (μM)</th>
+      <th>KdO (nM)</th>
+      <th>c</th>
+      <th>η</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BzTMAa</td>
+      <td>1070 (200)</td>
+      <td>0.60 (0.05)</td>
+      <td>930 (112.0)</td>
+      <td>650 (90)</td>
+      <td>1424 (18.0)</td>
+      <td>0.51 (0.01)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Decb</td>
+      <td>190 (20)</td>
+      <td>0.79 (0.03)</td>
+      <td>90 (7.0)</td>
+      <td>140 (10)</td>
+      <td>643 (21)</td>
+      <td>0.41 (0.01)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>SCha</td>
+      <td>20 (3)</td>
+      <td>0.84 (0.02)</td>
+      <td>50 (4.0)</td>
+      <td>20 (1)</td>
+      <td>3177 (118)</td>
+      <td>0.45 (0.01)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>BzTEAb+c</td>
+      <td>2 (0.1)</td>
+      <td>0.85 (0.02)</td>
+      <td>0.80 (0.3)</td>
+      <td>3 (2)</td>
+      <td>316 (14)</td>
+      <td>0.29 (0.00)</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>TriMAab</td>
+      <td>16000 (1200)</td>
+      <td>0.78 (0.03)</td>
+      <td>7720 (316.0)</td>
+      <td>12580 (670)</td>
+      <td>615 (18)</td>
+      <td>0.57 (0.01)</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+_Mean EC50 and Pomax were measured from each CRC (intra-cluster interval duration histograms in Figure 3 and Figure 3—figure supplement 1), with standard error of mean (sem). KdC and KdO were calculated (Equation 4a) after correcting the background mutations that only changed L0. c, coupling constant (KdC/KdO); η, efficiency (Equation 2); error estimates (calculated by error propagation) for calculated KdC, KdO, c, and η values given by (sem); n, number of CRCs. Membrane potential, +70 mV (to minimize channel block by the agonist). Agonist structures are in Figure 5; superscripts indicate mutation backgrounds: aεS450W, bεL269F, cεE181W that increase Lo (increase responses to weak agonists)._
+
 ## Results
 
-## Background and definitions
+### Background and definitions
 
 The standard conception of receptor activation incorporates two seemingly disparate events – bind, the formation of a ligand-protein complex, and gate, the global isomerization of the protein (Figure 1). However, as described below (Figure 2), in AChRs these are composite reactions and are connected by a pair of local, induced-fit rearrangements of the agonist site (Jadey and Auerbach, 2012).
 
 For clarity, we define the universal agonist attributes affinity and efficacy. Affinity is the strength at which the ligand binds to its target site. In receptors ligands have two affinities, weak binding to C and strong binding to O (Figure 1). The corresponding binding free energies, ΔGLA and ΔGHA, are calculated (in kcal/mol) as +RT times the natural logarithms of the apparent KdC and KdO, where R is the gas constant and T is the absolute temperature (RT = 0.59 at 23 °C). For ACh at adult-type binding sites KdC = 174 μM (ΔGLA = −5.1 kcal/mol) and KdO = 29 nM (ΔGHA = −10.2 kcal/mol) (Jadey and Auerbach, 2012).
 
-Efficacy can be defined in several ways. Oftern, it is simply the high-concentration asymptote (maximum response) of an unnormalized CRC that in our experiments is POmax. Considering just bind and gate (Figure 1B), this limit depends only on the fully-liganded gating equilibrium constant L2 so this constant, too, defines agonist efficacy (Equation 4a). Another definition derives from considering the full cycle of receptor activation. In adult-type AChRs the 2 neurotransmitter binding sites are approximately equivalent and independent and there is no significant input of external energy (Nayak and Auerbach, 2017), so(1)L2L0=(KdCKdO)2.
+Efficacy can be defined in several ways. Oftern, it is simply the high-concentration asymptote (maximum response) of an unnormalized CRC that in our experiments is POmax. Considering just bind and gate (Figure 1B), this limit depends only on the fully-liganded gating equilibrium constant L2 so this constant, too, defines agonist efficacy (Equation 4a). Another definition derives from considering the full cycle of receptor activation. In adult-type AChRs the 2 neurotransmitter binding sites are approximately equivalent and independent and there is no significant input of external energy (Nayak and Auerbach, 2017), so
 
-The subscripts of the gating equilibrium constants (L) refer to the number of bound agonists, and the equilibrium dissociation constant (Kd) ratio is called the coupling constant (c). L0 is agonist-independent so differences in L2 (efficacy) among agonists depend only on differences in c. Below, we use the logarithm of c (λ) as the index of relative agonist efficacy,λ=ΔGHA−ΔGLA.
+$$
+\frac{L_{2}}{L_{0}}=(\frac{K_{dC}}{K_{dO}})^{2}.
+$$
+
+The subscripts of the gating equilibrium constants (L) refer to the number of bound agonists, and the equilibrium dissociation constant (Kd) ratio is called the coupling constant (c). L0 is agonist-independent so differences in L2 (efficacy) among agonists depend only on differences in c. Below, we use the logarithm of c (λ) as the index of relative agonist efficacy,
+
+$$
+\lambda=ΔG_{HA}−ΔG_{LA}.
+$$
 
 The relative efficacy of an agonist depends only on the difference between binding free energies, O minus C (blue lines in Figure 1A).
 
 Unlike voltage and mechanical stimuli, a small, thermalized ligand can deliver only a small force to a large receptor (Howard, 2001). The tiny momentum imparted to the protein by the ligand is obscured by those from collisions with water molecules. In the absence of external energy, agonists promote conformational change only by providing more favorable (stabilizing) binding energy to active compared to resting states that interconvert spontaneously. This mechanism likely pertains to all large receptors activated by small agonists.
 
-Efficiency (η) is defined empirically as the maximum output/input energy ratio (the efficacy/high-affinity energy ratio),(2)η=(ΔGHA−ΔGLA)ΔGHA=1−ΔGLAΔGHA
+Efficiency (η) is defined empirically as the maximum output/input energy ratio (the efficacy/high-affinity energy ratio),
+
+$$
+η=\frac{(ΔG_{HA}−ΔG_{LA})}{ΔG_{HA}}=1−\frac{ΔG_{LA}}{ΔG_{HA}}
+$$
 
 Accordingly, the agonist-dependent free energy changes in gating (ΔGHA-ΔGLA) and in binding (ΔGHA) are interchangeable, with η as the conversion factor. Again, efficacy (λ) is a free energy difference and the maximum amount the agonist can deliver to the receptor’s gating machinery, and efficiency (η) is a free energy ratio and this amount normalized by the ligand’s maximum binding energy. With regard to equilibrium dissociation constants, λ relates to log(KdC/KdO) and η relates to log(KdC)/log(KdO) (Figure 7—figure supplement 2).
 
 Insofar as KdC and KdO are universal agonist attributes, so too is η. We propse that an η value can be calculated from the ratio of logarithms of the 2 dissociation constants for every agonist of every receptor. However, this does not imply that η has a physical meaning, or that all agonists of a given receptor have the same (or a unique) η value. Equation 2 only shows how to calculate η from the 2 equilibrium dissociation constants. We estimated these from CRCs, but other experimental approaches would suffice.
 
 In AChRs η does have a physiochemical meaning because KdC and KdO derive mainly from a pair of induced fit rearrangements at the ligand site. Although bind and gate are usually denoted as single-step events (Figure 1B), in AChRs both are composite reactions that harbor intermediate states that are too short-lived to be detected individually and directly (Figure 2, Figure 2—figure supplement 1). Induced fits are common, and undetected intermediate states have been invoked with great success previosuly to explain experimental results (for example ES in enzymology, and AC in pharmacology). Here, we invoke intermediate states to deconstruct η (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig2-v1.jpg)
+
+**Figure 2.:** (A) Bind and gate. Top, as one-step reactions. Bottom, as composite reactions. The main undetected intermediate states are AC, the encounter complex (inside bind) and ACHA, a high affinity and closed channel state (inside gate). Black, the 2 agonist-dependent induced fit rearrangements are called catch (AC⇄ACLA) and hold (ACLA⇄ACHA). Gray, diffusion (A+C⇄AC) and receptor conformation changes in other domains (ACHA⇄AO) are approximately agonist-independent (see Figure 2—figure supplement 1). (B) Catch-and-hold free energy landscape. An η class indicates that catch and hold are linked in a linear free energy relationship (LFER; dashed lines) (Howard, 2001). Green, weak agonist; black, strong agonist. Ligand binding energy ‘tilts’ the entire landscape to the total extent ΔGHA (black side bars). For relative agonist actions, the energy change in catch (brown) determines KdC and the energy change in hold (blue) determines the coupling constant. η is the fraction of the total applied to hold (blue/black) and η is the fraction apllied to catch (brown/black). Agonist affinity and efficacy differ substantially, but η is constant and depends only on the left-right position of ACLA in the reaction.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** See Figure 1B for 2 equivalent sites. LA, low affinity; HA, high affinity. (Top). Standard activation scheme; bind and gate transitions bracket AC (a LA closed state, Delcastillo, et al., 1957). In gate, both channel conductance and binding site affinity increase (ACLA⇄AOHA). Middle. Expanded activation scheme showing undetected intermediates inside bind and gate. In bind, the agonist arrives at the target by diffusion (diffuse) and forms an ultra-LA AC encounter complex, followed by the first stage of the induced fit (catch1) that forms ACLA. In gate (boxed), the second stage of the rearrangement (hold) forms ACHA, followed by additional rearrangements in distant domains (etc) that eventually lead to AOHA. Experimental KdC and KdO values are dominated by energy changes in the two stages of the induced fit. Bottom. Expansion of gating. The distribution of Φ values2 suggests that the global isomerization involves passage through 4 short-lived (~100 ns) CHA states (denoted with ‘) associated with sequential rearrangements of the ECD (twist), TMD (tilt) and gate region (dilation), followed by pore water/membrane movements to allow ion transit (pop); Φ value given below each transition (Purohit et al., 2013; Gupta et al., 2017). The only agonist dependent rearrangements are catch (AC⇄ACLA; ΔGLA) and hold (ACLA⇄AC’; DGHA-ΔGLA), stages of the induced fit linked in a LFER (Figure 2). Together, sojourns in the ensemble of CHA states appear in single-channel currents as a brief gap (F for ‘flip’) (Auerbach, 1993; Lape et al., 2008; Mukhtasimova et al., 2005; Shi et al., 2023). The longitudinally-decreasing, coarse gradient in Φ suggests that the channel-opening gating transition is a conformational cascade (‘wave’) that propagates from the agonist to the gate, block-wise (Grosman et al., 2000), perhaps as an extended LFER. To emphasize that in AChRs binding ispart of gating, we show that a CRC and synaptic decay time constant can be calculated from the agonist association rate constant, kon to C (catch) if η and L0 are known a priori. (A) CRC. For many agonists, koff,C ~15,000 s–1 (Jadey and Auerbach, 2012). Calculate (i) KdC~1.5 × 104 s–1/kon,C, (ii) KdO (Equation 2), (iii) L2 (Equation 1) and (iv) POmax and EC50 (Equation 4a, Equation 4b, Equation 4c, Equation 4d). For example, η=0.5 and L0=7.4 × 10–7 (at Vm=-100 mV). ACh: measure kon,C=108 M–1s–1, calculate KdC = 150 μM, KdO = 22 nM, L2=33, POmax = 0.97 and EC50=31 μM. Choline: measure konC = 5 × 106 M–1s–1, calculate KdC = 3 mM, KdO = 9 μM, L2=0.08, POmax = 0.08 and EC50=6.8 mM. The procedure can be reversed (konC can be estimated from a CRC). (B) Synaptic decay time constant (τ). In adult-type AChRs the diliganded channel-closing rate constant (b2) for many agonists is ~2500 s–1 (–100 mV and 23 °C) (Grosman et al., 2000). τ~0.4 (1+f2/2*koff), where f2 is the diliganded opening rate constant, f2=L2*2500 s–1. Using the above kon,C for ACh yields τ=1.5ms. That the agonist’s association rate constant can approximate POmax, EC50 and τ demonstrates the entanglement between binding and gating. Unlike diffusion, natural selection can adjust the catch ‘induced fit’ (kon,C) to fine tune physiological responses.1Experimental evidence for catch in AChRs: kon to C is (i) slower than the limit set by diffusion, (ii) correlated with agonist potency rather than diffusion constant, (iii) slower than kon to O that is approximately diffusional (Nayak and Auerbach, 2017)3 and (iv) for choline highly temperature dependent (Gupta et al., 2017). Evidence that the hold stage of the induced fit occurs at the start of the global isomerization is that (i) Φ~0.95 for agonists and binding site residues (Purohit et al., 2013) (see below), and (ii) agonists increase the channel-opening rate constant (the affinity increase occurs before the transition state; Figure 1A).2 Φ is log f2/log L2 for a series of perturbations and reports the free energy change of the perturbed location at the gating transition state (relative to A2O). In AChRs, a longitudinal, blocky, decreasing gradient in Φ (neurotransmitter site to gate) suggests the allosteric transition is a cascade of discrete domain rearrangements that connects A2C and A2O (Auerbach, 2005). Although Φ values sequence (1–0, early to late) and locate gating rearrangements, they do not provide temporal information or quantify energy coupling between domains.3 The barrier that prevents agonists from forming ACLA by diffusioserves a purpose. In AChRs, kon,C correlates with agonist potency (Jadey and Auerbach, 2012; Jadey et al., 2011; Nayak and Auerbach, 2017), so the weak-agonist choline (present at the synapse at a high concentration) that would otherwise interfere with signaling is excluded from the pocket, preventing competitive antagonism. Extracellular cations compete with agonists to slow kon,C (Cs+>K+>Na+>Li+) (Akk and Auerbach, 1996), and the mutation εE184Q eliminates this competition (Akk et al., 1999). We hypothesize that the ions and agonist compete at the encounter complex site (for instance, K++C⇄KC) rather that the aromatic pocket. Agonist occupancy of the ultra-low-affinity AC binding site triggers the catch-and hold rearrangement.
 
 In bind, the agonist diffuses to the target and forms an encounter complex (Held et al., 2011; Homans, 2007; Schiebel et al., 2018), after which a local rearrangement (an induced fit) called ‘catch’ establishes the LA complex (A+C⇄AC⇄ACLA). Gate starts with the second stage of the induced fit called ‘hold’ that increases agonist affinity and, after several additional conformational changes in other protein domains, terminates with rearrangements in the pore that allow water and ions to pass (ACLA⇄ACHA⇄…⇄AOHA).
 
@@ -71,7 +164,15 @@ In a pure binding reaction, for example A+C⇄AC, Kd is the concentration where 
 
 EC50 and Pomax were measured from each CRC (intra-cluster interval duration histograms in Figure 3 and Figure 3—figure supplement 1). KdC and KdO were calculated (Equation 4a, Equation 4b, Equation 4c, Equation 4d) after correction for background mutations that only changed L0. c, coupling constant (KdC/KdO); η, efficiency (Equation 2); n, number of CRCs. Membrane potential,+70 mV (to minimize channel block by the agonist). Agonist structures are in Figure 5; superscripts indicate mutation backgrounds: aεS450W, bεL269F, cεE181W that increase Lo (to increase responses to weak agonists).
 
-## Agonists
+![Figure 3.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig3-v1.jpg)
+
+**Figure 3.:** (A) Top, single-channel current traces, low time-resolution (Vm = +70 mV; O is up). Clusters of openings are bind-and-gate (Figure 1B); silent periods between clusters are desensitized. Bottom, example clusters and intra-cluster interval duration histograms. PO was calculated at each [agonist] from shut- and open-interval time constants. (B) CRCs. PO values were fitted to estimate POmax and EC50 from which KdC and KdO were calculated (Equation 4a, Equation 4b, Equation 4c, Equation 4d, Materials and methods) (Table 1). The logs of these constants are proportional to ΔGLA and ΔGHA, the ratio of which gives η (Equation 2). The profile for SCh is relatively left-shifted because this agonist is ~10% more efficient than Dec. Symbols are mean ± sem (Table 1; see Figure 3—figure supplement 1 for other agonists). The background mutation εS450W compensates for the effects of depolarization on the gating rate constants (see Materials and methods).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Left, example histograms and clusters (see also text Figures 3 and 5). Vm = +70 mV; O is up. Efficiencies and background mutations are in Table 1. Symbols are mean + sem.
+
+### Agonists
 
 We measured η for 5 agonists using adult-type AChRs with wt neurotransmitter binding sites (Table 1). For each, single-channel currents were recorded at different agonist concentrations and PO values calculated from shut and open interval durations were compiled into a CRC. L0 was known a priori (Nayak et al., 2012) so KdC and KdO could be calculated from EC50 and POmax by using Equation 4a, Equation 4b, Equation 4c, Equation 4d (Materials and methods). As shown elsewhere, CRCs compiled from whole-cell currents serve equally well for η estimation (Indurthi and Auerbach, 2021).
 
@@ -87,9 +188,13 @@ Figure 5 shows the agonists grouped by η class. The neurotransmitter ACh, its b
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig5-v1.jpg)
 
-**Figure 5.:** Figure 4).See Materials and methods for abbreviations.
+**Figure 5.:** See Materials and methods for abbreviations.
 
-It is valuable to combine Equations 1 and 2 (Nayak et al., 2019),(3)logL2=logL0+mlog(1KdC)η=m(m+2).
+It is valuable to combine Equations 1 and 2 (Nayak et al., 2019),
+
+$$
+logL_{2}=logL_{0}+mlog(\frac{1}{K_{dC}})η=\frac{m}{(m+2)}.
+$$
 
 Equation 3 describes an ‘efficiency’ plot, log affinity (1/KdC) versus log relative efficacy (L2). An average η for a group of agonists is estimated from the slope of the straight line fit (m). Equation 4a, Equation 4b, Equation 4c, Equation 4d converts readily measured CRC parameters (POmax and EC50) into equilibrium constants (KdC and L2), and Equation 3 converts these into fundamental constants that pertain to the agonist (η) and the receptor (L0). The value of the efficiency plot is that it increases the accuracy of the η estimates because if L0 is known a priori, the y-intercept can be added as a fixed point to all lines. For receptors in which L0 has not been measured, the efficiency plot offers a convenient way to do so, as was done previously for glutamate, GABA, glycine, and muscarinic recepotors (Nayak et al., 2019).
 
@@ -97,9 +202,178 @@ Equation 3 describes an ‘efficiency’ plot, log affinity (1/KdC) versus log r
 
 Figure 4B shows that in AChRs, agonists having the same affinity can have different efficacies, and vice versa. Absent classification of an agonist according to η (imagine all symbols the same color) there is no global correlation between these two agonist properties. However, a linear correlation between log affinity and log efficacy is clear within each class. In AChRs, the presence of multiple η classes precludes a global correlation between efficacy and affinity.
 
-## Mutations
+### Mutations
 
 η values were measured previously in adult-type AChRs having one of 42 binding site mutations (Table 2—source data 1). To these we add 11 more (Table 2), for 5 agonists and 3 binding-site mutations (αD200A, αK145A, αG153S; Figure 6, Figure 6—figure supplement 1, Figure 6—figure supplement 2).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig6-v1.jpg)
+
+**Figure 6.:** Agonist efficiencies calculated from the fitted CRC parameters are in Table 2. Intra-cluster interval histograms are in Figure 6—figure supplement 1 and Figure 6—figure supplement 2. Inset, α−δ subunit interface of an AChR neurotransmitter binding site occupied by CCh (cyan) (7QL6.pdb; Zarkadas et al., 2022).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Example histograms and clusters (agonist structures in Figure 5). Vm = +70, O is up. CRCs are in Figure 6; efficiencies and backgrounds are in Table 2.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Example histograms and clusters (agonist structures in Figure 4). Vm = +70, O is up. CRCs in Figure 6. (Efficiencies and backgrounds in Table 2).
+
+**Table 2.**
+ Mutation efficiencies.Table 2—source data 1.Mutation efficiency.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mutation</th>
+      <th>agonist</th>
+      <th>EC50 (μM)</th>
+      <th>POmax</th>
+      <th>KdC (μM)</th>
+      <th>KdO (nM)</th>
+      <th>c</th>
+      <th>ηmut</th>
+      <th>n</th>
+      <th>ηwt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>D200A</td>
+      <td>ACha</td>
+      <td>110 (10)</td>
+      <td>0.80 (0.02)</td>
+      <td>52 (3)</td>
+      <td>150 (5)</td>
+      <td>338 (12)</td>
+      <td>0.37 (0.00)</td>
+      <td>3</td>
+      <td>0.50</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CCha</td>
+      <td>320 (70)</td>
+      <td>0.45 (0.02)</td>
+      <td>138 (18)</td>
+      <td>900 (94)</td>
+      <td>153 (3)</td>
+      <td>0.36 (0.00)</td>
+      <td>4</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TMAa</td>
+      <td>13350 (2970)</td>
+      <td>0.37 (0.03)</td>
+      <td>5683 (740)</td>
+      <td>4382 (890)</td>
+      <td>130 (5)</td>
+      <td>0.48 (0.02)</td>
+      <td>5</td>
+      <td>0.54</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ebta+b</td>
+      <td>110 (20)</td>
+      <td>0.50 (0.03)</td>
+      <td>47 (5)</td>
+      <td>680 (47)</td>
+      <td>69 (2)</td>
+      <td>0.30 (0.00)</td>
+      <td>3</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ebxa+b</td>
+      <td>060 (20)</td>
+      <td>0.49 (0.03)</td>
+      <td>26 (5)</td>
+      <td>390 (58)</td>
+      <td>67 (3)</td>
+      <td>0.29 (0.01)</td>
+      <td>3</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>K145A</td>
+      <td>ACha</td>
+      <td>110 (10)</td>
+      <td>0.95 (0.06)</td>
+      <td>83 (5)</td>
+      <td>50 (3)</td>
+      <td>1672 (82)</td>
+      <td>0.44 (0.00)</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CCha</td>
+      <td>380 (30)</td>
+      <td>0.53 (0.01)</td>
+      <td>165 (8)</td>
+      <td>400 (15)</td>
+      <td>411 (5)</td>
+      <td>0.41 (0.00)</td>
+      <td>4</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TMAa</td>
+      <td>2200 (590)</td>
+      <td>0.19 (0.01)</td>
+      <td>922 (125)</td>
+      <td>5010 (712)</td>
+      <td>184 (3)</td>
+      <td>0.43 (0.01)</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ebta</td>
+      <td>40 (4)</td>
+      <td>0.81 (0.04)</td>
+      <td>20 (2)</td>
+      <td>20 (2)</td>
+      <td>792 (52)</td>
+      <td>0.38 (0.00)</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Ebxa</td>
+      <td>40 (3)</td>
+      <td>0.83 (0.01)</td>
+      <td>20 (1)</td>
+      <td>20 (1)</td>
+      <td>847 (17)</td>
+      <td>0.38 (0.00)</td>
+      <td>3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>G153S</td>
+      <td>Ebta</td>
+      <td>2 (0.5)</td>
+      <td>0.65 (0.01)</td>
+      <td>2 (0.3)</td>
+      <td>7 (1)</td>
+      <td>313 (4)</td>
+      <td>0.31 (0.01)</td>
+      <td>4</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_Measured EC50 & Pomax and calculated Kd, c and h, mean (sem). For mutation location see Figure 6, inset. KdC and KdO were calculated from CRC parameters (Figure 6) by using Eq. 4. c, coupling constant (KdC/KdO); n, number of CRCs. L0 was corrected for background mutations (Methods): aεS450W, bεL269F, cεE181W. See Figure 6—figure supplement 1 and Figure 6—figure supplement 2 for intra-cluster interval duration histograms._
 
 αD200 and αK145, along with αY190, have been suggested to work together to initiate the channel-opening conformational change (Mukhtasimova et al., 2005). The mutation αY190A reduces ηACh from 0.50 to 0.35, but αY190F is without effect (Bruhova and Auerbach, 2017). However, αY190F does cause substantial losses in LA and HA binding energies for ACh, to an extent that depends on the αK145 side chain (Bruhova and Auerbach, 2017). These results support the suggestion that these side chains work together, but exactly how and to what effect remains unclear. The agonists we tested with αD200A or αK145A were from 4 different η classes (wt class value): TMA (0.54), CCh (0.51), ACh (0.50), Ebx (0.46), and Ebt (0.41).
 
@@ -111,19 +385,31 @@ Table 2—source data 1 shows KdC and KdO values measured previously for 4 diffe
 
 Figure 7A shows x-means cluster analysis of efficiencies for 53 AChR binding site mutations. Mutant η values (mean ± sd) segregate into the same 5 η classes that were apparent with agonists: 0.33±0.03, 0.40±0.02, 0.44±0.01, 0.49±0.01 and 0.56±0.03. The η classes that were under-represented and poorly defined with agonists (Figure 4B) are more common and clearer with mutations.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig7-v1.jpg)
+
+**Figure 7.:** Each symbol is η value calculated for an individual mutation (various agonists; Table 2 and Table 2—source data 1). (A) There are 5 efficiency classes (mean ± sd). As with agonists (Figure 4), the ~0.5 and~0.4 classes predominate. (B) Weak (LA) versus strong (HA) binding energies for the mutants (sd of each point is smaller than the symbol). The 5 slopes reflect different correlations between catch and hold free energy changes (Figure 2B). The efficiency distribution for the mutations (η=1-slope; see text for mean ± sd) is the same as for agonists. C. Spectrum of efficiencies, adult AChR neurotransmitter binding sites. The width of each line is proportional to prevalence (agonists and mutations).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** All currents were recorded in the complete absence of agonists. Top traces, clusters of unliganded single-channel openings are mainly C⇄O (Vm=-100 mV; O is down); silent periods between clusters are desensitized. Bottom, interval duration histograms and an example cluster. Left, the background mutations together increase L0 from 7.4x10–7 to 0.17 (by a factor of 2.46x105). Right, the background mutations plus αD200A increase L0 from 7.4x10–7 to 0.64 (by a factor of 3.76x105). Hence, the A substitution at αD200 increases L0 by 3.76-fold. L0 is voltage dependent and is 5.2x10–7 at –70 mV (Nayak et al., 2012). We calculate that at this membrane potential (Figure 6) L0 with αD200A is 3.76-fold grater, or 1.9x10–6. L0 was measured individually using the above method for all 53 mutations (Table 2 and Table 2—source data 1).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/86496/elife-86496-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** In A+C⇄AC ⇄AC (Figure 2A), the first step includes a term for the entropy decrease from the loss of a free ligand, indexed to a reference concentration (Phillips, 2020). This term does not cancel in Equation 2, but in AChRs the second step dominates so η is the same with or without this term. (A) Agonist η-plots (0.51 and 0.42 class ligands; Figures 4B and 5) using different reference concentrations. The slopes of the straight-line fits and η (Equation 3) are independent of the reference concentration. (B) Mutation plots. The entropy term was removed by first normalizing KdC and KdO by those of a standard agonist (here, choline; 2 other agonists give the same result). The slopes of plots, ΔΔGLA/ΔΔGHA, are approximately same as without normalization (Figure 7B).
+
 With mutations, an η-plot is not useful because substitutions can change L0 (see Figure 7—figure supplement 1) and, hence, the y-intercept of each line. Instead, a plot of ΔGLA versus ΔGHA shows the binding energy correlations directly. This plot for mutations (Figure 7B) shows 5 slopes (Pearson’s correlation test p-value <0.0006 for all classes). The distribution of η values (1-slope) is (mean ± sd): 0.32±0.007, 0.40±0.004, 0.44±0.003, 0.49±0.002 and 0.56±0.007, with all slopes being significantly different (ANCOVA, F-value, 63.35; p-value,<0.0001).
 
 Combining the results for agonists and mutations, the overall distribution of η (relative prevalence) is: 0.56 (17%), 0.51 (31%), 0.45 (13%), 0.41 (26%), and 0.31 (12%). As was the case with agonists and mutations separately, the 0.51 (example, ACh) and 0.41 (example, Ebt) classes predominate. Figure 7C shows the distribution of agonist plus mutation η values as a spectrum in which line thickness represents relative prevalence.
 
 ## Discussion
 
-## Efficiency
+### Efficiency
 
 Efficiency is the missing link that connects binding to gating (Equation 2). Insofar as KdC and KdO apply generally (Figure 1), η is a universal agonist attribute that depends only on these two constants. In AChRs, KdC and KdO are set mainly by energy changes in a pair of local rearrangements of the binding site (the catch-and-hold induced fit), with η being the fraction of the total used to initiate the allosteric transition of the receptor. As such, η calibrates the fundamental connection that defines receptor action.
 
 Converting ligand binding energy into energy for an otherwise unfavorable protein conformational change is an induced fit. We assume that without an agonist present, both catch and hold rearrangements (of an aromatic pocket) are energetically unfavorable and generate the high barrier to unliganded opening (Figure 1). In enzymes, a fraction of substrate binding energy is used to promote a local protein rearrangement that stabilizes the reaction transition state (Richard, 2022). In AChRs, neurotransmitter binding energy is divided equally between two stages of an intrinsically unfavorable rearrangement that forms the LA and HA complexes and starts the gating isomerization. In brief, η quantifies the split in ligand binding energy between the two steps in the catch-and-hold induced fit (Figure 2B).
 
-## η classes
+### η classes
 
 Agonists having radically different resting affinities and efficacies can have the same η. For example, ACh (KdC = 175 μM, POmax = 0.96) and choline (KdC = 4 mM, POmax = 0.05) both divide their binding energy equally between catch and hold. In AChRs, agonists segregate into discrete ηclasses within which all members use approximately the same fraction of their post-diffusion binding energy for catch. So far we have identified 5 η classes with catch percentages ranging from 47% to 71% (Table 1). Below, we discuss the possibility that larger ligands apply a larger percentage of their binding energy to catch.
 
@@ -141,7 +427,7 @@ We detected 5 η classes in AChRs but additional experiments could reveal more. 
 
 Mutations of binding site residues segregate into the same 5 efficiency classes as do agonists. This supports the idea that an agonist at a binding site is much like an ordinary side chain, with exceptions. Most importantly, agonists are not linked covalently and so are both hypermobile in the pocket and free to come and go to serve as a signal. Also, by definition a bound agonist is more stable in O versus C (Figure 1A) but this is the opposite of most AChR wt side chains (Purohit et al., 2013). η measurements reinforce the standard view that ligands only perturb the intrinsic activity of allosteric proteins.
 
-## η and structure
+### η and structure
 
 In AChRs, the pair of structural changes at the binding sites associated with energy changes in hold (ΔGHA-ΔGLA) and in catch (ΔGLA) are not known with certainty. Although there are structures of apo-C (Zarkadas et al., 2022) and desensitized (perhaps the same as AOHA) (Auerbach, 2020; Rahman et al., 2020; Zarkadas et al., 2022), those of the three relevant liganded-closed intermediate states AC, ACLA and ACHA are not available. Here, we discuss inferences about the structures of these three transient states that can be made from η.
 
@@ -159,7 +445,7 @@ The binding energy increase (in hold) occurs at the onset of the channel-opening
 
 Finally, regarding the agonist (Figure 5), there is a trend for those with cationic centers that occupy smaller volumes in vacuo to have greater η (Indurthi and Auerbach, 2021). That is, agonists with larger volumes tend to use a greater fraction of their binding energy for catch. In AChRs and other receptors, the volume of the binding pocket appears to be smaller in O versus C (Tripathy et al., 2019), so it is also possible that unfavorable VdW interactions caused by pocket contraction guide the selection of (for example) the target O structure, to decrease η. The relationship between catch and hold energy change and the corresponding structural elements (agonist, protein, water) is complex and further investigations are needed.
 
-## Extending η
+### Extending η
 
 The catch-and-hold LFER implied by an η class indicates that structure (energy) changes in these two binding site rearrangements are related. Microscopic reversibility demands that if catch promotes hold, then hold promotes catch. Below, we present evidence suggesting that this bidirectional linkage is the tip of an iceberg, and that the entire AChR activation cascade - from an agonist at the encounter complex to water at the gate (AC to AO) - is linked as an extended, multi-stage LFER (Figure 2—figure supplement 1).
 
@@ -173,42 +459,64 @@ There are many unanswered questions. We do not know the structural changes in th
 
 ## Materials and methods
 
-## Expression
+### Expression
 
 Human embryonic kidney (HEK) 293 cells were maintained in Dulbecco’s minimal essential medium (DMEM) supplemented with 10% FBS and 1% penicillin–streptomycin (pH 7.4). HEK cells obtained from ATCC (CRL-1573, lot no. 57925149) are authenticated using STR profiling and tested free of mycoplasma contamination. Mutations were incorporated into AChR subunits using the Quickchange II site directed mutagenesis kit (Agilent Technologies, CA) according to manufacturer’s instructions. Sequence was verified by nucleotide sequencing (IDT DNA, I). AChRs were transiently expressed in HEK 293 cells by transfecting (CaPO4 precipitation) (Purohit et al., 2014) mouse α1 (GFP encoded between M3-M4),β1,δ,ε subunits (3–5 μg total/ 35 mm culture dish) in a ratio of 2:1:1:1 for ~16 hrs. Most electrophysiological experiments were done 24–48 hr post-transfection.
 
-## Electrophysiology
+### Electrophysiology
 
 Single-channel currents were recorded in cell-attached patches (23 °C). The bath solution was (in mM) 142 KCl, 5.4 NaCl, 1.8 CaCl2, 1.7 MgCl2, 10 HEPES/KOH (pH 7.4). High extracellular [K+] ensured that the membrane potential Vm was ~0 mV. Patch pipettes were fabricated from borosilicate glass, coated with sylgard (Dow Corning, Midland, MI) to a resistance of ~10 MΩ when filled with pipette solution (Dulbecco’s phosphate-buffered saline PBS) (in mM): 137 NaCl, 0.9 CaCl2, 2.7 KCl, 1.5 KH2PO4, 0.5 MgCl2, and 8.1 Na2HPO4 (pH 7.3/NaOH). Single channel currents were recorded using a PC505 amplifier (Warner instruments, Hamden, CT), low-pass filtered at 20 kHz and digitized at a sampling frequency of 50 kHz using a data acquisition board (SCB-68, National instruments, Austin, TX). For liganded activation experiments, agonists were added to the pipette solution at the desired concentrations. For unliganded activation experiments, we used pipettes and wires that were never exposed to agonists. To reduce the effect of channel block without affecting binding of agonist to the receptor, membrane potential (Vm) was held at +70 mV when agonists were used (Jadey et al., 2011).
 
-## Current analysis
+### Current analysis
 
 Analyses of the single-channel currents were performed by using QUB software (Nicolai and Sachs, 2013). Single-channel currents occur in clusters when the opening rate constant is significantly large. For analysis, we selected clusters of shut/open intervals that appeared (by eye) to be homogeneous, with regard to Po. We limited the analysis to intracluster interval durations and thus excluded sojourns arising from desensitized states (shut intervals between clusters >20ms). The clusters were idealized into noise-free intervals after digitally filtering the data at 10–15 kHz (Qin, 2004). First, the idealized, intra-cluster intervals were fitted by a two-state model, C⇄O. Then, additional nonconducting and conducting states were added, one at a time, connected only to the first O state, until the log likelihood failed to improve by 10 units (Qin et al., 1997). Cluster PO at each agonist concentration was calculated from the time constants of the predominant components of the shut- (τs) and open-time distributions (τo): τo/(τS+τo). In this way, an equilibrium CRC was constructed as a plot of the absolute PO (not normalized) versus the agonist concentration (see Figure 2).
 
-## Equilibrium constants
+### Equilibrium constants
 
 Two equilibrium dissociation constants comprise efficiency, KdC and KdO (Figure 1; Equation 3). These, and the fully-liganded gating constant L2, were estimated in two ways, with both methods producing the same results.
 
-In the primary approach, KdC and KdO were estimated from CRC parameters. The CRC was fitted by the Hill equation to estimate POmax (the high concentration asymptote) and EC50 (the agonist concentration that produces a half-maximum PO). Equilibrium constants were calculated from the reaction scheme pertaining to the main activation pathway that assumes L0 and KdO are negligible. Let x=[A]/KdC. For a one-site receptor the scheme is A+C⇄AC⇄AO and PO([A])= xL1/(1+x + xL1). For adult AChRs that have two equal and independent binding sites the scheme is A+C⇄AC⇄A2C⇄A2O (red, Figure 1B) and PO([A])= x2L2/(1+2x+x2+x2L2). Relating the two site scheme to CRC parameters, POmax is the infinite-concentration asymptote, POmin is the zero-concentration asymptote and EC50 is the concentration at which PO is half POmax,(4a)L2=-POmaxPOmax-1(4b)L0=-POminPOmin-1 (4c)KdC=EC50L2+11+L2+2(4d)KdO=KdCL2L0
+In the primary approach, KdC and KdO were estimated from CRC parameters. The CRC was fitted by the Hill equation to estimate POmax (the high concentration asymptote) and EC50 (the agonist concentration that produces a half-maximum PO). Equilibrium constants were calculated from the reaction scheme pertaining to the main activation pathway that assumes L0 and KdO are negligible. Let x=[A]/KdC. For a one-site receptor the scheme is A+C⇄AC⇄AO and PO([A])= xL1/(1+x + xL1). For adult AChRs that have two equal and independent binding sites the scheme is A+C⇄AC⇄A2C⇄A2O (red, Figure 1B) and PO([A])= x2L2/(1+2x+x2+x2L2). Relating the two site scheme to CRC parameters, POmax is the infinite-concentration asymptote, POmin is the zero-concentration asymptote and EC50 is the concentration at which PO is half POmax,
+
+$$
+L_{2}=\frac{-P_{O}^{max}}{P_{O}^{max}-1}
+$$
+
+
+
+$$
+L_{0}=\frac{-P_{O}^{min}}{P_{O}^{min}-1}
+$$
+
+
+
+$$
+K_{dC}=\frac{EC_{50}L_{2}+1}{1+\sqrt{L_{2}+2}}
+$$
+
+
+
+$$
+K_{dO}=\frac{K_{dC}}{\sqrt{\frac{L_{2}}{L_{0}}}}
+$$
 
 where KdO is solved by using Equation 1. Because L2=L0c (Equation 1), any change in L0 (see below) will change all three CRC parameters (POmax, POmin and EC50) even if the equilibrium dissociation constant ratio KdC/KdO remains unchanged. Knowledge of, and ability to manipulate, L0 was the key to measuring η.
 
-## Voltage, L0 and background mutations
+### Voltage, L0 and background mutations
 
 To reduce channel block by the agonists, the membrane was depolarized to +70 mV. To compensate for changes in τS and τo caused by depolarization, we added the background mutation εS450W. This residue is far from the binding site (M4 transmembrane region of the ε subunit), has no effect on KdC, and has equal but opposite effect on unliganded gating as does this extent of membrane depolarization (Jadey et al., 2011). L0 is 7.4x10–7 at Vm=-100 mV and reduced e-fold by a 60 mV depolarization (Nayak et al., 2012). Hence, we calculate that L0 is 5.2x10–7 at Vm=-70 mV as well as in our experiments at Vm = +70 mV plus εS450W.
 
 In some conditions, for instance low efficacy agonists (Dec, TriMA, and BzTEA) and aD200A, the wt opening rate constant was small and single-channel clusters were poorly defined. Accordingly, we added background mutations to facilitate PO measurements (Tables 1 and 2). These were εL269F (located in the M2 helix) and εE181W (located in strand β9) that increase the L0 by 179- and 5.5-fold (1084-fold for the pair) without effecting KdC. First, we obtained the apparent L2 from the CRC PO max (Equation 4a). Second, we divided this value by the fold increase in L0 caused. By the background to obtain a corrected L2. Finally, agonist KdC was estimated from EC50 and the corrected L2 (Equation 4c).
 
-## L0 for αD200A
+### L0 for αD200A
 
 In wt adult AChRs, L0 is 5.2x10–7 at Vm = +70 mV (Nayak et al., 2012) and ofcourse is the same for all agonists. L0 has been reported previously for the mutations αK145A (Bruhova and Auerbach, 2017) and αG153S (Jadey et al., 2013). To estimate this L0 for αD200A, the pipette solution was free of any agonist and currents were measured at a membrane potential of −100 mV. The AChRs had added background mutations far from αD200 and each other (εL269F+εE181W+δV269A) that together increased unliganded activity substantially to allow cluster formation. Individually, these mutations increase L0 by 179- (Jha et al., 2009), 5.5- (Purohit et al., 2013) and 250-fold (Cymes et al., 2002), respectively (Figure 7—figure supplement 1). Assuming no interaction (Gupta et al., 2017), the expected net increase in L0 for this background combination is the product, ~2.5 × 105. L0 was measured experimentally using this background plus αD200A, from the durations of intra-cluster intervals (see above). The unliganded opening (f0) and closing (b0) rate constants were estimated from the idealized interval durations by using a maximum-interval likelihood algorithm after imposing a dead time of 25 μs and L0 was calculated from the ratio. Using a similar approach, L0 was estimated previously for each mutation shown in Figure 7.
 
-## Statistics
+### Statistics
 
 For single-channel CRCs, the midpoint and maximum (EC50 and POmax) were estimated by fitting to monophasic Hill equation (PO = POmax/(1+(EC50/[A])nH)) using GraphPad Prism 6 (GraphPad). nH values contain information (Qin, 2010) but were not used because the number of binding sites was known a priori. A x-means cluster analysis algorithm (QUB online: qub.mandelics.com/online/xmeans.html) was used to define agonist (Figure 4A) and mutant (Figure 7A) classes, considering cluster must have at least two elements. Optimal clustering was determined based on the Sum Square Residual (SSR) and the corrected Akaike Information Criterion (AICc): for agonists SSR = 4.76 × 10–3 and AICc = −96.5 (n=5 classes); for mutations SSR = 2.41 × 10–2 and AICc=-396 (n=5 classes). Pearson’s correlation test was performed to determine correlation significance between the two variables logKdC versus logKdO and logL2 versus log[1/KdC]. Since the goal was to measure the correlation rather than the magnitude difference between classes, Pearson’s correlation was used instead of Cohen’s. The P-value (two-tail) and r2 value for that 3 agonist efficiency classes with >2 elements (Figure 5A) were 0.019 and 0.96 (η=0.56), <0.0001 and 0.99 (η=0.51) and <0.0001 and 0.99 (η=0.41). Significance for classes with <3 data points (η=0.31 and 0.46) could not be determined. The p-value (two-tail) and r2 value for mutants (Figure 7A) were 0.0006 and 0.83(η=0.56), <0.0001 and 0.98 (η=0.51), <0.0001 and 0.97 (η=0.45), <0.0001 and 0.93 (η=0.41), and <0.0001 and 0.98 (η=0.31). η is the ratio of logarithms and as such is precise.
 
 The position of the intermediate state ACLA in the catch-and-hold reaction sequence (1-η; Figure 2) is analogous to the position of the transition state (Φ orβ) in a single-step reaction. With Φthe intermediate state in the LFER is an energy barrier, whereas with η it is an energy well. Φ gives the fraction of the total energy change at ‡, and 1-η gives the fraction of the total energy change at ACLA.
 
-## Agonists
+### Agonists
 
 Abbreviations: acetylcholine (ACh), trimethyl ammonium (TRiMA), tetramethyl ammonium, dimethylpyrrolidium (DMP), dimethylthiazolidinium (DMT), nornicotine, nicotinic (Nic), carbamylcholine (CCh), anabasine (Singh et al.), dimethylphenylpiperazinium (DMPP), benzyltrimethyl ammonium (BzTMA), choline (Cho), 3-hydroxypropyltrimethylammonium (3-OH), 4-hydroxybutyltrimethylammonium (4-OH), dimethylthiazolidinium (DMT), dimethylpyrrolidium (DMP), succinylcholine (SCh), decamethonium (Dec), epiboxidine (Ebx), epibatidine (Ebt), cytisine (Cyt), tetraethyl ammonium (TEA), tetramethyl phosphonium (TMP), varenicline (Var) and benzyltriethyl ammonium (BzTEA), Choline (Cho). Agonists were from Sigma (St. Louis, MO) except DMP, DMT, 3-OH and 4-OH that were synthesized as described previously (Bruhova et al., 2013).

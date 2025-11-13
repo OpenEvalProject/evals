@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00fbnyb24 Neurobiology and Genetics, University of Würzburg, Biocenter, Theodor-Boveri-Institute Würzburg Germany
-2. https://ror.org/032e6b942 Section Polar Biological Oceanography, Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research Bremerhaven Germany
-3. https://ror.org/00874hx02 National Oceanography Centre, European Way Southampton United Kingdom
-4. https://ror.org/033n9gh91 Institute for Chemistry and Biology of the Marine Environment, University of Oldenburg Oldenburg Germany
-5. https://ror.org/00tea5y39 Helmholtz Institute for Functional Marine Biodiversity at the University of Oldenburg (HIFMB) Oldenburg Germany
+1. Neurobiology and Genetics, University of Würzburg, Biocenter, Theodor-Boveri-Institute Würzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))
+2. Section Polar Biological Oceanography, Alfred Wegener Institute Helmholtz Centre for Polar and Marine Research Bremerhaven Germany ([ROR:032e6b942](https://ror.org/032e6b942))
+3. National Oceanography Centre, European Way Southampton United Kingdom ([ROR:00874hx02](https://ror.org/00874hx02))
+4. Institute for Chemistry and Biology of the Marine Environment, University of Oldenburg Oldenburg Germany ([ROR:033n9gh91](https://ror.org/033n9gh91))
+5. Helmholtz Institute for Functional Marine Biodiversity at the University of Oldenburg (HIFMB) Oldenburg Germany ([ROR:00tea5y39](https://ror.org/00tea5y39))
 
 † Corresponding author
 
@@ -40,27 +40,191 @@ In this study, we use the novel Activity Monitor for Aquatic Zooplankter (AMAZE)
 
 Two sets of experiments were conducted for this study (Figure 1). In the first set of experiments (experiment 1) we adopt a standard chronobiological experiment design, where we monitor krill behavioral activity under simulated short days (short-day treatment) or long days (long-day treatment), before they are transferred into constant darkness for several days to investigate the influence of a circadian clock on krill behavior. In a second set of experiments (experiment 2) krill vertical migration behavior in the field was recorded for several days before sampling and transferring krill into constant darkness. This experiment was conducted in four seasons (summer treatment, late summer treatment, autumn treatment, and winter treatment).
 
-## A circadian clock is involved in the daily regulation of swimming activity
+![Figure 1.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig1-v1.jpg)
+
+**Figure 1.:** Overview of the basic principle of chronobiological experiment design and how it is adopted in our study to characterize the influence of the circadian clock on swimming activity of wild-caught Antarctic krill.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Colored dots indicate sampling locations for the respective behavioral experiments. Colored lines indicate the cruise track of the fishing vessel during recording of hydroacoustic data prior to sampling for behavioral experiment 2. BS: Bransfield Strait. SOI: South Orkney Islands. Bathymetric data were retrieved from the International Bathymetric Chart of the Southern Ocean (500 m×500 m resolution, https://ibcso.org/).
+
+### A circadian clock is involved in the daily regulation of swimming activity
 
 To investigate whether a circadian clock is involved in regulating daily rhythms of swimming activity, we sampled krill from the field under short-day conditions in winter (short-day treatment, sampling date: May 31, 2021, local photoperiod: 5.5 hr) and under long-day conditions in late summer (long-day treatment, sampling date: February 16, 2022, local photoperiod: 15.3 hr; see Table 1 for details). We exposed 11 and 9 sampled individuals to 3 days of light-dark conditions in the activity monitor simulating short-day conditions and to 5 days of LD simulating long-day conditions, respectively. The photoperiod in the activity monitor approximated the natural photoperiod in the field during sampling. The period of LD was followed by 5 days of constant darkness. The data under LD conditions show that krill swimming activity at both individual and group level increased during the dark phase and showed a strong synchronization with the light-dark cycle provided (Figure 2—figure supplements 1 and 2).
 
+**Table 1.**
+ Metadata for behavioral experiments.For each experiment (Experiment ID), the metadata show the light regime during the experiment in the activity monitor (LD: light-dark cycle, DD: constant darkness), the duration of the experiments under the respective light condition, the local date and time, region (BS: Bransfield Strait, SOI: South Orkney Islands), exact location, and depth for krill sampling, the local natural photoperiod at the time of krill sampling, the number of krill used for each experiment, and their mean length and standard deviation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment ID</th>
+      <th>Experimental light regime</th>
+      <th>Experiment duration (days)</th>
+      <th>Sampling date (UTC-2)</th>
+      <th>Sampling time (UTC-2)</th>
+      <th>Sampling region</th>
+      <th>Sampling location (latitude °S/longitude °W)</th>
+      <th>Sampling depth (m)</th>
+      <th>Natural photoperiod (hr)</th>
+      <th>n Krill (total/male/ female)</th>
+      <th>Mean ±SD length (mm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experiment 1 (short-day treatment)</td>
+      <td>LD-DD</td>
+      <td>3 (LD), 5 (DD)</td>
+      <td>2021-05-31</td>
+      <td>13:02</td>
+      <td>BS</td>
+      <td>62.95/57.77</td>
+      <td>170</td>
+      <td>5.5</td>
+      <td>11/5/6</td>
+      <td>45±2.6</td>
+    </tr>
+    <tr>
+      <td>Experiment 1 (long-day treatment)</td>
+      <td>LD-DD</td>
+      <td>5 (LD), 5 (DD)</td>
+      <td>2022-02-16</td>
+      <td>15:50</td>
+      <td>SOI</td>
+      <td>60.04/46.45</td>
+      <td>94</td>
+      <td>15.3</td>
+      <td>9/4/5</td>
+      <td>44.4±3.7</td>
+    </tr>
+    <tr>
+      <td>Experiment 2 (summer treatment)</td>
+      <td>DD</td>
+      <td>8</td>
+      <td>2022-01-22</td>
+      <td>17:03</td>
+      <td>SOI</td>
+      <td>60.08/46.46</td>
+      <td>157</td>
+      <td>17.5</td>
+      <td>9/8/1</td>
+      <td>42.4±1.5</td>
+    </tr>
+    <tr>
+      <td>Experiment 2 (late summer treatment)</td>
+      <td>DD</td>
+      <td>6</td>
+      <td>2022-03-01</td>
+      <td>11:00</td>
+      <td>SOI</td>
+      <td>60.0/44.73</td>
+      <td>86.5</td>
+      <td>14.0</td>
+      <td>9/4/5</td>
+      <td>48.9±4.4</td>
+    </tr>
+    <tr>
+      <td>Experiment 2 (autumn treatment)</td>
+      <td>DD</td>
+      <td>7</td>
+      <td>2022-03-15</td>
+      <td>08:40</td>
+      <td>SOI</td>
+      <td>60.28/46.43</td>
+      <td>119.2</td>
+      <td>12.6</td>
+      <td>10*/4/5</td>
+      <td>51.3±1.6*</td>
+    </tr>
+    <tr>
+      <td>Experiment 2 (winter treatment)</td>
+      <td>DD</td>
+      <td>4</td>
+      <td>2021-06-10</td>
+      <td>12:56</td>
+      <td>SOI</td>
+      <td>60.5/46.11</td>
+      <td>185</td>
+      <td>5.9</td>
+      <td>9/2/7</td>
+      <td>49.2±3.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Length and sex of one individual undetermined._
+
 As synchronization between individuals and robustness of activity patterns under DD within individuals was strongest in krill from the short-day treatment, we used these data for initial assessments of circadian activity rhythms. Under constant darkness conditions in the short-day treatment, krill swimming activity continued in several individuals (n=6; 54%) with significant circadian rhythmicity over the 5 days of DD conditions (Figure 2a and b, Figure 2—figure supplement 3), indicating the involvement of a circadian clock in the daily regulation of swimming activity. Nevertheless, in most individuals, the amplitude of the rhythm decreased over time (Figure 2a, Figure 4a, Figure 2—figure supplement 3). The patterns of swimming activity observed at the individual level were reflected at the group level, showing a strong synchronization of increased swimming activity with the dark phase under light-dark conditions (Figure 3a, Figure 2—figure supplement 1), and persistent significant circadian swimming activity under constant conditions with a continuously decreasing amplitude throughout the experiment (Figure 2c and d; Figure 4a: paired t-test, p-value=0.005, Figure 4c: paired t-test, p-value=0.012).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig2-v1.jpg)
+
+**Figure 2.:** Swimming activity under 5 days of DD conditions in experiment 1 of individual #9 after entrainment to simulated short-day conditions (a) and group mean swimming activity of rhythmic individuals under 5 days of DD conditions from the same experiment (n=6, c). The result from Lomb-Scargle periodogram (LSP) analysis shows significant circadian rhythmicity of swimming activity of individual #9 (period: 24.2 hr, b) as well as for group mean swimming activity (period: 23.9 hr, d) during DD conditions of experiment 1 (short-day treatment). Gray shading represents standard error of the mean (s.e.m.). Color bars at the top indicate light conditions (constant darkness).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Group mean swimming activity during experiment 1 of krill under long-day (n=9, a) and short-day (n=11, b) simulations. Shading around the line depicts the standard error of the mean (s.e.m.). Color bars at the top indicate the light regime provided. Data for (a) from Figure 5a in Hüppe et al., 2024.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Normalized swimming activity during experiment 1 under 5 days of simulated short-day conditions for each individual. Color bars at the top indicate the light regime provided.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Normalized and detrended swimming activity under 5 days of constant darkness (DD) after entrainment to simulated short-day conditions (experiment 1) for each individual. Period and power estimates from Lomb-Scargle periodogram (LSP) analysis are detailed for each individual.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig3-v1.jpg)
+
+**Figure 3.:** Average day analysis of the group mean swimming activity during experiment 1 over 3 days of short-day simulations (short-day treatment, n=11, a) and 5 days of long-day simulations (long-day treatment, n=9, b). Color bars at the top indicate light regime under day-night simulations. Shading around the line represents the s.e.m. Data in (b) from Hüppe et al., 2024.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Group mean swimming activity of rhythmic individuals over an average day under 3 days of simulated short-day conditions (n = 11, a) and 5 days of constant darkness (n = 6, b) during the short-day treatment of experiment 1. Color bars at the top indicate the light regime provided, as well as subjective day and night. Arrows indicate times of increased or decreased activity which lead to the characteristic activity pattern during the dark phase. Shading indicates the s.e.m.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig4-v1.jpg)
 
 **Figure 4.:** Distribution of the daily amplitudes of swimming activity visualized with boxplots for every day of experiment 1 for short-day (a) and long-day treatments (b). Differences in the daily amplitude of swimming activity between LD and DD conditions for short-day (b) and long-day (d) treatments. Lower and upper hinges of the boxes correspond to the 25th and 75th percentiles, the upper and lower whiskers extend to the largest and smallest value no further than 1.5 of the interquartile range, respectively, the horizontal line shows the median. Points represent daily amplitudes of individuals for each day and light condition. Differences in amplitude between first and last day under DD tested with paired t-test for short-day (a; n=11, t=3.197, df = 10, p-value=0.005) and long-day treatments (c, n=9, t=2.731, df = 8, p-value=0.012), and between LD and DD conditions with Mann-Whitney U-test for experiment 1 (b; n=88, p-value=<0.001) and experiment 2 (d; n=90, p-value<0.001). Significance levels: p<0.05: *, p<0.01: **, p<0.001: ***.
 
-## Light affects the amplitude and phase of swimming activity
+### Light affects the amplitude and phase of swimming activity
 
 Comparing the mean swimming activity of rhythmic individuals over an average day from the short-day and long-day treatments under LD conditions reveals a clear synchronization of swimming activity with the dark phase (Figure 3), visible in the sharp increase in activity around the times of lights-off and decrease at lights-on. Furthermore, the time of increased activity during the dark phase exhibits a discernible pattern comprising three distinct activity bouts (Figure 3). First, an increase in activity is observable in the evening (i.e. end of illumination), followed by a decrease in activity toward midnight. A second increase in swimming activity is observable in the latter half of the dark phase, followed by a decline in activity just before morning. A third short activity bout is observed in the morning (i.e. onset of illumination). This distinctive activity pattern during the dark phase is observed regardless of the photoperiod, resulting in a compression of the three activity bouts in short nights, while they spread out in long nights (Figure 3), demonstrating that krill can entrain to the long and short days provided. Furthermore, comparing the activity pattern during short-day LD conditions with the respective activity pattern under DD conditions reveals the persistence of evening and late-night activity increases under constant darkness conditions. In contrast, the morning activity bout is not visible (Figure 3—figure supplement 1). This suggests that the circadian clock drives a distinct bimodal activity pattern with two activity peaks in one day, i.e., the evening and late-night activity bouts. In contrast, the morning activity bout is triggered by the onset of illumination in the experimental setup. Furthermore, the amplitude of swimming activity is higher under LD than DD conditions (Figure 4B, Mann-Whitney U-test: p-value<0.001; Figure 4D, p-value<0.001).
 
-## Circadian swimming activity persists with a stable phase after entrainment to a wide range of natural photoperiods
+### Circadian swimming activity persists with a stable phase after entrainment to a wide range of natural photoperiods
 
 To gain insights into potential seasonal differences in the regulation of krill swimming activity, we sampled krill from the field in summer (summer treatment), late summer (late summer treatment), autumn (autumn treatment), and winter (winter treatment) and recorded their swimming activity for 4–8 days under constant darkness conditions, without previous entrainment in the activity monitor (see Table 1 for details).
 
 Similar to our previous analysis of individual krill swimming activity under constant darkness conditions, a large proportion of the recorded individuals in each experiment (44–100%) exhibited significant rhythmicity in the circadian range (Figure 5—figure supplements 1–4), which is also reflected in rhythmic swimming activity at the group level (Figure 5a–d, Figure 5—figure supplement 5). Interestingly, the pattern of circadian swimming activity, with two peaks during the dark phase, appears to become clearer and higher in amplitude with shortening photoperiods toward winter (Figure 5a–d). This is supported by rhythm analysis of the group behavior, which revealed a higher power and a period estimation closer to 24 hr with shortening photoperiod (Figure 5—figure supplement 6). While the morning peak is mainly visible in autumn and winter, the late-night activity peak is visible throughout the year, at the same time of the subjective 24 hr-day (Figure 5e–h). This pattern appears irrespective of the natural photoperiod the animals were entrained to in their natural environment before they were sampled for the respective experiment.
 
-## Synchronized DVM in the field is present across a wide range of natural photoperiods
+![Figure 5.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-v1.jpg)
+
+**Figure 5.:** Group mean swimming activity of rhythmic individuals during the first 4 days under DD conditions of experiment 2 for krill sampled for the summer (n = 5, a), late summer (n = 8, b), autumn (n = 10, c), and winter treatments (n = 4, d), as well as corresponding average day analysis of the first 4 days of experiment 2 in summer (e), late summer (f), autumn (g), and winter (h). Gray shading represents the s.e.m. Color bars at the top indicate the natural photoperiod at the day of sampling.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Normalized and detrended swimming activity under 8 days of constant darkness (DD) after individuals have been sampled from their natural environment during the summer treatment of experiment 2 (photoperiod: 17.5 hr). Period and power estimates from Lomb-Scargle periodogram (LSP) analysis of the first 4 days under DD are detailed for each individual.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Normalized and detrended swimming activity under 6 days of constant darkness (DD) after individuals have been sampled from their natural environment during the late summer treatment of experiment 2 (photoperiod: 14 hr). Period and power estimates from Lomb-Scargle periodogram (LSP) analysis of the first 4 days under DD are detailed for each individual.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Normalized and detrended swimming activity under 7 days of constant darkness (DD) after individuals have been sampled from their natural environment during the autumn treatment of experiment 2 (photoperiod: 12.6 hr). Period and power estimates from Lomb-Scargle periodogram (LSP) analysis of the first 4 days under DD are detailed for each individual.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Normalized and detrended swimming activity under 4 days of constant darkness (DD) after individuals have been sampled from their natural environment during the winter treatment of experiment 2 (photoperiod: 5.9 hr). Period and power estimates from Lomb-Scargle periodogram (LSP) analysis of the first 4 days under DD are detailed for each individual.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** Group mean swimming activity of rhythmic individuals under DD conditions after individuals have been sampled from their natural environment during summer (n = 5, a), late summer (n = 8, b), autumn (n = 10, c), and winter (n = 4, d) for experiment 2. Gray shading indicates the s.e.m.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/103096/elife-103096-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** Periodogram derived from Lomb-Scargle periodogram (LSP) analysis of group mean swimming activity under DD conditions after individuals have been sampled from their natural environment in different seasons for experiment 2 (see Figure 5—figure supplement 5).
+
+### Synchronized DVM in the field is present across a wide range of natural photoperiods
 
 To investigate whether krill swarms exhibited daily behavioral patterns in swimming behavior in the field before they were sampled for seasonal experiments, hydroacoustic data were recorded from the fishing vessel, continuously over a 3-day period prior to sampling for the seasonal experiments described above (for vessel positions during hydroacoustic recordings, see Figure 1—figure supplement 1). The data provide information about the vertical distribution of krill swarms in the upper water column (<220 m) below the vessel over time (Figure 6a–d). The hydroacoustic data in summer, late summer, and autumn show that krill swarms performed DVM, highly synchronized with the local light regime (Figure 6a–c). The swarms regularly ascended to the surface layers (<50 m) around sunset and returned to deeper layers (>100 m) around sunrise. In winter, little signal is visible in the upper water layer, indicating very low density or the absence of krill swarms (Figure 6d). Consequently, krill for the winter treatment was sampled from deeper waters (185 m). This agrees with observations that krill shift their distribution to deeper waters in winter, where krill have been observed to perform DVM also during this time of year (Bahlburg et al., 2023b). The available data only covers the upper 220 m of the water column, meaning that the dynamics of swarms below this depth are missed.
 
@@ -100,11 +264,11 @@ We used a new krill activity monitor to identify the endogenous underpinnings of
 
 ## Materials and methods
 
-## Animal collection
+### Animal collection
 
 Sampling of Antarctic krill (E. superba) for experimental purposes was conducted at various points throughout the seasonal cycle from the Bransfield Strait and South Orkney Island regions (for detailed locations, please refer to Table 1 and Figure 1—figure supplement 1) by use of the continuous fishing system onboard the krill fishing vessel Antarctic Endurance. During fishing, the vessel trawled at a speed of 1.5–2 knots using a commercial trawl. The krill was pumped on board by creating a vacuum in a hose connected to the cod-end of the trawl. On board, the krill was separated from the water on a metal grate, from which the krill was sampled. Sampled krill were kept in surface seawater at densities of ~1 Ind./L, at 1°C under constant darkness for an acclimation period between 4 and 10 hr, to reduce the impact of sampling stress and to check for the condition of krill individuals before transfer to the experimental setup. Prior to the start of each experiment, the experimental columns were filled with seawater sampled from the surface. For experiments conducted during summer, late summer, and autumn, when high food concentrations were to be expected, seawater was filtered through a 0.25 µm filter. During winter, field measurements showed a very low surface chlorophyll a level (below 0.5 µg/L; data not shown) and any potential larger particles in the water were excluded by sedimentation. The columns were distributed to the setup and the temperature was adjusted to 0.8°C. Only krill that were unharmed and lively were selected for behavioral experiments in the setup. At the end of each experiment, the krill were removed from the setup, evaluated for overall condition and total length (measured from the front of the eye to the tip of the telson, excluding setae), and their sex was determined under a stereomicroscope.
 
-## Krill swimming activity recording and experimental design
+### Krill swimming activity recording and experimental design
 
 Krill swimming activity was recorded using the AMAZE setup, described in detail in Hüppe et al., 2024. In short, the recording principle is based on krill swimming in vertical acrylic experimental columns (height: 80 cm, diameter: 9 cm). Each column contains five infrared (IR) detector modules, equally spaced over the height of the column. Vertical movements of krill are detected by IR light beam breaks. A computer on each column controls data acquisition and stores beam break data. The experimental columns are placed in a compressor cooled incubator, which allows for a precise temperature control. Programmable LED light bars in the top of the incubator simulate underwater light spectra and daily light intensity cycles.
 
@@ -112,9 +276,9 @@ To investigate the behavioral activity of individual krill under light-dark cond
 
 To investigate seasonal changes in krill circadian activity, four additional experiments were conducted, namely summer treatment (sampling date: January 22, 2022), late summer treatment (sampling date: March 1, 2022), autumn treatment (sampling date: March 15, 2022), and winter treatment (sampling date: June 10, 2022). For these experiments, krill were caught at the dates described above and after acclimation, 10 animals per experiment were distributed to the activity monitor, where their activity was recorded for 4–8 days under constant darkness conditions (see Table 1 for details).
 
-## Behavioral data analysis
+### Behavioral data analysis
 
-## Experiment 1 (LD-DD)
+#### Experiment 1 (LD-DD)
 
 Swimming activity of krill individuals was calculated from raw beam breaks as described in Hüppe et al., 2024. In short, we only considered upward swimming movements of individuals to separate baseline activity from increased activity, as krill are negatively buoyant. To accomplish this, we organized the raw beam break data from all five detector modules in each experimental column in chronological order. We selected only those beam break detections that occurred after a detection in the detector module positioned lower on the column. Like this, we consider upward swimming movements throughout the full height of the column. Beam breaks caused by upward swimming were summed over 10 min intervals and normalized between 0 and 1 for each individual. Data were smoothed by a centered moving average, with a smoothing window of 6 data points under light-dark simulations and 24 data points under constant darkness conditions.
 
@@ -122,12 +286,12 @@ To calculate the group activity of rhythmic krill under DD conditions, we first 
 
 Average day analysis for a group of krill under LD cycles was done by determining the mean and s.e.m. per 10 min time interval of a 24 hr day over all experimental days and all individuals in one experiment and subsequent smoothing. Average day analysis for a group of krill under DD conditions was done in the same way, but based on the detrended and FRP-corrected data. The amplitude of swimming activity under LD and DD conditions was based on individual, normalized, detrended, and smoothed activity data, and was calculated for every experimental day as the difference between the daily maximal and minimal swimming activity. Differences in the activity amplitude between light conditions (i.e. LD vs. DD) were tested with the Mann-Whitney U-test and amplitude differences between the first and last day under DD conditions were tested with a paired t-test (R stats package version 4.1.2). All statistical analysis assumed a significance level of p>0.05.
 
-## Experiment 2 (DD)
+#### Experiment 2 (DD)
 
 Group activity and average day activity for seasonal experiments (experiment 2, summer, late summer, autumn, and winter treatment) was done as for DD conditions described above, but only the first 4 days of activity of each experiment were considered. This was to allow for a better comparison and to account for the effect of damping rhythms after several days under DD.
 
 All data handling, analysis, and visualization was done with the R programming language (version 4.1.2, R Development Core Team, 2021) in RStudio (version 2023.12.1.402), using the tidyverse package (version 2.0.0, Wickham et al., 2019). Rhythm analysis and period estimation was done with the R package lomb (Ruf, 1999); local sun data (i.e. sunset and sunrise) were retrieved from the suncalc package (version 0.5.1).
 
-## Hydroacoustic data recording and visualization
+### Hydroacoustic data recording and visualization
 
 Hydroacoustic data were collected using a hull-mounted SIMRAD ES80 echosounder (Kongsberg Maritime AS) aboard the Antarctic Endurance, covering 3 days before the sampling for each of the seasonal behavioral experiments of experiment 2. The signal received from the 200 kHz band was used to visualize the vertical distribution of krill swarms beneath the ship. The raw acoustic data from the summer, late summer, and autumn periods were converted to mean volume backscattering strength and binned to a time resolution of 1 s and depth bins of 0.5 m using Echopype (Lee, 2021). For the period of winter, raw acoustic data were not available. An alternative approach was employed, utilizing a novel method proposed by Bahlburg et al., 2023a, to reconstruct the backscattering signal from a dataset of screenshots displaying the visualized hydroacoustic signal of the echosounder. We only included data during active fishing periods and the vessel is specifically targeting E. superba, which occurs in large monospecific aggregations. Further, krill fishery bycatch rates are very low (0.1–0.3%, Krafft et al., 2023), which makes it highly probable that the recorded signal represents krill swarms. Data handling and visualization were done with R in RStudio, using the packages tidyverse and scico (version 1.3.1).

@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/001tmjg57 Department of Molecular Biosciences, University of Kansas Lawrence United States
+1. Department of Molecular Biosciences, University of Kansas Lawrence United States ([ROR:001tmjg57](https://ror.org/001tmjg57))
 
 † Corresponding author
 

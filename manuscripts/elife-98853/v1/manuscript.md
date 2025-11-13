@@ -15,16 +15,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04wn7wc95 Department of Biopharmaceutics, Graduate School of Pharmaceutical Sciences, Nagoya City University Nagoya Japan
-2. https://ror.org/057jm7w82 Department of Biopharmaceutics, School of Pharmacy, Tokyo University of Pharmacy and Life Sciences Tokyo Japan
-3. https://ror.org/057zh3y96 Laboratory of Molecular Pharmacokinetics, Graduate School of Pharmaceutical Sciences, The University of Tokyo Tokyo Japan
-4. https://ror.org/0475w6974 College of Pharmacy, Kinjo Gakuin University Nagoya Japan
+1. Department of Biopharmaceutics, Graduate School of Pharmaceutical Sciences, Nagoya City University Nagoya Japan ([ROR:04wn7wc95](https://ror.org/04wn7wc95))
+2. Department of Biopharmaceutics, School of Pharmacy, Tokyo University of Pharmacy and Life Sciences Tokyo Japan ([ROR:057jm7w82](https://ror.org/057jm7w82))
+3. Laboratory of Molecular Pharmacokinetics, Graduate School of Pharmaceutical Sciences, The University of Tokyo Tokyo Japan ([ROR:057zh3y96](https://ror.org/057zh3y96))
+4. College of Pharmacy, Kinjo Gakuin University Nagoya Japan ([ROR:0475w6974](https://ror.org/0475w6974))
 
 † Corresponding author
 
 ## Abstract
 
-The intestinal absorption of essential nutrients, especially those not readily biosynthesized, is a critical physiological process for maintaining homeostasis. Numerous studies have indicated that intestinal absorption is mediated by various membrane transporters. Citrate, a crucial bioactive compound produced as an intermediate in the Krebs cycle, is absorbed in the small intestine through carrier-mediated systems because of its high hydrophilicity. While the luminal absorption of citrate is mediated by Na + -dicarboxylate cotransporter 1 (NaDC1/SLC13A2), the mechanism governing the release of the transported citrate into the bloodstream remains unknown. Here, we explored the transporters responsible for intestinal citrate absorption at the basolateral membrane, focusing on highly expressed orphan transporters in the small intestine as candidates. Consequently, SLC35G1, originally identified as a partner of stromal interaction molecule 1, a cell surface transmembrane glycoprotein, was found to play a role in the intestinal absorption of citrate at the basolateral membrane. Furthermore, our results revealed that SLC35G1-mediated citrate transport was diminished by chloride ions at physiologically relevant extracellular concentrations. This suggests that SLC35G1, to our best knowledge, is the first transporter identified to be extremely sensitive to chloride ions among those functioning on the basolateral membrane of intestinal epithelial cells. This study provides valuable insights into the intestinal absorption of citrate and significantly contributes to elucidating the poorly understood molecular basis of the intestinal absorption system.
+The intestinal absorption of essential nutrients, especially those not readily biosynthesized, is a critical physiological process for maintaining homeostasis. Numerous studies have indicated that intestinal absorption is mediated by various membrane transporters. Citrate, a crucial bioactive compound produced as an intermediate in the Krebs cycle, is absorbed in the small intestine through carrier-mediated systems because of its high hydrophilicity. While the luminal absorption of citrate is mediated by Na+-dicarboxylate cotransporter 1 (NaDC1/SLC13A2), the mechanism governing the release of the transported citrate into the bloodstream remains unknown. Here, we explored the transporters responsible for intestinal citrate absorption at the basolateral membrane, focusing on highly expressed orphan transporters in the small intestine as candidates. Consequently, SLC35G1, originally identified as a partner of stromal interaction molecule 1, a cell surface transmembrane glycoprotein, was found to play a role in the intestinal absorption of citrate at the basolateral membrane. Furthermore, our results revealed that SLC35G1-mediated citrate transport was diminished by chloride ions at physiologically relevant extracellular concentrations. This suggests that SLC35G1, to our best knowledge, is the first transporter identified to be extremely sensitive to chloride ions among those functioning on the basolateral membrane of intestinal epithelial cells. This study provides valuable insights into the intestinal absorption of citrate and significantly contributes to elucidating the poorly understood molecular basis of the intestinal absorption system.
 
 ## Introduction
 
@@ -48,37 +48,37 @@ Our findings suggest that SLC35G1 is localized on the basolateral side of intest
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 [14C]citrate (116.4 mCi/mmol) was obtained from PerkinElmer Life and Analytical Sciences (Boston, MA, USA). Unlabeled citrate and Dulbecco’s modified Eagle’s medium (DMEM) were sourced from Wako Pure Chemical Industries (Osaka, Japan), and fetal bovine serum (FBS) was obtained from Sigma Aldrich (St. Louis, MO, USA). All other reagents were of analytical grade and commercially acquired.
 
-## Cell culture
+### Cell culture
 
 Madin-Darby canine kidney II (MDCKII) cells and Caco-2 cells were obtained from RIKEN BioResource Research Center (Tsukuba, Japan) with catalog numbers RCB5148 and RCB0988, respectively. Both cells were cultured at 37°C and 5% CO2 in DMEM supplemented with 10% FBS, 100 U/mL penicillin, and 100 µg/mL streptomycin, as previously described (Mimura et al., 2017), and were confirmed to be free of mycoplasma contamination.
 
-## Preparation of plasmids
+### Preparation of plasmids
 
 The cDNA for human SLC35G1 was cloned using a reverse transcription (RT)-PCR-based method, as previously described (Mimura et al., 2017). Briefly, an RT reaction was performed to obtain a cDNA mixture, using 1 µg of the human intestine total RNA (BioChain Institute, Newark, CA), an oligo(dT) primer, and the highly efficient reverse transcriptase ReverTra Ace (Toyobo, Osaka, Japan). The SLC35G1 cDNA was then amplified by PCR, using KOD plus polymerase (Toyobo) and the following primers: forward primer, 5′-GAGATGCGGCCTCAGGACAG-3′, and reverse primer, 5′-TAGCCTCCCCACCCATATCCC-3′. These primers were designed based on the GenBank sequences for SCL35G1 (accession number: NM_001134658.2). The second PCR was performed using the initial PCR product as a template, with a forward primer containing an EcoRI restriction site (underlined), 5′-AGAATTCCGAGATGCGGCCTCAGGAC-3′, and a reverse primer containing an XbaI restriction site (underlined), 5′-GTTCTAGATGTGTGCGTATGCTG-3′. The resulting cDNA product was inserted into the pCI-neo vector (Promega, Madison, WI, USA) between the EcoRI and XbaI sites, and the sequence of the final product was determined using an automated sequencer.
 
-## Uptake study
+### Uptake study
 
 First, we established MCDKII cells stably expressing SLC35G1 as previously described (Yamamoto et al., 2010). Briefly, MDCKII cells were transfected with the plasmid carrying the SLC35G1 cDNA, using Lipofectamine 2000 as a transfection reagent. The cells were then cultured in DMEM supplemented with 10% FBS and 800 μg/mL G418 for 2–3 weeks. Subsequently, G418-resistant clones were selected and assessed for the transport of [14C]citrate. MDCKII cells stably expressing SLC35G1 with high citrate transport activity were used in subsequent studies.
 
 MDCKII cells stably expressing SLC35G1 (1.5×105 cells/mL, 1 mL/well) were grown in 24-well plates for 48 h until they reached confluence. For standard transport assays, cells were preincubated in substrate-free uptake buffer, which was Hanks’ solution modified to reflect cytosolic conditions (142.06 mmol/L K-gluconate, 0.812 mmol/L MgSO4, 0.379 mM K2HPO4, 0.441 mM KH2PO4, 0.952 mM Ca-gluconate, 25 mM D-glucose) and supplemented with 10 mM 2-(N-morpholino)-ethanesulfonic acid (MES; pH 5.5), for 5 min. Subsequently, uptake assays were initiated by replacing the substrate-free uptake buffer with an uptake buffer containing a [14C]citrate (0.25 mL). For initial uptake analysis experiments, the uptake period was set to 10 min in the initial phase, in which uptake was in proportion to time. Other experiments were conducted in a time-dependent manner, as specified. When examining the effects of various compounds on citrate uptake, the test compounds were added to the buffer only during the uptake period. All procedures were performed at 37°C. Assays were stopped by adding 2 mL of ice-cold substrate-free uptake buffer, followed by two washes with an additional 2 mL of the same buffer. The cells were solubilized in 0.5 mL of 0.2 mol/L NaOH solution containing 0.5% sodium dodecyl sulfate (SDS), and the associated radioactivity was measured by liquid scintillation counting for uptake evaluation. The cellular protein content was determined by the bicinchoninic acid (BCA) method, using bovine serum albumin as the standard (3). In experiments to examine the effect of ionic conditions, K-gluconate in the control uptake solution was replaced as indicated. Uptake solutions were supplemented with 10 mM MES (pH 6.5 and below) or 10 mM HEPES (pH 7.0 and above) in experiments to examine the effect of pH. In experiments to examine the effect of nigericin as an agent for intracellular acidification, a mannitol-based buffer (250 mM mannitol, 1.2 mM MgSO4, 2 mM KH2PO4, 5 mM D-glucose, 10 µM nigericin, and 20 mM MES) was used and uptake assays were conducted for 10 min at pH 5.5 and 37°C in the presence (10 μM) or absence (control) of nigericin after pretreatment for 5 min with or without nigericin under the same conditions. To estimate nonspecific uptake, uptake assays were conducted in mock cells transfected with an empty pCI-neo vector. The specific uptake of citrate by SLC35G1 was estimated by subtracting the uptake in mock cells from that in SLC35G1-transfected cells.
 
-## Transcellular transport study
+### Transcellular transport study
 
 MDCKII cells were seeded at a density of 2×105 cells on each polycarbonate membrane insert in a 12-well Transwell plate and cultured for 5 days. After removing the culture medium from both sides of the inserts, cells were preincubated for 5 min at 37 °C in Hanks’ solution (136.7 mM NaCl, 5.36 mM KCl, 0.952 mM CaCl2, 0.812 mM MgSO4, 0.441 mM KH2PO4, 0.385 mM Na2HPO4, and 25 mM D-glucose) supplemented with 10 mM MES (pH 5.5) in the apical chamber and 10 mM HEPES (pH 7.4) in the basolateral chamber. To initiate transcellular transport from the apical side to the basolateral side, 0.5 mL of the Hanks’ solution (pH 5.5) containing [14C]citrate was replaced in the apical chamber. For transport in the opposite direction (basolateral side to apical side), 1.5 mL of Hanks’ solution (pH 7.4) containing [14C]citrate was replaced in the basal chamber. To monitor transcellular transport, samples (100 µL from basal chamber and 50 µL from the apical chamber) were periodically collected, replenishing each collected volume with an equal volume of fresh buffer. At the end of the transport study, the assays were stopped by adding ice-cold Hanks’ solution (1 mL for the apical chamber and 3 mL for the basolateral chamber), followed by washing the cells twice with the same buffer. The cells were then solubilized in 0.5 mL of 0.2 M NaOH solution containing 0.5% SDS at room temperature for 1 hr. The radioactivity associated with the cells was measured by liquid scintillation counting for uptake evaluation.
 
-## Quantification of SLC35G1 mRNA by quantitative real-time PCR
+### Quantification of SLC35G1 mRNA by quantitative real-time PCR
 
 Total RNA samples from various human tissues (BioChain Institute) and Caco-2 cells were used to prepare cDNA using the ReverTra Ace reverse transcriptase. A quantitative real-time PCR was performed using SsoFast EvaGreen Supermix with Low ROX (Bio-Rad Laboratories, Hercules, CA, USA) on a 7300 Fast Real-time PCR System (Applied Biosystems, Foster City, CA, USA) with the following primers: forward primer for SLC35G1, 5′- AGAGCCCACTGAGAAAAGGA –3′; reverse primer for SLC35G1, 5′-GTAGGTGCTGGCTCTGCCT-3′; forward primer for GAPDH, 5′-CGGAGTCAACGGATTTGGTCGTAT-3′; reverse primer for GAPDH, 5′-AGCCTTCTCCATGGTGGTGAAGAC-3′. GAPDH was employed as an internal control for normalization of the mRNA expression levels of SLC35G1.
 
-## Knockdown study
+### Knockdown study
 
 Caco-2 cells (5.0×104 cells/mL, 1 mL/well) were grown on 24-well-coated plates for 6 hr, transfected with 5 pmol/well of the Silencer Selected siRNAs specific to the mRNA of SLC35G1 (Thermo Fisher Scientific, Waltham, MA), using 1.5 mL/well of Lipofectamine RNAi MAX (Thermo Fisher Scientific), and cultured for 5 days for silencing of the designated transporter by RNAi. The sequences of the siRNAs are following: sense sequence of #1 siRNA, GGAGUGAUCCUUAUCGUGATT; antisense sequence of #1 siRNA, UCACGAUAAGGAUCACUCCAG, sense sequence of #2 siRNA, CUUGCUUAAUAUACAGAAATT; antisense sequence of #2 siRNA, UUUCUGUAUAUUAAGCAAGGG, sense sequence of #3 siRNA, CAUUUGGUAUUAUGUAGUATT; antisense sequence of #3 siRNA, UACUACAUAAUACCAAAUGCT. For control, negative control Silencer Selected siRNA (Thermo Fisher Scientific), was used. Citrate uptake assays were conducted as described above for SLC35G1-transfected MDCKII cells.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 To examine the localization of SLC35G1, MDCKII cells stably expressing SLC35G1 were seeded at a density of 2×105 cells/insert on a 12-well Transwell plate and cultured for 5 days, and Caco-2 cells were seeded at a density of 5×105 cells/insert on a 12-well Transwell plate and cultured for 21 days. The cells were washed thrice with ice-cold PBS and fixed in 5% paraformaldehyde for 15 min. After washing thrice with PBS, the cells were incubated for 1 h at room temperature with an anti-human SLC35G1 goat polyclonal antibody at a dilution of 1:100 in Can Get Signal Immunostain Immunoreaction Enhancer Solution A (Toyobo). The cells were washed with PBS, and the primary antibody was probed with anti-goat IgG Alexa Fluor 488 (Jackson ImmunoResearch Laboratories, West Grove, PA, USA) at a dilution of 1:400 in Can Get Signal Immunostain Immunoreaction Enhancer Solution B (Toyobo) for 1 hr at room temperature. After three washes with PBS, the cells were mounted on a glass slide in 9:1 glycerol/PBS containing 1 µM DAPI.
 
@@ -86,7 +86,7 @@ A specimen of normal human adult small intestine frozen tissue sections (US Biom
 
 The localization of immunofluorescently labeled proteins and nuclei was visualized using a confocal laser scanning microscope (LSM510; Zeiss, Jena, Germany).
 
-## Data analysis
+### Data analysis
 
 The saturable transport of citrate by SLC35G1 was analyzed by assuming Michaelis-Menten-type carrier-mediated transport, as represented by the following equation: v=Vmax × s/(Km +s). The apparent parameters of the maximum transport rate (Vmax) and Michaelis constant (Km) were estimated by fitting this equation to the experimental profile of the uptake rate (v) versus the concentration (s) of citrate as the substrate, using a nonlinear least-squares regression analysis program, WinNonlin (Pharsight, Mountain View, CA, USA), with v–2 as the weight.
 

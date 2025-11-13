@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03vyddc91 Healthcare Improvement Scotland Edinburgh United Kingdom
+1. Healthcare Improvement Scotland Edinburgh United Kingdom ([ROR:03vyddc91](https://ror.org/03vyddc91))
 
 † Corresponding author
 

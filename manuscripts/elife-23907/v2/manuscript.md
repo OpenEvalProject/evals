@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.23907.001 The Atlantic herring is one of the most abundant vertebrates on earth but its nucleotide diversity is moderate (π = 0.3%), only three-fold higher than in human. Here, we present a pedigree-based estimation of the mutation rate in this species. Based on whole-genome sequencing of four parents and 12 offspring, the estimated mutation rate is 2.0 × 10 -9 per base per generation. We observed a high degree of parental mosaicism indicating that a large fraction of these de novo mutations occurred during early germ cell development. The estimated mutation rate – the lowest among vertebrates analyzed to date – partially explains the discrepancy between the rather low nucleotide diversity in herring and its huge census population size. But a species like the herring will never reach its expected nucleotide diversity because of fluctuations in population size over the millions of years it takes to build up high nucleotide diversity. DOI: http://dx.doi.org/10.7554/eLife.23907.001
+The Atlantic herring is one of the most abundant vertebrates on earth but its nucleotide diversity is moderate (π = 0.3%), only three-fold higher than in human. Here, we present a pedigree-based estimation of the mutation rate in this species. Based on whole-genome sequencing of four parents and 12 offspring, the estimated mutation rate is 2.0 × 10-9 per base per generation. We observed a high degree of parental mosaicism indicating that a large fraction of these de novo mutations occurred during early germ cell development. The estimated mutation rate – the lowest among vertebrates analyzed to date – partially explains the discrepancy between the rather low nucleotide diversity in herring and its huge census population size. But a species like the herring will never reach its expected nucleotide diversity because of fluctuations in population size over the millions of years it takes to build up high nucleotide diversity.
 
 ## Introduction
 
@@ -38,41 +38,380 @@ In this study, to our knowledge the first of its kind in a teleost, we estimate 
 
 ## Results
 
-## Whole genome sequencing and variant calling
+### Whole genome sequencing and variant calling
 
-We have generated two-generation experimental pedigrees for spring-spawning Atlantic and Baltic herring (classified as a subspecies of the Atlantic herring by Linnaeus (1761)), each comprising the two parents and six offspring (Table 1). We performed whole-genome sequencing of these two pedigrees using genomic DNA isolated from muscle tissue. As detection of de novo mutations requires high sequence coverage, we sequenced each individual to ~45–71 x (Table 1), in line with the procedures used in previous studies (Keightley et al., 2015; Kong et al., 2012). The sequences were aligned to the recently published Atlantic herring genome (Martinez Barrio et al., 2016). A total of 5.3 (Atlantic) and 5.2 (Baltic) million raw SNPs were detected in each pedigree, respectively, using GATK (see Materials and methods) (McKenna et al., 2010).10.7554/eLife.23907.003Table 1.Summary of the pedigrees used for whole-genome sequencing.DOI: http://dx.doi.org/10.7554/eLife.23907.003NoIDPedigreeSequencing depth (x)De novo mutationsPedigree 1, Atlantic herring1AM8Father65.7N.A.2AF8Mother70.2N.A.3AA1Offspring65.614AA2Offspring70.925AA3Offspring47.206AA4Offspring66.937AA5Offspring64.248AA6Offspring61.21Pedigree 2, Baltic herring9BM19Father71.8N.A.10BF21Mother65.1N.A.11BB1Offspring74.5212BB2Offspring61.6113BB3Offspring75.0014BB4Offspring69.9215BB5Offspring60.6216BB6Offspring62.61N.A. = Not available.
+We have generated two-generation experimental pedigrees for spring-spawning Atlantic and Baltic herring (classified as a subspecies of the Atlantic herring by Linnaeus (1761)), each comprising the two parents and six offspring (Table 1). We performed whole-genome sequencing of these two pedigrees using genomic DNA isolated from muscle tissue. As detection of de novo mutations requires high sequence coverage, we sequenced each individual to ~45–71 x (Table 1), in line with the procedures used in previous studies (Keightley et al., 2015; Kong et al., 2012). The sequences were aligned to the recently published Atlantic herring genome (Martinez Barrio et al., 2016). A total of 5.3 (Atlantic) and 5.2 (Baltic) million raw SNPs were detected in each pedigree, respectively, using GATK (see Materials and methods) (McKenna et al., 2010).
 
-## Identification and validation of the de novo mutations
+**Table 1.**
+ Summary of the pedigrees used for whole-genome sequencing.
 
-Detection of de novo mutations with high confidence requires a careful examination of raw variant calls and application of highly stringent filtering criteria. Using a standard genotype-calling pipeline will typically lead to the great majority of novel sequence variants detected being false positives. Screening of provisional candidate mutations in a single offspring indicated that this was the case, as many candidates could not be verified using Sanger sequencing. Hence, in order to minimize the frequency of false positives by the de novo calls using only the GATK variant caller, we separately performed variant calling using SAMTOOLS (
+
+<table>
+  <thead>
+    <tr>
+      <th>No</th>
+      <th>ID</th>
+      <th>Pedigree</th>
+      <th>Sequencing depth (x)</th>
+      <th>De novo mutations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Pedigree 1, Atlantic herring</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>AM8</td>
+      <td>Father</td>
+      <td>65.7</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>AF8</td>
+      <td>Mother</td>
+      <td>70.2</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>AA1</td>
+      <td>Offspring</td>
+      <td>65.6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>AA2</td>
+      <td>Offspring</td>
+      <td>70.9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>AA3</td>
+      <td>Offspring</td>
+      <td>47.2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>AA4</td>
+      <td>Offspring</td>
+      <td>66.9</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>AA5</td>
+      <td>Offspring</td>
+      <td>64.2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>AA6</td>
+      <td>Offspring</td>
+      <td>61.2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td colspan="5">Pedigree 2, Baltic herring</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>BM19</td>
+      <td>Father</td>
+      <td>71.8</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>BF21</td>
+      <td>Mother</td>
+      <td>65.1</td>
+      <td>N.A.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>BB1</td>
+      <td>Offspring</td>
+      <td>74.5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>BB2</td>
+      <td>Offspring</td>
+      <td>61.6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>BB3</td>
+      <td>Offspring</td>
+      <td>75.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>BB4</td>
+      <td>Offspring</td>
+      <td>69.9</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>BB5</td>
+      <td>Offspring</td>
+      <td>60.6</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>BB6</td>
+      <td>Offspring</td>
+      <td>62.6</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_N.A. = Not available._
+
+### Identification and validation of the de novo mutations
+
+Detection of de novo mutations with high confidence requires a careful examination of raw variant calls and application of highly stringent filtering criteria. Using a standard genotype-calling pipeline will typically lead to the great majority of novel sequence variants detected being false positives. Screening of provisional candidate mutations in a single offspring indicated that this was the case, as many candidates could not be verified using Sanger sequencing. Hence, in order to minimize the frequency of false positives by the de novo calls using only the GATK variant caller, we separately performed variant calling using SAMTOOLS (Li et al., 2009) and only selected novel mutations detected by both variant callers (Figure 1). In addition, we applied strict filtering criteria in order to remove variants detected due to sequencing and alignment errors. We excluded variant calls from genomic regions with low mappability (see Materials and methods) and repetitive regions detected by Repeat Masker (Smit et al., 2013). Furthermore, we defined the cut-off parameters for sequence depth, SNP and genotype quality-related statistics using the set of SNPs that were fixed for different alleles in both parents and thus heterozygous in all offspring (Figure 1, Materials and methods). As this strict filtering could lead to failure to detect some fraction of true heterozygotes, we estimated the false negative rate of our pipeline by calling SNPs in each individual offspring separately, in order to eliminate bias stemming from shared SNPs present in multiple individuals being called with higher power. For this analysis we used 116,910 polymorphic sites where the parents were homozygous for different alleles in the joint genotype calling. The expectation is that these sites are heterozygous in all offspring, but that information did not influence SNP calling. By separating the individuals, we mimicked the situation for de novo mutations, which are typically not shared. Using the same pipeline as for the de novo detection, the average detection rate of such heterozygous positions across all offspring was 94.1%, yielding a false negative rate of 5.9%. As an alternative way of estimating the false negative rate, we used a simulation procedure where we generated mutated reads for 1000 positions within callable regions. Each site in each offspring had its frequency of mutated reads determined by a sample from the observed frequency distribution of called heterozygous sites in the original data set (see Materials and methods). Across all offspring, we found an overall frequency of 2.7% false negative calls, while roughly 9% of sites failed to generate a call (Supplementary file 2). Overall, the two methods used are in agreement. However, for the purpose of the final calculations we will use the empirical estimate of 5.9%, which includes both incorrect and failed calls, as it is derived directly from the real data set. The choice has minor effects on the estimated mutation rate, as using the simulated value would result in the final rate being approximately 5% higher.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23907/elife-23907-fig1-v2.jpg)
 
-**Figure 1.:** A schematic illustration of the steps used in calling and filtering the candidate mutations.DOI: http://dx.doi.org/10.7554/eLife.23907.004
+**Figure 1.:** A schematic illustration of the steps used in calling and filtering the candidate mutations.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/23907/elife-23907-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Chromatograms from the identified target offspring and its parents for each region containing a candidate de novo mutation.DOI: http://dx.doi.org/10.7554/eLife.23907.005
+**Figure 1—figure supplement 1.:** Chromatograms from the identified target offspring and its parents for each region containing a candidate de novo mutation.
 
-This stringent filtering procedure identified a total of 17 candidate de novo mutations, nine in the Atlantic pedigree and eight in the Baltic one (Tables 1 and 2). Two of the 17 de novo mutations were each found in two different offspring from the same pedigree.10.7554/eLife.23907.006Table 2.Summary of the de novo mutations identified in Atlantic herring.DOI: http://dx.doi.org/10.7554/eLife.23907.006SNP positionMutationScaffold:positionIdRefVarFreq†Origin‡Type§Region1157:174,127AA4TA1/50 (-)MTVIntergenic153:2,684,380AA2TG9/50 (18%)PTVIntronic241:7,752,158AA5CA5/50 (10%)MTVIntergenic4:5,098,858AA5TC2/50 (4%)MTSIntronic481:1,927,799AA4, AA5*CA6/50 (12%)PTV3' UTR61:815,077AA4AT3/50 (6%)N.A.TVIntergenic62:613,919AA1, AA6*CA6/50 (12%)MTVIntergenic729:1,499,224AA2CT4/50 (8%)MTSIntronic887:195,946AA5GA1/50 (-)PTSIntronic10:1,443,002BB4CT1/46 (-)PTSIntronic151:267,875BB5AT1/46 (-)PTVExonic177:1,045,894BB1AG1/46 (-)PTSIntronic194:478,776BB6AG1/46 (-)N.A.TSIntronic246:1,890,479BB4TC1/46 (-)PTSIntergenic257:380,993BB2GA1/46 (-)MTSIntergenic26:2,976,192BB1TC2/46 (4%)PTSIntronic37:1,374,669BB5GA1/46 (-)MTSIntronic*Same mutation detected in two progeny.†Number of siblings carrying the de novo mutation; - the frequency of transmission was only estimated when two or more progeny with the de novo mutation was detected.‡M:Maternal, P:Paternal, N.A. = Not available§TV = Transversion, TS = Transition
+This stringent filtering procedure identified a total of 17 candidate de novo mutations, nine in the Atlantic pedigree and eight in the Baltic one (Tables 1 and 2). Two of the 17 de novo mutations were each found in two different offspring from the same pedigree.
+
+**Table 2.**
+ Summary of the de novo mutations identified in Atlantic herring.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">SNP position</th>
+      <th colspan="2">Mutation</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Scaffold:position</th>
+      <th>Id</th>
+      <th>Ref</th>
+      <th>Var</th>
+      <th>Freq†</th>
+      <th>Origin‡</th>
+      <th>Type§</th>
+      <th>Region</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1157:174,127</td>
+      <td>AA4</td>
+      <td>T</td>
+      <td>A</td>
+      <td>1/50 (-)</td>
+      <td>M</td>
+      <td>TV</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>153:2,684,380</td>
+      <td>AA2</td>
+      <td>T</td>
+      <td>G</td>
+      <td>9/50 (18%)</td>
+      <td>P</td>
+      <td>TV</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>241:7,752,158</td>
+      <td>AA5</td>
+      <td>C</td>
+      <td>A</td>
+      <td>5/50 (10%)</td>
+      <td>M</td>
+      <td>TV</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>4:5,098,858</td>
+      <td>AA5</td>
+      <td>T</td>
+      <td>C</td>
+      <td>2/50 (4%)</td>
+      <td>M</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>481:1,927,799</td>
+      <td>AA4, AA5*</td>
+      <td>C</td>
+      <td>A</td>
+      <td>6/50 (12%)</td>
+      <td>P</td>
+      <td>TV</td>
+      <td>3' UTR</td>
+    </tr>
+    <tr>
+      <td>61:815,077</td>
+      <td>AA4</td>
+      <td>A</td>
+      <td>T</td>
+      <td>3/50 (6%)</td>
+      <td>N.A.</td>
+      <td>TV</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>62:613,919</td>
+      <td>AA1, AA6*</td>
+      <td>C</td>
+      <td>A</td>
+      <td>6/50 (12%)</td>
+      <td>M</td>
+      <td>TV</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>729:1,499,224</td>
+      <td>AA2</td>
+      <td>C</td>
+      <td>T</td>
+      <td>4/50 (8%)</td>
+      <td>M</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>887:195,946</td>
+      <td>AA5</td>
+      <td>G</td>
+      <td>A</td>
+      <td>1/50 (-)</td>
+      <td>P</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>10:1,443,002</td>
+      <td>BB4</td>
+      <td>C</td>
+      <td>T</td>
+      <td>1/46 (-)</td>
+      <td>P</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>151:267,875</td>
+      <td>BB5</td>
+      <td>A</td>
+      <td>T</td>
+      <td>1/46 (-)</td>
+      <td>P</td>
+      <td>TV</td>
+      <td>Exonic</td>
+    </tr>
+    <tr>
+      <td>177:1,045,894</td>
+      <td>BB1</td>
+      <td>A</td>
+      <td>G</td>
+      <td>1/46 (-)</td>
+      <td>P</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>194:478,776</td>
+      <td>BB6</td>
+      <td>A</td>
+      <td>G</td>
+      <td>1/46 (-)</td>
+      <td>N.A.</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>246:1,890,479</td>
+      <td>BB4</td>
+      <td>T</td>
+      <td>C</td>
+      <td>1/46 (-)</td>
+      <td>P</td>
+      <td>TS</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>257:380,993</td>
+      <td>BB2</td>
+      <td>G</td>
+      <td>A</td>
+      <td>1/46 (-)</td>
+      <td>M</td>
+      <td>TS</td>
+      <td>Intergenic</td>
+    </tr>
+    <tr>
+      <td>26:2,976,192</td>
+      <td>BB1</td>
+      <td>T</td>
+      <td>C</td>
+      <td>2/46 (4%)</td>
+      <td>P</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>37:1,374,669</td>
+      <td>BB5</td>
+      <td>G</td>
+      <td>A</td>
+      <td>1/46 (-)</td>
+      <td>M</td>
+      <td>TS</td>
+      <td>Intronic</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Same mutation detected in two progeny.†Number of siblings carrying the de novo mutation; - the frequency of transmission was only estimated when two or more progeny with the de novo mutation was detected.‡M:Maternal, P:Paternal, N.A. = Not available§TV = Transversion, TS = Transition_
 
 We performed Sanger sequencing of the genomic regions around each of these putative de novo mutations in all parents and the 12 offspring (Figure 1—figure supplement 1). This confirmed that all 17 putative de novo mutation events were genuine and all the peak ratios of two alleles were close to 1:1 consistent with germ-line mutations. Thus, we did not observe any false positives in this study.
 
 In order to estimate the transmission frequencies of our detected de novo mutations, we measured the rate of transfer of the de novo mutations in a larger set of offspring (n = 46 and 50 per family), in order to infer when during the formation of the parental germ line the mutation occurred (Table 2). For eight out of seventeen de novo mutations we observed more than one sibling carrying exactly the same mutation (Table 2). The range of occurrences for the de novo mutations was one to nine among the 50 offspring. Even the maximum of the observed transfer rates (18% for scaffold 153: 2,684,380 T>G) was significantly lower than the 50% expected for a fixed mutation (p=1.4×10−3, Fisher’s exact test). About half of the de novo mutations were present in two or more offspring, indicating that they occurred during early germ cell divisions. Assuming that the number of cell divisions from zygote to mature sperm or egg is similar in Atlantic herring to the one in mammalian species, we can conclude from a recent simulation study (Harland et al., 2016) that it would be highly unlikely to observe such a high rate of parental mosaicism unless a large fraction of the de novo mutations occurred during early germ cell divisions. Further, the incidence of parental mosaicism differed significantly between the two families included in this study (Table 2; p=0.01, Fisher’s exact test). The finding that the same mutation was observed in two or more siblings for eight of the putative de novo mutations confirms that these must be germ-line mutations and not somatic mutations.
 
-## Parental origin of de novo mutations
+### Parental origin of de novo mutations
 
 We also explored if the 17 germ line de novo mutations had a paternal or maternal origin. For 14 of the de novo mutations, we could detect an additional segregating site within the same Illumina sequencing read (length 125 bp) or mate-pair read that spanned the respective de novo mutation and was uniquely associated with either parent. In these cases, the parental origin could be directly inferred. We were able to infer the parental origins of one additional de novo mutation by PCR cloning and sequencing.
 
 Out of the 15 mutations for which their parental origin was determined, there was no significant difference between paternal (eight) and maternal (seven) mutations (Table 2). A paternal bias in the origin of de novo mutations has been shown in mammals, such as human (ratio = 3.9) (Kong et al., 2012) and chimpanzee (ratio = 5.5) (Venn et al., 2014), where the main reason is thought to be the larger number of cell divisions during spermatogenesis than during oogenesis (Crow, 2000). While the numbers are small, a binomial test against the human ratio indicates that the gender bias in herring, if it exists at all, is significantly weaker than in humans (p=0.004). In herring, both sexes produce large numbers of gametes and males only produce sperm during the spawning season (a few months per year). Furthermore, the high degree of parental mosaicism indicates that a large fraction of the de novo mutations reported here must have occurred during early germ cell development when we do not expect a strong gender effect. These circumstances offer a reasonable explanation to the balanced parental origin of de novo mutations in the Atlantic herring.
 
-## Characteristics of de novo mutations
+### Characteristics of de novo mutations
 
 Among the 17 de novo mutations, there were 10 transitions and seven transversions, yielding a transition/transversion ratio of 1.4, which can be compared with a genome-wide ratio of 1.1 for previously reported SNPs (Martinez Barrio et al., 2016). An overrepresentation of transitions is expected, and the observed ratio falls in the range found in previous de novo mutation studies. For example, Kong et al. identified 3344 transitions out of 4933 events (ratio = 2.1) in humans (Kong et al., 2012), while Keightley et al. found five out of nine events (ratio = 1.25) in the tropical butterfly Heliconius melpomene (Keightley et al., 2015). In humans and other mammals there is a well-established excess of CpG>TpG mutations (Kong et al., 2012). CpG methylations also occur in teleosts (Rai et al., 2010), but in our dataset only 1 out of 17 de novo mutations was of this type. This frequency (6%) is below, but not significantly different from the frequency reported for human (19%) (Kong et al., 2012) (binomial test, p=0.06).
 
 There were six mutations located in intergenic regions, nine intronic mutations, one 3’ UTR mutation and one exonic mutation. In all, this is a distribution that does not deviate significantly from random expectation, given the composition of the genome after mappability filtering (p=0.65, Fisher’s exact test).
 
-## Estimation of mutation rates
+### Estimation of mutation rates
 
 We identified nine and eight de novo mutations in the Atlantic herring and the Baltic herring pedigrees, respectively. Since we had 12 progeny in total and two of the mutations were detected twice among the sequenced progeny, our estimate of the de novo mutation rate is 0.79 (19/24). After strict filtering of genomic regions with low mappability and repetitive sequences, we had ~442 Mb of sequence available for variant screening. Based on the distribution of read coverage in a random subset of the genome, we estimated that 2.6% of this region have insufficient depth for successful SNP calling, giving us a final callable region of 442 × 0.974 = 431 Mb (representing ~51% of the genome). The mutation rate per site per generation can thus be estimated as 19/ (2 × 12×431 x 106)=1.8×10−9 (95% CI = 1.1–2.7 × 10−9, assuming that the mutations are Poisson distributed). If we correct for the estimated false negative rate (5.9%) we obtain: 2.0 × 10−9 (95% CI = 1.1–2.9 × 10−9).
 
@@ -82,7 +421,180 @@ Based on historical sampling of several herring stocks, we estimated the minimum
 
 This study provides new insights regarding factors affecting the mutation rate and levels of nucleotide diversity in vertebrates. Our finding of a high degree of parental mosaicism for the detected de novo mutations is consistent with several recent studies indicating that the early cleavage cell divisions in the germ-line are particularly mutation-prone (Harland et al., 2016; Rahbari et al., 2016; Ségurel et al., 2014). A high rate of de novo mutations at early germ-cell divisions has also been reported for Drosophila (Gao et al., 2014).
 
-The estimated mutation rate (μ = 2.0×10−9) for the Atlantic herring is the lowest for a vertebrate species to date (Table 3); about six-fold lower than in humans. It should be noted that this number reflects the rate in the callable fraction of the genome, which by definition does not contain repeat regions. Thus, the true genomic average could be somewhat higher, as replication of repetitive regions tends to be more error-prone, but the decreased calling power in those regions makes diversity hard to estimate in an unbiased fashion. However, these issues are not unique to the Atlantic herring, similar caveats apply to estimates of mutation rates in other species as well, and the results should thus be comparable across species. In this study we surveyed about 51% of the current genome assembly for the Atlantic herring and we used our previously published population data (Martinez Barrio et al., 2016) to estimate the nucleotide diversity in the parts of the genome that were included and excluded in the current study to address the concern that we may have underestimated the mutation rate because the rate is higher in the part that was excluded. This analysis showed that the nucleotide diversities in the excluded and included parts were almost identical (π = 0.00318 and π = 0.00304, respectively). In conclusion, this analysis does not indicate a major difference in mutation rates between the two parts of the genome.10.7554/eLife.23907.007Table 3.Summary of mutation rates measured to date.DOI: http://dx.doi.org/10.7554/eLife.23907.007SpeciesTaxonomic groupμMethod*Genome size (Mb) Ne†  Pseudomonas aeruginosaBacteria7.9 × 10−11MA16.32.1 × 108Burkholderia cenocepaciaBacteria1.3 × 10−10MA28.12.5 × 108Escherichia coliBacteria2.2 × 10−10MA34.61.6 × 108Chlamydomonas reinhardtiiUnicellular eukaryotes2.1 × 10−10MA41207.8 × 107Saccharomyces cerevisiaeUnicellular eukaryotes1.7 × 10−10MA512.21.2 × 107Schizosaccharomyces pombeUnicellular eukaryotes2.1 × 10−10MA612.61.4 × 107Arabidopsis thalianaPlants7.1 × 10−9MA71192.8 × 105Pristionchus pacificusInvertebrates2.0 × 10−9MA81331.8 × 106Caenorhabditis elegansInvertebrates1.5 × 10−9MA91005.2 × 105Caenorhabditis briggsaeInvertebrates1.3 × 10−9MA91082.7 × 105Drosophila melanogasterInvertebrates3.2 × 10−9MA10 PO111441.4 × 106Heliconius melpomeneInvertebrates2.9 × 10−9PO122742.1 × 106Daphnia pulexInvertebrates5.7 × 10−9MA132508.2 × 105Atlantic herring (Clupea harengus)Teleosts2.0 × 10−9PO*8504.0 × 105Collared flycatcher (Ficedula albicollis)Birds4.6 × 10−9PO1411182.0 × 105Mouse (Mus musculus)Mammals5.4 × 10−9MA15,1628081.8 × 105Cattle (Bos taurus)Mammals9.7 × 10−9PO1727253.7 × 104Chimpanzee (Pan troglodytes)Mammals1.2 × 10−8PO1832312.9 × 104Human (Homo sapiens)Mammals1.2 × 10−8PO1932362.4 × 104*MA = Mutation Accumulation, PO = Parent-Offspring. The values are from the following sources: 1. Dettman et al. (2016); 2. Dillon et al. (2015); 3. Lee et al. (2012); 4. Ness et al. (2012); 5. Zhu et al. (2014); 6. Farlow et al. (2015); 7. Ossowski et al. (2010); 8. Weller et al. (2014); 9. Denver et al. (2012); 10. Keightley et al. (2009); 11. Keightley et al. (2014); 12. Keightley et al. (2015); 13. Keith et al. (2016); 14. Smeds et al. (2016); 15. Lindsay et al. (2016); 16. Uchimura et al. (2015); 17. Harland et al. (2016); 18. Venn et al. (2014); 19. Kong et al. (2012).†Ne is calculated as π/4μ. The underlying π estimates are all from Lynch et al. (2016) except for herring (present study), collared flycatcher (Ellegren et al., 2012) and cattle (Daetwyler et al., 2014).
+The estimated mutation rate (μ = 2.0×10−9) for the Atlantic herring is the lowest for a vertebrate species to date (Table 3); about six-fold lower than in humans. It should be noted that this number reflects the rate in the callable fraction of the genome, which by definition does not contain repeat regions. Thus, the true genomic average could be somewhat higher, as replication of repetitive regions tends to be more error-prone, but the decreased calling power in those regions makes diversity hard to estimate in an unbiased fashion. However, these issues are not unique to the Atlantic herring, similar caveats apply to estimates of mutation rates in other species as well, and the results should thus be comparable across species. In this study we surveyed about 51% of the current genome assembly for the Atlantic herring and we used our previously published population data (Martinez Barrio et al., 2016) to estimate the nucleotide diversity in the parts of the genome that were included and excluded in the current study to address the concern that we may have underestimated the mutation rate because the rate is higher in the part that was excluded. This analysis showed that the nucleotide diversities in the excluded and included parts were almost identical (π = 0.00318 and π = 0.00304, respectively). In conclusion, this analysis does not indicate a major difference in mutation rates between the two parts of the genome.
+
+**Table 3.**
+ Summary of mutation rates measured to date.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Taxonomic group</th>
+      <th>μ</th>
+      <th>Method*</th>
+      <th>Genome size (Mb)</th>
+      <th>Ne†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pseudomonas aeruginosa</td>
+      <td>Bacteria</td>
+      <td>7.9 × 10−11</td>
+      <td>MA1</td>
+      <td>6.3</td>
+      <td>2.1 × 108</td>
+    </tr>
+    <tr>
+      <td>Burkholderia cenocepacia</td>
+      <td>Bacteria</td>
+      <td>1.3 × 10−10</td>
+      <td>MA2</td>
+      <td>8.1</td>
+      <td>2.5 × 108</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli</td>
+      <td>Bacteria</td>
+      <td>2.2 × 10−10</td>
+      <td>MA3</td>
+      <td>4.6</td>
+      <td>1.6 × 108</td>
+    </tr>
+    <tr>
+      <td>Chlamydomonas reinhardtii</td>
+      <td>Unicellular eukaryotes</td>
+      <td>2.1 × 10−10</td>
+      <td>MA4</td>
+      <td>120</td>
+      <td>7.8 × 107</td>
+    </tr>
+    <tr>
+      <td>Saccharomyces cerevisiae</td>
+      <td>Unicellular eukaryotes</td>
+      <td>1.7 × 10−10</td>
+      <td>MA5</td>
+      <td>12.2</td>
+      <td>1.2 × 107</td>
+    </tr>
+    <tr>
+      <td>Schizosaccharomyces pombe</td>
+      <td>Unicellular eukaryotes</td>
+      <td>2.1 × 10−10</td>
+      <td>MA6</td>
+      <td>12.6</td>
+      <td>1.4 × 107</td>
+    </tr>
+    <tr>
+      <td>Arabidopsis thaliana</td>
+      <td>Plants</td>
+      <td>7.1 × 10−9</td>
+      <td>MA7</td>
+      <td>119</td>
+      <td>2.8 × 105</td>
+    </tr>
+    <tr>
+      <td>Pristionchus pacificus</td>
+      <td>Invertebrates</td>
+      <td>2.0 × 10−9</td>
+      <td>MA8</td>
+      <td>133</td>
+      <td>1.8 × 106</td>
+    </tr>
+    <tr>
+      <td>Caenorhabditis elegans</td>
+      <td>Invertebrates</td>
+      <td>1.5 × 10−9</td>
+      <td>MA9</td>
+      <td>100</td>
+      <td>5.2 × 105</td>
+    </tr>
+    <tr>
+      <td>Caenorhabditis briggsae</td>
+      <td>Invertebrates</td>
+      <td>1.3 × 10−9</td>
+      <td>MA9</td>
+      <td>108</td>
+      <td>2.7 × 105</td>
+    </tr>
+    <tr>
+      <td>Drosophila melanogaster</td>
+      <td>Invertebrates</td>
+      <td>3.2 × 10−9</td>
+      <td>MA10 PO11</td>
+      <td>144</td>
+      <td>1.4 × 106</td>
+    </tr>
+    <tr>
+      <td>Heliconius melpomene</td>
+      <td>Invertebrates</td>
+      <td>2.9 × 10−9</td>
+      <td>PO12</td>
+      <td>274</td>
+      <td>2.1 × 106</td>
+    </tr>
+    <tr>
+      <td>Daphnia pulex</td>
+      <td>Invertebrates</td>
+      <td>5.7 × 10−9</td>
+      <td>MA13</td>
+      <td>250</td>
+      <td>8.2 × 105</td>
+    </tr>
+    <tr>
+      <td>Atlantic herring (Clupea harengus)</td>
+      <td>Teleosts</td>
+      <td>2.0 × 10−9</td>
+      <td>PO*</td>
+      <td>850</td>
+      <td>4.0 × 105</td>
+    </tr>
+    <tr>
+      <td>Collared flycatcher (Ficedula albicollis)</td>
+      <td>Birds</td>
+      <td>4.6 × 10−9</td>
+      <td>PO14</td>
+      <td>1118</td>
+      <td>2.0 × 105</td>
+    </tr>
+    <tr>
+      <td>Mouse (Mus musculus)</td>
+      <td>Mammals</td>
+      <td>5.4 × 10−9</td>
+      <td>MA15,16</td>
+      <td>2808</td>
+      <td>1.8 × 105</td>
+    </tr>
+    <tr>
+      <td>Cattle (Bos taurus)</td>
+      <td>Mammals</td>
+      <td>9.7 × 10−9</td>
+      <td>PO17</td>
+      <td>2725</td>
+      <td>3.7 × 104</td>
+    </tr>
+    <tr>
+      <td>Chimpanzee (Pan troglodytes)</td>
+      <td>Mammals</td>
+      <td>1.2 × 10−8</td>
+      <td>PO18</td>
+      <td>3231</td>
+      <td>2.9 × 104</td>
+    </tr>
+    <tr>
+      <td>Human (Homo sapiens)</td>
+      <td>Mammals</td>
+      <td>1.2 × 10−8</td>
+      <td>PO19</td>
+      <td>3236</td>
+      <td>2.4 × 104</td>
+    </tr>
+  </tbody>
+</table>
+
+_*MA = Mutation Accumulation, PO = Parent-Offspring. The values are from the following sources: 1. Dettman et al. (2016); 2. Dillon et al. (2015); 3. Lee et al. (2012); 4. Ness et al. (2012); 5. Zhu et al. (2014); 6. Farlow et al. (2015); 7. Ossowski et al. (2010); 8. Weller et al. (2014); 9. Denver et al. (2012); 10. Keightley et al. (2009); 11. Keightley et al. (2014); 12. Keightley et al. (2015); 13. Keith et al. (2016); 14. Smeds et al. (2016); 15. Lindsay et al. (2016); 16. Uchimura et al. (2015); 17. Harland et al. (2016); 18. Venn et al. (2014); 19. Kong et al. (2012).†Ne is calculated as π/4μ. The underlying π estimates are all from Lynch et al. (2016) except for herring (present study), collared flycatcher (Ellegren et al., 2012) and cattle (Daetwyler et al., 2014)._
 
 By combining the now estimated mutation rate with the neutral diversity level (π = 0.0032) found by Martinez Barrio et al. (2016) and the expected relationship between nucleotide diversity, the mutation rate and effective population size (Ne) for selectively neutral alleles (π = 4 Ne μ), we obtain an estimated Ne of 4 × 105. While this number is larger than for most terrestrial animal species, it is still much lower than the census population size of the herring, about 1012 (Supplementary file 1). There are several factors that may contribute to this discrepancy, but demographic history stands out as the most prominent factor. Using coalescent analysis and allele frequency distributions, Martinez Barrio et al. (2016) showed that the herring population is expanding from a previous bottleneck. Since the diversity-based estimate of effective population size can be considered as an average over time this bottleneck still have a major impact on the current nucleotide diversity. Population genetics theory implies that it will take 4Ne generations before populations reach their genetic equilibrium (Kimura and Ohta, 1973). We have estimated the generation interval to approximately six years in this study (Supplementary file 3) and a conservative estimate of the current (not long-term) Ne is 107, which appears reasonable since we estimated long-term Ne at 4 × 105 and we have evidence for population expansion (e.g. excess of rare alleles (Martinez Barrio et al., 2016)). These figures indicate that it will take about 240 million years before the herring populations reach genetic equilibrium. Thus, it is obvious that a species with a large population size like the herring and a relatively long generation interval will never reach genetic equilibrium. Background selection (the elimination of deleterious alleles) and selective sweeps will also lead to reductions in nucleotide diversity at linked neutral sites (Gillespie, 2000, 2001). Furthermore, highly efficient purifying selection decreases the fraction of the genome that appears as selectively neutral (Ohta, 1973) which is also expected to lead to a slightly reduced nucleotide diversity.
 
@@ -92,33 +604,33 @@ According to simple, ideal-case population genetic models there should be a posi
 
 ## Materials and methods
 
-## Sample
+### Sample
 
 Two full-sib families were generated by crossing wild-caught Atlantic herring from Bergen (Norway) and Baltic herring from Hästskär (Sweden). For each family, six offspring from a total of 50 progeny were selected for sequencing together with the two parents. Our aim was to determine the mutation rate to its order of magnitude and one to two significant digits. Thus, a samples size of 12 progeny was expected to result in about 100 detectable novel mutations based on previously known vertebrate mutation rates and the size of the genomic regions we could use to detect mutations. Genomic DNA was isolated from muscle tissue using Qiagen DNeasy Blood and Tissue kit. DNA libraries were constructed using the TruSeq PCR-free kit.
 
-## Whole-genome sequencing
+### Whole-genome sequencing
 
 All individuals were sequenced on Illumina HiSeq2500 machines, using 2 × 125 bp paired reads to a sequencing depth of ~47–71X (Table 1). The short reads were aligned to the Clupea harengus reference genome (Martinez Barrio et al., 2016) using BWA v0.6.2 (Li and Durbin, 2009) with default parameters. The data were then filtered based on mappability, calculated using GEM (Derrien et al., 2012), within the reference assembly, so that only positions with mappability 1 that were also inside 1 kb windows with average mappability >0.95 were included in the downstream analysis; 442 Mb (52%) of genome sequence passed this filtering step. The sequence data have been deposited in the SRA archive (PRJNA356817).
 
-## Variant calling and filtration
+### Variant calling and filtration
 
 Sequence alignments from the previous step were used for calling variants using two separate tools; GATK v3.3.0 (McKenna et al., 2010) and SAMTOOLS v.1.19 (Li et al., 2009). We used GATK HaplotypeCaller with default parameters that performs simultaneous calling of SNP and Indels via local de novo assembly of haplotypes (see GATK manual for details). We ran HaplotypeCaller separately for each individual to generate intermediate genomic VCF (Danecek et al., 2011) files (gVCF). Afterwards, we used the GenotypeGVCFs module in GATK to merge gVCF records from each individual (altogether 12 from the two pedigrees) using the multi-sample joint aggregation step that combines all records, generate correct genotype likelihood, re-genotype the newly merged record and re-annotate each of the called variants and thereby generate a VCF file. For SAMTOOLS, we used the standard multi-sample SNP calling pipeline (Li et al., 2009) using the ‘mpileup’ module for calling raw variants.
 
 Once we got the raw variant calls, we filtered small insertions and deletions and only used SNPs for downstream analysis. Furthermore, we also removed SNPs that had missing genotypes in one or both parents, as these SNPs were not informative. Afterwards, we extracted a subset of SNPs where parents were homozygous for different allele and all six offspring were heterozygous (the genotype calls were considered heterozygous in offspring if the minor allele frequency was >25%). The SNP quality annotations in this set of ‘known’ heterozygous offspring were used as proxy to consider the quality parameter of true SNPs in the dataset. We extracted various SNP quality annotations recorded in the VCF file like total read depth, mapping quality, mapping quality rank sum, base quality, base quality rank sum, read position rank sum, quality by depth, genotype quality, allele depth (see GATK manual for details on these parameters) and examined their distributions in the subset of our known heterozygous offspring. As these quality parameters were close to being normally distributed, we used the threshold of mean ±2 x standard deviation for each of these quality estimates as the standard cut-offs for our in-house SNP filtering pipeline to filter raw SNPs in our entire dataset (Figure 1).
 
-## De novo mutation calling
+### De novo mutation calling
 
 From the filtered SNP dataset generated in the previous step, we further selected those sites where both parents were homozyogous for the reference allele and at least one offspring carried the variant allele in the heterozygous state. These two sets of raw novel mutations in offspring independently called by GATK and SAMTOOLS were then intersected and the sites that were detected by both variant callers were considered as our true de novo mutations among the progeny.
 
-## Experimental validation and parental origin
+### Experimental validation and parental origin
 
 PCR amplification and Sanger sequencing of both strands verified all candidate mutations. We inferred the parental origin of the de novo mutations based on flanking SNP alleles that could be verified by Sanger sequencing and only have been transferred from one of the parents. The parental origin of fourteen de novo mutations could be directly deduced from SNP alleles segregating between the two parents present on the same short Illumina read and mate-pair read as the de novo mutation (at least 5 reads). The parental origin of one additional de novo mutations was determined via cloning PCR fragments and sequencing; we sequenced at least 7 independent clones for each de novo mutation.
 
-## Estimation of the false negative rate
+### Estimation of the false negative rate
 
 Firstly, we estimated the false negative rate by performing genotype calls at those nucleotide positions where the parents were fixed for different alleles. The genotype calls for progeny were done without using the information for parents to mimic the detection of de novo mutations. Secondly, we also used simulation to estimate the false negative rate. From the previously determined callable fraction of the genome, we selected approximately 1000 sites without any existing polymorphism for each offspring and then introduced de novo mutations. Then, we aligned the new reads and called SNPs using the pipeline described in Figure 1. Finally, we compared the SNP calls with expected genotypes based on the mutated sites and calculated the false negative rate.
 
-## Estimation of generation time
+### Estimation of generation time
 
 The generation length of populations with overlapping generations is equal to the mean age of parents (Hill, 1979). Following Miller and Kapuscinski (1997), this was approximated as the mean age of spawners (age-specific number of fish multiplied by the age-specific proportion of reproductive fish) weighted by age-specific mean weights. In our analyses we used age-specific weights as proxy for age-specific fecundity, since in Atlantic herring weights and fecundity are strongly and nearly linearly correlated (Arula et al., 2012; Oskarsson and Taggart, 2006). We estimated the generation time for the herring stocks with data starting shortly after the end of the World War II, a period characterized by still low commercial exploitation which started to increase after the early 1960s. The stocks were the North Sea/Skagerrak/Kattegat/English Channel, the Celtic Sea, the West of Scotland/West of Ireland, the Irish Sea and the Norwegian spring spawning herring. Data on age-specific abundance, maturity and mean weight were extracted from stock assessment reports (ICES, 2015, ICES, 2016).
 
